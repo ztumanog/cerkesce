@@ -1,58 +1,89 @@
-// @/components/KelimeKarti.tsx
 import React from "react";
-import Image from "next/image";
-import { guvenliTanimAyikla } from "@/lib/DictionaryService";
+import { tanimlariBicimlendir, kaynagiDuzenle, type TemaTipi } from "@/utils/helpers";
+import { KURUMSAL } from "@/lib/dictionaryConstants";
+import { GruplanmisKelime } from "@/types/dictionary";
 
-type KelimeKartiTema = "kirmizi" | "sari";
-
-const kelimeKartiVaryantlari = (tema: KelimeKartiTema = "kirmizi") =>
-  `relative flex flex-col p-6 rounded-xl shadow-md transition-all duration-200 border-l-4 ${
-    tema === "sari"
-      ? "bg-white border-[#FFC604] text-gray-800 hover:shadow-lg"
-      : "bg-white border-[#FF4030] text-gray-800 hover:shadow-lg"
-  }`;
-
-export interface KelimeKartiProps {
-  kelime: string;
-  hamVeri: unknown; // 'any' yasaktır, veri servis katmanında ayıklanır
-  tema?: KelimeKartiTema;
+interface KelimeKartiProps {
+  grup: GruplanmisKelime;
+  idx: number;
+  tema: TemaTipi;
+  metinBoyutu: number;
+  kopyalandiId: string | null;
+  panoyaKopyala: (kelime: string, tanim?: string, id?: string) => void;
+  onClick: (grup: GruplanmisKelime) => void;
 }
 
-export const KelimeKarti = ({ kelime, hamVeri, tema }: KelimeKartiProps) => {
-  // Veri ayıklama hiyerarşisine (definitions -> html -> tanim) göre işlem
-  const anlam = guvenliTanimAyikla(hamVeri);
+export default function KelimeKarti({
+  grup,
+  idx,
+  tema,
+  metinBoyutu,
+  kopyalandiId,
+  panoyaKopyala,
+  onClick
+}: KelimeKartiProps) {
+  // kaynaklar veya anlamlar dizisinden güvenle ilk elemanı alıyoruz
+  const ilkKaynak = grup.kaynaklar?.[0] || grup.anlamlar?.[0];
+  const dosyaVeyaSozluk = ilkKaynak?.file || ilkKaynak?.kaynak_sozluk || ilkKaynak?.dictionaryName;
 
-  if (!anlam) return null;
+  const handleKeyDown = (e: React.KeyboardEvent) => {
+    if (e.key === "Enter" || e.key === " ") {
+      e.preventDefault();
+      onClick(grup);
+    }
+  };
 
   return (
-    <article className={kelimeKartiVaryantlari(tema ?? undefined)}>
-      <header className="flex justify-between items-center mb-4">
-        <h2 className="text-2xl font-bold text-gray-900">{kelime}</h2>
-        {/* Açık Mektep Logosu */}
-        <Image 
-          src="/logo.png" 
-          alt="Açık Mektep Logosu" 
-          width={32} 
-          height={32} 
-          className="object-contain"
-        />
-      </header>
+    <div 
+      onClick={() => onClick(grup)} 
+      onKeyDown={handleKeyDown}
+      style={{ 
+        padding: "16px", 
+        backgroundColor: tema.kartArkaPlan, 
+        border: `1px solid ${tema.kenarlik}`, 
+        borderRadius: "8px", 
+        cursor: "pointer",
+        transition: "border-color 0.2s"
+      }}
+      onMouseOver={(e) => (e.currentTarget.style.borderColor = KURUMSAL.kirmizi)}
+      onMouseOut={(e) => (e.currentTarget.style.borderColor = tema.kenarlik)}
+      role="article"
+      tabIndex={0}
+      aria-label={`${grup.kelime} kelimesi detayları`}
+    >
+      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+        <h3 style={{ margin: 0, fontSize: `${metinBoyutu * 1.1}px`, color: tema.yaziAna }}>
+          {grup.kelime}
+        </h3>
+        
+        <button 
+          onClick={(e) => { 
+            e.stopPropagation();
+            panoyaKopyala(grup.kelime, ilkKaynak?.tanim, `g-${idx}`); 
+          }}
+          style={{ 
+            padding: "4px 8px", 
+            fontSize: "12px", 
+            border: `1px solid ${tema.kenarlik}`, 
+            backgroundColor: "transparent", 
+            color: tema.yaziAlt, 
+            borderRadius: "4px", 
+            cursor: "pointer",
+            fontWeight: kopyalandiId === `g-${idx}` ? "bold" : "normal"
+          }}
+          aria-label="Kelimeyi ve tanımını kopyala"
+        >
+          {kopyalandiId === `g-${idx}` ? "✓ Kopyalandı" : "📋 Kopyala"}
+        </button>
+      </div>
       
-      <div 
-        className="text-lg text-gray-700 mb-6"
-        dangerouslySetInnerHTML={{ __html: anlam }} // DOMPurify entegrasyonu varsayımıyla
-      />
-
-      {/* Kurumsal İmza Alanı */}
-      <footer className="mt-auto pt-4 border-t border-gray-100 flex justify-end">
-        <Image 
-          src="/imza.png" 
-          alt="Kurumsal İmza" 
-          width={120} 
-          height={40} 
-          className="opacity-80"
-        />
-      </footer>
-    </article>
+      {tanimlariBicimlendir(
+        ilkKaynak?.tanim || "", 
+        tema, 
+        grup.kelime, 
+        metinBoyutu, 
+        kaynagiDuzenle(dosyaVeyaSozluk)
+      )}
+    </div>
   );
-};
+}

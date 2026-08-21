@@ -1,23 +1,45 @@
-import { DictionaryItem, Dialect } from "@/types/dictionary";
+import { RefObject, Dispatch, SetStateAction } from "react";
+import { type TemaTipi } from "@/utils/helpers";
 
-export function searchWords(
-  allWords: DictionaryItem[],
-  query: string,
-  dialect: "TUMU" | Dialect = "TUMU",
-  selectedFile: string = "TUMU",
-  limit: number = 50
-): DictionaryItem[] {
-  const q = query.trim().toLowerCase();
-  if (!q) return [];
+export type AramaModu = "baslayan" | "icinde" | "tam";
+export type LehceTipi = "TUMU" | "BATI" | "DOGU";
+export type Dialect = "BATI" | "DOGU";
 
-  return allWords
-    .filter((item) => {
-      if (dialect !== "TUMU" && item.dialect !== dialect) return false;
-      if (selectedFile !== "TUMU" && item.file !== selectedFile) return false;
-      return (
-        item.kelime.toLowerCase().includes(q) ||
-        item.tanim.toLowerCase().includes(q)
-      );
-    })
-    .slice(0, limit);
+export interface DictionaryMeta {
+  file: string;
+  title?: string;
+  dialect?: string;
+  total_words?: number;
+  lang?: string;
+  [key: string]: any;
+}
+
+export interface DictionaryItem {
+  kelime: string;
+  tanim: string;
+  dialect?: string;
+  file?: string;
+  [key: string]: any;
+}
+
+export interface SearchBoxProps {
+  searchQuery: string;
+  setSearchQuery: Dispatch<SetStateAction<string>>;
+  mod: AramaModu;
+  setMod: (mod: AramaModu) => void;
+  hedefDil: string;
+  setHedefDil: (dil: string) => void;
+  seciliLehce: LehceTipi;
+  setSeciliLehce: (lehce: LehceTipi) => void;
+  seciliDosya: string;
+  setSeciliDosya: (dosya: string) => void;
+  aktifSozlukler: DictionaryMeta[];
+  metinBoyutu: number;
+  karanlikMod: boolean;
+  tema: TemaTipi;
+  inputRef: RefObject<HTMLInputElement | null>;
+  harfEkle: (harf: string) => void;
+  kaynagiDuzenle: (dosyaAdi?: string) => string;
+  setGoruntulenenAdet: Dispatch<SetStateAction<number>>;
+  limit: number;
 }

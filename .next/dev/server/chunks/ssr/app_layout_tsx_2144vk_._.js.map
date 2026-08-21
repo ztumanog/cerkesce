@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///E:/projeler/Cerkesce/app/layout.tsx"],"sourcesContent":["import \"./globals.css\";\nimport type { Metadata } from \"next\";\n\nexport const metadata: Metadata = {\n  title: \"Çerkesçe Sözlük\",\n  description: \"Açık Mektep Çerkesçe Sözlük Veritabanı\",\n};\n\nexport default function RootLayout({\n  children,\n}: {\n  children: React.ReactNode;\n}) {\n  return (\n    <html lang=\"tr\">\n      <body>{children}</body>\n    </html>\n  );\n}"],"names":["metadata","title","description","RootLayout","children","lang"],"mappings":";;;;;;;;;AAGO,MAAMA,WAAqB;IAChCC,OAAO;IACPC,aAAa;AACf;AAEe,SAASC,WAAW,EACjCC,QAAQ,EAGT;IACC,qBACE,oOAAC;QAAKC,MAAK;kBACT,cAAA,oOAAC;sBAAMD;;;AAGb"}}]
+}

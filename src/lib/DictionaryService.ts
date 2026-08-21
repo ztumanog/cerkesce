@@ -1,6 +1,6 @@
 // src/lib/DictionaryService.ts
 
-import { isSozlukTanimi } from "@/types/dictionary";
+import { isSozlukTanimi, type DictionaryItem } from "@/types/dictionary";
 
 const SOZLUK_DOSYALARI = [
   "/data/sozluk1.json", "/data/sozluk2.json", "/data/sozluk3.json",
@@ -31,22 +31,34 @@ export async function sozlukleriYukle(): Promise<unknown[]> {
 }
 
 export function guvenliTanimAyikla(veri: unknown): string | null {
-  // TS18046 HATASININ ÇÖZÜMÜ: Veri burada Type Guard'dan geçer
+  // Veri Type Guard'dan geçer
   if (!isSozlukTanimi(veri)) return null;
 
+  const item = veri as DictionaryItem;
+
   // Öncelik 1: definitions[].meaning
-  if (veri.definitions && veri.definitions.length > 0 && veri.definitions[0].meaning) {
-    return veri.definitions[0].meaning;
+  if (Array.isArray(item.definitions) && item.definitions.length > 0) {
+    const ilkTan = item.definitions[0];
+    if (typeof ilkTan === "object" && ilkTan !== null && ilkTan.meaning) {
+      return String(ilkTan.meaning);
+    }
   }
   
   // Öncelik 2: full_definition_in_html
-  if (veri.full_definition_in_html) {
-    return veri.full_definition_in_html;
+  if (item.full_definition_in_html) {
+    return String(item.full_definition_in_html);
   }
   
-  // Öncelik 3: tanim/meaning
-  if (veri.tanim && veri.tanim.meaning) {
-    return veri.tanim.meaning;
+  // Öncelik 3: tanim veya meaning (String veya Nesne Kontrolü)
+  if (item.tanim) {
+    if (typeof item.tanim === "string") return item.tanim;
+    if (typeof item.tanim === "object" && (item.tanim as any)?.meaning) {
+      return String((item.tanim as any).meaning);
+    }
+  }
+
+  if (item.meaning && typeof item.meaning === "string") {
+    return item.meaning;
   }
 
   return null;

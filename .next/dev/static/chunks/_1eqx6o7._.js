@@ -1,0 +1,1296 @@
+(globalThis["TURBOPACK"] || (globalThis["TURBOPACK"] = [])).push([typeof document === "object" ? document.currentScript : undefined,
+"[project]/app/page.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>HomePage
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useDictionary$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/hooks/useDictionary.ts [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$SozlukEkrani$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/SozlukEkrani.tsx [app-client] (ecmascript)");
+;
+var _s = __turbopack_context__.k.signature();
+"use client";
+;
+;
+function HomePage() {
+    _s();
+    const dictionary = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useDictionary$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useDictionary"])();
+    // Hook'tan gelen isimleri SozlukEkrani prop'larına eşliyoruz:
+    const words = dictionary.sozlukSonuclari || dictionary.filteredWords || [];
+    const totalCount = dictionary.wordsCount || 0;
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$SozlukEkrani$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+        words: words,
+        loading: dictionary.loading,
+        totalCount: totalCount
+    }, void 0, false, {
+        fileName: "[project]/app/page.tsx",
+        lineNumber: 14,
+        columnNumber: 5
+    }, this);
+}
+_s(HomePage, "J9dMWuqdTzC/l0YJKN4Q0w5bwkQ=", false, function() {
+    return [
+        __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useDictionary$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useDictionary"]
+    ];
+});
+_c = HomePage;
+var _c;
+__turbopack_context__.k.register(_c, "HomePage");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/src/components/AkilliKlavye.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "AkilliKlavye",
+    ()=>AkilliKlavye,
+    "default",
+    ()=>__TURBOPACK__default__export__
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+'use client';
+;
+;
+const CERKESCE_HARFLER = [
+    'I',
+    'ӏ',
+    'Гъ',
+    'Дж',
+    'Дз',
+    'Къ',
+    'КӀ',
+    'ПӀ',
+    'ТӀ',
+    'Хь',
+    'Хъ',
+    'ЦӀ',
+    'ШӀ',
+    'ЩӀ'
+];
+const AkilliKlavye = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["memo"])(_c = function AkilliKlavye({ inputRef, sorgu, setSorgu, metinBoyutu = 16, karanlikMod = false, onKeyClick, onDelete }) {
+    const handleHarfEkle = (harf)=>{
+        setSorgu((prev)=>prev + harf);
+        onKeyClick?.(harf);
+        inputRef.current?.focus();
+    };
+    const handleSil = ()=>{
+        setSorgu((prev)=>prev.slice(0, -1));
+        onDelete?.();
+        inputRef.current?.focus();
+    };
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        role: "region",
+        "aria-label": "Çerkesçe Özel Karakter Klavyesi",
+        className: `flex flex-wrap gap-1.5 p-3 rounded-xl border transition-colors ${karanlikMod ? 'bg-slate-900 border-slate-800 text-slate-100' : 'bg-slate-50 border-slate-200 text-slate-800'}`,
+        style: {
+            fontSize: `${metinBoyutu}px`
+        },
+        children: [
+            CERKESCE_HARFLER.map((harf)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                    type: "button",
+                    onClick: ()=>handleHarfEkle(harf),
+                    className: "px-3 py-2 rounded-lg bg-red-600 hover:bg-red-700 text-white font-semibold transition-all active:scale-95 focus:outline-none focus:ring-2 focus:ring-red-400 select-none",
+                    children: harf
+                }, harf, false, {
+                    fileName: "[project]/src/components/AkilliKlavye.tsx",
+                    lineNumber: 53,
+                    columnNumber: 9
+                }, this)),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                type: "button",
+                onClick: handleSil,
+                "aria-label": "Son karakteri sil",
+                className: "px-3 py-2 rounded-lg bg-slate-700 hover:bg-slate-800 text-white font-semibold transition-all active:scale-95 focus:outline-none focus:ring-2 focus:ring-slate-400 select-none ml-auto",
+                children: "Sil ⌫"
+            }, void 0, false, {
+                fileName: "[project]/src/components/AkilliKlavye.tsx",
+                lineNumber: 62,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/src/components/AkilliKlavye.tsx",
+        lineNumber: 42,
+        columnNumber: 5
+    }, this);
+});
+_c1 = AkilliKlavye;
+const __TURBOPACK__default__export__ = AkilliKlavye;
+var _c, _c1;
+__turbopack_context__.k.register(_c, "AkilliKlavye$memo");
+__turbopack_context__.k.register(_c1, "AkilliKlavye");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/src/components/GununKelimesiKart.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>GununKelimesiKart
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+;
+const KURUMSAL = {
+    kirmizi: "#e11d48",
+    sari: "#eab308"
+};
+function GununKelimesiKart({ gununKelimesi, karanlikMod, metinBoyutu, tema, onSelect, KURUMSAL = {
+    kirmizi: "#e11d48"
+}, kaynagiDuzenle = (val)=>val }) {
+    if (!gununKelimesi) return null;
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        onClick: ()=>onSelect({
+                kelime: gununKelimesi.kelime,
+                dialect: gununKelimesi.dialect,
+                kaynaklar: [
+                    gununKelimesi
+                ]
+            }),
+        style: {
+            padding: "16px 20px",
+            backgroundColor: karanlikMod ? "#1e293b" : "#FFF1F0",
+            borderLeft: `5px solid ${KURUMSAL.kirmizi}`,
+            borderRadius: "8px",
+            marginBottom: "20px",
+            boxShadow: "0 2px 6px rgba(0,0,0,0.05)",
+            cursor: "pointer",
+            textAlign: "left"
+        },
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                style: {
+                    display: "flex",
+                    justifyContent: "space-between",
+                    alignItems: "center"
+                },
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                        style: {
+                            color: KURUMSAL.kirmizi,
+                            fontWeight: "bold",
+                            fontSize: `${metinBoyutu * 0.85}px`,
+                            textTransform: "uppercase",
+                            letterSpacing: "0.05em"
+                        },
+                        children: "🌟 Günün Kelimesi"
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/GununKelimesiKart.tsx",
+                        lineNumber: 48,
+                        columnNumber: 9
+                    }, this),
+                    gununKelimesi.dialect && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                        style: {
+                            fontSize: `${metinBoyutu * 0.75}px`,
+                            fontWeight: "bold",
+                            color: gununKelimesi.dialect === "BATI" ? "#16a34a" : "#2563eb",
+                            backgroundColor: gununKelimesi.dialect === "BATI" ? "#16a34a15" : "#2563eb15",
+                            padding: "3px 8px",
+                            borderRadius: "12px"
+                        },
+                        children: gununKelimesi.dialect === "BATI" ? "Batı Adıgece" : "Doğu Kabardeyce"
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/GununKelimesiKart.tsx",
+                        lineNumber: 60,
+                        columnNumber: 11
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/components/GununKelimesiKart.tsx",
+                lineNumber: 47,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                style: {
+                    fontSize: `${metinBoyutu * 1.25}px`,
+                    fontWeight: "bold",
+                    color: tema.yaziAna,
+                    marginTop: "4px"
+                },
+                children: gununKelimesi.kelime
+            }, void 0, false, {
+                fileName: "[project]/src/components/GununKelimesiKart.tsx",
+                lineNumber: 74,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                style: {
+                    fontSize: `${metinBoyutu * 0.95}px`,
+                    color: tema.yaziAlt,
+                    marginTop: "4px",
+                    lineHeight: "1.5"
+                },
+                children: gununKelimesi.tanim
+            }, void 0, false, {
+                fileName: "[project]/src/components/GununKelimesiKart.tsx",
+                lineNumber: 77,
+                columnNumber: 7
+            }, this),
+            gununKelimesi.kaynak_sozluk && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("small", {
+                style: {
+                    color: tema.yaziAlt,
+                    display: "block",
+                    marginTop: "6px",
+                    fontSize: "12px"
+                },
+                children: [
+                    "📚 Kaynak: ",
+                    kaynagiDuzenle(gununKelimesi.kaynak_sozluk)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/components/GununKelimesiKart.tsx",
+                lineNumber: 81,
+                columnNumber: 9
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/src/components/GununKelimesiKart.tsx",
+        lineNumber: 28,
+        columnNumber: 5
+    }, this);
+}
+_c = GununKelimesiKart;
+var _c;
+__turbopack_context__.k.register(_c, "GununKelimesiKart");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/src/components/Header.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "Header",
+    ()=>Header
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+;
+const Header = ({ metinBoyutu, karanlikMod, setMetinBoyutu, setKaranlikMod })=>{
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("header", {
+        className: "w-full py-4 px-6 bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 flex items-center justify-between",
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "flex items-center gap-3",
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
+                    className: "text-xl font-bold text-slate-800 dark:text-slate-100",
+                    children: "Çerkesçe Sözlük"
+                }, void 0, false, {
+                    fileName: "[project]/src/components/Header.tsx",
+                    lineNumber: 21,
+                    columnNumber: 9
+                }, ("TURBOPACK compile-time value", void 0))
+            }, void 0, false, {
+                fileName: "[project]/src/components/Header.tsx",
+                lineNumber: 20,
+                columnNumber: 7
+            }, ("TURBOPACK compile-time value", void 0)),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "flex items-center gap-4",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "flex items-center gap-1 bg-slate-100 dark:bg-slate-800 rounded-lg p-1 text-xs",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                type: "button",
+                                onClick: ()=>setMetinBoyutu(Math.max(12, metinBoyutu - 1)),
+                                className: "px-2 py-1 hover:bg-white dark:hover:bg-slate-700 rounded font-medium",
+                                title: "Metni Küçült",
+                                children: "A-"
+                            }, void 0, false, {
+                                fileName: "[project]/src/components/Header.tsx",
+                                lineNumber: 29,
+                                columnNumber: 11
+                            }, ("TURBOPACK compile-time value", void 0)),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                className: "px-1 text-slate-500 font-mono",
+                                children: [
+                                    metinBoyutu,
+                                    "px"
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/components/Header.tsx",
+                                lineNumber: 37,
+                                columnNumber: 11
+                            }, ("TURBOPACK compile-time value", void 0)),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                type: "button",
+                                onClick: ()=>setMetinBoyutu(Math.min(24, metinBoyutu + 1)),
+                                className: "px-2 py-1 hover:bg-white dark:hover:bg-slate-700 rounded font-medium",
+                                title: "Metni Büyüt",
+                                children: "A+"
+                            }, void 0, false, {
+                                fileName: "[project]/src/components/Header.tsx",
+                                lineNumber: 38,
+                                columnNumber: 11
+                            }, ("TURBOPACK compile-time value", void 0))
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/components/Header.tsx",
+                        lineNumber: 28,
+                        columnNumber: 9
+                    }, ("TURBOPACK compile-time value", void 0)),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                        type: "button",
+                        onClick: ()=>setKaranlikMod((aktif)=>!aktif),
+                        className: "p-2 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-200 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors",
+                        title: "Tema Değiştir",
+                        children: karanlikMod ? "🌙" : "☀️"
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/Header.tsx",
+                        lineNumber: 49,
+                        columnNumber: 9
+                    }, ("TURBOPACK compile-time value", void 0))
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/components/Header.tsx",
+                lineNumber: 26,
+                columnNumber: 7
+            }, ("TURBOPACK compile-time value", void 0))
+        ]
+    }, void 0, true, {
+        fileName: "[project]/src/components/Header.tsx",
+        lineNumber: 19,
+        columnNumber: 5
+    }, ("TURBOPACK compile-time value", void 0));
+};
+_c = Header;
+var _c;
+__turbopack_context__.k.register(_c, "Header");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/src/components/KelimeKarti.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "KelimeKarti",
+    ()=>KelimeKarti
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/image.js [app-client] (ecmascript)");
+"use client";
+;
+;
+;
+const KelimeKarti = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["memo"])(_c = function KelimeKarti({ item, theme = "kirmizi", size = "medium", fontSize, showBranding = true, onSelect }) {
+    // cva kütüphanesi yerine saf Tailwind stil eşleştirmesi
+    const themeClasses = {
+        default: "bg-white dark:bg-gray-800 border-slate-200 dark:border-gray-700 text-slate-800 dark:text-gray-100",
+        kirmizi: "bg-white dark:bg-gray-800 border-l-4 border-l-[#FF4030] border-slate-200 dark:border-gray-700 text-gray-800 dark:text-gray-100",
+        sari: "bg-white dark:bg-gray-800 border-l-4 border-l-[#FFC604] border-slate-200 dark:border-gray-700 text-gray-800 dark:text-gray-100",
+        featured: "bg-slate-900 text-white border-slate-800 shadow-lg dark:bg-slate-950"
+    };
+    const sizeClasses = {
+        compact: "p-3 text-sm gap-1.5",
+        medium: "p-5 text-base gap-2",
+        large: "p-6 text-lg gap-3"
+    };
+    const kelimeMetni = String(item?.kelime ?? item?.word ?? "");
+    const tanimMetni = String(item?.tanim ?? item?.meaning ?? item?.full_definition_in_html ?? "");
+    const sozlukAdi = String(item?.sozlukAdi ?? item?.dictionaryName ?? "Sözlük");
+    if (!tanimMetni) return null;
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("article", {
+        role: "button",
+        tabIndex: 0,
+        onClick: ()=>onSelect?.(item),
+        onKeyDown: (e)=>{
+            if (e.key === "Enter" || e.key === " ") {
+                e.preventDefault();
+                onSelect?.(item);
+            }
+        },
+        className: `relative flex flex-col rounded-xl border transition-all duration-200 ease-in-out cursor-pointer group shadow-sm hover:shadow-md select-none ${themeClasses[theme] || themeClasses.kirmizi} ${sizeClasses[size] || sizeClasses.medium}`,
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("header", {
+                className: "flex justify-between items-center border-b border-slate-100 dark:border-gray-700/60 pb-2",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                        className: "font-bold tracking-tight text-blue-600 dark:text-blue-400 group-hover:text-blue-700 transition-colors",
+                        style: fontSize ? {
+                            fontSize: `${fontSize}px`
+                        } : undefined,
+                        children: kelimeMetni
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/KelimeKarti.tsx",
+                        lineNumber: 64,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "flex items-center gap-2",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                className: "text-xs px-2.5 py-0.5 rounded-full bg-slate-100 dark:bg-gray-700 text-slate-600 dark:text-gray-300 font-medium",
+                                children: sozlukAdi
+                            }, void 0, false, {
+                                fileName: "[project]/src/components/KelimeKarti.tsx",
+                                lineNumber: 72,
+                                columnNumber: 11
+                            }, this),
+                            showBranding && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                src: "/logo/logo.png",
+                                alt: "Açık Mektep Logosu",
+                                width: 24,
+                                height: 24,
+                                className: "object-contain"
+                            }, void 0, false, {
+                                fileName: "[project]/src/components/KelimeKarti.tsx",
+                                lineNumber: 76,
+                                columnNumber: 13
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/components/KelimeKarti.tsx",
+                        lineNumber: 71,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/components/KelimeKarti.tsx",
+                lineNumber: 63,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "text-slate-700 dark:text-gray-300 leading-relaxed line-clamp-3 my-2",
+                style: fontSize ? {
+                    fontSize: `${Math.max(fontSize - 2, 12)}px`
+                } : undefined,
+                dangerouslySetInnerHTML: {
+                    __html: tanimMetni
+                }
+            }, void 0, false, {
+                fileName: "[project]/src/components/KelimeKarti.tsx",
+                lineNumber: 87,
+                columnNumber: 7
+            }, this),
+            showBranding && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("footer", {
+                className: "mt-auto pt-3 border-t border-slate-100 dark:border-gray-700/50 flex justify-end",
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                    src: "/logo/logo.png",
+                    alt: "Kurumsal İmza",
+                    width: 100,
+                    height: 32,
+                    className: "opacity-75 dark:opacity-60 object-contain"
+                }, void 0, false, {
+                    fileName: "[project]/src/components/KelimeKarti.tsx",
+                    lineNumber: 95,
+                    columnNumber: 11
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/src/components/KelimeKarti.tsx",
+                lineNumber: 94,
+                columnNumber: 9
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/src/components/KelimeKarti.tsx",
+        lineNumber: 49,
+        columnNumber: 5
+    }, this);
+});
+_c1 = KelimeKarti;
+var _c, _c1;
+__turbopack_context__.k.register(_c, "KelimeKarti$memo");
+__turbopack_context__.k.register(_c1, "KelimeKarti");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/src/components/SearchBox.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "AramaKutusu",
+    ()=>AramaKutusu,
+    "SearchBox",
+    ()=>SearchBox,
+    "default",
+    ()=>__TURBOPACK__default__export__
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+'use client';
+;
+;
+const SearchBox = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["memo"])(_c = function SearchBox({ sorgu, setSorgu }) {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: "w-full max-w-3xl mx-auto",
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+            type: "text",
+            value: sorgu,
+            onChange: (e)=>setSorgu(e.target.value),
+            placeholder: "Kelime ara...",
+            className: "w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-800"
+        }, void 0, false, {
+            fileName: "[project]/src/components/SearchBox.tsx",
+            lineNumber: 14,
+            columnNumber: 7
+        }, this)
+    }, void 0, false, {
+        fileName: "[project]/src/components/SearchBox.tsx",
+        lineNumber: 13,
+        columnNumber: 5
+    }, this);
+});
+_c1 = SearchBox;
+const CERKESCE_HARFLER = [
+    'I',
+    'ӏ',
+    'А',
+    'Б',
+    'В',
+    'Г',
+    'Гу',
+    'Гъ',
+    'Гъу',
+    'Д',
+    'Дж',
+    'Дз',
+    'Къ',
+    'КӀ',
+    'ПӀ',
+    'ТӀ',
+    'Хь'
+];
+const AramaKutusu = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["memo"])(_c2 = function AramaKutusu({ inputRef, sorgu, setSorgu, metinBoyutu, setMetinBoyutu, karanlikMod, setKaranlikMod, toplamKayıt = 428679, yuklenenSozlukSayisi = 34 }) {
+    const handleHarfEkle = (harf)=>{
+        setSorgu((prev)=>prev + harf);
+        inputRef.current?.focus();
+    };
+    const handleSil = ()=>{
+        setSorgu((prev)=>prev.slice(0, -1));
+        inputRef.current?.focus();
+    };
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: "w-full max-w-3xl mx-auto p-6 space-y-4 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-xl transition-all",
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "flex items-center justify-between pb-3 border-b border-slate-100 dark:border-slate-800",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
+                                className: "text-2xl font-extrabold bg-gradient-to-r from-red-600 to-amber-600 bg-clip-text text-transparent",
+                                children: "Çerkesçe Sözlük"
+                            }, void 0, false, {
+                                fileName: "[project]/src/components/SearchBox.tsx",
+                                lineNumber: 66,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                className: "text-xs text-slate-500 dark:text-slate-400 font-medium mt-0.5",
+                                children: [
+                                    yuklenenSozlukSayisi,
+                                    " Sözlük Aktif • ",
+                                    toplamKayıt.toLocaleString('tr-TR'),
+                                    " Kayıt"
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/components/SearchBox.tsx",
+                                lineNumber: 69,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/components/SearchBox.tsx",
+                        lineNumber: 65,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "flex items-center gap-2 bg-slate-100 dark:bg-slate-800 p-1.5 rounded-xl",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                type: "button",
+                                onClick: ()=>setMetinBoyutu((prev)=>Math.max(prev - 2, 12)),
+                                className: "px-2 py-1 text-xs font-bold rounded-lg bg-white dark:bg-slate-700 text-slate-700 dark:text-slate-200 shadow-sm hover:bg-slate-50 dark:hover:bg-slate-600 transition",
+                                title: "Metni Küçült",
+                                children: "A-"
+                            }, void 0, false, {
+                                fileName: "[project]/src/components/SearchBox.tsx",
+                                lineNumber: 76,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                className: "text-xs font-semibold text-slate-500 dark:text-slate-400 px-1",
+                                children: [
+                                    metinBoyutu,
+                                    "px"
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/components/SearchBox.tsx",
+                                lineNumber: 84,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                type: "button",
+                                onClick: ()=>setMetinBoyutu((prev)=>Math.min(prev + 2, 24)),
+                                className: "px-2 py-1 text-xs font-bold rounded-lg bg-white dark:bg-slate-700 text-slate-700 dark:text-slate-200 shadow-sm hover:bg-slate-50 dark:hover:bg-slate-600 transition",
+                                title: "Metni Büyüt",
+                                children: "A+"
+                            }, void 0, false, {
+                                fileName: "[project]/src/components/SearchBox.tsx",
+                                lineNumber: 87,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "w-px h-4 bg-slate-300 dark:bg-slate-700 mx-1"
+                            }, void 0, false, {
+                                fileName: "[project]/src/components/SearchBox.tsx",
+                                lineNumber: 95,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                type: "button",
+                                onClick: ()=>setKaranlikMod(!karanlikMod),
+                                className: "p-1.5 rounded-lg bg-white dark:bg-slate-700 text-slate-700 dark:text-amber-400 shadow-sm hover:bg-slate-50 dark:hover:bg-slate-600 transition",
+                                "aria-label": "Tema Değiştir",
+                                children: karanlikMod ? '🌙' : '☀️'
+                            }, void 0, false, {
+                                fileName: "[project]/src/components/SearchBox.tsx",
+                                lineNumber: 96,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/components/SearchBox.tsx",
+                        lineNumber: 75,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/components/SearchBox.tsx",
+                lineNumber: 64,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "relative flex items-center",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                        ref: inputRef,
+                        type: "text",
+                        value: sorgu,
+                        onChange: (e)=>setSorgu(e.target.value),
+                        placeholder: "Kelime veya anlam ara...",
+                        style: {
+                            fontSize: `${metinBoyutu}px`
+                        },
+                        className: "w-full pl-4 pr-12 py-3.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-slate-900 dark:text-slate-100 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-red-500/50 focus:border-red-500 transition-all shadow-inner"
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/SearchBox.tsx",
+                        lineNumber: 109,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "absolute right-3 p-2 text-slate-400 hover:text-red-500 transition cursor-pointer",
+                        children: "🔍"
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/SearchBox.tsx",
+                        lineNumber: 118,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/components/SearchBox.tsx",
+                lineNumber: 108,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "pt-2",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "flex items-center justify-between mb-2",
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                            className: "text-xs font-semibold text-slate-400 dark:text-slate-500 uppercase tracking-wider",
+                            children: "Çerkesçe Karakterler"
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/SearchBox.tsx",
+                            lineNumber: 126,
+                            columnNumber: 11
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/SearchBox.tsx",
+                        lineNumber: 125,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "flex flex-wrap gap-1.5",
+                        children: [
+                            CERKESCE_HARFLER.map((harf)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                    type: "button",
+                                    onClick: ()=>handleHarfEkle(harf),
+                                    style: {
+                                        fontSize: `${Math.max(metinBoyutu - 2, 13)}px`
+                                    },
+                                    className: "px-3 py-1.5 rounded-lg bg-slate-100 hover:bg-red-600 dark:bg-slate-800 dark:hover:bg-red-600 text-slate-700 dark:text-slate-200 hover:text-white dark:hover:text-white font-medium border border-slate-200/60 dark:border-slate-700/60 transition-all active:scale-95 shadow-sm select-none",
+                                    children: harf
+                                }, harf, false, {
+                                    fileName: "[project]/src/components/SearchBox.tsx",
+                                    lineNumber: 132,
+                                    columnNumber: 13
+                                }, this)),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                type: "button",
+                                onClick: handleSil,
+                                style: {
+                                    fontSize: `${Math.max(metinBoyutu - 2, 13)}px`
+                                },
+                                className: "ml-auto px-3.5 py-1.5 rounded-lg bg-red-50 dark:bg-red-950/40 text-red-600 dark:text-red-400 hover:bg-red-600 hover:text-white dark:hover:bg-red-600 dark:hover:text-white border border-red-200 dark:border-red-900/50 font-medium transition-all active:scale-95 shadow-sm select-none",
+                                children: "Sil ⌫"
+                            }, void 0, false, {
+                                fileName: "[project]/src/components/SearchBox.tsx",
+                                lineNumber: 142,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/components/SearchBox.tsx",
+                        lineNumber: 130,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/components/SearchBox.tsx",
+                lineNumber: 124,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/src/components/SearchBox.tsx",
+        lineNumber: 62,
+        columnNumber: 5
+    }, this);
+});
+_c3 = AramaKutusu;
+const __TURBOPACK__default__export__ = AramaKutusu;
+var _c, _c1, _c2, _c3;
+__turbopack_context__.k.register(_c, "SearchBox$memo");
+__turbopack_context__.k.register(_c1, "SearchBox");
+__turbopack_context__.k.register(_c2, "AramaKutusu$memo");
+__turbopack_context__.k.register(_c3, "AramaKutusu");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/src/components/SozlukEkrani.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>SozlukEkrani
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$SearchBox$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/SearchBox.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$KelimeKarti$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/KelimeKarti.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Header$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/Header.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$GununKelimesiKart$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/GununKelimesiKart.tsx [app-client] (ecmascript)");
+;
+var _s = __turbopack_context__.k.signature();
+"use client";
+;
+;
+;
+;
+;
+const AkilliKlavyeModule = __turbopack_context__.r("[project]/src/components/AkilliKlavye.tsx [app-client] (ecmascript)");
+const AkilliKlavye = AkilliKlavyeModule?.default ?? AkilliKlavyeModule;
+function SozlukEkrani({ words, loading, totalCount }) {
+    _s();
+    const [searchTerm, setSearchTerm] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
+    const [isKlavyeOpen, setIsKlavyeOpen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
+    const [fontSize, setFontSize] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(16);
+    const [karanlikMod, setKaranlikMod] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
+    const [tema, setTema] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("light");
+    // AkilliKlavye için ref tanımlaması
+    const inputRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
+    const handleLetterClick = (letter)=>{
+        setSearchTerm((prev)=>prev + letter);
+    };
+    const handleSelectWord = (item)=>{
+        if (typeof item.kelime === "string") {
+            setSearchTerm(item.kelime);
+        }
+    };
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: "min-h-screen bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 pb-20",
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Header$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Header"], {
+                tema: tema,
+                metinBoyutu: fontSize,
+                karanlikMod: karanlikMod,
+                setMetinBoyutu: setFontSize,
+                setKaranlikMod: setKaranlikMod,
+                setTema: setTema
+            }, void 0, false, {
+                fileName: "[project]/src/components/SozlukEkrani.tsx",
+                lineNumber: 45,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
+                className: "max-w-4xl mx-auto px-4 py-6 space-y-6",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$SearchBox$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SearchBox"], {
+                        searchTerm: searchTerm,
+                        setSearchTerm: setSearchTerm,
+                        onLetterClick: handleLetterClick,
+                        isKlavyeOpen: isKlavyeOpen,
+                        setIsKlavyeOpen: setIsKlavyeOpen
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/SozlukEkrani.tsx",
+                        lineNumber: 55,
+                        columnNumber: 9
+                    }, this),
+                    isKlavyeOpen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        id: "akilli-klavye",
+                        role: "region",
+                        "aria-label": "Çerkesçe Sanal Klavye",
+                        className: "p-3 bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 shadow-lg",
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(AkilliKlavye, {
+                            sorgu: searchTerm,
+                            setSorgu: setSearchTerm,
+                            karanlikMod: karanlikMod,
+                            inputRef: inputRef
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/SozlukEkrani.tsx",
+                            lineNumber: 70,
+                            columnNumber: 13
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/SozlukEkrani.tsx",
+                        lineNumber: 64,
+                        columnNumber: 11
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "flex justify-between items-center text-xs text-gray-500 dark:text-gray-400 px-1",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                children: loading ? "Sözlükler yükleniyor..." : "Sözlükler hazır"
+                            }, void 0, false, {
+                                fileName: "[project]/src/components/SozlukEkrani.tsx",
+                                lineNumber: 80,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                children: [
+                                    words.length.toLocaleString(),
+                                    " / ",
+                                    totalCount.toLocaleString(),
+                                    " kayıt"
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/components/SozlukEkrani.tsx",
+                                lineNumber: 81,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/components/SozlukEkrani.tsx",
+                        lineNumber: 79,
+                        columnNumber: 9
+                    }, this),
+                    !searchTerm && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$GununKelimesiKart$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                        gununKelimesi: words[0] || null,
+                        metinBoyutu: fontSize,
+                        karanlikMod: karanlikMod,
+                        tema: tema,
+                        onSelect: handleSelectWord
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/SozlukEkrani.tsx",
+                        lineNumber: 87,
+                        columnNumber: 11
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "space-y-3",
+                        children: words.map((item, index)=>{
+                            const uniqueKey = typeof item.id === "string" || typeof item.id === "number" ? String(item.id) : `${item.kelime ?? "kelime"}-${index}`;
+                            return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$KelimeKarti$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["KelimeKarti"], {
+                                item: item,
+                                fontSize: fontSize,
+                                onSelect: handleSelectWord
+                            }, uniqueKey, false, {
+                                fileName: "[project]/src/components/SozlukEkrani.tsx",
+                                lineNumber: 104,
+                                columnNumber: 15
+                            }, this);
+                        })
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/SozlukEkrani.tsx",
+                        lineNumber: 96,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/components/SozlukEkrani.tsx",
+                lineNumber: 54,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/src/components/SozlukEkrani.tsx",
+        lineNumber: 44,
+        columnNumber: 5
+    }, this);
+}
+_s(SozlukEkrani, "0hdbAxUVCjroXbC6QkjXrUamkiY=");
+_c = SozlukEkrani;
+var _c;
+__turbopack_context__.k.register(_c, "SozlukEkrani");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/src/hooks/useDictionary.ts [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "useDictionary",
+    ()=>useDictionary
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utils$2f$cleanHtml$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/utils/cleanHtml.ts [app-client] (ecmascript)");
+var _s = __turbopack_context__.k.signature();
+;
+;
+const DEMO_SOZLUKLER = [
+    {
+        file: "adigece_turkce.json",
+        title: "Demo Sözlük",
+        total_words: 6,
+        dialect: "BATI"
+    }
+];
+const DEMO_KELIMELER = [
+    {
+        kelime: "псы",
+        tanim: "su",
+        kaynak_sozluk: "Demo",
+        file: "demo",
+        dialect: "BATI"
+    },
+    {
+        kelime: "Ӏупэ",
+        tanim: "kapı",
+        kaynak_sozluk: "Demo",
+        file: "demo",
+        dialect: "BATI"
+    },
+    {
+        kelime: "мафэ",
+        tanim: "güneş / gün",
+        kaynak_sozluk: "Demo",
+        file: "demo",
+        dialect: "BATI"
+    }
+];
+function normalizeText(text) {
+    if (!text || typeof text !== "string") return "";
+    return text.normalize("NFC").toLocaleLowerCase("tr").trim();
+}
+function hashString(str) {
+    let h = 0;
+    for(let i = 0; i < str.length; i++){
+        h = (h << 5) - h + str.charCodeAt(i);
+        h |= 0;
+    }
+    return Math.abs(h);
+}
+function getLanguageName(item) {
+    if (item.language) return item.language;
+    if (item.dialect === "BATI") return "Adıgece";
+    if (item.dialect === "DOGU") return "Kabardeyce";
+    return "Bilinmeyen";
+}
+function parseTanim(val) {
+    if (Array.isArray(val?.definitions) && val.definitions.length > 0) {
+        const meanings = val.definitions.map((d)=>typeof d === "string" ? d : d?.meaning || "").map((m)=>m.trim()).filter(Boolean);
+        if (meanings.length > 0) {
+            const tip = val?.type?.trim();
+            const tipEki = tip ? `[${tip}] ` : "";
+            return tipEki + meanings.join("\n");
+        }
+    }
+    if (val?.full_definition_in_html) return (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utils$2f$cleanHtml$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["temizleHtml"])(val.full_definition_in_html);
+    if (typeof val === "string") return val.trim();
+    if (typeof val?.tanim === "string") return val.tanim.trim();
+    if (typeof val?.meaning === "string") return val.meaning.trim();
+    return "";
+}
+function parseDictionaryData(rawData, meta) {
+    const wordsObj = rawData?.words || rawData;
+    let parsed = [];
+    if (Array.isArray(wordsObj)) {
+        parsed = wordsObj.map((item)=>{
+            const kelime = item?.kelime || item?.spelling || "";
+            const tanim = item?.tanim ? (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utils$2f$cleanHtml$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["temizleHtml"])(item.tanim) : parseTanim(item);
+            return {
+                ...item,
+                kelime,
+                tanim,
+                file: meta.file,
+                kaynak_sozluk: meta.title,
+                dialect: meta.dialect,
+                normalizedKelime: normalizeText(kelime),
+                normalizedTanim: normalizeText(tanim)
+            };
+        });
+    } else if (typeof wordsObj === "object" && wordsObj !== null) {
+        parsed = Object.entries(wordsObj).map(([key, val])=>{
+            const kelime = val?.spelling || key;
+            const tanim = parseTanim(val);
+            return {
+                kelime,
+                tanim,
+                file: meta.file,
+                kaynak_sozluk: meta.title,
+                dialect: meta.dialect,
+                normalizedKelime: normalizeText(kelime),
+                normalizedTanim: normalizeText(tanim)
+            };
+        });
+    }
+    return parsed.filter((item)=>item.kelime && item.tanim);
+}
+function useDictionary() {
+    _s();
+    const [aktifSozlukler, setAktifSozlukler] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])([]);
+    const [rawWords, setRawWords] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])([]);
+    const [wordsCount, setWordsCount] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(0);
+    const [loading, setLoading] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(true);
+    const [searchQuery, setSearchQuery] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
+    const [seciliLehce, setSeciliLehce] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("TUMU");
+    const [seciliDosya, setSeciliDosya] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("TUMU");
+    const [gununKelimesi, setGununKelimesi] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
+    const cacheRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])({});
+    const deferredSearch = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useDeferredValue"])(searchQuery);
+    const loadOne = async (meta)=>{
+        if (!meta.file) return []; // Undefined hatasını önleyen güvenlik kontrolü
+        if (cacheRef.current[meta.file]) return cacheRef.current[meta.file];
+        const res = await fetch(`/data/${meta.file}`);
+        if (!res.ok) throw new Error(`${meta.file} 404`);
+        const raw = await res.json();
+        const result = parseDictionaryData(raw, meta);
+        cacheRef.current[meta.file] = result;
+        return result;
+    };
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "useDictionary.useEffect": ()=>{
+            let isMounted = true;
+            async function init() {
+                setLoading(true);
+                // 1. Manifest yükle
+                let manifest = [];
+                try {
+                    const res = await fetch("/data/dictionaries.json");
+                    if (res.ok) manifest = await res.json();
+                } catch  {
+                    console.warn("Manifest yüklenemedi.");
+                }
+                if (!Array.isArray(manifest) || manifest.length === 0) {
+                    manifest = DEMO_SOZLUKLER;
+                }
+                if (isMounted) setAktifSozlukler(manifest);
+                // 2. Hedef sözlükleri belirle
+                const hedef = seciliDosya !== "TUMU" ? manifest.filter({
+                    "useDictionary.useEffect.init": (d)=>d.file === seciliDosya
+                }["useDictionary.useEffect.init"]) : seciliLehce !== "TUMU" ? manifest.filter({
+                    "useDictionary.useEffect.init": (d)=>d.dialect === seciliLehce
+                }["useDictionary.useEffect.init"]) : manifest;
+                if (hedef.length === 0) {
+                    if (isMounted) {
+                        setRawWords(DEMO_KELIMELER);
+                        setWordsCount(DEMO_KELIMELER.length);
+                        setLoading(false);
+                    }
+                    return;
+                }
+                // 3. İlk 3 sözlüğü hemen yükle
+                const ilkGrup = hedef.slice(0, 3);
+                const kalanGrup = hedef.slice(3);
+                let ilkKelimeler = [];
+                const ilkSonuclar = await Promise.allSettled(ilkGrup.map(loadOne));
+                ilkSonuclar.forEach({
+                    "useDictionary.useEffect.init": (r)=>{
+                        if (r.status === "fulfilled") ilkKelimeler.push(...r.value);
+                    }
+                }["useDictionary.useEffect.init"]);
+                if (!isMounted) return;
+                if (ilkKelimeler.length === 0) {
+                    setRawWords(DEMO_KELIMELER);
+                    setWordsCount(DEMO_KELIMELER.length);
+                } else {
+                    setRawWords(ilkKelimeler);
+                    setWordsCount(ilkKelimeler.length);
+                }
+                setLoading(false);
+                // 4. Kalan sözlükleri batch'ler halinde arka planda yükle
+                if (kalanGrup.length === 0) return;
+                const BATCH = 4;
+                let tumKelimeler = [
+                    ...ilkKelimeler
+                ];
+                for(let i = 0; i < kalanGrup.length; i += BATCH){
+                    if (!isMounted) return;
+                    const batch = kalanGrup.slice(i, i + BATCH);
+                    const sonuclar = await Promise.allSettled(batch.map(loadOne));
+                    const yeni = [];
+                    sonuclar.forEach({
+                        "useDictionary.useEffect.init": (r)=>{
+                            if (r.status === "fulfilled") yeni.push(...r.value);
+                        }
+                    }["useDictionary.useEffect.init"]);
+                    if (yeni.length > 0 && isMounted) {
+                        tumKelimeler = [
+                            ...tumKelimeler,
+                            ...yeni
+                        ];
+                        setRawWords([
+                            ...tumKelimeler
+                        ]);
+                        setWordsCount(tumKelimeler.length);
+                    }
+                }
+            }
+            init();
+            return ({
+                "useDictionary.useEffect": ()=>{
+                    isMounted = false;
+                }
+            })["useDictionary.useEffect"];
+        }
+    }["useDictionary.useEffect"], [
+        seciliDosya,
+        seciliLehce
+    ]);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "useDictionary.useEffect": ()=>{
+            if (rawWords.length === 0) return;
+            const today = new Date().toISOString().slice(0, 10);
+            const idx = hashString(today) % rawWords.length;
+            setGununKelimesi(rawWords[idx]);
+        }
+    }["useDictionary.useEffect"], [
+        rawWords
+    ]);
+    const filtrelenmisSonuclar = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useMemo"])({
+        "useDictionary.useMemo[filtrelenmisSonuclar]": ()=>{
+            let veri = rawWords;
+            if (seciliLehce !== "TUMU") veri = veri.filter({
+                "useDictionary.useMemo[filtrelenmisSonuclar]": (i)=>i.dialect === seciliLehce
+            }["useDictionary.useMemo[filtrelenmisSonuclar]"]);
+            if (seciliDosya !== "TUMU") veri = veri.filter({
+                "useDictionary.useMemo[filtrelenmisSonuclar]": (i)=>i.file === seciliDosya
+            }["useDictionary.useMemo[filtrelenmisSonuclar]"]);
+            if (deferredSearch.trim()) {
+                const q = normalizeText(deferredSearch);
+                veri = veri.filter({
+                    "useDictionary.useMemo[filtrelenmisSonuclar]": (i)=>i.normalizedKelime?.includes(q) || i.normalizedTanim?.includes(q)
+                }["useDictionary.useMemo[filtrelenmisSonuclar]"]);
+            }
+            return veri;
+        }
+    }["useDictionary.useMemo[filtrelenmisSonuclar]"], [
+        rawWords,
+        seciliLehce,
+        seciliDosya,
+        deferredSearch
+    ]);
+    const conceptRows = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useMemo"])({
+        "useDictionary.useMemo[conceptRows]": ()=>{
+            const groups = new Map();
+            filtrelenmisSonuclar.forEach({
+                "useDictionary.useMemo[conceptRows]": (item)=>{
+                    const key = item.normalizedTanim || item.tanim;
+                    if (!groups.has(key)) groups.set(key, {});
+                    const row = groups.get(key);
+                    const lang = getLanguageName(item);
+                    row[lang] = item.kelime;
+                    if (!row["Türkçe"] && item.tanim) row["Türkçe"] = item.tanim.split(";")[0].trim();
+                }
+            }["useDictionary.useMemo[conceptRows]"]);
+            return Array.from(groups.values());
+        }
+    }["useDictionary.useMemo[conceptRows]"], [
+        filtrelenmisSonuclar
+    ]);
+    return {
+        wordsCount,
+        loading,
+        searchQuery,
+        setSearchQuery,
+        seciliLehce,
+        setSeciliLehce,
+        seciliDosya,
+        setSeciliDosya,
+        gununKelimesi,
+        filtrelenmisSonuclar,
+        conceptRows,
+        aktifSozlukler
+    };
+}
+_s(useDictionary, "t/D15r1M2RLu1VaJazoqGMCOon0=", false, function() {
+    return [
+        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useDeferredValue"]
+    ];
+});
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/src/utils/cleanHtml.ts [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "temizleHtml",
+    ()=>temizleHtml
+]);
+const ENTITY_MAP = {
+    "&nbsp;": " ",
+    "&amp;": "&",
+    "&lt;": "<",
+    "&gt;": ">",
+    "&quot;": '"',
+    "&#39;": "'",
+    "&apos;": "'",
+    "&cent;": "¢",
+    "&pound;": "£",
+    "&yen;": "¥",
+    "&euro;": "€",
+    "&copy;": "©",
+    "&reg;": "®"
+};
+function temizleHtml(html) {
+    if (!html || typeof html !== "string") {
+        return "";
+    }
+    let text = html.replace(/<\/(?:h[1-6]|p|div|li|tr)>/gi, "\n").replace(/<br\s*\/?>/gi, "\n");
+    text = text.replace(/<[^>]*>/g, "");
+    text = text.replace(/&[a-zA-Z0-9#]+;/g, (entity)=>{
+        if (ENTITY_MAP[entity]) {
+            return ENTITY_MAP[entity];
+        }
+        if (entity.startsWith("&#") && !entity.startsWith("&#x")) {
+            const code = parseInt(entity.slice(2, -1), 10);
+            return !isNaN(code) ? String.fromCharCode(code) : entity;
+        }
+        if (entity.startsWith("&#x")) {
+            const code = parseInt(entity.slice(3, -1), 16);
+            return !isNaN(code) ? String.fromCharCode(code) : entity;
+        }
+        return entity;
+    });
+    return text.replace(/[ \t]+/g, " ").replace(/\n\s*\n/g, "\n\n").trim();
+}
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+]);
+
+//# sourceMappingURL=_1eqx6o7._.js.map

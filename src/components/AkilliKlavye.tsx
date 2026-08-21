@@ -1,24 +1,23 @@
 'use client';
-import React, { useState, useEffect } from 'react';
 
-export type KlavyeDili = 'adiyge' | 'kabardey' | 'tr' | 'ru' | 'en' | 'ar';
+import React, { useState, useEffect } from 'react';
+import { KURUMSAL } from '@/lib/dictionaryConstants';
+import { CERKES_OZEL_HARFLER } from '@/constants/alphabet';
+
+export type KlavyeDili = 'cerkes' | 'tr' | 'ru' | 'en' | 'ar';
 
 interface AkilliKlavyeProps {
   inputRef: React.RefObject<HTMLInputElement | null>;
   sorgu: string;
-  setSorgu: React.Dispatch<React.SetStateAction<string>>;
-  metinBoyutu: number;
-  karanlikMod: boolean;
+  setSorgu: (yeniSorgu: string | ((prev: string) => string)) => void;
+  metinBoyutu?: number;
+  karanlikMod?: boolean;
 }
 
-const KLAVYE_DUZENLERI: Record<KlavyeDili, { etiket: string; tuslar: string[] }> = {
-  adiyge: {
-    etiket: '🟢 Adıgece',
-    tuslar: ['Ӏ', 'а', 'б', 'в', 'г', 'гу', 'гъ', 'д', 'дж', 'дз', 'е', 'ё', 'ж', 'жъ', 'з', 'и', 'й', 'к', 'къ', 'кӀ', 'л', 'ль', 'м', 'н', 'о', 'п', 'пӀ', 'р', 'с', 'т', 'у', 'ф', 'х', 'хъ', 'ц', 'ч', 'чъ', 'чӀ', 'ш', 'щ', 'ы', 'э', 'ю', 'я']
-  },
-  kabardey: {
-    etiket: '🔵 Kabardeyce',
-    tuslar: ['Ӏ', 'къ', 'кӀ', 'пӀ', 'тӀ', 'цӀ', 'чӀ', 'лъ', 'фӀ', 'хь', 'гъ', 'жь', 'щ', 'гу', 'гъu', 'дз', 'дж']
+const KLAVYE_DUZENLERI: Record<KlavyeDili, { etiket: string; tuslar: readonly string[] }> = {
+  cerkes: {
+    etiket: '🟢 Çerkesçe',
+    tuslar: CERKES_OZEL_HARFLER
   },
   tr: {
     etiket: '🇹🇷 Türkçe',
@@ -38,9 +37,15 @@ const KLAVYE_DUZENLERI: Record<KlavyeDili, { etiket: string; tuslar: string[] }>
   }
 };
 
-export default function AkilliKlavye({ inputRef, sorgu, setSorgu, metinBoyutu, karanlikMod }: AkilliKlavyeProps) {
+export default function AkilliKlavye({ 
+  inputRef, 
+  sorgu, 
+  setSorgu, 
+  metinBoyutu = 16, 
+  karanlikMod = false 
+}: AkilliKlavyeProps) {
   const [acik, setAcik] = useState(false);
-  const [aktifDil, setAktifDil] = useState<KlavyeDili>('adiyge');
+  const [aktifDil, setAktifDil] = useState<KlavyeDili>('cerkes');
 
   useEffect(() => {
     const kayitliDil = localStorage.getItem('aktifKlavye') as KlavyeDili;
@@ -56,6 +61,7 @@ export default function AkilliKlavye({ inputRef, sorgu, setSorgu, metinBoyutu, k
 
   const harfEkle = (harf: string) => {
     const input = inputRef.current;
+    
     if (!input) {
       setSorgu((prev) => prev + harf);
       return;
@@ -73,6 +79,7 @@ export default function AkilliKlavye({ inputRef, sorgu, setSorgu, metinBoyutu, k
     }, 0);
   };
 
+  const kirmiziRenk = KURUMSAL?.kirmizi || '#FF4030';
   const arkaPlan = karanlikMod ? '#1e293b' : '#ffffff';
   const kenarlik = karanlikMod ? '#475569' : '#cbd5e1';
   const yaziRengi = karanlikMod ? '#f8fafc' : '#0f172a';
@@ -121,12 +128,13 @@ export default function AkilliKlavye({ inputRef, sorgu, setSorgu, metinBoyutu, k
                 style={{
                   padding: '6px 12px',
                   borderRadius: '16px',
-                  border: `1px solid ${aktifDil === dilKey ? '#2563eb' : kenarlik}`,
-                  backgroundColor: aktifDil === dilKey ? '#2563eb' : 'transparent',
+                  border: `1px solid ${aktifDil === dilKey ? kirmiziRenk : kenarlik}`,
+                  backgroundColor: aktifDil === dilKey ? kirmiziRenk : 'transparent',
                   color: aktifDil === dilKey ? '#ffffff' : yaziRengi,
                   fontSize: `${metinBoyutu * 0.8}px`,
                   cursor: 'pointer',
-                  whiteSpace: 'nowrap'
+                  whiteSpace: 'nowrap',
+                  fontWeight: aktifDil === dilKey ? 'bold' : 'normal'
                 }}
               >
                 {KLAVYE_DUZENLERI[dilKey].etiket}

@@ -10,239 +10,19 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useDictionary$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/hooks/useDictionary.ts [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$AkilliKlavye$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/AkilliKlavye.tsx [app-client] (ecmascript)");
+(()=>{
+    const e = new Error("Cannot find module '@/constants/dictionary'");
+    e.code = 'MODULE_NOT_FOUND';
+    throw e;
+})();
 ;
 var _s = __turbopack_context__.k.signature();
 "use client";
 ;
 ;
 ;
+;
 const LIMIT = 20;
-const KURUMSAL = {
-    kirmizi: "#FF4030",
-    kirmiziKoyu: "#E02E1F",
-    kirmiziAcik: "#FFF1F0",
-    sari: "#FFC604",
-    sariKoyu: "#D9A400",
-    sariAcik: "#FFFBEB"
-};
-const VARSAYILAN_TEMA = {
-    arkaPlan: "#ffffff",
-    yaziAna: "#000000",
-    yaziAlt: "#64748b",
-    kenarlik: "#e2e8f0",
-    kartArkaPlan: "#ffffff",
-    inputArkaPlan: "#f8fafc"
-};
-const BATI_SOZLUKLERI = {
-    "0.Ady-Ady_AIG.json": "Adıgece Açıklamalı Sözlük — Адыгабзэм изэхэф гущı1алъ (2006)",
-    "1.Ady-Ady_AP.json": "Adıgece-Rusça Sözlük — Prof. Dr. Mirabil L. Apaşev (2008)",
-    "2.Ady-Ara.json": "Adıgece-Arapça Sözlük — Dr. Adel Abdulsalam Lash (2013)",
-    "3.Ady-En.json": "Adıgece-İngilizce Sözlük — Адыгэбзэ-инджылыбзэ гущı1алъэ",
-    "4.Ady-En_Adam.json": "Adam Shagash Adıgece-İngilizce Sözlük (2020)",
-    "7.Ady-Rus_Tharkaho.json": "Tharkaho Adıgece-Rusça Sözlük — Cevdet Tharkaho",
-    "8.Ady-Tur_Huvaj.json": "Fahri Huvaj Adıgece-Türkçe Sözlük",
-    "9.En-Ady.json": "İngilizce-Adıgece Sözlük",
-    "10.En-Ady_Adam.json": "Adam Shagash İngilizce-Adıgece Sözlük (2020)",
-    "23.Rus-Ady_Blaghoj.json": "Blaghoj Rusça-Adıgece Sözlük — Prof. Dr. Ramazan Blaghoj (1991)",
-    "24.Rus-Ady_UAG.json": "Odezhdeko Rusça-Adıgece Sözlük — U. A. Gethanoko (1960)",
-    "25.Rus-Ady_UASP.json": "Rusça-Adıgece Okul Sözlüğü (1991)",
-    "29.Tur-Ady_Teshu.json": "Teshu Türkçe-Adıgece Sözlük — Cevdet Tharkaho (1991)",
-    "30.Ady-Rus_ThreeVolumes.json": "3 Ciltlik Büyük Adıgece-Rusça Sözlük — Maykop Enstitüsü (2011)",
-    "31.Tu-Ady_Hilmi.json": "Açumıj Hilmi Türkçe-Adıgece Sözlük (2013)",
-    "33.Ady-Rus-1960.json": "Eski Adıgece-Rusça Açıklamalı Sözlük (1960)"
-};
-const DOGU_SOZLUKLERI = {
-    "5.Ady-Rus_Qarden.json": "Kardanov Kabardeyce-Rusça Sözlük — B. M. Kardanov (1957)",
-    "6.Ady-Rus_Sherdjes.json": "Sherdjes Aliy Kabardeyce/Adıgece-Rusça Sözlük — Ali İ. Çerkes (1994)",
-    "11.En-Kbd-Jonty.json": "Jonty Yamisha İngilizce-Kabardeyce Sözlük",
-    "12.En-Kbd-Ziwar.json": "Ziwar Gish İngilizce-Kabardeyce Sözlük",
-    "13.Kbd-Ar-Jonty.json": "Jonty Yamisha Kabardeyce-Arapça Sözlük",
-    "14.Kbd-En-2-Jonty.json": "Jonty Yamisha Kabardeyce-İngilizce Sözlük v2",
-    "15.Kbd-En-Jonty.json": "Jonty Yamisha Kabardeyce-İngilizce Sözlük v1",
-    "16.Kbd-En-Ziwar.json": "Ziwar Gish Kabardeyce-İngilizce Sözlük",
-    "17.Kbd-En_Amjad.json": "Amjad Jaimoukha Kabardeyce-İngilizce Sözlük (1997)",
-    "18.Kbd-Ru&En.json": "Kabardeyce - Rusça & İngilizce Çok Dilli Sözlük",
-    "19.Kbd-Ru-2-Jonty.json": "Jonty Yamisha Kabardeyce-Rusça Sözlük v2",
-    "20.Kbd-Ru-Jonty.json": "Jonty Yamisha Kabardeyce-Rusça Sözlük v1",
-    "21.Kbd-Tu-Jonty.json": "Jonty Yamisha Kabardeyce-Türkçe Sözlük",
-    "22.Ru-Kbd-Jonty.json": "Jonty Yamisha Rusça-Kabardeyce Sözlük",
-    "26.Tu-Kbd-Jonty.json": "Jonty Yamisha Türkçe-Kabardeyce Sözlük",
-    "27.Tur-Ady_Abaze.json": "İbrahim Alhas Abaze Türkçe-Adıgece Sözlük (2005)",
-    "28.Tur-Ady_Huvaj.json": "Fahri Huvaj Türkçe-Çerkesçe Sözlük (2007)",
-    "32.Rus-Kbd_Nalchik_2013.json": "Nalçik Baskısı Okullar İçin Rusça-Kabardeyce Sözlük (2013)"
-};
-const KAYNAK_HARITASI = {
-    ...BATI_SOZLUKLERI,
-    ...DOGU_SOZLUKLERI
-};
-// Türkçe Tür Dönüştürücü Haritası
-const TUR_MAP = {
-    "verb": "Fiil",
-    "noun": "İsim",
-    "adjective": "Sıfat",
-    "adverb": "Zarf",
-    "auxiliary verb": "Yardımcı Fiil",
-    "auxiliary": "Yardımcı Fiil",
-    "suffix": "Ek",
-    "verbal suffix": "Fiil Eki",
-    "prefix": "Önek",
-    "preposition": "Edat",
-    "conjunction": "Bağlaç",
-    "pronoun": "Zamir"
-};
-const tanimlariBicimlendir = (tanim, tema = VARSAYILAN_TEMA, gecerliBaslikOrBoyut, metinBoyutuParam, kaynakParam)=>{
-    if (!tanim) return null;
-    const gecerliTema = tema || VARSAYILAN_TEMA;
-    let gecerliBaslik = "";
-    let metinBoyutu = 16;
-    if (typeof gecerliBaslikOrBoyut === "number") {
-        metinBoyutu = gecerliBaslikOrBoyut;
-    } else if (typeof gecerliBaslikOrBoyut === "string") {
-        gecerliBaslik = gecerliBaslikOrBoyut;
-        if (typeof metinBoyutuParam === "number") {
-            metinBoyutu = metinBoyutuParam;
-        }
-    }
-    const temizBaslik = gecerliBaslik.trim().toLowerCase();
-    const satirListesi = tanim.split("\n");
-    const anlamlar = [];
-    let turBilgisi = "";
-    let kaynakBilgisi = kaynakParam || "";
-    for (const satir of satirListesi){
-        let temiz = satir.trim();
-        if (!temiz) continue;
-        if (/^definitions:?$/i.test(temiz)) continue;
-        // "type: ..." bilgisini yakala
-        const typeMatch = temiz.match(/^type:\s*(.*)$/i);
-        if (typeMatch) {
-            const hamTur = typeMatch[1].trim();
-            turBilgisi = TUR_MAP[hamTur.toLowerCase()] || hamTur;
-            continue;
-        }
-        // "source: ..." veya "kaynak: ..." bilgisini metin içinden yakala
-        const sourceMatch = temiz.match(/^(?:source|kaynak):\s*(.*)$/i);
-        if (sourceMatch) {
-            kaynakBilgisi = sourceMatch[1].trim();
-            continue;
-        }
-        // Liste numaralarını temizle ("1.", "2)")
-        temiz = temiz.replace(/^\d+[\.\)]\s*/, "").trim();
-        // Parantez içindeki açıklamaları temizle
-        temiz = temiz.replace(/\s*\(.*?\)/g, "").trim();
-        // Başlığın kendisi ise listeye ekleme
-        if (temizBaslik && temiz.toLowerCase() === temizBaslik) continue;
-        if (temiz) {
-            anlamlar.push(temiz);
-        }
-    }
-    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        style: {
-            marginTop: "12px",
-            display: "flex",
-            flexDirection: "column",
-            gap: "12px"
-        },
-        children: [
-            anlamlar.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
-                        style: {
-                            fontSize: `${metinBoyutu * 0.85}px`,
-                            fontWeight: 600,
-                            color: gecerliTema.yaziAlt || "#64748b",
-                            margin: "0 0 6px 0"
-                        },
-                        children: "📖 Karşılıklar"
-                    }, void 0, false, {
-                        fileName: "[project]/app/page.tsx",
-                        lineNumber: 176,
-                        columnNumber: 11
-                    }, ("TURBOPACK compile-time value", void 0)),
-                    anlamlar.map((anlam, idx)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            style: {
-                                color: gecerliTema.yaziAna,
-                                fontSize: `${metinBoyutu * 0.95}px`,
-                                lineHeight: "1.6",
-                                marginBottom: "4px",
-                                paddingLeft: "2px"
-                            },
-                            children: [
-                                "• ",
-                                anlam
-                            ]
-                        }, idx, true, {
-                            fileName: "[project]/app/page.tsx",
-                            lineNumber: 187,
-                            columnNumber: 13
-                        }, ("TURBOPACK compile-time value", void 0)))
-                ]
-            }, void 0, true, {
-                fileName: "[project]/app/page.tsx",
-                lineNumber: 175,
-                columnNumber: 9
-            }, ("TURBOPACK compile-time value", void 0)),
-            Boolean(turBilgisi) && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                style: {
-                    paddingTop: "8px",
-                    borderTop: `1px solid ${gecerliTema.kenarlik || "#e5e7eb"}`,
-                    fontSize: `${metinBoyutu * 0.85}px`,
-                    color: gecerliTema.yaziAlt || "#64748b",
-                    fontWeight: 500
-                },
-                children: [
-                    "🏷 Tür:",
-                    " ",
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                        style: {
-                            color: gecerliTema.yaziAna,
-                            fontWeight: 600
-                        },
-                        children: turBilgisi
-                    }, void 0, false, {
-                        fileName: "[project]/app/page.tsx",
-                        lineNumber: 215,
-                        columnNumber: 11
-                    }, ("TURBOPACK compile-time value", void 0))
-                ]
-            }, void 0, true, {
-                fileName: "[project]/app/page.tsx",
-                lineNumber: 205,
-                columnNumber: 9
-            }, ("TURBOPACK compile-time value", void 0)),
-            Boolean(kaynakBilgisi) && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                style: {
-                    paddingTop: turBilgisi ? "4px" : "8px",
-                    borderTop: turBilgisi ? "none" : `1px solid ${gecerliTema.kenarlik || "#e5e7eb"}`,
-                    fontSize: `${metinBoyutu * 0.8}px`,
-                    color: gecerliTema.yaziAlt || "#64748b",
-                    fontStyle: "italic"
-                },
-                children: [
-                    "📚 Kaynak:",
-                    " ",
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                        style: {
-                            fontWeight: 500
-                        },
-                        children: kaynakBilgisi
-                    }, void 0, false, {
-                        fileName: "[project]/app/page.tsx",
-                        lineNumber: 233,
-                        columnNumber: 11
-                    }, ("TURBOPACK compile-time value", void 0))
-                ]
-            }, void 0, true, {
-                fileName: "[project]/app/page.tsx",
-                lineNumber: 223,
-                columnNumber: 9
-            }, ("TURBOPACK compile-time value", void 0))
-        ]
-    }, void 0, true, {
-        fileName: "[project]/app/page.tsx",
-        lineNumber: 172,
-        columnNumber: 5
-    }, ("TURBOPACK compile-time value", void 0));
-};
 function Home() {
     _s();
     const { wordsCount, loading, searchQuery, setSearchQuery, seciliLehce, setSeciliLehce, seciliDosya, setSeciliDosya, gununKelimesi, filtrelenmisSonuclar, aktifSozlukler } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useDictionary$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useDictionary"])();
@@ -389,7 +169,6 @@ function Home() {
         hedefDil,
         hedefDilBul
     ]);
-    // ... Buradan itibaren JSX (return) bloğunuz aynen devam eder.
     const handleSearchChange = (val)=>{
         setSearchQuery(val);
         setGoruntulenenAdet(LIMIT);
@@ -409,6 +188,14 @@ function Home() {
             }).catch(()=>setDuyuruMetni("Kopyalama işlemi başarısız oldu."));
         }
     };
+    const tema = {
+        arkaPlan: karanlikMod ? "#0c0f17" : "#f8fafc",
+        kartArkaPlan: karanlikMod ? "#141a29" : "#ffffff",
+        yaziAna: karanlikMod ? "#f8fafc" : "#0f172a",
+        yaziAlt: karanlikMod ? "#cbd5e1" : "#334155",
+        kenarlik: karanlikMod ? "#334155" : "#cbd5e1",
+        inputArkaPlan: karanlikMod ? "#1a2236" : "#ffffff"
+    };
     const metniVurgula = (metin, aktifTema)=>{
         const parcalar = metin.split(/(-[^\:]+\:|◊)/g);
         return parcalar.map((parca, index)=>{
@@ -423,7 +210,7 @@ function Home() {
                     children: "◊"
                 }, index, false, {
                     fileName: "[project]/app/page.tsx",
-                    lineNumber: 423,
+                    lineNumber: 199,
                     columnNumber: 11
                 }, this);
             }
@@ -439,176 +226,190 @@ function Home() {
                     ]
                 }, index, true, {
                     fileName: "[project]/app/page.tsx",
-                    lineNumber: 430,
+                    lineNumber: 207,
                     columnNumber: 11
                 }, this);
             }
             return parca;
         });
     };
-    const normalizeText = (text)=>text.normalize("NFC").toLocaleLowerCase("tr").replace(/[^\p{L}\p{N}]/gu, "").trim();
-    const tanimlariBicimlendir = (tanim, tema = VARSAYILAN_TEMA, gecerliBaslikOrBoyut, metinBoyutuParam, kaynakParam)=>{
-        if (!tanim) return null;
-        const gecerliTema = tema || VARSAYILAN_TEMA;
-        let gecerliBaslik = "";
-        let metinBoyutu = 16;
-        if (typeof gecerliBaslikOrBoyut === "number") {
-            metinBoyutu = gecerliBaslikOrBoyut;
-        } else if (typeof gecerliBaslikOrBoyut === "string") {
-            gecerliBaslik = gecerliBaslikOrBoyut;
-            if (typeof metinBoyutuParam === "number") {
-                metinBoyutu = metinBoyutuParam;
+    const tanimlariBicimlendir = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useCallback"])({
+        "Home.useCallback[tanimlariBicimlendir]": (tanimMetni, kelimeBasligiVeyaTema, aktifTema)=>{
+            if (!tanimMetni || tanimMetni === "Tanım yok") return null;
+            const gecerliBaslik = typeof kelimeBasligiVeyaTema === "string" ? kelimeBasligiVeyaTema : "";
+            const gecerliTema = (typeof kelimeBasligiVeyaTema === "object" ? kelimeBasligiVeyaTema : aktifTema) || tema;
+            const hamSatirlar = tanimMetni.split(/;|\n/).map({
+                "Home.useCallback[tanimlariBicimlendir].hamSatirlar": (item)=>item.trim()
+            }["Home.useCallback[tanimlariBicimlendir].hamSatirlar"]).filter(Boolean);
+            let kelimeTipi = "";
+            const tanimVeOrnekler = [];
+            for (const satir of hamSatirlar){
+                const temiz = satir.replace(/^(\d+[\.\)]\s*)+/, "").trim();
+                if (!temiz) continue;
+                if (gecerliBaslik && temiz.toLowerCase() === gecerliBaslik.toLowerCase()) continue;
+                if (/^definitions:?$/i.test(temiz)) continue;
+                if (/^type:\s*/i.test(temiz)) {
+                    const hamTip = temiz.replace(/^type:\s*/i, "").trim().toLowerCase();
+                    const turkceTip = TYPE_MAP[hamTip] || hamTip.charAt(0).toUpperCase() + hamTip.slice(1);
+                    kelimeTipi = `Tür: ${turkceTip}`;
+                    continue;
+                }
+                const isExample = temiz.includes("—") || temiz.startsWith("—");
+                tanimVeOrnekler.push({
+                    metin: temiz,
+                    isExample
+                });
             }
+            if (!kelimeTipi && tanimVeOrnekler.length === 0) return null;
+            const parantezVeMetinBiçimlendir = {
+                "Home.useCallback[tanimlariBicimlendir].parantezVeMetinBiçimlendir": (metin)=>{
+                    const parcalar = metin.split(/(\[[^\]]+\])/g);
+                    return parcalar.map({
+                        "Home.useCallback[tanimlariBicimlendir].parantezVeMetinBiçimlendir": (p, idx)=>{
+                            if (p.startsWith("[") && p.endsWith("]")) {
+                                return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                    style: {
+                                        color: KURUMSAL.kirmizi,
+                                        fontWeight: "500",
+                                        marginRight: "4px"
+                                    },
+                                    children: p
+                                }, idx, false, {
+                                    fileName: "[project]/app/page.tsx",
+                                    lineNumber: 260,
+                                    columnNumber: 15
+                                }, this);
+                            }
+                            return metniVurgula(p, gecerliTema);
+                        }
+                    }["Home.useCallback[tanimlariBicimlendir].parantezVeMetinBiçimlendir"]);
+                }
+            }["Home.useCallback[tanimlariBicimlendir].parantezVeMetinBiçimlendir"];
+            const toplamTanimSayisi = tanimVeOrnekler.filter({
+                "Home.useCallback[tanimlariBicimlendir]": (x)=>!x.isExample
+            }["Home.useCallback[tanimlariBicimlendir]"]).length;
+            let tanimSayaci = 0;
+            return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                style: {
+                    marginTop: "10px",
+                    marginBottom: "10px",
+                    textAlign: "left"
+                },
+                children: [
+                    kelimeTipi && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        style: {
+                            fontSize: `${metinBoyutu * 0.85}px`,
+                            fontStyle: "italic",
+                            fontWeight: "500",
+                            color: gecerliTema?.yaziAlt,
+                            marginBottom: "6px"
+                        },
+                        children: kelimeTipi
+                    }, void 0, false, {
+                        fileName: "[project]/app/page.tsx",
+                        lineNumber: 278,
+                        columnNumber: 13
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
+                        style: {
+                            display: "block",
+                            fontSize: `${metinBoyutu * 0.9}px`,
+                            fontWeight: "bold",
+                            color: gecerliTema?.yaziAna,
+                            marginBottom: "6px"
+                        },
+                        children: "Tanımlar:"
+                    }, void 0, false, {
+                        fileName: "[project]/app/page.tsx",
+                        lineNumber: 291,
+                        columnNumber: 11
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        style: {
+                            display: "flex",
+                            flexDirection: "column",
+                            gap: "6px"
+                        },
+                        children: tanimVeOrnekler.map({
+                            "Home.useCallback[tanimlariBicimlendir]": (item, idx)=>{
+                                if (!item.isExample) tanimSayaci++;
+                                return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    style: {
+                                        fontSize: `${metinBoyutu * 0.95}px`,
+                                        lineHeight: "1.6",
+                                        color: gecerliTema?.yaziAna,
+                                        paddingLeft: item.isExample ? "20px" : "0px"
+                                    },
+                                    children: !item.isExample ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        style: {
+                                            display: "flex",
+                                            gap: "6px",
+                                            alignItems: "baseline"
+                                        },
+                                        children: [
+                                            toplamTanimSayisi > 1 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                style: {
+                                                    fontWeight: "bold",
+                                                    color: gecerliTema?.yaziAna,
+                                                    minWidth: "16px"
+                                                },
+                                                children: [
+                                                    tanimSayaci,
+                                                    "."
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/app/page.tsx",
+                                                lineNumber: 320,
+                                                columnNumber: 25
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                children: parantezVeMetinBiçimlendir(item.metin)
+                                            }, void 0, false, {
+                                                fileName: "[project]/app/page.tsx",
+                                                lineNumber: 330,
+                                                columnNumber: 23
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/app/page.tsx",
+                                        lineNumber: 318,
+                                        columnNumber: 21
+                                    }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        style: {
+                                            color: gecerliTema?.yaziAlt,
+                                            fontStyle: "italic",
+                                            fontSize: `${metinBoyutu * 0.9}px`
+                                        },
+                                        children: parantezVeMetinBiçimlendir(item.metin)
+                                    }, void 0, false, {
+                                        fileName: "[project]/app/page.tsx",
+                                        lineNumber: 333,
+                                        columnNumber: 21
+                                    }, this)
+                                }, idx, false, {
+                                    fileName: "[project]/app/page.tsx",
+                                    lineNumber: 308,
+                                    columnNumber: 17
+                                }, this);
+                            }
+                        }["Home.useCallback[tanimlariBicimlendir]"])
+                    }, void 0, false, {
+                        fileName: "[project]/app/page.tsx",
+                        lineNumber: 303,
+                        columnNumber: 11
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/app/page.tsx",
+                lineNumber: 276,
+                columnNumber: 9
+            }, this);
         }
-        const temizBaslik = gecerliBaslik ? normalizeText(gecerliBaslik) : "";
-        const satirListesi = tanim.split("\n");
-        const anlamlar = [];
-        let turBilgisi = "";
-        let kaynakBilgisi = kaynakParam || "";
-        // Metinde Çerkesçe (Kiril) harfler var mı kontrol et
-        const kirilVarMi = /[\u0400-\u04FF]/.test(tanim);
-        for (const satir of satirListesi){
-            let temiz = satir.trim();
-            if (!temiz) continue;
-            // 1. Definitions başlığını atla
-            if (/^definitions:?$/i.test(temiz)) continue;
-            // 2. Type bilgisini yakala
-            const typeMatch = temiz.match(/^type:\s*(.*)$/i);
-            if (typeMatch) {
-                const hamTur = typeMatch[1].trim();
-                turBilgisi = TUR_MAP[hamTur.toLowerCase()] || hamTur;
-                continue;
-            }
-            // 3. Kaynak bilgisini yakala
-            const sourceMatch = temiz.match(/^(?:source|kaynak):\s*(.*)$/i);
-            if (sourceMatch) {
-                kaynakBilgisi = sourceMatch[1].trim();
-                continue;
-            }
-            // 4. Liste ve madde işaretlerini temizle (•, -, *, 1., 1))
-            temiz = temiz.replace(/^[\s•*\-\d\.\)]+/, "").trim();
-            // 5. Parantez içindeki açıklamaları temizle
-            temiz = temiz.replace(/\s*\(.*?\)/g, "").trim();
-            if (!temiz) continue;
-            // 6. Başlık parametresi ile eşleşen kelimeyi süz
-            if (temizBaslik && normalizeText(temiz) === temizBaslik) {
-                continue;
-            }
-            // 7. OTOMATİK SÜZME: Başlık gönderilmediyse bile, Çerkesçe karşılıkların
-            // arasındaki İngilizce başlık tekrarını (sadece Latin harfli satırı) otomatik süz
-            if (!temizBaslik && kirilVarMi && /^[a-zA-Z\s\-\'\"]+$/.test(temiz)) {
-                continue;
-            }
-            anlamlar.push(temiz);
-        }
-        return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            style: {
-                marginTop: "12px",
-                display: "flex",
-                flexDirection: "column",
-                gap: "12px"
-            },
-            children: [
-                anlamlar.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    children: [
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
-                            style: {
-                                fontSize: `${metinBoyutu * 0.85}px`,
-                                fontWeight: 600,
-                                color: gecerliTema.yaziAlt || "#64748b",
-                                margin: "0 0 6px 0"
-                            },
-                            children: "📖 Karşılıklar"
-                        }, void 0, false, {
-                            fileName: "[project]/app/page.tsx",
-                            lineNumber: 528,
-                            columnNumber: 11
-                        }, this),
-                        anlamlar.map((anlam, idx)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                style: {
-                                    color: gecerliTema.yaziAna,
-                                    fontSize: `${metinBoyutu * 0.95}px`,
-                                    lineHeight: "1.6",
-                                    marginBottom: "4px",
-                                    paddingLeft: "2px"
-                                },
-                                children: [
-                                    "• ",
-                                    anlam
-                                ]
-                            }, idx, true, {
-                                fileName: "[project]/app/page.tsx",
-                                lineNumber: 539,
-                                columnNumber: 13
-                            }, this))
-                    ]
-                }, void 0, true, {
-                    fileName: "[project]/app/page.tsx",
-                    lineNumber: 527,
-                    columnNumber: 9
-                }, this),
-                Boolean(turBilgisi) && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    style: {
-                        paddingTop: "8px",
-                        borderTop: `1px solid ${gecerliTema.kenarlik || "#e5e7eb"}`,
-                        fontSize: `${metinBoyutu * 0.85}px`,
-                        color: gecerliTema.yaziAlt || "#64748b",
-                        fontWeight: 500
-                    },
-                    children: [
-                        "🏷 Tür:",
-                        " ",
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                            style: {
-                                color: gecerliTema.yaziAna,
-                                fontWeight: 600
-                            },
-                            children: turBilgisi
-                        }, void 0, false, {
-                            fileName: "[project]/app/page.tsx",
-                            lineNumber: 567,
-                            columnNumber: 11
-                        }, this)
-                    ]
-                }, void 0, true, {
-                    fileName: "[project]/app/page.tsx",
-                    lineNumber: 557,
-                    columnNumber: 9
-                }, this),
-                Boolean(kaynakBilgisi) && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    style: {
-                        paddingTop: turBilgisi ? "4px" : "8px",
-                        borderTop: turBilgisi ? "none" : `1px solid ${gecerliTema.kenarlik || "#e5e7eb"}`,
-                        fontSize: `${metinBoyutu * 0.8}px`,
-                        color: gecerliTema.yaziAlt || "#64748b",
-                        fontStyle: "italic"
-                    },
-                    children: [
-                        "📚 Kaynak:",
-                        " ",
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                            style: {
-                                fontWeight: 500
-                            },
-                            children: kaynakBilgisi
-                        }, void 0, false, {
-                            fileName: "[project]/app/page.tsx",
-                            lineNumber: 585,
-                            columnNumber: 11
-                        }, this)
-                    ]
-                }, void 0, true, {
-                    fileName: "[project]/app/page.tsx",
-                    lineNumber: 575,
-                    columnNumber: 9
-                }, this)
-            ]
-        }, void 0, true, {
-            fileName: "[project]/app/page.tsx",
-            lineNumber: 524,
-            columnNumber: 5
-        }, this);
-    };
+    }["Home.useCallback[tanimlariBicimlendir]"], // eslint-disable-next-line react-hooks/exhaustive-deps
+    [
+        metinBoyutu,
+        tema
+    ]);
     const benzerKelimeler = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useMemo"])({
         "Home.useMemo[benzerKelimeler]": ()=>{
             if (!seciliKelimeGrubu || !seciliKelimeGrubu.kelime || !filtrelenmisSonuclar) return [];
@@ -625,14 +426,6 @@ function Home() {
         seciliKelimeGrubu,
         filtrelenmisSonuclar
     ]);
-    const tema = {
-        arkaPlan: karanlikMod ? "#0c0f17" : "#f8fafc",
-        kartArkaPlan: karanlikMod ? "#141a29" : "#ffffff",
-        yaziAna: karanlikMod ? "#f8fafc" : "#0f172a",
-        yaziAlt: karanlikMod ? "#cbd5e1" : "#334155",
-        kenarlik: karanlikMod ? "#334155" : "#cbd5e1",
-        inputArkaPlan: karanlikMod ? "#1a2236" : "#ffffff"
-    };
     if (loading) {
         return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             style: {
@@ -646,7 +439,7 @@ function Home() {
             children: "📖 Sözlük veritabanı yükleniyor..."
         }, void 0, false, {
             fileName: "[project]/app/page.tsx",
-            lineNumber: 620,
+            lineNumber: 372,
             columnNumber: 7
         }, this);
     }
@@ -676,14 +469,14 @@ function Home() {
                 children: duyuruMetni
             }, void 0, false, {
                 fileName: "[project]/app/page.tsx",
-                lineNumber: 631,
+                lineNumber: 399,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
                 style: {
                     maxWidth: "840px",
                     margin: "0 auto",
-                    fontFamily: "system-ui, -apple-system, sans-serif"
+                    fontFamily: "system-ui, sans-serif"
                 },
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("header", {
@@ -719,7 +512,7 @@ function Home() {
                                         }
                                     }, void 0, false, {
                                         fileName: "[project]/app/page.tsx",
-                                        lineNumber: 643,
+                                        lineNumber: 430,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -736,7 +529,7 @@ function Home() {
                                                 children: "Açık Mektep"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/page.tsx",
-                                                lineNumber: 650,
+                                                lineNumber: 439,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
@@ -748,19 +541,19 @@ function Home() {
                                                 children: "📖 Çerkesçe Sözlük"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/page.tsx",
-                                                lineNumber: 653,
+                                                lineNumber: 451,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/page.tsx",
-                                        lineNumber: 649,
+                                        lineNumber: 438,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/page.tsx",
-                                lineNumber: 642,
+                                lineNumber: 429,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -773,11 +566,13 @@ function Home() {
                                 "aria-label": "Görünüm kontrolleri",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                        onClick: ()=>setMetinBoyutu((p)=>{
+                                        onClick: ()=>{
+                                            setMetinBoyutu((p)=>{
                                                 const yeni = Math.max(14, p - 2);
                                                 setDuyuruMetni(`Yazı boyutu küçültüldü: ${yeni} piksel`);
                                                 return yeni;
-                                            }),
+                                            });
+                                        },
                                         "aria-label": "Yazı boyutunu küçült",
                                         style: {
                                             padding: "8px 12px",
@@ -791,15 +586,17 @@ function Home() {
                                         children: "A-"
                                     }, void 0, false, {
                                         fileName: "[project]/app/page.tsx",
-                                        lineNumber: 660,
+                                        lineNumber: 462,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                        onClick: ()=>setMetinBoyutu((p)=>{
+                                        onClick: ()=>{
+                                            setMetinBoyutu((p)=>{
                                                 const yeni = Math.min(24, p + 2);
                                                 setDuyuruMetni(`Yazı boyutu büyütüldü: ${yeni} piksel`);
                                                 return yeni;
-                                            }),
+                                            });
+                                        },
                                         "aria-label": "Yazı boyutunu büyüt",
                                         style: {
                                             padding: "8px 12px",
@@ -813,7 +610,7 @@ function Home() {
                                         children: "A+"
                                     }, void 0, false, {
                                         fileName: "[project]/app/page.tsx",
-                                        lineNumber: 667,
+                                        lineNumber: 483,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -831,19 +628,19 @@ function Home() {
                                         children: karanlikMod ? "☀️ Aydınlık" : "🌙 Karanlık"
                                     }, void 0, false, {
                                         fileName: "[project]/app/page.tsx",
-                                        lineNumber: 674,
+                                        lineNumber: 504,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/page.tsx",
-                                lineNumber: 659,
+                                lineNumber: 457,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/page.tsx",
-                        lineNumber: 641,
+                        lineNumber: 417,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -855,7 +652,8 @@ function Home() {
                         children: [
                             "📚 ",
                             aktifSozlukler?.length || 33,
-                            " sözlük • 📖 ",
+                            " sözlük • 📖",
+                            " ",
                             (wordsCount ?? 0).toLocaleString("tr-TR"),
                             "+ kayıt •",
                             " ",
@@ -866,19 +664,19 @@ function Home() {
                                 children: "Açık Mektep Dijital Sözlük Ekosistemi"
                             }, void 0, false, {
                                 fileName: "[project]/app/page.tsx",
-                                lineNumber: 687,
+                                lineNumber: 525,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/page.tsx",
-                        lineNumber: 685,
+                        lineNumber: 522,
                         columnNumber: 9
                     }, this),
                     !searchQuery.trim() && gununKelimesi && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         onClick: ()=>setSeciliKelimeGrubu({
                                 kelime: gununKelimesi.kelime,
-                                dialect: gununKelimesi.dialect === "BATI" || gununKelimesi.dialect === "DOGU" ? gununKelimesi.dialect : undefined,
+                                dialect: gununKelimesi.dialect,
                                 kaynaklar: [
                                     gununKelimesi
                                 ]
@@ -912,7 +710,7 @@ function Home() {
                                         children: "🌟 Günün Kelimesi"
                                     }, void 0, false, {
                                         fileName: "[project]/app/page.tsx",
-                                        lineNumber: 700,
+                                        lineNumber: 549,
                                         columnNumber: 15
                                     }, this),
                                     gununKelimesi.dialect && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -927,13 +725,13 @@ function Home() {
                                         children: gununKelimesi.dialect === "BATI" ? "Batı Adıgece" : "Doğu Kabardeyce"
                                     }, void 0, false, {
                                         fileName: "[project]/app/page.tsx",
-                                        lineNumber: 704,
+                                        lineNumber: 561,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/page.tsx",
-                                lineNumber: 699,
+                                lineNumber: 548,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -946,10 +744,22 @@ function Home() {
                                 children: gununKelimesi.kelime
                             }, void 0, false, {
                                 fileName: "[project]/app/page.tsx",
-                                lineNumber: 709,
+                                lineNumber: 576,
                                 columnNumber: 13
                             }, this),
-                            tanimlariBicimlendir(gununKelimesi.tanim, tema, metinBoyutu),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                style: {
+                                    fontSize: `${metinBoyutu * 0.95}px`,
+                                    color: tema.yaziAlt,
+                                    marginTop: "4px",
+                                    lineHeight: "1.5"
+                                },
+                                children: gununKelimesi.tanim
+                            }, void 0, false, {
+                                fileName: "[project]/app/page.tsx",
+                                lineNumber: 586,
+                                columnNumber: 13
+                            }, this),
                             gununKelimesi.kaynak_sozluk && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("small", {
                                 style: {
                                     color: tema.yaziAlt,
@@ -963,13 +773,13 @@ function Home() {
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/page.tsx",
-                                lineNumber: 714,
+                                lineNumber: 597,
                                 columnNumber: 15
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/page.tsx",
-                        lineNumber: 691,
+                        lineNumber: 529,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("fieldset", {
@@ -989,7 +799,7 @@ function Home() {
                                 children: "Lehçe & Sözlük Seçimi:"
                             }, void 0, false, {
                                 fileName: "[project]/app/page.tsx",
-                                lineNumber: 722,
+                                lineNumber: 607,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1031,12 +841,12 @@ function Home() {
                                         children: lehce.etiket
                                     }, lehce.kod, false, {
                                         fileName: "[project]/app/page.tsx",
-                                        lineNumber: 731,
+                                        lineNumber: 623,
                                         columnNumber: 15
                                     }, this))
                             }, void 0, false, {
                                 fileName: "[project]/app/page.tsx",
-                                lineNumber: 725,
+                                lineNumber: 617,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
@@ -1061,7 +871,7 @@ function Home() {
                                         children: seciliLehce === "TUMU" ? "📖 Tüm Sözlüklerde Ara" : `📖 Tüm ${seciliLehce === "BATI" ? "Batı" : "Doğu"} Sözlüklerinde Ara`
                                     }, void 0, false, {
                                         fileName: "[project]/app/page.tsx",
-                                        lineNumber: 747,
+                                        lineNumber: 666,
                                         columnNumber: 13
                                     }, this),
                                     aktifSozlukler?.map((d)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
@@ -1074,19 +884,19 @@ function Home() {
                                             ]
                                         }, d.file, true, {
                                             fileName: "[project]/app/page.tsx",
-                                            lineNumber: 751,
+                                            lineNumber: 672,
                                             columnNumber: 15
                                         }, this))
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/page.tsx",
-                                lineNumber: 742,
+                                lineNumber: 649,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/page.tsx",
-                        lineNumber: 721,
+                        lineNumber: 606,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("fieldset", {
@@ -1106,7 +916,7 @@ function Home() {
                                 children: "Hedef Dil Filtresi:"
                             }, void 0, false, {
                                 fileName: "[project]/app/page.tsx",
-                                lineNumber: 759,
+                                lineNumber: 681,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1152,18 +962,18 @@ function Home() {
                                         children: dil.etiket
                                     }, dil.kod, false, {
                                         fileName: "[project]/app/page.tsx",
-                                        lineNumber: 765,
+                                        lineNumber: 699,
                                         columnNumber: 15
                                     }, this))
                             }, void 0, false, {
                                 fileName: "[project]/app/page.tsx",
-                                lineNumber: 760,
+                                lineNumber: 691,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/page.tsx",
-                        lineNumber: 758,
+                        lineNumber: 680,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("fieldset", {
@@ -1183,7 +993,7 @@ function Home() {
                                 children: "Çerkesçe Hızlı Harfler:"
                             }, void 0, false, {
                                 fileName: "[project]/app/page.tsx",
-                                lineNumber: 776,
+                                lineNumber: 724,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1194,6 +1004,7 @@ function Home() {
                                 },
                                 children: ozelKarakterler.map((harf, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                         onClick: ()=>harfEkle(harf),
+                                        "aria-label": `Arama kutusuna ${harf} karakterini ekle`,
                                         style: {
                                             padding: "8px 16px",
                                             fontSize: `${metinBoyutu}px`,
@@ -1207,18 +1018,18 @@ function Home() {
                                         children: harf
                                     }, index, false, {
                                         fileName: "[project]/app/page.tsx",
-                                        lineNumber: 779,
+                                        lineNumber: 736,
                                         columnNumber: 15
                                     }, this))
                             }, void 0, false, {
                                 fileName: "[project]/app/page.tsx",
-                                lineNumber: 777,
+                                lineNumber: 734,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/page.tsx",
-                        lineNumber: 775,
+                        lineNumber: 723,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$AkilliKlavye$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -1229,7 +1040,7 @@ function Home() {
                         karanlikMod: karanlikMod
                     }, void 0, false, {
                         fileName: "[project]/app/page.tsx",
-                        lineNumber: 784,
+                        lineNumber: 757,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1246,6 +1057,21 @@ function Home() {
                                     position: "relative"
                                 },
                                 children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
+                                        htmlFor: "arama-input",
+                                        style: {
+                                            position: "absolute",
+                                            width: "1px",
+                                            height: "1px",
+                                            overflow: "hidden",
+                                            clip: "rect(0,0,0,0)"
+                                        },
+                                        children: "Kelime Arayın"
+                                    }, void 0, false, {
+                                        fileName: "[project]/app/page.tsx",
+                                        lineNumber: 767,
+                                        columnNumber: 13
+                                    }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
                                         id: "arama-input",
                                         ref: inputRef,
@@ -1266,7 +1092,7 @@ function Home() {
                                         }
                                     }, void 0, false, {
                                         fileName: "[project]/app/page.tsx",
-                                        lineNumber: 788,
+                                        lineNumber: 779,
                                         columnNumber: 13
                                     }, this),
                                     searchQuery && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1274,6 +1100,7 @@ function Home() {
                                             handleSearchChange("");
                                             inputRef.current?.focus();
                                         },
+                                        "aria-label": "Arama metnini temizle",
                                         style: {
                                             position: "absolute",
                                             right: "10px",
@@ -1288,16 +1115,32 @@ function Home() {
                                         children: "✕"
                                     }, void 0, false, {
                                         fileName: "[project]/app/page.tsx",
-                                        lineNumber: 794,
+                                        lineNumber: 799,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/page.tsx",
-                                lineNumber: 787,
+                                lineNumber: 766,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
+                                htmlFor: "arama-modu-sec",
+                                style: {
+                                    position: "absolute",
+                                    width: "1px",
+                                    height: "1px",
+                                    overflow: "hidden",
+                                    clip: "rect(0,0,0,0)"
+                                },
+                                children: "Arama Yöntemi"
+                            }, void 0, false, {
+                                fileName: "[project]/app/page.tsx",
+                                lineNumber: 822,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
+                                id: "arama-modu-sec",
                                 value: mod,
                                 onChange: (e)=>setMod(e.target.value),
                                 style: {
@@ -1315,7 +1158,7 @@ function Home() {
                                         children: "İle Başlayan"
                                     }, void 0, false, {
                                         fileName: "[project]/app/page.tsx",
-                                        lineNumber: 799,
+                                        lineNumber: 848,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
@@ -1323,7 +1166,7 @@ function Home() {
                                         children: "İçinde Geçen"
                                     }, void 0, false, {
                                         fileName: "[project]/app/page.tsx",
-                                        lineNumber: 800,
+                                        lineNumber: 849,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
@@ -1331,19 +1174,19 @@ function Home() {
                                         children: "Tam Eşleşen"
                                     }, void 0, false, {
                                         fileName: "[project]/app/page.tsx",
-                                        lineNumber: 801,
+                                        lineNumber: 850,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/page.tsx",
-                                lineNumber: 798,
+                                lineNumber: 834,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/page.tsx",
-                        lineNumber: 786,
+                        lineNumber: 765,
                         columnNumber: 9
                     }, this),
                     searchQuery.trim() && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1359,14 +1202,14 @@ function Home() {
                                 children: gruplanmisSonuclar.length
                             }, void 0, false, {
                                 fileName: "[project]/app/page.tsx",
-                                lineNumber: 807,
+                                lineNumber: 863,
                                 columnNumber: 20
                             }, this),
                             " kelime grubu bulundu."
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/page.tsx",
-                        lineNumber: 806,
+                        lineNumber: 855,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -1413,7 +1256,7 @@ function Home() {
                                                                 children: grup.kelime
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/page.tsx",
-                                                                lineNumber: 822,
+                                                                lineNumber: 896,
                                                                 columnNumber: 23
                                                             }, this),
                                                             grup.kaynaklar.length > 1 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1433,13 +1276,13 @@ function Home() {
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/app/page.tsx",
-                                                                lineNumber: 824,
+                                                                lineNumber: 907,
                                                                 columnNumber: 25
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/app/page.tsx",
-                                                        lineNumber: 821,
+                                                        lineNumber: 895,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1463,11 +1306,13 @@ function Home() {
                                                                 children: grup.dialect === "BATI" ? "Batı Adıgece" : "Doğu Kabardeyce"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/page.tsx",
-                                                                lineNumber: 832,
+                                                                lineNumber: 933,
                                                                 columnNumber: 25
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                                                 onClick: ()=>panoyaKopyala(ilkKaynak.kelime, ilkKaynak.tanim, benzersizKey),
+                                                                "aria-label": `${ilkKaynak.kelime} kelimesini ve tanımını panoya kopyala`,
+                                                                title: "Panoya Kopyala",
                                                                 style: {
                                                                     border: `1px solid ${tema.kenarlik}`,
                                                                     borderRadius: "6px",
@@ -1480,22 +1325,22 @@ function Home() {
                                                                 children: kopyalandiId === benzersizKey ? "✓ Kopyalandı" : "📋 Kopyala"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/page.tsx",
-                                                                lineNumber: 836,
+                                                                lineNumber: 951,
                                                                 columnNumber: 23
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/app/page.tsx",
-                                                        lineNumber: 830,
+                                                        lineNumber: 924,
                                                         columnNumber: 21
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/page.tsx",
-                                                lineNumber: 820,
+                                                lineNumber: 886,
                                                 columnNumber: 19
                                             }, this),
-                                            tanimlariBicimlendir(ilkKaynak.tanim, tema, metinBoyutu),
+                                            tanimlariBicimlendir(ilkKaynak.tanim, tema),
                                             kaynakDosya && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 style: {
                                                     fontSize: `${metinBoyutu * 0.8}px`,
@@ -1513,7 +1358,7 @@ function Home() {
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/page.tsx",
-                                                lineNumber: 845,
+                                                lineNumber: 975,
                                                 columnNumber: 21
                                             }, this),
                                             grup.kaynaklar.length > 1 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1523,6 +1368,7 @@ function Home() {
                                                 },
                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                                     onClick: ()=>setSeciliKelimeGrubu(grup),
+                                                    "aria-label": `${grup.kelime} kelimesinin tüm sözlük karşılaştırmalarını aç`,
                                                     style: {
                                                         padding: "6px 14px",
                                                         borderRadius: "6px",
@@ -1540,237 +1386,202 @@ function Home() {
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/page.tsx",
-                                                    lineNumber: 852,
+                                                    lineNumber: 992,
                                                     columnNumber: 23
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/app/page.tsx",
-                                                lineNumber: 851,
+                                                lineNumber: 991,
                                                 columnNumber: 21
                                             }, this)
                                         ]
                                     }, benzersizKey, true, {
                                         fileName: "[project]/app/page.tsx",
-                                        lineNumber: 819,
+                                        lineNumber: 875,
                                         columnNumber: 17
                                     }, this);
                                 }),
                                 dahaFazlaVar && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     style: {
                                         textAlign: "center",
-                                        marginTop: "16px"
+                                        marginTop: "20px"
                                     },
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                         onClick: ()=>setGoruntulenenAdet((prev)=>prev + LIMIT),
                                         style: {
                                             padding: "10px 20px",
-                                            fontSize: `${metinBoyutu * 0.9}px`,
-                                            fontWeight: "bold",
                                             borderRadius: "8px",
-                                            border: "none",
-                                            backgroundColor: KURUMSAL.kirmizi,
-                                            color: "#ffffff",
+                                            border: `1px solid ${tema.kenarlik}`,
+                                            backgroundColor: tema.kartArkaPlan,
+                                            color: tema.yaziAna,
                                             cursor: "pointer",
-                                            boxShadow: "0 2px 4px rgba(0,0,0,0.1)"
+                                            fontWeight: "bold",
+                                            fontSize: `${metinBoyutu * 0.9}px`
                                         },
                                         children: [
                                             "Daha Fazla Göster (",
                                             gruplanmisSonuclar.length - goruntulenenAdet,
-                                            " kaldı)"
+                                            " kelime kaldı)"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/page.tsx",
-                                        lineNumber: 863,
+                                        lineNumber: 1016,
                                         columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/app/page.tsx",
-                                    lineNumber: 862,
+                                    lineNumber: 1015,
                                     columnNumber: 15
                                 }, this),
                                 searchQuery.trim() && gruplanmisSonuclar.length === 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     style: {
-                                        padding: "32px 16px",
                                         textAlign: "center",
-                                        color: tema.yaziAlt,
-                                        backgroundColor: tema.kartArkaPlan,
-                                        borderRadius: "8px",
-                                        border: `1px solid ${tema.kenarlik}`
+                                        padding: "40px 0",
+                                        color: tema.yaziAlt
                                     },
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                         style: {
-                                            fontSize: `${metinBoyutu * 1.1}px`,
-                                            margin: 0
+                                            fontSize: `${metinBoyutu}px`
                                         },
-                                        children: [
-                                            '🔍 "',
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
-                                                children: searchQuery
-                                            }, void 0, false, {
-                                                fileName: "[project]/app/page.tsx",
-                                                lineNumber: 871,
-                                                columnNumber: 82
-                                            }, this),
-                                            '" aramasına uygun kelime bulunamadı.'
-                                        ]
-                                    }, void 0, true, {
+                                        children: "Aradığınız kriterlere uygun kelime bulunamadı."
+                                    }, void 0, false, {
                                         fileName: "[project]/app/page.tsx",
-                                        lineNumber: 871,
+                                        lineNumber: 1036,
                                         columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/app/page.tsx",
-                                    lineNumber: 870,
+                                    lineNumber: 1035,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/page.tsx",
-                            lineNumber: 812,
+                            lineNumber: 868,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/app/page.tsx",
-                        lineNumber: 811,
+                        lineNumber: 867,
                         columnNumber: 9
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "[project]/app/page.tsx",
-                lineNumber: 639,
-                columnNumber: 7
-            }, this),
-            seciliKelimeGrubu && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                style: {
-                    position: "fixed",
-                    inset: 0,
-                    backgroundColor: "rgba(0, 0, 0, 0.5)",
-                    display: "flex",
-                    justifyContent: "flex-end",
-                    zIndex: 1000,
-                    backdropFilter: "blur(2px)"
-                },
-                onClick: ()=>setSeciliKelimeGrubu(null),
-                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    ref: drawerRef,
-                    role: "dialog",
-                    "aria-modal": "true",
-                    onClick: (e)=>e.stopPropagation(),
-                    style: {
-                        width: "100%",
-                        maxWidth: "500px",
-                        height: "100%",
-                        backgroundColor: tema.kartArkaPlan,
-                        color: tema.yaziAna,
-                        boxShadow: "-4px 0 20px rgba(0,0,0,0.15)",
-                        display: "flex",
-                        flexDirection: "column",
-                        overflow: "hidden"
-                    },
-                    children: [
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    }, this),
+                    seciliKelimeGrubu && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        style: {
+                            position: "fixed",
+                            top: 0,
+                            left: 0,
+                            right: 0,
+                            bottom: 0,
+                            backgroundColor: "rgba(0, 0, 0, 0.6)",
+                            display: "flex",
+                            justifyContent: "flex-end",
+                            zIndex: 1000
+                        },
+                        onClick: ()=>setSeciliKelimeGrubu(null),
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            ref: drawerRef,
+                            onClick: (e)=>e.stopPropagation(),
                             style: {
-                                padding: "16px 20px",
-                                borderBottom: `1px solid ${tema.kenarlik}`,
+                                width: "100%",
+                                maxWidth: "520px",
+                                height: "100%",
+                                backgroundColor: tema.kartArkaPlan,
+                                color: tema.yaziAna,
+                                padding: "24px",
+                                overflowY: "auto",
+                                boxShadow: "-4px 0 20px rgba(0,0,0,0.3)",
                                 display: "flex",
-                                justifyContent: "space-between",
-                                alignItems: "center",
-                                backgroundColor: tema.inputArkaPlan
+                                flexDirection: "column",
+                                gap: "16px"
                             },
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    style: {
+                                        display: "flex",
+                                        justifyContent: "space-between",
+                                        alignItems: "center"
+                                    },
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                             style: {
                                                 margin: 0,
-                                                fontSize: `${metinBoyutu * 1.3}px`,
+                                                fontSize: `${metinBoyutu * 1.4}px`,
                                                 color: tema.yaziAna
                                             },
                                             children: seciliKelimeGrubu.kelime
                                         }, void 0, false, {
                                             fileName: "[project]/app/page.tsx",
-                                            lineNumber: 884,
+                                            lineNumber: 1079,
                                             columnNumber: 17
                                         }, this),
-                                        seciliKelimeGrubu.dialect && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                            ref: drawerKapatBtnRef,
+                                            onClick: ()=>setSeciliKelimeGrubu(null),
+                                            "aria-label": "Paneli kapat",
                                             style: {
-                                                fontSize: `${metinBoyutu * 0.75}px`,
-                                                fontWeight: "bold",
-                                                color: seciliKelimeGrubu.dialect === "BATI" ? "#16a34a" : "#2563eb",
-                                                marginTop: "4px",
-                                                display: "inline-block"
+                                                border: "none",
+                                                background: "transparent",
+                                                fontSize: `${metinBoyutu * 1.3}px`,
+                                                color: tema.yaziAna,
+                                                cursor: "pointer"
                                             },
-                                            children: seciliKelimeGrubu.dialect === "BATI" ? "Batı Adıgece" : "Doğu Kabardeyce"
+                                            children: "✕"
                                         }, void 0, false, {
                                             fileName: "[project]/app/page.tsx",
-                                            lineNumber: 886,
-                                            columnNumber: 19
+                                            lineNumber: 1088,
+                                            columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/page.tsx",
-                                    lineNumber: 883,
+                                    lineNumber: 1076,
                                     columnNumber: 15
                                 }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                    ref: drawerKapatBtnRef,
-                                    onClick: ()=>setSeciliKelimeGrubu(null),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                     style: {
-                                        background: "transparent",
-                                        border: "none",
-                                        fontSize: `${metinBoyutu * 1.2}px`,
-                                        color: tema.yaziAna,
-                                        cursor: "pointer",
-                                        padding: "4px 8px",
-                                        borderRadius: "4px"
-                                    },
-                                    children: "✕"
-                                }, void 0, false, {
-                                    fileName: "[project]/app/page.tsx",
-                                    lineNumber: 891,
-                                    columnNumber: 15
-                                }, this)
-                            ]
-                        }, void 0, true, {
-                            fileName: "[project]/app/page.tsx",
-                            lineNumber: 882,
-                            columnNumber: 13
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            style: {
-                                padding: "20px",
-                                overflowY: "auto",
-                                flex: 1
-                            },
-                            children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                    style: {
-                                        fontSize: `${metinBoyutu * 0.95}px`,
-                                        color: KURUMSAL.kirmizi,
-                                        marginBottom: "12px"
+                                        margin: 0,
+                                        color: tema.yaziAlt,
+                                        fontSize: `${metinBoyutu * 0.85}px`
                                     },
                                     children: [
-                                        "📚 Tüm Kaynaklar (",
-                                        seciliKelimeGrubu.kaynaklar.length,
-                                        ")"
+                                        "Bu kelime toplam",
+                                        " ",
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
+                                            children: seciliKelimeGrubu.kaynaklar.length
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/page.tsx",
+                                            lineNumber: 1106,
+                                            columnNumber: 17
+                                        }, this),
+                                        " farklı sözlük kaynağında yer almaktadır."
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/page.tsx",
-                                    lineNumber: 895,
+                                    lineNumber: 1104,
+                                    columnNumber: 15
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("hr", {
+                                    style: {
+                                        borderColor: tema.kenarlik,
+                                        margin: "4px 0"
+                                    }
+                                }, void 0, false, {
+                                    fileName: "[project]/app/page.tsx",
+                                    lineNumber: 1110,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     style: {
                                         display: "flex",
                                         flexDirection: "column",
-                                        gap: "16px"
+                                        gap: "12px"
                                     },
-                                    children: seciliKelimeGrubu.kaynaklar.map((item, idx)=>{
-                                        const dosya = item.file || item.kaynak_sozluk || item.kaynak;
+                                    children: seciliKelimeGrubu.kaynaklar.map((kaynakItem, idx)=>{
+                                        const kDosya = kaynakItem.file || kaynakItem.kaynak_sozluk || kaynakItem.kaynak;
                                         return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             style: {
-                                                padding: "12px 16px",
-                                                borderRadius: "8px",
+                                                padding: "14px",
+                                                borderRadius: "6px",
                                                 border: `1px solid ${tema.kenarlik}`,
                                                 backgroundColor: tema.inputArkaPlan
                                             },
@@ -1779,49 +1590,48 @@ function Home() {
                                                     style: {
                                                         fontSize: `${metinBoyutu * 0.8}px`,
                                                         fontWeight: "bold",
-                                                        color: tema.yaziAlt,
-                                                        marginBottom: "6px"
+                                                        color: KURUMSAL.kirmizi,
+                                                        marginBottom: "4px"
                                                     },
                                                     children: [
-                                                        kaynagiDuzenle(dosya),
-                                                        " ",
-                                                        item.author ? `— ${item.author}` : ""
+                                                        "📚 ",
+                                                        kaynagiDuzenle(kDosya)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/page.tsx",
-                                                    lineNumber: 901,
+                                                    lineNumber: 1126,
                                                     columnNumber: 23
                                                 }, this),
-                                                tanimlariBicimlendir(item.tanim, tema, metinBoyutu)
+                                                tanimlariBicimlendir(kaynakItem.tanim, tema)
                                             ]
                                         }, idx, true, {
                                             fileName: "[project]/app/page.tsx",
-                                            lineNumber: 900,
+                                            lineNumber: 1117,
                                             columnNumber: 21
                                         }, this);
                                     })
                                 }, void 0, false, {
                                     fileName: "[project]/app/page.tsx",
-                                    lineNumber: 896,
+                                    lineNumber: 1112,
                                     columnNumber: 15
                                 }, this),
                                 benzerKelimeler.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     style: {
-                                        marginTop: "24px",
-                                        paddingTop: "16px",
-                                        borderTop: `1px solid ${tema.kenarlik}`
+                                        marginTop: "16px",
+                                        borderTop: `1px solid ${tema.kenarlik}`,
+                                        paddingTop: "12px"
                                     },
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
                                             style: {
-                                                fontSize: `${metinBoyutu * 0.85}px`,
+                                                fontSize: `${metinBoyutu * 0.9}px`,
                                                 color: tema.yaziAlt,
                                                 marginBottom: "8px"
                                             },
-                                            children: "🔗 Benzer / İlişkili Kelimeler:"
+                                            children: "Benzer Kelimeler:"
                                         }, void 0, false, {
                                             fileName: "[project]/app/page.tsx",
-                                            lineNumber: 910,
+                                            lineNumber: 1150,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1830,62 +1640,62 @@ function Home() {
                                                 gap: "6px",
                                                 flexWrap: "wrap"
                                             },
-                                            children: benzerKelimeler.map((kelime, idx)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                            children: benzerKelimeler.map((bKelime, bIdx)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                                     onClick: ()=>{
-                                                        handleSearchChange(kelime);
                                                         setSeciliKelimeGrubu(null);
+                                                        handleSearchChange(bKelime);
                                                     },
                                                     style: {
                                                         padding: "4px 10px",
-                                                        fontSize: `${metinBoyutu * 0.8}px`,
-                                                        borderRadius: "14px",
+                                                        borderRadius: "4px",
                                                         border: `1px solid ${tema.kenarlik}`,
                                                         backgroundColor: tema.kartArkaPlan,
                                                         color: tema.yaziAna,
+                                                        fontSize: `${metinBoyutu * 0.8}px`,
                                                         cursor: "pointer"
                                                     },
-                                                    children: kelime
-                                                }, idx, false, {
+                                                    children: bKelime
+                                                }, bIdx, false, {
                                                     fileName: "[project]/app/page.tsx",
-                                                    lineNumber: 913,
+                                                    lineNumber: 1161,
                                                     columnNumber: 23
                                                 }, this))
                                         }, void 0, false, {
                                             fileName: "[project]/app/page.tsx",
-                                            lineNumber: 911,
+                                            lineNumber: 1159,
                                             columnNumber: 19
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/page.tsx",
-                                    lineNumber: 909,
+                                    lineNumber: 1143,
                                     columnNumber: 17
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/page.tsx",
-                            lineNumber: 894,
+                            lineNumber: 1059,
                             columnNumber: 13
                         }, this)
-                    ]
-                }, void 0, true, {
-                    fileName: "[project]/app/page.tsx",
-                    lineNumber: 881,
-                    columnNumber: 11
-                }, this)
-            }, void 0, false, {
+                    }, void 0, false, {
+                        fileName: "[project]/app/page.tsx",
+                        lineNumber: 1045,
+                        columnNumber: 11
+                    }, this)
+                ]
+            }, void 0, true, {
                 fileName: "[project]/app/page.tsx",
-                lineNumber: 880,
-                columnNumber: 9
+                lineNumber: 416,
+                columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/page.tsx",
-        lineNumber: 630,
+        lineNumber: 391,
         columnNumber: 5
     }, this);
 }
-_s(Home, "tUFTFfv9l5qD9SY5l13p5SUDoVo=", false, function() {
+_s(Home, "XQUHNHoEUXVmyUVWdzX8N01PsXk=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useDictionary$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useDictionary"]
     ];
@@ -1901,382 +1711,84 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 "use strict";
 
 __turbopack_context__.s([
+    "AkilliKlavye",
+    ()=>AkilliKlavye,
     "default",
-    ()=>AkilliKlavye
+    ()=>__TURBOPACK__default__export__
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
-;
-var _s = __turbopack_context__.k.signature();
 'use client';
 ;
-const KLAVYE_DUZENLERI = {
-    adiyge: {
-        etiket: '🟢 Adıgece',
-        tuslar: [
-            'Ӏ',
-            'а',
-            'б',
-            'в',
-            'г',
-            'гу',
-            'гъ',
-            'д',
-            'дж',
-            'дз',
-            'е',
-            'ё',
-            'ж',
-            'жъ',
-            'з',
-            'и',
-            'й',
-            'к',
-            'къ',
-            'кӀ',
-            'л',
-            'ль',
-            'м',
-            'н',
-            'о',
-            'п',
-            'пӀ',
-            'р',
-            'с',
-            'т',
-            'у',
-            'ф',
-            'х',
-            'хъ',
-            'ц',
-            'ч',
-            'чъ',
-            'чӀ',
-            'ш',
-            'щ',
-            'ы',
-            'э',
-            'ю',
-            'я'
-        ]
-    },
-    kabardey: {
-        etiket: '🔵 Kabardeyce',
-        tuslar: [
-            'Ӏ',
-            'къ',
-            'кӀ',
-            'пӀ',
-            'тӀ',
-            'цӀ',
-            'чӀ',
-            'лъ',
-            'фӀ',
-            'хь',
-            'гъ',
-            'жь',
-            'щ',
-            'гу',
-            'гъu',
-            'дз',
-            'дж'
-        ]
-    },
-    tr: {
-        etiket: '🇹🇷 Türkçe',
-        tuslar: [
-            'a',
-            'b',
-            'c',
-            'ç',
-            'd',
-            'e',
-            'f',
-            'g',
-            'ğ',
-            'h',
-            'ı',
-            'i',
-            'j',
-            'k',
-            'l',
-            'm',
-            'n',
-            'o',
-            'ö',
-            'p',
-            'r',
-            's',
-            'ş',
-            't',
-            'u',
-            'ü',
-            'v',
-            'y',
-            'z'
-        ]
-    },
-    ru: {
-        etiket: '🇷🇺 Русский',
-        tuslar: [
-            'а',
-            'б',
-            'в',
-            'г',
-            'д',
-            'е',
-            'ё',
-            'ж',
-            'з',
-            'и',
-            'й',
-            'к',
-            'л',
-            'м',
-            'н',
-            'о',
-            'п',
-            'р',
-            'с',
-            'т',
-            'у',
-            'ф',
-            'х',
-            'ц',
-            'ч',
-            'ш',
-            'щ',
-            'ъ',
-            'ы',
-            'ь',
-            'э',
-            'ю',
-            'я'
-        ]
-    },
-    en: {
-        etiket: '🇬🇧 English',
-        tuslar: [
-            'a',
-            'b',
-            'c',
-            'd',
-            'e',
-            'f',
-            'g',
-            'h',
-            'i',
-            'j',
-            'k',
-            'l',
-            'm',
-            'n',
-            'o',
-            'p',
-            'q',
-            'r',
-            's',
-            't',
-            'u',
-            'v',
-            'w',
-            'x',
-            'y',
-            'z'
-        ]
-    },
-    ar: {
-        etiket: '🇸🇦 العربية',
-        tuslar: [
-            'أ',
-            'ب',
-            'ت',
-            'ث',
-            'ج',
-            'ح',
-            'خ',
-            'د',
-            'ذ',
-            'ر',
-            'ز',
-            'س',
-            'ش',
-            'ص',
-            'ض',
-            'ط',
-            'ظ',
-            'ع',
-            'غ',
-            'ف',
-            'ق',
-            'ك',
-            'ل',
-            'م',
-            'ن',
-            'هـ',
-            'و',
-            'ي'
-        ]
-    }
-};
-function AkilliKlavye({ inputRef, sorgu, setSorgu, metinBoyutu, karanlikMod }) {
-    _s();
-    const [acik, setAcik] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
-    const [aktifDil, setAktifDil] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])('adiyge');
-    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
-        "AkilliKlavye.useEffect": ()=>{
-            const kayitliDil = localStorage.getItem('aktifKlavye');
-            if (kayitliDil && KLAVYE_DUZENLERI[kayitliDil]) {
-                setAktifDil(kayitliDil);
-            }
-        }
-    }["AkilliKlavye.useEffect"], []);
-    const dilDegistir = (dil)=>{
-        setAktifDil(dil);
-        localStorage.setItem('aktifKlavye', dil);
+;
+const CERKESCE_HARFLER = [
+    'I',
+    'ӏ',
+    'Гъ',
+    'Дж',
+    'Дз',
+    'Къ',
+    'КӀ',
+    'ПӀ',
+    'ТӀ',
+    'Хь',
+    'Хъ',
+    'ЦӀ',
+    'ШӀ',
+    'ЩӀ'
+];
+const AkilliKlavye = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["memo"])(_c = function AkilliKlavye({ inputRef, sorgu, setSorgu, metinBoyutu = 16, karanlikMod = false, onKeyClick, onDelete }) {
+    const handleHarfEkle = (harf)=>{
+        setSorgu((prev)=>prev + harf);
+        onKeyClick?.(harf);
+        inputRef.current?.focus();
     };
-    const harfEkle = (harf)=>{
-        const input = inputRef.current;
-        if (!input) {
-            setSorgu((prev)=>prev + harf);
-            return;
-        }
-        const baslangic = input.selectionStart ?? sorgu.length;
-        const bitis = input.selectionEnd ?? sorgu.length;
-        const yeniMetin = sorgu.substring(0, baslangic) + harf + sorgu.substring(bitis);
-        setSorgu(yeniMetin);
-        setTimeout(()=>{
-            input.focus();
-            input.setSelectionRange(baslangic + harf.length, baslangic + harf.length);
-        }, 0);
+    const handleSil = ()=>{
+        setSorgu((prev)=>prev.slice(0, -1));
+        onDelete?.();
+        inputRef.current?.focus();
     };
-    const arkaPlan = karanlikMod ? '#1e293b' : '#ffffff';
-    const kenarlik = karanlikMod ? '#475569' : '#cbd5e1';
-    const yaziRengi = karanlikMod ? '#f8fafc' : '#0f172a';
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        role: "region",
+        "aria-label": "Çerkesçe Özel Karakter Klavyesi",
+        className: `flex flex-wrap gap-1.5 p-3 rounded-xl border transition-colors ${karanlikMod ? 'bg-slate-900 border-slate-800 text-slate-100' : 'bg-slate-50 border-slate-200 text-slate-800'}`,
         style: {
-            marginBottom: '16px',
-            textAlign: 'left'
+            fontSize: `${metinBoyutu}px`
         },
         children: [
+            CERKESCE_HARFLER.map((harf)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                    type: "button",
+                    onClick: ()=>handleHarfEkle(harf),
+                    className: "px-3 py-2 rounded-lg bg-red-600 hover:bg-red-700 text-white font-semibold transition-all active:scale-95 focus:outline-none focus:ring-2 focus:ring-red-400 select-none",
+                    children: harf
+                }, harf, false, {
+                    fileName: "[project]/src/components/AkilliKlavye.tsx",
+                    lineNumber: 53,
+                    columnNumber: 9
+                }, this)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                 type: "button",
-                onClick: ()=>setAcik((prev)=>!prev),
-                "aria-expanded": acik,
-                "aria-label": "Sanal Klavyeyi Aç veya Kapat",
-                style: {
-                    display: 'inline-flex',
-                    alignItems: 'center',
-                    gap: '8px',
-                    padding: '8px 16px',
-                    borderRadius: '6px',
-                    border: `1px solid ${kenarlik}`,
-                    backgroundColor: arkaPlan,
-                    color: yaziRengi,
-                    cursor: 'pointer',
-                    fontWeight: 'bold',
-                    fontSize: `${metinBoyutu * 0.85}px`
-                },
-                children: [
-                    "⌨️ ",
-                    acik ? 'Klavyeyi Gizle' : 'Akıllı Klavye'
-                ]
-            }, void 0, true, {
+                onClick: handleSil,
+                "aria-label": "Son karakteri sil",
+                className: "px-3 py-2 rounded-lg bg-slate-700 hover:bg-slate-800 text-white font-semibold transition-all active:scale-95 focus:outline-none focus:ring-2 focus:ring-slate-400 select-none ml-auto",
+                children: "Sil ⌫"
+            }, void 0, false, {
                 fileName: "[project]/src/components/AkilliKlavye.tsx",
-                lineNumber: 82,
+                lineNumber: 62,
                 columnNumber: 7
-            }, this),
-            acik && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                style: {
-                    marginTop: '10px',
-                    padding: '16px',
-                    borderRadius: '8px',
-                    border: `1px solid ${kenarlik}`,
-                    backgroundColor: arkaPlan,
-                    boxShadow: '0 4px 6px -1px rgba(0,0,0,0.1)'
-                },
-                children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        style: {
-                            display: 'flex',
-                            gap: '6px',
-                            overflowX: 'auto',
-                            paddingBottom: '10px',
-                            marginBottom: '12px'
-                        },
-                        children: Object.keys(KLAVYE_DUZENLERI).map((dilKey)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                type: "button",
-                                onClick: ()=>dilDegistir(dilKey),
-                                style: {
-                                    padding: '6px 12px',
-                                    borderRadius: '16px',
-                                    border: `1px solid ${aktifDil === dilKey ? '#2563eb' : kenarlik}`,
-                                    backgroundColor: aktifDil === dilKey ? '#2563eb' : 'transparent',
-                                    color: aktifDil === dilKey ? '#ffffff' : yaziRengi,
-                                    fontSize: `${metinBoyutu * 0.8}px`,
-                                    cursor: 'pointer',
-                                    whiteSpace: 'nowrap'
-                                },
-                                children: KLAVYE_DUZENLERI[dilKey].etiket
-                            }, dilKey, false, {
-                                fileName: "[project]/src/components/AkilliKlavye.tsx",
-                                lineNumber: 117,
-                                columnNumber: 15
-                            }, this))
-                    }, void 0, false, {
-                        fileName: "[project]/src/components/AkilliKlavye.tsx",
-                        lineNumber: 115,
-                        columnNumber: 11
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        style: {
-                            display: 'flex',
-                            flexWrap: 'wrap',
-                            gap: '6px'
-                        },
-                        children: KLAVYE_DUZENLERI[aktifDil].tuslar.map((harf, idx)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                type: "button",
-                                onMouseDown: (e)=>e.preventDefault(),
-                                onClick: ()=>harfEkle(harf),
-                                style: {
-                                    padding: '8px 12px',
-                                    minWidth: '36px',
-                                    borderRadius: '6px',
-                                    border: `1px solid ${kenarlik}`,
-                                    backgroundColor: karanlikMod ? '#334155' : '#f1f5f9',
-                                    color: yaziRengi,
-                                    fontSize: `${metinBoyutu * 0.9}px`,
-                                    fontWeight: '600',
-                                    cursor: 'pointer'
-                                },
-                                children: harf
-                            }, idx, false, {
-                                fileName: "[project]/src/components/AkilliKlavye.tsx",
-                                lineNumber: 139,
-                                columnNumber: 15
-                            }, this))
-                    }, void 0, false, {
-                        fileName: "[project]/src/components/AkilliKlavye.tsx",
-                        lineNumber: 137,
-                        columnNumber: 11
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "[project]/src/components/AkilliKlavye.tsx",
-                lineNumber: 105,
-                columnNumber: 9
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/AkilliKlavye.tsx",
-        lineNumber: 81,
+        lineNumber: 42,
         columnNumber: 5
     }, this);
-}
-_s(AkilliKlavye, "4Lc0iBKBC6Nbdfe+SjjxGriWR/s=");
-_c = AkilliKlavye;
-var _c;
-__turbopack_context__.k.register(_c, "AkilliKlavye");
+});
+_c1 = AkilliKlavye;
+const __TURBOPACK__default__export__ = AkilliKlavye;
+var _c, _c1;
+__turbopack_context__.k.register(_c, "AkilliKlavye$memo");
+__turbopack_context__.k.register(_c1, "AkilliKlavye");
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
     __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
 }
@@ -2405,6 +1917,7 @@ function useDictionary() {
     const cacheRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])({});
     const deferredSearch = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useDeferredValue"])(searchQuery);
     const loadOne = async (meta)=>{
+        if (!meta.file) return []; // Undefined hatasını önleyen güvenlik kontrolü
         if (cacheRef.current[meta.file]) return cacheRef.current[meta.file];
         const res = await fetch(`/data/${meta.file}`);
         if (!res.ok) throw new Error(`${meta.file} 404`);
@@ -2444,7 +1957,7 @@ function useDictionary() {
                     }
                     return;
                 }
-                // 3. İlk 3 sözlüğü hemen yükle → ekran açılsın
+                // 3. İlk 3 sözlüğü hemen yükle
                 const ilkGrup = hedef.slice(0, 3);
                 const kalanGrup = hedef.slice(3);
                 let ilkKelimeler = [];
@@ -2462,7 +1975,7 @@ function useDictionary() {
                     setRawWords(ilkKelimeler);
                     setWordsCount(ilkKelimeler.length);
                 }
-                setLoading(false); // ← Ekran burada açılır
+                setLoading(false);
                 // 4. Kalan sözlükleri batch'ler halinde arka planda yükle
                 if (kalanGrup.length === 0) return;
                 const BATCH = 4;
@@ -2545,7 +2058,7 @@ function useDictionary() {
                     const row = groups.get(key);
                     const lang = getLanguageName(item);
                     row[lang] = item.kelime;
-                    if (!row["Türkçe"]) row["Türkçe"] = item.tanim.split(";")[0].trim();
+                    if (!row["Türkçe"] && item.tanim) row["Türkçe"] = item.tanim.split(";")[0].trim();
                 }
             }["useDictionary.useMemo[conceptRows]"]);
             return Array.from(groups.values());

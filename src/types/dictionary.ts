@@ -1,61 +1,115 @@
-// src/types/dictionary.ts
+import { RefObject, Dispatch, SetStateAction } from "react";
+import { type TemaTipi } from "@/utils/helpers";
 
-// 1. Her türlü 'any' kullanımı yasaklanmıştır. Kesin tipler tanımlanır.
+export type AramaModu = "baslayan" | "icinde" | "tam";
+export type LehceTipi = "TUMU" | "BATI" | "DOGU";
+
+// Dialect tipini esnetiyoruz
+export type Dialect = "BATI" | "DOGU" | string;
+
 export interface SozlukAnlam {
-  meaning?: string;
-}
-
-export interface SozlukTanimi {
-  definitions?: SozlukAnlam[];
-  full_definition_in_html?: string;
-  tanim?: SozlukAnlam;
+  [key: string]: any;
 }
 
 export interface DictionaryMeta {
   file: string;
-  title: string;
-  author?: string;
-  publisher?: string;
-  year?: string;
-  dialect: "BATI" | "DOGU" | "TÜMÜ";
+  title?: string;
+  dialect?: string;
   total_words?: number;
+  lang?: string;
+  [key: string]: any;
 }
-
-export type Dialect = "BATI" | "DOGU" | "TÜMÜ";
 
 export interface DictionaryItem {
   kelime: string;
   tanim: string;
-  kaynak_sozluk?: string;
   file?: string;
-  dialect?: Dialect;
-  language?: string;
-}
-
-export interface ExtendedDictionaryItem extends DictionaryItem {
+  kaynak_sozluk?: string;
+  dialect?: Dialect | string;
   normalizedKelime?: string;
   normalizedTanim?: string;
-  [key: string]: unknown;
+  id?: string | number;
+  meaning?: string;
+  definitions?: SozlukAnlam[];
+  full_definition_in_html?: string;
+  language?: string;
+  dictionaryName?: string;
+  [key: string]: any;
 }
 
-export interface ConceptDetail {
-  kaynakSozluk: string;
-  tanim: string;
+export interface GruplanmisKelime {
+  kelime: string;
+  kaynaklar?: DictionaryItem[]; // <-- Drawer ve kartlar için eklendi
+  anlamlar: {
+    tanim: string;
+    file?: string;
+    kaynak_sozluk?: string;
+    dialect?: string;
+    language?: string;
+    [key: string]: any;
+  }[];
+  dialect?: string;
+  [key: string]: any;
+}
+
+export interface SozlukEkraniProps {
+  loading?: boolean;
+  searchQuery: string;
+  setSearchQuery: Dispatch<SetStateAction<string>>;
+  seciliLehce: LehceTipi;
+  setSeciliLehce: (lehce: LehceTipi) => void;
+  seciliDosya: string;
+  setSeciliDosya: (dosya: string) => void;
+  gununKelimesi?: DictionaryItem | null;
+  filtrelenmisSonuclar: DictionaryItem[] | GruplanmisKelime[];
+  aktifSozlukler: DictionaryMeta[];
+  wordsCount?: number;
+  [key: string]: any;
+}
+
+export interface SearchBoxProps {
+  searchQuery: string;
+  setSearchQuery: Dispatch<SetStateAction<string>>;
+  mod: AramaModu;
+  setMod: (mod: AramaModu) => void;
+  hedefDil: string;
+  setHedefDil: (dil: string) => void;
+  seciliLehce: LehceTipi;
+  setSeciliLehce: (lehce: LehceTipi) => void;
+  seciliDosya: string;
+  setSeciliDosya: (dosya: string) => void;
+  aktifSozlukler: DictionaryMeta[];
+  metinBoyutu: number;
+  karanlikMod: boolean;
+  tema: TemaTipi;
+  inputRef: RefObject<HTMLInputElement | null>;
+  harfEkle: (harf: string) => void;
+  kaynagiDuzenle: (dosyaAdi?: string) => string;
+  setGoruntulenenAdet: Dispatch<SetStateAction<number>>;
+  limit: number;
 }
 
 export interface ConceptRow {
-  kavram?: string;
-  Turkce?: string;
-  Ingilizce?: string;
-  Arapca?: string;
-  Rusca?: string;
-  Adigece?: string;
-  Kabardeyce?: string;
-  detaylar?: ConceptDetail[];
-  [key: string]: string | ConceptDetail[] | undefined;
+  id?: string | number;
+  kelime?: string;
+  tanim?: string;
+  word?: string;
+  meaning?: string;
+  file?: string;
+  dialect?: string;
+  language?: string;
+  definitions?: any[];
+  full_definition_in_html?: string;
+  [key: string]: any;
 }
 
-// 2. HATA ÇÖZÜMÜ (TS2459 & TS2303): Type Guard burada dışa aktarılır (export)
-export function isSozlukTanimi(veri: unknown): veri is SozlukTanimi {
-  return typeof veri === "object" && veri !== null;
+// ==========================================
+// EKSİK TYPE GUARD (TİP DOĞRULAYICI)
+// ==========================================
+export function isSozlukTanimi(veri: unknown): veri is DictionaryItem {
+  return (
+    typeof veri === "object" &&
+    veri !== null &&
+    ("kelime" in veri || "tanim" in veri || "meaning" in veri || "word" in veri)
+  );
 }

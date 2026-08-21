@@ -1,3 +1,5 @@
+"use client";
+
 import {
   useState,
   useEffect,
@@ -5,10 +7,11 @@ import {
   useRef,
   useDeferredValue,
 } from "react";
-import {
-  ExtendedDictionaryItem,
+import type {
+  DictionaryItem,
   DictionaryMeta,
   ConceptRow,
+  LehceTipi,
 } from "@/types/dictionary";
 import { temizleHtml } from "@/utils/cleanHtml";
 
@@ -16,14 +19,14 @@ const DEMO_SOZLUKLER: DictionaryMeta[] = [
   { file: "adigece_turkce.json", title: "Demo Sözlük", total_words: 6, dialect: "BATI" },
 ];
 
-const DEMO_KELIMELER: ExtendedDictionaryItem[] = [
+const DEMO_KELIMELER: DictionaryItem[] = [
   { kelime: "псы", tanim: "su", kaynak_sozluk: "Demo", file: "demo", dialect: "BATI" },
   { kelime: "Ӏупэ", tanim: "kapı", kaynak_sozluk: "Demo", file: "demo", dialect: "BATI" },
   { kelime: "мафэ", tanim: "güneş / gün", kaynak_sozluk: "Demo", file: "demo", dialect: "BATI" },
 ];
 
-function normalizeText(text: any): string {
-  if (!text || typeof text !== "string") return "";
+function normalizeText(text: unknown): string {
+  if (typeof text !== "string" || !text) return "";
   return text.normalize("NFC").toLocaleLowerCase("tr").trim();
 }
 
@@ -36,42 +39,72 @@ function hashString(str: string): number {
   return Math.abs(h);
 }
 
-function getLanguageName(item: ExtendedDictionaryItem): string {
+function getLanguageName(item: DictionaryItem): string {
   if (item.language) return item.language;
-  if (item.dialect === "BATI") return "Adıgece";
+  if (item.dialect === "BATI") return "Adigece";
   if (item.dialect === "DOGU") return "Kabardeyce";
   return "Bilinmeyen";
 }
 
-function parseTanim(val: any): string {
-  if (Array.isArray(val?.definitions) && val.definitions.length > 0) {
-    const meanings = val.definitions
-      .map((d: any) => (typeof d === "string" ? d : d?.meaning || ""))
-      .map((m: string) => m.trim())
+function parseTanim(val: unknown): string {
+  if (typeof val !== "object" || val === null) {
+    return typeof val === "string" ? val.trim() : "";
+  }
+
+  const obj = val as Record<string, unknown>;
+
+  if (Array.isArray(obj.definitions) && obj.definitions.length > 0) {
+    const meanings = obj.definitions
+      .map((d) => {
+        if (typeof d === "string") return d.trim();
+        if (typeof d === "object" && d !== null && "meaning" in d) {
+          const m = (d as Record<string, unknown>).meaning;
+          return typeof m === "string" ? m.trim() : "";
+        }
+        return "";
+      })
       .filter(Boolean);
+
     if (meanings.length > 0) {
-      const tip = val?.type?.trim();
-      const tipEki = tip ? `[${tip}] ` : "";
-      return tipEki + meanings.join("\n");
+      const tip = typeof obj.type === "string" ? obj.type.trim() : "";
+      return (tip ? `[${tip}] ` : "") + meanings.join("\n");
     }
   }
-  if (val?.full_definition_in_html) return temizleHtml(val.full_definition_in_html);
-  if (typeof val === "string") return val.trim();
-  if (typeof val?.tanim === "string") return val.tanim.trim();
-  if (typeof val?.meaning === "string") return val.meaning.trim();
+
+  if (typeof obj.full_definition_in_html === "string" && obj.full_definition_in_html) {
+    return temizleHtml(obj.full_definition_in_html);
+  }
+
+  if (typeof obj.tanim === "string" && obj.tanim) return obj.tanim.trim();
+  if (typeof obj.meaning === "string" && obj.meaning) return obj.meaning.trim();
+
   return "";
 }
 
-function parseDictionaryData(rawData: any, meta: DictionaryMeta): ExtendedDictionaryItem[] {
-  const wordsObj = rawData?.words || rawData;
-  let parsed: ExtendedDictionaryItem[] = [];
+function parseDictionaryData(rawData: unknown, meta: DictionaryMeta): DictionaryItem[] {
+  if (typeof rawData !== "object" || rawData === null) return [];
+
+  const record = rawData as Record<string, unknown>;
+  const wordsObj = record.words ?? rawData;
+  let parsed: DictionaryItem[] = [];
 
   if (Array.isArray(wordsObj)) {
-    parsed = wordsObj.map((item: any) => {
-      const kelime = item?.kelime || item?.spelling || "";
-      const tanim = item?.tanim ? temizleHtml(item.tanim) : parseTanim(item);
+    parsed = wordsObj.map((item) => {
+      if (typeof item !== "object" || item === null) return { kelime: "", tanim: "" };
+      const itemObj = item as Record<string, unknown>;
+      const kelime =
+        typeof itemObj.kelime === "string"
+          ? itemObj.kelime
+          : typeof itemObj.spelling === "string"
+          ? itemObj.spelling
+          : "";
+      const tanim =
+        typeof itemObj.tanim === "string" && itemObj.tanim
+          ? temizleHtml(itemObj.tanim)
+          : parseTanim(itemObj);
+
       return {
-        ...item,
+        ...(itemObj as unknown as DictionaryItem),
         kelime,
         tanim,
         file: meta.file,
@@ -82,9 +115,11 @@ function parseDictionaryData(rawData: any, meta: DictionaryMeta): ExtendedDictio
       };
     });
   } else if (typeof wordsObj === "object" && wordsObj !== null) {
-    parsed = Object.entries(wordsObj).map(([key, val]: [string, any]) => {
-      const kelime = val?.spelling || key;
+    parsed = Object.entries(wordsObj as Record<string, unknown>).map(([key, val]) => {
+      const valObj = typeof val === "object" && val !== null ? (val as Record<string, unknown>) : {};
+      const kelime = typeof valObj.spelling === "string" ? valObj.spelling : key;
       const tanim = parseTanim(val);
+
       return {
         kelime,
         tanim,
@@ -100,28 +135,36 @@ function parseDictionaryData(rawData: any, meta: DictionaryMeta): ExtendedDictio
   return parsed.filter((item) => item.kelime && item.tanim);
 }
 
+// Ana Hook Tanımı
 export function useDictionary() {
   const [aktifSozlukler, setAktifSozlukler] = useState<DictionaryMeta[]>([]);
-  const [rawWords, setRawWords] = useState<ExtendedDictionaryItem[]>([]);
+  const [rawWords, setRawWords] = useState<DictionaryItem[]>([]);
   const [wordsCount, setWordsCount] = useState<number>(0);
   const [loading, setLoading] = useState<boolean>(true);
   const [searchQuery, setSearchQuery] = useState<string>("");
-  const [seciliLehce, setSeciliLehce] = useState<"TUMU" | "BATI" | "DOGU">("TUMU");
+  const [seciliLehce, setSeciliLehce] = useState<LehceTipi>("TUMU");
   const [seciliDosya, setSeciliDosya] = useState<string>("TUMU");
-  const [gununKelimesi, setGununKelimesi] = useState<ExtendedDictionaryItem | null>(null);
+  const [gununKelimesi, setGununKelimesi] = useState<DictionaryItem | null>(null);
 
-  const cacheRef = useRef<Record<string, ExtendedDictionaryItem[]>>({});
+  const cacheRef = useRef<Record<string, DictionaryItem[]>>({});
   const deferredSearch = useDeferredValue(searchQuery);
 
-  const loadOne = async (meta: DictionaryMeta): Promise<ExtendedDictionaryItem[]> => {
-    if (!meta.file) return []; // Undefined hatasını önleyen güvenlik kontrolü
+  const loadOne = async (meta: DictionaryMeta): Promise<DictionaryItem[]> => {
+    if (!meta.file) return [];
     if (cacheRef.current[meta.file]) return cacheRef.current[meta.file];
-    const res = await fetch(`/data/${meta.file}`);
-    if (!res.ok) throw new Error(`${meta.file} 404`);
-    const raw = await res.json();
-    const result = parseDictionaryData(raw, meta);
-    cacheRef.current[meta.file] = result;
-    return result;
+
+    try {
+      const res = await fetch(`/data/${meta.file}`);
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+
+      const raw: unknown = await res.json();
+      const result = parseDictionaryData(raw, meta);
+      cacheRef.current[meta.file] = result;
+      return result;
+    } catch (error) {
+      console.error(`[Sözlük Yükleme Hatası - ${meta.file}]:`, error);
+      return [];
+    }
   };
 
   useEffect(() => {
@@ -130,20 +173,19 @@ export function useDictionary() {
     async function init() {
       setLoading(true);
 
-      // 1. Manifest yükle
       let manifest: DictionaryMeta[] = [];
       try {
         const res = await fetch("/data/dictionaries.json");
-        if (res.ok) manifest = await res.json();
+        if (res.ok) manifest = (await res.json()) as DictionaryMeta[];
       } catch {
-        console.warn("Manifest yüklenemedi.");
+        console.warn("Manifest okunamadı, fallback sözlükler aktif.");
       }
+
       if (!Array.isArray(manifest) || manifest.length === 0) {
         manifest = DEMO_SOZLUKLER;
       }
       if (isMounted) setAktifSozlukler(manifest);
 
-      // 2. Hedef sözlükleri belirle
       const hedef =
         seciliDosya !== "TUMU"
           ? manifest.filter((d) => d.file === seciliDosya)
@@ -160,11 +202,10 @@ export function useDictionary() {
         return;
       }
 
-      // 3. İlk 3 sözlüğü hemen yükle
       const ilkGrup = hedef.slice(0, 3);
       const kalanGrup = hedef.slice(3);
 
-      let ilkKelimeler: ExtendedDictionaryItem[] = [];
+      const ilkKelimeler: DictionaryItem[] = [];
       const ilkSonuclar = await Promise.allSettled(ilkGrup.map(loadOne));
       ilkSonuclar.forEach((r) => {
         if (r.status === "fulfilled") ilkKelimeler.push(...r.value);
@@ -181,7 +222,6 @@ export function useDictionary() {
       }
       setLoading(false);
 
-      // 4. Kalan sözlükleri batch'ler halinde arka planda yükle
       if (kalanGrup.length === 0) return;
       const BATCH = 4;
       let tumKelimeler = [...ilkKelimeler];
@@ -190,10 +230,11 @@ export function useDictionary() {
         if (!isMounted) return;
         const batch = kalanGrup.slice(i, i + BATCH);
         const sonuclar = await Promise.allSettled(batch.map(loadOne));
-        const yeni: ExtendedDictionaryItem[] = [];
+        const yeni: DictionaryItem[] = [];
         sonuclar.forEach((r) => {
           if (r.status === "fulfilled") yeni.push(...r.value);
         });
+
         if (yeni.length > 0 && isMounted) {
           tumKelimeler = [...tumKelimeler, ...yeni];
           setRawWords([...tumKelimeler]);
@@ -203,7 +244,9 @@ export function useDictionary() {
     }
 
     init();
-    return () => { isMounted = false; };
+    return () => {
+      isMounted = false;
+    };
   }, [seciliDosya, seciliLehce]);
 
   useEffect(() => {
@@ -229,12 +272,18 @@ export function useDictionary() {
   const conceptRows = useMemo(() => {
     const groups = new Map<string, ConceptRow>();
     filtrelenmisSonuclar.forEach((item) => {
-      const key = item.normalizedTanim || item.tanim;
-      if (!groups.has(key)) groups.set(key, {});
+      const key = normalizeText(item.kelime);
+      if (!key) return;
+
+      if (!groups.has(key)) {
+        groups.set(key, {});
+      }
       const row = groups.get(key)!;
       const lang = getLanguageName(item);
       row[lang] = item.kelime;
-      if (!row["Türkçe"] && item.tanim) row["Türkçe"] = item.tanim.split(";")[0].trim();
+      if (!row["Türkçe"] && item.tanim) {
+        row["Türkçe"] = item.tanim.split(";")[0].trim();
+      }
     });
     return Array.from(groups.values());
   }, [filtrelenmisSonuclar]);
@@ -254,3 +303,5 @@ export function useDictionary() {
     aktifSozlukler,
   };
 }
+
+export default useDictionary;

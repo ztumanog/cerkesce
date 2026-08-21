@@ -1,36 +1,32 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
+// Footer bileşenini import ediyoruz (dosya yoluna göre düzenleyebilirsin)
+import Footer from "@/components/Footer"; 
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Çerkesçe Sözlük",
-  description: "Çerkesçe Sözlük Uygulaması",
-  icons: {
-    icon: "/icons/favicon.ico",
-  },
+  description: "Çerkesçe / Adıgece Online Sözlük ve Dil Kaynağı",
 };
 
 export default function RootLayout({
   children,
-}: {
+}: Readonly<{
   children: React.ReactNode;
-}) {
+}>) {
   return (
-    <html
-      lang="tr"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-    >
-      <body className="min-h-full flex flex-col">{children}</body>
+    <html lang="tr">
+      <body className={inter.className} style={{ display: "flex", flexDirection: "column", minHeight: "100vh", margin: 0 }}>
+        {/* Sayfa İçerikleri */}
+        <main style={{ flex: 1 }}>
+          {children}
+        </main>
+
+        {/* Footer Tüm Sayfalarda En Altta Görünecek */}
+        <Footer />
+      </body>
     </html>
   );
 }
