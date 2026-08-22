@@ -1,7 +1,12 @@
 import type React from "react";
-import { KURUMSAL } from "@/lib/dictionaryConstants";
+import { KURUMSAL, SOZLUK_META } from "@/lib/dictionaryConstants";
 import type { DictionaryItem } from "@/types/dictionary";
 import { tanimlariBicimlendir, kaynagiDuzenle, type TemaTipi } from "@/utils/helpers";
+
+interface YerelSozlukMeta {
+  dilCifti: string;
+  yazar: string;
+}
 
 interface GununKelimesiKartiProps {
   gununKelimesi: DictionaryItem | null;
@@ -31,6 +36,42 @@ export default function GununKelimesiKarti({
 
   const arkaPlanRengi = karanlikMod ? "#1e293b" : KURUMSAL.kirmiziAcik;
   const isBatil = gununKelimesi.dialect === "BATI";
+
+  // 1. Kaynak verisini güvenli şekilde al
+  const rawKaynak = gununKelimesi.kaynak_sozluk as unknown;
+  let kaynakStr = "";
+  let kaynakMeta: YerelSozlukMeta | null = null;
+
+  if (typeof rawKaynak === "string") {
+    kaynakStr = rawKaynak;
+  } else if (rawKaynak && typeof rawKaynak === "object") {
+    kaynakMeta = rawKaynak as YerelSozlukMeta;
+  }
+
+  // 2. Dosya adını string olarak al
+  const dosyaAdi: string = typeof gununKelimesi.file === "string" 
+    ? gununKelimesi.file 
+    : kaynakStr;
+
+  // 3. Metadata haritası veya yedek fonksiyondan kesin olarak string isim üret
+  const metaObj = dosyaAdi ? (SOZLUK_META[dosyaAdi] as YerelSozlukMeta | undefined) : undefined;
+
+  let kaynakIsmi = "";
+  if (metaObj) {
+    kaynakIsmi = `${metaObj.dilCifti} — ${metaObj.yazar}`;
+  } else if (kaynakMeta) {
+    kaynakIsmi = `${kaynakMeta.dilCifti} — ${kaynakMeta.yazar}`;
+  } else {
+    const duzenlenmis = kaynagiDuzenle(dosyaAdi) as unknown;
+    if (typeof duzenlenmis === "string") {
+      kaynakIsmi = duzenlenmis;
+    } else if (duzenlenmis && typeof duzenlenmis === "object") {
+      const obj = duzenlenmis as YerelSozlukMeta;
+      kaynakIsmi = `${obj.dilCifti} — ${obj.yazar}`;
+    } else {
+      kaynakIsmi = dosyaAdi;
+    }
+  }
 
   return (
     <div
@@ -95,7 +136,7 @@ export default function GununKelimesiKarti({
         tema,
         gununKelimesi.kelime,
         metinBoyutu,
-        kaynagiDuzenle(gununKelimesi.kaynak_sozluk)
+        kaynakIsmi
       )}
     </div>
   );

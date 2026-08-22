@@ -1,50 +1,13 @@
 "use client";
 
-import React from "react";
+import React, { useState, useRef, useEffect } from "react";
 import AkilliKlavye from "@/components/AkilliKlavye";
 import { KURUMSAL } from "@/lib/dictionaryConstants";
 import {
   SearchBoxProps,
   AramaModu,
   LehceTipi,
-  DictionaryMeta,
-  DictionaryItem,
-  Dialect,
 } from "@/types/dictionary";
-
-export function searchWords(
-  allWords: DictionaryItem[],
-  query: string,
-  dialect: "TUMU" | Dialect = "TUMU",
-  selectedFile: string = "TUMU",
-  hedefDil: string = "tumu",
-  limit: number = 50
-): DictionaryItem[] {
-  const q = query.trim().toLowerCase();
-  if (!q) return [];
-
-  return allWords
-    .filter((item) => {
-      // 1. Lehçe Filtresi
-      if (dialect !== "TUMU" && item.dialect !== dialect) return false;
-      
-      // 2. Sözlük Dosya Filtresi
-      if (selectedFile !== "TUMU" && item.file !== selectedFile) return false;
-
-      // 3. Hedef Dil Filtresi (Eklendi)
-      if (hedefDil !== "tumu") {
-        const itemDil = (item.target_lang || item.lang || "").toLowerCase();
-        if (itemDil && itemDil !== hedefDil.toLowerCase()) return false;
-      }
-
-      // 4. Kelime ve Tanım Araması
-      return (
-        (item.kelime?.toLowerCase() || "").includes(q) ||
-        (item.tanim?.toLowerCase() || "").includes(q)
-      );
-    })
-    .slice(0, limit);
-}
 
 export default function SearchBox({
   searchQuery,
@@ -57,15 +20,37 @@ export default function SearchBox({
   setSeciliLehce,
   seciliDosya,
   setSeciliDosya,
-  aktifSozlukler,
+  aktifSozlukler = [],
   metinBoyutu,
   karanlikMod,
   tema,
   inputRef,
-  kaynagiDuzenle,
   setGoruntulenenAdet,
   limit,
 }: SearchBoxProps) {
+  const [dropdownAcik, setDropdownAcik] = useState(false);
+  const [dictionaries, setDictionaries] = useState<any[]>([]);
+  const dropdownRef = useRef<HTMLDivElement>(null);
+
+  // public/data/dictionaries.json dosyasını çekme
+  useEffect(() => {
+    fetch("/data/dictionaries.json")
+      .then((res) => res.json())
+      .then((data) => setDictionaries(data))
+      .catch((err) => console.error("Dictionaries JSON okunamadı:", err));
+  }, []);
+
+  // Dışarı tıklandığında dropdown'ı kapat
+  useEffect(() => {
+    const handleClickOutside = (e: MouseEvent) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(e.target as Node)) {
+        setDropdownAcik(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
   const handleSearchChange = (val: React.SetStateAction<string>) => {
     setSearchQuery(val);
     setGoruntulenenAdet(limit);
@@ -76,9 +61,60 @@ export default function SearchBox({
     setGoruntulenenAdet(limit);
   };
 
+  // Akademik Künye Oluşturucu (shortLabel veya yazar + yıl)
+  const getKaynakEtiketi = (d: any) => {
+    if (d.shortLabel) return d.shortLabel;
+    if (d.author) {
+      return `${d.author}${d.year ? ` (${d.year})` : ""}`;
+    }
+    return d.year ? `(${d.year})` : "";
+  };
+
+  // Gelip geçen aktifSozlukler listesini dictionaries.json verisi ile zenginleştirme
+  const getEnrichedDictionary = (rawFile: string) => {
+    const fileNameOnly = rawFile.split("/").pop()?.split("\\").pop() || rawFile;
+    const found = dictionaries.find((d) => d.file === fileNameOnly);
+    
+    if (found) {
+      return {
+        file: fileNameOnly,
+        title: found.title,
+        label: getKaynakEtiketi(found),
+        dialect: found.dialect as "BATI" | "DOGU",
+      };
+    }
+
+    return {
+      file: fileNameOnly,
+      title: fileNameOnly,
+      label: "",
+      dialect: fileNameOnly.includes("Kbd") ? "DOGU" : "BATI",
+    };
+  };
+
+  // Gruplanmış Veriler
+  const batisozlukleri = aktifSozlukler
+    .map((d) => getEnrichedDictionary(d.file))
+    .filter((d) => d.dialect === "BATI");
+
+  const doguSozlukleri = aktifSozlukler
+    .map((d) => getEnrichedDictionary(d.file))
+    .filter((d) => d.dialect === "DOGU");
+
+  // Seçili Sözlüğün Başlık Metni
+  const getSeciliSozlukEtiket = () => {
+    if (seciliDosya === "TUMU") {
+      return seciliLehce === "TUMU"
+        ? "📖 Tüm Sözlüklerde Ara"
+        : `📖 Tüm ${seciliLehce === "BATI" ? "Batı Adıgece" : "Doğu Kabardeyce"} Sözlükleri`;
+    }
+    const enriched = getEnrichedDictionary(seciliDosya);
+    return `${enriched.title}${enriched.label ? ` — ${enriched.label}` : ""}`;
+  };
+
   return (
     <>
-      {/* 1. Lehçe & Sözlük Seçimi */}
+      {/* LEHÇE VE ÖZEL SÖZLÜK SEÇİCİ */}
       <fieldset style={{ border: "none", padding: 0, margin: "0 0 16px 0" }}>
         <legend
           style={{
@@ -90,6 +126,8 @@ export default function SearchBox({
         >
           Lehçe & Sözlük Seçimi:
         </legend>
+
+        {/* Lehçe Butonları */}
         <div style={{ display: "flex", gap: "8px", flexWrap: "wrap", marginBottom: "10px" }}>
           {[
             { kod: "TUMU" as LehceTipi, etiket: "🌐 Tüm Lehçeler" },
@@ -123,37 +161,197 @@ export default function SearchBox({
             </button>
           ))}
         </div>
-        <select
-          value={seciliDosya}
-          onChange={(e) => {
-            setSeciliDosya(e.target.value);
-            setGoruntulenenAdet(limit);
-          }}
-          style={{
-            width: "100%",
-            padding: "10px 12px",
-            fontSize: `${metinBoyutu * 0.85}px`,
-            borderRadius: "8px",
-            border: `1px solid ${tema.kenarlik}`,
-            backgroundColor: tema.inputArkaPlan,
-            color: tema.yaziAna,
-            cursor: "pointer",
-          }}
-        >
-          <option value="TUMU">
-            {seciliLehce === "TUMU"
-              ? "📖 Tüm Sözlüklerde Ara"
-              : `📖 Tüm ${seciliLehce === "BATI" ? "Batı" : "Doğu"} Sözlüklerinde Ara`}
-          </option>
-          {aktifSozlukler?.map((d: DictionaryMeta) => (
-            <option key={d.file} value={d.file}>
-              {d.title || kaynagiDuzenle(d.file)} ({d.total_words?.toLocaleString("tr-TR") || 0} kelime)
-            </option>
-          ))}
-        </select>
+
+        {/* ÖZEL UI DROPDOWN */}
+        <div ref={dropdownRef} style={{ position: "relative", width: "100%", zIndex: 50 }}>
+          <button
+            type="button"
+            onClick={() => setDropdownAcik(!dropdownAcik)}
+            style={{
+              width: "100%",
+              padding: "12px 16px",
+              fontSize: `${metinBoyutu * 0.9}px`,
+              borderRadius: "8px",
+              border: `1px solid ${tema.kenarlik}`,
+              backgroundColor: tema.inputArkaPlan,
+              color: tema.yaziAna,
+              textAlign: "left",
+              display: "flex",
+              justifyContent: "space-between",
+              alignItems: "center",
+              cursor: "pointer",
+            }}
+          >
+            <span style={{ overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>
+              {getSeciliSozlukEtiket()}
+            </span>
+            <span style={{ fontSize: "12px", marginLeft: "8px" }}>
+              {dropdownAcik ? "▲" : "▼"}
+            </span>
+          </button>
+
+          {dropdownAcik && (
+            <div
+              style={{
+                position: "absolute",
+                top: "100%",
+                left: 0,
+                right: 0,
+                zIndex: 1000,
+                marginTop: "4px",
+                maxHeight: "340px",
+                overflowY: "auto",
+                backgroundColor: tema.kartArkaPlan,
+                border: `1px solid ${tema.kenarlik}`,
+                borderRadius: "8px",
+                boxShadow: "0 4px 20px rgba(0,0,0,0.15)",
+              }}
+            >
+              {/* Hepsi Seçeneği */}
+              <div
+                onClick={() => {
+                  setSeciliDosya("TUMU");
+                  setDropdownAcik(false);
+                  setGoruntulenenAdet(limit);
+                }}
+                style={{
+                  padding: "10px 14px",
+                  fontSize: `${metinBoyutu * 0.85}px`,
+                  fontWeight: "bold",
+                  cursor: "pointer",
+                  backgroundColor: seciliDosya === "TUMU" ? tema.inputArkaPlan : "transparent",
+                  borderBottom: `1px solid ${tema.kenarlik}`,
+                  color: tema.yaziAna,
+                }}
+              >
+                {seciliLehce === "TUMU"
+                  ? "📖 Tüm Sözlüklerde Ara"
+                  : `📖 Tüm ${seciliLehce === "BATI" ? "Batı Adıgece" : "Doğu Kabardeyce"} Sözlükleri`}
+              </div>
+
+              {/* BATI ADIGECE GRUBU */}
+              {(seciliLehce === "TUMU" || seciliLehce === "BATI") && batisozlukleri.length > 0 && (
+                <div>
+                  <div
+                    style={{
+                      padding: "8px 14px 4px 14px",
+                      fontSize: `${metinBoyutu * 0.75}px`,
+                      fontWeight: "bold",
+                      color: KURUMSAL.kirmizi,
+                      letterSpacing: "1px",
+                      textTransform: "uppercase",
+                      backgroundColor: tema.inputArkaPlan,
+                    }}
+                  >
+                    ─── Batı Adıgece ───
+                  </div>
+                  {batisozlukleri.map((d) => {
+                    const isSelected = seciliDosya === d.file;
+                    return (
+                      <div
+                        key={d.file}
+                        onClick={() => {
+                          setSeciliDosya(d.file);
+                          setDropdownAcik(false);
+                          setGoruntulenenAdet(limit);
+                        }}
+                        style={{
+                          display: "flex",
+                          justifyContent: "space-between",
+                          alignItems: "center",
+                          padding: "10px 14px",
+                          fontSize: `${metinBoyutu * 0.85}px`,
+                          cursor: "pointer",
+                          backgroundColor: isSelected ? tema.inputArkaPlan : "transparent",
+                          color: isSelected ? KURUMSAL.kirmizi : tema.yaziAna,
+                          fontWeight: isSelected ? "bold" : "normal",
+                        }}
+                      >
+                        <span style={{ flex: 1 }}>{d.title}</span>
+                        {d.label && (
+                          <span
+                            style={{
+                              color: tema.yaziAlt,
+                              fontSize: `${metinBoyutu * 0.8}px`,
+                              fontStyle: "italic",
+                              marginLeft: "12px",
+                              textAlign: "right",
+                              whiteSpace: "nowrap",
+                            }}
+                          >
+                            {d.label}
+                          </span>
+                        )}
+                      </div>
+                    );
+                  })}
+                </div>
+              )}
+
+              {/* DOĞU KABARDEYCE GRUBU */}
+              {(seciliLehce === "TUMU" || seciliLehce === "DOGU") && doguSozlukleri.length > 0 && (
+                <div>
+                  <div
+                    style={{
+                      padding: "8px 14px 4px 14px",
+                      fontSize: `${metinBoyutu * 0.75}px`,
+                      fontWeight: "bold",
+                      color: KURUMSAL.mavi,
+                      letterSpacing: "1px",
+                      textTransform: "uppercase",
+                      backgroundColor: tema.inputArkaPlan,
+                    }}
+                  >
+                    ─── Doğu Kabardeyce ───
+                  </div>
+                  {doguSozlukleri.map((d) => {
+                    const isSelected = seciliDosya === d.file;
+                    return (
+                      <div
+                        key={d.file}
+                        onClick={() => {
+                          setSeciliDosya(d.file);
+                          setDropdownAcik(false);
+                          setGoruntulenenAdet(limit);
+                        }}
+                        style={{
+                          display: "flex",
+                          justifyContent: "space-between",
+                          alignItems: "center",
+                          padding: "10px 14px",
+                          fontSize: `${metinBoyutu * 0.85}px`,
+                          cursor: "pointer",
+                          backgroundColor: isSelected ? tema.inputArkaPlan : "transparent",
+                          color: isSelected ? KURUMSAL.kirmizi : tema.yaziAna,
+                          fontWeight: isSelected ? "bold" : "normal",
+                        }}
+                      >
+                        <span style={{ flex: 1 }}>{d.title}</span>
+                        {d.label && (
+                          <span
+                            style={{
+                              color: tema.yaziAlt,
+                              fontSize: `${metinBoyutu * 0.8}px`,
+                              fontStyle: "italic",
+                              marginLeft: "12px",
+                              textAlign: "right",
+                              whiteSpace: "nowrap",
+                            }}
+                          >
+                            {d.label}
+                          </span>
+                        )}
+                      </div>
+                    );
+                  })}
+                </div>
+              )}
+            </div>
+          )}
+        </div>
       </fieldset>
 
-      {/* 2. Hedef Dil Filtresi */}
+      {/* HEDEF DİL FİLTRESİ */}
       <fieldset style={{ border: "none", padding: 0, margin: "0 0 16px 0" }}>
         <legend
           style={{
@@ -197,79 +395,102 @@ export default function SearchBox({
           ))}
         </div>
       </fieldset>
-
-      {/* 3. Arama Inputu ve Mod Seçimi */}
-      <div style={{ display: "flex", gap: "10px", marginBottom: "12px", flexWrap: "wrap" }}>
-        <div style={{ flex: "1 1 240px", position: "relative" }}>
-          <input
-            id="arama-input"
-            ref={inputRef}
-            type="search"
-            value={searchQuery}
-            onChange={(e) => handleSearchChange(e.target.value)}
-            placeholder="Kelime veya anlam ara... (Örn: Ӏаб, мафэ, псы)"
-            style={{
-              width: "100%",
-              padding: "12px 40px 12px 16px",
-              fontSize: `${metinBoyutu}px`,
-              borderRadius: "8px",
-              border: `2px solid ${tema.kenarlik}`,
-              backgroundColor: tema.inputArkaPlan,
-              color: tema.yaziAna,
-              outlineColor: KURUMSAL.kirmizi,
-              boxSizing: "border-box",
+{/* ARAMA KUTUSU (SOL ALTA HİZALANMIŞ YAZI) */}
+      <div
+        style={{
+          position: "relative",
+          marginBottom: "16px",
+          width: "100%",
+          height: "220px",
+          borderRadius: "16px",
+          border: `2px solid ${tema.kenarlik}`,
+          backgroundColor: tema.inputArkaPlan,
+          boxShadow: "0 2px 8px rgba(0, 0, 0, 0.05)",
+          display: "flex",
+          alignItems: "flex-end", // İçindeki her şeyi sol alta itin
+          padding: "16px 48px 16px 16px",
+          boxSizing: "border-box",
+        }}
+      >
+        <textarea
+          id="arama-input"
+          ref={inputRef as any}
+          value={searchQuery}
+          onChange={(e) => handleSearchChange(e.target.value)}
+          placeholder="Kelime veya anlam ara... (Örn: Ӏаб, мафэ, псы)"
+          rows={1}
+          style={{
+            width: "100%",
+            border: "none",
+            outline: "none",
+            background: "transparent",
+            fontSize: `${metinBoyutu}px`,
+            color: tema.yaziAna,
+            resize: "none",
+            padding: 0,
+            margin: 0,
+            lineHeight: "1.4",
+          }}
+        />
+        {searchQuery && (
+          <button
+            type="button"
+            onClick={() => {
+              handleSearchChange("");
+              inputRef.current?.focus();
             }}
-          />
-          {searchQuery && (
-            <button
-              type="button"
-              onClick={() => {
-                handleSearchChange("");
-                inputRef.current?.focus();
-              }}
-              style={{
-                position: "absolute",
-                right: "10px",
-                top: "50%",
-                transform: "translateY(-50%)",
-                background: "transparent",
-                border: "none",
-                color: tema.yaziAlt,
-                cursor: "pointer",
-                fontSize: `${metinBoyutu}px`,
-              }}
-            >
-              ✕
-            </button>
-          )}
-        </div>
+            style={{
+              position: "absolute",
+              right: "16px",
+              bottom: "16px",
+              background: "transparent",
+              border: "none",
+              color: tema.yaziAlt,
+              cursor: "pointer",
+              fontSize: `${metinBoyutu * 1.2}px`,
+            }}
+          >
+            ✕
+          </button>
+        )}
+      </div>
+
+     {/* ALT SATIR: İLE BAŞLAYAN KUTUSU VE AKILLI KLAVYENIN EŞİTLENMİŞ TASARIMI */}
+      <div style={{ display: "flex", gap: "10px", alignItems: "stretch", flexWrap: "wrap", marginTop: "12px" }}>
         <select
           value={mod}
           onChange={(e) => setMod(e.target.value as AramaModu)}
           style={{
-            padding: "12px",
-            fontSize: `${metinBoyutu * 0.9}px`,
+            height: "40px",
+            padding: "0 14px",
+            fontSize: `${metinBoyutu * 0.95}px`,
+            fontWeight: "600",
             borderRadius: "8px",
-            border: `2px solid ${tema.kenarlik}`,
+            border: `1.5px solid ${tema.kenarlik}`,
             backgroundColor: tema.inputArkaPlan,
             color: tema.yaziAna,
             cursor: "pointer",
+            whiteSpace: "nowrap",
+            boxSizing: "border-box",
+            display: "inline-flex",
+            alignItems: "center",
           }}
         >
           <option value="baslayan">İle Başlayan</option>
           <option value="icinde">İçinde Geçen</option>
           <option value="tam">Tam Eşleşen</option>
         </select>
-      </div>
 
-      {/* 4. Akıllı Klavye */}
-      <AkilliKlavye
-        inputRef={inputRef}
-        sorgu={searchQuery}
-        setSorgu={handleSearchChange}
-        metinBoyutu={metinBoyutu}
-        karanlikMod={karanlikMod}
-      />
-    </>
+        <div style={{ display: "inline-flex", height: "40px" }}>
+          <AkilliKlavye
+            inputRef={inputRef}
+            sorgu={searchQuery}
+            setSorgu={handleSearchChange}
+            metinBoyutu={metinBoyutu}
+            karanlikMod={karanlikMod}
+          />
+        </div>
+      </div>
+      </>
   );
 }

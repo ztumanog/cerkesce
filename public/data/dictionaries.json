@@ -1,206 +1,332 @@
 [
   {
     "file": "0.Ady-Ady_AIG.json",
-    "title": "Adıgece Açıklamalı Sözlük — Адыгабзэм изэхэф гущı1алъ (2006)",
+    "title": "Adıgece Açıklamalı Sözlük",
+    "originalTitle": "Адыгабзэм изэхэф гущы1алъ",
+    "author": "A. A. Hatanov, Z. İ. Keraşeva",
+    "editor": "A. N. Abregov, N. T. Gışev",
+    "publisher": "Adıge Cumhuriyeti İnsani Bilimler Araştırma Enstitüsü (Maykop)",
+    "year": 2006,
     "total_words": 15139,
-    "dialect": "BATI"
+    "dialect": "BATI",
+    "sourceLanguage": "ady",
+    "targetLanguage": "ady",
+    "confidence": "VERIFIED"
   },
   {
     "file": "1.Ady-Ady_AP.json",
-    "title": "Adıgece-Rusça Sözlük — Prof. Dr. Mirabil L. Apaşev (2008)",
+    "title": "Adıgece-Rusça Sözlük",
+    "originalTitle": "Адыгэ-урыс псалъалъэ",
+    "author": "Prof. Dr. Mirabil L. Apaşev",
+    "year": 2008,
     "total_words": 27268,
-    "dialect": "BATI"
+    "dialect": "BATI",
+    "sourceLanguage": "ady",
+    "targetLanguage": "ru",
+    "confidence": "VERIFIED"
   },
   {
     "file": "2.Ady-Ara.json",
-    "title": "Adıgece-Arapça Sözlük — Dr. Adel Abdulsalam Lash (2013)",
+    "title": "Adıgece-Arapça Sözlük",
+    "author": "Dr. Adel Abdulsalam Lash",
+    "year": 2013,
     "total_words": 12978,
-    "dialect": "BATI"
+    "dialect": "BATI",
+    "sourceLanguage": "ady",
+    "targetLanguage": "ar",
+    "confidence": "VERIFIED"
   },
   {
     "file": "3.Ady-En.json",
-    "title": "Adıgece-İngilizce Sözlük — Адыгэбзэ-инджылыбзэ гущı1алъэ",
-    "total_words": 3821,
-    "dialect": "BATI"
+    "title": "Adıgece-İngilizce",
+    "shortLabel": "Derleme Kaynak",
+    "author": "Dijital Derleme",
+    "dialect": "BATI",
+    "sourceLanguage": "ady",
+    "targetLanguage": "en"
   },
   {
     "file": "4.Ady-En_Adam.json",
-    "title": "Adam Shagash Adıgece-İngilizce Sözlük (2020)",
+    "title": "Adıgece-İngilizce Sözlük",
+    "author": "Adam Shagash",
+    "year": 2020,
     "total_words": 6445,
-    "dialect": "BATI"
+    "dialect": "BATI",
+    "sourceLanguage": "ady",
+    "targetLanguage": "en",
+    "confidence": "HIGH"
   },
   {
     "file": "5.Ady-Rus_Qarden.json",
-    "title": "Kardanov Kabardeyce-Rusça Sözlük — B. M. Kardanov (1957)",
-    "total_words": 19468,
-    "dialect": "DOGU"
+    "title": "Kabardeyce-Rusça",
+    "shortLabel": "Kardanov (1957)",
+    "author": "B. M. Kardanov (ed.)",
+    "year": 1957,
+    "dialect": "DOGU",
+    "sourceLanguage": "kbd",
+    "targetLanguage": "ru"
   },
   {
     "file": "6.Ady-Rus_Sherdjes.json",
-    "title": "Sherdjes Aliy Kabardeyce/Adıgece-Rusça Sözlük — Ali İ. Çerkes (1994)",
-    "total_words": 3812,
-    "dialect": "DOGU"
+    "title": "The Words Which We Undeservingly Forgot",
+    "originalTitle": "Hak Etmediğimiz Halde Unuttuğumuz Kelimeler",
+    "author": "Aliy Cherkesov",
+    "year": 1994,
+    "total_words": 3834,
+    "dialect": "DOGU",
+    "sourceLanguage": "kbd",
+    "targetLanguage": "ru",
+    "confidence": "VERIFIED"
   },
   {
     "file": "7.Ady-Rus_Tharkaho.json",
-    "title": "Tharkaho Adıgece-Rusça Sözlük — Cevdet Tharkaho",
+    "title": "Adıgece-Rusça Sözlük",
+    "author": "Yunus (Cevdet) Tharkaho",
     "total_words": 8636,
-    "dialect": "BATI"
+    "dialect": "BATI",
+    "sourceLanguage": "ady",
+    "targetLanguage": "ru",
+    "confidence": "VERIFIED"
   },
   {
     "file": "8.Ady-Tur_Huvaj.json",
-    "title": "Fahri Huvaj Adıgece-Türkçe Sözlük",
+    "title": "Adıgece-Türkçe Sözlük",
+    "author": "Fahri Huvaj",
     "total_words": 17858,
-    "dialect": "BATI"
+    "dialect": "BATI",
+    "sourceLanguage": "ady",
+    "targetLanguage": "tr",
+    "confidence": "VERIFIED"
   },
   {
     "file": "9.En-Ady.json",
     "title": "İngilizce-Adıgece Sözlük",
+    "author": "Dijital Derleme",
     "total_words": 3056,
-    "dialect": "BATI"
+    "dialect": "BATI",
+    "sourceLanguage": "en",
+    "targetLanguage": "ady",
+    "confidence": "HIGH"
   },
   {
     "file": "10.En-Ady_Adam.json",
-    "title": "Adam Shagash İngilizce-Adıgece Sözlük (2020)",
+    "title": "İngilizce-Adıgece Sözlük",
+    "author": "Adam Shagash",
+    "year": 2020,
     "total_words": 6250,
-    "dialect": "BATI"
+    "dialect": "BATI",
+    "sourceLanguage": "en",
+    "targetLanguage": "ady",
+    "confidence": "HIGH"
   },
   {
     "file": "11.En-Kbd-Jonty.json",
-    "title": "Jonty Yamisha İngilizce-Kabardeyce Sözlük",
-    "total_words": 10757,
-    "dialect": "DOGU"
+    "title": "İngilizce-Kabardeyce Sözlük",
+    "author": "Jonty Yamisha",
+    "dialect": "DOGU",
+    "sourceLanguage": "en",
+    "targetLanguage": "kbd"
   },
   {
     "file": "12.En-Kbd-Ziwar.json",
-    "title": "Ziwar Gish İngilizce-Kabardeyce Sözlük",
-    "total_words": 7178,
-    "dialect": "DOGU"
+    "title": "İngilizce-Kabardeyce Sözlük",
+    "author": "Ziwar",
+    "dialect": "DOGU",
+    "sourceLanguage": "en",
+    "targetLanguage": "kbd"
   },
   {
     "file": "13.Kbd-Ar-Jonty.json",
-    "title": "Jonty Yamisha Kabardeyce-Arapça Sözlük",
-    "total_words": 4011,
-    "dialect": "DOGU"
+    "title": "Kabardeyce-Arapça Sözlük",
+    "author": "Jonty Yamisha",
+    "dialect": "DOGU",
+    "sourceLanguage": "kbd",
+    "targetLanguage": "ar"
   },
   {
     "file": "14.Kbd-En-2-Jonty.json",
-    "title": "Jonty Yamisha Kabardeyce-İngilizce Sözlük v2",
-    "total_words": 9526,
-    "dialect": "DOGU"
+    "title": "Kabardeyce-İngilizce Sözlük (Ek)",
+    "author": "Jonty Yamisha",
+    "dialect": "DOGU",
+    "sourceLanguage": "kbd",
+    "targetLanguage": "en"
   },
   {
     "file": "15.Kbd-En-Jonty.json",
-    "title": "Jonty Yamisha Kabardeyce-İngilizce Sözlük v1",
-    "total_words": 10726,
-    "dialect": "DOGU"
+    "title": "Kabardeyce-İngilizce Sözlük",
+    "author": "Jonty Yamisha",
+    "dialect": "DOGU",
+    "sourceLanguage": "kbd",
+    "targetLanguage": "en"
   },
   {
     "file": "16.Kbd-En-Ziwar.json",
-    "title": "Ziwar Gish Kabardeyce-İngilizce Sözlük",
-    "total_words": 7664,
-    "dialect": "DOGU"
+    "title": "Kabardeyce-İngilizce Sözlük",
+    "author": "Ziwar",
+    "dialect": "DOGU",
+    "sourceLanguage": "kbd",
+    "targetLanguage": "en"
   },
   {
     "file": "17.Kbd-En_Amjad.json",
-    "title": "Amjad Jaimoukha Kabardeyce-İngilizce Sözlük (1997)",
-    "total_words": 17127,
-    "dialect": "DOGU"
+    "title": "Kabardeyce-İngilizce Sözlük",
+    "author": "Amjad M. Jaimoukha",
+    "year": 1997,
+    "dialect": "DOGU",
+    "sourceLanguage": "kbd",
+    "targetLanguage": "en",
+    "confidence": "VERIFIED"
   },
   {
     "file": "18.Kbd-Ru&En.json",
-    "title": "Kabardeyce - Rusça & İngilizce Çok Dilli Sözlük",
+    "title": "Kabardeyce-Rusça-İngilizce Çok Dilli Sözlük",
+    "author": "M. L. Apazhev, Dzh. N. Kokov",
+    "year": 2008,
     "total_words": 26266,
-    "dialect": "DOGU"
+    "dialect": "DOGU",
+    "sourceLanguage": "kbd",
+    "targetLanguage": "ru",
+    "confidence": "VERIFIED"
   },
   {
     "file": "19.Kbd-Ru-2-Jonty.json",
-    "title": "Jonty Yamisha Kabardeyce-Rusça Sözlük v2",
-    "total_words": 9524,
-    "dialect": "DOGU"
+    "title": "Kabardeyce-Rusça Sözlük 2",
+    "author": "Jonty Yamisha",
+    "dialect": "DOGU",
+    "sourceLanguage": "kbd",
+    "targetLanguage": "ru"
   },
   {
     "file": "20.Kbd-Ru-Jonty.json",
-    "title": "Jonty Yamisha Kabardeyce-Rusça Sözlük v1",
-    "total_words": 10726,
-    "dialect": "DOGU"
+    "title": "Kabardeyce-Rusça Sözlük",
+    "author": "Jonty Yamisha",
+    "dialect": "DOGU",
+    "sourceLanguage": "kbd",
+    "targetLanguage": "ru"
   },
   {
     "file": "21.Kbd-Tu-Jonty.json",
-    "title": "Jonty Yamisha Kabardeyce-Türkçe Sözlük",
-    "total_words": 4012,
-    "dialect": "DOGU"
+    "title": "Kabardeyce-Türkçe Sözlük",
+    "author": "Jonty Yamisha",
+    "dialect": "DOGU",
+    "sourceLanguage": "kbd",
+    "targetLanguage": "tr"
   },
   {
     "file": "22.Ru-Kbd-Jonty.json",
-    "title": "Jonty Yamisha Rusça-Kabardeyce Sözlük",
-    "total_words": 12509,
-    "dialect": "DOGU"
+    "title": "Rusça-Kabardeyce Sözlük",
+    "author": "Jonty Yamisha",
+    "dialect": "DOGU",
+    "sourceLanguage": "ru",
+    "targetLanguage": "kbd"
   },
   {
     "file": "23.Rus-Ady_Blaghoj.json",
-    "title": "Blaghoj Rusça-Adıgece Sözlük — Prof. Dr. Ramazan Blaghoj (1991)",
+    "title": "Rusça-Adıgece Sözlük",
+    "author": "Ramazan Blaghoj",
+    "year": 1991,
     "total_words": 3476,
-    "dialect": "BATI"
+    "dialect": "BATI",
+    "sourceLanguage": "ru",
+    "targetLanguage": "ady",
+    "confidence": "HIGH"
   },
   {
     "file": "24.Rus-Ady_UAG.json",
-    "title": "Odezhdeko Rusça-Adıgece Sözlük — U. A. Gethanoko (1960)",
-    "total_words": 31322,
-    "dialect": "BATI"
+    "title": "Rusça-Adıgece",
+    "shortLabel": "Vodozhdokova (1960)",
+    "author": "H. D. Vodozhdokova",
+    "year": 1960,
+    "dialect": "BATI",
+    "sourceLanguage": "ru",
+    "targetLanguage": "ady"
   },
   {
     "file": "25.Rus-Ady_UASP.json",
-    "title": "Rusça-Adıgece Okul Sözlüğü (1991)",
-    "total_words": 9743,
-    "dialect": "BATI"
+    "title": "Rusça-Adıgece Terimler Sözlüğü",
+    "author": "UASP",
+    "dialect": "BATI",
+    "sourceLanguage": "ru",
+    "targetLanguage": "ady"
   },
   {
     "file": "26.Tu-Kbd-Jonty.json",
-    "title": "Jonty Yamisha Türkçe-Kabardeyce Sözlük",
-    "total_words": 3931,
-    "dialect": "DOGU"
+    "title": "Türkçe-Kabardeyce Sözlük",
+    "author": "Jonty Yamisha",
+    "dialect": "DOGU",
+    "sourceLanguage": "tr",
+    "targetLanguage": "kbd"
   },
   {
     "file": "27.Tur-Ady_Abaze.json",
-    "title": "İbrahim Alhas Abaze Türkçe-Adıgece Sözlük (2005)",
-    "total_words": 12350,
-    "dialect": "DOGU"
+    "title": "Türkçe-Adıgece Sözlük",
+    "author": "İbrahim Alhaz Abaze",
+    "publisher": "Ankara",
+    "year": 2005,
+    "total_words": 12351,
+    "dialect": "BATI",
+    "sourceLanguage": "tr",
+    "targetLanguage": "ady",
+    "confidence": "VERIFIED"
   },
   {
     "file": "28.Tur-Ady_Huvaj.json",
-    "title": "Fahri Huvaj Türkçe-Çerkesçe Sözlük (2007)",
-    "total_words": 5381,
-    "dialect": "DOGU"
+    "title": "Türkçe-Adıgece Sözlük",
+    "author": "Fahri Huvaj",
+    "dialect": "BATI",
+    "sourceLanguage": "tr",
+    "targetLanguage": "ady"
   },
   {
     "file": "29.Tur-Ady_Teshu.json",
-    "title": "Teshu Türkçe-Adıgece Sözlük — Cevdet Tharkaho (1991)",
+    "title": "Türkçe-Adıgece Sözlük",
+    "author": "Teshu Mehmet Yasin Çelikkıran",
+    "year": 1991,
     "total_words": 12117,
-    "dialect": "BATI"
+    "dialect": "BATI",
+    "sourceLanguage": "tr",
+    "targetLanguage": "ady",
+    "confidence": "VERIFIED"
   },
   {
     "file": "30.Ady-Rus_ThreeVolumes.json",
-    "title": "3 Ciltlik Büyük Adıgece-Rusça Sözlük — Maykop Enstitüsü (2011)",
-    "total_words": 33491,
-    "dialect": "BATI"
+    "title": "Adıgece-Rusça",
+    "shortLabel": "Tharkaho (1991)",
+    "author": "Yunus Tharkaho",
+    "year": 1991,
+    "dialect": "BATI",
+    "sourceLanguage": "ady",
+    "targetLanguage": "ru"
   },
   {
     "file": "31.Tu-Ady_Hilmi.json",
-    "title": "Açumıj Hilmi Türkçe-Adıgece Sözlük (2013)",
+    "title": "Türkçe-Adıgece Sözlük",
+    "author": "Açumıj Hilmi",
+    "year": 2013,
     "total_words": 26111,
-    "dialect": "BATI"
+    "dialect": "BATI",
+    "sourceLanguage": "tr",
+    "targetLanguage": "ady",
+    "confidence": "VERIFIED"
   },
   {
     "file": "32.Rus-Kbd_Nalchik_2013.json",
-    "title": "Nalçik Baskısı Okullar İçin Rusça-Kabardeyce Sözlük (2013)",
+    "title": "Rusça-Kabardeyce Sözlük",
+    "author": "Nalçik Komisyonu",
+    "publisher": "Nalçik",
+    "year": 2013,
     "total_words": 20640,
-    "dialect": "DOGU"
+    "dialect": "DOGU",
+    "sourceLanguage": "ru",
+    "targetLanguage": "kbd",
+    "confidence": "HIGH"
   },
   {
     "file": "33.Ady-Rus-1960.json",
-    "title": "Eski Adıgece-Rusça Açıklamalı Sözlük (1960)",
-    "total_words": 15360,
-    "dialect": "BATI"
+    "title": "Adıgece-Rusça Sözlük",
+    "year": 1960,
+    "dialect": "BATI",
+    "sourceLanguage": "ady",
+    "targetLanguage": "ru"
   }
 ]

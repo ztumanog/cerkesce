@@ -390,6 +390,35 @@ function GununKelimesiKarti({ gununKelimesi, karanlikMod, metinBoyutu, tema, onC
     const tanimMetni = gununKelimesi.definitions?.[0]?.meaning || gununKelimesi.full_definition_in_html || (typeof gununKelimesi.tanim === "string" ? gununKelimesi.tanim : "") || gununKelimesi.meaning || "";
     const arkaPlanRengi = karanlikMod ? "#1e293b" : __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$dictionaryConstants$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["KURUMSAL"].kirmiziAcik;
     const isBatil = gununKelimesi.dialect === "BATI";
+    // 1. Kaynak verisini güvenli şekilde al
+    const rawKaynak = gununKelimesi.kaynak_sozluk;
+    let kaynakStr = "";
+    let kaynakMeta = null;
+    if (typeof rawKaynak === "string") {
+        kaynakStr = rawKaynak;
+    } else if (rawKaynak && typeof rawKaynak === "object") {
+        kaynakMeta = rawKaynak;
+    }
+    // 2. Dosya adını string olarak al
+    const dosyaAdi = typeof gununKelimesi.file === "string" ? gununKelimesi.file : kaynakStr;
+    // 3. Metadata haritası veya yedek fonksiyondan kesin olarak string isim üret
+    const metaObj = dosyaAdi ? __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$dictionaryConstants$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SOZLUK_META"][dosyaAdi] : undefined;
+    let kaynakIsmi = "";
+    if (metaObj) {
+        kaynakIsmi = `${metaObj.dilCifti} — ${metaObj.yazar}`;
+    } else if (kaynakMeta) {
+        kaynakIsmi = `${kaynakMeta.dilCifti} — ${kaynakMeta.yazar}`;
+    } else {
+        const duzenlenmis = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utils$2f$helpers$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["kaynagiDuzenle"])(dosyaAdi);
+        if (typeof duzenlenmis === "string") {
+            kaynakIsmi = duzenlenmis;
+        } else if (duzenlenmis && typeof duzenlenmis === "object") {
+            const obj = duzenlenmis;
+            kaynakIsmi = `${obj.dilCifti} — ${obj.yazar}`;
+        } else {
+            kaynakIsmi = dosyaAdi;
+        }
+    }
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         onClick: onClick,
         onKeyDown: (e)=>{
@@ -425,7 +454,7 @@ function GununKelimesiKarti({ gununKelimesi, karanlikMod, metinBoyutu, tema, onC
                         children: "🌟 Günün Kelimesi"
                     }, void 0, false, {
                         fileName: "[project]/src/components/GununKelimesiKart.tsx",
-                        lineNumber: 60,
+                        lineNumber: 101,
                         columnNumber: 9
                     }, this),
                     gununKelimesi.dialect && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -438,13 +467,13 @@ function GununKelimesiKarti({ gununKelimesi, karanlikMod, metinBoyutu, tema, onC
                         children: isBatil ? "Batı Adıgece" : "Doğu Kabardeyce"
                     }, void 0, false, {
                         fileName: "[project]/src/components/GununKelimesiKart.tsx",
-                        lineNumber: 70,
+                        lineNumber: 111,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/GununKelimesiKart.tsx",
-                lineNumber: 59,
+                lineNumber: 100,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -456,14 +485,14 @@ function GununKelimesiKarti({ gununKelimesi, karanlikMod, metinBoyutu, tema, onC
                 children: gununKelimesi.kelime
             }, void 0, false, {
                 fileName: "[project]/src/components/GununKelimesiKart.tsx",
-                lineNumber: 83,
+                lineNumber: 124,
                 columnNumber: 7
             }, this),
-            (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utils$2f$helpers$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["tanimlariBicimlendir"])(tanimMetni, tema, gununKelimesi.kelime, metinBoyutu, (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utils$2f$helpers$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["kaynagiDuzenle"])(gununKelimesi.kaynak_sozluk))
+            (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utils$2f$helpers$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["tanimlariBicimlendir"])(tanimMetni, tema, gununKelimesi.kelime, metinBoyutu, kaynakIsmi)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/GununKelimesiKart.tsx",
-        lineNumber: 36,
+        lineNumber: 77,
         columnNumber: 5
     }, this);
 }
@@ -1156,35 +1185,51 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 
 __turbopack_context__.s([
     "default",
-    ()=>SearchBox,
-    "searchWords",
-    ()=>searchWords
+    ()=>SearchBox
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$AkilliKlavye$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/AkilliKlavye.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$dictionaryConstants$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/lib/dictionaryConstants.ts [app-client] (ecmascript)");
+;
+var _s = __turbopack_context__.k.signature();
 "use client";
 ;
 ;
 ;
-function searchWords(allWords, query, dialect = "TUMU", selectedFile = "TUMU", hedefDil = "tumu", limit = 50) {
-    const q = query.trim().toLowerCase();
-    if (!q) return [];
-    return allWords.filter((item)=>{
-        // 1. Lehçe Filtresi
-        if (dialect !== "TUMU" && item.dialect !== dialect) return false;
-        // 2. Sözlük Dosya Filtresi
-        if (selectedFile !== "TUMU" && item.file !== selectedFile) return false;
-        // 3. Hedef Dil Filtresi (Eklendi)
-        if (hedefDil !== "tumu") {
-            const itemDil = (item.target_lang || item.lang || "").toLowerCase();
-            if (itemDil && itemDil !== hedefDil.toLowerCase()) return false;
+function SearchBox({ searchQuery, setSearchQuery, mod, setMod, hedefDil, setHedefDil, seciliLehce, setSeciliLehce, seciliDosya, setSeciliDosya, aktifSozlukler = [], metinBoyutu, karanlikMod, tema, inputRef, setGoruntulenenAdet, limit }) {
+    _s();
+    const [dropdownAcik, setDropdownAcik] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
+    const [dictionaries, setDictionaries] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])([]);
+    const dropdownRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
+    // public/data/dictionaries.json dosyasını çekme
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "SearchBox.useEffect": ()=>{
+            fetch("/data/dictionaries.json").then({
+                "SearchBox.useEffect": (res)=>res.json()
+            }["SearchBox.useEffect"]).then({
+                "SearchBox.useEffect": (data)=>setDictionaries(data)
+            }["SearchBox.useEffect"]).catch({
+                "SearchBox.useEffect": (err)=>console.error("Dictionaries JSON okunamadı:", err)
+            }["SearchBox.useEffect"]);
         }
-        // 4. Kelime ve Tanım Araması
-        return (item.kelime?.toLowerCase() || "").includes(q) || (item.tanim?.toLowerCase() || "").includes(q);
-    }).slice(0, limit);
-}
-function SearchBox({ searchQuery, setSearchQuery, mod, setMod, hedefDil, setHedefDil, seciliLehce, setSeciliLehce, seciliDosya, setSeciliDosya, aktifSozlukler, metinBoyutu, karanlikMod, tema, inputRef, kaynagiDuzenle, setGoruntulenenAdet, limit }) {
+    }["SearchBox.useEffect"], []);
+    // Dışarı tıklandığında dropdown'ı kapat
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "SearchBox.useEffect": ()=>{
+            const handleClickOutside = {
+                "SearchBox.useEffect.handleClickOutside": (e)=>{
+                    if (dropdownRef.current && !dropdownRef.current.contains(e.target)) {
+                        setDropdownAcik(false);
+                    }
+                }
+            }["SearchBox.useEffect.handleClickOutside"];
+            document.addEventListener("mousedown", handleClickOutside);
+            return ({
+                "SearchBox.useEffect": ()=>document.removeEventListener("mousedown", handleClickOutside)
+            })["SearchBox.useEffect"];
+        }
+    }["SearchBox.useEffect"], []);
     const handleSearchChange = (val)=>{
         setSearchQuery(val);
         setGoruntulenenAdet(limit);
@@ -1192,6 +1237,44 @@ function SearchBox({ searchQuery, setSearchQuery, mod, setMod, hedefDil, setHede
     const handleHedefDilChange = (dilKod)=>{
         setHedefDil(dilKod);
         setGoruntulenenAdet(limit);
+    };
+    // Akademik Künye Oluşturucu (shortLabel veya yazar + yıl)
+    const getKaynakEtiketi = (d)=>{
+        if (d.shortLabel) return d.shortLabel;
+        if (d.author) {
+            return `${d.author}${d.year ? ` (${d.year})` : ""}`;
+        }
+        return d.year ? `(${d.year})` : "";
+    };
+    // Gelip geçen aktifSozlukler listesini dictionaries.json verisi ile zenginleştirme
+    const getEnrichedDictionary = (rawFile)=>{
+        const fileNameOnly = rawFile.split("/").pop()?.split("\\").pop() || rawFile;
+        const found = dictionaries.find((d)=>d.file === fileNameOnly);
+        if (found) {
+            return {
+                file: fileNameOnly,
+                title: found.title,
+                label: getKaynakEtiketi(found),
+                dialect: found.dialect
+            };
+        }
+        return {
+            file: fileNameOnly,
+            title: fileNameOnly,
+            label: "",
+            dialect: fileNameOnly.includes("Kbd") ? "DOGU" : "BATI"
+        };
+    };
+    // Gruplanmış Veriler
+    const batisozlukleri = aktifSozlukler.map((d)=>getEnrichedDictionary(d.file)).filter((d)=>d.dialect === "BATI");
+    const doguSozlukleri = aktifSozlukler.map((d)=>getEnrichedDictionary(d.file)).filter((d)=>d.dialect === "DOGU");
+    // Seçili Sözlüğün Başlık Metni
+    const getSeciliSozlukEtiket = ()=>{
+        if (seciliDosya === "TUMU") {
+            return seciliLehce === "TUMU" ? "📖 Tüm Sözlüklerde Ara" : `📖 Tüm ${seciliLehce === "BATI" ? "Batı Adıgece" : "Doğu Kabardeyce"} Sözlükleri`;
+        }
+        const enriched = getEnrichedDictionary(seciliDosya);
+        return `${enriched.title}${enriched.label ? ` — ${enriched.label}` : ""}`;
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
         children: [
@@ -1212,7 +1295,7 @@ function SearchBox({ searchQuery, setSearchQuery, mod, setMod, hedefDil, setHede
                         children: "Lehçe & Sözlük Seçimi:"
                     }, void 0, false, {
                         fileName: "[project]/src/components/SearchBox.tsx",
-                        lineNumber: 83,
+                        lineNumber: 119,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1256,62 +1339,274 @@ function SearchBox({ searchQuery, setSearchQuery, mod, setMod, hedefDil, setHede
                                 children: lehce.etiket
                             }, lehce.kod, false, {
                                 fileName: "[project]/src/components/SearchBox.tsx",
-                                lineNumber: 99,
+                                lineNumber: 137,
                                 columnNumber: 13
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/src/components/SearchBox.tsx",
-                        lineNumber: 93,
+                        lineNumber: 131,
                         columnNumber: 9
                     }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
-                        value: seciliDosya,
-                        onChange: (e)=>{
-                            setSeciliDosya(e.target.value);
-                            setGoruntulenenAdet(limit);
-                        },
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        ref: dropdownRef,
                         style: {
+                            position: "relative",
                             width: "100%",
-                            padding: "10px 12px",
-                            fontSize: `${metinBoyutu * 0.85}px`,
-                            borderRadius: "8px",
-                            border: `1px solid ${tema.kenarlik}`,
-                            backgroundColor: tema.inputArkaPlan,
-                            color: tema.yaziAna,
-                            cursor: "pointer"
+                            zIndex: 50
                         },
                         children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
-                                value: "TUMU",
-                                children: seciliLehce === "TUMU" ? "📖 Tüm Sözlüklerde Ara" : `📖 Tüm ${seciliLehce === "BATI" ? "Batı" : "Doğu"} Sözlüklerinde Ara`
-                            }, void 0, false, {
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                type: "button",
+                                onClick: ()=>setDropdownAcik(!dropdownAcik),
+                                style: {
+                                    width: "100%",
+                                    padding: "12px 16px",
+                                    fontSize: `${metinBoyutu * 0.9}px`,
+                                    borderRadius: "8px",
+                                    border: `1px solid ${tema.kenarlik}`,
+                                    backgroundColor: tema.inputArkaPlan,
+                                    color: tema.yaziAna,
+                                    textAlign: "left",
+                                    display: "flex",
+                                    justifyContent: "space-between",
+                                    alignItems: "center",
+                                    cursor: "pointer"
+                                },
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                        style: {
+                                            overflow: "hidden",
+                                            textOverflow: "ellipsis",
+                                            whiteSpace: "nowrap"
+                                        },
+                                        children: getSeciliSozlukEtiket()
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/SearchBox.tsx",
+                                        lineNumber: 185,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                        style: {
+                                            fontSize: "12px",
+                                            marginLeft: "8px"
+                                        },
+                                        children: dropdownAcik ? "▲" : "▼"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/SearchBox.tsx",
+                                        lineNumber: 188,
+                                        columnNumber: 13
+                                    }, this)
+                                ]
+                            }, void 0, true, {
                                 fileName: "[project]/src/components/SearchBox.tsx",
-                                lineNumber: 143,
+                                lineNumber: 167,
                                 columnNumber: 11
                             }, this),
-                            aktifSozlukler?.map((d)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
-                                    value: d.file,
-                                    children: [
-                                        d.title || kaynagiDuzenle(d.file),
-                                        " (",
-                                        d.total_words?.toLocaleString("tr-TR") || 0,
-                                        " kelime)"
-                                    ]
-                                }, d.file, true, {
-                                    fileName: "[project]/src/components/SearchBox.tsx",
-                                    lineNumber: 149,
-                                    columnNumber: 13
-                                }, this))
+                            dropdownAcik && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                style: {
+                                    position: "absolute",
+                                    top: "100%",
+                                    left: 0,
+                                    right: 0,
+                                    zIndex: 1000,
+                                    marginTop: "4px",
+                                    maxHeight: "340px",
+                                    overflowY: "auto",
+                                    backgroundColor: tema.kartArkaPlan,
+                                    border: `1px solid ${tema.kenarlik}`,
+                                    borderRadius: "8px",
+                                    boxShadow: "0 4px 20px rgba(0,0,0,0.15)"
+                                },
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        onClick: ()=>{
+                                            setSeciliDosya("TUMU");
+                                            setDropdownAcik(false);
+                                            setGoruntulenenAdet(limit);
+                                        },
+                                        style: {
+                                            padding: "10px 14px",
+                                            fontSize: `${metinBoyutu * 0.85}px`,
+                                            fontWeight: "bold",
+                                            cursor: "pointer",
+                                            backgroundColor: seciliDosya === "TUMU" ? tema.inputArkaPlan : "transparent",
+                                            borderBottom: `1px solid ${tema.kenarlik}`,
+                                            color: tema.yaziAna
+                                        },
+                                        children: seciliLehce === "TUMU" ? "📖 Tüm Sözlüklerde Ara" : `📖 Tüm ${seciliLehce === "BATI" ? "Batı Adıgece" : "Doğu Kabardeyce"} Sözlükleri`
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/SearchBox.tsx",
+                                        lineNumber: 211,
+                                        columnNumber: 15
+                                    }, this),
+                                    (seciliLehce === "TUMU" || seciliLehce === "BATI") && batisozlukleri.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                style: {
+                                                    padding: "8px 14px 4px 14px",
+                                                    fontSize: `${metinBoyutu * 0.75}px`,
+                                                    fontWeight: "bold",
+                                                    color: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$dictionaryConstants$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["KURUMSAL"].kirmizi,
+                                                    letterSpacing: "1px",
+                                                    textTransform: "uppercase",
+                                                    backgroundColor: tema.inputArkaPlan
+                                                },
+                                                children: "─── Batı Adıgece ───"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/components/SearchBox.tsx",
+                                                lineNumber: 235,
+                                                columnNumber: 19
+                                            }, this),
+                                            batisozlukleri.map((d)=>{
+                                                const isSelected = seciliDosya === d.file;
+                                                return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    onClick: ()=>{
+                                                        setSeciliDosya(d.file);
+                                                        setDropdownAcik(false);
+                                                        setGoruntulenenAdet(limit);
+                                                    },
+                                                    style: {
+                                                        display: "flex",
+                                                        justifyContent: "space-between",
+                                                        alignItems: "center",
+                                                        padding: "10px 14px",
+                                                        fontSize: `${metinBoyutu * 0.85}px`,
+                                                        cursor: "pointer",
+                                                        backgroundColor: isSelected ? tema.inputArkaPlan : "transparent",
+                                                        color: isSelected ? __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$dictionaryConstants$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["KURUMSAL"].kirmizi : tema.yaziAna,
+                                                        fontWeight: isSelected ? "bold" : "normal"
+                                                    },
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                            style: {
+                                                                flex: 1
+                                                            },
+                                                            children: d.title
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/components/SearchBox.tsx",
+                                                            lineNumber: 270,
+                                                            columnNumber: 25
+                                                        }, this),
+                                                        d.label && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                            style: {
+                                                                color: tema.yaziAlt,
+                                                                fontSize: `${metinBoyutu * 0.8}px`,
+                                                                fontStyle: "italic",
+                                                                marginLeft: "12px",
+                                                                textAlign: "right",
+                                                                whiteSpace: "nowrap"
+                                                            },
+                                                            children: d.label
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/components/SearchBox.tsx",
+                                                            lineNumber: 272,
+                                                            columnNumber: 27
+                                                        }, this)
+                                                    ]
+                                                }, d.file, true, {
+                                                    fileName: "[project]/src/components/SearchBox.tsx",
+                                                    lineNumber: 251,
+                                                    columnNumber: 23
+                                                }, this);
+                                            })
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/src/components/SearchBox.tsx",
+                                        lineNumber: 234,
+                                        columnNumber: 17
+                                    }, this),
+                                    (seciliLehce === "TUMU" || seciliLehce === "DOGU") && doguSozlukleri.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                style: {
+                                                    padding: "8px 14px 4px 14px",
+                                                    fontSize: `${metinBoyutu * 0.75}px`,
+                                                    fontWeight: "bold",
+                                                    color: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$dictionaryConstants$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["KURUMSAL"].mavi,
+                                                    letterSpacing: "1px",
+                                                    textTransform: "uppercase",
+                                                    backgroundColor: tema.inputArkaPlan
+                                                },
+                                                children: "─── Doğu Kabardeyce ───"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/components/SearchBox.tsx",
+                                                lineNumber: 294,
+                                                columnNumber: 19
+                                            }, this),
+                                            doguSozlukleri.map((d)=>{
+                                                const isSelected = seciliDosya === d.file;
+                                                return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    onClick: ()=>{
+                                                        setSeciliDosya(d.file);
+                                                        setDropdownAcik(false);
+                                                        setGoruntulenenAdet(limit);
+                                                    },
+                                                    style: {
+                                                        display: "flex",
+                                                        justifyContent: "space-between",
+                                                        alignItems: "center",
+                                                        padding: "10px 14px",
+                                                        fontSize: `${metinBoyutu * 0.85}px`,
+                                                        cursor: "pointer",
+                                                        backgroundColor: isSelected ? tema.inputArkaPlan : "transparent",
+                                                        color: isSelected ? __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$dictionaryConstants$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["KURUMSAL"].kirmizi : tema.yaziAna,
+                                                        fontWeight: isSelected ? "bold" : "normal"
+                                                    },
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                            style: {
+                                                                flex: 1
+                                                            },
+                                                            children: d.title
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/components/SearchBox.tsx",
+                                                            lineNumber: 329,
+                                                            columnNumber: 25
+                                                        }, this),
+                                                        d.label && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                            style: {
+                                                                color: tema.yaziAlt,
+                                                                fontSize: `${metinBoyutu * 0.8}px`,
+                                                                fontStyle: "italic",
+                                                                marginLeft: "12px",
+                                                                textAlign: "right",
+                                                                whiteSpace: "nowrap"
+                                                            },
+                                                            children: d.label
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/components/SearchBox.tsx",
+                                                            lineNumber: 331,
+                                                            columnNumber: 27
+                                                        }, this)
+                                                    ]
+                                                }, d.file, true, {
+                                                    fileName: "[project]/src/components/SearchBox.tsx",
+                                                    lineNumber: 310,
+                                                    columnNumber: 23
+                                                }, this);
+                                            })
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/src/components/SearchBox.tsx",
+                                        lineNumber: 293,
+                                        columnNumber: 17
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/components/SearchBox.tsx",
+                                lineNumber: 194,
+                                columnNumber: 13
+                            }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/SearchBox.tsx",
-                        lineNumber: 126,
+                        lineNumber: 166,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/SearchBox.tsx",
-                lineNumber: 82,
+                lineNumber: 118,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("fieldset", {
@@ -1331,7 +1626,7 @@ function SearchBox({ searchQuery, setSearchQuery, mod, setMod, hedefDil, setHede
                         children: "Hedef Dil Filtresi:"
                     }, void 0, false, {
                         fileName: "[project]/src/components/SearchBox.tsx",
-                        lineNumber: 158,
+                        lineNumber: 356,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1378,97 +1673,114 @@ function SearchBox({ searchQuery, setSearchQuery, mod, setMod, hedefDil, setHede
                                 children: dil.etiket
                             }, dil.kod, false, {
                                 fileName: "[project]/src/components/SearchBox.tsx",
-                                lineNumber: 176,
+                                lineNumber: 374,
                                 columnNumber: 13
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/src/components/SearchBox.tsx",
-                        lineNumber: 168,
+                        lineNumber: 366,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/SearchBox.tsx",
-                lineNumber: 157,
+                lineNumber: 355,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                style: {
+                    position: "relative",
+                    marginBottom: "16px",
+                    width: "100%",
+                    height: "220px",
+                    borderRadius: "16px",
+                    border: `2px solid ${tema.kenarlik}`,
+                    backgroundColor: tema.inputArkaPlan,
+                    boxShadow: "0 2px 8px rgba(0, 0, 0, 0.05)",
+                    display: "flex",
+                    alignItems: "flex-end",
+                    padding: "16px 48px 16px 16px",
+                    boxSizing: "border-box"
+                },
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("textarea", {
+                        id: "arama-input",
+                        ref: inputRef,
+                        value: searchQuery,
+                        onChange: (e)=>handleSearchChange(e.target.value),
+                        placeholder: "Kelime veya anlam ara... (Örn: Ӏаб, мафэ, псы)",
+                        rows: 1,
+                        style: {
+                            width: "100%",
+                            border: "none",
+                            outline: "none",
+                            background: "transparent",
+                            fontSize: `${metinBoyutu}px`,
+                            color: tema.yaziAna,
+                            resize: "none",
+                            padding: 0,
+                            margin: 0,
+                            lineHeight: "1.4"
+                        }
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/SearchBox.tsx",
+                        lineNumber: 415,
+                        columnNumber: 9
+                    }, this),
+                    searchQuery && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                        type: "button",
+                        onClick: ()=>{
+                            handleSearchChange("");
+                            inputRef.current?.focus();
+                        },
+                        style: {
+                            position: "absolute",
+                            right: "16px",
+                            bottom: "16px",
+                            background: "transparent",
+                            border: "none",
+                            color: tema.yaziAlt,
+                            cursor: "pointer",
+                            fontSize: `${metinBoyutu * 1.2}px`
+                        },
+                        children: "✕"
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/SearchBox.tsx",
+                        lineNumber: 436,
+                        columnNumber: 11
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/components/SearchBox.tsx",
+                lineNumber: 399,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 style: {
                     display: "flex",
                     gap: "10px",
-                    marginBottom: "12px",
-                    flexWrap: "wrap"
+                    alignItems: "stretch",
+                    flexWrap: "wrap",
+                    marginTop: "12px"
                 },
                 children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        style: {
-                            flex: "1 1 240px",
-                            position: "relative"
-                        },
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                                id: "arama-input",
-                                ref: inputRef,
-                                type: "search",
-                                value: searchQuery,
-                                onChange: (e)=>handleSearchChange(e.target.value),
-                                placeholder: "Kelime veya anlam ara... (Örn: Ӏаб, мафэ, псы)",
-                                style: {
-                                    width: "100%",
-                                    padding: "12px 40px 12px 16px",
-                                    fontSize: `${metinBoyutu}px`,
-                                    borderRadius: "8px",
-                                    border: `2px solid ${tema.kenarlik}`,
-                                    backgroundColor: tema.inputArkaPlan,
-                                    color: tema.yaziAna,
-                                    outlineColor: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$dictionaryConstants$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["KURUMSAL"].kirmizi,
-                                    boxSizing: "border-box"
-                                }
-                            }, void 0, false, {
-                                fileName: "[project]/src/components/SearchBox.tsx",
-                                lineNumber: 204,
-                                columnNumber: 11
-                            }, this),
-                            searchQuery && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                type: "button",
-                                onClick: ()=>{
-                                    handleSearchChange("");
-                                    inputRef.current?.focus();
-                                },
-                                style: {
-                                    position: "absolute",
-                                    right: "10px",
-                                    top: "50%",
-                                    transform: "translateY(-50%)",
-                                    background: "transparent",
-                                    border: "none",
-                                    color: tema.yaziAlt,
-                                    cursor: "pointer",
-                                    fontSize: `${metinBoyutu}px`
-                                },
-                                children: "✕"
-                            }, void 0, false, {
-                                fileName: "[project]/src/components/SearchBox.tsx",
-                                lineNumber: 224,
-                                columnNumber: 13
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "[project]/src/components/SearchBox.tsx",
-                        lineNumber: 203,
-                        columnNumber: 9
-                    }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
                         value: mod,
                         onChange: (e)=>setMod(e.target.value),
                         style: {
-                            padding: "12px",
-                            fontSize: `${metinBoyutu * 0.9}px`,
+                            height: "40px",
+                            padding: "0 14px",
+                            fontSize: `${metinBoyutu * 0.95}px`,
+                            fontWeight: "600",
                             borderRadius: "8px",
-                            border: `2px solid ${tema.kenarlik}`,
+                            border: `1.5px solid ${tema.kenarlik}`,
                             backgroundColor: tema.inputArkaPlan,
                             color: tema.yaziAna,
-                            cursor: "pointer"
+                            cursor: "pointer",
+                            whiteSpace: "nowrap",
+                            boxSizing: "border-box",
+                            display: "inline-flex",
+                            alignItems: "center"
                         },
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
@@ -1476,7 +1788,7 @@ function SearchBox({ searchQuery, setSearchQuery, mod, setMod, hedefDil, setHede
                                 children: "İle Başlayan"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/SearchBox.tsx",
-                                lineNumber: 259,
+                                lineNumber: 479,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
@@ -1484,7 +1796,7 @@ function SearchBox({ searchQuery, setSearchQuery, mod, setMod, hedefDil, setHede
                                 children: "İçinde Geçen"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/SearchBox.tsx",
-                                lineNumber: 260,
+                                lineNumber: 480,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
@@ -1492,39 +1804,50 @@ function SearchBox({ searchQuery, setSearchQuery, mod, setMod, hedefDil, setHede
                                 children: "Tam Eşleşen"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/SearchBox.tsx",
-                                lineNumber: 261,
+                                lineNumber: 481,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/SearchBox.tsx",
-                        lineNumber: 246,
+                        lineNumber: 460,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        style: {
+                            display: "inline-flex",
+                            height: "40px"
+                        },
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$AkilliKlavye$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                            inputRef: inputRef,
+                            sorgu: searchQuery,
+                            setSorgu: handleSearchChange,
+                            metinBoyutu: metinBoyutu,
+                            karanlikMod: karanlikMod
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/SearchBox.tsx",
+                            lineNumber: 485,
+                            columnNumber: 11
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/SearchBox.tsx",
+                        lineNumber: 484,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/SearchBox.tsx",
-                lineNumber: 202,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$AkilliKlavye$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                inputRef: inputRef,
-                sorgu: searchQuery,
-                setSorgu: handleSearchChange,
-                metinBoyutu: metinBoyutu,
-                karanlikMod: karanlikMod
-            }, void 0, false, {
-                fileName: "[project]/src/components/SearchBox.tsx",
-                lineNumber: 266,
+                lineNumber: 459,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/SearchBox.tsx",
-        lineNumber: 80,
+        lineNumber: 116,
         columnNumber: 5
     }, this);
 }
+_s(SearchBox, "4DPHNHnB802RP8bChFCNaxKoaMk=");
 _c = SearchBox;
 var _c;
 __turbopack_context__.k.register(_c, "SearchBox");
@@ -1921,6 +2244,8 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 __turbopack_context__.s([
     "default",
     ()=>__TURBOPACK__default__export__,
+    "formatDictionaryTitle",
+    ()=>formatDictionaryTitle,
     "useDictionary",
     ()=>useDictionary
 ]);
@@ -1930,12 +2255,34 @@ var _s = __turbopack_context__.k.signature();
 "use client";
 ;
 ;
+function formatDictionaryTitle(title) {
+    if (!title) return {
+        dilCifti: "Bilinmeyen Sözlük",
+        yazar: "Kaynak Belirtilmedi"
+    };
+    const parts = title.split(/\s+[\?—-]\s+/);
+    if (parts.length >= 2) {
+        const dilCifti = parts[0].replace(/\(.*?\)/g, "").trim();
+        const yazar = parts[1].replace(/\(.*?\)/g, "").trim();
+        return {
+            dilCifti,
+            yazar
+        };
+    }
+    const temizTitle = title.replace(/\(.*?\)/g, "").trim();
+    return {
+        dilCifti: temizTitle,
+        yazar: "Genel Kaynak"
+    };
+}
 const DEMO_SOZLUKLER = [
     {
-        file: "adigece_turkce.json",
+        file: "8.Ady-Tur_Huvaj.json",
         title: "Demo Sözlük",
         total_words: 6,
-        dialect: "BATI"
+        dialect: "BATI",
+        fromLang: "ady",
+        toLang: "tr"
     }
 ];
 const DEMO_KELIMELER = [
@@ -1944,21 +2291,24 @@ const DEMO_KELIMELER = [
         tanim: "su",
         kaynak_sozluk: "Demo",
         file: "demo",
-        dialect: "BATI"
+        dialect: "BATI",
+        toLang: "tr"
     },
     {
         kelime: "Ӏупэ",
         tanim: "kapı",
         kaynak_sozluk: "Demo",
         file: "demo",
-        dialect: "BATI"
+        dialect: "BATI",
+        toLang: "tr"
     },
     {
         kelime: "мафэ",
         tanim: "güneş / gün",
         kaynak_sozluk: "Demo",
         file: "demo",
-        dialect: "BATI"
+        dialect: "BATI",
+        toLang: "tr"
     }
 ];
 function normalizeText(text) {
@@ -2009,6 +2359,9 @@ function parseDictionaryData(rawData, meta) {
     if (typeof rawData !== "object" || rawData === null) return [];
     const record = rawData;
     const wordsObj = record.words ?? rawData;
+    // JSON dosyasının üst seviyesinde veya manifest'te toLang / fromLang varsa al
+    const rootFromLang = record.fromLang || meta.fromLang || "";
+    const rootToLang = record.toLang || meta.toLang || "";
     let parsed = [];
     if (Array.isArray(wordsObj)) {
         parsed = wordsObj.map((item)=>{
@@ -2026,6 +2379,8 @@ function parseDictionaryData(rawData, meta) {
                 file: meta.file,
                 kaynak_sozluk: meta.title,
                 dialect: meta.dialect,
+                fromLang: itemObj.fromLang || rootFromLang,
+                toLang: itemObj.toLang || rootToLang,
                 normalizedKelime: normalizeText(kelime),
                 normalizedTanim: normalizeText(tanim)
             };
@@ -2041,6 +2396,8 @@ function parseDictionaryData(rawData, meta) {
                 file: meta.file,
                 kaynak_sozluk: meta.title,
                 dialect: meta.dialect,
+                fromLang: rootFromLang,
+                toLang: rootToLang,
                 normalizedKelime: normalizeText(kelime),
                 normalizedTanim: normalizeText(tanim)
             };
@@ -2057,20 +2414,27 @@ function useDictionary() {
     const [searchQuery, setSearchQuery] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
     const [seciliLehce, setSeciliLehce] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("TUMU");
     const [seciliDosya, setSeciliDosya] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("TUMU");
+    const [hedefDil, setHedefDil] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("tumu"); // DÜZELTME: hedefDil State'i Eklendi
     const [gununKelimesi, setGununKelimesi] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
     const cacheRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])({});
     const deferredSearch = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useDeferredValue"])(searchQuery);
-    const loadOne = async (meta)=>{
+    const loadOne = async (meta, signal)=>{
         if (!meta.file) return [];
         if (cacheRef.current[meta.file]) return cacheRef.current[meta.file];
         try {
-            const res = await fetch(`/data/${meta.file}`);
+            const safeFileName = encodeURIComponent(meta.file.trim());
+            const res = await fetch(`/data/${safeFileName}`, {
+                signal
+            });
             if (!res.ok) throw new Error(`HTTP ${res.status}`);
             const raw = await res.json();
             const result = parseDictionaryData(raw, meta);
             cacheRef.current[meta.file] = result;
             return result;
         } catch (error) {
+            if (error.name === "AbortError") {
+                return [];
+            }
             console.error(`[Sözlük Yükleme Hatası - ${meta.file}]:`, error);
             return [];
         }
@@ -2078,14 +2442,19 @@ function useDictionary() {
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
         "useDictionary.useEffect": ()=>{
             let isMounted = true;
+            const controller = new AbortController();
             async function init() {
                 setLoading(true);
                 let manifest = [];
                 try {
-                    const res = await fetch("/data/dictionaries.json");
+                    const res = await fetch("/data/dictionaries.json", {
+                        signal: controller.signal
+                    });
                     if (res.ok) manifest = await res.json();
-                } catch  {
-                    console.warn("Manifest okunamadı, fallback sözlükler aktif.");
+                } catch (err) {
+                    if (err.name !== "AbortError") {
+                        console.warn("Manifest okunamadı, fallback sözlükler aktif.");
+                    }
                 }
                 if (!Array.isArray(manifest) || manifest.length === 0) {
                     manifest = DEMO_SOZLUKLER;
@@ -2107,13 +2476,15 @@ function useDictionary() {
                 const ilkGrup = hedef.slice(0, 3);
                 const kalanGrup = hedef.slice(3);
                 const ilkKelimeler = [];
-                const ilkSonuclar = await Promise.allSettled(ilkGrup.map(loadOne));
+                const ilkSonuclar = await Promise.allSettled(ilkGrup.map({
+                    "useDictionary.useEffect.init": (meta)=>loadOne(meta, controller.signal)
+                }["useDictionary.useEffect.init"]));
                 ilkSonuclar.forEach({
                     "useDictionary.useEffect.init": (r)=>{
                         if (r.status === "fulfilled") ilkKelimeler.push(...r.value);
                     }
                 }["useDictionary.useEffect.init"]);
-                if (!isMounted) return;
+                if (!isMounted || controller.signal.aborted) return;
                 if (ilkKelimeler.length === 0) {
                     setRawWords(DEMO_KELIMELER);
                     setWordsCount(DEMO_KELIMELER.length);
@@ -2123,21 +2494,23 @@ function useDictionary() {
                 }
                 setLoading(false);
                 if (kalanGrup.length === 0) return;
-                const BATCH = 4;
+                const BATCH = 3;
                 let tumKelimeler = [
                     ...ilkKelimeler
                 ];
                 for(let i = 0; i < kalanGrup.length; i += BATCH){
-                    if (!isMounted) return;
+                    if (!isMounted || controller.signal.aborted) return;
                     const batch = kalanGrup.slice(i, i + BATCH);
-                    const sonuclar = await Promise.allSettled(batch.map(loadOne));
+                    const sonuclar = await Promise.allSettled(batch.map({
+                        "useDictionary.useEffect.init": (meta)=>loadOne(meta, controller.signal)
+                    }["useDictionary.useEffect.init"]));
                     const yeni = [];
                     sonuclar.forEach({
                         "useDictionary.useEffect.init": (r)=>{
                             if (r.status === "fulfilled") yeni.push(...r.value);
                         }
                     }["useDictionary.useEffect.init"]);
-                    if (yeni.length > 0 && isMounted) {
+                    if (yeni.length > 0 && isMounted && !controller.signal.aborted) {
                         tumKelimeler = [
                             ...tumKelimeler,
                             ...yeni
@@ -2153,6 +2526,7 @@ function useDictionary() {
             return ({
                 "useDictionary.useEffect": ()=>{
                     isMounted = false;
+                    controller.abort();
                 }
             })["useDictionary.useEffect"];
         }
@@ -2170,15 +2544,29 @@ function useDictionary() {
     }["useDictionary.useEffect"], [
         rawWords
     ]);
+    // DÜZELTME: Hedef Dil Filtrelemesi Entegre Edildi
     const filtrelenmisSonuclar = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useMemo"])({
         "useDictionary.useMemo[filtrelenmisSonuclar]": ()=>{
             let veri = rawWords;
-            if (seciliLehce !== "TUMU") veri = veri.filter({
-                "useDictionary.useMemo[filtrelenmisSonuclar]": (i)=>i.dialect === seciliLehce
-            }["useDictionary.useMemo[filtrelenmisSonuclar]"]);
-            if (seciliDosya !== "TUMU") veri = veri.filter({
-                "useDictionary.useMemo[filtrelenmisSonuclar]": (i)=>i.file === seciliDosya
-            }["useDictionary.useMemo[filtrelenmisSonuclar]"]);
+            if (seciliLehce !== "TUMU") {
+                veri = veri.filter({
+                    "useDictionary.useMemo[filtrelenmisSonuclar]": (i)=>i.dialect === seciliLehce
+                }["useDictionary.useMemo[filtrelenmisSonuclar]"]);
+            }
+            if (seciliDosya !== "TUMU") {
+                veri = veri.filter({
+                    "useDictionary.useMemo[filtrelenmisSonuclar]": (i)=>i.file === seciliDosya
+                }["useDictionary.useMemo[filtrelenmisSonuclar]"]);
+            }
+            if (hedefDil !== "tumu") {
+                const targetLang = hedefDil.toLowerCase();
+                veri = veri.filter({
+                    "useDictionary.useMemo[filtrelenmisSonuclar]": (i)=>{
+                        const itemToLang = (i.toLang || "").toLowerCase();
+                        return itemToLang === targetLang || itemToLang.startsWith(targetLang);
+                    }
+                }["useDictionary.useMemo[filtrelenmisSonuclar]"]);
+            }
             if (deferredSearch.trim()) {
                 const q = normalizeText(deferredSearch);
                 veri = veri.filter({
@@ -2191,6 +2579,7 @@ function useDictionary() {
         rawWords,
         seciliLehce,
         seciliDosya,
+        hedefDil,
         deferredSearch
     ]);
     const conceptRows = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useMemo"])({
@@ -2225,13 +2614,15 @@ function useDictionary() {
         setSeciliLehce,
         seciliDosya,
         setSeciliDosya,
+        hedefDil,
+        setHedefDil,
         gununKelimesi,
         filtrelenmisSonuclar,
         conceptRows,
         aktifSozlukler
     };
 }
-_s(useDictionary, "t/D15r1M2RLu1VaJazoqGMCOon0=", false, function() {
+_s(useDictionary, "yMQ5IhvihJT9tRDTuWffDzh/Xp0=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useDeferredValue"]
     ];

@@ -1,0 +1,33 @@
+import os
+
+SRC_DIR = "./public/data1"  # Doğru isimlerin olduğu yer
+TARGET_DIR = "./public/data" # Bozuk isimlerin olduğu yer
+
+def dosya_isimlerini_esitle():
+    if not os.path.exists(SRC_DIR) or not os.path.exists(TARGET_DIR):
+        print("❌ Klasörler bulunamadı! Lütfen yolları kontrol edin.")
+        return
+
+    dogru_dosyalar = [f for f in os.listdir(SRC_DIR) if f.endswith('.json')]
+    hedef_dosyalar = os.listdir(TARGET_DIR)
+
+    guncellenen = 0
+    for dogru_ad in dogru_dosyalar:
+        # Dosya numarasını al (Örn: "15." veya "33.")
+        numara = dogru_ad.split('.')[0] + '.'
+        
+        # Target klasöründe aynı numarayla başlayan bozuk dosyayı bul
+        for hedef_ad in hedef_dosyalar:
+            if hedef_ad.startswith(numara) and hedef_ad != dogru_ad:
+                eski_yol = os.path.join(TARGET_DIR, hedef_ad)
+                yeni_yol = os.path.join(TARGET_DIR, dogru_ad)
+                
+                os.rename(eski_yol, yeni_yol)
+                print(f"✅ Düzeltildi: '{hedef_ad}' -> '{dogru_ad}'")
+                guncellenen += 1
+                break
+
+    print(f"\n🎉 Toplam {guncellenen} dosya ismi `data1` referans alınarak düzeltildi!")
+
+if __name__ == "__main__":
+    dosya_isimlerini_esitle()
