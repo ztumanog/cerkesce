@@ -1,4 +1,6 @@
 {
+  "title": "Одэжьдэкъо (1960)",
+  "id": 24,
   "words": {
     "а": {
       "spelling": "а",
@@ -313220,5 +313222,8 @@
       "type": "",
       "synonyms": []
     }
-  }
+  },
+  "fromLang": "Ru",
+  "toLang": "Ady",
+  "format": "HTML"
 }

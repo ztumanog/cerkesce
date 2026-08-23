@@ -1,4 +1,6 @@
 {
+  "title": "Хъуажь - Turkish to Circassian (2007)",
+  "id": 28,
   "words": {
     "-imsi, -imsi": {
       "spelling": "-imsi, -imsi",
@@ -53810,5 +53812,8 @@
       "type": "",
       "synonyms": []
     }
-  }
+  },
+  "fromLang": "Tr",
+  "toLang": "Ady/Kbd",
+  "format": "HTML"
 }

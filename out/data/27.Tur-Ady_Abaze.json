@@ -1,4 +1,6 @@
 {
+  "title": "Ибрагим Алхаз Абазэ (2005)",
+  "id": 27,
   "words": {
     "ab": {
       "spelling": "ab",
@@ -123500,5 +123502,8 @@
       "type": "",
       "synonyms": []
     }
-  }
+  },
+  "fromLang": "Tr",
+  "toLang": "Kbd",
+  "format": "HTML"
 }

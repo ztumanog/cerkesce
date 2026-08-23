@@ -2822,6 +2822,220 @@ function SearchBox({ searchQuery, setSearchQuery, mod, setMod, hedefDil, setHede
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
         children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                style: {
+                    border: `2px solid ${karanlikMod ? "#3D322C" : "#7A1C1C"}`,
+                    borderRadius: "8px",
+                    padding: "12px",
+                    backgroundColor: karanlikMod ? "#26201D" : "#FFFFFF",
+                    boxShadow: karanlikMod ? "0 4px 16px rgba(0, 0, 0, 0.4)" : "0 4px 12px rgba(122, 28, 28, 0.08)",
+                    display: "flex",
+                    flexDirection: "column",
+                    gap: "10px",
+                    marginBottom: "16px"
+                },
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        style: {
+                            position: "relative",
+                            width: "100%",
+                            minHeight: "56px",
+                            borderRadius: "6px",
+                            border: `1px solid ${tema.kenarlik}`,
+                            backgroundColor: karanlikMod ? "#1A1614" : "#FAFAFA",
+                            display: "flex",
+                            alignItems: "center",
+                            padding: "0 76px 0 14px",
+                            boxSizing: "border-box"
+                        },
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("textarea", {
+                                id: "arama-input",
+                                ref: inputRef,
+                                value: searchQuery,
+                                onChange: (e)=>handleSearchChange(e.target.value),
+                                placeholder: "Kelime veya anlam ara... (/ tuşu ile hızlı odaklanın)",
+                                rows: 1,
+                                style: {
+                                    width: "100%",
+                                    height: "42px",
+                                    maxHeight: 80,
+                                    border: "none",
+                                    outline: "none",
+                                    background: "transparent",
+                                    fontSize: "15px",
+                                    fontWeight: "500",
+                                    color: tema.yaziAna,
+                                    resize: "none",
+                                    padding: "8px 0",
+                                    margin: 0,
+                                    lineHeight: "1.4",
+                                    boxSizing: "border-box"
+                                }
+                            }, void 0, false, {
+                                fileName: "[project]/src/components/SearchBox.tsx",
+                                lineNumber: 214,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                style: {
+                                    position: "absolute",
+                                    right: "10px",
+                                    top: "50%",
+                                    transform: "translateY(-50%)",
+                                    display: "flex",
+                                    alignItems: "center",
+                                    gap: "6px"
+                                },
+                                children: [
+                                    searchQuery && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                        type: "button",
+                                        onClick: ()=>{
+                                            handleSearchChange("");
+                                            inputRef.current?.focus();
+                                        },
+                                        style: {
+                                            background: "transparent",
+                                            border: "none",
+                                            color: tema.yaziAlt,
+                                            cursor: "pointer",
+                                            fontSize: "15px",
+                                            padding: "4px"
+                                        },
+                                        children: "✕"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/SearchBox.tsx",
+                                        lineNumber: 252,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                        type: "button",
+                                        onClick: ()=>{
+                                            inputRef.current?.focus();
+                                        },
+                                        title: "Ara",
+                                        style: {
+                                            background: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$dictionaryConstants$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["KURUMSAL"].kirmizi,
+                                            border: "none",
+                                            color: "#ffffff",
+                                            borderRadius: "6px",
+                                            width: "32px",
+                                            height: "32px",
+                                            display: "flex",
+                                            alignItems: "center",
+                                            justifyContent: "center",
+                                            cursor: "pointer",
+                                            fontSize: "14px",
+                                            boxShadow: "0 2px 4px rgba(0,0,0,0.1)"
+                                        },
+                                        children: "🔍"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/SearchBox.tsx",
+                                        lineNumber: 271,
+                                        columnNumber: 13
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/components/SearchBox.tsx",
+                                lineNumber: 240,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/components/SearchBox.tsx",
+                        lineNumber: 200,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        style: {
+                            display: "flex",
+                            gap: "10px",
+                            alignItems: "stretch",
+                            flexWrap: "wrap"
+                        },
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
+                                value: mod,
+                                onChange: (e)=>setMod(e.target.value),
+                                style: {
+                                    height: "40px",
+                                    padding: "0 14px",
+                                    fontSize: `${metinBoyutu * 0.95}px`,
+                                    fontWeight: "600",
+                                    borderRadius: "8px",
+                                    border: `1.5px solid ${tema.kenarlik}`,
+                                    backgroundColor: tema.inputArkaPlan,
+                                    color: tema.yaziAna,
+                                    cursor: "pointer",
+                                    whiteSpace: "nowrap",
+                                    boxSizing: "border-box",
+                                    display: "inline-flex",
+                                    alignItems: "center"
+                                },
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
+                                        value: "baslayan",
+                                        children: "İle Başlayan"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/SearchBox.tsx",
+                                        lineNumber: 318,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
+                                        value: "icinde",
+                                        children: "İçinde Geçen"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/SearchBox.tsx",
+                                        lineNumber: 319,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
+                                        value: "tam",
+                                        children: "Tam Eşleşen"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/SearchBox.tsx",
+                                        lineNumber: 320,
+                                        columnNumber: 13
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/components/SearchBox.tsx",
+                                lineNumber: 299,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                style: {
+                                    display: "inline-flex",
+                                    height: "40px"
+                                },
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$AkilliKlavye$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                    inputRef: inputRef,
+                                    sorgu: searchQuery,
+                                    setSorgu: handleSearchChange,
+                                    metinBoyutu: metinBoyutu,
+                                    karanlikMod: karanlikMod
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/SearchBox.tsx",
+                                    lineNumber: 324,
+                                    columnNumber: 13
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "[project]/src/components/SearchBox.tsx",
+                                lineNumber: 323,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/components/SearchBox.tsx",
+                        lineNumber: 298,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/components/SearchBox.tsx",
+                lineNumber: 184,
+                columnNumber: 7
+            }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("fieldset", {
                 style: {
                     border: "none",
@@ -2839,7 +3053,7 @@ function SearchBox({ searchQuery, setSearchQuery, mod, setMod, hedefDil, setHede
                         children: "Lehçe & Sözlük Seçimi:"
                     }, void 0, false, {
                         fileName: "[project]/src/components/SearchBox.tsx",
-                        lineNumber: 185,
+                        lineNumber: 337,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2883,12 +3097,12 @@ function SearchBox({ searchQuery, setSearchQuery, mod, setMod, hedefDil, setHede
                                 children: lehce.etiket
                             }, lehce.kod, false, {
                                 fileName: "[project]/src/components/SearchBox.tsx",
-                                lineNumber: 202,
+                                lineNumber: 354,
                                 columnNumber: 13
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/src/components/SearchBox.tsx",
-                        lineNumber: 196,
+                        lineNumber: 348,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2928,7 +3142,7 @@ function SearchBox({ searchQuery, setSearchQuery, mod, setMod, hedefDil, setHede
                                         children: getSeciliSozlukEtiket()
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/SearchBox.tsx",
-                                        lineNumber: 252,
+                                        lineNumber: 404,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2939,13 +3153,13 @@ function SearchBox({ searchQuery, setSearchQuery, mod, setMod, hedefDil, setHede
                                         children: dropdownAcik ? "▲" : "▼"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/SearchBox.tsx",
-                                        lineNumber: 255,
+                                        lineNumber: 407,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/SearchBox.tsx",
-                                lineNumber: 232,
+                                lineNumber: 384,
                                 columnNumber: 11
                             }, this),
                             dropdownAcik && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2989,7 +3203,7 @@ function SearchBox({ searchQuery, setSearchQuery, mod, setMod, hedefDil, setHede
                                         children: seciliLehce === "TUMU" ? "📖 Tüm Sözlüklerde Ara" : `📖 Tüm ${seciliLehce === "BATI" ? "Batı Adıgece" : "Doğu Kabardeyce"} Sözlükleri`
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/SearchBox.tsx",
-                                        lineNumber: 278,
+                                        lineNumber: 430,
                                         columnNumber: 15
                                     }, this),
                                     (seciliLehce === "TUMU" || seciliLehce === "BATI") && batisozlukleri.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3007,14 +3221,14 @@ function SearchBox({ searchQuery, setSearchQuery, mod, setMod, hedefDil, setHede
                                                 children: "─── Batı Adıgece ───"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/SearchBox.tsx",
-                                                lineNumber: 307,
+                                                lineNumber: 459,
                                                 columnNumber: 19
                                             }, this),
                                             batisozlukleri.map(renderSozlukItem)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/SearchBox.tsx",
-                                        lineNumber: 306,
+                                        lineNumber: 458,
                                         columnNumber: 17
                                     }, this),
                                     (seciliLehce === "TUMU" || seciliLehce === "DOGU") && doguSozlukleri.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3032,32 +3246,32 @@ function SearchBox({ searchQuery, setSearchQuery, mod, setMod, hedefDil, setHede
                                                 children: "─── Doğu Kabardeyce ───"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/SearchBox.tsx",
-                                                lineNumber: 326,
+                                                lineNumber: 478,
                                                 columnNumber: 19
                                             }, this),
                                             doguSozlukleri.map(renderSozlukItem)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/SearchBox.tsx",
-                                        lineNumber: 325,
+                                        lineNumber: 477,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/SearchBox.tsx",
-                                lineNumber: 261,
+                                lineNumber: 413,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/SearchBox.tsx",
-                        lineNumber: 231,
+                        lineNumber: 383,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/SearchBox.tsx",
-                lineNumber: 184,
+                lineNumber: 336,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("fieldset", {
@@ -3077,7 +3291,7 @@ function SearchBox({ searchQuery, setSearchQuery, mod, setMod, hedefDil, setHede
                         children: "Hedef Dil Filtresi:"
                     }, void 0, false, {
                         fileName: "[project]/src/components/SearchBox.tsx",
-                        lineNumber: 349,
+                        lineNumber: 501,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3124,192 +3338,18 @@ function SearchBox({ searchQuery, setSearchQuery, mod, setMod, hedefDil, setHede
                                 children: dil.etiket
                             }, dil.kod, false, {
                                 fileName: "[project]/src/components/SearchBox.tsx",
-                                lineNumber: 367,
+                                lineNumber: 519,
                                 columnNumber: 13
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/src/components/SearchBox.tsx",
-                        lineNumber: 359,
+                        lineNumber: 511,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/SearchBox.tsx",
-                lineNumber: 348,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                style: {
-                    border: `2px solid ${karanlikMod ? "#3D322C" : "#7A1C1C"}`,
-                    borderRadius: "8px",
-                    padding: "12px",
-                    backgroundColor: karanlikMod ? "#26201D" : "#FFFFFF",
-                    boxShadow: karanlikMod ? "0 4px 16px rgba(0, 0, 0, 0.4)" : "0 4px 12px rgba(122, 28, 28, 0.08)",
-                    display: "flex",
-                    flexDirection: "column",
-                    gap: "10px"
-                },
-                children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        style: {
-                            position: "relative",
-                            width: "100%",
-                            minHeight: "56px",
-                            borderRadius: "6px",
-                            border: `1px solid ${tema.kenarlik}`,
-                            backgroundColor: karanlikMod ? "#1A1614" : "#FAFAFA",
-                            display: "flex",
-                            alignItems: "center",
-                            padding: "0 40px 0 14px",
-                            boxSizing: "border-box"
-                        },
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("textarea", {
-                                id: "arama-input",
-                                ref: inputRef,
-                                value: searchQuery,
-                                onChange: (e)=>handleSearchChange(e.target.value),
-                                placeholder: "Kelime veya anlam ara... (/ tuşu ile hızlı odaklanın)",
-                                rows: 1,
-                                style: {
-                                    width: "100%",
-                                    height: "42px",
-                                    maxHeight: 80,
-                                    border: "none",
-                                    outline: "none",
-                                    background: "transparent",
-                                    fontSize: "15px",
-                                    fontWeight: "500",
-                                    color: tema.yaziAna,
-                                    resize: "none",
-                                    padding: "8px 0",
-                                    margin: 0,
-                                    lineHeight: "1.4",
-                                    boxSizing: "border-box"
-                                }
-                            }, void 0, false, {
-                                fileName: "[project]/src/components/SearchBox.tsx",
-                                lineNumber: 422,
-                                columnNumber: 11
-                            }, this),
-                            searchQuery && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                type: "button",
-                                onClick: ()=>{
-                                    handleSearchChange("");
-                                    inputRef.current?.focus();
-                                },
-                                style: {
-                                    position: "absolute",
-                                    right: "12px",
-                                    top: "50%",
-                                    transform: "translateY(-50%)",
-                                    background: "transparent",
-                                    border: "none",
-                                    color: tema.yaziAlt,
-                                    cursor: "pointer",
-                                    fontSize: "16px",
-                                    padding: "4px"
-                                },
-                                children: "✕"
-                            }, void 0, false, {
-                                fileName: "[project]/src/components/SearchBox.tsx",
-                                lineNumber: 447,
-                                columnNumber: 13
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "[project]/src/components/SearchBox.tsx",
-                        lineNumber: 408,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        style: {
-                            display: "flex",
-                            gap: "10px",
-                            alignItems: "stretch",
-                            flexWrap: "wrap"
-                        },
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
-                                value: mod,
-                                onChange: (e)=>setMod(e.target.value),
-                                style: {
-                                    height: "40px",
-                                    padding: "0 14px",
-                                    fontSize: `${metinBoyutu * 0.95}px`,
-                                    fontWeight: "600",
-                                    borderRadius: "8px",
-                                    border: `1.5px solid ${tema.kenarlik}`,
-                                    backgroundColor: tema.inputArkaPlan,
-                                    color: tema.yaziAna,
-                                    cursor: "pointer",
-                                    whiteSpace: "nowrap",
-                                    boxSizing: "border-box",
-                                    display: "inline-flex",
-                                    alignItems: "center"
-                                },
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
-                                        value: "baslayan",
-                                        children: "İle Başlayan"
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/components/SearchBox.tsx",
-                                        lineNumber: 492,
-                                        columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
-                                        value: "icinde",
-                                        children: "İçinde Geçen"
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/components/SearchBox.tsx",
-                                        lineNumber: 493,
-                                        columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
-                                        value: "tam",
-                                        children: "Tam Eşleşen"
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/components/SearchBox.tsx",
-                                        lineNumber: 494,
-                                        columnNumber: 13
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/src/components/SearchBox.tsx",
-                                lineNumber: 473,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                style: {
-                                    display: "inline-flex",
-                                    height: "40px"
-                                },
-                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$AkilliKlavye$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                    inputRef: inputRef,
-                                    sorgu: searchQuery,
-                                    setSorgu: handleSearchChange,
-                                    metinBoyutu: metinBoyutu,
-                                    karanlikMod: karanlikMod
-                                }, void 0, false, {
-                                    fileName: "[project]/src/components/SearchBox.tsx",
-                                    lineNumber: 498,
-                                    columnNumber: 13
-                                }, this)
-                            }, void 0, false, {
-                                fileName: "[project]/src/components/SearchBox.tsx",
-                                lineNumber: 497,
-                                columnNumber: 11
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "[project]/src/components/SearchBox.tsx",
-                        lineNumber: 472,
-                        columnNumber: 9
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "[project]/src/components/SearchBox.tsx",
-                lineNumber: 393,
+                lineNumber: 500,
                 columnNumber: 7
             }, this)
         ]
@@ -3612,7 +3652,7 @@ function SozlukEkrani({ loading, searchQuery, setSearchQuery, seciliLehce, setSe
                             })
                     }, void 0, false, {
                         fileName: "[project]/src/components/SearchBox.tsx",
-                        lineNumber: 748,
+                        lineNumber: 783,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3656,14 +3696,14 @@ function SozlukEkrani({ loading, searchQuery, setSearchQuery, seciliLehce, setSe
                                                 children: "🔍"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/SearchBox.tsx",
-                                                lineNumber: 789,
+                                                lineNumber: 824,
                                                 columnNumber: 15
                                             }, this),
                                             " Sözlükte Kelime Ara"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/SearchBox.tsx",
-                                        lineNumber: 788,
+                                        lineNumber: 823,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3684,21 +3724,21 @@ function SozlukEkrani({ loading, searchQuery, setSearchQuery, seciliLehce, setSe
                                                         children: dinamikSozlukSayisi
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/SearchBox.tsx",
-                                                        lineNumber: 795,
+                                                        lineNumber: 830,
                                                         columnNumber: 17
                                                     }, this),
                                                     " Sözlük"
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/SearchBox.tsx",
-                                                lineNumber: 794,
+                                                lineNumber: 829,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                 children: "•"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/SearchBox.tsx",
-                                                lineNumber: 797,
+                                                lineNumber: 832,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3710,26 +3750,26 @@ function SozlukEkrani({ loading, searchQuery, setSearchQuery, seciliLehce, setSe
                                                         children: dinamikKayitSayisi.toLocaleString("tr-TR")
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/SearchBox.tsx",
-                                                        lineNumber: 799,
+                                                        lineNumber: 834,
                                                         columnNumber: 17
                                                     }, this),
                                                     " Kayıt"
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/SearchBox.tsx",
-                                                lineNumber: 798,
+                                                lineNumber: 833,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/SearchBox.tsx",
-                                        lineNumber: 793,
+                                        lineNumber: 828,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/SearchBox.tsx",
-                                lineNumber: 787,
+                                lineNumber: 822,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(SearchBox, {
@@ -3757,13 +3797,13 @@ function SozlukEkrani({ loading, searchQuery, setSearchQuery, seciliLehce, setSe
                                 setGoruntulenenAdet: setGoruntulenenAdet
                             }, void 0, false, {
                                 fileName: "[project]/src/components/SearchBox.tsx",
-                                lineNumber: 804,
+                                lineNumber: 839,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/SearchBox.tsx",
-                        lineNumber: 772,
+                        lineNumber: 807,
                         columnNumber: 9
                     }, this),
                     searchQuery?.trim() && !loading && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -3782,14 +3822,14 @@ function SozlukEkrani({ loading, searchQuery, setSearchQuery, seciliLehce, setSe
                                 children: gruplanmisSonuclar.length
                             }, void 0, false, {
                                 fileName: "[project]/src/components/SearchBox.tsx",
-                                lineNumber: 833,
+                                lineNumber: 868,
                                 columnNumber: 20
                             }, this),
                             " kelime grubu listeleniyor."
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/SearchBox.tsx",
-                        lineNumber: 832,
+                        lineNumber: 867,
                         columnNumber: 11
                     }, this),
                     loading ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3804,7 +3844,7 @@ function SozlukEkrani({ loading, searchQuery, setSearchQuery, seciliLehce, setSe
                         children: "📖 Sözlük verileri taranıyor..."
                     }, void 0, false, {
                         fileName: "[project]/src/components/SearchBox.tsx",
-                        lineNumber: 839,
+                        lineNumber: 874,
                         columnNumber: 11
                     }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
                         style: {
@@ -3832,7 +3872,7 @@ function SozlukEkrani({ loading, searchQuery, setSearchQuery, seciliLehce, setSe
                                         children: "Aradığınız kelime bulunamadı"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/SearchBox.tsx",
-                                        lineNumber: 854,
+                                        lineNumber: 889,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -3847,13 +3887,13 @@ function SozlukEkrani({ loading, searchQuery, setSearchQuery, seciliLehce, setSe
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/SearchBox.tsx",
-                                        lineNumber: 857,
+                                        lineNumber: 892,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/SearchBox.tsx",
-                                lineNumber: 845,
+                                lineNumber: 880,
                                 columnNumber: 15
                             }, this) : gosterilenGruplar.map((grup, idx)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$KelimeKarti$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                     idx: idx,
@@ -3865,7 +3905,7 @@ function SozlukEkrani({ loading, searchQuery, setSearchQuery, seciliLehce, setSe
                                     onClick: handleKelimeSec
                                 }, `${grup.kelime}-${grup.kaynaklar?.length || 0}-${idx}`, false, {
                                     fileName: "[project]/src/components/SearchBox.tsx",
-                                    lineNumber: 863,
+                                    lineNumber: 898,
                                     columnNumber: 17
                                 }, this)),
                             dahaFazlaVar && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -3889,19 +3929,19 @@ function SozlukEkrani({ loading, searchQuery, setSearchQuery, seciliLehce, setSe
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/SearchBox.tsx",
-                                lineNumber: 877,
+                                lineNumber: 912,
                                 columnNumber: 15
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/SearchBox.tsx",
-                        lineNumber: 843,
+                        lineNumber: 878,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/SearchBox.tsx",
-                lineNumber: 745,
+                lineNumber: 780,
                 columnNumber: 7
             }, this),
             seciliKelimeGrubu && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$KelimeDetayDrawer$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -3911,13 +3951,13 @@ function SozlukEkrani({ loading, searchQuery, setSearchQuery, seciliLehce, setSe
                 metinBoyutu: metinBoyutu
             }, void 0, false, {
                 fileName: "[project]/src/components/SearchBox.tsx",
-                lineNumber: 901,
+                lineNumber: 936,
                 columnNumber: 9
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/SearchBox.tsx",
-        lineNumber: 734,
+        lineNumber: 769,
         columnNumber: 5
     }, this);
 }
@@ -4241,35 +4281,6 @@ function SozlukEkrani({ loading, searchQuery, setSearchQuery, seciliLehce, setSe
                     lineNumber: 259,
                     columnNumber: 9
                 }, this),
-                !searchQuery?.trim() && gununKelimesi && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$GununKelimesiKart$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                    gununKelimesi: {
-                        ...gununKelimesi,
-                        kelime: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$constants$2f$dictionarySources$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["metneCevir"])(gununKelimesi.kelime),
-                        tanim: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$constants$2f$dictionarySources$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["metneCevir"])(gununKelimesi.tanim)
-                    },
-                    karanlikMod: karanlikMod,
-                    metinBoyutu: metinBoyutu,
-                    tema: aktifTema,
-                    onClick: ()=>handleKelimeSec({
-                            kelime: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$constants$2f$dictionarySources$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["metneCevir"])(gununKelimesi.kelime),
-                            dialect: gununKelimesi.dialect,
-                            kaynaklar: [
-                                gununKelimesi
-                            ],
-                            anlamlar: [
-                                {
-                                    tanim: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$constants$2f$dictionarySources$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["metneCevir"])(gununKelimesi.tanim),
-                                    file: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$constants$2f$dictionarySources$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["metneCevir"])(gununKelimesi.file),
-                                    kaynak_sozluk: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$constants$2f$dictionarySources$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["metneCevir"])(gununKelimesi.kaynak_sozluk),
-                                    dialect: gununKelimesi.dialect
-                                }
-                            ]
-                        })
-                }, void 0, false, {
-                    fileName: "[project]/src/components/SozlukEkrani.tsx",
-                    lineNumber: 270,
-                    columnNumber: 11
-                }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     style: {
                         border: `1px solid ${aktifTema.kenarlik}`,
@@ -4306,13 +4317,42 @@ function SozlukEkrani({ loading, searchQuery, setSearchQuery, seciliLehce, setSe
                         setGoruntulenenAdet: setGoruntulenenAdet
                     }, void 0, false, {
                         fileName: "[project]/src/components/SozlukEkrani.tsx",
-                        lineNumber: 304,
+                        lineNumber: 281,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/components/SozlukEkrani.tsx",
-                    lineNumber: 293,
+                    lineNumber: 270,
                     columnNumber: 9
+                }, this),
+                !searchQuery?.trim() && gununKelimesi && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$GununKelimesiKart$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                    gununKelimesi: {
+                        ...gununKelimesi,
+                        kelime: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$constants$2f$dictionarySources$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["metneCevir"])(gununKelimesi.kelime),
+                        tanim: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$constants$2f$dictionarySources$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["metneCevir"])(gununKelimesi.tanim)
+                    },
+                    karanlikMod: karanlikMod,
+                    metinBoyutu: metinBoyutu,
+                    tema: aktifTema,
+                    onClick: ()=>handleKelimeSec({
+                            kelime: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$constants$2f$dictionarySources$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["metneCevir"])(gununKelimesi.kelime),
+                            dialect: gununKelimesi.dialect,
+                            kaynaklar: [
+                                gununKelimesi
+                            ],
+                            anlamlar: [
+                                {
+                                    tanim: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$constants$2f$dictionarySources$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["metneCevir"])(gununKelimesi.tanim),
+                                    file: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$constants$2f$dictionarySources$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["metneCevir"])(gununKelimesi.file),
+                                    kaynak_sozluk: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$constants$2f$dictionarySources$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["metneCevir"])(gununKelimesi.kaynak_sozluk),
+                                    dialect: gununKelimesi.dialect
+                                }
+                            ]
+                        })
+                }, void 0, false, {
+                    fileName: "[project]/src/components/SozlukEkrani.tsx",
+                    lineNumber: 310,
+                    columnNumber: 11
                 }, this),
                 searchQuery?.trim() && !loading && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     style: {
@@ -4337,7 +4377,7 @@ function SozlukEkrani({ loading, searchQuery, setSearchQuery, seciliLehce, setSe
                             children: "SONUÇLAR"
                         }, void 0, false, {
                             fileName: "[project]/src/components/SozlukEkrani.tsx",
-                            lineNumber: 333,
+                            lineNumber: 335,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -4356,20 +4396,20 @@ function SozlukEkrani({ loading, searchQuery, setSearchQuery, seciliLehce, setSe
                                     children: gruplanmisSonuclar.length
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/SozlukEkrani.tsx",
-                                    lineNumber: 337,
+                                    lineNumber: 339,
                                     columnNumber: 22
                                 }, this),
                                 " kelime grubu bulundu."
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/SozlukEkrani.tsx",
-                            lineNumber: 336,
+                            lineNumber: 338,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/SozlukEkrani.tsx",
-                    lineNumber: 332,
+                    lineNumber: 334,
                     columnNumber: 11
                 }, this),
                 loading ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4383,7 +4423,7 @@ function SozlukEkrani({ loading, searchQuery, setSearchQuery, seciliLehce, setSe
                     children: "📖 Sözlük koleksiyonu taranıyor..."
                 }, void 0, false, {
                     fileName: "[project]/src/components/SozlukEkrani.tsx",
-                    lineNumber: 343,
+                    lineNumber: 345,
                     columnNumber: 11
                 }, this) : searchQuery?.trim() && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
                     style: {
@@ -4412,7 +4452,7 @@ function SozlukEkrani({ loading, searchQuery, setSearchQuery, seciliLehce, setSe
                                     children: "Aradığınız kelime bulunamadı"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/SozlukEkrani.tsx",
-                                    lineNumber: 359,
+                                    lineNumber: 361,
                                     columnNumber: 19
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -4427,13 +4467,13 @@ function SozlukEkrani({ loading, searchQuery, setSearchQuery, seciliLehce, setSe
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/SozlukEkrani.tsx",
-                                    lineNumber: 362,
+                                    lineNumber: 364,
                                     columnNumber: 19
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/SozlukEkrani.tsx",
-                            lineNumber: 350,
+                            lineNumber: 352,
                             columnNumber: 17
                         }, this) : gosterilenGruplar.map((grup, idx)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$KelimeKarti$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                 idx: idx,
@@ -4445,7 +4485,7 @@ function SozlukEkrani({ loading, searchQuery, setSearchQuery, seciliLehce, setSe
                                 onClick: handleKelimeSec
                             }, `${grup.kelime}-${grup.kaynaklar?.length || 0}-${idx}`, false, {
                                 fileName: "[project]/src/components/SozlukEkrani.tsx",
-                                lineNumber: 368,
+                                lineNumber: 370,
                                 columnNumber: 19
                             }, this)),
                         dahaFazlaVar && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -4471,13 +4511,13 @@ function SozlukEkrani({ loading, searchQuery, setSearchQuery, seciliLehce, setSe
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/SozlukEkrani.tsx",
-                            lineNumber: 382,
+                            lineNumber: 384,
                             columnNumber: 17
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/SozlukEkrani.tsx",
-                    lineNumber: 348,
+                    lineNumber: 350,
                     columnNumber: 13
                 }, this),
                 seciliKelimeGrubu && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$KelimeDetayDrawer$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -4487,7 +4527,7 @@ function SozlukEkrani({ loading, searchQuery, setSearchQuery, seciliLehce, setSe
                     metinBoyutu: metinBoyutu
                 }, void 0, false, {
                     fileName: "[project]/src/components/SozlukEkrani.tsx",
-                    lineNumber: 407,
+                    lineNumber: 409,
                     columnNumber: 11
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4500,12 +4540,12 @@ function SozlukEkrani({ loading, searchQuery, setSearchQuery, seciliLehce, setSe
                         onKaynaklarAc: ()=>setKaynaklarAcik(true)
                     }, void 0, false, {
                         fileName: "[project]/src/components/SozlukEkrani.tsx",
-                        lineNumber: 416,
+                        lineNumber: 418,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/components/SozlukEkrani.tsx",
-                    lineNumber: 415,
+                    lineNumber: 417,
                     columnNumber: 9
                 }, this),
                 kaynaklarAcik && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4556,23 +4596,23 @@ function SozlukEkrani({ loading, searchQuery, setSearchQuery, seciliLehce, setSe
                                 children: "✕"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/SozlukEkrani.tsx",
-                                lineNumber: 457,
+                                lineNumber: 459,
                                 columnNumber: 15
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Kaynaklar$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                                 fileName: "[project]/src/components/SozlukEkrani.tsx",
-                                lineNumber: 474,
+                                lineNumber: 476,
                                 columnNumber: 15
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/SozlukEkrani.tsx",
-                        lineNumber: 441,
+                        lineNumber: 443,
                         columnNumber: 13
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/components/SozlukEkrani.tsx",
-                    lineNumber: 424,
+                    lineNumber: 426,
                     columnNumber: 11
                 }, this)
             ]

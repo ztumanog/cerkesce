@@ -1,4 +1,6 @@
 {
+  "title": "Блэгъожъ (1991)",
+  "id": 23,
   "words": {
     "абадзехи": {
       "spelling": "абадзехи",
@@ -34760,5 +34762,8 @@
       "type": "",
       "synonyms": []
     }
-  }
+  },
+  "fromLang": "Ru",
+  "toLang": "Ady",
+  "format": "HTML"
 }

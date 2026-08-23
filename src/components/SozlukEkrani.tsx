@@ -266,30 +266,7 @@ export default function SozlukEkrani({
           tema={aktifTema}
         />
 
-        {!searchQuery?.trim() && gununKelimesi && (
-          <GununKelimesiKart
-            gununKelimesi={{
-              ...gununKelimesi,
-              kelime: metneCevir(gununKelimesi.kelime),
-              tanim: metneCevir(gununKelimesi.tanim),
-            }}
-            karanlikMod={karanlikMod}
-            metinBoyutu={metinBoyutu}
-            tema={aktifTema}
-            onClick={() => handleKelimeSec({
-              kelime: metneCevir(gununKelimesi.kelime),
-              dialect: gununKelimesi.dialect,
-              kaynaklar: [gununKelimesi],
-              anlamlar: [{
-                tanim: metneCevir(gununKelimesi.tanim),
-                file: metneCevir(gununKelimesi.file),
-                kaynak_sozluk: metneCevir(gununKelimesi.kaynak_sozluk),
-                dialect: gununKelimesi.dialect,
-              }],
-            })}
-          />
-        )}
-
+        {/* 1. SearchBox Yukarı Alındı */}
         <div 
           style={{
             border: `1px solid ${aktifTema.kenarlik}`,
@@ -327,6 +304,31 @@ export default function SozlukEkrani({
             setGoruntulenenAdet={setGoruntulenenAdet}
           />
         </div>
+
+        {/* 2. Günün Kelimesi Kartı SearchBox Altına Alındı */}
+        {!searchQuery?.trim() && gununKelimesi && (
+          <GununKelimesiKart
+            gununKelimesi={{
+              ...gununKelimesi,
+              kelime: metneCevir(gununKelimesi.kelime),
+              tanim: metneCevir(gununKelimesi.tanim),
+            }}
+            karanlikMod={karanlikMod}
+            metinBoyutu={metinBoyutu}
+            tema={aktifTema}
+            onClick={() => handleKelimeSec({
+              kelime: metneCevir(gununKelimesi.kelime),
+              dialect: gununKelimesi.dialect,
+              kaynaklar: [gununKelimesi],
+              anlamlar: [{
+                tanim: metneCevir(gununKelimesi.tanim),
+                file: metneCevir(gununKelimesi.file),
+                kaynak_sozluk: metneCevir(gununKelimesi.kaynak_sozluk),
+                dialect: gununKelimesi.dialect,
+              }],
+            })}
+          />
+        )}
 
         {searchQuery?.trim() && !loading && (
           <div style={{ display: "flex", alignItems: "center", gap: "8px", margin: "0 0 0 2px" }}>

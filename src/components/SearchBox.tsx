@@ -180,6 +180,158 @@ export function SearchBox({
 
   return (
     <>
+      {/* 🎯 ARAMA KUTUSU */}
+      <div
+        style={{
+          border: `2px solid ${karanlikMod ? "#3D322C" : "#7A1C1C"}`,
+          borderRadius: "8px",
+          padding: "12px",
+          backgroundColor: karanlikMod ? "#26201D" : "#FFFFFF",
+          boxShadow: karanlikMod 
+            ? "0 4px 16px rgba(0, 0, 0, 0.4)" 
+            : "0 4px 12px rgba(122, 28, 28, 0.08)",
+          display: "flex",
+          flexDirection: "column",
+          gap: "10px",
+          marginBottom: "16px"
+        }}
+      >
+        {/* 🔍 ARAMA INPUTU VE SAĞDAKİ BÜYÜTEÇ */}
+        <div
+          style={{
+            position: "relative",
+            width: "100%",
+            minHeight: "56px",
+            borderRadius: "6px",
+            border: `1px solid ${tema.kenarlik}`,
+            backgroundColor: karanlikMod ? "#1A1614" : "#FAFAFA",
+            display: "flex",
+            alignItems: "center",
+            padding: "0 76px 0 14px",
+            boxSizing: "border-box"
+          }}
+        >
+          <textarea
+            id="arama-input"
+            ref={inputRef as unknown as React.RefObject<HTMLTextAreaElement>}
+            value={searchQuery}
+            onChange={(e) => handleSearchChange(e.target.value)}
+            placeholder="Kelime veya anlam ara... (/ tuşu ile hızlı odaklanın)"
+            rows={1}
+            style={{
+              width: "100%",
+              height: "42px",
+              maxHeight: 80,
+              border: "none",
+              outline: "none",
+              background: "transparent",
+              fontSize: "15px",
+              fontWeight: "500",
+              color: tema.yaziAna,
+              resize: "none",
+              padding: "8px 0",
+              margin: 0,
+              lineHeight: "1.4",
+              boxSizing: "border-box"
+            }}
+          />
+
+          {/* SAĞ TARAFTAKİ BUTONLAR (Temizle + Büyüteç) */}
+          <div
+            style={{
+              position: "absolute",
+              right: "10px",
+              top: "50%",
+              transform: "translateY(-50%)",
+              display: "flex",
+              alignItems: "center",
+              gap: "6px"
+            }}
+          >
+            {searchQuery && (
+              <button
+                type="button"
+                onClick={() => {
+                  handleSearchChange("");
+                  (inputRef as unknown as React.RefObject<HTMLTextAreaElement>).current?.focus();
+                }}
+                style={{
+                  background: "transparent",
+                  border: "none",
+                  color: tema.yaziAlt,
+                  cursor: "pointer",
+                  fontSize: "15px",
+                  padding: "4px"
+                }}
+              >
+                ✕
+              </button>
+            )}
+
+            <button
+              type="button"
+              onClick={() => {
+                (inputRef as unknown as React.RefObject<HTMLTextAreaElement>).current?.focus();
+              }}
+              title="Ara"
+              style={{
+                background: KURUMSAL.kirmizi,
+                border: "none",
+                color: "#ffffff",
+                borderRadius: "6px",
+                width: "32px",
+                height: "32px",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                cursor: "pointer",
+                fontSize: "14px",
+                boxShadow: "0 2px 4px rgba(0,0,0,0.1)"
+              }}
+            >
+              🔍
+            </button>
+          </div>
+        </div>
+
+        {/* ALT SATIR: MOD SEÇİMİ VE AKILLI KLAVYE */}
+        <div style={{ display: "flex", gap: "10px", alignItems: "stretch", flexWrap: "wrap" }}>
+          <select
+            value={mod}
+            onChange={(e) => setMod(e.target.value as AramaModu)}
+            style={{
+              height: "40px",
+              padding: "0 14px",
+              fontSize: `${metinBoyutu * 0.95}px`,
+              fontWeight: "600",
+              borderRadius: "8px",
+              border: `1.5px solid ${tema.kenarlik}`,
+              backgroundColor: tema.inputArkaPlan,
+              color: tema.yaziAna,
+              cursor: "pointer",
+              whiteSpace: "nowrap",
+              boxSizing: "border-box",
+              display: "inline-flex",
+              alignItems: "center",
+            }}
+          >
+            <option value="baslayan">İle Başlayan</option>
+            <option value="icinde">İçinde Geçen</option>
+            <option value="tam">Tam Eşleşen</option>
+          </select>
+
+          <div style={{ display: "inline-flex", height: "40px" }}>
+            <AkilliKlavye
+              inputRef={inputRef}
+              sorgu={searchQuery}
+              setSorgu={handleSearchChange}
+              metinBoyutu={metinBoyutu}
+              karanlikMod={karanlikMod}
+            />
+          </div>
+        </div>
+      </div>
+
       {/* LEHÇE VE ÖZEL SÖZLÜK SEÇİCİ */}
       <fieldset style={{ border: "none", padding: 0, margin: "0 0 16px 0" }}>
         <legend
@@ -388,123 +540,6 @@ export function SearchBox({
           ))}
         </div>
       </fieldset>
-
-      {/* 🎯 BORDO ÇERÇEVELİ KUTU (SADECE ARAMA KUTUSU VE BUTONLAR) */}
-      <div
-        style={{
-          border: `2px solid ${karanlikMod ? "#3D322C" : "#7A1C1C"}`,
-          borderRadius: "8px",
-          padding: "12px",
-          backgroundColor: karanlikMod ? "#26201D" : "#FFFFFF",
-          boxShadow: karanlikMod 
-            ? "0 4px 16px rgba(0, 0, 0, 0.4)" 
-            : "0 4px 12px rgba(122, 28, 28, 0.08)",
-          display: "flex",
-          flexDirection: "column",
-          gap: "10px"
-        }}
-      >
-        {/* 🔍 ARAMA INPUTU */}
-        <div
-          style={{
-            position: "relative",
-            width: "100%",
-            minHeight: "56px",
-            borderRadius: "6px",
-            border: `1px solid ${tema.kenarlik}`,
-            backgroundColor: karanlikMod ? "#1A1614" : "#FAFAFA",
-            display: "flex",
-            alignItems: "center",
-            padding: "0 40px 0 14px",
-            boxSizing: "border-box"
-          }}
-        >
-          <textarea
-            id="arama-input"
-            ref={inputRef as unknown as React.RefObject<HTMLTextAreaElement>}
-            value={searchQuery}
-            onChange={(e) => handleSearchChange(e.target.value)}
-            placeholder="Kelime veya anlam ara... (/ tuşu ile hızlı odaklanın)"
-            rows={1}
-            style={{
-              width: "100%",
-              height: "42px",
-              maxHeight: 80,
-              border: "none",
-              outline: "none",
-              background: "transparent",
-              fontSize: "15px",
-              fontWeight: "500",
-              color: tema.yaziAna,
-              resize: "none",
-              padding: "8px 0",
-              margin: 0,
-              lineHeight: "1.4",
-              boxSizing: "border-box"
-            }}
-          />
-          {searchQuery && (
-            <button
-              type="button"
-              onClick={() => {
-                handleSearchChange("");
-                (inputRef as unknown as React.RefObject<HTMLTextAreaElement>).current?.focus();
-              }}
-              style={{
-                position: "absolute",
-                right: "12px",
-                top: "50%",
-                transform: "translateY(-50%)",
-                background: "transparent",
-                border: "none",
-                color: tema.yaziAlt,
-                cursor: "pointer",
-                fontSize: "16px",
-                padding: "4px"
-              }}
-            >
-              ✕
-            </button>
-          )}
-        </div>
-
-        {/* ALT SATIR: MOD SEÇİMİ VE AKILLI KLAVYE */}
-        <div style={{ display: "flex", gap: "10px", alignItems: "stretch", flexWrap: "wrap" }}>
-          <select
-            value={mod}
-            onChange={(e) => setMod(e.target.value as AramaModu)}
-            style={{
-              height: "40px",
-              padding: "0 14px",
-              fontSize: `${metinBoyutu * 0.95}px`,
-              fontWeight: "600",
-              borderRadius: "8px",
-              border: `1.5px solid ${tema.kenarlik}`,
-              backgroundColor: tema.inputArkaPlan,
-              color: tema.yaziAna,
-              cursor: "pointer",
-              whiteSpace: "nowrap",
-              boxSizing: "border-box",
-              display: "inline-flex",
-              alignItems: "center",
-            }}
-          >
-            <option value="baslayan">İle Başlayan</option>
-            <option value="icinde">İçinde Geçen</option>
-            <option value="tam">Tam Eşleşen</option>
-          </select>
-
-          <div style={{ display: "inline-flex", height: "40px" }}>
-            <AkilliKlavye
-              inputRef={inputRef}
-              sorgu={searchQuery}
-              setSorgu={handleSearchChange}
-              metinBoyutu={metinBoyutu}
-              karanlikMod={karanlikMod}
-            />
-          </div>
-        </div>
-      </div>
     </>
   );
 }

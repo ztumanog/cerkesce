@@ -1,4 +1,6 @@
 {
+  "title": "ТӀэшъу (1991)",
+  "id": 29,
   "words": {
     "aba": {
       "spelling": "aba",
@@ -121170,5 +121172,8 @@
       "type": "",
       "synonyms": []
     }
-  }
+  },
+  "fromLang": "Tr",
+  "toLang": "Ady",
+  "format": "HTML"
 }
