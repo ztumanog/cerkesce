@@ -1,12 +1,14 @@
 "use client";
 
 import React, { useEffect, useRef } from "react";
-import Image from "next/image";
-import { GruplanmisKelime } from "@/types/dictionary";
-import { tanimlariBicimlendir, kaynagiDuzenle, type TemaTipi } from "@/utils/helpers";
+import type { GruplanmisKelime } from "@/types/dictionary";
+import type { TemaTipi } from "@/utils/helpers";
+import { metneCevir, kaynagiDuzenle } from "@/utils/helpers";
+
+const KURUMSAL_KIRMIZI = "#FF4030";
 
 interface KelimeDetayDrawerProps {
-  seciliKelime: GruplanmisKelime | null;
+  seciliKelime: GruplanmisKelime;
   kapat: () => void;
   tema: TemaTipi;
   metinBoyutu: number;
@@ -19,150 +21,167 @@ export default function KelimeDetayDrawer({
   metinBoyutu,
 }: KelimeDetayDrawerProps) {
   const drawerRef = useRef<HTMLDivElement>(null);
+  const kapatBtnRef = useRef<HTMLButtonElement>(null);
 
-  // ESC tuşu ile kapatma
+  // Eski page.tsx'teki Klavye ve Odak Yönetimi Logic'i
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === "Escape") kapat();
+      if (e.key === "Escape") {
+        kapat();
+        return;
+      }
+
+      if (e.key === "Tab" && drawerRef.current) {
+        const odaklanabilir = drawerRef.current.querySelectorAll<HTMLElement>(
+          'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
+        );
+        if (odaklanabilir.length === 0) return;
+
+        const ilk = odaklanabilir[0];
+        const son = odaklanabilir[odaklanabilir.length - 1];
+
+        if (e.shiftKey && document.activeElement === ilk) {
+          e.preventDefault();
+          son.focus();
+        } else if (!e.shiftKey && document.activeElement === son) {
+          e.preventDefault();
+          ilk.focus();
+        }
+      }
     };
+
     window.addEventListener("keydown", handleKeyDown);
+    setTimeout(() => kapatBtnRef.current?.focus(), 50);
+
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, [kapat]);
 
-  if (!seciliKelime) return null;
-
-  // Veri güvenliği: kaynaklar veya anlamlar dizisinden hangisi doluysa onu kullan
-  const detayListesi =
+  // Kaynak listesi (Eski yapıdaki kaynaklar veya anlamlar dizisi)
+  const kaynakListesi =
     seciliKelime.kaynaklar && seciliKelime.kaynaklar.length > 0
       ? seciliKelime.kaynaklar
-      : seciliKelime.anlamlar && seciliKelime.anlamlar.length > 0
-      ? seciliKelime.anlamlar
-      : [];
+      : seciliKelime.anlamlar || [];
 
   return (
-    <div
-      className="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm flex justify-end transition-opacity"
-      onClick={kapat}
-      role="dialog"
-      aria-modal="true"
-    >
+    <div role="dialog" aria-modal="true" aria-labelledby="drawer-title">
+      {/* Karartma Arka Planı (Backdrop) */}
+      <div
+        onClick={kapat}
+        aria-hidden="true"
+        style={{
+          position: "fixed",
+          inset: 0,
+          background: "rgba(0,0,0,0.6)",
+          backdropFilter: "blur(2px)",
+          zIndex: 9998,
+        }}
+      />
+
+      {/* Drawer Sabit Paneli */}
       <div
         ref={drawerRef}
-        className="w-full max-w-md h-full p-6 overflow-y-auto shadow-2xl flex flex-col"
-        style={{ backgroundColor: tema.kartArkaPlan }}
-        onClick={(e) => e.stopPropagation()} // İçeriğe tıklanınca kapanmasını önler
+        style={{
+          position: "fixed",
+          top: 0,
+          right: 0,
+          width: "520px",
+          maxWidth: "92%",
+          height: "100vh",
+          backgroundColor: tema.kartArkaPlan,
+          color: tema.yaziAna,
+          zIndex: 9999,
+          boxShadow: "-4px 0 20px rgba(0,0,0,0.2)",
+          display: "flex",
+          flexDirection: "column",
+          overflowY: "auto",
+          padding: "24px",
+          boxSizing: "border-box",
+        }}
       >
-        {/* Üst Başlık & Kapat Butonu */}
-        <header
-          className="flex justify-between items-start mb-6 pb-4 border-b"
-          style={{ borderColor: tema.kenarlik }}
+        {/* Header */}
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+            marginBottom: "20px",
+            borderBottom: `1px solid ${tema.kenarlik}`,
+            paddingBottom: "12px",
+          }}
         >
-          <div>
-            <h2
-              style={{
-                color: tema.yaziAna,
-                margin: 0,
-                fontSize: `${metinBoyutu * 1.4}px`,
-                fontWeight: "bold",
-              }}
-            >
-              {seciliKelime.kelime}
-            </h2>
-            <span
-              className="text-xs font-semibold px-2 py-0.5 rounded mt-1 inline-block"
-              style={{
-                backgroundColor: tema.kenarlik,
-                color: tema.yaziAlt,
-              }}
-            >
-              {detayListesi.length} farklı tanım/kaynak
-            </span>
-          </div>
-
-          <button
-            type="button"
-            onClick={kapat}
-            className="px-3 py-1.5 rounded-lg border text-xs font-bold transition-all hover:opacity-80"
+          <h2
+            id="drawer-title"
             style={{
-              borderColor: tema.kenarlik,
+              margin: 0,
+              fontSize: `${metinBoyutu * 1.4}px`,
               color: tema.yaziAna,
-              backgroundColor: tema.arkaPlan,
+              fontWeight: "bold",
             }}
           >
-            ✕ Kapat
+            {metneCevir(seciliKelime.kelime)}
+          </h2>
+          <button
+            ref={kapatBtnRef}
+            onClick={kapat}
+            aria-label="Detay panelini kapat"
+            style={{
+              background: "transparent",
+              border: "none",
+              fontSize: "20px",
+              cursor: "pointer",
+              color: tema.yaziAlt,
+              padding: "4px 8px",
+            }}
+          >
+            ✕
           </button>
-        </header>
-
-        {/* Tanımlar Listesi */}
-        <div className="flex-1 space-y-6">
-          {detayListesi.length === 0 ? (
-            <p style={{ color: tema.yaziAlt }}>Bu kelime için tanım detayı bulunamadı.</p>
-          ) : (
-            detayListesi.map((item: any, index: number) => {
-              // Farklı JSON key olasılıklarını yakala
-              const tanimMetni =
-                item.tanim ||
-                item.meaning ||
-                item.full_definition_in_html ||
-                "";
-
-              const dosya =
-                item.file ||
-                item.kaynak_sozluk ||
-                item.dictionaryName ||
-                "";
-
-              const kaynakIsmi = kaynagiDuzenle(dosya);
-
-              return (
-                <article
-                  key={index}
-                  className="pb-5 border-b last:border-0 space-y-2"
-                  style={{ borderColor: tema.kenarlik }}
-                >
-                  {kaynakIsmi && (
-                    <div className="flex items-center gap-1.5">
-                      <span
-                        className="text-[11px] font-bold px-2 py-0.5 rounded"
-                        style={{
-                          backgroundColor: "#FFC60422",
-                          color: tema.yaziAna,
-                          border: "1px solid #FFC604aa",
-                        }}
-                      >
-                        📚 {kaynakIsmi}
-                      </span>
-                    </div>
-                  )}
-
-                  <div className="text-sm leading-relaxed" style={{ color: tema.yaziAna }}>
-                    {tanimlariBicimlendir(
-                      tanimMetni,
-                      tema,
-                      seciliKelime.kelime,
-                      metinBoyutu,
-                      kaynakIsmi
-                    )}
-                  </div>
-                </article>
-              );
-            })
-          )}
         </div>
 
-        {/* Alt Kurumsal İmza */}
-        <footer
-          className="mt-8 pt-4 border-t flex justify-end opacity-90"
-          style={{ borderColor: tema.kenarlik }}
-        >
-          <Image
-            src="/imza.png"
-            alt="Açık Mektep Kurumsal İmza"
-            width={120}
-            height={40}
-            className="object-contain"
-          />
-        </footer>
+        {/* Kaynaklar / Tanımlar Listesi */}
+        <div style={{ flex: 1, display: "flex", flexDirection: "column", gap: "16px" }}>
+          {kaynakListesi.map((kaynak: any, idx: number) => {
+            const dosyaAdi =
+              kaynak.kaynak_sozluk || kaynak.file || kaynak.kaynak;
+
+            const tanim = metneCevir(
+              kaynak.tanim || kaynak.anlam || kaynak.meaning || kaynak.full_definition_in_html
+            );
+
+            return (
+              <div
+                key={idx}
+                style={{
+                  padding: "16px",
+                  borderRadius: "8px",
+                  backgroundColor: tema.inputArkaPlan,
+                  border: `1px solid ${tema.kenarlik}`,
+                }}
+              >
+                {dosyaAdi && (
+                  <div
+                    style={{
+                      fontSize: `${metinBoyutu * 0.85}px`,
+                      fontWeight: "bold",
+                      color: KURUMSAL_KIRMIZI,
+                      marginBottom: "6px",
+                    }}
+                  >
+                    📚 {kaynagiDuzenle(metneCevir(dosyaAdi))}
+                  </div>
+                )}
+                
+                <div
+                  style={{
+                    color: tema.yaziAna,
+                    fontSize: `${metinBoyutu * 0.95}px`,
+                    lineHeight: "1.6",
+                  }}
+                  dangerouslySetInnerHTML={{ __html: tanim }}
+                />
+              </div>
+            );
+          })}
+        </div>
       </div>
     </div>
   );

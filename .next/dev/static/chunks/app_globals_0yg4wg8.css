@@ -1,20 +1,8 @@
 /* [project]/app/globals.css [app-client] (css) */
-:root {
-  --background: #fff;
-  --foreground: #171717;
-}
+@tailwind base;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+@tailwind components;
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: system-ui, -apple-system, sans-serif;
-}
+@tailwind utilities;
 
 /*# sourceMappingURL=app_globals_0yg4wg8.css.map*/

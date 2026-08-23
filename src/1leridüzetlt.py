@@ -1,38 +1,56 @@
-import os
 import json
+import re
+import os
 
-PUBLIC_DIR = "./public"
-DATA_DIR = os.path.join(PUBLIC_DIR, "data")
-DATA1_DIR = os.path.join(PUBLIC_DIR, "data1")
-DICT_JSON = os.path.join(DATA_DIR, "dictionaries.json")
-
-def index_dosyasini_duzelt():
-    if not os.path.exists(DICT_JSON):
-        print("❌ 'public/data/dictionaries.json' bulunamadı!")
-        return
-
-    # dictionaries.json içeriğini oku
-    with open(DICT_JSON, "r", encoding="utf-8") as f:
-        icerik = f.read()
-
-    # İletilen tüm boşluk ve palochka hatalarını direkt temizle
-    yeni_icerik = icerik.replace(" 10.En", "10.En") \
-                        .replace(" 12.En", "12.En") \
-                        .replace(" 13.Kbd", "13.Kbd") \
-                        .replace(" 14.Kbd", "14.Kbd") \
-                        .replace(" 15.Kbd", "15.Kbd") \
-                        .replace(" 16.Kbd", "16.Kbd") \
-                        .replace(" 17.Kbd", "17.Kbd") \
-                        .replace(" 18.Kbd", "18.Kbd") \
-                        .replace(" 19.Kbd", "19.Kbd") \
-                        .replace("32.Rus-Kbd_Nalchik_20 13", "32.Rus-Kbd_Nalchik_2013") \
-                        .replace("33.Ady-Rus- 1960", "33.Ady-Rus-1960") \
-                        .replace("3ӏ.", "31.")
-
-    with open(DICT_JSON, "w", encoding="utf-8") as f:
-        f.write(yeni_icerik)
+def metin_duzelt(text):
+    if not isinstance(text, str):
+        return text
     
-    print("✅ 'dictionaries.json' içindeki tüm bozuk dosya yolları temizlendi!")
+    # Kelimenin BAŞINDAKİ '1' rakamlarını yakalar (örn: 1агъоу -> Ӏагъоу, 1абыр -> Ӏабыр)
+    text = re.sub(r'1(?=[а-яА-Яа-эА-ЭӀӏa-zA-Z])', 'Ӏ', text)
+    
+    # Kelimenin SONUNDAKİ '1' rakamlarını yakalar (örn: Ӏорыш1 -> ӀорышӀ)
+    text = re.sub(r'(?<=[а-яА-Яа-эА-ЭӀӏa-zA-Z])1', 'Ӏ', text)
+    
+    # Kelimenin ORTASINDAKİ '1' rakamlarını yakalar (örn: п1аб -> пӀаб)
+    text = re.sub(r'(?<=[а-яА-Яа-эА-ЭӀӏa-zA-Z])1(?=[а-яА-Яа-эА-ЭӀӏa-zA-Z])', 'Ӏ', text)
+    
+    return text
 
-if __name__ == "__main__":
-    index_dosyasini_duzelt()
+def obj_tara(obj):
+    if isinstance(obj, dict):
+        return {k: obj_tara(v) for k, v in obj.items()}
+    elif isinstance(obj, list):
+        return [obj_tara(elem) for elem in obj]
+    elif isinstance(obj, str):
+        return metin_duzelt(obj)
+    return obj
+
+def tum_jsonlari_temizle(baslangic_klasoru):
+    bulunan_sayi = 0
+    for kok, klasorler, dosyalar in os.walk(baslangic_klasoru):
+        for dosya in dosyalar:
+            # Sadece sözlük JSON verilerini tara (package.json vs. atla)
+            if dosya.endswith('.json') and not dosya.endswith('package.json') and not dosya.endswith('tsconfig.json'):
+                dosya_yolu = os.path.join(kok, dosya)
+                
+                try:
+                    with open(dosya_yolu, 'r', encoding='utf-8') as f:
+                        data = json.load(f)
+
+                    temiz_data = obj_tara(data)
+
+                    # Dosya adını ve yapısını bozmadan üzerine yaz
+                    with open(dosya_yolu, 'w', encoding='utf-8') as f:
+                        json.dump(temiz_data, f, ensure_ascii=False, indent=2)
+
+                    print(f"✅ Başarıyla Temizlendi: {dosya}")
+                    bulunan_sayi += 1
+                except Exception as e:
+                    print(f"⚠️ Atlandı ({dosya}): {e}")
+
+    print(f"\n🚀 İŞLEM TAMAM! Toplam {bulunan_sayi} JSON dosyasındaki tüm '1'ler 'Ӏ' yapıldı.")
+
+# Projenin ana klasörünü otomatik bulur ve tarar
+proje_dizini = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+tum_jsonlari_temizle(proje_dizini)

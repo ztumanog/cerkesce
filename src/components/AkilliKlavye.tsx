@@ -7,7 +7,7 @@ import { CERKES_OZEL_HARFLER } from '@/constants/alphabet';
 export type KlavyeDili = 'cerkes' | 'tr' | 'ru' | 'en' | 'ar';
 
 interface AkilliKlavyeProps {
-  inputRef: React.RefObject<HTMLInputElement | null>;
+  inputRef: React.RefObject<HTMLInputElement | HTMLTextAreaElement | null>;
   sorgu: string;
   setSorgu: (yeniSorgu: string | ((prev: string) => string)) => void;
   metinBoyutu?: number;
@@ -17,7 +17,7 @@ interface AkilliKlavyeProps {
 const KLAVYE_DUZENLERI: Record<KlavyeDili, { etiket: string; tuslar: readonly string[] }> = {
   cerkes: {
     etiket: '🟢 Çerkesçe',
-    tuslar: CERKES_OZEL_HARFLER
+    tuslar: CERKES_OZEL_HARFLER || []
   },
   tr: {
     etiket: '🇹🇷 Türkçe',
@@ -39,7 +39,7 @@ const KLAVYE_DUZENLERI: Record<KlavyeDili, { etiket: string; tuslar: readonly st
 
 export default function AkilliKlavye({ 
   inputRef, 
-  sorgu, 
+  sorgu = "", 
   setSorgu, 
   metinBoyutu = 16, 
   karanlikMod = false 
@@ -48,35 +48,56 @@ export default function AkilliKlavye({
   const [aktifDil, setAktifDil] = useState<KlavyeDili>('cerkes');
 
   useEffect(() => {
-    const kayitliDil = localStorage.getItem('aktifKlavye') as KlavyeDili;
-    if (kayitliDil && KLAVYE_DUZENLERI[kayitliDil]) {
-      setAktifDil(kayitliDil);
+    try {
+      const kayitliDil = localStorage.getItem('aktifKlavye') as KlavyeDili;
+      if (kayitliDil && KLAVYE_DUZENLERI[kayitliDil]) {
+        setAktifDil(kayitliDil);
+      }
+    } catch (e) {
+      // localStorage engeli varsa es geç
     }
   }, []);
 
-  const dilDegistir = (dil: KlavyeDili) => {
+  const dilDegistir = (e: React.MouseEvent, dil: KlavyeDili) => {
+    e.preventDefault();
+    e.stopPropagation();
     setAktifDil(dil);
-    localStorage.setItem('aktifKlavye', dil);
+    try {
+      localStorage.setItem('aktifKlavye', dil);
+    } catch (err) {}
   };
 
   const harfEkle = (harf: string) => {
-    const input = inputRef.current;
-    
-    if (!input) {
-      setSorgu((prev) => prev + harf);
-      return;
+    const input = inputRef?.current;
+
+    if (input) {
+      const baslangic = input.selectionStart ?? input.value.length;
+      const bitis = input.selectionEnd ?? input.value.length;
+      
+      const eskiDeger = input.value || "";
+      const yeniDeger = eskiDeger.substring(0, baslangic) + harf + eskiDeger.substring(bitis);
+      
+      const proto = input instanceof HTMLTextAreaElement ? HTMLTextAreaElement.prototype : HTMLInputElement.prototype;
+      const nativeInputValueSetter = Object.getOwnPropertyDescriptor(proto, "value")?.set;
+      
+      if (nativeInputValueSetter) {
+        nativeInputValueSetter.call(input, yeniDeger);
+      } else {
+        input.value = yeniDeger;
+      }
+
+      input.dispatchEvent(new Event("input", { bubbles: true }));
+      input.dispatchEvent(new Event("change", { bubbles: true }));
+
+      setSorgu(yeniDeger);
+
+      setTimeout(() => {
+        input.focus();
+        input.setSelectionRange(baslangic + harf.length, baslangic + harf.length);
+      }, 0);
+    } else {
+      setSorgu((prev) => (prev || "") + harf);
     }
-
-    const baslangic = input.selectionStart ?? sorgu.length;
-    const bitis = input.selectionEnd ?? sorgu.length;
-
-    const yeniMetin = sorgu.substring(0, baslangic) + harf + sorgu.substring(bitis);
-    setSorgu(yeniMetin);
-
-    setTimeout(() => {
-      input.focus();
-      input.setSelectionRange(baslangic + harf.length, baslangic + harf.length);
-    }, 0);
   };
 
   const kirmiziRenk = KURUMSAL?.kirmizi || '#FF4030';
@@ -84,8 +105,10 @@ export default function AkilliKlavye({
   const kenarlik = karanlikMod ? '#475569' : '#cbd5e1';
   const yaziRengi = karanlikMod ? '#f8fafc' : '#0f172a';
 
+  const mevcutTuslar = KLAVYE_DUZENLERI[aktifDil]?.tuslar || [];
+
   return (
-    <div style={{ marginBottom: '16px', textAlign: 'left' }}>
+    <div style={{ position: 'relative', width: '100%', marginBottom: '16px', textAlign: 'left', zIndex: 40 }}>
       <button
         type="button"
         onClick={() => setAcik((prev) => !prev)}
@@ -116,36 +139,44 @@ export default function AkilliKlavye({
             borderRadius: '8px',
             border: `1px solid ${kenarlik}`,
             backgroundColor: arkaPlan,
-            boxShadow: '0 4px 6px -1px rgba(0,0,0,0.1)'
+            boxShadow: '0 4px 12px rgba(0,0,0,0.15)',
+            width: '100%',
+            boxSizing: 'border-box'
           }}
         >
+          {/* Dil Sekmeleri */}
           <div style={{ display: 'flex', gap: '6px', overflowX: 'auto', paddingBottom: '10px', marginBottom: '12px' }}>
-            {(Object.keys(KLAVYE_DUZENLERI) as KlavyeDili[]).map((dilKey) => (
-              <button
-                key={dilKey}
-                type="button"
-                onClick={() => dilDegistir(dilKey)}
-                style={{
-                  padding: '6px 12px',
-                  borderRadius: '16px',
-                  border: `1px solid ${aktifDil === dilKey ? kirmiziRenk : kenarlik}`,
-                  backgroundColor: aktifDil === dilKey ? kirmiziRenk : 'transparent',
-                  color: aktifDil === dilKey ? '#ffffff' : yaziRengi,
-                  fontSize: `${metinBoyutu * 0.8}px`,
-                  cursor: 'pointer',
-                  whiteSpace: 'nowrap',
-                  fontWeight: aktifDil === dilKey ? 'bold' : 'normal'
-                }}
-              >
-                {KLAVYE_DUZENLERI[dilKey].etiket}
-              </button>
-            ))}
+            {(Object.keys(KLAVYE_DUZENLERI) as KlavyeDili[]).map((dilKey) => {
+              const isSelected = aktifDil === dilKey;
+              return (
+                <button
+                  key={dilKey}
+                  type="button"
+                  onClick={(e) => dilDegistir(e, dilKey)}
+                  style={{
+                    padding: '6px 12px',
+                    borderRadius: '16px',
+                    border: `1px solid ${isSelected ? kirmiziRenk : kenarlik}`,
+                    backgroundColor: isSelected ? kirmiziRenk : (karanlikMod ? '#0f172a' : '#f8fafc'),
+                    color: isSelected ? '#ffffff' : yaziRengi,
+                    fontSize: `${metinBoyutu * 0.8}px`,
+                    cursor: 'pointer',
+                    whiteSpace: 'nowrap',
+                    fontWeight: isSelected ? 'bold' : 'normal',
+                    transition: 'all 0.2s ease'
+                  }}
+                >
+                  {KLAVYE_DUZENLERI[dilKey].etiket}
+                </button>
+              );
+            })}
           </div>
 
+          {/* Harf Tuşları */}
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px' }}>
-            {KLAVYE_DUZENLERI[aktifDil].tuslar.map((harf, idx) => (
+            {mevcutTuslar.map((harf, idx) => (
               <button
-                key={idx}
+                key={`${aktifDil}-${harf}-${idx}`}
                 type="button"
                 onMouseDown={(e) => e.preventDefault()}
                 onClick={() => harfEkle(harf)}

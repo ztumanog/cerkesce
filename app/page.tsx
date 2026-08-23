@@ -8,18 +8,20 @@ export default function Home() {
   const dictionary = useDictionary();
 
   return (
-    <SozlukEkrani
-      loading={dictionary.loading}
-      searchQuery={dictionary.searchQuery}
-      setSearchQuery={dictionary.setSearchQuery}
-      seciliLehce={dictionary.seciliLehce}
-      setSeciliLehce={dictionary.setSeciliLehce}
-      seciliDosya={dictionary.seciliDosya}
-      setSeciliDosya={dictionary.setSeciliDosya}
-      gununKelimesi={dictionary.gununKelimesi}
-      filtrelenmisSonuclar={dictionary.filtrelenmisSonuclar}
-      aktifSozlukler={dictionary.aktifSozlukler}
-      wordsCount={dictionary.wordsCount || 428679}
-    />
+    <main className="min-h-screen">
+      <SozlukEkrani
+        loading={dictionary.loading}
+        searchQuery={dictionary.searchQuery}
+        setSearchQuery={dictionary.setSearchQuery}
+        seciliLehce={dictionary.seciliLehce}
+        setSeciliLehce={dictionary.setSeciliLehce}
+        seciliDosya={dictionary.seciliDosya}
+        setSeciliDosya={dictionary.setSeciliDosya}
+        gununKelimesi={dictionary.gununKelimesi}
+        filtrelenmisSonuclar={dictionary.filtrelenmisSonuclar}
+        aktifSozlukler={dictionary.aktifSozlukler}
+        wordsCount={dictionary.wordsCount || 428679}
+      />
+    </main>
   );
 }

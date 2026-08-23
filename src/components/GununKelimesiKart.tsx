@@ -25,8 +25,7 @@ export default function GununKelimesiKarti({
 }: GununKelimesiKartiProps) {
   if (!gununKelimesi) return null;
 
-  // Veri İşleme Öncelik Hiyerarşisi: 
-  // 1. definitions[].meaning -> 2. full_definition_in_html -> 3. tanim / meaning
+  // Veri İşleme Öncelik Hiyerarşisi
   const tanimMetni =
     gununKelimesi.definitions?.[0]?.meaning ||
     gununKelimesi.full_definition_in_html ||
@@ -34,7 +33,10 @@ export default function GununKelimesiKarti({
     gununKelimesi.meaning ||
     "";
 
-  const arkaPlanRengi = karanlikMod ? "#1e293b" : KURUMSAL.kirmiziAcik;
+  // Kaynaklar.tsx Renk Mimarisi
+  const arkaPlanRengi = karanlikMod ? "#1F1A17" : "#FFFFFF";
+  const kenarlikRengi = karanlikMod ? "#3D322C" : "#EADDC9";
+  const bordoRenk = KURUMSAL.kirmizi || "#7A1C1C";
   const isBatil = gununKelimesi.dialect === "BATI";
 
   // 1. Kaynak verisini güvenli şekilde al
@@ -53,7 +55,7 @@ export default function GununKelimesiKarti({
     ? gununKelimesi.file 
     : kaynakStr;
 
-  // 3. Metadata haritası veya yedek fonksiyondan kesin olarak string isim üret
+  // 3. Metadata haritası veya yedek fonksiyondan isim üret
   const metaObj = dosyaAdi ? (SOZLUK_META[dosyaAdi] as YerelSozlukMeta | undefined) : undefined;
 
   let kaynakIsmi = "";
@@ -83,61 +85,87 @@ export default function GununKelimesiKarti({
         }
       }}
       style={{
-        padding: "16px 20px",
+        width: "100%",
+        boxSizing: "border-box",
+        padding: "18px 20px",
         backgroundColor: arkaPlanRengi,
-        borderLeft: `5px solid ${KURUMSAL.kirmizi}`,
-        borderRadius: "8px",
-        marginBottom: "20px",
-        boxShadow: "0 2px 6px rgba(0,0,0,0.05)",
+        borderLeft: `4px solid ${bordoRenk}`,
+        borderTop: `1px solid ${kenarlikRengi}`,
+        borderRight: `1px solid ${kenarlikRengi}`,
+        borderBottom: `1px solid ${kenarlikRengi}`,
+        borderRadius: "3px",
+        marginBottom: "16px",
+        boxShadow: "0 2px 5px rgba(0,0,0,0.02)",
         cursor: "pointer",
         textAlign: "left",
+        fontFamily: "'IBM Plex Sans', sans-serif",
+        transition: "all 0.15s ease",
       }}
-      className="transition-shadow duration-200 hover:shadow-md focus:outline-none focus:ring-2 focus:ring-red-500"
+      className="hover:border-amber-700/30 focus:outline-none focus:ring-1 focus:ring-amber-900/20"
       role="button"
       tabIndex={0}
       aria-label="Günün kelimesi detaylarını aç"
     >
-      <div className="flex items-center justify-between">
+      {/* Üst Etiket Satırı ve Diyalekt Rozeti */}
+      <div className="flex items-center justify-between" style={{ marginBottom: "10px" }}>
         <span
           style={{
-            color: KURUMSAL.kirmizi,
-            fontSize: `${metinBoyutu * 0.85}px`,
+            color: bordoRenk,
+            fontSize: `${Math.max(11, metinBoyutu * 0.75)}px`,
+            letterSpacing: "1.5px",
+            fontWeight: "bold",
+            textTransform: "uppercase",
           }}
-          className="font-bold uppercase tracking-wider"
         >
-          🌟 Günün Kelimesi
+          ✨ Günün Kelimesi
         </span>
+
         {gununKelimesi.dialect && (
           <span
             style={{
-              fontSize: `${metinBoyutu * 0.75}px`,
-              color: isBatil ? "#16a34a" : "#2563eb",
-              backgroundColor: isBatil ? "#16a34a15" : "#2563eb15",
+              fontSize: `${Math.max(10, metinBoyutu * 0.70)}px`,
+              fontWeight: "bold",
+              color: isBatil ? bordoRenk : "#A37015",
+              backgroundColor: isBatil
+                ? (karanlikMod ? "#2C221E" : "#FDF2F2")
+                : (karanlikMod ? "#2A2419" : "#FCF8ED"),
+              border: `1px solid ${isBatil
+                ? (karanlikMod ? "#3D322C" : "#F4C7C7")
+                : (karanlikMod ? "#4A3E26" : "#E2C997")}`,
+              padding: "2px 6px",
+              borderRadius: "2px",
+              textTransform: "uppercase",
             }}
-            className="rounded-full px-2 py-0.5 font-bold"
           >
-            {isBatil ? "Batı Adıgece" : "Doğu Kabardeyce"}
+            {isBatil ? "🟢 BATI ADIGECE" : "🔵 DOĞU KABARDEYCE"}
           </span>
         )}
       </div>
 
+      {/* Başlık (Kelime) */}
       <div
         style={{
-          fontSize: `${metinBoyutu * 1.25}px`,
+          fontSize: `${metinBoyutu * 1.3}px`,
           color: tema.yaziAna,
+          fontFamily: "serif",
+          fontWeight: "bold",
+          lineHeight: "1.3",
+          marginBottom: "6px",
         }}
-        className="mt-1 font-bold"
       >
         {gununKelimesi.kelime}
       </div>
 
-      {tanimlariBicimlendir(
-        tanimMetni,
-        tema,
-        gununKelimesi.kelime,
-        metinBoyutu,
-        kaynakIsmi
-      )}
+      {/* Tanım İçeriği */}
+      <div style={{ fontSize: `${metinBoyutu * 0.9}px`, color: karanlikMod ? "#D0C4B8" : "#4A3E37" }}>
+        {tanimlariBicimlendir(
+          tanimMetni,
+          tema,
+          gununKelimesi.kelime,
+          metinBoyutu,
+          kaynakIsmi
+        )}
+      </div>
     </div>
   );
 }

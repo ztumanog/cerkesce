@@ -22,9 +22,23 @@ export default function KelimeKarti({
   panoyaKopyala,
   onClick
 }: KelimeKartiProps) {
-  // kaynaklar veya anlamlar dizisinden güvenle ilk elemanı alıyoruz
+  // Obje olarak gelen verileri güvenle metne çeviren yardımcı fonksiyon
+  const metneCevir = (deger: any): string => {
+    if (!deger) return "";
+    if (typeof deger === "string") return deger;
+    if (typeof deger === "number") return String(deger);
+    if (typeof deger === "object") {
+      return deger.name || deger.dilCifti || deger.yazar || JSON.stringify(deger);
+    }
+    return String(deger);
+  };
+
   const ilkKaynak = grup.kaynaklar?.[0] || grup.anlamlar?.[0];
-  const dosyaVeyaSozluk = ilkKaynak?.file || ilkKaynak?.kaynak_sozluk || ilkKaynak?.dictionaryName;
+  
+  // Nesne gelme ihtimaline karşı metneCevir ile güvenli hale getirildi
+  const kelimeMetni = metneCevir(grup.kelime);
+  const tanimMetni = metneCevir(ilkKaynak?.tanim);
+  const dosyaVeyaSozluk = metneCevir(ilkKaynak?.file || ilkKaynak?.kaynak_sozluk || (ilkKaynak as any)?.dictionaryName);
 
   const handleKeyDown = (e: React.KeyboardEvent) => {
     if (e.key === "Enter" || e.key === " ") {
@@ -49,17 +63,17 @@ export default function KelimeKarti({
       onMouseOut={(e) => (e.currentTarget.style.borderColor = tema.kenarlik)}
       role="article"
       tabIndex={0}
-      aria-label={`${grup.kelime} kelimesi detayları`}
+      aria-label={`${kelimeMetni} kelimesi detayları`}
     >
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
         <h3 style={{ margin: 0, fontSize: `${metinBoyutu * 1.1}px`, color: tema.yaziAna }}>
-          {grup.kelime}
+          {kelimeMetni}
         </h3>
         
         <button 
           onClick={(e) => { 
             e.stopPropagation();
-            panoyaKopyala(grup.kelime, ilkKaynak?.tanim, `g-${idx}`); 
+            panoyaKopyala(kelimeMetni, tanimMetni, `g-${idx}`); 
           }}
           style={{ 
             padding: "4px 8px", 
@@ -78,9 +92,9 @@ export default function KelimeKarti({
       </div>
       
       {tanimlariBicimlendir(
-        ilkKaynak?.tanim || "", 
+        tanimMetni, 
         tema, 
-        grup.kelime, 
+        kelimeMetni, 
         metinBoyutu, 
         kaynagiDuzenle(dosyaVeyaSozluk)
       )}

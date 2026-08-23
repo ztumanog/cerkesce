@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///E:/projeler/Cerkesce/app/page.tsx"],"sourcesContent":["// @/components/sozluk/SozlukEkrani.tsx\r\n'use client';\r\n\r\nimport { SozlukEkraniProps } from '@/types/dictionary';\r\nexport const SozlukEkrani = ({\r\n  seciliLehce,\r\n  setSeciliLehce,\r\n  searchQuery,\r\n  setSearchQuery,\r\n}: SozlukEkraniProps) => {\r\n  return (\r\n    <div className=\"flex flex-col gap-4\">\r\n      {/* Arama ve Lehce Secimi UI */}\r\n    </div>\r\n  );\r\n};"],"names":["SozlukEkrani","seciliLehce","setSeciliLehce","searchQuery","setSearchQuery","className"],"mappings":";;;;;AAAA,uCAAuC;AACvC;;AAGO,MAAMA,eAAe,CAAC,EAC3BC,WAAW,EACXC,cAAc,EACdC,WAAW,EACXC,cAAc,EACI;IAClB,qBACE,8OAAC;QAAIC,WAAU;;;;;;AAInB"}},
-    {"offset": {"line": 25, "column": 0}, "map": {"version":3,"sources":["file:///E:/projeler/Cerkesce/node_modules/next/src/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.ts"],"sourcesContent":["module.exports = (\n  require('../../module.compiled') as typeof import('../../module.compiled')\n).vendored['react-ssr']!.ReactJsxDevRuntime\n"],"names":["module","exports","require","vendored","ReactJsxDevRuntime"],"mappings":"AAAAA,OAAOC,OAAO,GACZC,QAAQ,4HACRC,QAAQ,CAAC,YAAY,CAAEC,kBAAkB","ignoreList":[0]}}]
-}

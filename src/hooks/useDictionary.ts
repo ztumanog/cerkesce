@@ -206,7 +206,7 @@ export function useDictionary() {
 
       let manifest: DictionaryMeta[] = [];
       try {
-        const res = await fetch("/data/dictionaries.json", { signal: controller.signal });
+        const res = await fetch("data/dictionaries.json", { signal: controller.signal });
         if (res.ok) manifest = (await res.json()) as DictionaryMeta[];
       } catch (err: any) {
         if (err.name !== "AbortError") {

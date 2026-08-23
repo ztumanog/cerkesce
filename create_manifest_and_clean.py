@@ -2,7 +2,7 @@ import json
 import os
 
 DATA_DIR = "./public/data"
-MANIFEST_PATH = "./public/data/dictionaries.json"
+MANIFEST_PATH = "./src/utils/dictionaries.json"
 
 # 34 Sözlüğün Zengin Akademik Künye Haritası
 KUNYE_HARITASI = {
@@ -280,7 +280,7 @@ def process_dictionaries():
         except Exception as e:
             print(f"❌ Hata ({file_name}): {e}")
 
-    # Toplu Manifest Dosyasını Oluştur (public/data/dictionaries.json)
+    # Toplu Manifest Dosyasını Oluştur (src/utils/dictionaries.json)
     with open(MANIFEST_PATH, "w", encoding="utf-8") as f:
         json.dump(manifest_list, f, ensure_ascii=False, indent=2)
 

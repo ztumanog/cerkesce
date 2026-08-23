@@ -1,32 +1,46 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Fraunces, IBM_Plex_Sans, IBM_Plex_Mono } from "next/font/google";
 import "./globals.css";
-// Footer bileşenini import ediyoruz (dosya yoluna göre düzenleyebilirsin)
-import Footer from "@/components/Footer"; 
 
-const inter = Inter({ subsets: ["latin"] });
+const fraunces = Fraunces({
+  subsets: ["latin"],
+  variable: "--font-fraunces",
+  display: "swap",
+  preload: false, // Preload uyarısını engeller
+});
+
+const ibmPlexSans = IBM_Plex_Sans({
+  weight: ["400", "500", "600", "700"],
+  subsets: ["latin"],
+  variable: "--font-ibm-plex-sans", // Tailwind standart adlandırmasına çekildi
+  display: "swap",
+  preload: false,
+});
+
+const ibmPlexMono = IBM_Plex_Mono({
+  weight: ["400", "500", "600"],
+  subsets: ["latin"],
+  variable: "--font-ibm-plex-mono", // Tailwind standart adlandırmasına çekildi
+  display: "swap",
+  preload: false,
+});
 
 export const metadata: Metadata = {
   title: "Çerkesçe Sözlük",
-  description: "Çerkesçe / Adıgece Online Sözlük ve Dil Kaynağı",
+  description: "Dijital Korpus Bibliyografyası",
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html lang="tr">
-      <body className={inter.className} style={{ display: "flex", flexDirection: "column", minHeight: "100vh", margin: 0 }}>
-        {/* Sayfa İçerikleri */}
-        <main style={{ flex: 1 }}>
-          {children}
-        </main>
-
-        {/* Footer Tüm Sayfalarda En Altta Görünecek */}
-        <Footer />
-      </body>
+    <html
+      lang="tr"
+      className={`${fraunces.variable} ${ibmPlexSans.variable} ${ibmPlexMono.variable}`}
+    >
+      <body>{children}</body>
     </html>
   );
 }
