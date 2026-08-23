@@ -9,8 +9,8 @@ export default function Footer({ aktifTema, onKaynaklarAc }: FooterProps) {
   return (
     <footer
       style={{
-        marginTop: "1px", // 16px yerine 4px'e düşürüldü
-        paddingTop: "3px", // 14px yerine 6px'e düşürüldü
+        marginTop: "1px",
+        paddingTop: "3px",
         paddingBottom: "8px",
         borderTop: `1px solid ${aktifTema?.kenarlik || "#E2D7C3"}`,
         display: "flex",

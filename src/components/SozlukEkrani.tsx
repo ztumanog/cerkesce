@@ -23,6 +23,7 @@ import GununKelimesiKart from "./GununKelimesiKart";
 import SearchBox from "./SearchBox";
 import KelimeKarti from "./KelimeKarti";
 import KelimeDetayDrawer from "./KelimeDetayDrawer";
+import Kaynaklar from "./Kaynaklar";
 
 export default function SozlukEkrani({
   loading,
@@ -45,7 +46,7 @@ export default function SozlukEkrani({
   const [goruntulenenAdet, setGoruntulenenAdet] = useState<number>(20);
   const [seciliKelimeGrubu, setSeciliKelimeGrubu] = useState<GruplanmisKelime | null>(null);
   const [kopyalandiId, setKopyalandiId] = useState<string | null>(null);
-
+  const [kaynaklarAcik, setKaynaklarAcik] = useState<boolean>(false);
   const inputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
@@ -251,7 +252,7 @@ export default function SozlukEkrani({
           margin: "0 auto", 
           display: "flex", 
           flexDirection: "column", 
-          justifyContent: "flex-start", // Elemanları yukarıya sabitler
+          justifyContent: "flex-start",
           gap: "4px"
         }}
       >
@@ -344,7 +345,8 @@ export default function SozlukEkrani({
           </div>
         ) : (
           searchQuery?.trim() && (
-<section style={{ display: "flex", flexDirection: "column", gap: "8px", marginBottom: "0px" }}>              {gruplanmisSonuclar.length === 0 ? (
+            <section style={{ display: "flex", flexDirection: "column", gap: "8px", marginBottom: "0px" }}>
+              {gruplanmisSonuclar.length === 0 ? (
                 <div 
                   style={{
                     textAlign: "center",
@@ -401,7 +403,7 @@ export default function SozlukEkrani({
           )
         )}
 
- {seciliKelimeGrubu && (
+        {seciliKelimeGrubu && (
           <KelimeDetayDrawer
             seciliKelime={seciliKelimeGrubu}
             kapat={() => setSeciliKelimeGrubu(null)}
@@ -409,13 +411,70 @@ export default function SozlukEkrani({
             metinBoyutu={metinBoyutu}
           />
         )}
-{/* Footer'ın üstündeki boşluğu sıfırlıyoruz */}
+
         <div style={{ marginTop: "0px", paddingTop: "0px" }}>
           <Footer 
             aktifTema={aktifTema} 
-            onKaynaklarAc={() => {}} 
+            onKaynaklarAc={() => setKaynaklarAcik(true)} 
           />
         </div>
+
+        {/* Kaynaklar & Referanslar Modal Penceresi */}
+        {kaynaklarAcik && (
+          <div 
+            style={{
+              position: "fixed",
+              top: 0,
+              left: 0,
+              right: 0,
+              bottom: 0,
+              backgroundColor: "rgba(0, 0, 0, 0.6)",
+              zIndex: 9999,
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              padding: "16px",
+              backdropFilter: "blur(2px)"
+            }}
+            onClick={() => setKaynaklarAcik(false)}
+          >
+            <div 
+              style={{
+                backgroundColor: aktifTema.kartArkaPlan,
+                color: aktifTema.yaziAna,
+                border: `1px solid ${aktifTema.kenarlik}`,
+                borderRadius: "6px",
+                padding: "24px",
+                maxWidth: "800px",
+                width: "100%",
+                maxHeight: "85vh",
+                overflowY: "auto",
+                position: "relative",
+                boxShadow: "0 10px 25px rgba(0,0,0,0.2)"
+              }}
+              onClick={(e) => e.stopPropagation()}
+            >
+              <button 
+                onClick={() => setKaynaklarAcik(false)}
+                style={{
+                  position: "absolute",
+                  top: "12px",
+                  right: "16px",
+                  background: "none",
+                  border: "none",
+                  fontSize: "18px",
+                  fontWeight: "bold",
+                  color: "#7A1C1C",
+                  cursor: "pointer"
+                }}
+              >
+                ✕
+              </button>
+              
+              <Kaynaklar />
+            </div>
+          </div>
+        )}
       </main>
     </div>
   );
