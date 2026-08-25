@@ -1,10 +1,20 @@
-import { KURUMSAL, SOZLUK_META } from "@/lib/dictionaryConstants";
+"use client";
+
+import React from "react";
+
+import {
+  KURUMSAL,
+  SOZLUK_META,
+} from "@/lib/dictionaryConstants";
+
 import type { DictionaryItem } from "@/types/dictionary";
+
 import {
   kaynagiDuzenle,
   tanimlariBicimlendir,
   type TemaTipi,
 } from "@/utils/helpers";
+
 
 interface YerelSozlukMeta {
   dilCifti: string;

@@ -1,168 +1,587 @@
-// src/lib/dictionaryConstants.ts
+import type {
+  DictionaryItem,
+  DictionaryMeta,
+  LehceTipi,
+} from "@/types/dictionary";
+
+type SozlukVerisi =
+  | DictionaryMeta
+  | DictionaryItem
+  | Record<string, unknown>;
 
 /**
- * Açık Mektep Kurumsal Renk Paleti
+ * Bilinmeyen değeri güvenli biçimde metne çevirir.
  */
-export const KURUMSAL = {
-  kirmizi: "#FF4030",
-  kirmiziKoyu: "#E02E1F",
-  kirmiziAcik: "#FFF1F0",
-  kirmiziOpak: "rgba(255, 64, 48, 0.12)",
-  sari: "#FFC604",
-  sariKoyu: "#D9A400",
-  sariAcik: "#FFFBEB",
-  sariOpak: "rgba(255, 198, 4, 0.15)",
-  mavi: "#2B6CB0",
-  yesil: "#2F855A",
-} as const;
-
-/**
- * Tema Renk Tanımları (Açık & Karanlık Mod)
- */
-export interface TemaSemasi {
-  kartArkaPlan: string;
-  inputArkaPlan: string;
-  inputFocusArkaPlan: string;
-  yaziAna: string;
-  yaziAlt: string;
-  kenarlik: string;
-  kenarlikHover: string;
-  golge: string;
-}
-
-export const TEMA: { acik: TemaSemasi; karanlik: TemaSemasi } = {
-  acik: {
-    kartArkaPlan: "#FFFFFF",
-    inputArkaPlan: "#F8FAFC",
-    inputFocusArkaPlan: "#FFFFFF",
-    yaziAna: "#1E293B",
-    yaziAlt: "#64748B",
-    kenarlik: "#E2E8F0",
-    kenarlikHover: "#CBD5E1",
-    golge: "0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05)",
-  },
-  karanlik: {
-    kartArkaPlan: "#1E293B",
-    inputArkaPlan: "#0F172A",
-    inputFocusArkaPlan: "#1E293B",
-    yaziAna: "#F8FAFC",
-    yaziAlt: "#94A3B8",
-    kenarlik: "#334155",
-    kenarlikHover: "#475569",
-    golge: "0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -2px rgba(0, 0, 0, 0.3)",
-  },
-};
-
-export const VARSAYILAN_TEMA = TEMA.acik;
-
-/**
- * Sözlük Meta Veri Tipleri
- */
-export interface SozlukMeta {
-  dilCifti: string;
-  yazar: string;
-}
-
-/**
- * Batı Adıgece Sözlük Haritası
- */
-export const BATI_SOZLUKLERI: Record<string, SozlukMeta> = {
-  "0.Ady-Ady_AIG.json": {
-    dilCifti: "Adıgece Açıklamalı Sözlük",
-    yazar: "Адыгабзэм изэхэф (2006)",
-  },
-  "1.Ady-Rus_AP.json": {
-    dilCifti: "Adıgece-Rusça",
-    yazar: "Mirabil Apaşev",
-  },
-  "2.Ady-Ara_Lash.json": {
-    dilCifti: "Adıgece-Arapça",
-    yazar: "Adel Lash",
-  },
-  "3.Ady-En_Community.json": {
-    dilCifti: "Adıgece-İngilizce",
-    yazar: "Topluluk Katkısı",
-  },
-  "4.Ady-En_Adam.json": {
-    dilCifti: "Adıgece-İngilizce",
-    yazar: "Adam Shagash",
-  },
-  "10.En-Ady_Adam.json": {
-    dilCifti: "İngilizce-Adıgece",
-    yazar: "Adam Shagash",
-  },
-  "14.Tur-Ady_Huvaj.json": {
-    dilCifti: "Türkçe-Adıgece",
-    yazar: "Fahri Huvaj",
-  },
-  "15.Ady-Tur_Huvaj.json": {
-    dilCifti: "Adıgece-Türkçe",
-    yazar: "Fahri Huvaj",
-  },
-  "adigece_turkce.json": {
-    dilCifti: "Adıgece-Türkçe",
-    yazar: "Açık Mektep",
-  },
+const metin = (value: unknown): string => {
+  return typeof value === "string"
+    ? value.trim()
+    : "";
 };
 
 /**
- * Doğu Adıgece (Kabardeyce) Sözlük Haritası
+ * Türkçe karakterleri filtre karşılaştırmasına
+ * uygun standart biçime dönüştürür.
  */
-export const DOGU_SOZLUKLERI: Record<string, SozlukMeta> = {
-  "5.Ady-Rus_Qarden.json": {
-    dilCifti: "Kabardeyce-Rusça",
-    yazar: "B. M. Kardanov",
-  },
-  "6.Ady-Rus_Sherdjes.json": {
-    dilCifti: "Kabardeyce/Adıgece-Rusça",
-    yazar: "Ali İ. Çerkes",
-  },
-  "17.Kbd-En_Amjad.json": {
-    dilCifti: "Kabardeyce-İngilizce",
-    yazar: "Amjad Jaimoukha",
-  },
-  "18.Kbd-En_Jonty_v2.json": {
-    dilCifti: "Kabardeyce-İngilizce v2",
-    yazar: "Jonty Yamisha",
-  },
-  "19.Kbd-En_Jonty_v1.json": {
-    dilCifti: "Kabardeyce-İngilizce v1",
-    yazar: "Jonty Yamisha",
-  },
-  "20.Kbd-En_Ziwar.json": {
-    dilCifti: "Kabardeyce-İngilizce",
-    yazar: "Ziwar Gish",
-  },
-  "kab_tr.json": {
-    dilCifti: "Kabardeyce-Türkçe",
-    yazar: "Açık Mektep",
-  },
+const kucult = (value: unknown): string => {
+  return metin(value)
+    .toLocaleLowerCase("tr-TR")
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/ı/g, "i")
+    .trim();
 };
 
 /**
- * Birleşik Ana Sözlük Haritası (Tek Doğruluk Kaynağı)
+ * Sözlüğün gerçek dosya adını döndürür.
+ *
+ * file yalnızca eşleştirme ve yükleme için kullanılır.
  */
-export const SOZLUK_META: Record<string, SozlukMeta> = {
-  ...BATI_SOZLUKLERI,
-  ...DOGU_SOZLUKLERI,
+export const sozlukDosyasi = (
+  sozluk: SozlukVerisi
+): string => {
+  const item = sozluk as Record<
+    string,
+    unknown
+  >;
+
+  return (
+    metin(item.file) ||
+    metin(item.kaynak_sozluk) ||
+    metin(item.filename) ||
+    metin(item.dictionaryFile)
+  );
 };
 
-export const KAYNAK_HARITASI = SOZLUK_META;
+/**
+ * Kullanıcıya gösterilecek sözlük adını döndürür.
+ *
+ * Öncelik sırası:
+ * title → shortLabel → label → ad →
+ * dictionaryName → dosya adı
+ */
+export const sozlukGorunenAdi = (
+  sozluk: SozlukVerisi
+): string => {
+  const item = sozluk as Record<
+    string,
+    unknown
+  >;
+
+  return (
+    metin(item.title) ||
+    metin(item.shortLabel) ||
+    metin(item.label) ||
+    metin(item.ad) ||
+    metin(item.dictionaryName) ||
+    sozlukDosyasi(sozluk).replace(
+      /\.json$/i,
+      ""
+    ) ||
+    "İsimsiz sözlük"
+  );
+};
 
 /**
- * Dilbilgisi Tür Haritası
+ * Huvaj ve İbrahim Alhaz Abaze
+ * istisnasını tespit eder.
+ *
+ * Bu iki sözlük hem BATI hem DOGU
+ * filtresinde gösterilir.
  */
-export const TUR_MAP: Record<string, string> = {
+export const ciftDiyalektIstisnasiMi = (
+  sozluk: SozlukVerisi
+): boolean => {
+  const item = sozluk as Record<
+    string,
+    unknown
+  >;
+
+  const dosya = kucult(
+    sozlukDosyasi(sozluk)
+  );
+
+  const baslik = kucult(item.title);
+
+  const yazar = kucult(
+    item.author || item.yazar
+  );
+
+  return (
+    dosya.includes("huvaj") ||
+    baslik.includes("huvaj") ||
+    yazar.includes("huvaj") ||
+    dosya.includes("abaze") ||
+    baslik.includes("abaze") ||
+    yazar.includes("abaze") ||
+    yazar.includes("ibrahim alhaz")
+  );
+};
+
+/**
+ * Sözlüğün hangi diyalektlerde
+ * gösterileceğini döndürür.
+ */
+export const sozlukDiyalektleri = (
+  sozluk: SozlukVerisi
+): string[] => {
+  if (
+    ciftDiyalektIstisnasiMi(sozluk)
+  ) {
+    return ["BATI", "DOGU"];
+  }
+
+  const item = sozluk as Record<
+    string,
+    unknown
+  >;
+
+  const dialect = kucult(
+    item.dialect ||
+      item.lehce ||
+      item.diyalekt ||
+      item.dialectName ||
+      item.lehceAdi
+  );
+
+  if (
+    dialect === "bati" ||
+    dialect.includes("bati") ||
+    dialect.includes("adige")
+  ) {
+    return ["BATI"];
+  }
+
+  if (
+    dialect === "dogu" ||
+    dialect.includes("dogu") ||
+    dialect.includes("kabardey")
+  ) {
+    return ["DOGU"];
+  }
+
+  return [];
+};
+
+/**
+ * Arayüzdeki diyalekt değerini
+ * sistem değerine çevirir.
+ */
+export const diyalektKodunaCevir = (
+  lehce: LehceTipi | string
+): string => {
+  const filtre = kucult(lehce);
+
+  if (
+    !filtre ||
+    filtre === "tumu" ||
+    filtre === "hepsi" ||
+    filtre === "all" ||
+    filtre === "tum"
+  ) {
+    return "TUMU";
+  }
+
+  if (
+    filtre.includes("bati") ||
+    filtre.includes("adige")
+  ) {
+    return "BATI";
+  }
+
+  if (
+    filtre.includes("dogu") ||
+    filtre.includes("kabardey")
+  ) {
+    return "DOGU";
+  }
+
+  return "";
+};
+
+/**
+ * Sözlük diyalekt filtresine uyuyor mu?
+ */
+export const diyalektUyuyorMu = (
+  sozluk: SozlukVerisi,
+  seciliLehce: LehceTipi | string
+): boolean => {
+  const filtre =
+    diyalektKodunaCevir(seciliLehce);
+
+  if (
+    !filtre ||
+    filtre === "TUMU"
+  ) {
+    return true;
+  }
+
+  return sozlukDiyalektleri(
+    sozluk
+  ).includes(filtre);
+};
+
+/**
+ * targetLanguage alanını standartlaştırır.
+ */
+export const hedefDilKodu = (
+  sozluk: SozlukVerisi
+): string => {
+  const item = sozluk as Record<
+    string,
+    unknown
+  >;
+
+  const dil = kucult(
+    item.targetLanguage ||
+      item.target_language ||
+      item.toLang ||
+      item.hedefDili ||
+      item.hedefDil ||
+      item.language ||
+      item.dil
+  );
+
+  if (
+    dil === "en" ||
+    dil === "eng" ||
+    dil === "ingilizce"
+  ) {
+    return "en";
+  }
+
+  if (
+    dil === "ar" ||
+    dil === "ara" ||
+    dil === "arapca"
+  ) {
+    return "ar";
+  }
+
+  if (
+    dil === "tr" ||
+    dil === "tur" ||
+    dil === "tu" ||
+    dil === "turkce"
+  ) {
+    return "tr";
+  }
+
+  if (
+    dil === "ru" ||
+    dil === "rus"
+  ) {
+    return "ru";
+  }
+
+  if (
+    dil === "ady" ||
+    dil === "adigece" ||
+    dil === "adige"
+  ) {
+    return "ady";
+  }
+
+  if (
+    dil === "kbd" ||
+    dil === "kabardeyce" ||
+    dil === "kabardey"
+  ) {
+    return "kbd";
+  }
+
+  return "";
+};
+
+/**
+ * Kullanıcının seçtiği dil değerini
+ * sistem koduna çevirir.
+ */
+export const seciliDilKodu = (
+  seciliDil: string
+): string => {
+  const dil = kucult(seciliDil);
+
+  if (
+    !dil ||
+    dil === "tumu" ||
+    dil === "hepsi" ||
+    dil === "all" ||
+    dil === "tum"
+  ) {
+    return "TUMU";
+  }
+
+  if (
+    dil === "en" ||
+    dil === "eng" ||
+    dil === "ingilizce"
+  ) {
+    return "en";
+  }
+
+  if (
+    dil === "ar" ||
+    dil === "ara" ||
+    dil === "arapca"
+  ) {
+    return "ar";
+  }
+
+  if (
+    dil === "tr" ||
+    dil === "tur" ||
+    dil === "tu" ||
+    dil === "turkce"
+  ) {
+    return "tr";
+  }
+
+  if (
+    dil === "ru" ||
+    dil === "rus" ||
+    dil === "rusca"
+  ) {
+    return "ru";
+  }
+
+  if (
+    dil === "ady" ||
+    dil === "adigece" ||
+    dil === "adige"
+  ) {
+    return "ady";
+  }
+
+  if (
+    dil === "kbd" ||
+    dil === "kabardeyce" ||
+    dil === "kabardey"
+  ) {
+    return "kbd";
+  }
+
+  return dil;
+};
+
+/**
+ * Dil filtresine göre sözlük
+ * kontrolü yapar.
+ */
+export const hedefDilUyuyorMu = (
+  sozluk: SozlukVerisi,
+  seciliDil: string
+): boolean => {
+  const filtre =
+    seciliDilKodu(seciliDil);
+
+  if (
+    !filtre ||
+    filtre === "TUMU"
+  ) {
+    return true;
+  }
+
+  return (
+    hedefDilKodu(sozluk) === filtre
+  );
+};
+
+/**
+ * Sözlükte kaynak dil ile ilgili
+ * filtre kontrolü yapar.
+ */
+export const kaynakDilKodu = (
+  sozluk: SozlukVerisi
+): string => {
+  const item = sozluk as Record<
+    string,
+    unknown
+  >;
+
+  const dil = kucult(
+    item.sourceLanguage ||
+      item.source_language ||
+      item.fromLang ||
+      item.kaynakDili ||
+      item.kaynakDil
+  );
+
+  if (
+    dil === "en" ||
+    dil === "eng" ||
+    dil === "ingilizce"
+  ) {
+    return "en";
+  }
+
+  if (
+    dil === "ar" ||
+    dil === "ara" ||
+    dil === "arapca"
+  ) {
+    return "ar";
+  }
+
+  if (
+    dil === "tr" ||
+    dil === "tur" ||
+    dil === "tu" ||
+    dil === "turkce"
+  ) {
+    return "tr";
+  }
+
+  if (
+    dil === "ru" ||
+    dil === "rus" ||
+    dil === "rusca"
+  ) {
+    return "ru";
+  }
+
+  if (
+    dil === "ady" ||
+    dil === "adigece" ||
+    dil === "adige"
+  ) {
+    return "ady";
+  }
+
+  if (
+    dil === "kbd" ||
+    dil === "kabardeyce" ||
+    dil === "kabardey"
+  ) {
+    return "kbd";
+  }
+
+  return "";
+};
+
+/**
+ * Dil kodunun kullanıcıya gösterilecek
+ * Türkçe adını döndürür.
+ */
+export const dilAdi = (
+  kod: string
+): string => {
+  switch (kucult(kod)) {
+    case "ady":
+    case "adige":
+    case "adigece":
+      return "Adıgece";
+
+    case "kbd":
+    case "kabardey":
+    case "kabardeyce":
+      return "Kabardeyce";
+
+    case "en":
+    case "eng":
+    case "ingilizce":
+      return "İngilizce";
+
+    case "ar":
+    case "ara":
+    case "arapca":
+      return "Arapça";
+
+    case "ru":
+    case "rus":
+    case "rusca":
+      return "Rusça";
+
+    case "tr":
+    case "tur":
+    case "tu":
+    case "turkce":
+      return "Türkçe";
+
+    default:
+      return metin(kod);
+  }
+};
+
+/**
+ * Eski fonksiyon adıyla uyumluluk.
+ */
+export const dilAdiBul = dilAdi;
+
+/**
+ * Sözlüğün kullanıcıya gösterilecek
+ * adını döndürür.
+ */
+export const sozlukAdiBul = (
+  sozluk: SozlukVerisi
+): string => {
+  return sozlukGorunenAdi(sozluk);
+};
+
+/**
+ * Dosya adına göre sözlük adı döndürür.
+ */
+export const dosyadanSozlukAdiBul = (
+  sozlukler: SozlukVerisi[],
+  file: string
+): string => {
+  const arananDosya = metin(file);
+
+  const sozluk = sozlukler.find(
+    (item) =>
+      sozlukDosyasi(item) === arananDosya
+  );
+
+  return sozluk
+    ? sozlukGorunenAdi(sozluk)
+    : arananDosya.replace(
+        /\.json$/i,
+        ""
+      );
+};
+
+/**
+ * Dilbilgisi türlerinin Türkçe karşılıkları.
+ */
+export const TUR_MAP: Record<
+  string,
+  string
+> = {
   verb: "Fiil",
   noun: "İsim",
   adjective: "Sıfat",
   adverb: "Zarf",
-  "auxiliary verb": "Yardımcı Fiil",
   auxiliary: "Yardımcı Fiil",
+  "auxiliary verb": "Yardımcı Fiil",
   suffix: "Ek",
   "verbal suffix": "Fiil Eki",
   prefix: "Önek",
   preposition: "Edat",
   conjunction: "Bağlaç",
   pronoun: "Zamir",
+  interjection: "Ünlem",
+  numeral: "Sayı",
+  particle: "Edat",
 };
+export const VARSAYILAN_TEMA = {
+  arkaPlan: "#ffffff",
+  kartArkaPlan: "#f9fafb",
+  yaziAna: "#111827",
+  yaziAlt: "#4b5563",
+  kenarlik: "#e5e7eb",
+  inputArkaPlan: "#ffffff",
+};
+export const KURUMSAL = {
+  ad: 'Açık Mektep',
+  slogan: 'Dijital Dil Kaynakları',
+  url: 'https://acikmektep.org',
+  kirmizi: '#FF4030',
+} as const;
+export interface SozlukMeta {
+  dilCifti: string;
+  yazar: string;
+}
+
+export const SOZLUK_META: Record<
+  string,
+  SozlukMeta
+> = {};

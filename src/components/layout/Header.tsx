@@ -2,7 +2,7 @@
 
 import type React from "react";
 import type { TemaTipi } from "@/utils/helpers";
-import { KURUMSAL } from "@/lib/dictionaryConstants";
+import { TUR_MAP } from "@/lib/dictionaryConstants";
 
 interface HeaderProps {
   karanlikMod: boolean;
@@ -17,6 +17,10 @@ interface HeaderProps {
     "yaziAna" | "yaziAlt" | "kenarlik" | "kartArkaPlan"
   >;
 }
+// dictionaryConstants.ts
+export const KURUMSAL = {
+  kirmizi: "#b91c1c",
+};
 
 export default function Header({
   karanlikMod,
@@ -33,7 +37,7 @@ export default function Header({
   const altYaziRengi =
     tema.yaziAlt || (karanlikMod ? "#D0C4B8" : "#4A3E37");
   const vurguRengi = KURUMSAL.kirmizi || "#7A1C1C";
-
+  
   const kontrolArkaPlanRengi = karanlikMod
     ? "#2C221E"
     : "#FFFFFF";

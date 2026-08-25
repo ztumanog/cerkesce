@@ -22,6 +22,9 @@ const kucult = (value: unknown): string => {
     .replace(/[\u0300-\u036f]/g, "");
 };
 
+
+
+
 /**
  * Veriyi arama yapılabilir metne dönüştürür.
  */
@@ -42,11 +45,15 @@ const veriyiMetneCevir = (
 
   if (Array.isArray(veri)) {
     return veri
-      .map((item) => veriyiMetneCevir(item))
+      .map((item) =>
+        veriyiMetneCevir(item)
+      )
       .join(" ");
   }
 
-  if (typeof veri === "object") {
+  if (
+    typeof veri === "object"
+  ) {
     return Object.entries(veri)
       .map(([anahtar, deger]) => {
         return `${anahtar} ${veriyiMetneCevir(
@@ -60,7 +67,8 @@ const veriyiMetneCevir = (
 };
 
 /**
- * Tek bir sözlük kaydının arama metnine uyup uymadığını kontrol eder.
+ * Tek bir sözlük kaydının arama metnine
+ * uyup uymadığını kontrol eder.
  */
 export const sozlukAramayaUyuyorMu = (
   sozluk: unknown,
@@ -95,13 +103,15 @@ export const sozlukAra = <T>(
   return sozlukler.filter((sozluk) =>
     sozlukAramayaUyuyorMu(
       sozluk,
-      aramaMetni
+      filtre
     )
   );
 };
 
+
 /**
  * Sözlüğün gerçek dosya adını döndürür.
+ * file yalnızca eşleştirme ve yükleme için kullanılır.
  */
 export const sozlukDosyasi = (
   sozluk: SozlukVerisi
@@ -117,6 +127,7 @@ export const sozlukDosyasi = (
 
 /**
  * Kullanıcıya gösterilecek sözlük adını döndürür.
+ * Öncelik title alanındadır.
  */
 export const sozlukGorunenAdi = (
   sozluk: SozlukVerisi
@@ -129,10 +140,7 @@ export const sozlukGorunenAdi = (
     metin(item.label) ||
     metin(item.ad) ||
     metin(item.dictionaryName) ||
-    sozlukDosyasi(sozluk).replace(
-      /\.json$/i,
-      ""
-    ) ||
+    sozlukDosyasi(sozluk).replace(/\.json$/i, "") ||
     "İsimsiz sözlük"
   );
 };
@@ -145,12 +153,8 @@ export const ciftDiyalektIstisnasiMi = (
 ): boolean => {
   const item = sozluk as Record<string, unknown>;
 
-  const dosya = kucult(
-    sozlukDosyasi(sozluk)
-  );
-
+  const dosya = kucult(sozlukDosyasi(sozluk));
   const baslik = kucult(item.title);
-
   const yazar = kucult(
     item.author || item.yazar
   );
@@ -245,8 +249,7 @@ export const diyalektUyuyorMu = (
   sozluk: SozlukVerisi,
   seciliLehce: LehceTipi
 ): boolean => {
-  const filtre =
-    diyalektKodunaCevir(seciliLehce);
+  const filtre = diyalektKodunaCevir(seciliLehce);
 
   if (!filtre || filtre === "TUMU") {
     return true;
@@ -256,6 +259,9 @@ export const diyalektUyuyorMu = (
     .includes(filtre);
 };
 
+/**
+ * targetLanguage alanını standartlaştırır.
+ */
 /**
  * targetLanguage alanını standartlaştırır.
  */
@@ -305,17 +311,11 @@ export const hedefDilKodu = (
     return "ru";
   }
 
-  if (
-    dil === "ady" ||
-    dil.includes("adige")
-  ) {
+  if (dil === "ady") {
     return "ady";
   }
 
-  if (
-    dil === "kbd" ||
-    dil.includes("kabardey")
-  ) {
+  if (dil === "kbd") {
     return "kbd";
   }
 
@@ -323,66 +323,37 @@ export const hedefDilKodu = (
 };
 
 /**
- * Arayüzde seçilen hedef dil değerini sistem koduna dönüştürür.
+ * Arayüzde seçilen hedef dil değerini
+ * sistem koduna dönüştürür.
  */
-const hedefDilFiltresiniKodaCevir = (
-  dil: string
-): string => {
+const hedefDilFiltresiniKodaCevir = (dil: string): string => {
   const filtre = kucult(dil);
 
-  if (
-    !filtre ||
-    filtre === "tumu" ||
-    filtre === "hepsi" ||
-    filtre === "all"
-  ) {
+  if (!filtre || filtre === "tumu" || filtre === "hepsi" || filtre === "all") {
     return "TUMU";
   }
 
-  if (
-    filtre === "tr" ||
-    filtre === "tur" ||
-    filtre === "tu" ||
-    filtre.includes("turk")
-  ) {
+  if (filtre === "tr" || filtre === "tur" || filtre === "tu" || filtre.includes("turk")) {
     return "tr";
   }
 
-  if (
-    filtre === "en" ||
-    filtre === "eng" ||
-    filtre.includes("ingiliz")
-  ) {
+  if (filtre === "en" || filtre === "eng" || filtre.includes("ingiliz")) {
     return "en";
   }
 
-  if (
-    filtre === "ar" ||
-    filtre === "ara" ||
-    filtre.includes("arap")
-  ) {
+  if (filtre === "ar" || filtre === "ara" || filtre.includes("arap")) {
     return "ar";
   }
 
-  if (
-    filtre === "ru" ||
-    filtre === "rus" ||
-    filtre.includes("rus")
-  ) {
+  if (filtre === "ru" || filtre === "rus" || filtre.includes("rus")) {
     return "ru";
   }
 
-  if (
-    filtre === "ady" ||
-    filtre.includes("adige")
-  ) {
+  if (filtre === "ady" || filtre.includes("bati")) {
     return "ady";
   }
 
-  if (
-    filtre === "kbd" ||
-    filtre.includes("kabardey")
-  ) {
+  if (filtre === "kbd" || filtre.includes("dogu")) {
     return "kbd";
   }
 
@@ -392,12 +363,8 @@ const hedefDilFiltresiniKodaCevir = (
 /**
  * Dil filtresine göre sözlük kontrolü.
  */
-export const hedefDilUyuyorMu = (
-  sozluk: SozlukVerisi,
-  seciliDil: string
-): boolean => {
-  const filtre =
-    hedefDilFiltresiniKodaCevir(seciliDil);
+export const hedefDilUyuyorMu = (sozluk: SozlukVerisi, seciliDil: string): boolean => {
+  const filtre = hedefDilFiltresiniKodaCevir(seciliDil);
 
   if (!filtre || filtre === "TUMU") {
     return true;

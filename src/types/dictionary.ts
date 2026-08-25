@@ -15,6 +15,9 @@ export type LehceTipi =
   | "Tümü"
   | "Batı Adığece"
   | "Doğu Kabardeyce"
+  | "TUMU"
+  | "BATI"
+  | "DOGU"
   | string;
 
 export type SozlukKaydi =
@@ -42,17 +45,34 @@ export interface DictionaryMeta {
   file: string;
   title?: string;
   label?: string;
-  dialect?: string;
+  shortLabel?: string;
+  dialect?: Dialect;
+  lehce?: string;
+  diyalekt?: string;
+
   total_words?: number;
+  totalWords?: number;
+  wordCount?: number;
+  wordsCount?: number;
+  entryCount?: number;
+  entriesCount?: number;
+  count?: number;
+  kelimeSayisi?: number;
+  kayitSayisi?: number;
+
   lang?: string;
   sourceLanguage?: string;
   targetLanguage?: string;
+  fromLang?: string;
+  toLang?: string;
+
   year?: number;
   author?: string;
   editor?: string;
   publisher?: string;
-  fromLang?: string;
-  toLang?: string;
+  originalTitle?: string;
+  confidence?: string;
+
   [key: string]: unknown;
 }
 
@@ -73,7 +93,6 @@ export interface DictionaryItem {
 
   fromLang?: string;
   toLang?: string;
-
 
   id?: string | number;
   meaning?: string;
@@ -107,7 +126,7 @@ export interface GruplanmisKelime {
     [key: string]: unknown;
   }[];
 
-  dialect?: string;
+  dialect?: Dialect;
 
   [key: string]: unknown;
 }
@@ -136,11 +155,15 @@ export interface SozlukEkraniProps {
   gununKelimesi?: DictionaryItem | null;
 
   filtrelenmisSonuclar:
-  | DictionaryItem[]
-  | GruplanmisKelime[];
+    | DictionaryItem[]
+    | GruplanmisKelime[];
 
   aktifSozlukler: DictionaryMeta[];
 
+  /*
+   * Gerçek toplam kayıt sayısı için kullanılır.
+   * SearchBoxProps içine eklenmemelidir.
+   */
   wordsCount?: number;
 
   [key: string]: unknown;
@@ -192,10 +215,11 @@ export interface ConceptDetail {
   kaynakSozluk?: string;
   tanim?: string;
   file?: string;
-  dialect?: string;
+  dialect?: Dialect;
   language?: string;
   [key: string]: unknown;
 }
+
 export interface ConceptRow {
   id?: string | number;
 
@@ -217,7 +241,7 @@ export interface ConceptRow {
   meaning?: string;
 
   file?: string;
-  dialect?: string;
+  dialect?: Dialect;
   language?: string;
 
   definitions?: SozlukAnlam[];
@@ -225,7 +249,6 @@ export interface ConceptRow {
 
   [key: string]: unknown;
 }
-
 
 export interface DictionaryEntry {
   id: string;
@@ -250,7 +273,9 @@ export interface ManifestItem {
   file: string;
   title: string;
   label?: string;
-  dialect: string;
+  shortLabel?: string;
+
+  dialect: Dialect;
 
   year?: number;
   sourceLanguage?: string;
@@ -263,7 +288,6 @@ export interface ManifestItem {
 
   total_words?: number;
   confidence?: string;
-  shortLabel?: string;
 
   [key: string]: unknown;
 }
@@ -298,8 +322,12 @@ export interface RawDictionaryFile {
     RawDictionaryWord
   >;
 }
+
 export function isSozlukTanimi(
   value: unknown
 ): value is DictionaryItem {
-  return typeof value === "object" && value !== null;
+  return (
+    typeof value === "object" &&
+    value !== null
+  );
 }

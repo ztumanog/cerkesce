@@ -1,6 +1,7 @@
-import manifestData from "@/utils/dictionaries.json";export const KAYNAK_HARITASI: Record<string, string> = {
-  // ... harita içeriğin aynen devam ediyor
-"1": "Huvaj — Adıgece-Türkçe Sözlük",
+import manifestData from "@/utils/dictionaries.json";
+
+export const KAYNAK_HARITASI: Record<string, string> = {
+  "1": "Huvaj — Adıgece-Türkçe Sözlük",
   "2": "Kerasheva — Çerkesçe Temel Kelimeler",
   "3": "Paranuk — Adıgece Kavramlar",
   "3.Ady-En": "Adıgece-İngilizce Sözlük",
@@ -34,9 +35,18 @@ import manifestData from "@/utils/dictionaries.json";export const KAYNAK_HARITAS
 };
 
 export const metneCevir = (veri: any): string => {
-  if (veri === null || veri === undefined) return "";
-  if (typeof veri === "string") return veri;
-  if (typeof veri === "number") return String(veri);
+  if (veri === null || veri === undefined) {
+    return "";
+  }
+
+  if (typeof veri === "string") {
+    return veri;
+  }
+
+  if (typeof veri === "number") {
+    return String(veri);
+  }
+
   if (typeof veri === "object") {
     return (
       veri.text ||
@@ -48,18 +58,26 @@ export const metneCevir = (veri: any): string => {
       JSON.stringify(veri)
     );
   }
+
   return String(veri);
 };
 
-export const temizeCevir = (metin: string): string => {
+export const temizeCevir = (
+  metin: string
+): string => {
   return metin ? metin.trim() : "";
 };
 
-// Gelişmiş Normalizasyon (Sayı öneklerini, uzantıları ve büyük/küçük harf farkını temizler)
-const normalizeKey = (val: string): string => {
+/**
+ * Baştaki sayı öneklerini, dosya uzantılarını
+ * ve büyük-küçük harf farkını temizler.
+ */
+const normalizeKey = (
+  val: string
+): string => {
   return val
-    .replace(/^\d+[\.\-_]?/, "") // Baştaki sayı öneklerini temizler (Örn: "8." veya "8-")
-    .replace(/\.js[oa]?n?$/i, "") // Uzantıları temizler (.json, .jso vs.)
+    .replace(/^\d+[\.\-_]?/, "")
+    .replace(/\.js[oa]?n?$/i, "")
     .replace(/\.txt$/i, "")
     .trim()
     .toLowerCase();
@@ -70,36 +88,68 @@ export const kaynagiDuzenle = (
   sozluklerListesi?: any[]
 ): string => {
   const hamMetin = metneCevir(dosyaAdi);
-  if (!hamMetin) return "";
 
-  const arananNormalized = normalizeKey(hamMetin);
+  if (!hamMetin) {
+    return "";
+  }
+
+  const arananNormalized = normalizeKey(
+    hamMetin
+  );
+
   const hedefListe =
-    sozluklerListesi && sozluklerListesi.length > 0
+    sozluklerListesi &&
+    sozluklerListesi.length > 0
       ? sozluklerListesi
       : manifestData;
 
-  // 1. MANIFEST / DICTIONARIES DİNAMİK ARAMA
-  if (Array.isArray(hedefListe) && hedefListe.length > 0) {
-    const bulunan = hedefListe.find((s) => {
-      const sFileNormalized = s?.file ? normalizeKey(s.file) : "";
-      const sIdNormalized = s?.id ? String(s.id).trim().toLowerCase() : "";
-      
+  /**
+   * Manifest içinde dinamik arama.
+   */
+  if (
+    Array.isArray(hedefListe) &&
+    hedefListe.length > 0
+  ) {
+    const bulunan = hedefListe.find((sozluk) => {
+      const dosya =
+        sozluk?.file !== undefined
+          ? normalizeKey(String(sozluk.file))
+          : "";
+
+      const id =
+        sozluk?.id !== undefined
+          ? String(sozluk.id)
+              .trim()
+              .toLowerCase()
+          : "";
+
       return (
-        sFileNormalized === arananNormalized ||
-        sIdNormalized === arananNormalized ||
-        sFileNormalized.includes(arananNormalized)
+        dosya === arananNormalized ||
+        id === arananNormalized ||
+        dosya.includes(arananNormalized)
       );
     });
 
     if (bulunan) {
-      const yazar = bulunan.author ? `${bulunan.author} — ` : "";
-      return `${yazar}${bulunan.title || bulunan.name}`;
+      const yazar = bulunan.author
+        ? `${bulunan.author} — `
+        : "";
+
+      return `${yazar}${
+        bulunan.title || bulunan.name || ""
+      }`;
     }
   }
 
-  // 2. YEDEK HARİTA ARAMASI (Fallback)
-  const haritaAnahtari = Object.keys(KAYNAK_HARITASI).find(
-    (k) => normalizeKey(k) === arananNormalized
+  /**
+   * Yedek harita araması.
+   */
+  const haritaAnahtari = Object.keys(
+    KAYNAK_HARITASI
+  ).find(
+    (anahtar) =>
+      normalizeKey(anahtar) ===
+      arananNormalized
   );
 
   if (haritaAnahtari) {

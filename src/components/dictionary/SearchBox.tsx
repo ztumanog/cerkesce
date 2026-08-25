@@ -1,18 +1,17 @@
 'use client';
 
 import React, {
-  useState,
-  useEffect,
-  useRef,
-  useMemo,
   useCallback,
+  useEffect,
+  useMemo,
+  useRef,
+  useState,
 } from 'react';
 
 import type {
   AramaModu,
   SearchBoxProps,
   LehceTipi,
-  ManifestData,
 } from '@/types/dictionary';
 
 import {
@@ -24,38 +23,307 @@ import { cn } from '@/utils/utils';
 import manifestDataRaw from '@/utils/dictionaries.json';
 import AkilliKlavye from '@/components/features/AkilliKlavye';
 
-const manifestData =
-  manifestDataRaw as unknown as ManifestData;
+type DictionaryMeta = {
+  file?: string;
+  title?: string;
+  label?: string;
+  dialect?: string;
+  lehce?: string;
+  diyalekt?: string;
+  name?: string;
+  baslik?: string;
+  kaynak_sozluk?: string;
+  filename?: string;
 
-function getEnrichedDictionary(file: string) {
-  const fileNameOnly = file.replace(
-    /\.json$/,
+  total_words?: number;
+  totalWords?: number;
+  wordCount?: number;
+  wordsCount?: number;
+  kayitSayisi?: number;
+  kelimeSayisi?: number;
+  count?: number;
+  entries?: number;
+  entryCount?: number;
+  entriesCount?: number;
+};
+
+type DictionaryInputType =
+  | string
+  | DictionaryMeta;
+
+type EnrichedDictionary = {
+  file: string;
+  title: string;
+  label: string;
+  dialect: 'BATI' | 'DOGU' | 'TUMU';
+  count: number;
+};
+
+const manifestData =
+  manifestDataRaw as DictionaryMeta[];
+
+function normalizeFileName(
+  value: unknown
+): string {
+  if (!value) return '';
+
+  return String(value)
+    .trim()
+    .replace(/\\/g, '/')
+    .split('/')
+    .pop()
+    ?.replace(/\.json$/i, '')
+    .trim()
+    .toLowerCase() || '';
+}
+
+function getDictionaryFile(
+  input: DictionaryInputType
+): string {
+  if (typeof input === 'string') {
+    return input;
+  }
+
+  return (
+    input.file ||
+    input.kaynak_sozluk ||
+    input.filename ||
+    input.name ||
     ''
   );
+}
 
-  const foundItem = manifestData?.items?.find(
-    (item) =>
-      item.file === file ||
-      item.file === fileNameOnly
+function getManifestDictionary(
+  file: unknown
+): DictionaryMeta | undefined {
+  const normalizedFile =
+    normalizeFileName(file);
+
+  if (!normalizedFile) {
+    return undefined;
+  }
+
+  return manifestData.find((dictionary) => {
+    return (
+      normalizeFileName(
+        dictionary.file ||
+        dictionary.filename ||
+        dictionary.name ||
+        ''
+      ) === normalizedFile
+    );
+  });
+}
+
+function findManifestItem(
+  input: DictionaryInputType
+): DictionaryMeta | undefined {
+  return getManifestDictionary(
+    getDictionaryFile(input)
   );
+}
+
+function getDictionaryCount(
+  dictionary: unknown
+): number {
+  const dictionaryObject =
+    typeof dictionary === 'object' &&
+    dictionary !== null
+      ? dictionary as Record<string, unknown>
+      : {};
+
+  const dictionaryFile =
+    dictionaryObject.file ||
+    dictionaryObject.filename ||
+    dictionaryObject.name ||
+    dictionaryObject.kaynak_sozluk ||
+    dictionary;
+
+  const manifestDictionary =
+    getManifestDictionary(dictionaryFile);
+
+  const countSource: Record<
+    string,
+    unknown
+  > = {
+    ...(manifestDictionary || {}),
+    ...dictionaryObject,
+  };
+
+  const possibleCounts = [
+    countSource.total_words,
+    countSource.totalWords,
+    countSource.wordCount,
+    countSource.wordsCount,
+    countSource.kayitSayisi,
+    countSource.kelimeSayisi,
+    countSource.count,
+    countSource.entries,
+    countSource.entryCount,
+    countSource.entriesCount,
+  ];
+
+  for (const value of possibleCounts) {
+    const count = Number(value);
+
+    if (
+      Number.isFinite(count) &&
+      count > 0
+    ) {
+      return count;
+    }
+  }
+
+  return 0;
+}
+
+function normalizeDialect(
+  dialect?: string
+): 'BATI' | 'DOGU' | 'TUMU' {
+  if (!dialect) {
+    return 'TUMU';
+  }
+
+  const value = String(dialect)
+    .trim()
+    .toUpperCase()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '');
+
+  if (
+    value === 'BATI' ||
+    value.includes('BATI') ||
+    value.includes('ADIGE') ||
+    value.includes('ADYGE') ||
+    value.includes('ADY')
+  ) {
+    return 'BATI';
+  }
+
+  if (
+    value === 'DOGU' ||
+    value.includes('DOGU') ||
+    value.includes('KABARDEY') ||
+    value.includes('KBD') ||
+    value.includes('KABARTAY')
+  ) {
+    return 'DOGU';
+  }
+
+  return 'TUMU';
+}
+
+function getDictionaryLabel(
+  item?: DictionaryMeta
+): string {
+  if (!item) {
+    return '';
+  }
+
+  return (
+    item.label ||
+    item.kaynak_sozluk ||
+    ''
+  );
+}
+
+function getEnrichedDictionary(
+  input: DictionaryInputType
+): EnrichedDictionary {
+  const inputFile =
+    getDictionaryFile(input);
+
+  const fileNameOnly =
+    normalizeFileName(inputFile);
+
+  const foundItem =
+    findManifestItem(input);
 
   if (foundItem) {
+    const file =
+      foundItem.file ||
+      foundItem.filename ||
+      foundItem.name ||
+      inputFile;
+
+    const title =
+      foundItem.title ||
+      foundItem.baslik ||
+      foundItem.name ||
+      file;
+
+    const label =
+      getDictionaryLabel(foundItem);
+
+    const dialect =
+      normalizeDialect(
+        foundItem.dialect ||
+        foundItem.lehce ||
+        foundItem.diyalekt
+      );
+
     return {
-      file: foundItem.file,
-      title: foundItem.title,
-      label: foundItem.label,
-      dialect: foundItem.dialect,
+      file,
+      title,
+      label,
+      dialect,
+      count: getDictionaryCount(input),
     };
   }
 
+  const objectInput =
+    typeof input === 'object'
+      ? input
+      : undefined;
+
+  const fallbackDialect =
+    normalizeDialect(
+      objectInput?.dialect ||
+      objectInput?.lehce ||
+      objectInput?.diyalekt ||
+      (fileNameOnly.includes('kbd')
+        ? 'DOGU'
+        : '')
+    );
+
   return {
-    file: fileNameOnly,
-    title: fileNameOnly,
-    label: '',
-    dialect: fileNameOnly.includes('Kbd')
-      ? 'DOGU'
-      : 'BATI',
+    file:
+      objectInput?.file ||
+      inputFile ||
+      fileNameOnly,
+
+    title:
+      objectInput?.title ||
+      objectInput?.baslik ||
+      objectInput?.name ||
+      inputFile ||
+      fileNameOnly,
+
+    label:
+      objectInput?.label || '',
+
+    dialect: fallbackDialect,
+    count: getDictionaryCount(input),
   };
+}
+
+function uniqueDictionaries(
+  dictionaries: EnrichedDictionary[]
+): EnrichedDictionary[] {
+  const seen = new Set<string>();
+
+  return dictionaries.filter((dictionary) => {
+    const key = normalizeFileName(
+      dictionary.file
+    );
+
+    if (!key || seen.has(key)) {
+      return false;
+    }
+
+    seen.add(key);
+    return true;
+  });
 }
 
 export function SearchBox({
@@ -74,28 +342,53 @@ export function SearchBox({
   setGoruntulenenAdet,
   limit,
 }: SearchBoxProps) {
-  const [dropdownAcik, setDropdownAcik] =
-    useState(false);
+  const [
+    listeAcik,
+    setListeAcik,
+  ] = useState(false);
 
   const [
     gelismisFiltrelerAcik,
     setGelismisFiltrelerAcik,
   ] = useState(false);
 
-  const dropdownRef =
+  const listeRef =
     useRef<HTMLDivElement>(null);
+
+  const resetCount = useCallback(() => {
+    setGoruntulenenAdet(limit);
+  }, [
+    setGoruntulenenAdet,
+    limit,
+  ]);
+
+  const handleSearchChange =
+    useCallback(
+      (
+        value:
+          | string
+          | ((previous: string) => string)
+      ) => {
+        setSearchQuery(value);
+        resetCount();
+      },
+      [
+        setSearchQuery,
+        resetCount,
+      ]
+    );
 
   useEffect(() => {
     const handleClickOutside = (
       event: MouseEvent
     ) => {
       if (
-        dropdownRef.current &&
-        !dropdownRef.current.contains(
+        listeRef.current &&
+        !listeRef.current.contains(
           event.target as Node
         )
       ) {
-        setDropdownAcik(false);
+        setListeAcik(false);
       }
     };
 
@@ -112,72 +405,171 @@ export function SearchBox({
     };
   }, []);
 
-  const handleSearchChange = useCallback(
-    (
-      value:
-        | string
-        | ((previous: string) => string)
-    ) => {
-      setSearchQuery(value);
-      setGoruntulenenAdet(limit);
-    },
-    [
-      setSearchQuery,
-      setGoruntulenenAdet,
-      limit,
-    ]
-  );
-
-  const batiSozlukleri = useMemo(
-    () =>
-      aktifSozlukler
-        .map((dictionary) =>
+  const zenginSozlukler =
+    useMemo(() => {
+      const enriched =
+        aktifSozlukler.map((dictionary) =>
           getEnrichedDictionary(
-            dictionary.file
+            dictionary as DictionaryInputType
           )
-        )
-        .filter(
+        );
+
+      return uniqueDictionaries(
+        enriched
+      );
+    }, [aktifSozlukler]);
+
+  const batiSozlukleri =
+    useMemo(
+      () =>
+        zenginSozlukler.filter(
           (dictionary) =>
             dictionary.dialect === 'BATI'
         ),
-    [aktifSozlukler]
-  );
+      [zenginSozlukler]
+    );
 
-  const doguSozlukleri = useMemo(
-    () =>
-      aktifSozlukler
-        .map((dictionary) =>
-          getEnrichedDictionary(
-            dictionary.file
-          )
-        )
-        .filter(
+  const doguSozlukleri =
+    useMemo(
+      () =>
+        zenginSozlukler.filter(
           (dictionary) =>
             dictionary.dialect === 'DOGU'
         ),
-    [aktifSozlukler]
-  );
+      [zenginSozlukler]
+    );
 
-  const seciliSozlukEtiketi = useMemo(() => {
-    if (seciliDosya === 'TUMU') {
-      if (seciliLehce === 'TUMU') {
-        return 'Tüm sözlüklerde arama';
+  const digerSozlukler =
+    useMemo(
+      () =>
+        zenginSozlukler.filter(
+          (dictionary) =>
+            dictionary.dialect !== 'BATI' &&
+            dictionary.dialect !== 'DOGU'
+        ),
+      [zenginSozlukler]
+    );
+
+  const normalizedLehce =
+    normalizeDialect(seciliLehce);
+
+  const seciliSozlukEtiketi =
+    useMemo(() => {
+      if (seciliDosya === 'TUMU') {
+        if (
+          normalizedLehce === 'TUMU'
+        ) {
+          return 'Tüm sözlüklerde arama';
+        }
+
+        if (
+          normalizedLehce === 'BATI'
+        ) {
+          return 'Tüm Batı Adığece sözlükleri';
+        }
+
+        return 'Tüm Doğu Kabardeyce sözlükleri';
       }
 
-      return seciliLehce === 'BATI'
-        ? 'Tüm Batı Adığece sözlükleri'
-        : 'Tüm Doğu Kabardeyce sözlükleri';
-    }
+      const dictionary =
+        getEnrichedDictionary(seciliDosya);
 
-    const dictionary =
-      getEnrichedDictionary(seciliDosya);
+      return `${dictionary.title}${
+        dictionary.label
+          ? ` — ${dictionary.label}`
+          : ''
+      }`;
+    }, [
+      seciliDosya,
+      normalizedLehce,
+    ]);
 
-    return `${dictionary.title}${
-      dictionary.label
-        ? ` — ${dictionary.label}`
-        : ''
-    }`;
-  }, [seciliDosya, seciliLehce]);
+  const dinamikKayitSayisi =
+    useMemo(() => {
+      const dosya =
+        String(seciliDosya || '')
+          .trim()
+          .toLowerCase();
+
+      const lehce =
+        normalizeDialect(seciliLehce);
+
+      const tekSozlukSecili =
+        dosya !== '' &&
+        dosya !== 'tumu' &&
+        dosya !== 'all' &&
+        dosya !== 'hepsi';
+
+      if (tekSozlukSecili) {
+        const secilenSozluk =
+          aktifSozlukler.find((sozluk) => {
+            const sozlukDosyasi =
+              getDictionaryFile(
+                sozluk as DictionaryInputType
+              );
+
+            return (
+              normalizeFileName(
+                sozlukDosyasi
+              ) ===
+              normalizeFileName(
+                seciliDosya
+              )
+            );
+          });
+
+        return getDictionaryCount(
+          secilenSozluk || {
+            file: seciliDosya,
+          }
+        );
+      }
+
+      if (
+        lehce === 'BATI' ||
+        lehce === 'DOGU'
+      ) {
+        return aktifSozlukler
+          .filter((sozluk) => {
+            const manifestSozlugu =
+              getManifestDictionary(
+                getDictionaryFile(
+                  sozluk as DictionaryInputType
+                )
+              );
+
+            const sozlukLehcesi =
+              sozluk.dialect ||
+              sozluk.lehce ||
+              sozluk.diyalekt ||
+              manifestSozlugu?.dialect ||
+              '';
+
+            return (
+              normalizeDialect(
+                sozlukLehcesi
+              ) === lehce
+            );
+          })
+          .reduce(
+            (toplam, sozluk) =>
+              toplam +
+              getDictionaryCount(sozluk),
+            0
+          );
+      }
+
+      return aktifSozlukler.reduce(
+        (toplam, sozluk) =>
+          toplam +
+          getDictionaryCount(sozluk),
+        0
+      );
+    }, [
+      seciliDosya,
+      seciliLehce,
+      aktifSozlukler,
+    ]);
 
   const lehceSecenekleri = [
     {
@@ -225,16 +617,15 @@ export function SearchBox({
     },
   ];
 
+  const seciliDilEtiketi =
+    dilSecenekleri.find(
+      (dil) => dil.kod === hedefDil
+    )?.etiket || 'Tümü';
+
   return (
     <section className="mx-auto w-full max-w-4xl px-4 py-4 sm:px-6 sm:py-6 lg:px-8">
-      {/* Ana arama kartı */}
-      <div className="overflow-hidden rounded-3xl border border-stone-200 bg-white shadow-xl shadow-stone-200/50 transition-shadow focus-within:shadow-rose-900/10 dark:border-stone-800 dark:bg-stone-900 dark:shadow-black/20">
-        {/* Arama alanı */}
-        <div className="relative">
-          <div className="pointer-events-none absolute left-5 top-1/2 -translate-y-1/2 text-xl text-rose-700 dark:text-rose-400">
-            ⌕
-          </div>
-
+      <div className="overflow-hidden rounded-3xl border border-stone-200 bg-white shadow-xl shadow-stone-200/50 dark:border-stone-800 dark:bg-stone-900 dark:shadow-black/20">
+        <div className="relative px-4 py-3">
           <input
             id="arama-input"
             ref={inputRef}
@@ -247,98 +638,105 @@ export function SearchBox({
             }
             placeholder="Kelime, tanım veya kök ara..."
             autoComplete="off"
-            className="h-16 w-full border-0 bg-transparent px-14 pr-5 text-base text-stone-900 outline-none placeholder:text-stone-400 focus:ring-0 dark:text-stone-100 dark:placeholder:text-stone-600 sm:h-20 sm:text-lg"
+            className="h-16 w-full rounded-2xl border-2 border-stone-200 bg-white px-4 text-base text-stone-900 shadow-sm outline-none transition focus:border-rose-600 focus:ring-4 focus:ring-rose-100 dark:border-stone-700 dark:bg-stone-950 dark:text-stone-100 dark:focus:border-rose-500 dark:focus:ring-rose-950 sm:pr-72"
           />
 
-          <div className="pointer-events-none absolute bottom-2 right-5 hidden text-xs text-stone-400 sm:block">
-            Örn: псэ, adige, yürek
+          <div className="mt-3 flex w-full items-center gap-2 sm:absolute sm:right-6 sm:top-1/2 sm:mt-0 sm:w-auto sm:-translate-y-1/2">
+            <select
+              value={mod}
+              onChange={(event) => {
+                setMod(
+                  event.target.value as AramaModu
+                );
+                resetCount();
+              }}
+              className={cn(
+                selectBoxVariants(),
+                'h-9 w-28 min-w-0 rounded-lg px-2 text-xs sm:w-32 sm:flex-none'
+              )}
+              aria-label="Eşleşme modu"
+            >
+              <option value="baslayan">
+                Başlayan
+              </option>
+              <option value="icinde">
+                İçinde
+              </option>
+              <option value="tam">
+                Tam eşleşme
+              </option>
+            </select>
+
+            <button
+              type="button"
+              onClick={() => {
+                resetCount();
+                inputRef.current?.focus();
+              }}
+              className="inline-flex h-10 flex-1 items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-rose-900 via-rose-800 to-rose-700 px-4 text-sm font-bold tracking-wide text-white shadow-lg shadow-rose-900/30 transition-all hover:-translate-y-0.5 hover:shadow-xl active:scale-95 sm:flex-none sm:px-6"
+            >
+              <span aria-hidden="true">
+                🔍
+              </span>
+              Ara
+            </button>
           </div>
         </div>
 
-        {/* Hızlı lehçe filtreleri */}
-        <div className="border-t border-stone-100 bg-stone-50/80 px-4 py-3 dark:border-stone-800 dark:bg-stone-950/50 sm:px-5">
-          <div className="flex flex-wrap items-center gap-2">
-            <span className="mr-1 text-xs font-semibold uppercase tracking-wider text-stone-400">
-              Lehçe
-            </span>
+        <div className="border-t border-stone-100 bg-stone-50/80 px-4 py-3 dark:border-stone-800 dark:bg-stone-950/50">
+          <div className="flex justify-end">
+            <div className="max-w-full overflow-x-auto">
+              <div className="flex min-w-max items-center justify-end gap-2">
+                <span className="mr-1 shrink-0 text-xs text-stone-500 dark:text-stone-400">
+                  ⌨
+                </span>
 
-            {lehceSecenekleri.map((lehce) => {
-              const aktif =
-                seciliLehce === lehce.kod;
-
-              return (
-                <button
-                  key={lehce.kod}
-                  type="button"
-                  onClick={() => {
-                    setSeciliLehce(
-                      lehce.kod
-                    );
-                    setSeciliDosya('TUMU');
-                    setGoruntulenenAdet(limit);
-                  }}
-                  className={cn(
-                    'rounded-full border px-4 py-2 text-left transition-all',
-                    aktif
-                      ? 'border-rose-700 bg-rose-800 text-white shadow-md shadow-rose-900/20 dark:border-rose-500 dark:bg-rose-700'
-                      : 'border-stone-200 bg-white text-stone-600 hover:border-rose-300 hover:bg-rose-50 dark:border-stone-700 dark:bg-stone-900 dark:text-stone-300 dark:hover:border-rose-800 dark:hover:bg-rose-950/30'
-                  )}
-                >
-                  <span className="block text-xs font-bold">
-                    {lehce.etiket}
-                  </span>
-
-                  <span
-                    className={cn(
-                      'block text-[10px]',
-                      aktif
-                        ? 'text-rose-100'
-                        : 'text-stone-400 dark:text-stone-500'
-                    )}
-                  >
-                    {lehce.aciklama}
-                  </span>
-                </button>
-              );
-            })}
-
-            <div className="ml-auto flex items-center gap-1.5">
-              <AkilliKlavye
-                inputRef={inputRef}
-                sorgu={searchQuery}
-                setSorgu={handleSearchChange}
-              />
-
-              {searchQuery && (
-                <button
-                  type="button"
-                  aria-label="Aramayı temizle"
-                  onClick={() => {
-                    handleSearchChange('');
-                    inputRef.current?.focus();
-                  }}
-                  className="rounded-lg px-2.5 py-2 text-sm text-stone-400 transition-colors hover:bg-stone-200 hover:text-rose-700 dark:hover:bg-stone-800 dark:hover:text-rose-400"
-                >
-                  ✕
-                </button>
-              )}
-
-              <button
-                type="button"
-                onClick={() =>
-                  inputRef.current?.focus()
-                }
-                className="rounded-full bg-rose-800 px-4 py-2.5 text-sm font-bold text-white shadow-md shadow-rose-900/20 transition-all hover:bg-rose-900 active:scale-95 dark:bg-rose-700 dark:hover:bg-rose-600"
-              >
-                Ara
-              </button>
+                <AkilliKlavye
+                  inputRef={inputRef}
+                  sorgu={searchQuery}
+                  setSorgu={handleSearchChange}
+                />
+              </div>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Seçili sözlük ve gelişmiş filtre düğmesi */}
-      <div className="mt-4 flex items-center justify-between gap-3 px-1">
+      <div className="mt-4 flex w-full gap-2 px-1">
+        {lehceSecenekleri.map((lehce) => {
+          const aktif =
+            normalizedLehce === lehce.kod;
+
+          return (
+            <button
+              key={lehce.kod}
+              type="button"
+              onClick={() => {
+                setSeciliLehce(lehce.kod);
+                setSeciliDosya('TUMU');
+                setListeAcik(false);
+                resetCount();
+              }}
+              className={cn(
+                filterButtonVariants({
+                  active: aktif,
+                }),
+                'flex flex-1 flex-col items-center justify-center px-3 py-1.5 text-center'
+              )}
+            >
+              <span className="font-semibold">
+                {lehce.etiket}
+              </span>
+
+              <span className="text-[10px] opacity-70">
+                {lehce.aciklama}
+              </span>
+            </button>
+          );
+        })}
+      </div>
+
+      <div className="mt-4 flex flex-wrap items-center gap-x-6 gap-y-3 px-1">
         <div className="flex min-w-0 items-center gap-2 text-xs text-stone-500 dark:text-stone-400">
           <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-amber-100 text-sm dark:bg-amber-950/40">
             📚
@@ -346,6 +744,25 @@ export function SearchBox({
 
           <span className="truncate font-medium">
             {seciliSozlukEtiketi}
+          </span>
+
+          {dinamikKayitSayisi > 0 && (
+            <span className="ml-1 rounded-md bg-stone-100 px-2 py-0.5 font-bold text-stone-700 dark:bg-stone-800 dark:text-stone-300">
+              ({dinamikKayitSayisi.toLocaleString('tr-TR')})
+            </span>
+          )}
+        </div>
+
+        <div className="flex items-center gap-2 text-xs text-stone-500 dark:text-stone-400">
+          <span aria-hidden="true">
+            🌐
+          </span>
+
+          <span>
+            Sonuç Dili:{' '}
+            <strong>
+              {seciliDilEtiketi}
+            </strong>
           </span>
         </div>
 
@@ -356,23 +773,27 @@ export function SearchBox({
               (previous) => !previous
             )
           }
-          className="flex shrink-0 items-center gap-1.5 rounded-lg px-2 py-1.5 text-xs font-semibold text-stone-500 transition-colors hover:bg-stone-100 hover:text-rose-800 dark:text-stone-400 dark:hover:bg-stone-800 dark:hover:text-rose-300"
+          className="flex shrink-0 items-center gap-1.5 rounded-lg px-2 py-1.5 text-xs font-semibold text-stone-500 transition-colors hover:bg-stone-100 hover:text-rose-800 dark:text-stone-400 dark:hover:bg-stone-800 dark:hover:text-rose-300 sm:ml-auto"
         >
-          <span>⚙</span>
+          <span aria-hidden="true">
+            ⚙
+          </span>
+
           <span className="hidden sm:inline">
             Gelişmiş filtreler
           </span>
-          <span>
-            {gelismisFiltrelerAcik ? '⌃' : '⌄'}
+
+          <span aria-hidden="true">
+            {gelismisFiltrelerAcik
+              ? '⌃'
+              : '⌄'}
           </span>
         </button>
       </div>
 
-      {/* Gelişmiş filtreler */}
       {gelismisFiltrelerAcik && (
         <div className="mt-4 space-y-5 rounded-2xl border border-stone-200 bg-white p-5 shadow-lg shadow-stone-200/40 dark:border-stone-800 dark:bg-stone-900 dark:shadow-black/20">
-          {/* Sözlük seçimi */}
-          <div ref={dropdownRef}>
+          <div ref={listeRef}>
             <label className="mb-2 block text-xs font-bold uppercase tracking-wider text-stone-500 dark:text-stone-400">
               Sözlük seçimi
             </label>
@@ -381,9 +802,9 @@ export function SearchBox({
               <button
                 type="button"
                 aria-haspopup="listbox"
-                aria-expanded={dropdownAcik}
+                aria-expanded={listeAcik}
                 onClick={() =>
-                  setDropdownAcik(
+                  setListeAcik(
                     (previous) => !previous
                   )
                 }
@@ -393,15 +814,20 @@ export function SearchBox({
                   {seciliSozlukEtiketi}
                 </span>
 
-                <span className="ml-3 text-xs text-stone-400">
-                  {dropdownAcik ? '▲' : '▼'}
+                <span
+                  className={cn(
+                    'ml-3 transition-transform',
+                    listeAcik && 'rotate-180'
+                  )}
+                >
+                  ▾
                 </span>
               </button>
 
-              {dropdownAcik && (
+              {listeAcik && (
                 <div
                   role="listbox"
-                  className="absolute left-0 right-0 top-full z-50 mt-2 max-h-72 overflow-y-auto rounded-xl border border-stone-200 bg-white p-1 shadow-2xl dark:border-stone-700 dark:bg-stone-900"
+                  className="absolute left-0 right-0 top-full z-50 mt-2 max-h-96 overflow-y-auto rounded-xl border border-stone-200 bg-white p-2 shadow-2xl dark:border-stone-700 dark:bg-stone-900"
                 >
                   <button
                     type="button"
@@ -411,71 +837,72 @@ export function SearchBox({
                     }
                     onClick={() => {
                       setSeciliDosya('TUMU');
-                      setDropdownAcik(false);
-                      setGoruntulenenAdet(limit);
+                      setListeAcik(false);
+                      resetCount();
                     }}
                     className={cn(
-                      'w-full rounded-lg px-3 py-2.5 text-left text-sm font-bold transition-colors',
+                      'flex w-full items-center gap-2 rounded-lg px-3 py-2.5 text-left text-sm font-bold transition-colors',
                       seciliDosya === 'TUMU'
                         ? 'bg-rose-50 text-rose-800 dark:bg-rose-950/40 dark:text-rose-300'
                         : 'text-stone-700 hover:bg-stone-50 dark:text-stone-300 dark:hover:bg-stone-800'
                     )}
                   >
-                    📚{' '}
-                    {seciliLehce === 'TUMU'
+                    <span aria-hidden="true">
+                      📚
+                    </span>
+
+                    {normalizedLehce === 'TUMU'
                       ? 'Tüm sözlüklerde ara'
-                      : seciliLehce === 'BATI'
-                        ? 'Tüm Batı Adığece sözlükleri'
-                        : 'Tüm Doğu Kabardeyce sözlükleri'}
+                      : normalizedLehce === 'BATI'
+                      ? 'Tüm Batı Adığece sözlükleri'
+                      : 'Tüm Doğu Kabardeyce sözlükleri'}
                   </button>
 
-                  {(seciliLehce === 'TUMU' ||
-                    seciliLehce === 'BATI') &&
-                    batiSozlukleri.length > 0 && (
-                      <DictionaryGroup
-                        title="Batı Adığece"
-                        dictionaries={
-                          batiSozlukleri
-                        }
-                        selectedFile={
-                          seciliDosya
-                        }
-                        setSelectedFile={
-                          setSeciliDosya
-                        }
-                        closeDropdown={() =>
-                          setDropdownAcik(false)
-                        }
-                        resetCount={() =>
-                          setGoruntulenenAdet(
-                            limit
-                          )
-                        }
-                      />
-                    )}
+                  {(normalizedLehce === 'TUMU' ||
+                    normalizedLehce === 'DOGU') && (
+                    <DictionaryGroup
+                      title="Doğu Kabardeyce"
+                      dictionaries={doguSozlukleri}
+                      selectedFile={seciliDosya}
+                      setSelectedFile={
+                        setSeciliDosya
+                      }
+                      closeDropdown={() =>
+                        setListeAcik(false)
+                      }
+                      resetCount={resetCount}
+                    />
+                  )}
 
-                  {(seciliLehce === 'TUMU' ||
-                    seciliLehce === 'DOGU') &&
-                    doguSozlukleri.length > 0 && (
+                  {(normalizedLehce === 'TUMU' ||
+                    normalizedLehce === 'BATI') && (
+                    <DictionaryGroup
+                      title="Batı Adığece"
+                      dictionaries={batiSozlukleri}
+                      selectedFile={seciliDosya}
+                      setSelectedFile={
+                        setSeciliDosya
+                      }
+                      closeDropdown={() =>
+                        setListeAcik(false)
+                      }
+                      resetCount={resetCount}
+                    />
+                  )}
+
+                  {normalizedLehce === 'TUMU' &&
+                    digerSozlukler.length > 0 && (
                       <DictionaryGroup
-                        title="Doğu Kabardeyce"
-                        dictionaries={
-                          doguSozlukleri
-                        }
-                        selectedFile={
-                          seciliDosya
-                        }
+                        title="Diğer Kaynaklar"
+                        dictionaries={digerSozlukler}
+                        selectedFile={seciliDosya}
                         setSelectedFile={
                           setSeciliDosya
                         }
                         closeDropdown={() =>
-                          setDropdownAcik(false)
+                          setListeAcik(false)
                         }
-                        resetCount={() =>
-                          setGoruntulenenAdet(
-                            limit
-                          )
-                        }
+                        resetCount={resetCount}
                       />
                     )}
                 </div>
@@ -483,70 +910,38 @@ export function SearchBox({
             </div>
           </div>
 
-          <div className="grid gap-5 border-t border-stone-100 pt-5 dark:border-stone-800 md:grid-cols-2">
-            {/* Arama modu */}
-            <div>
-              <label className="mb-2 block text-xs font-bold uppercase tracking-wider text-stone-500 dark:text-stone-400">
-                Eşleşme modu
-              </label>
+          <div className="border-t border-stone-100 pt-5 dark:border-stone-800">
+            <span className="mb-2 block text-xs font-bold uppercase tracking-wider text-stone-500 dark:text-stone-400">
+              Hedef sonuç dili
+            </span>
 
-              <select
-                value={mod}
-                onChange={(event) =>
-                  setMod(
-                    event.target.value as AramaModu
-                  )
-                }
-                className={cn(
-                  selectBoxVariants(),
-                  'w-full'
-                )}
-                aria-label="Arama modu seçimi"
-              >
-                <option value="baslayan">
-                  İle başlayan
-                </option>
-                <option value="icinde">
-                  İçinde geçen
-                </option>
-                <option value="tam">
-                  Tam eşleşen
-                </option>
-              </select>
-            </div>
+            <div className="flex flex-wrap gap-2">
+              {dilSecenekleri.map((dil) => {
+                const aktif =
+                  hedefDil === dil.kod;
 
-            {/* Hedef dil */}
-            <div>
-              <span className="mb-2 block text-xs font-bold uppercase tracking-wider text-stone-500 dark:text-stone-400">
-                Hedef sonuç dili
-              </span>
+                return (
+                  <button
+                    key={dil.kod}
+                    type="button"
+                    onClick={() => {
+                      setHedefDil(dil.kod);
+                      resetCount();
+                    }}
+                    className={filterButtonVariants({
+                      active: aktif,
+                    })}
+                  >
+                    <span aria-hidden="true">
+                      {dil.emoji}
+                    </span>
 
-              <div className="flex flex-wrap gap-2">
-                {dilSecenekleri.map((dil) => {
-                  const aktif =
-                    hedefDil === dil.kod;
-
-                  return (
-                    <button
-                      key={dil.kod}
-                      type="button"
-                      onClick={() => {
-                        setHedefDil(dil.kod);
-                        setGoruntulenenAdet(limit);
-                      }}
-                      className={filterButtonVariants({
-                        active: aktif,
-                      })}
-                    >
-                      <span aria-hidden="true">
-                        {dil.emoji}
-                      </span>
-
-                      <span>{dil.etiket}</span>
-                    </button>
-                  );
-                })}
-              </div>
+                    <span>
+                      {dil.etiket}
+                    </span>
+                  </button>
+                );
+              })}
             </div>
           </div>
         </div>
@@ -557,12 +952,7 @@ export function SearchBox({
 
 type DictionaryGroupProps = {
   title: string;
-  dictionaries: Array<{
-    file: string;
-    title: string;
-    label?: string;
-    dialect: string;
-  }>;
+  dictionaries: EnrichedDictionary[];
   selectedFile: string;
   setSelectedFile: (
     file: string
@@ -579,15 +969,20 @@ function DictionaryGroup({
   closeDropdown,
   resetCount,
 }: DictionaryGroupProps) {
+  if (dictionaries.length === 0) {
+    return null;
+  }
+
   return (
     <div className="mt-2 border-t border-stone-100 pt-2 dark:border-stone-800">
       <div className="px-3 py-2 text-[10px] font-bold uppercase tracking-widest text-stone-400">
-        {title}
+        {title} ({dictionaries.length})
       </div>
 
       {dictionaries.map((dictionary) => {
         const aktif =
-          selectedFile === dictionary.file;
+          normalizeFileName(selectedFile) ===
+          normalizeFileName(dictionary.file);
 
         return (
           <button
@@ -596,7 +991,9 @@ function DictionaryGroup({
             role="option"
             aria-selected={aktif}
             onClick={() => {
-              setSelectedFile(dictionary.file);
+              setSelectedFile(
+                dictionary.file
+              );
               closeDropdown();
               resetCount();
             }}
@@ -607,13 +1004,15 @@ function DictionaryGroup({
                 : 'text-stone-700 hover:bg-stone-50 dark:text-stone-300 dark:hover:bg-stone-800'
             )}
           >
-            <span className="truncate">
+            <span className="min-w-0 truncate">
               {dictionary.title}
             </span>
 
-            {dictionary.label && (
-              <span className="shrink-0 text-[10px] italic text-stone-400">
-                {dictionary.label}
+            {dictionary.count > 0 && (
+              <span className="shrink-0 text-xs font-medium text-stone-400">
+                {dictionary.count.toLocaleString(
+                  'tr-TR'
+                )}
               </span>
             )}
           </button>
