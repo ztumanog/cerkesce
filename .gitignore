@@ -17,3 +17,13 @@ tsconfig.tsbuildinfo
 .idea/
 .DS_Store
 Thumbs.db
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Geçici ve editör dosyaları
+*.wps
+
+# Yerel veri/analiz çıktıları
+src/data/
