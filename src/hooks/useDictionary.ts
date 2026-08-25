@@ -311,13 +311,26 @@ export function useDictionary() {
       veri = veri.filter((i) => i.file === seciliDosya);
     }
 
-    if (hedefDil !== "tumu") {
-      const targetLang = hedefDil.toLowerCase();
-      veri = veri.filter((i) => {
-        const itemToLang = (i.toLang || "").toLowerCase();
-        return itemToLang === targetLang || itemToLang.startsWith(targetLang);
-      });
-    }
+if (hedefDil !== "tumu") {
+  const targetLang = hedefDil.toLowerCase();
+
+  veri = veri.filter((i) => {
+    const itemToLang =
+      typeof i.toLang === "string"
+        ? i.toLang.toLowerCase()
+        : "";
+
+    const itemFromLang =
+      typeof i.fromLang === "string"
+        ? i.fromLang.toLowerCase()
+        : "";
+
+    return (
+      itemToLang === targetLang ||
+      itemFromLang === targetLang
+    );
+  });
+}
 
     if (deferredSearch.trim()) {
       const q = normalizeText(deferredSearch);

@@ -1,3 +1,7 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+  --font-display: var(--font-fraunces), serif;
+  --font-body: var(--font-ibm-plex-sans), sans-serif;
+  --font-mono-plex: var(--font-ibm-plex-mono), monospace;
+}

@@ -1,6 +1,0 @@
-node_modules
-.next/cache
-dist
-build
-✓ Created         .env.local file and added it to .gitignore
-Error: EPERM: operation not permitted, scandir 'C:\Users\ztuma\AppData\Local\ElevatedDiagnostics'

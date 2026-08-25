@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import SozlukEkrani from "@/components/SozlukEkrani";
+import SozlukEkrani from "@/components/dictionary/SozlukEkrani";
 import useDictionary from "@/hooks/useDictionary";
 
 export default function Home() {

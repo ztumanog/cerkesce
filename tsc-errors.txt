@@ -1,0 +1,50 @@
+app/page.tsx(4,26): error TS2307: Cannot find module '@/components/dictionary/SozlukEkrani' or its corresponding type declarations.
+app/page.tsx(5,27): error TS2307: Cannot find module '@/hooks/useDictionary' or its corresponding type declarations.
+src/components/dictionary/GununKelimesiKart.tsx(2,39): error TS2307: Cannot find module '@/lib/dictionaryConstants' or its corresponding type declarations.
+src/components/dictionary/GununKelimesiKart.tsx(3,37): error TS2307: Cannot find module '@/types/dictionary' or its corresponding type declarations.
+src/components/dictionary/GununKelimesiKart.tsx(4,69): error TS2307: Cannot find module '@/utils/helpers' or its corresponding type declarations.
+src/components/dictionary/KelimeKarti.tsx(4,69): error TS2307: Cannot find module '@/utils/helpers' or its corresponding type declarations.
+src/components/dictionary/KelimeKarti.tsx(5,26): error TS2307: Cannot find module '@/lib/dictionaryConstants' or its corresponding type declarations.
+src/components/dictionary/KelimeKarti.tsx(6,55): error TS2307: Cannot find module '@/types/dictionary' or its corresponding type declarations.
+src/components/dictionary/SearchBox.tsx(16,8): error TS2307: Cannot find module '@/types/dictionary' or its corresponding type declarations.
+src/components/dictionary/SearchBox.tsx(21,8): error TS2307: Cannot find module '@/lib/variants' or its corresponding type declarations.
+src/components/dictionary/SearchBox.tsx(23,20): error TS2307: Cannot find module '@/utils/utils' or its corresponding type declarations.
+src/components/dictionary/SearchBox.tsx(24,29): error TS2307: Cannot find module '@/utils/dictionaries.json' or its corresponding type declarations.
+src/components/dictionary/SearchBox.tsx(25,26): error TS2307: Cannot find module '@/components/features/AkilliKlavye' or its corresponding type declarations.
+src/components/dictionary/SearchBox.tsx(37,6): error TS7006: Parameter 'item' implicitly has an 'any' type.
+src/components/dictionary/SearchBox.tsx(134,15): error TS7006: Parameter 'dictionary' implicitly has an 'any' type.
+src/components/dictionary/SearchBox.tsx(140,12): error TS7006: Parameter 'dictionary' implicitly has an 'any' type.
+src/components/dictionary/SearchBox.tsx(149,15): error TS7006: Parameter 'dictionary' implicitly has an 'any' type.
+src/components/dictionary/SearchBox.tsx(155,12): error TS7006: Parameter 'dictionary' implicitly has an 'any' type.
+src/components/dictionary/SozlukEkrani.tsx(11,20): error TS2307: Cannot find module '@/components/layout/Header' or its corresponding type declarations.
+src/components/dictionary/SozlukEkrani.tsx(12,20): error TS2307: Cannot find module '@/components/layout/Footer' or its corresponding type declarations.
+src/components/dictionary/SozlukEkrani.tsx(13,31): error TS2307: Cannot find module '@/components/dictionary/GununKelimesiKart' or its corresponding type declarations.
+src/components/dictionary/SozlukEkrani.tsx(14,27): error TS2307: Cannot find module '@/components/dictionary/SearchBox' or its corresponding type declarations.
+src/components/dictionary/SozlukEkrani.tsx(15,25): error TS2307: Cannot find module '@/components/dictionary/KelimeKarti' or its corresponding type declarations.
+src/components/dictionary/SozlukEkrani.tsx(16,31): error TS2307: Cannot find module '@/components/ui/KelimeDetayDrawer' or its corresponding type declarations.
+src/components/dictionary/SozlukEkrani.tsx(17,23): error TS2307: Cannot find module '@/components/layout/Kaynaklar' or its corresponding type declarations.
+src/components/dictionary/SozlukEkrani.tsx(24,8): error TS2307: Cannot find module '@/types/dictionary' or its corresponding type declarations.
+src/components/dictionary/SozlukEkrani.tsx(26,31): error TS2307: Cannot find module '@/utils/helpers' or its corresponding type declarations.
+src/components/dictionary/SozlukEkrani.tsx(27,28): error TS2307: Cannot find module '@/utils/helpers' or its corresponding type declarations.
+src/components/dictionary/SozlukEkrani.tsx(399,34): error TS7006: Parameter 'kaynak' implicitly has an 'any' type.
+src/components/features/AkilliKlavye.tsx(8,26): error TS2307: Cannot find module '@/lib/dictionaryConstants' or its corresponding type declarations.
+src/components/features/AkilliKlavye.tsx(9,37): error TS2307: Cannot find module '@/constants/alphabet' or its corresponding type declarations.
+src/components/features/MultiLanguageConceptTable.tsx(2,28): error TS2307: Cannot find module '@/types/dictionary' or its corresponding type declarations.
+src/components/layout/Footer.tsx(4,31): error TS2307: Cannot find module '@/utils/helpers' or its corresponding type declarations.
+src/components/layout/Footer.tsx(5,26): error TS2307: Cannot find module '@/lib/dictionaryConstants' or its corresponding type declarations.
+src/components/ui/KelimeDetayDrawer.tsx(4,39): error TS2307: Cannot find module '@/types/dictionary' or its corresponding type declarations.
+src/components/ui/KelimeDetayDrawer.tsx(5,31): error TS2307: Cannot find module '@/utils/helpers' or its corresponding type declarations.
+src/components/ui/KelimeDetayDrawer.tsx(6,44): error TS2307: Cannot find module '@/utils/helpers' or its corresponding type declarations.
+src/constants/dictionarySources.ts(1,26): error TS2307: Cannot find module '@/utils/dictionaries.json' or its corresponding type declarations.
+src/hooks/useDictionary.ts(15,8): error TS2307: Cannot find module '@/types/dictionary' or its corresponding type declarations.
+src/hooks/useDictionary.ts(16,29): error TS2307: Cannot find module '@/utils/cleanHtml' or its corresponding type declarations.
+src/lib/DictionaryService.ts(3,53): error TS2307: Cannot find module '@/types/dictionary' or its corresponding type declarations.
+src/lib/search.ts(2,31): error TS2307: Cannot find module '@/utils/helpers' or its corresponding type declarations.
+src/lib/wordOfDay.ts(1,32): error TS2307: Cannot find module '@/types/dictionary' or its corresponding type declarations.
+src/utils/helpers.tsx(3,42): error TS2307: Cannot find module '@/lib/dictionaryConstants' or its corresponding type declarations.
+src/utils/helpers.tsx(9,8): error TS2307: Cannot find module '@/constants/dictionarySources' or its corresponding type declarations.
+src/utils/helpers.tsx(11,44): error TS2307: Cannot find module '@/constants/dictionarySources' or its corresponding type declarations.
+src/utils/helpers.tsx(96,81): error TS1501: This regular expression flag is only available when targeting 'es6' or later.
+src/utils/utils.tsx(3,29): error TS2307: Cannot find module '@/utils/dictionaries.json' or its corresponding type declarations.
+src/utils/utils.tsx(8,8): error TS2307: Cannot find module '@/types/dictionary' or its corresponding type declarations.
+src/utils/utils.tsx(20,6): error TS7006: Parameter 'item' implicitly has an 'any' type.
