@@ -1,0 +1,30 @@
+export interface RawDefinitionItem {
+  meaning?: string;
+  [key: string]: unknown;
+}
+
+export interface RawDefinition {
+  definitions?: RawDefinitionItem[];
+  full_definition_in_html?: string;
+  tanim?: string;
+  meaning?: string;
+  [key: string]: unknown;
+}
+
+export interface WordEntry {
+  id: string;
+  word: string;
+  definition: string;
+  dictionaryId: string;
+}
+
+export interface DictionaryMeta {
+  id: string;
+  name: string;
+  totalWords: number;
+}
+
+export interface DictionaryData {
+  meta: DictionaryMeta;
+  entries: Record<string, RawDefinition>;
+}

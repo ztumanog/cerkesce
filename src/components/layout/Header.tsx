@@ -17,7 +17,7 @@ interface HeaderProps {
     "yaziAna" | "yaziAlt" | "kenarlik" | "kartArkaPlan"
   >;
 }
-// dictionaryConstants.ts
+
 export const KURUMSAL = {
   kirmizi: "#b91c1c",
 };
@@ -182,7 +182,8 @@ export default function Header({
         <span aria-hidden="true">📚</span>
 
         <strong>
-          {kayitSayisi.toLocaleString("tr-TR")}+ Kelime Kaydı
+          {kayitSayisi.toLocaleString("tr-TR")}
+          {sozlukSayisi > 1 ? "+" : ""} Kelime Kaydı
         </strong>
 
         <span aria-hidden="true">&bull;</span>

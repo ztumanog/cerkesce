@@ -1,185 +1,109 @@
-"use client";
+import React from 'react';
+import { z } from 'zod';
 
-import React from "react";
+// -----------------------------------------------------------------------------
+// 1. ZOD SCHEMA & TYPES (Strict Data Validation)
+// -----------------------------------------------------------------------------
 
-import {
-  KURUMSAL,
-  SOZLUK_META,
-} from "@/lib/dictionaryConstants";
+export const LehceEnum = z.enum(['Adigece', 'Kabardeyce', 'Abzahce', 'Sapsugca']);
+export type Lehce = z.infer<typeof LehceEnum>;
 
-import type { DictionaryItem } from "@/types/dictionary";
+export const KelimeMetaSchema = z.object({
+  etimoloji: z.string().optional(),
+  kokKelime: z.string().optional(),
+  ornekCumle: z.string().optional(),
+  ornekCumleCeviri: z.string().optional(),
+  sesDosyasiUrl: z.string().url().optional(),
+});
 
-import {
-  kaynagiDuzenle,
-  tanimlariBicimlendir,
-  type TemaTipi,
-} from "@/utils/helpers";
+export type KelimeMeta = z.infer<typeof KelimeMetaSchema>;
 
+export const GununKelimesiSchema = z.object({
+  id: z.string().uuid(),
+  kelime: z.string().min(1),
+  anlam: z.string().min(1),
+  lehce: LehceEnum,
+  tarih: z.string(),
+  meta: KelimeMetaSchema.optional(),
+});
 
-interface YerelSozlukMeta {
-  dilCifti: string;
-  yazar: string;
+export type GununKelimesi = z.infer<typeof GununKelimesiSchema>;
+
+interface GununKelimesiKartProps {
+  readonly veri: GununKelimesi;
+  readonly seciliLehce?: Lehce;
+  readonly className?: string;
 }
 
-interface GununKelimesiKartiProps {
-  gununKelimesi: DictionaryItem | null;
-  karanlikMod: boolean;
-  metinBoyutu: number;
-  tema: TemaTipi;
-  onClick: () => void;
-}
+// -----------------------------------------------------------------------------
+// 2. SERVER / CLIENT HELPER COMPONENT (React 19 & Next.js 16 Ready)
+// -----------------------------------------------------------------------------
 
-export default function GununKelimesiKarti({
-  gununKelimesi,
-  metinBoyutu,
-  tema,
-  onClick,
-}: GununKelimesiKartiProps) {
-  if (!gununKelimesi) return null;
+export function GununKelimesiKart({
+  veri,
+  seciliLehce,
+  className = '',
+}: GununKelimesiKartProps) {
+  // Safe Parse & Fallback
+  const parsedData = GununKelimesiSchema.safeParse(veri);
 
-  const tanimMetni =
-    gununKelimesi.definitions?.[0]?.meaning ||
-    gununKelimesi.full_definition_in_html ||
-    (typeof gununKelimesi.tanim === "string"
-      ? gununKelimesi.tanim
-      : "") ||
-    gununKelimesi.meaning ||
-    "";
-
-  /*
-   * Tüm renkler ortak tema yapısından alınıyor.
-   * Böylece açık/koyu mod renkleri otomatik olarak uyumlu kalır.
-   */
-  const arkaPlanRengi = tema.kartArkaPlan || tema.arkaPlan;
-  const kenarlikRengi = tema.kenarlik;
-  const anaYaziRengi = tema.yaziAna;
-  const altYaziRengi = tema.yaziAlt;
-  const vurguRengi = KURUMSAL.kirmizi || anaYaziRengi;
-
-  const isBatil = gununKelimesi.dialect === "BATI";
-
-  /*
-   * Kaynak verisini güvenli şekilde al
-   */
-  const rawKaynak = gununKelimesi.kaynak_sozluk as unknown;
-
-  let kaynakStr = "";
-  let kaynakMeta: YerelSozlukMeta | null = null;
-
-  if (typeof rawKaynak === "string") {
-    kaynakStr = rawKaynak;
-  } else if (rawKaynak && typeof rawKaynak === "object") {
-    kaynakMeta = rawKaynak as YerelSozlukMeta;
+  if (!parsedData.success) {
+    return (
+      <div 
+        role="alert" 
+        className="p-4 rounded-lg bg-red-50 border border-red-200 text-red-700 text-sm"
+      >
+        Kelime verisi doğrulanırken bir hata oluştu.
+      </div>
+    );
   }
 
-  /*
-   * Dosya adını string olarak al
-   */
-  const dosyaAdi =
-    typeof gununKelimesi.file === "string"
-      ? gununKelimesi.file
-      : kaynakStr;
-
-  /*
-   * Metadata veya yedek fonksiyondan kaynak ismi üret
-   */
-  const metaObj = dosyaAdi
-    ? (SOZLUK_META[dosyaAdi] as YerelSozlukMeta | undefined)
-    : undefined;
-
-  let kaynakIsmi = "";
-
-  if (metaObj) {
-    kaynakIsmi = `${metaObj.dilCifti} — ${metaObj.yazar}`;
-  } else if (kaynakMeta) {
-    kaynakIsmi = `${kaynakMeta.dilCifti} — ${kaynakMeta.yazar}`;
-  } else {
-    const duzenlenmis = kaynagiDuzenle(dosyaAdi) as unknown;
-
-    if (typeof duzenlenmis === "string") {
-      kaynakIsmi = duzenlenmis;
-    } else if (duzenlenmis && typeof duzenlenmis === "object") {
-      const obj = duzenlenmis as YerelSozlukMeta;
-      kaynakIsmi = `${obj.dilCifti} — ${obj.yazar}`;
-    } else {
-      kaynakIsmi = dosyaAdi;
-    }
-  }
+  const { kelime, anlam, lehce, meta } = parsedData.data;
+  const metaObj: KelimeMeta = meta ?? {};
+  const aktifLehce: Lehce = seciliLehce ?? lehce;
 
   return (
-    <div
-      onClick={onClick}
-      onKeyDown={(e) => {
-        if (e.key === "Enter" || e.key === " ") {
-          e.preventDefault();
-          onClick();
-        }
-      }}
-      style={{
-        backgroundColor: arkaPlanRengi,
-        borderLeft: `4px solid ${vurguRengi}`,
-        borderTop: `1px solid ${kenarlikRengi}`,
-        borderRight: `1px solid ${kenarlikRengi}`,
-        borderBottom: `1px solid ${kenarlikRengi}`,
-      }}
-      className="box-border w-full cursor-pointer rounded-[3px] px-5 py-[18px] text-left shadow-[0_2px_5px_rgba(0,0,0,0.04)] transition-all duration-150 ease-in-out hover:brightness-[0.98] focus:outline-none focus:ring-1 focus:ring-red-900/20"
-      role="button"
-      tabIndex={0}
-      aria-label="Günün kelimesi detaylarını aç"
+    <article
+      aria-labelledby="gunun-kelimesi-baslik"
+      className={`p-6 rounded-2xl bg-white border border-slate-200 shadow-sm transition-all hover:shadow-md ${className}`}
     >
-      {/* Üst etiket satırı ve lehçe rozeti */}
-      <div className="mb-2.5 flex items-center justify-between gap-3">
-        <span
-          style={{
-            color: vurguRengi,
-            fontSize: `${Math.max(11, metinBoyutu * 0.75)}px`,
-          }}
-          className="font-bold uppercase tracking-[1.5px]"
-        >
-          ✨ Günün Kelimesi
+      <header className="flex justify-between items-center mb-4">
+        <span className="text-xs font-semibold uppercase tracking-wider text-indigo-600 bg-indigo-50 px-3 py-1 rounded-full border border-indigo-100">
+          Günün Kelimesi
         </span>
+        <span className="text-xs font-medium text-slate-500 bg-slate-100 px-2.5 py-1 rounded-md">
+          {aktifLehce}
+        </span>
+      </header>
 
-        {gununKelimesi.dialect && (
-          <span
-            style={{
-              color: vurguRengi,
-              backgroundColor: arkaPlanRengi,
-              borderColor: kenarlikRengi,
-              fontSize: `${Math.max(10, metinBoyutu * 0.7)}px`,
-            }}
-            className="rounded-[2px] border px-1.5 py-0.5 font-bold uppercase"
-          >
-            {isBatil ? "🟢 BATI ADIGECE" : "🔵 DOĞU KABARDEYCE"}
-          </span>
-        )}
+      <div className="space-y-2 mb-4">
+        <h3 id="gunun-kelimesi-baslik" className="text-2xl font-bold text-slate-900">
+          {kelime}
+        </h3>
+        <p className="text-base text-slate-600 leading-relaxed">
+          {anlam}
+        </p>
       </div>
 
-      {/* Kelime başlığı */}
-      <div
-        style={{
-          color: anaYaziRengi,
-          fontSize: `${metinBoyutu * 1.3}px`,
-        }}
-        className="mb-1.5 font-serif font-bold leading-[1.3]"
-      >
-        {gununKelimesi.kelime}
-      </div>
+      {metaObj.ornekCumle && (
+        <figure className="mt-4 pt-4 border-t border-slate-100 bg-slate-50/50 p-3 rounded-xl">
+          <blockquote className="text-sm font-medium text-slate-800 italic">
+            &ldquo;{metaObj.ornekCumle}&rdquo;
+          </blockquote>
+          {metaObj.ornekCumleCeviri && (
+            <figcaption className="text-xs text-slate-500 mt-1">
+              {metaObj.ornekCumleCeviri}
+            </figcaption>
+          )}
+        </figure>
+      )}
 
-      {/* Tanım içeriği */}
-      <div
-        style={{
-          color: altYaziRengi,
-          fontSize: `${metinBoyutu * 0.9}px`,
-        }}
-      >
-        {tanimlariBicimlendir(
-          tanimMetni,
-          tema,
-          gununKelimesi.kelime,
-          metinBoyutu,
-          kaynakIsmi
-        )}
-      </div>
-    </div>
+      {metaObj.etimoloji && (
+        <footer className="mt-4 text-xs text-slate-400">
+          <span>Etimoloji: </span>
+          <span className="text-slate-600 font-medium">{metaObj.etimoloji}</span>
+        </footer>
+      )}
+    </article>
   );
 }

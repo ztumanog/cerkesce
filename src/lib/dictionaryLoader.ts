@@ -1,407 +1,174 @@
-import type {
-  DictionaryItem,
-  DictionaryMeta,
-  LehceTipi,
-} from "@/types/dictionary";
+/**
+ * @file src/lib/dictionaryLoader.ts
+ * @description Optimize edilmiş, batch (toplu) ve güvenli sözlük JSON yükleyici modülü.
+ */
 
-type SozlukVerisi =
-  | DictionaryMeta
-  | DictionaryItem
-  | Record<string, unknown>;
-
-const metin = (value: unknown): string => {
-  return typeof value === "string"
-    ? value.trim()
-    : "";
-};
-
-const kucult = (value: unknown): string => {
-  return metin(value)
-    .toLocaleLowerCase("tr-TR")
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "");
-};
+import type { DictionaryItem, DictionaryMeta } from "@/types/dictionary";
 
 /**
- * Veriyi arama yapılabilir metne dönüştürür.
+ * Yükleme işlemlerinin standart dönüş tipini belirten arabirim.
  */
-const veriyiMetneCevir = (
-  veri: unknown
-): string => {
-  if (veri === null || veri === undefined) {
-    return "";
-  }
-
-  if (
-    typeof veri === "string" ||
-    typeof veri === "number" ||
-    typeof veri === "boolean"
-  ) {
-    return String(veri);
-  }
-
-  if (Array.isArray(veri)) {
-    return veri
-      .map((item) => veriyiMetneCevir(item))
-      .join(" ");
-  }
-
-  if (typeof veri === "object") {
-    return Object.entries(veri)
-      .map(([anahtar, deger]) => {
-        return `${anahtar} ${veriyiMetneCevir(
-          deger
-        )}`;
-      })
-      .join(" ");
-  }
-
-  return "";
-};
+export interface DictionaryLoadResult<T = unknown> {
+  success: boolean;
+  data?: T;
+  error?: string;
+}
 
 /**
- * Tek bir sözlük kaydının arama metnine uyup uymadığını kontrol eder.
+ * Tek bir JSON dosyasını güvenli şekilde HTTP isteği ile yükler.
+ * @param jsonPath Yüklenecek JSON dosyasının bağıl veya tam yolu.
  */
-export const sozlukAramayaUyuyorMu = (
-  sozluk: unknown,
-  aramaMetni: string
-): boolean => {
-  const filtre = kucult(aramaMetni);
+export async function loadDictionaryJson<T = unknown>(
+  jsonPath: string
+): Promise<DictionaryLoadResult<T>> {
+  try {
+    // 1. Path sanitize/doğrulama kontrolü
+    if (!jsonPath || typeof jsonPath !== "string") {
+      return {
+        success: false,
+        error: "Geçersiz dosya yolu",
+      };
+    }
 
-  if (!filtre) {
-    return true;
+    console.log(`[Loader] 📥 Yükleniyor: ${jsonPath}`);
+
+    // 2. Fetch isteği ve 10 saniyelik zaman aşımı (Timeout) kontrolü
+    const response = await fetch(jsonPath, {
+      headers: { Accept: "application/json" },
+      signal: AbortSignal.timeout(10000),
+    });
+
+    if (!response.ok) {
+      return {
+        success: false,
+        error: `HTTP ${response.status}: ${response.statusText}`,
+      };
+    }
+
+    const rawText = await response.text();
+    const trimmedText = rawText.trim();
+
+    // 3. JSON formatı ön kontrolü
+    if (!trimmedText.startsWith("{") && !trimmedText.startsWith("[")) {
+      console.error(
+        `[Loader] ❌ ${jsonPath} - Geçersiz JSON formatı! İlk 100 karakter:`,
+        trimmedText.substring(0, 100)
+      );
+      return {
+        success: false,
+        error: `Geçerli JSON değil. İlk 100 karakter: "${trimmedText.substring(0, 100)}"`,
+      };
+    }
+
+    const parsedData = JSON.parse(trimmedText) as T;
+    console.log(`[Loader] ✅ ${jsonPath} başarıyla yüklendi`);
+
+    return {
+      success: true,
+      data: parsedData,
+    };
+  } catch (err) {
+    const errorMessage = err instanceof Error ? err.message : "Bilinmeyen hata";
+    console.error(`[Loader] ❌ ${jsonPath}:`, errorMessage);
+    return {
+      success: false,
+      error: errorMessage,
+    };
   }
-
-  const sozlukMetni = kucult(
-    veriyiMetneCevir(sozluk)
-  );
-
-  return sozlukMetni.includes(filtre);
-};
+}
 
 /**
- * Sözlük kayıtlarını arama metnine göre filtreler.
+ * Dosya listesini grup (batch) halinde ve kısa gecikmelerle yükler.
+ * Ağ kilitlenmelerini önlemek için throttling uygular.
+ * 
+ * @param filePaths Yüklenecek dosya yolları dizisi
+ * @param batchSize Aynı anda paralel yüklenecek dosya sayısı (Varsayılan: 5)
  */
-export const sozlukAra = <T>(
-  sozlukler: T[],
-  aramaMetni: string
-): T[] => {
-  const filtre = kucult(aramaMetni);
+export async function loadDictionariesBatch<T = unknown>(
+  filePaths: string[],
+  batchSize: number = 5
+): Promise<DictionaryLoadResult<T>[]> {
+  const results: DictionaryLoadResult<T>[] = [];
 
-  if (!filtre) {
-    return sozlukler;
+  console.log(
+    `[Loader] 🔄 Batch yükleme başladı: Toplam ${filePaths.length} dosya, ${batchSize}'erli gruplar.`
+  );
+
+  for (let i = 0; i < filePaths.length; i += batchSize) {
+    const batch = filePaths.slice(i, i + batchSize);
+    console.log(
+      `[Loader] 📦 Grup ${Math.floor(i / batchSize) + 1}/${Math.ceil(filePaths.length / batchSize)} işleniyor...`
+    );
+
+    // Aynı gruptaki dosyaları paralel olarak yükle
+    const batchResults = await Promise.allSettled(
+      batch.map((path) => loadDictionaryJson<T>(path))
+    );
+
+    // Sonuçları derle
+    batchResults.forEach((result, index) => {
+      if (result.status === "fulfilled") {
+        results.push(result.value);
+      } else {
+        console.error(
+          `[Loader] ❌ ${batch[index]} - İstek reddedildi:`,
+          result.reason
+        );
+        results.push({
+          success: false,
+          error: `Promise rejected: ${result.reason}`,
+        });
+      }
+    });
+
+    // Sunucuyu yormamak için gruplar arasına 100ms gecikme koy
+    if (i + batchSize < filePaths.length) {
+      await new Promise((resolve) => setTimeout(resolve, 100));
+    }
   }
 
-  return sozlukler.filter((sozluk) =>
-    sozlukAramayaUyuyorMu(
-      sozluk,
-      aramaMetni
-    )
+  const successCount = results.filter((r) => r.success).length;
+  console.log(
+    `[Loader] ✅ Tüm gruplar yüklendi: ${successCount}/${filePaths.length} başarılı`
   );
-};
+
+  return results;
+}
 
 /**
- * Sözlüğün gerçek dosya adını döndürür.
+ * Sözlük manifest dosyasını (`/data/dictionaries.json`) yükler ve doğrudan liste döndürür.
  */
-export const sozlukDosyasi = (
-  sozluk: SozlukVerisi
-): string => {
-  const item = sozluk as Record<string, unknown>;
-
-  return (
-    metin(item.file) ||
-    metin(item.kaynak_sozluk) ||
-    metin(item.filename)
-  );
-};
-
-/**
- * Kullanıcıya gösterilecek sözlük adını döndürür.
- */
-export const sozlukGorunenAdi = (
-  sozluk: SozlukVerisi
-): string => {
-  const item = sozluk as Record<string, unknown>;
-
-  return (
-    metin(item.title) ||
-    metin(item.shortLabel) ||
-    metin(item.label) ||
-    metin(item.ad) ||
-    metin(item.dictionaryName) ||
-    sozlukDosyasi(sozluk).replace(
-      /\.json$/i,
-      ""
-    ) ||
-    "İsimsiz sözlük"
-  );
-};
-
-/**
- * Huvaj ve İbrahim Alhaz Abaze istisnasını tespit eder.
- */
-export const ciftDiyalektIstisnasiMi = (
-  sozluk: SozlukVerisi
-): boolean => {
-  const item = sozluk as Record<string, unknown>;
-
-  const dosya = kucult(
-    sozlukDosyasi(sozluk)
-  );
-
-  const baslik = kucult(item.title);
-
-  const yazar = kucult(
-    item.author || item.yazar
-  );
-
-  const huvajMi =
-    dosya.includes("huvaj") ||
-    baslik.includes("huvaj") ||
-    yazar.includes("huvaj");
-
-  const abazeMi =
-    dosya.includes("abaze") ||
-    baslik.includes("abaze") ||
-    yazar.includes("abaze") ||
-    yazar.includes("ibrahim alhaz");
-
-  return huvajMi || abazeMi;
-};
-
-/**
- * Sözlüğün hangi diyalektlerde gösterileceğini döndürür.
- */
-export const sozlukDiyalektleri = (
-  sozluk: SozlukVerisi
-): string[] => {
-  if (ciftDiyalektIstisnasiMi(sozluk)) {
-    return ["BATI", "DOGU"];
+export async function loadManifest(): Promise<DictionaryMeta[]> {
+  const result = await loadDictionaryJson<DictionaryMeta[]>("/data/dictionaries.json");
+  if (result.success && Array.isArray(result.data)) {
+    return result.data;
   }
-
-  const item = sozluk as Record<string, unknown>;
-
-  const dialect = kucult(
-    item.dialect ||
-      item.lehce ||
-      item.diyalekt
-  );
-
-  if (
-    dialect === "bati" ||
-    dialect.includes("bati")
-  ) {
-    return ["BATI"];
-  }
-
-  if (
-    dialect === "dogu" ||
-    dialect.includes("dogu")
-  ) {
-    return ["DOGU"];
-  }
-
   return [];
-};
+}
 
 /**
- * Arayüzdeki diyalekt değerini sistem değerine çevirir.
+ * Manifest içindeki tüm aktif sözlük verilerini yükler ve bir Map yapısında döndürür.
+ * 
+ * @param manifest Aktif sözlüklerin meta veri dizisi
  */
-export const diyalektKodunaCevir = (
-  lehce: LehceTipi
-): string => {
-  const filtre = kucult(lehce);
+export async function loadAllDictionaries(
+  manifest: DictionaryMeta[]
+): Promise<Map<string, DictionaryItem[]>> {
+  const dictionaryMap = new Map<string, DictionaryItem[]>();
 
-  if (
-    !filtre ||
-    filtre === "tumu" ||
-    filtre === "hepsi" ||
-    filtre === "all"
-  ) {
-    return "TUMU";
-  }
+  // Sadece aktif ve geçerli dosya yolu olan sözlüklerin yollarını al
+  const filePaths = manifest
+    .filter((m) => m.active !== false && m.file)
+    .map((m) => (m.file.startsWith("/") ? m.file : `/data/${m.file}`));
 
-  if (
-    filtre.includes("bati") ||
-    filtre.includes("adige")
-  ) {
-    return "BATI";
-  }
+  const batchResults = await loadDictionariesBatch<DictionaryItem[]>(filePaths, 5);
 
-  if (
-    filtre.includes("dogu") ||
-    filtre.includes("kabardey")
-  ) {
-    return "DOGU";
-  }
+  batchResults.forEach((res, index) => {
+    if (res.success && res.data) {
+      const path = filePaths[index];
+      dictionaryMap.set(path, res.data);
+    }
+  });
 
-  return "";
-};
-
-/**
- * Sözlük diyalekt filtresine uyuyor mu?
- */
-export const diyalektUyuyorMu = (
-  sozluk: SozlukVerisi,
-  seciliLehce: LehceTipi
-): boolean => {
-  const filtre =
-    diyalektKodunaCevir(seciliLehce);
-
-  if (!filtre || filtre === "TUMU") {
-    return true;
-  }
-
-  return sozlukDiyalektleri(sozluk)
-    .includes(filtre);
-};
-
-/**
- * targetLanguage alanını standartlaştırır.
- */
-export const hedefDilKodu = (
-  sozluk: SozlukVerisi
-): string => {
-  const item = sozluk as Record<string, unknown>;
-
-  const dil = kucult(
-    item.targetLanguage ||
-      item.target_language ||
-      item.toLang ||
-      item.language ||
-      item.dil
-  );
-
-  if (
-    dil === "en" ||
-    dil === "eng" ||
-    dil.includes("ingiliz")
-  ) {
-    return "en";
-  }
-
-  if (
-    dil === "ar" ||
-    dil === "ara" ||
-    dil.includes("arap")
-  ) {
-    return "ar";
-  }
-
-  if (
-    dil === "tr" ||
-    dil === "tur" ||
-    dil === "tu" ||
-    dil.includes("turk")
-  ) {
-    return "tr";
-  }
-
-  if (
-    dil === "ru" ||
-    dil === "rus" ||
-    dil.includes("rus")
-  ) {
-    return "ru";
-  }
-
-  if (
-    dil === "ady" ||
-    dil.includes("adige")
-  ) {
-    return "ady";
-  }
-
-  if (
-    dil === "kbd" ||
-    dil.includes("kabardey")
-  ) {
-    return "kbd";
-  }
-
-  return "";
-};
-
-/**
- * Arayüzde seçilen hedef dil değerini sistem koduna dönüştürür.
- */
-const hedefDilFiltresiniKodaCevir = (
-  dil: string
-): string => {
-  const filtre = kucult(dil);
-
-  if (
-    !filtre ||
-    filtre === "tumu" ||
-    filtre === "hepsi" ||
-    filtre === "all"
-  ) {
-    return "TUMU";
-  }
-
-  if (
-    filtre === "tr" ||
-    filtre === "tur" ||
-    filtre === "tu" ||
-    filtre.includes("turk")
-  ) {
-    return "tr";
-  }
-
-  if (
-    filtre === "en" ||
-    filtre === "eng" ||
-    filtre.includes("ingiliz")
-  ) {
-    return "en";
-  }
-
-  if (
-    filtre === "ar" ||
-    filtre === "ara" ||
-    filtre.includes("arap")
-  ) {
-    return "ar";
-  }
-
-  if (
-    filtre === "ru" ||
-    filtre === "rus" ||
-    filtre.includes("rus")
-  ) {
-    return "ru";
-  }
-
-  if (
-    filtre === "ady" ||
-    filtre.includes("adige")
-  ) {
-    return "ady";
-  }
-
-  if (
-    filtre === "kbd" ||
-    filtre.includes("kabardey")
-  ) {
-    return "kbd";
-  }
-
-  return filtre;
-};
-
-/**
- * Dil filtresine göre sözlük kontrolü.
- */
-export const hedefDilUyuyorMu = (
-  sozluk: SozlukVerisi,
-  seciliDil: string
-): boolean => {
-  const filtre =
-    hedefDilFiltresiniKodaCevir(seciliDil);
-
-  if (!filtre || filtre === "TUMU") {
-    return true;
-  }
-
-  return hedefDilKodu(sozluk) === filtre;
-};
+  return dictionaryMap;
+}

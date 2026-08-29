@@ -2,7 +2,7 @@
   {
     "file": "0.Ady-Ady_AIG.json",
     "title": "Адыгабзэм изэхэф гущı1алъ (Adıgece Açıklamalı Sözlük)",
-    "dialect": "BATI",
+    "dialect": "western",
     "originalTitle": "Адыгабзэм изэхэф гущыӀалъ",
     "author": "Adıgey Sosyal Bilimler Araştırma Enstitüsü (AIG)",
     "editor": "A. N. Abregov, N. T. Gışev",
@@ -16,7 +16,7 @@
   {
     "file": "1.Ady-Ady_AP.json",
     "title": "Adıgece-Rusça Sözlük",
-    "dialect": "BATI",
+    "dialect": "western",
     "originalTitle": "Адыгэ-урыс псалъалъэ",
     "author": "Prof. Dr. Mirabil L. Apaşev",
     "year": "2008",
@@ -29,7 +29,7 @@
   {
     "file": "10.En-Ady_Adam.json",
     "title": "English-Adyghe Dictionary",
-    "dialect": "BATI",
+    "dialect": "western",
     "author": "Adam Shagash",
     "year": "2020",
     "total_words": 6250,
@@ -130,7 +130,7 @@
   {
     "file": "2.Ady-Ara.json",
     "title": "Adıgece-Arapça Sözlük (قاموس شركسي - عربي)",
-    "dialect": "BATI",
+    "dialect": "western",
     "author": "Dr. Adel Abdulsalam Lash",
     "year": "2013",
     "total_words": 12978,
@@ -169,7 +169,7 @@
   {
     "file": "23.Rus-Ady_Blaghoj.json",
     "title": "Русско-адыгейский словарь (Rusça-Adıgece Sözlük)",
-    "dialect": "BATI",
+    "dialect": "western",
     "author": "Prof. Dr. Ramazan Blaghoj",
     "year": "1991",
     "total_words": 3476,
@@ -181,7 +181,7 @@
   {
     "file": "24.Rus-Ady_UAG.json",
     "title": "Русско-адыгейский словарь (Rusça-Adıgece Sözlük)",
-    "dialect": "BATI",
+    "dialect": "western",
     "shortLabel": "Vodozhdokova (1960)",
     "author": "U. A. Gethanoko, X. D. Odezhdeko",
     "year": "1960",
@@ -193,7 +193,7 @@
   {
     "file": "25.Rus-Ady_UASP.json",
     "title": "Русско-адыгейский школьный словарь (Rusça-Adıgece Okul Sözlüğü)",
-    "dialect": "BATI",
+    "dialect": "western",
     "author": "UASP",
     "sourceLanguage": "ru",
     "targetLanguage": "ady",
@@ -236,7 +236,7 @@
   {
     "file": "29.Tur-Ady_Teshu.json",
     "title": "Türkçe-Adıgece Sözlük",
-    "dialect": "BATI",
+    "dialect": "western",
     "author": "Cevdet Tharkaho, Teshu Hasan",
     "year": "1991",
     "total_words": 12117,
@@ -248,7 +248,7 @@
   {
     "file": "3.Ady-En.json",
     "title": "Адыгэбзэ-инджылыбзэ гущı1алъэ (Adıgece-İngilizce Sözlük)",
-    "dialect": "BATI",
+    "dialect": "western",
     "shortLabel": "Derleme Kaynak",
     "author": "Çevrim içi dijital veri tabanı",
     "sourceLanguage": "ady",
@@ -258,7 +258,7 @@
   {
     "file": "30.Ady-Rus_ThreeVolumes.json",
     "title": "Толковый словарь адыгейского языка в 3-х томах (3 Ciltlik Açıklamalı Sözlük)",
-    "dialect": "BATI",
+    "dialect": "western",
     "shortLabel": "Tharkaho (1991)",
     "author": "Adıgey Sosyal Bilimler Araştırma Enstitüsü",
     "year": "2011",
@@ -270,7 +270,7 @@
   {
     "file": "31.Tu-Ady_Hilmi.json",
     "title": "Türkçe-Adıgece Sözlük",
-    "dialect": "BATI",
+    "dialect": "western",
     "author": "Açumıj Hilmi",
     "year": "2013",
     "total_words": 26111,
@@ -294,7 +294,7 @@
   {
     "file": "33.Ady-Rus-1960.json",
     "title": "Адыгейско-русский словарь (Adıgece-Rusça Sözlük)",
-    "dialect": "BATI",
+    "dialect": "western",
     "year": "1960",
     "sourceLanguage": "ady",
     "targetLanguage": "ru",
@@ -305,7 +305,7 @@
   {
     "file": "4.Ady-En_Adam.json",
     "title": "Adyghe-English Dictionary",
-    "dialect": "BATI",
+    "dialect": "western",
     "author": "Adam Shagash (Şıgaje Adam)",
     "year": "2020",
     "total_words": 6445,
@@ -342,7 +342,7 @@
   {
     "file": "7.Ady-Rus_Tharkaho.json",
     "title": "Адыгейско-русский словарь (Adıgece-Rusça Sözlük)",
-    "dialect": "BATI",
+    "dialect": "western",
     "author": "Prof. Dr. Cevdet Tharkaho (Tharkaho Yoxıyt)",
     "total_words": 8636,
     "sourceLanguage": "ady",
@@ -354,7 +354,7 @@
   {
     "file": "8.Ady-Tur_Huvaj.json",
     "title": "Adıgece-Türkçe Sözlük",
-    "dialect": "BATI",
+    "dialect": "western",
     "author": "Fahri Huvaj",
     "total_words": 17858,
     "sourceLanguage": "ady",
@@ -365,7 +365,7 @@
   {
     "file": "9.En-Ady.json",
     "title": "English-Adyghe Dictionary (İngilizce-Adıgece Sözlük)",
-    "dialect": "BATI",
+    "dialect": "western",
     "author": "Çevrim içi dijital korpus",
     "total_words": 3056,
     "sourceLanguage": "en",

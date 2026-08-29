@@ -1,333 +1,258 @@
-import type {
-  Dispatch,
-  RefObject,
-  SetStateAction,
-} from "react";
+/**
+ * @file src/types/dictionary.ts
+ * @description Çerkesçe Sözlük projesinin tüm Zod şemaları, TypeScript tipleri 
+ * ve tip koruma (type guard) fonksiyonlarını içeren merkezi tip dosyası.
+ */
+import type { Dispatch, SetStateAction, RefObject } from "react";
+import { z } from "zod";
 
-export type AramaModu =
-  | "icinde"
-  | "baslangic"
-  | "tam"
-  | "akilli"
-  | string;
+// ============================================================================
+// 1. HELPER & UTILITY FUNCTIONS
+// ============================================================================
 
-export type LehceTipi =
-  | "Tümü"
-  | "Batı Adığece"
-  | "Doğu Kabardeyce"
-  | "TUMU"
-  | "BATI"
-  | "DOGU"
-  | string;
-
-export type SozlukKaydi =
-  Record<string, unknown>;
-
-export type Dialect =
-  | "BATI"
-  | "DOGU"
-  | string;
-
-export interface SozlukBilgisi {
-  id: string;
-  ad: string;
-  yazar?: string;
-  kelimeSayisi: number;
+export function assertNever(x: never): never {
+  throw new Error(`Beklenmeyen değer ile karşılaşıldı: ${JSON.stringify(x)}`);
 }
 
-export interface SozlukAnlam {
-  meaning?: string;
-  language?: string;
-  [key: string]: unknown;
+// ============================================================================
+// 2. ZOD SCHEMAS (Çalışma Zamanı Doğrulamaları)
+// ============================================================================
+
+/** 
+ * Çerkesçe Lehçe Seçenekleri (Veri dönüştürme - Preprocess)
+ * JSON'dan "eastern" gelse bile bunu "DOGU" tipine çevirir, tipleri temiz tutar.
+ */
+export const CircassianDialectSchema = z.preprocess((val) => {
+  if (typeof val === "string") {
+    const kucuk = val.toLowerCase();
+    if (kucuk === "eastern" || kucuk === "dogu") return "DOGU";
+    if (kucuk === "western" || kucuk === "bati") return "BATI";
+  }
+  return val;
+}, z.enum(["DOGU", "BATI"]));
+
+/** Sözlük Hedef Dilleri */
+export const TargetLanguageSchema = z.enum(["turkish", "russian", "english"]);
+
+/** Arama Modları */
+export const SearchModeSchema = z.enum(["exact", "prefix", "contains", "fuzzy"]);
+
+/** Arama Modu Enum Tanımı */
+export enum AramaModuEnum {
+  EXACT = "exact",
+  PREFIX = "prefix",
+  CONTAINS = "contains",
+  FUZZY = "fuzzy",
 }
 
-export interface DictionaryMeta {
-  file: string;
-  title?: string;
-  label?: string;
-  shortLabel?: string;
-  dialect?: Dialect;
-  lehce?: string;
-  diyalekt?: string;
+/** Filtreleme için Lehçe Seçenekleri */
+export const LehceTipiSchema = z.enum(["TUMU", "DOGU", "BATI"]);
 
-  total_words?: number;
-  totalWords?: number;
+/**
+ * Tek bir sözlük kelimesi/kaydının Zod şeması.
+ */
+export const DictionaryItemSchema = z
+  .object({
+    id: z.string().optional(),
+    word: z.string().optional(),
+    definition: z.string().optional(),
+    meaning: z.string().optional(),
+    dictionaryId: z.string().optional(),
+    dialect: CircassianDialectSchema.optional(),
+    targetLanguage: TargetLanguageSchema.optional(),
+    kelime: z.string().optional(),
+    tanim: z.string().optional(),
+    hedefDil: z.string().optional(),
+    kaynak_sozluk: z.string().optional(),
+    kaynakSozluk: z.string().optional(),
+    file: z.string().optional(),
+    birincilTanim: z.string().optional(),
+    full_definition_in_html: z.string().optional(),
+    definitions: z
+      .array(
+        z
+          .object({
+            meaning: z.string().optional(),
+          })
+          .catchall(z.unknown())
+      )
+      .optional(),
+    language: z.string().optional(),
+    fromLang: z.string().optional(),
+    toLang: z.string().optional(),
+    normalizedKelime: z.string().optional(),
+    normalizedTanim: z.string().optional(),
+  })
+  .catchall(z.unknown());
+
+/**
+ * Sözlük üst verisi (Manifest objesi) Zod Şeması.
+ */
+export const DictionaryMetaSchema = z.object({
+  file: z.string(),
+  title: z.string(),
+  author: z.string().optional(),
+  editor: z.string().optional(),
+  year: z.union([z.string(), z.number()]).optional(),
+  dialect: CircassianDialectSchema,
+  total_words: z.number().optional(),
+  description: z.string().optional(),
+  category: z.string().optional(),
+  wordCount: z.number().optional(),
+  count: z.number().optional(),
+  active: z.boolean().optional(),
+});
+
+// ============================================================================
+// 3. TYPES & INTERFACES (Zod Üzerinden Türetilen ve Ek Tipler)
+// ============================================================================
+
+export type CircassianDialect = z.infer<typeof CircassianDialectSchema>;
+export type TargetLanguage = z.infer<typeof TargetLanguageSchema>;
+export type SearchMode = z.infer<typeof SearchModeSchema>;
+export type AramaModu = SearchMode;
+export type LehceTipi = z.infer<typeof LehceTipiSchema>;
+
+export type DictionaryItem = z.infer<typeof DictionaryItemSchema>;
+export type NormalizedDictionaryItem = DictionaryItem;
+export type DictionaryMeta = z.infer<typeof DictionaryMetaSchema>;
+
+export interface EnrichedDictionary extends DictionaryMeta {
+  description?: string;
+  category?: string;
   wordCount?: number;
-  wordsCount?: number;
-  entryCount?: number;
-  entriesCount?: number;
-  count?: number;
-  kelimeSayisi?: number;
-  kayitSayisi?: number;
+}
 
-  lang?: string;
-  sourceLanguage?: string;
-  targetLanguage?: string;
-  fromLang?: string;
-  toLang?: string;
-
-  year?: number;
-  author?: string;
-  editor?: string;
-  publisher?: string;
-  originalTitle?: string;
-  confidence?: string;
-
+export interface RawDefinition {
+  meaning?: string;
   [key: string]: unknown;
 }
 
-export interface DictionaryItem {
-  kelime?: string;
-  tanim?: string;
-  spelling?: string;
-
-  file?: string;
-  kaynak_sozluk?: string;
-
-  dialect?: Dialect;
-  lehce?: string;
-  diyalekt?: string;
-
-  normalizedKelime?: string;
-  normalizedTanim?: string;
-
-  fromLang?: string;
-  toLang?: string;
-
-  id?: string | number;
-  meaning?: string;
-
-  definitions?: SozlukAnlam[];
-  full_definition_in_html?: string;
-
-  language?: string;
-  dictionaryName?: string;
-
-  cognates?: unknown[];
-  redirect?: string;
-  derivation?: string;
-  type?: string;
-  synonyms?: unknown[];
-
+export interface RawDefinitionItem {
+  kelime: string;
+  tanim: string;
   [key: string]: unknown;
+}
+
+export interface RawDictionaryData {
+  readonly [key: string]: unknown;
+}
+
+export interface BatchLoadResult {
+  success: boolean;
+  loadedCount: number;
+  failedCount: number;
+  errors: readonly string[];
+  entries: Record<string, unknown>;
 }
 
 export interface GruplanmisKelime {
-  kelime: string;
-
-  kaynaklar?: DictionaryItem[];
-
-  anlamlar: {
-    tanim: string;
-    file?: string;
-    kaynak_sozluk?: string;
-    dialect?: string;
-    language?: string;
-    [key: string]: unknown;
-  }[];
-
-  dialect?: Dialect;
-
+  anaKelime?: string;
+  kelime?: string;
+  anlamlar: readonly string[] | DictionaryItem[];
+  kaynaklar?: readonly string[];
+  lehce?: LehceTipi;
   [key: string]: unknown;
-}
-
-export interface SozlukEkraniProps {
-  loading?: boolean;
-
-  searchQuery: string;
-
-  setSearchQuery: Dispatch<
-    SetStateAction<string>
-  >;
-
-  seciliLehce: LehceTipi;
-
-  setSeciliLehce: (
-    lehce: LehceTipi
-  ) => void;
-
-  seciliDosya: string;
-
-  setSeciliDosya: (
-    dosya: string
-  ) => void;
-
-  gununKelimesi?: DictionaryItem | null;
-
-  filtrelenmisSonuclar:
-    | DictionaryItem[]
-    | GruplanmisKelime[];
-
-  aktifSozlukler: DictionaryMeta[];
-
-  /*
-   * Gerçek toplam kayıt sayısı için kullanılır.
-   * SearchBoxProps içine eklenmemelidir.
-   */
-  wordsCount?: number;
-
-  [key: string]: unknown;
-}
-
-export interface SearchBoxProps {
-  searchQuery: string;
-
-  setSearchQuery: Dispatch<
-    SetStateAction<string>
-  >;
-
-  mod: AramaModu;
-
-  setMod: (
-    mod: AramaModu
-  ) => void;
-
-  hedefDil: string;
-
-  setHedefDil: (
-    dil: string
-  ) => void;
-
-  seciliLehce: LehceTipi;
-
-  setSeciliLehce: (
-    lehce: LehceTipi
-  ) => void;
-
-  seciliDosya: string;
-
-  setSeciliDosya: (
-    dosya: string
-  ) => void;
-
-  aktifSozlukler: DictionaryMeta[];
-
-  inputRef: RefObject<HTMLInputElement | null>;
-
-  setGoruntulenenAdet: Dispatch<
-    SetStateAction<number>
-  >;
-
-  limit: number;
 }
 
 export interface ConceptDetail {
+  id?: string;
+  concept?: string;
   kaynakSozluk?: string;
   tanim?: string;
-  file?: string;
-  dialect?: Dialect;
+  meaning?: string;
   language?: string;
   [key: string]: unknown;
 }
 
 export interface ConceptRow {
-  id?: string | number;
-
-  kavram?: string;
-
-  Turkce?: string;
-  Ingilizce?: string;
-  Arapca?: string;
-  Rusca?: string;
-  Adigece?: string;
-  Kabardeyce?: string;
-
-  detaylar?: ConceptDetail[];
-
-  kelime?: string;
-  tanim?: string;
-
-  word?: string;
-  meaning?: string;
-
-  file?: string;
-  dialect?: Dialect;
-  language?: string;
-
-  definitions?: SozlukAnlam[];
-  full_definition_in_html?: string;
-
-  [key: string]: unknown;
-}
-
-export interface DictionaryEntry {
   id: string;
-  word: string;
-
-  definitions?: Array<{
-    meaning: string;
-  }>;
-
-  full_definition_in_html?: string;
-  tanim?: string;
-  meaning?: string;
-}
-
-export type DictionaryManifest = {
-  id: string;
-  title: string;
-  entryCount: number;
-};
-
-export interface ManifestItem {
-  file: string;
-  title: string;
-  label?: string;
-  shortLabel?: string;
-
-  dialect: Dialect;
-
-  year?: number;
-  sourceLanguage?: string;
-  targetLanguage?: string;
-  originalTitle?: string;
-
-  author?: string;
-  editor?: string;
-  publisher?: string;
-
-  total_words?: number;
-  confidence?: string;
-
+  concept: string;
   [key: string]: unknown;
 }
 
-export interface ManifestData {
-  items: ManifestItem[];
+export interface UseDictionaryReturn {
+  loading: boolean;
+  error: string | null;
+  wordsCount: number;
+  aktifSozlukler: DictionaryMeta[];
+  searchQuery: string;
+  setSearchQuery: Dispatch<SetStateAction<string>>;
+  hedefDil: string;
+  setHedefDil: Dispatch<SetStateAction<string>>;
+  seciliLehce: LehceTipi;
+  setSeciliLehce: Dispatch<SetStateAction<LehceTipi>>;
+  seciliDosya: string;
+  setSeciliDosya: Dispatch<SetStateAction<string>>;
+  aramaModu: AramaModu;
+  setAramaModu: Dispatch<SetStateAction<AramaModu>>;
+  
+  mod?: AramaModu;
+  setMod?: Dispatch<SetStateAction<AramaModu>>;
+  limit?: number;
+  setLimit?: Dispatch<SetStateAction<number>>;
+
+  filtrelenmisSonuclar: DictionaryItem[];
+  inputRef?: RefObject<HTMLInputElement | null>;
 }
 
-export interface RawDictionaryWord {
-  spelling: string;
-
-  cognates?: unknown[];
-  redirect?: string;
-
-  full_definition_in_html?: string;
-
-  definitions?: SozlukAnlam[];
-
-  derivation?: string;
-  type?: string;
-  synonyms?: unknown[];
-
-  [key: string]: unknown;
+/**
+ * AkilliKlavyeProps Interface
+ */
+export interface AkilliKlavyeProps {
+  inputRef?: RefObject<HTMLInputElement | null>;
+  sorgu: string;
+  setSorgu: (sorgu: string) => void;
+  metinBoyutu?: number | string;
+  karanlikMod?: boolean;
 }
 
-export interface RawDictionaryFile {
-  title: string;
-  id: string | number;
-
-  words: Record<
-    string,
-    RawDictionaryWord
-  >;
+/**
+ * SearchBoxProps Interface
+ */
+export interface SearchBoxProps {
+  searchQuery: string;
+  setSearchQuery: (query: string) => void;
+  hedefDil: string;
+  setHedefDil: (dil: string) => void;
+  seciliLehce: LehceTipi;
+  setSeciliLehce: (lehce: LehceTipi) => void;
+  seciliDosya: string;
+  setSeciliDosya: (dosya: string) => void;
+  aramaModu?: AramaModu;
+  setAramaModu?: (mod: AramaModu) => void;
+  mod?: AramaModu;
+  setMod?: (mod: AramaModu) => void;
+  limit?: number;
+  setLimit?: (limit: number) => void;
+  aktifSozlukler?: DictionaryMeta[];
+  inputRef?: RefObject<HTMLInputElement | null>;
+  setGoruntulenenAdet?: (adet: number) => void;
+  karanlikMod?: boolean;
+  metinBoyutu?: number | string;
 }
 
-export function isSozlukTanimi(
-  value: unknown
-): value is DictionaryItem {
-  return (
-    typeof value === "object" &&
-    value !== null
-  );
+// ============================================================================
+// 4. TYPE GUARDS & UI HELPERS (Tip Korumaları ve Etiketler)
+// ============================================================================
+
+export function isDictionaryItem(item: unknown): item is DictionaryItem {
+  return DictionaryItemSchema.safeParse(item).success;
+}
+
+export function isDictionaryMeta(meta: unknown): meta is DictionaryMeta {
+  return DictionaryMetaSchema.safeParse(meta).success;
+}
+
+export function getDialectFilterLabel(dialect: LehceTipi): string {
+  switch (dialect) {
+    case "BATI":
+      return "Batı Çerkesçesi (Adigece)";
+    case "DOGU":
+      return "Doğu Çerkesçesi (Kabardeyce)";
+    case "TUMU":
+      return "Tüm Lehçeler";
+    default:
+      return assertNever(dialect);
+  }
 }

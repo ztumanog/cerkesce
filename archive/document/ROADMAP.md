@@ -1,0 +1,62 @@
+# ROADMAP
+
+## Faz 2
+
+### Translation Platform
+
+- TranslationEntry
+- TranslationGroup
+- TranslationRepository
+- TranslationTable
+- MultiLanguage Search
+- Reverse Translation Search
+- Cross Dictionary Matching
+
+---
+
+## Faz 3
+
+### Concept Engine
+
+- Concept
+- ConceptRepository
+- ConceptLookup
+- Meaning Graph
+
+---
+
+## Faz 4
+
+### Knowledge Graph
+
+- Knowledge Nodes
+- Relation Graph
+- Semantic Connections
+
+---
+
+## Faz 5
+
+### Corpus Analytics
+
+- Frequency Analysis
+- Usage Analysis
+- Statistical Reports
+
+---
+
+## Faz 6
+
+### Embedding Engine
+
+- Semantic Embeddings
+- Similarity Search
+
+---
+
+## Faz 7
+
+### Circassian Foundation Dataset
+
+- Unified Foundation Dataset
+- Research Export Layer

@@ -1,13 +1,26 @@
 import { RefObject, Dispatch, SetStateAction } from "react";
 import { type TemaTipi } from "@/utils/helpers";
-import { 
-  DictionaryMeta, 
-  DictionaryItem 
-} from "@/types/dictionary";
 
 export type AramaModu = "baslayan" | "icinde" | "tam";
 export type LehceTipi = "TUMU" | "western" | "DOGU";
 export type Dialect = "western" | "DOGU";
+
+export interface DictionaryMeta {
+  file: string;
+  title?: string;
+  dialect?: string;
+  total_words?: number;
+  lang?: string;
+  [key: string]: any;
+}
+
+export interface DictionaryItem {
+  kelime: string;
+  tanim: string;
+  dialect?: string;
+  file?: string;
+  [key: string]: any;
+}
 
 export interface SearchBoxProps {
   searchQuery: string;
@@ -29,4 +42,4 @@ export interface SearchBoxProps {
   kaynagiDuzenle: (dosyaAdi?: string) => string;
   setGoruntulenenAdet: Dispatch<SetStateAction<number>>;
   limit: number;
-}
+}export default SearchBox;

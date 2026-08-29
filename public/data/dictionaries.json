@@ -8,7 +8,7 @@
     "publisher": "Adıge Cumhuriyeti İnsani Bilimler Araştırma Enstitüsü (Maykop)",
     "year": 2006,
     "total_words": 15139,
-    "dialect": "BATI",
+    "dialect": "western",
     "sourceLanguage": "ady",
     "targetLanguage": "ady",
     "confidence": "VERIFIED"
@@ -20,7 +20,7 @@
     "author": "Prof. Dr. Mirabil L. Apaşev",
     "year": 2008,
     "total_words": 27268,
-    "dialect": "BATI",
+    "dialect": "western",
     "sourceLanguage": "ady",
     "targetLanguage": "ru",
     "confidence": "VERIFIED"
@@ -31,7 +31,7 @@
     "author": "Dr. Adel Abdulsalam Lash",
     "year": 2013,
     "total_words": 12978,
-    "dialect": "BATI",
+    "dialect": "western",
     "sourceLanguage": "ady",
     "targetLanguage": "ar",
     "confidence": "VERIFIED"
@@ -41,7 +41,7 @@
     "title": "Adıgece-İngilizce",
     "shortLabel": "Derleme Kaynak",
     "author": "Dijital Derleme",
-    "dialect": "BATI",
+    "dialect": "western",
     "sourceLanguage": "ady",
     "targetLanguage": "en"
   },
@@ -51,7 +51,7 @@
     "author": "Adam Shagash",
     "year": 2020,
     "total_words": 6445,
-    "dialect": "BATI",
+    "dialect": "western",
     "sourceLanguage": "ady",
     "targetLanguage": "en",
     "confidence": "HIGH"
@@ -83,7 +83,7 @@
     "title": "Adıgece-Rusça Sözlük",
     "author": "Yunus (Cevdet) Tharkaho",
     "total_words": 8636,
-    "dialect": "BATI",
+    "dialect": "western",
     "sourceLanguage": "ady",
     "targetLanguage": "ru",
     "confidence": "VERIFIED"
@@ -93,7 +93,7 @@
     "title": "Adıgece-Türkçe Sözlük",
     "author": "Fahri Huvaj",
     "total_words": 17858,
-    "dialect": "BATI",
+    "dialect": "western",
     "sourceLanguage": "ady",
     "targetLanguage": "tr",
     "confidence": "VERIFIED"
@@ -103,7 +103,7 @@
     "title": "İngilizce-Adıgece Sözlük",
     "author": "Dijital Derleme",
     "total_words": 3056,
-    "dialect": "BATI",
+    "dialect": "western",
     "sourceLanguage": "en",
     "targetLanguage": "ady",
     "confidence": "HIGH"
@@ -114,7 +114,7 @@
     "author": "Adam Shagash",
     "year": 2020,
     "total_words": 6250,
-    "dialect": "BATI",
+    "dialect": "western",
     "sourceLanguage": "en",
     "targetLanguage": "ady",
     "confidence": "HIGH"
@@ -226,7 +226,7 @@
     "author": "Ramazan Blaghoj",
     "year": 1991,
     "total_words": 3476,
-    "dialect": "BATI",
+    "dialect": "western",
     "sourceLanguage": "ru",
     "targetLanguage": "ady",
     "confidence": "HIGH"
@@ -237,7 +237,7 @@
     "shortLabel": "Vodozhdokova (1960)",
     "author": "H. D. Vodozhdokova",
     "year": 1960,
-    "dialect": "BATI",
+    "dialect": "western",
     "sourceLanguage": "ru",
     "targetLanguage": "ady"
   },
@@ -245,7 +245,7 @@
     "file": "25.Rus-Ady_UASP.json",
     "title": "Rusça-Adıgece Terimler Sözlüğü",
     "author": "UASP",
-    "dialect": "BATI",
+    "dialect": "western",
     "sourceLanguage": "ru",
     "targetLanguage": "ady"
   },
@@ -264,7 +264,7 @@
     "publisher": "Ankara",
     "year": 2005,
     "total_words": 12351,
-    "dialect": "BATI",
+    "dialect": "western",
     "sourceLanguage": "tr",
     "targetLanguage": "ady",
     "confidence": "VERIFIED"
@@ -273,7 +273,7 @@
     "file": "28.Tur-Ady_Huvaj.json",
     "title": "Türkçe-Adıgece Sözlük",
     "author": "Fahri Huvaj",
-    "dialect": "BATI",
+    "dialect": "western",
     "sourceLanguage": "tr",
     "targetLanguage": "ady"
   },
@@ -283,7 +283,7 @@
     "author": "Teshu Mehmet Yasin Çelikkıran",
     "year": 1991,
     "total_words": 12117,
-    "dialect": "BATI",
+    "dialect": "western",
     "sourceLanguage": "tr",
     "targetLanguage": "ady",
     "confidence": "VERIFIED"
@@ -294,7 +294,7 @@
     "shortLabel": "Tharkaho (1991)",
     "author": "Yunus Tharkaho",
     "year": 1991,
-    "dialect": "BATI",
+    "dialect": "western",
     "sourceLanguage": "ady",
     "targetLanguage": "ru"
   },
@@ -304,7 +304,7 @@
     "author": "Açumıj Hilmi",
     "year": 2013,
     "total_words": 26111,
-    "dialect": "BATI",
+    "dialect": "western",
     "sourceLanguage": "tr",
     "targetLanguage": "ady",
     "confidence": "VERIFIED"
@@ -325,7 +325,7 @@
     "file": "33.Ady-Rus-1960.json",
     "title": "Adıgece-Rusça Sözlük",
     "year": 1960,
-    "dialect": "BATI",
+    "dialect": "western",
     "sourceLanguage": "ady",
     "targetLanguage": "ru"
   }
