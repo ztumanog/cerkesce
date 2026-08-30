@@ -1,0 +1,90 @@
+import json
+import re
+from pathlib import Path
+
+DATA_DIR = Path("e:/projeler/Cerkesce/public/data")
+
+# Kurallar tablosu
+RULES = [
+    {"rule": "щ↔ш", "effect": "Evet"},
+    {"rule": "фӏ↔ф", "effect": "Evet"},
+    {"rule": "гъэ-", "effect": "Hayır"},
+    {"rule": "-ншэ", "effect": "Hayır"},
+    {"rule": "-нэ", "effect": "Belirsiz"}
+]
+
+results = []
+
+for json_file in DATA_DIR.glob("*.json"):
+    try:
+        with open(json_file, encoding="utf-8") as f:
+            data = json.load(f)
+
+        words = data.get("words", {})
+
+        for spelling, entry in words.items():
+            html = entry.get("full_definition_in_html", "")
+            if not html:
+                continue
+
+            circassian_words = re.findall(r"[А-Яа-яӀ]+", html)
+
+            # Her kural için kontrol
+            for rule in RULES:
+                r = rule["rule"]
+
+                if r == "щ↔ш":
+                    group_a = [w for w in circassian_words if w.startswith("щ")]
+                    group_b = [w for w in circassian_words if w.startswith("ш")]
+                    if group_a and group_b:
+                        results.append({
+                            "file": json_file.name,
+                            "rule": r,
+                            "effect": rule["effect"],
+                            "group_a": group_a,
+                            "group_b": group_b
+                        })
+
+                elif r == "фӏ↔ф":
+                    group_a = [w for w in circassian_words if w.startswith("фӏ")]
+                    group_b = [w for w in circassian_words if w.startswith("ф")]
+                    if group_a and group_b:
+                        results.append({
+                            "file": json_file.name,
+                            "rule": r,
+                            "effect": rule["effect"],
+                            "group_a": group_a,
+                            "group_b": group_b
+                        })
+
+                elif r == "гъэ-":
+                    if spelling.endswith("гъэ"):
+                        results.append({
+                            "file": json_file.name,
+                            "rule": r,
+                            "effect": rule["effect"],
+                            "word": spelling
+                        })
+
+                elif r == "-ншэ":
+                    if spelling.endswith("ншэ"):
+                        results.append({
+                            "file": json_file.name,
+                            "rule": r,
+                            "effect": rule["effect"],
+                            "word": spelling
+                        })
+
+                elif r == "-нэ":
+                    if spelling.endswith("нэ"):
+                        results.append({
+                            "file": json_file.name,
+                            "rule": r,
+                            "effect": rule["effect"],
+                            "word": spelling
+                        })
+
+    except Exception as e:
+        print(f"Hata: {json_file} → {e}")
+
+print(json.dumps(results, ensure_ascii=False, indent=2))
