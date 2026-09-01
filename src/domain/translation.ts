@@ -1,27 +1,44 @@
 /**
- * ADR-0004 ve ADR-0005 doğrultusunda tanımlanmış temel çeviri veri tipleri.
+ * @file src/domain/translation.ts
+ * @description Çeviri ve sözlük alan modeli tipleri.
  */
 
+export type DialectCode = "DOGU" | "BATI" | "STANDART" | "GENEL";
+
+export type LanguageCode = "TR" | "RU" | "EN" | "AR";
+
 export interface TranslationMeaning {
-  meaningId: string;
-  targetLanguage: string;
-  value: string;
-  contextNote?: string;
+  id: string; // ✅ Zorunlu
+  language: LanguageCode; // ✅ Zorunlu
+  text: string; // ✅ Zorunlu
+  exampleSentence?: string;
+  partOfSpeech?: string;
+  category?: string;
+  value?: string;
+  example?: string;
 }
 
 export interface TranslationEntry {
-  /**
-   * Deterministik Kimlik
-   * Format: <sourceId>:<sourceEntryId> veya <sourceId>:<lemma>:<index>
-   */
-  entryId: string;
-  sourceLanguage: string;
+  id: string;
   lemma: string;
+  normalizedLemma?: string;
+  dialect?: DialectCode;
+  groupId?: string;
   meanings: TranslationMeaning[];
+  rootLemma?: string;
+  frequency?: number;
+  createdAt?: Date;
+  updatedAt?: Date;
 }
 
 export interface TranslationGroup {
-  groupId: string;
-  sourceLanguage: string;
+  id: string;
+  groupName: string;
   entries: TranslationEntry[];
+}
+
+export interface SearchResult {
+  query: string;
+  results: TranslationEntry[];
+  totalCount: number;
 }

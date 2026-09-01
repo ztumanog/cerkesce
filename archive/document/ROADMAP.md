@@ -1,62 +1,33 @@
-# ROADMAP
+## Phase 3 — User Experience & Search Layer Integration
+**Status:** ⏸ LOCKED (Awaiting Gate Review)
 
-## Faz 2
-
-### Translation Platform
-
-- TranslationEntry
-- TranslationGroup
-- TranslationRepository
-- TranslationTable
-- MultiLanguage Search
-- Reverse Translation Search
-- Cross Dictionary Matching
-
----
-
-## Faz 3
-
-### Concept Engine
-
-- Concept
+### Planned Deliverables
+- Concept Engine
 - ConceptRepository
 - ConceptLookup
 - Meaning Graph
+- Semantic Nodes
+- Embedding Search
 
----
+### Lock Rules
+**Current Status:** ⏸ LOCKED
 
-## Faz 4
+**Allowed:**
+- Research & Domain Analysis
+- Documentation & Specification
+- Architecture Design Diagrams
+- Drafting ADR-0008, ADR-0009, ADR-0010
 
-### Knowledge Graph
+**Forbidden:**
+- ConceptRepository implementation
+- Knowledge Graph implementation
+- Semantic Graph implementation
+- Embedding Engine implementation
+- Any production code modification under `src/` for Phase 3 features
 
-- Knowledge Nodes
-- Relation Graph
-- Semantic Connections
-
----
-
-## Faz 5
-
-### Corpus Analytics
-
-- Frequency Analysis
-- Usage Analysis
-- Statistical Reports
-
----
-
-## Faz 6
-
-### Embedding Engine
-
-- Semantic Embeddings
-- Similarity Search
-
----
-
-## Faz 7
-
-### Circassian Foundation Dataset
-
-- Unified Foundation Dataset
-- Research Export Layer
+### Unlock Requirements (Gate Review Criteria)
+1. ✅ Phase 2 Closure Approved
+2. ⏳ Stakeholder Sign-off
+3. ⏳ ADR-0008 Draft (Concept Identity)
+4. ⏳ ADR-0009 Draft (Concept Repository Contract)
+5. ⏳ ADR-0010 Draft (Meaning Graph Boundaries)

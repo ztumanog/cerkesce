@@ -1,7 +1,6 @@
 import { Suspense } from "react";
+// Sadece sayfada gerçekten kullandığımız ana bileşeni içe aktarıyoruz
 import SozlukEkrani from "@/components/dictionary/SozlukEkrani";
-import type { LehceTipi, AramaModu } from "@/types/dictionary";
-
 // Next.js App Router'da URL parametreleri asenkron olarak gelir
 interface PageProps {
   searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
@@ -12,10 +11,11 @@ export default async function DictionaryPage({ searchParams }: PageProps) {
   const resolvedParams = await searchParams;
   
   // 2. SearchBox için başlangıç değerlerini URL'den güvenli şekilde çıkarma
+  // Eski tip dayatmaları (as LehceTipi vb.) yerine doğrudan string olarak aktarıyoruz.
   const baslangicSorgusu = typeof resolvedParams.q === "string" ? resolvedParams.q : "";
-  const baslangicLehce = (typeof resolvedParams.lehce === "string" ? resolvedParams.lehce : "TUMU") as LehceTipi;
+  const baslangicLehce = typeof resolvedParams.lehce === "string" ? resolvedParams.lehce : "TUMU";
   const baslangicHedefDil = typeof resolvedParams.hedefDil === "string" ? resolvedParams.hedefDil : "TUMU";
-  const baslangicMod = (typeof resolvedParams.mod === "string" ? resolvedParams.mod : "prefix") as AramaModu;
+  const baslangicMod = typeof resolvedParams.mod === "string" ? resolvedParams.mod : "prefix";
   const baslangicLimit = typeof resolvedParams.limit === "string" ? parseInt(resolvedParams.limit, 10) : 20;
 
   return (

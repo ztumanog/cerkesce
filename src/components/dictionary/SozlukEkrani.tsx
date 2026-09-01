@@ -6,13 +6,39 @@ import type { TemaTipi } from "@/utils/helpers";
 import SearchBox from "@/components/dictionary/SearchBox";
 import useDictionary from "@/hooks/useDictionary";
 
+// 1. ARAYÜZ GÜNCELLEMESİ: page.tsx'ten gelen parametreler eklendi
+// tema özelliği opsiyonel (?) yapıldı.
 interface SozlukEkraniProps {
-  tema: Pick<TemaTipi, "yaziAna" | "yaziAlt" | "kenarlik" | "kartArkaPlan">;
+  tema?: Pick<TemaTipi, "yaziAna" | "yaziAlt" | "kenarlik" | "kartArkaPlan">;
   karanlikMod?: boolean;
+  initialQuery?: string;
+  initialLehce?: string;
+  initialHedefDil?: string;
+  initialMod?: string;
+  initialLimit?: number;
 }
 
-export default function SozlukEkrani({ tema, karanlikMod = false }: SozlukEkraniProps) {
+// 2. GÜVENLİK (FALLBACK): Eğer dışarıdan tema gelmezse sayfanın çökmemesi için varsayılan renkler.
+const varsayilanTema = {
+  yaziAna: "inherit",
+  yaziAlt: "#78716c", // stone-500
+  kenarlik: "#e5e7eb", // gray-200
+  kartArkaPlan: "transparent",
+};
+
+export default function SozlukEkrani({ 
+  tema = varsayilanTema, 
+  karanlikMod = false,
+  initialQuery,
+  initialLehce,
+  initialHedefDil,
+  initialMod,
+  initialLimit
+}: SozlukEkraniProps) {
+  
   // Veri akışını ve durumları yöneten custom hook
+  // Not: Eğer bu initial (başlangıç) değerlerini useDictionary içinde de kullanmak istersen, 
+  // ileride useDictionary hook'unu güncelleyip bu değerleri içeri gönderebiliriz.
   const dictionary = useDictionary();
   const inputRef = useRef<HTMLInputElement>(null);
 

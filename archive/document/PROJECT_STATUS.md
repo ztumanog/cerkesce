@@ -1,96 +1,18 @@
-# PROJECT STATUS
+# Project Status
 
-## Genel Durum
+## Active Workstream
+Current Focus: **Phase 3 Unlock Review & Architecture Planning (ADR-0009, ADR-0010, ADR-0011)**
+Code Implementation in `src/` or `app/`: **FORBIDDEN**
 
-Proje:
-Çerkesçe Dil Korpusu
+## Phase Summary
+- **Phase 1 — Core Domain & Rules:** ✅ COMPLETED
+- **Phase 2 — Translation Platform:** ✅ COMPLETED & FROZEN (Approval: APPROVED)
+- **Phase 3 — Concept Engine:** 🔒 LOCKED (Planning & Design Work Only)
 
-Aktif Faz:
-Faz 2 — Translation Platform
-
----
-
-## Veri Ölçeği
-
-- 34 sözlük
-- 428.000+ kayıt
-- yaklaşık 204 MB veri
-
----
-
-## Tamamlananlar
-
-✅ Dictionary Loader
-
-✅ Dictionary Service
-
-✅ Dictionary Resolver
-
-✅ dictionaryUtils
-
-✅ Source Registry
-
-✅ Normalization Layer
-
-✅ Zod Validation
-
-✅ Search Engine
-
-✅ Footer / Kaynaklar
-
-✅ UI Refactor
-
-✅ Batch Loading
-
-✅ Performans Optimizasyonları
-
----
-
-## Devam Edenler
-
-🔄 Translation Repository
-
-🔄 Translation Entry
-
-🔄 Translation Group
-
-🔄 Translation Table
-
-🔄 MultiLanguage Search
-
-🔄 Cross Dictionary Matching
-
-🔄 Reverse Translation Search
-
----
-
-## Riskler
-
-- Translation domain modeli henüz sabitlenmedi.
-- Cross dictionary mapping stratejisi belirlenmedi.
-- Translation identity kuralları tanımlanmadı.
-
----
-
-## Son Güncelleme
-
-2026-08-28
-ADR-0004 tamamlandı.
-ADR-0005 bekliyor.
-ADR-0006 bekliyor.
-ADR-0007 bekliyor.
-Translation Platform Research Workspace oluşturuldu.
-Grammar Foundation completed
-(001–006 finalized)
-Word Family extraction prototype validated.
-Root-family parsing successfully identifies
-semantic lexical groups.
-## Mimari Fazlar
-* **Faz 1: Grammar Foundation** -> ✅ Tamamlandı (001 - 006)
-* **Faz 2: Translation Platform** -> 🔄 Aktif
-  * Karar Altyapısı (ADRs): ✅ Tamamlandı (`ADR-0004` - `ADR-0007`)
-  * `TranslationRepository` Implementasyonu: ⏹️ Sıradaki İlerleme Noktası
-* **Faz 3: Concept & Word Families Engine** -> ⏳ Beklemede
-
-## Aktif Odak
-`TranslationRepository` arayüzünün ve in-memory / persistent imple
+## Phase 2 Final Validation Checklist
+- [x] Architecture: TranslationEntry, TranslationMeaning, TranslationGroup
+- [x] Repository: getById/getByIds, search, findByMeaning, getByGroup
+- [x] Matching: Exact Match, Dialect Match, Morphology-Aware Match
+- [x] Search: Reverse Translation Search, MultiLanguage Search
+- [x] Presentation: TranslationTable & Server Actions Integration
+- [x] Quality Gate: 116/116 Tests PASS (0 TS Error, Performance Stress Pass)

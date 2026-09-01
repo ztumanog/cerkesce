@@ -1,203 +1,154 @@
+import os
+import re
+import json
+from dataclasses import dataclass, asdict
+from typing import List, Dict, Any, Optional
 
-# Güncellenmiş loader kodu
-loader_code = '''/**
- * Çerkesçe Sözlük JSON dosyalarını yükleyen ve Zod doğrulamasından geçiren modül.
- * Veri Akışı: Source → Fetch → Zod Parse/Validation → Loader Result
- */
+@dataclass
+class DerivedWord:
+    word: str
+    gloss: str
+    literal_meaning: str = ""
 
-import { z } from "zod";
-import type { DictionaryMeta, DictionaryItem } from "@/types/dictionary";
+@dataclass
+class WordFamily:
+    root: str
+    core_meanings: List[str]
+    semantic_chain: List[str]
+    derived_words: List[DerivedWord]
+    metrics: Optional[Dict[str, int]] = None
 
-// ============================================================================
-// ZOD SCHEMAS & TYPES
-// ============================================================================
 
-export const DictionaryMetaSchema = z.object({
-  id: z.string(),
-  title: z.string(),
-  file: z.string(),
-  dialect: z.enum(["western", "eastern"]).optional(), // ✅ EKLE
-  author: z.string().optional(),
-  year: z.number().optional(),
-});
+class SomaticFamilyParser:
+    """
+    006-word-families.md dosyasındaki tüm kelime ailelerini ayrıştırarak
+    hedeflenen tam JSON formatına dönüştüren sınıftır.
+    """
 
-export const DictionaryItemSchema = z.object({
-  id: z.string().optional(),
-  word: z.string().optional(),
-  kelime: z.string().optional(),
-  definition: z.string().optional(),
-  tanim: z.string().optional(),
-  meaning: z.string().optional(),
-  kaynak_sozluk: z.string().optional(), // ✅ EKLE
-  file: z.string().optional(), // ✅ EKLE
-}).passthrough();
+    def __init__(self, file_path: str):
+        self.file_path = file_path
 
-export interface LoaderResult {
-  success: boolean;
-  data: DictionaryItem[];
-  count: number;
-  error?: string;
-}
+    def parse(self) -> List[Dict[str, Any]]:
+        """
+        Markdown içeriğini okur, satır sonlarını normalize eder ve
+        tüm ailelerin JSON listesini döndürür.
+        """
+        if not os.path.exists(self.file_path):
+            raise FileNotFoundError(f"Dosya bulunamadı: {self.file_path}")
 
-// ============================================================================
-// MANIFEST YÜKLEME
-// ============================================================================
+        with open(self.file_path, "r", encoding="utf-8") as f:
+            content = f.read()
 
-/**
- * Sözlük manifestini (dictionaries.json) yükler ve doğrular.
- */
-export async function loadManifest(): Promise<DictionaryMeta[]> {
-  try {
-    console.log("[Loader] Manifest yükleniyor: /data/dictionaries.json");
+        # Windows satır sonu (\r\n) sorununu çözme
+        content = content.replace("\r\n", "\n")
+
+        families = self._parse_families(content)
+        return [asdict(fam) for fam in families]
+
+    def _parse_families(self, content: str) -> List[WordFamily]:
+        families: List[WordFamily] = []
+        
+        # '## Family' başlıklarına göre içeriği bloklara ayırma
+        family_blocks = re.split(r'(?m)^##\s+Family\s+', content)[1:]
+
+        for block in family_blocks:
+            lines = [l.strip() for l in block.split('\n') if l.strip()]
+            if not lines:
+                continue
+
+            # 1. Kök (Root) Ayrıştırma (Örn: "001 - гу" -> "гу")
+            header_line = lines[0]
+            parts = header_line.split('-')
+            root = parts[1].strip() if len(parts) > 1 else header_line.strip()
+
+            # 2. Temel Anlamlar (Core Meaning / Meanings)
+            core_section = re.search(r'###\s+Core Meaning[s]?\s*\n(.*?)(?=\n###|\n---|$)', block, re.DOTALL | re.IGNORECASE)
+            core_meanings: List[str] = []
+            if core_section:
+                for line in core_section.group(1).split('\n'):
+                    line = line.strip()
+                    if line.startswith('-') or line.startswith('*'):
+                        clean_line = line.lstrip('-*').strip()
+                        if clean_line:
+                            core_meanings.append(clean_line)
+
+            # 3. Semantik Zincir (Semantic Expansion / Chain)
+            expansion_section = re.search(r'###\s+Semantic (?:Expansion|Chain)\s*\n(.*?)(?=\n###|\n---|$)', block, re.DOTALL | re.IGNORECASE)
+            semantic_chain: List[str] = []
+            if expansion_section:
+                semantic_chain = [
+                    item.strip() 
+                    for item in expansion_section.group(1).split('↓') 
+                    if item.strip()
+                ]
+
+            # 4. Türetilmiş Kelimeler (Derived Forms / Words)
+            derived_words: List[DerivedWord] = []
+            derived_section = re.search(r'###\s+Derived (?:Forms|Words)\s*\n(.*?)(?=\n###|\n---|$)', block, re.DOTALL | re.IGNORECASE)
+            if derived_section:
+                for line in derived_section.group(1).split('\n'):
+                    line = line.strip()
+                    if line.startswith('*') or line.startswith('-'):
+                        # Kelime ve kalan metni ayırma
+                        m_base = re.search(r'[\*\-]\s*\*\*`([^`]+)`\*\*\s*→\s*(.*)', line)
+                        if m_base:
+                            word = m_base.group(1).strip()
+                            rest = m_base.group(2).strip()
+
+                            # Literal anlam var mı kontrol etme
+                            lit_match = re.search(r'\(literal:\s*([^)]+)\)', rest, re.IGNORECASE)
+                            if lit_match:
+                                literal = lit_match.group(1).strip()
+                                gloss = re.sub(r'\(literal:\s*[^)]+\)', '', rest, flags=re.IGNORECASE).strip()
+                            else:
+                                literal = ""
+                                gloss = rest
+
+                            derived_words.append(DerivedWord(
+                                word=word,
+                                gloss=gloss,
+                                literal_meaning=literal
+                            ))
+
+            # 5. Metrikler / İstatistikler (Statistics / Metrics)
+            stats_section = re.search(r'###\s+(?:Statistics|Metrics)\s*\n(.*?)(?=\n###|\n---|$)', block, re.DOTALL | re.IGNORECASE)
+            metrics: Dict[str, int] = {}
+            if stats_section:
+                for line in stats_section.group(1).split('\n'):
+                    line = line.strip()
+                    if line.startswith('-') or line.startswith('*'):
+                        stat_match = re.search(r'[\-\*]\s*(.*?)\s*=\s*(\d+)', line)
+                        if stat_match:
+                            metrics[stat_match.group(1).strip()] = int(stat_match.group(2))
+
+            families.append(WordFamily(
+                root=root,
+                core_meanings=core_meanings,
+                semantic_chain=semantic_chain,
+                derived_words=derived_words,
+                metrics=metrics if metrics else None
+            ))
+
+        return families
+
+
+if __name__ == "__main__":
+    SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+    PROJECT_ROOT = os.path.abspath(os.path.join(SCRIPT_DIR, "..", ".."))
     
-    const response = await fetch("/data/dictionaries.json", {
-      next: { revalidate: 3600 },
-    });
+    # archive/resource klasör dizini
+    doc_path = os.path.join(PROJECT_ROOT, "archive", "resource", "006-word-families.md")
+    json_output_path = os.path.join(SCRIPT_DIR, "word_families_parsed.json")
 
-    if (!response.ok) {
-      throw new Error(`HTTP Error ${response.status}: Manifest yüklenemedi.`);
-    }
-
-    const rawData: unknown = await response.json();
-    const parsedData = z.array(DictionaryMetaSchema).safeParse(rawData);
-
-    if (!parsedData.success) {
-      console.error("[Loader] Manifest veri doğrulama hatası:", parsedData.error.format());
-      return [];
-    }
-
-    console.log(`[Loader] ✅ Manifest yüklendi: ${parsedData.data.length} sözlük`);
-    return parsedData.data as DictionaryMeta[];
-  } catch (error: unknown) {
-    const message = error instanceof Error ? error.message : "Bilinmeyen bir hata oluştu";
-    console.error("[Loader] ❌ Manifest yükleme hatası:", message);
-    return [];
-  }
-}
-
-// ============================================================================
-// TEKİL SÖZLÜK YÜKLEME
-// ============================================================================
-
-/**
- * Belirtilen JSON dosyasını yükler, tip doğrulamasını gerçekleştirir.
- */
-export async function loadDictionary(filename: string): Promise<LoaderResult> {
-  try {
-    console.log(`[Loader] Sözlük yükleniyor: ${filename}`);
+    print(f"📂 Okunan Dosya: {doc_path}")
     
-    const response = await fetch(`/data/${filename}`, {
-      next: { revalidate: 3600 },
-    });
+    try:
+        parser = SomaticFamilyParser(doc_path)
+        result = parser.parse()
 
-    if (!response.ok) {
-      throw new Error(`HTTP Error ${response.status}: ${filename} dosyası yüklenemedi.`);
-    }
+        with open(json_output_path, "w", encoding="utf-8") as f:
+            json.dump(result, f, ensure_ascii=False, indent=2)
 
-    const rawData: unknown = await response.json();
-
-    if (!Array.isArray(rawData)) {
-      throw new Error(`Geçersiz Veri Biçimi: ${filename} dizisi (array) bekleniyordu.`);
-    }
-
-    const parsedData = z.array(DictionaryItemSchema).safeParse(rawData);
-
-    if (!parsedData.success) {
-      console.warn(`[Loader] ${filename} içerisinde tip uyuşmazlığı taptandı, ham veri fallback'e alındı.`);
-    }
-
-    const validData = (parsedData.success ? parsedData.data : rawData) as DictionaryItem[];
-
-    console.log(`[Loader] ✅ ${filename} yüklendi: ${validData.length} kayıt`);
-    
-    return {
-      success: true,
-      data: validData,
-      count: validData.length,
-    };
-  } catch (error: unknown) {
-    const message = error instanceof Error ? error.message : String(error);
-    console.error(`[Loader] ❌ ${filename} yükleme hatası:`, message);
-
-    return {
-      success: false,
-      data: [],
-      count: 0,
-      error: message,
-    };
-  }
-}
-
-// ============================================================================
-// BATCH YÜKLEME (Paralel İşleme)
-// ============================================================================
-
-/**
- * Birden fazla sözlüğü paralel olarak (batchSize adediyle) yükler.
- */
-export async function loadDictionariesBatch(
-  filenames: string[],
-  batchSize: number = 4
-): Promise<Map<string, DictionaryItem[]>> {
-  const results = new Map<string, DictionaryItem[]>();
-
-  for (let i = 0; i < filenames.length; i += batchSize) {
-    const batch = filenames.slice(i, i + batchSize);
-
-    const batchResults = await Promise.all(
-      batch.map(async (filename) => {
-        const result = await loadDictionary(filename);
-        return { filename, result };
-      })
-    );
-
-    for (const { filename, result } of batchResults) {
-      if (result.success) {
-        results.set(filename, result.data);
-      }
-    }
-  }
-
-  return results;
-}
-
-// ============================================================================
-// TÜM SÖZLÜKLERİ YÜKLEME
-// ============================================================================
-
-/**
- * Tüm sözlükleri yükler (İlk 3 dosya öncelikli paralel, kalanlar gruplanmış batch).
- */
-export async function loadAllDictionaries(
-  manifest: DictionaryMeta[]
-): Promise<Map<string, DictionaryItem[]>> {
-  console.log(`[Loader] Tüm sözlükler yükleniyor: ${manifest.length} dosya`);
-  
-  const filenames = manifest.map((item) => item.file);
-  const allData = new Map<string, DictionaryItem[]>();
-
-  const firstThree = filenames.slice(0, 3);
-  const remaining = filenames.slice(3);
-
-  const firstResults = await loadDictionariesBatch(firstThree, 3);
-  firstResults.forEach((data, file) => allData.set(file, data));
-
-  if (remaining.length > 0) {
-    const remainingResults = await loadDictionariesBatch(remaining, 4);
-    remainingResults.forEach((data, file) => allData.set(file, data));
-  }
-
-  console.log(`[Loader] ✅ Tüm sözlükler yüklendi: ${allData.size} dosya`);
-  
-  return allData;
-}
-'''
-
-print("=" * 80)
-print("GÜNCELLENMIŞ LOADER KODU")
-print("=" * 80)
-print(loader_code[:500] + "...")
-print("\n✅ Değişiklikler:")
-print("  1. DictionaryMetaSchema → dialect alanı eklendi")
-print("  2. DictionaryItemSchema → kaynak_sozluk ve file eklendi")
-print("  3. Console.log'lar eklendi (debug için)")
+        print(f"✅ Başarılı: Toplam {len(result)} aile ayrıştırıldı ve '{json_output_path}' dosyasına yazıldı.")
+    except Exception as e:
+        print(f"❌ Hata Oluştu: {e}")

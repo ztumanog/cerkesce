@@ -1,5 +1,11 @@
 "use client";
 
+/**
+ * @file src/components/dictionary/SearchBox.tsx
+ * @description Sunucu eylemlerinden bağımsız, yalnızca Prop ve Event kullanan Saf UI Bileşeni.
+ * Projenin tüm gelişmiş filtreleme ve Akıllı Klavye özelliklerini korur.
+ */
+
 import React from "react";
 import type { 
   LehceTipi, 
@@ -9,7 +15,11 @@ import type {
 
 import AkilliKlavye from "@/components/features/AkilliKlavye";
 
-const SearchBox: React.FC<SearchBoxProps> = ({
+export interface CleanSearchBoxProps extends SearchBoxProps {
+  loading?: boolean;
+}
+
+const SearchBox: React.FC<CleanSearchBoxProps> = ({
   searchQuery,
   setSearchQuery,
   hedefDil,
@@ -29,37 +39,29 @@ const SearchBox: React.FC<SearchBoxProps> = ({
   setGoruntulenenAdet,
   karanlikMod = false,
   metinBoyutu = 16,
+  loading = false,
 }) => {
-  // Arama modu ve durum güncelleme fonksiyonlarının belirlenmesi
   const mevcutMod: AramaModu = mod || aramaModu || "prefix";
   const modDegistir = setMod || setAramaModu;
 
-  // Arama metni değiştiğinde sayfa limitini sıfırlayan işleyici
   const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>): void => {
     setSearchQuery(e.target.value);
-    if (setGoruntulenenAdet) {
-      setGoruntulenenAdet(20);
-    }
-    if (setLimit) {
-      setLimit(20);
-    }
+    if (setGoruntulenenAdet) setGoruntulenenAdet(20);
+    if (setLimit) setLimit(20);
   };
 
-  // ESC tuşuna basıldığında aramayı temizleyen işleyici
   const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (e.key === "Escape" && searchQuery) {
       setSearchQuery("");
     }
   };
 
-  // Arama modları yapılandırması
   const aramaModlari: { key: AramaModu; label: string; aciklama: string }[] = [
     { key: "prefix", label: "Başlangıç", aciklama: "Kelime başlangıcında ara" },
     { key: "exact", label: "Tam", aciklama: "Tam eşleşme ara" },
     { key: "contains", label: "İçeriyor", aciklama: "Herhangi bir yerde ara" },
   ];
 
-  // Limit değişim işleyicisi
   const handleLimitSelect = (yeniLimit: number) => {
     if (setLimit) setLimit(yeniLimit);
     if (setGoruntulenenAdet) setGoruntulenenAdet(yeniLimit);
@@ -71,9 +73,16 @@ const SearchBox: React.FC<SearchBoxProps> = ({
         
         {/* 1. Arama İnputu */}
         <div className="relative mb-6">
-          <label className="mb-2 block text-xs font-semibold text-stone-600 dark:text-stone-400">
-            Sözlükte Ara
-          </label>
+          <div className="flex items-center justify-between mb-2">
+            <label className="block text-xs font-semibold text-stone-600 dark:text-stone-400">
+              Sözlükte Ara
+            </label>
+            {loading && (
+              <span className="text-xs text-amber-600 dark:text-amber-400 animate-pulse font-medium">
+                Aranıyor...
+              </span>
+            )}
+          </div>
           <div className="relative">
             <input
               ref={inputRef}
@@ -81,7 +90,7 @@ const SearchBox: React.FC<SearchBoxProps> = ({
               value={searchQuery}
               onChange={handleSearchChange}
               onKeyDown={handleKeyDown}
-              placeholder="Çerkesçe kelime veya anlam yazın..."
+              placeholder="Çerkesçe kelime veya anlam yazın (Örn: фабэ)..."
               className="w-full rounded-xl border border-stone-300 bg-stone-50 px-4 py-3.5 pr-10 text-base text-stone-900 transition placeholder:text-stone-400 focus:border-amber-600 focus:bg-white focus:outline-none focus:ring-2 focus:ring-amber-500/20 dark:border-stone-700 dark:bg-stone-800 dark:text-stone-100 dark:placeholder:text-stone-500 dark:focus:border-amber-500 dark:focus:bg-stone-900"
               autoComplete="off"
             />
@@ -98,7 +107,7 @@ const SearchBox: React.FC<SearchBoxProps> = ({
             )}
           </div>
 
-          {/* 🎹 Akıllı Klavye - AkilliKlavye Bileşeni */}
+          {/* 🎹 Akıllı Klavye */}
           <div className="mt-3">
             <AkilliKlavye
               inputRef={inputRef}
@@ -137,7 +146,7 @@ const SearchBox: React.FC<SearchBoxProps> = ({
           </div>
         </div>
 
-        {/* 3. Filtreleme Seçenekleri (Lehçe, Hedef Dil, Sözlük, Limit) */}
+        {/* 3. Filtreleme Seçenekleri */}
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
           
           {/* Lehçe Seçimi */}
