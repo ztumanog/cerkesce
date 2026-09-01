@@ -31,3 +31,10 @@
 3. ⏳ ADR-0008 Draft (Concept Identity)
 4. ⏳ ADR-0009 Draft (Concept Repository Contract)
 5. ⏳ ADR-0010 Draft (Meaning Graph Boundaries)
+
+
+## Phase Roadmap
+- [x] **Phase 1 — Core Infrastructure:** COMPLETED & FROZEN
+- [x] **Phase 2 — Translation Platform:** COMPLETED & FROZEN ✅
+- [ ] **Phase 3 — Concept Engine:** ARCHITECTURE APPROVED ✅ / CODE IMPL LOCKED ⏸
+- [ ] **Phase 4 — Dialect & Variant System:** PLANNED
