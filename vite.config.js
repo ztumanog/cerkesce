@@ -1,4 +1,4 @@
-import { defineConfig } from 'vite'
+﻿import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
 export default defineConfig({
@@ -13,7 +13,6 @@ export default defineConfig({
       'src/tests/domain/concept/MeaningConceptLinker.test.ts',
       'src/tests/domain/concept/MeaningGraph.test.ts',
       'src/tests/domain/concept/ConceptPerformance.test.ts',
-      'src/tests/domain/discovery/**/*.test.ts',
       'src/tests/services/ConceptFacade.test.ts',
     ],
     coverage: {

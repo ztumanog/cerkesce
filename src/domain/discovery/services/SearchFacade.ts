@@ -9,6 +9,6 @@ export class SearchFacade {
    * Dış dünya için saf API Giriş Kapısı
    */
   public async search(query: string, preferredDialect: DialectCode = DialectCode.ADY_WEST): Promise<DiscoveryResultDTO> {
-    return this.explorer.explore(query, preferredDialect);
+    return this.explorer.explore(query, { targetDialect: preferredDialect });
   }
 }
