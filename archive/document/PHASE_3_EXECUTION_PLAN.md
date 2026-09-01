@@ -3,7 +3,7 @@
 ## Approved Scope & Governance Constraints
 - **Core Architecture:** ADR-0009, ADR-0010, ADR-0011 (Accepted)
 - **Non-Goals:** No RDF/OWL, No Vector DB, No AI/LLM, Graph Traversal Max Depth = 2
-- **Domain Boundaries:** Concept carries NO language fields. $ cardinality via Phase 2 TranslationMeaning.
+- **Domain Boundaries:** Concept carries NO language fields. M:N cardinality via Phase 2 TranslationMeaning.
 
 ## Approved Sprint Roadmap
 
@@ -14,11 +14,11 @@
 - [ ] **CE-14 Validation:** Domain cycle detection and invariant checks
 
 ### Sprint 2: Persistence & Query Layer
-- [ ] **CE-03 ConceptRepository:** Isolated (1)$ Read-Model Contract
+- [ ] **CE-03 ConceptRepository:** Isolated O(1) Read-Model Contract
 - [ ] **CE-09 Read API:** Concept Lookup & Detail Services
 
 ### Sprint 3: Cross-Domain Bridge
-- [ ] **CE-10 MeaningConceptLinker:** Phase 2 TranslationMeaning $\leftrightarrow$ Concept Linker
+- [ ] **CE-10 MeaningConceptLinker:** Phase 2 TranslationMeaning <-> Concept Linker
 - [ ] **CE-13 Reverse Concept Lookup:** Concept-to-Word Query Engine
 
 ### Sprint 4: Graph Engine
