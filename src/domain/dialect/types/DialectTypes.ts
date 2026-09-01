@@ -1,0 +1,17 @@
+﻿export enum RegionGroup {
+  WEST = 'WEST',
+  EAST = 'EAST',
+  TRANSITIONAL = 'TRANSITIONAL',
+  DIASPORA = 'DIASPORA',
+  HISTORICAL = 'HISTORICAL'
+}
+
+export enum DialectCode {
+  ADY_WEST = 'ADY_WEST',
+  ADY_EAST = 'ADY_EAST',
+  SHAPSUG = 'SHAPSUG',
+  ABZAKH = 'ABZAKH',
+  BJEDUGH = 'BJEDUGH',
+  KABARDAY = 'KABARDAY',
+  BESLENEY = 'BESLENEY'
+}

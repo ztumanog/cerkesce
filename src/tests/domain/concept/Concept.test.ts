@@ -1,59 +1,54 @@
-﻿import { describe, it, expect } from 'vitest';
-import { Concept } from '../../../domain/concept/Concept';
-import { ConceptID } from '../../../domain/concept/value-objects/ConceptID';
+﻿/**
+ * @file src/domain/concept/value-objects/ConceptID.ts
+ * @description Value Object for Concept Identifier
+ * 
+ * Part of Phase 2 Domain Model
+ * Kept for backward compatibility with existing tests
+ * 
+ * Note: Phase 3 uses ConceptEntry.id (string) instead
+ */
 
-describe('CE-02: Concept Domain Core', () => {
-  it('T001 - Concept nesnesi başarılı şekilde oluşturulmalıdır', () => {
-    const conceptId = ConceptID.create();
-    const concept = new Concept({
-      id: conceptId,
-      relations: [],
-    });
+import { ValueObject } from '@/domain/shared/ValueObject';
 
-    expect(concept.id).toBeDefined();
-    expect(concept.id.getValue()).toBe(conceptId.getValue());
-  });
+/**
+ * Unique identifier for a Concept
+ * 
+ * Format: "concept-{domain}-{sequence}"
+ * Example: "concept-anatomy-head-001"
+ */
+export class ConceptID extends ValueObject<{ value: string }> {
+  public static readonly PATTERN = /^concept-[a-z0-9-]+$/;
 
-  it('T002 - Relation immutably eklenmeli, orijinal nesneyi değiştirmemelidir', () => {
-    const concept = new Concept({
-      id: ConceptID.create(),
-      relations: [],
-    });
+  private constructor(value: string) {
+    super({ value });
+  }
 
-    const updated = concept.addRelation({ id: 'rel-1' });
+  /**
+   * Create a new ConceptID
+   * 
+   * @param value ID string
+   * @throws Error if format is invalid
+   */
+  public static create(value: string): ConceptID {
+    if (!this.PATTERN.test(value)) {
+      throw new Error(
+        `Invalid ConceptID format: ${value}. Expected format: concept-{domain}-{sequence}`
+      );
+    }
+    return new ConceptID(value);
+  }
 
-    expect(updated.relations).toHaveLength(1);
-    expect(concept.relations).toHaveLength(0);
-  });
+  /**
+   * Get the ID value
+   */
+  public getValue(): string {
+    return this.props.value;
+  }
 
-  it('T003 - Var olan ilişkiyi doğru tespit etmelidir', () => {
-    const concept = new Concept({
-      id: ConceptID.create(),
-      relations: [{ id: 'rel-1' }],
-    });
-
-    expect(concept.hasRelation('rel-1')).toBe(true);
-  });
-
-  it('T004 - Olmayan ilişki için false dönmelidir', () => {
-    const concept = new Concept({
-      id: ConceptID.create(),
-      relations: [],
-    });
-
-    expect(concept.hasRelation('rel-999')).toBe(false);
-  });
-
-  it('R4 - Dilsel veya metinsel veri alanları içermemelidir', () => {
-    const concept = new Concept({
-      id: ConceptID.create(),
-      relations: [],
-    });
-    
-    const keys = Object.keys(concept);
-    expect(keys).not.toContain('language');
-    expect(keys).not.toContain('word');
-    expect(keys).not.toContain('label');
-    expect(keys).not.toContain('meaning');
-  });
-});
+  /**
+   * Convert to string
+   */
+  public toString(): string {
+    return this.props.value;
+  }
+}

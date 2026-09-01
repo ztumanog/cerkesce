@@ -1,38 +1,23 @@
-﻿import type { ConceptProps, ConceptRelation } from '../../types/concept';
-import { ConceptID } from './value-objects/ConceptID';
+﻿import { ConceptID } from '@/domain/value-objects/ConceptID';
+
+export interface ConceptProps {
+  id: ConceptID;
+  preferredLabel: string;
+  description?: string;
+}
 
 export class Concept {
-  private readonly _id: ConceptID;
-  private readonly _relations: ConceptRelation[];
+  readonly id: ConceptID;
+  readonly preferredLabel: string;
+  readonly description: string;
 
   constructor(props: ConceptProps) {
-    this._id = props.id;
-    this._relations = Object.freeze([...props.relations]);
+    this.id = props.id;
+    this.preferredLabel = props.preferredLabel;
+    this.description = props.description || '';
   }
 
-  get id(): ConceptID {
-    return this._id;
-  }
-
-  get relations(): readonly ConceptRelation[] {
-    return this._relations;
-  }
-
-  public addRelation(relation: ConceptRelation): Concept {
-    return new Concept({
-      id: this._id,
-      relations: [...this._relations, relation],
-    });
-  }
-
-  public hasRelation(relationId: string): boolean {
-    return this._relations.some(
-      relation => relation.id === relationId
-    );
-  }
-
-  public equals(other: Concept): boolean {
-    if (!(other instanceof Concept)) return false;
-    return this._id.equals(other.id);
+  public static create(id: ConceptID, preferredLabel: string, description: string = ''): Concept {
+    return new Concept({ id, preferredLabel, description });
   }
 }
