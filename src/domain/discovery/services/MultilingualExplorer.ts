@@ -1,6 +1,7 @@
 ﻿import { IMultilingualExplorer, SearchOptions } from './IMultilingualExplorer';
 import { DiscoveryResultDTO } from '../dto/DiscoveryResultDTO';
-import { DiscoveryAssembler } from '../assembler/DiscoveryAssembler';
+import { DiscoveryAssembler } from './DiscoveryAssembler';
+import { TraversalNode } from '../dto/TraversalNode';
 
 export interface ITranslationServiceMock {
   search(query: string): Promise<any[]>;
@@ -14,25 +15,35 @@ export interface IDialectResolverMock {
   resolveVariants(conceptId: string, dialect?: string): Promise<any[]>;
 }
 
+export interface IGraphTraversalServiceMock {
+  traverse(rootId: string, maxDepth?: number): Promise<TraversalNode[]>;
+}
+
 export class MultilingualExplorer implements IMultilingualExplorer {
+  private readonly assembler: DiscoveryAssembler;
+
   constructor(
     private readonly translationService?: ITranslationServiceMock,
     private readonly meaningLinker?: IMeaningConceptLinkerMock,
-    private readonly dialectResolver?: IDialectResolverMock
-  ) {}
+    private readonly dialectResolver?: IDialectResolverMock,
+    private readonly graphTraversalService?: IGraphTraversalServiceMock,
+    assembler?: DiscoveryAssembler
+  ) {
+    this.assembler = assembler ?? new DiscoveryAssembler();
+  }
 
   public async explore(query: string, options?: SearchOptions): Promise<DiscoveryResultDTO> {
     const startTime = performance.now();
 
     if (!query || query.trim() === '') {
-      return DiscoveryAssembler.createEmpty(query, 0);
+      return this.assembler.assemble(query, 0, {});
     }
 
     const rawMeanings = this.translationService ? await this.translationService.search(query) : [];
 
     if (!rawMeanings || rawMeanings.length === 0) {
       const duration = performance.now() - startTime;
-      return DiscoveryAssembler.createEmpty(query, duration);
+      return this.assembler.assemble(query, duration, {});
     }
 
     const meanings = rawMeanings.map((m, idx) => ({
@@ -65,16 +76,20 @@ export class MultilingualExplorer implements IMultilingualExplorer {
       }));
     }
 
+    let traversalNodes: TraversalNode[] = [];
+    if (this.graphTraversalService && conceptId) {
+      traversalNodes = await this.graphTraversalService.traverse(conceptId, 2);
+    }
+
     const duration = performance.now() - startTime;
 
-    return DiscoveryAssembler.assemble(
-      query,
+    return this.assembler.assemble(query, duration, {
       conceptId,
       canonicalName,
       meanings,
       variants,
-      [],
-      duration
-    );
+      traversalNodes,
+      maxDepth: 2
+    });
   }
 }

@@ -1,4 +1,5 @@
-﻿import { Concept } from "../domain/Concept";
+﻿import { Concept } from "../Concept";
+
 export interface ConceptRelation {
   targetConceptId: string;
   type?: string;
@@ -16,7 +17,7 @@ export class MeaningGraph {
 
   public addConcept(concept: Concept): void {
     if (concept && concept.id) {
-      this.concepts.set(concept.id, concept);
+      this.concepts.set(concept.id.getValue(), concept);
     }
   }
 
@@ -27,7 +28,6 @@ export class MeaningGraph {
   public getDirectNeighbors(conceptId: string): string[] {
     const concept = this.concepts.get(conceptId);
     if (!concept) return [];
-
     const relations: ConceptRelation[] = (concept as any).relations || [];
     return relations.map((rel: ConceptRelation) => rel.targetConceptId);
   }
@@ -55,14 +55,13 @@ export class MeaningGraph {
     return {
       rootId,
       depth1,
-      depth2: Array.from(depth2Set)
+      depth2: Array.from(depth2Set),
     };
   }
 
   public getRelationsByType(conceptId: string, relationType: string): string[] {
     const concept = this.concepts.get(conceptId);
     if (!concept) return [];
-
     const relations: ConceptRelation[] = (concept as any).relations || [];
     return relations
       .filter((r: ConceptRelation) => r.type === relationType)
