@@ -94,3 +94,4 @@ Kelime gövdesi dışındaki ek ve kopula yapılarına uygulanan kurallardır.
 | `фэщхъуныгъэ` → `фӀэщхъуныгъэ` | Grammatical Prefix Rule (`фэ- ↔ фӀэ-`) | `фӀэщхъуныгъэ` | ✅ PASS |
 | `фэщхъуныгъэ` → `хуэщхъуныгъэ` | Global String Replacement (`ф ↔ ху`) | Hatalı Dönüşüm | ❌ FAIL (Forbidden) |
 | Global Rule execution before segmentation | Pre-Segmentation Execution | False-Positive Explosion | ❌ FAIL (Forbidden) |
+
