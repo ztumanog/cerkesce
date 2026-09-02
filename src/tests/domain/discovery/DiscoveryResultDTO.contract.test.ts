@@ -1,35 +1,49 @@
 ﻿import { describe, it, expect } from 'vitest';
-import { DiscoveryResultDTO } from '@/domain/discovery/dto/DiscoveryResultDTO';
+import { DiscoveryAssembler } from '../../../domain/discovery/services/DiscoveryAssembler';
+import { TraversalNode } from '../../../domain/discovery/dto/TraversalNode';
 
-describe('Phase 5 Sprint 1: Discovery Contract & DTO Specification', () => {
+describe('DiscoveryResultDTO & Assembler Integration Contract', () => {
+  it('should assemble WATER traversal nodes into ranked concepts and context clusters correctly', () => {
+    const assembler = new DiscoveryAssembler();
+    const nodes: TraversalNode[] = [
+      { conceptId: 'WATER', depth: 0, relationType: 'ROOT' },
+      { conceptId: 'ICE', depth: 1, relationType: 'STATE_OF', parentConceptId: 'WATER' },
+      { conceptId: 'STEAM', depth: 2, relationType: 'STATE_OF', parentConceptId: 'WATER' },
+      { conceptId: 'RIVER', depth: 1, relationType: 'LOCATION_OF', parentConceptId: 'WATER' },
+      { conceptId: 'LAKE', depth: 1, relationType: 'LOCATION_OF', parentConceptId: 'WATER' },
+      { conceptId: 'MINERAL_WATER', depth: 1, relationType: 'DRINK_OF', parentConceptId: 'WATER' }
+    ];
 
-  it('EC-01 Contract: DiscoveryResultDTO tip tanımı ve kontrat yapısı doğru olmalıdır', () => {
-    const resultContract: DiscoveryResultDTO = {
-      query: 'water',
+    const result = assembler.assemble('su', 12, {
       conceptId: 'CONCEPT_WATER',
-      canonicalName: 'WATER',
-      meanings: [
-        { id: 'm1', language: 'TR', term: 'su' },
-        { id: 'm2', language: 'EN', term: 'water' },
-        { id: 'm3', language: 'RU', term: 'вода' }
-      ],
-      variants: [
-        { id: 'v1', dialectCode: 'ABZAKH', term: 'псы', isFallback: true, fallbackSourceDialect: 'ADY_WEST' }
-      ],
-      relatedConcepts: [
-        { conceptId: 'CONCEPT_ICE', relationType: 'RELATED', canonicalName: 'ICE' },
-        { conceptId: 'CONCEPT_LIQUID', relationType: 'PARENT_CHILD', canonicalName: 'LIQUID' }
-      ],
-      executionTimeMs: 0
-    };
+      canonicalName: 'Water',
+      traversalNodes: nodes,
+      maxDepth: 2
+    });
 
-    expect(resultContract.query).toBe('water');
-    expect(resultContract.meanings.length).toBe(3);
-    expect(resultContract.variants[0].isFallback).toBe(true);
-  });
+    expect(result.query).toBe('su');
+    expect(result.conceptId).toBe('CONCEPT_WATER');
 
-  it('EC-05 Compliance: Discovery DTO projection alanları Domain Katmanını kirletmemelidir', () => {
-    const projectionField = 'canonicalName';
-    expect(projectionField).toBe('canonicalName');
+    // 1. Ranked Concepts Kontrolü
+    expect(result.relatedConcepts).toBeDefined();
+    expect(result.relatedConcepts?.length).toBe(5);
+    expect(result.relatedConcepts![0].conceptId).toBe('ICE'); // En yüksek skorlu (1.0 * 0.9 = 0.9)
+
+    // 2. Context Clusters Kontrolü (State, Location, Drink)
+    expect(result.contextClusters).toBeDefined();
+    expect(result.contextClusters!.length).toBe(3);
+
+    const stateCluster = result.contextClusters!.find(c => c.clusterId === 'state');
+    expect(stateCluster).toBeDefined();
+    expect(stateCluster?.concepts.map(c => c.conceptId)).toEqual(['ICE', 'STEAM']);
+
+    const locationCluster = result.contextClusters!.find(c => c.clusterId === 'location');
+    expect(locationCluster).toBeDefined();
+    // Aynı score'a sahip LAKE ve RIVER alfabetik sıraya göre sıralanır: LAKE < RIVER
+    expect(locationCluster?.concepts.map(c => c.conceptId)).toEqual(['LAKE', 'RIVER']);
+
+    const drinkCluster = result.contextClusters!.find(c => c.clusterId === 'drink');
+    expect(drinkCluster).toBeDefined();
+    expect(drinkCluster?.concepts.map(c => c.conceptId)).toEqual(['MINERAL_WATER']);
   });
 });

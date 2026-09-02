@@ -14,3 +14,21 @@
 - [ ] **Sprint 4: Graph Engine** (CE-05, CE-06, CE-07, CE-08, CE-11)
 - [ ] **Sprint 5: Performance & UI Contract** (CE-12, CE-15)
 - [ ] **Sprint 6: Hardening & Governance** (CE-16, CE-17)
+docs/certifications/phase-certification-history.md
+# Completed
+
+✅ Phase 5.1 Discovery Engine
+
+✅ Phase 5.2.1 Knowledge Ranking
+
+✅ Phase 5.2.2 Contextual Discovery
+
+✅ Phase 5.3.1 Query-Semantic Mapping
+
+# Next
+
+🔜 Phase 5.3.2 Explainable Discovery
+
+🔜 Phase 5.4 Semantic Expansion
+
+🔜 Knowledge Graph Analytics
