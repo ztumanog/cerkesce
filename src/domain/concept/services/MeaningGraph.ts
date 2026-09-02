@@ -67,4 +67,12 @@ export class MeaningGraph {
       .filter((r: ConceptRelation) => r.type === relationType)
       .map((r: ConceptRelation) => r.targetConceptId);
   }
-}
+
+  public addRelation(sourceId: string, targetConceptId: string, type?: string, weight?: number): void {
+    const concept = this.concepts.get(sourceId);
+    if (!concept) return;
+    
+    const relations: any[] = (concept as any).relations || [];
+    relations.push({ targetConceptId, relationType: type, type, weight: weight ?? 1.0 });
+    (concept as any).relations = relations;
+  }}
