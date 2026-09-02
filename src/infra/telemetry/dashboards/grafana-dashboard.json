@@ -1,0 +1,17 @@
+{
+  "title": "Cerkesce Knowledge Graph Platform - Observability Dashboard",
+  "panels": [
+    {
+      "id": 1,
+      "title": "Discovery Query Volume",
+      "type": "graph",
+      "targets": [{ "expr": "rate(discovery_request_total[5m])" }]
+    },
+    {
+      "id": 2,
+      "title": "Average Query Latency (ms)",
+      "type": "singlestat",
+      "targets": [{ "expr": "discovery_latency_ms" }]
+    }
+  ]
+}
