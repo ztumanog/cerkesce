@@ -16,6 +16,7 @@ export interface ConceptNodeDTO {
   depth: number;
   score?: number;
   cluster?: string;
+  isExpanded?: boolean;
 }
 
 export interface ConceptEdgeDTO {
