@@ -1,0 +1,118 @@
+[33mtag phase6_2_interactive-explorer-certified[m
+Tagger: Zeki Tuman <ztuman@gmail.com>
+Date:   Wed Sep 2 18:37:33 2026 +0300
+
+Phase 6.2 Interactive Concept Network Explorer certified
+
+[33mcommit 84381b52e7c7ba1157e58a069a83fcc91910526f[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mphase5.2.1-knowledge-ranking[m[33m, [m[1;33mtag: [m[1;33mphase6_2_interactive-explorer-certified[m[33m)[m
+Author: Zeki Tuman <ztuman@gmail.com>
+Date:   Wed Sep 2 18:36:13 2026 +0300
+
+    docs: align architecture and certification records through phase 6.2
+
+[1mdiff --git a/PHASES.md b/PHASES.md[m
+[1mindex 47b2c08..5f5007c 100644[m
+[1m--- a/PHASES.md[m
+[1m+++ b/PHASES.md[m
+[36m@@ -2,10 +2,11 @@[m
+ [m
+ | Faz | Açıklama | Durum | Sertifikasyon Etiketi (Git Tag) |[m
+ |---|---|---|---|[m
+[31m-| **Phase 1.0 - 4.0** | Domain & Knowledge Graph Engine | CERTIFIED ✅ | `phase4_0_knowledge-engine-certified` |[m
+[31m-| **Phase 5.1 - 5.2** | Knowledge Ranking & Contextual Discovery | CERTIFIED ✅ | `phase5_2_contextual-discovery-certified` |[m
+[32m+[m[32m| **Phase 5.1** | Discovery Engine | CERTIFIED ✅ | `phase5_1_discovery-engine-certified` |[m
+[32m+[m[32m| **Phase 5.2.1** | Knowledge Ranker | CERTIFIED ✅ | `phase5_2_1_knowledge-ranker-certified` |[m
+[32m+[m[32m| **Phase 5.2.2** | Contextual Discovery | CERTIFIED ✅ | `phase5_2_2_contextual-discovery-certified` |[m
+ | **Phase 5.3.1** | Query Semantic Mapping | CERTIFIED ✅ | `phase5_3_1_query-semantic-mapping-certified` |[m
+[31m-| **Phase 6.1** | Discovery REST API Gateway & Contract | CERTIFIED ✅ | `phase6_1_api-gateway-certified` |[m
+[32m+[m[32m| **Phase 6.1** | Discovery API Gateway | CERTIFIED ✅ | `phase6_1_api-gateway-certified` |[m
+ | **Phase 6.2** | Interactive Cytoscape Explorer | CERTIFIED ✅ | `phase6_2_interactive-explorer-certified` |[m
+ | **Phase 6.3** | GraphQL Gateway Integration | PLANNED 🚀 | - |[m
+ | **Phase 7.0** | Semantic Analytics & Export Engine | PLANNED 🚀 | - |[m
+[1mdiff --git a/PROJECT_STATUS.md b/PROJECT_STATUS.md[m
+[1mindex 7cac484..f98c467 100644[m
+[1m--- a/PROJECT_STATUS.md[m
+[1m+++ b/PROJECT_STATUS.md[m
+[36m@@ -1,13 +1,14 @@[m
+ ﻿# Proje Anlık Durumu (Project Status)[m
+ [m
+ **Son Güncelleme:** 2026-09-02  [m
+[31m-**Aktif Faz:** Phase 6.2 Completed / Phase 6.3 Ready  [m
+[31m-**Aktif Baseline Mührü:** `phase6_2_interactive-explorer-certified`[m
+[32m+[m[32m**Aktif Baseline:** Phase 6.2 Certified[m[41m  [m
+[32m+[m[32m**Aktif Git Mührü:** `phase6_2_interactive-explorer-certified`[m
+ [m
+ ---[m
+ [m
+[31m-## 📊 Özet Metrikler[m
+[31m-- **Sertifikalı Fazlar:** 6.1, 6.2[m
+[31m-- **REST Contract Version:** `1.0.0`[m
+[31m-- **Max Node Ceiling Guardrail:** `500`[m
+[31m-- **UI Component Test Başarısı:** %100 Yeşil (EXP-001..EXP-005, UI-001..UI-002)[m
+[32m+[m[32m## 📊 Mimarisi Doğrulanmış Metrikler[m
+[32m+[m[32m- **Test Dosyaları Sayısı:** 34 Test Files[m[41m  [m
+[32m+[m[32m- **Toplam Test Sayısı:** 179 Passing Tests (%100 Pass Rate)[m[41m  [m
+[32m+[m[32m- **REST Contract Version:** `1.0.0`[m[41m  [m
+[32m+[m[32m- **Max Node Ceiling Guardrail:** `500 Nodes`[m[41m  [m
+[32m+[m[32m- **UI & Adapter Testleri:** EXP-001..EXP-005 ✅ | UI-001..UI-002 ✅[m[41m  [m
+[1mdiff --git a/ROADMAP.md b/ROADMAP.md[m
+[1mindex ac1257e..62a3850 100644[m
+[1m--- a/ROADMAP.md[m
+[1m+++ b/ROADMAP.md[m
+[36m@@ -1,12 +1,15 @@[m
+ ﻿# Proje Yol Haritası (Roadmap)[m
+ [m
+ ## 🏛️ Tamamlanan Kilometre Taşları (Certified Baseline)[m
+[31m-- ✅ **Phase 5.3.1:** Query Semantic Mapping & Domain Discovery[m
+[31m-- ✅ **Phase 6.1:** Discovery REST API Gateway & OpenAPI 3.0 Contract (`/api/v1/discovery/concept-network`)[m
+[31m-- ✅ **Phase 6.2:** Interactive Cytoscape Network Explorer (`NetworkExplorerPage`, `GraphMerger`, Expansion)[m
+[32m+[m[32m- ✅ **Phase 5.1:** Discovery Engine Core (`phase5_1_discovery-engine-certified`)[m
+[32m+[m[32m- ✅ **Phase 5.2.1:** Knowledge Ranker Engine (`phase5_2_1_knowledge-ranker-certified`)[m
+[32m+[m[32m- ✅ **Phase 5.2.2:** Contextual Discovery Engine (`phase5_2_2_contextual-discovery-certified`)[m
+[32m+[m[32m- ✅ **Phase 5.3.1:** Query Semantic Mapping (`phase5_3_1_query-semantic-mapping-certified`)[m
+[32m+[m[32m- ✅ **Phase 6.1:** Discovery REST API Gateway (`phase6_1_api-gateway-certified`)[m
+[32m+[m[32m- ✅ **Phase 6.2:** Interactive Cytoscape Network Explorer (`phase6_2_interactive-explorer-certified`)[m
+ [m
+ ---[m
+ [m
+ ## 🚀 Gelecek Hedefler (Upcoming Phases)[m
+[31m-- 🔲 **Phase 6.3:** GraphQL Gateway (Selective field querying & subscription capabilities)[m
+[32m+[m[32m- 🔲 **Phase 6.3:** GraphQL Gateway (Selective field querying & subscriptions)[m
+ - 🔲 **Phase 7.0:** Cross-Dialect Semantic Analytics & Export Engine (SVG/PNG/JSON Export)[m
+[1mdiff --git a/document/phase6/PHASE_6_2_STATUS.md b/document/phase6/PHASE_6_2_STATUS.md[m
+[1mnew file mode 100644[m
+[1mindex 0000000..bcdb8b2[m
+[1m--- /dev/null[m
+[1m+++ b/document/phase6/PHASE_6_2_STATUS.md[m
+[36m@@ -0,0 +1,31 @@[m
+[32m+[m[32m﻿# Phase 6.2 Interactive Concept Network Explorer Certification[m
+[32m+[m
+[32m+[m[32m**Status:** CERTIFIED ✅[m[41m  [m
+[32m+[m[32m**Date:** 2026-09-02[m[41m  [m
+[32m+[m[32m**Tag:** `phase6_2_interactive-explorer-certified`[m[41m  [m
+[32m+[m[32m**Test Suite:** 34 Test Files | 179 Tests Passing (%100 Success Rate)[m
+[32m+[m
+[32m+[m[32m---[m
+[32m+[m
+[32m+[m[32m## 📦 Deliverables[m
+[32m+[m[32m- **P6S2-01 NetworkExplorerPage:** Complete layout & data flow page component[m
+[32m+[m[32m- **P6S2-02 CytoscapeAdapter:** DTO to Cytoscape element projection adapter[m
+[32m+[m[32m- **P6S2-03 CytoscapeGraphConfig:** Node depth, nodeType, and cluster styling rules[m
+[32m+[m[32m- **P6S2-04 CytoscapeCanvas:** Interactive network visualization canvas[m
+[32m+[m[32m- **P6S2-05 Interactive Concept Expansion:** `GraphMerger` service with deduplication[m
+[32m+[m[32m- **P6S2-06 Tooltip Hover Metadata:** Score, depth, and cluster tooltip[m
+[32m+[m[32m- **P6S2-07 Live Search Integration:** Dynamic root search reset and query execution[m
+[32m+[m[32m- **P6S2-08 Guardrail Badge:** 500-node truncation warning badge display[m
+[32m+[m
+[32m+[m[32m---[m
+[32m+[m
+[32m+[m[32m## 🧪 Certification Test Suites[m
+[32m+[m[32m- **Graph Expansion (`src/tests/ui/GraphExpansion.cert.test.ts`):**[m
+[32m+[m[32m  - EXP-001 ✅ Valid sub-graph merge on node expansion (5/5)[m
+[32m+[m[32m  - EXP-002 ✅ Duplicate node prevention[m
+[32m+[m[32m  - EXP-003 ✅ Duplicate edge prevention[m
+[32m+[m[32m  - EXP-004 ✅ Node state marked with `isExpanded` and `▼` prefix[m
+[32m+[m[32m  - EXP-005 ✅ Guardrail ceiling (500 nodes) enforced during merge[m
+[32m+[m[32m- **UI & Metadata (`src/tests/ui/NetworkExplorerUI.cert.test.ts`):**[m
+[32m+[m[32m  - UI-001 ✅ Truncated metadata triggers Guardrail Warning Badge[m
+[32m+[m[32m  - UI-002 ✅ Score, cluster, and depth metadata resolution for tooltips[m
