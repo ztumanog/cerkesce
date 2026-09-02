@@ -33,6 +33,24 @@ export class MeaningConceptLinker {
     return Array.from(this.conceptToMeaningMap.get(conceptId) || []);  
   }  
 
+  public resolveConcept(meaningId: string): { id: string; canonicalName?: string } | null {
+    const conceptIds = this.getConceptIds(meaningId);
+    if (!conceptIds || conceptIds.length === 0) return null;
+    
+    const conceptId = conceptIds[0];
+    if (this.conceptRepo && typeof this.conceptRepo.findById === 'function') {
+      const concept = this.conceptRepo.findById(conceptId);
+      if (concept) {
+        const idStr = typeof concept.id === 'object' && concept.id !== null ? (concept.id.value || concept.id.toString()) : String(concept.id || conceptId);
+        return {
+          id: idStr,
+          canonicalName: concept.canonicalName || concept.name
+        };
+      }
+    }
+    return { id: conceptId, canonicalName: conceptId };
+  }
+
   public getAllLinks(): MeaningConceptLink[] {    
     const links: MeaningConceptLink[] = [];    
     this.meaningToConceptMap.forEach((conceptIds, meaningId) => {      

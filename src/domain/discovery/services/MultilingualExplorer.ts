@@ -1,32 +1,21 @@
-﻿import { IMultilingualExplorer, SearchOptions } from './IMultilingualExplorer';
+
+import { IMultilingualExplorer, SearchOptions } from './IMultilingualExplorer';
 import { DiscoveryResultDTO } from '../dto/DiscoveryResultDTO';
 import { DiscoveryAssembler } from './DiscoveryAssembler';
 import { TraversalNode } from '../dto/TraversalNode';
-
-export interface ITranslationServiceMock {
-  search(query: string): Promise<any[]>;
-}
-
-export interface IMeaningConceptLinkerMock {
-  resolveConcept(meaningId: string): Promise<any | null>;
-}
-
-export interface IDialectResolverMock {
-  resolveVariants(conceptId: string, dialect?: string): Promise<any[]>;
-}
-
-export interface IGraphTraversalServiceMock {
-  traverse(rootId: string, maxDepth?: number): Promise<TraversalNode[]>;
-}
+import { TranslationService } from '../../../services/TranslationService';
+import { MeaningConceptLinker } from '../../concept/services/MeaningConceptLinker';
+import { DialectResolver } from '../../dialect/services/DialectResolver';
+import { GraphTraversalService } from './GraphTraversalService';
 
 export class MultilingualExplorer implements IMultilingualExplorer {
   private readonly assembler: DiscoveryAssembler;
 
   constructor(
-    private readonly translationService?: ITranslationServiceMock,
-    private readonly meaningLinker?: IMeaningConceptLinkerMock,
-    private readonly dialectResolver?: IDialectResolverMock,
-    private readonly graphTraversalService?: IGraphTraversalServiceMock,
+    private readonly translationService?: TranslationService,
+    private readonly meaningLinker?: MeaningConceptLinker,
+    private readonly dialectResolver?: DialectResolver,
+    private readonly graphTraversalService?: GraphTraversalService,
     assembler?: DiscoveryAssembler
   ) {
     this.assembler = assembler ?? new DiscoveryAssembler();
@@ -39,18 +28,27 @@ export class MultilingualExplorer implements IMultilingualExplorer {
       return this.assembler.assemble(query, 0, {});
     }
 
-    const rawMeanings = this.translationService ? await this.translationService.search(query) : [];
+    let rawMeanings: any[] = [];
+    if (this.translationService) {
+      if (typeof (this.translationService as any).search === 'function') {
+        rawMeanings = await (this.translationService as any).search(query);
+      } else if (typeof (this.translationService as any).findByTerm === 'function') {
+        rawMeanings = await (this.translationService as any).findByTerm(query);
+      } else if (typeof (this.translationService as any).getTranslations === 'function') {
+        rawMeanings = await (this.translationService as any).getTranslations(query);
+      }
+    }
 
     if (!rawMeanings || rawMeanings.length === 0) {
       const duration = performance.now() - startTime;
       return this.assembler.assemble(query, duration, {});
     }
 
-    const meanings = rawMeanings.map((m, idx) => ({
-      id: m.id || `m_${idx}`,
-      language: m.language || 'TR',
+    const meanings = rawMeanings.map((m: any, idx: number) => ({
+      id: m.id || m.meaningId || `m_${idx}`,
+      language: m.language || m.lang || 'TR',
       term: m.term || query,
-      definition: m.definition
+      definition: m.definition || m.def
     }));
 
     let conceptId: string | undefined;
@@ -66,8 +64,8 @@ export class MultilingualExplorer implements IMultilingualExplorer {
 
     let variants: any[] = [];
     if (this.dialectResolver && conceptId) {
-      const rawVariants = await this.dialectResolver.resolveVariants(conceptId, options?.targetDialect);
-      variants = (rawVariants || []).map((v, idx) => ({
+      const rawVariants = await (this.dialectResolver as any).resolveVariants(conceptId);
+      variants = (rawVariants || []).map((v: any, idx: number) => ({
         id: v.id || `v_${idx}`,
         dialectCode: v.dialectCode || options?.targetDialect || 'UNKNOWN',
         term: v.term || '',
@@ -78,7 +76,7 @@ export class MultilingualExplorer implements IMultilingualExplorer {
 
     let traversalNodes: TraversalNode[] = [];
     if (this.graphTraversalService && conceptId) {
-      traversalNodes = await this.graphTraversalService.traverse(conceptId, 2);
+      traversalNodes = this.graphTraversalService.traverse(conceptId, 2);
     }
 
     const duration = performance.now() - startTime;
@@ -93,3 +91,8 @@ export class MultilingualExplorer implements IMultilingualExplorer {
     });
   }
 }
+
+
+
+
+

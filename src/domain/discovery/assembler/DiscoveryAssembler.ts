@@ -1,4 +1,4 @@
-﻿import { DiscoveryResultDTO, MeaningDTO, VariantDTO, RelatedConceptDTO } from '../dto/DiscoveryResultDTO';
+import { DiscoveryResultDTO, MeaningDTO, VariantDTO, RelatedConceptDTO } from '../dto/DiscoveryResultDTO';
 
 export class DiscoveryAssembler {
   public static assemble(

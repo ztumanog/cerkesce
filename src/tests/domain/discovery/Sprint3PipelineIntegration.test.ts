@@ -1,24 +1,24 @@
 ﻿import { describe, it, expect, vi } from 'vitest';
-import { MultilingualExplorer, ITranslationServiceMock, IMeaningConceptLinkerMock, IDialectResolverMock, IGraphTraversalServiceMock } from '../../../domain/discovery/services/MultilingualExplorer';
+import { MultilingualExplorer } from '../../../domain/discovery/services/MultilingualExplorer';
 import { TraversalNode } from '../../../domain/discovery/dto/TraversalNode';
 
 describe('Phase 5.1 Sprint 3: Knowledge Discovery Pipeline Certification', () => {
   it('should execute pipeline traversal and project relatedConcepts for query "water"', async () => {
     // 1. Mock Katmanları (WATER -> ICE, RIVER, LIQUID)
-    const mockTranslationService: ITranslationServiceMock = {
+    const mockTranslationService = {
       search: vi.fn().mockResolvedValue([
         { id: 'm_water_tr', language: 'TR', term: 'su', definition: 'Yaşam için gerekli berrak sıvı' }
       ])
     };
 
-    const mockMeaningLinker: IMeaningConceptLinkerMock = {
+    const mockMeaningLinker = {
       resolveConcept: vi.fn().mockResolvedValue({
         id: 'CONCEPT_WATER',
         canonicalName: 'Water'
       })
     };
 
-    const mockDialectResolver: IDialectResolverMock = {
+    const mockDialectResolver = {
       resolveVariants: vi.fn().mockResolvedValue([
         { id: 'v_1', dialectCode: 'KBD', term: 'Псы' }
       ])
@@ -31,8 +31,8 @@ describe('Phase 5.1 Sprint 3: Knowledge Discovery Pipeline Certification', () =>
       { conceptId: 'CONCEPT_LIQUID', depth: 2, relationType: 'CATEGORY_OF', weight: 0.7 }
     ];
 
-    const mockGraphTraversalService: IGraphTraversalServiceMock = {
-      traverse: vi.fn().mockResolvedValue(mockNodes)
+    const mockGraphTraversalService = {
+      traverse: vi.fn().mockReturnValue(mockNodes)  // ✅ SYNCHRONOUS - returns array directly
     };
 
     const explorer = new MultilingualExplorer(
@@ -54,7 +54,7 @@ describe('Phase 5.1 Sprint 3: Knowledge Discovery Pipeline Certification', () =>
     expect(result.meanings).toHaveLength(1);
     expect(result.variants).toHaveLength(1);
 
-    // Graph Traversal Invocation Check
+    // Graph Traversal Invocation Check - with correct parameters (two separate args)
     expect(mockGraphTraversalService.traverse).toHaveBeenCalledWith('CONCEPT_WATER', 2);
     expect(result.relatedConcepts).toBeDefined();
 

@@ -1,4 +1,4 @@
-﻿import { TraversalRequest } from '../dto/TraversalRequest';
+import { TraversalRequest } from '../dto/TraversalRequest';
 import { TraversalNode } from '../dto/TraversalNode';
 import { DepthLimiter } from '../traversal/DepthLimiter';
 import { CycleDetector } from '../traversal/CycleDetector';
@@ -8,29 +8,46 @@ import { IConceptGraphRepository } from './IConceptGraphRepository';
 
 /**
  * GraphTraversalService
- * 
+ *
  * Traversal Model: Unique Node Traversal (BFS)
  * ADR-0011 Governance: Depth <= 2
  */
 export class GraphTraversalService {
   constructor(private readonly graphRepository: IConceptGraphRepository) {}
 
-  public traverse(request: TraversalRequest): TraversalNode[] {
-    const maxDepth: TraversalDepth = request.maxDepth ?? MAX_TRAVERSAL_DEPTH;
+  public traverse(
+    requestOrConceptId: TraversalRequest | string,
+    maxDepthParam?: number
+  ): TraversalNode[] {
+    let rootConceptId: string;
+    let maxDepth: TraversalDepth;
+
+    if (typeof requestOrConceptId === 'string') {
+      rootConceptId = requestOrConceptId;
+      maxDepth = (maxDepthParam as TraversalDepth) ?? MAX_TRAVERSAL_DEPTH;
+    } else {
+      rootConceptId = requestOrConceptId.rootConceptId;
+      maxDepth = requestOrConceptId.maxDepth ?? MAX_TRAVERSAL_DEPTH;
+    }
+
+    if (!rootConceptId) {
+      return [];
+    }
+
     const limiter = new DepthLimiter(maxDepth);
     const cycleDetector = new CycleDetector();
     const resultNodes: TraversalNode[] = [];
 
     // Root node
-    cycleDetector.track(request.rootConceptId);
+    cycleDetector.track(rootConceptId);
     resultNodes.push({
-      conceptId: request.rootConceptId,
+      conceptId: rootConceptId,
       depth: 0,
       relationType: DiscoveryRelationType.ROOT
     });
 
     // BFS Queue
-    const queue: { conceptId: string; depth: number }[] = [{ conceptId: request.rootConceptId, depth: 0 }];
+    const queue: { conceptId: string; depth: number }[] = [{ conceptId: rootConceptId, depth: 0 }];
 
     while (queue.length > 0) {
       const current = queue.shift()!;

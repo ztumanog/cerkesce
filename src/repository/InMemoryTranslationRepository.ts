@@ -1,4 +1,4 @@
-/**
+﻿/**
  * @file src/repository/InMemoryTranslationRepository.ts
  * @description Bellek içi çeviri deposu - Kiril/Latin normalize araması, Inverted Index, Canonical ID ve dil filtreli anlam araması desteği ile.
  */
@@ -23,9 +23,7 @@ export class InMemoryTranslationRepository implements TranslationRepository, ITr
   private groups: TranslationGroup[] = [];
   private rules: DialectRule[] = [];
 
-  // O(1) Hızlı arama için inverted index haritası
   private searchIndex: Map<string, Set<TranslationEntry>> = new Map();
-  // Canonical ID çakışmalarını önlemek için sayaç haritası
   private fallbackIndexes: Map<string, number> = new Map();
 
   constructor(
@@ -38,10 +36,6 @@ export class InMemoryTranslationRepository implements TranslationRepository, ITr
     this.loadEntries(entries);
   }
 
-  /**
-   * ADR-0004 Canonical Identity
-   * Format: <sourceId>:<sourceEntryId> veya <sourceId>:<lemma>:<index>
-   */
   public generateCanonicalId(
     sourceId: string,
     sourceEntryId?: string,
@@ -58,9 +52,6 @@ export class InMemoryTranslationRepository implements TranslationRepository, ITr
     return `${sourceId}:${normalizedLemma}:${currentIndex}`;
   }
 
-  /**
-   * DataChunkLoader için toplu veri yükleme metotları
-   */
   public loadGroups(groups: TranslationGroup[]): void {
     this.groups.push(...groups);
   }
@@ -71,7 +62,7 @@ export class InMemoryTranslationRepository implements TranslationRepository, ITr
         entry.id = this.generateCanonicalId(
           (entry as any).sourceId || "default",
           (entry as any).sourceEntryId,
-          entry.lemma
+          entry.lemma || (entry as any).term
         );
       }
       this.entries.push(entry);
@@ -79,9 +70,6 @@ export class InMemoryTranslationRepository implements TranslationRepository, ITr
     }
   }
 
-  /**
-   * Tekil bir girdiyi Inverted Index haritasına ekler.
-   */
   private indexEntry(entry: TranslationEntry): void {
     const tokens = new Set<string>();
 
@@ -97,6 +85,7 @@ export class InMemoryTranslationRepository implements TranslationRepository, ITr
     };
 
     addTokenVariants(entry.lemma);
+    addTokenVariants((entry as any).term);
     addTokenVariants(entry.normalizedLemma);
 
     entry.meanings?.forEach((meaning) => {
@@ -118,9 +107,6 @@ export class InMemoryTranslationRepository implements TranslationRepository, ITr
     });
   }
 
-  /**
-   * İndeksi sıfırlayıp tüm girdileri baştan indeksler
-   */
   private rebuildIndex(): void {
     this.searchIndex.clear();
     for (const entry of this.entries) {
@@ -128,9 +114,6 @@ export class InMemoryTranslationRepository implements TranslationRepository, ITr
     }
   }
 
-  /**
-   * String ifadeleri Kiril/Latin karakter kümelerine ve Çerkesçe özel harflerine (Palochka) duyarlı şekilde normalize eder.
-   */
   public normalizeString(str: string): string {
     if (!str) return "";
     return str
@@ -140,9 +123,6 @@ export class InMemoryTranslationRepository implements TranslationRepository, ITr
       .replace(/ş/gi, "ш");
   }
 
-  /**
-   * Tutarlı arama normalizasyonu (Diakritik temizleme)
-   */
   private normalizeForSearch(text: string): string {
     if (!text) return "";
     return text
@@ -151,10 +131,6 @@ export class InMemoryTranslationRepository implements TranslationRepository, ITr
       .normalize("NFD")
       .replace(/[\u0300-\u036f]/g, "");
   }
-
-  /**
-   * ===== DIYALEKT KURALLARI METODLARI =====
-   */
 
   async getAllRules(): Promise<DialectRule[]> {
     return this.rules;
@@ -168,16 +144,12 @@ export class InMemoryTranslationRepository implements TranslationRepository, ITr
     this.rules.push(rule);
   }
 
-  /**
-   * ===== YENİ / GÜNCEL REPOSITORY METODLARI =====
-   */
-
   async save(entry: TranslationEntry): Promise<TranslationEntry> {
     if (!entry.id) {
       entry.id = this.generateCanonicalId(
         (entry as any).sourceId || "default",
         (entry as any).sourceEntryId,
-        entry.lemma
+        entry.lemma || (entry as any).term
       );
     }
     const existingIndex = this.entries.findIndex((e) => e.id === entry.id);
@@ -195,17 +167,11 @@ export class InMemoryTranslationRepository implements TranslationRepository, ITr
     return this.getById(id);
   }
 
-  /**
-   * ITranslationRepository UYUMLULUĞU: Tekil Kayıt Döner
-   */
   async findByLemma(lemma: string): Promise<TranslationEntry | null> {
     const results = await this.findManyByLemma(lemma);
     return results.length > 0 ? results[0] : null;
   }
 
-  /**
-   * Çoklu Lemma Arama Desteği
-   */
   async findManyByLemma(lemma: string): Promise<TranslationEntry[]> {
     const key = this.normalizeString(lemma);
     const rawKey = lemma.trim().toLowerCase();
@@ -216,9 +182,10 @@ export class InMemoryTranslationRepository implements TranslationRepository, ITr
 
     if (candidates) {
       for (const entry of candidates) {
+        const lemmaVal = entry.lemma || (entry as any).term || "";
         if (
-          this.normalizeString(entry.lemma) === key ||
-          entry.lemma.toLowerCase() === rawKey ||
+          this.normalizeString(lemmaVal) === key ||
+          lemmaVal.toLowerCase() === rawKey ||
           (entry.normalizedLemma && this.normalizeString(entry.normalizedLemma) === key)
         ) {
           results.push(entry);
@@ -228,12 +195,14 @@ export class InMemoryTranslationRepository implements TranslationRepository, ITr
 
     if (results.length > 0) return results;
 
-    return this.entries.filter(
-      (e) =>
-        this.normalizeString(e.lemma) === key ||
-        e.lemma.toLowerCase() === rawKey ||
+    return this.entries.filter((e) => {
+      const lemmaVal = e.lemma || (e as any).term || "";
+      return (
+        this.normalizeString(lemmaVal) === key ||
+        lemmaVal.toLowerCase() === rawKey ||
         (e.normalizedLemma && this.normalizeString(e.normalizedLemma) === key)
-    );
+      );
+    });
   }
 
   async findByMeaning(text: string, language?: string): Promise<TranslationEntry[]> {
@@ -269,10 +238,6 @@ export class InMemoryTranslationRepository implements TranslationRepository, ITr
   async findAll(): Promise<TranslationEntry[]> {
     return this.entries;
   }
-
-  /**
-   * ===== ITranslationRepository IMPLEMENTASYONU =====
-   */
 
   async getAll(): Promise<TranslationEntry[]> {
     return this.entries;
@@ -312,7 +277,7 @@ export class InMemoryTranslationRepository implements TranslationRepository, ITr
 
   filterByLanguage(entries: TranslationEntry[], language: string): TranslationEntry[] {
     return entries.filter((e) =>
-      e.meanings.some((m) => m.language === language)
+      e.meanings?.some((m) => m.language === language)
     );
   }
 
@@ -361,8 +326,12 @@ export class InMemoryTranslationRepository implements TranslationRepository, ITr
 
     const normalized = this.normalizeForSearch(query);
     return this.entries.filter((entry) => {
-      const entryNormalized = this.normalizeForSearch(entry.lemma);
-      return entryNormalized.includes(normalized);
+      const lemmaVal = entry.lemma || (entry as any).term || "";
+      const entryNormalized = this.normalizeForSearch(lemmaVal);
+      const meaningMatch = entry.meanings?.some((m) =>
+        this.normalizeForSearch(m.text).includes(normalized)
+      );
+      return entryNormalized.includes(normalized) || meaningMatch;
     });
   }
 
@@ -398,9 +367,6 @@ export class InMemoryTranslationRepository implements TranslationRepository, ITr
     return this.getByGroup(groupId);
   }
 
-  /**
-   * Çapraz sözlük araması - Lemma ve Anlamlarda Parça Eşleşmesi (OR)
-   */
   async searchCrossDictionary(query: string): Promise<TranslationEntry[]> {
     if (!query || !query.trim()) {
       return this.entries;
@@ -409,7 +375,8 @@ export class InMemoryTranslationRepository implements TranslationRepository, ITr
     const normalized = this.normalizeForSearch(query);
 
     return this.entries.filter((entry) => {
-      const lemmaMatch = this.normalizeForSearch(entry.lemma).includes(normalized);
+      const lemmaVal = entry.lemma || (entry as any).term || "";
+      const lemmaMatch = this.normalizeForSearch(lemmaVal).includes(normalized);
       const meaningMatch = entry.meanings?.some((m) =>
         this.normalizeForSearch(m.text).includes(normalized)
       );

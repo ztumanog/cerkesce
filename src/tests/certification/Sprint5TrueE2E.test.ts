@@ -23,37 +23,35 @@ describe('Phase 5.1 Sprint 5: True Domain Construction E2E Certification', () =>
   let discoveryAssembler: DiscoveryAssembler;
 
   beforeEach(() => {
-    // 1. Somut Repository Instanceları
     translationRepo = new InMemoryTranslationRepository();
     conceptRepo = new InMemoryConceptRepository();
     const dialectRuleRepo = new DialectRuleRepository();
 
-    // 2. Translation Repository Verileri
-    translationRepo.save({ id: 'm_water_1', language: 'TR', term: 'su', definition: 'H2O bileşiği' });
-    translationRepo.save({ id: 'm_water_2', language: 'EN', term: 'water', definition: 'Clear liquid' });
-    translationRepo.save({ id: 'm_water_3', language: 'KBD', term: 'psı', definition: 'LъэщIгъуэ' });
+    // 1. Somut Translation Girdileri
+    translationRepo.save({
+      id: 'm_water_1',
+      lemma: 'su',
+      meanings: [{ id: 'm_water_1', text: 'H2O bileşiği', language: 'TR' }]
+    } as any);
 
-    // 3. Domain Construction: Concept Nesneleri
+    // 2. Domain Concept Nesneleri
     const conceptWater = new Concept({ id: ConceptID.create('CONCEPT_WATER') as any, canonicalName: 'Water' });
     const conceptIce = new Concept({ id: ConceptID.create('CONCEPT_ICE') as any, canonicalName: 'Ice' });
     const conceptRiver = new Concept({ id: ConceptID.create('CONCEPT_RIVER') as any, canonicalName: 'River' });
     const conceptLiquid = new Concept({ id: ConceptID.create('CONCEPT_LIQUID') as any, canonicalName: 'Liquid' });
     const conceptSteam = new Concept({ id: ConceptID.create('CONCEPT_STEAM') as any, canonicalName: 'Steam' });
 
-    // Concept Repository'ye Kayıt
     conceptRepo.save(conceptWater);
     conceptRepo.save(conceptIce);
     conceptRepo.save(conceptRiver);
     conceptRepo.save(conceptLiquid);
     conceptRepo.save(conceptSteam);
 
-    // 4. True Domain Construction: MeaningConceptLinker Üzerinden Bağlantılar
+    // 3. Meaning-Concept Köprüsü
     meaningLinker = new MeaningConceptLinker(conceptRepo);
     meaningLinker.link('m_water_1', 'CONCEPT_WATER');
-    meaningLinker.link('m_water_2', 'CONCEPT_WATER');
-    meaningLinker.link('m_water_3', 'CONCEPT_WATER');
 
-    // 5. MeaningGraph & Traversal Engine Yapılandırması
+    // 4. Graph İlişkileri
     meaningGraph = new MeaningGraph();
     meaningGraph.addConcept(conceptWater);
     meaningGraph.addConcept(conceptIce);
@@ -79,7 +77,6 @@ describe('Phase 5.1 Sprint 5: True Domain Construction E2E Certification', () =>
       }
     };
 
-    // 6. Somut Domain Servisleri
     translationService = new TranslationService(translationRepo);
     dialectResolver = new DialectResolver(dialectRuleRepo);
     graphTraversalService = new GraphTraversalService(graphAdapter as any);
@@ -88,23 +85,20 @@ describe('Phase 5.1 Sprint 5: True Domain Construction E2E Certification', () =>
 
   it('should execute true end-to-end discovery via clean domain construction', async () => {
     const explorer = new MultilingualExplorer(
-      translationService as any,
-      meaningLinker as any,
-      dialectResolver as any,
+      translationService,
+      meaningLinker,
+      dialectResolver,
       graphTraversalService,
       discoveryAssembler
     );
 
-    // ACT: TR sorgusu 'su' başlatılıyor
     const result = await explorer.explore('su', { targetDialect: 'KBD' });
 
-    // ASSERT: Core Context
     expect(result).toBeDefined();
     expect(result.query).toBe('su');
     expect(result.conceptId).toBe('CONCEPT_WATER');
     expect(result.canonicalName).toBe('Water');
 
-    // ASSERT: Graph Traversal (Depth <= 2)
     expect(result.relatedConcepts).toBeDefined();
     const relatedIds = result.relatedConcepts!.map(c => c.conceptId);
 
@@ -114,7 +108,6 @@ describe('Phase 5.1 Sprint 5: True Domain Construction E2E Certification', () =>
     expect(relatedIds).toContain('CONCEPT_LIQUID');
     expect(relatedIds).toContain('CONCEPT_STEAM');
 
-    // ASSERT: Metadata
     expect(result.graphMetadata?.maxDepth).toBe(2);
   });
 });

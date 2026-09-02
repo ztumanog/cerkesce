@@ -4,6 +4,7 @@ import { GraphTraversalService } from '../../../domain/discovery/services/GraphT
 import { DiscoveryAssembler } from '../../../domain/discovery/services/DiscoveryAssembler';
 import { MeaningGraph } from '../../../domain/concept/services/MeaningGraph';
 import { Concept } from '../../../domain/concept/Concept';
+import { ConceptID } from '../../../domain/value-objects/ConceptID';
 
 describe('Phase 5.1 Sprint 4: Graph-Aware Discovery E2E Certification', () => {
   let meaningGraph: MeaningGraph;
@@ -13,22 +14,29 @@ describe('Phase 5.1 Sprint 4: Graph-Aware Discovery E2E Certification', () => {
   beforeEach(() => {
     meaningGraph = new MeaningGraph();
 
-    // 1. Concept Tanımları ve İlişkiler
-    const conceptWater = new Concept('CONCEPT_WATER', 'Water');
+    // Create valid ULID-based ConceptIDs
+    const waterID = ConceptID.create('01ARZ3NDEKTSV4RRFFQ69G5FAV');
+    const iceID = ConceptID.create('01ARZ3NDEKTSV4RRFFQ69G5FB0');
+    const riverID = ConceptID.create('01ARZ3NDEKTSV4RRFFQ69G5FB1');
+    const liquidID = ConceptID.create('01ARZ3NDEKTSV4RRFFQ69G5FB2');
+    const steamID = ConceptID.create('01ARZ3NDEKTSV4RRFFQ69G5FB3');
+
+    // 1. Concept Tanımları ve İlişkiler - USE PROPER CONSTRUCTOR
+    const conceptWater = Concept.create(waterID, 'Water');
     (conceptWater as any).relations = [
-      { targetConceptId: 'CONCEPT_ICE', type: 'STATE_OF' },
-      { targetConceptId: 'CONCEPT_RIVER', type: 'LOCATION_OF' },
-      { targetConceptId: 'CONCEPT_LIQUID', type: 'CATEGORY_OF' }
+      { targetConceptId: iceID.getValue(), type: 'STATE_OF' },
+      { targetConceptId: riverID.getValue(), type: 'LOCATION_OF' },
+      { targetConceptId: liquidID.getValue(), type: 'CATEGORY_OF' }
     ];
 
-    const conceptIce = new Concept('CONCEPT_ICE', 'Ice');
+    const conceptIce = Concept.create(iceID, 'Ice');
     (conceptIce as any).relations = [
-      { targetConceptId: 'CONCEPT_STEAM', type: 'STATE_OF' }
+      { targetConceptId: steamID.getValue(), type: 'STATE_OF' }
     ];
 
-    const conceptRiver = new Concept('CONCEPT_RIVER', 'River');
-    const conceptLiquid = new Concept('CONCEPT_LIQUID', 'Liquid');
-    const conceptSteam = new Concept('CONCEPT_STEAM', 'Steam');
+    const conceptRiver = Concept.create(riverID, 'River');
+    const conceptLiquid = Concept.create(liquidID, 'Liquid');
+    const conceptSteam = Concept.create(steamID, 'Steam');
 
     meaningGraph.addConcept(conceptWater);
     meaningGraph.addConcept(conceptIce);
@@ -63,7 +71,7 @@ describe('Phase 5.1 Sprint 4: Graph-Aware Discovery E2E Certification', () => {
 
     const stubMeaningLinker = {
       resolveConcept: async (_meaningId: string) => ({
-        id: 'CONCEPT_WATER',
+        id: '01ARZ3NDEKTSV4RRFFQ69G5FAV',
         canonicalName: 'Water'
       })
     };
@@ -87,7 +95,7 @@ describe('Phase 5.1 Sprint 4: Graph-Aware Discovery E2E Certification', () => {
 
     // ASSERT: Temel Özellikler
     expect(result.query).toBe('su');
-    expect(result.conceptId).toBe('CONCEPT_WATER');
+    expect(result.conceptId).toBe('01ARZ3NDEKTSV4RRFFQ69G5FAV');
     expect(result.canonicalName).toBe('Water');
 
     // ASSERT: Gerçek Traversal
@@ -95,13 +103,13 @@ describe('Phase 5.1 Sprint 4: Graph-Aware Discovery E2E Certification', () => {
     const conceptIds = result.relatedConcepts!.map(c => c.conceptId);
 
     // Kök Filtreleme Check
-    expect(conceptIds).not.toContain('CONCEPT_WATER');
+    expect(conceptIds).not.toContain('01ARZ3NDEKTSV4RRFFQ69G5FAV');
 
     // Derinlik 1 ve 2 Bağlantıları
-    expect(conceptIds).toContain('CONCEPT_ICE');
-    expect(conceptIds).toContain('CONCEPT_RIVER');
-    expect(conceptIds).toContain('CONCEPT_LIQUID');
-    expect(conceptIds).toContain('CONCEPT_STEAM');
+    expect(conceptIds).toContain('01ARZ3NDEKTSV4RRFFQ69G5FB0');
+    expect(conceptIds).toContain('01ARZ3NDEKTSV4RRFFQ69G5FB1');
+    expect(conceptIds).toContain('01ARZ3NDEKTSV4RRFFQ69G5FB2');
+    expect(conceptIds).toContain('01ARZ3NDEKTSV4RRFFQ69G5FB3');
 
     // ASSERT: Graph Metadata
     expect(result.graphMetadata?.maxDepth).toBe(2);
