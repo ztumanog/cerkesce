@@ -1,28 +1,20 @@
-﻿import { RankedRelatedConceptDTO } from './RankedRelatedConceptDTO';
-import { ContextClusterDTO } from './ContextClusterDTO';
+import { RelatedConceptDTO } from './RelatedConceptDTO';
+import { TraversalNode } from './TraversalNode';
 
 export interface DiscoveryResultDTO {
-  query: string;
   conceptId?: string;
+  rootConceptId?: string;
+  query?: string;
   canonicalName?: string;
-  meanings: Array<{
-    id: string;
-    language: string;
-    term: string;
-    definition?: string;
-  }>;
-  variants: Array<{
-    id: string;
-    dialectCode: string;
-    term: string;
-    isFallback: boolean;
-    fallbackSourceDialect?: string;
-  }>;
-  relatedConcepts?: RankedRelatedConceptDTO[] | any[];
-  contextClusters?: ContextClusterDTO[];
-  graphMetadata?: {
-    traversedNodes: number;
-    maxDepth: number;
-  };
-  executionTimeMs: number;
+
+  relatedConcepts?: RelatedConceptDTO[];
+  rankedRelatedConcepts?: RelatedConceptDTO[];
+
+  traversalNodes?: TraversalNode[];
+  contextClusters?: unknown[];
+  meanings?: unknown[];
+  variants?: unknown[];
+  graphMetadata?: Record<string, unknown>;
+
+  executionTimeMs?: number;
 }

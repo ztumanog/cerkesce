@@ -1,36 +1,17 @@
-// @/lib/source-registry.ts
-import { SourceMetadata, SourceMetadataSchema } from '@/types/source';
+import dictionarySources from '@/data/dictionarySources.json';
+import type { AktifSozlukItem } from '@/types/dictionary';
 
-export class SourceRegistryService {
-  private static instance: SourceRegistryService;
-  private registry: Map<string, SourceMetadata> = new Map();
-
-  private constructor() {}
-
-  public static getInstance(): SourceRegistryService {
-    if (!SourceRegistryService.instance) {
-      SourceRegistryService.instance = new SourceRegistryService();
-    }
-    return SourceRegistryService.instance;
-  }
-
-  public registerSource(rawData: unknown): SourceMetadata {
-    const parseResult = SourceMetadataSchema.safeParse(rawData);
-    
-    if (!parseResult.success) {
-      throw new Error(`[SourceRegistry] Şema Doğrulama Hatası: ${parseResult.error.message}`);
-    }
-
-    const data = parseResult.data;
-    this.registry.set(data.id, data);
-    return data;
-  }
-
-  public getSource(id: string): SourceMetadata | undefined {
-    return this.registry.get(id);
-  }
-
-  public getAllSources(): ReadonlyArray<SourceMetadata> {
-    return Array.from(this.registry.values());
+export class SourceRegistry {
+  public static getActiveSources(): AktifSozlukItem[] {
+    if (!Array.isArray(dictionarySources)) return [];
+    return dictionarySources.map((s: any) => ({
+      file: s.file,
+      title: s.title,
+      dialect: (s.dialect === 'western' ? 'BATI' : 'DOGU') as any,
+      author: s.author,
+      year: s.year,
+      total_words: s.total_words,
+      active: true,
+    }));
   }
 }

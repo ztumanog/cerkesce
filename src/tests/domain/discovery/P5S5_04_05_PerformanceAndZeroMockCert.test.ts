@@ -41,7 +41,7 @@ class ProductionConceptGraphRepository {
     for (let i = 1; i <= 50; i++) {
       this.graph.set(rootId, [
         ...(this.graph.get(rootId) || []),
-        { targetConceptId: `01ARZ3NDEKTSV4RRFFQ69G5F${i.toString().padStart(2, '0')}`, relationType: DiscoveryRelationType.RELATED_TO }
+        { targetConceptId: `01ARZ3NDEKTSV4RRFFQ69G5F${i.toString().padStart(2, '0')}`, relationType: DiscoveryRelationType.RELATED }
       ]);
     }
   }

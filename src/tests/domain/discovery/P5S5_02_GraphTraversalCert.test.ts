@@ -6,7 +6,7 @@ import { DiscoveryRelationType } from '../../../domain/discovery/types/Discovery
 class InMemoryGraphRepo implements IConceptGraphRepository {
   private adjacency = new Map<string, Array<{ targetConceptId: string; relationType: DiscoveryRelationType }>>();
 
-  public addRelation(sourceId: string, targetId: string, relationType: DiscoveryRelationType = DiscoveryRelationType.RELATED_TO): void {
+  public addRelation(sourceId: string, targetId: string, relationType: DiscoveryRelationType = DiscoveryRelationType.RELATED): void {
     if (!this.adjacency.has(sourceId)) {
       this.adjacency.set(sourceId, []);
     }
@@ -23,8 +23,8 @@ describe('P5S5-02: Graph Traversal Certification', () => {
     const repo = new InMemoryGraphRepo();
     // A -> B -> D
     // A -> C -> D
-    repo.addRelation('A', 'B', DiscoveryRelationType.RELATED_TO);
-    repo.addRelation('A', 'C', DiscoveryRelationType.RELATED_TO);
+    repo.addRelation('A', 'B', DiscoveryRelationType.RELATED);
+    repo.addRelation('A', 'C', DiscoveryRelationType.RELATED);
     repo.addRelation('B', 'D', DiscoveryRelationType.STATE_OF);
     repo.addRelation('C', 'D', DiscoveryRelationType.STATE_OF);
 
@@ -39,7 +39,7 @@ describe('P5S5-02: Graph Traversal Certification', () => {
   it('GTC-002: Large Breadth - Should process 100+ direct neighbors deterministically under SLA', () => {
     const repo = new InMemoryGraphRepo();
     for (let i = 1; i <= 100; i++) {
-      repo.addRelation('A', `B_${i}`, DiscoveryRelationType.RELATED_TO);
+      repo.addRelation('A', `B_${i}`, DiscoveryRelationType.RELATED);
     }
 
     const service = new GraphTraversalService(repo);
@@ -53,7 +53,7 @@ describe('P5S5-02: Graph Traversal Certification', () => {
 
   it('GTC-003: Self Reference - Should gracefully handle self-referencing loops', () => {
     const repo = new InMemoryGraphRepo();
-    repo.addRelation('A', 'A', DiscoveryRelationType.RELATED_TO);
+    repo.addRelation('A', 'A', DiscoveryRelationType.RELATED);
 
     const service = new GraphTraversalService(repo);
     const nodes = service.traverse('A', 2);
@@ -70,8 +70,8 @@ describe('P5S5-02: Graph Traversal Certification', () => {
     //   B   C
     //    \ /
     //     D
-    repo.addRelation('A', 'B', DiscoveryRelationType.RELATED_TO);
-    repo.addRelation('A', 'C', DiscoveryRelationType.RELATED_TO);
+    repo.addRelation('A', 'B', DiscoveryRelationType.RELATED);
+    repo.addRelation('A', 'C', DiscoveryRelationType.RELATED);
     repo.addRelation('B', 'D', DiscoveryRelationType.LOCATION_OF);
     repo.addRelation('C', 'D', DiscoveryRelationType.LOCATION_OF);
 
@@ -88,10 +88,10 @@ describe('P5S5-02: Graph Traversal Certification', () => {
   it('GTC-005: Max Depth Hard Stop - Should strictly stop traversal at depth 2', () => {
     const repo = new InMemoryGraphRepo();
     // A -> B -> C -> D -> E
-    repo.addRelation('A', 'B', DiscoveryRelationType.RELATED_TO);
-    repo.addRelation('B', 'C', DiscoveryRelationType.RELATED_TO);
-    repo.addRelation('C', 'D', DiscoveryRelationType.RELATED_TO);
-    repo.addRelation('D', 'E', DiscoveryRelationType.RELATED_TO);
+    repo.addRelation('A', 'B', DiscoveryRelationType.RELATED);
+    repo.addRelation('B', 'C', DiscoveryRelationType.RELATED);
+    repo.addRelation('C', 'D', DiscoveryRelationType.RELATED);
+    repo.addRelation('D', 'E', DiscoveryRelationType.RELATED);
 
     const service = new GraphTraversalService(repo);
     const nodes = service.traverse('A', 2);

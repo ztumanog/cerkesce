@@ -1,4 +1,4 @@
-﻿import { describe, it, expect, beforeEach } from 'vitest';
+import { describe, it, expect, beforeEach } from 'vitest';
 import { Dialect } from '../../../domain/dialect/Dialect';
 import { Variant } from '../../../domain/dialect/Variant';
 import { VariantId } from '../../../domain/dialect/value-objects/VariantId';
@@ -48,7 +48,7 @@ describe('Sprint 3 (Phase 4): Variant Mapping & Cross-Phase Bridges (Piloşum Cr
     });
 
     it('✅ Unknown rule handling: Kural bulunamadığında metni değiştirmeden aynen dönmelidir', () => {
-      const result = mapper.transform('orijinal', DialectCode.BESLENEY, DialectCode.KABARDIAN);
+      const result = mapper.transform('orijinal', DialectCode.BESLENEY, DialectCode.KABARDAY);
       expect(result).toBe('orijinal');
     });
   });

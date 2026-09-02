@@ -1,85 +1,47 @@
-"use client";
+import { useState, useMemo } from 'react';
+import { DictionaryItem, AktifSozlukItem, LehceTipi, AramaModuTipi } from '@/types/dictionary';
+import { loadDictionaryData } from '@/lib/dictionaryLoader';
 
-/**
- * @file src/hooks/useDictionary.ts
- * @description Projenin TEK state sahibidir. 
- * Debounce ve useTransition ile Server Action entegrasyonunu sağlar.
- */
+export const useDictionary = () => {
+  const { entries, sources, manifest } = useMemo(() => loadDictionaryData(), []);
 
-import { useState, useEffect, useTransition } from "react";
-import type { 
-  AramaModu, 
-  LehceTipi, 
-  DictionaryItem, 
-  DictionaryMeta,
-  UseDictionaryReturn 
-} from "@/types/dictionary";
-import { searchTranslations } from "@/app/actions/dictionaryActions";
+  const [aramaMetni, setAramaMetni] = useState('');
+  const [seciliLehce, setSeciliLehce] = useState<LehceTipi>('tumu');
+  const [aramaModu, setAramaModu] = useState<AramaModuTipi>('hepsi');
 
-export function useDictionary(): UseDictionaryReturn {
-  const [searchQuery, setSearchQuery] = useState<string>("");
-  const [hedefDil, setHedefDil] = useState<string>("TUMU");
-  const [seciliLehce, setSeciliLehce] = useState<LehceTipi>("TUMU");
-  const [seciliDosya, setSeciliDosya] = useState<string>("TUMU");
-  const [aramaModu, setAramaModu] = useState<AramaModu>("prefix");
-  const [limit, setLimit] = useState<number>(20);
+  const filtrelenmisKelimeler = useMemo(() => {
+    return entries.filter((item: DictionaryItem) => {
+      const q = aramaMetni.toLowerCase().trim();
 
-  const [aktifSozlukler] = useState<DictionaryMeta[]>([]);
-  const [filtrelenmisSonuclar, setFiltrelenmisSonuclar] = useState<DictionaryItem[]>([]);
-  const [error, setError] = useState<string | null>(null);
-  const [wordsCount, setWordsCount] = useState<number>(0);
+      if (seciliLehce !== 'tumu') {
+        const itemDialect = item.dialect?.toLowerCase() || '';
+        if (seciliLehce === 'doğu' && !itemDialect.includes('dogu') && !itemDialect.includes('doğu')) return false;
+        if (seciliLehce === 'batı' && !itemDialect.includes('western') && !itemDialect.includes('batı')) return false;
+      }
 
-  const [isPending, startTransition] = useTransition();
+      if (!q) return true;
 
-  useEffect(() => {
-    if (!searchQuery.trim()) {
-      setFiltrelenmisSonuclar([]);
-      setWordsCount(0);
-      setError(null);
-      return;
-    }
+      const wordMatch = item.word?.toLowerCase().includes(q);
+      const translationMatch = item.translation?.toLowerCase().includes(q);
 
-    const timer = setTimeout(() => {
-      startTransition(async () => {
-        try {
-          // searchTranslations doğrudan query string alır ve dizi döner
-          const results = await searchTranslations(searchQuery);
-
-          setFiltrelenmisSonuclar(results as unknown as DictionaryItem[]);
-          setWordsCount(results.length);
-          setError(null);
-        } catch (err) {
-          setError(err instanceof Error ? err.message : "Sunucu hatası oluştu.");
-          setFiltrelenmisSonuclar([]);
-          setWordsCount(0);
-        }
-      });
-    }, 300);
-
-    return () => clearTimeout(timer);
-  }, [searchQuery, seciliLehce, limit]);
+      if (aramaModu === 'kelime') return wordMatch;
+      if (aramaModu === 'anlam') return translationMatch;
+      return wordMatch || translationMatch;
+    });
+  }, [entries, aramaMetni, seciliLehce, aramaModu]);
 
   return {
-    searchQuery,
-    setSearchQuery,
-    hedefDil,
-    setHedefDil,
+    entries: filtrelenmisKelimeler,
+    totalEntries: entries.length,
+    sources,
+    manifest,
+    aramaMetni,
+    setAramaMetni,
     seciliLehce,
     setSeciliLehce,
-    seciliDosya,
-    setSeciliDosya,
     aramaModu,
     setAramaModu,
-    mod: aramaModu,
-    setMod: setAramaModu,
-    limit,
-    setLimit,
-    aktifSozlukler,
-    filtrelenmisSonuclar,
-    loading: isPending,
-    error,
-    wordsCount,
   };
-}
+};
 
 export default useDictionary;

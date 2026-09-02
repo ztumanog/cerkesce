@@ -1,44 +1,28 @@
-import { Suspense } from "react";
-// Sadece sayfada gerçekten kullandığımız ana bileşeni içe aktarıyoruz
-import SozlukEkrani from "@/components/dictionary/SozlukEkrani";
-// Next.js App Router'da URL parametreleri asenkron olarak gelir
-interface PageProps {
-  searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
-}
+'use client';
 
-export default async function DictionaryPage({ searchParams }: PageProps) {
-  // 1. URL parametrelerini çözümleme
-  const resolvedParams = await searchParams;
-  
-  // 2. SearchBox için başlangıç değerlerini URL'den güvenli şekilde çıkarma
-  // Eski tip dayatmaları (as LehceTipi vb.) yerine doğrudan string olarak aktarıyoruz.
-  const baslangicSorgusu = typeof resolvedParams.q === "string" ? resolvedParams.q : "";
-  const baslangicLehce = typeof resolvedParams.lehce === "string" ? resolvedParams.lehce : "TUMU";
-  const baslangicHedefDil = typeof resolvedParams.hedefDil === "string" ? resolvedParams.hedefDil : "TUMU";
-  const baslangicMod = typeof resolvedParams.mod === "string" ? resolvedParams.mod : "prefix";
-  const baslangicLimit = typeof resolvedParams.limit === "string" ? parseInt(resolvedParams.limit, 10) : 20;
+import React, { useState } from 'react';
+import Header from '@/components/layout/Header';
+import Footer from '@/components/layout/Footer';
+import SozlukEkrani from '@/components/dictionary/SozlukEkrani';
+import rawDicts from '@/data/dictionaries.json';
+import rawWords from '@/data/dictionaryData.json';
+
+export default function HomePage() {
+  const totalWords = (rawWords as any[]).length;
+  const totalDicts = (rawDicts as any[]).length;
 
   return (
-    <main className="flex min-h-screen flex-col items-center bg-stone-50 p-4 dark:bg-stone-950 sm:p-8">
-      {/* 
-        Ağır veri işleme ve SearchBox durum (state) yönetimi istemci tarafında yapılmalıdır.
-        page.tsx sadece başlangıç parametrelerini ileten bir sarmalayıcıdır.
-      */}
-      <Suspense 
-        fallback={
-          <div className="flex min-h-[50vh] w-full items-center justify-center text-sm font-medium text-stone-500 dark:text-stone-400">
-            Sözlük altyapısı yükleniyor...
-          </div>
-        }
-      >
-        <SozlukEkrani 
-          initialQuery={baslangicSorgusu}
-          initialLehce={baslangicLehce}
-          initialHedefDil={baslangicHedefDil}
-          initialMod={baslangicMod}
-          initialLimit={baslangicLimit}
+    <div className="min-h-screen bg-stone-950 text-stone-100 flex flex-col justify-between">
+      <div>
+        <Header
+          totalWords={totalWords}
+          activeSourcesCount={totalDicts}
         />
-      </Suspense>
-    </main>
+        <main className="max-w-7xl mx-auto p-4 md:p-6">
+          <SozlukEkrani />
+        </main>
+      </div>
+      <Footer totalSources={totalDicts} />
+    </div>
   );
 }
