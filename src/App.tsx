@@ -165,7 +165,7 @@ export default function App() {
           </div>
         ) : (
           /* WebGL Graph Canvas Simülasyonu */
-          <div style={{ background: '#1e293b', borderRadius: '16px', padding: '24px', minHeight: '400px', border: '1px solid #334155', textCenter: 'center' }}>
+          <div style={{ background: '#1e293b', borderRadius: '16px', padding: '24px', minHeight: '400px', border: '1px solid #334155', textAlign: 'center' }}>
             <h3 style={{ marginTop: 0, color: '#38bdf8' }}>🌐 Concept Graph Visualization (Cytoscape / WebGL)</h3>
             <p style={{ color: '#94a3b8', fontSize: '13px' }}>Semantik kavram bağı görünümü aktif. Düğümler arası ilişki ağırlıkları render ediliyor.</p>
             <div style={{ height: '250px', background: '#0f172a', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center', border: '1px dashed #475569' }}>
