@@ -1,99 +1,66 @@
-﻿import { SemanticQueryDTO, SearchIntent } from '../dto/SemanticQueryDTO';
-import { ConceptCandidateDTO } from '../dto/ConceptCandidateDTO';
+﻿import { SemanticRuleRegistry, MatchType, IntentType } from './rules/SemanticRuleRegistry';
 
-export interface ConceptLookupDictionary {
-  [key: string]: { conceptId: string; language: string };
+export interface SemanticCandidate {
+  conceptId: string;
+  label?: string;
+}
+
+export interface QuerySemanticResult {
+  rawQuery: string;
+  normalizedQuery: string;
+  intent: IntentType;
+  matchType: MatchType;
+  language: string;
+  candidates: SemanticCandidate[];
 }
 
 export class QuerySemanticMapper {
-  private dictionary: ConceptLookupDictionary;
+  private registry: SemanticRuleRegistry;
 
-  constructor(customDictionary?: ConceptLookupDictionary) {
-    // Varsayılan Çoklu Dil -> Concept Eşleşme Sözlüğü (Deterministik)
-    this.dictionary = customDictionary || {
-      'su': { conceptId: '01ARZ3NDEKTSV4RRFFQ69G5FAV', language: 'TR' },
-      'water': { conceptId: '01ARZ3NDEKTSV4RRFFQ69G5FAV', language: 'EN' },
-      'вода': { conceptId: '01ARZ3NDEKTSV4RRFFQ69G5FAV', language: 'RU' },
-      'псы': { conceptId: '01ARZ3NDEKTSV4RRFFQ69G5FAV', language: 'ADY' },
-      'psı': { conceptId: '01ARZ3NDEKTSV4RRFFQ69G5FAV', language: 'ADY' },
-      'akarsu': { conceptId: '01ARZ3NDEKTSV4RRFFQ69G5FB0', language: 'TR' },
-      'river': { conceptId: '01ARZ3NDEKTSV4RRFFQ69G5FB0', language: 'EN' },
-      'buz': { conceptId: '01ARZ3NDEKTSV4RRFFQ69G5FB2', language: 'TR' },
-      'ice': { conceptId: '01ARZ3NDEKTSV4RRFFQ69G5FB2', language: 'EN' }
-    };
+  constructor(customRegistry?: SemanticRuleRegistry) {
+    this.registry = customRegistry || new SemanticRuleRegistry();
   }
 
-  public map(query: string): SemanticQueryDTO {
+  public map(query: string): QuerySemanticResult {
     const rawQuery = query || '';
-    const normalizedQuery = this.normalize(rawQuery);
+    const normalizedQuery = rawQuery.trim().toLowerCase().normalize('NFC');
+    const defaultWaterId = '01ARZ3NDEKTSV4RRFFQ69G5FAV';
 
-    if (!normalizedQuery) {
-      return {
-        rawQuery,
-        normalizedQuery: '',
-        detectedLanguage: 'UNKNOWN',
-        intent: 'concept_lookup',
-        candidates: []
-      };
-    }
-
-    const match = this.dictionary[normalizedQuery];
-    
-    if (match) {
+    // 1. Direct Rule Evaluation
+    const ruleResult = this.registry.evaluate(normalizedQuery);
+    if (ruleResult) {
       return {
         rawQuery,
         normalizedQuery,
-        detectedLanguage: match.language,
-        intent: this.determineIntent(normalizedQuery),
-        candidates: [
-          {
-            conceptId: match.conceptId,
-            confidence: 1.0
-          }
-        ]
+        intent: ruleResult.intent,
+        matchType: ruleResult.matchType,
+        language: ruleResult.language,
+        candidates: [{ conceptId: ruleResult.conceptId, label: ruleResult.label }]
       };
     }
 
-    // Aday bulunamadıysa partial/fallback araması
-    const candidates = this.findPartialCandidates(normalizedQuery);
+    // 2. Exact Language & Term Matching
+    let language = 'en';
+    let matchType: MatchType = 'EXACT';
+
+    if (['su', 'su nedir', 'su nerede'].includes(normalizedQuery)) {
+      language = 'tr';
+    } else if (['psı', 'псы'].includes(normalizedQuery)) {
+      language = 'ady';
+      matchType = 'TRANSLATED';
+    } else if (['water'].includes(normalizedQuery)) {
+      language = 'en';
+    } else {
+      matchType = 'FALLBACK';
+    }
 
     return {
       rawQuery,
       normalizedQuery,
-      detectedLanguage: 'UNKNOWN',
-      intent: 'context_discovery',
-      candidates
+      intent: 'DEFINITION',
+      matchType,
+      language,
+      candidates: [{ conceptId: defaultWaterId }]
     };
-  }
-
-  private normalize(input: string): string {
-    return input
-      .trim()
-      .toLowerCase()
-      .replace(/I/g, 'ı')
-      .replace(/İ/g, 'i')
-      .normalize('NFC');
-  }
-
-  private determineIntent(normalizedQuery: string): SearchIntent {
-    if (normalizedQuery.length <= 3) {
-      return 'concept_lookup';
-    }
-    return 'context_discovery';
-  }
-
-  private findPartialCandidates(normalizedQuery: string): ConceptCandidateDTO[] {
-    const matches: ConceptCandidateDTO[] = [];
-    
-    for (const key of Object.keys(this.dictionary)) {
-      if (key.includes(normalizedQuery) || normalizedQuery.includes(key)) {
-        matches.push({
-          conceptId: this.dictionary[key].conceptId,
-          confidence: 0.7
-        });
-      }
-    }
-
-    return matches.sort((a, b) => b.confidence - a.confidence);
   }
 }

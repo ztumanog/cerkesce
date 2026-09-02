@@ -102,3 +102,18 @@
   3. **Katman Bağımsızlığı:** `TranslationRepository` üst katmanları (`Service`, `UI`, `Hook` vb.) kesinlikle içe aktaramaz (`import` edemez).
 * **Gerekçe:** Veri katmanı esnekliğini korumak, katman bağımlılıklarını yalıtmak ve servislerin veri depolama detaylarından bağımsız çalışmasını sağlamak.
 * **Etkilenen Katmanlar:** `Repository`, `Service`
+User Query
+      ↓
+QuerySemanticMapper
+      ↓
+GraphTraversalService
+      ↓
+KnowledgeRanker
+      ↓
+ContextClusterer
+      ↓
+DiscoveryAssembler
+      ↓
+DiscoveryResultDTO
+      ↓
+DiscoveryFacade

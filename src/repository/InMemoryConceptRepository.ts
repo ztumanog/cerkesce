@@ -1,30 +1,30 @@
-﻿import { Concept, ConceptID } from "../domain/concept";
+﻿export interface GraphNeighbor {
+  conceptId: string;
+  relationType: string;
+  weight: number;
+}
 
 export class InMemoryConceptRepository {
-  private storage: Map<string, Concept> = new Map();
+  private concepts: Map<string, any> = new Map();
 
-  public async findById(id: ConceptID | string): Promise<Concept | null> {
-    if (!id) return null;
-    const key = typeof id === "string" 
-      ? id 
-      : (typeof id.getValue === "function" ? id.getValue() : String(id));
-      
-    const concept = this.storage.get(key);
-    return concept ? concept : null;
+  public save(concept: any): void {
+    this.concepts.set(concept.id, concept);
   }
 
-  public async save(concept: Concept): Promise<void> {
-    const key = typeof concept.id === "string"
-      ? concept.id
-      : (typeof concept.id?.getValue === "function" ? concept.id.getValue() : String(concept.id));
-    this.storage.set(key, concept);
+  public findById(id: string): any {
+    return this.concepts.get(id);
   }
 
-  public async findAll(): Promise<Concept[]> {
-    return Array.from(this.storage.values());
-  }
+  public getNeighbors(conceptId: string): GraphNeighbor[] {
+    const concept = this.concepts.get(conceptId);
+    if (!concept || !concept.relations) {
+      return [];
+    }
 
-  public clear(): void {
-    this.storage.clear();
+    return concept.relations.map((rel: any) => ({
+      conceptId: rel.targetConceptId,
+      relationType: rel.relationType,
+      weight: rel.weight || 1
+    }));
   }
 }
