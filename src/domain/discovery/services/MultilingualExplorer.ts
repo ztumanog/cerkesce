@@ -1,4 +1,3 @@
-
 import { IMultilingualExplorer, SearchOptions } from './IMultilingualExplorer';
 import { DiscoveryResultDTO } from '../dto/DiscoveryResultDTO';
 import { DiscoveryAssembler } from './DiscoveryAssembler';
@@ -12,13 +11,21 @@ export class MultilingualExplorer implements IMultilingualExplorer {
   private readonly assembler: DiscoveryAssembler;
 
   constructor(
-    private readonly translationService?: TranslationService,
-    private readonly meaningLinker?: MeaningConceptLinker,
-    private readonly dialectResolver?: DialectResolver,
-    private readonly graphTraversalService?: GraphTraversalService,
+    private readonly translationService?: TranslationService | any,
+    private readonly meaningLinker?: MeaningConceptLinker | any,
+    private readonly dialectResolver?: DialectResolver | any,
+    private readonly graphTraversalService?: GraphTraversalService | any,
     assembler?: DiscoveryAssembler
   ) {
     this.assembler = assembler ?? new DiscoveryAssembler();
+  }
+
+  private extractIdString(id: any): string | undefined {
+    if (!id) return undefined;
+    if (typeof id === 'string') return id;
+    if (typeof id.getValue === 'function') return id.getValue();
+    if (typeof id.value === 'string') return id.value;
+    return String(id);
   }
 
   public async explore(query: string, options?: SearchOptions): Promise<DiscoveryResultDTO> {
@@ -57,14 +64,14 @@ export class MultilingualExplorer implements IMultilingualExplorer {
     if (this.meaningLinker && meanings.length > 0) {
       const concept = await this.meaningLinker.resolveConcept(meanings[0].id);
       if (concept) {
-        conceptId = concept.id;
+        conceptId = this.extractIdString(concept.id);
         canonicalName = concept.canonicalName;
       }
     }
 
     let variants: any[] = [];
     if (this.dialectResolver && conceptId) {
-      const rawVariants = await (this.dialectResolver as any).resolveVariants(conceptId);
+      const rawVariants = await (this.dialectResolver as any).resolveVariants(conceptId, options?.targetDialect);
       variants = (rawVariants || []).map((v: any, idx: number) => ({
         id: v.id || `v_${idx}`,
         dialectCode: v.dialectCode || options?.targetDialect || 'UNKNOWN',
@@ -76,7 +83,7 @@ export class MultilingualExplorer implements IMultilingualExplorer {
 
     let traversalNodes: TraversalNode[] = [];
     if (this.graphTraversalService && conceptId) {
-      traversalNodes = this.graphTraversalService.traverse(conceptId, 2);
+      traversalNodes = await this.graphTraversalService.traverse(conceptId, 2);
     }
 
     const duration = performance.now() - startTime;
@@ -91,8 +98,3 @@ export class MultilingualExplorer implements IMultilingualExplorer {
     });
   }
 }
-
-
-
-
-
