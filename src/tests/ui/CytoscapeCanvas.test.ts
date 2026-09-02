@@ -9,7 +9,9 @@ describe('Phase 7.1.6 - CytoscapeCanvas Real Render Adapter Tests', () => {
       { id: 'N1', label: 'Псы', x: 100, y: 150 },
       { id: 'N2', label: 'Псыхъуэ', x: 200, y: 250 }
     ],
-    edges: [{ source: 'N1', target: 'N2' }]
+    edges: [
+      { id: 'E1', source: 'N1', target: 'N2', relationType: 'RELATED' }
+    ]
   };
 
   it('CYT-001: Renders empty state guard when no network data is provided', () => {
