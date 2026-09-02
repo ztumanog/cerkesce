@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  circassian-platform:
+    build:
+      context: .
+      dockerfile: src/infra/docker/Dockerfile
+    ports:
+      - "8080:80"
+    environment:
+      - NODE_ENV=production
+      - API_BASE_URL=/api/v1
+    restart: always
