@@ -1,37 +1,37 @@
-/**
+﻿/**
  * @file src/repository/RepositoryIntegration.test.ts
- * @description Repository Entegrasyon Testleri - ADR-0007 Standardı
+ * @description Repository Entegrasyon Testleri - ADR-0007 StandardÄ±
  */
 
 import { InMemoryTranslationRepository } from "./InMemoryTranslationRepository";
 import { TranslationEntry, TranslationMeaning, TranslationGroup } from "@/domain/translation";
 
-// Testlerde kullanılacak örnek veri seti
+// Testlerde kullanÄ±lacak Ã¶rnek veri seti
 const mockEntries: (TranslationEntry & { groupId?: string })[] = [
   {
     id: "1",
-    lemma: "шъхьэ",
-    normalizedLemma: "шъхьэ",
+    lemma: "ÑˆÑŠÑ…ÑŒÑ",
+    normalizedLemma: "ÑˆÑŠÑ…ÑŒÑ",
     dialect: "BATI",
     groupId: "g-head",
     meanings: [
-      { id: "m1", text: "baş, kafa", language: "TR" }
+      { id: "m1", text: "baÅŸ, kafa", language: "TR" }
     ]
   },
   {
     id: "2",
-    lemma: "щхьэ",
-    normalizedLemma: "щхьэ",
+    lemma: "Ñ‰Ñ…ÑŒÑ",
+    normalizedLemma: "Ñ‰Ñ…ÑŒÑ",
     dialect: "DOGU",
     groupId: "g-head",
     meanings: [
-      { id: "m2", text: "baş, kafa", language: "TR" }
+      { id: "m2", text: "baÅŸ, kafa", language: "TR" }
     ]
   },
   {
     id: "3",
-    lemma: "псы",
-    normalizedLemma: "псы",
+    lemma: "Ğ¿ÑÑ‹",
+    normalizedLemma: "Ğ¿ÑÑ‹",
     dialect: "BATI",
     groupId: "g-water",
     meanings: [
@@ -40,12 +40,12 @@ const mockEntries: (TranslationEntry & { groupId?: string })[] = [
   },
   {
     id: "4",
-    lemma: "псыхъо",
-    normalizedLemma: "псыхъо",
+    lemma: "Ğ¿ÑÑ‹Ñ…ÑŠĞ¾",
+    normalizedLemma: "Ğ¿ÑÑ‹Ñ…ÑŠĞ¾",
     dialect: "BATI",
     groupId: "g-water",
     meanings: [
-      { id: "m4", text: "nehir, ırmak", language: "TR" }
+      { id: "m4", text: "nehir, Ä±rmak", language: "TR" }
     ]
   }
 ];
@@ -53,12 +53,12 @@ const mockEntries: (TranslationEntry & { groupId?: string })[] = [
 const mockGroups: TranslationGroup[] = [
   {
     id: "g-head",
-    groupName: "Baş Kavramı",
+    groupName: "BaÅŸ KavramÄ±",
     entries: mockEntries.filter((e) => e.groupId === "g-head")
   },
   {
     id: "g-water",
-    groupName: "Su Kavramı",
+    groupName: "Su KavramÄ±",
     entries: mockEntries.filter((e) => e.groupId === "g-water")
   }
 ];
@@ -71,99 +71,99 @@ describe("ITranslationRepository Integration", () => {
   });
 
   describe("getByLemma() - Lemma ile Arama", () => {
-    test("getByLemma kelimeyi doğru döndürmelidir", async () => {
-      const result = await repository.getByLemma("шъхьэ");
+    test("getByLemma kelimeyi doÄŸru dÃ¶ndÃ¼rmelidir", async () => {
+      const result = await repository.getByLemma("ÑˆÑŠÑ…ÑŒÑ");
       expect(result).not.toBeNull();
-      expect(result?.lemma).toBe("шъхьэ");
+      expect(result?.lemma).toBe("ÑˆÑŠÑ…ÑŒÑ");
       expect(result?.meanings[0].language).toBe("TR");
     });
 
-    test("olmayan lemma için null dönmelidir", async () => {
+    test("olmayan lemma iÃ§in null dÃ¶nmelidir", async () => {
       const result = await repository.getByLemma("olmayan-kelime");
       expect(result).toBeNull();
     });
 
-    test("normalizedLemma alanı doğru ayarlanmış olmalıdır", async () => {
-      const result = await repository.getByLemma("щхьэ");
-      expect(result?.normalizedLemma).toBe("щхьэ");
+    test("normalizedLemma alanÄ± doÄŸru ayarlanmÄ±ÅŸ olmalÄ±dÄ±r", async () => {
+      const result = await repository.getByLemma("Ñ‰Ñ…ÑŒÑ");
+      expect(result?.normalizedLemma).toBe("Ñ‰Ñ…ÑŒÑ");
     });
 
-    test("dialect bilgisi doğru döndürülmelidir", async () => {
-      const result = await repository.getByLemma("шъхьэ");
+    test("dialect bilgisi doÄŸru dÃ¶ndÃ¼rÃ¼lmelidir", async () => {
+      const result = await repository.getByLemma("ÑˆÑŠÑ…ÑŒÑ");
       expect(result?.dialect).toBe("BATI");
     });
   });
 
   describe("getTranslations() - Sorgu ile Arama", () => {
-    test("sorgu dizesini içeren tüm girdileri döndürmelidir", async () => {
-      const results = await repository.getTranslations("пс");
+    test("sorgu dizesini iÃ§eren tÃ¼m girdileri dÃ¶ndÃ¼rmelidir", async () => {
+      const results = await repository.getTranslations("Ğ¿Ñ");
       expect(results.length).toBeGreaterThan(0);
-      expect(results.some((e: TranslationEntry) => e.lemma.includes("пс"))).toBe(true);
+      expect(results.some((e: TranslationEntry) => e.lemma.includes("Ğ¿Ñ"))).toBe(true);
     });
 
-    test("boş sonuç için boş dizi döndürmelidir", async () => {
+    test("boÅŸ sonuÃ§ iÃ§in boÅŸ dizi dÃ¶ndÃ¼rmelidir", async () => {
       const results = await repository.getTranslations("xyz-olmayan");
       expect(results).toEqual([]);
     });
 
-    test("case-insensitive arama yapmalıdır", async () => {
-      const results = await repository.getTranslations("ПС");
+    test("case-insensitive arama yapmalÄ±dÄ±r", async () => {
+      const results = await repository.getTranslations("ĞŸĞ¡");
       expect(results.length).toBeGreaterThan(0);
     });
   });
 
   describe("reverseLookup() - Anlam ile Ters Arama", () => {
-    test("reverseLookup anlam üzerinden arama yapmalıdır", async () => {
-      const results = await repository.reverseLookup("baş");
+    test("reverseLookup anlam Ã¼zerinden arama yapmalÄ±dÄ±r", async () => {
+      const results = await repository.reverseLookup("baÅŸ");
       expect(results.length).toBeGreaterThan(0);
       expect(
         results.some((e: TranslationEntry) =>
-          e.meanings.some((m: TranslationMeaning) => m.text.includes("baş"))
+          e.meanings.some((m: TranslationMeaning) => m.text.includes("baÅŸ"))
         )
       ).toBe(true);
     });
 
-    test("birden fazla lehçede aynı anlama sahip girdileri döndürmelidir", async () => {
-      const results = await repository.reverseLookup("baş");
+    test("birden fazla lehÃ§ede aynÄ± anlama sahip girdileri dÃ¶ndÃ¼rmelidir", async () => {
+      const results = await repository.reverseLookup("baÅŸ");
       expect(results.length).toBeGreaterThanOrEqual(2);
     });
 
-    test("olmayan anlam için boş dizi döndürmelidir", async () => {
+    test("olmayan anlam iÃ§in boÅŸ dizi dÃ¶ndÃ¼rmelidir", async () => {
       const results = await repository.reverseLookup("olmayan-anlam");
       expect(results).toEqual([]);
     });
 
-    test("case-insensitive anlam araması yapmalıdır", async () => {
-      const results = await repository.reverseLookup("BAŞ");
+    test("case-insensitive anlam aramasÄ± yapmalÄ±dÄ±r", async () => {
+      const results = await repository.reverseLookup("BAÅ");
       expect(results.length).toBeGreaterThan(0);
     });
   });
 
   describe("getByGroup() - Grup ile Arama", () => {
-    test("getByGroup grup ID'sine göre TranslationGroup döndürmelidir", async () => {
+    test("getByGroup grup ID'sine gÃ¶re TranslationGroup dÃ¶ndÃ¼rmelidir", async () => {
       const result = await repository.getByGroup("g-head");
       expect(result).not.toBeNull();
       expect(result?.id).toBe("g-head");
-      expect(result?.groupName).toBe("Baş Kavramı");
+      expect(result?.groupName).toBe("BaÅŸ KavramÄ±");
     });
 
-    test("grup içinde birden fazla giriş olmalıdır", async () => {
+    test("grup iÃ§inde birden fazla giriÅŸ olmalÄ±dÄ±r", async () => {
       const result = await repository.getByGroup("g-head");
       expect(result?.entries.length).toBeGreaterThanOrEqual(2);
     });
 
-    test("olmayan grup ID'si için null dönmelidir", async () => {
+    test("olmayan grup ID'si iÃ§in null dÃ¶nmelidir", async () => {
       const result = await repository.getByGroup("olmayan-grup");
       expect(result).toBeNull();
     });
 
-    test("su grubu doğru girdileri içermelidir", async () => {
+    test("su grubu doÄŸru girdileri iÃ§ermelidir", async () => {
       const result = await repository.getByGroup("g-water");
-      expect(result?.entries.some((e: TranslationEntry) => e.lemma === "псы")).toBe(true);
-      expect(result?.entries.some((e: TranslationEntry) => e.lemma === "псыхъо")).toBe(true);
+      expect(result?.entries.some((e: TranslationEntry) => e.lemma === "Ğ¿ÑÑ‹")).toBe(true);
+      expect(result?.entries.some((e: TranslationEntry) => e.lemma === "Ğ¿ÑÑ‹Ñ…ÑŠĞ¾")).toBe(true);
     });
 
-    test("grup içindeki tüm girdiler aynı groupId'ye sahip olmalıdır", async () => {
+    test("grup iÃ§indeki tÃ¼m girdiler aynÄ± groupId'ye sahip olmalÄ±dÄ±r", async () => {
       const result = await repository.getByGroup("g-head");
       expect(
         result?.entries.every(
@@ -173,27 +173,27 @@ describe("ITranslationRepository Integration", () => {
     });
   });
 
-  describe("Lehçe Filtreleme", () => {
-    test("BATI lehçesi girdileri doğru döndürülmelidir", async () => {
-      const result = await repository.getByLemma("шъхьэ");
+  describe("LehÃ§e Filtreleme", () => {
+    test("BATI lehÃ§esi girdileri doÄŸru dÃ¶ndÃ¼rÃ¼lmelidir", async () => {
+      const result = await repository.getByLemma("ÑˆÑŠÑ…ÑŒÑ");
       expect(result?.dialect).toBe("BATI");
     });
 
-    test("DOGU lehçesi girdileri doğru döndürülmelidir", async () => {
-      const result = await repository.getByLemma("щхьэ");
+    test("DOGU lehÃ§esi girdileri doÄŸru dÃ¶ndÃ¼rÃ¼lmelidir", async () => {
+      const result = await repository.getByLemma("Ñ‰Ñ…ÑŒÑ");
       expect(result?.dialect).toBe("DOGU");
     });
   });
 
-  describe("Meanings Yapısı", () => {
-    test("meanings dizisi language alanını içermelidir", async () => {
-      const result = await repository.getByLemma("шъхьэ");
+  describe("Meanings YapÄ±sÄ±", () => {
+    test("meanings dizisi language alanÄ±nÄ± iÃ§ermelidir", async () => {
+      const result = await repository.getByLemma("ÑˆÑŠÑ…ÑŒÑ");
       expect(result?.meanings[0]).toHaveProperty("language");
       expect(result?.meanings[0].language).toBe("TR");
     });
 
-    test("meanings dizisi id ve text alanlarını içermelidir", async () => {
-      const result = await repository.getByLemma("шъхьэ");
+    test("meanings dizisi id ve text alanlarÄ±nÄ± iÃ§ermelidir", async () => {
+      const result = await repository.getByLemma("ÑˆÑŠÑ…ÑŒÑ");
       expect(result?.meanings[0]).toHaveProperty("id");
       expect(result?.meanings[0]).toHaveProperty("text");
     });

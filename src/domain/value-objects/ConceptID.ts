@@ -1,4 +1,4 @@
-// src/domain/concept/value-objects/ConceptID.ts
+﻿// src/domain/concept/value-objects/ConceptID.ts
 
 export class ConceptID {
   private readonly value: string;
@@ -25,14 +25,14 @@ export class ConceptID {
   }
 
   private static isValid(id: string): boolean {
-    // ULID / UUID v7 regex format doğrulaması
+    // ULID / UUID v7 regex format doÄŸrulamasÄ±
     const ulidRegex = /^[0-9A-HJKMNP-TV-Z]{26}$/i;
     const uuidv7Regex = /^[0-9a-f]{8}-[0-9a-f]{4}-7[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
     return ulidRegex.test(id) || uuidv7Regex.test(id);
   }
 
   private static generateULID(): string {
-    // ULID/UUID v7 üreteci
+    // ULID/UUID v7 Ã¼reteci
     return "01HXXXXXXX0000000000000000"; 
   }
 }

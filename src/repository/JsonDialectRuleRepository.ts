@@ -1,6 +1,6 @@
-/**
+﻿/**
  * @file src/repository/JsonDialectRuleRepository.ts
- * @description IDialectRuleRepository arayüzünü tam uygulayan repository.
+ * @description IDialectRuleRepository arayÃ¼zÃ¼nÃ¼ tam uygulayan repository.
  */
 
 import { DialectRule } from "@/domain/dialect";
@@ -18,7 +18,7 @@ export class JsonDialectRuleRepository implements IDialectRuleRepository {
   }
 
   /**
-   * IDialectRuleRepository sözleşmesinin zorunlu kıldığı filtreleme metodu.
+   * IDialectRuleRepository sÃ¶zleÅŸmesinin zorunlu kÄ±ldÄ±ÄŸÄ± filtreleme metodu.
    */
   async getRulesByDialects(fromDialect: string, toDialect: string): Promise<DialectRule[]> {
     return this.rules.filter(

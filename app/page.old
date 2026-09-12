@@ -1,0 +1,69 @@
+﻿'use client';
+
+import { useState, useEffect } from 'react';
+import SearchBox from '@/components/dictionary/SearchBox';
+import { GununKelimesiKart, GununKelimesi } from '@/components/dictionary/GununKelimesiKart';
+import KelimeDetayDrawer from '@/components/ui/KelimeDetayDrawer';
+import { getWordOfDay } from '@/lib/dailyWordAdapter';
+import { mapDailyWordToDrawerItem, DrawerDictionaryItem } from '@/lib/dailyWordMapper';
+
+export default function HomePage() {
+  const [dailyWord, setDailyWord] = useState<GununKelimesi | null>(null);
+  const [selectedDrawerItem, setSelectedDrawerItem] = useState<DrawerDictionaryItem | null>(null);
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+
+  useEffect(() => {
+    // Merkezi seçim motorundan (dailyWordEngine.ts) günün kelimesini al
+    const mockEntries: unknown[] = [];
+    const word = getWordOfDay(mockEntries);
+    if (word) {
+      setDailyWord(word as GununKelimesi);
+    }
+  }, []);
+
+  const handleDailyWordClick = () => {
+    if (!dailyWord) return;
+    const drawerItem = mapDailyWordToDrawerItem(dailyWord);
+    setSelectedDrawerItem(drawerItem);
+    setIsDrawerOpen(true);
+  };
+
+  const handleCloseDrawer = () => {
+    setIsDrawerOpen(false);
+    setSelectedDrawerItem(null);
+  };
+
+  return (
+    <main className="min-h-screen bg-background text-foreground flex flex-col items-center">
+      {/* Hero & Primary Search */}
+      <section className="w-full max-w-4xl px-4 pt-12 pb-8 text-center">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold font-serif tracking-tight text-slate-900 dark:text-slate-100 mb-3">
+          Çerkesçe Sözlük
+        </h1>
+        <p className="text-base sm:text-lg text-slate-600 dark:text-slate-400 mb-8 max-w-2xl mx-auto">
+          Adığece ve Kabardeyce diyalektleri, çapraz sözlük veritabanı ve dijital korpus kütüphanesi.
+        </p>
+
+        <div className="w-full max-w-2xl mx-auto shadow-sm hover:shadow-md transition-shadow rounded-xl">
+          <SearchBox />
+        </div>
+      </section>
+
+      {/* Günün Kelimesi Kartı */}
+      {dailyWord && (
+        <section className="w-full max-w-2xl px-4 mb-12">
+          <div onClick={handleDailyWordClick} className="cursor-pointer">
+            <GununKelimesiKart veri={dailyWord} />
+          </div>
+        </section>
+      )}
+
+      {/* Drawer v1.0 Detay Görünümü */}
+      <KelimeDetayDrawer
+        isOpen={isDrawerOpen}
+        onClose={handleCloseDrawer}
+        item={selectedDrawerItem}
+      />
+    </main>
+  );
+}

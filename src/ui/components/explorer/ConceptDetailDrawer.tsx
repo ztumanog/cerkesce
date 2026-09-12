@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import { PositionedNodeDTO } from '../../../domain/analytics/services/LayoutEngineService';
 
 export interface ConceptDetailDrawerProps {
@@ -24,7 +24,7 @@ export const ConceptDetailDrawer: React.FC<ConceptDetailDrawerProps> = ({
             className="text-gray-500 hover:text-gray-800 font-bold text-lg"
             data-testid="close-drawer-btn"
           >
-            ✕
+            âœ•
           </button>
         </div>
 
@@ -37,7 +37,7 @@ export const ConceptDetailDrawer: React.FC<ConceptDetailDrawerProps> = ({
           </div>
           {selectedNode.weight !== undefined && (
             <div>
-              <span className="font-semibold text-gray-700">Skor / Ağırlık:</span> {selectedNode.weight}
+              <span className="font-semibold text-gray-700">Skor / AÄŸÄ±rlÄ±k:</span> {selectedNode.weight}
             </div>
           )}
         </div>
@@ -49,7 +49,7 @@ export const ConceptDetailDrawer: React.FC<ConceptDetailDrawerProps> = ({
           className="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-2 px-4 rounded transition-colors shadow"
           data-testid="expand-node-btn"
         >
-          🔍 Ağacı Genişlet (Expand)
+          ğŸ” AÄŸacÄ± GeniÅŸlet (Expand)
         </button>
       </div>
     </div>

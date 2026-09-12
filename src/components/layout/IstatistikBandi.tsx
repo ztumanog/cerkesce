@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import type React from "react";
 
@@ -33,7 +33,7 @@ export const IstatistikBandi: React.FC<IstatistikBandiProps> = ({
           }}
           className="font-bold"
         >
-          {sozlukSayisi} Sözlük
+          {sozlukSayisi} SÃ¶zlÃ¼k
         </strong>
       </span>
 
@@ -41,7 +41,7 @@ export const IstatistikBandi: React.FC<IstatistikBandiProps> = ({
         className="opacity-35"
         aria-hidden="true"
       >
-        •
+        â€¢
       </span>
 
       <span>
@@ -53,14 +53,14 @@ export const IstatistikBandi: React.FC<IstatistikBandiProps> = ({
         >
           {wordsCount.toLocaleString("tr-TR")}+
         </strong>{" "}
-        Kelime Kaydı
+        Kelime KaydÄ±
       </span>
 
       <span
         className="opacity-35"
         aria-hidden="true"
       >
-        •
+        â€¢
       </span>
 <span className="inline-flex items-center gap-1.5">
   <span
@@ -74,3 +74,4 @@ export const IstatistikBandi: React.FC<IstatistikBandiProps> = ({
 
 
 export default IstatistikBandi;
+

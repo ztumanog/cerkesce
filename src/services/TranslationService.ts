@@ -1,13 +1,13 @@
-/**
+﻿/**
  * @file src/services/TranslationService.ts
- * @description Çeviri, arama, filtreleme, ters sözlük bakma ve kayıt işlemlerini yöneten servis katmanı.
+ * @description Ã‡eviri, arama, filtreleme, ters sÃ¶zlÃ¼k bakma ve kayÄ±t iÅŸlemlerini yÃ¶neten servis katmanÄ±.
  */
 
 import { ITranslationRepository, SearchFilters } from "../repository/ITranslationRepository";
 import { TranslationEntry, TranslationGroup, TranslationMeaning } from "../domain/translation";
 import { MorphologyAwareMatchingService } from "./MorphologyAwareMatchingService";
 
-// Register işlemi sırasında opsiyonel source id alanlarını destekleyen tip tanımı
+// Register iÅŸlemi sÄ±rasÄ±nda opsiyonel source id alanlarÄ±nÄ± destekleyen tip tanÄ±mÄ±
 export type RegisterTranslationEntryInput = Omit<TranslationEntry, "id"> & {
   id?: string;
   sourceId?: string;
@@ -15,7 +15,7 @@ export type RegisterTranslationEntryInput = Omit<TranslationEntry, "id"> & {
 };
 
 // ==========================================
-// Dışa Aktarılan Arayüz ve Dönüş Tipleri
+// DÄ±ÅŸa AktarÄ±lan ArayÃ¼z ve DÃ¶nÃ¼ÅŸ Tipleri
 // ==========================================
 
 export interface TranslationResult {
@@ -43,14 +43,14 @@ export class TranslationService {
   ) {}
 
   /**
-   * Sorguyu temizler ve Türkçe harf duyarlılığıyla küçük harfe dönüştürür.
+   * Sorguyu temizler ve TÃ¼rkÃ§e harf duyarlÄ±lÄ±ÄŸÄ±yla kÃ¼Ã§Ã¼k harfe dÃ¶nÃ¼ÅŸtÃ¼rÃ¼r.
    */
   private normalizeQuery(query: string): string {
     return query.trim().toLocaleLowerCase("tr");
   }
 
   /**
-   * Yeni çeviri girdisi kaydeder veya var olan girdiye yeni anlamlar ekler.
+   * Yeni Ã§eviri girdisi kaydeder veya var olan girdiye yeni anlamlar ekler.
    */
   async registerEntry(
     entryData: RegisterTranslationEntryInput
@@ -94,7 +94,7 @@ export class TranslationService {
   }
 
   /**
-   * Kimliğe (id) göre kayıt getirir.
+   * KimliÄŸe (id) gÃ¶re kayÄ±t getirir.
    */
   async getById(id: string): Promise<TranslationEntry | null> {
     const repoAny = this.repository as any;
@@ -108,7 +108,7 @@ export class TranslationService {
   }
 
   /**
-   * Birleşik Çoklu Dil ve Çapraz Arama (Unified Cross-Dictionary & MultiLanguage Search)
+   * BirleÅŸik Ã‡oklu Dil ve Ã‡apraz Arama (Unified Cross-Dictionary & MultiLanguage Search)
    */
   async search(query: string): Promise<TranslationEntry[]> {
     if (!query || !query.trim()) {
@@ -137,7 +137,7 @@ export class TranslationService {
   }
 
   /**
-   * Lemma (kelime) bazlı çapraz arama yapar.
+   * Lemma (kelime) bazlÄ± Ã§apraz arama yapar.
    */
   async searchCrossDictionary(lemma: string): Promise<TranslationEntry[]> {
     if (!lemma || !lemma.trim()) return [];
@@ -155,7 +155,7 @@ export class TranslationService {
   }
 
   /**
-   * Anlam metnine göre filtreli arama yapar.
+   * Anlam metnine gÃ¶re filtreli arama yapar.
    */
   async searchByMeaning(text: string, language?: string): Promise<TranslationEntry[]> {
     if (!text || !text.trim()) return [];
@@ -174,7 +174,7 @@ export class TranslationService {
   }
 
   /**
-   * Anlam sorgusu üzerinden eşleşen kelimelerin ve eşleşen anlamların detaylı listesini döner.
+   * Anlam sorgusu Ã¼zerinden eÅŸleÅŸen kelimelerin ve eÅŸleÅŸen anlamlarÄ±n detaylÄ± listesini dÃ¶ner.
    */
   async reverseLookup(meaning: string, language?: string): Promise<ReverseLookupResult[]> {
     const entries = await this.searchByMeaning(meaning, language);
@@ -225,14 +225,14 @@ export class TranslationService {
   }
 
   /**
-   * Takma ad (Alias): reverseTranslate ile aynı mantıkta çalışır.
+   * Takma ad (Alias): reverseTranslate ile aynÄ± mantÄ±kta Ã§alÄ±ÅŸÄ±r.
    */
   async reverseTranslationSearch(query: string): Promise<TranslationEntry | null> {
     return this.reverseTranslate(query);
   }
 
   /**
-   * Kelimeyi arayıp, seçilen diyalektlere göre çeviri eşleşmeleriyle birlikte nesne listesi olarak döner.
+   * Kelimeyi arayÄ±p, seÃ§ilen diyalektlere gÃ¶re Ã§eviri eÅŸleÅŸmeleriyle birlikte nesne listesi olarak dÃ¶ner.
    */
   async translate(query: string, fromDialect?: string, toDialect?: string): Promise<TranslationResult[]> {
     let entries = await this.searchCrossDictionary(query);
@@ -254,14 +254,14 @@ export class TranslationService {
   }
 
   /**
-   * Yakın kelimeleri veya benzer terimleri getirir.
+   * YakÄ±n kelimeleri veya benzer terimleri getirir.
    */
   async findSimilarTerms(lemma: string, threshold = 0.8): Promise<TranslationEntry[]> {
     return await this.searchCrossDictionary(lemma);
   }
 
   /**
-   * Bir kelimenin belirli bir diyalekteki varyasyonlarını döner.
+   * Bir kelimenin belirli bir diyalekteki varyasyonlarÄ±nÄ± dÃ¶ner.
    */
   async getDialectVariations(lemma: string, dialect: string): Promise<TranslationEntry[]> {
     const entries = await this.searchCrossDictionary(lemma);
@@ -269,7 +269,7 @@ export class TranslationService {
   }
 
   /**
-   * Filtrelerle gelişmiş arama desteği sağlar (dictionaryActions desteği için).
+   * Filtrelerle geliÅŸmiÅŸ arama desteÄŸi saÄŸlar (dictionaryActions desteÄŸi iÃ§in).
    */
   async searchWithFilters(query: string, filters: SearchFilters): Promise<SearchResult> {
     const repoAny = this.repository as any;
@@ -292,7 +292,7 @@ export class TranslationService {
   }
 
   /**
-   * Tüm kayıtları döner (dictionaryActions desteği için).
+   * TÃ¼m kayÄ±tlarÄ± dÃ¶ner (dictionaryActions desteÄŸi iÃ§in).
    */
   async getAllEntries(): Promise<TranslationEntry[]> {
     const repoAny = this.repository as any;
@@ -306,7 +306,7 @@ export class TranslationService {
   }
 
   /**
-   * Tüm grupları döner (dictionaryActions desteği için).
+   * TÃ¼m gruplarÄ± dÃ¶ner (dictionaryActions desteÄŸi iÃ§in).
    */
   async getAllGroups(): Promise<TranslationGroup[]> {
     const repoAny = this.repository as any;
@@ -317,11 +317,11 @@ export class TranslationService {
   }
 
   // ==========================================
-  // Helper & Action Metodları (dictionaryActions için)
+  // Helper & Action MetodlarÄ± (dictionaryActions iÃ§in)
   // ==========================================
 
   /**
-   * Verilen liste içerisinden sadece hedef dilde anlamı olan kayıtları filtreler.
+   * Verilen liste iÃ§erisinden sadece hedef dilde anlamÄ± olan kayÄ±tlarÄ± filtreler.
    */
   public filterByLanguage(entries: TranslationEntry[], language: string): TranslationEntry[] {
     if (!language || !language.trim()) return entries;
@@ -332,7 +332,7 @@ export class TranslationService {
   }
 
   /**
-   * Verilen liste içerisinden sadece hedef diyalekte ait kayıtları filtreler.
+   * Verilen liste iÃ§erisinden sadece hedef diyalekte ait kayÄ±tlarÄ± filtreler.
    */
   public filterByDialect(entries: TranslationEntry[], dialect: string): TranslationEntry[] {
     if (!dialect || !dialect.trim()) return entries;
@@ -341,7 +341,7 @@ export class TranslationService {
   }
 
   /**
-   * Grup kimliğine göre çeviri grubunu (TranslationGroup) döner.
+   * Grup kimliÄŸine gÃ¶re Ã§eviri grubunu (TranslationGroup) dÃ¶ner.
    */
   public async getByGroup(groupId: string): Promise<TranslationGroup | null> {
     const repoAny = this.repository as any;
@@ -355,14 +355,14 @@ export class TranslationService {
   }
 
   /**
-   * Servis önbellek istatistiklerini sıfırlar.
+   * Servis Ã¶nbellek istatistiklerini sÄ±fÄ±rlar.
    */
   public clearCache(): void {
     this.cacheStats = { size: 0, entries: [] };
   }
 
   /**
-   * Servis önbellek istatistiklerini döner.
+   * Servis Ã¶nbellek istatistiklerini dÃ¶ner.
    */
   public getCacheStats(): { size: number; entries: string[] } {
     return this.cacheStats;

@@ -1,4 +1,4 @@
-import { RefObject, Dispatch, SetStateAction } from "react";
+﻿import { RefObject, Dispatch, SetStateAction } from "react";
 import { type TemaTipi } from "@/utils/helpers";
 import { 
   DictionaryMeta, 
@@ -30,3 +30,4 @@ export interface SearchBoxProps {
   setGoruntulenenAdet: Dispatch<SetStateAction<number>>;
   limit: number;
 }
+

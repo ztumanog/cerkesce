@@ -45,3 +45,4 @@ describe('Phase 6.2 - UI Polish & Guardrail Badge Certification Tests', () => {
     expect(nodeData.depth).toBe(1);
   });
 });
+

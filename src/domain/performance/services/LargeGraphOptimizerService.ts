@@ -1,4 +1,4 @@
-export interface GraphNode {
+﻿export interface GraphNode {
   id: string;
   label: string;
 }

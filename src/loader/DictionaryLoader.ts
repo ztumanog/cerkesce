@@ -1,6 +1,6 @@
-/**
+﻿/**
  * @file src/loader/DictionaryLoader.ts
- * @description 34-Sözlük ingest boru hattı için ham kayıtları doğrular ve standart TranslationEntry formatına dönüştürür.
+ * @description 34-SÃ¶zlÃ¼k ingest boru hattÄ± iÃ§in ham kayÄ±tlarÄ± doÄŸrular ve standart TranslationEntry formatÄ±na dÃ¶nÃ¼ÅŸtÃ¼rÃ¼r.
  */
 
 import { TranslationEntry, TranslationMeaning, LanguageCode, DialectCode } from "../domain/translation";
@@ -18,7 +18,7 @@ export interface RawDictionaryRecord {
 
 export class DictionaryLoader {
   /**
-   * Ham sözlük verisini doğrular ve ADR-0008 standartlarına uygun TranslationEntry nesnesine dönüştürür.
+   * Ham sÃ¶zlÃ¼k verisini doÄŸrular ve ADR-0008 standartlarÄ±na uygun TranslationEntry nesnesine dÃ¶nÃ¼ÅŸtÃ¼rÃ¼r.
    */
   public static normalizeRecord(raw: RawDictionaryRecord): TranslationEntry {
     if (!raw.lemma || raw.lemma.trim() === "") {
@@ -68,7 +68,7 @@ export class DictionaryLoader {
   }
 
   /**
-   * Toplu ham kayıt dizisini normalize eder.
+   * Toplu ham kayÄ±t dizisini normalize eder.
    */
   public static normalizeBatch(rawRecords: RawDictionaryRecord[]): TranslationEntry[] {
     return rawRecords.map((record) => this.normalizeRecord(record));

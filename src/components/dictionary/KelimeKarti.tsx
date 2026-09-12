@@ -1,176 +1,108 @@
-"use client";
+﻿'use client';
 
-import React, { useCallback, useMemo } from "react";
-import { tanimlariBicimlendir, kaynagiDuzenle, type TemaTipi } from "@/utils/helpers";
-import { KURUMSAL } from "@/lib/dictionaryConstants";
-import type { GruplanmisKelime, DictionaryItem } from "@/types/dictionary";
+import React from 'react';
+import { ChevronRight } from 'lucide-react';
+import type { GruplanmisKelime, KaynakItem } from '@/types/dictionary';
 
 interface KelimeKartiProps {
-  readonly grup: GruplanmisKelime;
-  readonly idx: number;
-  readonly tema: TemaTipi;
-  readonly metinBoyutu: number;
-  readonly kopyalandiId: string | null;
-  readonly panoyaKopyala: (kelime: string, tanim?: string, id?: string) => void;
-  readonly onClick: (grup: GruplanmisKelime) => void;
+  data: GruplanmisKelime;
+  onClick?: () => void;
 }
 
-/**
- * Type Guard: Nesnenin Record<string, unknown> olup olmadığını doğrular.
- */
-function isRecord(val: unknown): val is Record<string, unknown> {
-  return typeof val === "object" && val !== null;
-}
+const getAnlamMetin = (data: GruplanmisKelime): string => {
+  const rawAnlam = data.ilkAnlam || data.anlamlar?.[0];
+  if (!rawAnlam) return '—';
+  if (typeof rawAnlam === 'string') return rawAnlam;
+  return '—';
+};
 
-/**
- * Type Guard: Nesnenin DictionaryItem tipinde olduğunu doğrular.
- */
-function isDictionaryItem(val: unknown): val is DictionaryItem {
-  return isRecord(val) && ("definitions" in val || "full_definition_in_html" in val || "tanim" in val || "meaning" in val);
-}
+const formatKaynakDetayi = (kaynakItem: unknown): string => {
+  if (!kaynakItem) return '';
+  if (typeof kaynakItem === 'string') return kaynakItem;
 
-/**
- * Tip güvenliği sağlanan metin dönüştürücü.
- */
-function metneCevir(deger: unknown): string {
-  if (deger === null || deger === undefined) return "";
-  if (typeof deger === "string") return deger;
-  if (typeof deger === "number") return String(deger);
-  if (typeof deger === "boolean") return String(deger);
+  if (typeof kaynakItem === 'object') {
+    const itemObj = kaynakItem as Record<string, unknown>;
+    const sourceObj = (itemObj.kaynak || itemObj) as Record<string, unknown>;
 
-  if (isRecord(deger)) {
-    if (typeof deger.name === "string") return deger.name;
-    if (typeof deger.dilCifti === "string") return deger.dilCifti;
-    if (typeof deger.yazar === "string") return deger.yazar;
-    return JSON.stringify(deger);
+    const title = String(
+      sourceObj.title ||
+        sourceObj.sözlük ||
+        sourceObj.kaynak ||
+        sourceObj.dictionaryName ||
+        sourceObj.name ||
+        ''
+    );
+    const author = String(sourceObj.author || sourceObj.yazar || '');
+    const year = String(sourceObj.year || sourceObj.yil || '');
+
+    const totalWordsRaw =
+      sourceObj.total_words ??
+      sourceObj.totalWords ??
+      sourceObj.kelimeSayisi;
+    const formattedTotalWords = totalWordsRaw
+      ? `${typeof totalWordsRaw === 'number' ? totalWordsRaw.toLocaleString('tr-TR') : totalWordsRaw} kelime`
+      : '';
+
+    const detaylar = [title, author, year, formattedTotalWords].filter(
+      Boolean
+    );
+    return detaylar.join(' | ') || 'Bilinmeyen Kaynak';
   }
 
-  return String(deger);
-}
+  return 'Bilinmeyen Kaynak';
+};
 
-/**
- * Nesneden güvenli bir şekilde tanım metnini çıkarır.
- */
-function tanimMetniniAl(item: unknown): string {
-  if (!isRecord(item)) return "";
+export const KelimeKarti: React.FC<KelimeKartiProps> = ({
+  data,
+  onClick,
+}) => {
+  if (!data) return null;
 
-  if (Array.isArray(item.definitions) && item.definitions.length > 0) {
-    const ilkTanim = item.definitions[0];
-    if (isRecord(ilkTanim) && ilkTanim.meaning) {
-      return metneCevir(ilkTanim.meaning);
-    }
-  }
-
-  if (typeof item.full_definition_in_html === "string") {
-    return metneCevir(item.full_definition_in_html);
-  }
-
-  const tanim = item.tanim ?? item.meaning;
-  return metneCevir(tanim);
-}
-
-/**
- * Kaynak nesnesinden dosya veya sözlük adını doğrular.
- */
-function dosyaVeyaSozlukAl(item: unknown): string {
-  if (!isRecord(item)) return "";
-  const hedef = item.file ?? item.kaynak_sozluk ?? item.dictionaryName;
-  return metneCevir(hedef);
-}
-
-export default function KelimeKarti({
-  grup,
-  idx,
-  tema,
-  metinBoyutu,
-  kopyalandiId,
-  panoyaKopyala,
-  onClick
-}: KelimeKartiProps) {
-  const kartId = `g-${idx}`;
-  const isKopyalandi = kopyalandiId === kartId;
-
-  const ilkKaynak = useMemo(() => {
-    return grup.kaynaklar?.[0] ?? grup.anlamlar?.[0] ?? null;
-  }, [grup.kaynaklar, grup.anlamlar]);
-
-  const kelimeMetni = useMemo(() => metneCevir(grup.kelime), [grup.kelime]);
-  const tanimMetni = useMemo(() => tanimMetniniAl(ilkKaynak), [ilkKaynak]);
-  const dosyaVeyaSozluk = useMemo(() => dosyaVeyaSozlukAl(ilkKaynak), [ilkKaynak]);
-
-  const handleKartClick = useCallback(() => {
-    onClick(grup);
-  }, [onClick, grup]);
-
-  const handleKeyDown = useCallback((e: React.KeyboardEvent<HTMLElement>) => {
-    if (e.key === "Enter" || e.key === " ") {
-      e.preventDefault();
-      onClick(grup);
-    }
-  }, [onClick, grup]);
-
-  const handleKopyalaClick = useCallback((e: React.MouseEvent<HTMLButtonElement>) => {
-    e.stopPropagation();
-    panoyaKopyala(kelimeMetni, tanimMetni, kartId);
-  }, [panoyaKopyala, kelimeMetni, tanimMetni, kartId]);
+  const ilkAnlamMetin = getAnlamMetin(data);
+  const kaynaklar = data.kaynaklar || [];
+  const ilkKaynak = kaynaklar[0];
+  const kalanKaynakSayisi = kaynaklar.length - 1;
 
   return (
-    <article
-      role="article"
-      tabIndex={0}
-      onClick={handleKartClick}
-      onKeyDown={handleKeyDown}
-      aria-label={`${kelimeMetni} kelimesi detayları`}
-      style={{
-        padding: "16px",
-        backgroundColor: tema.kartArkaPlan,
-        border: `1px solid ${tema.kenarlik}`,
-        borderRadius: "8px",
-        cursor: "pointer",
-        transition: "border-color 0.2s ease, box-shadow 0.2s ease",
-        // CSS hover bağımlılığını JS state olmadan dinamik değişkenle yönetme
-        ["--hover-border" as string]: KURUMSAL.kirmizi
-      }}
-      className="kelime-karti-item"
+    <button
+      type="button"
+      onClick={onClick}
+      className="w-full text-left p-4 border border-zinc-200 dark:border-zinc-800 rounded-xl bg-white dark:bg-zinc-900 shadow-sm hover:shadow-md transition-all hover:border-[#FF4030] dark:hover:border-[#FF4030] group flex items-start justify-between gap-3"
     >
-      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-        <h3 
-          style={{ 
-            margin: 0, 
-            fontSize: `${metinBoyutu * 1.1}px`, 
-            color: tema.yaziAna 
-          }}
-        >
-          {kelimeMetni}
+      <div className="flex-1 min-w-0">
+        <h3 className="text-lg font-bold text-[#FF4030] truncate">
+          {data.kelime}
         </h3>
 
-        <button
-          type="button"
-          onClick={handleKopyalaClick}
-          aria-live="polite"
-          aria-label={isKopyalandi ? `${kelimeMetni} kopyalandı` : `${kelimeMetni} ve tanımını kopyala`}
-          style={{
-            padding: "4px 8px",
-            fontSize: "12px",
-            border: `1px solid ${tema.kenarlik}`,
-            backgroundColor: "transparent",
-            color: tema.yaziAlt,
-            borderRadius: "4px",
-            cursor: "pointer",
-            fontWeight: isKopyalandi ? "bold" : "normal"
-          }}
-        >
-          {isKopyalandi ? "✓ Kopyalandı" : "📋 Kopyala"}
-        </button>
+        <p className="text-sm text-zinc-600 dark:text-zinc-400 mt-1.5 line-clamp-1">
+          <span className="text-xs text-zinc-400 dark:text-zinc-500 font-normal mr-1">
+            İlk anlam:
+          </span>
+          <span className="text-zinc-800 dark:text-zinc-200 font-medium">
+            {ilkAnlamMetin}
+          </span>
+        </p>
+
+        {ilkKaynak && (
+          <div className="mt-2.5 text-xs text-zinc-600 dark:text-zinc-400">
+            <p className="text-zinc-700 dark:text-zinc-300 truncate font-medium">
+              {formatKaynakDetayi(ilkKaynak)}
+            </p>
+            {kalanKaynakSayisi > 0 && (
+              <p className="text-zinc-500 dark:text-zinc-500 mt-0.5 font-normal">
+                +{kalanKaynakSayisi} kaynak daha...
+              </p>
+            )}
+          </div>
+        )}
       </div>
 
-      {tanimlariBicimlendir(
-        tanimMetni,
-        tema,
-        kelimeMetni,
-        metinBoyutu,
-        kaynagiDuzenle(dosyaVeyaSozluk)
-      )}
-    </article>
+      <ChevronRight
+        size={20}
+        className="text-zinc-300 dark:text-zinc-700 flex-shrink-0 group-hover:text-[#FF4030] transition-colors mt-1"
+      />
+    </button>
   );
-}
+};
+
+export default KelimeKarti;

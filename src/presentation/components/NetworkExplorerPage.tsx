@@ -163,3 +163,4 @@ export const NetworkExplorerPage: React.FC = () => {
     </div>
   );
 };
+

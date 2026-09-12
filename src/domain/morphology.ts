@@ -1,62 +1,62 @@
-/**
+﻿/**
  * @file src/domain/morphology.ts
- * @description Çerkesçe morfolojik analiz veri yapıları, segmentler ve arayüz tanımları.
+ * @description Ã‡erkesÃ§e morfolojik analiz veri yapÄ±larÄ±, segmentler ve arayÃ¼z tanÄ±mlarÄ±.
  */
 
 /**
- * Bir kelimenin ayrıştırılmış morfolojik parçalarını (segmentlerini) temsil eder.
+ * Bir kelimenin ayrÄ±ÅŸtÄ±rÄ±lmÄ±ÅŸ morfolojik parÃ§alarÄ±nÄ± (segmentlerini) temsil eder.
  */
 export interface MorphologicalSegments {
-  /** Kelimenin kökü (örn: "кӀо") */
+  /** Kelimenin kÃ¶kÃ¼ (Ã¶rn: "ĞºÓ€Ğ¾") */
   root: string;
 
-  /** Kelimenin önekleri / prefix'leri (varsa) */
+  /** Kelimenin Ã¶nekleri / prefix'leri (varsa) */
   prefixes?: string[];
 
   /** Kelimenin sonekleri / suffix'leri (varsa) */
   suffixes?: string[];
 
-  /** Kelimenin gövdesi (varsa) */
+  /** Kelimenin gÃ¶vdesi (varsa) */
   stem?: string;
 }
 
 /**
- * Bir kelimenin detaylı morfolojik analiz sonucunu temsil eden nesne arayüzü.
+ * Bir kelimenin detaylÄ± morfolojik analiz sonucunu temsil eden nesne arayÃ¼zÃ¼.
  */
 export interface MorphologicalAnalysis {
-  /** Kelimenin yalın kökü */
+  /** Kelimenin yalÄ±n kÃ¶kÃ¼ */
   root: string;
 
-  /** Kelimenin parçalanmış segment detayları */
+  /** Kelimenin parÃ§alanmÄ±ÅŸ segment detaylarÄ± */
   segments?: MorphologicalSegments;
   
-  /** Kelimenin gövdesi (varsa) */
+  /** Kelimenin gÃ¶vdesi (varsa) */
   stem?: string;
   
   /** Kelimeye eklenen morfolojik eklerin listesi */
   suffixes?: string[];
   
-  /** Gramer kategorisi (örn: "verb", "noun") */
+  /** Gramer kategorisi (Ã¶rn: "verb", "noun") */
   pos?: string;
   
-  /** Ekstra morfolojik etiketler veya özellikler */
+  /** Ekstra morfolojik etiketler veya Ã¶zellikler */
   features?: Record<string, string>;
 }
 
 /**
- * Morfolojik analiz yapabilen servisler için sözleşme (interface).
+ * Morfolojik analiz yapabilen servisler iÃ§in sÃ¶zleÅŸme (interface).
  */
 export interface IMorphologyAnalyzer {
   /**
    * Verilen kelimeyi morfolojik olarak analiz eder.
    * @param word Analiz edilecek kelime
-   * @returns Analiz sonucu nesnesi veya çözümlenemezse null/undefined
+   * @returns Analiz sonucu nesnesi veya Ã§Ã¶zÃ¼mlenemezse null/undefined
    */
   analyze(word: string): Promise<MorphologicalAnalysis | null> | MorphologicalAnalysis | null;
 
   /**
-   * Verilen kelimenin morfolojik segmentlerini döndürür.
-   * @param word Segmentlerine ayrılacak kelime
+   * Verilen kelimenin morfolojik segmentlerini dÃ¶ndÃ¼rÃ¼r.
+   * @param word Segmentlerine ayrÄ±lacak kelime
    */
   segment?(word: string): Promise<MorphologicalSegments | null> | MorphologicalSegments | null;
 }

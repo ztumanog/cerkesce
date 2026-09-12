@@ -1,4 +1,4 @@
-import dictionarySources from '@/data/dictionarySources.json';
+﻿import dictionarySources from '@/data/dictionarySources.json';
 import type { AktifSozlukItem } from '@/types/dictionary';
 
 export class SourceRegistry {

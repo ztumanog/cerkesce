@@ -1,4 +1,4 @@
-export interface SlowQueryLog {
+﻿export interface SlowQueryLog {
   query: string;
   durationMs: number;
   timestamp: string;

@@ -1,4 +1,4 @@
-// @/types/source.ts
+﻿// @/types/source.ts
 import { z } from 'zod';
 
 export const SourceMetadataSchema = z.object({

@@ -1,4 +1,4 @@
-import { describe, it, expect, vi } from 'vitest';
+﻿import { describe, it, expect, vi } from 'vitest';
 import React from 'react';
 import { ConceptDetailDrawer } from '../../ui/components/explorer/ConceptDetailDrawer';
 import { NetworkExplorerToolbar } from '../../ui/components/explorer/NetworkExplorerToolbar';
@@ -7,9 +7,9 @@ describe('Phase 7.1 - Interactive Concept Network Explorer UI Tests', () => {
   it('UI-001: ConceptDetailDrawer handles node selection and null states correctly', () => {
     const handleClose = vi.fn();
     const handleExpand = vi.fn();
-    const node = { id: 'N1', label: 'Псы', x: 100, y: 200, weight: 0.95 };
+    const node = { id: 'N1', label: 'ĞŸÑÑ‹', x: 100, y: 200, weight: 0.95 };
 
-    // Null state doğrulaması
+    // Null state doÄŸrulamasÄ±
     const emptyElement = ConceptDetailDrawer({
       selectedNode: null,
       onClose: handleClose,
@@ -17,7 +17,7 @@ describe('Phase 7.1 - Interactive Concept Network Explorer UI Tests', () => {
     });
     expect(emptyElement).toBeNull();
 
-    // ReactElement ağaç doğrulaması
+    // ReactElement aÄŸaÃ§ doÄŸrulamasÄ±
     const element = React.createElement(ConceptDetailDrawer, {
       selectedNode: node,
       onClose: handleClose,

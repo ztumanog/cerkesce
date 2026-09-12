@@ -1,6 +1,6 @@
-/**
+﻿/**
  * @file src/services/CircassianDialectConverter.ts
- * @description Adıgece kelimeleri fonolojik kurallarla Kabardeyceye dönüştüren servis.
+ * @description AdÄ±gece kelimeleri fonolojik kurallarla Kabardeyceye dÃ¶nÃ¼ÅŸtÃ¼ren servis.
  */
 
 import { GrammarDatabase, LexiconMapping, PhonologicalRule } from '../domain/gramer';
@@ -9,23 +9,23 @@ export class CircassianDialectConverter {
   constructor(private readonly db?: GrammarDatabase) {}
 
   /**
-   * Adıgece kelimeyi Kabardeyceye dönüştürür.
-   * @param word Dönüştürülecek Adıgece kelime
+   * AdÄ±gece kelimeyi Kabardeyceye dÃ¶nÃ¼ÅŸtÃ¼rÃ¼r.
+   * @param word DÃ¶nÃ¼ÅŸtÃ¼rÃ¼lecek AdÄ±gece kelime
    */
   public convertAdygheToKabardian(word: string): string {
     const normalized = word.trim().toLowerCase();
 
     if (!this.db) {
-      // Varsayılan temel kurallar (PL001 - PL005)
+      // VarsayÄ±lan temel kurallar (PL001 - PL005)
       return normalized
-        .replaceAll('шIу', 'фI')
-        .replaceAll('ф', 'ху')
-        .replaceAll('шъ', 'щ')
-        .replaceAll('жъ', 'жь')
-        .replaceAll('шI', 'щI');
+        .replaceAll('ÑˆIÑƒ', 'Ñ„I')
+        .replaceAll('Ñ„', 'Ñ…Ñƒ')
+        .replaceAll('ÑˆÑŠ', 'Ñ‰')
+        .replaceAll('Ğ¶ÑŠ', 'Ğ¶ÑŒ')
+        .replaceAll('ÑˆI', 'Ñ‰I');
     }
 
-    // Sözlük eşleşmesi kontrolü (m parametresine açık tip tanımı eklenmiştir)
+    // SÃ¶zlÃ¼k eÅŸleÅŸmesi kontrolÃ¼ (m parametresine aÃ§Ä±k tip tanÄ±mÄ± eklenmiÅŸtir)
     const lexiconMatch = this.db.lexicon_mappings?.find(
       (m: LexiconMapping) => m.adyghe.toLowerCase() === normalized
     );

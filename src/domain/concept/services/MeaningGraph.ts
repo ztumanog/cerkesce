@@ -1,4 +1,4 @@
-import { Concept } from "../Concept";
+﻿import { Concept } from "../Concept";
 
 export interface ConceptRelation {
   targetConceptId: string;

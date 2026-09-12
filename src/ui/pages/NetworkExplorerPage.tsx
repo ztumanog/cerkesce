@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+﻿import React, { useState } from 'react';
 import { LayoutAlgorithm, LayoutEngineService, PositionedNetworkDTO, PositionedNodeDTO } from '../../domain/analytics/services/LayoutEngineService';
 import { ExportFormat } from '../../domain/analytics/dto/ExportOptionsDTO';
 import { ExportEngineService, GenericConceptNetworkDTO } from '../../domain/analytics/services/ExportEngineService';
@@ -38,7 +38,7 @@ export const NetworkExplorerPage: React.FC<NetworkExplorerPageProps> = ({
       setPositionedNetwork(positioned);
       setSelectedNodeId(null);
     } catch (err: any) {
-      setError(err?.message || 'Arama sırasında bir hata oluştu');
+      setError(err?.message || 'Arama sÄ±rasÄ±nda bir hata oluÅŸtu');
     } finally {
       setIsLoading(false);
     }
@@ -69,7 +69,7 @@ export const NetworkExplorerPage: React.FC<NetworkExplorerPageProps> = ({
       const positioned = LayoutEngineService.applyLayout(mergedNetwork, currentLayout);
       setPositionedNetwork(positioned);
     } catch (err: any) {
-      setError('Ağaç genişletme hatası: ' + err?.message);
+      setError('AÄŸaÃ§ geniÅŸletme hatasÄ±: ' + err?.message);
     } finally {
       setIsLoading(false);
     }
@@ -89,7 +89,7 @@ export const NetworkExplorerPage: React.FC<NetworkExplorerPageProps> = ({
         type: 'text',
         value: query,
         onChange: (e: React.ChangeEvent<HTMLInputElement>) => setQuery(e.target.value),
-        placeholder: 'Kavram arayın...',
+        placeholder: 'Kavram arayÄ±n...',
         className: 'border p-2 rounded w-80 text-sm',
         'data-testid': 'search-input'
       }),
@@ -97,7 +97,7 @@ export const NetworkExplorerPage: React.FC<NetworkExplorerPageProps> = ({
         onClick: () => handleSearch(query),
         className: 'bg-indigo-600 text-white px-4 py-2 rounded text-sm font-medium',
         'data-testid': 'search-btn'
-      }, '🔍 Ara')
+      }, 'ğŸ” Ara')
     ),
 
     React.createElement(NetworkExplorerToolbar, {
@@ -108,7 +108,7 @@ export const NetworkExplorerPage: React.FC<NetworkExplorerPageProps> = ({
     }),
 
     React.createElement('div', { className: 'flex-1 relative overflow-hidden p-6' },
-      isLoading && React.createElement('div', { className: 'text-gray-500' }, 'Yükleniyor...'),
+      isLoading && React.createElement('div', { className: 'text-gray-500' }, 'YÃ¼kleniyor...'),
       error && React.createElement('div', { className: 'text-red-600' }, error),
       
       positionedNetwork && React.createElement('div', { className: 'grid grid-cols-3 gap-4', 'data-testid': 'network-canvas' },

@@ -40,3 +40,4 @@ describe('Phase 6.2 - P6S2-02 CytoscapeAdapter Unit Tests', () => {
     expect(edge?.classes).toContain('edge-relation-state_of');
   });
 });
+

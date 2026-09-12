@@ -1,4 +1,4 @@
-import { RelatedConceptDTO } from './RelatedConceptDTO';
+﻿import { RelatedConceptDTO } from './RelatedConceptDTO';
 import { TraversalNode } from './TraversalNode';
 
 export interface DiscoveryResultDTO {

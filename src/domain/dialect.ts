@@ -1,21 +1,21 @@
-/**
+﻿/**
  * @file src/domain/dialect.ts
- * @description Diyalekt ve ses değişim kurallarının domain tipleri.
+ * @description Diyalekt ve ses deÄŸiÅŸim kurallarÄ±nÄ±n domain tipleri.
  * @architecture circassian_dialect_rules.json ile birebir type-safe uyumludur.
  */
 
 /**
- * Diyalekt kuralının kelime üzerindeki etki alanı
+ * Diyalekt kuralÄ±nÄ±n kelime Ã¼zerindeki etki alanÄ±
  */
 export type RuleScope = 'root' | 'prefix' | 'suffix' | 'preverb';
 
 /**
- * Kuralın dilbilimsel doğruluk/onay durumu
+ * KuralÄ±n dilbilimsel doÄŸruluk/onay durumu
  */
 export type RuleStatus = 'CONFIRMED' | 'CANDIDATE';
 
 /**
- * Diyalektler arası ses/fonetik değişim kuralı
+ * Diyalektler arasÄ± ses/fonetik deÄŸiÅŸim kuralÄ±
  */
 export interface DialectRule {
   id: string;

@@ -1,4 +1,4 @@
-import { NetworkAnalyticsResultDTO } from '../dto/NetworkAnalyticsDTO';
+﻿import { NetworkAnalyticsResultDTO } from '../dto/NetworkAnalyticsDTO';
 import { GenericConceptNetworkDTO } from './ExportEngineService';
 
 export class NetworkAnalyticsService {

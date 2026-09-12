@@ -1,10 +1,10 @@
-/**
+﻿/**
  * @file src/lib/dictionaryConstants.ts
- * @description Çerkesçe Dil Korpusu için tüm sabitler, tema ve dilbilgisi tür tanımları.
+ * @description Ã‡erkesÃ§e Dil Korpusu iÃ§in tÃ¼m sabitler, tema ve dilbilgisi tÃ¼r tanÄ±mlarÄ±.
  */
 
 // ============================================================================
-// 1. TEMA TİPİ TANIMI
+// 1. TEMA TÄ°PÄ° TANIMI
 // ============================================================================
 export interface TemaTipi {
   arkaPlan: string;
@@ -24,16 +24,16 @@ export interface TemaTipi {
 }
 
 // ============================================================================
-// 2. EXPORT EDİLEN SABİTLER (SOZLUK_META ve TUR_MAP Dahil)
+// 2. EXPORT EDÄ°LEN SABÄ°TLER (SOZLUK_META ve TUR_MAP Dahil)
 // ============================================================================
 
-// Hata 1 Çözümü: SOZLUK_META export edildi
+// Hata 1 Ã‡Ã¶zÃ¼mÃ¼: SOZLUK_META export edildi
 export const SOZLUK_META = {
   default: {
     id: "default",
     file: "default.json",
-    title: "Çerkesçe Genel Sözlük",
-    name: "Çerkesçe Sözlük",
+    title: "Ã‡erkesÃ§e Genel SÃ¶zlÃ¼k",
+    name: "Ã‡erkesÃ§e SÃ¶zlÃ¼k",
     totalWords: 0,
     dialect: "western",
     fromLang: "ady",
@@ -42,8 +42,8 @@ export const SOZLUK_META = {
   western: {
     id: "western",
     file: "western.json",
-    title: "Batı Adığece Sözlük",
-    name: "Batı Adığece",
+    title: "BatÄ± AdÄ±ÄŸece SÃ¶zlÃ¼k",
+    name: "BatÄ± AdÄ±ÄŸece",
     totalWords: 0,
     dialect: "western",
     fromLang: "ady",
@@ -52,8 +52,8 @@ export const SOZLUK_META = {
   eastern: {
     id: "eastern",
     file: "eastern.json",
-    title: "Doğu Kabardeyce Sözlük",
-    name: "Doğu Kabardeyce",
+    title: "DoÄŸu Kabardeyce SÃ¶zlÃ¼k",
+    name: "DoÄŸu Kabardeyce",
     totalWords: 0,
     dialect: "eastern",
     fromLang: "kbd",
@@ -61,19 +61,19 @@ export const SOZLUK_META = {
   },
 } as const;
 
-// Hata 5 Çözümü: TUR_MAP export edildi
+// Hata 5 Ã‡Ã¶zÃ¼mÃ¼: TUR_MAP export edildi
 export const TUR_MAP: Record<string, string> = {
-  noun: "İsim",
+  noun: "Ä°sim",
   verb: "Fiil",
-  adjective: "Sıfat",
+  adjective: "SÄ±fat",
   adverb: "Zarf",
   preposition: "Edat",
-  conjunction: "Bağlaç",
+  conjunction: "BaÄŸlaÃ§",
   pronoun: "Zamir",
-  interjection: "Ünlem",
+  interjection: "Ãœnlem",
 };
 
-// Varsayılan Tema (TemaTipi ile Uyumlu)
+// VarsayÄ±lan Tema (TemaTipi ile Uyumlu)
 export const VARSAYILAN_TEMA: TemaTipi = {
   arkaPlan: "#FFFFFF",
   kartArkaPlan: "#F4EFE6",
@@ -91,15 +91,16 @@ export const VARSAYILAN_TEMA: TemaTipi = {
   renk_sinir: "#E5E7EB",
 };
 
-// KURUMSAL nesnesini dışarıya aktarıyoruz (export)
+// KURUMSAL nesnesini dÄ±ÅŸarÄ±ya aktarÄ±yoruz (export)
 export const KURUMSAL = {
-  ad: "Çerkesçe Dil Korpusu",
-  aciklama: "Çerkesçe (Adığe/Kabardeyce) Çok Dilli Sözlük Platformu",
+  ad: "Ã‡erkesÃ§e Dil Korpusu",
+  aciklama: "Ã‡erkesÃ§e (AdÄ±ÄŸe/Kabardeyce) Ã‡ok Dilli SÃ¶zlÃ¼k Platformu",
   versiyon: "2.0",
   yil: 2026,
   dil: "tr",
   kirmizi: "#EF4444",
 } as const;
 
-// TypeScript için KURUMSAL Tip Tanımı (İhtiyaç durumunda kullanılabilir)
+// TypeScript iÃ§in KURUMSAL Tip TanÄ±mÄ± (Ä°htiyaÃ§ durumunda kullanÄ±labilir)
 export type KurumsalTipi = typeof KURUMSAL;
+

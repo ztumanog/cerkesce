@@ -1,4 +1,4 @@
-import { describe, it, expect } from 'vitest';
+﻿import { describe, it, expect } from 'vitest';
 import { HealthCheckService } from '../../infra/services/HealthCheckService';
 import { AppConfig } from '../../config/AppConfig';
 

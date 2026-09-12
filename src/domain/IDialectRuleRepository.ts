@@ -1,28 +1,28 @@
-/**
+﻿/**
  * @file src/domain/IDialectRuleRepository.ts
- * @description Diyalekt kurallarına erişim için Repository arayüz tanımı.
+ * @description Diyalekt kurallarÄ±na eriÅŸim iÃ§in Repository arayÃ¼z tanÄ±mÄ±.
  */
 
 import { DialectRule } from './dialect';
 
 export interface IDialectRuleRepository {
   /**
-   * Tüm diyalekt kurallarını döndürür.
+   * TÃ¼m diyalekt kurallarÄ±nÄ± dÃ¶ndÃ¼rÃ¼r.
    */
   getAllRules(): DialectRule[];
 
   /**
-   * Fonolojik (ses bilgisi) kuralları döndürür.
+   * Fonolojik (ses bilgisi) kurallarÄ± dÃ¶ndÃ¼rÃ¼r.
    */
   getPhonologicalRules(): DialectRule[];
 
   /**
-   * Gramer kurallarını döndürür.
+   * Gramer kurallarÄ±nÄ± dÃ¶ndÃ¼rÃ¼r.
    */
   getGrammaticalRules(): DialectRule[];
 
   /**
-   * ID değerine göre spesifik bir kuralı döndürür.
+   * ID deÄŸerine gÃ¶re spesifik bir kuralÄ± dÃ¶ndÃ¼rÃ¼r.
    */
   getRuleById(id: string): DialectRule | null;
 }

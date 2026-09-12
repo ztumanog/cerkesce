@@ -1,18 +1,18 @@
-/**
+﻿/**
  * @file src/repository/IDialectRuleRepository.ts
- * @description Lehçe değişim kurallarına (DialectRule) erişim sağlayan Repository Sözleşmesi (Interface).
+ * @description LehÃ§e deÄŸiÅŸim kurallarÄ±na (DialectRule) eriÅŸim saÄŸlayan Repository SÃ¶zleÅŸmesi (Interface).
  */
 
 import { DialectRule } from "@/domain/dialect";
 
 export interface IDialectRuleRepository {
   /**
-   * Sistemdeki tüm aktif lehçe kurallarını getirir.
+   * Sistemdeki tÃ¼m aktif lehÃ§e kurallarÄ±nÄ± getirir.
    */
   getAllRules(): Promise<DialectRule[]>;
 
   /**
-   * Kaynak lehçeden hedef lehçeye olan kuralları filtreleyerek getirir.
+   * Kaynak lehÃ§eden hedef lehÃ§eye olan kurallarÄ± filtreleyerek getirir.
    */
   getRulesByDialects(fromDialect: string, toDialect: string): Promise<DialectRule[]>;
 }

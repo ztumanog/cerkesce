@@ -1,8 +1,17 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import type { TemaTipi } from "@/utils/helpers";
+// @ts-ignore: TypeScript JSON modülünü tanımadığında hata vermemesi için
 import rawManifest from "@/utils/dictionaries.json";
+
+export interface TemaRenkleri {
+  arkaPlan: string;
+  kartArkaPlan: string;
+  yaziAna: string;
+  yaziAlt: string;
+  kenarlik: string;
+  inputArkaPlan: string;
+}
 
 interface ManifestKaydi {
   file?: string;
@@ -36,7 +45,7 @@ interface ManifestKonteyneri {
 
 export interface KaynaklarProps {
   onClose?: () => void;
-  tema?: Partial<TemaTipi>;
+  tema?: Partial<TemaRenkleri>;
 }
 
 const hamManifest = rawManifest as ManifestKaydi[] | ManifestKonteyneri;
@@ -137,7 +146,7 @@ export default function Kaynaklar({
     "HEPSİ" | "western" | "DOĞU"
   >("HEPSİ");
 
-  const aktifTema: TemaTipi = useMemo(
+  const aktifTema: TemaRenkleri = useMemo(
     () => ({
       arkaPlan: tema?.arkaPlan || "#FDFBF7",
       kartArkaPlan: tema?.kartArkaPlan || "#FFFFFF",
@@ -149,8 +158,9 @@ export default function Kaynaklar({
     [tema]
   );
 
-  const vurguRengi = "#7A1C1C";
-  const doguRengi = "#A37015";
+  // Açık Mektep Kurumsal Renkleri
+  const vurguRengi = "#FF4030";
+  const doguRengi = "#FFC604";
 
   const istatistikler = useMemo(() => {
     let toplamMadde = 0;

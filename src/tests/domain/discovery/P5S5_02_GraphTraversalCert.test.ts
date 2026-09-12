@@ -1,4 +1,4 @@
-import { describe, it, expect } from 'vitest';
+﻿import { describe, it, expect } from 'vitest';
 import { GraphTraversalService } from '../../../domain/discovery/services/GraphTraversalService';
 import { IConceptGraphRepository } from '../../../domain/discovery/services/IConceptGraphRepository';
 import { DiscoveryRelationType } from '../../../domain/discovery/types/DiscoveryRelationType';
@@ -102,3 +102,4 @@ describe('P5S5-02: Graph Traversal Certification', () => {
     expect(ids).not.toContain('E');
   });
 });
+

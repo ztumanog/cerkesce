@@ -1,4 +1,4 @@
-import { describe, it, expect, beforeEach } from "vitest";
+﻿import { describe, it, expect, beforeEach } from "vitest";
 import { TranslationService } from "../services/TranslationService";
 import { MorphologyAwareMatchingService } from "../services/MorphologyAwareMatchingService";
 import { TranslationEntry, TranslationGroup, LanguageCode } from "../domain/translation";
@@ -38,14 +38,14 @@ describe("MultiLanguageSearch Tests", () => {
 
     const entry1: TranslationEntry = {
       id: "1",
-      lemma: "мыӀэрысе",
+      lemma: "Ğ¼Ñ‹Ó€ÑÑ€Ñ‹ÑĞµ",
       groupId: mockGroup1.id,
       meanings: [{ id: "m1", text: "elma", value: "elma", language: "TR" as LanguageCode }],
     };
 
     const entry2: TranslationEntry = {
       id: "2",
-      lemma: "унэ",
+      lemma: "ÑƒĞ½Ñ",
       groupId: mockGroup2.id,
       meanings: [{ id: "m2", text: "ev", value: "ev", language: "TR" as LanguageCode }],
     };
@@ -53,32 +53,32 @@ describe("MultiLanguageSearch Tests", () => {
     await mockRepository.addEntry(entry1);
     await mockRepository.addEntry(entry2);
 
-    const searchQueries = ["elma", "ev", "мыӀэрысе", "унэ", "apple"];
+    const searchQueries = ["elma", "ev", "Ğ¼Ñ‹Ó€ÑÑ€Ñ‹ÑĞµ", "ÑƒĞ½Ñ", "apple"];
 
     for (const query of searchQueries) {
-      // Artık search metodu doğrudan TranslationEntry[] dönüyor
+      // ArtÄ±k search metodu doÄŸrudan TranslationEntry[] dÃ¶nÃ¼yor
       const items = await translationService.search(query);
 
       expect(items).toBeDefined();
       expect(Array.isArray(items)).toBe(true);
 
-      if (query === "elma" || query === "мыӀэрысе") {
+      if (query === "elma" || query === "Ğ¼Ñ‹Ó€ÑÑ€Ñ‹ÑĞµ") {
         expect(items.length).toBeGreaterThan(0);
         expect(
           items.some(
             (r: TranslationEntry) =>
-              r.lemma === "мыӀэрысе" ||
+              r.lemma === "Ğ¼Ñ‹Ó€ÑÑ€Ñ‹ÑĞµ" ||
               r.meanings?.some((m) => m.text === "elma")
           )
         ).toBe(true);
       }
 
-      if (query === "ev" || query === "унэ") {
+      if (query === "ev" || query === "ÑƒĞ½Ñ") {
         expect(items.length).toBeGreaterThan(0);
         expect(
           items.some(
             (r: TranslationEntry) =>
-              r.lemma === "унэ" ||
+              r.lemma === "ÑƒĞ½Ñ" ||
               r.meanings?.some((m) => m.text === "ev")
           )
         ).toBe(true);

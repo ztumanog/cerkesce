@@ -1,160 +1,71 @@
-import manifestData from "@/utils/dictionaries.json";
+﻿export interface DictionarySource {
+  file: string;
+  title: string;
+  dialect: 'BATI' | 'DOGU' | 'western' | string;
+  sourceLanguage?: string;
+  targetLanguage?: string;
+  author?: string;
+  publisher?: string;
+  year?: string | number;
+  total_words?: number;
+}
 
-export const KAYNAK_HARITASI: Record<string, string> = {
-  "1": "Huvaj — Adıgece-Türkçe Sözlük",
-  "2": "Kerasheva — Çerkesçe Temel Kelimeler",
-  "3": "Paranuk — Adıgece Kavramlar",
-  "3.Ady-En": "Adıgece-İngilizce Sözlük",
-  "4": "Boran — Çerkesçe Dil Kartları",
-  "5": "Tuguz — Çerkesçe Sözlük",
-  "6": "Abaza — Abazaca-Türkçe Sözlük",
-  "7": "Kube — Çerkesçe Kelimeler",
-  "8.Ady-Tur_Huvaj": "Fahri Huvaj — Adıgece-Türkçe Sözlük",
-  "9.KBD-TUR_Keras": "Zeynab Kerasheva — Kabardeyce-Türkçe Sözlük",
-  "10.Ady-Tur_Paran": "Nihat Paranuk — Adıgece-Türkçe Sözlük",
-  "11.KBD-TUR_Boran": "Murat Boran — Kabardeyce-Türkçe Sözlük",
-  "12.Ady-TUR_Tuguz": "Ramazan Tuguz — Adıgece-Türkçe Sözlük",
-  "13.ABZ-TUR_Abaz": "Abazaca-Türkçe Sözlük",
-  "14.KBD-TUR_Kube": "Cevdet Kube — Kabardeyce-Türkçe Sözlük",
-  "15.Tur-Ady_Huvaj": "Fahri Huvaj — Türkçe-Adıgece Sözlük",
-  "16.Tur-KBD_Boran": "Murat Boran — Türkçe-Kabardeyce Sözlük",
-  "17.KBD-RUS_Apazh": "Apazhev & Kokov — Kabardeyce-Rusça Sözlük",
-  "18.RUS-KBD_Apazh": "Apazhev & Kokov (2008) — Rusça-Kabardeyce Sözlük",
-  "19.Ady-RUS_Thark": "Yusuf Tharkaho — Adıgece-Rusça Sözlük",
-  "20.RUS-Ady_Thark": "Yusuf Tharkaho — Rusça-Adıgece Sözlük",
-  "21.Ady-ARA_Huvaj": "Fahri Huvaj — Adıgece-Arapça Sözlük",
-  "22.ARA-Ady_Huvaj": "Fahri Huvaj — Arapça-Adıgece Sözlük",
-  "23.KBD-ENG_Amjad": "Amjad Jaimoukha — Kabardeyce-İngilizce Sözlük",
-  "24.Ady-RUS_Vodoz": "Vodozhdokova (1960) — Adıgece-Rusça Sözlük",
-  "25.ENG-KBD_Amjad": "Amjad Jaimoukha — İngilizce-Kabardeyce Sözlük",
-  "26.Ady-Tur_Lamiq": "Lamiq — Adıgece-Türkçe Sözlük",
-  "27.KBD-TUR_Lamiq": "Lamiq — Kabardeyce-Türkçe Sözlük",
-  "28.Ady-RUS_Blyag": "Blyagoz — Adıgece-Rusça Sözlük",
-  "29.RUS-Ady_Blyag": "Blyagoz — Rusça-Adıgece Sözlük",
-  "30.Ady-ETM_Thark": "Tharkaho (1991) — Adıgece Etimoloji Sözlüğü",
-};
+export const MANIFEST_FILE = '/data/dictionaries.json';
 
-export const metneCevir = (veri: any): string => {
-  if (veri === null || veri === undefined) {
-    return "";
-  }
+// Varsayılan/Fallback sözlük kaynakları listesi (34 Sözlük)
+export const DICTIONARY_SOURCES: DictionarySource[] = [
+  { file: "0.Ady-Ady_AIG.json", title: "Adıgece Açıklamalı Sözlük", dialect: "western", sourceLanguage: "ady", targetLanguage: "ady" },
+  { file: "1.Ady-Ady_AP.json", title: "Adıgece-Rusça Sözlük", dialect: "western", sourceLanguage: "ady", targetLanguage: "ru" },
+  { file: "10.En-Ady_Adam.json", title: "English-Adyghe Dictionary", dialect: "western", sourceLanguage: "en", targetLanguage: "ady" },
+  { file: "11.En-Kbd-Jonty.json", title: "English-Kabardian Dictionary", dialect: "DOGU", sourceLanguage: "en", targetLanguage: "kbd" },
+  { file: "12.En-Kbd-Ziwar.json", title: "English-Kabardian Circassian Dictionary", dialect: "DOGU", sourceLanguage: "en", targetLanguage: "kbd" },
+  { file: "13.Kbd-Ar-Jonty.json", title: "Kabardian-Arabic Dictionary", dialect: "DOGU", sourceLanguage: "kbd", targetLanguage: "ar" },
+  { file: "14.Kbd-En-2-Jonty.json", title: "Kabardian-English Dictionary (Version 2)", dialect: "DOGU", sourceLanguage: "kbd", targetLanguage: "en" },
+  { file: "15.Kbd-En-Jonty.json", title: "Kabardian-English Dictionary (Version 1)", dialect: "DOGU", sourceLanguage: "kbd", targetLanguage: "en" },
+  { file: "16.Kbd-En-Ziwar.json", title: "Kabardian-English Dictionary", dialect: "DOGU", sourceLanguage: "kbd", targetLanguage: "en" },
+  { file: "17.Kbd-En_Amjad.json", title: "Kabardian-English Dictionary", dialect: "DOGU", sourceLanguage: "kbd", targetLanguage: "en" },
+  { file: "18.Kbd-Ru&En.json", title: "Kabardeyce - Rusça & İngilizce Çok Dilli Sözlük", dialect: "DOGU", sourceLanguage: "kbd", targetLanguage: "ru" },
+  { file: "19.Kbd-Ru-2-Jonty.json", title: "Kabardeyce-Rusça Sözlük (Version 2)", dialect: "DOGU", sourceLanguage: "kbd", targetLanguage: "ru" },
+  { file: "2.Ady-Ara.json", title: "Adıgece-Arapça Sözlük", dialect: "western", sourceLanguage: "ady", targetLanguage: "ar" },
+  { file: "20.Kbd-Ru-Jonty.json", title: "Kabardeyce-Rusça Sözlük (Version 1)", dialect: "DOGU", sourceLanguage: "kbd", targetLanguage: "ru" },
+  { file: "21.Kbd-Tu-Jonty.json", title: "Kabardeyce-Türkçe Sözlük", dialect: "DOGU", sourceLanguage: "kbd", targetLanguage: "tr" },
+  { file: "22.Ru-Kbd-Jonty.json", title: "Rusça-Kabardeyce Sözlük", dialect: "DOGU", sourceLanguage: "ru", targetLanguage: "kbd" },
+  { file: "23.Rus-Ady_Blaghoj.json", title: "Rusça-Adıgece Sözlük", dialect: "western", sourceLanguage: "ru", targetLanguage: "ady" },
+  { file: "24.Rus-Ady_UAG.json", title: "Rusça-Adıgece Sözlük (Vodozhdokova)", dialect: "western", sourceLanguage: "ru", targetLanguage: "ady" },
+  { file: "25.Rus-Ady_UASP.json", title: "Rusça-Adıgece Okul Sözlüğü", dialect: "western", sourceLanguage: "ru", targetLanguage: "ady" },
+  { file: "26.Tu-Kbd-Jonty.json", title: "Türkçe-Kabardeyce Sözlük", dialect: "DOGU", sourceLanguage: "tr", targetLanguage: "kbd" },
+  { file: "27.Tur-Ady_Abaze.json", title: "Türkçe-Adıgece (Kabardeyce) Sözlük", dialect: "DOGU", sourceLanguage: "tr", targetLanguage: "ady" },
+  { file: "28.Tur-Ady_Huvaj.json", title: "Türkçe-Çerkesçe Sözlük", dialect: "DOGU", sourceLanguage: "tr", targetLanguage: "ady" },
+  { file: "29.Tur-Ady_Teshu.json", title: "Türkçe-Adıgece Sözlük", dialect: "western", sourceLanguage: "tr", targetLanguage: "ady" },
+  { file: "3.Ady-En.json", title: "Adıgece-İngilizce Sözlük", dialect: "western", sourceLanguage: "ady", targetLanguage: "en" },
+  { file: "30.Ady-Rus_ThreeVolumes.json", title: "3 Ciltlik Adıgece Açıklamalı Sözlük", dialect: "western", sourceLanguage: "ady", targetLanguage: "ru" },
+  { file: "31.Tu-Ady_Hilmi.json", title: "Türkçe-Adıgece Sözlük", dialect: "western", sourceLanguage: "tr", targetLanguage: "ady" },
+  { file: "32.Rus-Kbd_Nalchik_2013.json", title: "Rusça-Kabardeyce Okul Sözlüğü", dialect: "DOGU", sourceLanguage: "ru", targetLanguage: "kbd" },
+  { file: "33.Ady-Rus-1960.json", title: "Adıгейско-русский словарь (1960)", dialect: "western", sourceLanguage: "ady", targetLanguage: "ru" },
+  { file: "4.Ady-En_Adam.json", title: "Adyghe-English Dictionary", dialect: "western", sourceLanguage: "ady", targetLanguage: "en" },
+  { file: "5.Ady-Rus_Qarden.json", title: "Kabardeyce-Rusça Sözlük (Kardanov)", dialect: "DOGU", sourceLanguage: "kbd", targetLanguage: "ru" },
+  { file: "6.Ady-Rus_Sherdjes.json", title: "Kabardeyce/Adıgece-Rusça Sözlük", dialect: "DOGU", sourceLanguage: "kbd", targetLanguage: "ru" },
+  { file: "7.Ady-Rus_Tharkaho.json", title: "Adıgece-Rusça Sözlük (Tharkaho)", dialect: "western", sourceLanguage: "ady", targetLanguage: "ru" },
+  { file: "8.Ady-Tur_Huvaj.json", title: "Adıgece-Türkçe Sözlük", dialect: "western", sourceLanguage: "ady", targetLanguage: "tr" },
+  { file: "9.En-Ady.json", title: "English-Adyghe Dictionary", dialect: "western", sourceLanguage: "en", targetLanguage: "ady" }
+];
 
-  if (typeof veri === "string") {
-    return veri;
-  }
+export const KAYNAK_HARITASI = DICTIONARY_SOURCES;
 
-  if (typeof veri === "number") {
-    return String(veri);
-  }
+export function kaynagiDuzenle(source: any) {
+  return source ? { ...source, updated: true } : null;
+}
 
-  if (typeof veri === "object") {
-    return (
-      veri.text ||
-      veri.word ||
-      veri.value ||
-      veri.title ||
-      veri.name ||
-      veri.file ||
-      JSON.stringify(veri)
-    );
-  }
+export function metneCevir(val: any): string {
+  if (!val) return '';
+  if (typeof val === 'string') return val;
+  if (typeof val === 'object') return Object.values(val).filter((v) => typeof v === 'string').join(' ');
+  return String(val);
+}
 
-  return String(veri);
-};
+export function temizeCevir(val: any): string {
+  return metneCevir(val).normalize('NFC').trim();
+}
 
-export const temizeCevir = (
-  metin: string
-): string => {
-  return metin ? metin.trim() : "";
-};
+export default DICTIONARY_SOURCES;
 
-/**
- * Baştaki sayı öneklerini, dosya uzantılarını
- * ve büyük-küçük harf farkını temizler.
- */
-const normalizeKey = (
-  val: string
-): string => {
-  return val
-    .replace(/^\d+[\.\-_]?/, "")
-    .replace(/\.js[oa]?n?$/i, "")
-    .replace(/\.txt$/i, "")
-    .trim()
-    .toLowerCase();
-};
-
-export const kaynagiDuzenle = (
-  dosyaAdi?: any,
-  sozluklerListesi?: any[]
-): string => {
-  const hamMetin = metneCevir(dosyaAdi);
-
-  if (!hamMetin) {
-    return "";
-  }
-
-  const arananNormalized = normalizeKey(
-    hamMetin
-  );
-
-  const hedefListe =
-    sozluklerListesi &&
-    sozluklerListesi.length > 0
-      ? sozluklerListesi
-      : manifestData;
-
-  /**
-   * Manifest içinde dinamik arama.
-   */
-  if (
-    Array.isArray(hedefListe) &&
-    hedefListe.length > 0
-  ) {
-    const bulunan = hedefListe.find((sozluk) => {
-      const dosya =
-        sozluk?.file !== undefined
-          ? normalizeKey(String(sozluk.file))
-          : "";
-
-      const id =
-        sozluk?.id !== undefined
-          ? String(sozluk.id)
-              .trim()
-              .toLowerCase()
-          : "";
-
-      return (
-        dosya === arananNormalized ||
-        id === arananNormalized ||
-        dosya.includes(arananNormalized)
-      );
-    });
-
-    if (bulunan) {
-      const yazar = bulunan.author
-        ? `${bulunan.author} — `
-        : "";
-
-      return `${yazar}${
-        bulunan.title || bulunan.name || ""
-      }`;
-    }
-  }
-
-  /**
-   * Yedek harita araması.
-   */
-  const haritaAnahtari = Object.keys(
-    KAYNAK_HARITASI
-  ).find(
-    (anahtar) =>
-      normalizeKey(anahtar) ===
-      arananNormalized
-  );
-
-  if (haritaAnahtari) {
-    return KAYNAK_HARITASI[haritaAnahtari];
-  }
-
-  return hamMetin;
-};

@@ -1,4 +1,4 @@
-import { describe, it, expect } from 'vitest';
+﻿import { describe, it, expect } from 'vitest';
 import { MultilingualExplorer } from '../../../domain/discovery/services/MultilingualExplorer';
 import { Concept } from '../../../domain/concept/Concept';
 import { ConceptID } from '../../../domain/value-objects/ConceptID';
@@ -10,7 +10,7 @@ class RealTranslationRepository {
 
   constructor() {
     this.data.set('su', [
-      { id: 'm_tr_water', language: 'TR', term: 'su', definition: 'H2O bileşiği' }
+      { id: 'm_tr_water', language: 'TR', term: 'su', definition: 'H2O bileÅŸiÄŸi' }
     ]);
   }
 
@@ -44,7 +44,7 @@ class RealDialectResolver {
 
   constructor() {
     this.variants.set('01ARZ3NDEKTSV4RRFFQ69G5FAV', [
-      { id: 'v_kbd_1', dialectCode: 'KBD', term: 'Псы' }
+      { id: 'v_kbd_1', dialectCode: 'KBD', term: 'ĞŸÑÑ‹' }
     ]);
   }
 
@@ -111,7 +111,7 @@ describe('P5S5-03: Repository-Backed True E2E Certification', () => {
     expect(result.canonicalName).toBe('Water');
     expect(result.meanings).toHaveLength(1);
     expect(result.variants).toHaveLength(1);
-    expect(result.variants[0].term).toBe('Псы');
+    expect(result.variants[0].term).toBe('ĞŸÑÑ‹');
 
     // Graph checks
     expect(result.relatedConcepts).toHaveLength(2);

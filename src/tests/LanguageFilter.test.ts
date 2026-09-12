@@ -1,4 +1,4 @@
-import { describe, it, expect, beforeEach } from "vitest";
+﻿import { describe, it, expect, beforeEach } from "vitest";
 import { InMemoryTranslationRepository } from "../repository/InMemoryTranslationRepository";
 import { TranslationService } from "../services/TranslationService";
 import { LanguageCode } from "../domain/translation";
@@ -30,7 +30,7 @@ describe("ADR-0008 Type Safety & Multi-Language Filter Validation", () => {
     }
   });
 
-  it("Zorunlu dil filtresi (TR/EN/RU/AR) izolasyonunu tam doğrulamalı", async () => {
+  it("Zorunlu dil filtresi (TR/EN/RU/AR) izolasyonunu tam doÄŸrulamalÄ±", async () => {
     for (const lang of LANGUAGES) {
       const results = await service.searchByMeaning("test_", lang);
       expect(results.length).toBe(10);
@@ -41,12 +41,12 @@ describe("ADR-0008 Type Safety & Multi-Language Filter Validation", () => {
     }
   });
 
-  it("Filtresiz aramada tüm dillerdeki eşleşmeler dönmeli", async () => {
+  it("Filtresiz aramada tÃ¼m dillerdeki eÅŸleÅŸmeler dÃ¶nmeli", async () => {
     const results = await service.searchByMeaning("test_");
     expect(results.length).toBe(10);
   });
 
-  it("Yanlış dil filtresinde boş dizi dönmeli", async () => {
+  it("YanlÄ±ÅŸ dil filtresinde boÅŸ dizi dÃ¶nmeli", async () => {
     const results = await service.searchByMeaning("test_water_1", "TR");
     expect(results.length).toBe(0);
   });

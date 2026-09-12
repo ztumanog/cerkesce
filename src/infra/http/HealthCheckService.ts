@@ -1,4 +1,4 @@
-export interface SystemHealthStatus {
+﻿export interface SystemHealthStatus {
   status: 'UP' | 'DOWN';
   timestamp: string;
   version: string;

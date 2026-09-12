@@ -1,10 +1,14 @@
 import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
-  // Static files
   staticPageGenerationTimeout: 1000,
-  
-  // Headers
+
+  turbopack: {
+    resolveAlias: {
+      '@': './src',
+    },
+  },
+
   async headers() {
     return [
       {

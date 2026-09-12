@@ -1,137 +1,97 @@
-// @/utils/utils.tsx
-import { clsx, type ClassValue } from "clsx";
+﻿import { type ClassValue, clsx } from "clsx";
 import { twMerge } from "tailwind-merge";
 
-// ============================================================================
-// CLASS NAME UTILITY (cn - classnames helper)
-// ============================================================================
-
 /**
- * Tailwind CSS class adlarını birleştirmek için utility fonksiyonu
- * clsx ve tailwind-merge kullanarak çakışan sınıfları çözer
- * @param inputs - Birleştirilecek class adları
- * @returns Birleştirilmiş ve optimize edilmiş class string'i
+ * Tailwind CSS sınıf adlarını dinamik olarak birleştirir ve çakışmaları çözer.
  */
 export function cn(...inputs: ClassValue[]): string {
   return twMerge(clsx(inputs));
 }
 
-// ============================================================================
-// DICTIONARY UTILITIES
-// ============================================================================
-
 /**
- * Sözlük verilerini normalleştirmek için yardımcı fonksiyon
+ * Çerkesçe lehçe kodlarını insan tarafından okunabilir isimlere dönüştürür.
  */
-export function normalizeDictionaryData(data: unknown): Record<string, unknown> {
-  if (typeof data === "object" && data !== null) {
-    return data as Record<string, unknown>;
-  }
-  return {};
-}
-
-/**
- * Sözlük meta verilerini formatlamak
- */
-export function formatDictionaryMeta(meta: {
-  id?: string;
-  name?: string;
-  totalWords?: number;
-  label?: string;
-}): { id: string; name: string; totalWords: number; label?: string } {
-  return {
-    id: meta.id ?? "unknown",
-    name: meta.name ?? "Unnamed Dictionary",
-    totalWords: meta.totalWords ?? 0,
-    label: meta.label,
-  };
-}
-
-/**
- * Arama sonuçlarını filtrelemek
- */
-export function filterSearchResults(
-  results: unknown[],
-  query: string
-): unknown[] {
-  if (!Array.isArray(results)) return [];
-  if (!query || query.trim().length === 0) return results;
-
-  const lowerQuery = query.toLowerCase();
-  return results.filter((item) => {
-    if (typeof item === "object" && item !== null) {
-      const obj = item as Record<string, unknown>;
-      const word = String(obj.word ?? obj.kelime ?? "").toLowerCase();
-      const definition = String(
-        obj.definition ?? obj.tanim ?? obj.meaning ?? ""
-      ).toLowerCase();
-      return word.includes(lowerQuery) || definition.includes(lowerQuery);
-    }
-    return false;
-  });
-}
-
-/**
-// ✅ YENI - Çerkesçe lehçeleri
 export function lehceAdiniGetir(kod: string): string {
   const lehceler: Record<string, string> = {
-    western: "Batı Adığece",
-    eastern: "Doğu Kabardeyce",
+    ady: "Adığece (Batı Çerkesçesi)",
+    kbd: "Kabardeyce (Doğu Çerkesçesi)",
+    shs: "Şapsığ",
+    bzhe: "Bzeduğ",
+    abz: "Abzah",
+    kem: "Kemirguey",
+    bes: "Besleney",
   };
   return lehceler[kod] ?? kod;
 }
 
-// ✅ YENI - Hedef diller
+/**
+ * Hedef dil kodlarını okunabilir Türkçe isimlere dönüştürür.
+ */
 export function hedefDilAdiniGetir(kod: string): string {
   const diller: Record<string, string> = {
-    turkish: "Türkçe",
-    russian: "Rusça",
-    english: "İngilizce",
+    tr: "Türkçe",
+    en: "İngilizce",
+    ru: "Rusça",
+    ar: "Arapça",
+    ady: "Adığece",
+    kbd: "Kabardeyce",
   };
   return diller[kod] ?? kod;
 }
-  return lehceler[kod] ?? kod;
-}
 
 /**
- * Arama modunu Türkçe adına çevir
+ * Arama modu kodlarını arayüz etiketine dönüştürür.
  */
 export function aramaModuAdiniGetir(mod: string): string {
   const modlar: Record<string, string> = {
-    exact: "Tam Eşleşme",
-    prefix: "Başlangıç",
-    contains: "İçeriyor",
-    fuzzy: "Bulanık Arama",
+    exact: "Birebir Eşleşme",
+    prefix: "Başlangıç Eşleşmesi",
+    contains: "İçeren Arama",
+    fuzzy: "Esnek Arama",
   };
   return modlar[mod] ?? mod;
 }
 
-/**
- * Tarih formatı: DD.MM.YYYY
- */
-export function formatTarih(tarih: Date | string): string {
-  const date = typeof tarih === "string" ? new Date(tarih) : tarih;
-  if (isNaN(date.getTime())) return "";
-
-  const gun = String(date.getDate()).padStart(2, "0");
-  const ay = String(date.getMonth() + 1).padStart(2, "0");
-  const yil = date.getFullYear();
-
-  return `${gun}.${ay}.${yil}`;
+export interface BasicDictionaryMeta {
+  id: string;
+  displayName?: string;
+  shortLabel?: string;
 }
 
 /**
- * Sayıyı Türkçe formatında göster (1.000.000)
+ * Sözlük meta verisinden ekran etiketini üretir.
  */
-export function formatSayi(sayi: number): string {
-  return new Intl.NumberFormat("tr-TR").format(sayi);
+export function formatDictionaryMeta(meta?: Partial<BasicDictionaryMeta>): string {
+  if (!meta) return "";
+  return meta.displayName ?? meta.shortLabel ?? meta.id ?? "";
 }
 
 /**
- * Hata mesajını güvenli şekilde al
+ * UI seviyesinde arama sonuçlarını filtrelemek için geçici istemci fonksiyonu.
+ * TODO: Faz 2 sonunda @/lib/dictionaryUtils.ts veya Normalizer katmanına taşınacaktır.
  */
-export function getErrorMessage(error: unknown): string {
-  if (error instanceof Error) return error.message;
-  if (typeof error === "string") return error;
-  return "Bilinmeyen bir hata oluştu";
+export function filterSearchResults<T extends Record<string, unknown>>(
+  results: T[],
+  query: string
+): T[] {
+  if (!query || !query.trim()) return results;
+  const normalizedQuery = query.toLowerCase().trim();
+
+  return results.filter((item) => {
+    const searchableFields = [
+      item.word,
+      item.kelime,
+      item.definition,
+      item.tanim,
+      item.meaning,
+      item.lemma,
+      item.translation,
+    ];
+
+    return searchableFields.some(
+      (field) =>
+        typeof field === "string" &&
+        field.toLowerCase().includes(normalizedQuery)
+    );
+  });
 }

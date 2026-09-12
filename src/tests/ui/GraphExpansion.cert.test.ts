@@ -99,3 +99,4 @@ describe('Phase 6.2 - P6S2-05 Interactive Concept Expansion Certification Tests'
     expect(merged.metadata.isTruncated).toBe(true);
   });
 });
+

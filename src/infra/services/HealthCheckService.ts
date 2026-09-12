@@ -1,4 +1,4 @@
-import { AppConfig } from '../../config/AppConfig';
+﻿import { AppConfig } from '../../config/AppConfig';
 
 export interface SubsystemStatus {
   status: 'UP' | 'DOWN';
@@ -22,7 +22,7 @@ export class HealthCheckService {
   public static async getHealth(): Promise<HealthCheckResponseDTO> {
     const startTime = performance.now();
 
-    // Dinamik Bağımlılık Denetimleri
+    // Dinamik BaÄŸÄ±mlÄ±lÄ±k Denetimleri
     const discoveryCheck = this.checkDiscoveryEngine();
     const analyticsCheck = this.checkAnalyticsEngine();
     const cacheCheck = this.checkCacheLayer();

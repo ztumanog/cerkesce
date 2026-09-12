@@ -17,3 +17,39 @@ export const normalizeDictionaryItem = (raw: any, index: number): DictionaryItem
     kaynak: dictionaryName,
   };
 };
+
+export function getLehceler() {
+  return LEHCELER;
+}
+
+export function getHedefDiller() {
+  return HEDEF_DILLER;
+}
+
+export function getSozlukler() {
+  return SOZLUKLER;
+}=================================================================
+
+export function getLehceler() {
+  return LEHCELER;
+}
+
+export function getHedefDiller() {
+  return HEDEF_DILLER;
+}
+
+export function getSozlukler() {
+  return SOZLUKLER;
+}=================================================================
+
+export function getLehceler() {
+  return LEHCELER;
+}
+
+export function getHedefDiller() {
+  return HEDEF_DILLER;
+}
+
+export function getSozlukler() {
+  return SOZLUKLER;
+}

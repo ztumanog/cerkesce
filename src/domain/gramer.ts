@@ -1,6 +1,6 @@
-/**
+﻿/**
  * @file src/domain/grammar.ts
- * @description Çerkesçe Ses ve Dilbilgisi Kuralları Tipleri.
+ * @description Ã‡erkesÃ§e Ses ve Dilbilgisi KurallarÄ± Tipleri.
  */
 
 export interface PhonologicalRule {

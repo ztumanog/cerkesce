@@ -1,4 +1,4 @@
-import { describe, it, expect } from 'vitest';
+﻿import { describe, it, expect } from 'vitest';
 import { MultilingualExplorer } from '../../../domain/discovery/services/MultilingualExplorer';
 import { GraphTraversalService } from '../../../domain/discovery/services/GraphTraversalService';
 import { ConceptID } from '../../../domain/value-objects/ConceptID';
@@ -7,7 +7,7 @@ import { DiscoveryRelationType } from '../../../domain/discovery/types/Discovery
 class ProductionTranslationRepository {
   private data = new Map<string, any[]>();
   constructor() {
-    this.data.set('su', [{ id: 'm_tr_water', language: 'TR', term: 'su', definition: 'Su molekülü' }]);
+    this.data.set('su', [{ id: 'm_tr_water', language: 'TR', term: 'su', definition: 'Su molekÃ¼lÃ¼' }]);
   }
   async search(query: string) { return this.data.get(query.toLowerCase()) || []; }
 }
@@ -26,7 +26,7 @@ class ProductionMeaningConceptLinker {
 class ProductionDialectResolver {
   private variants = new Map<string, any[]>();
   constructor() {
-    this.variants.set('01ARZ3NDEKTSV4RRFFQ69G5FAV', [{ id: 'v_kbd_1', dialectCode: 'KBD', term: 'Псы' }]);
+    this.variants.set('01ARZ3NDEKTSV4RRFFQ69G5FAV', [{ id: 'v_kbd_1', dialectCode: 'KBD', term: 'ĞŸÑÑ‹' }]);
   }
   async resolveVariants(conceptId: string, dialect?: string) {
     const list = this.variants.get(conceptId) || [];
@@ -91,3 +91,4 @@ describe('P5S5-04 & P5S5-05: Performance & Zero-Mock Certification', () => {
     expect(result.relatedConcepts?.length).toBeGreaterThan(0);
   });
 });
+

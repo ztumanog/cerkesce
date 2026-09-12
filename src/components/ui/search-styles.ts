@@ -1,4 +1,4 @@
-import { cva } from "class-variance-authority";
+﻿import { cva } from "class-variance-authority";
 
 export const filterButtonVariants = cva(
   [
@@ -71,3 +71,4 @@ export const selectBoxVariants = cva([
   "dark:bg-[#221C19]",
   "dark:text-[#F4EFE6]",
 ]);
+

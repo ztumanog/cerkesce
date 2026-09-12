@@ -1,4 +1,4 @@
-import { describe, it, expect, beforeEach } from 'vitest';
+﻿import { describe, it, expect, beforeEach } from 'vitest';
 import { InMemoryTranslationRepository } from '../repository/InMemoryTranslationRepository';
 import { InMemoryConceptRepository } from '../repository/InMemoryConceptRepository';
 import { MeaningConceptLinker } from '../domain/concept/services/MeaningConceptLinker';
@@ -20,7 +20,7 @@ describe('P5S5-01: Cross-Lingual Concept Triangulation Sertifikasyonu', () => {
     conceptRepo = new InMemoryConceptRepository();
     linker = new MeaningConceptLinker(conceptRepo);
 
-    // ConceptID nesnesi oluşturma (create, constructor veya string desteği)
+    // ConceptID nesnesi oluÅŸturma (create, constructor veya string desteÄŸi)
     let waterConceptId: any;
     if (ConceptID) {
       if (typeof ConceptID.create === 'function') {
@@ -33,15 +33,15 @@ describe('P5S5-01: Cross-Lingual Concept Triangulation Sertifikasyonu', () => {
       waterConceptId = CONCEPT_WATER_ID_STR;
     }
 
-    // 1. Somut Concept Kaydı
+    // 1. Somut Concept KaydÄ±
     const waterConcept = new Concept({
       id: waterConceptId,
       prefLabel: 'Water',
-      description: 'Yaşam için temel sıvı madde',
+      description: 'YaÅŸam iÃ§in temel sÄ±vÄ± madde',
     });
     await conceptRepo.save(waterConcept);
 
-    // 2. Çeviri Kayıtları (su - TR, water - EN, psı - KBD)
+    // 2. Ã‡eviri KayÄ±tlarÄ± (su - TR, water - EN, psÄ± - KBD)
     const entryTr: TranslationEntry = {
       id: 'entry-su',
       lemma: 'su',
@@ -72,13 +72,13 @@ describe('P5S5-01: Cross-Lingual Concept Triangulation Sertifikasyonu', () => {
 
     const entryKbd: TranslationEntry = {
       id: 'entry-psi',
-      lemma: 'psı',
-      normalizedLemma: 'psı',
+      lemma: 'psÄ±',
+      normalizedLemma: 'psÄ±',
       language: 'KBD',
       meanings: [
         {
           id: 'm-water-kbd',
-          text: 'psı',
+          text: 'psÄ±',
           language: 'KBD',
         },
       ],
@@ -88,17 +88,17 @@ describe('P5S5-01: Cross-Lingual Concept Triangulation Sertifikasyonu', () => {
     await translationRepo.save(entryEn);
     await translationRepo.save(entryKbd);
 
-    // 3. MeaningConceptLinker Bağlantıları
+    // 3. MeaningConceptLinker BaÄŸlantÄ±larÄ±
     linker.link('m-water-tr', CONCEPT_WATER_ID_STR);
     linker.link('m-water-en', CONCEPT_WATER_ID_STR);
     linker.link('m-water-kbd', CONCEPT_WATER_ID_STR);
   });
 
-  it('su, water ve psı sorgularının her biri bağımsız olarak CONCEPT_WATER nesnesine ulaşmalıdır', async () => {
+  it('su, water ve psÄ± sorgularÄ±nÄ±n her biri baÄŸÄ±msÄ±z olarak CONCEPT_WATER nesnesine ulaÅŸmalÄ±dÄ±r', async () => {
     const testCases = [
       { query: 'su', expectedMeaningId: 'm-water-tr' },
       { query: 'water', expectedMeaningId: 'm-water-en' },
-      { query: 'psı', expectedMeaningId: 'm-water-kbd' },
+      { query: 'psÄ±', expectedMeaningId: 'm-water-kbd' },
     ];
 
     for (const testCase of testCases) {
@@ -113,11 +113,11 @@ describe('P5S5-01: Cross-Lingual Concept Triangulation Sertifikasyonu', () => {
       expect(meaning).toBeDefined();
       expect(meaning?.id).toBe(testCase.expectedMeaningId);
 
-      // Step B: MeaningConceptLinker Çözümleme
+      // Step B: MeaningConceptLinker Ã‡Ã¶zÃ¼mleme
       const resolvedConcept = await linker.resolveConcept(meaning!.id);
       expect(resolvedConcept).not.toBeNull();
 
-      // Step C: Concept Triangulation Doğrulaması
+      // Step C: Concept Triangulation DoÄŸrulamasÄ±
       const conceptIdValue = typeof resolvedConcept!.id === 'string'
         ? resolvedConcept!.id
         : (typeof resolvedConcept!.id?.getValue === 'function' ? resolvedConcept!.id.getValue() : String(resolvedConcept!.id));

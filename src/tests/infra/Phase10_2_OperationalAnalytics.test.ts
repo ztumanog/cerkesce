@@ -1,4 +1,4 @@
-import { describe, it, expect, beforeEach } from 'vitest';
+﻿import { describe, it, expect, beforeEach } from 'vitest';
 import { OperationalAnalyticsService } from '../../infra/analytics/OperationalAnalyticsService';
 
 describe('Phase 10.2 - Operational Analytics Certification', () => {

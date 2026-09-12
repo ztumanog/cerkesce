@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import { LayoutAlgorithm } from '../../../domain/analytics/services/LayoutEngineService';
 import { ExportFormat } from '../../../domain/analytics/dto/ExportOptionsDTO';
 
@@ -18,7 +18,7 @@ export const NetworkExplorerToolbar: React.FC<NetworkExplorerToolbarProps> = ({
   return (
     <div className="flex flex-wrap items-center justify-between gap-4 p-4 bg-gray-50 border-b rounded-t-lg">
       <div className="flex items-center space-x-2">
-        <span className="text-sm font-semibold text-gray-700">Düzen:</span>
+        <span className="text-sm font-semibold text-gray-700">DÃ¼zen:</span>
         <button
           onClick={() => onLayoutChange('CIRCULAR')}
           className={`px-3 py-1.5 text-xs font-medium rounded ${
@@ -53,10 +53,10 @@ export const NetworkExplorerToolbar: React.FC<NetworkExplorerToolbarProps> = ({
           onClick={onFitToScreen}
           className="px-3 py-1.5 text-xs font-medium bg-white text-gray-700 border rounded hover:bg-gray-100"
         >
-          🎯 Sığdır
+          ğŸ¯ SÄ±ÄŸdÄ±r
         </button>
         <div className="h-4 w-px bg-gray-300 mx-1" />
-        <span className="text-sm font-semibold text-gray-700">Dışa Aktar:</span>
+        <span className="text-sm font-semibold text-gray-700">DÄ±ÅŸa Aktar:</span>
         <button
           onClick={() => onExport(ExportFormat.JSON)}
           className="px-2.5 py-1.5 text-xs font-medium bg-green-50 text-green-700 border border-green-300 rounded hover:bg-green-100"

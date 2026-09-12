@@ -1,4 +1,4 @@
-import { describe, it, expect, vi } from 'vitest';
+﻿import { describe, it, expect, vi } from 'vitest';
 import React from 'react';
 import { NetworkExplorerPage } from '../../ui/pages/NetworkExplorerPage';
 import { LayoutEngineService } from '../../domain/analytics/services/LayoutEngineService';
@@ -6,8 +6,8 @@ import { LayoutEngineService } from '../../domain/analytics/services/LayoutEngin
 describe('Phase 7.1 - NetworkExplorerPage Integration Tests', () => {
   const sampleNetwork = {
     nodes: [
-      { id: 'water', label: 'Псы' },
-      { id: 'river', label: 'Псыхъуэ' }
+      { id: 'water', label: 'ĞŸÑÑ‹' },
+      { id: 'river', label: 'ĞŸÑÑ‹Ñ…ÑŠÑƒÑ' }
     ],
     edges: [{ source: 'water', target: 'river' }]
   };
@@ -39,7 +39,7 @@ describe('Phase 7.1 - NetworkExplorerPage Integration Tests', () => {
 
   it('NEP-004: Interactive Expansion merges new nodes into existing network', async () => {
     const mockExpandApi = vi.fn().mockResolvedValue({
-      nodes: [{ id: 'ice', label: 'Мывэ' }],
+      nodes: [{ id: 'ice', label: 'ĞœÑ‹Ğ²Ñ' }],
       edges: [{ source: 'water', target: 'ice' }]
     });
 

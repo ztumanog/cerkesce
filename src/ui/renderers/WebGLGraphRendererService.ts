@@ -1,4 +1,4 @@
-export interface WebGLRenderConfig {
+﻿export interface WebGLRenderConfig {
   enableGPUAcceleration: boolean;
   maxNodeThreshold: number;
 }

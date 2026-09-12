@@ -1,4 +1,4 @@
-import { describe, it, expect } from 'vitest';
+﻿import { describe, it, expect } from 'vitest';
 import { LargeGraphOptimizerService, GraphNode, GraphEdge } from '../../domain/performance/services/LargeGraphOptimizerService';
 
 describe('Phase 8.1 - Production Performance & Large Graph Certification', () => {

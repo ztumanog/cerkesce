@@ -1,14 +1,14 @@
-// @/lib/dictionary-resolver.ts
+﻿// @/lib/dictionary-resolver.ts
 import { RawDefinition } from '@/types/source';
 
 /**
- * Tanım Seçme Mantığı Hiyerarşisi:
+ * TanÄ±m SeÃ§me MantÄ±ÄŸÄ± HiyerarÅŸisi:
  * 1. definitions[].meaning
  * 2. full_definition_in_html
  * 3. tanim
  * 4. meaning
  * 
- * Bellek dostu ve sıfır nesne kopyalaması ile çalışır.
+ * Bellek dostu ve sÄ±fÄ±r nesne kopyalamasÄ± ile Ã§alÄ±ÅŸÄ±r.
  */
 export function resolveDefinition(entry: RawDefinition): string | null {
   if (entry.definitions && entry.definitions.length > 0) {

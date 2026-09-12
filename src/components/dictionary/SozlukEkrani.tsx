@@ -1,53 +1,140 @@
-'use client';
+﻿'use client';
 
-import React, { useState, useMemo } from 'react';
+import { useState, useCallback } from 'react';
 import SearchBox from '@/components/dictionary/SearchBox';
-import rawData from '@/data/dictionaryData.json';
-import { DictionaryItem } from '@/types/dictionary';
+import KelimeKarti from '@/components/dictionary/KelimeKarti';
+import KelimeDetayDrawer from '@/components/ui/KelimeDetayDrawer';
+import GununKelimesiKart from '@/components/dictionary/GununKelimesiKart';
+import type { GruplanmisKelime, GununKelimesi } from '@/types/dictionary';
 
-export const SozlukEkrani: React.FC = () => {
+const varsayilanGununKelimesi: GununKelimesi = {
+  id: '123e4567-e89b-12d3-a456-426614174000',
+  kelime: 'СиIэшIу',
+  anlam: 'Tatlım, canım',
+  lehce: 'Adigece',
+  tarih: new Date().toISOString().split('T')[0],
+};
+
+export default function SozlukEkrani() {
+  const [sonuclar, setSonuclar] = useState<GruplanmisKelime[]>([]);
+  const [yukleniyor, setYukleniyor] = useState(false);
+  const [toplam, setToplam] = useState(0);
+  const [seciliKelime, setSeciliKelime] = useState<GruplanmisKelime | null>(null);
+  const [drawerAcik, setDrawerAcik] = useState(false);
   const [aramaMetni, setAramaMetni] = useState('');
-  const entries = rawData as DictionaryItem[];
+  const [tumunuGoster, setTumunuGoster] = useState(false);
 
-  const filtrelenmis = useMemo(() => {
-    const q = aramaMetni.toLowerCase().trim();
-    if (!q) return entries;
-    return entries.filter(
-      (item) =>
-        item.word?.toLowerCase().includes(q) ||
-        item.translation?.toLowerCase().includes(q)
-    );
-  }, [entries, aramaMetni]);
+  const handleKelimeSec = (kelimeItem: GruplanmisKelime) => {
+    setSeciliKelime(kelimeItem);
+    setDrawerAcik(true);
+  };
+
+  const handleResults = useCallback((
+    results: GruplanmisKelime[],
+    total: number,
+    loading: boolean
+  ) => {
+    setSonuclar(results);
+    setYukleniyor(loading);
+    setToplam(total);
+    setAramaMetni(results.length > 0 || loading ? 'arama' : '');
+    setTumunuGoster(false);
+  }, []);
+
+  const bosArama = sonuclar.length === 0 && !aramaMetni && !yukleniyor;
+
+  const goruntulenenSonuclar = tumunuGoster ? sonuclar : sonuclar.slice(0, 3);
+  const dahahazaSonucVarmi = sonuclar.length > 3 && !tumunuGoster;
 
   return (
-    <div className="space-y-6">
-      <SearchBox aramaMetni={aramaMetni} onAramaDegis={setAramaMetni} />
+    <div className="w-full flex-1 bg-[#fbf8ef] dark:bg-slate-950 text-slate-800 dark:text-slate-100 transition-colors duration-200">
+      <div className="max-w-4xl mx-auto px-3 py-3 space-y-3">
+        {/* ARAMA KUTUSU */}
+        <div className="bg-white/90 dark:bg-slate-900 border border-stone-200 dark:border-slate-800 rounded-2xl shadow-sm p-3.5 sm:p-4">
+          <SearchBox onResults={handleResults} />
+        </div>
 
-      <div className="text-xs text-stone-400">
-        Toplam Kayıt: <strong className="text-amber-500">{filtrelenmis.length}</strong>
-      </div>
+        {/* GÜNÜN KELİMESİ */}
+        {bosArama && (
+          <div className="animate-in fade-in duration-300">
+            <GununKelimesiKart veri={varsayilanGununKelimesi} />
+          </div>
+        )}
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        {filtrelenmis.map((item) => (
-          <div
-            key={item.id}
-            className="p-4 rounded-lg bg-stone-900 border border-stone-800 space-y-2 hover:border-amber-500/50 transition-colors"
-          >
-            <div className="flex justify-between items-start">
-              <h3 className="text-xl font-bold text-amber-500">{item.word}</h3>
-              <span className="text-xs px-2 py-0.5 rounded bg-stone-800 text-stone-300 uppercase">
-                {item.dialect || 'Genel'}
-              </span>
-            </div>
-            <p className="text-stone-200 text-base">{item.translation}</p>
-            <div className="text-xs text-stone-500 italic pt-2 border-t border-stone-800">
-              Kaynak: {item.dictionaryName}
+        {/* YÜKLENİYOR */}
+        {yukleniyor && (
+          <div className="flex justify-center items-center py-6">
+            <div className="flex flex-col items-center gap-2">
+              <div className="relative w-8 h-8">
+                <div className="absolute inset-0 bg-gradient-to-r from-emerald-500 to-teal-600 rounded-full animate-spin" />
+                <div className="absolute inset-1 bg-[#fbf8ef] dark:bg-slate-950 rounded-full" />
+              </div>
+              <p className="text-xs text-stone-600 dark:text-slate-400 font-medium">
+                Aranıyor...
+              </p>
             </div>
           </div>
-        ))}
+        )}
+
+        {/* SONUÇ SAYISI */}
+        {sonuclar.length > 0 && (
+          <div className="flex items-center justify-between px-1">
+            <h2 className="text-xs sm:text-sm font-bold text-stone-800 dark:text-slate-200">
+              📚 Sonuçlar
+              <span className="ml-1.5 text-emerald-700 dark:text-emerald-400 font-medium">
+                ({toplam} bulundu)
+              </span>
+            </h2>
+          </div>
+        )}
+
+        {/* SONUÇ LİSTESİ */}
+        <div className="space-y-2">
+          {goruntulenenSonuclar.map((item, index) => (
+            <div
+              key={`${item.kelime}-${index}`}
+              className="animate-in fade-in duration-200"
+            >
+              <KelimeKarti
+                data={item}
+                onClick={() => handleKelimeSec(item)}
+              />
+            </div>
+          ))}
+        </div>
+
+        {/* TÜM SONUÇLARI GÖSTER BUTONU */}
+        {dahahazaSonucVarmi && (
+          <div className="flex justify-center pt-1">
+            <button
+              onClick={() => setTumunuGoster(true)}
+              className="px-4 py-2 text-xs bg-emerald-700 hover:bg-emerald-800 dark:bg-emerald-600 dark:hover:bg-emerald-700 text-white font-medium rounded-lg transition-colors shadow-sm"
+            >
+              📂 Tüm Sonuçları Göster ({sonuclar.length - 3} daha)
+            </button>
+          </div>
+        )}
+
+        {/* SONUÇ YOK */}
+        {!yukleniyor && aramaMetni && sonuclar.length === 0 && (
+          <div className="text-center py-8 bg-white/50 dark:bg-slate-900/50 rounded-xl border border-stone-200/60 dark:border-slate-800">
+            <div className="text-3xl mb-2">🔍</div>
+            <h3 className="text-sm font-semibold text-stone-800 dark:text-slate-200 mb-1">
+              Sonuç bulunamadı
+            </h3>
+            <p className="text-xs text-stone-500 dark:text-slate-400">
+              Lütfen arama terimini kontrol edin ve tekrar deneyin.
+            </p>
+          </div>
+        )}
+
+        {/* DRAWER */}
+        <KelimeDetayDrawer
+          isOpen={drawerAcik}
+          onClose={() => setDrawerAcik(false)}
+          seciliKelime={seciliKelime}
+        />
       </div>
     </div>
   );
-};
-
-export default SozlukEkrani;
+}

@@ -1,6 +1,6 @@
-/**
+﻿/**
  * @file src/services/MorphologyAwareMatchingService.ts
- * @description Dilbilimsel ve morfolojik eşleştirme servisi ana uygulaması.
+ * @description Dilbilimsel ve morfolojik eÅŸleÅŸtirme servisi ana uygulamasÄ±.
  */
 
 import { TranslationEntry } from "../domain/translation";
@@ -70,15 +70,15 @@ export class MorphologyAwareMatchingService {
     const normalized = word.toLowerCase().trim();
     variations.add(normalized);
 
-    // Doğu Çerkesçe varyasyonları
-    variations.add(normalized.replace(/ə/g, "a"));
-    variations.add(normalized.replace(/ə/g, "e"));
+    // DoÄŸu Ã‡erkesÃ§e varyasyonlarÄ±
+    variations.add(normalized.replace(/É™/g, "a"));
+    variations.add(normalized.replace(/É™/g, "e"));
 
-    // Batı Çerkesçe varyasyonları
-    variations.add(normalized.replace(/a/g, "ə"));
-    variations.add(normalized.replace(/e/g, "ə"));
+    // BatÄ± Ã‡erkesÃ§e varyasyonlarÄ±
+    variations.add(normalized.replace(/a/g, "É™"));
+    variations.add(normalized.replace(/e/g, "É™"));
 
-    // Suffix varyasyonları
+    // Suffix varyasyonlarÄ±
     if (normalized.length > 3) {
       variations.add(normalized.slice(0, -1));
       variations.add(normalized.slice(0, -2));

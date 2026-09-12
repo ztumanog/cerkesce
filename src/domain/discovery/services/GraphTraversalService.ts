@@ -1,4 +1,4 @@
-import { TraversalRequest } from '../dto/TraversalRequest';
+﻿import { TraversalRequest } from '../dto/TraversalRequest';
 import { TraversalNode } from '../dto/TraversalNode';
 import { DepthLimiter } from '../traversal/DepthLimiter';
 import { CycleDetector } from '../traversal/CycleDetector';
@@ -52,7 +52,7 @@ export class GraphTraversalService {
     while (queue.length > 0) {
       const current = queue.shift()!;
 
-      // ADR-0011: Depth <= 2 Sınırı
+      // ADR-0011: Depth <= 2 SÄ±nÄ±rÄ±
       if (limiter.shouldStop(current.depth)) {
         continue;
       }

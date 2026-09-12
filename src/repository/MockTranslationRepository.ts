@@ -1,6 +1,6 @@
-/**
+﻿/**
  * @file src/repository/MockTranslationRepository.ts
- * @description ADR-0007 standardına uygun Mock Repository - Kapsamlı Test ve Bellek İçi Depolama Implementasyonu
+ * @description ADR-0007 standardÄ±na uygun Mock Repository - KapsamlÄ± Test ve Bellek Ä°Ã§i Depolama Implementasyonu
  */
 
 import {
@@ -12,14 +12,14 @@ import {
 import { TranslationEntry, TranslationGroup } from "../domain/translation";
 
 /**
- * Mock Çeviri Deposu - Test, Geliştirme ve Mock veri senaryoları için
+ * Mock Ã‡eviri Deposu - Test, GeliÅŸtirme ve Mock veri senaryolarÄ± iÃ§in
  * 
- * Özellikler:
- * - ITranslationRepository arayüzünün TÜM metodlarını implement eder
- * - 15+ varsayılan test verisini Map ve Dizi veri yapısında depolar
- * - save, addEntry, findById, findByMeaning, saveGroup, findGroupById, findAll kontratlarını destekler
- * - Lehçe (BATI, DOGU) ve Dil (TR, EN, RU) filtreleme
- * - Sayfalama (Pagination) ve ileri düzey arama filtreleri
+ * Ã–zellikler:
+ * - ITranslationRepository arayÃ¼zÃ¼nÃ¼n TÃœM metodlarÄ±nÄ± implement eder
+ * - 15+ varsayÄ±lan test verisini Map ve Dizi veri yapÄ±sÄ±nda depolar
+ * - save, addEntry, findById, findByMeaning, saveGroup, findGroupById, findAll kontratlarÄ±nÄ± destekler
+ * - LehÃ§e (BATI, DOGU) ve Dil (TR, EN, RU) filtreleme
+ * - Sayfalama (Pagination) ve ileri dÃ¼zey arama filtreleri
  */
 export class MockTranslationRepository implements ITranslationRepository {
   private entriesMap: Map<string, TranslationEntry> = new Map();
@@ -30,38 +30,38 @@ export class MockTranslationRepository implements ITranslationRepository {
   }
 
   /**
-   * Varsayılan test verilerini Map yapılarına yükler.
+   * VarsayÄ±lan test verilerini Map yapÄ±larÄ±na yÃ¼kler.
    */
   private seedInitialData(): void {
     const defaultEntries: TranslationEntry[] = [
-      // ===== BAŞLAR (g-head) =====
+      // ===== BAÅLAR (g-head) =====
       {
         id: "e-1",
-        lemma: "шъхьэ",
-        normalizedLemma: "шъхьэ",
+        lemma: "ÑˆÑŠÑ…ÑŒÑ",
+        normalizedLemma: "ÑˆÑŠÑ…ÑŒÑ",
         dialect: "BATI",
         groupId: "g-head",
         meanings: [
-          { id: "m-1-1", language: "TR", text: "baş" },
+          { id: "m-1-1", language: "TR", text: "baÅŸ" },
           { id: "m-1-2", language: "EN", text: "head" },
-          { id: "m-1-3", language: "RU", text: "голова" },
+          { id: "m-1-3", language: "RU", text: "Ğ³Ğ¾Ğ»Ğ¾Ğ²Ğ°" },
         ],
       },
       {
         id: "e-2",
-        lemma: "щхьэ",
-        normalizedLemma: "щхьэ",
+        lemma: "Ñ‰Ñ…ÑŒÑ",
+        normalizedLemma: "Ñ‰Ñ…ÑŒÑ",
         dialect: "DOGU",
         groupId: "g-head",
         meanings: [
-          { id: "m-2-1", language: "TR", text: "baş" },
+          { id: "m-2-1", language: "TR", text: "baÅŸ" },
           { id: "m-2-2", language: "EN", text: "head" },
         ],
       },
       {
         id: "e-3",
-        lemma: "жъы",
-        normalizedLemma: "жъы",
+        lemma: "Ğ¶ÑŠÑ‹",
+        normalizedLemma: "Ğ¶ÑŠÑ‹",
         dialect: "BATI",
         groupId: "g-head",
         meanings: [
@@ -71,8 +71,8 @@ export class MockTranslationRepository implements ITranslationRepository {
       },
       {
         id: "e-4",
-        lemma: "жы",
-        normalizedLemma: "жы",
+        lemma: "Ğ¶Ñ‹",
+        normalizedLemma: "Ğ¶Ñ‹",
         dialect: "DOGU",
         groupId: "g-head",
         meanings: [
@@ -84,36 +84,36 @@ export class MockTranslationRepository implements ITranslationRepository {
       // ===== SU VE SIVILER (g-water) =====
       {
         id: "e-5",
-        lemma: "псы",
-        normalizedLemma: "псы",
+        lemma: "Ğ¿ÑÑ‹",
+        normalizedLemma: "Ğ¿ÑÑ‹",
         dialect: "DOGU",
         groupId: "g-water",
         meanings: [
           { id: "m-5-1", language: "TR", text: "su" },
           { id: "m-5-2", language: "EN", text: "water" },
-          { id: "m-5-3", language: "RU", text: "вода" },
+          { id: "m-5-3", language: "RU", text: "Ğ²Ğ¾Ğ´Ğ°" },
         ],
       },
       {
         id: "e-6",
-        lemma: "псыхъо",
-        normalizedLemma: "псыхъо",
+        lemma: "Ğ¿ÑÑ‹Ñ…ÑŠĞ¾",
+        normalizedLemma: "Ğ¿ÑÑ‹Ñ…ÑŠĞ¾",
         dialect: "BATI",
         groupId: "g-water",
         meanings: [
-          { id: "m-6-1", language: "TR", text: "ırmak" },
+          { id: "m-6-1", language: "TR", text: "Ä±rmak" },
           { id: "m-6-2", language: "EN", text: "river" },
-          { id: "m-6-3", language: "RU", text: "река" },
+          { id: "m-6-3", language: "RU", text: "Ñ€ĞµĞºĞ°" },
         ],
       },
       {
         id: "e-7",
-        lemma: "пс",
-        normalizedLemma: "пс",
+        lemma: "Ğ¿Ñ",
+        normalizedLemma: "Ğ¿Ñ",
         dialect: "BATI",
         groupId: "g-water",
         meanings: [
-          { id: "m-7-1", language: "TR", text: "su (kısa)" },
+          { id: "m-7-1", language: "TR", text: "su (kÄ±sa)" },
           { id: "m-7-2", language: "EN", text: "water (short)" },
         ],
       },
@@ -121,20 +121,20 @@ export class MockTranslationRepository implements ITranslationRepository {
       // ===== KALP VE DUYGULAR (g-heart) =====
       {
         id: "e-8",
-        lemma: "гу",
-        normalizedLemma: "гу",
+        lemma: "Ğ³Ñƒ",
+        normalizedLemma: "Ğ³Ñƒ",
         dialect: "DOGU",
         groupId: "g-heart",
         meanings: [
           { id: "m-8-1", language: "TR", text: "kalp" },
           { id: "m-8-2", language: "EN", text: "heart" },
-          { id: "m-8-3", language: "RU", text: "сердце" },
+          { id: "m-8-3", language: "RU", text: "ÑĞµÑ€Ğ´Ñ†Ğµ" },
         ],
       },
       {
         id: "e-9",
-        lemma: "гъуэ",
-        normalizedLemma: "гъуэ",
+        lemma: "Ğ³ÑŠÑƒÑ",
+        normalizedLemma: "Ğ³ÑŠÑƒÑ",
         dialect: "BATI",
         groupId: "g-heart",
         meanings: [
@@ -144,8 +144,8 @@ export class MockTranslationRepository implements ITranslationRepository {
       },
       {
         id: "e-10",
-        lemma: "нэхъ",
-        normalizedLemma: "нэхъ",
+        lemma: "Ğ½ÑÑ…ÑŠ",
+        normalizedLemma: "Ğ½ÑÑ…ÑŠ",
         dialect: "DOGU",
         groupId: "g-heart",
         meanings: [
@@ -157,20 +157,20 @@ export class MockTranslationRepository implements ITranslationRepository {
       // ===== HAYVANLAR (g-animals) =====
       {
         id: "e-11",
-        lemma: "лIэ",
-        normalizedLemma: "лIэ",
+        lemma: "Ğ»IÑ",
+        normalizedLemma: "Ğ»IÑ",
         dialect: "BATI",
         groupId: "g-animals",
         meanings: [
           { id: "m-11-1", language: "TR", text: "at" },
           { id: "m-11-2", language: "EN", text: "horse" },
-          { id: "m-11-3", language: "RU", text: "лошадь" },
+          { id: "m-11-3", language: "RU", text: "Ğ»Ğ¾ÑˆĞ°Ğ´ÑŒ" },
         ],
       },
       {
         id: "e-12",
-        lemma: "лэ",
-        normalizedLemma: "лэ",
+        lemma: "Ğ»Ñ",
+        normalizedLemma: "Ğ»Ñ",
         dialect: "DOGU",
         groupId: "g-animals",
         meanings: [
@@ -180,12 +180,12 @@ export class MockTranslationRepository implements ITranslationRepository {
       },
       {
         id: "e-13",
-        lemma: "шы",
-        normalizedLemma: "шы",
+        lemma: "ÑˆÑ‹",
+        normalizedLemma: "ÑˆÑ‹",
         dialect: "BATI",
         groupId: "g-animals",
         meanings: [
-          { id: "m-13-1", language: "TR", text: "köpek" },
+          { id: "m-13-1", language: "TR", text: "kÃ¶pek" },
           { id: "m-13-2", language: "EN", text: "dog" },
         ],
       },
@@ -193,8 +193,8 @@ export class MockTranslationRepository implements ITranslationRepository {
       // ===== RENKLER (g-colors) =====
       {
         id: "e-14",
-        lemma: "фэ",
-        normalizedLemma: "фэ",
+        lemma: "Ñ„Ñ",
+        normalizedLemma: "Ñ„Ñ",
         dialect: "DOGU",
         groupId: "g-colors",
         meanings: [
@@ -204,8 +204,8 @@ export class MockTranslationRepository implements ITranslationRepository {
       },
       {
         id: "e-15",
-        lemma: "хьэ",
-        normalizedLemma: "хьэ",
+        lemma: "Ñ…ÑŒÑ",
+        normalizedLemma: "Ñ…ÑŒÑ",
         dialect: "BATI",
         groupId: "g-colors",
         meanings: [
@@ -216,8 +216,8 @@ export class MockTranslationRepository implements ITranslationRepository {
     ];
 
     const defaultGroups: TranslationGroup[] = [
-      { id: "g-head", groupName: "Baş Kavramı", entries: [] },
-      { id: "g-water", groupName: "Su ve Sıvı Kavramı", entries: [] },
+      { id: "g-head", groupName: "BaÅŸ KavramÄ±", entries: [] },
+      { id: "g-water", groupName: "Su ve SÄ±vÄ± KavramÄ±", entries: [] },
       { id: "g-heart", groupName: "Kalp ve Duygular", entries: [] },
       { id: "g-animals", groupName: "Hayvanlar", entries: [] },
       { id: "g-colors", groupName: "Renkler", entries: [] },
@@ -424,13 +424,13 @@ export class MockTranslationRepository implements ITranslationRepository {
 }
 
 /**
- * Test ve varsayılan veriler için bağımsız sabit örnekler
+ * Test ve varsayÄ±lan veriler iÃ§in baÄŸÄ±msÄ±z sabit Ã¶rnekler
  */
 export const MOCK_REPOSITORY_ENTRIES: TranslationEntry[] = [
   {
     id: "ENTRY_1",
-    lemma: "псы",
-    normalizedLemma: "псы",
+    lemma: "Ğ¿ÑÑ‹",
+    normalizedLemma: "Ğ¿ÑÑ‹",
     dialect: "DOGU",
     groupId: "g-water",
     meanings: [
@@ -440,19 +440,19 @@ export const MOCK_REPOSITORY_ENTRIES: TranslationEntry[] = [
   },
   {
     id: "ENTRY_2",
-    lemma: "псыхъо",
-    normalizedLemma: "псыхъо",
+    lemma: "Ğ¿ÑÑ‹Ñ…ÑŠĞ¾",
+    normalizedLemma: "Ğ¿ÑÑ‹Ñ…ÑŠĞ¾",
     dialect: "BATI",
     groupId: "g-water",
     meanings: [
-      { id: "m2", language: "TR", text: "ırmak" },
+      { id: "m2", language: "TR", text: "Ä±rmak" },
       { id: "m2-en", language: "EN", text: "river" },
     ],
   },
   {
     id: "ENTRY_3",
-    lemma: "гу",
-    normalizedLemma: "гу",
+    lemma: "Ğ³Ñƒ",
+    normalizedLemma: "Ğ³Ñƒ",
     dialect: "DOGU",
     groupId: "g-heart",
     meanings: [
@@ -462,19 +462,19 @@ export const MOCK_REPOSITORY_ENTRIES: TranslationEntry[] = [
   },
   {
     id: "ENTRY_4",
-    lemma: "шъхьэ",
-    normalizedLemma: "шъхьэ",
+    lemma: "ÑˆÑŠÑ…ÑŒÑ",
+    normalizedLemma: "ÑˆÑŠÑ…ÑŒÑ",
     dialect: "BATI",
     groupId: "g-head",
     meanings: [
-      { id: "m4", language: "TR", text: "baş" },
+      { id: "m4", language: "TR", text: "baÅŸ" },
       { id: "m4-en", language: "EN", text: "head" },
     ],
   },
   {
     id: "ENTRY_5",
-    lemma: "лIэ",
-    normalizedLemma: "лIэ",
+    lemma: "Ğ»IÑ",
+    normalizedLemma: "Ğ»IÑ",
     dialect: "BATI",
     groupId: "g-animals",
     meanings: [
@@ -485,8 +485,8 @@ export const MOCK_REPOSITORY_ENTRIES: TranslationEntry[] = [
 ];
 
 export const MOCK_REPOSITORY_GROUPS: TranslationGroup[] = [
-  { id: "g-head", groupName: "Baş Kavramı", entries: [] },
-  { id: "g-water", groupName: "Su ve Sıvı Kavramı", entries: [] },
+  { id: "g-head", groupName: "BaÅŸ KavramÄ±", entries: [] },
+  { id: "g-water", groupName: "Su ve SÄ±vÄ± KavramÄ±", entries: [] },
   { id: "g-heart", groupName: "Kalp ve Duygular", entries: [] },
   { id: "g-animals", groupName: "Hayvanlar", entries: [] },
   { id: "g-colors", groupName: "Renkler", entries: [] },

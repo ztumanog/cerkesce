@@ -1,4 +1,4 @@
-import { describe, it, expect, beforeEach } from 'vitest';
+﻿import { describe, it, expect, beforeEach } from 'vitest';
 import { CollaborativeModerationService } from '../../domain/collaboration/services/CollaborativeModerationService';
 
 describe('Phase 12.0 - Collaborative Editing & Moderation Certification', () => {
@@ -10,7 +10,7 @@ describe('Phase 12.0 - Collaborative Editing & Moderation Certification', () => 
     const proposal = CollaborativeModerationService.submitProposal({
       proposalId: 'prop_001',
       conceptId: 'CONCEPT_TREE',
-      proposedLabel: 'Чъыгъ',
+      proposedLabel: 'Ğ§ÑŠÑ‹Ğ³ÑŠ',
       author: 'editor_user'
     });
 

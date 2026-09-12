@@ -1,6 +1,6 @@
-/**
+﻿/**
  * @file src/domain/translation.ts
- * @description Çeviri ve sözlük alan modeli tipleri.
+ * @description Ã‡eviri ve sÃ¶zlÃ¼k alan modeli tipleri.
  */
 
 export type DialectCode = "DOGU" | "BATI" | "STANDART" | "GENEL";
@@ -8,9 +8,9 @@ export type DialectCode = "DOGU" | "BATI" | "STANDART" | "GENEL";
 export type LanguageCode = "TR" | "RU" | "EN" | "AR";
 
 export interface TranslationMeaning {
-  id: string; // ✅ Zorunlu
-  language: LanguageCode; // ✅ Zorunlu
-  text: string; // ✅ Zorunlu
+  id: string; // âœ… Zorunlu
+  language: LanguageCode; // âœ… Zorunlu
+  text: string; // âœ… Zorunlu
   exampleSentence?: string;
   partOfSpeech?: string;
   category?: string;

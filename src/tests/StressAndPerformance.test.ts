@@ -1,6 +1,6 @@
-/**
+﻿/**
  * @file src/tests/StressAndPerformance.test.ts
- * @description Aşama 4 - Yüksek Hacimli Veri Yükleme ve Stres Testleri (50.000 Kayıt)
+ * @description AÅŸama 4 - YÃ¼ksek Hacimli Veri YÃ¼kleme ve Stres Testleri (50.000 KayÄ±t)
  */
 
 import { describe, it, expect, beforeEach } from "vitest";
@@ -10,7 +10,7 @@ import { DataChunkLoader } from "../loader/DataChunkLoader";
 import { TranslationEntry, LanguageCode } from "../domain/translation";
 import { MorphologyAwareMatchingService } from "../services/MorphologyAwareMatchingService";
 
-describe("Aşama 4 - Yüksek Hacimli Veri Yükleme ve Stres Testleri", () => {
+describe("AÅŸama 4 - YÃ¼ksek Hacimli Veri YÃ¼kleme ve Stres Testleri", () => {
   let repository: InMemoryTranslationRepository;
   let matchingService: MorphologyAwareMatchingService;
   let service: TranslationService;
@@ -25,16 +25,16 @@ describe("Aşama 4 - Yüksek Hacimli Veri Yükleme ve Stres Testleri", () => {
 
   function generateSyntheticData(count: number): TranslationEntry[] {
     const entries: TranslationEntry[] = [];
-    const prefixes = ["щхьэ", "псы", "шъхьэ", "лъэ", "бзэ", "къэ", "гу"];
+    const prefixes = ["Ñ‰Ñ…ÑŒÑ", "Ğ¿ÑÑ‹", "ÑˆÑŠÑ…ÑŒÑ", "Ğ»ÑŠÑ", "Ğ±Ğ·Ñ", "ĞºÑŠÑ", "Ğ³Ñƒ"];
 
-    // Tam kelime eşleşmesi (exact match) aramaları için doğrudan "щхьэ" lemmalı ilk kayıtlar
+    // Tam kelime eÅŸleÅŸmesi (exact match) aramalarÄ± iÃ§in doÄŸrudan "Ñ‰Ñ…ÑŒÑ" lemmalÄ± ilk kayÄ±tlar
     for (let i = 0; i < Math.min(count, 50); i++) {
       entries.push({
         id: `EXACT_MATCH_${i}`,
         sourceId: "stress_dict",
         sourceEntryId: `exact_${i}`,
-        lemma: "щхьэ",
-        normalizedLemma: "щхьэ",
+        lemma: "Ñ‰Ñ…ÑŒÑ",
+        normalizedLemma: "Ñ‰Ñ…ÑŒÑ",
         language: "kbd" as LanguageCode,
         dialect: "DOGU",
         groupId: "exact-group",
@@ -42,7 +42,7 @@ describe("Aşama 4 - Yüksek Hacimli Veri Yükleme ve Stres Testleri", () => {
           {
             id: `m_exact_${i}`,
             language: "TR" as LanguageCode,
-            text: "baş, kafatası",
+            text: "baÅŸ, kafatasÄ±",
           },
         ],
       } as TranslationEntry);
@@ -67,12 +67,12 @@ describe("Aşama 4 - Yüksek Hacimli Veri Yükleme ve Stres Testleri", () => {
           {
             id: `m_${i}_1`,
             language: "TR" as LanguageCode,
-            text: `baş_${i}`,
+            text: `baÅŸ_${i}`,
           },
           {
             id: `m_${i}_2`,
             language: "RU" as LanguageCode,
-            text: `голова_${i}`,
+            text: `Ğ³Ğ¾Ğ»Ğ¾Ğ²Ğ°_${i}`,
           },
         ],
       } as TranslationEntry);
@@ -81,7 +81,7 @@ describe("Aşama 4 - Yüksek Hacimli Veri Yükleme ve Stres Testleri", () => {
     return entries;
   }
 
-  it("1. 50.000 kayıt parça parça (chunked) başarıyla yüklenmelidir", async () => {
+  it("1. 50.000 kayÄ±t parÃ§a parÃ§a (chunked) baÅŸarÄ±yla yÃ¼klenmelidir", async () => {
     const largeDataset = generateSyntheticData(50000);
     let lastProgressPercentage = 0;
 
@@ -94,28 +94,28 @@ describe("Aşama 4 - Yüksek Hacimli Veri Yükleme ve Stres Testleri", () => {
     const allEntries = await repository.getAll();
     expect(allEntries.length).toBe(50000);
 
-    const result = await service.searchCrossDictionary("щхьэ");
+    const result = await service.searchCrossDictionary("Ñ‰Ñ…ÑŒÑ");
     expect(result.length).toBeGreaterThan(0);
   }, 60000);
 
-  it("2. 50.000 kayıt arasından yapılan arama 1 saniye altında yanıt vermelidir", async () => {
+  it("2. 50.000 kayÄ±t arasÄ±ndan yapÄ±lan arama 1 saniye altÄ±nda yanÄ±t vermelidir", async () => {
     const largeDataset = generateSyntheticData(50000);
     await loader.loadChunked({ entries: largeDataset }, 10000);
 
     const startTime = performance.now();
-    const searchResult = await service.searchCrossDictionary("щхьэ");
+    const searchResult = await service.searchCrossDictionary("Ñ‰Ñ…ÑŒÑ");
     const duration = performance.now() - startTime;
 
     expect(searchResult.length).toBeGreaterThan(0);
     expect(duration).toBeLessThan(1000);
   }, 60000);
 
-  it("3. Çoklu eşzamanlı (Concurrent) 100 arama sorgusu sistemi kilitlememelidir", async () => {
+  it("3. Ã‡oklu eÅŸzamanlÄ± (Concurrent) 100 arama sorgusu sistemi kilitlememelidir", async () => {
     const largeDataset = generateSyntheticData(20000);
     await loader.loadChunked({ entries: largeDataset }, 5000);
 
     const queries = Array.from({ length: 100 }, (_, i) =>
-      i < 10 ? "щхьэ" : `щхьэ_${i * 100}`
+      i < 10 ? "Ñ‰Ñ…ÑŒÑ" : `Ñ‰Ñ…ÑŒÑ_${i * 100}`
     );
 
     const startTime = performance.now();

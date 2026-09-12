@@ -1,15 +1,15 @@
-import { describe, it, expect } from 'vitest';
+﻿import { describe, it, expect } from 'vitest';
 import { FederatedGraphService, FederatedSourceNode } from '../../domain/federation/services/FederatedGraphService';
 
 describe('Phase 11.0 - Knowledge Graph Federation Certification', () => {
   it('FED-001: Merges multi-dialect graph nodes into a unified federated entity graph', () => {
     const kabardianNodes: FederatedSourceNode[] = [
-      { id: 'CONCEPT_WATER', dialect: 'EASTERN_KABARDIAN', label: 'Псы' }
+      { id: 'CONCEPT_WATER', dialect: 'EASTERN_KABARDIAN', label: 'ĞŸÑÑ‹' }
     ];
 
     const adygheNodes: FederatedSourceNode[] = [
-      { id: 'CONCEPT_WATER', dialect: 'WESTERN_ADYGHE', label: 'Псы' },
-      { id: 'CONCEPT_FIRE', dialect: 'WESTERN_ADYGHE', label: 'МафIэ' }
+      { id: 'CONCEPT_WATER', dialect: 'WESTERN_ADYGHE', label: 'ĞŸÑÑ‹' },
+      { id: 'CONCEPT_FIRE', dialect: 'WESTERN_ADYGHE', label: 'ĞœĞ°Ñ„IÑ' }
     ];
 
     const federatedGraph = FederatedGraphService.mergeSources([kabardianNodes, adygheNodes]);

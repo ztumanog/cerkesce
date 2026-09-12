@@ -1,4 +1,4 @@
-import { describe, it, expect } from 'vitest';
+﻿import { describe, it, expect } from 'vitest';
 import { LayoutEngineService } from '../../domain/analytics/services/LayoutEngineService';
 import { BatchExportService } from '../../domain/analytics/services/BatchExportService';
 import { ExportFormat } from '../../domain/analytics/dto/ExportOptionsDTO';
@@ -7,9 +7,9 @@ import { GenericConceptNetworkDTO } from '../../domain/analytics/services/Export
 describe('Phase 7.0.4 - Layout Engine & Batch Export Certification Tests', () => {
   const sampleNetwork: GenericConceptNetworkDTO = {
     nodes: [
-      { id: 'N1', label: 'Псы' },
-      { id: 'N2', label: 'Псыхъуэ' },
-      { id: 'N3', label: 'Хы' }
+      { id: 'N1', label: 'ĞŸÑÑ‹' },
+      { id: 'N2', label: 'ĞŸÑÑ‹Ñ…ÑŠÑƒÑ' },
+      { id: 'N3', label: 'Ğ¥Ñ‹' }
     ],
     edges: []
   };
@@ -43,7 +43,7 @@ describe('Phase 7.0.4 - Layout Engine & Batch Export Certification Tests', () =>
   it('BAT-001: Exports multiple networks in a single batch call', () => {
     const items = [
       { id: 'NET_WATER', network: sampleNetwork },
-      { id: 'NET_TREE', network: { nodes: [{ id: 'T1', label: 'Чъыг' }], edges: [] } }
+      { id: 'NET_TREE', network: { nodes: [{ id: 'T1', label: 'Ğ§ÑŠÑ‹Ğ³' }], edges: [] } }
     ];
 
     const result = BatchExportService.exportBatch(items, { format: ExportFormat.JSON });

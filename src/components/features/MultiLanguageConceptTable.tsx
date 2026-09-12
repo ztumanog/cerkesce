@@ -1,4 +1,4 @@
-import React, { ReactNode, isValidElement } from 'react';
+﻿import React, { ReactNode, isValidElement } from 'react';
 import { z } from 'zod';
 
 // ============================================================================
@@ -47,10 +47,10 @@ function isConceptItemArray(value: unknown): value is ConceptItem[] {
 export function MultiLanguageConceptTable({
   title,
   concepts,
-  fallbackText = 'Veri bulunamadı.',
+  fallbackText = 'Veri bulunamadÄ±.',
 }: MultiLanguageConceptTableProps) {
   // Safe Heading Node Narrowing (Prevents TS2322)
-  const renderedTitle = safeRenderReactNode(title, 'Çerkesçe Kavram Tablosu');
+  const renderedTitle = safeRenderReactNode(title, 'Ã‡erkesÃ§e Kavram Tablosu');
 
   // Safe Array Type Narrowing (Prevents TS2339 & TS2322)
   const validConcepts: ConceptItem[] = isConceptItemArray(concepts) ? concepts : [];
@@ -71,10 +71,10 @@ export function MultiLanguageConceptTable({
           <table className="w-full text-left border-collapse text-sm">
             <thead>
               <tr className="bg-slate-100 text-slate-700">
-                <th className="p-3 font-semibold border-b">Kavram (Çerkesçe)</th>
-                <th className="p-3 font-semibold border-b">Çeviri</th>
-                <th className="p-3 font-semibold border-b">Açıklama</th>
-                <th className="p-3 font-semibold border-b">Örnekler</th>
+                <th className="p-3 font-semibold border-b">Kavram (Ã‡erkesÃ§e)</th>
+                <th className="p-3 font-semibold border-b">Ã‡eviri</th>
+                <th className="p-3 font-semibold border-b">AÃ§Ä±klama</th>
+                <th className="p-3 font-semibold border-b">Ã–rnekler</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-slate-100">

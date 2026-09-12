@@ -64,3 +64,4 @@ export class CytoscapeAdapter {
     return elements;
   }
 }
+

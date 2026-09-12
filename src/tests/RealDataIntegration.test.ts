@@ -1,50 +1,50 @@
-import { describe, it, expect, beforeEach } from "vitest";
+﻿import { describe, it, expect, beforeEach } from "vitest";
 import { InMemoryTranslationRepository } from "../repository/InMemoryTranslationRepository";
 import { TranslationService } from "../services/TranslationService";
 import { MorphologyAwareMatchingService } from "../services/MorphologyAwareMatchingService";
 import { TranslationEntry, TranslationGroup } from "../domain/translation";
 
 const mockGroups: TranslationGroup[] = [
-  { id: "TRG_HEAD", groupName: "Baş", entries: [] },
+  { id: "TRG_HEAD", groupName: "BaÅŸ", entries: [] },
   { id: "TRG_WATER", groupName: "Su", entries: [] },
 ];
 
-// ✅ Sadece lemma olarak aranabilir kelimeler
+// âœ… Sadece lemma olarak aranabilir kelimeler
 const mockEntries: TranslationEntry[] = [
   {
     id: "e-1",
-    lemma: "шъхьэ",
-    normalizedLemma: "шъхьэ",
+    lemma: "ÑˆÑŠÑ…ÑŒÑ",
+    normalizedLemma: "ÑˆÑŠÑ…ÑŒÑ",
     dialect: "BATI",
     groupId: "TRG_HEAD",
     meanings: [
-      { id: "m-1", language: "TR", text: "baş" },
+      { id: "m-1", language: "TR", text: "baÅŸ" },
       { id: "m-1b", language: "EN", text: "head" },
     ],
   },
   {
     id: "e-water",
-    lemma: "псы",
-    normalizedLemma: "псы",
+    lemma: "Ğ¿ÑÑ‹",
+    normalizedLemma: "Ğ¿ÑÑ‹",
     dialect: "DOGU",
     groupId: "TRG_WATER",
     meanings: [
       { id: "m-water-tr", language: "TR", text: "su" },
       { id: "m-water-en", language: "EN", text: "water" },
-      { id: "m-water-ru", language: "RU", text: "вода" },
+      { id: "m-water-ru", language: "RU", text: "Ğ²Ğ¾Ğ´Ğ°" },
     ],
   },
   {
     id: "e-head-east",
-    lemma: "щхьэ",
-    normalizedLemma: "щхьэ",
+    lemma: "Ñ‰Ñ…ÑŒÑ",
+    normalizedLemma: "Ñ‰Ñ…ÑŒÑ",
     dialect: "DOGU",
     groupId: "TRG_HEAD",
     meanings: [
-      { id: "m-head-east", language: "TR", text: "baş" },
+      { id: "m-head-east", language: "TR", text: "baÅŸ" },
     ],
   },
-  // ✅ Lemma olarak 'water' ve 'вода'
+  // âœ… Lemma olarak 'water' ve 'Ğ²Ğ¾Ğ´Ğ°'
   {
     id: "e-water-en",
     lemma: "water",
@@ -58,12 +58,12 @@ const mockEntries: TranslationEntry[] = [
   },
   {
     id: "e-water-ru",
-    lemma: "вода",
-    normalizedLemma: "вода",
+    lemma: "Ğ²Ğ¾Ğ´Ğ°",
+    normalizedLemma: "Ğ²Ğ¾Ğ´Ğ°",
     dialect: "BATI",
     groupId: "TRG_WATER",
     meanings: [
-      { id: "m-water-ru-2", language: "RU", text: "вода" },
+      { id: "m-water-ru-2", language: "RU", text: "Ğ²Ğ¾Ğ´Ğ°" },
       { id: "m-water-tr-4", language: "TR", text: "su" },
     ],
   },
@@ -79,9 +79,9 @@ describe("RealDataIntegration Tests", () => {
     service = new TranslationService(repository, matchingService);
   });
 
-  describe("1. Temel Çok Dilli Arama", () => {
-    it("Cerkesce 'псы' sorgusu bulunabilmelidir", async () => {
-      const result = await service.search("псы");
+  describe("1. Temel Ã‡ok Dilli Arama", () => {
+    it("Cerkesce 'Ğ¿ÑÑ‹' sorgusu bulunabilmelidir", async () => {
+      const result = await service.search("Ğ¿ÑÑ‹");
 
       let entries: TranslationEntry[] = [];
       if (Array.isArray(result)) {
@@ -91,11 +91,11 @@ describe("RealDataIntegration Tests", () => {
       }
 
       expect(entries.length).toBeGreaterThan(0);
-      const found = entries.find((e) => e.lemma === "псы");
+      const found = entries.find((e) => e.lemma === "Ğ¿ÑÑ‹");
       expect(found).toBeDefined();
     });
 
-    it("İngilizce 'water' sorgusu bulunabilmelidir", async () => {
+    it("Ä°ngilizce 'water' sorgusu bulunabilmelidir", async () => {
       const result = await service.search("water");
 
       let entries: TranslationEntry[] = [];
@@ -110,8 +110,8 @@ describe("RealDataIntegration Tests", () => {
       expect(found).toBeDefined();
     });
 
-    it("Rusça 'вода' sorgusu bulunabilmelidir", async () => {
-      const result = await service.search("вода");
+    it("RusÃ§a 'Ğ²Ğ¾Ğ´Ğ°' sorgusu bulunabilmelidir", async () => {
+      const result = await service.search("Ğ²Ğ¾Ğ´Ğ°");
 
       let entries: TranslationEntry[] = [];
       if (Array.isArray(result)) {
@@ -121,14 +121,14 @@ describe("RealDataIntegration Tests", () => {
       }
 
       expect(entries.length).toBeGreaterThan(0);
-      const found = entries.find((e) => e.lemma === "вода");
+      const found = entries.find((e) => e.lemma === "Ğ²Ğ¾Ğ´Ğ°");
       expect(found).toBeDefined();
     });
   });
 
-  describe("2. TranslationGroup Gerçek Kullanımı ve Grup Bütünlüğü", () => {
-    it("Tüm 'water / вода' aramaları aynı TRG_WATER grubuna ait olmalıdır", async () => {
-      const queries = ["water", "вода"];
+  describe("2. TranslationGroup GerÃ§ek KullanÄ±mÄ± ve Grup BÃ¼tÃ¼nlÃ¼ÄŸÃ¼", () => {
+    it("TÃ¼m 'water / Ğ²Ğ¾Ğ´Ğ°' aramalarÄ± aynÄ± TRG_WATER grubuna ait olmalÄ±dÄ±r", async () => {
+      const queries = ["water", "Ğ²Ğ¾Ğ´Ğ°"];
 
       for (const q of queries) {
         const result = await service.search(q);
@@ -150,7 +150,7 @@ describe("RealDataIntegration Tests", () => {
       }
     });
 
-    it("Grup ID üzerinden grup verisi eksiksiz çekilebilmelidir", async () => {
+    it("Grup ID Ã¼zerinden grup verisi eksiksiz Ã§ekilebilmelidir", async () => {
       const group = await repository.getByGroup("TRG_WATER");
       expect(group).toBeDefined();
       expect(group?.groupName).toBe("Su");
@@ -158,8 +158,8 @@ describe("RealDataIntegration Tests", () => {
   });
 
   describe("3. Cross Dictionary Matching", () => {
-    it("Doğu lehçesi 'щхьэ' araması Batı lehçesi 'шъхьэ' varyasyonunu kapsamalıdır", async () => {
-      const result = await service.search("щхьэ");
+    it("DoÄŸu lehÃ§esi 'Ñ‰Ñ…ÑŒÑ' aramasÄ± BatÄ± lehÃ§esi 'ÑˆÑŠÑ…ÑŒÑ' varyasyonunu kapsamalÄ±dÄ±r", async () => {
+      const result = await service.search("Ñ‰Ñ…ÑŒÑ");
 
       let entries: TranslationEntry[] = [];
       if (Array.isArray(result)) {

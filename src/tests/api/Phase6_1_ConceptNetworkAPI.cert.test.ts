@@ -114,3 +114,4 @@ describe('Phase 6.1 - REST API Gateway Contract Certification Tests', () => {
     expect(responseData.nodes.length).toBeLessThanOrEqual(2);
   });
 });
+

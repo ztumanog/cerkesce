@@ -1,18 +1,18 @@
-/**
+﻿/**
  * @file src/tests/DialectRules.test.ts
- * @description Çerkesçe diyalekt ve ses değişim kurallarını test eder.
+ * @description Ã‡erkesÃ§e diyalekt ve ses deÄŸiÅŸim kurallarÄ±nÄ± test eder.
  */
 
 describe('Dialect Rules Tests', () => {
-  it('şive/diyalekt kurallarının doğru tanımlandığını doğrular', () => {
+  it('ÅŸive/diyalekt kurallarÄ±nÄ±n doÄŸru tanÄ±mlandÄ±ÄŸÄ±nÄ± doÄŸrular', () => {
     const sampleRule = {
-      sourcePattern: 'щ',
-      targetPattern: 'шъ',
+      sourcePattern: 'Ñ‰',
+      targetPattern: 'ÑˆÑŠ',
       confidenceScore: 0.9
     };
 
-    expect(sampleRule.sourcePattern).toBe('щ');
-    expect(sampleRule.targetPattern).toBe('шъ');
+    expect(sampleRule.sourcePattern).toBe('Ñ‰');
+    expect(sampleRule.targetPattern).toBe('ÑˆÑŠ');
     expect(sampleRule.confidenceScore).toBe(0.9);
   });
 });

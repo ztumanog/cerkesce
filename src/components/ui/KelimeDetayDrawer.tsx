@@ -1,37 +1,33 @@
-"use client";
+﻿'use client';
 
-import React, { useEffect, useRef } from "react";
-import type { GruplanmisKelime } from "@/types/dictionary";
-import type { TemaTipi } from "@/utils/helpers";
-import { metneCevir, kaynagiDuzenle } from "@/utils/helpers";
-
-const KURUMSAL_KIRMIZI = "#FF4030";
+import React, { useRef, useEffect } from 'react';
+import { metneCevir, kaynagiDuzenle } from '@/utils/helpers';
+import type { GruplanmisKelime, KaynakItem } from '@/types/dictionary';
 
 interface KelimeDetayDrawerProps {
-  seciliKelime: GruplanmisKelime;
-  kapat: () => void;
-  tema: TemaTipi;
-  metinBoyutu: number;
+  seciliKelime: GruplanmisKelime | null;
+  isOpen: boolean;
+  onClose: () => void;
+  metinBoyutu?: number;
 }
 
 export default function KelimeDetayDrawer({
   seciliKelime,
-  kapat,
-  tema,
-  metinBoyutu,
+  isOpen,
+  onClose,
+  metinBoyutu = 16,
 }: KelimeDetayDrawerProps) {
   const drawerRef = useRef<HTMLDivElement>(null);
   const kapatBtnRef = useRef<HTMLButtonElement>(null);
 
-  // Eski page.tsx'teki Klavye ve Odak Yönetimi Logic'i
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === "Escape") {
-        kapat();
+      if (e.key === 'Escape') {
+        onClose();
         return;
       }
 
-      if (e.key === "Tab" && drawerRef.current) {
+      if (e.key === 'Tab' && drawerRef.current) {
         const odaklanabilir = drawerRef.current.querySelectorAll<HTMLElement>(
           'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
         );
@@ -50,137 +46,111 @@ export default function KelimeDetayDrawer({
       }
     };
 
-    window.addEventListener("keydown", handleKeyDown);
-    setTimeout(() => kapatBtnRef.current?.focus(), 50);
+    if (isOpen) {
+      window.addEventListener('keydown', handleKeyDown);
+      const timer = setTimeout(() => kapatBtnRef.current?.focus(), 50);
 
-    return () => window.removeEventListener("keydown", handleKeyDown);
-  }, [kapat]);
+      return () => {
+        clearTimeout(timer);
+        window.removeEventListener('keydown', handleKeyDown);
+      };
+    }
+  }, [isOpen, onClose]);
 
-  // Kaynak listesi (Eski yapıdaki kaynaklar veya anlamlar dizisi)
-  const kaynakListesi =
-    seciliKelime.kaynaklar && seciliKelime.kaynaklar.length > 0
-      ? seciliKelime.kaynaklar
-      : seciliKelime.anlamlar || [];
+  if (!isOpen || !seciliKelime) {
+    return null;
+  }
+
+  const kaynakListesi: KaynakItem[] =
+    (seciliKelime.kaynaklar?.length ?? 0) > 0
+      ? (seciliKelime.kaynaklar as KaynakItem[])
+      : (seciliKelime.anlamlar ?? []).map((anlam) => ({
+          tanim: anlam,
+        }));
 
   return (
-    <div role="dialog" aria-modal="true" aria-labelledby="drawer-title">
+    <div
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="drawer-title"
+      className="fixed inset-0 z-[9999] flex justify-end"
+    >
       {/* Karartma Arka Planı (Backdrop) */}
       <div
-        onClick={kapat}
+        onClick={onClose}
         aria-hidden="true"
-        style={{
-          position: "fixed",
-          inset: 0,
-          background: "rgba(0,0,0,0.6)",
-          backdropFilter: "blur(2px)",
-          zIndex: 9998,
-        }}
+        className="fixed inset-0 bg-black/60 backdrop-blur-sm transition-opacity duration-300"
       />
 
-      {/* Drawer Sabit Paneli */}
+      {/* Drawer Panel */}
       <div
         ref={drawerRef}
-        style={{
-          position: "fixed",
-          top: 0,
-          right: 0,
-          width: "520px",
-          maxWidth: "92%",
-          height: "100vh",
-          backgroundColor: tema.kartArkaPlan,
-          color: tema.yaziAna,
-          zIndex: 9999,
-          boxShadow: "-4px 0 20px rgba(0,0,0,0.2)",
-          display: "flex",
-          flexDirection: "column",
-          overflowY: "auto",
-          padding: "24px",
-          boxSizing: "border-box",
-        }}
+        style={{ fontSize: `${metinBoyutu}px` }}
+        className="relative z-10 w-full max-w-[520px] h-full bg-white dark:bg-slate-900 text-slate-900 dark:text-slate-100 shadow-2xl flex flex-col overflow-y-auto p-6 transition-transform duration-300 ease-in-out border-l border-slate-200 dark:border-slate-800"
       >
-        {/* Header */}
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "space-between",
-            alignItems: "center",
-            marginBottom: "20px",
-            borderBottom: `1px solid ${tema.kenarlik}`,
-            paddingBottom: "12px",
-          }}
-        >
+        {/* Başlık ve Kapat Butonu */}
+        <div className="flex items-center justify-between pb-4 mb-6 border-b border-slate-200 dark:border-slate-800">
           <h2
             id="drawer-title"
-            style={{
-              margin: 0,
-              fontSize: `${metinBoyutu * 1.4}px`,
-              color: tema.yaziAna,
-              fontWeight: "bold",
-            }}
+            className="font-bold text-2xl text-slate-900 dark:text-slate-100 tracking-tight"
           >
             {metneCevir(seciliKelime.kelime)}
           </h2>
           <button
             ref={kapatBtnRef}
-            onClick={kapat}
+            onClick={onClose}
             aria-label="Detay panelini kapat"
-            style={{
-              background: "transparent",
-              border: "none",
-              fontSize: "20px",
-              cursor: "pointer",
-              color: tema.yaziAlt,
-              padding: "4px 8px",
-            }}
+            className="p-2 rounded-lg text-slate-500 hover:text-slate-900 dark:hover:text-slate-100 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors focus:outline-none focus:ring-2 focus:ring-amber-500"
           >
             ✕
           </button>
         </div>
 
         {/* Kaynaklar / Tanımlar Listesi */}
-        <div style={{ flex: 1, display: "flex", flexDirection: "column", gap: "16px" }}>
-          {kaynakListesi.map((kaynak: any, idx: number) => {
-            const dosyaAdi =
-              kaynak.kaynak_sozluk || kaynak.file || kaynak.kaynak;
+        <div className="flex-1 flex flex-col gap-4">
+          {kaynakListesi.length > 0 ? (
+            kaynakListesi.map((kaynak, idx) => {
+              const dosyaAdi =
+                kaynak.kaynak_sozluk ||
+                kaynak.file ||
+                kaynak.kaynak ||
+                kaynak.sözlük ||
+                kaynak.dictionaryName;
 
-            const tanim = metneCevir(
-              kaynak.tanim || kaynak.anlam || kaynak.meaning || kaynak.full_definition_in_html
-            );
+              const tanim = metneCevir(
+                kaynak.tanim ||
+                  kaynak.anlam ||
+                  kaynak.meaning ||
+                  kaynak.full_definition_in_html ||
+                  ''
+              );
 
-            return (
-              <div
-                key={idx}
-                style={{
-                  padding: "16px",
-                  borderRadius: "8px",
-                  backgroundColor: tema.inputArkaPlan,
-                  border: `1px solid ${tema.kenarlik}`,
-                }}
-              >
-                {dosyaAdi && (
-                  <div
-                    style={{
-                      fontSize: `${metinBoyutu * 0.85}px`,
-                      fontWeight: "bold",
-                      color: KURUMSAL_KIRMIZI,
-                      marginBottom: "6px",
-                    }}
-                  >
-                    📚 {kaynagiDuzenle(metneCevir(dosyaAdi))}
-                  </div>
-                )}
-                
+              return (
                 <div
-                  style={{
-                    color: tema.yaziAna,
-                    fontSize: `${metinBoyutu * 0.95}px`,
-                    lineHeight: "1.6",
-                  }}
-                  dangerouslySetInnerHTML={{ __html: tanim }}
-                />
-              </div>
-            );
-          })}
+                  key={`${dosyaAdi || 'kaynak'}-${idx}`}
+                  className="p-4 rounded-2xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200/80 dark:border-slate-700/50 shadow-sm transition-all"
+                >
+                  {dosyaAdi && (
+                    <div className="text-xs font-semibold uppercase tracking-wider text-amber-600 dark:text-amber-400 mb-2 flex items-center gap-1.5">
+                      <span>📚</span>
+                      <span>{kaynagiDuzenle(metneCevir(dosyaAdi))}</span>
+                    </div>
+                  )}
+
+                  {tanim && (
+                    <div
+                      className="text-slate-800 dark:text-slate-200 leading-relaxed text-sm md:text-base prose dark:prose-invert max-w-none"
+                      dangerouslySetInnerHTML={{ __html: tanim }}
+                    />
+                  )}
+                </div>
+              );
+            })
+          ) : (
+            <div className="p-8 text-center text-slate-500 dark:text-slate-400 font-medium">
+              Tanım bulunamadı
+            </div>
+          )}
         </div>
       </div>
     </div>

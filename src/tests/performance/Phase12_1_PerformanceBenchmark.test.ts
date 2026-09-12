@@ -1,4 +1,4 @@
-import { describe, it, expect } from 'vitest';
+﻿import { describe, it, expect } from 'vitest';
 import { MetricsService } from '../../infra/telemetry/MetricsService';
 
 describe('Phase 12.1 - Performance & Load Benchmark', () => {

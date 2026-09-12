@@ -1,4 +1,4 @@
-export interface ConceptProposal {
+﻿export interface ConceptProposal {
   proposalId: string;
   conceptId: string;
   proposedLabel: string;

@@ -1,4 +1,4 @@
-import { describe, it, expect, beforeEach } from 'vitest';
+﻿import { describe, it, expect, beforeEach } from 'vitest';
 import { ApiKeyGovernanceService } from '../../infra/governance/ApiKeyGovernanceService';
 
 describe('Phase 10.3 - Public API Governance Certification', () => {

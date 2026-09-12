@@ -1,12 +1,12 @@
-import { describe, it, expect } from 'vitest';
+﻿import { describe, it, expect } from 'vitest';
 import { ExportFormat } from '../../domain/analytics/dto/ExportOptionsDTO';
 import { ExportEngineService, GenericConceptNetworkDTO } from '../../domain/analytics/services/ExportEngineService';
 
 describe('Phase 7.0 - Export Engine Certification Tests', () => {
   const sampleNetwork: GenericConceptNetworkDTO = {
     nodes: [
-      { id: 'CONCEPT_RIVER', label: 'Псыхъуэ' },
-      { id: 'CONCEPT_WATER', label: 'Псы & 水 <Water>' }
+      { id: 'CONCEPT_RIVER', label: 'ĞŸÑÑ‹Ñ…ÑŠÑƒÑ' },
+      { id: 'CONCEPT_WATER', label: 'ĞŸÑÑ‹ & æ°´ <Water>' }
     ],
     edges: [
       { id: 'EDGE_1', source: 'CONCEPT_WATER', target: 'CONCEPT_RIVER', relationType: 'DERIVED_FROM' }
@@ -38,7 +38,7 @@ describe('Phase 7.0 - Export Engine Certification Tests', () => {
     expect(result.content).toContain('<svg xmlns="http://www.w3.org/2000/svg"');
     expect(result.content).toContain('node-CONCEPT_WATER');
     // XML Escaping verification: & -> &amp;, < -> &lt;, > -> &gt;
-    expect(result.content).toContain('Псы &amp; 水 &lt;Water&gt;');
+    expect(result.content).toContain('ĞŸÑÑ‹ &amp; æ°´ &lt;Water&gt;');
   });
 
   it('EXP-003: Produces valid PNG stub data URI format', () => {
@@ -70,9 +70,9 @@ describe('Phase 7.0 - Export Engine Certification Tests', () => {
   it('EXP-006: Preserves Unicode characters (Adyghe Cyrillic & Palochka) without corruption', () => {
     const circassianNetwork: GenericConceptNetworkDTO = {
       nodes: [
-        { id: 'C1', label: 'Псы' },
-        { id: 'C2', label: 'Псыхъуэ' },
-        { id: 'C3', label: 'КӀуэд' }
+        { id: 'C1', label: 'ĞŸÑÑ‹' },
+        { id: 'C2', label: 'ĞŸÑÑ‹Ñ…ÑŠÑƒÑ' },
+        { id: 'C3', label: 'ĞšÓ€ÑƒÑĞ´' }
       ],
       edges: []
     };
@@ -80,12 +80,12 @@ describe('Phase 7.0 - Export Engine Certification Tests', () => {
     const jsonExport = ExportEngineService.exportNetwork(circassianNetwork, { format: ExportFormat.JSON });
     const svgExport = ExportEngineService.exportNetwork(circassianNetwork, { format: ExportFormat.SVG });
 
-    expect(jsonExport.content).toContain('Псы');
-    expect(jsonExport.content).toContain('Псыхъуэ');
-    expect(jsonExport.content).toContain('КӀуэд');
+    expect(jsonExport.content).toContain('ĞŸÑÑ‹');
+    expect(jsonExport.content).toContain('ĞŸÑÑ‹Ñ…ÑŠÑƒÑ');
+    expect(jsonExport.content).toContain('ĞšÓ€ÑƒÑĞ´');
 
-    expect(svgExport.content).toContain('Псы');
-    expect(svgExport.content).toContain('Псыхъуэ');
-    expect(svgExport.content).toContain('КӀуэд');
+    expect(svgExport.content).toContain('ĞŸÑÑ‹');
+    expect(svgExport.content).toContain('ĞŸÑÑ‹Ñ…ÑŠÑƒÑ');
+    expect(svgExport.content).toContain('ĞšÓ€ÑƒÑĞ´');
   });
 });

@@ -1,6 +1,6 @@
-/**
+﻿/**
  * @file src/loader/DataChunkLoader.ts
- * @description Büyük veri paketlerini parçalar (chunk) halinde belleğe yükler.
+ * @description BÃ¼yÃ¼k veri paketlerini parÃ§alar (chunk) halinde belleÄŸe yÃ¼kler.
  */
 
 import { TranslationEntry, TranslationGroup } from "../domain/translation";
@@ -22,8 +22,8 @@ export class DataChunkLoader {
   constructor(private repository: InMemoryTranslationRepository) {}
 
   /**
-   * Büyük veri paketlerini parçalar (chunk) halinde repository'e aktarır.
-   * UI dondurmaması için mikro-görev (setImmediate/setTimeout) simülasyonu içerir.
+   * BÃ¼yÃ¼k veri paketlerini parÃ§alar (chunk) halinde repository'e aktarÄ±r.
+   * UI dondurmamasÄ± iÃ§in mikro-gÃ¶rev (setImmediate/setTimeout) simÃ¼lasyonu iÃ§erir.
    */
   async loadChunked(
     data: DatasetPayload,
@@ -33,12 +33,12 @@ export class DataChunkLoader {
     const { entries, groups = [] } = data;
     const total = entries.length;
 
-    // Grupları yükle
+    // GruplarÄ± yÃ¼kle
     if (groups.length > 0) {
       this.repository.loadGroups(groups);
     }
 
-    // Kelime girişlerini chunk'lar halinde ekle
+    // Kelime giriÅŸlerini chunk'lar halinde ekle
     for (let i = 0; i < total; i += chunkSize) {
       const chunk = entries.slice(i, i + chunkSize);
       this.repository.loadEntries(chunk);
@@ -53,7 +53,7 @@ export class DataChunkLoader {
         });
       }
 
-      // Etkinlik döngüsünü (Event Loop) serbest bırak
+      // Etkinlik dÃ¶ngÃ¼sÃ¼nÃ¼ (Event Loop) serbest bÄ±rak
       await new Promise((resolve) => setTimeout(resolve, 0));
     }
   }

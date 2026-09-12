@@ -1,6 +1,6 @@
-import { describe, it, expect, beforeEach } from "vitest";
+﻿import { describe, it, expect, beforeEach } from "vitest";
 
-// DialectRule arayüz tanımı (gerekli alanlar ile)
+// DialectRule arayÃ¼z tanÄ±mÄ± (gerekli alanlar ile)
 export interface DialectRule {
   id: string;
   fromDialect: string;
@@ -9,7 +9,7 @@ export interface DialectRule {
   replacement?: string;
 }
 
-// In-Memory Repository Sınıfı
+// In-Memory Repository SÄ±nÄ±fÄ±
 export class InMemoryDialectRuleRepository {
   private rules: DialectRule[];
 
@@ -34,7 +34,7 @@ describe("DialectRuleRepository Tests", () => {
   let repository: InMemoryDialectRuleRepository;
 
   beforeEach(() => {
-    // Örnek test verileri ile repository ilklendiriliyor
+    // Ã–rnek test verileri ile repository ilklendiriliyor
     const mockRules: DialectRule[] = [
       { id: "rule-1", fromDialect: "DOGU", toDialect: "BATI", pattern: "a", replacement: "e" },
       { id: "rule-2", fromDialect: "BATI", toDialect: "DOGU", pattern: "x", replacement: "y" }
@@ -42,17 +42,17 @@ describe("DialectRuleRepository Tests", () => {
     repository = new InMemoryDialectRuleRepository(mockRules);
   });
 
-  it("repository kurallarının doğru çalıştığını doğrular", () => {
+  it("repository kurallarÄ±nÄ±n doÄŸru Ã§alÄ±ÅŸtÄ±ÄŸÄ±nÄ± doÄŸrular", () => {
     expect(true).toBe(true);
   });
 
-  it("tüm lehçe kurallarını başarıyla getirir", async () => {
+  it("tÃ¼m lehÃ§e kurallarÄ±nÄ± baÅŸarÄ±yla getirir", async () => {
     const rules = await repository.getDialectRules();
     expect(Array.isArray(rules)).toBe(true);
     expect(rules.length).toBe(2);
   });
 
-  it("belirli kaynak ve hedef lehçelere göre kuralları getirir", async () => {
+  it("belirli kaynak ve hedef lehÃ§elere gÃ¶re kurallarÄ± getirir", async () => {
     const rules = await repository.getDialectRules("DOGU", "BATI");
     expect(rules).toBeDefined();
     expect(rules.length).toBe(1);
@@ -60,7 +60,7 @@ describe("DialectRuleRepository Tests", () => {
     expect(rules[0].toDialect).toBe("BATI");
   });
 
-  it("ID ile lehçe kuralını getirir", async () => {
+  it("ID ile lehÃ§e kuralÄ±nÄ± getirir", async () => {
     const rule = await repository.getDialectRuleById("rule-1");
     expect(rule).not.toBeNull();
     expect(rule?.id).toBe("rule-1");

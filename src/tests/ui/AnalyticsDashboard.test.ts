@@ -1,4 +1,4 @@
-import { describe, it, expect } from 'vitest';
+﻿import { describe, it, expect } from 'vitest';
 import React from 'react';
 import { AnalyticsDashboardPage } from '../../ui/pages/AnalyticsDashboardPage';
 import { NetworkAnalyticsResultDTO } from '../../domain/analytics/dto/NetworkAnalyticsDTO';

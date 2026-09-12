@@ -1,4 +1,4 @@
-export type UserRole = 'VIEWER' | 'ANALYST' | 'EDITOR' | 'ADMIN';
+﻿export type UserRole = 'VIEWER' | 'ANALYST' | 'EDITOR' | 'ADMIN';
 
 export interface LoginRequestDTO {
   username: string;

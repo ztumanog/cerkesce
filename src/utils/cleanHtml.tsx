@@ -1,4 +1,4 @@
-const ENTITY_MAP: Record<string, string> = {
+﻿const ENTITY_MAP: Record<string, string> = {
   "&nbsp;": " ",
   "&amp;": "&",
   "&lt;": "<",
@@ -6,12 +6,12 @@ const ENTITY_MAP: Record<string, string> = {
   "&quot;": '"',
   "&#39;": "'",
   "&apos;": "'",
-  "&cent;": "¢",
-  "&pound;": "£",
-  "&yen;": "¥",
-  "&euro;": "€",
-  "&copy;": "©",
-  "&reg;": "®",
+  "&cent;": "Â¢",
+  "&pound;": "Â£",
+  "&yen;": "Â¥",
+  "&euro;": "â‚¬",
+  "&copy;": "Â©",
+  "&reg;": "Â®",
 };
 
 export function temizleHtml(html: string): string {

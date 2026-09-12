@@ -1,4 +1,4 @@
-/**
+﻿/**
  * @file src/tests/ReverseTranslationSearch.test.ts
  * @description Reverse Translation Search (Anlamdan Lemmaya Arama) Testleri
  */
@@ -19,17 +19,17 @@ describe("Reverse Translation Search - Anlamdan Lemmaya Arama", () => {
     const groups: TranslationGroup[] = [
       {
         id: "TRG_WATER",
-        groupName: "Su Kavramı",
+        groupName: "Su KavramÄ±",
         entries: [],
       },
       {
         id: "TRG_HOPE",
-        groupName: "Umut Kavramı",
+        groupName: "Umut KavramÄ±",
         entries: [],
       },
       {
         id: "TRG_HEAD",
-        groupName: "Baş Kavramı",
+        groupName: "BaÅŸ KavramÄ±",
         entries: [],
       },
     ];
@@ -37,8 +37,8 @@ describe("Reverse Translation Search - Anlamdan Lemmaya Arama", () => {
     const entries: TranslationEntry[] = [
       {
         id: "ENTRY_WATER",
-        lemma: "псы",
-        normalizedLemma: "псы",
+        lemma: "Ğ¿ÑÑ‹",
+        normalizedLemma: "Ğ¿ÑÑ‹",
         dialect: "DOGU",
         groupId: "TRG_WATER",
         meanings: [
@@ -48,8 +48,8 @@ describe("Reverse Translation Search - Anlamdan Lemmaya Arama", () => {
       },
       {
         id: "ENTRY_HOPE",
-        lemma: "гугъэ",
-        normalizedLemma: "гугъэ",
+        lemma: "Ğ³ÑƒĞ³ÑŠÑ",
+        normalizedLemma: "Ğ³ÑƒĞ³ÑŠÑ",
         dialect: "BATI",
         groupId: "TRG_HOPE",
         meanings: [
@@ -59,13 +59,13 @@ describe("Reverse Translation Search - Anlamdan Lemmaya Arama", () => {
       },
       {
         id: "ENTRY_HEAD",
-        lemma: "шъхьэ",
-        normalizedLemma: "шъхьэ",
+        lemma: "ÑˆÑŠÑ…ÑŒÑ",
+        normalizedLemma: "ÑˆÑŠÑ…ÑŒÑ",
         dialect: "BATI",
         groupId: "TRG_HEAD",
         meanings: [
           { id: "m-3", language: "TR", text: "head" },
-          { id: "m-3b", language: "TR", text: "baş" },
+          { id: "m-3b", language: "TR", text: "baÅŸ" },
         ],
       },
     ];
@@ -76,106 +76,106 @@ describe("Reverse Translation Search - Anlamdan Lemmaya Arama", () => {
   });
 
   describe("Temel Reverse Arama", () => {
-    test("water → псы", async () => {
+    test("water â†’ Ğ¿ÑÑ‹", async () => {
       const result = await service.reverseTranslate("water");
 
       expect(result).not.toBeNull();
-      expect(result?.lemma).toBe("псы");
+      expect(result?.lemma).toBe("Ğ¿ÑÑ‹");
       expect(result?.meanings.some((m) => m.text === "water")).toBe(true);
     });
 
-    test("hope → гугъэ", async () => {
+    test("hope â†’ Ğ³ÑƒĞ³ÑŠÑ", async () => {
       const result = await service.reverseTranslate("hope");
 
       expect(result).not.toBeNull();
-      expect(result?.lemma).toBe("гугъэ");
+      expect(result?.lemma).toBe("Ğ³ÑƒĞ³ÑŠÑ");
       expect(result?.meanings.some((m) => m.text === "hope")).toBe(true);
     });
 
-    test("head → шъхьэ", async () => {
+    test("head â†’ ÑˆÑŠÑ…ÑŒÑ", async () => {
       const result = await service.reverseTranslate("head");
 
       expect(result).not.toBeNull();
-      expect(result?.lemma).toBe("шъхьэ");
+      expect(result?.lemma).toBe("ÑˆÑŠÑ…ÑŒÑ");
       expect(result?.meanings.some((m) => m.text === "head")).toBe(true);
     });
   });
 
-  describe("Türkçe Anlam Araması", () => {
-    test("su → псы", async () => {
+  describe("TÃ¼rkÃ§e Anlam AramasÄ±", () => {
+    test("su â†’ Ğ¿ÑÑ‹", async () => {
       const result = await service.reverseTranslate("su");
 
       expect(result).not.toBeNull();
-      expect(result?.lemma).toBe("псы");
+      expect(result?.lemma).toBe("Ğ¿ÑÑ‹");
     });
 
-    test("umut → гугъэ", async () => {
+    test("umut â†’ Ğ³ÑƒĞ³ÑŠÑ", async () => {
       const result = await service.reverseTranslate("umut");
 
       expect(result).not.toBeNull();
-      expect(result?.lemma).toBe("гугъэ");
+      expect(result?.lemma).toBe("Ğ³ÑƒĞ³ÑŠÑ");
     });
 
-    test("baş → шъхьэ", async () => {
-      const result = await service.reverseTranslate("baş");
+    test("baÅŸ â†’ ÑˆÑŠÑ…ÑŒÑ", async () => {
+      const result = await service.reverseTranslate("baÅŸ");
 
       expect(result).not.toBeNull();
-      expect(result?.lemma).toBe("шъхьэ");
+      expect(result?.lemma).toBe("ÑˆÑŠÑ…ÑŒÑ");
     });
   });
 
   describe("Case Insensitive Arama", () => {
-    test("WATER (büyük harf) → псы", async () => {
+    test("WATER (bÃ¼yÃ¼k harf) â†’ Ğ¿ÑÑ‹", async () => {
       const result = await service.reverseTranslate("WATER");
 
       expect(result).not.toBeNull();
-      expect(result?.lemma).toBe("псы");
+      expect(result?.lemma).toBe("Ğ¿ÑÑ‹");
     });
 
-    test("HoPe (karışık harf) → гугъэ", async () => {
+    test("HoPe (karÄ±ÅŸÄ±k harf) â†’ Ğ³ÑƒĞ³ÑŠÑ", async () => {
       const result = await service.reverseTranslate("HoPe");
 
       expect(result).not.toBeNull();
-      expect(result?.lemma).toBe("гугъэ");
+      expect(result?.lemma).toBe("Ğ³ÑƒĞ³ÑŠÑ");
     });
   });
 
   describe("Edge Cases", () => {
-    test("boş string sorgusu null döndürmelidir", async () => {
+    test("boÅŸ string sorgusu null dÃ¶ndÃ¼rmelidir", async () => {
       const result = await service.reverseTranslate("");
 
       expect(result).toBeNull();
     });
 
-    test("sadece boşluk sorgusu null döndürmelidir", async () => {
+    test("sadece boÅŸluk sorgusu null dÃ¶ndÃ¼rmelidir", async () => {
       const result = await service.reverseTranslate("   ");
 
       expect(result).toBeNull();
     });
 
-    test("var olmayan anlam null döndürmelidir", async () => {
+    test("var olmayan anlam null dÃ¶ndÃ¼rmelidir", async () => {
       const result = await service.reverseTranslate("nonexistent");
 
       expect(result).toBeNull();
     });
 
-    test("kısmi eşleşme (partial match) çalışmalıdır", async () => {
+    test("kÄ±smi eÅŸleÅŸme (partial match) Ã§alÄ±ÅŸmalÄ±dÄ±r", async () => {
       const result = await service.reverseTranslate("wat");
 
       expect(result).not.toBeNull();
-      expect(result?.lemma).toBe("псы");
+      expect(result?.lemma).toBe("Ğ¿ÑÑ‹");
     });
   });
 
-  describe("Lehçe Doğrulaması", () => {
-    test("döndürülen sonuç dialect bilgisini içermelidir", async () => {
+  describe("LehÃ§e DoÄŸrulamasÄ±", () => {
+    test("dÃ¶ndÃ¼rÃ¼len sonuÃ§ dialect bilgisini iÃ§ermelidir", async () => {
       const result = await service.reverseTranslate("water");
 
       expect(result?.dialect).toBeDefined();
       expect(["DOGU", "BATI"]).toContain(result?.dialect);
     });
 
-    test("döndürülen sonuç groupId bilgisini içermelidir", async () => {
+    test("dÃ¶ndÃ¼rÃ¼len sonuÃ§ groupId bilgisini iÃ§ermelidir", async () => {
       const result = await service.reverseTranslate("hope");
 
       expect(result?.groupId).toBeDefined();
@@ -183,3 +183,4 @@ describe("Reverse Translation Search - Anlamdan Lemmaya Arama", () => {
     });
   });
 });
+

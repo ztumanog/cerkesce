@@ -7,3 +7,4 @@ const controller = new ConceptNetworkController();
 discoveryRouter.get('/concept-network', controller.getConceptNetwork);
 
 export { discoveryRouter };
+

@@ -1,4 +1,4 @@
-import { describe, it, expect } from 'vitest';
+﻿import { describe, it, expect } from 'vitest';
 import { HealthCheckService } from '../../infra/http/HealthCheckService';
 
 describe('Phase 10.2 - Operational Health Check Certification', () => {
