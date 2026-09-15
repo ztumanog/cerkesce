@@ -1,4 +1,4 @@
-﻿import { describe, it, expect } from 'vitest';
+import { describe, it, expect } from 'vitest';
 import { ConceptID } from '../../../domain/concept/value-objects/ConceptID';
 
 describe('ConceptID Value Object', () => {

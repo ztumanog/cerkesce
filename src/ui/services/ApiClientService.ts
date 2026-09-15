@@ -1,4 +1,4 @@
-﻿import { GenericConceptNetworkDTO } from '../../domain/analytics/services/ExportEngineService';
+import { GenericConceptNetworkDTO } from '../../domain/analytics/services/ExportEngineService';
 import { NetworkAnalyticsResultDTO } from '../../domain/analytics/dto/NetworkAnalyticsDTO';
 import { NetworkAnalyticsService } from '../../domain/analytics/services/NetworkAnalyticsService';
 

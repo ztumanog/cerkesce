@@ -1,70 +1,294 @@
-export interface KaynakDetay {
-  id?: string;
-  ad?: string;
-  kod?: string;
+export interface RawDictionaryItem {
+  word?: string;
+  madde?: string;
+  lemma?: string;
+  spelling?: string;
+  meaning?: string;
+  definition?: string;
+  [key: string]: any;
+}
+
+export interface DictionaryMeta {
+  file?: string;
+  title?: string;
+  originalTitle?: string;
+  source?: string;
+  dialect?: string;
+  region?: string;
+  timestamp?: string;
+  confidence?: number;
+  author?: string;
+  editor?: string;
+  publisher?: string;
+  year?: number | string;
+  sourceLanguage?: string;
+  targetLanguage?: string;
+}
+
+export interface TranslationEntry {
+  language: string;
+  text: string;
+  context?: string;
+}
+
+export interface DictionaryEntry {
+  id: string;
+  word: string;
+  definition: string;
+  partOfSpeech?: string;
+  examples?: string[];
+  translations?: TranslationEntry[];
+  meta?: DictionaryMeta;
+  synonyms?: string[];
+  antonyms?: string[];
+  etymology?: string;
+  usage?: string;
+}
+
+export type LehceTipi = 
+  | 'Standart'
+  | 'Kuzey'
+  | 'Güney'
+  | 'dogu'
+  | 'bati'
+  | 'Mekezi'
+  | 'Diğer'
+  | 'Adigece'
+  | 'ady'
+  | 'Kabardeyce'
+  | string;
+
+export type SozlukTipi =
+  | 'Genel'
+  | 'Teknik'
+  | 'Tıbbi'
+  | 'Hukuki'
+  | 'Eğitim'
+  | 'Tarihsel';
+
+export interface KaynakItem {
+  title?: string;
+  sözlük?: string;
+  kaynak?: string;
+  dictionaryName?: string;
+  name?: string;
+  author?: string;
+  yazar?: string;
+  editor?: string;
+  publisher?: string;
+  basim_evi?: string;
+  year?: string | number;
+  yil?: string | number;
+  total_words?: number;
+  totalWords?: number;
+  kelimeSayisi?: number;
   kaynak_sozluk?: string;
   file?: string;
-  kaynak?: string;
-  sözlük?: string;
-  dictionaryName?: string;
   tanim?: string;
   anlam?: string;
   meaning?: string;
   full_definition_in_html?: string;
+}
+
+export interface KelimeItem {
+  id: string;
+  kelime: string;
+  madde: string;
+  anlam: string;
+  anlamlar?: string[];
+  ilkAnlam?: string;
+  kaynaklar?: KaynakItem[];
+}
+
+export interface GruplanmisKelime {
+  harf: string;
+  kelimeler: KelimeItem[];
+}
+
+export interface KelimeMeta {
+  seviye?: 'Başlangıç' | 'Orta' | 'İleri';
+  kategori?: string;
+  notlar?: string;
+  [key: string]: unknown;
+}
+
+export interface GununKelimesi {
+  id: string;
+  kelime: string;
+  anlam: string;
+  ornek?: string;
+  lehce?: LehceTipi;
+  tarih?: string;
+  meta?: KelimeMeta;
+}
+
+export interface DailyWord {
+  entry: DictionaryEntry;
+  tarih: string;
+  meta?: KelimeMeta;
+}
+
+export interface DictionaryItem {
+  id: string;
+  kelime: string;
+  madde: string;
+  anlam: string;
+  anlamlar?: string[];
+  ilkAnlam?: string;
+  kaynaklar?: KaynakItem[];
+  lehce?: LehceTipi;
+  sozluk?: SozlukTipi;
+}
+
+export interface DictionaryRawItem {
+  word?: string;
+  madde?: string;
+  lemma?: string;
+  spelling?: string;
+  meaning?: string;
+  definition?: string;
+  meanings?: string[];
+  sources?: KaynakItem[];
+  dialect?: string;
+  dictionaryType?: string;
   [key: string]: any;
 }
 
-export type KaynakItem = any;
-
-export interface DictionaryEntry {
+export interface AktifSozlukItem {
   id: string;
+  name: string;
+  type: SozlukTipi;
+  itemCount: number;
+  isActive: boolean;
+  lastUpdated?: string;
+  dialects?: LehceTipi[];
+}
+
+export interface GroupedDictionaryEntry {
   kelime: string;
-  anlam?: string;
+  anlam: string;
   meaning?: string;
   tanim?: string;
   full_definition_in_html?: string;
   sourceDictionaryId?: string;
   source?: string;
   kaynak?: string;
-  kokKelime?: string;
-  [key: string]: any;
 }
 
-export type DictionaryItem = DictionaryEntry;
-
-export interface TranslationEntry extends DictionaryEntry {
-  hedefDil?: string;
-  ceviri?: string;
-}
-
-export interface GroupedDictionaryEntry {
-  id: string;
-  kelime: string;
-  entries: DictionaryEntry[];
-  anlamlar: string[];
-  kaynaklar: any[];
-  ilkAnlam?: string;
-  kokKelime?: string;
-  [key: string]: any;
-}
-
-export interface GruplanmisKelime extends GroupedDictionaryEntry {}
-
-export interface GununKelimesiMeta {
-  etimoloji?: string;
-  ornekCumle?: string;
-  ornekCumleCeviri?: string;
-  kokKelime?: string;
-  [key: string]: any;
-}
-
-export interface GununKelimesi {
-  id?: string;
-  kelime: string;
-  anlam: string;
+export interface KaynakDetay {
+  kaynak_sozluk?: string;
+  file?: string;
+  tanim?: string;
+  anlam?: string;
+  meaning?: string;
+  full_definition_in_html?: string;
+  title?: string;
+  sözlük?: string;
   kaynak?: string;
-  lehce?: string;
-  meta?: GununKelimesiMeta | any;
-  kokKelime?: string;
-  [key: string]: any;
+  dictionaryName?: string;
+  name?: string;
+  author?: string;
+  yazar?: string;
+  year?: string | number;
+  yil?: string | number;
+  total_words?: number;
+  totalWords?: number;
+  kelimeSayisi?: number;
+}
+
+export interface DictionaryRepository {
+  findById(id: string): Promise<DictionaryEntry | null>;
+  findByWord(word: string): Promise<DictionaryEntry[]>;
+  findAll(): Promise<DictionaryEntry[]>;
+  save(entry: DictionaryEntry): Promise<void>;
+  delete(id: string): Promise<void>;
+}
+
+export interface DictionaryService {
+  search(query: string): Promise<DictionaryEntry[]>;
+  getDaily(): Promise<DailyWord>;
+  getTranslations(word: string, language: string): Promise<TranslationEntry[]>;
+}
+
+export interface DictionaryFilter {
+  lehce?: LehceTipi;
+  sozluk?: SozlukTipi;
+  partOfSpeech?: string;
+  minConfidence?: number;
+}
+
+export interface SearchResult {
+  entries: DictionaryEntry[];
+  total: number;
+  page: number;
+  pageSize: number;
+}
+
+export function isValidDictionaryEntry(obj: any): obj is DictionaryEntry {
+  return (
+    typeof obj === 'object' &&
+    obj !== null &&
+    typeof obj.id === 'string' &&
+    typeof obj.word === 'string' &&
+    typeof obj.definition === 'string'
+  );
+}
+
+export function isValidRawDictionaryItem(obj: any): obj is RawDictionaryItem {
+  return (
+    typeof obj === 'object' &&
+    obj !== null &&
+    (typeof obj.word === 'string' ||
+      typeof obj.madde === 'string' ||
+      typeof obj.lemma === 'string')
+  );
+}
+
+export function isValidGununKelimesi(obj: any): obj is GununKelimesi {
+  return (
+    typeof obj === 'object' &&
+    obj !== null &&
+    typeof obj.id === 'string' &&
+    typeof obj.kelime === 'string' &&
+    typeof obj.anlam === 'string'
+  );
+}
+
+export function isValidGruplanmisKelime(obj: any): obj is GruplanmisKelime {
+  return (
+    typeof obj === 'object' &&
+    obj !== null &&
+    typeof obj.harf === 'string' &&
+    Array.isArray(obj.kelimeler)
+  );
+}
+
+export function isValidDictionaryItem(obj: any): obj is DictionaryItem {
+  return (
+    typeof obj === 'object' &&
+    obj !== null &&
+    typeof obj.id === 'string' &&
+    typeof obj.kelime === 'string' &&
+    typeof obj.anlam === 'string'
+  );
+}
+
+export function isValidAktifSozlukItem(obj: any): obj is AktifSozlukItem {
+  return (
+    typeof obj === 'object' &&
+    obj !== null &&
+    typeof obj.id === 'string' &&
+    typeof obj.name === 'string' &&
+    typeof obj.isActive === 'boolean'
+  );
+}
+
+export function isValidKelimeItem(obj: any): obj is KelimeItem {
+  return (
+    typeof obj === 'object' &&
+    obj !== null &&
+    typeof obj.id === 'string' &&
+    typeof obj.kelime === 'string' &&
+    typeof obj.anlam === 'string'
+  );
 }

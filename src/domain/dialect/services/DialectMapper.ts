@@ -1,4 +1,4 @@
-﻿import { DialectCode } from '../types/DialectTypes';
+import { DialectCode } from '../types/DialectTypes';
 
 export interface TransformationRule {
   sourceDialect: DialectCode;

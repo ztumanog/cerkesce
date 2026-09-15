@@ -1,4 +1,4 @@
-﻿import React, { useState } from 'react';
+import React, { useState } from 'react';
 import { LayoutAlgorithm, LayoutEngineService, PositionedNetworkDTO, PositionedNodeDTO } from '../../domain/analytics/services/LayoutEngineService';
 import { ExportFormat } from '../../domain/analytics/dto/ExportOptionsDTO';
 import { ExportEngineService, GenericConceptNetworkDTO } from '../../domain/analytics/services/ExportEngineService';

@@ -1,4 +1,4 @@
-﻿import { describe, it, expect } from 'vitest';
+import { describe, it, expect } from 'vitest';
 import { FederatedGraphService, FederatedSourceNode } from '../../domain/federation/services/FederatedGraphService';
 
 describe('Phase 11.0 - Knowledge Graph Federation Certification', () => {

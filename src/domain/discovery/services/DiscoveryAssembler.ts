@@ -1,4 +1,4 @@
-﻿import { DiscoveryResultDTO } from '../dto/DiscoveryResultDTO';
+import { DiscoveryResultDTO } from '../dto/DiscoveryResultDTO';
 import { TraversalNode } from '../dto/TraversalNode';
 import { KnowledgeRanker } from './KnowledgeRanker';
 import { ContextClusterer } from './ContextClusterer';

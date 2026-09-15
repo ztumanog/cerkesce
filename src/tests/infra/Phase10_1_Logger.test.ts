@@ -1,4 +1,4 @@
-﻿import { describe, it, expect, beforeEach } from 'vitest';
+import { describe, it, expect, beforeEach } from 'vitest';
 import { LoggerService } from '../../infra/logging/LoggerService';
 
 describe('Phase 10.1 - Structured Logging Certification', () => {

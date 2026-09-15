@@ -1,4 +1,4 @@
-﻿export class MetricsService {
+export class MetricsService {
   private static counters = new Map<string, number>();
   private static histograms: Array<{ name: string; durationMs: number }> = [];
 

@@ -1,4 +1,4 @@
-﻿export interface GraphMutationEvent {
+export interface GraphMutationEvent {
   mutationId: string;
   conceptId: string;
   type: 'NODE_ADDED' | 'NODE_UPDATED' | 'EDGE_CREATED' | 'EDGE_REMOVED';

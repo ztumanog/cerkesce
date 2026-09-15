@@ -1,4 +1,4 @@
-﻿/**
+/**
  * @file src/services/TranslationService.ts
  * @description Ã‡eviri, arama, filtreleme, ters sÃ¶zlÃ¼k bakma ve kayÄ±t iÅŸlemlerini yÃ¶neten servis katmanÄ±.
  */

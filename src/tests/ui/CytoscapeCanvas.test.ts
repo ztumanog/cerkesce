@@ -1,4 +1,4 @@
-﻿import React from 'react';
+import React from 'react';
 import { describe, it, expect, vi } from 'vitest';
 
 // 1. Tip Tanımlamaları (x, y ve relationType alanları destekli)

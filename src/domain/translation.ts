@@ -24,8 +24,8 @@ export interface TranslationEntry {
   normalizedLemma?: string;
   dialect?: DialectCode;
   groupId?: string;
-  meanings: TranslationMeaning[];
-  rootLemma?: string;
+  meanings: TranslationMeaning[]; // artık sadece TranslationMeaning[]  rootLemma?: string;
+  rootLema?: string,
   frequency?: number;
   createdAt?: Date;
   updatedAt?: Date;

@@ -1,4 +1,4 @@
-﻿export class VariantId {
+export class VariantId {
   private constructor(private readonly value: string) {}
 
   public static create(id: string): VariantId {

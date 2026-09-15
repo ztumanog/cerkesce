@@ -1,4 +1,4 @@
-﻿import { Dialect } from '../Dialect';
+import { Dialect } from '../Dialect';
 import { DialectCode } from '../types/DialectTypes';
 import { Variant } from '../Variant';
 import { VariantRepository } from '../repository/VariantRepository';

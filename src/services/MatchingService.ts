@@ -1,4 +1,4 @@
-﻿/**
+/**
  * @file src/services/MorphologyAwareMatchingService.ts
  * @description Dilbilimsel ve morfolojik eÅŸleÅŸtirme servisi ana uygulamasÄ±.
  */

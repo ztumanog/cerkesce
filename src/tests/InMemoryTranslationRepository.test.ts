@@ -1,4 +1,4 @@
-﻿// src/tests/InMemoryTranslationRepository.test.ts
+// src/tests/InMemoryTranslationRepository.test.ts
 import { describe, it, expect, beforeEach } from "vitest";
 
 import { InMemoryTranslationRepository } from "../repository/InMemoryTranslationRepository";

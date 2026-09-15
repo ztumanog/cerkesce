@@ -1,4 +1,4 @@
-﻿import { describe, it, expect, beforeEach } from 'vitest';
+import { describe, it, expect, beforeEach } from 'vitest';
 import { AuthService } from '../../domain/security/services/AuthService';
 
 describe('Phase 8.0.5 - Auth & Security Foundation Certification', () => {

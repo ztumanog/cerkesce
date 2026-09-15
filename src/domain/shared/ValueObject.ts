@@ -1,4 +1,4 @@
-﻿export abstract class ValueObject<T> {
+export abstract class ValueObject<T> {
   protected readonly props: T;
 
   constructor(props: T) {

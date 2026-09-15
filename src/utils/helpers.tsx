@@ -1,4 +1,4 @@
-﻿// src/utils/helpers.tsx
+// src/utils/helpers.tsx
 
 /**
  * Nullable veya tanımsız metinleri güvenle temizleyen ve boş dizeye düşüren yardımcı fonksiyon.

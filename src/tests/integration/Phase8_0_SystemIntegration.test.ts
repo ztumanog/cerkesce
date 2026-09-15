@@ -1,4 +1,4 @@
-﻿import { describe, it, expect, beforeEach } from 'vitest';
+import { describe, it, expect, beforeEach } from 'vitest';
 import { ApiClientService } from '../../ui/services/ApiClientService';
 
 describe('Phase 8.0 - System Integration & End-to-End API Wiring Certification', () => {

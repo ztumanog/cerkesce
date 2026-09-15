@@ -1,4 +1,4 @@
-﻿import { describe, it, expect, beforeEach } from 'vitest';
+import { describe, it, expect, beforeEach } from 'vitest';
 import { InMemoryConceptRepository } from '../../../repository/InMemoryConceptRepository';
 import { MeaningGraph } from '../../../domain/concept/services/MeaningGraph';
 import { Concept } from '../../../domain/concept/Concept';
@@ -11,7 +11,7 @@ describe('Sprint 5: CE-12 - Phase 3 Concept Engine Stress & Performance', () => 
 
   beforeEach(() => {
     repo = new InMemoryConceptRepository();
-    graph = new MeaningGraph(repo);
+    graph = new MeaningGraph();
   });
 
   it('1. 10.000 Kavram ve ilişkileri başarıyla belleğe yüklenmelidir', async () => {

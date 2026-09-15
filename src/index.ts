@@ -1,4 +1,4 @@
-﻿/**
+/**
  * @file src/index.ts
  * @description Ã‡erkesÃ§e morfolojik eÅŸleÅŸtirme testleri ve ana giriÅŸ noktasÄ±.
  */

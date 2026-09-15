@@ -1,4 +1,4 @@
-﻿import { describe, it, expect } from 'vitest';
+import { describe, it, expect } from 'vitest';
 import { QuerySemanticMapper } from '../../../domain/discovery/services/QuerySemanticMapper';
 
 describe('Phase 5.3 - Query-Semantic Mapping Certification (QSM)', () => {

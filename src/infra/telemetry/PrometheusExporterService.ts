@@ -1,4 +1,4 @@
-﻿import { MetricsService } from './MetricsService';
+import { MetricsService } from './MetricsService';
 
 export class PrometheusExporterService {
   public static getPrometheusMetrics(): string {

@@ -1,4 +1,4 @@
-﻿import { DialectRule } from '../domain/dialect/DialectRule';
+import { DialectRule } from '../domain/dialect/DialectRule';
 
 export class DialectRuleRepository {
   private rules: Map<string, DialectRule> = new Map();

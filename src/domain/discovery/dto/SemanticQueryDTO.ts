@@ -1,4 +1,4 @@
-﻿import { ConceptCandidateDTO } from './ConceptCandidateDTO';
+import { ConceptCandidateDTO } from './ConceptCandidateDTO';
 
 export type SearchIntent = 'concept_lookup' | 'relation_explore' | 'context_discovery';
 

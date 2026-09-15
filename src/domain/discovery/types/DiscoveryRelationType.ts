@@ -1,4 +1,4 @@
-﻿export enum DiscoveryRelationType {
+export enum DiscoveryRelationType {
   ROOT = 'ROOT',
   SYNONYM = 'SYNONYM',
   ANTONYM = 'ANTONYM',

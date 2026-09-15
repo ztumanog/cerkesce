@@ -1,4 +1,4 @@
-﻿export interface DictionarySource {
+export interface DictionarySource {
   file: string;
   title: string;
   dialect: 'BATI' | 'DOGU' | 'western' | string;

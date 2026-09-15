@@ -1,4 +1,4 @@
-﻿import { describe, it, expect, beforeEach } from 'vitest';
+import { describe, it, expect, beforeEach } from 'vitest';
 import { ConceptFacade } from '../../services/ConceptFacade';
 import { InMemoryConceptRepository } from '../../repository/InMemoryConceptRepository';
 import { MeaningConceptLinker } from '../../domain/concept/services/MeaningConceptLinker';
@@ -15,7 +15,7 @@ describe('Phase 4: CE-15 - ConceptFacade & Cross-Lingual Search Pipeline', () =>
   beforeEach(() => {
     repo = new InMemoryConceptRepository();
     linker = new MeaningConceptLinker();
-    graph = new MeaningGraph(repo);
+    graph = new MeaningGraph();
     facade = new ConceptFacade(repo, linker, graph);
   });
 

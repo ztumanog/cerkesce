@@ -1,4 +1,4 @@
-﻿import { describe, it, expect } from 'vitest';
+import { describe, it, expect } from 'vitest';
 import { Dialect } from '../../../domain/dialect/Dialect';
 import { Variant } from '../../../domain/dialect/Variant';
 import { VariantId } from '../../../domain/dialect/value-objects/VariantId';

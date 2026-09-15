@@ -1,4 +1,4 @@
-﻿import { describe, it, expect } from 'vitest';
+import { describe, it, expect } from 'vitest';
 import { DiscoveryGatewayController } from '../../../presentation/api/DiscoveryGatewayController';
 
 describe('Phase 6.1 - REST / GraphQL Gateway Certification (API)', () => {

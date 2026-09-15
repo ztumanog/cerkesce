@@ -1,4 +1,4 @@
-﻿import { describe, it, expect } from 'vitest';
+import { describe, it, expect } from 'vitest';
 import { ContextClusterer } from '../../../domain/discovery/services/ContextClusterer';
 import { RankedRelatedConceptDTO } from '../../../domain/discovery/dto/RankedRelatedConceptDTO';
 

@@ -1,4 +1,4 @@
-﻿import { Variant } from '../Variant';
+import { Variant } from '../Variant';
 import { VariantId } from '../value-objects/VariantId';
 import { DialectCode } from '../types/DialectTypes';
 

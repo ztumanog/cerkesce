@@ -1,4 +1,4 @@
-﻿import { TraversalRequest } from '../dto/TraversalRequest';
+import { TraversalRequest } from '../dto/TraversalRequest';
 import { TraversalNode } from '../dto/TraversalNode';
 import { DepthLimiter } from '../traversal/DepthLimiter';
 import { CycleDetector } from '../traversal/CycleDetector';

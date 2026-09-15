@@ -1,4 +1,4 @@
-﻿/**
+/**
  * @file src/tests/MatchingService.test.ts
  * @description MorphologyAwareMatchingService birim testleri
  */

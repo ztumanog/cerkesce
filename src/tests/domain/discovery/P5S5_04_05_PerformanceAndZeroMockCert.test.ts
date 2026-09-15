@@ -1,7 +1,7 @@
-﻿import { describe, it, expect } from 'vitest';
+import { describe, it, expect } from 'vitest';
 import { MultilingualExplorer } from '../../../domain/discovery/services/MultilingualExplorer';
 import { GraphTraversalService } from '../../../domain/discovery/services/GraphTraversalService';
-import { ConceptID } from '../../../domain/value-objects/ConceptID';
+import { ConceptID } from '../../../domain/concept/value-objects/ConceptID';
 import { DiscoveryRelationType } from '../../../domain/discovery/types/DiscoveryRelationType';
 
 class ProductionTranslationRepository {

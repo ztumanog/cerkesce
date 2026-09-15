@@ -1,4 +1,4 @@
-﻿/**
+/**
  * @file src/domain/IDialectRuleRepository.ts
  * @description Diyalekt kurallarÄ±na eriÅŸim iÃ§in Repository arayÃ¼z tanÄ±mÄ±.
  */

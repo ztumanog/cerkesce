@@ -1,4 +1,4 @@
-﻿import { describe, it, expect } from 'vitest';
+import { describe, it, expect } from 'vitest';
 import { KnowledgeRanker } from '../../../domain/discovery/services/KnowledgeRanker';
 import { TraversalNode } from '../../../domain/discovery/dto/TraversalNode';
 import { DiscoveryRelationType } from '../../../domain/discovery/types/DiscoveryRelationType';

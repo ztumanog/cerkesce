@@ -1,4 +1,4 @@
-﻿import { RelationDirection, RelationProps, RelationType } from '../types/ConceptRelation';
+import { RelationDirection, RelationProps, RelationType } from '../types/ConceptRelation';
 
 export class ConceptRelation {
   private readonly props: RelationProps;

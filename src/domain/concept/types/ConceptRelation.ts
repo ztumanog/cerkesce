@@ -1,4 +1,4 @@
-﻿export enum RelationType {
+export enum RelationType {
   SYNONYM = 'SYNONYM',
   ANTONYM = 'ANTONYM',
   HYPONYM = 'HYPONYM',

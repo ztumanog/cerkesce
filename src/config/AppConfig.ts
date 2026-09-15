@@ -1,4 +1,4 @@
-﻿export interface AppEnvironmentConfig {
+export interface AppEnvironmentConfig {
   env: 'development' | 'staging' | 'production';
   version: string;
   apiBaseUrl: string;

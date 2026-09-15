@@ -1,68 +1,90 @@
-﻿'use client';
+'use client';
 
-import React, { useState } from 'react';
-import { Sun, Moon } from 'lucide-react';
-import { useTheme } from '@/components/ThemeProvider';
-
-function CircassianFlagIcon({ className = "w-4 h-4" }: { className?: string }) {
-  return (
-    <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" className={className}>
-      <circle cx="18" cy="46" r="2.5" fill="#FACC15" /><circle cx="22" cy="36" r="2.5" fill="#FACC15" />
-      <circle cx="28" cy="27" r="2.5" fill="#FACC15" /><circle cx="38" cy="20" r="2.5" fill="#FACC15" />
-      <circle cx="50" cy="17" r="2.5" fill="#FACC15" /><circle cx="62" cy="20" r="2.5" fill="#FACC15" />
-      <circle cx="72" cy="27" r="2.5" fill="#FACC15" /><circle cx="78" cy="36" r="2.5" fill="#FACC15" />
-      <circle cx="82" cy="46" r="2.5" fill="#FACC15" /><circle cx="36" cy="35" r="2.5" fill="#FACC15" />
-      <circle cx="50" cy="31" r="2.5" fill="#FACC15" /><circle cx="64" cy="35" r="2.5" fill="#FACC15" />
-      <path d="M50 82 L50 44" stroke="#FACC15" strokeWidth="3.5" strokeLinecap="round" />
-      <path d="M50 38 L45 48 H55 Z" fill="#FACC15" />
-      <path d="M28 46 L72 78" stroke="#FACC15" strokeWidth="3.5" strokeLinecap="round" />
-      <path d="M23 42 L34 44 L28 53 Z" fill="#FACC15" />
-      <path d="M72 46 L28 78" stroke="#FACC15" strokeWidth="3.5" strokeLinecap="round" />
-      <path d="M77 42 L72 53 L66 44 Z" fill="#FACC15" />
-    </svg>
-  );
-}
+import { useState, useEffect } from 'react';
 
 export default function Header() {
-  const { theme, toggleTheme } = useTheme();
-  const [fontSize, setFontSize] = useState<number>(14);
+  const [theme, setTheme] = useState<'dark' | 'light'>('dark');
+  const [fontSize, setFontSize] = useState<number>(17);
 
-  const applyFontSize = (size: number) => {
-    setFontSize(size);
-    document.documentElement.style.setProperty('--user-font-size', `${size}px`);
+  // Sayfa yüklendiğinde hafızadaki tercihleri oku
+  useEffect(() => {
+    const savedTheme = localStorage.getItem('theme') as 'dark' | 'light' | null;
+    if (savedTheme) {
+      setTheme(savedTheme);
+    }
+
+    const savedFontSize = localStorage.getItem('fontSize');
+    if (savedFontSize) {
+      setFontSize(Number(savedFontSize));
+    }
+  }, []);
+
+  // Tema değişimi ve localStorage senkronizasyonu
+  useEffect(() => {
+    const root = document.documentElement;
+    if (theme === 'dark') {
+      root.classList.add('dark');
+    } else {
+      root.classList.remove('dark');
+    }
+    localStorage.setItem('theme', theme);
+  }, [theme]);
+
+  // Font boyutu değişimi ve localStorage senkronizasyonu
+  useEffect(() => {
+    document.documentElement.style.fontSize = `${fontSize}px`;
+    localStorage.setItem('fontSize', String(fontSize));
+  }, [fontSize]);
+
+  const toggleTheme = () => {
+    setTheme((prev) => (prev === 'dark' ? 'light' : 'dark'));
+  };
+
+  const decreaseFont = () => {
+    setFontSize((prev) => Math.max(13, prev - 1));
+  };
+
+  const increaseFont = () => {
+    setFontSize((prev) => Math.min(23, prev + 1));
   };
 
   return (
-    <header className="w-full bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 py-0.5 px-3 transition-colors duration-200">
-      <div className="max-w-6xl mx-auto flex items-center justify-between gap-1 h-7">
-        <div className="flex items-center gap-1.5">
-          <div className="w-5 h-5 rounded bg-[#006A3B] flex items-center justify-center shadow-sm shrink-0 border border-emerald-600">
-            <CircassianFlagIcon className="w-3.5 h-3.5" />
+    <header className="border-b border-slate-200 dark:border-slate-800 px-4 py-4 sm:px-8 bg-white/90 dark:bg-[#090d16]/90 backdrop-blur-md sticky top-0 z-50 transition-colors">
+      <div className="max-w-4xl mx-auto flex items-center justify-between gap-4">
+        {/* Logo ve Başlık */}
+        <div className="flex items-center gap-3">
+          <div className="w-11 h-11 rounded-xl bg-emerald-100 dark:bg-emerald-950/80 border border-emerald-500/30 dark:border-emerald-600/50 flex items-center justify-center text-emerald-700 dark:text-emerald-400 font-bold text-xl shrink-0">
+            ❊
           </div>
-          <div className="flex items-baseline gap-1">
-            <h1 className="text-xs font-bold text-slate-900 dark:text-white leading-none">
+          <div>
+            <h1 className="text-lg font-bold text-slate-900 dark:text-white leading-tight">
               Çerkesçe Sözlük
             </h1>
-            <span className="text-[10px] font-medium text-emerald-700 dark:text-emerald-400 hidden sm:inline">
-              • Адыгэбзэ Псалъалъэ
-            </span>
+            <p className="text-xs text-slate-600 dark:text-slate-300">
+              Адыгэбзэ Псалъалъэ
+            </p>
           </div>
         </div>
 
-        <div className="flex items-center gap-1 shrink-0">
-          <div className="flex items-center border border-slate-200 dark:border-slate-700 rounded bg-slate-50 dark:bg-slate-800 px-1 text-[10px] h-5">
+        {/* Font Boyutu ve Tema Kontrolleri */}
+        <div className="flex items-center gap-2 bg-slate-100 dark:bg-[#131b2e] p-1.5 rounded-xl border border-slate-300 dark:border-slate-700">
+          <div className="flex items-center text-sm font-mono text-slate-700 dark:text-slate-200 px-1">
             <button
-              onClick={() => applyFontSize(Math.max(fontSize - 2, 12))}
-              className="px-0.5 hover:bg-slate-200 dark:hover:bg-slate-700 rounded font-bold text-slate-700 dark:text-slate-200"
+              onClick={decreaseFont}
+              className="px-2 py-1 hover:bg-slate-200 dark:hover:bg-slate-700 rounded-lg transition-colors font-bold whitespace-nowrap active:scale-95"
+              title="Metni Küçült"
+              aria-label="Yazı boyutunu küçült"
             >
               -A
             </button>
-            <span className="px-1 font-semibold text-slate-500 dark:text-slate-400 border-x border-slate-200 dark:border-slate-700 leading-none">
+            <span className="px-2 py-1 text-slate-600 dark:text-slate-300 border-x border-slate-300 dark:border-slate-700 mx-1 font-semibold min-w-[48px] text-center">
               {fontSize}px
             </span>
             <button
-              onClick={() => applyFontSize(Math.min(fontSize + 2, 22))}
-              className="px-0.5 hover:bg-slate-200 dark:hover:bg-slate-700 rounded font-bold text-slate-700 dark:text-slate-200"
+              onClick={increaseFont}
+              className="px-2 py-1 hover:bg-slate-200 dark:hover:bg-slate-700 rounded-lg transition-colors font-bold whitespace-nowrap active:scale-95"
+              title="Metni Büyüt"
+              aria-label="Yazı boyutunu büyüt"
             >
               +A
             </button>
@@ -70,19 +92,11 @@ export default function Header() {
 
           <button
             onClick={toggleTheme}
-            className="h-5 px-1.5 rounded border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-700 flex items-center gap-1 text-[10px] font-medium transition-colors"
+            className="flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold text-amber-700 dark:text-amber-300 bg-amber-500/10 hover:bg-amber-500/20 rounded-lg transition-colors border border-amber-500/30 whitespace-nowrap"
+            aria-label="Temayı değiştir"
           >
-            {theme === 'dark' ? (
-              <>
-                <Sun className="w-3 h-3 text-yellow-400" />
-                <span className="hidden sm:inline">Aydınlık</span>
-              </>
-            ) : (
-              <>
-                <Moon className="w-3 h-3 text-slate-600 dark:text-slate-300" />
-                <span className="hidden sm:inline">Karanlık</span>
-              </>
-            )}
+            <span>{theme === 'dark' ? '☀' : '🌙'}</span>
+            <span>{theme === 'dark' ? 'Aydınlık' : 'Karanlık'}</span>
           </button>
         </div>
       </div>

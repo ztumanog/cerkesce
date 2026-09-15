@@ -1,4 +1,4 @@
-﻿/**
+/**
  * @file src/repository/ITranslationRepository.ts
  * @description ADR-0007 standardÄ±na uygun Repository ArayÃ¼zÃ¼ - KapsamlÄ± Versiyon
  * 

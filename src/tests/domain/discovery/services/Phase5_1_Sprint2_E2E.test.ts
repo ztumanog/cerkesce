@@ -1,4 +1,4 @@
-﻿import { describe, it, expect, beforeEach } from "vitest";
+import { describe, it, expect, beforeEach } from "vitest";
 import { DiscoveryAssembler } from "../../../../domain/discovery/services/DiscoveryAssembler";
 import { GraphTraversalService } from "../../../../domain/discovery/services/GraphTraversalService";
 import { RelatedConceptResolver } from "../../../../domain/discovery/services/RelatedConceptResolver";
@@ -36,7 +36,7 @@ describe("Phase 5.1 Sprint 2: E2E Knowledge Discovery Pipeline", () => {
 
     traversalService = new GraphTraversalService(mockRepo);
     resolver = new RelatedConceptResolver();
-    assembler = new DiscoveryAssembler(resolver);
+    assembler = new DiscoveryAssembler();
   });
 
   it("Ham graf düğümlerini çözümlemeli ve DiscoveryResultDTO v2 olarak doğru monte etmelidir", () => {

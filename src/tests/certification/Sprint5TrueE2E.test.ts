@@ -1,4 +1,4 @@
-﻿import { describe, it, expect, beforeEach } from 'vitest';
+import { describe, it, expect, beforeEach } from 'vitest';
 import { MultilingualExplorer } from '../../domain/discovery/services/MultilingualExplorer';
 import { GraphTraversalService } from '../../domain/discovery/services/GraphTraversalService';
 import { DiscoveryAssembler } from '../../domain/discovery/services/DiscoveryAssembler';

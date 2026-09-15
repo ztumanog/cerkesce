@@ -1,1 +1,1 @@
-﻿export * from './Concept';
+export * from './Concept';

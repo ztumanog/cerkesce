@@ -1,4 +1,4 @@
-﻿export interface ApiKeyPolicy {
+export interface ApiKeyPolicy {
   key: string;
   tier: 'FREE' | 'PRO' | 'ENTERPRISE';
   rateLimitPerMin: number;

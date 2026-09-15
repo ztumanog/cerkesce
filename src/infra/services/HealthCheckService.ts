@@ -1,4 +1,4 @@
-﻿import { AppConfig } from '../../config/AppConfig';
+import { AppConfig } from '../../config/AppConfig';
 
 export interface SubsystemStatus {
   status: 'UP' | 'DOWN';

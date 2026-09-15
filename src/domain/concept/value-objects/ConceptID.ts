@@ -1,4 +1,4 @@
-﻿export class ConceptID {
+export class ConceptID {
   private readonly value: string;
 
   private constructor(id: string) {

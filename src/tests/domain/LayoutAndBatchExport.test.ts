@@ -1,4 +1,4 @@
-﻿import { describe, it, expect } from 'vitest';
+import { describe, it, expect } from 'vitest';
 import { LayoutEngineService } from '../../domain/analytics/services/LayoutEngineService';
 import { BatchExportService } from '../../domain/analytics/services/BatchExportService';
 import { ExportFormat } from '../../domain/analytics/dto/ExportOptionsDTO';

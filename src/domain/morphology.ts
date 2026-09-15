@@ -1,4 +1,4 @@
-﻿/**
+/**
  * @file src/domain/morphology.ts
  * @description Ã‡erkesÃ§e morfolojik analiz veri yapÄ±larÄ±, segmentler ve arayÃ¼z tanÄ±mlarÄ±.
  */

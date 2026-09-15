@@ -1,4 +1,4 @@
-﻿import type { ConceptID } from '../domain/concept/value-objects/ConceptID';
+import type { ConceptID } from '../domain/concept/value-objects/ConceptID';
 
 export interface ConceptRelation {
   id: string;

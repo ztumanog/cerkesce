@@ -1,4 +1,4 @@
-﻿import { DialectCode } from './types/DialectTypes';
+import { DialectCode } from './types/DialectTypes';
 import { VariantId } from './value-objects/VariantId';
 
 export interface VariantProps {

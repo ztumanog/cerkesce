@@ -1,4 +1,4 @@
-﻿import React, { useState } from 'react';
+import React, { useState } from 'react';
 import { ConceptNetworkDTO } from '../../domain/discovery/dto/ConceptNetworkDTO';
 import { CytoscapeAdapter, CytoscapeElement } from '../adapters/CytoscapeAdapter';
 import { GraphMerger } from '../../domain/discovery/services/GraphMerger';

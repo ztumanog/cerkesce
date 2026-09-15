@@ -1,4 +1,4 @@
-﻿/**
+/**
  * @file src/domain/grammar.ts
  * @description Ã‡erkesÃ§e Ses ve Dilbilgisi KurallarÄ± Tipleri.
  */

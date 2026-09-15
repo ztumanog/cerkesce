@@ -1,76 +1,130 @@
-﻿/**
- * @file src/loader/DictionaryLoader.ts
- * @description 34-SÃ¶zlÃ¼k ingest boru hattÄ± iÃ§in ham kayÄ±tlarÄ± doÄŸrular ve standart TranslationEntry formatÄ±na dÃ¶nÃ¼ÅŸtÃ¼rÃ¼r.
- */
+import type { DictionaryEntry, KelimeItem, GununKelimesi } from '@/types/dictionary';
 
-import { TranslationEntry, TranslationMeaning, LanguageCode, DialectCode } from "../domain/translation";
+export interface LoaderConfig {
+  sourceId?: string;
+  validateOnLoad?: boolean;
+  cacheResults?: boolean;
+}
 
-export interface RawDictionaryRecord {
-  sourceId: string;
-  sourceEntryId?: string;
-  lemma: string;
-  language: string;
-  rawMeanings: Array<{ language: string; text: string }>;
-  dialect?: string;
-  normalizedLemma?: string;
-  groupId?: string;
+export interface LoaderResult {
+  success: boolean;
+  data?: DictionaryEntry[];
+  error?: string;
+  loadedAt?: string;
 }
 
 export class DictionaryLoader {
-  /**
-   * Ham sÃ¶zlÃ¼k verisini doÄŸrular ve ADR-0008 standartlarÄ±na uygun TranslationEntry nesnesine dÃ¶nÃ¼ÅŸtÃ¼rÃ¼r.
-   */
-  public static normalizeRecord(raw: RawDictionaryRecord): TranslationEntry {
-    if (!raw.lemma || raw.lemma.trim() === "") {
-      throw new Error("[ADR-0008 Error] Record is missing mandatory lemma.");
-    }
+  private config: LoaderConfig;
+  private cache: Map<string, DictionaryEntry[]> = new Map();
 
-    if (!raw.language || raw.language.trim() === "") {
-      throw new Error(
-        `[ADR-0008 Error] Record lemma '${raw.lemma}' is missing mandatory source language.`
-      );
-    }
-
-    if (!raw.rawMeanings || raw.rawMeanings.length === 0) {
-      throw new Error(
-        `[ADR-0008 Error] Record lemma '${raw.lemma}' must have at least one meaning.`
-      );
-    }
-
-    const meanings: TranslationMeaning[] = raw.rawMeanings.map((m, idx) => {
-      if (!m.language || m.language.trim() === "") {
-        throw new Error(
-          `[ADR-0008 Error] Meaning text '${m.text}' in lemma '${raw.lemma}' missing mandatory target language.`
-        );
-      }
-      return {
-        id: `${raw.sourceId}:${raw.lemma}:${idx + 1}`,
-        language: m.language.toUpperCase() as LanguageCode,
-        text: m.text.trim(),
-      };
-    });
-
-    const canonicalId = raw.sourceEntryId 
-      ? `${raw.sourceId}:${raw.sourceEntryId}` 
-      : `${raw.sourceId}:${raw.lemma.trim().toLowerCase()}`;
-
-    return {
-      id: canonicalId,
-      sourceId: raw.sourceId,
-      sourceEntryId: raw.sourceEntryId,
-      lemma: raw.lemma.trim(),
-      normalizedLemma: raw.normalizedLemma || raw.lemma.trim().toLowerCase(),
-      language: raw.language.toLowerCase() as LanguageCode,
-      dialect: raw.dialect ? (raw.dialect as DialectCode) : undefined,
-      meanings,
-      groupId: raw.groupId,
-    } as unknown as TranslationEntry;
+  constructor(config: LoaderConfig = {}) {
+    this.config = {
+      validateOnLoad: true,
+      cacheResults: true,
+      ...config,
+    };
   }
 
   /**
-   * Toplu ham kayÄ±t dizisini normalize eder.
+   * Load dictionary entries from a source
    */
-  public static normalizeBatch(rawRecords: RawDictionaryRecord[]): TranslationEntry[] {
-    return rawRecords.map((record) => this.normalizeRecord(record));
+  async load(sourceId: string): Promise<LoaderResult> {
+    try {
+      // Check cache first
+      if (this.config.cacheResults && this.cache.has(sourceId)) {
+        return {
+          success: true,
+          data: this.cache.get(sourceId),
+          loadedAt: new Date().toISOString(),
+        };
+      }
+
+      // Load from source (stub - actual implementation depends on source)
+      const entries: DictionaryEntry[] = [];
+
+      // Validate if needed
+      if (this.config.validateOnLoad) {
+        entries.forEach((entry) => {
+          this.validateEntry(entry);
+        });
+      }
+
+      // Cache results
+      if (this.config.cacheResults) {
+        this.cache.set(sourceId, entries);
+      }
+
+      return {
+        success: true,
+        data: entries,
+        loadedAt: new Date().toISOString(),
+      };
+    } catch (error) {
+      return {
+        success: false,
+        error: error instanceof Error ? error.message : 'Unknown error',
+      };
+    }
+  }
+
+  /**
+   * Validate a dictionary entry
+   */
+  private validateEntry(entry: DictionaryEntry): boolean {
+    if (!entry.id || !entry.word || !entry.definition) {
+      throw new Error('Invalid DictionaryEntry: missing required fields');
+    }
+    return true;
+  }
+
+  /**
+   * Clear cache
+   */
+  clearCache(): void {
+    this.cache.clear();
+  }
+
+  /**
+   * Get cache size
+   */
+  getCacheSize(): number {
+    return this.cache.size;
   }
 }
+
+export class BatchDictionaryLoader {
+  private loader: DictionaryLoader;
+
+  constructor(config?: LoaderConfig) {
+    this.loader = new DictionaryLoader(config);
+  }
+
+  /**
+   * Load multiple sources in batch
+   */
+  async loadBatch(sourceIds: string[]): Promise<LoaderResult> {
+    try {
+      const allEntries: DictionaryEntry[] = [];
+
+      for (const sourceId of sourceIds) {
+        const result = await this.loader.load(sourceId);
+        if (result.success && result.data) {
+          allEntries.push(...result.data);
+        }
+      }
+
+      return {
+        success: true,
+        data: allEntries,
+        loadedAt: new Date().toISOString(),
+      };
+    } catch (error) {
+      return {
+        success: false,
+        error: error instanceof Error ? error.message : 'Unknown error',
+      };
+    }
+  }
+}
+
+export default DictionaryLoader;

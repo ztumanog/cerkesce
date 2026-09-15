@@ -1,12 +1,73 @@
 'use client';
 
 import React, { useEffect, useState } from 'react';
+import { selectDailyWord, getTodayDateString } from '@/utils/dailyWordEngine';
 import type { GununKelimesi } from '@/types/dictionary';
+import type { RawDictionaryEntry } from '@/utils/dailyWordEngine';
 
 interface GununKelimesiKartProps {
   veri?: GununKelimesi;
   className?: string;
 }
+
+const KELIMELER_VERITABANI: RawDictionaryEntry[] = [
+  {
+    id: '1',
+    lemma: 'СиIэшIу',
+    translation: 'Tatlım, canım',
+    dialect: 'Adigece',
+    examples: [{ text: 'СиIэшIу, уэ дахэ?', translation: 'Tatlım, nasılsın?' }],
+    etymology: 'Adıgece kökenli',
+  },
+  {
+    id: '2',
+    lemma: 'адыгэ',
+    translation: 'Çerkes, Adıgeli',
+    dialect: 'Adigece',
+    examples: [{ text: 'Адыгэ адыгабзэ ихьэу.', translation: 'Çerkesçe konuşuyorum.' }],
+    etymology: 'Proto-Kafkas kökünden',
+  },
+  {
+    id: '3',
+    lemma: 'адыгабзэ',
+    translation: 'Adıgece dili',
+    dialect: 'Adigece',
+    examples: [{ text: 'Адыгабзэ щIалэ.', translation: 'Adıgece güzeldir.' }],
+    etymology: 'Adıgece + dil anlamında',
+  },
+  {
+    id: '4',
+    lemma: 'нарт',
+    translation: 'Kahraman, efsanevi figür',
+    dialect: 'Kabardeyce',
+    examples: [{ text: 'Нартхэр щIалэ.', translation: 'Nartlar efsanevi.' }],
+    etymology: 'Eski Kafkas mitolojisinden',
+  },
+  {
+    id: '5',
+    lemma: 'къэбэрдей',
+    translation: 'Kabarday, Kabardeyce',
+    dialect: 'Kabardeyce',
+    examples: [{ text: 'Къэбэрдей хабзэ.', translation: 'Kabarday geleneği.' }],
+    etymology: 'Kafkas kökenli',
+  },
+  {
+    id: '6',
+    lemma: 'адыгэ хабзэ',
+    translation: 'Adıgece geleneği, adab-ı muaşeret',
+    dialect: 'Adigece',
+    examples: [{ text: 'Адыгэ хабзэ щIалэ.', translation: 'Adıgece geleneği güzeldir.' }],
+    etymology: 'Adıgece + gelenek',
+  },
+  {
+    id: '7',
+    lemma: 'къэбэрдей хабзэ',
+    translation: 'Kabarday geleneği',
+    dialect: 'Kabardeyce',
+    examples: [{ text: 'Къэбэрдей хабзэ щIалэ.', translation: 'Kabarday geleneği güzeldir.' }],
+    etymology: 'Kabarday + gelenek',
+  },
+];
 
 export default function GununKelimesiKart({
   veri,
@@ -15,95 +76,38 @@ export default function GununKelimesiKart({
   const [bugunKelimesi, setBugunKelimesi] = useState<GununKelimesi | null>(null);
   const [loading, setLoading] = useState(true);
 
-  // GÜNÜN KELİMESİ VERİLERİ
-  const kelimeler: GununKelimesi[] = [
-    {
-      id: '1',
-      kelime: 'СиIэшIу',
-      anlam: 'Tatlım, canım',
-      lehce: 'Adigece',
-      tarih: new Date().toISOString(),
-      meta: {
-        etimoloji: 'Adıgece kökenli',
-        ornekCumle: 'СиIэшIу, уэ дахэ?',
-        ornekCumleCeviri: 'Tatlım, nasılsın?',
-      },
-    },
-    {
-      id: '2',
-      kelime: 'адыгэ',
-      anlam: 'Çerkes, Adıgeli',
-      lehce: 'Adigece',
-      tarih: new Date().toISOString(),
-      meta: {
-        etimoloji: 'Proto-Kafkas kökünden',
-        ornekCumle: 'Адыгэ адыгабзэ ихьэу.',
-        ornekCumleCeviri: 'Çerkesçe konuşuyorum.',
-      },
-    },
-    {
-      id: '3',
-      kelime: 'адыгабзэ',
-      anlam: 'Adıgece dili',
-      lehce: 'Adigece',
-      tarih: new Date().toISOString(),
-      meta: {
-        etimoloji: 'Adıgece + dil anlamında',
-      },
-    },
-    {
-      id: '4',
-      kelime: 'нарт',
-      anlam: 'Kahraman, efsanevi figür',
-      lehce: 'Kabardeyce',
-      tarih: new Date().toISOString(),
-      meta: {
-        etimoloji: 'Eski Kafkas mitolojisinden',
-      },
-    },
-    {
-      id: '5',
-      kelime: 'къэбэрдей',
-      anlam: 'Kabarday, Kabardeyce',
-      lehce: 'Kabardeyce',
-      tarih: new Date().toISOString(),
-    },
-    {
-      id: '6',
-      kelime: 'адыгэ хабзэ',
-      anlam: 'Adıgece geleneği, adab-ı muaşeret',
-      lehce: 'Adigece',
-      tarih: new Date().toISOString(),
-      meta: {
-        etimoloji: 'Adıgece + gelenek',
-      },
-    },
-    {
-      id: '7',
-      kelime: 'къэбэрдей хабзэ',
-      anlam: 'Kabarday geleneği',
-      lehce: 'Kabardeyce',
-      tarih: new Date().toISOString(),
-    },
-  ];
-
   useEffect(() => {
-    // Eğer veri gönderildiyse onu kullan
     if (veri) {
       setBugunKelimesi(veri);
       setLoading(false);
       return;
     }
 
-    // Yoksa rastgele seç
-    const rastgeleIndex = Math.floor(Math.random() * kelimeler.length);
-    const secilen = kelimeler[rastgeleIndex];
-    
-    console.log('🎲 Rastgele kelime seçildi:', secilen.kelime);
-    
-    setBugunKelimesi(secilen);
+    const today = getTodayDateString();
+    const selected = selectDailyWord(KELIMELER_VERITABANI, today);
+
+    if (selected) {
+      const kelime: GununKelimesi = {
+        id: selected.id,
+        kelime: selected.kelime,
+        anlam: selected.anlam,
+        lehce: selected.lehce,
+        tarih: selected.tarih,
+        meta: {
+          seviye: 'Başlangıç',
+          kategori: selected.meta?.kategori,
+          notlar: selected.meta?.notlar,
+        },
+      };
+
+      setBugunKelimesi(kelime);
+      console.log('✅ Günün Kelimesi Seçildi:', kelime.kelime);
+    } else {
+      console.warn('⚠️ Kelime seçilemedi');
+    }
+
     setLoading(false);
-  }, []); // ← BOŞA BAĞLA (sadece mount'da çalış)
+  }, [veri]);
 
   if (loading || !bugunKelimesi) {
     return (
@@ -120,7 +124,6 @@ export default function GununKelimesiKart({
     <article
       className={`p-6 rounded-2xl bg-gradient-to-br from-indigo-50 to-purple-50 dark:from-indigo-950/30 dark:to-purple-950/30 border border-indigo-200 dark:border-indigo-800 shadow-sm transition-all hover:shadow-md ${className}`}
     >
-      {/* HEADER */}
       <header className="flex justify-between items-center mb-4">
         <span className="text-xs font-semibold uppercase tracking-wider text-indigo-600 dark:text-indigo-300 bg-indigo-100 dark:bg-indigo-900/50 px-3 py-1 rounded-full border border-indigo-200 dark:border-indigo-700">
           ✨ Günün Kelimesi
@@ -130,7 +133,6 @@ export default function GununKelimesiKart({
         </span>
       </header>
 
-      {/* KELİME VE ANLAM */}
       <div className="space-y-2 mb-4">
         <h3 className="text-3xl font-bold text-indigo-900 dark:text-indigo-100">
           {kelime}
@@ -140,36 +142,28 @@ export default function GununKelimesiKart({
         </p>
       </div>
 
-      {/* ÖRNEK CUMLE */}
-      {meta?.ornekCumle && (
+      {meta?.notlar && (
         <figure className="mt-4 pt-4 border-t border-indigo-200 dark:border-indigo-800 bg-white/50 dark:bg-slate-900/30 p-3 rounded-xl">
           <blockquote className="text-sm font-medium text-slate-800 dark:text-slate-200 italic">
-            &ldquo;{meta.ornekCumle}&rdquo;
+            &ldquo;{meta.notlar}&rdquo;
           </blockquote>
-          {meta.ornekCumleCeviri && (
-            <figcaption className="text-xs text-slate-600 dark:text-slate-400 mt-1">
-              {meta.ornekCumleCeviri}
-            </figcaption>
-          )}
         </figure>
       )}
 
-      {/* ETİMOLOJİ */}
-      {meta?.etimoloji && (
+      {meta?.kategori && (
         <footer className="mt-4 text-xs text-slate-500 dark:text-slate-400">
-          <span>📖 Etimoloji: </span>
+          <span>📖 Etymoloji: </span>
           <span className="text-slate-700 dark:text-slate-300 font-medium">
-            {meta.etimoloji}
+            {meta.kategori}
           </span>
         </footer>
       )}
 
-      {/* KÖK KELİME */}
-      {meta?.kokKelime && (
+      {meta?.seviye && (
         <div className="mt-2 text-xs text-slate-500 dark:text-slate-400">
-          <span>🌳 Kök Kelime: </span>
+          <span>📚 Seviye: </span>
           <span className="text-slate-700 dark:text-slate-300 font-medium">
-            {meta.kokKelime}
+            {meta.seviye}
           </span>
         </div>
       )}

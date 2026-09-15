@@ -1,4 +1,4 @@
-﻿export const defaultCytoscapeStyle: any[] = [
+export const defaultCytoscapeStyle: any[] = [
   // Genel Düğüm Stili
   {
     selector: 'node',

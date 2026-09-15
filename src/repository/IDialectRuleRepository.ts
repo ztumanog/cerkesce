@@ -1,4 +1,4 @@
-﻿/**
+/**
  * @file src/repository/IDialectRuleRepository.ts
  * @description LehÃ§e deÄŸiÅŸim kurallarÄ±na (DialectRule) eriÅŸim saÄŸlayan Repository SÃ¶zleÅŸmesi (Interface).
  */

@@ -1,4 +1,4 @@
-﻿/** 
+/** 
  * @file src/domain/concept/services/MeaningConceptLinker.ts 
  * @description Phase 2 Meaning ID ile Phase 3 Concept ID arasında köprü servisi. 
  */

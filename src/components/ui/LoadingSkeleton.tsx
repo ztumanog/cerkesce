@@ -1,4 +1,4 @@
-﻿export const LoadingSkeleton = () => {
+export const LoadingSkeleton = () => {
   return (
     <div
       role="status"

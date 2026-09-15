@@ -1,4 +1,4 @@
-﻿import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { PositionedNetworkDTO, PositionedNodeDTO } from '../../../domain/analytics/services/LayoutEngineService';
 
 export interface CytoscapeCanvasProps {

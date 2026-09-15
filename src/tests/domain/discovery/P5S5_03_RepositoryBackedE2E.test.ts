@@ -1,7 +1,7 @@
-﻿import { describe, it, expect } from 'vitest';
+import { describe, it, expect } from 'vitest';
 import { MultilingualExplorer } from '../../../domain/discovery/services/MultilingualExplorer';
 import { Concept } from '../../../domain/concept/Concept';
-import { ConceptID } from '../../../domain/value-objects/ConceptID';
+import { ConceptID } from '../../../domain/concept/value-objects/ConceptID';
 import { DiscoveryRelationType } from '../../../domain/discovery/types/DiscoveryRelationType';
 
 // Real In-Memory Repository Adapters for P5S5-03

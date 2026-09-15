@@ -1,4 +1,4 @@
-﻿import { Concept } from '../Concept';
+import { Concept } from '../Concept';
 import { ConceptID } from '../value-objects/ConceptID';
 
 export interface ConceptRepository {

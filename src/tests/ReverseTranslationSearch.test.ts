@@ -1,4 +1,4 @@
-﻿/**
+/**
  * @file src/tests/ReverseTranslationSearch.test.ts
  * @description Reverse Translation Search (Anlamdan Lemmaya Arama) Testleri
  */

@@ -1,4 +1,4 @@
-﻿export interface RenderOptions {
+export interface RenderOptions {
   width: number;
   height: number;
   backgroundColor?: string;

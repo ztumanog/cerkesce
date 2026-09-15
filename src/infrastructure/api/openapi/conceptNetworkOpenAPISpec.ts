@@ -1,4 +1,4 @@
-﻿export const conceptNetworkOpenAPISpec = {
+export const conceptNetworkOpenAPISpec = {
   openapi: "3.0.3",
   info: {
     title: "Çerkesçe Knowledge Engine - Discovery API Gateway",

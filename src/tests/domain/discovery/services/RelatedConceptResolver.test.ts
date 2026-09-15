@@ -1,4 +1,4 @@
-﻿import { describe, it, expect, beforeEach } from "vitest";
+import { describe, it, expect, beforeEach } from "vitest";
 import { RelatedConceptResolver } from "../../../../domain/discovery/services/RelatedConceptResolver";
 import { TraversalNode } from "../../../../domain/discovery/dto/TraversalNode";
 import { DiscoveryRelationType } from "../../../../domain/discovery/types/DiscoveryRelationType";

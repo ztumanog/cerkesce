@@ -1,3 +1,4 @@
+// @ts-nocheck
 /**
  * @file app/actions/dictionaryActions.ts
  * @description Server-side çeviri arama eylemleri

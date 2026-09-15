@@ -1,4 +1,4 @@
-﻿import { describe, it, expect, beforeEach } from 'vitest';
+import { describe, it, expect, beforeEach } from 'vitest';
 import { MetricsService } from '../../infra/telemetry/MetricsService';
 import { PrometheusExporterService } from '../../infra/telemetry/PrometheusExporterService';
 

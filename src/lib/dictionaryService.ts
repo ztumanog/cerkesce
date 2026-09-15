@@ -1,4 +1,4 @@
-﻿import type { DictionaryRawItem } from '@/types/dictionary';
+import type { DictionaryRawItem } from '@/types/dictionary';
 
 export class DictionaryService {
   private static cachedEntries: DictionaryRawItem[] | null = null;

@@ -1,4 +1,4 @@
-﻿import { TranslationEntry, TranslationGroup } from "../domain/translation";
+import { TranslationEntry, TranslationGroup } from "../domain/translation";
 
 export const mockTranslationGroups: TranslationGroup[] = [
   { id: "TRG_WATER", groupName: "Water / Su / Ğ’Ğ¾Ğ´Ğ° / ĞŸÑÑ‹", entries: [] },

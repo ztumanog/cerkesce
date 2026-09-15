@@ -1,10 +1,10 @@
-﻿import { describe, it, expect, beforeEach } from 'vitest';
+import { describe, it, expect, beforeEach } from 'vitest';
 import { MultilingualExplorer } from '../../../domain/discovery/services/MultilingualExplorer';
 import { GraphTraversalService } from '../../../domain/discovery/services/GraphTraversalService';
 import { DiscoveryAssembler } from '../../../domain/discovery/services/DiscoveryAssembler';
 import { MeaningGraph } from '../../../domain/concept/services/MeaningGraph';
 import { Concept } from '../../../domain/concept/Concept';
-import { ConceptID } from '../../../domain/value-objects/ConceptID';
+import { ConceptID } from '../../../domain/concept/value-objects/ConceptID';
 
 describe('Phase 5.1 Sprint 4: Graph-Aware Discovery E2E Certification', () => {
   let meaningGraph: MeaningGraph;

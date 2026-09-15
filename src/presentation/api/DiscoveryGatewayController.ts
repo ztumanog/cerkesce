@@ -1,4 +1,4 @@
-﻿import { DiscoveryFacade } from '../../domain/discovery/services/DiscoveryFacade';
+import { DiscoveryFacade } from '../../domain/discovery/services/DiscoveryFacade';
 import { ConceptGraphAdapter } from '../../domain/discovery/adapters/ConceptGraphAdapter';
 import { CytoscapeProjectionAdapter } from '../../domain/discovery/adapters/CytoscapeProjectionAdapter';
 

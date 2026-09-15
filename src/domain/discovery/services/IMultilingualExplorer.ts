@@ -1,4 +1,4 @@
-﻿import { DiscoveryResultDTO } from '../dto/DiscoveryResultDTO';
+import { DiscoveryResultDTO } from '../dto/DiscoveryResultDTO';
 import { DialectCode } from '@/domain/dialect/types/DialectTypes';
 
 export interface SearchOptions {

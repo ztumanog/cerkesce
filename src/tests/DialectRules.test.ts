@@ -1,4 +1,4 @@
-﻿/**
+/**
  * @file src/tests/DialectRules.test.ts
  * @description Ã‡erkesÃ§e diyalekt ve ses deÄŸiÅŸim kurallarÄ±nÄ± test eder.
  */

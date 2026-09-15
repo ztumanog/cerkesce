@@ -1,4 +1,4 @@
-﻿import { NetworkAnalyticsResultDTO } from '../dto/NetworkAnalyticsDTO';
+import { NetworkAnalyticsResultDTO } from '../dto/NetworkAnalyticsDTO';
 import { GenericConceptNetworkDTO } from './ExportEngineService';
 
 export class NetworkAnalyticsService {
@@ -28,10 +28,14 @@ export class NetworkAnalyticsService {
       .map(node => node.id);
 
     return {
-      density,
-      degreeCentrality,
-      isolatedNodes,
-      clusters: [{ id: 'cluster_1', nodeIds: network.nodes.map(n => n.id) }]
-    };
+  nodeCount,
+  edgeCount,
+  density,
+  degreeCentrality,
+  isolatedNodes,
+  clusters: [{ id: 'cluster_1', nodeIds: network.nodes.map((n: { id: string }) => n.id) }]
+};
   }
 }
+
+

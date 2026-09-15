@@ -1,4 +1,4 @@
-﻿import { DialectCode, RegionGroup } from './types/DialectTypes';
+import { DialectCode, RegionGroup } from './types/DialectTypes';
 
 export interface DialectProps {
   code: DialectCode;

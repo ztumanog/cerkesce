@@ -1,4 +1,4 @@
-﻿import { DialectCode } from '../../dialect/types/DialectTypes';
+import { DialectCode } from '../../dialect/types/DialectTypes';
 import { DiscoveryResultDTO } from '../dto/DiscoveryResultDTO';
 import { MultilingualExplorer } from './MultilingualExplorer';
 

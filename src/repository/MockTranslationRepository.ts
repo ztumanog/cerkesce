@@ -1,4 +1,4 @@
-﻿/**
+/**
  * @file src/repository/MockTranslationRepository.ts
  * @description ADR-0007 standardÄ±na uygun Mock Repository - KapsamlÄ± Test ve Bellek Ä°Ã§i Depolama Implementasyonu
  */

@@ -1,4 +1,4 @@
-﻿import { describe, it, expect } from 'vitest';
+import { describe, it, expect } from 'vitest';
 import { CytoscapeAdapter } from '../../presentation/adapters/CytoscapeAdapter';
 import { ConceptNetworkDTO } from '../../domain/discovery/dto/ConceptNetworkDTO';
 

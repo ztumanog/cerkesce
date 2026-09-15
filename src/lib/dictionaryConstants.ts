@@ -1,4 +1,4 @@
-﻿/**
+/**
  * @file src/lib/dictionaryConstants.ts
  * @description Ã‡erkesÃ§e Dil Korpusu iÃ§in tÃ¼m sabitler, tema ve dilbilgisi tÃ¼r tanÄ±mlarÄ±.
  */

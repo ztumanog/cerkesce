@@ -1,4 +1,4 @@
-﻿/**
+/**
  * @file src/domain/concept/value-objects/ConceptID.ts
  * @description Value Object for Concept Identifier
  * 

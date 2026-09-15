@@ -1,4 +1,4 @@
-﻿// @/lib/dictionary-resolver.ts
+// @/lib/dictionary-resolver.ts
 import { RawDefinition } from '@/types/source';
 
 /**

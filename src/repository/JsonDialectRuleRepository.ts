@@ -1,4 +1,4 @@
-﻿/**
+/**
  * @file src/repository/JsonDialectRuleRepository.ts
  * @description IDialectRuleRepository arayÃ¼zÃ¼nÃ¼ tam uygulayan repository.
  */

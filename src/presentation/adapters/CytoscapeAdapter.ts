@@ -1,4 +1,4 @@
-﻿import { ConceptNetworkDTO } from '../../domain/discovery/dto/ConceptNetworkDTO';
+import { ConceptNetworkDTO } from '../../domain/discovery/dto/ConceptNetworkDTO';
 
 export interface CytoscapeNodeData {
   id: string;

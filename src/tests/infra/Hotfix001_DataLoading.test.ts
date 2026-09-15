@@ -1,4 +1,4 @@
-﻿import { describe, it, expect } from 'vitest';
+import { describe, it, expect } from 'vitest';
 import { DictionaryService } from '../../lib/dictionaryService';
 
 describe('HOTFIX-001 Data Loading Pipeline Verification', () => {

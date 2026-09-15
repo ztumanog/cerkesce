@@ -1,4 +1,4 @@
-﻿import { describe, it, expect, beforeEach } from 'vitest';
+import { describe, it, expect, beforeEach } from 'vitest';
 import { ConceptNetworkController } from '../../infrastructure/api/controllers/ConceptNetworkController';
 
 describe('Phase 6.1 - REST API Gateway Contract Certification Tests', () => {

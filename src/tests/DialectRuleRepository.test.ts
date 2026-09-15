@@ -1,4 +1,4 @@
-﻿import { describe, it, expect, beforeEach } from "vitest";
+import { describe, it, expect, beforeEach } from "vitest";
 
 // DialectRule arayÃ¼z tanÄ±mÄ± (gerekli alanlar ile)
 export interface DialectRule {

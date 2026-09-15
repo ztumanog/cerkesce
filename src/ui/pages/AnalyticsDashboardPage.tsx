@@ -1,4 +1,4 @@
-﻿import React from 'react';
+import React from 'react';
 import { NetworkAnalyticsResultDTO } from '../../domain/analytics/dto/NetworkAnalyticsDTO';
 
 export interface AnalyticsDashboardPageProps {

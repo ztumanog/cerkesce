@@ -1,4 +1,4 @@
-﻿import { describe, it, expect, vi, beforeEach } from "vitest";
+import { describe, it, expect, vi, beforeEach } from "vitest";
 import { MultilingualExplorer } from "../../../domain/discovery/services/MultilingualExplorer";
 import { SearchFacade } from "../../../domain/discovery/services/SearchFacade";
 import { DialectCode } from "../../../domain/dialect/types/DialectTypes";

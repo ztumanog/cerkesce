@@ -1,4 +1,4 @@
-﻿import { DiscoveryResultDTO } from '@/domain/discovery/dto/DiscoveryResultDTO';
+import { DiscoveryResultDTO } from '@/domain/discovery/dto/DiscoveryResultDTO';
 import { DialectCode } from '@/domain/dialect/types/DialectTypes';
 
 export interface ISearchFacade {

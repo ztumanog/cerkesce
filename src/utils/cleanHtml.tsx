@@ -1,4 +1,4 @@
-﻿const ENTITY_MAP: Record<string, string> = {
+const ENTITY_MAP: Record<string, string> = {
   "&nbsp;": " ",
   "&amp;": "&",
   "&lt;": "<",

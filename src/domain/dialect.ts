@@ -1,4 +1,4 @@
-﻿/**
+/**
  * @file src/domain/dialect.ts
  * @description Diyalekt ve ses deÄŸiÅŸim kurallarÄ±nÄ±n domain tipleri.
  * @architecture circassian_dialect_rules.json ile birebir type-safe uyumludur.

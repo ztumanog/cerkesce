@@ -1,4 +1,4 @@
-﻿import { describe, it, expect } from 'vitest';
+import { describe, it, expect } from 'vitest';
 import { DialectAnalyticsService } from '../../domain/analytics/services/DialectAnalyticsService';
 import { DialectVariation } from '../../domain/analytics/dto/DialectSemanticAnalysisDTO';
 

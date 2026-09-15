@@ -1,4 +1,4 @@
-﻿import { describe, it, expect } from 'vitest';
+import { describe, it, expect } from 'vitest';
 import { ConceptGraphAdapter } from '../../../domain/discovery/adapters/ConceptGraphAdapter';
 import { CytoscapeProjectionAdapter } from '../../../domain/discovery/adapters/CytoscapeProjectionAdapter';
 import { DiscoveryResultDTO } from '../../../domain/discovery/dto/DiscoveryResultDTO';
@@ -24,16 +24,16 @@ describe('Phase 5.4 - Interactive Concept Network Explorer Certification (NET)',
     const canonical = ConceptGraphAdapter.toCanonicalNetwork(mockDiscoveryResult);
 
     expect(canonical.nodes).toHaveLength(3); // Root + 2 related
-    expect(canonical.nodes.some(n => n.id === WATER_ID)).toBe(true);
-    expect(canonical.nodes.some(n => n.id === ICE_ID)).toBe(true);
-    expect(canonical.nodes.some(n => n.id === RIVER_ID)).toBe(true);
+    expect(canonical.nodes.some((n: { id: string }) => n.id === WATER_ID)).toBe(true);
+    expect(canonical.nodes.some((n: { id: string }) => n.id === ICE_ID)).toBe(true);
+    expect(canonical.nodes.some((n: { id: string }) => n.id === RIVER_ID)).toBe(true);
   });
 
   it('NET-002: Edge Projection - İlişkiler ve yönlü kenarlar doğru oluşturulmalıdır', () => {
     const canonical = ConceptGraphAdapter.toCanonicalNetwork(mockDiscoveryResult);
 
     expect(canonical.edges).toHaveLength(2);
-    const iceEdge = canonical.edges.find(e => e.target === ICE_ID);
+    const iceEdge = canonical.edges.find((e: { target: string }) => e.target === ICE_ID);
     expect(iceEdge).toBeDefined();
     expect(iceEdge!.source).toBe(WATER_ID);
     expect(iceEdge!.relationType).toBe('STATE_OF');

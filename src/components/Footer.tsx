@@ -1,4 +1,4 @@
-﻿'use client';
+'use client';
 
 import React from 'react';
 import { Camera, Code2, Users, Shield, BookOpen } from 'lucide-react';

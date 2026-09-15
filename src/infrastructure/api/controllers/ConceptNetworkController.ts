@@ -1,4 +1,4 @@
-﻿import { Request, Response } from 'express';
+import { Request, Response } from 'express';
 import { DiscoveryFacade } from '../../../domain/discovery/facades/DiscoveryFacade';
 import { ConceptGraphAdapter } from '../../../domain/discovery/adapters/ConceptGraphAdapter';
 

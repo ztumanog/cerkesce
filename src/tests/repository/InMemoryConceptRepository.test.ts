@@ -1,4 +1,4 @@
-﻿import { describe, it, expect, beforeEach } from 'vitest';
+import { describe, it, expect, beforeEach } from 'vitest';
 import { InMemoryConceptRepository } from '../../repository/InMemoryConceptRepository';
 import { Concept } from '../../domain/concept/Concept';
 import { ConceptID } from '../../domain/concept/value-objects/ConceptID';
@@ -35,8 +35,8 @@ describe('Sprint 2: CE-03 & CE-09 - InMemoryConceptRepository', () => {
     const foundList = await repository.findMany([id1, id2, id3]);
 
     expect(foundList).toHaveLength(2);
-    expect(foundList.some(c => c.id.equals(id1))).toBe(true);
-    expect(foundList.some(c => c.id.equals(id2))).toBe(true);
+    expect(foundList.some((c: Concept) => c.id.equals(id1))).toBe(true);
+    expect(foundList.some((c: Concept) => c.id.equals(id2))).toBe(true);
   });
 
   it('olmayan kavram sorgulandığında null dönmelidir', async () => {

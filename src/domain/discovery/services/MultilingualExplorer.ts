@@ -1,4 +1,4 @@
-﻿import { IMultilingualExplorer, SearchOptions } from './IMultilingualExplorer';
+import { IMultilingualExplorer, SearchOptions } from './IMultilingualExplorer';
 import { DiscoveryResultDTO } from '../dto/DiscoveryResultDTO';
 import { DiscoveryAssembler } from './DiscoveryAssembler';
 import { TraversalNode } from '../dto/TraversalNode';

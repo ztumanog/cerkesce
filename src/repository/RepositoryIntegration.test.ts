@@ -1,4 +1,4 @@
-﻿/**
+/**
  * @file src/repository/RepositoryIntegration.test.ts
  * @description Repository Entegrasyon Testleri - ADR-0007 StandardÄ±
  */

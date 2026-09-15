@@ -1,4 +1,4 @@
-﻿import { ConceptRelation } from '../value-objects/ConceptRelation';
+import { ConceptRelation } from '../value-objects/ConceptRelation';
 import { RelationType } from '../types/ConceptRelation';
 
 export class ConceptValidator {

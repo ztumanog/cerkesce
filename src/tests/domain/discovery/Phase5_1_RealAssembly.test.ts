@@ -1,4 +1,4 @@
-﻿import { describe, it, expect, beforeEach } from 'vitest';
+import { describe, it, expect, beforeEach } from 'vitest';
 import { MultilingualExplorer } from '../../../domain/discovery/services/MultilingualExplorer';
 import { SearchFacade } from '../../../domain/discovery/services/SearchFacade';
 import { DialectCode } from '../../../domain/dialect/types/DialectTypes';
@@ -71,7 +71,7 @@ describe('Phase 5.1 Sprint 1: Real InMemory Domain Assembly', () => {
     expect(result.canonicalName).toBe('WATER');
 
     // Real Cross-Lingual Meanings Verification
-    const terms = result.meanings.map(m => m.term);
+    const terms = result.meanings?.map((m: { term: string }) => m.term);
     expect(terms).toContain('su');
     expect(terms).toContain('water');
     expect(terms).toContain('вода');

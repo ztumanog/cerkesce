@@ -1,4 +1,4 @@
-﻿/**
+/**
  * @file src/loader/DataChunkLoader.ts
  * @description BÃ¼yÃ¼k veri paketlerini parÃ§alar (chunk) halinde belleÄŸe yÃ¼kler.
  */

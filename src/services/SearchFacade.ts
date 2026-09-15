@@ -1,4 +1,4 @@
-﻿import { ISearchFacade } from './ISearchFacade';
+import { ISearchFacade } from './ISearchFacade';
 import { IMultilingualExplorer } from '@/domain/discovery/services/IMultilingualExplorer';
 import { DiscoveryResultDTO } from '@/domain/discovery/dto/DiscoveryResultDTO';
 import { DialectCode } from '@/domain/dialect/types/DialectTypes';

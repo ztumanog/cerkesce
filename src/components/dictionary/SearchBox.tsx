@@ -3,7 +3,7 @@
 import React, { useState, useCallback, useRef, useEffect } from 'react';
 import { ChevronDown } from 'lucide-react';
 import AkilliKlavye from '@/components/features/AkilliKlavye';
-import type { GruplanmisKelime } from '@/types/dictionary';
+import type { KelimeItem } from '@/types/dictionary';
 
 export interface DictionaryItem {
   id: string;
@@ -125,9 +125,8 @@ const SozlukFiltreMenu: React.FC<SozlukFiltreMenuProps> = ({
           <button
             type="button"
             onClick={() => handleSelect('tumu', 'Sözlükler')}
-            className={`w-full text-left px-3 py-2 flex items-center justify-between hover:bg-stone-100 dark:hover:bg-stone-800 transition-colors ${
-              selectedDictId === 'tumu' ? 'font-semibold text-amber-600 dark:text-amber-400' : ''
-            }`}
+            className={`w-full text-left px-3 py-2 flex items-center justify-between hover:bg-stone-100 dark:hover:bg-stone-800 transition-colors ${selectedDictId === 'tumu' ? 'font-semibold text-amber-600 dark:text-amber-400' : ''
+              }`}
           >
             <span>Sözlükler</span>
             {selectedDictId === 'tumu' && <span className="text-amber-500 font-bold">✓</span>}
@@ -163,15 +162,13 @@ const SozlukFiltreMenu: React.FC<SozlukFiltreMenuProps> = ({
                           key={item.id}
                           type="button"
                           onClick={() => handleSelect(item.id, buttonDisplayName)}
-                          className={`w-full text-left px-3.5 py-2.5 flex items-start justify-between hover:bg-stone-100 dark:hover:bg-stone-800 transition-colors border-b last:border-b-0 border-stone-100 dark:border-stone-800/50 ${
-                            isSelected ? 'bg-amber-50/50 dark:bg-amber-950/20' : ''
-                          }`}
+                          className={`w-full text-left px-3.5 py-2.5 flex items-start justify-between hover:bg-stone-100 dark:hover:bg-stone-800 transition-colors border-b last:border-b-0 border-stone-100 dark:border-stone-800/50 ${isSelected ? 'bg-amber-50/50 dark:bg-amber-950/20' : ''
+                            }`}
                         >
                           <div className="flex flex-col min-w-0 pr-2">
                             <span
-                              className={`truncate font-medium text-xs sm:text-sm ${
-                                isSelected ? 'text-amber-600 dark:text-amber-400 font-semibold' : 'text-zinc-800 dark:text-zinc-200'
-                              }`}
+                              className={`truncate font-medium text-xs sm:text-sm ${isSelected ? 'text-amber-600 dark:text-amber-400 font-semibold' : 'text-zinc-800 dark:text-zinc-200'
+                                }`}
                             >
                               {item.name}
                             </span>
@@ -197,7 +194,7 @@ const SozlukFiltreMenu: React.FC<SozlukFiltreMenuProps> = ({
 };
 
 export interface SearchBoxProps {
-  onResults?: (results: GruplanmisKelime[], total: number, loading: boolean) => void;
+  onResults?: (results: KelimeItem[], total: number, loading: boolean) => void;
 }
 
 export const SearchBox: React.FC<SearchBoxProps> = ({ onResults }) => {
@@ -215,55 +212,151 @@ export const SearchBox: React.FC<SearchBoxProps> = ({ onResults }) => {
     onResultsRef.current = onResults;
   }, [onResults]);
 
-  const handleSearch = useCallback(async () => {
-    if (!query.trim()) {
-      onResultsRef.current?.([], 0, false);
-      return;
-    }
+ const handleSearch = useCallback(async () => {
+  if (!query.trim()) {
+    onResultsRef.current?.([], 0, false);
+    return;
+  }
 
-    onResultsRef.current?.([], 0, true);
-    try {
-      const params = new URLSearchParams({
-        q: query,
-        mode,
-        dialect,
-        targetLang,
-        dict,
-        page: '1',
-        limit: '50',
+  onResultsRef.current?.([], 0, true);
+  try {
+    const params = new URLSearchParams({
+      q: query,
+      mode,
+      dialect,
+      targetLang,
+      dict,
+      page: '1',
+      limit: '50',
+    });
+    const res = await fetch(`/api/search?${params.toString()}`);
+    const data = await res.json();
+
+    if (Array.isArray(data.results)) {
+      const normalize = (s: string) =>
+        s
+          .trim()
+          .toLowerCase()
+          .replace(/\s+/g, ' ');
+
+      // Daha akıllı gruplama anahtarı
+const getGroupKey = (item: any): string => {
+  const kelime = normalize(item.anaKelime || item.kelime || '');
+  
+  const hasCyrillic = (s: string) => /[\u0400-\u04FF]/.test(s);
+  
+  // Kelime zaten Kiril ise direkt kullan
+  if (hasCyrillic(kelime)) return kelime;
+  
+  // Kelime Latin ise → anlamın sadece İLK Kiril kelimesini al
+  const anlam = normalize(
+    item.ilkAnlam ||
+    (Array.isArray(item.anlamlar)
+      ? typeof item.anlamlar[0] === 'string'
+        ? item.anlamlar[0]
+        : item.anlamlar[0]?.metin || ''
+      : '') || ''
+  );
+  
+  if (hasCyrillic(anlam)) {
+    // Sadece ilk Kiril token'ı al
+    const match = anlam.match(/^[\u0400-\u04FFIıӀ]+/);
+    if (match) return match[0];
+  }
+  
+  // Kiril yoksa kelimeyi direkt kullan
+  return kelime;
+};
+      const grupMap = new Map<string, KelimeItem>();
+
+      data.results.forEach((item: any) => {
+        const anahtar = getGroupKey(item);
+        if (!anahtar) return;
+
+        if (grupMap.has(anahtar)) {
+          const mevcut = grupMap.get(anahtar)!;
+
+          // Kaynakları birleştir
+          const yeniKaynaklar = item.kaynaklar || [];
+          const mevcutSozlukler = new Set(
+            mevcut.kaynaklar?.map(
+              (k: any) => k.sözlük || k.title || k.kaynak || ''
+            ) ?? []
+          );
+
+          yeniKaynaklar.forEach((k: any) => {
+            const sozlukAdi = k.sözlük || k.title || k.kaynak || '';
+            if (!mevcutSozlukler.has(sozlukAdi)) {
+              mevcut.kaynaklar = [...(mevcut.kaynaklar || []), k];
+              mevcutSozlukler.add(sozlukAdi);
+            }
+          });
+
+          // Anlamları birleştir
+          const yeniAnlamlar = Array.isArray(item.anlamlar)
+            ? item.anlamlar
+            : [];
+          yeniAnlamlar.forEach((a: any) => {
+            const anlamMetni =
+              typeof a === 'string' ? a : a?.metin || '';
+            if (anlamMetni && !mevcut.anlamlar?.includes(anlamMetni)) {
+              mevcut.anlamlar = [...(mevcut.anlamlar || []), anlamMetni];
+            }
+          });
+
+          // Latin yerine Kiril kelimeyi tercih et
+          const mevcutKelime = mevcut.kelime || '';
+          const yeniKelime = item.kelime || item.anaKelime || '';
+          if (
+            !/[\u0400-\u04FF]/.test(mevcutKelime) &&
+            /[\u0400-\u04FF]/.test(yeniKelime)
+          ) {
+            mevcut.kelime = yeniKelime;
+            mevcut.madde = item.anaKelime || yeniKelime;
+          }
+        } else {
+          
+          // data.results.forEach'dan önce:
+if (process.env.NODE_ENV === 'development') {
+  data.results.slice(0, 5).forEach((item: any) => {
+    console.log('ITEM:', item.kelime, '| anaKelime:', item.anaKelime, '| KEY:', getGroupKey(item));
+  });
+}
+
+          
+          grupMap.set(anahtar, {
+            id: item.id || item.kelime || '',
+            kelime: item.kelime || '',
+            madde: item.anaKelime || item.kelime || '',
+            anlam:
+              item.ilkAnlam ||
+              (Array.isArray(item.anlamlar) && item.anlamlar[0]
+                ? typeof item.anlamlar[0] === 'string'
+                  ? item.anlamlar[0]
+                  : item.anlamlar[0].metin
+                : '') ||
+              '',
+            ilkAnlam: item.ilkAnlam,
+            anlamlar: Array.isArray(item.anlamlar)
+              ? item.anlamlar.map((a: any) =>
+                  typeof a === 'string' ? a : a.metin || ''
+                )
+              : [],
+            kaynaklar: item.kaynaklar || [],
+          });
+        }
       });
-      const res = await fetch(`/api/search?${params.toString()}`);
-      const data = await res.json();
 
-      if (data.success && Array.isArray(data.results)) {
-        const donusturulenSonuclar: GruplanmisKelime[] = data.results.map((item: any) => ({
-          kelime: item.kelime || '',
-          anaKelime: item.anaKelime,
-          anlamlar: Array.isArray(item.anlamlar)
-            ? item.anlamlar.map((a: any) => (typeof a === 'string' ? a : a.metin || ''))
-            : [],
-          kaynaklar: item.kaynaklar || [],
-          ilkAnlam:
-            item.ilkAnlam ||
-            (Array.isArray(item.anlamlar) && item.anlamlar[0]
-              ? typeof item.anlamlar[0] === 'string'
-                ? item.anlamlar[0]
-                : item.anlamlar[0].metin
-              : ''),
-          dialect: item.dialect,
-        }));
-
-        onResultsRef.current?.(donusturulenSonuclar, data.total || 0, false);
-      } else {
-        onResultsRef.current?.([], 0, false);
-      }
-    } catch (error) {
-      console.error('Arama hatası:', error);
+      const donusturulenSonuclar = Array.from(grupMap.values());
+      onResultsRef.current?.(donusturulenSonuclar, data.total || 0, false);
+    } else {
       onResultsRef.current?.([], 0, false);
     }
-  }, [query, mode, dialect, targetLang, dict]);
-
-  useEffect(() => {
+  } catch (error) {
+    console.error('Arama hatası:', error);
+    onResultsRef.current?.([], 0, false);
+  }
+}, [query, mode, dialect, targetLang, dict]);  useEffect(() => {
     const timer = setTimeout(() => {
       handleSearch();
     }, 300);
@@ -315,9 +408,8 @@ export const SearchBox: React.FC<SearchBoxProps> = ({ onResults }) => {
             <button
               type="button"
               onClick={toggleKlavye}
-              className={`flex items-center justify-center p-2 rounded-xl text-base transition-all ${
-                isKlavyeOpen ? 'bg-amber-500 text-white' : 'bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300'
-              }`}
+              className={`flex items-center justify-center p-2 rounded-xl text-base transition-all ${isKlavyeOpen ? 'bg-amber-500 text-white' : 'bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300'
+                }`}
               title="Sanal Klavyeyi Aç/Kapat"
             >
               ⌨️

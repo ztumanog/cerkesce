@@ -1,4 +1,4 @@
-﻿import { QuerySemanticMapper } from './QuerySemanticMapper';
+import { QuerySemanticMapper } from './QuerySemanticMapper';
 import { GraphTraversalService } from './GraphTraversalService';
 import { KnowledgeRanker } from './KnowledgeRanker';
 import { ContextClusterer } from './ContextClusterer';

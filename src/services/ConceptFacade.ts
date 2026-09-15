@@ -1,4 +1,4 @@
-﻿/**
+/**
  * @file src/services/ConceptGraphEngine.ts
  * @description Semantic graph engine for Phase 3 Concept Model
  * 

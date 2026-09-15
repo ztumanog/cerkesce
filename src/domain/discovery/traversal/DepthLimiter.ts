@@ -1,4 +1,4 @@
-﻿import { TraversalDepth, MAX_TRAVERSAL_DEPTH } from '../types/TraversalDepth';
+import { TraversalDepth, MAX_TRAVERSAL_DEPTH } from '../types/TraversalDepth';
 
 export class DepthLimiter {
   constructor(private readonly maxAllowedDepth: TraversalDepth = MAX_TRAVERSAL_DEPTH) {}

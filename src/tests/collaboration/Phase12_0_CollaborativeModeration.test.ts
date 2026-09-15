@@ -1,4 +1,4 @@
-﻿import { describe, it, expect, beforeEach } from 'vitest';
+import { describe, it, expect, beforeEach } from 'vitest';
 import { CollaborativeModerationService } from '../../domain/collaboration/services/CollaborativeModerationService';
 
 describe('Phase 12.0 - Collaborative Editing & Moderation Certification', () => {

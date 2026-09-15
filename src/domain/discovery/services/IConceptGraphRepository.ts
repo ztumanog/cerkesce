@@ -1,4 +1,4 @@
-﻿import { DiscoveryRelationType } from '../types/DiscoveryRelationType';
+import { DiscoveryRelationType } from '../types/DiscoveryRelationType';
 
 export interface ConceptNeighbor {
   targetConceptId: string;

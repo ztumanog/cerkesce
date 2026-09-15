@@ -1,4 +1,4 @@
-﻿import React from 'react';
+import React from 'react';
 import { PositionedNodeDTO } from '../../../domain/analytics/services/LayoutEngineService';
 
 export interface ConceptDetailDrawerProps {

@@ -1,4 +1,4 @@
-﻿import { RankedRelatedConceptDTO } from './RankedRelatedConceptDTO';
+import { RankedRelatedConceptDTO } from './RankedRelatedConceptDTO';
 
 export interface ContextClusterDTO {
   clusterId: string;

@@ -1,4 +1,4 @@
-﻿import { describe, it, expect, beforeEach } from "vitest";
+import { describe, it, expect, beforeEach } from "vitest";
 import { TranslationService } from "../services/TranslationService";
 import { MorphologyAwareMatchingService } from "../services/MorphologyAwareMatchingService";
 import { TranslationEntry, TranslationGroup, LanguageCode } from "../domain/translation";

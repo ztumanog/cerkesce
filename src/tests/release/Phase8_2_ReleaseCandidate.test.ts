@@ -1,4 +1,4 @@
-﻿import { describe, it, expect } from 'vitest';
+import { describe, it, expect } from 'vitest';
 import { AppConfig } from '../../config/AppConfig';
 import { ApiClientService } from '../../ui/services/ApiClientService';
 import { AuthService } from '../../domain/security/services/AuthService';

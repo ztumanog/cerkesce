@@ -1,4 +1,4 @@
-﻿import { describe, it, expect, beforeEach } from 'vitest';
+import { describe, it, expect, beforeEach } from 'vitest';
 import { GraphMutationService } from '../../domain/sync/services/GraphMutationService';
 
 describe('Phase 9.2 - Real-time Knowledge Graph Sync Certification', () => {

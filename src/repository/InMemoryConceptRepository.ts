@@ -1,4 +1,4 @@
-﻿export interface GraphNeighbor {
+export interface GraphNeighbor {
   conceptId: string;
   relationType: string;
   weight: number;
@@ -27,4 +27,8 @@ export class InMemoryConceptRepository {
       weight: rel.weight || 1
     }));
   }
+
+  async findMany(ids: ConceptID[]): Promise<Concept[]> { return []; }
+  async exists(id: ConceptID | string): Promise<boolean> { return false; }
+  async delete(id: ConceptID | string): Promise<boolean> { return false; }
 }

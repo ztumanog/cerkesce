@@ -1,4 +1,4 @@
-﻿export class MeaningVariantLinker {
+export class MeaningVariantLinker {
   private meaningToVariants: Map<string, Set<string>> = new Map();
   private variantToMeanings: Map<string, Set<string>> = new Map();
 

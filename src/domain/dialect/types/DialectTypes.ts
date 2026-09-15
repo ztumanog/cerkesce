@@ -1,4 +1,4 @@
-﻿export enum RegionGroup {
+export enum RegionGroup {
   WEST = 'WEST',
   EAST = 'EAST',
   TRANSITIONAL = 'TRANSITIONAL',

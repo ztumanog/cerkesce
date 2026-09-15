@@ -1,4 +1,4 @@
-﻿import { describe, it, expect, beforeEach } from 'vitest';
+import { describe, it, expect, beforeEach } from 'vitest';
 import { DiscoveryFacade } from '../../../domain/discovery/services/DiscoveryFacade';
 
 describe('Phase 5.3.3 - Integration & Validation Certification (IV)', () => {

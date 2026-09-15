@@ -1,4 +1,4 @@
-﻿// src/domain/concept/value-objects/ConceptID.ts
+// src/domain/concept/value-objects/ConceptID.ts
 
 export class ConceptID {
   private readonly value: string;

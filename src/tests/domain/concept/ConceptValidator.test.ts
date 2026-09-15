@@ -1,4 +1,4 @@
-﻿import { describe, it, expect } from 'vitest';
+import { describe, it, expect } from 'vitest';
 import { ConceptValidator } from '../../../domain/concept/services/ConceptValidator';
 import { ConceptRelation } from '../../../domain/concept/value-objects/ConceptRelation';
 import { RelationDirection, RelationType } from '../../../domain/concept/types/ConceptRelation';

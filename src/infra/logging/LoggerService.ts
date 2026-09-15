@@ -1,4 +1,4 @@
-﻿export interface LogEntry {
+export interface LogEntry {
   level: 'INFO' | 'WARN' | 'ERROR';
   message: string;
   context?: Record<string, unknown>;

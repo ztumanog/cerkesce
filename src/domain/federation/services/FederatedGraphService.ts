@@ -1,4 +1,4 @@
-﻿export interface FederatedSourceNode {
+export interface FederatedSourceNode {
   id: string;
   dialect: 'EASTERN_KABARDIAN' | 'WESTERN_ADYGHE';
   label: string;

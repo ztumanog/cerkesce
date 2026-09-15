@@ -1,4 +1,4 @@
-﻿import { describe, it, expect, beforeEach } from "vitest";
+import { describe, it, expect, beforeEach } from "vitest";
 import { DepthLimiter } from "../../../../domain/discovery/traversal/DepthLimiter";
 import { CycleDetector } from "../../../../domain/discovery/traversal/CycleDetector";
 import { TraversalContext } from "../../../../domain/discovery/traversal/TraversalContext";

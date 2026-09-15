@@ -1,4 +1,4 @@
-﻿import { describe, it, expect } from 'vitest';
+import { describe, it, expect } from 'vitest';
 import { WebGLGraphRendererService } from '../../../ui/renderers/WebGLGraphRendererService';
 
 describe('Phase 10.0 - WebGL Scaling & Render Pipeline Certification', () => {

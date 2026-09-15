@@ -1,4 +1,4 @@
-﻿export interface MeaningConceptLinkProps {
+export interface MeaningConceptLinkProps {
   meaningId: string;
   conceptId: string;
 }

@@ -1,4 +1,4 @@
-﻿export class CycleDetector {
+export class CycleDetector {
   private readonly visited: Set<string> = new Set<string>();
 
   public isCycle(conceptId: string): boolean {

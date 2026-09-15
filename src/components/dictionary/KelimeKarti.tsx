@@ -1,61 +1,81 @@
-﻿'use client';
+'use client';
 
 import React from 'react';
 import { ChevronRight } from 'lucide-react';
-import type { GruplanmisKelime, KaynakItem } from '@/types/dictionary';
+import type { KaynakItem } from '@/types/dictionary';
 
-interface KelimeKartiProps {
-  data: GruplanmisKelime;
+export interface KelimeItem {
+  id: string;
+  kelime: string;
+  madde?: string;
+  anlam?: string;
+  ilkAnlam?: string;
+  anlamlar?: string[];
+  kaynaklar?: KaynakItem[];
+  lehce?: string;
+}
+
+export interface KelimeKartiProps {
+  data: KelimeItem;
   onClick?: () => void;
 }
 
-const getAnlamMetin = (data: GruplanmisKelime): string => {
-  const rawAnlam = data.ilkAnlam || data.anlamlar?.[0];
+const decodeHtmlEntities = (str: string): string => {
+  return str
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&amp;/g, '&')
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;/g, "'")
+    .replace(/<[^>]*>/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+};
+
+const getAnlamMetin = (data: KelimeItem): string => {
+  const rawAnlam = data.ilkAnlam || data.anlamlar?.[0] || data.anlam;
   if (!rawAnlam) return '—';
-  if (typeof rawAnlam === 'string') return rawAnlam;
+  if (typeof rawAnlam === 'string') return decodeHtmlEntities(rawAnlam);
   return '—';
+};
+
+const getLehceBadgeClass = (lehce?: string): string => {
+  if (!lehce) return 'bg-zinc-100 dark:bg-zinc-900 text-zinc-600 dark:text-zinc-300 border-zinc-200 dark:border-zinc-700';
+  const code = lehce.toUpperCase().trim();
+  switch (code) {
+    case 'ADY':
+    case 'ADIGE':
+    case 'BATU':
+      return 'bg-emerald-100 dark:bg-emerald-950 text-emerald-800 dark:text-emerald-300 border-emerald-300 dark:border-emerald-800';
+    case 'KBD':
+    case 'KABARDEY':
+    case 'DOGU':
+      return 'bg-blue-100 dark:bg-blue-950 text-blue-800 dark:text-blue-300 border-blue-300 dark:border-blue-800';
+    default:
+      return 'bg-zinc-100 dark:bg-zinc-900 text-zinc-700 dark:text-zinc-300 border-zinc-300 dark:border-zinc-700';
+  }
 };
 
 const formatKaynakDetayi = (kaynakItem: unknown): string => {
   if (!kaynakItem) return '';
   if (typeof kaynakItem === 'string') return kaynakItem;
-
   if (typeof kaynakItem === 'object') {
     const itemObj = kaynakItem as Record<string, unknown>;
     const sourceObj = (itemObj.kaynak || itemObj) as Record<string, unknown>;
-
-    const title = String(
-      sourceObj.title ||
-        sourceObj.sözlük ||
-        sourceObj.kaynak ||
-        sourceObj.dictionaryName ||
-        sourceObj.name ||
-        ''
-    );
+    const title = String(sourceObj.title || sourceObj.sözlük || sourceObj.kaynak || sourceObj.dictionaryName || sourceObj.name || '');
     const author = String(sourceObj.author || sourceObj.yazar || '');
     const year = String(sourceObj.year || sourceObj.yil || '');
-
-    const totalWordsRaw =
-      sourceObj.total_words ??
-      sourceObj.totalWords ??
-      sourceObj.kelimeSayisi;
+    const totalWordsRaw = sourceObj.total_words ?? sourceObj.totalWords ?? sourceObj.kelimeSayisi;
     const formattedTotalWords = totalWordsRaw
       ? `${typeof totalWordsRaw === 'number' ? totalWordsRaw.toLocaleString('tr-TR') : totalWordsRaw} kelime`
       : '';
-
-    const detaylar = [title, author, year, formattedTotalWords].filter(
-      Boolean
-    );
+    const detaylar = [title, author, year, formattedTotalWords].filter(Boolean);
     return detaylar.join(' | ') || 'Bilinmeyen Kaynak';
   }
-
   return 'Bilinmeyen Kaynak';
 };
 
-export const KelimeKarti: React.FC<KelimeKartiProps> = ({
-  data,
-  onClick,
-}) => {
+export const KelimeKarti: React.FC<KelimeKartiProps> = ({ data, onClick }) => {
   if (!data) return null;
 
   const ilkAnlamMetin = getAnlamMetin(data);
@@ -67,40 +87,37 @@ export const KelimeKarti: React.FC<KelimeKartiProps> = ({
     <button
       type="button"
       onClick={onClick}
-      className="w-full text-left p-4 border border-zinc-200 dark:border-zinc-800 rounded-xl bg-white dark:bg-zinc-900 shadow-sm hover:shadow-md transition-all hover:border-[#FF4030] dark:hover:border-[#FF4030] group flex items-start justify-between gap-3"
+      className="w-full text-left p-3 border border-zinc-200 dark:border-zinc-800 rounded-xl bg-white dark:bg-zinc-900 shadow-sm hover:shadow-md transition-all hover:border-amber-500 dark:hover:border-amber-500 group flex items-start justify-between gap-3"
     >
-      <div className="flex-1 min-w-0">
-        <h3 className="text-lg font-bold text-[#FF4030] truncate">
-          {data.kelime}
-        </h3>
-
-        <p className="text-sm text-zinc-600 dark:text-zinc-400 mt-1.5 line-clamp-1">
-          <span className="text-xs text-zinc-400 dark:text-zinc-500 font-normal mr-1">
-            İlk anlam:
-          </span>
-          <span className="text-zinc-800 dark:text-zinc-200 font-medium">
-            {ilkAnlamMetin}
-          </span>
+      <div className="flex-1 min-w-0 space-y-1">
+        <div className="flex items-center gap-2">
+          <h3 className="text-base sm:text-lg font-bold text-amber-600 dark:text-orange-500 group-hover:text-amber-700 dark:group-hover:text-orange-400 transition-colors truncate">
+            {data.kelime}
+          </h3>
+          {data.lehce && (
+            <span className={`text-[10px] uppercase font-semibold px-2 py-0.5 rounded-md border shrink-0 ${getLehceBadgeClass(data.lehce)}`}>
+              {data.lehce}
+            </span>
+          )}
+        </div>
+        <p className="text-sm text-zinc-800 dark:text-zinc-200 line-clamp-1 leading-snug font-medium">
+          {ilkAnlamMetin}
         </p>
-
         {ilkKaynak && (
-          <div className="mt-2.5 text-xs text-zinc-600 dark:text-zinc-400">
-            <p className="text-zinc-700 dark:text-zinc-300 truncate font-medium">
-              {formatKaynakDetayi(ilkKaynak)}
-            </p>
+          <div className="flex items-center gap-1.5 text-xs text-zinc-500 dark:text-zinc-400 pt-0.5 min-w-0">
+            <span className="truncate font-normal">{formatKaynakDetayi(ilkKaynak)}</span>
             {kalanKaynakSayisi > 0 && (
-              <p className="text-zinc-500 dark:text-zinc-500 mt-0.5 font-normal">
-                +{kalanKaynakSayisi} kaynak daha...
-              </p>
+              <>
+                <span className="text-zinc-300 dark:text-zinc-700">•</span>
+                <span className="text-amber-600 dark:text-amber-400 font-medium shrink-0">
+                  +{kalanKaynakSayisi} kaynak
+                </span>
+              </>
             )}
           </div>
         )}
       </div>
-
-      <ChevronRight
-        size={20}
-        className="text-zinc-300 dark:text-zinc-700 flex-shrink-0 group-hover:text-[#FF4030] transition-colors mt-1"
-      />
+      <ChevronRight size={18} className="text-zinc-300 dark:text-zinc-700 flex-shrink-0 group-hover:text-amber-500 transition-colors mt-1" />
     </button>
   );
 };

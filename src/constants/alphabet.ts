@@ -1,4 +1,4 @@
-﻿/**
+/**
  * Sprint: Multi-Language Klavye Haritaları (UDL)
  */
 

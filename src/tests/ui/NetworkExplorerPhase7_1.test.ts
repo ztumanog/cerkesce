@@ -1,4 +1,4 @@
-﻿import { describe, it, expect, vi } from 'vitest';
+import { describe, it, expect, vi } from 'vitest';
 import React from 'react';
 import { ConceptDetailDrawer } from '../../ui/components/explorer/ConceptDetailDrawer';
 import { NetworkExplorerToolbar } from '../../ui/components/explorer/NetworkExplorerToolbar';

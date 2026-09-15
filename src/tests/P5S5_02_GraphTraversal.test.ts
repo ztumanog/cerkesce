@@ -1,4 +1,4 @@
-﻿import { describe, it, expect, beforeEach } from 'vitest';
+import { describe, it, expect, beforeEach } from 'vitest';
 import { InMemoryConceptRepository } from '../repository/InMemoryConceptRepository';
 import { MeaningGraph } from '../domain/discovery/MeaningGraph';
 import { GraphTraversalService } from '../domain/discovery/GraphTraversalService';

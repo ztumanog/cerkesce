@@ -1,4 +1,4 @@
-﻿/**
+/**
  * @file src/repository/InMemoryTranslationRepository.ts
  * @description Bellek içi çeviri deposu - Kiril/Latin normalize araması, Inverted Index, Canonical ID ve dil filtreli anlam araması desteği ile.
  */

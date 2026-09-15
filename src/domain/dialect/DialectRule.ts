@@ -1,4 +1,4 @@
-﻿export interface DialectRuleProps {
+export interface DialectRuleProps {
   id: string;
   sourceDialect: string;
   targetDialect: string;

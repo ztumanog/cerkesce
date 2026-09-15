@@ -1,4 +1,4 @@
-﻿import { TraversalDepth } from '../types/TraversalDepth';
+import { TraversalDepth } from '../types/TraversalDepth';
 
 export interface TraversalRequest {
   rootConceptId: string;

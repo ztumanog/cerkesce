@@ -1,4 +1,4 @@
-﻿/**
+/**
  * @file src/services/CircassianDialectConverter.ts
  * @description AdÄ±gece kelimeleri fonolojik kurallarla Kabardeyceye dÃ¶nÃ¼ÅŸtÃ¼ren servis.
  */

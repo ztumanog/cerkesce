@@ -1,4 +1,4 @@
-﻿import { TraversalNode } from '../dto/TraversalNode';
+import { TraversalNode } from '../dto/TraversalNode';
 import { RelatedConceptDTO } from '../dto/DiscoveryResultDTO';
 import { DiscoveryRelationType } from '../types/DiscoveryRelationType';
 

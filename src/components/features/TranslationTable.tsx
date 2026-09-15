@@ -1,4 +1,4 @@
-﻿import React, { useState } from "react";
+import React, { useState } from "react";
 
 // Desteklenen/GÃ¶sterilebilecek Standart Diller Ve SÄ±ralamalarÄ±
 export const STANDARD_LANGS = [

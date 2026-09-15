@@ -1,7 +1,7 @@
-﻿import { describe, it, expect } from 'vitest';
+import { describe, it, expect } from 'vitest';
 import { GraphTraversalService } from '../../../domain/discovery/services/GraphTraversalService';
 import { Concept } from '../../../domain/concept/Concept';
-import { ConceptID } from '../../../domain/value-objects/ConceptID';
+import { ConceptID } from '../../../domain/concept/value-objects/ConceptID';
 import { MeaningGraph } from '../../../domain/concept/services/MeaningGraph';
 
 describe('Debug: Graph Traversal - Correct ID Usage', () => {

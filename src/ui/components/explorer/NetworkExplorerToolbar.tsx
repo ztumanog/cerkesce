@@ -1,4 +1,4 @@
-﻿import React from 'react';
+import React from 'react';
 import { LayoutAlgorithm } from '../../../domain/analytics/services/LayoutEngineService';
 import { ExportFormat } from '../../../domain/analytics/dto/ExportOptionsDTO';
 

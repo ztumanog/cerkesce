@@ -1,4 +1,4 @@
-﻿import { describe, it, expect, vi } from 'vitest';
+import { describe, it, expect, vi } from 'vitest';
 import React from 'react';
 import { NetworkExplorerPage } from '../../ui/pages/NetworkExplorerPage';
 import { LayoutEngineService } from '../../domain/analytics/services/LayoutEngineService';

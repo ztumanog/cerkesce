@@ -1,4 +1,4 @@
-﻿import { ConceptID } from '@/domain/value-objects/ConceptID';
+import { ConceptID } from '@/domain/concept/value-objects/ConceptID';
 
 export interface ConceptProps {
   id: ConceptID;

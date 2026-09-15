@@ -1,4 +1,4 @@
-﻿import { describe, it, expect, beforeEach } from 'vitest';
+import { describe, it, expect, beforeEach } from 'vitest';
 import { MeaningGraph } from '../../../domain/concept/services/MeaningGraph';
 import { InMemoryConceptRepository } from '../../../repository/InMemoryConceptRepository';
 import { Concept } from '../../../domain/concept/Concept';
@@ -11,7 +11,7 @@ describe('Sprint 4: CE-05 to CE-08 & CE-11 - MeaningGraph Engine', () => {
 
   beforeEach(() => {
     repo = new InMemoryConceptRepository();
-    graph = new MeaningGraph(repo);
+    graph = new MeaningGraph();
   });
 
   it('CE-11: Anayasal Depth=2 sınırında ilişki ağını doğru taramalıdır', async () => {

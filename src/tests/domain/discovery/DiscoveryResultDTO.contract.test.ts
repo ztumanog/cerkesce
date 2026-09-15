@@ -1,4 +1,4 @@
-﻿import { describe, it, expect } from 'vitest';
+import { describe, it, expect } from 'vitest';
 import { DiscoveryAssembler } from '../../../domain/discovery/services/DiscoveryAssembler';
 import { TraversalNode } from '../../../domain/discovery/dto/TraversalNode';
 

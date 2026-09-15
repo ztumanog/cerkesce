@@ -1,4 +1,4 @@
-﻿/**
+/**
  * @file src/tests/StressAndPerformance.test.ts
  * @description AÅŸama 4 - YÃ¼ksek Hacimli Veri YÃ¼kleme ve Stres Testleri (50.000 KayÄ±t)
  */

@@ -1,4 +1,4 @@
-﻿import { describe, it, expect, beforeEach } from 'vitest';
+import { describe, it, expect, beforeEach } from 'vitest';
 import { MeaningConceptLinker } from '../../../domain/concept/services/MeaningConceptLinker';
 
 describe('Sprint 3: CE-10 & CE-13 - MeaningConceptLinker Bridge', () => {

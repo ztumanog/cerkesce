@@ -5,32 +5,24 @@ import SearchBox from '@/components/dictionary/SearchBox';
 import KelimeKarti from '@/components/dictionary/KelimeKarti';
 import KelimeDetayDrawer from '@/components/ui/KelimeDetayDrawer';
 import GununKelimesiKart from '@/components/dictionary/GununKelimesiKart';
-import type { GruplanmisKelime, GununKelimesi } from '@/types/dictionary';
-
-const varsayilanGununKelimesi: GununKelimesi = {
-  id: '123e4567-e89b-12d3-a456-426614174000',
-  kelime: 'СиIэшIу',
-  anlam: 'Tatlım, canım',
-  lehce: 'Adigece',
-  tarih: new Date().toISOString().split('T')[0],
-};
+import type { KelimeItem } from '@/types/dictionary';
 
 export default function SozlukEkrani() {
-  const [sonuclar, setSonuclar] = useState<GruplanmisKelime[]>([]);
+  const [sonuclar, setSonuclar] = useState<KelimeItem[]>([]);
   const [yukleniyor, setYukleniyor] = useState(false);
   const [toplam, setToplam] = useState(0);
-  const [seciliKelime, setSeciliKelime] = useState<GruplanmisKelime | null>(null);
+  const [seciliKelime, setSeciliKelime] = useState<KelimeItem | null>(null);
   const [drawerAcik, setDrawerAcik] = useState(false);
   const [aramaMetni, setAramaMetni] = useState('');
   const [tumunuGoster, setTumunuGoster] = useState(false);
 
-  const handleKelimeSec = (kelimeItem: GruplanmisKelime) => {
-    setSeciliKelime(kelimeItem);
+  const handleKelimeSec = (kelime: KelimeItem) => {
+    setSeciliKelime(kelime);
     setDrawerAcik(true);
   };
 
   const handleResults = useCallback((
-    results: GruplanmisKelime[],
+    results: KelimeItem[],
     total: number,
     loading: boolean
   ) => {
@@ -57,7 +49,7 @@ export default function SozlukEkrani() {
         {/* GÜNÜN KELİMESİ */}
         {bosArama && (
           <div className="animate-in fade-in duration-300">
-            <GununKelimesiKart veri={varsayilanGununKelimesi} />
+            <GununKelimesiKart />
           </div>
         )}
 
@@ -90,16 +82,12 @@ export default function SozlukEkrani() {
 
         {/* SONUÇ LİSTESİ */}
         <div className="space-y-2">
-          {goruntulenenSonuclar.map((item, index) => (
-            <div
-              key={`${item.kelime}-${index}`}
-              className="animate-in fade-in duration-200"
-            >
-              <KelimeKarti
-                data={item}
-                onClick={() => handleKelimeSec(item)}
-              />
-            </div>
+          {goruntulenenSonuclar.map((kelime) => (
+            <KelimeKarti
+              key={kelime.id ?? kelime.kelime}
+              data={kelime}
+              onClick={() => handleKelimeSec(kelime)}
+            />
           ))}
         </div>
 
