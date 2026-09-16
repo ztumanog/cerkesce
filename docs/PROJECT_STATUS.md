@@ -61,3 +61,14 @@
 - ✅ Tüm testler yeşil
 - ✅ Kod kalitesi yüksek
 - ✅ Teknik borç sıfır
+
+# 🗺️ Proje Yol Haritası - CERKESCE Knowledge Engine
+
+**Son Güncelleme:** 16 Eylül 2026
+
+## 🎯 Faz Durumları
+
+- ✅ **Faz 1: Core Dictionary Platform** — Tamamlandı (16 Eylül 2026)
+- 🔄 **Faz 2: Translation Platform** — AKTİF (Eylül 2026)
+- 🔒 **Faz 3: Concept Engine** — Kilitli (Ekim 2026)
+- 🔒 **Faz 4-7: Advanced & Analytics** — Kilitli

@@ -1,3 +1,5 @@
+import type { KelimeMeta } from '@/types/dictionary';
+
 export interface RawDictionaryEntry {
   id: string;
   lemma: string;
@@ -15,7 +17,7 @@ export interface DailyWord {
   lehce: string;
   tarih: string;
   meta?: {
-    seviye?: string;
+    seviye?: KelimeMeta['seviye'];
     kategori?: string;
     notlar?: string;
   };
@@ -39,7 +41,8 @@ export function fnv1aHash(input: string): number {
 export function isDailyWordCandidate(entry: RawDictionaryEntry): boolean {
   const hasExamples = entry.examples && entry.examples.length > 0;
   const hasEtymology = entry.etymology && entry.etymology.trim().length > 0;
-  return !!(hasExamples || hasEtymology);
+  const hasTranslation = entry.translation && entry.translation.trim().length > 0;
+  return !!(hasExamples || hasEtymology || hasTranslation);
 }
 
 export function selectDailyWord(

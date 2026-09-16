@@ -1,74 +1,92 @@
-// src/utils/helpers.tsx
+// ============================================
+// ⬇️ ŞU KODLARI helpers.ts'in EN SONUNA EKLE
+// ============================================
 
 /**
- * Nullable veya tanımsız metinleri güvenle temizleyen ve boş dizeye düşüren yardımcı fonksiyon.
- * TS2345 hatasını engellemek için dönüş daima kesin tipli `string` olarak mühürlenir.
+ * metneCevir - Convert/escape text for safe HTML display
+ * Prevents XSS attacks by escaping HTML special characters
  */
-export function sanitizeString(value: string | undefined | null): string {
-  if (value === undefined || value === null) {
-    return '';
-  }
-  return value.trim();
+export function metneCevir(text: string | undefined | null): string {
+  if (!text) return '';
+  
+  return String(text)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#039;');
 }
 
 /**
- * Dizi indekslerini ve token erişimlerini güvenli daraltan yardımcı fonksiyon.
- * Satır 203, 204 ve 214 üzerindeki TS2532 ("Object is possibly undefined") hatalarını çözer.
+ * kaynagiDuzenle - Format dictionary source name
+ * Cleans up file names and source identifiers
  */
-export function resolveDictionaryTokens(
-  tokens: ReadonlyArray<string> | undefined
-): { readonly firstToken: string; readonly secondaryToken: string; readonly compositeToken: string } {
-  if (!tokens || tokens.length === 0) {
-    return { firstToken: '', secondaryToken: '', compositeToken: '' };
-  }
+export function kaynagiDuzenle(text: string | undefined | null): string {
+  if (!text) return 'Bilinmeyen Kaynak';
+  
+  return String(text)
+    .replace(/_/g, ' ')
+    .replace(/-/g, ' ')
+    .replace(/\.json$/i, '')
+    .replace(/\.csv$/i, '')
+    .replace(/\.txt$/i, '')
+    .trim()
+    .split(' ')
+    .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+    .join(' ');
+}
 
-  // noUncheckedIndexedAccess aktifken dizi elemanları `T | undefined` döner.
-  const rawFirst = tokens[0];
-  const rawSecond = tokens[1];
-
-  const firstToken = rawFirst !== undefined ? rawFirst.toLowerCase().trim() : '';
-  const secondaryToken = rawSecond !== undefined ? rawSecond.toLowerCase().trim() : '';
-
-  const compositeToken =
-    rawFirst !== undefined && rawSecond !== undefined
-      ? `${firstToken}_${secondaryToken}`
-      : firstToken;
-
-  return {
-    firstToken,
-    secondaryToken,
-    compositeToken,
+/**
+ * normalizeText - Normalize Turkish text
+ * Converts to lowercase and removes diacritics
+ */
+export function normalizeText(text: string): string {
+  if (!text) return '';
+  
+  const turkishMap: Record<string, string> = {
+    'ç': 'c', 'Ç': 'C',
+    'ğ': 'g', 'Ğ': 'G',
+    'ı': 'i', 'I': 'i',
+    'ö': 'o', 'Ö': 'O',
+    'ş': 's', 'Ş': 'S',
+    'ü': 'u', 'Ü': 'U',
   };
+
+  return String(text)
+    .toLowerCase()
+    .split('')
+    .map(char => turkishMap[char] || char)
+    .join('');
 }
 
 /**
- * Fonetik ve lemma biçimlendirme fonksiyonu.
- * Satır 291 üzerindeki TS2345 ("string | undefined is not assignable to string") hatasını çözer.
+ * truncateText - Truncate text to specified length
  */
-export function formatCircassianLemma(
-  rawLemma: string | undefined,
-  prefix: string | undefined
-): string {
-  const safeLemma = sanitizeString(rawLemma);
-  const safePrefix = sanitizeString(prefix);
-
-  if (safePrefix.length > 0) {
-    return `${safePrefix}-${safeLemma}`;
-  }
-
-  return safeLemma;
-}
-// Any türündeki veya obje/dizi yapısındaki veriyi güvenli string'e çevirir
-export function metneCevir(deger: unknown): string {
-  if (deger === null || deger === undefined) return '';
-  if (typeof deger === 'string') return deger;
-  if (Array.isArray(deger)) return deger.join(', ');
-  if (typeof deger === 'object') return JSON.stringify(deger);
-  return String(deger);
+export function truncateText(text: string, maxLength: number = 100): string {
+  if (!text) return '';
+  if (text.length <= maxLength) return text;
+  return text.substring(0, maxLength) + '...';
 }
 
-// Kaynak metinlerini biçimlendirmek için kullanılır
-export function kaynagiDuzenle(kaynak?: string): string {
-  if (!kaynak) return 'Bilinmeyen Kaynak';
-  return kaynak.trim();
+/**
+ * formatDate - Format date to Turkish locale
+ */
+export function formatDate(date: Date | string): string {
+  const d = typeof date === 'string' ? new Date(date) : date;
+  return d.toLocaleDateString('tr-TR', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+  });
+}
+
+/**
+ * getInitials - Get initials from name
+ */
+export function getInitials(name: string): string {
+  return name
+    .split(' ')
+    .map(word => word.charAt(0).toUpperCase())
+    .join('')
+    .substring(0, 2);
 }

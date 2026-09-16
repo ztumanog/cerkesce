@@ -6,6 +6,10 @@ import './globals.css';
 export const metadata: Metadata = {
   title: 'Çerkesçe Sözlük',
   description: 'Çerkesçe - Türkçe Sözlük Platformu',
+  icons: {
+    icon: '/icons/favicon.ico',
+    shortcut: '/icons/favicon.ico',
+  },
 };
 
 const themeScript = `

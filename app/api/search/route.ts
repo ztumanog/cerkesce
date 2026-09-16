@@ -10,6 +10,8 @@ export interface DictionaryEntry {
   anlam?: string;
   translation?: string;
   definition?: string;
+  definitions?: { meaning?: string }[];
+  full_definition_in_html?: string;
   dialect?: string;
   sourceLanguage?: string;
   targetLanguage?: string;
@@ -26,10 +28,15 @@ interface ParsedText {
 }
 
 interface KaynakInfo {
+  kelime: string;
   sözlük: string;
   anlam: string;
+  author?: string;
+  year?: string | number;
   dialect?: string;
   sourceFile?: string;
+  sourceLanguage?: string;
+  targetLanguage?: string;
 }
 
 interface GroupedResult {
@@ -46,6 +53,18 @@ function normalizeDialectParam(val: string): string {
   if (v === 'eastern' || v === 'dogu' || v === 'doğu') return 'kbd';
   if (v === 'western' || v === 'bati' || v === 'batı') return 'ady';
   return v;
+}
+
+function inferLanguageFromFile(fileName: string, position: 0 | 1): string | undefined {
+  const code = fileName.replace(/\.json$/i, '').split('-')[position]?.toLowerCase();
+  if (!code) return undefined;
+  if (code.startsWith('tu') || code.startsWith('tur')) return 'tr';
+  if (code.startsWith('en')) return 'en';
+  if (code.startsWith('kbd')) return 'kbd';
+  if (code.startsWith('ady')) return 'ady';
+  if (code.startsWith('rus') || code.startsWith('ru')) return 'ru';
+  if (code.startsWith('ar')) return 'ar';
+  return code;
 }
 
 function decodeHTMLEntities(str: string): string {
@@ -222,13 +241,31 @@ export async function GET(request: NextRequest) {
       if (!key) continue;
 
       const existing = groupedMap.get(key);
-
       const sourceFile = String(entry.sourceFile || '');
+
+      const firstDefMeaning = Array.isArray(entry.definitions) && entry.definitions.length > 0 
+        ? String(entry.definitions[0]?.meaning || '') 
+        : '';
+
+      const rawMeaning = String(
+        entry.anlam || 
+        entry.translation || 
+        entry.definition || 
+        firstDefMeaning || 
+        entry.full_definition_in_html || 
+        ''
+      );
+
       const kaynak: KaynakInfo = {
-        sözlük: String(entry.dictionaryName || sourceFile),
-        anlam: String(entry.anlam || entry.translation || entry.definition || ''),
+        kelime: String(rawWord),
+        sözlük: String(entry.dictionaryName || sourceFile || 'Bilinmeyen Sözlük'),
+        anlam: rawMeaning,
+        author: entry.author ? String(entry.author) : undefined,
+        year: entry.year ? String(entry.year) : undefined,
         dialect: entry.dialect ? String(entry.dialect) : undefined,
         sourceFile,
+        sourceLanguage: entry.sourceLanguage ? String(entry.sourceLanguage) : inferLanguageFromFile(sourceFile, 0),
+        targetLanguage: entry.targetLanguage ? String(entry.targetLanguage) : inferLanguageFromFile(sourceFile, 1),
       };
 
       if (existing) {
@@ -236,11 +273,12 @@ export async function GET(request: NextRequest) {
           existing.anlamlar.push(kaynak.anlam);
         }
 
-        const isDuplicate = existing.kaynaklar.some((k) =>
-          k.sourceFile && kaynak.sourceFile
-            ? k.sourceFile === kaynak.sourceFile
-            : k.sözlük === kaynak.sözlük && k.anlam === kaynak.anlam
-        );
+        const isDuplicate = existing.kaynaklar.some((k: KaynakInfo) => {
+          if (k.sourceFile && kaynak.sourceFile) {
+            return k.sourceFile === kaynak.sourceFile;
+          }
+          return k.sözlük === kaynak.sözlük && k.anlam === kaynak.anlam;
+        });
 
         if (!isDuplicate) {
           existing.kaynaklar.push(kaynak);

@@ -1,127 +1,149 @@
 'use client';
 
 import React from 'react';
-import {
-  Camera,
-  Code2,
-  Play,
-  Users,
-  BriefcaseBusiness,
-  Shield,
-  BookOpen,
-} from 'lucide-react';
+import { Camera, Code2, Users, Shield, BookOpen, Mail, Github, Heart } from 'lucide-react';
 
 export interface FooterProps {
-  aktifTema?: Record<string, any>;
   onKaynaklarAc?: () => void;
-  kayitSayisi?: number;
-  sozlukSayisi?: number;
-  sources?: any[];
-  totalSources?: number;
 }
 
 const sosyalBaglantilar = [
-  { ad: 'Facebook', href: 'https://www.facebook.com/', icon: Users },
-  { ad: 'Instagram', href: 'https://www.instagram.com/', icon: Camera },
-  { ad: 'YouTube', href: 'https://www.youtube.com/', icon: Play },
-  { ad: 'LinkedIn', href: 'https://www.linkedin.com/', icon: BriefcaseBusiness },
-  { ad: 'GitHub', href: 'https://github.com/', icon: Code2 },
+  { ad: 'Facebook', href: 'https://www.facebook.com/acikmektep', icon: Users },
+  { ad: 'Instagram', href: 'https://www.instagram.com/acikmektep', icon: Camera },
+  { ad: 'GitHub', href: 'https://github.com/acikmektep', icon: Code2 },
 ];
 
-export default function Footer({
-  onKaynaklarAc,
-}: FooterProps) {
+const footerBolumler = [
+  {
+    baslik: '📚 Hakkında',
+    linkler: [
+      { ad: 'Proje Hakkında', href: '#' },
+      { ad: 'Versiyon 1.0.0', href: '#' },
+      { ad: 'Açık Mektep', href: 'https://acikkitap.com.tr' },
+    ],
+  },
+  {
+    baslik: '🔗 Kaynaklar',
+    linkler: [
+      { ad: 'CC BY-SA 4.0', href: 'https://creativecommons.org/licenses/by-sa/4.0/' },
+      { ad: 'Kaynaklar', onClick: true },
+      { ad: 'Katkıda Bulun', href: 'https://github.com/acikmektep' },
+    ],
+  },
+  {
+    baslik: '💬 İletişim',
+    linkler: [
+      { ad: 'acıkmektep@gmail.com', href: 'mailto:acıkmektep@gmail.com', icon: Mail },
+      { ad: '@acikmektep', href: 'https://github.com/acikmektep', icon: Github },
+      { ad: 'Gizlilik', href: '/privacy', icon: Shield },
+    ],
+  },
+];
+
+export default function Footer({ onKaynaklarAc }: FooterProps) {
   return (
-    <footer className="mt-auto border-t border-[#c9a227]/30 bg-[#fbf8ef] dark:bg-slate-900 dark:border-slate-800 text-stone-800 dark:text-slate-200 transition-colors duration-300">
-      <div className="mx-auto max-w-6xl px-4 md:px-8 py-6">
+    <footer className="mt-auto border-t border-[#c9a227]/30 dark:border-slate-800 bg-gradient-to-b from-[#fbf8ef] to-[#f5f1e8] dark:from-slate-900 dark:to-slate-950 text-stone-800 dark:text-slate-200 py-8 px-3 sm:px-8 transition-colors duration-200">
+      <div className="max-w-6xl mx-auto">
         
-        {/* Kesin Yan Yana 3 Sütunlu Grid */}
-        <div className="grid grid-cols-3 gap-4 items-center">
-          
-          {/* 1. Sütun: Logo ve İsim */}
-          <div className="flex items-center gap-2 justify-start">
-            <div className="h-8 w-8 bg-[#8b1e1e] rounded-lg flex items-center justify-center text-white font-black text-sm shadow-sm shrink-0">
+        {/* ===== ÜSTTÜ BÖLÜM: LOGO VE AÇIKLAMA ===== */}
+        <div className="mb-8 pb-8 border-b border-[#c9a227]/20 dark:border-slate-700">
+          <div className="flex items-start gap-3 mb-4">
+            <div className="h-10 w-10 bg-[#8b1e1e] rounded-lg flex items-center justify-center text-white font-black text-lg shrink-0 shadow-md">
               А
             </div>
-            <div className="hidden sm:block">
-              <h3 className="text-sm font-bold text-[#8b1e1e] dark:text-emerald-400 leading-tight">
-                Açık Mektep
-              </h3>
-              <p className="text-xs text-stone-500 dark:text-slate-400 font-medium">
+            <div>
+              <h2 className="text-lg font-bold text-[#8b1e1e] dark:text-emerald-400">
                 Çerkesçe Sözlük
+              </h2>
+              <p className="text-xs text-stone-600 dark:text-slate-400 mt-1">
+                Açık Mektep tarafından geliştirilen, topluluk destekli Çerkesçe-Türkçe sözlük projesi.
+              </p>
+              <p className="text-[10px] text-stone-500 dark:text-slate-500 mt-2">
+                v1.0.0 • Lisans: CC BY-SA 4.0
               </p>
             </div>
           </div>
+        </div>
 
-          {/* 2. Sütun: Sosyal Medya */}
-          <div className="flex flex-col items-center justify-center">
-            <p className="text-[11px] font-bold text-[#8b1e1e] dark:text-emerald-400 uppercase tracking-wider mb-1.5 hidden sm:block">
-              Sosyal Medya
-            </p>
-            <div className="flex items-center gap-1 sm:gap-1.5 flex-wrap justify-center">
+        {/* ===== ORTADA BÖLÜM: 3 KOLON (YAN YANA) ===== */}
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 mb-8 pb-8 border-b border-[#c9a227]/20 dark:border-slate-700">
+          {footerBolumler.map((bolum, idx) => (
+            <div key={idx}>
+              <h3 className="text-sm font-bold text-stone-900 dark:text-white mb-4 pb-2 border-b-2 border-[#c9a227]/40 dark:border-slate-700">
+                {bolum.baslik}
+              </h3>
+              <ul className="space-y-2.5">
+                {bolum.linkler.map((link, linkIdx) => {
+                  const Icon = link.icon;
+                  return (
+                    <li key={linkIdx}>
+                      {link.onClick ? (
+                        <button
+                          onClick={onKaynaklarAc}
+                          className="text-xs text-stone-600 dark:text-slate-400 hover:text-[#8b1e1e] dark:hover:text-emerald-400 transition-colors flex items-center gap-2 font-medium group"
+                        >
+                          <BookOpen size={14} className="text-[#c9a227] dark:text-emerald-500 group-hover:scale-110 transition-transform" />
+                          {link.ad}
+                        </button>
+                      ) : (
+                        <a
+                          href={link.href}
+                          target={link.href?.startsWith('http') ? '_blank' : undefined}
+                          rel={link.href?.startsWith('http') ? 'noopener noreferrer' : undefined}
+                          className="text-xs text-stone-600 dark:text-slate-400 hover:text-[#8b1e1e] dark:hover:text-emerald-400 transition-colors flex items-center gap-2 font-medium group"
+                        >
+                          {Icon && <Icon size={14} className="text-[#c9a227] dark:text-emerald-500 group-hover:scale-110 transition-transform" />}
+                          {link.ad}
+                        </a>
+                      )}
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
+          ))}
+        </div>
+
+        {/* ===== ALTTAKI BÖLÜM: SOSYAL VE TELIF ===== */}
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
+          {/* SOSYAL BAĞLANTILAR */}
+          <div className="flex items-center gap-3">
+            <span className="text-xs font-semibold text-stone-600 dark:text-slate-400">
+              Bizi Takip Edin:
+            </span>
+            <div className="flex items-center gap-2">
               {sosyalBaglantilar.map(({ ad, href, icon: Icon }) => (
                 <a
                   key={ad}
                   href={href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label={ad}
-                  title={ad}
-                  className="flex items-center justify-center w-7 h-7 rounded-full border border-[#c9a227]/40 dark:border-slate-700 bg-white/80 dark:bg-slate-800 text-stone-600 dark:text-slate-300 hover:bg-[#8b1e1e] dark:hover:bg-emerald-600 hover:text-white dark:hover:text-white hover:border-[#8b1e1e] transition-all duration-200 hover:scale-105 shrink-0"
+                  title={`${ad} - @acikmektep`}
+                  className="w-8 h-8 rounded-full border-2 border-[#c9a227]/40 dark:border-slate-700 bg-white/80 dark:bg-slate-800 text-stone-600 dark:text-slate-300 flex items-center justify-center hover:bg-[#8b1e1e] dark:hover:bg-emerald-600 hover:text-white hover:border-[#8b1e1e] dark:hover:border-emerald-600 transition-all duration-200 shadow-sm hover:shadow-md"
                 >
-                  <Icon size={13} />
+                  <Icon size={14} />
                 </a>
               ))}
             </div>
           </div>
 
-          {/* 3. Sütun: Yasal / Bağlantılar */}
-          <div className="flex flex-col items-end justify-center space-y-1">
-            <button
-              type="button"
-              onClick={onKaynaklarAc}
-              className="text-xs text-stone-600 dark:text-slate-400 hover:text-[#8b1e1e] dark:hover:text-white transition-colors flex items-center gap-1 cursor-pointer font-medium"
-            >
-              <BookOpen size={12} className="text-[#8b1e1e] dark:text-emerald-400" />
-              <span>Kaynaklar</span>
-            </button>
-
+          {/* TELIF HAKKARI VE YARATICI */}
+          <div className="flex items-center gap-2 text-[10px] text-stone-500 dark:text-slate-500">
+            <span className="flex items-center gap-1">
+              <Heart size={10} className="text-red-500" />
+              Yapan:
+            </span>
             <a
-              href="https://creativecommons.org/licenses/by-sa/4.0/"
+              href="https://zekituman.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-xs text-stone-600 dark:text-slate-400 hover:text-[#8b1e1e] dark:hover:text-white transition-colors font-medium"
-            >
-              CC BY-SA 4.0
-            </a>
-
-            <a
-              href="/privacy"
-              className="text-xs text-stone-600 dark:text-slate-400 hover:text-[#8b1e1e] dark:hover:text-white transition-colors flex items-center gap-1 font-medium"
-            >
-              <Shield size={12} className="text-stone-400 dark:text-slate-500" />
-              <span>Gizlilik</span>
-            </a>
-          </div>
-
-        </div>
-
-        {/* Alt Satır */}
-        <div className="mt-5 pt-3 border-t border-[#c9a227]/30 dark:border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-1 text-[11px] text-stone-500 dark:text-slate-400">
-          <p className="text-center sm:text-left">
-            © 2026 <span className="font-semibold text-stone-700 dark:text-slate-300">Açık Mektep</span>. Tüm hakları saklıdır.
-          </p>
-          <p className="text-center sm:text-right">
-            <a
-              href="https://acikkitap.com.tr"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-[#8b1e1e] dark:hover:text-emerald-400 underline transition-colors"
+              className="text-stone-600 dark:text-slate-400 hover:text-[#8b1e1e] dark:hover:text-emerald-400 font-semibold transition-colors"
             >
               Zeki Tuman
-            </a>{' '}
-            tarafından geliştirilmiştir.
-          </p>
+            </a>
+            <span>•</span>
+            <span>© 2024 Açık Mektep</span>
+          </div>
         </div>
 
       </div>

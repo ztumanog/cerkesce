@@ -203,6 +203,7 @@ export const SearchBox: React.FC<SearchBoxProps> = ({ onResults }) => {
   const [dialect, setDialect] = useState('tumu');
   const [targetLang, setTargetLang] = useState('hepsi');
   const [dict, setDict] = useState('tumu');
+  const [resultCount, setResultCount] = useState<number | null>(null);
   const [isKlavyeOpen, setIsKlavyeOpen] = useState(false);
   const [showSettings, setShowSettings] = useState(false);
   const inputRef = useRef<HTMLInputElement>(null);
@@ -214,6 +215,7 @@ export const SearchBox: React.FC<SearchBoxProps> = ({ onResults }) => {
 
  const handleSearch = useCallback(async () => {
   if (!query.trim()) {
+    setResultCount(null);
     onResultsRef.current?.([], 0, false);
     return;
   }
@@ -233,6 +235,7 @@ export const SearchBox: React.FC<SearchBoxProps> = ({ onResults }) => {
     const data = await res.json();
 
     if (Array.isArray(data.results)) {
+      setResultCount(typeof data.total === 'number' ? data.total : data.results.length);
       const normalize = (s: string) =>
         s
           .trim()
@@ -280,15 +283,15 @@ const getGroupKey = (item: any): string => {
           const yeniKaynaklar = item.kaynaklar || [];
           const mevcutSozlukler = new Set(
             mevcut.kaynaklar?.map(
-              (k: any) => k.sözlük || k.title || k.kaynak || ''
+              (k: any) => `${k.sourceFile || k.file || ''}|${k.sözlük || k.title || k.kaynak || ''}|${k.author || ''}|${k.year || ''}`
             ) ?? []
           );
 
           yeniKaynaklar.forEach((k: any) => {
-            const sozlukAdi = k.sözlük || k.title || k.kaynak || '';
-            if (!mevcutSozlukler.has(sozlukAdi)) {
+            const kaynakAnahtari = `${k.sourceFile || k.file || ''}|${k.sözlük || k.title || k.kaynak || ''}|${k.author || ''}|${k.year || ''}`;
+            if (!mevcutSozlukler.has(kaynakAnahtari)) {
               mevcut.kaynaklar = [...(mevcut.kaynaklar || []), k];
-              mevcutSozlukler.add(sozlukAdi);
+              mevcutSozlukler.add(kaynakAnahtari);
             }
           });
 
@@ -374,16 +377,25 @@ if (process.env.NODE_ENV === 'development') {
 
   return (
     <div className="w-full flex flex-col gap-3">
+      <div className="flex items-center justify-between px-1">
+        <label htmlFor="dictionary-search" className="text-sm font-bold tracking-tight text-slate-800 dark:text-slate-100">
+          Sözlükte ara
+        </label>
+        <span className="text-[11px] font-medium text-slate-400 dark:text-slate-500">
+          Kelime veya anlam
+        </span>
+      </div>
       {/* ARAMA KUTUSU + AYARLAR BUTONU */}
-      <div className="flex gap-2 items-stretch">
+      <div className="flex flex-col gap-2 items-stretch sm:flex-row">
         <div className="relative flex-1 flex items-center">
           <input
             ref={inputRef}
+            id="dictionary-search"
             type="text"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             placeholder="Kelime veya anlam ara..."
-            className="w-full px-4 py-3.5 pl-11 pr-24 text-base bg-white dark:bg-zinc-900 text-zinc-900 dark:text-zinc-100 border border-zinc-200 dark:border-zinc-800 rounded-2xl shadow-sm focus:outline-none focus:ring-2 focus:ring-amber-500/20 focus:border-amber-500 transition-all"
+            className="w-full min-h-12 sm:min-h-14 px-4 py-3 pl-12 pr-24 text-base bg-slate-50 dark:bg-slate-950 text-zinc-900 dark:text-zinc-100 border-2 border-slate-200 dark:border-slate-700 rounded-xl shadow-inner focus:outline-none focus:border-amber-500 focus:ring-4 focus:ring-amber-500/15 transition-all placeholder:text-slate-400 dark:placeholder:text-slate-500"
           />
 
           <div className="absolute left-3.5 top-1/2 -translate-y-1/2 text-zinc-400 pointer-events-none">
@@ -408,7 +420,7 @@ if (process.env.NODE_ENV === 'development') {
             <button
               type="button"
               onClick={toggleKlavye}
-              className={`flex items-center justify-center p-2 rounded-xl text-base transition-all ${isKlavyeOpen ? 'bg-amber-500 text-white' : 'bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300'
+              className={`flex items-center justify-center p-2.5 rounded-lg text-base transition-all ${isKlavyeOpen ? 'bg-amber-500 text-white' : 'bg-slate-200 dark:bg-slate-800 text-zinc-700 dark:text-zinc-300'
                 }`}
               title="Sanal Klavyeyi Aç/Kapat"
             >
@@ -420,12 +432,18 @@ if (process.env.NODE_ENV === 'development') {
         {/* AYARLAR BUTONU */}
         <button
           onClick={() => setShowSettings(!showSettings)}
-          className="px-4 py-3.5 bg-amber-400 hover:bg-amber-500 text-stone-900 rounded-2xl font-semibold flex items-center gap-2 transition-colors whitespace-nowrap"
+          className="min-h-10 w-full justify-center px-4 text-sm bg-amber-400 hover:bg-amber-500 text-stone-950 rounded-lg font-bold flex items-center gap-1.5 transition-colors whitespace-nowrap shadow-sm hover:shadow-md focus:outline-none focus:ring-4 focus:ring-amber-500/20 sm:min-h-12 sm:w-auto"
         >
-          ⚙ Ayarlar
-          <ChevronDown size={18} className={`transition-transform ${showSettings ? 'rotate-180' : ''}`} />
+          ⚙ Filtreler
+          <ChevronDown size={16} className={`transition-transform ${showSettings ? 'rotate-180' : ''}`} />
         </button>
       </div>
+
+      {resultCount !== null && query.trim() && (
+        <p className="px-1 text-xs font-medium text-slate-500 dark:text-slate-400">
+          {resultCount} sonuç bulundu
+        </p>
+      )}
 
       {/* AKILLI KLAVYE */}
       {isKlavyeOpen && <AkilliKlavye sorgu={query} setSorgu={setQuery} inputRef={inputRef} />}

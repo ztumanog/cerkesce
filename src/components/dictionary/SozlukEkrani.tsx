@@ -11,8 +11,7 @@ export default function SozlukEkrani() {
   const [sonuclar, setSonuclar] = useState<KelimeItem[]>([]);
   const [yukleniyor, setYukleniyor] = useState(false);
   const [toplam, setToplam] = useState(0);
-  const [seciliKelime, setSeciliKelime] = useState<KelimeItem | null>(null);
-  const [drawerAcik, setDrawerAcik] = useState(false);
+const [seciliKelime, setSeciliKelime] = useState<KelimeItem | null>(null);  const [drawerAcik, setDrawerAcik] = useState(false);
   const [aramaMetni, setAramaMetni] = useState('');
   const [tumunuGoster, setTumunuGoster] = useState(false);
 
@@ -42,7 +41,7 @@ export default function SozlukEkrani() {
     <div className="w-full flex-1 bg-[#fbf8ef] dark:bg-slate-950 text-slate-800 dark:text-slate-100 transition-colors duration-200">
       <div className="max-w-4xl mx-auto px-3 py-3 space-y-3">
         {/* ARAMA KUTUSU */}
-        <div className="bg-white/90 dark:bg-slate-900 border border-stone-200 dark:border-slate-800 rounded-2xl shadow-sm p-3.5 sm:p-4">
+        <div className="bg-white dark:bg-slate-900 border border-amber-200 dark:border-slate-700 rounded-2xl shadow-md ring-1 ring-amber-100/80 dark:ring-amber-500/10 p-3 sm:p-5">
           <SearchBox onResults={handleResults} />
         </div>
 
@@ -71,12 +70,7 @@ export default function SozlukEkrani() {
         {/* SONUÇ SAYISI */}
         {sonuclar.length > 0 && (
           <div className="flex items-center justify-between px-1">
-            <h2 className="text-xs sm:text-sm font-bold text-stone-800 dark:text-slate-200">
-              📚 Sonuçlar
-              <span className="ml-1.5 text-emerald-700 dark:text-emerald-400 font-medium">
-                ({toplam} bulundu)
-              </span>
-            </h2>
+            <h2 className="text-xs sm:text-sm font-bold text-stone-800 dark:text-slate-200">Sonuçlar</h2>
           </div>
         )}
 

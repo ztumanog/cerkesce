@@ -82,6 +82,9 @@ export const KelimeKarti: React.FC<KelimeKartiProps> = ({ data, onClick }) => {
   const kaynaklar = data.kaynaklar || [];
   const ilkKaynak = kaynaklar[0];
   const kalanKaynakSayisi = kaynaklar.length - 1;
+  const karsilikSayisi = new Set(
+    (data.anlamlar || []).map((anlam) => anlam.trim().toLocaleLowerCase('tr-TR')).filter(Boolean),
+  ).size;
 
   return (
     <button
@@ -103,17 +106,31 @@ export const KelimeKarti: React.FC<KelimeKartiProps> = ({ data, onClick }) => {
         <p className="text-sm text-zinc-800 dark:text-zinc-200 line-clamp-1 leading-snug font-medium">
           {ilkAnlamMetin}
         </p>
+        <div className="flex flex-wrap items-center gap-1.5 text-[10px] font-semibold">
+          <span className="rounded-md bg-orange-100 px-2 py-1 text-orange-700 dark:bg-orange-950/50 dark:text-orange-300">Kavram</span>
+          <span className="rounded-md bg-slate-100 px-2 py-1 text-slate-500 dark:bg-slate-800 dark:text-slate-400">
+            {karsilikSayisi || (ilkAnlamMetin !== '—' ? 1 : 0)} karşılık
+          </span>
+          <span className="rounded-md bg-amber-100 px-2 py-1 text-amber-700 dark:bg-amber-950/50 dark:text-amber-300">
+            {kaynaklar.length} kaynak
+          </span>
+        </div>
         {ilkKaynak && (
-          <div className="flex items-center gap-1.5 text-xs text-zinc-500 dark:text-zinc-400 pt-0.5 min-w-0">
-            <span className="truncate font-normal">{formatKaynakDetayi(ilkKaynak)}</span>
-            {kalanKaynakSayisi > 0 && (
-              <>
-                <span className="text-zinc-300 dark:text-zinc-700">•</span>
-                <span className="text-amber-600 dark:text-amber-400 font-medium shrink-0">
-                  +{kalanKaynakSayisi} kaynak
-                </span>
-              </>
-            )}
+          <div className="flex items-center gap-1.5 pt-0.5 min-w-0 text-xs">
+            <div className="flex min-w-0 flex-1 items-center gap-1.5 text-zinc-500 dark:text-zinc-400">
+              <span className="truncate font-normal">{formatKaynakDetayi(ilkKaynak)}</span>
+              {kalanKaynakSayisi > 0 && (
+                <>
+                  <span className="text-zinc-300 dark:text-zinc-700">•</span>
+                  <span className="text-amber-600 dark:text-amber-400 font-medium shrink-0">
+                    +{kalanKaynakSayisi} kaynak
+                  </span>
+                </>
+              )}
+            </div>
+            <span className="shrink-0 font-semibold text-amber-700 transition-colors group-hover:text-amber-500 dark:text-amber-400">
+              Detay →
+            </span>
           </div>
         )}
       </div>

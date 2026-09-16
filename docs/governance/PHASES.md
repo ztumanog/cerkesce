@@ -1,31 +1,26 @@
-# Proje Fazları ve Takvim
+# PHASES
 
-## Faz 1: Foundation (Tamamlandı)
-- **Süre:** 50 gün
-- **Başlangıç:** 15 Aralık 2025
-- **Bitiş:** 3 Şubat 2026
-- **Başarı:** %100
+## Faz 1 — Core Dictionary Platform
 
-## Faz 2: Dictionary (Tamamlandı)
-- **Süre:** 58 gün
-- **Başlangıç:** 4 Şubat 2026
-- **Bitiş:** 1 Nisan 2026
-- **Başarı:** %100
+Durum: ✅ TAMAMLANDI (Kapanış: 2026-09-16)
 
-## Faz 3: Concept Engine (Devam Ediyor)
-- **Süre:** 28 gün
-- **Başlangıç:** 1 Ekim 2026
-- **Bitiş:** 28 Ekim 2026
-- **Hedefler:** Morfoloji, Semantik Analiz, Arama
+### Çıktılar
+- DictionaryLoader & Batch Loading
+- DictionaryService & DictionaryResolver
+- Source Registry & Normalization Layer
+- Search Engine & Performance Optimization
+- UI Foundation (SearchBox, Kelime Kartları, Drawer)
+- 34/34 Sözlük ve 428.000+ Kayıt Canlıda
 
-## Faz 4-5: Advanced Features
-- **Süre:** 120 gün
-- **Başlangıç:** Kasım 2026
-- **Bitiş:** Şubat 2027
-- **Hedefler:** ML, API Genişletme
+---
 
-## Faz 6-12: Enterprise Features
-- **Süre:** 300 gün
-- **Başlangıç:** Mart 2027
-- **Bitiş:** Aralık 2027
-- **Hedefler:** Kurumsal Özellikler
+## Faz 2 — Translation Platform
+
+Durum: 🔄 AKTİF
+
+### Amaç & Çıktılar
+- TranslationEntry (Canonical Identity - ADR-0015)
+- TranslationGroup (Semantic Grouping - ADR-0005)
+- TranslationRepository (Domain Contract - ADR-0007)
+- CrossDictionaryMatcher & Reverse Translation Search
+- TranslationTable UI

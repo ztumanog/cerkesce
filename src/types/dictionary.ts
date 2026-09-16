@@ -1,3 +1,33 @@
+/**
+ * File: src/types/dictionary.ts
+ * Generated: 2026-09-16
+ * Layer: Domain Model
+ */
+
+export interface DictionaryEntry {
+  id: string;
+  word: string;
+  definition: string;
+  partOfSpeech?: string;
+  examples?: string[];
+  translations?: TranslationEntry[];
+  meta?: DictionaryMeta;
+  synonyms?: string[];
+  antonyms?: string[];
+  etymology?: string;
+  usage?: string;
+  // classifyContent çıktısı için eklenen SSOT alanları:
+  relatedTerms?: string[];
+  usages?: string[];
+}
+export interface DictionarySource {
+  title: string;
+  author?: string;
+  publisher?: string;
+  year?: number | string;
+  rawDefinition?: string;
+}
+
 export interface RawDictionaryItem {
   word?: string;
   madde?: string;
@@ -31,19 +61,6 @@ export interface TranslationEntry {
   context?: string;
 }
 
-export interface DictionaryEntry {
-  id: string;
-  word: string;
-  definition: string;
-  partOfSpeech?: string;
-  examples?: string[];
-  translations?: TranslationEntry[];
-  meta?: DictionaryMeta;
-  synonyms?: string[];
-  antonyms?: string[];
-  etymology?: string;
-  usage?: string;
-}
 
 export type LehceTipi = 
   | 'Standart'
@@ -67,6 +84,9 @@ export type SozlukTipi =
   | 'Tarihsel';
 
 export interface KaynakItem {
+  kelime?: string;
+  sourceLanguage?: string;
+  targetLanguage?: string;
   title?: string;
   sözlük?: string;
   kaynak?: string;
@@ -88,6 +108,7 @@ export interface KaynakItem {
   anlam?: string;
   meaning?: string;
   full_definition_in_html?: string;
+  dialect?: string;
 }
 
 export interface KelimeItem {
@@ -98,12 +119,19 @@ export interface KelimeItem {
   anlamlar?: string[];
   ilkAnlam?: string;
   kaynaklar?: KaynakItem[];
+  lehce?: string;
 }
 
 export interface GruplanmisKelime {
-  harf: string;
-  kelimeler: KelimeItem[];
+  kelime: string;                    // Main word
+  anaKelime?: string;                // Root word
+  anlamlar?: string[];               // Meanings/definitions
+  kaynaklar?: KaynakItem[];          // Source references
+  dialect?: string;                  // Dialect (kbd, ady, etc.)
+  harf?: string;                     // Backward compatibility
+  kelimeler?: KelimeItem[];          // Backward compatibility
 }
+
 
 export interface KelimeMeta {
   seviye?: 'Başlangıç' | 'Orta' | 'İleri';
