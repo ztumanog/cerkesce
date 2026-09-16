@@ -1,132 +1,38 @@
-'use client';
+﻿/**
+ * File: src/components/Footer.tsx
+ * Generated: 2026-09-16
+ * Layer: UI
+ */
 
 import React from 'react';
-import { Camera, Code2, Users, Shield, BookOpen, Mail, GitBranch, Heart } from 'lucide-react';
 
-export interface FooterProps {
-  onKaynaklarAc?: () => void;
+export interface FooterLink {
+  ad: string;
+  href?: string;
+  onClick?: (() => void) | boolean;
+  icon?: React.ComponentType<{ className?: string }>;
 }
 
-const sosyalBaglantilar = [
-  { ad: 'Facebook', href: 'https://www.facebook.com/acikmektep', icon: Users },
-  { ad: 'Instagram', href: 'https://www.instagram.com/acikmektep', icon: Camera },
-  { ad: 'GitHub', href: 'https://github.com/acikmektep', icon: Code2 },
-];
-
-const footerBolumler = [
-  {
-    baslik: '📚 Hakkında',
-    linkler: [
-      { ad: 'Proje Hakkında', href: '#' },
-      { ad: 'Versiyon 1.0.0', href: '#' },
-      { ad: 'Açık Mektep', href: 'https://acikkitap.com.tr' },
-    ],
-  },
-  {
-    baslik: '🔗 Kaynaklar',
-    linkler: [
-      { ad: 'CC BY-SA 4.0', href: 'https://creativecommons.org/licenses/by-sa/4.0/' },
-      { ad: 'Kaynaklar', onClick: true },
-      { ad: 'Katkıda Bulun', href: 'https://github.com/acikmektep' },
-    ],
-  },
-  {
-    baslik: '💬 İletişim',
-    linkler: [
-      { ad: 'acıkmektep@gmail.com', href: 'mailto:acıkmektep@gmail.com', icon: Mail },
-      { ad: '@acikmektep', href: 'https://github.com/acikmektep', icon: GitBranch },
-      { ad: 'Gizlilik', href: '/privacy', icon: Shield },
-    ],
-  },
-];
-
-export default function Footer({ onKaynaklarAc }: FooterProps) {
+export const Footer: React.FC<{ links?: FooterLink[] }> = ({ links = [] }) => {
   return (
-    <footer className="mt-auto border-t border-[#c9a227]/30 dark:border-slate-800 bg-gradient-to-b from-[#fbf8ef] to-[#f5f1e8] dark:from-slate-900 dark:to-slate-950 text-stone-800 dark:text-slate-200 py-4 px-3 sm:px-8 transition-colors duration-200">
-      <div className="max-w-6xl mx-auto">
-        
-        {/* ===== ORTADA BÖLÜM: 3 KOLON (YAN YANA) ===== */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-4 pb-4 border-b border-[#c9a227]/20 dark:border-slate-700">
-          {footerBolumler.map((bolum, idx) => (
-            <div key={idx}>
-              <h3 className="text-sm font-bold text-stone-900 dark:text-white mb-2 pb-1 border-b-2 border-[#c9a227]/40 dark:border-slate-700">
-                {bolum.baslik}
-              </h3>
-              <ul className="space-y-1.5">
-                {bolum.linkler.map((link, linkIdx) => {
-                  const Icon = link.icon;
-                  return (
-                    <li key={linkIdx}>
-                      {link.onClick ? (
-                        <button
-                          onClick={onKaynaklarAc}
-                          className="text-xs text-stone-600 dark:text-slate-400 hover:text-[#8b1e1e] dark:hover:text-emerald-400 transition-colors flex items-center gap-2 font-medium group"
-                        >
-                          <BookOpen size={14} className="text-[#c9a227] dark:text-emerald-500 group-hover:scale-110 transition-transform" />
-                          {link.ad}
-                        </button>
-                      ) : (
-                        <a
-                          href={link.href}
-                          target={link.href?.startsWith('http') ? '_blank' : undefined}
-                          rel={link.href?.startsWith('http') ? 'noopener noreferrer' : undefined}
-                          className="text-xs text-stone-600 dark:text-slate-400 hover:text-[#8b1e1e] dark:hover:text-emerald-400 transition-colors flex items-center gap-2 font-medium group"
-                        >
-                          {Icon && <Icon size={14} className="text-[#c9a227] dark:text-emerald-500 group-hover:scale-110 transition-transform" />}
-                          {link.ad}
-                        </a>
-                      )}
-                    </li>
-                  );
-                })}
-              </ul>
-            </div>
-          ))}
-        </div>
-
-        {/* ===== ALTTAKI BÖLÜM: SOSYAL VE TELIF ===== */}
-        <div className="flex flex-col sm:flex-row items-center justify-between gap-2">
-          {/* SOSYAL BAĞLANTILAR */}
-          <div className="flex items-center gap-2">
-            <span className="text-xs font-semibold text-stone-600 dark:text-slate-400">
-              Bizi Takip:
-            </span>
-            <div className="flex items-center gap-1.5">
-              {sosyalBaglantilar.map(({ ad, href, icon: Icon }) => (
-                <a
-                  key={ad}
-                  href={href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  title={`${ad} - @acikmektep`}
-                  className="w-7 h-7 rounded-full border-2 border-[#c9a227]/40 dark:border-slate-700 bg-white/80 dark:bg-slate-800 text-stone-600 dark:text-slate-300 flex items-center justify-center hover:bg-[#8b1e1e] dark:hover:bg-emerald-600 hover:text-white hover:border-[#8b1e1e] dark:hover:border-emerald-600 transition-all duration-200 shadow-sm hover:shadow-md"
-                >
-                  <Icon size={12} />
-                </a>
-              ))}
-            </div>
+    <footer>
+      {links.map((link, idx) => {
+        const IconComponent = link.icon;
+        const isClickable = Boolean(link.onClick);
+        return (
+          <div key={idx}>
+            {IconComponent && <IconComponent className="w-4 h-4" />}
+            {isClickable ? (
+              <button onClick={typeof link.onClick === 'function' ? link.onClick : undefined}>
+                {link.ad}
+              </button>
+            ) : (
+              <a href={link.href ?? '#'}>{link.ad}</a>
+            )}
           </div>
-
-          {/* TELIF HAKKARI VE YARATICI */}
-          <div className="flex items-center gap-1.5 text-[9px] text-stone-500 dark:text-slate-500">
-            <span className="flex items-center gap-0.5">
-              <Heart size={8} className="text-red-500" />
-              Yapan:
-            </span>
-            <a
-              href="https://zekituman.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-stone-600 dark:text-slate-400 hover:text-[#8b1e1e] dark:hover:text-emerald-400 font-semibold transition-colors"
-            >
-              Zeki Tuman
-            </a>
-            <span>•</span>
-            <span>© 2024 Açık Mektep</span>
-          </div>
-        </div>
-
-      </div>
+        );
+      })}
     </footer>
   );
-}
+};
+export default Footer;

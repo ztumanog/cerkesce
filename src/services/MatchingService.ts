@@ -1,6 +1,6 @@
-/**
+﻿/**
  * @file src/services/MorphologyAwareMatchingService.ts
- * @description Dilbilimsel ve morfolojik eÅŸleÅŸtirme servisi ana uygulamasÄ±.
+ * @description Dilbilimsel ve morfolojik eÃ…Å¸leÃ…Å¸tirme servisi ana uygulamasÃ„Â±.
  */
 
 import { TranslationEntry } from "../domain/translation";
@@ -70,15 +70,15 @@ export class MorphologyAwareMatchingService {
     const normalized = word.toLowerCase().trim();
     variations.add(normalized);
 
-    // DoÄŸu Ã‡erkesÃ§e varyasyonlarÄ±
-    variations.add(normalized.replace(/É™/g, "a"));
-    variations.add(normalized.replace(/É™/g, "e"));
+    // DoÃ„Å¸u Ãƒâ€¡erkesÃƒÂ§e varyasyonlarÃ„Â±
+    variations.add(normalized.replace(/Ã‰â„¢/g, "a"));
+    variations.add(normalized.replace(/Ã‰â„¢/g, "e"));
 
-    // BatÄ± Ã‡erkesÃ§e varyasyonlarÄ±
-    variations.add(normalized.replace(/a/g, "É™"));
-    variations.add(normalized.replace(/e/g, "É™"));
+    // BatÃ„Â± Ãƒâ€¡erkesÃƒÂ§e varyasyonlarÃ„Â±
+    variations.add(normalized.replace(/a/g, "Ã‰â„¢"));
+    variations.add(normalized.replace(/e/g, "Ã‰â„¢"));
 
-    // Suffix varyasyonlarÄ±
+    // Suffix varyasyonlarÃ„Â±
     if (normalized.length > 3) {
       variations.add(normalized.slice(0, -1));
       variations.add(normalized.slice(0, -2));
@@ -165,8 +165,8 @@ export class MorphologyAwareMatchingService {
   }
 
   public async matchEntries(entryA: TranslationEntry, entryB: TranslationEntry): Promise<MatchResult> {
-    const lemmaA = this.normalize(entryA.lemma);
-    const lemmaB = this.normalize(entryB.lemma);
+    const lemmaA = this.normalize((entryA.lemma ?? entryA.sourceWord ?? "") ?? entryA.sourceWord ?? "");
+    const lemmaB = this.normalize((entryB.lemma ?? entryB.sourceWord ?? "") ?? entryB.sourceWord ?? "");
 
     if (!lemmaA || !lemmaB) {
       return { matchType: "NONE", score: 0.0 };
@@ -254,3 +254,5 @@ export class MorphologyAwareMatchingService {
 }
 
 export * from "./MorphologyAwareMatchingService";
+
+

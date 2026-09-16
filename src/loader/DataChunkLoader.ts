@@ -1,6 +1,6 @@
-/**
+﻿/**
  * @file src/loader/DataChunkLoader.ts
- * @description BÃ¼yÃ¼k veri paketlerini parÃ§alar (chunk) halinde belleÄŸe yÃ¼kler.
+ * @description BÃƒÂ¼yÃƒÂ¼k veri paketlerini parÃƒÂ§alar (chunk) halinde belleÃ„Å¸e yÃƒÂ¼kler.
  */
 
 import { TranslationEntry, TranslationGroup } from "../domain/translation";
@@ -22,8 +22,8 @@ export class DataChunkLoader {
   constructor(private repository: InMemoryTranslationRepository) {}
 
   /**
-   * BÃ¼yÃ¼k veri paketlerini parÃ§alar (chunk) halinde repository'e aktarÄ±r.
-   * UI dondurmamasÄ± iÃ§in mikro-gÃ¶rev (setImmediate/setTimeout) simÃ¼lasyonu iÃ§erir.
+   * BÃƒÂ¼yÃƒÂ¼k veri paketlerini parÃƒÂ§alar (chunk) halinde repository'e aktarÃ„Â±r.
+   * UI dondurmamasÃ„Â± iÃƒÂ§in mikro-gÃƒÂ¶rev (setImmediate/setTimeout) simÃƒÂ¼lasyonu iÃƒÂ§erir.
    */
   async loadChunked(
     data: DatasetPayload,
@@ -33,12 +33,12 @@ export class DataChunkLoader {
     const { entries, groups = [] } = data;
     const total = entries.length;
 
-    // GruplarÄ± yÃ¼kle
+    // GruplarÃ„Â± yÃƒÂ¼kle
     if (groups.length > 0) {
       this.repository.loadGroups(groups);
     }
 
-    // Kelime giriÅŸlerini chunk'lar halinde ekle
+    // Kelime giriÃ…Å¸lerini chunk'lar halinde ekle
     for (let i = 0; i < total; i += chunkSize) {
       const chunk = entries.slice(i, i + chunkSize);
       this.repository.loadEntries(chunk);
@@ -53,8 +53,9 @@ export class DataChunkLoader {
         });
       }
 
-      // Etkinlik dÃ¶ngÃ¼sÃ¼nÃ¼ (Event Loop) serbest bÄ±rak
+      // Etkinlik dÃƒÂ¶ngÃƒÂ¼sÃƒÂ¼nÃƒÂ¼ (Event Loop) serbest bÃ„Â±rak
       await new Promise((resolve) => setTimeout(resolve, 0));
     }
   }
 }
+

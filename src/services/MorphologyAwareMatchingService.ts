@@ -1,6 +1,6 @@
-/**
+﻿/**
  * @file src/services/MorphologyAwareMatchingService.ts
- * @description Morfolojik ve lehÃ§e duyarlÄ± eÅŸleÅŸtirme servisi.
+ * @description Morfolojik ve lehÃƒÂ§e duyarlÃ„Â± eÃ…Å¸leÃ…Å¸tirme servisi.
  */
 
 import { TranslationEntry } from "../domain/translation";
@@ -63,15 +63,15 @@ export class MorphologyAwareMatchingService {
     const normalized = word.toLowerCase().trim();
     variations.add(normalized);
 
-    // DoÄŸu Ã‡erkesÃ§e varyasyonlarÄ±
-    variations.add(normalized.replace(/É™/g, "a"));
-    variations.add(normalized.replace(/É™/g, "e"));
+    // DoÃ„Å¸u Ãƒâ€¡erkesÃƒÂ§e varyasyonlarÃ„Â±
+    variations.add(normalized.replace(/Ã‰â„¢/g, "a"));
+    variations.add(normalized.replace(/Ã‰â„¢/g, "e"));
 
-    // BatÄ± Ã‡erkesÃ§e varyasyonlarÄ±
-    variations.add(normalized.replace(/a/g, "É™"));
-    variations.add(normalized.replace(/e/g, "É™"));
+    // BatÃ„Â± Ãƒâ€¡erkesÃƒÂ§e varyasyonlarÃ„Â±
+    variations.add(normalized.replace(/a/g, "Ã‰â„¢"));
+    variations.add(normalized.replace(/e/g, "Ã‰â„¢"));
 
-    // Suffix (ek) varyasyonlarÄ±
+    // Suffix (ek) varyasyonlarÃ„Â±
     if (normalized.length > 3) {
       variations.add(normalized.slice(0, -1));
       variations.add(normalized.slice(0, -2));
@@ -108,7 +108,7 @@ export class MorphologyAwareMatchingService {
   }
 
   /**
-   * TranslationService ve Testler iÃ§in match metodu
+   * TranslationService ve Testler iÃƒÂ§in match metodu
    */
   public match(entry: TranslationEntry, query: string): number {
     if (!query || !entry) return 0;
@@ -118,7 +118,7 @@ export class MorphologyAwareMatchingService {
 
     let maxScore = 0;
 
-    // Lemma ile eÅŸleÅŸtir
+    // Lemma ile eÃ…Å¸leÃ…Å¸tir
     if (entry.lemma) {
       const lemmaVariations = this.generateVariations(entry.lemma);
       for (const qVar of queryVariations) {
@@ -134,7 +134,7 @@ export class MorphologyAwareMatchingService {
       }
     }
 
-    // Meanings (anlamlar) ile eÅŸleÅŸtir
+    // Meanings (anlamlar) ile eÃ…Å¸leÃ…Å¸tir
     if (entry.meanings && Array.isArray(entry.meanings)) {
       for (const meaning of entry.meanings) {
         const meaningText = (meaning as { value?: string; text?: string }).value || (meaning as { value?: string; text?: string }).text;
@@ -159,13 +159,13 @@ export class MorphologyAwareMatchingService {
   }
 
   /**
-   * Ä°ki girdi arasÄ±nda detaylÄ± eÅŸleÅŸme tÃ¼rÃ¼ ve skoru dÃ¶ner
+   * Ã„Â°ki girdi arasÃ„Â±nda detaylÃ„Â± eÃ…Å¸leÃ…Å¸me tÃƒÂ¼rÃƒÂ¼ ve skoru dÃƒÂ¶ner
    */
   public async matchEntries(entryA: TranslationEntry, entryB: TranslationEntry): Promise<MatchResult> {
     if (!entryA || !entryB) return { matchType: "NONE", score: 0.0 };
 
-    const lemmaA = this.normalize(entryA.lemma);
-    const lemmaB = this.normalize(entryB.lemma);
+    const lemmaA = this.normalize((entryA.lemma ?? entryA.sourceWord ?? "") ?? entryA.sourceWord ?? "");
+    const lemmaB = this.normalize((entryB.lemma ?? entryB.sourceWord ?? "") ?? entryB.sourceWord ?? "");
 
     if (!lemmaA || !lemmaB) {
       return { matchType: "NONE", score: 0.0 };
@@ -249,5 +249,7 @@ export class MorphologyAwareMatchingService {
   }
 }
 
-// DiÄŸer servislerin import uyumluluÄŸu iÃ§in alias export
+// DiÃ„Å¸er servislerin import uyumluluÃ„Å¸u iÃƒÂ§in alias export
 export { MorphologyAwareMatchingService as MatchingService };
+
+
