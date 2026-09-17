@@ -19,7 +19,15 @@ export class InMemoryTranslationRepository {
     return this.store.get(id) ?? null;
   }
 
+  async findCanonicalById(id: string): Promise<TranslationEntry | null> {
+    return this.findById(id);
+  }
+
   async getByLemma(lemma: string): Promise<TranslationEntry | null> {
+    return this.findByLemma(lemma);
+  }
+
+  async findByLemma(lemma: string): Promise<TranslationEntry | null> {
     const q = lemma.toLowerCase();
     for (const e of this.store.values()) {
       if ((e.lemma ?? e.word ?? '').toLowerCase() === q) return e;
@@ -107,6 +115,14 @@ export class InMemoryTranslationRepository {
     return null;
   }
 
+  async findGroupSenses(groupId: string): Promise<TranslationMeaning[]> {
+    const group = await this.getByGroup(groupId);
+    if (!group || !group.entries) return [];
+    return group.entries.flatMap((e) =>
+      (e.meanings ?? []).map((m) => (typeof m === 'string' ? { text: m } : m))
+    );
+  }
+
   async searchGroups(query: string): Promise<TranslationGroup[]> {
     const q = query.toLowerCase();
     return Array.from(this.groups.values()).filter((g) =>
@@ -120,6 +136,10 @@ export class InMemoryTranslationRepository {
 
   async findAll(): Promise<TranslationEntry[]> {
     return Array.from(this.store.values());
+  }
+
+  async getAll(): Promise<TranslationEntry[]> {
+    return this.findAll();
   }
 
   async findByMeaning(query: string, language?: string): Promise<TranslationEntry[]> {
