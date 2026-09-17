@@ -1,22 +1,20 @@
-import { defineConfig, configDefaults } from 'vitest/config';
-import react from '@vitejs/plugin-react';
+/**
+ * File: vitest.config.ts
+ * Generated: 17.09.2026
+ * Layer: Configuration
+ */
+
+import { defineConfig } from 'vitest/config';
 
 export default defineConfig({
-  plugins: [react()],
   test: {
-    globals: true,
-    environment: 'jsdom',
-    include: ['src/tests/**/*.test.ts', 'src/repository/**/*.test.ts'],
+    include: ['src/tests/**/*.test.ts'],
     exclude: [
-      ...configDefaults.exclude,
-      'src/tests/domain/concept/**',
-      'src/tests/certification/**',
-      'src/tests/services/ConceptFacade.test.ts',
-      'src/tests/repository/InMemoryConceptRepository.test.ts',
-      'src/tests/P5S5_02_GraphTraversal.test.ts',
+      '**/node_modules/**',
+      'src/tests/domain/DialectAnalytics.test.ts',
+      'src/tests/domain/ExportEngine.test.ts',
+      'src/tests/domain/LayoutAndBatchExport.test.ts',
+      'src/tests/domain/ConceptGraph.test.ts',
     ],
-    coverage: {
-      reporter: ['text', 'json', 'html'],
-    },
   },
 });

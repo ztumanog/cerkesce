@@ -62,7 +62,7 @@ describe("TranslationService Tests", () => {
 
     for (const query of queries) {
       const results =
-        query === "Ğ¿ÑÑ‹"
+        query === "псы"
           ? await translationService.search(query)
           : await repository.searchCrossDictionary(query);
 

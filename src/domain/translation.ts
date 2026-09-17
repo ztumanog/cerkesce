@@ -1,31 +1,20 @@
-﻿/**
- * @file src/domain/translation.ts
- */
+// SSOT: types/dictionary.ts â€” tÃ¼m tipler oradan gelir
 
-export type DialectType = 'KBD' | 'ADG' | 'BES' | 'DOGU' | 'BATI' | 'GENEL';
-export type DialectCode = DialectType;
-export type LanguageCode = 'TR' | 'RU' | 'EN' | 'AR';
 
-export interface TranslationMeaning {
-  id: string;
-  language: LanguageCode | string;
-  text: string;
-  exampleSentence?: string;
-  partOfSpeech?: string;
-  category?: string;
-  value?: string;
-  example?: string;
-}
+export type DialectType = import('../types/dictionary').DialectCode;
 
+// domain/translation.ts içindeki TranslationEntry'ye word ve definition ekle
 export interface TranslationEntry {
   id: string;
   lemma: string;
+  word?: string;        // ← ekle
+  definition?: string;  // ← ekle
   normalizedLemma?: string;
   sourceWord?: string;
-  dialect?: DialectType;
+  dialect?: string;
   pos?: string;
   meaning?: string;
-  meanings?: TranslationMeaning[];
+  meanings?: import('../types/dictionary').TranslationMeaning[];
   notes?: string;
   groupId?: string;
   frequency?: number;
@@ -33,31 +22,19 @@ export interface TranslationEntry {
   updatedAt?: Date;
 }
 
-export interface TranslationGroup {
-  id: string;
-  groupId?: string;
-  groupLabel?: string;
-  groupName?: string;
-  canonicalMeaning?: string;
-  entries: TranslationEntry[];
-  metadata?: Record<string, unknown>;
-}
-
-export interface TranslationRepository {
-  findById(id: string): Promise<TranslationEntry | null>;
-  findBySourceWord?(word: string): Promise<TranslationEntry[]>;
-  search(query: string, targetLang?: string): Promise<TranslationEntry[]>;
-  searchByMeaning(text: string): Promise<TranslationEntry[]>;
-  findByLanguage?(language: string): Promise<TranslationEntry[]>;
-  findGroupById?(groupId: string): Promise<TranslationGroup | null>;
-  searchGroups?(query: string): Promise<TranslationGroup[]>;
-  save(entry: TranslationEntry): Promise<void>;
-  saveBatch?(entries: TranslationEntry[]): Promise<void>;
-  clear?(): Promise<void>;
-}
-
 export interface SearchResult {
   query: string;
-  results: TranslationEntry[];
+  results: import('../types/dictionary').TranslationEntry[];
   totalCount: number;
 }
+export interface TranslationRepository {
+  findById(id: string): Promise<TranslationEntry | null>;
+  search(query: string, targetLang?: string): Promise<TranslationEntry[]>;
+  searchByMeaning?(text: string, lang?: string): Promise<TranslationEntry[]>;
+  save(entry: TranslationEntry): Promise<void | TranslationEntry>;
+  saveBatch?(entries: TranslationEntry[]): Promise<void>;
+  clear?(): Promise<void> | void;
+}
+
+
+export type { TranslationMeaning, TranslationGroup, LemmaGroup } from '../types/dictionary';

@@ -161,55 +161,59 @@ export class MorphologyAwareMatchingService {
   /**
    * Ã„Â°ki girdi arasÃ„Â±nda detaylÃ„Â± eÃ…Å¸leÃ…Å¸me tÃƒÂ¼rÃƒÂ¼ ve skoru dÃƒÂ¶ner
    */
-  public async matchEntries(entryA: TranslationEntry, entryB: TranslationEntry): Promise<MatchResult> {
-    if (!entryA || !entryB) return { matchType: "NONE", score: 0.0 };
+ public async matchEntries(entryA: TranslationEntry, entryB: TranslationEntry): Promise<MatchResult> {
+  if (!entryA || !entryB) return { matchType: "NONE", score: 0.0 };
 
-    const lemmaA = this.normalize((entryA.lemma ?? entryA.sourceWord ?? "") ?? entryA.sourceWord ?? "");
-    const lemmaB = this.normalize((entryB.lemma ?? entryB.sourceWord ?? "") ?? entryB.sourceWord ?? "");
+  // Normalize lemmas before comparison
+  const lemmaA = this.normalize(entryA.lemma ?? entryA.sourceWord ?? "");
+  const lemmaB = this.normalize(entryB.lemma ?? entryB.sourceWord ?? "");
 
-    if (!lemmaA || !lemmaB) {
-      return { matchType: "NONE", score: 0.0 };
-    }
-
-    if (lemmaA === lemmaB) {
-      return { matchType: "EXACT", score: 1.0 };
-    }
-
-    for (const rule of this.rules) {
-      if (!rule.sourcePattern || !rule.targetPattern) continue;
-
-      const sourceNorm = this.normalize(rule.sourcePattern);
-      const targetNorm = this.normalize(rule.targetPattern);
-
-      const convertedA = lemmaA.replace(sourceNorm, targetNorm);
-      const convertedB = lemmaB.replace(sourceNorm, targetNorm);
-
-      if (convertedA === lemmaB || convertedB === lemmaA) {
-        return {
-          matchType: "MORPHOLOGY_DIALECT_VARIANT",
-          score: rule.confidenceScore ?? 0.85,
-          matchedRuleId: rule.id,
-        };
-      }
-    }
-
-    let fuzzyScore = 0.0;
-    if (lemmaA.includes(lemmaB) || lemmaB.includes(lemmaA)) {
-      const minLen = Math.min(lemmaA.length, lemmaB.length);
-      const maxLen = Math.max(lemmaA.length, lemmaB.length);
-      fuzzyScore = minLen / maxLen;
-    } else {
-      const distance = this.levenshteinDistance(lemmaA, lemmaB);
-      const maxLen = Math.max(lemmaA.length, lemmaB.length);
-      fuzzyScore = 1.0 - distance / maxLen;
-    }
-
-    if (fuzzyScore > 0.3) {
-      return { matchType: "FUZZY", score: Number(fuzzyScore.toFixed(2)) };
-    }
-
+  if (!lemmaA || !lemmaB) {
     return { matchType: "NONE", score: 0.0 };
   }
+
+  // Case-insensitive exact match
+  if (lemmaA === lemmaB) {
+    return { matchType: "EXACT", score: 1.0 };
+  }
+
+  // Check for dialect variations using rules
+  for (const rule of this.rules) {
+    if (!rule.sourcePattern || !rule.targetPattern) continue;
+
+    const sourceNorm = this.normalize(rule.sourcePattern);
+    const targetNorm = this.normalize(rule.targetPattern);
+
+    const convertedA = lemmaA.replace(sourceNorm, targetNorm);
+    const convertedB = lemmaB.replace(sourceNorm, targetNorm);
+
+    if (convertedA === lemmaB || convertedB === lemmaA) {
+      return {
+        matchType: "MORPHOLOGY_DIALECT_VARIANT",
+        score: rule.confidenceScore ?? 0.85,
+        matchedRuleId: rule.id,
+      };
+    }
+  }
+
+  // Fuzzy matching
+  let fuzzyScore = 0.0;
+  if (lemmaA.includes(lemmaB) || lemmaB.includes(lemmaA)) {
+    const minLen = Math.min(lemmaA.length, lemmaB.length);
+    const maxLen = Math.max(lemmaA.length, lemmaB.length);
+    fuzzyScore = minLen / maxLen;
+  } else {
+    const distance = this.levenshteinDistance(lemmaA, lemmaB);
+    const maxLen = Math.max(lemmaA.length, lemmaB.length);
+    fuzzyScore = 1.0 - distance / maxLen;
+  }
+
+  if (fuzzyScore > 0.3) {
+    return { matchType: "FUZZY", score: Number(fuzzyScore.toFixed(2)) };
+  }
+
+  return { matchType: "NONE", score: 0.0 };
+}
 
   public async calculateSimilarity(entryA: TranslationEntry, entryB: TranslationEntry): Promise<number> {
     if (entryA.id && entryB.id && entryA.id === entryB.id) {

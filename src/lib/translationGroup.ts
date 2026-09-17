@@ -18,10 +18,24 @@ export type ExtendedKaynakItem = KaynakItem & {
   source?: string;
   sözlük?: string;
   sozluk?: string;
+  id: string;
+  word: string;
+  meaning: string;
+  dictionaryId: string;
+  language?: string;
+  targetLanguage?: string;
 };
+
+export interface DictionaryRawItem {
+  dictionaryName?: string;  // ← ekle
+  // ... mevcut alanlar
+}
 
 export type ExtendedGroupedDictionaryEntry = GroupedDictionaryEntry & {
   kaynaklar?: ExtendedKaynakItem[];
+  sourceDictionaryId?: string; 
+  source?: string; 
+  kaynak?: string; 
 };
 
 const CYRILLIC_REGEX = /[\u0400-\u04FF\u04CF]/i;
@@ -141,6 +155,9 @@ export function groupTranslations(
     if (displayWord === '—' && plainDef === '—') return;
 
     const yeniKaynak: ExtendedKaynakItem = {
+      id: entry.id,
+      word: entry.word,
+      dictionaryId: entry.dictionaryId,
       tanim: plainDef,
       meaning: plainDef,
       full_definition_in_html: htmlDef,
@@ -162,6 +179,9 @@ export function groupTranslations(
         const defPlain = (def.meaning || def.tanim || plainDef).trim();
         const defHtml = def.full_definition_in_html || htmlDef;
         eklenecekKaynaklar.push({
+          id: entry.id,
+          word: entry.word,
+          dictionaryId: entry.dictionaryId,
           tanim: defPlain,
           meaning: defPlain,
           full_definition_in_html: defHtml,

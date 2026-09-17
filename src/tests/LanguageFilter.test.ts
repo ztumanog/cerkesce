@@ -1,7 +1,7 @@
 import { describe, it, expect, beforeEach } from "vitest";
 import { InMemoryTranslationRepository } from "../repository/InMemoryTranslationRepository";
 import { TranslationService } from "../services/TranslationService";
-import { LanguageCode } from "../domain/translation";
+import { LanguageCode, TranslationEntry } from "../domain/translation";
 
 describe("ADR-0008 Type Safety & Multi-Language Filter Validation", () => {
   let repository: InMemoryTranslationRepository;
@@ -13,9 +13,10 @@ describe("ADR-0008 Type Safety & Multi-Language Filter Validation", () => {
     repository = new InMemoryTranslationRepository();
     service = new TranslationService(repository);
 
-    // Seed 40 test cases across 4 target languages
+    // Seed 10 test entries, each with meanings in TR, EN, RU, AR
     for (let i = 1; i <= 10; i++) {
-      await service.registerEntry({
+      const entry: TranslationEntry = {
+        id: `e-${i}`,
         sourceId: "test_dict",
         sourceEntryId: `${100 + i}`,
         lemma: `lemma_${i}`,
@@ -26,11 +27,12 @@ describe("ADR-0008 Type Safety & Multi-Language Filter Validation", () => {
           { id: `m_ru_${i}`, language: "RU" as LanguageCode, text: `test_voda_${i}` },
           { id: `m_ar_${i}`, language: "AR" as LanguageCode, text: `test_maa_${i}` },
         ],
-      } as any);
+      };
+      await repository.save(entry);
     }
   });
 
-  it("Zorunlu dil filtresi (TR/EN/RU/AR) izolasyonunu tam doÄŸrulamalÄ±", async () => {
+  it("Zorunlu dil filtresi (TR/EN/RU/AR) izolasyonunu tam doğrulamalı", async () => {
     for (const lang of LANGUAGES) {
       const results = await service.searchByMeaning("test_", lang);
       expect(results.length).toBe(10);
@@ -41,12 +43,13 @@ describe("ADR-0008 Type Safety & Multi-Language Filter Validation", () => {
     }
   });
 
-  it("Filtresiz aramada tÃ¼m dillerdeki eÅŸleÅŸmeler dÃ¶nmeli", async () => {
+  it("Filtresiz aramada tüm dillerdeki eşleşmeler dönmeli", async () => {
     const results = await service.searchByMeaning("test_");
     expect(results.length).toBe(10);
   });
 
-  it("YanlÄ±ÅŸ dil filtresinde boÅŸ dizi dÃ¶nmeli", async () => {
+  it("Yanlış dil filtresinde boş dizi dönmeli", async () => {
+    // "test_water_1" only exists in EN, so searching for it in TR should return []
     const results = await service.searchByMeaning("test_water_1", "TR");
     expect(results.length).toBe(0);
   });

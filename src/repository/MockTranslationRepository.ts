@@ -1,74 +1,92 @@
-﻿/**
+/**
  * File: src/repository/MockTranslationRepository.ts
- * Generated: 2026-09-16
+ * Generated: 2026-09-17
  * Layer: Repository
  */
 
-import { TranslationEntry, TranslationGroup, TranslationRepository } from "../domain/translation";
-import { getMeaningText, getMeaningLanguage } from "./helpers/meaningHelpers";
+import { TranslationEntry, TranslationGroup } from "../domain/translation";
 
-export class MockTranslationRepository implements TranslationRepository {
-  private entries: TranslationEntry[] = [];
-  private groups: TranslationGroup[] = [
-    { groupId: "g-head", id: "g-head", groupName: "Baş Kavramı", entries: [] },
-    { groupId: "g-water", id: "g-water", groupName: "Su ve Sıvı Kavramı", entries: [] }
+export class MockTranslationRepository {
+  private mockEntries: TranslationEntry[] = [
+    {
+      id: "e-1",
+      lemma: "шъхьэ",
+      normalizedLemma: "шъхьэ",
+      dialect: "BATI",
+      groupId: "g-head",
+      meanings: [{ id: "m-1", language: "TR", text: "baş" }],
+    },
+    {
+      id: "e-2",
+      lemma: "щхьэ",
+      normalizedLemma: "щхьэ",
+      dialect: "DOGU",
+      groupId: "g-head",
+      meanings: [{ id: "m-2", language: "TR", text: "baş" }],
+    },
+    {
+      id: "e-3",
+      lemma: "псы",
+      normalizedLemma: "псы",
+      dialect: "DOGU",
+      groupId: "g-water",
+      meanings: [{ id: "m-3", language: "TR", text: "su" }],
+    },
   ];
 
-  async findById(id: string): Promise<TranslationEntry | null> {
-    return this.entries.find((e) => e.id === id) || null;
+  private mockGroups: TranslationGroup[] = [
+    { id: "g-head", groupName: "Baş Kavramı", entries: [] },
+  ];
+
+  async findByLemma(lemma: string): Promise<TranslationEntry | null> {
+    const lower = lemma.toLowerCase();
+    return (
+      this.mockEntries.find((e) => e.lemma.toLowerCase() === lower) ?? null
+    );
   }
 
-  async findBySourceWord(word: string): Promise<TranslationEntry[]> {
-    return this.entries.filter((e) => (e.sourceWord ?? "").toLowerCase() === word.toLowerCase());
+  async getByLemma(lemma: string): Promise<TranslationEntry | null> {
+    return this.findByLemma(lemma);
+  }
+
+  async searchCrossDictionary(query: string): Promise<TranslationEntry[]> {
+    const trimmed = query.trim();
+    if (!trimmed) return this.mockEntries;
+    const lower = trimmed.toLowerCase();
+    return this.mockEntries.filter(
+      (e) =>
+        e.lemma.toLowerCase().includes(lower) ||
+        (e.meanings ?? []).some((m) => (typeof m === "string" ? m : m.text).toLowerCase().includes(lower))
+    );
   }
 
   async search(query: string, targetLang?: string): Promise<TranslationEntry[]> {
-    const q = query.toLowerCase();
-    return this.entries.filter((e) => {
-      const matchSource = (e.sourceWord ?? "").toLowerCase().includes(q);
-      const matchLemma = e.lemma ? e.lemma.toLowerCase().includes(q) : false;
-      const matchMeaning = e.meanings?.some((m) => {
-        const textMatch = getMeaningText(m).toLowerCase().includes(q);
-        const lang = getMeaningLanguage(m);
-        const langMatch = targetLang ? (lang ? lang.toUpperCase() === targetLang : false) : true;
-        return textMatch && langMatch;
-      });
-      return matchSource || matchLemma || matchMeaning;
-    });
-  }
+    const results = await this.searchCrossDictionary(query);
+    if (!targetLang) return results;
 
-  async findByLanguage(language: string): Promise<TranslationEntry[]> {
-    return this.entries.filter((e) =>
-      e.meanings?.some((m) => getMeaningLanguage(m) === language)
+    const targetLower = targetLang.toLowerCase();
+    return results.filter((entry) =>
+      (entry.meanings ?? []).some((m) => (typeof m === "string" ? "" : (typeof m === "string" ? "" : m.language ?? "")).toLowerCase() === targetLower)
     );
   }
 
-  async searchByMeaning(meaningText: string): Promise<TranslationEntry[]> {
-    const q = meaningText.toLowerCase();
-    return this.entries.filter((e) =>
-      e.meanings?.some((m) => getMeaningText(m).toLowerCase().includes(q))
-    );
+  async getTranslations(query: string): Promise<TranslationEntry[]> {
+    return this.searchCrossDictionary(query);
   }
 
-  async findGroupById(groupId: string): Promise<TranslationGroup | null> {
-    return this.groups.find((g) => g.groupId === groupId || g.id === groupId) || null;
+  async reverseLookup(query: string): Promise<TranslationEntry[]> {
+    return this.searchCrossDictionary(query);
   }
 
-  async searchGroups(query: string): Promise<TranslationGroup[]> {
-    const q = query.toLowerCase();
-    return this.groups.filter((g) => (g.groupName ?? "").toLowerCase().includes(q));
+  async findGroupSenses(groupId: string): Promise<TranslationGroup | null> {
+    const group = this.mockGroups.find((g) => g.id === groupId);
+    if (!group) return null;
+    const entries = this.mockEntries.filter((e) => e.groupId === groupId);
+    return { ...group, entries };
   }
 
-  async save(entry: TranslationEntry): Promise<void> {
-    this.entries.push(entry);
-  }
-
-  async saveBatch(entries: TranslationEntry[]): Promise<void> {
-    this.entries.push(...entries);
-  }
-
-  async clear(): Promise<void> {
-    this.entries = [];
+  async getByGroup(groupId: string): Promise<TranslationGroup | null> {
+    return this.findGroupSenses(groupId);
   }
 }
 
