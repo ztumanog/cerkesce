@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useMemo, useState } from "react";
 // @ts-ignore: TypeScript JSON modülünü tanımadığında hata vermemesi için
@@ -85,7 +85,7 @@ function maddeSayisi(kayit: ManifestKaydi): number {
   );
 }
 
-function kayitDiyalekt(kayit: ManifestKaydi): "western" | "DOGU" | null {
+function kayitDiyalekt(kayit: ManifestKaydi): "western" | "KBD" | null {
   const deger = metin(kayit.dialect).toLocaleUpperCase("tr-TR");
 
   if (deger === "western" || deger === "western ADIGE") {
@@ -93,12 +93,12 @@ function kayitDiyalekt(kayit: ManifestKaydi): "western" | "DOGU" | null {
   }
 
   if (
-    deger === "DOGU" ||
+    deger === "KBD" ||
     deger === "DOĞU" ||
     deger === "KABARDEY" ||
     deger === "DOĞU ADIGE"
   ) {
-    return "DOGU";
+    return "KBD";
   }
 
   return null;
@@ -174,7 +174,7 @@ export default function Kaynaklar({
         western += 1;
       }
 
-      if (kayitDiyalekt(kayit) === "DOGU") {
+      if (kayitDiyalekt(kayit) === "KBD") {
         dogu += 1;
       }
     });
@@ -220,7 +220,7 @@ export default function Kaynaklar({
       const diyalektUygun =
         seciliDiyalekt === "HEPSİ" ||
         (seciliDiyalekt === "western" && diyalekt === "western") ||
-        (seciliDiyalekt === "DOĞU" && diyalekt === "DOGU");
+        (seciliDiyalekt === "DOĞU" && diyalekt === "KBD");
 
       return aramaUygun && diyalektUygun;
     });

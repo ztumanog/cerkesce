@@ -1,4 +1,4 @@
-import { describe, it, expect, beforeEach } from "vitest";
+﻿import { describe, it, expect, beforeEach } from "vitest";
 
 // DialectRule arayÃ¼z tanÄ±mÄ± (gerekli alanlar ile)
 export interface DialectRule {
@@ -36,8 +36,8 @@ describe("DialectRuleRepository Tests", () => {
   beforeEach(() => {
     // Ã–rnek test verileri ile repository ilklendiriliyor
     const mockRules: DialectRule[] = [
-      { id: "rule-1", fromDialect: "DOGU", toDialect: "BATI", pattern: "a", replacement: "e" },
-      { id: "rule-2", fromDialect: "BATI", toDialect: "DOGU", pattern: "x", replacement: "y" }
+      { id: "rule-1", fromDialect: "KBD", toDialect: "ADY", pattern: "a", replacement: "e" },
+      { id: "rule-2", fromDialect: "ADY", toDialect: "KBD", pattern: "x", replacement: "y" }
     ];
     repository = new InMemoryDialectRuleRepository(mockRules);
   });
@@ -53,11 +53,11 @@ describe("DialectRuleRepository Tests", () => {
   });
 
   it("belirli kaynak ve hedef lehÃ§elere gÃ¶re kurallarÄ± getirir", async () => {
-    const rules = await repository.getDialectRules("DOGU", "BATI");
+    const rules = await repository.getDialectRules("KBD", "ADY");
     expect(rules).toBeDefined();
     expect(rules.length).toBe(1);
-    expect(rules[0].fromDialect).toBe("DOGU");
-    expect(rules[0].toDialect).toBe("BATI");
+    expect(rules[0].fromDialect).toBe("KBD");
+    expect(rules[0].toDialect).toBe("ADY");
   });
 
   it("ID ile lehÃ§e kuralÄ±nÄ± getirir", async () => {

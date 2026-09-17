@@ -1,4 +1,4 @@
-/**
+﻿/**
  * File: src/types/dictionary.ts
  * Layer: Domain Model
  */
@@ -16,9 +16,9 @@ export interface TranslationMeaning {
   partOfSpeech?: string;
 }
 
-export type LehceTipi = 'TUMU' | 'ADY' | 'KBD' | 'western' | 'DOGU';
+export type LehceTipi = 'TUMU' | 'ADY' | 'KBD' | 'western' | 'KBD';
 export type SozlukTipi = string;
-export type DialectCode = 'KBD' | 'ADG' | 'BES' | 'DOGU' | 'BATI' | 'GENEL';
+export type DialectCode = 'KBD' | 'ADG' | 'BES' | 'KBD' | 'ADY' | 'GENEL';
 export type LanguageCode = 'TR' | 'RU' | 'EN' | 'AR';
 
 // ============================================================================

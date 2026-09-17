@@ -3,8 +3,8 @@ import { loadDictionaryData } from '@/lib/dictionaryLoader';
 
 function normalizeDialectParam(val: string): string {
   const v = (val || '').toLowerCase();
-  if (v === 'eastern' || v === 'dogu' || v === 'doğu') return 'kbd';
-  if (v === 'western' || v === 'bati' || v === 'batı') return 'ady';
+  if (v === 'eastern' || v === 'KBD' || v === 'doğu') return 'kbd';
+  if (v === 'western' || v === 'bati' || v === 'ADY') return 'ady';
   return v;
 }
 

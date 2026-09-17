@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import React from 'react';
 import { ChevronRight } from 'lucide-react';
@@ -49,7 +49,7 @@ const getLehceBadgeClass = (lehce?: string): string => {
       return 'bg-emerald-100 dark:bg-emerald-950 text-emerald-800 dark:text-emerald-300 border-emerald-300 dark:border-emerald-800';
     case 'KBD':
     case 'KABARDEY':
-    case 'DOGU':
+    case 'KBD':
       return 'bg-blue-100 dark:bg-blue-950 text-blue-800 dark:text-blue-300 border-blue-300 dark:border-blue-800';
     default:
       return 'bg-zinc-100 dark:bg-zinc-900 text-zinc-700 dark:text-zinc-300 border-zinc-300 dark:border-zinc-700';

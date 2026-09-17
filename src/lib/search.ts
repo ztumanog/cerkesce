@@ -1,8 +1,8 @@
-import { RefObject, Dispatch, SetStateAction } from "react";
+﻿import { RefObject, Dispatch, SetStateAction } from "react";
 import { DictionaryMeta } from "@/types/dictionary";
 
 export type AramaModu = "baslayan" | "icinde" | "tam";
-export type Dialect = "western" | "DOGU";
+export type Dialect = "western" | "KBD";
 export type LehceTipi = "TUMU" | Dialect;
 
 export interface SearchBoxProps {

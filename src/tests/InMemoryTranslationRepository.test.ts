@@ -1,4 +1,4 @@
-/**
+﻿/**
  * File: src/tests/InMemoryTranslationRepository.test.ts
  * Generated: 2026-09-17
  * Layer: Test
@@ -47,7 +47,7 @@ describe("InMemoryTranslationRepository Tests", () => {
       id: "e-1",
       lemma: "шъхьэ",
       normalizedLemma: "шъхьэ",
-      dialect: "BATI",
+      dialect: "ADY",
       groupId: "g-head",
       meanings: [
         {
@@ -61,7 +61,7 @@ describe("InMemoryTranslationRepository Tests", () => {
       id: "e-2",
       lemma: "щхьэ",
       normalizedLemma: "щхьэ",
-      dialect: "DOGU",
+      dialect: "KBD",
       groupId: "g-head",
       meanings: [
         {
@@ -75,7 +75,7 @@ describe("InMemoryTranslationRepository Tests", () => {
       id: "e-3",
       lemma: "псы",
       normalizedLemma: "псы",
-      dialect: "DOGU",
+      dialect: "KBD",
       groupId: "g-water",
       meanings: [
         {
@@ -89,7 +89,7 @@ describe("InMemoryTranslationRepository Tests", () => {
       id: "e-4",
       lemma: "псыхъо",
       normalizedLemma: "псыхъо",
-      dialect: "BATI",
+      dialect: "ADY",
       groupId: "g-water",
       meanings: [
         {
@@ -103,7 +103,7 @@ describe("InMemoryTranslationRepository Tests", () => {
       id: "e-5",
       lemma: "жъы",
       normalizedLemma: "жъы",
-      dialect: "BATI",
+      dialect: "ADY",
       groupId: "g-head",
       meanings: [
         {
@@ -117,7 +117,7 @@ describe("InMemoryTranslationRepository Tests", () => {
       id: "e-6",
       lemma: "гу",
       normalizedLemma: "гу",
-      dialect: "DOGU",
+      dialect: "KBD",
       groupId: "g-heart",
       meanings: [
         {
@@ -131,7 +131,7 @@ describe("InMemoryTranslationRepository Tests", () => {
       id: "e-7",
       lemma: "баш",
       normalizedLemma: "баш",
-      dialect: "BATI",
+      dialect: "ADY",
       groupId: "g-head-tr",
       meanings: [
         {
@@ -145,7 +145,7 @@ describe("InMemoryTranslationRepository Tests", () => {
       id: "e-8",
       lemma: "псэ",
       normalizedLemma: "псэ",
-      dialect: "DOGU",
+      dialect: "KBD",
       groupId: "g-soul",
       meanings: [
         {
@@ -349,14 +349,14 @@ describe("InMemoryTranslationRepository Tests", () => {
   });
 
   describe("Lehçe Filtreleme", () => {
-    it("BATI lehçesi girdileri doğru döndürülmelidir", async () => {
+    it("ADY lehçesi girdileri doğru döndürülmelidir", async () => {
       const result = await repository.findByLemma("шъхьэ");
-      expect(result?.dialect).toBe("BATI");
+      expect(result?.dialect).toBe("ADY");
     });
 
-    it("DOGU lehçesi girdileri doğru döndürülmelidir", async () => {
+    it("KBD lehçesi girdileri doğru döndürülmelidir", async () => {
       const result = await repository.findByLemma("щхьэ");
-      expect(result?.dialect).toBe("DOGU");
+      expect(result?.dialect).toBe("KBD");
     });
 
     it("aynı grup içinde farklı lehçeler olabilmelidir", async () => {

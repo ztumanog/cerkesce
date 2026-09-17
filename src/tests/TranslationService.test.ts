@@ -1,4 +1,4 @@
-import { describe, it, expect, beforeEach } from "vitest";
+﻿import { describe, it, expect, beforeEach } from "vitest";
 import { InMemoryTranslationRepository } from "../repository/InMemoryTranslationRepository";
 import { TranslationService } from "../services/TranslationService";
 import { MorphologyAwareMatchingService } from "../services/MorphologyAwareMatchingService";
@@ -14,7 +14,7 @@ const mockEntries: TranslationEntry[] = [
     id: "e-1",
     lemma: "ÑˆÑŠÑ…ÑŒÑ",
     normalizedLemma: "ÑˆÑŠÑ…ÑŒÑ",
-    dialect: "BATI",
+    dialect: "ADY",
     groupId: "g-head",
     meanings: [
       { id: "m-1", language: "TR", text: "baÅŸ" },
@@ -25,7 +25,7 @@ const mockEntries: TranslationEntry[] = [
     id: "e-water",
     lemma: "Ğ¿ÑÑ‹",
     normalizedLemma: "Ğ¿ÑÑ‹",
-    dialect: "DOGU",
+    dialect: "KBD",
     groupId: "TRG_WATER",
     meanings: [
       { id: "m-water-tr", language: "TR", text: "su" },

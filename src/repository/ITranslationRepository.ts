@@ -1,4 +1,4 @@
-/**
+﻿/**
  * @file src/repository/ITranslationRepository.ts
  * @description ADR-0007 standardÄ±na uygun Repository ArayÃ¼zÃ¼ - KapsamlÄ± Versiyon
  * 
@@ -35,7 +35,7 @@ export interface PaginatedResult<T> {
  * Arama filtreleri
  */
 export interface SearchFilters {
-  dialect?: string; // BATI, DOGU
+  dialect?: string; // ADY, KBD
   language?: string; // TR, EN, vb.
   groupId?: string;
 }

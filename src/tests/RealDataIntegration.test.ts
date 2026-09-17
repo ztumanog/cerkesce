@@ -1,4 +1,4 @@
-import { describe, it, expect, beforeEach } from "vitest";
+﻿import { describe, it, expect, beforeEach } from "vitest";
 import { InMemoryTranslationRepository } from "../repository/InMemoryTranslationRepository";
 import { TranslationService } from "../services/TranslationService";
 import { MorphologyAwareMatchingService } from "../services/MorphologyAwareMatchingService";
@@ -15,7 +15,7 @@ const mockEntries: TranslationEntry[] = [
     id: "e-1",
     lemma: "ÑˆÑŠÑ…ÑŒÑ",
     normalizedLemma: "ÑˆÑŠÑ…ÑŒÑ",
-    dialect: "BATI",
+    dialect: "ADY",
     groupId: "TRG_HEAD",
     meanings: [
       { id: "m-1", language: "TR", text: "baÅŸ" },
@@ -26,7 +26,7 @@ const mockEntries: TranslationEntry[] = [
     id: "e-water",
     lemma: "Ğ¿ÑÑ‹",
     normalizedLemma: "Ğ¿ÑÑ‹",
-    dialect: "DOGU",
+    dialect: "KBD",
     groupId: "TRG_WATER",
     meanings: [
       { id: "m-water-tr", language: "TR", text: "su" },
@@ -38,7 +38,7 @@ const mockEntries: TranslationEntry[] = [
     id: "e-head-east",
     lemma: "Ñ‰Ñ…ÑŒÑ",
     normalizedLemma: "Ñ‰Ñ…ÑŒÑ",
-    dialect: "DOGU",
+    dialect: "KBD",
     groupId: "TRG_HEAD",
     meanings: [
       { id: "m-head-east", language: "TR", text: "baÅŸ" },
@@ -49,7 +49,7 @@ const mockEntries: TranslationEntry[] = [
     id: "e-water-en",
     lemma: "water",
     normalizedLemma: "water",
-    dialect: "BATI",
+    dialect: "ADY",
     groupId: "TRG_WATER",
     meanings: [
       { id: "m-water-en-3", language: "EN", text: "water" },
@@ -60,7 +60,7 @@ const mockEntries: TranslationEntry[] = [
     id: "e-water-ru",
     lemma: "Ğ²Ğ¾Ğ´Ğ°",
     normalizedLemma: "Ğ²Ğ¾Ğ´Ğ°",
-    dialect: "BATI",
+    dialect: "ADY",
     groupId: "TRG_WATER",
     meanings: [
       { id: "m-water-ru-2", language: "RU", text: "Ğ²Ğ¾Ğ´Ğ°" },
@@ -171,10 +171,10 @@ describe("RealDataIntegration Tests", () => {
       expect(entries.length).toBeGreaterThan(0);
 
       const hasEast = entries.some(
-        (e: TranslationEntry) => e.dialect === "DOGU"
+        (e: TranslationEntry) => e.dialect === "KBD"
       );
       const hasWest = entries.some(
-        (e: TranslationEntry) => e.dialect === "BATI"
+        (e: TranslationEntry) => e.dialect === "ADY"
       );
 
       expect(hasEast || hasWest).toBe(true);

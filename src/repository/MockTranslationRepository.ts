@@ -1,4 +1,4 @@
-/**
+﻿/**
  * File: src/repository/MockTranslationRepository.ts
  * Generated: 2026-09-17
  * Layer: Repository
@@ -12,7 +12,7 @@ export class MockTranslationRepository {
       id: "e-1",
       lemma: "шъхьэ",
       normalizedLemma: "шъхьэ",
-      dialect: "BATI",
+      dialect: "ADY",
       groupId: "g-head",
       meanings: [{ id: "m-1", language: "TR", text: "baş" }],
     },
@@ -20,7 +20,7 @@ export class MockTranslationRepository {
       id: "e-2",
       lemma: "щхьэ",
       normalizedLemma: "щхьэ",
-      dialect: "DOGU",
+      dialect: "KBD",
       groupId: "g-head",
       meanings: [{ id: "m-2", language: "TR", text: "baş" }],
     },
@@ -28,7 +28,7 @@ export class MockTranslationRepository {
       id: "e-3",
       lemma: "псы",
       normalizedLemma: "псы",
-      dialect: "DOGU",
+      dialect: "KBD",
       groupId: "g-water",
       meanings: [{ id: "m-3", language: "TR", text: "su" }],
     },

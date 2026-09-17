@@ -1,4 +1,4 @@
-/**
+﻿/**
  * File: src/tests/DebugRepository.test.ts
  * Purpose: Repository.findByMeaning() debug
  */
@@ -24,7 +24,7 @@ describe("Debug Repository", () => {
         id: "ENTRY_WATER",
         lemma: "вода",
         normalizedLemma: "вода",
-        dialect: "DOGU",
+        dialect: "KBD",
         groupId: "TRG_WATER",
         meanings: [
           { id: "m-1", language: "EN", text: "water" },

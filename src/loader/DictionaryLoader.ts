@@ -1,4 +1,4 @@
-import fs from 'fs';
+﻿import fs from 'fs';
 import path from 'path';
 import type { DictionaryEntry, KelimeItem, GununKelimesi } from '@/types/dictionary';
 
@@ -19,10 +19,10 @@ let globalDictionaryCache: { entries: any[] } | null = null;
 
 function normalizeDialect(value: unknown): string {
   const dialect = String(value || '').toLowerCase().trim();
-  if (dialect === 'eastern' || dialect === 'dogu' || dialect === 'doğu' || dialect === 'kbd') {
+  if (dialect === 'eastern' || dialect === 'KBD' || dialect === 'doğu' || dialect === 'kbd') {
     return 'kbd';
   }
-  if (dialect === 'western' || dialect === 'bati' || dialect === 'batı' || dialect === 'ady') {
+  if (dialect === 'western' || dialect === 'bati' || dialect === 'ADY' || dialect === 'ady') {
     return 'ady';
   }
   return dialect;

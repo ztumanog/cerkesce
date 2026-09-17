@@ -1,4 +1,4 @@
-/**
+﻿/**
  * @file src/tests/MatchingService.test.ts
  * @description MorphologyAwareMatchingService birim testleri
  */
@@ -10,7 +10,7 @@ import { TranslationEntry } from "../domain/translation";
 const makeEntry = (
   id: string,
   lemma: string,
-  dialect: "DOGU" | "BATI" = "DOGU"
+  dialect: "KBD" | "ADY" = "KBD"
 ): TranslationEntry => ({
   id,
   lemma,
@@ -78,12 +78,12 @@ describe("MorphologyAwareMatchingService Testleri", () => {
           sourcePattern: "şx́ó",
           targetPattern: "şx́ó",
           confidenceScore: 0.9,
-          fromDialect: "BATI",
-          toDialect: "DOGU",
+          fromDialect: "ADY",
+          toDialect: "KBD",
         },
       ]);
-      const a = makeEntry("e-1", "şx́ó", "BATI");
-      const b = makeEntry("e-2", "şx́ó", "DOGU");
+      const a = makeEntry("e-1", "şx́ó", "ADY");
+      const b = makeEntry("e-2", "şx́ó", "KBD");
       const result = await service.matchEntries(a, b);
       expect(result.matchType).toBe("MORPHOLOGY_DIALECT_VARIANT");
       expect(result.score).toBeCloseTo(0.9);
@@ -96,8 +96,8 @@ describe("MorphologyAwareMatchingService Testleri", () => {
           sourcePattern: "şx́ó",
           targetPattern: "şx́ó",
           confidenceScore: 0.9,
-          fromDialect: "BATI",
-          toDialect: "DOGU",
+          fromDialect: "ADY",
+          toDialect: "KBD",
         },
       ]);
       const a = makeEntry("e-1", "şx́ó");
@@ -113,8 +113,8 @@ describe("MorphologyAwareMatchingService Testleri", () => {
         id: "r-old",
         sourcePattern: "psı",
         targetPattern: "psa",
-        fromDialect: "BATI",
-        toDialect: "DOGU",
+        fromDialect: "ADY",
+        toDialect: "KBD",
       });
       service.setRules([]); // Kuralları sıfırla
 
@@ -148,8 +148,8 @@ describe("MorphologyAwareMatchingService Testleri", () => {
         id: "r-1",
         sourcePattern: "şx́ó",
         targetPattern: "şx́ó",
-        fromDialect: "BATI",
-        toDialect: "DOGU",
+        fromDialect: "ADY",
+        toDialect: "KBD",
       });
       expect(result).toBe("şx́ó");
     });
@@ -160,8 +160,8 @@ describe("MorphologyAwareMatchingService Testleri", () => {
         id: "r-1",
         sourcePattern: "şx́ó",
         targetPattern: "şx́ó",
-        fromDialect: "BATI",
-        toDialect: "DOGU",
+        fromDialect: "ADY",
+        toDialect: "KBD",
       });
       expect(result).toBe("psı");
     });
@@ -197,7 +197,7 @@ describe("MorphologyAwareMatchingService Testleri", () => {
         id: "e-1",
         lemma: "psı",
         normalizedLemma: "psı",
-        dialect: "DOGU",
+        dialect: "KBD",
         groupId: "g-test",
         meanings: [{ id: "m-1", language: "TR", text: "su, nehir" }],
       };
@@ -209,7 +209,7 @@ describe("MorphologyAwareMatchingService Testleri", () => {
         id: "e-1",
         lemma: "psı",
         normalizedLemma: "psı",
-        dialect: "DOGU",
+        dialect: "KBD",
         groupId: "g-test",
         meanings: [{ id: "m-1", language: "TR", text: "su" }],
       };
@@ -221,7 +221,7 @@ describe("MorphologyAwareMatchingService Testleri", () => {
         id: "e-1",
         lemma: "psı",
         normalizedLemma: "psı",
-        dialect: "DOGU",
+        dialect: "KBD",
         groupId: "g-test",
         meanings: [],
       };
@@ -236,8 +236,8 @@ describe("MorphologyAwareMatchingService Testleri", () => {
         sourcePattern: "psı",
         targetPattern: "psa",
         confidenceScore: 0.85,
-        fromDialect: "BATI",
-        toDialect: "DOGU",
+        fromDialect: "ADY",
+        toDialect: "KBD",
       });
       const a = makeEntry("e-1", "psı");
       const b = makeEntry("e-2", "psa");

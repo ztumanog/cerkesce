@@ -1,4 +1,4 @@
-/**
+﻿/**
  * @file src/tests/ReverseTranslationSearch.test.ts
  * @description Reverse Translation Search (Anlamdan Lemmaya Arama) Testleri
  */
@@ -39,7 +39,7 @@ describe("Reverse Translation Search - Anlamdan Lemmaya Arama", () => {
         id: "ENTRY_WATER",
         lemma: "Ğ¿ÑÑ‹",
         normalizedLemma: "Ğ¿ÑÑ‹",
-        dialect: "DOGU",
+        dialect: "KBD",
         groupId: "TRG_WATER",
         meanings: [
           { id: "m-1", language: "TR", text: "water" },
@@ -50,7 +50,7 @@ describe("Reverse Translation Search - Anlamdan Lemmaya Arama", () => {
         id: "ENTRY_HOPE",
         lemma: "Ğ³ÑƒĞ³ÑŠÑ",
         normalizedLemma: "Ğ³ÑƒĞ³ÑŠÑ",
-        dialect: "BATI",
+        dialect: "ADY",
         groupId: "TRG_HOPE",
         meanings: [
           { id: "m-2", language: "TR", text: "hope" },
@@ -61,7 +61,7 @@ describe("Reverse Translation Search - Anlamdan Lemmaya Arama", () => {
         id: "ENTRY_HEAD",
         lemma: "ÑˆÑŠÑ…ÑŒÑ",
         normalizedLemma: "ÑˆÑŠÑ…ÑŒÑ",
-        dialect: "BATI",
+        dialect: "ADY",
         groupId: "TRG_HEAD",
         meanings: [
           { id: "m-3", language: "TR", text: "head" },
@@ -172,7 +172,7 @@ describe("Reverse Translation Search - Anlamdan Lemmaya Arama", () => {
       const result = await service.reverseTranslate("water");
 
       expect(result?.dialect).toBeDefined();
-      expect(["DOGU", "BATI"]).toContain(result?.dialect);
+      expect(["KBD", "ADY"]).toContain(result?.dialect);
     });
 
     test("dÃ¶ndÃ¼rÃ¼len sonuÃ§ groupId bilgisini iÃ§ermelidir", async () => {

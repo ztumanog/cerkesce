@@ -4,17 +4,16 @@
  * Layer: Service
  */
 
-import type { TranslationMeaning } from "../domain/translation";
+import type { DictionaryEntry, TranslationMeaning } from "../types/dictionary";
 import type { MorphologyAwareMatchingService } from "./MorphologyAwareMatchingService";
-import type { DictionaryEntry } from "../types/dictionary";
 
 export interface ITranslationRepository {
-  searchByMeaning(query: string, targetLanguage?: string): Promise<DictionaryEntry[]>;
+  searchByMeaning?(query: string, targetLanguage?: string): Promise<DictionaryEntry[]>;
   search?(query: string, targetLanguage?: string): Promise<DictionaryEntry[]>;
   findByMeaning?(query: string, targetLanguage?: string): Promise<DictionaryEntry[]>;
   findAll?(): Promise<DictionaryEntry[]>;
   searchCrossDictionary?(query: string): Promise<DictionaryEntry[]>;
-  save(entry: DictionaryEntry): Promise<void>;
+  save?(entry: DictionaryEntry): Promise<void>;
 }
 
 export interface ReverseLookupResult {
@@ -29,7 +28,7 @@ export class TranslationService {
     private readonly matchingService?: MorphologyAwareMatchingService
   ) {
     if (this.repository) {
-      const repo = this.repository as any;
+      const repo = this.repository as unknown as Record<string, unknown>;
       const self = this;
 
       if (typeof repo.searchCrossDictionary !== "function") {
@@ -49,10 +48,10 @@ export class TranslationService {
   }
 
   public async search(query: string, targetLanguage?: string): Promise<DictionaryEntry[]> {
-    const normalizedQuery = query?.trim();
+    const normalizedQuery = this.normalize(query);
     if (!normalizedQuery) return [];
 
-    const repo = this.repository as any;
+    const repo = this.repository as unknown as Record<string, Function>;
     let results: DictionaryEntry[] = [];
 
     if (typeof repo.search === "function") {
@@ -87,8 +86,8 @@ export class TranslationService {
           results = all.filter((entry: DictionaryEntry) => {
             const word = (entry.word ?? entry.lemma ?? "").toLowerCase();
             if (word.includes(q)) return true;
-            return (entry.meanings ?? []).some((m: any) => {
-              const txt = typeof m === "string" ? m : m?.text ?? m?.value ?? "";
+            return (entry.meanings ?? []).some((m) => {
+              const txt = this.getMeaningText(m);
               return txt.toLowerCase().includes(q);
             });
           });
@@ -98,18 +97,47 @@ export class TranslationService {
       }
     }
 
+    if (targetLanguage && results.length > 0) {
+      return this.filterByTargetLanguage(results, targetLanguage);
+    }
+
     return results ?? [];
   }
 
-  public async searchByMeaning(query: string, targetLanguage?: string): Promise<DictionaryEntry[]> {
-    return this.search(query, targetLanguage);
+  public async searchByMeaning(query: string, targetLang?: string): Promise<DictionaryEntry[]> {
+    const normalizedQuery = this.normalize(query);
+    if (!normalizedQuery) return [];
+
+    let entries: DictionaryEntry[] = [];
+    const repo = this.repository as unknown as Record<string, Function>;
+
+    if (typeof repo.findByMeaning === "function") {
+      entries = await repo.findByMeaning(normalizedQuery, targetLang);
+    } else if (typeof repo.searchByMeaning === "function") {
+      entries = await repo.searchByMeaning(normalizedQuery, targetLang);
+    } else {
+      entries = await this.search(normalizedQuery, targetLang);
+    }
+
+    if (!targetLang) {
+      return entries;
+    }
+
+    const target = targetLang.trim().toUpperCase();
+    return entries.filter((entry) =>
+      (entry.meanings ?? []).some((m) => {
+        const text = this.getMeaningText(m).toLowerCase();
+        const lang = this.getMeaningLanguage(m).toUpperCase();
+        return lang === target && text.includes(normalizedQuery);
+      })
+    );
   }
 
   public async searchCrossDictionary(query: string): Promise<DictionaryEntry[]> {
-    const normalizedQuery = query?.trim();
+    const normalizedQuery = this.normalize(query);
     if (!normalizedQuery) return [];
 
-    const repo = this.repository as any;
+    const repo = this.repository as unknown as Record<string, Function>;
 
     if (
       typeof repo.searchCrossDictionary === "function" &&
@@ -127,7 +155,7 @@ export class TranslationService {
   }
 
   public async reverseTranslate(query: string): Promise<DictionaryEntry | null> {
-    const normalizedQuery = query?.trim();
+    const normalizedQuery = this.normalize(query);
     if (!normalizedQuery) return null;
 
     const candidates = await this.search(normalizedQuery);
@@ -138,26 +166,24 @@ export class TranslationService {
         entry,
         score: this.scoreEntryMatch(entry, normalizedQuery),
       }))
-      .filter((item: { entry: DictionaryEntry; score: number }) => item.score > 0)
-      .sort(
-        (a: { entry: DictionaryEntry; score: number }, b: { entry: DictionaryEntry; score: number }) =>
-          b.score - a.score
-      );
+      .filter((item) => item.score > 0)
+      .sort((a, b) => b.score - a.score);
 
     return ranked[0]?.entry ?? null;
   }
 
   public async filterByTargetLanguage(entries: DictionaryEntry[], targetLang: string): Promise<DictionaryEntry[]> {
-    const target = targetLang.toUpperCase();
+    if (!targetLang) return entries;
+    const target = targetLang.trim().toUpperCase();
     return entries.filter((entry: DictionaryEntry) =>
-      (entry.meanings ?? []).some((meaning: TranslationMeaning | string) =>
+      (entry.meanings ?? []).some((meaning) =>
         this.getMeaningLanguage(meaning).toUpperCase() === target
       )
     );
   }
 
   public async reverseLookup(targetQuery: string): Promise<ReverseLookupResult[]> {
-    const normalizedQuery = targetQuery?.trim();
+    const normalizedQuery = this.normalize(targetQuery);
     if (!normalizedQuery) return [];
 
     const entries = await this.search(normalizedQuery);
@@ -165,10 +191,10 @@ export class TranslationService {
     return entries.map((entry: DictionaryEntry) => ({
       lemma: entry.word ?? entry.lemma ?? "",
       entry,
-      matches: (entry.meanings ?? []).filter((meaning: TranslationMeaning | string) => {
+      matches: (entry.meanings ?? []).filter((meaning) => {
         const text = this.getMeaningText(meaning).toLowerCase();
         return text.includes(normalizedQuery.toLowerCase());
-      }),
+      }) as TranslationMeaning[],
     }));
   }
 
@@ -185,11 +211,13 @@ export class TranslationService {
       normalizedLemma: entry.normalizedLemma ?? entry.lemma ?? entry.word ?? "",
       definition: entry.definition ?? fallbackDefinition,
       dialect: entry.dialect,
-      meanings,
+      meanings: meanings as TranslationMeaning[],
       groupId: entry.groupId,
     };
 
-    await this.repository.save(normalizedEntry);
+    if (typeof this.repository.save === "function") {
+      await this.repository.save(normalizedEntry);
+    }
     return normalizedEntry;
   }
 
@@ -203,18 +231,19 @@ export class TranslationService {
     if (!meaning) return "";
     if (typeof meaning === "string") return meaning;
     if (typeof meaning === "object") {
-      return meaning.text ?? meaning.value ?? "";
+      return (meaning as { text?: string; value?: string }).text ?? (meaning as { text?: string; value?: string }).value ?? "";
     }
     return "";
   }
 
   private getMeaningLanguage(
-    meaning: TranslationMeaning | { language?: string } | string | undefined
+    meaning: TranslationMeaning | { language?: string; lang?: string } | string | undefined
   ): string {
     if (!meaning) return "";
     if (typeof meaning === "string") return "";
     if (typeof meaning === "object") {
-      return (meaning as { language?: string }).language ?? "";
+      const obj = meaning as Record<string, unknown>;
+      return (obj.language as string) ?? (obj.lang as string) ?? "";
     }
     return "";
   }

@@ -12,8 +12,8 @@ export interface ExtendedDialectRule extends Partial<DialectRule> {
   sourcePattern: string;
   targetPattern: string;
   confidenceScore?: number;
-  fromDialect?: "DOGU" | "BATI";
-  toDialect?: "DOGU" | "BATI";
+  fromDialect?: "KBD" | "ADY";
+  toDialect?: "KBD" | "ADY";
 }
 
 export type MatchType = "EXACT" | "MORPHOLOGY_DIALECT_VARIANT" | "FUZZY" | "NONE";

@@ -1,4 +1,4 @@
-/**
+﻿/**
  * @file src/index.ts
  * @description Ã‡erkesÃ§e morfolojik eÅŸleÅŸtirme testleri ve ana giriÅŸ noktasÄ±.
  */
@@ -127,7 +127,7 @@ const matcher = new MorphologyAwareMatchingService(mockRules);
       id: "entry-1",
       lemma: kbd,
       normalizedLemma: kbd,
-      dialect: "DOGU",
+      dialect: "KBD",
       groupId: "group-test",
       meanings: [
         {
@@ -142,7 +142,7 @@ const matcher = new MorphologyAwareMatchingService(mockRules);
       id: "entry-2",
       lemma: adg,
       normalizedLemma: adg,
-      dialect: "BATI",
+      dialect: "ADY",
       groupId: "group-test",
       meanings: [
         {
@@ -177,7 +177,7 @@ export function main() {
     id: "sample-1",
     lemma: "ĞºÓ€ÑƒÑĞ½",
     normalizedLemma: "ĞºÓ€ÑƒÑĞ½",
-    dialect: "DOGU",
+    dialect: "KBD",
     groupId: "group-go",
     meanings: [
       {
@@ -192,7 +192,7 @@ export function main() {
     id: "sample-2",
     lemma: "ĞºÓ€Ğ¾Ğ½",
     normalizedLemma: "ĞºÓ€Ğ¾Ğ½",
-    dialect: "BATI",
+    dialect: "ADY",
     groupId: "group-go",
     meanings: [
       {

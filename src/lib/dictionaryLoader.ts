@@ -1,4 +1,4 @@
-/**
+﻿/**
  * File: src/types/dictionary.ts
  * Generated: 2026-09-16
  * Layer: Domain Model (SSOT)
@@ -56,7 +56,7 @@ export type LehceTipi =
   | 'Standart'
   | 'Kuzey'
   | 'Güney'
-  | 'dogu'
+  | 'KBD'
   | 'bati'
   | 'Mekezi'
   | 'Diğer'

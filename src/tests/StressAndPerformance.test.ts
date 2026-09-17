@@ -1,4 +1,4 @@
-/**
+﻿/**
  * @file src/tests/StressAndPerformance.test.ts
  * @description AÅŸama 4 - YÃ¼ksek Hacimli Veri YÃ¼kleme ve Stres Testleri (50.000 KayÄ±t)
  */
@@ -36,7 +36,7 @@ describe("AÅŸama 4 - YÃ¼ksek Hacimli Veri YÃ¼kleme ve Stres Testleri", () 
         lemma: "Ñ‰Ñ…ÑŒÑ",
         normalizedLemma: "Ñ‰Ñ…ÑŒÑ",
         language: "kbd" as LanguageCode,
-        dialect: "DOGU",
+        dialect: "KBD",
         groupId: "exact-group",
         meanings: [
           {
@@ -61,7 +61,7 @@ describe("AÅŸama 4 - YÃ¼ksek Hacimli Veri YÃ¼kleme ve Stres Testleri", () 
         lemma: lemmaValue,
         normalizedLemma: lemmaValue.toLowerCase(),
         language: "kbd" as LanguageCode,
-        dialect: i % 2 === 0 ? "DOGU" : "BATI",
+        dialect: i % 2 === 0 ? "KBD" : "ADY",
         groupId: `group-${Math.floor(i / 1000)}`,
         meanings: [
           {
