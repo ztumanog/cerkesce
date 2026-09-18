@@ -1,6 +1,30 @@
+﻿/**
+ * File: UNKNOWN
+ * Generated: 2026-09-18
+ */
+
 import { ConceptNetworkDTO } from '../../domain/discovery/dto/ConceptNetworkDTO';
 
 export interface CytoscapeNodeData {
+  id: string;
+  label: string;
+  nodeType?: 'ROOT' | 'CONCEPT';
+  score?: number;
+  depth?: number;
+  cluster?: string;
+  isExpanded?: boolean;
+  [key: string]: unknown;
+}
+
+export interface CytoscapeEdgeData {
+  source: string;
+  target: string;
+  relationType?: string;
+  weight?: number;
+  [key: string]: unknown;
+}
+
+export interface ConceptNetworkNodeDTO {
   id: string;
   label: string;
   nodeType: 'ROOT' | 'CONCEPT';
@@ -10,8 +34,7 @@ export interface CytoscapeNodeData {
   isExpanded?: boolean;
 }
 
-export interface CytoscapeEdgeData {
-  id: string;
+export interface ConceptNetworkEdgeDTO {
   source: string;
   target: string;
   relationType: string;
@@ -21,6 +44,7 @@ export interface CytoscapeEdgeData {
 export interface CytoscapeElement {
   group: 'nodes' | 'edges';
   data: CytoscapeNodeData | CytoscapeEdgeData;
+  position?: { x: number; y: number };
   classes?: string;
 }
 
@@ -64,4 +88,3 @@ export class CytoscapeAdapter {
     return elements;
   }
 }
-

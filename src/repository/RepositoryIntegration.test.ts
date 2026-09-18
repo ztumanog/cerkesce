@@ -1,4 +1,5 @@
-﻿/**
+﻿import { describe, it, test, expect, beforeEach } from 'vitest';
+/**
  * File: src/repository/RepositoryIntegration.test.ts
  * Generated: 2026-09-16
  * Layer: Repository
@@ -68,3 +69,5 @@ describe("Repository Integration Tests", () => {
     ).toBe(true);
   });
 });
+
+

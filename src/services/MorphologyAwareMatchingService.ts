@@ -1,6 +1,7 @@
 ﻿/**
  * @file src/services/MorphologyAwareMatchingService.ts
- * @description Morfolojik ve lehÃƒÂ§e duyarlÃ„Â± eÃ…Å¸leÃ…Å¸tirme servisi.
+ * @description Morfolojik ve lehçe duyarlı eşleştirme servisi.
+ * @version 4.0 - Pattern-based matching (dialect-agnostic)
  */
 
 import { TranslationEntry } from "../domain/translation";
@@ -63,15 +64,15 @@ export class MorphologyAwareMatchingService {
     const normalized = word.toLowerCase().trim();
     variations.add(normalized);
 
-    // DoÃ„Å¸u Ãƒâ€¡erkesÃƒÂ§e varyasyonlarÃ„Â±
-    variations.add(normalized.replace(/Ã‰â„¢/g, "a"));
-    variations.add(normalized.replace(/Ã‰â„¢/g, "e"));
+    // Doğu Çerkesçe varyasyonları
+    variations.add(normalized.replace(/ə/g, "a"));
+    variations.add(normalized.replace(/ə/g, "e"));
 
-    // BatÃ„Â± Ãƒâ€¡erkesÃƒÂ§e varyasyonlarÃ„Â±
-    variations.add(normalized.replace(/a/g, "Ã‰â„¢"));
-    variations.add(normalized.replace(/e/g, "Ã‰â„¢"));
+    // Batı Çerkesçe varyasyonları
+    variations.add(normalized.replace(/a/g, "ə"));
+    variations.add(normalized.replace(/e/g, "ə"));
 
-    // Suffix (ek) varyasyonlarÃ„Â±
+    // Suffix (ek) varyasyonları
     if (normalized.length > 3) {
       variations.add(normalized.slice(0, -1));
       variations.add(normalized.slice(0, -2));
@@ -108,7 +109,8 @@ export class MorphologyAwareMatchingService {
   }
 
   /**
-   * TranslationService ve Testler iÃƒÂ§in match metodu
+   * TranslationService ve Testler için match metodu
+   * Query string ile entry'yi eşleştirir
    */
   public match(entry: TranslationEntry, query: string): number {
     if (!query || !entry) return 0;
@@ -118,7 +120,7 @@ export class MorphologyAwareMatchingService {
 
     let maxScore = 0;
 
-    // Lemma ile eÃ…Å¸leÃ…Å¸tir
+    // Lemma ile eşleştir
     if (entry.lemma) {
       const lemmaVariations = this.generateVariations(entry.lemma);
       for (const qVar of queryVariations) {
@@ -134,10 +136,11 @@ export class MorphologyAwareMatchingService {
       }
     }
 
-    // Meanings (anlamlar) ile eÃ…Å¸leÃ…Å¸tir
+    // Meanings (anlamlar) ile eşleştir
     if (entry.meanings && Array.isArray(entry.meanings)) {
       for (const meaning of entry.meanings) {
-        const meaningText = (meaning as { value?: string; text?: string }).value || (meaning as { value?: string; text?: string }).text;
+        const meaningText = (meaning as { value?: string; text?: string }).value || 
+                          (meaning as { value?: string; text?: string }).text;
         if (meaningText) {
           const meaningVariations = this.generateVariations(meaningText);
           for (const qVar of queryVariations) {
@@ -159,63 +162,114 @@ export class MorphologyAwareMatchingService {
   }
 
   /**
-   * Ã„Â°ki girdi arasÃ„Â±nda detaylÃ„Â± eÃ…Å¸leÃ…Å¸me tÃƒÂ¼rÃƒÂ¼ ve skoru dÃƒÂ¶ner
+   * İki giriş arasında detaylı eşleştirme türü ve skoru döner
+   * 
+   * Eşleştirme sırası:
+   * 1. Pattern-based kural kontrolü (dialect-agnostic)
+   * 2. Case-insensitive exact match
+   * 3. Fuzzy matching (Levenshtein distance)
+   * 
+   * @param entryA - Birinci çeviri girdisi
+   * @param entryB - İkinci çeviri girdisi
+   * @returns Eşleştirme sonucu (tip, skor, kural ID)
    */
- public async matchEntries(entryA: TranslationEntry, entryB: TranslationEntry): Promise<MatchResult> {
-  if (!entryA || !entryB) return { matchType: "NONE", score: 0.0 };
+  public async matchEntries(
+    entryA: TranslationEntry,
+    entryB: TranslationEntry
+  ): Promise<MatchResult> {
+    if (!entryA || !entryB) {
+      return { matchType: "NONE", score: 0.0 };
+    }
 
-  // Normalize lemmas before comparison
-  const lemmaA = this.normalize(entryA.lemma ?? entryA.sourceWord ?? "");
-  const lemmaB = this.normalize(entryB.lemma ?? entryB.sourceWord ?? "");
+    // Normalize lemmas before comparison
+    const lemmaA = this.normalize(entryA.lemma ?? entryA.sourceWord ?? "");
+    const lemmaB = this.normalize(entryB.lemma ?? entryB.sourceWord ?? "");
 
-  if (!lemmaA || !lemmaB) {
+    if (!lemmaA || !lemmaB) {
+      return { matchType: "NONE", score: 0.0 };
+    }
+
+    // ============================================================
+    // ADIM 1: Kural kontrolü — Pattern-based (dialect-agnostic)
+    // Dialect bilgisi yok sayılıyor, sadece pattern eşleşmesi önemli
+    // ============================================================
+    for (const rule of this.rules) {
+      if (!rule.sourcePattern || !rule.targetPattern) continue;
+
+      const sourceNorm = this.normalize(rule.sourcePattern);
+      const targetNorm = this.normalize(rule.targetPattern);
+
+      // Durum 1: Exact pattern matching
+      // lemmaA sourcePattern'e uyuyor, lemmaB targetPattern'e uyuyor (veya tersi)
+      const aMatchesSource = lemmaA === sourceNorm;
+      const bMatchesTarget = lemmaB === targetNorm;
+      const aMatchesTarget = lemmaA === targetNorm;
+      const bMatchesSource = lemmaB === sourceNorm;
+
+      if ((aMatchesSource && bMatchesTarget) || (aMatchesTarget && bMatchesSource)) {
+        return {
+          matchType: "MORPHOLOGY_DIALECT_VARIANT",
+          score: rule.confidenceScore ?? 0.85,
+          matchedRuleId: rule.id,
+        };
+      }
+
+      // Durum 2: Pattern replacement kontrolü
+      // lemmaA'da sourcePattern varsa, targetPattern ile değiştir
+      // Sonuç lemmaB'ye eşit mi?
+      const convertedA = lemmaA.replace(sourceNorm, targetNorm);
+      const convertedB = lemmaB.replace(sourceNorm, targetNorm);
+
+      if (convertedA === lemmaB || convertedB === lemmaA) {
+        return {
+          matchType: "MORPHOLOGY_DIALECT_VARIANT",
+          score: rule.confidenceScore ?? 0.85,
+          matchedRuleId: rule.id,
+        };
+      }
+    }
+
+    // ============================================================
+    // ADIM 2: Case-insensitive exact match
+    // ============================================================
+    if (lemmaA === lemmaB) {
+      return { matchType: "EXACT", score: 1.0 };
+    }
+
+    // ============================================================
+    // ADIM 3: Fuzzy matching (Levenshtein distance)
+    // ============================================================
+    let fuzzyScore = 0.0;
+
+    if (lemmaA.includes(lemmaB) || lemmaB.includes(lemmaA)) {
+      // Substring match
+      const minLen = Math.min(lemmaA.length, lemmaB.length);
+      const maxLen = Math.max(lemmaA.length, lemmaB.length);
+      fuzzyScore = minLen / maxLen;
+    } else {
+      // Levenshtein distance calculation
+      const distance = this.levenshteinDistance(lemmaA, lemmaB);
+      const maxLen = Math.max(lemmaA.length, lemmaB.length);
+      fuzzyScore = 1.0 - distance / maxLen;
+    }
+
+    if (fuzzyScore > 0.3) {
+      return {
+        matchType: "FUZZY",
+        score: Number(fuzzyScore.toFixed(2)),
+      };
+    }
+
     return { matchType: "NONE", score: 0.0 };
   }
 
-  // Case-insensitive exact match
-  if (lemmaA === lemmaB) {
-    return { matchType: "EXACT", score: 1.0 };
-  }
-
-  // Check for dialect variations using rules
-  for (const rule of this.rules) {
-    if (!rule.sourcePattern || !rule.targetPattern) continue;
-
-    const sourceNorm = this.normalize(rule.sourcePattern);
-    const targetNorm = this.normalize(rule.targetPattern);
-
-    const convertedA = lemmaA.replace(sourceNorm, targetNorm);
-    const convertedB = lemmaB.replace(sourceNorm, targetNorm);
-
-    if (convertedA === lemmaB || convertedB === lemmaA) {
-      return {
-        matchType: "MORPHOLOGY_DIALECT_VARIANT",
-        score: rule.confidenceScore ?? 0.85,
-        matchedRuleId: rule.id,
-      };
-    }
-  }
-
-  // Fuzzy matching
-  let fuzzyScore = 0.0;
-  if (lemmaA.includes(lemmaB) || lemmaB.includes(lemmaA)) {
-    const minLen = Math.min(lemmaA.length, lemmaB.length);
-    const maxLen = Math.max(lemmaA.length, lemmaB.length);
-    fuzzyScore = minLen / maxLen;
-  } else {
-    const distance = this.levenshteinDistance(lemmaA, lemmaB);
-    const maxLen = Math.max(lemmaA.length, lemmaB.length);
-    fuzzyScore = 1.0 - distance / maxLen;
-  }
-
-  if (fuzzyScore > 0.3) {
-    return { matchType: "FUZZY", score: Number(fuzzyScore.toFixed(2)) };
-  }
-
-  return { matchType: "NONE", score: 0.0 };
-}
-
-  public async calculateSimilarity(entryA: TranslationEntry, entryB: TranslationEntry): Promise<number> {
+  /**
+   * İki entry arasında benzerlik skoru hesapla (0.0 - 1.0)
+   */
+  public async calculateSimilarity(
+    entryA: TranslationEntry,
+    entryB: TranslationEntry
+  ): Promise<number> {
     if (entryA.id && entryB.id && entryA.id === entryB.id) {
       return 1.0;
     }
@@ -223,7 +277,13 @@ export class MorphologyAwareMatchingService {
     return result.score;
   }
 
-  public applyRule(entry: TranslationEntry, rule: Partial<ExtendedDialectRule>): string {
+  /**
+   * Kurala göre entry'yi dönüştür
+   */
+  public applyRule(
+    entry: TranslationEntry,
+    rule: Partial<ExtendedDialectRule>
+  ): string {
     if (!rule.sourcePattern || !rule.targetPattern || !entry.lemma) {
       return entry.lemma || "";
     }
@@ -235,25 +295,35 @@ export class MorphologyAwareMatchingService {
     return entry.lemma;
   }
 
-  public evaluateRule(rule: Partial<ExtendedDialectRule>): { name: string; score: number } {
+  /**
+   * Kuralı değerlendir
+   */
+  public evaluateRule(rule: Partial<ExtendedDialectRule>): {
+    name: string;
+    score: number;
+  } {
     const name = rule.name || `Rule-${rule.id || "default"}`;
     const score = rule.confidenceScore ?? 0.5;
     return { name, score };
   }
 
+  /**
+   * Entry'nin anlamlarında query'yi ara
+   */
   public matchMeanings(entry: TranslationEntry, query: string): boolean {
     if (!entry.meanings || entry.meanings.length === 0) return false;
     const normalizedQuery = this.normalize(query);
     if (!normalizedQuery) return false;
 
     return entry.meanings.some((meaning) => {
-      const meaningText = (meaning as { value?: string; text?: string }).value || (meaning as { value?: string; text?: string }).text || "";
+      const meaningText =
+        (meaning as { value?: string; text?: string }).value ||
+        (meaning as { value?: string; text?: string }).text ||
+        "";
       return this.normalize(meaningText).includes(normalizedQuery);
     });
   }
 }
 
-// DiÃ„Å¸er servislerin import uyumluluÃ„Å¸u iÃƒÂ§in alias export
+// Diğer servislerin import uyumluluğu için alias export
 export { MorphologyAwareMatchingService as MatchingService };
-
-

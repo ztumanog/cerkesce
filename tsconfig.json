@@ -38,18 +38,10 @@
     ".next/dev/types/**/*.ts"
   ],
   "exclude": [
-  "node_modules",
-  ".backup",
-  "Concise-TypeScript-Project",
-  "TypeScript-Concise-Book-Setup",
-  "my-ts-project",
-  "src/tests",
-  "src/domain/discovery",
-  "src/domain/analytics",
-  "src/presentation",
-  "src/ui/pages",
-  "src/ui/components/explorer",
-  "src/infrastructure",
-  "src/repository/InMemoryConceptRepository.ts"
-]
+    "node_modules",
+    ".next",
+    ".backup",
+    "src/**/*.test.ts",
+    "src/**/*.spec.ts"
+  ]
 }

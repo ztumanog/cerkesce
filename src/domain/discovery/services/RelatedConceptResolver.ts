@@ -1,5 +1,5 @@
 import { TraversalNode } from '../dto/TraversalNode';
-import { RelatedConceptDTO } from '../dto/DiscoveryResultDTO';
+import { RelatedConceptDTO } from '../dto/RelatedConceptDTO';
 import { DiscoveryRelationType } from '../types/DiscoveryRelationType';
 
 export interface CategorizedConcepts {

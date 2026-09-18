@@ -11,6 +11,9 @@ export interface NetworkExplorerPageProps {
   onExpandApi?: (nodeId: string) => Promise<GenericConceptNetworkDTO>;
 }
 
+const layoutEngine = new LayoutEngineService();
+const exportEngine = new ExportEngineService();
+
 export const NetworkExplorerPage: React.FC<NetworkExplorerPageProps> = ({
   initialQuery = '',
   onSearchApi,
@@ -24,21 +27,29 @@ export const NetworkExplorerPage: React.FC<NetworkExplorerPageProps> = ({
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [error, setError] = useState<string | null>(null);
 
+  const runLayout = (network: GenericConceptNetworkDTO): PositionedNetworkDTO => {
+    return layoutEngine.calculateLayout(network.nodes, network.edges);
+  };
+
+  const getNodeLabel = (nodeId: string): string => {
+    return rawNetwork?.nodes.find(n => n.id === nodeId)?.label ?? nodeId;
+  };
+
   const handleSearch = async (searchQuery: string) => {
     if (!searchQuery.trim()) return;
     setIsLoading(true);
     setError(null);
     try {
-      const networkData = onSearchApi 
+      const networkData = onSearchApi
         ? await onSearchApi(searchQuery)
         : { nodes: [{ id: searchQuery, label: searchQuery }], edges: [] };
-      
+
       setRawNetwork(networkData);
-      const positioned = LayoutEngineService.applyLayout(networkData, currentLayout);
+      const positioned = runLayout(networkData);
       setPositionedNetwork(positioned);
       setSelectedNodeId(null);
     } catch (err: any) {
-      setError(err?.message || 'Arama sÄ±rasÄ±nda bir hata oluÅŸtu');
+      setError(err?.message || 'Arama sirasinda bir hata olustu');
     } finally {
       setIsLoading(false);
     }
@@ -47,7 +58,7 @@ export const NetworkExplorerPage: React.FC<NetworkExplorerPageProps> = ({
   const handleLayoutChange = (newLayout: LayoutAlgorithm) => {
     setCurrentLayout(newLayout);
     if (rawNetwork) {
-      const positioned = LayoutEngineService.applyLayout(rawNetwork, newLayout);
+      const positioned = runLayout(rawNetwork);
       setPositionedNetwork(positioned);
     }
   };
@@ -59,17 +70,17 @@ export const NetworkExplorerPage: React.FC<NetworkExplorerPageProps> = ({
       const expansionData = await onExpandApi(nodeId);
       const existingIds = new Set(rawNetwork.nodes.map(n => n.id));
       const newNodes = expansionData.nodes.filter(n => !existingIds.has(n.id));
-      
+
       const mergedNetwork: GenericConceptNetworkDTO = {
         nodes: [...rawNetwork.nodes, ...newNodes],
         edges: [...rawNetwork.edges, ...expansionData.edges]
       };
 
       setRawNetwork(mergedNetwork);
-      const positioned = LayoutEngineService.applyLayout(mergedNetwork, currentLayout);
+      const positioned = runLayout(mergedNetwork);
       setPositionedNetwork(positioned);
     } catch (err: any) {
-      setError('AÄŸaÃ§ geniÅŸletme hatasÄ±: ' + err?.message);
+      setError('Agac genisletme hatasi: ' + err?.message);
     } finally {
       setIsLoading(false);
     }
@@ -77,10 +88,10 @@ export const NetworkExplorerPage: React.FC<NetworkExplorerPageProps> = ({
 
   const handleExport = (format: ExportFormat) => {
     if (!rawNetwork) return;
-    ExportEngineService.exportNetwork(rawNetwork, { format });
+    exportEngine.exportNetwork(rawNetwork, { format });
   };
 
-  const selectedNode: PositionedNodeDTO | null = 
+  const selectedNode: PositionedNodeDTO | null =
     positionedNetwork?.nodes.find(n => n.id === selectedNodeId) || null;
 
   return React.createElement('div', { className: 'flex flex-col h-screen w-full bg-gray-100' },
@@ -89,7 +100,7 @@ export const NetworkExplorerPage: React.FC<NetworkExplorerPageProps> = ({
         type: 'text',
         value: query,
         onChange: (e: React.ChangeEvent<HTMLInputElement>) => setQuery(e.target.value),
-        placeholder: 'Kavram arayÄ±n...',
+        placeholder: 'Kavram arayin...',
         className: 'border p-2 rounded w-80 text-sm',
         'data-testid': 'search-input'
       }),
@@ -97,7 +108,7 @@ export const NetworkExplorerPage: React.FC<NetworkExplorerPageProps> = ({
         onClick: () => handleSearch(query),
         className: 'bg-indigo-600 text-white px-4 py-2 rounded text-sm font-medium',
         'data-testid': 'search-btn'
-      }, 'ğŸ” Ara')
+      }, 'Ara')
     ),
 
     React.createElement(NetworkExplorerToolbar, {
@@ -108,9 +119,9 @@ export const NetworkExplorerPage: React.FC<NetworkExplorerPageProps> = ({
     }),
 
     React.createElement('div', { className: 'flex-1 relative overflow-hidden p-6' },
-      isLoading && React.createElement('div', { className: 'text-gray-500' }, 'YÃ¼kleniyor...'),
+      isLoading && React.createElement('div', { className: 'text-gray-500' }, 'Yukleniyor...'),
       error && React.createElement('div', { className: 'text-red-600' }, error),
-      
+
       positionedNetwork && React.createElement('div', { className: 'grid grid-cols-3 gap-4', 'data-testid': 'network-canvas' },
         positionedNetwork.nodes.map(node =>
           React.createElement('div', {
@@ -119,7 +130,7 @@ export const NetworkExplorerPage: React.FC<NetworkExplorerPageProps> = ({
             className: `p-4 border rounded shadow bg-white cursor-pointer ${selectedNodeId === node.id ? 'ring-2 ring-indigo-500' : ''}`,
             'data-testid': `node-${node.id}`
           },
-            React.createElement('div', { className: 'font-bold' }, node.label),
+            React.createElement('div', { className: 'font-bold' }, getNodeLabel(node.id)),
             React.createElement('div', { className: 'text-xs text-gray-400' }, `(${node.x}, ${node.y})`)
           )
         )

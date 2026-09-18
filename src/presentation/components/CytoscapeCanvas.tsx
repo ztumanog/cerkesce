@@ -19,7 +19,7 @@ export const CytoscapeCanvas: React.FC<CytoscapeCanvasProps> = ({ elements, onNo
 
     if (onNodeClick) {
       // Node tıklama olaylarını dinleme hook'u
-      const rootElement = elements.find(e => e.group === 'nodes' && e.data.nodeType === 'ROOT');
+      const rootElement = elements.find(e => e.group === 'nodes' && 'nodeType' in e.data && e.data.nodeType === 'ROOT');
       if (rootElement) {
         console.log(`[CytoscapeCanvas] Active Root Node: ${rootElement.data.id}`);
       }

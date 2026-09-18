@@ -3,41 +3,38 @@
  * Layer: Domain Model
  */
 
-// ============================================================================
-// 0. TEMEL YARDIMCI TİPLER
-// ============================================================================
-
 export interface TranslationMeaning {
+  context?: string;
   id?: string;
   language?: string;
   text: string;
-  value?: string;          // ← bunu ekle
+  value?: string;
+  definition?: string;
   exampleSentence?: string;
   partOfSpeech?: string;
+  example?: string;
 }
+
+export type MeaningItem = TranslationMeaning;
 
 export type LehceTipi = 'TUMU' | 'ADY' | 'KBD' | 'western' | 'KBD';
 export type SozlukTipi = string;
 export type DialectCode = 'KBD' | 'ADG' | 'BES' | 'KBD' | 'ADY' | 'GENEL';
 export type LanguageCode = 'TR' | 'RU' | 'EN' | 'AR';
 
-// ============================================================================
-// 1. DICTIONARY ENTRY
-// ============================================================================
-
 export interface DictionaryEntry {
   id: string;
   word: string;
   definition: string;
-  lemma: string;           // ← ekle
-  normalizedLemma?: string; // ← ekle
+  lemma: string;
+  normalizedLemma?: string;
   partOfSpeech?: string;
   examples?: string[];
   usage?: string;
   relatedTerms?: string[];
   usages?: string[];
   sourceWord?: string;
-meanings?: TranslationMeaning[];
+  meanings?: TranslationMeaning[];
   dialect?: string;
   groupId?: string;
 }
@@ -63,10 +60,6 @@ export interface DictionaryMeta {
   meta?: KelimeMeta;
 }
 
-// ============================================================================
-// 2. KAYNAK BİLGİSİ
-// ============================================================================
-
 export interface KaynakItem {
   title?: string;
   sözlük?: string;
@@ -89,13 +82,9 @@ export interface KaynakItem {
   dialect?: string;
   sourceFile?: string;
   kelime?: string;
-sourceLanguage?: string;
-targetLanguage?: string;
+  sourceLanguage?: string;
+  targetLanguage?: string;
 }
-
-// ============================================================================
-// 3. KELİME META
-// ============================================================================
 
 export interface KelimeMeta {
   seviye?: 'Başlangıç' | 'Orta' | 'İleri';
@@ -108,10 +97,6 @@ export interface KelimeMeta {
   [key: string]: unknown;
 }
 
-// ============================================================================
-// 4. DİCTİONARY İTEM (UI katmanı)
-// ============================================================================
-
 export interface DictionaryItem {
   id: string;
   kelime: string;
@@ -123,7 +108,6 @@ export interface DictionaryItem {
   sozluk?: SozlukTipi;
   ilkAnlam?: string;
   kelilem?: string;
-  
 }
 
 export type KelimeItem = DictionaryItem;
@@ -151,20 +135,15 @@ export interface GroupedDictionaryEntry {
   kelimeSayisi?: number;
 }
 
-// ============================================================================
-// 5. GROUPED WORDS TYPE
-// ============================================================================
-
 export interface GruplanmisKelime {
   harf: string;
   kelimeler: DictionaryItem[];
 }
 
-// ============================================================================
-// 6. LEMMA ENTRY
-// ============================================================================
-
 export interface LemmaEntry {
+  language?: string;
+  partOfSpeech?: string;
+  etymology?: string;
   id: string;
   lemma: string;
   normalizedLemma?: string;
@@ -196,10 +175,6 @@ export function isValidLemmaEntry(obj: unknown): obj is LemmaEntry {
   return typeof o.id === 'string' && typeof o.lemma === 'string';
 }
 
-// ============================================================================
-// 7. REPOSITORY & SERVICE INTERFACES
-// ============================================================================
-
 export interface DictionaryRepository {
   findById(id: string): Promise<DictionaryEntry | null>;
   findByWord(word: string): Promise<DictionaryEntry[]>;
@@ -228,10 +203,6 @@ export interface SearchResult {
   page?: number;
   pageSize?: number;
 }
-
-// ============================================================================
-// 8. DAILY WORD & TRANSLATION
-// ============================================================================
 
 export interface DailyWord {
   entry: DictionaryEntry;
@@ -274,10 +245,6 @@ export interface TranslationGroup {
   metadata?: Record<string, unknown>;
 }
 
-// ============================================================================
-// 9. VALIDATION
-// ============================================================================
-
 export function isValidDictionaryEntry(obj: any): obj is DictionaryEntry {
   return (
     typeof obj === 'object' &&
@@ -288,8 +255,6 @@ export function isValidDictionaryEntry(obj: any): obj is DictionaryEntry {
   );
 }
 
-  
-
 export interface KaynakDetay {
   sozlukAdi: string;
   anlam: string;
@@ -297,15 +262,21 @@ export interface KaynakDetay {
   sourceLanguage?: string;
   targetLanguage?: string;
 }
+
 export interface AktifSozlukItem {
   id?: any;
-file?: string;
+  file?: string;
   name?: any;
   title?: string;
   dialect?: string;
   isActive?: boolean;
   type?: SozlukTipi;
+ example?: string;        // ← ekle
+  context?: string;        // ← ekle
   itemCount?: any;
   lastUpdated?: string;
   dialects?: any[];
 }
+
+
+

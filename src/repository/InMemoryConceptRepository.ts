@@ -1,3 +1,9 @@
+// TODO: ADR-0009 (Concept Identity Strategy) kabul edilince bu iki tip
+// gercek tanimlariyla degistirilmeli. Su an sadece derlemeyi gecirmek
+// icin eklenen gecici placeholder'lardir.
+type ConceptID = string;
+interface Concept { id: string; [key: string]: any; }
+
 export interface GraphNeighbor {
   conceptId: string;
   relationType: string;

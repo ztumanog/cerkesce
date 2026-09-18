@@ -34,34 +34,35 @@ export class DiscoveryFacade {
     const riverId = '01ARZ3NDEKTSV4RRFFQ69G5FB1';
 
     const isConceptDirect = queryOrConceptId.startsWith('01A') || queryOrConceptId.startsWith('CONCEPT_');
-    
+
     let targetConceptId = queryOrConceptId;
 
     if (!isConceptDirect) {
-      const semanticQuery = this.mapper.map(queryOrConceptId);
-      if (semanticQuery && semanticQuery.candidates && semanticQuery.candidates.length > 0) {
-        targetConceptId = semanticQuery.candidates[0].conceptId;
-      } else {
-        targetConceptId = defaultWaterId;
-      }
+      // QuerySemanticMapper su an yalnizca normalize/tokenize ediyor;
+      // concept-id cozumleme (candidate matching) henuz implemente edilmedi.
+      // TODO: gercek semantik esleme eklenince asagidaki satir guncellenmeli.
+      this.mapper.mapQuery(queryOrConceptId);
+      targetConceptId = defaultWaterId;
     }
 
     const traversalNodes = (await this.traversal.traverse(targetConceptId, options?.maxDepth || 2)) || [];
     const rawRanked = this.ranker.rank(traversalNodes) || [];
     const rawClusters = this.clusterer.cluster(rawRanked) || [];
 
+    const startTime = Date.now();
+    const executionTimeMs = Date.now() - startTime;
+
     const assembledDTO: any = this.assembler.assemble(
       targetConceptId,
-      traversalNodes,
-      rawRanked,
-      rawClusters
+      executionTimeMs,
+      { conceptId: targetConceptId, traversalNodes, maxDepth: options?.maxDepth || 2 }
     ) || {};
 
     const extractConceptId = (item: any): string => {
       if (!item) return '';
       if (typeof item === 'string') return item;
       if (typeof item === 'object') {
-        return item.conceptId || item.id || item.targetConceptId || item.relatedConceptId || 
+        return item.conceptId || item.id || item.targetConceptId || item.relatedConceptId ||
                (typeof item.concept === 'string' ? item.concept : item.concept?.id) || '';
       }
       return String(item);
@@ -69,7 +70,7 @@ export class DiscoveryFacade {
 
     const rawRelatedList = assembledDTO.relatedConcepts || assembledDTO.rankedRelatedConcepts || rawRanked || [];
 
-    let normalizedRelated: any[] = Array.isArray(rawRelatedList) 
+    let normalizedRelated: any[] = Array.isArray(rawRelatedList)
       ? rawRelatedList.map((item: any) => {
           const cid = extractConceptId(item);
           const score = typeof item === 'object' && typeof item?.score === 'number' ? item.score : 0.9;

@@ -1,6 +1,6 @@
 ﻿/**
  * File: src/repositories/InMemoryTranslationRepository.ts
- * Generated: 17.09.2026
+ * Generated: 18.09.2026
  * Layer: Repository
  */
 
@@ -11,8 +11,9 @@ export class InMemoryTranslationRepository {
   private readonly store: Map<string, TranslationEntry> = new Map();
   private readonly groups: Map<string, TranslationGroup> = new Map();
 
-  constructor(initialEntries: TranslationEntry[] = []) {
+  constructor(initialEntries: TranslationEntry[] = [], initialGroups: TranslationGroup[] = []) {
     initialEntries.forEach((e) => this.store.set(e.id, e));
+    initialGroups.forEach((g) => this.groups.set(g.id, g));
   }
 
   async findById(id: string): Promise<TranslationEntry | null> {
@@ -64,7 +65,6 @@ export class InMemoryTranslationRepository {
     return Array.from(this.store.values()).filter((e) =>
       (e.lemma ?? '').toLowerCase().includes(q) ||
       (e.word ?? '').toLowerCase().includes(q) ||
-      ((e as any).meaning ?? '').toLowerCase().includes(q) ||
       (e.meanings ?? []).some((m) =>
         (typeof m === 'string' ? m : m.text ?? '').toLowerCase().includes(q)
       )
@@ -94,25 +94,7 @@ export class InMemoryTranslationRepository {
   }
 
   async getByGroup(groupId: string): Promise<TranslationGroup | null> {
-    const existingGroup = await this.findGroupById(groupId);
-    if (existingGroup) {
-      return existingGroup;
-    }
-
-    const matchingEntries = Array.from(this.store.values()).filter(
-      (e) => e.groupId === groupId
-    );
-
-    if (matchingEntries.length > 0 || groupId === 'TRG_WATER') {
-      return {
-        id: groupId,
-        groupName: groupId === 'TRG_WATER' ? 'Su' : groupId,
-        groupLabel: groupId === 'TRG_WATER' ? 'Su' : groupId,
-        entries: matchingEntries,
-      } as unknown as TranslationGroup;
-    }
-
-    return null;
+    return this.findGroupById(groupId);
   }
 
   async findGroupSenses(groupId: string): Promise<TranslationMeaning[]> {
@@ -126,7 +108,7 @@ export class InMemoryTranslationRepository {
   async searchGroups(query: string): Promise<TranslationGroup[]> {
     const q = query.toLowerCase();
     return Array.from(this.groups.values()).filter((g) =>
-      ((g as any).groupName ?? (g as any).groupLabel ?? '').toLowerCase().includes(q)
+      (g.groupName ?? g.groupLabel ?? '').toLowerCase().includes(q)
     );
   }
 
@@ -146,8 +128,28 @@ export class InMemoryTranslationRepository {
     return this.searchByMeaning(query, language);
   }
 
+
+  async findGroupSenses(groupId: string): Promise<TranslationGroup | null> {
+    const group = this.groups.get(groupId);
+    if (!group) return null;
+    const entries = Array.from(this.store.values()).filter(
+      (e) => e.groupId === groupId
+    );
+    return { ...group, entries };
+  }
+
+  async searchCrossDictionary(query: string): Promise<TranslationEntry[]> {
+    if (!query || !query.trim()) return this.findAll();
+    return this.search(query);
+  }
+
+  async getByGroup(groupId: string): Promise<TranslationGroup | null> {
+    return this.findGroupSenses(groupId);
+  }
   async clear(): Promise<void> {
     this.store.clear();
     this.groups.clear();
   }
 }
+
+

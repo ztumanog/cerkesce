@@ -27,7 +27,7 @@ export const AnalyticsDashboardPage: React.FC<AnalyticsDashboardPageProps> = ({
       ),
       React.createElement('div', { className: 'bg-white p-5 rounded-lg border shadow-sm', 'data-testid': 'metric-density' },
         React.createElement('div', { className: 'text-sm font-semibold text-gray-500' }, 'Graf YoÄŸunluÄŸu (Density)'),
-        React.createElement('div', { className: 'text-3xl font-extrabold text-emerald-600 mt-2' }, analyticsData.density.toFixed(4))
+        React.createElement('div', { className: 'text-3xl font-extrabold text-emerald-600 mt-2' }, (analyticsData.density ?? 0).toFixed(4))
       ),
       React.createElement('div', { className: 'bg-white p-5 rounded-lg border shadow-sm', 'data-testid': 'metric-isolated' },
         React.createElement('div', { className: 'text-sm font-semibold text-gray-500' }, 'Ä°zole DÃ¼ÄŸÃ¼m SayÄ±sÄ±'),
@@ -36,3 +36,4 @@ export const AnalyticsDashboardPage: React.FC<AnalyticsDashboardPageProps> = ({
     )
   );
 };
+

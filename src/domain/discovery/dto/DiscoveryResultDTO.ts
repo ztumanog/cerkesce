@@ -1,4 +1,4 @@
-import { RelatedConceptDTO } from './RelatedConceptDTO';
+import { RankedRelatedConceptDTO } from './RankedRelatedConceptDTO';
 import { TraversalNode } from './TraversalNode';
 
 export interface DiscoveryResultDTO {
@@ -7,8 +7,8 @@ export interface DiscoveryResultDTO {
   query?: string;
   canonicalName?: string;
 
-  relatedConcepts?: RelatedConceptDTO[];
-  rankedRelatedConcepts?: RelatedConceptDTO[];
+  relatedConcepts?: RankedRelatedConceptDTO[];
+  rankedRelatedConcepts?: RankedRelatedConceptDTO[];
 
   traversalNodes?: TraversalNode[];
   contextClusters?: unknown[];
