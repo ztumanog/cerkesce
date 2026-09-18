@@ -39,9 +39,12 @@
   ],
   "exclude": [
     "node_modules",
-    ".next",
-    ".backup",
-    "src/**/*.test.ts",
-    "src/**/*.spec.ts"
+    "dist",
+    "coverage",
+    "src/tests/**/*",
+    "**/*.test.ts",
+    "**/*.spec.ts",
+    "**/__tests__/**/*",
+    "vitest.config.ts"
   ]
 }
