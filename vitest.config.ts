@@ -1,4 +1,4 @@
-﻿/**
+/**
  * File: vitest.config.ts
  * Generated: 17.09.2026
  * Layer: Configuration
@@ -10,7 +10,6 @@ export default defineConfig({
   test: {
     include: ['src/tests/**/*.test.ts', 'src/repository/**/*.test.ts'],
     exclude: [
-      'src/tests/domain/concept/**',
       'src/tests/api/**',
       'src/tests/certification/**',
       'src/tests/repository/InMemoryConceptRepository.test.ts',
@@ -28,4 +27,5 @@ export default defineConfig({
     ],
   },
 });
+
 

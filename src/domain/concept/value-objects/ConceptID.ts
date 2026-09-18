@@ -24,18 +24,20 @@ export class ConceptID {
 
   private static isValid(id: string): boolean {
     if (!id || typeof id !== 'string') return false;
-
-    // 1. Standart ULID (26 karakter Base32)
-    const ulidRegex = /^[0-9A-HJKMNP-TV-Z]{26}$/i;
-    // 2. Standard UUID v7
+    const ulidRegex = /^[0-9A-HJKMNP-TV-Z]{26}$/;
     const uuidv7Regex = /^[0-9a-f]{8}-[0-9a-f]{4}-7[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
-    // 3. Domain & Test ID Formatı (ör. CONCEPT_WATER, 01H8XPARK00000000000000ICE)
-    const domainIdRegex = /^[A-Z0-9_-]{3,64}$/i;
-
+    const domainIdRegex = /^[A-Z0-9_]{3,64}$/;
     return ulidRegex.test(id) || uuidv7Regex.test(id) || domainIdRegex.test(id);
   }
 
   private static generateULID(): string {
-    return "01HXXXXXXX0000000000000000";
+    const chars = '0123456789ABCDEFGHJKMNPQRSTVWXYZ';
+    const timestamp = Date.now();
+    const timeChars = timestamp.toString(32).toUpperCase().padStart(10, '0').slice(-10);
+    let random = '';
+    for (let i = 0; i < 16; i++) {
+      random += chars[Math.floor(Math.random() * chars.length)];
+    }
+    return timeChars + random;
   }
 }
