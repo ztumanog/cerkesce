@@ -1,4 +1,4 @@
-import { describe, it, expect, beforeEach } from 'vitest';
+﻿import { describe, it, expect, beforeEach } from 'vitest';
 import { MeaningGraph } from '../../../domain/concept/services/MeaningGraph';
 import { InMemoryConceptRepository } from '../../../repository/InMemoryConceptRepository';
 import { Concept } from '../../../domain/concept/Concept';
@@ -11,10 +11,10 @@ describe('Sprint 4: CE-05 to CE-08 & CE-11 - MeaningGraph Engine', () => {
 
   beforeEach(() => {
     repo = new InMemoryConceptRepository();
-    graph = new MeaningGraph();
+    graph = new MeaningGraph(repo);
   });
 
-  it('CE-11: Anayasal Depth=2 sınırında ilişki ağını doğru taramalıdır', async () => {
+  it('CE-11: Anayasal Depth=2 sÄ±nÄ±rÄ±nda iliÅŸki aÄŸÄ±nÄ± doÄŸru taramalÄ±dÄ±r', async () => {
     const idA = ConceptID.create('01ARZ3NDEKTSV4RRFFQ69G5FA1');
     const idB = ConceptID.create('01ARZ3NDEKTSV4RRFFQ69G5FA2');
     const idC = ConceptID.create('01ARZ3NDEKTSV4RRFFQ69G5FA3');
@@ -44,7 +44,7 @@ describe('Sprint 4: CE-05 to CE-08 & CE-11 - MeaningGraph Engine', () => {
     expect(result.depth2).toContain(idC.getValue());
   });
 
-  it('CE-05 & CE-06: Eş ve Zıt anlamlı ilişkileri filtreleyebilmelidir', async () => {
+  it('CE-05 & CE-06: EÅŸ ve ZÄ±t anlamlÄ± iliÅŸkileri filtreleyebilmelidir', async () => {
     const idMain = ConceptID.create('01ARZ3NDEKTSV4RRFFQ69G5FA1');
     const idSyn = ConceptID.create('01ARZ3NDEKTSV4RRFFQ69G5FA2');
     const idAnt = ConceptID.create('01ARZ3NDEKTSV4RRFFQ69G5FA3');
@@ -66,3 +66,4 @@ describe('Sprint 4: CE-05 to CE-08 & CE-11 - MeaningGraph Engine', () => {
     expect(antonyms).toContain(idAnt.getValue());
   });
 });
+

@@ -1,54 +1,27 @@
-/**
- * @file src/domain/concept/value-objects/ConceptID.ts
- * @description Value Object for Concept Identifier
- * 
- * Part of Phase 2 Domain Model
- * Kept for backward compatibility with existing tests
- * 
- * Note: Phase 3 uses ConceptEntry.id (string) instead
- */
+﻿import { describe, it, expect } from 'vitest';
+import { Concept } from '../../../domain/concept/Concept';
+import { ConceptID } from '../../../domain/concept/value-objects/ConceptID';
 
-import { ValueObject } from '@/domain/shared/ValueObject';
+describe('Concept Entity', () => {
+  it('gecerli props ile olusturulabilmelidir', () => {
+    const id = ConceptID.create('CONCEPT_WATER');
+    const concept = Concept.create(id, 'Water', 'Su kavrami');
+    expect(concept.id.getValue()).toBe('CONCEPT_WATER');
+    expect(concept.preferredLabel).toBe('Water');
+    expect(concept.description).toBe('Su kavrami');
+  });
 
-/**
- * Unique identifier for a Concept
- * 
- * Format: "concept-{domain}-{sequence}"
- * Example: "concept-anatomy-head-001"
- */
-export class ConceptID extends ValueObject<{ value: string }> {
-  public static readonly PATTERN = /^concept-[a-z0-9-]+$/;
+  it('description olmadan olusturulabilmelidir', () => {
+    const id = ConceptID.create('CONCEPT_HEAD');
+    const concept = Concept.create(id, 'Head');
+    expect(concept.description).toBe('');
+  });
 
-  private constructor(value: string) {
-    super({ value });
-  }
-
-  /**
-   * Create a new ConceptID
-   * 
-   * @param value ID string
-   * @throws Error if format is invalid
-   */
-  public static create(value: string): ConceptID {
-    if (!this.PATTERN.test(value)) {
-      throw new Error(
-        `Invalid ConceptID format: ${value}. Expected format: concept-{domain}-{sequence}`
-      );
-    }
-    return new ConceptID(value);
-  }
-
-  /**
-   * Get the ID value
-   */
-  public getValue(): string {
-    return this.props.value;
-  }
-
-  /**
-   * Convert to string
-   */
-  public toString(): string {
-    return this.props.value;
-  }
-}
+  it('ayni id ile iki concept esit sayilmalidir', () => {
+    const id1 = ConceptID.create('CONCEPT_WATER');
+    const id2 = ConceptID.create('CONCEPT_WATER');
+    const c1 = Concept.create(id1, 'Water');
+    const c2 = Concept.create(id2, 'Water');
+    expect(c1.id.equals(c2.id)).toBe(true);
+  });
+});

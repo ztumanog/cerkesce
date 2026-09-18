@@ -11,7 +11,7 @@ describe('Sprint 5: CE-12 - Phase 3 Concept Engine Stress & Performance', () => 
 
   beforeEach(() => {
     repo = new InMemoryConceptRepository();
-    graph = new MeaningGraph();
+    graph = new MeaningGraph(repo); // Repository bağı kuruldu
   });
 
   it('1. 10.000 Kavram ve ilişkileri başarıyla belleğe yüklenmelidir', async () => {

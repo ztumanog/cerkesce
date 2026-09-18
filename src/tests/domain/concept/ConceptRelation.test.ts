@@ -1,6 +1,9 @@
 import { describe, it, expect } from 'vitest';
-import { ConceptRelation } from '../../../domain/concept/value-objects/ConceptRelation';
-import { RelationDirection, RelationType } from '../../../domain/concept/types/ConceptRelation';
+import {
+  ConceptRelation,
+  RelationDirection,
+  RelationType,
+} from '../../../domain/concept/types/ConceptRelation';
 
 describe('CE-04: ConceptRelation Model', () => {
   it('geçerli bir ilişki nesnesi oluşturabilmelidir', () => {

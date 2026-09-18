@@ -1,27 +1,34 @@
+/**
+ * @file src/tests/domain/concept/ConceptValidator.test.ts
+ * @description Kavram Doğrulayıcı Testleri
+ */
+
 import { describe, it, expect } from 'vitest';
 import { ConceptValidator } from '../../../domain/concept/services/ConceptValidator';
-import { ConceptRelation } from '../../../domain/concept/value-objects/ConceptRelation';
-import { RelationDirection, RelationType } from '../../../domain/concept/types/ConceptRelation';
-
+import {
+  ConceptRelation,
+  RelationType,
+} from '../../../domain/concept/types/ConceptRelation';
 describe('CE-14: Domain Validation & Cycle Detection', () => {
   it('Self-reference ilişkilerinde hata fırlatmalıdır', () => {
-    const conceptId = '01ARZ3NDEKTSV4RRFFQ69G5FAV';
     expect(() => {
-      ConceptValidator.validateSelfReference(conceptId, conceptId);
+      ConceptValidator.validateSelfReference('CONCEPT_A', 'CONCEPT_A');
     }).toThrow('Self-referencing relation is strictly forbidden.');
   });
 
   it('Doğrudan döngüsel (A -> B ve B -> A) hiyerarşik ilişkileri engellemelidir', () => {
-    const conceptA = '01ARZ3NDEKTSV4RRFFQ69G5FAV';
-    const conceptB = '01ARZ3NDEKTSV4RRFFQ69G5FAB';
+    const conceptA = 'CONCEPT_A';
+    const conceptB = 'CONCEPT_B';
 
-    const bRelations = [
-      ConceptRelation.create({
-        id: 'rel-2',
+    // B'nin A'ya geri bağlantısı (HYPONYM)
+    const bRelations: ConceptRelation[] = [
+      {
+        id: 'REL_B_TO_A',
         targetConceptId: conceptA,
         type: RelationType.HYPONYM,
-        direction: RelationDirection.DIRECTED,
-      })
+        direction: 'DIRECTED' as any,
+        weight: 1,
+      },
     ];
 
     expect(() => {
@@ -29,3 +36,4 @@ describe('CE-14: Domain Validation & Cycle Detection', () => {
     }).toThrow('Direct cycle detected between concepts.');
   });
 });
+

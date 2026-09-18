@@ -1,3 +1,8 @@
+/**
+ * File: src/repositories/ConceptRepository.ts
+ * Generated: 2026-09-18
+ * Layer: Repository
+ */
 import { Concept } from '../Concept';
 import { ConceptID } from '../value-objects/ConceptID';
 

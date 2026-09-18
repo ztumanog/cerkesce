@@ -1,0 +1,174 @@
+
+> sozluk-frontend@0.1.0 test
+> vitest run
+
+
+[1m[30m[46m RUN [49m[39m[22m [36mv4.1.11 [39m[90mE:/projeler/Cerkesce[39m
+
+ [31mÔØ»[39m src/tests/P5S5_01_Triangulation.test.ts [2m([22m[2m1 test[22m[2m | [22m[31m1 failed[39m[2m)[22m[32m 12[2mms[22m[39m
+[31m     [31m├ù[31m su, water ve ps├ä┬▒ sorgular├ä┬▒n├ä┬▒n her biri ba├ä┼©├ä┬▒ms├ä┬▒z olarak CONCEPT_WATER nesnesine ula├à┼©mal├ä┬▒d├ä┬▒r[39m[32m 10[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/DialectRuleRepository.test.ts [2m([22m[2m4 tests[22m[2m)[22m[32m 7[2mms[22m[39m
+ [31mÔØ»[39m src/tests/domain/concept/ConceptPerformance.test.ts [2m([22m[2m2 tests[22m[2m | [22m[31m1 failed[39m[2m)[22m[32m 47[2mms[22m[39m
+     [32mÔ£ô[39m 1. 10.000 Kavram ve ili┼şkileri ba┼şar─▒yla belle─şe y├╝klenmelidir[32m 40[2mms[22m[39m
+[31m     [31m├ù[31m 2. 10.000 d├╝─ş├╝ml├╝ graf ├╝zerinde Depth=2 taramas─▒ 50ms alt─▒nda yan─▒t vermelidir[39m[32m 4[2mms[22m[39m
+[90mstdout[2m | src/tests/domain/discovery/DebugTraversal.test.ts[2m > [22m[2mDebug: Graph Traversal - Correct ID Usage[2m > [22m[2mshould store and retrieve concepts correctly with ConceptID
+[22m[39mconceptWater.id: 01ARZ3NDEKTSV4RRFFQ69G5FAV
+
+ [31mÔØ»[39m src/tests/domain/discovery/Sprint4GraphAwareE2E.test.ts [2m([22m[2m1 test[22m[2m | [22m[31m1 failed[39m[2m)[22m[32m 13[2mms[22m[39m
+[31m     [31m├ù[31m should traverse real MeaningGraph and project related concepts with real traversal engine[39m[32m 10[2mms[22m[39m
+ [31mÔØ»[39m src/tests/domain/discovery/DebugTraversal.test.ts [2m([22m[2m1 test[22m[2m | [22m[31m1 failed[39m[2m)[22m[32m 11[2mms[22m[39m
+[31m     [31m├ù[31m should store and retrieve concepts correctly with ConceptID[39m[32m 8[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/domain/discovery/P5S5_04_05_PerformanceAndZeroMockCert.test.ts [2m([22m[2m2 tests[22m[2m)[22m[32m 53[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/domain/discovery/ContextClusterer.cert.test.ts [2m([22m[2m5 tests[22m[2m)[22m[32m 33[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/domain/discovery/ContextClusterer.test.ts [2m([22m[2m1 test[22m[2m)[22m[32m 31[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/performance/Phase8_1_Performance.test.ts [2m([22m[2m3 tests[22m[2m)[22m[32m 33[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/domain/discovery/services/Phase5_1_Sprint2_E2E.test.ts [2m([22m[2m1 test[22m[2m)[22m[32m 33[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/domain/discovery/DiscoveryResultDTO.contract.test.ts [2m([22m[2m1 test[22m[2m)[22m[32m 37[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/MatchingService.test.ts [2m([22m[2m19 tests[22m[2m)[22m[32m 17[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/domain/discovery/Sprint2Orchestration.test.ts [2m([22m[2m3 tests[22m[2m)[22m[32m 12[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/InMemoryTranslationRepository.test.ts [2m([22m[2m39 tests[22m[2m)[22m[32m 26[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/ReverseTranslationSearch.test.ts [2m([22m[2m14 tests[22m[2m)[22m[32m 20[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/domain/discovery/Sprint3PipelineIntegration.test.ts [2m([22m[2m1 test[22m[2m)[22m[32m 17[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/domain/discovery/Phase5_3_3_IntegrationValidation.cert.test.ts [2m([22m[2m5 tests[22m[2m)[22m[32m 19[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/presentation/api/Phase6_1_APIGateway.cert.test.ts [2m([22m[2m5 tests[22m[2m)[22m[32m 19[2mms[22m[39m
+[90mstdout[2m | src/tests/DebugRepository.test.ts[2m > [22m[2mDebug Repository[2m > [22m[2mrepo.findAll() ├ğal─▒┼şmal─▒
+[22m[39mfindAll(): [
+  {
+    id: [32m'ENTRY_WATER'[39m,
+    lemma: [32m'º▓º¥º┤º░'[39m,
+    normalizedLemma: [32m'º▓º¥º┤º░'[39m,
+    dialect: [32m'KBD'[39m,
+    groupId: [32m'TRG_WATER'[39m,
+    meanings: [ [36m[Object][39m, [36m[Object][39m, [36m[Object][39m ]
+  }
+]
+
+[90mstdout[2m | src/tests/DebugRepository.test.ts[2m > [22m[2mDebug Repository[2m > [22m[2mrepo.findByMeaning('water') ├ğal─▒┼şmal─▒
+[22m[39mfindByMeaning('water'): [
+  {
+    id: [32m'ENTRY_WATER'[39m,
+    lemma: [32m'º▓º¥º┤º░'[39m,
+    normalizedLemma: [32m'º▓º¥º┤º░'[39m,
+    dialect: [32m'KBD'[39m,
+    groupId: [32m'TRG_WATER'[39m,
+    meanings: [ [36m[Object][39m, [36m[Object][39m, [36m[Object][39m ]
+  }
+]
+
+[90mstdout[2m | src/tests/DebugRepository.test.ts[2m > [22m[2mDebug Repository[2m > [22m[2mrepo.search('water') ├ğal─▒┼şmal─▒
+[22m[39msearch('water'): [
+  {
+    id: [32m'ENTRY_WATER'[39m,
+    lemma: [32m'º▓º¥º┤º░'[39m,
+    normalizedLemma: [32m'º▓º¥º┤º░'[39m,
+    dialect: [32m'KBD'[39m,
+    groupId: [32m'TRG_WATER'[39m,
+    meanings: [ [36m[Object][39m, [36m[Object][39m, [36m[Object][39m ]
+  }
+]
+
+ [32mÔ£ô[39m src/tests/DebugRepository.test.ts [2m([22m[2m3 tests[22m[2m)[22m[32m 12[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/domain/discovery/services/GraphTraversalService.test.ts [2m([22m[2m8 tests[22m[2m)[22m[32m 18[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/integration/Phase8_0_SystemIntegration.test.ts [2m([22m[2m4 tests[22m[2m)[22m[32m 12[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/domain/dialect/DialectDomain.test.ts [2m([22m[2m4 tests[22m[2m)[22m[32m 15[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/domain/dialect/DialectResolver.test.ts [2m([22m[2m7 tests[22m[2m)[22m[32m 13[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/domain/dialect/Sprint3Phase4.test.ts [2m([22m[2m6 tests[22m[2m)[22m[32m 13[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/domain/discovery/KnowledgeExplorer.cert.test.ts [2m([22m[2m5 tests[22m[2m)[22m[32m 13[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/domain/discovery/P5S5_02_GraphTraversalCert.test.ts [2m([22m[2m5 tests[22m[2m)[22m[32m 14[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/repository/InMemoryConceptRepository.test.ts [2m([22m[2m4 tests[22m[2m)[22m[32m 10[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/security/Phase8_0_5_Security.test.ts [2m([22m[2m5 tests[22m[2m)[22m[32m 11[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/infra/Phase10_2_HealthCheck.test.ts [2m([22m[2m1 test[22m[2m)[22m[32m 8[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/Phase2ExitCriteria.test.ts [2m([22m[2m3 tests[22m[2m)[22m[32m 10[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/TranslationService.test.ts [2m([22m[2m3 tests[22m[2m)[22m[32m 10[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/RealDataIntegration.test.ts [2m([22m[2m6 tests[22m[2m)[22m[32m 11[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/infra/Phase10_1_Logger.test.ts [2m([22m[2m1 test[22m[2m)[22m[32m 13[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/services/ConceptFacade.test.ts [2m([22m[2m1 test[22m[2m)[22m[32m 8[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/domain/discovery/P5S5_03_RepositoryBackedE2E.test.ts [2m([22m[2m1 test[22m[2m)[22m[32m 12[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/LanguageFilter.test.ts [2m([22m[2m3 tests[22m[2m)[22m[32m 10[2mms[22m[39m
+ [32mÔ£ô[39m src/repository/RepositoryIntegration.test.ts [2m([22m[2m3 tests[22m[2m)[22m[32m 8[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/domain/discovery/Phase5_1_RealAssembly.test.ts [2m([22m[2m1 test[22m[2m)[22m[32m 10[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/infra/Phase9_0_Containerization.test.ts [2m([22m[2m3 tests[22m[2m)[22m[32m 9[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/domain/discovery/services/RelatedConceptResolver.test.ts [2m([22m[2m2 tests[22m[2m)[22m[32m 10[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/domain/concept/MeaningConceptLinker.test.ts [2m([22m[2m3 tests[22m[2m)[22m[32m 10[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/domain/concept/MeaningGraph.test.ts [2m([22m[2m2 tests[22m[2m)[22m[32m 9[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/MultiLanguageSearch.test.ts [2m([22m[2m1 test[22m[2m)[22m[32m 9[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/infra/Phase10_2_OperationalAnalytics.test.ts [2m([22m[2m1 test[22m[2m)[22m[32m 10[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/DialectRules.test.ts [2m([22m[2m1 test[22m[2m)[22m[32m 6[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/domain/discovery/KnowledgeRanker.test.ts [2m([22m[2m2 tests[22m[2m)[22m[32m 8[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/domain/discovery/Phase5TrueE2EValidation.test.ts [2m([22m[2m1 test[22m[2m)[22m[32m 8[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/domain/concept/Concept.test.ts [2m([22m[2m3 tests[22m[2m)[22m[32m 9[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/infra/Phase10_1_Dashboard.test.ts [2m([22m[2m1 test[22m[2m)[22m[32m 9[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/domain/concept/ConceptID.test.ts [2m([22m[2m3 tests[22m[2m)[22m[32m 8[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/release/Phase8_2_ReleaseCandidate.test.ts [2m([22m[2m2 tests[22m[2m)[22m[32m 7[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/sync/Phase9_2_GraphSync.test.ts [2m([22m[2m1 test[22m[2m)[22m[32m 6[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/domain/discovery/traversal/TraversalBoundary.test.ts [2m([22m[2m4 tests[22m[2m)[22m[32m 9[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/domain/concept/ConceptRelation.test.ts [2m([22m[2m2 tests[22m[2m)[22m[32m 8[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/domain/concept/ConceptValidator.test.ts [2m([22m[2m2 tests[22m[2m)[22m[32m 8[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/infra/Phase10_3_ApiGovernance.test.ts [2m([22m[2m1 test[22m[2m)[22m[32m 6[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/performance/Phase12_1_PerformanceBenchmark.test.ts [2m([22m[2m1 test[22m[2m)[22m[32m 8[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/collaboration/Phase12_0_CollaborativeModeration.test.ts [2m([22m[2m1 test[22m[2m)[22m[32m 6[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/federation/Phase11_0_GraphFederation.test.ts [2m([22m[2m1 test[22m[2m)[22m[32m 7[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/infra/Phase10_1_PrometheusExporter.test.ts [2m([22m[2m1 test[22m[2m)[22m[32m 6[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/infra/Hotfix001_DataLoading.test.ts [2m([22m[2m1 test[22m[2m)[22m[32m 3[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/StressAndPerformance.test.ts [2m([22m[2m3 tests[22m[2m)[22m[33m 7350[2mms[22m[39m
+     [33m[2mÔ£ô[22m[39m 3. ├âÔÇíoklu e├à┼©zamanl├ä┬▒ (Concurrent) 100 arama sorgusu sistemi kilitlememelidir [33m 6792[2mms[22m[39m
+
+ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ» Failed Tests 4 ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»
+
+ FAIL  src/tests/P5S5_01_Triangulation.test.ts > P5S5-01: Cross-Lingual Concept Triangulation Sertifikasyonu > su, water ve ps├ä┬▒ sorgular├ä┬▒n├ä┬▒n her biri ba├ä┼©├ä┬▒ms├ä┬▒z olarak CONCEPT_WATER nesnesine ula├à┼©mal├ä┬▒d├ä┬▒r
+TypeError: linker.resolveConcept is not a function
+ ÔØ» src/tests/P5S5_01_Triangulation.test.ts:117:44
+    115|
+    116|       // Step B: MeaningConceptLinker ├âÔÇí├â┬Âz├â┬╝mleme
+    117|       const resolvedConcept = await linker.resolveConcept(meaning!.id);
+       |                                            ^
+    118|       expect(resolvedConcept).not.toBeNull();
+    119|
+
+ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»[1/4]ÔÄ»
+
+ FAIL  src/tests/domain/concept/ConceptPerformance.test.ts > Sprint 5: CE-12 - Phase 3 Concept Engine Stress & Performance > 2. 10.000 d├╝─ş├╝ml├╝ graf ├╝zerinde Depth=2 taramas─▒ 50ms alt─▒nda yan─▒t vermelidir
+AssertionError: expected 0 to be greater than 0
+ ÔØ» src/tests/domain/concept/ConceptPerformance.test.ts:70:34
+     68|
+     69|     expect(duration).toBeLessThan(50);
+     70|     expect(result.depth1.length).toBeGreaterThan(0);
+       |                                  ^
+     71|   });
+     72| });
+
+ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»[2/4]ÔÄ»
+
+ FAIL  src/tests/domain/discovery/DebugTraversal.test.ts > Debug: Graph Traversal - Correct ID Usage > should store and retrieve concepts correctly with ConceptID
+TypeError: meaningGraph.getConcept is not a function
+ ÔØ» src/tests/domain/discovery/DebugTraversal.test.ts:34:36
+
+     32|
+     33|     // Try to retrieve
+     34|     const retrieved = meaningGraph.getConcept(waterID.getValue());
+       |                                    ^
+     35|     console.log('Retrieved concept:', !!retrieved);
+     36|
+[2m Test Files [22m [1m[31m4 failed[39m[22m[2m | [22m[1m[32m58 passed[39m[22m[90m (62)[39m
+[2m      Tests [22m [1m[31m4 failed[39m[22m[2m | [22m[1m[32m221 passed[39m[22m[90m (225)[39m
+[2m   Start at [22m 18:43:07
+[2m   Duration [22m 8.36s[2m (transform 3.59s, setup 0ms, import 8.68s, tests 8.20s, environment 14ms)[22m
+
+
+ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»[3/4]ÔÄ»
+
+ FAIL  src/tests/domain/discovery/Sprint4GraphAwareE2E.test.ts > Phase 5.1 Sprint 4: Graph-Aware Discovery E2E Certification > should traverse real MeaningGraph and project related concepts with real traversal engine
+TypeError: meaningGraph.getConcept is not a function
+ ÔØ» Object.getNeighbors src/tests/domain/discovery/Sprint4GraphAwareE2E.test.ts:50:38
+     48|     const graphRepositoryAdapter = {
+     49|       getNeighbors: (conceptId: string) => {
+     50|         const concept = meaningGraph.getConcept(conceptId);
+       |                                      ^
+     51|         if (!concept || !(concept as any).relations) return [];
+     52|         return (concept as any).relations.map((r: any) => ({
+ ÔØ» GraphTraversalService.traverse src/domain/discovery/services/GraphTraversalService.ts:60:46
+ ÔØ» MultilingualExplorer.explore src/domain/discovery/services/MultilingualExplorer.ts:86:57
+ ÔØ» src/tests/domain/discovery/Sprint4GraphAwareE2E.test.ts:94:20
+
+ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»[4/4]ÔÄ»
+

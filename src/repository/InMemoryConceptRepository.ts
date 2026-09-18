@@ -1,40 +1,69 @@
-// TODO: ADR-0009 (Concept Identity Strategy) kabul edilince bu iki tip
-// gercek tanimlariyla degistirilmeli. Su an sadece derlemeyi gecirmek
-// icin eklenen gecici placeholder'lardir.
-type ConceptID = string;
-interface Concept { id: string; [key: string]: any; }
-
-export interface GraphNeighbor {
-  conceptId: string;
-  relationType: string;
-  weight: number;
+﻿export interface IConceptRepository {
+  save(concept: any): Promise<void>;
+  findById(id: any): Promise<any>;
+  findAll(): Promise<any[]>;
+  getAll(): Promise<any[]>;
+  findMany(ids: any[]): Promise<any[]>;
+  exists(id: any): Promise<boolean>;
+  delete(id: any): Promise<boolean>;
 }
 
-export class InMemoryConceptRepository {
-  private concepts: Map<string, any> = new Map();
+export class InMemoryConceptRepository implements IConceptRepository {
+  private static instance: InMemoryConceptRepository | null = null;
+  private storage: Map<string, any> = new Map();
 
-  public save(concept: any): void {
-    this.concepts.set(concept.id, concept);
+  constructor() {
+    InMemoryConceptRepository.instance = this;
   }
 
-  public findById(id: string): any {
-    return this.concepts.get(id);
-  }
-
-  public getNeighbors(conceptId: string): GraphNeighbor[] {
-    const concept = this.concepts.get(conceptId);
-    if (!concept || !concept.relations) {
-      return [];
+  public static getLastInstance(): InMemoryConceptRepository {
+    if (!InMemoryConceptRepository.instance) {
+      InMemoryConceptRepository.instance = new InMemoryConceptRepository();
     }
-
-    return concept.relations.map((rel: any) => ({
-      conceptId: rel.targetConceptId,
-      relationType: rel.relationType,
-      weight: rel.weight || 1
-    }));
+    return InMemoryConceptRepository.instance;
   }
 
-  async findMany(ids: ConceptID[]): Promise<Concept[]> { return []; }
-  async exists(id: ConceptID | string): Promise<boolean> { return false; }
-  async delete(id: ConceptID | string): Promise<boolean> { return false; }
+  private extractIdStr(id: any): string {
+    if (!id) return '';
+    if (typeof id === 'string') return id;
+    if (typeof id.getValue === 'function') return id.getValue();
+    return id.value || id.id || String(id);
+  }
+
+  async save(concept: any): Promise<void> {
+    const idStr = this.extractIdStr(concept.id || (concept.getId && concept.getId()));
+    this.storage.set(idStr, concept);
+  }
+
+  async findById(id: any): Promise<any> {
+    const idStr = this.extractIdStr(id);
+    return this.storage.get(idStr) || null;
+  }
+
+  async findAll(): Promise<any[]> {
+    return Array.from(this.storage.values());
+  }
+
+  async getAll(): Promise<any[]> {
+    return this.findAll();
+  }
+
+  async findMany(ids: any[]): Promise<any[]> {
+    const results: any[] = [];
+    for (const id of ids) {
+      const found = await this.findById(id);
+      if (found) results.push(found);
+    }
+    return results;
+  }
+
+  async exists(id: any): Promise<boolean> {
+    const idStr = this.extractIdStr(id);
+    return this.storage.has(idStr);
+  }
+
+  async delete(id: any): Promise<boolean> {
+    const idStr = this.extractIdStr(id);
+    return this.storage.delete(idStr);
+  }
 }

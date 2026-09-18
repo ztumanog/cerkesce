@@ -1,13 +1,13 @@
-export abstract class ValueObject<T> {
+﻿export abstract class ValueObject<T extends object> {
   protected readonly props: T;
 
   constructor(props: T) {
-    this.props = Object.freeze(props);
+    this.props = Object.freeze({ ...props });
   }
 
-  public equals(vo?: ValueObject<T>): boolean {
-    if (vo === null || vo === undefined) return false;
-    if (vo.props === undefined) return false;
-    return JSON.stringify(this.props) === JSON.stringify(vo.props);
+  public equals(other: ValueObject<T>): boolean {
+    if (other === null || other === undefined) return false;
+    if (other.constructor !== this.constructor) return false;
+    return JSON.stringify(this.props) === JSON.stringify(other.props);
   }
 }

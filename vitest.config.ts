@@ -1,19 +1,17 @@
-/**
- * File: vitest.config.ts
- * Generated: 17.09.2026
- * Layer: Configuration
- */
-
-import { defineConfig } from 'vitest/config';
+﻿import { defineConfig } from 'vitest/config';
+import path from 'path';
 
 export default defineConfig({
+  resolve: {
+    alias: {
+      '@': path.resolve('./src'),
+    },
+  },
   test: {
     include: ['src/tests/**/*.test.ts', 'src/repository/**/*.test.ts'],
     exclude: [
       'src/tests/api/**',
       'src/tests/certification/**',
-      'src/tests/repository/InMemoryConceptRepository.test.ts',
-      'src/tests/services/ConceptFacade.test.ts',
       'src/tests/ui/**',
       'src/tests/P5S5_02_GraphTraversal.test.ts',
       'src/tests/domain/discovery/QuerySemanticMapper.cert.test.ts',
@@ -27,5 +25,3 @@ export default defineConfig({
     ],
   },
 });
-
-

@@ -1,4 +1,4 @@
-﻿/**
+/**
  * File: src/repositories/InMemoryTranslationRepository.ts
  * Generated: 18.09.2026
  * Layer: Repository
@@ -61,6 +61,7 @@ export class InMemoryTranslationRepository {
   }
 
   async search(query: string): Promise<TranslationEntry[]> {
+    if (!query || !query.trim()) return this.findAll();
     const q = query.toLowerCase();
     return Array.from(this.store.values()).filter((e) =>
       (e.lemma ?? '').toLowerCase().includes(q) ||
@@ -82,6 +83,10 @@ export class InMemoryTranslationRepository {
     );
   }
 
+  async findByMeaning(query: string, language?: string): Promise<TranslationEntry[]> {
+    return this.searchByMeaning(query, language);
+  }
+
   async getTranslations(lemma: string): Promise<TranslationMeaning[]> {
     const entry = await this.getByLemma(lemma);
     return (entry?.meanings ?? []).map((m) =>
@@ -90,19 +95,20 @@ export class InMemoryTranslationRepository {
   }
 
   async findGroupById(groupId: string): Promise<TranslationGroup | null> {
-    return this.groups.get(groupId) ?? null;
+    const group = this.groups.get(groupId);
+    if (!group) return null;
+    const entries = Array.from(this.store.values()).filter(
+      (e) => e.groupId === groupId
+    );
+    return { ...group, entries };
   }
 
   async getByGroup(groupId: string): Promise<TranslationGroup | null> {
     return this.findGroupById(groupId);
   }
 
-  async findGroupSenses(groupId: string): Promise<TranslationMeaning[]> {
-    const group = await this.getByGroup(groupId);
-    if (!group || !group.entries) return [];
-    return group.entries.flatMap((e) =>
-      (e.meanings ?? []).map((m) => (typeof m === 'string' ? { text: m } : m))
-    );
+  async findGroupSenses(groupId: string): Promise<TranslationGroup | null> {
+    return this.findGroupById(groupId);
   }
 
   async searchGroups(query: string): Promise<TranslationGroup[]> {
@@ -124,32 +130,8 @@ export class InMemoryTranslationRepository {
     return this.findAll();
   }
 
-  async findByMeaning(query: string, language?: string): Promise<TranslationEntry[]> {
-    return this.searchByMeaning(query, language);
-  }
-
-
-  async findGroupSenses(groupId: string): Promise<TranslationGroup | null> {
-    const group = this.groups.get(groupId);
-    if (!group) return null;
-    const entries = Array.from(this.store.values()).filter(
-      (e) => e.groupId === groupId
-    );
-    return { ...group, entries };
-  }
-
-  async searchCrossDictionary(query: string): Promise<TranslationEntry[]> {
-    if (!query || !query.trim()) return this.findAll();
-    return this.search(query);
-  }
-
-  async getByGroup(groupId: string): Promise<TranslationGroup | null> {
-    return this.findGroupSenses(groupId);
-  }
   async clear(): Promise<void> {
     this.store.clear();
     this.groups.clear();
   }
 }
-
-

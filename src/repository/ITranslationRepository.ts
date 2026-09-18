@@ -1,8 +1,8 @@
-﻿/**
+/**
  * @file src/repository/ITranslationRepository.ts
- * @description ADR-0007 standardÄ±na uygun Repository ArayÃ¼zÃ¼ - KapsamlÄ± Versiyon
+ * @description ADR-0007 standardına uygun Repository Arayüzü - Kapsamlı Versiyon
  * 
- * Bu arayÃ¼z Ã§eviri deposunun tÃ¼m operasyonlarÄ±nÄ± tanÄ±mlar:
+ * Bu arayüz çeviri deposunun tüm operasyonlarını tanımlar:
  * - Temel metodlar: save, findById, search, addEntry
  * - Yeni metodlar (ADR-0007): getByLemma, getTranslations, reverseLookup, getByGroup
  * - Eski metodlar (Backward Compatibility): findByLemma, findCanonicalById, findGroupSenses, searchCrossDictionary
@@ -41,7 +41,7 @@ export interface SearchFilters {
 }
 
 /**
- * Ã‡eviri Deposu ArayÃ¼zÃ¼
+ * Çeviri Deposu Arayüzü
  */
 export interface ITranslationRepository {
   /**
@@ -49,22 +49,22 @@ export interface ITranslationRepository {
    */
 
   /**
-   * Bir Ã§eviri girdisini kaydeder veya gÃ¼nceller
+   * Bir çeviri girdisini kaydeder veya günceller
    */
   save(entry: TranslationEntry): Promise<TranslationEntry>;
 
   /**
-   * Yeni Ã§eviri girdisi ekler (save iÃ§in alias)
+   * Yeni çeviri girdisi ekler (save için alias)
    */
   addEntry(entry: TranslationEntry): Promise<TranslationEntry>;
 
   /**
-   * ID ile Ã§eviri girdisini arar
+   * ID ile çeviri girdisini arar
    */
   findById(id: string): Promise<TranslationEntry | null>;
 
   /**
-   * Genel arama yapar (lemma ve meanings iÃ§inde)
+   * Genel arama yapar (lemma ve meanings içinde)
    */
   search(query: string): Promise<TranslationEntry[]>;
 
@@ -74,7 +74,7 @@ export interface ITranslationRepository {
   findByMeaning(text: string, language?: string): Promise<TranslationEntry[]>;
 
   /**
-   * Ã‡eviri grubunu kaydeder
+   * Çeviri grubunu kaydeder
    */
   saveGroup?(group: TranslationGroup): Promise<TranslationGroup>;
 
@@ -84,26 +84,26 @@ export interface ITranslationRepository {
   findGroupById?(groupId: string): Promise<TranslationGroup | null>;
 
   /**
-   * TÃ¼m girdileri dÃ¶ndÃ¼rÃ¼r
+   * Tüm girdileri döndürür
    */
   findAll?(): Promise<TranslationEntry[]>;
 
   /**
-   * ===== YENÄ° METODLAR (ADR-0007) =====
+   * ===== YENİ METODLAR (ADR-0007) =====
    */
 
   /**
-   * Lemma (sÃ¶zlÃ¼k baÅŸÄ±) ile Ã§eviri giriÅŸini arar
+   * Lemma (sözlük başı) ile çeviri girişini arar
    */
   getByLemma?(lemma: string): Promise<TranslationEntry | null>;
 
   /**
-   * Sorgu dizesine gÃ¶re Ã§evirileri arar (partial match)
+   * Sorgu dizesine göre çevirileri arar (kısmi eşleştirme)
    */
   getTranslations?(query: string): Promise<TranslationEntry[]>;
 
   /**
-   * Anlam sorgusu ile ters arama yapar (meanings iÃ§inde arama)
+   * Anlam sorgusu ile ters arama yapar (meanings içinde arama)
    */
   reverseLookup?(meaningQuery: string): Promise<TranslationEntry[]>;
 
@@ -113,40 +113,40 @@ export interface ITranslationRepository {
   getByGroup?(groupId: string): Promise<TranslationGroup | null>;
 
   /**
-   * ===== ESKÄ° METODLAR & ALIASED METODLAR =====
+   * ===== ESKİ METODLAR & ALİAS METODLAR =====
    */
 
   /**
-   * ID ile canonical (kanonik) Ã§eviri giriÅŸini arar
+   * ID ile kanonik çeviri girişini arar
    */
   findCanonicalById?(id: string): Promise<TranslationEntry | null>;
 
   /**
-   * Lemma ile Ã§eviri giriÅŸini arar
+   * Lemma ile çeviri girişini arar
    */
   findByLemma(lemma: string): Promise<TranslationEntry[] | TranslationEntry | null>;
 
   /**
-   * Grup anlamlarÄ±nÄ± arar (getByGroup'un alias'Ä±)
+   * Grup anlamlarını arar (getByGroup'un aliyası)
    */
   findGroupSenses?(groupId: string): Promise<TranslationGroup | null>;
 
   /**
-   * Ã‡apraz sÃ¶zlÃ¼k aramasÄ± (lemma ve meanings'de)
+   * Çapraz sözlük araması (lemma ve meanings'de)
    */
   searchCrossDictionary?(query: string): Promise<TranslationEntry[]>;
 
   /**
-   * ===== EKLENTÄ° METODLAR & FÄ°LTRELER =====
+   * ===== EKLENTİ METODLAR & FİLTRELER =====
    */
 
   /**
-   * LehÃ§eye gÃ¶re girdileri filtreler
+   * Lehçeye göre girdileri filtreler
    */
   filterByDialect?(entries: TranslationEntry[], dialect: string): TranslationEntry[];
 
   /**
-   * Dile gÃ¶re girdileri filtreler
+   * Dile göre girdileri filtreler
    */
   filterByLanguage?(entries: TranslationEntry[], language: string): TranslationEntry[];
 
@@ -161,22 +161,22 @@ export interface ITranslationRepository {
   getWithPagination?(query: string, params: PaginationParams): Promise<PaginatedResult<TranslationEntry>>;
 
   /**
-   * TÃ¼m girdileri dÃ¶ndÃ¼rÃ¼r
+   * Tüm girdileri döndürür
    */
   getAll(): Promise<TranslationEntry[]>;
 
   /**
-   * TÃ¼m gruplarÄ± dÃ¶ndÃ¼rÃ¼r
+   * Tüm grupları döndürür
    */
   getAllGroups?(): Promise<TranslationGroup[]>;
 
   /**
-   * GiriÅŸ sayÄ±sÄ±nÄ± dÃ¶ndÃ¼rÃ¼r
+   * Giriş sayısını döndürür
    */
   count?(): Promise<number>;
 
   /**
-   * Belirli bir lemmanÄ±n var olup olmadÄ±ÄŸÄ±nÄ± kontrol eder
+   * Belirli bir lemmanın var olup olmadığını kontrol eder
    */
   exists?(lemma: string): Promise<boolean>;
 }
