@@ -1,12 +1,7 @@
-// @ts-nocheck
 /**
- * @file app/actions/dictionaryActions.ts
- * @description Server-side çeviri arama eylemleri
- * 
- * Bu dosya Next.js "use server" direktifi ile sunucu tarafında çalışır.
- * TranslationService'i başlatır ve çeviri işlemlerini expose eder.
- * 
- * NOT: "use server" dosyasında SADECE async fonksiyonlar olabilir!
+ * File: app/actions/dictionaryActions.ts
+ * Generated: 2026-09-19
+ * Layer: Service
  */
 
 "use server";
@@ -19,39 +14,36 @@ import {
   SearchResult,
   ReverseLookupResult,
 } from "@/services/TranslationService";
-import { TranslationEntry, TranslationGroup } from "@/domain/translation";
+import { TranslationEntry, TranslationGroup } from "@/types/dictionary";
 
-/**
- * Servisleri başlat (singleton pattern)
- */
 let translationService: TranslationService | null = null;
 
 function getTranslationService(): TranslationService {
   if (!translationService) {
-    // Repository'yi başlat
     const repository = new MockTranslationRepository();
-
-    // MorphologyAwareMatchingService'i başlat
     const matchingService = new MorphologyAwareMatchingService();
-
-    // TranslationService'i başlat (2 argüman: repository + matchingService)
     translationService = new TranslationService(repository, matchingService);
   }
   return translationService;
 }
 
-/**
- * Yardımcı Fonksiyon: SearchResult veya dizi gelen yapıdan güvenli bir şekilde TranslationEntry[] ayıklar
- */
-function extractEntries(result: any): TranslationEntry[] {
-  if (!result) return [];
-  if (Array.isArray(result)) return result;
+// Type Guard ve Helper Fonksiyonlar (Export EDİLMEMELİ)
+interface SearchResultEnvelope {
+  entries?: TranslationEntry[];
+  results?: TranslationEntry[];
+  items?: TranslationEntry[];
+}
+
+function isSearchResultEnvelope(value: unknown): value is SearchResultEnvelope {
+  return typeof value === "object" && value !== null;
+}
+
+function extractEntries(result: unknown): TranslationEntry[] {
+  if (Array.isArray(result)) return result as TranslationEntry[];
+  if (!isSearchResultEnvelope(result)) return [];
   return result.entries || result.results || result.items || [];
 }
 
-/**
- * Yardımcı Fonksiyon: TranslationEntry[] dizisini SearchResult'a dönüştürür
- */
 function toSearchResult(entries: TranslationEntry[], query: string = ""): SearchResult {
   return {
     entries: entries,
@@ -59,19 +51,9 @@ function toSearchResult(entries: TranslationEntry[], query: string = ""): Search
   };
 }
 
-/**
- * ===== TEMEL ARAMA FONKSİYONLARI =====
- */
+/* ===== Server Action Fonksiyonları (Sadece Async) ===== */
 
-/**
- * Lemma ile çeviri arar
- * 
- * @param lemma Aranacak kelime (örn: "шъхьэ")
- * @returns TranslationEntry veya null
- */
-export async function searchByLemma(
-  lemma: string
-): Promise<TranslationEntry | null> {
+export async function searchByLemma(lemma: string): Promise<TranslationEntry | null> {
   try {
     const service = getTranslationService();
     return await service.getById(lemma);
@@ -81,15 +63,7 @@ export async function searchByLemma(
   }
 }
 
-/**
- * Sorgu ile çevirileri arar
- * 
- * @param query Arama sorgusu (örn: "пс")
- * @returns TranslationEntry dizisi
- */
-export async function searchTranslations(
-  query: string
-): Promise<TranslationEntry[]> {
+export async function searchTranslations(query: string): Promise<TranslationEntry[]> {
   try {
     const service = getTranslationService();
     const result = await service.search(query);
@@ -100,15 +74,7 @@ export async function searchTranslations(
   }
 }
 
-/**
- * Anlam ile ters arama yapar
- * 
- * @param meaning Aranacak anlam (örn: "baş")
- * @returns TranslationEntry dizisi
- */
-export async function reverseLookupByMeaning(
-  meaning: string
-): Promise<TranslationEntry[]> {
+export async function reverseLookupByMeaning(meaning: string): Promise<TranslationEntry[]> {
   try {
     const service = getTranslationService();
     const results: ReverseLookupResult[] = await service.reverseLookup(meaning);
@@ -119,14 +85,6 @@ export async function reverseLookupByMeaning(
   }
 }
 
-/**
- * Morfolojik çeviri yapar
- * 
- * @param query Çevirilecek kelime
- * @param fromDialect Kaynak lehçe (Varsayılan: "DOGU")
- * @param toDialect Hedef lehçe (Varsayılan: "BATI")
- * @returns TranslationResult[] - Çeviri sonuçları dizisi
- */
 export async function translateWithMorphology(
   query: string,
   fromDialect: string = "DOGU",
@@ -141,19 +99,7 @@ export async function translateWithMorphology(
   }
 }
 
-/**
- * ===== GRUP İŞLEMLERİ =====
- */
-
-/**
- * Grup ID'si ile çevirileri arar
- * 
- * @param groupId Grup tanımlayıcı (örn: "g-head", "g-water")
- * @returns TranslationGroup veya null
- */
-export async function searchByGroup(
-  groupId: string
-): Promise<TranslationGroup | null> {
+export async function searchByGroup(groupId: string): Promise<TranslationGroup | null> {
   try {
     const service = getTranslationService();
     return await service.getByGroup(groupId);
@@ -163,19 +109,7 @@ export async function searchByGroup(
   }
 }
 
-/**
- * ===== GELİŞMİŞ ARAMA FONKSİYONLARI =====
- */
-
-/**
- * Çapraz sözlük araması (lemma ve meanings'de)
- * 
- * @param query Arama sorgusu
- * @returns TranslationEntry dizisi
- */
-export async function searchCrossDictionary(
-  query: string
-): Promise<TranslationEntry[]> {
+export async function searchCrossDictionary(query: string): Promise<TranslationEntry[]> {
   try {
     const service = getTranslationService();
     return await service.searchCrossDictionary(query);
@@ -185,17 +119,7 @@ export async function searchCrossDictionary(
   }
 }
 
-/**
- * Benzer terimleri bulur
- * 
- * @param lemma Referans kelime
- * @param limit Sonuç sınırı (Varsayılan: 5)
- * @returns TranslationEntry dizisi
- */
-export async function findSimilarTerms(
-  lemma: string,
-  limit: number = 5
-): Promise<TranslationEntry[]> {
+export async function findSimilarTerms(lemma: string, limit: number = 5): Promise<TranslationEntry[]> {
   try {
     const service = getTranslationService();
     const results = await service.findSimilarTerms(lemma);
@@ -206,17 +130,7 @@ export async function findSimilarTerms(
   }
 }
 
-/**
- * Lehçe varyasyonlarını döndürür
- * 
- * @param lemma Referans kelime
- * @param fromDialect Kaynak lehçe (Varsayılan: "DOGU")
- * @returns TranslationEntry[] - Lehçe varyasyonları
- */
-export async function getDialectVariations(
-  lemma: string,
-  fromDialect: string = "DOGU"
-): Promise<TranslationEntry[]> {
+export async function getDialectVariations(lemma: string, fromDialect: string = "DOGU"): Promise<TranslationEntry[]> {
   try {
     const service = getTranslationService();
     return await service.getDialectVariations(lemma, fromDialect);
@@ -226,17 +140,7 @@ export async function getDialectVariations(
   }
 }
 
-/**
- * ===== FİLTRELEME FONKSİYONLARI (ASYNC) =====
- */
-
-/**
- * Dile göre girdileri filtreler
- */
-export async function filterByLanguageAsync(
-  entries: TranslationEntry[],
-  language: string
-): Promise<TranslationEntry[]> {
+export async function filterByLanguageAsync(entries: TranslationEntry[], language: string): Promise<TranslationEntry[]> {
   try {
     const service = getTranslationService();
     return service.filterByLanguage(entries, language);
@@ -246,13 +150,7 @@ export async function filterByLanguageAsync(
   }
 }
 
-/**
- * Lehçeye göre girdileri filtreler
- */
-export async function filterByDialectAsync(
-  entries: TranslationEntry[],
-  dialect: string
-): Promise<TranslationEntry[]> {
+export async function filterByDialectAsync(entries: TranslationEntry[], dialect: string): Promise<TranslationEntry[]> {
   try {
     const service = getTranslationService();
     return service.filterByDialect(entries, dialect);
@@ -262,13 +160,6 @@ export async function filterByDialectAsync(
   }
 }
 
-/**
- * ===== CACHE YÖNETİMİ =====
- */
-
-/**
- * Cache'i temizler
- */
 export async function clearCache(): Promise<void> {
   try {
     const service = getTranslationService();
@@ -278,13 +169,7 @@ export async function clearCache(): Promise<void> {
   }
 }
 
-/**
- * Cache istatistiklerini döndürür
- */
-export async function getCacheStats(): Promise<{
-  size: number;
-  entries: string[];
-}> {
+export async function getCacheStats(): Promise<{ size: number; entries: string[] }> {
   try {
     const service = getTranslationService();
     return service.getCacheStats();
@@ -294,33 +179,18 @@ export async function getCacheStats(): Promise<{
   }
 }
 
-/**
- * ===== TOPLU İŞLEMLER =====
- */
-
-/**
- * Birden fazla sorguyu paralel olarak arar
- */
-export async function searchMultiple(
-  queries: string[]
-): Promise<SearchResult[]> {
+export async function searchMultiple(queries: string[]): Promise<SearchResult[]> {
   try {
     const service = getTranslationService();
     const promises = queries.map((q) => service.search(q));
     const results = await Promise.all(promises);
-    
-    return results.map((entries: TranslationEntry[], index: number) => {
-      return toSearchResult(entries, queries[index]);
-    });
+    return results.map((entries: TranslationEntry[], index: number) => toSearchResult(entries, queries[index]));
   } catch (error) {
     console.error("searchMultiple hatası:", error);
     return [];
   }
 }
 
-/**
- * Tüm çevirileri döndürür
- */
 export async function getAllTranslations(): Promise<TranslationEntry[]> {
   try {
     const service = getTranslationService();
@@ -331,9 +201,6 @@ export async function getAllTranslations(): Promise<TranslationEntry[]> {
   }
 }
 
-/**
- * Tüm grupları döndürür
- */
 export async function getAllGroups(): Promise<TranslationGroup[]> {
   try {
     const service = getTranslationService();

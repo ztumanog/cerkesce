@@ -1,8 +1,13 @@
-﻿"use client";
+﻿/**
+ * File: src/components/layout/Kaynaklar.tsx
+ * Generated: 2026-09-19
+ * Layer: UI
+ */
+"use client";
 
 import { useMemo, useState } from "react";
 // @ts-ignore: TypeScript JSON modülünü tanımadığında hata vermemesi için
-import rawManifest from "@/utils/dictionaries.json";
+import rawManifest from "@/data/dictionaries.json";
 
 export interface TemaRenkleri {
   arkaPlan: string;

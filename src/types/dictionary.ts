@@ -1,6 +1,7 @@
 ﻿/**
  * File: src/types/dictionary.ts
- * Layer: Domain Model
+ * Generated: 2026-09-19
+ * Layer: Domain
  */
 
 export interface TranslationMeaning {
@@ -37,6 +38,8 @@ export interface DictionaryEntry {
   meanings?: TranslationMeaning[];
   dialect?: string;
   groupId?: string;
+  notes?: string;
+  category?: string;
 }
 
 export interface DictionarySource {
@@ -202,6 +205,8 @@ export interface SearchResult {
   total: number;
   page?: number;
   pageSize?: number;
+  totalCount: number;
+  query: string;
 }
 
 export interface DailyWord {
@@ -277,6 +282,16 @@ export interface AktifSozlukItem {
   lastUpdated?: string;
   dialects?: any[];
 }
+export interface TranslationResult {
+  entry: DictionaryEntry;
+  sourceLanguage: string;
+  targetLanguage: string;
+  translatedText: string;
+  confidenceScore?: number;
+}
 
-
-
+export interface CacheStats {
+  hits: number;
+  misses: number;
+  size: number;
+}
