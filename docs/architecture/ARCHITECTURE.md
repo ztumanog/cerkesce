@@ -2,8 +2,8 @@
 
 **Çerkesçe Knowledge Engine - Sistem Mimarisi**
 
-**Framework:** Next.js 16 + React 19  
-**Versiyon:** v12.0-enterprise-certified  
+**Framework:** Next.js 16 + React 19
+**Versiyon:** v12.0-enterprise-certified
 **Güncelleme:** Eylül 2026
 
 ---
@@ -384,19 +384,19 @@ Concept (Phase 3) ← Language-independent
 ## PERFORMANS KARARLARI
 
 ### 1. Batch Loading
-**Amaç:** Paralel veri yükleme  
+**Amaç:** Paralel veri yükleme
 **Hedef:** < 50ms
 
 ### 2. Lazy Loading
-**Amaç:** Gerektiğinde veri yükleme  
+**Amaç:** Gerektiğinde veri yükleme
 **Hedef:** < 100ms
 
 ### 3. Source Registry
-**Amaç:** Kaynak yönetimi  
+**Amaç:** Kaynak yönetimi
 **Hedef:** Dinamik kaynak ekleme/çıkarma
 
 ### 4. Dictionary Resolver
-**Amaç:** Dil bazlı sözlük seçimi  
+**Amaç:** Dil bazlı sözlük seçimi
 **Hedef:** < 30ms
 
 ### TOPLAM PERFORMANS HEDEFİ
@@ -490,6 +490,6 @@ CERKESCE_KNOWLEDGE_ENGINE/
 
 ---
 
-**Versiyon:** v12.0-enterprise-certified  
-**Son Güncelleme:** Eylül 2026  
+**Versiyon:** v12.0-enterprise-certified
+**Son Güncelleme:** Eylül 2026
 **Durum:** Production Ready ✅

@@ -55,3 +55,31 @@ Kabul Edildi
 Etkilenen Katmanlar:
 
 - Tüm sistem
+- **ADR-0009**: Dialect Naming Standard (KBD / ADY Mandatory, DOGU / BATI Deprecated)
+------------------------------------------------
+
+ADR-P4-001
+
+Phase 4 Activation
+
+Status
+
+ACCEPTED
+
+Validation
+
+TypeScript PASS
+
+62 / 62 Test Files PASS
+
+225 / 225 Tests PASS
+
+------------------------------------------------
+
+ADR-0016
+
+Status
+
+SUPERSEDED
+
+------------------------------------------------
