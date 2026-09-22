@@ -7,6 +7,7 @@ import type { Metadata } from 'next';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import { Toaster } from 'sonner';
+import BildirimBaslatici from '@/components/features/BildirimBaslatici';
 import './globals.css';
 
 export const metadata: Metadata = {
@@ -53,10 +54,11 @@ export default function RootLayout({
           suppressHydrationWarning
         />
       </head>
-      <body
+          <body
         suppressHydrationWarning
         className="flex flex-col min-h-screen bg-white dark:bg-slate-950 text-slate-900 dark:text-slate-50 transition-colors duration-200 antialiased"
       >
+        <BildirimBaslatici />
         <Header />
         <main className="flex-1 w-full">{children}</main>
         <Footer />

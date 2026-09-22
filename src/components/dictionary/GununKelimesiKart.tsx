@@ -9,6 +9,7 @@ import {
   getTodayDateString,
 } from '@/utils/dailyWordEngine';
 import PaylasimGorseliModal from '@/components/dictionary/PaylasimGorseliModal';
+import BildirimAyar from '@/components/dictionary/BildirimAyar';
 import type { GununKelimesi } from '@/types/dictionary';
 import type { RawDictionaryEntry } from '@/utils/dailyWordEngine';
 
@@ -173,9 +174,7 @@ export default function GununKelimesiKart({
       `🇹🇷 Anlam: ${bugunKelimesi.anlam || '—'}`,
       bugunKelimesi.ornekler && bugunKelimesi.ornekler.length > 0
         ? `💬 Örnek:\n${bugunKelimesi.ornekler.map((o) => `  • ${o}`).join('\n')}`
-        : bugunKelimesi.meta?.notlar
-          ? `💬 Örnek: ${bugunKelimesi.meta.notlar}`
-          : '',
+        : '',
       '',
       '🔗 https://acikmektep.com',
     ]
@@ -276,6 +275,7 @@ export default function GununKelimesiKart({
         </summary>
 
         <div className="px-4 pb-4 sm:px-6 sm:pb-6">
+          {/* ÖRNEK KULLANIM */}
           {ornekler && ornekler.length > 0 && (
             <div className="mt-2 sm:mt-4 pt-3 sm:pt-4 border-t border-indigo-200 dark:border-indigo-800">
               <div className="text-xs font-bold uppercase tracking-wider text-indigo-600 dark:text-indigo-300 mb-2">
@@ -294,6 +294,7 @@ export default function GununKelimesiKart({
             </div>
           )}
 
+          {/* Yedek: meta.notlar */}
           {(!ornekler || ornekler.length === 0) && meta?.notlar && (
             <figure className="mt-2 sm:mt-4 pt-3 sm:pt-4 border-t border-indigo-200 dark:border-indigo-800 bg-white/50 dark:bg-slate-900/30 p-3 rounded-xl">
               <blockquote className="text-sm font-medium text-slate-800 dark:text-slate-200 italic">
@@ -302,6 +303,7 @@ export default function GununKelimesiKart({
             </figure>
           )}
 
+          {/* BUTONLAR */}
           <div className="mt-4 pt-3 border-t border-indigo-200 dark:border-indigo-800 flex flex-wrap items-center gap-2">
             <button
               type="button"
@@ -344,6 +346,7 @@ export default function GununKelimesiKart({
             </Link>
           </div>
 
+          {/* DİĞER KELİMELER */}
           {digerKelimeler.length > 0 && (
             <div className="mt-4 pt-4 border-t border-indigo-200 dark:border-indigo-800">
               <div className="text-xs font-bold uppercase tracking-wider text-indigo-600 dark:text-indigo-300 mb-3">
@@ -418,22 +421,30 @@ export default function GununKelimesiKart({
               </div>
             </div>
           )}
+
+          {/* BİLDİRİM AYARI */}
+          <div className="mt-4 pt-4 border-t border-indigo-200 dark:border-indigo-800">
+            <BildirimAyar
+              gununKelimesi={{
+                kelime: bugunKelimesi.kelime || '',
+                anlam: bugunKelimesi.anlam || '',
+              }}
+            />
+          </div>
         </div>
       </details>
 
-      {/* ⭐ PAYLAŞIM GÖRSELİ MODAL */}
-      {bugunKelimesi && (
-        <PaylasimGorseliModal
-          isOpen={gorselModalAcik}
-          onClose={() => setGorselModalAcik(false)}
-          kelime={{
-            kelime: bugunKelimesi.kelime || '',
-            anlam: bugunKelimesi.anlam || '',
-            ornekler: bugunKelimesi.ornekler,
-            lehce: bugunKelimesi.lehce,
-          }}
-        />
-      )}
+      {/* PAYLAŞIM GÖRSELİ MODAL */}
+      <PaylasimGorseliModal
+        isOpen={gorselModalAcik}
+        onClose={() => setGorselModalAcik(false)}
+        kelime={{
+          kelime: bugunKelimesi.kelime || '',
+          anlam: bugunKelimesi.anlam || '',
+          ornekler: bugunKelimesi.ornekler,
+          lehce: bugunKelimesi.lehce,
+        }}
+      />
     </>
   );
 }
