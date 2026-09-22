@@ -428,3 +428,31 @@ Geçiş Kararları:    1
 
 > **Not:** Bu dosya projenin tek "Source of Truth" (Gerçeklik Kaynağı) dokümanıdır.  
 > Faz 3 Concept Engine başarıyla tamamlanmıştır. 🎉
+## ADR-P4-005: Source Centric Drawer Strategy
+
+* **Status:** Accepted
+* **Phase:** Phase 4 (Sprint 1 Approved)
+* **Decision:**
+  Drawer, birden fazla sözlük kaynağını tek bir parser sonucu altında birleştirip anlamsal bozulmaya (duplicate/merged meanings) yol açmak yerine; aynı kavramın farklı sözlük kaynaklarını (SourceContent[]) ayrı ayrı ve daraltılabilir (collapsible) yapıda gösterecektir.
+* **Affected Layers:**
+  - Normalizer (src/lib/normalizers/sourceContentNormalizer.ts, src/lib/normalizers/drawerContent.ts)
+  - Presentation (src/components/dictionary/KelimeDetayDrawer.tsx)
+  - Drawer UX
+
+---
+
+### ADR-P2-011: Filter Flow Audit
+
+**Tarih:** 2026-09-22
+**Kapsam:** Faz 2 - Filtreleme ve Sunum
+**Dosya:** [ADR-P2-011-FILTER_FLOW_AUDIT.md](architecture/adr/ADR-P2-011-FILTER_FLOW_AUDIT.md)
+
+Filtre sistemi (Lehce + Dil + Sozluk) dogrulandi. 5 sorun bulundu ve duzeltildi:
+
+1. `languageCounts` -> `dictionaries.json` bazli
+2. `dialectCounts` -> `ALL = ADY + KBD`
+3. `getDictMeta` -> `sourceId` temizleme
+4. `matchesLanguage` -> `CIRC/MULTI` destegi
+5. Drawer -> dis filtre prop
+
+**Dogrulanan sayilar:** 34 / 1 / 7 / 10 / 13 / 2 / 1

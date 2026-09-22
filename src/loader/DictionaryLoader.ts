@@ -171,12 +171,16 @@ export class DictionaryLoader {
   /**
    * Validate a dictionary entry
    */
-  private validateEntry(entry: DictionaryEntry): boolean {
-    if (!entry.id || !entry.word || !entry.definition) {
-      throw new Error('Invalid DictionaryEntry: missing required fields');
-    }
-    return true;
+  /**
+ * File: src/loader/DictionaryLoader.ts
+ * Layer: Loader
+ */
+private validateEntry(entry: DictionaryEntry): boolean {
+  if (!entry.id || !entry.word || !entry.meaning) {
+    throw new Error('Invalid DictionaryEntry: missing required fields');
   }
+  return true;
+}
 
   /**
    * Clear cache

@@ -60,8 +60,9 @@ export class ConceptFacade {
    */
   async findConceptById(id: string): Promise<Concept | null> {
     const conceptId = ConceptID.create(id);
-    return this.repo.findById(conceptId.getValue());
+    return this.repo.findById(conceptId.getValue()) as any;
   }
 }
+
 
 

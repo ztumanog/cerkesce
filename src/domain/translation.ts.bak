@@ -1,0 +1,98 @@
+/**
+ * @file src/domain/translation.ts
+ * @description Çerkesçe Sözlük Projesi Domain Veri Modelleri ve Arayüzleri.
+ * 
+ * SSOT (Single Source of Truth) prensibi gereği tüm temel tipler `src/types/dictionary.ts`
+ * dosyasından beslenmektedir.
+ */
+
+import type {
+  DialectCode,
+  Meaning,
+  TranslationGroup,
+  LemmaGroup,
+} from "../types/dictionary";
+export type TranslationMeaning = Meaning;
+
+
+/** Diyalekt / Lehçe kod türü (SSOT üzerinden türetilmiştir) */
+export type DialectType = DialectCode;
+
+// src/domain/translation.ts
+
+/**
+ * Proje genelinde desteklenen dil ve diyalekt kodları.
+ */
+export type LanguageCode = "TR" | "EN" | "RU" | "AR" | "kbd" | "KBD" | "ADY" | string;
+
+// Diğer mevcut domain kodlarınız burada kalmaya devam eder...
+
+// TranslationMeaning → Meaning aliası (geriye dönük uyumluluk)
+/**
+ * Domain katmanında kullanılan çeviri girdisi arayüzü.
+ */
+export interface TranslationEntry {
+  /** Kaydın benzersiz kimliği */
+  id: string;
+  /** Kelimenin yalın/kök hali (madde başı) */
+  lemma: string;
+  /** Alternatif kelime görünümü veya yazılışı (Yeni eklendi) */
+  word?: string;
+  /** Kelimenin tanımı veya açıklaması (Yeni eklendi) */
+  definition?: string;
+  /** Arama ve indeksleme için normalize edilmiş kök metin */
+  normalizedLemma?: string;
+  /** Kaynak dildeki kelime */
+  sourceWord?: string;
+  /** Ait olduğu diyalekt/lehçe kopyası (KBD, ADY vb.) */
+  dialect?: string;
+  /** Kelime türü (Part of Speech: isim, fiil, sıfat vb.) */
+  pos?: string;
+  /** Tekil anlam açıklaması */
+  meaning?: string;
+  /** Detaylı anlam nesnelerinin listesi */
+  meanings?: Meaning[];
+  /** İlave notlar ve dilbilimsel açıklamalar */
+  notes?: string;
+  /** Eş sesli veya anlamdaş kelimelerin grup kimliği */
+  groupId?: string;
+  /** Kelimenin kullanım sıklığı derecesi */
+  frequency?: number;
+  /** Oluşturulma tarihi */
+  createdAt?: Date;
+  /** Güncellenme tarihi */
+  updatedAt?: Date;
+}
+
+/**
+ * Arama sonuçlarını ve eşleşme istatistiklerini içeren arayüz.
+ */
+export interface SearchResult {
+  /** Aranan sorgu metni */
+  query: string;
+  /** Eşleşen çeviri kayıtlarının listesi */
+  results: TranslationEntry[];
+  /** Toplam bulunan kayıt sayısı */
+  totalCount: number;
+}
+
+/**
+ * Veri deposu (Repository) katmanı için soyut servis arayüzü.
+ */
+export interface TranslationRepository {
+  /** Kimliğe göre kayıt getirir */
+  findById(id: string): Promise<TranslationEntry | null>;
+  /** Kelimeye veya hedef dile göre arama yapar */
+  search(query: string, targetLang?: string): Promise<TranslationEntry[]>;
+  /** Metin içi anlam araması yapar (Opsiyonel) */
+  searchByMeaning?(text: string, lang?: string): Promise<TranslationEntry[]>;
+  /** Kaydı veritabanına kaydeder veya günceller */
+  save(entry: TranslationEntry): Promise<void | TranslationEntry>;
+  /** Toplu kayıt ekleme işlemini yürütür (Opsiyonel) */
+  saveBatch?(entries: TranslationEntry[]): Promise<void>;
+  /** Depodaki verileri temizler (Opsiyonel) */
+  clear?(): Promise<void> | void;
+}
+
+// SSOT Tip Dışa Aktarımları (Re-exports)
+export type { TranslationGroup, LemmaGroup } from "../types/dictionary";

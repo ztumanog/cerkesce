@@ -1,151 +1,163 @@
-'use client';
+/**
+ * @file src/types/dictionary.ts
+ * @description Single Source of Truth (SSOT) - Tüm projenin temel tip tanımları.
+ */
 
-import { useEffect, useState } from 'react';
-import type { GununKelimesi } from '@/types/dictionary';
-import { selectDailyWord, RawDictionaryEntry } from '@/utils/dailyWordEngine';
+/** Diyalekt / Lehçe Kodları */
+export type DialectCode = 'KBD' | 'ADY' | string;
 
-interface UseDailyWordOptions {
-  veri?: GununKelimesi;
-  entries?: RawDictionaryEntry[];
-  dateString?: string;
+/**
+ * Sözlük Tipleri / Kategorileri (Genel, Diyalekt, Etimoloji vb.)
+ */
+export type SozlukTipi = 'general' | 'dialect' | 'etymology' | 'morphology' | string;
+
+/**
+ * Kayıtlı Sözlük Kaynağı Yapısı (Source Registry için)
+ */
+export interface AktifSozlukItem {
+  /** Sözlük kaynağının benzersiz kimliği */
+  id: string;
+  /** Sözlük kaynağının adı */
+  name: string;
+  /** Sözlük türü */
+  type?: SozlukTipi;
+  /** Kaynağın aktif/pasif durumu */
+  enabled?: boolean;
+  /** Alternatif aktiflik kontrol alanı */
+  isActive?: boolean;
+  /** Öncelik sırası */
+  priority?: number;
+  /** Açıklama metni */
+  description?: string;
+  /** Dosya yolu veya API endpoint adresi */
+  path?: string;
+  /** Ek yapılandırma bilgileri */
+  metadata?: Record<string, unknown>;
 }
 
-interface UseDailyWordReturn {
-  bugunKelimesi: GununKelimesi | null;
-  loading: boolean;
-  error: Error | null;
-  refresh: () => void;
+/**
+ * Sözlük Üst Bilgisi (Metadata) Yapısı
+ */
+export interface DictionaryMeta {
+  id: string;
+  title?: string;
+  name?: string;
+  version?: string;
+  author?: string;
+  description?: string;
+  totalEntries?: number;
+  language?: string;
+  updatedAt?: string | Date;
 }
 
-export function useDailyWord({
-  veri,
-  entries = [],
-  dateString,
-}: UseDailyWordOptions = {}): UseDailyWordReturn {
-  const [bugunKelimesi, setBugunKelimesi] = useState<GununKelimesi | null>(null);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<Error | null>(null);
+/**
+ * Kelimenin tekil bir anlamını ifade eden veri yapısı.
+ */
+export interface TranslationMeaning {
+  /** Anlamın benzersiz kimliği */
+  id?: string;
+  /** Anlam metni / açıklaması */
+  text: string;
+  /** Anlamın yazıldığı dil (örn: 'tr', 'en') */
+  language?: string;
+}
 
-  const fetchDailyWord = () => {
-    try {
-      setLoading(true);
-      setError(null);
+/**
+ * Temel Çeviri Kaydı Arayüzü (TranslationEntry)
+ */
+export interface TranslationEntry {
+  id: string;
+  /** Madde başı / kök kelime */
+  lemma?: string;
+  word?: string;
+  definition?: string;
+  normalizedLemma?: string;
+  dialect?: DialectCode;
+  
+  /** Tekil anlam kullanımı (UI ve legacy kütüphane uyumluluğu için) */
+  meaning?: string;
+  
+  /** Detaylı anlam nesnelerinin listesi */
+  meanings?: TranslationMeaning[];
+  
+  /** İlişkili grup kimliği */
+  groupId?: string;
+  
+  /** Grup kimliği alternatif kullanımı (Legacy uyumluluğu için) */
+  group?: string;
+  
+  /** UI & Legacy Uyumlu Türkçe Alan Tanımlamaları */
+  kelime?: string;
+  madde?: string;
+  anlamlar?: string[] | TranslationMeaning[] | unknown[];
+  kaynaklar?: string[] | unknown[];
+  
+  notes?: string;
+  pos?: string;
+  frequency?: number;
+  createdAt?: Date;
+  updatedAt?: Date;
+}
 
-      // Eğer veri gönderildiyse onu kullan
-      if (veri) {
-        setBugunKelimesi(veri);
-        setLoading(false);
-        return;
-      }
+/** 
+ * UI Bileşenleri ve servisler için takma adlar (Alias)
+ */
+export type DictionaryEntry = TranslationEntry;
+export type KelimeItem = TranslationEntry;
 
-      // Eğer entries gönderildiyse motor ile seç
-      if (entries.length > 0) {
-        const selected = selectDailyWord(entries, dateString);
-        if (selected) {
-          setBugunKelimesi(selected);
-        } else {
-          setError(new Error('Uygun kelime bulunamadı'));
-        }
-        setLoading(false);
-        return;
-      }
+/**
+ * Günün Kelimesi Veri Yapısı (GununKelimesi / DailyWord)
+ * Hem İngilizce hem Türkçe alan isimlerini destekler.
+ */
+export interface GununKelimesi {
+  id: string;
+  date?: string | Date;
+  tarih?: string | Date; // TS2353 'tarih' hatasını çözen alan
+  
+  /** Standart İsimlendirmeler */
+  word?: string;
+  meaning?: string;
+  dialect?: DialectCode;
+  
+  /** UI Hook ve Mock Veri İsimlendirmeleri */
+  kelime?: string;
+  anlam?: string;
+  tur?: string;
+  okunus?: string;
+  ornek?: string;
+  ornekAnlam?: string;
+  lehce?: string;
+  
+  entry?: TranslationEntry;
+  notes?: string;
+}
 
-      // Varsayılan veriler (API'den gelmeyene kadar)
-      const defaultKelimeler: GununKelimesi[] = [
-        {
-          id: '1',
-          kelime: 'СиIэшIу',
-          anlam: 'Tatlım, canım',
-          lehce: 'Adigece',
-          tarih: new Date().toISOString(),
-          meta: {
-            seviye: 'Başlangıç',
-            kategori: 'Adıgece kökenli',
-            notlar: 'СиIэшIу, уэ дахэ? - Tatlım, nasılsın?',
-          },
-        },
-        {
-          id: '2',
-          kelime: 'адыгэ',
-          anlam: 'Çerkes, Adıgeli',
-          lehce: 'Adigece',
-          tarih: new Date().toISOString(),
-          meta: {
-            seviye: 'Orta',
-            kategori: 'Proto-Kafkas kökünden',
-            notlar: 'Адыгэ адыгабзэ ихьэу. - Çerkesçe konuşuyorum.',
-          },
-        },
-        {
-          id: '3',
-          kelime: 'адыгабзэ',
-          anlam: 'Adıgece dili',
-          lehce: 'Adigece',
-          tarih: new Date().toISOString(),
-          meta: {
-            seviye: 'Orta',
-            kategori: 'Adıgece + dil anlamında',
-          },
-        },
-        {
-          id: '4',
-          kelime: 'нарт',
-          anlam: 'Kahraman, efsanevi figür',
-          lehce: 'Kabardeyce',
-          tarih: new Date().toISOString(),
-          meta: {
-            seviye: 'İleri',
-            kategori: 'Eski Kafkas mitolojisinden',
-          },
-        },
-        {
-          id: '5',
-          kelime: 'къэбэрдей',
-          anlam: 'Kabarday, Kabardeyce',
-          lehce: 'Kabardeyce',
-          tarih: new Date().toISOString(),
-        },
-        {
-          id: '6',
-          kelime: 'адыгэ хабзэ',
-          anlam: 'Adıgece geleneği, adab-ı muaşeret',
-          lehce: 'Adigece',
-          tarih: new Date().toISOString(),
-          meta: {
-            seviye: 'İleri',
-            kategori: 'Adıgece + gelenek',
-          },
-        },
-        {
-          id: '7',
-          kelime: 'къэбэрдей хабзэ',
-          anlam: 'Kabarday geleneği',
-          lehce: 'Kabardeyce',
-          tarih: new Date().toISOString(),
-        },
-      ];
+/** Hook ve harici bileşenler için Takma Ad (Alias) */
+export type DailyWord = GununKelimesi;
 
-      const rastgeleIndex = Math.floor(Math.random() * defaultKelimeler.length);
-      const secilen = defaultKelimeler[rastgeleIndex];
+/**
+ * Anlamdaş veya ilişkili çevirileri gruplamak için kullanılan arayüz.
+ */
+export interface TranslationGroup {
+  /** Grubun benzersiz kimliği */
+  id: string;
+  /** Test verisi ve harici yapılar için alternatif grup kimliği */
+  groupId?: string;
+  /** Resmi grup adı veya açıklaması */
+  name?: string;
+  /** Test verileri ve örnek kayıtlar için alternatif grup adı */
+  groupName?: string;
+  /** Gruba ait çeviri kayıtlarının ID listesi */
+  entryIds?: string[];
+  /** Gruba ait çeviri kayıtlarının doğrudan nesne listesi (Mock / Sample verileri için) */
+  entries?: TranslationEntry[];
+}
 
-      console.log('🎲 Rastgele kelime seçildi:', secilen.kelime);
-
-      setBugunKelimesi(secilen);
-      setLoading(false);
-    } catch (err) {
-      setError(err instanceof Error ? err : new Error('Bilinmeyen hata'));
-      setLoading(false);
-    }
-  };
-
-  useEffect(() => {
-    fetchDailyWord();
-  }, [veri, entries, dateString]);
-
-  return {
-    bugunKelimesi,
-    loading,
-    error,
-    refresh: fetchDailyWord,
-  };
+/**
+ * Aynı kökten / madde başından (lemma) türeyen kelimeleri gruplayan arayüz.
+ */
+export interface LemmaGroup {
+  id: string;
+  rootLemma: string;
+  variants?: string[];
 }

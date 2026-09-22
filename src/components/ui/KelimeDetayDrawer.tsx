@@ -1,418 +1,554 @@
-'use client';
+﻿'use client';
 
-import React, { useRef, useEffect, useState } from 'react';
-import { BookOpen, Check, Copy, Share2, X } from 'lucide-react';
-import type { KelimeItem, KaynakItem } from '@/types/dictionary';
+import React, { useRef, useEffect, useState, useCallback, useMemo } from 'react';
+import {
+  BookOpen,
+  Check,
+  Copy,
+  Share2,
+  X,
+  Volume2,
+  ChevronRight,
+  Languages,
+  Filter,
+} from 'lucide-react';
+import type {
+  DialectFilterValue,
+} from '@/components/dictionary/DialectFilter';
+import type {
+  LanguageFilterValue,
+} from '@/components/dictionary/LanguageFilter';
+import { normalizeLanguage } from '@/lib/normalizers/languageNormalizer';
+import type {
+  DictionaryEntry,
+  SourceContent,
+  SourceSection,
+} from '@/types/dictionary';
+import { normalizeDrawerContent } from '@/lib/normalizers/drawerContent';
+import { normalizeToSourceContents } from '@/lib/normalizers/sourceContentNormalizer';
+
+import dictionariesData from '@/data/dictionaries.json';
+
+interface DictionaryMeta {
+  file: string;
+  title: string;
+  displayName: string;
+  dialect: string;
+  author?: string;
+  year?: string;
+  sourceLanguage: string;
+  targetLanguage: string;
+  total_words?: number;
+  shortLabel?: string;
+  shortLabelKiril?: string;
+}
 
 interface KelimeDetayDrawerProps {
-  seciliKelime: KelimeItem | null;
-  isOpen: boolean;
+  seciliKelime: DictionaryEntry | null;
+  isOpen?: boolean;
+  open?: boolean;
   onClose: () => void;
   metinBoyutu?: number;
+  dialectFilter?: DialectFilterValue;
+  languageFilter?: LanguageFilterValue;
+}
+
+function getDictMeta(source: SourceContent): DictionaryMeta | undefined {
+  const list = dictionariesData as DictionaryMeta[];
+
+  const cleanSourceId = String(source.sourceId || '').replace(/-\d+$/, '');
+
+  return list.find(
+    (d) =>
+      d.file === cleanSourceId ||
+      d.file === source.sourceId ||
+      d.file === (source as any).file ||
+      d.displayName === source.sourceName ||
+      d.title === source.title ||
+      d.title === source.sourceName ||
+      d.displayName === source.title
+  );
+}
+
+function matchesDialect(source: SourceContent, target: DialectFilterValue): boolean {
+  if (target === 'ALL') return true;
+
+  const meta = getDictMeta(source);
+
+  if (meta) {
+    const metaDialect = meta.dialect?.toUpperCase();
+    const srcLang = meta.sourceLanguage?.toLowerCase();
+
+    if (target === 'KBD') {
+      return metaDialect === 'DOGU' || metaDialect === 'KBD' || srcLang === 'kbd';
+    }
+    if (target === 'ADY') {
+      return metaDialect === 'BATI' || metaDialect === 'ADY' || srcLang === 'ady';
+    }
+  }
+
+  if (source.dialect) {
+    const d = source.dialect.toUpperCase();
+    if (target === 'KBD' && (d.includes('DOGU') || d.includes('KBD'))) return true;
+    if (target === 'ADY' && (d.includes('BATI') || d.includes('ADY'))) return true;
+  }
+
+  return false;
+}
+
+function matchesLanguage(source: SourceContent, target: LanguageFilterValue): boolean {
+  if (target === 'ALL') return true;
+
+  const meta = getDictMeta(source);
+  if (!meta) return false;
+
+  const src = String(meta.sourceLanguage || '').toLowerCase();
+  const tgt = String(meta.targetLanguage || '').toLowerCase();
+  const isCirc = (l: string) => l === 'ady' || l === 'kbd';
+
+  if (target === 'MULTI') {
+    return meta.file === '18.Kbd-Ru&En.json';
+  }
+  if (target === 'CIRC') {
+    return isCirc(src) && isCirc(tgt);
+  }
+
+  const other = !isCirc(src) ? src : tgt;
+  return other === target.toLowerCase();
+}
+
+function SectionRenderer({
+  section,
+  depth = 0,
+}: {
+  section: SourceSection;
+  depth?: number;
+}) {
+  const indent = depth * 12;
+
+  if (section.type === 'roman') {
+    return (
+      <div style={{ marginLeft: indent }} className="mt-3">
+        <div className="font-bold text-sm text-slate-900 dark:text-slate-100 border-b border-slate-200 dark:border-slate-700 pb-1">
+          {section.label}
+        </div>
+        {section.children?.map((c, i) => (
+          <SectionRenderer key={i} section={c} depth={depth + 1} />
+        ))}
+      </div>
+    );
+  }
+
+  if (section.type === 'arabic') {
+    return (
+      <div style={{ marginLeft: indent }} className="mt-1.5">
+        <div className="font-semibold text-xs sm:text-sm text-slate-800 dark:text-slate-200">
+          <span className="text-orange-600 dark:text-orange-400 mr-1">
+            {section.label}
+          </span>
+          {section.text}
+        </div>
+        {section.children?.map((c, i) => (
+          <SectionRenderer key={i} section={c} depth={depth + 1} />
+        ))}
+      </div>
+    );
+  }
+
+  if (section.type === 'example') {
+    return (
+      <p
+        style={{ marginLeft: indent }}
+        className="text-xs sm:text-sm italic text-slate-600 dark:text-slate-400 mt-1"
+      >
+        <span className="text-amber-500 mr-1">◊</span>
+        {section.text}
+      </p>
+    );
+  }
+
+  return (
+    <p
+      style={{ marginLeft: indent }}
+      className="text-xs sm:text-sm text-slate-700 dark:text-slate-300 mt-1"
+    >
+      {section.text}
+    </p>
+  );
 }
 
 export default function KelimeDetayDrawer({
   seciliKelime,
   isOpen,
+  open,
   onClose,
   metinBoyutu = 16,
+  dialectFilter = 'ALL',
+  languageFilter = 'ALL',
 }: KelimeDetayDrawerProps) {
+  const isDrawerOpen = open ?? isOpen ?? false;
+
   const drawerRef = useRef<HTMLDivElement>(null);
   const kapatBtnRef = useRef<HTMLButtonElement>(null);
-  const [kopyalandi, setKopyalandi] = useState(false);
+
+  const [kopyalandi, setKopyalandi] = useState<boolean>(false);
+  const [hasSpeechSupport, setHasSpeechSupport] = useState<boolean>(false);
+
+  const [sozlukFilter, setSozlukFilter] = useState<string>('ALL');
+
+  useEffect(() => {
+    if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
+      setHasSpeechSupport(true);
+    }
+  }, []);
+
+  useEffect(() => {
+    if (isDrawerOpen) {
+      setSozlukFilter('ALL');
+    }
+  }, [isDrawerOpen, seciliKelime]);
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') { onClose(); return; }
-      if (e.key === 'Tab' && drawerRef.current) {
-        const els = drawerRef.current.querySelectorAll<HTMLElement>(
-          'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
-        );
-        if (!els.length) return;
-        const first = els[0], last = els[els.length - 1];
-        if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
-        else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+      if (e.key === 'Escape') {
+        onClose();
       }
     };
-    if (isOpen) {
+
+    if (isDrawerOpen) {
       window.addEventListener('keydown', handleKeyDown);
-      const t = setTimeout(() => kapatBtnRef.current?.focus(), 50);
-      return () => { clearTimeout(t); window.removeEventListener('keydown', handleKeyDown); };
+      const timer = setTimeout(() => kapatBtnRef.current?.focus(), 50);
+
+      return () => {
+        clearTimeout(timer);
+        window.removeEventListener('keydown', handleKeyDown);
+      };
     }
-  }, [isOpen, onClose]);
+  }, [isDrawerOpen, onClose]);
 
-  if (!isOpen || !seciliKelime) return null;
+  const content = useMemo(() => {
+    return seciliKelime ? normalizeDrawerContent(seciliKelime) : null;
+  }, [seciliKelime]);
 
-  const kaynaklar: KaynakItem[] = seciliKelime.kaynaklar || [];
+  const sourceContents = useMemo(() => {
+    return seciliKelime ? normalizeToSourceContents(seciliKelime) : [];
+  }, [seciliKelime]);
 
-  const getSozlukAdi = (k: KaynakItem): string => {
-    const baslik = k.sözlük || k.title || k.kaynak || k.dictionaryName || k.name || 'Bilinmeyen Kaynak';
-    return baslik;
-  };
+  const filtrelenmisKaynaklar = useMemo(() => {
+    return sourceContents.filter((source) => {
+      if (!matchesDialect(source, dialectFilter)) return false;
+      if (!matchesLanguage(source, languageFilter)) return false;
 
-  const getKaynakMeta = (k: KaynakItem): string =>
-    [k.author, k.year].filter(Boolean).map(String).join(' • ');
+      if (sozlukFilter !== 'ALL') {
+        const meta = getDictMeta(source);
+        const name = meta?.displayName || source.sourceName || source.title || '';
+        if (name !== sozlukFilter) return false;
+      }
 
-  const getAnlam = (k: KaynakItem): string =>
-    k.anlam || k.tanim || k.meaning || k.full_definition_in_html || '';
+      return true;
+    });
+  }, [sourceContents, dialectFilter, languageFilter, sozlukFilter]);
 
-  const temizleMetin = (metin: string): string =>
-    metin
-      .replace(/<[^>]*>/g, ' ')
-      .replace(/&nbsp;/g, ' ')
-      .replace(/&amp;/g, '&')
-      .replace(/\s+/g, ' ')
-      .trim();
-
-  const getLanguageName = (language?: string): string => {
-    const names: Record<string, string> = {
-      ady: 'Adıgece',
-      ar: 'Arapça',
-      en: 'İngilizce',
-      kbd: 'Kabardeyce',
-      ru: 'Rusça',
-      tr: 'Türkçe',
+  // Sözlük seçenekleri (dile göre gruplu)
+  const sozlukGroups = useMemo(() => {
+    const groups: Record<string, string[]> = {
+      'ÇERKESÇE': [],
+      'TÜRKÇE': [],
+      'İNGİLİZCE': [],
+      'RUSÇA': [],
+      'ARAPÇA': [],
+      'ÇOK DİLLİ (Ru-En)': [],
     };
-    return names[String(language || '').toLowerCase()] || language || 'Dil belirtilmemiş';
-  };
 
-  const getKavramAdi = (kaynak: KaynakItem): string => {
-    const anlam = temizleMetin(getAnlam(kaynak));
-    if (!anlam) return 'Tanım mevcut değil';
+    const seen = new Set<string>();
 
-    return anlam
-      .replace(/^(?:\d+\)\s*)?(?:\d+\.\s*)+/, '')
-      .split(/[;~]/, 1)[0]
-      .split(',', 1)[0]
-      .split(/\s+\d+\)\s*/, 1)[0]
-      .split(/\s+\d+\.\s*/, 1)[0]
-      .replace(/[,:]$/, '')
-      .replace(/^[\s•◊\-]+/, '')
-      .replace(/\s*\([^)]*\)\s*$/, '')
-      .trim() || 'Tanım mevcut değil';
-  };
+    sourceContents.forEach((source) => {
+      const meta = getDictMeta(source);
+      const name = meta?.displayName || source.sourceName || source.title;
+      if (!name || seen.has(name)) return;
+      seen.add(name);
 
-  const getCekirdekKarsilik = (kaynak: KaynakItem): string => {
-    const kelime = kaynak.kelime?.trim();
-    if (kelime) {
-      return kelime
-        .split(/[;,]/, 1)[0]
-        .replace(/^[\s•◊\-]+/, '')
-        .replace(/\s*\([^)]*\)\s*$/, '')
-        .trim();
-    }
-    return getKavramAdi(kaynak);
-  };
+      const src = String(meta?.sourceLanguage || '').toLowerCase();
+      const tgt = String(meta?.targetLanguage || '').toLowerCase();
+      const isCirc = (l: string) => l === 'ady' || l === 'kbd';
 
-  const getAnlamListesi = (kaynak: KaynakItem): string[] => {
-    const anlam = temizleMetin(getAnlam(kaynak));
-    const numaraliAnlamlar = [...anlam.matchAll(/(?:^|\s)\d+\.\s*([^;~]+)/g)]
-      .map((match) => match[1].replace(/^\d+\)\s*/, '').trim())
-      .filter(Boolean);
-
-    const adaylar = numaraliAnlamlar.length > 0
-      ? numaraliAnlamlar
-      : anlam.split(/[;~]/).map((parca) => parca.trim()).filter(Boolean);
-    const kaynakKelimesi = kaynak.kelime?.trim() || '';
-    const normalizeEt = (metin: string) => metin
-      .replace(/^[-•◊\s]+/, '')
-      .replace(/^\d+\)\s*/, '')
-      .replace(/\s*\([^)]*\)/g, '')
-      .replace(/[^\p{L}\p{N}]+/gu, '')
-      .toLocaleLowerCase('tr-TR');
-    const kaynakAnahtari = normalizeEt(kaynakKelimesi);
-    const gorunenAnlamlar: string[] = [];
-    const gorunenAnahtarlar = new Set<string>();
-
-    for (const aday of adaylar) {
-      const temizAday = aday
-        .replace(/^[-•◊\s]+/, '')
-        .replace(/^\d+\)\s*/, '')
-        .trim();
-      const anahtar = normalizeEt(temizAday);
-      if (!anahtar || anahtar === kaynakAnahtari || gorunenAnahtarlar.has(anahtar)) continue;
-      gorunenAnahtarlar.add(anahtar);
-      gorunenAnlamlar.push(temizAday);
-    }
-
-    return gorunenAnlamlar.length > 0 ? gorunenAnlamlar : [getKavramAdi(kaynak)];
-  };
-
-  const getIlgiliKelimeler = (kaynak: KaynakItem): string[] => {
-    const anlam = temizleMetin(getAnlam(kaynak));
-    const adaylar = [
-      ...anlam.matchAll(/(?:^|[;])\s*[-~]\s*([^:;]+)/g),
-      ...anlam.matchAll(/(?:^|[;])\s*([^:;]+?)\s*:/g),
-    ]
-      .map((match) => match[1].replace(/^\d+\)\s*/, '').trim())
-      .filter((aday) => aday.length > 2 && !/^\d+\.?$/.test(aday));
-
-    return Array.from(new Set(adaylar));
-  };
-
-  const getDeyimler = (kaynak: KaynakItem): string[] => {
-    const anlam = temizleMetin(getAnlam(kaynak));
-    return Array.from(
-      new Set(
-        anlam
-          .split(/[;~]/)
-          .map((parca) => parca.trim())
-          .filter((parca) => /\b(saying|prov\.|deyim|atasözü|gibi)\b/i.test(parca)),
-      ),
-    );
-  };
-
-  const getEkMaddeler = (kaynak: KaynakItem): string[] => {
-    const anlam = temizleMetin(getAnlam(kaynak));
-    return Array.from(
-      new Set(
-        anlam
-          .split(/\s*◊\s*/)
-          .slice(1)
-          .map((madde) => `◊ ${madde.trim()}`)
-          .filter(Boolean),
-      ),
-    );
-  };
-
-  const getKaynakParcalari = (kaynak: KaynakItem): string[] => {
-    const anlam = temizleMetin(getAnlam(kaynak));
-    return anlam
-      .split(/\s*◊\s*/)
-      .map((parca) => parca.trim())
-      .filter(Boolean);
-  };
-
-  const alternatifler = new Map<string, string>();
-  const anlamlar = new Set<string>();
-  const ilgiliKelimeler = new Set<string>();
-  const deyimler = new Set<string>();
-  const ekMaddeler = new Set<string>();
-
-  for (const kaynak of kaynaklar) {
-    const kaynakKelimesi = kaynak.kelime?.trim();
-    const kaynakDili = getLanguageName(kaynak.sourceLanguage);
-    const hedefDili = getLanguageName(kaynak.targetLanguage);
-
-    if (kaynakKelimesi) {
-      if (!alternatifler.has(kaynakDili)) {
-        alternatifler.set(kaynakDili, getCekirdekKarsilik(kaynak));
+      let group = '';
+      if (meta?.file === '18.Kbd-Ru&En.json') group = 'ÇOK DİLLİ (Ru-En)';
+      else if (isCirc(src) && isCirc(tgt)) group = 'ÇERKESÇE';
+      else {
+        const other = !isCirc(src) ? src : tgt;
+        if (other === 'tr') group = 'TÜRKÇE';
+        else if (other === 'en') group = 'İNGİLİZCE';
+        else if (other === 'ru') group = 'RUSÇA';
+        else if (other === 'ar') group = 'ARAPÇA';
       }
-    }
 
-    const hedefKarsilik = getKavramAdi(kaynak);
-    if (hedefKarsilik !== 'Tanım mevcut değil' && hedefKarsilik !== kaynakKelimesi) {
-      if (!alternatifler.has(hedefDili)) {
-        alternatifler.set(hedefDili, hedefKarsilik);
+      if (group) groups[group].push(name);
+    });
+
+    const SIRA = ['ÇERKESÇE', 'TÜRKÇE', 'İNGİLİZCE', 'RUSÇA', 'ARAPÇA', 'ÇOK DİLLİ (Ru-En)'];
+
+    return SIRA
+      .filter((g) => groups[g].length > 0)
+      .map((g) => ({
+        group: g,
+        items: groups[g].sort((a, b) => a.localeCompare(b, 'tr')),
+      }));
+  }, [sourceContents]);
+
+  // Sözlük sayıları
+  const sozlukCounts = useMemo(() => {
+    const counts: Record<string, number> = { ALL: sourceContents.length };
+    sourceContents.forEach((source) => {
+      const meta = getDictMeta(source);
+      const name = meta?.displayName || source.sourceName || source.title;
+      if (name) {
+        counts[name] = (counts[name] ?? 0) + 1;
       }
-    }
+    });
+    return counts;
+  }, [sourceContents]);
 
-    getAnlamListesi(kaynak).forEach((anlam) => anlamlar.add(anlam));
-    getIlgiliKelimeler(kaynak).forEach((kelime) => ilgiliKelimeler.add(kelime));
-    getDeyimler(kaynak).forEach((deyim) => deyimler.add(deyim));
-    getEkMaddeler(kaynak).forEach((madde) => ekMaddeler.add(madde));
-  }
+  const paylasimMetni = useMemo(() => {
+    if (!content) return '';
+    return [
+      `Kelime: ${content.word}`,
+      content.cerkesce ? `Çerkesçe: ${content.cerkesce}` : '',
+      `Sözlük Kaynak Sayısı: ${filtrelenmisKaynaklar.length}`,
+      ...filtrelenmisKaynaklar.map((s) => {
+        const meta = getDictMeta(s);
+        const name = meta?.displayName || s.sourceName || s.title || 'Kaynak';
+        return `• ${name}: ${(s.meanings ?? []).join(', ')}`;
+      }),
+    ].filter(Boolean).join('\n');
+  }, [content, filtrelenmisKaynaklar]);
 
-  const temizAlternatifler = new Map(
-    Array.from(alternatifler.entries()).filter(([, kelime]) =>
-      kelime.toLocaleLowerCase('tr-TR') !== seciliKelime.kelime.toLocaleLowerCase('tr-TR'),
-    ),
-  );
-
-  const kaynakAdlari = Array.from(new Set(kaynaklar.map(getSozlukAdi)));
-  const alternatifSayisi = temizAlternatifler.size;
-  const paylasimMetni = [
-    seciliKelime.kelime,
-    ...Array.from(temizAlternatifler.entries()).map(([dil, kelime]) => `${dil}: ${kelime}`),
-    anlamlar.size > 0 ? `Anlamlar: ${Array.from(anlamlar).join('; ')}` : '',
-  ].filter(Boolean).join('\n');
-
-  const panoyaKopyala = async () => {
+  const panoyaKopyala = useCallback(async () => {
     try {
       await navigator.clipboard.writeText(paylasimMetni);
       setKopyalandi(true);
-      window.setTimeout(() => setKopyalandi(false), 1800);
+      setTimeout(() => setKopyalandi(false), 1800);
     } catch (error) {
-      console.error('Metin panoya kopyalanamadı:', error);
+      console.error('Kopyalama hatası:', error);
     }
-  };
+  }, [paylasimMetni]);
 
-  const paylas = async () => {
-    if (navigator.share) {
-      await navigator.share({
-        title: seciliKelime.kelime,
-        text: paylasimMetni,
-      });
-      return;
+  const paylas = useCallback(async () => {
+    if (navigator.share && content) {
+      try {
+        await navigator.share({ title: content.word, text: paylasimMetni });
+        return;
+      } catch (err) {
+        if ((err as Error).name === 'AbortError') return;
+      }
     }
-
     await panoyaKopyala();
-  };
+  }, [content, paylasimMetni, panoyaKopyala]);
+
+  const dinle = useCallback(() => {
+    if (hasSpeechSupport && content) {
+      window.speechSynthesis.cancel();
+      const utterance = new SpeechSynthesisUtterance(content.word);
+      utterance.lang = 'tr-TR';
+      window.speechSynthesis.speak(utterance);
+    }
+  }, [hasSpeechSupport, content]);
+
+  if (!isDrawerOpen || !seciliKelime || !content) return null;
 
   return (
-    <div role="dialog" aria-modal="true" aria-labelledby="drawer-title"
-      className="fixed inset-0 z-[9999] flex justify-end">
-      <div onClick={onClose} aria-hidden="true"
-        className="fixed inset-0 bg-black/60 backdrop-blur-sm" />
+    <div
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="drawer-title"
+      className="fixed inset-0 z-[9999] flex justify-end transition-opacity duration-300"
+    >
+      <div
+        onClick={onClose}
+        aria-hidden="true"
+        className="fixed inset-0 bg-black/60 backdrop-blur-sm transition-opacity cursor-pointer active:opacity-80"
+      />
 
-      <div ref={drawerRef} style={{ fontSize: `${metinBoyutu}px` }}
-        className="relative z-10 w-full max-w-[520px] h-full bg-slate-100 dark:bg-slate-800 text-slate-900 dark:text-slate-100 shadow-2xl flex flex-col border-l border-slate-300 dark:border-slate-700">
-
-        {/* BAŞLIK */}
-          <div className="flex items-center justify-between p-6 pb-4 border-b border-slate-300 dark:border-slate-700 shrink-0">
-          <div className="flex items-center gap-3 min-w-0">
-            <h2 id="drawer-title"
-              className="text-2xl font-bold text-orange-500 truncate">
-              {seciliKelime.kelime}
+      <div
+        ref={drawerRef}
+        style={{ fontSize: `${metinBoyutu}px` }}
+        className="relative z-10 w-full max-w-[540px] h-full bg-slate-100 dark:bg-slate-900 text-slate-900 dark:text-slate-100 shadow-2xl flex flex-col border-l border-slate-300 dark:border-slate-800 overscroll-contain touch-pan-y"
+      >
+        <div className="flex items-center justify-between p-4 sm:p-6 pb-4 border-b border-slate-300 dark:border-slate-800 shrink-0 bg-white dark:bg-slate-900 sticky top-0 z-20">
+          <div className="flex items-center gap-2 min-w-0">
+            <h2 id="drawer-title" className="text-xl sm:text-2xl font-bold text-orange-500 truncate">
+              {content.word}
             </h2>
-            {seciliKelime.lehce && (
+            {content.dialect && (
               <span className="text-[10px] uppercase font-bold px-2 py-0.5 rounded-md border bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 border-slate-300 dark:border-slate-700 shrink-0">
-                {seciliKelime.lehce}
+                {content.dialect}
               </span>
             )}
           </div>
-          <button ref={kapatBtnRef} onClick={onClose} aria-label="Kapat"
-            className="p-2 rounded-lg text-slate-400 hover:text-slate-700 dark:hover:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors focus:outline-none focus:ring-2 focus:ring-orange-500 shrink-0">
-            <X size={20} aria-hidden="true" />
+          <button
+            ref={kapatBtnRef}
+            onClick={onClose}
+            aria-label="Kapat"
+            className="p-2 rounded-lg text-slate-400 hover:text-slate-700 dark:hover:text-slate-200 hover:bg-slate-200 dark:hover:bg-slate-800 transition-colors shrink-0"
+          >
+            <X size={20} />
           </button>
         </div>
 
-        {/* İÇERİK */}
-        <div className="flex-1 overflow-y-auto p-5 pb-24 sm:p-6 sm:pb-24 space-y-5">
-
-          <div className="flex items-center gap-2 border-b border-slate-300 pb-3 text-xs text-slate-500 dark:border-slate-700 dark:text-slate-400">
-            <span className="font-semibold text-orange-600 dark:text-orange-400">Kavram</span>
-            <span aria-hidden="true">•</span>
-            <span>{alternatifSayisi} karşılık</span>
-            <span aria-hidden="true">•</span>
-            <span>{kaynakAdlari.length} kaynak</span>
-          </div>
-
-          {alternatifSayisi > 0 && (
-            <section className="space-y-2">
-              <h3 className="text-sm font-bold text-slate-800 dark:text-slate-100">Alternatif Karşılıklar</h3>
-              <div className="overflow-hidden rounded-lg border border-slate-300 bg-slate-50 dark:border-slate-700 dark:bg-slate-900/50">
-                {Array.from(temizAlternatifler.entries()).map(([dil, kelime]) => {
-                  return (
-                    <div key={dil} className="flex gap-4 border-b border-slate-200 px-4 py-3 last:border-b-0 dark:border-slate-700">
-                      <span className="w-24 shrink-0 text-xs font-semibold text-slate-500 dark:text-slate-400">{dil}</span>
-                      <span className="text-sm font-medium text-slate-800 dark:text-slate-100">
-                        {kelime}
-                      </span>
-                    </div>
-                  );
-                })}
-              </div>
-            </section>
+        <div className="flex-1 overflow-y-auto p-4 sm:p-5 pb-28 space-y-5 scroll-smooth -webkit-overflow-scrolling-touch">
+          {content.cerkesce && (
+            <div className="rounded-xl border border-amber-200 bg-amber-50/80 p-3.5 dark:border-amber-900/40 dark:bg-amber-950/20">
+              <span className="text-xs font-semibold text-amber-800 dark:text-amber-300 block mb-0.5">
+                Çerkesçe Karşılık
+              </span>
+              <p className="text-base font-bold text-amber-950 dark:text-amber-100">
+                {content.cerkesce}
+              </p>
+            </div>
           )}
 
-          {anlamlar.size > 0 && (
-            <section className="space-y-2">
-              <h3 className="text-sm font-bold text-slate-800 dark:text-slate-100">Anlamlar</h3>
-              <ul className="space-y-1.5 rounded-lg border border-slate-300 bg-slate-50 p-4 dark:border-slate-700 dark:bg-slate-900/50">
-                {Array.from(anlamlar).map((anlam) => (
-                  <li key={anlam} className="flex gap-2 text-sm leading-relaxed text-slate-700 dark:text-slate-300">
-                    <span className="text-orange-500">•</span>
-                    <span>{anlam}</span>
-                  </li>
-                ))}
-              </ul>
-            </section>
-          )}
+          <section className="space-y-3">
+            <div className="flex items-center justify-between border-b border-slate-300 dark:border-slate-800 pb-2">
+              <h3 className="text-sm font-bold text-slate-800 dark:text-slate-200 flex items-center gap-2">
+                <BookOpen size={16} className="text-orange-500" />
+                Sözlük Kaynakları ({filtrelenmisKaynaklar.length} / {sourceContents.length})
+              </h3>
+            </div>
 
-          {ilgiliKelimeler.size > 0 && (
-            <section className="space-y-2">
-              <h3 className="text-sm font-bold text-slate-800 dark:text-slate-100">İlgili Kelimeler</h3>
-              <div className="flex flex-wrap gap-2 rounded-lg border border-slate-300 bg-slate-50 p-4 dark:border-slate-700 dark:bg-slate-900/50">
-                {Array.from(ilgiliKelimeler).map((kelime) => (
-                  <span key={kelime} className="rounded-md bg-slate-200 px-2.5 py-1 text-xs text-slate-700 dark:bg-slate-800 dark:text-slate-300">
-                    {kelime}
+            {sourceContents.length > 1 && sozlukGroups.length > 0 && (
+              <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl p-3 space-y-3 shadow-sm">
+                <div className="flex items-center justify-between text-xs font-semibold text-slate-500 border-b border-slate-100 dark:border-slate-800 pb-1.5">
+                  <span className="flex items-center gap-1.5">
+                    <Filter size={14} className="text-orange-500" /> Kaynak Filtreleri
                   </span>
-                ))}
-              </div>
-            </section>
-          )}
+                  {sozlukFilter !== 'ALL' && (
+                    <button
+                      onClick={() => setSozlukFilter('ALL')}
+                      className="text-orange-500 hover:underline text-[11px]"
+                    >
+                      Sıfırla
+                    </button>
+                  )}
+                </div>
 
-          {deyimler.size > 0 && (
-            <section className="space-y-2">
-              <h3 className="text-sm font-bold text-slate-800 dark:text-slate-100">Deyimler</h3>
-              <ul className="space-y-1 rounded-lg border border-slate-300 bg-slate-50 p-4 text-sm text-slate-700 dark:border-slate-700 dark:bg-slate-900/50 dark:text-slate-300">
-                {Array.from(deyimler).map((deyim) => (
-                  <li key={deyim}>• {deyim}</li>
-                ))}
-              </ul>
-            </section>
-          )}
-
-          {ekMaddeler.size > 0 && (
-            <section className="space-y-2">
-              <h3 className="text-sm font-bold text-slate-800 dark:text-slate-100">Ek Maddeler</h3>
-              <div className="space-y-2 rounded-lg border border-slate-300 bg-slate-50 p-4 dark:border-slate-700 dark:bg-slate-900/50">
-                {Array.from(ekMaddeler).map((madde) => (
-                  <p key={madde} className="whitespace-pre-line border-l-2 border-orange-400 pl-3 text-sm leading-relaxed text-slate-700 dark:text-slate-300">
-                    {madde}
-                  </p>
-                ))}
-              </div>
-            </section>
-          )}
-
-          <section className="space-y-2">
-            <h3 className="text-sm font-bold text-slate-800 dark:text-slate-100">
-              Kaynaklar <span className="font-normal text-slate-400">({kaynakAdlari.length})</span>
-            </h3>
-            <div className="overflow-hidden rounded-lg border border-slate-300 bg-slate-50 dark:border-slate-700 dark:bg-slate-900/50">
-              {kaynaklar.length > 0 ? kaynaklar.map((kaynak, idx) => {
-                const anlam = getAnlam(kaynak);
-                const kaynakParcalari = getKaynakParcalari(kaynak);
-                return (
-                  <details key={`${getSozlukAdi(kaynak)}-${idx}`} className="group border-b border-slate-200 last:border-b-0 dark:border-slate-700">
-                    <summary className="flex cursor-pointer list-none items-center gap-2 px-4 py-3 text-sm font-medium text-slate-700 dark:text-slate-200">
-                      <BookOpen size={14} className="text-orange-500" aria-hidden="true" />
-                      <span className="min-w-0">
-                        <span className="block truncate">{getSozlukAdi(kaynak)}</span>
-                        {getKaynakMeta(kaynak) && (
-                          <span className="mt-0.5 block text-[11px] font-normal text-slate-400">
-                            {getKaynakMeta(kaynak)}
-                          </span>
-                        )}
-                      </span>
-                      <span className="ml-auto text-slate-400 transition-transform group-open:rotate-90">›</span>
-                    </summary>
-                    {anlam && (
-                      <div className="space-y-2 px-4 pb-4 pt-1 text-xs leading-relaxed text-slate-500 dark:text-slate-400">
-                        {kaynakParcalari.map((parca, parcaIndex) => (
-                          <p key={`${parca}-${parcaIndex}`} className={parcaIndex > 0 ? 'border-l-2 border-orange-300 pl-3' : ''}>
-                            {parcaIndex > 0 && <span className="mr-1 text-orange-500">◊</span>}
-                            {parca}
-                          </p>
+                <div>
+                  <span className="text-[11px] font-bold text-slate-400 block mb-1">Sözlük Seçimi</span>
+                  <select
+                    value={sozlukFilter}
+                    onChange={(e) => setSozlukFilter(e.target.value)}
+                    className="w-full text-xs p-2 rounded-lg border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-slate-700 dark:text-slate-200 focus:outline-none focus:ring-1 focus:ring-orange-500 transition-all"
+                  >
+                    <option value="ALL">Tüm Sözlükler ({sourceContents.length})</option>
+                    {sozlukGroups.map((g) => (
+                      <optgroup key={g.group} label={g.group}>
+                        {g.items.map((displayName) => (
+                          <option key={displayName} value={displayName}>
+                            {displayName} ({sozlukCounts[displayName] ?? 0})
+                          </option>
                         ))}
+                      </optgroup>
+                    ))}
+                  </select>
+                </div>
+              </div>
+            )}
+
+            <div className="space-y-3 pt-1">
+              {filtrelenmisKaynaklar.map((source: SourceContent, index: number) => {
+                const meta = getDictMeta(source);
+                const displayTitle = meta?.displayName || source.sourceName || source.title || 'Kaynak';
+
+                const srcLang = meta?.sourceLanguage?.toUpperCase() || source.sourceLanguage?.toUpperCase();
+                const trgLang = meta?.targetLanguage?.toUpperCase() || source.targetLanguage?.toUpperCase();
+                const langBadge = srcLang && trgLang ? `${srcLang} → ${trgLang}` : null;
+
+                return (
+                  <div
+                    key={`${source.sourceId || 'src'}-${index}`}
+                    className="overflow-hidden rounded-xl border border-slate-300 dark:border-slate-800 bg-white dark:bg-slate-800/50 shadow-sm transition-all"
+                  >
+                    <details className="group" open={index === 0}>
+                      <summary className="flex cursor-pointer list-none items-center justify-between p-3.5 text-xs sm:text-sm font-semibold text-slate-800 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors">
+                        <div className="flex flex-col min-w-0 pr-2">
+                          <span className="font-bold text-slate-900 dark:text-slate-100 truncate">
+                            {displayTitle}
+                          </span>
+                          {meta?.author && (
+                            <span className="text-[11px] text-slate-500 dark:text-slate-400 font-normal truncate">
+                              Yazar: {meta.author} {meta.year ? `(${meta.year})` : ''}
+                            </span>
+                          )}
+                        </div>
+
+                        <div className="flex items-center gap-1.5 shrink-0">
+                          {langBadge && (
+                            <span className="text-[10px] font-bold px-1.5 py-0.5 rounded bg-orange-100 dark:bg-orange-950/60 text-orange-700 dark:text-orange-300 border border-orange-200 dark:border-orange-800/50 flex items-center gap-1">
+                              <Languages size={10} />
+                              {langBadge}
+                            </span>
+                          )}
+                          <ChevronRight
+                            size={16}
+                            className="text-slate-400 transition-transform duration-200 group-open:rotate-90 shrink-0"
+                          />
+                        </div>
+                      </summary>
+
+                      <div className="border-t border-slate-200 dark:border-slate-700/60 p-3.5 space-y-3 bg-slate-50/50 dark:bg-slate-900/30">
+                        {source.sections && source.sections.length > 0 && (
+                          <div className="space-y-1">
+                            {source.sections.map((section, sIdx) => (
+                              <SectionRenderer key={sIdx} section={section} depth={0} />
+                            ))}
+                          </div>
+                        )}
+
+                        {source.notes && (
+                          <div className="text-xs text-slate-600 dark:text-slate-400 bg-amber-50/50 dark:bg-slate-800/80 p-2.5 rounded-lg border border-amber-200/60 dark:border-slate-700">
+                            <span className="font-semibold block text-amber-800 dark:text-amber-300">
+                              Not:
+                            </span>
+                            {source.notes}
+                          </div>
+                        )}
                       </div>
-                    )}
-                  </details>
+                    </details>
+                  </div>
                 );
-              }) : (
-                <p className="p-4 text-sm text-slate-400">Kaynak bulunamadı</p>
-              )}
+              })}
             </div>
           </section>
         </div>
 
-        <div className="absolute inset-x-0 bottom-0 z-20 flex gap-2 border-t border-slate-300 bg-slate-100/95 p-4 backdrop-blur dark:border-slate-700 dark:bg-slate-800/95">
+        <div className="absolute inset-x-0 bottom-0 z-20 flex gap-2 border-t border-slate-300 bg-white/95 p-3.5 backdrop-blur dark:border-slate-800 dark:bg-slate-900/95">
           <button
             type="button"
             onClick={panoyaKopyala}
-            className="flex min-h-11 flex-1 items-center justify-center gap-2 rounded-lg border border-slate-300 bg-slate-50 px-3 text-sm font-semibold text-slate-700 transition-colors hover:bg-white focus:outline-none focus:ring-2 focus:ring-orange-500 dark:border-slate-600 dark:bg-slate-900/70 dark:text-slate-200 dark:hover:bg-slate-900"
+            className="flex min-h-11 flex-1 items-center justify-center gap-2 rounded-xl border border-slate-300 bg-slate-50 px-3 text-xs sm:text-sm font-semibold text-slate-700 transition-colors active:scale-95 dark:border-slate-700 dark:bg-slate-800 dark:text-slate-200"
           >
-            {kopyalandi ? <Check size={16} aria-hidden="true" /> : <Copy size={16} aria-hidden="true" />}
+            {kopyalandi ? <Check size={16} /> : <Copy size={16} />}
             {kopyalandi ? 'Kopyalandı' : 'Kopyala'}
           </button>
+
+          <button
+            type="button"
+            onClick={dinle}
+            disabled={!hasSpeechSupport}
+            className={`flex min-h-11 flex-1 items-center justify-center gap-2 rounded-xl border border-slate-300 bg-slate-50 px-3 text-xs sm:text-sm font-semibold transition-colors active:scale-95 dark:border-slate-700 dark:bg-slate-800 ${hasSpeechSupport
+              ? 'text-slate-700 dark:text-slate-200'
+              : 'text-slate-400 opacity-50 cursor-not-allowed'
+              }`}
+          >
+            <Volume2 size={16} />
+            Dinle
+          </button>
+
           <button
             type="button"
             onClick={paylas}
-            className="flex min-h-11 flex-1 items-center justify-center gap-2 rounded-lg bg-orange-500 px-3 text-sm font-semibold text-white transition-colors hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-500"
+            className="flex min-h-11 flex-1 items-center justify-center gap-2 rounded-xl bg-orange-500 px-3 text-xs sm:text-sm font-semibold text-white transition-colors active:scale-95 hover:bg-orange-600"
           >
-            <Share2 size={16} aria-hidden="true" />
+            <Share2 size={16} />
             Paylaş
           </button>
         </div>

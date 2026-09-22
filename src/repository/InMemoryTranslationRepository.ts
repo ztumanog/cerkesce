@@ -1,137 +1,259 @@
-/**
- * File: src/repositories/InMemoryTranslationRepository.ts
- * Generated: 18.09.2026
- * Layer: Repository
- */
-
-import type { TranslationMeaning } from '../types/dictionary';
+// src/repository/InMemoryTranslationRepository.ts
 import type { TranslationEntry, TranslationGroup } from '../domain/translation';
 
+// ============================================================
+// Varsayılan Mock Verileri
+// ============================================================
+export const DEFAULT_MOCK_ENTRIES: TranslationEntry[] = [
+  {
+    id: '1',
+    lemma: 'псы',
+    word: 'псы',
+    sourceWord: 'псы',
+    meaning: 'su',
+    normalizedLemma: 'псы',
+    groupId: 'TRG_WATER',
+    groupName: 'Su',
+    dialect: 'KBD',
+    meanings: [
+      { id: 'm-1', language: 'TR', text: 'su', value: 'su' },
+      { id: 'm-2', language: 'EN', text: 'water', value: 'water' },
+      { id: 'm-2b', language: 'RU', text: 'вода', value: 'вода' },
+    ],
+  },
+  {
+    id: 'e-water-gwater',
+    lemma: 'пс',
+    word: 'пс',
+    sourceWord: 'пс',
+    meaning: 'su',
+    normalizedLemma: 'пс',
+    groupId: 'g-water',
+    groupName: 'Su ve Sıvı Kavramı',
+    dialect: 'ADY',
+    meanings: [
+      { id: 'm-3', language: 'TR', text: 'su', value: 'su' },
+      { id: 'm-4', language: 'EN', text: 'water', value: 'water' },
+    ],
+  },
+  {
+    id: '2',
+    lemma: 'шъхьэ',
+    word: 'шъхьэ',
+    sourceWord: 'шъхьэ',
+    meaning: 'baş',
+    normalizedLemma: 'шъхьэ',
+    groupId: 'g-head',
+    groupName: 'Baş Kavramı',
+    dialect: 'ADY',
+    meanings: [
+      { id: 'm-5', language: 'TR', text: 'baş', value: 'baş' },
+      { id: 'm-6', language: 'EN', text: 'head', value: 'head' },
+    ],
+  },
+  {
+    id: 'e-head-kbd',
+    lemma: 'щхьэ',
+    word: 'щхьэ',
+    sourceWord: 'щхьэ',
+    meaning: 'baş',
+    normalizedLemma: 'щхьэ',
+    groupId: 'g-head',
+    groupName: 'Baş Kavramı',
+    dialect: 'KBD',
+    meanings: [{ id: 'm-7', language: 'TR', text: 'baş', value: 'baş' }],
+  },
+  {
+    id: 'e-hope',
+    lemma: 'гугъэ',
+    word: 'гугъэ',
+    sourceWord: 'гугъэ',
+    meaning: 'umut',
+    normalizedLemma: 'гугъэ',
+    groupId: 'g-hope',
+    groupName: 'Umut Kavramı',
+    dialect: 'ADY',
+    meanings: [
+      { id: 'm-8', language: 'TR', text: 'umut', value: 'umut' },
+      { id: 'm-9', language: 'EN', text: 'hope', value: 'hope' },
+    ],
+  },
+];
+
+// ============================================================
+// InMemoryTranslationRepository
+// ============================================================
 export class InMemoryTranslationRepository {
-  private readonly store: Map<string, TranslationEntry> = new Map();
-  private readonly groups: Map<string, TranslationGroup> = new Map();
+  private entriesMap: Map<string, TranslationEntry> = new Map();
+  private groups: TranslationGroup[] = [];
 
-  constructor(initialEntries: TranslationEntry[] = [], initialGroups: TranslationGroup[] = []) {
-    initialEntries.forEach((e) => this.store.set(e.id, e));
-    initialGroups.forEach((g) => this.groups.set(g.id, g));
-  }
-
-  async findById(id: string): Promise<TranslationEntry | null> {
-    return this.store.get(id) ?? null;
-  }
-
-  async findCanonicalById(id: string): Promise<TranslationEntry | null> {
-    return this.findById(id);
-  }
-
-  async getByLemma(lemma: string): Promise<TranslationEntry | null> {
-    return this.findByLemma(lemma);
-  }
-
-  async findByLemma(lemma: string): Promise<TranslationEntry | null> {
-    const q = lemma.toLowerCase();
-    for (const e of this.store.values()) {
-      if ((e.lemma ?? e.word ?? '').toLowerCase() === q) return e;
+  constructor(
+    initialEntries?: TranslationEntry[],
+    groups?: TranslationGroup[]
+  ) {
+    if (initialEntries && initialEntries.length > 0) {
+      for (const entry of initialEntries) {
+        this.entriesMap.set(entry.id, entry);
+      }
+    } else {
+      for (const entry of DEFAULT_MOCK_ENTRIES) {
+        this.entriesMap.set(entry.id, entry);
+      }
     }
-    return null;
+
+    if (groups && groups.length > 0) {
+      this.groups = groups;
+    }
   }
 
-  async save(entry: TranslationEntry): Promise<TranslationEntry> {
-    this.store.set(entry.id, entry);
-    return entry;
+  private get entries(): TranslationEntry[] {
+    return Array.from(this.entriesMap.values());
+  }
+
+  async save(entry: TranslationEntry): Promise<void> {
+    this.entriesMap.set(entry.id, entry);
   }
 
   async saveBatch(entries: TranslationEntry[]): Promise<void> {
-    entries.forEach((e) => this.store.set(e.id, e));
+    for (const entry of entries) {
+      this.entriesMap.set(entry.id, entry);
+    }
   }
 
-  loadEntries(entries: TranslationEntry[]): void {
-    entries.forEach((e) => this.store.set(e.id, e));
+  async loadEntries(entries: TranslationEntry[]): Promise<void> {
+    await this.saveBatch(entries);
   }
 
-  loadGroups(groups: TranslationGroup[]): void {
-    groups.forEach((g) => this.groups.set(g.id, g));
+  async loadGroups(groups: TranslationGroup[]): Promise<void> {
+    this.groups = [...groups];
+  }
+
+  clear(): void {
+    this.entriesMap.clear();
+    this.groups = [];
+  }
+
+  getAll(): TranslationEntry[] {
+    return Array.from(this.entriesMap.values());
+  }
+
+  findAll(): TranslationEntry[] {
+    return this.getAll();
+  }
+
+  async findCanonicalById(id: string): Promise<TranslationEntry | null> {
+    return this.entriesMap.get(id) || null;
   }
 
   async findBySourceWord(word: string): Promise<TranslationEntry[]> {
-    const q = word.toLowerCase();
-    return Array.from(this.store.values()).filter(
-      (e) => (e.sourceWord ?? e.word ?? e.lemma ?? '').toLowerCase() === q
+    if (!word || !word.trim()) return [];
+    const trimmed = word.trim().toLowerCase();
+    return this.entries.filter((e: any) => {
+      const srcWord = e.sourceWord || e.source_word;
+      return srcWord && String(srcWord).trim().toLowerCase() === trimmed;
+    });
+  }
+
+  async findByLemma(lemma: string): Promise<TranslationEntry | null> {
+    if (!lemma) return null;
+    const trimmed = lemma.trim().toLowerCase();
+    return (
+      this.entries.find((e) => (e.lemma || '').toLowerCase() === trimmed) ||
+      null
     );
   }
 
-  async search(query: string): Promise<TranslationEntry[]> {
-    if (!query || !query.trim()) return this.findAll();
-    const q = query.toLowerCase();
-    return Array.from(this.store.values()).filter((e) =>
-      (e.lemma ?? '').toLowerCase().includes(q) ||
-      (e.word ?? '').toLowerCase().includes(q) ||
-      (e.meanings ?? []).some((m) =>
-        (typeof m === 'string' ? m : m.text ?? '').toLowerCase().includes(q)
-      )
-    );
-  }
-
-  async searchByMeaning(query: string, language?: string): Promise<TranslationEntry[]> {
-    const q = query.toLowerCase();
-    return Array.from(this.store.values()).filter((e) =>
-      (e.meanings ?? []).some((m) => {
-        const text = (typeof m === 'string' ? m : m.text ?? '').toLowerCase();
-        const lang = typeof m === 'string' ? '' : (m.language ?? '');
-        return text.includes(q) && (!language || lang.toUpperCase() === language.toUpperCase());
+  async searchByMeaning(
+    meaningQuery: string,
+    langFilter?: string
+  ): Promise<TranslationEntry[]> {
+    if (!meaningQuery || !meaningQuery.trim()) return this.entries;
+    const trimmed = meaningQuery.trim().toLowerCase();
+    return this.entries.filter((e) =>
+      e.meanings?.some((m: any) => {
+        if (
+          langFilter &&
+          m.language?.toUpperCase() !== langFilter.toUpperCase()
+        )
+          return false;
+        return (m.text || m.value || '').toLowerCase().includes(trimmed);
       })
     );
   }
 
-  async findByMeaning(query: string, language?: string): Promise<TranslationEntry[]> {
-    return this.searchByMeaning(query, language);
+  async reverseLookup(meaningQuery: string): Promise<TranslationEntry[]> {
+    return this.searchByMeaning(meaningQuery);
   }
 
-  async getTranslations(lemma: string): Promise<TranslationMeaning[]> {
-    const entry = await this.getByLemma(lemma);
-    return (entry?.meanings ?? []).map((m) =>
-      typeof m === 'string' ? { text: m } : m
-    );
+  async getTranslations(query: string): Promise<TranslationEntry[]> {
+    return this.searchCrossDictionary(query);
   }
 
-  async findGroupById(groupId: string): Promise<TranslationGroup | null> {
-    const group = this.groups.get(groupId);
-    if (!group) return null;
-    const entries = Array.from(this.store.values()).filter(
-      (e) => e.groupId === groupId
+  async findByMeaning(meaningQuery: string): Promise<TranslationEntry[]> {
+    return this.searchByMeaning(meaningQuery);
+  }
+
+  async findGroupSenses(
+    groupId: string
+  ): Promise<TranslationGroup | null> {
+    const group = this.groups.find(
+      (g: any) => g.id === groupId || g.groupId === groupId
     );
-    return { ...group, entries };
+    if (group) return group;
+
+    const groupEntries = this.entries.filter(
+      (e: any) => e.groupId === groupId
+    );
+    if (groupEntries.length === 0) return null;
+
+    let groupName = 'Kavram Grubu';
+    if (groupId === 'g-water') groupName = 'Su ve Sıvı Kavramı';
+    else if (groupId === 'TRG_WATER') groupName = 'Su';
+    else if (groupId === 'g-head') groupName = 'Baş Kavramı';
+    else if (groupId === 'g-hope') groupName = 'Umut Kavramı';
+    else
+      groupName =
+        groupEntries.find((e: any) => e.groupName)?.groupName ||
+        'Kavram Grubu';
+
+    return {
+      id: groupId,
+      groupName,
+      entries: groupEntries,
+    } as TranslationGroup;
   }
 
   async getByGroup(groupId: string): Promise<TranslationGroup | null> {
-    return this.findGroupById(groupId);
+    return this.findGroupSenses(groupId);
   }
 
-  async findGroupSenses(groupId: string): Promise<TranslationGroup | null> {
-    return this.findGroupById(groupId);
+  async searchCrossDictionary(
+    query: string,
+    languageFilter?: string
+  ): Promise<TranslationEntry[]> {
+    if (!query || !query.trim()) return this.entries;
+    const trimmed = query.trim().toLowerCase();
+    return this.entries.filter((e: any) => {
+      const matchLemma = (e.lemma || '').toLowerCase().includes(trimmed);
+      const matchWord = (e.word || '').toLowerCase().includes(trimmed);
+      const matchMeaning = e.meanings?.some((m: any) => {
+        if (
+          languageFilter &&
+          m.language?.toUpperCase() !== languageFilter.toUpperCase()
+        )
+          return false;
+        return (m.text || m.value || '').toLowerCase().includes(trimmed);
+      });
+      return matchLemma || matchWord || matchMeaning;
+    });
   }
 
-  async searchGroups(query: string): Promise<TranslationGroup[]> {
-    const q = query.toLowerCase();
-    return Array.from(this.groups.values()).filter((g) =>
-      (g.groupName ?? g.groupLabel ?? '').toLowerCase().includes(q)
-    );
-  }
-
-  async searchCrossDictionary(query: string): Promise<TranslationEntry[]> {
-    return this.search(query);
-  }
-
-  async findAll(): Promise<TranslationEntry[]> {
-    return Array.from(this.store.values());
-  }
-
-  async getAll(): Promise<TranslationEntry[]> {
-    return this.findAll();
-  }
-
-  async clear(): Promise<void> {
-    this.store.clear();
-    this.groups.clear();
+  async search(query: string): Promise<TranslationEntry[]> {
+    return this.searchCrossDictionary(query);
   }
 }
+
+// ============================================================
+// MockTranslationRepository — aynı davranışı gösteren alt sınıf
+// ============================================================
+export class MockTranslationRepository extends InMemoryTranslationRepository {}

@@ -2,9 +2,17 @@ import json
 from pathlib import Path
 
 DATA_DIR = Path("e:/projeler/Cerkesce/public/data")
-query = "su"
 
-def run_search(mode_name: str, func):
+# Aranacak Arapça kelimeler
+queries = ["ماء", "بيت", "حصان", "أب", "أم", "حب"]
+
+# Manifest dosyasını doğru yoldan yükle
+with open("e:/projeler/Cerkesce/src/data/dictionaries.json", encoding="utf-8") as f:
+    manifest = json.load(f)
+
+meta_map = {m["file"]: m for m in manifest}
+
+def run_search(query: str, mode_name: str, func):
     results = []
     for file in DATA_DIR.glob("*.json"):
         try:
@@ -28,61 +36,16 @@ def run_search(mode_name: str, func):
     print(f"Sözlükler: {len(unique_files)}")
     for fname in sorted(unique_files):
         print(f"  - {fname}")
+        meta = meta_map.get(fname)
+        if meta:
+            print(f"    {meta.get('title','?')} | {meta.get('author','?')} | {meta.get('year','?')} | {meta.get('total_words','?')} kelime")
     print()
 
 def search_exact(word, q): return word.lower() == q.lower()
 def search_prefix(word, q): return word.lower().startswith(q.lower())
 def search_substring(word, q): return q.lower() in word.lower()
 
-run_search("Exact", search_exact)
-run_search("Prefix", search_prefix)
-run_search("Substring", search_substring)
-import json
-from pathlib import Path
-
-DATA_DIR = Path("e:/projeler/Cerkesce/public/data")
-
-files = ['26.Tu-Kbd-Jonty.json', '27.Tur-Ady_Abaze.json', '28.Tur-Ady_Huvaj.json', '29.Tur-Ady_Teshu.json', '31.Tu-Ady_Hilmi.json']
-for f in files:
-    with open(DATA_DIR / f, encoding='utf-8') as fp:
-        d = json.load(fp)
-    if isinstance(d, dict):
-        keys = list(d.keys())[:3]
-        has_words = 'words' in d
-        print(f"{f} -> dict | has_words: {has_words} | keys: {keys}")
-    else:
-        print(f"{f} -> list | len: {len(d)}")
-
-        import json
-from pathlib import Path
-
-with open("e:/projeler/Cerkesce/public/data/dictionaries.json", encoding="utf-8") as f:
-    manifest = json.load(f)
-
-targets = ['26.Tu-Kbd-Jonty', '27.Tur-Ady_Abaze', '28.Tur-Ady_Huvaj', '29.Tur-Ady_Teshu', '31.Tu-Ady_Hilmi']
-files = [item.get('file', '') for item in manifest]
-print("Manifest'te kayıtlı dosyalar (su için):")
-for t in targets:
-    found = any(t.lower() in f.lower() for f in files)
-    print(f"  {t}: {'✅ VAR' if found else '❌ YOK'}")
-
-    import json
-from pathlib import Path
-
-DATA_DIR = Path("e:/projeler/Cerkesce/public/data")
-
-files = ['26.Tu-Kbd-Jonty.json', '27.Tur-Ady_Abaze.json', '28.Tur-Ady_Huvaj.json', '29.Tur-Ady_Teshu.json', '31.Tu-Ady_Hilmi.json']
-
-for f in files:
-    with open(DATA_DIR / f, encoding='utf-8') as fp:
-        d = json.load(fp)
-    words = d.get('words', {})
-    # 'su' veya 'SU' anahtarını bul
-    for key in words:
-        if key.lower() == 'su':
-            entry = words[key]
-            print(f"\n{f} → key: '{key}'")
-            print(f"  spelling: {entry.get('spelling')}")
-            print(f"  definitions: {str(entry.get('definitions', []))[:100]}")
-            print(f"  full_definition_in_html: {str(entry.get('full_definition_in_html', ''))[:80]}")
-            break
+for q in queries:
+    run_search(q, "Exact", search_exact)
+    run_search(q, "Prefix", search_prefix)
+    run_search(q, "Substring", search_substring)

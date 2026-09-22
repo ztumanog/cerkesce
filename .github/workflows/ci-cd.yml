@@ -1,31 +1,35 @@
-name: Enterprise CI/CD Pipeline
+name: Çerkesçe Platformu CI/CD Pipeline
 
 on:
   push:
-    branches: [ main ]
-    tags: [ 'v*' ]
+    branches: [ main, develop ]
   pull_request:
-    branches: [ main ]
+    branches: [ main, develop ]
 
 jobs:
   verify-and-build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout Source
+      - name: Kodu Çek (Checkout)
         uses: actions/checkout@v4
 
-      - name: Setup Node.js Runtime
+      - name: Node.js Ortamını Hazırla
         uses: actions/setup-node@v4
         with:
           node-version: '20'
           cache: 'npm'
 
-      - name: Install Dependencies
+      - name: Bağımlılıkları Yükle
         run: npm ci
 
-      - name: Execute Enterprise Test Suite (267 Tests)
-        run: npx vitest run
+      - name: 1. Statik Tip Kontrolü (TypeScript Check)
+        run: npx tsc --noEmit
 
-      - name: Build Production Docker Image
-        run: docker build -t cerkesce-kg-platform:v12.0 .
+      - name: 2. Test Otomasyonu (Vitest Active Tests)
+        run: npm test -- --run
+
+      - name: 3. Üretim Derleme Kontrolü (Build Gate Check)
+        run: npm run build
+              - name: 2. Test Otomasyonu (Vitest Active Tests)
+        run: npm test

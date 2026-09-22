@@ -34,3 +34,6 @@ tsconfig.tsbuildinfo
 node_modules/
 .venv/
 __pycache__/
+# Backup klasörleri
+.backup/
+_backup_*/

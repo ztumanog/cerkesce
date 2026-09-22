@@ -1,22 +1,22 @@
 ﻿/**
  * @file src/index.ts
- * @description Ã‡erkesÃ§e morfolojik eÅŸleÅŸtirme testleri ve ana giriÅŸ noktasÄ±.
+ * @description Çerkesçe morfolojik eşleştirme testleri ve ana giriş noktası.
  */
 
-import { TranslationEntry } from "./domain/translation";
+import { TranslationEntry, TranslationMeaning } from "./domain/translation";
 import { IMorphologyAnalyzer, MorphologicalSegments } from "./domain/morphology";
 import { MorphologyAwareMatchingService } from "./services/MatchingService";
 
 /**
- * Testler iÃ§in Sahte Morfolojik Analiz Servisi (MockAnalyzer)
+ * Testler için Sahte Morfolojik Analiz Servisi (MockAnalyzer)
  */
 class MockAnalyzer implements IMorphologyAnalyzer {
   segment(lemma: string): MorphologicalSegments {
-    if (lemma.includes("Ñ‰Ñ…ÑŠÑƒĞ½Ñ‹Ğ³ÑŠÑ")) {
+    if (lemma.includes("щхъуныгъэ")) {
       return {
         prefixes: [lemma.substring(0, 2)],
-        root: "Ñ‰Ñ…ÑŠÑƒ",
-        suffixes: ["Ğ½Ñ‹Ğ³ÑŠÑ"],
+        root: "щхъу",
+        suffixes: ["ныгъэ"],
       };
     }
     return { root: lemma, prefixes: [], suffixes: [] };
@@ -35,52 +35,50 @@ class MockAnalyzer implements IMorphologyAnalyzer {
 }
 
 /**
- * Testler iÃ§in Sahte Kural Listesi (Mock Rules)
+ * Testler için Sahte Kural Listesi (Mock Rules)
  */
 const mockRules = [
   {
     scope: "root",
     status: "CONFIRMED",
-    sourcePattern: "Ñ‰",
-    targetPattern: "ÑˆÑŠ",
+    sourcePattern: "щ",
+    targetPattern: "шъ",
     confidenceScore: 0.9,
-    name: "Root Ñ‰ â†” ÑˆÑŠ",
+    name: "Root щ ↔ шъ",
   },
   {
     scope: "root",
     status: "CONFIRMED",
-    sourcePattern: "Ğ¶ÑŒ",
-    targetPattern: "Ğ¶ÑŠ",
+    sourcePattern: "жь",
+    targetPattern: "жъ",
     confidenceScore: 0.9,
-    name: "Root Ğ¶ÑŒ â†” Ğ¶ÑŠ",
+    name: "Root жь ↔ жъ",
   },
   {
     scope: "root",
     status: "CONFIRMED",
-    sourcePattern: "Ñ…Ñƒ",
-    targetPattern: "Ñ„",
+    sourcePattern: "ху",
+    targetPattern: "ф",
     confidenceScore: 0.9,
-    name: "Root Ñ…Ñƒ â†” Ñ„",
+    name: "Root ху ↔ ф",
   },
   {
     scope: "prefix",
     status: "CONFIRMED",
-    sourcePattern: "Ñ„Ñ",
-    targetPattern: "Ñ„Ó€Ñ",
+    sourcePattern: "фэ",
+    targetPattern: "фӏэ",
     confidenceScore: 0.9,
-    name: "Prefix Ñ„Ñ â†” Ñ„Ó€Ñ",
+    name: "Prefix фэ ↔ фӏэ",
   },
 ] as any;
 
 /**
- * Morfolojik eÅŸleÅŸtirme testlerini Ã§alÄ±ÅŸtÄ±rÄ±r
+ * Morfolojik eşleştirme testlerini çalıştırır
  */
 async function runMorphologyMatchingTests() {
-  console.log("ğŸš€ Morfolojik EÅŸleÅŸtirme Testleri BaÅŸlatÄ±lÄ±yor...\n");
+  console.log("🚀 Morfolojik Eşleştirme Testleri Başlatılıyor...\n");
 
-  // âœ… DÃœZELTME: 2 ayrÄ± parametre geÃ§mek yerine nesne opsiyonlarÄ± veya tek argÃ¼man kullanÄ±ldÄ±.
-  // Kurallar nesnesi loadRules metodu veya opsiyon objesi Ã¼zerinden servise tanÄ±mlanÄ±r.
-const matcher = new MorphologyAwareMatchingService(mockRules);
+  const matcher = new MorphologyAwareMatchingService(mockRules);
   if (typeof (matcher as any).loadRules === "function") {
     (matcher as any).loadRules(mockRules);
   } else if (typeof (matcher as any).setRules === "function") {
@@ -89,34 +87,34 @@ const matcher = new MorphologyAwareMatchingService(mockRules);
 
   const testCases = [
     {
-      kbd: "Ñ‰Ñ…ÑŒÑ",
-      adg: "ÑˆÑŠÑ…ÑŒÑ",
+      kbd: "щхьэ",
+      adg: "шъхьэ",
       expected: "MORPHOLOGY_DIALECT_VARIANT",
-      label: "Test 1: Root Ñ‰ â†” ÑˆÑŠ",
+      label: "Test 1: Root щ ↔ шъ",
     },
     {
-      kbd: "Ğ¶ÑŒÑ‹",
-      adg: "Ğ¶ÑŠÑ‹",
+      kbd: "жьы",
+      adg: "жъы",
       expected: "MORPHOLOGY_DIALECT_VARIANT",
-      label: "Test 2: Root Ğ¶ÑŒ â†” Ğ¶ÑŠ",
+      label: "Test 2: Root жь ↔ жъ",
     },
     {
-      kbd: "Ñ…ÑƒĞ°Ğ±Ñ",
-      adg: "Ñ„Ğ°Ğ±Ñ",
+      kbd: "хуабэ",
+      adg: "фабэ",
       expected: "MORPHOLOGY_DIALECT_VARIANT",
-      label: "Test 3: Root Ñ…Ñƒ â†” Ñ„",
+      label: "Test 3: Root ху ↔ ф",
     },
     {
-      kbd: "Ñ„ÑÑ‰Ñ…ÑŠÑƒĞ½Ñ‹Ğ³ÑŠÑ",
-      adg: "Ñ„Ó€ÑÑ‰Ñ…ÑŠÑƒĞ½Ñ‹Ğ³ÑŠÑ",
+      kbd: "фэщхъуныгъэ",
+      adg: "фӏэщхъуныгъэ",
       expected: "MORPHOLOGY_DIALECT_VARIANT",
-      label: "Test 4: Paradigm Ñ„Ñ â†” Ñ„Ó€Ñ",
+      label: "Test 4: Paradigm фэ ↔ фӏэ",
     },
     {
-      kbd: "Ñ„ÑÑ‰Ñ…ÑŠÑƒĞ½Ñ‹Ğ³ÑŠÑ",
-      adg: "Ñ…ÑƒÑÑ‰Ñ…ÑŠÑƒĞ½Ñ‹Ğ³ÑŠÑ",
+      kbd: "фэщхъуныгъэ",
+      adg: "хуэщхъуныгъэ",
       expected: "NONE",
-      label: "Test 5: Global Ñ„ â†” Ñ…Ñƒ (Yasak DÃ¶nÃ¼ÅŸÃ¼m)",
+      label: "Test 5: Global ф ↔ ху (Yasak Dönüşüm)",
     },
   ];
 
@@ -129,13 +127,7 @@ const matcher = new MorphologyAwareMatchingService(mockRules);
       normalizedLemma: kbd,
       dialect: "KBD",
       groupId: "group-test",
-      meanings: [
-        {
-          id: "m1",
-          language: "TR",
-          text: "test",
-        },
-      ],
+      meanings: [{ text: "test" }] as unknown as TranslationMeaning[],
     };
 
     const entry2: TranslationEntry = {
@@ -144,67 +136,49 @@ const matcher = new MorphologyAwareMatchingService(mockRules);
       normalizedLemma: adg,
       dialect: "ADY",
       groupId: "group-test",
-      meanings: [
-        {
-          id: "m2",
-          language: "TR",
-          text: "test",
-        },
-      ],
+      meanings: [{ text: "test" }] as unknown as TranslationMeaning[],
     };
 
     const result = await matcher.matchEntries(entry1, entry2);
 
     if (result.matchType === expected) {
       console.log(
-        `âœ… ${label}: BaÅŸarÄ±lÄ± (AlÄ±nan Tip: ${result.matchType})`
+        `✅ ${label}: Başarılı (Alınan Tip: ${result.matchType})`
       );
     } else {
       console.log(
-        `âŒ ${label}: BAÅARISIZ! (Beklenen: ${expected}, AlÄ±nan: ${result.matchType})`
+        `❌ ${label}: BAŞARISIZ! (Beklenen: ${expected}, Alınan: ${result.matchType})`
       );
     }
   }
 
-  console.log("\nâœ¨ TÃ¼m testler tamamlandÄ±.");
+  console.log("\n✨ Tüm testler tamamlandı.");
 }
 
 /**
- * Ana giriÅŸ noktasÄ± ve Ã¶rnek kullanÄ±m senaryolarÄ±
+ * Ana giriş noktası ve örnek kullanım senaryoları
  */
 export function main() {
   const sampleEntry: TranslationEntry = {
     id: "sample-1",
-    lemma: "ĞºÓ€ÑƒÑĞ½",
-    normalizedLemma: "ĞºÓ€ÑƒÑĞ½",
+    lemma: "кӏуэн",
+    normalizedLemma: "кӏуэн",
     dialect: "KBD",
     groupId: "group-go",
-    meanings: [
-      {
-        id: "m-sample-1",
-        language: "TR",
-        text: "gitmek",
-      },
-    ],
+    meanings: [{ text: "gitmek" }] as unknown as TranslationMeaning[],
   };
 
   const sampleEntry2: TranslationEntry = {
     id: "sample-2",
-    lemma: "ĞºÓ€Ğ¾Ğ½",
-    normalizedLemma: "ĞºÓ€Ğ¾Ğ½",
+    lemma: "кӏон",
+    normalizedLemma: "кӏон",
     dialect: "ADY",
     groupId: "group-go",
-    meanings: [
-      {
-        id: "m-sample-2",
-        language: "TR",
-        text: "gitmek (AdÄ±ge)",
-      },
-    ],
+    meanings: [{ text: "gitmek (Adıge)" }] as unknown as TranslationMeaning[],
   };
 
   console.log(
-    "Ã‡erkesÃ§e SÃ¶zlÃ¼k Servisi BaÅŸlatÄ±ldÄ±:",
+    "Çerkesçe Sözlük Servisi Başlatıldı:",
     sampleEntry.lemma,
     sampleEntry2.lemma
   );
@@ -213,6 +187,6 @@ export function main() {
 if (require.main === module) {
   main();
   runMorphologyMatchingTests().catch((error) => {
-    console.error("âŒ Testler Ã§alÄ±ÅŸtÄ±rÄ±lÄ±rken bir hata oluÅŸtu:", error);
+    console.error("❌ Testler çalıştırılırken bir hata oluştu:", error);
   });
 }

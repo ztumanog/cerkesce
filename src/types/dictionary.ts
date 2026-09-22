@@ -1,297 +1,224 @@
-﻿/**
- * File: src/types/dictionary.ts
- * Generated: 2026-09-19
- * Layer: Domain
- */
+// ============================================================
+// TEMEL ANLAM / TANIM TİPLERİ
+// ============================================================
 
-export interface TranslationMeaning {
-  context?: string;
+export interface Meaning {
   id?: string;
   language?: string;
-  text: string;
+  lang?: string;
+  text?: string;
   value?: string;
-  definition?: string;
-  exampleSentence?: string;
-  partOfSpeech?: string;
-  example?: string;
-}
-
-export type MeaningItem = TranslationMeaning;
-
-export type LehceTipi = 'TUMU' | 'ADY' | 'KBD' | 'western' | 'KBD';
-export type SozlukTipi = string;
-export type DialectCode = 'KBD' | 'ADG' | 'BES' | 'KBD' | 'ADY' | 'GENEL';
-export type LanguageCode = 'TR' | 'RU' | 'EN' | 'AR';
-
-export interface DictionaryEntry {
-  id: string;
-  word: string;
-  definition: string;
-  lemma: string;
-  normalizedLemma?: string;
-  partOfSpeech?: string;
-  examples?: string[];
-  usage?: string;
-  relatedTerms?: string[];
-  usages?: string[];
-  sourceWord?: string;
-  meanings?: TranslationMeaning[];
-  dialect?: string;
-  groupId?: string;
-  notes?: string;
-  category?: string;
-}
-
-export interface DictionarySource {
-  title: string;
-  author?: string;
-  publisher?: string;
-  year?: number | string;
-  rawDefinition?: string;
   meaning?: string;
-  definition?: string;
   [key: string]: any;
 }
 
-export interface DictionaryMeta {
-  file?: string;
-  title?: string;
-  originalTitle?: string;
-  source?: string;
-  dialect?: string;
-  tarih?: string;
-  meta?: KelimeMeta;
+export type TranslationMeaning = Meaning;
+
+export interface Definition {
+  id?: string;
+  text?: string;
+  meaning?: string;
+  language?: string;
+  tanim?: string;
+  [key: string]: any;
 }
+
+// ============================================================
+// KAYNAK TİPLERİ
+// ============================================================
 
 export interface KaynakItem {
+  id?: string;
+  sourceFile?: string;       // ⭐ dictionaries.json.file ile eşleşir
+  file?: string;             // alternatif
+  filename?: string;         // alternatif
   title?: string;
-  sözlük?: string;
-  kaynak?: string;
-  kaynak_sozluk?: string;
-  dictionaryName?: string;
   name?: string;
-  file?: string;
-  author?: string;
+  sözlük?: string;
+  url?: string;
+  anlam?: string;            // kaynağa özel anlam
+  meaning?: string;
+  definition?: string;
   yazar?: string;
-  year?: string;
-  yil?: string;
-  tanim?: string;
-  anlam?: string;
-  meaning?: string;
-  full_definition_in_html?: string;
-  total_words?: number;
-  totalWords?: number;
-  kelimeSayisi?: number;
-  dialect?: string;
-  sourceFile?: string;
-  kelime?: string;
+  author?: string;
+  yil?: string | number;
+  year?: string | number;
+  kaynakDil?: string;
   sourceLanguage?: string;
+  hedefDil?: string;
   targetLanguage?: string;
-}
-
-export interface KelimeMeta {
-  seviye?: 'Başlangıç' | 'Orta' | 'İleri';
-  kategori?: string;
-  notlar?: string;
-  etimoloji?: string;
-  ornekCumle?: string;
-  ornekCumleCeviri?: string;
-  kokKelime?: string;
-  [key: string]: unknown;
-}
-
-export interface DictionaryItem {
-  id: string;
-  kelime: string;
-  madde: string;
-  anlam: string;
-  anlamlar?: string[];
-  kaynaklar?: KaynakItem[];
-  lehce?: LehceTipi;
-  sozluk?: SozlukTipi;
-  ilkAnlam?: string;
-  kelilem?: string;
-}
-
-export type KelimeItem = DictionaryItem;
-
-export interface DictionaryRawItem {
-  word?: string;
-  madde?: string;
-  lemma: string;
-  spelling?: string;
-  meaning?: string;
-  isActive: boolean;
-  lastUpdated?: string;
-  dialects?: LehceTipi[];
-  dictionaryName?: string;
-}
-
-export interface GroupedDictionaryEntry {
-  kelime: string;
-  anlam: string;
-  meaning?: string;
-  tanim?: string;
-  full_definition_in_html?: string;
-  total_words?: number;
-  totalWords?: number;
-  kelimeSayisi?: number;
-}
-
-export interface GruplanmisKelime {
-  harf: string;
-  kelimeler: DictionaryItem[];
-}
-
-export interface LemmaEntry {
-  language?: string;
-  partOfSpeech?: string;
-  etymology?: string;
-  id: string;
-  lemma: string;
-  normalizedLemma?: string;
-  sourceWord?: string;
+  lehce?: string;
   dialect?: string;
-  pos?: string;
-  meaning?: string;
-  meanings?: (string | TranslationMeaning)[];
-  notes?: string;
-  groupId?: string;
-  frequency?: number;
-  createdAt?: Date;
-  updatedAt?: Date;
+  [key: string]: any;
 }
 
-export interface LemmaGroup {
-  id: string;
-  groupName?: string;
-  groupLabel?: string;
-  groupId?: string;
-  canonicalMeaning?: string;
-  entries: LemmaEntry[];
-  metadata?: Record<string, unknown>;
+// ============================================================
+// DRAWER İÇERİĞİ
+// ============================================================
+
+export interface DrawerContent {
+  word: string;
+  cerkesce?: string;
+  meanings: string[];
+  dialect?: string;
+  concept?: string;
+  relatedTerms: string[];
+  idioms: string[];
 }
 
-export function isValidLemmaEntry(obj: unknown): obj is LemmaEntry {
-  if (typeof obj !== 'object' || obj === null) return false;
-  const o = obj as LemmaEntry;
-  return typeof o.id === 'string' && typeof o.lemma === 'string';
-}
-
-export interface DictionaryRepository {
-  findById(id: string): Promise<DictionaryEntry | null>;
-  findByWord(word: string): Promise<DictionaryEntry[]>;
-  findAll(): Promise<DictionaryEntry[]>;
-  save(entry: DictionaryEntry): Promise<void>;
-  delete(id: string): Promise<void>;
-}
-
-export interface DictionaryService {
-  search(query: string): Promise<DictionaryEntry[]>;
-  getDaily(): Promise<DailyWord>;
-  getTranslations(word: string, language: string): Promise<TranslationEntry[]>;
-}
-
-export interface DictionaryFilter {
-  lehce?: LehceTipi;
-  sozluk?: SozlukTipi;
-  partOfSpeech?: string;
-  minConfidence?: number;
-}
-
-export interface SearchResult {
-  entries?: DictionaryEntry[];
-  results?: DictionaryItem[];
-  total: number;
-  page?: number;
-  pageSize?: number;
-  totalCount: number;
-  query: string;
-}
-
-export interface DailyWord {
-  entry: DictionaryEntry;
-  tarih: string;
-  meta?: KelimeMeta;
-}
-
-export interface GununKelimesi {
-  id: string;
-  kelime: string;
-  anlam: string;
-  lehce: string;
-  tarih: string;
-  meta?: KelimeMeta;
-}
+// ============================================================
+// SÖZLÜK GİRİŞLERİ
+// ============================================================
 
 export interface TranslationEntry {
   id: string;
-  lemma: string;
+  lemma?: string;
   normalizedLemma?: string;
-  sourceWord?: string;
-  dialect?: string;
-  pos?: string;
+  word?: string;
   meaning?: string;
-  meanings?: (string | TranslationMeaning)[];
-  notes?: string;
+  meanings?: Meaning[];
+  dialect?: string;
   groupId?: string;
-  frequency?: number;
-  createdAt?: Date;
-  updatedAt?: Date;
+  groupName?: string;
+  kaynaklar?: KaynakItem[];
+  cerkesce?: string;
+  concept?: string;
+  relatedTerms?: string[];
+  idioms?: string[];
+  [key: string]: any;
 }
+
+export type DictionaryEntry = TranslationEntry;
+
+// ============================================================
+// GRUPLAR
+// ============================================================
 
 export interface TranslationGroup {
   id: string;
-  groupId?: string;
-  groupLabel?: string;
+  groaupId?: string;
   groupName?: string;
-  canonicalMeaning?: string;
-  entries: TranslationEntry[];
-  metadata?: Record<string, unknown>;
+  entries?: TranslationEntry[];
+  [key: string]: any;
 }
 
-export function isValidDictionaryEntry(obj: any): obj is DictionaryEntry {
+export type LemmaGroup = TranslationGroup;
+
+// ============================================================
+// LEHÇE / DİYALEKT
+// ============================================================
+
+export type DialectCode = 'west' | 'east' | 'kabardian' | 'adyghe' | string;
+
+// ============================================================
+// GÜNÜN KELİMESİ
+// ============================================================
+
+export interface GununKelimesi {
+  id: string;
+  word?: string;
+  meaning?: string;
+  kelime?: any;
+  anlam?: any;
+  date?: string;
+  entry?: TranslationEntry;
+  [key: string]: any;
+}
+
+// ============================================================
+// KELİME META / ITEM
+// ============================================================
+
+export interface KelimeMeta {
+  id?: string;
+  views?: number;
+  likes?: number;
+  [key: string]: any;
+}
+
+export interface KelimeItem {
+  id: string;
+  lemma?: string;
+  meaning?: string;
+  word?: string;
+  [key: string]: any;
+}
+
+// ============================================================
+// SÖZLÜK META / AKTİF SÖZLÜK
+// ============================================================
+
+export interface DictionaryMeta {
+  totalEntries?: number;
+  lastUpdated?: string;
+  [key: string]: any;
+}
+
+export type SozlukTipi = 'kabardian' | 'adyghe' | 'general' | string;
+
+export interface AktifSozlukItem {
+  id: string;
+  name: string;
+  type?: SozlukTipi;
+  enabled?: boolean;
+  isActive?: boolean;
+  [key: string]: any;
+}
+
+// ============================================================
+// ADR-P4-005: KAYNAK MERKEZLİ GÖRÜNÜM TİPLERİ
+// ============================================================
+
+export interface SourceExample {
+  target: string;
+  translation?: string;
+}
+
+export type SourceSectionType =
+  | 'roman'      // I, II, III
+  | 'arabic'     // 1., 2., 3.
+  | 'example'    // ◊
+  | 'related'    // / veya BÜYÜK harf
+  | 'suffix'     // -
+  | 'plain';     // diğer
+
+export interface SourceSection {
+  type: SourceSectionType;
+  label: string;
+  text: string;
+  children?: SourceSection[];
+}
+
+/**
+ * Kaynak merkezli görünüm için her bir sözlük kaynağını temsil eder.
+ * TEK TANIM (ADR-P4-005).
+ */
+export interface SourceContent {
+  sourceId: string;
+  sourceName: string;
+  title?: string;
+  author?: string;
+  year?: string | number;
+  sourceLanguage?: string;
+  targetLanguage?: string;
+  dialect?: string;
+  meanings: string[];
+  sections?: SourceSection[];
+  examples?: SourceExample[];
+  notes?: string;
+}
+
+export function isSourceContent(value: unknown): value is SourceContent {
+  if (typeof value !== 'object' || value === null) return false;
+  const obj = value as Record<string, unknown>;
+
   return (
-    typeof obj === 'object' &&
-    obj !== null &&
-    typeof obj.id === 'string' &&
-    typeof obj.word === 'string' &&
-    typeof obj.definition === 'string'
+    typeof obj.sourceId === 'string' &&
+    typeof obj.sourceName === 'string' &&
+    Array.isArray(obj.meanings)
   );
 }
 
-export interface KaynakDetay {
-  sozlukAdi: string;
-  anlam: string;
-  dialect?: string;
-  sourceLanguage?: string;
-  targetLanguage?: string;
-}
-
-export interface AktifSozlukItem {
-  id?: any;
-  file?: string;
-  name?: any;
-  title?: string;
-  dialect?: string;
-  isActive?: boolean;
-  type?: SozlukTipi;
- example?: string;        // ← ekle
-  context?: string;        // ← ekle
-  itemCount?: any;
-  lastUpdated?: string;
-  dialects?: any[];
-}
-export interface TranslationResult {
-  entry: DictionaryEntry;
-  sourceLanguage: string;
-  targetLanguage: string;
-  translatedText: string;
-  confidenceScore?: number;
-}
-
-export interface CacheStats {
-  hits: number;
-  misses: number;
-  size: number;
+export function isSourceContentArray(value: unknown): value is SourceContent[] {
+  return Array.isArray(value) && value.every(isSourceContent);
 }

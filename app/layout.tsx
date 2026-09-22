@@ -1,6 +1,12 @@
-﻿import type { Metadata } from 'next';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
+/**
+ * File: src/app/layout.tsx
+ * Generated: 2026-09-19
+ * Layer: UI
+ */
+import type { Metadata } from 'next';
+import Header from '@/components/layout/Header';
+import Footer from '@/components/layout/Footer';
+import { Toaster } from 'sonner';
 import './globals.css';
 
 export const metadata: Metadata = {
@@ -17,13 +23,13 @@ const themeScript = `
     try {
       var theme = localStorage.getItem('theme');
       var fontSize = localStorage.getItem('font-size');
-      
+
       if (theme === 'dark' || (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
         document.documentElement.classList.add('dark');
       } else {
         document.documentElement.classList.remove('dark');
       }
-      
+
       if (fontSize) {
         var size = parseInt(fontSize, 10);
         if (!isNaN(size) && size >= 12 && size <= 22) {
@@ -54,6 +60,7 @@ export default function RootLayout({
         <Header />
         <main className="flex-1 w-full">{children}</main>
         <Footer />
+        <Toaster richColors position="bottom-right" />
       </body>
     </html>
   );

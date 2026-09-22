@@ -1,121 +1,55 @@
-﻿/**
- * File: src/types/dictionary.ts
- * Generated: 2026-09-16
- * Layer: Domain Model (SSOT)
- */
+import fs from 'fs';
+import path from 'path';
 
-export interface RelatedTerm {
-  text: string;
-  targetWord?: string;
-  source?: string;
+export function loadDictionaryData(): { entries: any[] } {
+  const dataPath = path.join(process.cwd(), 'public', 'data');
+  const manifestPath = path.join(dataPath, 'dictionaries.json');
+  const entries: any[] = [];
+
+  if (!fs.existsSync(dataPath)) return { entries };
+
+  try {
+    const files = fs
+      .readdirSync(dataPath)
+      .filter((f) => f.endsWith('.json') && f !== 'dictionaries.json');
+
+    for (const file of files) {
+      try {
+        const fullPath = path.join(dataPath, file);
+        const raw = fs.readFileSync(fullPath, 'utf-8');
+        if (!raw?.trim()) continue;
+        const parsed = JSON.parse(raw);
+
+        if (Array.isArray(parsed)) {
+          entries.push(...parsed.filter((i) => i && typeof i === 'object'));
+        } else if (parsed && typeof parsed === 'object') {
+          // { title, id, words: { "su": {...} } } yapisi
+          const words = parsed.words ?? parsed.entries ?? parsed.items ?? parsed.data;
+          if (words && typeof words === 'object' && !Array.isArray(words)) {
+            for (const [key, val] of Object.entries(words)) {
+              if (val && typeof val === 'object') {
+                entries.push({
+                  ...(val as object),
+                  word: (val as any).spelling || key,
+                  kelime: (val as any).spelling || key,
+                  sourceFile: file,
+                  dictionaryName: parsed.title || file.replace('.json', ''),
+                });
+              }
+            }
+          } else if (Array.isArray(words)) {
+            entries.push(...words.filter((i) => i && typeof i === 'object'));
+          }
+        }
+      } catch (e) {
+        console.warn(`[dictionaryLoader] ${file} okunamadı:`, e);
+      }
+    }
+  } catch (error) {
+    console.warn('[dictionaryLoader] Genel hata:', error);
+  }
+
+  return { entries };
 }
 
-export interface DictionarySource {
-  title: string;
-  author?: string;
-  publisher?: string;
-  year?: number | string;
-  rawDefinition?: string;
-}
-
-export interface RawDictionaryItem {
-  word?: string;
-  madde?: string;
-  lemma?: string;
-  spelling?: string;
-  meaning?: string;
-  definition?: string;
-  [key: string]: unknown;
-}
-
-export interface DictionaryMeta {
-  file?: string;
-  title?: string;
-  originalTitle?: string;
-  source?: string;
-  dialect?: string;
-  region?: string;
-  timestamp?: string;
-  confidence?: number;
-  author?: string;
-  editor?: string;
-  publisher?: string;
-  year?: number | string;
-  sourceLanguage?: string;
-  targetLanguage?: string;
-}
-
-export interface TranslationEntry {
-  language: string;
-  text: string;
-  context?: string;
-}
-
-// Lehçe ve Sözlük Türleri
-export type LehceTipi =
-  | 'Standart'
-  | 'Kuzey'
-  | 'Güney'
-  | 'KBD'
-  | 'bati'
-  | 'Mekezi'
-  | 'Diğer'
-  | 'Adigece'
-  | 'ady'
-  | 'Kabardeyce'
-  | string;
-
-export type SozlukTipi =
-  | 'Çerkesçe-Türkçe'
-  | 'Türkçe-Çerkesçe'
-  | 'Çerkesçe-Rusça'
-  | 'Rusça-Çerkesçe'
-  | 'Çerkesçe-İngilizce'
-  | 'İngilizce-Çerkesçe'
-  | string;
-
-/**
- * Aktif Sözlük Kaynak Modeli
- * TS2322 hatası için eksik alanlar eklendi ve `code` opsiyonel yapıldı.
- */
-export interface AktifSozlukItem {
-  id: string;
-  code?: string;
-  name: string;
-  description?: string;
-  entryCount?: number;
-  isActive: boolean;
-  priority?: number;
-  type?: SozlukTipi | string;
-  itemCount?: number;
-  lastUpdated?: string;
-  dialects?: LehceTipi[] | string[];
-}
-
-/**
- * 🎯 CANONICAL MODEL - Kanonik Sözlük Girişi (SSOT)
- */
-export interface DictionaryEntry {
-  id: string;
-  word: string;
-  meaning: string;
-  definition?: string;
-  meanings?: string[];
-  definitions?: string[];
-  partOfSpeech?: string;
-  examples?: string[];
-  translations?: TranslationEntry[];
-  relatedTerms?: Array<string | RelatedTerm>;
-  synonyms?: string[];
-  antonyms?: string[];
-  usages?: string[];
-  idioms?: string[];
-  sources?: DictionarySource[];
-  meta?: DictionaryMeta;
-  etymology?: string;
-  usage?: string;
-}
-
-// Backward-compatible API export. The implementation lives in the server-side
-// loader module; this keeps existing `@/lib/dictionaryLoader` imports working.
-export { loadDictionaryData } from '../loader/DictionaryLoader';
+export default { loadDictionaryData };

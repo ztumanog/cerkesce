@@ -1,4 +1,4 @@
-import type { KelimeMeta } from '@/types/dictionary';
+import type { GununKelimesi, KelimeMeta } from '@/types/dictionary';
 
 export interface RawDictionaryEntry {
   id: string;
@@ -6,22 +6,12 @@ export interface RawDictionaryEntry {
   translation: string;
   dialect?: string;
   examples?: Array<{ text: string; translation: string }>;
+  ornekCumle?: string;
   etymology?: string;
   [key: string]: any;
 }
 
-export interface DailyWord {
-  id: string;
-  kelime: string;
-  anlam: string;
-  lehce: string;
-  tarih: string;
-  meta?: {
-    seviye?: KelimeMeta['seviye'];
-    kategori?: string;
-    notlar?: string;
-  };
-}
+export type DailyWord = GununKelimesi;
 
 /**
  * FNV-1a 32-bit Hash Algoritması
@@ -40,9 +30,10 @@ export function fnv1aHash(input: string): number {
 
 export function isDailyWordCandidate(entry: RawDictionaryEntry): boolean {
   const hasExamples = entry.examples && entry.examples.length > 0;
+  const hasOrnekCumle = entry.ornekCumle && entry.ornekCumle.trim().length > 0;
   const hasEtymology = entry.etymology && entry.etymology.trim().length > 0;
   const hasTranslation = entry.translation && entry.translation.trim().length > 0;
-  return !!(hasExamples || hasEtymology || hasTranslation);
+  return !!(hasExamples || hasOrnekCumle || hasEtymology || hasTranslation);
 }
 
 export function selectDailyWord(
@@ -73,7 +64,10 @@ export function selectDailyWord(
     tarih: date,
     meta: {
       kategori: selected.etymology || 'Etimoloji bilinmiyor',
-      notlar: selected.examples?.[0]?.text || 'Örnek cümle yok',
+      notlar:
+      selected.ornekCumle ||
+      selected.examples?.[0]?.text ||
+      'Örnek cümle yok',
     },
   };
 }

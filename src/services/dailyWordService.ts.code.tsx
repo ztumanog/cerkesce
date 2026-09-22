@@ -1,5 +1,5 @@
 import type { GununKelimesi } from '@/types/dictionary';
-import { RawDictionaryEntry, selectDailyWord } from '@/utils/dailyWordEngine';
+import { RawDictionaryEntry, selectDailyWord, DailyWord } from '@/utils/dailyWordEngine';
 
 /**
  * Sözlük verilerini JSON dosyasından yükler
@@ -30,7 +30,17 @@ export async function getDailyWord(
       console.warn('Sözlük boş, varsayılan veriler kullanılacak');
       return null;
     }
-    return selectDailyWord(entries, dateString);
+    const selected = selectDailyWord(entries, dateString);
+    if (!selected) return null;
+
+    return {
+      id: selected.id,
+      kelime: selected.kelime,
+      anlam: selected.anlam,
+      lehce: selected.lehce,
+      tarih: selected.tarih,
+      meta: selected.meta,
+    } satisfies GununKelimesi;
   } catch (error) {
     console.error('Günün kelimesi alınamadı:', error);
     return null;

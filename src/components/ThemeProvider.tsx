@@ -15,6 +15,7 @@ export function ThemeProviderWrapper({ children }: { children: React.ReactNode }
   const [theme, setTheme] = useState<Theme>('light');
 
   useEffect(() => {
+    // 1. Tema Ayarı
     const savedTheme = localStorage.getItem('theme') as Theme | null;
     const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
     
@@ -24,6 +25,19 @@ export function ThemeProviderWrapper({ children }: { children: React.ReactNode }
     } else {
       setTheme('light');
       document.documentElement.classList.remove('dark');
+    }
+
+    // 2. Font Boyutu Ayarı (Eklendi)
+    try {
+      const fontSize = localStorage.getItem('font-size');
+      if (fontSize) {
+        const size = parseInt(fontSize, 10);
+        if (!isNaN(size) && size >= 12 && size <= 22) {
+          document.documentElement.style.setProperty('--font-size-base', `${size}px`);
+        }
+      }
+    } catch (e) {
+      console.error('Font boyutu yüklenirken hata oluştu:', e);
     }
   }, []);
 
@@ -51,3 +65,5 @@ export const useTheme = () => {
   if (!context) throw new Error('useTheme must be used within ThemeProviderWrapper');
   return context;
 };
+
+export default ThemeProviderWrapper;

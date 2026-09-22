@@ -11,7 +11,9 @@
     "total_words": 15139,
     "sourceLanguage": "ady",
     "targetLanguage": "ady",
-    "confidence": "VERIFIED"
+    "confidence": "VERIFIED",
+    "shortLabel": "(AIG) (2006)",
+    "shortLabelKiril": "(AIG) (2006)"
   },
   {
     "file": "1.Ady-Ady_AP.json",
@@ -24,7 +26,9 @@
     "sourceLanguage": "ady",
     "targetLanguage": "ru",
     "confidence": "VERIFIED",
-    "publisher": "Maykop"
+    "publisher": "Maykop",
+    "shortLabel": "Apashev (2008)",
+    "shortLabelKiril": "Апашэу (2008)"
   },
   {
     "file": "10.En-Ady_Adam.json",
@@ -36,7 +40,9 @@
     "sourceLanguage": "en",
     "targetLanguage": "ady",
     "confidence": "HIGH",
-    "publisher": "Dijital Yayın"
+    "publisher": "Dijital Yayın",
+    "shortLabel": "Shagash (2020)",
+    "shortLabelKiril": "Shagash (2020)"
   },
   {
     "file": "11.En-Kbd-Jonty.json",
@@ -104,7 +110,9 @@
     "targetLanguage": "en",
     "confidence": "VERIFIED",
     "publisher": "San Marcos",
-    "total_words": 17127
+    "total_words": 17127,
+    "shortLabel": "Camuha) (1997)",
+    "shortLabelKiril": "Camuha) (1997)"
   },
   {
     "file": "18.Kbd-Ru&En.json",
@@ -116,7 +124,9 @@
     "sourceLanguage": "kbd",
     "targetLanguage": "ru",
     "confidence": "VERIFIED",
-    "publisher": "Dijital Veri Tabanı"
+    "publisher": "Dijital Veri Tabanı",
+    "shortLabel": "Kokov (2008)",
+    "shortLabelKiril": "Kokov (2008)"
   },
   {
     "file": "19.Kbd-Ru-2-Jonty.json",
@@ -137,7 +147,9 @@
     "sourceLanguage": "ady",
     "targetLanguage": "ar",
     "confidence": "VERIFIED",
-    "publisher": "Şam/Amman"
+    "publisher": "Şam/Amman",
+    "shortLabel": "Lash (2013)",
+    "shortLabelKiril": "Lash (2013)"
   },
   {
     "file": "20.Kbd-Ru-Jonty.json",
@@ -176,19 +188,22 @@
     "sourceLanguage": "ru",
     "targetLanguage": "ady",
     "confidence": "HIGH",
-    "publisher": "Maykop"
+    "publisher": "Maykop",
+    "shortLabel": "Blaghoj (1991)",
+    "shortLabelKiril": "Благъож (1991)"
   },
   {
     "file": "24.Rus-Ady_UAG.json",
     "title": "Русско-адыгейский словарь (Rusça-Adıgece Sözlük)",
     "dialect": "western",
-    "shortLabel": "Vodozhdokova (1960)",
+    "shortLabel": "Odezhdeko (1960)",
     "author": "U. A. Gethanoko, X. D. Odezhdeko",
     "year": "1960",
     "sourceLanguage": "ru",
     "targetLanguage": "ady",
     "publisher": "Maykop",
-    "total_words": 31322
+    "total_words": 31322,
+    "shortLabelKiril": "Odezhdeko (1960)"
   },
   {
     "file": "25.Rus-Ady_UASP.json",
@@ -199,7 +214,9 @@
     "targetLanguage": "ady",
     "publisher": "Maykop Eğitim Yayınları",
     "year": "1991",
-    "total_words": 9743
+    "total_words": 9743,
+    "shortLabel": "UASP (1991)",
+    "shortLabelKiril": "UASP (1991)"
   },
   {
     "file": "26.Tu-Kbd-Jonty.json",
@@ -220,7 +237,9 @@
     "total_words": 12350,
     "sourceLanguage": "tr",
     "targetLanguage": "ady",
-    "confidence": "VERIFIED"
+    "confidence": "VERIFIED",
+    "shortLabel": "Abaze (2005)",
+    "shortLabelKiril": "Абазэ (2005)"
   },
   {
     "file": "28.Tur-Ady_Huvaj.json",
@@ -231,7 +250,9 @@
     "targetLanguage": "ady",
     "publisher": "KAFDAV Yayınları",
     "year": "2007",
-    "total_words": 5381
+    "total_words": 5381,
+    "shortLabel": "Huvaj (2007)",
+    "shortLabelKiril": "Хъуваж (2007)"
   },
   {
     "file": "29.Tur-Ady_Teshu.json",
@@ -243,7 +264,9 @@
     "sourceLanguage": "tr",
     "targetLanguage": "ady",
     "confidence": "VERIFIED",
-    "publisher": "Maykop / Ankara"
+    "publisher": "Maykop / Ankara",
+    "shortLabel": "Hasan (1991)",
+    "shortLabelKiril": "Hasan (1991)"
   },
   {
     "file": "3.Ady-En.json",
@@ -259,13 +282,14 @@
     "file": "30.Ady-Rus_ThreeVolumes.json",
     "title": "Толковый словарь адыгейского языка в 3-х томах (3 Ciltlik Açıklamalı Sözlük)",
     "dialect": "western",
-    "shortLabel": "Tharkaho (1991)",
+    "shortLabel": "Enstitüsü (2011)",
     "author": "Adıgey Sosyal Bilimler Araştırma Enstitüsü",
     "year": "2011",
     "sourceLanguage": "ady",
     "targetLanguage": "ru",
     "publisher": "Maykop",
-    "total_words": 33491
+    "total_words": 33491,
+    "shortLabelKiril": "Enstitüsü (2011)"
   },
   {
     "file": "31.Tu-Ady_Hilmi.json",
@@ -277,7 +301,9 @@
     "sourceLanguage": "tr",
     "targetLanguage": "ady",
     "confidence": "VERIFIED",
-    "publisher": "KAFDAV Yayınları"
+    "publisher": "KAFDAV Yayınları",
+    "shortLabel": "Hilmi (2013)",
+    "shortLabelKiril": "Хьильмий (2013)"
   },
   {
     "file": "32.Rus-Kbd_Nalchik_2013.json",
@@ -289,7 +315,9 @@
     "total_words": 20640,
     "sourceLanguage": "ru",
     "targetLanguage": "kbd",
-    "confidence": "HIGH"
+    "confidence": "HIGH",
+    "shortLabel": "Enstitüsü (2013)",
+    "shortLabelKiril": "Enstitüsü (2013)"
   },
   {
     "file": "33.Ady-Rus-1960.json",
@@ -300,7 +328,9 @@
     "targetLanguage": "ru",
     "author": "J. A. Şıgaje (Baş Editör)",
     "publisher": "Moskova / Maykop",
-    "total_words": 15360
+    "total_words": 15360,
+    "shortLabel": "Editör) (1960)",
+    "shortLabelKiril": "Editör) (1960)"
   },
   {
     "file": "4.Ady-En_Adam.json",
@@ -312,7 +342,9 @@
     "sourceLanguage": "ady",
     "targetLanguage": "en",
     "confidence": "HIGH",
-    "publisher": "Dijital Yayın"
+    "publisher": "Dijital Yayın",
+    "shortLabel": "Adam) (2020)",
+    "shortLabelKiril": "Adam) (2020)"
   },
   {
     "file": "5.Ady-Rus_Qarden.json",
@@ -324,7 +356,8 @@
     "sourceLanguage": "kbd",
     "targetLanguage": "ru",
     "publisher": "Moskova",
-    "total_words": 19468
+    "total_words": 19468,
+    "shortLabelKiril": "Къардэн (1957)"
   },
   {
     "file": "6.Ady-Rus_Sherdjes.json",
@@ -337,7 +370,9 @@
     "sourceLanguage": "kbd",
     "targetLanguage": "ru",
     "confidence": "VERIFIED",
-    "publisher": "Nalçik"
+    "publisher": "Nalçik",
+    "shortLabel": "Aliy) (1994)",
+    "shortLabelKiril": "Aliy) (1994)"
   },
   {
     "file": "7.Ady-Rus_Tharkaho.json",
@@ -349,7 +384,9 @@
     "targetLanguage": "ru",
     "confidence": "VERIFIED",
     "publisher": "Maykop",
-    "year": "1991"
+    "year": "1991",
+    "shortLabel": "Yoxıyt) (1991)",
+    "shortLabelKiril": "Yoxıyt) (1991)"
   },
   {
     "file": "8.Ady-Tur_Huvaj.json",

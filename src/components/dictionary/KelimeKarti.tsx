@@ -1,8 +1,8 @@
-﻿'use client';
+'use client';
 
 import React from 'react';
 import { ChevronRight } from 'lucide-react';
-import type { KaynakItem } from '@/types/dictionary';
+import { KaynakItem } from "@/types/dictionary";
 
 export interface KelimeItem {
   id: string;
@@ -13,6 +13,10 @@ export interface KelimeItem {
   anlamlar?: string[];
   kaynaklar?: KaynakItem[];
   lehce?: string;
+  // ⭐ SSOT: kelimenin geçtiği tüm kaynak adları
+  kaynakAdlari?: string[];
+  hedefDillerSet?: string[];
+  hedefDilCanonical?: string;
 }
 
 export interface KelimeKartiProps {

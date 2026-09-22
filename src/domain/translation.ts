@@ -1,40 +1,84 @@
-// SSOT: types/dictionary.ts â€” tÃ¼m tipler oradan gelir
+// src/domain/translation.ts
 
+// ============================================================
+// ANLAM
+// ============================================================
 
-export type DialectType = import('../types/dictionary').DialectCode;
+export interface Meaning {
+  id?: string;
+  language?: string;
+  lang?: string;
+  text?: string;
+  value?: string;
+  meaning?: string;
+  [key: string]: any;
+}
 
-// domain/translation.ts içindeki TranslationEntry'ye word ve definition ekle
+export type TranslationMeaning = Meaning;
+
+// ============================================================
+// KAYNAK
+// ============================================================
+
+export interface KaynakItem {
+  id?: string;
+  title?: string;
+  name?: string;
+  url?: string;
+  [key: string]: any;
+}
+
+// ============================================================
+// TRANSLATION ENTRY (KANONİK)
+// ============================================================
+
 export interface TranslationEntry {
   id: string;
-  lemma: string;
-  word?: string;        // ← ekle
-  definition?: string;  // ← ekle
+  lemma: string;                 // ⚠️ ZORUNLU — test bunu bekliyor
   normalizedLemma?: string;
-  sourceWord?: string;
-  dialect?: string;
-  pos?: string;
+  word?: string;
   meaning?: string;
-  meanings?: import('../types/dictionary').TranslationMeaning[];
-  notes?: string;
+  meanings: Meaning[];
+  dialect?: string;
   groupId?: string;
-  frequency?: number;
-  createdAt?: Date;
-  updatedAt?: Date;
+  groupName?: string;
+  kaynaklar?: KaynakItem[];
+
+  // Drawer ve ek görünümler için:
+  cerkesce?: string;
+  concept?: string;
+  relatedTerms?: string[];
+  idioms?: string[];
+
+  [key: string]: any;
 }
 
-export interface SearchResult {
-  query: string;
-  results: import('../types/dictionary').TranslationEntry[];
-  totalCount: number;
+export type DictionaryEntry = TranslationEntry;
+
+// ============================================================
+// TRANSLATION GROUP
+// ============================================================
+
+export interface TranslationGroup {
+  id: string;
+  groaupId?: string;
+  groupName?: string;
+  entries: TranslationEntry[];
+  [key: string]: any;
 }
+
+export type LemmaGroup = TranslationGroup;
+
+// ============================================================
+// REPOSITORY ARAYÜZÜ
+// ============================================================
+
+export interface SearchOptions {
+  useDefaults?: boolean;
+}
+
 export interface TranslationRepository {
-  findById(id: string): Promise<TranslationEntry | null>;
-  search(query: string, targetLang?: string): Promise<TranslationEntry[]>;
-  searchByMeaning?(text: string, lang?: string): Promise<TranslationEntry[]>;
-  save(entry: TranslationEntry): Promise<void | TranslationEntry>;
-  saveBatch?(entries: TranslationEntry[]): Promise<void>;
-  clear?(): Promise<void> | void;
+  search(query: string, options?: SearchOptions): TranslationGroup[];
+  getById(id: string): TranslationEntry | undefined;
+  getAll(): TranslationEntry[];
 }
-
-
-export type { TranslationMeaning, TranslationGroup, LemmaGroup } from '../types/dictionary';

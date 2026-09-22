@@ -1,6 +1,11 @@
-import { DictionaryItem } from "@/types/dictionary";
+/**
+ * File: src/lib/worOfDay.ts
+ * Generated: 2026-09-19
+ * Layer: Service
+ */
+import { DictionaryEntry } from "@/types/dictionary";
 
-export function getWordOfDay(words: DictionaryItem[]): DictionaryItem | null {
+export function getWordOfDay(words: DictionaryEntry[]): DictionaryEntry | null {
   if (!words || words.length === 0) return null;
   const today = new Date().toISOString().slice(0, 10);
   let hash = 0;

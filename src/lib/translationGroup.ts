@@ -1,42 +1,22 @@
+/**
+ * File: src/lib/translationGroup.ts
+ * Generated: 2026-09-19
+ * Layer: Helper
+ */
+
 'use client';
 
-import type { 
-  GroupedDictionaryEntry, 
-  KaynakDetay, 
-  KelimeItem,
-  DictionaryEntry,
-  KaynakItem
-} from '@/types/dictionary';
+import type { DictionaryEntry, KaynakItem } from '@/types/dictionary';
+
+export interface GroupedDictionaryEntry extends Omit<DictionaryEntry, 'group'> {
+  group?: string;
+  meaning?: string;
+}
 
 export interface TranslationGroup {
   harf: string;
-  kelimeler: GroupedDictionaryEntry[];
+  kelimeler: DictionaryEntry[];
 }
-
-export type ExtendedKaynakItem = KaynakItem & {
-  sourceDictionaryId?: string;
-  source?: string;
-  sözlük?: string;
-  sozluk?: string;
-  id: string;
-  word: string;
-  meaning: string;
-  dictionaryId: string;
-  language?: string;
-  targetLanguage?: string;
-};
-
-export interface DictionaryRawItem {
-  dictionaryName?: string;  // ← ekle
-  // ... mevcut alanlar
-}
-
-export type ExtendedGroupedDictionaryEntry = GroupedDictionaryEntry & {
-  kaynaklar?: ExtendedKaynakItem[];
-  sourceDictionaryId?: string; 
-  source?: string; 
-  kaynak?: string; 
-};
 
 const CYRILLIC_REGEX = /[\u0400-\u04FF\u04CF]/i;
 
@@ -63,7 +43,6 @@ function getPlainDefinition(entry: any): string {
   if (!entry) return '—';
   const def0 = Array.isArray(entry.definitions) && entry.definitions.length > 0 ? entry.definitions[0] : null;
   
-  // Öncelik: 1) definitions[0].meaning/tanim 2) Düz string alanları 3) HTML tag temizleme
   let plain = String(
     def0?.meaning ||
     def0?.tanim ||
@@ -83,33 +62,16 @@ function getPlainDefinition(entry: any): string {
   return plain || '—';
 }
 
-function getHtmlDefinition(entry: any): string | undefined {
-  if (!entry) return undefined;
-  const def0 = Array.isArray(entry.definitions) && entry.definitions.length > 0 ? entry.definitions[0] : null;
-  const html = entry.full_definition_in_html || def0?.full_definition_in_html;
-  return html && String(html).trim() ? String(html).trim() : undefined;
-}
-
 function getSourceMeta(entry: any) {
   const sourceId = String(
-    entry.meta?.source ||
-    entry.file ||
-    entry.sourceDictionaryId ||
-    entry.kaynak ||
-    'Bilinmeyen Kaynak'
+    entry.meta?.source || entry.file || entry.sourceDictionaryId || entry.kaynak || 'Bilinmeyen Kaynak'
   );
   const title = String(
-    entry.meta?.title ||
-    entry.title ||
-    entry.sözlük ||
-    entry.sozluk ||
-    entry.kaynak_sozluk ||
-    entry.kaynak ||
-    entry.dictionaryName ||
-    sourceId
+    entry.meta?.title || entry.title || entry.sözlük || entry.sozluk || entry.kaynak_sozluk || entry.kaynak || entry.dictionaryName || sourceId
   );
   const author = entry.meta?.author || entry.author || entry.yazar;
   const year = entry.meta?.year || entry.year || entry.yil;
+  
   return { sourceId, title, author, year };
 }
 
@@ -119,7 +81,6 @@ function getCanonicalKey(entry: any): string {
 
   let keyBase = word;
 
-  // Başlık Latin ("su") fakat tanım Kiril ("ПСЫ") barındırıyorsa Kiril terimi kök anahtar al
   if (!CYRILLIC_REGEX.test(word) && CYRILLIC_REGEX.test(plain)) {
     const clean = plain.replace(/<[^>]*>/g, '');
     const match = clean.match(/[\u0400-\u04FF\u04cfIıӀ]+/gi);
@@ -138,114 +99,79 @@ function getCanonicalKey(entry: any): string {
 
 // --- GRUPLAMA FONKSİYONLARI ---
 
-export function groupTranslations(
-  entries: DictionaryEntry[]
-): GroupedDictionaryEntry[] {
-  const map = new Map<string, ExtendedGroupedDictionaryEntry>();
+export function groupTranslations(entries: any[]): GroupedDictionaryEntry[] {
+  const map = new Map<string, GroupedDictionaryEntry>();
 
-  entries.forEach((entry: any) => {
+  entries.forEach((entry) => {
     if (!entry) return;
 
     const displayWord = getDisplayWord(entry);
-    const plainDef = getPlainDefinition(entry);
-    const htmlDef = getHtmlDefinition(entry);
     const sourceMeta = getSourceMeta(entry);
     const groupKey = getCanonicalKey(entry);
+    const basePlainDef = getPlainDefinition(entry);
 
-    if (displayWord === '—' && plainDef === '—') return;
+    if (displayWord === '—' && basePlainDef === '—') return;
 
-    const yeniKaynak: ExtendedKaynakItem = {
-      id: entry.id,
-      word: entry.word,
-      dictionaryId: entry.dictionaryId,
-      tanim: plainDef,
-      meaning: plainDef,
-      full_definition_in_html: htmlDef,
-      file: sourceMeta.sourceId,
-      sourceDictionaryId: sourceMeta.sourceId,
-      kaynak: sourceMeta.title,
-      kaynak_sozluk: sourceMeta.title,
-      title: sourceMeta.title,
-      author: sourceMeta.author,
-      year: sourceMeta.year,
-    };
-
-    const eklenecekKaynaklar: ExtendedKaynakItem[] = [];
+    // Farklı alt kaynaklardan veya tanımlardan gelen anlamları topluyoruz
+    const meanings: string[] = [];
+    const groups: string[] = [];
 
     if (Array.isArray(entry.kaynaklar) && entry.kaynaklar.length > 0) {
-      eklenecekKaynaklar.push(...entry.kaynaklar);
-    } else if (Array.isArray(entry.definitions) && entry.definitions.length > 1) {
+      entry.kaynaklar.forEach((k: any) => {
+        meanings.push((k.tanim || k.meaning || basePlainDef).trim());
+        groups.push(k.kaynak || k.title || sourceMeta.title);
+      });
+    } else if (Array.isArray(entry.definitions) && entry.definitions.length > 0) {
       entry.definitions.forEach((def: any) => {
-        const defPlain = (def.meaning || def.tanim || plainDef).trim();
-        const defHtml = def.full_definition_in_html || htmlDef;
-        eklenecekKaynaklar.push({
-          id: entry.id,
-          word: entry.word,
-          dictionaryId: entry.dictionaryId,
-          tanim: defPlain,
-          meaning: defPlain,
-          full_definition_in_html: defHtml,
-          file: sourceMeta.sourceId,
-          sourceDictionaryId: sourceMeta.sourceId,
-          kaynak: sourceMeta.title,
-          kaynak_sozluk: sourceMeta.title,
-          title: sourceMeta.title,
-          author: sourceMeta.author,
-          year: sourceMeta.year,
-        });
+        meanings.push((def.meaning || def.tanim || basePlainDef).trim());
+        groups.push(sourceMeta.title);
       });
     } else {
-      eklenecekKaynaklar.push(yeniKaynak);
+      meanings.push(basePlainDef);
+      groups.push(sourceMeta.title);
     }
 
     if (!map.has(groupKey)) {
       map.set(groupKey, {
-        kelime: displayWord,
-        anlam: plainDef,
-        meaning: plainDef,
-        tanim: plainDef,
-        full_definition_in_html: htmlDef,
-        sourceDictionaryId: sourceMeta.sourceId,
-        source: sourceMeta.sourceId,
-        kaynak: sourceMeta.title,
-        kaynaklar: [...eklenecekKaynaklar],
-      });
-    } else {
-      const mevcutGrup = map.get(groupKey)!;
-      if (!mevcutGrup.kaynaklar) {
-        mevcutGrup.kaynaklar = [];
-      }
-
-      // Mevcut grubun başlığı Kiril değilse ancak yeni gelen veri Kiril ise başlığı güncelle
-      if (!CYRILLIC_REGEX.test(mevcutGrup.kelime || '') && CYRILLIC_REGEX.test(displayWord)) {
-        mevcutGrup.kelime = displayWord;
-      }
-
-      eklenecekKaynaklar.forEach((k) => {
-        const isDuplicate = mevcutGrup.kaynaklar!.some(
-          (m) =>
-            (m.title === k.title && m.tanim === k.tanim) ||
-            (m.kaynak === k.kaynak && m.tanim === k.tanim) ||
-            (m.file && k.file && m.file === k.file && m.tanim === k.tanim)
-        );
-
-        if (!isDuplicate) {
-          mevcutGrup.kaynaklar!.push(k);
-        }
+        ...entry,
+        id: entry.id || groupKey,
+        word: displayWord,
+        meaning: '',
+        group: ''
       });
     }
+
+    const mevcutGrup = map.get(groupKey)!;
+
+    // Eğer önceki başlık Latin, ancak yeni gelen başlık Kiril ise başlığı güncelle
+    if (!CYRILLIC_REGEX.test(mevcutGrup.word || '') && CYRILLIC_REGEX.test(displayWord)) {
+      mevcutGrup.word = displayWord;
+    }
+
+    // Anlamları arayüz bileşeninin ayrıştıracağı ` ◊ ` ayracıyla birleştir
+    meanings.forEach((m) => {
+      if (m && m !== '—' && !mevcutGrup.meaning?.includes(m)) {
+        mevcutGrup.meaning = mevcutGrup.meaning ? `${mevcutGrup.meaning} ◊ ${m}` : m;
+      }
+    });
+
+    // Kaynak sözlük isimlerini virgülle birleştirerek tek bir grupta topla
+    groups.forEach((g) => {
+      const groupText = typeof g === 'string' ? g : '';
+      if (groupText && groupText !== 'Bilinmeyen Kaynak' && !mevcutGrup.group?.includes(groupText)) {
+        mevcutGrup.group = mevcutGrup.group ? `${mevcutGrup.group}, ${groupText}` : groupText;
+      }
+    });
   });
 
-  return Array.from(map.values()) as GroupedDictionaryEntry[];
+  return Array.from(map.values());
 }
 
-export function createTranslationGroups(
-  entries: GroupedDictionaryEntry[]
-): TranslationGroup[] {
-  const groups = new Map<string, GroupedDictionaryEntry[]>();
+export function createTranslationGroups(entries: DictionaryEntry[]): TranslationGroup[] {
+  const groups = new Map<string, DictionaryEntry[]>();
 
   entries.forEach((entry) => {
-    const key = entry.kelime?.charAt(0).toUpperCase() || '?';
+    const key = entry.word?.charAt(0).toUpperCase() || '?';
     if (!groups.has(key)) {
       groups.set(key, []);
     }
@@ -256,29 +182,19 @@ export function createTranslationGroups(
     .sort(([a], [b]) => a.localeCompare(b))
     .map(([harf, kelimeler]) => ({
       harf,
-      kelimeler: kelimeler.sort((a, b) =>
-        (a.kelime || '').localeCompare(b.kelime || '')
-      ),
+      kelimeler: kelimeler.sort((a, b) => (a.word || '').localeCompare(b.word || ''))
     }));
 }
 
-export function formatKaynakDetay(kaynak: KaynakDetay | ExtendedKaynakItem | undefined): string {
+// Geriye dönük uyumluluk veya ham veri gösterimi için yardımcı formatlayıcı
+export function formatKaynakDetay(kaynak: any): string {
   if (!kaynak) return 'Bilinmeyen Kaynak';
 
-  const k = kaynak as any;
-  const title =
-    k.title ||
-    k.sözlük ||
-    k.sozluk ||
-    k.kaynak ||
-    k.dictionaryName ||
-    k.name ||
-    '';
-
-  const author = k.author || k.yazar || '';
-  const year = k.year || k.yil || '';
-
-  const totalWords = k.total_words || k.totalWords || k.kelimeSayisi;
+  const title = kaynak.title || kaynak.sözlük || kaynak.sozluk || kaynak.kaynak || kaynak.dictionaryName || kaynak.name || '';
+  const author = kaynak.author || kaynak.yazar || '';
+  const year = kaynak.year || kaynak.yil || '';
+  const totalWords = kaynak.total_words || kaynak.totalWords || kaynak.kelimeSayisi;
+  
   const formattedTotal = totalWords
     ? `${typeof totalWords === 'number' ? totalWords.toLocaleString('tr-TR') : totalWords} kelime`
     : '';
@@ -287,10 +203,11 @@ export function formatKaynakDetay(kaynak: KaynakDetay | ExtendedKaynakItem | und
   return parts.length > 0 ? parts.join(' | ') : 'Bilinmeyen Kaynak';
 }
 
-export function extractDefinition(entry: GroupedDictionaryEntry): string {
-  return getPlainDefinition(entry);
+export function extractDefinition(entry: GroupedDictionaryEntry | DictionaryEntry): string {
+  return (entry as GroupedDictionaryEntry).meaning || entry.meaning || '—';
 }
 
-export function extractSource(entry: GroupedDictionaryEntry): string {
-  return getSourceMeta(entry).title;
+export function extractSource(entry: GroupedDictionaryEntry | DictionaryEntry): string {
+  const g = (entry as GroupedDictionaryEntry).group;
+  return typeof g === 'string' ? g : 'Bilinmeyen Kaynak';
 }
