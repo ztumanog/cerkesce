@@ -27,9 +27,7 @@ jobs:
         run: npx tsc --noEmit
 
       - name: 2. Test Otomasyonu (Vitest Active Tests)
-        run: npm test -- --run
+        run: npm test
 
       - name: 3. Üretim Derleme Kontrolü (Build Gate Check)
         run: npm run build
-              - name: 2. Test Otomasyonu (Vitest Active Tests)
-        run: npm test
