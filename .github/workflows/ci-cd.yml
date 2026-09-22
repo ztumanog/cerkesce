@@ -1,4 +1,4 @@
-name: Çerkesçe Platformu CI/CD Pipeline
+name: Cerkesce Platformu CI/CD Pipeline
 
 on:
   push:
@@ -11,23 +11,23 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Kodu Çek (Checkout)
+      - name: Kodu Cek (Checkout)
         uses: actions/checkout@v4
 
-      - name: Node.js Ortamını Hazırla
+      - name: Node.js Ortamini Hazirla
         uses: actions/setup-node@v4
         with:
           node-version: '20'
           cache: 'npm'
 
-      - name: Bağımlılıkları Yükle
+      - name: Bagimliliklari Yukle
         run: npm ci
 
-      - name: 1. Statik Tip Kontrolü (TypeScript Check)
+      - name: 1. Statik Tip Kontrolu (TypeScript Check)
         run: npx tsc --noEmit
 
       - name: 2. Test Otomasyonu (Vitest Active Tests)
         run: npm test
 
-      - name: 3. Üretim Derleme Kontrolü (Build Gate Check)
+      - name: 3. Uretim Derleme Kontrolu (Build Gate Check)
         run: npm run build
