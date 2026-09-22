@@ -1,0 +1,20 @@
+[
+  {
+    "file": "adige_dict_001",
+    "title": "Adıgece Sözlüğü",
+    "dialect": "Adigece",
+    "author": "Bilinmeyen",
+    "year": "2024",
+    "total_words": 5000,
+    "active": true
+  },
+  {
+    "file": "kabard_dict_001",
+    "title": "Kabardeyce Sözlüğü",
+    "dialect": "Kabardeyce",
+    "author": "Bilinmeyen",
+    "year": "2024",
+    "total_words": 3000,
+    "active": true
+  }
+]
