@@ -2,7 +2,12 @@
 
 import React, { useEffect, useState, useCallback } from 'react';
 import { toast } from 'sonner';
-import { selectDailyWord, getTodayDateString } from '@/utils/dailyWordEngine';
+import Link from 'next/link';
+import {
+  selectDailyWord,
+  selectMultipleDailyWords,
+  getTodayDateString,
+} from '@/utils/dailyWordEngine';
 import type { GununKelimesi } from '@/types/dictionary';
 import type { RawDictionaryEntry } from '@/utils/dailyWordEngine';
 
@@ -87,6 +92,8 @@ export default function GununKelimesiKart({
   className = '',
 }: GununKelimesiKartProps) {
   const [bugunKelimesi, setBugunKelimesi] = useState<GununKelimesi | null>(null);
+  const [digerKelimeler, setDigerKelimeler] = useState<GununKelimesi[]>([]);
+  const [acikKelimeId, setAcikKelimeId] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);
   const [saved, setSaved] = useState(false);
   const [shareLoading, setShareLoading] = useState(false);
@@ -122,6 +129,12 @@ export default function GununKelimesiKart({
       } else {
         console.warn('⚠️ Kelime seçilemedi');
       }
+
+      // ⭐ Diğer 4 kelime (günün kelimesi hariç)
+      const digerleri = selectMultipleDailyWords(kelimeler, 6, today)
+        .filter((k) => k.id !== selected?.id)
+        .slice(0, 4);
+      setDigerKelimeler(digerleri);
 
       setLoading(false);
     };
@@ -264,7 +277,7 @@ export default function GununKelimesiKart({
       </summary>
 
       <div className="px-4 pb-4 sm:px-6 sm:pb-6">
-        {/* ⭐ ÖRNEK KULLANIM */}
+        {/* ÖRNEK KULLANIM */}
         {ornekler && ornekler.length > 0 && (
           <div className="mt-2 sm:mt-4 pt-3 sm:pt-4 border-t border-indigo-200 dark:border-indigo-800">
             <div className="text-xs font-bold uppercase tracking-wider text-indigo-600 dark:text-indigo-300 mb-2">
@@ -301,15 +314,6 @@ export default function GununKelimesiKart({
           </footer>
         )}
 
-        {meta?.seviye && (
-          <div className="mt-2 text-xs text-slate-500 dark:text-slate-400">
-            <span>📚 Seviye: </span>
-            <span className="text-slate-700 dark:text-slate-300 font-medium">
-              {meta.seviye}
-            </span>
-          </div>
-        )}
-
         {/* PAYLAŞ + KAYDET */}
         <div className="mt-4 pt-3 border-t border-indigo-200 dark:border-indigo-800 flex flex-wrap items-center gap-2">
           <button
@@ -325,15 +329,99 @@ export default function GununKelimesiKart({
           <button
             type="button"
             onClick={handleSave}
-            className={`flex items-center gap-1.5 px-3.5 py-2 rounded-lg text-xs font-semibold transition-colors border ${saved
-              ? 'bg-emerald-600 text-white border-emerald-600 hover:bg-emerald-700'
-              : 'bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-200 border-slate-300 dark:border-slate-700 hover:border-emerald-500 hover:text-emerald-600 dark:hover:text-emerald-400'
-              }`}
+            className={`flex items-center gap-1.5 px-3.5 py-2 rounded-lg text-xs font-semibold transition-colors border ${
+              saved
+                ? 'bg-emerald-600 text-white border-emerald-600 hover:bg-emerald-700'
+                : 'bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-200 border-slate-300 dark:border-slate-700 hover:border-emerald-500 hover:text-emerald-600 dark:hover:text-emerald-400'
+            }`}
           >
             <span>{saved ? '✅' : '💾'}</span>
             <span>{saved ? 'Kaydedildi' : 'Kaydet'}</span>
           </button>
         </div>
+
+<Link
+  href="/kaydedilenler"
+  className="flex items-center gap-1.5 px-3.5 py-2 rounded-lg text-xs font-semibold bg-indigo-600 text-white border border-indigo-600 hover:bg-indigo-700 transition-colors"
+>
+  <span>📚</span>
+  <span>Kaydedilenler</span>
+</Link>
+        {/* ⭐ DİĞER KELİMELER */}
+        {digerKelimeler.length > 0 && (
+          <div className="mt-4 pt-4 border-t border-indigo-200 dark:border-indigo-800">
+            <div className="text-xs font-bold uppercase tracking-wider text-indigo-600 dark:text-indigo-300 mb-3">
+              🌟 Diğer Kelimeler
+            </div>
+            <div className="space-y-2">
+              {digerKelimeler.map((kelimeItem) => (
+                <div
+                  key={kelimeItem.id}
+                  className="rounded-lg border border-indigo-200 dark:border-indigo-800 bg-white/60 dark:bg-slate-900/40 overflow-hidden transition-all hover:shadow-sm"
+                >
+                  <button
+                    type="button"
+                    onClick={() =>
+                      setAcikKelimeId(
+                        acikKelimeId === kelimeItem.id ? null : kelimeItem.id
+                      )
+                    }
+                    className="w-full text-left p-3 flex items-center justify-between gap-2 hover:bg-indigo-50/50 dark:hover:bg-indigo-950/30 transition-colors"
+                  >
+                    <div className="flex-1 min-w-0">
+                      <div className="flex items-center gap-2">
+                        <span className="font-bold text-sm text-indigo-900 dark:text-indigo-100 truncate">
+                          {kelimeItem.kelime}
+                        </span>
+                        {kelimeItem.lehce && (
+                          <span className="text-[10px] px-1.5 py-0.5 rounded bg-indigo-100 dark:bg-indigo-900/60 text-indigo-700 dark:text-indigo-300 shrink-0">
+                            {kelimeItem.lehce}
+                          </span>
+                        )}
+                      </div>
+                      <p className="text-xs text-slate-600 dark:text-slate-400 truncate mt-0.5">
+                        {kelimeItem.anlam}
+                      </p>
+                    </div>
+                    <span
+                      className={`text-[10px] text-indigo-500 transition-transform ${
+                        acikKelimeId === kelimeItem.id ? 'rotate-90' : ''
+                      }`}
+                    >
+                      ▶
+                    </span>
+                  </button>
+
+                  {acikKelimeId === kelimeItem.id && (
+                    <div className="px-3 pb-3 space-y-2 border-t border-indigo-100 dark:border-indigo-900/50 pt-2">
+                      {kelimeItem.ornekler && kelimeItem.ornekler.length > 0 ? (
+                        <div>
+                          <div className="text-[10px] font-bold uppercase tracking-wider text-indigo-500 dark:text-indigo-400 mb-1">
+                            💬 Örnek
+                          </div>
+                          <ul className="space-y-1">
+                            {kelimeItem.ornekler.map((ornekItem, idx) => (
+                              <li
+                                key={idx}
+                                className="text-xs text-slate-700 dark:text-slate-300 pl-2 border-l-2 border-indigo-300 dark:border-indigo-700"
+                              >
+                                {ornekItem}
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      ) : (
+                        <p className="text-xs text-slate-500 dark:text-slate-400 italic">
+                          Örnek yok
+                        </p>
+                      )}
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
       </div>
     </details>
   );

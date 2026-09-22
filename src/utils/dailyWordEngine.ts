@@ -82,6 +82,63 @@ export function selectDailyWord(
   };
 }
 
+/**
+ * Belirli bir tarih için birden fazla kelime seçer.
+ */
+export function selectMultipleDailyWords(
+  entries: RawDictionaryEntry[],
+  count: number = 5,
+  dateString?: string
+): DailyWord[] {
+  const candidates = entries.filter(isDailyWordCandidate);
+
+  if (candidates.length === 0) return [];
+
+  const date = dateString || new Date().toISOString().split('T')[0];
+  const secilenler: DailyWord[] = [];
+  const kullanilanIndexler = new Set<number>();
+
+  for (let i = 0; i < count && secilenler.length < candidates.length; i++) {
+    const hash = fnv1aHash(`${date}-${i}`);
+    let index = hash % candidates.length;
+
+    let deneme = 0;
+    while (kullanilanIndexler.has(index) && deneme < candidates.length) {
+      index = (index + 1) % candidates.length;
+      deneme++;
+    }
+
+    if (kullanilanIndexler.has(index)) break;
+    kullanilanIndexler.add(index);
+
+    const selected = candidates[index];
+
+    let ornekler: string[] = [];
+    if (selected.ornekler && selected.ornekler.length > 0) {
+      ornekler = selected.ornekler;
+    } else if (selected.ornekCumle) {
+      ornekler = [selected.ornekCumle];
+    } else if (selected.examples && selected.examples.length > 0) {
+      ornekler = selected.examples.map((ex) => ex.text);
+    }
+
+    secilenler.push({
+      id: selected.id,
+      kelime: selected.lemma,
+      anlam: selected.translation,
+      lehce: selected.dialect || 'Bilinmeyen',
+      tarih: date,
+      ornekler: ornekler.length > 0 ? ornekler : undefined,
+      meta: {
+        kategori: selected.etymology || 'Etimoloji bilinmiyor',
+        notlar: ornekler[0] || 'Örnek cümle yok',
+      },
+    });
+  }
+
+  return secilenler;
+}
+
 export function getTodayDateString(): string {
   return new Date().toISOString().split('T')[0];
 }
