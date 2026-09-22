@@ -1,12 +1,14 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import { X, Download, Share2, Square, Smartphone } from 'lucide-react';
+import { X, Share2, Download, Copy, Square, Smartphone } from 'lucide-react';
 import {
   olusturPaylasimGorseli,
   indirBlob,
   type PaylasimGorseliOptions,
 } from '@/lib/paylasimGorseli';
+import { Share } from '@capacitor/share';
+import { Capacitor } from '@capacitor/core';
 import { toast } from 'sonner';
 
 interface PaylasimGorseliModalProps {
@@ -23,7 +25,10 @@ export default function PaylasimGorseliModal({
   const [boyut, setBoyut] = useState<'kare' | 'story'>('kare');
   const [previewUrl, setPreviewUrl] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
+  const [shareLoading, setShareLoading] = useState(false);
+  const [indirLoading, setIndirLoading] = useState(false);
 
+  // Önizleme oluştur
   useEffect(() => {
     if (!isOpen) return;
 
@@ -61,41 +66,128 @@ export default function PaylasimGorseliModal({
 
   if (!isOpen) return null;
 
-  const handleIndir = async () => {
+  // ═══════════════════════════════════════════════════════════
+  // 1. PAYLAŞ (Capacitor Share - Android/iOS + Web Share API)
+  // ═══════════════════════════════════════════════════════════
+  const handlePaylas = async () => {
+    setShareLoading(true);
     try {
       const blob = await olusturPaylasimGorseli({ ...kelime, boyut });
       const dosyaAdi = `gunun-kelimesi-${kelime.kelime}-${boyut}.png`;
-      indirBlob(blob, dosyaAdi);
-      toast.success('Görsel indirildi');
-    } catch {
-      toast.error('İndirme başarısız');
-    }
-  };
 
-  const handlePaylas = async () => {
-    if (typeof navigator === 'undefined' || !navigator.share) {
-      toast.error('Paylaşım desteklenmiyor');
-      return;
-    }
-    try {
-      const blob = await olusturPaylasimGorseli({ ...kelime, boyut });
-      const file = new File([blob], `gunun-kelimesi-${kelime.kelime}.png`, {
-        type: 'image/png',
-      });
-
-      if (navigator.canShare && navigator.canShare({ files: [file] })) {
-        await navigator.share({
-          files: [file],
-          title: 'Günün Kelimesi',
-          text: `${kelime.kelime} — ${kelime.anlam}`,
+      // ═══ ANDROID / iOS: Capacitor Share ═══
+      if (Capacitor.isNativePlatform()) {
+        // Blob → base64
+        const base64 = await new Promise<string>((resolve, reject) => {
+          const reader = new FileReader();
+          reader.onloadend = () => resolve(reader.result as string);
+          reader.onerror = reject;
+          reader.readAsDataURL(blob);
         });
-      } else {
-        toast.error('Dosya paylaşımı desteklenmiyor');
+        const base64Data = base64.split(',')[1];
+
+        // Filesystem ile Cache klasörüne yaz (paylaşım için)
+        const { Filesystem, Directory } = await import('@capacitor/filesystem');
+        const sonuc = await Filesystem.writeFile({
+          path: dosyaAdi,
+          data: base64Data,
+          directory: Directory.Cache,
+          recursive: true,
+        });
+
+        // Native paylaşım menüsünü aç
+        await Share.share({
+          title: 'Günün Kelimesi',
+          text: `${kelime.kelime} — ${kelime.anlam}\n\n🔗 acikmektep.com`,
+          url: sonuc.uri,
+          dialogTitle: 'Paylaş',
+        });
+
+        return;
       }
+
+      // ═══ WEB: Web Share API ═══
+      if (
+        typeof navigator === 'undefined' ||
+        !navigator.share ||
+        !navigator.canShare
+      ) {
+        toast.error('Paylaşım desteklenmiyor');
+        return;
+      }
+
+      const file = new File([blob], dosyaAdi, { type: 'image/png' });
+
+      if (!navigator.canShare({ files: [file] })) {
+        toast.error('Dosya paylaşımı desteklenmiyor');
+        return;
+      }
+
+      await navigator.share({
+        files: [file],
+        title: 'Günün Kelimesi',
+        text: `${kelime.kelime} — ${kelime.anlam}\n\n🔗 acikmektep.com`,
+      });
     } catch (err: any) {
       if (err?.name !== 'AbortError') {
         console.error('Paylaşım hatası:', err);
+        toast.error('Paylaşım başarısız');
       }
+    } finally {
+      setShareLoading(false);
+    }
+  };
+
+  // ═══════════════════════════════════════════════════════════
+  // 2. İNDİR (Filesystem — P-Code)
+  // ═══════════════════════════════════════════════════════════
+  const handleIndir = async () => {
+    setIndirLoading(true);
+    try {
+      const blob = await olusturPaylasimGorseli({ ...kelime, boyut });
+      const dosyaAdi = `gunun-kelimesi-${kelime.kelime}-${boyut}.png`;
+      await indirBlob(blob, dosyaAdi);
+
+      if (Capacitor.isNativePlatform()) {
+        toast.success('Görsel indirildi: Documents/ klasörü');
+      } else {
+        toast.success('Görsel indirildi');
+      }
+    } catch (err) {
+      console.error('İndirme hatası:', err);
+      toast.error('İndirme başarısız');
+    } finally {
+      setIndirLoading(false);
+    }
+  };
+
+  // ═══════════════════════════════════════════════════════════
+  // 3. METNİ KOPYALA
+  // ═══════════════════════════════════════════════════════════
+  const handleMetniKopyala = async () => {
+    const metin = [
+      '🎓 Açık Mektep Çerkesçe Sözlük',
+      '',
+      `📖 ${kelime.kelime}`,
+      `🇹🇷 ${kelime.anlam}`,
+      kelime.ornekler && kelime.ornekler.length > 0
+        ? `\n💬 Örnekler:\n${kelime.ornekler.map((o) => `  • ${o}`).join('\n')}`
+        : '',
+      '',
+      '🔗 acikmektep.com',
+    ]
+      .filter(Boolean)
+      .join('\n');
+
+    try {
+      if (navigator.clipboard) {
+        await navigator.clipboard.writeText(metin);
+        toast.success('Metin kopyalandı');
+      } else {
+        toast.error('Kopyalama desteklenmiyor');
+      }
+    } catch {
+      toast.error('Kopyalama başarısız');
     }
   };
 
@@ -141,7 +233,7 @@ export default function PaylasimGorseliModal({
             }`}
           >
             <Square size={14} />
-            Kare (1080×1080)
+            Kare
           </button>
           <button
             type="button"
@@ -153,7 +245,7 @@ export default function PaylasimGorseliModal({
             }`}
           >
             <Smartphone size={14} />
-            Story (1080×1920)
+            Story
           </button>
         </div>
 
@@ -175,25 +267,49 @@ export default function PaylasimGorseliModal({
         </div>
 
         {/* BUTONLAR */}
-        <div className="p-4 flex gap-2 border-t border-slate-700">
-          <button
-            type="button"
-            onClick={handleIndir}
-            disabled={loading || !previewUrl}
-            className="flex-1 flex items-center justify-center gap-2 py-3 rounded-lg bg-indigo-600 text-white text-sm font-semibold hover:bg-indigo-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
-          >
-            <Download size={16} />
-            İndir
-          </button>
+        <div className="p-4 space-y-2 border-t border-slate-700">
+          {/* 1. PAYLAŞ */}
           <button
             type="button"
             onClick={handlePaylas}
-            disabled={loading || !previewUrl}
-            className="flex-1 flex items-center justify-center gap-2 py-3 rounded-lg bg-emerald-600 text-white text-sm font-semibold hover:bg-emerald-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+            disabled={loading || shareLoading || !previewUrl}
+            className="w-full flex items-center justify-center gap-2 py-3 rounded-lg bg-emerald-600 text-white text-sm font-semibold hover:bg-emerald-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
           >
             <Share2 size={16} />
-            Paylaş
+            {shareLoading ? 'Paylaşılıyor...' : 'Paylaş'}
           </button>
+
+          {/* 2. İNDİR */}
+          <button
+            type="button"
+            onClick={handleIndir}
+            disabled={loading || indirLoading || !previewUrl}
+            className="w-full flex items-center justify-center gap-2 py-3 rounded-lg bg-indigo-600 text-white text-sm font-semibold hover:bg-indigo-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+          >
+            <Download size={16} />
+            {indirLoading ? 'İndiriliyor...' : 'İndir'}
+          </button>
+
+          {/* 3. METNİ KOPYALA */}
+          <button
+            type="button"
+            onClick={handleMetniKopyala}
+            disabled={loading}
+            className="w-full flex items-center justify-center gap-2 py-3 rounded-lg bg-slate-800 text-slate-200 text-sm font-semibold hover:bg-slate-700 disabled:opacity-50 transition-colors"
+          >
+            <Copy size={16} />
+            Metni Kopyala
+          </button>
+        </div>
+
+        {/* BİLGİ */}
+        <div className="px-4 pb-4 text-center space-y-1">
+          <p className="text-[11px] text-slate-500">
+            📱 <strong>Paylaş:</strong> WhatsApp, Telegram, Instagram...
+          </p>
+          <p className="text-[11px] text-slate-500">
+            💾 <strong>İndir:</strong> Documents/ klasörüne kaydeder
+          </p>
         </div>
       </div>
     </div>

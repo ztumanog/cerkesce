@@ -3,6 +3,9 @@
  * @description Canvas API ile kelime kartı görseli oluşturur.
  */
 
+import { Capacitor } from '@capacitor/core';
+import { Filesystem, Directory } from '@capacitor/filesystem';
+
 export interface PaylasimGorseliOptions {
   kelime: string;
   anlam: string;
@@ -62,7 +65,7 @@ export async function olusturPaylasimGorseli(
   ctx.lineTo(boyut.width * 0.8, boyut.height * 0.2);
   ctx.stroke();
 
-  // ═══ KELİME (büyük) ═══
+  // ═══ KELİME ═══
   ctx.fillStyle = '#ffffff';
   ctx.font = 'bold 96px Georgia, "Times New Roman", serif';
   ctx.textAlign = 'center';
@@ -114,7 +117,6 @@ export async function olusturPaylasimGorseli(
       const truncated = ornek.length > 50 ? ornek.slice(0, 47) + '...' : ornek;
       const y = ornekStartY + 50 + i * 45;
 
-      // Sol çizgi
       ctx.strokeStyle = 'rgba(255, 255, 255, 0.4)';
       ctx.lineWidth = 3;
       ctx.beginPath();
@@ -145,9 +147,30 @@ export async function olusturPaylasimGorseli(
 }
 
 /**
- * Blob'u indir.
+ * Blob'u indir — Android/iOS'ta Filesystem API, web'de <a download> kullanır.
  */
-export function indirBlob(blob: Blob, dosyaAdi: string): void {
+export async function indirBlob(blob: Blob, dosyaAdi: string): Promise<void> {
+  // ═══ ANDROID / iOS: Filesystem API ═══
+  if (Capacitor.isNativePlatform()) {
+    try {
+      const base64 = await blobToBase64(blob);
+      const base64Data = base64.split(',')[1]; // "data:image/png;base64," kısmını at
+
+      await Filesystem.writeFile({
+        path: dosyaAdi,
+        data: base64Data,
+        directory: Directory.Documents,   // ⭐ /Documents/ klasörü
+        recursive: true,
+      });
+
+      return;
+    } catch (err) {
+      console.error('Filesystem yazma hatası:', err);
+      throw err;
+    }
+  }
+
+  // ═══ WEB: Standart indirme ═══
   const url = URL.createObjectURL(blob);
   const link = document.createElement('a');
   link.href = url;
@@ -156,4 +179,16 @@ export function indirBlob(blob: Blob, dosyaAdi: string): void {
   link.click();
   document.body.removeChild(link);
   URL.revokeObjectURL(url);
+}
+
+/**
+ * Blob'u base64 string'e çevirir.
+ */
+function blobToBase64(blob: Blob): Promise<string> {
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.onloadend = () => resolve(reader.result as string);
+    reader.onerror = reject;
+    reader.readAsDataURL(blob);
+  });
 }
