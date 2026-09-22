@@ -120,7 +120,16 @@ export interface GununKelimesi {
   meaning?: string;
   kelime?: any;
   anlam?: any;
+  lehce?: string;
+  tarih?: string;
   date?: string;
+  ornekler?: string[];   // ⭐ YENİ
+  meta?: {
+    seviye?: string;
+    kategori?: string;
+    notlar?: string;
+    [key: string]: any;
+  };
   entry?: TranslationEntry;
   [key: string]: any;
 }

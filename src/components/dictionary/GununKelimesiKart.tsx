@@ -38,38 +38,6 @@ const KELIMELER_VERITABANI: RawDictionaryEntry[] = [
     examples: [{ text: 'Адыгабзэ щIалэ.', translation: 'Adıgece güzeldir.' }],
     etymology: 'Adıgece + dil anlamında',
   },
-  {
-    id: '4',
-    lemma: 'нарт',
-    translation: 'Kahraman, efsanevi figür',
-    dialect: 'Kabardeyce',
-    examples: [{ text: 'Нартхэр щIалэ.', translation: 'Nartlar efsanevi.' }],
-    etymology: 'Eski Kafkas mitolojisinden',
-  },
-  {
-    id: '5',
-    lemma: 'къэбэрдей',
-    translation: 'Kabarday, Kabardeyce',
-    dialect: 'Kabardeyce',
-    examples: [{ text: 'Къэбэрдей хабзэ.', translation: 'Kabarday geleneği.' }],
-    etymology: 'Kafkas kökenli',
-  },
-  {
-    id: '6',
-    lemma: 'адыгэ хабзэ',
-    translation: 'Adıgece geleneği, adab-ı muaşeret',
-    dialect: 'Adigece',
-    examples: [{ text: 'Адыгэ хабзэ щIалэ.', translation: 'Adıgece geleneği güzeldir.' }],
-    etymology: 'Adıgece + gelenek',
-  },
-  {
-    id: '7',
-    lemma: 'къэбэрдей хабзэ',
-    translation: 'Kabarday geleneği',
-    dialect: 'Kabardeyce',
-    examples: [{ text: 'Къэбэрдей хабзэ щIалэ.', translation: 'Kabarday geleneği güzeldir.' }],
-    etymology: 'Kabarday + gelenek',
-  },
 ];
 
 const ABAZE_SOZLUK_DOSYASI = '/data/27.Tur-Ady_Abaze.json';
@@ -96,15 +64,18 @@ async function abazeSozlugunuYukle(): Promise<RawDictionaryEntry[]> {
       const item = value as { spelling?: string; full_definition_in_html?: string };
       const ham = htmlMetniniCikar(item.full_definition_in_html);
 
-      // ◊ isaretine gore anlam ve ornek cumleyi ayir
       const parcalar = ham.split('◊');
-      const anlam = parcalar[0].trim();
-      const ornekCumle = parcalar.slice(1).join('◊').trim();
+      const anlam = parcalar[0].trim().replace(/[,;]\s*$/, '');
+      const ornekler = parcalar
+        .slice(1)
+        .map((p) => p.trim().replace(/^[-–—]\s*/, ''))
+        .filter((p) => p.length > 0);
+
       return {
         id,
         lemma: item.spelling || id,
         translation: anlam,
-        ornekCumle: ornekCumle || undefined,
+        ornekler: ornekler.length > 0 ? ornekler : undefined,
         dialect: 'Adigece',
       };
     })
@@ -146,21 +117,8 @@ export default function GununKelimesiKart({
       const selected = selectDailyWord(kelimeler, today);
 
       if (selected) {
-        const kelime: GununKelimesi = {
-          id: selected.id,
-          kelime: selected.kelime,
-          anlam: selected.anlam,
-          lehce: selected.lehce,
-          tarih: selected.tarih,
-          meta: {
-            seviye: 'Başlangıç',
-            kategori: selected.meta?.kategori,
-            notlar: selected.meta?.notlar,
-          },
-        };
-
-        setBugunKelimesi(kelime);
-        console.log('✅ Günün Kelimesi Seçildi:', kelime.kelime);
+        setBugunKelimesi(selected);
+        console.log('✅ Günün Kelimesi Seçildi:', selected.kelime);
       } else {
         console.warn('⚠️ Kelime seçilemedi');
       }
@@ -175,7 +133,6 @@ export default function GununKelimesiKart({
     };
   }, [veri]);
 
-  // Kayıtlı mı kontrolü
   const isSavedInStorage = useCallback((kelimeId: string): boolean => {
     if (typeof window === 'undefined') return false;
     try {
@@ -194,7 +151,6 @@ export default function GununKelimesiKart({
     }
   }, [bugunKelimesi, isSavedInStorage]);
 
-  // PAYLAŞ
   const handleShare = useCallback(async () => {
     if (!bugunKelimesi) return;
     setShareLoading(true);
@@ -204,7 +160,11 @@ export default function GununKelimesiKart({
       '',
       `📖 Kelime: ${bugunKelimesi.kelime}`,
       `🇹🇷 Anlam: ${bugunKelimesi.anlam || '—'}`,
-      bugunKelimesi.meta?.notlar ? `💬 Örnek: ${bugunKelimesi.meta.notlar}` : '',
+      bugunKelimesi.ornekler && bugunKelimesi.ornekler.length > 0
+        ? `💬 Örnek:\n${bugunKelimesi.ornekler.map((o) => `  • ${o}`).join('\n')}`
+        : bugunKelimesi.meta?.notlar
+          ? `💬 Örnek: ${bugunKelimesi.meta.notlar}`
+          : '',
       '',
       '🔗 https://acikmektep.com',
     ]
@@ -235,7 +195,6 @@ export default function GununKelimesiKart({
     }
   }, [bugunKelimesi]);
 
-  // KAYDET
   const handleSave = useCallback(() => {
     if (!bugunKelimesi) return;
 
@@ -253,6 +212,7 @@ export default function GununKelimesiKart({
           id: bugunKelimesi.id,
           kelime: bugunKelimesi.kelime,
           anlam: bugunKelimesi.anlam,
+          ornekler: bugunKelimesi.ornekler || [],
           ornek: bugunKelimesi.meta?.notlar || '',
           tarih: bugunKelimesi.tarih,
           kaydedilmeTarihi: new Date().toISOString(),
@@ -277,7 +237,7 @@ export default function GununKelimesiKart({
     );
   }
 
-  const { kelime, anlam, lehce, meta } = bugunKelimesi;
+  const { kelime, anlam, lehce, meta, ornekler } = bugunKelimesi;
 
   return (
     <details
@@ -304,7 +264,27 @@ export default function GununKelimesiKart({
       </summary>
 
       <div className="px-4 pb-4 sm:px-6 sm:pb-6">
-        {meta?.notlar && (
+        {/* ⭐ ÖRNEK KULLANIM */}
+        {ornekler && ornekler.length > 0 && (
+          <div className="mt-2 sm:mt-4 pt-3 sm:pt-4 border-t border-indigo-200 dark:border-indigo-800">
+            <div className="text-xs font-bold uppercase tracking-wider text-indigo-600 dark:text-indigo-300 mb-2">
+              💬 Örnek Kullanım
+            </div>
+            <ul className="space-y-1.5">
+              {ornekler.map((ornek, idx) => (
+                <li
+                  key={idx}
+                  className="text-sm text-slate-700 dark:text-slate-300 leading-relaxed pl-3 border-l-2 border-indigo-300 dark:border-indigo-700"
+                >
+                  {ornek}
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+
+        {/* Yedek: meta.notlar */}
+        {(!ornekler || ornekler.length === 0) && meta?.notlar && (
           <figure className="mt-2 sm:mt-4 pt-3 sm:pt-4 border-t border-indigo-200 dark:border-indigo-800 bg-white/50 dark:bg-slate-900/30 p-3 rounded-xl">
             <blockquote className="text-sm font-medium text-slate-800 dark:text-slate-200 italic">
               &ldquo;{meta.notlar}&rdquo;
@@ -312,9 +292,9 @@ export default function GununKelimesiKart({
           </figure>
         )}
 
-        {meta?.kategori && (
+        {meta?.kategori && meta.kategori !== 'Etimoloji bilinmiyor' && (
           <footer className="mt-3 sm:mt-4 text-xs text-slate-500 dark:text-slate-400">
-            <span>📖 Etymoloji: </span>
+            <span>📖 Etimoloji: </span>
             <span className="text-slate-700 dark:text-slate-300 font-medium">
               {meta.kategori}
             </span>
@@ -330,7 +310,7 @@ export default function GununKelimesiKart({
           </div>
         )}
 
-        {/* PAYLAŞ + KAYDET BUTONLARI */}
+        {/* PAYLAŞ + KAYDET */}
         <div className="mt-4 pt-3 border-t border-indigo-200 dark:border-indigo-800 flex flex-wrap items-center gap-2">
           <button
             type="button"
@@ -345,11 +325,10 @@ export default function GununKelimesiKart({
           <button
             type="button"
             onClick={handleSave}
-            className={`flex items-center gap-1.5 px-3.5 py-2 rounded-lg text-xs font-semibold transition-colors border ${
-              saved
-                ? 'bg-emerald-600 text-white border-emerald-600 hover:bg-emerald-700'
-                : 'bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-200 border-slate-300 dark:border-slate-700 hover:border-emerald-500 hover:text-emerald-600 dark:hover:text-emerald-400'
-            }`}
+            className={`flex items-center gap-1.5 px-3.5 py-2 rounded-lg text-xs font-semibold transition-colors border ${saved
+              ? 'bg-emerald-600 text-white border-emerald-600 hover:bg-emerald-700'
+              : 'bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-200 border-slate-300 dark:border-slate-700 hover:border-emerald-500 hover:text-emerald-600 dark:hover:text-emerald-400'
+              }`}
           >
             <span>{saved ? '✅' : '💾'}</span>
             <span>{saved ? 'Kaydedildi' : 'Kaydet'}</span>

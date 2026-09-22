@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2732" height="2732" viewBox="0 0 2732 2732">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#DC2626"/>
+      <stop offset="100%" stop-color="#7F1D1D"/>
+    </linearGradient>
+    <g id="star">
+      <polygon points="0,-38 11,-12 40,-12 17,7 26,35 0,17 -26,35 -17,7 -40,-12 -11,-12" 
+               fill="#FCD34D"/>
+    </g>
+  </defs>
+  <rect width="2732" height="2732" fill="url(#bg)"/>
+  <g transform="translate(1366, 1200) scale(1.1)">
+    <g transform="translate(0, -450)">
+      <use href="#star" x="-380" y="40"  transform="scale(0.85)"/>
+      <use href="#star" x="-290" y="10"  transform="scale(0.9)"/>
+      <use href="#star" x="-190" y="-15" transform="scale(0.95)"/>
+      <use href="#star" x="-90"  y="-30" transform="scale(1)"/>
+      <use href="#star" x="0"    y="-35" transform="scale(1.05)"/>
+      <use href="#star" x="90"   y="-30" transform="scale(1)"/>
+      <use href="#star" x="190"  y="-15" transform="scale(0.95)"/>
+      <use href="#star" x="290"  y="10"  transform="scale(0.9)"/>
+      <use href="#star" x="380"  y="40"  transform="scale(0.85)"/>
+    </g>
+    <g transform="translate(0, -310)">
+      <use href="#star" x="-140" y="0"   transform="scale(0.9)"/>
+      <use href="#star" x="0"    y="-15" transform="scale(1)"/>
+      <use href="#star" x="140"  y="0"   transform="scale(0.9)"/>
+    </g>
+    <text x="0" y="200" 
+          font-family="Georgia, 'Times New Roman', serif" 
+          font-size="480" 
+          font-weight="900" 
+          fill="#FCD34D" 
+          text-anchor="middle" 
+          letter-spacing="20"
+          stroke="#92400E"
+          stroke-width="6"
+          paint-order="stroke fill">АП</text>
+  </g>
+  <text x="1366" y="2100" 
+        font-family="Georgia, serif" 
+        font-size="90" 
+        fill="#FCD34D" 
+        text-anchor="middle"
+        opacity="0.9"
+        letter-spacing="8">Адыгэ Псэлъалъэ</text>
+</svg>

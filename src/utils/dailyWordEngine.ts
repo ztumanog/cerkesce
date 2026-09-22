@@ -7,6 +7,7 @@ export interface RawDictionaryEntry {
   dialect?: string;
   examples?: Array<{ text: string; translation: string }>;
   ornekCumle?: string;
+  ornekler?: string[];   // ⭐ YENİ — birden fazla örnek
   etymology?: string;
   [key: string]: any;
 }
@@ -31,9 +32,10 @@ export function fnv1aHash(input: string): number {
 export function isDailyWordCandidate(entry: RawDictionaryEntry): boolean {
   const hasExamples = entry.examples && entry.examples.length > 0;
   const hasOrnekCumle = entry.ornekCumle && entry.ornekCumle.trim().length > 0;
+  const hasOrnekler = entry.ornekler && entry.ornekler.length > 0;
   const hasEtymology = entry.etymology && entry.etymology.trim().length > 0;
   const hasTranslation = entry.translation && entry.translation.trim().length > 0;
-  return !!(hasExamples || hasOrnekCumle || hasEtymology || hasTranslation);
+  return !!(hasExamples || hasOrnekCumle || hasOrnekler || hasEtymology || hasTranslation);
 }
 
 export function selectDailyWord(
@@ -56,18 +58,26 @@ export function selectDailyWord(
     `🎯 Tarih: ${date} | Hash: ${hashValue} | Index: ${selectedIndex}/${candidates.length} | Kelime: ${selected.lemma}`
   );
 
+  // ⭐ Örnekleri topla (öncelik: ornekler > ornekCumle > examples)
+  let ornekler: string[] = [];
+  if (selected.ornekler && selected.ornekler.length > 0) {
+    ornekler = selected.ornekler;
+  } else if (selected.ornekCumle) {
+    ornekler = [selected.ornekCumle];
+  } else if (selected.examples && selected.examples.length > 0) {
+    ornekler = selected.examples.map((ex) => ex.text);
+  }
+
   return {
     id: selected.id,
     kelime: selected.lemma,
     anlam: selected.translation,
     lehce: selected.dialect || 'Bilinmeyen',
     tarih: date,
+    ornekler: ornekler.length > 0 ? ornekler : undefined,   // ⭐ EKLE
     meta: {
       kategori: selected.etymology || 'Etimoloji bilinmiyor',
-      notlar:
-      selected.ornekCumle ||
-      selected.examples?.[0]?.text ||
-      'Örnek cümle yok',
+      notlar: ornekler[0] || 'Örnek cümle yok',
     },
   };
 }
