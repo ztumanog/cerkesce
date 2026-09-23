@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   title: 'Çerkesçe Sözlük',
   description: 'Çerkesçe - Türkçe - İngilizce - Rusça - Arapça Sözlük Platformu',
   manifest: '/manifest.webmanifest',
-    appleWebApp: {
+  appleWebApp: {
     capable: true,
     statusBarStyle: 'default',
     title: 'Çerkesçe',
@@ -24,7 +24,8 @@ export const metadata: Metadata = {
     icon: '/icons/favicon.ico',
     shortcut: '/icons/favicon.ico',
     apple: '/icons/icon-192.png',
-  };
+  },
+};
 
 const themeScript = `
   (function() {
