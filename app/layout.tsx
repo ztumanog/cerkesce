@@ -23,8 +23,8 @@ export const metadata: Metadata = {
   icons: {
     icon: '/icons/favicon.ico',
     shortcut: '/icons/favicon.ico',
-    apple: '/icons/favicon.svg',  },
-};
+    apple: '/icons/icon-192.png',
+  };
 
 const themeScript = `
   (function() {
