@@ -8,14 +8,22 @@ import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import { Toaster } from 'sonner';
 import BildirimBaslatici from '@/components/features/BildirimBaslatici';
+import SWRegister from './SWRegister';
 import './globals.css';
 
 export const metadata: Metadata = {
   title: 'Çerkesçe Sözlük',
-  description: 'Çerkesçe - Türkçe Sözlük Platformu',
+  description: 'Çerkesçe - Türkçe - İngilizce - Rusça - Arapça Sözlük Platformu',
+  manifest: '/manifest.json',
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: 'default',
+    title: 'Çerkesçe',
+  },
   icons: {
     icon: '/icons/favicon.ico',
     shortcut: '/icons/favicon.ico',
+    apple: '/icons/icon-192.png',
   },
 };
 
@@ -48,16 +56,20 @@ export default function RootLayout({
 }) {
   return (
     <html lang="tr" suppressHydrationWarning>
-      <head>
-        <script
-          dangerouslySetInnerHTML={{ __html: themeScript }}
-          suppressHydrationWarning
-        />
-      </head>
-          <body
+            <head>
+        <link rel="manifest" href="/manifest.json" />
+        <meta name="theme-color" content="#d97706" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+        <meta name="apple-mobile-web-app-title" content="Çerkesçe" />
+        <link rel="apple-touch-icon" href="/icons/favicon.svg" />
+        <script dangerouslySetInnerHTML={{ __html: themeScript }} suppressHydrationWarning />
+              </head>
+      <body
         suppressHydrationWarning
         className="flex flex-col min-h-screen bg-white dark:bg-slate-950 text-slate-900 dark:text-slate-50 transition-colors duration-200 antialiased"
       >
+               <SWRegister />
         <BildirimBaslatici />
         <Header />
         <main className="flex-1 w-full">{children}</main>
