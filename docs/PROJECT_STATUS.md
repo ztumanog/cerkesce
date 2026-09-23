@@ -242,3 +242,42 @@ npx vitest run src/tests/ReverseTranslationSearch.test.ts
 ### Referans
 
 - [ADR-P2-011](architecture/adr/ADR-P2-011-FILTER_FLOW_AUDIT.md)
+
+
+---
+
+## P4-007-A: Arama Geçmişi + Bug Fix (2026-09-23)
+
+### Tamamlanan
+
+- **Bug Fix: "0 Karşılık" Sorunu** - DUZELTILDI
+  - `handleSearch` icinde `anlamlarSet` ile cok kaynakli anlam toplama
+  - `entry.meanings`, `entry.definitions`, `entry.kaynaklar[].anlam`
+  - Tekil alan fallback (`entry.anlam`, `entry.translation`, vb.)
+  - Iki `handleSearch` tanimi tek tanima indirildi
+
+- **Yeni Ozellik: Arama Gecmisi (P4-007-A)** - EKLENDI
+  - `useAramaGecmisi` hook (localStorage, max 10)
+  - `AramaGecmisi` component (chip'ler)
+  - `SozlukEkrani` entegrasyonu
+
+- **CI/CD Pipeline** - AKTIF
+  - GitHub Actions aktif
+  - 193 test PASS (62 dosya)
+  - Vercel otomatik deploy
+  - TypeScript 0 hata
+
+- **Git Temizligi** - TAMAMLANDI
+  - 9 backup klasoru silindi
+  - `.gitignore` duzeltildi (`src/data/` eklendi)
+  - Turkce karakter encoding duzeltildi
+  - `AramaGecmisi.tsx`, `useAramaGecmisi.ts` git'e eklendi
+
+### Commit'ler
+
+- `bbc31a2` fix: AramaGecmisi ve useAramaGecmisi dosyalari eklendi
+- `90a169e` fix(search): anlam toplama (0 karflik sorunu) duzeltildi
+
+### Referans
+
+- ADR-P2-011 (Filter Flow Audit)

@@ -456,3 +456,31 @@ Filtre sistemi (Lehce + Dil + Sozluk) dogrulandi. 5 sorun bulundu ve duzeltildi:
 5. Drawer -> dis filtre prop
 
 **Dogrulanan sayilar:** 34 / 1 / 7 / 10 / 13 / 2 / 1
+
+
+---
+
+### ADR-P4-007-A: Arama Gecmisi (Search History)
+
+**Tarih:** 2026-09-23
+**Kapsam:** P4-007-A
+**Durum:** Kabul Edildi
+
+**Karar:** Arama gecmisi, `localStorage` uzerinde saklanir ve maksimum 10 son aramayi tutar.
+
+**Gerekce:**
+- Kullanici deneyimi: Son aramalara hizli erisim
+- Backend gerekmez: Tamamen client-side
+- Maliyet: 0 (localStorage)
+- Performans: Anlik (50 KB limit)
+
+**Bilesenler:**
+- `src/hooks/useAramaGecmisi.ts` - Hook (localStorage CRUD)
+- `src/components/dictionary/AramaGecmisi.tsx` - UI (chip'ler)
+- `SozlukEkrani.tsx` - Entegrasyon
+
+**Alternatifler:**
+- Backend (Firebase, Supabase) - Reddedildi (gereksiz)
+- Cookie - Reddedildi (boyut limiti)
+
+**Referans:** MEMO.md, P4-007-A sprint
