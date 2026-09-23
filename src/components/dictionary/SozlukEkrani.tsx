@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useCallback, useMemo } from 'react';
+import { useState, useCallback, useMemo, useRef } from 'react';
 import SearchBox from '@/components/dictionary/SearchBox';
 import KelimeKarti from '@/components/dictionary/KelimeKarti';
 import KelimeDetayDrawer from '@/components/ui/KelimeDetayDrawer';
@@ -19,6 +19,7 @@ import { resolveSourceMetadata } from '@/lib/normalizers/sourceMetadataResolver'
 import { useAramaGecmisi } from '@/hooks/useAramaGecmisi';
 import type { KelimeItem } from '@/components/dictionary/KelimeKarti';
 import { useFavoriler } from '@/hooks/useFavoriler';
+import { useKlavyeKisayollari } from '@/hooks/useKlavyeKisayollari';
 import type { DictionaryEntry } from '@/types/dictionary';
 
 export default function SozlukEkrani() {
@@ -29,14 +30,29 @@ export default function SozlukEkrani() {
   const [drawerAcik, setDrawerAcik] = useState<boolean>(false);
   const [aramaMetni, setAramaMetni] = useState<string>('');
   const [tumunuGoster, setTumunuGoster] = useState<boolean>(false);
+  const [klavyeAcik, setKlavyeAcik] = useState<boolean>(false);
+  const aramaInputRef = useRef<HTMLInputElement>(null);
 
-  const [dialectFilter, setDialectFilter] = useState<DialectFilterValue>('ALL');
-  const [languageFilter, setLanguageFilter] = useState<LanguageFilterValue>('ALL');
+  const [dialectFilter, setDialectFilter] = useState<DialectFilterValue>('ALL');  const [languageFilter, setLanguageFilter] = useState<LanguageFilterValue>('ALL');
   
 
   // ⭐ Favoriler
+    // ⭐ Favoriler
   const { favoriMi, favoriToggle } = useFavoriler();
-  
+
+  // ⭐ Klavye Kısayolları
+  useKlavyeKisayollari({
+    onAramaOdak: () => {
+      aramaInputRef.current?.focus();
+    },
+    onKlavyeToggle: () => {
+      setKlavyeAcik((v) => !v);
+    },
+    onEscape: () => {
+      setDrawerAcik(false);
+    },
+  });
+
   const {
     gecmis,
     ekle: gecmiseEkle,
@@ -244,6 +260,9 @@ export default function SozlukEkrani() {
         <div className="bg-white dark:bg-slate-900 border border-amber-200 dark:border-slate-700 rounded-2xl shadow-md ring-1 ring-amber-100/80 dark:ring-amber-500/10 p-3 sm:p-5">
           <SearchBox
             onSearch={handleSearch}
+            inputRef={aramaInputRef}
+            klavyeAcik={klavyeAcik}
+            setKlavyeAcik={setKlavyeAcik}
             filterSlot={
               sonuclar.length > 1 ? (
                 <FilterDropdown

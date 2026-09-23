@@ -7,18 +7,27 @@ export interface SearchBoxProps {
   onSearch?: (query: string, mode?: string) => void;
   placeholder?: string;
   filterSlot?: React.ReactNode;
+  inputRef?: React.RefObject<HTMLInputElement | null>;
+  klavyeAcik?: boolean;
+  setKlavyeAcik?: (v: boolean) => void;
 }
 
 export function SearchBox({
   onSearch,
   placeholder = 'Çerkesçe, Türkçe, İngilizce, Rusça veya Arapça ara…',
   filterSlot,
+  inputRef: externalRef,
+  klavyeAcik: externalKlavyeAcik,
+  setKlavyeAcik: externalSetKlavyeAcik,
 }: SearchBoxProps) {
   const [query, setQuery] = useState('');
   const [mode, setMode] = useState('baslayan');
-  const [klavyeAcik, setKlavyeAcik] = useState(false);
+  const [internalKlavyeAcik, setInternalKlavyeAcik] = useState(false);
 
-  const inputRef = useRef<HTMLInputElement>(null);
+  const internalRef = useRef<HTMLInputElement>(null);
+  const inputRef = externalRef ?? internalRef;
+  const klavyeAcik = externalKlavyeAcik ?? internalKlavyeAcik;
+  const setKlavyeAcik = externalSetKlavyeAcik ?? setInternalKlavyeAcik;
 
   const handleClear = () => {
     setQuery('');
@@ -35,6 +44,10 @@ export function SearchBox({
     if (e.key === 'Enter') {
       handleSearch();
     }
+  };
+
+  const handleKlavyeToggle = () => {
+    setKlavyeAcik(!klavyeAcik);
   };
 
   return (
@@ -101,7 +114,7 @@ export function SearchBox({
 
           <button
             type="button"
-            onClick={() => setKlavyeAcik((prev) => !prev)}
+            onClick={handleKlavyeToggle}
             className={`flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold rounded-lg border transition-all ${
               klavyeAcik
                 ? 'bg-amber-500 text-white border-amber-500 shadow-sm'

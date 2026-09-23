@@ -2,7 +2,7 @@
 
 import { useFavoriler } from '@/hooks/useFavoriler';
 import KelimeKarti from '@/components/dictionary/KelimeKarti';
-import { Star } from 'lucide-react';
+import { Star, ArrowLeft } from 'lucide-react';
 import Link from 'next/link';
 
 export default function FavorilerPage() {
@@ -18,12 +18,22 @@ export default function FavorilerPage() {
 
   return (
     <div className="max-w-4xl mx-auto px-4 py-6 flex flex-col gap-6">
-      <header className="flex items-center justify-between border-b pb-3 dark:border-slate-800">
-        <h1 className="text-xl sm:text-2xl font-bold text-slate-800 dark:text-slate-100 flex items-center gap-2">
-          <Star size={22} className="text-yellow-500" fill="currentColor" />
-          Favoriler
-        </h1>
-        <span className="text-xs font-medium text-slate-500 dark:text-slate-400">
+      <header className="flex items-center justify-between border-b pb-3 dark:border-slate-800 gap-3">
+        <div className="flex items-center gap-3 min-w-0">
+          <Link
+            href="/"
+            className="p-2 rounded-lg text-slate-400 hover:text-slate-700 dark:hover:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors shrink-0"
+            aria-label="Geri dön"
+            title="Geri dön"
+          >
+            <ArrowLeft size={20} />
+          </Link>
+          <h1 className="text-xl sm:text-2xl font-bold text-slate-800 dark:text-slate-100 flex items-center gap-2 truncate">
+            <Star size={22} className="text-yellow-500 shrink-0" fill="currentColor" />
+            Favoriler
+          </h1>
+        </div>
+        <span className="text-xs font-medium text-slate-500 dark:text-slate-400 shrink-0">
           {favoriler.length} kelime
         </span>
       </header>
