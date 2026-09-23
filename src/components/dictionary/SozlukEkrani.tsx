@@ -41,13 +41,8 @@ export default function SozlukEkrani() {
   const { favoriMi, favoriToggle } = useFavoriler();
 
   // ⭐ Klavye Kısayolları
+   // ⭐ Klavye Kısayolları
   useKlavyeKisayollari({
-    onAramaOdak: () => {
-      aramaInputRef.current?.focus();
-    },
-    onKlavyeToggle: () => {
-      setKlavyeAcik((v) => !v);
-    },
     onEscape: () => {
       setDrawerAcik(false);
     },
