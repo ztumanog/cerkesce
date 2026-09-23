@@ -14,8 +14,8 @@ import './globals.css';
 export const metadata: Metadata = {
   title: 'Çerkesçe Sözlük',
   description: 'Çerkesçe - Türkçe - İngilizce - Rusça - Arapça Sözlük Platformu',
-  manifest: '/manifest.json',
-  appleWebApp: {
+  manifest: '/manifest.webmanifest',
+    appleWebApp: {
     capable: true,
     statusBarStyle: 'default',
     title: 'Çerkesçe',
@@ -23,8 +23,7 @@ export const metadata: Metadata = {
   icons: {
     icon: '/icons/favicon.ico',
     shortcut: '/icons/favicon.ico',
-    apple: '/icons/icon-192.png',
-  },
+    apple: '/icons/favicon.svg',  },
 };
 
 const themeScript = `
@@ -57,8 +56,8 @@ export default function RootLayout({
   return (
     <html lang="tr" suppressHydrationWarning>
             <head>
-        <link rel="manifest" href="/manifest.json" />
-        <meta name="theme-color" content="#d97706" />
+        <link rel="manifest" href="/manifest.webmanifest" />
+                <meta name="theme-color" content="#d97706" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
         <meta name="apple-mobile-web-app-title" content="Çerkesçe" />
