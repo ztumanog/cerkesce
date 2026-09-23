@@ -1,95 +1,59 @@
 'use client';
 
-import { useState, useCallback, useMemo, useRef } from 'react';
+import { useState, useCallback, useMemo } from 'react';
 import SearchBox from '@/components/dictionary/SearchBox';
 import KelimeKarti from '@/components/dictionary/KelimeKarti';
 import KelimeDetayDrawer from '@/components/ui/KelimeDetayDrawer';
 import GununKelimesiKart from '@/components/dictionary/GununKelimesiKart';
-import {
+import DialectFilter, {
   type DialectFilterValue,
 } from '@/components/dictionary/DialectFilter';
-import FilterDropdown from '@/components/dictionary/FilterDropdown';
-import {
+import LanguageFilter, {
   type LanguageFilterValue,
 } from '@/components/dictionary/LanguageFilter';
+import FilterDropdown from '@/components/dictionary/FilterDropdown';
+import AramaGecmisi from '@/components/dictionary/AramaGecmisi';
+import { normalizeDialect } from '@/lib/normalizers/dialectNormalizer';
+import { normalizeLanguage } from '@/lib/normalizers/languageNormalizer';
+import { resolveSourceMetadata } from '@/lib/normalizers/sourceMetadataResolver';
+import { useAramaGecmisi } from '@/hooks/useAramaGecmisi';
 import type { KelimeItem } from '@/components/dictionary/KelimeKarti';
 import type { DictionaryEntry } from '@/types/dictionary';
 
-import dictionariesData from '@/data/dictionaries.json';
-
-const DICT_ARRAY: any[] = Array.isArray(dictionariesData)
-  ? (dictionariesData as any[])
-  : ((dictionariesData as any)?.default ?? []);
-
-const DICT_MAP = new Map<string, any>(
-  DICT_ARRAY.map((d) => [d.file, d])
-);
-
-function getMeta(k: any) {
-  if (!k) return null;
-  const file =
-    typeof k === 'string' ? k : k.sourceFile || k.file || '';
-  return file ? DICT_MAP.get(file) ?? null : null;
-}
-
-function normalizeLang(lang?: string | null): LanguageFilterValue {
-  if (!lang) return 'ALL';
-  const c = String(lang).trim().toLowerCase();
-  if (c === 'tr' || c.startsWith('tr')) return 'TR';
-  if (c === 'en' || c.startsWith('en')) return 'EN';
-  if (c === 'ru' || c.startsWith('ru')) return 'RU';
-  if (c === 'ar' || c.startsWith('ar')) return 'AR';
-  return 'ALL';
-}
-
-function getLangFromDict(d: any): LanguageFilterValue {
-  const src = String(d.sourceLanguage || '').toLowerCase();
-  const tgt = String(d.targetLanguage || '').toLowerCase();
-  const isCirc = (l: string) => l === 'ady' || l === 'kbd';
-
-  if (d.file === '18.Kbd-Ru&En.json') return 'MULTI';
-  if (isCirc(src) && isCirc(tgt)) return 'CIRC';
-
-  const other = !isCirc(src) ? src : tgt;
-
-  if (other === 'tr') return 'TR';
-  if (other === 'en') return 'EN';
-  if (other === 'ru') return 'RU';
-  if (other === 'ar') return 'AR';
-  return 'ALL';
-}
-
 export default function SozlukEkrani() {
   const [sonuclar, setSonuclar] = useState<KelimeItem[]>([]);
-  const [yukleniyor, setYukleniyor] = useState(false);
-  const [toplam, setToplam] = useState(0);
+  const [yukleniyor, setYukleniyor] = useState<boolean>(false);
+  const [toplam, setToplam] = useState<number>(0);
   const [seciliKelime, setSeciliKelime] = useState<DictionaryEntry | null>(null);
-  const [drawerAcik, setDrawerAcik] = useState(false);
-  const [aramaMetni, setAramaMetni] = useState('');
-  const ilkAramaYapildi = useRef(false);
-  const [tumunuGoster, setTumunuGoster] = useState(false);
+  const [drawerAcik, setDrawerAcik] = useState<boolean>(false);
+  const [aramaMetni, setAramaMetni] = useState<string>('');
+  const [tumunuGoster, setTumunuGoster] = useState<boolean>(false);
 
   const [dialectFilter, setDialectFilter] = useState<DialectFilterValue>('ALL');
   const [languageFilter, setLanguageFilter] = useState<LanguageFilterValue>('ALL');
+
+  const {
+    gecmis,
+    ekle: gecmiseEkle,
+    sil: gecmistenSil,
+    temizle: gecmisiTemizle,
+  } = useAramaGecmisi();
 
   const handleSearch = useCallback(
     async (query: string, mode: string = 'baslayan') => {
       if (!query.trim()) {
         setSonuclar([]);
         setAramaMetni('');
-        setToplam(0);
         return;
       }
 
       setYukleniyor(true);
       setAramaMetni(query);
       setTumunuGoster(false);
+      setDialectFilter('ALL');
+      setLanguageFilter('ALL');
 
-      if (ilkAramaYapildi.current) {
-        setDialectFilter('ALL');
-        setLanguageFilter('ALL');
-      }
-      ilkAramaYapildi.current = true;
+      gecmiseEkle(query);
 
       try {
         const response = await fetch(
@@ -105,55 +69,58 @@ export default function SozlukEkrani() {
                 entry.word ||
                 entry.kelime ||
                 entry.headword ||
+                entry.lemma ||
                 '';
 
-              let meaning = '';
+              // ANLAMLARI TOPLA
+              const anlamlarSet = new Set<string>();
 
-              if (Array.isArray(entry.anlamlar) && entry.anlamlar.length > 0) {
-                const first = entry.anlamlar[0];
-                meaning =
-                  typeof first === 'string'
-                    ? first
-                    : first?.metin || first?.anlam || first?.text || '';
+              if (Array.isArray(entry.meanings)) {
+                entry.meanings.forEach((m: any) => {
+                  const text = m?.text || m?.value || m?.meaning || '';
+                  if (text.trim()) anlamlarSet.add(text.trim());
+                });
               }
 
-              if (!meaning && Array.isArray(entry.definitions) && entry.definitions.length > 0) {
-                meaning =
-                  entry.definitions[0]?.meaning ||
-                  entry.definitions[0]?.tanim ||
-                  '';
+              if (Array.isArray(entry.definitions)) {
+                entry.definitions.forEach((d: any) => {
+                  const text = d?.meaning || d?.tanim || d?.text || '';
+                  if (text.trim()) anlamlarSet.add(text.trim());
+                });
               }
 
-              if (!meaning) {
-                meaning =
-                  entry.ilkAnlam ||
-                  entry.anlam ||
-                  entry.translation ||
-                  entry.definition ||
-                  entry.meaning ||
-                  entry.tanim ||
-                  '';
+              if (Array.isArray(entry.kaynaklar)) {
+                entry.kaynaklar.forEach((k: any) => {
+                  const text = k?.anlam || k?.meaning || '';
+                  if (text.trim()) anlamlarSet.add(text.trim());
+                });
               }
+
+              const tekilAnlam =
+                entry.anlam ||
+                entry.translation ||
+                entry.definition ||
+                entry.meaning ||
+                entry.tanim ||
+                '';
+              if (tekilAnlam.trim()) anlamlarSet.add(tekilAnlam.trim());
+
+              const anlamlar = Array.from(anlamlarSet);
+              const ilkAnlam = anlamlar[0] || '';
+
+              const kaynakDialect = entry.kaynaklar?.[0]?.sourceFile
+                ? resolveSourceMetadata(entry.kaynaklar[0].sourceFile).dialect
+                : null;
 
               return {
                 id: entry.id || `${query}-${idx}`,
                 kelime: word,
                 madde: entry.headword || word,
-                anlam: meaning,
-                ilkAnlam: meaning,
-                anlamlar: [meaning].filter(Boolean),
+                anlam: ilkAnlam,
+                ilkAnlam,
+                anlamlar,
                 kaynaklar: entry.kaynaklar || [],
-                lehce: entry.dialect || entry.lehce || 'ADY',
-                kaynakAdlari: (() => {
-                  const adlar = new Set<string>();
-                  (entry.kaynaklar || []).forEach((k: any) => {
-                    const meta = getMeta(k);
-                    if (meta) {
-                      adlar.add(meta.shortLabel || meta.title || meta.file);
-                    }
-                  });
-                  return Array.from(adlar);
-                })(),
+                lehce: kaynakDialect || entry.dialect || entry.lehce || 'ADY',
               };
             }
           );
@@ -172,7 +139,7 @@ export default function SozlukEkrani() {
         setYukleniyor(false);
       }
     },
-    []
+    [gecmiseEkle]
   );
 
   const handleKelimeSec = (kelime: KelimeItem) => {
@@ -184,7 +151,8 @@ export default function SozlukEkrani() {
       definition: kelime.anlam || kelime.ilkAnlam || '',
       tanim: kelime.anlam || kelime.ilkAnlam || '',
       definitions:
-        kelime.anlamlar?.map((anlam) => ({ meaning: anlam, tanim: anlam })) || [],
+        kelime.anlamlar?.map((anlam) => ({ meaning: anlam, tanim: anlam })) ||
+        [],
       kaynaklar: kelime.kaynaklar || [],
       lehce: kelime.lehce || 'ADY',
       dialect: kelime.lehce || 'ADY',
@@ -195,168 +163,196 @@ export default function SozlukEkrani() {
     setDrawerAcik(true);
   };
 
-  // ⭐ Filtrelenmiş sonuçlar
   const filtrelenmisSonuclar = useMemo(() => {
     return sonuclar.filter((kelime) => {
-      const kaynaklar = kelime.kaynaklar || [];
-
-      // 1. Dil filtresi
-      if (languageFilter !== 'ALL') {
-        const hasLang = kaynaklar.some((k: any) => {
-          const meta = getMeta(k);
-          if (!meta) return false;
-
-          const src = String(meta.sourceLanguage || '').toLowerCase();
-          const tgt = String(meta.targetLanguage || '').toLowerCase();
-          const isCirc = (l: string) => l === 'ady' || l === 'kbd';
-
-          if (languageFilter === 'MULTI') {
-            return meta.file === '18.Kbd-Ru&En.json';
-          }
-          if (languageFilter === 'CIRC') {
-            return isCirc(src) && isCirc(tgt);
-          }
-
-          const other = !isCirc(src) ? src : tgt;
-          return other === languageFilter.toLowerCase();
-        });
-        if (!hasLang) return false;
+      if (dialectFilter !== 'ALL') {
+        const canonical = normalizeDialect(kelime.lehce);
+        if (canonical !== dialectFilter) return false;
       }
 
-      // 2. Lehçe filtresi
-      if (dialectFilter !== 'ALL') {
-        const hasDialect = kaynaklar.some((k: any) => {
-          const meta = getMeta(k);
-          if (!meta) return false;
-          const d = String(meta.dialect || '').toLowerCase();
-          if (dialectFilter === 'KBD') {
-            return d === 'dogu' || d === 'kbd';
-          }
-          if (dialectFilter === 'ADY') {
-            return d === 'western' || d === 'ady';
-          }
-          return false;
-        });
-        if (!hasDialect) return false;
+      if (languageFilter !== 'ALL') {
+        const ilkKaynak = kelime.kaynaklar?.[0];
+        const targetLang = ilkKaynak?.sourceFile
+          ? resolveSourceMetadata(ilkKaynak.sourceFile).targetLanguage
+          : null;
+        const canonical = normalizeLanguage(targetLang);
+        if (canonical !== languageFilter) return false;
       }
 
       return true;
     });
   }, [sonuclar, dialectFilter, languageFilter]);
 
-  // ⭐ Lehçe sayıları (her zaman dictionaries.json'dan)
   const dialectCounts = useMemo(() => {
     const counts: Record<DialectFilterValue, number> = {
-      ALL: 0,
+      ALL: sonuclar.length,
       ADY: 0,
       KBD: 0,
     };
 
-    DICT_ARRAY.forEach((d: any) => {
-      const dl = String(d.dialect || '').toLowerCase();
-      if (dl === 'dogu' || dl === 'kbd') counts.KBD++;
-      else if (dl === 'western' || dl === 'ady') counts.ADY++;
+    sonuclar.forEach((kelime) => {
+      const canonical = normalizeDialect(kelime.lehce);
+      if (canonical === 'ADY') counts.ADY++;
+      else if (canonical === 'KBD') counts.KBD++;
     });
 
-    counts.ALL = counts.ADY + counts.KBD;
     return counts;
-  }, []);
+  }, [sonuclar]);
 
-  // ⭐ Dil sayıları (her zaman dictionaries.json'dan)
   const languageCounts = useMemo(() => {
     const counts: Record<LanguageFilterValue, number> = {
-      ALL: 0,
-      CIRC: 0,
+      ALL: sonuclar.length,
       TR: 0,
       EN: 0,
       RU: 0,
       AR: 0,
+      CIRC: 0,
       MULTI: 0,
     };
 
-    DICT_ARRAY.forEach((d: any) => {
-      const lang = getLangFromDict(d);
-      if (lang !== 'ALL') counts[lang]++;
+    sonuclar.forEach((kelime) => {
+      const ilkKaynak = kelime.kaynaklar?.[0];
+      const targetLang = ilkKaynak?.sourceFile
+        ? resolveSourceMetadata(ilkKaynak.sourceFile).targetLanguage
+        : null;
+      const canonical = normalizeLanguage(targetLang);
+
+      if (canonical === 'TR') counts.TR++;
+      else if (canonical === 'EN') counts.EN++;
+      else if (canonical === 'RU') counts.RU++;
+      else if (canonical === 'AR') counts.AR++;
     });
 
-    counts.ALL =
-      counts.CIRC + counts.TR + counts.EN +
-      counts.RU + counts.AR + counts.MULTI;
-
     return counts;
-  }, []);
+  }, [sonuclar]);
 
   const bosArama = sonuclar.length === 0 && !aramaMetni && !yukleniyor;
   const goruntulenenSonuclar = tumunuGoster
     ? filtrelenmisSonuclar
-    : filtrelenmisSonuclar.slice(0, 5);
+    : filtrelenmisSonuclar.slice(0, 3);
+  const dahaFazlaSonucVarmi =
+    filtrelenmisSonuclar.length > 3 && !tumunuGoster;
 
   return (
-    <div className="max-w-4xl mx-auto px-4 py-6 flex flex-col gap-6">
-      <SearchBox
-        onSearch={handleSearch}
-        filterSlot={
-          <FilterDropdown
-            activeCount={
-              (dialectFilter !== 'ALL' ? 1 : 0) +
-              (languageFilter !== 'ALL' ? 1 : 0)
+    <div className="w-full flex-1 bg-[#fbf8ef] dark:bg-slate-950 text-slate-800 dark:text-slate-100 transition-colors duration-200">
+      <div className="max-w-4xl mx-auto px-3 py-3 space-y-3">
+        <div className="bg-white dark:bg-slate-900 border border-amber-200 dark:border-slate-700 rounded-2xl shadow-md ring-1 ring-amber-100/80 dark:ring-amber-500/10 p-3 sm:p-5">
+          <SearchBox
+            onSearch={handleSearch}
+            filterSlot={
+              sonuclar.length > 1 ? (
+                <FilterDropdown
+                  activeCount={
+                    (dialectFilter !== 'ALL' ? 1 : 0) +
+                    (languageFilter !== 'ALL' ? 1 : 0)
+                  }
+                  dialectFilter={dialectFilter}
+                  onDialectChange={setDialectFilter}
+                  dialectCounts={dialectCounts}
+                  languageFilter={languageFilter}
+                  onLanguageChange={setLanguageFilter}
+                  languageCounts={languageCounts}
+                />
+              ) : null
             }
-            dialectFilter={dialectFilter}
-            onDialectChange={setDialectFilter}
-            dialectCounts={dialectCounts}
-            languageFilter={languageFilter}
-            onLanguageChange={setLanguageFilter}
-            languageCounts={languageCounts}
           />
-        }
-      />
-
-      {bosArama && <GununKelimesiKart />}
-
-      {yukleniyor && (
-        <div className="text-center py-8 text-slate-500 font-medium">
-          Aranıyor…
         </div>
-      )}
 
-      {!yukleniyor && sonuclar.length > 0 && (
-        <div className="flex items-center justify-between border-b pb-2 dark:border-slate-800">
-          <h2 className="text-base font-bold text-slate-800 dark:text-slate-200">
-            Sonuçlar ({filtrelenmisSonuclar.length} / {toplam})
-          </h2>
-        </div>
-      )}
+        {gecmis.length > 0 && !aramaMetni && (
+          <AramaGecmisi
+            gecmis={gecmis}
+            onSec={(sorgu) => {
+              handleSearch(sorgu, 'baslayan');
+            }}
+            onSil={gecmistenSil}
+            onTemizle={gecmisiTemizle}
+          />
+        )}
 
-      {!yukleniyor && (
-        <div className="flex flex-col gap-3">
+        {bosArama && (
+          <div className="animate-in fade-in duration-300">
+            <GununKelimesiKart />
+          </div>
+        )}
+
+        {yukleniyor && (
+          <div className="flex justify-center items-center py-6">
+            <div className="flex flex-col items-center gap-2">
+              <div className="relative w-8 h-8">
+                <div className="absolute inset-0 bg-gradient-to-r from-emerald-500 to-teal-600 rounded-full animate-spin" />
+                <div className="absolute inset-1 bg-[#fbf8ef] dark:bg-slate-950 rounded-full" />
+              </div>
+              <p className="text-xs text-stone-600 dark:text-slate-400 font-medium">
+                Aranıyor...
+              </p>
+            </div>
+          </div>
+        )}
+
+        {sonuclar.length > 0 && (
+          <div className="flex items-center justify-between px-1">
+            <h2 className="text-xs sm:text-sm font-bold text-stone-800 dark:text-slate-200">
+              Sonuçlar ({filtrelenmisSonuclar.length}
+              {(dialectFilter !== 'ALL' || languageFilter !== 'ALL') &&
+                ` / ${sonuclar.length}`})
+            </h2>
+          </div>
+        )}
+
+        <div className="space-y-2">
           {goruntulenenSonuclar.map((kelime, index) => (
             <KelimeKarti
-              key={`${kelime.id}-${index}`}
+              key={kelime.id ?? `kelime-${index}`}
               data={kelime}
               onClick={() => handleKelimeSec(kelime)}
             />
           ))}
         </div>
-      )}
 
-      {!tumunuGoster && filtrelenmisSonuclar.length > 5 && (
-        <div className="flex justify-center">
-          <button
-            onClick={() => setTumunuGoster(true)}
-            className="px-4 py-2 text-xs bg-emerald-700 hover:bg-emerald-800 text-white font-medium rounded-lg transition-colors"
-          >
-            📂 Tüm Sonuçları Göster ({filtrelenmisSonuclar.length - 5} daha)
-          </button>
-        </div>
-      )}
+        {!yukleniyor &&
+          aramaMetni &&
+          sonuclar.length > 0 &&
+          filtrelenmisSonuclar.length === 0 && (
+            <div className="text-center py-6 bg-white/50 dark:bg-slate-900/50 rounded-xl border border-stone-200/60 dark:border-slate-800">
+              <div className="text-2xl mb-2">🌐</div>
+              <h3 className="text-sm font-semibold text-stone-800 dark:text-slate-200 mb-1">
+                Bu filtrelerde sonuç yok
+              </h3>
+              <p className="text-xs text-stone-500 dark:text-slate-400">
+                Farklı bir lehçe veya dil seçmeyi deneyin.
+              </p>
+            </div>
+          )}
 
-      <KelimeDetayDrawer
-        open={drawerAcik}
-        onClose={() => setDrawerAcik(false)}
-        seciliKelime={seciliKelime}
-        dialectFilter={dialectFilter}
-        languageFilter={languageFilter}
-      />
+        {dahaFazlaSonucVarmi && (
+          <div className="flex justify-center pt-1">
+            <button
+              onClick={() => setTumunuGoster(true)}
+              className="px-4 py-2 text-xs bg-emerald-700 hover:bg-emerald-800 dark:bg-emerald-600 dark:hover:bg-emerald-700 text-white font-medium rounded-lg transition-colors shadow-sm cursor-pointer"
+            >
+              📂 Tüm Sonuçları Göster ({filtrelenmisSonuclar.length - 3} daha)
+            </button>
+          </div>
+        )}
+
+        {!yukleniyor && aramaMetni && sonuclar.length === 0 && (
+          <div className="text-center py-8 bg-white/50 dark:bg-slate-900/50 rounded-xl border border-stone-200/60 dark:border-slate-800">
+            <div className="text-3xl mb-2">🔍</div>
+            <h3 className="text-sm font-semibold text-stone-800 dark:text-slate-200 mb-1">
+              Sonuç bulunamadı
+            </h3>
+            <p className="text-xs text-stone-500 dark:text-slate-400">
+              Lütfen arama terimini kontrol edin ve tekrar deneyin.
+            </p>
+          </div>
+        )}
+
+        <KelimeDetayDrawer
+          isOpen={drawerAcik}
+          onClose={() => setDrawerAcik(false)}
+          seciliKelime={seciliKelime}
+        />
+      </div>
     </div>
   );
 }
