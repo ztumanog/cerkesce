@@ -77,7 +77,6 @@ export default function PaylasimGorseliModal({
 
       // ═══ ANDROID / iOS: Capacitor Share ═══
       if (Capacitor.isNativePlatform()) {
-        // Blob → base64
         const base64 = await new Promise<string>((resolve, reject) => {
           const reader = new FileReader();
           reader.onloadend = () => resolve(reader.result as string);
@@ -86,7 +85,6 @@ export default function PaylasimGorseliModal({
         });
         const base64Data = base64.split(',')[1];
 
-        // Filesystem ile Cache klasörüne yaz (paylaşım için)
         const { Filesystem, Directory } = await import('@capacitor/filesystem');
         const sonuc = await Filesystem.writeFile({
           path: dosyaAdi,
@@ -95,7 +93,6 @@ export default function PaylasimGorseliModal({
           recursive: true,
         });
 
-        // Native paylaşım menüsünü aç
         await Share.share({
           title: 'Günün Kelimesi',
           text: `${kelime.kelime} — ${kelime.anlam}\n\n🔗 acikmektep.com`,
@@ -139,7 +136,7 @@ export default function PaylasimGorseliModal({
   };
 
   // ═══════════════════════════════════════════════════════════
-  // 2. İNDİR (Filesystem — P-Code)
+  // 2. İNDİR (Filesystem — Android/iOS + <a download> — Web)
   // ═══════════════════════════════════════════════════════════
   const handleIndir = async () => {
     setIndirLoading(true);
@@ -205,10 +202,7 @@ export default function PaylasimGorseliModal({
       >
         {/* BAŞLIK */}
         <div className="flex items-center justify-between p-4 border-b border-slate-700">
-          <h2
-            id="paylasim-modal-title"
-            className="text-lg font-bold text-white"
-          >
+          <h2 id="paylasim-modal-title" className="text-lg font-bold text-white">
             📷 Paylaşım Görseli
           </h2>
           <button
@@ -268,7 +262,6 @@ export default function PaylasimGorseliModal({
 
         {/* BUTONLAR */}
         <div className="p-4 space-y-2 border-t border-slate-700">
-          {/* 1. PAYLAŞ */}
           <button
             type="button"
             onClick={handlePaylas}
@@ -279,7 +272,6 @@ export default function PaylasimGorseliModal({
             {shareLoading ? 'Paylaşılıyor...' : 'Paylaş'}
           </button>
 
-          {/* 2. İNDİR */}
           <button
             type="button"
             onClick={handleIndir}
@@ -290,7 +282,6 @@ export default function PaylasimGorseliModal({
             {indirLoading ? 'İndiriliyor...' : 'İndir'}
           </button>
 
-          {/* 3. METNİ KOPYALA */}
           <button
             type="button"
             onClick={handleMetniKopyala}

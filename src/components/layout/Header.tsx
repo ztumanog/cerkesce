@@ -2,6 +2,8 @@
 
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
+import { Star } from 'lucide-react';
 
 export default function Header() {
   const [theme, setTheme] = useState<'dark' | 'light'>('dark');
@@ -151,9 +153,21 @@ export default function Header() {
             </button>
           </div>
 
+                   {/* FAVORİLER LİNKİ */}
+          <Link
+            href="/favoriler"
+            className="flex items-center gap-1 px-2 sm:px-3 py-1.5 text-[11px] sm:text-xs font-semibold text-yellow-700 dark:text-yellow-300 bg-yellow-500/10 hover:bg-yellow-500/20 dark:hover:bg-yellow-500/30 rounded-lg transition-all duration-300 border border-yellow-500/30 whitespace-nowrap"
+            aria-label="Favoriler"
+            title="Favoriler"
+          >
+            <Star size={14} className="text-yellow-500" fill="currentColor" />
+            <span className="hidden sm:inline">Favoriler</span>
+          </Link>
+
           {/* TEMA TOGGLE */}
           <button
             onClick={toggleTheme}
+            
             className="flex items-center gap-1 px-2 sm:px-3 py-1.5 text-[11px] sm:text-xs font-semibold text-amber-700 dark:text-amber-300 bg-amber-500/10 hover:bg-amber-500/20 dark:hover:bg-amber-500/30 rounded-lg transition-all duration-300 border border-amber-500/30 whitespace-nowrap"
             aria-label={`Temayı değiştir (Şu an: ${theme === 'dark' ? 'Karanlık' : 'Aydınlık'})`}
             title={`Temayı değiştir (Şu an: ${theme === 'dark' ? 'Karanlık' : 'Aydınlık'})`}

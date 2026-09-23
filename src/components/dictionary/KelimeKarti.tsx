@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { ChevronRight } from 'lucide-react';
+import { ChevronRight, Star } from 'lucide-react';
 import { KaynakItem } from "@/types/dictionary";
 
 export interface KelimeItem {
@@ -13,7 +13,6 @@ export interface KelimeItem {
   anlamlar?: string[];
   kaynaklar?: KaynakItem[];
   lehce?: string;
-  // ⭐ SSOT: kelimenin geçtiği tüm kaynak adları
   kaynakAdlari?: string[];
   hedefDillerSet?: string[];
   hedefDilCanonical?: string;
@@ -22,6 +21,8 @@ export interface KelimeItem {
 export interface KelimeKartiProps {
   data: KelimeItem;
   onClick?: () => void;
+  favoriMi?: boolean;
+  onFavoriToggle?: (e: React.MouseEvent) => void;
 }
 
 const decodeHtmlEntities = (str: string): string => {
@@ -53,7 +54,6 @@ const getLehceBadgeClass = (lehce?: string): string => {
       return 'bg-emerald-100 dark:bg-emerald-950 text-emerald-800 dark:text-emerald-300 border-emerald-300 dark:border-emerald-800';
     case 'KBD':
     case 'KABARDEY':
-    case 'KBD':
       return 'bg-blue-100 dark:bg-blue-950 text-blue-800 dark:text-blue-300 border-blue-300 dark:border-blue-800';
     default:
       return 'bg-zinc-100 dark:bg-zinc-900 text-zinc-700 dark:text-zinc-300 border-zinc-300 dark:border-zinc-700';
@@ -79,7 +79,12 @@ const formatKaynakDetayi = (kaynakItem: unknown): string => {
   return 'Bilinmeyen Kaynak';
 };
 
-export const KelimeKarti: React.FC<KelimeKartiProps> = ({ data, onClick }) => {
+export const KelimeKarti: React.FC<KelimeKartiProps> = ({
+  data,
+  onClick,
+  favoriMi = false,
+  onFavoriToggle,
+}) => {
   if (!data) return null;
 
   const ilkAnlamMetin = getAnlamMetin(data);
@@ -90,11 +95,24 @@ export const KelimeKarti: React.FC<KelimeKartiProps> = ({ data, onClick }) => {
     (data.anlamlar || []).map((anlam) => anlam.trim().toLocaleLowerCase('tr-TR')).filter(Boolean),
   ).size;
 
-  return (
-    <button
-      type="button"
+  const handleFavoriClick = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    e.preventDefault();
+    onFavoriToggle?.(e);
+  };
+
+    return (
+    <div
+      role="button"
+      tabIndex={0}
       onClick={onClick}
-      className="w-full text-left p-3 border border-zinc-200 dark:border-zinc-800 rounded-xl bg-white dark:bg-zinc-900 shadow-sm hover:shadow-md transition-all hover:border-amber-500 dark:hover:border-amber-500 group flex items-start justify-between gap-3"
+      onKeyDown={(e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          onClick?.();
+        }
+      }}
+      className="w-full text-left p-3 border border-zinc-200 dark:border-zinc-800 rounded-xl bg-white dark:bg-zinc-900 shadow-sm hover:shadow-md transition-all hover:border-amber-500 dark:hover:border-amber-500 group flex items-start justify-between gap-3 relative cursor-pointer"
     >
       <div className="flex-1 min-w-0 space-y-1">
         <div className="flex items-center gap-2">
@@ -138,8 +156,33 @@ export const KelimeKarti: React.FC<KelimeKartiProps> = ({ data, onClick }) => {
           </div>
         )}
       </div>
-      <ChevronRight size={18} className="text-zinc-300 dark:text-zinc-700 flex-shrink-0 group-hover:text-amber-500 transition-colors mt-1" />
-    </button>
+
+      {/* FAVORİ BUTONU + CHEVRON */}
+      <div className="flex items-center gap-1 shrink-0">
+        {onFavoriToggle && (
+          <button
+            type="button"
+            onClick={handleFavoriClick}
+            aria-label={favoriMi ? 'Favoriden çıkar' : 'Favoriye ekle'}
+            className={`p-1.5 rounded-full transition-all active:scale-90 ${
+              favoriMi
+                ? 'text-yellow-500 hover:text-yellow-600'
+                : 'text-zinc-300 dark:text-zinc-700 hover:text-yellow-500'
+            }`}
+          >
+            <Star
+              size={18}
+              fill={favoriMi ? 'currentColor' : 'none'}
+              strokeWidth={favoriMi ? 0 : 2}
+            />
+          </button>
+        )}
+        <ChevronRight
+          size={18}
+          className="text-zinc-300 dark:text-zinc-700 flex-shrink-0 group-hover:text-amber-500 transition-colors"
+        />
+      </div>
+   </div>
   );
 };
 

@@ -1,6 +1,8 @@
 'use client';
 
 import { useState, useEffect, useCallback } from 'react';
+import { Capacitor } from '@capacitor/core';
+import { toast } from 'sonner';
 import {
   type BildirimAyar,
   ayarlariYukle,
@@ -21,17 +23,21 @@ export function useBildirimler(
   const [yukleniyor, setYukleniyor] = useState(true);
   const [izinDurumu, setİzinDurumu] = useState<'granted' | 'denied' | 'prompt'>('prompt');
 
-  // Ayarları yükle
   useEffect(() => {
     const yuklenenAyar = ayarlariYukle();
     setAyar(yuklenenAyar);
     setYukleniyor(false);
   }, []);
 
-  // Bildirim aç/kapat
   const bildirimAcKapat = useCallback(
     async (aktif: boolean) => {
       if (!gununKelimesi) return;
+
+      // ⭐ Web'de bildirim desteklenmiyor
+      if (!Capacitor.isNativePlatform()) {
+        toast.error('Bildirim sadece mobil uygulamada çalışır');
+        return;
+      }
 
       try {
         if (aktif) {
@@ -60,14 +66,13 @@ export function useBildirimler(
     [ayar, gununKelimesi]
   );
 
-  // Saat değiştir
   const saatDegistir = useCallback(
     async (saat: number, dakika: number) => {
       const yeniAyar = { ...ayar, saat, dakika };
       setAyar(yeniAyar);
       ayarlariKaydet(yeniAyar);
 
-      if (yeniAyar.aktif && gununKelimesi) {
+      if (yeniAyar.aktif && gununKelimesi && Capacitor.isNativePlatform()) {
         await bildirimiPlanla(yeniAyar, gununKelimesi);
       }
     },

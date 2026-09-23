@@ -18,6 +18,7 @@ import { normalizeLanguage } from '@/lib/normalizers/languageNormalizer';
 import { resolveSourceMetadata } from '@/lib/normalizers/sourceMetadataResolver';
 import { useAramaGecmisi } from '@/hooks/useAramaGecmisi';
 import type { KelimeItem } from '@/components/dictionary/KelimeKarti';
+import { useFavoriler } from '@/hooks/useFavoriler';
 import type { DictionaryEntry } from '@/types/dictionary';
 
 export default function SozlukEkrani() {
@@ -31,7 +32,11 @@ export default function SozlukEkrani() {
 
   const [dialectFilter, setDialectFilter] = useState<DialectFilterValue>('ALL');
   const [languageFilter, setLanguageFilter] = useState<LanguageFilterValue>('ALL');
+  
 
+  // ⭐ Favoriler
+  const { favoriMi, favoriToggle } = useFavoriler();
+  
   const {
     gecmis,
     ekle: gecmiseEkle,
@@ -301,10 +306,20 @@ export default function SozlukEkrani() {
 
         <div className="space-y-2">
           {goruntulenenSonuclar.map((kelime, index) => (
-            <KelimeKarti
+                        <KelimeKarti
               key={kelime.id ?? `kelime-${index}`}
               data={kelime}
               onClick={() => handleKelimeSec(kelime)}
+              favoriMi={favoriMi(kelime.id)}
+              onFavoriToggle={() =>
+                favoriToggle({
+                  id: kelime.id,
+                  kelime: kelime.kelime,
+                  anlam: kelime.anlam || kelime.ilkAnlam || '',
+                  lehce: kelime.lehce,
+                  tarih: new Date().toISOString(),
+                })
+              }
             />
           ))}
         </div>
