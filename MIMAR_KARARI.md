@@ -65,6 +65,100 @@ etrafında dönüyorduk. **Şimdi bu kapanmış görünüyor.**
 
 ### Mevcut Evre
 
+**noktasına gelmiş olmanız.**
+
+Bu çözülmeden sürekli:
+
+etrafında dönüyorduk. **Şimdi bu kapanmış görünüyor.**
+
+---
+
+## 🔴 AÇIK TEKNİK BORÇLAR
+
+### Kritik Teknik Borç
+
+**0**
+
+### Düşük Öncelikli Teknik Borçlar
+
+- `getDictMeta` / `resolveSourceMetadata` konsolidasyonu
+- `sourceLanguage` "0.ady" temizliği
+- `MULTI` grup ölçeklenme stratejisi
+
+**Not:** Bu borçlar **sprint açtırmaz** ama **sıfır teknik borç** da diyemeyiz.
+
+---
+
+## 🗺️ YOL HARİTASI DURUMU
+
+### Tamamlananlar
+
+- ✅ Search Experience
+- ✅ Drawer
+- ✅ Günün Kelimesi
+
+### Mevcut Evre
+
+etrafında dönüyorduk. **Şimdi bu kapanmış görünüyor.**
+
+---
+
+## 🔴 AÇIK TEKNİK BORÇLAR
+
+### Kritik Teknik Borç
+
+**0**
+
+### Düşük Öncelikli Teknik Borçlar
+
+- `getDictMeta` / `resolveSourceMetadata` konsolidasyonu
+- `sourceLanguage` "0.ady" temizliği
+- `MULTI` grup ölçeklenme stratejisi
+
+**Not:** Bu borçlar **sprint açtırmaz** ama **sıfır teknik borç** da diyemeyiz.
+
+---
+
+## 🗺️ YOL HARİTASI DURUMU
+
+### Tamamlananlar
+
+- ✅ Search Experience
+- ✅ Drawer
+- ✅ Günün Kelimesi
+
+### Mevcut Evre
+
+etrafında dönüyorduk. **Şimdi bu kapanmış görünüyor.**
+
+---
+
+## 🔴 AÇIK TEKNİK BORÇLAR
+
+### Kritik Teknik Borç
+
+**0**
+
+### Düşük Öncelikli Teknik Borçlar
+
+- `getDictMeta` / `resolveSourceMetadata` konsolidasyonu
+- `sourceLanguage` "0.ady" temizliği
+- `MULTI` grup ölçeklenme stratejisi
+
+**Not:** Bu borçlar **sprint açtırmaz** ama **sıfır teknik borç** da diyemeyiz.
+
+---
+
+## 🗺️ YOL HARİTASI DURUMU
+
+### Tamamlananlar
+
+- ✅ Search Experience
+- ✅ Drawer
+- ✅ Günün Kelimesi
+
+### Mevcut Evre
+
 **Yani:** Proje artık **Product Stage** evresinde.
 
 ---
@@ -73,7 +167,25 @@ etrafında dönüyorduk. **Şimdi bu kapanmış görünüyor.**
 
 | Öncelik | Paket | İçerik |
 |:-------:|:------|:-------|
-| **P4-007** | Release Readiness | AAB, Keystore, Store Assets, Release Süreci |
+| **P4-007** | Release & Delivery | AAB, Keystore, Store Assets, Release Süreci |
+| **P4-008** | Ürün Kullanım Gözlemi | Gerçek kullanım dönemi (sprint değil) |
+| **P4-009** | Metadata Konsolidasyonu | Gerekiyorsa |
+
+---
+
+## ⚠️ RİSKLER / ÇELİŞKİLER
+
+Şu anda en büyük tehlike:
+
+**Yani:** Proje artık **Product Stage** evresinde.
+
+---
+
+## 🎯 SONRAKİ TEKNİK ÖNCELİK
+
+| Öncelik | Paket | İçerik |
+|:-------:|:------|:-------|
+| **P4-007** | Release & Delivery | AAB, Keystore, Store Assets, Release Süreci |
 | **P4-008** | Ürün Kullanım Gözlemi | Gerçek kullanım dönemi (sprint değil) |
 | **P4-009** | Metadata Konsolidasyonu | Gerekiyorsa |
 
@@ -140,44 +252,14 @@ Kapanış kriterleri:
 
 ✅ Evet. Kayıt önerim:
 
-- ADR-P2-011 → **Accepted**
+- ADR-P2-012 → **Review**
 
 ### Dokümantasyon güncellemesi gerekiyor mu?
 
 ✅ Evet. Etkilenen belgeler:
 
-- `DECISIONS.md`
-- `PROJECT_STATUS.md`
-- `MIMAR_KARARI.md`
-
----
-
-## 🎯 BENİM SANA TAVSİYEM
-
-**1-2 hafta ürünü kullan.**
-
-**Not al:**
-
-- Nerede sıkıldın?
-- Nerede kafan karıştı?
-- Neye tekrar tıkladın?
-- Hangi bilgi eksik geldi?
-
-**Çünkü artık:**
-
-
-### Yeni karar oluşturdu mu?
-
-✅ Evet. Kayıt önerim:
-
-- ADR-P2-011 → **Accepted**
-
-### Dokümantasyon güncellemesi gerekiyor mu?
-
-✅ Evet. Etkilenen belgeler:
-
-- `DECISIONS.md`
-- `PROJECT_STATUS.md`
+- `docs/DECISIONS.md`
+- `docs/PROJECT_STATUS.md`
 - `MIMAR_KARARI.md`
 
 ---
@@ -206,9 +288,10 @@ Kapanış kriterleri:
 | P4-005 Source Centric Drawer | ✅ KAPANDI |
 | P4-006 Günün Kelimesi | ✅ KAPANDI |
 | Search Experience Sprint | ✅ KAPANDI |
+| Faz 2 | 🟡 Exit Review |
+| P4-007 Release & Delivery | 🚀 Başlatılabilir |
 
 **Ve şu andan sonra:**
-
 
 **moduna geçtiğinizi kabul ediyorum.**
 
@@ -249,285 +332,6 @@ Yani artık **yeni özellikten çok:**
 
 ---
 
-**Karar Tarihi:** 2026-09-24
-**Durum:** ✅ FAZ 4 KAPANDI
-**Sonraki Adım:** Kullanım + Gözlem + Geri Bildirim
-**İmza:** Mimar
-
-
----
-
-## 📌 MİMAR KARARI (v3) - 2026-09-24
-
-### Aktif Faz ve Kapsam
-
-Şu anda elimizde:
-
-- ✅ TypeScript PASS
-- ✅ Build PASS
-- ✅ 62 / 62 Test Files PASS
-- ✅ 193 / 193 Test PASS
-- ✅ Android APK çalışıyor
-- ✅ Vercel yayında
-
-**Tamamlananlar:**
-- ✅ Search Experience
-- ✅ Source Drawer
-- ✅ Günün Kelimesi
-
-**Bu artık "bitmemiş sprint" görünümü değil. Bu:**
-
-**görünümü.**
-
-### Karar ve Gerekçe
-
-**Ancak şu noktada sana tamamen katılıyorum:**
-
-**Bu durumda benim önceki:**
-
-**önerim ideal dünya içindi.**
-
-**Senin proje ritminde bence mantıklı değil.**
-
-### Benim Güncel Öncelik Sıram
-
-#### 🥇 APK → Gerçek Release Süreci
-
-**Çünkü:**
-- APK ✅
-- Ama Release hattı ❌
-
-**henüz bitmedi.**
-
-**Eksikler:**
-- AAB
-- Release Keystore
-- Versioning
-- Store Assets
-- Release Pipeline
-
-#### 🥈 Metadata Konsolidasyonu
-
-**Şu teknik borç:**
-
-**önerim ideal dünya içindi.**
-
-**Senin proje ritminde bence mantıklı değil.**
-
-### Benim Güncel Öncelik Sıram
-
-#### 🥇 APK → Gerçek Release Süreci
-
-**Çünkü:**
-- APK ✅
-- Ama Release hattı ❌
-
-**henüz bitmedi.**
-
-**Eksikler:**
-- AAB
-- Release Keystore
-- Versioning
-- Store Assets
-- Release Pipeline
-
-#### 🥈 Metadata Konsolidasyonu
-
-**Şu teknik borç:**
-
-**çifti.**
-
-**Küçük ama gerçek borç. Kapatılması mantıklı.**
-
-#### 🥉 İçerik Kalitesi Sprinti
-
-**Özellikle:**
-- Abaze
-- AIG
-- ThreeVolumes
-
-**kaynaklarının render kalitesi.**
-
-### Benim Faz Kapatma Kararım
-
-**Şunları artık yeniden açmam:**
-
-- ❌ SearchBox
-- ❌ Dil Filtresi
-- ❌ Lehçe Filtresi
-- ❌ Akıllı Klavye
-- ❌ Drawer Layout
-
-**Çünkü bu alanlarda çok döndünüz.**
-
-### Gerçek Sıradaki Teknik Sprint
-
-**Ben olsam şu adı veririm:**
-
-**İçerik:**
-- ✅ Release APK
-- ✅ AAB
-- ✅ Keystore
-- ✅ Distribution
-- ✅ Store Readiness
-
-**Bu yeni kullanıcıya doğrudan değer üretir.**
-
-### Mimar Son Kararı
-
-**Benim planımda şu an:**
-
-- ✅ P4-005 Kapalı
-- ✅ P4-006 Kapalı
-- ✅ Search Experience Kapalı
-
-**ve yeni açılacak paket:**
-
-**olur.**
-
-**Yani ben artık filtre veya drawer tarafına değil, ürünü dağıtılabilir hale getirmeye odaklanırdım.**
-
-**Bu noktada en yüksek getirili teknik iş o görünüyor.** 💙🚀
-
----
-
-## 🎯 P4-007 RELEASE & DELIVERY SPRINT
-
-### Kapsam
-
-| # | İş | Durum |
-|:-:|:---|:------|
-| 1 | Release APK | ✅ Tamamlandı |
-| 2 | AAB (Android App Bundle) | ⏳ Bekliyor |
-| 3 | Keystore | ✅ Tamamlandı |
-| 4 | Distribution | ⏳ Bekliyor |
-| 5 | Store Readiness | ⏳ Bekliyor |
-| 6 | Store Metadata | ⏳ Bekliyor |
-| 7 | Privacy Policy | ✅ Tamamlandı |
-| 8 | Store Screenshots | ⏳ Bekliyor |
-
-### Sonraki Adımlar
-
-1. **AAB oluştur** (`./gradlew bundleRelease`)
-2. **Versioning** (`versionCode`, `versionName`)
-3. **Store Assets** (screenshots, feature graphic)
-4. **Distribution** (GitHub Release, F-Droid, Play Store)
-5. **Store Metadata** (açıklamalar, anahtar kelimeler)
-
-### Öncelik Sırası
-
-**olur.**
-
-**Yani ben artık filtre veya drawer tarafına değil, ürünü dağıtılabilir hale getirmeye odaklanırdım.**
-
-**Bu noktada en yüksek getirili teknik iş o görünüyor.** 💙🚀
-
----
-
-## 🎯 P4-007 RELEASE & DELIVERY SPRINT
-
-### Kapsam
-
-| # | İş | Durum |
-|:-:|:---|:------|
-| 1 | Release APK | ✅ Tamamlandı |
-| 2 | AAB (Android App Bundle) | ⏳ Bekliyor |
-| 3 | Keystore | ✅ Tamamlandı |
-| 4 | Distribution | ⏳ Bekliyor |
-| 5 | Store Readiness | ⏳ Bekliyor |
-| 6 | Store Metadata | ⏳ Bekliyor |
-| 7 | Privacy Policy | ✅ Tamamlandı |
-| 8 | Store Screenshots | ⏳ Bekliyor |
-
-### Sonraki Adımlar
-
-1. **AAB oluştur** (`./gradlew bundleRelease`)
-2. **Versioning** (`versionCode`, `versionName`)
-3. **Store Assets** (screenshots, feature graphic)
-4. **Distribution** (GitHub Release, F-Droid, Play Store)
-5. **Store Metadata** (açıklamalar, anahtar kelimeler)
-
-### Öncelik Sırası
-
-**olur.**
-
-**Yani ben artık filtre veya drawer tarafına değil, ürünü dağıtılabilir hale getirmeye odaklanırdım.**
-
-**Bu noktada en yüksek getirili teknik iş o görünüyor.** 💙🚀
-
----
-
-## 🎯 P4-007 RELEASE & DELIVERY SPRINT
-
-### Kapsam
-
-| # | İş | Durum |
-|:-:|:---|:------|
-| 1 | Release APK | ✅ Tamamlandı |
-| 2 | AAB (Android App Bundle) | ⏳ Bekliyor |
-| 3 | Keystore | ✅ Tamamlandı |
-| 4 | Distribution | ⏳ Bekliyor |
-| 5 | Store Readiness | ⏳ Bekliyor |
-| 6 | Store Metadata | ⏳ Bekliyor |
-| 7 | Privacy Policy | ✅ Tamamlandı |
-| 8 | Store Screenshots | ⏳ Bekliyor |
-
-### Sonraki Adımlar
-
-1. **AAB oluştur** (`./gradlew bundleRelease`)
-2. **Versioning** (`versionCode`, `versionName`)
-3. **Store Assets** (screenshots, feature graphic)
-4. **Distribution** (GitHub Release, F-Droid, Play Store)
-5. **Store Metadata** (açıklamalar, anahtar kelimeler)
-
-### Öncelik Sırası
-
-**olur.**
-
-**Yani ben artık filtre veya drawer tarafına değil, ürünü dağıtılabilir hale getirmeye odaklanırdım.**
-
-**Bu noktada en yüksek getirili teknik iş o görünüyor.** 💙🚀
-
----
-
-## 🎯 P4-007 RELEASE & DELIVERY SPRINT
-
-### Kapsam
-
-| # | İş | Durum |
-|:-:|:---|:------|
-| 1 | Release APK | ✅ Tamamlandı |
-| 2 | AAB (Android App Bundle) | ⏳ Bekliyor |
-| 3 | Keystore | ✅ Tamamlandı |
-| 4 | Distribution | ⏳ Bekliyor |
-| 5 | Store Readiness | ⏳ Bekliyor |
-| 6 | Store Metadata | ⏳ Bekliyor |
-| 7 | Privacy Policy | ✅ Tamamlandı |
-| 8 | Store Screenshots | ⏳ Bekliyor |
-
-### Sonraki Adımlar
-
-1. **AAB oluştur** (`./gradlew bundleRelease`)
-2. **Versioning** (`versionCode`, `versionName`)
-3. **Store Assets** (screenshots, feature graphic)
-4. **Distribution** (GitHub Release, F-Droid, Play Store)
-5. **Store Metadata** (açıklamalar, anahtar kelimeler)
-
-### Öncelik Sırası
-
----
-
-**Karar Tarihi:** 2026-09-24
-**Durum:** ✅ P4-007 AÇILDI
-**Sonraki Adım:** Release & Delivery Sprint
-**İmza:** Mimar
-cd E:\projeler\Cerkesce\android
-./gradlew bundleRelease
-
-
-
----
-
 ## 📌 P4-007 RELEASE & DELIVERY - TAMAMLANDI (2026-09-24)
 
 ### Yapılanlar
@@ -545,9 +349,9 @@ cd E:\projeler\Cerkesce\android
 
 ### GitHub Release
 
-**URL:** https://github.com/ztumanog/cerkesce/releases/tag/v1.0.0-stable
-**Tag:** `v1.0.0-stable`
-**Assets:** `cerkesce-sozluk-v1.0.apk` (4.7 MB)
+- **URL:** https://github.com/ztumanog/cerkesce/releases/tag/v1.0.0-stable
+- **Tag:** `v1.0.0-stable`
+- **Assets:** `cerkesce-sozluk-v1.0.apk` (4.7 MB)
 
 ### Sonraki Adımlar
 
@@ -556,147 +360,11 @@ cd E:\projeler\Cerkesce\android
 - ⏳ Store Screenshots
 - ⏳ F-Droid (opsiyonel)
 
-
 ---
 
-## 📌 MİMAR KARARI (v4) - 2026-09-24
-
-### Faz 2 Exit Review
-
-**Karar:** FAZ 2'yi bugün **KAPATMAM.** Ama **Faz 2 Exit Review** başlatırım.
-
-**Sebep:** Elinizdeki sistem artık Faz 2 hedeflerini **fiilen karşılıyor.**
-
-### Faz 2 Resmi Hedefleri
-
-- ✅ TranslationRepository
-- ✅ TranslationEntry
-- ✅ TranslationGroup
-- ✅ TranslationTable
-- ✅ MultiLanguage Search
-- ✅ Reverse Translation Search
-- ✅ Cross Dictionary Matching
-
-### Mevcut Durum
-
-- ✅ TranslationRepository
-- ✅ Reverse Search
-- ✅ Multi Language Search
-- ✅ Cross Dictionary Matching
-- ✅ Translation Table mantığı
-- ✅ Filter Flow
-- ✅ Dictionary Metadata
-
-### Faz Durumu Değişikliği
-
-### Riskler / Çelişkiler
-
-Kapanış öncesi kontrol edilmesi gereken üç konu:
-
-| # | Konu | Durum |
-|:-:|:-----|:------|
-| 1 | Metadata (`getDictMeta` / `resolveSourceMetadata`) | Düşük öncelik |
-| 2 | Dil kodları (`0.ady` sızıntısı) | Düşük öncelik |
-| 3 | MULTI stratejisi (tek grup kalsın mı?) | Şimdilik evet |
-
-**Not:** Bunlar **kritik borç değil**, faz kapanış notuna girer.
-
-### Yeni Karar
-
-**ADR-P2-012: Phase 2 Closure Review**
-
-- **Status:** Review
-- **Phase 2 functional goals:** Completed
-- **Closure review:** Initiated
-- **Outstanding:** Metadata, `0.ady`, `MULTI`
-
-### Dokümantasyon Güncellemesi
-
-Etkilenecek belgeler:
-- `PHASES.md`
-- `PROJECT_STATUS.md`
-- `DECISIONS.md`
-
-### Nihai Mimar Kararı
-
-> **"Ben bugün FAZ 2'Yİ KAPATMAM. Ama Faz 2 Exit Review başlatırım. Çünkü elinizdeki sistem artık Faz 2 hedeflerini fiilen karşılıyor. Bir sonraki adım: Phase 2 Exit Review dokümantasyonu ve resmi kapanış kontrol listesi."** 💙🚀
-
-
----
-
-## 📌 MİMAR KARARI (v4) - 2026-09-24
-
-### Faz Kapatma Onayı
-
-Şu paketler **kapanmıştır:**
-
-| Paket | Durum |
-|:------|:------|
-| P4-005 Source Centric Drawer | ✅ KAPANDI |
-| P4-006 Günün Kelimesi Enrichment | ✅ KAPANDI |
-| Search Experience Sprint | ✅ KAPANDI |
-
-**Gerekçe:**
-- ✅ TypeScript PASS
-- ✅ Build PASS
-- ✅ 62 / 62 Test Files PASS
-- ✅ 193 / 193 Tests PASS
-- ✅ Android APK çalışıyor
-- ✅ Vercel yayında
-
-### Bir Düzeltme
-
-Raporda:
-
-yazmak yerine:
-
-yazarım.
-
-Çünkü hâlâ:
-- `getDictMeta()` / `resolveSourceMetadata()` çifti duruyor
-- `0.ady` backend temizliği var
-
-**Bunlar kritik değiller ama yok da değiller.**
-
-### Faz 2 Konusu
-
-**Önemli ayrım:**
-
-- ✅ **P4-005, P4-006, Search Experience** → **KAPANDI**
-- 🟡 **FAZ 2** → **Exit Review** (henüz **Closed** değil)
-
-**Çünkü anayasal olarak Faz 2'nin resmi kapanış kriterleri:**
-- TranslationRepository
-- TranslationGroup
-- TranslationEntry
-- Cross Dictionary Matching
-- Reverse Translation Search
-- TranslationTable
-
-**Resmi karar:**
-
-
-yazarım.
-
-Çünkü hâlâ:
-- `getDictMeta()` / `resolveSourceMetadata()` çifti duruyor
-- `0.ady` backend temizliği var
-
-**Bunlar kritik değiller ama yok da değiller.**
-
-### Faz 2 Konusu
-
-**Önemli ayrım:**
-
-- ✅ **P4-005, P4-006, Search Experience** → **KAPANDI**
-- 🟡 **FAZ 2** → **Exit Review** (henüz **Closed** değil)
-
-**Çünkü anayasal olarak Faz 2'nin resmi kapanış kriterleri:**
-- TranslationRepository
-- TranslationGroup
-- TranslationEntry
-- Cross Dictionary Matching
-- Reverse Translation Search
-- TranslationTable
-
-**Resmi karar:**
+**Karar Tarihi:** 2026-09-24
+**Durum:** ✅ FAZ 4 KAPANDI + P4-007 TAMAMLANDI
+**Sonraki Adım:** Kullanım + Gözlem + Geri Bildirim
+**İmza:** Mimar
+cd E:\projeler\Cerkesce
+(Get-Content "MIMAR_KARARI.md").Count
