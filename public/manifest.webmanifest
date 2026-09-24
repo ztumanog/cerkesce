@@ -1,4 +1,5 @@
 {
+  "id": "/",
   "name": "Çerkesçe Sözlük",
   "short_name": "Çerkesçe",
   "description": "Çerkesçe - Türkçe - İngilizce - Rusça - Arapça Sözlük",
@@ -7,6 +8,7 @@
   "display": "standalone",
   "orientation": "portrait",
   "dir": "ltr",
+  "lang": "tr",
   "background_color": "#fbf8ef",
   "theme_color": "#d97706",
   "icons": [
@@ -34,5 +36,15 @@
       "sizes": "512x512",
       "purpose": "maskable"
     }
-  ]
+  ],
+  "screenshots": [
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Çerkesçe Sözlük ana ekran"
+    }
+  ],
+  "categories": ["education", "books", "reference"]
 }

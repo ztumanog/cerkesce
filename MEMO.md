@@ -78,3 +78,86 @@
 
 **Hazirlayan:** Gemos
 **Versiyon:** 2.0
+
+---
+
+## ✅ P4-009: Drawer Semantik Sunum (2026-09-24)
+
+### Tamamlanan
+
+- **`cleanHtml.tsx`** → HTML etiketlerini KORUR (silmez)
+  - `&lt;` ve `&gt;` korunur
+  - Entity'ler çözülür
+  - Fazla boşluklar temizlenir
+
+- **`SectionRenderer`** → `dangerouslySetInnerHTML` eklendi
+  - `plain` → HTML direct render
+  - `arabic` → HTML direct render
+  - `example` → HTML direct render
+  - `related` → HTML direct render
+  - `suffix` → HTML direct render
+
+- **`sourceContentNormalizer.ts`** → `buildSections` basitleştirildi
+  - `~`, `♦`, `а)`, `б)` ayrımı
+  - Roman (I, II) ve Arabic (1., 2.) desteği
+
+- **`dictionaries.json`** → `displayName` düzeltildi (34 kayıt)
+  - `"Türkçe-Adıgece", Abaze, İ., ...` → `Abaze (2005)`
+
+### Sonuç
+
+- `I`, `II` → **bold**
+- `1.`, `2.` → **bold + sol çizgi**
+- `1)`, `2)` → **yeşil numara**
+- `◊`, `♦` → **sarı elmas**
+- `/`, `~` → **mavi eğik çizgi**
+- `а)`, `б)` → **peru rengi**
+- HTML **doğrudan render** ediliyor
+- Çerkesçe/Rusça ayrımı **otomatik**
+
+### Doğrulama
+
+- ✅ `npx tsc --noEmit` PASS
+- ✅ `npm test` → 62/62 PASS, 193/193 PASS
+
+
+---
+
+## ✅ P4-009: Drawer Semantik Sunum (2026-09-24)
+
+### Tamamlanan
+
+- **`cleanHtml.tsx`** → HTML etiketlerini KORUR (silmez)
+  - `&lt;` ve `&gt;` korunur
+  - Entity'ler çözülür
+  - Fazla boşluklar temizlenir
+
+- **`SectionRenderer`** → `dangerouslySetInnerHTML` eklendi
+  - `plain` → HTML direct render
+  - `arabic` → HTML direct render
+  - `example` → HTML direct render
+  - `related` → HTML direct render
+  - `suffix` → HTML direct render
+
+- **`sourceContentNormalizer.ts`** → `buildSections` basitleştirildi
+  - `~`, `♦`, `а)`, `б)` ayrımı
+  - Roman (I, II) ve Arabic (1., 2.) desteği
+
+- **`dictionaries.json`** → `displayName` düzeltildi (34 kayıt)
+  - `"Türkçe-Adıgece", Abaze, İ., ...` → `Abaze (2005)`
+
+### Sonuç
+
+- `I`, `II` → **bold**
+- `1.`, `2.` → **bold + sol çizgi**
+- `1)`, `2)` → **yeşil numara**
+- `◊`, `♦` → **sarı elmas**
+- `/`, `~` → **mavi eğik çizgi**
+- `а)`, `б)` → **peru rengi**
+- HTML **doğrudan render** ediliyor
+- Çerkesçe/Rusça ayrımı **otomatik**
+
+### Doğrulama
+
+- ✅ `npx tsc --noEmit` PASS
+- ✅ `npm test` → 62/62 PASS, 193/193 PASS

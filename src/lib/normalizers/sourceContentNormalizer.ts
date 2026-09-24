@@ -21,8 +21,6 @@ import { temizleHtml } from '@/utils/cleanHtml';
 import { kaynagiDuzenle } from '@/utils/helpers';
 import { resolveSourceMetadata } from './sourceMetadataResolver';
 
-
-
 // ============================================================
 // Lehçe kodunu Türkçeleştir
 // ============================================================
@@ -32,20 +30,20 @@ function cleanDialect(dialect: unknown): string {
   const raw = dialect.trim().toLowerCase();
 
   const DIALECT_MAP: Record<string, string> = {
-    'western': 'Batı',
-    'bati': 'Batı',
-    'batı': 'Batı',
-    'west': 'Batı',
-    'ady': 'Adıge',
-    'adige': 'Adıge',
-    'adıge': 'Adıge',
-    'eastern': 'Doğu',
-    'dogu': 'Doğu',
-    'doğu': 'Doğu',
-    'east': 'Doğu',
-    'kbd': 'Kabardey',
-    'kabardey': 'Kabardey',
-    'kabardeyce': 'Kabardey',
+    western: 'Batı',
+    bati: 'Batı',
+    batı: 'Batı',
+    west: 'Batı',
+    ady: 'Adıge',
+    adige: 'Adıge',
+    adıge: 'Adıge',
+    eastern: 'Doğu',
+    dogu: 'Doğu',
+    doğu: 'Doğu',
+    east: 'Doğu',
+    kbd: 'Kabardey',
+    kabardey: 'Kabardey',
+    kabardeyce: 'Kabardey',
   };
 
   return DIALECT_MAP[raw] || dialect;
@@ -59,20 +57,36 @@ function cleanLangCode(lang: unknown): string {
 
   const raw = lang
     .toLowerCase()
-    .replace(/^\d+\./, '')       // "31." önekini sil
-    .replace(/[^a-z]/g, '')      // sadece harfler
+    .replace(/^\d+\./, '')
+    .replace(/[^a-z]/g, '')
     .trim();
 
-  // ⭐ Dil kodu → ISO 639-1 (2 harf) eşleme
   const LANG_MAP: Record<string, string> = {
-    'tr': 'tr', 'tu': 'tr', 'tur': 'tr', 'turkish': 'tr',
-    'ady': 'ady', 'adige': 'ady', 'adıge': 'ady', 'circassian': 'ady',
-    'kbd': 'kbd', 'kabardey': 'kbd',
-    'ru': 'ru', 'rus': 'ru', 'russian': 'ru',
-    'en': 'en', 'eng': 'en', 'english': 'en',
-    'ar': 'ar', 'ara': 'ar', 'arabic': 'ar',
-    'de': 'de', 'ger': 'de', 'deu': 'de',
-    'fr': 'fr', 'fra': 'fr', 'fre': 'fr',
+    tr: 'tr',
+    tu: 'tr',
+    tur: 'tr',
+    turkish: 'tr',
+    ady: 'ady',
+    adige: 'ady',
+    adıge: 'ady',
+    circassian: 'ady',
+    kbd: 'kbd',
+    kabardey: 'kbd',
+    ru: 'ru',
+    rus: 'ru',
+    russian: 'ru',
+    en: 'en',
+    eng: 'en',
+    english: 'en',
+    ar: 'ar',
+    ara: 'ar',
+    arabic: 'ar',
+    de: 'de',
+    ger: 'de',
+    deu: 'de',
+    fr: 'fr',
+    fra: 'fr',
+    fre: 'fr',
   };
 
   return LANG_MAP[raw] || raw;
@@ -81,6 +95,85 @@ function cleanLangCode(lang: unknown): string {
 // ============================================================
 // buildSections — Ham metni hiyerarşik bölümlere ayırır
 // ============================================================
+// ============================================================
+// splitMarkers - text icindeki ~, ♦, а), б), в) isaretlerini ayirir
+// ============================================================
+function splitMarkers(txt: string): SourceSection[] {
+  const result: SourceSection[] = [];
+
+  // а), б), в), г), д), е), ж), з), и), к) - Rusca harf isaretleri
+  const letterMarkers = ['а', 'б', 'в', 'г', 'д', 'е', 'ж', 'з', 'и', 'к'];
+
+  // Once ~ ile ayir
+  const tildeParts = txt.split('~');
+  if (tildeParts.length > 1) {
+    // Ilk parca (tilde oncesi) → parent text
+    if (tildeParts[0].trim()) {
+      // а), б) varsa onlari da ayir
+      const subParts = splitLetterMarkers(tildeParts[0].trim(), letterMarkers);
+      result.push(...subParts);
+    }
+    // Sonraki parcalar → related
+    for (let i = 1; i < tildeParts.length; i++) {
+      const part = tildeParts[i].trim();
+      if (part) {
+        result.push({
+          type: 'related',
+          label: '~',
+          text: part,
+        });
+      }
+    }
+  } else {
+    // ~ yoksa, а), б) ayir
+    result.push(...splitLetterMarkers(txt, letterMarkers));
+  }
+
+  return result;
+}
+
+// а), б), в) ayir
+function splitLetterMarkers(txt: string, markers: string[]): SourceSection[] {
+  const result: SourceSection[] = [];
+  const pattern = new RegExp(`(${markers.join('|')})\\)`, 'g');
+  const parts = txt.split(pattern);
+
+  if (parts.length === 1) {
+    return [{ type: 'plain', label: '', text: txt }];
+  }
+
+  let currentLabel = '';
+  let currentText = '';
+
+  for (let i = 0; i < parts.length; i++) {
+    const part = parts[i];
+    if (markers.includes(part)) {
+      // Marker bulundu
+      if (currentText.trim()) {
+        result.push({
+          type: 'example',
+          label: currentLabel ? `${currentLabel})` : '',
+          text: currentText.trim(),
+        });
+      }
+      currentLabel = part;
+      currentText = '';
+    } else {
+      currentText += part;
+    }
+  }
+
+  if (currentText.trim()) {
+    result.push({
+      type: 'example',
+      label: currentLabel ? `${currentLabel})` : '',
+      text: currentText.trim(),
+    });
+  }
+
+  return result;
+}
+
 function buildSections(text: string): SourceSection[] {
   const sections: SourceSection[] = [];
   const lines = text
@@ -88,101 +181,110 @@ function buildSections(text: string): SourceSection[] {
     .map((l) => l.trim())
     .filter(Boolean);
 
-  let currentRoman: SourceSection | null = null;
-  let currentArabic: SourceSection | null = null;
-
   for (const line of lines) {
-    if (/^[IVX]+$/i.test(line)) {
-      currentRoman = {
+    // ---- 1) ROMAN: "I", "II", "III" (buyuk harf, tek basina) ----
+    if (/^[IVX]+$/.test(line)) {
+      sections.push({
         type: 'roman',
         label: line,
         text: '',
-        children: [],
-      };
-      sections.push(currentRoman);
-      currentArabic = null;
+      });
       continue;
     }
 
-    const arabicMatch = line.match(/^(\d+)\.\s*(.*)$/);
+    // ---- 2) ARABIC: "1.", "2)", "3." ----
+    const arabicMatch = line.match(/^(\d+)[\.\)]\s*(.*)$/);
     if (arabicMatch) {
-      const text = arabicMatch[2].trim();
-      currentArabic = {
+      const txt = arabicMatch[2].trim();
+
+      // ~ varsa ayir
+      if (txt.includes('~')) {
+        const parts = txt.split('~');
+        if (parts[0].trim()) {
+          sections.push({
+            type: 'arabic',
+            label: `${arabicMatch[1]}.`,
+            text: parts[0].trim(),
+          });
+        }
+        for (let i = 1; i < parts.length; i++) {
+          if (parts[i].trim()) {
+            sections.push({
+              type: 'related',
+              label: '~',
+              text: parts[i].trim(),
+            });
+          }
+        }
+        continue;
+      }
+
+      // ♦ varsa ayir
+      if (txt.includes('♦')) {
+        const parts = txt.split('♦');
+        if (parts[0].trim()) {
+          sections.push({
+            type: 'arabic',
+            label: `${arabicMatch[1]}.`,
+            text: parts[0].trim(),
+          });
+        }
+        for (let i = 1; i < parts.length; i++) {
+          if (parts[i].trim()) {
+            sections.push({
+              type: 'example',
+              label: '♦',
+              text: parts[i].trim(),
+            });
+          }
+        }
+        continue;
+      }
+
+      sections.push({
         type: 'arabic',
         label: `${arabicMatch[1]}.`,
-        text,
-        children: [],
-      };
-      if (currentRoman) {
-        currentRoman.children!.push(currentArabic);
-      } else {
-        sections.push(currentArabic);
-      }
+        text: txt,
+      });
       continue;
     }
 
-    if (line.startsWith('◊')) {
-      const ex: SourceSection = {
+    // ---- 3) EXAMPLE: "◊" veya "♦" ----
+    if (line.startsWith('◊') || line.startsWith('♦')) {
+      sections.push({
         type: 'example',
-        label: '◊',
+        label: line.charAt(0),
         text: line.slice(1).trim(),
-      };
-      if (currentArabic) currentArabic.children!.push(ex);
-      else if (currentRoman) currentRoman.children!.push(ex);
-      else sections.push(ex);
+      });
       continue;
     }
 
-    if (line.startsWith('/')) {
-      const rel: SourceSection = {
+    // ---- 4) RELATED: "/" veya "~" ----
+    if (line.startsWith('/') || line.startsWith('~')) {
+      sections.push({
         type: 'related',
-        label: '/',
+        label: line.charAt(0),
         text: line.slice(1).trim(),
-      };
-      if (currentArabic) currentArabic.children!.push(rel);
-      else if (currentRoman) currentRoman.children!.push(rel);
-      else sections.push(rel);
+      });
       continue;
     }
 
+    // ---- 5) DASH: "-" ----
     if (line.startsWith('-') && !line.startsWith('--')) {
-      const sfx: SourceSection = {
-        type: 'suffix',
+      sections.push({
+        type: 'example',
         label: '-',
         text: line.slice(1).trim(),
-      };
-      if (currentArabic) currentArabic.children!.push(sfx);
-      else if (currentRoman) currentRoman.children!.push(sfx);
-      else sections.push(sfx);
+      });
       continue;
     }
 
-    const firstChar = line.charAt(0);
-    const isUpper =
-      firstChar === firstChar.toUpperCase() &&
-      firstChar !== firstChar.toLowerCase() &&
-      /[A-ZА-ЯЁӀ]/.test(firstChar);
-
-    if (isUpper && line.length > 3) {
-      const rel: SourceSection = {
-        type: 'related',
-        label: '',
-        text: line,
-      };
-      if (currentArabic) currentArabic.children!.push(rel);
-      else if (currentRoman) currentRoman.children!.push(rel);
-      else sections.push(rel);
-      continue;
-    }
-
-    const plain: SourceSection = {
+    // ---- 6) PLAIN ----
+    sections.push({
       type: 'plain',
       label: '',
       text: line,
-    };
-    if (currentArabic) currentArabic.children!.push(plain);
-    else if (currentRoman) currentRoman.children!.push(plain);
-    else sections.push(plain);
+    });
   }
 
   return sections;
@@ -218,8 +320,6 @@ export function normalizeToSourceContents(
       if (typeof k !== 'object' || k === null) return;
       const item = k as Record<string, unknown>;
 
-
-      
       // ⭐ sourceFile öncelikli — kesin eşleşme
       const sourceKey =
         (item.sourceFile as string) ||
@@ -231,36 +331,38 @@ export function normalizeToSourceContents(
       // ⭐ Metadata (sourceFile → dictionaries.json)
       const meta = resolveSourceMetadata(sourceKey);
 
-    // ⭐ Öncelik sırası: meta (dictionaries.json) → item (fallback)
-const sourceLanguage =
-  meta.sourceLanguage ||                 // ← "tr" (ISO)
-  cleanLangCode(item.sourceLanguage) ||  // ← fallback: "tur" → "tr"
-  cleanLangCode(item.kaynakDil) ||
-  '';
+      // ⭐ Öncelik sırası: meta (dictionaries.json) → item (fallback)
+      const sourceLanguage =
+        meta.sourceLanguage ||
+        cleanLangCode(item.sourceLanguage) ||
+        cleanLangCode(item.kaynakDil) ||
+        '';
 
-const targetLanguage =
-  meta.targetLanguage ||                 // ← "ady" (ISO)
-  cleanLangCode(item.targetLanguage) ||  // ← fallback
-  cleanLangCode(item.hedefDil) ||
-  '';
+      const targetLanguage =
+        meta.targetLanguage ||
+        cleanLangCode(item.targetLanguage) ||
+        cleanLangCode(item.hedefDil) ||
+        '';
 
- const authorYear = meta.author
-  ? `${meta.author}${meta.year ? ` (${meta.year})` : ''}`
-  : '';
+      const authorYear = meta.author
+        ? `${meta.author}${meta.year ? ` (${meta.year})` : ''}`
+        : '';
 
-const sourceTitle = kaynagiDuzenle(
-  authorYear ||                  // ← "İbrahim Alhas Abaze (2005)"
-  meta.shortLabel ||
-  (item.sözlük as string) ||
-  meta.title ||
-  sourceKey ||
-  `Kaynak #${idx + 1}`
-);
+      // ⭐ Öncelik: shortLabel > displayName > sözlük > title > authorYear > sourceKey
+      const sourceTitle = kaynagiDuzenle(
+        meta.shortLabel ||
+          meta.displayName ||
+          (item.sözlük as string) ||
+          meta.title ||
+          authorYear ||
+          sourceKey ||
+          `Kaynak #${idx + 1}`
+      );
 
       const sourceAuthor =
-        ((item.yazar as string) ||
-          (item.author as string) ||
-          meta.author) ||
+        (item.yazar as string) ||
+        (item.author as string) ||
+        meta.author ||
         undefined;
 
       const sourceYear =
@@ -268,7 +370,7 @@ const sourceTitle = kaynagiDuzenle(
         (item.year as string | number | undefined) ??
         (meta.year as string | number | undefined);
 
-const sourceDialect = cleanDialect(meta.dialect);
+      const sourceDialect = cleanDialect(meta.dialect);
 
       // --- Ham metni topla ---
       const rawParts: string[] = [];
@@ -292,6 +394,7 @@ const sourceDialect = cleanDialect(meta.dialect);
       }
 
       const cleanedText = temizleHtml(rawParts.join('\n'));
+     console.log('CLEANED TEXT:', JSON.stringify(cleanedText));
       const sections = buildSections(cleanedText);
       const flat = flattenSections(sections);
 
@@ -352,4 +455,5 @@ const sourceDialect = cleanDialect(meta.dialect);
 
   return sourceList;
 }
+
 

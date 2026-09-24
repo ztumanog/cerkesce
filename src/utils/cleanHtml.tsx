@@ -1,9 +1,7 @@
 /**
  * @file src/utils/cleanHtml.tsx
- * @description HTML etiketlerini ve entity'leri temizleyerek düz metne çevirir.
- *
- * ADR-P4-005: SourceContentNormalizer tarafından çağrılır.
- * Bağımlılık yok — server + client güvenli.
+ * @description HTML entity'lerini cozer, HTML etiketlerini KORUR.
+ * ADR-P4-005 + Direct Render: HTML dogrudan render edilir.
  */
 
 const ENTITY_MAP: Record<string, string> = {
@@ -22,35 +20,22 @@ const ENTITY_MAP: Record<string, string> = {
   '&reg;': '®',
 };
 
-/**
- * HTML etiketlerini ve entity'leri temizleyerek düz metne çevirir.
- *
- * @example
- * temizleHtml("<div style='margin-left:1em'>псы,</div>")
- * // → "псы,"
- *
- * temizleHtml("<div>a</div><div>b</div>")
- * // → "a\nb"
- */
 export function temizleHtml(html: string): string {
   if (!html || typeof html !== 'string') {
     return '';
   }
 
-  // 1. Blok etiketlerini yeni satıra çevir
-  let text = html
-    .replace(/<\/(?:h[1-6]|p|div|li|tr)>/gi, '\n')
-    .replace(/<br\s*\/?>/gi, '\n');
+  let text = html;
 
-  // 2. Kalan tüm HTML etiketlerini sil
-  text = text.replace(/<[^>]*>/g, '');
-
-  // 3. HTML entity'leri çöz
+  // 1. Entity cozumle (AMA &lt; ve &gt; KORUNUR - HTML icin gerekli)
   text = text.replace(/&[a-zA-Z0-9#]+;/g, (entity) => {
+    // &lt; ve &gt; KORUNUR - bunlar HTML entity olarak kalmali
+    if (entity === '&lt;' || entity === '&gt;') {
+      return entity;
+    }
     if (ENTITY_MAP[entity]) {
       return ENTITY_MAP[entity];
     }
-
     if (entity.startsWith('&#')) {
       const isHex = entity.startsWith('&#x') || entity.startsWith('&#X');
       const code = isHex
@@ -58,13 +43,11 @@ export function temizleHtml(html: string): string {
         : parseInt(entity.slice(2, -1), 10);
       return !isNaN(code) ? String.fromCharCode(code) : entity;
     }
-
     return entity;
   });
 
-  // 4. Fazla boşlukları ve satır sonlarını düzenle
-  return text
-    .replace(/[ \t]+/g, ' ')
-    .replace(/\n\s*\n/g, '\n\n')
-    .trim();
+  // 2. Fazla bosluklari temizle (AMA HTML KORUNUR)
+  text = text.replace(/[ \t]+/g, ' ').trim();
+
+  return text;
 }

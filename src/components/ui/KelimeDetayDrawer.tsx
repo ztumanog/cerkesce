@@ -1,4 +1,4 @@
-﻿'use client';
+'use client';
 
 import React, { useRef, useEffect, useState, useCallback, useMemo } from 'react';
 import {
@@ -126,6 +126,7 @@ function SectionRenderer({
 }) {
   const indent = depth * 12;
 
+  // ---- ROMAN: "I", "II" ----
   if (section.type === 'roman') {
     return (
       <div style={{ marginLeft: indent }} className="mt-3">
@@ -139,15 +140,14 @@ function SectionRenderer({
     );
   }
 
+  // ---- ARABIC: "1.", "2." ----
   if (section.type === 'arabic') {
     return (
-      <div style={{ marginLeft: indent }} className="mt-1.5">
-        <div className="font-semibold text-xs sm:text-sm text-slate-800 dark:text-slate-200">
-          <span className="text-orange-600 dark:text-orange-400 mr-1">
-            {section.label}
-          </span>
-          {section.text}
-        </div>
+      <div style={{ marginLeft: indent }} className="mt-3 mb-2">
+        <p
+          className="text-sm font-bold text-slate-600 dark:text-slate-300 leading-relaxed border-l-2 border-slate-300 dark:border-slate-600 pl-2"
+          dangerouslySetInnerHTML={{ __html: section.text }}
+        />
         {section.children?.map((c, i) => (
           <SectionRenderer key={i} section={c} depth={depth + 1} />
         ))}
@@ -155,25 +155,47 @@ function SectionRenderer({
     );
   }
 
+  // ---- EXAMPLE: "◊" ----
   if (section.type === 'example') {
     return (
       <p
         style={{ marginLeft: indent }}
         className="text-xs sm:text-sm italic text-slate-600 dark:text-slate-400 mt-1"
-      >
-        <span className="text-amber-500 mr-1">◊</span>
-        {section.text}
-      </p>
+        dangerouslySetInnerHTML={{ __html: section.text }}
+      />
     );
   }
 
+  // ---- RELATED: "/" ----
+if (section.type === 'related') {
   return (
     <p
       style={{ marginLeft: indent }}
-      className="text-xs sm:text-sm text-slate-700 dark:text-slate-300 mt-1"
+      className="text-xs sm:text-sm text-sky-700 dark:text-sky-300 mt-1 leading-relaxed"
     >
-      {section.text}
+      <span className="text-sky-500 mr-1 font-bold">{section.label || '~'}</span>
+      <span dangerouslySetInnerHTML={{ __html: section.text }} />
     </p>
+  );
+}
+  // ---- SUFFIX: "-" ----
+  if (section.type === 'suffix') {
+    return (
+      <p
+        style={{ marginLeft: indent }}
+        className="text-xs sm:text-sm text-slate-500 dark:text-slate-500 mt-1 italic"
+        dangerouslySetInnerHTML={{ __html: section.text }}
+      />
+    );
+  }
+
+  // ---- PLAIN: Direkt HTML render ----
+  return (
+    <p
+      style={{ marginLeft: indent }}
+      className="text-xs sm:text-sm text-slate-700 dark:text-slate-300 mt-1 leading-relaxed"
+      dangerouslySetInnerHTML={{ __html: section.text }}
+    />
   );
 }
 
@@ -249,7 +271,6 @@ export default function KelimeDetayDrawer({
     });
   }, [sourceContents, dialectFilter, languageFilter, sozlukFilter]);
 
-  // Sözlük seçenekleri (dile göre gruplu)
   const sozlukGroups = useMemo(() => {
     const groups: Record<string, string[]> = {
       'ÇERKESÇE': [],
@@ -296,7 +317,6 @@ export default function KelimeDetayDrawer({
       }));
   }, [sourceContents]);
 
-  // Sözlük sayıları
   const sozlukCounts = useMemo(() => {
     const counts: Record<string, number> = { ALL: sourceContents.length };
     sourceContents.forEach((source) => {

@@ -2,7 +2,7 @@
   {
     "file": "0.Ady-Ady_AIG.json",
     "title": "Адыгабзэм изэхэф гущı1алъ (Adıgece Açıklamalı Sözlük)",
-    "displayName": "\"Adıgece-Adıgece\", Hatanov, A., Maykop İnsani Bilimler Enstitüsü, 2006",
+    "displayName": "AIG (2006)",
     "dialect": "western",
     "originalTitle": "Адыгабзэм изэхэф гущыӀалъ",
     "author": "Adıgey Sosyal Bilimler Araştırma Enstitüsü (AIG)",
@@ -19,7 +19,7 @@
   {
     "file": "1.Ady-Ady_AP.json",
     "title": "Adıgece-Rusça Sözlük",
-    "displayName": "\"Adıgece-Rusça\", Apaşev, M., Elbrus Yayıncılık, 2008",
+    "displayName": "Apaşev (2008)",
     "dialect": "western",
     "originalTitle": "Адыгэ-урыс псалъалъэ",
     "author": "Prof. Dr. Mirabil L. Apaşev",
@@ -35,7 +35,7 @@
   {
     "file": "10.En-Ady_Adam.json",
     "title": "English-Adyghe Dictionary",
-    "displayName": "\"İngilizce-Adıgece\", Shagash, A., Topluluk Derlemi, 2020",
+    "displayName": "Shagash (2020)",
     "dialect": "western",
     "author": "Adam Shagash",
     "year": "2020",
@@ -50,7 +50,7 @@
   {
     "file": "11.En-Kbd-Jonty.json",
     "title": "English-Kabardian Dictionary",
-    "displayName": "\"İngilizce-Kabardeyce\", Yamisha, J., OptiLingo Dijital, 2018",
+    "displayName": "Yamisha",
     "dialect": "DOGU",
     "author": "Jonty Yamisha",
     "year": "2018",
@@ -64,7 +64,7 @@
   {
     "file": "12.En-Kbd-Ziwar.json",
     "title": "English-Kabardian Circassian Dictionary",
-    "displayName": "\"İngilizce-Kabardeyce\", Gish, Z., Çerkes Net Dijital",
+    "displayName": "Ziwar",
     "dialect": "DOGU",
     "author": "Ziwar Gish (Zıwar Gış)",
     "year": "0000",
@@ -78,7 +78,7 @@
   {
     "file": "13.Kbd-Ar-Jonty.json",
     "title": "Kabardian-Arabic Dictionary (قاموس قباردي - عربي)",
-    "displayName": "\"Kabardeyce-Arapça\", Yamisha, J., OptiLingo Dijital, 2018",
+    "displayName": "Yamisha",
     "dialect": "DOGU",
     "author": "Jonty Yamisha",
     "year": "2018",
@@ -91,7 +91,7 @@
   {
     "file": "14.Kbd-En-2-Jonty.json",
     "title": "Kabardian-English Dictionary (Version 2)",
-    "displayName": "\"Kabardeyce-İngilizce Ek v2\", Yamisha, J., OptiLingo Dijital, 2023",
+    "displayName": "Yamisha v2",
     "dialect": "DOGU",
     "author": "Jonty Yamisha",
     "year": "2023",
@@ -104,7 +104,7 @@
   {
     "file": "15.Kbd-En-Jonty.json",
     "title": "Kabardian-English Dictionary (Version 1)",
-    "displayName": "\"Kabardeyce-İngilizce\", Yamisha, J., OptiLingo Dijital, 2018",
+    "displayName": "Yamisha",
     "dialect": "DOGU",
     "author": "Jonty Yamisha",
     "year": "2018",
@@ -117,7 +117,7 @@
   {
     "file": "16.Kbd-En-Ziwar.json",
     "title": "Kabardian-English Dictionary",
-    "displayName": "\"Kabardeyce-İngilizce\", Gish, Z., Çerkes Net Dijital",
+    "displayName": "Ziwar",
     "dialect": "DOGU",
     "author": "Ziwar Gish",
     "year": "0000",
@@ -130,7 +130,7 @@
   {
     "file": "17.Kbd-En_Amjad.json",
     "title": "Kabardian-English Dictionary",
-    "displayName": "\"Kabardeyce-İngilizce\", Jaimoukha, A., Saname Yayıncılık, 1997",
+    "displayName": "Camuha (1997)",
     "dialect": "DOGU",
     "author": "Amjad Jaimoukha (Amcad Camuha)",
     "year": "1997",
@@ -145,7 +145,7 @@
   {
     "file": "18.Kbd-Ru&En.json",
     "title": "Kabardeyce - Rusça & İngilizce Çok Dilli Sözlük",
-    "displayName": "\"Kabardeyce-Rusça-İngilizce\", Apazhev, M. & Kokov, D., Elbrus Yayıncılık, 2008",
+    "displayName": "Kokov (2008)",
     "dialect": "DOGU",
     "author": "M. L. Apazhev, Dzh. N. Kokov",
     "year": 2008,
@@ -160,7 +160,7 @@
   {
     "file": "19.Kbd-Ru-2-Jonty.json",
     "title": "Кабардинско-русский словарь (Version 2)",
-    "displayName": "\"Kabardeyce-Rusça v2\", Yamisha, J., OptiLingo Dijital, 2018",
+    "displayName": "Yamisha v2",
     "dialect": "DOGU",
     "author": "Jonty Yamisha",
     "year": "2018",
@@ -173,7 +173,7 @@
   {
     "file": "2.Ady-Ara.json",
     "title": "Adıgece-Arapça Sözlük (قاموس شركسي - عربي)",
-    "displayName": "\"Adıgece-Arapça\", Lash, A., Şam Üniversitesi, 2013",
+    "displayName": "Lash (2013)",
     "dialect": "western",
     "author": "Dr. Adel Abdulsalam Lash",
     "year": "2013",
@@ -188,7 +188,7 @@
   {
     "file": "20.Kbd-Ru-Jonty.json",
     "title": "Кабардинско-русский словарь (Version 1)",
-    "displayName": "\"Kabardeyce-Rusça v1\", Yamisha, J., OptiLingo Dijital, 2018",
+    "displayName": "Yamisha v1",
     "dialect": "DOGU",
     "author": "Jonty Yamisha",
     "year": "2018",
@@ -201,7 +201,7 @@
   {
     "file": "21.Kbd-Tu-Jonty.json",
     "title": "Kabardeyce-Türkçe Sözlük",
-    "displayName": "\"Kabardeyce-Türkçe\", Yamisha, J., OptiLingo Dijital, 2018",
+    "displayName": "Yamisha",
     "dialect": "DOGU",
     "author": "Jonty Yamisha",
     "year": "2018",
@@ -214,7 +214,7 @@
   {
     "file": "22.Ru-Kbd-Jonty.json",
     "title": "Русско-кабардинский словарь",
-    "displayName": "\"Rusça-Kabardeyce\", Yamisha, J., OptiLingo Dijital, 2018",
+    "displayName": "Yamisha",
     "dialect": "DOGU",
     "author": "Jonty Yamisha",
     "year": "2018",
@@ -227,7 +227,7 @@
   {
     "file": "23.Rus-Ady_Blaghoj.json",
     "title": "Русско-адыгейский словарь (Rusça-Adıgece Sözlük)",
-    "displayName": "\"Rusça-Adıgece\", Blaghoj, R., Maykop Kitap Yayıncılığı, 1991",
+    "displayName": "Blaghoj (1991)",
     "dialect": "western",
     "author": "Prof. Dr. Ramazan Blaghoj",
     "year": "1991",
@@ -242,7 +242,7 @@
   {
     "file": "24.Rus-Ady_UAG.json",
     "title": "Русско-адыгейский словарь (Rusça-Adıgece Sözlük)",
-    "displayName": "\"Rusça-Adıgece\", Vodozhdokova, H., Devlet Sözlük Yayıncılığı, 1960",
+    "displayName": "Odezhdeko (1960)",
     "dialect": "western",
     "author": "U. A. Gethanoko, X. D. Odezhdeko",
     "year": "1960",
@@ -256,7 +256,7 @@
   {
     "file": "25.Rus-Ady_UASP.json",
     "title": "Русско-адыгейский школьный словарь (Rusça-Adıgece Okul Sözlüğü)",
-    "displayName": "\"Rusça-Adıgece\", UASP, K., Akademik Komisyon",
+    "displayName": "UASP (1991)",
     "dialect": "western",
     "author": "UASP",
     "sourceLanguage": "ru",
@@ -270,7 +270,7 @@
   {
     "file": "26.Tu-Kbd-Jonty.json",
     "title": "Türkçe-Kabardeyce Sözlük",
-    "displayName": "\"Türkçe-Kabardeyce\", Yamisha, J., OptiLingo Dijital, 2018",
+    "displayName": "Yamisha",
     "dialect": "DOGU",
     "author": "Jonty Yamisha",
     "year": "2018",
@@ -283,7 +283,7 @@
   {
     "file": "27.Tur-Ady_Abaze.json",
     "title": "Türkçe-Adıgece (Kabardeyce) Sözlük",
-    "displayName": "\"Türkçe-Adıgece\", Abaze, İ., Ankara Basımı, 2005",
+    "displayName": "Abaze (2005)",
     "dialect": "DOGU",
     "author": "İbrahim Alhas Abaze",
     "publisher": "Ankara",
@@ -298,7 +298,7 @@
   {
     "file": "28.Tur-Ady_Huvaj.json",
     "title": "Türkçe-Çerkesçe Sözlük",
-    "displayName": "\"Türkçe-Adıgece\", Huvaj, F., Ankara Çerkes Derneği, 2007",
+    "displayName": "Huvaj (2007)",
     "dialect": "DOGU",
     "author": "Fahri Huvaj",
     "sourceLanguage": "tr",
@@ -312,7 +312,7 @@
   {
     "file": "29.Tur-Ady_Teshu.json",
     "title": "Türkçe-Adıgece Sözlük",
-    "displayName": "\"Türkçe-Adıgece\", Çelikkıran, M., Maykop Basımı, 1991",
+    "displayName": "Teshu (1991)",
     "dialect": "western",
     "author": "Cevdet Tharkaho, Teshu Hasan",
     "year": "1991",
@@ -327,7 +327,7 @@
   {
     "file": "3.Ady-En.json",
     "title": "Адыгэбзэ-инджылыбзэ гущı1алъэ (Adıgece-İngilizce Sözlük)",
-    "displayName": "\"Adıgece-İngilizce\", Community, D., Dijital Derlem",
+    "displayName": "Derleme",
     "dialect": "western",
     "author": "Çevrim içi dijital veri tabanı",
     "year": "0000",
@@ -340,7 +340,7 @@
   {
     "file": "30.Ady-Rus_ThreeVolumes.json",
     "title": "Толковый словарь адыгейского языка в 3-х томах (3 Ciltlik Açıklamalı Sözlük)",
-    "displayName": "\"Adıgece-Rusça\", Tharkaho, Y., Maykop Enstitüsü, 1991",
+    "displayName": "Enstitü (2011)",
     "dialect": "western",
     "author": "Adıgey Sosyal Bilimler Araştırma Enstitüsü",
     "year": "2011",
@@ -354,7 +354,7 @@
   {
     "file": "31.Tu-Ady_Hilmi.json",
     "title": "Türkçe-Adıgece Sözlük",
-    "displayName": "\"Türkçe-Adıgece\", Açumıj, H., Kafdav Yayınları, 2013",
+    "displayName": "Hilmi (2013)",
     "dialect": "western",
     "author": "Açumıj Hilmi",
     "year": "2013",
@@ -369,7 +369,7 @@
   {
     "file": "32.Rus-Kbd_Nalchik_2013.json",
     "title": "Русско-кабардино-черкесский словарь для школ",
-    "displayName": "\"Rusça-Kabardeyce\", Komisyon, N., Kabardey-Balkar Enstitüsü, 2013",
+    "displayName": "Nalçik (2013)",
     "dialect": "DOGU",
     "author": "Kabardey-Balkar Sosyal Bilimler Enstitüsü",
     "publisher": "El-Fa Yayınları, Nalçik",
@@ -384,7 +384,7 @@
   {
     "file": "33.Ady-Rus-1960.json",
     "title": "Адыгейско-русский словарь (Adıgece-Rusça Sözlük)",
-    "displayName": "\"Adıgece-Rusça\", Komisyon, E., Eğitim Bakanlığı Basımı, 1960",
+    "displayName": "Şıgaje (1960)",
     "dialect": "western",
     "year": "1960",
     "sourceLanguage": "ady",
@@ -398,7 +398,7 @@
   {
     "file": "4.Ady-En_Adam.json",
     "title": "Adyghe-English Dictionary",
-    "displayName": "\"Adıgece-İngilizce\", Shagash, A., Topluluk Derlemi, 2020",
+    "displayName": "Shagash (2020)",
     "dialect": "western",
     "author": "Adam Shagash (Şıgaje Adam)",
     "year": "2020",
@@ -413,7 +413,7 @@
   {
     "file": "5.Ady-Rus_Qarden.json",
     "title": "Кабардинско-русский словарь (Kabardeyce-Rusça Sözlük)",
-    "displayName": "\"Kabardeyce-Rusça\", Kardanov, B., Devlet Yabancı Sözlük Basımı, 1957",
+    "displayName": "Kardanov (1957)",
     "dialect": "DOGU",
     "author": "Prof. Dr. Balo M. Kardanov",
     "year": "1957",
@@ -427,7 +427,7 @@
   {
     "file": "6.Ady-Rus_Sherdjes.json",
     "title": "Kabardeyce/Adıgece-Rusça Sözlük",
-    "displayName": "\"Kabardeyce-Rusça\", Cherkesov, A., Nalçik Elbrus, 1994",
+    "displayName": "Sherdjes (1994)",
     "dialect": "DOGU",
     "originalTitle": "Hak Etmediğimiz Halde Unuttuğumuz Kelimeler",
     "author": "Ali İ. Çerkes (Sherdjes Aliy)",
@@ -443,7 +443,7 @@
   {
     "file": "7.Ady-Rus_Tharkaho.json",
     "title": "Адыгейско-русский словарь (Adıgece-Rusça Sözlük)",
-    "displayName": "\"Adıgece-Rusça\", Tharkaho, Y., Maykop Devlet Enstitüsü",
+    "displayName": "Tharkaho (1991)",
     "dialect": "western",
     "author": "Prof. Dr. Cevdet Tharkaho (Tharkaho Yoxıyt)",
     "total_words": 8636,
@@ -458,7 +458,7 @@
   {
     "file": "8.Ady-Tur_Huvaj.json",
     "title": "Adıgece-Türkçe Sözlük",
-    "displayName": "\"Adıgece-Türkçe\", Huvaj, F., Ankara Çerkes Derneği, 2007",
+    "displayName": "Huvaj",
     "dialect": "western",
     "author": "Fahri Huvaj",
     "year": "2007",
@@ -473,7 +473,7 @@
   {
     "file": "9.En-Ady.json",
     "title": "English-Adyghe Dictionary (İngilizce-Adıgece Sözlük)",
-    "displayName": "\"İngilizce-Adıgece\", Community, D., Dijital Derlem",
+    "displayName": "Dijital",
     "dialect": "western",
     "author": "Çevrim içi dijital korpus",
     "year": "0000",
