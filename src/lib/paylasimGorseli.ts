@@ -9,6 +9,8 @@ import { Filesystem, Directory } from '@capacitor/filesystem';
 import QRCode from 'qrcode';
 
 export interface PaylasimGorseliOptions {
+  cerkesce?: string;
+  kaynaklar?: string[];
   kelime: string;
   cerkesce?:string
   anlam: string;
