@@ -562,3 +562,38 @@ Faz 2 resmi olarak **Exit Review** evresine alınmıştır.
 **Etkilenen Katmanlar:** Tüm sistem
 
 **Referans:** MIMAR_KARARI.md, PROJECT_STATUS.md
+
+
+---
+
+### ADR-P2-012: Phase 2 Closure Review
+
+**Tarih:** 2026-09-24
+**Durum:** Review
+**Faz:** 2
+
+**Karar:**
+Faz 2 resmi olarak Exit Review evresine alinmistir.
+
+**Kapanan Sprint'ler:**
+- P4-005 Source Centric Drawer
+- P4-006 Gunun Kelimesi Enrichment
+- Search Experience Sprint
+
+**Kritik Teknik Borc:** 0
+
+**Dusuk Oncelikli Teknik Borclar:**
+- Metadata consolidation (getDictMeta / resolveSourceMetadata)
+- sourceLanguage "0.ady" cleanup
+- MULTI scaling strategy
+
+**Resmi Statu:**
+Phase 2
+Active
+  |
+  v
+Exit Review
+
+**Etkilenen Katmanlar:** Tum sistem
+
+**Referans:** MIMAR_KARARI.md, docs/PROJECT_STATUS.md
