@@ -24,8 +24,8 @@ export default function PaylasimGorseliModal({
 }: PaylasimGorseliModalProps) {
   const [boyut, setBoyut] = useState<'kare' | 'story'>('kare');
   const paylasimMetni = `📖 ${kelime.kelime}
-🇹🇷 ${kelime.anlam}
-${kelime.cerkesce ? 🇬🇧 ${kelime.cerkesce}` : ''}`;
+🇹🇷 ${kelime.anlam}${kelime.cerkesce ? 
+🇬🇧 ${kelime.cerkesce}` : ''}`;
   const [previewUrl, setPreviewUrl] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
   const [shareLoading, setShareLoading] = useState(false);
@@ -309,3 +309,4 @@ ${kelime.cerkesce ? 🇬🇧 ${kelime.cerkesce}` : ''}`;
     </div>
   );
 }
+
