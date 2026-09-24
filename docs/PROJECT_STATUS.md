@@ -281,3 +281,26 @@ npx vitest run src/tests/ReverseTranslationSearch.test.ts
 ### Referans
 
 - ADR-P2-011 (Filter Flow Audit)
+
+
+---
+
+## P4-009: Drawer Semantik Sunum (2026-09-24)
+
+**Status:** ✅ COMPLETED
+
+### Tamamlanan
+
+- HTML direct render (`dangerouslySetInnerHTML`)
+- `cleanHtml.tsx` → HTML KORU
+- 4 section type güncellendi (`plain`, `arabic`, `example`, `related`, `suffix`)
+- `dictionaries.json` displayName düzeltmesi (34 kayıt)
+
+### Sonuçlar
+
+- Tüm marker'lar renkli (`◊`, `♦`, `/`, `~`, `а)`, `б)`)
+- Bold/italic/girinti korunuyor
+- Çerkesçe/Rusça ayrımı otomatik
+- `tsc --noEmit` PASS
+- 62/62 test dosyası PASS
+- 193/193 test PASS
