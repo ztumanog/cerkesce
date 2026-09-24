@@ -555,3 +555,68 @@ cd E:\projeler\Cerkesce\android
 - ⏳ Store Metadata
 - ⏳ Store Screenshots
 - ⏳ F-Droid (opsiyonel)
+
+
+---
+
+## 📌 MİMAR KARARI (v4) - 2026-09-24
+
+### Faz 2 Exit Review
+
+**Karar:** FAZ 2'yi bugün **KAPATMAM.** Ama **Faz 2 Exit Review** başlatırım.
+
+**Sebep:** Elinizdeki sistem artık Faz 2 hedeflerini **fiilen karşılıyor.**
+
+### Faz 2 Resmi Hedefleri
+
+- ✅ TranslationRepository
+- ✅ TranslationEntry
+- ✅ TranslationGroup
+- ✅ TranslationTable
+- ✅ MultiLanguage Search
+- ✅ Reverse Translation Search
+- ✅ Cross Dictionary Matching
+
+### Mevcut Durum
+
+- ✅ TranslationRepository
+- ✅ Reverse Search
+- ✅ Multi Language Search
+- ✅ Cross Dictionary Matching
+- ✅ Translation Table mantığı
+- ✅ Filter Flow
+- ✅ Dictionary Metadata
+
+### Faz Durumu Değişikliği
+
+### Riskler / Çelişkiler
+
+Kapanış öncesi kontrol edilmesi gereken üç konu:
+
+| # | Konu | Durum |
+|:-:|:-----|:------|
+| 1 | Metadata (`getDictMeta` / `resolveSourceMetadata`) | Düşük öncelik |
+| 2 | Dil kodları (`0.ady` sızıntısı) | Düşük öncelik |
+| 3 | MULTI stratejisi (tek grup kalsın mı?) | Şimdilik evet |
+
+**Not:** Bunlar **kritik borç değil**, faz kapanış notuna girer.
+
+### Yeni Karar
+
+**ADR-P2-012: Phase 2 Closure Review**
+
+- **Status:** Review
+- **Phase 2 functional goals:** Completed
+- **Closure review:** Initiated
+- **Outstanding:** Metadata, `0.ady`, `MULTI`
+
+### Dokümantasyon Güncellemesi
+
+Etkilenecek belgeler:
+- `PHASES.md`
+- `PROJECT_STATUS.md`
+- `DECISIONS.md`
+
+### Nihai Mimar Kararı
+
+> **"Ben bugün FAZ 2'Yİ KAPATMAM. Ama Faz 2 Exit Review başlatırım. Çünkü elinizdeki sistem artık Faz 2 hedeflerini fiilen karşılıyor. Bir sonraki adım: Phase 2 Exit Review dokümantasyonu ve resmi kapanış kontrol listesi."** 💙🚀
