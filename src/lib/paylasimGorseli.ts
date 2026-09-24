@@ -10,6 +10,7 @@ import QRCode from 'qrcode';
 
 export interface PaylasimGorseliOptions {
   kelime: string;
+  cerkesce?:string
   anlam: string;
   ornekler?: string[];
   lehce?: string;

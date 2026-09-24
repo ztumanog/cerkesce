@@ -25,6 +25,7 @@ import type {
   SourceSection,
 } from '@/types/dictionary';
 import { normalizeDrawerContent } from '@/lib/normalizers/drawerContent';
+import PaylasimGorseliModal from '@/components/dictionary/PaylasimGorseliModal';
 import { normalizeToSourceContents } from '@/lib/normalizers/sourceContentNormalizer';
 
 import { resolveSourceMetadata } from '@/lib/normalizers/sourceMetadataResolver';
@@ -185,6 +186,7 @@ export default function KelimeDetayDrawer({
   const kapatBtnRef = useRef<HTMLButtonElement>(null);
 
   const [kopyalandi, setKopyalandi] = useState<boolean>(false);
+  const [paylasimAcik, setPaylasimAcik] = useState<boolean>(false);
   const [hasSpeechSupport, setHasSpeechSupport] = useState<boolean>(false);
 
   const [sozlukFilter, setSozlukFilter] = useState<string>('ALL');
@@ -324,17 +326,9 @@ const name = meta?.displayName || s.sourceName || s.title || 'Kaynak';
     }
   }, [paylasimMetni]);
 
-  const paylas = useCallback(async () => {
-    if (navigator.share && content) {
-      try {
-        await navigator.share({ title: content.word, text: paylasimMetni });
-        return;
-      } catch (err) {
-        if ((err as Error).name === 'AbortError') return;
-      }
-    }
-    await panoyaKopyala();
-  }, [content, paylasimMetni, panoyaKopyala]);
+  const paylas = useCallback(() => {
+  setPaylasimAcik(true);
+}, []);
 
   const dinle = useCallback(() => {
     if (hasSpeechSupport && content) {
@@ -510,6 +504,19 @@ const name = meta?.displayName || s.sourceName || s.title || 'Kaynak';
             </div>
           </section>
         </div>
+        <PaylasimGorseliModal
+  isOpen={paylasimAcik}
+  onClose={() => setPaylasimAcik(false)}
+  kelime={{
+    kelime: content.word,
+    cerkesce: content.cerkesce || '',
+    kaynaklar: filtrelenmisKaynaklar.map((s) => {
+      const meta = resolveSourceMetadata(s.sourceId || '');
+      return meta?.displayName || s.sourceName || s.title || 'Kaynak';
+    }),
+    tarih: new Date().toLocaleDateString('tr-TR'),
+  }}
+/>
 
         <div className="absolute inset-x-0 bottom-0 z-20 flex gap-2 border-t border-slate-300 bg-white/95 p-3.5 backdrop-blur dark:border-slate-800 dark:bg-slate-900/95">
           <button
