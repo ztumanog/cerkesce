@@ -559,3 +559,14 @@ Faz 2 resmi olarak KAPANDI.
 - MULTI grup stratejisi (kabul edildi)
 - Icerik kalitesi: Abaze, AIG, AP, ThreeVolumes
 
+
+
+---
+
+## KNOWN IMPROVEMENTS BACKLOG (2026-09-24)
+
+- getDictMeta / resolveSourceMetadata konsolidasyonu (cozuldu)
+- sourceLanguage 0.ady temizligi (cozuldu)
+- MULTI grup stratejisi (kabul edildi)
+- Icerik kalitesi: Abaze, AIG, AP, ThreeVolumes
+
