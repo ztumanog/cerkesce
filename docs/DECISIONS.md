@@ -541,43 +541,24 @@ Faz 2 resmi olarak KAPANDI.
 
 ---
 
-## KNOWN IMPROVEMENTS BACKLOG (2026-09-24)
-
-- getDictMeta / resolveSourceMetadata konsolidasyonu (cozuldu)
-- sourceLanguage 0.ady temizligi (cozuldu)
-- MULTI grup stratejisi (kabul edildi)
-- Icerik kalitesi: Abaze, AIG, AP, ThreeVolumes
-
 
 
 ---
 
 ## KNOWN IMPROVEMENTS BACKLOG (2026-09-24)
 
+### META-001
 - getDictMeta / resolveSourceMetadata konsolidasyonu (cozuldu)
+
+### META-002
 - sourceLanguage 0.ady temizligi (cozuldu)
+
+### META-003
 - MULTI grup stratejisi (kabul edildi)
-- Icerik kalitesi: Abaze, AIG, AP, ThreeVolumes
 
+### DRAWER-001
+- Ansiklopedik isaretlerin gelisimi (backlog)
 
-
----
-
-## KNOWN IMPROVEMENTS BACKLOG (2026-09-24)
-
-- getDictMeta / resolveSourceMetadata konsolidasyonu (cozuldu)
-- sourceLanguage 0.ady temizligi (cozuldu)
-- MULTI grup stratejisi (kabul edildi)
-- Icerik kalitesi: Abaze, AIG, AP, ThreeVolumes
-
-
-
----
-
-## KNOWN IMPROVEMENTS BACKLOG (2026-09-24)
-
-- getDictMeta / resolveSourceMetadata konsolidasyonu (cozuldu)
-- sourceLanguage 0.ady temizligi (cozuldu)
-- MULTI grup stratejisi (kabul edildi)
-- Icerik kalitesi: Abaze, AIG, AP, ThreeVolumes
+### REL-001
+- Play Store yayini (beklemede)
 
