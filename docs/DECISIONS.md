@@ -60,3 +60,27 @@ Faz 2 resmi olarak KAPANDI.
 - DRAWER-001: Ansiklopedik isaretlerin gelismis sunumu (backlog)
 - REL-001: Play Store yayini (beklemede)
 
+
+
+---
+
+### ADR-PS-001: Product Observation Program
+
+**Tarih:** 2026-09-24
+**Durum:** AKTIF
+**Faz:** Product Stage
+
+**Karar:**
+Product Stage boyunca kullanim davranisi olculecek. Yeni kod yazilmayacak.
+
+**Olcum Alanlari:**
+- Arama Davranisi
+- Drawer Kullanimi
+- Filtre Kullanimi
+- Gunun Kelimesi
+- APK Kullanimi
+
+**Sure:** 1-2 hafta
+
+**Referans:** PRODUCT_STAGE_OBSERVATION.md
+
