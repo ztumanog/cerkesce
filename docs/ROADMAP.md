@@ -149,7 +149,7 @@
 **Durum:** 🚀 AKTIF  
 **Başlangıç:** 1 Eyl 2026  
 **İlerleme:** ~60%  
-**Test:** 225/225 PASS (%100)
+**Test:** 193/193 PASS (%100)
 
 #### Tamamlanan Çalışmalar
 - ✅ DECISIONS.md (v12.0)

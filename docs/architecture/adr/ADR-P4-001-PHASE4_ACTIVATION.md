@@ -1,4 +1,4 @@
-﻿# ADR-P4-001
+# ADR-P4-001
 
 Title
 
@@ -18,7 +18,7 @@ TypeScript PASS
 
 62 / 62 Test Files PASS
 
-225 / 225 Tests PASS
+193 / 193 Tests PASS
 
 Decision
 
@@ -27,3 +27,4 @@ Phase 4 is officially activated.
 Documentation Authority
 
 E:\home\ProjeDoc_FINAL
+

@@ -1,4 +1,4 @@
-﻿## ADR-0016: Phase 3-7 Modüllerinin Dondurulması ve Test İzolasyonu
+## ADR-0016: Phase 3-7 Modüllerinin Dondurulması ve Test İzolasyonu
 
 Status
 
@@ -18,8 +18,9 @@ TypeScript PASS
 
 62 / 62 Test Files PASS
 
-225 / 225 Tests PASS
+193 / 193 Tests PASS
 
 Historical Note
 
 This ADR remains archived for historical reference only.
+

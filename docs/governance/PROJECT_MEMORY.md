@@ -22,7 +22,7 @@ Test Files
 
 Tests
 
-225 / 225 PASS
+193 / 193 PASS
 
 --------------------------------------------------
 
@@ -78,7 +78,7 @@ CE-15 ConceptFacade
 
 ✅ 62 / 62 Test Files PASS
 
-✅ 225 / 225 Tests PASS
+✅ 193 / 193 Tests PASS
 
 ✅ Triangulation PASS
 
@@ -166,7 +166,7 @@ TypeScript PASS
 
 62/62 Test Files PASS
 
-225/225 Tests PASS
+193/193 Tests PASS
 
 --------------------------------------------------
 
@@ -191,3 +191,4 @@ Yeni oturuma başlamadan önce ilk okunacak belge:
 PROJECT_MEMORY.md
 
 Bu belge projenin tek operasyonel hafızasıdır.
+
