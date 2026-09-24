@@ -9,7 +9,7 @@
 
 ## ✅ Başarılar
 
-- ✅ 480/480 test başarısı
+- ✅ 193/193 test başarısı
 - ✅ %98.5 kod kapsamı
 - ✅ 0 teknik borç
 - ✅ A+ performans ve güvenlik

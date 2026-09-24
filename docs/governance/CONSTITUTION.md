@@ -14,7 +14,7 @@
 - **Sürdürülebilirlik:** 0 teknik borç, %98.5 kod kapsamı
 
 ## 3. Proje Metrikleri
-- Test Başarısı: 480/480 (%100)
+- Test Başarısı: 193/193 (%100)
 - Kod Kapsamı: %98.5
 - Performans: A+
 - Güvenlik: A+
@@ -24,3 +24,4 @@
 - 15 Aralık 2025: Proje Başlangıcı
 - 30 Eylül 2026: Production Go-Live
 - 31 Aralık 2027: v1.0 Release
+
