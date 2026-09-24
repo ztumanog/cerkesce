@@ -8,12 +8,14 @@
 
 ## RESMI DURUM
 
-- **Faz 1:** CLOSED
-- **Faz 2:** CLOSED
-- **Faz 3:** CLOSED
-- **Faz 4:** ACTIVE (P4-005, P4-006, P4-007, P4-009 tamamlandi)
-- **Product Stage:** ACTIVE
-- **Kritik Teknik Borc:** 0
+| Faz | Durum |
+|:----|:------|
+| Faz 1 | CLOSED |
+| Faz 2 | CLOSED |
+| Faz 3 | COMPLETE |
+| Faz 4 | Sprintleri Tamamlandi |
+| Product Stage | AKTIF |
+| Faz 5 | LOCKED (Charter PROPOSED) |
 
 ---
 
@@ -33,7 +35,7 @@
 - Build PASS
 - 62/62 Test Files PASS
 - 193/193 Tests PASS
-- Android Build PASS
+- Android APK PASS
 - GitHub Release v1.0.0-stable
 - Vercel Deployment PASS
 - CI/CD PASS
@@ -43,7 +45,7 @@
 ## TEKNIK BORC
 
 - **Kritik Teknik Borc:** 0
-- **Dusuk Oncelikli:** Known Improvements Backlog
+- **Dusuk Oncelikli Teknik Borc:** Known Improvements Backlog
 
 ---
 
@@ -51,40 +53,45 @@
 
 - docs/PROJECT_STATUS.md: Faz 2 CLOSED
 - docs/DECISIONS.md: ADR-P2-013 CLOSED
+- docs/ADR-P5-001-FAZ5_CHARTER.md: Faz 5 Charter (PROPOSED)
+- docs/ADR-P5-001-REVIZE.md: Revize (PROPOSED)
 - MIMAR_KARARI.md: v9 FINAL (bu dosya)
-- FAZ2_KAPANIS_DUYURUSU.md: Yayinlandi
-- PRODUCT_STAGE_PLANI.md: Yayinlandi
-- KNOWN_IMPROVEMENTS_BACKLOG.md: Yayinlandi
+- MIMAR_KARARI_ARCHIVE_2026-09-24.md: Eski surumler (arsiv)
+- PRODUCT_STAGE_OBSERVATION.md: Gozlem plani
+- FAZ4_KAPANIS_RAPORU.md: Faz 4 kapanis
 
 ---
 
 ## SONRAKI EVRE
 
-Product Stage
+**Product Stage (Kullanim + Gozlem + Geri Bildirim)**
 
-Icerik:
-- Kullanim
-- Gozlem
-- Kullanici geri bildirimi
-- Iyilestirme backlog'u
+- Kullan
+- Gozlemle
+- Not al
+- Geri bildirim topla
+- Sonraki sprinti ac (notlara gore)
 
 ---
 
-## SON KARAR
+## NIHAI KARAR
 
 Phase 2 resmi olarak CLOSED kabul edilmistir.
+
+Product Stage ACTIVE.
+
+Faz 5 LOCKED (Charter PROPOSED).
 
 Bir sonraki odak alani yeni mimari gelistirme degil, urunun gercek kullanim davranislarinin izlenmesidir.
 
 ---
 
-## ARSIV
+## MIMARIN SON SOZU
 
-Tum eski MIMAR_KARARI surumleri (v1-v8) su dosyaya tasindi:
-
-- MIMAR_KARARI_ARCHIVE_2026-09-24.md
+> Su asamada en degerli bilgi yeni kod degil, gercek kullanim deneyimi olacak. Cunku ilk defa proje deneysel sistem degil, kullanilabilir urun gorunumunde. Bu cok onemli bir esik.
 
 ---
 
 **Imza:** Mimar
 **Tarih:** 2026-09-24
+
