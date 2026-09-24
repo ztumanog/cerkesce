@@ -537,3 +537,80 @@ Su ifadeyle:
 Ve durust gorusum:
 
 "Ilk defa proje gelistirilen sistem degil, kullanilabilir urun gorunumunde. Bundan sonraki en degerli bilgi yeni kod degil, gercek kullanim geri bildirimidir."
+
+
+---
+
+## 📌 TEKNİK BORÇ KAPATMA (2026-09-24)
+
+### 1. `getDictMeta` / `resolveSourceMetadata` Konsolidasyonu
+
+**Durum:** ✅ KAPANDI
+
+**Yapılan:** `KelimeDetayDrawer.tsx`'deki `getDictMeta` fonksiyonu kaldırıldı. Artık **tek kaynak:** `resolveSourceMetadata`.
+
+**Etkilenen:** `KelimeDetayDrawer.tsx`
+
+### 2. `sourceLanguage` "0.ady" Temizliği
+
+**Durum:** ✅ KONTROL EDİLDİ
+
+**Sonuç:** `dictionaries.json`'da **"0.ady"** gibi bozuk değer **YOK.** `cleanLangCode` zaten `^\d+\.` temizliği yapıyor.
+
+**Not:** Gelecekte oluşursa, `cleanLangCode` otomatik temizler.
+
+### 3. `MULTI` Grup Stratejisi
+
+**Durum:** ✅ KABUL EDİLDİ (şimdilik)
+
+**Karar:** `MULTI` grubu **tek kayıt** (`18.Kbd-Ru&En.json`). İleride büyürse **yeniden değerlendirilecek.**
+
+**Not:** Şu an için **tek grup** yeterli.
+
+### Sonuç
+
+| Borç | Durum |
+|:-----|:------|
+| `getDictMeta` / `resolveSourceMetadata` | ✅ KAPANDI |
+| `sourceLanguage` "0.ady" | ✅ KONTROL EDİLDİ |
+| `MULTI` grup stratejisi | ✅ KABUL EDİLDİ |
+
+**Kritik Teknik Borç:** 0
+**Düşük Öncelikli Teknik Borç:** 0
+
+**Faz 2 Exit Review → ✅ CLOSED adayı!**
+
+---
+
+## TEKNIK BORC KAPATMA (2026-09-24)
+
+### 1. getDictMeta / resolveSourceMetadata Konsolidasyonu
+
+**Durum:** KAPANDI
+
+**Yapilan:** KelimeDetayDrawer.tsx'deki getDictMeta fonksiyonu kaldirildi. Artik tek kaynak: resolveSourceMetadata.
+
+### 2. sourceLanguage "0.ady" Temizligi
+
+**Durum:** KONTROL EDILDI
+
+**Sonuc:** dictionaries.json'da "0.ady" gibi bozuk deger YOK. cleanLangCode zaten ^\d+\. temizligi yapiyor.
+
+### 3. MULTI Grup Stratejisi
+
+**Durum:** KABUL EDILDI (simdilik)
+
+**Karar:** MULTI grubu tek kayit (18.Kbd-Ru&En.json). Ileride buyurse yeniden degerlendirilecek.
+
+### Sonuc
+
+| Borc | Durum |
+|:-----|:------|
+| getDictMeta / resolveSourceMetadata | KAPANDI |
+| sourceLanguage "0.ady" | KONTROL EDILDI |
+| MULTI grup stratejisi | KABUL EDILDI |
+
+**Kritik Teknik Borc:** 0
+**Dusuk Oncelikli Teknik Borc:** 0
+
+**Faz 2 Exit Review -> CLOSED adayi!**

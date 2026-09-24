@@ -27,21 +27,9 @@ import type {
 import { normalizeDrawerContent } from '@/lib/normalizers/drawerContent';
 import { normalizeToSourceContents } from '@/lib/normalizers/sourceContentNormalizer';
 
-import dictionariesData from '@/data/dictionaries.json';
+import { resolveSourceMetadata } from '@/lib/normalizers/sourceMetadataResolver';
 
-interface DictionaryMeta {
-  file: string;
-  title: string;
-  displayName: string;
-  dialect: string;
-  author?: string;
-  year?: string;
-  sourceLanguage: string;
-  targetLanguage: string;
-  total_words?: number;
-  shortLabel?: string;
-  shortLabelKiril?: string;
-}
+
 
 interface KelimeDetayDrawerProps {
   seciliKelime: DictionaryEntry | null;
@@ -53,28 +41,11 @@ interface KelimeDetayDrawerProps {
   languageFilter?: LanguageFilterValue;
 }
 
-function getDictMeta(source: SourceContent): DictionaryMeta | undefined {
-  const list = dictionariesData as DictionaryMeta[];
-
-  const cleanSourceId = String(source.sourceId || '').replace(/-\d+$/, '');
-
-  return list.find(
-    (d) =>
-      d.file === cleanSourceId ||
-      d.file === source.sourceId ||
-      d.file === (source as any).file ||
-      d.displayName === source.sourceName ||
-      d.title === source.title ||
-      d.title === source.sourceName ||
-      d.displayName === source.title
-  );
-}
 
 function matchesDialect(source: SourceContent, target: DialectFilterValue): boolean {
   if (target === 'ALL') return true;
 
-  const meta = getDictMeta(source);
-
+const meta = resolveSourceMetadata(source.sourceId || source.sourceName || '');
   if (meta) {
     const metaDialect = meta.dialect?.toUpperCase();
     const srcLang = meta.sourceLanguage?.toLowerCase();
@@ -99,7 +70,7 @@ function matchesDialect(source: SourceContent, target: DialectFilterValue): bool
 function matchesLanguage(source: SourceContent, target: LanguageFilterValue): boolean {
   if (target === 'ALL') return true;
 
-  const meta = getDictMeta(source);
+  const meta = resolveSourceMetadata(source.sourceId || source.sourceName || '');
   if (!meta) return false;
 
   const src = String(meta.sourceLanguage || '').toLowerCase();
@@ -262,7 +233,7 @@ export default function KelimeDetayDrawer({
       if (!matchesLanguage(source, languageFilter)) return false;
 
       if (sozlukFilter !== 'ALL') {
-        const meta = getDictMeta(source);
+        const meta = resolveSourceMetadata(source.sourceId || source.sourceName || '');
         const name = meta?.displayName || source.sourceName || source.title || '';
         if (name !== sozlukFilter) return false;
       }
@@ -284,7 +255,7 @@ export default function KelimeDetayDrawer({
     const seen = new Set<string>();
 
     sourceContents.forEach((source) => {
-      const meta = getDictMeta(source);
+      const meta = resolveSourceMetadata(source.sourceId || source.sourceName || '');
       const name = meta?.displayName || source.sourceName || source.title;
       if (!name || seen.has(name)) return;
       seen.add(name);
@@ -320,7 +291,7 @@ export default function KelimeDetayDrawer({
   const sozlukCounts = useMemo(() => {
     const counts: Record<string, number> = { ALL: sourceContents.length };
     sourceContents.forEach((source) => {
-      const meta = getDictMeta(source);
+      const meta = resolveSourceMetadata(source.sourceId || source.sourceName || '');
       const name = meta?.displayName || source.sourceName || source.title;
       if (name) {
         counts[name] = (counts[name] ?? 0) + 1;
@@ -336,8 +307,8 @@ export default function KelimeDetayDrawer({
       content.cerkesce ? `Çerkesçe: ${content.cerkesce}` : '',
       `Sözlük Kaynak Sayısı: ${filtrelenmisKaynaklar.length}`,
       ...filtrelenmisKaynaklar.map((s) => {
-        const meta = getDictMeta(s);
-        const name = meta?.displayName || s.sourceName || s.title || 'Kaynak';
+const meta = resolveSourceMetadata(s.sourceId || s.sourceName || '');
+const name = meta?.displayName || s.sourceName || s.title || 'Kaynak';
         return `• ${name}: ${(s.meanings ?? []).join(', ')}`;
       }),
     ].filter(Boolean).join('\n');
@@ -475,7 +446,7 @@ export default function KelimeDetayDrawer({
 
             <div className="space-y-3 pt-1">
               {filtrelenmisKaynaklar.map((source: SourceContent, index: number) => {
-                const meta = getDictMeta(source);
+                const meta = resolveSourceMetadata(source.sourceId || source.sourceName || '');
                 const displayTitle = meta?.displayName || source.sourceName || source.title || 'Kaynak';
 
                 const srcLang = meta?.sourceLanguage?.toUpperCase() || source.sourceLanguage?.toUpperCase();

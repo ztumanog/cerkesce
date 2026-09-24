@@ -4,15 +4,17 @@ android {
     namespace = "com.adigece.sozluk"
     compileSdk = rootProject.ext.compileSdkVersion
 
- defaultConfig {
+defaultConfig {
     applicationId "com.adigece.sozluk"
     minSdkVersion rootProject.ext.minSdkVersion
     targetSdkVersion rootProject.ext.targetSdkVersion
-    versionCode 1        ← İlk release: 1
-    versionName "1.0"    ← İlk release: 1.0
-    ...
-}
+    versionCode 1
+    versionName "1.0"
+    testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    aaptOptions {
+        ignoreAssetsPattern = '!.svn:!.git:!.ds_store:!*.scc:.*:!CVS:!thumbs.db:!picasa.ini:!*~'
     }
+}
 
     signingConfigs {
         release {
