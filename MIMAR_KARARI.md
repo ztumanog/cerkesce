@@ -523,3 +523,35 @@ Yani artık **yeni özellikten çok:**
 **İmza:** Mimar
 cd E:\projeler\Cerkesce\android
 ./gradlew bundleRelease
+
+
+
+---
+
+## 📌 P4-007 RELEASE & DELIVERY - TAMAMLANDI (2026-09-24)
+
+### Yapılanlar
+
+| # | İş | Durum |
+|:-:|:---|:------|
+| 1 | Release APK | ✅ `app-release.apk` |
+| 2 | AAB | ✅ `app-release.aab` (4.6 MB) |
+| 3 | Keystore | ✅ `cerkesce-release.keystore` |
+| 4 | Privacy Policy | ✅ `public/privacy-policy.html` |
+| 5 | APK dağıtımı | ✅ `public/cerkesce-sozluk-v1.0.apk` |
+| 6 | Versioning | ✅ `1` / `"1.0"` |
+| 7 | GitHub Release | ✅ `v1.0.0-stable` |
+| 8 | APK yükleme | ✅ 4.7 MB |
+
+### GitHub Release
+
+**URL:** https://github.com/ztumanog/cerkesce/releases/tag/v1.0.0-stable
+**Tag:** `v1.0.0-stable`
+**Assets:** `cerkesce-sozluk-v1.0.apk` (4.7 MB)
+
+### Sonraki Adımlar
+
+- ⏳ Play Store (25$ gerekli)
+- ⏳ Store Metadata
+- ⏳ Store Screenshots
+- ⏳ F-Droid (opsiyonel)
