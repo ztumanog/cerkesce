@@ -12,7 +12,6 @@ export interface PaylasimGorseliOptions {
   cerkesce?: string;
   kaynaklar?: string[];
   kelime: string;
-  cerkesce?:string
   anlam: string;
   ornekler?: string[];
   lehce?: string;
@@ -278,3 +277,4 @@ function blobToBase64(blob: Blob): Promise<string> {
     reader.readAsDataURL(blob);
   });
 }
+
