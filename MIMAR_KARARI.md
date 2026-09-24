@@ -8,7 +8,10 @@
 
 ## RESMI DURUM
 
+- **Faz 1:** CLOSED
 - **Faz 2:** CLOSED
+- **Faz 3:** CLOSED
+- **Faz 4:** ACTIVE (P4-005, P4-006, P4-007, P4-009 tamamlandi)
 - **Product Stage:** ACTIVE
 - **Kritik Teknik Borc:** 0
 
@@ -75,7 +78,7 @@ Bir sonraki odak alani yeni mimari gelistirme degil, urunun gercek kullanim davr
 
 ---
 
-## TARIMSAL KAYITLAR
+## ARSIV
 
 Tum eski MIMAR_KARARI surumleri (v1-v8) su dosyaya tasindi:
 

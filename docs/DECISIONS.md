@@ -39,11 +39,15 @@ Faz 2 resmi olarak KAPANDI.
 
 ## KNOWN IMPROVEMENTS BACKLOG
 
-- META-001: getDictMeta / resolveSourceMetadata (cozuldu)
-- META-002: sourceLanguage 0.ady temizligi (cozuldu)
-- META-003: MULTI grup stratejisi (kabul edildi)
-- DRAWER-001: Ansiklopedik isaretler (backlog)
-- REL-001: Play Store yayini (beklemede)
+**Durum:** Dusuk Oncelik
+
+| ID | Konu | Durum |
+|:---|:-----|:------|
+| META-001 | getDictMeta / resolveSourceMetadata | Cozuldu |
+| META-002 | sourceLanguage 0.ady temizligi | Cozuldu |
+| META-003 | MULTI grup stratejisi | Kabul edildi |
+| DRAWER-001 | Ansiklopedik isaretler | Backlog |
+| REL-001 | Play Store yayini | Beklemede |
 
 ---
 
