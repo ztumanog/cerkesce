@@ -84,3 +84,25 @@ Product Stage boyunca kullanim davranisi olculecek. Yeni kod yazilmayacak.
 
 **Referans:** PRODUCT_STAGE_OBSERVATION.md
 
+
+
+---
+
+### ADR-P5-001: Faz 5 Charter - Corpus Analytics & Search Intelligence
+
+**Tarih:** 2026-09-24
+**Durum:** PROPOSED
+**Faz:** 5
+**Onay Bekleyen:** Mimar
+
+**Karar:**
+Faz 5 kapsami resmilestirildi. Kilit acma onayi bekleniyor.
+
+**Kapsam:**
+- P5-001 Corpus Analytics
+- P5-002 Search Analytics
+- P5-003 Smart Suggestions
+- P5-004 Corpus Explorer
+
+**Referans:** docs/ADR-P5-001-FAZ5_CHARTER.md
+
