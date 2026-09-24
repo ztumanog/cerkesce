@@ -1,4 +1,4 @@
-﻿/**
+/**
  * File: src/components/layout/Kaynaklar.tsx
  * Generated: 2026-09-19
  * Layer: UI
@@ -90,20 +90,22 @@ function maddeSayisi(kayit: ManifestKaydi): number {
   );
 }
 
-function kayitDiyalekt(kayit: ManifestKaydi): "western" | "KBD" | null {
+function kayitDiyalekt(kayit: ManifestKaydi): "BATI" | "DOGU" | null {
   const deger = metin(kayit.dialect).toLocaleUpperCase("tr-TR");
 
-  if (deger === "western" || deger === "western ADIGE") {
-    return "western";
+  if (deger === "WESTERN" || deger === "BATI" || deger === "BATI ADIGE" || deger === "BATI ADIĞECE") {
+    return "BATI";
   }
 
   if (
     deger === "KBD" ||
+    deger === "DOGU" ||
     deger === "DOĞU" ||
     deger === "KABARDEY" ||
-    deger === "DOĞU ADIGE"
+    deger === "DOGU ADIGE" ||
+    deger === "DOĞU ADIĞECE"
   ) {
-    return "KBD";
+    return "DOGU";
   }
 
   return null;
@@ -148,8 +150,8 @@ export default function Kaynaklar({
 }: KaynaklarProps) {
   const [aramaMetni, setAramaMetni] = useState("");
   const [seciliDiyalekt, setSeciliDiyalekt] = useState<
-    "HEPSİ" | "western" | "DOĞU"
-  >("HEPSİ");
+    "TUMU" | "BATI" | "DOGU"
+  >("TUMU");
 
   const aktifTema: TemaRenkleri = useMemo(
     () => ({
@@ -175,11 +177,11 @@ export default function Kaynaklar({
     manifestData.forEach((kayit) => {
       toplamMadde += maddeSayisi(kayit);
 
-      if (kayitDiyalekt(kayit) === "western") {
+      if (kayitDiyalekt(kayit) === "BATI") {
         western += 1;
       }
 
-      if (kayitDiyalekt(kayit) === "KBD") {
+      if (kayitDiyalekt(kayit) === "DOGU") {
         dogu += 1;
       }
     });
@@ -223,9 +225,9 @@ export default function Kaynaklar({
       const diyalekt = kayitDiyalekt(kayit);
 
       const diyalektUygun =
-        seciliDiyalekt === "HEPSİ" ||
-        (seciliDiyalekt === "western" && diyalekt === "western") ||
-        (seciliDiyalekt === "DOĞU" && diyalekt === "KBD");
+        seciliDiyalekt === "TUMU" ||
+        (seciliDiyalekt === "BATI" && diyalekt === "BATI") ||
+        (seciliDiyalekt === "DOGU" && diyalekt === "DOGU");
 
       return aramaUygun && diyalektUygun;
     });
@@ -340,16 +342,20 @@ export default function Kaynaklar({
             />
 
             <div className="flex gap-2">
-              {(["HEPSİ", "western", "DOĞU"] as const).map((filtre) => {
-                const aktif = seciliDiyalekt === filtre;
+              {([
+                { value: "TUMU", label: "Tümü" },
+                { value: "BATI", label: "Batı Adığece" },
+                { value: "DOGU", label: "Doğu Kabardeyce" },
+              ] as const).map((filtre) => {
+                const aktif = seciliDiyalekt === filtre.value;
                 const renk =
-                  filtre === "DOĞU" ? doguRengi : vurguRengi;
+                  filtre.value === "DOGU" ? doguRengi : vurguRengi;
 
                 return (
                   <button
-                    key={filtre}
+                    key={filtre.value}
                     type="button"
-                    onClick={() => setSeciliDiyalekt(filtre)}
+                    onClick={() => setSeciliDiyalekt(filtre.value)}
                     style={{
                       backgroundColor: aktif ? renk : "transparent",
                       borderColor: aktif
@@ -359,7 +365,7 @@ export default function Kaynaklar({
                     }}
                     className="rounded border px-3 py-1.5 text-xs font-bold"
                   >
-                    {filtre}
+                    {filtre.label}
                   </button>
                 );
               })}
@@ -401,15 +407,15 @@ export default function Kaynaklar({
                         <span
                           style={{
                             backgroundColor:
-                              diyalekt === "western"
+                              diyalekt === "BATI"
                                 ? vurguRengi
                                 : doguRengi,
                           }}
                           className="rounded px-2 py-1 text-[10px] font-bold text-white"
                         >
-                          {diyalekt === "western"
-                            ? "western ADIĞECE"
-                            : "DOĞU KABARDEYCE"}
+                          {diyalekt === "BATI"
+                            ? "Batı Adığece"
+                            : "Doğu Kabardeyce"}
                         </span>
                       )}
 
@@ -502,3 +508,4 @@ export default function Kaynaklar({
     </main>
   );
 }
+
