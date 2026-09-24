@@ -1,126 +1,109 @@
-# PRODUCT STAGE OBSERVATION PLAN
+# PRODUCT STAGE OBSERVATION
 
-**Tarih:** 2026-09-24
-**Durum:** AKTIF
-
----
-
-## Amac
-
-Yeni kod yazmak degil, gercek kullanim davranisini olcmek.
+**Tarih:** 
+**Surum:** 
+**Platform:** Web / Android APK
+**Gozlemci:** 
 
 ---
 
-## Olcum Alanlari
+## 1. Arama Deneyimi
 
-### A. Arama Davranisi
+Aranan Kelime:
 
-Olculecek:
-- En cok aranan kelimeler
-- Arama basarisizlik orani
-- Tekrar edilen sorgular
-- Ortalama sorgu uzunlugu
-
-KPI: Basarili arama orani > %90
-
-### B. Drawer Kullanimi
-
-Olculecek:
-- Kac kullanici kart aciyor
-- En cok acilan kaynaklar
-- Acilan drawer suresi
-- Kapatilmadan once incelenen icerik miktari
-
-KPI: Acilan kart / arama orani
-
-### C. Filtre Kullanimi
-
-Olculecek:
-- Dil filtresi kullanim orani
-- Lehce filtresi kullanim orani
-- Sozluk filtresi kullanim orani
-
-Kritik Soru: Lehce filtresi gercekten kullaniliyor mu?
-
-### D. Gunun Kelimesi
-
-Olculecek:
-- Tiklaniyor mu?
-- Drawer aciliyor mu?
-- Paylasim yapiliyor mu?
-
-### E. APK Kullanimi
-
-Olculecek:
-- Ilk acilis suresi
-- Cokme sayisi
-- Offline davranisi
-- Bellek kullanimi
-
----
-
-## Kullanim Gozlem Formu v1
-
-### Arama
-
-Aradigim kelime: ___________
-
-Sonuc bulabildim mi?
+Sonuc Bulundu mu?
 [ ] Evet
 [ ] Hayir
 
-### Filtreler
+Sonuclar beklendigi gibi miydi?
+1 2 3 4 5
 
-Kullandigim filtreler:
+Arama Hizi:
+1 2 3 4 5
+
+Notlar:
+
+---
+
+## 2. Filtreler
+
+Kullanilan Filtreler:
 [ ] Dil
 [ ] Lehce
 [ ] Sozluk
 
-Ise yaradi mi?
-[ ] Evet
-[ ] Hayir
+Filtreler anlasilir mi?
+1 2 3 4 5
 
-### Drawer
+Filtre sonucu beklendigi gibi mi?
+1 2 3 4 5
 
-Icerik anlasilir mi?  1 2 3 4 5
-Kaynaklar faydali mi? 1 2 3 4 5
-
-### Gunun Kelimesi
-
-Kullandim mi?
-[ ] Evet
-[ ] Hayir
-
-### Genel
-
-En sevdigim ozellik: ___________
-En rahatsiz oldugum sey: ___________
-Eksik buldugum sey: ___________
-Yeni onerim: ___________
+Notlar:
 
 ---
 
-## Geri Bildirim Etiket Sistemi
+## 3. Drawer (Kelime Detayi)
+
+Kaynaklar anlasilir mi?
+1 2 3 4 5
+
+Icerik okunabilir mi?
+1 2 3 4 5
+
+Drawer icinde eksik bilgi var mi?
+
+Notlar:
+
+---
+
+## 4. Gunun Kelimesi
+
+Tiklandi mi?
+[ ] Evet
+[ ] Hayir
+
+Yararli bulundu mu?
+1 2 3 4 5
+
+Notlar:
+
+---
+
+## 5. APK Kullanimi
+
+Acilis Hizi:
+1 2 3 4 5
+
+Akicilik:
+1 2 3 4 5
+
+Cokme yasandi mi?
+[ ] Evet
+[ ] Hayir
+
+Notlar:
+
+---
+
+## 6. Genel Degerlendirme
+
+En yararli ozellik:
+
+En rahatsiz eden konu:
+
+Eksik kalan ozellik:
+
+Yeni oneri:
+
+---
+
+## Etiketler
 
 - [SEARCH]
 - [FILTER]
 - [DRAWER]
-- [WORD-OF-DAY]
 - [APK]
-- [PERFORMANCE]
 - [DATA]
 - [CONTENT]
+- [PERFORMANCE]
 
-Ornek:
-[DRAWER]
-Isaretler anlasilmiyor.
-
----
-
-## Sonuc
-
-1-2 hafta boyunca:
-- Kod yazma
-- Kullan
-- Not al
-- Geri bildirim topla
