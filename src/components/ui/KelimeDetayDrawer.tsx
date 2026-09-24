@@ -509,7 +509,7 @@ const name = meta?.displayName || s.sourceName || s.title || 'Kaynak';
   onClose={() => setPaylasimAcik(false)}
   kelime={{
     kelime: content.word,
-    anlam: content.cerkesce || '',
+    anlam: filtrelenmisKaynaklar[0]?.meanings?.[0] || content.cerkesce || '',
     cerkesce: content.cerkesce || '',
     kaynaklar: filtrelenmisKaynaklar.map((s) => {
       const meta = resolveSourceMetadata(s.sourceId || '');
@@ -555,4 +555,5 @@ const name = meta?.displayName || s.sourceName || s.title || 'Kaynak';
     </div>
   );
 }
+
 
