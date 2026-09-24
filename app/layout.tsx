@@ -5,7 +5,7 @@
  */
 import type { Metadata } from 'next';
 import Header from '@/components/layout/Header';
-import Footer from '@/components/layout/Footer';
+import { FooterWrapper } from '@/components/layout/FooterWrapper';
 import { Toaster } from 'sonner';
 import BildirimBaslatici from '@/components/features/BildirimBaslatici';
 import SWRegister from './SWRegister';
@@ -73,8 +73,7 @@ export default function RootLayout({
         <BildirimBaslatici />
         <Header />
         <main className="flex-1 w-full">{children}</main>
-        <Footer />
-        <Toaster richColors position="bottom-right" />
+<FooterWrapper />        <Toaster richColors position="bottom-right" />
       </body>
     </html>
   );

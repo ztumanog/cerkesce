@@ -521,3 +521,5 @@ Yani artık **yeni özellikten çok:**
 **Durum:** ✅ P4-007 AÇILDI
 **Sonraki Adım:** Release & Delivery Sprint
 **İmza:** Mimar
+cd E:\projeler\Cerkesce\android
+./gradlew bundleRelease
