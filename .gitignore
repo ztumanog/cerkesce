@@ -45,3 +45,6 @@ temizlik.ps1
 
 # Screenshots
 public/icons/Screenshot-*.png
+# Keystore
+*.keystore
+*.jks
