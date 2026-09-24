@@ -534,3 +534,31 @@ Phase 2 functional goals completed. Closure review initiated.
 **Etkilenen Katmanlar:** Tüm sistem
 
 **Referans:** MIMAR_KARARI.md, PROJECT_STATUS.md
+
+
+---
+
+### ADR-P2-012: Phase 2 Closure Review
+
+**Tarih:** 2026-09-24
+**Durum:** 🟡 Review
+**Faz:** 2
+
+**Karar:**
+Faz 2 resmi olarak **Exit Review** evresine alınmıştır.
+
+**Kapanan Sprint'ler:**
+- ✅ P4-005 Source Centric Drawer
+- ✅ P4-006 Günün Kelimesi Enrichment
+- ✅ Search Experience Sprint
+
+**Kritik Teknik Borç:** 0
+
+**Düşük Öncelikli Teknik Borçlar:**
+- Metadata consolidation (`getDictMeta` / `resolveSourceMetadata`)
+- `sourceLanguage` "0.ady" cleanup
+- `MULTI` scaling strategy
+
+**Etkilenen Katmanlar:** Tüm sistem
+
+**Referans:** MIMAR_KARARI.md, PROJECT_STATUS.md

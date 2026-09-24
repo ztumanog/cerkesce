@@ -620,3 +620,83 @@ Etkilenecek belgeler:
 ### Nihai Mimar Kararı
 
 > **"Ben bugün FAZ 2'Yİ KAPATMAM. Ama Faz 2 Exit Review başlatırım. Çünkü elinizdeki sistem artık Faz 2 hedeflerini fiilen karşılıyor. Bir sonraki adım: Phase 2 Exit Review dokümantasyonu ve resmi kapanış kontrol listesi."** 💙🚀
+
+
+---
+
+## 📌 MİMAR KARARI (v4) - 2026-09-24
+
+### Faz Kapatma Onayı
+
+Şu paketler **kapanmıştır:**
+
+| Paket | Durum |
+|:------|:------|
+| P4-005 Source Centric Drawer | ✅ KAPANDI |
+| P4-006 Günün Kelimesi Enrichment | ✅ KAPANDI |
+| Search Experience Sprint | ✅ KAPANDI |
+
+**Gerekçe:**
+- ✅ TypeScript PASS
+- ✅ Build PASS
+- ✅ 62 / 62 Test Files PASS
+- ✅ 193 / 193 Tests PASS
+- ✅ Android APK çalışıyor
+- ✅ Vercel yayında
+
+### Bir Düzeltme
+
+Raporda:
+
+yazmak yerine:
+
+yazarım.
+
+Çünkü hâlâ:
+- `getDictMeta()` / `resolveSourceMetadata()` çifti duruyor
+- `0.ady` backend temizliği var
+
+**Bunlar kritik değiller ama yok da değiller.**
+
+### Faz 2 Konusu
+
+**Önemli ayrım:**
+
+- ✅ **P4-005, P4-006, Search Experience** → **KAPANDI**
+- 🟡 **FAZ 2** → **Exit Review** (henüz **Closed** değil)
+
+**Çünkü anayasal olarak Faz 2'nin resmi kapanış kriterleri:**
+- TranslationRepository
+- TranslationGroup
+- TranslationEntry
+- Cross Dictionary Matching
+- Reverse Translation Search
+- TranslationTable
+
+**Resmi karar:**
+
+
+yazarım.
+
+Çünkü hâlâ:
+- `getDictMeta()` / `resolveSourceMetadata()` çifti duruyor
+- `0.ady` backend temizliği var
+
+**Bunlar kritik değiller ama yok da değiller.**
+
+### Faz 2 Konusu
+
+**Önemli ayrım:**
+
+- ✅ **P4-005, P4-006, Search Experience** → **KAPANDI**
+- 🟡 **FAZ 2** → **Exit Review** (henüz **Closed** değil)
+
+**Çünkü anayasal olarak Faz 2'nin resmi kapanış kriterleri:**
+- TranslationRepository
+- TranslationGroup
+- TranslationEntry
+- Cross Dictionary Matching
+- Reverse Translation Search
+- TranslationTable
+
+**Resmi karar:**
