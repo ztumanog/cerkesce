@@ -37,20 +37,6 @@ Faz 2 resmi olarak KAPANDI.
 
 ---
 
-## KNOWN IMPROVEMENTS BACKLOG
-
-**Durum:** Dusuk Oncelik
-
-| ID | Konu | Durum |
-|:---|:-----|:------|
-| META-001 | getDictMeta / resolveSourceMetadata | Cozuldu |
-| META-002 | sourceLanguage 0.ady temizligi | Cozuldu |
-| META-003 | MULTI grup stratejisi | Kabul edildi |
-| DRAWER-001 | Ansiklopedik isaretler | Backlog |
-| REL-001 | Play Store yayini | Beklemede |
-
----
-
 ## ARSIV
 
 - ADR-P2-012: ARSIVLENDI (ADR-P2-013 ile degistirildi)
@@ -62,3 +48,15 @@ Faz 2 resmi olarak KAPANDI.
 ---
 
 **Imza:** Mimar
+
+
+---
+
+## KNOWN IMPROVEMENTS BACKLOG
+
+- META-001: getDictMeta / resolveSourceMetadata (cozuldu)
+- META-002: sourceLanguage 0.ady temizligi (cozuldu)
+- META-003: MULTI grup stratejisi (kabul edildi)
+- DRAWER-001: Ansiklopedik isaretlerin gelismis sunumu (backlog)
+- REL-001: Play Store yayini (beklemede)
+
