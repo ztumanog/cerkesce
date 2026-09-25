@@ -75,3 +75,12 @@
 
 **Imza:** Mimari Ekip
 **Tarih:** 2026-09-25
+
+### Yönetişim ADR'leri (Güncel)
+
+| Canonical | Başlık | Physical File | Durum |
+|-----------|--------|---------------|-------|
+| ADR-GOV-001 | Catalog Strategy | `ADR-GOV-001-CANONICAL_CATALOG_STRATEGY.md` | Accepted |
+| ADR-GOV-002 | Supersession | `ADR-GOV-002-HISTORICAL_SUPERSESSION.md` | Accepted |
+| ADR-GOV-003 | Phase Redefinition | `ADR-GOV-003-PHASE_REDEFINITION.md` | Accepted |
+| ADR-GOV-004 | Phase Gate Modeli | `DECISIONS.md` (kayıtlı) | Accepted |

@@ -290,7 +290,7 @@ Get-ChildItem -Path src/tests -Recurse -Include *.test.ts,*.test.tsx |
 ### Allowed Activities
 ```
 ✅ Read Phase 1-3 code
-✅ Phase 1-4 code reading
+✅ Phase 4 documentation work
 ✅ Bug fixes in existing phases
 ✅ Test writing for existing phases
 ✅ Code review
@@ -300,11 +300,11 @@ Get-ChildItem -Path src/tests -Recurse -Include *.test.ts,*.test.tsx |
 ### Prohibited Activities
 ```
 ✅ Phase 5 coding (P5-003, P5-004)
-❌ Phase 1-4 refactoring (without approval)
+❌ Phase 1-3 refactoring (without approval)
 ❌ New feature implementation (without approval)
 ❌ Architecture changes (without approval)
 ❌ Breaking changes
-✅ Phase 5 tests (P5-003, P5-004)
+❌ Unlocking Phase 5 tests
 ```
 
 ---
@@ -332,7 +332,6 @@ Get-ChildItem -Path src/tests -Recurse -Include *.test.ts,*.test.tsx |
 
 **Documentation Authority:** E:\home\ProjeDoc_FINAL  
 **Project Root:** E:\projeler\Cerkesce
-
 
 
 
