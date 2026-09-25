@@ -3,6 +3,9 @@
 import React, { useEffect, useState, useCallback } from 'react';
 import Link from 'next/link';
 import { toast } from 'sonner';
+import { Share } from '@capacitor/share';
+import { Capacitor } from '@capacitor/core';
+
 import {
   selectDailyWord,
   selectMultipleDailyWords,
@@ -163,47 +166,65 @@ export default function GununKelimesiKart({
     }
   }, [bugunKelimesi, isSavedInStorage]);
 
-  const handleShare = useCallback(async () => {
-    if (!bugunKelimesi) return;
-    setShareLoading(true);
+const handleShare = useCallback(async () => {
+  if (!bugunKelimesi) return;
+  setShareLoading(true);
 
-    const metin = [
-      '🎓 Açık Mektep Çerkesçe Sözlük — Günün Kelimesi',
-      '',
-      `📖 Kelime: ${bugunKelimesi.kelime}`,
-      `🇹🇷 Anlam: ${bugunKelimesi.anlam || '—'}`,
-      bugunKelimesi.ornekler && bugunKelimesi.ornekler.length > 0
-        ? `💬 Örnek:\n${bugunKelimesi.ornekler.map((o) => `  • ${o}`).join('\n')}`
-        : '',
-      '',
-      '🔗 https://acikmektep.com',
-    ]
-      .filter(Boolean)
-      .join('\n');
+  const metin = [
+    '🎓 Açık Mektep Çerkesçe Sözlük — Günün Kelimesi',
+    '',
+    `📖 Kelime: ${bugunKelimesi.kelime}`,
+    `🇹🇷 Anlam: ${bugunKelimesi.anlam || '—'}`,
+    bugunKelimesi.ornekler && bugunKelimesi.ornekler.length > 0
+      ? `💬 Örnek:\n${bugunKelimesi.ornekler.map((o) => `  • ${o}`).join('\n')}`
+      : '',
+  ]
+    .filter(Boolean)
+    .join('\n');
 
-    try {
-      if (typeof navigator !== 'undefined' && navigator.share) {
-        await navigator.share({
-          title: 'Açık Mektep Çerkesçe Sözlük',
-          text: metin,
-          url: 'https://acikmektep.com',
-        });
-        toast.success('Paylaşıldı');
-      } else if (typeof navigator !== 'undefined' && navigator.clipboard) {
-        await navigator.clipboard.writeText(metin);
-        toast.success('Bağlantı panoya kopyalandı');
-      } else {
-        toast.error('Paylaşım desteklenmiyor');
-      }
-    } catch (err: any) {
-      if (err?.name !== 'AbortError') {
-        console.error('Paylaşım hatası:', err);
-        toast.error('Paylaşım başarısız');
-      }
-    } finally {
-      setShareLoading(false);
+  try {
+    // 1. Android/iOS: Capacitor Share
+    if (Capacitor.isNativePlatform()) {
+      await Share.share({
+        title: 'Açık Mektep Çerkesçe Sözlük',
+        text: metin,
+        url: 'https://acikmektep.com',
+        dialogTitle: 'Paylaş',
+      });
+      toast.success('Paylaşıldı');
     }
-  }, [bugunKelimesi]);
+    // 2. Web: Web Share API
+    else if (typeof navigator !== 'undefined' && navigator.share) {
+      await navigator.share({
+        title: 'Açık Mektep Çerkesçe Sözlük',
+        text: metin,
+        url: 'https://acikmektep.com',
+      });
+      toast.success('Paylaşıldı');
+    }
+    // 3. Fallback: Panoya kopyala
+    else if (typeof navigator !== 'undefined' && navigator.clipboard) {
+      await navigator.clipboard.writeText(metin);
+      toast.success('Metin panoya kopyalandı');
+    } else {
+      toast.error('Paylaşım veya kopyalama desteklenmiyor');
+    }
+  } catch (err: any) {
+    if (err?.name !== 'AbortError') {
+      console.error('Paylaşım hatası:', err);
+      try {
+        if (typeof navigator !== 'undefined' && navigator.clipboard) {
+          await navigator.clipboard.writeText(metin);
+          toast.success('Metin panoya kopyalandı');
+        }
+      } catch (copyErr) {
+        toast.error('Paylaşım yapılırken bir hata oluştu');
+      }
+    }
+  } finally {
+    setShareLoading(false);
+  }
+}, [bugunKelimesi]);
 
   const handleSave = useCallback(() => {
     if (!bugunKelimesi) return;
@@ -307,22 +328,14 @@ export default function GununKelimesiKart({
           <div className="mt-4 pt-3 border-t border-indigo-200 dark:border-indigo-800 flex flex-wrap items-center gap-2">
             <button
               type="button"
-              onClick={handleShare}
-              disabled={shareLoading}
+              onClick={() => setGorselModalAcik(true)}
               className="flex items-center gap-1.5 px-3.5 py-2 rounded-lg text-xs font-semibold bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-200 border border-slate-300 dark:border-slate-700 hover:border-indigo-500 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
             >
               <span>📤</span>
-              <span>{shareLoading ? 'Paylaşılıyor...' : 'Paylaş'}</span>
+              <span>Paylaş</span>
             </button>
 
-            <button
-              type="button"
-              onClick={() => setGorselModalAcik(true)}
-              className="flex items-center gap-1.5 px-3.5 py-2 rounded-lg text-xs font-semibold bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-200 border border-slate-300 dark:border-slate-700 hover:border-indigo-500 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
-            >
-              <span>📷</span>
-              <span>Görsel</span>
-            </button>
+            
 
             <button
               type="button"

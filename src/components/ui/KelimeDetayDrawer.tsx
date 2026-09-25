@@ -325,8 +325,7 @@ const name = meta?.displayName || s.sourceName || s.title || 'Kaynak';
       console.error('Kopyalama hatası:', error);
     }
   }, [paylasimMetni]);
-
-  const paylas = useCallback(() => {
+const paylas = useCallback(() => {
   setPaylasimAcik(true);
 }, []);
 
@@ -553,6 +552,7 @@ const name = meta?.displayName || s.sourceName || s.title || 'Kaynak';
         </div>
       </div>
     </div>
+    
   );
 }
 
