@@ -78,3 +78,28 @@ const rawT = String(
 
 ### Durum
 P5-001 COZULDU - Faz 2 hala aktif
+---
+
+## P5-001 ARAMA MODU SEMANTIGI (2026-09-25)
+
+### Sorun
+- tam modu, iceren gibi davraniyordu (t.includes kullaniliyordu)
+- Arapca ال (el-) takisi normalizasyonu yoktu
+- Arapca virgul (،) tokenize edilmiyordu
+
+### Cozum
+- tam = exact match (w === q, t === q, wParsed/tParsed.mainTokens)
+- baslayan = prefix search (w.startsWith, t.startsWith)
+- iceren = full-text search (w.includes, t.includes)
+- normalizeArabic: Arapca ال temizleme
+- tokenize regex: Arapca virgul (،) eklendi
+
+### Dogrulama
+- псы (tam) -> 19 kaynak
+- псы (baslayan) -> псы* kelimeleri
+- псы (iceren) -> aciklamalardaki referanslar
+- ماء (tam) -> 2 kaynak (13.Kbd-Ar + 2.Ady-Ara)
+- ماء (iceren) -> 2 + 4 kaynak
+
+### Durum
+P5-001 TAMAMEN COZULDU - Arama modu semantigi net
