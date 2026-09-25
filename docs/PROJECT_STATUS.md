@@ -299,3 +299,34 @@ Faz 2 CLOSED. Product Stage ACTIVE. Kritik Teknik Borc: 0.
 
 
 
+
+---
+
+## 📦 ARŞİV NOTU
+
+**Bu belgede farklı dönemlerden kayıtlar bulunmaktadır.**
+
+- Aktif durum: **En üstteki "GÜNCEL DURUM" bölümü**
+- Tarihsel kayıtlar: **Alt bölümler (arşiv)**
+
+Yeni okuyucu için **önce en üstteki güncel durumu** okuyun.
+
+---
+
+**Imza:** Gelistirme Ekibi
+**Tarih:** 2026-09-26
+
+---
+
+## ARSIV NOTU
+
+**Bu belgede farkli donemlerden kayitlar bulunmaktadir.**
+
+- Aktif durum: **En ustteki GUNCEL DURUM bolumu**
+- Tarihsel kayitlar: **Alt bolumler (arsiv)**
+
+Yeni okuyucu icin **once en ustteki guncel durumu** okuyun.
+
+**Imza:** Gelistirme Ekibi
+**Tarih:** 2026-09-26
+
