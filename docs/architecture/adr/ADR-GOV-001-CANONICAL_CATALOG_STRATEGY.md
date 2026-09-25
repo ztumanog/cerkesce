@@ -3,41 +3,26 @@
 **Tarih:** 2026-09-25
 **Durum:** ✅ Kabul Edildi
 **Kategori:** Governance
+**SSOT:** ADR_INDEX.md
 
-## Karar
+## Temel Ilke
 
 **Physical File Name ≠ Logical ADR Number**
 
-### 5 Kural
+## 5 Kural
 
-1. ADR'ler geriye dönük yeniden numaralandırılmaz
-2. ADR dosya adları korunur
-3. Canonical ADR numarası katalog seviyesinde yönetilir
-4. SUPERSEDED mekanizması tercih edilir
-5. Dashboard, README, Inventory ve Summary aynı kaynaktan üretilir
+1. ADR dosya adlari degistirilmez
+2. Git gecmisi korunur
+3. Referanslar kirilmaz
+4. ADR silinmez, SUPERSEDED edilir
+5. Dashboard / README / Inventory / Summary ayni SSOT'tan uretilir
 
-## ADR Denetim Şablonu (ADR-AUDIT-v1)
+## Sonuc
 
-### A. Kimlik
-- Canonical numara benzersiz
-- Physical file tanımlı
-
-### B. Statü
-- Accepted / Draft / Proposed / Superseded / Deprecated
-
-### C. Superseded
-- Status + Superseded By + Reason
-
-### D. Kaynak Tutarlılığı
-- Summary = README = Dashboard = Envanter
-
-### E. Mapping
-- Yetim dosya yok, çift canonical yok
-
-### F. İstatistik
-`Accepted + Draft + Proposed + Superseded + Deprecated = Toplam`
+ADR_INDEX.md = SSOT
 
 ## Referans
 
-- ADR-GOV-002: Historical ADR Supersession
-- ADR_INDEX.md (SSOT)
+- ADR_INDEX.md
+- ADR_DECISIONS_SUMMARY.md
+- ADR-GOV-002-HISTORICAL_SUPERSESSION.md
