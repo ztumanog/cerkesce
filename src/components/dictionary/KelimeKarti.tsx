@@ -60,6 +60,21 @@ const getLehceBadgeClass = (lehce?: string): string => {
   }
 };
 
+const LANG_LABEL: Record<string, string> = {
+  tr: 'TR', ady: 'ADY', kbd: 'KBD', ru: 'RU', en: 'EN', ar: 'AR',
+};
+
+const getKaynakYonu = (kaynak: KaynakItem | undefined): string | null => {
+  if (!kaynak) return null;
+  const src = String(kaynak.sourceLanguage || '').toLowerCase();
+  const tgt = String(kaynak.targetLanguage || '').toLowerCase();
+  if (!src && !tgt) return null;
+  const srcLabel = LANG_LABEL[src] || src.toUpperCase();
+  const tgtLabel = LANG_LABEL[tgt] || tgt.toUpperCase();
+  if (srcLabel && tgtLabel) return `${srcLabel} → ${tgtLabel}`;
+  return srcLabel || tgtLabel;
+};
+
 const formatKaynakDetayi = (kaynakItem: unknown): string => {
   if (!kaynakItem) return '';
   if (typeof kaynakItem === 'string') return kaynakItem;
@@ -94,6 +109,7 @@ export const KelimeKarti: React.FC<KelimeKartiProps> = ({
   const karsilikSayisi = new Set(
     (data.anlamlar || []).map((anlam) => anlam.trim().toLocaleLowerCase('tr-TR')).filter(Boolean),
   ).size;
+  const kaynakYonu = getKaynakYonu(ilkKaynak);
 
   const handleFavoriClick = (e: React.MouseEvent) => {
     e.stopPropagation();
@@ -101,7 +117,7 @@ export const KelimeKarti: React.FC<KelimeKartiProps> = ({
     onFavoriToggle?.(e);
   };
 
-    return (
+  return (
     <div
       role="button"
       tabIndex={0}
@@ -136,6 +152,11 @@ export const KelimeKarti: React.FC<KelimeKartiProps> = ({
           <span className="rounded-md bg-amber-100 px-2 py-1 text-amber-700 dark:bg-amber-950/50 dark:text-amber-300">
             {kaynaklar.length} kaynak
           </span>
+          {kaynakYonu && (
+            <span className="rounded-md bg-sky-100 px-2 py-1 text-sky-700 dark:bg-sky-950/50 dark:text-sky-300 font-mono">
+              {kaynakYonu}
+            </span>
+          )}
         </div>
         {ilkKaynak && (
           <div className="flex items-center gap-1.5 pt-0.5 min-w-0 text-xs">
@@ -151,13 +172,12 @@ export const KelimeKarti: React.FC<KelimeKartiProps> = ({
               )}
             </div>
             <span className="shrink-0 font-semibold text-amber-700 transition-colors group-hover:text-amber-500 dark:text-amber-400">
-              Detay →
-            </span>
+              Detay {'→'}
+                          </span>
           </div>
         )}
       </div>
 
-      {/* FAVORİ BUTONU + CHEVRON */}
       <div className="flex items-center gap-1 shrink-0">
         {onFavoriToggle && (
           <button
