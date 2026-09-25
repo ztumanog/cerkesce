@@ -1,6 +1,6 @@
 # ADR ENVANTER
 
-**Tarih:** 2026-09-25
+**Tarih:** 2026-09-26
 **Toplam:** 21 ADR
 **SSOT:** `ADR_INDEX.md`
 
@@ -39,15 +39,15 @@
 | Kategori | Sayı |
 |----------|------|
 | **Toplam** | 21 |
-| **Accepted** | 17 |
+| **Accepted** | 18 |
 | **Draft** | 1 |
 | **Proposed** | 1 |
 | **Superseded** | 1 |
 | **Deprecated** | 0 |
 
 **Doğrulama:**
-`17 + 1 + 1 + 1 + 0 = 20` + 1 (Superseded) = 21 ✅
+`18 + 1 + 1 + 1 + 0 = 21` ✅
 
 ---
 
-**Son Güncelleme:** 2026-09-25
+**Son Güncelleme:** 2026-09-26

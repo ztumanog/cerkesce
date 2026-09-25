@@ -1,10 +1,12 @@
 # ADR DECISIONS SUMMARY
 
 **Proje:** Çerkesçe Knowledge Engine
-**Son Güncelleme:** 2026-09-25
-**Versiyon:** v3.0 (Catalog Cleanup)
+**Son Güncelleme:** 2026-09-26
+**Versiyon:** v3.1 (SSOT Aligned)
 **Strateji:** ADR-GOV-001
-**SSOT:** ADR_INDEX.md
+**SSOT:** `ADR_INDEX.md`
+
+> Bu özet, `ADR_INDEX.md`'den türetilmiştir.
 
 ---
 
@@ -83,17 +85,17 @@
 | Kategori | Sayı |
 |----------|------|
 | **Toplam** | 21 |
-| **Accepted** | 17 |
+| **Accepted** | 18 |
 | **Draft** | 1 |
 | **Proposed** | 1 |
 | **Superseded** | 1 |
 | **Deprecated** | 0 |
 
 **Doğrulama:**
-`17 + 1 + 1 + 1 + 0 = 20` + 1 = 21 ✅
+`18 + 1 + 1 + 1 + 0 = 21` ✅
 
 ---
 
 **SSOT:** ADR_INDEX.md
 **Imza:** Mimari Ekip
-**Tarih:** 2026-09-25
+**Tarih:** 2026-09-26
