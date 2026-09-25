@@ -52,3 +52,6 @@ public/icons/Screenshot-*.png
 # Keystore
 *.keystore
 *.jks
+
+# Next.js otomatik dosya
+next-env.d.ts
