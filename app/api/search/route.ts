@@ -58,13 +58,17 @@ function normalizeDialectParam(val: string): string {
 function inferLanguageFromFile(fileName: string, position: 0 | 1): string | undefined {
   const code = fileName.replace(/\.json$/i, '').split('-')[position]?.toLowerCase();
   if (!code) return undefined;
-  if (code.startsWith('tu') || code.startsWith('tur')) return 'tr';
-  if (code.startsWith('en')) return 'en';
-  if (code.startsWith('kbd')) return 'kbd';
-  if (code.startsWith('ady')) return 'ady';
-  if (code.startsWith('rus') || code.startsWith('ru')) return 'ru';
-  if (code.startsWith('ar')) return 'ar';
-  return code;
+
+  const temizCode = code.replace(/^\d+\./, '').trim();
+  if (!temizCode) return undefined;
+
+  if (temizCode.startsWith('tu') || temizCode.startsWith('tur')) return 'tr';
+  if (temizCode.startsWith('en')) return 'en';
+  if (temizCode.startsWith('kbd')) return 'kbd';
+  if (temizCode.startsWith('ady')) return 'ady';
+  if (temizCode.startsWith('rus') || temizCode.startsWith('ru')) return 'ru';
+  if (temizCode.startsWith('ar')) return 'ar';
+  return temizCode;
 }
 
 function decodeHTMLEntities(str: string): string {
@@ -81,6 +85,11 @@ function parseDictionaryText(text: string): ParsedText {
 
   const decoded = decodeHTMLEntities(text).toLowerCase();
 
+  // Arapça ال (el-) takısını temizle
+  const normalizeArabic = (str: string): string => {
+    return str.replace(/^ال/, '').trim();
+  };
+
   const parenRegex = /\((.*?)\)|\[(.*?)\]|&lt;.*?&gt;|<.*?>/g;
   const parenMatches: string[] = [];
   let m: RegExpExecArray | null;
@@ -96,16 +105,16 @@ function parseDictionaryText(text: string): ParsedText {
   const exampleSection = tildeParts.slice(1).join(' ');
 
   const tokenize = (str: string) =>
-    str
-      .split(/[;,/\n|:=]+/)
-      .map((s) => s.replace(/^[\d\.\)\s]+/, '').trim())
-      .filter(Boolean);
+  str
+    .split(/[;,/\n|:=،]+/)   // ← ، eklendi
+    .map((s) => s.replace(/^[\d\.\)\s]+/, '').trim())
+    .filter(Boolean);
 
   return {
     raw: decoded,
-    mainTokens: tokenize(mainSection),
-    parenTokens: tokenize(parenMatches.join(' ')),
-    exampleTokens: tokenize(exampleSection),
+    mainTokens: tokenize(mainSection).map(normalizeArabic),
+    parenTokens: tokenize(parenMatches.join(' ')).map(normalizeArabic),
+    exampleTokens: tokenize(exampleSection).map(normalizeArabic),
   };
 }
 
@@ -140,18 +149,24 @@ export async function GET(request: NextRequest) {
 
     for (const item of entries) {
       const rawW = String(item.kelime || item.word || item.spelling || item.headword || '');
-      const firstMeaning =
-  Array.isArray(item.definitions)
-    ? item.definitions[0]?.meaning
-    : undefined;
 
-const rawT = String(
-  item.anlam ??
-  item.translation ??
-  item.definition ??
-  firstMeaning ??
-  ''
-);
+      const firstMeaning =
+        Array.isArray(item.definitions) && item.definitions.length > 0
+          ? item.definitions[0]?.meaning
+          : undefined;
+
+      const temizHtml = item.full_definition_in_html
+        ? String(item.full_definition_in_html).replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').trim()
+        : undefined;
+
+      const rawT = String(
+        item.anlam ??
+        item.translation ??
+        item.definition ??
+        firstMeaning ??
+        temizHtml ??
+        ''
+      );
 
       const w = rawW.toLowerCase().trim();
       const t = rawT.toLowerCase().trim();
@@ -190,47 +205,51 @@ const rawT = String(
         parsed.exampleTokens.some((tok) => tok === q);
 
       if (mode === 'tam') {
-        if (w === q || t === q || matchesExactly(wParsed) || matchesExactly(tParsed)) {
+        if (w === q || t === q) {
           score = 100;
-        } else if (matchesInParen(wParsed) || matchesInParen(tParsed)) {
+        } else if (wParsed.mainTokens.some((tok) => tok === q)) {
+          score = 80;
+        } else if (tParsed.mainTokens.some((tok) => tok === q)) {
+          score = 60;
+        } else if (matchesInParen(wParsed)) {
           score = 30;
-        } else if (matchesInExample(wParsed) || matchesInExample(tParsed)) {
+        } else if (matchesInExample(wParsed)) {
           score = 10;
         }
       } else if (mode === 'baslayan') {
-        if (w === q || t === q || matchesExactly(wParsed) || matchesExactly(tParsed)) {
+        if (w === q || t === q) {
           score = 100;
         } else if (
           w.startsWith(q) ||
-          t.startsWith(q) ||
-          wParsed.mainTokens.some((tok) => tok.startsWith(q)) ||
-          tParsed.mainTokens.some((tok) => tok.startsWith(q))
+          wParsed.mainTokens.some((tok) => tok.startsWith(q))
         ) {
           score = 80;
         } else if (
-          wParsed.parenTokens.some((tok) => tok.startsWith(q)) ||
-          tParsed.parenTokens.some((tok) => tok.startsWith(q))
+          t.startsWith(q) ||
+          tParsed.mainTokens.some((tok) => tok.startsWith(q))
         ) {
+          score = 60;
+        } else if (wParsed.parenTokens.some((tok) => tok.startsWith(q))) {
           score = 20;
-        } else if (
-          wParsed.exampleTokens.some((tok) => tok.startsWith(q)) ||
-          tParsed.exampleTokens.some((tok) => tok.startsWith(q))
-        ) {
+        } else if (wParsed.exampleTokens.some((tok) => tok.startsWith(q))) {
           score = 10;
         }
       } else {
-        if (w === q || t === q || matchesExactly(wParsed) || matchesExactly(tParsed)) {
+        if (w === q || t === q) {
           score = 100;
         } else if (
-          wParsed.mainTokens.some((tok) => tok.includes(q)) ||
+          w.includes(q) ||
+          wParsed.mainTokens.some((tok) => tok.includes(q))
+        ) {
+          score = 80;
+        } else if (
+          t.includes(q) ||
           tParsed.mainTokens.some((tok) => tok.includes(q))
         ) {
-          score = 70;
+          score = 60;
         } else if (
           wParsed.parenTokens.some((tok) => tok.includes(q)) ||
-          tParsed.parenTokens.some((tok) => tok.includes(q)) ||
-          wParsed.exampleTokens.some((tok) => tok.includes(q)) ||
-          tParsed.exampleTokens.some((tok) => tok.includes(q))
+          wParsed.exampleTokens.some((tok) => tok.includes(q))
         ) {
           score = 15;
         }
@@ -254,16 +273,16 @@ const rawT = String(
       const existing = groupedMap.get(key);
       const sourceFile = String(entry.sourceFile || '');
 
-      const firstDefMeaning = Array.isArray(entry.definitions) && entry.definitions.length > 0 
-        ? String(entry.definitions[0]?.meaning || '') 
+      const firstDefMeaning = Array.isArray(entry.definitions) && entry.definitions.length > 0
+        ? String(entry.definitions[0]?.meaning || '')
         : '';
 
       const rawMeaning = String(
-        entry.anlam || 
-        entry.translation || 
-        entry.definition || 
-        firstDefMeaning || 
-        entry.full_definition_in_html || 
+        entry.anlam ||
+        entry.translation ||
+        entry.definition ||
+        firstDefMeaning ||
+        entry.full_definition_in_html ||
         ''
       );
 
