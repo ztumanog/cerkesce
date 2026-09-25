@@ -54,3 +54,27 @@
 **Imza:** Gelistirme Ekibi
 **Tarih:** 2026-09-25
 
+---
+
+## P5-001 COZULDU (2026-09-25)
+
+### Kok Neden
+API route definitions[0].meaning alanini okumuyordu.
+
+### Cozum
+const firstMeaning = Array.isArray(item.definitions)
+  ? item.definitions[0]?.meaning
+  : undefined;
+
+const rawT = String(
+  item.anlam ?? item.translation ?? item.definition ?? firstMeaning ?? ''
+);
+
+### Dogrulama
+- 62/62 PASS, 193/193 PASS
+- куэд щ1а (KBD) -> uzun süreli (TR)
+- куэд щ1а (KBD) -> longtime (EN)
+- куэд щ1акъым (KBD) -> недавно (RU)
+
+### Durum
+P5-001 COZULDU - Faz 2 hala aktif
