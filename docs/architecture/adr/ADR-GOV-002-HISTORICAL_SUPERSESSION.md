@@ -7,21 +7,7 @@
 
 ---
 
-## Bağlam
-
-ADR-0016 (Phase 3-7 Modüllerinin Dondurulması) tarihsel bir karardı.
-Phase 2 tamamlanıncaya kadar geçerliydi.
-
-Ancak:
-- ADR-P4-001 (Phase 4 Activation) → Phase 4 açıldı
-- Phase 3 → COMPLETE
-- Product Stage → ACTIVE
-
----
-
 ## Karar
-
-### ADR-0016 Statüsü
 
 **ADR-0016 → SUPERSEDED**
 
