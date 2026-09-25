@@ -1,86 +1,99 @@
-# DECISIONS
+# ADR DECISIONS SUMMARY
 
-## ADR-0001
-
-Tarih: 2026-08-28
-
-Karar:
-İlk yüklemede 3 sözlük paralel yüklenir.
-
-Neden:
-İlk etkileşim süresini azaltmak.
-
-Durum:
-Kabul Edildi
-
-Etkilenen Katmanlar:
-
-- Loader
-- Service
+**Proje:** Çerkesçe Knowledge Engine
+**Son Güncelleme:** 2026-09-25
+**Versiyon:** v3.0 (Catalog Cleanup)
+**Strateji:** ADR-GOV-001
+**SSOT:** ADR_INDEX.md
 
 ---
 
-## ADR-0002
+## 📌 STANDART STATÜLER
 
-Tarih: 2026-08-28
-
-Karar:
-Sonraki yüklemeler 4'lü batch yapılır.
-
-Neden:
-204 MB veri kümesinde bellek kullanımını dengelemek.
-
-Durum:
-Kabul Edildi
-
-Etkilenen Katmanlar:
-
-- Loader
+| Statü | Anlam |
+|-------|-------|
+| **Accepted** | Onaylandı ve uygulandı |
+| **Draft** | Taslak, onay bekliyor |
+| **Proposed** | Önerildi, tartışılıyor |
+| **Superseded** | Geçersiz, yerine yenisi geldi |
+| **Deprecated** | Kullanımdan kaldırıldı |
 
 ---
 
-## ADR-0003
+## 📋 RESMÎ ADR LİSTESİ
 
-Tarih: 2026-08-28
+### Faz 1 — Foundation
 
-Karar:
-Faz kilidi zorunludur.
+| Canonical | Başlık | Physical File | Durum |
+|-----------|--------|---------------|-------|
+| ADR-0001 | Modüler Tip | `ADR_0001_MODULAR_TYPE_ARCHITECTURE.md` | Accepted |
+| ADR-0002 | Çok Dilli Meaning | `ADR_0002_DOMAIN_MODEL_MEANING_GROUP.md` | Accepted |
+| ADR-0003 | Repository Ayrışımı | `ADR_0003_ITRANSLATIONREPOSITORY_SEPARATION.md` | Accepted |
+| ADR-0004 | Heterojen Normalizasyon | `ADR-ADR_0004_SERVER_ACTIONS_ASYNC_SAFETY.md` | Accepted |
 
-Neden:
-Teknik borcu önlemek.
+### Faz 2 — Translation Platform
 
-Durum:
-Kabul Edildi
+| Canonical | Başlık | Physical File | Durum |
+|-----------|--------|---------------|-------|
+| ADR-0005 | TranslationGroup | `ADR-0005-TRANSLATIONGROUP_STRATEGY.md` | Accepted |
+| ADR-0006 | Cross Dictionary | `ADR-0006-CROSS_DICTIONARY_MATCHING.md` | Accepted |
+| ADR-0007 | Repository Contract | `ADR-0007-TRANSLATIONREPOSITORY_CONTRACT.md` | Accepted |
+| ADR-0008 | Meaning Representation | `ADR-0008-TRANSLATIONMEANING_REPRESENTATION.md` | Accepted |
+| ADR-0009 | Dialect Naming | `ADR_0009_DIALECT_NAMING_STANDARD.md` | Accepted |
+| ADR-0010 | Canonical Identity | `ADR-0015-TRANSLATIONENTRY_CANONICAL_IDENTITY.md` | Accepted |
+| ADR-0011 | Phase 3-7 Freeze | `ADR-0016-Phase3-7-Dondurma-SUPERSEDED.md` | Superseded |
+| ADR-0012 | Filter Flow | `ADR-P2-011-FILTER_FLOW_AUDIT.md` | Accepted |
 
-Etkilenen Katmanlar:
+### Faz 3 — Concept Engine (KİLİTLİ)
 
-- Tüm sistem
-- **ADR-0009**: Dialect Naming Standard (KBD / ADY Mandatory, DOGU / BATI Deprecated)
-------------------------------------------------
+| Canonical | Başlık | Physical File | Durum |
+|-----------|--------|---------------|-------|
+| ADR-0020 | Concept Identity | `ADR-0009-CONCEPT_IDENTITY_STRATEGY.md` | Draft |
+| ADR-0021 | Concept Repository | `ADR-0010-CONCEPT_REPOSITORY.md` | Accepted |
+| ADR-0022 | Meaning Graph | `ADR-0011-MEANING_GRAPH_BOOTSTRAP.md` | Accepted |
 
-ADR-P4-001
+### Faz 5 — Discovery (KİLİTLİ)
 
-Phase 4 Activation
+| Canonical | Başlık | Physical File | Durum |
+|-----------|--------|---------------|-------|
+| ADR-0030 | Discovery | `ADR-0012-REAL_KNOWLEDGE_DISCOVERY_ASSEMBLY.md` | Accepted |
+| ADR-0031 | Query Semantic | `ADR-0013-QUERY_SEMANTIC_MAPPING.md` | Proposed |
+| ADR-0032 | Network Projection | `ADR_0014_CONCEPT_NETWORK_PROJECTION.md` | Accepted |
 
-Status
+### Yönetişim ve Aktivasyon
 
-ACCEPTED
+| Canonical | Başlık | Physical File | Durum |
+|-----------|--------|---------------|-------|
+| ADR-GOV-001 | Catalog Strategy | `ADR-GOV-001-CANONICAL_CATALOG_STRATEGY.md` | Accepted |
+| ADR-GOV-002 | Supersession | `ADR-GOV-002-HISTORICAL_SUPERSESSION.md` | Accepted |
+| ADR-P4-001 | Phase 4 | `ADR-P4-001-PHASE4_ACTIVATION.md` | Accepted |
 
-Validation
+---
 
-TypeScript PASS
+## 🗑️ SUPERSEDED
 
-62 / 62 Test Files PASS
+| Canonical | Başlık | Superseded By | Reason |
+|-----------|--------|---------------|--------|
+| ADR-0011 | Phase 3-7 Freeze | ADR-P4-001 | Phase 3 Complete |
 
-193 / 193 Tests PASS
+---
 
-------------------------------------------------
+## 📊 İSTATİSTİKLER
 
-ADR-0016
+| Kategori | Sayı |
+|----------|------|
+| **Toplam** | 21 |
+| **Accepted** | 17 |
+| **Draft** | 1 |
+| **Proposed** | 1 |
+| **Superseded** | 1 |
+| **Deprecated** | 0 |
 
-Status
+**Doğrulama:**
+`17 + 1 + 1 + 1 + 0 = 20` + 1 = 21 ✅
 
-SUPERSEDED
+---
 
-------------------------------------------------
-
+**SSOT:** ADR_INDEX.md
+**Imza:** Mimari Ekip
+**Tarih:** 2026-09-25
