@@ -140,7 +140,18 @@ export async function GET(request: NextRequest) {
 
     for (const item of entries) {
       const rawW = String(item.kelime || item.word || item.spelling || item.headword || '');
-      const rawT = String(item.anlam || item.translation || item.definition || '');
+      const firstMeaning =
+  Array.isArray(item.definitions)
+    ? item.definitions[0]?.meaning
+    : undefined;
+
+const rawT = String(
+  item.anlam ??
+  item.translation ??
+  item.definition ??
+  firstMeaning ??
+  ''
+);
 
       const w = rawW.toLowerCase().trim();
       const t = rawT.toLowerCase().trim();
