@@ -121,3 +121,37 @@
 **Imza:** Zeki Tuman
 **Tarih:** 2026-09-24
 
+
+---
+
+## 8. COZULEN SORUNLAR (2026-09-25 Guncellemesi)
+
+Asagidaki sorunlar **COZULDU** ve dogrulandi:
+
+| # | Sorun | Durum | Kanit |
+|:-:|:------|:------|:------|
+| 3 | sumak -> HTML render edilmiyor | ✅ COZULDU | Drawer HTML render aktif |
+| 3.3 | HTML Render Edilmiyor | ✅ COZULDU | dangerouslySetInnerHTML kontrol edildi |
+| 3.5 | Paylasim Menusu (kopyala ile ayni) | ✅ COZULDU | `PaylasimGorseliModal` Drawer'a eklendi |
+| 3.6 | Kopyalama HTML ile | ✅ COZULDU | HTML kopyalama temizlendi |
+
+### Yapilan Duzeltmeler
+
+- `PaylasimGorseliModal` -> Drawer'a eklendi
+- `GununKelimesiKart` -> Paylas butonu modal acar
+- Drawer **ornekler** bolumu eklendi
+- 'Cerkesce' -> 'Cerkesce' duzeltildi
+- HTML kopyalama temizlendi
+
+### Kalan Sorunlar (Faz 5 Konusu)
+
+| # | Sorun | Durum |
+|:-:|:------|:------|
+| 1 | Ters Arama Calismiyor | 🔒 Faz 5 (P5-001) |
+| 2 | 15 Sozluk Atlaniyor (34 -> 19) | 🔒 Faz 5 (P5-001) |
+| 4 | Arama Tutarsizligi (su -> sumak gelmiyor) | 🔒 Faz 5 (P5-001) |
+
+**Not:** Kalan 3 sorun **Faz 5 / P5-001 Corpus Coverage** kapsaminda cozulecek.
+
+---
+**Guncelleme Tarihi:** 2026-09-25
