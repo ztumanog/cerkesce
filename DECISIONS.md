@@ -74,3 +74,4 @@ Bu iki ifade **çelişmez.**
 - PHASES.md
 - ROADMAP.md
 - PROJECT_STATUS.md
+
