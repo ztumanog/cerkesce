@@ -515,6 +515,11 @@ const paylas = useCallback(() => {
       return meta?.displayName || s.sourceName || s.title || 'Kaynak';
     }),
     tarih: new Date().toLocaleDateString('tr-TR'),
+      ornekler: filtrelenmisKaynaklar.flatMap((s) =>
+      (s.meanings || []).filter((m) =>
+        m.includes('◊') || m.includes('-') || m.includes(':')
+      )
+    ).slice(0, 5),
   }}
 />
 
