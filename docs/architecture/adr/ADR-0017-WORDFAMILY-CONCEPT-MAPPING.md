@@ -1,6 +1,7 @@
 # ADR-0017: WordFamily → Concept Mapping
 
-**Durum:** PROPOSED
+**Durum:** ACCEPTED
+**Kabul Tarihi:** 2026-09-30
 **Tarih:** 2026-09-26
 **İmza:** Dipo
 **İlgili ADR:** ADR-0009-CONCEPT_IDENTITY_STRATEGY

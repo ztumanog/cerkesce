@@ -1,6 +1,7 @@
 # ADR-0018: WordFamilyResolver Scope Boundary
 
-**Durum:** PROPOSED
+**Durum:** ACCEPTED
+**Kabul Tarihi:** 2026-09-30
 **Tarih:** 2026-09-26
 **İmza:** Dipo
 **İlgili ADR:** ADR-0017-WORDFAMILY-CONCEPT-MAPPING
