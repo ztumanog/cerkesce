@@ -1820,5 +1820,177 @@
       }
     ],
     "notes": "Yas, omur koku. Homonym: ныбжь (yas) != ныбжь (golge). 18 sozluk kaynagi."
+  },
+  {
+    "id": "R-ADE",
+    "form": "адэ",
+    "ipa": "/aːda/",
+    "primaryMeaning": "baba",
+    "secondaryMeanings": [
+      "ata",
+      "peder"
+    ],
+    "semanticDomains": [
+      "kinship",
+      "family"
+    ],
+    "dialectVariants": {
+      "adyghe": "адэ",
+      "kabardian": "адэ"
+    },
+    "productivity": {
+      "lemmaCount": 5,
+      "compoundCount": 3
+    },
+    "derivedWords": [
+      {
+        "form": "адэшхуэ",
+        "meaning": "dede (buyuk baba)"
+      },
+      {
+        "form": "адэцӀыкӀу",
+        "meaning": "amca (kucuk baba)"
+      },
+      {
+        "form": "адэжь",
+        "meaning": "yash baba"
+      }
+    ],
+    "notes": "Baba koku. -шхуэ ile dede, -цӀыкӀу ile amca olur."
+  },
+  {
+    "id": "R-ANE",
+    "form": "анэ",
+    "ipa": "/aːna/",
+    "primaryMeaning": "anne",
+    "secondaryMeanings": [
+      "ana",
+      "valide"
+    ],
+    "semanticDomains": [
+      "kinship",
+      "family"
+    ],
+    "dialectVariants": {
+      "adyghe": "анэ",
+      "kabardian": "анэ"
+    },
+    "productivity": {
+      "lemmaCount": 5,
+      "compoundCount": 3
+    },
+    "derivedWords": [
+      {
+        "form": "анэшхуэ",
+        "meaning": "buyukanne"
+      },
+      {
+        "form": "анэцӀыкӀу",
+        "meaning": "teyze/hala (kucuk anne)"
+      },
+      {
+        "form": "нанэ",
+        "meaning": "nine (sevgi hitabi)"
+      }
+    ],
+    "notes": "Anne koku. -шхуэ ile buyukanne, -цӀыкӀу ile teyze/hala olur."
+  },
+  {
+    "id": "R-1UEKHU",
+    "form": "Ӏуэху",
+    "ipa": "/ʔʷɐxʷ/",
+    "primaryMeaning": "is, mesele",
+    "secondaryMeanings": [
+      "gorev",
+      "sorun",
+      "dava"
+    ],
+    "semanticDomains": [
+      "abstract",
+      "action"
+    ],
+    "dialectVariants": {
+      "adyghe": "Ӏофы",
+      "kabardian": "Ӏуэху"
+    },
+    "productivity": {
+      "lemmaCount": 6,
+      "compoundCount": 4
+    },
+    "derivedWords": [
+      {
+        "form": "Ӏуэхушхуэ",
+        "meaning": "onemli is"
+      },
+      {
+        "form": "ӀуэхуцӀыкӀу",
+        "meaning": "onemsiz is"
+      }
+    ],
+    "notes": "Is, mesele koku. -шхуэ ile onemli, -цӀыкӀу ile onemsiz olur."
+  },
+  {
+    "id": "R-MAKHUE",
+    "form": "махуэ",
+    "ipa": "/maːxʷa/",
+    "primaryMeaning": "gun",
+    "secondaryMeanings": [
+      "vakit",
+      "zaman"
+    ],
+    "semanticDomains": [
+      "time"
+    ],
+    "dialectVariants": {
+      "adyghe": "мафэ",
+      "kabardian": "махуэ"
+    },
+    "productivity": {
+      "lemmaCount": 8,
+      "compoundCount": 5
+    },
+    "derivedWords": [
+      {
+        "form": "махуэшхуэ",
+        "meaning": "bayram (buyuk gun)"
+      },
+      {
+        "form": "махуэцӀыкӀу",
+        "meaning": "siradan gun"
+      }
+    ],
+    "notes": "Gun koku. -шхуэ ile bayram olur."
+  },
+  {
+    "id": "R-SHYPHUE",
+    "form": "шыпхъу",
+    "ipa": "/ʃǝpχʷǝ/",
+    "primaryMeaning": "kiz kardes",
+    "secondaryMeanings": [
+      "kiz kardes (birinin)"
+    ],
+    "semanticDomains": [
+      "kinship",
+      "family"
+    ],
+    "dialectVariants": {
+      "adyghe": "шыпхъу",
+      "kabardian": "шыпхъу"
+    },
+    "productivity": {
+      "lemmaCount": 4,
+      "compoundCount": 2
+    },
+    "derivedWords": [
+      {
+        "form": "адэшыпхъу",
+        "meaning": "hala (baba kiz kardesi)"
+      },
+      {
+        "form": "анэшыпхъу",
+        "meaning": "teyze (anne kiz kardesi)"
+      }
+    ],
+    "notes": "Kiz kardes koku. Akrabalik terimlerinde kullanilir: адэ/анэ + шыпхъу. Kaynak: Адыгэ-урыс псалъалъэ (2008)."
   }
 ]

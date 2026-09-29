@@ -6238,5 +6238,197 @@
       "kabardian": "мафӀэцӀыкӀу"
     },
     "notes": "мафӀэ (ates) + цӀыкӀу (kucuk) = kucuk ates -> kivilcim."
+  },
+  {
+    "id": "L-K1UASH",
+    "form": "къуэш",
+    "ipa": "/qʷʼǝʃ/",
+    "literalMeaning": "erkek kardes",
+    "derivation": {
+      "rootIds": [
+        "R-K1UASH"
+      ],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-K1UASH",
+    "conceptId": "BROTHER",
+    "dialectVariants": {
+      "adyghe": "къуэш",
+      "kabardian": "къуэш"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 5,
+      "sources": [
+        "Jonty Yamisha",
+        "Huvaj (2007)"
+      ],
+      "meanings": {
+        "tr": "erkek kardes",
+        "ru": "брат"
+      }
+    },
+    "notes": "Temel erkek kardes. Akrabalik bilesiklerinde kullanilir: адэ/анэ + къуэш."
+  },
+  {
+    "id": "L-SHYPHUE",
+    "form": "шыпхъу",
+    "ipa": "/ʃǝpχʷǝ/",
+    "literalMeaning": "kiz kardes",
+    "derivation": {
+      "rootIds": [
+        "R-SHYPHUE"
+      ],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-SHYPHUE",
+    "conceptId": "SISTER",
+    "dialectVariants": {
+      "adyghe": "шыпхъу",
+      "kabardian": "шыпхъу"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 4,
+      "sources": [
+        "Jonty Yamisha",
+        "Huvaj (2007)",
+        "Адыгэ-урыс псалъалъэ (2008)"
+      ],
+      "meanings": {
+        "tr": "kiz kardes",
+        "ru": "сестра"
+      }
+    },
+    "notes": "Temel kiz kardes. Akrabalik bilesiklerinde kullanilir."
+  },
+  {
+    "id": "L-ADEKUESHH",
+    "form": "адэ къуэш",
+    "ipa": "/aːdɐ qʷʼǝʃ/",
+    "literalMeaning": "baba kardes",
+    "derivation": {
+      "rootIds": [
+        "R-ADE",
+        "R-K1UASH"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-ADE",
+    "conceptId": "UNCLE",
+    "dialectVariants": {
+      "adyghe": "ятэш",
+      "kabardian": "адэ къуэш"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 3,
+      "sources": [
+        "Jonty Yamisha (KBD → TR)",
+        "Huvaj (2007)",
+        "Akademik metin"
+      ],
+      "meanings": {
+        "tr": "amca (baba kardesi)",
+        "ru": "дядя по отцу"
+      }
+    },
+    "notes": "адэ (baba) + къуэш (kardes) = amca. Adigece: ятэш / атэш."
+  },
+  {
+    "id": "L-ANEKUESHH",
+    "form": "анэ къуэш",
+    "ipa": "/aːnɐ qʷʼǝʃ/",
+    "literalMeaning": "anne kardes",
+    "derivation": {
+      "rootIds": [
+        "R-ANE",
+        "R-K1UASH"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-ANE",
+    "conceptId": "UNCLE_MATERNAL",
+    "dialectVariants": {
+      "adyghe": "анэш",
+      "kabardian": "анэ къуэш"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 2,
+      "sources": [
+        "Akademik metin (2018)"
+      ],
+      "meanings": {
+        "tr": "dayi (anne kardesi)",
+        "ru": "дядя по матери"
+      }
+    },
+    "notes": "анэ (anne) + къуэш (kardes) = dayi. Adigece: анэш."
+  },
+  {
+    "id": "L-ADESHYPHUE",
+    "form": "адэшыпхъу",
+    "ipa": "/aːdɐʃǝpχʷǝ/",
+    "literalMeaning": "baba kiz kardes",
+    "derivation": {
+      "rootIds": [
+        "R-ADE",
+        "R-SHYPHUE"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-ADE",
+    "conceptId": "AUNT_PATERNAL",
+    "dialectVariants": {
+      "adyghe": "атэшыпхъу",
+      "kabardian": "адэшыпхъу"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 4,
+      "sources": [
+        "Huvaj (2007)",
+        "Jonty Yamisha",
+        "Адыгэ-урыс псалъалъэ (2008)"
+      ],
+      "meanings": {
+        "tr": "hala (baba kiz kardesi)",
+        "ru": "тётя по отцу"
+      }
+    },
+    "notes": "адэ (baba) + шыпхъу (kiz kardes) = hala. Adigece: атэшыпхъу."
+  },
+  {
+    "id": "L-ANESHYPHUE",
+    "form": "анэшыпхъу",
+    "ipa": "/aːnɐʃǝpχʷǝ/",
+    "literalMeaning": "anne kiz kardes",
+    "derivation": {
+      "rootIds": [
+        "R-ANE",
+        "R-SHYPHUE"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-ANE",
+    "conceptId": "AUNT_MATERNAL",
+    "dialectVariants": {
+      "adyghe": "анэшыпхъу",
+      "kabardian": "анэшыпхъу"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 3,
+      "sources": [
+        "Jonty Yamisha",
+        "Адыгэ-урыс псалъалъэ (2008)"
+      ],
+      "meanings": {
+        "tr": "teyze (anne kiz kardesi)",
+        "ru": "тётя по матери"
+      }
+    },
+    "notes": "анэ (anne) + шыпхъу (kiz kardes) = teyze."
   }
 ]
