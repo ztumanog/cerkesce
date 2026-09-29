@@ -1325,5 +1325,25 @@
     "evidence": "ныджэ",
     "confidence": 1.0,
     "evidenceSource": "dictionary"
+  },
+  {
+    "id": "SR-KUE-CORNER",
+    "source": "R-KUE",
+    "target": "L-KUAPE",
+    "type": "compound",
+    "evidence": "къуапэ",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary",
+    "reference": "Apashev (2008), Kardanov (1957)"
+  },
+  {
+    "id": "SR-PE-CORNER",
+    "source": "R-PE",
+    "target": "L-KUAPE",
+    "type": "compound",
+    "evidence": "къуапэ",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary",
+    "reference": "Apashev (2008), Kardanov (1957)"
   }
 ]

@@ -5128,5 +5128,46 @@
       }
     },
     "notes": "Taskin yatagi koku temel lexeme."
+  },
+  {
+    "id": "L-KUAPE",
+    "form": "къуапэ",
+    "ipa": "/qʷapa/",
+    "literalMeaning": "vadinin ucu",
+    "derivation": {
+      "rootIds": [
+        "R-KUE",
+        "R-PE"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-KUE",
+    "conceptId": "CORNER",
+    "dialectVariants": {
+      "adyghe": "къуапэ",
+      "kabardian": "къуапэ"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 11,
+      "sources": [
+        "Apashev (2008)",
+        "Yamisha (2018)",
+        "Gish (0000)",
+        "Amcad Camuha (1997)",
+        "Kokov (2008)",
+        "Enstitüsü (2011)",
+        "Şıgaje Adam (2020)",
+        "Kardanov (1957)",
+        "Tharkaho (1991)",
+        "Huvaj (2007)"
+      ],
+      "meanings": {
+        "tr": "köşe, açı, uç",
+        "en": "corner, angle",
+        "ru": "угол"
+      }
+    },
+    "notes": "къуэ (vadi) + пэ (uç/burun) = köşe. 11 sözlük kaynağı."
   }
 ]
