@@ -1515,5 +1515,194 @@
     "confidence": 1.0,
     "evidenceSource": "dictionary",
     "reference": "Apashev (2008), Kardanov (1957)"
+  },
+  {
+    "id": "SR-PSY-BIG_WATER",
+    "source": "R-PSY",
+    "target": "FLOOD",
+    "type": "derivational",
+    "evidence": "псышхуэ",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary"
+  },
+  {
+    "id": "SR-UNE-BIG_HOUSE",
+    "source": "R-UNE",
+    "target": "HOUSE",
+    "type": "derivational",
+    "evidence": "унэшхуэ",
+    "confidence": 1.0,
+    "evidenceSource": "academic"
+  },
+  {
+    "id": "SR-MAF1E-CONFLAGRATION",
+    "source": "R-MAF1E",
+    "target": "FIRE",
+    "type": "derivational",
+    "evidence": "мафӀэшхуэ",
+    "confidence": 1.0,
+    "evidenceSource": "corpus"
+  },
+  {
+    "id": "SR-SHXUE-C1YQ1U-ANTONYM",
+    "source": "M-SHXUE",
+    "target": "M-C1YQ1U",
+    "type": "antonym",
+    "evidence": "-шхуэ vs -цӀыкӀу",
+    "confidence": 1.0,
+    "evidenceSource": "grammatical"
+  },
+  {
+    "id": "SR-UNE-SMALL_HOUSE",
+    "source": "R-UNE",
+    "target": "HOUSE",
+    "type": "derivational",
+    "evidence": "унэцӀыкӀу",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary"
+  },
+  {
+    "id": "SR-GU-COWARD",
+    "source": "R-GU",
+    "target": "COWARD",
+    "type": "derivational",
+    "evidence": "гуцӀыкӀу",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary"
+  },
+  {
+    "id": "SR-NYBZHY-AGE",
+    "source": "R-NYBZHY",
+    "target": "AGE",
+    "type": "derivational",
+    "evidence": "ныбжь",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary"
+  },
+  {
+    "id": "SR-NYBZHY-AGED",
+    "source": "R-NYBZHY",
+    "target": "AGED",
+    "type": "derivational",
+    "evidence": "ныбжьышхуэ",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary"
+  },
+  {
+    "id": "SR-NYBZHY-YOUTH",
+    "source": "R-NYBZHY",
+    "target": "YOUTH",
+    "type": "derivational",
+    "evidence": "ныбжьыцӀыкӀу",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary"
+  },
+  {
+    "id": "SR-NYBZHY-ZHY",
+    "source": "R-NYBZHY",
+    "target": "R-ZHY",
+    "type": "related",
+    "evidence": "ныбжь + жьы (yas + eski)",
+    "confidence": 0.9,
+    "evidenceSource": "semantic"
+  },
+  {
+    "id": "SR-ADE-UNCLE",
+    "source": "R-ADE",
+    "target": "UNCLE",
+    "type": "compound",
+    "evidence": "адэ къуэш",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary"
+  },
+  {
+    "id": "SR-ADE-AUNT_PATERNAL",
+    "source": "R-ADE",
+    "target": "AUNT_PATERNAL",
+    "type": "compound",
+    "evidence": "адэшыпхъу",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary"
+  },
+  {
+    "id": "SR-ANE-UNCLE_MATERNAL",
+    "source": "R-ANE",
+    "target": "UNCLE_MATERNAL",
+    "type": "compound",
+    "evidence": "анэ къуэш",
+    "confidence": 1.0,
+    "evidenceSource": "academic"
+  },
+  {
+    "id": "SR-ANE-AUNT_MATERNAL",
+    "source": "R-ANE",
+    "target": "AUNT_MATERNAL",
+    "type": "compound",
+    "evidence": "анэшыпхъу",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary"
+  },
+  {
+    "id": "SR-K1UASH-BROTHER",
+    "source": "R-K1UASH",
+    "target": "BROTHER",
+    "type": "derivational",
+    "evidence": "къуэш",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary"
+  },
+  {
+    "id": "SR-TETE-GRANDFATHER",
+    "source": "R-TETE",
+    "target": "GRANDFATHER",
+    "type": "derivational",
+    "evidence": "тэтэжъ",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary"
+  },
+  {
+    "id": "SR-DADE-GREAT_GRANDFATHER",
+    "source": "R-DADE",
+    "target": "GREAT_GRANDFATHER",
+    "type": "derivational",
+    "evidence": "дадэшхуэ",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary"
+  },
+  {
+    "id": "SR-ADE-GRANDFATHER",
+    "source": "R-ADE",
+    "target": "GRANDFATHER",
+    "type": "derivational",
+    "evidence": "адэшхуэ",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary"
+  },
+  {
+    "id": "SR-ADESHHUE-GRANDFATHER",
+    "source": "L-ADESHHUE",
+    "target": "GRANDFATHER",
+    "type": "related",
+    "evidence": "адэшхуэ = dede (ADY + KBD)",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary"
+  },
+  {
+    "id": "SR-ANESHHUE-GRANDMOTHER",
+    "source": "L-ANESHHUE",
+    "target": "GRANDMOTHER",
+    "type": "related",
+    "evidence": "анэшхуэ = nine (ADY + KBD)",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary"
+  },
+  {
+    "id": "SR-SHXUE-ZHY",
+    "source": "M-SHXUE",
+    "target": "M-ZHY",
+    "type": "related",
+    "evidence": "-шхуэ ↔ -жь (buyutme ekleri)",
+    "confidence": 0.9,
+    "evidenceSource": "grammatical"
   }
 ]
