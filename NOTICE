@@ -1,0 +1,29 @@
+================================================================================
+CERKESCE PROJESI — UCUNCU TARAF LISANSLARI
+================================================================================
+
+1. Circassian-Russian Parallel Text Corpus v1.0
+--------------------------------------------------------------------------------
+Kaynak  : https://huggingface.co/datasets/adiga-ai/circassian-parallel-corpus
+Yazar   : Anzor Qunash
+Yayinci : adiga.ai
+Yil     : 2025
+Lisans  : Creative Commons Attribution 4.0 International (CC BY 4.0)
+          https://creativecommons.org/licenses/by/4.0/
+
+Atif (APA):
+  Qunash, A. (2025). Circassian-Russian Parallel Text Corpus v1.0 [Data set].
+  adiga.ai. https://huggingface.co/datasets/adiga-ai/circassian-parallel-corpus
+
+Icerik:
+  - 331,468 parallel ceviri cifti
+  - Dogu Cerkessce (Kabardian, kbd): 220,174 cift
+  - Bati Cerkessce (Adyghe, ady): 111,294 cift
+
+Kullanim:
+  Bu corpus, Faz C-9.1 (corpus dogrulama) ve Faz C-9.4 (metaforik zincirler)
+  kapsaminda kullanilmaktadir.
+
+================================================================================
+Son guncelleme: 2026-09-30
+================================================================================

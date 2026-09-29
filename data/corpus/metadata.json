@@ -1,0 +1,24 @@
+{
+  "corpusName": "adiga-ai/circassian-parallel-corpus",
+  "version": "v1.0",
+  "license": "CC BY 4.0",
+  "downloadedAt": "2026-09-29T22:07:41.746620+00:00",
+  "splits": {
+    "kbd_ru": 120218,
+    "ru_kbd": 99956,
+    "ady_ru": 57305,
+    "ru_ady": 53989
+  },
+  "totalPairs": 331468,
+  "citation": "Anzor Qunash (2025). Circassian-Russian Parallel Text Corpus v1.0. adiga.ai",
+  "url": "https://huggingface.co/datasets/adiga-ai/circassian-parallel-corpus",
+  "schema": {
+    "format": "jsonl",
+    "fields": [
+      "translation.kbd",
+      "translation.ady",
+      "translation.ru"
+    ],
+    "note": "Her satir bir ceviri ciftini temsil eder."
+  }
+}
