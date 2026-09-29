@@ -55,3 +55,7 @@ public/icons/Screenshot-*.png
 
 # Next.js otomatik dosya
 next-env.d.ts
+
+# Yedek dosyalari
+*.bak
+*.bak.*

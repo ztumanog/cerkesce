@@ -1,0 +1,58 @@
+﻿[
+  {
+    "id": "WF-GU",
+    "rootId": "R-GU",
+    "morphemeIds": ["M-F1E", "M-GHE", "M-BZHYGE", "M-F1EN"],
+    "lexemeIds": [
+      "L-GUF1E",
+      "L-GUGHE",
+      "L-GUBZHYGE",
+      "L-GUETYNEGHE",
+      "L-GUF1EN"
+    ],
+    "productivity": {
+      "totalLexemes": 47,
+      "corpusFrequency": 52291,
+      "mostFrequentLexemeId": "L-GUF1E"
+    },
+    "dialectNote": {
+      "adyghe": "гушӀо",
+      "kabardian": "гуфӀэ",
+      "note": "Ses denkligi: шӀо -> фӀэ"
+    },
+    "notes": "En uretken somatik kok ailesi. 22 bilesik yapi korpusta dogrulandi."
+  },
+  {
+    "id": "WF-SHHYE",
+    "rootId": "R-SHHYE",
+    "morphemeIds": ["M-GU"],
+    "lexemeIds": ["L-SHHYEGU", "L-SHHYEUSYGHE"],
+    "productivity": {
+      "totalLexemes": 30,
+      "corpusFrequency": 15000
+    },
+    "notes": "Metaforik zincir: HEAD -> TOP -> REASON. щхьэусыгъуэ = bas + sebep -> gerekce"
+  },
+  {
+    "id": "WF-NE",
+    "rootId": "R-NE",
+    "morphemeIds": ["M-PSE", "M-GU"],
+    "lexemeIds": ["L-NAPS", "L-NEGU", "L-NAF"],
+    "productivity": {
+      "totalLexemes": 25,
+      "corpusFrequency": 10000
+    },
+    "notes": "Duyu organi koku. нэ + гу = yuz, нэ + псэ = gozyasi"
+  },
+  {
+    "id": "WF-PSY",
+    "rootId": "R-PSY",
+    "morphemeIds": ["M-NE"],
+    "lexemeIds": ["L-NAPS"],
+    "productivity": {
+      "totalLexemes": 20,
+      "corpusFrequency": 8000
+    },
+    "notes": "Doga koku. напс = нэ + псэ (goz + su) bilesimi."
+  }
+]

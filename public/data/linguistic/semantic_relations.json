@@ -1,0 +1,720 @@
+[
+  {
+    "id": "SR-GU-JOY",
+    "source": "R-GU",
+    "target": "JOY",
+    "type": "derivational",
+    "evidence": "гуфӀэ",
+    "confidence": 1.0,
+    "evidenceSource": "corpus",
+    "corpusFrequency": 84,
+    "reference": "Kuipers (1960), Colarusso (1992)"
+  },
+  {
+    "id": "SR-GU-HOPE",
+    "source": "R-GU",
+    "target": "HOPE",
+    "type": "derivational",
+    "evidence": "гугъэ",
+    "confidence": 1.0,
+    "evidenceSource": "corpus",
+    "corpusFrequency": 1313
+  },
+  {
+    "id": "SR-GU-INTELLIGENCE",
+    "source": "R-GU",
+    "target": "INTELLIGENCE",
+    "type": "derivational",
+    "evidence": "губзыгъэ",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary"
+  },
+  {
+    "id": "SR-GU-LOYALTY",
+    "source": "R-GU",
+    "target": "LOYALTY",
+    "type": "derivational",
+    "evidence": "гуэтыныгъэ",
+    "confidence": 1.0,
+    "evidenceSource": "academic"
+  },
+  {
+    "id": "SR-HEAD-TOP",
+    "source": "R-SHHYE",
+    "target": "TOP",
+    "type": "metaphorical",
+    "evidence": "щхьэгу",
+    "confidence": 0.9,
+    "evidenceSource": "dictionary",
+    "notes": "Metaforik zincirin ilk halkasi: HEAD -> TOP"
+  },
+  {
+    "id": "SR-HEAD-REASON",
+    "source": "R-SHHYE",
+    "target": "REASON",
+    "type": "metaphorical",
+    "evidence": "щхьэусыгъуэ",
+    "confidence": 0.95,
+    "evidenceSource": "corpus",
+    "notes": "Metaforik zincirin ikinci halkasi: HEAD -> REASON"
+  },
+  {
+    "id": "SR-EYE-TEAR",
+    "source": "R-NE",
+    "target": "TEAR",
+    "type": "compound",
+    "evidence": "напс",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary",
+    "notes": "нэ + псэ = goz + su = gozyasi"
+  },
+  {
+    "id": "SR-EYE-FACE",
+    "source": "R-NE",
+    "target": "FACE",
+    "type": "compound",
+    "evidence": "нэгу",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary",
+    "notes": "Polisemi: гу hem kalp hem ic/merkez"
+  },
+  {
+    "id": "SR-GU-UNDERSTAND",
+    "source": "R-GU",
+    "target": "UNDERSTAND",
+    "type": "derivational",
+    "evidence": "гурыӏуэн",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary",
+    "reference": "Wiktionary (2025)",
+    "notes": "Metaforik: kalp + soz = anlamak."
+  },
+  {
+    "id": "SR-GU-AGREE",
+    "source": "R-GU",
+    "target": "AGREE",
+    "type": "derivational",
+    "evidence": "гурыӏуэн",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary",
+    "reference": "Wiktionary (2025)",
+    "notes": "Ayni fiilin gecissiz hali: anlasmak."
+  },
+  {
+    "id": "SR-GU-WORD",
+    "source": "R-GU",
+    "target": "WORD",
+    "type": "derivational",
+    "evidence": "гущыӏэ",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary+corpus",
+    "reference": "Aig (2006), Lash (2013), Shigaje Adam (2020), Adyghe Web Corpus",
+    "notes": "Kalpten soylenen = kelime. Korpus: 4 cumle."
+  },
+  {
+    "id": "SR-GU-SPEECH",
+    "source": "R-GU",
+    "target": "SPEECH",
+    "type": "derivational",
+    "evidence": "гущыӏэ",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary",
+    "reference": "Aig (2006)",
+    "notes": "Ayni kelimenin ikinci anlami: soz, konusma."
+  },
+  {
+    "id": "SR-GU-REALIZE",
+    "source": "R-GU",
+    "target": "REALIZE",
+    "type": "derivational",
+    "evidence": "гурыӏуэжын",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary",
+    "reference": "Wiktionary (2025)",
+    "notes": "Kendi kendine anlamak."
+  },
+  {
+    "id": "SR-GU-RECONCILE",
+    "source": "R-GU",
+    "target": "RECONCILE",
+    "type": "derivational",
+    "evidence": "гурыӏуэжын",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary",
+    "reference": "Wiktionary (2025)",
+    "notes": "Barismak."
+  },
+  {
+    "id": "SR-GU-SOUL_DEPTH",
+    "source": "R-GU",
+    "target": "SOUL_DEPTH",
+    "type": "derivational",
+    "evidence": "гущӀэ",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary",
+    "reference": "Wiktionary (2023)",
+    "notes": "Kalbin alt kismi = ruhun derinligi."
+  },
+  {
+    "id": "SR-1E-HAND",
+    "source": "R-1E",
+    "target": "HAND",
+    "type": "derivational",
+    "evidence": "Ӏэ",
+    "confidence": 1.0,
+    "evidenceSource": "corpus",
+    "reference": "Adyghe Web Corpus",
+    "notes": "Yeni kok: el."
+  },
+  {
+    "id": "SR-1E-FINGER",
+    "source": "R-1E",
+    "target": "FINGER",
+    "type": "derivational",
+    "evidence": "Ӏэпэ",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary",
+    "notes": "Ӏэ + пэ = parmak."
+  },
+  {
+    "id": "SR-1E-PALM",
+    "source": "R-1E",
+    "target": "PALM",
+    "type": "derivational",
+    "evidence": "Ӏэгу",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary",
+    "notes": "Ӏэ + гу = avuc. Gu polisemisi."
+  },
+  {
+    "id": "SR-LHE-FOOT",
+    "source": "R-LHE",
+    "target": "FOOT",
+    "type": "derivational",
+    "evidence": "лъэ",
+    "confidence": 1.0,
+    "evidenceSource": "corpus+dictionary",
+    "reference": "Wiktionary (2023)",
+    "notes": "Yeni kok: ayak."
+  },
+  {
+    "id": "SR-LHE-SOLE",
+    "source": "R-LHE",
+    "target": "SOLE",
+    "type": "derivational",
+    "evidence": "лъэгу",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary",
+    "notes": "лъэ + гу = taban. Gu polisemisi."
+  },
+  {
+    "id": "SR-LHE-STEP",
+    "source": "R-LHE",
+    "target": "STEP",
+    "type": "derivational",
+    "evidence": "лъэбакъуэ",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary",
+    "notes": "лъэ + бакъуэ = adim."
+  },
+  {
+    "id": "SR-1E-BODY",
+    "source": "R-1E",
+    "target": "BODY",
+    "type": "compound",
+    "evidence": "Ӏэпкълъэпкъ",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary",
+    "notes": "Ӏэ + пкъ + лъэ + пкъ = vucut."
+  },
+  {
+    "id": "SR-NE-EVIL_EYE",
+    "source": "R-NE",
+    "target": "EVIL_EYE",
+    "type": "derivational",
+    "evidence": "нэ Ӏей",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary",
+    "notes": "Adigece нэ Ӏае -> Kabardeyce нэ Ӏей."
+  },
+  {
+    "id": "SR-NE-SHARP_EYE",
+    "source": "R-NE",
+    "target": "SHARP_EYE",
+    "type": "derivational",
+    "evidence": "нэ жан",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary",
+    "notes": "Adigece нэ чан -> Kabardeyce нэ жан."
+  },
+  {
+    "id": "SR-NE-ONE_EYED",
+    "source": "R-NE",
+    "target": "ONE_EYED",
+    "type": "derivational",
+    "evidence": "нэ закъуэ",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary",
+    "notes": "Iki lehcede ayni."
+  },
+  {
+    "id": "SR-SHHYE-HAIR",
+    "source": "R-SHHYE",
+    "target": "HAIR",
+    "type": "derivational",
+    "evidence": "щхьэц",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary+corpus",
+    "notes": "щхьэ + цы = sac. Ses dusmesi."
+  },
+  {
+    "id": "SR-NE-EYELASH",
+    "source": "R-NE",
+    "target": "EYELASH",
+    "type": "derivational",
+    "evidence": "нэбжьыц",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary",
+    "notes": "нэ + бжьы + цы = kirpik."
+  },
+  {
+    "id": "SR-NE-MASCARA",
+    "source": "R-NE",
+    "target": "MASCARA",
+    "type": "derivational",
+    "evidence": "нэбжьыцылэ",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary",
+    "notes": "нэбжьыц + лэ = maskara."
+  },
+  {
+    "id": "SR-TSY-HAIR",
+    "source": "R-NE",
+    "target": "HAIR_MORPHEME",
+    "type": "compound",
+    "evidence": "цы",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary",
+    "notes": "цы = kil, tuy. Ses dusmesi: цы -> ц."
+  },
+  {
+    "id": "SR-1E-HANDMADE",
+    "source": "R-1E",
+    "target": "HANDMADE",
+    "type": "derivational",
+    "evidence": "ӀэрыщӀ",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary",
+    "notes": "Ӏэ + ры + щӀ = el yapimi."
+  },
+  {
+    "id": "SR-1E-AI",
+    "source": "R-1E",
+    "target": "ARTIFICIAL_INTELLIGENCE",
+    "type": "derivational",
+    "evidence": "Ӏэбзыгъэ",
+    "confidence": 0.8,
+    "evidenceSource": "inferred",
+    "notes": "YENI: Ӏэ + бзыгъэ = yapay zeka. Karsit: губзыгъэ."
+  },
+  {
+    "id": "SR-SHHYE-SPOUSE",
+    "source": "R-SHHYE",
+    "target": "SPOUSE",
+    "type": "derivational",
+    "evidence": "щхьэгъусэ",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary",
+    "notes": "щхьэ + гъусэ = es."
+  },
+  {
+    "id": "SR-SHHYE-SINGLE",
+    "source": "R-SHHYE",
+    "target": "SINGLE",
+    "type": "derivational",
+    "evidence": "щхьэгъусэншэ",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary",
+    "notes": "щхьэгъусэ + ншэ = essiz."
+  },
+  {
+    "id": "SR-PSY-LIFE_PARTNER",
+    "source": "R-PSY",
+    "target": "LIFE_PARTNER",
+    "type": "derivational",
+    "evidence": "псэгъу",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary",
+    "notes": "псэ + гъу = hayat arkadasi."
+  },
+  {
+    "id": "SR-UNE-HOUSEWIFE",
+    "source": "R-UNE",
+    "target": "HOUSEWIFE",
+    "type": "derivational",
+    "evidence": "унэгуащэ",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary",
+    "notes": "унэ + гуащэ = ev hanimi."
+  },
+  {
+    "id": "SR-GUASHE-LADY",
+    "source": "R-GUASHCH",
+    "target": "LADY",
+    "type": "derivational",
+    "evidence": "гуащэ",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary",
+    "notes": "Prenses, hanim."
+  },
+  {
+    "id": "SR-SHHYE-FREEDOM",
+    "source": "R-SHHYE",
+    "target": "FREEDOM",
+    "type": "metaphorical",
+    "evidence": "щхьэхуитыныгъэ",
+    "confidence": 1.0,
+    "evidenceSource": "corpus",
+    "notes": "щхьэ + хуит + ыныгъэ = ozgurluk. Metaforik zincirin doruk noktasi."
+  },
+  {
+    "id": "SR-SHHYE-WINDOW",
+    "source": "R-SHHYE",
+    "target": "WINDOW",
+    "type": "metaphorical",
+    "evidence": "щхьэгъубжэ",
+    "confidence": 1.0,
+    "evidenceSource": "corpus",
+    "notes": "щхьэ + гъубжэ = pencere. Evin gozu."
+  },
+  {
+    "id": "SR-PE-NOSE",
+    "source": "R-PE",
+    "target": "NOSE",
+    "type": "derivational",
+    "evidence": "пэ",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary",
+    "notes": "Burun. Iki rol: isim + onek."
+  },
+  {
+    "id": "SR-PE-NASAL_SEPTUM",
+    "source": "R-PE",
+    "target": "NASAL_SEPTUM",
+    "type": "derivational",
+    "evidence": "пэкукъу",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary",
+    "notes": "пэ + кукъу = burun kemigi."
+  },
+  {
+    "id": "SR-PE-HAWK_NOSED",
+    "source": "R-PE",
+    "target": "HAWK_NOSED",
+    "type": "derivational",
+    "evidence": "пэкъурш",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary",
+    "notes": "пэ + къурш = kartal burunlu."
+  },
+  {
+    "id": "SR-PE-FIRST",
+    "source": "R-PE",
+    "target": "FIRST_PREVIOUS",
+    "type": "derivational",
+    "evidence": "япэрей",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary",
+    "notes": "Iki anlam: birinci + onceki/eski."
+  },
+  {
+    "id": "SR-PE-LEADER",
+    "source": "R-PE",
+    "target": "LEADER",
+    "type": "derivational",
+    "evidence": "пэрыт",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary",
+    "notes": "пэ + ры + т = lider."
+  },
+  {
+    "id": "SR-P1E-BED_COVER",
+    "source": "R-P1E",
+    "target": "BED_COVER",
+    "type": "derivational",
+    "evidence": "пӀэтепхъуэ",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary",
+    "notes": "пӀэ + те + пхъуэ = yatak ortusu."
+  },
+  {
+    "id": "SR-P1E-DINING_ROOM",
+    "source": "R-P1E",
+    "target": "DINING_ROOM",
+    "type": "derivational",
+    "evidence": "шхапӀэ",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary",
+    "notes": "шхэ + пӀэ = yemek odasi."
+  },
+  {
+    "id": "SR-P1E-SCHOOL",
+    "source": "R-P1E",
+    "target": "SCHOOL",
+    "type": "derivational",
+    "evidence": "еджапӀэ",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary",
+    "notes": "еджэ + пӀэ = okul."
+  },
+  {
+    "id": "SR-P1E-DWELLING",
+    "source": "R-P1E",
+    "target": "DWELLING",
+    "type": "derivational",
+    "evidence": "псэупӀэ",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary",
+    "notes": "псэу + пӀэ = mesken."
+  },
+  {
+    "id": "SR-PSY-WELL",
+    "source": "R-PSY",
+    "target": "WELL",
+    "type": "derivational",
+    "evidence": "псынэ",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary (16 sources)",
+    "notes": "псы + -нэ = kuyu/kaynak."
+  },
+  {
+    "id": "SR-PSY-VALLEY",
+    "source": "R-PSY",
+    "target": "VALLEY",
+    "type": "derivational",
+    "evidence": "псыхъуэ",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary+corpus",
+    "notes": "псы + хъу + -э = vadi."
+  },
+  {
+    "id": "SR-PSY-RIVER",
+    "source": "R-PSY",
+    "target": "RIVER",
+    "type": "derivational",
+    "evidence": "псыежэх",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary+corpus",
+    "notes": "псы + ежэх = nehir."
+  },
+  {
+    "id": "SR-NE-LIGHT",
+    "source": "R-NE",
+    "target": "LIGHT",
+    "type": "derivational",
+    "evidence": "нэху",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary+corpus",
+    "notes": "нэ (goz) + ху = isik. Mecazi genisleme."
+  }
+  ,
+  {
+    "id": "SR-PE-FLAT_NOSED",
+    "source": "R-PE",
+    "target": "FLAT_NOSED",
+    "type": "derivational",
+    "evidence": "пэфыкъ",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary",
+    "reference": "Apashev (2008), Kokov (2008), Sherdjes Aliy (1994)",
+    "notes": "пэ + фыкъ = basık burunlu. 3 sözlük kaynağı."
+  },
+  {
+    "id": "SR-PE-SNUB_NOSED",
+    "source": "R-PE",
+    "target": "SNUB_NOSED",
+    "type": "derivational",
+    "evidence": "пэтӀинэ",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary",
+    "reference": "Apashev (2008), Kokov (2008), Kardanov (1957) + 7 kaynak",
+    "notes": "пэ + тӀинэ = kalkık burunlu. 10 sözlük kaynağı."
+  },
+  {
+    "id": "SR-PE-POINTED_NOSED",
+    "source": "R-PE",
+    "target": "POINTED_NOSED",
+    "type": "derivational",
+    "evidence": "пэцӀурэ",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary",
+    "reference": "Wiktionary (2023)",
+    "notes": "пэ + цӀурэ = sivri burunlu."
+  },
+  {
+    "id": "SR-NOSE-ANTONYM-FLAT-SNUB",
+    "source": "L-PEFYQ",
+    "target": "L-PETINE",
+    "type": "antonym",
+    "evidence": "пэфыкъ ↔ пэтӀинэ",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary",
+    "notes": "Basık ↔ kalkık burun. Zıt yön."
+  },
+  {
+    "id": "SR-NOSE-ANTONYM-SNUB-POINTED",
+    "source": "L-PETINE",
+    "target": "L-PETSURƏ",
+    "type": "antonym",
+    "evidence": "пэтӀинэ ↔ пэцӀурэ",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary",
+    "notes": "Kalkık ↔ sivri burun. Farklı şekil."
+  },
+  {
+    "id": "SR-NOSE-ANTONYM-FLAT-POINTED",
+    "source": "L-PEFYQ",
+    "target": "L-PETSURƏ",
+    "type": "antonym",
+    "evidence": "пэфыкъ ↔ пэцӀурэ",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary",
+    "notes": "Basık ↔ sivri burun."
+  },
+  {
+    "id": "SR-NOSE-SHAPE-TRIAD",
+    "source": "L-PEFYQ",
+    "target": "L-PETINE",
+    "type": "semantic_field",
+    "evidence": "burun şekli üçlüsü",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary",
+    "notes": "Üçlü burun şekli alanı: basık / kalkık / sivri. Semantic relations grubu."
+  },
+  {
+    "id": "SR-GHUSE-COMPANION",
+    "source": "R-GHUSE",
+    "target": "COMPANION",
+    "type": "derivational",
+    "evidence": "гъусэ",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary",
+    "reference": "Apashev (2008), Kokov (2008), Aig (2006)",
+    "notes": "18 sözlük kaynağı. Yol arkadaşı."
+  },
+  {
+    "id": "SR-GHUSE-PARTNER",
+    "source": "R-GHUSE",
+    "target": "PARTNER",
+    "type": "derivational",
+    "evidence": "гъусэ",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary",
+    "notes": "İş arkadaşı, yoldaş. İkinci anlam."
+  },
+  {
+    "id": "SR-GHUSE-SPOUSE",
+    "source": "R-GHUSE",
+    "target": "SPOUSE",
+    "type": "derivational",
+    "evidence": "щхьэгъусэ",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary",
+    "reference": "Huvaj (2007), Wiktionary (2023)",
+    "notes": "щхьэ + гъусэ = eş. Huvaj 'EŞ' anlamını da veriyor."
+  },
+  {
+    "id": "SR-SHHYE-GHUSE-COMPOUND",
+    "source": "L-SHHYEGHUSE",
+    "target": "L-GHUSE",
+    "type": "compound",
+    "evidence": "щхьэгъусэ",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary",
+    "notes": "Bileşiğin belirleyicisi: гъусэ = eş/arkadaş."
+  },
+  {
+    "id": "SR-GHUSE-UNE-FIELD",
+    "source": "R-GHUSE",
+    "target": "R-UNE",
+    "type": "semantic_field",
+    "evidence": "гъусэ + унэ",
+    "confidence": 0.9,
+    "evidenceSource": "inferred",
+    "notes": "Aile/hane alanı: eş + ev."
+  },
+  {
+    "id": "SR-PLHE-WAIT",
+    "source": "R-PLHE",
+    "target": "WAIT",
+    "type": "derivational",
+    "evidence": "пэплъэн",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary",
+    "reference": "19 sözlük kaynağı",
+    "notes": "пэ- (ön) + плъэ (bak) + -н (mastar) = beklemek."
+  },
+  {
+    "id": "SR-PEPLEN-WAIT",
+    "source": "L-PEPLEN",
+    "target": "WAIT",
+    "type": "derivational",
+    "evidence": "пэплъэн",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary",
+    "notes": "Masdar formu. Bekleme eylemi."
+  },
+  {
+    "id": "SR-PLHE-NE-FIELD",
+    "source": "R-PLHE",
+    "target": "R-NE",
+    "type": "semantic_field",
+    "evidence": "плъэ (bak) + нэ (göz)",
+    "confidence": 0.9,
+    "evidenceSource": "inferred",
+    "notes": "Görme algı alanı: bakmak + göz."
+  },
+  {
+    "id": "SR-P1E-PLACE",
+    "source": "R-P1E",
+    "target": "PLACE",
+    "type": "derivational",
+    "evidence": "пӀэ",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary",
+    "reference": "Wiktionary (2023)",
+    "notes": "Temel form. Yer, mekân."
+  },
+  {
+    "id": "SR-P1E-BED",
+    "source": "R-P1E",
+    "target": "BED",
+    "type": "derivational",
+    "evidence": "пӀэ",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary",
+    "reference": "Wiktionary (2023)",
+    "notes": "İkinci anlam: yatak, krovat."
+  },
+  {
+    "id": "SR-UNE-HOUSE",
+    "source": "R-UNE",
+    "target": "HOUSE",
+    "type": "derivational",
+    "evidence": "унэ",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary",
+    "reference": "Wiktionary (2023), Kaikki.org, Rusuniversalis",
+    "notes": "Temel form. 4 sözlük kaynağı."
+  },
+  {
+    "id": "SR-PE-P1E-FIELD",
+    "source": "R-PE",
+    "target": "R-P1E",
+    "type": "semantic_field",
+    "evidence": "пэ (burun/ön) + пӀэ (yer)",
+    "confidence": 0.8,
+    "evidenceSource": "inferred",
+    "notes": "Mekânsal alan: ön + yer. Etimolojik ilişki değil, semantik alan."
+  }
+]
