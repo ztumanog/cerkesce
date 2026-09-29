@@ -1,332 +1,135 @@
 # Project Status Report
 
-**Last Updated:** 2026-09-25
-**Version:** 8.3.0 (Product Stage ACTIVE)
+**Last Updated:** 2026-09-29
+**Version:** 9.1.0 (Faz C-4 COMPLETED)
 
 ---
 
-## 🎯 GÜNCEL DURUM (2026-09-25)
+## 🎯 GÜNCEL DURUM (2026-09-29)
 
 | Faz | Durum | Kanıt |
 |:----|:------|:------|
 | Faz 1 | ✅ CLOSED | Core Architecture |
-| Faz 2 | ✅ CLOSED | 104/104 PASS |
-| Faz 3 | ✅ COMPLETE | 24/24 PASS |
-| Faz 4 | ✅ Deliverables Completed | P4-009 |
+| Faz 2 | ✅ CLOSED | 193/193 PASS |
+| Faz 3 | ✅ COMPLETE | Concept Engine |
+| Faz 4 | ✅ COMPLETED | P4-009 |
 | Product Stage | 🚀 ACTIVE | 14 gün, 6 beta |
-| Faz 5 | 🟡 IN PROGRESS | P5-001 + P5-002 COMPLETED |
+| Faz 5 | 🟡 IN PROGRESS | Audit Complete |
+| **Faz C-3** | ✅ **COMPLETED** | 2026-09-28 |
+| **Faz C-4** | ✅ **COMPLETED** | **2026-09-29** |
+| **Faz C-5** | ⏳ **SIRADA** | псы ailesi |
 
-**Test Durumu:** 62/62 Test Files PASS, 193/193 Tests PASS ✅
-
-**Kanıt Belgeleri:**
-- `docs/PHASES.md` → Faz 2: 104/104, Faz 3: 24/24
-- `docs/PRODUCT_STAGE_REPORT_01.md` → 14 gün kullanım
-- `docs/FAZ5_KILIT_ACMA_KRITERLERI.md` → 3 kapı PASS
+**Test Durumu:** 73/73 Test Files PASS, **220/220 Tests PASS** ✅
 
 ---
 
-## 📦 ARŞİV: ESKİ DURUM (2026-09-22)
+## 📊 FAZ C-4 SONUCU (2026-09-29)
 
-> **NOT:** Aşağıdaki bölüm 2026-09-22 tarihli ESKİ durumu gösterir.
-> Güncel durum yukarıdadır. Bu bölüm sadece tarihsel kayıt içindir.
-# Project Status Report
+### Sayısal Durum
 
-**Last Updated:** 2026-09-24
-**Version:** 9.0.0 (Phase 2 CLOSED)
+| Kategori | Faz C-3 | Faz C-4 | Artış |
+|---|---|---|---|
+| **Kök** | 13 | **32** | +19 |
+| **Lexeme** | 60 | **90** | +30 |
+| **Morfem** | 45 | 45 | 0 |
+| **Semantic Relation** | 70 | 70 | 0 |
+| **Test** | 220 | **220** | ✅ |
 
----
+### Mimar Onayı
 
-## 🎯 Current Phase Status
+> "Faz C-4 kabul edilmistir. 32 Root, 90 Lexeme, 45 Morpheme, 70 Semantic Relation,
+> 220/220 PASS seviyesi artik kucuk bir deney degil, anlamli bir dil veri altyapisidir."
 
-### Phase 1: Core Architecture ✅
-- **Status:** COMPLETE
-- **Exit Criteria:** MET
+### Kanıt Belgeleri
 
-### Phase 2: Translation Platform ✅
-- **Status:** ✅ **CLOSED** (2026-09-24)
-- **Build:** ✅ PASS
-- **TypeScript:** ✅ PASS
-- **Tests:** ✅ 193/193 PASS (100%)
-- **Exit Criteria:** ✅ MET
-
-### Phase 3: Advanced Features ✅
-- **Status:** COMPLETE (Concept Engine)
-- **Exit Criteria:** MET
-
-### Phase 4: Data Mapping & Integrity ✅
-- **Status:** COMPLETE (P4-009)
-- **Exit Criteria:** MET
+- FAZ_C4_TAMAMLAMA_RAPORU.md (2026-09-29)
+- MIMAR_RAPORU_FAZ_C4.md (2026-09-29)
+- ROADMAP.md (Faz C-4 COMPLETED)
+- RESTORED.md (220/220 PASS)
+- ADR-ROOT-001.md (6/6 kriter TAMAM)
 
 ---
 
-## 📊 Test Results Summary
+## 🎯 FAZ C-5 HEDEFLERİ
 
-Total Tests: 193
-Passed: 193 ✅
-Failed: 0 ✅
-Pass Rate: 100%
+### Mimar Önerisi
 
-Build Status: ✅ PASS
-TypeScript: ✅ PASS
-Android Build: ✅ PASS
-CI/CD: ✅ PASS
+**Öncelik:** псы (su) ailesi — WATER kategorisinin merkezi
 
----
+**Önerilen hedefler:**
+- псы, псынэ, напс, шапс, псынкӀэ
 
-## ✅ PHASE 2 EXIT REVIEW - CLOSED
+**Ardından:**
+- бзэ, псэ, пэ, дзэ aileleri
 
-**Status:** ✅ **CLOSED**
-**Tarih:** 2026-09-24
+### Sayısal Hedefler
 
-### Exit Criteria
-
-| Kriter | Durum |
-|:-------|:------|
-| TranslationRepository | ✅ PASS |
-| TranslationEntry | ✅ PASS |
-| TranslationGroup | ✅ PASS |
-| MultiLanguage Search | ✅ PASS |
-| Reverse Translation Search | ✅ PASS |
-| Cross Dictionary Matching | ✅ PASS |
-| Filter Flow Audit | ✅ PASS |
-| Build | ✅ PASS |
-| TypeScript | ✅ PASS |
-| Tests | ✅ PASS |
-| CI/CD | ✅ PASS |
-
-### Kanıtlar
-
-- ✅ `npx tsc --noEmit` PASS
-- ✅ 62/62 test dosyası PASS
-- ✅ 193/193 test PASS
-- ✅ Android Build PASS
-- ✅ GitHub Release `v1.0.0-stable`
-- ✅ Vercel yayında
-- ✅ Filter Flow Audit Complete
-
-### Kritik Teknik Borç
-
-**0**
-
-### Düşük Öncelikli Teknik Borçlar
-
-**0**
-
-### Faz 2 Sonucu
-
-**Faz 2 resmi olarak KAPANDI.** ✅
+| Kategori | Mevcut | Hedef |
+|---|---|---|
+| **Kök** | 32 | 40+ |
+| **Lexeme** | 90 | 100+ |
+| **Morfem** | 45 | 60+ |
+| **Semantic Relation** | 70 | 100+ |
 
 ---
 
-## 📌 FAZ 4 ALT SPRINTLERI TAMAMLANDI (2026-09-24)
+## 📦 ARŞİV: ESKİ DURUM (2026-09-25)
 
-### Kapatilan Sprint'ler
+> **NOT:** Aşağıdaki bölüm tarihsel kayıt içindir.
+> Güncel durum yukarıdadır.
 
-- ✅ P4-005 Source Centric Drawer
-- ✅ P4-006 Gunun Kelimesi
-- ✅ Search Experience Sprint
-- ✅ P4-009 Drawer Semantik Sunum
-- ✅ P4-007 Release & Delivery
+### Faz 2 CLOSED (2026-09-24)
 
-### Sonraki Paket
+- 193/193 Tests PASS
+- GitHub Release v1.0.0-stable
+- Vercel yayında
 
-🚀 **Product Stage** (Kullanım + Gözlem + Geri Bildirim)
+### Faz 4 Tamamlandı (2026-09-24)
 
----
+- P4-005 Source Centric Drawer
+- P4-006 Günün Kelimesi
+- P4-007 Release & Delivery
+- P4-009 Drawer Semantik Sunum
 
-## 📌 P4-007 RELEASE & DELIVERY - TAMAMLANDI (2026-09-24)
-
-### Yapılanlar
-
-| # | İş | Durum |
-|:-:|:---|:------|
-| 1 | Release APK | ✅ |
-| 2 | AAB | ✅ 4.6 MB |
-| 3 | Keystore | ✅ |
-| 4 | Privacy Policy | ✅ |
-| 5 | APK dağıtımı | ✅ |
-| 6 | Versioning | ✅ 1 / "1.0" |
-| 7 | GitHub Release | ✅ `v1.0.0-stable` |
-| 8 | APK yükleme | ✅ 4.7 MB |
-
-### GitHub Release
-
-- **URL:** https://github.com/ztumanog/cerkesce/releases/tag/v1.0.0-stable
-- **Tag:** `v1.0.0-stable`
-- **Assets:** `cerkesce-sozluk-v1.0.apk` (4.7 MB)
+### Kritik Teknik Borç: 0
 
 ---
 
-## 📌 P4-009 DRAWER SEMANTİK SUNUM - TAMAMLANDI (2026-09-24)
+## 📌 FAZ C-4 DEĞİŞEN DOSYALAR
 
-### Tamamlanan
-
-- HTML direct render (`dangerouslySetInnerHTML`)
-- `cleanHtml.tsx` → HTML KORU
-- 4 section type güncellendi (`plain`, `arabic`, `example`, `related`, `suffix`)
-- `dictionaries.json` displayName düzeltmesi (34 kayıt)
-
-### Sonuçlar
-
-- Tüm marker'lar renkli (`◊`, `♦`, `/`, `~`, `а)`, `б)`)
-- Bold/italic/girinti korunuyor
-- Çerkesçe/Rusça ayrımı otomatik
+| Dosya | Önce | Şimdi |
+|---|---|---|
+| oots.json | 13 | **32** |
+| lexemes.json | 60 | **90** |
+| morphemes.json | 45 | 45 |
+| semantic_relations.json | 70 | 70 |
 
 ---
 
-## 📌 TEKNİK BORÇ KAPATMA (2026-09-24)
+## 📌 GIT DURUMU
 
-| Borç | Durum |
-|:-----|:------|
-| `getDictMeta` / `resolveSourceMetadata` | ✅ **KAPANDI** |
-| `sourceLanguage` "0.ady" | ✅ **ZATEN YOK** |
-| `MULTI` grup stratejisi | ✅ **KABUL EDİLDİ** |
-
-**Kritik Teknik Borç:** **0**
-**Düşük Öncelikli Teknik Borç:** **0**
+- **Commit:** 29226c6 — Tek commit, temiz
+- **Push:** c330128..29226c6 main -> main ✅
+- **Uzak depo:** https://github.com/ztumanog/cerkesce.git
 
 ---
 
-## 📌 FAZ 2 - FİLTER FLOW AUDIT (2026-09-22)
+## 📌 AKTİF EVRE: Product Stage
 
-### Tamamlanan
-
-- **ADR-P2-011: Filter Flow Audit** - Filtre sistemi doğrulandı
-  - `languageCounts` → `dictionaries.json` bazlı
-  - `dialectCounts` → `ALL = ADY + KBD`
-  - `getDictMeta` → `sourceId` temizleme
-  - `matchesLanguage` → `CIRC/MULTI` desteği
-  - Drawer → dış filtre prop
-
-### Referans
-
-- [ADR-P2-011](architecture/adr/ADR-P2-011-FILTER_FLOW_AUDIT.md)
-
----
-
-## 📞 Contact
-
-**Maintainer:** Architecture Team
-**Last Review:** 2026-09-24
-**Next Review:** Product Stage
-
----
-
-**Durum:** ✅ Faz 2 CLOSED + P4-007 TAMAMLANDI
-**Sonraki Adım:** Product Stage (Kullanım + Gözlem + Geri Bildirim)
-
-
-
-
----
-
-## GUNCEL FAZ HARITASI (2026-09-24)
-
-| Faz | Baslik | Durum |
-|:----|:-------|:------|
-| Phase 1 | Core Dictionary Platform | CLOSED |
-| Phase 2 | Translation Platform | CLOSED |
-| Phase 3 | Concept Engine | COMPLETE |
-| Phase 4 | Data Mapping & Integrity | Sprintler tamamlandi |
-| Product Stage | Kullanim + Gozlem + Geri Bildirim | AKTIF |
-| Phase 5 | Discovery Engine | IN PROGRESS (Audit Complete) |
-| Phase 6 | API & Explorer | Sertifikali |
-| Phase 7+ | Gelecek | Beklemede |
-
-### Aktif Evre: Product Stage
-
+### Yapılacaklar
 - Kullan
-- Gozlemle
+- Gözlemle
 - Not al
 - Geri bildirim topla
 
-### Yapilmayacaklar
-
+### Yapılmayacaklar
 - Yeni Search Engine
 - Yeni Repository
 - Yeni Translation Modeli
-- Buyuk Refactor
-- Yeni Faz Acilisi
-
-
-
----
-
-## NIHAI MIMAR KARARI (2026-09-24)
-
-### Resmi Durum
-
-| Faz | Durum |
-|:----|:------|
-| Phase 1 | CLOSED |
-| Phase 2 | CLOSED |
-| Phase 3 | COMPLETE |
-| Phase 4 | Deliverables Completed |
-| Product Stage | AKTIF |
-
-### Kritik Teknik Borc
-
-0
-
-### Release Durumu
-
-- APK: Hazir
-- AAB: Hazir
-- GitHub Release: v1.0.0-stable
-- Vercel: Yayinda
-
-### Aktif Evre: Product Stage
-
-- Kullan
-- Gozlemle
-- Not al
-- Geri bildirim topla
-
-### Yapilmayacaklar
-
-- SearchBox refactor
-- Filtre sistemi redesign
-- Drawer mimarisi redesign
-- Yeni normalizer
-- Yeni FilterPanel
-
-### Sonuc
-
-Faz 2 CLOSED. Product Stage ACTIVE. Kritik Teknik Borc: 0.
-
-
-
-
-
-
-
----
-
-## 📦 ARŞİV NOTU
-
-**Bu belgede farklı dönemlerden kayıtlar bulunmaktadır.**
-
-- Aktif durum: **En üstteki "GÜNCEL DURUM" bölümü**
-- Tarihsel kayıtlar: **Alt bölümler (arşiv)**
-
-Yeni okuyucu için **önce en üstteki güncel durumu** okuyun.
+- Büyük Refactor
+- Yeni Faz Açılışı (Faz C-5 hariç)
 
 ---
 
 **Imza:** Gelistirme Ekibi
-**Tarih:** 2026-09-26
-
----
-
-## ARSIV NOTU
-
-**Bu belgede farkli donemlerden kayitlar bulunmaktadir.**
-
-- Aktif durum: **En ustteki GUNCEL DURUM bolumu**
-- Tarihsel kayitlar: **Alt bolumler (arsiv)**
-
-Yeni okuyucu icin **once en ustteki guncel durumu** okuyun.
-
-**Imza:** Gelistirme Ekibi
-**Tarih:** 2026-09-26
-
+**Tarih:** 2026-09-29

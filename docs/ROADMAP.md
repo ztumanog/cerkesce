@@ -1,7 +1,7 @@
 # ROADMAP
 
-**Son Güncelleme:** 2026-09-26
-**Versiyon:** v4.0
+**Son Güncelleme:** 2026-09-29
+**Versiyon:** v4.1
 
 ---
 
@@ -14,60 +14,40 @@
 | **Faz 3** | Concept Engine | ✅ COMPLETE |
 | **Faz 4** | Data Mapping & Integrity | ✅ COMPLETED |
 | **Faz 5** | Discovery Engine | 🟡 IN PROGRESS |
+| **Faz C-3** | Linguistic Dataset (İlk) | ✅ COMPLETED (2026-09-28) |
+| **Faz C-4** | Linguistic Dataset (Genişletme) | ✅ COMPLETED (2026-09-29) |
+| **Faz C-5** | Semantic Field Expansion | ⏳ SIRADA |
 | **Faz 6** | API Gateway | 🔒 LOCKED |
 | **Faz 7** | Analytics & Export | 🔒 LOCKED |
 
 ---
 
-## ✅ FAZ 4 — DATA MAPPING & INTEGRITY (COMPLETED)
+## ✅ FAZ C-4 — LINGUISTIC DATASET GENİŞLETME (COMPLETED)
 
-### Tamamlanan Sprintler
+**Tarih:** 2026-09-29
+**Durum:** ✅ COMPLETED — Mimar onaylı
 
-| Sprint | Başlık | Durum |
-|--------|--------|-------|
-| P4-001 | Phase 4 Activation | ✅ |
-| P4-005 | Source Centric Drawer | ✅ |
-| P4-006 | Günün Kelimesi | ✅ |
-| P4-007 | Release & Delivery | ✅ |
-| P4-009 | Drawer Semantik Sunum | ✅ |
+### Sayısal Durum
+
+| Kategori | Faz C-3 | Faz C-4 | Artış |
+|---|---|---|---|
+| **Kök** | 13 | **32** | +19 |
+| **Lexeme** | 60 | **90** | +30 |
+| **Morfem** | 45 | 45 | 0 |
+| **Semantic Relation** | 70 | 70 | 0 |
+| **Test** | 220 | 220 | korundu |
+
+### Eklenen Kökler (19)
+
+R-BZE, R-F, R-FE, R-P1C1, R-SH1Y, R-SH1E, R-DAGHE, R-SHE, R-SHE2, R-TKHEK1UME, R-K1YH, R-DYGHU, R-ZHY, R-VY, R-KHY, R-KHY2, R-KKHUHE, R-FO, R-MAF1E
 
 ### Çıktılar
 
-- ✅ Data Mapping: 34 sözlük
-- ✅ Integrity: `sourceId` temizleme
-- ✅ UI Polish: SearchBox, Filtre, Klavye
-- ✅ Test: 193/193 PASS
-
----
-
-## 🟡 FAZ 5 — DISCOVERY ENGINE (IN PROGRESS)
-
-### Tamamlanan Sprintler
-
-| Sprint | Başlık | Durum |
-|--------|--------|-------|
-| P5-001 | Corpus Coverage & Search Intelligence | ✅ COMPLETED |
-| P5-002 | Search Semantics | ✅ COMPLETED |
-| P5-003 | Smart Suggestions | ⏳ Bekliyor |
-| P5-004 | Corpus Explorer | ⏳ Bekliyor |
-
-### Alt Bileşenler
-
-| Bileşen | Durum |
-|---------|-------|
-| Phase 5.1-5.2: Discovery Engine | ✅ COMPLETED |
-| Phase 5.3.1: Query Semantic Mapping | ✅ CERTIFIED |
-| Phase 5.4: Network Explorer | ✅ CERTIFIED |
-
-### Kilit Açma Kriterleri
-
-| Kapı | Durum |
-|------|-------|
-| Teknik Kapı | ✅ PASS |
-| Ürün Kapısı | ✅ PASS |
-| Kullanım Kapısı | ✅ PASS |
-
-**Sonuç:** ✅ **FAZ 5 UNLOCK RECOMMENDED**
+- ✅ 32 kök, 90 lexeme, 45 morfem, 70 ilişki
+- ✅ 220/220 test PASS
+- ✅ tsc temiz
+- ✅ Runtime izolasyonu korundu
+- ✅ ADR-ROOT-001 ihlali YOK
 
 ---
 
@@ -76,45 +56,71 @@
 | Dönem | Faz | Durum |
 |-------|-----|-------|
 | Geçmiş | Faz 1-4 | ✅ TAMAMLANDI |
-| Şimdi | Faz 5 | 🟡 IN PROGRESS |
+| 2026-09-28 | Faz C-3 | ✅ COMPLETED |
+| 2026-09-29 | Faz C-4 | ✅ COMPLETED |
+| Şimdi | Faz C-5 | ⏳ SIRADA |
 | Gelecek | Faz 6-7 | 🔒 LOCKED |
 
 ---
 
-## 🎯 SONRAKI ADIMLAR
+## 🎯 SONRAKİ ADIMLAR
 
-### Hemen Şimdi (Faz 5)
-1. P5-003 Smart Suggestions
-2. P5-004 Corpus Explorer
-3. Faz 5 Full Development Gate
+### Hemen Şimdi (Faz C-5)
+
+**Mimar önerisi:**
+1. **псы ailesi** — WATER kategorisinin merkezi
+   - псы, псынэ, напс, шапс, псынкӀэ
+2. **бзэ ailesi**
+3. **псэ ailesi**
+4. **пэ ailesi**
+5. **дзэ ailesi**
 
 ### Sonra
-1. Faz 6 API Gateway
-2. Faz 7 Analytics & Export
+1. Morfem zenginleştirmesi (45 → 60+)
+2. Semantic relation (70 → 100+)
+3. Faz 6 API Gateway
+4. Faz 7 Analytics & Export
+
+---
+
+## 🎯 KABUL KRİTERLERİ (Faz C-5)
+
+- [ ] 40+ kök şeması
+- [ ] 100+ lexeme
+- [ ] 60+ morfem
+- [ ] 100+ semantic relation
+- [ ] tsc --noEmit temiz
+- [ ] Runtime'a import YOK
+- [ ] 220/220 PASS korunuyor
+
+---
+
+## 📌 LINGUISTIC DATASET LAYER
+
+**Status:** Experimental / Data Layer Only
+
+**Purpose:**
+Root-centric linguistic research and corpus modeling.
+
+**Components:**
+- Roots Dataset (32 kök)
+- Morphemes Dataset (45 morfem)
+- Word Families Dataset
+- Lexeme Dataset (90 lexeme)
+- Compound Dataset
+- IPA Dataset
+- Dialect Dataset
+
+**Constraints:**
+- Runtime access forbidden
+- Discovery Engine access forbidden
+- Concept Engine access forbidden
+
+**Implemented in:** src/domain/linguistic/
+**Data in:** public/data/linguistic/
+**Isolation Verified:** Yes (2026-09-29)
 
 ---
 
 **Imza:** Gelistirme Ekibi
-**Tarih:** 2026-09-26
-
----
-
-## 📌 FAZ 5 DURUM NETLEŞTİRMESİ
-
-**Phase 5 iki aşamalıdır:**
-
-| Aşama | Durum |
-|-------|-------|
-| **Charter** | ✅ APPROVED |
-| **Audit** | ✅ COMPLETED |
-| **Full Development** | ⏳ PENDING |
-
-**IN PROGRESS = Audit aşaması**
-**Gate Pending = Full Development aşaması**
-
-Bu iki ifade çelişmez.
-
----
-
-**Imza:** Gelistirme Ekibi
-**Tarih:** 2026-09-26
+**Tarih:** 2026-09-29
