@@ -1767,5 +1767,58 @@
       "compoundCount": 1
     },
     "notes": "Kardes koku. Adigece: къош. Korpus: 389."
+  },
+  {
+    "id": "R-NYBZHY",
+    "form": "ныбжь",
+    "ipa": "/nǝbʑ/",
+    "primaryMeaning": "yas, omur",
+    "secondaryMeanings": [
+      "golge",
+      "siluet"
+    ],
+    "semanticDomains": [
+      "time",
+      "quality"
+    ],
+    "dialectVariants": {
+      "adyghe": "ныбжь",
+      "kabardian": "ныбжь"
+    },
+    "productivity": {
+      "lemmaCount": 10,
+      "dictionarySources": 18
+    },
+    "derivedWords": [
+      {
+        "form": "ныбжьыщӀэ",
+        "meaning": "genc, delikanli"
+      },
+      {
+        "form": "ныбжьыкӀ",
+        "meaning": "genc"
+      },
+      {
+        "form": "ныбжьышӀу",
+        "meaning": "yasli"
+      },
+      {
+        "form": "ныбжьышхуэ",
+        "meaning": "yasli (yasi buyuk)"
+      },
+      {
+        "form": "ныбжьыцӀыкӀу",
+        "meaning": "genc (yasi kucuk)"
+      },
+      {
+        "form": "ныбжьрей",
+        "meaning": "asirlik"
+      },
+      {
+        "form": "ныбжьэгъу",
+        "meaning": "arkadas, akran"
+      }
+    ],
+    "notes": "Yas, omur koku. Homonym: ныбжь (yas) != ныбжь (golge). 18 sozluk kaynagi."
   }
 ]

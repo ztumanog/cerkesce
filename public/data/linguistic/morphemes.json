@@ -673,27 +673,44 @@
     "id": "M-SHXUE",
     "form": "-шхуэ",
     "ipa": "/ʃxʷa/",
-    "gloss": "buyuk",
+    "gloss": "buyuk, yasli, ulu",
     "type": "lexical",
     "dialect": "both",
     "attachment": "suffix",
     "exampleLexemeIds": [
       "L-PSYSHXUE"
     ],
-    "notes": "Buyukluk eki. псышхуэ = buyuk su."
+    "notes": "Cok uretken buyutme eki. Hemen her isme eklenebilir. Metaforik zincir: buyuk -> yasli -> eski -> ulu.",
+    "productivity": "high",
+    "semanticShift": [
+      "fiziksel buyukluk",
+      "yaslilik",
+      "eskilik",
+      "ululuk",
+      "onem"
+    ],
+    "antonymMorphemeId": "M-C1YQ1U"
   },
   {
     "id": "M-C1YQ1U",
     "form": "-цӀыкӀу",
     "ipa": "/t͡sʹǝqʷʼǝ/",
-    "gloss": "kucuk",
+    "gloss": "kucuk, genc, onemsiz",
     "type": "lexical",
     "dialect": "both",
     "attachment": "suffix",
     "exampleLexemeIds": [
       "L-PSYC1YQ1U"
     ],
-    "notes": "Kucukluk eki. псы цӀыкӀу = kucuk nehir."
+    "notes": "Cok uretken kucultme eki. -шхуэ'nun zit anlamlisi. Metaforik zincir: kucuk -> genc -> onemsiz -> korkak.",
+    "productivity": "high",
+    "semanticShift": [
+      "fiziksel kucukluk",
+      "genclik",
+      "onemsizlik",
+      "korkaklik"
+    ],
+    "antonymMorphemeId": "M-SHXUE"
   },
   {
     "id": "M-ZHAN",
