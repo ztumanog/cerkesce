@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import React, { useRef, useEffect, useState, useCallback, useMemo } from 'react';
 import {
@@ -29,6 +29,23 @@ import PaylasimGorseliModal from '@/components/dictionary/PaylasimGorseliModal';
 import { normalizeToSourceContents } from '@/lib/normalizers/sourceContentNormalizer';
 
 import { resolveSourceMetadata } from '@/lib/normalizers/sourceMetadataResolver';
+import { DiscoveryFacade } from '@/domain/discovery/services/DiscoveryFacade';
+import { InMemoryConceptGraphRepository } from '@/repository/InMemoryConceptGraphRepository';
+import { CorpusExplorerService } from '@/domain/discovery/services/CorpusExplorerService';
+import { CorpusExplorerResult } from '@/domain/discovery/dto/CorpusExplorerDTO';
+import { getRelationLabel, getRelationStyle } from '@/domain/discovery/types/DiscoveryRelationType';
+// HTML tag'lerini temizle
+function cleanHtml(html: string): string {
+  if (!html) return '';
+  return html
+    .replace(/<[^>]*>/g, ' ')
+    .replace(/&nbsp;/g, ' ')
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&amp;/g, '&')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
 
 
 
@@ -40,6 +57,7 @@ interface KelimeDetayDrawerProps {
   metinBoyutu?: number;
   dialectFilter?: DialectFilterValue;
   languageFilter?: LanguageFilterValue;
+  onConceptClick?: (word: string) => void;
 }
 
 
@@ -172,6 +190,8 @@ if (section.type === 'related') {
 }
 
 export default function KelimeDetayDrawer({
+
+
   seciliKelime,
   isOpen,
   open,
@@ -179,8 +199,101 @@ export default function KelimeDetayDrawer({
   metinBoyutu = 16,
   dialectFilter = 'ALL',
   languageFilter = 'ALL',
+  onConceptClick,
 }: KelimeDetayDrawerProps) {
+  const [corpusData, setCorpusData] = useState<CorpusExplorerResult | null>(null);
+  const corpusExplorerServiceRef = useRef<CorpusExplorerService | null>(null);
+
+  // P5-004: Corpus Explorer - dictionaries.json yukle
+  useEffect(() => {
+    if (!corpusExplorerServiceRef.current) {
+      corpusExplorerServiceRef.current = new CorpusExplorerService();
+    }
+
+    fetch('/data/dictionaries.json')
+      .then((r) => r.json())
+      .then((dicts) => {
+        corpusExplorerServiceRef.current?.loadDictionaries(dicts);
+      })
+      .catch((e) => {
+        console.warn('CorpusExplorerService: dictionaries yuklenemedi', e);
+      });
+  }, []);
+
+  // P5-004: Secili kelime degistiginde corpus verisini guncelle
+  useEffect(() => {
+    if (!corpusExplorerServiceRef.current || !seciliKelime) {
+      setCorpusData(null);
+      return;
+    }
+
+    const word = seciliKelime.lemma || seciliKelime.word || '';
+    if (!word) {
+      setCorpusData(null);
+      return;
+    }
+
+    const result = corpusExplorerServiceRef.current.explore(word);
+    setCorpusData(result);
+  }, [seciliKelime]);
+
   const isDrawerOpen = open ?? isOpen ?? false;
+
+  const [relatedConcepts, setRelatedConcepts] = useState<Array<{
+    conceptId: string;
+    displayName?: string;
+    displayNameTr?: string;
+    canonicalName?: string;
+    relationType: string;
+    score?: number;
+  }>>([]);
+  const [isLoadingRelated, setIsLoadingRelated] = useState(false);
+
+  useEffect(() => {
+    console.log("USE EFFECT TETIKLENDI, seciliKelime:", seciliKelime);
+      console.log("SECILI KELIME WORD:", seciliKelime?.word);
+      console.log("SECILI KELIME MEANINGS:", seciliKelime?.meanings);
+      console.log("SECILI KELIME ANAHTARLARI:", seciliKelime ? Object.keys(seciliKelime) : null);
+    if (!seciliKelime || !seciliKelime.word) {
+      setRelatedConcepts([]);
+      return;
+    }
+    setIsLoadingRelated(true);
+    const repo = new InMemoryConceptGraphRepository();
+    const facade = new DiscoveryFacade(repo);
+    facade.explore(seciliKelime.word, {
+        maxDepth: 1,
+        hints: [
+          seciliKelime.meaning,
+          seciliKelime.anlam,
+          seciliKelime.definition,
+          seciliKelime.tanim,
+          ...((seciliKelime as any).definitions || []),
+          ...((seciliKelime as any).meanings || []),
+        ]
+          .filter(Boolean)
+          .map((h: any) => {
+            if (typeof h === 'string') return h;
+            return h?.text || h?.value || h?.meaning || '';
+          })
+          .map((h: string) => String(h).replace(/<[^>]*>/g, ' '))
+          .map((h: string) => String(h).replace(/[^\p{L}\s]/gu, ' '))
+          .flatMap((h: string) => String(h).split(/\s+/))
+          .map((h: string) => h.trim().toLowerCase())
+          .filter((h: string) => h.length > 1 && /[\u0400-\u04FF\u2C00-\u2C5F]/.test(h))
+          .slice(0, 20)
+      })
+      .then(result => {
+        console.log("DISCOVERY RESULT:", result);
+        console.log("RELATED CONCEPTS:", result.relatedConcepts);
+        setRelatedConcepts((result.relatedConcepts || []) as any[]);
+      })
+      .catch(err => {
+        console.error("DISCOVERY ERROR:", err);
+        setRelatedConcepts([]);
+      })
+      .finally(() => setIsLoadingRelated(false));
+  }, [seciliKelime]);
 
   const drawerRef = useRef<HTMLDivElement>(null);
   const kapatBtnRef = useRef<HTMLButtonElement>(null);
@@ -190,7 +303,7 @@ export default function KelimeDetayDrawer({
   const [hasSpeechSupport, setHasSpeechSupport] = useState<boolean>(false);
 
   const [sozlukFilter, setSozlukFilter] = useState<string>('ALL');
-
+ 
   useEffect(() => {
     if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
       setHasSpeechSupport(true);
@@ -307,14 +420,14 @@ export default function KelimeDetayDrawer({
     return [
       `Kelime: ${content.word}`,
       content.cerkesce ? `Çerkesçe: ${content.cerkesce}` : '',
-      `Sözlük Kaynak Sayısı: ${filtrelenmisKaynaklar.length}`,
-      ...filtrelenmisKaynaklar.map((s) => {
+      `Sözlük Kaynak Sayısı: ${sourceContents.length}`,
+      ...sourceContents.map((s) => {
 const meta = resolveSourceMetadata(s.sourceId || s.sourceName || '');
 const name = meta?.displayName || s.sourceName || s.title || 'Kaynak';
-        return `• ${name}: ${(s.meanings ?? []).join(', ')}`;
+        return `• ${name}: ${(s.meanings ?? []).map(cleanHtml).join(', ')}`;
       }),
     ].filter(Boolean).join('\n');
-  }, [content, filtrelenmisKaynaklar]);
+  }, [content, sourceContents]);
 
   const panoyaKopyala = useCallback(async () => {
     try {
@@ -379,6 +492,15 @@ const paylas = useCallback(() => {
           </button>
         </div>
 
+        {/* P5-004: Corpus Explorer ozeti */}
+        {corpusData && corpusData.totalDictionaries > 0 && (
+          <div className="flex items-center gap-4 px-4 py-2 bg-amber-50 dark:bg-amber-950/20 border-b border-amber-200 dark:border-amber-800 text-xs text-slate-600 dark:text-slate-400 shrink-0">
+            <span>📖 {corpusData.meaningCount} anlam</span>
+            <span>🌍 {corpusData.languages.length} dil</span>
+            <span>📚 {corpusData.totalDictionaries} sözlük</span>
+          </div>
+        )}
+
         <div className="flex-1 overflow-y-auto p-4 sm:p-5 pb-28 space-y-5 scroll-smooth -webkit-overflow-scrolling-touch">
           {content.cerkesce && (
             <div className="rounded-xl border border-amber-200 bg-amber-50/80 p-3.5 dark:border-amber-900/40 dark:bg-amber-950/20">
@@ -395,7 +517,7 @@ const paylas = useCallback(() => {
             <div className="flex items-center justify-between border-b border-slate-300 dark:border-slate-800 pb-2">
               <h3 className="text-sm font-bold text-slate-800 dark:text-slate-200 flex items-center gap-2">
                 <BookOpen size={16} className="text-orange-500" />
-                Sözlük Kaynakları ({filtrelenmisKaynaklar.length} / {sourceContents.length})
+                Sözlük Kaynakları ({sourceContents.length} / {sourceContents.length})
               </h3>
             </div>
 
@@ -502,7 +624,38 @@ const paylas = useCallback(() => {
               })}
             </div>
           </section>
+          {/* İlgili Kavramlar */}
+          {(isLoadingRelated || relatedConcepts.length > 0) && (
+            <div className="mt-6 border-t border-slate-200 dark:border-slate-700 pt-4">
+              <h3 className="text-sm font-semibold text-slate-800 dark:text-slate-200 mb-3 flex items-center gap-2">
+                <ChevronRight className="w-4 h-4 text-orange-500" />
+                İlgili Kavramlar
+              </h3>
+              {isLoadingRelated ? (
+                <p className="text-xs text-slate-500 dark:text-slate-400 italic">Yükleniyor...</p>
+              ) : (
+                <ul className="space-y-2">
+                  {relatedConcepts.map((concept, idx) => (
+                    <li key={idx} className="flex items-center justify-between gap-3 text-xs cursor-pointer hover:bg-slate-100 dark:hover:bg-slate-700 rounded px-1 py-0.5 transition-colors" onClick={() => onConceptClick?.(concept.displayName || concept.canonicalName || concept.conceptId)}>
+                      <span className="font-medium text-slate-700 dark:text-slate-300 truncate flex-1">
+                        {concept.displayName || concept.canonicalName || concept.conceptId}
+                        {concept.displayNameTr && concept.displayNameTr !== concept.displayName && (
+                          <span className="text-slate-400 dark:text-slate-500 ml-1 font-normal">
+                            ({concept.displayNameTr})
+                          </span>
+                        )}
+                      </span>
+                      <span className={`text-[10px] px-2 py-0.5 rounded-full border flex-shrink-0 ${getRelationStyle(concept.relationType)}`}>
+                        {getRelationLabel(concept.relationType)}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </div>
+          )}
         </div>
+
         <PaylasimGorseliModal
   isOpen={paylasimAcik}
   onClose={() => setPaylasimAcik(false)}
