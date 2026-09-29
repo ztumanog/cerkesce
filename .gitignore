@@ -127,3 +127,5 @@ node_modules/
 
 # Build
 tsconfig.tsbuildinfo
+
+data/*.txt
