@@ -93,7 +93,7 @@ _arsiv/
 *.bak.*
 
 # Python scripts (gecici araclar)
-_scripts/
+# _scripts/ (Faz C-9: takip ediliyor)
 scripts/
 _backup_*/
 
