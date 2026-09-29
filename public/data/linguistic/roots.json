@@ -1,0 +1,1139 @@
+[
+  {
+    "id": "R-GU",
+    "form": "гу",
+    "ipa": "/gwə/",
+    "primaryMeaning": "kalp, gönül, iç",
+    "secondaryMeanings": [
+      "zihin",
+      "merkez",
+      "ruh",
+      "cesaret"
+    ],
+    "semanticDomains": [
+      "body",
+      "emotion",
+      "cognition"
+    ],
+    "dialectVariants": {
+      "adyghe": "гу",
+      "kabardian": "гу"
+    },
+    "productivity": {
+      "lemmaCount": 47,
+      "corpusFrequency": 52291,
+      "compoundCount": 22
+    },
+    "notes": "Adyghe Web Corpus: 47 farkli lemma, 52.291 sonuc. En uretken somatik kok."
+  },
+  {
+    "id": "R-SHHYE",
+    "form": "щхьэ",
+    "ipa": "/ɕħa/",
+    "primaryMeaning": "baş, kafa",
+    "secondaryMeanings": [
+      "zirve",
+      "lider",
+      "kendisi"
+    ],
+    "semanticDomains": [
+      "body",
+      "cognition"
+    ],
+    "dialectVariants": {
+      "adyghe": "шъхьэ",
+      "kabardian": "щхьэ"
+    },
+    "productivity": {
+      "lemmaCount": 30,
+      "corpusFrequency": 15000,
+      "compoundCount": 15
+    },
+    "notes": "130+ deyimde kurucu onek. Metaforik zincir: HEAD -> TOP -> REASON"
+  },
+  {
+    "id": "R-NE",
+    "form": "нэ",
+    "ipa": "/na/",
+    "primaryMeaning": "goz",
+    "secondaryMeanings": [
+      "gorme",
+      "dikkat",
+      "gozetim"
+    ],
+    "semanticDomains": [
+      "body",
+      "cognition"
+    ],
+    "dialectVariants": {
+      "adyghe": "нэ",
+      "kabardian": "нэ"
+    },
+    "productivity": {
+      "lemmaCount": 25,
+      "corpusFrequency": 10000,
+      "compoundCount": 12
+    },
+    "notes": "111+ deyimde kurucu. Turevler: напс (gozyasi), нэгу (yuz), наф (kor)"
+  },
+  {
+    "id": "R-PSY",
+    "form": "псы",
+    "ipa": "/psə/",
+    "primaryMeaning": "su",
+    "secondaryMeanings": [
+      "nehir",
+      "akis",
+      "hayat kaynagi"
+    ],
+    "semanticDomains": [
+      "nature"
+    ],
+    "dialectVariants": {
+      "adyghe": "псы",
+      "kabardian": "псы"
+    },
+    "productivity": {
+      "lemmaCount": 20,
+      "corpusFrequency": 8000
+    },
+    "notes": "Doga koku. напс (gozyasi) = нэ + псэ bilesimi."
+  },
+  {
+    "id": "R-GUSHCH",
+    "form": "гущ",
+    "ipa": "/gʷǝɕ/",
+    "primaryMeaning": "besik",
+    "secondaryMeanings": [
+      "pekistirme edati"
+    ],
+    "semanticDomains": [
+      "object",
+      "household",
+      "culture"
+    ],
+    "dialectVariants": {
+      "adyghe": "кушъэ",
+      "kabardian": "гущэ"
+    },
+    "productivity": {
+      "lemmaCount": 7,
+      "compoundCount": 6,
+      "dictionarySources": 10
+    },
+    "derivedWords": [
+      {
+        "form": "гущэ баш",
+        "meaning": "besik cubugu"
+      },
+      {
+        "form": "гущэ пхъэбгъу",
+        "meaning": "besik tahtasi"
+      },
+      {
+        "form": "гущэ уэншэку",
+        "meaning": "besik yatagi"
+      },
+      {
+        "form": "гущэ хъыдан",
+        "meaning": "bebek bezi"
+      },
+      {
+        "form": "гущэ шхыӀэн",
+        "meaning": "besik yorgani"
+      },
+      {
+        "form": "гущэ щхьэнтэ",
+        "meaning": "besik yastigi"
+      },
+      {
+        "form": "гущэ уэрэд",
+        "meaning": "ninni"
+      }
+    ],
+    "notes": "Gu koku DEGIL. Ayri bir kok. Diyalekt: Adigece кушъэ <-> Kabardeyce гущэ."
+  },
+  {
+    "id": "R-1E",
+    "form": "Ӏэ",
+    "ipa": "/ʔa/",
+    "primaryMeaning": "el",
+    "secondaryMeanings": [
+      "kol",
+      "yardim",
+      "guc",
+      "isaret"
+    ],
+    "semanticDomains": [
+      "body",
+      "action",
+      "social"
+    ],
+    "dialectVariants": {
+      "adyghe": "Ӏэ",
+      "kabardian": "Ӏэ"
+    },
+    "productivity": {
+      "lemmaCount": 15,
+      "corpusFrequency": 5000,
+      "compoundCount": 8
+    },
+    "derivedWords": [
+      {
+        "form": "Ӏэпэ",
+        "meaning": "parmak"
+      },
+      {
+        "form": "Ӏэгу",
+        "meaning": "avuc"
+      },
+      {
+        "form": "Ӏэрытх",
+        "meaning": "el yazmasi"
+      },
+      {
+        "form": "ӀэщӀэгъу",
+        "meaning": "yardimci"
+      }
+    ],
+    "notes": "Yeni kok. Korpus: 90+ cumle. El, yardim, guc metaforlari."
+  },
+  {
+    "id": "R-LHE",
+    "form": "лъэ",
+    "ipa": "/ɬa/",
+    "primaryMeaning": "ayak, bacak",
+    "secondaryMeanings": [
+      "adim",
+      "temel",
+      "destek"
+    ],
+    "semanticDomains": [
+      "body",
+      "action",
+      "spatial"
+    ],
+    "dialectVariants": {
+      "adyghe": "лъэ",
+      "kabardian": "лъэ"
+    },
+    "productivity": {
+      "lemmaCount": 10,
+      "compoundCount": 5
+    },
+    "derivedWords": [
+      {
+        "form": "лъэгу",
+        "meaning": "taban"
+      },
+      {
+        "form": "лъэбакъуэ",
+        "meaning": "adim"
+      },
+      {
+        "form": "лъакъуэ",
+        "meaning": "bacak"
+      },
+      {
+        "form": "лъэпс",
+        "meaning": "bag"
+      }
+    ],
+    "notes": "Yeni kok. Ӏэпкълъэпкъ (vucut) icinde gecer. Ayak, bacak, temel."
+  },
+  {
+    "id": "R-PE",
+    "form": "пэ",
+    "ipa": "/pa/",
+    "primaryMeaning": "burun",
+    "secondaryMeanings": [
+      "uc",
+      "on",
+      "baslangic",
+      "oncelik"
+    ],
+    "semanticDomains": [
+      "body",
+      "spatial",
+      "temporal"
+    ],
+    "dialectVariants": {
+      "adyghe": "пэ",
+      "kabardian": "пэ"
+    },
+    "productivity": {
+      "lemmaCount": 250,
+      "compoundCount": 100
+    },
+    "derivedWords": [
+      {
+        "form": "Ӏэпэ",
+        "meaning": "parmak"
+      },
+      {
+        "form": "пэкукъу",
+        "meaning": "burun kemigi"
+      },
+      {
+        "form": "пэкъурш",
+        "meaning": "kartal burunlu"
+      },
+      {
+        "form": "пэфыкъ",
+        "meaning": "basik burunlu"
+      },
+      {
+        "form": "пэтӀинэ",
+        "meaning": "kalkik burunlu"
+      },
+      {
+        "form": "пэцӀурэ",
+        "meaning": "sivri burunlu"
+      },
+      {
+        "form": "япэрей",
+        "meaning": "birinci"
+      },
+      {
+        "form": "пэрыт",
+        "meaning": "lider, bas"
+      },
+      {
+        "form": "пэплъэн",
+        "meaning": "beklemek"
+      }
+    ],
+    "notes": "Iki rol: isim (burun) + onek (on-). 250+ turev. Ӏэпэ (parmak) bu kokten."
+  },
+  {
+    "id": "R-UNE",
+    "form": "унэ",
+    "ipa": "/wǝnɐ/",
+    "primaryMeaning": "ev",
+    "secondaryMeanings": [
+      "hane",
+      "aile ocağı",
+      "mesken"
+    ],
+    "semanticDomains": [
+      "habitation",
+      "family",
+      "culture"
+    ],
+    "dialectVariants": {
+      "adyghe": "унэ",
+      "kabardian": "унэ"
+    },
+    "productivity": {
+      "lemmaCount": 16,
+      "corpusFrequency": 3000,
+      "compoundCount": 16
+    },
+    "notes": "Wiktionary + 16 türev. Etimoloji: u(n) insan + -nэ kap/yuva. Kültürel: ev = aile ocağı."
+  },
+  {
+    "id": "R-P1E",
+    "form": "пӀэ",
+    "ipa": "/pʹɐ/",
+    "primaryMeaning": "yer, mekân",
+    "secondaryMeanings": [
+      "konum",
+      "kap",
+      "örtü",
+      "dış katman"
+    ],
+    "semanticDomains": [
+      "space",
+      "location",
+      "habitation"
+    ],
+    "dialectVariants": {
+      "adyghe": "пӀэ",
+      "kabardian": "пӀэ"
+    },
+    "productivity": {
+      "lemmaCount": 40,
+      "corpusFrequency": 12000,
+      "compoundCount": 40
+    },
+    "notes": "40+ türev. -пӀэ eki fiil köklerine eklenerek yer/mekân ismi türetir. İkincil anlam: kap/örtü (пӀэтепхъуэ)."
+  },
+  {
+    "id": "R-GUASHCH",
+    "form": "гуащэ",
+    "ipa": "/ˈgʷɑ:ɕɐ/",
+    "primaryMeaning": "prenses; kayınvalide; oyuncak bebek",
+    "secondaryMeanings": [
+      "hanımefendi",
+      "eş",
+      "zevce"
+    ],
+    "semanticDomains": [
+      "family",
+      "social_role",
+      "object"
+    ],
+    "dialectVariants": {
+      "adyghe": "гуащэ",
+      "kabardian": "гуащэ"
+    },
+    "productivity": {
+      "lemmaCount": 18,
+      "dictionarySources": 18,
+      "compoundCount": 1
+    },
+    "derivedWords": [
+      {
+        "form": "унэгуащэ",
+        "meaning": "ev hanımı"
+      },
+      {
+        "form": "гуащэшхуэ",
+        "meaning": "büyük bebek"
+      },
+      {
+        "form": "къупщхьэ гуащэ",
+        "meaning": "güzel kız, 'bebek'"
+      }
+    ],
+    "notes": "Etimoloji: [гуащ] + -э. Polisemik: PRINCESS (soyluluk) → MOTHER_IN_LAW (aile rolü) → DOLL (oyuncak). унэгуащэ bileşiğinde 'hanım' alt anlamı seçilir. 18 bağımsız sözlük kaynağı."
+  },
+  {
+    "id": "R-GHUSE",
+    "form": "гъусэ",
+    "ipa": "/ʁʷǝsɐ/",
+    "primaryMeaning": "yol arkadaşı, eş",
+    "secondaryMeanings": [
+      "partner",
+      "yoldaş",
+      "destekçi"
+    ],
+    "semanticDomains": [
+      "social_role",
+      "relationship"
+    ],
+    "dialectVariants": {
+      "adyghe": "гъусэ",
+      "kabardian": "гъусэ"
+    },
+    "productivity": {
+      "lemmaCount": 18,
+      "dictionarySources": 18
+    },
+    "derivedWords": [
+      {
+        "form": "щхьэгъусэ",
+        "meaning": "eş, hayat arkadaşı"
+      },
+      {
+        "form": "гъусэу",
+        "meaning": "birlikte"
+      }
+    ],
+    "notes": "Etimoloji: [гъус] + -э. 18 sözlük kaynağı. щхьэгъусэ bileşiğinin temeli."
+  },
+  {
+    "id": "R-PLHE",
+    "form": "плъэ",
+    "ipa": "/pɬa/",
+    "primaryMeaning": "bakmak, görmek",
+    "secondaryMeanings": [
+      "gözlemek",
+      "izlemek"
+    ],
+    "semanticDomains": [
+      "action",
+      "perception"
+    ],
+    "dialectVariants": {
+      "adyghe": "плъэ",
+      "kabardian": "плъэ"
+    },
+    "productivity": {
+      "lemmaCount": 19,
+      "dictionarySources": 19
+    },
+    "derivedWords": [
+      {
+        "form": "пэплъэн",
+        "meaning": "beklemek"
+      },
+      {
+        "form": "еплъын",
+        "meaning": "bakmak"
+      }
+    ],
+    "notes": "Yeni kök. пэплъэн (beklemek) fiilinin gerçek kökü. Etimoloji: пэ- (ön) + плъэ (bak) + -н."
+  },
+  {
+    "id": "R-BZE",
+    "form": "бзэ",
+    "ipa": "/bzɐ/",
+    "primaryMeaning": "dil, lisan",
+    "secondaryMeanings": [
+      "konuşma, söz",
+      "yay kirişi",
+      "kilit",
+      "bıçak (kesici)"
+    ],
+    "semanticDomains": [
+      "body",
+      "culture",
+      "communication",
+      "object"
+    ],
+    "dialectVariants": {
+      "adyghe": "бзэ",
+      "kabardian": "бзэ"
+    },
+    "productivity": {
+      "lemmaCount": 19,
+      "dictionarySources": 19
+    },
+    "derivedWords": [
+      {
+        "form": "бзэгу",
+        "meaning": "dil (organ)"
+      },
+      {
+        "form": "адыгэбзэ",
+        "meaning": "Adigece"
+      },
+      {
+        "form": "урысыбзэ",
+        "meaning": "Rusça"
+      },
+      {
+        "form": "бзэ ӀэфӀ",
+        "meaning": "tatlı dil, nazik konuşma"
+      },
+      {
+        "form": "бзэ къабзэ",
+        "meaning": "güzel konuşma, belagat"
+      }
+    ],
+    "etymology": "[бз] + -э",
+    "notes": "Polisemik: 5 anlam. Kabardeyce Wiktionary IPA: [bzɐ]. 19 sözlük kaynağı."
+  },
+  {
+    "id": "R-F",
+    "form": "ф",
+    "ipa": "/f/",
+    "primaryMeaning": "çürümek, bozulmak",
+    "secondaryMeanings": [
+      "kaybolmak",
+      "kötüleşmek",
+      "gнилой"
+    ],
+    "semanticDomains": [
+      "action",
+      "process",
+      "nature"
+    ],
+    "dialectVariants": {
+      "adyghe": "шъу",
+      "kabardian": "ф"
+    },
+    "productivity": {
+      "lemmaCount": 21,
+      "dictionarySources": 7
+    },
+    "derivedWords": [
+      {
+        "form": "фын",
+        "meaning": "çürümek (mastar)"
+      },
+      {
+        "form": "фа",
+        "meaning": "çürümüş (sıfat)"
+      },
+      {
+        "form": "гъэфын",
+        "meaning": "çürütmek (ettirgen)"
+      }
+    ],
+    "etymology": "[ф] + -ы + -н",
+    "notes": "Adigece'de шъун, Kabardeyce'de фын. Diyalekt dönüşümü: шъ → ф. 21 türev fiil. 7 sözlük + Wiktionary."
+  },
+  {
+    "id": "R-FE",
+    "form": "фэ",
+    "ipa": "/fɐ/",
+    "primaryMeaning": "deri, cilt; siz",
+    "secondaryMeanings": [
+      "kabuk, post",
+      "görünüş, dış görünüş",
+      "zar"
+    ],
+    "semanticDomains": [
+      "body",
+      "object",
+      "pronoun"
+    ],
+    "dialectVariants": {
+      "adyghe": "фэ",
+      "kabardian": "фэ"
+    },
+    "productivity": {
+      "lemmaCount": 2,
+      "dictionarySources": 19
+    },
+    "derivedWords": [
+      {
+        "form": "фэӏо-фашӏ",
+        "meaning": "hizmet, iyilik"
+      },
+      {
+        "form": "фэӏон",
+        "meaning": "birinin lehine konuşmak"
+      },
+      {
+        "form": "фэӏопщын",
+        "meaning": "bildirmek"
+      }
+    ],
+    "etymology": "[ф] + -э",
+    "notes": "İki ana anlam: (1) zamir 'siz'; (2) isim 'deri/cilt/kabuk'. 19 sözlük kaynağı."
+  },
+  {
+    "id": "R-P1C1",
+    "form": "пцӀ",
+    "ipa": "/pt͡sʼ/",
+    "primaryMeaning": "aldatma, yalan",
+    "secondaryMeanings": [
+      "sahtelik",
+      "dolandırıcılık"
+    ],
+    "semanticDomains": [
+      "abstraction",
+      "social",
+      "communication"
+    ],
+    "dialectVariants": {
+      "adyghe": "пцӀ",
+      "kabardian": "пцӀ"
+    },
+    "productivity": {
+      "lemmaCount": 15,
+      "dictionarySources": 15
+    },
+    "derivedWords": [
+      {
+        "form": "пцӀы",
+        "meaning": "yalan"
+      },
+      {
+        "form": "нэпцӀ",
+        "meaning": "yalan, sahte"
+      },
+      {
+        "form": "пцӀыупс",
+        "meaning": "yalancı"
+      },
+      {
+        "form": "гъэпцӀэн",
+        "meaning": "aldatmak"
+      }
+    ],
+    "etymology": "[пцӀ] + -ы",
+    "notes": "Yalan, aldatma kökü. Wiktionary IPA: [ptʹsǝ]. 15+ türev."
+  },
+  {
+    "id": "R-SH1Y",
+    "form": "щӀы",
+    "ipa": "/ɕʹǝ/",
+    "primaryMeaning": "toprak, yer, dünya",
+    "secondaryMeanings": [
+      "ülke, vatan",
+      "zemin",
+      "kış (mevsim)"
+    ],
+    "semanticDomains": [
+      "nature",
+      "place",
+      "time"
+    ],
+    "dialectVariants": {
+      "adyghe": "щӀы",
+      "kabardian": "щӀы"
+    },
+    "productivity": {
+      "lemmaCount": 20,
+      "dictionarySources": 11
+    },
+    "derivedWords": [
+      {
+        "form": "щӀыдагъэ",
+        "meaning": "petrol"
+      },
+      {
+        "form": "щӀыгу",
+        "meaning": "arazi"
+      },
+      {
+        "form": "щӀымахуэ",
+        "meaning": "kış"
+      },
+      {
+        "form": "щӀы щӀагъ",
+        "meaning": "yeraltı"
+      },
+      {
+        "form": "щӀы щхьэфэ",
+        "meaning": "yer yüzeyi"
+      },
+      {
+        "form": "щӀы тхьэкӀумэкӀыхь",
+        "meaning": "jerboa"
+      }
+    ],
+    "etymology": "[щӀ] + -ы",
+    "notes": "İki ana anlam: (1) toprak/dünya/ülke; (2) kış. 11 sözlük kaynağı."
+  },
+  {
+    "id": "R-SH1E",
+    "form": "щӀэ",
+    "ipa": "/ɕʹɐ/",
+    "primaryMeaning": "yeni",
+    "secondaryMeanings": [
+      "taze",
+      "modern"
+    ],
+    "semanticDomains": [
+      "quality",
+      "time"
+    ],
+    "dialectVariants": {
+      "adyghe": "кӀэ",
+      "kabardian": "щӀэ"
+    },
+    "productivity": {
+      "lemmaCount": 15,
+      "dictionarySources": 5
+    },
+    "derivedWords": [
+      {
+        "form": "щӀэрыщӀэ",
+        "meaning": "yepyeni"
+      },
+      {
+        "form": "илъэсыщӀэ",
+        "meaning": "yeni yıl"
+      },
+      {
+        "form": "щӀэблэщӀэхэр",
+        "meaning": "yeni yetmeler"
+      }
+    ],
+    "etymology": "[щӀ] + -э",
+    "notes": "Yeni. Adigece: кӀэ. 5 sözlük kaynağı."
+  },
+  {
+    "id": "R-DAGHE",
+    "form": "дагъэ",
+    "ipa": "/daːʁɐ/",
+    "primaryMeaning": "yağ, iç yağı",
+    "secondaryMeanings": [
+      "bitkisel yağ",
+      "yakıt",
+      "benzin"
+    ],
+    "semanticDomains": [
+      "substance",
+      "food",
+      "nature"
+    ],
+    "dialectVariants": {
+      "adyghe": "дагъэ",
+      "kabardian": "дагъэ"
+    },
+    "productivity": {
+      "lemmaCount": 19,
+      "dictionarySources": 19
+    },
+    "derivedWords": [
+      {
+        "form": "щӀыдагъэ",
+        "meaning": "petrol"
+      },
+      {
+        "form": "сэхуран дагъэ",
+        "meaning": "ayçiçek yağı"
+      },
+      {
+        "form": "щэ дагъэ",
+        "meaning": "eritilmiş iç yağı"
+      }
+    ],
+    "etymology": "[дагъ] + -э",
+    "notes": "Yağ, yakıt. 19 sözlük + Wiktionary."
+  },
+  {
+    "id": "R-SHE",
+    "form": "щэ",
+    "ipa": "/ɕɐ/",
+    "primaryMeaning": "yağ, iç yağı",
+    "secondaryMeanings": [
+      "üç kere (zarf)",
+      "yüz (100)",
+      "soru partikeli"
+    ],
+    "semanticDomains": [
+      "food",
+      "substance",
+      "quantity",
+      "grammar"
+    ],
+    "dialectVariants": {
+      "adyghe": "шэ",
+      "kabardian": "щэ"
+    },
+    "productivity": {
+      "lemmaCount": 8,
+      "dictionarySources": 12
+    },
+    "derivedWords": [
+      {
+        "form": "щэ дагъэ",
+        "meaning": "eritilmiş iç yağı"
+      },
+      {
+        "form": "щэ ныкъуэ",
+        "meaning": "elli (50)"
+      },
+      {
+        "form": "мафӀащэ",
+        "meaning": "kıvılcım"
+      }
+    ],
+    "etymology": "[щ] + -э",
+    "notes": "Yağ + sayılar + partikel. Adigece'de /ɕ/ sesi olmadığı için 'шэ' olarak geçer."
+  },
+  {
+    "id": "R-SHE2",
+    "form": "шэ",
+    "ipa": "/ʂɐ/",
+    "primaryMeaning": "süt",
+    "secondaryMeanings": [
+      "kurşun, mermi, fişek",
+      "götür (emir kipi)"
+    ],
+    "semanticDomains": [
+      "food",
+      "object",
+      "action"
+    ],
+    "dialectVariants": {
+      "adyghe": "шэ",
+      "kabardian": "шэ"
+    },
+    "productivity": {
+      "lemmaCount": 10,
+      "dictionarySources": 18
+    },
+    "derivedWords": [
+      {
+        "form": "шэ гъэпщта",
+        "meaning": "kaynamış süt"
+      },
+      {
+        "form": "шэ щӀэхуа",
+        "meaning": "yağsız süt"
+      },
+      {
+        "form": "шэ хьэнтхъупс",
+        "meaning": "süt çorbası"
+      }
+    ],
+    "etymology": "[ш] + -э",
+    "notes": "Süt + kurşun + götür. IPA: /ʂɐ/. Tarmash DOGU filtresi doğruluyor."
+  },
+  {
+    "id": "R-TKHEK1UME",
+    "form": "тхьэкӀумэ",
+    "ipa": "/tħakʷʼma/",
+    "primaryMeaning": "kulak",
+    "secondaryMeanings": [
+      "işitme",
+      "saçak (eski)",
+      "korniş (eski)"
+    ],
+    "semanticDomains": [
+      "body",
+      "perception"
+    ],
+    "dialectVariants": {
+      "adyghe": "тхьэкӀумэ",
+      "kabardian": "тхьэкӀумэ"
+    },
+    "productivity": {
+      "lemmaCount": 10,
+      "dictionarySources": 13
+    },
+    "derivedWords": [
+      {
+        "form": "тхьэкӀумакӀэ",
+        "meaning": "kulak memesi"
+      },
+      {
+        "form": "тхьэкӀумагуэ",
+        "meaning": "tek kulaklı"
+      },
+      {
+        "form": "тхьэкӀумафӀэ",
+        "meaning": "keskin kulaklı"
+      },
+      {
+        "form": "тхьэкӀумапэ",
+        "meaning": "kulak heliksi"
+      },
+      {
+        "form": "тхьэкӀумэӀупс",
+        "meaning": "kulak zarı"
+      },
+      {
+        "form": "тхьэкӀумэкӀыхь",
+        "meaning": "tavşan"
+      }
+    ],
+    "etymology": "[тхьэкӀум] + -э",
+    "notes": "Kulak. 13 sözlük + 10 türev. тхьэкӀумэкӀыхь (tavşan) bileşiğinin temeli."
+  }
+  ,
+  {
+    "id": "R-K1YH",
+    "form": "кӀыхь",
+    "ipa": "/kʹʂǝħ/",
+    "primaryMeaning": "uzun",
+    "secondaryMeanings": ["uzak", "yüksek, boylu", "uzun (zaman)"],
+    "semanticDomains": ["quality", "dimension", "time"],
+    "dialectVariants": {
+      "adyghe": "кӀыхь",
+      "kabardian": "кӀыхь"
+    },
+    "productivity": {
+      "lemmaCount": 25,
+      "dictionarySources": 2
+    },
+    "derivedWords": [
+      { "form": "кӀыхьлӀыхь", "meaning": "uzun uzadıya" },
+      { "form": "кӀыхьагъ", "meaning": "uzunluk" },
+      { "form": "тхьэкӀумэкӀыхь", "meaning": "tavşan (uzun kulaklı)" },
+      { "form": "тэмакъкӀыхь", "meaning": "sabırlı" },
+      { "form": "хуэкӀыхь", "meaning": "uzunlamasına" },
+      { "form": "гъэкӀыхьын", "meaning": "uzatmak" },
+      { "form": "мыкӀыхь-мыкӀэщӀ", "meaning": "ne uzun ne kısa" }
+    ],
+    "etymology": "[кӀыхь]",
+    "notes": "Uzun. Yamisha (2018) + Wiktionary. 25 türev. тхьэкӀумэкӀыхь (tavşan) bileşiğinin ikinci parçası."
+  }
+  ,
+  {
+    "id": "R-DYGHU",
+    "form": "дыгъу",
+    "ipa": "/dǝʁʷ/",
+    "primaryMeaning": "hırsız",
+    "secondaryMeanings": ["hırsızlık", "çalmak (fiil)"],
+    "semanticDomains": ["social_role", "action", "crime"],
+    "dialectVariants": {
+      "adyghe": "дыгъу",
+      "kabardian": "дыгъу"
+    },
+    "productivity": {
+      "lemmaCount": 20,
+      "dictionarySources": 4
+    },
+    "derivedWords": [
+      { "form": "дыгъужь", "meaning": "kurt (hırsız + eski)" },
+      { "form": "дыгъун", "meaning": "çalmak" },
+      { "form": "дыгъуакӀуэ", "meaning": "hırsız" },
+      { "form": "шыдыгъу", "meaning": "at hırsızı" },
+      { "form": "дыгъумэ", "meaning": "nane" },
+      { "form": "дыгъурыгъуу", "meaning": "baykuş" },
+      { "form": "дыгъуасэ", "meaning": "dün" }
+    ],
+    "etymology": "[дыгъу]",
+    "notes": "Hırsız + çalmak. 4 sözlük + Wiktionary. 20+ türev. дыгъужь (kurt) bileşiğinin ilk parçası."
+  }
+  ,
+  {
+    "id": "R-ZHY",
+    "form": "жьы",
+    "ipa": "/ʑǝ/",
+    "primaryMeaning": "eski, yaşlı",
+    "secondaryMeanings": ["rüzgar", "hava", "erken (zarf)"],
+    "semanticDomains": ["quality", "time", "nature"],
+    "dialectVariants": {
+      "adyghe": "жьы",
+      "kabardian": "жьы"
+    },
+    "productivity": {
+      "lemmaCount": 25,
+      "dictionarySources": 18
+    },
+    "derivedWords": [
+      { "form": "дыгъужь", "meaning": "kurt (hırsız + eski)" },
+      { "form": "лӀыжь", "meaning": "yaşlı adam" },
+      { "form": "фызыжь", "meaning": "yaşlı kadın" },
+      { "form": "унэжь", "meaning": "eski ev" },
+      { "form": "жьыбгъэ", "meaning": "rüzgar" },
+      { "form": "жьыкъат", "meaning": "çok yaşlı" },
+      { "form": "жьыгъэ", "meaning": "eskilik" },
+      { "form": "мыжь", "meaning": "genç (eski değil)" }
+    ],
+    "etymology": "[жь] + -ы",
+    "notes": "Eski + yaşlı + rüzgar + hava + erken. 18 sözlük + Wiktionary. 25+ türev. дыгъужь (kurt) bileşiğinin ikinci parçası."
+  }
+  ,
+  {
+    "id": "R-VY",
+    "form": "вы",
+    "ipa": "/vǝ/",
+    "primaryMeaning": "öküz",
+    "secondaryMeanings": ["sürmek (tarla)", "sür! (emir)"],
+    "semanticDomains": ["animal", "agriculture", "action"],
+    "dialectVariants": {
+      "adyghe": "вы",
+      "kabardian": "вы"
+    },
+    "productivity": {
+      "lemmaCount": 15,
+      "dictionarySources": 9
+    },
+    "derivedWords": [
+      { "form": "выгу", "meaning": "öküz arabası" },
+      { "form": "выбжьэ", "meaning": "öküz boyunduruğu" },
+      { "form": "выгъашхэ", "meaning": "öküz yemi" },
+      { "form": "вы закъуэгу", "meaning": "tek öküz arabası" }
+    ],
+    "etymology": "[в] + -ы",
+    "notes": "Öküz + sürmek (fiil). 9 sözlük + Wiktionary. Polisemik."
+  }
+  ,
+  {
+    "id": "R-KHY",
+    "form": "хы",
+    "ipa": "/xǝ/",
+    "primaryMeaning": "deniz, okyanus",
+    "secondaryMeanings": ["deniz kıyısı", "tuzlu su"],
+    "semanticDomains": ["nature", "geography"],
+    "dialectVariants": {
+      "adyghe": "хы",
+      "kabardian": "хы"
+    },
+    "productivity": {
+      "lemmaCount": 20,
+      "dictionarySources": 12
+    },
+    "derivedWords": [
+      { "form": "хыкъа", "meaning": "yunus (deniz domuzu)" },
+      { "form": "хыхьэн", "meaning": "denize girmek" },
+      { "form": "хы Ӏуфэ", "meaning": "deniz kıyısı" },
+      { "form": "хы кхъухь", "meaning": "gemi" },
+      { "form": "толъкъун", "meaning": "dalga" }
+    ],
+    "etymology": "[х] + -ы",
+    "notes": "Deniz, okyanus. 12 sözlük + Wiktionary. хыкъа (yunus) bileşiğinin ilk parçası."
+  },
+  {
+    "id": "R-KHY2",
+    "form": "хы",
+    "ipa": "/xǝ/",
+    "primaryMeaning": "altı (6)",
+    "secondaryMeanings": ["altılı", "altı kat"],
+    "semanticDomains": ["quantity", "number"],
+    "dialectVariants": {
+      "adyghe": "хы",
+      "kabardian": "хы"
+    },
+    "productivity": {
+      "lemmaCount": 5,
+      "dictionarySources": 10
+    },
+    "derivedWords": [
+      { "form": "хуэдих", "meaning": "altı kat" },
+      { "form": "ханэ", "meaning": "altıda bir (1/6)" },
+      { "form": "зыхыбл", "meaning": "altı-yedi" }
+    ],
+    "etymology": "[х] + -ы",
+    "notes": "Altı (6). 10 sözlük + Wiktionary. Homonym: хы (deniz) ile aynı yazılış."
+  }
+  ,
+  {
+    "id": "R-KKHUHE",
+    "form": "кхъуэ",
+    "ipa": "/qʷa/",
+    "primaryMeaning": "domuz",
+    "secondaryMeanings": ["yaban domuzu"],
+    "semanticDomains": ["animal", "agriculture"],
+    "dialectVariants": {
+      "adyghe": "къо",
+      "kabardian": "кхъуэ"
+    },
+    "productivity": {
+      "lemmaCount": 10,
+      "dictionarySources": 5
+    },
+    "derivedWords": [
+      { "form": "хыкхъуэ", "meaning": "hint domuzu / yunus" },
+      { "form": "кхъуэбз", "meaning": "dişi domuz" },
+      { "form": "кхъуэхъу", "meaning": "erkek domuz" },
+      { "form": "кхъуэшыр", "meaning": "domuz yavrusu" },
+      { "form": "кхъуэщ", "meaning": "domuz ahırı" }
+    ],
+    "etymology": "[кхъу] + -э",
+    "notes": "Domuz. Adigece: къо. Kabardeyce: кхъуэ. 5 sözlük + Wiktionary. хыкхъуэ (yunus) bileşiğinin ikinci parçası."
+  }
+  ,
+  {
+    "id": "R-FO",
+    "form": "фо",
+    "ipa": "/fo:/",
+    "primaryMeaning": "bal",
+    "secondaryMeanings": ["petek balı", "bal şurubu"],
+    "semanticDomains": ["food", "nature", "animal"],
+    "dialectVariants": {
+      "adyghe": "фо",
+      "kabardian": "фо"
+    },
+    "productivity": {
+      "lemmaCount": 10,
+      "dictionarySources": 12
+    },
+    "derivedWords": [
+      { "form": "фошыгъу", "meaning": "şeker (bal + tuz)" },
+      { "form": "фо кӀадэ", "meaning": "Eylül (bal ayı)" },
+      { "form": "фо хьэкӀуэ", "meaning": "petekli bal" },
+      { "form": "фо цӀынэ", "meaning": "taze bal" },
+      { "form": "фо хугу", "meaning": "şekerlenmiş bal" }
+    ],
+    "etymology": "[фо]",
+    "notes": "Bal. 12 sözlük + Wiktionary. фошыгъу (şeker) bileşiğinin ilk parçası."
+  }
+  ,
+  {
+    "id": "R-MAF1E",
+    "form": "мафӀэ",
+    "ipa": "/maːfʔa/",
+    "primaryMeaning": "ateş",
+    "secondaryMeanings": ["alev", "ateşli, tutkulu (mecazi)"],
+    "semanticDomains": ["nature", "element", "emotion"],
+    "dialectVariants": {
+      "adyghe": "машӀу",
+      "kabardian": "мафӀэ"
+    },
+    "productivity": {
+      "lemmaCount": 15,
+      "dictionarySources": 9
+    },
+    "derivedWords": [
+      { "form": "мафӀэгу", "meaning": "tren (ateş arabası)" },
+      { "form": "мафӀащэ", "meaning": "kıvılcım (ateş oku)" },
+      { "form": "мафӀэ бзий", "meaning": "alev" },
+      { "form": "мафӀэ щӀын", "meaning": "ateş yakmak" },
+      { "form": "мафӀэр ужьыхыжын", "meaning": "ateş sönmek" }
+    ],
+    "etymology": "[мафӀ] + -э",
+    "notes": "Ateş. Adigece: машӀу. Kabardeyce: мафӀэ. 9 sözlük + Wiktionary."
+  }
+]

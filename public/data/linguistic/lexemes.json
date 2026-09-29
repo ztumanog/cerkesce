@@ -1,0 +1,2961 @@
+[
+  {
+    "id": "L-GUF1E",
+    "form": "гуфӀэ",
+    "ipa": "/gufʔa/",
+    "literalMeaning": "kalbin iyiligi",
+    "derivation": {
+      "rootIds": [
+        "R-GU"
+      ],
+      "morphemeIds": [
+        "M-F1E"
+      ],
+      "rule": "suffix"
+    },
+    "wordFamilyId": "WF-GU",
+    "conceptId": "JOY",
+    "dialectVariants": {
+      "adyghe": "гушӀо",
+      "kabardian": "гуфӀэ"
+    },
+    "corpusFrequency": 84,
+    "notes": "Korpus dogrulamasi: 84 kullanim. Diyalekt: гушӀо <-> гуфӀэ"
+  },
+  {
+    "id": "L-GUF1EN",
+    "form": "гуфӀэн",
+    "ipa": "/gufʔan/",
+    "literalMeaning": "sevinmek (eylem)",
+    "derivation": {
+      "rootIds": [
+        "R-GU"
+      ],
+      "morphemeIds": [
+        "M-F1EN"
+      ],
+      "rule": "suffix"
+    },
+    "wordFamilyId": "WF-GU",
+    "dialectVariants": {
+      "adyghe": "гушӀон",
+      "kabardian": "гуфӀэн"
+    },
+    "notes": "Eylem formu. Diyalekt: гушӀон <-> гуфӀэн"
+  },
+  {
+    "id": "L-GUGHE",
+    "form": "гугъэ",
+    "ipa": "/guɣa/",
+    "literalMeaning": "kalpte tutulan",
+    "derivation": {
+      "rootIds": [
+        "R-GU"
+      ],
+      "morphemeIds": [
+        "M-GHE"
+      ],
+      "rule": "suffix"
+    },
+    "wordFamilyId": "WF-GU",
+    "conceptId": "HOPE",
+    "corpusFrequency": 1313,
+    "notes": "Umut, niyet. Korpus: 1.313 sonuc (en yuksek turev)"
+  },
+  {
+    "id": "L-GUBZHYGE",
+    "form": "губзыгъэ",
+    "ipa": "/gubzəɣa/",
+    "literalMeaning": "kalp + zeka",
+    "derivation": {
+      "rootIds": [
+        "R-GU"
+      ],
+      "morphemeIds": [
+        "M-BZHYGE"
+      ],
+      "rule": "suffix"
+    },
+    "wordFamilyId": "WF-GU",
+    "conceptId": "INTELLIGENCE",
+    "notes": "Akilli, zeki. ADR-ROOT-001'de ornek olarak gecmisti"
+  },
+  {
+    "id": "L-GUETYNEGHE",
+    "form": "гуэтыныгъэ",
+    "ipa": "/guetənəɣa/",
+    "literalMeaning": "kalp bagliligi",
+    "derivation": {
+      "rootIds": [
+        "R-GU"
+      ],
+      "morphemeIds": [],
+      "rule": "suffix"
+    },
+    "wordFamilyId": "WF-GU",
+    "conceptId": "LOYALTY",
+    "notes": "Sadakat. Kuipers/Kolarusso ornegi"
+  },
+  {
+    "id": "L-SHHYEGU",
+    "form": "щхьэгу",
+    "ipa": "/ɕħagwə/",
+    "literalMeaning": "basin ici",
+    "derivation": {
+      "rootIds": [
+        "R-SHHYE",
+        "R-GU"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-SHHYE",
+    "conceptId": "TOP",
+    "notes": "Zirve, tepe. Metaforik zincir: HEAD -> TOP"
+  },
+  {
+    "id": "L-SHHYEUSYGHE",
+    "form": "щхьэусыгъуэ",
+    "ipa": "/ɕħausəɣwa/",
+    "literalMeaning": "bas + sebep",
+    "derivation": {
+      "rootIds": [
+        "R-SHHYE"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-SHHYE",
+    "conceptId": "REASON",
+    "notes": "Gerekce, sebep. Metaforik zincir: HEAD -> REASON"
+  },
+  {
+    "id": "L-NEGU",
+    "form": "нэгу",
+    "ipa": "/nagwə/",
+    "literalMeaning": "goz ici",
+    "derivation": {
+      "rootIds": [
+        "R-NE",
+        "R-GU"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-NE",
+    "conceptId": "FACE",
+    "notes": "Yuz. Polisemi: гу = kalp VE ic/merkez"
+  },
+  {
+    "id": "L-GURYYUEN",
+    "form": "гурыӏуэн",
+    "ipa": "/gʷǝrǝ'ʔʷɐn/",
+    "literalMeaning": "kalbe soz ulastirmak",
+    "derivation": {
+      "rootIds": [
+        "R-GU"
+      ],
+      "morphemeIds": [
+        "M-RY"
+      ],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-GU",
+    "conceptIds": [
+      "UNDERSTAND",
+      "AGREE"
+    ],
+    "dialectVariants": {
+      "adyghe": "гурыӏуэн",
+      "kabardian": "гурыӏуэн"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 1,
+      "sources": [
+        "Wiktionary (2025)"
+      ],
+      "meanings": {
+        "ru": "понять что-л.; договориться",
+        "en": "understand sth; agree"
+      },
+      "polysemy": [
+        {
+          "type": "transitive",
+          "meaning": "anlamak",
+          "example": "ПщитӀыр пщащэм зэрещакӀуэр фӀыуэ гурыӀуащ."
+        },
+        {
+          "type": "intransitive",
+          "meaning": "anlasmak",
+          "example": "Бажэр дыгъужьым гурыӀуащ."
+        }
+      ]
+    },
+    "notes": "Iki anlamli fiil: anlamak (gecisli) + anlasmak (gecissiz). Etimoloji: gu + ry + yu + e + n."
+  },
+  {
+    "id": "L-GUBZH",
+    "form": "губж",
+    "ipa": "/gubʑ/",
+    "literalMeaning": "kalp + (?)",
+    "derivation": {
+      "rootIds": [
+        "R-GU"
+      ],
+      "morphemeIds": [],
+      "rule": "suffix"
+    },
+    "wordFamilyId": "WF-GU",
+    "conceptId": "ANGER",
+    "dialectVariants": {
+      "adyghe": "губж",
+      "kabardian": "губжь"
+    },
+    "corpusFrequency": 96,
+    "dictionaryEvidence": {
+      "sourceCount": 12,
+      "sources": [
+        "Apashev (2008)",
+        "Yamisha (2018)",
+        "Kokov (2008)",
+        "Kardanov (1957)",
+        "Sherdjes Aliy (1994)"
+      ]
+    },
+    "corpusEvidence": {
+      "documents": 25,
+      "forms": [
+        {
+          "form": "губж",
+          "meaning": "ofke",
+          "count": 90
+        },
+        {
+          "form": "губжьыгъэу",
+          "meaning": "ofkeyle",
+          "count": 4
+        },
+        {
+          "form": "губжьи",
+          "meaning": "ofkelenip",
+          "count": 2
+        }
+      ]
+    },
+    "notes": "Adigece'de губж, Kabardeyce'de губжь. 12 sozluk + 96 korpus."
+  },
+  {
+    "id": "L-GUPSYSE",
+    "form": "гупсысэ",
+    "ipa": "/gupsəsa/",
+    "literalMeaning": "kalp + masal (?)",
+    "derivation": {
+      "rootIds": [
+        "R-GU"
+      ],
+      "morphemeIds": [
+        "M-PSYSE"
+      ],
+      "rule": "suffix"
+    },
+    "wordFamilyId": "WF-GU",
+    "conceptId": "THOUGHT",
+    "dialectVariants": {
+      "adyghe": "гупсысэ",
+      "kabardian": "гупшысэ"
+    },
+    "corpusFrequency": 5,
+    "dictionaryEvidence": {
+      "sourceCount": 11,
+      "sources": [
+        "Apashev (2008)",
+        "Yamisha (2018)",
+        "Kokov (2008)",
+        "Kardanov (1957)"
+      ]
+    },
+    "corpusEvidence": {
+      "documents": 4,
+      "forms": [
+        {
+          "form": "гупсысэным",
+          "meaning": "dusunceye",
+          "count": 5
+        }
+      ]
+    },
+    "notes": "Diyalekt: гупсысэ (Adigece) <-> гупшысэ (Kabardeyce). 11 sozluk + 5 korpus."
+  },
+  {
+    "id": "L-GUSH1E",
+    "form": "гущӀэ",
+    "ipa": "/gʷǝɕʹɐ/",
+    "literalMeaning": "kalbin alt kismi",
+    "derivation": {
+      "rootIds": [
+        "R-GU"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-GU",
+    "conceptId": "SOUL_DEPTH",
+    "dialectVariants": {
+      "adyghe": "гущӀэ",
+      "kabardian": "гущӀэ"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 1,
+      "sources": [
+        "Wiktionary (2023)"
+      ],
+      "meanings": {
+        "ru": "глубина души",
+        "en": "the depth of one's soul"
+      }
+    },
+    "idioms": [
+      "ГущӀэм зигъэзэн → ruhunun derinligine kadar endiselenmek",
+      "ГущӀэм шыгъэфӀэн → ruhunda bir hayali beslemek",
+      "[И] гущӀэр кърисыкӀын → kalbi kan aglamak"
+    ],
+    "notes": "Gu koku + sh1e (alt, dip) = ruhun derinligi. Metaforik: kalp -> ic -> derinlik."
+  },
+  {
+    "id": "L-GUSHCHYE",
+    "form": "гущыӏэ",
+    "ipa": "/gʷǝɕʹɐ/",
+    "literalMeaning": "kalpten soylenen",
+    "derivation": {
+      "rootIds": [
+        "R-GU"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-GU",
+    "conceptIds": [
+      "WORD",
+      "SPEECH",
+      "PROMISE"
+    ],
+    "dialectVariants": {
+      "adyghe": "гущыӏэ",
+      "kabardian": "гущыӏэ"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 3,
+      "sources": [
+        "Aig (2006)",
+        "Lash (2013)",
+        "Shigaje Adam (2020)"
+      ],
+      "meanings": {
+        "ru": "слово; речь",
+        "en": "word; speech",
+        "ar": "كلمة، وَعْد، قَوْل"
+      }
+    },
+    "idioms": [
+      "Гущыӏэ пыт → saglam soz, saglam vaat",
+      "Гущыӏэ дахэм блэр гъуанэм къырещы → Guzel soz yilani deliginden cikarir"
+    ],
+    "notes": "Korpus etiketlemedi ama CSV'de gecti. Etimoloji: gu + shchy'e = kalpten soylenen."
+  },
+  {
+    "id": "L-GURYYUEZHYN",
+    "form": "гурыӏуэжын",
+    "ipa": "/gʷǝrǝʔʷɐ'ʒǝn/",
+    "literalMeaning": "kalbe sozu tekrar ulastirmak",
+    "derivation": {
+      "rootIds": [
+        "R-GU"
+      ],
+      "morphemeIds": [
+        "M-RY",
+        "M-ZH"
+      ],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-GU",
+    "conceptIds": [
+      "REALIZE",
+      "RECONCILE"
+    ],
+    "dialectVariants": {
+      "adyghe": "гурыӏуэжын",
+      "kabardian": "гурыӏуэжын"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 1,
+      "sources": [
+        "Wiktionary (2025)"
+      ],
+      "meanings": {
+        "ru": "понять, осознать; помириться",
+        "en": "understand, realise; make peace"
+      },
+      "polysemy": [
+        {
+          "type": "transitive",
+          "meaning": "kavramak, anlamak",
+          "example": "ЩӀалэм и щыуагъэр гурыӀуэжащ."
+        },
+        {
+          "type": "intransitive",
+          "meaning": "barismak, uzlasmak",
+          "example": "Махъэшокъуэм нэхъ къищтэнут нобэ Хьэсанш гурыӀуэжмэ."
+        }
+      ]
+    },
+    "notes": "Gu + ry + yu + e + zh + y + n. -zh eki tekrar/donusluluk katar."
+  },
+  {
+    "id": "L-GUSHCH",
+    "form": "гущэ",
+    "ipa": "/gʷǝɕɐ/",
+    "literalMeaning": "besik",
+    "derivation": {
+      "rootIds": [
+        "R-GUSHCH"
+      ],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-GUSHCH",
+    "conceptId": "CRADLE",
+    "dialectVariants": {
+      "adyghe": "кушъэ",
+      "kabardian": "гущэ"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 10,
+      "sources": [
+        "Apashev (2008)",
+        "Yamisha (2018)",
+        "Kokov (2008)",
+        "Kardanov (1957)",
+        "Huvaj (2007)"
+      ],
+      "meanings": {
+        "ru": "люлька, колыбель",
+        "en": "cradle",
+        "tr": "besik"
+      }
+    },
+    "notes": "Ayri bir kok. Adigece: кушъэ. Homonym: besik + pekistirme edati."
+  },
+  {
+    "id": "L-1E",
+    "form": "Ӏэ",
+    "ipa": "/ʔa/",
+    "literalMeaning": "el",
+    "derivation": {
+      "rootIds": [
+        "R-1E"
+      ],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-1E",
+    "conceptId": "HAND",
+    "dialectVariants": {
+      "adyghe": "Ӏэ",
+      "kabardian": "Ӏэ"
+    },
+    "corpusFrequency": 90,
+    "notes": "Yeni kok. Korpus: 90+ cumle. El."
+  },
+  {
+    "id": "L-1EPE",
+    "form": "Ӏэпэ",
+    "ipa": "/ʔapa/",
+    "literalMeaning": "el ucu",
+    "derivation": {
+      "rootIds": [
+        "R-1E"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-1E",
+    "conceptId": "FINGER",
+    "dialectVariants": {
+      "adyghe": "Ӏэпэ",
+      "kabardian": "Ӏэпэ"
+    },
+    "notes": "Ӏэ + пэ (uc) = parmak."
+  },
+  {
+    "id": "L-1EGU",
+    "form": "Ӏэгу",
+    "ipa": "/ʔagʷə/",
+    "literalMeaning": "elin ici",
+    "derivation": {
+      "rootIds": [
+        "R-1E",
+        "R-GU"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-1E",
+    "conceptId": "PALM",
+    "dialectVariants": {
+      "adyghe": "Ӏэгу",
+      "kabardian": "Ӏэгу"
+    },
+    "notes": "Ӏэ + гу (ic) = avuc. Polisemi: gu = kalp VE ic/merkez."
+  },
+  {
+    "id": "L-KUSHCH",
+    "form": "кушъэ",
+    "ipa": "/kuɕa/",
+    "literalMeaning": "besik (Adigece)",
+    "derivation": {
+      "rootIds": [
+        "R-GUSHCH"
+      ],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-GUSHCH",
+    "conceptId": "CRADLE",
+    "dialectVariants": {
+      "adyghe": "кушъэ",
+      "kabardian": "гущэ"
+    },
+    "corpusFrequency": 50,
+    "notes": "Adigece karsiligi. Kabardeyce: гущэ. Korpus: 50+ cumle."
+  },
+  {
+    "id": "L-1EPKYLEPK",
+    "form": "Ӏэпкълъэпкъ",
+    "ipa": "/ʔɐpʹqʹɬɐpʹqʹ/",
+    "literalMeaning": "el + govde + ayak + govde",
+    "derivation": {
+      "rootIds": [
+        "R-1E",
+        "R-LHE"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-1E",
+    "conceptId": "BODY",
+    "dialectVariants": {
+      "adyghe": "Ӏэпкълъэпкъ",
+      "kabardian": "Ӏэпкълъэпкъ"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 1,
+      "sources": [
+        "Wiktionary (2023)"
+      ],
+      "meanings": {
+        "ru": "тело (человека, животного); телосложение",
+        "en": "body (human, animal); physique"
+      }
+    },
+    "idioms": [
+      "Ӏэпкълъэпкъыр зэрыубыдын → güçlenmek, şekillenmek",
+      "Ӏэпкълъэпкъыр зэщӀэнэн → hareketsizleşmek",
+      "Ӏэпкълъэпкъыр зэщӀэузэн → tüm vücutta ağrı duymak"
+    ],
+    "notes": "Ӏэ + пкъ + лъэ + пкъ = vücut. İçinde лъэ (ayak) kökü var."
+  },
+  {
+    "id": "L-LHEGU",
+    "form": "лъэгу",
+    "ipa": "/ɬagʷə/",
+    "literalMeaning": "ayagin ici",
+    "derivation": {
+      "rootIds": [
+        "R-LHE",
+        "R-GU"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-LHE",
+    "conceptId": "SOLE",
+    "dialectVariants": {
+      "adyghe": "лъэгу",
+      "kabardian": "лъэгу"
+    },
+    "notes": "лъэ + гу (ic) = taban. Polisemi: gu = kalp VE ic/merkez."
+  },
+  {
+    "id": "L-LHEBAKUE",
+    "form": "лъэбакъуэ",
+    "ipa": "/ɬabaqʷa/",
+    "literalMeaning": "ayak adimi",
+    "derivation": {
+      "rootIds": [
+        "R-LHE"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-LHE",
+    "conceptId": "STEP",
+    "dialectVariants": {
+      "adyghe": "лъэбакъуэ",
+      "kabardian": "лъэбакъуэ"
+    },
+    "notes": "лъэ + бакъуэ = adim."
+  },
+  {
+    "id": "L-LHAKUE",
+    "form": "лъакъуэ",
+    "ipa": "/ɬaqʷa/",
+    "literalMeaning": "ayak + bacak",
+    "derivation": {
+      "rootIds": [
+        "R-LHE"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-LHE",
+    "conceptId": "LEG",
+    "dialectVariants": {
+      "adyghe": "лъакъуэ",
+      "kabardian": "лъакъуэ"
+    },
+    "notes": "лъэ + акъуэ = bacak."
+  },
+  {
+    "id": "L-LHEPS",
+    "form": "лъэпс",
+    "ipa": "/ɬaps/",
+    "literalMeaning": "ayak bagi",
+    "derivation": {
+      "rootIds": [
+        "R-LHE"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-LHE",
+    "conceptId": "BINDING",
+    "dialectVariants": {
+      "adyghe": "лъэпс",
+      "kabardian": "лъэпс"
+    },
+    "notes": "лъэ + пс = ayak bagi."
+  },
+  {
+    "id": "L-NE1EY",
+    "form": "нэ Ӏей",
+    "ipa": "/na ʔej/",
+    "literalMeaning": "kotu goz",
+    "derivation": {
+      "rootIds": [
+        "R-NE"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-NE",
+    "conceptId": "EVIL_EYE",
+    "dialectVariants": {
+      "adyghe": "нэ Ӏае",
+      "kabardian": "нэ Ӏей"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 2,
+      "sources": [
+        "Apashev (2008)",
+        "Tharkaho (1991)"
+      ]
+    },
+    "notes": "Kabardeyce form: нэ Ӏей. Adigece: нэ Ӏае. Nazar."
+  },
+  {
+    "id": "L-NEZHAN",
+    "form": "нэ жан",
+    "ipa": "/na ʒan/",
+    "literalMeaning": "keskin goz",
+    "derivation": {
+      "rootIds": [
+        "R-NE"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-NE",
+    "conceptId": "SHARP_EYE",
+    "dialectVariants": {
+      "adyghe": "нэ чан",
+      "kabardian": "нэ жан"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 3,
+      "sources": [
+        "Apashev (2008)",
+        "Aig (2006)",
+        "Tharkaho (1991)"
+      ]
+    },
+    "notes": "Kabardeyce form: нэ жан. Adigece: нэ чан. Keskin goz."
+  },
+  {
+    "id": "L-NEZAKUE",
+    "form": "нэ закъуэ",
+    "ipa": "/na zaqʷa/",
+    "literalMeaning": "tek goz",
+    "derivation": {
+      "rootIds": [
+        "R-NE"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-NE",
+    "conceptId": "ONE_EYED",
+    "dialectVariants": {
+      "adyghe": "нэ закъуэ",
+      "kabardian": "нэ закъуэ"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 3,
+      "sources": [
+        "Apashev (2008)",
+        "Aig (2006)",
+        "Tharkaho (1991)"
+      ]
+    },
+    "notes": "Iki lehcede ayni. Dev masali (Иныжь нэ закъуэ)."
+  },
+  {
+    "id": "L-SHHYETS",
+    "form": "щхьэц",
+    "ipa": "/ɕħat͡s/",
+    "literalMeaning": "bas kili",
+    "derivation": {
+      "rootIds": [
+        "R-SHHYE"
+      ],
+      "morphemeIds": [
+        "M-TSY"
+      ],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-SHHYE",
+    "conceptId": "HAIR",
+    "dialectVariants": {
+      "adyghe": "шъхьэц",
+      "kabardian": "щхьэц"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 1,
+      "sources": [
+        "Wiktionary (2023)"
+      ],
+      "meanings": {
+        "ru": "волосы (на голове)",
+        "en": "hair (on the head)"
+      }
+    },
+    "corpusEvidence": {
+      "documents": 2,
+      "example": "Си данэгъуэ щхьэц мыгъуэр лъэныкъуэм согъазэ"
+    },
+    "notes": "щхьэ + цы = sac. Ses dusmesi: цы -> ц."
+  },
+  {
+    "id": "L-NEBZHYTS",
+    "form": "нэбжьыц",
+    "ipa": "/nabʑət͡s/",
+    "literalMeaning": "goz kenari kili",
+    "derivation": {
+      "rootIds": [
+        "R-NE"
+      ],
+      "morphemeIds": [
+        "M-BZHY",
+        "M-TSY"
+      ],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-NE",
+    "conceptId": "EYELASH",
+    "dialectVariants": {
+      "adyghe": "нэбжьыц",
+      "kabardian": "нэбжьыц"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 13,
+      "sources": [
+        "Apashev (2008)",
+        "Yamisha (2018)",
+        "Kokov (2008)"
+      ],
+      "meanings": {
+        "ru": "ресница",
+        "en": "eyelash",
+        "tr": "kirpik"
+      }
+    },
+    "notes": "нэ + бжьы + цы = kirpik. Ses dusmesi: цы -> ц."
+  },
+  {
+    "id": "L-NEBZHYTSYLE",
+    "form": "нэбжьыцылэ",
+    "ipa": "/nabʑət͡səla/",
+    "literalMeaning": "kirpik boyasi",
+    "derivation": {
+      "rootIds": [
+        "R-NE"
+      ],
+      "morphemeIds": [
+        "M-BZHY",
+        "M-TSY"
+      ],
+      "rule": "suffix"
+    },
+    "wordFamilyId": "WF-NE",
+    "conceptId": "MASCARA",
+    "dialectVariants": {
+      "adyghe": "нэбжьыцылэ",
+      "kabardian": "нэбжьыцылэ"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 4,
+      "sources": [
+        "Yamisha (2018)"
+      ],
+      "meanings": {
+        "ru": "тушь",
+        "en": "mascara",
+        "tr": "maskara"
+      }
+    },
+    "notes": "нэбжьыц + лэ = maskara."
+  },
+  {
+    "id": "L-1ERYSH1",
+    "form": "ӀэрыщӀ",
+    "ipa": "/ʔarəɕʼ/",
+    "literalMeaning": "el ile yapilmis",
+    "derivation": {
+      "rootIds": [
+        "R-1E"
+      ],
+      "morphemeIds": [
+        "M-RY"
+      ],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-1E",
+    "conceptId": "HANDMADE",
+    "dialectVariants": {
+      "adyghe": "ӀэрыщӀ",
+      "kabardian": "ӀэрыщӀ"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 1,
+      "sources": [
+        "Kabardian-Cherkess Dictionary (2014)"
+      ],
+      "meanings": {
+        "ru": "сделанный руками человека",
+        "tr": "el yapimi",
+        "en": "handmade"
+      }
+    },
+    "notes": "Ӏэ (el) + ры + щӀ (yapmak) = el yapimi."
+  },
+  {
+    "id": "L-1EBZYGE",
+    "form": "Ӏэбзыгъэ",
+    "ipa": "/ʔabzəɣa/",
+    "literalMeaning": "el zekasi",
+    "derivation": {
+      "rootIds": [
+        "R-1E"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-1E",
+    "conceptId": "ARTIFICIAL_INTELLIGENCE",
+    "dialectVariants": {
+      "adyghe": "Ӏэбзыгъэ",
+      "kabardian": "Ӏэбзыгъэ"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 0,
+      "sources": [
+        "Dipo (2026) - Yeni turetme"
+      ],
+      "meanings": {
+        "tr": "yapay zeka",
+        "en": "artificial intelligence"
+      }
+    },
+    "notes": "YENI KELIME: Ӏэ (el) + бзыгъэ (zeka) = yapay zeka. Karsit: губзыгъэ (insan zekasi)."
+  },
+  {
+    "id": "L-SHHYEGHUSE",
+    "form": "щхьэгъусэ",
+    "ipa": "/ɕħəɣʷsə/",
+    "literalMeaning": "bas arkadasi",
+    "derivation": {
+      "rootIds": [
+        "R-SHHYE",
+        "R-GHUSE"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-SHHYE",
+    "conceptId": "SPOUSE",
+    "dialectVariants": {
+      "adyghe": "шъхьэгъусэ",
+      "kabardian": "щхьэгъусэ"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 1,
+      "sources": [
+        "Wiktionary (2023)"
+      ],
+      "meanings": {
+        "ru": "супруг; супруга",
+        "en": "spouse, partner",
+        "tr": "es, hayat arkadasi"
+      }
+    },
+    "notes": "щхьэ (baş) + гъусэ (eş/arkadaş) = hayat arkadaşı. Bileşik."
+  },
+  {
+    "id": "L-SHHYEGHUSENSHE",
+    "form": "щхьэгъусэншэ",
+    "ipa": "/ɕħəɣʷsənʃa/",
+    "literalMeaning": "es olmayan",
+    "derivation": {
+      "rootIds": [
+        "R-SHHYE"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-SHHYE",
+    "conceptId": "SINGLE",
+    "dialectVariants": {
+      "adyghe": "шъхьэгъусэншэ",
+      "kabardian": "щхьэгъусэншэ"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 1,
+      "sources": [
+        "Wiktionary (2023)"
+      ],
+      "meanings": {
+        "ru": "одинокий, без супруга",
+        "en": "single, unmarried",
+        "tr": "bekar, essiz"
+      }
+    },
+    "notes": "щхьэгъусэ + ншэ = essiz."
+  },
+  {
+    "id": "L-PSEGHU",
+    "form": "псэгъу",
+    "ipa": "/psaɣʷ/",
+    "literalMeaning": "can arkadasi",
+    "derivation": {
+      "rootIds": [
+        "R-PSY"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-PSY",
+    "conceptId": "LIFE_PARTNER",
+    "dialectVariants": {
+      "adyghe": "псэгъу",
+      "kabardian": "псэгъу"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 1,
+      "sources": [
+        "Wiktionary (2023)"
+      ],
+      "meanings": {
+        "ru": "спутник жизни",
+        "en": "life partner",
+        "tr": "hayat arkadasi"
+      }
+    },
+    "notes": "псэ + гъу = hayat arkadasi."
+  },
+  {
+    "id": "L-UNEGUASHE",
+    "form": "унэгуащэ",
+    "ipa": "/wənaɡʷaːɕa/",
+    "literalMeaning": "ev hanimi",
+    "derivation": {
+      "rootIds": [
+        "R-UNE"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-UNE",
+    "conceptId": "HOUSEWIFE",
+    "dialectVariants": {
+      "adyghe": "унэгуащэ",
+      "kabardian": "унэгуащэ"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 1,
+      "sources": [
+        "Wiktionary (2023)"
+      ],
+      "meanings": {
+        "ru": "хозяйка дома",
+        "en": "housewife",
+        "tr": "ev hanimi"
+      }
+    },
+    "notes": "унэ + гуащэ = ev hanimi."
+  },
+  {
+    "id": "L-GUASHE",
+    "form": "гуащэ",
+    "ipa": "/ɡʷaːɕa/",
+    "literalMeaning": "hanim",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-GUASHE",
+    "dialectVariants": {
+      "adyghe": "гуащэ",
+      "kabardian": "гуащэ"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 18,
+      "meanings": {
+        "en": "princess; mother-in-law; doll",
+        "ru": "княгиня; свекровь; кукла",
+        "tr": "prenses; kayınvalide; oyuncak bebek"
+      },
+      "sources": [
+        "Apaşev (2008)",
+        "Kardanov (1957)",
+        "Kokov (2008)",
+        "Yamisha (2018/2023)",
+        "Amcad Camuha (1997)",
+        "Gish",
+        "Tabanı",
+        "Baş Editör (1960)",
+        "Tharkaho (1991)",
+        "Huvaj (2007)",
+        "Şıgaje Adam (2020)",
+        "Aig (2006)",
+        "Lash (2013)"
+      ]
+    },
+    "notes": "Polisemik: PRINCESS (soyluluk) -> MOTHER_IN_LAW (aile rolu) -> DOLL (oyuncak). uneg'uashche bilesiginde 'hanim' alt anlami secilir. 18 bagimsiz sozluk kaynagi.",
+    "conceptIds": [
+      "PRINCESS",
+      "MOTHER_IN_LAW",
+      "DOLL",
+      "LADY"
+    ]
+  },
+  {
+    "id": "L-SHHYEKHUIT",
+    "form": "щхьэхуитыныгъэ",
+    "ipa": "/ɕħəxʷitənəɣa/",
+    "literalMeaning": "basin serbestligi",
+    "derivation": {
+      "rootIds": [
+        "R-SHHYE"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-SHHYE",
+    "conceptId": "FREEDOM",
+    "dialectVariants": {
+      "adyghe": "шъхьэхуитыныгъэ",
+      "kabardian": "щхьэхуитыныгъэ"
+    },
+    "corpusEvidence": {
+      "documents": 1,
+      "example": "Щхьэхуитыныгъэр зыхуейхэм я деж."
+    },
+    "notes": "щхьэ + хуит (serbest) + ыныгъэ = ozgurluk. Metaforik zincirin doruk noktasi: HEAD -> FREE -> FREEDOM."
+  },
+  {
+    "id": "L-SHHYEGUBZHE",
+    "form": "щхьэгъубжэ",
+    "ipa": "/ɕħəɣʷbʒa/",
+    "literalMeaning": "bas deligi",
+    "derivation": {
+      "rootIds": [
+        "R-SHHYE"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-SHHYE",
+    "conceptId": "WINDOW",
+    "dialectVariants": {
+      "adyghe": "шъхьэгъубжэ",
+      "kabardian": "щхьэгъубжэ"
+    },
+    "corpusEvidence": {
+      "documents": 1,
+      "example": "Щхьэгъубжэм дэплъын."
+    },
+    "notes": "щхьэ + гъубжэ = pencere. Evin gozu."
+  },
+  {
+    "id": "L-PE",
+    "form": "пэ",
+    "ipa": "/pa/",
+    "literalMeaning": "burun",
+    "derivation": {
+      "rootIds": [
+        "R-PE"
+      ],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-PE",
+    "conceptId": "NOSE",
+    "dialectVariants": {
+      "adyghe": "пэ",
+      "kabardian": "пэ"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 1,
+      "sources": [
+        "Wiktionary (2023)"
+      ],
+      "meanings": {
+        "ru": "нос",
+        "en": "nose",
+        "tr": "burun"
+      }
+    },
+    "notes": "Burun. Iki rol: isim + onek. 250+ turev."
+  },
+  {
+    "id": "L-PEKUKU",
+    "form": "пэкукъу",
+    "ipa": "/pakʷqʷə/",
+    "literalMeaning": "burun kemigi",
+    "derivation": {
+      "rootIds": [
+        "R-PE"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-PE",
+    "conceptId": "NASAL_SEPTUM",
+    "dialectVariants": {
+      "adyghe": "пэкукъу",
+      "kabardian": "пэкукъу"
+    },
+    "notes": "пэ + кукъу = burun kemigi."
+  },
+  {
+    "id": "L-PEKURSH",
+    "form": "пэкъурш",
+    "ipa": "/paqʷrʃ/",
+    "literalMeaning": "kartal burunlu",
+    "derivation": {
+      "rootIds": [
+        "R-PE"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-PE",
+    "conceptId": "HAWK_NOSED",
+    "dialectVariants": {
+      "adyghe": "пэкъурш",
+      "kabardian": "пэкъурш"
+    },
+    "notes": "пэ + къурш = kartal burunlu."
+  },
+  {
+    "id": "L-YAPEREY",
+    "form": "япэрей",
+    "ipa": "/japarej/",
+    "literalMeaning": "onde olan",
+    "derivation": {
+      "rootIds": [
+        "R-PE"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-PE",
+    "conceptIds": [
+      "FIRST",
+      "PREVIOUS"
+    ],
+    "dialectVariants": {
+      "adyghe": "япэрей",
+      "kabardian": "япэрей"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 1,
+      "sources": [
+        "Wiktionary (2023)"
+      ],
+      "meanings": {
+        "ru": "первый; предыдущий, прежний",
+        "en": "first; previous, former",
+        "tr": "birinci; onceki, eski"
+      }
+    },
+    "notes": "Iki anlam: birinci + onceki/eski. Siralı sayi + zaman."
+  },
+  {
+    "id": "L-PERYT",
+    "form": "пэрыт",
+    "ipa": "/parət/",
+    "literalMeaning": "onde duran",
+    "derivation": {
+      "rootIds": [
+        "R-PE"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-PE",
+    "conceptId": "LEADER",
+    "dialectVariants": {
+      "adyghe": "пэрыт",
+      "kabardian": "пэрыт"
+    },
+    "notes": "пэ + ры + т = lider, bas."
+  },
+  {
+    "id": "L-P1ETEPXHUE",
+    "form": "пӀэтепхъуэ",
+    "ipa": "/pʹɐte:pχʷɐ/",
+    "literalMeaning": "yatak ortusu",
+    "derivation": {
+      "rootIds": [
+        "R-P1E"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-P1E",
+    "conceptId": "BED_COVER",
+    "dialectVariants": {
+      "adyghe": "пӀэтепхъуэ",
+      "kabardian": "пӀэтепхъуэ"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 1,
+      "sources": [
+        "Wiktionary (2023)"
+      ],
+      "meanings": {
+        "ru": "покрывало",
+        "en": "bed cover",
+        "tr": "yatak ortusu"
+      }
+    },
+    "notes": "пӀэ + те + пхъуэ = yatak ortusu."
+  },
+  {
+    "id": "L-SHXAP1E",
+    "form": "шхапӀэ",
+    "ipa": "/ʂxɑ:pʹɐ/",
+    "literalMeaning": "yemek yeri",
+    "derivation": {
+      "rootIds": [
+        "R-P1E"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-P1E",
+    "conceptId": "DINING_ROOM",
+    "dialectVariants": {
+      "adyghe": "шхапӀэ",
+      "kabardian": "шхапӀэ"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 1,
+      "sources": [
+        "Wiktionary (2023)"
+      ],
+      "meanings": {
+        "ru": "столовая",
+        "en": "dining room",
+        "tr": "yemek odasi"
+      }
+    },
+    "notes": "шхэ + пӀэ = yemek odasi."
+  },
+  {
+    "id": "L-YEDJAP1E",
+    "form": "еджапӀэ",
+    "ipa": "/je:dᶎɑ:pʹɐ/",
+    "literalMeaning": "okuma yeri",
+    "derivation": {
+      "rootIds": [
+        "R-P1E"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-P1E",
+    "conceptId": "SCHOOL",
+    "dialectVariants": {
+      "adyghe": "еджапӀэ",
+      "kabardian": "еджапӀэ"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 1,
+      "sources": [
+        "Wiktionary (2023)"
+      ],
+      "meanings": {
+        "ru": "школа",
+        "en": "school",
+        "tr": "okul"
+      }
+    },
+    "notes": "еджэ + пӀэ = okul."
+  },
+  {
+    "id": "L-PSEUP1E",
+    "form": "псэупӀэ",
+    "ipa": "/psɐwǝpʹɐ/",
+    "literalMeaning": "yasama yeri",
+    "derivation": {
+      "rootIds": [
+        "R-P1E"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-P1E",
+    "conceptId": "DWELLING",
+    "dialectVariants": {
+      "adyghe": "псэупӀэ",
+      "kabardian": "псэупӀэ"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 1,
+      "sources": [
+        "Wiktionary (2023)"
+      ],
+      "meanings": {
+        "ru": "жилище",
+        "en": "dwelling",
+        "tr": "mesken"
+      }
+    },
+    "notes": "псэу + пӀэ = mesken."
+  },
+  {
+    "id": "L-PSYNE",
+    "form": "псынэ",
+    "ipa": "/psǝna/",
+    "literalMeaning": "su kabi",
+    "derivation": {
+      "rootIds": [
+        "R-PSY"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-PSY",
+    "conceptId": "WELL",
+    "dialectVariants": {
+      "adyghe": "псынэ",
+      "kabardian": "псынэ"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 16,
+      "sources": [
+        "Aig (2006)",
+        "Apashev (2008)",
+        "Yamisha (2018)",
+        "Yamisha (2023)",
+        "Gish (0000)",
+        "Amcad Camuha (1997)",
+        "Kokov (2008)",
+        "Lash (2013)",
+        "Tabani (0000)",
+        "Bas Editor (1960)",
+        "Shigaje Adam (2020)",
+        "Kardanov (1957)",
+        "Tharkaho Yoxiyt (1991)",
+        "Huvaj (2007)"
+      ],
+      "meanings": {
+        "tr": "kuyu, kaynak, pinar",
+        "en": "well, spring, source",
+        "ru": "колодец, родник, источник"
+      }
+    },
+    "notes": "псы + -нэ (kap/yuva eki). Etimoloji: su kabi -> kuyu/kaynak. 16 sozluk kaynagi."
+  },
+  {
+    "id": "L-PSYXHUE",
+    "form": "псыхъуэ",
+    "ipa": "/psǝχʷɐ/",
+    "literalMeaning": "suyun oldugu yer",
+    "derivation": {
+      "rootIds": [
+        "R-PSY"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-PSY",
+    "conceptId": "VALLEY",
+    "dialectVariants": {
+      "adyghe": "псыхъуэ",
+      "kabardian": "псыхъуэ"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 2,
+      "sources": [
+        "Wiktionary (2024)",
+        "Korpus (adyghe.web-corpora.net)"
+      ],
+      "meanings": {
+        "tr": "vadi, nehir yatagi",
+        "en": "valley, riverbed",
+        "ru": "долина, русло реки"
+      }
+    },
+    "corpusEvidence": {
+      "documents": 5,
+      "examples": [
+        "Псыхъуэ мылыр зэпракъутыкӀ",
+        "Псыхъуэ мэракӀуапцӀалъэхэр",
+        "Мес псыхъуэ дахэм си къуажэр"
+      ]
+    },
+    "notes": "псы + хъу + -э = suyun oldugu yer -> vadi. Es anlamli: ауз."
+  },
+  {
+    "id": "L-PSYEJEH",
+    "form": "псыежэх",
+    "ipa": "/psǝje:'ᶎɐx/",
+    "literalMeaning": "akan su",
+    "derivation": {
+      "rootIds": [
+        "R-PSY"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-PSY",
+    "conceptId": "RIVER",
+    "dialectVariants": {
+      "adyghe": "псыежэх",
+      "kabardian": "псыежэх"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 1,
+      "sources": [
+        "Wiktionary (2023)"
+      ],
+      "meanings": {
+        "tr": "nehir, irmak",
+        "en": "river",
+        "ru": "река"
+      }
+    },
+    "corpusEvidence": {
+      "documents": 1,
+      "examples": [
+        "Тэрч псыежэхыр ди къуажэм пэжыжьэкъым."
+      ]
+    },
+    "notes": "псы + ежэх (akan) = nehir."
+  },
+  {
+    "id": "L-NEKHUE",
+    "form": "нэху",
+    "ipa": "/nɐxʷ/",
+    "literalMeaning": "gozun beyazligi",
+    "derivation": {
+      "rootIds": [
+        "R-NE"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-NE",
+    "conceptId": "LIGHT",
+    "dialectVariants": {
+      "adyghe": "нэху",
+      "kabardian": "нэху"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 11,
+      "sources": [
+        "Apashev (2008)",
+        "Yamisha (2018)",
+        "Yamisha (2023)",
+        "Gish (0000)",
+        "Amcad Camuha (1997)",
+        "Kokov (2008)",
+        "Kardanov (1957)"
+      ],
+      "meanings": {
+        "tr": "isik, aydinlik",
+        "en": "light, brightness",
+        "ru": "свет, освещение"
+      }
+    },
+    "corpusEvidence": {
+      "documents": 20,
+      "examples": [
+        "Нэху щӀидзэн",
+        "Щхьэгъубжэм нэху къыдедз",
+        "Си нэм и нэху"
+      ]
+    },
+    "notes": "нэ (goz) + ху = isik. Mecazi: goz -> isik."
+  },
+  {
+    "id": "L-NAPS",
+    "form": "нэпс",
+    "ipa": "/nɐps/",
+    "literalMeaning": "goz suyu",
+    "derivation": {
+      "rootIds": [
+        "R-NE"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-NE",
+    "conceptId": "TEAR",
+    "dialectVariants": {
+      "adyghe": "нэпс",
+      "kabardian": "нэпс"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 1,
+      "sources": [
+        "Wiktionary (2023)"
+      ],
+      "meanings": {
+        "tr": "gozyasi; aglama",
+        "en": "tear; sob",
+        "ru": "слеза; плач"
+      }
+    },
+    "corpusEvidence": {
+      "documents": 5,
+      "examples": [
+        "Нэпсыр щӀэлъэщӀыкӀын",
+        "Лъы нэпс щӀэгъэкӀын",
+        "Нэпс гуащӀэ"
+      ]
+    },
+    "notes": "нэ (goz) + пс (su) = gozyasi. Alternatif yazim: напс."
+  },
+  {
+    "id": "L-P1E",
+    "form": "пӀэ",
+    "ipa": "/pʹɐ/",
+    "literalMeaning": "yer, mekân",
+    "derivation": {
+      "rootIds": [
+        "R-P1E"
+      ],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-P1E",
+    "conceptIds": [
+      "PLACE",
+      "BED"
+    ],
+    "dialectVariants": {
+      "adyghe": "пӀэ",
+      "kabardian": "пӀэ"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 2,
+      "sources": [
+        "Wiktionary (2023)",
+        "Apashev (2008)"
+      ],
+      "meanings": {
+        "ru": "место; постель, кровать",
+        "en": "place; bed",
+        "tr": "yer, mekân; yatak"
+      }
+    },
+    "notes": "İki anlam: yer/mekân + yatak. -пӀэ eki fiil köklerine eklenerek yer ismi türetir."
+  },
+  {
+    "id": "L-UNE",
+    "form": "унэ",
+    "ipa": "/wǝnɐ/",
+    "literalMeaning": "ev",
+    "derivation": {
+      "rootIds": [
+        "R-UNE"
+      ],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-UNE",
+    "conceptId": "HOUSE",
+    "dialectVariants": {
+      "adyghe": "унэ",
+      "kabardian": "унэ"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 4,
+      "sources": [
+        "Wiktionary (2023)",
+        "Kaikki.org",
+        "Rusuniversalis",
+        "Azerbaycan Wiktionary"
+      ],
+      "meanings": {
+        "ru": "дом",
+        "en": "house, home",
+        "tr": "ev"
+      }
+    },
+    "notes": "Temel form. Etimoloji: u(n) insan + -nэ kap/yuva. 16 türev."
+  },
+  {
+    "id": "L-PEFYQ",
+    "form": "пэфыкъ",
+    "ipa": "/pafəqʹ/",
+    "literalMeaning": "basık burunlu",
+    "derivation": {
+      "rootIds": [
+        "R-PE"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-PE",
+    "conceptId": "FLAT_NOSED",
+    "dialectVariants": {
+      "adyghe": "пэфыкъ",
+      "kabardian": "пэфыкъ"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 3,
+      "sources": [
+        "Apashev (2008)",
+        "Kokov (2008)",
+        "Sherdjes Aliy (1994)"
+      ],
+      "meanings": {
+        "ru": "(человек) с приплюснутым носом",
+        "en": "flat-nosed, snub-nosed",
+        "tr": "basık burunlu"
+      }
+    },
+    "notes": "пэ (burun) + фыкъ (basık). Üçlü burun şekli: пэфыкъ (basık) ↔ пэтӀинэ (kalkık) ↔ пэцӀурэ (sivri)."
+  },
+  {
+    "id": "L-PETINE",
+    "form": "пэтӀинэ",
+    "ipa": "/patʹinɐ/",
+    "literalMeaning": "kalkık burunlu",
+    "derivation": {
+      "rootIds": [
+        "R-PE"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-PE",
+    "conceptId": "SNUB_NOSED",
+    "dialectVariants": {
+      "adyghe": "пэтӀинэ",
+      "kabardian": "пэтӀинэ"
+    },
+    "variant": "пэтӀей",
+    "dictionaryEvidence": {
+      "sourceCount": 10,
+      "sources": [
+        "Apashev (2008)",
+        "Yamisha (2018/2023)",
+        "Gish",
+        "Kokov (2008)",
+        "Kardanov (1957)",
+        "Sherdjes Aliy (1994)",
+        "Amcad Camuha (1997)"
+      ],
+      "meanings": {
+        "ru": "курносый",
+        "en": "snub-nosed, turned-up nose",
+        "tr": "kalkık burunlu"
+      }
+    },
+    "notes": "пэ (burun) + тӀинэ (kısa/kalkık). Varyant: пэтӀей. 10 sözlük kaynağı."
+  },
+  {
+    "id": "L-PETSURƏ",
+    "form": "пэцӀурэ",
+    "ipa": "/ˈpɐtʹsu:rɐ/",
+    "literalMeaning": "sivri burunlu",
+    "derivation": {
+      "rootIds": [
+        "R-PE"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-PE",
+    "conceptId": "POINTED_NOSED",
+    "dialectVariants": {
+      "adyghe": "пэцӀурэ",
+      "kabardian": "пэцӀурэ"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 1,
+      "sources": [
+        "Wiktionary (2023)"
+      ],
+      "meanings": {
+        "ru": "остроносый (о человеке)",
+        "en": "with a pointed nose (about a person)",
+        "tr": "sivri burunlu"
+      }
+    },
+    "etymology": "[п] + -э- + [цӏур] + -э",
+    "notes": "пэ (burun) + цӀурэ (sivri/keskin). Sıfat türetme örüntüsünün net örneği."
+  },
+  {
+    "id": "L-GHUSE",
+    "form": "гъусэ",
+    "ipa": "/ʁʷǝsɐ/",
+    "literalMeaning": "yol arkadaşı",
+    "derivation": {
+      "rootIds": [
+        "R-GHUSE"
+      ],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-GHUSE",
+    "conceptIds": [
+      "COMPANION",
+      "PARTNER",
+      "SPOUSE"
+    ],
+    "dialectVariants": {
+      "adyghe": "гъусэ",
+      "kabardian": "гъусэ"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 18,
+      "sources": [
+        "Apaşev (2008)",
+        "Kokov (2008)",
+        "Aig (2006)",
+        "Enstitüsü (2011)",
+        "Baş Editör (1960)",
+        "Tharkaho (1991)",
+        "Huvaj (2007)",
+        "Yamisha",
+        "Gish",
+        "Amcad Camuha (1997)",
+        "Lash (2013)",
+        "Tabanı",
+        "Şıgaje Adam (2020)"
+      ],
+      "meanings": {
+        "ru": "спутник, попутчик; напарник; сторонник",
+        "en": "companion, fellow-traveller; partner, coworker",
+        "tr": "yol arkadaşı; iş arkadaşı; yoldaş"
+      }
+    },
+    "etymology": "[гъус] + -э",
+    "notes": "щхьэгъусэ (eş) bileşiğinin temeli. Huvaj 'EŞ' anlamını da veriyor."
+  },
+  {
+    "id": "L-PEPLEN",
+    "form": "пэплъэн",
+    "ipa": "/papɬan/",
+    "literalMeaning": "önüne bakmak",
+    "derivation": {
+      "rootIds": [
+        "R-PE",
+        "R-PLHE"
+      ],
+      "morphemeIds": [
+        "M-N"
+      ],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-PE",
+    "conceptId": "WAIT",
+    "dialectVariants": {
+      "adyghe": "пэплъэн",
+      "kabardian": "пэплъэн"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 19,
+      "sources": [
+        "Aig (2006)",
+        "Apaşev (2008)",
+        "Yamisha (2018/2023)",
+        "Kokov (2008)",
+        "Enstitüsü (2011)",
+        "Kardanov (1957)",
+        "Baş Editör (1960)",
+        "Huvaj (2007)",
+        "Lash (2013)"
+      ],
+      "meanings": {
+        "ru": "ждать, ожидать, поджидать",
+        "en": "to wait, to expect",
+        "tr": "beklemek, gözlemek"
+      }
+    },
+    "notes": "FİİL (mastar). Etimoloji: пэ- (ön) + плъэ- (bakmak) + -н (mastar). R-PE ile SEMANTİK İLİŞKİSİ YOK — yalancı dost. Ayrı R-PLHE kökü gerektirir."
+  },
+  {
+    "id": "L-BZE",
+    "form": "бзэ",
+    "ipa": "/bzɐ/",
+    "literalMeaning": "dil",
+    "derivation": {
+      "rootIds": [
+        "R-BZE"
+      ],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-BZE",
+    "conceptIds": [
+      "LANGUAGE",
+      "SPEECH",
+      "BOWSTRING",
+      "LOCK",
+      "BLADE"
+    ],
+    "dialectVariants": {
+      "adyghe": "бзэ",
+      "kabardian": "бзэ"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 19,
+      "sources": [
+        "Aig (2006)",
+        "Apaşev (2008)",
+        "Yamisha (2018/2023)",
+        "Kokov (2008)",
+        "Kardanov (1957)",
+        "Huvaj (2007)",
+        "Şıgaje Adam (2020)",
+        "Tharkaho (1991)",
+        "Baş Editör (1960)",
+        "Enstitüsü (2011)",
+        "Lash (2013)",
+        "Tabanı",
+        "Gish",
+        "Amcad Camuha (1997)"
+      ],
+      "meanings": {
+        "ru": "язык; речь; тетива; замок; лезвие",
+        "en": "language; speech; bowstring; lock; blade",
+        "tr": "dil; konuşma; yay kirişi; kilit; bıçak"
+      }
+    },
+    "corpusEvidence": {
+      "documents": 3,
+      "source": "Адыгэ Макъ (adygvoice.ru) 2007-2021",
+      "dialect": "adyghe",
+      "note": "Adigece korpus örnekleri. Kabardeyce karşılaştırma için."
+    },
+    "notes": "Polisemik: 5 anlam. Etimoloji: [бз] + -э."
+  },
+  {
+    "id": "L-FYN",
+    "form": "фын",
+    "ipa": "/fən/",
+    "literalMeaning": "çürümek",
+    "derivation": {
+      "rootIds": [
+        "R-F"
+      ],
+      "morphemeIds": [
+        "M-N"
+      ],
+      "rule": "suffix"
+    },
+    "wordFamilyId": "WF-F",
+    "conceptId": "ROT",
+    "dialectVariants": {
+      "adyghe": "шъун",
+      "kabardian": "фын"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 7,
+      "sources": [
+        "Yamisha (2023)",
+        "Yamisha (2018)",
+        "Gish",
+        "Amcad Camuha (1997)",
+        "Kardanov (1957)",
+        "Abaze (2005)",
+        "Huvaj (2007)"
+      ],
+      "meanings": {
+        "ru": "гнить, сгнить, разложиться",
+        "en": "rot, decompose, decay",
+        "tr": "çürümek, bozulmak"
+      }
+    },
+    "corpusEvidence": {
+      "source": "Kabardeyce Wiktionary",
+      "example": "Мэкъур фын. (Saman çürüyor.)"
+    },
+    "notes": "Fiil (mastar). Etimoloji: [ф] + -ы + -н. Adigece: шъун. 21 türev fiil."
+  },
+  {
+    "id": "L-FA",
+    "form": "фа",
+    "ipa": "/fa/",
+    "literalMeaning": "çürümüş",
+    "derivation": {
+      "rootIds": [
+        "R-F"
+      ],
+      "morphemeIds": [],
+      "rule": "participle"
+    },
+    "wordFamilyId": "WF-F",
+    "conceptId": "ROTTEN",
+    "dialectVariants": {
+      "adyghe": "шъуа",
+      "kabardian": "фа"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 7,
+      "sources": [
+        "Yamisha (2023)",
+        "Yamisha (2018)",
+        "Gish",
+        "Amcad Camuha (1997)",
+        "Kardanov (1957)"
+      ],
+      "meanings": {
+        "ru": "сгнивший, разложившийся; гнилой",
+        "en": "rotten, decomposed, decayed, putrefied",
+        "tr": "çürümüş, bozulmuş"
+      }
+    },
+    "notes": "Sıfat/partisip. Etimoloji: [ф] + -а. Kardanov: пхъэ фа = çürük odun.",
+    "synonyms": [
+      "мыбыдэ",
+      "пцӀы",
+      "шкӀумпӀ"
+    ],
+    "derivedWords": [
+      {
+        "meaning": "çürüklük",
+        "form": "фахуэ"
+      },
+      {
+        "meaning": "alttan çürümek",
+        "form": "щӀэфыкӀын"
+      },
+      {
+        "meaning": "ağızdan/üstten çürümek",
+        "form": "ӀуфыкӀын"
+      }
+    ],
+    "adygheEquivalent": "шъугъэ"
+  },
+  {
+    "wordFamilyId": "WF-F",
+    "conceptId": "ROT_FROM_BELOW",
+    "ipa": "/ɕʔafəqʔən/",
+    "dialectVariants": {
+      "adyghe": "щӀэшъукӀын",
+      "kabardian": "щӀэфыкӀын"
+    },
+    "literalMeaning": "alttan çürümek",
+    "derivation": {
+      "morphemeIds": [],
+      "rule": "compound",
+      "rootIds": [
+        "R-F"
+      ]
+    },
+    "form": "щӀэфыкӀын",
+    "id": "L-SH1EFYQ1YN",
+    "notes": "щӀэ- (alt) + фы- (çürü-) + кӀы- (çık-) + -н. Alttan çürümek."
+  },
+  {
+    "wordFamilyId": "WF-F",
+    "conceptId": "ROT_FROM_MOUTH",
+    "ipa": "/ʔufəqʔən/",
+    "dialectVariants": {
+      "adyghe": "ӀушъукӀын",
+      "kabardian": "ӀуфыкӀын"
+    },
+    "literalMeaning": "ağızdan/üstten çürümek",
+    "derivation": {
+      "morphemeIds": [],
+      "rule": "compound",
+      "rootIds": [
+        "R-F"
+      ]
+    },
+    "form": "ӀуфыкӀын",
+    "id": "L-1UFYQ1YN",
+    "notes": "Ӏу- (ağız/üst) + фы- (çürü-) + кӀы- (çık-) + -н. Ağızdan/üstten çürümek."
+  },
+  {
+    "id": "L-FE",
+    "form": "фэ",
+    "ipa": "/fɐ/",
+    "literalMeaning": "deri; siz",
+    "derivation": {
+      "rootIds": [
+        "R-FE"
+      ],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-FE",
+    "conceptIds": [
+      "SKIN",
+      "HIDE",
+      "BARK",
+      "YOU_PLURAL",
+      "APPEARANCE"
+    ],
+    "dialectVariants": {
+      "adyghe": "фэ",
+      "kabardian": "фэ"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 19,
+      "sources": [
+        "Wiktionary (2023)",
+        "Tarmash (circassian.ai)",
+        "Yamisha (2018/2023)",
+        "Apaşev (2008)",
+        "Kardanov (1957)",
+        "Kokov (2008)",
+        "Amcad Camuha (1997)"
+      ],
+      "meanings": {
+        "ru": "1. вы (мест.) 2. кожа, шкура, кожура, кора",
+        "en": "1. you (pl.) 2. skin, hide, peel, bark",
+        "tr": "1. siz 2. deri, post, kabuk"
+      }
+    },
+    "corpusEvidence": {
+      "source": "Kabardeyce Wiktionary",
+      "examples": [
+        "Фэ зыплъыхьакӀуэ фыкӀуэрэ? (Siz gezilere gidiyor musunuz?)",
+        "Пхъэхуейм и фэр телъэфын. (Huş ağacının kabuğunu soymak.)"
+      ]
+    },
+    "notes": "İki ana anlam: zamir + isim. Etimoloji: [ф] + -э. Adigece'de ek anlam: sinir/tendon (Tarmash)."
+  },
+  {
+    "id": "L-P1C1Y",
+    "form": "пцӀы",
+    "ipa": "/pt͡sʼə/",
+    "literalMeaning": "yalan",
+    "derivation": {
+      "rootIds": [
+        "R-P1C1"
+      ],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-P1C1",
+    "conceptIds": [
+      "LIE",
+      "DECEPTION"
+    ],
+    "dialectVariants": {
+      "adyghe": "пцӀы",
+      "kabardian": "пцӀы"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 15,
+      "sources": [
+        "Wiktionary (2023)",
+        "Abaze (2005)",
+        "Huvaj (2007)",
+        "Hasan (1991)",
+        "Aşemez (2013)",
+        "Yamisha (2018)"
+      ],
+      "meanings": {
+        "ru": "ложь, обман",
+        "en": "lies, deception",
+        "tr": "yalan, aldatma"
+      }
+    },
+    "corpusEvidence": {
+      "source": "Adigece korpus (adygvoice.ru, 1991-2021)",
+      "dialect": "adyghe",
+      "examples": [
+        "ПцӀы ӀэфӀ нэхърэ пэж дыдж. (Tatlı yalan, acı gerçekten iyidir.)",
+        "ПцӀы хэмылъу, нобэ хъарзынэу дылэжьащ. (Şüphesiz, bugün iyi iş çıkardık.)"
+      ]
+    },
+    "notes": "İsim: yalan, aldatma. Etimoloji: [пцӀ] + -ы. 15 sözlük + Wiktionary + Adigece korpus."
+  },
+  {
+    "id": "L-PSYNSH1E",
+    "form": "псынщӀэ",
+    "ipa": "/psǝnɕʹɐ/",
+    "literalMeaning": "su gibi akan",
+    "derivation": {
+      "rootIds": [
+        "R-PSY"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-PSY",
+    "conceptIds": [
+      "LIGHT_WEIGHT",
+      "FAST",
+      "QUICK",
+      "EASY",
+      "LIVELY"
+    ],
+    "dialectVariants": {
+      "adyghe": "псынщӀэ",
+      "kabardian": "псынщӀэ"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 2,
+      "sources": [
+        "Wiktionary (2023)",
+        "Yamisha (2018)"
+      ],
+      "meanings": {
+        "ru": "1. лёгкий (о весе) 2. быстрый, скорый 3. легкомысленный",
+        "en": "1. light (about weight) 2. quick, fast 3. frivolous",
+        "tr": "1. hafif 2. hızlı 3. hafifmeşrep"
+      }
+    },
+    "corpusEvidence": {
+      "source": "Kabardeyce Wiktionary",
+      "examples": [
+        "Вакъэ псынщӀэ. (Hafif ayakkabı.)",
+        "Машинэ псынщӀэ. (Hızlı araba.)",
+        "ЩӀалэ псынщӀэ. (Canlı delikanlı.)"
+      ]
+    },
+    "etymology": "[псынщӀ] + -э",
+    "notes": "Polisemik: hafif + hızlı + canlı + hafifmeşrep. Etimoloji: [псынщӀ] + -э. Su gibi akan."
+  },
+  {
+    "id": "L-SH1Y",
+    "form": "щӀы",
+    "ipa": "/ɕʹǝ/",
+    "literalMeaning": "toprak",
+    "derivation": {
+      "rootIds": [
+        "R-SH1Y"
+      ],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-SH1Y",
+    "conceptIds": [
+      "EARTH",
+      "LAND",
+      "SOIL",
+      "COUNTRY",
+      "WINTER"
+    ],
+    "dialectVariants": {
+      "adyghe": "щӀы",
+      "kabardian": "щӀы"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 11,
+      "sources": [
+        "Wiktionary (2023)",
+        "Apaşev (2008)",
+        "Yamisha (2018/2023)",
+        "Gish",
+        "Amcad Camuha (1997)",
+        "Kokov (2008)",
+        "Kardanov (1957)"
+      ],
+      "meanings": {
+        "ru": "1. Земля (планета) 2. почва, земля 3. страна, родина 4. зима",
+        "en": "1. Earth (planet) 2. earth, ground, soil 3. country, homeland 4. winter",
+        "tr": "1. Dünya 2. toprak, yer 3. ülke, vatan 4. kış"
+      }
+    },
+    "corpusEvidence": {
+      "source": "Kabardeyce Wiktionary",
+      "examples": [
+        "Псым щӀыр егъэщӀэращӀэ. (Su toprağı güzelleştirir.)",
+        "Мывэ фӀамыщӀыр щӀым къыщӀах. (Kömür topraktan çıkarılır.)"
+      ]
+    },
+    "etymology": "[щӀ] + -ы",
+    "notes": "Polisemik: toprak + dünya + ülke + kış. 11 sözlük + Wiktionary."
+  },
+  {
+    "id": "L-SH1E",
+    "form": "щӀэ",
+    "ipa": "/ɕʹɐ/",
+    "literalMeaning": "yeni",
+    "derivation": {
+      "rootIds": [
+        "R-SH1E"
+      ],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-SH1E",
+    "conceptId": "NEW",
+    "dialectVariants": {
+      "adyghe": "кӀэ",
+      "kabardian": "щӀэ"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 5,
+      "sources": [
+        "Yamisha (2018)",
+        "Abaze (2005)",
+        "Huvaj (2007)",
+        "Hasan (1991)",
+        "Aşemez (2013)"
+      ],
+      "meanings": {
+        "ru": "новый",
+        "en": "new",
+        "tr": "yeni"
+      }
+    },
+    "notes": "Sıfat. Adigece: кӀэ. 5 sözlük kaynağı."
+  },
+  {
+    "id": "L-DAGHE",
+    "form": "дагъэ",
+    "ipa": "/daːʁɐ/",
+    "literalMeaning": "yağ",
+    "derivation": {
+      "rootIds": [
+        "R-DAGHE"
+      ],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-DAGHE",
+    "conceptIds": [
+      "OIL",
+      "FAT",
+      "FUEL",
+      "GREASE"
+    ],
+    "dialectVariants": {
+      "adyghe": "дагъэ",
+      "kabardian": "дагъэ"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 19,
+      "sources": [
+        "Wiktionary (2023)",
+        "Aig (2006)",
+        "Apaşev (2008)",
+        "Yamisha (2018/2023)",
+        "Kardanov (1957)",
+        "Kokov (2008)",
+        "Tharkaho (1991)",
+        "Huvaj (2007)"
+      ],
+      "meanings": {
+        "ru": "1. жир, масло 2. горючее",
+        "en": "1. grease, oil 2. fuel",
+        "tr": "1. yağ 2. yakıt"
+      }
+    },
+    "corpusEvidence": {
+      "source": "Kabardeyce Wiktionary",
+      "examples": [
+        "Сэхуран дагъэ. (Ayçiçek yağı.)",
+        "Щэ дагъэ. (Eritilmiş iç yağı.)"
+      ]
+    },
+    "etymology": "[дагъ] + -э",
+    "notes": "Polisemik: yağ + yakıt. 19 sözlük + Wiktionary."
+  },
+  {
+    "id": "L-SH1YDAGHE",
+    "form": "щӀыдагъэ",
+    "ipa": "/ɕʹǝdaːʁɐ/",
+    "literalMeaning": "toprak yağı",
+    "derivation": {
+      "rootIds": [
+        "R-SH1Y",
+        "R-DAGHE"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-SH1Y",
+    "conceptId": "PETROLEUM",
+    "dialectVariants": {
+      "adyghe": "щӀыдагъэ",
+      "kabardian": "щӀыдагъэ"
+    },
+    "notes": "Bileşik: щӀы (toprak) + дагъэ (yağ) = toprak yağı = petrol."
+  },
+  {
+    "id": "L-SHE",
+    "form": "щэ",
+    "ipa": "/ɕɐ/",
+    "literalMeaning": "yağ",
+    "derivation": {
+      "rootIds": [
+        "R-SHE"
+      ],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-SHE",
+    "conceptIds": [
+      "FAT",
+      "THREE_TIMES",
+      "HUNDRED",
+      "QUESTION_PARTICLE"
+    ],
+    "dialectVariants": {
+      "adyghe": "шэ",
+      "kabardian": "щэ"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 12,
+      "sources": [
+        "Apaşev (2008)",
+        "Kokov (2008)",
+        "Kardanov (1957)",
+        "Amcad Camuha (1997)",
+        "Yamisha (2018)"
+      ],
+      "meanings": {
+        "ru": "1. жир, сало 2. три раза 3. сто 4. частица",
+        "en": "1. fat, grease 2. three times 3. hundred 4. particle",
+        "tr": "1. yağ 2. üç kere 3. yüz 4. partikel"
+      }
+    },
+    "notes": "Yağ + sayılar + partikel. Etimoloji: [щ] + -э."
+  },
+  {
+    "id": "L-SHE2",
+    "form": "шэ",
+    "ipa": "/ʂɐ/",
+    "literalMeaning": "süt",
+    "derivation": {
+      "rootIds": [
+        "R-SHE2"
+      ],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-SHE2",
+    "conceptIds": [
+      "MILK",
+      "BULLET",
+      "CARTRIDGE",
+      "TAKE_IMPERATIVE"
+    ],
+    "dialectVariants": {
+      "adyghe": "шэ",
+      "kabardian": "шэ"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 18,
+      "sources": [
+        "Aig (2006)",
+        "Apaşev (2008)",
+        "Yamisha (2018/2023)",
+        "Gish",
+        "Amcad Camuha (1997)",
+        "Kokov (2008)",
+        "Kardanov (1957)",
+        "Tabanı",
+        "Enstitüsü (2011)",
+        "Baş Editör (1960)",
+        "Şıgaje Adam (2020)",
+        "Tharkaho (1991)"
+      ],
+      "meanings": {
+        "ru": "1. молоко 2. патрон, пуля, снаряд 3. возьми (повел.)",
+        "en": "1. milk 2. cartridge, bullet, projectile 3. take (imperative)",
+        "tr": "1. süt 2. kurşun, mermi 3. götür (emir)"
+      }
+    },
+    "corpusEvidence": {
+      "source": "Kabardeyce Wiktionary + Tarmash DOGU",
+      "examples": [
+        "Мэ, Нуржан, шэ! (Al, Nurjan, süt!)",
+        "Фочым шэ илъхьэн. (Tüfeğe kurşun koymak.)",
+        "Шэр гъэпщтын. (Sütü kaynatmak.)"
+      ]
+    },
+    "notes": "Süt + kurşun + götür. IPA: /ʂɐ/. Tarmash DOGU filtresi doğruluyor."
+  },
+  {
+    "id": "L-TKHEK1UME",
+    "form": "тхьэкӀумэ",
+    "ipa": "/tħakʷʼma/",
+    "literalMeaning": "kulak",
+    "derivation": {
+      "rootIds": [
+        "R-TKHEK1UME"
+      ],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-TKHEK1UME",
+    "conceptIds": [
+      "EAR",
+      "HEARING"
+    ],
+    "dialectVariants": {
+      "adyghe": "тхьэкӀумэ",
+      "kabardian": "тхьэкӀумэ"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 13,
+      "sources": [
+        "Apaşev (2008)",
+        "Yamisha (2018/2023)",
+        "Gish",
+        "Amcad Camuha (1997)",
+        "Kokov (2008)",
+        "Kardanov (1957)",
+        "Sherdjes Aliy (1994)"
+      ],
+      "meanings": {
+        "ru": "1. ухо 2. ушной",
+        "en": "1. ear 2. aural",
+        "tr": "1. kulak 2. kulakla ilgili"
+      }
+    },
+    "corpusEvidence": {
+      "source": "Kabardeyce Wiktionary",
+      "examples": [
+        "Абы и тхьэкӀумэ цӀыкӀухэр мэпӀий. (Onun küçük kulakları dik.)",
+        "ТхьэкӀумэр гъэкӀын. (Kulakları dikmek.)"
+      ]
+    },
+    "etymology": "[тхьэкӀум] + -э",
+    "notes": "Kulak. 10 türev."
+  }
+  ,
+  {
+    "id": "L-K1YH",
+    "form": "кӀыхь",
+    "ipa": "/kʹʂǝħ/",
+    "literalMeaning": "uzun",
+    "derivation": {
+      "rootIds": ["R-K1YH"],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-K1YH",
+    "conceptIds": ["LONG", "TALL", "DISTANT"],
+    "dialectVariants": {
+      "adyghe": "кӀыхь",
+      "kabardian": "кӀыхь"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 2,
+      "sources": ["Yamisha (2018)", "Wiktionary (2023)"],
+      "meanings": {
+        "ru": "длинный, долгий, высокий",
+        "en": "long, tall, distant",
+        "tr": "uzun, yüksek, uzak"
+      }
+    },
+    "corpusEvidence": {
+      "source": "Kabardeyce Wiktionary",
+      "examples": [
+        "ЩӀалэ кӀыхь. (Uzun boylu delikanlı.)",
+        "ГъащӀэ кӀыхь. (Uzun hayat.)",
+        "ПӀалъэ кӀыхь. (Uzun zaman.)"
+      ]
+    },
+    "notes": "Uzun. 25 türev."
+  },
+  {
+    "id": "L-TKHEK1UMECH1YH",
+    "form": "тхьэкӀумэкӀыхь",
+    "ipa": "/tħakʷʼmakʹʂǝħ/",
+    "literalMeaning": "uzun kulaklı",
+    "derivation": {
+      "rootIds": ["R-TKHEK1UME", "R-K1YH"],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-TKHEK1UME",
+    "conceptId": "RABBIT",
+    "dialectVariants": {
+      "adyghe": "тхьэкӀумэкӀыхь",
+      "kabardian": "тхьэкӀумэкӀыхь"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 2,
+      "sources": ["Wiktionary (2023)", "Kuipers (1960)"],
+      "meanings": {
+        "ru": "заяц",
+        "en": "rabbit, hare",
+        "tr": "tavşan"
+      }
+    },
+    "notes": "Bileşik: тхьэкӀумэ (kulak) + кӀыхь (uzun) = uzun kulaklı = tavşan."
+  }
+  ,
+  {
+    "id": "L-DYGHU",
+    "form": "дыгъу",
+    "ipa": "/dǝʁʷ/",
+    "literalMeaning": "hırsız",
+    "derivation": {
+      "rootIds": ["R-DYGHU"],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-DYGHU",
+    "conceptIds": ["THIEF", "STEAL"],
+    "dialectVariants": {
+      "adyghe": "дыгъу",
+      "kabardian": "дыгъу"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 4,
+      "sources": ["Apaşev (2008)", "Amcad Camuha (1997)", "Kokov (2008)", "Kardanov (1957)"],
+      "meanings": {
+        "ru": "вор, воровка; похититель",
+        "en": "thief; stealer",
+        "tr": "hırsız"
+      }
+    },
+    "corpusEvidence": {
+      "source": "Kabardeyce Wiktionary + sözlük",
+      "examples": [
+        "Дыгъу зыукӀ хабзэ хабзэфӀщи. (Hırsızı öldürmek âdet, âdettir.)"
+      ]
+    },
+    "etymology": "[дыгъу]",
+    "notes": "Hırsız. 4 sözlük + Wiktionary. 20+ türev. дыгъужь (kurt) bileşiğinin ilk parçası."
+  }
+  ,
+  {
+    "id": "L-ZHY",
+    "form": "жьы",
+    "ipa": "/ʑǝ/",
+    "literalMeaning": "eski",
+    "derivation": {
+      "rootIds": ["R-ZHY"],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-ZHY",
+    "conceptIds": ["OLD", "AGED", "WIND", "AIR", "EARLY"],
+    "dialectVariants": {
+      "adyghe": "жьы",
+      "kabardian": "жьы"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 18,
+      "sources": ["Aig (2006)", "Apaşev (2008)", "Yamisha (2018/2023)", "Gish", "Amcad Camuha (1997)", "Kokov (2008)", "Kardanov (1957)", "Enstitüsü (2011)", "Baş Editör (1960)", "Şıgaje Adam (2020)", "Tharkaho (1991)", "Tabanı", "Lash (2013)"],
+      "meanings": {
+        "ru": "1. старый, ветхий 2. ветер 3. воздух 4. рано",
+        "en": "1. old, dilapidated 2. wind 3. air 4. early",
+        "tr": "1. eski, yaşlı 2. rüzgar 3. hava 4. erken"
+      }
+    },
+    "corpusEvidence": {
+      "source": "Kabardeyce Wiktionary",
+      "examples": [
+        "Унэжь. (Eski ev.)",
+        "ЛӀыжь. (Yaşlı adam.)",
+        "Жьы къопщэ. (Rüzgar esiyor.)",
+        "Жьы къабзэ. (Temiz hava.)"
+      ]
+    },
+    "etymology": "[жь] + -ы",
+    "notes": "Eski + yaşlı + rüzgar + hava + erken. 18 sözlük + Wiktionary. 25+ türev."
+  },
+  {
+    "id": "L-DYGHUZHY",
+    "form": "дыгъужь",
+    "ipa": "/dǝʁʷǝʑ/",
+    "literalMeaning": "eski hırsız",
+    "derivation": {
+      "rootIds": ["R-DYGHU", "R-ZHY"],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-DYGHU",
+    "conceptId": "WOLF",
+    "dialectVariants": {
+      "adyghe": "дыгъужь",
+      "kabardian": "дыгъужь"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 2,
+      "sources": ["Wiktionary (2023)", "Kuipers (1960)"],
+      "meanings": {
+        "ru": "волк",
+        "en": "wolf",
+        "tr": "kurt"
+      }
+    },
+    "corpusEvidence": {
+      "source": "Kabardeyce Wiktionary",
+      "examples": [
+        "Дыгъужьым мэл щихькӀэ и нэпкъыжьэ еплъкъым. (Kurt koyunu alınca etrafına bakmaz.)"
+      ]
+    },
+    "notes": "Bileşik: дыгъу (hırsız) + жьы (eski) = eski hırsız = kurt."
+  }
+  ,
+  {
+    "id": "L-VY",
+    "form": "вы",
+    "ipa": "/vǝ/",
+    "literalMeaning": "öküz",
+    "derivation": {
+      "rootIds": ["R-VY"],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-VY",
+    "conceptIds": ["OX", "PLOW"],
+    "dialectVariants": {
+      "adyghe": "вы",
+      "kabardian": "вы"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 9,
+      "sources": ["Apaşev (2008)", "Yamisha (2018/2023)", "Gish", "Amcad Camuha (1997)", "Kokov (2008)", "Kardanov (1957)"],
+      "meanings": {
+        "ru": "1. вол 2. пахать",
+        "en": "1. ox 2. to plow",
+        "tr": "1. öküz 2. sürmek"
+      }
+    },
+    "notes": "Öküz + sürmek. 9 sözlük + Wiktionary. Polisemik."
+  }
+  ,
+  {
+    "id": "L-KHY",
+    "form": "хы",
+    "ipa": "/xǝ/",
+    "literalMeaning": "deniz",
+    "derivation": {
+      "rootIds": ["R-KHY"],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-KHY",
+    "conceptIds": ["SEA", "OCEAN"],
+    "dialectVariants": {
+      "adyghe": "хы",
+      "kabardian": "хы"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 12,
+      "sources": ["Aig (2006)", "Baş Editör (1960)", "Şıgaje Adam (2020)", "Tabanı", "Tharkaho (1991)", "Huvaj (2007)", "Yamisha (2018/2023)", "Apaşev (2008)", "Kokov (2008)", "Kardanov (1957)", "Lash (2013)"],
+      "meanings": {
+        "ru": "море, океан",
+        "en": "sea, ocean",
+        "tr": "deniz, okyanus"
+      }
+    },
+    "corpusEvidence": {
+      "source": "Kabardeyce Wiktionary + Adigece korpus",
+      "examples": [
+        "Хы ШӀуцӀэ. (Karadeniz.)",
+        "Хы Ӏуфэ. (Deniz kıyısı.)",
+        "Хым къухьэхэр тетых. (Denizde gemiler var.)"
+      ]
+    },
+    "etymology": "[х] + -ы",
+    "notes": "Deniz, okyanus. хыкъа (yunus) bileşiğinin ilk parçası."
+  },
+  {
+    "id": "L-KHY2",
+    "form": "хы",
+    "ipa": "/xǝ/",
+    "literalMeaning": "altı",
+    "derivation": {
+      "rootIds": ["R-KHY2"],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-KHY2",
+    "conceptIds": ["SIX", "NUMBER"],
+    "dialectVariants": {
+      "adyghe": "хы",
+      "kabardian": "хы"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 10,
+      "sources": ["Apaşev (2008)", "Kokov (2008)", "Kardanov (1957)", "Enstitüsü (2011)", "Aig (2006)", "Lash (2013)", "Yamisha (2018/2023)", "Tharkaho (1991)", "Huvaj (2007)", "Gish"],
+      "meanings": {
+        "ru": "шесть (6)",
+        "en": "six (6)",
+        "tr": "altı (6)"
+      }
+    },
+    "corpusEvidence": {
+      "source": "Kabardeyce Wiktionary + Adigece korpus",
+      "examples": [
+        "Дэ хы дохъу. (Biz altı kişiyiz.)",
+        "Илъэсих тешӀагъ. (Altı yıl geçti.)"
+      ]
+    },
+    "etymology": "[х] + -ы",
+    "notes": "Altı (6). Homonym: хы (deniz) ile aynı yazılış."
+  }
+  ,
+  {
+    "id": "L-KKHUHE",
+    "form": "кхъуэ",
+    "ipa": "/qʷa/",
+    "literalMeaning": "domuz",
+    "derivation": {
+      "rootIds": ["R-KKHUHE"],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-KKHUHE",
+    "conceptIds": ["PIG", "SWINE"],
+    "dialectVariants": {
+      "adyghe": "къо",
+      "kabardian": "кхъуэ"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 5,
+      "sources": ["Yamisha (2018)", "Abaze (2005)", "Huvaj (2007)", "Hasan (1991)", "Aşemez (2013)"],
+      "meanings": {
+        "ru": "свинья",
+        "en": "pig, swine",
+        "tr": "domuz"
+      }
+    },
+    "corpusEvidence": {
+      "source": "Kabardeyce sözlük",
+      "examples": [
+        "Кхъуэшыр. (Domuz yavrusu.)",
+        "Кхъуэщ. (Domuz ahırı.)"
+      ]
+    },
+    "etymology": "[кхъу] + -э",
+    "notes": "Domuz. Adigece: къо. Kabardeyce: кхъуэ."
+  },
+  {
+    "id": "L-KHYKKHUHE",
+    "form": "хыкхъуэ",
+    "ipa": "/xǝqʷa/",
+    "literalMeaning": "deniz domuzu",
+    "derivation": {
+      "rootIds": ["R-KHY", "R-KKHUHE"],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-KHY",
+    "conceptId": "DOLPHIN",
+    "dialectVariants": {
+      "adyghe": "хыкъо",
+      "kabardian": "хыкхъуэ"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 1,
+      "sources": ["Kuipers (1960)"],
+      "meanings": {
+        "ru": "дельфин",
+        "en": "dolphin",
+        "tr": "yunus"
+      }
+    },
+    "notes": "Bileşik: хы (deniz) + кхъуэ (domuz) = deniz domuzu = yunus."
+  }
+  ,
+  {
+    "id": "L-FO",
+    "form": "фо",
+    "ipa": "/fo:/",
+    "literalMeaning": "bal",
+    "derivation": {
+      "rootIds": ["R-FO"],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-FO",
+    "conceptIds": ["HONEY", "SWEET"],
+    "dialectVariants": {
+      "adyghe": "фо",
+      "kabardian": "фо"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 12,
+      "sources": ["Apaşev (2008)", "Yamisha (2018/2023)", "Gish", "Amcad Camuha (1997)", "Kokov (2008)", "Kardanov (1957)", "Şıgaje Adam (2020)"],
+      "meanings": {
+        "ru": "мёд",
+        "en": "honey",
+        "tr": "bal"
+      }
+    },
+    "corpusEvidence": {
+      "source": "Kabardeyce Wiktionary",
+      "examples": [
+        "Фо нэхърэ жей нэхь ӀэфӀщ. (Uyku baldan tatlıdır.)",
+        "Фонащэр фом хуэдэщ. (Kavun bal gibidir.)",
+        "Фо щӀэхун. (Bal üretmek.)"
+      ]
+    },
+    "etymology": "[фо]",
+    "notes": "Bal. 12 sözlük + Wiktionary. фошыгъу (şeker) bileşiğinin ilk parçası."
+  },
+  {
+    "id": "L-FOSHYGHU",
+    "form": "фошыгъу",
+    "ipa": "/foʃəʁʷ/",
+    "literalMeaning": "bal tuzu",
+    "derivation": {
+      "rootIds": ["R-FO"],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-FO",
+    "conceptId": "SUGAR",
+    "dialectVariants": {
+      "adyghe": "фошыгъу",
+      "kabardian": "фошыгъу"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 1,
+      "sources": ["Kuipers (1960)"],
+      "meanings": {
+        "ru": "сахар",
+        "en": "sugar",
+        "tr": "şeker"
+      }
+    },
+    "notes": "Bileşik: фо (bal) + шыгъу (tuz) = bal tuzu = şeker."
+  }
+  ,
+  {
+    "id": "L-MAF1E",
+    "form": "мафӀэ",
+    "ipa": "/maːfʔa/",
+    "literalMeaning": "ateş",
+    "derivation": {
+      "rootIds": ["R-MAF1E"],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-MAF1E",
+    "conceptIds": ["FIRE", "FLAME", "PASSION"],
+    "dialectVariants": {
+      "adyghe": "машӀу",
+      "kabardian": "мафӀэ"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 9,
+      "sources": ["Apaşev (2008)", "Yamisha (2018/2023)", "Gish", "Amcad Camuha (1997)", "Kokov (2008)", "Kardanov (1957)"],
+      "meanings": {
+        "ru": "1. огонь 2. горячий, пылкий (перен.)",
+        "en": "1. fire 2. fiery, passionate (fig.)",
+        "tr": "1. ateş 2. ateşli, tutkulu (mecazi)"
+      }
+    },
+    "corpusEvidence": {
+      "source": "Kabardeyce Wiktionary",
+      "examples": [
+        "МафӀэ щӀын. (Ateş yakmak.)",
+        "МафӀэр ужьыхыжын. (Ateş sönmek.)",
+        "МафӀэ гуащӀэ. (Sıcak ateş.)"
+      ]
+    },
+    "etymology": "[мафӀ] + -э",
+    "notes": "Ateş. Adigece: машӀу. Kabardeyce: мафӀэ. 9 sözlük + Wiktionary."
+  },
+  {
+    "id": "L-MAF1ASHE",
+    "form": "мафӀащэ",
+    "ipa": "/maːfʔaɕa/",
+    "literalMeaning": "ateş oku",
+    "derivation": {
+      "rootIds": ["R-MAF1E", "R-SHE"],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-MAF1E",
+    "conceptId": "SPARK",
+    "dialectVariants": {
+      "adyghe": "машӀощэ",
+      "kabardian": "мафӀащэ"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 1,
+      "sources": ["Kuipers (1960)"],
+      "meanings": {
+        "ru": "искра",
+        "en": "spark",
+        "tr": "kıvılcım"
+      }
+    },
+    "notes": "Bileşik: мафӀэ (ateş) + щэ (ok/saçılım) = ateş oku = kıvılcım."
+  },
+  {
+    "id": "L-MAF1EGU",
+    "form": "мафӀэгу",
+    "ipa": "/maːfʔagʷə/",
+    "literalMeaning": "ateş arabası",
+    "derivation": {
+      "rootIds": ["R-MAF1E", "R-GU"],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-MAF1E",
+    "conceptId": "TRAIN",
+    "dialectVariants": {
+      "adyghe": "машӀокушъо",
+      "kabardian": "мафӀэгу"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 1,
+      "sources": ["Kuipers (1960)"],
+      "meanings": {
+        "ru": "поезд",
+        "en": "train",
+        "tr": "tren"
+      }
+    },
+    "notes": "Bileşik: мафӀэ (ateş) + гу (araba/merkez) = ateş arabası = tren."
+  }
+]
