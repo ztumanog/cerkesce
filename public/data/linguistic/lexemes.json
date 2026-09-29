@@ -3283,5 +3283,258 @@
       }
     },
     "notes": "псы (su) + унэ (ev/oda) = su odasi = tuvalet."
+  },
+  {
+    "id": "L-PSE",
+    "form": "псэ",
+    "ipa": "/psɐ/",
+    "literalMeaning": "ruh, can",
+    "derivation": {
+      "rootIds": [
+        "R-PSE"
+      ],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-PSE",
+    "conceptId": "SOUL",
+    "corpusFrequency": 6177,
+    "dialectVariants": {
+      "adyghe": "псэ",
+      "kabardian": "псэ"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 1,
+      "sources": [
+        "Wiktionary (2023)"
+      ],
+      "meanings": {
+        "tr": "ruh, can, yaşam",
+        "en": "soul; possessing a soul or life-force",
+        "ru": "душа; одушевлённость; наличие жизни"
+      }
+    },
+    "notes": "Etimoloji: [пс] + -э. Korpus: 6177. 80+ deyim."
+  },
+  {
+    "id": "L-PSEUN",
+    "form": "псэун",
+    "ipa": "/psawən/",
+    "literalMeaning": "canli olmak",
+    "derivation": {
+      "rootIds": [
+        "R-PSE"
+      ],
+      "morphemeIds": [],
+      "rule": "suffix"
+    },
+    "wordFamilyId": "WF-PSE",
+    "conceptId": "LIVE",
+    "corpusFrequency": 851,
+    "dialectVariants": {
+      "adyghe": "псэун",
+      "kabardian": "псэун"
+    },
+    "notes": "псэ + -ун = yasamak. Korpus: 851."
+  },
+  {
+    "id": "L-PSEUSHHE",
+    "form": "псэущхьэ",
+    "ipa": "/psawɕħa/",
+    "literalMeaning": "cani olan",
+    "derivation": {
+      "rootIds": [
+        "R-PSE"
+      ],
+      "morphemeIds": [],
+      "rule": "suffix"
+    },
+    "wordFamilyId": "WF-PSE",
+    "conceptId": "LIVING_BEING",
+    "dialectVariants": {
+      "adyghe": "псэущхьэ",
+      "kabardian": "псэущхьэ"
+    },
+    "notes": "псэ + ущхьэ = canli varlik."
+  },
+  {
+    "id": "L-PSEBYDE",
+    "form": "псэбыдэ",
+    "ipa": "/psabəda/",
+    "literalMeaning": "saglam can",
+    "derivation": {
+      "rootIds": [
+        "R-PSE"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-PSE",
+    "conceptId": "RESILIENT",
+    "dialectVariants": {
+      "adyghe": "псэбыдэ",
+      "kabardian": "псэбыдэ"
+    },
+    "notes": "псэ + быдэ (saglam) = dayanikli."
+  },
+  {
+    "id": "L-PSE1UV",
+    "form": "псэIув",
+    "ipa": "/psaʔuv/",
+    "literalMeaning": "kalin can",
+    "derivation": {
+      "rootIds": [
+        "R-PSE"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-PSE",
+    "conceptId": "PATIENT",
+    "dialectVariants": {
+      "adyghe": "псэIув",
+      "kabardian": "псэIув"
+    },
+    "notes": "псэ + Iув (kalin) = direncli."
+  },
+  {
+    "id": "L-PSENSHE",
+    "form": "псэншэ",
+    "ipa": "/psanʃa/",
+    "literalMeaning": "cani olmayan",
+    "derivation": {
+      "rootIds": [
+        "R-PSE"
+      ],
+      "morphemeIds": [],
+      "rule": "suffix"
+    },
+    "wordFamilyId": "WF-PSE",
+    "conceptId": "LIFELESS",
+    "dialectVariants": {
+      "adyghe": "псэншэ",
+      "kabardian": "псэншэ"
+    },
+    "notes": "псэ + -ншэ (yokluk) = cansiz."
+  },
+  {
+    "id": "L-PSELHYQHU",
+    "form": "псэлъыхъу",
+    "ipa": "/psaɬəχʷə/",
+    "literalMeaning": "can arayan",
+    "derivation": {
+      "rootIds": [
+        "R-PSE"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-PSE",
+    "conceptId": "SUITOR",
+    "dialectVariants": {
+      "adyghe": "псэлъыхъу",
+      "kabardian": "псэлъыхъу"
+    },
+    "notes": "псэ + лъыхъу (aramak) = can arayan."
+  },
+  {
+    "id": "L-PSEXU",
+    "form": "псэху",
+    "ipa": "/psaxʷə/",
+    "literalMeaning": "aydinlik can",
+    "derivation": {
+      "rootIds": [
+        "R-PSE"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-PSE",
+    "conceptId": "PEACEFUL",
+    "dialectVariants": {
+      "adyghe": "псэху",
+      "kabardian": "псэху"
+    },
+    "notes": "псэ + ху (ak) = huzurlu."
+  },
+  {
+    "id": "L-PSEEBLEZHYN",
+    "form": "псэеблэжын",
+    "ipa": "/psajeblaʒən/",
+    "literalMeaning": "canini esirgemeden vermek",
+    "derivation": {
+      "rootIds": [
+        "R-PSE"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-PSE",
+    "conceptId": "SACRIFICE",
+    "dialectVariants": {
+      "adyghe": "псэеблэжын",
+      "kabardian": "псэеблэжын"
+    },
+    "notes": "псэ + еблэжын = fedakarlik."
+  },
+  {
+    "id": "L-PSEK1UED",
+    "form": "псэкIуэд",
+    "ipa": "/psakʷʼad/",
+    "literalMeaning": "ruhun kaybolmasi",
+    "derivation": {
+      "rootIds": [
+        "R-PSE"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-PSE",
+    "conceptId": "COMPASSION",
+    "dialectVariants": {
+      "adyghe": "псэкIуэд",
+      "kabardian": "псэкIуэд"
+    },
+    "notes": "псэ + кIуэд (kaybolmak) = merhamet."
+  },
+  {
+    "id": "L-PSE1UX",
+    "form": "псэIух",
+    "ipa": "/psaʔux/",
+    "literalMeaning": "ruhun sokulmesi",
+    "derivation": {
+      "rootIds": [
+        "R-PSE"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-PSE",
+    "conceptId": "TERROR",
+    "dialectVariants": {
+      "adyghe": "псэIух",
+      "kabardian": "псэIух"
+    },
+    "notes": "псэ + Iух (sokmek) = dehset."
+  },
+  {
+    "id": "L-PSEGHASHTE",
+    "form": "псэгъащтэ",
+    "ipa": "/psaɣaɕta/",
+    "literalMeaning": "can korkusu",
+    "derivation": {
+      "rootIds": [
+        "R-PSE"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-PSE",
+    "conceptId": "TERRIFYING",
+    "dialectVariants": {
+      "adyghe": "псэгъащтэ",
+      "kabardian": "псэгъащтэ"
+    },
+    "notes": "псэ + гъащтэ = dehset verici."
   }
 ]
