@@ -6217,52 +6217,6 @@
     "notes": "Ӏуэху (is) + цӀыкӀу (kucuk) = kucuk is -> onemsiz is."
   },
   {
-    "id": "L-ADEC1YQ1U",
-    "form": "адэцӀыкӀу",
-    "ipa": "/aːdɐtsʼǝkʷʼǝ/",
-    "literalMeaning": "kucuk baba",
-    "derivation": {
-      "rootIds": [
-        "R-ADE",
-        "R-C1YQ1U"
-      ],
-      "morphemeIds": [
-        "M-C1YQ1U"
-      ],
-      "rule": "compound"
-    },
-    "wordFamilyId": "WF-C1YQ1U",
-    "conceptId": "UNCLE",
-    "dialectVariants": {
-      "adyghe": "адэцӀыкӀу",
-      "kabardian": "адэцӀыкӀу"
-    },
-    "notes": "адэ (baba) + цӀыкӀу (kucuk) = kucuk baba -> amca."
-  },
-  {
-    "id": "L-ANEC1YQ1U",
-    "form": "анэцӀыкӀу",
-    "ipa": "/aːnɐtsʼǝkʷʼǝ/",
-    "literalMeaning": "kucuk anne",
-    "derivation": {
-      "rootIds": [
-        "R-ANE",
-        "R-C1YQ1U"
-      ],
-      "morphemeIds": [
-        "M-C1YQ1U"
-      ],
-      "rule": "compound"
-    },
-    "wordFamilyId": "WF-C1YQ1U",
-    "conceptId": "AUNT",
-    "dialectVariants": {
-      "adyghe": "анэцӀыкӀу",
-      "kabardian": "анэцӀыкӀу"
-    },
-    "notes": "анэ (anne) + цӀыкӀу (kucuk) = kucuk anne -> teyze/hala."
-  },
-  {
     "id": "L-MAF1EC1YQ1U",
     "form": "мафӀэцӀыкӀу",
     "ipa": "/maːfʔatsʼǝkʷʼǝ/",
