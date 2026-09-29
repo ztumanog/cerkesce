@@ -128,3 +128,13 @@ Faz 5 kapsami resmilestirildi. Kilit acma onayi bekleniyor.
 
 **Referans:** docs/ADR-P5-001-FAZ5_CHARTER.md
 
+
+## ADR-0017: WordFamily → Concept Mapping
+- **Durum:** PROPOSED
+- **Tarih:** 2026-09-26
+- **Karar:** WordFamily → Concept eşleme kuralları ADR seviyesinde tanımlanmıştır. WordFamilyResolver bu kurallara göre çalışır, kendi başına ontolojik karar veremez.
+
+## ADR-0018: WordFamilyResolver Scope Boundary
+- **Durum:** PROPOSED
+- **Tarih:** 2026-09-26
+- **Karar:** WordFamilyResolver yalnızca Word → Concept çözümleme yapar. Concept → Concept semantic traversal ayrı resolver tarafından yürütülür.

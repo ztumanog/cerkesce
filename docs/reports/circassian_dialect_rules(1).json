@@ -1,0 +1,189 @@
+{
+  "metadata": {
+    "title": "Adyghe to Kabardian Phonological and Grammatical Correspondence Database",
+    "version": "1.0.0",
+    "description": "Systematic sound laws, grammatical prefixes, suffixes, and lexical mappings between West Circassian (Adyghe/Temirgoy) and East Circassian (Kabardian/Standard).",
+    "created_at": "2026-08-30"
+  },
+  "phonological_rules": [
+    {
+      "id": "PL001",
+      "name": "Lexical f to xu Shift",
+      "adyghe_symbol": "ф",
+      "kabardian_symbol": "ху",
+      "type": "lexical_root",
+      "description": "Voiceless labiodental fricative in Adyghe regularly shifts to labialized velar fricative in Kabardian roots."
+    },
+    {
+      "id": "PL002",
+      "name": "Sibilant šʷ to ś Shift",
+      "adyghe_symbol": "шъ",
+      "kabardian_symbol": "щ",
+      "type": "lexical_root",
+      "description": "Labialized alveolar sibilant in Adyghe shifts to palato-alveolar sibilant in Kabardian."
+    },
+    {
+      "id": "PL003",
+      "name": "Sibilant ẑ to ź Shift",
+      "adyghe_symbol": "жъ",
+      "kabardian_symbol": "жь",
+      "type": "lexical_root",
+      "description": "Voiced labialized alveolar sibilant in Adyghe shifts to voiced palato-alveolar sibilant in Kabardian."
+    },
+    {
+      "id": "PL004",
+      "name": "Ejective sibilant ŝ' to ś' Shift",
+      "adyghe_symbol": "шI",
+      "kabardian_symbol": "щI",
+      "type": "lexical_root",
+      "description": "Ejective alveolar sibilant in Adyghe shifts to ejective palato-alveolar sibilant in Kabardian."
+    },
+    {
+      "id": "PL005",
+      "name": "Ejective labialized ŝ'ʷ to f' Shift",
+      "adyghe_symbol": "шIу",
+      "kabardian_symbol": "фI",
+      "type": "lexical_root",
+      "description": "Complex labialized ejective sibilant in Adyghe shifts to ejective labiodental fricative in Kabardian."
+    }
+  ],
+  "grammatical_rules": {
+    "prefixes": [
+      {
+        "id": "PR001",
+        "name": "Evaluative/Estimative Prefix",
+        "adyghe_form": "фэ-",
+        "kabardian_form": "фIэ-",
+        "meaning": "to consider as / to deem so",
+        "example": {
+          "adyghe": "фэщхъуныгъэ (belief)",
+          "kabardian": "фIэщхъуныгъэ (belief)"
+        }
+      },
+      {
+        "id": "PR002",
+        "name": "2nd Person Plural Absolutive/Ergative",
+        "adyghe_form": "шъо- / шъуы-",
+        "kabardian_form": "фо- / фы-",
+        "meaning": "you (plural)",
+        "example": {
+          "adyghe": "шъо-кIуэ",
+          "kabardian": "фо-кIуэ"
+        }
+      },
+      {
+        "id": "PR003",
+        "name": "1st Person Plural Absolutive/Ergative",
+        "adyghe_form": "ты-",
+        "kabardian_form": "ды-",
+        "meaning": "we / us",
+        "example": {
+          "adyghe": "ты-кIуэ-щт",
+          "kabardian": "ды-кIуэ-нщ"
+        }
+      }
+    ],
+    "suffixes": [
+      {
+        "id": "SF001",
+        "name": "Future Tense",
+        "adyghe_form": "-щт / -щты",
+        "kabardian_form": "-н / -ну",
+        "meaning": "will / future dynamic action",
+        "example": {
+          "adyghe": "ты-кIуэ-щт",
+          "kabardian": "ды-кIуэ-нщ"
+        }
+      },
+      {
+        "id": "SF002",
+        "name": "Past Tense (Preterite/Perfective)",
+        "adyghe_form": "-гъэ / -гъ",
+        "kabardian_form": "-а",
+        "meaning": "past / completed action",
+        "example": {
+          "adyghe": "кIуа-гъ",
+          "kabardian": "кIуа-щ"
+        }
+      }
+    ],
+    "syntactic_rules": [
+      {
+        "id": "ST001",
+        "name": "Stative Copula Injection",
+        "description": "Stative predicates in Adyghe carry zero-copula, whereas Kabardian requires the assertive enclitic '-щ' (-ś) to license stative and nominal predicates.",
+        "example": {
+          "adyghe": "ар дахэ (She is beautiful)",
+          "kabardian": "ар дахэщ (She is beautiful)"
+        }
+      }
+    ]
+  },
+  "lexicon_mappings": [
+    {
+      "adyghe": "фабэ",
+      "kabardian": "хуабэ",
+      "meaning": "sıcak (hot)"
+    },
+    {
+      "adyghe": "мафэ",
+      "kabardian": "махуэ",
+      "meaning": "gün (day)"
+    },
+    {
+      "adyghe": "фыжьы",
+      "kabardian": "хуыжь",
+      "meaning": "beyaz (white)"
+    },
+    {
+      "adyghe": "шъхьэ",
+      "kabardian": "щхьэ",
+      "meaning": "kafa/baş (head)"
+    },
+    {
+      "adyghe": "жъы",
+      "kabardian": "жьы",
+      "meaning": "eski/yaşlı (old)"
+    },
+    {
+      "adyghe": "шIэн",
+      "kabardian": "щIэн",
+      "meaning": "bilmek (to know)"
+    },
+    {
+      "adyghe": "шIын",
+      "kabardian": "щIын",
+      "meaning": "yapmak (to do)"
+    },
+    {
+      "adyghe": "машIуэ",
+      "kabardian": "мафIэ",
+      "meaning": "ateş (fire)"
+    },
+    {
+      "adyghe": "тэ",
+      "kabardian": "дэ",
+      "meaning": "biz (we)"
+    },
+    {
+      "adyghe": "о",
+      "kabardian": "уэ",
+      "meaning": "sen (you)"
+    },
+    {
+      "adyghe": "шъо",
+      "kabardian": "фэ",
+      "meaning": "siz (you pl.)"
+    },
+    {
+      "adyghe": "дахэ",
+      "kabardian": "дахэщ",
+      "meaning": "güzeldir (is beautiful)"
+    },
+    {
+      "adyghe": "унэ",
+      "kabardian": "унэщ",
+      "meaning": "evdir (is house)"
+    }
+  ]
+}
