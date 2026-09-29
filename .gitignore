@@ -65,3 +65,29 @@ next-env.d.ts
 
 *.bak
 *.bak.*
+
+data/*.csv
+public/data/*.csv
+corpus_results.json
+*.csv
+# Buyuk veri dosyalari
+data/*.csv
+public/data/*.csv
+public/data/*.txt
+corpus_results.json
+*.csv
+
+# Backup klasorleri
+*_backup_*
+public/data_backup_*
+
+# Debug dosyalari
+debug_*.py
+test-normalize.js
+
+# Arsiv
+_arsiv/
+
+# .bak dosyalari
+*.bak
+*.bak.*
