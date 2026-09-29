@@ -148,9 +148,9 @@ export function SearchBox({
             Bunu mu demek istediniz?
           </p>
           <div className="flex flex-wrap gap-2">
-            {suggestions.map((s) => (
+            {suggestions.map((s, index) => (
               <button
-                key={s.word}
+                key={`${s.word}-${index}`}
                 type="button"
                 onClick={() => handleSuggestionClick(s.word)}
                 className="px-3 py-1.5 bg-white dark:bg-slate-800 hover:bg-amber-100 dark:hover:bg-amber-900 border border-amber-300 dark:border-amber-700 rounded-lg text-sm text-slate-800 dark:text-slate-200 transition-colors"

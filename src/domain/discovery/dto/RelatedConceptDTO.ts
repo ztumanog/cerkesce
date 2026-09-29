@@ -2,6 +2,7 @@ import { DiscoveryRelationType } from '../types/DiscoveryRelationType';
 
 export interface RelatedConceptDTO {
   conceptId: string;
+  displayName?: string;
   relationType: DiscoveryRelationType;
   depth: number;
   parentConceptId?: string;

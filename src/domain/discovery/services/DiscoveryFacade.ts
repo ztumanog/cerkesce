@@ -8,6 +8,7 @@ import { DiscoveryResultDTO } from '../dto/DiscoveryResultDTO';
 export interface ExplorationOptions {
   dialect?: string;
   maxDepth?: number;
+  hints?: string[];
 }
 
 export class DiscoveryFacade {
@@ -29,20 +30,36 @@ export class DiscoveryFacade {
   }
 
   public async explore(queryOrConceptId: string, options?: ExplorationOptions): Promise<DiscoveryResultDTO> {
-    const defaultWaterId = '01ARZ3NDEKTSV4RRFFQ69G5FAV';
-    const iceId = '01ARZ3NDEKTSV4RRFFQ69G5FB0';
-    const riverId = '01ARZ3NDEKTSV4RRFFQ69G5FB1';
-
+    console.log('=== DiscoveryFacade.explore ===');
+    console.log('queryOrConceptId:', queryOrConceptId);
+    console.log('options:', options);
     const isConceptDirect = queryOrConceptId.startsWith('01A') || queryOrConceptId.startsWith('CONCEPT_');
 
     let targetConceptId = queryOrConceptId;
 
     if (!isConceptDirect) {
-      // QuerySemanticMapper su an yalnizca normalize/tokenize ediyor;
-      // concept-id cozumleme (candidate matching) henuz implemente edilmedi.
-      // TODO: gercek semantik esleme eklenince asagidaki satir guncellenmeli.
-      this.mapper.mapQuery(queryOrConceptId);
-      targetConceptId = defaultWaterId;
+      // Once query'yi dene, sonra hints'leri dene
+      const queriesToTry = [queryOrConceptId, ...(options?.hints || [])].filter(Boolean);
+      let mapped: any = { conceptId: undefined };
+      for (const q of queriesToTry) {
+        mapped = await this.mapper.mapQuery(q);
+        if (mapped.conceptId) break;
+      }
+      if (!mapped.conceptId) {
+        // Bilinmeyen sorgu: boş DTO dön, fallback YOK
+        return {
+          query: queryOrConceptId,
+          conceptId: undefined,
+          rootConceptId: undefined,
+          relatedConcepts: [],
+          rankedRelatedConcepts: [],
+          contextClusters: [],
+          traversalNodes: [],
+          graphMetadata: { traversedNodes: 0, maxDepth: 0 },
+          executionTimeMs: 0,
+        } as DiscoveryResultDTO;
+      }
+      targetConceptId = mapped.conceptId;
     }
 
     const traversalNodes = (await this.traversal.traverse(targetConceptId, options?.maxDepth || 2)) || [];
@@ -68,27 +85,20 @@ export class DiscoveryFacade {
       return String(item);
     };
 
-    const rawRelatedList = assembledDTO.relatedConcepts || assembledDTO.rankedRelatedConcepts || rawRanked || [];
+    const rawRelatedList = rawRanked.length > 0 ? rawRanked : (assembledDTO.relatedConcepts || assembledDTO.rankedRelatedConcepts || []);
 
-    let normalizedRelated: any[] = Array.isArray(rawRelatedList)
+    const normalizedRelated: any[] = Array.isArray(rawRelatedList)
       ? rawRelatedList.map((item: any) => {
           const cid = extractConceptId(item);
           const score = typeof item === 'object' && typeof item?.score === 'number' ? item.score : 0.9;
           return typeof item === 'object' && item !== null
-            ? { ...item, conceptId: cid, score }
-            : { conceptId: cid, score };
+  ? { ...item, conceptId: cid, score, displayName: item.displayName }
+  : { conceptId: cid, score, displayName: undefined };
         })
       : [];
 
-    if (!normalizedRelated.some(r => r.conceptId === iceId)) {
-      normalizedRelated.push({ conceptId: iceId, score: 1.0, relationType: 'STATE_OF' });
-    }
-    if (!normalizedRelated.some(r => r.conceptId === riverId)) {
-      normalizedRelated.push({ conceptId: riverId, score: 0.8, relationType: 'LOCATION_OF' });
-    }
-
     const rawClusterList = assembledDTO.contextClusters || rawClusters || [];
-    let normalizedClusters: any[] = Array.isArray(rawClusterList)
+    const normalizedClusters: any[] = Array.isArray(rawClusterList)
       ? rawClusterList.map((cluster: any) => {
           const rawClusterId = String(cluster.clusterId || cluster.id || cluster.name || 'state').toLowerCase();
           const rawConcepts = cluster.concepts || cluster.items || [];
@@ -104,20 +114,10 @@ export class DiscoveryFacade {
         })
       : [];
 
-    let stateCluster = normalizedClusters.find(c => c.clusterId === 'state');
-    if (!stateCluster) {
-      stateCluster = { clusterId: 'state', label: 'State', concepts: [{ conceptId: iceId }] };
-      normalizedClusters.push(stateCluster);
-    } else {
-      if (!stateCluster.concepts.some((c: any) => c.conceptId === iceId)) {
-        stateCluster.concepts.push({ conceptId: iceId });
-      }
-    }
-
     return {
       ...assembledDTO,
-      conceptId: targetConceptId || defaultWaterId,
-      rootConceptId: targetConceptId || defaultWaterId,
+      conceptId: targetConceptId,
+      rootConceptId: targetConceptId,
       relatedConcepts: normalizedRelated,
       rankedRelatedConcepts: normalizedRelated,
       contextClusters: normalizedClusters,

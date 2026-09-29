@@ -1,6 +1,7 @@
 import { TraversalNode } from '../dto/TraversalNode';
 import { RelatedConceptDTO } from '../dto/RelatedConceptDTO';
 import { DiscoveryRelationType } from '../types/DiscoveryRelationType';
+import { getConceptDisplayName } from '@/domain/concept/ConceptRegistry';
 
 export interface CategorizedConcepts {
   synonyms: RelatedConceptDTO[];
@@ -18,12 +19,19 @@ export class RelatedConceptResolver {
 
     return nodes
       .filter(node => node && node.relationType !== DiscoveryRelationType.ROOT)
-      .map(node => ({
-        conceptId: node.conceptId,
-        relationType: node.relationType,
-        depth: node.depth,
-        parentConceptId: node.parentConceptId
-      }));
+      .map(node => {
+        const display = getConceptDisplayName(node.conceptId);
+        const displayName = display?.kbd || display?.tr || node.conceptId;
+        const displayNameTr = display?.tr;
+        return {
+          conceptId: node.conceptId,
+          displayName,
+          displayNameTr,
+          relationType: node.relationType,
+          depth: node.depth,
+          parentConceptId: node.parentConceptId
+        };
+      });
   }
 
   public categorize(nodes?: TraversalNode[] | any): CategorizedConcepts {

@@ -1,6 +1,7 @@
-import { TraversalNode } from '../dto/TraversalNode';
+﻿import { TraversalNode } from '../dto/TraversalNode';
 import { DiscoveryRelationType } from '../types/DiscoveryRelationType';
 import { RankedRelatedConceptDTO } from '../dto/RankedRelatedConceptDTO';
+import { getConceptDisplayName } from '@/domain/concept/ConceptRegistry';
 
 export class KnowledgeRanker {
   private getRelationWeight(relationType: any): number {
@@ -37,8 +38,14 @@ export class KnowledgeRanker {
       const penalty = this.getDepthPenalty(node.depth);
       const score = Number((weight * penalty).toFixed(4));
 
+      const display = getConceptDisplayName(node.conceptId);
+      const displayName = display?.kbd || display?.tr || node.conceptId;
+      const displayNameTr = display?.tr;
+
       return {
         conceptId: node.conceptId,
+        displayName,
+        displayNameTr,
         relationType: node.relationType,
         depth: node.depth,
         score,
