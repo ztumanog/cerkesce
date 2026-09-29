@@ -3888,5 +3888,165 @@
       "kabardian": "дзэгъуэ"
     },
     "notes": "дзэ (ordu) + гъуэ (zaman) = savas zamani."
+  },
+  {
+    "id": "L-UESEPS",
+    "form": "уэсэпс",
+    "ipa": "/wasaps/",
+    "literalMeaning": "kar suyu",
+    "derivation": {
+      "rootIds": [
+        "R-UES",
+        "R-PSY"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-PSY",
+    "conceptId": "DEW",
+    "dialectVariants": {
+      "adyghe": "уэсэпс",
+      "kabardian": "уэсэпс"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 1,
+      "sources": [
+        "Sentez Raporu (2026)"
+      ],
+      "meanings": {
+        "tr": "cig, kiragi",
+        "en": "dew, frost",
+        "ru": "роса, иней"
+      }
+    },
+    "notes": "уэс (kar) + пс (su) = cig."
+  },
+  {
+    "id": "L-PSYK1UY",
+    "form": "псыкъуий",
+    "ipa": "/psəqʷij/",
+    "literalMeaning": "su kuyusu",
+    "derivation": {
+      "rootIds": [
+        "R-PSY",
+        "R-K1UY"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-PSY",
+    "conceptId": "WELL",
+    "dialectVariants": {
+      "adyghe": "псыкъуий",
+      "kabardian": "псыкъуий"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 1,
+      "sources": [
+        "Wiktionary (2023)"
+      ],
+      "meanings": {
+        "tr": "kuyu",
+        "en": "well",
+        "ru": "колодец"
+      }
+    },
+    "notes": "псы (su) + къуий (kuyu) = kuyu. Es anlamli: псынэ."
+  },
+  {
+    "id": "L-PSYBABYSHCH",
+    "form": "псыбабыщ",
+    "ipa": "/psəbabəɕ/",
+    "literalMeaning": "su ordegi",
+    "derivation": {
+      "rootIds": [
+        "R-PSY",
+        "R-BABYSHCH"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-PSY",
+    "conceptId": "DUCK",
+    "dialectVariants": {
+      "adyghe": "псыбабыщ",
+      "kabardian": "псыбабыщ"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 1,
+      "sources": [
+        "Wiktionary (2023)"
+      ],
+      "meanings": {
+        "tr": "ordek",
+        "en": "duck",
+        "ru": "утка"
+      }
+    },
+    "notes": "псы (su) + бабыщ (ordek) = ordek."
+  },
+  {
+    "id": "L-PSYBZU",
+    "form": "псыбзу",
+    "ipa": "/psəbzu/",
+    "literalMeaning": "su kusu",
+    "derivation": {
+      "rootIds": [
+        "R-PSY",
+        "R-BZU"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-PSY",
+    "conceptId": "DIPPER",
+    "dialectVariants": {
+      "adyghe": "псыбзу",
+      "kabardian": "псыбзу"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 1,
+      "sources": [
+        "Wiktionary (2023)"
+      ],
+      "meanings": {
+        "tr": "su kusu (dipper)",
+        "en": "dipper",
+        "ru": "оляпка"
+      }
+    },
+    "notes": "псы (su) + бзу (kus) = su kusu."
+  },
+  {
+    "id": "L-PSYDZHED",
+    "form": "псыджэд",
+    "ipa": "/psədʒad/",
+    "literalMeaning": "su tavugu",
+    "derivation": {
+      "rootIds": [
+        "R-PSY",
+        "R-DZHED"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-PSY",
+    "conceptId": "COOT",
+    "dialectVariants": {
+      "adyghe": "псыджэд",
+      "kabardian": "псыджэд"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 1,
+      "sources": [
+        "Wiktionary (2023)"
+      ],
+      "meanings": {
+        "tr": "su tavugu (coot)",
+        "en": "Eurasian coot",
+        "ru": "лысуха"
+      }
+    },
+    "notes": "псы (su) + джэд (tavuk) = su tavugu."
   }
 ]

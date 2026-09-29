@@ -1410,5 +1410,123 @@
       "compoundCount": 2
     },
     "notes": "Ordu koku. Adigece ve Kabardeyce ayni."
+  },
+  {
+    "id": "R-UES",
+    "form": "уэс",
+    "ipa": "/was/",
+    "primaryMeaning": "kar",
+    "secondaryMeanings": [
+      "kar tanesi",
+      "kis"
+    ],
+    "semanticDomains": [
+      "doga",
+      "hava"
+    ],
+    "dialectVariants": {
+      "adyghe": "уэс",
+      "kabardian": "уэс"
+    },
+    "productivity": {
+      "lemmaCount": 2,
+      "corpusFrequency": 0,
+      "compoundCount": 1
+    },
+    "notes": "Kar koku. уэсэпс (cig) bilesiginde kullanilir."
+  },
+  {
+    "id": "R-K1UY",
+    "form": "къуий",
+    "ipa": "/qʷij/",
+    "primaryMeaning": "kuyu",
+    "secondaryMeanings": [
+      "kuyu cubugu",
+      "derin cukur"
+    ],
+    "semanticDomains": [
+      "doga",
+      "yapi"
+    ],
+    "dialectVariants": {
+      "adyghe": "къуий",
+      "kabardian": "къуий"
+    },
+    "productivity": {
+      "lemmaCount": 2,
+      "corpusFrequency": 0,
+      "compoundCount": 1
+    },
+    "notes": "Kuyu koku. псыкъуий (kuyu) bilesiginde kullanilir."
+  },
+  {
+    "id": "R-BABYSHCH",
+    "form": "бабыщ",
+    "ipa": "/babəɕ/",
+    "primaryMeaning": "ordek",
+    "secondaryMeanings": [
+      "yaban ordegi"
+    ],
+    "semanticDomains": [
+      "hayvan",
+      "kus"
+    ],
+    "dialectVariants": {
+      "adyghe": "бабыщ",
+      "kabardian": "бабыщ"
+    },
+    "productivity": {
+      "lemmaCount": 2,
+      "corpusFrequency": 0,
+      "compoundCount": 1
+    },
+    "notes": "Ordek koku. псыбабыщ (ordek) bilesiginde kullanilir."
+  },
+  {
+    "id": "R-BZU",
+    "form": "бзу",
+    "ipa": "/bzu/",
+    "primaryMeaning": "kus",
+    "secondaryMeanings": [
+      "serce",
+      "kucuk kus"
+    ],
+    "semanticDomains": [
+      "hayvan",
+      "kus"
+    ],
+    "dialectVariants": {
+      "adyghe": "бзу",
+      "kabardian": "бзу"
+    },
+    "productivity": {
+      "lemmaCount": 2,
+      "corpusFrequency": 0,
+      "compoundCount": 1
+    },
+    "notes": "Kus koku. псыбзу (su kusu) bilesiginde kullanilir."
+  },
+  {
+    "id": "R-DZHED",
+    "form": "джэд",
+    "ipa": "/dʒad/",
+    "primaryMeaning": "tavuk",
+    "secondaryMeanings": [
+      "kumes hayvani"
+    ],
+    "semanticDomains": [
+      "hayvan",
+      "kus"
+    ],
+    "dialectVariants": {
+      "adyghe": "джэд",
+      "kabardian": "джэд"
+    },
+    "productivity": {
+      "lemmaCount": 2,
+      "corpusFrequency": 0,
+      "compoundCount": 1
+    },
+    "notes": "Tavuk koku. псыджэд (su tavugu) bilesiginde kullanilir."
   }
 ]
