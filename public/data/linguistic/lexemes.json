@@ -3536,5 +3536,130 @@
       "kabardian": "псэгъащтэ"
     },
     "notes": "псэ + гъащтэ = dehset verici."
+  },
+  {
+    "id": "L-NEF",
+    "form": "нэф",
+    "ipa": "/naf/",
+    "literalMeaning": "gozu yok",
+    "derivation": {
+      "rootIds": [
+        "R-NE"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-NE",
+    "conceptId": "BLIND",
+    "dialectVariants": {
+      "adyghe": "нэф",
+      "kabardian": "нэф"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 1,
+      "sources": [
+        "Sentez Raporu (2026)"
+      ],
+      "meanings": {
+        "tr": "kor",
+        "en": "blind",
+        "ru": "слепой"
+      }
+    },
+    "notes": "нэ (goz) + ф (yok) = kor."
+  },
+  {
+    "id": "L-NEPC1Y",
+    "form": "нэпцӀ",
+    "ipa": "/napt͡sʼ/",
+    "literalMeaning": "goz yalani",
+    "derivation": {
+      "rootIds": [
+        "R-NE",
+        "R-P1C1"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-NE",
+    "conceptId": "LIE",
+    "dialectVariants": {
+      "adyghe": "нэпцӀ",
+      "kabardian": "нэпцӀ"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 1,
+      "sources": [
+        "Sentez Raporu (2026)"
+      ],
+      "meanings": {
+        "tr": "yalan",
+        "en": "lie",
+        "ru": "ложь"
+      }
+    },
+    "notes": "нэ (goz) + пцӀы (yalan) = yalan. Alternatif: напIцI."
+  },
+  {
+    "id": "L-NEF1",
+    "form": "нэфӀ",
+    "ipa": "/nafʔ/",
+    "literalMeaning": "goze iyi gelen",
+    "derivation": {
+      "rootIds": [
+        "R-NE"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-NE",
+    "conceptId": "KINDNESS",
+    "dialectVariants": {
+      "adyghe": "нэфӀ",
+      "kabardian": "нэфӀ"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 1,
+      "sources": [
+        "Sentez Raporu (2026)"
+      ],
+      "meanings": {
+        "tr": "iyilik, sevimlilik",
+        "en": "kindness, goodness",
+        "ru": "доброта"
+      }
+    },
+    "notes": "нэ (goz) + фӀ (iyi) = goze hos gelen, iyilik."
+  },
+  {
+    "id": "L-NABDZE",
+    "form": "набдзэ",
+    "ipa": "/nabd͡za/",
+    "literalMeaning": "goz kenari",
+    "derivation": {
+      "rootIds": [
+        "R-NE"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-NE",
+    "conceptId": "EYEBROW",
+    "dialectVariants": {
+      "adyghe": "набдзэ",
+      "kabardian": "набдзэ"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 1,
+      "sources": [
+        "Sentez Raporu (2026)"
+      ],
+      "meanings": {
+        "tr": "kas",
+        "en": "eyebrow",
+        "ru": "бровь"
+      }
+    },
+    "notes": "нэ (goz) + бдзэ = kas."
   }
 ]
