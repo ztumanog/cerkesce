@@ -1,8 +1,13 @@
-﻿[
+[
   {
     "id": "WF-GU",
     "rootId": "R-GU",
-    "morphemeIds": ["M-F1E", "M-GHE", "M-BZHYGE", "M-F1EN"],
+    "morphemeIds": [
+      "M-F1E",
+      "M-GHE",
+      "M-BZHYGE",
+      "M-F1EN"
+    ],
     "lexemeIds": [
       "L-GUF1E",
       "L-GUGHE",
@@ -25,8 +30,13 @@
   {
     "id": "WF-SHHYE",
     "rootId": "R-SHHYE",
-    "morphemeIds": ["M-GU"],
-    "lexemeIds": ["L-SHHYEGU", "L-SHHYEUSYGHE"],
+    "morphemeIds": [
+      "M-GU"
+    ],
+    "lexemeIds": [
+      "L-SHHYEGU",
+      "L-SHHYEUSYGHE"
+    ],
     "productivity": {
       "totalLexemes": 30,
       "corpusFrequency": 15000
@@ -36,8 +46,15 @@
   {
     "id": "WF-NE",
     "rootId": "R-NE",
-    "morphemeIds": ["M-PSE", "M-GU"],
-    "lexemeIds": ["L-NAPS", "L-NEGU", "L-NAF"],
+    "morphemeIds": [
+      "M-PSE",
+      "M-GU"
+    ],
+    "lexemeIds": [
+      "L-NAPS",
+      "L-NEGU",
+      "L-NAF"
+    ],
     "productivity": {
       "totalLexemes": 25,
       "corpusFrequency": 10000
@@ -47,12 +64,31 @@
   {
     "id": "WF-PSY",
     "rootId": "R-PSY",
-    "morphemeIds": ["M-NE"],
-    "lexemeIds": ["L-NAPS"],
+    "morphemeIds": [
+      "M-NE"
+    ],
+    "lexemeIds": [
+      "L-NAPS"
+    ],
     "productivity": {
       "totalLexemes": 20,
       "corpusFrequency": 8000
     },
     "notes": "Doga koku. напс = нэ + псэ (goz + su) bilesimi."
+  },
+  {
+    "id": "WF-PSE",
+    "rootId": "R-PSE",
+    "morphemeIds": [
+      "M-GHU"
+    ],
+    "lexemeIds": [
+      "L-PSEGHU"
+    ],
+    "productivity": {
+      "totalLexemes": 13,
+      "corpusFrequency": 0
+    },
+    "notes": "Ruh/can ailesi. псэгъу (hayat arkadasi) dahil. R-PSY ailesinden AYRI."
   }
 ]

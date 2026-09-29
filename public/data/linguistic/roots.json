@@ -898,15 +898,22 @@
     ],
     "etymology": "[тхьэкӀум] + -э",
     "notes": "Kulak. 13 sözlük + 10 türev. тхьэкӀумэкӀыхь (tavşan) bileşiğinin temeli."
-  }
-  ,
+  },
   {
     "id": "R-K1YH",
     "form": "кӀыхь",
     "ipa": "/kʹʂǝħ/",
     "primaryMeaning": "uzun",
-    "secondaryMeanings": ["uzak", "yüksek, boylu", "uzun (zaman)"],
-    "semanticDomains": ["quality", "dimension", "time"],
+    "secondaryMeanings": [
+      "uzak",
+      "yüksek, boylu",
+      "uzun (zaman)"
+    ],
+    "semanticDomains": [
+      "quality",
+      "dimension",
+      "time"
+    ],
     "dialectVariants": {
       "adyghe": "кӀыхь",
       "kabardian": "кӀыхь"
@@ -916,25 +923,52 @@
       "dictionarySources": 2
     },
     "derivedWords": [
-      { "form": "кӀыхьлӀыхь", "meaning": "uzun uzadıya" },
-      { "form": "кӀыхьагъ", "meaning": "uzunluk" },
-      { "form": "тхьэкӀумэкӀыхь", "meaning": "tavşan (uzun kulaklı)" },
-      { "form": "тэмакъкӀыхь", "meaning": "sabırlı" },
-      { "form": "хуэкӀыхь", "meaning": "uzunlamasına" },
-      { "form": "гъэкӀыхьын", "meaning": "uzatmak" },
-      { "form": "мыкӀыхь-мыкӀэщӀ", "meaning": "ne uzun ne kısa" }
+      {
+        "form": "кӀыхьлӀыхь",
+        "meaning": "uzun uzadıya"
+      },
+      {
+        "form": "кӀыхьагъ",
+        "meaning": "uzunluk"
+      },
+      {
+        "form": "тхьэкӀумэкӀыхь",
+        "meaning": "tavşan (uzun kulaklı)"
+      },
+      {
+        "form": "тэмакъкӀыхь",
+        "meaning": "sabırlı"
+      },
+      {
+        "form": "хуэкӀыхь",
+        "meaning": "uzunlamasına"
+      },
+      {
+        "form": "гъэкӀыхьын",
+        "meaning": "uzatmak"
+      },
+      {
+        "form": "мыкӀыхь-мыкӀэщӀ",
+        "meaning": "ne uzun ne kısa"
+      }
     ],
     "etymology": "[кӀыхь]",
     "notes": "Uzun. Yamisha (2018) + Wiktionary. 25 türev. тхьэкӀумэкӀыхь (tavşan) bileşiğinin ikinci parçası."
-  }
-  ,
+  },
   {
     "id": "R-DYGHU",
     "form": "дыгъу",
     "ipa": "/dǝʁʷ/",
     "primaryMeaning": "hırsız",
-    "secondaryMeanings": ["hırsızlık", "çalmak (fiil)"],
-    "semanticDomains": ["social_role", "action", "crime"],
+    "secondaryMeanings": [
+      "hırsızlık",
+      "çalmak (fiil)"
+    ],
+    "semanticDomains": [
+      "social_role",
+      "action",
+      "crime"
+    ],
     "dialectVariants": {
       "adyghe": "дыгъу",
       "kabardian": "дыгъу"
@@ -944,25 +978,53 @@
       "dictionarySources": 4
     },
     "derivedWords": [
-      { "form": "дыгъужь", "meaning": "kurt (hırsız + eski)" },
-      { "form": "дыгъун", "meaning": "çalmak" },
-      { "form": "дыгъуакӀуэ", "meaning": "hırsız" },
-      { "form": "шыдыгъу", "meaning": "at hırsızı" },
-      { "form": "дыгъумэ", "meaning": "nane" },
-      { "form": "дыгъурыгъуу", "meaning": "baykuş" },
-      { "form": "дыгъуасэ", "meaning": "dün" }
+      {
+        "form": "дыгъужь",
+        "meaning": "kurt (hırsız + eski)"
+      },
+      {
+        "form": "дыгъун",
+        "meaning": "çalmak"
+      },
+      {
+        "form": "дыгъуакӀуэ",
+        "meaning": "hırsız"
+      },
+      {
+        "form": "шыдыгъу",
+        "meaning": "at hırsızı"
+      },
+      {
+        "form": "дыгъумэ",
+        "meaning": "nane"
+      },
+      {
+        "form": "дыгъурыгъуу",
+        "meaning": "baykuş"
+      },
+      {
+        "form": "дыгъуасэ",
+        "meaning": "dün"
+      }
     ],
     "etymology": "[дыгъу]",
     "notes": "Hırsız + çalmak. 4 sözlük + Wiktionary. 20+ türev. дыгъужь (kurt) bileşiğinin ilk parçası."
-  }
-  ,
+  },
   {
     "id": "R-ZHY",
     "form": "жьы",
     "ipa": "/ʑǝ/",
     "primaryMeaning": "eski, yaşlı",
-    "secondaryMeanings": ["rüzgar", "hava", "erken (zarf)"],
-    "semanticDomains": ["quality", "time", "nature"],
+    "secondaryMeanings": [
+      "rüzgar",
+      "hava",
+      "erken (zarf)"
+    ],
+    "semanticDomains": [
+      "quality",
+      "time",
+      "nature"
+    ],
     "dialectVariants": {
       "adyghe": "жьы",
       "kabardian": "жьы"
@@ -972,26 +1034,56 @@
       "dictionarySources": 18
     },
     "derivedWords": [
-      { "form": "дыгъужь", "meaning": "kurt (hırsız + eski)" },
-      { "form": "лӀыжь", "meaning": "yaşlı adam" },
-      { "form": "фызыжь", "meaning": "yaşlı kadın" },
-      { "form": "унэжь", "meaning": "eski ev" },
-      { "form": "жьыбгъэ", "meaning": "rüzgar" },
-      { "form": "жьыкъат", "meaning": "çok yaşlı" },
-      { "form": "жьыгъэ", "meaning": "eskilik" },
-      { "form": "мыжь", "meaning": "genç (eski değil)" }
+      {
+        "form": "дыгъужь",
+        "meaning": "kurt (hırsız + eski)"
+      },
+      {
+        "form": "лӀыжь",
+        "meaning": "yaşlı adam"
+      },
+      {
+        "form": "фызыжь",
+        "meaning": "yaşlı kadın"
+      },
+      {
+        "form": "унэжь",
+        "meaning": "eski ev"
+      },
+      {
+        "form": "жьыбгъэ",
+        "meaning": "rüzgar"
+      },
+      {
+        "form": "жьыкъат",
+        "meaning": "çok yaşlı"
+      },
+      {
+        "form": "жьыгъэ",
+        "meaning": "eskilik"
+      },
+      {
+        "form": "мыжь",
+        "meaning": "genç (eski değil)"
+      }
     ],
     "etymology": "[жь] + -ы",
     "notes": "Eski + yaşlı + rüzgar + hava + erken. 18 sözlük + Wiktionary. 25+ türev. дыгъужь (kurt) bileşiğinin ikinci parçası."
-  }
-  ,
+  },
   {
     "id": "R-VY",
     "form": "вы",
     "ipa": "/vǝ/",
     "primaryMeaning": "öküz",
-    "secondaryMeanings": ["sürmek (tarla)", "sür! (emir)"],
-    "semanticDomains": ["animal", "agriculture", "action"],
+    "secondaryMeanings": [
+      "sürmek (tarla)",
+      "sür! (emir)"
+    ],
+    "semanticDomains": [
+      "animal",
+      "agriculture",
+      "action"
+    ],
     "dialectVariants": {
       "adyghe": "вы",
       "kabardian": "вы"
@@ -1001,22 +1093,39 @@
       "dictionarySources": 9
     },
     "derivedWords": [
-      { "form": "выгу", "meaning": "öküz arabası" },
-      { "form": "выбжьэ", "meaning": "öküz boyunduruğu" },
-      { "form": "выгъашхэ", "meaning": "öküz yemi" },
-      { "form": "вы закъуэгу", "meaning": "tek öküz arabası" }
+      {
+        "form": "выгу",
+        "meaning": "öküz arabası"
+      },
+      {
+        "form": "выбжьэ",
+        "meaning": "öküz boyunduruğu"
+      },
+      {
+        "form": "выгъашхэ",
+        "meaning": "öküz yemi"
+      },
+      {
+        "form": "вы закъуэгу",
+        "meaning": "tek öküz arabası"
+      }
     ],
     "etymology": "[в] + -ы",
     "notes": "Öküz + sürmek (fiil). 9 sözlük + Wiktionary. Polisemik."
-  }
-  ,
+  },
   {
     "id": "R-KHY",
     "form": "хы",
     "ipa": "/xǝ/",
     "primaryMeaning": "deniz, okyanus",
-    "secondaryMeanings": ["deniz kıyısı", "tuzlu su"],
-    "semanticDomains": ["nature", "geography"],
+    "secondaryMeanings": [
+      "deniz kıyısı",
+      "tuzlu su"
+    ],
+    "semanticDomains": [
+      "nature",
+      "geography"
+    ],
     "dialectVariants": {
       "adyghe": "хы",
       "kabardian": "хы"
@@ -1026,11 +1135,26 @@
       "dictionarySources": 12
     },
     "derivedWords": [
-      { "form": "хыкъа", "meaning": "yunus (deniz domuzu)" },
-      { "form": "хыхьэн", "meaning": "denize girmek" },
-      { "form": "хы Ӏуфэ", "meaning": "deniz kıyısı" },
-      { "form": "хы кхъухь", "meaning": "gemi" },
-      { "form": "толъкъун", "meaning": "dalga" }
+      {
+        "form": "хыкъа",
+        "meaning": "yunus (deniz domuzu)"
+      },
+      {
+        "form": "хыхьэн",
+        "meaning": "denize girmek"
+      },
+      {
+        "form": "хы Ӏуфэ",
+        "meaning": "deniz kıyısı"
+      },
+      {
+        "form": "хы кхъухь",
+        "meaning": "gemi"
+      },
+      {
+        "form": "толъкъун",
+        "meaning": "dalga"
+      }
     ],
     "etymology": "[х] + -ы",
     "notes": "Deniz, okyanus. 12 sözlük + Wiktionary. хыкъа (yunus) bileşiğinin ilk parçası."
@@ -1040,8 +1164,14 @@
     "form": "хы",
     "ipa": "/xǝ/",
     "primaryMeaning": "altı (6)",
-    "secondaryMeanings": ["altılı", "altı kat"],
-    "semanticDomains": ["quantity", "number"],
+    "secondaryMeanings": [
+      "altılı",
+      "altı kat"
+    ],
+    "semanticDomains": [
+      "quantity",
+      "number"
+    ],
     "dialectVariants": {
       "adyghe": "хы",
       "kabardian": "хы"
@@ -1051,21 +1181,34 @@
       "dictionarySources": 10
     },
     "derivedWords": [
-      { "form": "хуэдих", "meaning": "altı kat" },
-      { "form": "ханэ", "meaning": "altıda bir (1/6)" },
-      { "form": "зыхыбл", "meaning": "altı-yedi" }
+      {
+        "form": "хуэдих",
+        "meaning": "altı kat"
+      },
+      {
+        "form": "ханэ",
+        "meaning": "altıda bir (1/6)"
+      },
+      {
+        "form": "зыхыбл",
+        "meaning": "altı-yedi"
+      }
     ],
     "etymology": "[х] + -ы",
     "notes": "Altı (6). 10 sözlük + Wiktionary. Homonym: хы (deniz) ile aynı yazılış."
-  }
-  ,
+  },
   {
     "id": "R-KKHUHE",
     "form": "кхъуэ",
     "ipa": "/qʷa/",
     "primaryMeaning": "domuz",
-    "secondaryMeanings": ["yaban domuzu"],
-    "semanticDomains": ["animal", "agriculture"],
+    "secondaryMeanings": [
+      "yaban domuzu"
+    ],
+    "semanticDomains": [
+      "animal",
+      "agriculture"
+    ],
     "dialectVariants": {
       "adyghe": "къо",
       "kabardian": "кхъуэ"
@@ -1075,23 +1218,44 @@
       "dictionarySources": 5
     },
     "derivedWords": [
-      { "form": "хыкхъуэ", "meaning": "hint domuzu / yunus" },
-      { "form": "кхъуэбз", "meaning": "dişi domuz" },
-      { "form": "кхъуэхъу", "meaning": "erkek domuz" },
-      { "form": "кхъуэшыр", "meaning": "domuz yavrusu" },
-      { "form": "кхъуэщ", "meaning": "domuz ahırı" }
+      {
+        "form": "хыкхъуэ",
+        "meaning": "hint domuzu / yunus"
+      },
+      {
+        "form": "кхъуэбз",
+        "meaning": "dişi domuz"
+      },
+      {
+        "form": "кхъуэхъу",
+        "meaning": "erkek domuz"
+      },
+      {
+        "form": "кхъуэшыр",
+        "meaning": "domuz yavrusu"
+      },
+      {
+        "form": "кхъуэщ",
+        "meaning": "domuz ahırı"
+      }
     ],
     "etymology": "[кхъу] + -э",
     "notes": "Domuz. Adigece: къо. Kabardeyce: кхъуэ. 5 sözlük + Wiktionary. хыкхъуэ (yunus) bileşiğinin ikinci parçası."
-  }
-  ,
+  },
   {
     "id": "R-FO",
     "form": "фо",
     "ipa": "/fo:/",
     "primaryMeaning": "bal",
-    "secondaryMeanings": ["petek balı", "bal şurubu"],
-    "semanticDomains": ["food", "nature", "animal"],
+    "secondaryMeanings": [
+      "petek balı",
+      "bal şurubu"
+    ],
+    "semanticDomains": [
+      "food",
+      "nature",
+      "animal"
+    ],
     "dialectVariants": {
       "adyghe": "фо",
       "kabardian": "фо"
@@ -1101,23 +1265,44 @@
       "dictionarySources": 12
     },
     "derivedWords": [
-      { "form": "фошыгъу", "meaning": "şeker (bal + tuz)" },
-      { "form": "фо кӀадэ", "meaning": "Eylül (bal ayı)" },
-      { "form": "фо хьэкӀуэ", "meaning": "petekli bal" },
-      { "form": "фо цӀынэ", "meaning": "taze bal" },
-      { "form": "фо хугу", "meaning": "şekerlenmiş bal" }
+      {
+        "form": "фошыгъу",
+        "meaning": "şeker (bal + tuz)"
+      },
+      {
+        "form": "фо кӀадэ",
+        "meaning": "Eylül (bal ayı)"
+      },
+      {
+        "form": "фо хьэкӀуэ",
+        "meaning": "petekli bal"
+      },
+      {
+        "form": "фо цӀынэ",
+        "meaning": "taze bal"
+      },
+      {
+        "form": "фо хугу",
+        "meaning": "şekerlenmiş bal"
+      }
     ],
     "etymology": "[фо]",
     "notes": "Bal. 12 sözlük + Wiktionary. фошыгъу (şeker) bileşiğinin ilk parçası."
-  }
-  ,
+  },
   {
     "id": "R-MAF1E",
     "form": "мафӀэ",
     "ipa": "/maːfʔa/",
     "primaryMeaning": "ateş",
-    "secondaryMeanings": ["alev", "ateşli, tutkulu (mecazi)"],
-    "semanticDomains": ["nature", "element", "emotion"],
+    "secondaryMeanings": [
+      "alev",
+      "ateşli, tutkulu (mecazi)"
+    ],
+    "semanticDomains": [
+      "nature",
+      "element",
+      "emotion"
+    ],
     "dialectVariants": {
       "adyghe": "машӀу",
       "kabardian": "мафӀэ"
@@ -1127,13 +1312,55 @@
       "dictionarySources": 9
     },
     "derivedWords": [
-      { "form": "мафӀэгу", "meaning": "tren (ateş arabası)" },
-      { "form": "мафӀащэ", "meaning": "kıvılcım (ateş oku)" },
-      { "form": "мафӀэ бзий", "meaning": "alev" },
-      { "form": "мафӀэ щӀын", "meaning": "ateş yakmak" },
-      { "form": "мафӀэр ужьыхыжын", "meaning": "ateş sönmek" }
+      {
+        "form": "мафӀэгу",
+        "meaning": "tren (ateş arabası)"
+      },
+      {
+        "form": "мафӀащэ",
+        "meaning": "kıvılcım (ateş oku)"
+      },
+      {
+        "form": "мафӀэ бзий",
+        "meaning": "alev"
+      },
+      {
+        "form": "мафӀэ щӀын",
+        "meaning": "ateş yakmak"
+      },
+      {
+        "form": "мафӀэр ужьыхыжын",
+        "meaning": "ateş sönmek"
+      }
     ],
     "etymology": "[мафӀ] + -э",
     "notes": "Ateş. Adigece: машӀу. Kabardeyce: мафӀэ. 9 sözlük + Wiktionary."
+  },
+  {
+    "id": "R-PSE",
+    "form": "псэ",
+    "ipa": "/psa/",
+    "primaryMeaning": "ruh, can, yasam, nefes",
+    "secondaryMeanings": [
+      "oz",
+      "varolus",
+      "canlilik",
+      "hayat enerjisi"
+    ],
+    "semanticDomains": [
+      "somatizm",
+      "ruh",
+      "felsefe"
+    ],
+    "dialectVariants": {
+      "adyghe": "псэ",
+      "kabardian": "псэ"
+    },
+    "productivity": {
+      "lemmaCount": 13,
+      "corpusFrequency": 0,
+      "compoundCount": 0
+    },
+    "notes": "Ruh/can koku. R-PSY (su) ile fonetik-semantik iliskili ama AYRI kok."
   }
 ]
