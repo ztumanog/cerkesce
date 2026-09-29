@@ -2470,27 +2470,35 @@
     },
     "etymology": "[тхьэкӀум] + -э",
     "notes": "Kulak. 10 türev."
-  }
-  ,
+  },
   {
     "id": "L-K1YH",
     "form": "кӀыхь",
     "ipa": "/kʹʂǝħ/",
     "literalMeaning": "uzun",
     "derivation": {
-      "rootIds": ["R-K1YH"],
+      "rootIds": [
+        "R-K1YH"
+      ],
       "morphemeIds": [],
       "rule": "root"
     },
     "wordFamilyId": "WF-K1YH",
-    "conceptIds": ["LONG", "TALL", "DISTANT"],
+    "conceptIds": [
+      "LONG",
+      "TALL",
+      "DISTANT"
+    ],
     "dialectVariants": {
       "adyghe": "кӀыхь",
       "kabardian": "кӀыхь"
     },
     "dictionaryEvidence": {
       "sourceCount": 2,
-      "sources": ["Yamisha (2018)", "Wiktionary (2023)"],
+      "sources": [
+        "Yamisha (2018)",
+        "Wiktionary (2023)"
+      ],
       "meanings": {
         "ru": "длинный, долгий, высокий",
         "en": "long, tall, distant",
@@ -2513,7 +2521,10 @@
     "ipa": "/tħakʷʼmakʹʂǝħ/",
     "literalMeaning": "uzun kulaklı",
     "derivation": {
-      "rootIds": ["R-TKHEK1UME", "R-K1YH"],
+      "rootIds": [
+        "R-TKHEK1UME",
+        "R-K1YH"
+      ],
       "morphemeIds": [],
       "rule": "compound"
     },
@@ -2525,7 +2536,10 @@
     },
     "dictionaryEvidence": {
       "sourceCount": 2,
-      "sources": ["Wiktionary (2023)", "Kuipers (1960)"],
+      "sources": [
+        "Wiktionary (2023)",
+        "Kuipers (1960)"
+      ],
       "meanings": {
         "ru": "заяц",
         "en": "rabbit, hare",
@@ -2533,27 +2547,36 @@
       }
     },
     "notes": "Bileşik: тхьэкӀумэ (kulak) + кӀыхь (uzun) = uzun kulaklı = tavşan."
-  }
-  ,
+  },
   {
     "id": "L-DYGHU",
     "form": "дыгъу",
     "ipa": "/dǝʁʷ/",
     "literalMeaning": "hırsız",
     "derivation": {
-      "rootIds": ["R-DYGHU"],
+      "rootIds": [
+        "R-DYGHU"
+      ],
       "morphemeIds": [],
       "rule": "root"
     },
     "wordFamilyId": "WF-DYGHU",
-    "conceptIds": ["THIEF", "STEAL"],
+    "conceptIds": [
+      "THIEF",
+      "STEAL"
+    ],
     "dialectVariants": {
       "adyghe": "дыгъу",
       "kabardian": "дыгъу"
     },
     "dictionaryEvidence": {
       "sourceCount": 4,
-      "sources": ["Apaşev (2008)", "Amcad Camuha (1997)", "Kokov (2008)", "Kardanov (1957)"],
+      "sources": [
+        "Apaşev (2008)",
+        "Amcad Camuha (1997)",
+        "Kokov (2008)",
+        "Kardanov (1957)"
+      ],
       "meanings": {
         "ru": "вор, воровка; похититель",
         "en": "thief; stealer",
@@ -2568,27 +2591,48 @@
     },
     "etymology": "[дыгъу]",
     "notes": "Hırsız. 4 sözlük + Wiktionary. 20+ türev. дыгъужь (kurt) bileşiğinin ilk parçası."
-  }
-  ,
+  },
   {
     "id": "L-ZHY",
     "form": "жьы",
     "ipa": "/ʑǝ/",
     "literalMeaning": "eski",
     "derivation": {
-      "rootIds": ["R-ZHY"],
+      "rootIds": [
+        "R-ZHY"
+      ],
       "morphemeIds": [],
       "rule": "root"
     },
     "wordFamilyId": "WF-ZHY",
-    "conceptIds": ["OLD", "AGED", "WIND", "AIR", "EARLY"],
+    "conceptIds": [
+      "OLD",
+      "AGED",
+      "WIND",
+      "AIR",
+      "EARLY"
+    ],
     "dialectVariants": {
       "adyghe": "жьы",
       "kabardian": "жьы"
     },
     "dictionaryEvidence": {
       "sourceCount": 18,
-      "sources": ["Aig (2006)", "Apaşev (2008)", "Yamisha (2018/2023)", "Gish", "Amcad Camuha (1997)", "Kokov (2008)", "Kardanov (1957)", "Enstitüsü (2011)", "Baş Editör (1960)", "Şıgaje Adam (2020)", "Tharkaho (1991)", "Tabanı", "Lash (2013)"],
+      "sources": [
+        "Aig (2006)",
+        "Apaşev (2008)",
+        "Yamisha (2018/2023)",
+        "Gish",
+        "Amcad Camuha (1997)",
+        "Kokov (2008)",
+        "Kardanov (1957)",
+        "Enstitüsü (2011)",
+        "Baş Editör (1960)",
+        "Şıgaje Adam (2020)",
+        "Tharkaho (1991)",
+        "Tabanı",
+        "Lash (2013)"
+      ],
       "meanings": {
         "ru": "1. старый, ветхий 2. ветер 3. воздух 4. рано",
         "en": "1. old, dilapidated 2. wind 3. air 4. early",
@@ -2613,7 +2657,10 @@
     "ipa": "/dǝʁʷǝʑ/",
     "literalMeaning": "eski hırsız",
     "derivation": {
-      "rootIds": ["R-DYGHU", "R-ZHY"],
+      "rootIds": [
+        "R-DYGHU",
+        "R-ZHY"
+      ],
       "morphemeIds": [],
       "rule": "compound"
     },
@@ -2625,7 +2672,10 @@
     },
     "dictionaryEvidence": {
       "sourceCount": 2,
-      "sources": ["Wiktionary (2023)", "Kuipers (1960)"],
+      "sources": [
+        "Wiktionary (2023)",
+        "Kuipers (1960)"
+      ],
       "meanings": {
         "ru": "волк",
         "en": "wolf",
@@ -2639,27 +2689,38 @@
       ]
     },
     "notes": "Bileşik: дыгъу (hırsız) + жьы (eski) = eski hırsız = kurt."
-  }
-  ,
+  },
   {
     "id": "L-VY",
     "form": "вы",
     "ipa": "/vǝ/",
     "literalMeaning": "öküz",
     "derivation": {
-      "rootIds": ["R-VY"],
+      "rootIds": [
+        "R-VY"
+      ],
       "morphemeIds": [],
       "rule": "root"
     },
     "wordFamilyId": "WF-VY",
-    "conceptIds": ["OX", "PLOW"],
+    "conceptIds": [
+      "OX",
+      "PLOW"
+    ],
     "dialectVariants": {
       "adyghe": "вы",
       "kabardian": "вы"
     },
     "dictionaryEvidence": {
       "sourceCount": 9,
-      "sources": ["Apaşev (2008)", "Yamisha (2018/2023)", "Gish", "Amcad Camuha (1997)", "Kokov (2008)", "Kardanov (1957)"],
+      "sources": [
+        "Apaşev (2008)",
+        "Yamisha (2018/2023)",
+        "Gish",
+        "Amcad Camuha (1997)",
+        "Kokov (2008)",
+        "Kardanov (1957)"
+      ],
       "meanings": {
         "ru": "1. вол 2. пахать",
         "en": "1. ox 2. to plow",
@@ -2667,27 +2728,43 @@
       }
     },
     "notes": "Öküz + sürmek. 9 sözlük + Wiktionary. Polisemik."
-  }
-  ,
+  },
   {
     "id": "L-KHY",
     "form": "хы",
     "ipa": "/xǝ/",
     "literalMeaning": "deniz",
     "derivation": {
-      "rootIds": ["R-KHY"],
+      "rootIds": [
+        "R-KHY"
+      ],
       "morphemeIds": [],
       "rule": "root"
     },
     "wordFamilyId": "WF-KHY",
-    "conceptIds": ["SEA", "OCEAN"],
+    "conceptIds": [
+      "SEA",
+      "OCEAN"
+    ],
     "dialectVariants": {
       "adyghe": "хы",
       "kabardian": "хы"
     },
     "dictionaryEvidence": {
       "sourceCount": 12,
-      "sources": ["Aig (2006)", "Baş Editör (1960)", "Şıgaje Adam (2020)", "Tabanı", "Tharkaho (1991)", "Huvaj (2007)", "Yamisha (2018/2023)", "Apaşev (2008)", "Kokov (2008)", "Kardanov (1957)", "Lash (2013)"],
+      "sources": [
+        "Aig (2006)",
+        "Baş Editör (1960)",
+        "Şıgaje Adam (2020)",
+        "Tabanı",
+        "Tharkaho (1991)",
+        "Huvaj (2007)",
+        "Yamisha (2018/2023)",
+        "Apaşev (2008)",
+        "Kokov (2008)",
+        "Kardanov (1957)",
+        "Lash (2013)"
+      ],
       "meanings": {
         "ru": "море, океан",
         "en": "sea, ocean",
@@ -2711,19 +2788,35 @@
     "ipa": "/xǝ/",
     "literalMeaning": "altı",
     "derivation": {
-      "rootIds": ["R-KHY2"],
+      "rootIds": [
+        "R-KHY2"
+      ],
       "morphemeIds": [],
       "rule": "root"
     },
     "wordFamilyId": "WF-KHY2",
-    "conceptIds": ["SIX", "NUMBER"],
+    "conceptIds": [
+      "SIX",
+      "NUMBER"
+    ],
     "dialectVariants": {
       "adyghe": "хы",
       "kabardian": "хы"
     },
     "dictionaryEvidence": {
       "sourceCount": 10,
-      "sources": ["Apaşev (2008)", "Kokov (2008)", "Kardanov (1957)", "Enstitüsü (2011)", "Aig (2006)", "Lash (2013)", "Yamisha (2018/2023)", "Tharkaho (1991)", "Huvaj (2007)", "Gish"],
+      "sources": [
+        "Apaşev (2008)",
+        "Kokov (2008)",
+        "Kardanov (1957)",
+        "Enstitüsü (2011)",
+        "Aig (2006)",
+        "Lash (2013)",
+        "Yamisha (2018/2023)",
+        "Tharkaho (1991)",
+        "Huvaj (2007)",
+        "Gish"
+      ],
       "meanings": {
         "ru": "шесть (6)",
         "en": "six (6)",
@@ -2739,27 +2832,37 @@
     },
     "etymology": "[х] + -ы",
     "notes": "Altı (6). Homonym: хы (deniz) ile aynı yazılış."
-  }
-  ,
+  },
   {
     "id": "L-KKHUHE",
     "form": "кхъуэ",
     "ipa": "/qʷa/",
     "literalMeaning": "domuz",
     "derivation": {
-      "rootIds": ["R-KKHUHE"],
+      "rootIds": [
+        "R-KKHUHE"
+      ],
       "morphemeIds": [],
       "rule": "root"
     },
     "wordFamilyId": "WF-KKHUHE",
-    "conceptIds": ["PIG", "SWINE"],
+    "conceptIds": [
+      "PIG",
+      "SWINE"
+    ],
     "dialectVariants": {
       "adyghe": "къо",
       "kabardian": "кхъуэ"
     },
     "dictionaryEvidence": {
       "sourceCount": 5,
-      "sources": ["Yamisha (2018)", "Abaze (2005)", "Huvaj (2007)", "Hasan (1991)", "Aşemez (2013)"],
+      "sources": [
+        "Yamisha (2018)",
+        "Abaze (2005)",
+        "Huvaj (2007)",
+        "Hasan (1991)",
+        "Aşemez (2013)"
+      ],
       "meanings": {
         "ru": "свинья",
         "en": "pig, swine",
@@ -2782,7 +2885,10 @@
     "ipa": "/xǝqʷa/",
     "literalMeaning": "deniz domuzu",
     "derivation": {
-      "rootIds": ["R-KHY", "R-KKHUHE"],
+      "rootIds": [
+        "R-KHY",
+        "R-KKHUHE"
+      ],
       "morphemeIds": [],
       "rule": "compound"
     },
@@ -2794,7 +2900,9 @@
     },
     "dictionaryEvidence": {
       "sourceCount": 1,
-      "sources": ["Kuipers (1960)"],
+      "sources": [
+        "Kuipers (1960)"
+      ],
       "meanings": {
         "ru": "дельфин",
         "en": "dolphin",
@@ -2802,27 +2910,39 @@
       }
     },
     "notes": "Bileşik: хы (deniz) + кхъуэ (domuz) = deniz domuzu = yunus."
-  }
-  ,
+  },
   {
     "id": "L-FO",
     "form": "фо",
     "ipa": "/fo:/",
     "literalMeaning": "bal",
     "derivation": {
-      "rootIds": ["R-FO"],
+      "rootIds": [
+        "R-FO"
+      ],
       "morphemeIds": [],
       "rule": "root"
     },
     "wordFamilyId": "WF-FO",
-    "conceptIds": ["HONEY", "SWEET"],
+    "conceptIds": [
+      "HONEY",
+      "SWEET"
+    ],
     "dialectVariants": {
       "adyghe": "фо",
       "kabardian": "фо"
     },
     "dictionaryEvidence": {
       "sourceCount": 12,
-      "sources": ["Apaşev (2008)", "Yamisha (2018/2023)", "Gish", "Amcad Camuha (1997)", "Kokov (2008)", "Kardanov (1957)", "Şıgaje Adam (2020)"],
+      "sources": [
+        "Apaşev (2008)",
+        "Yamisha (2018/2023)",
+        "Gish",
+        "Amcad Camuha (1997)",
+        "Kokov (2008)",
+        "Kardanov (1957)",
+        "Şıgaje Adam (2020)"
+      ],
       "meanings": {
         "ru": "мёд",
         "en": "honey",
@@ -2846,7 +2966,9 @@
     "ipa": "/foʃəʁʷ/",
     "literalMeaning": "bal tuzu",
     "derivation": {
-      "rootIds": ["R-FO"],
+      "rootIds": [
+        "R-FO"
+      ],
       "morphemeIds": [],
       "rule": "compound"
     },
@@ -2858,7 +2980,9 @@
     },
     "dictionaryEvidence": {
       "sourceCount": 1,
-      "sources": ["Kuipers (1960)"],
+      "sources": [
+        "Kuipers (1960)"
+      ],
       "meanings": {
         "ru": "сахар",
         "en": "sugar",
@@ -2866,27 +2990,39 @@
       }
     },
     "notes": "Bileşik: фо (bal) + шыгъу (tuz) = bal tuzu = şeker."
-  }
-  ,
+  },
   {
     "id": "L-MAF1E",
     "form": "мафӀэ",
     "ipa": "/maːfʔa/",
     "literalMeaning": "ateş",
     "derivation": {
-      "rootIds": ["R-MAF1E"],
+      "rootIds": [
+        "R-MAF1E"
+      ],
       "morphemeIds": [],
       "rule": "root"
     },
     "wordFamilyId": "WF-MAF1E",
-    "conceptIds": ["FIRE", "FLAME", "PASSION"],
+    "conceptIds": [
+      "FIRE",
+      "FLAME",
+      "PASSION"
+    ],
     "dialectVariants": {
       "adyghe": "машӀу",
       "kabardian": "мафӀэ"
     },
     "dictionaryEvidence": {
       "sourceCount": 9,
-      "sources": ["Apaşev (2008)", "Yamisha (2018/2023)", "Gish", "Amcad Camuha (1997)", "Kokov (2008)", "Kardanov (1957)"],
+      "sources": [
+        "Apaşev (2008)",
+        "Yamisha (2018/2023)",
+        "Gish",
+        "Amcad Camuha (1997)",
+        "Kokov (2008)",
+        "Kardanov (1957)"
+      ],
       "meanings": {
         "ru": "1. огонь 2. горячий, пылкий (перен.)",
         "en": "1. fire 2. fiery, passionate (fig.)",
@@ -2910,7 +3046,10 @@
     "ipa": "/maːfʔaɕa/",
     "literalMeaning": "ateş oku",
     "derivation": {
-      "rootIds": ["R-MAF1E", "R-SHE"],
+      "rootIds": [
+        "R-MAF1E",
+        "R-SHE"
+      ],
       "morphemeIds": [],
       "rule": "compound"
     },
@@ -2922,7 +3061,9 @@
     },
     "dictionaryEvidence": {
       "sourceCount": 1,
-      "sources": ["Kuipers (1960)"],
+      "sources": [
+        "Kuipers (1960)"
+      ],
       "meanings": {
         "ru": "искра",
         "en": "spark",
@@ -2937,7 +3078,10 @@
     "ipa": "/maːfʔagʷə/",
     "literalMeaning": "ateş arabası",
     "derivation": {
-      "rootIds": ["R-MAF1E", "R-GU"],
+      "rootIds": [
+        "R-MAF1E",
+        "R-GU"
+      ],
       "morphemeIds": [],
       "rule": "compound"
     },
@@ -2949,7 +3093,9 @@
     },
     "dictionaryEvidence": {
       "sourceCount": 1,
-      "sources": ["Kuipers (1960)"],
+      "sources": [
+        "Kuipers (1960)"
+      ],
       "meanings": {
         "ru": "поезд",
         "en": "train",
@@ -2957,5 +3103,50 @@
       }
     },
     "notes": "Bileşik: мафӀэ (ateş) + гу (araba/merkez) = ateş arabası = tren."
+  },
+  {
+    "id": "L-PSY",
+    "form": "псы",
+    "ipa": "/psə/",
+    "literalMeaning": "su",
+    "derivation": {
+      "rootIds": [
+        "R-PSY"
+      ],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-PSY",
+    "conceptId": "WATER",
+    "dialectVariants": {
+      "adyghe": "псы",
+      "kabardian": "псы"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 19,
+      "sources": [
+        "Aig (2006)",
+        "Apashev (2008)",
+        "Yamisha (2018)",
+        "Yamisha (2023)",
+        "Kokov (2008)",
+        "Kardanov (1957)",
+        "Tharkaho (1991)",
+        "Lash (2013)",
+        "Enstitüsü (2011)",
+        "Baş Editör (1960)",
+        "Huvaj (2007)",
+        "Amcad Camuha (1997)",
+        "Tabanı (0000)",
+        "Şıgaje Adam (2020)",
+        "Gish (0000)"
+      ],
+      "meanings": {
+        "tr": "su, nehir",
+        "en": "water, river",
+        "ru": "вода, река"
+      }
+    },
+    "notes": "19 sozluk kaynagi dogruladi. Kok: пс + -ы"
   }
 ]
