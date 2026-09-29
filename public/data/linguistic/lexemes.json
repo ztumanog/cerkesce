@@ -5863,5 +5863,232 @@
       }
     },
     "notes": "къуэш (kardes) + -ыгъэ (soyut ad) = kardeslik."
+  },
+  {
+    "id": "L-PSYSHXUE",
+    "form": "псышхуэ",
+    "ipa": "/psǝʃxʷa/",
+    "literalMeaning": "buyuk su",
+    "derivation": {
+      "rootIds": [
+        "R-PSY",
+        "R-SHXUE"
+      ],
+      "morphemeIds": [
+        "M-SHXUE"
+      ],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-SHXUE",
+    "conceptId": "FLOOD",
+    "dialectVariants": {
+      "adyghe": "псышъуэ",
+      "kabardian": "псышхуэ"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 1,
+      "sources": [
+        "WF-SHXUE aile referansi"
+      ],
+      "meanings": {
+        "tr": "buyuk su, sel",
+        "ru": "большая вода"
+      }
+    },
+    "notes": "псы (su) + шхуэ (buyuk) = buyuk su. Kırık referans duzeltmesi."
+  },
+  {
+    "id": "L-NYBZHYSHXUE",
+    "form": "ныбжьышхуэ",
+    "ipa": "/nǝbʑǝʃxʷa/",
+    "literalMeaning": "yasi buyuk",
+    "derivation": {
+      "rootIds": [
+        "R-NYBZHY",
+        "R-SHXUE"
+      ],
+      "morphemeIds": [
+        "M-SHXUE"
+      ],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-SHXUE",
+    "conceptId": "AGED",
+    "dialectVariants": {
+      "adyghe": "ныбжьышъуэ",
+      "kabardian": "ныбжьышхуэ"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 2,
+      "sources": [
+        "ЕджапӀэм папщӀэ урыс-адыгэ псалъалъэ (2013)"
+      ],
+      "meanings": {
+        "tr": "yasli, ihtiyar",
+        "ru": "старый, престарелый"
+      }
+    },
+    "notes": "ныбжьы (yas) + шхуэ (buyuk) = yasi buyuk -> yasli."
+  },
+  {
+    "id": "L-UNESHHUE",
+    "form": "унэшхуэ",
+    "ipa": "/wǝnɐʃxʷa/",
+    "literalMeaning": "buyuk ev",
+    "derivation": {
+      "rootIds": [
+        "R-UNE",
+        "R-SHXUE"
+      ],
+      "morphemeIds": [
+        "M-SHXUE"
+      ],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-SHXUE",
+    "conceptId": "HOUSE",
+    "dialectVariants": {
+      "adyghe": "унэшъуэ",
+      "kabardian": "унэшхуэ"
+    },
+    "notes": "унэ (ev) + шхуэ (buyuk) = buyuk ev. Aile reisi odasi."
+  },
+  {
+    "id": "L-GUSHHUE",
+    "form": "гушхуэ",
+    "ipa": "/gwǝʃxʷa/",
+    "literalMeaning": "buyuk kalp",
+    "derivation": {
+      "rootIds": [
+        "R-GU",
+        "R-SHXUE"
+      ],
+      "morphemeIds": [
+        "M-SHXUE"
+      ],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-SHXUE",
+    "conceptId": "BRAVE",
+    "dialectVariants": {
+      "adyghe": "гушъуэ",
+      "kabardian": "гушхуэ"
+    },
+    "notes": "гу (kalp) + шхуэ (buyuk) = buyuk kalpli -> cesur."
+  },
+  {
+    "id": "L-1UEKHUASHHUE",
+    "form": "Ӏуэхушхуэ",
+    "ipa": "/ʔʷɐxʷǝʃxʷa/",
+    "literalMeaning": "buyuk is",
+    "derivation": {
+      "rootIds": [
+        "R-1UEKHU",
+        "R-SHXUE"
+      ],
+      "morphemeIds": [
+        "M-SHXUE"
+      ],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-SHXUE",
+    "conceptId": "IMPORTANT",
+    "dialectVariants": {
+      "adyghe": "Iофышъуэ",
+      "kabardian": "Ӏуэхушхуэ"
+    },
+    "notes": "Ӏуэху (is) + шхуэ (buyuk) = buyuk is -> onemli is."
+  },
+  {
+    "id": "L-MAF1ESHHUE",
+    "form": "мафӀэшхуэ",
+    "ipa": "/maːfʔaʃxʷa/",
+    "literalMeaning": "buyuk ates",
+    "derivation": {
+      "rootIds": [
+        "R-MAF1E",
+        "R-SHXUE"
+      ],
+      "morphemeIds": [
+        "M-SHXUE"
+      ],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-SHXUE",
+    "conceptId": "FIRE",
+    "dialectVariants": {
+      "adyghe": "машIуэшъуэ",
+      "kabardian": "мафӀэшхуэ"
+    },
+    "notes": "мафӀэ (ates) + шхуэ (buyuk) = buyuk ates -> yangin. Metin kaniti var."
+  },
+  {
+    "id": "L-ADESHHUE",
+    "form": "адэшхуэ",
+    "ipa": "/aːdɐʃxʷa/",
+    "literalMeaning": "buyuk baba",
+    "derivation": {
+      "rootIds": [
+        "R-ADE",
+        "R-SHXUE"
+      ],
+      "morphemeIds": [
+        "M-SHXUE"
+      ],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-SHXUE",
+    "conceptId": "GRANDFATHER",
+    "dialectVariants": {
+      "adyghe": "адэшъуэ",
+      "kabardian": "адэшхуэ"
+    },
+    "notes": "адэ (baba) + шхуэ (buyuk) = buyuk baba -> dede."
+  },
+  {
+    "id": "L-ANESHHUE",
+    "form": "анэшхуэ",
+    "ipa": "/aːnɐʃxʷa/",
+    "literalMeaning": "buyuk anne",
+    "derivation": {
+      "rootIds": [
+        "R-ANE",
+        "R-SHXUE"
+      ],
+      "morphemeIds": [
+        "M-SHXUE"
+      ],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-SHXUE",
+    "conceptId": "GRANDMOTHER",
+    "dialectVariants": {
+      "adyghe": "анэшъуэ",
+      "kabardian": "анэшхуэ"
+    },
+    "notes": "анэ (anne) + шхуэ (buyuk) = buyuk anne -> buyukanne."
+  },
+  {
+    "id": "L-MAKHUESHHUE",
+    "form": "махуэшхуэ",
+    "ipa": "/maːxʷɐʃxʷa/",
+    "literalMeaning": "buyuk gun",
+    "derivation": {
+      "rootIds": [
+        "R-MAKHUE",
+        "R-SHXUE"
+      ],
+      "morphemeIds": [
+        "M-SHXUE"
+      ],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-SHXUE",
+    "conceptId": "HOLIDAY",
+    "dialectVariants": {
+      "adyghe": "мафэшъуэ",
+      "kabardian": "махуэшхуэ"
+    },
+    "notes": "махуэ (gun) + шхуэ (buyuk) = buyuk gun -> bayram."
   }
 ]
