@@ -5373,5 +5373,232 @@
       }
     },
     "notes": "кхъухь (gemi) + тет (oturan) = kaptan. 2 sozluk. Апашев: кхъухьым и унафэщӀ (gemini kumandani)."
+  },
+  {
+    "id": "L-KUAPELHAPE",
+    "form": "къуапэлъапэ",
+    "ipa": "/qʷapalaːpa/",
+    "literalMeaning": "kose kenarlari",
+    "derivation": {
+      "rootIds": [
+        "R-KUE",
+        "R-PE"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-KUE",
+    "conceptId": "EDGE",
+    "dialectVariants": {
+      "adyghe": "къуапэлъапэ",
+      "kabardian": "къуапэлъапэ"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 2,
+      "sources": [
+        "Apashev (2008)",
+        "Korpus"
+      ],
+      "meanings": {
+        "tr": "kose kenarlari",
+        "en": "edges, protrusions",
+        "ru": "углы края, выступы"
+      }
+    },
+    "notes": "къуапэ (kose) + лъапэ (kenar) = kose kenarlari."
+  },
+  {
+    "id": "L-KUAPETXHUYME",
+    "form": "къуапэтхуимэ",
+    "ipa": "/qʷapatxʷəjma/",
+    "literalMeaning": "bes kose",
+    "derivation": {
+      "rootIds": [
+        "R-KUE",
+        "R-PE"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-KUE",
+    "conceptId": "PENTAGON",
+    "dialectVariants": {
+      "adyghe": "къуапэтхуимэ",
+      "kabardian": "къуапэтхуимэ"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 3,
+      "sources": [
+        "Yamisha (2018)",
+        "Yamisha (2023)"
+      ],
+      "meanings": {
+        "tr": "besgen",
+        "en": "pentagon",
+        "ru": "пятиугольник"
+      }
+    },
+    "notes": "къуапэ (kose) + тху (bes) = besgen."
+  },
+  {
+    "id": "L-KUAPEXHIME",
+    "form": "къуапэхимэ",
+    "ipa": "/qʷapaxəjma/",
+    "literalMeaning": "alti kose",
+    "derivation": {
+      "rootIds": [
+        "R-KUE",
+        "R-PE"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-KUE",
+    "conceptId": "HEXAGON",
+    "dialectVariants": {
+      "adyghe": "къуапэхимэ",
+      "kabardian": "къуапэхимэ"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 3,
+      "sources": [
+        "Yamisha (2018)",
+        "Yamisha (2023)"
+      ],
+      "meanings": {
+        "tr": "altigen",
+        "en": "hexagon",
+        "ru": "шестиугольник"
+      }
+    },
+    "notes": "къуапэ (kose) + хы (alti) = altigen."
+  },
+  {
+    "id": "L-KUAPEZADE",
+    "form": "къуапэзадэ",
+    "ipa": "/qʷapazaːda/",
+    "literalMeaning": "dik aci",
+    "derivation": {
+      "rootIds": [
+        "R-KUE",
+        "R-PE"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-KUE",
+    "conceptId": "RIGHT_ANGLE",
+    "dialectVariants": {
+      "adyghe": "къопэзад",
+      "kabardian": "къуапэзадэ"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 1,
+      "sources": [
+        "Huvaj (2007)"
+      ],
+      "meanings": {
+        "tr": "dik aci",
+        "en": "right angle",
+        "ru": "прямой угол"
+      }
+    },
+    "notes": "къуапэ (aci) + задэ (dik) = dik aci."
+  },
+  {
+    "id": "L-KUAPEZEV",
+    "form": "къуапэзэв",
+    "ipa": "/qʷapazav/",
+    "literalMeaning": "dar aci",
+    "derivation": {
+      "rootIds": [
+        "R-KUE",
+        "R-PE"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-KUE",
+    "conceptId": "ACUTE_ANGLE",
+    "dialectVariants": {
+      "adyghe": "къопэзэжъу",
+      "kabardian": "къуапэзэв"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 1,
+      "sources": [
+        "Huvaj (2007)"
+      ],
+      "meanings": {
+        "tr": "dar aci",
+        "en": "acute angle",
+        "ru": "острый угол"
+      }
+    },
+    "notes": "къуапэ (aci) + зэв (dar) = dar aci."
+  },
+  {
+    "id": "L-KUAPEPAPC1E",
+    "form": "къуапэпапцӀэ",
+    "ipa": "/qʷapapapt͡sʹa/",
+    "literalMeaning": "sivri aci",
+    "derivation": {
+      "rootIds": [
+        "R-KUE",
+        "R-PE"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-KUE",
+    "conceptId": "ACUTE_ANGLE",
+    "dialectVariants": {
+      "adyghe": "къуапэпапцӀэ",
+      "kabardian": "къуапэпапцӀэ"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 1,
+      "sources": [
+        "Abaze (2005)"
+      ],
+      "meanings": {
+        "tr": "dar aci",
+        "en": "acute angle",
+        "ru": "острый угол"
+      }
+    },
+    "notes": "къуапэ (aci) + папцӀэ (sivri) = dar aci."
+  },
+  {
+    "id": "L-KUAPEPAGUE",
+    "form": "къуапэпагуэ",
+    "ipa": "/qʷapapaɡʷa/",
+    "literalMeaning": "genis aci",
+    "derivation": {
+      "rootIds": [
+        "R-KUE",
+        "R-PE"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-KUE",
+    "conceptId": "OBTUSE_ANGLE",
+    "dialectVariants": {
+      "adyghe": "къуапэпагуэ",
+      "kabardian": "къуапэпагуэ"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 1,
+      "sources": [
+        "Abaze (2005)"
+      ],
+      "meanings": {
+        "tr": "genis aci",
+        "en": "obtuse angle",
+        "ru": "тупой угол"
+      }
+    },
+    "notes": "къуапэ (aci) + пагуэ (genis) = genis aci."
   }
 ]

@@ -1385,5 +1385,75 @@
     "confidence": 1.0,
     "evidenceSource": "dictionary",
     "reference": "Apashev (2008), Kokov (2008)"
+  },
+  {
+    "id": "SR-KUE-EDGE",
+    "source": "R-KUE",
+    "target": "L-KUAPELHAPE",
+    "type": "compound",
+    "evidence": "къуапэлъапэ",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary",
+    "reference": "Apashev (2008)"
+  },
+  {
+    "id": "SR-KUE-PENTAGON",
+    "source": "R-KUE",
+    "target": "L-KUAPETXHUYME",
+    "type": "compound",
+    "evidence": "къуапэтхуимэ",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary",
+    "reference": "Yamisha (2018)"
+  },
+  {
+    "id": "SR-KUE-HEXAGON",
+    "source": "R-KUE",
+    "target": "L-KUAPEXHIME",
+    "type": "compound",
+    "evidence": "къуапэхимэ",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary",
+    "reference": "Yamisha (2018)"
+  },
+  {
+    "id": "SR-KUE-RIGHTANGLE",
+    "source": "R-KUE",
+    "target": "L-KUAPEZADE",
+    "type": "compound",
+    "evidence": "къуапэзадэ",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary",
+    "reference": "Huvaj (2007)"
+  },
+  {
+    "id": "SR-KUE-ACUTEANGLE",
+    "source": "R-KUE",
+    "target": "L-KUAPEZEV",
+    "type": "compound",
+    "evidence": "къуапэзэв",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary",
+    "reference": "Huvaj (2007)"
+  },
+  {
+    "id": "SR-KUE-ACUTEANGLE2",
+    "source": "R-KUE",
+    "target": "L-KUAPEPAPC1E",
+    "type": "compound",
+    "evidence": "къуапэпапцӀэ",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary",
+    "reference": "Abaze (2005)"
+  },
+  {
+    "id": "SR-KUE-OBTUSEANGLE",
+    "source": "R-KUE",
+    "target": "L-KUAPEPAGUE",
+    "type": "compound",
+    "evidence": "къуапэпагуэ",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary",
+    "reference": "Abaze (2005)"
   }
 ]
