@@ -1,0 +1,154 @@
+======================================================================
+WEB-CORPORA.NET — METAFOR DOGRULAMA RAPORU
+======================================================================
+Tarih: 2026-09-29T23:42:01.868798+00:00
+Corpus: adyghe.web-corpora.net
+
+Toplam aday : 18
+Dogrulandi  : 13
+Kismen      : 0
+Bulunamadi  : 5
+Kapsam      : %72.2
+
+----------------------------------------------------------------------
+DETAYLI SONUCLAR
+----------------------------------------------------------------------
+
+SR-HEAD-TOP (щхьэгу)
+  Root   : R-SHHYE
+  Target : TOP
+  Durum  : BULUNAMADI
+  Sayfa  : 0
+  Conf   : 0.0
+
+SR-HEAD-REASON (щхьэусыгъуэ)
+  Root   : R-SHHYE
+  Target : REASON
+  Durum  : BULUNAMADI
+  Sayfa  : 0
+  Conf   : 0.0
+
+SR-SHHYE-FREEDOM (щхьэхуитыныгъэ)
+  Root   : R-SHHYE
+  Target : FREEDOM
+  Durum  : BULUNAMADI
+  Sayfa  : 0
+  Conf   : 0.0
+
+SR-SHHYE-WINDOW (щхьэгъубжэ)
+  Root   : R-SHHYE
+  Target : WINDOW
+  Durum  : BULUNAMADI
+  Sayfa  : 0
+  Conf   : 0.0
+
+SR-GU-LOVE (гуфӀэ)
+  Root   : R-GU
+  Target : LOVE
+  Durum  : DOGRULANDI
+  Sayfa  : 1
+  Conf   : 0.7
+  Ornek  : 8 Ай дуней жагъуэгъу гъэ(уэ гуфӏэ щхьэкӏэ Ежьу Уо уо-иейкъэ уэ сэрмахуэ иджы щӏа
+
+SR-GU-ANGER (губжь)
+  Root   : R-GU
+  Target : ANGER
+  Durum  : BULUNAMADI
+  Sayfa  : 0
+  Conf   : 0.0
+
+SR-GU-CENTER (гу)
+  Root   : R-GU
+  Target : CENTER
+  Durum  : DOGRULANDI
+  Sayfa  : 10
+  Conf   : 0.85
+  Ornek  : Тхылъыр ичӏыпӏэ щымыт зыхъукӏэ Разыет псынкӏэу гу лъитэщтыгъ
+
+SR-GU-BOND (гукӀэгъу)
+  Root   : R-GU
+  Target : BOND
+  Durum  : DOGRULANDI
+  Sayfa  : 10
+  Conf   : 0.75
+  Ornek  : ӏалыгуджэ Гуащэ мэзым къыхащыгъэ пшъэшъэ ӏэлэу щытыгъ нахь мышӏэми цӏыфмэ захэнэ
+
+SR-GU-FEELING (гухэлъ)
+  Root   : R-GU
+  Target : FEELING
+  Durum  : DOGRULANDI
+  Sayfa  : 10
+  Conf   : 0.85
+  Ornek  : Гъэхъагъэхэм адакӏоу щыкӏагъэу гумэкӏыгъоу тиӏэхэми танэсыгъ гухэлъ гъэнэфагъэ з
+
+SR-GU-SADNESS (гухэкӀ)
+  Root   : R-GU
+  Target : SADNESS
+  Durum  : DOGRULANDI
+  Sayfa  : 10
+  Conf   : 0.75
+  Ornek  : Гухэкӏ нахь мышӏэми а шапхъэхэр аукъохэу псэолъэ объектхэм ахэр игъом аращэлӏэнх
+
+SR-HEART-SPEECH (гущыӀэ)
+  Root   : R-GU
+  Target : SPEECH
+  Durum  : DOGRULANDI
+  Sayfa  : 10
+  Conf   : 0.75
+  Ornek  : Ахэм афэдэ гущыӏэ фабэхэу фаӏохэрэр къылэжьыгъэ шъыпкъэх
+
+SR-GU-FRONT (гуп)
+  Root   : R-GU
+  Target : FRONT
+  Durum  : DOGRULANDI
+  Sayfa  : 10
+  Conf   : 0.85
+  Ornek  : Аущтэу ӏофыр щытэп еӏо ГУП у Адыгеястройзаказчикым игенеральнэ директорэу Абрэдж
+
+SR-NE-TEARS (нэпс)
+  Root   : R-NE
+  Target : TEARS
+  Durum  : DOGRULANDI
+  Sayfa  : 10
+  Conf   : 0.85
+  Ornek  : Купыр маджэ Тыдэ охъуи тигугъапӏэу тиаслъан Хэт зижьау тычӏэтыщтыр сыд къытапшӏи
+
+SR-NE-WITNESS (нэгу)
+  Root   : R-NE
+  Target : WITNESS
+  Durum  : DOGRULANDI
+  Sayfa  : 10
+  Conf   : 0.85
+  Ornek  : Унашъхьэр зыӏэтырэмэ ахэт Вишневецкэм шыу купыр зилъэгъукӏэ обзэгъур егъэтӏылъыш
+
+SR-HEAD-LEADER (щхьэ)
+  Root   : R-SHHYE
+  Target : LEADER
+  Durum  : DOGRULANDI
+  Sayfa  : 10
+  Conf   : 0.85
+  Ornek  : 3 Уэ пщэдджыжь гудок мыгъуэр уэ Юрэ мыгъуэжь мыгъуэ Восемым къы(у тоуэ мыгъуэт у
+
+SR-HEAD-SELF (щхьэ)
+  Root   : R-SHHYE
+  Target : SELF
+  Durum  : DOGRULANDI
+  Sayfa  : 10
+  Conf   : 0.85
+  Ornek  : 3 Уэ пщэдджыжь гудок мыгъуэр уэ Юрэ мыгъуэжь мыгъуэ Восемым къы(у тоуэ мыгъуэт у
+
+SR-HAND-POWER (Ӏэ)
+  Root   : R-1E
+  Target : POWER
+  Durum  : DOGRULANDI
+  Sayfa  : 10
+  Conf   : 0.75
+  Ornek  : Сыд къыосӏонэу уфай тян мыжъобгъу пкъышхор ымыгъэсысэу игупшысэ мыбащэмэ къызэра
+
+SR-FOOT-PLACE (лъэ)
+  Root   : R-LHE
+  Target : PLACE
+  Durum  : DOGRULANDI
+  Sayfa  : 10
+  Conf   : 0.85
+  Ornek  : Къэралыгъом къы рыкӏощтымкӏэ пшъэдэкӏыжь зэрихьырэр къызгурыӏорэ джырэ лъэ хъаны

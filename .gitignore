@@ -150,3 +150,6 @@ data/corpus/.hf_cache/
 
 # C-9 yerel yedekler
 *.bak_c8
+
+# Web corpus cache (HTML, buyuk)
+data/corpus/webcorpora/cache/
