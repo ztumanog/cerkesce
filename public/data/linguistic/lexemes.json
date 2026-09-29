@@ -3149,5 +3149,139 @@
       }
     },
     "notes": "19 sozluk kaynagi dogruladi. Kok: пс + -ы"
+  },
+  {
+    "id": "L-SHEPS",
+    "form": "шэпс",
+    "ipa": "/ʃaps/",
+    "literalMeaning": "sut suyu",
+    "derivation": {
+      "rootIds": [
+        "R-SHE2",
+        "R-PSY"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-SHE2",
+    "conceptId": "PLANT_JUICE",
+    "dialectVariants": {
+      "adyghe": "шэпс",
+      "kabardian": "шэпс"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 2,
+      "sources": [
+        "Apashev (2008)",
+        "Kokov (2008)"
+      ],
+      "meanings": {
+        "tr": "bitki ozsuyu (mısır, taze ot vb.)",
+        "en": "plant sap (of corn, fresh grass, etc.)",
+        "ru": "молоко (сок некоторых растений)"
+      }
+    },
+    "notes": "Apashev: Udz ts1yne, nartyxu xedze ts1yne vb.den cikan beyaz sivi. шэ (sut) + пс (su) = bitki ozsuyu."
+  },
+  {
+    "id": "L-PSYBLE",
+    "form": "псыблэ",
+    "ipa": "/psəbla/",
+    "literalMeaning": "su yilani",
+    "derivation": {
+      "rootIds": [
+        "R-PSY",
+        "R-BLE"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-PSY",
+    "conceptId": "WATER_SNAKE",
+    "dialectVariants": {
+      "adyghe": "псыблэ",
+      "kabardian": "псыблэ"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 6,
+      "sources": [
+        "Apashev (2008)",
+        "Yamisha (2018)",
+        "Amcad Camuha (1997)",
+        "Kokov (2008)",
+        "Enstitüsü (2011)",
+        "Kardanov (1957)"
+      ],
+      "meanings": {
+        "tr": "su yilani",
+        "en": "water snake",
+        "ru": "водяной уж"
+      }
+    },
+    "notes": "псы (su) + блэ (yilan) = su yilani. Zehirsiz."
+  },
+  {
+    "id": "L-PSYXHEL",
+    "form": "псыхьэл",
+    "ipa": "/psəħal/",
+    "literalMeaning": "su degirmeni",
+    "derivation": {
+      "rootIds": [
+        "R-PSY"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-PSY",
+    "conceptId": "WATERMILL",
+    "dialectVariants": {
+      "adyghe": "псы шъхьал",
+      "kabardian": "псыхьэл"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 2,
+      "sources": [
+        "Wiktionary (2023)",
+        "Hasan (1991)"
+      ],
+      "meanings": {
+        "tr": "su degirmeni",
+        "en": "watermill",
+        "ru": "водяная мельница"
+      }
+    },
+    "notes": "псы (su) + хьэл (degirmen) = su degirmeni. Adigece: псы шъхьал."
+  },
+  {
+    "id": "L-PSYUNE",
+    "form": "псыунэ",
+    "ipa": "/psəwəna/",
+    "literalMeaning": "su odasi",
+    "derivation": {
+      "rootIds": [
+        "R-PSY",
+        "R-UNE"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-PSY",
+    "conceptId": "TOILET",
+    "dialectVariants": {
+      "adyghe": "псыунэ",
+      "kabardian": "псыунэ"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 1,
+      "sources": [
+        "Yamisha (2018)"
+      ],
+      "meanings": {
+        "tr": "tuvalet",
+        "en": "toilet",
+        "ru": "туалет"
+      }
+    },
+    "notes": "псы (su) + унэ (ev/oda) = su odasi = tuvalet."
   }
 ]

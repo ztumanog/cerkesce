@@ -1362,5 +1362,29 @@
       "compoundCount": 0
     },
     "notes": "Ruh/can koku. R-PSY (su) ile fonetik-semantik iliskili ama AYRI kok."
+  },
+  {
+    "id": "R-BLE",
+    "form": "блэ",
+    "ipa": "/bla/",
+    "primaryMeaning": "yilan",
+    "secondaryMeanings": [
+      "engerek",
+      "zehirli yilan"
+    ],
+    "semanticDomains": [
+      "hayvan",
+      "fauna"
+    ],
+    "dialectVariants": {
+      "adyghe": "блэ",
+      "kabardian": "блэ"
+    },
+    "productivity": {
+      "lemmaCount": 1,
+      "corpusFrequency": 0,
+      "compoundCount": 1
+    },
+    "notes": "Yilan koku. псыблэ (su yilani) bilesiginde kullanilir."
   }
 ]
