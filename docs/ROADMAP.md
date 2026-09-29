@@ -1,7 +1,7 @@
 # ROADMAP
 
 **Son Guncelleme:** 2026-09-29
-**Versiyon:** v4.2
+**Versiyon:** v4.3
 
 ---
 
@@ -11,44 +11,48 @@
 |-----|--------|-------|
 | Faz 1 | Foundation | CLOSED |
 | Faz 2 | Translation Platform | CLOSED |
-| Faz 3 | Concept Engine | COMPLETE |
+| Faz 3 | Concept Engine | READY FOR GATE REVIEW |
 | Faz 4 | Data Mapping & Integrity | COMPLETED |
 | Faz 5 | Discovery Engine | IN PROGRESS |
 | Faz C-3 | Linguistic Dataset (Ilk) | COMPLETED |
 | Faz C-4 | Linguistic Dataset (Genisletme) | COMPLETED |
-| Faz C-5 | Semantic Field Expansion | COMPLETED (2026-09-29) |
-| Faz C-6 | Yeni Aileler | SIRADA |
-| Faz 6 | API Gateway | LOCKED |
-| Faz 7 | Analytics & Export | LOCKED |
+| Faz C-5 | Semantic Field Expansion | COMPLETED |
+| Faz C-6 | Evidence Strengthening | COMPLETED (2026-09-29) |
+| Faz C-7 | Yeni Aileler | SIRADA |
 
 ---
 
-## FAZ C-5 - SEMANTIC FIELD EXPANSION (COMPLETED)
+## FAZ C-6 - EVIDENCE STRENGTHENING (COMPLETED)
 
 **Tarih:** 2026-09-29
 **Durum:** COMPLETED
 
 ### Sayisal Durum
 
-| Kategori | Faz C-4 | Faz C-5 | Artis |
+| Kategori | Faz C-5 | Faz C-6 | Artis |
 |---|---|---|---|
-| Kok | 32 | **40** | +8 |
-| Lexeme | 90 | **126** | +36 |
-| Morfem | 42 | **60** | +18 |
-| Semantic Relation | 70 | **100** | +30 |
+| Kok | 40 | **45** | +5 |
+| Lexeme | 126 | **150** | +24 |
+| Morfem | 60 | **65** | +5 |
+| Semantic Relation | 100 | **127** | +27 |
+| Word Family | 5 | **11** | +6 |
 | Test | 220 | 220 | korundu |
 
-### Eklenen Kokler (8)
+### Eklenen Kokler (5)
 
-R-PSE, R-BLE, R-DZE, R-UES, R-K1UY, R-BABYSHCH, R-BZU, R-DZHED
+R-SHXUE, R-C1YQ1U, R-BDZE, R-NYDZHE, R-KUE
+
+### Eklenen Aileler (6)
+
+WF-UES, WF-BLE, WF-K1UY, WF-BZU, WF-BABYSHCH, WF-DZHED
 
 ### Ciktilar
 
-- 40 kok, 126 lexeme, 60 morfem, 100 iliski
+- Corpus evidence: 3 lexeme
+- Dictionary evidence: 8 lexeme
+- Dialect evidence: 10 lexeme
+- 45 kok, 150 lexeme, 65 morfem, 127 iliski
 - 220/220 test PASS
-- tsc temiz
-- Runtime izolasyonu korundu
-- ADR-ROOT-001 ihlali YOK
 
 ---
 
@@ -60,18 +64,18 @@ R-PSE, R-BLE, R-DZE, R-UES, R-K1UY, R-BABYSHCH, R-BZU, R-DZHED
 | 2026-09-28 | Faz C-3 | COMPLETED |
 | 2026-09-29 | Faz C-4 | COMPLETED |
 | 2026-09-29 | Faz C-5 | COMPLETED |
-| Simdi | Faz C-6 | SIRADA |
-| Gelecek | Faz 6-7 | LOCKED |
+| 2026-09-29 | Faz C-6 | COMPLETED |
+| Simdi | Faz C-7 | SIRADA |
 
 ---
 
 ## SONRAKI ADIMLAR
 
-### Faz C-6 Hedefleri
+### Faz C-7 Hedefleri
 
-1. Yeni aileler: къуэ, уэс, шхуэ, vs.
-2. Korpus dogrulamasi: Adyghe Web Corpus
-3. Mimar onayi: Faz C-5 kapanisi
+1. Yeni aileler: къуэ, шхуэ aileleri
+2. Korpus dogrulamasi genisletme
+3. Dictionary evidence genisletme
 
 ---
 
@@ -80,11 +84,11 @@ R-PSE, R-BLE, R-DZE, R-UES, R-K1UY, R-BABYSHCH, R-BZU, R-DZHED
 **Status:** Experimental / Data Layer Only
 
 **Components:**
-- Roots Dataset (40 kok)
-- Morphemes Dataset (60 morfem)
-- Word Families Dataset (7 aile)
-- Lexeme Dataset (126 lexeme)
-- Semantic Relations (100 iliski)
+- Roots Dataset (45 kok)
+- Morphemes Dataset (65 morfem)
+- Word Families Dataset (11 aile)
+- Lexeme Dataset (150 lexeme)
+- Semantic Relations (127 iliski)
 
 **Constraints:**
 - Runtime access forbidden

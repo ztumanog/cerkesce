@@ -37,7 +37,7 @@
 
 ---
 
-## Kilitli (Faz 4/5)
+## Kilitli (Faz 3+)
 
 - Knowledge Graph Inference
 - SemanticExpansionResolver
@@ -74,28 +74,30 @@ src/domain/linguistic/
 ### Durum
 - Runtime bagimliligi: YOK
 - Rol: Arastirma katmani (veri toplama)
-- Faz: C-5 tamamlandi
+- Faz: C-6 tamamlandi
 - Runtime'a giris: ADR-ROOT-002 ile (henuz yok)
 
 ### Veri Katmani
 public/data/linguistic/
-- roots.json (40 kok)
-- morphemes.json (60 morfem)
-- word_families.json (7 aile)
-- lexemes.json (126 lexeme)
-- semantic_relations.json (100 iliski)
+- roots.json (45 kok)
+- morphemes.json (65 morfem)
+- word_families.json (11 aile)
+- lexemes.json (150 lexeme)
+- semantic_relations.json (127 iliski)
 
 ### Kural
 Bu katmandaki hicbir tip runtime'da import edilmez.
 SemanticRelations veri olarak toplanir, Discovery motoruna baglanmaz.
 
-### Faz C-5 Tamamlandi (2026-09-29)
-- [x] 40 kok hedefi
-- [x] 126 lexeme hedefi
-- [x] 60 morfem hedefi
-- [x] 100 semantic relation hedefi
+### Faz C-6 Tamamlandi (2026-09-29)
+- [x] 45 kok hedefi
+- [x] 150 lexeme hedefi
+- [x] 65 morfem hedefi
+- [x] 120 semantic relation hedefi (127)
 - [x] 220/220 PASS korundu
-- [x] pse, psy, ne, bze, pe, dze aileleri
+- [x] Corpus evidence: 3 lexeme
+- [x] Dictionary evidence: 8 lexeme
+- [x] Dialect evidence: 10 lexeme
 
 ---
 
