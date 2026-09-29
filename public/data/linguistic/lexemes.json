@@ -3354,7 +3354,35 @@
         "псэхэр"
       ]
     },
-    "dialectNote": "Her iki lehcede ayni."
+    "dialectNote": "Her iki lehcede ayni.",
+    "proverbs": [
+      "Гум и щӀасэр псэм и гуапэщ.",
+      "Псэ зиӀэм ажал иӀэщ.",
+      "Псэрэ псырэ нэхъ ӀэфӀ щыӀэкъым."
+    ],
+    "compounds": [
+      {
+        "form": "псэ быдэ",
+        "meaning": "dayanikli, saglam"
+      },
+      {
+        "form": "псэ быдагъ",
+        "meaning": "dayaniklilik"
+      },
+      {
+        "form": "псэ махэ",
+        "meaning": "zayif, hastalikli"
+      },
+      {
+        "form": "псэ махагъэ",
+        "meaning": "zayiflik"
+      },
+      {
+        "form": "псэ хьэлэл",
+        "meaning": "iyi kalpli, samimi"
+      }
+    ],
+    "idiomCount": 80
   },
   {
     "id": "L-PSEUN",
@@ -5169,5 +5197,181 @@
       }
     },
     "notes": "къуэ (vadi) + пэ (uç/burun) = köşe. 11 sözlük kaynağı."
+  },
+  {
+    "id": "L-KKHUXY",
+    "form": "кхъухь",
+    "ipa": "/q͡χʷəħ/",
+    "literalMeaning": "gemi",
+    "derivation": {
+      "rootIds": [
+        "R-KKHUXY"
+      ],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-KKHUXY",
+    "conceptId": "SHIP",
+    "dialectVariants": {
+      "adyghe": "къухьэ",
+      "kabardian": "кхъухь"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 11,
+      "sources": [
+        "Apashev (2008)",
+        "Yamisha (2018)",
+        "Yamisha (2023)",
+        "Gish (0000)",
+        "Amcad Camuha (1997)",
+        "Kokov (2008)",
+        "Kardanov (1957)"
+      ],
+      "meanings": {
+        "tr": "gemi, vapur, tekne",
+        "en": "ship, vessel",
+        "ru": "корабль, теплоход, пароход"
+      }
+    },
+    "notes": "Kabardeyce: кхъухь. Adigece: къухьэ. 11 sozluk. Bilesikler: тедзапӀэ (liman), увыӀэпӀэ (iskele), гущӀыӀу (güverte)."
+  },
+  {
+    "id": "L-KKHUXYLHYATE",
+    "form": "кхъухьлъатэ",
+    "ipa": "/q͡χʷəħɬaːta/",
+    "literalMeaning": "ucan gemi",
+    "derivation": {
+      "rootIds": [
+        "R-KKHUXY"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-KKHUXY",
+    "conceptId": "AIRPLANE",
+    "dialectVariants": {
+      "adyghe": "къухьэлъатэ",
+      "kabardian": "кхъухьлъатэ"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 11,
+      "sources": [
+        "Apashev (2008)",
+        "Yamisha (2018)",
+        "Yamisha (2023)",
+        "Gish (0000)",
+        "Amcad Camuha (1997)",
+        "Kokov (2008)",
+        "Kardanov (1957)"
+      ],
+      "meanings": {
+        "tr": "ucak",
+        "en": "airplane, aircraft, plane",
+        "ru": "самолет, аэроплан"
+      }
+    },
+    "notes": "кхъухь (gemi) + лъатэ (ucan) = uçak. 11 sozluk. Bilesikler: завод (fabrika), пощт (hava postasi), зезыхуэ (pilot)."
+  },
+  {
+    "id": "L-KKHUXYZEXUE",
+    "form": "кхъухьзехуэ",
+    "ipa": "/q͡χʷəħzajxʷa/",
+    "literalMeaning": "gemi suren",
+    "derivation": {
+      "rootIds": [
+        "R-KKHUXY"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-KKHUXY",
+    "conceptId": "CAPTAIN",
+    "dialectVariants": {
+      "adyghe": "къухьэзехуэ",
+      "kabardian": "кхъухьзехуэ"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 4,
+      "sources": [
+        "Apashev (2008)",
+        "Amcad Camuha (1997)",
+        "Kokov (2008)",
+        "Kardanov (1957)"
+      ],
+      "meanings": {
+        "tr": "kaptan, gemici, dumenci",
+        "en": "captain, sea-captain, helmsman",
+        "ru": "рулевой, корабельщик"
+      }
+    },
+    "notes": "кхъухь (gemi) + зехуэ (suren) = kaptan. 4 sozluk."
+  },
+  {
+    "id": "L-KKHUXYBELAGHE",
+    "form": "кхъухьбэлагъ",
+    "ipa": "/q͡χʷəħbalaːʁ/",
+    "literalMeaning": "gemi kolu",
+    "derivation": {
+      "rootIds": [
+        "R-KKHUXY"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-KKHUXY",
+    "conceptId": "OAR",
+    "dialectVariants": {
+      "adyghe": "къухьэбэлагъ",
+      "kabardian": "кхъухьбэлагъ"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 8,
+      "sources": [
+        "Apashev (2008)",
+        "Yamisha (2018)",
+        "Yamisha (2023)",
+        "Gish (0000)",
+        "Kokov (2008)",
+        "Sherdjes Aliy (1994)"
+      ],
+      "meanings": {
+        "tr": "kurek",
+        "en": "oar, paddle",
+        "ru": "весло"
+      }
+    },
+    "notes": "кхъухь (gemi) + бэлагъ (kol) = kurek. 8 sozluk."
+  },
+  {
+    "id": "L-KKHUXYTET",
+    "form": "кхъухьтет",
+    "ipa": "/q͡χʷəħtat/",
+    "literalMeaning": "gemide oturan",
+    "derivation": {
+      "rootIds": [
+        "R-KKHUXY"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-KKHUXY",
+    "conceptId": "CAPTAIN",
+    "dialectVariants": {
+      "adyghe": "къухьэтет",
+      "kabardian": "кхъухьтет"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 2,
+      "sources": [
+        "Apashev (2008)",
+        "Kokov (2008)"
+      ],
+      "meanings": {
+        "tr": "kaptan",
+        "en": "captain",
+        "ru": "капитан"
+      }
+    },
+    "notes": "кхъухь (gemi) + тет (oturan) = kaptan. 2 sozluk. Апашев: кхъухьым и унафэщӀ (gemini kumandani)."
   }
 ]

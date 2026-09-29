@@ -1345,5 +1345,45 @@
     "confidence": 1.0,
     "evidenceSource": "dictionary",
     "reference": "Apashev (2008), Kardanov (1957)"
+  },
+  {
+    "id": "SR-KKHUXY-AIRPLANE",
+    "source": "R-KKHUXY",
+    "target": "L-KKHUXYLHYATE",
+    "type": "compound",
+    "evidence": "кхъухьлъатэ",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary",
+    "reference": "Apashev (2008), Kardanov (1957)"
+  },
+  {
+    "id": "SR-KKHUXY-CAPTAIN",
+    "source": "R-KKHUXY",
+    "target": "L-KKHUXYZEXUE",
+    "type": "compound",
+    "evidence": "кхъухьзехуэ",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary",
+    "reference": "Apashev (2008), Kardanov (1957)"
+  },
+  {
+    "id": "SR-KKHUXY-OAR",
+    "source": "R-KKHUXY",
+    "target": "L-KKHUXYBELAGHE",
+    "type": "compound",
+    "evidence": "кхъухьбэлагъ",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary",
+    "reference": "Apashev (2008), Sherdjes Aliy (1994)"
+  },
+  {
+    "id": "SR-KKHUXY-CAPTAIN2",
+    "source": "R-KKHUXY",
+    "target": "L-KKHUXYTET",
+    "type": "compound",
+    "evidence": "кхъухьтет",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary",
+    "reference": "Apashev (2008), Kokov (2008)"
   }
 ]

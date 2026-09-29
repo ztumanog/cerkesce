@@ -1647,5 +1647,30 @@
       "compoundCount": 2
     },
     "notes": "Vadi/dere koku."
+  },
+  {
+    "id": "R-KKHUXY",
+    "form": "кхъухь",
+    "ipa": "/q͡χʷəħ/",
+    "primaryMeaning": "gemi",
+    "secondaryMeanings": [
+      "vapur",
+      "tekne",
+      "gemiyle"
+    ],
+    "semanticDomains": [
+      "ulasim",
+      "deniz"
+    ],
+    "dialectVariants": {
+      "adyghe": "къухьэ",
+      "kabardian": "кхъухь"
+    },
+    "productivity": {
+      "lemmaCount": 12,
+      "corpusFrequency": 0,
+      "compoundCount": 11
+    },
+    "notes": "Gemi koku. Adigece: къухьэ. Kabardeyce: кхъухь. 11 sozluk kaynagi."
   }
 ]
