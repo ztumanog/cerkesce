@@ -5882,7 +5882,7 @@
     "wordFamilyId": "WF-SHXUE",
     "conceptId": "FLOOD",
     "dialectVariants": {
-      "adyghe": "псышъуэ",
+      "adyghe": "псышхуэ",
       "kabardian": "псышхуэ"
     },
     "dictionaryEvidence": {
@@ -5915,7 +5915,7 @@
     "wordFamilyId": "WF-SHXUE",
     "conceptId": "AGED",
     "dialectVariants": {
-      "adyghe": "ныбжьышъуэ",
+      "adyghe": "ныбжьышхуэ",
       "kabardian": "ныбжьышхуэ"
     },
     "dictionaryEvidence": {
@@ -5948,7 +5948,7 @@
     "wordFamilyId": "WF-SHXUE",
     "conceptId": "HOUSE",
     "dialectVariants": {
-      "adyghe": "унэшъуэ",
+      "adyghe": "унэшхуэ",
       "kabardian": "унэшхуэ"
     },
     "notes": "унэ (ev) + шхуэ (buyuk) = buyuk ev. Aile reisi odasi."
@@ -5971,7 +5971,7 @@
     "wordFamilyId": "WF-SHXUE",
     "conceptId": "BRAVE",
     "dialectVariants": {
-      "adyghe": "гушъуэ",
+      "adyghe": "гушхуэ",
       "kabardian": "гушхуэ"
     },
     "notes": "гу (kalp) + шхуэ (buyuk) = buyuk kalpli -> cesur."
@@ -5994,7 +5994,7 @@
     "wordFamilyId": "WF-SHXUE",
     "conceptId": "IMPORTANT",
     "dialectVariants": {
-      "adyghe": "Iофышъуэ",
+      "adyghe": "Ӏуэхушхуэ",
       "kabardian": "Ӏуэхушхуэ"
     },
     "notes": "Ӏуэху (is) + шхуэ (buyuk) = buyuk is -> onemli is."
@@ -6017,7 +6017,7 @@
     "wordFamilyId": "WF-SHXUE",
     "conceptId": "FIRE",
     "dialectVariants": {
-      "adyghe": "машIуэшъуэ",
+      "adyghe": "мафӀэшхуэ",
       "kabardian": "мафӀэшхуэ"
     },
     "notes": "мафӀэ (ates) + шхуэ (buyuk) = buyuk ates -> yangin. Metin kaniti var."
@@ -6040,7 +6040,7 @@
     "wordFamilyId": "WF-SHXUE",
     "conceptId": "GRANDFATHER",
     "dialectVariants": {
-      "adyghe": "адэшъуэ",
+      "adyghe": "адэшхуэ",
       "kabardian": "адэшхуэ"
     },
     "notes": "адэ (baba) + шхуэ (buyuk) = buyuk baba -> dede."
@@ -6063,7 +6063,7 @@
     "wordFamilyId": "WF-SHXUE",
     "conceptId": "GRANDMOTHER",
     "dialectVariants": {
-      "adyghe": "анэшъуэ",
+      "adyghe": "анэшхуэ",
       "kabardian": "анэшхуэ"
     },
     "notes": "анэ (anne) + шхуэ (buyuk) = buyuk anne -> buyukanne."
@@ -6086,7 +6086,7 @@
     "wordFamilyId": "WF-SHXUE",
     "conceptId": "HOLIDAY",
     "dialectVariants": {
-      "adyghe": "мафэшъуэ",
+      "adyghe": "махуэшхуэ",
       "kabardian": "махуэшхуэ"
     },
     "notes": "махуэ (gun) + шхуэ (buyuk) = buyuk gun -> bayram."
@@ -6211,7 +6211,7 @@
     "wordFamilyId": "WF-C1YQ1U",
     "conceptId": "TRIVIAL",
     "dialectVariants": {
-      "adyghe": "IофыцӀыкӀу",
+      "adyghe": "ӀуэхуцӀыкӀу",
       "kabardian": "ӀуэхуцӀыкӀу"
     },
     "notes": "Ӏуэху (is) + цӀыкӀу (kucuk) = kucuk is -> onemsiz is."
@@ -6234,7 +6234,7 @@
     "wordFamilyId": "WF-C1YQ1U",
     "conceptId": "SPARK",
     "dialectVariants": {
-      "adyghe": "машIуэцӀыкӀу",
+      "adyghe": "мафӀэцӀыкӀу",
       "kabardian": "мафӀэцӀыкӀу"
     },
     "notes": "мафӀэ (ates) + цӀыкӀу (kucuk) = kucuk ates -> kivilcim."
