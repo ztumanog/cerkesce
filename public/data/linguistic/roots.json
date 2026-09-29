@@ -21,8 +21,10 @@
     },
     "productivity": {
       "lemmaCount": 47,
-      "corpusFrequency": 52291,
-      "compoundCount": 22
+      "corpusFrequency": 22788,
+      "compoundCount": 22,
+      "adyFreq": 5995,
+      "kbdFreq": 16793
     },
     "notes": "Adyghe Web Corpus: 47 farkli lemma, 52.291 sonuc. En uretken somatik kok."
   },
@@ -46,8 +48,10 @@
     },
     "productivity": {
       "lemmaCount": 30,
-      "corpusFrequency": 15000,
-      "compoundCount": 15
+      "corpusFrequency": 9846,
+      "compoundCount": 15,
+      "adyFreq": 895,
+      "kbdFreq": 8951
     },
     "notes": "130+ deyimde kurucu onek. Metaforik zincir: HEAD -> TOP -> REASON"
   },
@@ -71,8 +75,10 @@
     },
     "productivity": {
       "lemmaCount": 25,
-      "corpusFrequency": 10000,
-      "compoundCount": 12
+      "corpusFrequency": 21883,
+      "compoundCount": 12,
+      "adyFreq": 5959,
+      "kbdFreq": 15924
     },
     "notes": "111+ deyimde kurucu. Turevler: напс (gozyasi), нэгу (yuz), наф (kor)"
   },
@@ -95,7 +101,9 @@
     },
     "productivity": {
       "lemmaCount": 20,
-      "corpusFrequency": 8000
+      "corpusFrequency": 6326,
+      "adyFreq": 2420,
+      "kbdFreq": 3906
     },
     "notes": "Doga koku. напс (gozyasi) = нэ + псэ bilesimi."
   },
@@ -119,7 +127,10 @@
     "productivity": {
       "lemmaCount": 7,
       "compoundCount": 6,
-      "dictionarySources": 10
+      "dictionarySources": 10,
+      "corpusFrequency": 125,
+      "adyFreq": 12,
+      "kbdFreq": 113
     },
     "derivedWords": [
       {
@@ -175,8 +186,10 @@
     },
     "productivity": {
       "lemmaCount": 15,
-      "corpusFrequency": 5000,
-      "compoundCount": 8
+      "corpusFrequency": 11294,
+      "compoundCount": 8,
+      "adyFreq": 2880,
+      "kbdFreq": 8414
     },
     "derivedWords": [
       {
@@ -219,7 +232,10 @@
     },
     "productivity": {
       "lemmaCount": 10,
-      "compoundCount": 5
+      "compoundCount": 5,
+      "corpusFrequency": 10729,
+      "adyFreq": 4531,
+      "kbdFreq": 6198
     },
     "derivedWords": [
       {
@@ -263,7 +279,10 @@
     },
     "productivity": {
       "lemmaCount": 250,
-      "compoundCount": 100
+      "compoundCount": 100,
+      "corpusFrequency": 7184,
+      "adyFreq": 1928,
+      "kbdFreq": 5256
     },
     "derivedWords": [
       {
@@ -326,8 +345,10 @@
     },
     "productivity": {
       "lemmaCount": 16,
-      "corpusFrequency": 3000,
-      "compoundCount": 16
+      "corpusFrequency": 4747,
+      "compoundCount": 16,
+      "adyFreq": 1548,
+      "kbdFreq": 3199
     },
     "notes": "Wiktionary + 16 türev. Etimoloji: u(n) insan + -nэ kap/yuva. Kültürel: ev = aile ocağı."
   },
@@ -353,8 +374,10 @@
     },
     "productivity": {
       "lemmaCount": 40,
-      "corpusFrequency": 12000,
-      "compoundCount": 40
+      "corpusFrequency": 1294,
+      "compoundCount": 40,
+      "adyFreq": 353,
+      "kbdFreq": 941
     },
     "notes": "40+ türev. -пӀэ eki fiil köklerine eklenerek yer/mekân ismi türetir. İkincil anlam: kap/örtü (пӀэтепхъуэ)."
   },
@@ -380,7 +403,10 @@
     "productivity": {
       "lemmaCount": 18,
       "dictionarySources": 18,
-      "compoundCount": 1
+      "compoundCount": 1,
+      "corpusFrequency": 384,
+      "adyFreq": 41,
+      "kbdFreq": 343
     },
     "derivedWords": [
       {
@@ -418,7 +444,10 @@
     },
     "productivity": {
       "lemmaCount": 18,
-      "dictionarySources": 18
+      "dictionarySources": 18,
+      "corpusFrequency": 827,
+      "adyFreq": 154,
+      "kbdFreq": 673
     },
     "derivedWords": [
       {
@@ -451,7 +480,10 @@
     },
     "productivity": {
       "lemmaCount": 19,
-      "dictionarySources": 19
+      "dictionarySources": 19,
+      "corpusFrequency": 822,
+      "adyFreq": 559,
+      "kbdFreq": 263
     },
     "derivedWords": [
       {
@@ -488,7 +520,10 @@
     },
     "productivity": {
       "lemmaCount": 19,
-      "dictionarySources": 19
+      "dictionarySources": 19,
+      "corpusFrequency": 1427,
+      "adyFreq": 827,
+      "kbdFreq": 600
     },
     "derivedWords": [
       {
@@ -536,7 +571,10 @@
     },
     "productivity": {
       "lemmaCount": 21,
-      "dictionarySources": 7
+      "dictionarySources": 7,
+      "corpusFrequency": 32267,
+      "adyFreq": 11115,
+      "kbdFreq": 21152
     },
     "derivedWords": [
       {
@@ -576,7 +614,10 @@
     },
     "productivity": {
       "lemmaCount": 2,
-      "dictionarySources": 19
+      "dictionarySources": 19,
+      "corpusFrequency": 10996,
+      "adyFreq": 8030,
+      "kbdFreq": 2966
     },
     "derivedWords": [
       {
@@ -615,7 +656,10 @@
     },
     "productivity": {
       "lemmaCount": 15,
-      "dictionarySources": 15
+      "dictionarySources": 15,
+      "corpusFrequency": 1487,
+      "adyFreq": 697,
+      "kbdFreq": 790
     },
     "derivedWords": [
       {
@@ -659,7 +703,10 @@
     },
     "productivity": {
       "lemmaCount": 20,
-      "dictionarySources": 11
+      "dictionarySources": 11,
+      "corpusFrequency": 9435,
+      "adyFreq": 1,
+      "kbdFreq": 9434
     },
     "derivedWords": [
       {
@@ -709,7 +756,10 @@
     },
     "productivity": {
       "lemmaCount": 15,
-      "dictionarySources": 5
+      "dictionarySources": 5,
+      "corpusFrequency": 9383,
+      "adyFreq": 2318,
+      "kbdFreq": 7065
     },
     "derivedWords": [
       {
@@ -749,7 +799,10 @@
     },
     "productivity": {
       "lemmaCount": 19,
-      "dictionarySources": 19
+      "dictionarySources": 19,
+      "corpusFrequency": 352,
+      "adyFreq": 144,
+      "kbdFreq": 208
     },
     "derivedWords": [
       {
@@ -790,7 +843,10 @@
     },
     "productivity": {
       "lemmaCount": 8,
-      "dictionarySources": 12
+      "dictionarySources": 12,
+      "corpusFrequency": 2777,
+      "adyFreq": 816,
+      "kbdFreq": 1961
     },
     "derivedWords": [
       {
@@ -829,7 +885,10 @@
     },
     "productivity": {
       "lemmaCount": 10,
-      "dictionarySources": 18
+      "dictionarySources": 18,
+      "corpusFrequency": 3156,
+      "adyFreq": 816,
+      "kbdFreq": 2340
     },
     "derivedWords": [
       {
@@ -868,7 +927,10 @@
     },
     "productivity": {
       "lemmaCount": 10,
-      "dictionarySources": 13
+      "dictionarySources": 13,
+      "corpusFrequency": 331,
+      "adyFreq": 0,
+      "kbdFreq": 331
     },
     "derivedWords": [
       {
@@ -920,7 +982,10 @@
     },
     "productivity": {
       "lemmaCount": 25,
-      "dictionarySources": 2
+      "dictionarySources": 2,
+      "corpusFrequency": 743,
+      "adyFreq": 172,
+      "kbdFreq": 571
     },
     "derivedWords": [
       {
@@ -975,7 +1040,10 @@
     },
     "productivity": {
       "lemmaCount": 20,
-      "dictionarySources": 4
+      "dictionarySources": 4,
+      "corpusFrequency": 464,
+      "adyFreq": 0,
+      "kbdFreq": 464
     },
     "derivedWords": [
       {
@@ -1031,7 +1099,10 @@
     },
     "productivity": {
       "lemmaCount": 25,
-      "dictionarySources": 18
+      "dictionarySources": 18,
+      "corpusFrequency": 1637,
+      "adyFreq": 500,
+      "kbdFreq": 1137
     },
     "derivedWords": [
       {
@@ -1090,7 +1161,10 @@
     },
     "productivity": {
       "lemmaCount": 15,
-      "dictionarySources": 9
+      "dictionarySources": 9,
+      "corpusFrequency": 236,
+      "adyFreq": 7,
+      "kbdFreq": 229
     },
     "derivedWords": [
       {
@@ -1132,7 +1206,10 @@
     },
     "productivity": {
       "lemmaCount": 20,
-      "dictionarySources": 12
+      "dictionarySources": 12,
+      "corpusFrequency": 2031,
+      "adyFreq": 897,
+      "kbdFreq": 1134
     },
     "derivedWords": [
       {
@@ -1178,7 +1255,10 @@
     },
     "productivity": {
       "lemmaCount": 5,
-      "dictionarySources": 10
+      "dictionarySources": 10,
+      "corpusFrequency": 2031,
+      "adyFreq": 897,
+      "kbdFreq": 1134
     },
     "derivedWords": [
       {
@@ -1215,7 +1295,10 @@
     },
     "productivity": {
       "lemmaCount": 10,
-      "dictionarySources": 5
+      "dictionarySources": 5,
+      "corpusFrequency": 1360,
+      "adyFreq": 1118,
+      "kbdFreq": 242
     },
     "derivedWords": [
       {
@@ -1262,7 +1345,10 @@
     },
     "productivity": {
       "lemmaCount": 10,
-      "dictionarySources": 12
+      "dictionarySources": 12,
+      "corpusFrequency": 736,
+      "adyFreq": 45,
+      "kbdFreq": 691
     },
     "derivedWords": [
       {
@@ -1309,7 +1395,10 @@
     },
     "productivity": {
       "lemmaCount": 15,
-      "dictionarySources": 9
+      "dictionarySources": 9,
+      "corpusFrequency": 855,
+      "adyFreq": 12,
+      "kbdFreq": 843
     },
     "derivedWords": [
       {
@@ -1358,8 +1447,10 @@
     },
     "productivity": {
       "lemmaCount": 13,
-      "corpusFrequency": 0,
-      "compoundCount": 0
+      "corpusFrequency": 5403,
+      "compoundCount": 0,
+      "adyFreq": 2009,
+      "kbdFreq": 3394
     },
     "notes": "Ruh/can koku. R-PSY (su) ile fonetik-semantik iliskili ama AYRI kok."
   },
@@ -1382,8 +1473,10 @@
     },
     "productivity": {
       "lemmaCount": 1,
-      "corpusFrequency": 0,
-      "compoundCount": 1
+      "corpusFrequency": 1092,
+      "compoundCount": 1,
+      "adyFreq": 404,
+      "kbdFreq": 688
     },
     "notes": "Yilan koku. псыблэ (su yilani) bilesiginde kullanilir."
   },
@@ -1406,8 +1499,10 @@
     },
     "productivity": {
       "lemmaCount": 5,
-      "corpusFrequency": 0,
-      "compoundCount": 2
+      "corpusFrequency": 1301,
+      "compoundCount": 2,
+      "adyFreq": 506,
+      "kbdFreq": 795
     },
     "notes": "Ordu koku. Adigece ve Kabardeyce ayni."
   },
@@ -1430,8 +1525,10 @@
     },
     "productivity": {
       "lemmaCount": 2,
-      "corpusFrequency": 0,
-      "compoundCount": 1
+      "corpusFrequency": 511,
+      "compoundCount": 1,
+      "adyFreq": 0,
+      "kbdFreq": 511
     },
     "notes": "Kar koku. уэсэпс (cig) bilesiginde kullanilir."
   },
@@ -1454,8 +1551,10 @@
     },
     "productivity": {
       "lemmaCount": 2,
-      "corpusFrequency": 0,
-      "compoundCount": 1
+      "corpusFrequency": 122,
+      "compoundCount": 1,
+      "adyFreq": 0,
+      "kbdFreq": 122
     },
     "notes": "Kuyu koku. псыкъуий (kuyu) bilesiginde kullanilir."
   },
@@ -1477,8 +1576,10 @@
     },
     "productivity": {
       "lemmaCount": 2,
-      "corpusFrequency": 0,
-      "compoundCount": 1
+      "corpusFrequency": 69,
+      "compoundCount": 1,
+      "adyFreq": 0,
+      "kbdFreq": 69
     },
     "notes": "Ordek koku. псыбабыщ (ordek) bilesiginde kullanilir."
   },
@@ -1501,8 +1602,10 @@
     },
     "productivity": {
       "lemmaCount": 2,
-      "corpusFrequency": 0,
-      "compoundCount": 1
+      "corpusFrequency": 268,
+      "compoundCount": 1,
+      "adyFreq": 1,
+      "kbdFreq": 267
     },
     "notes": "Kus koku. псыбзу (su kusu) bilesiginde kullanilir."
   },
@@ -1524,8 +1627,10 @@
     },
     "productivity": {
       "lemmaCount": 2,
-      "corpusFrequency": 0,
-      "compoundCount": 1
+      "corpusFrequency": 594,
+      "compoundCount": 1,
+      "adyFreq": 26,
+      "kbdFreq": 568
     },
     "notes": "Tavuk koku. псыджэд (su tavugu) bilesiginde kullanilir."
   },
@@ -1548,8 +1653,10 @@
     },
     "productivity": {
       "lemmaCount": 3,
-      "corpusFrequency": 0,
-      "compoundCount": 2
+      "corpusFrequency": 104,
+      "compoundCount": 2,
+      "adyFreq": 0,
+      "kbdFreq": 104
     },
     "notes": "Buyukluk koku."
   },
@@ -1572,8 +1679,10 @@
     },
     "productivity": {
       "lemmaCount": 3,
-      "corpusFrequency": 0,
-      "compoundCount": 2
+      "corpusFrequency": 2322,
+      "compoundCount": 2,
+      "adyFreq": 551,
+      "kbdFreq": 1771
     },
     "notes": "Kucukluk koku."
   },
@@ -1595,8 +1704,10 @@
     },
     "productivity": {
       "lemmaCount": 2,
-      "corpusFrequency": 0,
-      "compoundCount": 1
+      "corpusFrequency": 323,
+      "compoundCount": 1,
+      "adyFreq": 0,
+      "kbdFreq": 323
     },
     "notes": "Sevruga koku. Apashev: sevryuga. Kardanov: krupnaya ryba."
   },
@@ -1619,8 +1730,10 @@
     },
     "productivity": {
       "lemmaCount": 2,
-      "corpusFrequency": 0,
-      "compoundCount": 1
+      "corpusFrequency": 7,
+      "compoundCount": 1,
+      "adyFreq": 0,
+      "kbdFreq": 7
     },
     "notes": "Taskin yatagi koku."
   },
@@ -1643,8 +1756,10 @@
     },
     "productivity": {
       "lemmaCount": 3,
-      "corpusFrequency": 0,
-      "compoundCount": 2
+      "corpusFrequency": 3144,
+      "compoundCount": 2,
+      "adyFreq": 0,
+      "kbdFreq": 3144
     },
     "notes": "Vadi/dere koku."
   },
@@ -1668,8 +1783,10 @@
     },
     "productivity": {
       "lemmaCount": 12,
-      "corpusFrequency": 0,
-      "compoundCount": 11
+      "corpusFrequency": 741,
+      "compoundCount": 11,
+      "adyFreq": 257,
+      "kbdFreq": 484
     },
     "notes": "Gemi koku. Adigece: къухьэ. Kabardeyce: кхъухь. 11 sozluk kaynagi."
   },
@@ -1692,8 +1809,10 @@
     },
     "productivity": {
       "lemmaCount": 5,
-      "corpusFrequency": 16385,
-      "compoundCount": 3
+      "corpusFrequency": 4262,
+      "compoundCount": 3,
+      "adyFreq": 1118,
+      "kbdFreq": 3144
     },
     "notes": "Ogul koku. Adigece: къо. Homonym: къуэ (vadi). Korpus: 16385."
   },
@@ -1717,8 +1836,10 @@
     },
     "productivity": {
       "lemmaCount": 2,
-      "corpusFrequency": 0,
-      "compoundCount": 0
+      "corpusFrequency": 556,
+      "compoundCount": 0,
+      "adyFreq": 0,
+      "kbdFreq": 556
     },
     "notes": "Pekistirme koku. хуабжьу (zarf) = cok, asiri, hizli. 10 sozluk."
   },
@@ -1740,8 +1861,10 @@
     },
     "productivity": {
       "lemmaCount": 1,
-      "corpusFrequency": 0,
-      "compoundCount": 0
+      "corpusFrequency": 2,
+      "compoundCount": 0,
+      "adyFreq": 0,
+      "kbdFreq": 2
     },
     "notes": "Ardic koku. Apashev (2008), Kokov (2008), Sherdjes Aliy (1994)."
   },
@@ -1763,8 +1886,10 @@
     },
     "productivity": {
       "lemmaCount": 2,
-      "corpusFrequency": 389,
-      "compoundCount": 1
+      "corpusFrequency": 966,
+      "compoundCount": 1,
+      "adyFreq": 102,
+      "kbdFreq": 864
     },
     "notes": "Kardes koku. Adigece: къош. Korpus: 389."
   },
@@ -1787,7 +1912,10 @@
     },
     "productivity": {
       "lemmaCount": 10,
-      "dictionarySources": 18
+      "dictionarySources": 18,
+      "corpusFrequency": 1525,
+      "adyFreq": 311,
+      "kbdFreq": 1214
     },
     "derivedWords": [
       {
@@ -1840,7 +1968,10 @@
     },
     "productivity": {
       "lemmaCount": 5,
-      "compoundCount": 3
+      "compoundCount": 3,
+      "corpusFrequency": 2920,
+      "adyFreq": 855,
+      "kbdFreq": 2065
     },
     "derivedWords": [
       {
@@ -1877,7 +2008,10 @@
     },
     "productivity": {
       "lemmaCount": 5,
-      "compoundCount": 3
+      "compoundCount": 3,
+      "corpusFrequency": 1209,
+      "adyFreq": 287,
+      "kbdFreq": 922
     },
     "derivedWords": [
       {
@@ -1915,7 +2049,10 @@
     },
     "productivity": {
       "lemmaCount": 6,
-      "compoundCount": 4
+      "compoundCount": 4,
+      "corpusFrequency": 5292,
+      "adyFreq": 975,
+      "kbdFreq": 4317
     },
     "derivedWords": [
       {
@@ -1947,7 +2084,10 @@
     },
     "productivity": {
       "lemmaCount": 8,
-      "compoundCount": 5
+      "compoundCount": 5,
+      "corpusFrequency": 3783,
+      "adyFreq": 1487,
+      "kbdFreq": 2296
     },
     "derivedWords": [
       {
@@ -1979,7 +2119,10 @@
     },
     "productivity": {
       "lemmaCount": 4,
-      "compoundCount": 2
+      "compoundCount": 2,
+      "corpusFrequency": 222,
+      "adyFreq": 25,
+      "kbdFreq": 197
     },
     "derivedWords": [
       {
@@ -2011,7 +2154,10 @@
     },
     "productivity": {
       "lemmaCount": 3,
-      "compoundCount": 2
+      "compoundCount": 2,
+      "corpusFrequency": 65,
+      "adyFreq": 14,
+      "kbdFreq": 51
     },
     "derivedWords": [
       {
@@ -2043,7 +2189,10 @@
     },
     "productivity": {
       "lemmaCount": 3,
-      "compoundCount": 2
+      "compoundCount": 2,
+      "corpusFrequency": 99,
+      "adyFreq": 3,
+      "kbdFreq": 96
     },
     "derivedWords": [
       {
