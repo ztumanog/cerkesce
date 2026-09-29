@@ -6430,5 +6430,71 @@
       }
     },
     "notes": "анэ (anne) + шыпхъу (kiz kardes) = teyze."
+  },
+  {
+    "id": "L-TETAZH",
+    "form": "тэтэжъ",
+    "ipa": "/tataʑ/",
+    "literalMeaning": "yash dede",
+    "derivation": {
+      "rootIds": [
+        "R-TETE"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-TETE",
+    "conceptId": "GRANDFATHER",
+    "dialectVariants": {
+      "adyghe": "тэтэжъ",
+      "kabardian": "адэшхуэ"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 3,
+      "sources": [
+        "Huvaj (2007)",
+        "Ацумыжъ (2013)",
+        "ТӀэшъу (1991)"
+      ],
+      "meanings": {
+        "tr": "dede",
+        "ru": "дед"
+      }
+    },
+    "notes": "ADY dede. тэтэ (dede) + жъ (yash). KBD karsiligi: адэшхуэ. Huvaj (2007): тэтэжъ/дадэ/адэшхуэ varyantlari."
+  },
+  {
+    "id": "L-DADESHHUE",
+    "form": "дадэшхуэ",
+    "ipa": "/daːdaʃxʷa/",
+    "literalMeaning": "buyuk dede",
+    "derivation": {
+      "rootIds": [
+        "R-DADE"
+      ],
+      "morphemeIds": [
+        "M-SHXUE"
+      ],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-DADE",
+    "conceptId": "GREAT_GRANDFATHER",
+    "dialectVariants": {
+      "adyghe": "дадэшхуэ",
+      "kabardian": "дадэшхуэ"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 3,
+      "sources": [
+        "Gish (KBD)",
+        "Kabardeyce Wiktionary (2023)",
+        "Apaşev (2008)"
+      ],
+      "meanings": {
+        "tr": "buyuk dede (KBD) / dede (ADY)",
+        "ru": "прадед / дед"
+      }
+    },
+    "notes": "дадэ (dede) + шхуэ (buyuk). KBD: great-grandfather. ADY: адэшхуэ ile esanlamli (Apasev 2008)."
   }
 ]

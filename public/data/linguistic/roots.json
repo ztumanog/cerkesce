@@ -1992,5 +1992,65 @@
       }
     ],
     "notes": "Kiz kardes koku. Akrabalik terimlerinde kullanilir: адэ/анэ + шыпхъу. Kaynak: Адыгэ-урыс псалъалъэ (2008)."
+  },
+  {
+    "id": "R-TETE",
+    "form": "тэтэ",
+    "ipa": "/tata/",
+    "primaryMeaning": "dede (kok)",
+    "secondaryMeanings": [
+      "buyukbaba"
+    ],
+    "semanticDomains": [
+      "kinship",
+      "family"
+    ],
+    "dialectVariants": {
+      "adyghe": "тэтэ",
+      "kabardian": "тэтэ"
+    },
+    "productivity": {
+      "lemmaCount": 3,
+      "compoundCount": 2
+    },
+    "derivedWords": [
+      {
+        "form": "тэтэжъ",
+        "meaning": "dede (yash)"
+      },
+      {
+        "form": "тэтэшхуэ",
+        "meaning": "buyuk dede"
+      }
+    ],
+    "notes": "Dede koku (ADY agirlikli). Kaynak: Huvaj (2007), Ацумыжъ (2013)."
+  },
+  {
+    "id": "R-DADE",
+    "form": "дадэ",
+    "ipa": "/daːda/",
+    "primaryMeaning": "dede",
+    "secondaryMeanings": [
+      "buyukbaba"
+    ],
+    "semanticDomains": [
+      "kinship",
+      "family"
+    ],
+    "dialectVariants": {
+      "adyghe": "дадэ",
+      "kabardian": "дадэ"
+    },
+    "productivity": {
+      "lemmaCount": 3,
+      "compoundCount": 2
+    },
+    "derivedWords": [
+      {
+        "form": "дадэшхуэ",
+        "meaning": "buyuk dede (KBD)"
+      }
+    ],
+    "notes": "Dede koku (ADY Abzeh + KBD). Kaynak: Huvaj (2007), Wiktionary (KBD), Gish."
   }
 ]
