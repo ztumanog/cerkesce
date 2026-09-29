@@ -1386,5 +1386,29 @@
       "compoundCount": 1
     },
     "notes": "Yilan koku. псыблэ (su yilani) bilesiginde kullanilir."
+  },
+  {
+    "id": "R-DZE",
+    "form": "дзэ",
+    "ipa": "/dza/",
+    "primaryMeaning": "ordu",
+    "secondaryMeanings": [
+      "asker",
+      "ordu birligi"
+    ],
+    "semanticDomains": [
+      "savas",
+      "toplum"
+    ],
+    "dialectVariants": {
+      "adyghe": "дзэ",
+      "kabardian": "дзэ"
+    },
+    "productivity": {
+      "lemmaCount": 5,
+      "corpusFrequency": 0,
+      "compoundCount": 2
+    },
+    "notes": "Ordu koku. Adigece ve Kabardeyce ayni."
   }
 ]

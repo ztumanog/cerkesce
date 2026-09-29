@@ -3661,5 +3661,232 @@
       }
     },
     "notes": "нэ (goz) + бдзэ = kas."
+  },
+  {
+    "id": "L-BZEGU",
+    "form": "бзэгу",
+    "ipa": "/bzaɡʷə/",
+    "literalMeaning": "dilin merkezi",
+    "derivation": {
+      "rootIds": [
+        "R-BZE",
+        "R-GU"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-BZE",
+    "conceptId": "TONGUE",
+    "dialectVariants": {
+      "adyghe": "бзэгу",
+      "kabardian": "бзэгу"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 2,
+      "sources": [
+        "Sentez Raporu (2026)",
+        "Wiktionary (2023)"
+      ],
+      "meanings": {
+        "tr": "dil (organ)",
+        "en": "tongue",
+        "ru": "язык (орган)"
+      }
+    },
+    "notes": "бзэ (dil) + гу (merkez) = anatomik dil."
+  },
+  {
+    "id": "L-BZEDYDHU",
+    "form": "бзэдыд",
+    "ipa": "/bzadəd/",
+    "literalMeaning": "kotu dil",
+    "derivation": {
+      "rootIds": [
+        "R-BZE"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-BZE",
+    "conceptId": "INSULT",
+    "dialectVariants": {
+      "adyghe": "бзэдыд",
+      "kabardian": "бзэдыд"
+    },
+    "notes": "бзэ (dil) + дыд (kotu) = kotu soz, hakaret."
+  },
+  {
+    "id": "L-BZESHXUE",
+    "form": "бзэшхуэ",
+    "ipa": "/bzaʃxʷa/",
+    "literalMeaning": "buyuk dil",
+    "derivation": {
+      "rootIds": [
+        "R-BZE"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-BZE",
+    "conceptId": "LANGUAGE",
+    "dialectVariants": {
+      "adyghe": "бзэшхуэ",
+      "kabardian": "бзэшхуэ"
+    },
+    "notes": "бзэ (dil) + шхуэ (buyuk) = buyuk dil."
+  },
+  {
+    "id": "L-BZEPSE",
+    "form": "бзэпс",
+    "ipa": "/bzaps/",
+    "literalMeaning": "dil bagi",
+    "derivation": {
+      "rootIds": [
+        "R-BZE",
+        "R-PSY"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-BZE",
+    "conceptId": "LINGUISTIC_TIE",
+    "dialectVariants": {
+      "adyghe": "бзэпс",
+      "kabardian": "бзэпс"
+    },
+    "notes": "бзэ (dil) + пс (bag/su) = dil bagi."
+  },
+  {
+    "id": "L-BZEBZA",
+    "form": "бзэбзэ",
+    "ipa": "/bzabza/",
+    "literalMeaning": "dil dil",
+    "derivation": {
+      "rootIds": [
+        "R-BZE"
+      ],
+      "morphemeIds": [],
+      "rule": "reduplication"
+    },
+    "wordFamilyId": "WF-BZE",
+    "conceptId": "STUTTER",
+    "dialectVariants": {
+      "adyghe": "бзэбзэ",
+      "kabardian": "бзэбзэ"
+    },
+    "notes": "бзэ + бзэ = kekeleme."
+  },
+  {
+    "id": "L-PEPC1Y",
+    "form": "пэпцӀ",
+    "ipa": "/papt͡sʼ/",
+    "literalMeaning": "burun yalani",
+    "derivation": {
+      "rootIds": [
+        "R-PE",
+        "R-P1C1"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-PE",
+    "conceptId": "DECEIT",
+    "dialectVariants": {
+      "adyghe": "пэпцӀ",
+      "kabardian": "пэпцӀ"
+    },
+    "notes": "пэ (burun) + пцӀы (yalan) = aldatma."
+  },
+  {
+    "id": "L-PEBZHE",
+    "form": "пэбжьэ",
+    "ipa": "/pabʒa/",
+    "literalMeaning": "burun ucu",
+    "derivation": {
+      "rootIds": [
+        "R-PE"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-PE",
+    "conceptId": "NOSTRIL",
+    "dialectVariants": {
+      "adyghe": "пэбжьэ",
+      "kabardian": "пэбжьэ"
+    },
+    "notes": "пэ (burun) + бжьэ = burun deligi."
+  },
+  {
+    "id": "L-DZE",
+    "form": "дзэ",
+    "ipa": "/dza/",
+    "literalMeaning": "ordu",
+    "derivation": {
+      "rootIds": [
+        "R-DZE"
+      ],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-DZE",
+    "conceptId": "ARMY",
+    "dialectVariants": {
+      "adyghe": "дзэ",
+      "kabardian": "дзэ"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 2,
+      "sources": [
+        "Wiktionary (2023)",
+        "Sentez Raporu (2026)"
+      ],
+      "meanings": {
+        "tr": "ordu",
+        "en": "army",
+        "ru": "армия"
+      }
+    },
+    "notes": "Ordu koku. Temel anlam."
+  },
+  {
+    "id": "L-DZELHYQHU",
+    "form": "дзэлъыхъу",
+    "ipa": "/dzaɬəχʷə/",
+    "literalMeaning": "ordu arayan",
+    "derivation": {
+      "rootIds": [
+        "R-DZE"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-DZE",
+    "conceptId": "RECRUITER",
+    "dialectVariants": {
+      "adyghe": "дзэлъыхъу",
+      "kabardian": "дзэлъыхъу"
+    },
+    "notes": "дзэ (ordu) + лъыхъу (aramak) = asker arayan."
+  },
+  {
+    "id": "L-DZEGHUE",
+    "form": "дзэгъуэ",
+    "ipa": "/dzaɣʷa/",
+    "literalMeaning": "ordu zamani",
+    "derivation": {
+      "rootIds": [
+        "R-DZE"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-DZE",
+    "conceptId": "BATTLE",
+    "dialectVariants": {
+      "adyghe": "дзэгъуэ",
+      "kabardian": "дзэгъуэ"
+    },
+    "notes": "дзэ (ordu) + гъуэ (zaman) = savas zamani."
   }
 ]
