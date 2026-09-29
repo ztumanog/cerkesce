@@ -13,7 +13,7 @@
 | Faz 2 | Translation Platform | CLOSED |
 | Faz 3 | Concept Engine | READY FOR GATE REVIEW |
 | Faz 4 | Data Mapping & Integrity | COMPLETED |
-| Faz 5 | Discovery Engine | IN PROGRESS |
+| Faz 5 | Discovery Engine | COMPLETED (2026-09-29) |
 | Faz C-3 | Linguistic Dataset (Ilk) | COMPLETED |
 | Faz C-4 | Linguistic Dataset (Genisletme) | COMPLETED |
 | Faz C-5 | Semantic Field Expansion | COMPLETED |
