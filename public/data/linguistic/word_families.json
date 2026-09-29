@@ -174,5 +174,73 @@
       "corpusFrequency": 0
     },
     "notes": "Tavuk ailesi. psydzhed (su tavugu) dahil."
+  },
+  {
+    "id": "WF-KUE",
+    "rootId": "R-KUE",
+    "morphemeIds": [],
+    "lexemeIds": [
+      "L-KUE",
+      "L-KUEPSE"
+    ],
+    "productivity": {
+      "totalLexemes": 2,
+      "corpusFrequency": 0
+    },
+    "notes": "Vadi/dere ailesi. къуэпс (damar) dahil."
+  },
+  {
+    "id": "WF-SHXUE",
+    "rootId": "R-SHXUE",
+    "morphemeIds": [],
+    "lexemeIds": [
+      "L-SHXUE",
+      "L-PSYSHXUE"
+    ],
+    "productivity": {
+      "totalLexemes": 2,
+      "corpusFrequency": 0
+    },
+    "notes": "Buyukluk ailesi. псышхуэ (buyuk su) dahil."
+  },
+  {
+    "id": "WF-C1YQ1U",
+    "rootId": "R-C1YQ1U",
+    "morphemeIds": [],
+    "lexemeIds": [
+      "L-C1YQ1U"
+    ],
+    "productivity": {
+      "totalLexemes": 1,
+      "corpusFrequency": 0
+    },
+    "notes": "Kucukluk ailesi."
+  },
+  {
+    "id": "WF-BDZE",
+    "rootId": "R-BDZE",
+    "morphemeIds": [],
+    "lexemeIds": [
+      "L-BDZE",
+      "L-PSYBDZE"
+    ],
+    "productivity": {
+      "totalLexemes": 2,
+      "corpusFrequency": 0
+    },
+    "notes": "Sevruga ailesi. псыбдзэ (su sevrugasi) dahil."
+  },
+  {
+    "id": "WF-NYDZHE",
+    "rootId": "R-NYDZHE",
+    "morphemeIds": [],
+    "lexemeIds": [
+      "L-NYDZHE"
+    ],
+    "productivity": {
+      "totalLexemes": 1,
+      "corpusFrequency": 0
+    },
+    "notes": "Taskin yatagi ailesi."
   }
 ]

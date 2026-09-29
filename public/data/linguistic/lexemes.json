@@ -4928,5 +4928,205 @@
       }
     },
     "notes": "псы (su) + хуабэ (sicak) = sicak su = Pyatigorsk."
+  },
+  {
+    "id": "L-KUE",
+    "form": "къуэ",
+    "ipa": "/qʷa/",
+    "literalMeaning": "vadi, dere",
+    "derivation": {
+      "rootIds": [
+        "R-KUE"
+      ],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-KUE",
+    "conceptId": "VALLEY",
+    "dialectVariants": {
+      "adyghe": "къуэ",
+      "kabardian": "къуэ"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 3,
+      "sources": [
+        "Wiktionary (2023)",
+        "Apashev (2008)",
+        "Kardanov (1957)"
+      ],
+      "meanings": {
+        "tr": "vadi, dere",
+        "en": "valley, ravine",
+        "ru": "долина, овраг"
+      }
+    },
+    "notes": "Vadi/dere koku temel lexeme."
+  },
+  {
+    "id": "L-KUEPSE",
+    "form": "къуэпс",
+    "ipa": "/qʷaps/",
+    "literalMeaning": "vadi suyu",
+    "derivation": {
+      "rootIds": [
+        "R-KUE",
+        "R-PSY"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-KUE",
+    "conceptId": "VEIN",
+    "dialectVariants": {
+      "adyghe": "къуэпс",
+      "kabardian": "къуэпс"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 3,
+      "sources": [
+        "Wiktionary (2023)",
+        "Apashev (2008)",
+        "Kokov (2008)"
+      ],
+      "meanings": {
+        "tr": "damar",
+        "en": "vein, blood vessel",
+        "ru": "жила, кровеносный сосуд"
+      }
+    },
+    "notes": "къуэ (vadi) + пс (su) = damar."
+  },
+  {
+    "id": "L-SHXUE",
+    "form": "шхуэ",
+    "ipa": "/ʃxʷa/",
+    "literalMeaning": "buyuk",
+    "derivation": {
+      "rootIds": [
+        "R-SHXUE"
+      ],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-SHXUE",
+    "conceptId": "BIG",
+    "dialectVariants": {
+      "adyghe": "шхуэ",
+      "kabardian": "шхуэ"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 3,
+      "sources": [
+        "Wiktionary (2023)",
+        "Apashev (2008)",
+        "Kardanov (1957)"
+      ],
+      "meanings": {
+        "tr": "buyuk",
+        "en": "big, large",
+        "ru": "большой"
+      }
+    },
+    "notes": "Buyukluk koku temel lexeme."
+  },
+  {
+    "id": "L-C1YQ1U",
+    "form": "цӀыкӀу",
+    "ipa": "/t͡sʹǝqʷʼǝ/",
+    "literalMeaning": "kucuk",
+    "derivation": {
+      "rootIds": [
+        "R-C1YQ1U"
+      ],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-C1YQ1U",
+    "conceptId": "SMALL",
+    "dialectVariants": {
+      "adyghe": "цӀыкӀу",
+      "kabardian": "цӀыкӀу"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 3,
+      "sources": [
+        "Wiktionary (2023)",
+        "Apashev (2008)",
+        "Kardanov (1957)"
+      ],
+      "meanings": {
+        "tr": "kucuk",
+        "en": "small, little",
+        "ru": "маленький"
+      }
+    },
+    "notes": "Kucukluk koku temel lexeme."
+  },
+  {
+    "id": "L-BDZE",
+    "form": "бдзэ",
+    "ipa": "/bd͡za/",
+    "literalMeaning": "sevruga (buyuk mersin baligi)",
+    "derivation": {
+      "rootIds": [
+        "R-BDZE"
+      ],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-BDZE",
+    "conceptId": "STURGEON",
+    "dialectVariants": {
+      "adyghe": "бдзэ",
+      "kabardian": "бдзэ"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 5,
+      "sources": [
+        "Apashev (2008)",
+        "Kardanov (1957)",
+        "Kokov (2008)",
+        "Amcad Camuha (1997)",
+        "Sherdjes Aliy (1994)"
+      ],
+      "meanings": {
+        "tr": "sevruga (buyuk mersin baligi)",
+        "en": "sevruga (stellate sturgeon)",
+        "ru": "севрюга"
+      }
+    },
+    "notes": "Sevruga koku temel lexeme. Genel balik degil!"
+  },
+  {
+    "id": "L-NYDZHE",
+    "form": "ныджэ",
+    "ipa": "/nəd͡ʒa/",
+    "literalMeaning": "taskin yatagi",
+    "derivation": {
+      "rootIds": [
+        "R-NYDZHE"
+      ],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-NYDZHE",
+    "conceptId": "FLOODPLAIN",
+    "dialectVariants": {
+      "adyghe": "ныджэ",
+      "kabardian": "ныджэ"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 2,
+      "sources": [
+        "Wiktionary (2023)",
+        "Apashev (2008)"
+      ],
+      "meanings": {
+        "tr": "nehir taskin yatagi",
+        "en": "floodplain",
+        "ru": "пойма реки"
+      }
+    },
+    "notes": "Taskin yatagi koku temel lexeme."
   }
 ]

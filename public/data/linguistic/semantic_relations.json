@@ -1251,5 +1251,79 @@
     "evidence": "нэпцӀыщ",
     "confidence": 1.0,
     "evidenceSource": "dictionary"
+  },
+  {
+    "id": "SR-KUE-VALLEY",
+    "source": "R-KUE",
+    "target": "L-KUE",
+    "type": "derivational",
+    "evidence": "къуэ",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary",
+    "reference": "Wiktionary (2023), Apashev (2008)"
+  },
+  {
+    "id": "SR-KUE-VEIN",
+    "source": "R-KUE",
+    "target": "L-KUEPSE",
+    "type": "compound",
+    "evidence": "къуэпс",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary"
+  },
+  {
+    "id": "SR-SHXUE-BIG",
+    "source": "R-SHXUE",
+    "target": "L-SHXUE",
+    "type": "derivational",
+    "evidence": "шхуэ",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary"
+  },
+  {
+    "id": "SR-SHXUE-WATERBIG",
+    "source": "R-SHXUE",
+    "target": "L-PSYSHXUE",
+    "type": "compound",
+    "evidence": "псышхуэ",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary"
+  },
+  {
+    "id": "SR-C1YQ1U-SMALL",
+    "source": "R-C1YQ1U",
+    "target": "L-C1YQ1U",
+    "type": "derivational",
+    "evidence": "цӀыкӀу",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary"
+  },
+  {
+    "id": "SR-BDZE-STURGEON",
+    "source": "R-BDZE",
+    "target": "L-BDZE",
+    "type": "derivational",
+    "evidence": "бдзэ",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary",
+    "reference": "Apashev (2008), Kardanov (1957)"
+  },
+  {
+    "id": "SR-BDZE-WATERSTURGEON",
+    "source": "R-BDZE",
+    "target": "L-PSYBDZE",
+    "type": "compound",
+    "evidence": "псыбдзэ",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary"
+  },
+  {
+    "id": "SR-NYDZHE-FLOODPLAIN",
+    "source": "R-NYDZHE",
+    "target": "L-NYDZHE",
+    "type": "derivational",
+    "evidence": "ныджэ",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary"
   }
 ]
