@@ -516,8 +516,7 @@
     "confidence": 1.0,
     "evidenceSource": "dictionary+corpus",
     "notes": "нэ (goz) + ху = isik. Mecazi genisleme."
-  }
-  ,
+  },
   {
     "id": "SR-PE-FLAT_NOSED",
     "source": "R-PE",
@@ -716,5 +715,288 @@
     "confidence": 0.8,
     "evidenceSource": "inferred",
     "notes": "Mekânsal alan: ön + yer. Etimolojik ilişki değil, semantik alan."
+  },
+  {
+    "id": "SR-PSY-LHE",
+    "source": "R-PSY",
+    "target": "L-PSYLHE",
+    "type": "derivational",
+    "evidence": "псылъэ",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary"
+  },
+  {
+    "id": "SR-PSY-1AGHE",
+    "source": "R-PSY",
+    "target": "L-PSY1AGHE",
+    "type": "derivational",
+    "evidence": "псыӀагъэ",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary",
+    "reference": "Kardanov (1957)"
+  },
+  {
+    "id": "SR-PSY-BLE",
+    "source": "R-PSY",
+    "target": "L-PSYBLE",
+    "type": "compound",
+    "evidence": "псыблэ",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary",
+    "reference": "Apashev (2008), Kokov (2008)"
+  },
+  {
+    "id": "SR-PSY-UNE",
+    "source": "R-PSY",
+    "target": "L-PSYUNE",
+    "type": "compound",
+    "evidence": "псыунэ",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary",
+    "reference": "Wiktionary (2023), Yamisha (2018)"
+  },
+  {
+    "id": "SR-PSY-XHEL",
+    "source": "R-PSY",
+    "target": "L-PSYXHEL",
+    "type": "compound",
+    "evidence": "псыхьэл",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary",
+    "reference": "Wiktionary (2023), Hasan (1991)"
+  },
+  {
+    "id": "SR-NE-PS-NAPS",
+    "source": "L-NAPS",
+    "target": "R-NE",
+    "type": "compound",
+    "evidence": "нэпс",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary",
+    "reference": "Wiktionary (2023)"
+  },
+  {
+    "id": "SR-SHE-PS-SHEPS",
+    "source": "L-SHEPS",
+    "target": "R-SHE2",
+    "type": "compound",
+    "evidence": "шэпс",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary",
+    "reference": "Apashev (2008), Kokov (2008)"
+  },
+  {
+    "id": "SR-PSE-LIVE",
+    "source": "R-PSE",
+    "target": "L-PSEUN",
+    "type": "derivational",
+    "evidence": "псэун",
+    "confidence": 1.0,
+    "evidenceSource": "corpus",
+    "corpusFrequency": 851
+  },
+  {
+    "id": "SR-PSE-LIVING",
+    "source": "R-PSE",
+    "target": "L-PSEUSHHE",
+    "type": "derivational",
+    "evidence": "псэущхьэ",
+    "confidence": 1.0,
+    "evidenceSource": "academic",
+    "reference": "Tokmakova (2017)"
+  },
+  {
+    "id": "SR-PSE-RESILIENT",
+    "source": "R-PSE",
+    "target": "L-PSEBYDE",
+    "type": "derivational",
+    "evidence": "псэбыдэ",
+    "confidence": 1.0,
+    "evidenceSource": "academic"
+  },
+  {
+    "id": "SR-PSE-PATIENT",
+    "source": "R-PSE",
+    "target": "L-PSE1UV",
+    "type": "derivational",
+    "evidence": "псэIув",
+    "confidence": 1.0,
+    "evidenceSource": "academic"
+  },
+  {
+    "id": "SR-PSE-LIFELESS",
+    "source": "R-PSE",
+    "target": "L-PSENSHE",
+    "type": "derivational",
+    "evidence": "псэншэ",
+    "confidence": 1.0,
+    "evidenceSource": "academic"
+  },
+  {
+    "id": "SR-PSE-PARTNER",
+    "source": "R-PSE",
+    "target": "L-PSEGHU",
+    "type": "compound",
+    "evidence": "псэгъу",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary"
+  },
+  {
+    "id": "SR-PSE-PEACEFUL",
+    "source": "R-PSE",
+    "target": "L-PSEXU",
+    "type": "compound",
+    "evidence": "псэху",
+    "confidence": 1.0,
+    "evidenceSource": "academic"
+  },
+  {
+    "id": "SR-PSE-COMPASSION",
+    "source": "R-PSE",
+    "target": "L-PSEK1UED",
+    "type": "compound",
+    "evidence": "псэкIуэд",
+    "confidence": 1.0,
+    "evidenceSource": "academic"
+  },
+  {
+    "id": "SR-PSE-TERROR",
+    "source": "R-PSE",
+    "target": "L-PSE1UX",
+    "type": "compound",
+    "evidence": "псэIух",
+    "confidence": 1.0,
+    "evidenceSource": "academic"
+  },
+  {
+    "id": "SR-NE-FACE",
+    "source": "R-NE",
+    "target": "L-NEGU",
+    "type": "compound",
+    "evidence": "нэгу",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary"
+  },
+  {
+    "id": "SR-NE-BLIND",
+    "source": "R-NE",
+    "target": "L-NEF",
+    "type": "derivational",
+    "evidence": "нэф",
+    "confidence": 0.8,
+    "evidenceSource": "academic",
+    "reference": "Sentez Raporu (2026)"
+  },
+  {
+    "id": "SR-NE-LIE",
+    "source": "R-NE",
+    "target": "L-NEPC1Y",
+    "type": "compound",
+    "evidence": "нэпцӀ",
+    "confidence": 0.8,
+    "evidenceSource": "academic"
+  },
+  {
+    "id": "SR-NE-KINDNESS",
+    "source": "R-NE",
+    "target": "L-NEF1",
+    "type": "compound",
+    "evidence": "нэфӀ",
+    "confidence": 0.8,
+    "evidenceSource": "academic"
+  },
+  {
+    "id": "SR-NE-EYEBROW",
+    "source": "R-NE",
+    "target": "L-NABDZE",
+    "type": "compound",
+    "evidence": "набдзэ",
+    "confidence": 1.0,
+    "evidenceSource": "academic"
+  },
+  {
+    "id": "SR-BZE-TONGUE",
+    "source": "R-BZE",
+    "target": "L-BZEGU",
+    "type": "compound",
+    "evidence": "бзэгу",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary",
+    "reference": "Sentez Raporu (2026)"
+  },
+  {
+    "id": "SR-BZE-INSULT",
+    "source": "R-BZE",
+    "target": "L-BZEDYDHU",
+    "type": "compound",
+    "evidence": "бзэдыд",
+    "confidence": 0.8,
+    "evidenceSource": "academic"
+  },
+  {
+    "id": "SR-PE-DECEIT",
+    "source": "R-PE",
+    "target": "L-PEPC1Y",
+    "type": "compound",
+    "evidence": "пэпцӀ",
+    "confidence": 0.8,
+    "evidenceSource": "academic"
+  },
+  {
+    "id": "SR-DZE-RECRUITER",
+    "source": "R-DZE",
+    "target": "L-DZELHYQHU",
+    "type": "compound",
+    "evidence": "дзэлъыхъу",
+    "confidence": 0.8,
+    "evidenceSource": "academic"
+  },
+  {
+    "id": "SR-PSY-PSE-RELATED",
+    "source": "R-PSY",
+    "target": "R-PSE",
+    "type": "related",
+    "evidence": "псы ~ псэ",
+    "confidence": 0.9,
+    "evidenceSource": "academic",
+    "reference": "Sentez Raporu (2026)"
+  },
+  {
+    "id": "SR-PSY-SHXUE",
+    "source": "R-PSY",
+    "target": "L-PSYSHXUE",
+    "type": "compound",
+    "evidence": "псышхуэ",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary"
+  },
+  {
+    "id": "SR-PSY-SNAKE",
+    "source": "R-PSY",
+    "target": "L-PSYBLE",
+    "type": "related",
+    "evidence": "псыблэ",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary"
+  },
+  {
+    "id": "SR-BLE-WATER",
+    "source": "R-BLE",
+    "target": "L-PSYBLE",
+    "type": "compound",
+    "evidence": "псыблэ",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary",
+    "reference": "Apashev (2008), Kokov (2008)"
+  },
+  {
+    "id": "SR-UNE-WATER",
+    "source": "R-UNE",
+    "target": "L-PSYUNE",
+    "type": "compound",
+    "evidence": "псыунэ",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary",
+    "reference": "Wiktionary (2023), Yamisha (2018)"
   }
 ]
