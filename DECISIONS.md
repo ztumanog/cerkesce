@@ -195,3 +195,4 @@ Her faz 3 asamalidir: Charter, Audit, Full Development.
 
 **Imza:** Mimari Ekip
 **Tarih:** 2026-09-26
+
