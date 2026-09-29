@@ -136,4 +136,17 @@ data/corpus/raw/*.jsonl.bak
 data/corpus/cleaned/*.txt
 data/corpus/tokenized/*.jsonl
 data/corpus/frequency/*.json
+!data/corpus/frequency/coverage_report.json
 data/corpus/.hf_cache/
+
+# C-9 coverage raporu takip edilsin (kucuk dosya)
+!data/corpus/frequency/coverage_report.json
+
+# C-9 coverage raporu takip edilsin
+!data/corpus/frequency/coverage_report.json
+
+# C-9 yerel yedekler
+*.bak_c8
+
+# C-9 yerel yedekler
+*.bak_c8
