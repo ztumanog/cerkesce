@@ -1528,5 +1528,124 @@
       "compoundCount": 1
     },
     "notes": "Tavuk koku. псыджэд (su tavugu) bilesiginde kullanilir."
+  },
+  {
+    "id": "R-SHXUE",
+    "form": "шхуэ",
+    "ipa": "/ʃxʷa/",
+    "primaryMeaning": "buyuk",
+    "secondaryMeanings": [
+      "genis",
+      "ulu"
+    ],
+    "semanticDomains": [
+      "nitelik",
+      "boyut"
+    ],
+    "dialectVariants": {
+      "adyghe": "шхуэ",
+      "kabardian": "шхуэ"
+    },
+    "productivity": {
+      "lemmaCount": 3,
+      "corpusFrequency": 0,
+      "compoundCount": 2
+    },
+    "notes": "Buyukluk koku."
+  },
+  {
+    "id": "R-C1YQ1U",
+    "form": "цӀыкӀу",
+    "ipa": "/t͡sʹǝqʷʼǝ/",
+    "primaryMeaning": "kucuk",
+    "secondaryMeanings": [
+      "ufak",
+      "az"
+    ],
+    "semanticDomains": [
+      "nitelik",
+      "boyut"
+    ],
+    "dialectVariants": {
+      "adyghe": "цӀыкӀу",
+      "kabardian": "цӀыкӀу"
+    },
+    "productivity": {
+      "lemmaCount": 3,
+      "corpusFrequency": 0,
+      "compoundCount": 2
+    },
+    "notes": "Kucukluk koku."
+  },
+  {
+    "id": "R-BDZE",
+    "form": "бдзэ",
+    "ipa": "/bd͡za/",
+    "primaryMeaning": "sevrüga (buyuk mersin baligi)",
+    "secondaryMeanings": [
+      "buyuk balik"
+    ],
+    "semanticDomains": [
+      "hayvan",
+      "su"
+    ],
+    "dialectVariants": {
+      "adyghe": "бдзэ",
+      "kabardian": "бдзэ"
+    },
+    "productivity": {
+      "lemmaCount": 2,
+      "corpusFrequency": 0,
+      "compoundCount": 1
+    },
+    "notes": "Sevruga koku. Apashev: sevryuga. Kardanov: krupnaya ryba."
+  },
+  {
+    "id": "R-NYDZHE",
+    "form": "ныджэ",
+    "ipa": "/nəd͡ʒa/",
+    "primaryMeaning": "taskin yatagi",
+    "secondaryMeanings": [
+      "poyma",
+      "dere yatagi"
+    ],
+    "semanticDomains": [
+      "doga",
+      "cografya"
+    ],
+    "dialectVariants": {
+      "adyghe": "ныджэ",
+      "kabardian": "ныджэ"
+    },
+    "productivity": {
+      "lemmaCount": 2,
+      "corpusFrequency": 0,
+      "compoundCount": 1
+    },
+    "notes": "Taskin yatagi koku."
+  },
+  {
+    "id": "R-KUE",
+    "form": "къуэ",
+    "ipa": "/qʷa/",
+    "primaryMeaning": "vadi, dere",
+    "secondaryMeanings": [
+      "cukur",
+      "oyuk"
+    ],
+    "semanticDomains": [
+      "doga",
+      "cografya"
+    ],
+    "dialectVariants": {
+      "adyghe": "къуэ",
+      "kabardian": "къуэ"
+    },
+    "productivity": {
+      "lemmaCount": 3,
+      "corpusFrequency": 0,
+      "compoundCount": 2
+    },
+    "notes": "Vadi/dere koku."
   }
 ]

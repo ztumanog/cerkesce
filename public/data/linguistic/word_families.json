@@ -90,5 +90,89 @@
       "corpusFrequency": 0
     },
     "notes": "Ruh/can ailesi. псэгъу (hayat arkadasi) dahil. R-PSY ailesinden AYRI."
+  },
+  {
+    "id": "WF-UES",
+    "rootId": "R-UES",
+    "morphemeIds": [],
+    "lexemeIds": [
+      "L-UES",
+      "L-UESEPS"
+    ],
+    "productivity": {
+      "totalLexemes": 2,
+      "corpusFrequency": 0
+    },
+    "notes": "Kar ailesi. ueseps (cig) dahil."
+  },
+  {
+    "id": "WF-BLE",
+    "rootId": "R-BLE",
+    "morphemeIds": [],
+    "lexemeIds": [
+      "L-BLE",
+      "L-PSYBLE"
+    ],
+    "productivity": {
+      "totalLexemes": 2,
+      "corpusFrequency": 0
+    },
+    "notes": "Yilan ailesi. psyble (su yilani) dahil."
+  },
+  {
+    "id": "WF-K1UY",
+    "rootId": "R-K1UY",
+    "morphemeIds": [],
+    "lexemeIds": [
+      "L-K1UY",
+      "L-PSYK1UY"
+    ],
+    "productivity": {
+      "totalLexemes": 2,
+      "corpusFrequency": 0
+    },
+    "notes": "Kuyu ailesi. psyk1uy (kuyu) dahil."
+  },
+  {
+    "id": "WF-BZU",
+    "rootId": "R-BZU",
+    "morphemeIds": [],
+    "lexemeIds": [
+      "L-BZU",
+      "L-PSYBZU"
+    ],
+    "productivity": {
+      "totalLexemes": 2,
+      "corpusFrequency": 0
+    },
+    "notes": "Kus ailesi. psybzu (su kusu) dahil."
+  },
+  {
+    "id": "WF-BABYSHCH",
+    "rootId": "R-BABYSHCH",
+    "morphemeIds": [],
+    "lexemeIds": [
+      "L-BABYSHCH",
+      "L-PSYBABYSHCH"
+    ],
+    "productivity": {
+      "totalLexemes": 2,
+      "corpusFrequency": 0
+    },
+    "notes": "Ordek ailesi. psybabyshch (ordek) dahil."
+  },
+  {
+    "id": "WF-DZHED",
+    "rootId": "R-DZHED",
+    "morphemeIds": [],
+    "lexemeIds": [
+      "L-DZHED",
+      "L-PSYDZHED"
+    ],
+    "productivity": {
+      "totalLexemes": 2,
+      "corpusFrequency": 0
+    },
+    "notes": "Tavuk ailesi. psydzhed (su tavugu) dahil."
   }
 ]

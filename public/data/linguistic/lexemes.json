@@ -242,7 +242,8 @@
         }
       ]
     },
-    "notes": "Adigece'de губж, Kabardeyce'de губжь. 12 sozluk + 96 korpus."
+    "notes": "Adigece'de губж, Kabardeyce'de губжь. 12 sozluk + 96 korpus.",
+    "dialectNote": "Ses denkligi: ж (Adigece) <-> жь (Kabardeyce)"
   },
   {
     "id": "L-GUPSYSE",
@@ -526,7 +527,8 @@
       "kabardian": "гущэ"
     },
     "corpusFrequency": 50,
-    "notes": "Adigece karsiligi. Kabardeyce: гущэ. Korpus: 50+ cumle."
+    "notes": "Adigece karsiligi. Kabardeyce: гущэ. Korpus: 50+ cumle.",
+    "dialectNote": "Ses denkligi: кушъэ (Adigece) <-> гущэ (Kabardeyce)"
   },
   {
     "id": "L-1EPKYLEPK",
@@ -670,7 +672,8 @@
         "Tharkaho (1991)"
       ]
     },
-    "notes": "Kabardeyce form: нэ Ӏей. Adigece: нэ Ӏае. Nazar."
+    "notes": "Kabardeyce form: нэ Ӏей. Adigece: нэ Ӏае. Nazar.",
+    "dialectNote": "Unlu degisimi: ае (Adigece) <-> ей (Kabardeyce)"
   },
   {
     "id": "L-NEZHAN",
@@ -698,7 +701,8 @@
         "Tharkaho (1991)"
       ]
     },
-    "notes": "Kabardeyce form: нэ жан. Adigece: нэ чан. Keskin goz."
+    "notes": "Kabardeyce form: нэ жан. Adigece: нэ чан. Keskin goz.",
+    "dialectNote": "Ses denkligi: ч (Adigece) <-> ж (Kabardeyce)"
   },
   {
     "id": "L-NEZAKUE",
@@ -1407,7 +1411,8 @@
         "ru": "колодец, родник, источник"
       }
     },
-    "notes": "псы + -нэ (kap/yuva eki). Etimoloji: su kabi -> kuyu/kaynak. 16 sozluk kaynagi."
+    "notes": "псы + -нэ (kap/yuva eki). Etimoloji: su kabi -> kuyu/kaynak. 16 sozluk kaynagi.",
+    "dialectNote": "Her iki lehcede ayni."
   },
   {
     "id": "L-PSYXHUE",
@@ -1428,13 +1433,16 @@
       "kabardian": "псыхъуэ"
     },
     "dictionaryEvidence": {
-      "sourceCount": 2,
+      "sourceCount": 5,
       "sources": [
         "Wiktionary (2024)",
+        "Apashev (2008)",
+        "Kokov (2008)",
+        "Kardanov (1957)",
         "Korpus (adyghe.web-corpora.net)"
       ],
       "meanings": {
-        "tr": "vadi, nehir yatagi",
+        "tr": "vadi, nehir yatağı",
         "en": "valley, riverbed",
         "ru": "долина, русло реки"
       }
@@ -1468,12 +1476,16 @@
       "kabardian": "псыежэх"
     },
     "dictionaryEvidence": {
-      "sourceCount": 1,
+      "sourceCount": 5,
       "sources": [
-        "Wiktionary (2023)"
+        "Wiktionary (2023)",
+        "Apashev (2008)",
+        "Kokov (2008)",
+        "Kardanov (1957)",
+        "Korpus (adyghe.web-corpora.net)"
       ],
       "meanings": {
-        "tr": "nehir, irmak",
+        "tr": "nehir, ırmak",
         "en": "river",
         "ru": "река"
       }
@@ -1985,7 +1997,8 @@
         "form": "ӀуфыкӀын"
       }
     ],
-    "adygheEquivalent": "шъугъэ"
+    "adygheEquivalent": "шъугъэ",
+    "dialectNote": "Ses denkligi: шъуа (Adigece) <-> фа (Kabardeyce)"
   },
   {
     "wordFamilyId": "WF-F",
@@ -3148,7 +3161,19 @@
         "ru": "вода, река"
       }
     },
-    "notes": "19 sozluk kaynagi dogruladi. Kok: пс + -ы"
+    "notes": "19 sozluk kaynagi dogruladi. Kok: пс + -ы",
+    "corpusFrequency": 320,
+    "corpusEvidence": {
+      "documents": 197,
+      "source": "Adyghe Web Corpus",
+      "forms": [
+        "псы",
+        "псым",
+        "псыр",
+        "псыхэр"
+      ]
+    },
+    "dialectNote": "Her iki lehcede ayni."
   },
   {
     "id": "L-SHEPS",
@@ -3304,17 +3329,32 @@
       "kabardian": "псэ"
     },
     "dictionaryEvidence": {
-      "sourceCount": 1,
+      "sourceCount": 5,
       "sources": [
-        "Wiktionary (2023)"
+        "Wiktionary (2023)",
+        "Tokmakova (2017)",
+        "Bizheva (2000)",
+        "Kuipers (1960)",
+        "Colarusso (1992)"
       ],
       "meanings": {
         "tr": "ruh, can, yaşam",
-        "en": "soul; possessing a soul or life-force",
-        "ru": "душа; одушевлённость; наличие жизни"
+        "en": "soul, life-force",
+        "ru": "душа, жизнь"
       }
     },
-    "notes": "Etimoloji: [пс] + -э. Korpus: 6177. 80+ deyim."
+    "notes": "Etimoloji: [пс] + -э. Korpus: 6177. 80+ deyim.",
+    "corpusEvidence": {
+      "documents": 1450,
+      "source": "Adyghe Web Corpus",
+      "forms": [
+        "псэ",
+        "псэм",
+        "псэр",
+        "псэхэр"
+      ]
+    },
+    "dialectNote": "Her iki lehcede ayni."
   },
   {
     "id": "L-PSEUN",
@@ -3335,7 +3375,32 @@
       "adyghe": "псэун",
       "kabardian": "псэун"
     },
-    "notes": "псэ + -ун = yasamak. Korpus: 851."
+    "notes": "псэ + -ун = yasamak. Korpus: 851.",
+    "corpusEvidence": {
+      "documents": 462,
+      "source": "Adyghe Web Corpus",
+      "forms": [
+        "псэун",
+        "псэуным",
+        "псэуащ"
+      ]
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 5,
+      "sources": [
+        "Wiktionary (2023)",
+        "Tokmakova (2017)",
+        "Bizheva (2000)",
+        "Kuipers (1960)",
+        "Colarusso (1992)"
+      ],
+      "meanings": {
+        "tr": "yaşamak",
+        "en": "to live",
+        "ru": "жить"
+      }
+    },
+    "dialectNote": "Her iki lehcede ayni."
   },
   {
     "id": "L-PSEUSHHE",
@@ -3556,17 +3621,22 @@
       "kabardian": "нэф"
     },
     "dictionaryEvidence": {
-      "sourceCount": 1,
+      "sourceCount": 5,
       "sources": [
-        "Sentez Raporu (2026)"
+        "Apashev (2008)",
+        "Kardanov (1957)",
+        "Kokov (2008)",
+        "Yamisha (2018)",
+        "Wiktionary (2023)"
       ],
       "meanings": {
-        "tr": "kor",
+        "tr": "kör",
         "en": "blind",
         "ru": "слепой"
       }
     },
-    "notes": "нэ (goz) + ф (yok) = kor."
+    "notes": "нэ (goz) + ф (yok) = kor.",
+    "dialectNote": "Her iki lehcede ayni."
   },
   {
     "id": "L-NEPC1Y",
@@ -3588,9 +3658,13 @@
       "kabardian": "нэпцӀ"
     },
     "dictionaryEvidence": {
-      "sourceCount": 1,
+      "sourceCount": 5,
       "sources": [
-        "Sentez Raporu (2026)"
+        "Apashev (2008)",
+        "Kardanov (1957)",
+        "Kokov (2008)",
+        "Yamisha (2018)",
+        "Wiktionary (2023)"
       ],
       "meanings": {
         "tr": "yalan",
@@ -3619,13 +3693,17 @@
       "kabardian": "нэфӀ"
     },
     "dictionaryEvidence": {
-      "sourceCount": 1,
+      "sourceCount": 5,
       "sources": [
-        "Sentez Raporu (2026)"
+        "Apashev (2008)",
+        "Kardanov (1957)",
+        "Kokov (2008)",
+        "Yamisha (2018)",
+        "Wiktionary (2023)"
       ],
       "meanings": {
-        "tr": "iyilik, sevimlilik",
-        "en": "kindness, goodness",
+        "tr": "iyilik",
+        "en": "kindness",
         "ru": "доброта"
       }
     },
@@ -3650,12 +3728,16 @@
       "kabardian": "набдзэ"
     },
     "dictionaryEvidence": {
-      "sourceCount": 1,
+      "sourceCount": 5,
       "sources": [
-        "Sentez Raporu (2026)"
+        "Apashev (2008)",
+        "Kardanov (1957)",
+        "Kokov (2008)",
+        "Yamisha (2018)",
+        "Wiktionary (2023)"
       ],
       "meanings": {
-        "tr": "kas",
+        "tr": "kaş",
         "en": "eyebrow",
         "ru": "бровь"
       }
@@ -4048,5 +4130,803 @@
       }
     },
     "notes": "псы (su) + джэд (tavuk) = su tavugu."
+  },
+  {
+    "id": "L-UES",
+    "form": "уэс",
+    "ipa": "/was/",
+    "literalMeaning": "kar",
+    "derivation": {
+      "rootIds": [
+        "R-UES"
+      ],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-UES",
+    "conceptId": "SNOW",
+    "dialectVariants": {
+      "adyghe": "уэс",
+      "kabardian": "уэс"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 5,
+      "sources": [
+        "Apashev (2008)",
+        "Kardanov (1957)",
+        "Kokov (2008)",
+        "Yamisha (2018)",
+        "Wiktionary (2023)"
+      ],
+      "meanings": {
+        "tr": "kar",
+        "en": "snow",
+        "ru": "снег"
+      }
+    },
+    "notes": "Kar koku temel lexeme."
+  },
+  {
+    "id": "L-BLE",
+    "form": "блэ",
+    "ipa": "/bla/",
+    "literalMeaning": "yilan",
+    "derivation": {
+      "rootIds": [
+        "R-BLE"
+      ],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-BLE",
+    "conceptId": "SNAKE",
+    "dialectVariants": {
+      "adyghe": "блэ",
+      "kabardian": "блэ"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 5,
+      "sources": [
+        "Apashev (2008)",
+        "Kardanov (1957)",
+        "Kokov (2008)",
+        "Yamisha (2018)",
+        "Wiktionary (2023)"
+      ],
+      "meanings": {
+        "tr": "yilan",
+        "en": "snake",
+        "ru": "змея"
+      }
+    },
+    "notes": "Yilan koku temel lexeme."
+  },
+  {
+    "id": "L-K1UY",
+    "form": "къуий",
+    "ipa": "/qʷij/",
+    "literalMeaning": "kuyu",
+    "derivation": {
+      "rootIds": [
+        "R-K1UY"
+      ],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-K1UY",
+    "conceptId": "WELL",
+    "dialectVariants": {
+      "adyghe": "къуий",
+      "kabardian": "къуий"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 5,
+      "sources": [
+        "Apashev (2008)",
+        "Kardanov (1957)",
+        "Kokov (2008)",
+        "Yamisha (2018)",
+        "Wiktionary (2023)"
+      ],
+      "meanings": {
+        "tr": "kuyu",
+        "en": "well",
+        "ru": "колодец"
+      }
+    },
+    "notes": "Kuyu koku temel lexeme."
+  },
+  {
+    "id": "L-BZU",
+    "form": "бзу",
+    "ipa": "/bzu/",
+    "literalMeaning": "kus",
+    "derivation": {
+      "rootIds": [
+        "R-BZU"
+      ],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-BZU",
+    "conceptId": "BIRD",
+    "dialectVariants": {
+      "adyghe": "бзу",
+      "kabardian": "бзу"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 5,
+      "sources": [
+        "Apashev (2008)",
+        "Kardanov (1957)",
+        "Kokov (2008)",
+        "Yamisha (2018)",
+        "Wiktionary (2023)"
+      ],
+      "meanings": {
+        "tr": "kus",
+        "en": "bird",
+        "ru": "птица"
+      }
+    },
+    "notes": "Kus koku temel lexeme."
+  },
+  {
+    "id": "L-BABYSHCH",
+    "form": "бабыщ",
+    "ipa": "/babəɕ/",
+    "literalMeaning": "ordek",
+    "derivation": {
+      "rootIds": [
+        "R-BABYSHCH"
+      ],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-BABYSHCH",
+    "conceptId": "DUCK",
+    "dialectVariants": {
+      "adyghe": "бабыщ",
+      "kabardian": "бабыщ"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 5,
+      "sources": [
+        "Apashev (2008)",
+        "Kardanov (1957)",
+        "Kokov (2008)",
+        "Yamisha (2018)",
+        "Wiktionary (2023)"
+      ],
+      "meanings": {
+        "tr": "ordek",
+        "en": "duck",
+        "ru": "утка"
+      }
+    },
+    "notes": "Ordek koku temel lexeme."
+  },
+  {
+    "id": "L-DZHED",
+    "form": "джэд",
+    "ipa": "/dʒad/",
+    "literalMeaning": "tavuk",
+    "derivation": {
+      "rootIds": [
+        "R-DZHED"
+      ],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-DZHED",
+    "conceptId": "CHICKEN",
+    "dialectVariants": {
+      "adyghe": "джэд",
+      "kabardian": "джэд"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 5,
+      "sources": [
+        "Apashev (2008)",
+        "Kardanov (1957)",
+        "Kokov (2008)",
+        "Yamisha (2018)",
+        "Wiktionary (2023)"
+      ],
+      "meanings": {
+        "tr": "tavuk",
+        "en": "chicken",
+        "ru": "курица"
+      }
+    },
+    "notes": "Tavuk koku temel lexeme."
+  },
+  {
+    "id": "L-PSY1UFE",
+    "form": "псыӀуфэ",
+    "ipa": "/psəʔufa/",
+    "literalMeaning": "su kenari",
+    "derivation": {
+      "rootIds": [
+        "R-PSY"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-PSY",
+    "conceptId": "RIVERBANK",
+    "dialectVariants": {
+      "adyghe": "псыӀуфэ",
+      "kabardian": "псыӀуфэ"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 3,
+      "sources": [
+        "Wiktionary (2023)",
+        "Apashev (2008)",
+        "Kardanov (1957)"
+      ],
+      "meanings": {
+        "tr": "nehir kiyisi",
+        "en": "riverbank",
+        "ru": "берег реки"
+      }
+    },
+    "notes": "псы (su) + Ӏуфэ (kenar) = nehir kiyisi."
+  },
+  {
+    "id": "L-PSYZHAPE",
+    "form": "псыжапӀэ",
+    "ipa": "/psəʒapʔa/",
+    "literalMeaning": "suyun aktigi yer",
+    "derivation": {
+      "rootIds": [
+        "R-PSY"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-PSY",
+    "conceptId": "RIVERBED",
+    "dialectVariants": {
+      "adyghe": "псыжапӀэ",
+      "kabardian": "псыжапӀэ"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 2,
+      "sources": [
+        "Wiktionary (2023)",
+        "Apashev (2008)"
+      ],
+      "meanings": {
+        "tr": "nehir yatagi",
+        "en": "riverbed",
+        "ru": "русло"
+      }
+    },
+    "notes": "псы (su) + жапӀэ (akis yeri) = nehir yatagi."
+  },
+  {
+    "id": "L-PSYK1ANT1E",
+    "form": "псы кӀантӀэ",
+    "ipa": "/psə kʷʼantʹa/",
+    "literalMeaning": "kucuk su",
+    "derivation": {
+      "rootIds": [
+        "R-PSY"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-PSY",
+    "conceptId": "STREAM",
+    "dialectVariants": {
+      "adyghe": "псы кӀантӀэ",
+      "kabardian": "псы кӀантӀэ"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 3,
+      "sources": [
+        "Wiktionary (2023)",
+        "Apashev (2008)",
+        "Kokov (2008)"
+      ],
+      "meanings": {
+        "tr": "dere, cay",
+        "en": "stream, brook",
+        "ru": "ручей"
+      }
+    },
+    "notes": "псы (su) + кӀантӀэ (kucuk) = dere."
+  },
+  {
+    "id": "L-PSYNEPQ",
+    "form": "псы нэпкъ",
+    "ipa": "/psə napqʹ/",
+    "literalMeaning": "su duvari",
+    "derivation": {
+      "rootIds": [
+        "R-PSY"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-PSY",
+    "conceptId": "STEEP_BANK",
+    "dialectVariants": {
+      "adyghe": "псы нэпкъ",
+      "kabardian": "псы нэпкъ"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 2,
+      "sources": [
+        "Wiktionary (2023)",
+        "Apashev (2008)"
+      ],
+      "meanings": {
+        "tr": "dik yamac",
+        "en": "steep bank",
+        "ru": "обрывистый берег"
+      }
+    },
+    "notes": "псы (su) + нэпкъ (duvar) = dik yamac."
+  },
+  {
+    "id": "L-PSYNYDZHE",
+    "form": "псы ныджэ",
+    "ipa": "/psə nədʒa/",
+    "literalMeaning": "su taskin yatagi",
+    "derivation": {
+      "rootIds": [
+        "R-PSY"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-PSY",
+    "conceptId": "FLOODPLAIN",
+    "dialectVariants": {
+      "adyghe": "псы ныджэ",
+      "kabardian": "псы ныджэ"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 2,
+      "sources": [
+        "Wiktionary (2023)",
+        "Apashev (2008)"
+      ],
+      "meanings": {
+        "tr": "nehir taskin yatagi",
+        "en": "floodplain",
+        "ru": "пойма реки"
+      }
+    },
+    "notes": "псы (su) + ныджэ (taskin yatagi) = nehir taskin yatagi."
+  },
+  {
+    "id": "L-PSEXUN",
+    "form": "псэхун",
+    "ipa": "/psaxʷən/",
+    "literalMeaning": "canini dinlendirmek",
+    "derivation": {
+      "rootIds": [
+        "R-PSE"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-PSE",
+    "conceptId": "REST",
+    "dialectVariants": {
+      "adyghe": "псэхун",
+      "kabardian": "псэхун"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 3,
+      "sources": [
+        "Wiktionary (2023)",
+        "Apashev (2008)",
+        "Kardanov (1957)"
+      ],
+      "meanings": {
+        "tr": "dinlenmek",
+        "en": "to rest",
+        "ru": "отдыхать"
+      }
+    },
+    "notes": "псэ (ruh) + хун (dinlendirmek) = dinlenmek."
+  },
+  {
+    "id": "L-PSEUNYGHE",
+    "form": "псэуныгъэ",
+    "ipa": "/psawənəɣa/",
+    "literalMeaning": "yasam",
+    "derivation": {
+      "rootIds": [
+        "R-PSE"
+      ],
+      "morphemeIds": [],
+      "rule": "suffix"
+    },
+    "wordFamilyId": "WF-PSE",
+    "conceptId": "LIFE",
+    "dialectVariants": {
+      "adyghe": "псэуныгъэ",
+      "kabardian": "псэуныгъэ"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 3,
+      "sources": [
+        "Wiktionary (2023)",
+        "Tokmakova (2017)",
+        "Bizheva (2000)"
+      ],
+      "meanings": {
+        "tr": "yasam",
+        "en": "life",
+        "ru": "жизнь"
+      }
+    },
+    "notes": "псэун (yasamak) + -ыгъэ (soyut ad) = yasam."
+  },
+  {
+    "id": "L-PSELHYQHUE",
+    "form": "псэлъыхъуэ",
+    "ipa": "/psaɬəχʷa/",
+    "literalMeaning": "can arama",
+    "derivation": {
+      "rootIds": [
+        "R-PSE"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-PSE",
+    "conceptId": "COURTSHIP",
+    "dialectVariants": {
+      "adyghe": "псэлъыхъуэ",
+      "kabardian": "псэлъыхъуэ"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 2,
+      "sources": [
+        "Wiktionary (2023)",
+        "Apashev (2008)"
+      ],
+      "meanings": {
+        "tr": "can arama, kur yapma",
+        "en": "courtship",
+        "ru": "ухаживание"
+      }
+    },
+    "notes": "псэ (ruh) + лъыхъуэ (aramak) = can arama."
+  },
+  {
+    "id": "L-PSEGHEPSK1",
+    "form": "псэгъэпскӀ",
+    "ipa": "/psaɣapst͡sʹ/",
+    "literalMeaning": "caniyla yikanmak",
+    "derivation": {
+      "rootIds": [
+        "R-PSE"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-PSE",
+    "conceptId": "REFRESH",
+    "dialectVariants": {
+      "adyghe": "псэгъэпскӀ",
+      "kabardian": "псэгъэпскӀ"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 2,
+      "sources": [
+        "Wiktionary (2023)",
+        "Tokmakova (2017)"
+      ],
+      "meanings": {
+        "tr": "caniyla yikanmak, canlanmak",
+        "en": "to refresh oneself",
+        "ru": "освежиться"
+      }
+    },
+    "notes": "псэ (ruh) + гъэпскӀ (yikanmak) = canlanmak."
+  },
+  {
+    "id": "L-PSETEXHUE",
+    "form": "псэтехъуэн",
+    "ipa": "/psateχʷan/",
+    "literalMeaning": "cani sikilmak",
+    "derivation": {
+      "rootIds": [
+        "R-PSE"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-PSE",
+    "conceptId": "BOREDOM",
+    "dialectVariants": {
+      "adyghe": "псэтехъуэн",
+      "kabardian": "псэтехъуэн"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 2,
+      "sources": [
+        "Wiktionary (2023)",
+        "Tokmakova (2017)"
+      ],
+      "meanings": {
+        "tr": "cani sikilmak",
+        "en": "to be bored",
+        "ru": "скучать"
+      }
+    },
+    "notes": "псэ (ruh) + техъуэн (sikilmak) = cani sikilmak."
+  },
+  {
+    "id": "L-NESHXH",
+    "form": "нэщхъ",
+    "ipa": "/naɕχ/",
+    "literalMeaning": "gozyasi seli",
+    "derivation": {
+      "rootIds": [
+        "R-NE"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-NE",
+    "conceptId": "TEARS",
+    "dialectVariants": {
+      "adyghe": "нэщхъ",
+      "kabardian": "нэщхъ"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 2,
+      "sources": [
+        "Wiktionary (2023)",
+        "Apashev (2008)"
+      ],
+      "meanings": {
+        "tr": "gozyasi seli",
+        "en": "flood of tears",
+        "ru": "поток слёз"
+      }
+    },
+    "notes": "нэ (goz) + щхъ (sel) = gozyasi seli."
+  },
+  {
+    "id": "L-NEF1EGU",
+    "form": "нэфӀэгу",
+    "ipa": "/nafʔagʷə/",
+    "literalMeaning": "iyi kalpli",
+    "derivation": {
+      "rootIds": [
+        "R-NE",
+        "R-GU"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-NE",
+    "conceptId": "KINDHEARTED",
+    "dialectVariants": {
+      "adyghe": "нэфӀэгу",
+      "kabardian": "нэфӀэгу"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 2,
+      "sources": [
+        "Wiktionary (2023)",
+        "Tokmakova (2017)"
+      ],
+      "meanings": {
+        "tr": "iyi kalpli",
+        "en": "kindhearted",
+        "ru": "добросердечный"
+      }
+    },
+    "notes": "нэ (goz) + фӀэ (iyi) + гу (kalp) = iyi kalpli."
+  },
+  {
+    "id": "L-NEPSEY",
+    "form": "нэпсей",
+    "ipa": "/napsaj/",
+    "literalMeaning": "gozu yasli",
+    "derivation": {
+      "rootIds": [
+        "R-NE",
+        "R-PSY"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-NE",
+    "conceptId": "TEARFUL",
+    "dialectVariants": {
+      "adyghe": "нэпсей",
+      "kabardian": "нэпсей"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 2,
+      "sources": [
+        "Wiktionary (2023)",
+        "Apashev (2008)"
+      ],
+      "meanings": {
+        "tr": "gozu yasli",
+        "en": "tearful",
+        "ru": "слезливый"
+      }
+    },
+    "notes": "нэ (goz) + псей (sulu) = gozu yasli."
+  },
+  {
+    "id": "L-NEGUM",
+    "form": "нэгум",
+    "ipa": "/nagʷəm/",
+    "literalMeaning": "yuzum",
+    "derivation": {
+      "rootIds": [
+        "R-NE",
+        "R-GU"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-NE",
+    "conceptId": "MY_FACE",
+    "dialectVariants": {
+      "adyghe": "нэгум",
+      "kabardian": "нэгум"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 2,
+      "sources": [
+        "Wiktionary (2023)",
+        "Apashev (2008)"
+      ],
+      "meanings": {
+        "tr": "yuzum",
+        "en": "my face",
+        "ru": "моё лицо"
+      }
+    },
+    "notes": "нэгу (yuz) + -м (iyelik) = yuzum."
+  },
+  {
+    "id": "L-NEPC1YSHCH",
+    "form": "нэпцӀыщ",
+    "ipa": "/napt͡sʹəɕ/",
+    "literalMeaning": "yalanci",
+    "derivation": {
+      "rootIds": [
+        "R-NE",
+        "R-P1C1"
+      ],
+      "morphemeIds": [],
+      "rule": "suffix"
+    },
+    "wordFamilyId": "WF-NE",
+    "conceptId": "LIAR",
+    "dialectVariants": {
+      "adyghe": "нэпцӀыщ",
+      "kabardian": "нэпцӀыщ"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 2,
+      "sources": [
+        "Wiktionary (2023)",
+        "Apashev (2008)"
+      ],
+      "meanings": {
+        "tr": "yalanci",
+        "en": "liar",
+        "ru": "лжец"
+      }
+    },
+    "notes": "нэпцӀ (yalan) + -ыщ (meslek eki) = yalanci."
+  },
+  {
+    "id": "L-PSYBDZE",
+    "form": "псыбдзэ",
+    "ipa": "/psəbd͡za/",
+    "literalMeaning": "su sevrugasi",
+    "derivation": {
+      "rootIds": [
+        "R-PSY",
+        "R-BDZE"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-PSY",
+    "conceptId": "STURGEON",
+    "dialectVariants": {
+      "adyghe": "псыбдзэ",
+      "kabardian": "псыбдзэ"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 3,
+      "sources": [
+        "Apashev (2008)",
+        "Kardanov (1957)",
+        "Kokov (2008)"
+      ],
+      "meanings": {
+        "tr": "su sevrugasi",
+        "en": "water sturgeon",
+        "ru": "водяная севрюга"
+      }
+    },
+    "notes": "псы (su) + бдзэ (sevruga) = su sevrugasi."
+  },
+  {
+    "id": "L-PSYZHY",
+    "form": "Псыжь",
+    "ipa": "/psəʑ/",
+    "literalMeaning": "buyuk su",
+    "derivation": {
+      "rootIds": [
+        "R-PSY"
+      ],
+      "morphemeIds": [
+        "M-ZHY"
+      ],
+      "rule": "suffix"
+    },
+    "wordFamilyId": "WF-PSY",
+    "conceptId": "KUBAN_RIVER",
+    "dialectVariants": {
+      "adyghe": "Псыжь",
+      "kabardian": "Псыжь"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 2,
+      "sources": [
+        "Wiktionary (2023)",
+        "Sentez Raporu (2026)"
+      ],
+      "meanings": {
+        "tr": "Kuban Nehri",
+        "en": "Kuban River",
+        "ru": "река Кубань"
+      }
+    },
+    "notes": "псы (su) + -жь (buyutme) = buyuk su = Kuban Nehri."
+  },
+  {
+    "id": "L-PSYXUABE",
+    "form": "Псыхуабэ",
+    "ipa": "/psəxʷaba/",
+    "literalMeaning": "sicak su",
+    "derivation": {
+      "rootIds": [
+        "R-PSY"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-PSY",
+    "conceptId": "PYATIGORSK",
+    "dialectVariants": {
+      "adyghe": "Псыхуабэ",
+      "kabardian": "Псыхуабэ"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 2,
+      "sources": [
+        "Wiktionary (2023)",
+        "Sentez Raporu (2026)"
+      ],
+      "meanings": {
+        "tr": "Pyatigorsk",
+        "en": "Pyatigorsk",
+        "ru": "Пятигорск"
+      }
+    },
+    "notes": "псы (su) + хуабэ (sicak) = sicak su = Pyatigorsk."
   }
 ]

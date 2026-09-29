@@ -744,5 +744,60 @@
       "L-PSYXHUE"
     ],
     "notes": "Olma/donusme eki. псыхъуэ = suyun oldugu yer."
+  },
+  {
+    "id": "M-K1U",
+    "form": "-къу",
+    "ipa": "/qʷ/",
+    "gloss": "ogul/kucultme eki",
+    "type": "lexical",
+    "dialect": "both",
+    "attachment": "suffix",
+    "exampleLexemeIds": [],
+    "notes": "Ogul/kucultme eki."
+  },
+  {
+    "id": "M-L1",
+    "form": "-лӀ",
+    "ipa": "/ɬʹ/",
+    "gloss": "adam/kisi eki",
+    "type": "lexical",
+    "dialect": "both",
+    "attachment": "suffix",
+    "exampleLexemeIds": [],
+    "notes": "Adam/kisi eki."
+  },
+  {
+    "id": "M-DZHE",
+    "form": "-джэ",
+    "ipa": "/d͡ʒa/",
+    "gloss": "pekitme eki",
+    "type": "grammatical",
+    "dialect": "both",
+    "attachment": "suffix",
+    "exampleLexemeIds": [],
+    "notes": "Pekitme eki."
+  },
+  {
+    "id": "M-GHE3",
+    "form": "-гъэ",
+    "ipa": "/ɣa/",
+    "gloss": "gecmis zaman eki",
+    "type": "grammatical",
+    "dialect": "both",
+    "attachment": "suffix",
+    "exampleLexemeIds": [],
+    "notes": "Gecmis zaman eki."
+  },
+  {
+    "id": "M-SH1E2",
+    "form": "-щӀэ",
+    "ipa": "/ɕʹa/",
+    "gloss": "yeni/alt eki",
+    "type": "grammatical",
+    "dialect": "both",
+    "attachment": "suffix",
+    "exampleLexemeIds": [],
+    "notes": "Yeni/alt eki."
   }
 ]

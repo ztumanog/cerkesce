@@ -998,5 +998,258 @@
     "confidence": 1.0,
     "evidenceSource": "dictionary",
     "reference": "Wiktionary (2023), Yamisha (2018)"
+  },
+  {
+    "id": "SR-UES-SNOW",
+    "source": "R-UES",
+    "target": "L-UES",
+    "type": "derivational",
+    "evidence": "уэс",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary",
+    "reference": "Apashev (2008), Kardanov (1957)"
+  },
+  {
+    "id": "SR-UES-DEW",
+    "source": "R-UES",
+    "target": "L-UESEPS",
+    "type": "compound",
+    "evidence": "уэсэпс",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary"
+  },
+  {
+    "id": "SR-BLE-SNAKE",
+    "source": "R-BLE",
+    "target": "L-BLE",
+    "type": "derivational",
+    "evidence": "блэ",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary",
+    "reference": "Apashev (2008), Kokov (2008)"
+  },
+  {
+    "id": "SR-BLE-WATERSNAKE",
+    "source": "R-BLE",
+    "target": "L-PSYBLE",
+    "type": "compound",
+    "evidence": "псыблэ",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary"
+  },
+  {
+    "id": "SR-K1UY-WELL",
+    "source": "R-K1UY",
+    "target": "L-K1UY",
+    "type": "derivational",
+    "evidence": "къуий",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary",
+    "reference": "Apashev (2008), Kardanov (1957)"
+  },
+  {
+    "id": "SR-K1UY-WATERWELL",
+    "source": "R-K1UY",
+    "target": "L-PSYK1UY",
+    "type": "compound",
+    "evidence": "псыкъуий",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary"
+  },
+  {
+    "id": "SR-BZU-BIRD",
+    "source": "R-BZU",
+    "target": "L-BZU",
+    "type": "derivational",
+    "evidence": "бзу",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary",
+    "reference": "Apashev (2008), Kokov (2008)"
+  },
+  {
+    "id": "SR-BZU-DIPPER",
+    "source": "R-BZU",
+    "target": "L-PSYBZU",
+    "type": "compound",
+    "evidence": "псыбзу",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary"
+  },
+  {
+    "id": "SR-BABYSHCH-DUCK",
+    "source": "R-BABYSHCH",
+    "target": "L-BABYSHCH",
+    "type": "derivational",
+    "evidence": "бабыщ",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary",
+    "reference": "Apashev (2008), Yamisha (2018)"
+  },
+  {
+    "id": "SR-BABYSHCH-WATERDUCK",
+    "source": "R-BABYSHCH",
+    "target": "L-PSYBABYSHCH",
+    "type": "compound",
+    "evidence": "псыбабыщ",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary"
+  },
+  {
+    "id": "SR-DZHED-CHICKEN",
+    "source": "R-DZHED",
+    "target": "L-DZHED",
+    "type": "derivational",
+    "evidence": "джэд",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary",
+    "reference": "Apashev (2008), Kardanov (1957)"
+  },
+  {
+    "id": "SR-DZHED-COOT",
+    "source": "R-DZHED",
+    "target": "L-PSYDZHED",
+    "type": "compound",
+    "evidence": "псыджэд",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary"
+  },
+  {
+    "id": "SR-PSY-RIVERBANK",
+    "source": "R-PSY",
+    "target": "L-PSY1UFE",
+    "type": "compound",
+    "evidence": "псыӀуфэ",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary",
+    "reference": "Wiktionary (2023), Apashev (2008)"
+  },
+  {
+    "id": "SR-PSY-RIVERBED",
+    "source": "R-PSY",
+    "target": "L-PSYZHAPE",
+    "type": "compound",
+    "evidence": "псыжапӀэ",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary"
+  },
+  {
+    "id": "SR-PSY-STREAM",
+    "source": "R-PSY",
+    "target": "L-PSYK1ANT1E",
+    "type": "compound",
+    "evidence": "псы кӀантӀэ",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary"
+  },
+  {
+    "id": "SR-PSY-STEEPBANK",
+    "source": "R-PSY",
+    "target": "L-PSYNEPQ",
+    "type": "compound",
+    "evidence": "псы нэпкъ",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary"
+  },
+  {
+    "id": "SR-PSY-FLOODPLAIN",
+    "source": "R-PSY",
+    "target": "L-PSYNYDZHE",
+    "type": "compound",
+    "evidence": "псы ныджэ",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary"
+  },
+  {
+    "id": "SR-PSE-REST",
+    "source": "R-PSE",
+    "target": "L-PSEXUN",
+    "type": "compound",
+    "evidence": "псэхун",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary",
+    "reference": "Wiktionary (2023), Apashev (2008)"
+  },
+  {
+    "id": "SR-PSE-LIFE",
+    "source": "R-PSE",
+    "target": "L-PSEUNYGHE",
+    "type": "derivational",
+    "evidence": "псэуныгъэ",
+    "confidence": 1.0,
+    "evidenceSource": "academic",
+    "reference": "Tokmakova (2017), Bizheva (2000)"
+  },
+  {
+    "id": "SR-PSE-COURTSHIP",
+    "source": "R-PSE",
+    "target": "L-PSELHYQHUE",
+    "type": "compound",
+    "evidence": "псэлъыхъуэ",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary"
+  },
+  {
+    "id": "SR-PSE-REFRESH",
+    "source": "R-PSE",
+    "target": "L-PSEGHEPSK1",
+    "type": "compound",
+    "evidence": "псэгъэпскӀ",
+    "confidence": 1.0,
+    "evidenceSource": "academic"
+  },
+  {
+    "id": "SR-PSE-BOREDOM",
+    "source": "R-PSE",
+    "target": "L-PSETEXHUE",
+    "type": "compound",
+    "evidence": "псэтехъуэн",
+    "confidence": 1.0,
+    "evidenceSource": "academic"
+  },
+  {
+    "id": "SR-NE-TEARS",
+    "source": "R-NE",
+    "target": "L-NESHXH",
+    "type": "compound",
+    "evidence": "нэщхъ",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary",
+    "reference": "Wiktionary (2023), Apashev (2008)"
+  },
+  {
+    "id": "SR-NE-KINDHEARTED",
+    "source": "R-NE",
+    "target": "L-NEF1EGU",
+    "type": "compound",
+    "evidence": "нэфӀэгу",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary"
+  },
+  {
+    "id": "SR-NE-TEARFUL",
+    "source": "R-NE",
+    "target": "L-NEPSEY",
+    "type": "compound",
+    "evidence": "нэпсей",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary"
+  },
+  {
+    "id": "SR-NE-MYFACE",
+    "source": "R-NE",
+    "target": "L-NEGUM",
+    "type": "derivational",
+    "evidence": "нэгум",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary"
+  },
+  {
+    "id": "SR-NE-LIAR",
+    "source": "R-NE",
+    "target": "L-NEPC1YSHCH",
+    "type": "derivational",
+    "evidence": "нэпцӀыщ",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary"
   }
 ]
