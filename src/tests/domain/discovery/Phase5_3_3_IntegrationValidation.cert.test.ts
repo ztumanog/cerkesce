@@ -14,8 +14,8 @@ describe('Phase 5.3.3 - Integration & Validation Certification (IV)', () => {
       getNeighbors: (conceptId: string) => {
         if (conceptId === WATER_ID) {
           return [
-            { conceptId: ICE_ID, relationType: 'STATE_OF', weight: 1.0 },
-            { conceptId: RIVER_ID, relationType: 'LOCATION_OF', weight: 0.8 }
+            { targetConceptId: ICE_ID, relationType: 'STATE_OF' },
+            { targetConceptId: RIVER_ID, relationType: 'LOCATION_OF' }
           ];
         }
         return [];

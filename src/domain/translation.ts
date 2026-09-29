@@ -60,6 +60,7 @@ export type DictionaryEntry = TranslationEntry;
 // ============================================================
 
 export interface TranslationGroup {
+  conceptId?: string;  // ← YENİ: Kavram ID'si
   id: string;
   groaupId?: string;
   groupName?: string;

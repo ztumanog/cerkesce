@@ -14,7 +14,7 @@
     "targetLanguage": "ady",
     "confidence": "VERIFIED",
     "shortLabel": "AIG (2006)",
-    "shortLabelKiril": "Энститут (2006)"
+    "shortLabelKiril": "Enstitüsü (2006)"
   },
   {
     "file": "1.Ady-Ady_AP.json",
@@ -30,7 +30,7 @@
     "confidence": "VERIFIED",
     "publisher": "Maykop",
     "shortLabel": "Apaşev (2008)",
-    "shortLabelKiril": "Апашэу (2008)"
+    "shortLabelKiril": "Apaşev (2008)"
   },
   {
     "file": "10.En-Ady_Adam.json",
@@ -45,7 +45,7 @@
     "confidence": "HIGH",
     "publisher": "Dijital Yayın",
     "shortLabel": "Shagash (2020)",
-    "shortLabelKiril": "Шэгъащ (2020)"
+    "shortLabelKiril": "Зэхуэхьэсa (2020)"
   },
   {
     "file": "11.En-Kbd-Jonty.json",
@@ -58,8 +58,8 @@
     "targetLanguage": "kbd",
     "publisher": "Circassian Language Institute",
     "total_words": 10757,
-    "shortLabel": "Yamisha",
-    "shortLabelKiril": "Йамыша"
+    "shortLabel": "Yamisha (2018)",
+    "shortLabelKiril": "ЙамыЩа (2018)"
   },
   {
     "file": "12.En-Kbd-Ziwar.json",
@@ -72,8 +72,8 @@
     "targetLanguage": "kbd",
     "publisher": "Dijital Korpus",
     "total_words": 7178,
-    "shortLabel": "Ziwar",
-    "shortLabelKiril": "Гъыщ"
+    "shortLabel": "Zıwar Gış (0000)",
+    "shortLabelKiril": "Gish (0000)"
   },
   {
     "file": "13.Kbd-Ar-Jonty.json",
@@ -85,8 +85,8 @@
     "sourceLanguage": "kbd",
     "targetLanguage": "ar",
     "total_words": 4011,
-    "shortLabel": "Yamisha",
-    "shortLabelKiril": "Йамыша"
+    "shortLabel": "Yamisha (2018)",
+    "shortLabelKiril": "ЙамыЩа (2018)"
   },
   {
     "file": "14.Kbd-En-2-Jonty.json",
@@ -98,8 +98,8 @@
     "sourceLanguage": "kbd",
     "targetLanguage": "en",
     "total_words": 9526,
-    "shortLabel": "Yamisha v2",
-    "shortLabelKiril": "Йамыша v2"
+    "shortLabel": "Yamisha (2023)",
+    "shortLabelKiril": "ЙамыЩа (2023)"
   },
   {
     "file": "15.Kbd-En-Jonty.json",
@@ -111,8 +111,8 @@
     "sourceLanguage": "kbd",
     "targetLanguage": "en",
     "total_words": 10726,
-    "shortLabel": "Yamisha",
-    "shortLabelKiril": "Йамыша"
+    "shortLabel": "Yamisha (2018)",
+    "shortLabelKiril": "ЙамыЩа (2018)"
   },
   {
     "file": "16.Kbd-En-Ziwar.json",
@@ -124,8 +124,8 @@
     "sourceLanguage": "kbd",
     "targetLanguage": "en",
     "total_words": 7664,
-    "shortLabel": "Ziwar",
-    "shortLabelKiril": "Гъыщ"
+    "shortLabel": "Gish (0000)",
+    "shortLabelKiril": "Gish (0000)"
   },
   {
     "file": "17.Kbd-En_Amjad.json",
@@ -139,8 +139,8 @@
     "confidence": "VERIFIED",
     "publisher": "San Marcos",
     "total_words": 17127,
-    "shortLabel": "Camuha (1997)",
-    "shortLabelKiril": "Джамухъэ (1997)"
+    "shortLabel": "Amcad Camuha (1997)",
+    "shortLabelKiril": "Jaimoukha (1997)"
   },
   {
     "file": "18.Kbd-Ru&En.json",
@@ -155,7 +155,7 @@
     "confidence": "VERIFIED",
     "publisher": "Dijital Veri Tabanı",
     "shortLabel": "Kokov (2008)",
-    "shortLabelKiril": "Коков (2008)"
+    "shortLabelKiril": "Kokov (2008)"
   },
   {
     "file": "19.Kbd-Ru-2-Jonty.json",
@@ -167,8 +167,8 @@
     "sourceLanguage": "kbd",
     "targetLanguage": "ru",
     "total_words": 9524,
-    "shortLabel": "Yamisha v2",
-    "shortLabelKiril": "Йамыша v2"
+    "shortLabel": "Yamisha (2018)",
+    "shortLabelKiril": "ЙамыЩа (2018)"
   },
   {
     "file": "2.Ady-Ara.json",
@@ -183,7 +183,7 @@
     "confidence": "VERIFIED",
     "publisher": "Şam/Amman",
     "shortLabel": "Lash (2013)",
-    "shortLabelKiril": "Лащ (2013)"
+    "shortLabelKiril": "Lash (2013)"
   },
   {
     "file": "20.Kbd-Ru-Jonty.json",
@@ -195,8 +195,8 @@
     "sourceLanguage": "kbd",
     "targetLanguage": "ru",
     "total_words": 10726,
-    "shortLabel": "Yamisha v1",
-    "shortLabelKiril": "Йамыша v1"
+    "shortLabel": "Yamisha (2018)",
+    "shortLabelKiril": "ЙамыЩа (2018)"
   },
   {
     "file": "21.Kbd-Tu-Jonty.json",
@@ -208,8 +208,8 @@
     "sourceLanguage": "kbd",
     "targetLanguage": "tr",
     "total_words": 4012,
-    "shortLabel": "Yamisha",
-    "shortLabelKiril": "Йамыша"
+    "shortLabel": "Yamisha (2018)",
+    "shortLabelKiril": "ЙамыЩа (2018)"
   },
   {
     "file": "22.Ru-Kbd-Jonty.json",
@@ -221,8 +221,8 @@
     "sourceLanguage": "ru",
     "targetLanguage": "kbd",
     "total_words": 12509,
-    "shortLabel": "Yamisha",
-    "shortLabelKiril": "Йамыша"
+    "shortLabel": "Yamisha (2018)",
+    "shortLabelKiril": "ЙамыЩа (2018)"
   },
   {
     "file": "23.Rus-Ady_Blaghoj.json",
@@ -237,7 +237,7 @@
     "confidence": "HIGH",
     "publisher": "Maykop",
     "shortLabel": "Blaghoj (1991)",
-    "shortLabelKiril": "Благъожь (1991)"
+    "shortLabelKiril": "Blaghoj (1991)"
   },
   {
     "file": "24.Rus-Ady_UAG.json",
@@ -251,7 +251,7 @@
     "publisher": "Maykop",
     "total_words": 31322,
     "shortLabel": "Odezhdeko (1960)",
-    "shortLabelKiril": "Одежьдэкъу (1960)"
+    "shortLabelKiril": "Odezhdeko (1960)"
   },
   {
     "file": "25.Rus-Ady_UASP.json",
@@ -265,7 +265,7 @@
     "year": "1991",
     "total_words": 9743,
     "shortLabel": "UASP (1991)",
-    "shortLabelKiril": "УАСП (1991)"
+    "shortLabelKiril": "UASP (1991)"
   },
   {
     "file": "26.Tu-Kbd-Jonty.json",
@@ -277,8 +277,8 @@
     "sourceLanguage": "tr",
     "targetLanguage": "kbd",
     "total_words": 3931,
-    "shortLabel": "Yamisha",
-    "shortLabelKiril": "Йамыша"
+    "shortLabel": "Yamisha (2018)",
+    "shortLabelKiril": "ЙамыЩа (2018)"
   },
   {
     "file": "27.Tur-Ady_Abaze.json",
@@ -293,7 +293,7 @@
     "targetLanguage": "ady",
     "confidence": "VERIFIED",
     "shortLabel": "Abaze (2005)",
-    "shortLabelKiril": "Абазэ (2005)"
+    "shortLabelKiril": "Abaze (2005)"
   },
   {
     "file": "28.Tur-Ady_Huvaj.json",
@@ -307,7 +307,7 @@
     "year": "2007",
     "total_words": 5381,
     "shortLabel": "Huvaj (2007)",
-    "shortLabelKiril": "Хъуажь (2007)"
+    "shortLabelKiril": "Huvaj (2007)"
   },
   {
     "file": "29.Tur-Ady_Teshu.json",
@@ -321,8 +321,8 @@
     "targetLanguage": "ady",
     "confidence": "VERIFIED",
     "publisher": "Maykop / Ankara",
-    "shortLabel": "Teshu (1991)",
-    "shortLabelKiril": "ТӀэшъу (1991)"
+    "shortLabel": "Hasan (1991)",
+    "shortLabelKiril": "Hasan (1991)"
   },
   {
     "file": "3.Ady-En.json",
@@ -334,8 +334,8 @@
     "sourceLanguage": "ady",
     "targetLanguage": "en",
     "total_words": 3821,
-    "shortLabel": "Derleme",
-    "shortLabelKiril": "ЗэхэгъэкӀыгъ"
+    "shortLabel": "tabanı (0000)",
+    "shortLabelKiril": "tabanı (0000)"
   },
   {
     "file": "30.Ady-Rus_ThreeVolumes.json",
@@ -348,8 +348,8 @@
     "targetLanguage": "ru",
     "publisher": "Maykop",
     "total_words": 33491,
-    "shortLabel": "Enstitü (2011)",
-    "shortLabelKiril": "Энститут (2011)"
+    "shortLabel": "Enstitüsü (2011)",
+    "shortLabelKiril": "Enstitüsü (2011)"
   },
   {
     "file": "31.Tu-Ady_Hilmi.json",
@@ -363,8 +363,8 @@
     "targetLanguage": "ady",
     "confidence": "VERIFIED",
     "publisher": "KAFDAV Yayınları",
-    "shortLabel": "Hilmi (2013)",
-    "shortLabelKiril": "Хьилми (2013)"
+    "shortLabel": "Aşemez (2013)",
+    "shortLabelKiril": "Ащэмэз (2013)"
   },
   {
     "file": "32.Rus-Kbd_Nalchik_2013.json",
@@ -378,8 +378,8 @@
     "sourceLanguage": "ru",
     "targetLanguage": "kbd",
     "confidence": "HIGH",
-    "shortLabel": "Nalçik (2013)",
-    "shortLabelKiril": "Налщык (2013)"
+    "shortLabel": "Enstitüsü (2013)",
+    "shortLabelKiril": "Enstitüsü (2013)"
   },
   {
     "file": "33.Ady-Rus-1960.json",
@@ -392,8 +392,8 @@
     "author": "J. A. Şıgaje (Baş Editör)",
     "publisher": "Moskova / Maykop",
     "total_words": 15360,
-    "shortLabel": "Şıgaje (1960)",
-    "shortLabelKiril": "Щыгъажьэ (1960)"
+    "shortLabel": "Baş Editör (1960)",
+    "shortLabelKiril": "Şıgaje (1960)"
   },
   {
     "file": "4.Ady-En_Adam.json",
@@ -407,8 +407,8 @@
     "targetLanguage": "en",
     "confidence": "HIGH",
     "publisher": "Dijital Yayın",
-    "shortLabel": "Shagash (2020)",
-    "shortLabelKiril": "Шэгъащ (2020)"
+    "shortLabel": "Şıgaje Adam (2020)",
+    "shortLabelKiril": "Зэхуэхьэсa (2020)"
   },
   {
     "file": "5.Ady-Rus_Qarden.json",
@@ -422,7 +422,7 @@
     "publisher": "Moskova",
     "total_words": 19468,
     "shortLabel": "Kardanov (1957)",
-    "shortLabelKiril": "Къардэн (1957)"
+    "shortLabelKiril": "Kardanov (1957)"
   },
   {
     "file": "6.Ady-Rus_Sherdjes.json",
@@ -437,8 +437,8 @@
     "targetLanguage": "ru",
     "confidence": "VERIFIED",
     "publisher": "Nalçik",
-    "shortLabel": "Sherdjes (1994)",
-    "shortLabelKiril": "Шэрджэс (1994)"
+    "shortLabel": "Sherdjes Aliy (1994)",
+    "shortLabelKiril": "Çerkes (1994)"
   },
   {
     "file": "7.Ady-Rus_Tharkaho.json",
@@ -452,8 +452,8 @@
     "confidence": "VERIFIED",
     "publisher": "Maykop",
     "year": "1991",
-    "shortLabel": "Tharkaho (1991)",
-    "shortLabelKiril": "Тхьаркъуахъо (1991)"
+    "shortLabel": "Tharkaho Yoxıyt (1991)",
+    "shortLabelKiril": "Tharkaho (1991)"
   },
   {
     "file": "8.Ady-Tur_Huvaj.json",
@@ -467,8 +467,8 @@
     "targetLanguage": "tr",
     "confidence": "VERIFIED",
     "publisher": "Kafkas Vakfı / KAFDAV Yayınları",
-    "shortLabel": "Huvaj",
-    "shortLabelKiril": "Хъуажь"
+    "shortLabel": "Huvaj (2007)",
+    "shortLabelKiril": "Huvaj (2007)"
   },
   {
     "file": "9.En-Ady.json",
@@ -481,7 +481,7 @@
     "sourceLanguage": "en",
     "targetLanguage": "ady",
     "confidence": "HIGH",
-    "shortLabel": "Dijital",
-    "shortLabelKiril": "Диджитал"
+    "shortLabel": "korpus (0000)",
+    "shortLabelKiril": "korpus (0000)"
   }
 ]

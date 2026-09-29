@@ -1,0 +1,33 @@
+/**
+ * Kabardeyce palochka normalizasyonu
+ * Kanonik form: Ӏ (Kiril palochka, U+04C0)
+ * Kabul edilen varyantlar:
+ *   - ӏ (küçük Kiril palochka, U+04CF)
+ *   - 1 (rakam bir, U+0031)
+ *   - I (Latin büyük i, U+0049)
+ *   - İ (Türkçe noktalı I, U+0130)
+ *   - І (Kiril І, U+0406)
+ *   - l (Latin küçük L, U+006C) — DİKKATLİ KULLAN
+ */
+
+const PALOCHKA = '\u04C0';
+
+export function normalizePalochka(input: string): string {
+  if (!input) return input;
+  return input
+    .replace(/\u04CF/g, PALOCHKA) // ӏ → Ӏ
+    .replace(/\u0031/g, PALOCHKA) // 1 → Ӏ
+    .replace(/\u0049/g, PALOCHKA) // I → Ӏ
+    .replace(/\u0130/g, PALOCHKA) // İ → Ӏ
+    .replace(/\u0406/g, PALOCHKA); // І → Ӏ
+}
+
+export function palochkaToDigit(input: string): string {
+  if (!input) return input;
+  return input.replace(/\u04C0/g, '\u0031');
+}
+
+export function hasPalochka(input: string): boolean {
+  if (!input) return false;
+  return /[\u04C0\u04CF\u0031\u0049\u0130\u0406]/.test(input);
+}

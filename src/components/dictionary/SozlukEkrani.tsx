@@ -377,10 +377,14 @@ export default function SozlukEkrani() {
         )}
 
         <KelimeDetayDrawer
-          isOpen={drawerAcik}
-          onClose={() => setDrawerAcik(false)}
-          seciliKelime={seciliKelime}
-        />
+            isOpen={drawerAcik}
+            onClose={() => setDrawerAcik(false)}
+            seciliKelime={seciliKelime}
+            onConceptClick={(word) => {
+              setDrawerAcik(false);
+              handleSearch(word, 'tam');
+            }}
+          />
       </div>
     </div>
   );

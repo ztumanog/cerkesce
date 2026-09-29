@@ -1,5 +1,6 @@
-﻿import { NextRequest, NextResponse } from 'next/server';
+import { NextRequest, NextResponse } from 'next/server';
 import { loadDictionaryData } from '@/lib/dictionaryLoader';
+import { normalizePalochka } from '@/domain/utils/normalizePalochka';
 
 function normalizeDialectParam(val: string): string {
   const v = (val || '').toLowerCase();
@@ -94,7 +95,8 @@ function parseDictionaryText(text: string): ParsedText {
 export async function GET(request: NextRequest) {
   try {
     const { searchParams } = new URL(request.url);
-    const q = (searchParams.get('q') || '').trim().toLowerCase();
+    const rawQ = (searchParams.get('q') || '').trim().toLowerCase();
+    const q = normalizePalochka(rawQ);
     const mode = searchParams.get('mode') || 'baslayan';
     const dialect = normalizeDialectParam(searchParams.get('dialect') || 'tumu');
     const targetLang = (searchParams.get('targetLang') || 'hepsi').toLowerCase();
@@ -125,8 +127,8 @@ export async function GET(request: NextRequest) {
       const rawW = extractRawWord(item);
       const rawT = extractRawDefinition(item);
 
-      const w = rawW.toLowerCase().trim();
-      const t = rawT.toLowerCase().trim();
+      const w = normalizePalochka(rawW.toLowerCase().trim());
+      const t = normalizePalochka(rawT.toLowerCase().trim());
 
       if (!isNoFilter(dialect)) {
         if (String(item.dialect || '').toLowerCase() !== dialect) continue;
