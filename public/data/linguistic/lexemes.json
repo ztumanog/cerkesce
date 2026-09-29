@@ -6090,5 +6090,199 @@
       "kabardian": "махуэшхуэ"
     },
     "notes": "махуэ (gun) + шхуэ (buyuk) = buyuk gun -> bayram."
+  },
+  {
+    "id": "L-PSYC1YQ1U",
+    "form": "псыцӀыкӀу",
+    "ipa": "/psǝtsʼǝkʷʼǝ/",
+    "literalMeaning": "kucuk su",
+    "derivation": {
+      "rootIds": [
+        "R-PSY",
+        "R-C1YQ1U"
+      ],
+      "morphemeIds": [
+        "M-C1YQ1U"
+      ],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-C1YQ1U",
+    "conceptId": "STREAM",
+    "dialectVariants": {
+      "adyghe": "псыцӀыкӀу",
+      "kabardian": "псыцӀыкӀу"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 1,
+      "sources": [
+        "M-C1YQ1U referansi"
+      ],
+      "meanings": {
+        "tr": "dere, kucuk su",
+        "ru": "ручей"
+      }
+    },
+    "notes": "псы (su) + цӀыкӀу (kucuk) = kucuk su -> dere. Kirik referans duzeltmesi."
+  },
+  {
+    "id": "L-UNEC1YQ1U",
+    "form": "унэцӀыкӀу",
+    "ipa": "/wǝnɐtsʼǝkʷʼǝ/",
+    "literalMeaning": "kucuk ev",
+    "derivation": {
+      "rootIds": [
+        "R-UNE",
+        "R-C1YQ1U"
+      ],
+      "morphemeIds": [
+        "M-C1YQ1U"
+      ],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-C1YQ1U",
+    "conceptId": "HOUSE",
+    "dialectVariants": {
+      "adyghe": "унэцӀыкӀу",
+      "kabardian": "унэцӀыкӀу"
+    },
+    "notes": "унэ (ev) + цӀыкӀу (kucuk) = kucuk ev."
+  },
+  {
+    "id": "L-NYBZHYC1YQ1U",
+    "form": "ныбжьыцӀыкӀу",
+    "ipa": "/nǝbʑǝtsʼǝkʷʼǝ/",
+    "literalMeaning": "yasi kucuk",
+    "derivation": {
+      "rootIds": [
+        "R-NYBZHY",
+        "R-C1YQ1U"
+      ],
+      "morphemeIds": [
+        "M-C1YQ1U"
+      ],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-C1YQ1U",
+    "conceptId": "YOUTH",
+    "dialectVariants": {
+      "adyghe": "ныбжьыцӀыкӀу",
+      "kabardian": "ныбжьыцӀыкӀу"
+    },
+    "notes": "ныбжьы (yas) + цӀыкӀу (kucuk) = yasi kucuk -> genc."
+  },
+  {
+    "id": "L-GUC1YQ1U",
+    "form": "гуцӀыкӀу",
+    "ipa": "/gwǝtsʼǝkʷʼǝ/",
+    "literalMeaning": "kucuk kalp",
+    "derivation": {
+      "rootIds": [
+        "R-GU",
+        "R-C1YQ1U"
+      ],
+      "morphemeIds": [
+        "M-C1YQ1U"
+      ],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-C1YQ1U",
+    "conceptId": "COWARD",
+    "dialectVariants": {
+      "adyghe": "гуцӀыкӀу",
+      "kabardian": "гуцӀыкӀу"
+    },
+    "notes": "гу (kalp) + цӀыкӀу (kucuk) = kucuk kalpli -> korkak."
+  },
+  {
+    "id": "L-1UEKHUC1YQ1U",
+    "form": "ӀуэхуцӀыкӀу",
+    "ipa": "/ʔʷɐxʷǝtsʼǝkʷʼǝ/",
+    "literalMeaning": "kucuk is",
+    "derivation": {
+      "rootIds": [
+        "R-1UEKHU",
+        "R-C1YQ1U"
+      ],
+      "morphemeIds": [
+        "M-C1YQ1U"
+      ],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-C1YQ1U",
+    "conceptId": "TRIVIAL",
+    "dialectVariants": {
+      "adyghe": "IофыцӀыкӀу",
+      "kabardian": "ӀуэхуцӀыкӀу"
+    },
+    "notes": "Ӏуэху (is) + цӀыкӀу (kucuk) = kucuk is -> onemsiz is."
+  },
+  {
+    "id": "L-ADEC1YQ1U",
+    "form": "адэцӀыкӀу",
+    "ipa": "/aːdɐtsʼǝkʷʼǝ/",
+    "literalMeaning": "kucuk baba",
+    "derivation": {
+      "rootIds": [
+        "R-ADE",
+        "R-C1YQ1U"
+      ],
+      "morphemeIds": [
+        "M-C1YQ1U"
+      ],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-C1YQ1U",
+    "conceptId": "UNCLE",
+    "dialectVariants": {
+      "adyghe": "адэцӀыкӀу",
+      "kabardian": "адэцӀыкӀу"
+    },
+    "notes": "адэ (baba) + цӀыкӀу (kucuk) = kucuk baba -> amca."
+  },
+  {
+    "id": "L-ANEC1YQ1U",
+    "form": "анэцӀыкӀу",
+    "ipa": "/aːnɐtsʼǝkʷʼǝ/",
+    "literalMeaning": "kucuk anne",
+    "derivation": {
+      "rootIds": [
+        "R-ANE",
+        "R-C1YQ1U"
+      ],
+      "morphemeIds": [
+        "M-C1YQ1U"
+      ],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-C1YQ1U",
+    "conceptId": "AUNT",
+    "dialectVariants": {
+      "adyghe": "анэцӀыкӀу",
+      "kabardian": "анэцӀыкӀу"
+    },
+    "notes": "анэ (anne) + цӀыкӀу (kucuk) = kucuk anne -> teyze/hala."
+  },
+  {
+    "id": "L-MAF1EC1YQ1U",
+    "form": "мафӀэцӀыкӀу",
+    "ipa": "/maːfʔatsʼǝkʷʼǝ/",
+    "literalMeaning": "kucuk ates",
+    "derivation": {
+      "rootIds": [
+        "R-MAF1E",
+        "R-C1YQ1U"
+      ],
+      "morphemeIds": [
+        "M-C1YQ1U"
+      ],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-C1YQ1U",
+    "conceptId": "SPARK",
+    "dialectVariants": {
+      "adyghe": "машIуэцӀыкӀу",
+      "kabardian": "мафӀэцӀыкӀу"
+    },
+    "notes": "мафӀэ (ates) + цӀыкӀу (kucuk) = kucuk ates -> kivilcim."
   }
 ]
