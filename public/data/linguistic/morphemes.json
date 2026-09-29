@@ -877,5 +877,71 @@
     "attachment": "suffix",
     "exampleLexemeIds": [],
     "notes": "Buyutme eki. Псыжь = Kuban Nehri (buyuk su)."
+  },
+  {
+    "id": "M-TETE",
+    "form": "тэтэ",
+    "ipa": "/tata/",
+    "gloss": "dede (kok)",
+    "type": "lexical",
+    "dialect": "both",
+    "attachment": "free",
+    "exampleLexemeIds": [
+      "L-TETAZH"
+    ],
+    "notes": "Dede koku. ADY agirlikli. Kaynak: Huvaj (2007)."
+  },
+  {
+    "id": "M-DADE",
+    "form": "дадэ",
+    "ipa": "/daːda/",
+    "gloss": "dede (kok)",
+    "type": "lexical",
+    "dialect": "both",
+    "attachment": "free",
+    "exampleLexemeIds": [
+      "L-DADESHHUE"
+    ],
+    "notes": "Dede koku. ADY Abzeh + KBD. Kaynak: Huvaj (2007), Wiktionary."
+  },
+  {
+    "id": "M-NYBZHY",
+    "form": "ныбжь",
+    "ipa": "/nǝbʑ/",
+    "gloss": "yas, omur (kok)",
+    "type": "lexical",
+    "dialect": "both",
+    "attachment": "free",
+    "exampleLexemeIds": [
+      "L-NYBZHYSHXUE",
+      "L-NYBZHYC1YQ1U"
+    ],
+    "notes": "Yas/omur koku. Homonym: ныбжь (golge)."
+  },
+  {
+    "id": "M-K1UASH",
+    "form": "къуэш",
+    "ipa": "/qʷʼǝʃ/",
+    "gloss": "erkek kardes (kok)",
+    "type": "lexical",
+    "dialect": "both",
+    "attachment": "free",
+    "exampleLexemeIds": [
+      "L-K1UASH"
+    ],
+    "notes": "Erkek kardes koku. Bilesiklerde: адэ къуэш, анэ къуэш."
+  },
+  {
+    "id": "M-SHYPHUE",
+    "form": "шыпхъу",
+    "ipa": "/ʃǝpχʷǝ/",
+    "gloss": "kiz kardes (kok)",
+    "type": "lexical",
+    "dialect": "both",
+    "attachment": "free",
+    "exampleLexemeIds": [
+      "L-SHYPHUE"
+    ],
+    "notes": "Kiz kardes koku. Bilesiklerde: адэшыпхъу, анэшыпхъу."
   }
 ]
