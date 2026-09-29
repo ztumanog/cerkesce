@@ -1455,5 +1455,65 @@
     "confidence": 1.0,
     "evidenceSource": "dictionary",
     "reference": "Abaze (2005)"
+  },
+  {
+    "id": "SR-K1UE-SON",
+    "source": "R-K1UE",
+    "target": "L-K1UE",
+    "type": "derivational",
+    "evidence": "къуэ",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary",
+    "reference": "Apashev (2008), Kardanov (1957)"
+  },
+  {
+    "id": "SR-K1UE-HISSON",
+    "source": "R-K1UE",
+    "target": "L-YK1UE",
+    "type": "derivational",
+    "evidence": "икъуэ",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary",
+    "reference": "Wiktionary (2023)"
+  },
+  {
+    "id": "SR-K1UE-MYSON",
+    "source": "R-K1UE",
+    "target": "L-SYK1UE",
+    "type": "derivational",
+    "evidence": "сикъуэ",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary",
+    "reference": "Wiktionary (2023)"
+  },
+  {
+    "id": "SR-K1UE-TWOSONS",
+    "source": "R-K1UE",
+    "target": "L-K1UIT1U",
+    "type": "compound",
+    "evidence": "къуитӀу",
+    "confidence": 1.0,
+    "evidenceSource": "corpus",
+    "reference": "Korpus (adyghe.web-corpora.net)"
+  },
+  {
+    "id": "SR-K1UE-SEVENSONS",
+    "source": "R-K1UE",
+    "target": "L-K1UIBLY",
+    "type": "compound",
+    "evidence": "къуиблы",
+    "confidence": 1.0,
+    "evidenceSource": "corpus",
+    "reference": "Korpus (adyghe.web-corpora.net)"
+  },
+  {
+    "id": "SR-KHUABZH-VERY",
+    "source": "R-KHUABZH",
+    "target": "L-KHUABZHU",
+    "type": "derivational",
+    "evidence": "хуабжьу",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary",
+    "reference": "Apashev (2008), Kardanov (1957)"
   }
 ]

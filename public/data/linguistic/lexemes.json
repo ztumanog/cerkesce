@@ -5600,5 +5600,268 @@
       }
     },
     "notes": "къуапэ (aci) + пагуэ (genis) = genis aci."
+  },
+  {
+    "id": "L-K1UE",
+    "form": "къуэ",
+    "ipa": "/qʷa/",
+    "literalMeaning": "ogul",
+    "derivation": {
+      "rootIds": [
+        "R-K1UE"
+      ],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-K1UE",
+    "conceptId": "SON",
+    "dialectVariants": {
+      "adyghe": "къо",
+      "kabardian": "къуэ"
+    },
+    "corpusFrequency": 16385,
+    "dictionaryEvidence": {
+      "sourceCount": 2,
+      "sources": [
+        "Apashev (2008)",
+        "Kardanov (1957)"
+      ],
+      "meanings": {
+        "tr": "ogul",
+        "en": "son",
+        "ru": "сын"
+      }
+    },
+    "notes": "Ogul. Adigece: къо. Homonym: къуэ (vadi). Korpus: 16385."
+  },
+  {
+    "id": "L-YK1UE",
+    "form": "икъуэ",
+    "ipa": "/jiqʷa/",
+    "literalMeaning": "onun oglu",
+    "derivation": {
+      "rootIds": [
+        "R-K1UE"
+      ],
+      "morphemeIds": [],
+      "rule": "suffix"
+    },
+    "wordFamilyId": "WF-K1UE",
+    "conceptId": "HIS_SON",
+    "dialectVariants": {
+      "adyghe": "ыкъо",
+      "kabardian": "икъуэ"
+    },
+    "corpusFrequency": 2539,
+    "dictionaryEvidence": {
+      "sourceCount": 2,
+      "sources": [
+        "Apashev (2008)",
+        "Wiktionary (2023)"
+      ],
+      "meanings": {
+        "tr": "onun oglu",
+        "en": "his son",
+        "ru": "его сын"
+      }
+    },
+    "notes": "и- (onun) + къуэ (ogul) = onun oglu. Korpus: 2539."
+  },
+  {
+    "id": "L-SYK1UE",
+    "form": "сикъуэ",
+    "ipa": "/siqʷa/",
+    "literalMeaning": "benim oglum",
+    "derivation": {
+      "rootIds": [
+        "R-K1UE"
+      ],
+      "morphemeIds": [],
+      "rule": "suffix"
+    },
+    "wordFamilyId": "WF-K1UE",
+    "conceptId": "MY_SON",
+    "dialectVariants": {
+      "adyghe": "скъо",
+      "kabardian": "сикъуэ"
+    },
+    "corpusFrequency": 224,
+    "dictionaryEvidence": {
+      "sourceCount": 2,
+      "sources": [
+        "Apashev (2008)",
+        "Wiktionary (2023)"
+      ],
+      "meanings": {
+        "tr": "benim oglum",
+        "en": "my son",
+        "ru": "мой сын"
+      }
+    },
+    "notes": "си- (benim) + къуэ (ogul) = benim oglum. Korpus: 224."
+  },
+  {
+    "id": "L-K1UIT1U",
+    "form": "къуитӀу",
+    "ipa": "/qʷijtʷʼə/",
+    "literalMeaning": "iki ogul",
+    "derivation": {
+      "rootIds": [
+        "R-K1UE"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-K1UE",
+    "conceptId": "TWO_SONS",
+    "dialectVariants": {
+      "adyghe": "къуитӀу",
+      "kabardian": "къуитӀу"
+    },
+    "corpusFrequency": 30,
+    "dictionaryEvidence": {
+      "sourceCount": 1,
+      "sources": [
+        "Korpus (adyghe.web-corpora.net)"
+      ],
+      "meanings": {
+        "tr": "iki ogul",
+        "en": "two sons",
+        "ru": "два сына"
+      }
+    },
+    "notes": "къуи (ogullar) + тӀу (iki) = iki ogul. Korpus: 30."
+  },
+  {
+    "id": "L-K1UIBLY",
+    "form": "къуиблы",
+    "ipa": "/qʷijblə/",
+    "literalMeaning": "yedi ogul",
+    "derivation": {
+      "rootIds": [
+        "R-K1UE"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-K1UE",
+    "conceptId": "SEVEN_SONS",
+    "dialectVariants": {
+      "adyghe": "къуиблы",
+      "kabardian": "къуиблы"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 1,
+      "sources": [
+        "Korpus (adyghe.web-corpora.net)"
+      ],
+      "meanings": {
+        "tr": "yedi ogul",
+        "en": "seven sons",
+        "ru": "семь сыновей"
+      }
+    },
+    "notes": "къуи (ogullar) + блы (yedi) = yedi ogul."
+  },
+  {
+    "id": "L-KHUABZHU",
+    "form": "хуабжьу",
+    "ipa": "/xʷaːbʑəw/",
+    "literalMeaning": "cok, asiri",
+    "derivation": {
+      "rootIds": [
+        "R-KHUABZH"
+      ],
+      "morphemeIds": [],
+      "rule": "suffix"
+    },
+    "wordFamilyId": "WF-KHUABZH",
+    "conceptId": "VERY",
+    "dialectVariants": {
+      "adyghe": "хуабжьу",
+      "kabardian": "хуабжьу"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 10,
+      "sources": [
+        "Apashev (2008)",
+        "Yamisha (2018)",
+        "Yamisha (2023)",
+        "Gish (0000)",
+        "Kokov (2008)",
+        "Kardanov (1957)"
+      ],
+      "meanings": {
+        "tr": "cok, asiri, hizli, siddetli",
+        "en": "very, intensively, fast",
+        "ru": "очень, быстро, сильно"
+      }
+    },
+    "notes": "Pekistirme zarfi. Kendisinden sonra gelen kelimeyi pekistirir. Ornek: хуабжьу фӀыщ (cok iyi). 10 sozluk."
+  },
+  {
+    "id": "L-KUEREDERE",
+    "form": "къуэрэдэрэ",
+    "ipa": "/qʷaradaːra/",
+    "literalMeaning": "ardic",
+    "derivation": {
+      "rootIds": [
+        "R-KUEREDERE"
+      ],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-KUEREDERE",
+    "conceptId": "JUNIPER",
+    "dialectVariants": {
+      "adyghe": "къуэрэдэрэ",
+      "kabardian": "къуэрэдэрэ"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 3,
+      "sources": [
+        "Apashev (2008)",
+        "Kokov (2008)",
+        "Sherdjes Aliy (1994)"
+      ],
+      "meanings": {
+        "tr": "ardic",
+        "en": "juniper",
+        "ru": "можжевельник"
+      }
+    },
+    "notes": "Ardic agaci. 3 sozluk."
+  },
+  {
+    "id": "L-K1UESHYGHE",
+    "form": "къуэшыгъэ",
+    "ipa": "/qʷaɕəɣa/",
+    "literalMeaning": "kardeslik",
+    "derivation": {
+      "rootIds": [
+        "R-K1UASH"
+      ],
+      "morphemeIds": [],
+      "rule": "suffix"
+    },
+    "wordFamilyId": "WF-K1UASH",
+    "conceptId": "BROTHERHOOD",
+    "dialectVariants": {
+      "adyghe": "къошыгъэ",
+      "kabardian": "къуэшыгъэ"
+    },
+    "corpusFrequency": 389,
+    "dictionaryEvidence": {
+      "sourceCount": 1,
+      "sources": [
+        "Wiktionary (2023)"
+      ],
+      "meanings": {
+        "tr": "kardeslik",
+        "en": "brotherhood",
+        "ru": "братство"
+      }
+    },
+    "notes": "къуэш (kardes) + -ыгъэ (soyut ad) = kardeslik."
   }
 ]

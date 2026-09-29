@@ -1672,5 +1672,100 @@
       "compoundCount": 11
     },
     "notes": "Gemi koku. Adigece: къухьэ. Kabardeyce: кхъухь. 11 sozluk kaynagi."
+  },
+  {
+    "id": "R-K1UE",
+    "form": "къуэ",
+    "ipa": "/qʷa/",
+    "primaryMeaning": "ogul, evlat",
+    "secondaryMeanings": [
+      "erkek cocuk",
+      "soy"
+    ],
+    "semanticDomains": [
+      "aile",
+      "toplum"
+    ],
+    "dialectVariants": {
+      "adyghe": "къо",
+      "kabardian": "къуэ"
+    },
+    "productivity": {
+      "lemmaCount": 5,
+      "corpusFrequency": 16385,
+      "compoundCount": 3
+    },
+    "notes": "Ogul koku. Adigece: къо. Homonym: къуэ (vadi). Korpus: 16385."
+  },
+  {
+    "id": "R-KHUABZH",
+    "form": "хуабжь",
+    "ipa": "/xʷaːbʑ/",
+    "primaryMeaning": "buyuk, guclu, siddetli",
+    "secondaryMeanings": [
+      "hizli",
+      "gurultulu",
+      "cok"
+    ],
+    "semanticDomains": [
+      "nitelik",
+      "derece"
+    ],
+    "dialectVariants": {
+      "adyghe": "хуабжь",
+      "kabardian": "хуабжь"
+    },
+    "productivity": {
+      "lemmaCount": 2,
+      "corpusFrequency": 0,
+      "compoundCount": 0
+    },
+    "notes": "Pekistirme koku. хуабжьу (zarf) = cok, asiri, hizli. 10 sozluk."
+  },
+  {
+    "id": "R-KUEREDERE",
+    "form": "къуэрэдэрэ",
+    "ipa": "/qʷaradaːra/",
+    "primaryMeaning": "ardic (juniperus)",
+    "secondaryMeanings": [
+      "ardic agaci"
+    ],
+    "semanticDomains": [
+      "bitki",
+      "flora"
+    ],
+    "dialectVariants": {
+      "adyghe": "къуэрэдэрэ",
+      "kabardian": "къуэрэдэрэ"
+    },
+    "productivity": {
+      "lemmaCount": 1,
+      "corpusFrequency": 0,
+      "compoundCount": 0
+    },
+    "notes": "Ardic koku. Apashev (2008), Kokov (2008), Sherdjes Aliy (1994)."
+  },
+  {
+    "id": "R-K1UASH",
+    "form": "къуэш",
+    "ipa": "/qʷaɕ/",
+    "primaryMeaning": "kardes",
+    "secondaryMeanings": [
+      "erkek kardes"
+    ],
+    "semanticDomains": [
+      "aile",
+      "toplum"
+    ],
+    "dialectVariants": {
+      "adyghe": "къош",
+      "kabardian": "къуэш"
+    },
+    "productivity": {
+      "lemmaCount": 2,
+      "corpusFrequency": 389,
+      "compoundCount": 1
+    },
+    "notes": "Kardes koku. Adigece: къош. Korpus: 389."
   }
 ]

@@ -242,5 +242,35 @@
       "corpusFrequency": 0
     },
     "notes": "Taskin yatagi ailesi."
+  },
+  {
+    "id": "WF-K1UE",
+    "rootId": "R-K1UE",
+    "morphemeIds": [],
+    "lexemeIds": [
+      "L-K1UE",
+      "L-YK1UE",
+      "L-SYK1UE",
+      "L-K1UIT1U",
+      "L-K1UIBLY"
+    ],
+    "productivity": {
+      "totalLexemes": 5,
+      "corpusFrequency": 16385
+    },
+    "notes": "Ogul ailesi. Adigece: къо. Homonym: къуэ (vadi). Korpus: 16385."
+  },
+  {
+    "id": "WF-KHUABZH",
+    "rootId": "R-KHUABZH",
+    "morphemeIds": [],
+    "lexemeIds": [
+      "L-KHUABZHU"
+    ],
+    "productivity": {
+      "totalLexemes": 1,
+      "corpusFrequency": 0
+    },
+    "notes": "Pekistirme ailesi. хуабжьу (cok) dahil. 10 sozluk."
   }
 ]

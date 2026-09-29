@@ -799,5 +799,66 @@
     "attachment": "suffix",
     "exampleLexemeIds": [],
     "notes": "Yeni/alt eki."
+  },
+  {
+    "id": "M-BE",
+    "form": "-бэ",
+    "ipa": "/ba/",
+    "gloss": "cokluk eki",
+    "type": "grammatical",
+    "dialect": "both",
+    "attachment": "suffix",
+    "exampleLexemeIds": [
+      "L-YAK1UBE"
+    ],
+    "notes": "Cokluk eki. якъубэ = bircogu."
+  },
+  {
+    "id": "M-SHCH2",
+    "form": "-щ",
+    "ipa": "/ɕ/",
+    "gloss": "meslek/mesguliyet eki",
+    "type": "grammatical",
+    "dialect": "both",
+    "attachment": "suffix",
+    "exampleLexemeIds": [
+      "L-NEPC1YSHCH"
+    ],
+    "notes": "Meslek eki. нэпцӀыщ = yalanci."
+  },
+  {
+    "id": "M-K1E2",
+    "form": "-кӀэ",
+    "ipa": "/kʹa/",
+    "gloss": "arac eki (ile)",
+    "type": "grammatical",
+    "dialect": "both",
+    "attachment": "suffix",
+    "exampleLexemeIds": [],
+    "notes": "Arac eki. псыкӀэ = su ile."
+  },
+  {
+    "id": "M-NSHE2",
+    "form": "-ншэ",
+    "ipa": "/nʃa/",
+    "gloss": "yokluk eki (-siz)",
+    "type": "grammatical",
+    "dialect": "both",
+    "attachment": "suffix",
+    "exampleLexemeIds": [
+      "L-PSENSHE"
+    ],
+    "notes": "Yokluk eki. псэншэ = cansiz."
+  },
+  {
+    "id": "M-ZHE",
+    "form": "-жь",
+    "ipa": "/ʑ/",
+    "gloss": "buyutme/eski eki",
+    "type": "grammatical",
+    "dialect": "both",
+    "attachment": "suffix",
+    "exampleLexemeIds": [],
+    "notes": "Buyutme eki. Псыжь = Kuban Nehri (buyuk su)."
   }
 ]
