@@ -129,3 +129,11 @@ node_modules/
 tsconfig.tsbuildinfo
 
 data/*.txt
+
+# Faz C-9 corpus (buyuk dosyalar - HF'den yeniden indirilebilir)
+data/corpus/raw/*.jsonl
+data/corpus/raw/*.jsonl.bak
+data/corpus/cleaned/*.txt
+data/corpus/tokenized/*.jsonl
+data/corpus/frequency/*.json
+data/corpus/.hf_cache/
