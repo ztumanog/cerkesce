@@ -1,7 +1,7 @@
 # Project Status Report
 
 **Last Updated:** 2026-09-29
-**Version:** 9.5.0 (Faz C-6 COMPLETED)
+**Version:** 10.0.0 (Faz C-8 COMPLETED)
 
 ---
 
@@ -12,55 +12,66 @@
 | Faz 1 | CLOSED | Core Architecture |
 | Faz 2 | CLOSED | Mimar onayli |
 | Faz 3 | READY FOR GATE REVIEW | Mimar onayli |
-| Product Stage | ACTIVE | 14 gun, 6 beta |
+| Faz 4 | COMPLETED | Data Mapping |
 | Faz 5 | COMPLETED | 2026-09-29 |
+| Faz 6 | CERTIFIED | API & Explorer |
 | Faz C-3 | COMPLETED | 2026-09-28 |
 | Faz C-4 | COMPLETED | 2026-09-29 |
 | Faz C-5 | COMPLETED | 2026-09-29 |
 | Faz C-6 | COMPLETED | 2026-09-29 |
-| Faz C-7 | SIRADA | Yeni aileler |
+| Faz C-7 | COMPLETED | 2026-09-29 |
+| **Faz C-8** | **COMPLETED** | **2026-09-29** |
 
-**Test Durumu:** 73/73 Test Files PASS, 220/220 Tests PASS
+**Test Durumu:** 76/76 Test Files PASS, 232/232 Tests PASS
 
 ---
 
-## FAZ C-6 SONUCU (2026-09-29)
+## FAZ C-8 SONUCU (2026-09-29)
 
 ### Sayisal Durum
 
-| Kategori | Faz C-5 | Faz C-6 | Artis |
+| Kategori | Faz C-7 | Faz C-8 | Artis |
 |---|---|---|---|
-| Kok | 40 | **45** | +5 |
-| Lexeme | 126 | **150** | +24 |
-| Morfem | 60 | **65** | +5 |
-| Semantic Relation | 100 | **127** | +27 |
-| Word Family | 5 | **11** | +6 |
-| Test | 220 | **220** | korundu |
+| Kok | 50 | **58** | +8 |
+| Lexeme | 177 | **200** | +23 |
+| Morfem | 70 | **75** | +5 |
+| Semantic Relation | 154 | **175** | +21 |
+| Word Family | 18 | **30** | +12 |
+| Test | 231 | **232** | +1 |
+
+### Kritik Kesifler
+
+1. **Cerkes akrabalik sistemi:** Paternal/maternal ayrimi
+2. **-шхуэ ↔ -цӀыкӀу simetrik ek cifti**
+3. **ныбжь homonym** (yas != golge)
+4. **шъуэ → шхуэ duzeltmesi** (ADY standart)
+5. **дадэшхуэ = buyuk dede** (KBD)
+6. **DialectConverter Python v3 portu** (40/40 PASS)
 
 ### Kanit Belgeleri
 
-- FAZ_C6_TAMAMLAMA_RAPORU.md (2026-09-29)
-- ROADMAP.md (Faz C-6 COMPLETED)
-- RESTORED.md (220/220 PASS)
-- ADR-ROOT-001.md
+- FAZ_C8_TAMAMLAMA_RAPORU.md (2026-09-29)
+- ROADMAP.md (Faz C-8 COMPLETED)
+- MEMO_FAZ_C8.md
 
 ---
 
-## FAZ C-7 HEDEFLERI
+## FAZ C-9 HEDEFLERI
 
-### Yeni Aileler
+### Yeni Aileler ve Genisletme
 
-- къуэ (vadi) ailesi
-- шхуэ (buyuk) ailesi
+- Somatik kokler: лъэ (ayak), пэ (burun), Ӏэ (el)
+- Zihinsel kokler: гу (kalp), щхьэ (bas)
+- Doga kokleri: псы (su), мафӀэ (ates), жьы (eski/hava)
 
 ### Sayisal Hedefler
 
 | Kategori | Mevcut | Hedef |
 |---|---|---|
-| Kok | 45 | 50+ |
-| Lexeme | 150 | 175+ |
-| Morfem | 65 | 70+ |
-| Semantic Relation | 127 | 150+ |
+| Kok | 58 | 65+ |
+| Lexeme | 200 | 220+ |
+| Morfem | 75 | 80+ |
+| Semantic Relation | 175 | 200+ |
 
 ---
 
@@ -74,35 +85,3 @@
 
 **Imza:** Gelistirme Ekibi
 **Tarih:** 2026-09-29
-
-
----
-
-## FAZ 5 SONUCU (2026-09-29)
-
-### Sprint Durumu
-
-| Sprint | Durum |
-|---|---|
-| P5-001 Corpus Analytics | COMPLETED |
-| P5-002 Search Analytics | COMPLETED |
-| P5-003 Smart Suggestions | COMPLETED |
-| P5-004 Corpus Explorer | COMPLETED |
-
-### Test Durumu
-
-- 231/231 Tests PASS
-- tsc --noEmit temiz
-- Runtime stabil
-- Kritik teknik borc: 0
-
-### One Cikan Basarilar
-
-1. Smart Suggestions runtime'da calisiyor
-2. Corpus Explorer runtime'da calisiyor
-3. 11 yeni test eklendi
-4. Runtime izolasyonu korundu
-
-### Sonraki Adim
-
-Faz 6 hazirligi (Embedding Engine, Semantic Vector Search)

@@ -1,10 +1,17 @@
 # PHASE STATUS
 
+**Son Guncelleme:** 2026-09-29
+**Versiyon:** v2.0 (Faz C-8 COMPLETED)
+
+---
+
 ## Phase 1 — Core Dictionary Platform
-Status: CLOSED
+**Status:** CLOSED
+
+---
 
 ## Phase 2 — Translation Platform
-Status: CLOSED
+**Status:** CLOSED
 
 Completed Deliverables:
 - TranslationEntry
@@ -14,15 +21,10 @@ Completed Deliverables:
 - Cross Dictionary Matching
 - Reverse Translation Search
 
-Verification:
-- Runtime operational
-- Automated test suite passing (220/220)
-- TranslationGroup -> Concept pipeline operational
-
 ---
 
 ## Phase 3 — Concept Engine
-Status: READY FOR GATE REVIEW
+**Status:** READY FOR GATE REVIEW
 
 Gate Notes:
 - ADR-0017 remains PROPOSED
@@ -30,31 +32,15 @@ Gate Notes:
 - Semantic Expansion runtime intentionally deferred
 - Linguistic Dataset Layer remains isolated from runtime
 
-Implementation lock remains until formal gate approval.
+---
+
+## Phase 4 — Data Mapping & Integrity
+**Status:** COMPLETED
 
 ---
 
-## Linguistic Dataset Layer (Research)
-Status: ACTIVE RESEARCH
-
-Metrics:
-- Roots: 40
-- Morphemes: 60
-- Lexemes: 126
-- Semantic Relations: 100
-
-Important:
-Linguistic Dataset Layer is research data.
-It does not modify runtime behavior.
-
----
-
-**Imza:** Gelistirme Ekibi
-**Tarih:** 2026-09-29
-
-
-## Phase 5 — Corpus Analytics & Search Intelligence
-Status: COMPLETED (2026-09-29)
+## Phase 5 — Discovery Engine
+**Status:** COMPLETED (2026-09-29)
 
 Completed Deliverables:
 - P5-001 Corpus Analytics
@@ -62,8 +48,41 @@ Completed Deliverables:
 - P5-003 Smart Suggestions
 - P5-004 Corpus Explorer
 
-Verification:
-- 231/231 Tests PASS
-- tsc --noEmit temiz
-- Runtime stabil
-- Kritik teknik borc: 0
+---
+
+## Phase 6 — API & Explorer
+**Status:** CERTIFIED
+
+---
+
+## Linguistic Dataset Layer (Research)
+**Status:** ACTIVE RESEARCH
+
+**Metrics (Faz C-8 Final):**
+- Roots: 58
+- Morphemes: 75
+- Lexemes: 200
+- Semantic Relations: 175
+- Word Families: 30
+
+Important:
+Linguistic Dataset Layer is research data.
+It does not modify runtime behavior.
+
+---
+
+## Faz Gecmisi (Linguistic Dataset)
+
+| Faz | Tarih | Durum |
+|---|---|---|
+| Faz C-3 | 2026-09-28 | COMPLETED |
+| Faz C-4 | 2026-09-29 | COMPLETED |
+| Faz C-5 | 2026-09-29 | COMPLETED |
+| Faz C-6 | 2026-09-29 | COMPLETED |
+| Faz C-7 | 2026-09-29 | COMPLETED |
+| Faz C-8 | 2026-09-29 | COMPLETED |
+
+---
+
+**Imza:** Gelistirme Ekibi
+**Tarih:** 2026-09-29
