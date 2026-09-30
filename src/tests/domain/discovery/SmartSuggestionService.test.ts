@@ -32,11 +32,11 @@ describe('P5-003 Smart Suggestions', () => {
     expect(words).toContain('псы');
   });
 
-  it('SS-003: напс yazinca нэпс onerilmeli', () => {
-    const result = service.suggest('напс');
-    const words = result.suggestions.map((s) => s.word);
-    expect(words).toContain('нэпс');
-  });
+it('SS-003: напс yazinca нэпсы onerilmeli', () => {
+  const result = service.suggest('напс');
+  const words = result.suggestions.map((s) => s.word);
+  expect(words).toContain('нэпсы');  // ← Uzun form
+});
 
   it('SS-004: Tam eslesme kendini oneri olarak dondurmemeli', () => {
     const result = service.suggest('псы');
