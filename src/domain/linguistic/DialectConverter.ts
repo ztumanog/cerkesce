@@ -89,7 +89,6 @@ export class DialectConverter {
     c = c.replace(/гъусэ/g, 'гусэ');
     c = c.replace(/джэд/g, 'зэд');
     c = c.replace(/чъыгы/g, 'щыгы');
-    c = c.replace(/цӀы/g, 'дзӀы');
     c = c.replace(/пӀэ/g, 'Ӏэ');
     c = c.replace(/тӀы/g, 'Ӏы');
     c = c.replace(/кӀэ/g, 'чэ');
@@ -100,6 +99,7 @@ export class DialectConverter {
     c = c.replace(/цыгъо/g, 'дзыгъуэ');
     c = c.replace(/ц/g, 'дз');
     c = c.replace(/гъо/g, 'гъуэ');
+    c = c.replace(/цӀы/g, 'дзӀы');
     c = c.replace(/ЦЦЦ/g, 'цӏ');
 
 // PHASE 6: LEXICAL SOUND LAWS
