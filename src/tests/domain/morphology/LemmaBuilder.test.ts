@@ -10,19 +10,19 @@ describe('Phase 4.4 - Lemma Builder', () => {
   ];
   const builder = new LemmaBuilder(mockLexemes);
 
-  it('4.4.1: gufl e -> lemma', () => {
+  it('4.4.1: gufl e', () => {
     const r = builder.build('гуфӀэ');
     expect(r.matched).toBe(true);
     expect(r.lemma?.id).toBe('L-GUF1E');
   });
 
-  it('4.4.2: negu -> lemma', () => {
+  it('4.4.2: negu', () => {
     const r = builder.build('нэгу');
     expect(r.matched).toBe(true);
     expect(r.lemma?.id).toBe('L-NEGU');
   });
 
-  it('4.4.3: psyn e -> lemma', () => {
+  it('4.4.3: psyne', () => {
     const r = builder.build('псынэ');
     expect(r.matched).toBe(true);
   });

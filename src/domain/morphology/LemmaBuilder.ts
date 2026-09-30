@@ -1,8 +1,6 @@
 /**
  * LemmaBuilder - Morfolojik analizden lemma olusturma
- * 
  * Phase 4.4 - Morphology Engine
- * Hedef: 244/244 lexeme eslesmesi
  */
 
 import { Lexeme } from '../linguistic/Lexeme';
