@@ -5602,7 +5602,7 @@
     "id": "L-ADEKUESHH",
     "form": "адэ къуэш",
     "ipa": "/aːdɐ qʷʼǝʃ/",
-    "literalMeaning": "baba kardes",
+    "literalMeaning": "amca (baba erkek kardesi)",
     "derivation": {
       "rootIds": [
         "R-ADE",
@@ -5629,7 +5629,7 @@
         "ru": "дядя по отцу"
       }
     },
-    "notes": "адэ (baba) + къуэш (kardes) = amca. Adigece: ятэш / атэш.",
+    "notes": "C-11.3: amca. Kabardeyce: адэ къуэш.",
     "corpusFrequency": 11,
     "corpusFrequencyAdy": 2,
     "corpusFrequencyKbd": 0
@@ -5961,17 +5961,17 @@
   },
   {
     "id": "L-GUSH1UAGHO",
-    "form": "гущӏуагъо",
+    "form": "гуфӏэгъу",
     "literalMeaning": "sevinç, nese",
     "wordFamilyId": "WF-GU",
     "dialectVariants": {
       "adyghe": "гущӏуагъо",
       "kabardian": "гуфӏэгъуэ"
     },
-    "corpusFrequency": 0,
+    "corpusFrequency": 364,
     "corpusFrequencyAdy": 0,
     "corpusFrequencyKbd": 118,
-    "notes": "C-9.5. Slovar: 5 kaynak."
+    "notes": "C-11.3: sevinc. Dogru form: гуфӏэгъу. Korpus: 364."
   },
   {
     "id": "L-1EPY1EGHU",
@@ -7059,9 +7059,9 @@
   },
   {
     "id": "L-ANEKUESHH",
-    "form": "анэ къуэш",
+    "form": "анэш",
     "ipa": "/a╦Én╔É q╩À╩╝ÃØ╩â/",
-    "literalMeaning": "anne kardes",
+    "literalMeaning": "dayi (anne erkek kardesi)",
     "derivation": {
       "rootIds": [
         "R-ANE",
@@ -7086,8 +7086,8 @@
         "ru": "º┤ªÅº┤ªÅ º┐º¥ º╝º░ªéºÁªÇº©"
       }
     },
-    "notes": "анэ (anne) + къуэш (kardes) = dayi. Adigece: анэш.",
-    "corpusFrequency": 0,
+    "notes": "C-11.3: dayi. Kabardeyce: анэш. Abaze 2005.",
+    "corpusFrequency": 167,
     "corpusFrequencyAdy": 0,
     "corpusFrequencyKbd": 444
   },
@@ -8271,8 +8271,8 @@
       "adyghe": "унэрыхьэ-унэрыкӏыу",
       "kabardian": "унэрыхьэ-унэрыкӏыу"
     },
-    "notes": "C-11.2.1: ev ev dolasarak. [YAPAY TUREV - korpus kaniti yok] [YAPAY TUREV - korpus kaniti yok]",
-    "corpusFrequency": 0,
+    "notes": "C-11.3: ev ev dolasarak. Korpus: 3 (унэрыхьэ).",
+    "corpusFrequency": 3,
     "status": "synthetic"
   },
   {
@@ -8422,7 +8422,7 @@
   },
   {
     "id": "L-TYSHYPHUE",
-    "form": "тышыпхъу",
+    "form": "адэшыпхъу",
     "literalMeaning": "hala (baba kiz kardesi)",
     "wordFamilyId": "WF-ADE",
     "conceptId": "AUNT_PATERNAL",
@@ -8430,12 +8430,12 @@
       "adyghe": "тышыпхъу",
       "kabardian": "адэшыпхъу"
     },
-    "notes": "C-11.3: hala. Huvaj, Teshu.",
-    "corpusFrequency": 0
+    "notes": "C-11.3: hala. Kabardeyce: адэшыпхъу. Abaze 2005.",
+    "corpusFrequency": 6
   },
   {
     "id": "L-NYSHYPHUE",
-    "form": "нышыпхъу",
+    "form": "анэ шыпхъу",
     "literalMeaning": "teyze (anne kiz kardesi)",
     "wordFamilyId": "WF-ANE",
     "conceptId": "AUNT_MATERNAL",
@@ -8443,8 +8443,8 @@
       "adyghe": "нышыпхъу",
       "kabardian": "анэшыпхъу"
     },
-    "notes": "C-11.3: teyze (ADY varyant). Huvaj.",
-    "corpusFrequency": 0
+    "notes": "C-11.3: teyze. Kabardeyce: анэ шыпхъу. Abaze 2005.",
+    "corpusFrequency": 8
   },
   {
     "id": "L-YATESH",
@@ -8712,7 +8712,7 @@
   },
   {
     "id": "L-LEZHAK1UE",
-    "form": "лэжьак1уэ",
+    "form": "лэжьакӏуэ",
     "literalMeaning": "isci",
     "wordFamilyId": "WF-LEZH",
     "conceptId": "WORKER",
@@ -8720,8 +8720,8 @@
       "adyghe": "лэжьак1уэ",
       "kabardian": "лэжьак1уэ"
     },
-    "notes": "C-11.3: isci. лэжь + ак1уэ.",
-    "corpusFrequency": 0
+    "notes": "C-11.3: isci. Dogru form: лэжьакӏуэ. Korpus: 416.",
+    "corpusFrequency": 416
   },
   {
     "id": "L-LAZHE-N",
@@ -9757,7 +9757,7 @@
   },
   {
     "id": "L-MEKHUGHUE",
-    "form": "мэкъуогъу",
+    "form": "мэкъуауэгъуэ",
     "literalMeaning": "cuma",
     "conceptId": "FRIDAY",
     "partOfSpeech": "noun",
@@ -9766,8 +9766,8 @@
       "adyghe": "мэкъуогъу",
       "kabardian": "мэкъуогъу"
     },
-    "corpusFrequency": 0,
-    "notes": "C-11.3: temel kelime. Kabardeyce."
+    "corpusFrequency": 17,
+    "notes": "C-11.3: cuma. Dogru form: мэкъуауэгъуэ. Korpus: 17."
   },
   {
     "id": "L-SHEBET",
@@ -9880,5 +9880,109 @@
     },
     "corpusFrequency": 297,
     "notes": "C-11.3: temel kelime. Kabardeyce."
+  },
+  {
+    "id": "L-KUESHH",
+    "form": "къуэш",
+    "literalMeaning": "erkek kardes",
+    "conceptId": "BROTHER",
+    "dialectVariants": {
+      "adyghe": "къош",
+      "kabardian": "къуэш"
+    },
+    "partOfSpeech": "noun",
+    "wordFamilyId": "WF-KINSHIP",
+    "corpusFrequency": 0,
+    "notes": "C-11.3: akrabalik terimi. Kabardeyce."
+  },
+  {
+    "id": "L-KUERYLHXU",
+    "form": "къуэрылъху",
+    "literalMeaning": "kuzen (erkek)",
+    "conceptId": "COUSIN_MALE",
+    "partOfSpeech": "noun",
+    "wordFamilyId": "WF-KINSHIP",
+    "corpusFrequency": 0,
+    "notes": "C-11.3: akrabalik terimi. Kabardeyce."
+  },
+  {
+    "id": "L-PKHURY LHXU",
+    "form": "пхъурылъху",
+    "literalMeaning": "kuzen (kiz)",
+    "conceptId": "COUSIN_FEMALE",
+    "partOfSpeech": "noun",
+    "wordFamilyId": "WF-KINSHIP",
+    "corpusFrequency": 0,
+    "notes": "C-11.3: akrabalik terimi. Kabardeyce."
+  },
+  {
+    "id": "L-NYBZHEGHU",
+    "form": "ныбжьэгъу",
+    "literalMeaning": "arkadas",
+    "conceptId": "FRIEND",
+    "partOfSpeech": "noun",
+    "wordFamilyId": "WF-KINSHIP",
+    "corpusFrequency": 0,
+    "notes": "C-11.3: akrabalik terimi. Kabardeyce."
+  },
+  {
+    "id": "L-DELHXU",
+    "form": "дэлъху",
+    "literalMeaning": "erkek kardes (kizin)",
+    "conceptId": "BROTHER_OF_SISTER",
+    "corpusFrequency": 102,
+    "partOfSpeech": "noun",
+    "wordFamilyId": "WF-KINSHIP",
+    "notes": "C-11.3: akrabalik. Kabardeyce."
+  },
+  {
+    "id": "L-NYSE",
+    "form": "нысэ",
+    "literalMeaning": "gelin",
+    "conceptId": "BRIDE",
+    "corpusFrequency": 195,
+    "partOfSpeech": "noun",
+    "wordFamilyId": "WF-KINSHIP",
+    "notes": "C-11.3: akrabalik. Kabardeyce."
+  },
+  {
+    "id": "L-MALHXE",
+    "form": "малъхъэ",
+    "literalMeaning": "damat",
+    "conceptId": "GROOM",
+    "corpusFrequency": 44,
+    "partOfSpeech": "noun",
+    "wordFamilyId": "WF-KINSHIP",
+    "notes": "C-11.3: akrabalik. Kabardeyce."
+  },
+  {
+    "id": "L-SHYQHUANE",
+    "form": "щыкъуанэ",
+    "literalMeaning": "kaynana",
+    "conceptId": "MOTHER_IN_LAW",
+    "corpusFrequency": 1,
+    "partOfSpeech": "noun",
+    "wordFamilyId": "WF-KINSHIP",
+    "notes": "C-11.3: akrabalik. Kabardeyce."
+  },
+  {
+    "id": "L-SHYQHUKH",
+    "form": "щыкъухъыджэбз",
+    "literalMeaning": "baldiz",
+    "conceptId": "SISTER_IN_LAW",
+    "corpusFrequency": 0,
+    "partOfSpeech": "noun",
+    "wordFamilyId": "WF-KINSHIP",
+    "notes": "C-11.3: akrabalik. Kabardeyce."
+  },
+  {
+    "id": "L-MELHXEGHU",
+    "form": "мэлъхъэгъу",
+    "literalMeaning": "bacanak",
+    "conceptId": "BROTHER_IN_LAW",
+    "corpusFrequency": 0,
+    "partOfSpeech": "noun",
+    "wordFamilyId": "WF-KINSHIP",
+    "notes": "C-11.3: akrabalik. Kabardeyce."
   }
 ]
