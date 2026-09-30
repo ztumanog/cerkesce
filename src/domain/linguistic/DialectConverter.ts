@@ -79,13 +79,20 @@ export class DialectConverter {
     c = c.replace(/о$/g, "уэ");
     c = c.replace(/о(?=[нмзстдкпбг])/g, "уэ");
 
-    // PHASE 5.5: C-9.2 SPESIFIK KURALLAR (ADY -> KBD)
+    // PHASE 5.5: C-9.2 + C-10.2 KURALLAR (ADY -> KBD)
     c = c.replace(/гуфIэ/g, 'гушIо');
     c = c.replace(/гукIэгъу/g, 'гущIэгъу');
     c = c.replace(/гупшысэ/g, 'гупсысэ');
     c = c.replace(/шъхьащэ/g, 'щхьэщэ');
     c = c.replace(/нэшъу/g, 'нэф');
     c = c.replace(/шъыпкъэ/g, 'щыпкъэ');
+    c = c.replace(/гъусэ/g, 'гусэ');
+    c = c.replace(/джэд/g, 'зэд');
+    c = c.replace(/чъыгы/g, 'щыгы');
+    c = c.replace(/цӀы/g, 'дзӀы');
+    c = c.replace(/пӀэ/g, 'Ӏэ');
+    c = c.replace(/тӀы/g, 'Ӏы');
+    c = c.replace(/кӀэ/g, 'чэ');
 
 // PHASE 6: LEXICAL SOUND LAWS
     c = c.replace(/фы$/g, "ху");
