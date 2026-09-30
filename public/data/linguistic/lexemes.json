@@ -5739,7 +5739,7 @@
     "id": "L-TETAZH",
     "form": "тэтэжъ",
     "ipa": "/tataʑ/",
-    "literalMeaning": "yash dede",
+    "literalMeaning": "dede",
     "derivation": {
       "rootIds": [
         "R-TETE"
@@ -5765,8 +5765,8 @@
         "ru": "дед"
       }
     },
-    "notes": "ADY dede. тэтэ (dede) + жъ (yash). KBD karsiligi: адэшхуэ. Huvaj (2007): тэтэжъ/дадэ/адэшхуэ varyantlari.",
-    "corpusFrequency": 26,
+    "notes": "C-11.3: dede. Rusca: дедушка.",
+    "corpusFrequency": 10,
     "corpusFrequencyAdy": 5,
     "corpusFrequencyKbd": 21
   },
@@ -5774,7 +5774,7 @@
     "id": "L-DADESHHUE",
     "form": "дадэшхуэ",
     "ipa": "/daːdaʃxʷa/",
-    "literalMeaning": "buyuk dede",
+    "literalMeaning": "dede (KBD)",
     "derivation": {
       "rootIds": [
         "R-DADE"
@@ -5785,7 +5785,7 @@
       "rule": "compound"
     },
     "wordFamilyId": "WF-DADE",
-    "conceptId": "GREAT_GRANDFATHER",
+    "conceptId": "GRANDFATHER",
     "dialectVariants": {
       "adyghe": "дадэшхуэ",
       "kabardian": "дадэшхуэ"
@@ -5802,8 +5802,8 @@
         "ru": "прадед / дед"
       }
     },
-    "notes": "дадэ (dede) + шхуэ (buyuk). KBD: great-grandfather. ADY: адэшхуэ ile esanlamli (Apasev 2008).",
-    "corpusFrequency": 1,
+    "notes": "C-11.3: dede. KBD. Rusca: дедушка.",
+    "corpusFrequency": 42,
     "corpusFrequencyAdy": 0,
     "corpusFrequencyKbd": 1
   },
