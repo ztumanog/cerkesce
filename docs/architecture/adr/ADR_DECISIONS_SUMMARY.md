@@ -1,3 +1,4 @@
+,
 # ADR DECISIONS SUMMARY
 
 **Proje:** Çerkesçe Knowledge Engine
