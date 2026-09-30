@@ -3551,30 +3551,6 @@
     "corpusFrequencyKbd": 2
   },
   {
-    "id": "L-PSEK1UED",
-    "form": "псэкIуэд",
-    "ipa": "/psakʷʼad/",
-    "literalMeaning": "ruhun kaybolmasi",
-    "derivation": {
-      "rootIds": [
-        "R-PSE"
-      ],
-      "morphemeIds": [],
-      "rule": "compound"
-    },
-    "wordFamilyId": "WF-PSE",
-    "conceptId": "COMPASSION",
-    "dialectVariants": {
-      "adyghe": "псэкIуэд",
-      "kabardian": "псэкIуэд"
-    },
-    "notes": "псэ + кIуэд (kaybolmak) = merhamet. | C-9.1: corpus YOK | C-9.1: corpus YOK [YAPAY TUREV - korpus kaniti yok] [YAPAY TUREV - korpus kaniti yok]",
-    "corpusFrequency": 0,
-    "corpusFrequencyAdy": 0,
-    "corpusFrequencyKbd": 0,
-    "status": "synthetic"
-  },
-  {
     "id": "L-PSEGHASHTE",
     "form": "псэгъащтэ",
     "ipa": "/psaɣaɕta/",
@@ -6458,39 +6434,6 @@
     "corpusFrequencyKbd": 345
   },
   {
-    "id": "L-MAF1ASHE",
-    "form": "мафӀащэ",
-    "ipa": "/ma╦Éf╩öa╔òa/",
-    "literalMeaning": "ateş oku",
-    "derivation": {
-      "rootIds": [
-        "R-MAF1E",
-        "R-SHE"
-      ],
-      "morphemeIds": [],
-      "rule": "compound"
-    },
-    "wordFamilyId": "WF-MAF1E",
-    "conceptId": "SPARK",
-    "dialectVariants": {
-      "adyghe": "машӀощэ",
-      "kabardian": "мафӀащэ"
-    },
-    "dictionaryEvidence": {
-      "sourceCount": 1,
-      "sources": [
-        "Kuipers (1960)"
-      ],
-      "meanings": {
-        "ru": "º©ªüº║ªÇº░",
-        "en": "spark",
-        "tr": "k─▒v─▒lc─▒m"
-      }
-    },
-    "notes": "Bileşik: мафӀэ (ateş) + щэ (ok/saçılım) = ateş oku = kıvılcım. | C-9.1: corpus YOK | C-9.1: corpus YOK [YAPAY TUREV - korpus kaniti yok] [YAPAY TUREV - korpus kaniti yok]",
-    "status": "synthetic"
-  },
-  {
     "id": "L-PSYXHEL",
     "form": "псыхьэл",
     "ipa": "/ps╔Ö─ğal/",
@@ -6637,27 +6580,6 @@
     "corpusFrequencyKbd": 294
   },
   {
-    "id": "L-BZEDYDHU",
-    "form": "бзэдыд",
-    "ipa": "/bzad╔Öd/",
-    "literalMeaning": "kotu dil",
-    "derivation": {
-      "rootIds": [
-        "R-BZE"
-      ],
-      "morphemeIds": [],
-      "rule": "compound"
-    },
-    "wordFamilyId": "WF-BZE",
-    "conceptId": "INSULT",
-    "dialectVariants": {
-      "adyghe": "бзэдыд",
-      "kabardian": "бзэдыд"
-    },
-    "notes": "бзэ (dil) + дыд (kotu) = kotu soz, hakaret. | C-9.1: corpus YOK | C-9.1: corpus YOK [YAPAY TUREV - korpus kaniti yok] [YAPAY TUREV - korpus kaniti yok]",
-    "status": "synthetic"
-  },
-  {
     "id": "L-BZESHXUE",
     "form": "бзэшхуэ",
     "ipa": "/bza╩âx╩Àa/",
@@ -6741,27 +6663,6 @@
     },
     "notes": "пэ (burun) + бжьэ = burun deligi. | C-9.1: corpus YOK | C-9.1: corpus YOK",
     "corpusFrequency": 2
-  },
-  {
-    "id": "L-DZELHYQHU",
-    "form": "дзэлъыхъу",
-    "ipa": "/dza╔¼╔Ö¤ç╩À╔Ö/",
-    "literalMeaning": "ordu arayan",
-    "derivation": {
-      "rootIds": [
-        "R-DZE"
-      ],
-      "morphemeIds": [],
-      "rule": "compound"
-    },
-    "wordFamilyId": "WF-DZE",
-    "conceptId": "RECRUITER",
-    "dialectVariants": {
-      "adyghe": "дзэлъыхъу",
-      "kabardian": "дзэлъыхъу"
-    },
-    "notes": "дзэ (ordu) + лъыхъу (aramak) = asker arayan. | C-9.1: corpus YOK | C-9.1: corpus YOK [YAPAY TUREV - korpus kaniti yok] [YAPAY TUREV - korpus kaniti yok]",
-    "status": "synthetic"
   },
   {
     "id": "L-DZEGHUE",
@@ -6924,39 +6825,6 @@
     "corpusFrequencyKbd": 954
   },
   {
-    "id": "L-PSELHYQHUE",
-    "form": "псэлъыхъуэ",
-    "ipa": "/psa╔¼╔Ö¤ç╩Àa/",
-    "literalMeaning": "can arama",
-    "derivation": {
-      "rootIds": [
-        "R-PSE"
-      ],
-      "morphemeIds": [],
-      "rule": "compound"
-    },
-    "wordFamilyId": "WF-PSE",
-    "conceptId": "COURTSHIP",
-    "dialectVariants": {
-      "adyghe": "псэлъыхъуэ",
-      "kabardian": "псэлъыхъуэ"
-    },
-    "dictionaryEvidence": {
-      "sourceCount": 2,
-      "sources": [
-        "Wiktionary (2023)",
-        "Apashev (2008)"
-      ],
-      "meanings": {
-        "tr": "can arama, kur yapma",
-        "en": "courtship",
-        "ru": "ªâªàº░ºÂº©º▓º░º¢º©ºÁ"
-      }
-    },
-    "notes": "псэ (ruh) + лъыхъуэ (aramak) = can arama. | C-9.1: corpus YOK | C-9.1: corpus YOK [YAPAY TUREV - korpus kaniti yok] [YAPAY TUREV - korpus kaniti yok]",
-    "status": "synthetic"
-  },
-  {
     "id": "L-NEF1EGU",
     "form": "нэфӀэгу",
     "ipa": "/naf╩öag╩À╔Ö/",
@@ -6989,75 +6857,6 @@
     },
     "notes": "нэ (goz) + фӀэ (iyi) + гу (kalp) = iyi kalpli. | C-9.1: corpus YOK | C-9.1: corpus YOK",
     "corpusFrequency": 25
-  },
-  {
-    "id": "L-NEPC1YSHCH",
-    "form": "нэпцӀыщ",
-    "ipa": "/napt═ís╩╣╔Ö╔ò/",
-    "literalMeaning": "yalanci",
-    "derivation": {
-      "rootIds": [
-        "R-NE",
-        "R-P1C1"
-      ],
-      "morphemeIds": [],
-      "rule": "suffix"
-    },
-    "wordFamilyId": "WF-NE",
-    "conceptId": "LIAR",
-    "dialectVariants": {
-      "adyghe": "нэпцӀыщ",
-      "kabardian": "нэпцӀыщ"
-    },
-    "dictionaryEvidence": {
-      "sourceCount": 2,
-      "sources": [
-        "Wiktionary (2023)",
-        "Apashev (2008)"
-      ],
-      "meanings": {
-        "tr": "yalanci",
-        "en": "liar",
-        "ru": "º╗ºÂºÁªå"
-      }
-    },
-    "notes": "нэпцӀ (yalan) + -ыщ (meslek eki) = yalanci. | C-9.1: corpus YOK | C-9.1: corpus YOK [YAPAY TUREV - korpus kaniti yok] [YAPAY TUREV - korpus kaniti yok]",
-    "status": "synthetic"
-  },
-  {
-    "id": "L-PSYBDZE",
-    "form": "псыбдзэ",
-    "ipa": "/ps╔Öbd═íza/",
-    "literalMeaning": "su sevrugasi",
-    "derivation": {
-      "rootIds": [
-        "R-PSY",
-        "R-BDZE"
-      ],
-      "morphemeIds": [],
-      "rule": "compound"
-    },
-    "wordFamilyId": "WF-PSY",
-    "conceptId": "STURGEON",
-    "dialectVariants": {
-      "adyghe": "псыбдзэ",
-      "kabardian": "псыбдзэ"
-    },
-    "dictionaryEvidence": {
-      "sourceCount": 3,
-      "sources": [
-        "Apashev (2008)",
-        "Kardanov (1957)",
-        "Kokov (2008)"
-      ],
-      "meanings": {
-        "tr": "su sevrugasi",
-        "en": "water sturgeon",
-        "ru": "º▓º¥º┤ªÅº¢º░ªÅ ªüºÁº▓ªÇªÄº│º░"
-      }
-    },
-    "notes": "псы (su) + бдзэ (sevruga) = su sevrugasi. | C-9.1: corpus YOK | C-9.1: corpus YOK [YAPAY TUREV - korpus kaniti yok] [YAPAY TUREV - korpus kaniti yok]",
-    "status": "synthetic"
   },
   {
     "id": "L-KUAPETXHUYME",
@@ -7157,40 +6956,7 @@
         "ru": "º┐ªÇªÅº╝º¥º╣ ªâº│º¥º╗"
       }
     },
-    "notes": "къуапэ (aci) + задэ (dik) = dik aci. | C-9.1: corpus YOK | C-9.1: corpus YOK [YAPAY TUREV - korpus kaniti yok] [YAPAY TUREV - korpus kaniti yok]",
-    "status": "synthetic"
-  },
-  {
-    "id": "L-KUAPEZEV",
-    "form": "къуапэзэв",
-    "ipa": "/q╩Àapazav/",
-    "literalMeaning": "dar aci",
-    "derivation": {
-      "rootIds": [
-        "R-KUE",
-        "R-PE"
-      ],
-      "morphemeIds": [],
-      "rule": "compound"
-    },
-    "wordFamilyId": "WF-KUE",
-    "conceptId": "ACUTE_ANGLE",
-    "dialectVariants": {
-      "adyghe": "къопэзэжъу",
-      "kabardian": "къуапэзэв"
-    },
-    "dictionaryEvidence": {
-      "sourceCount": 1,
-      "sources": [
-        "Huvaj (2007)"
-      ],
-      "meanings": {
-        "tr": "dar aci",
-        "en": "acute angle",
-        "ru": "º¥ªüªéªÇªïº╣ ªâº│º¥º╗"
-      }
-    },
-    "notes": "къуапэ (aci) + зэв (dar) = dar aci. | C-9.1: corpus YOK | C-9.1: corpus YOK [YAPAY TUREV - korpus kaniti yok] [YAPAY TUREV - korpus kaniti yok]",
+    "notes": "C-11.3: dik aci. circassianstudies.org dogruladi.",
     "status": "synthetic"
   },
   {
@@ -7290,136 +7056,6 @@
     },
     "notes": "къуи (ogullar) + блы (yedi) = yedi ogul. | C-9.1: corpus YOK | C-9.1: corpus YOK",
     "corpusFrequency": 1
-  },
-  {
-    "id": "L-PSYC1YQ1U",
-    "form": "псыцӀыкӀу",
-    "ipa": "/psÃØts╩╝ÃØk╩À╩╝ÃØ/",
-    "literalMeaning": "kucuk su",
-    "derivation": {
-      "rootIds": [
-        "R-PSY",
-        "R-C1YQ1U"
-      ],
-      "morphemeIds": [
-        "M-C1YQ1U"
-      ],
-      "rule": "compound"
-    },
-    "wordFamilyId": "WF-C1YQ1U",
-    "conceptId": "STREAM",
-    "dialectVariants": {
-      "adyghe": "псыцӀыкӀу",
-      "kabardian": "псыцӀыкӀу"
-    },
-    "dictionaryEvidence": {
-      "sourceCount": 1,
-      "sources": [
-        "M-C1YQ1U referansi"
-      ],
-      "meanings": {
-        "tr": "dere, kucuk su",
-        "ru": "ªÇªâªçºÁº╣"
-      }
-    },
-    "notes": "псы (su) + цӀыкӀу (kucuk) = kucuk su -> dere. Kirik referans duzeltmesi. | C-9.1: corpus YOK | C-9.1: corpus YOK [YAPAY TUREV - korpus kaniti yok] [YAPAY TUREV - korpus kaniti yok]",
-    "status": "synthetic"
-  },
-  {
-    "id": "L-UNEC1YQ1U",
-    "form": "унэцӀыкӀу",
-    "ipa": "/wÃØn╔Éts╩╝ÃØk╩À╩╝ÃØ/",
-    "literalMeaning": "kucuk ev",
-    "derivation": {
-      "rootIds": [
-        "R-UNE",
-        "R-C1YQ1U"
-      ],
-      "morphemeIds": [
-        "M-C1YQ1U"
-      ],
-      "rule": "compound"
-    },
-    "wordFamilyId": "WF-C1YQ1U",
-    "conceptId": "HOUSE",
-    "dialectVariants": {
-      "adyghe": "унэцӀыкӀу",
-      "kabardian": "унэцӀыкӀу"
-    },
-    "notes": "унэ (ev) + цӀыкӀу (kucuk) = kucuk ev. | C-9.1: corpus YOK | C-9.1: corpus YOK [YAPAY TUREV - korpus kaniti yok] [YAPAY TUREV - korpus kaniti yok]",
-    "status": "synthetic"
-  },
-  {
-    "id": "L-NYBZHYC1YQ1U",
-    "form": "ныбжьыцӀыкӀу",
-    "ipa": "/nÃØb╩æÃØts╩╝ÃØk╩À╩╝ÃØ/",
-    "literalMeaning": "yasi kucuk",
-    "derivation": {
-      "rootIds": [
-        "R-NYBZHY",
-        "R-C1YQ1U"
-      ],
-      "morphemeIds": [
-        "M-C1YQ1U"
-      ],
-      "rule": "compound"
-    },
-    "wordFamilyId": "WF-C1YQ1U",
-    "conceptId": "YOUTH",
-    "dialectVariants": {
-      "adyghe": "ныбжьыцӀыкӀу",
-      "kabardian": "ныбжьыцӀыкӀу"
-    },
-    "notes": "ныбжьы (yas) + цӀыкӀу (kucuk) = yasi kucuk -> genc. | C-9.1: corpus YOK | C-9.1: corpus YOK [YAPAY TUREV - korpus kaniti yok] [YAPAY TUREV - korpus kaniti yok]",
-    "status": "synthetic"
-  },
-  {
-    "id": "L-1UEKHUC1YQ1U",
-    "form": "ӀуэхуцӀыкӀу",
-    "ipa": "/╩ö╩À╔Éx╩ÀÃØts╩╝ÃØk╩À╩╝ÃØ/",
-    "literalMeaning": "kucuk is",
-    "derivation": {
-      "rootIds": [
-        "R-1UEKHU",
-        "R-C1YQ1U"
-      ],
-      "morphemeIds": [
-        "M-C1YQ1U"
-      ],
-      "rule": "compound"
-    },
-    "wordFamilyId": "WF-C1YQ1U",
-    "conceptId": "TRIVIAL",
-    "dialectVariants": {
-      "adyghe": "ӀуэхуцӀыкӀу",
-      "kabardian": "ӀуэхуцӀыкӀу"
-    },
-    "notes": "Ӏуэху (is) + цӀыкӀу (kucuk) = kucuk is -> onemsiz is. | C-9.1: corpus YOK | C-9.1: corpus YOK [YAPAY TUREV - korpus kaniti yok] [YAPAY TUREV - korpus kaniti yok]",
-    "status": "synthetic"
-  },
-  {
-    "id": "L-MAF1EC1YQ1U",
-    "form": "мафӀэцӀыкӀу",
-    "ipa": "/ma╦Éf╩öats╩╝ÃØk╩À╩╝ÃØ/",
-    "literalMeaning": "kucuk ates",
-    "derivation": {
-      "rootIds": [
-        "R-MAF1E",
-        "R-C1YQ1U"
-      ],
-      "morphemeIds": [
-        "M-C1YQ1U"
-      ],
-      "rule": "compound"
-    },
-    "wordFamilyId": "WF-C1YQ1U",
-    "conceptId": "SPARK",
-    "dialectVariants": {
-      "adyghe": "мафӀэцӀыкӀу",
-      "kabardian": "мафӀэцӀыкӀу"
-    },
-    "notes": "мафӀэ (ates) + цӀыкӀу (kucuk) = kucuk ates -> kivilcim. | C-9.1: corpus YOK | C-9.1: corpus YOK [YAPAY TUREV - korpus kaniti yok] [YAPAY TUREV - korpus kaniti yok]",
-    "status": "synthetic"
   },
   {
     "id": "L-ANEKUESHH",
@@ -7941,26 +7577,6 @@
     "corpusFrequency": 1
   },
   {
-    "id": "L-TSYZHY",
-    "form": "цыжъы",
-    "literalMeaning": "kecelesmis yun",
-    "derivation": {
-      "rootIds": [
-        "R-TSY"
-      ],
-      "morphemeIds": [],
-      "rule": "compound"
-    },
-    "wordFamilyId": "WF-TSY",
-    "conceptId": "FELTED_WOOL",
-    "dialectVariants": {
-      "adyghe": "цыжъы",
-      "kabardian": "цыжьы"
-    },
-    "notes": "C-11.2.1: keceleşmiş yun.",
-    "corpusFrequency": 0
-  },
-  {
     "id": "L-TSYZASHO",
     "form": "цызашъо",
     "literalMeaning": "kurk",
@@ -8321,26 +7937,6 @@
     "corpusFrequency": 25
   },
   {
-    "id": "L-PSEFET",
-    "form": "псэфэт",
-    "literalMeaning": "fitre",
-    "derivation": {
-      "rootIds": [
-        "R-PSE"
-      ],
-      "morphemeIds": [],
-      "rule": "suffix"
-    },
-    "wordFamilyId": "WF-PSE",
-    "conceptId": "CHARITY",
-    "dialectVariants": {
-      "adyghe": "псэфэт",
-      "kabardian": "псэхуэт"
-    },
-    "notes": "C-11.2.1: fitre. Dini terim",
-    "corpusFrequency": 0
-  },
-  {
     "id": "L-ZYGHEPSEKHUGHE",
     "form": "зыгъэпсэхугъуэ",
     "literalMeaning": "tatil, izin",
@@ -8359,25 +7955,6 @@
     },
     "notes": "C-11.2.1: tatil, izin",
     "corpusFrequency": 64
-  },
-  {
-    "id": "L-KUADZHE-NADZHE",
-    "form": "къаджэ-наджэ",
-    "literalMeaning": "huzur vermeyen",
-    "derivation": {
-      "rootIds": [],
-      "morphemeIds": [],
-      "rule": "compound"
-    },
-    "wordFamilyId": "WF-KUADZHE",
-    "conceptId": "RESTLESS",
-    "dialectVariants": {
-      "adyghe": "къаджэ-наджэ",
-      "kabardian": "къаджэ-наджэ"
-    },
-    "notes": "C-11.2.1: huzur vermeyen. Deyim [YAPAY TUREV - korpus kaniti yok] [YAPAY TUREV - korpus kaniti yok]",
-    "corpusFrequency": 0,
-    "status": "synthetic"
   },
   {
     "id": "L-UNEBZHE",
@@ -8522,19 +8099,6 @@
     },
     "notes": "C-11.2.1: gelin kacirma ritueli.",
     "corpusFrequency": 10
-  },
-  {
-    "id": "L-UNERYUE",
-    "form": "унэрыуэ",
-    "literalMeaning": "gelin kacirma",
-    "wordFamilyId": "WF-UNE",
-    "conceptId": "BRIDE_ABDUCTION",
-    "dialectVariants": {
-      "adyghe": "унэрыуэ",
-      "kabardian": "унэрыуэ"
-    },
-    "notes": "C-11.2.1: gelin kacirma.",
-    "corpusFrequency": 0
   },
   {
     "id": "L-UNASH1E",
@@ -8698,34 +8262,6 @@
     "status": "synthetic"
   },
   {
-    "id": "L-UNEKHEH1E",
-    "form": "унэхэщӏэ",
-    "literalMeaning": "yeni evliye esya hediyesi",
-    "wordFamilyId": "WF-UNE",
-    "conceptId": "WEDDING_GIFT",
-    "dialectVariants": {
-      "adyghe": "унэхэщӏэ",
-      "kabardian": "унэхэщӏэ"
-    },
-    "notes": "C-11.2.1: yeni evliye esya hediyesi. [YAPAY TUREV - korpus kaniti yok] [YAPAY TUREV - korpus kaniti yok]",
-    "corpusFrequency": 0,
-    "status": "synthetic"
-  },
-  {
-    "id": "L-UNEGUNESHCH",
-    "form": "унэгунэщ",
-    "literalMeaning": "bolgeyi bilen kisi",
-    "wordFamilyId": "WF-UNE",
-    "conceptId": "LOCAL",
-    "dialectVariants": {
-      "adyghe": "унэгунэщ",
-      "kabardian": "унэгунэщ"
-    },
-    "notes": "C-11.2.1: bolgeyi bilen kisi. [YAPAY TUREV - korpus kaniti yok] [YAPAY TUREV - korpus kaniti yok]",
-    "corpusFrequency": 0,
-    "status": "synthetic"
-  },
-  {
     "id": "L-UNERYXHE-UNERYK1YU",
     "form": "унэрыхьэ-унэрыкӏыу",
     "literalMeaning": "ev ev dolasarak",
@@ -8751,34 +8287,6 @@
     },
     "notes": "C-11.2.1: misafirperver ev hanimi.",
     "corpusFrequency": 12
-  },
-  {
-    "id": "L-UNEBZHE1UP1E",
-    "form": "унэбжэӏупэ",
-    "literalMeaning": "ev kapisi onu",
-    "wordFamilyId": "WF-UNE",
-    "conceptId": "DOORWAY",
-    "dialectVariants": {
-      "adyghe": "унэбжэӏупэ",
-      "kabardian": "унэбжэӏупэ"
-    },
-    "notes": "C-11.2.1: ev kapisi onu. [YAPAY TUREV - korpus kaniti yok] [YAPAY TUREV - korpus kaniti yok]",
-    "corpusFrequency": 0,
-    "status": "synthetic"
-  },
-  {
-    "id": "L-UNEPKHASHE",
-    "form": "унэ пхашэ",
-    "literalMeaning": "egri ev",
-    "wordFamilyId": "WF-UNE",
-    "conceptId": "RICKETY_HOUSE",
-    "dialectVariants": {
-      "adyghe": "унэ пхашэ",
-      "kabardian": "унэ пхашэ"
-    },
-    "notes": "C-11.2.1: egri ev. [YAPAY TUREV - korpus kaniti yok] [YAPAY TUREV - korpus kaniti yok]",
-    "corpusFrequency": 0,
-    "status": "synthetic"
   },
   {
     "id": "L-UNEZH",
@@ -8833,20 +8341,6 @@
     "corpusFrequency": 57
   },
   {
-    "id": "L-UNESHHAP1E",
-    "form": "унэ шхапӏэ",
-    "literalMeaning": "ev yemek odasi",
-    "wordFamilyId": "WF-UNE",
-    "conceptId": "DINING_ROOM",
-    "dialectVariants": {
-      "adyghe": "унэ шхапӏэ",
-      "kabardian": "унэ шхапӏэ"
-    },
-    "notes": "C-11.2.1: ev yemek odasi. [YAPAY TUREV - korpus kaniti yok] [YAPAY TUREV - korpus kaniti yok]",
-    "corpusFrequency": 0,
-    "status": "synthetic"
-  },
-  {
     "id": "L-UNEPL1ANAPE",
     "form": "унэ плӏанэпэ",
     "literalMeaning": "ev kosesi",
@@ -8872,20 +8366,6 @@
     },
     "notes": "C-11.2.1: ev merkezi.",
     "corpusFrequency": 3
-  },
-  {
-    "id": "L-UNESHXHE",
-    "form": "унэщхьэ",
-    "literalMeaning": "ev catisi",
-    "wordFamilyId": "WF-UNE",
-    "conceptId": "ROOF",
-    "dialectVariants": {
-      "adyghe": "унэщхьэ",
-      "kabardian": "унэщхьэ"
-    },
-    "notes": "C-11.2.1: ev catisi. [YAPAY TUREV - korpus kaniti yok] [YAPAY TUREV - korpus kaniti yok]",
-    "corpusFrequency": 0,
-    "status": "synthetic"
   },
   {
     "id": "L-UNEDZABZHE",
@@ -9606,44 +9086,6 @@
     "conceptId": "RAFTER",
     "notes": "C-11.3: mertek. Korpus: ?",
     "corpusFrequency": 1
-  },
-  {
-    "id": "L-SHCHEN2",
-    "form": "щэн",
-    "ipa": "/ɕɐn/",
-    "literalMeaning": "karakter, mizac",
-    "partOfSpeech": "noun",
-    "wordFamilyId": "WF-SHCHEN2",
-    "conceptId": "CHARACTER",
-    "senses": [
-      {
-        "senseId": 1,
-        "gloss": "character, nature",
-        "tr": "karakter, mizaç",
-        "ru": "характер; нрав"
-      }
-    ],
-    "notes": "C-11.3: karakter. Homonim: L-SHCHEN (satmak), L-SHCHEN3 (dokumak). Korpus: 0.",
-    "corpusFrequency": 0
-  },
-  {
-    "id": "L-SHCHEN3",
-    "form": "щэн",
-    "ipa": "/ɕɐn/",
-    "literalMeaning": "dokumak",
-    "partOfSpeech": "verb",
-    "wordFamilyId": "WF-SHCHEN3",
-    "conceptId": "WEAVE",
-    "senses": [
-      {
-        "senseId": 1,
-        "gloss": "to weave",
-        "tr": "dokumak",
-        "ru": "ткать"
-      }
-    ],
-    "notes": "C-11.3: dokumak. Homonim: L-SHCHEN (satmak), L-SHCHEN2 (karakter). Korpus: 0.",
-    "corpusFrequency": 0
   },
   {
     "id": "L-K1UEN",
