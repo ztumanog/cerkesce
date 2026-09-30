@@ -7940,5 +7940,285 @@
     },
     "notes": "C-11.2.1: deri. Somatik.",
     "corpusFrequency": 0
+  },
+  {
+    "id": "L-TSYGHO",
+    "form": "цыгъо",
+    "literalMeaning": "fare",
+    "derivation": {
+      "rootIds": [
+        "R-TSY"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-TSY",
+    "conceptId": "MOUSE",
+    "dialectVariants": {
+      "adyghe": "цыгъо",
+      "kabardian": "цыгъуэ"
+    },
+    "notes": "C-11.2.1: fare. цы + гъо.",
+    "corpusFrequency": 0
+  },
+  {
+    "id": "L-TSYDZHAN",
+    "form": "цыджан",
+    "literalMeaning": "yun elbise",
+    "derivation": {
+      "rootIds": [
+        "R-TSY"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-TSY",
+    "conceptId": "WOOLEN_DRESS",
+    "dialectVariants": {
+      "adyghe": "цыджан",
+      "kabardian": "цыджан"
+    },
+    "notes": "C-11.2.1: yun elbise. цы + джан.",
+    "corpusFrequency": 0
+  },
+  {
+    "id": "L-TSYY",
+    "form": "цый",
+    "literalMeaning": "cerkeska",
+    "derivation": {
+      "rootIds": [
+        "R-TSY"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-TSY",
+    "conceptId": "CHERKESKA",
+    "dialectVariants": {
+      "adyghe": "цый",
+      "kabardian": "цей"
+    },
+    "notes": "C-11.2.1: cerkeska. Geleneksel giysi.",
+    "corpusFrequency": 0
+  },
+  {
+    "id": "L-TSYZE",
+    "form": "цызэ",
+    "literalMeaning": "sansar",
+    "derivation": {
+      "rootIds": [
+        "R-TSY"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-TSY",
+    "conceptId": "MARTEN",
+    "dialectVariants": {
+      "adyghe": "цызэ",
+      "kabardian": "цызэ"
+    },
+    "notes": "C-11.2.1: sansar. Hayvan.",
+    "corpusFrequency": 0
+  },
+  {
+    "id": "L-TSYDY",
+    "form": "цыды",
+    "literalMeaning": "yapiskan",
+    "derivation": {
+      "rootIds": [
+        "R-TSY"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-TSY",
+    "conceptId": "STICKY",
+    "dialectVariants": {
+      "adyghe": "цыды",
+      "kabardian": "цыды"
+    },
+    "notes": "C-11.2.1: yapiskan.",
+    "corpusFrequency": 0
+  },
+  {
+    "id": "L-TSYZHY",
+    "form": "цыжъы",
+    "literalMeaning": "kecelesmis yun",
+    "derivation": {
+      "rootIds": [
+        "R-TSY"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-TSY",
+    "conceptId": "FELTED_WOOL",
+    "dialectVariants": {
+      "adyghe": "цыжъы",
+      "kabardian": "цыжьы"
+    },
+    "notes": "C-11.2.1: keceleşmiş yun.",
+    "corpusFrequency": 0
+  },
+  {
+    "id": "L-TSYZASHO",
+    "form": "цызашъо",
+    "literalMeaning": "kurk",
+    "derivation": {
+      "rootIds": [
+        "R-TSY"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-TSY",
+    "conceptId": "FUR",
+    "dialectVariants": {
+      "adyghe": "цызашъо",
+      "kabardian": "цызащӀэ"
+    },
+    "notes": "C-11.2.1: kürk.",
+    "corpusFrequency": 0
+  },
+  {
+    "id": "L-TSYLH",
+    "form": "цылъ",
+    "literalMeaning": "yun sepeti",
+    "derivation": {
+      "rootIds": [
+        "R-TSY"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-TSY",
+    "conceptId": "WOOL_BASKET",
+    "dialectVariants": {
+      "adyghe": "цылъ",
+      "kabardian": "цылъ"
+    },
+    "notes": "C-11.2.1: yun sepeti.",
+    "corpusFrequency": 0
+  },
+  {
+    "id": "L-PQYGHUE",
+    "form": "пкъыгъу",
+    "literalMeaning": "organ",
+    "derivation": {
+      "rootIds": [
+        "R-PQY"
+      ],
+      "morphemeIds": [],
+      "rule": "suffix"
+    },
+    "wordFamilyId": "WF-PQY",
+    "conceptId": "ORGAN",
+    "dialectVariants": {
+      "adyghe": "пкъыгъу",
+      "kabardian": "пкъыгъуэ"
+    },
+    "notes": "C-11.2.1: organ. пкъы + гъу.",
+    "corpusFrequency": 0
+  },
+  {
+    "id": "L-PQYSHOL",
+    "form": "пкъышъол",
+    "literalMeaning": "vucut",
+    "derivation": {
+      "rootIds": [
+        "R-PQY"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-PQY",
+    "conceptId": "BODY",
+    "dialectVariants": {
+      "adyghe": "пкъышъол",
+      "kabardian": "пкъыщӀэлъ"
+    },
+    "notes": "C-11.2.1: vücut. пкъы + шъол.",
+    "corpusFrequency": 0
+  },
+  {
+    "id": "L-SH1EN",
+    "form": "шӀэн",
+    "literalMeaning": "bilmek",
+    "derivation": {
+      "rootIds": [
+        "R-SH1E"
+      ],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-SH1E",
+    "conceptId": "KNOW",
+    "dialectVariants": {
+      "adyghe": "шӀэн",
+      "kabardian": "щӀэн"
+    },
+    "notes": "C-11.2.2: bilmek",
+    "corpusFrequency": 0
+  },
+  {
+    "id": "L-TKHEN",
+    "form": "тхэн",
+    "literalMeaning": "yazmak",
+    "derivation": {
+      "rootIds": [
+        "R-TKHE"
+      ],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-TKHE",
+    "conceptId": "WRITE",
+    "dialectVariants": {
+      "adyghe": "тхэн",
+      "kabardian": "тхэн"
+    },
+    "notes": "C-11.2.2: yazmak",
+    "corpusFrequency": 0
+  },
+  {
+    "id": "L-YEDZHEN",
+    "form": "еджэн",
+    "literalMeaning": "okumak",
+    "derivation": {
+      "rootIds": [
+        "R-EDJE"
+      ],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-EDJE",
+    "conceptId": "READ",
+    "dialectVariants": {
+      "adyghe": "еджэн",
+      "kabardian": "еджэн"
+    },
+    "notes": "C-11.2.2: okumak",
+    "corpusFrequency": 0
+  },
+  {
+    "id": "L-GUZEVAK1UE",
+    "form": "гузэвакӀуэ",
+    "literalMeaning": "endise",
+    "derivation": {
+      "rootIds": [
+        "R-GU"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-GU",
+    "conceptId": "ANXIETY",
+    "dialectVariants": {
+      "adyghe": "гузэвакӀуэ",
+      "kabardian": "гузэвэгъуэ"
+    },
+    "notes": "C-11.2.2: endise",
+    "corpusFrequency": 0
   }
 ]
