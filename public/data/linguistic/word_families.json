@@ -25,7 +25,13 @@
       "kabardian": "гуфӀэ",
       "note": "Ses denkligi: шӀо -> фӀэ"
     },
-    "notes": "En uretken somatik kok ailesi. 22 bilesik yapi korpusta dogrulandi."
+    "notes": "En uretken somatik kok ailesi. 22 bilesik yapi korpusta dogrulandi.",
+    "category": "body",
+    "subcategory": "organs",
+    "semanticDomains": [
+      "emotion",
+      "cognition"
+    ]
   },
   {
     "id": "WF-SHHYE",
@@ -41,7 +47,12 @@
       "totalLexemes": 30,
       "corpusFrequency": 9846
     },
-    "notes": "Metaforik zincir: HEAD -> TOP -> REASON. щхьэусыгъуэ = bas + sebep -> gerekce"
+    "notes": "Metaforik zincir: HEAD -> TOP -> REASON. щхьэусыгъуэ = bas + sebep -> gerekce",
+    "category": "body",
+    "subcategory": "head-face",
+    "semanticDomains": [
+      "cognition"
+    ]
   },
   {
     "id": "WF-NE",
@@ -59,7 +70,12 @@
       "totalLexemes": 25,
       "corpusFrequency": 21883
     },
-    "notes": "Duyu organi koku. нэ + гу = yuz, нэ + псэ = gozyasi"
+    "notes": "Duyu organi koku. нэ + гу = yuz, нэ + псэ = gozyasi",
+    "category": "body",
+    "subcategory": "head-face",
+    "semanticDomains": [
+      "perception"
+    ]
   },
   {
     "id": "WF-PSY",
@@ -74,7 +90,12 @@
       "totalLexemes": 20,
       "corpusFrequency": 6326
     },
-    "notes": "Doga koku. напс = нэ + псэ (goz + su) bilesimi."
+    "notes": "Doga koku. напс = нэ + псэ (goz + su) bilesimi.",
+    "category": "nature",
+    "subcategory": "terrain-water",
+    "semanticDomains": [
+      "nature"
+    ]
   },
   {
     "id": "WF-PSE",
@@ -89,7 +110,13 @@
       "totalLexemes": 13,
       "corpusFrequency": 5403
     },
-    "notes": "Ruh/can ailesi. псэгъу (hayat arkadasi) dahil. R-PSY ailesinden AYRI."
+    "notes": "Ruh/can ailesi. псэгъу (hayat arkadasi) dahil. R-PSY ailesinden AYRI.",
+    "category": "body",
+    "subcategory": "organs",
+    "semanticDomains": [
+      "emotion",
+      "life"
+    ]
   },
   {
     "id": "WF-UES",
@@ -103,7 +130,12 @@
       "totalLexemes": 2,
       "corpusFrequency": 511
     },
-    "notes": "Kar ailesi. ueseps (cig) dahil."
+    "notes": "Kar ailesi. ueseps (cig) dahil.",
+    "category": "nature",
+    "subcategory": "sky-weather",
+    "semanticDomains": [
+      "nature"
+    ]
   },
   {
     "id": "WF-BLE",
@@ -187,7 +219,12 @@
       "totalLexemes": 2,
       "corpusFrequency": 3144
     },
-    "notes": "Vadi/dere ailesi. къуэпс (damar) dahil."
+    "notes": "Vadi/dere ailesi. къуэпс (damar) dahil.",
+    "category": "nature",
+    "subcategory": "terrain-water",
+    "semanticDomains": [
+      "nature"
+    ]
   },
   {
     "id": "WF-SHXUE",
@@ -421,7 +458,13 @@
       "totalLexemes": 6,
       "corpusFrequency": 1427
     },
-    "notes": "Dil ailesi. бзэ, бзэгу, бзэдыд, бзэшхуэ, бзэпс, бзэбзэ."
+    "notes": "Dil ailesi. бзэ, бзэгу, бзэдыд, бзэшхуэ, бзэпс, бзэбзэ.",
+    "category": "mind",
+    "subcategory": "language",
+    "semanticDomains": [
+      "cognition",
+      "communication"
+    ]
   },
   {
     "id": "WF-1UEKHU",
@@ -458,7 +501,12 @@
       "totalLexemes": 5,
       "corpusFrequency": 855
     },
-    "notes": "Ates ailesi. мафӀэ, мафӀащэ, мафӀэгу, мафӀэшхуэ (yangin), мафӀэцӀыкӀу (kivilcim)."
+    "notes": "Ates ailesi. мафӀэ, мафӀащэ, мафӀэгу, мафӀэшхуэ (yangin), мафӀэцӀыкӀу (kivilcim).",
+    "category": "nature",
+    "subcategory": "element",
+    "semanticDomains": [
+      "nature"
+    ]
   },
   {
     "id": "WF-UNE",
@@ -540,7 +588,11 @@
       "kabardian": "Ӏэ",
       "note": "C-9.3 corpus dogrulamasi ile eklendi."
     },
-    "notes": "El ailesi (Ӏэ). Somatik kok. Corpus: 11.294 kullanim."
+    "notes": "El ailesi (Ӏэ). Somatik kok. Corpus: 11.294 kullanim.",
+    "subcategory": "limbs",
+    "semanticDomains": [
+      "action"
+    ]
   },
   {
     "id": "WF-LHE",
@@ -564,7 +616,11 @@
       "kabardian": "лъэ",
       "note": "C-9.3 corpus dogrulamasi ile eklendi."
     },
-    "notes": "Ayak/bacak ailesi (лъэ). Somatik kok. Corpus: 10.729 kullanim."
+    "notes": "Ayak/bacak ailesi (лъэ). Somatik kok. Corpus: 10.729 kullanim.",
+    "subcategory": "limbs",
+    "semanticDomains": [
+      "action"
+    ]
   },
   {
     "id": "WF-SH1Y",
@@ -635,7 +691,11 @@
       "kabardian": "пэ",
       "note": "C-9.3 corpus dogrulamasi ile eklendi."
     },
-    "notes": "Burun/on ailesi (пэ). Somatik + mekan. Corpus: 7.184 kullanim."
+    "notes": "Burun/on ailesi (пэ). Somatik + mekan. Corpus: 7.184 kullanim.",
+    "subcategory": "head-face",
+    "semanticDomains": [
+      "perception"
+    ]
   },
   {
     "id": "WF-KHUMEN",
@@ -680,5 +740,114 @@
       "note": "Ses denkligi: шъ -> щ"
     },
     "notes": "C-9.3 yeni aile. Dogru/gercek kok ailesi. Yuksek frekans."
+  },
+  {
+    "id": "WF-ZE",
+    "rootId": "R-ZE",
+    "category": "body",
+    "subcategory": "head-face",
+    "semanticDomains": [
+      "perception",
+      "speech"
+    ],
+    "morphemeIds": [],
+    "lexemeIds": [
+      "L-ZE"
+    ],
+    "productivity": {
+      "totalLexemes": 1,
+      "corpusFrequency": 0,
+      "mostFrequentLexemeId": "L-ZE"
+    },
+    "dialectNote": {
+      "adyghe": "жьэ",
+      "kabardian": "жьэ",
+      "note": "Her iki lehcede ayni"
+    },
+    "notes": "C-10.3 yeni aile. Agiz/konusma kok ailesi."
+  },
+  {
+    "id": "WF-PLHE",
+    "rootId": "R-PLHE",
+    "category": "mind",
+    "subcategory": "perception",
+    "semanticDomains": [
+      "cognition",
+      "perception"
+    ],
+    "morphemeIds": [],
+    "lexemeIds": [
+      "L-PLHE",
+      "L-PEPLEN"
+    ],
+    "productivity": {
+      "totalLexemes": 2,
+      "corpusFrequency": 48,
+      "mostFrequentLexemeId": "L-PEPLEN"
+    },
+    "dialectNote": {
+      "adyghe": "плъэ",
+      "kabardian": "плъэ",
+      "note": "Her iki lehcede ayni"
+    },
+    "notes": "C-10.3 yeni aile. Bakmak/algilamak kok ailesi."
+  },
+  {
+    "id": "WF-TKHE",
+    "rootId": "R-TKHE",
+    "category": "mind",
+    "subcategory": "cognition",
+    "semanticDomains": [
+      "cognition",
+      "communication"
+    ],
+    "morphemeIds": [],
+    "lexemeIds": [
+      "L-TKHE"
+    ],
+    "productivity": {
+      "totalLexemes": 1,
+      "corpusFrequency": 0,
+      "mostFrequentLexemeId": "L-TKHE"
+    },
+    "dialectNote": {
+      "adyghe": "тхэ",
+      "kabardian": "тхэ",
+      "note": "Her iki lehcede ayni"
+    },
+    "notes": "C-10.3 yeni aile. Yazmak kok ailesi."
+  },
+  {
+    "id": "WF-NAPE",
+    "rootId": "R-NAPE",
+    "category": "body",
+    "subcategory": "head-face",
+    "semanticDomains": [
+      "body",
+      "emotion",
+      "cognition"
+    ],
+    "morphemeIds": [],
+    "lexemeIds": [
+      "L-NAPE",
+      "L-NAPE1ELHESHH1",
+      "L-NAPEK1UETS1",
+      "L-NAPELHAGHU",
+      "L-NAPELHE",
+      "L-NAPENSHE",
+      "L-NAPENTEH",
+      "L-NAPENTEHYGHE"
+    ],
+    "productivity": {
+      "totalLexemes": 8,
+      "corpusFrequency": 0,
+      "mostFrequentLexemeId": "L-NAPE",
+      "dictionarySources": 19
+    },
+    "dialectNote": {
+      "adyghe": "напэ",
+      "kabardian": "напэ"
+    },
+    "notes": "C-10.3 yeni aile. Yuz/vicdan kok ailesi. 19 sozluk kaynagi. 10+ turev. 15+ deyim."
   }
 ]
