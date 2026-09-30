@@ -9945,5 +9945,190 @@
     "conceptId": "DOGWOOD",
     "corpusFrequency": 30,
     "notes": "C-11.3: Vikisozluk 2023."
+  },
+  {
+    "id": "L-ZY",
+    "form": "зы",
+    "ipa": "/zǝ/",
+    "literalMeaning": "bir (1)",
+    "partOfSpeech": "numeral",
+    "wordFamilyId": "WF-ZY",
+    "conceptId": "ONE",
+    "senses": [
+      {
+        "senseId": 1,
+        "gloss": "one (1)",
+        "tr": "bir",
+        "ru": "один"
+      },
+      {
+        "senseId": 2,
+        "gloss": "someone, something",
+        "tr": "birisi, bir şey",
+        "ru": "кто-то, что-то"
+      }
+    ],
+    "notes": "C-11.3: bir/sayı. Vikisozluk. Korpus: ?",
+    "corpusFrequency": 76362
+  },
+  {
+    "id": "L-T1U",
+    "form": "тӀу",
+    "literalMeaning": "iki",
+    "partOfSpeech": "numeral",
+    "wordFamilyId": "WF-NUM",
+    "conceptId": "TWO",
+    "corpusFrequency": 3366,
+    "notes": "C-11.3: iki."
+  },
+  {
+    "id": "L-SHCHY",
+    "form": "щы",
+    "literalMeaning": "uc",
+    "partOfSpeech": "numeral",
+    "wordFamilyId": "WF-NUM",
+    "conceptId": "THREE",
+    "corpusFrequency": 64367,
+    "notes": "C-11.3: uc."
+  },
+  {
+    "id": "L-PL1Y",
+    "form": "плӀы",
+    "literalMeaning": "dort",
+    "partOfSpeech": "numeral",
+    "wordFamilyId": "WF-NUM",
+    "conceptId": "FOUR",
+    "corpusFrequency": 439,
+    "notes": "C-11.3: dort."
+  },
+  {
+    "id": "L-TKHU",
+    "form": "тху",
+    "literalMeaning": "bes",
+    "partOfSpeech": "numeral",
+    "wordFamilyId": "WF-NUM",
+    "conceptId": "FIVE",
+    "corpusFrequency": 1177,
+    "notes": "C-11.3: bes."
+  },
+  {
+    "id": "L-BLY",
+    "form": "блы",
+    "literalMeaning": "yedi",
+    "partOfSpeech": "numeral",
+    "wordFamilyId": "WF-NUM",
+    "conceptId": "SEVEN",
+    "corpusFrequency": 892,
+    "notes": "C-11.3: yedi."
+  },
+  {
+    "id": "L-I",
+    "form": "и",
+    "literalMeaning": "sekiz",
+    "partOfSpeech": "numeral",
+    "wordFamilyId": "WF-NUM",
+    "conceptId": "EIGHT",
+    "corpusFrequency": 976619,
+    "notes": "C-11.3: sekiz."
+  },
+  {
+    "id": "L-BGHU",
+    "form": "бгъу",
+    "literalMeaning": "dokuz",
+    "partOfSpeech": "numeral",
+    "wordFamilyId": "WF-NUM",
+    "conceptId": "NINE",
+    "corpusFrequency": 3542,
+    "notes": "C-11.3: dokuz."
+  },
+  {
+    "id": "L-PSHCH1Y",
+    "form": "пщӀы",
+    "literalMeaning": "on",
+    "partOfSpeech": "numeral",
+    "wordFamilyId": "WF-NUM",
+    "conceptId": "TEN",
+    "corpusFrequency": 1405,
+    "notes": "C-11.3: on."
+  },
+  {
+    "id": "L-T1OSHCH",
+    "form": "тӀощӀ",
+    "literalMeaning": "yirmi",
+    "partOfSpeech": "numeral",
+    "wordFamilyId": "WF-NUM",
+    "conceptId": "TWENTY",
+    "corpusFrequency": 212,
+    "notes": "C-11.3: yirmi."
+  },
+  {
+    "id": "L-SHCHESHCH",
+    "form": "щэщӀ",
+    "literalMeaning": "otuz",
+    "partOfSpeech": "numeral",
+    "wordFamilyId": "WF-NUM",
+    "conceptId": "THIRTY",
+    "corpusFrequency": 91,
+    "notes": "C-11.3: otuz."
+  },
+  {
+    "id": "L-PL1YSHCH",
+    "form": "плӀыщӀ",
+    "literalMeaning": "kirk",
+    "partOfSpeech": "numeral",
+    "wordFamilyId": "WF-NUM",
+    "conceptId": "FORTY",
+    "corpusFrequency": 109,
+    "notes": "C-11.3: kirk."
+  },
+  {
+    "id": "L-TKHUSHCH",
+    "form": "тхущӀ",
+    "literalMeaning": "elli",
+    "partOfSpeech": "numeral",
+    "wordFamilyId": "WF-NUM",
+    "conceptId": "FIFTY",
+    "corpusFrequency": 39,
+    "notes": "C-11.3: elli."
+  },
+  {
+    "id": "L-KHYSHCH",
+    "form": "хыщӀ",
+    "literalMeaning": "altmis",
+    "partOfSpeech": "numeral",
+    "wordFamilyId": "WF-NUM",
+    "conceptId": "SIXTY",
+    "corpusFrequency": 80,
+    "notes": "C-11.3: altmis."
+  },
+  {
+    "id": "L-BLYSHCH",
+    "form": "блыщӀ",
+    "literalMeaning": "yetmis",
+    "partOfSpeech": "numeral",
+    "wordFamilyId": "WF-NUM",
+    "conceptId": "SEVENTY",
+    "corpusFrequency": 45,
+    "notes": "C-11.3: yetmis."
+  },
+  {
+    "id": "L-ISHCH",
+    "form": "ищӀ",
+    "literalMeaning": "seksen",
+    "partOfSpeech": "numeral",
+    "wordFamilyId": "WF-NUM",
+    "conceptId": "EIGHTY",
+    "corpusFrequency": 3992,
+    "notes": "C-11.3: seksen."
+  },
+  {
+    "id": "L-BGHUSHCH",
+    "form": "бгъущӀ",
+    "literalMeaning": "doksan",
+    "partOfSpeech": "numeral",
+    "wordFamilyId": "WF-NUM",
+    "conceptId": "NINETY",
+    "corpusFrequency": 35,
+    "notes": "C-11.3: doksan."
   }
 ]
