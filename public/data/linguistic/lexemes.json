@@ -9154,5 +9154,105 @@
     },
     "notes": "C-11.3: orman kenari.",
     "corpusFrequency": 0
+  },
+  {
+    "id": "L-LHEGHUN",
+    "form": "лъэгъун",
+    "literalMeaning": "gormek",
+    "wordFamilyId": "WF-LHEGHU",
+    "conceptId": "SEE",
+    "dialectVariants": {
+      "adyghe": "лъэгъун",
+      "kabardian": "лъагъун"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 2,
+      "sources": [
+        "Huvaj (2007)",
+        "Teshu (1991)"
+      ]
+    },
+    "notes": "C-11.3: gormek. ADY: лъэгъун, KBD: лъагъун.",
+    "corpusFrequency": 0
+  },
+  {
+    "id": "L-LHAGHUN",
+    "form": "лъагъун",
+    "literalMeaning": "gormek; sevmek",
+    "wordFamilyId": "WF-LHEGHU",
+    "conceptId": "SEE",
+    "conceptIds": [
+      "SEE",
+      "LOVE"
+    ],
+    "dialectVariants": {
+      "adyghe": "лъэгъун",
+      "kabardian": "лъагъун"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 1,
+      "sources": [
+        "Jonty (Tr-Kbd)"
+      ]
+    },
+    "notes": "C-11.3: gormek; sevmek. KBD.",
+    "corpusFrequency": 0
+  },
+  {
+    "id": "L-PLHEGHUN",
+    "form": "плъагъун",
+    "literalMeaning": "gormek",
+    "wordFamilyId": "WF-PLHEGHU",
+    "conceptId": "SEE",
+    "dialectVariants": {
+      "adyghe": "лъэгъун",
+      "kabardian": "плъагъун"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 1,
+      "sources": [
+        "Abaze (2005)"
+      ]
+    },
+    "notes": "C-11.3: gormek. KBD varyant.",
+    "corpusFrequency": 0
+  },
+  {
+    "id": "L-PLHEN",
+    "form": "плъэн",
+    "literalMeaning": "bakmak",
+    "wordFamilyId": "WF-PLHE",
+    "conceptId": "LOOK",
+    "dialectVariants": {
+      "adyghe": "плъэн",
+      "kabardian": "плъэн"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 1,
+      "sources": [
+        "Abaze (2005)"
+      ]
+    },
+    "notes": "C-11.3: bakmak. KBD.",
+    "corpusFrequency": 0
+  },
+  {
+    "id": "L-LHAGHUNYGHE",
+    "form": "лъагъуныгъэ",
+    "literalMeaning": "sevgi",
+    "wordFamilyId": "WF-LHEGHU",
+    "conceptId": "LOVE",
+    "dialectVariants": {
+      "adyghe": "лъэгъуныгъэ",
+      "kabardian": "лъагъуныгъэ"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 1,
+      "sources": [
+        "Wiktionary (2023)"
+      ]
+    },
+    "notes": "C-11.3: sevgi. Etimoloji: лъагъу (gormek) + -ныгъэ.",
+    "corpusFrequency": 0
   }
 ]
