@@ -96,11 +96,11 @@ export class DialectConverter {
 
 
     // C-11.2.1: ц -> дз (цӏ'yi koru)
-    c = c.replace(/цӏ/g, '___TS1___');
+    c = c.replace(/цӏ/g, 'ЦЦЦ');
     c = c.replace(/цыгъо/g, 'дзыгъуэ');
     c = c.replace(/ц/g, 'дз');
     c = c.replace(/гъо/g, 'гъуэ');
-    c = c.replace(/___TS1___/g, 'цӏ');
+    c = c.replace(/ЦЦЦ/g, 'цӏ');
 
 // PHASE 6: LEXICAL SOUND LAWS
     c = c.replace(/фы$/g, "ху");
