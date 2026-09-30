@@ -6002,5 +6002,75 @@
     "corpusFrequencyAdy": 0,
     "corpusFrequencyKbd": 118,
     "notes": "C-9.5. Slovar: 5 kaynak."
+  },
+  {
+    "id": "L-1EPY1EGHU",
+    "form": "ӏэпыӏэгъу",
+    "literalMeaning": "yardim",
+    "wordFamilyId": "WF-1E",
+    "dialectVariants": {
+      "adyghe": "ӏэпыӏэгъу",
+      "kabardian": "дэӏэпыкъуныгъэ"
+    },
+    "corpusFrequency": 355,
+    "corpusFrequencyAdy": 313,
+    "corpusFrequencyKbd": 42,
+    "notes": "C-9.5. Slovar: 3 kaynak."
+  },
+  {
+    "id": "L-1EMAL",
+    "form": "ӏэмал",
+    "literalMeaning": "care, yol",
+    "wordFamilyId": "WF-1E",
+    "dialectVariants": {
+      "adyghe": "ӏэмал",
+      "kabardian": "ӏэмал"
+    },
+    "corpusFrequency": 376,
+    "corpusFrequencyAdy": 1,
+    "corpusFrequencyKbd": 375,
+    "notes": "C-9.5. Slovar: 11 kaynak."
+  },
+  {
+    "id": "L-1EZEGHU",
+    "form": "ӏэзэгъу",
+    "literalMeaning": "ilac, tedavi",
+    "wordFamilyId": "WF-1E",
+    "dialectVariants": {
+      "adyghe": "ӏэзэгъу",
+      "kabardian": "хущхъуэ"
+    },
+    "corpusFrequency": 132,
+    "corpusFrequencyAdy": 51,
+    "corpusFrequencyKbd": 81,
+    "notes": "C-9.5. Slovar: 5 kaynak."
+  },
+  {
+    "id": "L-1EF1",
+    "form": "ӏэфӏ",
+    "literalMeaning": "tatli, lezzetli",
+    "wordFamilyId": "WF-1E",
+    "dialectVariants": {
+      "adyghe": "ӏэфӏ",
+      "kabardian": "ӏэфӏ"
+    },
+    "corpusFrequency": 124,
+    "corpusFrequencyAdy": 0,
+    "corpusFrequencyKbd": 124,
+    "notes": "C-9.5. Slovar: 11 kaynak."
+  },
+  {
+    "id": "L-1ESHCH",
+    "form": "ӏэщ",
+    "literalMeaning": "hayvan, ahir",
+    "wordFamilyId": "WF-1E",
+    "dialectVariants": {
+      "adyghe": "ӏэщ",
+      "kabardian": "ӏэщ"
+    },
+    "corpusFrequency": 115,
+    "corpusFrequencyAdy": 5,
+    "corpusFrequencyKbd": 110,
+    "notes": "C-9.5. Slovar: 17 kaynak."
   }
 ]
