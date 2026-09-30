@@ -11,8 +11,8 @@
 |-----|--------|-------|
 | Faz 1 | Foundation | CLOSED |
 | Faz 2 | Translation Platform | CLOSED |
-| Faz 3 | Concept Engine | READY FOR GATE REVIEW |
-| Faz 4 | Data Mapping & Integrity | COMPLETED |
+| Faz 3 | Concept Engine | CLOSED (2026-09-30) |
+| Faz 4 | Morphology Engine | UNLOCKED (2026-09-30) |
 | Faz 5 | Discovery Engine | COMPLETED (2026-09-29) |
 | Faz 6 | API & Explorer | CERTIFIED |
 | Faz C-3 | Linguistic Dataset (Ilk) | COMPLETED |
