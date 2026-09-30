@@ -849,5 +849,34 @@
       "kabardian": "напэ"
     },
     "notes": "C-10.3 yeni aile. Yuz/vicdan kok ailesi. 19 sozluk kaynagi. 10+ turev. 15+ deyim."
+  },
+  {
+    "id": "WF-MEZ",
+    "rootId": "R-MEZ",
+    "category": "nature",
+    "subcategory": "terrain-plant",
+    "semanticDomains": [
+      "nature",
+      "forest"
+    ],
+    "morphemeIds": [],
+    "lexemeIds": [
+      "L-MEZ",
+      "L-MEZYM",
+      "L-MEZXER",
+      "L-MEZY",
+      "L-MEZKOGHUM",
+      "L-MEZLHAPE"
+    ],
+    "productivity": {
+      "totalLexemes": 6,
+      "corpusFrequency": 604,
+      "mostFrequentLexemeId": "L-MEZ"
+    },
+    "dialectNote": {
+      "adyghe": "мэз",
+      "kabardian": "мэз"
+    },
+    "notes": "C-11.3 yeni aile. Orman kok ailesi. Korpus: 604."
   }
 ]

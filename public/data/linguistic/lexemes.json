@@ -9076,5 +9076,83 @@
     },
     "notes": "C-11.3: abla. Huvaj, Teshu.",
     "corpusFrequency": 0
+  },
+  {
+    "id": "L-MEZ",
+    "form": "мэз",
+    "literalMeaning": "orman",
+    "wordFamilyId": "WF-MEZ",
+    "conceptId": "FOREST",
+    "dialectVariants": {
+      "adyghe": "мэз",
+      "kabardian": "мэз"
+    },
+    "notes": "C-11.3: orman. Korpus: 292.",
+    "corpusFrequency": 292
+  },
+  {
+    "id": "L-MEZYM",
+    "form": "мэзым",
+    "literalMeaning": "ormana",
+    "wordFamilyId": "WF-MEZ",
+    "conceptId": "FOREST",
+    "dialectVariants": {
+      "adyghe": "мэзым",
+      "kabardian": "мэзым"
+    },
+    "notes": "C-11.3: ormana. Ergatief. Korpus: 289.",
+    "corpusFrequency": 289
+  },
+  {
+    "id": "L-MEZXER",
+    "form": "мэзхэр",
+    "literalMeaning": "ormanlar",
+    "wordFamilyId": "WF-MEZ",
+    "conceptId": "FOREST",
+    "dialectVariants": {
+      "adyghe": "мэзхэр",
+      "kabardian": "мэзхэр"
+    },
+    "notes": "C-11.3: ormanlar. Plural. Korpus: 15.",
+    "corpusFrequency": 15
+  },
+  {
+    "id": "L-MEZY",
+    "form": "мэзы",
+    "literalMeaning": "ormani",
+    "wordFamilyId": "WF-MEZ",
+    "conceptId": "FOREST",
+    "dialectVariants": {
+      "adyghe": "мэзы",
+      "kabardian": "мэзы"
+    },
+    "notes": "C-11.3: ormani. Korpus: 8.",
+    "corpusFrequency": 8
+  },
+  {
+    "id": "L-MEZKOGHUM",
+    "form": "мэзкъогъум",
+    "literalMeaning": "orman vadisi",
+    "wordFamilyId": "WF-MEZ",
+    "conceptId": "FOREST_VALLEY",
+    "dialectVariants": {
+      "adyghe": "мэзкъогъум",
+      "kabardian": "мэзкъуэгъум"
+    },
+    "notes": "C-11.3: orman vadisi. мэз + къогъум.",
+    "corpusFrequency": 0
+  },
+  {
+    "id": "L-MEZLHAPE",
+    "form": "мэзлъапэ",
+    "literalMeaning": "orman kenari",
+    "wordFamilyId": "WF-MEZ",
+    "conceptId": "FOREST_EDGE",
+    "dialectVariants": {
+      "adyghe": "мэзлъапэ",
+      "kabardian": "мэзлъапэ"
+    },
+    "notes": "C-11.3: orman kenari.",
+    "corpusFrequency": 0
   }
 ]

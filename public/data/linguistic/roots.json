@@ -2213,5 +2213,22 @@
     "form": "шъыпкъ",
     "meaning": "dogru/gercek",
     "notes": "C-9.3 yeni kok"
+  },
+  {
+    "id": "R-MEZ",
+    "form": "мэз",
+    "primaryMeaning": "orman",
+    "secondaryMeanings": [
+      "koru",
+      "ağaçlık"
+    ],
+    "semanticDomains": [
+      "nature"
+    ],
+    "dialectVariants": {
+      "adyghe": "мэз",
+      "kabardian": "мэз"
+    },
+    "notes": "C-11.3: orman koku. Korpus: 604."
   }
 ]
