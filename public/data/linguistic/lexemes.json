@@ -6072,5 +6072,75 @@
     "corpusFrequencyAdy": 5,
     "corpusFrequencyKbd": 110,
     "notes": "C-9.5. Slovar: 17 kaynak."
+  },
+  {
+    "id": "L-LHEUZHY",
+    "form": "лъэужь",
+    "literalMeaning": "iz, ayak izi",
+    "wordFamilyId": "WF-LHE",
+    "dialectVariants": {
+      "adyghe": "лъэужь",
+      "kabardian": "лъэужь"
+    },
+    "corpusFrequency": 67,
+    "corpusFrequencyAdy": 0,
+    "corpusFrequencyKbd": 67,
+    "notes": "C-9.5. Slovar: 10 kaynak."
+  },
+  {
+    "id": "L-LHEGUA",
+    "form": "лъэгуажьэ",
+    "literalMeaning": "diz",
+    "wordFamilyId": "WF-LHE",
+    "dialectVariants": {
+      "adyghe": "лъэгуажьэ",
+      "kabardian": "лъэгуажьэ"
+    },
+    "corpusFrequency": 11,
+    "corpusFrequencyAdy": 0,
+    "corpusFrequencyKbd": 11,
+    "notes": "C-9.5. Slovar: 10 kaynak."
+  },
+  {
+    "id": "L-LHEMYDJ",
+    "form": "лъэмыдж",
+    "literalMeaning": "kopru",
+    "wordFamilyId": "WF-LHE",
+    "dialectVariants": {
+      "adyghe": "лъэмыдж",
+      "kabardian": "лъэмыж"
+    },
+    "corpusFrequency": 74,
+    "corpusFrequencyAdy": 30,
+    "corpusFrequencyKbd": 44,
+    "notes": "C-9.5. Slovar: 8 kaynak."
+  },
+  {
+    "id": "L-LHESHCH",
+    "form": "лъэщ",
+    "literalMeaning": "guclu, kudretli",
+    "wordFamilyId": "WF-LHE",
+    "dialectVariants": {
+      "adyghe": "лъэщ",
+      "kabardian": "лъэщ"
+    },
+    "corpusFrequency": 99,
+    "corpusFrequencyAdy": 1,
+    "corpusFrequencyKbd": 98,
+    "notes": "C-9.5. Slovar: 10 kaynak."
+  },
+  {
+    "id": "L-LHENYQO",
+    "form": "лъэныкъо",
+    "literalMeaning": "yan, taraf",
+    "wordFamilyId": "WF-LHE",
+    "dialectVariants": {
+      "adyghe": "лъэныкъо",
+      "kabardian": "лъэныкъуэ"
+    },
+    "corpusFrequency": 198,
+    "corpusFrequencyAdy": 72,
+    "corpusFrequencyKbd": 126,
+    "notes": "C-9.5. Slovar: 1 kaynak. Wiktionary etimoloji: лъ + ныкъу + э (ayak yarimi)."
   }
 ]
