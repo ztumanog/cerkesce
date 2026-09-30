@@ -153,3 +153,5 @@ data/corpus/.hf_cache/
 
 # Web corpus cache (HTML, buyuk)
 data/corpus/webcorpora/cache/
+
+public/data/linguistic/*.bak_*
