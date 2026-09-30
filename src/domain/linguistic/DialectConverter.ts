@@ -94,6 +94,13 @@ export class DialectConverter {
     c = c.replace(/тӀы/g, 'Ӏы');
     c = c.replace(/кӀэ/g, 'чэ');
 
+
+    // C-11.2.1: ц -> дз
+    c = c.replace(/цыгъо/g, 'дзыгъуэ');
+    c = c.replace(/ц/g, 'дз');
+    // C-11.2.1: гъо -> гъуэ
+    c = c.replace(/гъо/g, 'гъуэ');
+
 // PHASE 6: LEXICAL SOUND LAWS
     c = c.replace(/фы$/g, "ху");
     c = c.replace(/ф/g, "ху");
