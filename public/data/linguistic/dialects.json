@@ -1,0 +1,106 @@
+{
+  "diyalektler": {
+    "adyghe": {
+      "name": "Adyghe (Batlh)",
+      "alternatives": [
+        "Adyge",
+        "West Circassian"
+      ],
+      "speakers": 120000,
+      "region": "Adygea"
+    },
+    "kabardian": {
+      "name": "Kabardian",
+      "alternatives": [
+        "East Circassian",
+        "KBD"
+      ],
+      "speakers": 1600000,
+      "region": "Kabardino-Balkaria"
+    },
+    "abzakh": {
+      "name": "Abzakh",
+      "alternatives": [
+        "Abadzekh"
+      ],
+      "speakers": 100000,
+      "region": "Adygea, Turkey"
+    },
+    "bzhedug": {
+      "name": "Bzhedug",
+      "alternatives": [
+        "Bzhedugh"
+      ],
+      "speakers": 50000,
+      "region": "Adygea"
+    },
+    "shapsug": {
+      "name": "Shapsug",
+      "alternatives": [
+        "Shapsigh"
+      ],
+      "speakers": 30000,
+      "region": "Black Sea coast"
+    }
+  },
+  "kurallar": {
+    "adyghe_kabardian": [
+      {
+        "from": "жъ",
+        "to": "жь",
+        "example": "жъы -> жьы"
+      },
+      {
+        "from": "шъ",
+        "to": "щ",
+        "example": "шъыпкъэ -> щыпкъэ"
+      },
+      {
+        "from": "шӀу",
+        "to": "фӀ",
+        "example": "гушӀо -> гуфӀэ"
+      },
+      {
+        "from": "кӀ",
+        "to": "щӀ",
+        "example": "гукӀэгъу -> гущӀэгъу"
+      }
+    ],
+    "adyghe_abzakh": [
+      {
+        "from": "жъ",
+        "to": "ж",
+        "example": "жъы -> жы"
+      },
+      {
+        "from": "шъ",
+        "to": "с",
+        "example": "шъыпкъэ -> сIыпкъэ"
+      }
+    ],
+    "adyghe_bzhedug": [
+      {
+        "from": "къ",
+        "to": "ч",
+        "example": "къуэ -> чуэ"
+      },
+      {
+        "from": "дж",
+        "to": "дз",
+        "example": "джэд -> дзэд"
+      }
+    ],
+    "adyghe_shapsug": [
+      {
+        "from": "жъ",
+        "to": "ж",
+        "example": "жъы -> жы"
+      },
+      {
+        "from": "шъ",
+        "to": "ш",
+        "example": "шъыпкъэ -> шыпкъэ"
+      }
+    ]
+  }
+}
