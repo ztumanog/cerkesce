@@ -7520,5 +7520,189 @@
       }
     },
     "notes": "º░º¢ªı (anne) + º║ªèªâªıªê (kardes) = dayi. Adigece: º░º¢ªıªê."
+  },
+  {
+    "id": "L-KHUMEN",
+    "form": "хъумэн",
+    "ipa": "/χʷəman/",
+    "literalMeaning": "korumak",
+    "derivation": {
+      "rootIds": [
+        "R-KHUMEN"
+      ],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-KHUMEN",
+    "conceptId": "PROTECT",
+    "dialectVariants": {
+      "adyghe": "хъумэн",
+      "kabardian": "хъумэн"
+    },
+    "corpusFrequency": 91,
+    "corpusFrequencyAdy": 0,
+    "corpusFrequencyKbd": 91,
+    "notes": "Korumak. C-9.3 yeni lexeme."
+  },
+  {
+    "id": "L-KUEUKHUMEN",
+    "form": "къэухъумэн",
+    "ipa": "/qʷawχʷəman/",
+    "literalMeaning": "savunmak",
+    "derivation": {
+      "rootIds": [
+        "R-KHUMEN"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-KHUMEN",
+    "conceptId": "DEFEND",
+    "dialectVariants": {
+      "adyghe": "къэухъумэн",
+      "kabardian": "къэухъумэн"
+    },
+    "corpusFrequency": 36,
+    "corpusFrequencyAdy": 36,
+    "corpusFrequencyKbd": 0,
+    "notes": "Savunmak. C-9.3 yeni lexeme."
+  },
+  {
+    "id": "L-KUEKHUMEN",
+    "form": "къэхъумэн",
+    "ipa": "/qʷaχʷəman/",
+    "literalMeaning": "savunmak (KBD)",
+    "derivation": {
+      "rootIds": [
+        "R-KHUMEN"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-KHUMEN",
+    "conceptId": "DEFEND",
+    "dialectVariants": {
+      "adyghe": "къэухъумэн",
+      "kabardian": "къэхъумэн"
+    },
+    "corpusFrequency": 3,
+    "corpusFrequencyAdy": 0,
+    "corpusFrequencyKbd": 3,
+    "notes": "Savunmak (KBD varyanti). C-9.3 yeni lexeme."
+  },
+  {
+    "id": "L-KKHEKHUME",
+    "form": "кхъэхъумэ",
+    "ipa": "/q͡χaχʷəma/",
+    "literalMeaning": "mezarlik bekcisi",
+    "derivation": {
+      "rootIds": [
+        "R-KHUMEN"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-KHUMEN",
+    "conceptId": "GRAVEKEEPER",
+    "dialectVariants": {
+      "adyghe": "кхъэхъумэ",
+      "kabardian": "кхъэхъумэ"
+    },
+    "corpusFrequency": 0,
+    "corpusFrequencyAdy": 0,
+    "corpusFrequencyKbd": 0,
+    "notes": "Mezarlik bekcisi. C-9.3 yeni lexeme."
+  },
+  {
+    "id": "L-SHQE",
+    "form": "шъыпкъэ",
+    "ipa": "/ʂəpqʷʼa/",
+    "literalMeaning": "dogru",
+    "derivation": {
+      "rootIds": [
+        "R-SHQE"
+      ],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-SHQE",
+    "conceptId": "TRUE",
+    "dialectVariants": {
+      "adyghe": "шъыпкъэ",
+      "kabardian": "щыпкъэ"
+    },
+    "corpusFrequency": 1392,
+    "corpusFrequencyAdy": 1392,
+    "corpusFrequencyKbd": 30,
+    "notes": "Dogru, gercek. C-9.3 yeni lexeme. Yuksek frekans."
+  },
+  {
+    "id": "L-SHQAGHE",
+    "form": "шъыпкъагъэ",
+    "ipa": "/ʂəpqʷʼaʁa/",
+    "literalMeaning": "dogruluk",
+    "derivation": {
+      "rootIds": [
+        "R-SHQE"
+      ],
+      "morphemeIds": [],
+      "rule": "suffix"
+    },
+    "wordFamilyId": "WF-SHQE",
+    "conceptId": "TRUTH",
+    "dialectVariants": {
+      "adyghe": "шъыпкъагъэ",
+      "kabardian": "щыпкъагъэ"
+    },
+    "corpusFrequency": 392,
+    "corpusFrequencyAdy": 392,
+    "corpusFrequencyKbd": 205,
+    "notes": "Dogruluk. C-9.3 yeni lexeme."
+  },
+  {
+    "id": "L-SHQEU",
+    "form": "шъыпкъэу",
+    "ipa": "/ʂəpqʷʼaw/",
+    "literalMeaning": "dogru olarak",
+    "derivation": {
+      "rootIds": [
+        "R-SHQE"
+      ],
+      "morphemeIds": [],
+      "rule": "suffix"
+    },
+    "wordFamilyId": "WF-SHQE",
+    "conceptId": "TRULY",
+    "dialectVariants": {
+      "adyghe": "шъыпкъэу",
+      "kabardian": "щыпкъэу"
+    },
+    "corpusFrequency": 214,
+    "corpusFrequencyAdy": 214,
+    "corpusFrequencyKbd": 30,
+    "notes": "Dogru olarak. C-9.3 yeni lexeme."
+  },
+  {
+    "id": "L-SHQEM",
+    "form": "шъыпкъэм",
+    "ipa": "/ʂəpqʷʼam/",
+    "literalMeaning": "dogruya",
+    "derivation": {
+      "rootIds": [
+        "R-SHQE"
+      ],
+      "morphemeIds": [],
+      "rule": "suffix"
+    },
+    "wordFamilyId": "WF-SHQE",
+    "conceptId": "TRUTH",
+    "dialectVariants": {
+      "adyghe": "шъыпкъэм",
+      "kabardian": "щыпкъэм"
+    },
+    "corpusFrequency": 132,
+    "corpusFrequencyAdy": 132,
+    "corpusFrequencyKbd": 0,
+    "notes": "Dogruya. C-9.3 yeni lexeme."
   }
 ]
