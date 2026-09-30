@@ -92,16 +92,13 @@ export class DialectConverter {
     c = c.replace(/пӀэ/g, 'Ӏэ');
     c = c.replace(/тӀы/g, 'Ӏы');
     c = c.replace(/кӀэ/g, 'чэ');
-
-
-    // C-11.2.1: ц -> дз (цӏ'yi koru)
-    c = c.replace(/цӏ/g, 'ЦЦЦ');
+    // C-11.2.1: Spesifik kelimeler (once)
+    c = c.replace(/цӏыфы/g, 'цӏыху');
     c = c.replace(/цыгъо/g, 'дзыгъуэ');
-    c = c.replace(/ц/g, 'дз');
-    c = c.replace(/гъо/g, 'гъуэ');
+    // Genel kurallar (sonra)
     c = c.replace(/цӀы/g, 'дзӀы');
-    c = c.replace(/ЦЦЦ/g, 'цӏ');
-
+    c = c.replace(/гъо/g, 'гъуэ');
+    
 // PHASE 6: LEXICAL SOUND LAWS
     c = c.replace(/фы$/g, "ху");
     c = c.replace(/ф/g, "ху");
