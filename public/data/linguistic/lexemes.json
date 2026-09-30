@@ -6142,5 +6142,1383 @@
     "corpusFrequencyAdy": 72,
     "corpusFrequencyKbd": 126,
     "notes": "C-9.5. Slovar: 1 kaynak. Wiktionary etimoloji: лъ + ныкъу + э (ayak yarimi)."
+  },
+  {
+    "id": "L-SHHYASHE",
+    "form": "щхьэщэ",
+    "ipa": "/ɕħəɕa/",
+    "literalMeaning": "basin ustu",
+    "derivation": {
+      "rootIds": [
+        "R-SHHYE"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-SHHYE",
+    "conceptId": "TOP",
+    "dialectVariants": {
+      "adyghe": "шъхьащэ"
+    },
+    "notes": "Basin ust kismi, tepe. ADY freq=383, KBD freq=163",
+    "corpusFrequency": 383,
+    "corpusFrequencyKbd": 163
+  },
+  {
+    "id": "L-SHHYEKYSYSHYEZHYN",
+    "form": "къыщхьэщыжын",
+    "ipa": "/qəɕħəɕəʒən/",
+    "literalMeaning": "bastan cikmak",
+    "derivation": {
+      "rootIds": [
+        "R-SHHYE"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-SHHYE",
+    "conceptId": "EXIT",
+    "notes": "Basdan ayrilmak, cikmak. KBD freq=26",
+    "corpusFrequency": 0,
+    "corpusFrequencyKbd": 26
+  },
+  {
+    "id": "L-SHHYESHYEZHYN",
+    "form": "щхьэщыжын",
+    "ipa": "/ɕħəɕəʒən/",
+    "literalMeaning": "bastan inmek",
+    "derivation": {
+      "rootIds": [
+        "R-SHHYE"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-SHHYE",
+    "conceptId": "EXIT",
+    "notes": "Basdan inmek, ayrilmak. KBD freq=6",
+    "corpusFrequency": 0,
+    "corpusFrequencyKbd": 6
+  },
+  {
+    "id": "L-SHHYEUSYGHU",
+    "form": "ушъхьагъу",
+    "ipa": "/uɕħaɣʷə/",
+    "literalMeaning": "bahane",
+    "derivation": {
+      "rootIds": [
+        "R-SHHYE"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-SHHYE",
+    "conceptId": "REASON",
+    "notes": "Bahane, gerekce. ADY freq=715",
+    "corpusFrequency": 715,
+    "corpusFrequencyKbd": 0
+  },
+  {
+    "id": "L-GUGHE",
+    "form": "гугъэ",
+    "ipa": "/guʁa/",
+    "literalMeaning": "kalpte tutulan",
+    "derivation": {
+      "morphemeIds": [
+        "M-GHE"
+      ],
+      "rootIds": [
+        "R-GU"
+      ],
+      "rule": "suffix"
+    },
+    "wordFamilyId": "WF-GU",
+    "conceptId": "HOPE",
+    "corpusFrequency": 1313,
+    "notes": "Umut, niyet. Korpus: 1.313 sonuc (en yuksek turev)"
+  },
+  {
+    "id": "L-GUETYNEGHE",
+    "form": "º│ªâªıªéªïº¢ªïº│ªèªı",
+    "ipa": "/guet╔Ön╔Ö╔úa/",
+    "literalMeaning": "kalp bagliligi",
+    "derivation": {
+      "rootIds": [
+        "R-GU"
+      ],
+      "morphemeIds": [],
+      "rule": "suffix"
+    },
+    "wordFamilyId": "WF-GU",
+    "conceptId": "LOYALTY",
+    "notes": "Sadakat. Kuipers/Kolarusso ornegi"
+  },
+  {
+    "id": "L-NE1EY",
+    "form": "º¢ªı ËÇºÁº╣",
+    "ipa": "/na ╩öej/",
+    "literalMeaning": "kotu goz",
+    "derivation": {
+      "rootIds": [
+        "R-NE"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-NE",
+    "conceptId": "EVIL_EYE",
+    "dialectVariants": {
+      "adyghe": "º¢ªı ËÇº░ºÁ",
+      "kabardian": "º¢ªı ËÇºÁº╣"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 2,
+      "sources": [
+        "Apashev (2008)",
+        "Tharkaho (1991)"
+      ]
+    },
+    "notes": "Kabardeyce form: º¢ªı ËÇºÁº╣. Adigece: º¢ªı ËÇº░ºÁ. Nazar.",
+    "dialectNote": "Unlu degisimi: º░ºÁ (Adigece) <-> ºÁº╣ (Kabardeyce)"
+  },
+  {
+    "id": "L-NEZHAN",
+    "form": "º¢ªı ºÂº░º¢",
+    "ipa": "/na ╩Æan/",
+    "literalMeaning": "keskin goz",
+    "derivation": {
+      "rootIds": [
+        "R-NE"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-NE",
+    "conceptId": "SHARP_EYE",
+    "dialectVariants": {
+      "adyghe": "º¢ªı ªçº░º¢",
+      "kabardian": "º¢ªı ºÂº░º¢"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 3,
+      "sources": [
+        "Apashev (2008)",
+        "Aig (2006)",
+        "Tharkaho (1991)"
+      ]
+    },
+    "notes": "Kabardeyce form: º¢ªı ºÂº░º¢. Adigece: º¢ªı ªçº░º¢. Keskin goz.",
+    "dialectNote": "Ses denkligi: ªç (Adigece) <-> ºÂ (Kabardeyce)"
+  },
+  {
+    "id": "L-NEZAKUE",
+    "form": "º¢ªı ºÀº░º║ªèªâªı",
+    "ipa": "/na zaq╩Àa/",
+    "literalMeaning": "tek goz",
+    "derivation": {
+      "rootIds": [
+        "R-NE"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-NE",
+    "conceptId": "ONE_EYED",
+    "dialectVariants": {
+      "adyghe": "º¢ªı ºÀº░º║ªèªâªı",
+      "kabardian": "º¢ªı ºÀº░º║ªèªâªı"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 3,
+      "sources": [
+        "Apashev (2008)",
+        "Aig (2006)",
+        "Tharkaho (1991)"
+      ]
+    },
+    "notes": "Iki lehcede ayni. Dev masali (ºİº¢ªïºÂªî º¢ªı ºÀº░º║ªèªâªı)."
+  },
+  {
+    "id": "L-NEBZHYTSYLE",
+    "form": "º¢ªıº▒ºÂªîªïªåªïº╗ªı",
+    "ipa": "/nab╩æ╔Öt═ís╔Öla/",
+    "literalMeaning": "kirpik boyasi",
+    "derivation": {
+      "rootIds": [
+        "R-NE"
+      ],
+      "morphemeIds": [
+        "M-BZHY",
+        "M-TSY"
+      ],
+      "rule": "suffix"
+    },
+    "wordFamilyId": "WF-NE",
+    "conceptId": "MASCARA",
+    "dialectVariants": {
+      "adyghe": "º¢ªıº▒ºÂªîªïªåªïº╗ªı",
+      "kabardian": "º¢ªıº▒ºÂªîªïªåªïº╗ªı"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 4,
+      "sources": [
+        "Yamisha (2018)"
+      ],
+      "meanings": {
+        "ru": "ªéªâªêªî",
+        "en": "mascara",
+        "tr": "maskara"
+      }
+    },
+    "notes": "º¢ªıº▒ºÂªîªïªå + º╗ªı = maskara."
+  },
+  {
+    "id": "L-1EBZYGE",
+    "form": "ËÇªıº▒ºÀªïº│ªèªı",
+    "ipa": "/╩öabz╔Ö╔úa/",
+    "literalMeaning": "el zekasi",
+    "derivation": {
+      "rootIds": [
+        "R-1E"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-1E",
+    "conceptId": "ARTIFICIAL_INTELLIGENCE",
+    "dialectVariants": {
+      "adyghe": "ËÇªıº▒ºÀªïº│ªèªı",
+      "kabardian": "ËÇªıº▒ºÀªïº│ªèªı"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 0,
+      "sources": [
+        "Dipo (2026) - Yeni turetme"
+      ],
+      "meanings": {
+        "tr": "yapay zeka",
+        "en": "artificial intelligence"
+      }
+    },
+    "notes": "YENI KELIME: ËÇªı (el) + º▒ºÀªïº│ªèªı (zeka) = yapay zeka. Karsit: º│ªâº▒ºÀªïº│ªèªı (insan zekasi)."
+  },
+  {
+    "id": "L-NEKHUE",
+    "form": "º¢ªıªàªâ",
+    "ipa": "/n╔Éx╩À/",
+    "literalMeaning": "gozun beyazligi",
+    "derivation": {
+      "rootIds": [
+        "R-NE"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-NE",
+    "conceptId": "LIGHT",
+    "dialectVariants": {
+      "adyghe": "º¢ªıªàªâ",
+      "kabardian": "º¢ªıªàªâ"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 11,
+      "sources": [
+        "Apashev (2008)",
+        "Yamisha (2018)",
+        "Yamisha (2023)",
+        "Gish (0000)",
+        "Amcad Camuha (1997)",
+        "Kokov (2008)",
+        "Kardanov (1957)"
+      ],
+      "meanings": {
+        "tr": "isik, aydinlik",
+        "en": "light, brightness",
+        "ru": "ªüº▓ºÁªé, º¥ªüº▓ºÁªëºÁº¢º©ºÁ"
+      }
+    },
+    "corpusEvidence": {
+      "documents": 20,
+      "examples": [
+        "ºØªıªàªâ ªëËÇº©º┤ºÀªıº¢",
+        "º®ªàªîªıº│ªèªâº▒ºÂªıº╝ º¢ªıªàªâ º║ªèªïº┤ºÁº┤ºÀ",
+        "ºíº© º¢ªıº╝ º© º¢ªıªàªâ"
+      ]
+    },
+    "notes": "º¢ªı (goz) + ªàªâ = isik. Mecazi: goz -> isik."
+  },
+  {
+    "id": "L-PETSURãÅ",
+    "form": "º┐ªıªåËÇªâªÇªı",
+    "ipa": "/╦êp╔Ét╩╣su:r╔É/",
+    "literalMeaning": "sivri burunlu",
+    "derivation": {
+      "rootIds": [
+        "R-PE"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-PE",
+    "conceptId": "POINTED_NOSED",
+    "dialectVariants": {
+      "adyghe": "º┐ªıªåËÇªâªÇªı",
+      "kabardian": "º┐ªıªåËÇªâªÇªı"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 1,
+      "sources": [
+        "Wiktionary (2023)"
+      ],
+      "meanings": {
+        "ru": "º¥ªüªéªÇº¥º¢º¥ªüªïº╣ (º¥ ªçºÁº╗º¥º▓ºÁº║ºÁ)",
+        "en": "with a pointed nose (about a person)",
+        "tr": "sivri burunlu"
+      }
+    },
+    "etymology": "[º┐] + -ªı- + [ªåËÅªâªÇ] + -ªı",
+    "notes": "º┐ªı (burun) + ªåËÇªâªÇªı (sivri/keskin). S─▒fat t├╝retme ├Âr├╝nt├╝s├╝n├╝n net ├Ârne─şi."
+  },
+  {
+    "id": "L-MAF1ASHE",
+    "form": "º╝º░ªäËÇº░ªëªı",
+    "ipa": "/ma╦Éf╩öa╔òa/",
+    "literalMeaning": "ate┼ş oku",
+    "derivation": {
+      "rootIds": [
+        "R-MAF1E",
+        "R-SHE"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-MAF1E",
+    "conceptId": "SPARK",
+    "dialectVariants": {
+      "adyghe": "º╝º░ªêËÇº¥ªëªı",
+      "kabardian": "º╝º░ªäËÇº░ªëªı"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 1,
+      "sources": [
+        "Kuipers (1960)"
+      ],
+      "meanings": {
+        "ru": "º©ªüº║ªÇº░",
+        "en": "spark",
+        "tr": "k─▒v─▒lc─▒m"
+      }
+    },
+    "notes": "Bile┼şik: º╝º░ªäËÇªı (ate┼ş) + ªëªı (ok/sa├ğ─▒l─▒m) = ate┼ş oku = k─▒v─▒lc─▒m."
+  },
+  {
+    "id": "L-PSYXHEL",
+    "form": "º┐ªüªïªàªîªıº╗",
+    "ipa": "/ps╔Ö─ğal/",
+    "literalMeaning": "su degirmeni",
+    "derivation": {
+      "rootIds": [
+        "R-PSY"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-PSY",
+    "conceptId": "WATERMILL",
+    "dialectVariants": {
+      "adyghe": "º┐ªüªï ªêªèªàªîº░º╗",
+      "kabardian": "º┐ªüªïªàªîªıº╗"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 2,
+      "sources": [
+        "Wiktionary (2023)",
+        "Hasan (1991)"
+      ],
+      "meanings": {
+        "tr": "su degirmeni",
+        "en": "watermill",
+        "ru": "º▓º¥º┤ªÅº¢º░ªÅ º╝ºÁº╗ªîº¢º©ªåº░"
+      }
+    },
+    "notes": "º┐ªüªï (su) + ªàªîªıº╗ (degirmen) = su degirmeni. Adigece: º┐ªüªï ªêªèªàªîº░º╗."
+  },
+  {
+    "id": "L-PSEBYDE",
+    "form": "º┐ªüªıº▒ªïº┤ªı",
+    "ipa": "/psab╔Öda/",
+    "literalMeaning": "saglam can",
+    "derivation": {
+      "rootIds": [
+        "R-PSE"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-PSE",
+    "conceptId": "RESILIENT",
+    "dialectVariants": {
+      "adyghe": "º┐ªüªıº▒ªïº┤ªı",
+      "kabardian": "º┐ªüªıº▒ªïº┤ªı"
+    },
+    "notes": "º┐ªüªı + º▒ªïº┤ªı (saglam) = dayanikli."
+  },
+  {
+    "id": "L-PSE1UV",
+    "form": "º┐ªüªıIªâº▓",
+    "ipa": "/psa╩öuv/",
+    "literalMeaning": "kalin can",
+    "derivation": {
+      "rootIds": [
+        "R-PSE"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-PSE",
+    "conceptId": "PATIENT",
+    "dialectVariants": {
+      "adyghe": "º┐ªüªıIªâº▓",
+      "kabardian": "º┐ªüªıIªâº▓"
+    },
+    "notes": "º┐ªüªı + Iªâº▓ (kalin) = direncli."
+  },
+  {
+    "id": "L-PSEEBLEZHYN",
+    "form": "º┐ªüªıºÁº▒º╗ªıºÂªïº¢",
+    "ipa": "/psajebla╩Æ╔Ön/",
+    "literalMeaning": "canini esirgemeden vermek",
+    "derivation": {
+      "rootIds": [
+        "R-PSE"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-PSE",
+    "conceptId": "SACRIFICE",
+    "dialectVariants": {
+      "adyghe": "º┐ªüªıºÁº▒º╗ªıºÂªïº¢",
+      "kabardian": "º┐ªüªıºÁº▒º╗ªıºÂªïº¢"
+    },
+    "notes": "º┐ªüªı + ºÁº▒º╗ªıºÂªïº¢ = fedakarlik."
+  },
+  {
+    "id": "L-NEF",
+    "form": "º¢ªıªä",
+    "ipa": "/naf/",
+    "literalMeaning": "gozu yok",
+    "derivation": {
+      "rootIds": [
+        "R-NE"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-NE",
+    "conceptId": "BLIND",
+    "dialectVariants": {
+      "adyghe": "º¢ªıªä",
+      "kabardian": "º¢ªıªä"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 5,
+      "sources": [
+        "Apashev (2008)",
+        "Kardanov (1957)",
+        "Kokov (2008)",
+        "Yamisha (2018)",
+        "Wiktionary (2023)"
+      ],
+      "meanings": {
+        "tr": "k├Âr",
+        "en": "blind",
+        "ru": "ªüº╗ºÁº┐º¥º╣"
+      }
+    },
+    "notes": "º¢ªı (goz) + ªä (yok) = kor.",
+    "dialectNote": "Her iki lehcede ayni."
+  },
+  {
+    "id": "L-NEF1",
+    "form": "º¢ªıªäËÇ",
+    "ipa": "/naf╩ö/",
+    "literalMeaning": "goze iyi gelen",
+    "derivation": {
+      "rootIds": [
+        "R-NE"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-NE",
+    "conceptId": "KINDNESS",
+    "dialectVariants": {
+      "adyghe": "º¢ªıªäËÇ",
+      "kabardian": "º¢ªıªäËÇ"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 5,
+      "sources": [
+        "Apashev (2008)",
+        "Kardanov (1957)",
+        "Kokov (2008)",
+        "Yamisha (2018)",
+        "Wiktionary (2023)"
+      ],
+      "meanings": {
+        "tr": "iyilik",
+        "en": "kindness",
+        "ru": "º┤º¥º▒ªÇº¥ªéº░"
+      }
+    },
+    "notes": "º¢ªı (goz) + ªäËÇ (iyi) = goze hos gelen, iyilik."
+  },
+  {
+    "id": "L-BZEDYDHU",
+    "form": "º▒ºÀªıº┤ªïº┤",
+    "ipa": "/bzad╔Öd/",
+    "literalMeaning": "kotu dil",
+    "derivation": {
+      "rootIds": [
+        "R-BZE"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-BZE",
+    "conceptId": "INSULT",
+    "dialectVariants": {
+      "adyghe": "º▒ºÀªıº┤ªïº┤",
+      "kabardian": "º▒ºÀªıº┤ªïº┤"
+    },
+    "notes": "º▒ºÀªı (dil) + º┤ªïº┤ (kotu) = kotu soz, hakaret."
+  },
+  {
+    "id": "L-BZESHXUE",
+    "form": "º▒ºÀªıªêªàªâªı",
+    "ipa": "/bza╩âx╩Àa/",
+    "literalMeaning": "buyuk dil",
+    "derivation": {
+      "rootIds": [
+        "R-BZE"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-BZE",
+    "conceptId": "LANGUAGE",
+    "dialectVariants": {
+      "adyghe": "º▒ºÀªıªêªàªâªı",
+      "kabardian": "º▒ºÀªıªêªàªâªı"
+    },
+    "notes": "º▒ºÀªı (dil) + ªêªàªâªı (buyuk) = buyuk dil."
+  },
+  {
+    "id": "L-BZEBZA",
+    "form": "º▒ºÀªıº▒ºÀªı",
+    "ipa": "/bzabza/",
+    "literalMeaning": "dil dil",
+    "derivation": {
+      "rootIds": [
+        "R-BZE"
+      ],
+      "morphemeIds": [],
+      "rule": "reduplication"
+    },
+    "wordFamilyId": "WF-BZE",
+    "conceptId": "STUTTER",
+    "dialectVariants": {
+      "adyghe": "º▒ºÀªıº▒ºÀªı",
+      "kabardian": "º▒ºÀªıº▒ºÀªı"
+    },
+    "notes": "º▒ºÀªı + º▒ºÀªı = kekeleme."
+  },
+  {
+    "id": "L-PEPC1Y",
+    "form": "º┐ªıº┐ªåËÇ",
+    "ipa": "/papt═ís╩╝/",
+    "literalMeaning": "burun yalani",
+    "derivation": {
+      "rootIds": [
+        "R-PE",
+        "R-P1C1"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-PE",
+    "conceptId": "DECEIT",
+    "dialectVariants": {
+      "adyghe": "º┐ªıº┐ªåËÇ",
+      "kabardian": "º┐ªıº┐ªåËÇ"
+    },
+    "notes": "º┐ªı (burun) + º┐ªåËÇªï (yalan) = aldatma."
+  },
+  {
+    "id": "L-PEBZHE",
+    "form": "º┐ªıº▒ºÂªîªı",
+    "ipa": "/pab╩Æa/",
+    "literalMeaning": "burun ucu",
+    "derivation": {
+      "rootIds": [
+        "R-PE"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-PE",
+    "conceptId": "NOSTRIL",
+    "dialectVariants": {
+      "adyghe": "º┐ªıº▒ºÂªîªı",
+      "kabardian": "º┐ªıº▒ºÂªîªı"
+    },
+    "notes": "º┐ªı (burun) + º▒ºÂªîªı = burun deligi."
+  },
+  {
+    "id": "L-DZELHYQHU",
+    "form": "º┤ºÀªıº╗ªèªïªàªèªâ",
+    "ipa": "/dza╔¼╔Ö¤ç╩À╔Ö/",
+    "literalMeaning": "ordu arayan",
+    "derivation": {
+      "rootIds": [
+        "R-DZE"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-DZE",
+    "conceptId": "RECRUITER",
+    "dialectVariants": {
+      "adyghe": "º┤ºÀªıº╗ªèªïªàªèªâ",
+      "kabardian": "º┤ºÀªıº╗ªèªïªàªèªâ"
+    },
+    "notes": "º┤ºÀªı (ordu) + º╗ªèªïªàªèªâ (aramak) = asker arayan."
+  },
+  {
+    "id": "L-DZEGHUE",
+    "form": "º┤ºÀªıº│ªèªâªı",
+    "ipa": "/dza╔ú╩Àa/",
+    "literalMeaning": "ordu zamani",
+    "derivation": {
+      "rootIds": [
+        "R-DZE"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-DZE",
+    "conceptId": "BATTLE",
+    "dialectVariants": {
+      "adyghe": "º┤ºÀªıº│ªèªâªı",
+      "kabardian": "º┤ºÀªıº│ªèªâªı"
+    },
+    "notes": "º┤ºÀªı (ordu) + º│ªèªâªı (zaman) = savas zamani."
+  },
+  {
+    "id": "L-PSYBZU",
+    "form": "º┐ªüªïº▒ºÀªâ",
+    "ipa": "/ps╔Öbzu/",
+    "literalMeaning": "su kusu",
+    "derivation": {
+      "rootIds": [
+        "R-PSY",
+        "R-BZU"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-PSY",
+    "conceptId": "DIPPER",
+    "dialectVariants": {
+      "adyghe": "º┐ªüªïº▒ºÀªâ",
+      "kabardian": "º┐ªüªïº▒ºÀªâ"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 1,
+      "sources": [
+        "Wiktionary (2023)"
+      ],
+      "meanings": {
+        "tr": "su kusu (dipper)",
+        "en": "dipper",
+        "ru": "º¥º╗ªÅº┐º║º░"
+      }
+    },
+    "notes": "º┐ªüªï (su) + º▒ºÀªâ (kus) = su kusu."
+  },
+  {
+    "id": "L-PSYK1ANT1E",
+    "form": "º┐ªüªï º║ËÇº░º¢ªéËÇªı",
+    "ipa": "/ps╔Ö k╩À╩╝ant╩╣a/",
+    "literalMeaning": "kucuk su",
+    "derivation": {
+      "rootIds": [
+        "R-PSY"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-PSY",
+    "conceptId": "STREAM",
+    "dialectVariants": {
+      "adyghe": "º┐ªüªï º║ËÇº░º¢ªéËÇªı",
+      "kabardian": "º┐ªüªï º║ËÇº░º¢ªéËÇªı"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 3,
+      "sources": [
+        "Wiktionary (2023)",
+        "Apashev (2008)",
+        "Kokov (2008)"
+      ],
+      "meanings": {
+        "tr": "dere, cay",
+        "en": "stream, brook",
+        "ru": "ªÇªâªçºÁº╣"
+      }
+    },
+    "notes": "º┐ªüªï (su) + º║ËÇº░º¢ªéËÇªı (kucuk) = dere."
+  },
+  {
+    "id": "L-PSYNEPQ",
+    "form": "º┐ªüªï º¢ªıº┐º║ªè",
+    "ipa": "/ps╔Ö napq╩╣/",
+    "literalMeaning": "su duvari",
+    "derivation": {
+      "rootIds": [
+        "R-PSY"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-PSY",
+    "conceptId": "STEEP_BANK",
+    "dialectVariants": {
+      "adyghe": "º┐ªüªï º¢ªıº┐º║ªè",
+      "kabardian": "º┐ªüªï º¢ªıº┐º║ªè"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 2,
+      "sources": [
+        "Wiktionary (2023)",
+        "Apashev (2008)"
+      ],
+      "meanings": {
+        "tr": "dik yamac",
+        "en": "steep bank",
+        "ru": "º¥º▒ªÇªïº▓º©ªüªéªïº╣ º▒ºÁªÇºÁº│"
+      }
+    },
+    "notes": "º┐ªüªï (su) + º¢ªıº┐º║ªè (duvar) = dik yamac."
+  },
+  {
+    "id": "L-PSYNYDZHE",
+    "form": "º┐ªüªï º¢ªïº┤ºÂªı",
+    "ipa": "/ps╔Ö n╔Öd╩Æa/",
+    "literalMeaning": "su taskin yatagi",
+    "derivation": {
+      "rootIds": [
+        "R-PSY"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-PSY",
+    "conceptId": "FLOODPLAIN",
+    "dialectVariants": {
+      "adyghe": "º┐ªüªï º¢ªïº┤ºÂªı",
+      "kabardian": "º┐ªüªï º¢ªïº┤ºÂªı"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 2,
+      "sources": [
+        "Wiktionary (2023)",
+        "Apashev (2008)"
+      ],
+      "meanings": {
+        "tr": "nehir taskin yatagi",
+        "en": "floodplain",
+        "ru": "º┐º¥º╣º╝º░ ªÇºÁº║º©"
+      }
+    },
+    "notes": "º┐ªüªï (su) + º¢ªïº┤ºÂªı (taskin yatagi) = nehir taskin yatagi."
+  },
+  {
+    "id": "L-PSELHYQHUE",
+    "form": "º┐ªüªıº╗ªèªïªàªèªâªı",
+    "ipa": "/psa╔¼╔Ö¤ç╩Àa/",
+    "literalMeaning": "can arama",
+    "derivation": {
+      "rootIds": [
+        "R-PSE"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-PSE",
+    "conceptId": "COURTSHIP",
+    "dialectVariants": {
+      "adyghe": "º┐ªüªıº╗ªèªïªàªèªâªı",
+      "kabardian": "º┐ªüªıº╗ªèªïªàªèªâªı"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 2,
+      "sources": [
+        "Wiktionary (2023)",
+        "Apashev (2008)"
+      ],
+      "meanings": {
+        "tr": "can arama, kur yapma",
+        "en": "courtship",
+        "ru": "ªâªàº░ºÂº©º▓º░º¢º©ºÁ"
+      }
+    },
+    "notes": "º┐ªüªı (ruh) + º╗ªèªïªàªèªâªı (aramak) = can arama."
+  },
+  {
+    "id": "L-PSEGHEPSK1",
+    "form": "º┐ªüªıº│ªèªıº┐ªüº║ËÇ",
+    "ipa": "/psa╔úapst═ís╩╣/",
+    "literalMeaning": "caniyla yikanmak",
+    "derivation": {
+      "rootIds": [
+        "R-PSE"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-PSE",
+    "conceptId": "REFRESH",
+    "dialectVariants": {
+      "adyghe": "º┐ªüªıº│ªèªıº┐ªüº║ËÇ",
+      "kabardian": "º┐ªüªıº│ªèªıº┐ªüº║ËÇ"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 2,
+      "sources": [
+        "Wiktionary (2023)",
+        "Tokmakova (2017)"
+      ],
+      "meanings": {
+        "tr": "caniyla yikanmak, canlanmak",
+        "en": "to refresh oneself",
+        "ru": "º¥ªüº▓ºÁºÂº©ªéªîªüªÅ"
+      }
+    },
+    "notes": "º┐ªüªı (ruh) + º│ªèªıº┐ªüº║ËÇ (yikanmak) = canlanmak."
+  },
+  {
+    "id": "L-PSETEXHUE",
+    "form": "º┐ªüªıªéºÁªàªèªâªıº¢",
+    "ipa": "/psate¤ç╩Àan/",
+    "literalMeaning": "cani sikilmak",
+    "derivation": {
+      "rootIds": [
+        "R-PSE"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-PSE",
+    "conceptId": "BOREDOM",
+    "dialectVariants": {
+      "adyghe": "º┐ªüªıªéºÁªàªèªâªıº¢",
+      "kabardian": "º┐ªüªıªéºÁªàªèªâªıº¢"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 2,
+      "sources": [
+        "Wiktionary (2023)",
+        "Tokmakova (2017)"
+      ],
+      "meanings": {
+        "tr": "cani sikilmak",
+        "en": "to be bored",
+        "ru": "ªüº║ªâªçº░ªéªî"
+      }
+    },
+    "notes": "º┐ªüªı (ruh) + ªéºÁªàªèªâªıº¢ (sikilmak) = cani sikilmak."
+  },
+  {
+    "id": "L-NEF1EGU",
+    "form": "º¢ªıªäËÇªıº│ªâ",
+    "ipa": "/naf╩öag╩À╔Ö/",
+    "literalMeaning": "iyi kalpli",
+    "derivation": {
+      "rootIds": [
+        "R-NE",
+        "R-GU"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-NE",
+    "conceptId": "KINDHEARTED",
+    "dialectVariants": {
+      "adyghe": "º¢ªıªäËÇªıº│ªâ",
+      "kabardian": "º¢ªıªäËÇªıº│ªâ"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 2,
+      "sources": [
+        "Wiktionary (2023)",
+        "Tokmakova (2017)"
+      ],
+      "meanings": {
+        "tr": "iyi kalpli",
+        "en": "kindhearted",
+        "ru": "º┤º¥º▒ªÇº¥ªüºÁªÇº┤ºÁªçº¢ªïº╣"
+      }
+    },
+    "notes": "º¢ªı (goz) + ªäËÇªı (iyi) + º│ªâ (kalp) = iyi kalpli."
+  },
+  {
+    "id": "L-NEPC1YSHCH",
+    "form": "º¢ªıº┐ªåËÇªïªë",
+    "ipa": "/napt═ís╩╣╔Ö╔ò/",
+    "literalMeaning": "yalanci",
+    "derivation": {
+      "rootIds": [
+        "R-NE",
+        "R-P1C1"
+      ],
+      "morphemeIds": [],
+      "rule": "suffix"
+    },
+    "wordFamilyId": "WF-NE",
+    "conceptId": "LIAR",
+    "dialectVariants": {
+      "adyghe": "º¢ªıº┐ªåËÇªïªë",
+      "kabardian": "º¢ªıº┐ªåËÇªïªë"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 2,
+      "sources": [
+        "Wiktionary (2023)",
+        "Apashev (2008)"
+      ],
+      "meanings": {
+        "tr": "yalanci",
+        "en": "liar",
+        "ru": "º╗ºÂºÁªå"
+      }
+    },
+    "notes": "º¢ªıº┐ªåËÇ (yalan) + -ªïªë (meslek eki) = yalanci."
+  },
+  {
+    "id": "L-PSYBDZE",
+    "form": "º┐ªüªïº▒º┤ºÀªı",
+    "ipa": "/ps╔Öbd═íza/",
+    "literalMeaning": "su sevrugasi",
+    "derivation": {
+      "rootIds": [
+        "R-PSY",
+        "R-BDZE"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-PSY",
+    "conceptId": "STURGEON",
+    "dialectVariants": {
+      "adyghe": "º┐ªüªïº▒º┤ºÀªı",
+      "kabardian": "º┐ªüªïº▒º┤ºÀªı"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 3,
+      "sources": [
+        "Apashev (2008)",
+        "Kardanov (1957)",
+        "Kokov (2008)"
+      ],
+      "meanings": {
+        "tr": "su sevrugasi",
+        "en": "water sturgeon",
+        "ru": "º▓º¥º┤ªÅº¢º░ªÅ ªüºÁº▓ªÇªÄº│º░"
+      }
+    },
+    "notes": "º┐ªüªï (su) + º▒º┤ºÀªı (sevruga) = su sevrugasi."
+  },
+  {
+    "id": "L-KUAPETXHUYME",
+    "form": "º║ªèªâº░º┐ªıªéªàªâº©º╝ªı",
+    "ipa": "/q╩Àapatx╩À╔Öjma/",
+    "literalMeaning": "bes kose",
+    "derivation": {
+      "rootIds": [
+        "R-KUE",
+        "R-PE"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-KUE",
+    "conceptId": "PENTAGON",
+    "dialectVariants": {
+      "adyghe": "º║ªèªâº░º┐ªıªéªàªâº©º╝ªı",
+      "kabardian": "º║ªèªâº░º┐ªıªéªàªâº©º╝ªı"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 3,
+      "sources": [
+        "Yamisha (2018)",
+        "Yamisha (2023)"
+      ],
+      "meanings": {
+        "tr": "besgen",
+        "en": "pentagon",
+        "ru": "º┐ªÅªéº©ªâº│º¥º╗ªîº¢º©º║"
+      }
+    },
+    "notes": "º║ªèªâº░º┐ªı (kose) + ªéªàªâ (bes) = besgen."
+  },
+  {
+    "id": "L-KUAPEXHIME",
+    "form": "º║ªèªâº░º┐ªıªàº©º╝ªı",
+    "ipa": "/q╩Àapax╔Öjma/",
+    "literalMeaning": "alti kose",
+    "derivation": {
+      "rootIds": [
+        "R-KUE",
+        "R-PE"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-KUE",
+    "conceptId": "HEXAGON",
+    "dialectVariants": {
+      "adyghe": "º║ªèªâº░º┐ªıªàº©º╝ªı",
+      "kabardian": "º║ªèªâº░º┐ªıªàº©º╝ªı"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 3,
+      "sources": [
+        "Yamisha (2018)",
+        "Yamisha (2023)"
+      ],
+      "meanings": {
+        "tr": "altigen",
+        "en": "hexagon",
+        "ru": "ªêºÁªüªéº©ªâº│º¥º╗ªîº¢º©º║"
+      }
+    },
+    "notes": "º║ªèªâº░º┐ªı (kose) + ªàªï (alti) = altigen."
+  },
+  {
+    "id": "L-KUAPEZADE",
+    "form": "º║ªèªâº░º┐ªıºÀº░º┤ªı",
+    "ipa": "/q╩Àapaza╦Éda/",
+    "literalMeaning": "dik aci",
+    "derivation": {
+      "rootIds": [
+        "R-KUE",
+        "R-PE"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-KUE",
+    "conceptId": "RIGHT_ANGLE",
+    "dialectVariants": {
+      "adyghe": "º║ªèº¥º┐ªıºÀº░º┤",
+      "kabardian": "º║ªèªâº░º┐ªıºÀº░º┤ªı"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 1,
+      "sources": [
+        "Huvaj (2007)"
+      ],
+      "meanings": {
+        "tr": "dik aci",
+        "en": "right angle",
+        "ru": "º┐ªÇªÅº╝º¥º╣ ªâº│º¥º╗"
+      }
+    },
+    "notes": "º║ªèªâº░º┐ªı (aci) + ºÀº░º┤ªı (dik) = dik aci."
+  },
+  {
+    "id": "L-KUAPEZEV",
+    "form": "º║ªèªâº░º┐ªıºÀªıº▓",
+    "ipa": "/q╩Àapazav/",
+    "literalMeaning": "dar aci",
+    "derivation": {
+      "rootIds": [
+        "R-KUE",
+        "R-PE"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-KUE",
+    "conceptId": "ACUTE_ANGLE",
+    "dialectVariants": {
+      "adyghe": "º║ªèº¥º┐ªıºÀªıºÂªèªâ",
+      "kabardian": "º║ªèªâº░º┐ªıºÀªıº▓"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 1,
+      "sources": [
+        "Huvaj (2007)"
+      ],
+      "meanings": {
+        "tr": "dar aci",
+        "en": "acute angle",
+        "ru": "º¥ªüªéªÇªïº╣ ªâº│º¥º╗"
+      }
+    },
+    "notes": "º║ªèªâº░º┐ªı (aci) + ºÀªıº▓ (dar) = dar aci."
+  },
+  {
+    "id": "L-KUAPEPAPC1E",
+    "form": "º║ªèªâº░º┐ªıº┐º░º┐ªåËÇªı",
+    "ipa": "/q╩Àapapapt═ís╩╣a/",
+    "literalMeaning": "sivri aci",
+    "derivation": {
+      "rootIds": [
+        "R-KUE",
+        "R-PE"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-KUE",
+    "conceptId": "ACUTE_ANGLE",
+    "dialectVariants": {
+      "adyghe": "º║ªèªâº░º┐ªıº┐º░º┐ªåËÇªı",
+      "kabardian": "º║ªèªâº░º┐ªıº┐º░º┐ªåËÇªı"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 1,
+      "sources": [
+        "Abaze (2005)"
+      ],
+      "meanings": {
+        "tr": "dar aci",
+        "en": "acute angle",
+        "ru": "º¥ªüªéªÇªïº╣ ªâº│º¥º╗"
+      }
+    },
+    "notes": "º║ªèªâº░º┐ªı (aci) + º┐º░º┐ªåËÇªı (sivri) = dar aci."
+  },
+  {
+    "id": "L-KUAPEPAGUE",
+    "form": "º║ªèªâº░º┐ªıº┐º░º│ªâªı",
+    "ipa": "/q╩Àapapa╔í╩Àa/",
+    "literalMeaning": "genis aci",
+    "derivation": {
+      "rootIds": [
+        "R-KUE",
+        "R-PE"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-KUE",
+    "conceptId": "OBTUSE_ANGLE",
+    "dialectVariants": {
+      "adyghe": "º║ªèªâº░º┐ªıº┐º░º│ªâªı",
+      "kabardian": "º║ªèªâº░º┐ªıº┐º░º│ªâªı"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 1,
+      "sources": [
+        "Abaze (2005)"
+      ],
+      "meanings": {
+        "tr": "genis aci",
+        "en": "obtuse angle",
+        "ru": "ªéªâº┐º¥º╣ ªâº│º¥º╗"
+      }
+    },
+    "notes": "º║ªèªâº░º┐ªı (aci) + º┐º░º│ªâªı (genis) = genis aci."
+  },
+  {
+    "id": "L-K1UIBLY",
+    "form": "º║ªèªâº©º▒º╗ªï",
+    "ipa": "/q╩Àijbl╔Ö/",
+    "literalMeaning": "yedi ogul",
+    "derivation": {
+      "rootIds": [
+        "R-K1UE"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-K1UE",
+    "conceptId": "SEVEN_SONS",
+    "dialectVariants": {
+      "adyghe": "º║ªèªâº©º▒º╗ªï",
+      "kabardian": "º║ªèªâº©º▒º╗ªï"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 1,
+      "sources": [
+        "Korpus (adyghe.web-corpora.net)"
+      ],
+      "meanings": {
+        "tr": "yedi ogul",
+        "en": "seven sons",
+        "ru": "ªüºÁº╝ªî ªüªïº¢º¥º▓ºÁº╣"
+      }
+    },
+    "notes": "º║ªèªâº© (ogullar) + º▒º╗ªï (yedi) = yedi ogul."
+  },
+  {
+    "id": "L-PSYC1YQ1U",
+    "form": "º┐ªüªïªåËÇªïº║ËÇªâ",
+    "ipa": "/psÃØts╩╝ÃØk╩À╩╝ÃØ/",
+    "literalMeaning": "kucuk su",
+    "derivation": {
+      "rootIds": [
+        "R-PSY",
+        "R-C1YQ1U"
+      ],
+      "morphemeIds": [
+        "M-C1YQ1U"
+      ],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-C1YQ1U",
+    "conceptId": "STREAM",
+    "dialectVariants": {
+      "adyghe": "º┐ªüªïªåËÇªïº║ËÇªâ",
+      "kabardian": "º┐ªüªïªåËÇªïº║ËÇªâ"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 1,
+      "sources": [
+        "M-C1YQ1U referansi"
+      ],
+      "meanings": {
+        "tr": "dere, kucuk su",
+        "ru": "ªÇªâªçºÁº╣"
+      }
+    },
+    "notes": "º┐ªüªï (su) + ªåËÇªïº║ËÇªâ (kucuk) = kucuk su -> dere. Kirik referans duzeltmesi."
+  },
+  {
+    "id": "L-UNEC1YQ1U",
+    "form": "ªâº¢ªıªåËÇªïº║ËÇªâ",
+    "ipa": "/wÃØn╔Éts╩╝ÃØk╩À╩╝ÃØ/",
+    "literalMeaning": "kucuk ev",
+    "derivation": {
+      "rootIds": [
+        "R-UNE",
+        "R-C1YQ1U"
+      ],
+      "morphemeIds": [
+        "M-C1YQ1U"
+      ],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-C1YQ1U",
+    "conceptId": "HOUSE",
+    "dialectVariants": {
+      "adyghe": "ªâº¢ªıªåËÇªïº║ËÇªâ",
+      "kabardian": "ªâº¢ªıªåËÇªïº║ËÇªâ"
+    },
+    "notes": "ªâº¢ªı (ev) + ªåËÇªïº║ËÇªâ (kucuk) = kucuk ev."
+  },
+  {
+    "id": "L-NYBZHYC1YQ1U",
+    "form": "º¢ªïº▒ºÂªîªïªåËÇªïº║ËÇªâ",
+    "ipa": "/nÃØb╩æÃØts╩╝ÃØk╩À╩╝ÃØ/",
+    "literalMeaning": "yasi kucuk",
+    "derivation": {
+      "rootIds": [
+        "R-NYBZHY",
+        "R-C1YQ1U"
+      ],
+      "morphemeIds": [
+        "M-C1YQ1U"
+      ],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-C1YQ1U",
+    "conceptId": "YOUTH",
+    "dialectVariants": {
+      "adyghe": "º¢ªïº▒ºÂªîªïªåËÇªïº║ËÇªâ",
+      "kabardian": "º¢ªïº▒ºÂªîªïªåËÇªïº║ËÇªâ"
+    },
+    "notes": "º¢ªïº▒ºÂªîªï (yas) + ªåËÇªïº║ËÇªâ (kucuk) = yasi kucuk -> genc."
+  },
+  {
+    "id": "L-1UEKHUC1YQ1U",
+    "form": "ËÇªâªıªàªâªåËÇªïº║ËÇªâ",
+    "ipa": "/╩ö╩À╔Éx╩ÀÃØts╩╝ÃØk╩À╩╝ÃØ/",
+    "literalMeaning": "kucuk is",
+    "derivation": {
+      "rootIds": [
+        "R-1UEKHU",
+        "R-C1YQ1U"
+      ],
+      "morphemeIds": [
+        "M-C1YQ1U"
+      ],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-C1YQ1U",
+    "conceptId": "TRIVIAL",
+    "dialectVariants": {
+      "adyghe": "ËÇªâªıªàªâªåËÇªïº║ËÇªâ",
+      "kabardian": "ËÇªâªıªàªâªåËÇªïº║ËÇªâ"
+    },
+    "notes": "ËÇªâªıªàªâ (is) + ªåËÇªïº║ËÇªâ (kucuk) = kucuk is -> onemsiz is."
+  },
+  {
+    "id": "L-MAF1EC1YQ1U",
+    "form": "º╝º░ªäËÇªıªåËÇªïº║ËÇªâ",
+    "ipa": "/ma╦Éf╩öats╩╝ÃØk╩À╩╝ÃØ/",
+    "literalMeaning": "kucuk ates",
+    "derivation": {
+      "rootIds": [
+        "R-MAF1E",
+        "R-C1YQ1U"
+      ],
+      "morphemeIds": [
+        "M-C1YQ1U"
+      ],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-C1YQ1U",
+    "conceptId": "SPARK",
+    "dialectVariants": {
+      "adyghe": "º╝º░ªäËÇªıªåËÇªïº║ËÇªâ",
+      "kabardian": "º╝º░ªäËÇªıªåËÇªïº║ËÇªâ"
+    },
+    "notes": "º╝º░ªäËÇªı (ates) + ªåËÇªïº║ËÇªâ (kucuk) = kucuk ates -> kivilcim."
+  },
+  {
+    "id": "L-ANEKUESHH",
+    "form": "º░º¢ªı º║ªèªâªıªê",
+    "ipa": "/a╦Én╔É q╩À╩╝ÃØ╩â/",
+    "literalMeaning": "anne kardes",
+    "derivation": {
+      "rootIds": [
+        "R-ANE",
+        "R-K1UASH"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-ANE",
+    "conceptId": "UNCLE_MATERNAL",
+    "dialectVariants": {
+      "adyghe": "º░º¢ªıªê",
+      "kabardian": "º░º¢ªı º║ªèªâªıªê"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 2,
+      "sources": [
+        "Akademik metin (2018)"
+      ],
+      "meanings": {
+        "tr": "dayi (anne kardesi)",
+        "ru": "º┤ªÅº┤ªÅ º┐º¥ º╝º░ªéºÁªÇº©"
+      }
+    },
+    "notes": "º░º¢ªı (anne) + º║ªèªâªıªê (kardes) = dayi. Adigece: º░º¢ªıªê."
   }
 ]
