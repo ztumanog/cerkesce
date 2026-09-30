@@ -3,7 +3,7 @@
     "id": "L-GUF1E",
     "form": "гуфӀэ",
     "ipa": "/gufʔa/",
-    "literalMeaning": "kalbin iyiligi",
+    "literalMeaning": "sevgi, mutluluk",
     "derivation": {
       "rootIds": [
         "R-GU"
@@ -49,31 +49,10 @@
     "corpusFrequencyKbd": 13
   },
   {
-    "id": "L-GUGHE",
-    "form": "гугъэ",
-    "ipa": "/guɣa/",
-    "literalMeaning": "kalpte tutulan",
-    "derivation": {
-      "rootIds": [
-        "R-GU"
-      ],
-      "morphemeIds": [
-        "M-GHE"
-      ],
-      "rule": "suffix"
-    },
-    "wordFamilyId": "WF-GU",
-    "conceptId": "HOPE",
-    "corpusFrequency": 0,
-    "notes": "Umut, niyet. Korpus: 1.313 sonuc (en yuksek turev)",
-    "corpusFrequencyAdy": 0,
-    "corpusFrequencyKbd": 0
-  },
-  {
     "id": "L-GUBZHYGE",
     "form": "губзыгъэ",
     "ipa": "/gubzəɣa/",
-    "literalMeaning": "kalp + zeka",
+    "literalMeaning": "akilli",
     "derivation": {
       "rootIds": [
         "R-GU"
@@ -157,7 +136,7 @@
     "id": "L-GURYYUEN",
     "form": "гурыӏуэн",
     "ipa": "/gʷǝrǝ'ʔʷɐn/",
-    "literalMeaning": "kalbe soz ulastirmak",
+    "literalMeaning": "anlamak",
     "derivation": {
       "rootIds": [
         "R-GU"
@@ -207,7 +186,7 @@
     "id": "L-GUBZH",
     "form": "губж",
     "ipa": "/gubʑ/",
-    "literalMeaning": "kalp + (?)",
+    "literalMeaning": "ofke",
     "derivation": {
       "rootIds": [
         "R-GU"
@@ -261,7 +240,7 @@
     "id": "L-GUPSYSE",
     "form": "гупсысэ",
     "ipa": "/gupsəsa/",
-    "literalMeaning": "kalp + masal (?)",
+    "literalMeaning": "dusunce",
     "derivation": {
       "rootIds": [
         "R-GU"
@@ -343,7 +322,7 @@
     "id": "L-GUSHCHYE",
     "form": "гущыӏэ",
     "ipa": "/gʷǝɕʹɐ/",
-    "literalMeaning": "kalpten soylenen",
+    "literalMeaning": "soz, kelime",
     "derivation": {
       "rootIds": [
         "R-GU"
@@ -387,7 +366,7 @@
     "id": "L-GURYYUEZHYN",
     "form": "гурыӏуэжын",
     "ipa": "/gʷǝrǝʔʷɐ'ʒǝn/",
-    "literalMeaning": "kalbe sozu tekrar ulastirmak",
+    "literalMeaning": "anlamak (tekrar)",
     "derivation": {
       "rootIds": [
         "R-GU"
@@ -5883,5 +5862,145 @@
     "corpusFrequencyAdy": 0,
     "corpusFrequencyKbd": 12,
     "notes": "C-9.5 yeni lexeme. ADY=0, KBD=0"
+  },
+  {
+    "id": "L-GUK1EGHU",
+    "form": "гукӏэгъу",
+    "literalMeaning": "merhamet, acima",
+    "wordFamilyId": "WF-GU",
+    "dialectVariants": {
+      "adyghe": "гукӏэгъу",
+      "kabardian": "гущӏэгъу"
+    },
+    "corpusFrequency": 543,
+    "corpusFrequencyAdy": 324,
+    "corpusFrequencyKbd": 219,
+    "notes": "C-9.5. Slovar: 11 kaynak."
+  },
+  {
+    "id": "L-GUKHELHE",
+    "form": "гухэлъ",
+    "literalMeaning": "niyet, amac",
+    "wordFamilyId": "WF-GU",
+    "dialectVariants": {
+      "adyghe": "гухэлъ",
+      "kabardian": "гухэлъ"
+    },
+    "corpusFrequency": 129,
+    "corpusFrequencyAdy": 102,
+    "corpusFrequencyKbd": 27,
+    "notes": "C-9.5. Slovar: 11 kaynak."
+  },
+  {
+    "id": "L-GUPSAF",
+    "form": "гупсэф",
+    "literalMeaning": "rahat, huzurlu",
+    "wordFamilyId": "WF-GU",
+    "dialectVariants": {
+      "adyghe": "гупсэф",
+      "kabardian": "гупсэф"
+    },
+    "corpusFrequency": 70,
+    "corpusFrequencyAdy": 70,
+    "corpusFrequencyKbd": 0,
+    "notes": "C-9.5. Slovar: 5 kaynak."
+  },
+  {
+    "id": "L-GUGHU",
+    "form": "гугъу",
+    "literalMeaning": "zorluk, sikinti",
+    "wordFamilyId": "WF-GU",
+    "dialectVariants": {
+      "adyghe": "гугъу",
+      "kabardian": "гугъу"
+    },
+    "corpusFrequency": 671,
+    "corpusFrequencyAdy": 27,
+    "corpusFrequencyKbd": 644,
+    "notes": "C-9.5. Slovar: 17 kaynak."
+  },
+  {
+    "id": "L-GUGHUEGHE",
+    "form": "гугъуехь",
+    "literalMeaning": "zorluklar, cile",
+    "wordFamilyId": "WF-GU",
+    "dialectVariants": {
+      "adyghe": "гугъуехь",
+      "kabardian": "гугъуехь"
+    },
+    "corpusFrequency": 189,
+    "corpusFrequencyAdy": 1,
+    "corpusFrequencyKbd": 188,
+    "notes": "C-9.5. Slovar: 12 kaynak."
+  },
+  {
+    "id": "L-GULHYTE",
+    "form": "гулъытэ",
+    "literalMeaning": "dikkat, ilgi",
+    "wordFamilyId": "WF-GU",
+    "dialectVariants": {
+      "adyghe": "гулъытэ",
+      "kabardian": "гулъытэ"
+    },
+    "corpusFrequency": 230,
+    "corpusFrequencyAdy": 50,
+    "corpusFrequencyKbd": 180,
+    "notes": "C-9.5. Slovar: 12 kaynak."
+  },
+  {
+    "id": "L-GUKHEK1",
+    "form": "гухэкӏ",
+    "literalMeaning": "keder, uzuntu",
+    "wordFamilyId": "WF-GU",
+    "dialectVariants": {
+      "adyghe": "гухэкӏ",
+      "kabardian": "гухэкӏ"
+    },
+    "corpusFrequency": 54,
+    "corpusFrequencyAdy": 54,
+    "corpusFrequencyKbd": 0,
+    "notes": "C-9.5. Slovar: 7 kaynak."
+  },
+  {
+    "id": "L-GUGHAП1E",
+    "form": "гугъапӏэ",
+    "literalMeaning": "umut, sans",
+    "wordFamilyId": "WF-GU",
+    "dialectVariants": {
+      "adyghe": "гугъапӏэ",
+      "kabardian": "гугъапӏэ"
+    },
+    "corpusFrequency": 68,
+    "corpusFrequencyAdy": 45,
+    "corpusFrequencyKbd": 23,
+    "notes": "C-9.5. Slovar: 9 kaynak."
+  },
+  {
+    "id": "L-GUZEZHO",
+    "form": "гузэжъогъу",
+    "literalMeaning": "endise, telas",
+    "wordFamilyId": "WF-GU",
+    "dialectVariants": {
+      "adyghe": "гузэжъогъу",
+      "kabardian": "гузэвэгъуэ"
+    },
+    "corpusFrequency": 167,
+    "corpusFrequencyAdy": 47,
+    "corpusFrequencyKbd": 120,
+    "notes": "C-9.5. Slovar: 6 kaynak."
+  },
+  {
+    "id": "L-GUSH1UAGHO",
+    "form": "гущӏуагъо",
+    "literalMeaning": "sevinç, nese",
+    "wordFamilyId": "WF-GU",
+    "dialectVariants": {
+      "adyghe": "гущӏуагъо",
+      "kabardian": "гуфӏэгъуэ"
+    },
+    "corpusFrequency": 118,
+    "corpusFrequencyAdy": 0,
+    "corpusFrequencyKbd": 118,
+    "notes": "C-9.5. Slovar: 5 kaynak."
   }
 ]
