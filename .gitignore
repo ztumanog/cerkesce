@@ -157,3 +157,19 @@ data/corpus/webcorpora/cache/
 public/data/linguistic/*.bak_*
 
 public/data/linguistic/*.bak_*
+
+dtest*.txt
+
+_scripts/*.py
+
+dtest*.txt
+
+_scripts/test_*.py
+
+_scripts/koduyaz.py
+
+c91_*.txt
+
+sonuc*.txt
+
+bozuk*.txt
