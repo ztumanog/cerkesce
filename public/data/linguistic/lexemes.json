@@ -4502,10 +4502,10 @@
         "ru": "река Кубань"
       }
     },
-    "notes": "псы (su) + -жь (buyutme) = buyuk su = Kuban Nehri. | C-9.1: corpus YOK | C-9.1: corpus YOK",
-    "corpusFrequency": 0,
+    "notes": "псы (su) + -жь (buyutme) = buyuk su = Kuban Nehri. | C-9.1: corpus YOK | C-9.1: corpus YOK | C-10.1: corpus bulundu (ADY=0, KBD=22)",
+    "corpusFrequency": 22,
     "corpusFrequencyAdy": 0,
-    "corpusFrequencyKbd": 0
+    "corpusFrequencyKbd": 22
   },
   {
     "id": "L-PSYXUABE",
@@ -4537,10 +4537,10 @@
         "ru": "Пятигорск"
       }
     },
-    "notes": "псы (su) + хуабэ (sicak) = sicak su = Pyatigorsk. | C-9.1: corpus YOK | C-9.1: corpus YOK",
-    "corpusFrequency": 0,
+    "notes": "псы (su) + хуабэ (sicak) = sicak su = Pyatigorsk. | C-9.1: corpus YOK | C-9.1: corpus YOK | C-10.1: corpus bulundu (ADY=0, KBD=4)",
+    "corpusFrequency": 4,
     "corpusFrequencyAdy": 0,
-    "corpusFrequencyKbd": 0
+    "corpusFrequencyKbd": 4
   },
   {
     "id": "L-KUE",
@@ -6692,7 +6692,10 @@
         "ru": "º┤º¥º▒ªÇº¥ªéº░"
       }
     },
-    "notes": "нэ (goz) + фӀ (iyi) = goze hos gelen, iyilik. | C-9.1: corpus YOK | C-9.1: corpus YOK"
+    "notes": "нэ (goz) + фӀ (iyi) = goze hos gelen, iyilik. | C-9.1: corpus YOK | C-9.1: corpus YOK | C-10.1: corpus bulundu (ADY=0, KBD=294)",
+    "corpusFrequency": 294,
+    "corpusFrequencyAdy": 0,
+    "corpusFrequencyKbd": 294
   },
   {
     "id": "L-BZEDYDHU",
@@ -7574,7 +7577,30 @@
     "corpusFrequency": 91,
     "corpusFrequencyAdy": 0,
     "corpusFrequencyKbd": 91,
-    "notes": "Korumak. C-9.3 yeni lexeme."
+    "notes": "Korumak. C-9.3 yeni lexeme.",
+    "dictionaryEvidence": {
+      "sourceCount": 2,
+      "sources": [
+        "Abaze (2005)",
+        "Aşemez (2013)"
+      ],
+      "meanings": {
+        "tr": "esirgemek, korumak",
+        "en": "to spare, to protect"
+      }
+    },
+    "derivedForms": [
+      {
+        "form": "ухъумэн",
+        "meaning": "esirgemek",
+        "sources": 1
+      },
+      {
+        "form": "къэухъумэн",
+        "meaning": "esirgemek, savunmak",
+        "sources": 1
+      }
+    ]
   },
   {
     "id": "L-KUEUKHUMEN",
@@ -7736,5 +7762,83 @@
     "corpusFrequencyAdy": 132,
     "corpusFrequencyKbd": 0,
     "notes": "Dogruya. C-9.3 yeni lexeme."
+  },
+  {
+    "id": "L-SHYSKHYN",
+    "form": "щысхьын",
+    "ipa": "/ɕǝsħǝn/",
+    "literalMeaning": "esirgemek",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-SHYSKHYN",
+    "conceptId": "SPARE",
+    "dialectVariants": {
+      "adyghe": "щысхьын",
+      "kabardian": "щысхьын"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 2,
+      "sources": [
+        "Abaze (2005)",
+        "Huvaj (2007)"
+      ]
+    },
+    "notes": "C-10.1: esirgemek. 2 sozluk kaynagi.",
+    "corpusFrequency": 0
+  },
+  {
+    "id": "L-SHHA SY N",
+    "form": "шъхьасын",
+    "ipa": "/ʂħa sǝn/",
+    "literalMeaning": "esirgemek, acımak",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-SHHASYN",
+    "conceptId": "SPARE",
+    "dialectVariants": {
+      "adyghe": "шъхьасын",
+      "kabardian": "щхьасын"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 2,
+      "sources": [
+        "Huvaj (2007)",
+        "Hasan (1991)"
+      ]
+    },
+    "notes": "C-10.1: esirgemek. 2 sozluk kaynagi.",
+    "corpusFrequency": 0
+  },
+  {
+    "id": "L-SHHASYN",
+    "form": "шъхьасын",
+    "ipa": "/ʂħa sǝn/",
+    "literalMeaning": "esirgemek, acimak",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-SHHASYN",
+    "conceptId": "SPARE",
+    "dialectVariants": {
+      "adyghe": "шъхьасын",
+      "kabardian": "щхьасын"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 2,
+      "sources": [
+        "Huvaj (2007)",
+        "Hasan (1991)"
+      ]
+    },
+    "notes": "C-10.1: esirgemek. 2 sozluk kaynagi.",
+    "corpusFrequency": 0
   }
 ]
