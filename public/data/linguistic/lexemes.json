@@ -10130,5 +10130,313 @@
     "conceptId": "NINETY",
     "corpusFrequency": 35,
     "notes": "C-11.3: doksan."
+  },
+  {
+    "id": "L-PLHYZH",
+    "form": "плъыжь",
+    "literalMeaning": "kirmizi",
+    "conceptId": "RED",
+    "partOfSpeech": "noun",
+    "wordFamilyId": "WF-BASIC",
+    "dialectVariants": {
+      "adyghe": "плъыжь",
+      "kabardian": "плъыжь"
+    },
+    "corpusFrequency": 542,
+    "notes": "C-11.3: temel kelime. Kabardeyce."
+  },
+  {
+    "id": "L-KHUZH",
+    "form": "хужь",
+    "literalMeaning": "beyaz",
+    "conceptId": "WHITE",
+    "partOfSpeech": "noun",
+    "wordFamilyId": "WF-BASIC",
+    "dialectVariants": {
+      "adyghe": "хужь",
+      "kabardian": "хужь"
+    },
+    "corpusFrequency": 468,
+    "notes": "C-11.3: temel kelime. Kabardeyce."
+  },
+  {
+    "id": "L-F1YC1E",
+    "form": "фӀыцӀэ",
+    "literalMeaning": "siyah",
+    "conceptId": "BLACK",
+    "partOfSpeech": "noun",
+    "wordFamilyId": "WF-BASIC",
+    "dialectVariants": {
+      "adyghe": "фӀыцӀэ",
+      "kabardian": "фӀыцӀэ"
+    },
+    "corpusFrequency": 309,
+    "notes": "C-11.3: temel kelime. Kabardeyce."
+  },
+  {
+    "id": "L-SHHXHUE",
+    "form": "щхъуэ",
+    "literalMeaning": "mavi",
+    "conceptId": "BLUE",
+    "partOfSpeech": "noun",
+    "wordFamilyId": "WF-BASIC",
+    "dialectVariants": {
+      "adyghe": "щхъуэ",
+      "kabardian": "щхъуэ"
+    },
+    "corpusFrequency": 671,
+    "notes": "C-11.3: temel kelime. Kabardeyce."
+  },
+  {
+    "id": "L-UDZYFE",
+    "form": "удзыфэ",
+    "literalMeaning": "yesil",
+    "conceptId": "GREEN",
+    "partOfSpeech": "noun",
+    "wordFamilyId": "WF-BASIC",
+    "dialectVariants": {
+      "adyghe": "удзыфэ",
+      "kabardian": "удзыфэ"
+    },
+    "corpusFrequency": 39,
+    "notes": "C-11.3: temel kelime. Kabardeyce."
+  },
+  {
+    "id": "L-GHUEZHY",
+    "form": "гъуэжь",
+    "literalMeaning": "sari",
+    "conceptId": "YELLOW",
+    "partOfSpeech": "noun",
+    "wordFamilyId": "WF-BASIC",
+    "dialectVariants": {
+      "adyghe": "гъуэжь",
+      "kabardian": "гъуэжь"
+    },
+    "corpusFrequency": 148,
+    "notes": "C-11.3: temel kelime. Kabardeyce."
+  },
+  {
+    "id": "L-GHUABZHE",
+    "form": "гъуабжэ",
+    "literalMeaning": "gri",
+    "conceptId": "GRAY",
+    "partOfSpeech": "noun",
+    "wordFamilyId": "WF-BASIC",
+    "dialectVariants": {
+      "adyghe": "гъуабжэ",
+      "kabardian": "гъуабжэ"
+    },
+    "corpusFrequency": 51,
+    "notes": "C-11.3: temel kelime. Kabardeyce."
+  },
+  {
+    "id": "L-MORAFE",
+    "form": "морафэ",
+    "literalMeaning": "kahverengi",
+    "conceptId": "BROWN",
+    "partOfSpeech": "noun",
+    "wordFamilyId": "WF-BASIC",
+    "dialectVariants": {
+      "adyghe": "морафэ",
+      "kabardian": "морафэ"
+    },
+    "corpusFrequency": 10,
+    "notes": "C-11.3: temel kelime. Kabardeyce."
+  },
+  {
+    "id": "L-TKHEMAKHUE",
+    "form": "тхьэмахуэ",
+    "literalMeaning": "pazar",
+    "conceptId": "SUNDAY",
+    "partOfSpeech": "noun",
+    "wordFamilyId": "WF-BASIC",
+    "dialectVariants": {
+      "adyghe": "тхьэмахуэ",
+      "kabardian": "тхьэмахуэ"
+    },
+    "corpusFrequency": 240,
+    "notes": "C-11.3: temel kelime. Kabardeyce."
+  },
+  {
+    "id": "L-BLYSHCHE",
+    "form": "блыщхьэ",
+    "literalMeaning": "pazartesi",
+    "conceptId": "MONDAY",
+    "partOfSpeech": "noun",
+    "wordFamilyId": "WF-BASIC",
+    "dialectVariants": {
+      "adyghe": "блыщхьэ",
+      "kabardian": "блыщхьэ"
+    },
+    "corpusFrequency": 22,
+    "notes": "C-11.3: temel kelime. Kabardeyce."
+  },
+  {
+    "id": "L-GHUBZH",
+    "form": "гъубжь",
+    "literalMeaning": "sali",
+    "conceptId": "TUESDAY",
+    "partOfSpeech": "noun",
+    "wordFamilyId": "WF-BASIC",
+    "dialectVariants": {
+      "adyghe": "гъубжь",
+      "kabardian": "гъубжь"
+    },
+    "corpusFrequency": 4,
+    "notes": "C-11.3: temel kelime. Kabardeyce."
+  },
+  {
+    "id": "L-BEREZHEY2",
+    "form": "бэрэжьей",
+    "literalMeaning": "carsamba",
+    "conceptId": "WEDNESDAY",
+    "partOfSpeech": "noun",
+    "wordFamilyId": "WF-BASIC",
+    "dialectVariants": {
+      "adyghe": "бэрэжьей",
+      "kabardian": "бэрэжьей"
+    },
+    "corpusFrequency": 30,
+    "notes": "C-11.3: temel kelime. Kabardeyce."
+  },
+  {
+    "id": "L-MEKHUAUE",
+    "form": "мэкъуауэгъуэ",
+    "literalMeaning": "persembe",
+    "conceptId": "THURSDAY",
+    "partOfSpeech": "noun",
+    "wordFamilyId": "WF-BASIC",
+    "dialectVariants": {
+      "adyghe": "мэкъуауэгъуэ",
+      "kabardian": "мэкъуауэгъуэ"
+    },
+    "corpusFrequency": 17,
+    "notes": "C-11.3: temel kelime. Kabardeyce."
+  },
+  {
+    "id": "L-MEKHUGHUE",
+    "form": "мэкъуогъу",
+    "literalMeaning": "cuma",
+    "conceptId": "FRIDAY",
+    "partOfSpeech": "noun",
+    "wordFamilyId": "WF-BASIC",
+    "dialectVariants": {
+      "adyghe": "мэкъуогъу",
+      "kabardian": "мэкъуогъу"
+    },
+    "corpusFrequency": 0,
+    "notes": "C-11.3: temel kelime. Kabardeyce."
+  },
+  {
+    "id": "L-SHEBET",
+    "form": "щэбэт",
+    "literalMeaning": "cumartesi",
+    "conceptId": "SATURDAY",
+    "partOfSpeech": "noun",
+    "wordFamilyId": "WF-BASIC",
+    "dialectVariants": {
+      "adyghe": "щэбэт",
+      "kabardian": "щэбэт"
+    },
+    "corpusFrequency": 205,
+    "notes": "C-11.3: temel kelime. Kabardeyce."
+  },
+  {
+    "id": "L-MAKHUE",
+    "form": "махуэ",
+    "literalMeaning": "gun",
+    "conceptId": "DAY",
+    "partOfSpeech": "noun",
+    "wordFamilyId": "WF-BASIC",
+    "dialectVariants": {
+      "adyghe": "махуэ",
+      "kabardian": "махуэ"
+    },
+    "corpusFrequency": 3047,
+    "notes": "C-11.3: temel kelime. Kabardeyce."
+  },
+  {
+    "id": "L-MAZE",
+    "form": "мазэ",
+    "literalMeaning": "ay",
+    "conceptId": "MONTH",
+    "partOfSpeech": "noun",
+    "wordFamilyId": "WF-BASIC",
+    "dialectVariants": {
+      "adyghe": "мазэ",
+      "kabardian": "мазэ"
+    },
+    "corpusFrequency": 622,
+    "notes": "C-11.3: temel kelime. Kabardeyce."
+  },
+  {
+    "id": "L-ILHES",
+    "form": "илъэс",
+    "literalMeaning": "yil",
+    "conceptId": "YEAR",
+    "partOfSpeech": "noun",
+    "wordFamilyId": "WF-BASIC",
+    "dialectVariants": {
+      "adyghe": "илъэс",
+      "kabardian": "илъэс"
+    },
+    "corpusFrequency": 1972,
+    "notes": "C-11.3: temel kelime. Kabardeyce."
+  },
+  {
+    "id": "L-GHE",
+    "form": "гъэ",
+    "literalMeaning": "yil",
+    "conceptId": "YEAR",
+    "partOfSpeech": "noun",
+    "wordFamilyId": "WF-BASIC",
+    "dialectVariants": {
+      "adyghe": "гъэ",
+      "kabardian": "гъэ"
+    },
+    "corpusFrequency": 158744,
+    "notes": "C-11.3: temel kelime. Kabardeyce."
+  },
+  {
+    "id": "L-ZHESHCH",
+    "form": "жэщ",
+    "literalMeaning": "gece",
+    "conceptId": "NIGHT",
+    "partOfSpeech": "noun",
+    "wordFamilyId": "WF-BASIC",
+    "dialectVariants": {
+      "adyghe": "жэщ",
+      "kabardian": "жэщ"
+    },
+    "corpusFrequency": 1291,
+    "notes": "C-11.3: temel kelime. Kabardeyce."
+  },
+  {
+    "id": "L-PSHCHEDDZHYZH",
+    "form": "пщэдджыжь",
+    "literalMeaning": "sabah",
+    "conceptId": "MORNING",
+    "partOfSpeech": "noun",
+    "wordFamilyId": "WF-BASIC",
+    "dialectVariants": {
+      "adyghe": "пщэдджыжь",
+      "kabardian": "пщэдджыжь"
+    },
+    "corpusFrequency": 287,
+    "notes": "C-11.3: temel kelime. Kabardeyce."
+  },
+  {
+    "id": "L-PSHCHYKHESHCH",
+    "form": "пщыхьэщхьэ",
+    "literalMeaning": "aksam",
+    "conceptId": "EVENING",
+    "partOfSpeech": "noun",
+    "wordFamilyId": "WF-BASIC",
+    "dialectVariants": {
+      "adyghe": "пщыхьэщхьэ",
+      "kabardian": "пщыхьэщхьэ"
+    },
+    "corpusFrequency": 297,
+    "notes": "C-11.3: temel kelime. Kabardeyce."
   }
 ]
