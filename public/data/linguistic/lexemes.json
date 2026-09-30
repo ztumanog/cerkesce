@@ -9254,5 +9254,139 @@
     },
     "notes": "C-11.3: sevgi. Etimoloji: лъагъу (gormek) + -ныгъэ.",
     "corpusFrequency": 0
+  },
+  {
+    "id": "L-LEZH",
+    "form": "лэжь",
+    "literalMeaning": "calis (kok)",
+    "wordFamilyId": "WF-LEZH",
+    "conceptId": "WORK",
+    "dialectVariants": {
+      "adyghe": "лэжь",
+      "kabardian": "лэжь"
+    },
+    "notes": "C-11.3: calis kok. Korpus: 6.",
+    "corpusFrequency": 6
+  },
+  {
+    "id": "L-LEZHEN",
+    "form": "лэжьэн",
+    "literalMeaning": "calismak",
+    "wordFamilyId": "WF-LEZH",
+    "conceptId": "WORK",
+    "dialectVariants": {
+      "adyghe": "лэжьэн",
+      "kabardian": "лэжьэн"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 3,
+      "sources": [
+        "Jonty (Tr-Kbd)",
+        "Abaze (2005)",
+        "Teshu (1991)"
+      ]
+    },
+    "notes": "C-11.3: calismak. Korpus: 162.",
+    "corpusFrequency": 162
+  },
+  {
+    "id": "L-LEZHYGHE",
+    "form": "лэжьыгъэ",
+    "literalMeaning": "is, emek",
+    "wordFamilyId": "WF-LEZH",
+    "conceptId": "WORK",
+    "dialectVariants": {
+      "adyghe": "лэжьыгъэ",
+      "kabardian": "лэжьыгъэ"
+    },
+    "notes": "C-11.3: is, emek. Korpus: 372.",
+    "corpusFrequency": 372
+  },
+  {
+    "id": "L-LEZHENYM",
+    "form": "лэжьэным",
+    "literalMeaning": "calisma (isim)",
+    "wordFamilyId": "WF-LEZH",
+    "conceptId": "WORK",
+    "dialectVariants": {
+      "adyghe": "лэжьэным",
+      "kabardian": "лэжьэным"
+    },
+    "notes": "C-11.3: calisma. Ergatif. Korpus: 19.",
+    "corpusFrequency": 19
+  },
+  {
+    "id": "L-LEZHAK1UE",
+    "form": "лэжьак1уэ",
+    "literalMeaning": "isci",
+    "wordFamilyId": "WF-LEZH",
+    "conceptId": "WORKER",
+    "dialectVariants": {
+      "adyghe": "лэжьак1уэ",
+      "kabardian": "лэжьак1уэ"
+    },
+    "notes": "C-11.3: isci. лэжь + ак1уэ.",
+    "corpusFrequency": 0
+  },
+  {
+    "id": "L-LAZHE-N",
+    "form": "лажьэ",
+    "ipa": "/ˈɮɑ:ʑɐ/",
+    "partOfSpeech": "noun",
+    "literalMeaning": "kusur, keder, suc",
+    "wordFamilyId": "WF-LAZHE",
+    "conceptId": "DEFECT",
+    "senses": [
+      {
+        "senseId": 1,
+        "gloss": "defect, flaw",
+        "tr": "kusur, eksiklik"
+      },
+      {
+        "senseId": 2,
+        "gloss": "grief, misfortune",
+        "tr": "keder, bela"
+      },
+      {
+        "senseId": 3,
+        "gloss": "guilt, fault",
+        "tr": "suç, kabahat"
+      }
+    ],
+    "sources": [
+      "Apasev 2008",
+      "Kokov 2008",
+      "Amcad Camuha 1997",
+      "Tharkaho 1991"
+    ],
+    "notes": "C-11.3: kusur/keder/suc. 11 deyim. Korpus: 1212.",
+    "corpusFrequency": 1212
+  },
+  {
+    "id": "L-LAZHENSHE",
+    "form": "лажьэншэ",
+    "literalMeaning": "kusursuz, masum",
+    "wordFamilyId": "WF-LAZHE",
+    "conceptId": "INNOCENT",
+    "notes": "C-11.3: kusursuz, masum. Korpus: 15.",
+    "corpusFrequency": 15
+  },
+  {
+    "id": "L-LAZHEREY",
+    "form": "лажьэрей",
+    "literalMeaning": "caliskan",
+    "wordFamilyId": "WF-LAZHE",
+    "conceptId": "DILIGENT",
+    "notes": "C-11.3: caliskan. Korpus: 1.",
+    "corpusFrequency": 1
+  },
+  {
+    "id": "L-LAZHESHKHUE",
+    "form": "лажьэшхуэ",
+    "literalMeaning": "bela",
+    "wordFamilyId": "WF-LAZHE",
+    "conceptId": "DISASTER",
+    "notes": "C-11.3: bela. Korpus: 1.",
+    "corpusFrequency": 1
   }
 ]
