@@ -636,5 +636,49 @@
       "note": "C-9.3 corpus dogrulamasi ile eklendi."
     },
     "notes": "Burun/on ailesi (пэ). Somatik + mekan. Corpus: 7.184 kullanim."
+  },
+  {
+    "id": "WF-KHUMEN",
+    "rootId": "R-KHUMEN",
+    "morphemeIds": [],
+    "lexemeIds": [
+      "L-KHUMEN",
+      "L-KUEUKHUMEN",
+      "L-KUEKHUMEN",
+      "L-KKHEKHUME"
+    ],
+    "productivity": {
+      "totalLexemes": 4,
+      "corpusFrequency": 130,
+      "mostFrequentLexemeId": "L-KHUMEN"
+    },
+    "dialectNote": {
+      "adyghe": "хъумэн",
+      "kabardian": "хъумэн",
+      "note": "Her iki lehcede ayni"
+    },
+    "notes": "C-9.3 yeni aile. Korumak kok ailesi. Wiktionary kaniti."
+  },
+  {
+    "id": "WF-SHQE",
+    "rootId": "R-SHQE",
+    "morphemeIds": [],
+    "lexemeIds": [
+      "L-SHQE",
+      "L-SHQAGHE",
+      "L-SHQEU",
+      "L-SHQEM"
+    ],
+    "productivity": {
+      "totalLexemes": 4,
+      "corpusFrequency": 2130,
+      "mostFrequentLexemeId": "L-SHQE"
+    },
+    "dialectNote": {
+      "adyghe": "шъыпкъэ",
+      "kabardian": "щыпкъэ",
+      "note": "Ses denkligi: шъ -> щ"
+    },
+    "notes": "C-9.3 yeni aile. Dogru/gercek kok ailesi. Yuksek frekans."
   }
 ]
