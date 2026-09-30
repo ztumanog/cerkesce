@@ -100,8 +100,6 @@
 |:----|:------|:------|
 | Faz 1 | CLOSED | Core Architecture |
 | Faz 2 | CLOSED | Mimar onayli |
-| Faz 3 | CLOSED | 2026-09-30 |
-| Faz 4 | UNLOCKED | 2026-09-30 |
 | Faz 5 | COMPLETED | 2026-09-29 |
 | Faz 6 | CERTIFIED | API & Explorer |
 | Faz C-3 | COMPLETED | 2026-09-28 |
