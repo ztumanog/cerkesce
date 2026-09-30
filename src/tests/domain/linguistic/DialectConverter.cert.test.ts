@@ -70,4 +70,27 @@ describe('DialectConverter Certification (DC)', () => {
 
     expect(passed).toBe(testCases.length);
   });
+
+  it('DC-002: C-9.2 kurallar ADY-KBD', () => {
+    const cases: Array<[string,string,string]> = [
+      ['гуфIэ','гушIо','fI-shIo'],
+      ['гукIэгъу','гущIэгъу','kIe-shchIe'],
+      ['гупшысэ','гупсысэ','psh-ps'],
+      ['шъхьащэ','щхьэщэ','shh-shchh'],
+      ['нэф','нэху','f-khu'],
+      ['нэшъу','нэф','shu-f'],
+      ['шъыпкъэ','щыпкъэ','sh-shch'],
+    ];
+    let pass = 0;
+    const fails: string[] = [];
+    for (const [ady, kbd, tag] of cases) {
+      const r = converter.convertWord(ady);
+      if (r === kbd) pass++;
+      else fails.push(tag + ': ' + ady + ' -> ' + r + ' (expected ' + kbd + ')');
+    }
+    console.log('C-9.2: ' + pass + '/' + cases.length + ' passed');
+    fails.forEach(f => console.log(f));
+    expect(fails.length).toBe(0);
+  });
+
 });

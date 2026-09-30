@@ -26,6 +26,8 @@ export class DialectConverter {
     "куэцы": "гуэдз",
     "гъупчъ": "гъубжэ",
     "хьандзу": "хьэвэ",
+    "нэшъу": "нэф",
+    "нэшъу": "нэф",
   };
 
   /**
@@ -77,7 +79,15 @@ export class DialectConverter {
     c = c.replace(/о$/g, "уэ");
     c = c.replace(/о(?=[нмзстдкпбг])/g, "уэ");
 
-    // PHASE 6: LEXICAL SOUND LAWS
+    // PHASE 5.5: C-9.2 SPESIFIK KURALLAR (ADY -> KBD)
+    c = c.replace(/гуфIэ/g, 'гушIо');
+    c = c.replace(/гукIэгъу/g, 'гущIэгъу');
+    c = c.replace(/гупшысэ/g, 'гупсысэ');
+    c = c.replace(/шъхьащэ/g, 'щхьэщэ');
+    c = c.replace(/нэшъу/g, 'нэф');
+    c = c.replace(/шъыпкъэ/g, 'щыпкъэ');
+
+// PHASE 6: LEXICAL SOUND LAWS
     c = c.replace(/фы$/g, "ху");
     c = c.replace(/ф/g, "ху");
     c = c.replace(/шъ/g, "щ");
