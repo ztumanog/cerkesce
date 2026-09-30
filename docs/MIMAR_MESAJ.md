@@ -1,74 +1,34 @@
-# MIMAR'A MESAJ: Teknik Borc Kapatildi, Faz 2 CLOSED Onerisi
-
-**Tarih:** 2026-09-24
+c
 
 ---
 
-## YAPILANLAR
+## Faz C-10 Planı (2026-09-30)
 
-### 1. getDictMeta / resolveSourceMetadata Konsolidasyonu
+### Mevcut Durum
+- Lexeme: 240
+- Word Family: 38
+- Root: 60
+- Semantic Relations: 189
+- Test: 233/233 PASS
+- DialectConverter: 47/47 PASS
 
-**Durum:** KAPANDI
+### C-10 Hedefleri
+- Lexeme: 240 -> 300+
+- Word Family: 38 -> 45+
+- Root: 60 -> 75+
+- Semantic Relations: 189 -> 250+
+- DialectConverter: 47/47 -> 80/80
+- Corpus kapsami: %28.6 -> %50+
+- Metafor: 13 -> 25+
 
-- KelimeDetayDrawer.tsx'deki getDictMeta fonksiyonu tamamen kaldirildi
-- Artik tek kaynak: resolveSourceMetadata
-- 6 farkli kullanim guncellendi
+### Öncelikli İşler
+1. **C-10.1** Corpus genişletme (40 lexeme için alternatif kaynak)
+2. **C-10.2** DialectConverter 2.0 (8 yeni kural, yeni diyalektler)
+3. **C-10.3** Yeni aileler (somatik, zihinsel, doğa)
+4. **C-10.4** Metaforik zincirler (5 bulunamayan + yeni)
+5. **C-10.5** Dokümantasyon
 
-**Kanit:** npx tsc --noEmit -> PASS
-
-### 2. sourceLanguage "0.ady" Temizligi
-
-**Durum:** ZATEN YOK
-
-- dictionaries.json tarandi
-- "0.ady" gibi bozuk deger bulunamadi
-- cleanLangCode zaten ^\d+\. temizligi yapiyor
-
-### 3. MULTI Grup Stratejisi
-
-**Durum:** KABUL EDILDI (simdilik)
-
-- MULTI grubu tek kayit (18.Kbd-Ru&En.json)
-- Ileride buyurse yeniden degerlendirilecek
-
----
-
-## SONUC
-
-| Borc | Durum |
-|:-----|:------|
-| getDictMeta / resolveSourceMetadata | KAPANDI |
-| sourceLanguage "0.ady" | ZATEN YOK |
-| MULTI grup stratejisi | KABUL EDILDI |
-
-**Kritik Teknik Borc:** 0
-**Dusuk Oncelikli Teknik Borc:** 0
-
----
-
-## DOGRULAMA
-
-| Kontrol | Sonuc |
-|:--------|:------|
-| tsc --noEmit | PASS |
-| Test Files | 62/62 |
-| Tests | 193/193 |
-| Android Build | BUILD SUCCESSFUL |
-| Git | Temiz |
-| GitHub Release | v1.0.0-stable |
-
----
-
-## ONERI
-
-**Faz 2 Exit Review -> CLOSED**
-
-**Gerekce:**
-- Tum Faz 2 hedefleri karsilandi
-- Kritik teknik borc 0
-- Dusuk oncelikli teknik borc 0
-- Tum testler PASS
-- Android build SUCCESSFUL
-- GitHub Release yayinlandi
-
-**Faz 2 resmi olarak kapatilabilir.**
+### ADR Önerileri
+- ADR-0019: Corpus doğrulama stratejisi
+- ADR-0020: DialectConverter genişletme kuralları
+- ADR-0021: Metaforik zincir doğrulama protokolü
