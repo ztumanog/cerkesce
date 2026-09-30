@@ -1,3 +1,4 @@
+
 # FAZ C-10.2 KAPANIS RAPORU
 
 **Tarih:** 2026-09-30

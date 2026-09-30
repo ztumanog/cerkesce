@@ -1,3 +1,5 @@
+# 1) C-10.3 Kapanış Raporu
+@'
 # FAZ C-10.3 KAPANIS RAPORU
 
 **Tarih:** 2026-09-30
@@ -40,3 +42,14 @@ Toplam: 42 aile, 244 lexeme, 237/237 PASS
 
 ## Sonraki Adim
 C-10.4 Metaforik Zincirler
+'@ | Out-File -FilePath docs\FAZ_C10_3_RAPORU.md -Encoding UTF8
+
+code docs\FAZ_C10_3_RAPORU.md
+
+# 2) Commit
+git add docs/FAZ_C10_3_RAPORU.md
+git commit -m "docs(C-10.3): Kapanis raporu olusturuldu"
+git push origin main
+
+# 3) Doğrula
+git log --oneline -3

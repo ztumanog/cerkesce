@@ -1,3 +1,4 @@
+
 # FAZ 6 GATE QUESTIONS
 
 **Tarih:** 2026-09-29
