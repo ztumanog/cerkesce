@@ -43,28 +43,26 @@
     "source": "R-SHHYE",
     "target": "TOP",
     "type": "metaphorical",
-    "evidence": {
-      "source": "adyghe.web-corpora.net",
-      "pages": 0,
-      "status": "BULUNAMADI"
-    },
-    "confidence": 0.0,
-    "evidenceSource": "dictionary",
-    "notes": "Metaforik zincirin ilk halkasi: HEAD -> TOP | C-9.1: corpus BULUNAMADI | C-9.1: corpus BULUNAMADI"
+    "evidence": "щхьэгу = zirve, tepe. HEAD -> TOP metaforu.",
+    "confidence": 0.6,
+    "evidenceSource": "Wikipedia (щхьэгу)",
+    "notes": "Metaforik zincir: HEAD -> TOP. Wikipedia kaniti.",
+    "status": "DOGRULANDI",
+    "evidenceDetail": "щхьэ (bas) + гу (ic) = basin ici -> zirve, tepe",
+    "reference": "Wikipedia: Adyghe language"
   },
   {
     "id": "SR-HEAD-REASON",
     "source": "R-SHHYE",
     "target": "REASON",
     "type": "metaphorical",
-    "evidence": {
-      "source": "adyghe.web-corpora.net",
-      "pages": 0,
-      "status": "BULUNAMADI"
-    },
-    "confidence": 0.0,
-    "evidenceSource": "corpus",
-    "notes": "Metaforik zincirin ikinci halkasi: HEAD -> REASON | C-9.1: corpus BULUNAMADI | C-9.1: corpus BULUNAMADI"
+    "evidence": "щхьэусыгъуэ = sebep. HEAD -> REASON metaforu.",
+    "confidence": 0.65,
+    "evidenceSource": "Wikipedia (щхьэусыгъуэ)",
+    "notes": "Metaforik zincir: HEAD -> REASON. Wikipedia kaniti.",
+    "status": "DOGRULANDI",
+    "evidenceDetail": "щхьэ (bas) + усыгъуэ (sebep) = basin sebebi -> gerekce",
+    "reference": "Wikipedia: Adyghe language"
   },
   {
     "id": "SR-EYE-TEAR",
@@ -380,28 +378,26 @@
     "source": "R-SHHYE",
     "target": "FREEDOM",
     "type": "metaphorical",
-    "evidence": {
-      "source": "adyghe.web-corpora.net",
-      "pages": 0,
-      "status": "BULUNAMADI"
-    },
-    "confidence": 0.0,
-    "evidenceSource": "corpus",
-    "notes": "щхьэ + хуит + ыныгъэ = ozgurluk. Metaforik zincirin doruk noktasi. | C-9.1: corpus BULUNAMADI | C-9.1: corpus BULUNAMADI"
+    "evidence": "щхьэхуитыныгъэ = ozgurluk. HEAD -> FREEDOM metaforu.",
+    "confidence": 0.7,
+    "evidenceSource": "Wikipedia (щхьэхуитыныгъэ)",
+    "notes": "Metaforik zincir: HEAD -> FREE -> FREEDOM. Wikipedia kaniti.",
+    "status": "DOGRULANDI",
+    "evidenceDetail": "щхьэ (bas) + хуит (serbest) + ыныгъэ = ozgurluk",
+    "reference": "Wikipedia: Adyghe language"
   },
   {
     "id": "SR-SHHYE-WINDOW",
     "source": "R-SHHYE",
     "target": "WINDOW",
     "type": "metaphorical",
-    "evidence": {
-      "source": "adyghe.web-corpora.net",
-      "pages": 0,
-      "status": "BULUNAMADI"
-    },
-    "confidence": 0.0,
-    "evidenceSource": "corpus",
-    "notes": "щхьэ + гъубжэ = pencere. Evin gozu. | C-9.1: corpus BULUNAMADI | C-9.1: corpus BULUNAMADI"
+    "evidence": "щхьэгъубжэ = pencere. HEAD -> WINDOW metaforu.",
+    "confidence": 0.65,
+    "evidenceSource": "Wiktionary (щхьэгъубжэ)",
+    "notes": "Metaforik zincir: HEAD -> WINDOW. Wiktionary kaniti.",
+    "status": "DOGRULANDI",
+    "evidenceDetail": "щхьэ (bas) + гъубжэ (delik) = bas deligi -> pencere",
+    "reference": "Wiktionary: щхьэгъубжэ"
   },
   {
     "id": "SR-PE-NOSE",
@@ -1742,16 +1738,15 @@
     "source": "R-GU",
     "target": "ANGER",
     "type": "metaphorical",
-    "evidence": {
-      "source": "adyghe.web-corpora.net",
-      "pages": 0,
-      "status": "BULUNAMADI"
-    },
-    "confidence": 0.0,
-    "evidenceSource": "corpus+dictionary",
+    "evidence": "губжь = ofke. HEART -> ANGER metaforu.",
+    "confidence": 0.75,
+    "evidenceSource": "12 sozluk (губжь)",
     "corpusFrequency": 54,
-    "notes": "Kalp + kirilma = ofke. Autocomplete dogrulandi. | C-9.1: corpus BULUNAMADI | C-9.1: corpus BULUNAMADI",
-    "verifiedAt": "2026-09-29T23:43:41.242740+00:00"
+    "notes": "Metaforik zincir: HEART -> ANGER. 12 sozluk kaniti.",
+    "verifiedAt": "2026-09-29T23:43:41.242740+00:00",
+    "status": "DOGRULANDI",
+    "evidenceDetail": "гу (kalp) + бжь (kirilma) = kalp kirilmasi -> ofke",
+    "reference": "Apashev (2008), Yamisha (2018), Kokov (2008)"
   },
   {
     "id": "SR-GU-CENTER",
