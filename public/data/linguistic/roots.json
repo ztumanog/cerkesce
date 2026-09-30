@@ -2230,5 +2230,41 @@
       "kabardian": "мэз"
     },
     "notes": "C-11.3: orman koku. Korpus: 604."
+  },
+  {
+    "id": "R-LEZH",
+    "form": "лэжь",
+    "primaryMeaning": "calismak",
+    "secondaryMeanings": [
+      "emek",
+      "is"
+    ],
+    "semanticDomains": [
+      "work"
+    ],
+    "dialectVariants": {
+      "adyghe": "лэжь",
+      "kabardian": "лэжь"
+    },
+    "notes": "C-11.3: calismak koku. Korpus: 559."
+  },
+  {
+    "id": "R-LAZH",
+    "form": "лажь",
+    "primaryMeaning": "kusur, keder, suc",
+    "secondaryMeanings": [
+      "defect",
+      "misfortune",
+      "guilt"
+    ],
+    "semanticDomains": [
+      "quality",
+      "emotion"
+    ],
+    "dialectVariants": {
+      "adyghe": "лажь",
+      "kabardian": "лажь"
+    },
+    "notes": "C-11.3: kusur koku. Korpus: 1229. Homonim: R-LEZH (calismak)."
   }
 ]

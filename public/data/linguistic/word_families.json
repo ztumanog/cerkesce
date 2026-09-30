@@ -878,5 +878,66 @@
       "kabardian": "мэз"
     },
     "notes": "C-11.3 yeni aile. Orman kok ailesi. Korpus: 604."
+  },
+  {
+    "id": "WF-LEZH",
+    "rootId": "R-LEZH",
+    "category": "other",
+    "subcategory": "action",
+    "semanticDomains": [
+      "work",
+      "action"
+    ],
+    "morphemeIds": [],
+    "lexemeIds": [
+      "L-LEZH",
+      "L-LEZHEN",
+      "L-LEZHYGHE",
+      "L-LEZHENYM",
+      "L-LEZHAK1UE"
+    ],
+    "productivity": {
+      "totalLexemes": 5,
+      "corpusFrequency": 559,
+      "mostFrequentLexemeId": "L-LEZHYGHE"
+    },
+    "dialectNote": {
+      "adyghe": "лэжь",
+      "kabardian": "лэжь"
+    },
+    "notes": "C-11.3: Calismak kok ailesi. Korpus: 559. Homonim: WF-LAZHE (kusur) ile karistirilmamali.",
+    "relatedFamilies": [
+      "WF-LAZHE"
+    ]
+  },
+  {
+    "id": "WF-LAZHE",
+    "rootId": "R-LAZH",
+    "category": "abstract",
+    "subcategory": "quality",
+    "semanticDomains": [
+      "defect",
+      "misfortune",
+      "guilt"
+    ],
+    "lexemeIds": [
+      "L-LAZHE-N",
+      "L-LAZHENSHE",
+      "L-LAZHEREY",
+      "L-LAZHESHKHUE"
+    ],
+    "productivity": {
+      "totalLexemes": 4,
+      "corpusFrequency": 1229,
+      "mostFrequentLexemeId": "L-LAZHE-N"
+    },
+    "relatedFamilies": [
+      "WF-LEZH"
+    ],
+    "dialectNote": {
+      "adyghe": "лажьэ",
+      "kabardian": "лажьэ"
+    },
+    "notes": "C-11.3 yeni aile. Kusur/keder/suc. 11 deyim. Homonim: WF-LEZH (calismak) ile karistirilmamali."
   }
 ]
