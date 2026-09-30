@@ -9810,5 +9810,140 @@
     ],
     "notes": "C-11.3: ucu kopmak (gecissiz). Korpus: 8 (piudash).",
     "corpusFrequency": 8
+  },
+  {
+    "id": "L-TYRCU",
+    "form": "тырку",
+    "literalMeaning": "Turk",
+    "wordFamilyId": "WF-ETHNOS",
+    "conceptId": "TURK",
+    "corpusFrequency": 99,
+    "notes": "C-11.3: Vikisozluk 2023."
+  },
+  {
+    "id": "L-URYS",
+    "form": "урыс",
+    "literalMeaning": "Rus",
+    "wordFamilyId": "WF-ETHNOS",
+    "conceptId": "RUSSIAN",
+    "corpusFrequency": 416,
+    "notes": "C-11.3: Vikisozluk 2023."
+  },
+  {
+    "id": "L-KEZHER",
+    "form": "къэжэр",
+    "literalMeaning": "Pers",
+    "wordFamilyId": "WF-ETHNOS",
+    "conceptId": "PERSIAN",
+    "corpusFrequency": 12,
+    "notes": "C-11.3: Vikisozluk 2023."
+  },
+  {
+    "id": "L-SHESHEN",
+    "form": "шэшэн",
+    "literalMeaning": "Cecen",
+    "wordFamilyId": "WF-ETHNOS",
+    "conceptId": "CHECHEN",
+    "corpusFrequency": 58,
+    "notes": "C-11.3: Vikisozluk 2023."
+  },
+  {
+    "id": "L-ABKHAZ",
+    "form": "абхъаз",
+    "literalMeaning": "Abhaz",
+    "wordFamilyId": "WF-ETHNOS",
+    "conceptId": "ABKHAZ",
+    "corpusFrequency": 37,
+    "notes": "C-11.3: Vikisozluk 2023."
+  },
+  {
+    "id": "L-KURZHY",
+    "form": "куржы",
+    "literalMeaning": "Gurcu",
+    "wordFamilyId": "WF-ETHNOS",
+    "conceptId": "GEORGIAN",
+    "corpusFrequency": 21,
+    "notes": "C-11.3: Vikisozluk 2023."
+  },
+  {
+    "id": "L-KALMYK",
+    "form": "къалмыкъ",
+    "literalMeaning": "Kalmuk",
+    "wordFamilyId": "WF-ETHNOS",
+    "conceptId": "KALMYK",
+    "corpusFrequency": 61,
+    "notes": "C-11.3: Vikisozluk 2023."
+  },
+  {
+    "id": "L-BLANE",
+    "form": "бланэ",
+    "literalMeaning": "geyik",
+    "wordFamilyId": "WF-ANIMAL",
+    "conceptId": "DEER",
+    "corpusFrequency": 155,
+    "notes": "C-11.3: Vikisozluk 2023."
+  },
+  {
+    "id": "L-DYGHUZH",
+    "form": "дыгъужь",
+    "literalMeaning": "kurt",
+    "wordFamilyId": "WF-ANIMAL",
+    "conceptId": "WOLF",
+    "corpusFrequency": 147,
+    "notes": "C-11.3: Vikisozluk 2023."
+  },
+  {
+    "id": "L-KARGHE",
+    "form": "къаргъэ",
+    "literalMeaning": "sahin",
+    "wordFamilyId": "WF-ANIMAL",
+    "conceptId": "FALCON",
+    "corpusFrequency": 5,
+    "notes": "C-11.3: Vikisozluk 2023."
+  },
+  {
+    "id": "L-ZHYNDU",
+    "form": "жьынду",
+    "literalMeaning": "baykus",
+    "wordFamilyId": "WF-ANIMAL",
+    "conceptId": "OWL",
+    "corpusFrequency": 24,
+    "notes": "C-11.3: Vikisozluk 2023."
+  },
+  {
+    "id": "L-DZEL",
+    "form": "дзэл",
+    "literalMeaning": "sogut",
+    "wordFamilyId": "WF-PLANT",
+    "conceptId": "WILLOW",
+    "corpusFrequency": 204,
+    "notes": "C-11.3: Vikisozluk 2023."
+  },
+  {
+    "id": "L-BZHEY",
+    "form": "бжей",
+    "literalMeaning": "mese",
+    "wordFamilyId": "WF-PLANT",
+    "conceptId": "OAK",
+    "corpusFrequency": 15,
+    "notes": "C-11.3: Vikisozluk 2023."
+  },
+  {
+    "id": "L-K1EY",
+    "form": "кӏей",
+    "literalMeaning": "disbudak",
+    "wordFamilyId": "WF-PLANT",
+    "conceptId": "ASH_TREE",
+    "corpusFrequency": 135,
+    "notes": "C-11.3: Vikisozluk 2023."
+  },
+  {
+    "id": "L-BEREZHEY",
+    "form": "бэрэжьей",
+    "literalMeaning": "kizilcik",
+    "wordFamilyId": "WF-PLANT",
+    "conceptId": "DOGWOOD",
+    "corpusFrequency": 30,
+    "notes": "C-11.3: Vikisozluk 2023."
   }
 ]
