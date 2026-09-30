@@ -19,7 +19,7 @@
       "adyghe": "гушӀо",
       "kabardian": "гуфӀэ"
     },
-    "corpusFrequency": 29,
+    "corpusFrequency": 732,
     "notes": "Korpus dogrulamasi: 84 kullanim. Diyalekt: гушӀо <-> гуфӀэ",
     "corpusFrequencyAdy": 12,
     "corpusFrequencyKbd": 17
@@ -44,7 +44,7 @@
       "kabardian": "гуфӀэн"
     },
     "notes": "Eylem formu. Diyalekt: гушӀон <-> гуфӀэн",
-    "corpusFrequency": 18,
+    "corpusFrequency": 92,
     "corpusFrequencyAdy": 5,
     "corpusFrequencyKbd": 13
   },
@@ -65,7 +65,7 @@
     "wordFamilyId": "WF-GU",
     "conceptId": "INTELLIGENCE",
     "notes": "Akilli, zeki. ADR-ROOT-001'de ornek olarak gecmisti",
-    "corpusFrequency": 59,
+    "corpusFrequency": 183,
     "corpusFrequencyAdy": 4,
     "corpusFrequencyKbd": 55
   },
@@ -85,7 +85,7 @@
     "wordFamilyId": "WF-SHHYE",
     "conceptId": "TOP",
     "notes": "Zirve, tepe. Metaforik zincir: HEAD -> TOP",
-    "corpusFrequency": 4,
+    "corpusFrequency": 36,
     "corpusFrequencyAdy": 0,
     "corpusFrequencyKbd": 4
   },
@@ -104,7 +104,7 @@
     "wordFamilyId": "WF-SHHYE",
     "conceptId": "REASON",
     "notes": "Gerekce, sebep. Metaforik zincir: HEAD -> REASON",
-    "corpusFrequency": 133,
+    "corpusFrequency": 224,
     "corpusFrequencyAdy": 0,
     "corpusFrequencyKbd": 133
   },
@@ -124,7 +124,7 @@
     "wordFamilyId": "WF-NE",
     "conceptId": "FACE",
     "notes": "Metonymy: nэ (göz) + гу (bölge) = gözün bölgesi → yüz. Kardanov (1957): 'область расположения глаз'. C-8'de yanlış 'göz içi' olarak kaydedilmişti.",
-    "corpusFrequency": 287,
+    "corpusFrequency": 1022,
     "corpusFrequencyAdy": 38,
     "corpusFrequencyKbd": 249,
     "dialectVariants": {
@@ -178,7 +178,7 @@
       ]
     },
     "notes": "Iki anlamli fiil: anlamak (gecisli) + anlasmak (gecissiz). Etimoloji: gu + ry + yu + e + n.",
-    "corpusFrequency": 11,
+    "corpusFrequency": 0,
     "corpusFrequencyAdy": 0,
     "corpusFrequencyKbd": 11
   },
@@ -200,7 +200,7 @@
       "adyghe": "губж",
       "kabardian": "губжь"
     },
-    "corpusFrequency": 76,
+    "corpusFrequency": 1296,
     "dictionaryEvidence": {
       "sourceCount": 12,
       "sources": [
@@ -256,7 +256,7 @@
       "adyghe": "гупсысэ",
       "kabardian": "гупшысэ"
     },
-    "corpusFrequency": 0,
+    "corpusFrequency": 562,
     "dictionaryEvidence": {
       "sourceCount": 11,
       "sources": [
@@ -314,7 +314,7 @@
       "[И] гущӀэр кърисыкӀын → kalbi kan aglamak"
     ],
     "notes": "Gu koku + sh1e (alt, dip) = ruhun derinligi. Metaforik: kalp -> ic -> derinlik.",
-    "corpusFrequency": 12,
+    "corpusFrequency": 663,
     "corpusFrequencyAdy": 0,
     "corpusFrequencyKbd": 12
   },
@@ -358,7 +358,7 @@
       "Гущыӏэ дахэм блэр гъуанэм къырещы → Guzel soz yilani deliginden cikarir"
     ],
     "notes": "Korpus etiketlemedi ama CSV'de gecti. Etimoloji: gu + shchy'e = kalpten soylenen.",
-    "corpusFrequency": 428,
+    "corpusFrequency": 0,
     "corpusFrequencyAdy": 428,
     "corpusFrequencyKbd": 0
   },
@@ -409,7 +409,7 @@
       ]
     },
     "notes": "Gu + ry + yu + e + zh + y + n. -zh eki tekrar/donusluluk katar.",
-    "corpusFrequency": 4,
+    "corpusFrequency": 0,
     "corpusFrequencyAdy": 0,
     "corpusFrequencyKbd": 4
   },
@@ -447,7 +447,7 @@
       }
     },
     "notes": "Ayri bir kok. Adigece: кушъэ. Homonym: besik + pekistirme edati.",
-    "corpusFrequency": 45,
+    "corpusFrequency": 127,
     "corpusFrequencyAdy": 6,
     "corpusFrequencyKbd": 39
   },
@@ -469,7 +469,7 @@
       "adyghe": "Ӏэ",
       "kabardian": "Ӏэ"
     },
-    "corpusFrequency": 473,
+    "corpusFrequency": 214016,
     "notes": "Yeni kok. Korpus: 90+ cumle. El.",
     "corpusFrequencyAdy": 74,
     "corpusFrequencyKbd": 399
@@ -493,7 +493,7 @@
       "kabardian": "Ӏэпэ"
     },
     "notes": "Ӏэ + пэ (uc) = parmak.",
-    "corpusFrequency": 44,
+    "corpusFrequency": 446,
     "corpusFrequencyAdy": 4,
     "corpusFrequencyKbd": 40
   },
@@ -517,7 +517,7 @@
       "kabardian": "Ӏэгу"
     },
     "notes": "Ӏэ + гу (ic) = avuc. Polisemi: gu = kalp VE ic/merkez.",
-    "corpusFrequency": 74,
+    "corpusFrequency": 691,
     "corpusFrequencyAdy": 27,
     "corpusFrequencyKbd": 47
   },
@@ -539,7 +539,7 @@
       "adyghe": "кушъэ",
       "kabardian": "гущэ"
     },
-    "corpusFrequency": 45,
+    "corpusFrequency": 9,
     "notes": "Adigece karsiligi. Kabardeyce: гущэ. Korpus: 50+ cumle.",
     "dialectNote": "Ses denkligi: кушъэ (Adigece) <-> гущэ (Kabardeyce)",
     "corpusFrequencyAdy": 6,
@@ -580,7 +580,7 @@
       "Ӏэпкълъэпкъыр зэщӀэузэн → tüm vücutta ağrı duymak"
     ],
     "notes": "Ӏэ + пкъ + лъэ + пкъ = vücut. İçinde лъэ (ayak) kökü var.",
-    "corpusFrequency": 79,
+    "corpusFrequency": 243,
     "corpusFrequencyAdy": 0,
     "corpusFrequencyKbd": 79
   },
@@ -604,7 +604,7 @@
       "kabardian": "лъэгу"
     },
     "notes": "лъэ + гу (ic) = taban. Polisemi: gu = kalp VE ic/merkez.",
-    "corpusFrequency": 73,
+    "corpusFrequency": 495,
     "corpusFrequencyAdy": 12,
     "corpusFrequencyKbd": 61
   },
@@ -627,7 +627,7 @@
       "kabardian": "лъэбакъуэ"
     },
     "notes": "лъэ + бакъуэ = adim.",
-    "corpusFrequency": 73,
+    "corpusFrequency": 101,
     "corpusFrequencyAdy": 0,
     "corpusFrequencyKbd": 73
   },
@@ -650,7 +650,7 @@
       "kabardian": "лъакъуэ"
     },
     "notes": "лъэ + акъуэ = bacak.",
-    "corpusFrequency": 95,
+    "corpusFrequency": 499,
     "corpusFrequencyAdy": 0,
     "corpusFrequencyKbd": 95
   },
@@ -673,7 +673,7 @@
       "kabardian": "лъэпс"
     },
     "notes": "лъэ + пс = ayak bagi.",
-    "corpusFrequency": 11,
+    "corpusFrequency": 172,
     "corpusFrequencyAdy": 2,
     "corpusFrequencyKbd": 9
   },
@@ -712,7 +712,7 @@
       "example": "Си данэгъуэ щхьэц мыгъуэр лъэныкъуэм согъазэ"
     },
     "notes": "щхьэ + цы = sac. Ses dusmesi: цы -> ц.",
-    "corpusFrequency": 136,
+    "corpusFrequency": 350,
     "corpusFrequencyAdy": 1,
     "corpusFrequencyKbd": 135
   },
@@ -751,7 +751,7 @@
       }
     },
     "notes": "нэ + бжьы + цы = kirpik. Ses dusmesi: цы -> ц.",
-    "corpusFrequency": 8,
+    "corpusFrequency": 11,
     "corpusFrequencyAdy": 0,
     "corpusFrequencyKbd": 8
   },
@@ -787,7 +787,7 @@
       }
     },
     "notes": "Ӏэ (el) + ры + щӀ (yapmak) = el yapimi.",
-    "corpusFrequency": 25,
+    "corpusFrequency": 343,
     "corpusFrequencyAdy": 0,
     "corpusFrequencyKbd": 25
   },
@@ -822,7 +822,7 @@
       }
     },
     "notes": "щхьэ (baş) + гъусэ (eş/arkadaş) = hayat arkadaşı. Bileşik.",
-    "corpusFrequency": 97,
+    "corpusFrequency": 196,
     "corpusFrequencyAdy": 20,
     "corpusFrequencyKbd": 77
   },
@@ -856,7 +856,7 @@
       }
     },
     "notes": "щхьэгъусэ + ншэ = essiz.",
-    "corpusFrequency": 5,
+    "corpusFrequency": 10,
     "corpusFrequencyAdy": 0,
     "corpusFrequencyKbd": 5
   },
@@ -890,7 +890,7 @@
       }
     },
     "notes": "псэ + гъу = hayat arkadasi.",
-    "corpusFrequency": 4,
+    "corpusFrequency": 23,
     "corpusFrequencyAdy": 0,
     "corpusFrequencyKbd": 4
   },
@@ -924,7 +924,7 @@
       }
     },
     "notes": "унэ + гуащэ = ev hanimi.",
-    "corpusFrequency": 19,
+    "corpusFrequency": 27,
     "corpusFrequencyAdy": 0,
     "corpusFrequencyKbd": 19
   },
@@ -973,7 +973,7 @@
       "DOLL",
       "LADY"
     ],
-    "corpusFrequency": 119,
+    "corpusFrequency": 460,
     "corpusFrequencyAdy": 6,
     "corpusFrequencyKbd": 113
   },
@@ -1000,7 +1000,7 @@
       "example": "Щхьэхуитыныгъэр зыхуейхэм я деж."
     },
     "notes": "щхьэ + хуит (serbest) + ыныгъэ = ozgurluk. Metaforik zincirin doruk noktasi: HEAD -> FREE -> FREEDOM.",
-    "corpusFrequency": 46,
+    "corpusFrequency": 103,
     "corpusFrequencyAdy": 0,
     "corpusFrequencyKbd": 46
   },
@@ -1027,7 +1027,7 @@
       "example": "Щхьэгъубжэм дэплъын."
     },
     "notes": "щхьэ + гъубжэ = pencere. Evin gozu.",
-    "corpusFrequency": 53,
+    "corpusFrequency": 230,
     "corpusFrequencyAdy": 0,
     "corpusFrequencyKbd": 53
   },
@@ -1061,7 +1061,7 @@
       }
     },
     "notes": "Burun. Iki rol: isim + onek. 250+ turev.",
-    "corpusFrequency": 169,
+    "corpusFrequency": 20769,
     "corpusFrequencyAdy": 23,
     "corpusFrequencyKbd": 146
   },
@@ -1144,7 +1144,7 @@
       }
     },
     "notes": "Iki anlam: birinci + onceki/eski. Siralı sayi + zaman.",
-    "corpusFrequency": 92,
+    "corpusFrequency": 91,
     "corpusFrequencyAdy": 0,
     "corpusFrequencyKbd": 92
   },
@@ -1167,7 +1167,7 @@
       "kabardian": "пэрыт"
     },
     "notes": "пэ + ры + т = lider, bas.",
-    "corpusFrequency": 45,
+    "corpusFrequency": 198,
     "corpusFrequencyAdy": 16,
     "corpusFrequencyKbd": 29
   },
@@ -1235,7 +1235,7 @@
       }
     },
     "notes": "шхэ + пӀэ = yemek odasi.",
-    "corpusFrequency": 22,
+    "corpusFrequency": 42,
     "corpusFrequencyAdy": 4,
     "corpusFrequencyKbd": 18
   },
@@ -1269,7 +1269,7 @@
       }
     },
     "notes": "еджэ + пӀэ = okul.",
-    "corpusFrequency": 73,
+    "corpusFrequency": 244,
     "corpusFrequencyAdy": 5,
     "corpusFrequencyKbd": 68
   },
@@ -1303,7 +1303,7 @@
       }
     },
     "notes": "псэу + пӀэ = mesken.",
-    "corpusFrequency": 288,
+    "corpusFrequency": 464,
     "corpusFrequencyAdy": 39,
     "corpusFrequencyKbd": 249
   },
@@ -1351,7 +1351,7 @@
     },
     "notes": "псы + -нэ (kap/yuva eki). Etimoloji: su kabi -> kuyu/kaynak. 16 sozluk kaynagi.",
     "dialectNote": "Her iki lehcede ayni.",
-    "corpusFrequency": 78,
+    "corpusFrequency": 222,
     "corpusFrequencyAdy": 22,
     "corpusFrequencyKbd": 56
   },
@@ -1397,7 +1397,7 @@
       ]
     },
     "notes": "псы + хъу + -э = suyun oldugu yer -> vadi. Es anlamli: ауз.",
-    "corpusFrequency": 24,
+    "corpusFrequency": 56,
     "corpusFrequencyAdy": 0,
     "corpusFrequencyKbd": 24
   },
@@ -1441,7 +1441,7 @@
       ]
     },
     "notes": "псы + ежэх (akan) = nehir.",
-    "corpusFrequency": 27,
+    "corpusFrequency": 91,
     "corpusFrequencyAdy": 0,
     "corpusFrequencyKbd": 27
   },
@@ -1489,7 +1489,7 @@
       ]
     },
     "notes": "нэ (goz) + ху = isik. Mecazi: goz -> isik.",
-    "corpusFrequency": 405,
+    "corpusFrequency": 2075,
     "corpusFrequencyAdy": 60,
     "corpusFrequencyKbd": 345
   },
@@ -1532,7 +1532,7 @@
       ]
     },
     "notes": "нэ (goz) + пс (su) = gozyasi. Alternatif yazim: напс.",
-    "corpusFrequency": 57,
+    "corpusFrequency": 135,
     "corpusFrequencyAdy": 5,
     "corpusFrequencyKbd": 52
   },
@@ -1570,7 +1570,7 @@
       }
     },
     "notes": "İki anlam: yer/mekân + yatak. -пӀэ eki fiil köklerine eklenerek yer ismi türetir.",
-    "corpusFrequency": 250,
+    "corpusFrequency": 19257,
     "corpusFrequencyAdy": 135,
     "corpusFrequencyKbd": 115
   },
@@ -1607,7 +1607,7 @@
       }
     },
     "notes": "Temel form. Etimoloji: u(n) insan + -nэ kap/yuva. 16 türev.",
-    "corpusFrequency": 1074,
+    "corpusFrequency": 9577,
     "corpusFrequencyAdy": 425,
     "corpusFrequencyKbd": 649
   },
@@ -1770,7 +1770,7 @@
     },
     "etymology": "[гъус] + -э",
     "notes": "щхьэгъусэ (eş) bileşiğinin temeli. Huvaj 'EŞ' anlamını da veriyor.",
-    "corpusFrequency": 268,
+    "corpusFrequency": 2510,
     "corpusFrequencyAdy": 116,
     "corpusFrequencyKbd": 152
   },
@@ -1815,7 +1815,7 @@
       }
     },
     "notes": "FİİL (mastar). Etimoloji: пэ- (ön) + плъэ- (bakmak) + -н (mastar). R-PE ile SEMANTİK İLİŞKİSİ YOK — yalancı dost. Ayrı R-PLHE kökü gerektirir.",
-    "corpusFrequency": 48,
+    "corpusFrequency": 84,
     "corpusFrequencyAdy": 9,
     "corpusFrequencyKbd": 39
   },
@@ -1874,7 +1874,7 @@
       "note": "Adigece korpus örnekleri. Kabardeyce karşılaştırma için."
     },
     "notes": "Polisemik: 5 anlam. Etimoloji: [бз] + -э.",
-    "corpusFrequency": 153,
+    "corpusFrequency": 7376,
     "corpusFrequencyAdy": 42,
     "corpusFrequencyKbd": 111
   },
@@ -1920,7 +1920,7 @@
       "example": "Мэкъур фын. (Saman çürüyor.)"
     },
     "notes": "Fiil (mastar). Etimoloji: [ф] + -ы + -н. Adigece: шъун. 21 türev fiil.",
-    "corpusFrequency": 29,
+    "corpusFrequency": 2796,
     "corpusFrequencyAdy": 17,
     "corpusFrequencyKbd": 12
   },
@@ -1979,7 +1979,7 @@
     ],
     "adygheEquivalent": "шъугъэ",
     "dialectNote": "Ses denkligi: шъуа (Adigece) <-> фа (Kabardeyce)",
-    "corpusFrequency": 17,
+    "corpusFrequency": 10081,
     "corpusFrequencyAdy": 0,
     "corpusFrequencyKbd": 17
   },
@@ -2002,7 +2002,7 @@
     "form": "щӀэфыкӀын",
     "id": "L-SH1EFYQ1YN",
     "notes": "щӀэ- (alt) + фы- (çürü-) + кӀы- (çık-) + -н. Alttan çürümek.",
-    "corpusFrequency": 4,
+    "corpusFrequency": 14,
     "corpusFrequencyAdy": 0,
     "corpusFrequencyKbd": 4
   },
@@ -2078,7 +2078,7 @@
       ]
     },
     "notes": "C-11.2.1: deri. ADY: шъо, KBD: фэ.",
-    "corpusFrequency": 1753,
+    "corpusFrequency": 31955,
     "corpusFrequencyAdy": 7,
     "corpusFrequencyKbd": 1746
   },
@@ -2128,7 +2128,7 @@
       ]
     },
     "notes": "İsim: yalan, aldatma. Etimoloji: [пцӀ] + -ы. 15 sözlük + Wiktionary + Adigece korpus.",
-    "corpusFrequency": 431,
+    "corpusFrequency": 1749,
     "corpusFrequencyAdy": 178,
     "corpusFrequencyKbd": 253
   },
@@ -2178,7 +2178,7 @@
     },
     "etymology": "[псынщӀ] + -э",
     "notes": "Polisemik: hafif + hızlı + canlı + hafifmeşrep. Etimoloji: [псынщӀ] + -э. Su gibi akan.",
-    "corpusFrequency": 170,
+    "corpusFrequency": 677,
     "corpusFrequencyAdy": 0,
     "corpusFrequencyKbd": 170
   },
@@ -2232,7 +2232,7 @@
     },
     "etymology": "[щӀ] + -ы",
     "notes": "Polisemik: toprak + dünya + ülke + kış. 11 sözlük + Wiktionary.",
-    "corpusFrequency": 329,
+    "corpusFrequency": 20088,
     "corpusFrequencyAdy": 0,
     "corpusFrequencyKbd": 329
   },
@@ -2270,7 +2270,7 @@
       }
     },
     "notes": "Sıfat. Adigece: кӀэ. 5 sözlük kaynağı.",
-    "corpusFrequency": 102,
+    "corpusFrequency": 37365,
     "corpusFrequencyAdy": 37,
     "corpusFrequencyKbd": 65
   },
@@ -2324,7 +2324,7 @@
     },
     "etymology": "[дагъ] + -э",
     "notes": "Polisemik: yağ + yakıt. 19 sözlük + Wiktionary.",
-    "corpusFrequency": 173,
+    "corpusFrequency": 830,
     "corpusFrequencyAdy": 53,
     "corpusFrequencyKbd": 120
   },
@@ -2348,15 +2348,15 @@
       "kabardian": "щӀыдагъэ"
     },
     "notes": "Bileşik: щӀы (toprak) + дагъэ (yağ) = toprak yağı = petrol.",
-    "corpusFrequency": 19,
+    "corpusFrequency": 30,
     "corpusFrequencyAdy": 0,
     "corpusFrequencyKbd": 19
   },
   {
     "id": "L-SHE",
-    "form": "щэ",
-    "ipa": "/ɕɐ/",
-    "literalMeaning": "yağ",
+    "form": "шэ",
+    "ipa": "/ʂɐ/",
+    "literalMeaning": "sut, lateks",
     "derivation": {
       "rootIds": [
         "R-SHE"
@@ -2390,10 +2390,26 @@
         "tr": "1. yağ 2. üç kere 3. yüz 4. partikel"
       }
     },
-    "notes": "Yağ + sayılar + partikel. Etimoloji: [щ] + -э.",
-    "corpusFrequency": 166,
+    "notes": "C-11.3: sut/lateks. Homonim: L-SHE2 (mermi). Korpus: 16748.",
+    "corpusFrequency": 19752,
     "corpusFrequencyAdy": 7,
-    "corpusFrequencyKbd": 159
+    "corpusFrequencyKbd": 159,
+    "partOfSpeech": "noun",
+    "conceptId": "MILK",
+    "senses": [
+      {
+        "senseId": 1,
+        "gloss": "milk",
+        "tr": "süt",
+        "ru": "молоко"
+      },
+      {
+        "senseId": 2,
+        "gloss": "latex",
+        "tr": "lateks",
+        "ru": "латекс"
+      }
+    ]
   },
   {
     "id": "L-SHE2",
@@ -2449,7 +2465,7 @@
       ]
     },
     "notes": "Süt + kurşun + götür. IPA: /ʂɐ/. Tarmash DOGU filtresi doğruluyor.",
-    "corpusFrequency": 213,
+    "corpusFrequency": 16748,
     "corpusFrequencyAdy": 7,
     "corpusFrequencyKbd": 206
   },
@@ -2500,7 +2516,7 @@
     },
     "etymology": "[тхьэкӀум] + -э",
     "notes": "Kulak. 10 türev.",
-    "corpusFrequency": 69,
+    "corpusFrequency": 330,
     "corpusFrequencyAdy": 0,
     "corpusFrequencyKbd": 69
   },
@@ -2547,7 +2563,7 @@
       ]
     },
     "notes": "Uzun. 25 türev.",
-    "corpusFrequency": 211,
+    "corpusFrequency": 1281,
     "corpusFrequencyAdy": 27,
     "corpusFrequencyKbd": 184
   },
@@ -2583,7 +2599,7 @@
       }
     },
     "notes": "Bileşik: тхьэкӀумэ (kulak) + кӀыхь (uzun) = uzun kulaklı = tavşan.",
-    "corpusFrequency": 33,
+    "corpusFrequency": 81,
     "corpusFrequencyAdy": 0,
     "corpusFrequencyKbd": 33
   },
@@ -2630,7 +2646,7 @@
     },
     "etymology": "[дыгъу]",
     "notes": "Hırsız. 4 sözlük + Wiktionary. 20+ türev. дыгъужь (kurt) bileşiğinin ilk parçası.",
-    "corpusFrequency": 13,
+    "corpusFrequency": 704,
     "corpusFrequencyAdy": 0,
     "corpusFrequencyKbd": 13
   },
@@ -2692,7 +2708,7 @@
     },
     "etymology": "[жь] + -ы",
     "notes": "Eski + yaşlı + rüzgar + hava + erken. 18 sözlük + Wiktionary. 25+ türev.",
-    "corpusFrequency": 574,
+    "corpusFrequency": 21869,
     "corpusFrequencyAdy": 156,
     "corpusFrequencyKbd": 418
   },
@@ -2734,7 +2750,7 @@
       ]
     },
     "notes": "Bileşik: дыгъу (hırsız) + жьы (eski) = eski hırsız = kurt.",
-    "corpusFrequency": 44,
+    "corpusFrequency": 121,
     "corpusFrequencyAdy": 0,
     "corpusFrequencyKbd": 44
   },
@@ -2776,7 +2792,7 @@
       }
     },
     "notes": "Öküz + sürmek. 9 sözlük + Wiktionary. Polisemik.",
-    "corpusFrequency": 57,
+    "corpusFrequency": 33281,
     "corpusFrequencyAdy": 0,
     "corpusFrequencyKbd": 57
   },
@@ -2832,7 +2848,7 @@
     },
     "etymology": "[х] + -ы",
     "notes": "Deniz, okyanus. хыкъа (yunus) bileşiğinin ilk parçası.",
-    "corpusFrequency": 325,
+    "corpusFrequency": 25106,
     "corpusFrequencyAdy": 115,
     "corpusFrequencyKbd": 210
   },
@@ -2886,7 +2902,7 @@
     },
     "etymology": "[х] + -ы",
     "notes": "Altı (6). Homonym: хы (deniz) ile aynı yazılış.",
-    "corpusFrequency": 325,
+    "corpusFrequency": 25106,
     "corpusFrequencyAdy": 115,
     "corpusFrequencyKbd": 210
   },
@@ -2935,7 +2951,7 @@
     },
     "etymology": "[кхъу] + -э",
     "notes": "Domuz. Adigece: къо. Kabardeyce: кхъуэ.",
-    "corpusFrequency": 294,
+    "corpusFrequency": 941,
     "corpusFrequencyAdy": 257,
     "corpusFrequencyKbd": 37
   },
@@ -2970,7 +2986,7 @@
       }
     },
     "notes": "Bileşik: хы (deniz) + кхъуэ (domuz) = deniz domuzu = yunus.",
-    "corpusFrequency": 7,
+    "corpusFrequency": 8,
     "corpusFrequencyAdy": 0,
     "corpusFrequencyKbd": 7
   },
@@ -3022,7 +3038,7 @@
     },
     "etymology": "[фо]",
     "notes": "Bal. 12 sözlük + Wiktionary. фошыгъу (şeker) bileşiğinin ilk parçası.",
-    "corpusFrequency": 61,
+    "corpusFrequency": 2737,
     "corpusFrequencyAdy": 0,
     "corpusFrequencyKbd": 61
   },
@@ -3056,7 +3072,7 @@
       }
     },
     "notes": "Bileşik: фо (bal) + шыгъу (tuz) = bal tuzu = şeker.",
-    "corpusFrequency": 66,
+    "corpusFrequency": 109,
     "corpusFrequencyAdy": 0,
     "corpusFrequencyKbd": 66
   },
@@ -3108,7 +3124,7 @@
     },
     "etymology": "[мафӀ] + -э",
     "notes": "Ateş. Adigece: машӀу. Kabardeyce: мафӀэ. 9 sözlük + Wiktionary.",
-    "corpusFrequency": 241,
+    "corpusFrequency": 810,
     "corpusFrequencyAdy": 11,
     "corpusFrequencyKbd": 230
   },
@@ -3143,7 +3159,7 @@
       }
     },
     "notes": "Bileşik: мафӀэ (ateş) + гу (araba/merkez) = ateş arabası = tren.",
-    "corpusFrequency": 35,
+    "corpusFrequency": 159,
     "corpusFrequencyAdy": 0,
     "corpusFrequencyKbd": 35
   },
@@ -3191,7 +3207,7 @@
       }
     },
     "notes": "19 sozluk kaynagi dogruladi. Kok: пс + -ы",
-    "corpusFrequency": 1350,
+    "corpusFrequency": 10030,
     "corpusEvidence": {
       "documents": 197,
       "source": "Adyghe Web Corpus",
@@ -3238,7 +3254,7 @@
       }
     },
     "notes": "Apashev: Udz ts1yne, nartyxu xedze ts1yne vb.den cikan beyaz sivi. шэ (sut) + пс (su) = bitki ozsuyu.",
-    "corpusFrequency": 4,
+    "corpusFrequency": 9,
     "corpusFrequencyAdy": 0,
     "corpusFrequencyKbd": 4
   },
@@ -3278,7 +3294,7 @@
       }
     },
     "notes": "псы (su) + блэ (yilan) = su yilani. Zehirsiz.",
-    "corpusFrequency": 4,
+    "corpusFrequency": 3,
     "corpusFrequencyAdy": 0,
     "corpusFrequencyKbd": 4
   },
@@ -3313,7 +3329,7 @@
       }
     },
     "notes": "псы (su) + унэ (ev/oda) = su odasi = tuvalet.",
-    "corpusFrequency": 8,
+    "corpusFrequency": 12,
     "corpusFrequencyAdy": 0,
     "corpusFrequencyKbd": 8
   },
@@ -3331,7 +3347,7 @@
     },
     "wordFamilyId": "WF-PSE",
     "conceptId": "SOUL",
-    "corpusFrequency": 942,
+    "corpusFrequency": 11310,
     "dialectVariants": {
       "adyghe": "псэ",
       "kabardian": "псэ"
@@ -3408,7 +3424,7 @@
     },
     "wordFamilyId": "WF-PSE",
     "conceptId": "LIVE",
-    "corpusFrequency": 134,
+    "corpusFrequency": 679,
     "dialectVariants": {
       "adyghe": "псэун",
       "kabardian": "псэун"
@@ -3461,7 +3477,7 @@
       "kabardian": "псэущхьэ"
     },
     "notes": "псэ + ущхьэ = canli varlik.",
-    "corpusFrequency": 82,
+    "corpusFrequency": 182,
     "corpusFrequencyAdy": 0,
     "corpusFrequencyKbd": 82
   },
@@ -3484,7 +3500,7 @@
       "kabardian": "псэншэ"
     },
     "notes": "псэ + -ншэ (yokluk) = cansiz.",
-    "corpusFrequency": 12,
+    "corpusFrequency": 19,
     "corpusFrequencyAdy": 0,
     "corpusFrequencyKbd": 12
   },
@@ -3507,7 +3523,7 @@
       "kabardian": "псэлъыхъу"
     },
     "notes": "псэ + лъыхъу (aramak) = can arayan.",
-    "corpusFrequency": 6,
+    "corpusFrequency": 25,
     "corpusFrequencyAdy": 2,
     "corpusFrequencyKbd": 4
   },
@@ -3530,7 +3546,7 @@
       "kabardian": "псэху"
     },
     "notes": "псэ + ху (ak) = huzurlu.",
-    "corpusFrequency": 2,
+    "corpusFrequency": 412,
     "corpusFrequencyAdy": 0,
     "corpusFrequencyKbd": 2
   },
@@ -3638,7 +3654,7 @@
     },
     "notes": "нэ (goz) + ф (yok) = kor.",
     "dialectNote": "Her iki lehcede ayni.",
-    "corpusFrequency": 82,
+    "corpusFrequency": 154,
     "corpusFrequencyAdy": 42,
     "corpusFrequencyKbd": 40
   },
@@ -3677,7 +3693,7 @@
       }
     },
     "notes": "нэ (goz) + пцӀы (yalan) = yalan. Alternatif: напIцI.",
-    "corpusFrequency": 182,
+    "corpusFrequency": 656,
     "corpusFrequencyAdy": 59,
     "corpusFrequencyKbd": 123
   },
@@ -3715,7 +3731,7 @@
       }
     },
     "notes": "нэ (goz) + фӀ (iyi) = goze hos gelen, iyilik.",
-    "corpusFrequency": 302,
+    "corpusFrequency": 509,
     "corpusFrequencyAdy": 7,
     "corpusFrequencyKbd": 295
   },
@@ -3753,7 +3769,7 @@
       }
     },
     "notes": "нэ (goz) + бдзэ = kas.",
-    "corpusFrequency": 24,
+    "corpusFrequency": 90,
     "corpusFrequencyAdy": 0,
     "corpusFrequencyKbd": 24
   },
@@ -3789,7 +3805,7 @@
       }
     },
     "notes": "бзэ (dil) + гу (merkez) = anatomik dil.",
-    "corpusFrequency": 87,
+    "corpusFrequency": 374,
     "corpusFrequencyAdy": 46,
     "corpusFrequencyKbd": 41
   },
@@ -3813,7 +3829,7 @@
       "kabardian": "бзэпс"
     },
     "notes": "бзэ (dil) + пс (bag/su) = dil bagi.",
-    "corpusFrequency": 20,
+    "corpusFrequency": 44,
     "corpusFrequencyAdy": 14,
     "corpusFrequencyKbd": 6
   },
@@ -3848,7 +3864,7 @@
       }
     },
     "notes": "Ordu koku. Temel anlam.",
-    "corpusFrequency": 303,
+    "corpusFrequency": 5421,
     "corpusFrequencyAdy": 110,
     "corpusFrequencyKbd": 193
   },
@@ -3883,7 +3899,7 @@
       }
     },
     "notes": "уэс (kar) + пс (su) = cig.",
-    "corpusFrequency": 13,
+    "corpusFrequency": 25,
     "corpusFrequencyAdy": 0,
     "corpusFrequencyKbd": 13
   },
@@ -3918,7 +3934,7 @@
       }
     },
     "notes": "псы (su) + къуий (kuyu) = kuyu. Es anlamli: псынэ.",
-    "corpusFrequency": 18,
+    "corpusFrequency": 47,
     "corpusFrequencyAdy": 0,
     "corpusFrequencyKbd": 18
   },
@@ -3988,7 +4004,7 @@
       }
     },
     "notes": "псы (su) + джэд (tavuk) = su tavugu.",
-    "corpusFrequency": 1,
+    "corpusFrequency": 6,
     "corpusFrequencyAdy": 0,
     "corpusFrequencyKbd": 1
   },
@@ -4026,7 +4042,7 @@
       }
     },
     "notes": "Kar koku temel lexeme.",
-    "corpusFrequency": 141,
+    "corpusFrequency": 1648,
     "corpusFrequencyAdy": 0,
     "corpusFrequencyKbd": 141
   },
@@ -4064,7 +4080,7 @@
       }
     },
     "notes": "Yilan koku temel lexeme.",
-    "corpusFrequency": 99,
+    "corpusFrequency": 3742,
     "corpusFrequencyAdy": 28,
     "corpusFrequencyKbd": 71
   },
@@ -4102,7 +4118,7 @@
       }
     },
     "notes": "Kuyu koku temel lexeme.",
-    "corpusFrequency": 10,
+    "corpusFrequency": 67,
     "corpusFrequencyAdy": 0,
     "corpusFrequencyKbd": 10
   },
@@ -4140,7 +4156,7 @@
       }
     },
     "notes": "Kus koku temel lexeme.",
-    "corpusFrequency": 89,
+    "corpusFrequency": 436,
     "corpusFrequencyAdy": 1,
     "corpusFrequencyKbd": 88
   },
@@ -4178,7 +4194,7 @@
       }
     },
     "notes": "Ordek koku temel lexeme.",
-    "corpusFrequency": 42,
+    "corpusFrequency": 71,
     "corpusFrequencyAdy": 0,
     "corpusFrequencyKbd": 42
   },
@@ -4216,7 +4232,7 @@
       }
     },
     "notes": "Tavuk koku temel lexeme.",
-    "corpusFrequency": 68,
+    "corpusFrequency": 669,
     "corpusFrequencyAdy": 0,
     "corpusFrequencyKbd": 68
   },
@@ -4252,7 +4268,7 @@
       }
     },
     "notes": "псы (su) + Ӏуфэ (kenar) = nehir kiyisi.",
-    "corpusFrequency": 4,
+    "corpusFrequency": 14,
     "corpusFrequencyAdy": 0,
     "corpusFrequencyKbd": 4
   },
@@ -4287,7 +4303,7 @@
       }
     },
     "notes": "псы (su) + жапӀэ (akis yeri) = nehir yatagi.",
-    "corpusFrequency": 7,
+    "corpusFrequency": 8,
     "corpusFrequencyAdy": 0,
     "corpusFrequencyKbd": 7
   },
@@ -4323,7 +4339,7 @@
       }
     },
     "notes": "псэ (ruh) + хун (dinlendirmek) = dinlenmek.",
-    "corpusFrequency": 2,
+    "corpusFrequency": 61,
     "corpusFrequencyAdy": 0,
     "corpusFrequencyKbd": 2
   },
@@ -4359,7 +4375,7 @@
       }
     },
     "notes": "псэун (yasamak) + -ыгъэ (soyut ad) = yasam.",
-    "corpusFrequency": 18,
+    "corpusFrequency": 34,
     "corpusFrequencyAdy": 3,
     "corpusFrequencyKbd": 15
   },
@@ -4394,7 +4410,7 @@
       }
     },
     "notes": "нэ (goz) + щхъ (sel) = gozyasi seli.",
-    "corpusFrequency": 23,
+    "corpusFrequency": 407,
     "corpusFrequencyAdy": 0,
     "corpusFrequencyKbd": 23
   },
@@ -4430,7 +4446,7 @@
       }
     },
     "notes": "нэ (goz) + псей (sulu) = gozu yasli. KABARDEY'E OZEL. Adyghe karsiligi corpus'ta yok. KABARDEY'E OZEL. Adyghe karsiligi corpus'ta yok.",
-    "corpusFrequency": 24,
+    "corpusFrequency": 52,
     "corpusFrequencyAdy": 0,
     "corpusFrequencyKbd": 24
   },
@@ -4466,7 +4482,7 @@
       }
     },
     "notes": "нэгу (yuz) + -м (iyelik) = yuzum.",
-    "corpusFrequency": 118,
+    "corpusFrequency": 153,
     "corpusFrequencyAdy": 10,
     "corpusFrequencyKbd": 108
   },
@@ -4503,7 +4519,7 @@
       }
     },
     "notes": "псы (su) + -жь (buyutme) = buyuk su = Kuban Nehri. | C-9.1: corpus YOK | C-9.1: corpus YOK | C-10.1: corpus bulundu (ADY=0, KBD=22)",
-    "corpusFrequency": 22,
+    "corpusFrequency": 28,
     "corpusFrequencyAdy": 0,
     "corpusFrequencyKbd": 22
   },
@@ -4574,7 +4590,7 @@
       }
     },
     "notes": "Vadi/dere koku temel lexeme.",
-    "corpusFrequency": 510,
+    "corpusFrequency": 9949,
     "corpusFrequencyAdy": 0,
     "corpusFrequencyKbd": 510
   },
@@ -4611,7 +4627,7 @@
       }
     },
     "notes": "къуэ (vadi) + пс (su) = damar.",
-    "corpusFrequency": 33,
+    "corpusFrequency": 59,
     "corpusFrequencyAdy": 0,
     "corpusFrequencyKbd": 33
   },
@@ -4647,7 +4663,7 @@
       }
     },
     "notes": "Buyukluk koku temel lexeme.",
-    "corpusFrequency": 10,
+    "corpusFrequency": 4144,
     "corpusFrequencyAdy": 0,
     "corpusFrequencyKbd": 10
   },
@@ -4683,7 +4699,7 @@
       }
     },
     "notes": "Kucukluk koku temel lexeme.",
-    "corpusFrequency": 1080,
+    "corpusFrequency": 2872,
     "corpusFrequencyAdy": 301,
     "corpusFrequencyKbd": 779
   },
@@ -4721,7 +4737,7 @@
       }
     },
     "notes": "Sevruga koku temel lexeme. Genel balik degil!",
-    "corpusFrequency": 5,
+    "corpusFrequency": 620,
     "corpusFrequencyAdy": 0,
     "corpusFrequencyKbd": 5
   },
@@ -4756,7 +4772,7 @@
       }
     },
     "notes": "Taskin yatagi koku temel lexeme.",
-    "corpusFrequency": 7,
+    "corpusFrequency": 15,
     "corpusFrequencyAdy": 0,
     "corpusFrequencyKbd": 7
   },
@@ -4800,7 +4816,7 @@
       }
     },
     "notes": "къуэ (vadi) + пэ (uç/burun) = köşe. 11 sözlük kaynağı.",
-    "corpusFrequency": 44,
+    "corpusFrequency": 124,
     "corpusFrequencyAdy": 6,
     "corpusFrequencyKbd": 38
   },
@@ -4840,7 +4856,7 @@
       }
     },
     "notes": "Kabardeyce: кхъухь. Adigece: къухьэ. 11 sozluk. Bilesikler: тедзапӀэ (liman), увыӀэпӀэ (iskele), гущӀыӀу (güverte).",
-    "corpusFrequency": 191,
+    "corpusFrequency": 455,
     "corpusFrequencyAdy": 59,
     "corpusFrequencyKbd": 132
   },
@@ -4880,7 +4896,7 @@
       }
     },
     "notes": "кхъухь (gemi) + лъатэ (ucan) = uçak. 11 sozluk. Bilesikler: завод (fabrika), пощт (hava postasi), зезыхуэ (pilot).",
-    "corpusFrequency": 44,
+    "corpusFrequency": 119,
     "corpusFrequencyAdy": 1,
     "corpusFrequencyKbd": 43
   },
@@ -4917,7 +4933,7 @@
       }
     },
     "notes": "кхъухь (gemi) + зехуэ (suren) = kaptan. 4 sozluk.",
-    "corpusFrequency": 3,
+    "corpusFrequency": 7,
     "corpusFrequencyAdy": 0,
     "corpusFrequencyKbd": 3
   },
@@ -4956,7 +4972,7 @@
       }
     },
     "notes": "кхъухь (gemi) + бэлагъ (kol) = kurek. 8 sozluk.",
-    "corpusFrequency": 1,
+    "corpusFrequency": 2,
     "corpusFrequencyAdy": 0,
     "corpusFrequencyKbd": 1
   },
@@ -5049,7 +5065,7 @@
       "adyghe": "къо",
       "kabardian": "къуэ"
     },
-    "corpusFrequency": 767,
+    "corpusFrequency": 9949,
     "dictionaryEvidence": {
       "sourceCount": 2,
       "sources": [
@@ -5084,7 +5100,7 @@
       "adyghe": "ыкъо",
       "kabardian": "икъуэ"
     },
-    "corpusFrequency": 557,
+    "corpusFrequency": 79,
     "dictionaryEvidence": {
       "sourceCount": 2,
       "sources": [
@@ -5119,7 +5135,7 @@
       "adyghe": "скъо",
       "kabardian": "сикъуэ"
     },
-    "corpusFrequency": 41,
+    "corpusFrequency": 0,
     "dictionaryEvidence": {
       "sourceCount": 2,
       "sources": [
@@ -5154,7 +5170,7 @@
       "adyghe": "къуитӀу",
       "kabardian": "къуитӀу"
     },
-    "corpusFrequency": 10,
+    "corpusFrequency": 75,
     "dictionaryEvidence": {
       "sourceCount": 1,
       "sources": [
@@ -5205,7 +5221,7 @@
       }
     },
     "notes": "Pekistirme zarfi. Kendisinden sonra gelen kelimeyi pekistirir. Ornek: хуабжьу фӀыщ (cok iyi). 10 sozluk.",
-    "corpusFrequency": 496,
+    "corpusFrequency": 472,
     "corpusFrequencyAdy": 0,
     "corpusFrequencyKbd": 496
   },
@@ -5311,7 +5327,7 @@
       }
     },
     "notes": "псы (su) + шхуэ (buyuk) = buyuk su. Kırık referans duzeltmesi.",
-    "corpusFrequency": 5,
+    "corpusFrequency": 12,
     "corpusFrequencyAdy": 0,
     "corpusFrequencyKbd": 5
   },
@@ -5347,7 +5363,7 @@
       }
     },
     "notes": "ныбжьы (yas) + шхуэ (buyuk) = yasi buyuk -> yasli.",
-    "corpusFrequency": 14,
+    "corpusFrequency": 13,
     "corpusFrequencyAdy": 0,
     "corpusFrequencyKbd": 14
   },
@@ -5373,7 +5389,7 @@
       "kabardian": "унэшхуэ"
     },
     "notes": "унэ (ev) + шхуэ (buyuk) = buyuk ev. Aile reisi odasi.",
-    "corpusFrequency": 34,
+    "corpusFrequency": 167,
     "corpusFrequencyAdy": 0,
     "corpusFrequencyKbd": 34
   },
@@ -5399,7 +5415,7 @@
       "kabardian": "гушхуэ"
     },
     "notes": "гу (kalp) + шхуэ (buyuk) = buyuk kalpli -> cesur.",
-    "corpusFrequency": 5,
+    "corpusFrequency": 429,
     "corpusFrequencyAdy": 0,
     "corpusFrequencyKbd": 5
   },
@@ -5425,7 +5441,7 @@
       "kabardian": "Ӏуэхушхуэ"
     },
     "notes": "Ӏуэху (is) + шхуэ (buyuk) = buyuk is -> onemli is.",
-    "corpusFrequency": 28,
+    "corpusFrequency": 53,
     "corpusFrequencyAdy": 0,
     "corpusFrequencyKbd": 28
   },
@@ -5451,7 +5467,7 @@
       "kabardian": "мафӀэшхуэ"
     },
     "notes": "мафӀэ (ates) + шхуэ (buyuk) = buyuk ates -> yangin. Metin kaniti var.",
-    "corpusFrequency": 4,
+    "corpusFrequency": 8,
     "corpusFrequencyAdy": 0,
     "corpusFrequencyKbd": 4
   },
@@ -5477,7 +5493,7 @@
       "kabardian": "адэшхуэ"
     },
     "notes": "адэ (baba) + шхуэ (buyuk) = buyuk baba -> dede.",
-    "corpusFrequency": 21,
+    "corpusFrequency": 66,
     "corpusFrequencyAdy": 0,
     "corpusFrequencyKbd": 21
   },
@@ -5503,7 +5519,7 @@
       "kabardian": "анэшхуэ"
     },
     "notes": "анэ (anne) + шхуэ (buyuk) = buyuk anne -> buyukanne.",
-    "corpusFrequency": 7,
+    "corpusFrequency": 32,
     "corpusFrequencyAdy": 0,
     "corpusFrequencyKbd": 7
   },
@@ -5529,7 +5545,7 @@
       "kabardian": "махуэшхуэ"
     },
     "notes": "махуэ (gun) + шхуэ (buyuk) = buyuk gun -> bayram.",
-    "corpusFrequency": 45,
+    "corpusFrequency": 159,
     "corpusFrequencyAdy": 0,
     "corpusFrequencyKbd": 45
   },
@@ -5555,7 +5571,7 @@
       "kabardian": "гуцӀыкӀу"
     },
     "notes": "гу (kalp) + цӀыкӀу (kucuk) = kucuk kalpli -> korkak.",
-    "corpusFrequency": 3,
+    "corpusFrequency": 4,
     "corpusFrequencyAdy": 0,
     "corpusFrequencyKbd": 3
   },
@@ -5589,7 +5605,7 @@
       }
     },
     "notes": "Temel erkek kardes. Akrabalik bilesiklerinde kullanilir: адэ/анэ + къуэш.",
-    "corpusFrequency": 250,
+    "corpusFrequency": 1000,
     "corpusFrequencyAdy": 0,
     "corpusFrequencyKbd": 250
   },
@@ -5624,7 +5640,7 @@
       }
     },
     "notes": "Temel kiz kardes. Akrabalik bilesiklerinde kullanilir.",
-    "corpusFrequency": 84,
+    "corpusFrequency": 333,
     "corpusFrequencyAdy": 11,
     "corpusFrequencyKbd": 73
   },
@@ -5660,7 +5676,7 @@
       }
     },
     "notes": "адэ (baba) + къуэш (kardes) = amca. Adigece: ятэш / атэш.",
-    "corpusFrequency": 2,
+    "corpusFrequency": 11,
     "corpusFrequencyAdy": 2,
     "corpusFrequencyKbd": 0
   },
@@ -5696,7 +5712,7 @@
       }
     },
     "notes": "адэ (baba) + шыпхъу (kiz kardes) = hala. Adigece: атэшыпхъу.",
-    "corpusFrequency": 5,
+    "corpusFrequency": 6,
     "corpusFrequencyAdy": 1,
     "corpusFrequencyKbd": 4
   },
@@ -5766,7 +5782,7 @@
       }
     },
     "notes": "C-11.3: dede. Rusca: дедушка.",
-    "corpusFrequency": 10,
+    "corpusFrequency": 7,
     "corpusFrequencyAdy": 5,
     "corpusFrequencyKbd": 21
   },
@@ -5803,7 +5819,7 @@
       }
     },
     "notes": "C-11.3: dede. KBD. Rusca: дедушка.",
-    "corpusFrequency": 42,
+    "corpusFrequency": 0,
     "corpusFrequencyAdy": 0,
     "corpusFrequencyKbd": 1
   },
@@ -5816,7 +5832,7 @@
       "adyghe": "нэфынэ",
       "kabardian": "нэфынэ"
     },
-    "corpusFrequency": 54,
+    "corpusFrequency": 230,
     "corpusFrequencyAdy": 54,
     "corpusFrequencyKbd": 0,
     "notes": "C-9.5 yeni lexeme. ADY=54, KBD=0"
@@ -5830,7 +5846,7 @@
       "adyghe": "нэхущ",
       "kabardian": "нэхущ"
     },
-    "corpusFrequency": 30,
+    "corpusFrequency": 54,
     "corpusFrequencyAdy": 0,
     "corpusFrequencyKbd": 30,
     "notes": "C-9.5 yeni lexeme. ADY=0, KBD=30"
@@ -5844,7 +5860,7 @@
       "adyghe": "нэшӀущыфэныгъэ",
       "kabardian": "нэфӀщыхуэныгъэ"
     },
-    "corpusFrequency": 30,
+    "corpusFrequency": 18,
     "corpusFrequencyAdy": 7,
     "corpusFrequencyKbd": 23,
     "notes": "C-9.5 yeni lexeme. ADY=0, KBD=0"
@@ -5858,7 +5874,7 @@
       "adyghe": "нэфӀэгуфӀэ",
       "kabardian": "нэфӀэгуфӀэ"
     },
-    "corpusFrequency": 12,
+    "corpusFrequency": 18,
     "corpusFrequencyAdy": 0,
     "corpusFrequencyKbd": 12,
     "notes": "C-9.5 yeni lexeme. ADY=0, KBD=0"
@@ -5872,7 +5888,7 @@
       "adyghe": "гукӏэгъу",
       "kabardian": "гущӏэгъу"
     },
-    "corpusFrequency": 543,
+    "corpusFrequency": 0,
     "corpusFrequencyAdy": 324,
     "corpusFrequencyKbd": 219,
     "notes": "C-9.5. Slovar: 11 kaynak."
@@ -5886,7 +5902,7 @@
       "adyghe": "гухэлъ",
       "kabardian": "гухэлъ"
     },
-    "corpusFrequency": 129,
+    "corpusFrequency": 283,
     "corpusFrequencyAdy": 102,
     "corpusFrequencyKbd": 27,
     "notes": "C-9.5. Slovar: 11 kaynak."
@@ -5900,7 +5916,7 @@
       "adyghe": "гупсэф",
       "kabardian": "гупсэф"
     },
-    "corpusFrequency": 70,
+    "corpusFrequency": 219,
     "corpusFrequencyAdy": 70,
     "corpusFrequencyKbd": 0,
     "notes": "C-9.5. Slovar: 5 kaynak."
@@ -5914,7 +5930,7 @@
       "adyghe": "гугъу",
       "kabardian": "гугъу"
     },
-    "corpusFrequency": 671,
+    "corpusFrequency": 1868,
     "corpusFrequencyAdy": 27,
     "corpusFrequencyKbd": 644,
     "notes": "C-9.5. Slovar: 17 kaynak."
@@ -5928,7 +5944,7 @@
       "adyghe": "гугъуехь",
       "kabardian": "гугъуехь"
     },
-    "corpusFrequency": 189,
+    "corpusFrequency": 374,
     "corpusFrequencyAdy": 1,
     "corpusFrequencyKbd": 188,
     "notes": "C-9.5. Slovar: 12 kaynak."
@@ -5942,7 +5958,7 @@
       "adyghe": "гулъытэ",
       "kabardian": "гулъытэ"
     },
-    "corpusFrequency": 230,
+    "corpusFrequency": 372,
     "corpusFrequencyAdy": 50,
     "corpusFrequencyKbd": 180,
     "notes": "C-9.5. Slovar: 12 kaynak."
@@ -5956,7 +5972,7 @@
       "adyghe": "гухэкӏ",
       "kabardian": "гухэкӏ"
     },
-    "corpusFrequency": 54,
+    "corpusFrequency": 0,
     "corpusFrequencyAdy": 54,
     "corpusFrequencyKbd": 0,
     "notes": "C-9.5. Slovar: 7 kaynak."
@@ -5970,7 +5986,7 @@
       "adyghe": "гугъапӏэ",
       "kabardian": "гугъапӏэ"
     },
-    "corpusFrequency": 68,
+    "corpusFrequency": 0,
     "corpusFrequencyAdy": 45,
     "corpusFrequencyKbd": 23,
     "notes": "C-9.5. Slovar: 9 kaynak."
@@ -5984,7 +6000,7 @@
       "adyghe": "гузэжъогъу",
       "kabardian": "гузэвэгъуэ"
     },
-    "corpusFrequency": 167,
+    "corpusFrequency": 112,
     "corpusFrequencyAdy": 47,
     "corpusFrequencyKbd": 120,
     "notes": "C-9.5. Slovar: 6 kaynak."
@@ -5998,7 +6014,7 @@
       "adyghe": "гущӏуагъо",
       "kabardian": "гуфӏэгъуэ"
     },
-    "corpusFrequency": 118,
+    "corpusFrequency": 0,
     "corpusFrequencyAdy": 0,
     "corpusFrequencyKbd": 118,
     "notes": "C-9.5. Slovar: 5 kaynak."
@@ -6012,7 +6028,7 @@
       "adyghe": "ӏэпыӏэгъу",
       "kabardian": "дэӏэпыкъуныгъэ"
     },
-    "corpusFrequency": 355,
+    "corpusFrequency": 0,
     "corpusFrequencyAdy": 313,
     "corpusFrequencyKbd": 42,
     "notes": "C-9.5. Slovar: 3 kaynak."
@@ -6026,7 +6042,7 @@
       "adyghe": "ӏэмал",
       "kabardian": "ӏэмал"
     },
-    "corpusFrequency": 376,
+    "corpusFrequency": 0,
     "corpusFrequencyAdy": 1,
     "corpusFrequencyKbd": 375,
     "notes": "C-9.5. Slovar: 11 kaynak."
@@ -6040,7 +6056,7 @@
       "adyghe": "ӏэзэгъу",
       "kabardian": "хущхъуэ"
     },
-    "corpusFrequency": 132,
+    "corpusFrequency": 0,
     "corpusFrequencyAdy": 51,
     "corpusFrequencyKbd": 81,
     "notes": "C-9.5. Slovar: 5 kaynak."
@@ -6054,7 +6070,7 @@
       "adyghe": "ӏэфӏ",
       "kabardian": "ӏэфӏ"
     },
-    "corpusFrequency": 124,
+    "corpusFrequency": 0,
     "corpusFrequencyAdy": 0,
     "corpusFrequencyKbd": 124,
     "notes": "C-9.5. Slovar: 11 kaynak."
@@ -6068,7 +6084,7 @@
       "adyghe": "ӏэщ",
       "kabardian": "ӏэщ"
     },
-    "corpusFrequency": 115,
+    "corpusFrequency": 0,
     "corpusFrequencyAdy": 5,
     "corpusFrequencyKbd": 110,
     "notes": "C-9.5. Slovar: 17 kaynak."
@@ -6082,7 +6098,7 @@
       "adyghe": "лъэужь",
       "kabardian": "лъэужь"
     },
-    "corpusFrequency": 67,
+    "corpusFrequency": 159,
     "corpusFrequencyAdy": 0,
     "corpusFrequencyKbd": 67,
     "notes": "C-9.5. Slovar: 10 kaynak."
@@ -6096,7 +6112,7 @@
       "adyghe": "лъэгуажьэ",
       "kabardian": "лъэгуажьэ"
     },
-    "corpusFrequency": 11,
+    "corpusFrequency": 85,
     "corpusFrequencyAdy": 0,
     "corpusFrequencyKbd": 11,
     "notes": "C-9.5. Slovar: 10 kaynak."
@@ -6110,7 +6126,7 @@
       "adyghe": "лъэмыдж",
       "kabardian": "лъэмыж"
     },
-    "corpusFrequency": 74,
+    "corpusFrequency": 67,
     "corpusFrequencyAdy": 30,
     "corpusFrequencyKbd": 44,
     "notes": "C-9.5. Slovar: 8 kaynak."
@@ -6124,7 +6140,7 @@
       "adyghe": "лъэщ",
       "kabardian": "лъэщ"
     },
-    "corpusFrequency": 99,
+    "corpusFrequency": 1224,
     "corpusFrequencyAdy": 1,
     "corpusFrequencyKbd": 98,
     "notes": "C-9.5. Slovar: 10 kaynak."
@@ -6138,7 +6154,7 @@
       "adyghe": "лъэныкъо",
       "kabardian": "лъэныкъуэ"
     },
-    "corpusFrequency": 198,
+    "corpusFrequency": 405,
     "corpusFrequencyAdy": 72,
     "corpusFrequencyKbd": 126,
     "notes": "C-9.5. Slovar: 1 kaynak. Wiktionary etimoloji: лъ + ныкъу + э (ayak yarimi)."
@@ -6161,7 +6177,7 @@
       "adyghe": "шъхьащэ"
     },
     "notes": "Basin ust kismi, tepe. ADY freq=383, KBD freq=163",
-    "corpusFrequency": 383,
+    "corpusFrequency": 189,
     "corpusFrequencyKbd": 163
   },
   {
@@ -6179,7 +6195,7 @@
     "wordFamilyId": "WF-SHHYE",
     "conceptId": "EXIT",
     "notes": "Basdan ayrilmak, cikmak. KBD freq=26",
-    "corpusFrequency": 26,
+    "corpusFrequency": 38,
     "corpusFrequencyKbd": 26,
     "corpusFrequencyAdy": 0
   },
@@ -6198,7 +6214,7 @@
     "wordFamilyId": "WF-SHHYE",
     "conceptId": "EXIT",
     "notes": "Basdan inmek, ayrilmak. KBD freq=6",
-    "corpusFrequency": 6,
+    "corpusFrequency": 55,
     "corpusFrequencyKbd": 6,
     "corpusFrequencyAdy": 0
   },
@@ -6217,7 +6233,7 @@
     "wordFamilyId": "WF-SHHYE",
     "conceptId": "REASON",
     "notes": "Bahane, gerekce. ADY freq=715",
-    "corpusFrequency": 715,
+    "corpusFrequency": 38,
     "corpusFrequencyKbd": 0
   },
   {
@@ -6236,7 +6252,7 @@
     },
     "wordFamilyId": "WF-GU",
     "conceptId": "HOPE",
-    "corpusFrequency": 1313,
+    "corpusFrequency": 1084,
     "notes": "Umut, niyet. Korpus: 1.313 sonuc (en yuksek turev)"
   },
   {
@@ -6253,7 +6269,8 @@
     },
     "wordFamilyId": "WF-GU",
     "conceptId": "LOYALTY",
-    "notes": "Sadakat. Kuipers/Kolarusso ornegi | C-9.1: corpus YOK | C-9.1: corpus YOK"
+    "notes": "Sadakat. Kuipers/Kolarusso ornegi | C-9.1: corpus YOK | C-9.1: corpus YOK",
+    "corpusFrequency": 1
   },
   {
     "id": "L-NE1EY",
@@ -6282,7 +6299,7 @@
     },
     "notes": "Kabardeyce form: нэ Ӏей. Adigece: нэ Ӏае. Nazar.",
     "dialectNote": "Unlu degisimi: º░ºÁ (Adigece) <-> ºÁº╣ (Kabardeyce)",
-    "corpusFrequency": 240,
+    "corpusFrequency": 8,
     "corpusFrequencyAdy": 55,
     "corpusFrequencyKbd": 185
   },
@@ -6314,7 +6331,7 @@
     },
     "notes": "Kabardeyce form: нэ жан. Adigece: нэ чан. Keskin goz.",
     "dialectNote": "Ses denkligi: ªç (Adigece) <-> ºÂ (Kabardeyce)",
-    "corpusFrequency": 446,
+    "corpusFrequency": 7,
     "corpusFrequencyAdy": 135,
     "corpusFrequencyKbd": 311
   },
@@ -6345,7 +6362,7 @@
       ]
     },
     "notes": "Iki lehcede ayni. Dev masali (Иныжь нэ закъуэ).",
-    "corpusFrequency": 507,
+    "corpusFrequency": 21,
     "corpusFrequencyAdy": 55,
     "corpusFrequencyKbd": 452
   },
@@ -6457,7 +6474,7 @@
       ]
     },
     "notes": "нэ (goz) + ху = isik. Mecazi: goz -> isik.",
-    "corpusFrequency": 345,
+    "corpusFrequency": 1464,
     "corpusFrequencyAdy": 0,
     "corpusFrequencyKbd": 345
   },
@@ -6556,7 +6573,7 @@
       }
     },
     "notes": "псы (su) + хьэл (degirmen) = su degirmeni. Adigece: псы шъхьал.",
-    "corpusFrequency": 415,
+    "corpusFrequency": 19,
     "corpusFrequencyAdy": 415,
     "corpusFrequencyKbd": 0
   },
@@ -6655,7 +6672,7 @@
     },
     "notes": "нэ (goz) + ф (yok) = kor.",
     "dialectNote": "Her iki lehcede ayni.",
-    "corpusFrequency": 100,
+    "corpusFrequency": 2075,
     "corpusFrequencyAdy": 60,
     "corpusFrequencyKbd": 40
   },
@@ -6693,7 +6710,7 @@
       }
     },
     "notes": "нэ (goz) + фӀ (iyi) = goze hos gelen, iyilik. | C-9.1: corpus YOK | C-9.1: corpus YOK | C-10.1: corpus bulundu (ADY=0, KBD=294)",
-    "corpusFrequency": 294,
+    "corpusFrequency": 514,
     "corpusFrequencyAdy": 0,
     "corpusFrequencyKbd": 294
   },
@@ -6735,7 +6752,8 @@
       "adyghe": "бзэшхуэ",
       "kabardian": "бзэшхуэ"
     },
-    "notes": "бзэ (dil) + шхуэ (buyuk) = buyuk dil. | C-9.1: corpus YOK | C-9.1: corpus YOK"
+    "notes": "бзэ (dil) + шхуэ (buyuk) = buyuk dil. | C-9.1: corpus YOK | C-9.1: corpus YOK",
+    "corpusFrequency": 8
   },
   {
     "id": "L-BZEBZA",
@@ -6755,7 +6773,8 @@
       "adyghe": "бзэбзэ",
       "kabardian": "бзэбзэ"
     },
-    "notes": "бзэ + бзэ = kekeleme. | C-9.1: corpus YOK | C-9.1: corpus YOK"
+    "notes": "бзэ + бзэ = kekeleme. | C-9.1: corpus YOK | C-9.1: corpus YOK",
+    "corpusFrequency": 2
   },
   {
     "id": "L-PEPC1Y",
@@ -6776,7 +6795,8 @@
       "adyghe": "пэпцӀ",
       "kabardian": "пэпцӀ"
     },
-    "notes": "пэ (burun) + пцӀы (yalan) = aldatma. | C-9.1: corpus YOK | C-9.1: corpus YOK"
+    "notes": "пэ (burun) + пцӀы (yalan) = aldatma. | C-9.1: corpus YOK | C-9.1: corpus YOK",
+    "corpusFrequency": 50
   },
   {
     "id": "L-PEBZHE",
@@ -6796,7 +6816,8 @@
       "adyghe": "пэбжьэ",
       "kabardian": "пэбжьэ"
     },
-    "notes": "пэ (burun) + бжьэ = burun deligi. | C-9.1: corpus YOK | C-9.1: corpus YOK"
+    "notes": "пэ (burun) + бжьэ = burun deligi. | C-9.1: corpus YOK | C-9.1: corpus YOK",
+    "corpusFrequency": 2
   },
   {
     "id": "L-DZELHYQHU",
@@ -6836,7 +6857,8 @@
       "adyghe": "дзэгъуэ",
       "kabardian": "дзэгъуэ"
     },
-    "notes": "дзэ (ordu) + гъуэ (zaman) = savas zamani. | C-9.1: corpus YOK | C-9.1: corpus YOK"
+    "notes": "дзэ (ordu) + гъуэ (zaman) = savas zamani. | C-9.1: corpus YOK | C-9.1: corpus YOK",
+    "corpusFrequency": 5
   },
   {
     "id": "L-PSYBZU",
@@ -6868,7 +6890,8 @@
         "ru": "º¥º╗ªÅº┐º║º░"
       }
     },
-    "notes": "псы (su) + бзу (kus) = su kusu. | C-9.1: corpus YOK | C-9.1: corpus YOK"
+    "notes": "псы (su) + бзу (kus) = su kusu. | C-9.1: corpus YOK | C-9.1: corpus YOK",
+    "corpusFrequency": 1
   },
   {
     "id": "L-PSYK1ANT1E",
@@ -6902,7 +6925,7 @@
       }
     },
     "notes": "псы (su) + кӀантӀэ (kucuk) = dere.",
-    "corpusFrequency": 1350,
+    "corpusFrequency": 6,
     "corpusFrequencyAdy": 403,
     "corpusFrequencyKbd": 947
   },
@@ -6937,7 +6960,7 @@
       }
     },
     "notes": "псы (su) + нэпкъ (duvar) = dik yamac.",
-    "corpusFrequency": 1378,
+    "corpusFrequency": 3,
     "corpusFrequencyAdy": 426,
     "corpusFrequencyKbd": 952
   },
@@ -6972,7 +6995,7 @@
       }
     },
     "notes": "псы (su) + ныджэ (taskin yatagi) = nehir taskin yatagi.",
-    "corpusFrequency": 1357,
+    "corpusFrequency": 2,
     "corpusFrequencyAdy": 403,
     "corpusFrequencyKbd": 954
   },
@@ -7103,7 +7126,8 @@
         "ru": "º┤º¥º▒ªÇº¥ªüºÁªÇº┤ºÁªçº¢ªïº╣"
       }
     },
-    "notes": "нэ (goz) + фӀэ (iyi) + гу (kalp) = iyi kalpli. | C-9.1: corpus YOK | C-9.1: corpus YOK"
+    "notes": "нэ (goz) + фӀэ (iyi) + гу (kalp) = iyi kalpli. | C-9.1: corpus YOK | C-9.1: corpus YOK",
+    "corpusFrequency": 23
   },
   {
     "id": "L-NEPC1YSHCH",
@@ -7395,7 +7419,8 @@
         "ru": "ªüºÁº╝ªî ªüªïº¢º¥º▓ºÁº╣"
       }
     },
-    "notes": "къуи (ogullar) + блы (yedi) = yedi ogul. | C-9.1: corpus YOK | C-9.1: corpus YOK"
+    "notes": "къуи (ogullar) + блы (yedi) = yedi ogul. | C-9.1: corpus YOK | C-9.1: corpus YOK",
+    "corpusFrequency": 1
   },
   {
     "id": "L-PSYC1YQ1U",
@@ -7552,7 +7577,7 @@
       }
     },
     "notes": "анэ (anne) + къуэш (kardes) = dayi. Adigece: анэш.",
-    "corpusFrequency": 444,
+    "corpusFrequency": 0,
     "corpusFrequencyAdy": 0,
     "corpusFrequencyKbd": 444
   },
@@ -7574,7 +7599,7 @@
       "adyghe": "хъумэн",
       "kabardian": "хъумэн"
     },
-    "corpusFrequency": 91,
+    "corpusFrequency": 712,
     "corpusFrequencyAdy": 0,
     "corpusFrequencyKbd": 91,
     "notes": "Korumak. C-9.3 yeni lexeme.",
@@ -7620,7 +7645,7 @@
       "adyghe": "къэухъумэн",
       "kabardian": "къэухъумэн"
     },
-    "corpusFrequency": 36,
+    "corpusFrequency": 48,
     "corpusFrequencyAdy": 36,
     "corpusFrequencyKbd": 0,
     "notes": "Savunmak. C-9.3 yeni lexeme."
@@ -7689,7 +7714,7 @@
       "adyghe": "шъыпкъэ",
       "kabardian": "щыпкъэ"
     },
-    "corpusFrequency": 1392,
+    "corpusFrequency": 2225,
     "corpusFrequencyAdy": 1392,
     "corpusFrequencyKbd": 30,
     "notes": "Dogru, gercek. C-9.3 yeni lexeme. Yuksek frekans."
@@ -7712,7 +7737,7 @@
       "adyghe": "шъыпкъагъэ",
       "kabardian": "щыпкъагъэ"
     },
-    "corpusFrequency": 392,
+    "corpusFrequency": 756,
     "corpusFrequencyAdy": 392,
     "corpusFrequencyKbd": 205,
     "notes": "Dogruluk. C-9.3 yeni lexeme."
@@ -7735,7 +7760,7 @@
       "adyghe": "шъыпкъэу",
       "kabardian": "щыпкъэу"
     },
-    "corpusFrequency": 214,
+    "corpusFrequency": 311,
     "corpusFrequencyAdy": 214,
     "corpusFrequencyKbd": 30,
     "notes": "Dogru olarak. C-9.3 yeni lexeme."
@@ -7758,7 +7783,7 @@
       "adyghe": "шъыпкъэм",
       "kabardian": "щыпкъэм"
     },
-    "corpusFrequency": 132,
+    "corpusFrequency": 248,
     "corpusFrequencyAdy": 132,
     "corpusFrequencyKbd": 0,
     "notes": "Dogruya. C-9.3 yeni lexeme."
@@ -7787,7 +7812,7 @@
       ]
     },
     "notes": "C-10.1: esirgemek. 2 sozluk kaynagi.",
-    "corpusFrequency": 0
+    "corpusFrequency": 54
   },
   {
     "id": "L-SHHA SY N",
@@ -7813,7 +7838,7 @@
       ]
     },
     "notes": "C-10.1: esirgemek. 2 sozluk kaynagi.",
-    "corpusFrequency": 0
+    "corpusFrequency": 31
   },
   {
     "id": "L-SHHASYN",
@@ -7839,7 +7864,7 @@
       ]
     },
     "notes": "C-10.1: esirgemek. 2 sozluk kaynagi.",
-    "corpusFrequency": 0
+    "corpusFrequency": 31
   },
   {
     "id": "L-NEK1U",
@@ -7859,7 +7884,7 @@
       "kabardian": "нэкӀу"
     },
     "notes": "C-11.2.1: yanak. Somatik.",
-    "corpusFrequency": 0
+    "corpusFrequency": 538
   },
   {
     "id": "L-TSY",
@@ -7879,7 +7904,7 @@
       "kabardian": "цы"
     },
     "notes": "C-11.2.1: sac. Somatik.",
-    "corpusFrequency": 0
+    "corpusFrequency": 3658
   },
   {
     "id": "L-PQY",
@@ -7899,7 +7924,7 @@
       "kabardian": "пкъы"
     },
     "notes": "C-11.2.1: kemik. Somatik.",
-    "corpusFrequency": 0
+    "corpusFrequency": 2966
   },
   {
     "id": "L-LHY",
@@ -7919,7 +7944,7 @@
       "kabardian": "лъы"
     },
     "notes": "C-11.2.1: kan. Somatik.",
-    "corpusFrequency": 0
+    "corpusFrequency": 17068
   },
   {
     "id": "L-SHHO",
@@ -7939,7 +7964,7 @@
       "kabardian": "фэ"
     },
     "notes": "C-11.2.1: deri (ADY). ADY: шъо, KBD: фэ.",
-    "corpusFrequency": 0
+    "corpusFrequency": 8239
   },
   {
     "id": "L-TSYGHO",
@@ -7959,7 +7984,7 @@
       "kabardian": "цыгъуэ"
     },
     "notes": "C-11.2.1: fare. цы + гъо.",
-    "corpusFrequency": 0
+    "corpusFrequency": 27
   },
   {
     "id": "L-TSYDZHAN",
@@ -7979,7 +8004,7 @@
       "kabardian": "цыджан"
     },
     "notes": "C-11.2.1: yun elbise. цы + джан.",
-    "corpusFrequency": 0
+    "corpusFrequency": 33
   },
   {
     "id": "L-TSYY",
@@ -7999,7 +8024,7 @@
       "kabardian": "цей"
     },
     "notes": "C-11.2.1: cerkeska. Geleneksel giysi.",
-    "corpusFrequency": 0
+    "corpusFrequency": 66
   },
   {
     "id": "L-TSYZE",
@@ -8019,7 +8044,7 @@
       "kabardian": "цызэ"
     },
     "notes": "C-11.2.1: sansar. Hayvan.",
-    "corpusFrequency": 0
+    "corpusFrequency": 4
   },
   {
     "id": "L-TSYDY",
@@ -8039,7 +8064,7 @@
       "kabardian": "цыды"
     },
     "notes": "C-11.2.1: yapiskan.",
-    "corpusFrequency": 0
+    "corpusFrequency": 1
   },
   {
     "id": "L-TSYZHY",
@@ -8079,7 +8104,7 @@
       "kabardian": "цызащӀэ"
     },
     "notes": "C-11.2.1: kürk.",
-    "corpusFrequency": 0
+    "corpusFrequency": 1
   },
   {
     "id": "L-TSYLH",
@@ -8099,7 +8124,7 @@
       "kabardian": "цылъ"
     },
     "notes": "C-11.2.1: yun sepeti.",
-    "corpusFrequency": 0
+    "corpusFrequency": 5
   },
   {
     "id": "L-PQYGHUE",
@@ -8119,7 +8144,7 @@
       "kabardian": "пкъыгъуэ"
     },
     "notes": "C-11.2.1: organ. пкъы + гъу.",
-    "corpusFrequency": 0
+    "corpusFrequency": 173
   },
   {
     "id": "L-PQYSHOL",
@@ -8139,7 +8164,7 @@
       "kabardian": "пкъыщӀэлъ"
     },
     "notes": "C-11.2.1: vücut. пкъы + шъол.",
-    "corpusFrequency": 0
+    "corpusFrequency": 55
   },
   {
     "id": "L-SH1EN",
@@ -8159,7 +8184,7 @@
       "kabardian": "щӀэн"
     },
     "notes": "C-11.2.2: bilmek",
-    "corpusFrequency": 0
+    "corpusFrequency": 2309
   },
   {
     "id": "L-TKHEN",
@@ -8179,7 +8204,7 @@
       "kabardian": "тхэн"
     },
     "notes": "C-11.2.2: yazmak",
-    "corpusFrequency": 0
+    "corpusFrequency": 1017
   },
   {
     "id": "L-YEDZHEN",
@@ -8199,7 +8224,7 @@
       "kabardian": "еджэн"
     },
     "notes": "C-11.2.2: okumak",
-    "corpusFrequency": 0
+    "corpusFrequency": 667
   },
   {
     "id": "L-GUZEVAK1UE",
@@ -8219,7 +8244,7 @@
       "kabardian": "гузэвэгъуэ"
     },
     "notes": "C-11.2.2: endise",
-    "corpusFrequency": 0
+    "corpusFrequency": 2
   },
   {
     "id": "L-TSEY",
@@ -8239,7 +8264,7 @@
       "kabardian": "цей"
     },
     "notes": "C-11.2.1: cerkeska. 3 sozluk.",
-    "corpusFrequency": 0
+    "corpusFrequency": 235
   },
   {
     "id": "L-KHEZYR",
@@ -8259,7 +8284,7 @@
       "kabardian": "хьэзыр"
     },
     "notes": "C-11.2.1: barutluk",
-    "corpusFrequency": 0
+    "corpusFrequency": 816
   },
   {
     "id": "L-KHEZYRYLHE",
@@ -8279,7 +8304,7 @@
       "kabardian": "хьэзырылъэ"
     },
     "notes": "C-11.2.1: barutluk cebi",
-    "corpusFrequency": 0
+    "corpusFrequency": 4
   },
   {
     "id": "L-KHEZYRYPS",
@@ -8299,7 +8324,7 @@
       "kabardian": "хьэзырыпс"
     },
     "notes": "C-11.2.1: gumus zincir",
-    "corpusFrequency": 0
+    "corpusFrequency": 16
   },
   {
     "id": "L-KHEZYR1UPE",
@@ -8319,7 +8344,7 @@
       "kabardian": "хьэзырӀупэ"
     },
     "notes": "C-11.2.1: barutluk kapagi",
-    "corpusFrequency": 0
+    "corpusFrequency": 2
   },
   {
     "id": "L-PSEKHUGHE",
@@ -8339,7 +8364,7 @@
       "kabardian": "псэхугъуэ"
     },
     "notes": "C-11.2.1: rahatlama, huzur. 11 sozluk.",
-    "corpusFrequency": 0
+    "corpusFrequency": 131
   },
   {
     "id": "L-PSEKHUZHYN",
@@ -8359,7 +8384,7 @@
       "kabardian": "псэхужын"
     },
     "notes": "C-11.2.1: rahatlamak; olmek",
-    "corpusFrequency": 0
+    "corpusFrequency": 12
   },
   {
     "id": "L-PSEKHUN",
@@ -8379,7 +8404,7 @@
       "kabardian": "псэхун"
     },
     "notes": "C-11.2.1: dinlenmek. 3 sozluk.",
-    "corpusFrequency": 0
+    "corpusFrequency": 61
   },
   {
     "id": "L-PSEKHUNYGHE",
@@ -8399,7 +8424,7 @@
       "kabardian": "псэхуныгъэ"
     },
     "notes": "C-11.2.1: dinlenme",
-    "corpusFrequency": 0
+    "corpusFrequency": 2
   },
   {
     "id": "L-PSEKHUP1E",
@@ -8419,7 +8444,7 @@
       "kabardian": "псэхупӀэ"
     },
     "notes": "C-11.2.1: dinlenme yeri",
-    "corpusFrequency": 0
+    "corpusFrequency": 25
   },
   {
     "id": "L-PSEFET",
@@ -8459,7 +8484,7 @@
       "kabardian": "зыгъэпсэхугъуэ"
     },
     "notes": "C-11.2.1: tatil, izin",
-    "corpusFrequency": 0
+    "corpusFrequency": 62
   },
   {
     "id": "L-KUADZHE-NADZHE",
@@ -8490,7 +8515,7 @@
       "kabardian": "унэбжэ"
     },
     "notes": "C-11.2.1: ev kapisi.",
-    "corpusFrequency": 0
+    "corpusFrequency": 4
   },
   {
     "id": "L-UNEK1UESHCH",
@@ -8503,7 +8528,7 @@
       "kabardian": "унэкъуэщ"
     },
     "notes": "C-11.2.1: ayni soyadli akraba.",
-    "corpusFrequency": 0
+    "corpusFrequency": 14
   },
   {
     "id": "L-UNEK1UETS1",
@@ -8581,7 +8606,7 @@
       "kabardian": "унэзехьэ"
     },
     "notes": "C-11.2.1: temizlikci kadin.",
-    "corpusFrequency": 0
+    "corpusFrequency": 11
   },
   {
     "id": "L-UNEZETELHXHE",
@@ -8594,7 +8619,7 @@
       "kabardian": "унэзэтелъхьэ"
     },
     "notes": "C-11.2.1: duvarci.",
-    "corpusFrequency": 0
+    "corpusFrequency": 3
   },
   {
     "id": "L-UNEISHE",
@@ -8607,7 +8632,7 @@
       "kabardian": "унэишэ"
     },
     "notes": "C-11.2.1: gelin getirme ritueli.",
-    "corpusFrequency": 0
+    "corpusFrequency": 1
   },
   {
     "id": "L-UNEIDZYKHE",
@@ -8620,7 +8645,7 @@
       "kabardian": "унэидзыхьэ"
     },
     "notes": "C-11.2.1: gelin kacirma ritueli.",
-    "corpusFrequency": 0
+    "corpusFrequency": 10
   },
   {
     "id": "L-UNERYUE",
@@ -8685,7 +8710,7 @@
       "kabardian": "унэгъуэджын"
     },
     "notes": "C-11.2.1: saklamak.",
-    "corpusFrequency": 0
+    "corpusFrequency": 2
   },
   {
     "id": "L-UNEKHUN",
@@ -8698,7 +8723,7 @@
       "kabardian": "унэхъун"
     },
     "notes": "C-11.2.1: felakete ugramak.",
-    "corpusFrequency": 0
+    "corpusFrequency": 53
   },
   {
     "id": "L-UNERYXHE",
@@ -8711,7 +8736,7 @@
       "kabardian": "унэрыхьэ"
     },
     "notes": "C-11.2.1: ziyaret.",
-    "corpusFrequency": 0
+    "corpusFrequency": 2
   },
   {
     "id": "L-UNET1YN",
@@ -8750,7 +8775,7 @@
       "kabardian": "унэн"
     },
     "notes": "C-11.2.1: evlenmek.",
-    "corpusFrequency": 0
+    "corpusFrequency": 126
   },
   {
     "id": "L-UNEDZHEN",
@@ -8763,7 +8788,7 @@
       "kabardian": "унэджын"
     },
     "notes": "C-11.2.1: sakatlamak.",
-    "corpusFrequency": 0
+    "corpusFrequency": 1
   },
   {
     "id": "L-UNEGHUEDZHIN2",
@@ -8776,7 +8801,7 @@
       "kabardian": "унэгъуэджын"
     },
     "notes": "C-11.2.1: gizlemek.",
-    "corpusFrequency": 0
+    "corpusFrequency": 2
   },
   {
     "id": "L-UNEK1AF1E",
@@ -8841,7 +8866,7 @@
       "kabardian": "бысымгуащэ"
     },
     "notes": "C-11.2.1: misafirperver ev hanimi.",
-    "corpusFrequency": 0
+    "corpusFrequency": 11
   },
   {
     "id": "L-UNEBZHE1UP1E",
@@ -8880,7 +8905,7 @@
       "kabardian": "унэжь"
     },
     "notes": "C-11.2.1: eski ev.",
-    "corpusFrequency": 0
+    "corpusFrequency": 11
   },
   {
     "id": "L-UNEBLYN",
@@ -8893,7 +8918,7 @@
       "kabardian": "унэ блын"
     },
     "notes": "C-11.2.1: ev duvari.",
-    "corpusFrequency": 0
+    "corpusFrequency": 2
   },
   {
     "id": "L-UNELHABZHE",
@@ -8906,7 +8931,7 @@
       "kabardian": "унэ лъабжьэ"
     },
     "notes": "C-11.2.1: ev temeli.",
-    "corpusFrequency": 0
+    "corpusFrequency": 4
   },
   {
     "id": "L-UNELHEGU",
@@ -8919,7 +8944,7 @@
       "kabardian": "унэ лъэгу"
     },
     "notes": "C-11.2.1: ev tabani.",
-    "corpusFrequency": 0
+    "corpusFrequency": 57
   },
   {
     "id": "L-UNESHHAP1E",
@@ -8958,7 +8983,7 @@
       "kabardian": "унэку"
     },
     "notes": "C-11.2.1: ev merkezi.",
-    "corpusFrequency": 0
+    "corpusFrequency": 2
   },
   {
     "id": "L-UNESHXHE",
@@ -8984,7 +9009,7 @@
       "kabardian": "унэ джабэ"
     },
     "notes": "C-11.2.1: ev yani.",
-    "corpusFrequency": 0
+    "corpusFrequency": 1
   },
   {
     "id": "L-UNEGUPE",
@@ -8997,7 +9022,7 @@
       "kabardian": "унэ гупэ"
     },
     "notes": "C-11.2.1: ev onu.",
-    "corpusFrequency": 0
+    "corpusFrequency": 7
   },
   {
     "id": "L-UNESHHYB",
@@ -9023,7 +9048,7 @@
       "kabardian": "анэш"
     },
     "notes": "C-11.3: dayi. Abaze, Teshu.",
-    "corpusFrequency": 0
+    "corpusFrequency": 160
   },
   {
     "id": "L-TYSHYPHUE",
@@ -9062,7 +9087,7 @@
       "kabardian": "адэ къуэш"
     },
     "notes": "C-11.3: amca. Abaze.",
-    "corpusFrequency": 0
+    "corpusFrequency": 45
   },
   {
     "id": "L-SHYPHUE-NAKHYZH",
@@ -9075,7 +9100,7 @@
       "kabardian": "шыпхъу нэхъыжь"
     },
     "notes": "C-11.3: abla. Huvaj, Teshu.",
-    "corpusFrequency": 0
+    "corpusFrequency": 1
   },
   {
     "id": "L-MEZ",
@@ -9088,7 +9113,7 @@
       "kabardian": "мэз"
     },
     "notes": "C-11.3: orman. Korpus: 292.",
-    "corpusFrequency": 292
+    "corpusFrequency": 1273
   },
   {
     "id": "L-MEZYM",
@@ -9101,7 +9126,7 @@
       "kabardian": "мэзым"
     },
     "notes": "C-11.3: ormana. Ergatief. Korpus: 289.",
-    "corpusFrequency": 289
+    "corpusFrequency": 308
   },
   {
     "id": "L-MEZXER",
@@ -9114,7 +9139,7 @@
       "kabardian": "мэзхэр"
     },
     "notes": "C-11.3: ormanlar. Plural. Korpus: 15.",
-    "corpusFrequency": 15
+    "corpusFrequency": 19
   },
   {
     "id": "L-MEZY",
@@ -9127,7 +9152,7 @@
       "kabardian": "мэзы"
     },
     "notes": "C-11.3: ormani. Korpus: 8.",
-    "corpusFrequency": 8
+    "corpusFrequency": 510
   },
   {
     "id": "L-MEZKOGHUM",
@@ -9173,7 +9198,7 @@
       ]
     },
     "notes": "C-11.3: gormek. ADY: лъэгъун, KBD: лъагъун.",
-    "corpusFrequency": 0
+    "corpusFrequency": 572
   },
   {
     "id": "L-LHAGHUN",
@@ -9196,7 +9221,7 @@
       ]
     },
     "notes": "C-11.3: gormek; sevmek. KBD.",
-    "corpusFrequency": 0
+    "corpusFrequency": 1034
   },
   {
     "id": "L-PLHEGHUN",
@@ -9215,7 +9240,7 @@
       ]
     },
     "notes": "C-11.3: gormek. KBD varyant.",
-    "corpusFrequency": 0
+    "corpusFrequency": 55
   },
   {
     "id": "L-PLHEN",
@@ -9234,7 +9259,7 @@
       ]
     },
     "notes": "C-11.3: bakmak. KBD.",
-    "corpusFrequency": 0
+    "corpusFrequency": 634
   },
   {
     "id": "L-LHAGHUNYGHE",
@@ -9253,7 +9278,7 @@
       ]
     },
     "notes": "C-11.3: sevgi. Etimoloji: лъагъу (gormek) + -ныгъэ.",
-    "corpusFrequency": 0
+    "corpusFrequency": 452
   },
   {
     "id": "L-LEZH",
@@ -9266,7 +9291,7 @@
       "kabardian": "лэжь"
     },
     "notes": "C-11.3: calis kok. Korpus: 6.",
-    "corpusFrequency": 4296
+    "corpusFrequency": 4488
   },
   {
     "id": "L-LEZHEN",
@@ -9287,7 +9312,7 @@
       ]
     },
     "notes": "C-11.3: calismak. Korpus: 162.",
-    "corpusFrequency": 622
+    "corpusFrequency": 630
   },
   {
     "id": "L-LEZHYGHE",
@@ -9300,7 +9325,7 @@
       "kabardian": "лэжьыгъэ"
     },
     "notes": "C-11.3: is, emek. Korpus: 372.",
-    "corpusFrequency": 1341
+    "corpusFrequency": 1379
   },
   {
     "id": "L-LEZHENYM",
@@ -9360,7 +9385,7 @@
       "Tharkaho 1991"
     ],
     "notes": "C-11.3: kusur/keder/suc. 11 deyim. Korpus: 1212.",
-    "corpusFrequency": 1212
+    "corpusFrequency": 1274
   },
   {
     "id": "L-LAZHENSHE",
@@ -9388,5 +9413,250 @@
     "conceptId": "DISASTER",
     "notes": "C-11.3: bela. Korpus: 1.",
     "corpusFrequency": 1
+  },
+  {
+    "id": "L-SHABZEBZE",
+    "form": "шабзэбзэ",
+    "literalMeaning": "yay kirisi",
+    "partOfSpeech": "noun",
+    "wordFamilyId": "WF-BZE",
+    "conceptId": "BOWSTRING",
+    "notes": "C-11.3: yay kirisi. шабзэ + бзэ. Korpus: 1.",
+    "corpusFrequency": 1
+  },
+  {
+    "id": "L-1URYBZEBZYXHYN",
+    "form": "Ӏурыбзэбзыхьын",
+    "literalMeaning": "yalvararak konusmak",
+    "partOfSpeech": "verb",
+    "wordFamilyId": "WF-BZE",
+    "conceptId": "FLATTER",
+    "notes": "C-11.3: yalvararak konusmak. Korpus: 1.",
+    "corpusFrequency": 1
+  },
+  {
+    "id": "L-SHABZE",
+    "form": "шабзэ",
+    "ipa": "/ˈʂɑ:bzɐ/",
+    "literalMeaning": "yay, ok",
+    "partOfSpeech": "noun",
+    "wordFamilyId": "WF-BZE2",
+    "conceptId": "BOW",
+    "derivation": {
+      "rootIds": [
+        "R-BZE2"
+      ],
+      "morphemeIds": [
+        "M-SH",
+        "M-A",
+        "M-BZ",
+        "M-E"
+      ],
+      "rule": "compound"
+    },
+    "senses": [
+      {
+        "senseId": 1,
+        "gloss": "bow (weapon)",
+        "tr": "yay",
+        "ru": "лук"
+      },
+      {
+        "senseId": 2,
+        "gloss": "arrow",
+        "tr": "ok",
+        "ru": "стрела"
+      }
+    ],
+    "sources": [
+      "Adygea Wiktionary",
+      "Yamisha 2018",
+      "Asemez 2013"
+    ],
+    "notes": "C-11.3: yay/ok. шабзэ + пс = шабзэпс. Korpus: ?",
+    "corpusFrequency": 83
+  },
+  {
+    "id": "L-BZE2",
+    "form": "бзэ",
+    "literalMeaning": "yay (silah)",
+    "partOfSpeech": "noun",
+    "wordFamilyId": "WF-BZE2",
+    "conceptId": "BOW",
+    "notes": "C-11.3: yay (silah). Homonim: L-BZE (dil). Korpus: 0 (homonim).",
+    "corpusFrequency": 0
+  },
+  {
+    "id": "L-BZASH1E",
+    "form": "бзащӀэ",
+    "literalMeaning": "yay",
+    "partOfSpeech": "noun",
+    "wordFamilyId": "WF-BZE2",
+    "conceptId": "BOW",
+    "notes": "C-11.3: yay (dogu varyanti). Korpus: 84.",
+    "corpusFrequency": 84
+  },
+  {
+    "id": "L-SHCHABZ",
+    "form": "щабз",
+    "literalMeaning": "yay",
+    "partOfSpeech": "noun",
+    "wordFamilyId": "WF-BZE2",
+    "conceptId": "BOW",
+    "notes": "C-11.3: yay (varyant). Korpus: 42.",
+    "corpusFrequency": 42
+  },
+  {
+    "id": "L-SHABZEPSE",
+    "form": "шабзэпс",
+    "ipa": "/ʂɐˈbzɐps/",
+    "literalMeaning": "yay kirisi",
+    "partOfSpeech": "noun",
+    "wordFamilyId": "WF-BZE2",
+    "conceptId": "BOWSTRING",
+    "notes": "C-11.3: yay kirisi. шабзэ + пс. Korpus: 4.",
+    "corpusFrequency": 4
+  },
+  {
+    "id": "L-BZASH1EPSE",
+    "form": "бзащӀэпс",
+    "literalMeaning": "yay teli",
+    "partOfSpeech": "noun",
+    "wordFamilyId": "WF-BZE2",
+    "conceptId": "BOWSTRING",
+    "notes": "C-11.3: yay teli. бзащӀэ + пс. Korpus: 0.",
+    "corpusFrequency": 0
+  },
+  {
+    "id": "L-KUBZE",
+    "form": "кубзэ",
+    "literalMeaning": "araba yayi",
+    "partOfSpeech": "noun",
+    "wordFamilyId": "WF-BZE2",
+    "conceptId": "SPRING",
+    "notes": "C-11.3: araba yayi. Korpus: 0.",
+    "corpusFrequency": 0
+  },
+  {
+    "id": "L-PSHCHYNE1AKUE",
+    "form": "пщынэӀакъу",
+    "literalMeaning": "muzik yayi",
+    "partOfSpeech": "noun",
+    "wordFamilyId": "WF-PSHCHYNE",
+    "conceptId": "BOW_MUSIC",
+    "notes": "C-11.3: muzik yayi. Korpus: 0.",
+    "corpusFrequency": 0
+  },
+  {
+    "id": "L-SHHE",
+    "form": "щэ",
+    "ipa": "/ɕɐ/",
+    "literalMeaning": "yag, ic yagi",
+    "partOfSpeech": "noun",
+    "wordFamilyId": "WF-SHHE",
+    "conceptId": "FAT",
+    "senses": [
+      {
+        "senseId": 1,
+        "gloss": "fat, grease",
+        "tr": "yağ",
+        "ru": "жир, сало"
+      }
+    ],
+    "notes": "C-11.3: yag. Korpus: 19752.",
+    "corpusFrequency": 19752
+  },
+  {
+    "id": "L-SHHE2",
+    "form": "щэ",
+    "ipa": "/ɕɐ/",
+    "literalMeaning": "uc kez",
+    "partOfSpeech": "numeral",
+    "wordFamilyId": "WF-SHHE",
+    "conceptId": "THREE_TIMES",
+    "senses": [
+      {
+        "senseId": 1,
+        "gloss": "three times",
+        "tr": "üç kez",
+        "ru": "три раза"
+      }
+    ],
+    "notes": "C-11.3: uc kez. Korpus: 19752.",
+    "corpusFrequency": 19752
+  },
+  {
+    "id": "L-SHHE3",
+    "form": "щэ",
+    "ipa": "/ɕɐ/",
+    "literalMeaning": "yuz (100)",
+    "partOfSpeech": "numeral",
+    "wordFamilyId": "WF-SHHE",
+    "conceptId": "HUNDRED",
+    "senses": [
+      {
+        "senseId": 1,
+        "gloss": "hundred",
+        "tr": "yüz",
+        "ru": "сто"
+      }
+    ],
+    "notes": "C-11.3: yuz. Korpus: 19752.",
+    "corpusFrequency": 19752
+  },
+  {
+    "id": "L-SHHE4",
+    "form": "щэ",
+    "ipa": "/ɕɐ/",
+    "literalMeaning": "soru eki",
+    "partOfSpeech": "particle",
+    "wordFamilyId": "WF-SHHE",
+    "conceptId": "QUESTION",
+    "senses": [
+      {
+        "senseId": 1,
+        "gloss": "question particle",
+        "tr": "soru eki",
+        "ru": "вопросительная частица"
+      }
+    ],
+    "notes": "C-11.3: soru eki. Мыр-щэ? = Bu mu? Korpus: 19752.",
+    "corpusFrequency": 19752
+  },
+  {
+    "id": "L-SHCHEN",
+    "form": "щэн",
+    "literalMeaning": "satmak",
+    "partOfSpeech": "verb",
+    "wordFamilyId": "WF-SHCHEN",
+    "conceptId": "SELL",
+    "senses": [
+      {
+        "senseId": 1,
+        "gloss": "to sell",
+        "tr": "satmak",
+        "ru": "продавать"
+      }
+    ],
+    "notes": "C-11.3: satmak. Emir: щэ = sat! Korpus: 0.",
+    "corpusFrequency": 0
+  },
+  {
+    "id": "L-SHCHEN-IMP",
+    "form": "щэ",
+    "literalMeaning": "sat! (emir)",
+    "partOfSpeech": "verb (imperative)",
+    "wordFamilyId": "WF-SHCHEN",
+    "conceptId": "SELL",
+    "senses": [
+      {
+        "senseId": 1,
+        "gloss": "sell! (imperative)",
+        "tr": "sat!",
+        "ru": "продай!"
+      }
+    ],
+    "notes": "C-11.3: sat! emir kipi. щэн fiilinden. Korpus: 19752 (karisik).",
+    "corpusFrequency": 19752
   }
 ]
