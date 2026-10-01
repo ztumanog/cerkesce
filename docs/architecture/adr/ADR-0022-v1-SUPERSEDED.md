@@ -1,4 +1,4 @@
-# ADR-0023: Verb Prefix Slot Grammar
+# ADR-0022: Verb Prefix Slot Grammar
 
 ## Durum
 KABUL EDILDI
@@ -38,5 +38,4 @@ cikti olarak slot->onek eslemesi + ciplak kok dondurur.
 - Fiil cozumlemesi deterministik olur
 - Morphology Engine cekirdegi tanimlanir
 - Runtime izolasyonu korunur (Discovery'ye baglanmaz)
-
 
