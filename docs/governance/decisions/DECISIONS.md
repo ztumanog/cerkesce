@@ -138,3 +138,22 @@ Faz 5 kapsami resmilestirildi. Kilit acma onayi bekleniyor.
 - **Durum:** PROPOSED
 - **Tarih:** 2026-09-26
 - **Karar:** WordFamilyResolver yalnızca Word → Concept çözümleme yapar. Concept → Concept semantic traversal ayrı resolver tarafından yürütülür.
+
+---
+
+## ADR-0023 — Lemma Identity Rule (KABUL EDILDI)
+
+**Karar:** Surface Form != Lemma != Concept ayrimi korunur.
+
+**Kural:** Ayni yuzey form farkli anlamlar tasiyorsa AYRI lemma alir.
+
+**Ornek:**
+- шэ (sut)   -> LEMMA-SHE-MILK
+- шэ (mermi) -> LEMMA-SHE-BULLET
+
+**Gerekce:**
+- Embedding vektorleri karismaz
+- Retrieval dogru sonuc verir
+- Sense mapping bozulmaz
+
+**Etki:** Morphology Engine, Embedding Engine, Semantic Search
