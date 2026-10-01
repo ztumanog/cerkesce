@@ -38,9 +38,6 @@
 | ADR-0023 | Verb Prefix Slot Grammar | `ADR-0023.md` | Accepted | 4 |
 | ADR-0024 | Lemma Identity Rule (Model A) | `ADR-0024.md` | Accepted | 4 |
 | ADR-0040 | Morphological Root Taxonomy | `ADR-0040.md` | Accepted | 4 |
-| ADR-0023 | Verb Prefix Slot Grammar | `ADR-0023.md` | Accepted | 4 |
-| ADR-0024 | Lemma Identity Rule (Model A) | `ADR-0024.md` | Accepted | 4 |
-| ADR-0040 | Morphological Root Taxonomy | `ADR-0040.md` | Accepted | 4 |
 
 ---
 
