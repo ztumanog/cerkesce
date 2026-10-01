@@ -2266,5 +2266,48 @@
       "kabardian": "лажь"
     },
     "notes": "C-11.3: kusur koku. Korpus: 1229. Homonim: R-LEZH (calismak)."
+  },
+  {
+    "id": "R-SHCH",
+    "form": "щы",
+    "ipa": "/ɕə/",
+    "primaryMeaning": "uc",
+    "secondaryMeanings": [
+      "sayi"
+    ],
+    "semanticDomains": [
+      "quantity"
+    ],
+    "dialectVariants": {
+      "adyghe": "щы",
+      "kabardian": "щы"
+    },
+    "productivity": {
+      "lemmaCount": 10,
+      "corpusFrequency": 64367
+    },
+    "notes": "C-11.4: uc koku."
+  },
+  {
+    "id": "R-GUASHE",
+    "form": "гуащэ",
+    "ipa": "/gʷaːɕa/",
+    "primaryMeaning": "hanim, prenses",
+    "secondaryMeanings": [
+      "kadin"
+    ],
+    "semanticDomains": [
+      "people",
+      "family"
+    ],
+    "dialectVariants": {
+      "adyghe": "гуащэ",
+      "kabardian": "гуащэ"
+    },
+    "productivity": {
+      "lemmaCount": 10,
+      "corpusFrequency": 568
+    },
+    "notes": "C-11.4: hanim koku."
   }
 ]
