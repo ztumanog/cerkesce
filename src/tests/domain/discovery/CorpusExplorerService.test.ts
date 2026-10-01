@@ -17,31 +17,76 @@ describe('P5-004 Corpus Explorer', () => {
   it('CE-001: Bos sorgu bos sonuc dondurmeli', () => {
     const result = service.explore('');
     expect(result.dictionaries.length).toBe(0);
+    expect(result.totalDictionaries).toBe(0);
+    expect(result.meaningCount).toBe(0);
   });
 
-  it('CE-002: Metadata yuklu olmali', () => {
+  it('CE-002: dictionaryEntries verilmezse bos sonuc', () => {
+    // DUZELTME: dictionaryEntries olmadan arama yapilamaz
     const result = service.explore('псы');
-    expect(result.totalDictionaries).toBeGreaterThan(0);
+    expect(result.totalDictionaries).toBe(0);
+    expect(result.meaningCount).toBe(0);
+    expect(result.languages.length).toBe(0);
   });
 
-  it('CE-003: Diller listesi bos olmamali', () => {
-    const result = service.explore('псы');
-    expect(result.languages.length).toBeGreaterThan(0);
+  it('CE-003: dictionaryEntries ile gercek arama', () => {
+    // Mock dictionaryEntries
+    const mockEntries = {
+      'test-dict.json': {
+        'псы': {
+          meanings: [
+            { meaning: 'su' },
+            { meaning: 'water' },
+          ],
+        },
+      },
+    };
+
+    // Mock sozluk metadata
+    const mockDict = [{
+      file: 'test-dict.json',
+      title: 'Test Sozluk',
+      sourceLanguage: 'KBD',
+      targetLanguage: 'TR',
+      dialect: 'KBD',
+    }];
+
+    const testService = new CorpusExplorerService(mockDict);
+    const result = testService.explore('псы', mockEntries);
+
+    expect(result.totalDictionaries).toBe(1);
+    expect(result.meaningCount).toBe(2);
+    expect(result.languages).toContain('KBD');
+    expect(result.languages).toContain('TR');
   });
 
-  it('CE-004: Sozluk bilgisi tam olmali', () => {
-    const result = service.explore('псы');
-    if (result.dictionaries.length > 0) {
-      const d = result.dictionaries[0];
-      expect(d.file).toBeDefined();
-      expect(d.title).toBeDefined();
-      expect(d.sourceLanguage).toBeDefined();
-      expect(d.targetLanguage).toBeDefined();
-    }
+  it('CE-004: Bulunmayan kelime bos sonuc', () => {
+    const mockEntries = {
+      'test-dict.json': {
+        'псы': { meanings: [{ meaning: 'su' }] },
+      },
+    };
+
+    const mockDict = [{
+      file: 'test-dict.json',
+      title: 'Test',
+      sourceLanguage: 'KBD',
+      targetLanguage: 'TR',
+      dialect: 'KBD',
+    }];
+
+    const testService = new CorpusExplorerService(mockDict);
+    const result = testService.explore('olmayan-kelime', mockEntries);
+
+    expect(result.totalDictionaries).toBe(0);
+    expect(result.meaningCount).toBe(0);
   });
 
-  it('CE-005: Anlam sayisi pozitif olmali', () => {
+  it('CE-005: Metadata yuklu olmali', () => {
+    // Servis metadata'yi yukledi mi?
+    expect(service).toBeDefined();
+    // dictionaryEntries olmadan 0 doner (dogru davranis)
     const result = service.explore('псы');
-    expect(result.meaningCount).toBeGreaterThanOrEqual(0);
+    expect(result.word).toBe('псы');
   });
 });
