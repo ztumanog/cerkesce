@@ -2,7 +2,7 @@
 
 **Tarih:** 2026-09-29
 **Durum:** COMPLETED
-**Mimar Onayi:** Bekleniyor
+**Mimar Onayi:** Alindi
 
 ---
 
@@ -67,7 +67,7 @@ sorusunu cevaplamak.
 
 ### Dogrulama
 
-- пэ kelimesi: 34 anlam, 6 dil, 34 sozluk
+- пэ kelimesi: gercek anlam/dil/sozluk sayilari (sourceContents'ten)
 - UI'da calisiyor
 
 ---
@@ -76,11 +76,11 @@ sorusunu cevaplamak.
 
 | Test | Sonuc |
 |---|---|
-| Test Files | 75 passed (75) |
-| Tests | 231 passed (231) |
+| Test Files | 81 passed (81) |
+| Tests | 276 passed (276) |
 | tsc --noEmit | Temiz |
 
-**220 -> 231 test (+11 yeni test)**
+**220 -> 276 test (+56 yeni test)**
 
 ---
 
@@ -91,7 +91,7 @@ sorusunu cevaplamak.
 - [x] Smart Suggestions sistemi (P5-003)
 - [x] Corpus Explorer ekrani (P5-004)
 - [x] Mevcut performans korunmus
-- [x] Testler PASS (231/231)
+- [x] Testler PASS (276/276)
 - [x] Kritik teknik borc: 0
 
 **7/7 KRITER TAMAMLANDI**

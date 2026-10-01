@@ -1,4 +1,4 @@
-﻿'use client';
+'use client';
 
 import React, { useRef, useEffect, useState, useCallback, useMemo } from 'react';
 import {
@@ -233,8 +233,29 @@ export default function KelimeDetayDrawer({
       return;
     }
 
-    const result = corpusExplorerServiceRef.current.explore(word);
-    setCorpusData(result);
+    const sourceContents = normalizeToSourceContents(seciliKelime);
+    const allLangs = new Set<string>();
+    let totalMeanings = 0;
+    for (const source of sourceContents) {
+      totalMeanings += (source.meanings || []).length;
+      if (source.sourceLanguage) allLangs.add(source.sourceLanguage);
+      if (source.targetLanguage) allLangs.add(source.targetLanguage);
+    }
+    setCorpusData({
+      word,
+      meaningCount: totalMeanings,
+      languages: Array.from(allLangs),
+      dictionaries: sourceContents.map(s => ({
+        file: s.sourceId || s.sourceName || '',
+        title: s.sourceName || s.title || '',
+        sourceLanguage: s.sourceLanguage || '',
+        targetLanguage: s.targetLanguage || '',
+        dialect: s.dialect || '',
+        year: String(s.year || ''),
+        author: s.author || '',
+      })),
+      totalDictionaries: sourceContents.length,
+    });
   }, [seciliKelime]);
 
   const isDrawerOpen = open ?? isOpen ?? false;
