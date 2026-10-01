@@ -63,6 +63,15 @@
 | ADR-0031 | Query Semantic | `ADR-0013-QUERY_SEMANTIC_MAPPING.md` | Proposed |
 | ADR-0032 | Network Projection | `ADR_0014_CONCEPT_NETWORK_PROJECTION.md` | Accepted |
 
+
+### Faz 4 — Morphology Engine
+
+| Canonical | Başlık | Physical File | Durum |
+|-----------|--------|---------------|-------|
+| ADR-0023 | Verb Prefix Slot Grammar | `ADR-0023.md` | Accepted |
+| ADR-0024 | Lemma Identity Rule (Model A) | `ADR-0024.md` | Accepted |
+| ADR-0040 | Morphological Root Taxonomy | `ADR-0040.md` | Accepted |
+
 ### Yönetişim ve Aktivasyon
 
 | Canonical | Başlık | Physical File | Durum |
@@ -100,3 +109,4 @@
 **SSOT:** ADR_INDEX.md
 **Imza:** Mimari Ekip
 **Tarih:** 2026-09-26
+

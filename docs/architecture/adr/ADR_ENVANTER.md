@@ -31,6 +31,9 @@
 | 19 | ADR-GOV-001 | Catalog Strategy | `ADR-GOV-001-CANONICAL_CATALOG_STRATEGY.md` | Accepted | — |
 | 20 | ADR-GOV-002 | Supersession | `ADR-GOV-002-HISTORICAL_SUPERSESSION.md` | Accepted | — |
 | 21 | ADR-P4-001 | Phase 4 | `ADR-P4-001-PHASE4_ACTIVATION.md` | Accepted | — |
+| 22 | ADR-0023 | Verb Prefix Slot Grammar | `ADR-0023.md` | Accepted | 4 |
+| 23 | ADR-0024 | Lemma Identity Rule (Model A) | `ADR-0024.md` | Accepted | 4 |
+| 24 | ADR-0040 | Morphological Root Taxonomy | `ADR-0040.md` | Accepted | 4 |
 
 ---
 
@@ -51,3 +54,4 @@
 ---
 
 **Son Güncelleme:** 2026-09-26
+
