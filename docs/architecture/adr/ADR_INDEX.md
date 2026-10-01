@@ -22,11 +22,11 @@
 | ADR-0006 | Cross Dictionary | `ADR-0006-CROSS_DICTIONARY_MATCHING.md` | Accepted | 2 |
 | ADR-0007 | Repository Contract | `ADR-0007-TRANSLATIONREPOSITORY_CONTRACT.md` | Accepted | 2 |
 | ADR-0008 | Meaning Representation | `ADR-0008-TRANSLATIONMEANING_REPRESENTATION.md` | Accepted | 2 |
-| ADR-0009 | Dialect Naming | `ADR_0009_DIALECT_NAMING_STANDARD.md` | Accepted | 2 |
+| ADR-0009 | Concept Identity | `ADR-0009-CONCEPT_IDENTITY_STRATEGY.md` | Draft | 3 |
 | ADR-0010 | Canonical Identity | `ADR-0015-TRANSLATIONENTRY_CANONICAL_IDENTITY.md` | Accepted | 2 |
 | ADR-0011 | Phase 3-7 Freeze | `ADR-0016-Phase3-7-Dondurma-SUPERSEDED.md` | Superseded | 2 |
 | ADR-0012 | Filter Flow | `ADR-P2-011-FILTER_FLOW_AUDIT.md` | Accepted | 2 |
-| ADR-0020 | Concept Identity | `ADR-0009-CONCEPT_IDENTITY_STRATEGY.md` | Draft | 3 |
+| ADR-0025 | Dialect Naming | `ADR-0025-DIALECT_NAMING_STANDARD.md` | Accepted | 4 |
 | ADR-0021 | Concept Repository | `ADR-0010-CONCEPT_REPOSITORY.md` | Accepted | 3 |
 | ADR-0022 | Meaning Graph | `ADR-0011-MEANING_GRAPH_BOOTSTRAP.md` | Accepted | 3 |
 | ADR-0030 | Discovery | `ADR-0012-REAL_KNOWLEDGE_DISCOVERY_ASSEMBLY.md` | Accepted | 5 |
@@ -87,6 +87,9 @@
 | ADR-GOV-002 | Supersession | `ADR-GOV-002-HISTORICAL_SUPERSESSION.md` | Accepted |
 | ADR-GOV-003 | Phase Redefinition | `ADR-GOV-003-PHASE_REDEFINITION.md` | Accepted |
 | ADR-GOV-004 | Phase Gate Modeli | `DECISIONS.md` (kayıtlı) | Accepted |
+
+
+
 
 
 
