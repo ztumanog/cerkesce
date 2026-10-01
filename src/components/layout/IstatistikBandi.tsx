@@ -33,7 +33,7 @@ export const IstatistikBandi: React.FC<IstatistikBandiProps> = ({
           }}
           className="font-bold"
         >
-          {sozlukSayisi} SÃ¶zlÃ¼k
+          {sozlukSayisi} Sözlük
         </strong>
       </span>
 
@@ -41,7 +41,7 @@ export const IstatistikBandi: React.FC<IstatistikBandiProps> = ({
         className="opacity-35"
         aria-hidden="true"
       >
-        â€¢
+        •
       </span>
 
       <span>
@@ -53,25 +53,24 @@ export const IstatistikBandi: React.FC<IstatistikBandiProps> = ({
         >
           {wordsCount.toLocaleString("tr-TR")}+
         </strong>{" "}
-        Kelime KaydÄ±
+        Kelime Kaydı
       </span>
 
       <span
         className="opacity-35"
         aria-hidden="true"
       >
-        â€¢
+        •
       </span>
-<span className="inline-flex items-center gap-1.5">
-  <span
-    className="inline-block h-1.5 w-1.5 rounded-full bg-emerald-500"
-    aria-hidden="true"
-  />
-</span>
-</div>
-);
+
+      <span className="inline-flex items-center gap-1.5">
+        <span
+          className="inline-block h-1.5 w-1.5 rounded-full bg-emerald-500"
+          aria-hidden="true"
+        />
+      </span>
+    </div>
+  );
 };
 
-
 export default IstatistikBandi;
-
