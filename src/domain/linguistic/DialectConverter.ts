@@ -41,6 +41,10 @@ export class DialectConverter {
 
     let c = word;
 
+    // EN BASTA: ozel kurallar
+    c = c.replace(/чъыгы/g, 'жыг');
+    c = c.replace(/шъхьащэ/g, 'щхьэшэ');
+
     // PHASE 1: GRAMMATICAL PREFIX MAPPING
     c = c.replace(/^фэ(?=[птщшчцкбгдзжх])/g, "___F1E___");
     c = c.replace(/^шъо(?=[-кIщшф])/g, "___FO___");
@@ -50,6 +54,7 @@ export class DialectConverter {
     // PHASE 2: LABIALIZED SIBILANT SHIFTS
     c = c.replace(/шъуызы$/g, "___F___ыз");
     c = c.replace(/шъуы/g, "___F___ы");
+    // шъу -> ф kaldirildi (шъу -> щу olmali)
     c = c.replace(/жъуэ/g, "вэ");
     c = c.replace(/жъу/g, "в");
     c = c.replace(/цуы/g, "вы");
@@ -83,12 +88,12 @@ export class DialectConverter {
     c = c.replace(/гуфIэ/g, 'гушIо');
     c = c.replace(/гукIэгъу/g, 'гущIэгъу');
     c = c.replace(/гупшысэ/g, 'гупсысэ');
-    c = c.replace(/шъхьащэ/g, 'щхьэщэ');
+    c = c.replace(/шъхьащэ/g, 'щхьэшэ');
     c = c.replace(/нэшъу/g, 'нэф');
     c = c.replace(/шъыпкъэ/g, 'щыпкъэ');
-    c = c.replace(/гъусэ/g, 'гусэ');
+    // гъусэ kaldirildi - шъхьэгъусэ -> щхьэгъусэ dogru
+    // c = c.replace(/гъусэ/g, 'гусэ');
     c = c.replace(/джэд/g, 'зэд');
-    c = c.replace(/чъыгы/g, 'щыгы');
     c = c.replace(/пӀэ/g, 'Ӏэ');
     c = c.replace(/тӀы/g, 'Ӏы');
     c = c.replace(/кӀэ/g, 'чэ');
@@ -122,6 +127,8 @@ export class DialectConverter {
       c = c.slice(0, -1);
     }
 
+    // EN SON: шъэ -> щэ
+    c = c.replace(/шъэ/g, 'щэ');
     return c;
   }
 }
