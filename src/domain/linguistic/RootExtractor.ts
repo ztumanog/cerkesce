@@ -1,10 +1,3 @@
-/**
- * P4-002: RootExtractor
- *
- * Amac: Lexeme formundan kok (root) cikarmak.
- * ADR-ROOT-001: Sadece veri uretir, Runtime'a baglanmaz.
- */
-
 export interface RootExtractorInput {
   lexemeId: string;
   form: string;
@@ -24,20 +17,13 @@ export interface Root {
   id: string;
   form: string;
   primaryMeaning: string;
-  productivity: {
-    lemmaCount: number;
-    corpusFrequency: number;
-  };
+  productivity: { lemmaCount: number; corpusFrequency: number; };
 }
 
 export interface Lexeme {
   id: string;
   form: string;
-  derivation?: {
-    rootIds?: string[];
-    morphemeIds?: string[];
-    rule?: string;
-  };
+  derivation?: { rootIds?: string[]; morphemeIds?: string[]; rule?: string; };
 }
 
 export class RootExtractor {
@@ -54,56 +40,23 @@ export class RootExtractor {
     if (lexeme?.derivation?.rootIds?.length) {
       const rootId = lexeme.derivation.rootIds[0];
       const root = this.roots.get(rootId);
-      return {
-        lexemeId: input.lexemeId,
-        rootId,
-        rootForm: root?.form ?? null,
-        confidence: 0.95,
-        method: 'dictionary',
-        evidence: 'lexeme.derivation.rootIds[0] = ' + rootId,
-      };
+      return { lexemeId: input.lexemeId, rootId, rootForm: root?.form ?? null, confidence: 0.95, method: 'dictionary', evidence: 'lexeme.derivation.rootIds[0] = ' + rootId };
     }
-
     for (const root of this.roots.values()) {
       if (root.form === input.form) {
-        return {
-          lexemeId: input.lexemeId,
-          rootId: root.id,
-          rootForm: root.form,
-          confidence: 0.90,
-          method: 'dictionary',
-          evidence: 'roots.json exact match: ' + root.id,
-        };
+        return { lexemeId: input.lexemeId, rootId: root.id, rootForm: root.form, confidence: 0.90, method: 'dictionary', evidence: 'roots.json exact match: ' + root.id };
       }
     }
-
     const candidates: Array<{ root: Root; matchLen: number }> = [];
     for (const root of this.roots.values()) {
-      if (input.form.startsWith(root.form)) {
-        candidates.push({ root, matchLen: root.form.length });
-      }
+      if (input.form.startsWith(root.form)) candidates.push({ root, matchLen: root.form.length });
     }
-
     if (candidates.length > 0) {
       candidates.sort((a, b) => b.matchLen - a.matchLen);
       const best = candidates[0];
-      return {
-        lexemeId: input.lexemeId,
-        rootId: best.root.id,
-        rootForm: best.root.form,
-        confidence: 0.75,
-        method: 'morpheme',
-        evidence: 'prefix match: ' + best.root.form,
-      };
+      return { lexemeId: input.lexemeId, rootId: best.root.id, rootForm: best.root.form, confidence: 0.75, method: 'morpheme', evidence: 'prefix match: ' + best.root.form };
     }
-
-    return {
-      lexemeId: input.lexemeId,
-      rootId: null,
-      rootForm: null,
-      confidence: 0.0,
-      method: 'fallback',
-    };
+    return { lexemeId: input.lexemeId, rootId: null, rootForm: null, confidence: 0.0, method: 'fallback' };
   }
 
   extractAll(lexemes: Lexeme[]): RootExtractorOutput[] {
