@@ -37,9 +37,10 @@ Asagidaki homonimler icin LEMMA ayrimi yapildi:
 
 | Yuzey Form | Anlam | Lemma ID |
 |------------|-------|----------|
-| шэ | sut | LEMMA-SHE-MILK |
-| шэ | mermi | LEMMA-SHE-BULLET |
-| бзэ | dil | LEMMA-BZE-LANGUAGE |
-| бзэ | yay | LEMMA-BZE-BOW |
+| шэ | sut | LEMMA-SHE (sense: sut) |
+| шэ | mermi | LEMMA-SHE (sense: mermi) |
+| бзэ | dil | LEMMA-BZE (sense: dil) |
+| бзэ | yay | LEMMA-BZE (sense: yay) |
 
-Referans: ADR-0023
+Referans: ADR-0024 (Model A)
+
