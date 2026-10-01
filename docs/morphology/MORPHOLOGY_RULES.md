@@ -30,3 +30,9 @@ Onekler: си-, уи-, и-, ди-, фи-, я-
 Durum: KILITLI
 Katman: Syntax Layer
 Not: Morphology Engine disinda tutulur
+
+## Rule 007 — Noun Case
+Durum: AKTIF
+Bilesen: NounCaseParser
+Durumlar: nominative (-р), ergative (-м), instrumental (-кIэ/-чIэ), definite_instrumental (-мкIэ/-мчIэ), adverbial (-уэ), plural (-хэр/-хэм/-хэмкIэ/-хэу)
+Kaynak: gl1.pdf

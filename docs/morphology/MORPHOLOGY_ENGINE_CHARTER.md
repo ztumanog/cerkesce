@@ -60,3 +60,9 @@ PossessivePrefixDecompiler (P4-006)
 
 1. NounCaseDecompiler (P4-008)
 2. NominalDerivationDecompiler (P4-009)
+
+### P4-008: NounCaseParser
+- Isim durum eki cozumleme (Kabardeyce)
+- 10 durum: nominative, ergative, instrumental, definite_instrumental, adverbial, plural_nominative, plural_ergative, plural_instrumental, plural_adverbial, bare
+- Test: 23/23 PASS
+- Kaynak: gl1.pdf (Kumakhov, Isim Morfolojisi)
