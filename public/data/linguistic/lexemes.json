@@ -934,9 +934,11 @@
     "ipa": "/ɡʷaːɕa/",
     "literalMeaning": "hanim",
     "derivation": {
-      "rootIds": [],
+      "rootIds": [
+        "R-GUASHCH"
+      ],
       "morphemeIds": [],
-      "rule": "root"
+      "rule": "auto_prefix"
     },
     "wordFamilyId": "WF-GUASHE",
     "dialectVariants": {
@@ -5792,7 +5794,13 @@
     "corpusFrequency": 250,
     "corpusFrequencyAdy": 54,
     "corpusFrequencyKbd": 0,
-    "notes": "C-9.5 yeni lexeme. ADY=54, KBD=0"
+    "notes": "C-9.5 yeni lexeme. ADY=54, KBD=0",
+    "derivation": {
+      "rootIds": [
+        "R-NE"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-NE-DAWN",
@@ -5806,7 +5814,13 @@
     "corpusFrequency": 79,
     "corpusFrequencyAdy": 0,
     "corpusFrequencyKbd": 30,
-    "notes": "C-9.5 yeni lexeme. ADY=0, KBD=30"
+    "notes": "C-9.5 yeni lexeme. ADY=0, KBD=30",
+    "derivation": {
+      "rootIds": [
+        "R-NE"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-NE-KINDNESS",
@@ -5820,7 +5834,13 @@
     "corpusFrequency": 18,
     "corpusFrequencyAdy": 7,
     "corpusFrequencyKbd": 23,
-    "notes": "C-9.5 yeni lexeme. ADY=0, KBD=0"
+    "notes": "C-9.5 yeni lexeme. ADY=0, KBD=0",
+    "derivation": {
+      "rootIds": [
+        "R-NE"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-NE-JOY",
@@ -5834,7 +5854,13 @@
     "corpusFrequency": 20,
     "corpusFrequencyAdy": 0,
     "corpusFrequencyKbd": 12,
-    "notes": "C-9.5 yeni lexeme. ADY=0, KBD=0"
+    "notes": "C-9.5 yeni lexeme. ADY=0, KBD=0",
+    "derivation": {
+      "rootIds": [
+        "R-NE"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-GUK1EGHU",
@@ -5848,7 +5874,13 @@
     "corpusFrequency": 536,
     "corpusFrequencyAdy": 324,
     "corpusFrequencyKbd": 219,
-    "notes": "C-9.5. Slovar: 11 kaynak."
+    "notes": "C-9.5. Slovar: 11 kaynak.",
+    "derivation": {
+      "rootIds": [
+        "R-GU"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-GUKHELHE",
@@ -5862,7 +5894,13 @@
     "corpusFrequency": 293,
     "corpusFrequencyAdy": 102,
     "corpusFrequencyKbd": 27,
-    "notes": "C-9.5. Slovar: 11 kaynak."
+    "notes": "C-9.5. Slovar: 11 kaynak.",
+    "derivation": {
+      "rootIds": [
+        "R-GU"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-GUPSAF",
@@ -5876,7 +5914,13 @@
     "corpusFrequency": 239,
     "corpusFrequencyAdy": 70,
     "corpusFrequencyKbd": 0,
-    "notes": "C-9.5. Slovar: 5 kaynak."
+    "notes": "C-9.5. Slovar: 5 kaynak.",
+    "derivation": {
+      "rootIds": [
+        "R-GU"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-GUGHU",
@@ -5890,7 +5934,13 @@
     "corpusFrequency": 1928,
     "corpusFrequencyAdy": 27,
     "corpusFrequencyKbd": 644,
-    "notes": "C-9.5. Slovar: 17 kaynak."
+    "notes": "C-9.5. Slovar: 17 kaynak.",
+    "derivation": {
+      "rootIds": [
+        "R-GU"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-GUGHUEGHE",
@@ -5904,7 +5954,13 @@
     "corpusFrequency": 411,
     "corpusFrequencyAdy": 1,
     "corpusFrequencyKbd": 188,
-    "notes": "C-9.5. Slovar: 12 kaynak."
+    "notes": "C-9.5. Slovar: 12 kaynak.",
+    "derivation": {
+      "rootIds": [
+        "R-GU"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-GULHYTE",
@@ -5918,7 +5974,13 @@
     "corpusFrequency": 382,
     "corpusFrequencyAdy": 50,
     "corpusFrequencyKbd": 180,
-    "notes": "C-9.5. Slovar: 12 kaynak."
+    "notes": "C-9.5. Slovar: 12 kaynak.",
+    "derivation": {
+      "rootIds": [
+        "R-GU"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-GUKHEK1",
@@ -5932,7 +5994,13 @@
     "corpusFrequency": 103,
     "corpusFrequencyAdy": 54,
     "corpusFrequencyKbd": 0,
-    "notes": "C-9.5. Slovar: 7 kaynak."
+    "notes": "C-9.5. Slovar: 7 kaynak.",
+    "derivation": {
+      "rootIds": [
+        "R-GU"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-GUGHAП1E",
@@ -5946,7 +6014,13 @@
     "corpusFrequency": 154,
     "corpusFrequencyAdy": 45,
     "corpusFrequencyKbd": 23,
-    "notes": "C-9.5. Slovar: 9 kaynak."
+    "notes": "C-9.5. Slovar: 9 kaynak.",
+    "derivation": {
+      "rootIds": [
+        "R-GU"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-GUZEZHO",
@@ -5960,7 +6034,13 @@
     "corpusFrequency": 122,
     "corpusFrequencyAdy": 47,
     "corpusFrequencyKbd": 120,
-    "notes": "C-9.5. Slovar: 6 kaynak."
+    "notes": "C-9.5. Slovar: 6 kaynak.",
+    "derivation": {
+      "rootIds": [
+        "R-GU"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-GUSH1UAGHO",
@@ -5974,7 +6054,13 @@
     "corpusFrequency": 364,
     "corpusFrequencyAdy": 0,
     "corpusFrequencyKbd": 118,
-    "notes": "C-11.3: sevinc. Dogru form: гуфӏэгъу. Korpus: 364."
+    "notes": "C-11.3: sevinc. Dogru form: гуфӏэгъу. Korpus: 364.",
+    "derivation": {
+      "rootIds": [
+        "R-GU"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-1EPY1EGHU",
@@ -5988,7 +6074,13 @@
     "corpusFrequency": 414,
     "corpusFrequencyAdy": 313,
     "corpusFrequencyKbd": 42,
-    "notes": "C-9.5. Slovar: 3 kaynak."
+    "notes": "C-9.5. Slovar: 3 kaynak.",
+    "derivation": {
+      "rootIds": [
+        "R-1E"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-1EMAL",
@@ -6002,7 +6094,13 @@
     "corpusFrequency": 569,
     "corpusFrequencyAdy": 1,
     "corpusFrequencyKbd": 375,
-    "notes": "C-9.5. Slovar: 11 kaynak."
+    "notes": "C-9.5. Slovar: 11 kaynak.",
+    "derivation": {
+      "rootIds": [
+        "R-1E"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-1EZEGHU",
@@ -6016,7 +6114,13 @@
     "corpusFrequency": 88,
     "corpusFrequencyAdy": 51,
     "corpusFrequencyKbd": 81,
-    "notes": "C-9.5. Slovar: 5 kaynak."
+    "notes": "C-9.5. Slovar: 5 kaynak.",
+    "derivation": {
+      "rootIds": [
+        "R-1E"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-1EF1",
@@ -6030,7 +6134,13 @@
     "corpusFrequency": 856,
     "corpusFrequencyAdy": 0,
     "corpusFrequencyKbd": 124,
-    "notes": "C-9.5. Slovar: 11 kaynak."
+    "notes": "C-9.5. Slovar: 11 kaynak.",
+    "derivation": {
+      "rootIds": [
+        "R-1E"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-1ESHCH",
@@ -6044,7 +6154,13 @@
     "corpusFrequency": 10991,
     "corpusFrequencyAdy": 5,
     "corpusFrequencyKbd": 110,
-    "notes": "C-9.5. Slovar: 17 kaynak."
+    "notes": "C-9.5. Slovar: 17 kaynak.",
+    "derivation": {
+      "rootIds": [
+        "R-1E"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-LHEUZHY",
@@ -6058,7 +6174,13 @@
     "corpusFrequency": 160,
     "corpusFrequencyAdy": 0,
     "corpusFrequencyKbd": 67,
-    "notes": "C-9.5. Slovar: 10 kaynak."
+    "notes": "C-9.5. Slovar: 10 kaynak.",
+    "derivation": {
+      "rootIds": [
+        "R-LHE"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-LHEGUA",
@@ -6072,7 +6194,13 @@
     "corpusFrequency": 88,
     "corpusFrequencyAdy": 0,
     "corpusFrequencyKbd": 11,
-    "notes": "C-9.5. Slovar: 10 kaynak."
+    "notes": "C-9.5. Slovar: 10 kaynak.",
+    "derivation": {
+      "rootIds": [
+        "R-LHE"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-LHEMYDJ",
@@ -6086,7 +6214,13 @@
     "corpusFrequency": 69,
     "corpusFrequencyAdy": 30,
     "corpusFrequencyKbd": 44,
-    "notes": "C-9.5. Slovar: 8 kaynak."
+    "notes": "C-9.5. Slovar: 8 kaynak.",
+    "derivation": {
+      "rootIds": [
+        "R-LHE"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-LHESHCH",
@@ -6100,7 +6234,13 @@
     "corpusFrequency": 1235,
     "corpusFrequencyAdy": 1,
     "corpusFrequencyKbd": 98,
-    "notes": "C-9.5. Slovar: 10 kaynak."
+    "notes": "C-9.5. Slovar: 10 kaynak.",
+    "derivation": {
+      "rootIds": [
+        "R-LHE"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-LHENYQO",
@@ -6114,7 +6254,13 @@
     "corpusFrequency": 413,
     "corpusFrequencyAdy": 72,
     "corpusFrequencyKbd": 126,
-    "notes": "C-9.5. Slovar: 1 kaynak. Wiktionary etimoloji: лъ + ныкъу + э (ayak yarimi)."
+    "notes": "C-9.5. Slovar: 1 kaynak. Wiktionary etimoloji: лъ + ныкъу + э (ayak yarimi).",
+    "derivation": {
+      "rootIds": [
+        "R-LHE"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-SHHYASHE",
@@ -7308,9 +7454,11 @@
     "ipa": "/ɕǝsħǝn/",
     "literalMeaning": "esirgemek",
     "derivation": {
-      "rootIds": [],
+      "rootIds": [
+        "R-SHCH"
+      ],
       "morphemeIds": [],
-      "rule": "root"
+      "rule": "auto_prefix"
     },
     "wordFamilyId": "WF-SHYSKHYN",
     "conceptId": "SPARE",
@@ -7334,9 +7482,11 @@
     "ipa": "/ʂħa sǝn/",
     "literalMeaning": "esirgemek, acımak",
     "derivation": {
-      "rootIds": [],
+      "rootIds": [
+        "R-SHHYE"
+      ],
       "morphemeIds": [],
-      "rule": "root"
+      "rule": "auto_fuzzy"
     },
     "wordFamilyId": "WF-SHHASYN",
     "conceptId": "SPARE",
@@ -7360,9 +7510,11 @@
     "ipa": "/ʂħa sǝn/",
     "literalMeaning": "esirgemek, acimak",
     "derivation": {
-      "rootIds": [],
+      "rootIds": [
+        "R-SHHYE"
+      ],
       "morphemeIds": [],
-      "rule": "root"
+      "rule": "auto_fuzzy"
     },
     "wordFamilyId": "WF-SHHASYN",
     "conceptId": "SPARE",
@@ -7971,7 +8123,13 @@
       "kabardian": "унэбжэ"
     },
     "notes": "C-11.2.1: ev kapisi.",
-    "corpusFrequency": 4
+    "corpusFrequency": 4,
+    "derivation": {
+      "rootIds": [
+        "R-UNE"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-UNEK1UESHCH",
@@ -7983,8 +8141,14 @@
       "adyghe": "унэкъуэщ",
       "kabardian": "унэкъуэщ"
     },
-    "notes": "C-11.2.1: ayni soyadli akraba.",
-    "corpusFrequency": 14
+    "notes": "C-11.4: dogru form.",
+    "corpusFrequency": 14,
+    "derivation": {
+      "rootIds": [
+        "R-UNE"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-UNEK1UETS1",
@@ -7997,7 +8161,13 @@
       "kabardian": "унэщӏэлъ"
     },
     "notes": "C-11.2.1: mobilya.",
-    "corpusFrequency": 1
+    "corpusFrequency": 1,
+    "derivation": {
+      "rootIds": [
+        "R-UNE"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-UNELHASH1E",
@@ -8010,7 +8180,13 @@
       "kabardian": "унэлъащӏэ"
     },
     "notes": "C-11.2.1: mobilya.",
-    "corpusFrequency": 55
+    "corpusFrequency": 55,
+    "derivation": {
+      "rootIds": [
+        "R-UNE"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-UNEPYSH1E",
@@ -8023,7 +8199,13 @@
       "kabardian": "унэпыщӏэ"
     },
     "notes": "C-11.2.1: ek bina.",
-    "corpusFrequency": 1
+    "corpusFrequency": 1,
+    "derivation": {
+      "rootIds": [
+        "R-UNE"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-UNETS1E",
@@ -8036,7 +8218,13 @@
       "kabardian": "унэцӏэ"
     },
     "notes": "C-11.2.1: soyadi.",
-    "corpusFrequency": 58
+    "corpusFrequency": 58,
+    "derivation": {
+      "rootIds": [
+        "R-UNE"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-UNETS1EDZHEGHU",
@@ -8050,7 +8238,13 @@
     },
     "notes": "C-11.2.1: ayni soyadli. [YAPAY TUREV - korpus kaniti yok] [YAPAY TUREV - korpus kaniti yok]",
     "corpusFrequency": 3,
-    "status": "synthetic"
+    "status": "synthetic",
+    "derivation": {
+      "rootIds": [
+        "R-UNE"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-UNEZEKHE",
@@ -8063,7 +8257,13 @@
       "kabardian": "унэзехьэ"
     },
     "notes": "C-11.2.1: temizlikci kadin.",
-    "corpusFrequency": 12
+    "corpusFrequency": 12,
+    "derivation": {
+      "rootIds": [
+        "R-UNE"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-UNEZETELHXHE",
@@ -8076,7 +8276,13 @@
       "kabardian": "унэзэтелъхьэ"
     },
     "notes": "C-11.2.1: duvarci.",
-    "corpusFrequency": 3
+    "corpusFrequency": 3,
+    "derivation": {
+      "rootIds": [
+        "R-UNE"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-UNEISHE",
@@ -8089,7 +8295,13 @@
       "kabardian": "унэишэ"
     },
     "notes": "C-11.2.1: gelin getirme ritueli.",
-    "corpusFrequency": 1
+    "corpusFrequency": 1,
+    "derivation": {
+      "rootIds": [
+        "R-UNE"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-UNEIDZYKHE",
@@ -8102,7 +8314,13 @@
       "kabardian": "унэидзыхьэ"
     },
     "notes": "C-11.2.1: gelin kacirma ritueli.",
-    "corpusFrequency": 10
+    "corpusFrequency": 10,
+    "derivation": {
+      "rootIds": [
+        "R-UNE"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-UNASH1E",
@@ -8116,7 +8334,13 @@
     },
     "notes": "C-11.2.1: insaatci. [YAPAY TUREV - korpus kaniti yok] [YAPAY TUREV - korpus kaniti yok]",
     "corpusFrequency": 5,
-    "status": "synthetic"
+    "status": "synthetic",
+    "derivation": {
+      "rootIds": [
+        "R-UNE"
+      ],
+      "rule": "auto_fuzzy"
+    }
   },
   {
     "id": "L-UNE1UT",
@@ -8129,7 +8353,13 @@
       "kabardian": "унэӏут"
     },
     "notes": "C-11.2.1: usak, serf.",
-    "corpusFrequency": 587
+    "corpusFrequency": 587,
+    "derivation": {
+      "rootIds": [
+        "R-UNE"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-UNEGHASH1E",
@@ -8143,7 +8373,13 @@
     },
     "notes": "C-11.2.1: yeni evli. [YAPAY TUREV - korpus kaniti yok] [YAPAY TUREV - korpus kaniti yok]",
     "corpusFrequency": 5,
-    "status": "synthetic"
+    "status": "synthetic",
+    "derivation": {
+      "rootIds": [
+        "R-UNE"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-UNEGHUEDZHIN",
@@ -8156,7 +8392,13 @@
       "kabardian": "унэгъуэджын"
     },
     "notes": "C-11.2.1: saklamak.",
-    "corpusFrequency": 2
+    "corpusFrequency": 2,
+    "derivation": {
+      "rootIds": [
+        "R-UNE"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-UNEKHUN",
@@ -8169,7 +8411,13 @@
       "kabardian": "унэхъун"
     },
     "notes": "C-11.2.1: felakete ugramak.",
-    "corpusFrequency": 55
+    "corpusFrequency": 55,
+    "derivation": {
+      "rootIds": [
+        "R-UNE"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-UNERYXHE",
@@ -8182,7 +8430,13 @@
       "kabardian": "унэрыхьэ"
     },
     "notes": "C-11.2.1: ziyaret.",
-    "corpusFrequency": 3
+    "corpusFrequency": 3,
+    "derivation": {
+      "rootIds": [
+        "R-UNE"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-UNET1YN",
@@ -8196,7 +8450,13 @@
     },
     "notes": "C-11.2.1: yonlendirmek. [YAPAY TUREV - korpus kaniti yok] [YAPAY TUREV - korpus kaniti yok]",
     "corpusFrequency": 68,
-    "status": "synthetic"
+    "status": "synthetic",
+    "derivation": {
+      "rootIds": [
+        "R-UNE"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-UNESH1YN",
@@ -8210,7 +8470,13 @@
     },
     "notes": "C-11.2.1: bosaltmak. [YAPAY TUREV - korpus kaniti yok] [YAPAY TUREV - korpus kaniti yok]",
     "corpusFrequency": 36,
-    "status": "synthetic"
+    "status": "synthetic",
+    "derivation": {
+      "rootIds": [
+        "R-UNE"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-UNEN",
@@ -8223,7 +8489,13 @@
       "kabardian": "унэн"
     },
     "notes": "C-11.2.1: evlenmek.",
-    "corpusFrequency": 127
+    "corpusFrequency": 127,
+    "derivation": {
+      "rootIds": [
+        "R-UNE"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-UNEDZHEN",
@@ -8236,7 +8508,13 @@
       "kabardian": "унэджын"
     },
     "notes": "C-11.2.1: sakatlamak.",
-    "corpusFrequency": 1
+    "corpusFrequency": 1,
+    "derivation": {
+      "rootIds": [
+        "R-UNE"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-UNEGHUEDZHIN2",
@@ -8249,7 +8527,13 @@
       "kabardian": "унэгъуэджын"
     },
     "notes": "C-11.2.1: gizlemek.",
-    "corpusFrequency": 2
+    "corpusFrequency": 2,
+    "derivation": {
+      "rootIds": [
+        "R-UNE"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-UNEK1AF1E",
@@ -8263,7 +8547,13 @@
     },
     "notes": "C-11.2.1: sansli ev. [YAPAY TUREV - korpus kaniti yok] [YAPAY TUREV - korpus kaniti yok]",
     "corpusFrequency": 2,
-    "status": "synthetic"
+    "status": "synthetic",
+    "derivation": {
+      "rootIds": [
+        "R-UNE"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-UNERYXHE-UNERYK1YU",
@@ -8277,7 +8567,13 @@
     },
     "notes": "C-11.3: ev ev dolasarak. Korpus: 3 (унэрыхьэ). [NADIR]",
     "corpusFrequency": 0,
-    "status": "rare"
+    "status": "rare",
+    "derivation": {
+      "rootIds": [
+        "R-UNE"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-BYSYMGUASHE",
@@ -8303,7 +8599,13 @@
       "kabardian": "унэжь"
     },
     "notes": "C-11.2.1: eski ev.",
-    "corpusFrequency": 11
+    "corpusFrequency": 11,
+    "derivation": {
+      "rootIds": [
+        "R-UNE"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-UNEBLYN",
@@ -8316,7 +8618,13 @@
       "kabardian": "унэ блын"
     },
     "notes": "C-11.2.1: ev duvari.",
-    "corpusFrequency": 7
+    "corpusFrequency": 7,
+    "derivation": {
+      "rootIds": [
+        "R-UNE"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-UNELHABZHE",
@@ -8329,7 +8637,13 @@
       "kabardian": "унэ лъабжьэ"
     },
     "notes": "C-11.2.1: ev temeli.",
-    "corpusFrequency": 4
+    "corpusFrequency": 4,
+    "derivation": {
+      "rootIds": [
+        "R-UNE"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-UNELHEGU",
@@ -8342,7 +8656,13 @@
       "kabardian": "унэ лъэгу"
     },
     "notes": "C-11.2.1: ev tabani.",
-    "corpusFrequency": 57
+    "corpusFrequency": 57,
+    "derivation": {
+      "rootIds": [
+        "R-UNE"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-UNEPL1ANAPE",
@@ -8356,7 +8676,13 @@
     },
     "notes": "C-11.2.1: ev kosesi. [YAPAY TUREV - korpus kaniti yok] [YAPAY TUREV - korpus kaniti yok]",
     "corpusFrequency": 4,
-    "status": "synthetic"
+    "status": "synthetic",
+    "derivation": {
+      "rootIds": [
+        "R-UNE"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-UNEKHU",
@@ -8369,7 +8695,13 @@
       "kabardian": "унэку"
     },
     "notes": "C-11.2.1: ev merkezi.",
-    "corpusFrequency": 3
+    "corpusFrequency": 3,
+    "derivation": {
+      "rootIds": [
+        "R-UNE"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-UNEDZABZHE",
@@ -8382,7 +8714,13 @@
       "kabardian": "унэ джабэ"
     },
     "notes": "C-11.2.1: ev yani.",
-    "corpusFrequency": 1
+    "corpusFrequency": 1,
+    "derivation": {
+      "rootIds": [
+        "R-UNE"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-UNEGUPE",
@@ -8395,7 +8733,13 @@
       "kabardian": "унэ гупэ"
     },
     "notes": "C-11.2.1: ev onu.",
-    "corpusFrequency": 7
+    "corpusFrequency": 7,
+    "derivation": {
+      "rootIds": [
+        "R-UNE"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-UNESHHYB",
@@ -8409,7 +8753,13 @@
     },
     "notes": "C-11.2.1: ev arkasi. [YAPAY TUREV - korpus kaniti yok] [YAPAY TUREV - korpus kaniti yok]",
     "corpusFrequency": 3,
-    "status": "synthetic"
+    "status": "synthetic",
+    "derivation": {
+      "rootIds": [
+        "R-UNE"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-ANESH",
@@ -8422,7 +8772,13 @@
       "kabardian": "анэш"
     },
     "notes": "C-11.3: dayi. Abaze, Teshu.",
-    "corpusFrequency": 167
+    "corpusFrequency": 167,
+    "derivation": {
+      "rootIds": [
+        "R-ANE"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-TYSHYPHUE",
@@ -8435,7 +8791,13 @@
       "kabardian": "адэшыпхъу"
     },
     "notes": "C-11.3: hala. Kabardeyce: адэшыпхъу. Abaze 2005.",
-    "corpusFrequency": 6
+    "corpusFrequency": 6,
+    "derivation": {
+      "rootIds": [
+        "R-ADE"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-NYSHYPHUE",
@@ -8448,7 +8810,13 @@
       "kabardian": "анэшыпхъу"
     },
     "notes": "C-11.3: teyze. Kabardeyce: анэ шыпхъу. Abaze 2005.",
-    "corpusFrequency": 8
+    "corpusFrequency": 8,
+    "derivation": {
+      "rootIds": [
+        "R-ANE"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-YATESH",
@@ -8474,7 +8842,13 @@
       "kabardian": "шыпхъу нэхъыжь"
     },
     "notes": "C-11.3: abla. Huvaj, Teshu.",
-    "corpusFrequency": 1
+    "corpusFrequency": 1,
+    "derivation": {
+      "rootIds": [
+        "R-SHYPHUE"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-MEZ",
@@ -8487,7 +8861,13 @@
       "kabardian": "мэз"
     },
     "notes": "C-11.3: orman. Korpus: 292.",
-    "corpusFrequency": 1416
+    "corpusFrequency": 1416,
+    "derivation": {
+      "rootIds": [
+        "R-MEZ"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-MEZYM",
@@ -8500,7 +8880,13 @@
       "kabardian": "мэзым"
     },
     "notes": "C-11.3: ormana. Ergatief. Korpus: 289.",
-    "corpusFrequency": 340
+    "corpusFrequency": 340,
+    "derivation": {
+      "rootIds": [
+        "R-MEZ"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-MEZXER",
@@ -8513,7 +8899,13 @@
       "kabardian": "мэзхэр"
     },
     "notes": "C-11.3: ormanlar. Plural. Korpus: 15.",
-    "corpusFrequency": 20
+    "corpusFrequency": 20,
+    "derivation": {
+      "rootIds": [
+        "R-MEZ"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-MEZY",
@@ -8526,7 +8918,13 @@
       "kabardian": "мэзы"
     },
     "notes": "C-11.3: ormani. Korpus: 8.",
-    "corpusFrequency": 566
+    "corpusFrequency": 566,
+    "derivation": {
+      "rootIds": [
+        "R-MEZ"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-MEZKOGHUM",
@@ -8540,7 +8938,13 @@
     },
     "notes": "C-11.3: orman vadisi. мэз + къогъум. [NADIR]",
     "corpusFrequency": 0,
-    "status": "rare"
+    "status": "rare",
+    "derivation": {
+      "rootIds": [
+        "R-MEZ"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-MEZLHAPE",
@@ -8554,7 +8958,13 @@
     },
     "notes": "C-11.3: orman kenari. [NADIR]",
     "corpusFrequency": 0,
-    "status": "rare"
+    "status": "rare",
+    "derivation": {
+      "rootIds": [
+        "R-MEZ"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-LHEGHUN",
@@ -8574,7 +8984,13 @@
       ]
     },
     "notes": "C-11.3: gormek. ADY: лъэгъун, KBD: лъагъун.",
-    "corpusFrequency": 573
+    "corpusFrequency": 573,
+    "derivation": {
+      "rootIds": [
+        "R-LHE"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-LHAGHUN",
@@ -8597,7 +9013,13 @@
       ]
     },
     "notes": "C-11.3: gormek; sevmek. KBD.",
-    "corpusFrequency": 1042
+    "corpusFrequency": 1042,
+    "derivation": {
+      "rootIds": [
+        "R-LHE"
+      ],
+      "rule": "auto_fuzzy"
+    }
   },
   {
     "id": "L-PLHEGHUN",
@@ -8616,7 +9038,13 @@
       ]
     },
     "notes": "C-11.3: gormek. KBD varyant.",
-    "corpusFrequency": 56
+    "corpusFrequency": 56,
+    "derivation": {
+      "rootIds": [
+        "R-PLHE"
+      ],
+      "rule": "auto_fuzzy"
+    }
   },
   {
     "id": "L-PLHEN",
@@ -8635,7 +9063,13 @@
       ]
     },
     "notes": "C-11.3: bakmak. KBD.",
-    "corpusFrequency": 634
+    "corpusFrequency": 634,
+    "derivation": {
+      "rootIds": [
+        "R-PLHE"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-LHAGHUNYGHE",
@@ -8654,7 +9088,13 @@
       ]
     },
     "notes": "C-11.3: sevgi. Etimoloji: лъагъу (gormek) + -ныгъэ.",
-    "corpusFrequency": 460
+    "corpusFrequency": 460,
+    "derivation": {
+      "rootIds": [
+        "R-LHE"
+      ],
+      "rule": "auto_fuzzy"
+    }
   },
   {
     "id": "L-LEZH",
@@ -8667,7 +9107,13 @@
       "kabardian": "лэжь"
     },
     "notes": "C-11.3: calis kok. Korpus: 6.",
-    "corpusFrequency": 4559
+    "corpusFrequency": 4559,
+    "derivation": {
+      "rootIds": [
+        "R-LEZH"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-LEZHEN",
@@ -8688,7 +9134,13 @@
       ]
     },
     "notes": "C-11.3: calismak. Korpus: 162.",
-    "corpusFrequency": 638
+    "corpusFrequency": 638,
+    "derivation": {
+      "rootIds": [
+        "R-LEZH"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-LEZHYGHE",
@@ -8701,7 +9153,13 @@
       "kabardian": "лэжьыгъэ"
     },
     "notes": "C-11.3: is, emek. Korpus: 372.",
-    "corpusFrequency": 1412
+    "corpusFrequency": 1412,
+    "derivation": {
+      "rootIds": [
+        "R-LEZH"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-LEZHENYM",
@@ -8714,7 +9172,13 @@
       "kabardian": "лэжьэным"
     },
     "notes": "C-11.3: calisma. Ergatif. Korpus: 19.",
-    "corpusFrequency": 58
+    "corpusFrequency": 58,
+    "derivation": {
+      "rootIds": [
+        "R-LEZH"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-LEZHAK1UE",
@@ -8727,7 +9191,13 @@
       "kabardian": "лэжьак1уэ"
     },
     "notes": "C-11.3: isci. Dogru form: лэжьакӏуэ. Korpus: 416.",
-    "corpusFrequency": 416
+    "corpusFrequency": 416,
+    "derivation": {
+      "rootIds": [
+        "R-LEZH"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-LAZHE-N",
@@ -8761,7 +9231,13 @@
       "Tharkaho 1991"
     ],
     "notes": "C-11.3: kusur/keder/suc. 11 deyim. Korpus: 1212.",
-    "corpusFrequency": 1325
+    "corpusFrequency": 1325,
+    "derivation": {
+      "rootIds": [
+        "R-LAZH"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-LAZHENSHE",
@@ -8770,7 +9246,13 @@
     "wordFamilyId": "WF-LAZHE",
     "conceptId": "INNOCENT",
     "notes": "C-11.3: kusursuz, masum. Korpus: 15.",
-    "corpusFrequency": 15
+    "corpusFrequency": 15,
+    "derivation": {
+      "rootIds": [
+        "R-LAZH"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-LAZHEREY",
@@ -8779,7 +9261,13 @@
     "wordFamilyId": "WF-LAZHE",
     "conceptId": "DILIGENT",
     "notes": "C-11.3: caliskan. Korpus: 1.",
-    "corpusFrequency": 3
+    "corpusFrequency": 3,
+    "derivation": {
+      "rootIds": [
+        "R-LAZH"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-LAZHESHKHUE",
@@ -8788,7 +9276,13 @@
     "wordFamilyId": "WF-LAZHE",
     "conceptId": "DISASTER",
     "notes": "C-11.3: bela. Korpus: 1.",
-    "corpusFrequency": 1
+    "corpusFrequency": 1,
+    "derivation": {
+      "rootIds": [
+        "R-LAZH"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-SHABZEBZE",
@@ -8798,7 +9292,13 @@
     "wordFamilyId": "WF-BZE",
     "conceptId": "BOWSTRING",
     "notes": "C-11.3: yay kirisi. шабзэ + бзэ. Korpus: 1.",
-    "corpusFrequency": 1
+    "corpusFrequency": 1,
+    "derivation": {
+      "rootIds": [
+        "R-SHE2"
+      ],
+      "rule": "auto_fuzzy"
+    }
   },
   {
     "id": "L-1URYBZEBZYXHYN",
@@ -8861,7 +9361,13 @@
     "conceptId": "BOW",
     "notes": "C-11.3: yay (silah). Homonim: L-BZE (dil). Korpus: 0 (homonim).",
     "corpusFrequency": 7493,
-    "lemmaId": "LEMMA-BZE"
+    "lemmaId": "LEMMA-BZE",
+    "derivation": {
+      "rootIds": [
+        "R-BZE"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-BZASH1E",
@@ -8871,7 +9377,13 @@
     "wordFamilyId": "WF-BZE2",
     "conceptId": "BOW",
     "notes": "C-11.3: yay (dogu varyanti). Korpus: 84.",
-    "corpusFrequency": 84
+    "corpusFrequency": 84,
+    "derivation": {
+      "rootIds": [
+        "R-BZE"
+      ],
+      "rule": "auto_fuzzy"
+    }
   },
   {
     "id": "L-SHCHABZ",
@@ -8881,7 +9393,13 @@
     "wordFamilyId": "WF-BZE2",
     "conceptId": "BOW",
     "notes": "C-11.3: yay (varyant). Korpus: 42.",
-    "corpusFrequency": 47
+    "corpusFrequency": 47,
+    "derivation": {
+      "rootIds": [
+        "R-SHE"
+      ],
+      "rule": "auto_fuzzy"
+    }
   },
   {
     "id": "L-SHABZEPSE",
@@ -8892,7 +9410,13 @@
     "wordFamilyId": "WF-BZE2",
     "conceptId": "BOWSTRING",
     "notes": "C-11.3: yay kirisi. шабзэ + пс. Korpus: 4.",
-    "corpusFrequency": 4
+    "corpusFrequency": 4,
+    "derivation": {
+      "rootIds": [
+        "R-SHE2"
+      ],
+      "rule": "auto_fuzzy"
+    }
   },
   {
     "id": "L-BZASH1EPSE",
@@ -8903,7 +9427,13 @@
     "conceptId": "BOWSTRING",
     "notes": "C-11.3: yay teli. бзащӀэ + пс. Korpus: 0. [NADIR]",
     "corpusFrequency": 0,
-    "status": "rare"
+    "status": "rare",
+    "derivation": {
+      "rootIds": [
+        "R-BZE"
+      ],
+      "rule": "auto_fuzzy"
+    }
   },
   {
     "id": "L-KUBZE",
@@ -8943,7 +9473,13 @@
     ],
     "notes": "C-11.3: yag. Korpus: 19752.",
     "corpusFrequency": 20161,
-    "lemmaId": "LEMMA-SHHE"
+    "lemmaId": "LEMMA-SHHE",
+    "derivation": {
+      "rootIds": [
+        "R-SHE"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-SHHE2",
@@ -8962,7 +9498,13 @@
       }
     ],
     "notes": "C-11.3: uc kez. Korpus: 19752.",
-    "corpusFrequency": 20161
+    "corpusFrequency": 20161,
+    "derivation": {
+      "rootIds": [
+        "R-SHE"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-SHHE3",
@@ -8981,7 +9523,13 @@
       }
     ],
     "notes": "C-11.3: yuz. Korpus: 19752.",
-    "corpusFrequency": 20161
+    "corpusFrequency": 20161,
+    "derivation": {
+      "rootIds": [
+        "R-SHE"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-SHHE4",
@@ -9000,7 +9548,13 @@
       }
     ],
     "notes": "C-11.3: soru eki. Мыр-щэ? = Bu mu? Korpus: 19752.",
-    "corpusFrequency": 20161
+    "corpusFrequency": 20161,
+    "derivation": {
+      "rootIds": [
+        "R-SHE"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-SHCHEN",
@@ -9023,7 +9577,13 @@
     "sources": [
       "Adygea Wiktionary"
     ],
-    "lemmaId": "LEMMA-SHCHEN"
+    "lemmaId": "LEMMA-SHCHEN",
+    "derivation": {
+      "rootIds": [
+        "R-SHE"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-SHCHEN-IMP",
@@ -9041,7 +9601,13 @@
       }
     ],
     "notes": "C-11.3: sat! emir kipi. щэн fiilinden. Korpus: 19752 (karisik).",
-    "corpusFrequency": 20161
+    "corpusFrequency": 20161,
+    "derivation": {
+      "rootIds": [
+        "R-SHE"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-UNESHHXHE",
@@ -9065,7 +9631,13 @@
       }
     ],
     "notes": "C-11.3: cati/tavan. унэ + щхьэ. 11 kaynak. Korpus: ?",
-    "corpusFrequency": 156
+    "corpusFrequency": 156,
+    "derivation": {
+      "rootIds": [
+        "R-UNE"
+      ],
+      "rule": "auto_fuzzy"
+    }
   },
   {
     "id": "L-UNESHHXHEPYXHE",
@@ -9075,7 +9647,13 @@
     "wordFamilyId": "WF-UNE",
     "conceptId": "COMMUNITY",
     "notes": "C-11.3: ortak keder yasayan koy. Korpus: ?",
-    "corpusFrequency": 1
+    "corpusFrequency": 1,
+    "derivation": {
+      "rootIds": [
+        "R-UNE"
+      ],
+      "rule": "auto_fuzzy"
+    }
   },
   {
     "id": "L-UNESHHXHEPAPC1E",
@@ -9085,7 +9663,13 @@
     "wordFamilyId": "WF-UNE",
     "conceptId": "DOME",
     "notes": "C-11.3: kubbe. Korpus: ?",
-    "corpusFrequency": 4
+    "corpusFrequency": 4,
+    "derivation": {
+      "rootIds": [
+        "R-UNE"
+      ],
+      "rule": "auto_fuzzy"
+    }
   },
   {
     "id": "L-UNESHHXHESHCH1ESE",
@@ -9095,7 +9679,13 @@
     "wordFamilyId": "WF-UNE",
     "conceptId": "RAFTER",
     "notes": "C-11.3: mertek. Korpus: ?",
-    "corpusFrequency": 1
+    "corpusFrequency": 1,
+    "derivation": {
+      "rootIds": [
+        "R-UNE"
+      ],
+      "rule": "auto_fuzzy"
+    }
   },
   {
     "id": "L-K1UEN",
@@ -9224,7 +9814,13 @@
     ],
     "notes": "C-11.3: atkuyrugu. пс + ы + удз. Korpus: ? [NADIR]",
     "corpusFrequency": 0,
-    "status": "rare"
+    "status": "rare",
+    "derivation": {
+      "rootIds": [
+        "R-PSY"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-PYUDYN",
@@ -9298,7 +9894,13 @@
     "wordFamilyId": "WF-ETHNOS",
     "conceptId": "CHECHEN",
     "corpusFrequency": 58,
-    "notes": "C-11.3: Vikisozluk 2023."
+    "notes": "C-11.3: Vikisozluk 2023.",
+    "derivation": {
+      "rootIds": [
+        "R-SHE2"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-ABKHAZ",
@@ -9334,7 +9936,13 @@
     "wordFamilyId": "WF-ANIMAL",
     "conceptId": "DEER",
     "corpusFrequency": 155,
-    "notes": "C-11.3: Vikisozluk 2023."
+    "notes": "C-11.3: Vikisozluk 2023.",
+    "derivation": {
+      "rootIds": [
+        "R-BLE"
+      ],
+      "rule": "auto_fuzzy"
+    }
   },
   {
     "id": "L-DYGHUZH",
@@ -9343,7 +9951,13 @@
     "wordFamilyId": "WF-ANIMAL",
     "conceptId": "WOLF",
     "corpusFrequency": 147,
-    "notes": "C-11.3: Vikisozluk 2023."
+    "notes": "C-11.3: Vikisozluk 2023.",
+    "derivation": {
+      "rootIds": [
+        "R-DYGHU"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-KARGHE",
@@ -9361,7 +9975,13 @@
     "wordFamilyId": "WF-ANIMAL",
     "conceptId": "OWL",
     "corpusFrequency": 24,
-    "notes": "C-11.3: Vikisozluk 2023."
+    "notes": "C-11.3: Vikisozluk 2023.",
+    "derivation": {
+      "rootIds": [
+        "R-ZHY"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-DZEL",
@@ -9370,7 +9990,13 @@
     "wordFamilyId": "WF-PLANT",
     "conceptId": "WILLOW",
     "corpusFrequency": 204,
-    "notes": "C-11.3: Vikisozluk 2023."
+    "notes": "C-11.3: Vikisozluk 2023.",
+    "derivation": {
+      "rootIds": [
+        "R-DZE"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-BZHEY",
@@ -9442,7 +10068,13 @@
     "wordFamilyId": "WF-NUM",
     "conceptId": "THREE",
     "corpusFrequency": 64367,
-    "notes": "C-11.3: uc."
+    "notes": "C-11.3: uc.",
+    "derivation": {
+      "rootIds": [
+        "R-SHCH"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-PL1Y",
@@ -9522,7 +10154,13 @@
     "wordFamilyId": "WF-NUM",
     "conceptId": "THIRTY",
     "corpusFrequency": 91,
-    "notes": "C-11.3: otuz."
+    "notes": "C-11.3: otuz.",
+    "derivation": {
+      "rootIds": [
+        "R-SHE"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-PL1YSHCH",
@@ -9552,7 +10190,13 @@
     "wordFamilyId": "WF-NUM",
     "conceptId": "SIXTY",
     "corpusFrequency": 80,
-    "notes": "C-11.3: altmis."
+    "notes": "C-11.3: altmis.",
+    "derivation": {
+      "rootIds": [
+        "R-KHY2"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-BLYSHCH",
@@ -9624,7 +10268,13 @@
       "kabardian": "фӀыцӀэ"
     },
     "corpusFrequency": 309,
-    "notes": "C-11.3: temel kelime. Kabardeyce."
+    "notes": "C-11.3: temel kelime. Kabardeyce.",
+    "derivation": {
+      "rootIds": [
+        "R-F"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-SHHXHUE",
@@ -9792,7 +10442,13 @@
       "kabardian": "щэбэт"
     },
     "corpusFrequency": 205,
-    "notes": "C-11.3: temel kelime. Kabardeyce."
+    "notes": "C-11.3: temel kelime. Kabardeyce.",
+    "derivation": {
+      "rootIds": [
+        "R-SHE"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-MAKHUE",
@@ -9806,7 +10462,13 @@
       "kabardian": "махуэ"
     },
     "corpusFrequency": 3047,
-    "notes": "C-11.3: temel kelime. Kabardeyce."
+    "notes": "C-11.3: temel kelime. Kabardeyce.",
+    "derivation": {
+      "rootIds": [
+        "R-MAKHUE"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-MAZE",
@@ -9820,7 +10482,13 @@
       "kabardian": "мазэ"
     },
     "corpusFrequency": 622,
-    "notes": "C-11.3: temel kelime. Kabardeyce."
+    "notes": "C-11.3: temel kelime. Kabardeyce.",
+    "derivation": {
+      "rootIds": [
+        "R-MEZ"
+      ],
+      "rule": "auto_fuzzy"
+    }
   },
   {
     "id": "L-ILHES",
@@ -9905,7 +10573,13 @@
     "wordFamilyId": "WF-KINSHIP",
     "corpusFrequency": 1039,
     "notes": "C-11.3: akrabalik terimi. Kabardeyce. [NADIR]",
-    "status": "rare"
+    "status": "rare",
+    "derivation": {
+      "rootIds": [
+        "R-K1UASH"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-KUERYLHXU",
@@ -9916,7 +10590,13 @@
     "wordFamilyId": "WF-KINSHIP",
     "corpusFrequency": 35,
     "notes": "C-11.3: akrabalik terimi. Kabardeyce. [NADIR]",
-    "status": "rare"
+    "status": "rare",
+    "derivation": {
+      "rootIds": [
+        "R-K1UE"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-PKHURY LHXU",
@@ -9938,7 +10618,13 @@
     "wordFamilyId": "WF-KINSHIP",
     "corpusFrequency": 957,
     "notes": "C-11.3: akrabalik terimi. Kabardeyce. [NADIR]",
-    "status": "rare"
+    "status": "rare",
+    "derivation": {
+      "rootIds": [
+        "R-NYBZHY"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-DELHXU",
@@ -9978,7 +10664,13 @@
     "corpusFrequency": 1,
     "partOfSpeech": "noun",
     "wordFamilyId": "WF-KINSHIP",
-    "notes": "C-11.3: akrabalik. Kabardeyce."
+    "notes": "C-11.3: akrabalik. Kabardeyce.",
+    "derivation": {
+      "rootIds": [
+        "R-SHCH"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-SHYQHUKH",
@@ -9989,7 +10681,13 @@
     "partOfSpeech": "noun",
     "wordFamilyId": "WF-KINSHIP",
     "notes": "C-11.3: akrabalik. Kabardeyce. [NADIR]",
-    "status": "rare"
+    "status": "rare",
+    "derivation": {
+      "rootIds": [
+        "R-SHCH"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-MELHXEGHU",
@@ -10060,7 +10758,13 @@
     "partOfSpeech": "noun",
     "wordFamilyId": "WF-PERSON",
     "corpusFrequency": 1659,
-    "notes": "C-11.3: cinsiyet/yas. Kabardeyce."
+    "notes": "C-11.3: cinsiyet/yas. Kabardeyce.",
+    "derivation": {
+      "rootIds": [
+        "R-SH1E"
+      ],
+      "rule": "auto_fuzzy"
+    }
   },
   {
     "id": "L-PSHCHASHE",
@@ -10090,7 +10794,13 @@
     "partOfSpeech": "noun",
     "wordFamilyId": "WF-BASIC",
     "corpusFrequency": 5855,
-    "notes": "C-11.3: IPA kaynakli."
+    "notes": "C-11.3: IPA kaynakli.",
+    "derivation": {
+      "rootIds": [
+        "R-ADE"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-ANE",
@@ -10100,7 +10810,13 @@
     "partOfSpeech": "noun",
     "wordFamilyId": "WF-BASIC",
     "corpusFrequency": 9928,
-    "notes": "C-11.3: IPA kaynakli."
+    "notes": "C-11.3: IPA kaynakli.",
+    "derivation": {
+      "rootIds": [
+        "R-ANE"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-DADE",
@@ -10110,7 +10826,13 @@
     "partOfSpeech": "noun",
     "wordFamilyId": "WF-BASIC",
     "corpusFrequency": 159,
-    "notes": "C-11.3: IPA kaynakli."
+    "notes": "C-11.3: IPA kaynakli.",
+    "derivation": {
+      "rootIds": [
+        "R-DADE"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-ADENAP1AS",
@@ -10121,7 +10843,13 @@
     "wordFamilyId": "WF-BASIC",
     "corpusFrequency": 0,
     "notes": "C-11.3: IPA kaynakli. [NADIR]",
-    "status": "rare"
+    "status": "rare",
+    "derivation": {
+      "rootIds": [
+        "R-ADE"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-ANENAP1AS",
@@ -10132,7 +10860,13 @@
     "wordFamilyId": "WF-BASIC",
     "corpusFrequency": 0,
     "notes": "C-11.3: IPA kaynakli. [NADIR]",
-    "status": "rare"
+    "status": "rare",
+    "derivation": {
+      "rootIds": [
+        "R-ANE"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-ANEDELHXU",
@@ -10142,7 +10876,13 @@
     "partOfSpeech": "noun",
     "wordFamilyId": "WF-BASIC",
     "corpusFrequency": 10,
-    "notes": "C-11.3: IPA kaynakli."
+    "notes": "C-11.3: IPA kaynakli.",
+    "derivation": {
+      "rootIds": [
+        "R-ANE"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-ANEPHYPHU",
@@ -10153,7 +10893,13 @@
     "wordFamilyId": "WF-BASIC",
     "corpusFrequency": 0,
     "notes": "C-11.3: IPA kaynakli. [NADIR]",
-    "status": "rare"
+    "status": "rare",
+    "derivation": {
+      "rootIds": [
+        "R-ANE"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-ANEKYLHXU",
@@ -10163,7 +10909,13 @@
     "partOfSpeech": "noun",
     "wordFamilyId": "WF-BASIC",
     "corpusFrequency": 6,
-    "notes": "C-11.3: IPA kaynakli."
+    "notes": "C-11.3: IPA kaynakli.",
+    "derivation": {
+      "rootIds": [
+        "R-ANE"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-SHYQHU",
@@ -10173,7 +10925,13 @@
     "partOfSpeech": "noun",
     "wordFamilyId": "WF-BASIC",
     "corpusFrequency": 285,
-    "notes": "C-11.3: IPA kaynakli."
+    "notes": "C-11.3: IPA kaynakli.",
+    "derivation": {
+      "rootIds": [
+        "R-SHCH"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-SHYQHUSHCHALE",
@@ -10183,7 +10941,13 @@
     "partOfSpeech": "noun",
     "wordFamilyId": "WF-BASIC",
     "corpusFrequency": 4,
-    "notes": "C-11.3: IPA kaynakli."
+    "notes": "C-11.3: IPA kaynakli.",
+    "derivation": {
+      "rootIds": [
+        "R-SHCH"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-SHYQHUKHEDZHABZ",
@@ -10194,7 +10958,13 @@
     "wordFamilyId": "WF-BASIC",
     "corpusFrequency": 0,
     "notes": "C-11.3: IPA kaynakli. [NADIR]",
-    "status": "rare"
+    "status": "rare",
+    "derivation": {
+      "rootIds": [
+        "R-SHCH"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-BZHYH'E",
@@ -10214,7 +10984,13 @@
     "partOfSpeech": "noun",
     "wordFamilyId": "WF-BASIC",
     "corpusFrequency": 186,
-    "notes": "C-11.3: IPA kaynakli."
+    "notes": "C-11.3: IPA kaynakli.",
+    "derivation": {
+      "rootIds": [
+        "R-SH1Y"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-BZYW",
@@ -10224,7 +11000,13 @@
     "partOfSpeech": "noun",
     "wordFamilyId": "WF-BASIC",
     "corpusFrequency": 478,
-    "notes": "C-11.3: IPA kaynakli."
+    "notes": "C-11.3: IPA kaynakli.",
+    "derivation": {
+      "rootIds": [
+        "R-BZU"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-SHHXHUE2",
@@ -10254,7 +11036,13 @@
     "partOfSpeech": "noun",
     "wordFamilyId": "WF-BASIC",
     "corpusFrequency": 37539,
-    "notes": "C-11.3: IPA kaynakli."
+    "notes": "C-11.3: IPA kaynakli.",
+    "derivation": {
+      "rootIds": [
+        "R-SH1E"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-SHCHALE2",
@@ -10264,7 +11052,13 @@
     "partOfSpeech": "noun",
     "wordFamilyId": "WF-BASIC",
     "corpusFrequency": 1659,
-    "notes": "C-11.3: IPA kaynakli."
+    "notes": "C-11.3: IPA kaynakli.",
+    "derivation": {
+      "rootIds": [
+        "R-SH1E"
+      ],
+      "rule": "auto_fuzzy"
+    }
   },
   {
     "id": "L-SHHXHE2",
@@ -10274,7 +11068,13 @@
     "partOfSpeech": "noun",
     "wordFamilyId": "WF-BASIC",
     "corpusFrequency": 14659,
-    "notes": "C-11.3: IPA kaynakli."
+    "notes": "C-11.3: IPA kaynakli.",
+    "derivation": {
+      "rootIds": [
+        "R-SHHYE"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-AQYL",
@@ -10315,7 +11115,13 @@
     "partOfSpeech": "noun",
     "wordFamilyId": "WF-BASIC",
     "corpusFrequency": 260,
-    "notes": "C-11.3: IPA kaynakli."
+    "notes": "C-11.3: IPA kaynakli.",
+    "derivation": {
+      "rootIds": [
+        "R-SH1Y"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-SHYPQE",
@@ -10325,7 +11131,13 @@
     "partOfSpeech": "noun",
     "wordFamilyId": "WF-BASIC",
     "corpusFrequency": 227,
-    "notes": "C-11.3: IPA kaynakli."
+    "notes": "C-11.3: IPA kaynakli.",
+    "derivation": {
+      "rootIds": [
+        "R-SHCH"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-SHHXHEL",
@@ -10335,7 +11147,13 @@
     "partOfSpeech": "noun",
     "wordFamilyId": "WF-BASIC",
     "corpusFrequency": 127,
-    "notes": "C-11.3: IPA kaynakli."
+    "notes": "C-11.3: IPA kaynakli.",
+    "derivation": {
+      "rootIds": [
+        "R-SHHYE"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-SHTEN",
@@ -10366,7 +11184,13 @@
     "wordFamilyId": "WF-BASIC",
     "corpusFrequency": 0,
     "notes": "C-11.3: IPA kaynakli. [NADIR]",
-    "status": "rare"
+    "status": "rare",
+    "derivation": {
+      "rootIds": [
+        "R-BLE"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-BLECH1YN",
@@ -10377,7 +11201,13 @@
     "wordFamilyId": "WF-BASIC",
     "corpusFrequency": 0,
     "notes": "C-11.3: IPA kaynakli. [NADIR]",
-    "status": "rare"
+    "status": "rare",
+    "derivation": {
+      "rootIds": [
+        "R-BLE"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-DAME",
@@ -10407,7 +11237,13 @@
     "wordFamilyId": "WF-ANATOMY",
     "corpusFrequency": 10,
     "notes": "C-11.3: kategori tasnifi. [NADIR]",
-    "status": "rare"
+    "status": "rare",
+    "derivation": {
+      "rootIds": [
+        "R-DZE"
+      ],
+      "rule": "auto_fuzzy"
+    }
   },
   {
     "id": "L-1UPE",
@@ -10427,7 +11263,13 @@
     "wordFamilyId": "WF-ANATOMY",
     "corpusFrequency": 65787,
     "notes": "C-11.3: kategori tasnifi. [NADIR]",
-    "status": "rare"
+    "status": "rare",
+    "derivation": {
+      "rootIds": [
+        "R-NE"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-NAP1E",
@@ -10437,7 +11279,13 @@
     "wordFamilyId": "WF-ANATOMY",
     "corpusFrequency": 310,
     "notes": "C-11.3: kategori tasnifi. [NADIR]",
-    "status": "rare"
+    "status": "rare",
+    "derivation": {
+      "rootIds": [
+        "R-NE"
+      ],
+      "rule": "auto_fuzzy"
+    }
   },
   {
     "id": "L-PE2",
@@ -10447,7 +11295,13 @@
     "wordFamilyId": "WF-ANATOMY",
     "corpusFrequency": 21319,
     "notes": "C-11.3: kategori tasnifi. [NADIR]",
-    "status": "rare"
+    "status": "rare",
+    "derivation": {
+      "rootIds": [
+        "R-PE"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-ZHE",
@@ -10467,7 +11321,13 @@
     "wordFamilyId": "WF-ANATOMY",
     "corpusFrequency": 390,
     "notes": "C-11.3: kategori tasnifi. [NADIR]",
-    "status": "rare"
+    "status": "rare",
+    "derivation": {
+      "rootIds": [
+        "R-BZE"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-PSHCHE",
@@ -10497,7 +11357,13 @@
     "wordFamilyId": "WF-ANATOMY",
     "corpusFrequency": 367,
     "notes": "C-11.3: kategori tasnifi. [NADIR]",
-    "status": "rare"
+    "status": "rare",
+    "derivation": {
+      "rootIds": [
+        "R-NE"
+      ],
+      "rule": "auto_fuzzy"
+    }
   },
   {
     "id": "L-NAPE",
@@ -10507,7 +11373,13 @@
     "wordFamilyId": "WF-ANATOMY",
     "corpusFrequency": 935,
     "notes": "C-11.3: kategori tasnifi. [NADIR]",
-    "status": "rare"
+    "status": "rare",
+    "derivation": {
+      "rootIds": [
+        "R-NE"
+      ],
+      "rule": "auto_fuzzy"
+    }
   },
   {
     "id": "L-NEK1U2",
@@ -10517,7 +11389,13 @@
     "wordFamilyId": "WF-ANATOMY",
     "corpusFrequency": 540,
     "notes": "C-11.3: kategori tasnifi. [NADIR]",
-    "status": "rare"
+    "status": "rare",
+    "derivation": {
+      "rootIds": [
+        "R-NE"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-DAME2",
@@ -10567,7 +11445,13 @@
     "wordFamilyId": "WF-ANATOMY",
     "corpusFrequency": 201,
     "notes": "C-11.3: kategori tasnifi. [NADIR]",
-    "status": "rare"
+    "status": "rare",
+    "derivation": {
+      "rootIds": [
+        "R-1E"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-1EPSHHE",
@@ -10577,7 +11461,13 @@
     "wordFamilyId": "WF-ANATOMY",
     "corpusFrequency": 101,
     "notes": "C-11.3: kategori tasnifi. [NADIR]",
-    "status": "rare"
+    "status": "rare",
+    "derivation": {
+      "rootIds": [
+        "R-1E"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-1EFRAK1E",
@@ -10587,7 +11477,13 @@
     "wordFamilyId": "WF-ANATOMY",
     "corpusFrequency": 52,
     "notes": "C-11.3: kategori tasnifi. [NADIR]",
-    "status": "rare"
+    "status": "rare",
+    "derivation": {
+      "rootIds": [
+        "R-1E"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-LHAKUE2",
@@ -10597,7 +11493,13 @@
     "wordFamilyId": "WF-ANATOMY",
     "corpusFrequency": 513,
     "notes": "C-11.3: kategori tasnifi. [NADIR]",
-    "status": "rare"
+    "status": "rare",
+    "derivation": {
+      "rootIds": [
+        "R-LHE"
+      ],
+      "rule": "auto_fuzzy"
+    }
   },
   {
     "id": "L-LHAP1E",
@@ -10607,7 +11509,13 @@
     "wordFamilyId": "WF-ANATOMY",
     "corpusFrequency": 202,
     "notes": "C-11.3: kategori tasnifi. [NADIR]",
-    "status": "rare"
+    "status": "rare",
+    "derivation": {
+      "rootIds": [
+        "R-LHE"
+      ],
+      "rule": "auto_fuzzy"
+    }
   },
   {
     "id": "L-LHEPXHUAMBE",
@@ -10617,7 +11525,13 @@
     "wordFamilyId": "WF-ANATOMY",
     "corpusFrequency": 12,
     "notes": "C-11.3: kategori tasnifi. [NADIR]",
-    "status": "rare"
+    "status": "rare",
+    "derivation": {
+      "rootIds": [
+        "R-LHE"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-LHEDAKHE",
@@ -10627,7 +11541,13 @@
     "wordFamilyId": "WF-ANATOMY",
     "corpusFrequency": 81,
     "notes": "C-11.3: kategori tasnifi. [NADIR]",
-    "status": "rare"
+    "status": "rare",
+    "derivation": {
+      "rootIds": [
+        "R-LHE"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-LHEGUAZHE",
@@ -10637,7 +11557,13 @@
     "wordFamilyId": "WF-ANATOMY",
     "corpusFrequency": 88,
     "notes": "C-11.3: kategori tasnifi. [NADIR]",
-    "status": "rare"
+    "status": "rare",
+    "derivation": {
+      "rootIds": [
+        "R-LHE"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-ZHEM",
@@ -10667,7 +11593,13 @@
     "wordFamilyId": "WF-ANIMAL",
     "corpusFrequency": 958,
     "notes": "C-11.3: kategori tasnifi. [NADIR]",
-    "status": "rare"
+    "status": "rare",
+    "derivation": {
+      "rootIds": [
+        "R-KKHUHE"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-SHYD",
@@ -10717,7 +11649,13 @@
     "wordFamilyId": "WF-ANIMAL",
     "corpusFrequency": 6,
     "notes": "C-11.3: kategori tasnifi. [NADIR]",
-    "status": "rare"
+    "status": "rare",
+    "derivation": {
+      "rootIds": [
+        "R-KKHUHE"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-BADZ",
@@ -10737,7 +11675,13 @@
     "wordFamilyId": "WF-ANIMAL",
     "corpusFrequency": 958,
     "notes": "C-11.3: kategori tasnifi. [NADIR]",
-    "status": "rare"
+    "status": "rare",
+    "derivation": {
+      "rootIds": [
+        "R-KKHUHE"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-PLHYZH2",
@@ -10817,7 +11761,13 @@
     "wordFamilyId": "WF-COLOR",
     "corpusFrequency": 309,
     "notes": "C-11.3: kategori tasnifi. [NADIR]",
-    "status": "rare"
+    "status": "rare",
+    "derivation": {
+      "rootIds": [
+        "R-F"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-TKHEMADE",
@@ -10837,7 +11787,13 @@
     "wordFamilyId": "WF-FAMILY",
     "corpusFrequency": 568,
     "notes": "C-11.3: kategori tasnifi. [NADIR]",
-    "status": "rare"
+    "status": "rare",
+    "derivation": {
+      "rootIds": [
+        "R-GUASHCH"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-PSHCHYQHUE",
@@ -10867,7 +11823,13 @@
     "wordFamilyId": "WF-FAMILY",
     "corpusFrequency": 3,
     "notes": "C-11.3: kategori tasnifi. [NADIR]",
-    "status": "rare"
+    "status": "rare",
+    "derivation": {
+      "rootIds": [
+        "R-SHCH"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-FYZABE",
@@ -10877,7 +11839,13 @@
     "wordFamilyId": "WF-FAMILY",
     "corpusFrequency": 65,
     "notes": "C-11.3: kategori tasnifi. [NADIR]",
-    "status": "rare"
+    "status": "rare",
+    "derivation": {
+      "rootIds": [
+        "R-F"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-L1YGHUABE",
@@ -11090,7 +12058,13 @@
     "wordFamilyId": "WF-FLORA",
     "corpusFrequency": 79,
     "notes": "C-11.3: kategori tasnifi. [NADIR]",
-    "status": "rare"
+    "status": "rare",
+    "derivation": {
+      "rootIds": [
+        "R-NE"
+      ],
+      "rule": "auto_fuzzy"
+    }
   },
   {
     "id": "L-K1EB",
@@ -11110,7 +12084,13 @@
     "wordFamilyId": "WF-FLORA",
     "corpusFrequency": 191,
     "notes": "C-11.3: kategori tasnifi. [NADIR]",
-    "status": "rare"
+    "status": "rare",
+    "derivation": {
+      "rootIds": [
+        "R-GU"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-KHUGU",
@@ -11264,7 +12244,13 @@
     "wordFamilyId": "WF-FRUIT",
     "corpusFrequency": 8,
     "notes": "C-11.3: meyve. Jonty, Abaze, Teshu. [NADIR]",
-    "status": "rare"
+    "status": "rare",
+    "derivation": {
+      "rootIds": [
+        "R-SH1Y"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-KYTS1E",
@@ -11305,7 +12291,13 @@
     "partOfSpeech": "noun",
     "wordFamilyId": "WF-FRUIT",
     "corpusFrequency": 79,
-    "notes": "C-11.3: meyve/sebze. Jonty, Abaze, Teshu."
+    "notes": "C-11.3: meyve/sebze. Jonty, Abaze, Teshu.",
+    "derivation": {
+      "rootIds": [
+        "R-NE"
+      ],
+      "rule": "auto_fuzzy"
+    }
   },
   {
     "id": "L-NESHEBEGU",
@@ -11316,7 +12308,13 @@
     "wordFamilyId": "WF-FRUIT",
     "corpusFrequency": 14,
     "notes": "C-11.3: meyve/sebze. Jonty, Abaze, Teshu. [NADIR]",
-    "status": "rare"
+    "status": "rare",
+    "derivation": {
+      "rootIds": [
+        "R-NE"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-KHUERZHE",
@@ -11369,7 +12367,13 @@
     "wordFamilyId": "WF-FRUIT",
     "corpusFrequency": 0,
     "notes": "C-11.3: meyve/sebze. Jonty, Abaze, Teshu. [NADIR]",
-    "status": "rare"
+    "status": "rare",
+    "derivation": {
+      "rootIds": [
+        "R-F"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-PKHEKHUEY2",
@@ -11519,7 +12523,13 @@
     "wordFamilyId": "WF-Flora",
     "corpusFrequency": 79,
     "notes": "C-11.3: kategori tasnifi. [NADIR]",
-    "status": "rare"
+    "status": "rare",
+    "derivation": {
+      "rootIds": [
+        "R-NE"
+      ],
+      "rule": "auto_fuzzy"
+    }
   },
   {
     "id": "L-K1EB2",
@@ -11559,7 +12569,13 @@
     "wordFamilyId": "WF-Flora",
     "corpusFrequency": 7,
     "notes": "C-11.3: kategori tasnifi. [NADIR]",
-    "status": "rare"
+    "status": "rare",
+    "derivation": {
+      "rootIds": [
+        "R-GUASHCH"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-BZHYNGHEGHE",
@@ -11609,7 +12625,13 @@
     "wordFamilyId": "WF-Flora",
     "corpusFrequency": 191,
     "notes": "C-11.3: kategori tasnifi. [NADIR]",
-    "status": "rare"
+    "status": "rare",
+    "derivation": {
+      "rootIds": [
+        "R-GU"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-KHUGU2",
@@ -11679,7 +12701,13 @@
     "wordFamilyId": "WF-Nature",
     "corpusFrequency": 95,
     "notes": "C-11.3: kategori tasnifi. [NADIR]",
-    "status": "rare"
+    "status": "rare",
+    "derivation": {
+      "rootIds": [
+        "R-SHCH"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-WASHX",
@@ -11699,7 +12727,13 @@
     "wordFamilyId": "WF-Nature",
     "corpusFrequency": 1764,
     "notes": "C-11.3: kategori tasnifi. [NADIR]",
-    "status": "rare"
+    "status": "rare",
+    "derivation": {
+      "rootIds": [
+        "R-UES"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-WA",
@@ -11719,7 +12753,13 @@
     "wordFamilyId": "WF-Nature",
     "corpusFrequency": 124,
     "notes": "C-11.3: kategori tasnifi. [NADIR]",
-    "status": "rare"
+    "status": "rare",
+    "derivation": {
+      "rootIds": [
+        "R-GU"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-MIN",
@@ -11779,7 +12819,13 @@
     "wordFamilyId": "WF-Time",
     "corpusFrequency": 129,
     "notes": "C-11.3: kategori tasnifi. [NADIR]",
-    "status": "rare"
+    "status": "rare",
+    "derivation": {
+      "rootIds": [
+        "R-DYGHU"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-PSHCHEDEY",
@@ -11809,7 +12855,13 @@
     "wordFamilyId": "WF-Time",
     "corpusFrequency": 35,
     "notes": "C-11.3: kategori tasnifi. [NADIR]",
-    "status": "rare"
+    "status": "rare",
+    "derivation": {
+      "rootIds": [
+        "R-NE"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-GHATKHE",
@@ -11849,7 +12901,13 @@
     "wordFamilyId": "WF-Time",
     "corpusFrequency": 186,
     "notes": "C-11.3: kategori tasnifi. [NADIR]",
-    "status": "rare"
+    "status": "rare",
+    "derivation": {
+      "rootIds": [
+        "R-SH1Y"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-SHCHYSHYLE",
@@ -11859,7 +12917,13 @@
     "wordFamilyId": "WF-Time",
     "corpusFrequency": 8,
     "notes": "C-11.3: kategori tasnifi. [NADIR]",
-    "status": "rare"
+    "status": "rare",
+    "derivation": {
+      "rootIds": [
+        "R-SH1Y"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-MAZAE",
@@ -11869,7 +12933,13 @@
     "wordFamilyId": "WF-Time",
     "corpusFrequency": 9,
     "notes": "C-11.3: kategori tasnifi. [NADIR]",
-    "status": "rare"
+    "status": "rare",
+    "derivation": {
+      "rootIds": [
+        "R-MEZ"
+      ],
+      "rule": "auto_fuzzy"
+    }
   },
   {
     "id": "L-GHATKHEPE",
@@ -11899,7 +12969,13 @@
     "wordFamilyId": "WF-Time",
     "corpusFrequency": 17,
     "notes": "C-11.3: kategori tasnifi. [NADIR]",
-    "status": "rare"
+    "status": "rare",
+    "derivation": {
+      "rootIds": [
+        "R-NE"
+      ],
+      "rule": "auto_fuzzy"
+    }
   },
   {
     "id": "L-MEKHUAUE2",
@@ -11939,7 +13015,13 @@
     "wordFamilyId": "WF-Time",
     "corpusFrequency": 11,
     "notes": "C-11.3: kategori tasnifi. [NADIR]",
-    "status": "rare"
+    "status": "rare",
+    "derivation": {
+      "rootIds": [
+        "R-FO"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-1UEGHUE",
@@ -11959,7 +13041,13 @@
     "wordFamilyId": "WF-Time",
     "corpusFrequency": 5,
     "notes": "C-11.3: kategori tasnifi. [NADIR]",
-    "status": "rare"
+    "status": "rare",
+    "derivation": {
+      "rootIds": [
+        "R-SHE"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-DYGHEGHAZE",
@@ -12009,7 +13097,13 @@
     "wordFamilyId": "WF-Occupation",
     "corpusFrequency": 30,
     "notes": "C-11.3: kategori tasnifi. [NADIR]",
-    "status": "rare"
+    "status": "rare",
+    "derivation": {
+      "rootIds": [
+        "R-BDZE"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-SHEZAQUEURYUE",
@@ -12199,7 +13293,13 @@
     "partOfSpeech": "noun",
     "wordFamilyId": "WF-Animal",
     "corpusFrequency": 478,
-    "notes": "C-11.3: IPA kaynakli."
+    "notes": "C-11.3: IPA kaynakli.",
+    "derivation": {
+      "rootIds": [
+        "R-BZU"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-SHCHA2",
@@ -12208,7 +13308,13 @@
     "partOfSpeech": "noun",
     "wordFamilyId": "WF-Adjective",
     "corpusFrequency": 37539,
-    "notes": "C-11.3: IPA kaynakli."
+    "notes": "C-11.3: IPA kaynakli.",
+    "derivation": {
+      "rootIds": [
+        "R-SH1E"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-SHCHALE3",
@@ -12217,7 +13323,13 @@
     "partOfSpeech": "noun",
     "wordFamilyId": "WF-People",
     "corpusFrequency": 1659,
-    "notes": "C-11.3: IPA kaynakli."
+    "notes": "C-11.3: IPA kaynakli.",
+    "derivation": {
+      "rootIds": [
+        "R-SH1E"
+      ],
+      "rule": "auto_fuzzy"
+    }
   },
   {
     "id": "L-SHCHEN4",
@@ -12226,7 +13338,13 @@
     "partOfSpeech": "noun",
     "wordFamilyId": "WF-Verb",
     "corpusFrequency": 3096,
-    "notes": "C-11.3: IPA kaynakli."
+    "notes": "C-11.3: IPA kaynakli.",
+    "derivation": {
+      "rootIds": [
+        "R-SHE"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-SHCHA2",
@@ -12235,7 +13353,13 @@
     "partOfSpeech": "noun",
     "wordFamilyId": "WF-Adjective",
     "corpusFrequency": 37539,
-    "notes": "C-11.3: IPA kaynakli."
+    "notes": "C-11.3: IPA kaynakli.",
+    "derivation": {
+      "rootIds": [
+        "R-SH1E"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-SHCHYGU2",
@@ -12244,7 +13368,13 @@
     "partOfSpeech": "noun",
     "wordFamilyId": "WF-Noun",
     "corpusFrequency": 260,
-    "notes": "C-11.3: IPA kaynakli."
+    "notes": "C-11.3: IPA kaynakli.",
+    "derivation": {
+      "rootIds": [
+        "R-SH1Y"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-SHCHYMAKHUE3",
@@ -12253,7 +13383,13 @@
     "partOfSpeech": "noun",
     "wordFamilyId": "WF-Time",
     "corpusFrequency": 186,
-    "notes": "C-11.3: IPA kaynakli."
+    "notes": "C-11.3: IPA kaynakli.",
+    "derivation": {
+      "rootIds": [
+        "R-SH1Y"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-SHYPQE2",
@@ -12262,7 +13398,13 @@
     "partOfSpeech": "noun",
     "wordFamilyId": "WF-Adjective",
     "corpusFrequency": 227,
-    "notes": "C-11.3: IPA kaynakli."
+    "notes": "C-11.3: IPA kaynakli.",
+    "derivation": {
+      "rootIds": [
+        "R-SHCH"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-SHYQHU2",
@@ -12271,7 +13413,13 @@
     "partOfSpeech": "noun",
     "wordFamilyId": "WF-Family",
     "corpusFrequency": 285,
-    "notes": "C-11.3: IPA kaynakli."
+    "notes": "C-11.3: IPA kaynakli.",
+    "derivation": {
+      "rootIds": [
+        "R-SHCH"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-SHHXHE3",
@@ -12280,7 +13428,13 @@
     "partOfSpeech": "noun",
     "wordFamilyId": "WF-Anatomy",
     "corpusFrequency": 14659,
-    "notes": "C-11.3: IPA kaynakli."
+    "notes": "C-11.3: IPA kaynakli.",
+    "derivation": {
+      "rootIds": [
+        "R-SHHYE"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-SHHXHEL2",
@@ -12289,7 +13443,13 @@
     "partOfSpeech": "noun",
     "wordFamilyId": "WF-Noun",
     "corpusFrequency": 127,
-    "notes": "C-11.3: IPA kaynakli."
+    "notes": "C-11.3: IPA kaynakli.",
+    "derivation": {
+      "rootIds": [
+        "R-SHHYE"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-SHTEN2",
@@ -12383,7 +13543,13 @@
     "partOfSpeech": "noun",
     "wordFamilyId": "WF-Animal",
     "corpusFrequency": 2122,
-    "notes": "C-11.3: IPA kaynakli."
+    "notes": "C-11.3: IPA kaynakli.",
+    "derivation": {
+      "rootIds": [
+        "R-DZE"
+      ],
+      "rule": "auto_fuzzy"
+    }
   },
   {
     "id": "L-DZEN",
@@ -12392,7 +13558,13 @@
     "partOfSpeech": "noun",
     "wordFamilyId": "WF-Animal",
     "corpusFrequency": 1235,
-    "notes": "C-11.3: IPA kaynakli."
+    "notes": "C-11.3: IPA kaynakli.",
+    "derivation": {
+      "rootIds": [
+        "R-DZE"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-DZHADEW",
@@ -12401,7 +13573,13 @@
     "partOfSpeech": "noun",
     "wordFamilyId": "WF-Animal",
     "corpusFrequency": 3,
-    "notes": "C-11.3: IPA kaynakli."
+    "notes": "C-11.3: IPA kaynakli.",
+    "derivation": {
+      "rootIds": [
+        "R-DZHED"
+      ],
+      "rule": "auto_fuzzy"
+    }
   },
   {
     "id": "L-DZHAN",
@@ -12419,7 +13597,13 @@
     "partOfSpeech": "noun",
     "wordFamilyId": "WF-Flora",
     "corpusFrequency": 76,
-    "notes": "C-11.3: IPA kaynakli."
+    "notes": "C-11.3: IPA kaynakli.",
+    "derivation": {
+      "rootIds": [
+        "R-F"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-FAYTSAY",
@@ -12429,7 +13613,13 @@
     "wordFamilyId": "WF-Flora",
     "corpusFrequency": 0,
     "notes": "C-11.3: IPA kaynakli. [NADIR]",
-    "status": "rare"
+    "status": "rare",
+    "derivation": {
+      "rootIds": [
+        "R-F"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-F1ETS1A",
@@ -12439,7 +13629,13 @@
     "wordFamilyId": "WF-Flora",
     "corpusFrequency": 0,
     "notes": "C-11.3: IPA kaynakli. [NADIR]",
-    "status": "rare"
+    "status": "rare",
+    "derivation": {
+      "rootIds": [
+        "R-F"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-GUASHA",
@@ -12448,7 +13644,13 @@
     "partOfSpeech": "noun",
     "wordFamilyId": "WF-People",
     "corpusFrequency": 568,
-    "notes": "C-11.3: IPA kaynakli."
+    "notes": "C-11.3: IPA kaynakli.",
+    "derivation": {
+      "rootIds": [
+        "R-GUASHCH"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-GUAPE",
@@ -12457,7 +13659,13 @@
     "partOfSpeech": "noun",
     "wordFamilyId": "WF-Adjective",
     "corpusFrequency": 388,
-    "notes": "C-11.3: IPA kaynakli."
+    "notes": "C-11.3: IPA kaynakli.",
+    "derivation": {
+      "rootIds": [
+        "R-GU"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-GUASHCH",
@@ -12466,7 +13674,13 @@
     "partOfSpeech": "noun",
     "wordFamilyId": "WF-Noun",
     "corpusFrequency": 1096,
-    "notes": "C-11.3: IPA kaynakli."
+    "notes": "C-11.3: IPA kaynakli.",
+    "derivation": {
+      "rootIds": [
+        "R-GU"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-GU",
@@ -12475,7 +13689,13 @@
     "partOfSpeech": "noun",
     "wordFamilyId": "WF-Anatomy",
     "corpusFrequency": 67044,
-    "notes": "C-11.3: IPA kaynakli."
+    "notes": "C-11.3: IPA kaynakli.",
+    "derivation": {
+      "rootIds": [
+        "R-GU"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-GUPSESAN",
@@ -12485,7 +13705,13 @@
     "wordFamilyId": "WF-Verb",
     "corpusFrequency": 0,
     "notes": "C-11.3: IPA kaynakli. [NADIR]",
-    "status": "rare"
+    "status": "rare",
+    "derivation": {
+      "rootIds": [
+        "R-GU"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-GUGHA",
@@ -12494,7 +13720,13 @@
     "partOfSpeech": "noun",
     "wordFamilyId": "WF-Noun",
     "corpusFrequency": 722,
-    "notes": "C-11.3: IPA kaynakli."
+    "notes": "C-11.3: IPA kaynakli.",
+    "derivation": {
+      "rootIds": [
+        "R-GU"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-KHEN",
@@ -12599,7 +13831,13 @@
     "partOfSpeech": "noun",
     "wordFamilyId": "WF-Anatomy",
     "corpusFrequency": 15933,
-    "notes": "C-11.3: IPA kaynakli."
+    "notes": "C-11.3: IPA kaynakli.",
+    "derivation": {
+      "rootIds": [
+        "R-LHE"
+      ],
+      "rule": "auto_fuzzy"
+    }
   },
   {
     "id": "L-LHAGHE",
@@ -12608,7 +13846,13 @@
     "partOfSpeech": "noun",
     "wordFamilyId": "WF-Adjective",
     "corpusFrequency": 705,
-    "notes": "C-11.3: IPA kaynakli."
+    "notes": "C-11.3: IPA kaynakli.",
+    "derivation": {
+      "rootIds": [
+        "R-LHE"
+      ],
+      "rule": "auto_fuzzy"
+    }
   },
   {
     "id": "L-LHAGHEGHU",
@@ -12618,7 +13862,13 @@
     "wordFamilyId": "WF-Noun",
     "corpusFrequency": 0,
     "notes": "C-11.3: IPA kaynakli. [NADIR]",
-    "status": "rare"
+    "status": "rare",
+    "derivation": {
+      "rootIds": [
+        "R-LHE"
+      ],
+      "rule": "auto_fuzzy"
+    }
   },
   {
     "id": "L-LAZHE",
@@ -12627,7 +13877,13 @@
     "partOfSpeech": "noun",
     "wordFamilyId": "WF-Noun",
     "corpusFrequency": 1325,
-    "notes": "C-11.3: IPA kaynakli."
+    "notes": "C-11.3: IPA kaynakli.",
+    "derivation": {
+      "rootIds": [
+        "R-LAZH"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-LHEDAN",
@@ -12636,7 +13892,13 @@
     "partOfSpeech": "noun",
     "wordFamilyId": "WF-Verb",
     "corpusFrequency": 6,
-    "notes": "C-11.3: IPA kaynakli."
+    "notes": "C-11.3: IPA kaynakli.",
+    "derivation": {
+      "rootIds": [
+        "R-LHE"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-LHEN",
@@ -12645,7 +13907,13 @@
     "partOfSpeech": "noun",
     "wordFamilyId": "WF-Verb",
     "corpusFrequency": 2995,
-    "notes": "C-11.3: IPA kaynakli."
+    "notes": "C-11.3: IPA kaynakli.",
+    "derivation": {
+      "rootIds": [
+        "R-LHE"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-LAZHAKUE",
@@ -12655,7 +13923,13 @@
     "wordFamilyId": "WF-Noun",
     "corpusFrequency": 0,
     "notes": "C-11.3: IPA kaynakli. [NADIR]",
-    "status": "rare"
+    "status": "rare",
+    "derivation": {
+      "rootIds": [
+        "R-LAZH"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-LAZHEN",
@@ -12664,7 +13938,13 @@
     "partOfSpeech": "noun",
     "wordFamilyId": "WF-Verb",
     "corpusFrequency": 18,
-    "notes": "C-11.3: IPA kaynakli."
+    "notes": "C-11.3: IPA kaynakli.",
+    "derivation": {
+      "rootIds": [
+        "R-LAZH"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-MAZTKHERUQAF",
@@ -12674,7 +13954,13 @@
     "wordFamilyId": "WF-Noun",
     "corpusFrequency": 0,
     "notes": "C-11.3: IPA kaynakli. [NADIR]",
-    "status": "rare"
+    "status": "rare",
+    "derivation": {
+      "rootIds": [
+        "R-MEZ"
+      ],
+      "rule": "auto_fuzzy"
+    }
   },
   {
     "id": "L-MESHCHENE",
@@ -12701,7 +13987,13 @@
     "partOfSpeech": "noun",
     "wordFamilyId": "WF-Noun",
     "corpusFrequency": 121743,
-    "notes": "C-11.3: IPA kaynakli."
+    "notes": "C-11.3: IPA kaynakli.",
+    "derivation": {
+      "rootIds": [
+        "R-NE"
+      ],
+      "rule": "auto_fuzzy"
+    }
   },
   {
     "id": "L-NANE",
@@ -12710,7 +14002,13 @@
     "partOfSpeech": "noun",
     "wordFamilyId": "WF-Family",
     "corpusFrequency": 197,
-    "notes": "C-11.3: IPA kaynakli."
+    "notes": "C-11.3: IPA kaynakli.",
+    "derivation": {
+      "rootIds": [
+        "R-NE"
+      ],
+      "rule": "auto_fuzzy"
+    }
   },
   {
     "id": "L-NAPE2",
@@ -12719,7 +14017,13 @@
     "partOfSpeech": "noun",
     "wordFamilyId": "WF-Anatomy",
     "corpusFrequency": 935,
-    "notes": "C-11.3: IPA kaynakli."
+    "notes": "C-11.3: IPA kaynakli.",
+    "derivation": {
+      "rootIds": [
+        "R-NE"
+      ],
+      "rule": "auto_fuzzy"
+    }
   },
   {
     "id": "L-NEGHUEDZHA",
@@ -12729,7 +14033,13 @@
     "wordFamilyId": "WF-Noun",
     "corpusFrequency": 0,
     "notes": "C-11.3: IPA kaynakli. [NADIR]",
-    "status": "rare"
+    "status": "rare",
+    "derivation": {
+      "rootIds": [
+        "R-NE"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-NEKHU",
@@ -12738,7 +14048,13 @@
     "partOfSpeech": "noun",
     "wordFamilyId": "WF-Noun",
     "corpusFrequency": 1568,
-    "notes": "C-11.3: IPA kaynakli."
+    "notes": "C-11.3: IPA kaynakli.",
+    "derivation": {
+      "rootIds": [
+        "R-NE"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-NYBZH",
@@ -12747,7 +14063,13 @@
     "partOfSpeech": "noun",
     "wordFamilyId": "WF-Noun",
     "corpusFrequency": 1973,
-    "notes": "C-11.3: IPA kaynakli."
+    "notes": "C-11.3: IPA kaynakli.",
+    "derivation": {
+      "rootIds": [
+        "R-NYBZHY"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-NYBZHEGHU2",
@@ -12756,7 +14078,13 @@
     "partOfSpeech": "noun",
     "wordFamilyId": "WF-People",
     "corpusFrequency": 957,
-    "notes": "C-11.3: IPA kaynakli."
+    "notes": "C-11.3: IPA kaynakli.",
+    "derivation": {
+      "rootIds": [
+        "R-NYBZHY"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-PE3",
@@ -12765,7 +14093,13 @@
     "partOfSpeech": "noun",
     "wordFamilyId": "WF-Anatomy",
     "corpusFrequency": 21319,
-    "notes": "C-11.3: IPA kaynakli."
+    "notes": "C-11.3: IPA kaynakli.",
+    "derivation": {
+      "rootIds": [
+        "R-PE"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-P1ASHCH1E",
@@ -12774,7 +14108,13 @@
     "partOfSpeech": "noun",
     "wordFamilyId": "WF-Adjective",
     "corpusFrequency": 367,
-    "notes": "C-11.3: IPA kaynakli."
+    "notes": "C-11.3: IPA kaynakli.",
+    "derivation": {
+      "rootIds": [
+        "R-P1E"
+      ],
+      "rule": "auto_fuzzy"
+    }
   },
   {
     "id": "L-PAPSHE",
@@ -12783,7 +14123,13 @@
     "partOfSpeech": "noun",
     "wordFamilyId": "WF-Postposition",
     "corpusFrequency": 1314,
-    "notes": "C-11.3: IPA kaynakli."
+    "notes": "C-11.3: IPA kaynakli.",
+    "derivation": {
+      "rootIds": [
+        "R-PE"
+      ],
+      "rule": "auto_fuzzy"
+    }
   },
   {
     "id": "L-PASE",
@@ -12792,7 +14138,13 @@
     "partOfSpeech": "noun",
     "wordFamilyId": "WF-Adjective",
     "corpusFrequency": 342,
-    "notes": "C-11.3: IPA kaynakli."
+    "notes": "C-11.3: IPA kaynakli.",
+    "derivation": {
+      "rootIds": [
+        "R-PE"
+      ],
+      "rule": "auto_fuzzy"
+    }
   },
   {
     "id": "L-PASEU",
@@ -12801,7 +14153,13 @@
     "partOfSpeech": "noun",
     "wordFamilyId": "WF-Adverb",
     "corpusFrequency": 78,
-    "notes": "C-11.3: IPA kaynakli."
+    "notes": "C-11.3: IPA kaynakli.",
+    "derivation": {
+      "rootIds": [
+        "R-PE"
+      ],
+      "rule": "auto_fuzzy"
+    }
   },
   {
     "id": "L-PADZEZHEN",
@@ -12811,7 +14169,13 @@
     "wordFamilyId": "WF-Verb",
     "corpusFrequency": 0,
     "notes": "C-11.3: IPA kaynakli. [NADIR]",
-    "status": "rare"
+    "status": "rare",
+    "derivation": {
+      "rootIds": [
+        "R-PE"
+      ],
+      "rule": "auto_fuzzy"
+    }
   },
   {
     "id": "L-PADZHAN",
@@ -12821,7 +14185,13 @@
     "wordFamilyId": "WF-Verb",
     "corpusFrequency": 0,
     "notes": "C-11.3: IPA kaynakli. [NADIR]",
-    "status": "rare"
+    "status": "rare",
+    "derivation": {
+      "rootIds": [
+        "R-PE"
+      ],
+      "rule": "auto_fuzzy"
+    }
   },
   {
     "id": "L-PADZHAZHEN",
@@ -12831,7 +14201,13 @@
     "wordFamilyId": "WF-Verb",
     "corpusFrequency": 0,
     "notes": "C-11.3: IPA kaynakli. [NADIR]",
-    "status": "rare"
+    "status": "rare",
+    "derivation": {
+      "rootIds": [
+        "R-PE"
+      ],
+      "rule": "auto_fuzzy"
+    }
   },
   {
     "id": "L-PSHCHA",
@@ -12897,7 +14273,13 @@
     "wordFamilyId": "WF-Verb",
     "corpusFrequency": 0,
     "notes": "C-11.3: IPA kaynakli. [NADIR]",
-    "status": "rare"
+    "status": "rare",
+    "derivation": {
+      "rootIds": [
+        "R-PE"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-PL1Y2",
@@ -12924,7 +14306,13 @@
     "partOfSpeech": "noun",
     "wordFamilyId": "WF-Nature",
     "corpusFrequency": 10513,
-    "notes": "C-11.3: IPA kaynakli."
+    "notes": "C-11.3: IPA kaynakli.",
+    "derivation": {
+      "rootIds": [
+        "R-PSY"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-PSHYNE",
@@ -12942,7 +14330,13 @@
     "partOfSpeech": "noun",
     "wordFamilyId": "WF-Noun",
     "corpusFrequency": 223,
-    "notes": "C-11.3: IPA kaynakli."
+    "notes": "C-11.3: IPA kaynakli.",
+    "derivation": {
+      "rootIds": [
+        "R-PSY"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-PKHASHCHAMESHCH",
@@ -13083,7 +14477,13 @@
     "partOfSpeech": "noun",
     "wordFamilyId": "WF-Noun",
     "corpusFrequency": 3313,
-    "notes": "C-11.3: IPA kaynakli."
+    "notes": "C-11.3: IPA kaynakli.",
+    "derivation": {
+      "rootIds": [
+        "R-KUE"
+      ],
+      "rule": "auto_fuzzy"
+    }
   },
   {
     "id": "L-KUAZHE",
@@ -13092,7 +14492,13 @@
     "partOfSpeech": "noun",
     "wordFamilyId": "WF-Noun",
     "corpusFrequency": 703,
-    "notes": "C-11.3: IPA kaynakli."
+    "notes": "C-11.3: IPA kaynakli.",
+    "derivation": {
+      "rootIds": [
+        "R-KUE"
+      ],
+      "rule": "auto_fuzzy"
+    }
   },
   {
     "id": "L-KUASHCH",
@@ -13101,7 +14507,13 @@
     "partOfSpeech": "noun",
     "wordFamilyId": "WF-Noun",
     "corpusFrequency": 183,
-    "notes": "C-11.3: IPA kaynakli."
+    "notes": "C-11.3: IPA kaynakli.",
+    "derivation": {
+      "rootIds": [
+        "R-KUE"
+      ],
+      "rule": "auto_fuzzy"
+    }
   },
   {
     "id": "L-KUEDAMA",
@@ -13111,7 +14523,13 @@
     "wordFamilyId": "WF-Noun",
     "corpusFrequency": 0,
     "notes": "C-11.3: IPA kaynakli. [NADIR]",
-    "status": "rare"
+    "status": "rare",
+    "derivation": {
+      "rootIds": [
+        "R-K1UE"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-KUKHUE",
@@ -13222,7 +14640,13 @@
     "partOfSpeech": "noun",
     "wordFamilyId": "WF-Verb",
     "corpusFrequency": 3096,
-    "notes": "C-11.3: IPA kaynakli."
+    "notes": "C-11.3: IPA kaynakli.",
+    "derivation": {
+      "rootIds": [
+        "R-SHE"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-SHCHYNE",
@@ -13231,7 +14655,13 @@
     "partOfSpeech": "noun",
     "wordFamilyId": "WF-Animal",
     "corpusFrequency": 1429,
-    "notes": "C-11.3: IPA kaynakli."
+    "notes": "C-11.3: IPA kaynakli.",
+    "derivation": {
+      "rootIds": [
+        "R-SHCH"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-SHCHYNEGHE",
@@ -13240,7 +14670,13 @@
     "partOfSpeech": "noun",
     "wordFamilyId": "WF-Noun",
     "corpusFrequency": 5,
-    "notes": "C-11.3: IPA kaynakli."
+    "notes": "C-11.3: IPA kaynakli.",
+    "derivation": {
+      "rootIds": [
+        "R-SHCH"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-SHCHYNEGHENSHE",
@@ -13250,7 +14686,13 @@
     "wordFamilyId": "WF-Noun",
     "corpusFrequency": 0,
     "notes": "C-11.3: IPA kaynakli. [NADIR]",
-    "status": "rare"
+    "status": "rare",
+    "derivation": {
+      "rootIds": [
+        "R-SHCH"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-SHCHYNEGHECH1E",
@@ -13260,7 +14702,13 @@
     "wordFamilyId": "WF-Noun",
     "corpusFrequency": 0,
     "notes": "C-11.3: IPA kaynakli. [NADIR]",
-    "status": "rare"
+    "status": "rare",
+    "derivation": {
+      "rootIds": [
+        "R-SHCH"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-SHCHYNEGHUE",
@@ -13270,7 +14718,13 @@
     "wordFamilyId": "WF-Noun",
     "corpusFrequency": 0,
     "notes": "C-11.3: IPA kaynakli. [NADIR]",
-    "status": "rare"
+    "status": "rare",
+    "derivation": {
+      "rootIds": [
+        "R-SHCH"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-SHCHYNEGHUENSHE",
@@ -13280,7 +14734,13 @@
     "wordFamilyId": "WF-Noun",
     "corpusFrequency": 0,
     "notes": "C-11.3: IPA kaynakli. [NADIR]",
-    "status": "rare"
+    "status": "rare",
+    "derivation": {
+      "rootIds": [
+        "R-SHCH"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-SHCHYNEN",
@@ -13289,7 +14749,13 @@
     "partOfSpeech": "noun",
     "wordFamilyId": "WF-Verb",
     "corpusFrequency": 185,
-    "notes": "C-11.3: IPA kaynakli."
+    "notes": "C-11.3: IPA kaynakli.",
+    "derivation": {
+      "rootIds": [
+        "R-SHCH"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-SHCHYPHU",
@@ -13298,7 +14764,13 @@
     "partOfSpeech": "noun",
     "wordFamilyId": "WF-Family",
     "corpusFrequency": 45,
-    "notes": "C-11.3: IPA kaynakli."
+    "notes": "C-11.3: IPA kaynakli.",
+    "derivation": {
+      "rootIds": [
+        "R-SHCH"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-TAYLHEDAN",
@@ -13448,7 +14920,13 @@
     "wordFamilyId": "WF-Time",
     "corpusFrequency": 0,
     "notes": "C-11.3: IPA kaynakli. [NADIR]",
-    "status": "rare"
+    "status": "rare",
+    "derivation": {
+      "rootIds": [
+        "R-UES"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-VASEPSCHEH",
@@ -13458,7 +14936,13 @@
     "wordFamilyId": "WF-Noun",
     "corpusFrequency": 0,
     "notes": "C-11.3: IPA kaynakli. [NADIR]",
-    "status": "rare"
+    "status": "rare",
+    "derivation": {
+      "rootIds": [
+        "R-UES"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-VASEZHASHCH",
@@ -13468,7 +14952,13 @@
     "wordFamilyId": "WF-Noun",
     "corpusFrequency": 0,
     "notes": "C-11.3: IPA kaynakli. [NADIR]",
-    "status": "rare"
+    "status": "rare",
+    "derivation": {
+      "rootIds": [
+        "R-UES"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-WEDZEFA",
@@ -13486,7 +14976,13 @@
     "partOfSpeech": "noun",
     "wordFamilyId": "WF-Noun",
     "corpusFrequency": 10154,
-    "notes": "C-11.3: IPA kaynakli."
+    "notes": "C-11.3: IPA kaynakli.",
+    "derivation": {
+      "rootIds": [
+        "R-UNE"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-KHEKHEN",
@@ -13505,7 +15001,13 @@
     "partOfSpeech": "noun",
     "wordFamilyId": "WF-Nature",
     "corpusFrequency": 25349,
-    "notes": "C-11.3: IPA kaynakli."
+    "notes": "C-11.3: IPA kaynakli.",
+    "derivation": {
+      "rootIds": [
+        "R-KHY2"
+      ],
+      "rule": "auto_prefix"
+    }
   },
   {
     "id": "L-KHUABE",
@@ -13597,5 +15099,183 @@
     "corpusFrequency": 0,
     "status": "morpheme",
     "notes": "C-11.3: dilbilgisel ek."
+  },
+  {
+    "id": "L-LHEGHUN2",
+    "form": "лъэгъун",
+    "literalMeaning": "gormek",
+    "conceptId": "SEE",
+    "partOfSpeech": "verb",
+    "wordFamilyId": "WF-SENSE",
+    "corpusFrequency": 573,
+    "notes": "C-11.4: 5 duyu organi.",
+    "derivation": {
+      "rootIds": [
+        "R-LHE"
+      ],
+      "rule": "auto_fuzzy"
+    }
+  },
+  {
+    "id": "L-PLHEGHUN2",
+    "form": "плъэгъун",
+    "literalMeaning": "gormek (birlikte)",
+    "conceptId": "SEE",
+    "partOfSpeech": "verb",
+    "wordFamilyId": "WF-SENSE",
+    "corpusFrequency": 64,
+    "notes": "C-11.4: 5 duyu organi.",
+    "derivation": {
+      "rootIds": [
+        "R-PLHE"
+      ],
+      "rule": "auto_fuzzy"
+    }
+  },
+  {
+    "id": "L-ZEKHEKHEN2",
+    "form": "зэхэхын",
+    "literalMeaning": "duymak, isitmek",
+    "conceptId": "HEAR",
+    "partOfSpeech": "verb",
+    "wordFamilyId": "WF-SENSE",
+    "corpusFrequency": 61,
+    "notes": "C-11.4: 5 duyu organi."
+  },
+  {
+    "id": "L-YE1UN",
+    "form": "еӀун",
+    "literalMeaning": "duymak (kulakla)",
+    "conceptId": "HEAR",
+    "partOfSpeech": "verb",
+    "wordFamilyId": "WF-SENSE",
+    "corpusFrequency": 80,
+    "notes": "C-11.4: 5 duyu organi."
+  },
+  {
+    "id": "L-YEPLHEN",
+    "form": "еплъын",
+    "literalMeaning": "tatmak",
+    "conceptId": "TASTE",
+    "partOfSpeech": "verb",
+    "wordFamilyId": "WF-SENSE",
+    "corpusFrequency": 370,
+    "notes": "C-11.4: 5 duyu organi."
+  },
+  {
+    "id": "L-KHEGHUEN",
+    "form": "хэгъон",
+    "literalMeaning": "tatmak, lezzet almak",
+    "conceptId": "TASTE",
+    "partOfSpeech": "verb",
+    "wordFamilyId": "WF-SENSE",
+    "corpusFrequency": 3,
+    "notes": "C-11.4: 5 duyu organi."
+  },
+  {
+    "id": "L-ME-YEUN",
+    "form": "мэ еун",
+    "literalMeaning": "koku almak",
+    "conceptId": "SMELL",
+    "partOfSpeech": "verb",
+    "wordFamilyId": "WF-SENSE",
+    "corpusFrequency": 0,
+    "notes": "C-11.4: 5 duyu organi."
+  },
+  {
+    "id": "L-ME",
+    "form": "мэ",
+    "literalMeaning": "koku",
+    "conceptId": "SMELL",
+    "partOfSpeech": "noun",
+    "wordFamilyId": "WF-SENSE",
+    "corpusFrequency": 41436,
+    "notes": "C-11.4: 5 duyu organi."
+  },
+  {
+    "id": "L-NESYN2",
+    "form": "нэсын",
+    "literalMeaning": "dokunmak, degmek",
+    "conceptId": "TOUCH",
+    "partOfSpeech": "verb",
+    "wordFamilyId": "WF-SENSE",
+    "corpusFrequency": 203,
+    "notes": "C-11.4: 5 duyu organi.",
+    "derivation": {
+      "rootIds": [
+        "R-NE"
+      ],
+      "rule": "auto_fuzzy"
+    }
+  },
+  {
+    "id": "L-YE1USEN",
+    "form": "еӀусэн",
+    "literalMeaning": "dokunmak (elle)",
+    "conceptId": "TOUCH",
+    "partOfSpeech": "verb",
+    "wordFamilyId": "WF-SENSE",
+    "corpusFrequency": 36,
+    "notes": "C-11.4: 5 duyu organi."
+  },
+  {
+    "id": "L-ME-KYSCH1IKHEN",
+    "form": "мэ къыщӀихьэн",
+    "literalMeaning": "koku almak",
+    "conceptId": "SMELL",
+    "partOfSpeech": "verb",
+    "wordFamilyId": "WF-SENSE",
+    "corpusFrequency": 0,
+    "notes": "C-11.4: 5 duyu organi."
+  },
+  {
+    "id": "L-PEMYN",
+    "form": "пэмын",
+    "literalMeaning": "koklamak",
+    "conceptId": "SMELL",
+    "partOfSpeech": "verb",
+    "wordFamilyId": "WF-SENSE",
+    "corpusFrequency": 0,
+    "notes": "C-11.4: 5 duyu organi."
+  },
+  {
+    "id": "L-KHEPEMEN",
+    "form": "хэпэмэн",
+    "literalMeaning": "egilip icini koklama",
+    "conceptId": "SMELL",
+    "partOfSpeech": "verb",
+    "wordFamilyId": "WF-SENSE",
+    "corpusFrequency": 0,
+    "notes": "C-11.4: 5 duyu organi."
+  },
+  {
+    "id": "L-1E-DELHEN",
+    "form": "Ӏэ дэлъэн",
+    "literalMeaning": "elle dokunmak",
+    "conceptId": "TOUCH",
+    "partOfSpeech": "verb",
+    "wordFamilyId": "WF-SENSE",
+    "corpusFrequency": 0,
+    "notes": "C-11.4: 5 duyu organi."
+  },
+  {
+    "id": "L-1E-SHCHYHuen",
+    "form": "Ӏэ щыхуэн",
+    "literalMeaning": "elle dokunmak",
+    "conceptId": "TOUCH",
+    "partOfSpeech": "verb",
+    "wordFamilyId": "WF-SENSE",
+    "corpusFrequency": 0,
+    "notes": "C-11.4: 5 duyu organi."
+  },
+  {
+    "id": "L-TE1EN",
+    "form": "теӀэн",
+    "literalMeaning": "dokunmak (uzerine)",
+    "conceptId": "TOUCH",
+    "partOfSpeech": "verb",
+    "wordFamilyId": "WF-SENSE",
+    "corpusFrequency": 0,
+    "notes": "C-11.4: 5 duyu organi."
   }
 ]
