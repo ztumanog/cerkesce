@@ -6,32 +6,29 @@ Kabardeyce kelimelerin kok, morfem, lemma ve cekim yapilarini modellemek.
 ## Kapsam
 
 ### P4-001: MorphologicalAnalysis
-- Kelimeleri kok, govde, ek olarak ayristirmak
 - Durum: Kontrat
 
 ### P4-002: RootExtractor
-- Kok cikarma
-- Girdi: Lexeme formu
-- Cikti: Root ID
-- Test: 5/5 PASS
+- Test: 13/13 PASS
+- ADR: ADR-0040
 
 ### P4-003: MorphemeParser
-- Morfem ayristirma
-- Girdi: Lexeme formu
-- Cikti: Morpheme listesi
-- Test: 5/5 PASS
+- Test: 15/15 PASS
 
 ### P4-004: LemmaBuilder
-- Lemma olusturma
-- Girdi: Lexeme grubu
-- Cikti: Lemma ID
-- Test: 5/5 PASS
+- Test: 10/10 PASS
+- ADR: ADR-0024
 
 ### P4-005: InflectionHandler
-- Cekim isleme
-- Girdi: Kok + ek
-- Cikti: Cekimli form
 - Test: 5/5 PASS
+
+### P4-006: PossessivePrefixDecompiler
+- Test: 15/15 PASS
+- Onekler: си-, уи-, и-, ди-, фи-, я-
+
+### P4-007: RootClassifier
+- Test: 10/10 PASS
+- ADR: ADR-0040
 
 ## Mimari Ilkeler
 
@@ -40,20 +37,26 @@ Kabardeyce kelimelerin kok, morfem, lemma ve cekim yapilarini modellemek.
 | ADR-ROOT-001 | Korunuyor |
 | Runtime Izolasyonu | Korunuyor |
 | Sadece veri uretir | Evet |
-| Discovery'ye baglanmaz | Evet |
+| Discovery''ye baglanmaz | Evet |
+| ADR-0040 (Root Taxonomy) | Uygulaniyor |
 
-## Ornek
+## Zincir
 
-sэ (sut) -> LEMMA-SHE -> MILK
-sэ (mermi) -> LEMMA-SHE -> BULLET
+PossessivePrefixDecompiler (P4-006)
+  -> RootClassifier (P4-007)
+  -> RootExtractor (P4-002)
+  -> MorphemeParser (P4-003)
+  -> LemmaBuilder (P4-004)
+  -> InflectionHandler (P4-005)
 
-лъэгъун -> R-LEGHUN
-лъагъун -> R-LEGHUN
-лъагъуныгъэ -> R-LEGHUN
+## Test Durumu
 
-## Dogrulama
-
-- 287/287 PASS
+- 305/305 PASS
 - Runtime Stabil
 - Dataset Runtime'dan Izole
 - SemanticRelations Runtime'a Girmiyor
+
+## Sonraki Adimlar
+
+1. NounCaseDecompiler (P4-008)
+2. NominalDerivationDecompiler (P4-009)
