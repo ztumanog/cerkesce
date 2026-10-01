@@ -157,3 +157,75 @@ Faz 5 kapsami resmilestirildi. Kilit acma onayi bekleniyor.
 - Sense mapping bozulmaz
 
 **Etki:** Morphology Engine, Embedding Engine, Semantic Search
+
+---
+
+## ADR-0022 — Morphological Root Taxonomy (KABUL EDILDI)
+
+**Karar:** Kokler 4 tipe ayrilir: Free, Bound, Neutral, Stable.
+
+**Oncelik:** Root Taxonomy, Prefix Slot Grammar'dan ONCE gelir.
+
+**Gerekce:** Bound root'lar tek basina gorunmez (-сы, -лъы, -ты, -гъы, -къIэ).
+Root tipi bilinmeden prefix parse yanlis sonuc verir.
+
+**Etki:** RootClassifier, RootExtractor, MorphemeParser
+
+---
+
+## ADR-0023 — Verb Prefix Slot Grammar (KABUL EDILDI)
+
+**Karar:** Fiil onekleri 7 slot sirasina gore cozumlenir.
+
+**Slotlar:** Reflexive, Directional, Version, Comitative, Locative, Causative, Factitive.
+
+**Etki:** VerbPrefixDecompiler, MorphemeParser
+
+---
+
+## ADR-0024 — Lemma Identity Rule (KABUL EDILDI)
+
+**Karar:** Model A — Homonimler TEK lemmaId altinda toplanir,
+isHomonym: true ile isaretlenir. Anlam ayrimi senses[] dizisinde yapilir.
+
+**Zincir:** Root -> Lemma -> Sense -> Concept (KISA DEVRE YAPILAMAZ)
+
+**Ornek:** шэ (sut) + шэ (mermi) -> LEMMA-SHE, 2 sense
+
+**Etki:** LemmaBuilder (morphology ana sinif), Embedding Engine
+
+---
+
+## ADR-0022 — Morphological Root Taxonomy (KABUL EDILDI)
+
+**Karar:** Kokler 4 tipe ayrilir: Free, Bound, Neutral, Stable.
+
+**Oncelik:** Root Taxonomy, Prefix Slot Grammar'dan ONCE gelir.
+
+**Gerekce:** Bound root'lar tek basina gorunmez (-сы, -лъы, -ты, -гъы, -къIэ).
+Root tipi bilinmeden prefix parse yanlis sonuc verir.
+
+**Etki:** RootClassifier, RootExtractor, MorphemeParser
+
+---
+
+## ADR-0023 — Verb Prefix Slot Grammar (KABUL EDILDI)
+
+**Karar:** Fiil onekleri 7 slot sirasina gore cozumlenir.
+
+**Slotlar:** Reflexive, Directional, Version, Comitative, Locative, Causative, Factitive.
+
+**Etki:** VerbPrefixDecompiler, MorphemeParser
+
+---
+
+## ADR-0024 — Lemma Identity Rule (KABUL EDILDI)
+
+**Karar:** Model A — Homonimler TEK lemmaId altinda toplanir,
+isHomonym: true ile isaretlenir. Anlam ayrimi senses[] dizisinde yapilir.
+
+**Zincir:** Root -> Lemma -> Sense -> Concept (KISA DEVRE YAPILAMAZ)
+
+**Ornek:** шэ (sut) + шэ (mermi) -> LEMMA-SHE, 2 sense
+
+**Etki:** LemmaBuilder (morphology ana sinif), Embedding Engine
