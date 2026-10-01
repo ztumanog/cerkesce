@@ -45,3 +45,9 @@ Embedding calismalari ayri bir arastirma hattidir, faz numarasi almaz.
 ## Referans
 - docs/governance/PHASE_RECONCILIATION.md
 - docs/architecture/adr/ADR-GOV-003-PHASE_REDEFINITION.md
+
+## P4-006 Durumu
+**P4-006 PossessivePrefixDecompiler** = Phase 4 Extension
+
+Faz 4 ana teslimatlar (P4-001...P4-005) tamamlandi.
+P4-006 ayri bir work item olarak devam ediyor.
