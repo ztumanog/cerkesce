@@ -76,7 +76,7 @@ describe('DialectConverter Certification (DC)', () => {
       ['гуфIэ','гушIо','fI-shIo'],
       ['гукIэгъу','гущIэгъу','kIe-shchIe'],
       ['гупшысэ','гупсысэ','psh-ps'],
-      ['шъхьащэ','щхьэщэ','shh-shchh'],
+      ['шъхьащэ','щхьэшэ','shh-shchh'],
       ['нэф','нэху','f-khu'],
       ['нэшъу','нэф','shu-f'],
       ['шъыпкъэ','щыпкъэ','sh-shch'],
