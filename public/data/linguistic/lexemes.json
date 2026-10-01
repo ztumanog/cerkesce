@@ -9984,5 +9984,85 @@
     "partOfSpeech": "noun",
     "wordFamilyId": "WF-KINSHIP",
     "notes": "C-11.3: akrabalik. Kabardeyce."
+  },
+  {
+    "id": "L-PKHU",
+    "form": "пхъу",
+    "literalMeaning": "kiz (kiz cocuk)",
+    "conceptId": "DAUGHTER",
+    "partOfSpeech": "noun",
+    "wordFamilyId": "WF-PERSON",
+    "corpusFrequency": 2603,
+    "notes": "C-11.3: cinsiyet/yas. Kabardeyce."
+  },
+  {
+    "id": "L-BZYLKHUGHE",
+    "form": "бзылъхугъэ",
+    "literalMeaning": "kadin",
+    "conceptId": "WOMAN",
+    "partOfSpeech": "noun",
+    "wordFamilyId": "WF-PERSON",
+    "corpusFrequency": 284,
+    "notes": "C-11.3: cinsiyet/yas. Kabardeyce."
+  },
+  {
+    "id": "L-TSYXHU",
+    "form": "цӀыхухъу",
+    "literalMeaning": "erkek (yetiskin)",
+    "conceptId": "MAN",
+    "partOfSpeech": "noun",
+    "wordFamilyId": "WF-PERSON",
+    "corpusFrequency": 213,
+    "notes": "C-11.3: cinsiyet/yas. Kabardeyce."
+  },
+  {
+    "id": "L-L1Y",
+    "form": "лӀы",
+    "literalMeaning": "erkek, adam, koca",
+    "conceptId": "HUSBAND",
+    "partOfSpeech": "noun",
+    "wordFamilyId": "WF-PERSON",
+    "corpusFrequency": 5975,
+    "notes": "C-11.3: cinsiyet/yas. Kabardeyce."
+  },
+  {
+    "id": "L-SABIY",
+    "form": "сабий",
+    "literalMeaning": "bebek, cocuk",
+    "conceptId": "CHILD",
+    "partOfSpeech": "noun",
+    "wordFamilyId": "WF-PERSON",
+    "corpusFrequency": 1159,
+    "notes": "C-11.3: cinsiyet/yas. Kabardeyce."
+  },
+  {
+    "id": "L-SHCHALE",
+    "form": "щӀалэ",
+    "literalMeaning": "genc erkek, cocuk",
+    "conceptId": "BOY",
+    "partOfSpeech": "noun",
+    "wordFamilyId": "WF-PERSON",
+    "corpusFrequency": 1659,
+    "notes": "C-11.3: cinsiyet/yas. Kabardeyce."
+  },
+  {
+    "id": "L-PSHCHASHE",
+    "form": "пщащэ",
+    "literalMeaning": "genc kiz",
+    "conceptId": "GIRL",
+    "partOfSpeech": "noun",
+    "wordFamilyId": "WF-PERSON",
+    "corpusFrequency": 131,
+    "notes": "C-11.3: cinsiyet/yas. Kabardeyce."
+  },
+  {
+    "id": "L-TSYXHUBZ",
+    "form": "цӀыхубз",
+    "literalMeaning": "kadin (kibar)",
+    "conceptId": "WOMAN",
+    "partOfSpeech": "noun",
+    "wordFamilyId": "WF-PERSON",
+    "corpusFrequency": 606,
+    "notes": "C-11.3: cinsiyet/yas. Kabardeyce."
   }
 ]
