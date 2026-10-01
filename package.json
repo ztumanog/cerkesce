@@ -7,7 +7,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "test": "vitest run",
+        "test": "vitest run",
+    "test:watch": "vitest",
+    "test:cert": "vitest run --config vitest.cert.config.ts",
+    "test:all": "npm test && npm run test:cert",
     "test:watch": "vitest",
     "ts-node": "ts-node",
     "lint": "eslint"
