@@ -183,3 +183,7 @@ c11_*.json
 dialect_*.json
 morph_*.json
 !c11_*.final.json
+
+# Telif hakki korumali PDF'ler (link ile referans verilir)
+public/data/*.pdf
+docs/**/*.pdf
