@@ -943,5 +943,149 @@
       "L-SHYPHUE"
     ],
     "notes": "Kiz kardes koku. Bilesiklerde: адэшыпхъу, анэшыпхъу."
+  },
+  {
+    "id": "M-UY",
+    "form": "уы",
+    "gloss": "faktitif (yapmak)",
+    "type": "grammatical",
+    "dialect": "kabardian",
+    "notes": "C-11.4: faktitif oneki."
+  },
+  {
+    "id": "M-PE3",
+    "form": "пэ",
+    "gloss": "on, karsi",
+    "type": "grammatical",
+    "dialect": "kabardian",
+    "notes": "C-11.4: lokal preverb. Kok: пэ (burun)."
+  },
+  {
+    "id": "M-LHE2",
+    "form": "лъэ",
+    "gloss": "arkasindan",
+    "type": "grammatical",
+    "dialect": "kabardian",
+    "notes": "C-11.4: lokal preverb. Kok: лъэ (ayak)."
+  },
+  {
+    "id": "M-KUE4",
+    "form": "къуэ",
+    "gloss": "yaninda",
+    "type": "grammatical",
+    "dialect": "kabardian",
+    "notes": "C-11.4: lokal preverb. Kok: къуэ (agiz)."
+  },
+  {
+    "id": "M-GU4",
+    "form": "гу",
+    "gloss": "yaninda",
+    "type": "grammatical",
+    "dialect": "kabardian",
+    "notes": "C-11.4: lokal preverb. Kok: гу (kalp)."
+  },
+  {
+    "id": "M-BLE",
+    "form": "блэ",
+    "gloss": "yanindan",
+    "type": "grammatical",
+    "dialect": "kabardian",
+    "notes": "C-11.4: lokal preverb. Kok: блэ (kol)."
+  },
+  {
+    "id": "M-CH1E",
+    "form": "ч1э",
+    "gloss": "altinda",
+    "type": "grammatical",
+    "dialect": "kabardian",
+    "notes": "C-11.4: lokal preverb. Kok: ч1э (dip)."
+  },
+  {
+    "id": "M-K1UETS1Y",
+    "form": "к1уэц1ы",
+    "gloss": "icinde",
+    "type": "grammatical",
+    "dialect": "kabardian",
+    "notes": "C-11.4: lokal preverb."
+  },
+  {
+    "id": "M-PKHY",
+    "form": "пхы",
+    "gloss": "icinden",
+    "type": "grammatical",
+    "dialect": "kabardian",
+    "notes": "C-11.4: lokal preverb."
+  },
+  {
+    "id": "M-DE2",
+    "form": "дэ",
+    "gloss": "birlikte",
+    "type": "grammatical",
+    "dialect": "kabardian",
+    "notes": "C-11.4: birliktelik oneki."
+  },
+  {
+    "id": "M-ZE",
+    "form": "зэ",
+    "gloss": "karsilikli",
+    "type": "grammatical",
+    "dialect": "kabardian",
+    "notes": "C-11.4: karsiliklilik oneki."
+  },
+  {
+    "id": "M-KHUE3",
+    "form": "хуэ",
+    "gloss": "icin (versiyon/potansiyel)",
+    "type": "grammatical",
+    "dialect": "kabardian",
+    "notes": "C-11.4: versiyon/potansiyel oneki."
+  },
+  {
+    "id": "M-KE",
+    "form": "къэ",
+    "gloss": "konusana dogru",
+    "type": "grammatical",
+    "dialect": "kabardian",
+    "notes": "C-11.4: yon oneki."
+  },
+  {
+    "id": "M-NE2",
+    "form": "нэ",
+    "gloss": "konusandan uzaga",
+    "type": "grammatical",
+    "dialect": "kabardian",
+    "notes": "C-11.4: yon oneki."
+  },
+  {
+    "id": "M-ZE2",
+    "form": "зэ",
+    "gloss": "donusluluk",
+    "type": "grammatical",
+    "dialect": "kabardian",
+    "notes": "C-11.4: donusluluk oneki."
+  },
+  {
+    "id": "M-1UE",
+    "form": "ӏуэ",
+    "gloss": "soylemek",
+    "type": "lexical",
+    "dialect": "kabardian",
+    "notes": "C-11.4: soylemek."
+  },
+  {
+    "id": "M-PSYSE",
+    "form": "псысэ",
+    "gloss": "dusunce",
+    "type": "lexical",
+    "dialect": "kabardian",
+    "notes": "C-11.4: dusunce."
+  },
+  {
+    "id": "M-PLHE",
+    "form": "плъэ",
+    "gloss": "bakmak",
+    "type": "lexical",
+    "dialect": "kabardian",
+    "notes": "C-11.4: bakmak."
   }
 ]
