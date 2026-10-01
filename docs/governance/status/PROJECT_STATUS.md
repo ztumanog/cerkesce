@@ -1,9 +1,8 @@
-
 ## Phase 4 — Morphology Engine
 **Status:** COMPLETED
-**Kanıt:** 20/20 PASS
+**Kanit:** PHASE_4_COMPLETION_REPORT.md
 
-| ID | Bileşen | Durum |
+| ID | Bilesen | Durum |
 |----|---------|-------|
 | P4-001 | MorphologicalAnalysis | OK |
 | P4-002 | RootExtractor | OK |
@@ -11,9 +10,9 @@
 | P4-004 | LemmaBuilder | OK |
 | P4-005 | InflectionHandler | OK |
 
-**Runtime İzolasyonu:** Korunuyor
-- Discovery'ye bağlanmaz
-- SemanticRelations runtime'da değil
+**Runtime Izolasyonu:** Korunuyor
+- Discovery'ye baglanmaz
+- SemanticRelations runtime'da degil
 - ADR-ROOT-001 uyumlu
 
 **Sonraki:** P4-006 PossessivePrefixDecompiler (planlanan)
@@ -27,7 +26,7 @@
 | Toplam Lexeme | 768 |
 | Active Lexeme | 532 |
 | Rare Lexeme | 232 |
-| Test PASS | 257/257 |
+| Test PASS | 276/276 |
 
 > **Not:** "Lexeme Count" ile "Corpus-Verified Lexeme Count" ayri tutulur.
 
@@ -44,7 +43,6 @@ Asagidaki homonimler icin LEMMA ayrimi yapildi:
 
 Referans: ADR-0024 (Model A)
 
-
 ---
 
 ## Phase 5 — Discovery Engine
@@ -57,11 +55,26 @@ Referans: ADR-0024 (Model A)
 | P5-003 | Smart Suggestions | COMPLETED |
 | P5-004 | Corpus Explorer | COMPLETED |
 
-**Referans:** docs/reports/FAZ_5_KAPANIS_RAPORU.md
+**Referans:** docs/phases/phase-5/PHASE_5_COMPLETION_REPORT.md
 
 ---
 
-## Phase 6 — Embedding/Vector Store
-**Status:** COMPLETED
+## Phase 6 — API Gateway
+**Status:** PLANLANAN
+
+**Referans:** ADR-GOV-003
+
+---
+
+## Ayri Arastirma Hatti — Embedding Research
+**Status:** GATE_COMPLETED
 
 **Referans:** docs/phases/phase-6/FAZ_6_GATE_KAPANIS_FINAL.md
+
+**Not:** ADR-GOV-003'e gore Embedding bir faz degildir.
+Ayri bir arastirma hattidir.
+
+---
+
+## Faz Uzlestirma
+**Referans:** docs/governance/PHASE_RECONCILIATION.md
