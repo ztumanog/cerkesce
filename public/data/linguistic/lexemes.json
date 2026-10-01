@@ -142,7 +142,10 @@
         "R-GU"
       ],
       "morphemeIds": [
-        "M-RY"
+        "M-GU",
+        "M-RY",
+        "M-1UE",
+        "M-N"
       ],
       "rule": "compound"
     },
@@ -246,6 +249,7 @@
         "R-GU"
       ],
       "morphemeIds": [
+        "M-GU",
         "M-PSYSE"
       ],
       "rule": "suffix"
@@ -765,7 +769,9 @@
         "R-1E"
       ],
       "morphemeIds": [
-        "M-RY"
+        "M-1E",
+        "M-RY",
+        "M-SH1E"
       ],
       "rule": "compound"
     },
@@ -1787,6 +1793,8 @@
         "R-PLHE"
       ],
       "morphemeIds": [
+        "M-PE3",
+        "M-PLHE",
         "M-N"
       ],
       "rule": "compound"
@@ -15235,7 +15243,7 @@
     "conceptId": "SMELL",
     "partOfSpeech": "verb",
     "wordFamilyId": "WF-SENSE",
-    "corpusFrequency": 0,
+    "corpusFrequency": 23,
     "notes": "C-11.4: 5 duyu organi."
   },
   {
@@ -15245,7 +15253,7 @@
     "conceptId": "SMELL",
     "partOfSpeech": "verb",
     "wordFamilyId": "WF-SENSE",
-    "corpusFrequency": 0,
+    "corpusFrequency": 3,
     "notes": "C-11.4: 5 duyu organi."
   },
   {
@@ -15277,5 +15285,36 @@
     "wordFamilyId": "WF-SENSE",
     "corpusFrequency": 0,
     "notes": "C-11.4: 5 duyu organi."
+  },
+  {
+    "id": "L-YEPEMYN",
+    "form": "епэмын",
+    "ipa": "/je:pɐ'mǝn/",
+    "literalMeaning": "koklamak",
+    "partOfSpeech": "verb",
+    "wordFamilyId": "WF-SENSE",
+    "conceptId": "SMELL",
+    "derivation": {
+      "rootIds": [
+        "R-PE"
+      ],
+      "morphemeIds": [
+        "M-YE",
+        "M-PEM",
+        "M-Y",
+        "M-N"
+      ],
+      "rule": "prefix"
+    },
+    "senses": [
+      {
+        "senseId": 1,
+        "gloss": "to smell, sniff",
+        "tr": "koklamak",
+        "ru": "понюхать"
+      }
+    ],
+    "notes": "C-11.4: koklamak. е- + пэм + -ы + -н. Vikisozluk.",
+    "corpusFrequency": 14
   }
 ]
