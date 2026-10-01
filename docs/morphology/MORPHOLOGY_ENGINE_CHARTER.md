@@ -66,3 +66,54 @@ PossessivePrefixDecompiler (P4-006)
 - 10 durum: nominative, ergative, instrumental, definite_instrumental, adverbial, plural_nominative, plural_ergative, plural_instrumental, plural_adverbial, bare
 - Test: 23/23 PASS
 - Kaynak: gl1.pdf (Kumakhov, Isim Morfolojisi)
+
+---
+
+## RUNTIME ISOLATION RULE (Mimar Karari)
+
+### Tek Cumlelik Kural
+
+Morphology Engine analiz uretir, karar uretmez.
+
+### Yasak Importlar
+
+- DiscoveryFacade
+- KnowledgeRanker
+- SemanticRetrieval
+- SearchService
+- SuggestionService
+
+### Yasak Davranislar
+
+- Vector Search
+- Embedding Lookup
+- Result Ranking
+- Runtime Decisions
+
+### Izin Verilen Ciktilar
+
+- Root
+- Morpheme
+- Lemma
+- Sense
+- Phrase AST
+- Syntax AST
+
+### Dogrulama
+
+Get-ChildItem ".\src\domain\morphology" -Filter "*.ts" | Select-String -Pattern "Discovery|KnowledgeRanker|SemanticRetrieval|SearchService|SuggestionService"
+
+Beklenen: Hic sonuc donmemeli.
+
+### Neden?
+
+Gecmiste 7 kez sistem coktu:
+
+Morphology -> Discovery -> Semantic -> Morphology
+
+Dongusel bagimlilik -> sistem kararsiz -> veri kaybi
+
+**Bu kural gevsetilemez.**
+
+**Imza:** Mimari Ekip
+**Tarih:** 2026-10-02

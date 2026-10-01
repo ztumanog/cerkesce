@@ -93,3 +93,36 @@
 
 
 
+
+---
+
+## SSOT DECLARATION (Single Source of Truth)
+
+**Tarih:** 2026-10-02
+**Karar:** Mimar onayi
+
+Bu dosya, tum ADR katalogunun TEK RESMI KAYNAGIDIR.
+
+### Kural
+
+- Tum ADR'ler bu dosyada listelenir
+- Canonical ↔ Physical eslemesi burada yapilir
+- Yeni ADR eklenince bu dosya guncellenir
+- ADR numaralandirma catismasi bu dosya ile onlenir
+
+### Sorumluluk
+
+- ADR_INDEX.md = Tek otorite
+- Diger belgeler bu dosyadan turetilir
+- ADR_DASHBOARD.md, ADR_ENVANTER.md, ADR_DECISIONS_SUMMARY.md bu dosyaya bagimlidir
+
+### Ihlal Durumunda
+
+- ADR katalogu tutarsiz hale gelir
+- Numaralandirma catismasi olusur
+- Mimari kararlar kaybolur
+
+**Bu kural gevsetilemez.**
+
+**Imza:** Mimari Ekip
+**Tarih:** 2026-10-02
