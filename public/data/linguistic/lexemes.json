@@ -1876,7 +1876,8 @@
     "notes": "Polisemik: 5 anlam. Etimoloji: [бз] + -э.",
     "corpusFrequency": 7493,
     "corpusFrequencyAdy": 42,
-    "corpusFrequencyKbd": 111
+    "corpusFrequencyKbd": 111,
+    "lemmaId": "LEMMA-BZE"
   },
   {
     "id": "L-FYN",
@@ -2409,7 +2410,8 @@
         "tr": "lateks",
         "ru": "латекс"
       }
-    ]
+    ],
+    "lemmaId": "LEMMA-SHE"
   },
   {
     "id": "L-SHE2",
@@ -2467,7 +2469,8 @@
     "notes": "Süt + kurşun + götür. IPA: /ʂɐ/. Tarmash DOGU filtresi doğruluyor.",
     "corpusFrequency": 17073,
     "corpusFrequencyAdy": 7,
-    "corpusFrequencyKbd": 206
+    "corpusFrequencyKbd": 206,
+    "lemmaId": "LEMMA-SHE"
   },
   {
     "id": "L-TKHEK1UME",
@@ -8857,7 +8860,8 @@
     "wordFamilyId": "WF-BZE2",
     "conceptId": "BOW",
     "notes": "C-11.3: yay (silah). Homonim: L-BZE (dil). Korpus: 0 (homonim).",
-    "corpusFrequency": 7493
+    "corpusFrequency": 7493,
+    "lemmaId": "LEMMA-BZE"
   },
   {
     "id": "L-BZASH1E",
@@ -8938,7 +8942,8 @@
       }
     ],
     "notes": "C-11.3: yag. Korpus: 19752.",
-    "corpusFrequency": 20161
+    "corpusFrequency": 20161,
+    "lemmaId": "LEMMA-SHHE"
   },
   {
     "id": "L-SHHE2",
@@ -9017,7 +9022,8 @@
     "ipa": "/ɕɐn/",
     "sources": [
       "Adygea Wiktionary"
-    ]
+    ],
+    "lemmaId": "LEMMA-SHCHEN"
   },
   {
     "id": "L-SHCHEN-IMP",
