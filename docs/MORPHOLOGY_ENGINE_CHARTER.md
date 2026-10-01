@@ -44,31 +44,16 @@ Kabardeyce kelimelerin kok, morfem, lemma ve cekim yapilarini modellemek.
 
 ## Ornek
 
+sэ (sut) -> LEMMA-SHE -> MILK
+sэ (mermi) -> LEMMA-SHE -> BULLET
 
-@'
-# Proje Asamalari (PHASES)
+лъэгъун -> R-LEGHUN
+лъагъун -> R-LEGHUN
+лъагъуныгъэ -> R-LEGHUN
 
-| Faz | Durum | Tarih |
-|-----|-------|-------|
-| Faz 1 | CLOSED | - |
-| Faz 2 | CLOSED | - |
-| Faz 3 | CLOSED | 2026-09-30 |
-| Faz 4 | COMPLETED | 2026-10-01 |
-| Faz 5 | COMPLETED | - |
-| Faz 6 | GATE COMPLETED | - |
-| Faz C-10 | COMPLETED | - |
-| Faz C-11 | PLANLAMA | - |
+## Dogrulama
 
-## Faz 3 Kapanis
-- Gate Review: OK
-- Team Readiness: OK
-- Steering Committee: OK
-- Gate Closure: OK
-
-## Faz 4 Kapanis
-- P4-001 MorphologicalAnalysis: OK
-- P4-002 RootExtractor: 5/5 PASS
-- P4-003 MorphemeParser: 5/5 PASS
-- P4-004 LemmaBuilder: 5/5 PASS
-- P4-005 InflectionHandler: 5/5 PASS
-- Toplam: 20/20 PASS
+- 287/287 PASS
+- Runtime Stabil
+- Dataset Runtime'dan Izole
+- SemanticRelations Runtime'a Girmiyor
