@@ -29,11 +29,7 @@ __pycache__/
 
 
 archive/dictionary-tools/
-tsconfig.tsbuildinfo
-.next/
-node_modules/
 .venv/
-__pycache__/
 # Backup klasörleri
 .backup/
 _backup_*/
@@ -49,9 +45,6 @@ public/icons/Screenshot-*.png
 *.keystore
 *.jks
 
-# Keystore
-*.keystore
-*.jks
 
 # Next.js otomatik dosya
 next-env.d.ts
@@ -60,22 +53,14 @@ next-env.d.ts
 *.bak
 *.bak.*
 
-*.bak
-*.bak.*
 
-*.bak
-*.bak.*
 
 data/*.csv
 public/data/*.csv
 corpus_results.json
 *.csv
 # Buyuk veri dosyalari
-data/*.csv
-public/data/*.csv
 public/data/*.txt
-corpus_results.json
-*.csv
 
 # Backup klasorleri
 *_backup_*
@@ -89,44 +74,24 @@ test-normalize.js
 _arsiv/
 
 # .bak dosyalari
-*.bak
-*.bak.*
 
 # Python scripts (gecici araclar)
 # _scripts/ (Faz C-9: takip ediliyor)
 scripts/
-_backup_*/
 
-# .bak dosyalari
-*.bak
-*.bak.*
 *.bak_python*
 
-# Buyuk veri dosyalari
-data/*.csv
-public/data/*.csv
-corpus_results.json
 
-# Backup klasorleri
-*_backup_*
-public/data_backup_*
 
-# Debug dosyalari
-debug_*.py
-test-normalize.js
 
-# Arsiv
-_arsiv/
 
 # Next.js.next/
 
 # Node modules
-node_modules/
 
 # VSCode.vscode/
 
 # Build
-tsconfig.tsbuildinfo
 
 data/*.txt
 
@@ -140,29 +105,23 @@ data/corpus/frequency/*.json
 data/corpus/.hf_cache/
 
 # C-9 coverage raporu takip edilsin (kucuk dosya)
-!data/corpus/frequency/coverage_report.json
 
 # C-9 coverage raporu takip edilsin
-!data/corpus/frequency/coverage_report.json
 
 # C-9 yerel yedekler
 *.bak_c8
 
-# C-9 yerel yedekler
-*.bak_c8
 
 # Web corpus cache (HTML, buyuk)
 data/corpus/webcorpora/cache/
 
 public/data/linguistic/*.bak_*
 
-public/data/linguistic/*.bak_*
 
 dtest*.txt
 
 _scripts/*.py
 
-dtest*.txt
 
 _scripts/test_*.py
 
@@ -174,9 +133,7 @@ sonuc*.txt
 
 bozuk*.txt
 
-c91_*.txt
 
-sonuc*.txt
 
 # Debug/gecici dosyalar
 c11_*.json
@@ -187,3 +144,5 @@ morph_*.json
 # Telif hakki korumali PDF'ler (link ile referans verilir)
 public/data/*.pdf
 docs/**/*.pdf
+
+docs/morphology/sources/*.pdf
