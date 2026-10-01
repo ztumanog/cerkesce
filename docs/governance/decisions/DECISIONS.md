@@ -229,3 +229,36 @@ isHomonym: true ile isaretlenir. Anlam ayrimi senses[] dizisinde yapilir.
 **Ornek:** шэ (sut) + шэ (mermi) -> LEMMA-SHE, 2 sense
 
 **Etki:** LemmaBuilder (morphology ana sinif), Embedding Engine
+
+---
+
+## RESMI KARAR KAYDI — 2026-10-01
+
+### ADR-0023 — Verb Prefix Slot Grammar
+**Karar:** KABUL EDILDI
+**Gerekce:** Kumakhov (gl4.pdf) fiil onek siralamalari
+**Onaylayan:** Mimari Ekip
+**Tarih:** 2026-10-01
+
+### ADR-0024 — Lemma Identity Rule (Model A)
+**Karar:** KABUL EDILDI
+**Gerekce:** Lemma != Sense ayrimi korunur. Homonimler tek lemmaId altinda toplanir.
+**Onaylayan:** Mimari Ekip
+**Tarih:** 2026-10-01
+
+### ADR-0040 — Morphological Root Taxonomy
+**Karar:** KABUL EDILDI
+**Gerekce:** Bound root'lar (-сы, -лъы, -ты, -гъы, -къIэ) tek basina gorunmez.
+Root Taxonomy, Prefix Slot Grammar'dan ONCE gelir.
+**Onaylayan:** Mimari Ekip
+**Tarih:** 2026-10-01
+
+### ADR-0040 Iliskisi
+ADR-0040, ADR-0022 (Meaning Graph) yerine gecmez.
+ADR-0040 bagimsiz bir ADR'dir.
+ADR-0022 = Meaning Graph (korunur)
+ADR-0040 = Morphological Root Taxonomy (yeni)
+
+### Kural
+ADR ID = immutable identity
+ADR numaralari yeniden kullanilmaz.
