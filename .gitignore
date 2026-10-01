@@ -177,3 +177,9 @@ bozuk*.txt
 c91_*.txt
 
 sonuc*.txt
+
+# Debug/gecici dosyalar
+c11_*.json
+dialect_*.json
+morph_*.json
+!c11_*.final.json
