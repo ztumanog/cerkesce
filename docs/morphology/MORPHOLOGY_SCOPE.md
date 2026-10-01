@@ -293,3 +293,62 @@ Token -> RootClassifier (FREE/BOUND) -> RootExtractor (kok) -> MorphemeParser (m
 
 **Imza:** Mimari Ekip
 **Tarih:** 2026-10-02
+
+---
+
+## 9. RUNTIME ISOLATION RULE (Mimar Karari)
+
+### Tek Cumlelik Kural
+
+Morphology Engine analiz uretir, karar uretmez.
+
+### Yasak Importlar
+
+- DiscoveryFacade
+- KnowledgeRanker
+- SemanticRetrieval
+- SearchService
+- SuggestionService
+
+### Yasak Davranislar
+
+- Vector Search
+- Embedding Lookup
+- Result Ranking
+- Runtime Decisions
+
+### Izin Verilen Ciktilar
+
+- Root
+- Morpheme
+- Lemma
+- Sense
+- Phrase AST
+- Syntax AST
+
+### Dogrulama
+
+Her yeni modul icin:
+
+Get-ChildItem ".\src\domain\morphology" -Filter "*.ts" | Select-String -Pattern "Discovery|KnowledgeRanker|SemanticRetrieval|SearchService|SuggestionService"
+
+Beklenen: Hic sonuc donmemeli.
+
+### Neden Bu Kural Var?
+
+Gecmiste 7 kez sistem coktu:
+
+Morphology -> Discovery -> Semantic -> Morphology
+
+Dongusel bagimlilik -> sistem kararsiz -> veri kaybi
+
+Bu kural, sistem stabilitesi icin kritik.
+
+### Ihlal Durumunda
+
+1. Testler fail eder
+2. Sistem kararsiz hale gelir
+3. Veri kaybi riski
+4. Dongusel bagimlilik olusur
+
+**Bu kural gevsetilemez.**
