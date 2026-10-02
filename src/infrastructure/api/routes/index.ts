@@ -2,6 +2,7 @@
  * Main API Router
  * ADR-GOV-005: API Gateway olgunlastirma
  * Phase 7.1-7.2: Analytics + Monitoring
+ * Phase 8.1.4: Metrics
  */
 
 import { Router } from 'express';
@@ -10,8 +11,12 @@ import { graphqlRouter } from './graphqlRoutes';
 import { analyticsRouter } from './analyticsRoutes';
 import { healthRouter } from './healthRoutes';
 import { dashboardRouter } from './dashboardRoutes';
+import { metricsRouter } from './metricsRoutes';
 
 const apiRouter = Router();
+
+// Metrics (auth yok - izleme icin)
+apiRouter.use('/metrics', metricsRouter);
 
 // Health (auth yok)
 apiRouter.use('/health', healthRouter);
