@@ -1,4 +1,4 @@
-# ROADMAP.md
+﻿# ROADMAP.md
 
 ## Faz Durumu
 
@@ -9,8 +9,8 @@
 | 3 | Morphological Analysis | CLOSED |
 | 4 | Morphology Engine | COMPLETED |
 | 5 | Discovery Engine | COMPLETED |
-| 6 | API Gateway | TAMAMLANDI |
-| 7 | Analytics & Export | DEVAM EDIYOR |
+| 6 | API Gateway | COMPLETED |
+| 7 | Analytics & Export | COMPLETED |
 
 ## Ayri Arastirma Hatti (Faz Degil)
 
@@ -35,3 +35,4 @@
 
 ## Referans
 - docs/governance/PHASE_RECONCILIATION.md
+

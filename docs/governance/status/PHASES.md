@@ -10,7 +10,7 @@
 | 4 | Morphology Engine | COMPLETED | PHASE_4_COMPLETION_REPORT.md |
 | 5 | Discovery Engine | COMPLETED | PHASE_5_COMPLETION_REPORT.md |
 | 6 | API Gateway | COMPLETED | ADR-GOV-005 + 87/87 cert PASS |
-| 7 | Analytics & Export | COMPLETION CANDIDATE | PHASE_7_COMPLETION_REPORT.md (beklemede) |
+| 7 | Analytics & Export | COMPLETED | PHASE_7_COMPLETION_REPORT.md (beklemede) |
 
 ## Ayri Arastirma Hatti (Faz Degil)
 
@@ -88,6 +88,7 @@ P4-006 ayri bir work item olarak devam ediyor.
 | 8.1.5 | Governance Validation | TAMAMLANDI | ADR-GOV-007 |
 
 **Referans:** `docs/architecture/adr/ADR-GOV-007-PHASE_8_PRODUCTION_READINESS.md`
+
 
 
 
