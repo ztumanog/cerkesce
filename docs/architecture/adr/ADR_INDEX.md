@@ -1,4 +1,4 @@
-# ADR INDEX — Single Source of Truth (SSOT)
+﻿# ADR INDEX — Single Source of Truth (SSOT)
 
 **Tarih:** 2026-09-25
 **Versiyon:** v1.0
@@ -131,7 +131,11 @@ Bu dosya, tum ADR katalogunun TEK RESMI KAYNAGIDIR.
 |-----|--------|-------|-------|
 | ADR-GOV-006 | Phase 2 Closure Decision | `ADR-GOV-006-PHASE_2_CLOSURE_DECISION.md` | Accepted |
 | ADR-GOV-007 | Phase 8 Production Readiness | `ADR-GOV-007-PHASE_8_PRODUCTION_READINESS.md` | Proposed |
+| ADR-GOV-008 | Phase 8 Scope Definition | `ADR-GOV-008-PHASE_8_SCOPE_DEFINITION.md` | Proposed |
+| ADR-GOV-009 | Analytics Consumption Policy | `ADR-GOV-009-ANALYTICS_CONSUMPTION_POLICY.md` | Proposed |
+| ADR-GOV-010 | Runtime Decision Authority | `ADR-GOV-010-RUNTIME_DECISION_AUTHORITY.md` | Proposed |
 | ADR-P7-001 | Phase 7 Completion Approval | `ADR-P7-001-PHASE_7_COMPLETION_APPROVAL.md` | Accepted |
 
 **Imza:** Mimari Ekip
 **Tarih:** 2026-10-02
+

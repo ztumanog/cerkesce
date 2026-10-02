@@ -1,4 +1,4 @@
-# ADR-GOV-006: Phase 8 Scope Definition
+# ADR-GOV-008: Phase 8 Scope Definition
 
 **Tarih:** 2026-10-02
 **Durum:** PROPOSED
