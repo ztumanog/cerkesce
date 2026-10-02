@@ -1,33 +1,121 @@
-name: Cerkesce Platformu CI/CD Pipeline
+﻿name: Cerkesce Platformu CI/CD Pipeline
 
 on:
   push:
-    branches: [ main, develop ]
+    branches: [main, develop]
   pull_request:
-    branches: [ main, develop ]
+    branches: [main, develop]
 
 jobs:
+  # ============================================
+  # JOB 1: Type check + Main tests
+  # ============================================
   verify-and-build:
+    name: Verify & Build
     runs-on: ubuntu-latest
 
     steps:
-      - name: Kodu Cek (Checkout)
+      - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Node.js Ortamini Hazirla
+      - name: Setup Node.js 20
         uses: actions/setup-node@v4
         with:
           node-version: '20'
           cache: 'npm'
 
-      - name: Bagimliliklari Yukle
+      - name: Install dependencies
         run: npm ci
 
-      - name: 1. Statik Tip Kontrolu (TypeScript Check)
+      - name: TypeScript check
         run: npx tsc --noEmit
 
-      - name: 2. Test Otomasyonu (Vitest Active Tests)
+      - name: Main tests
         run: npm test
 
-      - name: 3. Uretim Derleme Kontrolu (Build Gate Check)
+      - name: Build
         run: npm run build
+
+  # ============================================
+  # JOB 2: Cert tests (ayri pipeline)
+  # ============================================
+  cert-tests:
+    name: Cert Tests
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Cert tests
+        run: npx vitest run --config vitest.cert.config.ts
+
+  # ============================================
+  # JOB 3: Docker build (main push'ta)
+  # ============================================
+  docker-build:
+    name: Docker Build
+    needs: [verify-and-build, cert-tests]
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Login to GHCR
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Build & Push Next.js image
+        uses: docker/build-push-action@v5
+        with:
+          context: .
+          file: ./Dockerfile
+          push: true
+          tags: |
+            ghcr.io/${{ github.repository }}/next-app:latest
+            ghcr.io/${{ github.repository }}/next-app:${{ github.sha }}
+
+      - name: Build & Push Express image
+        uses: docker/build-push-action@v5
+        with:
+          context: .
+          file: ./Dockerfile.api
+          push: true
+          tags: |
+            ghcr.io/${{ github.repository }}/express-api:latest
+            ghcr.io/${{ github.repository }}/express-api:${{ github.sha }}
+
+  # ============================================
+  # JOB 4: Deploy (opsiyonel - main push'ta)
+  # ============================================
+  deploy:
+    name: Deploy (Vercel)
+    needs: docker-build
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Deploy to Vercel
+        run: |
+          echo "Vercel deploy placeholder"
+          echo "Vercel CLI ile deploy edilecek"
