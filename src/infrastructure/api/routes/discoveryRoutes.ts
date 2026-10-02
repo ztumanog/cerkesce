@@ -1,27 +1,31 @@
 import { Router } from 'express';
 import { ConceptNetworkController } from '../controllers/ConceptNetworkController';
 import { DiscoveryGatewayController } from '../../../presentation/api/DiscoveryGatewayController';
+import { monitoringMiddleware } from '../middleware/monitoringMiddleware';
 import { rateLimiter } from '../middleware/rateLimiter';
 import { authMiddleware } from '../middleware/authMiddleware';
-import { monitoringMiddleware } from '../middleware/monitoringMiddleware';
+import { cachingMiddleware } from '../middleware/cachingMiddleware';
 
 const discoveryRouter = Router();
 const controller = new ConceptNetworkController();
 const gateway = new DiscoveryGatewayController();
 
-// 1. Monitoring (tum endpoint'ler icin)
+// 1. Monitoring
 discoveryRouter.use(monitoringMiddleware);
 
-// 2. Rate limiting (tum endpoint'ler icin)
+// 2. Rate limiting
 discoveryRouter.use(rateLimiter);
 
-// 3. Authentication (tum endpoint'ler icin)
+// 3. Authentication
 discoveryRouter.use(authMiddleware);
 
-// 4. Concept Network (mevcut)
+// 4. Caching (GET istekleri icin)
+discoveryRouter.use(cachingMiddleware);
+
+// 5. Concept Network
 discoveryRouter.get('/concept-network', controller.getConceptNetwork);
 
-// 5. Explore (yeni)
+// 6. Explore
 discoveryRouter.get('/explore', async (req, res) => {
   const q = req.query.q as string;
   const dialect = req.query.dialect as string | undefined;
@@ -29,7 +33,7 @@ discoveryRouter.get('/explore', async (req, res) => {
   res.status(result.success ? 200 : 400).json(result);
 });
 
-// 6. Concept Details (yeni)
+// 7. Concept Details
 discoveryRouter.get('/concept/:id', async (req, res) => {
   const result = await gateway.getConceptDetails(req.params.id);
   res.status(result.success ? 200 : 400).json(result);
