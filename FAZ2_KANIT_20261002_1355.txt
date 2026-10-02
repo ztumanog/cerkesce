@@ -1,0 +1,445 @@
+﻿=== FAZ 2 KAPANIS KANIT PAKETI ===
+Tarih: 2026-10-02 13:55
+
+=== [1] KARAR KAYDI: ADR-P2-013 ===
+
+> ## GECERLI KARAR: ADR-P2-013
+  
+> ### ADR-P2-013: Phase 2 Closure - CLOSED
+  
+  **Tarih:** 2026-09-24
+  **Durum:** CLOSED
+  **Faz:** 2
+  
+  **Karar:**
+  Faz 2 resmi olarak KAPANDI.
+  
+  **Kanitlar:**
+  - TypeScript PASS
+  - Build PASS
+  - 193/193 test PASS
+  - Android Build PASS
+  - GitHub Release v1.0.0-stable
+  
+> - ADR-P2-012: ARSIVLENDI (ADR-P2-013 ile degistirildi)
+  - ADR-P2-011: Filter Flow Audit (COMPLETED)
+  
+  ---
+  
+  **Imza:** Mimar
+  **Tarih:** 2026-10-02
+
+
+
+=== [2] FAZ 2 DOSYALARI ===
+
+FullName                                                         
+--------                                                         
+E:\projeler\Cerkesce\docs\phases\phase-2\FAZ2_KAPANIS_DUYURUSU.md
+
+
+
+=== [3] PHASE 2 CLOSURE REPORT ===
+Bulunan: E:\projeler\Cerkesce\docs\phases\phase-2\FAZ2_KAPANIS_DUYURUSU.md
+# FAZ 2 KAPANIÅ DUYURUSU
+
+**Tarih:** 2026-09-24
+**Durum:** âœ… CLOSED
+
+## Ã–zet
+
+Faz 2 (Translation Platform) kapsamÄ±ndaki tÃ¼m hedefler baÅŸarÄ±yla tamamlanmÄ±ÅŸtÄ±r.
+
+Sistem teknik doÄŸrulama aÅŸamalarÄ±ndan geÃ§miÅŸ ve Product Stage evresine alÄ±nmÄ±ÅŸtÄ±r.
+
+## Tamamlanan Hedefler
+
+- TranslationRepository
+- TranslationEntry
+- TranslationGroup
+- Translation Metadata
+- MultiLanguage Search
+- Reverse Translation Search
+- Cross Dictionary Matching
+- Filter Flow Audit
+
+## Kalite KapÄ±larÄ±
+
+- TypeScript PASS
+- Build PASS
+- 62/62 Test Files PASS
+- 193/193 Tests PASS
+- Android Build PASS
+- GitHub Release PASS
+- Vercel Deployment PASS
+
+## Faz 2 Sonucu
+
+Translation Platform hedefleri baÅŸarÄ±yla tamamlanmÄ±ÅŸtÄ±r.
+
+Faz 2 resmi olarak kapatÄ±lmÄ±ÅŸtÄ±r.
+
+**Bir sonraki evre:** Product Stage
+
+=== [4] TEST KANITI ===
+
+ [32mÔ£ô[39m src/tests/domain/discovery/ContextClusterer.cert.test.ts [2m(
+[22m[2m5 tests[22m[2m)[22m[32m 24[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/domain/analytics/ReportGeneratorService.test.ts [2m(
+[22m[2m6 tests[22m[2m)[22m[32m 18[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/domain/concept/ConceptPerformance.test.ts [2m([22m
+[2m2 tests[22m[2m)[22m[32m 27[2mms[22m[39m
+[90mstdout[2m | src/tests/domain/discovery/Phase5_3_3_IntegrationValidation.
+cert.test.ts[2m > [22m[2mPhase 5.3.3 - Integration & Validation Certificati
+on (IV)[2m > [22m[2mIV-001: Cross-Lingual Discovery - Farkl─▒ dillerdeki ke
+limeler ayn─▒ k├Âk kavrama haritalanmal─▒d─▒r
+[90mstdout[2m | src/tests/domain/discovery/Phase5_3_3_IntegrationValidation.
+cert.test.ts[2m > [22m[2mPhase 5.3.3 - Integration & Validation Certificati
+on (IV)[2m > [22m[2mIV-001: Cross-Lingual Discovery - Farkl─▒ dillerdeki ke
+limeler ayn─▒ k├Âk kavrama haritalanmal─▒d─▒r
+[90mstdout[2m | src/tests/domain/discovery/Phase5_3_3_IntegrationValidation.
+cert.test.ts[2m > [22m[2mPhase 5.3.3 - Integration & Validation Certificati
+on (IV)[2m > [22m[2mIV-001: Cross-Lingual Discovery - Farkl─▒ dillerdeki ke
+limeler ayn─▒ k├Âk kavrama haritalanmal─▒d─▒r
+[90mstdout[2m | src/tests/domain/discovery/Phase5_3_3_IntegrationValidation.
+cert.test.ts[2m > [22m[2mPhase 5.3.3 - Integration & Validation Certificati
+on (IV)[2m > [22m[2mIV-002: Knowledge Ranking - Skorlar─▒n deterministik ├╝
+retimi
+[90mstdout[2m | src/tests/domain/discovery/Phase5_3_3_IntegrationValidation.
+cert.test.ts[2m > [22m[2mPhase 5.3.3 - Integration & Validation Certificati
+on (IV)[2m > [22m[2mIV-003: Context Cluster Validation - Kavramsal k├╝meler
+in do─şru olu┼şturulmas─▒
+[90mstdout[2m | src/tests/domain/discovery/Phase5_3_3_IntegrationValidation.
+cert.test.ts[2m > [22m[2mPhase 5.3.3 - Integration & Validation Certificati
+on (IV)[2m > [22m[2mIV-004: DiscoveryFacade Contract Stability - DTO projek
+siyon stabilitesi
+[90mstdout[2m | src/tests/domain/discovery/Phase5_3_3_IntegrationValidation.
+cert.test.ts[2m > [22m[2mPhase 5.3.3 - Integration & Validation Certificati
+on (IV)[2m > [22m[2mIV-005: Performance Validation - Concurrent request (E┼
+şzamanl─▒ istek) tolerans─▒
+ [32mÔ£ô[39m src/tests/domain/discovery/P5S5_04_05_PerformanceAndZeroMockCer
+t.test.ts [2m([22m[2m2 tests[22m[2m)[22m[32m 41[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/domain/discovery/Phase5_3_3_IntegrationValidation.cer
+t.test.ts [2m([22m[2m5 tests[22m[2m)[22m[32m 32[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/domain/discovery/services/Phase5_1_Sprint2_E2E.test.t
+s [2m([22m[2m1 test[22m[2m)[22m[32m 35[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/performance/Phase8_1_Performance.test.ts [2m([22m[
+2m3 tests[22m[2m)[22m[32m 25[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/domain/discovery/SmartSuggestionService.test.ts [2m(
+[22m[2m6 tests[22m[2m)[22m[32m 39[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/domain/discovery/ContextClusterer.test.ts [2m([22m
+[2m1 test[22m[2m)[22m[32m 28[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/domain/discovery/DiscoveryResultDTO.contract.test.ts 
+[2m([22m[2m1 test[22m[2m)[22m[32m 30[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/domain/morphology/SyntaxAnalyzer.test.ts [2m([22m[
+2m40 tests[22m[2m)[22m[32m 22[2mms[22m[39m
+[90mstdout[2m | src/tests/presentation/api/Phase6_1_APIGateway.cert.test.ts
+[2m > [22m[2mPhase 6.1 - REST / GraphQL Gateway Certification (API)[2m > [
+22m[2mAPI-001: Search/Explore Endpoint - Sorgu parametresi ile kesif verisi d
+onmelidir
+[90mstdout[2m | src/tests/presentation/api/Phase6_1_APIGateway.cert.test.ts
+[2m > [22m[2mPhase 6.1 - REST / GraphQL Gateway Certification (API)[2m > [
+22m[2mAPI-002: Network Projection Endpoint - Format parametresine gore Canoni
+cal veya Cytoscape donmelidir
+[90mstdout[2m | src/tests/presentation/api/Phase6_1_APIGateway.cert.test.ts
+[2m > [22m[2mPhase 6.1 - REST / GraphQL Gateway Certification (API)[2m > [
+22m[2mAPI-002: Network Projection Endpoint - Format parametresine gore Canoni
+cal veya Cytoscape donmelidir
+[90mstdout[2m | src/tests/presentation/api/Phase6_1_APIGateway.cert.test.ts
+[2m > [22m[2mPhase 6.1 - REST / GraphQL Gateway Certification (API)[2m > [
+22m[2mAPI-003: Concept Details Endpoint - Kavram detay verileri tutarli donme
+lidir
+[90mstdout[2m | src/tests/presentation/api/Phase6_1_APIGateway.cert.test.ts
+[2m > [22m[2mPhase 6.1 - REST / GraphQL Gateway Certification (API)[2m > [
+22m[2mAPI-005: Contract Stability & Performance - API yanit zarfi ve timestam
+p tutarli olmalidir
+ [32mÔ£ô[39m src/tests/presentation/api/Phase6_1_APIGateway.cert.test.ts [2
+m([22m[2m5 tests[22m[2m)[22m[32m 17[2mms[22m[39m
+[90mstdout[2m | src/tests/domain/discovery/KnowledgeExplorer.cert.test.ts[2
+m > [22m[2mPhase 5.3.2 - Knowledge Explorer API Certification (KE)[2m > [2
+2m[2mKE-001: Kelime sorgusu (water) basariyla DiscoveryResultDTO ├╝retmelidir
+[90mstdout[2m | src/tests/domain/discovery/KnowledgeExplorer.cert.test.ts[2
+m > [22m[2mPhase 5.3.2 - Knowledge Explorer API Certification (KE)[2m > [2
+2m[2mKE-002: Do─şrudan Concept ID sorgusu basariyla calismalidir
+[90mstdout[2m | src/tests/domain/discovery/KnowledgeExplorer.cert.test.ts[2
+m > [22m[2mPhase 5.3.2 - Knowledge Explorer API Certification (KE)[2m > [2
+2m[2mKE-003: Diyalekt ve derinlik parametreleri opsiyonel olarak aktarilabilm
+elidir
+[90mstdout[2m | src/tests/domain/discovery/KnowledgeExplorer.cert.test.ts[2
+m > [22m[2mPhase 5.3.2 - Knowledge Explorer API Certification (KE)[2m > [2
+2m[2mKE-004: Ranking ve Clustering sonuclari ayni DTO icinde eksiksiz bulunma
+lidir
+[90mstdout[2m | src/tests/domain/discovery/KnowledgeExplorer.cert.test.ts[2
+m > [22m[2mPhase 5.3.2 - Knowledge Explorer API Certification (KE)[2m > [2
+2m[2mKE-005: Tam U├ğtan Uca Boru Hatt─▒ (Query -> Mapper -> Traversal -> Rank
+er -> Clusterer -> DTO) do─şrulanmal─▒d─▒r
+ [32mÔ£ô[39m src/tests/domain/discovery/KnowledgeExplorer.cert.test.ts [2m(
+[22m[2m5 tests[22m[2m)[22m[32m 20[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/domain/morphology/PhraseAnalyzer.test.ts [2m([22m[
+2m30 tests[22m[2m)[22m[32m 17[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/MatchingService.test.ts [2m([22m[2m19 tests[22m[
+2m)[22m[32m 15[2mms[22m[39m
+[90mstdout[2m | src/tests/DebugRepository.test.ts[2m > [22m[2mDebug Repos
+itory[2m > [22m[2mrepo.findAll() ├ğal─▒┼şmal─▒
+[90mstdout[2m | src/tests/DebugRepository.test.ts[2m > [22m[2mDebug Repos
+itory[2m > [22m[2mrepo.findByMeaning('water') ├ğal─▒┼şmal─▒
+[90mstdout[2m | src/tests/DebugRepository.test.ts[2m > [22m[2mDebug Repos
+itory[2m > [22m[2mrepo.search('water') ├ğal─▒┼şmal─▒
+ [32mÔ£ô[39m src/tests/DebugRepository.test.ts [2m([22m[2m3 tests[22m[2
+m)[22m[32m 12[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/domain/morphology/VerbDecompiler.test.ts [2m([22m[
+2m24 tests[22m[2m)[22m[32m 15[2mms[22m[39m
+[90mstdout[2m | src/tests/domain/discovery/DiscoveryFacadeHardCoded.cert.tes
+t.ts[2m > [22m[2mDiscoveryFacade Hard-Coded Certification (DHC)[2m > [22m
+[2mDHC-001: explore() should NOT always return WATER concept
+[90mstdout[2m | src/tests/domain/discovery/DiscoveryFacadeHardCoded.cert.tes
+t.ts[2m > [22m[2mDiscoveryFacade Hard-Coded Certification (DHC)[2m > [22m
+[2mDHC-001: explore() should NOT always return WATER concept
+[90mstdout[2m | src/tests/domain/discovery/DiscoveryFacadeHardCoded.cert.tes
+t.ts[2m > [22m[2mDiscoveryFacade Hard-Coded Certification (DHC)[2m > [22m
+[2mDHC-001: explore() should NOT always return WATER concept
+[90mstdout[2m | src/tests/domain/discovery/DiscoveryFacadeHardCoded.cert.tes
+t.ts[2m > [22m[2mDiscoveryFacade Hard-Coded Certification (DHC)[2m > [22m
+[2mDHC-001: explore() should NOT always return WATER concept
+ [32mÔ£ô[39m src/tests/domain/discovery/DiscoveryFacadeHardCoded.cert.test.t
+s [2m([22m[2m1 test[22m[2m)[22m[32m 13[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/domain/dialect/DialectResolver.test.ts [2m([22m[2m
+7 tests[22m[2m)[22m[32m 11[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/StressAndPerformance.test.ts [2m([22m[2m3 tests[2
+2m[2m)[22m[33m 2223[2mms[22m[39m
+[90mstdout[2m | src/tests/domain/discovery/DiscoveryFacadeRouting.cert.test.
+ts[2m > [22m[2mDiscoveryFacade Semantic Routing (DSR)[2m > [22m[2mDSR-00
+1: water, tree, horse farkli concept donmeli
+[90mstdout[2m | src/tests/domain/discovery/DiscoveryFacadeRouting.cert.test.
+ts[2m > [22m[2mDiscoveryFacade Semantic Routing (DSR)[2m > [22m[2mDSR-00
+1: water, tree, horse farkli concept donmeli
+[90mstdout[2m | src/tests/domain/discovery/DiscoveryFacadeRouting.cert.test.
+ts[2m > [22m[2mDiscoveryFacade Semantic Routing (DSR)[2m > [22m[2mDSR-00
+1: water, tree, horse farkli concept donmeli
+ [32mÔ£ô[39m src/tests/domain/morphology/AdverbDecompiler.test.ts [2m([22m
+[2m24 tests[22m[2m)[22m[32m 14[2mms[22m[39m
+[90mstdout[2m | src/tests/domain/discovery/DiscoveryFacadeRouting.cert.test.
+ts[2m > [22m[2mDiscoveryFacade Semantic Routing (DSR)[2m > [22m[2mDSR-00
+1: water, tree, horse farkli concept donmeli
+[90mstdout[2m | src/tests/domain/discovery/DiscoveryFacadeRouting.cert.test.
+ts[2m > [22m[2mDiscoveryFacade Semantic Routing (DSR)[2m > [22m[2mDSR-00
+2: water ve su ayni concept donmeli
+[90mstdout[2m | src/tests/domain/discovery/DiscoveryFacadeRouting.cert.test.
+ts[2m > [22m[2mDiscoveryFacade Semantic Routing (DSR)[2m > [22m[2mDSR-00
+2: water ve su ayni concept donmeli
+[90mstdout[2m | src/tests/domain/discovery/DiscoveryFacadeRouting.cert.test.
+ts[2m > [22m[2mDiscoveryFacade Semantic Routing (DSR)[2m > [22m[2mDSR-00
+2: water ve su ayni concept donmeli
+ [32mÔ£ô[39m src/tests/domain/discovery/DiscoveryFacadeRouting.cert.test.ts 
+[2m([22m[2m2 tests[22m[2m)[22m[32m 15[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/domain/discovery/services/GraphTraversalService.test.
+ts [2m([22m[2m8 tests[22m[2m)[22m[32m 15[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/ReverseTranslationSearch.test.ts [2m([22m[2m14 tes
+ts[22m[2m)[22m[32m 15[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/domain/analytics/ExportHardening.test.ts [2m([22m[
+2m8 tests[22m[2m)[22m[32m 15[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/domain/morphology/PostpositionDecompiler.test.ts [2m
+([22m[2m24 tests[22m[2m)[22m[32m 11[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/domain/discovery/Sprint2Orchestration.test.ts [2m([
+22m[2m3 tests[22m[2m)[22m[32m 13[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/domain/morphology/ParticleDecompiler.test.ts [2m([2
+2m[2m24 tests[22m[2m)[22m[32m 11[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/domain/linguistic/DialectConverter.c11.test.ts [2m(
+[22m[2m1 test[22m[2m)[22m[32m 12[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/domain/morphology/LemmaBuilder.test.ts [2m([22m[2m
+10 tests[22m[2m)[22m[32m 13[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/domain/discovery/WordFamilyResolver.test.ts [2m([22
+m[2m10 tests[22m[2m)[22m[32m 14[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/domain/morphology/NumeralDecompiler.test.ts [2m([22
+m[2m30 tests[22m[2m)[22m[32m 18[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/domain/discovery/Sprint3PipelineIntegration.test.ts 
+[2m([22m[2m1 test[22m[2m)[22m[32m 14[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/domain/morphology/ConjunctionDecompiler.test.ts [2m(
+[22m[2m24 tests[22m[2m)[22m[32m 14[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/infra/Phase10_2_OperationalAnalytics.test.ts [2m([2
+2m[2m1 test[22m[2m)[22m[32m 19[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/domain/discovery/Sprint4GraphAwareE2E.test.ts [2m([
+22m[2m1 test[22m[2m)[22m[32m 11[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/domain/discovery/CorpusExplorerService.test.ts [2m(
+[22m[2m5 tests[22m[2m)[22m[32m 20[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/domain/morphology/NounCaseParser.test.ts [2m([22m[
+2m23 tests[22m[2m)[22m[32m 14[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/domain/morphology/ParticipleDecompiler.test.ts [2m(
+[22m[2m24 tests[22m[2m)[22m[32m 15[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/LanguageFilter.test.ts [2m([22m[2m3 tests[22m[2m
+)[22m[32m 10[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/Phase2ExitCriteria.test.ts [2m([22m[2m3 tests[22m
+[2m)[22m[32m 11[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/domain/morphology/NominalDerivationDecompiler.test.ts
+ [2m([22m[2m24 tests[22m[2m)[22m[32m 14[2mms[22m[39m
+[90mstdout[2m | src/tests/domain/discovery/ConceptMatchingDeep.cert.test.ts
+[2m > [22m[2mConcept Matching Deep Dive[2m > [22m[2mCMD-001: water, tree,
+ horse farkli concept donmeli
+[90mstdout[2m | src/tests/domain/discovery/ConceptMatchingDeep.cert.test.ts
+[2m > [22m[2mConcept Matching Deep Dive[2m > [22m[2mCMD-002: su, water, º
+┐ªüªï ayni concept donmeli
+[90mstdout[2m | src/tests/domain/discovery/ConceptMatchingDeep.cert.test.ts
+[2m > [22m[2mConcept Matching Deep Dive[2m > [22m[2mCMD-003: bilinmeyen k
+elime undefined donmeli
+ [32mÔ£ô[39m src/tests/domain/discovery/ConceptMatchingDeep.cert.test.ts [2
+m([22m[2m3 tests[22m[2m)[22m[32m 15[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/domain/morphology/PossessivePrefixDecompiler.test.ts 
+[2m([22m[2m15 tests[22m[2m)[22m[32m 13[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/domain/discovery/P5S5_02_GraphTraversalCert.test.ts 
+[2m([22m[2m5 tests[22m[2m)[22m[32m 13[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/domain/morphology/MorphemeParser.test.ts [2m([22m[
+2m15 tests[22m[2m)[22m[32m 14[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/domain/dialect/Sprint3Phase4.test.ts [2m([22m[2m6 
+tests[22m[2m)[22m[32m 12[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/InMemoryTranslationRepository.test.ts [2m([22m[2m7
+ tests[22m[2m)[22m[32m 12[2mms[22m[39m
+[90mstdout[2m | src/tests/domain/discovery/DiscoveryFacade.integration.test.
+ts[2m > [22m[2mDiscoveryFacade + InMemoryConceptGraphRepository[2m > [22m
+[2mDFI-001: water i├ğin relatedConcepts dolu gelmeli
+ [32mÔ£ô[39m src/tests/domain/discovery/DiscoveryFacade.integration.test.ts 
+[2m([22m[2m1 test[22m[2m)[22m[32m 12[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/domain/morphology/RootExtractor.test.ts [2m([22m[2
+m13 tests[22m[2m)[22m[32m 19[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/domain/morphology/RootClassifier.test.ts [2m([22m[
+2m10 tests[22m[2m)[22m[32m 12[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/domain/analytics/SvgLayoutEngineService.test.ts [2m(
+[22m[2m8 tests[22m[2m)[22m[32m 11[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/domain/discovery/P5S5_03_RepositoryBackedE2E.test.ts 
+[2m([22m[2m1 test[22m[2m)[22m[32m 10[2mms[22m[39m
+[90mstdout[2m | src/tests/domain/linguistic/DialectConverter.cert.test.ts[2
+m > [22m[2mDialectConverter Certification (DC)[2m > [22m[2mDC-001: 40 ota
+ntik kelime dogru cevrilmeli
+[90mstdout[2m | src/tests/domain/linguistic/DialectConverter.cert.test.ts[2
+m > [22m[2mDialectConverter Certification (DC)[2m > [22m[2mDC-002: C-9.2 
+kurallar ADY-KBD
+[22m[39mC-9.2: 7/7 passed
+ [32mÔ£ô[39m src/tests/domain/linguistic/DialectConverter.cert.test.ts [2m(
+[22m[2m2 tests[22m[2m)[22m[32m 10[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/security/Phase8_0_5_Security.test.ts [2m([22m[2m5 
+tests[22m[2m)[22m[32m 11[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/RealDataIntegration.test.ts [2m([22m[2m6 tests[22
+m[2m)[22m[32m 11[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/integration/Phase8_0_SystemIntegration.test.ts [2m(
+[22m[2m4 tests[22m[2m)[22m[32m 11[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/domain/dialect/DialectDomain.test.ts [2m([22m[2m4 
+tests[22m[2m)[22m[32m 11[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/repository/InMemoryConceptRepository.test.ts [2m([2
+2m[2m4 tests[22m[2m)[22m[32m 12[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/domain/discovery/services/RelatedConceptResolver.test
+.ts [2m([22m[2m2 tests[22m[2m)[22m[32m 11[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/domain/discovery/Phase5_1_RealAssembly.test.ts [2m(
+[22m[2m1 test[22m[2m)[22m[32m 10[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/domain/concept/MeaningGraph.test.ts [2m([22m[2m2 t
+ests[22m[2m)[22m[32m 10[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/infra/Phase10_1_Logger.test.ts [2m([22m[2m1 test[
+22m[2m)[22m[32m 12[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/domain/linguistic/InMemoryVectorStore.test.ts [2m([
+22m[2m4 tests[22m[2m)[22m[32m 8[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/TranslationService.test.ts [2m([22m[2m3 tests[22m
+[2m)[22m[32m 10[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/domain/morphology/PronounDecompiler.test.ts [2m([22
+m[2m25 tests[22m[2m)[22m[32m 12[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/domain/concept/MeaningConceptLinker.test.ts [2m([22
+m[2m3 tests[22m[2m)[22m[32m 9[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/domain/discovery/ConceptMatching.cert.test.ts [2m([
+22m[2m4 tests[22m[2m)[22m[32m 8[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/domain/linguistic/InflectionHandler.test.ts [2m([22
+m[2m5 tests[22m[2m)[22m[32m 10[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/P5S5_01_Triangulation.test.ts [2m([22m[2m1 test[2
+2m[2m)[22m[32m 11[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/services/ConceptFacade.test.ts [2m([22m[2m1 test[
+22m[2m)[22m[32m 11[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/domain/analytics/CanvasPngRendererService.test.ts [2
+m([22m[2m6 tests[22m[2m)[22m[32m 10[2mms[22m[39m
+[90mstdout[2m | src/tests/domain/linguistic/DialectConverter.huvaj.test.ts[
+2m > [22m[2mDialectConverter Huvaj Dogrulama[2m > [22m[2mHuvaj dogrulama 
+(7 test)
+ [32mÔ£ô[39m src/tests/domain/linguistic/DialectConverter.huvaj.test.ts [2m
+([22m[2m1 test[22m[2m)[22m[32m 8[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/infra/Phase9_0_Containerization.test.ts [2m([22m[2
+m3 tests[22m[2m)[22m[32m 8[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/domain/discovery/traversal/TraversalBoundary.test.ts 
+[2m([22m[2m4 tests[22m[2m)[22m[32m 9[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/infra/Phase10_1_Dashboard.test.ts [2m([22m[2m1 tes
+t[22m[2m)[22m[32m 8[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/DialectRuleRepository.test.ts [2m([22m[2m4 tests[
+22m[2m)[22m[32m 10[2mms[22m[39m
+ [32mÔ£ô[39m src/repository/RepositoryIntegration.test.ts [2m([22m[2m3 te
+sts[22m[2m)[22m[32m 8[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/domain/discovery/KnowledgeRanker.test.ts [2m([22m[
+2m2 tests[22m[2m)[22m[32m 9[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/infra/Phase10_2_HealthCheck.test.ts [2m([22m[2m1 t
+est[22m[2m)[22m[32m 13[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/domain/concept/ConceptID.test.ts [2m([22m[2m3 test
+s[22m[2m)[22m[32m 7[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/MultiLanguageSearch.test.ts [2m([22m[2m1 test[22m
+[2m)[22m[32m 10[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/sync/Phase9_2_GraphSync.test.ts [2m([22m[2m1 test
+[22m[2m)[22m[32m 8[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/domain/analytics/CsvExporterService.test.ts [2m([22
+m[2m4 tests[22m[2m)[22m[32m 7[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/domain/concept/ConceptValidator.test.ts [2m([22m[2
+m2 tests[22m[2m)[22m[32m 8[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/domain/morphology/InflectionHandler.test.ts [2m([22
+m[2m5 tests[22m[2m)[22m[32m 6[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/release/Phase8_2_ReleaseCandidate.test.ts [2m([22m
+[2m2 tests[22m[2m)[22m[32m 8[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/performance/Phase12_1_PerformanceBenchmark.test.ts [
+2m([22m[2m1 test[22m[2m)[22m[32m 8[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/infra/Phase10_1_PrometheusExporter.test.ts [2m([22m
+[2m1 test[22m[2m)[22m[32m 7[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/domain/discovery/Phase5TrueE2EValidation.test.ts [2m
+([22m[2m1 test[22m[2m)[22m[32m 8[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/domain/concept/ConceptRelation.test.ts [2m([22m[2m
+2 tests[22m[2m)[22m[32m 7[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/federation/Phase11_0_GraphFederation.test.ts [2m([2
+2m[2m1 test[22m[2m)[22m[32m 9[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/domain/concept/Concept.test.ts [2m([22m[2m3 tests
+[22m[2m)[22m[32m 7[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/infra/Phase10_3_ApiGovernance.test.ts [2m([22m[2m1
+ test[22m[2m)[22m[32m 5[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/infra/Hotfix001_DataLoading.test.ts [2m([22m[2m1 t
+est[22m[2m)[22m[32m 4[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/collaboration/Phase12_0_CollaborativeModeration.test.
+ts [2m([22m[2m1 test[22m[2m)[22m[32m 3[2mms[22m[39m
+ [32mÔ£ô[39m src/tests/DialectRules.test.ts [2m([22m[2m1 test[22m[2m)[
+22m[32m 3[2mms[22m[39m
+[2m Test Files [22m [1m[32m97 passed[39m[22m[90m (97)[39m
+[2m      Tests [22m [1m[32m653 passed[39m[22m[90m (653)[39m
+[2m   Duration [22m 12.42s[2m (transform 10.54s, setup 0ms, import 20.48s, 
+tests 3.51s, environment 26ms)[22m
+
+
+
+=== [5] GIT GECMISI ===
+059ea7b docs: Anayasal faz celiskisi cozuldu
+eaa45a4 Phase 2: kapanis karari - Mimar onayli
+a76c36c fix(docs): kok celiski cozuldu
+1a2bb29 docs: Nihai mimar karari - Faz 2 CLOSED, Product Stage ACTIVE
+871f0b5 docs: DECISIONS.md ve MIMAR_KARARI.md temizlendi - ADR-P2-013 gecerli, v9 FINAL
+28fd379 docs: DECISIONS.md temizlendi - ADR-P2-013 gecerli karar
+85557cf docs: DECISIONS.md temizlendi - ADR-P2-013 gecerli, ADR-P2-012 arsivlendi
+d827e75 docs: Faz 2 Kapanis Duyurusu + Product Stage Plani + Known Improvements Backlog
+7679d47 docs: MIMAR_KARARI.md v9 FINAL - Faz 2 CLOSED
+6e87b84 docs: MIMAR_KARARI.md v9 FINAL - Faz 2 CLOSED
+f3a3a0c docs: MIMAR_KARARI.md v9 FINAL - Faz 2 CLOSED
+4e125b0 docs: MIMAR_KARARI.md v9 FINAL - Faz 2 CLOSED
+b1b4bf8 docs: MIMAR_KARARI.md v9 FINAL - Faz 2 CLOSED
+f661c4b docs: MIMAR_KARARI.md v9 FINAL - Faz 2 CLOSED
+456639b docs: MIMAR_KARARI.md v9 FINAL - Faz 2 CLOSED
+96b618a docs: MIMAR_KARARI.md v9 FINAL - Faz 2 CLOSED
+60716ff docs: MIMAR_KARARI.md v9 FINAL - Faz 2 CLOSED onaylandi
+88332f9 docs: DECISIONS.md temizlendi - ADR-P2-012 arsivlendi, ADR-P2-013 gecerli
+256bbae docs: MIMAR_KARARI.md temizlendi - Faz 2 CLOSED
+9df1350 docs: PROJECT_STATUS.md temizlendi - Faz 2 CLOSED, tum eski bloklar silindi
+c2334b3 docs: Faz 2 resmi olarak KAPANDI (ADR-P2-013) + Mimar mesaji
+0afff20 docs: Mimar son karari (v6) - Faz 2 Exit Review + ADR-P2-012
+4f63951 docs: Faz 2 Exit Review + ADR-P2-012 + Mimar karari v4
+35784c4 docs: Faz 2 Exit Review baslatildi (ADR-P2-012)
+d74bcf4 Phase 2 Stable Baseline restored and verified ÔÇö 0 TS errors, 203/203 tests pass
+3f784ab feat(phase2): achieve phase 2 stable baseline and enforce ADR-0009 dialect standards
+454a847 Phase 2 recovered baseline - repository & translation integration operational
+8d198ee Phase 2 recovered baseline - repository and translation platform operational
+7efb0be chore(test): isolate future phases and confirm Phase 2 stable baseline (124 passing)
+4e367d1 chore(test): isolate Phase 3+ concept tests and stabilize Phase 2 baseline (124/124 passing)
+1e168ba chore: freeze phase 2 governance baseline

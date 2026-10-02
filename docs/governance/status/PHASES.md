@@ -1,11 +1,11 @@
-# PHASES.md
+﻿# PHASES.md
 
 ## Faz Durumu (Tek Gercek)
 
 | Faz | Ad | Durum | Kanit |
 |-----|-----|-------|-------|
 | 1 | Foundation / Dataset | CLOSED | 287/287 PASS |
-| 2 | Lexeme Model | CLOSED | PROJECT_STATUS.md |
+| 2 | Translation Platform | CLOSED | PROJECT_STATUS.md |
 | 3 | Morphological Analysis | CLOSED | Phase 3 Gate Report |
 | 4 | Morphology Engine | COMPLETED | PHASE_4_COMPLETION_REPORT.md |
 | 5 | Discovery Engine | COMPLETED | PHASE_5_COMPLETION_REPORT.md |
@@ -37,10 +37,10 @@ Embedding calismalari ayri bir arastirma hattidir, faz numarasi almaz.
 | Embedding | PHASE_6_COMPLETION_REPORT.md | Gate tamamlandi |
 
 ## Kabul Edilen ADR'ler
-- ADR-0023 (Verb Prefix Slot Grammar) — KABUL
-- ADR-0024 (Lemma Identity Rule / Model A) — KABUL
-- ADR-0040 (Morphological Root Taxonomy) — KABUL
-- ADR-GOV-003 (Phase Redefinition) — KABUL
+- ADR-0023 (Verb Prefix Slot Grammar) â€” KABUL
+- ADR-0024 (Lemma Identity Rule / Model A) â€” KABUL
+- ADR-0040 (Morphological Root Taxonomy) â€” KABUL
+- ADR-GOV-003 (Phase Redefinition) â€” KABUL
 
 ## Referans
 - docs/governance/PHASE_RECONCILIATION.md
