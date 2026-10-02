@@ -1,0 +1,47 @@
+﻿# Dependencies
+node_modules
+npm-debug.log*
+
+# Next.js
+.next
+out
+build
+dist
+
+# Git
+.git
+.gitignore
+
+# Env
+.env.local
+.env*.local
+.env
+
+# IDE
+.vscode
+.idea
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Tests
+coverage
+
+# Logs
+*.log
+
+# Android
+android
+
+# Docs
+docs
+_arsiv
+
+# Scripts
+scripts
+tools
+
+# Misc
+README.md
+*.md

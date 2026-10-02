@@ -1,37 +1,107 @@
-version: '3.8'
+﻿# ============================================
+# Docker Compose - Production
+# Phase 8.2.4: ADR-GOV-011 Hybrid Mimari
+# ============================================
 
 services:
-  app:
+  next-app:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: cerkesce-kg-app
+    container_name: cerkesce-next-prod
     ports:
       - "3000:3000"
     environment:
       - NODE_ENV=production
       - PORT=3000
+      - API_URL=http://express-api:3001
+    depends_on:
+      express-api:
+        condition: service_healthy
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:3000/health"]
-      interval: 15s
-      timeout: 5s
+      test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://localhost:3000/"]
+      interval: 30s
+      timeout: 10s
       retries: 3
+      start_period: 40s
     restart: always
+    networks:
+      - cerkesce-net
+
+  express-api:
+    build:
+      context: .
+      dockerfile: Dockerfile.api
+    container_name: cerkesce-api-prod
+    ports:
+      - "3001:3001"
+    environment:
+      - NODE_ENV=production
+      - PORT=3001
+      - REDIS_URL=redis://redis:6379
+    depends_on:
+      redis:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://localhost:3001/api/v1/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 20s
+    restart: always
+    networks:
+      - cerkesce-net
+
+  redis:
+    image: redis:7-alpine
+    container_name: cerkesce-redis-prod
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis-data:/data
+    command: redis-server --appendonly yes --maxmemory 256mb --maxmemory-policy allkeys-lru
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    restart: always
+    networks:
+      - cerkesce-net
 
   prometheus:
     image: prom/prometheus:v2.47.0
-    container_name: cerkesce-prometheus
+    container_name: cerkesce-prometheus-prod
     volumes:
-      - ./deploy/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
+      - ./deploy/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml:ro
+      - prometheus-data:/prometheus
     ports:
       - "9090:9090"
     restart: always
+    networks:
+      - cerkesce-net
 
   grafana:
     image: grafana/grafana:10.1.0
-    container_name: cerkesce-grafana
+    container_name: cerkesce-grafana-prod
     ports:
-      - "3001:3000"
+      - "3002:3000"
     environment:
-      - GF_SECURITY_ADMIN_PASSWORD=admin
+      - GF_SECURITY_ADMIN_PASSWORD=${GRAFANA_PASSWORD:-admin}
+    volumes:
+      - grafana-data:/var/lib/grafana
     restart: always
+    networks:
+      - cerkesce-net
+
+volumes:
+  redis-data:
+    driver: local
+  prometheus-data:
+    driver: local
+  grafana-data:
+    driver: local
+
+networks:
+  cerkesce-net:
+    driver: bridge
