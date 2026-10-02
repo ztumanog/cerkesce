@@ -25,7 +25,7 @@ describe('P4-019: SyntaxAnalyzer', () => {
     expect(r.predicate).toBe('къ1ежых');
   });
 
-  // SOV / ERGATIVE
+  // ERGATIVE
   it('SY-004: ergatif cumle -> ERGATIVE', () => {
     const r = analyzer.analyze(['пшъашъэм', 'тхылъыр', 'ехы']);
     expect(r.isErgative).toBe(true);
@@ -134,7 +134,7 @@ describe('P4-019: SyntaxAnalyzer', () => {
     expect(r.type).toBe('SV');
   });
 
-  it('SY-022: uc obek -> SOV/ERGATIVE', () => {
+  it('SY-022: uc obek -> ERGATIVE', () => {
     const r = analyzer.analyze(['пшъашъэм', 'тхылъыр', 'ехы']);
     expect(r.type).toBe('ERGATIVE');
   });
@@ -146,5 +146,88 @@ describe('P4-019: SyntaxAnalyzer', () => {
 
   it('SY-024: tip listesi 7 eleman', () => {
     expect(analyzer.getTypes().length).toBe(7);
+  });
+
+  // INVERSIVE & AFFECTIVE (gl9.pdf §4)
+  it('SY-025: s-fэ-shхy -> affektif', () => {
+    const r = analyzer.analyze(['сэ', 'фэ', 'шхы']);
+    expect(r.type).toBe('AFFECTIVE');
+  });
+
+  it('SY-026: inversive prefix tespit', () => {
+    const r = analyzer.analyze(['сэ', 'фэ']);
+    expect(r.type).toBe('AFFECTIVE');
+  });
+
+  it('SY-027: affektif cumle (с-фэ-шхыщтэп)', () => {
+    const r = analyzer.analyze(['сэ', 'фэ', 'шхыщтэп']);
+    expect(r.type).toBe('AFFECTIVE');
+  });
+
+  it('SY-028: uc kelimeli ERGATIVE', () => {
+    const r = analyzer.analyze(['лIым', 'жыгър', 'илъэгъуащ']);
+    expect(r.type).toBe('ERGATIVE');
+  });
+
+  it('SY-029: isErgative tespit', () => {
+    const r = analyzer.analyze(['лIым', 'тхылъыр', 'ехы']);
+    expect(r.isErgative).toBe(true);
+  });
+
+  it('SY-030: uc kelimeli cumle tipi', () => {
+    const r = analyzer.analyze(['лIым', 'тхылъыр', 'ехы']);
+    expect(r.type).toBeDefined();
+  });
+
+  it('SY-031: isErgative cumle', () => {
+    const r = analyzer.analyze(['лIым', 'жыгър', 'илъэгъуащ']);
+    expect(r.isErgative).toBe(true);
+  });
+
+  it('SY-032: ozne tespit (ergatif)', () => {
+    const r = analyzer.analyze(['лIым', 'жыгър', 'илъэгъуащ']);
+    expect(r.subject).toBeDefined();
+  });
+
+  it('SY-033: nesne tespit', () => {
+    const r = analyzer.analyze(['лIым', 'жыгър', 'илъэгъуащ']);
+    expect(r.object).toBeDefined();
+  });
+
+  it('SY-034: yuklem tespit', () => {
+    const r = analyzer.analyze(['лIым', 'жыгър', 'илъэгъуащ']);
+    expect(r.predicate).toBeDefined();
+  });
+
+  it('SY-035: affektif ve ergatif ayrimi', () => {
+    const r1 = analyzer.analyze(['сэ', 'фэ']);
+    const r2 = analyzer.analyze(['лIым', 'жыгър', 'илъэгъуащ']);
+    expect(r1.type).not.toBe(r2.type);
+  });
+
+  it('SY-036: morphology vs syntax role', () => {
+    const r = analyzer.analyze(['лIым', 'тхылъыр', 'ехы']);
+    expect(r.subject).not.toBe(r.predicate);
+  });
+
+  it('SY-037: cumle tipi belirleme', () => {
+    const r = analyzer.analyze(['сабийм', 'къ1ежых']);
+    expect(r.type).toBe('SV');
+  });
+
+  it('SY-038: inversive olmayan', () => {
+    const r = analyzer.analyze(['сабийм', 'къ1ежых']);
+    expect(r.type).not.toBe('AFFECTIVE');
+  });
+
+  it('SY-039: karma cumle', () => {
+    const r = analyzer.analyze(['лIым', 'тхылъыр', 'ехы']);
+    expect(r.type).toBeDefined();
+  });
+
+  it('SY-040: confidence 0-1', () => {
+    const r = analyzer.analyze(['сабийм', 'къ1ежых']);
+    expect(r.confidence).toBeGreaterThanOrEqual(0);
+    expect(r.confidence).toBeLessThanOrEqual(1);
   });
 });
