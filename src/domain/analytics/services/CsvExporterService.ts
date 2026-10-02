@@ -62,4 +62,44 @@ export class CsvExporterService {
 
     return lines.join('\n');
   }
+
+  /**
+   * TSV formatinda export eder (Tab-separated).
+   */
+  static exportNetworkTsv(network: GenericConceptNetworkDTO): string {
+    const lines: string[] = [];
+    lines.push('type\tid\tsource\ttarget\tlabel\trelationType');
+
+    for (const node of network.nodes) {
+      const label = (node.label || '').replace(/\t/g, ' ');
+      lines.push(`node\t${node.id}\t\t\t${label}\t`);
+    }
+
+    for (const edge of network.edges) {
+      const rel = edge.relationType || '';
+      lines.push(`edge\t\t${edge.source}\t${edge.target}\t\t${rel}`);
+    }
+
+    return lines.join('\n');
+  }
+
+  /**
+   * Pipe-separated format.
+   */
+  static exportNetworkPipe(network: GenericConceptNetworkDTO): string {
+    const lines: string[] = [];
+    lines.push('type|id|source|target|label|relationType');
+
+    for (const node of network.nodes) {
+      const label = (node.label || '').replace(/\|/g, '/');
+      lines.push(`node|${node.id}|||${label}|`);
+    }
+
+    for (const edge of network.edges) {
+      const rel = edge.relationType || '';
+      lines.push(`edge||${edge.source}|${edge.target}||${rel}`);
+    }
+
+    return lines.join('\n');
+  }
 }
