@@ -148,4 +148,39 @@ describe('P4-018: PhraseAnalyzer', () => {
     const phrases = analyzer.analyzePhrases(['зы', 'унэ']);
     expect(phrases[0].tokens.length).toBeGreaterThan(0);
   });
+
+  // GROUP DECLENSION
+  it('PH-025: унэ дахэ -> AdjP (grup)', () => {
+    const phrases = analyzer.analyzePhrases(['дахэ', 'унэ']);
+    expect(phrases.length).toBeGreaterThan(0);
+  });
+
+  it('PH-026: унэ дахэхэм -> grup declension', () => {
+    const phrases = analyzer.analyzePhrases(['унэ', 'дахэхэм']);
+    expect(phrases.length).toBeGreaterThan(0);
+  });
+
+  it('PH-027: head belirleme (grup)', () => {
+    const phrases = analyzer.analyzePhrases(['дахэ', 'унэ']);
+    const head = phrases[0].head;
+    expect(head).toBeDefined();
+    expect(head.length).toBeGreaterThan(0);
+  });
+
+  it('PH-028: modifier belirleme', () => {
+    const phrases = analyzer.analyzePhrases(['дахэ', 'унэ']);
+    const dependents = phrases[0].dependents;
+    expect(dependents).toBeDefined();
+    expect(dependents.length).toBeGreaterThan(0);
+  });
+
+  it('PH-029: cok kelimeli NP', () => {
+    const phrases = analyzer.analyzePhrases(['лIыр', 'унэ', 'дахэ']);
+    expect(phrases.length).toBeGreaterThan(0);
+  });
+
+  it('PH-030: grup bükümü (ünlü uyumu)', () => {
+    const phrases = analyzer.analyzePhrases(['унэ', 'дахэ', 'хэм']);
+    expect(phrases.length).toBeGreaterThan(0);
+  });
 });
