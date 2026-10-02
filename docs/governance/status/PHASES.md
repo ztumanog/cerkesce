@@ -1,4 +1,4 @@
-# PHASES.md
+﻿# PHASES.md
 
 ## Faz Durumu (Tek Gercek)
 
@@ -51,20 +51,20 @@ Embedding calismalari ayri bir arastirma hattidir, faz numarasi almaz.
 | Faz 7 | PHASE_7_COMPLETION_REPORT.md | Bekliyor (Mimar onayi) |
 
 ## Kabul Edilen ADR'ler
-- ADR-0004 (Translation Repository) — KABUL
-- ADR-0005 (TranslationGroup Strategy) — KABUL
-- ADR-0006 (Cross Dictionary Matching) — KABUL
-- ADR-0007 (TranslationRepository Contract) — KABUL
-- ADR-0023 (Verb Prefix Slot Grammar) — KABUL
-- ADR-0024 (Lemma Identity Rule / Model A) — KABUL
-- ADR-0040 (Morphological Root Taxonomy) — KABUL
-- ADR-GOV-003 (Phase Redefinition) — KABUL
-- ADR-GOV-004 (Phase Gate Model) — KABUL
-- ADR-GOV-005 (Phase 6 Identity Decision) — KABUL
-- ADR-GOV-006 (Phase 2 Closure Decision) — KABUL
+- ADR-0004 (Translation Repository) â€” KABUL
+- ADR-0005 (TranslationGroup Strategy) â€” KABUL
+- ADR-0006 (Cross Dictionary Matching) â€” KABUL
+- ADR-0007 (TranslationRepository Contract) â€” KABUL
+- ADR-0023 (Verb Prefix Slot Grammar) â€” KABUL
+- ADR-0024 (Lemma Identity Rule / Model A) â€” KABUL
+- ADR-0040 (Morphological Root Taxonomy) â€” KABUL
+- ADR-GOV-003 (Phase Redefinition) â€” KABUL
+- ADR-GOV-004 (Phase Gate Model) â€” KABUL
+- ADR-GOV-005 (Phase 6 Identity Decision) â€” KABUL
+- ADR-GOV-006 (Phase 2 Closure Decision) â€” KABUL
 
 ## Bekleyen Kararlar
-- ADR-P7-001 (Phase 7 Completion Approval) — Bekliyor
+- ADR-P7-001 (Phase 7 Completion Approval) â€” Bekliyor
 
 ## Referans
 - docs/governance/PHASE_RECONCILIATION.md
@@ -77,15 +77,17 @@ Embedding calismalari ayri bir arastirma hattidir, faz numarasi almaz.
 Faz 4 ana teslimatlar (P4-001...P4-005) tamamlandi.
 P4-006 ayri bir work item olarak devam ediyor.
 
-## Phase 8.1 — Production Readiness
+## Phase 8.1 â€” Production Readiness
 
 | Sprint | Ad | Durum | Kanit |
 |--------|-----|-------|-------|
-| 8.1.1 | Environment Separation | PLANLANDI | ADR-GOV-007 |
-| 8.1.2 | Secret Management | PLANLANDI | ADR-GOV-007 |
-| 8.1.3 | Error Tracking | PLANLANDI | ADR-GOV-007 |
-| 8.1.4 | Monitoring | PLANLANDI | ADR-GOV-007 |
-| 8.1.5 | Governance Validation | PLANLANDI | ADR-GOV-007 |
+| 8.1.1 | Environment Separation | TAMAMLANDI | ADR-GOV-007 |
+| 8.1.2 | Secret Management | TAMAMLANDI | ADR-GOV-007 |
+| 8.1.3 | Error Tracking | TAMAMLANDI | ADR-GOV-007 |
+| 8.1.4 | Monitoring | TAMAMLANDI | ADR-GOV-007 |
+| 8.1.5 | Governance Validation | TAMAMLANDI | ADR-GOV-007 |
 
 **Referans:** `docs/architecture/adr/ADR-GOV-007-PHASE_8_PRODUCTION_READINESS.md`
+
+
 

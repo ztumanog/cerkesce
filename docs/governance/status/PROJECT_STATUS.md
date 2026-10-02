@@ -1,4 +1,4 @@
-## Phase 2 — Translation Platform
+﻿## Phase 2 â€” Translation Platform
 
 **Status:** CLOSED
 **Karar:** ADR-GOV-006
@@ -14,15 +14,15 @@
 - Cross Dictionary Matching
 
 ### Test Sonucu
-- Ana: 653/653 PASS
+- Ana: 659/659 PASS
 - Cert: 87/87 PASS
-- Toplam: 740/740 PASS
+- Toplam: 746/746 PASS
 
 ### Sonraki
 Phase 3 Planning
 
 ---
-## Phase 4 — Morphology Engine
+## Phase 4 â€” Morphology Engine
 **Status:** COMPLETED
 **Kanit:** PHASE_4_COMPLETION_REPORT.md
 
@@ -60,16 +60,16 @@ Asagidaki homonimler icin LEMMA ayrimi yapildi:
 
 | Yuzey Form | Anlam | Lemma ID |
 |------------|-------|----------|
-| шэ | sut | LEMMA-SHE (sense: sut) |
-| шэ | mermi | LEMMA-SHE (sense: mermi) |
-| бзэ | dil | LEMMA-BZE (sense: dil) |
-| бзэ | yay | LEMMA-BZE (sense: yay) |
+| ÑˆÑ | sut | LEMMA-SHE (sense: sut) |
+| ÑˆÑ | mermi | LEMMA-SHE (sense: mermi) |
+| Ğ±Ğ·Ñ | dil | LEMMA-BZE (sense: dil) |
+| Ğ±Ğ·Ñ | yay | LEMMA-BZE (sense: yay) |
 
 Referans: ADR-0024 (Model A)
 
 ---
 
-## Phase 5 — Discovery Engine
+## Phase 5 â€” Discovery Engine
 **Status:** COMPLETED
 
 | Sprint | Baslik | Durum |
@@ -83,7 +83,7 @@ Referans: ADR-0024 (Model A)
 
 ---
 
-## Phase 6 — API Gateway
+## Phase 6 â€” API Gateway
 **Status:** TAMAMLANDI
 
 | # | Endpoint | Metod |
@@ -108,7 +108,7 @@ Referans: ADR-0024 (Model A)
 
 ---
 
-## Ayri Arastirma Hatti — Embedding Research
+## Ayri Arastirma Hatti â€” Embedding Research
 **Status:** GATE_COMPLETED
 
 **Referans:** docs/phases/phase-6/FAZ_6_GATE_KAPANIS_FINAL.md
@@ -120,5 +120,6 @@ Ayri bir arastirma hattidir.
 
 ## Faz Uzlestirma
 **Referans:** docs/governance/PHASE_RECONCILIATION.md
+
 
 
