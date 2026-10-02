@@ -120,3 +120,36 @@ Phase 7 (Analytics & Export) resmi olarak COMPLETED kabul edilmiştir.
 **Sonraki:** Phase 8 Production & Operations (PROPOSED)
 
 **Referans:** docs/architecture/adr/ADR-P7-001-PHASE_7_COMPLETION_APPROVAL.md
+
+---
+
+## ADR-GOV-007: Phase 8 Production Readiness
+
+**Durum:** PROPOSED
+**Tarih:** 2026-10-02
+**Kategori:** Governance
+**Faz:** 8.1
+
+**Karar:**
+Phase 8.1 (Production Readiness) kapsaminda asagidaki alanlar ele alinacak:
+
+1. Environment Separation
+2. Secret Management
+3. Error Tracking
+4. Monitoring
+5. Governance Validation
+
+**Kapsam Disi:**
+- Yeni parser gelistirme
+- Discovery davranisi degistirme
+- Semantic Retrieval gelistirme
+- Embedding urunlestirme
+
+**Kabul Kriterleri:**
+- Health endpoints aktif
+- Error reporting aktif
+- Secret management aktif
+- Monitoring aktif
+- Cert pipeline PASS
+
+**Referans:** docs/architecture/adr/ADR-GOV-007-PHASE_8_PRODUCTION_READINESS.md

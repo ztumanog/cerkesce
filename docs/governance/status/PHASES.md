@@ -76,3 +76,16 @@ Embedding calismalari ayri bir arastirma hattidir, faz numarasi almaz.
 
 Faz 4 ana teslimatlar (P4-001...P4-005) tamamlandi.
 P4-006 ayri bir work item olarak devam ediyor.
+
+## Phase 8.1 — Production Readiness
+
+| Sprint | Ad | Durum | Kanit |
+|--------|-----|-------|-------|
+| 8.1.1 | Environment Separation | PLANLANDI | ADR-GOV-007 |
+| 8.1.2 | Secret Management | PLANLANDI | ADR-GOV-007 |
+| 8.1.3 | Error Tracking | PLANLANDI | ADR-GOV-007 |
+| 8.1.4 | Monitoring | PLANLANDI | ADR-GOV-007 |
+| 8.1.5 | Governance Validation | PLANLANDI | ADR-GOV-007 |
+
+**Referans:** `docs/architecture/adr/ADR-GOV-007-PHASE_8_PRODUCTION_READINESS.md`
+
