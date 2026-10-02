@@ -1,12 +1,15 @@
 export const conceptNetworkOpenAPISpec = {
   openapi: "3.0.3",
   info: {
-    title: "Çerkesçe Knowledge Engine - Discovery API Gateway",
+    title: "Cerkesce Knowledge Engine - Discovery API Gateway",
     version: "1.0.0",
     description: "API Gateway contract for interactive concept network projection layer."
   },
+  servers: [
+    { url: "/api/v1", description: "API v1" }
+  ],
   paths: {
-    "/api/v1/discovery/concept-network": {
+    "/discovery/concept-network": {
       get: {
         summary: "Fetch Interactive Concept Network Graph",
         operationId: "getConceptNetwork",
@@ -16,7 +19,7 @@ export const conceptNetworkOpenAPISpec = {
             name: "q",
             in: "query",
             required: true,
-            description: "Target concept root or query text (e.g. 'water')",
+            description: "Target concept root or query text",
             schema: { type: "string", minLength: 1 }
           },
           {
@@ -28,35 +31,58 @@ export const conceptNetworkOpenAPISpec = {
           }
         ],
         responses: {
-          "200": {
-            description: "Canonical Concept Network DTO Payload",
-            content: {
-              "application/json": {
-                schema: {
-                  type: "object",
-                  properties: {
-                    nodes: { type: "array" },
-                    edges: { type: "array" },
-                    metadata: {
-                      type: "object",
-                      properties: {
-                        schemaVersion: { type: "string", example: "1.0.0" },
-                        isDirected: { type: "boolean", example: true },
-                        isTruncated: { type: "boolean", example: false },
-                        nodeCount: { type: "integer" },
-                        edgeCount: { type: "integer" }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          },
+          "200": { description: "Canonical Concept Network DTO" },
           "400": { description: "Missing or invalid query parameter" },
-          "500": { description: "Internal server processing error" }
+          "429": { description: "Too many requests" },
+          "500": { description: "Internal server error" }
+        }
+      }
+    },
+    "/discovery/explore": {
+      get: {
+        summary: "Explore Concept",
+        operationId: "explore",
+        tags: ["Discovery Engine"],
+        parameters: [
+          {
+            name: "q",
+            in: "query",
+            required: true,
+            schema: { type: "string", minLength: 1 }
+          },
+          {
+            name: "dialect",
+            in: "query",
+            required: false,
+            schema: { type: "string", enum: ["KBD", "ADY"] }
+          }
+        ],
+        responses: {
+          "200": { description: "Exploration result" },
+          "400": { description: "Invalid request" },
+          "500": { description: "Internal server error" }
+        }
+      }
+    },
+    "/discovery/concept/{id}": {
+      get: {
+        summary: "Get Concept Details",
+        operationId: "getConceptDetails",
+        tags: ["Discovery Engine"],
+        parameters: [
+          {
+            name: "id",
+            in: "path",
+            required: true,
+            schema: { type: "string" }
+          }
+        ],
+        responses: {
+          "200": { description: "Concept details" },
+          "404": { description: "Concept not found" },
+          "500": { description: "Internal server error" }
         }
       }
     }
   }
 };
-
