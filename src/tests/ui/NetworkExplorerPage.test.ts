@@ -31,8 +31,8 @@ describe('Phase 7.1 - NetworkExplorerPage Integration Tests', () => {
   });
 
   it('NEP-003: Computes spatial layout when layout selection changes', () => {
-    const circularResult = LayoutEngineService.applyLayout(sampleNetwork, 'CIRCULAR');
-    const gridResult = LayoutEngineService.applyLayout(sampleNetwork, 'GRID');
+    const circularResult = LayoutEngineService.applyLayout(sampleNetwork, 'CIRCULAR', 800, 600);
+    const gridResult = LayoutEngineService.applyLayout(sampleNetwork, 'GRID', 800, 600);
 
     expect(circularResult.nodes[0].x).not.toBe(gridResult.nodes[0].x);
   });

@@ -1,12 +1,13 @@
 import { Request, Response } from 'express';
 import { DiscoveryFacade } from '../../../domain/discovery/services/DiscoveryFacade';
 import { ConceptGraphAdapter } from '../../../domain/discovery/adapters/ConceptGraphAdapter';
+import { InMemoryConceptGraphRepository } from '../../../repository/InMemoryConceptGraphRepository';
 
 export class ConceptNetworkController {
   private discoveryFacade: DiscoveryFacade;
 
   constructor(discoveryFacade?: DiscoveryFacade) {
-    this.discoveryFacade = discoveryFacade || new DiscoveryFacade(null);
+    this.discoveryFacade = discoveryFacade || new DiscoveryFacade(new InMemoryConceptGraphRepository());
   }
 
   public getConceptNetwork = async (req: Request, res: Response): Promise<void> => {
@@ -25,10 +26,15 @@ export class ConceptNetworkController {
       const discoveryResult = await this.discoveryFacade.explore(q);
       const networkDTO = ConceptGraphAdapter.toCanonicalNetwork(discoveryResult);
 
-      if (maxNodesParam && networkDTO.nodes.length > maxNodesParam) {
+      if (Number.isInteger(maxNodesParam) && maxNodesParam >= 0 && networkDTO.nodes.length > maxNodesParam) {
         networkDTO.nodes = networkDTO.nodes.slice(0, maxNodesParam);
+        const retainedNodeIds = new Set(networkDTO.nodes.map((node) => node.id));
+        networkDTO.edges = networkDTO.edges.filter(
+          (edge) => retainedNodeIds.has(edge.source) && retainedNodeIds.has(edge.target)
+        );
         networkDTO.metadata.isTruncated = true;
         networkDTO.metadata.nodeCount = networkDTO.nodes.length;
+        networkDTO.metadata.edgeCount = networkDTO.edges.length;
       }
 
       res.status(200).json(networkDTO);
