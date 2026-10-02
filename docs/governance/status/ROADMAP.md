@@ -9,8 +9,8 @@
 | 3 | Morphological Analysis | CLOSED |
 | 4 | Morphology Engine | COMPLETED |
 | 5 | Discovery Engine | COMPLETED |
-| 6 | API Gateway | PLANLANAN |
-| 7 | Analytics & Export | PLANLANAN |
+| 6 | API Gateway | TAMAMLANDI |
+| 7 | Analytics & Export | DEVAM EDIYOR |
 
 ## Ayri Arastirma Hatti (Faz Degil)
 
@@ -28,10 +28,10 @@
 - P4-005 InflectionHandler
 
 ## Sonraki Adimlar
-1. P4-006 PossessivePrefixDecompiler — planlanan
-2. RootClassifier implementasyonu (ADR-0040) — planlanan
-3. Faz 6 planlamasi (API Gateway) — bekliyor
-4. Faz 7 planlamasi (Analytics & Export) — bekliyor
+1. Sprint 7.0.5 — Reporting
+2. API Gateway Authentication Harden
+3. Monitoring Dashboard
+4. Embedding Research Track (ayri)
 
 ## Referans
 - docs/governance/PHASE_RECONCILIATION.md

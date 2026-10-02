@@ -22,8 +22,8 @@ Freeze -> Activation -> Closure zincirini belgeler.
 | Phase 3 | Concept Engine | CLOSED | PHASE3_COMPLETION_REPORT |
 | Phase 4 | Morphology + Syntax Engine | COMPLETED | 621/621 PASS |
 | Phase 5 | Discovery Engine | COMPLETED | PHASE_5_COMPLETION_REPORT |
-| Phase 6 | API Gateway + Embedding | TAMAMLANDI | PHASE_6_1/6_2/6_3 |
-| Phase 7 | Analytics & Export | PLANLANDI | ADR-GOV-003 |
+| Phase 6 | API Gateway | TAMAMLANDI | ADR-GOV-005 |
+| Phase 7 | Analytics & Export | DEVAM EDIYOR | Sprint 7.0.4 |
 
 ---
 

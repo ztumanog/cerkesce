@@ -9,8 +9,8 @@
 | 3 | Morphological Analysis | CLOSED | Phase 3 Gate Report |
 | 4 | Morphology Engine | COMPLETED | PHASE_4_COMPLETION_REPORT.md |
 | 5 | Discovery Engine | COMPLETED | PHASE_5_COMPLETION_REPORT.md |
-| 6 | API Gateway | PLANLANAN | ADR-GOV-003 |
-| 7 | Analytics & Export | PLANLANAN | ADR-GOV-003 |
+| 6 | API Gateway | TAMAMLANDI | ADR-GOV-005 |
+| 7 | Analytics & Export | DEVAM EDIYOR | Sprint 7.0.4 |
 
 ## Ayri Arastirma Hatti (Faz Degil)
 
