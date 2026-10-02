@@ -1,16 +1,16 @@
-﻿# PHASES.md
+# PHASES.md
 
 ## Faz Durumu (Tek Gercek)
 
 | Faz | Ad | Durum | Kanit |
 |-----|-----|-------|-------|
-| 1 | Foundation / Dataset | CLOSED | 287/287 PASS |
-| 2 | Translation Platform | CLOSED | PROJECT_STATUS.md |
-| 3 | Morphological Analysis | CLOSED | Phase 3 Gate Report |
+| 1 | Foundation / Dataset | CLOSED | Tamamlandi |
+| 2 | Translation Platform | CLOSED | ADR-GOV-006 |
+| 3 | Morphological Analysis | CLOSED | PHASE3_COMPLETION_REPORT |
 | 4 | Morphology Engine | COMPLETED | PHASE_4_COMPLETION_REPORT.md |
 | 5 | Discovery Engine | COMPLETED | PHASE_5_COMPLETION_REPORT.md |
-| 6 | API Gateway | TAMAMLANDI | ADR-GOV-005 |
-| 7 | Analytics & Export | DEVAM EDIYOR | Sprint 7.0.4 |
+| 6 | API Gateway | COMPLETED | ADR-GOV-005 + 87/87 cert PASS |
+| 7 | Analytics & Export | COMPLETION CANDIDATE | PHASE_7_COMPLETION_REPORT.md (beklemede) |
 
 ## Ayri Arastirma Hatti (Faz Degil)
 
@@ -21,30 +21,55 @@
 **Not:** ADR-GOV-003'e gore Faz 6 = API Gateway'dir.
 Embedding calismalari ayri bir arastirma hattidir, faz numarasi almaz.
 
-## Faz 4 Teslimatlari
-- P4-001 MorphologicalAnalysis
-- P4-002 RootExtractor
-- P4-003 MorphemeParser
-- P4-004 LemmaBuilder
-- P4-005 InflectionHandler
+## Test Durumu (Guncel: 2026-10-02)
+
+| Pipeline | Test | Dosya |
+|----------|------|-------|
+| Ana Testler | 653/653 PASS | 94 |
+| Cert Testleri | 87/87 PASS | 25 |
+| **TOPLAM** | **740/740 PASS** | **119** |
+
+> **Not:** Phase 7 oncesi toplam 708 idi (621 ana + 87 cert).
+> Phase 7.0.1-7.3 ile 32 test eklendi (SvgLayoutEngine, CanvasPng,
+> Reporting, CSV, Export Hardening). Guncel toplam: 740.
+
+## Morphology Engine Scope Freeze
+
+- Yeni parser eklenemez.
+- Mevcut parser mimarisi degistirilemez.
+- Yalniz hata duzeltme yapilabilir.
+- Istisna: Yeni parser icin Mimar onayi gerekir.
 
 ## Faz Kapanis Durumu
 
 | Faz | Kapanis Belgesi | Durum |
 |-----|-----------------|-------|
+| Faz 2 | PHASE_2_COMPLETION_REPORT.md + ADR-GOV-006 | Tamamlandi |
+| Faz 3 | PHASE3_COMPLETION_REPORT.md | Tamamlandi |
 | Faz 4 | PHASE_4_COMPLETION_REPORT.md | Tamamlandi |
 | Faz 5 | PHASE_5_COMPLETION_REPORT.md | Tamamlandi |
-| Embedding | PHASE_6_COMPLETION_REPORT.md | Gate tamamlandi |
+| Faz 7 | PHASE_7_COMPLETION_REPORT.md | Bekliyor (Mimar onayi) |
 
 ## Kabul Edilen ADR'ler
-- ADR-0023 (Verb Prefix Slot Grammar) â€” KABUL
-- ADR-0024 (Lemma Identity Rule / Model A) â€” KABUL
-- ADR-0040 (Morphological Root Taxonomy) â€” KABUL
-- ADR-GOV-003 (Phase Redefinition) â€” KABUL
+- ADR-0004 (Translation Repository) — KABUL
+- ADR-0005 (TranslationGroup Strategy) — KABUL
+- ADR-0006 (Cross Dictionary Matching) — KABUL
+- ADR-0007 (TranslationRepository Contract) — KABUL
+- ADR-0023 (Verb Prefix Slot Grammar) — KABUL
+- ADR-0024 (Lemma Identity Rule / Model A) — KABUL
+- ADR-0040 (Morphological Root Taxonomy) — KABUL
+- ADR-GOV-003 (Phase Redefinition) — KABUL
+- ADR-GOV-004 (Phase Gate Model) — KABUL
+- ADR-GOV-005 (Phase 6 Identity Decision) — KABUL
+- ADR-GOV-006 (Phase 2 Closure Decision) — KABUL
+
+## Bekleyen Kararlar
+- ADR-P7-001 (Phase 7 Completion Approval) — Bekliyor
 
 ## Referans
 - docs/governance/PHASE_RECONCILIATION.md
 - docs/architecture/adr/ADR-GOV-003-PHASE_REDEFINITION.md
+- docs/architecture/adr/ADR-GOV-006-PHASE_2_CLOSURE_DECISION.md
 
 ## P4-006 Durumu
 **P4-006 PossessivePrefixDecompiler** = Phase 4 Extension

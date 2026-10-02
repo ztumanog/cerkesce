@@ -13,8 +13,10 @@
 | Proje | Cerkesce Sozluk |
 | Framework | Next.js 16 + TypeScript 5 |
 | Parser | 18 |
-| Toplam Test | 708 |
-| PASS | 708 |
+| Ana Testler | 653 |
+| Cert Testleri | 87 |
+| Toplam Test | 740 |
+| PASS | 740 |
 | FAIL | 0 |
 
 ---
@@ -24,12 +26,12 @@
 | Faz | Ad | Durum | Kanit |
 |-----|-----|-------|-------|
 | Phase 1 | Foundation | CLOSED | 287/287 PASS |
-| Phase 2 | Translation Platform | CLOSED | ADR-0001...0007 |
-| Phase 3 | Concept Engine | CLOSED | PHASE3_COMPLETION_REPORT |
+| Phase 2 | Translation Platform | CLOSED | ADR-GOV-006 |
+| Phase 3 | Morphological Analysis | CLOSED | PHASE3_COMPLETION_REPORT |
 | Phase 4 | Morphology + Syntax | COMPLETED | 621/621 PASS |
 | Phase 5 | Discovery Engine | COMPLETED | PHASE_5_COMPLETION_REPORT |
-| Phase 6 | API Gateway | GATE COMPLETED | 87/87 cert PASS |
-| Phase 7 | Analytics & Export | PLANLANDI | ADR-GOV-003 |
+| Phase 6 | API Gateway | COMPLETED | ADR-GOV-005 + 87/87 cert PASS |
+| Phase 7 | Analytics & Export | COMPLETION CANDIDATE | ADR-P7-001 (beklemede) |
 
 ---
 
@@ -134,7 +136,7 @@
 | Metrik | Deger |
 |--------|-------|
 | Test | 708 |
-| PASS | 708 |
+| PASS | 740 |
 | FAIL | 0 |
 
 ---
@@ -245,3 +247,4 @@
 
 **Imza:** Mimari Ekip
 **Tarih:** 2026-10-02
+
