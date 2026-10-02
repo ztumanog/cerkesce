@@ -4,9 +4,9 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev",`n    "dev:api": "tsx src/server.ts",
     "build": "next build",
-    "start": "next start",
+    "start": "next start",`n    "start:api": "tsx src/server.ts",
         "test": "vitest run",
     "test:watch": "vitest",
     "test:cert": "vitest run --config vitest.cert.config.ts",
