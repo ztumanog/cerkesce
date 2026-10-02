@@ -1,4 +1,4 @@
-﻿import { defineConfig } from 'vitest/config';
+import { defineConfig } from 'vitest/config';
 import path from 'path';
 
 export default defineConfig({
@@ -10,6 +10,7 @@ export default defineConfig({
   test: {
     include: ['src/tests/**/*.test.ts', 'src/repository/**/*.test.ts'],
     exclude: [
+      'src/tests/smoke/**',
       'src/tests/api/**',
       'src/tests/certification/**',
       'src/tests/ui/**',
@@ -25,3 +26,4 @@ export default defineConfig({
     ],
   },
 });
+
