@@ -1,4 +1,4 @@
-# ADR-GOV-004: Phase 6 Identity Decision
+# ADR-GOV-005: Phase 6 Identity Decision
 
 **Tarih:** 2026-10-02
 **Durum:** KABUL EDILDI

@@ -87,6 +87,7 @@
 | ADR-GOV-002 | Supersession | `ADR-GOV-002-HISTORICAL_SUPERSESSION.md` | Accepted |
 | ADR-GOV-003 | Phase Redefinition | `ADR-GOV-003-PHASE_REDEFINITION.md` | Accepted |
 | ADR-GOV-004 | Phase Gate Modeli | `DECISIONS.md` (kayıtlı) | Accepted |
+| ADR-GOV-005 | Phase 6 Identity Decision | `ADR-GOV-005-PHASE_6_IDENTITY_DECISION.md` | Accepted |
 
 
 
