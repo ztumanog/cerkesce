@@ -77,3 +77,24 @@ Faz 2 resmi olarak KAPANDI.
 
 **Imza:** Mimar
 **Tarih:** 2026-10-02
+
+---
+
+## ADR-GOV-006: Phase 2 Closure Decision
+
+**Durum:** ACCEPTED
+**Tarih:** 2026-10-02
+**Kategori:** Governance
+
+**Karar:**
+Phase 2 (Translation Platform) resmi olarak CLOSED kabul edilmiştir.
+
+**Kanıtlar:**
+- ADR-0004, ADR-0005, ADR-0006, ADR-0007, ADR-P2-013
+- PHASE_2_COMPLETION_REPORT.md
+- Main: 653/653 PASS
+- Cert: 87/87 PASS
+
+**Sonraki aktif calisma:** Phase 8 Production & Operations
+
+**Referans:** docs/architecture/adr/ADR-GOV-006-PHASE_2_CLOSURE_DECISION.md
