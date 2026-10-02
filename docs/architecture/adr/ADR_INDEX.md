@@ -122,3 +122,16 @@ Bu dosya, tum ADR katalogunun TEK RESMI KAYNAGIDIR.
 
 **Imza:** Mimari Ekip
 **Tarih:** 2026-10-02
+
+---
+
+## YENI ADR'LER (2026-10-02)
+
+| ADR | Baslik | Dosya | Durum |
+|-----|--------|-------|-------|
+| ADR-GOV-006 | Phase 2 Closure Decision | `ADR-GOV-006-PHASE_2_CLOSURE_DECISION.md` | Accepted |
+| ADR-GOV-007 | Phase 8 Production Readiness | `ADR-GOV-007-PHASE_8_PRODUCTION_READINESS.md` | Proposed |
+| ADR-P7-001 | Phase 7 Completion Approval | `ADR-P7-001-PHASE_7_COMPLETION_APPROVAL.md` | Accepted |
+
+**Imza:** Mimari Ekip
+**Tarih:** 2026-10-02

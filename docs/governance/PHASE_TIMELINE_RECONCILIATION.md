@@ -18,12 +18,12 @@ Freeze -> Activation -> Closure zincirini belgeler.
 | Faz | Ad | Durum | Kanit |
 |-----|-----|-------|-------|
 | Phase 1 | Foundation | CLOSED | 287/287 PASS |
-| Phase 2 | Translation Platform | CLOSED | ADR-0001...0007 |
-| Phase 3 | Concept Engine | CLOSED | PHASE3_COMPLETION_REPORT |
+| Phase 2 | Translation Platform | CLOSED | ADR-GOV-006 |
+| Phase 3 | Morphological Analysis | CLOSED | PHASE3_COMPLETION_REPORT |
 | Phase 4 | Morphology + Syntax Engine | COMPLETED | 621/621 PASS |
 | Phase 5 | Discovery Engine | COMPLETED | PHASE_5_COMPLETION_REPORT |
 | Phase 6 | API Gateway | TAMAMLANDI | ADR-GOV-005 |
-| Phase 7 | Analytics & Export | DEVAM EDIYOR | Sprint 7.0.4 |
+| Phase 7 | Analytics & Export | COMPLETED | ADR-P7-001 |
 
 ---
 
@@ -95,3 +95,4 @@ ADR-GOV-003 (Redefinition)
 
 **Imza:** Mimari Ekip
 **Tarih:** 2026-10-02
+
