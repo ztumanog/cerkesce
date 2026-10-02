@@ -1,4 +1,6 @@
-﻿export enum RelationType {
+﻿import { DiscoveryRelationType } from '../../discovery/types/DiscoveryRelationType';
+
+export enum RelationType {
   SYNONYM = 'SYNONYM',
   ANTONYM = 'ANTONYM',
   RELATED = 'RELATED'
@@ -156,6 +158,17 @@ export class MeaningGraph {
     const id = this.extractId(conceptId);
     const neighbors = this.adjacencyMap.get(id);
     return neighbors ? Array.from(neighbors) : [];
+  }
+
+  /** Returns outgoing graph edges in the shape expected by GraphTraversalService. */
+  public getNeighbors(conceptId: string): Array<{ targetConceptId: string; relationType: DiscoveryRelationType }> {
+    const id = this.extractId(conceptId);
+    return this.edges
+      .filter((edge) => edge.sourceConceptId === id)
+      .map((edge) => ({
+        targetConceptId: edge.targetConceptId,
+        relationType: edge.relationType as DiscoveryRelationType,
+      }));
   }
 
   public async getSynonyms(conceptId: any): Promise<string[]> {

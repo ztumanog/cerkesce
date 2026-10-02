@@ -1,6 +1,6 @@
 ﻿import { describe, it, expect } from 'vitest';
-import { MorphemeParser } from '@/domain/morphology/MorphemeParser';
-import { Morpheme } from '@/domain/linguistic/Morpheme';
+import { MorphemeParser } from '../../../domain/morphology/MorphemeParser';
+import { Morpheme } from '../../../domain/linguistic/Morpheme';
 import morphemesData from '../../../../public/data/linguistic/morphemes.json';
 import lexemesData from '../../../../public/data/linguistic/lexemes.json';
 
@@ -66,10 +66,10 @@ describe('P4-003: MorphemeParser — Temel', () => {
 
 describe('Phase 4.3 - MorphemeParser — String-based', () => {
   const mockMorphemes: Morpheme[] = [
-    { id: 'M-F1E', form: 'фӀэ', gloss: 'faktitif', type: 'grammatical' } as Morpheme,
-    { id: 'M-GHE', form: 'гъэ', gloss: 'kausatif', type: 'grammatical' } as Morpheme,
-    { id: 'M-BZHYGE', form: 'бзыгъэ', gloss: 'isim', type: 'lexical' } as Morpheme,
-    { id: 'M-SHXUE', form: 'шхуэ', gloss: 'buyuk', type: 'lexical' } as Morpheme,
+    { id: 'M-F1E', form: 'фӀэ', ipa: '', gloss: 'faktitif', type: 'bound', dialect: 'both' },
+    { id: 'M-GHE', form: 'гъэ', ipa: '', gloss: 'kausatif', type: 'bound', dialect: 'both' },
+    { id: 'M-BZHYGE', form: 'бзыгъэ', ipa: '', gloss: 'isim', type: 'free', dialect: 'both' },
+    { id: 'M-SHXUE', form: 'шхуэ', ipa: '', gloss: 'buyuk', type: 'free', dialect: 'both' },
   ];
   const parser = new MorphemeParser(mockMorphemes);
 
@@ -128,8 +128,8 @@ describe('MorphemeParser — Yeni Morfemler', () => {
 
 describe('ADR-0040: MorphemeParser entegrasyon', () => {
   const mockMorphemes: Morpheme[] = [
-    { id: 'M-GU', form: 'гу', gloss: 'kalp', type: 'lexical' } as Morpheme,
-    { id: 'M-PSY', form: 'псы', gloss: 'su', type: 'lexical' } as Morpheme,
+    { id: 'M-GU', form: 'гу', ipa: '', gloss: 'kalp', type: 'free', dialect: 'both' },
+    { id: 'M-PSY', form: 'псы', ipa: '', gloss: 'su', type: 'free', dialect: 'both' },
   ];
   const parser = new MorphemeParser(mockMorphemes);
 

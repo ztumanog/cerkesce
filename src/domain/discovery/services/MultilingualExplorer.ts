@@ -65,7 +65,7 @@ export class MultilingualExplorer implements IMultilingualExplorer {
       const concept = await this.meaningLinker.resolveConcept(meanings[0].id);
       if (concept) {
         conceptId = this.extractIdString(concept.id);
-        canonicalName = concept.canonicalName;
+        canonicalName = concept.canonicalName || concept.preferredLabel;
       }
     }
 

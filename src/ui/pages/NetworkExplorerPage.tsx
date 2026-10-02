@@ -28,7 +28,7 @@ export const NetworkExplorerPage: React.FC<NetworkExplorerPageProps> = ({
   const [error, setError] = useState<string | null>(null);
 
   const runLayout = (network: GenericConceptNetworkDTO): PositionedNetworkDTO => {
-    return layoutEngine.calculateLayout(network.nodes, network.edges);
+    return LayoutEngineService.applyLayout(network, 'CIRCULAR', 800, 600);
   };
 
   const getNodeLabel = (nodeId: string): string => {
@@ -88,7 +88,7 @@ export const NetworkExplorerPage: React.FC<NetworkExplorerPageProps> = ({
 
   const handleExport = (format: ExportFormat) => {
     if (!rawNetwork) return;
-    exportEngine.exportNetwork(rawNetwork, { format });
+    ExportEngineService.exportNetwork(rawNetwork, { format });
   };
 
   const selectedNode: PositionedNodeDTO | null =

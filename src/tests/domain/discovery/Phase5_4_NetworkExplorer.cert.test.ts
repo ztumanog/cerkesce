@@ -11,12 +11,12 @@ describe('Phase 5.4 - Interactive Concept Network Explorer Certification (NET)',
   const mockDiscoveryResult: DiscoveryResultDTO = {
     conceptId: WATER_ID,
     relatedConcepts: [
-      { conceptId: ICE_ID, label: 'Ice', score: 1.0, relationType: 'STATE_OF' },
-      { conceptId: RIVER_ID, label: 'River', score: 0.8, relationType: 'LOCATION_OF' }
+      { conceptId: ICE_ID, label: 'МЫЛ', score: 1.0, relationType: 'STATE_OF' },
+      { conceptId: RIVER_ID, label: 'ПСЫ', score: 0.8, relationType: 'LOCATION_OF' }
     ],
     contextClusters: [
-      { clusterId: 'state', label: 'State', concepts: [{ conceptId: ICE_ID }] },
-      { clusterId: 'location', label: 'Location', concepts: [{ conceptId: RIVER_ID }] }
+      { clusterId: 'state', label: 'ЩЫТЫКIЭ', concepts: [{ conceptId: ICE_ID }] },
+      { clusterId: 'location', label: 'ЩЫIЭКIЭ', concepts: [{ conceptId: RIVER_ID }] }
     ]
   };
 
