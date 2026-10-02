@@ -1,6 +1,7 @@
-﻿import { Router } from 'express';
+import { Router } from 'express';
 import { GovernanceDashboardService } from '../../../infra/governance/GovernanceDashboardService';
 import { GovernanceReportService } from '../../../infra/governance/GovernanceReportService';
+import { OperationalIntelligenceService } from '../../../infra/operations/OperationalIntelligenceService';
 
 const governanceRouter = Router();
 
@@ -15,6 +16,10 @@ governanceRouter.get('/report', (_req, res) => {
 governanceRouter.get('/report/markdown', (_req, res) => {
   res.setHeader('Content-Type', 'text/markdown');
   res.status(200).send(GovernanceReportService.toMarkdown(GovernanceReportService.generate()));
+});
+
+governanceRouter.get('/operations', (_req, res) => {
+  res.status(200).json(OperationalIntelligenceService.getDashboard());
 });
 
 export { governanceRouter };
