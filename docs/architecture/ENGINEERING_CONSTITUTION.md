@@ -2,7 +2,7 @@
 
 **Çerkesçe Knowledge Engine - GEMŞA Framework v1.0**
 
-**Tarih:** Ocak 2026 | **Versiyon:** v12.0 | **Status:** ✅ ACTIVE
+**Tarih:** 2 Ekim 2026 | **Versiyon:** v13.0 | **Status:** ✅ ACTIVE
 
 ---
 
@@ -48,3 +48,17 @@
 ---
 
 **Versiyon:** v12.0 | **Tarih:** 11.09.2026
+---
+
+## BELGE HIYERARSISI
+
+| Belge | Rol | Baglayici? |
+|-------|-----|------------|
+| CONSTITUTION.md | Ana anayasa | EVET |
+| ENGINEERING_CONSTITUTION.md | Muhendislik eki | Turev |
+| GEMSA_FRAMEWORK.md | Cerceve | Turev |
+| MASTER_GOVERNANCE_FRAMEWORK.md | Arsiv | HAYIR |
+
+---
+
+**Versiyon:** v13.0 | **Tarih:** 2 Ekim 2026

@@ -1,7 +1,7 @@
 # DECISIONS - Karar Kayitlari
 
-**Son Guncelleme:** 2026-09-24
-**Durum:** Faz 2 CLOSED
+**Son Guncelleme:** 2026-10-02
+**Durum:** Faz 7 DEVAM EDIYOR
 
 ---
 
@@ -16,19 +16,9 @@
 **Karar:**
 Faz 2 resmi olarak KAPANDI.
 
-**Kapanan Sprint'ler:**
-- P4-005 Source Centric Drawer
-- P4-006 Gunun Kelimesi Enrichment
-- Search Experience Sprint
-- P4-009 Drawer Semantik Sunum
-- P4-007 Release & Delivery
-
-**Kritik Teknik Borc:** 0
-
 **Kanitlar:**
 - TypeScript PASS
 - Build PASS
-- 62/62 test dosyasi PASS
 - 193/193 test PASS
 - Android Build PASS
 - GitHub Release v1.0.0-stable
@@ -37,228 +27,53 @@ Faz 2 resmi olarak KAPANDI.
 
 ---
 
+## GECERLI KARARLAR
+
+### ADR-0023: Verb Prefix Slot Grammar
+**Durum:** KABUL EDILDI
+**Tarih:** 2026-10-01
+**Karar:** Fiil onekleri 7 slot sirasina gore cozumlenir.
+
+### ADR-0024: Lemma Identity Rule (Model A)
+**Durum:** KABUL EDILDI
+**Tarih:** 2026-10-01
+**Karar:** Homonimler TEK lemmaId altinda toplanir, isHomonym: true ile isaretlenir.
+
+### ADR-0040: Morphological Root Taxonomy
+**Durum:** KABUL EDILDI
+**Tarih:** 2026-10-01
+**Karar:** Kokler 4 tipe ayrilir: Free, Bound, Neutral, Stable.
+
+### ADR-GOV-003: Phase Redefinition
+**Durum:** KABUL EDILDI
+**Tarih:** 2026-09-26
+**Karar:** Phase 6 = API Gateway, Phase 7 = Analytics & Export
+
+### ADR-GOV-005: Phase 6 Identity Decision
+**Durum:** KABUL EDILDI
+**Tarih:** 2026-10-02
+**Karar:** Phase 6 = API Gateway, Embedding = Research Track
+
+### ADR-GOV-006: Phase 8 Scope Definition
+**Durum:** PROPOSED
+**Tarih:** 2026-10-02
+
+### ADR-GOV-007: Analytics Consumption Policy
+**Durum:** PROPOSED
+**Tarih:** 2026-10-02
+
+### ADR-GOV-008: Runtime Decision Authority
+**Durum:** PROPOSED
+**Tarih:** 2026-10-02
+
+---
+
 ## ARSIV
 
 - ADR-P2-012: ARSIVLENDI (ADR-P2-013 ile degistirildi)
 - ADR-P2-011: Filter Flow Audit (COMPLETED)
-- ADR-P4-005: Source Centric Drawer (ACCEPTED)
-- ADR-P4-007-A: Arama Gecmisi (ACCEPTED)
-- ADR-P4-009: Drawer Semantik Sunum (COMPLETED)
 
 ---
 
 **Imza:** Mimar
-
-
----
-
-## KNOWN IMPROVEMENTS BACKLOG
-
-- META-001: getDictMeta / resolveSourceMetadata (cozuldu)
-- META-002: sourceLanguage 0.ady temizligi (cozuldu)
-- META-003: MULTI grup stratejisi (kabul edildi)
-- DRAWER-001: Ansiklopedik isaretlerin gelismis sunumu (backlog)
-- REL-001: Play Store yayini (beklemede)
-
-
-
----
-
-### ADR-PS-001: Product Observation Program
-
-**Tarih:** 2026-09-24
-**Durum:** AKTIF
-**Faz:** Product Stage
-
-**Karar:**
-Product Stage boyunca kullanim davranisi olculecek. Yeni kod yazilmayacak.
-
-**Olcum Alanlari:**
-- Arama Davranisi
-- Drawer Kullanimi
-- Filtre Kullanimi
-- Gunun Kelimesi
-- APK Kullanimi
-
-**Sure:** 1-2 hafta
-
-**Referans:** PRODUCT_STAGE_OBSERVATION.md
-
-
-
----
-
-### ADR-P5-001: Faz 5 Charter - Corpus Analytics & Search Intelligence
-
-**Tarih:** 2026-09-24
-**Durum:** PROPOSED
-**Faz:** 5
-**Onay Bekleyen:** Mimar
-
-**Karar:**
-Faz 5 kapsami resmilestirildi. Kilit acma onayi bekleniyor.
-
-**Kapsam:**
-- P5-001 Corpus Analytics
-- P5-002 Search Analytics
-- P5-003 Smart Suggestions
-- P5-004 Corpus Explorer
-
-**Referans:** docs/ADR-P5-001-FAZ5_CHARTER.md
-
-
-
----
-
-### ADR-P5-001: Faz 5 Charter - Corpus Analytics & Search Intelligence
-
-**Tarih:** 2026-09-24
-**Durum:** PROPOSED
-**Faz:** 5
-**Onay Bekleyen:** Mimar
-
-**Karar:**
-Faz 5 kapsami resmilestirildi. Kilit acma onayi bekleniyor.
-
-**Kapsam:**
-- P5-001 Corpus Analytics
-- P5-002 Search Analytics
-- P5-003 Smart Suggestions
-- P5-004 Corpus Explorer
-
-**Referans:** docs/ADR-P5-001-FAZ5_CHARTER.md
-
-
-## ADR-0017: WordFamily → Concept Mapping
-- **Durum:** PROPOSED
-- **Tarih:** 2026-09-26
-- **Karar:** WordFamily → Concept eşleme kuralları ADR seviyesinde tanımlanmıştır. WordFamilyResolver bu kurallara göre çalışır, kendi başına ontolojik karar veremez.
-
-## ADR-0018: WordFamilyResolver Scope Boundary
-- **Durum:** PROPOSED
-- **Tarih:** 2026-09-26
-- **Karar:** WordFamilyResolver yalnızca Word → Concept çözümleme yapar. Concept → Concept semantic traversal ayrı resolver tarafından yürütülür.
-
----
-
-## ADR-0023 — Lemma Identity Rule (KABUL EDILDI)
-
-**Karar:** Surface Form != Lemma != Concept ayrimi korunur.
-
-**Kural:** Ayni yuzey form farkli anlamlar tasiyorsa AYRI lemma alir.
-
-**Ornek:**
-- шэ (sut)   -> LEMMA-SHE-MILK
-- шэ (mermi) -> LEMMA-SHE-BULLET
-
-**Gerekce:**
-- Embedding vektorleri karismaz
-- Retrieval dogru sonuc verir
-- Sense mapping bozulmaz
-
-**Etki:** Morphology Engine, Embedding Engine, Semantic Search
-
----
-
-## ADR-0022 — Morphological Root Taxonomy (KABUL EDILDI)
-
-**Karar:** Kokler 4 tipe ayrilir: Free, Bound, Neutral, Stable.
-
-**Oncelik:** Root Taxonomy, Prefix Slot Grammar'dan ONCE gelir.
-
-**Gerekce:** Bound root'lar tek basina gorunmez (-сы, -лъы, -ты, -гъы, -къIэ).
-Root tipi bilinmeden prefix parse yanlis sonuc verir.
-
-**Etki:** RootClassifier, RootExtractor, MorphemeParser
-
----
-
-## ADR-0023 — Verb Prefix Slot Grammar (KABUL EDILDI)
-
-**Karar:** Fiil onekleri 7 slot sirasina gore cozumlenir.
-
-**Slotlar:** Reflexive, Directional, Version, Comitative, Locative, Causative, Factitive.
-
-**Etki:** VerbPrefixDecompiler, MorphemeParser
-
----
-
-## ADR-0024 — Lemma Identity Rule (KABUL EDILDI)
-
-**Karar:** Model A — Homonimler TEK lemmaId altinda toplanir,
-isHomonym: true ile isaretlenir. Anlam ayrimi senses[] dizisinde yapilir.
-
-**Zincir:** Root -> Lemma -> Sense -> Concept (KISA DEVRE YAPILAMAZ)
-
-**Ornek:** шэ (sut) + шэ (mermi) -> LEMMA-SHE, 2 sense
-
-**Etki:** LemmaBuilder (morphology ana sinif), Embedding Engine
-
----
-
-## ADR-0022 — Morphological Root Taxonomy (KABUL EDILDI)
-
-**Karar:** Kokler 4 tipe ayrilir: Free, Bound, Neutral, Stable.
-
-**Oncelik:** Root Taxonomy, Prefix Slot Grammar'dan ONCE gelir.
-
-**Gerekce:** Bound root'lar tek basina gorunmez (-сы, -лъы, -ты, -гъы, -къIэ).
-Root tipi bilinmeden prefix parse yanlis sonuc verir.
-
-**Etki:** RootClassifier, RootExtractor, MorphemeParser
-
----
-
-## ADR-0023 — Verb Prefix Slot Grammar (KABUL EDILDI)
-
-**Karar:** Fiil onekleri 7 slot sirasina gore cozumlenir.
-
-**Slotlar:** Reflexive, Directional, Version, Comitative, Locative, Causative, Factitive.
-
-**Etki:** VerbPrefixDecompiler, MorphemeParser
-
----
-
-## ADR-0024 — Lemma Identity Rule (KABUL EDILDI)
-
-**Karar:** Model A — Homonimler TEK lemmaId altinda toplanir,
-isHomonym: true ile isaretlenir. Anlam ayrimi senses[] dizisinde yapilir.
-
-**Zincir:** Root -> Lemma -> Sense -> Concept (KISA DEVRE YAPILAMAZ)
-
-**Ornek:** шэ (sut) + шэ (mermi) -> LEMMA-SHE, 2 sense
-
-**Etki:** LemmaBuilder (morphology ana sinif), Embedding Engine
-
----
-
-## RESMI KARAR KAYDI — 2026-10-01
-
-### ADR-0023 — Verb Prefix Slot Grammar
-**Karar:** KABUL EDILDI
-**Gerekce:** Kumakhov (gl4.pdf) fiil onek siralamalari
-**Onaylayan:** Mimari Ekip
-**Tarih:** 2026-10-01
-
-### ADR-0024 — Lemma Identity Rule (Model A)
-**Karar:** KABUL EDILDI
-**Gerekce:** Lemma != Sense ayrimi korunur. Homonimler tek lemmaId altinda toplanir.
-**Onaylayan:** Mimari Ekip
-**Tarih:** 2026-10-01
-
-### ADR-0040 — Morphological Root Taxonomy
-**Karar:** KABUL EDILDI
-**Gerekce:** Bound root'lar (-сы, -лъы, -ты, -гъы, -къIэ) tek basina gorunmez.
-Root Taxonomy, Prefix Slot Grammar'dan ONCE gelir.
-**Onaylayan:** Mimari Ekip
-**Tarih:** 2026-10-01
-
-### ADR-0040 Iliskisi
-ADR-0040, ADR-0022 (Meaning Graph) yerine gecmez.
-ADR-0040 bagimsiz bir ADR'dir.
-ADR-0022 = Meaning Graph (korunur)
-ADR-0040 = Morphological Root Taxonomy (yeni)
-
-### Kural
-ADR ID = immutable identity
-ADR numaralari yeniden kullanilmaz.
+**Tarih:** 2026-10-02
