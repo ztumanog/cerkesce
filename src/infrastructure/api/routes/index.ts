@@ -12,6 +12,7 @@ import { analyticsRouter } from './analyticsRoutes';
 import { healthRouter } from './healthRoutes';
 import { dashboardRouter } from './dashboardRoutes';
 import { metricsRouter } from './metricsRoutes';
+import { governanceRouter } from './governanceRoutes';
 
 const apiRouter = Router();
 
@@ -32,5 +33,11 @@ apiRouter.use('/analytics', analyticsRouter);
 
 // Dashboard API
 apiRouter.use('/dashboard', dashboardRouter);
+
+// Governance API
+apiRouter.use('/governance', governanceRouter);
+
+// Governance API
+apiRouter.use('/governance', governanceRouter);
 
 export { apiRouter };
