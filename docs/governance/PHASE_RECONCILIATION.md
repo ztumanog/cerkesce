@@ -8,13 +8,18 @@
 
 ## 1. ANAYASAL MODEL (Cercezce Mimari Denetci)
 
-| Faz | Durum |
-|-----|-------|
-| Faz 1 | ... |
-| Faz 2 | Aktif |
-| Faz 3+ | Kilitli |
+| Faz | Durum | Not |
+|-----|-------|-----|
+| Faz 1 | CLOSED | 287/287 PASS |
+| Faz 2 | CLOSED | ADR-0001...0007 |
+| Faz 3 | CLOSED | Phase 3 Gate Report |
+| Faz 4 | COMPLETED | PHASE_4_COMPLETION_REPORT.md |
+| Faz 5 | COMPLETED | PHASE_5_COMPLETION_REPORT.md |
+| Faz 6 | COMPLETED | ADR-GOV-005 (API Gateway) |
+| Faz 7 | ACTIVE | Sprint 7.0.1-7.3 tamamlandi |
 
-**Not:** Anayasa halen Faz 2'yi aktif kabul eder.
+**Not:** Anayasa guncellendi. Faz 2 CLOSED, Faz 3+ aktif.
+**Kaynak:** ADR-GOV-003, ADR-GOV-005, PHASES.md
 
 ---
 

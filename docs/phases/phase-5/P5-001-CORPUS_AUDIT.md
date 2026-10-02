@@ -77,7 +77,7 @@ const rawT = String(
 - куэд щ1акъым (KBD) -> недавно (RU)
 
 ### Durum
-P5-001 COZULDU - Faz 2 hala aktif
+P5-001 COZULDU - Faz 2 CLOSED
 ---
 
 ## P5-001 ARAMA MODU SEMANTIGI (2026-09-25)
