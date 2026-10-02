@@ -83,43 +83,14 @@ Referans: ADR-0024 (Model A)
 
 ---
 
-## Phase 6 â€” API Gateway
-**Status:** TAMAMLANDI
-
-| # | Endpoint | Metod |
-|---|----------|-------|
-| 1 | /api/v1/discovery/concept-network | GET |
-| 2 | /api/v1/discovery/explore | GET |
-| 3 | /api/v1/discovery/concept/:id | GET |
-| 4 | /api/v1/graphql | POST |
-| 5 | /api/v1/analytics/batch-export | POST |
-| 6 | /api/v1/analytics/summary | GET |
-| 7 | /api/v1/analytics/families | GET |
-| 8 | /api/v1/analytics/top-roots | GET |
-| 9 | /api/v1/analytics/top-relations | GET |
-| 10 | /api/v1/dashboard/summary | GET |
-| 11 | /api/v1/dashboard/reports | GET |
-| 12 | /api/v1/health | GET |
-| 13 | /api/v1/health/detailed | GET |
-
-**Middleware:** 4 (monitoring, rate limit, auth, caching)
-
-**Referans:** ADR-GOV-005
+## Phase 6 — API Gateway
+**Status:** COMPLETED
+**Kanit:** ADR-GOV-005 + 87/87 cert PASS
 
 ---
 
-## Ayri Arastirma Hatti â€” Embedding Research
-**Status:** GATE_COMPLETED
-
-**Referans:** docs/phases/phase-6/FAZ_6_GATE_KAPANIS_FINAL.md
-
-**Not:** ADR-GOV-003'e gore Embedding bir faz degildir.
-Ayri bir arastirma hattidir.
-
----
-
-## Faz Uzlestirma
-**Referans:** docs/governance/PHASE_RECONCILIATION.md
-
+## Phase 7 — Analytics & Export
+**Status:** COMPLETED
+**Kanit:** PHASE_7_COMPLETION_REPORT.md + ADR-P7-001
 
 
