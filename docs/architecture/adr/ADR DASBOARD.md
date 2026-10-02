@@ -30,8 +30,8 @@
 |-----|-----------|-------|
 | Faz 1 — Foundation | 4 | ✅ Tamamlandı |
 | Faz 2 — Translation Platform | 8 | ✅ Tamamlandı |
-| Faz 3 — Concept Engine | 3 | 🔒 Kilitli |
-| Faz 5 — Discovery | 3 | 🔒 Kilitli |
+| Faz 3 — Concept Engine | 3 | ✅ Tamamlandı |
+| Faz 5 — Discovery | 3 | ✅ Tamamlandı |
 | Yönetişim | 3 | ✅ Aktif |
 
 ---

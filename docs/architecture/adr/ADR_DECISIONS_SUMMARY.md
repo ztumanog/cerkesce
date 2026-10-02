@@ -47,7 +47,7 @@
 | ADR-0011 | Phase 3-7 Freeze | `ADR-0016-Phase3-7-Dondurma-SUPERSEDED.md` | Superseded |
 | ADR-0012 | Filter Flow | `ADR-P2-011-FILTER_FLOW_AUDIT.md` | Accepted |
 
-### Faz 3 — Concept Engine (KİLİTLİ)
+### Faz 3 — Concept Engine (TAMAMLANDI)
 
 | Canonical | Başlık | Physical File | Durum |
 |-----------|--------|---------------|-------|

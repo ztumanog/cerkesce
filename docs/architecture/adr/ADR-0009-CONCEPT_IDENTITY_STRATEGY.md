@@ -3,7 +3,7 @@
 **Canonical ADR:** ADR-0020
 **Physical File:** `ADR-0009-CONCEPT_IDENTITY_STRATEGY.md`
 **Tarih:** 2026-09-01
-**Durum:** 🟡 DRAFT (Phase 3 LOCKED)
+**Durum:** ✅ ACCEPTED
 **Kategori:** Concept Engine
 
 > ⚠️ **NOT:** Fiziksel dosya adı `ADR-0009-...` olarak kalmıştır (Git geçmişi için).
@@ -12,7 +12,7 @@
 ---
 # ADR-0009: Concept Identity Strategy
 
-- **Status:** DRAFT (Phase 3 LOCKED)
+- **Status:** ACCEPTED
 - **Date:** 2026-09-01
 - **Scope:** Phase 3 — Concept Engine
 
