@@ -60,9 +60,27 @@ Referans: ADR-0024 (Model A)
 ---
 
 ## Phase 6 — API Gateway
-**Status:** PLANLANAN
+**Status:** TAMAMLANDI
 
-**Referans:** ADR-GOV-003
+| # | Endpoint | Metod |
+|---|----------|-------|
+| 1 | /api/v1/discovery/concept-network | GET |
+| 2 | /api/v1/discovery/explore | GET |
+| 3 | /api/v1/discovery/concept/:id | GET |
+| 4 | /api/v1/graphql | POST |
+| 5 | /api/v1/analytics/batch-export | POST |
+| 6 | /api/v1/analytics/summary | GET |
+| 7 | /api/v1/analytics/families | GET |
+| 8 | /api/v1/analytics/top-roots | GET |
+| 9 | /api/v1/analytics/top-relations | GET |
+| 10 | /api/v1/dashboard/summary | GET |
+| 11 | /api/v1/dashboard/reports | GET |
+| 12 | /api/v1/health | GET |
+| 13 | /api/v1/health/detailed | GET |
+
+**Middleware:** 4 (monitoring, rate limit, auth, caching)
+
+**Referans:** ADR-GOV-005
 
 ---
 
