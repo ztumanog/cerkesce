@@ -1,36 +1,38 @@
-import { describe, it, expect, beforeEach } from 'vitest';
+﻿import { describe, it, expect, beforeEach } from 'vitest';
 import { LoggerService } from '../../infra/logging/LoggerService';
 
-describe('Sprint 8.3.3 - Structured Logging', () => {
+describe('Sprint 8.3.3 - Structured Logging (Mimar Formati)', () => {
   beforeEach(() => {
     LoggerService.clear();
   });
 
   it('INFO log olusturur', () => {
-    const entry = LoggerService.info('Test message', { key: 'value' });
+    const entry = LoggerService.info('test_event', { correlationId: 'corr-1' });
     expect(entry.level).toBe('INFO');
-    expect(entry.message).toBe('Test message');
-    expect(entry.context?.key).toBe('value');
+    expect(entry.event).toBe('test_event');
+    expect(entry.service).toBe('api-gateway');
+    expect(entry.correlationId).toBe('corr-1');
     expect(entry.timestamp).toBeDefined();
-    expect(entry.service).toBe('cerkesce-api');
   });
 
-  it('DEBUG/WARN/ERROR seviyeleri', () => {
-    LoggerService.debug('debug msg');
-    LoggerService.warn('warn msg');
-    LoggerService.error('error msg');
-    expect(LoggerService.getLogs()).toHaveLength(3);
+  it('Tum log seviyeleri', () => {
+    LoggerService.debug('d');
+    LoggerService.info('i');
+    LoggerService.warn('w');
+    LoggerService.error('e');
+    LoggerService.fatal('f');
+    expect(LoggerService.getLogs()).toHaveLength(5);
   });
 
-  it('Correlation ID', () => {
-    const entry = LoggerService.info('test', {}, 'corr-123');
-    expect(entry.correlationId).toBe('corr-123');
+  it('durationMs', () => {
+    const entry = LoggerService.info('test', { durationMs: 42 });
+    expect(entry.durationMs).toBe(42);
   });
 
   it('JSON export', () => {
-    LoggerService.info('test');
+    LoggerService.info('test_event');
     const json = LoggerService.toJSON();
-    expect(json).toContain('INFO');
-    expect(json).toContain('test');
+    expect(json).toContain('test_event');
+    expect(json).toContain('api-gateway');
   });
 });

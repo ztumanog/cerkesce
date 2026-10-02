@@ -1,30 +1,35 @@
-export interface LogEntry {
-  level: 'DEBUG' | 'INFO' | 'WARN' | 'ERROR';
-  message: string;
-  context?: Record<string, unknown>;
-  correlationId?: string;
-  service: string;
+﻿export interface LogEntry {
   timestamp: string;
+  level: 'DEBUG' | 'INFO' | 'WARN' | 'ERROR' | 'FATAL';
+  service: string;
+  correlationId?: string;
+  event: string;
+  durationMs?: number;
+  context?: Record<string, unknown>;
 }
 
 export class LoggerService {
   private static logs: LogEntry[] = [];
-  private static serviceName = 'cerkesce-api';
+  private static serviceName = 'api-gateway';
   private static consoleEnabled = process.env.NODE_ENV !== 'test';
 
   public static log(
-    level: 'DEBUG' | 'INFO' | 'WARN' | 'ERROR',
-    message: string,
-    context?: Record<string, unknown>,
-    correlationId?: string
+    level: 'DEBUG' | 'INFO' | 'WARN' | 'ERROR' | 'FATAL',
+    event: string,
+    options?: {
+      correlationId?: string;
+      durationMs?: number;
+      context?: Record<string, unknown>;
+    }
   ): LogEntry {
     const entry: LogEntry = {
-      level,
-      message,
-      context,
-      correlationId,
-      service: this.serviceName,
       timestamp: new Date().toISOString(),
+      level,
+      service: this.serviceName,
+      correlationId: options?.correlationId,
+      event,
+      durationMs: options?.durationMs,
+      context: options?.context,
     };
 
     this.logs.push(entry);
@@ -36,20 +41,24 @@ export class LoggerService {
     return entry;
   }
 
-  public static debug(message: string, context?: Record<string, unknown>, correlationId?: string): LogEntry {
-    return this.log('DEBUG', message, context, correlationId);
+  public static debug(event: string, options?: any): LogEntry {
+    return this.log('DEBUG', event, options);
   }
 
-  public static info(message: string, context?: Record<string, unknown>, correlationId?: string): LogEntry {
-    return this.log('INFO', message, context, correlationId);
+  public static info(event: string, options?: any): LogEntry {
+    return this.log('INFO', event, options);
   }
 
-  public static warn(message: string, context?: Record<string, unknown>, correlationId?: string): LogEntry {
-    return this.log('WARN', message, context, correlationId);
+  public static warn(event: string, options?: any): LogEntry {
+    return this.log('WARN', event, options);
   }
 
-  public static error(message: string, context?: Record<string, unknown>, correlationId?: string): LogEntry {
-    return this.log('ERROR', message, context, correlationId);
+  public static error(event: string, options?: any): LogEntry {
+    return this.log('ERROR', event, options);
+  }
+
+  public static fatal(event: string, options?: any): LogEntry {
+    return this.log('FATAL', event, options);
   }
 
   public static getLogs(): LogEntry[] {

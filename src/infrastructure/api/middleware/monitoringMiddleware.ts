@@ -1,15 +1,4 @@
-/**
- * Monitoring Middleware
- * Phase 8.3.3: Structured Logging
- *
- * Istek/yanit izleme:
- * - Method + Path + Status + Sure
- * - X-Response-Time header
- * - Correlation ID
- * - MetricsService + LoggerService entegrasyonu
- */
-
-import { MetricsService } from '../../../infra/telemetry/MetricsService';
+﻿import { MetricsService } from '../../../infra/telemetry/MetricsService';
 import { LoggerService } from '../../../infra/logging/LoggerService';
 
 export function monitoringMiddleware(req: any, res: any, next: any): void {
@@ -28,12 +17,15 @@ export function monitoringMiddleware(req: any, res: any, next: any): void {
       MetricsService.incrementCounter('http_errors_total');
     }
 
-    LoggerService.info('HTTP request', {
-      method: req.method,
-      path: req.path,
-      status: res.statusCode,
+    LoggerService.info('http_request', {
+      correlationId,
       durationMs: duration,
-    }, correlationId);
+      context: {
+        method: req.method,
+        path: req.path,
+        status: res.statusCode,
+      },
+    });
   });
 
   res.setHeader('X-Response-Time', `${Date.now() - startTime}ms`);
