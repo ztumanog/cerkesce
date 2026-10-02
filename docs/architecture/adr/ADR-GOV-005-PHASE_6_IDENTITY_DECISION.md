@@ -14,7 +14,7 @@ Phase 6 kimligi icin iki farkli yorum vardi:
 | Kaynak | Yorum |
 |--------|-------|
 | ADR-GOV-003 | Phase 6 = API Gateway |
-| Yeni belgeler | Phase 6 = Embedding |
+| Yeni belgeler (GECERSIZ) | Phase 6 = Embedding (SUPERSEDED) |
 
 Bu celiski yonetisim karmasasi yaratiyordu.
 
