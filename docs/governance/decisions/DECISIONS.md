@@ -98,3 +98,4 @@ Phase 2 (Translation Platform) resmi olarak CLOSED kabul edilmiştir.
 **Sonraki aktif calisma:** Phase 8 Production & Operations
 
 **Referans:** docs/architecture/adr/ADR-GOV-006-PHASE_2_CLOSURE_DECISION.md
+...
