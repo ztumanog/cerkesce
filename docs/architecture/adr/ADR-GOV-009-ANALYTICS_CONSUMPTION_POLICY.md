@@ -1,4 +1,4 @@
-# ADR-GOV-007: Analytics Consumption Policy
+# ADR-GOV-009: Analytics Consumption Policy
 
 **Tarih:** 2026-10-02
 **Durum:** PROPOSED

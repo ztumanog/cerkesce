@@ -1,4 +1,4 @@
-# ADR-GOV-008: Runtime Decision Authority
+# ADR-GOV-010: Runtime Decision Authority
 
 **Tarih:** 2026-10-02
 **Durum:** PROPOSED
