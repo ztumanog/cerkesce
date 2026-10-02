@@ -1,4 +1,4 @@
-﻿# ADR INDEX — Single Source of Truth (SSOT)
+# ADR INDEX — Single Source of Truth (SSOT)
 
 **Tarih:** 2026-10-02
 **Versiyon:** v2.0
@@ -57,6 +57,7 @@
 | ADR-GOV-009 | Analytics Consumption Policy | `ADR-GOV-009-ANALYTICS_CONSUMPTION_POLICY.md` | Proposed | — |
 | ADR-GOV-010 | Runtime Decision Authority | `ADR-GOV-010-RUNTIME_DECISION_AUTHORITY.md` | Proposed | — |
 | ADR-GOV-011 | API Gateway Strategy | `ADR-GOV-011-API_GATEWAY_STRATEGY.md` | Proposed | 8.2 |
+| ADR-GOV-012 | API Hosting Strategy | `ADR-GOV-012-API_HOSTING_STRATEGY.md` | Proposed | 8.5 |
 
 ---
 
@@ -122,3 +123,4 @@ Bu dosya, tum ADR katalogunun TEK RESMI KAYNAGIDIR.
 
 **Imza:** Mimari Ekip
 **Tarih:** 2026-10-02
+
