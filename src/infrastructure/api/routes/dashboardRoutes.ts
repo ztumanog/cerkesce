@@ -1,17 +1,10 @@
 import { Router } from 'express';
-import { DashboardController } from '../controllers/DashboardController';
-import { monitoringMiddleware } from '../middleware/monitoringMiddleware';
-import { rateLimiter } from '../middleware/rateLimiter';
-import { authMiddleware } from '../middleware/authMiddleware';
+import { DashboardService } from '../../../infra/telemetry/DashboardService';
 
 const dashboardRouter = Router();
-const controller = new DashboardController();
 
-dashboardRouter.use(monitoringMiddleware);
-dashboardRouter.use(rateLimiter);
-dashboardRouter.use(authMiddleware);
-
-dashboardRouter.get('/summary', controller.getDashboardSummary);
-dashboardRouter.get('/reports', controller.getReports);
+dashboardRouter.get('/', (_req, res) => {
+  res.status(200).json(DashboardService.getDashboard());
+});
 
 export { dashboardRouter };
