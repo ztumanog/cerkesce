@@ -1,4 +1,4 @@
-﻿# ROADMAP.md
+# ROADMAP.md
 
 ## Faz Durumu
 
@@ -28,11 +28,18 @@
 - P4-005 InflectionHandler
 
 ## Sonraki Adimlar
-1. Sprint 7.0.5 — Reporting
-2. API Gateway Authentication Harden
-3. Monitoring Dashboard
-4. Embedding Research Track (ayri)
 
-## Referans
-- docs/governance/PHASE_RECONCILIATION.md
+### Capability Tracks
+- **Track A — Operations** (Aktif): Alert Deduplication, Cooldown, Incident Correlation, Multi-Region, Capacity Scaling
+- **Track B — Intelligence** (Tamamlandı): Recommendation Tuning, Confidence, Explainability, Scenario Simulation
+- **Track C — Knowledge** (Tamamlandı): ADR Search, Knowledge Graph, Historical Reasoning, Traceability, Executive Memory
+- **Track D — Research** (Araştırma): Embedding, Vector Search, Semantic Similarity, LLM Retrieval
 
+### UI/UX Oncelikleri
+- **UI-1**: Governance Dashboard Hardening
+- **UI-2**: Operations Dashboard Hardening
+- **UI-3**: Intelligence Dashboard
+- **UI-4**: Knowledge Explorer
+- **UI-5**: Executive View
+
+**Referans:** PHASE_PROGRAM_CLOSURE.md, ADR-GOV-013
