@@ -27,19 +27,19 @@ export class ExecutiveIntelligenceService {
     const risk = RiskForecastingService.forecast();
     const alerts = PredictiveAlertService.generate([]);
 
-    const statuses = [capacity.status, governance.status, risk.status];
+    const statuses = [capacity.currentStatus, governance.status, risk.status];
     const status = statuses.includes('critical') ? 'critical'
       : statuses.includes('warning') ? 'warning' : 'ok';
 
     const summary = {
-      capacity: capacity.status === 'ok' ? 'Yeterli' : 'Artis gerekli',
+      capacity: capacity.currentStatus === 'ok' ? 'Yeterli' : 'Artis gerekli',
       governance: governance.status === 'ok' ? 'Temiz' : `${governance.totalIssues} sorun`,
       risk: risk.status === 'ok' ? 'Dusuk' : `Skor: ${risk.riskScore}`,
       alerts: alerts.length === 0 ? 'Aktif uyari yok' : `${alerts.length} uyari`,
     };
 
     const topRecommendations: string[] = [];
-    if (capacity.status !== 'ok') topRecommendations.push(capacity.overallRecommendation);
+    if (capacity.currentStatus !== 'ok') topRecommendations.push(capacity.overallRecommendation);
     if (governance.status !== 'ok') {
       const highPriority = governance.recommendations.filter(r => r.priority === 'high');
       topRecommendations.push(...highPriority.map(r => r.recommendation));

@@ -27,12 +27,12 @@ export class DecisionSupportService {
     const operational = OperationalAnalyticsService.getReport();
     const governance = GovernanceAnalyticsService.getReport();
 
-    const statuses = [capacity.status, operational.status, governance.status];
+    const statuses = [capacity.currentStatus, operational.status, governance.status];
     const status = statuses.includes('critical') ? 'critical'
       : statuses.includes('warning') ? 'warning' : 'ok';
 
     const recommendations: string[] = [];
-    if (capacity.status !== 'ok') recommendations.push('Kapasite planlamasi yapilmali');
+    if (capacity.currentStatus !== 'ok') recommendations.push('Kapasite planlamasi yapilmali');
     if (operational.status !== 'ok') recommendations.push('Operasyonel metrikler izlenmeli');
     if (governance.status !== 'ok') recommendations.push('Yonetisim metrikleri gozden gecirilmeli');
     if (recommendations.length === 0) recommendations.push('Tum sistemler saglikli');

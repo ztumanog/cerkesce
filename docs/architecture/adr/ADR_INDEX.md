@@ -1,3 +1,9 @@
+# ADR_INDEX — Single Source of Truth
+
+> Bu belge, tüm ADR'lerin tek otoritesidir.
+> Son güncelleme: 2026-10-03
+
+---
 # ADR INDEX — Single Source of Truth (SSOT)
 
 **Tarih:** 2026-10-02
@@ -72,7 +78,6 @@
 
 | Canonical | Başlık | Superseded By | Reason |
 |-----------|--------|---------------|--------|
-| ADR-0011 | Phase 3-7 Freeze | ADR-P4-001 | Phase 3 Complete |
 
 ---
 
@@ -145,18 +150,15 @@ Bu dosya, tum ADR katalogunun TEK RESMI KAYNAGIDIR.
 |-----|--------|-------|-------|-----|
 | ADR-P9-001-Completion | Phase 9 Completion Approval | `ADR-P9-001-PHASE_9_COMPLETION_APPROVAL.md` | Accepted | 9 |
 | ADR-P10-001-Completion | Phase 10 Completion Approval | `ADR-P10-001-PHASE_10_COMPLETION_APPROVAL.md` | Accepted | 10 |
-| ADR-P11-001-Completion | Phase 11 Completion Approval | `ADR-P11-001-PHASE_11_COMPLETION_APPROVAL.md` | Accepted | 11 |
 | ADR-P12-001-Completion | Phase 12 Completion Approval | `ADR-P12-001-PHASE_12_COMPLETION_APPROVAL.md` | Accepted | 12 |
 | ADR-P13-001-Completion | Phase 13 Completion Approval | `ADR-P13-001-PHASE_13_COMPLETION_APPROVAL.md` | Accepted | 13 |
+| ADR-P14-001 | Platform Ecosystem | `ADR-P14-001-PLATFORM_ECOSYSTEM.md` | Proposed | 14 |
+| ADR-P15-001 | Platform Reliability | `ADR-P15-001-PLATFORM_RELIABILITY.md` | Proposed | 15 |
 
 ## COMPLETION APPROVALS
 
 | ADR | Baslik | Dosya | Durum | Faz |
 |-----|--------|-------|-------|-----|
-| ADR-P9-001-Completion | Phase 9 Completion Approval | `ADR-P9-001-PHASE_9_COMPLETION_APPROVAL.md` | Accepted | 9 |
-| ADR-P10-001-Completion | Phase 10 Completion Approval | `ADR-P10-001-PHASE_10_COMPLETION_APPROVAL.md` | Accepted | 10 |
-| ADR-P11-001-Completion | Phase 11 Completion Approval | `ADR-P11-001-PHASE_11_COMPLETION_APPROVAL.md` | Accepted | 11 |
-| ADR-P12-001-Completion | Phase 12 Completion Approval | `ADR-P12-001-PHASE_12_COMPLETION_APPROVAL.md` | Accepted | 12 |
-| ADR-P13-001-Completion | Phase 13 Completion Approval | `ADR-P13-001-PHASE_13_COMPLETION_APPROVAL.md` | Accepted | 13 |
+
 
 

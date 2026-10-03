@@ -1,4 +1,4 @@
-import { PredictiveAlertDTO, AlertSeverity, AlertType } from '../../../domain/operations/dto/PredictiveAlertDTO';
+import { PredictiveAlertDTO, AlertSeverity, AlertType } from '../../domain/operations/dto/PredictiveAlertDTO';
 
 export interface AlertRule {
   type: AlertType;
