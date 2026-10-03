@@ -59,6 +59,7 @@
 | ADR-GOV-011 | API Gateway Strategy | `ADR-GOV-011-API_GATEWAY_STRATEGY.md` | Proposed | 8.2 |
 | ADR-GOV-012 | API Hosting Strategy | `ADR-GOV-012-API_HOSTING_STRATEGY.md` | Proposed | 8.5 |
 | ADR-P9-001 | Platform Intelligence Layer | `ADR-P9-001-PLATFORM_INTELLIGENCE.md` | Accepted | 9 |
+| ADR-P10-001 | Platform Intelligence Automation | `ADR-P10-001-PLATFORM_INTELLIGENCE_AUTOMATION.md` | Proposed | 10 |
 
 ---
 
@@ -124,6 +125,7 @@ Bu dosya, tum ADR katalogunun TEK RESMI KAYNAGIDIR.
 
 **Imza:** Mimari Ekip
 **Tarih:** 2026-10-02
+
 
 
 
