@@ -61,6 +61,7 @@
 | ADR-P9-001 | Platform Intelligence Layer | `ADR-P9-001-PLATFORM_INTELLIGENCE.md` | Accepted | 9 |
 | ADR-P10-001 | Platform Intelligence Automation | `ADR-P10-001-PLATFORM_INTELLIGENCE_AUTOMATION.md` | Proposed | 10 |
 | ADR-P11-001 | Governance Intelligence | `ADR-P11-001-GOVERNANCE_INTELLIGENCE.md` | Proposed | 11 |
+| ADR-P11-001-Completion | Phase 11 Completion Approval | `ADR-P11-001-PHASE_11_COMPLETION_APPROVAL.md` | Accepted | 11 |
 
 ---
 
@@ -126,6 +127,7 @@ Bu dosya, tum ADR katalogunun TEK RESMI KAYNAGIDIR.
 
 **Imza:** Mimari Ekip
 **Tarih:** 2026-10-02
+
 
 
 
