@@ -58,6 +58,7 @@
 | ADR-GOV-010 | Runtime Decision Authority | `ADR-GOV-010-RUNTIME_DECISION_AUTHORITY.md` | Proposed | — |
 | ADR-GOV-011 | API Gateway Strategy | `ADR-GOV-011-API_GATEWAY_STRATEGY.md` | Proposed | 8.2 |
 | ADR-GOV-012 | API Hosting Strategy | `ADR-GOV-012-API_HOSTING_STRATEGY.md` | Proposed | 8.5 |
+| ADR-GOV-013 | Phase Program Closure Strategy | `ADR-GOV-013-PHASE_PROGRAM_CLOSURE.md` | Proposed | 15 |
 | ADR-P9-001 | Platform Intelligence Layer | `ADR-P9-001-PLATFORM_INTELLIGENCE.md` | Accepted | 9 |
 | ADR-P10-001 | Platform Intelligence Automation | `ADR-P10-001-PLATFORM_INTELLIGENCE_AUTOMATION.md` | Proposed | 10 |
 | ADR-P11-001 | Governance Intelligence | `ADR-P11-001-GOVERNANCE_INTELLIGENCE.md` | Proposed | 11 |
@@ -157,4 +158,5 @@ Bu dosya, tum ADR katalogunun TEK RESMI KAYNAGIDIR.
 | ADR-P11-001-Completion | Phase 11 Completion Approval | `ADR-P11-001-PHASE_11_COMPLETION_APPROVAL.md` | Accepted | 11 |
 | ADR-P12-001-Completion | Phase 12 Completion Approval | `ADR-P12-001-PHASE_12_COMPLETION_APPROVAL.md` | Accepted | 12 |
 | ADR-P13-001-Completion | Phase 13 Completion Approval | `ADR-P13-001-PHASE_13_COMPLETION_APPROVAL.md` | Accepted | 13 |
+
 
