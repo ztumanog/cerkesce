@@ -31,3 +31,19 @@ Karar: ADR-GOV-013
 ---
 
 **Son Guncelleme:** 2026-10-03
+
+---
+
+## Capability Track Modeli
+
+**Phase 15 = SON BÜYÜK FAZ**
+Bundan sonraki tüm geliştirmeler Capability Track modeliyle yürütülür.
+
+| Track | Durum |
+|-------|-------|
+| Track A — Operations | Aktif |
+| Track B — Intelligence | Tamamlandı |
+| Track C — Knowledge | Tamamlandı |
+| Track D — Research | Araştırma |
+
+**Referans:** PHASE_PROGRAM_CLOSURE.md, ADR-GOV-013
