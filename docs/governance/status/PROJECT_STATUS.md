@@ -1,4 +1,4 @@
-﻿## Phase 2 â€” Translation Platform
+## Phase 2 â€” Translation Platform
 
 **Status:** CLOSED
 **Karar:** ADR-GOV-006
@@ -94,3 +94,19 @@ Referans: ADR-0024 (Model A)
 **Kanit:** PHASE_7_COMPLETION_REPORT.md + ADR-P7-001
 
 
+
+---
+
+## Capability Track Modeli (Phase 15 Sonrasi)
+
+**Phase 15 = SON BÜYÜK FAZ**
+Bundan sonraki tüm geliştirmeler Capability Track modeliyle yürütülür.
+
+| Track | Durum |
+|-------|-------|
+| Track A — Operations | Aktif |
+| Track B — Intelligence | Tamamlandı |
+| Track C — Knowledge | Tamamlandı |
+| Track D — Research | Araştırma |
+
+**Referans:** PHASE_PROGRAM_CLOSURE.md, FUTURE_CAPABILITIES.md
