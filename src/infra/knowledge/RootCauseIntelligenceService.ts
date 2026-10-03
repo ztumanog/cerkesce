@@ -76,8 +76,7 @@ export class RootCauseIntelligenceService {
 
   static getReport(): RootCauseReport {
     const clusters = this.findClusters();
-    const status = clusters.length > 3 ? 'warning'
-      : this.incidents.length === 0 ? 'ok' : 'ok';
+    const status = clusters.length > 3 ? 'warning' : 'ok';
 
     return {
       timestamp: new Date().toISOString(),
