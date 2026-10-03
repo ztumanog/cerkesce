@@ -63,6 +63,7 @@
 | ADR-P11-001 | Governance Intelligence | `ADR-P11-001-GOVERNANCE_INTELLIGENCE.md` | Proposed | 11 |
 | ADR-P11-001-Completion | Phase 11 Completion Approval | `ADR-P11-001-PHASE_11_COMPLETION_APPROVAL.md` | Accepted | 11 |
 | ADR-P12-001 | Autonomous Governance Support | `ADR-P12-001-AUTONOMOUS_GOVERNANCE_SUPPORT.md` | Proposed | 12 |
+| ADR-P13-001 | Platform Knowledge & Learning | `ADR-P13-001-PLATFORM_KNOWLEDGE_LEARNING.md` | Proposed | 13 |
 
 ---
 
@@ -128,6 +129,7 @@ Bu dosya, tum ADR katalogunun TEK RESMI KAYNAGIDIR.
 
 **Imza:** Mimari Ekip
 **Tarih:** 2026-10-02
+
 
 
 
