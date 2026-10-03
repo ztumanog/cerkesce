@@ -6,6 +6,7 @@ import { GovernanceDashboardViewService } from '../../../infra/ui/GovernanceDash
 import { OperationsDashboardViewService } from '../../../infra/ui/OperationsDashboardViewService';
 import { IntelligenceDashboardViewService } from '../../../infra/ui/IntelligenceDashboardViewService';
 import { KnowledgeExplorerViewService } from '../../../infra/ui/KnowledgeExplorerViewService';
+import { ExecutiveViewService } from '../../../infra/ui/ExecutiveViewService';
 
 const governanceRouter = Router();
 
@@ -40,6 +41,10 @@ governanceRouter.get('/intelligence/view', (_req, res) => {
 
 governanceRouter.get('/knowledge/view', (_req, res) => {
   res.status(200).json(KnowledgeExplorerViewService.getView());
+});
+
+governanceRouter.get('/executive/view', (_req, res) => {
+  res.status(200).json(ExecutiveViewService.getView());
 });
 
 export { governanceRouter };
