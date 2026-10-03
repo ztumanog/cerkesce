@@ -66,13 +66,5 @@ Embedding = Research Track
 
 ---
 
-## 6. KAPSAM DISI
-
-- Yeni parser
-- Discovery davranisi degistirme
-- Runtime karari otomatik verme
-
----
-
 **Imza:** Mimar
 **Tarih:** 2026-10-03
