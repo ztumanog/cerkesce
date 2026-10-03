@@ -157,3 +157,4 @@ Bu dosya, tum ADR katalogunun TEK RESMI KAYNAGIDIR.
 | ADR-P11-001-Completion | Phase 11 Completion Approval | `ADR-P11-001-PHASE_11_COMPLETION_APPROVAL.md` | Accepted | 11 |
 | ADR-P12-001-Completion | Phase 12 Completion Approval | `ADR-P12-001-PHASE_12_COMPLETION_APPROVAL.md` | Accepted | 12 |
 | ADR-P13-001-Completion | Phase 13 Completion Approval | `ADR-P13-001-PHASE_13_COMPLETION_APPROVAL.md` | Accepted | 13 |
+
