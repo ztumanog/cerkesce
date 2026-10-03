@@ -15,6 +15,7 @@ export interface CapacityForecast {
   };
   forecasts: ForecastPoint[];
   status: 'ok' | 'warning' | 'critical';
+  currentStatus: 'ok' | 'warning' | 'critical';
 }
 
 export class CapacityForecastingService {
@@ -54,6 +55,8 @@ export class CapacityForecastingService {
     });
 
     const maxMemory = Math.max(...forecasts.map(f => f.estimatedMemoryMB));
+    const currentStatus = current.memoryMB > 60000 ? 'critical'
+      : current.memoryMB > 30000 ? 'warning' : 'ok';
     const status = maxMemory > 100000 ? 'critical' : maxMemory > 60000 ? 'warning' : 'ok';
 
     return {
@@ -61,6 +64,7 @@ export class CapacityForecastingService {
       current,
       forecasts,
       status,
+      currentStatus,
     };
   }
 }

@@ -19,6 +19,7 @@ export interface CapacityRecommendationReport {
   scenarios: CapacityScenario[];
   overallRecommendation: string;
   status: 'ok' | 'warning' | 'critical';
+  currentStatus: 'ok' | 'warning' | 'critical';
 }
 
 export class CapacityRecommendationService {
@@ -98,6 +99,9 @@ export class CapacityRecommendationService {
       });
     }
 
+    const currentStatus = currentLoad.memory > 70 ? 'critical'
+      : currentLoad.memory > 50 ? 'warning' : 'ok';
+
     const overallStatus = scenarios.some(s => s.status === 'critical') ? 'critical'
       : scenarios.some(s => s.status === 'warning') ? 'warning' : 'ok';
 
@@ -112,6 +116,7 @@ export class CapacityRecommendationService {
       scenarios,
       overallRecommendation,
       status: overallStatus,
+      currentStatus,
     };
   }
 }

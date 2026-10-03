@@ -1,5 +1,5 @@
 import { PredictiveAlertService, PredictiveAlertInput } from './PredictiveAlertService';
-import { PredictiveAlertDTO } from '../../../domain/operations/dto/PredictiveAlertDTO';
+import { PredictiveAlertDTO } from '../../domain/operations/dto/PredictiveAlertDTO';
 
 export interface AlertDashboardReport {
   timestamp: string;

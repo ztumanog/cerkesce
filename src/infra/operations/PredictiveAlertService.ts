@@ -1,7 +1,7 @@
 import { AlertRuleEngine } from './AlertRuleEngine';
 import { TrendAnalyzer, TrendPoint } from './TrendAnalyzer';
 import { ThresholdPredictor } from './ThresholdPredictor';
-import { PredictiveAlertDTO, AlertType } from '../../../domain/operations/dto/PredictiveAlertDTO';
+import { PredictiveAlertDTO, AlertType } from '../../domain/operations/dto/PredictiveAlertDTO';
 
 export interface PredictiveAlertInput {
   type: AlertType;

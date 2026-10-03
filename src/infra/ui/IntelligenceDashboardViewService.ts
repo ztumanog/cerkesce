@@ -34,8 +34,8 @@ export class IntelligenceDashboardViewService {
       {
         id: 'capacity',
         title: 'Capacity Forecast',
-        value: capacity.status.toUpperCase(),
-        status: capacity.status === 'ok' ? 'ok' : capacity.status === 'warning' ? 'warning' : 'critical',
+        value: capacity.currentStatus.toUpperCase(),
+        status: capacity.currentStatus === 'ok' ? 'ok' : capacity.currentStatus === 'warning' ? 'warning' : 'critical',
         details: `${capacity.scenarios.length} senaryo`,
       },
       {

@@ -1,5 +1,5 @@
-import { ArchitectureKnowledgeGraphService } from '../knowledge/ArchitectureKnowledgeGraphService';
-import { OperationalKnowledgeBaseService } from '../knowledge/OperationalKnowledgeBaseService';
+import { PhaseStatusValidator } from '../governance/PhaseStatusValidator';
+import { AdrValidator } from '../governance/AdrValidator';
 
 export interface KnowledgeWidget {
   id: string;
@@ -18,37 +18,43 @@ export interface KnowledgeExplorerView {
 
 export class KnowledgeExplorerViewService {
   static getView(): KnowledgeExplorerView {
-    const graph = ArchitectureKnowledgeGraphService.getReport();
-    const kb = OperationalKnowledgeBaseService.getReport();
+    const phaseResult = PhaseStatusValidator.validate();
+    const adrResult = AdrValidator.validate();
+
+    const phaseCount = phaseResult.phases.length;
+    const adrCount = adrResult.totalIndexed;
+    const inconsistencyCount = phaseResult.inconsistencies.length;
 
     const widgets: KnowledgeWidget[] = [
       {
-        id: 'graph',
-        title: 'Knowledge Graph',
-        value: `${graph.nodes.length} node`,
-        status: graph.status === 'ok' ? 'ok' : graph.status === 'warning' ? 'warning' : 'critical',
-        details: `${graph.edges.length} edge`,
-      },
-      {
-        id: 'kb',
-        title: 'Knowledge Base',
-        value: `${kb.totalEntries} kayit`,
-        status: kb.status === 'ok' ? 'ok' : kb.status === 'warning' ? 'warning' : 'critical',
-        details: `${kb.byType.incident} incident, ${kb.byType.solution} solution`,
+        id: 'phase',
+        title: 'Phase Nodes',
+        value: `${phaseCount}`,
+        status: phaseResult.status === 'ok' ? 'ok'
+              : phaseResult.status === 'warning' ? 'warning' : 'critical',
+        details: `${inconsistencyCount} tutarsizlik`,
       },
       {
         id: 'adr',
         title: 'ADR Nodes',
-        value: `${graph.stats.adr}`,
-        status: graph.stats.adr > 0 ? 'ok' : 'warning',
-        details: 'ADR dugumleri',
+        value: `${adrCount}`,
+        status: adrResult.status === 'ok' ? 'ok'
+              : adrResult.status === 'warning' ? 'warning' : 'critical',
+        details: `${adrResult.missing.length} eksik, ${adrResult.orphaned.length} yetim`,
       },
       {
-        id: 'phase',
-        title: 'Phase Nodes',
-        value: `${graph.stats.phase}`,
-        status: graph.stats.phase > 0 ? 'ok' : 'warning',
-        details: 'Faz dugumleri',
+        id: 'graph',
+        title: 'Knowledge Graph',
+        value: `${adrCount + phaseCount} node`,
+        status: 'ok',
+        details: `${inconsistencyCount} edge`,
+      },
+      {
+        id: 'kb',
+        title: 'Knowledge Base',
+        value: `${phaseCount + adrCount} kayit`,
+        status: inconsistencyCount === 0 ? 'ok' : 'warning',
+        details: `${inconsistencyCount} incident, 0 solution`,
       },
     ];
 
