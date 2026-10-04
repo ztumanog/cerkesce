@@ -29,6 +29,51 @@ export async function POST(req: NextRequest) {
   }
 
   const data = loadData();
+  const normalized = word.trim();
+
+  // ============================================
+  // 1. ONCE TAM ESLESME KONTROLU (lexemes.json)
+  // ============================================
+  const exactLexeme = data.lexemes.find((l: any) => l.form === normalized);
+
+  if (exactLexeme) {
+    // Tam eslesme varsa, dogrudan onu kullan
+    return NextResponse.json({
+      word: normalized,
+      prefixes: [],
+      root: exactLexeme.form,
+      prefixCount: 0,
+      method: 'dictionary',
+      confidence: 1.0,
+      source: exactLexeme.literalMeaning,
+      rootExtractor: null,
+      nounCase: null,
+      morphemes: null,
+      knownRootCount: data.lexemes.length,
+      lexeme: {
+        id: exactLexeme.id,
+        form: exactLexeme.form,
+        ipa: exactLexeme.ipa,
+        literalMeaning: exactLexeme.literalMeaning,
+        partOfSpeech: exactLexeme.partOfSpeech,
+        dialectVariants: exactLexeme.dialectVariants,
+        wordFamilyId: exactLexeme.wordFamilyId,
+        notes: exactLexeme.notes,
+      },
+      wordFamily: [],
+      lemma: exactLexeme.form,
+      lemmaPos: exactLexeme.partOfSpeech === 'verb' ? 'VERB' : 'NOUN',
+      lemmaConfidence: 1.0,
+      personArguments: [],
+      lemmaPrefixes: [],
+      lemmaSuffixes: [],
+      rootMatches: [],
+    });
+  }
+
+  // ============================================
+  // 2. TAM ESLESME YOKSA, PARSER KULLAN
+  // ============================================
   const knownRoots: KnownRoot[] = data.lexemes
     .filter((l: any) => l.form)
     .map((l: any) => ({
@@ -38,13 +83,12 @@ export async function POST(req: NextRequest) {
     }));
 
   const analyzer = new MorphologyAnalyzer(knownRoots, data.roots, data.morphemes, data.lexemes);
-  const result = analyzer.analyze(word);
+  const result = analyzer.analyze(normalized);
 
   const lemmaBuilder = new LemmaBuilderV2();
-  const lemmaResult = lemmaBuilder.buildLemma(word);
+  const lemmaResult = lemmaBuilder.buildLemma(normalized);
 
-  const normalized = word.trim();
-  const lexeme = data.lexemes.find((l: any) => l.form === normalized);
+  const lexeme = exactLexeme;
 
   let wordFamily: any[] = [];
   if (lexeme?.derivation?.rootIds?.length) {
@@ -56,7 +100,7 @@ export async function POST(req: NextRequest) {
   }
 
   return NextResponse.json({
-    word,
+    word: normalized,
     prefixes: result.prefixes,
     root: result.root,
     prefixCount: result.prefixCount,

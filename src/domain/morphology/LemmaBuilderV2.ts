@@ -1,3 +1,6 @@
+import fs from 'fs';
+import path from 'path';
+
 /**
  * LemmaBuilderV2.ts - Kabardian-Cherkess Lemma Construction & Morphological Analyzer Engine
  * Phase 4 (Morphology Engine) - TypeScript / Node.js Implementation
@@ -442,8 +445,7 @@ export class LemmaBuilderV2 {
   private compoundsDb: Map<string, any> = new Map();
 
   private loadRootsDatabase(): void {
-    const dbPath = require('path').resolve('./public/data/linguistic/kabardian_roots_database.json');
-    const fs = require('fs');
+    const dbPath = path.resolve('./public/data/linguistic/kabardian_roots_database.json');
     if (!fs.existsSync(dbPath)) return;
 
     try {
@@ -589,4 +591,5 @@ export class LemmaBuilderV2 {
     };
   }
 }
+
 
