@@ -152,3 +152,7 @@ public/data/linguistic/lexemes.json.bak-*
 
 # lexemes yedekleri
 public/data/linguistic/lexemes.json.bak-*
+
+public/data/linguistic/*.bak*
+public/data/linguistic/*.archived
+*.bak-*
