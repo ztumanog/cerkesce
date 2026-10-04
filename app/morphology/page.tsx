@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { useState } from 'react';
 
@@ -33,6 +33,13 @@ interface MorphologyResult {
   lemmaSuffixes?: any[];
   rootMatches?: any[];
   frequency?: { kabardian: number; adyghe: number };
+  allMeanings?: Array<{
+    id: string;
+    literalMeaning: string;
+    partOfSpeech: string;
+    ipa?: string;
+    notes?: string;
+  }>;
 }
 
 export default function MorphologyPage() {
@@ -76,7 +83,7 @@ export default function MorphologyPage() {
           value={word}
           onChange={(e) => setWord(e.target.value)}
           onKeyDown={(e) => e.key === 'Enter' && analyze()}
-          placeholder="Örn: дэхьащхын"
+          placeholder="Örn: хъун"
           className="flex-1 px-4 py-2 border rounded-lg"
           suppressHydrationWarning
         />
@@ -97,17 +104,32 @@ export default function MorphologyPage() {
 
       {result && (
         <div className="space-y-4">
+          {/* TUM ANLAMLAR */}
+          {result.allMeanings && result.allMeanings.length > 0 && (
+            <div className="p-4 bg-yellow-50 rounded-lg border-2 border-yellow-200">
+              <h3 className="font-semibold mb-3">Tüm Anlamlar ({result.allMeanings.length})</h3>
+              <div className="space-y-2">
+                {result.allMeanings.map((m: any, i: number) => (
+                  <div key={i} className="flex items-start gap-3 text-sm">
+                    <span className="px-2 py-1 bg-yellow-600 text-white text-xs rounded font-bold">
+                      {i + 1}
+                    </span>
+                    <div>
+                      <span className="font-semibold">{m.literalMeaning}</span>
+                      <span className="text-gray-500 ml-2">({m.partOfSpeech})</span>
+                      {m.notes && <div className="text-xs text-gray-400 mt-1">{m.notes}</div>}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+
           {/* KELIME OZETI */}
           <div className="p-4 bg-gray-50 rounded-lg">
             <h2 className="font-semibold mb-2">Kelime: {result.word}</h2>
             {result.lexeme?.ipa && (
               <p className="text-sm text-gray-600">IPA: {result.lexeme.ipa}</p>
-            )}
-            {result.lexeme?.literalMeaning && result.lexeme.literalMeaning !== '?' && (
-              <p className="text-sm text-gray-600">Anlam: {result.lexeme.literalMeaning}</p>
-            )}
-            {result.lexeme?.partOfSpeech && (
-              <p className="text-sm text-gray-600">Tür: {result.lexeme.partOfSpeech}</p>
             )}
           </div>
 
@@ -205,15 +227,6 @@ export default function MorphologyPage() {
                     <span className="text-gray-600"> — {m.matchedItem}</span>
                     {m.meaning && <span className="text-gray-500"> = {m.meaning}</span>}
                     {m.meaningPrimary && <span className="text-gray-500"> = {m.meaningPrimary}</span>}
-                    {m.detectedSubroots && m.detectedSubroots.length > 0 && (
-                      <div className="ml-4 mt-1 text-gray-500">
-                        {m.detectedSubroots.map((s: any, j: number) => (
-                          <span key={j} className="inline-block mr-2">
-                            {s.root} ({s.meaning})
-                          </span>
-                        ))}
-                      </div>
-                    )}
                   </div>
                 ))}
               </div>

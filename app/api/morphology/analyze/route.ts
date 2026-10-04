@@ -1,8 +1,7 @@
-import { NextRequest, NextResponse } from 'next/server';
+﻿import { NextRequest, NextResponse } from 'next/server';
 import fs from 'fs';
 import path from 'path';
 import { MorphologyAnalyzer, KnownRoot } from '@/domain/morphology/MorphologyAnalyzer';
-import { LemmaBuilderV2 } from '@/domain/morphology/LemmaBuilderV2';
 
 let cachedData: {
   roots: any[];
@@ -45,45 +44,50 @@ export async function POST(req: NextRequest) {
   const freqKbd = data.freqKbd[normalized] ?? 0;
   const freqAdy = data.freqAdy[normalized] ?? 0;
 
-  // 1. Tam eslesme kontrolu
-  const exactLexeme = data.lexemes.find((l: any) => l.form === normalized);
+  // 1. ONCE: lexemes.json'da tam eslesme var mi?
+  const exactLexemes = data.lexemes.filter((l: any) => l.form === normalized);
 
-  if (exactLexeme) {
+  if (exactLexemes.length > 0) {
+    const first = exactLexemes[0];
     return NextResponse.json({
       word: normalized,
       prefixes: [],
-      root: exactLexeme.form,
+      root: first.form,
       prefixCount: 0,
       method: 'dictionary',
       confidence: 1.0,
-      source: exactLexeme.literalMeaning,
+      source: first.literalMeaning,
       knownRootCount: data.lexemes.length,
       lexeme: {
-        id: exactLexeme.id,
-        form: exactLexeme.form,
-        ipa: exactLexeme.ipa,
-        literalMeaning: exactLexeme.literalMeaning,
-        partOfSpeech: exactLexeme.partOfSpeech,
-        dialectVariants: exactLexeme.dialectVariants,
-        wordFamilyId: exactLexeme.wordFamilyId,
-        notes: exactLexeme.notes,
+        id: first.id,
+        form: first.form,
+        ipa: first.ipa,
+        literalMeaning: first.literalMeaning,
+        partOfSpeech: first.partOfSpeech,
+        dialectVariants: first.dialectVariants,
+        wordFamilyId: first.wordFamilyId,
+        notes: first.notes,
       },
       wordFamily: [],
-      lemma: exactLexeme.form,
-      lemmaPos: exactLexeme.partOfSpeech === 'verb' ? 'VERB' : 'NOUN',
+      lemma: first.form,
+      lemmaPos: first.partOfSpeech === 'verb' ? 'VERB' : 'NOUN',
       lemmaConfidence: 1.0,
       personArguments: [],
       lemmaPrefixes: [],
       lemmaSuffixes: [],
       rootMatches: [],
-      frequency: {
-        kabardian: freqKbd,
-        adyghe: freqAdy,
-      },
+      frequency: { kabardian: freqKbd, adyghe: freqAdy },
+      allMeanings: exactLexemes.map((l: any) => ({
+        id: l.id,
+        literalMeaning: l.literalMeaning,
+        partOfSpeech: l.partOfSpeech,
+        ipa: l.ipa,
+        notes: l.notes,
+      })),
     });
   }
 
-  // 2. Parser
+  // 2. Tam eslesme yoksa, MorphologyAnalyzer kullan
   const knownRoots: KnownRoot[] = data.lexemes
     .filter((l: any) => l.form)
     .map((l: any) => ({
@@ -94,20 +98,6 @@ export async function POST(req: NextRequest) {
 
   const analyzer = new MorphologyAnalyzer(knownRoots, data.roots, data.morphemes, data.lexemes);
   const result = analyzer.analyze(normalized);
-
-  const lemmaBuilder = new LemmaBuilderV2();
-  const lemmaResult = lemmaBuilder.buildLemma(normalized);
-
-  const lexeme = exactLexeme;
-
-  let wordFamily: any[] = [];
-  if (lexeme?.derivation?.rootIds?.length) {
-    wordFamily = data.lexemes.filter((l: any) =>
-      l.derivation?.rootIds?.some((rid: string) =>
-        lexeme.derivation.rootIds.includes(rid)
-      ) && l.id !== lexeme.id
-    );
-  }
 
   return NextResponse.json({
     word: normalized,
@@ -121,33 +111,16 @@ export async function POST(req: NextRequest) {
     nounCase: result.nounCase,
     morphemes: result.morphemes,
     knownRootCount: analyzer.getKnownRootCount(),
-    lexeme: lexeme ? {
-      id: lexeme.id,
-      form: lexeme.form,
-      ipa: lexeme.ipa,
-      literalMeaning: lexeme.literalMeaning,
-      partOfSpeech: lexeme.partOfSpeech,
-      dialectVariants: lexeme.dialectVariants,
-      wordFamilyId: lexeme.wordFamilyId,
-      notes: lexeme.notes,
-    } : null,
-    wordFamily: wordFamily.map((l: any) => ({
-      id: l.id,
-      form: l.form,
-      literalMeaning: l.literalMeaning,
-      partOfSpeech: l.partOfSpeech,
-      rule: l.derivation?.rule,
-    })),
-    lemma: lemmaResult.lemma,
-    lemmaPos: lemmaResult.pos,
-    lemmaConfidence: lemmaResult.confidenceScore,
-    personArguments: lemmaResult.morphemeBreakdown.personArguments,
-    lemmaPrefixes: lemmaResult.morphemeBreakdown.prefixes,
-    lemmaSuffixes: lemmaResult.morphemeBreakdown.suffixes,
-    rootMatches: lemmaResult.rootMatches,
-    frequency: {
-      kabardian: freqKbd,
-      adyghe: freqAdy,
-    },
+    lexeme: null,
+    wordFamily: [],
+    lemma: result.root,
+    lemmaPos: result.method === 'dictionary' ? 'NOUN' : 'NOUN/LEMMA',
+    lemmaConfidence: result.confidence,
+    personArguments: [],
+    lemmaPrefixes: result.prefixes,
+    lemmaSuffixes: [],
+    rootMatches: [],
+    frequency: { kabardian: freqKbd, adyghe: freqAdy },
+    allMeanings: [],
   });
 }
