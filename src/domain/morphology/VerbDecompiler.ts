@@ -54,7 +54,7 @@ const PREFIX_TABLE: Array<{ slot: PrefixSlot; forms: string[] }> = [
   { slot: 'directional', forms: ['къы', 'къэ'] },
   { slot: 'version',     forms: ['ху', 'зды', 'фIэ'] },
   { slot: 'comitative',  forms: ['дэ', 'ды'] },
-  { slot: 'locative',    forms: ['хэ', 'щIэ', 'и'] },
+  { slot: 'locative',    forms: ['кIэры', 'бгъэдэ', 'бгъуры', 'те', 'щIэ', 'хэ', 'дэ', 'и', 'блэ', 'пы', 'Iу', 'щы', 'бжьа', 'бжьы', 'кIэкъыдэ', 'кIэкъылэ', 'гуэ', 'тыр'] },
   { slot: 'causative',   forms: ['гъэ', 'гъа'] },
   { slot: 'factitive',   forms: ['уы', 'Iу'] },
 ];
