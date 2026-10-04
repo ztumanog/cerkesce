@@ -40,14 +40,24 @@ export async function POST(req: NextRequest) {
   const data = loadData();
   const normalized = word.trim();
 
-  // Frekans bilgisi
+  // Frekans
   const freqKbd = data.freqKbd[normalized] ?? 0;
   const freqAdy = data.freqAdy[normalized] ?? 0;
 
-  // 1. ONCE: lexemes.json'da tam eslesme var mi?
+  // 1. ONCE: tam eslesme
   const exactLexemes = data.lexemes.filter((l: any) => l.form === normalized);
 
   if (exactLexemes.length > 0) {
+    // Tum anlamlardan POS belirle
+    const hasVerb = exactLexemes.some((l: any) => l.partOfSpeech === 'verb');
+    const hasNoun = exactLexemes.some((l: any) => l.partOfSpeech === 'noun');
+    
+    let lemmaPos: string;
+    if (hasVerb && hasNoun) lemmaPos = 'VERB/NOUN';
+    else if (hasVerb) lemmaPos = 'VERB';
+    else if (hasNoun) lemmaPos = 'NOUN';
+    else lemmaPos = 'NOUN/LEMMA';
+
     const first = exactLexemes[0];
     return NextResponse.json({
       word: normalized,
@@ -70,7 +80,7 @@ export async function POST(req: NextRequest) {
       },
       wordFamily: [],
       lemma: first.form,
-      lemmaPos: first.partOfSpeech === 'verb' ? 'VERB' : 'NOUN',
+      lemmaPos,
       lemmaConfidence: 1.0,
       personArguments: [],
       lemmaPrefixes: [],
@@ -87,7 +97,7 @@ export async function POST(req: NextRequest) {
     });
   }
 
-  // 2. Tam eslesme yoksa, MorphologyAnalyzer kullan
+  // 2. Tam eslesme yoksa, MorphologyAnalyzer
   const knownRoots: KnownRoot[] = data.lexemes
     .filter((l: any) => l.form)
     .map((l: any) => ({
@@ -114,11 +124,11 @@ export async function POST(req: NextRequest) {
     lexeme: null,
     wordFamily: [],
     lemma: result.root,
-    lemmaPos: result.method === 'dictionary' ? 'NOUN' : 'NOUN/LEMMA',
+    lemmaPos: result.suffixes && result.suffixes.length > 0 ? 'VERB' : (result.method === 'dictionary' ? 'NOUN' : 'NOUN/LEMMA'),
     lemmaConfidence: result.confidence,
     personArguments: [],
     lemmaPrefixes: result.prefixes,
-    lemmaSuffixes: [],
+    lemmaSuffixes: result.suffixes ?? [],
     rootMatches: [],
     frequency: { kabardian: freqKbd, adyghe: freqAdy },
     allMeanings: [],

@@ -2,6 +2,41 @@
 
 import { useState } from 'react';
 
+// Onek slot cevirileri
+const SLOT_TR: Record<string, string> = {
+  person: 'Kişi',
+  reflexive: 'Dönüşlü',
+  directional: 'Yönelme',
+  version: 'Versiyon',
+  comitative: 'Birliktelik',
+  locative: 'Yersel',
+  causative: 'Ettirgen',
+  factitive: 'Faktitif',
+};
+
+// Sonek kod cevirileri
+const SUFFIX_CODE_TR: Record<string, string> = {
+  FUTURE_NEGATION: 'Olumsuz Gelecek',
+  IMPERFECT_NEGATION: 'Olumsuz Geniş/Geçmiş',
+  FINITE_NEGATION: 'Olumsuzluk',
+  PRETERITE_DECLARATIVE: 'Belirli Geçmiş Bildirme',
+  ANTERIOR_PLUPERFECT: 'Uzak Geçmiş Anterior',
+  PLUPERFECT: 'Uzak Geçmiş',
+  PAST_ANTERIOR: 'Geçmiş Anterior',
+  PRETERITE: 'Belirli Geçmiş',
+  IMPERFECT_DYN: 'Şimdiki Hikaye',
+  IMPERFECT: 'Geçmiş Süreklilik',
+  FACTUAL_FUTURE: 'Kesin Gelecek',
+  FUTURE_BASE: 'Gelecek Tabanı',
+  CATEGORICAL_FUTURE: 'Kategorik Gelecek',
+  REPETITIVE: 'Tekrar',
+  POTENTIAL: 'Yeterlilik',
+  TOTALITIVE: 'Tamamen',
+  CONDITIONAL: 'Şart',
+  CONDITIONAL_SHORT: 'Şart (Kısa)',
+  INDICATIVE: 'Bildirme',
+};
+
 const METHOD_TR: Record<string, string> = {
   dictionary: 'Sözlük',
   exact: 'Tam',
@@ -31,6 +66,7 @@ interface MorphologyResult {
   personArguments?: any[];
   lemmaPrefixes?: any[];
   lemmaSuffixes?: any[];
+  suffixes?: Array<{ morpheme?: string; code?: string; gloss?: string }>;
   rootMatches?: any[];
   frequency?: { kabardian: number; adyghe: number };
   allMeanings?: Array<{
@@ -167,6 +203,22 @@ export default function MorphologyPage() {
             </div>
           )}
 
+          {/* ONEKLER */}
+          {result.lemmaPrefixes && result.lemmaPrefixes.length > 0 && (
+            <div className="p-4 bg-green-50 rounded-lg border-2 border-green-200">
+              <h3 className="font-semibold mb-3">Önekler ({result.lemmaPrefixes.length})</h3>
+              <div className="space-y-2">
+                {result.lemmaPrefixes.map((p: any, i: number) => (
+                  <div key={i} className="flex items-center gap-3 text-sm">
+                    <span className="font-mono font-bold">{p.morpheme ?? p.form ?? '—'}-</span>
+                    <span className="text-gray-600">{SLOT_TR[p.slot] ?? p.slot}</span>
+                    {p.gloss && <span className="text-gray-500">— {p.gloss}</span>}
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+
           {/* KISI EKLERI */}
           {result.personArguments && result.personArguments.length > 0 && (
             <div className="p-4 bg-cyan-50 rounded-lg border-2 border-cyan-200">
@@ -183,22 +235,6 @@ export default function MorphologyPage() {
             </div>
           )}
 
-          {/* ONEKLER */}
-          {result.lemmaPrefixes && result.lemmaPrefixes.length > 0 && (
-            <div className="p-4 bg-green-50 rounded-lg border-2 border-green-200">
-              <h3 className="font-semibold mb-3">Önekler ({result.lemmaPrefixes.length})</h3>
-              <div className="space-y-2">
-                {result.lemmaPrefixes.map((p: any, i: number) => (
-                  <div key={i} className="flex items-center gap-3 text-sm">
-                    <span className="font-mono font-bold">{p.morpheme}</span>
-                    <span className="text-gray-600">{p.slot}</span>
-                    {p.gloss && <span className="text-gray-500">— {p.gloss}</span>}
-                  </div>
-                ))}
-              </div>
-            </div>
-          )}
-
           {/* SONEKLER */}
           {result.lemmaSuffixes && result.lemmaSuffixes.length > 0 && (
             <div className="p-4 bg-orange-50 rounded-lg border-2 border-orange-200">
@@ -207,8 +243,7 @@ export default function MorphologyPage() {
                 {result.lemmaSuffixes.map((s: any, i: number) => (
                   <div key={i} className="flex items-center gap-3 text-sm">
                     <span className="font-mono font-bold">{s.morpheme ?? s.suffix ?? '—'}</span>
-                    {s.code && <span className="text-gray-600">{s.code}</span>}
-                    {s.case && <span className="text-gray-600">{s.case}</span>}
+                    {s.code && <span className="text-gray-600">{SUFFIX_CODE_TR[s.code] ?? s.code}</span>}
                     {s.gloss && <span className="text-gray-500">— {s.gloss}</span>}
                   </div>
                 ))}
@@ -226,7 +261,6 @@ export default function MorphologyPage() {
                     <span className="font-semibold">{m.matchType}</span>
                     <span className="text-gray-600"> — {m.matchedItem}</span>
                     {m.meaning && <span className="text-gray-500"> = {m.meaning}</span>}
-                    {m.meaningPrimary && <span className="text-gray-500"> = {m.meaningPrimary}</span>}
                   </div>
                 ))}
               </div>
