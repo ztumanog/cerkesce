@@ -2,35 +2,6 @@
 
 import { useState } from 'react';
 
-const MORPHEME_TYPE_TR: Record<string, string> = {
-  lexical: 'Kök',
-  grammatical: 'Ek',
-  unknown: 'Bilinmeyen',
-  free: 'Bağımsız',
-  bound: 'Bağlı',
-  clitic: 'Yarı bağımlı',
-};
-
-const ROOT_TYPE_TR: Record<string, string> = {
-  STABLE: 'Kararlı',
-  FREE: 'Bağımsız',
-  NEUTRAL: 'Nötr',
-  BOUND: 'Bağlı',
-};
-
-const CASE_TR: Record<string, string> = {
-  nominative: 'Yalın',
-  ergative: 'Ergatif',
-  instrumental: 'Araç',
-  definite_instrumental: 'Belirli araç',
-  adverbial: 'Zarf',
-  plural_nominative: 'Çoğul yalın',
-  plural_ergative: 'Çoğul ergatif',
-  plural_instrumental: 'Çoğul araç',
-  plural_adverbial: 'Çoğul zarf',
-  bare: 'Eksiz',
-};
-
 const METHOD_TR: Record<string, string> = {
   dictionary: 'Sözlük',
   exact: 'Tam',
@@ -125,13 +96,13 @@ export default function MorphologyPage() {
 
       {result && (
         <div className="space-y-4">
-          {/* OZET */}
+          {/* KELIME OZETI */}
           <div className="p-4 bg-gray-50 rounded-lg">
             <h2 className="font-semibold mb-2">Kelime: {result.word}</h2>
             {result.lexeme?.ipa && (
               <p className="text-sm text-gray-600">IPA: {result.lexeme.ipa}</p>
             )}
-            {result.lexeme?.literalMeaning && (
+            {result.lexeme?.literalMeaning && result.lexeme.literalMeaning !== '?' && (
               <p className="text-sm text-gray-600">Anlam: {result.lexeme.literalMeaning}</p>
             )}
             {result.lexeme?.partOfSpeech && (
@@ -146,7 +117,7 @@ export default function MorphologyPage() {
               {result.lemmaPos && (
                 <p className="text-sm text-gray-600">Tür: {result.lemmaPos}</p>
               )}
-              {result.lemmaConfidence && (
+              {result.lemmaConfidence !== undefined && (
                 <p className="text-sm text-gray-600">Güven: {(result.lemmaConfidence * 100).toFixed(0)}%</p>
               )}
             </div>
@@ -193,7 +164,7 @@ export default function MorphologyPage() {
                   <div key={i} className="flex items-center gap-3 text-sm">
                     <span className="font-mono font-bold">{s.morpheme ?? s.suffix ?? '—'}</span>
                     {s.code && <span className="text-gray-600">{s.code}</span>}
-                    {s.case && <span className="text-gray-600">{CASE_TR[s.case] ?? s.case}</span>}
+                    {s.case && <span className="text-gray-600">{s.case}</span>}
                     {s.gloss && <span className="text-gray-500">— {s.gloss}</span>}
                   </div>
                 ))}
@@ -246,7 +217,7 @@ export default function MorphologyPage() {
           {result.wordFamily && result.wordFamily.length > 0 && (
             <div className="p-4 bg-pink-50 rounded-lg border-2 border-pink-200">
               <h3 className="font-semibold mb-3">Kelime Ailesi ({result.wordFamily.length})</h3>
-              <div className="space-y-2">
+              <div className="space-y-2 max-h-96 overflow-y-auto">
                 {result.wordFamily.map((w: any, i: number) => (
                   <div key={i} className="flex items-center gap-3 text-sm">
                     <span className="font-mono font-bold">{w.form}</span>
