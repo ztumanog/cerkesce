@@ -1,0 +1,777 @@
+[
+  {
+    "word": "абы",
+    "meanings": [
+      "Эргативнэ падежым ит ещанэ щхьэ къэзыгъэлъагъуэ цӀэпапщӀэ."
+    ],
+    "examples": [
+      {
+        "text": "Ӏэдииху и лӀыр къыщысыж пӀалъэр ищӀэрти, жэщ мазэхэу къыщысыжым и деж, абы и ӀэдиитӀыр щхьэгъубжэмкӀэ къыдигъэжырти, лъэмыжыр нэху хъурти, и лӀым къиху шыхэри а лъэмыжымкӀэ кърихурт. {{тхыгъэ|kbd|цӀэ=Нарт.}}"
+      }
+    ],
+    "partOfSpeech": "щхьэ цӏэпапщӏэ",
+    "ipa": "/ɐˈbǝ/",
+    "root": "[а] + -бы",
+    "translations": {
+      "english": [
+        "he, him, she, her, it (ergative case)",
+        "he/she ate (has eaten) an apple."
+      ],
+      "russian": [
+        "он, она, оно (эргативный падеж)",
+        "он(а) съел(а) яблоко."
+      ]
+    }
+  },
+  {
+    "word": "я",
+    "meanings": [
+      "Адыгэ алфавитым и тхущӀрэ еянэ хьэрф."
+    ],
+    "examples": [],
+    "partOfSpeech": "хьэрф",
+    "ipa": "/jɑ:/",
+    "root": "[я]",
+    "translations": {
+      "english": [
+        "fifty-eighth letter of the Kabardino-Cherkess (Circassian) alphabet"
+      ],
+      "russian": [
+        "пятьдесят восьмая буква кабардино-черкесского алфавита"
+      ]
+    }
+  },
+  {
+    "word": "ар",
+    "meanings": [
+      "Именительнэ падежым иту ещанэ щхьэр къэзыгъэлъагъуэ цӀэпапщӀэ."
+    ],
+    "examples": [
+      {
+        "text": "Ар къуажэ мэлыхъуэти, ӀуэрыӀуатэ куэд ищӀэрт."
+      },
+      {
+        "text": "Народыр зыхуэныкъуэр, зыщӀэгупсысыр фӀыуэ зэхэзыщӀыкӀ лӀыуэ щытащ ар [ПащӀэ Б.]."
+      }
+    ],
+    "partOfSpeech": "щхьэ цӏэпапщӏэ",
+    "ipa": "/ɐr/",
+    "root": "[а] + -р",
+    "translations": {
+      "english": [
+        "ар = he, she, it, they",
+        "ар дыдэ = the same."
+      ],
+      "russian": [
+        "ар = он, она, оно, они",
+        "ар дыдэ = тот самый."
+      ]
+    }
+  },
+  {
+    "word": "сэ",
+    "meanings": [
+      "Псалъэ жызыӀэм езым и щхьэр кърегъэлъагъуэ."
+    ],
+    "examples": [
+      {
+        "text": "- Сэ сыудкъым, сыубэркъым, - жиӀащ Ӏэдииху, - лӀы и щытхъуи згъэкӀуэдкъым.  {{тхыгъэ|kbd|цӀэ=Нарт.}}"
+      }
+    ],
+    "partOfSpeech": "щхьэ цӏэпапщӏэ",
+    "ipa": "/sɐ/",
+    "root": "[с] + -э",
+    "translations": {
+      "english": [
+        "I, me"
+      ],
+      "russian": [
+        "я"
+      ]
+    }
+  },
+  {
+    "word": "си",
+    "meanings": [
+      "Сысеиныгъэ къэзыгъэлъагъуэ префикс."
+    ],
+    "examples": [],
+    "partOfSpeech": "еигъэ префикс",
+    "ipa": "/si:/",
+    "root": "с + [и]",
+    "translations": {
+      "english": [
+        "possessive prefix functionally equivalent to English my, mine",
+        "My house",
+        "My state (country)"
+      ],
+      "russian": [
+        "префикс принадлежности, функционально соответствует русскому «мой»",
+        "Мой дом.",
+        "Мое государство (страна)"
+      ]
+    }
+  },
+  {
+    "word": "а",
+    "meanings": [
+      "Адыгэ алфавитым и япэ хьэрф."
+    ],
+    "examples": [],
+    "partOfSpeech": "хьэрф",
+    "ipa": "/ɐ, ɑ:/",
+    "root": "[а]",
+    "translations": {
+      "english": [
+        "а = first letter of the Kabardino-Cherkess alphabet"
+      ],
+      "russian": [
+        "а = первая буква кабардино-черкесского алфавита"
+      ]
+    }
+  },
+  {
+    "word": "уи",
+    "meanings": [
+      "Еиныгъэ къэзыгъэлъагъуэ префикс."
+    ],
+    "examples": [],
+    "partOfSpeech": "еигъэ префикс",
+    "ipa": "/wi:/",
+    "root": "у + [и]",
+    "translations": {
+      "english": [
+        "second person singular possessive indicator, functionally equivalent to English “your, yours”",
+        "your homeland, your country",
+        "at your (house/flat/etc.); near you"
+      ],
+      "russian": [
+        "показатель принадлежности, функционально соответствует русскому «твой»",
+        "твоя родина",
+        "у тебя"
+      ]
+    }
+  },
+  {
+    "word": "сыт",
+    "meanings": [
+      "ЦӀыхум къинэмыщӀа адрей псоми ирищӀоупщӀэ."
+    ],
+    "examples": [
+      {
+        "text": "ЩӀым сыт тепсэми, къытепхыжынщ.  {{тхыгъэ|kbd|цӀэ=Псжь.}}"
+      }
+    ],
+    "partOfSpeech": "зэрыупщӏэ цӏэпапщӏэ",
+    "ipa": "/sǝt/",
+    "root": "[сыт]",
+    "translations": {
+      "english": [
+        "what? (questions about everything except people)",
+        "what are you going to plant in this garden patch?",
+        "why (in the world)?"
+      ],
+      "russian": [
+        "кто? что? (обозначает вопрос обо всем, кроме человека)",
+        "Что ты посадишь на этом садовом участке?",
+        "почему же? зачем же?"
+      ]
+    }
+  },
+  {
+    "word": "цӏыху",
+    "meanings": [
+      "Гупсысэф, псэлъэф, зэрылажьэ Ӏэмэпсымэхэр зыщӀыф, ахэр лэжьыгъэм къыщызыгъэсэбэпыф псэущхьэ."
+    ],
+    "examples": [
+      {
+        "text": "ЦӀыхум и нэр къабзэмэ, игури къабзэщ.  {{тхыгъэ|kbd|цӀэ=Псжь.}}"
+      },
+      {
+        "text": "ЦӀыху зыпӀ цӀыху уасэ хон.  {{тхыгъэ|kbd|цӀэ=Псжь.}}"
+      },
+      {
+        "text": "ЦӀыху акъылыншэрэ мафӀэншэ жьэгурэ.  {{тхыгъэ|kbd|цӀэ=Псжь.}}"
+      }
+    ],
+    "partOfSpeech": "noun",
+    "ipa": "/tʹsǝxʷ/",
+    "root": "[цӀыху]",
+    "translations": {
+      "english": [
+        "person, people, human being",
+        "a good merson, good people"
+      ],
+      "russian": [
+        "человек; люди",
+        "хороший человек, хорошие люди"
+      ]
+    }
+  },
+  {
+    "word": "ауэ",
+    "meanings": [
+      "АрщхьэкӀэ."
+    ],
+    "examples": [
+      {
+        "text": "КъекӀуркъым уи щхьэ ущытхъуну, ауэ сэ къыспэщӀэхуа сымаджэхэр псынщӀэу хъужырт."
+      }
+    ],
+    "partOfSpeech": "союз",
+    "ipa": "/'ɐwɐ/",
+    "root": "[ау] + -э",
+    "translations": {
+      "english": [
+        "but, however, on the other hand"
+      ],
+      "russian": [
+        "но"
+      ]
+    }
+  },
+  {
+    "word": "щхьэкӏэ",
+    "meanings": [
+      "КъэкӀыгъэхэм я щхьэщыгу лъэныкъуэ."
+    ],
+    "examples": [
+      {
+        "text": "Батыр.. жыгыжьыр къыхичри.. щхьэкӀэкӀэ хисэжащ.  {{тхыгъэ|kbd|цӀэ=ӀуэрыӀу.}}"
+      }
+    ],
+    "partOfSpeech": "noun",
+    "ipa": "/'ɕħɐtʹʂɐ/",
+    "root": "[щхь] + -э + -[кӀ] + -э",
+    "translations": {
+      "english": [
+        "treetop, crown of a tree or plant",
+        "reach the crown of the tree."
+      ],
+      "russian": [
+        "макушка, верхушка (растения)",
+        "дотянуться до макушки дерева."
+      ]
+    }
+  },
+  {
+    "word": "нэхъ",
+    "meanings": [
+      "Зыгуэрым и щытыкӀэр нэгъуэщӀым зэрыщхьэпрыкӀыр (п. п. фӀагъкӀэ, ӀеягъкӀэ, куэдагъкӀэ) къызэрагъэлъагъуэ, Ӏуэхугъуэр зэгъэщӀыпӀар къызэрыхагъэщ псалъэ.",
+      "мыхъумэ, нэмыщӀ, фӀэкӀ."
+    ],
+    "examples": [
+      {
+        "text": "ЛӀы я нэхъ мыгъуэми Ӏуэхугъуибгъу зэпеч.  {{тхыгъэ|kbd|цӀэ=Псжь.}}"
+      }
+    ],
+    "partOfSpeech": "частицэ",
+    "ipa": "/nɐχ/",
+    "root": "[нэхъ]",
+    "translations": {
+      "english": [
+        "1. more, to a greater degree or extent 2. except, unless, perhaps, maybe, only",
+        "more beautiful, prettier"
+      ],
+      "russian": [
+        "1. более, больше, в большей степени 2. кроме как, разве что, только",
+        "более красивый, красивее, краше"
+      ]
+    }
+  },
+  {
+    "word": "ди",
+    "meanings": [
+      "Догуэт."
+    ],
+    "examples": [],
+    "partOfSpeech": "междометие",
+    "ipa": "/di:/",
+    "root": "[ди]",
+    "translations": {
+      "english": [
+        "Well! Come on!",
+        "Well, come on, show us now, Ali!"
+      ],
+      "russian": [
+        "ну-ка!",
+        "Ну-ка, покажи нам, Алий!"
+      ]
+    }
+  },
+  {
+    "word": "хуэдэу",
+    "meanings": [
+      "И щӀыкӀэ, щытыкӀэ с. ху. зыгуэрым ещхьу.",
+      "Зи пэжыпӀэр ямыщӀэ гуэрым щытепсэлъыхьым деж къагъэсэбэп."
+    ],
+    "examples": [
+      {
+        "text": "Сэтэней зи щхьэцыр хужьыбээ хъуа фызыжьт, ауэ унагъуэр, нэхь фыз щӀалэм хуэдэу, дэгъуэу зэрихьэт."
+      },
+      {
+        "text": "Гурыщхъуэ зыщӀам и гур Ӏэджэм мажэ, сыт зэхихми, зыгуэр къраӀуэкӀ хуэдэу къыщохъу."
+      }
+    ],
+    "partOfSpeech": "наречие",
+    "ipa": "/'xʷɐdɐw/",
+    "root": "хуэ- + [д] + -э + у",
+    "translations": {
+      "english": [
+        "1. as, like 2. as though, as if, like",
+        "I heard a guest had come"
+      ],
+      "russian": [
+        "1. как, словно; подобно тому, как 2. будто, как будто, вроде",
+        "я слышал, будто пришел гость."
+      ]
+    }
+  },
+  {
+    "word": "икӏи",
+    "meanings": [
+      "ПсалъитӀ е псалъэухаитӀ зэзыпх союз."
+    ],
+    "examples": [],
+    "partOfSpeech": "союз",
+    "ipa": "/jǝ'tʹʂi:/",
+    "root": "[икӀи]",
+    "translations": {
+      "english": [
+        "and, moreover, futhermore",
+        "write and read",
+        "cry and laugh"
+      ],
+      "russian": [
+        "и, да",
+        "писать и читать",
+        "плакать и смеяться"
+      ]
+    }
+  },
+  {
+    "word": "зи",
+    "meanings": [
+      "Еиныгъэ къэзыгъэлъагъуэ префикс."
+    ],
+    "examples": [
+      {
+        "text": "Зи щхьэ щымыӀэм и шыд хьэм ешх.  {{тхыгъэ|kbd|цӀэ=Псжь.}}"
+      }
+    ],
+    "partOfSpeech": "еигъэ префикс",
+    "ipa": "/zi:/",
+    "root": "[з] + [и]",
+    "translations": {
+      "english": [
+        "possession indicator, functionally corresponds to English whose, which, that, his, her, hers, its, their, theirs"
+      ],
+      "russian": [
+        "показатель принадлежности, функционально соответствует русским «чей, который, свой»"
+      ]
+    }
+  },
+  {
+    "word": "деж",
+    "meanings": [
+      "Зыгуэрым и гъунэгъуу (и Ӏэгъуэблагъэу) Ӏуэхур къыщыхъуныгъэ къегъэлъагъуэ."
+    ],
+    "examples": [],
+    "partOfSpeech": "послелог",
+    "ipa": "/de:ᶎ/",
+    "root": "[деж]",
+    "translations": {
+      "english": [
+        "by, near, close to, next to, beside, at",
+        "Flower grow near the entry to the house.",
+        "by or near the house"
+      ],
+      "russian": [
+        "у, около, вблизи, возле кого-чего-л.",
+        "у входа в дом растут цветы.",
+        "у дома, возле дома"
+      ]
+    }
+  },
+  {
+    "word": "дэ",
+    "meanings": [
+      "Япэ щхьэм иту куэд бжыгъэ къэзыгъэлъагъуэ щхьэ цӀэпапщӀэ."
+    ],
+    "examples": [],
+    "partOfSpeech": "щхьэ цӏэпапщӏэ",
+    "ipa": "/dɐ/",
+    "root": "[д] + э",
+    "translations": {
+      "english": [
+        "we",
+        "we read (are reading), study (are studying), call (are calling)",
+        "we work"
+      ],
+      "russian": [
+        "мы",
+        "мы читаем, учимся, зовем",
+        "мы работаем"
+      ]
+    }
+  },
+  {
+    "word": "щӏын",
+    "meanings": [
+      "Зыгуэрым уелэжьурэ узыхуей щытыкӀэр егъэгъуэтын, зыгуэр ухуэн, зэгъэпэщын."
+    ],
+    "examples": [],
+    "partOfSpeech": "transitive_verb",
+    "ipa": "/ɕʹǝn/",
+    "root": "[щӀ] + -ы + -н",
+    "translations": {
+      "english": [
+        "do, perform, make sth",
+        "make (build) a house",
+        "do sth in  an expert manner",
+        "do or make sth swh."
+      ],
+      "russian": [
+        "сделать что-л.",
+        "сделать (построить) дом",
+        "искуссно делать что-л.",
+        "сделать что-л. где-л."
+      ]
+    }
+  },
+  {
+    "word": "хъун",
+    "meanings": [
+      "ХъупӀэм къытекӀэ удз цӀынэу Ӏэщым яхъур."
+    ],
+    "examples": [
+      {
+        "text": "- Сэ хъун бэгъуа здэщыӀэ сощӀэ, — жиӀэри Ажэжьым бжэн цӀыкӀуищыр иришэжьэжащ.  {{тхыгъэ|kbd|цӀэ=Дыщэ кӀ.}}"
+      }
+    ],
+    "partOfSpeech": "noun",
+    "ipa": "/χʷǝn/",
+    "root": "[хъун]",
+    "translations": {
+      "english": [
+        "meadow grass"
+      ],
+      "russian": [
+        "луговая трава"
+      ]
+    }
+  },
+  {
+    "word": "фи",
+    "meanings": [
+      "Еиныгъэ къэзыгъэлъагъуэ префикс."
+    ],
+    "examples": [],
+    "partOfSpeech": "еигъэ префикс",
+    "ipa": "/fi:/",
+    "root": "ф + [и]",
+    "translations": {
+      "english": [
+        "second person plural possessive prefix functionally equivalent to English “your, yours”",
+        "your garden",
+        "at your (house, flat, place, etc.)"
+      ],
+      "russian": [
+        "префикс принадлежности, функционально соответствует русскому «ваш»",
+        "ваш сад",
+        "у вас"
+      ]
+    }
+  },
+  {
+    "word": "куэд",
+    "meanings": [
+      "Зыкъом, Ӏэджэ, зыбжанэ."
+    ],
+    "examples": [],
+    "partOfSpeech": "наречие",
+    "ipa": "/kʷɐd/",
+    "root": "[куэд]",
+    "translations": {
+      "english": [
+        "much, many, a lot of, lots of, plenty, a number of; plural",
+        "a lot of people",
+        "there are a lot of (sb or sth) swh",
+        "plural"
+      ],
+      "russian": [
+        "много",
+        "много людей",
+        "есть много где-л.",
+        "множественное число"
+      ]
+    }
+  },
+  {
+    "word": "фӏыуэ",
+    "meanings": [
+      "Ӏеигъэ лъэпкъ хэмылъу, мыбзаджэу, хъарзынэу, дэгъуэу, хуабжьу, икъукӀэ."
+    ],
+    "examples": [
+      {
+        "text": "[Мухьэмэд] Джэгум фӀыуэ къыщофэ, Махуэр фийуэ егъакӀуэ."
+      }
+    ],
+    "partOfSpeech": "наречие",
+    "ipa": "/fʹǝwɐ/",
+    "root": "[фӀ] + -ы + -уэ",
+    "translations": {
+      "english": [
+        "well, excellently, wonderfully",
+        "work well"
+      ],
+      "russian": [
+        "хорошо, славно, здорово",
+        "работать хорошо"
+      ]
+    }
+  },
+  {
+    "word": "ӏуэху",
+    "meanings": [
+      "Лэжьыгъэ, псалъэ, гупсысэ мыхъуу ягъэзащӀэ Ӏуэхугъуэ.",
+      "Зыгуэрым ехьэлӀа, и къалэным хыхьэ.",
+      "КъэхъукъащӀэ, Ӏуэхугъуэ гуэрым теухуа хабзэкӀэ зэхэгъэкӀыныгъэ.",
+      "ЩытыкӀэ."
+    ],
+    "examples": [
+      {
+        "text": "Ӏуэху мыублэ блэ хэсщ.  {{тхыгъэ|kbd|цӀэ=Псжь.}}"
+      },
+      {
+        "text": "Уи мыӀуэху зепхуэмэ, уи щхьэм баш техуэнщ.  {{тхыгъэ|kbd|цӀэ=Псжь.}}"
+      },
+      {
+        "text": "АдэкӀэ Залымджэрий къыжиӀащ фронт псоми Ӏуэхур зэрыщыщытыр."
+      }
+    ],
+    "partOfSpeech": "noun",
+    "ipa": "/ʔʷɐxʷ/",
+    "root": "[Ӏуэху]",
+    "translations": {
+      "english": [
+        "1. practical activity; work; occupation, labour 2. affair, business, matter, things (sth directly concerning sb or sth) 3. trial, hearing, case, proceedings (for example, in the courts) 4. state of affairs, situation",
+        "I consider this to be my business.",
+        "the court considered the case one again.",
+        "Business at the factory was not doing well.",
+        "a good thing"
+      ],
+      "russian": [
+        "1. практическая деятельность; работа, занятие, труд 2. дело (то, что непосредственно касается кого-чего-л.) 3. дело, разбирательство (напр. судебное) 4. положение вещей, обстановка",
+        "я считаю это своим делом.",
+        "суд рассмотрел дело еще раз.",
+        "На заводе дела шли неважно.",
+        "хорошее дело"
+      ]
+    }
+  },
+  {
+    "word": "папщӏэ",
+    "meanings": [
+      "ЩхьэкӀэ, абы къыхэкӀкӀэ."
+    ],
+    "examples": [
+      {
+        "text": "А зэманым урыс культурэм пыщӀа хъун папщӀэ, бгырысхэм я дежкӀэ хэкӀыпӀэ нэхъыщхьэу щытар урысыдзэм къулыкъу щыщӀэнырт."
+      }
+    ],
+    "partOfSpeech": "союз",
+    "ipa": "/'pɑ:pʹɕʹɐ/",
+    "root": "[папщӀ]",
+    "translations": {
+      "english": [
+        "to, in order to, so that"
+      ],
+      "russian": [
+        "чтобы, дабы, для того чтобы"
+      ]
+    }
+  },
+  {
+    "word": "зыри",
+    "meanings": [
+      "Зыгуэри, хэти."
+    ],
+    "examples": [
+      {
+        "text": "Ӏэминат къэувыӀэри, нэ къулэн дахитӀымкӀэ мащӀэу къеплъэкӀа мыхъумэ, зыри жиӀакъым."
+      }
+    ],
+    "partOfSpeech": "мыхъуныгъэ цӏэпапщӏэ",
+    "ipa": "/'zǝri:/",
+    "root": "зы- + -р + -и",
+    "translations": {
+      "english": [
+        "no one, nobody, nothing"
+      ],
+      "russian": [
+        "никто, ничто"
+      ]
+    }
+  },
+  {
+    "word": "хуэдэ",
+    "meanings": [
+      "Зыгуэрым теплъэкӀэ, щытыкӀэкӀэ пэгъунэгъу; зыгуэрым ещхь."
+    ],
+    "examples": [
+      {
+        "text": "Абы хуэдэ гугъуехь мащӀэ и фэ дэкӀакъым Лу."
+      },
+      {
+        "text": "А шым хуэдэ зэикӀ ялъэгъуатэкъым.  {{тхыгъэ|kbd|цӀэ=ӀуэрыӀу.}}"
+      }
+    ],
+    "partOfSpeech": "adjective",
+    "ipa": "/'xʷɐdɐ/",
+    "root": "[хуэд] + -э",
+    "translations": {
+      "english": [
+        "like, similar to sb or sth"
+      ],
+      "russian": [
+        "подобный кому-чему-л., сходный с кем-чем-л."
+      ]
+    }
+  },
+  {
+    "word": "псалъэ",
+    "meanings": [
+      "Бзэм щыщу къэхъукъащӀэ, предмет сыт хуэдэхэр къызэраӀуатэ цӀэ.",
+      "Псалъэмакъ."
+    ],
+    "examples": [
+      {
+        "text": "Нобэрей гуфӀэгъуэшхуэм хуэфащэу, абы и инагъыр къитӀэсыфу псалъэ щхьэхуэ къыжыӀэфын хуейт."
+      },
+      {
+        "text": "Псалъэм и пэр умыщӀэу, и кӀэр пщӀэркъым.  {{тхыгъэ|kbd|цӀэ=Псжь.}}"
+      }
+    ],
+    "partOfSpeech": "noun",
+    "ipa": "/'psɑ:ɬɐ/",
+    "root": "[псалъ] + -э",
+    "translations": {
+      "english": [
+        "1. word, lexeme 2. speech, conversation",
+        "words written beginning with a capital letter."
+      ],
+      "russian": [
+        "1. слово 2. разговор; речь",
+        "слова, которые пишутся начиная с прописной буквы."
+      ]
+    }
+  },
+  {
+    "word": "апхуэдэу",
+    "meanings": [
+      "Ещхьу, а щытыкӀэм тету."
+    ],
+    "examples": [],
+    "partOfSpeech": "наречие",
+    "ipa": "/ɐp'xʷɐdɐw/",
+    "root": "[а] + -п + хуэ- + [д] + -э + -у",
+    "translations": {
+      "english": [
+        "thus, so, in that way",
+        "say it in this way!",
+        "don't walk around like that."
+      ],
+      "russian": [
+        "так, таким образом",
+        "скажи так!",
+        "не ходи так!"
+      ]
+    }
+  },
+  {
+    "word": "гъуэгу",
+    "meanings": [
+      "ЗыщӀыпӀэ икӀыу нэгъуэщӀыпӀэ кӀуэн папщӀэ къагъэсэбэп зекӀуапӀэ.",
+      "Гъуэгуанэ."
+    ],
+    "examples": [
+      {
+        "text": "Сабэр гъуэгум къыщиӀэту «Победащхъуэр» мажэ псынщӀэу."
+      },
+      {
+        "text": "Гъуэгу зымыщӀэ пашэ умыщӀ.  {{тхыгъэ|kbd|цӀэ=Псжь.}}"
+      }
+    ],
+    "partOfSpeech": "noun",
+    "ipa": "/ʁʷɐgʷ/",
+    "root": "[гъуэгу]",
+    "translations": {
+      "english": [
+        "1. road 2. trip, journey",
+        "railroad",
+        "highway, carriageway",
+        "tomorrow we set out on our journey",
+        "big road"
+      ],
+      "russian": [
+        "1. дорога 2. поездка, путешествие",
+        "железная дорога",
+        "шоссейная дорога",
+        "завтра нам предстоит путешествие",
+        "большая дорога"
+      ]
+    }
+  },
+  {
+    "word": "хэт",
+    "meanings": [
+      "Зи гугъу ящӀ, зытепсэлъыхь цӀыхур къегъэлъагъуэ.",
+      "ПсалъэухаитӀ (е нэхъыбэ) щызэпэщӀагъэувэкӀэ «зыр-адрейр», «зым-адрейм» мыхьэнэр къигъэлъагъуэу къагъэсэбэп."
+    ],
+    "examples": [
+      {
+        "text": "Хэт, тӀысэ, уезыгъэджауэ жыхуэпӀэр?"
+      }
+    ],
+    "partOfSpeech": "зэрыупщӏэ цӏэпапщӏэ",
+    "ipa": "/xɐt/",
+    "root": "[хэт]",
+    "translations": {
+      "english": [
+        "1. who (only about people) 2. as a separator: one... another…, some... others...",
+        "Who is he?",
+        "some were sitting, others were standing",
+        "some were crying, others were laughing"
+      ],
+      "russian": [
+        "1. кто (только о человеке) 2. в разделительном значении: один ...другой.., одни... другие...",
+        "Кто он?",
+        "кто сидит, кто стоит…",
+        "кто плачет, кто смеётся…"
+      ]
+    }
+  },
+  {
+    "word": "иджы",
+    "meanings": [
+      "Ит зэманым; лэжьыгъэр, Ӏуэхур щекӀуэкӀ зэманым."
+    ],
+    "examples": [
+      {
+        "text": "Япэм мыр дэркӀэ унэу щитами, иджы гъэрыпӀэ хъужащ."
+      }
+    ],
+    "partOfSpeech": "наречие",
+    "ipa": "/jǝ'dᶎǝ/",
+    "root": "[иджы]",
+    "translations": {
+      "english": [
+        "now, at present"
+      ],
+      "russian": [
+        "теперь, сейчас"
+      ]
+    }
+  }
+]

@@ -535,7 +535,8 @@ export class LemmaBuilderV2 {
     const clean = stem.trim();
 
     for (const [rootSym, meaning] of Object.entries(LemmaBuilderV2.KNOWN_CORE_ROOTS)) {
-      if (clean.includes(rootSym)) {
+      // Sadece kelime kok ile BASLIYORSA veya TAM OLARAK kok ise
+      if (clean === rootSym || clean.startsWith(rootSym)) {
         foundSubroots.push({ root: rootSym, meaning });
       }
     }
@@ -591,5 +592,7 @@ export class LemmaBuilderV2 {
     };
   }
 }
+
+
 
 
