@@ -11468,7 +11468,8 @@
       "adyghe": "чъыгай",
       "kabardian": "жыгей"
     },
-    "corpusFrequency": 42
+    "corpusFrequency": 42,
+    "conceptId": "OAK_TREE"
   },
   {
     "id": "L-DEZHYGEY",
@@ -11692,8 +11693,8 @@
     "notes": "C-11.3: mese (Adigece varyant). Korpus: 6.",
     "status": "rare",
     "dialectVariants": {
-      "adyge": "чъыгай",
-      "kabardian": "жыгей"
+      "kabardian": "жыгей",
+      "adyghe": "чъыгай"
     },
     "corpusFrequency": 6
   },
@@ -11707,8 +11708,8 @@
     "notes": "C-11.3: mese (Adigece varyant). Korpus: 13.",
     "status": "rare",
     "dialectVariants": {
-      "adyge": "чъыгае",
-      "kabardian": "жыгей"
+      "kabardian": "жыгей",
+      "adyghe": "чъыгае"
     },
     "corpusFrequency": 0
   },
@@ -21318,5 +21319,153 @@
     "wordFamilyId": "WF-DELKHAN",
     "partOfSpeech": "noun",
     "notes": "Dogrulandi: sozluk kaynagi"
+  },
+  {
+    "id": "L-TYGHOPCHYKH",
+    "form": "тыгъопчыхь",
+    "literalMeaning": "dun aksam",
+    "conceptId": "EVENING",
+    "wordFamilyId": "WF-TYGHOPCHYKH",
+    "partOfSpeech": "noun",
+    "notes": "Dogrulandi: sozluk kaynagi"
+  },
+  {
+    "id": "L-TYGHOSCHESCH",
+    "form": "тыгъосчэщ",
+    "literalMeaning": "dun gece",
+    "conceptId": "NIGHT",
+    "wordFamilyId": "WF-TYGHOSCHESCH",
+    "partOfSpeech": "noun",
+    "notes": "Dogrulandi: sozluk kaynagi"
+  },
+  {
+    "id": "L-ULHYIN",
+    "form": "улъыин",
+    "literalMeaning": "pas",
+    "conceptId": "RUST",
+    "wordFamilyId": "WF-ULHYIN",
+    "partOfSpeech": "noun",
+    "notes": "Dogrulandi: sozluk kaynagi"
+  },
+  {
+    "id": "L-QELTMAQ",
+    "form": "къэлътмакъ",
+    "literalMeaning": "heybe",
+    "conceptId": "BAG",
+    "wordFamilyId": "WF-QELTMAQ",
+    "partOfSpeech": "noun",
+    "notes": "Dogrulandi: sozluk kaynagi"
+  },
+  {
+    "id": "L-KHASHHE",
+    "form": "кхъащхьэ",
+    "literalMeaning": "mezar",
+    "conceptId": "GRAVE",
+    "wordFamilyId": "WF-KHASHHE",
+    "partOfSpeech": "noun",
+    "notes": "Dogrulandi: sozluk kaynagi"
+  },
+  {
+    "id": "L-DYSHE",
+    "form": "дыщэ",
+    "literalMeaning": "altin",
+    "conceptId": "GOLD",
+    "wordFamilyId": "WF-DYSHE",
+    "partOfSpeech": "noun",
+    "notes": "Dogrulandi: sozluk kaynagi"
+  },
+  {
+    "id": "L-MELYL",
+    "form": "мэлыл",
+    "literalMeaning": "koyun eti",
+    "conceptId": "MUTTON",
+    "wordFamilyId": "WF-MELYL",
+    "partOfSpeech": "noun",
+    "notes": "Dogrulandi: sozluk kaynagi"
+  },
+  {
+    "id": "L-BLEK1A",
+    "form": "блэкӀа",
+    "literalMeaning": "gecmis",
+    "conceptId": "PAST",
+    "wordFamilyId": "WF-BLEK1A",
+    "partOfSpeech": "noun",
+    "notes": "Dogrulandi: sozluk kaynagi"
+  },
+  {
+    "id": "L-SHUIN",
+    "form": "шъуин",
+    "literalMeaning": "islik calmak",
+    "conceptId": "WHISTLE",
+    "wordFamilyId": "WF-SHUIN",
+    "partOfSpeech": "noun",
+    "notes": "Dogrulandi: sozluk kaynagi"
+  },
+  {
+    "id": "L-KHELHHEN",
+    "form": "хэлъхьэн",
+    "literalMeaning": "eklemek",
+    "conceptId": "ADD",
+    "wordFamilyId": "WF-KHELHHEN",
+    "partOfSpeech": "noun",
+    "notes": "Dogrulandi: sozluk kaynagi"
+  },
+  {
+    "id": "L-DEKHAN",
+    "form": "дэхьан",
+    "literalMeaning": "icinden cikarmak",
+    "conceptId": "REMOVE",
+    "wordFamilyId": "WF-DEKHAN",
+    "partOfSpeech": "noun",
+    "notes": "Dogrulandi: sozluk kaynagi"
+  },
+  {
+    "id": "L-DZYN",
+    "form": "дзын",
+    "literalMeaning": "atmak",
+    "conceptId": "THROW",
+    "wordFamilyId": "WF-DZYN",
+    "partOfSpeech": "noun",
+    "notes": "Dogrulandi: sozluk kaynagi"
+  },
+  {
+    "id": "L-ZYKHEDZEN",
+    "form": "зыхэдзэн",
+    "literalMeaning": "atilmak",
+    "conceptId": "JUMP",
+    "wordFamilyId": "WF-ZYKHEDZEN",
+    "partOfSpeech": "noun",
+    "notes": "Dogrulandi: sozluk kaynagi"
+  },
+  {
+    "id": "L-SHAKHE",
+    "form": "шахэ",
+    "literalMeaning": "kasik",
+    "conceptId": "GROIN",
+    "wordFamilyId": "WF-SHAKHE",
+    "partOfSpeech": "noun",
+    "notes": "Dogrulandi: sozluk kaynagi"
+  },
+  {
+    "id": "L-1USHOSHHE",
+    "form": "Ӏушъошъэ",
+    "literalMeaning": "fisilti",
+    "conceptId": "WHISPER",
+    "wordFamilyId": "WF-1USHOSHHE",
+    "partOfSpeech": "noun",
+    "notes": "Dogrulandi: sozluk kaynagi"
+  },
+  {
+    "id": "L-KUANDZH",
+    "form": "къандж",
+    "literalMeaning": "saksagan",
+    "wordFamilyId": "WF-KUANDZH",
+    "conceptId": "MAGPIE",
+    "partOfSpeech": "noun",
+    "notes": "Aig (2006); Tharkaho (1991); Lash (2013); Enstitusu (2011)",
+    "dialectVariants": {
+      "adyghe": "къандж",
+      "kabardian": "къанжэ"
+    }
   }
 ]
