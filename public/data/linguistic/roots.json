@@ -664,8 +664,12 @@
     "notes": "40+ türev. -пӀэ eki fiil köklerine eklenerek yer/mekân ismi türetir. İkincil anlam: kap/örtü (пӀэтепхъуэ).",
     "wordFamily": {
       "id": "WF-P1E",
-      "lexemeIds": [],
-      "conceptIds": [],
+      "lexemeIds": [
+        "L-P1E"
+      ],
+      "conceptIds": [
+        "PLACE"
+      ],
       "morphemeIds": [],
       "productivity": {
         "totalLexemes": 0,
@@ -1762,8 +1766,12 @@
     "notes": "Deniz, okyanus. 12 sözlük + Wiktionary. хыкъа (yunus) bileşiğinin ilk parçası.",
     "wordFamily": {
       "id": "WF-KHY",
-      "lexemeIds": [],
-      "conceptIds": [],
+      "lexemeIds": [
+        "L-KHY"
+      ],
+      "conceptIds": [
+        "SEA"
+      ],
       "morphemeIds": [],
       "productivity": {
         "totalLexemes": 0,
@@ -1934,8 +1942,12 @@
     "notes": "Bal. 12 sözlük + Wiktionary. фошыгъу (şeker) bileşiğinin ilk parçası.",
     "wordFamily": {
       "id": "WF-FO",
-      "lexemeIds": [],
-      "conceptIds": [],
+      "lexemeIds": [
+        "L-FO"
+      ],
+      "conceptIds": [
+        "HONEY"
+      ],
       "morphemeIds": [],
       "productivity": {
         "totalLexemes": 0,
@@ -2144,8 +2156,12 @@
     "notes": "Ordu koku. Adigece ve Kabardeyce ayni.",
     "wordFamily": {
       "id": "WF-DZE",
-      "lexemeIds": [],
-      "conceptIds": [],
+      "lexemeIds": [
+        "L-DZE"
+      ],
+      "conceptIds": [
+        "TOOTH"
+      ],
       "morphemeIds": [],
       "productivity": {
         "totalLexemes": 0,
@@ -3495,8 +3511,12 @@
     "notes": "C-11.4: hanim koku.",
     "wordFamily": {
       "id": "WF-GUASHE",
-      "lexemeIds": [],
-      "conceptIds": [],
+      "lexemeIds": [
+        "L-GUASHE"
+      ],
+      "conceptIds": [
+        "LADY"
+      ],
       "morphemeIds": [],
       "productivity": {
         "totalLexemes": 0,
