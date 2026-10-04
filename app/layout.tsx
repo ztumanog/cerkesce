@@ -78,6 +78,8 @@ export default function RootLayout({
     <a href="/knowledge" className="hover:text-blue-400">Knowledge</a>
           <a href="/knowledge/details" className="hover:text-blue-400 text-sm opacity-75">↳ Details</a>
     <a href="/operations" className="hover:text-blue-400">Operations</a>
+    <a href="/morphology" className="hover:text-blue-400">Morfoloji</a>
+    <a href="/sozluk" className="hover:text-blue-400">Sözlük</a>
   </div>
 </nav>
                <SWRegister />
