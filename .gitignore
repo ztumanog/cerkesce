@@ -146,3 +146,9 @@ public/data/*.pdf
 docs/**/*.pdf
 
 docs/morphology/sources/*.pdf
+
+# lexemes yedekleri
+public/data/linguistic/lexemes.json.bak-*
+
+# lexemes yedekleri
+public/data/linguistic/lexemes.json.bak-*
