@@ -1,6 +1,3 @@
-import fs from 'fs';
-import path from 'path';
-
 export interface DriftWarning {
   document: string;
   issue: string;
@@ -16,67 +13,50 @@ export interface DriftPreventionReport {
 }
 
 export class GovernanceDriftPreventionService {
-  static analyze(): DriftPreventionReport {
+  static analyze(data?: {
+    phasesContent?: string;
+    projectStatusContent?: string;
+    roadmapContent?: string;
+    constitutionContent?: string;
+  }): DriftPreventionReport {
     const warnings: DriftWarning[] = [];
-
-    const docs = [
-      { name: 'PHASES.md', path: './docs/governance/status/PHASES.md' },
-      { name: 'PROJECT_STATUS.md', path: './docs/governance/status/PROJECT_STATUS.md' },
-      { name: 'ROADMAP.md', path: './docs/governance/status/ROADMAP.md' },
-      { name: 'CONSTITUTION.md', path: './docs/governance/constitution/CONSTITUTION.md' },
-    ];
-
-    const contents: Record<string, string> = {};
-
-    for (const doc of docs) {
-      const fullPath = path.resolve(doc.path);
-      if (!fs.existsSync(fullPath)) {
-        warnings.push({
-          document: doc.name,
-          issue: 'Belge bulunamadi',
-          severity: 'high',
-          recommendation: `${doc.name} dosyasini olusturun`,
-        });
-        continue;
-      }
-      contents[doc.name] = fs.readFileSync(fullPath, 'utf-8');
-    }
+    const d = data || {};
 
     // PHASES vs PROJECT_STATUS karsilastirma
-    if (contents['PHASES.md'] && contents['PROJECT_STATUS.md']) {
-      const phasesHasPhase11 = contents['PHASES.md'].includes('11');
-      const projectHasPhase11 = contents['PROJECT_STATUS.md'].includes('Phase 11');
+    if (d.phasesContent && d.projectStatusContent) {
+      const phasesHasPhase15 = d.phasesContent.includes('15');
+      const projectHasPhase15 = d.projectStatusContent.includes('Phase 15');
 
-      if (phasesHasPhase11 && !projectHasPhase11) {
+      if (phasesHasPhase15 && !projectHasPhase15) {
         warnings.push({
           document: 'PHASES.md vs PROJECT_STATUS.md',
-          issue: 'Phase 11 senkron degil',
+          issue: 'Phase 15 senkron degil',
           severity: 'high',
-          recommendation: 'PROJECT_STATUS.md\'yi guncelleyin',
+          recommendation: 'PROJECT_STATUS.md guncelleyin',
         });
       }
     }
 
     // ROADMAP vs PHASES
-    if (contents['ROADMAP.md'] && contents['PHASES.md']) {
-      if (!contents['ROADMAP.md'].includes('Phase 11') && contents['PHASES.md'].includes('11')) {
+    if (d.roadmapContent && d.phasesContent) {
+      if (!d.roadmapContent.includes('Phase 15') && d.phasesContent.includes('15')) {
         warnings.push({
           document: 'ROADMAP.md',
-          issue: 'Phase 11 eksik',
+          issue: 'Phase 15 eksik',
           severity: 'medium',
-          recommendation: 'ROADMAP.md\'ye Phase 11 ekleyin',
+          recommendation: 'ROADMAP.md ye Phase 15 ekleyin',
         });
       }
     }
 
     // CONSTITUTION kontrolu
-    if (contents['CONSTITUTION.md']) {
-      if (!contents['CONSTITUTION.md'].includes('v13')) {
+    if (d.constitutionContent) {
+      if (!d.constitutionContent.includes('v13')) {
         warnings.push({
           document: 'CONSTITUTION.md',
           issue: 'Versiyon eski',
           severity: 'low',
-          recommendation: 'CONSTITUTION.md\'yi guncelleyin',
+          recommendation: 'CONSTITUTION.md yi guncelleyin',
         });
       }
     }

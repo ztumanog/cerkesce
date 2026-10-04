@@ -95,8 +95,13 @@ export class IncidentCorrelationService {
       .filter(([_, count]) => count > 1)
       .map(([item]) => item);
   }
+  static getReport(): CorrelationReport {
+    return this.correlate();
+  }
+
 
   static clear(): void {
     this.incidents = [];
   }
 }
+

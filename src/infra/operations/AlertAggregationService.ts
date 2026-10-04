@@ -81,8 +81,13 @@ export class AlertAggregationService {
       status,
     };
   }
+  static getReport(): AggregationResult {
+    return this.aggregate();
+  }
+
 
   static clear(): void {
     this.alerts = [];
   }
 }
+

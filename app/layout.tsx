@@ -69,6 +69,17 @@ export default function RootLayout({
         suppressHydrationWarning
         className="flex flex-col min-h-screen bg-white dark:bg-slate-950 text-slate-900 dark:text-slate-50 transition-colors duration-200 antialiased"
       >
+        <nav className="bg-gray-900 text-white p-4">
+  <div className="container mx-auto flex flex-wrap gap-4 items-center">
+    <a href="/" className="font-bold text-lg">Çerkesçe Sözlük</a>
+    <a href="/executive" className="hover:text-blue-400">Executive</a>
+    <a href="/governance" className="hover:text-blue-400">Governance</a>
+    <a href="/intelligence" className="hover:text-blue-400">Intelligence</a>
+    <a href="/knowledge" className="hover:text-blue-400">Knowledge</a>
+          <a href="/knowledge/details" className="hover:text-blue-400 text-sm opacity-75">↳ Details</a>
+    <a href="/operations" className="hover:text-blue-400">Operations</a>
+  </div>
+</nav>
                <SWRegister />
         <BildirimBaslatici />
         <Header />

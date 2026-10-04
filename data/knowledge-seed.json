@@ -1,0 +1,791 @@
+{
+  "adrs": [
+    {
+      "id": "ADR-0001",
+      "title": "Modüler Tip",
+      "file": "ADR_0001_MODULAR_TYPE_ARCHITECTURE.md",
+      "status": "Accepted"
+    },
+    {
+      "id": "ADR-0002",
+      "title": "Çok Dilli Meaning",
+      "file": "ADR_0002_DOMAIN_MODEL_MEANING_GROUP.md",
+      "status": "Accepted"
+    },
+    {
+      "id": "ADR-0003",
+      "title": "Repository Ayrışımı",
+      "file": "ADR_0003_ITRANSLATIONREPOSITORY_SEPARATION.md",
+      "status": "Accepted"
+    },
+    {
+      "id": "ADR-0004",
+      "title": "Heterojen Normalizasyon",
+      "file": "ADR-ADR_0004_SERVER_ACTIONS_ASYNC_SAFETY.md",
+      "status": "Accepted"
+    },
+    {
+      "id": "ADR-0005",
+      "title": "TranslationGroup",
+      "file": "ADR-0005-TRANSLATIONGROUP_STRATEGY.md",
+      "status": "Accepted"
+    },
+    {
+      "id": "ADR-0006",
+      "title": "Cross Dictionary",
+      "file": "ADR-0006-CROSS_DICTIONARY_MATCHING.md",
+      "status": "Accepted"
+    },
+    {
+      "id": "ADR-0007",
+      "title": "Repository Contract",
+      "file": "ADR-0007-TRANSLATIONREPOSITORY_CONTRACT.md",
+      "status": "Accepted"
+    },
+    {
+      "id": "ADR-0008",
+      "title": "Meaning Representation",
+      "file": "ADR-0008-TRANSLATIONMEANING_REPRESENTATION.md",
+      "status": "Accepted"
+    },
+    {
+      "id": "ADR-0009",
+      "title": "Concept Identity",
+      "file": "ADR-0009-CONCEPT_IDENTITY_STRATEGY.md",
+      "status": "Draft"
+    },
+    {
+      "id": "ADR-0010",
+      "title": "Canonical Identity",
+      "file": "ADR-0015-TRANSLATIONENTRY_CANONICAL_IDENTITY.md",
+      "status": "Accepted"
+    },
+    {
+      "id": "ADR-0011",
+      "title": "Phase 3-7 Freeze",
+      "file": "ADR-0016-Phase3-7-Dondurma-SUPERSEDED.md",
+      "status": "Superseded"
+    },
+    {
+      "id": "ADR-0012",
+      "title": "Filter Flow",
+      "file": "ADR-P2-011-FILTER_FLOW_AUDIT.md",
+      "status": "Accepted"
+    },
+    {
+      "id": "ADR-0015",
+      "title": "TranslationEntry Canonical",
+      "file": "ADR-0015-TRANSLATIONENTRY_CANONICAL_IDENTITY.md",
+      "status": "Accepted"
+    },
+    {
+      "id": "ADR-0017",
+      "title": "WordFamily Concept Mapping",
+      "file": "ADR-0017-WORDFAMILY-CONCEPT-MAPPING.md",
+      "status": "Accepted"
+    },
+    {
+      "id": "ADR-0018",
+      "title": "WordFamilyResolver Scope Boundary",
+      "file": "ADR-0018-WORDFAMILYRESOLVER-SCOPE-BOUNDARY.md",
+      "status": "Accepted"
+    },
+    {
+      "id": "ADR-0019",
+      "title": "GUP Etimology",
+      "file": "ADR-0019-GUP-ETIMOLOGY.md",
+      "status": "Accepted"
+    },
+    {
+      "id": "ADR-0021",
+      "title": "Concept Repository",
+      "file": "ADR-0010-CONCEPT_REPOSITORY.md",
+      "status": "Accepted"
+    },
+    {
+      "id": "ADR-0022",
+      "title": "Meaning Graph",
+      "file": "ADR-0011-MEANING_GRAPH_BOOTSTRAP.md",
+      "status": "Accepted"
+    },
+    {
+      "id": "ADR-0023",
+      "title": "Verb Prefix Slot Grammar",
+      "file": "ADR-0023.md",
+      "status": "Accepted"
+    },
+    {
+      "id": "ADR-0024",
+      "title": "Lemma Identity Rule (Model A)",
+      "file": "ADR-0024.md",
+      "status": "Accepted"
+    },
+    {
+      "id": "ADR-0025",
+      "title": "Dialect Naming",
+      "file": "ADR-0025-DIALECT_NAMING_STANDARD.md",
+      "status": "Accepted"
+    },
+    {
+      "id": "ADR-0030",
+      "title": "Discovery",
+      "file": "ADR-0012-REAL_KNOWLEDGE_DISCOVERY_ASSEMBLY.md",
+      "status": "Accepted"
+    },
+    {
+      "id": "ADR-0031",
+      "title": "Query Semantic",
+      "file": "ADR-0013-QUERY_SEMANTIC_MAPPING.md",
+      "status": "Proposed"
+    },
+    {
+      "id": "ADR-0032",
+      "title": "Network Projection",
+      "file": "ADR_0014_CONCEPT_NETWORK_PROJECTION.md",
+      "status": "Accepted"
+    },
+    {
+      "id": "ADR-0040",
+      "title": "Morphological Root Taxonomy",
+      "file": "ADR-0040.md",
+      "status": "Accepted"
+    },
+    {
+      "id": "ADR-ROOT-001",
+      "title": "Root Taxonomy",
+      "file": "ADR-ROOT-001.md",
+      "status": "Accepted"
+    },
+    {
+      "id": "ADR-P2-011",
+      "title": "Filter Flow Audit",
+      "file": "ADR-P2-011-FILTER_FLOW_AUDIT.md",
+      "status": "Accepted"
+    },
+    {
+      "id": "ADR-P4-001",
+      "title": "Phase 4 Activation",
+      "file": "ADR-P4-001-PHASE4_ACTIVATION.md",
+      "status": "Accepted"
+    },
+    {
+      "id": "ADR-P5-000",
+      "title": "Phase 5 Unlock Approval",
+      "file": "ADR-P5-000-UNLOCK_APPROVAL.md",
+      "status": "Accepted"
+    },
+    {
+      "id": "ADR-P5-001",
+      "title": "Phase 5 Charter",
+      "file": "ADR-P5-001-FAZ5_CHARTER.md",
+      "status": "Accepted"
+    },
+    {
+      "id": "ADR-P5-001-REVIZE",
+      "title": "Phase 5 Charter Revize",
+      "file": "ADR-P5-001-REVIZE.md",
+      "status": "Accepted"
+    },
+    {
+      "id": "ADR-P7-001",
+      "title": "Phase 7 Completion Approval",
+      "file": "ADR-P7-001-PHASE_7_COMPLETION_APPROVAL.md",
+      "status": "Accepted"
+    },
+    {
+      "id": "ADR-GOV-001",
+      "title": "Catalog Strategy",
+      "file": "ADR-GOV-001-CANONICAL_CATALOG_STRATEGY.md",
+      "status": "Accepted"
+    },
+    {
+      "id": "ADR-GOV-002",
+      "title": "Supersession",
+      "file": "ADR-GOV-002-HISTORICAL_SUPERSESSION.md",
+      "status": "Accepted"
+    },
+    {
+      "id": "ADR-GOV-003",
+      "title": "Phase Redefinition",
+      "file": "ADR-GOV-003-PHASE_REDEFINITION.md",
+      "status": "Accepted"
+    },
+    {
+      "id": "ADR-GOV-004",
+      "title": "Phase Gate Modeli",
+      "file": "ADR-GOV-004-PHASE_GATE_MODEL.md",
+      "status": "Accepted"
+    },
+    {
+      "id": "ADR-GOV-005",
+      "title": "Phase 6 Identity Decision",
+      "file": "ADR-GOV-005-PHASE_6_IDENTITY_DECISION.md",
+      "status": "Accepted"
+    },
+    {
+      "id": "ADR-GOV-006",
+      "title": "Phase 2 Closure Decision",
+      "file": "ADR-GOV-006-PHASE_2_CLOSURE_DECISION.md",
+      "status": "Accepted"
+    },
+    {
+      "id": "ADR-GOV-007",
+      "title": "Phase 8 Production Readiness",
+      "file": "ADR-GOV-007-PHASE_8_PRODUCTION_READINESS.md",
+      "status": "Proposed"
+    },
+    {
+      "id": "ADR-GOV-008",
+      "title": "Phase 8 Scope Definition",
+      "file": "ADR-GOV-008-PHASE_8_SCOPE_DEFINITION.md",
+      "status": "Proposed"
+    },
+    {
+      "id": "ADR-GOV-009",
+      "title": "Analytics Consumption Policy",
+      "file": "ADR-GOV-009-ANALYTICS_CONSUMPTION_POLICY.md",
+      "status": "Proposed"
+    },
+    {
+      "id": "ADR-GOV-010",
+      "title": "Runtime Decision Authority",
+      "file": "ADR-GOV-010-RUNTIME_DECISION_AUTHORITY.md",
+      "status": "Proposed"
+    },
+    {
+      "id": "ADR-GOV-011",
+      "title": "API Gateway Strategy",
+      "file": "ADR-GOV-011-API_GATEWAY_STRATEGY.md",
+      "status": "Proposed"
+    },
+    {
+      "id": "ADR-GOV-012",
+      "title": "API Hosting Strategy",
+      "file": "ADR-GOV-012-API_HOSTING_STRATEGY.md",
+      "status": "Proposed"
+    },
+    {
+      "id": "ADR-GOV-013",
+      "title": "Phase Program Closure Strategy",
+      "file": "ADR-GOV-013-PHASE_PROGRAM_CLOSURE.md",
+      "status": "Proposed"
+    },
+    {
+      "id": "ADR-P9-001",
+      "title": "Platform Intelligence Layer",
+      "file": "ADR-P9-001-PLATFORM_INTELLIGENCE.md",
+      "status": "Accepted"
+    },
+    {
+      "id": "ADR-P10-001",
+      "title": "Platform Intelligence Automation",
+      "file": "ADR-P10-001-PLATFORM_INTELLIGENCE_AUTOMATION.md",
+      "status": "Proposed"
+    },
+    {
+      "id": "ADR-P11-001",
+      "title": "Governance Intelligence",
+      "file": "ADR-P11-001-GOVERNANCE_INTELLIGENCE.md",
+      "status": "Proposed"
+    },
+    {
+      "id": "ADR-P11-001-Completion",
+      "title": "Phase 11 Completion Approval",
+      "file": "ADR-P11-001-PHASE_11_COMPLETION_APPROVAL.md",
+      "status": "Accepted"
+    },
+    {
+      "id": "ADR-P12-001",
+      "title": "Autonomous Governance Support",
+      "file": "ADR-P12-001-AUTONOMOUS_GOVERNANCE_SUPPORT.md",
+      "status": "Proposed"
+    },
+    {
+      "id": "ADR-P13-001",
+      "title": "Platform Knowledge & Learning",
+      "file": "ADR-P13-001-PLATFORM_KNOWLEDGE_LEARNING.md",
+      "status": "Proposed"
+    },
+    {
+      "id": "ADR-P9-001-Completion",
+      "title": "Phase 9 Completion Approval",
+      "file": "ADR-P9-001-PHASE_9_COMPLETION_APPROVAL.md",
+      "status": "Accepted"
+    },
+    {
+      "id": "ADR-P10-001-Completion",
+      "title": "Phase 10 Completion Approval",
+      "file": "ADR-P10-001-PHASE_10_COMPLETION_APPROVAL.md",
+      "status": "Accepted"
+    },
+    {
+      "id": "ADR-P12-001-Completion",
+      "title": "Phase 12 Completion Approval",
+      "file": "ADR-P12-001-PHASE_12_COMPLETION_APPROVAL.md",
+      "status": "Accepted"
+    },
+    {
+      "id": "ADR-P13-001-Completion",
+      "title": "Phase 13 Completion Approval",
+      "file": "ADR-P13-001-PHASE_13_COMPLETION_APPROVAL.md",
+      "status": "Accepted"
+    },
+    {
+      "id": "ADR-P14-001",
+      "title": "Platform Ecosystem",
+      "file": "ADR-P14-001-PLATFORM_ECOSYSTEM.md",
+      "status": "Proposed"
+    },
+    {
+      "id": "ADR-P15-001",
+      "title": "Platform Reliability",
+      "file": "ADR-P15-001-PLATFORM_RELIABILITY.md",
+      "status": "Proposed"
+    }
+  ],
+  "phases": [
+    {
+      "num": "1",
+      "name": "Foundation / Dataset",
+      "status": "CLOSED"
+    },
+    {
+      "num": "2",
+      "name": "Translation Platform",
+      "status": "CLOSED"
+    },
+    {
+      "num": "3",
+      "name": "Concept Foundations",
+      "status": "CLOSED"
+    },
+    {
+      "num": "4",
+      "name": "Morphology Engine",
+      "status": "COMPLETED"
+    },
+    {
+      "num": "5",
+      "name": "Discovery Engine",
+      "status": "COMPLETED"
+    },
+    {
+      "num": "6",
+      "name": "API Gateway",
+      "status": "COMPLETED"
+    },
+    {
+      "num": "7",
+      "name": "Analytics & Export",
+      "status": "COMPLETED"
+    },
+    {
+      "num": "8",
+      "name": "Production & Operations",
+      "status": "COMPLETED"
+    },
+    {
+      "num": "9",
+      "name": "Platform Intelligence",
+      "status": "COMPLETED"
+    },
+    {
+      "num": "10-15",
+      "name": "Platform Intelligence Program",
+      "status": "COMPLETED"
+    }
+  ],
+  "relations": [
+    {
+      "from": "ADR-0001",
+      "to": "phase-1",
+      "type": "belongs_to"
+    },
+    {
+      "from": "ADR-0002",
+      "to": "phase-2",
+      "type": "belongs_to"
+    },
+    {
+      "from": "ADR-0003",
+      "to": "phase-3",
+      "type": "belongs_to"
+    },
+    {
+      "from": "ADR-0004",
+      "to": "phase-4",
+      "type": "belongs_to"
+    },
+    {
+      "from": "ADR-0005",
+      "to": "phase-5",
+      "type": "belongs_to"
+    },
+    {
+      "from": "ADR-0006",
+      "to": "phase-6",
+      "type": "belongs_to"
+    },
+    {
+      "from": "ADR-0007",
+      "to": "phase-7",
+      "type": "belongs_to"
+    },
+    {
+      "from": "ADR-0008",
+      "to": "phase-8",
+      "type": "belongs_to"
+    },
+    {
+      "from": "ADR-0009",
+      "to": "phase-9",
+      "type": "belongs_to"
+    },
+    {
+      "from": "ADR-0010",
+      "to": "phase-10-15",
+      "type": "belongs_to"
+    },
+    {
+      "from": "ADR-P2-011",
+      "to": "phase-2",
+      "type": "belongs_to"
+    },
+    {
+      "from": "ADR-P4-001",
+      "to": "phase-4",
+      "type": "belongs_to"
+    },
+    {
+      "from": "ADR-P5-000",
+      "to": "phase-5",
+      "type": "belongs_to"
+    },
+    {
+      "from": "ADR-P5-001",
+      "to": "phase-5",
+      "type": "belongs_to"
+    },
+    {
+      "from": "ADR-P5-001-REVIZE",
+      "to": "phase-5",
+      "type": "belongs_to"
+    },
+    {
+      "from": "ADR-P7-001",
+      "to": "phase-7",
+      "type": "belongs_to"
+    },
+    {
+      "from": "ADR-GOV-001",
+      "to": "phase-governance",
+      "type": "governs"
+    },
+    {
+      "from": "ADR-GOV-002",
+      "to": "phase-governance",
+      "type": "governs"
+    },
+    {
+      "from": "ADR-GOV-003",
+      "to": "phase-governance",
+      "type": "governs"
+    },
+    {
+      "from": "ADR-GOV-004",
+      "to": "phase-governance",
+      "type": "governs"
+    },
+    {
+      "from": "ADR-GOV-005",
+      "to": "phase-governance",
+      "type": "governs"
+    },
+    {
+      "from": "ADR-GOV-006",
+      "to": "phase-governance",
+      "type": "governs"
+    },
+    {
+      "from": "ADR-GOV-007",
+      "to": "phase-governance",
+      "type": "governs"
+    },
+    {
+      "from": "ADR-GOV-008",
+      "to": "phase-governance",
+      "type": "governs"
+    },
+    {
+      "from": "ADR-GOV-009",
+      "to": "phase-governance",
+      "type": "governs"
+    },
+    {
+      "from": "ADR-GOV-010",
+      "to": "phase-governance",
+      "type": "governs"
+    },
+    {
+      "from": "ADR-GOV-011",
+      "to": "phase-governance",
+      "type": "governs"
+    },
+    {
+      "from": "ADR-GOV-012",
+      "to": "phase-governance",
+      "type": "governs"
+    },
+    {
+      "from": "ADR-GOV-013",
+      "to": "phase-governance",
+      "type": "governs"
+    },
+    {
+      "from": "ADR-P9-001",
+      "to": "phase-9",
+      "type": "belongs_to"
+    },
+    {
+      "from": "ADR-P10-001",
+      "to": "phase-10",
+      "type": "belongs_to"
+    },
+    {
+      "from": "ADR-P11-001",
+      "to": "phase-11",
+      "type": "belongs_to"
+    },
+    {
+      "from": "ADR-P11-001-Completion",
+      "to": "phase-11",
+      "type": "belongs_to"
+    },
+    {
+      "from": "ADR-P12-001",
+      "to": "phase-12",
+      "type": "belongs_to"
+    },
+    {
+      "from": "ADR-P13-001",
+      "to": "phase-13",
+      "type": "belongs_to"
+    },
+    {
+      "from": "ADR-P9-001-Completion",
+      "to": "phase-9",
+      "type": "belongs_to"
+    },
+    {
+      "from": "ADR-P10-001-Completion",
+      "to": "phase-10",
+      "type": "belongs_to"
+    },
+    {
+      "from": "ADR-P12-001-Completion",
+      "to": "phase-12",
+      "type": "belongs_to"
+    },
+    {
+      "from": "ADR-P13-001-Completion",
+      "to": "phase-13",
+      "type": "belongs_to"
+    },
+    {
+      "from": "ADR-P14-001",
+      "to": "phase-14",
+      "type": "belongs_to"
+    },
+    {
+      "from": "ADR-P15-001",
+      "to": "phase-15",
+      "type": "belongs_to"
+    }
+  ],
+  "generatedAt": "2026-10-03T22:13:37.917Z",
+  "traceability": [
+    {
+      "requirement": "ADR-0005",
+      "adr": "ADR-0005",
+      "test": "TranslationService.test.ts",
+      "status": "covered"
+    },
+    {
+      "requirement": "ADR-0006",
+      "adr": "ADR-0006",
+      "test": "MultiLanguageSearch.test.ts",
+      "status": "covered"
+    },
+    {
+      "requirement": "ADR-0007",
+      "adr": "ADR-0007",
+      "test": "TranslationService.test.ts",
+      "status": "covered"
+    },
+    {
+      "requirement": "ADR-0015",
+      "adr": "ADR-0015",
+      "test": "TranslationService.test.ts",
+      "status": "covered"
+    }
+  ],
+  "memory": [
+    {
+      "type": "decision",
+      "title": "Phase 15 son buyuk faz",
+      "content": "Yeni numerik faz acilmayacak. Capability Track modeli benimsendi.",
+      "date": "2026-10-03"
+    },
+    {
+      "type": "lesson",
+      "title": "Servisler UI'ya baglanmali",
+      "content": "Kod var ama kullanilmiyor. Adoption oncelikli.",
+      "date": "2026-10-03"
+    },
+    {
+      "type": "insight",
+      "title": "Tek gerceklik ilkesi",
+      "content": "Belgeler ve uygulama ayni seyi soylemeli.",
+      "date": "2026-10-03"
+    },
+    {
+      "type": "decision",
+      "title": "Knowledge Details sayfasi acildi",
+      "content": "Track C servisleri gorunur hale getirildi.",
+      "date": "2026-10-04"
+    },
+    {
+      "type": "lesson",
+      "title": "Server/Client Component ayrimi",
+      "content": "fs Server Component'te kullanilmali, Client'e props gecilmeli.",
+      "date": "2026-10-04"
+    }
+  ],
+  "trackA": {
+    "alerts": [
+      {
+        "id": "alert-1",
+        "severity": "high",
+        "message": "CPU kullanimi %90",
+        "timestamp": "2026-10-03T22:49:33.786Z"
+      },
+      {
+        "id": "alert-2",
+        "severity": "medium",
+        "message": "Bellek kullanimi %75",
+        "timestamp": "2026-10-03T22:49:33.787Z"
+      },
+      {
+        "id": "alert-3",
+        "severity": "low",
+        "message": "Disk kullanimi %60",
+        "timestamp": "2026-10-03T22:49:33.787Z"
+      }
+    ],
+    "incidents": [
+      {
+        "id": "inc-1",
+        "title": "API yavaslama",
+        "severity": "high",
+        "timestamp": "2026-10-03T22:49:33.787Z"
+      },
+      {
+        "id": "inc-2",
+        "title": "Veritabani baglanti hatasi",
+        "severity": "critical",
+        "timestamp": "2026-10-03T22:49:33.787Z"
+      }
+    ],
+    "regions": [
+      {
+        "id": "eu-west-1",
+        "name": "EU West",
+        "status": "active"
+      },
+      {
+        "id": "us-east-1",
+        "name": "US East",
+        "status": "standby"
+      }
+    ],
+    "generatedAt": "2026-10-03T22:49:33.787Z"
+  },
+  "trackB": {
+    "recommendations": [
+      {
+        "id": "rec-1",
+        "title": "Kapasite artir",
+        "priority": "high",
+        "timestamp": "2026-10-03T22:28:14.343Z"
+      },
+      {
+        "id": "rec-2",
+        "title": "Cache optimize et",
+        "priority": "medium",
+        "timestamp": "2026-10-03T22:28:14.345Z"
+      }
+    ],
+    "scores": [
+      {
+        "id": "score-1",
+        "score": 0.85,
+        "factors": [
+          "data",
+          "trend"
+        ],
+        "timestamp": "2026-10-03T22:28:14.345Z"
+      },
+      {
+        "id": "score-2",
+        "score": 0.92,
+        "factors": [
+          "data"
+        ],
+        "timestamp": "2026-10-03T22:28:14.345Z"
+      }
+    ],
+    "explanations": [
+      {
+        "id": "exp-1",
+        "decision": "Kapasite artir",
+        "reason": "CPU %85",
+        "timestamp": "2026-10-03T22:28:14.345Z"
+      }
+    ],
+    "scenarios": [
+      {
+        "id": "sc-1",
+        "name": "2x yuk",
+        "multiplier": 2,
+        "timestamp": "2026-10-03T22:28:14.345Z"
+      },
+      {
+        "id": "sc-2",
+        "name": "5x yuk",
+        "multiplier": 5,
+        "timestamp": "2026-10-03T22:28:14.345Z"
+      },
+      {
+        "id": "sc-3",
+        "name": "10x yuk",
+        "multiplier": 10,
+        "timestamp": "2026-10-03T22:28:14.345Z"
+      }
+    ],
+    "decisions": [
+      {
+        "id": "dec-1",
+        "title": "Kapasite artisi",
+        "success": true,
+        "timestamp": "2026-10-03T22:28:14.345Z"
+      },
+      {
+        "id": "dec-2",
+        "title": "Cache optimizasyonu",
+        "success": true,
+        "timestamp": "2026-10-03T22:28:14.345Z"
+      }
+    ],
+    "generatedAt": "2026-10-03T22:28:14.345Z"
+  }
+}
