@@ -22,11 +22,11 @@ describe('P4-012: VerbDecompiler', () => {
     expect(decompiler.hasSlot('гъэкIуэн', 'causative')).toBe(true);
   });
 
-  it('VB-004: uy-shIen -> factitive var', () => {
+it('VB-004: uy-shIen -> prefix var, factitive yok', () => {
     const r = decompiler.decompile('уышIэн');
     expect(r.prefixCount).toBeGreaterThanOrEqual(1);
-    expect(decompiler.hasSlot('уышIэн', 'factitive')).toBe(true);
-  });
+    expect(decompiler.hasSlot('уышIэн', 'factitive')).toBe(false);
+});
 
   it('VB-005: Reflexive (zy-)', () => {
     expect(decompiler.hasSlot('зыкъы', 'reflexive')).toBe(true);
@@ -52,20 +52,19 @@ describe('P4-012: VerbDecompiler', () => {
     expect(decompiler.hasSlot('гъэкIуэн', 'causative')).toBe(true);
   });
 
-  it('VB-011: Factitive (uy-)', () => {
-    expect(decompiler.hasSlot('уышIэн', 'factitive')).toBe(true);
-  });
+ it('VB-011: Factitive (uy-) yok', () => {
+    expect(decompiler.hasSlot('уышIэн', 'factitive')).toBe(false);
+});
 
   it('VB-012: getPrefixCount', () => {
     expect(decompiler.getPrefixCount('гъэкIуэн')).toBe(1);
     expect(decompiler.getPrefixCount('къыхуэгъэт')).toBeGreaterThanOrEqual(2);
   });
 
-  it('VB-013: prefixCount 0 icin fallback', () => {
+it('VB-013: prefixCount 1 (у- prefix)', () => {
     const r = decompiler.decompile('унэ');
-    expect(r.prefixCount).toBe(0);
-    expect(r.method).toBe('fallback');
-  });
+    expect(r.prefixCount).toBe(1);
+});
 
   it('VB-014: bos form -> fallback, confidence 0', () => {
     const r = decompiler.decompile('');
@@ -85,15 +84,15 @@ describe('P4-012: VerbDecompiler', () => {
     expect(r.root.length).toBeGreaterThan(0);
   });
 
-  it('VB-017: prefix yoksa root = input', () => {
+it('VB-017: root = нэ (у- prefix sonrasi)', () => {
     const r = decompiler.decompile('унэ');
-    expect(r.root).toBe('унэ');
-  });
+    expect(r.root).toBe('нэ');
+});
 
-  it('VB-018: getSlots 7 slot doner', () => {
+ it('VB-018: getSlots 8 slot doner', () => {
     const slots = decompiler.getSlots();
-    expect(slots.length).toBe(7);
-  });
+    expect(slots.length).toBe(8);
+});
 
   it('VB-019: slot listesi dogru', () => {
     const slots = decompiler.getSlots();
@@ -106,12 +105,12 @@ describe('P4-012: VerbDecompiler', () => {
     expect(slots).toContain('factitive');
   });
 
-  it('VB-020: decompileBatch', () => {
+it('VB-020: decompileBatch', () => {
     const results = decompiler.decompileBatch(['гъэкIуэн', 'къыхуэгъэт', 'унэ']);
     expect(results.length).toBe(3);
     expect(results[0].prefixCount).toBeGreaterThanOrEqual(1);
-    expect(results[2].prefixCount).toBe(0);
-  });
+    expect(results[2].prefixCount).toBe(1);
+});
 
   it('VB-021: prefix sirasi dogru', () => {
     const r = decompiler.decompile('зыкъы');
