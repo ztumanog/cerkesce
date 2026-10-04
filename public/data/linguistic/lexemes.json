@@ -22449,5 +22449,356 @@
     "ipa": "/kʷʼatsʼ/",
     "corpusFrequency": 100,
     "notes": "KBD Corpus rank 300"
+  },
+  {
+    "id": "L-XXX",
+    "form": " kelime ",
+    "literalMeaning": "anlam",
+    "conceptId": "CONCEPT",
+    "wordFamilyId": "WF-XXX",
+    "partOfSpeech": "noun",
+    "notes": "Dogrulandi: sozluk kaynagi"
+  },
+  {
+    "id": "L-TKHE",
+    "form": "тхьэ",
+    "literalMeaning": "Tanri, yaratici",
+    "conceptId": "GOD",
+    "wordFamilyId": "WF-TKHE",
+    "partOfSpeech": "noun",
+    "notes": "Felsefi/ontolojik kavram"
+  },
+  {
+    "id": "L-DUNEY",
+    "form": "дуней",
+    "literalMeaning": "dunya, evren",
+    "conceptId": "WORLD",
+    "wordFamilyId": "WF-DUNEY",
+    "partOfSpeech": "noun",
+    "notes": "Felsefi/ontolojik kavram"
+  },
+  {
+    "id": "L-L1ENYGHE",
+    "form": "лӀэныгъэ",
+    "literalMeaning": "olum, yok olus",
+    "conceptId": "DEATH",
+    "wordFamilyId": "WF-L1E",
+    "partOfSpeech": "noun",
+    "notes": "Felsefi/ontolojik kavram"
+  },
+  {
+    "id": "L-SHECH",
+    "form": "шэч",
+    "literalMeaning": "suphe, tereddut",
+    "conceptId": "DOUBT",
+    "wordFamilyId": "WF-SHECH",
+    "partOfSpeech": "noun",
+    "notes": "Felsefi/ontolojik kavram"
+  },
+  {
+    "id": "L-1UEKHUGHE",
+    "form": "Ӏуэхугъэ",
+    "literalMeaning": "olgu, mesele",
+    "conceptId": "FACT",
+    "wordFamilyId": "WF-1UEKHU",
+    "partOfSpeech": "noun",
+    "notes": "Felsefi/ontolojik kavram"
+  },
+  {
+    "id": "L-NEMYS",
+    "form": "нэмыс",
+    "literalMeaning": "saygi, edep",
+    "conceptId": "RESPECT",
+    "wordFamilyId": "WF-NEMYS",
+    "partOfSpeech": "noun",
+    "notes": "Felsefi/ontolojik kavram"
+  },
+  {
+    "id": "L-L1YGHE",
+    "form": "лӀыгъэ",
+    "literalMeaning": "erdem, yigitlik",
+    "conceptId": "VIRTUE",
+    "wordFamilyId": "WF-L1Y",
+    "partOfSpeech": "noun",
+    "notes": "Felsefi/ontolojik kavram"
+  },
+  {
+    "id": "L-C1YXUGHE",
+    "form": "цӀыхугъэ",
+    "literalMeaning": "insanlik, humanizm",
+    "conceptId": "HUMANITY",
+    "wordFamilyId": "WF-C1YXU",
+    "partOfSpeech": "noun",
+    "notes": "Felsefi/ontolojik kavram"
+  },
+  {
+    "id": "L-QEBZAGHE",
+    "form": "къэбзагъэ",
+    "literalMeaning": "saflik, durustluk",
+    "conceptId": "PURITY",
+    "wordFamilyId": "WF-QEBZE",
+    "partOfSpeech": "noun",
+    "notes": "Felsefi/ontolojik kavram"
+  },
+  {
+    "id": "L-ZAKHUAGHE",
+    "form": "захуагъэ",
+    "literalMeaning": "adalet, hakkaniyet",
+    "conceptId": "JUSTICE",
+    "wordFamilyId": "WF-ZAKHUE",
+    "partOfSpeech": "noun",
+    "notes": "Felsefi/ontolojik kavram"
+  },
+  {
+    "id": "L-ZEKHUDENYGHE",
+    "form": "зэхуэдэныгъэ",
+    "literalMeaning": "esitlik, denklik",
+    "conceptId": "EQUALITY",
+    "wordFamilyId": "WF-ZEKHUD",
+    "partOfSpeech": "noun",
+    "notes": "Felsefi/ontolojik kavram"
+  },
+  {
+    "id": "L-MURAD",
+    "form": "мурад",
+    "literalMeaning": "gaye, niyet",
+    "conceptId": "GOAL",
+    "wordFamilyId": "WF-MURAD",
+    "partOfSpeech": "noun",
+    "notes": "Felsefi/ontolojik kavram"
+  },
+  {
+    "id": "L-GUKHELH",
+    "form": "гухэлъ",
+    "literalMeaning": "niyet, icsel arzu",
+    "conceptId": "INTENTION",
+    "wordFamilyId": "WF-GU",
+    "partOfSpeech": "noun",
+    "notes": "Felsefi/ontolojik kavram"
+  },
+  {
+    "id": "L-SHYNE",
+    "form": "шынэ",
+    "literalMeaning": "korku, kaygi",
+    "conceptId": "FEAR",
+    "wordFamilyId": "WF-SHYNE",
+    "partOfSpeech": "noun",
+    "notes": "Felsefi/ontolojik kavram"
+  },
+  {
+    "id": "L-GUENYQAGHE",
+    "form": "гуэныкъуэгъэ",
+    "literalMeaning": "keder, huzun",
+    "conceptId": "GRIEF",
+    "wordFamilyId": "WF-GU",
+    "partOfSpeech": "noun",
+    "notes": "Felsefi/ontolojik kavram"
+  },
+  {
+    "id": "L-GUZHEY",
+    "form": "гужьей",
+    "literalMeaning": "panik",
+    "conceptId": "ANXIETY",
+    "wordFamilyId": "WF-GU",
+    "partOfSpeech": "noun",
+    "notes": "Somatik/destan kaynagi"
+  },
+  {
+    "id": "L-GUMYGHUE",
+    "form": "гумыгъуэ",
+    "literalMeaning": "sefkatli",
+    "conceptId": "COMPASSION",
+    "wordFamilyId": "WF-GU",
+    "partOfSpeech": "adjective",
+    "notes": "Somatik/destan kaynagi"
+  },
+  {
+    "id": "L-NAF",
+    "form": "наф",
+    "literalMeaning": "kor",
+    "conceptId": "BLINDNESS",
+    "wordFamilyId": "WF-NE",
+    "partOfSpeech": "adjective",
+    "notes": "Somatik/destan kaynagi"
+  },
+  {
+    "id": "L-NAF1",
+    "form": "нафI",
+    "literalMeaning": "iyilik",
+    "conceptId": "GOODNESS",
+    "wordFamilyId": "WF-NE",
+    "partOfSpeech": "noun",
+    "notes": "Somatik/destan kaynagi"
+  },
+  {
+    "id": "L-NASHE",
+    "form": "нашэ",
+    "literalMeaning": "sasi",
+    "conceptId": "SQUINT",
+    "wordFamilyId": "WF-NE",
+    "partOfSpeech": "adjective",
+    "notes": "Somatik/destan kaynagi"
+  },
+  {
+    "id": "L-1ERYTX",
+    "form": "Iэрытх",
+    "literalMeaning": "el yazmasi",
+    "conceptId": "MANUSCRIPT",
+    "wordFamilyId": "WF-1E",
+    "partOfSpeech": "noun",
+    "notes": "Somatik/destan kaynagi"
+  },
+  {
+    "id": "L-SHHYEPS",
+    "form": "щхьэпс",
+    "literalMeaning": "kalin ip",
+    "conceptId": "BINDING",
+    "wordFamilyId": "WF-SHHYE",
+    "partOfSpeech": "noun",
+    "notes": "Somatik/destan kaynagi"
+  },
+  {
+    "id": "L-DYGHUZH",
+    "form": "дыгъужь",
+    "literalMeaning": "kurt",
+    "conceptId": "WOLF",
+    "wordFamilyId": "WF-DYGHU",
+    "partOfSpeech": "noun",
+    "notes": "Somatik/destan kaynagi"
+  },
+  {
+    "id": "L-KHYQ",
+    "form": "хыкъа",
+    "literalMeaning": "yunus",
+    "conceptId": "DOLPHIN",
+    "wordFamilyId": "WF-KHY",
+    "partOfSpeech": "noun",
+    "notes": "Somatik/destan kaynagi"
+  },
+  {
+    "id": "L-MEZCHET",
+    "form": "мэзчэт",
+    "literalMeaning": "sulun",
+    "conceptId": "PHEASANT",
+    "wordFamilyId": "WF-MEZ",
+    "partOfSpeech": "noun",
+    "notes": "Somatik/destan kaynagi"
+  },
+  {
+    "id": "L-QEGHELAK1UE",
+    "form": "къегъэлакIуэ",
+    "literalMeaning": "kurtarici",
+    "conceptId": "SAVIOR",
+    "wordFamilyId": "WF-QEGHE",
+    "partOfSpeech": "noun",
+    "notes": "Somatik/destan kaynagi"
+  },
+  {
+    "id": "L-U1EGHESHCH",
+    "form": "уIэгъэщ",
+    "literalMeaning": "hastane",
+    "conceptId": "HOSPITAL",
+    "wordFamilyId": "WF-U1E",
+    "partOfSpeech": "noun",
+    "notes": "Somatik/destan kaynagi"
+  },
+  {
+    "id": "L-GHUEGUGHELHAGHU",
+    "form": "гъуэгугъэлъагъуэ",
+    "literalMeaning": "rehber",
+    "conceptId": "GUIDE",
+    "wordFamilyId": "WF-GHUEGU",
+    "partOfSpeech": "noun",
+    "notes": "Somatik/destan kaynagi"
+  },
+  {
+    "id": "L-ADAGHE",
+    "form": "адагъэ",
+    "literalMeaning": "babalik",
+    "conceptId": "FATHERHOOD",
+    "wordFamilyId": "WF-ADE",
+    "partOfSpeech": "noun",
+    "notes": "Somatik/destan kaynagi"
+  },
+  {
+    "id": "L-ANAGHE",
+    "form": "анагъэ",
+    "literalMeaning": "annelik",
+    "conceptId": "MOTHERHOOD",
+    "wordFamilyId": "WF-ANE",
+    "partOfSpeech": "noun",
+    "notes": "Somatik/destan kaynagi"
+  },
+  {
+    "id": "L-DZHATE",
+    "form": "джатэ",
+    "literalMeaning": "kilic",
+    "conceptId": "SWORD",
+    "wordFamilyId": "WF-DZHATE",
+    "partOfSpeech": "noun",
+    "notes": "Somatik/destan kaynagi"
+  },
+  {
+    "id": "L-DE2",
+    "form": "дэ",
+    "literalMeaning": "ceviz",
+    "conceptId": "WALNUT",
+    "wordFamilyId": "WF-DE",
+    "partOfSpeech": "noun",
+    "notes": "Somatik/destan kaynagi"
+  },
+  {
+    "id": "L-FARA",
+    "form": "фара",
+    "literalMeaning": "soylu at",
+    "conceptId": "HORSE",
+    "wordFamilyId": "WF-FARA",
+    "partOfSpeech": "noun",
+    "notes": "Somatik/destan kaynagi"
+  },
+  {
+    "id": "L-GHUNE",
+    "form": "гьунэ",
+    "literalMeaning": "sinir, hudut",
+    "conceptId": "BORDER",
+    "wordFamilyId": "WF-GHUNE",
+    "partOfSpeech": "noun",
+    "notes": "Somatik/destan kaynagi"
+  },
+  {
+    "id": "L-KHASE",
+    "form": "хъасэ",
+    "literalMeaning": "simsir",
+    "conceptId": "LINDEN",
+    "wordFamilyId": "WF-KHASE",
+    "partOfSpeech": "noun",
+    "notes": "Somatik/destan kaynagi"
+  },
+  {
+    "id": "L-DAKHE",
+    "form": "дахэ",
+    "literalMeaning": "guzel",
+    "conceptId": "BEAUTY",
+    "wordFamilyId": "WF-DAKHE",
+    "partOfSpeech": "adjective",
+    "notes": "Somatik/destan kaynagi"
+  },
+  {
+    "id": "L-SHKO",
+    "form": "шъо",
+    "literalMeaning": "deri, cilt",
+    "conceptId": "SKIN",
+    "wordFamilyId": "WF-SHKO",
+    "partOfSpeech": "noun",
+    "notes": "Somatik/destan kaynagi"
+  },
+  {
+    "id": "L-SHKAM",
+    "form": "шкам",
+    "literalMeaning": "bank, sira",
+    "conceptId": "BANK",
+    "wordFamilyId": "WF-SHKAM",
+    "partOfSpeech": "noun",
+    "notes": "Somatik/destan kaynagi"
   }
 ]
