@@ -15425,5 +15425,73 @@
     "wordFamilyId": "WF-DEGU",
     "corpusFrequency": 0,
     "notes": "Sağır. Kaynak: Yamisha (2018), Abaze (2005), Hasan (1991). NOT: дэгъу (iyi) ile karıştırma!"
+  },
+  {
+    "id": "L-SHKHYN",
+    "form": "шхын",
+    "ipa": "/ʂxǝn/",
+    "literalMeaning": "yemek (fiil), yemek (isim)",
+    "partOfSpeech": "verb",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-SHKHYN",
+    "corpusFrequency": 0,
+    "notes": "17+ kaynak: Apasev (2008), Yamisha (2018/2023), Kokov (2008), Enstitusu (2011), Kardanov (1957), Tharkaho (1991), Huvaj (2007), Vikisozluk. Kok: шх + -ы + -н."
+  },
+  {
+    "id": "L-SHCHYKHYN",
+    "form": "щыхын",
+    "ipa": "/ɕǝxǝn/",
+    "literalMeaning": "çıkarmak (giysi)",
+    "partOfSpeech": "verb",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-SHCHYKHYN",
+    "corpusFrequency": 0,
+    "notes": "Vikisozluk: Цейр щыхын = remove one's Circassian coat. Вакъэр щыхын = remove one's footware."
+  },
+  {
+    "id": "L-DEKHASHCHKHYN",
+    "form": "дэхьащхын",
+    "ipa": "",
+    "literalMeaning": "gülmek",
+    "partOfSpeech": "verb",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-DEKHASHCHKHYN",
+    "corpusFrequency": 0,
+    "notes": "Adigece. Kaynak: Huvaj (2007), Abaze (2005), Asemez (2013).",
+    "dialectVariants": {
+      "adyghe": "дэхьащхын",
+      "kabardian": "дыхьэшхын"
+    }
+  },
+  {
+    "id": "L-DYKHESHKHYN",
+    "form": "дыхьэшхын",
+    "ipa": "/dǝħɐʂ'xǝn/",
+    "literalMeaning": "gülmek",
+    "partOfSpeech": "verb",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-DYKHESHKHYN",
+    "corpusFrequency": 0,
+    "notes": "Kabardeyce. Vikisozluk: [дыхьэшх] + -ы + -н. Turevleri: гъэдыхьэшхын, дыхьэшхыкъуэн, къэдыхьэшхын, щыдыхьэшхын, пыдыхьэшхыкIын, зэщIэдыхьэшхэн, щIэдыхьэшхыкIын, иридыхьэшхын, дыхьэшхэн.",
+    "dialectVariants": {
+      "adyghe": "дэхьащхын",
+      "kabardian": "дыхьэшхын"
+    }
   }
 ]
