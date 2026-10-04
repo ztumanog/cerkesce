@@ -32,6 +32,7 @@ interface MorphologyResult {
   lemmaPrefixes?: any[];
   lemmaSuffixes?: any[];
   rootMatches?: any[];
+  frequency?: { kabardian: number; adyghe: number };
 }
 
 export default function MorphologyPage() {
@@ -75,7 +76,7 @@ export default function MorphologyPage() {
           value={word}
           onChange={(e) => setWord(e.target.value)}
           onKeyDown={(e) => e.key === 'Enter' && analyze()}
-          placeholder="Örn: сыкъэкIуащ"
+          placeholder="Örn: дэхьащхын"
           className="flex-1 px-4 py-2 border rounded-lg"
           suppressHydrationWarning
         />
@@ -109,6 +110,27 @@ export default function MorphologyPage() {
               <p className="text-sm text-gray-600">Tür: {result.lexeme.partOfSpeech}</p>
             )}
           </div>
+
+          {/* FREKANS */}
+          {result.frequency && (result.frequency.kabardian > 0 || result.frequency.adyghe > 0) && (
+            <div className="p-4 bg-purple-50 rounded-lg border-2 border-purple-200">
+              <h3 className="font-semibold mb-3">Korpüs Frekansı</h3>
+              <div className="flex gap-6 text-sm">
+                {result.frequency.kabardian > 0 && (
+                  <div>
+                    <span className="text-gray-500">Kabardeyce:</span>
+                    <p className="font-semibold text-lg">{result.frequency.kabardian.toLocaleString()}</p>
+                  </div>
+                )}
+                {result.frequency.adyghe > 0 && (
+                  <div>
+                    <span className="text-gray-500">Adigece:</span>
+                    <p className="font-semibold text-lg">{result.frequency.adyghe.toLocaleString()}</p>
+                  </div>
+                )}
+              </div>
+            </div>
+          )}
 
           {/* LEMMA */}
           {result.lemma && (
@@ -199,9 +221,9 @@ export default function MorphologyPage() {
           )}
 
           {/* LEHCE KARSILIKLARI */}
-          {result.lexeme?.dialectVariants && (
-            <div className="p-4 bg-indigo-50 rounded-lg border-2 border-indigo-200">
-              <h3 className="font-semibold mb-3">Lehçe Karşılıkları</h3>
+          <div className="p-4 bg-indigo-50 rounded-lg border-2 border-indigo-200">
+            <h3 className="font-semibold mb-3">Lehçe Karşılıkları</h3>
+            {result.lexeme?.dialectVariants?.adyghe || result.lexeme?.dialectVariants?.kabardian ? (
               <div className="space-y-1 text-sm">
                 {result.lexeme.dialectVariants.adyghe && (
                   <p><strong>Adigece:</strong> <span className="font-mono">{result.lexeme.dialectVariants.adyghe}</span></p>
@@ -210,8 +232,10 @@ export default function MorphologyPage() {
                   <p><strong>Kabardeyce:</strong> <span className="font-mono">{result.lexeme.dialectVariants.kabardian}</span></p>
                 )}
               </div>
-            </div>
-          )}
+            ) : (
+              <p className="text-sm text-gray-500 italic">Bu kelime için lehçe bilgisi henüz eklenmemiş.</p>
+            )}
+          </div>
 
           {/* KELIME AILESI */}
           {result.wordFamily && result.wordFamily.length > 0 && (

@@ -4,7 +4,13 @@ import path from 'path';
 import { MorphologyAnalyzer, KnownRoot } from '@/domain/morphology/MorphologyAnalyzer';
 import { LemmaBuilderV2 } from '@/domain/morphology/LemmaBuilderV2';
 
-let cachedData: { roots: any[]; morphemes: any[]; lexemes: any[] } | null = null;
+let cachedData: {
+  roots: any[];
+  morphemes: any[];
+  lexemes: any[];
+  freqKbd: Record<string, number>;
+  freqAdy: Record<string, number>;
+} | null = null;
 
 function loadData() {
   if (cachedData) return cachedData;
@@ -12,11 +18,15 @@ function loadData() {
   const rootsPath = path.resolve('./public/data/linguistic/roots.json');
   const morphemesPath = path.resolve('./public/data/linguistic/morphemes.json');
   const lexemesPath = path.resolve('./public/data/linguistic/lexemes.json');
+  const freqKbdPath = path.resolve('./data/corpus/frequency/lexeme_freq_kbd.json');
+  const freqAdyPath = path.resolve('./data/corpus/frequency/lexeme_freq_ady.json');
 
   cachedData = {
     roots: fs.existsSync(rootsPath) ? JSON.parse(fs.readFileSync(rootsPath, 'utf-8')) : [],
     morphemes: fs.existsSync(morphemesPath) ? JSON.parse(fs.readFileSync(morphemesPath, 'utf-8')) : [],
     lexemes: fs.existsSync(lexemesPath) ? JSON.parse(fs.readFileSync(lexemesPath, 'utf-8')) : [],
+    freqKbd: fs.existsSync(freqKbdPath) ? JSON.parse(fs.readFileSync(freqKbdPath, 'utf-8')) : {},
+    freqAdy: fs.existsSync(freqAdyPath) ? JSON.parse(fs.readFileSync(freqAdyPath, 'utf-8')) : {},
   };
   return cachedData;
 }
@@ -31,13 +41,14 @@ export async function POST(req: NextRequest) {
   const data = loadData();
   const normalized = word.trim();
 
-  // ============================================
-  // 1. ONCE TAM ESLESME KONTROLU (lexemes.json)
-  // ============================================
+  // Frekans bilgisi
+  const freqKbd = data.freqKbd[normalized] ?? 0;
+  const freqAdy = data.freqAdy[normalized] ?? 0;
+
+  // 1. Tam eslesme kontrolu
   const exactLexeme = data.lexemes.find((l: any) => l.form === normalized);
 
   if (exactLexeme) {
-    // Tam eslesme varsa, dogrudan onu kullan
     return NextResponse.json({
       word: normalized,
       prefixes: [],
@@ -46,9 +57,6 @@ export async function POST(req: NextRequest) {
       method: 'dictionary',
       confidence: 1.0,
       source: exactLexeme.literalMeaning,
-      rootExtractor: null,
-      nounCase: null,
-      morphemes: null,
       knownRootCount: data.lexemes.length,
       lexeme: {
         id: exactLexeme.id,
@@ -68,12 +76,14 @@ export async function POST(req: NextRequest) {
       lemmaPrefixes: [],
       lemmaSuffixes: [],
       rootMatches: [],
+      frequency: {
+        kabardian: freqKbd,
+        adyghe: freqAdy,
+      },
     });
   }
 
-  // ============================================
-  // 2. TAM ESLESME YOKSA, PARSER KULLAN
-  // ============================================
+  // 2. Parser
   const knownRoots: KnownRoot[] = data.lexemes
     .filter((l: any) => l.form)
     .map((l: any) => ({
@@ -135,5 +145,9 @@ export async function POST(req: NextRequest) {
     lemmaPrefixes: lemmaResult.morphemeBreakdown.prefixes,
     lemmaSuffixes: lemmaResult.morphemeBreakdown.suffixes,
     rootMatches: lemmaResult.rootMatches,
+    frequency: {
+      kabardian: freqKbd,
+      adyghe: freqAdy,
+    },
   });
 }

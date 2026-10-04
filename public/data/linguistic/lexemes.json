@@ -15493,5 +15493,1200 @@
       "adyghe": "дэхьащхын",
       "kabardian": "дыхьэшхын"
     }
+  },
+  {
+    "id": "L-D0B0D0B1D18B",
+    "form": "абы",
+    "ipa": "/ɐˈbǝ/",
+    "literalMeaning": "Эргативнэ падежым ит ещанэ щхьэ къэзыгъэлъагъуэ цӀэпапщӀэ.",
+    "partOfSpeech": "щхьэ цӏэпапщӏэ",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-D0B0D0B1D18B",
+    "corpusFrequency": 0,
+    "notes": "he, him, she, her, it (ergative case)",
+    "examples": [
+      {
+        "text": "Ӏэдииху и лӀыр къыщысыж пӀалъэр ищӀэрти, жэщ мазэхэу къыщысыжым и деж, абы и ӀэдиитӀыр щхьэгъубжэмкӀэ къыдигъэжырти, лъэмыжыр нэху хъурти, и лӀым къиху шыхэри а лъэмыжымкӀэ кърихурт. {{тхыгъэ|kbd|цӀэ=Нарт.}}",
+        "translation": ""
+      }
+    ]
+  },
+  {
+    "id": "L-_",
+    "form": "я",
+    "ipa": "/jɑ:/",
+    "literalMeaning": "Адыгэ алфавитым и тхущӀрэ еянэ хьэрф.",
+    "partOfSpeech": "хьэрф",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-_",
+    "corpusFrequency": 0,
+    "notes": "fifty-eighth letter of the Kabardino-Cherkess (Circassian) alphabet",
+    "examples": []
+  },
+  {
+    "id": "L-__",
+    "form": "ар",
+    "ipa": "/ɐr/",
+    "literalMeaning": "Именительнэ падежым иту ещанэ щхьэр къэзыгъэлъагъуэ цӀэпапщӀэ.",
+    "partOfSpeech": "щхьэ цӏэпапщӏэ",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-__",
+    "corpusFrequency": 0,
+    "notes": "ар = he, she, it, they",
+    "examples": [
+      {
+        "text": "Ар къуажэ мэлыхъуэти, ӀуэрыӀуатэ куэд ищӀэрт.",
+        "translation": ""
+      },
+      {
+        "text": "Народыр зыхуэныкъуэр, зыщӀэгупсысыр фӀыуэ зэхэзыщӀыкӀ лӀыуэ щытащ ар [ПащӀэ Б.].",
+        "translation": ""
+      }
+    ]
+  },
+  {
+    "id": "L-__",
+    "form": "сэ",
+    "ipa": "/sɐ/",
+    "literalMeaning": "Псалъэ жызыӀэм езым и щхьэр кърегъэлъагъуэ.",
+    "partOfSpeech": "щхьэ цӏэпапщӏэ",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-__",
+    "corpusFrequency": 0,
+    "notes": "I, me",
+    "examples": [
+      {
+        "text": "- Сэ сыудкъым, сыубэркъым, - жиӀащ Ӏэдииху, - лӀы и щытхъуи згъэкӀуэдкъым.  {{тхыгъэ|kbd|цӀэ=Нарт.}}",
+        "translation": ""
+      }
+    ]
+  },
+  {
+    "id": "L-__",
+    "form": "си",
+    "ipa": "/si:/",
+    "literalMeaning": "Сысеиныгъэ къэзыгъэлъагъуэ префикс.",
+    "partOfSpeech": "еигъэ префикс",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-__",
+    "corpusFrequency": 0,
+    "notes": "possessive prefix functionally equivalent to English my, mine",
+    "examples": []
+  },
+  {
+    "id": "L-_",
+    "form": "а",
+    "ipa": "/ɐ, ɑ:/",
+    "literalMeaning": "Адыгэ алфавитым и япэ хьэрф.",
+    "partOfSpeech": "хьэрф",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-_",
+    "corpusFrequency": 0,
+    "notes": "а = first letter of the Kabardino-Cherkess alphabet",
+    "examples": []
+  },
+  {
+    "id": "L-__",
+    "form": "уи",
+    "ipa": "/wi:/",
+    "literalMeaning": "Еиныгъэ къэзыгъэлъагъуэ префикс.",
+    "partOfSpeech": "еигъэ префикс",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-__",
+    "corpusFrequency": 0,
+    "notes": "second person singular possessive indicator, functionally equivalent to English “your, yours”",
+    "examples": []
+  },
+  {
+    "id": "L-D181D18BD182",
+    "form": "сыт",
+    "ipa": "/sǝt/",
+    "literalMeaning": "ЦӀыхум къинэмыщӀа адрей псоми ирищӀоупщӀэ.",
+    "partOfSpeech": "зэрыупщӏэ цӏэпапщӏэ",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-D181D18BD182",
+    "corpusFrequency": 0,
+    "notes": "what? (questions about everything except people)",
+    "examples": [
+      {
+        "text": "ЩӀым сыт тепсэми, къытепхыжынщ.  {{тхыгъэ|kbd|цӀэ=Псжь.}}",
+        "translation": ""
+      }
+    ]
+  },
+  {
+    "id": "L-D186D38FD18B",
+    "form": "цӏыху",
+    "ipa": "/tʹsǝxʷ/",
+    "literalMeaning": "Гупсысэф, псэлъэф, зэрылажьэ Ӏэмэпсымэхэр зыщӀыф, ахэр лэжьыгъэм къыщызыгъэсэбэпыф псэущхьэ.",
+    "partOfSpeech": "noun",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-D186D38FD18B",
+    "corpusFrequency": 0,
+    "notes": "person, people, human being",
+    "examples": [
+      {
+        "text": "ЦӀыхум и нэр къабзэмэ, игури къабзэщ.  {{тхыгъэ|kbd|цӀэ=Псжь.}}",
+        "translation": ""
+      },
+      {
+        "text": "ЦӀыху зыпӀ цӀыху уасэ хон.  {{тхыгъэ|kbd|цӀэ=Псжь.}}",
+        "translation": ""
+      },
+      {
+        "text": "ЦӀыху акъылыншэрэ мафӀэншэ жьэгурэ.  {{тхыгъэ|kbd|цӀэ=Псжь.}}",
+        "translation": ""
+      }
+    ]
+  },
+  {
+    "id": "L-D0B0D183D18D",
+    "form": "ауэ",
+    "ipa": "/'ɐwɐ/",
+    "literalMeaning": "АрщхьэкӀэ.",
+    "partOfSpeech": "союз",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-D0B0D183D18D",
+    "corpusFrequency": 0,
+    "notes": "but, however, on the other hand",
+    "examples": [
+      {
+        "text": "КъекӀуркъым уи щхьэ ущытхъуну, ауэ сэ къыспэщӀэхуа сымаджэхэр псынщӀэу хъужырт.",
+        "translation": ""
+      }
+    ]
+  },
+  {
+    "id": "L-D189D185D18C",
+    "form": "щхьэкӏэ",
+    "ipa": "/'ɕħɐtʹʂɐ/",
+    "literalMeaning": "КъэкӀыгъэхэм я щхьэщыгу лъэныкъуэ.",
+    "partOfSpeech": "noun",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-D189D185D18C",
+    "corpusFrequency": 0,
+    "notes": "treetop, crown of a tree or plant",
+    "examples": [
+      {
+        "text": "Батыр.. жыгыжьыр къыхичри.. щхьэкӀэкӀэ хисэжащ.  {{тхыгъэ|kbd|цӀэ=ӀуэрыӀу.}}",
+        "translation": ""
+      }
+    ]
+  },
+  {
+    "id": "L-D0BDD18DD185",
+    "form": "нэхъ",
+    "ipa": "/nɐχ/",
+    "literalMeaning": "Зыгуэрым и щытыкӀэр нэгъуэщӀым зэрыщхьэпрыкӀыр (п. п. фӀагъкӀэ, ӀеягъкӀэ, куэдагъкӀэ) къызэрагъэлъагъуэ, Ӏуэхугъуэр зэгъэщӀыпӀар къызэрыхагъэщ псалъэ.",
+    "partOfSpeech": "частицэ",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-D0BDD18DD185",
+    "corpusFrequency": 0,
+    "notes": "1. more, to a greater degree or extent 2. except, unless, perhaps, maybe, only",
+    "examples": [
+      {
+        "text": "ЛӀы я нэхъ мыгъуэми Ӏуэхугъуибгъу зэпеч.  {{тхыгъэ|kbd|цӀэ=Псжь.}}",
+        "translation": ""
+      }
+    ]
+  },
+  {
+    "id": "L-__",
+    "form": "ди",
+    "ipa": "/di:/",
+    "literalMeaning": "Догуэт.",
+    "partOfSpeech": "междометие",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-__",
+    "corpusFrequency": 0,
+    "notes": "Well! Come on!",
+    "examples": []
+  },
+  {
+    "id": "L-D185D183D18D",
+    "form": "хуэдэу",
+    "ipa": "/'xʷɐdɐw/",
+    "literalMeaning": "И щӀыкӀэ, щытыкӀэ с. ху. зыгуэрым ещхьу.",
+    "partOfSpeech": "наречие",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-D185D183D18D",
+    "corpusFrequency": 0,
+    "notes": "1. as, like 2. as though, as if, like",
+    "examples": [
+      {
+        "text": "Сэтэней зи щхьэцыр хужьыбээ хъуа фызыжьт, ауэ унагъуэр, нэхь фыз щӀалэм хуэдэу, дэгъуэу зэрихьэт.",
+        "translation": ""
+      },
+      {
+        "text": "Гурыщхъуэ зыщӀам и гур Ӏэджэм мажэ, сыт зэхихми, зыгуэр къраӀуэкӀ хуэдэу къыщохъу.",
+        "translation": ""
+      }
+    ]
+  },
+  {
+    "id": "L-D0B8D0BAD38F",
+    "form": "икӏи",
+    "ipa": "/jǝ'tʹʂi:/",
+    "literalMeaning": "ПсалъитӀ е псалъэухаитӀ зэзыпх союз.",
+    "partOfSpeech": "союз",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-D0B8D0BAD38F",
+    "corpusFrequency": 0,
+    "notes": "and, moreover, futhermore",
+    "examples": []
+  },
+  {
+    "id": "L-__",
+    "form": "зи",
+    "ipa": "/zi:/",
+    "literalMeaning": "Еиныгъэ къэзыгъэлъагъуэ префикс.",
+    "partOfSpeech": "еигъэ префикс",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-__",
+    "corpusFrequency": 0,
+    "notes": "possession indicator, functionally corresponds to English whose, which, that, his, her, hers, its, their, theirs",
+    "examples": [
+      {
+        "text": "Зи щхьэ щымыӀэм и шыд хьэм ешх.  {{тхыгъэ|kbd|цӀэ=Псжь.}}",
+        "translation": ""
+      }
+    ]
+  },
+  {
+    "id": "L-D0B4D0B5D0B6",
+    "form": "деж",
+    "ipa": "/de:ᶎ/",
+    "literalMeaning": "Зыгуэрым и гъунэгъуу (и Ӏэгъуэблагъэу) Ӏуэхур къыщыхъуныгъэ къегъэлъагъуэ.",
+    "partOfSpeech": "послелог",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-D0B4D0B5D0B6",
+    "corpusFrequency": 0,
+    "notes": "by, near, close to, next to, beside, at",
+    "examples": []
+  },
+  {
+    "id": "L-__",
+    "form": "дэ",
+    "ipa": "/dɐ/",
+    "literalMeaning": "Япэ щхьэм иту куэд бжыгъэ къэзыгъэлъагъуэ щхьэ цӀэпапщӀэ.",
+    "partOfSpeech": "щхьэ цӏэпапщӏэ",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-__",
+    "corpusFrequency": 0,
+    "notes": "we",
+    "examples": []
+  },
+  {
+    "id": "L-D189D38FD18B",
+    "form": "щӏын",
+    "ipa": "/ɕʹǝn/",
+    "literalMeaning": "Зыгуэрым уелэжьурэ узыхуей щытыкӀэр егъэгъуэтын, зыгуэр ухуэн, зэгъэпэщын.",
+    "partOfSpeech": "transitive_verb",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-D189D38FD18B",
+    "corpusFrequency": 0,
+    "notes": "do, perform, make sth",
+    "examples": []
+  },
+  {
+    "id": "L-D185D18AD183",
+    "form": "хъун",
+    "ipa": "/χʷǝn/",
+    "literalMeaning": "ХъупӀэм къытекӀэ удз цӀынэу Ӏэщым яхъур.",
+    "partOfSpeech": "noun",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-D185D18AD183",
+    "corpusFrequency": 0,
+    "notes": "meadow grass",
+    "examples": [
+      {
+        "text": "- Сэ хъун бэгъуа здэщыӀэ сощӀэ, — жиӀэри Ажэжьым бжэн цӀыкӀуищыр иришэжьэжащ.  {{тхыгъэ|kbd|цӀэ=Дыщэ кӀ.}}",
+        "translation": ""
+      }
+    ]
+  },
+  {
+    "id": "L-__",
+    "form": "фи",
+    "ipa": "/fi:/",
+    "literalMeaning": "Еиныгъэ къэзыгъэлъагъуэ префикс.",
+    "partOfSpeech": "еигъэ префикс",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-__",
+    "corpusFrequency": 0,
+    "notes": "second person plural possessive prefix functionally equivalent to English “your, yours”",
+    "examples": []
+  },
+  {
+    "id": "L-D0BAD183D18D",
+    "form": "куэд",
+    "ipa": "/kʷɐd/",
+    "literalMeaning": "Зыкъом, Ӏэджэ, зыбжанэ.",
+    "partOfSpeech": "наречие",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-D0BAD183D18D",
+    "corpusFrequency": 0,
+    "notes": "much, many, a lot of, lots of, plenty, a number of; plural",
+    "examples": []
+  },
+  {
+    "id": "L-D184D38FD18B",
+    "form": "фӏыуэ",
+    "ipa": "/fʹǝwɐ/",
+    "literalMeaning": "Ӏеигъэ лъэпкъ хэмылъу, мыбзаджэу, хъарзынэу, дэгъуэу, хуабжьу, икъукӀэ.",
+    "partOfSpeech": "наречие",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-D184D38FD18B",
+    "corpusFrequency": 0,
+    "notes": "well, excellently, wonderfully",
+    "examples": [
+      {
+        "text": "[Мухьэмэд] Джэгум фӀыуэ къыщофэ, Махуэр фийуэ егъакӀуэ.",
+        "translation": ""
+      }
+    ]
+  },
+  {
+    "id": "L-D38FD183D18D",
+    "form": "ӏуэху",
+    "ipa": "/ʔʷɐxʷ/",
+    "literalMeaning": "Лэжьыгъэ, псалъэ, гупсысэ мыхъуу ягъэзащӀэ Ӏуэхугъуэ.",
+    "partOfSpeech": "noun",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-D38FD183D18D",
+    "corpusFrequency": 0,
+    "notes": "1. practical activity; work; occupation, labour 2. affair, business, matter, things (sth directly concerning sb or sth) 3. trial, hearing, case, proceedings (for example, in the courts) 4. state of affairs, situation",
+    "examples": [
+      {
+        "text": "Ӏуэху мыублэ блэ хэсщ.  {{тхыгъэ|kbd|цӀэ=Псжь.}}",
+        "translation": ""
+      },
+      {
+        "text": "Уи мыӀуэху зепхуэмэ, уи щхьэм баш техуэнщ.  {{тхыгъэ|kbd|цӀэ=Псжь.}}",
+        "translation": ""
+      },
+      {
+        "text": "АдэкӀэ Залымджэрий къыжиӀащ фронт псоми Ӏуэхур зэрыщыщытыр.",
+        "translation": ""
+      }
+    ]
+  },
+  {
+    "id": "L-D0BFD0B0D0BF",
+    "form": "папщӏэ",
+    "ipa": "/'pɑ:pʹɕʹɐ/",
+    "literalMeaning": "ЩхьэкӀэ, абы къыхэкӀкӀэ.",
+    "partOfSpeech": "союз",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-D0BFD0B0D0BF",
+    "corpusFrequency": 0,
+    "notes": "to, in order to, so that",
+    "examples": [
+      {
+        "text": "А зэманым урыс культурэм пыщӀа хъун папщӀэ, бгырысхэм я дежкӀэ хэкӀыпӀэ нэхъыщхьэу щытар урысыдзэм къулыкъу щыщӀэнырт.",
+        "translation": ""
+      }
+    ]
+  },
+  {
+    "id": "L-D0B7D18BD180",
+    "form": "зыри",
+    "ipa": "/'zǝri:/",
+    "literalMeaning": "Зыгуэри, хэти.",
+    "partOfSpeech": "мыхъуныгъэ цӏэпапщӏэ",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-D0B7D18BD180",
+    "corpusFrequency": 0,
+    "notes": "no one, nobody, nothing",
+    "examples": [
+      {
+        "text": "Ӏэминат къэувыӀэри, нэ къулэн дахитӀымкӀэ мащӀэу къеплъэкӀа мыхъумэ, зыри жиӀакъым.",
+        "translation": ""
+      }
+    ]
+  },
+  {
+    "id": "L-D185D183D18D",
+    "form": "хуэдэ",
+    "ipa": "/'xʷɐdɐ/",
+    "literalMeaning": "Зыгуэрым теплъэкӀэ, щытыкӀэкӀэ пэгъунэгъу; зыгуэрым ещхь.",
+    "partOfSpeech": "adjective",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-D185D183D18D",
+    "corpusFrequency": 0,
+    "notes": "like, similar to sb or sth",
+    "examples": [
+      {
+        "text": "Абы хуэдэ гугъуехь мащӀэ и фэ дэкӀакъым Лу.",
+        "translation": ""
+      },
+      {
+        "text": "А шым хуэдэ зэикӀ ялъэгъуатэкъым.  {{тхыгъэ|kbd|цӀэ=ӀуэрыӀу.}}",
+        "translation": ""
+      }
+    ]
+  },
+  {
+    "id": "L-D0BFD181D0B0",
+    "form": "псалъэ",
+    "ipa": "/'psɑ:ɬɐ/",
+    "literalMeaning": "Бзэм щыщу къэхъукъащӀэ, предмет сыт хуэдэхэр къызэраӀуатэ цӀэ.",
+    "partOfSpeech": "noun",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-D0BFD181D0B0",
+    "corpusFrequency": 0,
+    "notes": "1. word, lexeme 2. speech, conversation",
+    "examples": [
+      {
+        "text": "Нобэрей гуфӀэгъуэшхуэм хуэфащэу, абы и инагъыр къитӀэсыфу псалъэ щхьэхуэ къыжыӀэфын хуейт.",
+        "translation": ""
+      },
+      {
+        "text": "Псалъэм и пэр умыщӀэу, и кӀэр пщӀэркъым.  {{тхыгъэ|kbd|цӀэ=Псжь.}}",
+        "translation": ""
+      }
+    ]
+  },
+  {
+    "id": "L-D0B0D0BFD185",
+    "form": "апхуэдэу",
+    "ipa": "/ɐp'xʷɐdɐw/",
+    "literalMeaning": "Ещхьу, а щытыкӀэм тету.",
+    "partOfSpeech": "наречие",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-D0B0D0BFD185",
+    "corpusFrequency": 0,
+    "notes": "thus, so, in that way",
+    "examples": []
+  },
+  {
+    "id": "L-D0B3D18AD183",
+    "form": "гъуэгу",
+    "ipa": "/ʁʷɐgʷ/",
+    "literalMeaning": "ЗыщӀыпӀэ икӀыу нэгъуэщӀыпӀэ кӀуэн папщӀэ къагъэсэбэп зекӀуапӀэ.",
+    "partOfSpeech": "noun",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-D0B3D18AD183",
+    "corpusFrequency": 0,
+    "notes": "1. road 2. trip, journey",
+    "examples": [
+      {
+        "text": "Сабэр гъуэгум къыщиӀэту «Победащхъуэр» мажэ псынщӀэу.",
+        "translation": ""
+      },
+      {
+        "text": "Гъуэгу зымыщӀэ пашэ умыщӀ.  {{тхыгъэ|kbd|цӀэ=Псжь.}}",
+        "translation": ""
+      }
+    ]
+  },
+  {
+    "id": "L-D185D18DD182",
+    "form": "хэт",
+    "ipa": "/xɐt/",
+    "literalMeaning": "Зи гугъу ящӀ, зытепсэлъыхь цӀыхур къегъэлъагъуэ.",
+    "partOfSpeech": "зэрыупщӏэ цӏэпапщӏэ",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-D185D18DD182",
+    "corpusFrequency": 0,
+    "notes": "1. who (only about people) 2. as a separator: one... another…, some... others...",
+    "examples": [
+      {
+        "text": "Хэт, тӀысэ, уезыгъэджауэ жыхуэпӀэр?",
+        "translation": ""
+      }
+    ]
+  },
+  {
+    "id": "L-D0B8D0B4D0B6",
+    "form": "иджы",
+    "ipa": "/jǝ'dᶎǝ/",
+    "literalMeaning": "Ит зэманым; лэжьыгъэр, Ӏуэхур щекӀуэкӀ зэманым.",
+    "partOfSpeech": "наречие",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-D0B8D0B4D0B6",
+    "corpusFrequency": 0,
+    "notes": "now, at present",
+    "examples": [
+      {
+        "text": "Япэм мыр дэркӀэ унэу щитами, иджы гъэрыпӀэ хъужащ.",
+        "translation": ""
+      }
+    ]
+  },
+  {
+    "id": "L-D0B3D183D0B6",
+    "form": "гужьей",
+    "ipa": "",
+    "literalMeaning": "panik",
+    "partOfSpeech": "noun",
+    "derivation": {
+      "rootIds": [
+        "R-ГУ"
+      ],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-D0B3D183D0B6",
+    "corpusFrequency": 0,
+    "notes": ""
+  },
+  {
+    "id": "L-D0B3D183D0BC",
+    "form": "гумыгъуэ",
+    "ipa": "",
+    "literalMeaning": "şefkatli",
+    "partOfSpeech": "adjective",
+    "derivation": {
+      "rootIds": [
+        "R-ГУ"
+      ],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-D0B3D183D0BC",
+    "corpusFrequency": 0,
+    "notes": ""
+  },
+  {
+    "id": "L-D0B3D183D0B1",
+    "form": "губжь",
+    "ipa": "",
+    "literalMeaning": "öfke",
+    "partOfSpeech": "noun",
+    "derivation": {
+      "rootIds": [
+        "R-ГУ"
+      ],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-D0B3D183D0B1",
+    "corpusFrequency": 0,
+    "notes": ""
+  },
+  {
+    "id": "L-D0B3D183D0B8",
+    "form": "гуиих",
+    "ipa": "",
+    "literalMeaning": "korkunç",
+    "partOfSpeech": "adjective",
+    "derivation": {
+      "rootIds": [
+        "R-ГУ"
+      ],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-D0B3D183D0B8",
+    "corpusFrequency": 0,
+    "notes": ""
+  },
+  {
+    "id": "L-D0BDD0B0D184",
+    "form": "наф",
+    "ipa": "",
+    "literalMeaning": "kör",
+    "partOfSpeech": "adjective",
+    "derivation": {
+      "rootIds": [
+        "R-НЭ"
+      ],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-D0BDD0B0D184",
+    "corpusFrequency": 0,
+    "notes": ""
+  },
+  {
+    "id": "L-D0BDD0B0D0BF",
+    "form": "напӀцӀ",
+    "ipa": "",
+    "literalMeaning": "yalan",
+    "partOfSpeech": "noun",
+    "derivation": {
+      "rootIds": [
+        "R-НЭ"
+      ],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-D0BDD0B0D0BF",
+    "corpusFrequency": 0,
+    "notes": ""
+  },
+  {
+    "id": "L-D0BDD0B0D0BF",
+    "form": "напс",
+    "ipa": "",
+    "literalMeaning": "gözyaşı",
+    "partOfSpeech": "noun",
+    "derivation": {
+      "rootIds": [
+        "R-НЭ"
+      ],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-D0BDD0B0D0BF",
+    "corpusFrequency": 0,
+    "notes": ""
+  },
+  {
+    "id": "L-D0BDD0B0D184",
+    "form": "нафӀ",
+    "ipa": "",
+    "literalMeaning": "iyilik",
+    "partOfSpeech": "noun",
+    "derivation": {
+      "rootIds": [
+        "R-НЭ"
+      ],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-D0BDD0B0D184",
+    "corpusFrequency": 0,
+    "notes": ""
+  },
+  {
+    "id": "L-D0BDD0B0D188",
+    "form": "нашэ",
+    "ipa": "",
+    "literalMeaning": "şaşı",
+    "partOfSpeech": "adjective",
+    "derivation": {
+      "rootIds": [
+        "R-НЭ"
+      ],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-D0BDD0B0D188",
+    "corpusFrequency": 0,
+    "notes": ""
+  },
+  {
+    "id": "L-D380D18DD180",
+    "form": "Ӏэрытх",
+    "ipa": "",
+    "literalMeaning": "el yazması",
+    "partOfSpeech": "noun",
+    "derivation": {
+      "rootIds": [
+        "R-ӀЭ"
+      ],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-D380D18DD180",
+    "corpusFrequency": 0,
+    "notes": ""
+  },
+  {
+    "id": "L-D189D185D18C",
+    "form": "щхьэпс",
+    "ipa": "",
+    "literalMeaning": "kalın ip",
+    "partOfSpeech": "noun",
+    "derivation": {
+      "rootIds": [
+        "R-ЩХЬЭ"
+      ],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-D189D185D18C",
+    "corpusFrequency": 0,
+    "notes": ""
+  },
+  {
+    "id": "L-D182D185D18C",
+    "form": "тхьэӀкумэчӀыхь",
+    "ipa": "",
+    "literalMeaning": "tavşan",
+    "partOfSpeech": "noun",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-D182D185D18C",
+    "corpusFrequency": 0,
+    "notes": ""
+  },
+  {
+    "id": "L-D185D18BD0BA",
+    "form": "хыкъа",
+    "ipa": "",
+    "literalMeaning": "yunus",
+    "partOfSpeech": "noun",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-D185D18BD0BA",
+    "corpusFrequency": 0,
+    "notes": ""
+  },
+  {
+    "id": "L-D0BCD18DD0B7",
+    "form": "мэзчэт",
+    "ipa": "",
+    "literalMeaning": "sülün",
+    "partOfSpeech": "noun",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-D0BCD18DD0B7",
+    "corpusFrequency": 0,
+    "notes": ""
+  },
+  {
+    "id": "L-D0B4D18BD0B3",
+    "form": "дыгъэ",
+    "ipa": "",
+    "literalMeaning": "güneş",
+    "partOfSpeech": "noun",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-D0B4D18BD0B3",
+    "corpusFrequency": 0,
+    "notes": ""
+  },
+  {
+    "id": "L-D0B8D0B4D0B6",
+    "form": "иджыпсту",
+    "ipa": "",
+    "literalMeaning": "şimdi",
+    "partOfSpeech": "adverb",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-D0B8D0B4D0B6",
+    "corpusFrequency": 0,
+    "notes": ""
+  },
+  {
+    "id": "L-D0B8D182D380",
+    "form": "итӀанэ",
+    "ipa": "",
+    "literalMeaning": "sonra",
+    "partOfSpeech": "adverb",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-D0B8D182D380",
+    "corpusFrequency": 0,
+    "notes": ""
+  },
+  {
+    "id": "L-D184D18BD0B7",
+    "form": "фыз",
+    "ipa": "",
+    "literalMeaning": "kadın, eş",
+    "partOfSpeech": "noun",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-D184D18BD0B7",
+    "corpusFrequency": 0,
+    "notes": ""
+  },
+  {
+    "id": "L-D185D18AD18B",
+    "form": "хъыджэбз",
+    "ipa": "",
+    "literalMeaning": "genç kız",
+    "partOfSpeech": "noun",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-D185D18AD18B",
+    "corpusFrequency": 0,
+    "notes": ""
+  },
+  {
+    "id": "L-D189D380D18B",
+    "form": "щӀыӀэ",
+    "ipa": "",
+    "literalMeaning": "soğuk",
+    "partOfSpeech": "adjective",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-D189D380D18B",
+    "corpusFrequency": 0,
+    "notes": ""
+  },
+  {
+    "id": "L-D184D380D18B",
+    "form": "фӀы",
+    "ipa": "",
+    "literalMeaning": "iyi",
+    "partOfSpeech": "adjective",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-D184D380D18B",
+    "corpusFrequency": 0,
+    "notes": ""
+  },
+  {
+    "id": "L-D0BAD380D18D",
+    "form": "кӀэщӀ",
+    "ipa": "",
+    "literalMeaning": "kısa",
+    "partOfSpeech": "adjective",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-D0BAD380D18D",
+    "corpusFrequency": 0,
+    "notes": ""
+  },
+  {
+    "id": "L-D0B1D18BD0B4",
+    "form": "быдэу",
+    "ipa": "",
+    "literalMeaning": "sıkıca",
+    "partOfSpeech": "adverb",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-D0B1D18BD0B4",
+    "corpusFrequency": 0,
+    "notes": ""
+  },
+  {
+    "id": "L-D185D183D0BE",
+    "form": "хуому",
+    "ipa": "",
+    "literalMeaning": "yavaşça",
+    "partOfSpeech": "adverb",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-D185D183D0BE",
+    "corpusFrequency": 0,
+    "notes": ""
+  },
+  {
+    "id": "L-D189D380D18D",
+    "form": "щӀэхыу",
+    "ipa": "",
+    "literalMeaning": "hızlıca",
+    "partOfSpeech": "adverb",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-D189D380D18D",
+    "corpusFrequency": 0,
+    "notes": ""
+  },
+  {
+    "id": "L-D0B6D18BD380",
+    "form": "жыӀэн",
+    "ipa": "",
+    "literalMeaning": "söylemek, demek",
+    "partOfSpeech": "verb",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-D0B6D18BD380",
+    "corpusFrequency": 0,
+    "notes": ""
+  },
+  {
+    "id": "L-D189D18BD182",
+    "form": "щытын",
+    "ipa": "",
+    "literalMeaning": "durmak, bulunmak",
+    "partOfSpeech": "verb",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-D189D18BD182",
+    "corpusFrequency": 0,
+    "notes": ""
+  },
+  {
+    "id": "L-D0B8D0BD",
+    "form": "ин",
+    "ipa": "",
+    "literalMeaning": "büyük",
+    "partOfSpeech": "adjective",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-D0B8D0BD",
+    "corpusFrequency": 0,
+    "notes": ""
+  },
+  {
+    "id": "L-D0B4D0B0D185",
+    "form": "дахэ",
+    "ipa": "",
+    "literalMeaning": "güzel",
+    "partOfSpeech": "adjective",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-D0B4D0B0D185",
+    "corpusFrequency": 0,
+    "notes": ""
+  },
+  {
+    "id": "L-D0B8D0BAD18A",
+    "form": "икъукӀэ",
+    "ipa": "",
+    "literalMeaning": "oldukça, epey",
+    "partOfSpeech": "adverb",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-D0B8D0BAD18A",
+    "corpusFrequency": 0,
+    "notes": ""
+  },
+  {
+    "id": "L-D0BFD181D0BE",
+    "form": "псо",
+    "ipa": "",
+    "literalMeaning": "bütün, hepsi",
+    "partOfSpeech": "adjective",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-D0BFD181D0BE",
+    "corpusFrequency": 0,
+    "notes": ""
+  },
+  {
+    "id": "L-D0B7D18DD187",
+    "form": "зэчӀэ",
+    "ipa": "",
+    "literalMeaning": "bütün, tamamı",
+    "partOfSpeech": "adjective",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-D0B7D18DD187",
+    "corpusFrequency": 0,
+    "notes": ""
+  },
+  {
+    "id": "L-D0B4D0B6D18B",
+    "form": "джы",
+    "ipa": "",
+    "literalMeaning": "şimdi",
+    "partOfSpeech": "adverb",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-D0B4D0B6D18B",
+    "corpusFrequency": 0,
+    "notes": ""
+  },
+  {
+    "id": "L-D0B4D18DD0B6",
+    "form": "дэжь",
+    "ipa": "",
+    "literalMeaning": "yanı, tarafı",
+    "partOfSpeech": "adverb",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-D0B4D18DD0B6",
+    "corpusFrequency": 0,
+    "notes": ""
+  },
+  {
+    "id": "L-D0B8D183D0B6",
+    "form": "иужь",
+    "ipa": "",
+    "literalMeaning": "sonra, ardından",
+    "partOfSpeech": "adverb",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-D0B8D183D0B6",
+    "corpusFrequency": 0,
+    "notes": ""
   }
 ]
