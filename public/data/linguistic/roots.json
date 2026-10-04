@@ -3691,5 +3691,36 @@
       "notes": "C-10.3 yeni aile. Yuz/vicdan kok ailesi. 19 sozluk kaynagi. 10+ turev. 15+ deyim."
     },
     "notes": "Minimal root - WF-NAPE icin olusturuldu"
+  },
+  {
+    "id": "R-KUANDZH",
+    "form": "къандж",
+    "primaryMeaning": "saksagan",
+    "ipa": "/qʷaːndʒ/",
+    "secondaryMeanings": [],
+    "semanticDomains": [
+      "animal",
+      "bird"
+    ],
+    "dialectVariants": {
+      "adyghe": "къандж",
+      "kabardian": "къанжэ"
+    },
+    "wordFamily": {
+      "id": "WF-KUANDZH",
+      "lexemeIds": [
+        "L-KUANDZH"
+      ],
+      "conceptIds": [
+        "MAGPIE"
+      ],
+      "morphemeIds": [],
+      "productivity": {
+        "totalLexemes": 1,
+        "corpusFrequency": 0
+      },
+      "notes": "Kus ailesi - saksagan"
+    },
+    "notes": "Aig (2006); Tharkaho (1991)"
   }
 ]
