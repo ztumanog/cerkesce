@@ -16464,21 +16464,6 @@
     "notes": ""
   },
   {
-    "id": "L-KHUN-1",
-    "form": "хъун",
-    "ipa": "/χʷǝn/",
-    "literalMeaning": "ot, çayır otu; güve (moth); temel, dokuma ipliği; olmak, başlamak, büyümek, olgunlaşmak",
-    "partOfSpeech": "noun",
-    "notes": "Apaşev (2008), Amcad Camuha (1997), Kokov (2008)",
-    "derivation": {
-      "rootIds": [],
-      "morphemeIds": [],
-      "rule": "root"
-    },
-    "wordFamilyId": "WF-L-KHUN-1",
-    "corpusFrequency": 0
-  },
-  {
     "id": "L-D0BAD18AD18D",
     "form": "къэтӀэсын",
     "ipa": "",
@@ -20137,5 +20122,65 @@
     "wordFamilyId": "WF-L-D0BFD181D0B0",
     "corpusFrequency": 0,
     "notes": ""
+  },
+  {
+    "id": "L-KHUN-1",
+    "form": "хъун",
+    "ipa": "/χʷǝn/",
+    "literalMeaning": "ot, çayır otu",
+    "partOfSpeech": "noun",
+    "notes": "Apaşev (2008), Amcad Camuha (1997), Kokov (2008)",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-KHUN-1",
+    "corpusFrequency": 0
+  },
+  {
+    "id": "L-KHUN-2",
+    "form": "хъун",
+    "ipa": "/χʷǝn/",
+    "literalMeaning": "güve (moth)",
+    "partOfSpeech": "noun",
+    "notes": "Baş Editör (1960), Sherdjes (1994)",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-KHUN-2",
+    "corpusFrequency": 0
+  },
+  {
+    "id": "L-KHUN-3",
+    "form": "хъун",
+    "ipa": "/χʷǝn/",
+    "literalMeaning": "temel, dokuma ipliği",
+    "partOfSpeech": "noun",
+    "notes": "Sherdjes (1994)",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-KHUN-3",
+    "corpusFrequency": 0
+  },
+  {
+    "id": "L-KHUN-4",
+    "form": "хъун",
+    "ipa": "/χʷǝn/",
+    "literalMeaning": "olmak, başlamak, büyümek, olgunlaşmak",
+    "partOfSpeech": "verb",
+    "notes": "Apaşev (2008), Kardanov (1957), Tharkaho (1991), + 19 kaynak (CSV)",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-KHUN-4",
+    "corpusFrequency": 0
   }
 ]
