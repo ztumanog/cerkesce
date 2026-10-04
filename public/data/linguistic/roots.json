@@ -26,7 +26,39 @@
       "adyFreq": 5995,
       "kbdFreq": 16793
     },
-    "notes": "Adyghe Web Corpus: 47 farkli lemma, 52.291 sonuc. En uretken somatik kok."
+    "notes": "Adyghe Web Corpus: 47 farkli lemma, 52.291 sonuc. En uretken somatik kok.",
+    "wordFamily": {
+      "id": "WF-GU",
+      "lexemeIds": [
+        "L-GUF1E",
+        "L-GUGHE",
+        "L-GUBZHYGE",
+        "L-GUETYNEGHE",
+        "L-GUF1EN"
+      ],
+      "conceptIds": [
+        "ANGER",
+        "ANXIETY",
+        "HOPE",
+        "INTELLIGENCE",
+        "JOY",
+        "LOYALTY",
+        "SOUL_DEPTH",
+        "THOUGHT"
+      ],
+      "morphemeIds": [
+        "M-F1E",
+        "M-GHE",
+        "M-BZHYGE",
+        "M-F1EN"
+      ],
+      "productivity": {
+        "totalLexemes": 47,
+        "corpusFrequency": 22788,
+        "mostFrequentLexemeId": "L-GUF1E"
+      },
+      "notes": "En uretken somatik kok ailesi. 22 bilesik yapi korpusta dogrulandi."
+    }
   },
   {
     "id": "R-SHHYE",
@@ -53,7 +85,32 @@
       "adyFreq": 895,
       "kbdFreq": 8951
     },
-    "notes": "130+ deyimde kurucu onek. Metaforik zincir: HEAD -> TOP -> REASON"
+    "notes": "130+ deyimde kurucu onek. Metaforik zincir: HEAD -> TOP -> REASON",
+    "wordFamily": {
+      "id": "WF-SHHYE",
+      "lexemeIds": [
+        "L-SHHYEGU",
+        "L-SHHYEUSYGHE"
+      ],
+      "conceptIds": [
+        "EXIT",
+        "FREEDOM",
+        "HAIR",
+        "REASON",
+        "SINGLE",
+        "SPOUSE",
+        "TOP",
+        "WINDOW"
+      ],
+      "morphemeIds": [
+        "M-GU"
+      ],
+      "productivity": {
+        "totalLexemes": 30,
+        "corpusFrequency": 9846
+      },
+      "notes": "Metaforik zincir: HEAD -> TOP -> REASON. щхьэусыгъуэ = bas + sebep -> gerekce"
+    }
   },
   {
     "id": "R-NE",
@@ -80,7 +137,43 @@
       "adyFreq": 5959,
       "kbdFreq": 15924
     },
-    "notes": "111+ deyimde kurucu. Turevler: напс (gozyasi), нэгу (yuz), наф (kor)"
+    "notes": "111+ deyimde kurucu. Turevler: напс (gozyasi), нэгу (yuz), наф (kor)",
+    "wordFamily": {
+      "id": "WF-NE",
+      "lexemeIds": [
+        "L-NAPS",
+        "L-NEGU",
+        "L-NAF"
+      ],
+      "conceptIds": [
+        "BLIND",
+        "CHEEK",
+        "EVIL_EYE",
+        "EYEBROW",
+        "EYELASH",
+        "FACE",
+        "KINDHEARTED",
+        "KINDNESS",
+        "LIE",
+        "LIGHT",
+        "MASCARA",
+        "MY_FACE",
+        "ONE_EYED",
+        "SHARP_EYE",
+        "TEAR",
+        "TEARFUL",
+        "TEARS"
+      ],
+      "morphemeIds": [
+        "M-PSE",
+        "M-GU"
+      ],
+      "productivity": {
+        "totalLexemes": 25,
+        "corpusFrequency": 21883
+      },
+      "notes": "Duyu organi koku. нэ + гу = yuz, нэ + псэ = gozyasi"
+    }
   },
   {
     "id": "R-PSY",
@@ -105,7 +198,42 @@
       "adyFreq": 2420,
       "kbdFreq": 3906
     },
-    "notes": "Doga koku. напс (gozyasi) = нэ + псэ bilesimi."
+    "notes": "Doga koku. напс (gozyasi) = нэ + псэ bilesimi.",
+    "wordFamily": {
+      "id": "WF-PSY",
+      "lexemeIds": [
+        "L-NAPS"
+      ],
+      "conceptIds": [
+        "COOT",
+        "DEW",
+        "DIPPER",
+        "DUCK",
+        "FLOODPLAIN",
+        "HORSETAIL",
+        "KUBAN_RIVER",
+        "PYATIGORSK",
+        "RIVER",
+        "RIVERBANK",
+        "RIVERBED",
+        "STEEP_BANK",
+        "STREAM",
+        "TOILET",
+        "VALLEY",
+        "WATER",
+        "WATERMILL",
+        "WATER_SNAKE",
+        "WELL"
+      ],
+      "morphemeIds": [
+        "M-NE"
+      ],
+      "productivity": {
+        "totalLexemes": 20,
+        "corpusFrequency": 6326
+      },
+      "notes": "Doga koku. напс = нэ + псэ (goz + su) bilesimi."
+    }
   },
   {
     "id": "R-GUSHCH",
@@ -162,7 +290,18 @@
         "meaning": "ninni"
       }
     ],
-    "notes": "Gu koku DEGIL. Ayri bir kok. Diyalekt: Adigece кушъэ <-> Kabardeyce гущэ."
+    "notes": "Gu koku DEGIL. Ayri bir kok. Diyalekt: Adigece кушъэ <-> Kabardeyce гущэ.",
+    "wordFamily": {
+      "id": "WF-GUSHCH",
+      "lexemeIds": [],
+      "conceptIds": [],
+      "morphemeIds": [],
+      "productivity": {
+        "totalLexemes": 0,
+        "corpusFrequency": 0
+      },
+      "notes": "Bos aile - sonra doldurulacak"
+    }
   },
   {
     "id": "R-1E",
@@ -209,7 +348,32 @@
         "meaning": "yardimci"
       }
     ],
-    "notes": "Yeni kok. Korpus: 90+ cumle. El, yardim, guc metaforlari."
+    "notes": "Yeni kok. Korpus: 90+ cumle. El, yardim, guc metaforlari.",
+    "wordFamily": {
+      "id": "WF-1E",
+      "lexemeIds": [
+        "L-1E",
+        "L-1EPE",
+        "L-1EGU",
+        "L-1EPKYLEPK",
+        "L-1ERYSH1"
+      ],
+      "conceptIds": [
+        "ARTIFICIAL_INTELLIGENCE",
+        "BODY",
+        "FINGER",
+        "HAND",
+        "HANDMADE",
+        "PALM"
+      ],
+      "morphemeIds": [],
+      "productivity": {
+        "totalLexemes": 5,
+        "corpusFrequency": 11294,
+        "mostFrequentLexemeId": "L-1E"
+      },
+      "notes": "El ailesi (Ӏэ). Somatik kok. Corpus: 11.294 kullanim."
+    }
   },
   {
     "id": "R-LHE",
@@ -255,7 +419,31 @@
         "meaning": "bag"
       }
     ],
-    "notes": "Yeni kok. Ӏэпкълъэпкъ (vucut) icinde gecer. Ayak, bacak, temel."
+    "notes": "Yeni kok. Ӏэпкълъэпкъ (vucut) icinde gecer. Ayak, bacak, temel.",
+    "wordFamily": {
+      "id": "WF-LHE",
+      "lexemeIds": [
+        "L-1EPKYLEPK",
+        "L-LHEGU",
+        "L-LHEBAKUE",
+        "L-LHAKUE",
+        "L-LHEPS"
+      ],
+      "conceptIds": [
+        "BINDING",
+        "BLOOD",
+        "LEG",
+        "SOLE",
+        "STEP"
+      ],
+      "morphemeIds": [],
+      "productivity": {
+        "totalLexemes": 5,
+        "corpusFrequency": 10729,
+        "mostFrequentLexemeId": "L-LHAKUE"
+      },
+      "notes": "Ayak/bacak ailesi (лъэ). Somatik kok. Corpus: 10.729 kullanim."
+    }
   },
   {
     "id": "R-PE",
@@ -322,7 +510,42 @@
         "meaning": "beklemek"
       }
     ],
-    "notes": "Iki rol: isim (burun) + onek (on-). 250+ turev. Ӏэпэ (parmak) bu kokten."
+    "notes": "Iki rol: isim (burun) + onek (on-). 250+ turev. Ӏэпэ (parmak) bu kokten.",
+    "wordFamily": {
+      "id": "WF-PE",
+      "lexemeIds": [
+        "L-PE",
+        "L-PEKUKU",
+        "L-PEKURSH",
+        "L-YAPEREY",
+        "L-PERYT",
+        "L-PEFYQ",
+        "L-PETINE",
+        "L-PETSURƏ",
+        "L-PEPLEN",
+        "L-KUAPE",
+        "L-KUAPELHAPE"
+      ],
+      "conceptIds": [
+        "DECEIT",
+        "FLAT_NOSED",
+        "HAWK_NOSED",
+        "LEADER",
+        "NASAL_SEPTUM",
+        "NOSE",
+        "NOSTRIL",
+        "POINTED_NOSED",
+        "SNUB_NOSED",
+        "WAIT"
+      ],
+      "morphemeIds": [],
+      "productivity": {
+        "totalLexemes": 11,
+        "corpusFrequency": 7184,
+        "mostFrequentLexemeId": "L-PE"
+      },
+      "notes": "Burun/on ailesi (пэ). Somatik + mekan. Corpus: 7.184 kullanim."
+    }
   },
   {
     "id": "R-UNE",
@@ -350,7 +573,66 @@
       "adyFreq": 1548,
       "kbdFreq": 3199
     },
-    "notes": "Wiktionary + 16 türev. Etimoloji: u(n) insan + -nэ kap/yuva. Kültürel: ev = aile ocağı."
+    "notes": "Wiktionary + 16 türev. Etimoloji: u(n) insan + -nэ kap/yuva. Kültürel: ev = aile ocağı.",
+    "wordFamily": {
+      "id": "WF-UNE",
+      "lexemeIds": [
+        "L-UNE",
+        "L-UNEGUASHE",
+        "L-PSYUNE",
+        "L-UNESHHUE",
+        "L-UNEC1YQ1U"
+      ],
+      "conceptIds": [
+        "BACK",
+        "BRIDE_ABDUCTION",
+        "BUILDER",
+        "CENTER",
+        "COMMUNITY",
+        "CORNER",
+        "DEFORM",
+        "DIRECT",
+        "DISASTER",
+        "DOME",
+        "DOOR",
+        "EMPTY",
+        "EXTENSION",
+        "FLOOR",
+        "FOUNDATION",
+        "FRONT",
+        "FURNITURE",
+        "HIDE",
+        "HOSTESS",
+        "HOUSE",
+        "HOUSEWIFE",
+        "HOUSE_TO_HOUSE",
+        "LUCKY_HOUSE",
+        "MAID",
+        "MARRY",
+        "MASON",
+        "NAMESAKE",
+        "NEWLYWED",
+        "OLD_HOUSE",
+        "RAFTER",
+        "RELATIVE",
+        "ROOF",
+        "SERVANT",
+        "SIDE",
+        "SURNAME",
+        "VISIT",
+        "WALL",
+        "WEDDING_RITUAL"
+      ],
+      "morphemeIds": [
+        "M-SHXUE",
+        "M-C1YQ1U"
+      ],
+      "productivity": {
+        "totalLexemes": 5,
+        "corpusFrequency": 4747
+      },
+      "notes": "Ev ailesi. унэ, унэгуащэ, псыунэ, унэшхуэ (buyuk ev), унэцӀыкӀу (kucuk ev)."
+    }
   },
   {
     "id": "R-P1E",
@@ -379,7 +661,18 @@
       "adyFreq": 353,
       "kbdFreq": 941
     },
-    "notes": "40+ türev. -пӀэ eki fiil köklerine eklenerek yer/mekân ismi türetir. İkincil anlam: kap/örtü (пӀэтепхъуэ)."
+    "notes": "40+ türev. -пӀэ eki fiil köklerine eklenerek yer/mekân ismi türetir. İkincil anlam: kap/örtü (пӀэтепхъуэ).",
+    "wordFamily": {
+      "id": "WF-P1E",
+      "lexemeIds": [],
+      "conceptIds": [],
+      "morphemeIds": [],
+      "productivity": {
+        "totalLexemes": 0,
+        "corpusFrequency": 0
+      },
+      "notes": "Bos aile - sonra doldurulacak"
+    }
   },
   {
     "id": "R-GUASHCH",
@@ -422,7 +715,18 @@
         "meaning": "güzel kız, 'bebek'"
       }
     ],
-    "notes": "Etimoloji: [гуащ] + -э. Polisemik: PRINCESS (soyluluk) → MOTHER_IN_LAW (aile rolü) → DOLL (oyuncak). унэгуащэ bileşiğinde 'hanım' alt anlamı seçilir. 18 bağımsız sözlük kaynağı."
+    "notes": "Etimoloji: [гуащ] + -э. Polisemik: PRINCESS (soyluluk) → MOTHER_IN_LAW (aile rolü) → DOLL (oyuncak). унэгуащэ bileşiğinde 'hanım' alt anlamı seçilir. 18 bağımsız sözlük kaynağı.",
+    "wordFamily": {
+      "id": "WF-GUASHCH",
+      "lexemeIds": [],
+      "conceptIds": [],
+      "morphemeIds": [],
+      "productivity": {
+        "totalLexemes": 0,
+        "corpusFrequency": 0
+      },
+      "notes": "Bos aile - sonra doldurulacak"
+    }
   },
   {
     "id": "R-GHUSE",
@@ -459,7 +763,18 @@
         "meaning": "birlikte"
       }
     ],
-    "notes": "Etimoloji: [гъус] + -э. 18 sözlük kaynağı. щхьэгъусэ bileşiğinin temeli."
+    "notes": "Etimoloji: [гъус] + -э. 18 sözlük kaynağı. щхьэгъусэ bileşiğinin temeli.",
+    "wordFamily": {
+      "id": "WF-GHUSE",
+      "lexemeIds": [],
+      "conceptIds": [],
+      "morphemeIds": [],
+      "productivity": {
+        "totalLexemes": 0,
+        "corpusFrequency": 0
+      },
+      "notes": "Bos aile - sonra doldurulacak"
+    }
   },
   {
     "id": "R-PLHE",
@@ -495,7 +810,24 @@
         "meaning": "bakmak"
       }
     ],
-    "notes": "Yeni kök. пэплъэн (beklemek) fiilinin gerçek kökü. Etimoloji: пэ- (ön) + плъэ (bak) + -н."
+    "notes": "Yeni kök. пэплъэн (beklemek) fiilinin gerçek kökü. Etimoloji: пэ- (ön) + плъэ (bak) + -н.",
+    "wordFamily": {
+      "id": "WF-PLHE",
+      "lexemeIds": [
+        "L-PLHE",
+        "L-PEPLEN"
+      ],
+      "conceptIds": [
+        "LOOK"
+      ],
+      "morphemeIds": [],
+      "productivity": {
+        "totalLexemes": 2,
+        "corpusFrequency": 48,
+        "mostFrequentLexemeId": "L-PEPLEN"
+      },
+      "notes": "C-10.3 yeni aile. Bakmak/algilamak kok ailesi."
+    }
   },
   {
     "id": "R-BZE",
@@ -548,7 +880,34 @@
       }
     ],
     "etymology": "[бз] + -э",
-    "notes": "Polisemik: 5 anlam. Kabardeyce Wiktionary IPA: [bzɐ]. 19 sözlük kaynağı."
+    "notes": "Polisemik: 5 anlam. Kabardeyce Wiktionary IPA: [bzɐ]. 19 sözlük kaynağı.",
+    "wordFamily": {
+      "id": "WF-BZE",
+      "lexemeIds": [
+        "L-BZE",
+        "L-BZEGU",
+        "L-BZEDYDHU",
+        "L-BZESHXUE",
+        "L-BZEPSE",
+        "L-BZEBZA"
+      ],
+      "conceptIds": [
+        "BOWSTRING",
+        "FLATTER",
+        "LANGUAGE",
+        "LINGUISTIC_TIE",
+        "STUTTER",
+        "TONGUE"
+      ],
+      "morphemeIds": [
+        "M-SHXUE"
+      ],
+      "productivity": {
+        "totalLexemes": 6,
+        "corpusFrequency": 1427
+      },
+      "notes": "Dil ailesi. бзэ, бзэгу, бзэдыд, бзэшхуэ, бзэпс, бзэбзэ."
+    }
   },
   {
     "id": "R-F",
@@ -591,7 +950,29 @@
       }
     ],
     "etymology": "[ф] + -ы + -н",
-    "notes": "Adigece'de шъун, Kabardeyce'de фын. Diyalekt dönüşümü: шъ → ф. 21 türev fiil. 7 sözlük + Wiktionary."
+    "notes": "Adigece'de шъун, Kabardeyce'de фын. Diyalekt dönüşümü: шъ → ф. 21 türev fiil. 7 sözlük + Wiktionary.",
+    "wordFamily": {
+      "id": "WF-F",
+      "lexemeIds": [
+        "L-FYN",
+        "L-FA",
+        "L-SH1EFYQ1YN",
+        "L-1UFYQ1YN"
+      ],
+      "conceptIds": [
+        "ROT",
+        "ROTTEN",
+        "ROT_FROM_BELOW",
+        "ROT_FROM_MOUTH"
+      ],
+      "morphemeIds": [],
+      "productivity": {
+        "totalLexemes": 4,
+        "corpusFrequency": 32267,
+        "mostFrequentLexemeId": "L-FYN"
+      },
+      "notes": "ф koku — en yuksek frekansli (32.267). Muhtemelen islevsel morfem."
+    }
   },
   {
     "id": "R-FE",
@@ -634,7 +1015,18 @@
       }
     ],
     "etymology": "[ф] + -э",
-    "notes": "İki ana anlam: (1) zamir 'siz'; (2) isim 'deri/cilt/kabuk'. 19 sözlük kaynağı."
+    "notes": "İki ana anlam: (1) zamir 'siz'; (2) isim 'deri/cilt/kabuk'. 19 sözlük kaynağı.",
+    "wordFamily": {
+      "id": "WF-FE",
+      "lexemeIds": [],
+      "conceptIds": [],
+      "morphemeIds": [],
+      "productivity": {
+        "totalLexemes": 0,
+        "corpusFrequency": 0
+      },
+      "notes": "Bos aile - sonra doldurulacak"
+    }
   },
   {
     "id": "R-P1C1",
@@ -680,7 +1072,18 @@
       }
     ],
     "etymology": "[пцӀ] + -ы",
-    "notes": "Yalan, aldatma kökü. Wiktionary IPA: [ptʹsǝ]. 15+ türev."
+    "notes": "Yalan, aldatma kökü. Wiktionary IPA: [ptʹsǝ]. 15+ türev.",
+    "wordFamily": {
+      "id": "WF-P1C1",
+      "lexemeIds": [],
+      "conceptIds": [],
+      "morphemeIds": [],
+      "productivity": {
+        "totalLexemes": 0,
+        "corpusFrequency": 0
+      },
+      "notes": "Bos aile - sonra doldurulacak"
+    }
   },
   {
     "id": "R-SH1Y",
@@ -735,7 +1138,24 @@
       }
     ],
     "etymology": "[щӀ] + -ы",
-    "notes": "İki ana anlam: (1) toprak/dünya/ülke; (2) kış. 11 sözlük kaynağı."
+    "notes": "İki ana anlam: (1) toprak/dünya/ülke; (2) kış. 11 sözlük kaynağı.",
+    "wordFamily": {
+      "id": "WF-SH1Y",
+      "lexemeIds": [
+        "L-SH1Y",
+        "L-SH1YDAGHE"
+      ],
+      "conceptIds": [
+        "PETROLEUM"
+      ],
+      "morphemeIds": [],
+      "productivity": {
+        "totalLexemes": 2,
+        "corpusFrequency": 9435,
+        "mostFrequentLexemeId": "L-SH1Y"
+      },
+      "notes": "Yer/toprak ailesi (щӀы). Doga koku. Corpus: 9.435 kullanim."
+    }
   },
   {
     "id": "R-SH1E",
@@ -776,7 +1196,24 @@
       }
     ],
     "etymology": "[щӀ] + -э",
-    "notes": "Yeni. Adigece: кӀэ. 5 sözlük kaynağı."
+    "notes": "Yeni. Adigece: кӀэ. 5 sözlük kaynağı.",
+    "wordFamily": {
+      "id": "WF-SH1E",
+      "lexemeIds": [
+        "L-SH1E"
+      ],
+      "conceptIds": [
+        "KNOW",
+        "NEW"
+      ],
+      "morphemeIds": [],
+      "productivity": {
+        "totalLexemes": 1,
+        "corpusFrequency": 9383,
+        "mostFrequentLexemeId": "L-SH1E"
+      },
+      "notes": "Alt/asagi ailesi (щӀэ). Mekan koku. Corpus: 9.383 kullanim."
+    }
   },
   {
     "id": "R-DAGHE",
@@ -819,7 +1256,18 @@
       }
     ],
     "etymology": "[дагъ] + -э",
-    "notes": "Yağ, yakıt. 19 sözlük + Wiktionary."
+    "notes": "Yağ, yakıt. 19 sözlük + Wiktionary.",
+    "wordFamily": {
+      "id": "WF-DAGHE",
+      "lexemeIds": [],
+      "conceptIds": [],
+      "morphemeIds": [],
+      "productivity": {
+        "totalLexemes": 0,
+        "corpusFrequency": 0
+      },
+      "notes": "Bos aile - sonra doldurulacak"
+    }
   },
   {
     "id": "R-SHE",
@@ -863,7 +1311,18 @@
       }
     ],
     "etymology": "[щ] + -э",
-    "notes": "Yağ + sayılar + partikel. Adigece'de /ɕ/ sesi olmadığı için 'шэ' olarak geçer."
+    "notes": "Yağ + sayılar + partikel. Adigece'de /ɕ/ sesi olmadığı için 'шэ' olarak geçer.",
+    "wordFamily": {
+      "id": "WF-SHE",
+      "lexemeIds": [],
+      "conceptIds": [],
+      "morphemeIds": [],
+      "productivity": {
+        "totalLexemes": 0,
+        "corpusFrequency": 0
+      },
+      "notes": "Bos aile - sonra doldurulacak"
+    }
   },
   {
     "id": "R-SHE2",
@@ -905,7 +1364,18 @@
       }
     ],
     "etymology": "[ш] + -э",
-    "notes": "Süt + kurşun + götür. IPA: /ʂɐ/. Tarmash DOGU filtresi doğruluyor."
+    "notes": "Süt + kurşun + götür. IPA: /ʂɐ/. Tarmash DOGU filtresi doğruluyor.",
+    "wordFamily": {
+      "id": "WF-SHE2",
+      "lexemeIds": [],
+      "conceptIds": [],
+      "morphemeIds": [],
+      "productivity": {
+        "totalLexemes": 0,
+        "corpusFrequency": 0
+      },
+      "notes": "Bos aile - sonra doldurulacak"
+    }
   },
   {
     "id": "R-TKHEK1UME",
@@ -959,7 +1429,18 @@
       }
     ],
     "etymology": "[тхьэкӀум] + -э",
-    "notes": "Kulak. 13 sözlük + 10 türev. тхьэкӀумэкӀыхь (tavşan) bileşiğinin temeli."
+    "notes": "Kulak. 13 sözlük + 10 türev. тхьэкӀумэкӀыхь (tavşan) bileşiğinin temeli.",
+    "wordFamily": {
+      "id": "WF-TKHEK1UME",
+      "lexemeIds": [],
+      "conceptIds": [],
+      "morphemeIds": [],
+      "productivity": {
+        "totalLexemes": 0,
+        "corpusFrequency": 0
+      },
+      "notes": "Bos aile - sonra doldurulacak"
+    }
   },
   {
     "id": "R-K1YH",
@@ -1018,7 +1499,18 @@
       }
     ],
     "etymology": "[кӀыхь]",
-    "notes": "Uzun. Yamisha (2018) + Wiktionary. 25 türev. тхьэкӀумэкӀыхь (tavşan) bileşiğinin ikinci parçası."
+    "notes": "Uzun. Yamisha (2018) + Wiktionary. 25 türev. тхьэкӀумэкӀыхь (tavşan) bileşiğinin ikinci parçası.",
+    "wordFamily": {
+      "id": "WF-K1YH",
+      "lexemeIds": [],
+      "conceptIds": [],
+      "morphemeIds": [],
+      "productivity": {
+        "totalLexemes": 0,
+        "corpusFrequency": 0
+      },
+      "notes": "Bos aile - sonra doldurulacak"
+    }
   },
   {
     "id": "R-DYGHU",
@@ -1076,7 +1568,18 @@
       }
     ],
     "etymology": "[дыгъу]",
-    "notes": "Hırsız + çalmak. 4 sözlük + Wiktionary. 20+ türev. дыгъужь (kurt) bileşiğinin ilk parçası."
+    "notes": "Hırsız + çalmak. 4 sözlük + Wiktionary. 20+ türev. дыгъужь (kurt) bileşiğinin ilk parçası.",
+    "wordFamily": {
+      "id": "WF-DYGHU",
+      "lexemeIds": [],
+      "conceptIds": [],
+      "morphemeIds": [],
+      "productivity": {
+        "totalLexemes": 0,
+        "corpusFrequency": 0
+      },
+      "notes": "Bos aile - sonra doldurulacak"
+    }
   },
   {
     "id": "R-ZHY",
@@ -1139,7 +1642,18 @@
       }
     ],
     "etymology": "[жь] + -ы",
-    "notes": "Eski + yaşlı + rüzgar + hava + erken. 18 sözlük + Wiktionary. 25+ türev. дыгъужь (kurt) bileşiğinin ikinci parçası."
+    "notes": "Eski + yaşlı + rüzgar + hava + erken. 18 sözlük + Wiktionary. 25+ türev. дыгъужь (kurt) bileşiğinin ikinci parçası.",
+    "wordFamily": {
+      "id": "WF-ZHY",
+      "lexemeIds": [],
+      "conceptIds": [],
+      "morphemeIds": [],
+      "productivity": {
+        "totalLexemes": 0,
+        "corpusFrequency": 0
+      },
+      "notes": "Bos aile - sonra doldurulacak"
+    }
   },
   {
     "id": "R-VY",
@@ -1185,7 +1699,18 @@
       }
     ],
     "etymology": "[в] + -ы",
-    "notes": "Öküz + sürmek (fiil). 9 sözlük + Wiktionary. Polisemik."
+    "notes": "Öküz + sürmek (fiil). 9 sözlük + Wiktionary. Polisemik.",
+    "wordFamily": {
+      "id": "WF-VY",
+      "lexemeIds": [],
+      "conceptIds": [],
+      "morphemeIds": [],
+      "productivity": {
+        "totalLexemes": 0,
+        "corpusFrequency": 0
+      },
+      "notes": "Bos aile - sonra doldurulacak"
+    }
   },
   {
     "id": "R-KHY",
@@ -1234,7 +1759,18 @@
       }
     ],
     "etymology": "[х] + -ы",
-    "notes": "Deniz, okyanus. 12 sözlük + Wiktionary. хыкъа (yunus) bileşiğinin ilk parçası."
+    "notes": "Deniz, okyanus. 12 sözlük + Wiktionary. хыкъа (yunus) bileşiğinin ilk parçası.",
+    "wordFamily": {
+      "id": "WF-KHY",
+      "lexemeIds": [],
+      "conceptIds": [],
+      "morphemeIds": [],
+      "productivity": {
+        "totalLexemes": 0,
+        "corpusFrequency": 0
+      },
+      "notes": "Bos aile - sonra doldurulacak"
+    }
   },
   {
     "id": "R-KHY2",
@@ -1275,7 +1811,18 @@
       }
     ],
     "etymology": "[х] + -ы",
-    "notes": "Altı (6). 10 sözlük + Wiktionary. Homonym: хы (deniz) ile aynı yazılış."
+    "notes": "Altı (6). 10 sözlük + Wiktionary. Homonym: хы (deniz) ile aynı yazılış.",
+    "wordFamily": {
+      "id": "WF-KHY2",
+      "lexemeIds": [],
+      "conceptIds": [],
+      "morphemeIds": [],
+      "productivity": {
+        "totalLexemes": 0,
+        "corpusFrequency": 0
+      },
+      "notes": "Bos aile - sonra doldurulacak"
+    }
   },
   {
     "id": "R-KKHUHE",
@@ -1323,7 +1870,18 @@
       }
     ],
     "etymology": "[кхъу] + -э",
-    "notes": "Domuz. Adigece: къо. Kabardeyce: кхъуэ. 5 sözlük + Wiktionary. хыкхъуэ (yunus) bileşiğinin ikinci parçası."
+    "notes": "Domuz. Adigece: къо. Kabardeyce: кхъуэ. 5 sözlük + Wiktionary. хыкхъуэ (yunus) bileşiğinin ikinci parçası.",
+    "wordFamily": {
+      "id": "WF-KKHUHE",
+      "lexemeIds": [],
+      "conceptIds": [],
+      "morphemeIds": [],
+      "productivity": {
+        "totalLexemes": 0,
+        "corpusFrequency": 0
+      },
+      "notes": "Bos aile - sonra doldurulacak"
+    }
   },
   {
     "id": "R-FO",
@@ -1373,7 +1931,18 @@
       }
     ],
     "etymology": "[фо]",
-    "notes": "Bal. 12 sözlük + Wiktionary. фошыгъу (şeker) bileşiğinin ilk parçası."
+    "notes": "Bal. 12 sözlük + Wiktionary. фошыгъу (şeker) bileşiğinin ilk parçası.",
+    "wordFamily": {
+      "id": "WF-FO",
+      "lexemeIds": [],
+      "conceptIds": [],
+      "morphemeIds": [],
+      "productivity": {
+        "totalLexemes": 0,
+        "corpusFrequency": 0
+      },
+      "notes": "Bos aile - sonra doldurulacak"
+    }
   },
   {
     "id": "R-MAF1E",
@@ -1423,7 +1992,29 @@
       }
     ],
     "etymology": "[мафӀ] + -э",
-    "notes": "Ateş. Adigece: машӀу. Kabardeyce: мафӀэ. 9 sözlük + Wiktionary."
+    "notes": "Ateş. Adigece: машӀу. Kabardeyce: мафӀэ. 9 sözlük + Wiktionary.",
+    "wordFamily": {
+      "id": "WF-MAF1E",
+      "lexemeIds": [
+        "L-MAF1E",
+        "L-MAF1ASHE",
+        "L-MAF1EGU",
+        "L-MAF1ESHHUE",
+        "L-MAF1EC1YQ1U"
+      ],
+      "conceptIds": [
+        "TRAIN"
+      ],
+      "morphemeIds": [
+        "M-SHXUE",
+        "M-C1YQ1U"
+      ],
+      "productivity": {
+        "totalLexemes": 5,
+        "corpusFrequency": 855
+      },
+      "notes": "Ates ailesi. мафӀэ, мафӀащэ, мафӀэгу, мафӀэшхуэ (yangin), мафӀэцӀыкӀу (kivilcim)."
+    }
   },
   {
     "id": "R-PSE",
@@ -1452,7 +2043,37 @@
       "adyFreq": 2009,
       "kbdFreq": 3394
     },
-    "notes": "Ruh/can koku. R-PSY (su) ile fonetik-semantik iliskili ama AYRI kok."
+    "notes": "Ruh/can koku. R-PSY (su) ile fonetik-semantik iliskili ama AYRI kok.",
+    "wordFamily": {
+      "id": "WF-PSE",
+      "lexemeIds": [
+        "L-PSEGHU"
+      ],
+      "conceptIds": [
+        "LIFE",
+        "LIFELESS",
+        "LIFE_PARTNER",
+        "LIVE",
+        "LIVING_BEING",
+        "PEACEFUL",
+        "RELIEF",
+        "RESILIENT",
+        "REST",
+        "RESTING_PLACE",
+        "SOUL",
+        "SUITOR",
+        "TERRIFYING",
+        "VACATION"
+      ],
+      "morphemeIds": [
+        "M-GHU"
+      ],
+      "productivity": {
+        "totalLexemes": 13,
+        "corpusFrequency": 5403
+      },
+      "notes": "Ruh/can ailesi. псэгъу (hayat arkadasi) dahil. R-PSY ailesinden AYRI."
+    }
   },
   {
     "id": "R-BLE",
@@ -1478,7 +2099,23 @@
       "adyFreq": 404,
       "kbdFreq": 688
     },
-    "notes": "Yilan koku. псыблэ (su yilani) bilesiginde kullanilir."
+    "notes": "Yilan koku. псыблэ (su yilani) bilesiginde kullanilir.",
+    "wordFamily": {
+      "id": "WF-BLE",
+      "lexemeIds": [
+        "L-BLE",
+        "L-PSYBLE"
+      ],
+      "conceptIds": [
+        "SNAKE"
+      ],
+      "morphemeIds": [],
+      "productivity": {
+        "totalLexemes": 2,
+        "corpusFrequency": 1092
+      },
+      "notes": "Yilan ailesi. psyble (su yilani) dahil."
+    }
   },
   {
     "id": "R-DZE",
@@ -1504,7 +2141,18 @@
       "adyFreq": 506,
       "kbdFreq": 795
     },
-    "notes": "Ordu koku. Adigece ve Kabardeyce ayni."
+    "notes": "Ordu koku. Adigece ve Kabardeyce ayni.",
+    "wordFamily": {
+      "id": "WF-DZE",
+      "lexemeIds": [],
+      "conceptIds": [],
+      "morphemeIds": [],
+      "productivity": {
+        "totalLexemes": 0,
+        "corpusFrequency": 0
+      },
+      "notes": "Bos aile - sonra doldurulacak"
+    }
   },
   {
     "id": "R-UES",
@@ -1530,7 +2178,23 @@
       "adyFreq": 0,
       "kbdFreq": 511
     },
-    "notes": "Kar koku. уэсэпс (cig) bilesiginde kullanilir."
+    "notes": "Kar koku. уэсэпс (cig) bilesiginde kullanilir.",
+    "wordFamily": {
+      "id": "WF-UES",
+      "lexemeIds": [
+        "L-UES",
+        "L-UESEPS"
+      ],
+      "conceptIds": [
+        "SNOW"
+      ],
+      "morphemeIds": [],
+      "productivity": {
+        "totalLexemes": 2,
+        "corpusFrequency": 511
+      },
+      "notes": "Kar ailesi. ueseps (cig) dahil."
+    }
   },
   {
     "id": "R-K1UY",
@@ -1556,7 +2220,23 @@
       "adyFreq": 0,
       "kbdFreq": 122
     },
-    "notes": "Kuyu koku. псыкъуий (kuyu) bilesiginde kullanilir."
+    "notes": "Kuyu koku. псыкъуий (kuyu) bilesiginde kullanilir.",
+    "wordFamily": {
+      "id": "WF-K1UY",
+      "lexemeIds": [
+        "L-K1UY",
+        "L-PSYK1UY"
+      ],
+      "conceptIds": [
+        "WELL"
+      ],
+      "morphemeIds": [],
+      "productivity": {
+        "totalLexemes": 2,
+        "corpusFrequency": 122
+      },
+      "notes": "Kuyu ailesi. psyk1uy (kuyu) dahil."
+    }
   },
   {
     "id": "R-BABYSHCH",
@@ -1581,7 +2261,23 @@
       "adyFreq": 0,
       "kbdFreq": 69
     },
-    "notes": "Ordek koku. псыбабыщ (ordek) bilesiginde kullanilir."
+    "notes": "Ordek koku. псыбабыщ (ordek) bilesiginde kullanilir.",
+    "wordFamily": {
+      "id": "WF-BABYSHCH",
+      "lexemeIds": [
+        "L-BABYSHCH",
+        "L-PSYBABYSHCH"
+      ],
+      "conceptIds": [
+        "DUCK"
+      ],
+      "morphemeIds": [],
+      "productivity": {
+        "totalLexemes": 2,
+        "corpusFrequency": 69
+      },
+      "notes": "Ordek ailesi. psybabyshch (ordek) dahil."
+    }
   },
   {
     "id": "R-BZU",
@@ -1607,7 +2303,23 @@
       "adyFreq": 1,
       "kbdFreq": 267
     },
-    "notes": "Kus koku. псыбзу (su kusu) bilesiginde kullanilir."
+    "notes": "Kus koku. псыбзу (su kusu) bilesiginde kullanilir.",
+    "wordFamily": {
+      "id": "WF-BZU",
+      "lexemeIds": [
+        "L-BZU",
+        "L-PSYBZU"
+      ],
+      "conceptIds": [
+        "BIRD"
+      ],
+      "morphemeIds": [],
+      "productivity": {
+        "totalLexemes": 2,
+        "corpusFrequency": 268
+      },
+      "notes": "Kus ailesi. psybzu (su kusu) dahil."
+    }
   },
   {
     "id": "R-DZHED",
@@ -1632,7 +2344,23 @@
       "adyFreq": 26,
       "kbdFreq": 568
     },
-    "notes": "Tavuk koku. псыджэд (su tavugu) bilesiginde kullanilir."
+    "notes": "Tavuk koku. псыджэд (su tavugu) bilesiginde kullanilir.",
+    "wordFamily": {
+      "id": "WF-DZHED",
+      "lexemeIds": [
+        "L-DZHED",
+        "L-PSYDZHED"
+      ],
+      "conceptIds": [
+        "CHICKEN"
+      ],
+      "morphemeIds": [],
+      "productivity": {
+        "totalLexemes": 2,
+        "corpusFrequency": 594
+      },
+      "notes": "Tavuk ailesi. psydzhed (su tavugu) dahil."
+    }
   },
   {
     "id": "R-SHXUE",
@@ -1658,7 +2386,43 @@
       "adyFreq": 0,
       "kbdFreq": 104
     },
-    "notes": "Buyukluk koku."
+    "notes": "Buyukluk koku.",
+    "wordFamily": {
+      "id": "WF-SHXUE",
+      "lexemeIds": [
+        "L-SHXUE",
+        "L-PSYSHXUE",
+        "L-NYBZHYSHXUE",
+        "L-UNESHHUE",
+        "L-GUSHHUE",
+        "L-1UEKHUASHHUE",
+        "L-MAF1ESHHUE",
+        "L-ADESHHUE",
+        "L-ANESHHUE",
+        "L-MAKHUESHHUE"
+      ],
+      "conceptIds": [
+        "AGED",
+        "BIG",
+        "BRAVE",
+        "FIRE",
+        "FLOOD",
+        "GRANDFATHER",
+        "GRANDMOTHER",
+        "HOLIDAY",
+        "HOUSE",
+        "IMPORTANT"
+      ],
+      "morphemeIds": [
+        "M-SHXUE"
+      ],
+      "productivity": {
+        "totalLexemes": 10,
+        "corpusFrequency": 104,
+        "isSuffixFamily": true
+      },
+      "notes": "Buyutme eki ailesi (-шхуэ). Fiziksel buyukluk, yaslilik, onem, cesaret, yogunluk anlamlari katar."
+    }
   },
   {
     "id": "R-C1YQ1U",
@@ -1684,7 +2448,32 @@
       "adyFreq": 551,
       "kbdFreq": 1771
     },
-    "notes": "Kucukluk koku."
+    "notes": "Kucukluk koku.",
+    "wordFamily": {
+      "id": "WF-C1YQ1U",
+      "lexemeIds": [
+        "L-C1YQ1U",
+        "L-PSYC1YQ1U",
+        "L-UNEC1YQ1U",
+        "L-NYBZHYC1YQ1U",
+        "L-GUC1YQ1U",
+        "L-1UEKHUC1YQ1U",
+        "L-MAF1EC1YQ1U"
+      ],
+      "conceptIds": [
+        "COWARD",
+        "SMALL"
+      ],
+      "morphemeIds": [
+        "M-C1YQ1U"
+      ],
+      "productivity": {
+        "totalLexemes": 7,
+        "corpusFrequency": 2322,
+        "isSuffixFamily": true
+      },
+      "notes": "Kucultme eki ailesi (-цӀыкӀу). -шхуэ'nun zit anlamlisi."
+    }
   },
   {
     "id": "R-BDZE",
@@ -1709,7 +2498,23 @@
       "adyFreq": 0,
       "kbdFreq": 323
     },
-    "notes": "Sevruga koku. Apashev: sevryuga. Kardanov: krupnaya ryba."
+    "notes": "Sevruga koku. Apashev: sevryuga. Kardanov: krupnaya ryba.",
+    "wordFamily": {
+      "id": "WF-BDZE",
+      "lexemeIds": [
+        "L-BDZE",
+        "L-PSYBDZE"
+      ],
+      "conceptIds": [
+        "STURGEON"
+      ],
+      "morphemeIds": [],
+      "productivity": {
+        "totalLexemes": 2,
+        "corpusFrequency": 323
+      },
+      "notes": "Sevruga ailesi. псыбдзэ (su sevrugasi) dahil."
+    }
   },
   {
     "id": "R-NYDZHE",
@@ -1735,7 +2540,22 @@
       "adyFreq": 0,
       "kbdFreq": 7
     },
-    "notes": "Taskin yatagi koku."
+    "notes": "Taskin yatagi koku.",
+    "wordFamily": {
+      "id": "WF-NYDZHE",
+      "lexemeIds": [
+        "L-NYDZHE"
+      ],
+      "conceptIds": [
+        "FLOODPLAIN"
+      ],
+      "morphemeIds": [],
+      "productivity": {
+        "totalLexemes": 1,
+        "corpusFrequency": 7
+      },
+      "notes": "Taskin yatagi ailesi."
+    }
   },
   {
     "id": "R-KUE",
@@ -1761,7 +2581,31 @@
       "adyFreq": 0,
       "kbdFreq": 3144
     },
-    "notes": "Vadi/dere koku."
+    "notes": "Vadi/dere koku.",
+    "wordFamily": {
+      "id": "WF-KUE",
+      "lexemeIds": [
+        "L-KUE",
+        "L-KUEPSE"
+      ],
+      "conceptIds": [
+        "ACUTE_ANGLE",
+        "CORNER",
+        "EDGE",
+        "HEXAGON",
+        "OBTUSE_ANGLE",
+        "PENTAGON",
+        "RIGHT_ANGLE",
+        "VALLEY",
+        "VEIN"
+      ],
+      "morphemeIds": [],
+      "productivity": {
+        "totalLexemes": 2,
+        "corpusFrequency": 3144
+      },
+      "notes": "Vadi/dere ailesi. къуэпс (damar) dahil."
+    }
   },
   {
     "id": "R-KKHUXY",
@@ -1788,7 +2632,18 @@
       "adyFreq": 257,
       "kbdFreq": 484
     },
-    "notes": "Gemi koku. Adigece: къухьэ. Kabardeyce: кхъухь. 11 sozluk kaynagi."
+    "notes": "Gemi koku. Adigece: къухьэ. Kabardeyce: кхъухь. 11 sozluk kaynagi.",
+    "wordFamily": {
+      "id": "WF-KKHUXY",
+      "lexemeIds": [],
+      "conceptIds": [],
+      "morphemeIds": [],
+      "productivity": {
+        "totalLexemes": 0,
+        "corpusFrequency": 0
+      },
+      "notes": "Bos aile - sonra doldurulacak"
+    }
   },
   {
     "id": "R-K1UE",
@@ -1814,7 +2669,32 @@
       "adyFreq": 1118,
       "kbdFreq": 3144
     },
-    "notes": "Ogul koku. Adigece: къо. Homonym: къуэ (vadi). Korpus: 16385."
+    "notes": "Ogul koku. Adigece: къо. Homonym: къуэ (vadi). Korpus: 16385.",
+    "wordFamily": {
+      "id": "WF-K1UE",
+      "lexemeIds": [
+        "L-K1UE",
+        "L-YK1UE",
+        "L-SYK1UE",
+        "L-K1UIT1U",
+        "L-K1UIBLY"
+      ],
+      "conceptIds": [
+        "COME",
+        "GO",
+        "HIS_SON",
+        "MY_SON",
+        "RETURN",
+        "SEVEN_SONS",
+        "TWO_SONS"
+      ],
+      "morphemeIds": [],
+      "productivity": {
+        "totalLexemes": 5,
+        "corpusFrequency": 4262
+      },
+      "notes": "Ogul ailesi. Adigece: къо. Homonym: къуэ (vadi). Korpus: 16385."
+    }
   },
   {
     "id": "R-KHUABZH",
@@ -1841,7 +2721,22 @@
       "adyFreq": 0,
       "kbdFreq": 556
     },
-    "notes": "Pekistirme koku. хуабжьу (zarf) = cok, asiri, hizli. 10 sozluk."
+    "notes": "Pekistirme koku. хуабжьу (zarf) = cok, asiri, hizli. 10 sozluk.",
+    "wordFamily": {
+      "id": "WF-KHUABZH",
+      "lexemeIds": [
+        "L-KHUABZHU"
+      ],
+      "conceptIds": [
+        "VERY"
+      ],
+      "morphemeIds": [],
+      "productivity": {
+        "totalLexemes": 1,
+        "corpusFrequency": 556
+      },
+      "notes": "Pekistirme ailesi. хуабжьу (cok) dahil. 10 sozluk."
+    }
   },
   {
     "id": "R-KUEREDERE",
@@ -1866,7 +2761,18 @@
       "adyFreq": 0,
       "kbdFreq": 2
     },
-    "notes": "Ardic koku. Apashev (2008), Kokov (2008), Sherdjes Aliy (1994)."
+    "notes": "Ardic koku. Apashev (2008), Kokov (2008), Sherdjes Aliy (1994).",
+    "wordFamily": {
+      "id": "WF-KUEREDERE",
+      "lexemeIds": [],
+      "conceptIds": [],
+      "morphemeIds": [],
+      "productivity": {
+        "totalLexemes": 0,
+        "corpusFrequency": 0
+      },
+      "notes": "Bos aile - sonra doldurulacak"
+    }
   },
   {
     "id": "R-K1UASH",
@@ -1891,7 +2797,26 @@
       "adyFreq": 102,
       "kbdFreq": 864
     },
-    "notes": "Kardes koku. Adigece: къош. Korpus: 389."
+    "notes": "Kardes koku. Adigece: къош. Korpus: 389.",
+    "wordFamily": {
+      "id": "WF-K1UASH",
+      "lexemeIds": [
+        "L-K1UASH",
+        "L-K1UESHYGHE",
+        "L-ADEKUESHH",
+        "L-ANEKUESHH"
+      ],
+      "conceptIds": [
+        "BROTHER",
+        "BROTHERHOOD"
+      ],
+      "morphemeIds": [],
+      "productivity": {
+        "totalLexemes": 4,
+        "corpusFrequency": 966
+      },
+      "notes": "Erkek kardes ailesi. къуэш, къуэшыгъэ, адэ къуэш, анэ къуэш."
+    }
   },
   {
     "id": "R-NYBZHY",
@@ -1947,7 +2872,24 @@
         "meaning": "arkadas, akran"
       }
     ],
-    "notes": "Yas, omur koku. Homonym: ныбжь (yas) != ныбжь (golge). 18 sozluk kaynagi."
+    "notes": "Yas, omur koku. Homonym: ныбжь (yas) != ныбжь (golge). 18 sozluk kaynagi.",
+    "wordFamily": {
+      "id": "WF-NYBZHY",
+      "lexemeIds": [
+        "L-NYBZHYSHXUE",
+        "L-NYBZHYC1YQ1U"
+      ],
+      "conceptIds": [],
+      "morphemeIds": [
+        "M-SHXUE",
+        "M-C1YQ1U"
+      ],
+      "productivity": {
+        "totalLexemes": 2,
+        "corpusFrequency": 1525
+      },
+      "notes": "Yas/omur ailesi. ныбжьышхуэ (yasli) ve ныбжьыцӀыкӀу (genc)."
+    }
   },
   {
     "id": "R-ADE",
@@ -1987,7 +2929,28 @@
         "meaning": "yash baba"
       }
     ],
-    "notes": "Baba koku. -шхуэ ile dede, -цӀыкӀу ile amca olur."
+    "notes": "Baba koku. -шхуэ ile dede, -цӀыкӀу ile amca olur.",
+    "wordFamily": {
+      "id": "WF-ADE",
+      "lexemeIds": [
+        "L-ADESHHUE",
+        "L-ADEKUESHH",
+        "L-ADESHYPHUE"
+      ],
+      "conceptIds": [
+        "AUNT_PATERNAL",
+        "UNCLE",
+        "UNCLE_PATERNAL"
+      ],
+      "morphemeIds": [
+        "M-SHXUE"
+      ],
+      "productivity": {
+        "totalLexemes": 3,
+        "corpusFrequency": 2920
+      },
+      "notes": "Baba ailesi. адэшхуэ (dede), адэ къуэш (amca), адэшыпхъу (hala)."
+    }
   },
   {
     "id": "R-ANE",
@@ -2027,7 +2990,27 @@
         "meaning": "nine (sevgi hitabi)"
       }
     ],
-    "notes": "Anne koku. -шхуэ ile buyukanne, -цӀыкӀу ile teyze/hala olur."
+    "notes": "Anne koku. -шхуэ ile buyukanne, -цӀыкӀу ile teyze/hala olur.",
+    "wordFamily": {
+      "id": "WF-ANE",
+      "lexemeIds": [
+        "L-ANESHHUE",
+        "L-ANEKUESHH",
+        "L-ANESHYPHUE"
+      ],
+      "conceptIds": [
+        "AUNT_MATERNAL",
+        "UNCLE_MATERNAL"
+      ],
+      "morphemeIds": [
+        "M-SHXUE"
+      ],
+      "productivity": {
+        "totalLexemes": 3,
+        "corpusFrequency": 1209
+      },
+      "notes": "Anne ailesi. анэшхуэ (buyukanne), анэ къуэш (dayi), анэшыпхъу (teyze)."
+    }
   },
   {
     "id": "R-1UEKHU",
@@ -2064,7 +3047,24 @@
         "meaning": "onemsiz is"
       }
     ],
-    "notes": "Is, mesele koku. -шхуэ ile onemli, -цӀыкӀу ile onemsiz olur."
+    "notes": "Is, mesele koku. -шхуэ ile onemli, -цӀыкӀу ile onemsiz olur.",
+    "wordFamily": {
+      "id": "WF-1UEKHU",
+      "lexemeIds": [
+        "L-1UEKHUASHHUE",
+        "L-1UEKHUC1YQ1U"
+      ],
+      "conceptIds": [],
+      "morphemeIds": [
+        "M-SHXUE",
+        "M-C1YQ1U"
+      ],
+      "productivity": {
+        "totalLexemes": 2,
+        "corpusFrequency": 5292
+      },
+      "notes": "Is/mesele ailesi. Ӏуэхушхуэ (onemli is), ӀуэхуцӀыкӀу (onemsiz is)."
+    }
   },
   {
     "id": "R-MAKHUE",
@@ -2099,7 +3099,22 @@
         "meaning": "siradan gun"
       }
     ],
-    "notes": "Gun koku. -шхуэ ile bayram olur."
+    "notes": "Gun koku. -шхуэ ile bayram olur.",
+    "wordFamily": {
+      "id": "WF-MAKHUE",
+      "lexemeIds": [
+        "L-MAKHUESHHUE"
+      ],
+      "conceptIds": [],
+      "morphemeIds": [
+        "M-SHXUE"
+      ],
+      "productivity": {
+        "totalLexemes": 1,
+        "corpusFrequency": 3783
+      },
+      "notes": "Gun ailesi. махуэшхуэ (bayram - buyuk gun)."
+    }
   },
   {
     "id": "R-SHYPHUE",
@@ -2134,7 +3149,25 @@
         "meaning": "teyze (anne kiz kardesi)"
       }
     ],
-    "notes": "Kiz kardes koku. Akrabalik terimlerinde kullanilir: адэ/анэ + шыпхъу. Kaynak: Адыгэ-урыс псалъалъэ (2008)."
+    "notes": "Kiz kardes koku. Akrabalik terimlerinde kullanilir: адэ/анэ + шыпхъу. Kaynak: Адыгэ-урыс псалъалъэ (2008).",
+    "wordFamily": {
+      "id": "WF-SHYPHUE",
+      "lexemeIds": [
+        "L-SHYPHUE",
+        "L-ADESHYPHUE",
+        "L-ANESHYPHUE"
+      ],
+      "conceptIds": [
+        "ELDER_SISTER",
+        "SISTER"
+      ],
+      "morphemeIds": [],
+      "productivity": {
+        "totalLexemes": 3,
+        "corpusFrequency": 222
+      },
+      "notes": "Kiz kardes ailesi. шыпхъу, адэшыпхъу (hala), анэшыпхъу (teyze)."
+    }
   },
   {
     "id": "R-TETE",
@@ -2169,7 +3202,22 @@
         "meaning": "buyuk dede"
       }
     ],
-    "notes": "Dede koku (ADY agirlikli). Kaynak: Huvaj (2007), Ацумыжъ (2013)."
+    "notes": "Dede koku (ADY agirlikli). Kaynak: Huvaj (2007), Ацумыжъ (2013).",
+    "wordFamily": {
+      "id": "WF-TETE",
+      "lexemeIds": [
+        "L-TETAZH"
+      ],
+      "conceptIds": [
+        "GRANDFATHER"
+      ],
+      "morphemeIds": [],
+      "productivity": {
+        "totalLexemes": 1,
+        "corpusFrequency": 65
+      },
+      "notes": "Dede ailesi (ADY). тэтэжъ."
+    }
   },
   {
     "id": "R-DADE",
@@ -2200,19 +3248,78 @@
         "meaning": "buyuk dede (KBD)"
       }
     ],
-    "notes": "Dede koku (ADY Abzeh + KBD). Kaynak: Huvaj (2007), Wiktionary (KBD), Gish."
+    "notes": "Dede koku (ADY Abzeh + KBD). Kaynak: Huvaj (2007), Wiktionary (KBD), Gish.",
+    "wordFamily": {
+      "id": "WF-DADE",
+      "lexemeIds": [
+        "L-DADESHHUE"
+      ],
+      "conceptIds": [
+        "GRANDFATHER"
+      ],
+      "morphemeIds": [
+        "M-SHXUE"
+      ],
+      "productivity": {
+        "totalLexemes": 1,
+        "corpusFrequency": 99
+      },
+      "notes": "Dede ailesi (KBD/Abzeh). дадэшхуэ (buyuk dede)."
+    }
   },
   {
     "id": "R-KHUMEN",
     "form": "хъум",
     "meaning": "korumak",
-    "notes": "C-9.3 yeni kok"
+    "notes": "C-9.3 yeni kok",
+    "wordFamily": {
+      "id": "WF-KHUMEN",
+      "lexemeIds": [
+        "L-KHUMEN",
+        "L-KUEUKHUMEN",
+        "L-KUEKHUMEN",
+        "L-KKHEKHUME"
+      ],
+      "conceptIds": [
+        "DEFEND",
+        "GRAVEKEEPER",
+        "PROTECT"
+      ],
+      "morphemeIds": [],
+      "productivity": {
+        "totalLexemes": 4,
+        "corpusFrequency": 130,
+        "mostFrequentLexemeId": "L-KHUMEN"
+      },
+      "notes": "C-9.3 yeni aile. Korumak kok ailesi. Wiktionary kaniti."
+    }
   },
   {
     "id": "R-SHQE",
     "form": "шъыпкъ",
     "meaning": "dogru/gercek",
-    "notes": "C-9.3 yeni kok"
+    "notes": "C-9.3 yeni kok",
+    "wordFamily": {
+      "id": "WF-SHQE",
+      "lexemeIds": [
+        "L-SHQE",
+        "L-SHQAGHE",
+        "L-SHQEU",
+        "L-SHQEM"
+      ],
+      "conceptIds": [
+        "TRUE",
+        "TRULY",
+        "TRUTH"
+      ],
+      "morphemeIds": [],
+      "productivity": {
+        "totalLexemes": 4,
+        "corpusFrequency": 2130,
+        "mostFrequentLexemeId": "L-SHQE"
+      },
+      "notes": "C-9.3 yeni aile. Dogru/gercek kok ailesi. Yuksek frekans."
+    }
   },
   {
     "id": "R-MEZ",
@@ -2229,7 +3336,30 @@
       "adyghe": "мэз",
       "kabardian": "мэз"
     },
-    "notes": "C-11.3: orman koku. Korpus: 604."
+    "notes": "C-11.3: orman koku. Korpus: 604.",
+    "wordFamily": {
+      "id": "WF-MEZ",
+      "lexemeIds": [
+        "L-MEZ",
+        "L-MEZYM",
+        "L-MEZXER",
+        "L-MEZY",
+        "L-MEZKOGHUM",
+        "L-MEZLHAPE"
+      ],
+      "conceptIds": [
+        "FOREST",
+        "FOREST_EDGE",
+        "FOREST_VALLEY"
+      ],
+      "morphemeIds": [],
+      "productivity": {
+        "totalLexemes": 6,
+        "corpusFrequency": 604,
+        "mostFrequentLexemeId": "L-MEZ"
+      },
+      "notes": "C-11.3 yeni aile. Orman kok ailesi. Korpus: 604."
+    }
   },
   {
     "id": "R-LEZH",
@@ -2246,7 +3376,28 @@
       "adyghe": "лэжь",
       "kabardian": "лэжь"
     },
-    "notes": "C-11.3: calismak koku. Korpus: 559."
+    "notes": "C-11.3: calismak koku. Korpus: 559.",
+    "wordFamily": {
+      "id": "WF-LEZH",
+      "lexemeIds": [
+        "L-LEZH",
+        "L-LEZHEN",
+        "L-LEZHYGHE",
+        "L-LEZHENYM",
+        "L-LEZHAK1UE"
+      ],
+      "conceptIds": [
+        "WORK",
+        "WORKER"
+      ],
+      "morphemeIds": [],
+      "productivity": {
+        "totalLexemes": 5,
+        "corpusFrequency": 6315,
+        "mostFrequentLexemeId": "L-LEZHYGHE"
+      },
+      "notes": "C-11.3: Calismak kok ailesi. Korpus: 6315. Homonim: WF-LAZHE (kusur) ile karistirilmamali."
+    }
   },
   {
     "id": "R-LAZH",
@@ -2265,7 +3416,29 @@
       "adyghe": "лажь",
       "kabardian": "лажь"
     },
-    "notes": "C-11.3: kusur koku. Korpus: 1229. Homonim: R-LEZH (calismak)."
+    "notes": "C-11.3: kusur koku. Korpus: 1229. Homonim: R-LEZH (calismak).",
+    "wordFamily": {
+      "id": "WF-LAZHE",
+      "lexemeIds": [
+        "L-LAZHE-N",
+        "L-LAZHENSHE",
+        "L-LAZHEREY",
+        "L-LAZHESHKHUE"
+      ],
+      "conceptIds": [
+        "DEFECT",
+        "DILIGENT",
+        "DISASTER",
+        "INNOCENT"
+      ],
+      "morphemeIds": [],
+      "productivity": {
+        "totalLexemes": 4,
+        "corpusFrequency": 1229,
+        "mostFrequentLexemeId": "L-LAZHE-N"
+      },
+      "notes": "C-11.3 yeni aile. Kusur/keder/suc. 11 deyim. Homonim: WF-LEZH (calismak) ile karistirilmamali."
+    }
   },
   {
     "id": "R-SHCH",
@@ -2286,7 +3459,18 @@
       "lemmaCount": 10,
       "corpusFrequency": 64367
     },
-    "notes": "C-11.4: uc koku."
+    "notes": "C-11.4: uc koku.",
+    "wordFamily": {
+      "id": "WF-SHCH",
+      "lexemeIds": [],
+      "conceptIds": [],
+      "morphemeIds": [],
+      "productivity": {
+        "totalLexemes": 0,
+        "corpusFrequency": 0
+      },
+      "notes": "Bos aile - sonra doldurulacak"
+    }
   },
   {
     "id": "R-GUASHE",
@@ -2308,6 +3492,99 @@
       "lemmaCount": 10,
       "corpusFrequency": 568
     },
-    "notes": "C-11.4: hanim koku."
+    "notes": "C-11.4: hanim koku.",
+    "wordFamily": {
+      "id": "WF-GUASHE",
+      "lexemeIds": [],
+      "conceptIds": [],
+      "morphemeIds": [],
+      "productivity": {
+        "totalLexemes": 0,
+        "corpusFrequency": 0
+      },
+      "notes": "Bos aile - sonra doldurulacak"
+    }
+  },
+  {
+    "id": "R-ZE",
+    "form": "?",
+    "ipa": "",
+    "primaryMeaning": "C-10.3 yeni aile. Agiz/konusma kok ailesi.",
+    "secondaryMeanings": [],
+    "semanticDomains": [],
+    "dialectVariants": {},
+    "wordFamily": {
+      "id": "WF-ZE",
+      "lexemeIds": [
+        "L-ZE"
+      ],
+      "conceptIds": [],
+      "morphemeIds": [],
+      "productivity": {
+        "totalLexemes": 1,
+        "corpusFrequency": 0,
+        "mostFrequentLexemeId": "L-ZE"
+      },
+      "notes": "C-10.3 yeni aile. Agiz/konusma kok ailesi."
+    },
+    "notes": "Minimal root - WF-ZE icin olusturuldu"
+  },
+  {
+    "id": "R-TKHE",
+    "form": "?",
+    "ipa": "",
+    "primaryMeaning": "C-10.3 yeni aile. Yazmak kok ailesi.",
+    "secondaryMeanings": [],
+    "semanticDomains": [],
+    "dialectVariants": {},
+    "wordFamily": {
+      "id": "WF-TKHE",
+      "lexemeIds": [
+        "L-TKHE"
+      ],
+      "conceptIds": [
+        "WRITE"
+      ],
+      "morphemeIds": [],
+      "productivity": {
+        "totalLexemes": 1,
+        "corpusFrequency": 0,
+        "mostFrequentLexemeId": "L-TKHE"
+      },
+      "notes": "C-10.3 yeni aile. Yazmak kok ailesi."
+    },
+    "notes": "Minimal root - WF-TKHE icin olusturuldu"
+  },
+  {
+    "id": "R-NAPE",
+    "form": "?",
+    "ipa": "",
+    "primaryMeaning": "C-10.3 yeni aile. Yuz/vicdan kok ailesi. 19 sozluk kaynagi. 10+ turev. 15+ deyim.",
+    "secondaryMeanings": [],
+    "semanticDomains": [],
+    "dialectVariants": {},
+    "wordFamily": {
+      "id": "WF-NAPE",
+      "lexemeIds": [
+        "L-NAPE",
+        "L-NAPE1ELHESHH1",
+        "L-NAPEK1UETS1",
+        "L-NAPELHAGHU",
+        "L-NAPELHE",
+        "L-NAPENSHE",
+        "L-NAPENTEH",
+        "L-NAPENTEHYGHE"
+      ],
+      "conceptIds": [],
+      "morphemeIds": [],
+      "productivity": {
+        "totalLexemes": 8,
+        "corpusFrequency": 0,
+        "mostFrequentLexemeId": "L-NAPE",
+        "dictionarySources": 19
+      },
+      "notes": "C-10.3 yeni aile. Yuz/vicdan kok ailesi. 19 sozluk kaynagi. 10+ turev. 15+ deyim."
+    },
+    "notes": "Minimal root - WF-NAPE icin olusturuldu"
   }
 ]
