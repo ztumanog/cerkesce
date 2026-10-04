@@ -1,0 +1,396 @@
+{
+  "metadata": {
+    "title": "Kabardey-Çerkes Dili Temel Kökler ve Somatik Birleşik Sözcükler Veritabanı",
+    "description": "Kabardey-Çerkes dilindeki ~1.500 birincil monosyllabic somut kökü, somatik kelime ailelerini ve bunlardan türeyen birleşik kelimelerin morfolojik çözümlenmesini barındıran veri tabanı.",
+    "version": "1.0",
+    "language": "tr",
+    "total_categories": 5
+  },
+  "root_categories": [
+    {
+      "category_id": "CAT01",
+      "category_name": "Somatik Kökler (Anatomik Organ Çekirdekleri)",
+      "description": "Dildeki duygu, zihin, algı ve sosyal ilişkilerin merkezinde yer alan insan anatomisi kökleri.",
+      "primary_roots": [
+        {
+          "root": "гу",
+          "phonetic": "gwə",
+          "meaning_primary": "kalp",
+          "meaning_secondary": "merkez, zihin, ruh",
+          "type": "somatic_core",
+          "compounds": [
+            {
+              "word": "бзэгу",
+              "phonetic": "bza-gwə",
+              "meaning": "dil (konuşma organı)",
+              "morphemes": [
+                "бзэ (dil/konuşma)",
+                "гу (kalp/merkez)"
+              ],
+              "literal_translation": "konuşma kalbi"
+            },
+            {
+              "word": "мафIэгу",
+              "phonetic": "māf'a-gwə",
+              "meaning": "tren",
+              "morphemes": [
+                "мафIэ (ateş)",
+                "гу (araba/merkez)"
+              ],
+              "literal_translation": "ateş arabası / ateş kalbi"
+            },
+            {
+              "word": "губзыгъэ",
+              "phonetic": "gwə-bzəġa",
+              "meaning": "akıllı, bilge",
+              "morphemes": [
+                "гу (kalp/zihin)",
+                "бзыгъэ (keskin/kesilmiş)"
+              ],
+              "literal_translation": "keskin zihinli"
+            },
+            {
+              "word": "гуфIэ",
+              "phonetic": "gwə-f'ə",
+              "meaning": "sevinç, neşe",
+              "morphemes": [
+                "гу (kalp)",
+                "фIы (iyi)"
+              ],
+              "literal_translation": "kalp iyiliği"
+            },
+            {
+              "word": "гужьей",
+              "phonetic": "gwə-źey",
+              "meaning": "panik, anksiyete",
+              "morphemes": [
+                "гу (kalp)",
+                "жьей (dar/küçük)"
+              ],
+              "literal_translation": "kalp daralması"
+            },
+            {
+              "word": "гумыгъуэ",
+              "phonetic": "gwə-məġwa",
+              "meaning": "şefkatli, merhametli",
+              "morphemes": [
+                "гу (kalp)",
+                "мыгъуэ (bezginlik vermeyen)"
+              ],
+              "literal_translation": "kalbi yumuşak"
+            },
+            {
+              "word": "губжь",
+              "phonetic": "gwə-bź",
+              "meaning": "öfke, hiddet",
+              "morphemes": [
+                "гу (kalp)",
+                "бжьы (kaynayan/yakıcı)"
+              ],
+              "literal_translation": "kalp kaynaması"
+            },
+            {
+              "word": "гугъэ",
+              "phonetic": "gwə-ġa",
+              "meaning": "umut, beklenti",
+              "morphemes": [
+                "гу (kalp)",
+                "гъэ (tutma/ettirgenlik)"
+              ],
+              "literal_translation": "kalpte tutulan"
+            },
+            {
+              "word": "гуэтыныгъэ",
+              "phonetic": "gwa-tənəġa",
+              "meaning": "sadakat, bağlılık",
+              "morphemes": [
+                "гу (kalp)",
+                "тыныгъэ (verme)"
+              ],
+              "literal_translation": "kalbini verme"
+            }
+          ]
+        },
+        {
+          "root": "нэ",
+          "phonetic": "na",
+          "meaning_primary": "göz",
+          "meaning_secondary": "görüş, çehre, idrak",
+          "type": "somatic_core",
+          "compounds": [
+            {
+              "word": "наф",
+              "phonetic": "nāf",
+              "meaning": "kör, ama",
+              "morphemes": [
+                "нэ (göz)",
+                "ф (çürümüş/beyaz)"
+              ],
+              "literal_translation": "gözü çürümüş"
+            },
+            {
+              "word": "напс",
+              "phonetic": "nāps",
+              "meaning": "gözyaşı",
+              "morphemes": [
+                "нэ (göz)",
+                "пс(ы) (su)"
+              ],
+              "literal_translation": "göz suyu"
+            },
+            {
+              "word": "напIцI",
+              "phonetic": "nāp'ts'ə",
+              "meaning": "yalan, sahte",
+              "morphemes": [
+                "нэ (göz)",
+                "пIцI (aldatma)"
+              ],
+              "literal_translation": "göz kırpma / aldatma"
+            },
+            {
+              "word": "нафI",
+              "phonetic": "nāf'i",
+              "meaning": "saygınlık, iyilik",
+              "morphemes": [
+                "нэ (göz)",
+                "фIы (iyi)"
+              ],
+              "literal_translation": "göz iyiliği"
+            },
+            {
+              "word": "нэгу",
+              "phonetic": "na-gwə",
+              "meaning": "yüz, çehre",
+              "morphemes": [
+                "нэ (göz)",
+                "гу (merkez/yüzey)"
+              ],
+              "literal_translation": "göz merkezi"
+            }
+          ]
+        },
+        {
+          "root": "Iэ",
+          "phonetic": "'a",
+          "meaning_primary": "el",
+          "meaning_secondary": "beceri, eylem, alet",
+          "type": "somatic_core",
+          "compounds": [
+            {
+              "word": "Iэпэ",
+              "phonetic": "'a-pa",
+              "meaning": "parmak",
+              "morphemes": [
+                "Iэ (el)",
+                "пэ (burun/uç)"
+              ],
+              "literal_translation": "el ucu"
+            },
+            {
+              "word": "Iэгу",
+              "phonetic": "'a-gwə",
+              "meaning": "avuç içi",
+              "morphemes": [
+                "Iэ (el)",
+                "гу (merkez)"
+              ],
+              "literal_translation": "el merkezi"
+            },
+            {
+              "word": "Iэрытх",
+              "phonetic": "'a-rə-tx",
+              "meaning": "el yazması (manuscript)",
+              "morphemes": [
+                "Iэ (el)",
+                "ры (ile)",
+                "тхын (yazmak)"
+              ],
+              "literal_translation": "el ile yazılan"
+            }
+          ]
+        },
+        {
+          "root": "лъэ",
+          "phonetic": "ɬa",
+          "meaning_primary": "ayak, bacak",
+          "meaning_secondary": "taban, temel, zemin",
+          "type": "somatic_core",
+          "compounds": [
+            {
+              "word": "лъэгу",
+              "phonetic": "ɬa-gwə",
+              "meaning": "ayak tabanı",
+              "morphemes": [
+                "лъэ (ayak)",
+                "гу (merkez/taban)"
+              ],
+              "literal_translation": "ayak taban merkezi"
+            },
+            {
+              "word": "лъэпс",
+              "phonetic": "ɬa-ps",
+              "meaning": "ayakkabı bağı / kök",
+              "morphemes": [
+                "лъэ (ayak)",
+                "пс (ip/şerit)"
+              ],
+              "literal_translation": "ayak bağı"
+            },
+            {
+              "word": "лъэбакъуэ",
+              "phonetic": "ɬa-bāq'wa",
+              "meaning": "adım",
+              "morphemes": [
+                "лъэ (ayak)",
+                "бакъуэ (açılma/aralık)"
+              ],
+              "literal_translation": "ayak açılımı"
+            }
+          ]
+        },
+        {
+          "root": "щхьэ",
+          "phonetic": "śha",
+          "meaning_primary": "kafa, baş",
+          "meaning_secondary": "zirve, kontrol, zihin",
+          "type": "somatic_core",
+          "compounds": [
+            {
+              "word": "щхьэгу",
+              "phonetic": "śha-gwə",
+              "meaning": "zirve, tepe noktası",
+              "morphemes": [
+                "щхьэ (kafa)",
+                "гу (merkez)"
+              ],
+              "literal_translation": "kafa tepe noktası"
+            },
+            {
+              "word": "щхьэусыгъуэ",
+              "phonetic": "śha-wəsəġwa",
+              "meaning": "gerekçe, sebep",
+              "morphemes": [
+                "щхьэ (kafa)",
+                "усыгъуэ (düzenleme/gerekçe)"
+              ],
+              "literal_translation": "zihinsel düzenleme"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category_id": "CAT02",
+      "category_name": "Doğa ve Unsur Kökleri (Elemental Cores)",
+      "description": "Fiziksel çevreyi, kozmosu ve maddeleri tanımlayan birincil kökler.",
+      "primary_roots": [
+        {
+          "root": "псы",
+          "phonetic": "psə",
+          "meaning_primary": "su, sıvı",
+          "meaning_secondary": "canlılık, akışkanlık",
+          "type": "elemental_core",
+          "compounds": [
+            {
+              "word": "псынкIэ",
+              "phonetic": "psən-č'a",
+              "meaning": "hafif, hızlı",
+              "morphemes": [
+                "псы (su)",
+                "нкIэ (gibi akan)"
+              ],
+              "literal_translation": "su gibi hafif"
+            },
+            {
+              "word": "щIыдагъэ",
+              "phonetic": "ś'ə-dāġa",
+              "meaning": "petrol",
+              "morphemes": [
+                "щIы (toprak)",
+                "дагъэ (yağ)"
+              ],
+              "literal_translation": "toprak yağlı"
+            }
+          ]
+        },
+        {
+          "root": "мафIэ",
+          "phonetic": "māf'a",
+          "meaning_primary": "ateş",
+          "meaning_secondary": "ısı, ışık, enerji",
+          "type": "elemental_core",
+          "compounds": [
+            {
+              "word": "мафIащэ",
+              "phonetic": "māf'āśa",
+              "meaning": "kıvılcım",
+              "morphemes": [
+                "мафIэ (ateş)",
+                "щэ (ok/saçılım)"
+              ],
+              "literal_translation": "ateş oku"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category_id": "CAT03",
+      "category_name": "Sıra Dışı Metaforik Birleşikler (Non-Obvious Metaphorical Compounds)",
+      "description": "Doğadan ve gözlemden esinlenen, iki somut kökün birleşimiyle türetilmiş özel isimler.",
+      "compounds": [
+        {
+          "word": "тхьэкIумэчIыхь",
+          "phonetic": "thač'wəma-č'əħ",
+          "meaning": "tavşan",
+          "morphemes": [
+            "тхьэкIумэ (kulak)",
+            "кIыхь (uzun)"
+          ],
+          "literal_translation": "uzun kulaklı"
+        },
+        {
+          "word": "дыгъужь",
+          "phonetic": "dəġw-ź",
+          "meaning": "kurt",
+          "morphemes": [
+            "дыгъу (hırsız)",
+            "жьы (eski/yaşlı)"
+          ],
+          "literal_translation": "eski hırsız"
+        },
+        {
+          "word": "хыкъа",
+          "phonetic": "xə-qā",
+          "meaning": "yunus",
+          "morphemes": [
+            "хы (deniz)",
+            "къо/къа (domuz)"
+          ],
+          "literal_translation": "deniz domuzu"
+        },
+        {
+          "word": "фошыгъу",
+          "phonetic": "fo-šəġw",
+          "meaning": "şeker",
+          "morphemes": [
+            "фо (bal)",
+            "шыгъу (tuz)"
+          ],
+          "literal_translation": "bal tuzu"
+        },
+        {
+          "word": "мэзчэт",
+          "phonetic": "maz-čat",
+          "meaning": "sülün",
+          "morphemes": [
+            "мэз (orman)",
+            "чэт/джэд (tavuk)"
+          ],
+          "literal_translation": "orman tavuğu"
+        }
+      ]
+    }
+  ]
+}

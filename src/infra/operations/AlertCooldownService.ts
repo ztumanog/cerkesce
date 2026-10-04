@@ -45,8 +45,23 @@ export class AlertCooldownService {
     this.setCooldown(key, cooldownMs ?? this.defaultCooldownMs);
     return { allowed: true, remainingMs: 0, key };
   }
+  static getReport(): { timestamp: string; activeCooldowns: number; totalKeys: number; status: 'ok' | 'warning' | 'critical' } {
+    const now = Date.now();
+    let active = 0;
+    this.cooldowns.forEach((entry) => {
+      if (now - entry.lastAlerted < entry.cooldownMs) active++;
+    });
+    return {
+      timestamp: new Date().toISOString(),
+      activeCooldowns: active,
+      totalKeys: this.cooldowns.size,
+      status: active > 0 ? 'warning' : 'ok',
+    };
+  }
+
 
   static clear(): void {
     this.cooldowns.clear();
   }
 }
+

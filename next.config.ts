@@ -1,8 +1,9 @@
-﻿import type { NextConfig } from 'next';
+import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
   output: 'standalone',
   staticPageGenerationTimeout: 1000,
+  serverExternalPackages: ['fs', 'path'],
 
   turbopack: {
     resolveAlias: {
@@ -24,7 +25,6 @@ const nextConfig: NextConfig = {
     ];
   },
 
-  // Phase 8.2: ADR-GOV-011 - API Gateway Strategy
   async rewrites() {
     if (process.env.NODE_ENV !== 'production') {
       return [];

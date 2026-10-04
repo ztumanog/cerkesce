@@ -77,8 +77,13 @@ export class RecommendationTuningService {
       status,
     };
   }
+  static getReport(): TuningResult {
+    return this.tune();
+  }
+
 
   static clear(): void {
     this.recommendations = [];
   }
 }
+

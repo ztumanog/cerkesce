@@ -58,8 +58,13 @@ export class AlertDeduplicationService {
       status,
     };
   }
+  static getReport(): DeduplicationResult {
+    return this.deduplicate();
+  }
+
 
   static clear(): void {
     this.alerts = [];
   }
 }
+

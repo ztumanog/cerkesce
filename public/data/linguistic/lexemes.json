@@ -15316,5 +15316,114 @@
     ],
     "notes": "C-11.4: koklamak. е- + пэм + -ы + -н. Vikisozluk.",
     "corpusFrequency": 14
+  },
+  {
+    "id": "L-DEGHU",
+    "form": "дэгъу",
+    "ipa": "/dɐʁʷ/",
+    "literalMeaning": "iyi, güzel, sağlam",
+    "partOfSpeech": "adjective",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-DEGHU",
+    "corpusFrequency": 0,
+    "notes": "6 kaynak: Aig (2006), Tabanı, Enstitüsü (2011), Baş Editör (1960), Şıgaje Adam (2020), Tharkaho Yoxıyt (1991). NOT: дэгу (sağır) ile karıştırma!"
+  },
+  {
+    "id": "L-DEGHUE",
+    "form": "дэгъуэ",
+    "ipa": "/dɐʁʷɐ/",
+    "literalMeaning": "güzel, çekici, iyi",
+    "partOfSpeech": "adjective",
+    "derivation": {
+      "rootIds": [
+        "L-DEGHU"
+      ],
+      "morphemeIds": [
+        "M-E"
+      ],
+      "rule": "suffix"
+    },
+    "wordFamilyId": "WF-DEGHU",
+    "corpusFrequency": 0,
+    "notes": "дэгъу + -э. 9 kaynak."
+  },
+  {
+    "id": "L-DEGHUEZH",
+    "form": "дэгъуэжь",
+    "ipa": "/dɐʁʷɐʑ/",
+    "literalMeaning": "yakışıklı, güzel",
+    "partOfSpeech": "adjective",
+    "derivation": {
+      "rootIds": [
+        "L-DEGHU"
+      ],
+      "morphemeIds": [
+        "M-E",
+        "M-ZH"
+      ],
+      "rule": "suffix"
+    },
+    "wordFamilyId": "WF-DEGHU",
+    "corpusFrequency": 0,
+    "notes": "дэгъу + -э + жь"
+  },
+  {
+    "id": "L-DEGHUEU",
+    "form": "дэгъуэу",
+    "ipa": "/dɐʁʷɐw/",
+    "literalMeaning": "güzelce, iyi bir şekilde",
+    "partOfSpeech": "adverb",
+    "derivation": {
+      "rootIds": [
+        "L-DEGHU"
+      ],
+      "morphemeIds": [
+        "M-E",
+        "M-U"
+      ],
+      "rule": "suffix"
+    },
+    "wordFamilyId": "WF-DEGHU",
+    "corpusFrequency": 0,
+    "notes": "дэгъу + -э + -у"
+  },
+  {
+    "id": "L-DEGHUEN",
+    "form": "дэгъуэн",
+    "ipa": "/dɐʁʷɐn/",
+    "literalMeaning": "fark etmek, görmek (eksiklik)",
+    "partOfSpeech": "verb",
+    "derivation": {
+      "rootIds": [
+        "L-DEGHU"
+      ],
+      "morphemeIds": [
+        "M-E",
+        "M-N"
+      ],
+      "rule": "suffix"
+    },
+    "wordFamilyId": "WF-DEGHU",
+    "corpusFrequency": 0,
+    "notes": "дэгъу + -э + -н. Anlam: kusur görmek, fark etmek."
+  },
+  {
+    "id": "L-DEGU",
+    "form": "дэгу",
+    "ipa": "/dɐgʷ/",
+    "literalMeaning": "sağır",
+    "partOfSpeech": "adjective",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-DEGU",
+    "corpusFrequency": 0,
+    "notes": "Sağır. Kaynak: Yamisha (2018), Abaze (2005), Hasan (1991). NOT: дэгъу (iyi) ile karıştırma!"
   }
 ]
