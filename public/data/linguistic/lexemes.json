@@ -21120,7 +21120,8 @@
     "conceptId": "CRADLE",
     "partOfSpeech": "noun",
     "ipa": "/ˈgʷǝɕɐ/",
-    "notes": "Wiktionary; Apaşev (2008); Yamisha (2023); Kardanov (1957); Huvaj (2007)"
+    "notes": "Wiktionary; Apaşev (2008); Yamisha (2023); Kardanov (1957); Huvaj (2007)",
+    "corpusFrequency": 40
   },
   {
     "id": "L-P1C1",
@@ -21136,7 +21137,8 @@
     "literalMeaning": "süt",
     "wordFamilyId": "WF-SHE2",
     "conceptId": "MILK",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "corpusFrequency": 213
   },
   {
     "id": "L-KHY2",
@@ -21144,7 +21146,8 @@
     "literalMeaning": "altı (6)",
     "wordFamilyId": "WF-KHY2",
     "conceptId": "SIX",
-    "partOfSpeech": "numeral"
+    "partOfSpeech": "numeral",
+    "corpusFrequency": 325
   },
   {
     "id": "L-NYBZHY",
@@ -21152,7 +21155,8 @@
     "literalMeaning": "yaş",
     "wordFamilyId": "WF-NYBZHY",
     "conceptId": "AGE",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "corpusFrequency": 143
   },
   {
     "id": "L-1UEKHU",
@@ -21168,7 +21172,8 @@
     "literalMeaning": "uç",
     "wordFamilyId": "WF-SHCH",
     "conceptId": "POINT",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "corpusFrequency": 60
   },
   {
     "id": "L-ZE",
@@ -21176,6 +21181,142 @@
     "literalMeaning": "bir (1)",
     "wordFamilyId": "WF-ZE",
     "conceptId": "ONE",
-    "partOfSpeech": "numeral"
+    "partOfSpeech": "numeral",
+    "corpusFrequency": 617
+  },
+  {
+    "id": "L-SHEZAE",
+    "form": "шезае",
+    "literalMeaning": "ihlamur agaci",
+    "conceptId": "LINDEN",
+    "wordFamilyId": "WF-SHEZAE",
+    "partOfSpeech": "noun",
+    "notes": "Dogrulandi: sozluk kaynagi"
+  },
+  {
+    "id": "L-DEZHEY",
+    "form": "дежьей",
+    "literalMeaning": "findiklik",
+    "conceptId": "HAZEL",
+    "wordFamilyId": "WF-DEZHEY",
+    "partOfSpeech": "noun",
+    "notes": "Dogrulandi: sozluk kaynagi"
+  },
+  {
+    "id": "L-MEZQOGHUM",
+    "form": "мэзкъогъум",
+    "literalMeaning": "orman kuytusu",
+    "conceptId": "FOREST",
+    "wordFamilyId": "WF-MEZQOGHUM",
+    "partOfSpeech": "noun",
+    "notes": "Dogrulandi: sozluk kaynagi"
+  },
+  {
+    "id": "L-PSHCHYK1U",
+    "form": "пщӀыкӀу",
+    "literalMeaning": "onlu sayi eki",
+    "conceptId": "TEN",
+    "wordFamilyId": "WF-PSHCHYK1U",
+    "partOfSpeech": "noun",
+    "notes": "Dogrulandi: sozluk kaynagi"
+  },
+  {
+    "id": "L-PSHCHYK1UT1",
+    "form": "пщӀыкӀутӀ",
+    "literalMeaning": "on iki",
+    "conceptId": "TWELVE",
+    "wordFamilyId": "WF-PSHCHYK1U",
+    "partOfSpeech": "noun",
+    "notes": "Dogrulandi: sozluk kaynagi"
+  },
+  {
+    "id": "L-QUIBLY",
+    "form": "къуиблы",
+    "literalMeaning": "yedigen",
+    "conceptId": "HEPTAGON",
+    "wordFamilyId": "WF-QUIBLY",
+    "partOfSpeech": "noun",
+    "notes": "Dogrulandi: sozluk kaynagi"
+  },
+  {
+    "id": "L-ZEDELKHU",
+    "form": "зэдэлъху",
+    "literalMeaning": "erkek kardesler",
+    "conceptId": "BROTHER",
+    "wordFamilyId": "WF-ZEDELKHU",
+    "partOfSpeech": "noun",
+    "notes": "Dogrulandi: sozluk kaynagi"
+  },
+  {
+    "id": "L-EDZHAKUE",
+    "form": "еджакӀуэ",
+    "literalMeaning": "ogrenci",
+    "conceptId": "STUDENT",
+    "wordFamilyId": "WF-EDZHAKUE",
+    "partOfSpeech": "noun",
+    "notes": "Dogrulandi: sozluk kaynagi"
+  },
+  {
+    "id": "L-BZEBZE",
+    "form": "бзэбзэ",
+    "literalMeaning": "geveze",
+    "conceptId": "TALKATIVE",
+    "wordFamilyId": "WF-BZE",
+    "partOfSpeech": "noun",
+    "notes": "Dogrulandi: sozluk kaynagi"
+  },
+  {
+    "id": "L-BZASH1EPS",
+    "form": "бзащӀэпс",
+    "literalMeaning": "sive",
+    "conceptId": "DIALECT",
+    "wordFamilyId": "WF-BZE",
+    "partOfSpeech": "noun",
+    "notes": "Dogrulandi: sozluk kaynagi"
+  },
+  {
+    "id": "L-KHEDZHEBZ",
+    "form": "хьэджэбз",
+    "literalMeaning": "akici konusma",
+    "conceptId": "SPEECH",
+    "wordFamilyId": "WF-BZE",
+    "partOfSpeech": "noun",
+    "notes": "Dogrulandi: sozluk kaynagi"
+  },
+  {
+    "id": "L-EGUPSESEN",
+    "form": "егупсэсэн",
+    "literalMeaning": "dusunmek",
+    "conceptId": "THOUGHT",
+    "wordFamilyId": "WF-GU",
+    "partOfSpeech": "noun",
+    "notes": "Dogrulandi: sozluk kaynagi"
+  },
+  {
+    "id": "L-KHQUEBAN",
+    "form": "кхъуэбан",
+    "literalMeaning": "domuz agili",
+    "conceptId": "PIG",
+    "wordFamilyId": "WF-KHQUE",
+    "partOfSpeech": "noun",
+    "notes": "Dogrulandi: sozluk kaynagi"
+  },
+  {
+    "id": "L-SHCHUE",
+    "form": "щхъу",
+    "literalMeaning": "gri",
+    "conceptId": "GRAY",
+    "wordFamilyId": "WF-SHCHUE",
+    "partOfSpeech": "noun",
+    "notes": "Dogrulandi: sozluk kaynagi"
+  },
+  {
+    "id": "L-DELKHAN",
+    "form": "дэлъхан",
+    "literalMeaning": "icine atmak",
+    "conceptId": "THROW",
+    "wordFamilyId": "WF-DELKHAN",
+    "partOfSpeech": "noun",
+    "notes": "Dogrulandi: sozluk kaynagi"
   }
 ]
