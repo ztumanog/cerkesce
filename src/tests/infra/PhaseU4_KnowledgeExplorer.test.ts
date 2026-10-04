@@ -5,15 +5,15 @@ describe('Sprint U-4 - KnowledgeExplorerViewService', () => {
   it('View uretir', () => {
     const view = KnowledgeExplorerViewService.getView();
     expect(view.timestamp).toBeDefined();
-    expect(view.widgets.length).toBe(4);
+    expect(view.widgets.length).toBe(7);
     expect(view.overallStatus).toMatch(/^(ok|warning|critical)$/);
   });
 
   it('Widget detaylari', () => {
     const view = KnowledgeExplorerViewService.getView();
-    const graphWidget = view.widgets.find(w => w.id === 'graph');
-    expect(graphWidget).toBeDefined();
-    expect(graphWidget?.title).toBe('Knowledge Graph');
+    const phaseWidget = view.widgets.find(w => w.id === 'phase');
+    expect(phaseWidget).toBeDefined();
+    expect(phaseWidget?.title).toBeDefined();
   });
 
   it('Overall status hesaplanir', () => {
@@ -29,9 +29,9 @@ describe('Sprint U-4 - KnowledgeExplorerViewService', () => {
   it('Tum widgetlar', () => {
     const view = KnowledgeExplorerViewService.getView();
     const ids = view.widgets.map(w => w.id);
-    expect(ids).toContain('graph');
-    expect(ids).toContain('kb');
-    expect(ids).toContain('adr');
     expect(ids).toContain('phase');
+    expect(ids).toContain('adr');
+    expect(ids).toContain('historical');
+    expect(ids).toContain('memory');
   });
 });

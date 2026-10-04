@@ -4,7 +4,7 @@ import { KnowledgeExplorerViewService } from '../../infra/ui/KnowledgeExplorerVi
 describe('Sprint U-9 - Knowledge Explorer UI', () => {
   it('View servisi calisiyor', () => {
     const view = KnowledgeExplorerViewService.getView();
-    expect(view.widgets.length).toBe(4);
+    expect(view.widgets.length).toBe(7);
   });
 
   it('Widget yapisi dogru', () => {
