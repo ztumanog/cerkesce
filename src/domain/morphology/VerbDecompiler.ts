@@ -5,9 +5,10 @@
  *
  * Kaynak: Kumakhov, gl4.pdf (Fiil yapisi)
  *
- * 7 Onek Sirasi:
+ * 8 Onek Sirasi:
+ * 0. Person      : сы- / фы- / у-   (kisi oneki, en basta)
  * 1. Reflexive   : зы-
- * 2. Directional : къы-
+ * 2. Directional : къы- / къэ-
  * 3. Version     : ху- / зды-
  * 4. Comitative  : дэ-
  * 5. Locative    : хэ- / щIэ-
@@ -22,6 +23,7 @@
 // ============================================
 
 export type PrefixSlot =
+  | 'person'
   | 'reflexive'
   | 'directional'
   | 'version'
@@ -50,6 +52,9 @@ export interface VerbResult {
 // ============================================
 
 const PREFIX_TABLE: Array<{ slot: PrefixSlot; forms: string[] }> = [
+  // Kisi onekleri: 1SG сы-, 2PL фы-, 2SG у-
+  // NOT: 'ды' (1PL) burada yok, comitative slotunda duruyor. Karar gerekli.
+  { slot: 'person',      forms: ['сы', 'фы', 'у'] },
   { slot: 'reflexive',   forms: ['зы'] },
   { slot: 'directional', forms: ['къы', 'къэ'] },
   { slot: 'version',     forms: ['ху', 'зды', 'фIэ'] },
@@ -66,7 +71,7 @@ const PREFIX_TABLE: Array<{ slot: PrefixSlot; forms: string[] }> = [
 export class VerbDecompiler {
   /**
    * Bir fiili cozumler.
-   * Onek sirasini takip eder (slot 1'den 7'ye).
+   * Onek sirasini takip eder (slot 0'dan 7'ye).
    */
   decompile(form: string): VerbResult {
     const normalized = form.trim();
@@ -86,10 +91,8 @@ export class VerbDecompiler {
     const prefixes: ParsedPrefix[] = [];
     let position = 1;
 
-    // Her slot icin sirayla kontrol
+    // Her slot icin sirayla kontrol (slot atlanabilir)
     for (const { slot, forms } of PREFIX_TABLE) {
-      let matched = false;
-
       for (const prefixForm of forms) {
         if (remaining.startsWith(prefixForm)) {
           const stem = remaining.slice(prefixForm.length);
@@ -102,13 +105,9 @@ export class VerbDecompiler {
             position: position++,
           });
           remaining = stem;
-          matched = true;
           break;
         }
       }
-
-      // Slot atlanabilir
-      if (!matched) continue;
     }
 
     // Kalan = root
@@ -161,6 +160,6 @@ export class VerbDecompiler {
    * Tum slotlari doner.
    */
   getSlots(): PrefixSlot[] {
-    return ['reflexive', 'directional', 'version', 'comitative', 'locative', 'causative', 'factitive'];
+    return ['person', 'reflexive', 'directional', 'version', 'comitative', 'locative', 'causative', 'factitive'];
   }
 }

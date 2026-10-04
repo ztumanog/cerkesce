@@ -1,9 +1,10 @@
-import fs from 'fs';
+﻿import fs from 'fs';
 import path from 'path';
 import { VerbDecompiler, VerbResult } from './VerbDecompiler';
 import { RootExtractor, RootExtractorOutput } from './RootExtractor';
 import { NounCaseParser, NounCaseResult } from './NounCaseParser';
 import { MorphemeParser, MorphemeParserOutput } from './MorphemeParser';
+import { VerbSuffixDecompiler, SuffixResult } from './VerbSuffixDecompiler';
 import { Root } from '../linguistic/Root';
 import { Morpheme } from '../linguistic/Morpheme';
 
@@ -19,6 +20,7 @@ export interface MorphologyResult {
   rootExtractor?: RootExtractorOutput;
   nounCase?: NounCaseResult;
   morphemes?: MorphemeParserOutput;
+  suffixes?: SuffixResult[];
 }
 
 export interface KnownRoot {
@@ -52,6 +54,27 @@ export class MorphologyAnalyzer {
   analyze(form: string): MorphologyResult {
     const normalized = form.trim();
 
+    // 0. Fiil soneklerini cikar
+    const suffixResult = VerbSuffixDecompiler.decompile(normalized);
+
+    // 0a. Sonek varsa -> VERB
+    if (suffixResult.suffixes.length > 0) {
+      const verbResult = this.decompiler.decompile(suffixResult.stripped);
+      return {
+        input: normalized,
+        prefixes: verbResult.prefixes,
+        root: verbResult.root,
+        prefixCount: verbResult.prefixCount,
+        method: 'exact',
+        confidence: verbResult.confidence,
+        source: 'verb',
+        rootExtractor: this.safeExtract(normalized),
+        nounCase: this.safeNounCase(normalized),
+        morphemes: this.safeMorpheme(normalized),
+        suffixes: suffixResult.suffixes,
+      };
+    }
+
     if (!normalized) {
       return {
         input: '',
@@ -60,6 +83,7 @@ export class MorphologyAnalyzer {
         prefixCount: 0,
         method: 'fallback',
         confidence: 0,
+        suffixes: suffixResult.suffixes,
       };
     }
 
@@ -77,6 +101,7 @@ export class MorphologyAnalyzer {
         rootExtractor: this.safeExtract(normalized),
         nounCase: this.safeNounCase(normalized),
         morphemes: this.safeMorpheme(normalized),
+        suffixes: suffixResult.suffixes,
       };
     }
 
