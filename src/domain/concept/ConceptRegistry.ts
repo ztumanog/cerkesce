@@ -1,4 +1,4 @@
-﻿/**
+/**
  * File: src/domain/concept/ConceptRegistry.ts
  * Layer: Domain
  * 
@@ -117,6 +117,45 @@ export const CONCEPT_REGISTRY = {
   SPARK: '01ARZ3NDEKTSV4RRFFQ69G5FCK',
   BEE: '01ARZ3NDEKTSV4RRFFQ69G5FDK',
   HONEY: '01ARZ3NDEKTSV4RRFFQ69G5FDL',
+
+  // ============================================
+  // BLOK 1: TEMEL KAVRAMLAR (04.10.2026)
+  // ============================================
+  
+  // === AİLE / FAMILY ===
+  DAUGHTER: '01ARZ3NDEKTSV4RRFFQ69G5FDM',
+  SON: '01ARZ3NDEKTSV4RRFFQ69G5FDN',
+  FRIEND: '01ARZ3NDEKTSV4RRFFQ69G5FDP',
+  
+  // === HAYVANLAR / ANIMALS ===
+  DOG: '01ARZ3NDEKTSV4RRFFQ69G5FDQ',
+  CAT: '01ARZ3NDEKTSV4RRFFQ69G5FDR',
+  COW: '01ARZ3NDEKTSV4RRFFQ69G5FDS',
+  GOAT: '01ARZ3NDEKTSV4RRFFQ69G5FDT',
+  SHEEP: '01ARZ3NDEKTSV4RRFFQ69G5FDU',
+  BIRD: '01ARZ3NDEKTSV4RRFFQ69G5FDV',
+  PIG: '01ARZ3NDEKTSV4RRFFQ69G5FDW',
+  
+  // === YİYECEK / FOOD ===
+  FOOD: '01ARZ3NDEKTSV4RRFFQ69G5FDX',
+  FODDER: '01ARZ3NDEKTSV4RRFFQ69G5FDY',
+  CREAM: '01ARZ3NDEKTSV4RRFFQ69G5FDZ',
+  MILK: '01ARZ3NDEKTSV4RRFFQ69G5FE0',
+  BREAD: '01ARZ3NDEKTSV4RRFFQ69G5FE1',
+  
+  // === YERLEŞİM / SETTLEMENT ===
+  CITY: '01ARZ3NDEKTSV4RRFFQ69G5FE2',
+  VILLAGE: '01ARZ3NDEKTSV4RRFFQ69G5FE3',
+  ROAD: '01ARZ3NDEKTSV4RRFFQ69G5FE4',
+  STREET: '01ARZ3NDEKTSV4RRFFQ69G5FE5',
+  
+  // === EĞİTİM / EDUCATION ===
+  BOOK: '01ARZ3NDEKTSV4RRFFQ69G5FE6',
+  PEN: '01ARZ3NDEKTSV4RRFFQ69G5FE7',
+  SCHOOL: '01ARZ3NDEKTSV4RRFFQ69G5FE8',
+  
+  // === ZAMAN / TIME ===
+  TIME: '01ARZ3NDEKTSV4RRFFQ69G5FE9',
 } as const;
 
 export type ConceptName = keyof typeof CONCEPT_REGISTRY;
@@ -220,6 +259,45 @@ export const CONCEPT_DISPLAY_NAMES: Record<string, ConceptDisplayName> = {
   [CONCEPT_REGISTRY.SPARK]: { tr: 'Kıvılcım', kbd: 'мафӀащэ' },
   [CONCEPT_REGISTRY.BEE]: { tr: 'Arı', kbd: 'бжьэ' },
   [CONCEPT_REGISTRY.HONEY]: { tr: 'Bal', kbd: 'фо' },
+
+  // ============================================
+  // BLOK 1: DISPLAY NAMES (04.10.2026)
+  // ============================================
+  
+  // Aile
+  [CONCEPT_REGISTRY.DAUGHTER]: { tr: 'Kız Evlat', kbd: 'пхъу' },
+  [CONCEPT_REGISTRY.SON]: { tr: 'Oğul', kbd: 'къуэ' },
+  [CONCEPT_REGISTRY.FRIEND]: { tr: 'Arkadaş', kbd: 'ныбжьэгъу' },
+  
+  // Hayvanlar
+  [CONCEPT_REGISTRY.DOG]: { tr: 'Köpek', kbd: 'хьэ' },
+  [CONCEPT_REGISTRY.CAT]: { tr: 'Kedi', kbd: 'джэду' },
+  [CONCEPT_REGISTRY.COW]: { tr: 'İnek', kbd: 'жэм' },
+  [CONCEPT_REGISTRY.GOAT]: { tr: 'Keçi', kbd: 'бжэн' },
+  [CONCEPT_REGISTRY.SHEEP]: { tr: 'Koyun', kbd: 'мэл' },
+  [CONCEPT_REGISTRY.BIRD]: { tr: 'Kuş', kbd: 'бзу' },
+  [CONCEPT_REGISTRY.PIG]: { tr: 'Domuz', kbd: 'кхъуэ' },
+  
+  // Yiyecek
+  [CONCEPT_REGISTRY.FOOD]: { tr: 'Yemek', kbd: 'шхын' },
+  [CONCEPT_REGISTRY.FODDER]: { tr: 'Yem', kbd: 'Ӏус' },
+  [CONCEPT_REGISTRY.CREAM]: { tr: 'Kaymak', kbd: 'щатэ' },
+  [CONCEPT_REGISTRY.MILK]: { tr: 'Süt', kbd: 'шэ' },
+  [CONCEPT_REGISTRY.BREAD]: { tr: 'Ekmek', kbd: 'щӀакхъуэ' },
+  
+  // Yerleşim
+  [CONCEPT_REGISTRY.CITY]: { tr: 'Şehir', kbd: 'къалэ' },
+  [CONCEPT_REGISTRY.VILLAGE]: { tr: 'Köy', kbd: 'къуажэ' },
+  [CONCEPT_REGISTRY.ROAD]: { tr: 'Yol', kbd: 'гъуэгу' },
+  [CONCEPT_REGISTRY.STREET]: { tr: 'Sokak', kbd: 'уэрам' },
+  
+  // Eğitim
+  [CONCEPT_REGISTRY.BOOK]: { tr: 'Kitap', kbd: 'тхылъ' },
+  [CONCEPT_REGISTRY.PEN]: { tr: 'Kalem', kbd: 'къэлэм' },
+  [CONCEPT_REGISTRY.SCHOOL]: { tr: 'Okul', kbd: 'еджапӀэ' },
+  
+  // Zaman
+  [CONCEPT_REGISTRY.TIME]: { tr: 'Zaman', kbd: 'зэман' },
 };
 
 /**
