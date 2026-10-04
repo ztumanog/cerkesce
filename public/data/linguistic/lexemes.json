@@ -1013,7 +1013,8 @@
     "corpusFrequencyAdy": 6,
     "corpusFrequencyKbd": 113,
     "partOfSpeech": "noun",
-    "corpusFrequency": 119
+    "corpusFrequency": 119,
+    "conceptId": "LADY"
   },
   {
     "id": "L-SHHYEKHUIT",
@@ -1627,7 +1628,8 @@
     "corpusFrequencyAdy": 135,
     "corpusFrequencyKbd": 115,
     "partOfSpeech": "noun",
-    "corpusFrequency": 250
+    "corpusFrequency": 250,
+    "conceptId": "PLACE"
   },
   {
     "id": "L-UNE",
@@ -2877,7 +2879,8 @@
     "corpusFrequencyAdy": 115,
     "corpusFrequencyKbd": 210,
     "partOfSpeech": "noun",
-    "corpusFrequency": 325
+    "corpusFrequency": 325,
+    "conceptId": "SEA"
   },
   {
     "id": "L-KKHUHE",
@@ -3798,7 +3801,7 @@
       "rule": "root"
     },
     "wordFamilyId": "WF-DZE",
-    "conceptId": "ARMY",
+    "conceptId": "TOOTH",
     "dialectVariants": {
       "adyghe": "дзэ",
       "kabardian": "дзэ"
