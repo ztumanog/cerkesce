@@ -293,8 +293,12 @@
     "notes": "Gu koku DEGIL. Ayri bir kok. Diyalekt: Adigece кушъэ <-> Kabardeyce гущэ.",
     "wordFamily": {
       "id": "WF-GUSHCH",
-      "lexemeIds": [],
-      "conceptIds": [],
+      "lexemeIds": [
+        "L-GUSHHE"
+      ],
+      "conceptIds": [
+        "CRADLE"
+      ],
       "morphemeIds": [],
       "productivity": {
         "totalLexemes": 0,
@@ -722,8 +726,12 @@
     "notes": "Etimoloji: [гуащ] + -э. Polisemik: PRINCESS (soyluluk) → MOTHER_IN_LAW (aile rolü) → DOLL (oyuncak). унэгуащэ bileşiğinde 'hanım' alt anlamı seçilir. 18 bağımsız sözlük kaynağı.",
     "wordFamily": {
       "id": "WF-GUASHCH",
-      "lexemeIds": [],
-      "conceptIds": [],
+      "lexemeIds": [
+        "L-GUASHCH"
+      ],
+      "conceptIds": [
+        "LADY"
+      ],
       "morphemeIds": [],
       "productivity": {
         "totalLexemes": 0,
@@ -770,8 +778,12 @@
     "notes": "Etimoloji: [гъус] + -э. 18 sözlük kaynağı. щхьэгъусэ bileşiğinin temeli.",
     "wordFamily": {
       "id": "WF-GHUSE",
-      "lexemeIds": [],
-      "conceptIds": [],
+      "lexemeIds": [
+        "L-GHUSE"
+      ],
+      "conceptIds": [
+        "COMPANION"
+      ],
       "morphemeIds": [],
       "productivity": {
         "totalLexemes": 0,
@@ -1022,8 +1034,12 @@
     "notes": "İki ana anlam: (1) zamir 'siz'; (2) isim 'deri/cilt/kabuk'. 19 sözlük kaynağı.",
     "wordFamily": {
       "id": "WF-FE",
-      "lexemeIds": [],
-      "conceptIds": [],
+      "lexemeIds": [
+        "L-FE"
+      ],
+      "conceptIds": [
+        "SKIN"
+      ],
       "morphemeIds": [],
       "productivity": {
         "totalLexemes": 0,
@@ -1079,8 +1095,12 @@
     "notes": "Yalan, aldatma kökü. Wiktionary IPA: [ptʹsǝ]. 15+ türev.",
     "wordFamily": {
       "id": "WF-P1C1",
-      "lexemeIds": [],
-      "conceptIds": [],
+      "lexemeIds": [
+        "L-P1C1"
+      ],
+      "conceptIds": [
+        "DECEIT"
+      ],
       "morphemeIds": [],
       "productivity": {
         "totalLexemes": 0,
@@ -1263,8 +1283,12 @@
     "notes": "Yağ, yakıt. 19 sözlük + Wiktionary.",
     "wordFamily": {
       "id": "WF-DAGHE",
-      "lexemeIds": [],
-      "conceptIds": [],
+      "lexemeIds": [
+        "L-DAGHE"
+      ],
+      "conceptIds": [
+        "FAT"
+      ],
       "morphemeIds": [],
       "productivity": {
         "totalLexemes": 0,
@@ -1318,8 +1342,12 @@
     "notes": "Yağ + sayılar + partikel. Adigece'de /ɕ/ sesi olmadığı için 'шэ' olarak geçer.",
     "wordFamily": {
       "id": "WF-SHE",
-      "lexemeIds": [],
-      "conceptIds": [],
+      "lexemeIds": [
+        "L-SHE"
+      ],
+      "conceptIds": [
+        "FAT"
+      ],
       "morphemeIds": [],
       "productivity": {
         "totalLexemes": 0,
@@ -1371,8 +1399,12 @@
     "notes": "Süt + kurşun + götür. IPA: /ʂɐ/. Tarmash DOGU filtresi doğruluyor.",
     "wordFamily": {
       "id": "WF-SHE2",
-      "lexemeIds": [],
-      "conceptIds": [],
+      "lexemeIds": [
+        "L-SHE2"
+      ],
+      "conceptIds": [
+        "MILK"
+      ],
       "morphemeIds": [],
       "productivity": {
         "totalLexemes": 0,
@@ -1436,8 +1468,12 @@
     "notes": "Kulak. 13 sözlük + 10 türev. тхьэкӀумэкӀыхь (tavşan) bileşiğinin temeli.",
     "wordFamily": {
       "id": "WF-TKHEK1UME",
-      "lexemeIds": [],
-      "conceptIds": [],
+      "lexemeIds": [
+        "L-TKHEK1UME"
+      ],
+      "conceptIds": [
+        "EAR"
+      ],
       "morphemeIds": [],
       "productivity": {
         "totalLexemes": 0,
@@ -1506,8 +1542,12 @@
     "notes": "Uzun. Yamisha (2018) + Wiktionary. 25 türev. тхьэкӀумэкӀыхь (tavşan) bileşiğinin ikinci parçası.",
     "wordFamily": {
       "id": "WF-K1YH",
-      "lexemeIds": [],
-      "conceptIds": [],
+      "lexemeIds": [
+        "L-K1YH"
+      ],
+      "conceptIds": [
+        "LONG"
+      ],
       "morphemeIds": [],
       "productivity": {
         "totalLexemes": 0,
@@ -1575,8 +1615,12 @@
     "notes": "Hırsız + çalmak. 4 sözlük + Wiktionary. 20+ türev. дыгъужь (kurt) bileşiğinin ilk parçası.",
     "wordFamily": {
       "id": "WF-DYGHU",
-      "lexemeIds": [],
-      "conceptIds": [],
+      "lexemeIds": [
+        "L-DYGHU"
+      ],
+      "conceptIds": [
+        "THIEF"
+      ],
       "morphemeIds": [],
       "productivity": {
         "totalLexemes": 0,
@@ -1649,8 +1693,12 @@
     "notes": "Eski + yaşlı + rüzgar + hava + erken. 18 sözlük + Wiktionary. 25+ türev. дыгъужь (kurt) bileşiğinin ikinci parçası.",
     "wordFamily": {
       "id": "WF-ZHY",
-      "lexemeIds": [],
-      "conceptIds": [],
+      "lexemeIds": [
+        "L-ZHY"
+      ],
+      "conceptIds": [
+        "OLD"
+      ],
       "morphemeIds": [],
       "productivity": {
         "totalLexemes": 0,
@@ -1706,8 +1754,12 @@
     "notes": "Öküz + sürmek (fiil). 9 sözlük + Wiktionary. Polisemik.",
     "wordFamily": {
       "id": "WF-VY",
-      "lexemeIds": [],
-      "conceptIds": [],
+      "lexemeIds": [
+        "L-VY"
+      ],
+      "conceptIds": [
+        "OX"
+      ],
       "morphemeIds": [],
       "productivity": {
         "totalLexemes": 0,
@@ -1822,8 +1874,12 @@
     "notes": "Altı (6). 10 sözlük + Wiktionary. Homonym: хы (deniz) ile aynı yazılış.",
     "wordFamily": {
       "id": "WF-KHY2",
-      "lexemeIds": [],
-      "conceptIds": [],
+      "lexemeIds": [
+        "L-KHY2"
+      ],
+      "conceptIds": [
+        "SIX"
+      ],
       "morphemeIds": [],
       "productivity": {
         "totalLexemes": 0,
@@ -1881,8 +1937,12 @@
     "notes": "Domuz. Adigece: къо. Kabardeyce: кхъуэ. 5 sözlük + Wiktionary. хыкхъуэ (yunus) bileşiğinin ikinci parçası.",
     "wordFamily": {
       "id": "WF-KKHUHE",
-      "lexemeIds": [],
-      "conceptIds": [],
+      "lexemeIds": [
+        "L-KKHUHE"
+      ],
+      "conceptIds": [
+        "PIG"
+      ],
       "morphemeIds": [],
       "productivity": {
         "totalLexemes": 0,
@@ -2651,8 +2711,12 @@
     "notes": "Gemi koku. Adigece: къухьэ. Kabardeyce: кхъухь. 11 sozluk kaynagi.",
     "wordFamily": {
       "id": "WF-KKHUXY",
-      "lexemeIds": [],
-      "conceptIds": [],
+      "lexemeIds": [
+        "L-KKHUXY"
+      ],
+      "conceptIds": [
+        "SHIP"
+      ],
       "morphemeIds": [],
       "productivity": {
         "totalLexemes": 0,
@@ -2780,8 +2844,12 @@
     "notes": "Ardic koku. Apashev (2008), Kokov (2008), Sherdjes Aliy (1994).",
     "wordFamily": {
       "id": "WF-KUEREDERE",
-      "lexemeIds": [],
-      "conceptIds": [],
+      "lexemeIds": [
+        "L-KUEREDERE"
+      ],
+      "conceptIds": [
+        "JUNIPER"
+      ],
       "morphemeIds": [],
       "productivity": {
         "totalLexemes": 0,
@@ -2893,9 +2961,12 @@
       "id": "WF-NYBZHY",
       "lexemeIds": [
         "L-NYBZHYSHXUE",
-        "L-NYBZHYC1YQ1U"
+        "L-NYBZHYC1YQ1U",
+        "L-NYBZHY"
       ],
-      "conceptIds": [],
+      "conceptIds": [
+        "AGE"
+      ],
       "morphemeIds": [
         "M-SHXUE",
         "M-C1YQ1U"
@@ -3068,9 +3139,12 @@
       "id": "WF-1UEKHU",
       "lexemeIds": [
         "L-1UEKHUASHHUE",
-        "L-1UEKHUC1YQ1U"
+        "L-1UEKHUC1YQ1U",
+        "L-1UEKHU"
       ],
-      "conceptIds": [],
+      "conceptIds": [
+        "WORK"
+      ],
       "morphemeIds": [
         "M-SHXUE",
         "M-C1YQ1U"
@@ -3119,9 +3193,12 @@
     "wordFamily": {
       "id": "WF-MAKHUE",
       "lexemeIds": [
-        "L-MAKHUESHHUE"
+        "L-MAKHUESHHUE",
+        "L-MAKHUE"
       ],
-      "conceptIds": [],
+      "conceptIds": [
+        "DAY"
+      ],
       "morphemeIds": [
         "M-SHXUE"
       ],
@@ -3478,8 +3555,12 @@
     "notes": "C-11.4: uc koku.",
     "wordFamily": {
       "id": "WF-SHCH",
-      "lexemeIds": [],
-      "conceptIds": [],
+      "lexemeIds": [
+        "L-SHCH"
+      ],
+      "conceptIds": [
+        "POINT"
+      ],
       "morphemeIds": [],
       "productivity": {
         "totalLexemes": 0,
@@ -3538,7 +3619,9 @@
       "lexemeIds": [
         "L-ZE"
       ],
-      "conceptIds": [],
+      "conceptIds": [
+        "ONE"
+      ],
       "morphemeIds": [],
       "productivity": {
         "totalLexemes": 1,
@@ -3595,7 +3678,9 @@
         "L-NAPENTEH",
         "L-NAPENTEHYGHE"
       ],
-      "conceptIds": [],
+      "conceptIds": [
+        "FACE"
+      ],
       "morphemeIds": [],
       "productivity": {
         "totalLexemes": 8,

@@ -21111,5 +21111,71 @@
       "rule": "root"
     },
     "corpusFrequency": 5
+  },
+  {
+    "id": "L-GUSHHE",
+    "form": "гущэ",
+    "literalMeaning": "besik, kundak",
+    "wordFamilyId": "WF-GUSHCH",
+    "conceptId": "CRADLE",
+    "partOfSpeech": "noun",
+    "ipa": "/ˈgʷǝɕɐ/",
+    "notes": "Wiktionary; Apaşev (2008); Yamisha (2023); Kardanov (1957); Huvaj (2007)"
+  },
+  {
+    "id": "L-P1C1",
+    "form": "пцӀ",
+    "literalMeaning": "aldatma, yalan",
+    "wordFamilyId": "WF-P1C1",
+    "conceptId": "DECEIT",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "L-SHE2",
+    "form": "шэ",
+    "literalMeaning": "süt",
+    "wordFamilyId": "WF-SHE2",
+    "conceptId": "MILK",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "L-KHY2",
+    "form": "хы",
+    "literalMeaning": "altı (6)",
+    "wordFamilyId": "WF-KHY2",
+    "conceptId": "SIX",
+    "partOfSpeech": "numeral"
+  },
+  {
+    "id": "L-NYBZHY",
+    "form": "ныбжь",
+    "literalMeaning": "yaş",
+    "wordFamilyId": "WF-NYBZHY",
+    "conceptId": "AGE",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "L-1UEKHU",
+    "form": "Ӏуэху",
+    "literalMeaning": "iş, mesele",
+    "wordFamilyId": "WF-1UEKHU",
+    "conceptId": "WORK",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "L-SHCH",
+    "form": "щы",
+    "literalMeaning": "uç",
+    "wordFamilyId": "WF-SHCH",
+    "conceptId": "POINT",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "L-ZE",
+    "form": "зэ",
+    "literalMeaning": "bir (1)",
+    "wordFamilyId": "WF-ZE",
+    "conceptId": "ONE",
+    "partOfSpeech": "numeral"
   }
 ]
