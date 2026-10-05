@@ -125,7 +125,7 @@ export default function MorphologyPage() {
         />
         <button
           onClick={analyze}
-          disabled={loading}
+          disabledf={loading}
           className="px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 disabled:opacity-50"
         >
           {loading ? '...' : 'Ayrıştır'}
@@ -242,9 +242,12 @@ export default function MorphologyPage() {
               <div className="space-y-2">
                 {result.lemmaSuffixes.map((s: any, i: number) => (
                   <div key={i} className="flex items-center gap-3 text-sm">
-                    <span className="font-mono font-bold">{s.morpheme ?? s.suffix ?? '—'}</span>
-                    {s.code && <span className="text-gray-600">{SUFFIX_CODE_TR[s.code] ?? s.code}</span>}
-                    {s.gloss && <span className="text-gray-500">— {s.gloss}</span>}
+                   <span className="font-mono font-bold">{s.morpheme ?? s.suffix ?? '—'}</span>
+{s.gloss ? (
+  <span className="text-gray-500">— {s.gloss}</span>
+) : s.code ? (
+  <span className="text-gray-600">{SUFFIX_CODE_TR[s.code] ?? s.code}</span>
+) : null}
                   </div>
                 ))}
               </div>
