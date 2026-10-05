@@ -137,6 +137,14 @@ export default function SozlukEkrani() {
                 anlamlar,
                 kaynaklar: entry.kaynaklar || [],
                 lehce: kaynakDialect || entry.dialect || entry.lehce || 'ADY',
+                dialect: kaynakDialect || entry.dialect || entry.lehce || 'ADY',
+                rootIds: entry.rootIds || [],
+                wordFamilyId: entry.wordFamilyId || null,
+                conceptId: entry.conceptId || null,
+                ipa: entry.ipa || null,
+                partOfSpeech: entry.partOfSpeech || null,
+                corpusFrequency: entry.corpusFrequency || 0,
+                dialectVariants: entry.dialectVariants || null,
               };
             }
           );
@@ -158,7 +166,7 @@ export default function SozlukEkrani() {
     [gecmiseEkle]
   );
 
-  const handleKelimeSec = (kelime: KelimeItem) => {
+    const handleKelimeSec = (kelime: KelimeItem) => {
     const dictionaryEntry: DictionaryEntry = {
       id: kelime.id,
       word: kelime.kelime,
@@ -173,6 +181,13 @@ export default function SozlukEkrani() {
       lehce: kelime.lehce || 'ADY',
       dialect: kelime.lehce || 'ADY',
       group: kelime.kaynaklar?.[0] as any,
+      rootIds: kelime.rootIds || [],
+      wordFamilyId: kelime.wordFamilyId || null,
+      conceptId: kelime.conceptId || null,
+      ipa: kelime.ipa || null,
+      partOfSpeech: kelime.partOfSpeech || null,
+      corpusFrequency: kelime.corpusFrequency || 0,
+      dialectVariants: kelime.dialectVariants || null,
     };
 
     setSeciliKelime(dictionaryEntry);
@@ -389,3 +404,9 @@ export default function SozlukEkrani() {
     </div>
   );
 }
+
+
+
+
+
+

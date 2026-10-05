@@ -68,6 +68,7 @@ interface GroupedResult {
   ipa?: string | null;
   partOfSpeech?: string | null;
   corpusFrequency?: number;
+  dialectVariants?: { adyghe?: string; kabardian?: string } | null;
 }
 
 function normalizeDialectParam(val: string): string {
@@ -359,6 +360,7 @@ export async function GET(request: NextRequest) {
             ipa: lexeme?.ipa ?? null,
             partOfSpeech: lexeme?.partOfSpeech ?? null,
             corpusFrequency: lexeme?.corpusFrequency ?? 0,
+            dialectVariants: lexeme?.dialectVariants ?? null,
         });
       }
     }
@@ -375,6 +377,8 @@ export async function GET(request: NextRequest) {
     return NextResponse.json({ success: false, error: errorMessage }, { status: 500 });
   }
 }
+
+
 
 
 

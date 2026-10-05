@@ -13,9 +13,18 @@ export interface KelimeItem {
   anlamlar?: string[];
   kaynaklar?: KaynakItem[];
   lehce?: string;
+  dialect?: string;
   kaynakAdlari?: string[];
   hedefDillerSet?: string[];
   hedefDilCanonical?: string;
+  // D-1B: Dilbilimsel Bilgiler
+  rootIds?: string[];
+  wordFamilyId?: string | null;
+  conceptId?: string | null;
+  ipa?: string | null;
+  partOfSpeech?: string | null;
+  corpusFrequency?: number;
+  dialectVariants?: { adyghe?: string; kabardian?: string } | null;
 }
 
 export interface KelimeKartiProps {
@@ -207,4 +216,7 @@ export const KelimeKarti: React.FC<KelimeKartiProps> = ({
 };
 
 export default KelimeKarti;
+
+
+
 
