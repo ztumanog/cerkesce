@@ -3,10 +3,27 @@
  * LemmaBuilderV2'den bagimsiz, basit versiyon
  */
 
+import fs from 'fs';
+import path from 'path';
+
 export interface SuffixResult {
   morpheme: string;
   code: string;
   gloss: string;
+}
+
+// Lexeme set (kok kontrolu icin)
+let LEXEME_SET: Set<string> | null = null;
+function getLexemeSet(): Set<string> {
+  if (LEXEME_SET) return LEXEME_SET;
+  try {
+    const lexPath = path.resolve('./public/data/linguistic/lexemes.json');
+    const lex = JSON.parse(fs.readFileSync(lexPath, 'utf-8'));
+    LEXEME_SET = new Set(lex.map((l: any) => l.form));
+  } catch {
+    LEXEME_SET = new Set();
+  }
+  return LEXEME_SET;
 }
 
 const VERB_SUFFIXES: Array<{ pattern: RegExp; code: string; gloss: string }> = [
@@ -48,12 +65,20 @@ export class VerbSuffixDecompiler {
         if (match) {
           const stripped = remaining.slice(0, -match[0].length);
           if (stripped.length >= 2) {
+            let finalStripped = stripped;
+            // "у" ile biten koklerde "э" geri ekle (кIу -> кIуэ)
+            if (stripped.endsWith('у') && (match[0] === 'ащ' || match[0] === 'а')) {
+              const withE = stripped + 'э';
+              if (getLexemeSet().has(withE)) {
+                finalStripped = withE;
+              }
+            }
             suffixes.unshift({
               morpheme: match[0],
               code: s.code,
               gloss: s.gloss,
             });
-            remaining = stripped;
+            remaining = finalStripped;
             changed = true;
             break;
           }
