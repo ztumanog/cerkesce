@@ -135,9 +135,9 @@ export const KelimeKarti: React.FC<KelimeKartiProps> = ({
           <h3 className="text-base sm:text-lg font-bold text-amber-600 dark:text-orange-500 group-hover:text-amber-700 dark:group-hover:text-orange-400 transition-colors truncate">
             {data.kelime}
           </h3>
-          {data.lehce && (
-            <span className={`text-[10px] uppercase font-semibold px-2 py-0.5 rounded-md border shrink-0 ${getLehceBadgeClass(data.lehce)}`}>
-              {data.lehce}
+          {data.dialect || data.lehce && (
+            <span className={`text-[10px] uppercase font-semibold px-2 py-0.5 rounded-md border shrink-0 ${getLehceBadgeClass(data.dialect || data.lehce)}`}>
+              {data.dialect || data.lehce}
             </span>
           )}
         </div>
@@ -207,3 +207,4 @@ export const KelimeKarti: React.FC<KelimeKartiProps> = ({
 };
 
 export default KelimeKarti;
+

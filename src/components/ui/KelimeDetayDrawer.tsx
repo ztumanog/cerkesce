@@ -11,6 +11,7 @@ import {
   ChevronRight,
   Languages,
   Filter,
+  Zap,
 } from 'lucide-react';
 import type {
   DialectFilterValue,
@@ -534,7 +535,42 @@ const paylas = useCallback(() => {
             </div>
           )}
 
-          <section className="space-y-3">
+                    {/* D-1B: Dilbilimsel Bilgiler */}
+          {(seciliKelime.rootIds?.length || seciliKelime.wordFamilyId || seciliKelime.conceptId) && (
+            <section className="space-y-2">
+              <h3 className="text-sm font-bold text-slate-800 dark:text-slate-200 flex items-center gap-2">
+                <Zap size={16} className="text-orange-500" />
+                Dilbilimsel Bilgiler
+              </h3>
+              <div className="grid grid-cols-3 gap-2">
+                <div className="rounded-xl border border-emerald-200 bg-emerald-50/80 p-3 dark:border-emerald-900/40 dark:bg-emerald-950/20">
+                  <span className="text-[10px] font-bold text-emerald-700 dark:text-emerald-400 uppercase block mb-1">
+                    Kök
+                  </span>
+                  <span className="text-xs font-mono text-emerald-900 dark:text-emerald-100">
+                    {seciliKelime.rootIds?.join(', ') || '—'}
+                  </span>
+                </div>
+                <div className="rounded-xl border border-purple-200 bg-purple-50/80 p-3 dark:border-purple-900/40 dark:bg-purple-950/20">
+                  <span className="text-[10px] font-bold text-purple-700 dark:text-purple-400 uppercase block mb-1">
+                    Family
+                  </span>
+                  <span className="text-xs font-mono text-purple-900 dark:text-purple-100">
+                    {seciliKelime.wordFamilyId || '—'}
+                  </span>
+                </div>
+                <div className="rounded-xl border border-orange-200 bg-orange-50/80 p-3 dark:border-orange-900/40 dark:bg-orange-950/20">
+                  <span className="text-[10px] font-bold text-orange-700 dark:text-orange-400 uppercase block mb-1">
+                    Concept
+                  </span>
+                  <span className="text-xs font-mono text-orange-900 dark:text-orange-100">
+                    {seciliKelime.conceptId || '—'}
+                  </span>
+                </div>
+              </div>
+            </section>
+          )}
+<section className="space-y-3">
             <div className="flex items-center justify-between border-b border-slate-300 dark:border-slate-800 pb-2">
               <h3 className="text-sm font-bold text-slate-800 dark:text-slate-200 flex items-center gap-2">
                 <BookOpen size={16} className="text-orange-500" />
@@ -734,5 +770,7 @@ const paylas = useCallback(() => {
     
   );
 }
+
+
 
 
