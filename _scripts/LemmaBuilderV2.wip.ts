@@ -1,3 +1,6 @@
+﻿import { NounCaseParser } from './NounCaseParser';
+import { VerbDecompiler } from './VerbDecompiler';
+
 import fs from 'fs';
 import path from 'path';
 
@@ -107,22 +110,22 @@ export interface LemmaBuildResult {
 
 export class VerbPrefixDecompiler {
   public static readonly PREFIX_SLOTS: Array<[string, RegExp[], string]> = [
-    ['SLOT_7_REFLEXIVE', [/^зы/, /^з/], 'Reflexive (Dönüşlü)'],
-    ['SLOT_6_DIRECTIONAL', [/^къы/, /^къэ/, /^ны/, /^нэ/], 'Directional (Yönsel)'],
-    ['SLOT_5_VERSION_POTENTIAL', [/^хуэ/, /^ху/, /^фIэ/, /^фIы/], 'Version/Potential (Sürüm/Yeterlilik)'],
-    ['SLOT_4_COMITATIVE', [/^зды/, /^здэ/, /^зэ/, /^дэ/, /^ды/], 'Comitative/Reciprocal (Birliktelik/Karşılıklılık)'],
-    ['SLOT_3_LOCATIVE', [/^кIэры/, /^бгъэдэ/, /^бгъуры/, /^те/, /^щIэ/, /^хэ/, /^дэ/, /^и/, /^блэ/, /^пы/, /^Iу/, /^щы/], 'Locative Preverb (Yersel)'],
-    ['SLOT_2_CAUSATIVE', [/^гъэ/, /^гъа/], 'Causative (Ettirgen)'],
-    ['SLOT_1_FACTITIVE', [/^уэ/, /^у/], 'Factitive (Faktatif)']
+    ['SLOT_7_REFLEXIVE', [/^Ğ·Ñ‹/, /^Ğ·/], 'Reflexive (DÃ¶nÃ¼ÅŸlÃ¼)'],
+    ['SLOT_6_DIRECTIONAL', [/^ĞºÑŠÑ‹/, /^ĞºÑŠÑ/, /^Ğ½Ñ‹/, /^Ğ½Ñ/], 'Directional (YÃ¶nsel)'],
+    ['SLOT_5_VERSION_POTENTIAL', [/^Ñ…ÑƒÑ/, /^Ñ…Ñƒ/, /^Ñ„IÑ/, /^Ñ„IÑ‹/], 'Version/Potential (SÃ¼rÃ¼m/Yeterlilik)'],
+    ['SLOT_4_COMITATIVE', [/^Ğ·Ğ´Ñ‹/, /^Ğ·Ğ´Ñ/, /^Ğ·Ñ/, /^Ğ´Ñ/, /^Ğ´Ñ‹/], 'Comitative/Reciprocal (Birliktelik/KarÅŸÄ±lÄ±klÄ±lÄ±k)'],
+    ['SLOT_3_LOCATIVE', [/^ĞºIÑÑ€Ñ‹/, /^Ğ±Ğ³ÑŠÑĞ´Ñ/, /^Ğ±Ğ³ÑŠÑƒÑ€Ñ‹/, /^Ñ‚Ğµ/, /^Ñ‰IÑ/, /^Ñ…Ñ/, /^Ğ´Ñ/, /^Ğ¸/, /^Ğ±Ğ»Ñ/, /^Ğ¿Ñ‹/, /^IÑƒ/, /^Ñ‰Ñ‹/], 'Locative Preverb (Yersel)'],
+    ['SLOT_2_CAUSATIVE', [/^Ğ³ÑŠÑ/, /^Ğ³ÑŠĞ°/], 'Causative (Ettirgen)'],
+    ['SLOT_1_FACTITIVE', [/^ÑƒÑ/, /^Ñƒ/], 'Factitive (Faktatif)']
   ];
 
   public static readonly PERSON_PREFIXES: Array<[RegExp, string, string]> = [
-    [/^сы|^с/, '1SG', 'Ben'],
-    [/^уэ|^у/, '2SG', 'Sen'],
-    [/^ды|^д/, '1PL', 'Biz'],
-    [/^фы|^ф/, '2PL', 'Siz'],
-    [/^я|^а/, '3PL', 'Onlar'],
-    [/^и|^й|^р/, '3SG', 'O']
+    [/^ÑÑ‹|^Ñ/, '1SG', 'Ben'],
+    [/^ÑƒÑ|^Ñƒ/, '2SG', 'Sen'],
+    [/^Ğ´Ñ‹|^Ğ´/, '1PL', 'Biz'],
+    [/^Ñ„Ñ‹|^Ñ„/, '2PL', 'Siz'],
+    [/^Ñ|^Ğ°/, '3PL', 'Onlar'],
+    [/^Ğ¸|^Ğ¹|^Ñ€/, '3SG', 'O']
   ];
 
   public static decompile(
@@ -181,29 +184,28 @@ export class VerbPrefixDecompiler {
 
 export class VerbSuffixDecompiler {
   public static readonly SUFFIX_RULES: Array<[RegExp, string, string, string]> = [
-    [/щтэп$/, 'FUTURE_NEGATION', '-щтэп', 'Olumsuz Gelecek Zaman (-meyecek)'],
-    [/тэп$/, 'IMPERFECT_NEGATION', '-тэп', 'Olumsuz Geniş/Geçmiş Zaman (-mezdi)'],
-    [/щэп$/, 'DECLARATIVE_NEGATION', '-щэп', 'Olumsuz Bildirme (-değildir)'],
-    [/къым$/, 'FINITE_NEGATION', '-къым', 'Olumsuzluk (Finite Negation)'],
-    [/ащ$/, 'PRETERITE_DECLARATIVE', '-ащ', 'Belirli Geçmiş Zaman Bildirme'],
-    [/хэ$/, 'PLURAL', '-хэ', 'Çoğul (Plural)'],
-    [/гъат$/, 'ANTERIOR_PLUPERFECT', '-гъат', 'Uzak Geçmiş Anterior'],
-    [/гъа$/, 'PLUPERFECT', '-гъа', 'Uzak Geçmiş'],
-    [/ат$/, 'PAST_ANTERIOR', '-ат', 'Geçmiş Zaman Anterior'],
-    [/а$/, 'PRETERITE', '-а', 'Belirli Geçmiş Zaman'],
-    [/рт$/, 'IMPERFECT_DYN', '-рт', 'Şimdiki/Geniş Zamanın Hikayesi'],
-    [/т$/, 'IMPERFECT', '-т', 'Geçmiş Süreklilik'],
-    [/нущ$/, 'FACTUAL_FUTURE', '-нущ', 'Kesin Gelecek Zaman'],
-    [/ну$/, 'FUTURE_BASE', '-ну', 'Gelecek Zaman Tabanı'],
-    [/нщ$/, 'CATEGORICAL_FUTURE', '-нщ', 'Gelecek/Geniş Zaman'],
-    [/н$/, 'INFINITIVE_FUTURE', '-н', 'Mastar/Gelecek'],
-    [/жь$/, 'REPETITIVE', '-жь', 'Yeniden/Geriye Eylem'],
-    [/ж$/, 'REPETITIVE', '-ж', 'Tekrar/Geriye Eylem'],
-    [/ф$/, 'POTENTIAL_SUFFIX', '-ф', 'Yeterlilik Soneki'],
-    [/пэ$/, 'TOTALITIVE', '-пэ', 'Tamamen/Tüketerek Yapma'],
-    [/мэ$/, 'CONDITIONAL', '-мэ', 'Şart/Koşul'],
-    [/м$/, 'CONDITIONAL_SHORT', '-м', 'Şart/Koşul'],
-    [/щ$/, 'INDICATIVE_DECLARATIVE', '-щ', 'Bildirme/Tasdik Eki']
+    [/Ñ‰Ñ‚ÑĞ¿$/, 'FUTURE_NEGATION', '-Ñ‰Ñ‚ÑĞ¿', 'Olumsuz Gelecek Zaman (-meyecek)'],
+    [/Ñ‚ÑĞ¿$/, 'IMPERFECT_NEGATION', '-Ñ‚ÑĞ¿', 'Olumsuz GeniÅŸ/GeÃ§miÅŸ Zaman (-mezdi)'],
+    [/Ñ‰ÑĞ¿$/, 'DECLARATIVE_NEGATION', '-Ñ‰ÑĞ¿', 'Olumsuz Bildirme (-deÄŸildir)'],
+    [/ĞºÑŠÑ‹Ğ¼$/, 'FINITE_NEGATION', '-ĞºÑŠÑ‹Ğ¼', 'Olumsuzluk (Finite Negation)'],
+    [/Ğ°Ñ‰$/, 'PRETERITE_DECLARATIVE', '-Ğ°Ñ‰', 'Belirli GeÃ§miÅŸ Zaman Bildirme'],
+    [/Ñ…Ñ$/, 'PLURAL', '-Ñ…Ñ', 'Ã‡oÄŸul (Plural)'],
+    [/Ğ³ÑŠĞ°Ñ‚$/, 'ANTERIOR_PLUPERFECT', '-Ğ³ÑŠĞ°Ñ‚', 'Uzak GeÃ§miÅŸ Anterior'],
+    [/Ğ³ÑŠĞ°$/, 'PLUPERFECT', '-Ğ³ÑŠĞ°', 'Uzak GeÃ§miÅŸ'],
+    [/Ğ°Ñ‚$/, 'PAST_ANTERIOR', '-Ğ°Ñ‚', 'GeÃ§miÅŸ Zaman Anterior'],
+    [/Ğ°$/, 'PRETERITE', '-Ğ°', 'Belirli GeÃ§miÅŸ Zaman'],
+    [/Ñ€Ñ‚$/, 'IMPERFECT_DYN', '-Ñ€Ñ‚', 'Åimdiki/GeniÅŸ ZamanÄ±n Hikayesi'],
+    [/Ñ‚$/, 'IMPERFECT', '-Ñ‚', 'GeÃ§miÅŸ SÃ¼reklilik'],
+    [/Ğ½ÑƒÑ‰$/, 'FACTUAL_FUTURE', '-Ğ½ÑƒÑ‰', 'Kesin Gelecek Zaman'],
+    [/Ğ½Ñƒ$/, 'FUTURE_BASE', '-Ğ½Ñƒ', 'Gelecek Zaman TabanÄ±'],
+    [/Ğ½Ñ‰$/, 'CATEGORICAL_FUTURE', '-Ğ½Ñ‰', 'Gelecek/GeniÅŸ Zaman'],
+    [/Ğ¶ÑŒ$/, 'REPETITIVE', '-Ğ¶ÑŒ', 'Yeniden/Geriye Eylem'],
+    [/Ğ¶$/, 'REPETITIVE', '-Ğ¶', 'Tekrar/Geriye Eylem'],
+    [/Ñ„$/, 'POTENTIAL_SUFFIX', '-Ñ„', 'Yeterlilik Soneki'],
+    [/Ğ¿Ñ$/, 'TOTALITIVE', '-Ğ¿Ñ', 'Tamamen/TÃ¼keterek Yapma'],
+    [/Ğ¼Ñ$/, 'CONDITIONAL', '-Ğ¼Ñ', 'Åart/KoÅŸul'],
+    [/Ğ¼$/, 'CONDITIONAL_SHORT', '-Ğ¼', 'Åart/KoÅŸul'],
+    [/Ñ‰$/, 'INDICATIVE_DECLARATIVE', '-Ñ‰', 'Bildirme/Tasdik Eki']
   ];
 
   public static decompile(verbStem: string): {
@@ -238,30 +240,30 @@ export class NounCaseDecompiler {
   public static readonly CASE_PATTERNS: Array<
     [RegExp, CaseInfo['case'], CaseInfo['definiteness'], boolean, string, string]
   > = [
-    [/хэмкIэ$/, 'INSTRUMENTAL', 'DEFINITE', true, '-хэмкIэ', 'Enstrümantal Çoğul Belirli'],
-    [/хэмэ$/, 'ERGATIVE', 'DEFINITE', true, '-хэмэ', 'Ergatif Çoğul Diyalektik'],
-    [/хэм$/, 'ERGATIVE', 'DEFINITE', true, '-хэм', 'Ergatif Çoğul Belirli'],
-    [/хэр$/, 'NOMINATIVE', 'DEFINITE', true, '-хэр', 'Nominatif Çoğul Belirli'],
-    [/хэуэ$/, 'ADVERBIAL', 'INDEFINITE', true, '-хэуэ', 'Adverbiyal Çoğul'],
-    [/хэу$/, 'ADVERBIAL', 'INDEFINITE', true, '-хэу', 'Adverbiyal Çoğul Kısa'],
-    [/мкIэ$/, 'INSTRUMENTAL', 'DEFINITE', false, '-мкIэ', 'Enstrümantal Tekil Belirli'],
-    [/кIэ$/, 'INSTRUMENTAL', 'INDEFINITE', false, '-кIэ', 'Enstrümantal Tekil Belirsiz'],
-    [/рауэ$/, 'ADVERBIAL', 'DEFINITE', false, '-рауэ', 'Adverbiyal Vurgulu Belirli'],
-    [/уэ$/, 'ADVERBIAL', 'INDEFINITE', false, '-уэ', 'Adverbiyal Tekil'],
-    [/(?<![гкхI])у$/, 'ADVERBIAL', 'INDEFINITE', false, '-у', 'Adverbiyal Tekil Kısa'],
-    [/м$/, 'ERGATIVE', 'DEFINITE', false, '-м', 'Ergatif Tekil Belirli'],
-    [/р$/, 'NOMINATIVE', 'DEFINITE', false, '-р', 'Nominatif Tekil Belirli']
+    [/Ñ…ÑĞ¼ĞºIÑ$/, 'INSTRUMENTAL', 'DEFINITE', true, '-Ñ…ÑĞ¼ĞºIÑ', 'EnstrÃ¼mantal Ã‡oÄŸul Belirli'],
+    [/Ñ…ÑĞ¼Ñ$/, 'ERGATIVE', 'DEFINITE', true, '-Ñ…ÑĞ¼Ñ', 'Ergatif Ã‡oÄŸul Diyalektik'],
+    [/Ñ…ÑĞ¼$/, 'ERGATIVE', 'DEFINITE', true, '-Ñ…ÑĞ¼', 'Ergatif Ã‡oÄŸul Belirli'],
+    [/Ñ…ÑÑ€$/, 'NOMINATIVE', 'DEFINITE', true, '-Ñ…ÑÑ€', 'Nominatif Ã‡oÄŸul Belirli'],
+    [/Ñ…ÑÑƒÑ$/, 'ADVERBIAL', 'INDEFINITE', true, '-Ñ…ÑÑƒÑ', 'Adverbiyal Ã‡oÄŸul'],
+    [/Ñ…ÑÑƒ$/, 'ADVERBIAL', 'INDEFINITE', true, '-Ñ…ÑÑƒ', 'Adverbiyal Ã‡oÄŸul KÄ±sa'],
+    [/Ğ¼ĞºIÑ$/, 'INSTRUMENTAL', 'DEFINITE', false, '-Ğ¼ĞºIÑ', 'EnstrÃ¼mantal Tekil Belirli'],
+    [/ĞºIÑ$/, 'INSTRUMENTAL', 'INDEFINITE', false, '-ĞºIÑ', 'EnstrÃ¼mantal Tekil Belirsiz'],
+    [/Ñ€Ğ°ÑƒÑ$/, 'ADVERBIAL', 'DEFINITE', false, '-Ñ€Ğ°ÑƒÑ', 'Adverbiyal Vurgulu Belirli'],
+    [/ÑƒÑ$/, 'ADVERBIAL', 'INDEFINITE', false, '-ÑƒÑ', 'Adverbiyal Tekil'],
+    [/(?<![Ğ³ĞºÑ…I])Ñƒ$/, 'ADVERBIAL', 'INDEFINITE', false, '-Ñƒ', 'Adverbiyal Tekil KÄ±sa'],
+    [/Ğ¼$/, 'ERGATIVE', 'DEFINITE', false, '-Ğ¼', 'Ergatif Tekil Belirli'],
+    [/Ñ€$/, 'NOMINATIVE', 'DEFINITE', false, '-Ñ€', 'Nominatif Tekil Belirli']
   ];
 
   public static readonly POSSESSIVE_PREFIXES: Array<[RegExp, string, string]> = [
-    [/^сысей/, 'POSS_IND_1SG', 'Benimki'],
-    [/^ууей/, 'POSS_IND_2SG', 'Seninki'],
-    [/^си/, 'POSS_1SG', 'Benim'],
-    [/^уи/, 'POSS_2SG', 'Senin'],
-    [/^ди/, 'POSS_1PL', 'Bizim'],
-    [/^фи/, 'POSS_2PL', 'Sizin'],
-    [/^я/, 'POSS_3PL', 'Onların'],
-    [/^и/, 'POSS_3SG', 'Onun']
+    [/^ÑÑ‹ÑĞµĞ¹/, 'POSS_IND_1SG', 'Benimki'],
+    [/^ÑƒÑƒĞµĞ¹/, 'POSS_IND_2SG', 'Seninki'],
+    [/^ÑĞ¸/, 'POSS_1SG', 'Benim'],
+    [/^ÑƒĞ¸/, 'POSS_2SG', 'Senin'],
+    [/^Ğ´Ğ¸/, 'POSS_1PL', 'Bizim'],
+    [/^Ñ„Ğ¸/, 'POSS_2PL', 'Sizin'],
+    [/^Ñ/, 'POSS_3PL', 'OnlarÄ±n'],
+    [/^Ğ¸/, 'POSS_3SG', 'Onun']
   ];
 
   public static decompile(nounWord: string): {
@@ -289,8 +291,8 @@ export class NounCaseDecompiler {
       case: 'NOMINATIVE/ERGATIVE',
       definiteness: 'INDEFINITE/BARE',
       isPlural: false,
-      morpheme: '-Ø',
-      gloss: 'Yalın / Belirsiz Gövde'
+      morpheme: '-Ã˜',
+      gloss: 'YalÄ±n / Belirsiz GÃ¶vde'
     };
 
     for (const [pattern, caseName, defStatus, isPlural, morph, gloss] of this.CASE_PATTERNS) {
@@ -304,9 +306,9 @@ export class NounCaseDecompiler {
     let epentheticRestored = false;
     if (
       caseInfo.definiteness === 'DEFINITE' &&
-      stem.endsWith('ы') &&
+      stem.endsWith('Ñ‹') &&
       stem.length > 2 &&
-      !stem.endsWith('уы')
+      !stem.endsWith('ÑƒÑ‹')
     ) {
       stem = stem.slice(0, -1);
       epentheticRestored = true;
@@ -396,29 +398,71 @@ export class MorphemeParser {
 
 export class LemmaBuilderV2 {
   public static readonly KNOWN_CORE_ROOTS: Record<string, string> = {
-    гу: 'kalp / zihin / merkez',
-    нэ: 'göz / algı / çehre',
-    Iэ: 'el / eylem',
-    лъэ: 'ayak / zemin / adım',
-    щхьэ: 'kafa / zirve / gerekçe',
-    псэ: 'ruh / can / yaşam',
-    псы: 'su / berraklık',
-    бзэ: 'dil / konuşma',
-    пэ: 'burun / uç / ön',
-    дзэ: 'diş / ordu / kenar',
-    быдэ: 'sağlam / dirençli',
-    фIы: 'iyi / güzel',
-    бзыгъэ: 'keskin / bilge',
-    усыгъуэ: 'düzenleme / kurgu',
-    мафIэ: 'ateş',
-    щIы: 'toprak / yer'
+    'гу': 'kalp / zihin / merkez',
+    'нэ': 'göz / algı / çehre',
+    'Iэ': 'el / eylem',
+    'лъэ': 'ayak / zemin / adım',
+    'щхьэ': 'kafa / zirve / gerekçe',
+    'псэ': 'ruh / can / yaşam',
+    'псы': 'su / berraklık',
+    'бзэ': 'dil / konuşma',
+    'пэ': 'burun / uç / ön',
+    'дзэ': 'diş / ordu / kenar',
+    'быдэ': 'sağlam / dirençli',
+    'фIы': 'iyi / güzel',
+    'бзыгъэ': 'keskin / bilge',
+    'усыгъуэ': 'düzenleme / kurgu',
+    'мафIэ': 'ateş',
+    'щIы': 'toprak / yer',
   };
 
   private parser: MorphemeParser;
+  private knownRoots: Map<string, { form: string; meaning?: string; partOfSpeech?: string }>;
+  private nounCaseParser: NounCaseParser;
+  private verbDecompiler: VerbDecompiler;
 
   constructor() {
     this.parser = new MorphemeParser();
+    this.nounCaseParser = new NounCaseParser();
+    this.verbDecompiler = new VerbDecompiler();
+
+    // lexemes.json'dan bilinen kokleri yukle
+    this.knownRoots = new Map();
+    try {
+      const lexemesPath = path.resolve('./public/data/linguistic/lexemes.json');
+      if (fs.existsSync(lexemesPath)) {
+        const raw = fs.readFileSync(lexemesPath, 'utf-8');
+        const lexemes = JSON.parse(raw);
+        for (const l of lexemes) {
+          if (l.form) {
+            this.knownRoots.set(l.form, {
+              form: l.form,
+              meaning: l.literalMeaning,
+              partOfSpeech: l.partOfSpeech,
+            });
+          }
+        }
+      }
+    } catch (e) {
+      console.error('Error loading known roots:', e);
+    }
+        }
+      }
+    } catch (e) {
+      console.error('Error loading known roots:', e);
+    }
     this.loadRootsDatabase();
+  }
+
+  private determinePOS(word: string): 'NOUN' | 'VERB' | 'NOUN/LEMMA' {
+    const nounCase = this.nounCaseParser.parse(word);
+    const verbResult = this.verbDecompiler.decompile(word);
+
+    if (nounCase.case !== 'bare') return 'NOUN';
+    if (verbResult.prefixCount > 0) return 'VERB';
+    if (word.endsWith('Ğ½') && word.length > 3) return 'VERB';
+    if (/[Ñ‹ÑĞ°]Ğ½$/.test(word)) return 'VERB';
+    return 'NOUN/LEMMA';
   }
 
   private constructVerbLemma(verbRoot: string, prefixes: PrefixSlot[]): string {
@@ -435,10 +479,11 @@ export class LemmaBuilderV2 {
     const prefixStr = lexicalPrefixes.join('');
     const fullStem = prefixStr + stem;
 
-    if (fullStem.endsWith('ы')) return fullStem.slice(0, -1) + 'ын';
-    if (fullStem.endsWith('а') || fullStem.endsWith('э')) return fullStem + 'н';
-    if (!fullStem.endsWith('н')) return fullStem + 'эн';
-    return fullStem;
+    // Eger zaten -Ğ½ ile bitiyorsa, oldugu gibi birak
+    if (fullStem.endsWith('Ğ½')) return fullStem;
+    if (fullStem.endsWith('Ñ‹')) return fullStem.slice(0, -1) + 'Ñ‹Ğ½';
+    if (fullStem.endsWith('Ğ°') || fullStem.endsWith('Ñ')) return fullStem + 'Ğ½';
+    return fullStem + 'ÑĞ½';
   }
 
     private rootsDb: Array<any> = [];
@@ -491,7 +536,7 @@ export class LemmaBuilderV2 {
     const cleanStem = stem.trim().toLowerCase();
     const matches: RootMatch[] = [];
 
-    // 1. Tam bileşik eşleşme
+    // 1. Tam bileÅŸik eÅŸleÅŸme
     if (this.compoundsDb.has(cleanStem)) {
       const cmp = this.compoundsDb.get(cleanStem);
       matches.push({
@@ -504,7 +549,7 @@ export class LemmaBuilderV2 {
       });
     }
 
-    // 2. Birincil kök eşleşmesi
+    // 2. Birincil kÃ¶k eÅŸleÅŸmesi
     for (const r of this.rootsDb) {
       if (r.root.toLowerCase() === cleanStem) {
         matches.push({
@@ -517,7 +562,7 @@ export class LemmaBuilderV2 {
       }
     }
 
-    // 3. Somatik alt kök analizi
+    // 3. Somatik alt kÃ¶k analizi
     const subroots = this.decomposeSubroots(cleanStem);
     if (subroots.length > 0 && !matches.some(m => m.matchType === 'PRIMARY_ROOT')) {
       matches.push({
@@ -545,20 +590,36 @@ export class LemmaBuilderV2 {
 
   public buildLemma(word: string): LemmaBuildResult {
     const parseRes = this.parser.parse(word);
+
+    // 1. ONCE: lexemes.json'da tam eslesme var mi?
+    const knownRoot = this.knownRoots.get(word);
+    if (knownRoot) {
+      return {
+        inputWord: word,
+        lemma: word,
+        pos: knownRoot.partOfSpeech === 'verb' ? 'VERB' : 'NOUN',
+        confidenceScore: 1.0,
+        rawStem: word,
+        rootMatches: [],
+        morphemeBreakdown: { personArguments: [], prefixes: [], suffixes: [] },
+      };
+    }
+
     const vAnalysis = parseRes.verbAnalysis;
     const nAnalysis = parseRes.nounAnalysis;
 
-    let pos: PosType = 'NOUN/LEMMA';
+    const ourPos = this.determinePOS(word);
+    let pos: PosType = ourPos === 'NOUN' ? 'NOUN' : ourPos === 'VERB' ? 'VERB' : 'NOUN/LEMMA';
     let confidence = 0.9;
     let rawStem = nAnalysis.cleanNominalStem;
     let lemma = rawStem;
 
-    if (parseRes.primaryPos === 'VERB') {
+    if (ourPos === 'VERB') {
       pos = 'VERB';
       confidence = 0.95;
       rawStem = vAnalysis.extractedVerbRoot;
       lemma = this.constructVerbLemma(rawStem, vAnalysis.prefixSlots);
-    } else if (parseRes.primaryPos === 'NOUN') {
+    } else if (ourPos === 'NOUN') {
       pos = 'NOUN';
       confidence = 0.95;
       rawStem = nAnalysis.cleanNominalStem;
@@ -592,6 +653,12 @@ export class LemmaBuilderV2 {
     };
   }
 }
+
+
+
+
+
+
 
 
 
