@@ -40,6 +40,10 @@ export async function POST(req: NextRequest) {
           dialectVariants: l.dialectVariants,
           wordFamilyId: l.wordFamilyId,
           notes: l.notes,
+          rootIds: l.derivation?.rootIds ?? [],
+          conceptId: l.conceptId ?? null,
+          corpusFrequency: l.corpusFrequency ?? 0,
+          derivation: l.derivation ?? null,
         },
         confidence: 85,
       }));
@@ -50,3 +54,4 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: 'Sunucu hatası' }, { status: 500 });
   }
 }
+

@@ -1,4 +1,18 @@
 import { NextRequest, NextResponse } from 'next/server';
+import fs from 'fs';
+import path from 'path';
+
+// D-1A: Lexeme loader
+let cachedLexemes: any[] = [];
+function loadLexemes() {
+  if (cachedLexemes.length > 0) return cachedLexemes;
+  const p = path.join(process.cwd(), 'public', 'data', 'linguistic', 'lexemes.json');
+  if (fs.existsSync(p)) {
+    cachedLexemes = JSON.parse(fs.readFileSync(p, 'utf-8'));
+  }
+  return cachedLexemes;
+}
+
 import { loadDictionaryData } from '@/lib/dictionaryLoader';
 import { normalizePalochka } from '@/domain/utils/normalizePalochka';
 
@@ -47,6 +61,13 @@ interface GroupedResult {
   kaynaklar: KaynakInfo[];
   dialect?: string;
   score: number;
+  // D-1A: Dilbilimsel Bilgiler
+  rootIds?: string[];
+  wordFamilyId?: string | null;
+  conceptId?: string | null;
+  ipa?: string | null;
+  partOfSpeech?: string | null;
+  corpusFrequency?: number;
 }
 
 function normalizeDialectParam(val: string): string {
@@ -264,6 +285,13 @@ export async function GET(request: NextRequest) {
 
     scoredEntries.sort((a, b) => b.score - a.score);
 
+    // D-1A: Lexeme map
+    const lexemes = loadLexemes();
+    const lexemeMap = new Map(
+      lexemes.map((l: any) => [String(l.form || '' ).toLowerCase(), l])
+    );
+
+
     const groupedMap = new Map<string, GroupedResult>();
 
     for (const item of scoredEntries) {
@@ -316,13 +344,21 @@ export async function GET(request: NextRequest) {
           existing.kaynaklar.push(kaynak);
         }
       } else {
+        const lexeme = lexemeMap.get(key);
         groupedMap.set(key, {
-          kelime: String(rawWord),
-          anaKelime: String(rawWord),
-          anlamlar: kaynak.anlam ? [kaynak.anlam] : [],
-          kaynaklar: [kaynak],
-          dialect: entry.dialect ? String(entry.dialect) : undefined,
-          score,
+            kelime: String(rawWord),
+            anaKelime: String(rawWord),
+            anlamlar: kaynak.anlam ? [kaynak.anlam] : [],
+            kaynaklar: [kaynak],
+            dialect: entry.dialect ? String(entry.dialect) : undefined,
+            score,
+            // D-1A: Dilbilimsel Bilgiler
+            rootIds: lexeme?.derivation?.rootIds ?? [],
+            wordFamilyId: lexeme?.wordFamilyId ?? null,
+            conceptId: lexeme?.conceptId ?? null,
+            ipa: lexeme?.ipa ?? null,
+            partOfSpeech: lexeme?.partOfSpeech ?? null,
+            corpusFrequency: lexeme?.corpusFrequency ?? 0,
         });
       }
     }
@@ -339,3 +375,7 @@ export async function GET(request: NextRequest) {
     return NextResponse.json({ success: false, error: errorMessage }, { status: 500 });
   }
 }
+
+
+
+

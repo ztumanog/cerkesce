@@ -71,6 +71,11 @@ export interface ITranslationRepository {
   /**
    * Anlam metni ve opsiyonel dille arama yapar
    */
+  searchByMeaning(meaningQuery: string, languageFilter?: string): Promise<TranslationEntry[]>;
+
+  /**
+   * Anlam metni ve opsiyonel dille arama yapar
+   */
   findByMeaning(text: string, language?: string): Promise<TranslationEntry[]>;
 
   /**
@@ -124,7 +129,7 @@ export interface ITranslationRepository {
   /**
    * Lemma ile çeviri girişini arar
    */
-  findByLemma(lemma: string): Promise<TranslationEntry[] | TranslationEntry | null>;
+  findByLemma(lemma: string): Promise<TranslationEntry[]>;
 
   /**
    * Grup anlamlarını arar (getByGroup'un aliyası)
@@ -180,3 +185,5 @@ export interface ITranslationRepository {
    */
   exists?(lemma: string): Promise<boolean>;
 }
+
+

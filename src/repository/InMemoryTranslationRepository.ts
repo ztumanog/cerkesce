@@ -22,6 +22,7 @@ export const DEFAULT_MOCK_ENTRIES: TranslationEntry[] = [
       { id: 'm-1', language: 'TR', text: 'su', value: 'su' },
       { id: 'm-2', language: 'EN', text: 'water', value: 'water' },
       { id: 'm-2b', language: 'RU', text: 'вода', value: 'вода' },
+      { id: 'm-2c', language: 'AR', text: 'ماء', value: 'ماء' },
     ],
   },
   {
@@ -227,15 +228,13 @@ export class InMemoryTranslationRepository implements ITranslationRepository {
     });
   }
 
-  async findByLemma(
-    lemma: string
-  ): Promise<TranslationEntry[] | TranslationEntry | null> {
-    if (!lemma) return null;
+  async findByLemma(lemma: string): Promise<TranslationEntry[]> {
+    if (!lemma) return [];
     const trimmed = lemma.trim().toLowerCase();
-    return (
-      this.entries.find((e) => (e.lemma || '').toLowerCase() === trimmed) ||
-      null
+    const found = this.entries.find(
+      (e) => (e.lemma || '').toLowerCase() === trimmed
     );
+    return found ? [found] : [];
   }
 
   async searchByMeaning(
@@ -347,3 +346,6 @@ export class InMemoryTranslationRepository implements ITranslationRepository {
 // MockTranslationRepository — aynı davranışı gösteren alt sınıf
 // ============================================================
 export class MockTranslationRepository extends InMemoryTranslationRepository {}
+
+
+
