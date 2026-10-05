@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Star } from 'lucide-react';
+import { Star, Sun, Moon, Type } from 'lucide-react';
 
 export default function Header() {
   const [theme, setTheme] = useState<'dark' | 'light'>('dark');
