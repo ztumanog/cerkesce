@@ -32,7 +32,6 @@
 | ADR-0010 | Canonical Identity | `ADR-0015-TRANSLATIONENTRY_CANONICAL_IDENTITY.md` | Accepted | 2 |
 | ADR-0011 | Phase 3-7 Freeze | `ADR-0016-Phase3-7-Dondurma-SUPERSEDED.md` | Superseded | 2 |
 | ADR-0012 | Filter Flow | `ADR-P2-011-FILTER_FLOW_AUDIT.md` | Accepted | 2 |
-| ADR-0015 | TranslationEntry Canonical | `ADR-0015-TRANSLATIONENTRY_CANONICAL_IDENTITY.md` | Accepted | 2 |
 | ADR-0017 | WordFamily Concept Mapping | `ADR-0017-WORDFAMILY-CONCEPT-MAPPING.md` | Accepted | 4 |
 | ADR-0018 | WordFamilyResolver Scope Boundary | `ADR-0018-WORDFAMILYRESOLVER-SCOPE-BOUNDARY.md` | Accepted | 4 |
 | ADR-0019 | GUP Etimology | `ADR-0019-GUP-ETIMOLOGY.md` | Accepted | 4 |
@@ -46,7 +45,7 @@
 | ADR-0032 | Network Projection | `ADR_0014_CONCEPT_NETWORK_PROJECTION.md` | Accepted | 5 |
 | ADR-0040 | Morphological Root Taxonomy | `ADR-0040.md` | Accepted | 4 |
 | ADR-ROOT-001 | Root Taxonomy | `ADR-ROOT-001.md` | Accepted | 4 |
-| ADR-P2-011 | Filter Flow Audit | `ADR-P2-011-FILTER_FLOW_AUDIT.md` | Accepted | 2 |
+| ADR-ROOT-002 | Root WordFamily Unification | `ADR-ROOT-002-ROOT-WORDFAMILY-UNIFICATION.md` | Accepted | 4 |
 | ADR-P4-001 | Phase 4 Activation | `ADR-P4-001-PHASE4_ACTIVATION.md` | Accepted | 4 |
 | ADR-P5-000 | Phase 5 Unlock Approval | `ADR-P5-000-UNLOCK_APPROVAL.md` | Accepted | 5 |
 | ADR-P5-001 | Phase 5 Charter | `ADR-P5-001-FAZ5_CHARTER.md` | Accepted | 5 |
@@ -155,7 +154,6 @@ Bu dosya, tum ADR katalogunun TEK RESMI KAYNAGIDIR.
 | ADR-P14-001 | Platform Ecosystem | `ADR-P14-001-PLATFORM_ECOSYSTEM.md` | Proposed | 14 |
 | ADR-P15-001 | Platform Reliability | `ADR-P15-001-PLATFORM_RELIABILITY.md` | Proposed | 15 |
 
-## COMPLETION APPROVALS
 
 | ADR | Baslik | Dosya | Durum | Faz |
 |-----|--------|-------|-------|-----|

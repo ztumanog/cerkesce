@@ -1,4 +1,4 @@
-﻿/**
+/**
  * @file src/tests/ReverseTranslationSearch.test.ts
  * @description Reverse Translation Search (Anlamdan Lemmaya Arama) Testleri
  */
@@ -70,7 +70,7 @@ describe("Reverse Translation Search - Anlamdan Lemmaya Arama", () => {
       },
     ];
 
-    repository = new InMemoryTranslationRepository(entries, groups);
+    repository = new InMemoryTranslationRepository(entries, groups) as unknown as ITranslationRepository;
     matchingService = new MorphologyAwareMatchingService();
     service = new TranslationService(repository, matchingService);
   });
@@ -183,4 +183,5 @@ describe("Reverse Translation Search - Anlamdan Lemmaya Arama", () => {
     });
   });
 });
+
 

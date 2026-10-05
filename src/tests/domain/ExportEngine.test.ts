@@ -57,8 +57,8 @@ describe('Phase 7.0 - Export Engine Certification Tests', () => {
 
   it('EXP-005: Guarantees deterministic output across multiple export runs', () => {
     const fixedTimestamp = '2026-09-02T12:00:00.000Z';
-    const run1 = ExportEngineService.exportNetwork(sampleNetwork, { format: ExportFormat.JSON }, fixedTimestamp);
-    const run2 = ExportEngineService.exportNetwork(sampleNetwork, { format: ExportFormat.JSON }, fixedTimestamp);
+    const run1 = ExportEngineService.exportNetwork(sampleNetwork, { format: ExportFormat.JSON });
+    const run2 = ExportEngineService.exportNetwork(sampleNetwork, { format: ExportFormat.JSON });
 
     expect(run1.content).toBe(run2.content);
     // Verified deterministic sorting: CONCEPT_RIVER comes before CONCEPT_WATER alphabetically in sorted output
@@ -89,3 +89,4 @@ describe('Phase 7.0 - Export Engine Certification Tests', () => {
     expect(svgExport.content).toContain('ĞšÓ€ÑƒÑĞ´');
   });
 });
+

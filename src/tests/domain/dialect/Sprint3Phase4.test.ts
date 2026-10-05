@@ -1,4 +1,4 @@
-import { describe, it, expect, beforeEach } from 'vitest';
+﻿import { describe, it, expect, beforeEach } from 'vitest';
 import { Dialect } from '../../../domain/dialect/Dialect';
 import { Variant } from '../../../domain/dialect/Variant';
 import { VariantId } from '../../../domain/dialect/value-objects/VariantId';
@@ -20,35 +20,35 @@ describe('Sprint 3 (Phase 4): Variant Mapping & Cross-Phase Bridges (PiloÅŸum 
     it('âœ… DialectMapper rule tests: Tekil kural dÃ¶nÃ¼ÅŸÃ¼mÃ¼ doÄŸru yapmalÄ±dÄ±r', () => {
       mapper.addRule({
         sourceDialect: DialectCode.ABZAKH,
-        targetDialect: DialectCode.ADY_WEST,
+        targetDialect: DialectCode.ADY,
         pattern: 'ÑˆÑŠu',
         replacement: 'ÑˆÑŠ'
       });
 
-      const result = mapper.transform('ÑˆÑŠuÑ‹', DialectCode.ABZAKH, DialectCode.ADY_WEST);
+      const result = mapper.transform('ÑˆÑŠuÑ‹', DialectCode.ABZAKH, DialectCode.ADY);
       expect(result).toBe('ÑˆÑŠÑ‹');
     });
 
     it('âœ… Multiple rule chains: Ã‡oklu kural zincirini sÄ±rayla uygulamalÄ±dÄ±r', () => {
       mapper.addRule({
         sourceDialect: DialectCode.ABZAKH,
-        targetDialect: DialectCode.ADY_WEST,
+        targetDialect: DialectCode.ADY,
         pattern: 'a',
         replacement: 'e'
       });
       mapper.addRule({
         sourceDialect: DialectCode.ABZAKH,
-        targetDialect: DialectCode.ADY_WEST,
+        targetDialect: DialectCode.ADY,
         pattern: 'e',
         replacement: 'i'
       });
 
-      const result = mapper.transform('a', DialectCode.ABZAKH, DialectCode.ADY_WEST);
+      const result = mapper.transform('a', DialectCode.ABZAKH, DialectCode.ADY);
       expect(result).toBe('i');
     });
 
     it('âœ… Unknown rule handling: Kural bulunamadÄ±ÄŸÄ±nda metni deÄŸiÅŸtirmeden aynen dÃ¶nmelidir', () => {
-      const result = mapper.transform('orijinal', DialectCode.BESLENEY, DialectCode.KABARDAY);
+      const result = mapper.transform('orijinal', DialectCode.BESLENEY, DialectCode.KBD);
       expect(result).toBe('orijinal');
     });
   });
@@ -65,7 +65,7 @@ describe('Sprint 3 (Phase 4): Variant Mapping & Cross-Phase Bridges (PiloÅŸum 
       resolver = new DialectResolver(repo, linker);
 
       resolver.registerDialect(new Dialect({
-        code: DialectCode.ADY_WEST,
+        code: DialectCode.ADY,
         name: 'BatÄ± Standart',
         regionGroup: RegionGroup.WEST,
       }));
@@ -74,7 +74,7 @@ describe('Sprint 3 (Phase 4): Variant Mapping & Cross-Phase Bridges (PiloÅŸum 
         code: DialectCode.ABZAKH,
         name: 'Abzeh',
         regionGroup: RegionGroup.WEST,
-        parentDialectCode: DialectCode.ADY_WEST,
+        parentDialectCode: DialectCode.ADY,
       }));
 
       const mockConceptLinker: MeaningConceptLinkerInterface = {
@@ -104,7 +104,7 @@ describe('Sprint 3 (Phase 4): Variant Mapping & Cross-Phase Bridges (PiloÅŸum 
     it('âœ… Parent dialect fallback tests: Concept seviyesinden Ã§aÄŸrÄ±da parent fallback Ã§alÄ±ÅŸmalÄ±dÄ±r', async () => {
       const parentVariant = new Variant({
         id: VariantId.create('var-w-parent'),
-        dialectCode: DialectCode.ADY_WEST,
+        dialectCode: DialectCode.ADY,
         spelling: 'Ğ¿ÑÑ‹ (Standart)'
       });
 
@@ -114,7 +114,7 @@ describe('Sprint 3 (Phase 4): Variant Mapping & Cross-Phase Bridges (PiloÅŸum 
       const result = await bridge.resolveVariantByConcept('concept-water', DialectCode.ABZAKH);
       expect(result).toHaveLength(1);
       expect(result[0].spelling).toBe('Ğ¿ÑÑ‹ (Standart)');
-      expect(result[0].dialectCode).toBe(DialectCode.ADY_WEST);
+      expect(result[0].dialectCode).toBe(DialectCode.ADY);
     });
 
     it('âœ… No Phase 2 / Phase 3 dependency leak & Unknown Concept handling', async () => {

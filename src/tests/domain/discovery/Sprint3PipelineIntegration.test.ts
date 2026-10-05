@@ -1,4 +1,6 @@
+﻿import { DiscoveryRelationType } from '../../../domain/discovery/types/DiscoveryRelationType';
 import { describe, it, expect, vi } from 'vitest';
+import { DialectCode } from '@/domain/dialect/types/DialectTypes';
 import { MultilingualExplorer } from '../../../domain/discovery/services/MultilingualExplorer';
 import { TraversalNode } from '../../../domain/discovery/dto/TraversalNode';
 
@@ -25,10 +27,10 @@ describe('Phase 5.1 Sprint 3: Knowledge Discovery Pipeline Certification', () =>
     };
 
     const mockNodes: TraversalNode[] = [
-      { conceptId: 'CONCEPT_WATER', depth: 0, relationType: 'ROOT', weight: 1.0 },
-      { conceptId: 'CONCEPT_ICE', depth: 1, relationType: 'STATE_OF', weight: 0.9 },
-      { conceptId: 'CONCEPT_RIVER', depth: 1, relationType: 'LOCATION_OF', weight: 0.8 },
-      { conceptId: 'CONCEPT_LIQUID', depth: 2, relationType: 'CATEGORY_OF', weight: 0.7 }
+      { conceptId: 'CONCEPT_WATER', depth: 0, relationType: DiscoveryRelationType.ROOT, weight: 1.0 },
+      { conceptId: 'CONCEPT_ICE', depth: 1, relationType: DiscoveryRelationType.STATE_OF, weight: 0.9 },
+      { conceptId: 'CONCEPT_RIVER', depth: 1, relationType: DiscoveryRelationType.LOCATION_OF, weight: 0.8 },
+      { conceptId: 'CONCEPT_LIQUID', depth: 2, relationType: DiscoveryRelationType.CATEGORY_OF, weight: 0.7 }
     ];
 
     const mockGraphTraversalService = {
@@ -43,7 +45,7 @@ describe('Phase 5.1 Sprint 3: Knowledge Discovery Pipeline Certification', () =>
     );
 
     // 2. Pipeline Tetiği
-    const result = await explorer.explore('water', { targetDialect: 'KBD' });
+    const result = await explorer.explore('water', { targetDialect: DialectCode.KBD });
 
     // 3. Pipeline Doğrulamaları
     expect(result.query).toBe('water');

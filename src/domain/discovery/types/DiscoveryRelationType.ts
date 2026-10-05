@@ -1,4 +1,4 @@
-/**
+﻿/**
  * DiscoveryRelationType
  * 
  * Discovery Engine ve Sözlük ilişkileri için tüm bağ türleri.
@@ -16,6 +16,7 @@ export enum DiscoveryRelationType {
   STATE_OF = 'STATE_OF',
   CATEGORY_OF = 'CATEGORY_OF',
   LOCATION_OF = 'LOCATION_OF',
+  DRINK_OF = 'DRINK_OF',
 
   // Faz 3 (sözlük) ilişkileri
   DIALECT_VARIANT = 'DIALECT_VARIANT',
@@ -36,6 +37,7 @@ export const RELATION_TYPE_LABELS: Record<DiscoveryRelationType, string> = {
   [DiscoveryRelationType.STATE_OF]: 'Durum',
   [DiscoveryRelationType.CATEGORY_OF]: 'Kategori',
   [DiscoveryRelationType.LOCATION_OF]: 'Konum',
+  [DiscoveryRelationType.DRINK_OF]: 'İçecek',
   [DiscoveryRelationType.DIALECT_VARIANT]: 'Lehçe Farkı',
   [DiscoveryRelationType.DERIVED]: 'Türetilmiş',
   [DiscoveryRelationType.HOMONYM]: 'Eş Sesli',
@@ -52,6 +54,7 @@ export const RELATION_TYPE_STYLES: Record<DiscoveryRelationType, string> = {
   [DiscoveryRelationType.STATE_OF]: 'bg-indigo-50 text-indigo-700 border-indigo-200',
   [DiscoveryRelationType.CATEGORY_OF]: 'bg-purple-50 text-purple-700 border-purple-200',
   [DiscoveryRelationType.LOCATION_OF]: 'bg-sky-50 text-sky-700 border-sky-200',
+  [DiscoveryRelationType.DRINK_OF]: 'bg-teal-50 text-teal-700 border-teal-200',
   [DiscoveryRelationType.DIALECT_VARIANT]: 'bg-sky-50 text-sky-700 border-sky-200',
   [DiscoveryRelationType.DERIVED]: 'bg-purple-50 text-purple-700 border-purple-200',
   [DiscoveryRelationType.HOMONYM]: 'bg-slate-50 text-slate-700 border-slate-200',

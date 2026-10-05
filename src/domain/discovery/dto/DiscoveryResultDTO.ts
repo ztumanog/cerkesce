@@ -1,5 +1,7 @@
 import { RankedRelatedConceptDTO } from './RankedRelatedConceptDTO';
 import { TraversalNode } from './TraversalNode';
+import { MeaningDTO } from './MeaningDTO';
+import { VariantDTO } from './VariantDTO';
 
 export interface DiscoveryResultDTO {
   conceptId?: string;
@@ -12,8 +14,8 @@ export interface DiscoveryResultDTO {
 
   traversalNodes?: TraversalNode[];
   contextClusters?: unknown[];
-  meanings?: unknown[];
-  variants?: unknown[];
+  meanings?: MeaningDTO[];
+  variants?: VariantDTO[];
   graphMetadata?: Record<string, unknown>;
 
   executionTimeMs?: number;

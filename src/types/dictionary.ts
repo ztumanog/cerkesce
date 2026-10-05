@@ -1,4 +1,4 @@
-// ============================================================
+﻿// ============================================================
 // TEMEL ANLAM / TANIM TİPLERİ
 // ============================================================
 
@@ -230,4 +230,31 @@ export function isSourceContent(value: unknown): value is SourceContent {
 
 export function isSourceContentArray(value: unknown): value is SourceContent[] {
   return Array.isArray(value) && value.every(isSourceContent);
+}
+// ============================================================
+// TEST FIXTURES ICIN TIP TANIMLARI
+// ============================================================
+
+export interface MeaningItem {
+  id: string;
+  text: string;
+  language: string;
+  definition?: string;
+  example?: string;
+  context?: string;
+}
+
+export interface LemmaEntry {
+  id: string;
+  lemma: string;
+  normalizedLemma?: string;
+  meanings: MeaningItem[];
+  language: string;
+  dialect?: string;
+  groupId?: string;
+  partOfSpeech?: string;
+  etymology?: string;
+  notes?: string;
+  createdAt?: Date;
+  updatedAt?: Date;
 }

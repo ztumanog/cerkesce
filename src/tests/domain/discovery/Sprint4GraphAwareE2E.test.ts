@@ -1,4 +1,5 @@
-import { describe, it, expect, beforeEach } from 'vitest';
+﻿import { describe, it, expect, beforeEach } from 'vitest';
+import { DialectCode } from '@/domain/dialect/types/DialectTypes';
 import { MultilingualExplorer } from '../../../domain/discovery/services/MultilingualExplorer';
 import { GraphTraversalService } from '../../../domain/discovery/services/GraphTraversalService';
 import { DiscoveryAssembler } from '../../../domain/discovery/services/DiscoveryAssembler';
@@ -91,7 +92,7 @@ describe('Phase 5.1 Sprint 4: Graph-Aware Discovery E2E Certification', () => {
     );
 
     // ACT
-    const result = await explorer.explore('su', { targetDialect: 'KBD' });
+    const result = await explorer.explore('su', { targetDialect: DialectCode.KBD });
 
     // ASSERT: Temel Özellikler
     expect(result.query).toBe('su');

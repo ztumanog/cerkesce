@@ -1,4 +1,4 @@
-import { describe, it, expect, beforeEach } from 'vitest';
+﻿import { describe, it, expect, beforeEach } from 'vitest';
 import { InMemoryConceptRepository } from '../../repository/InMemoryConceptRepository';
 import { Concept } from '../../domain/concept/Concept';
 import { ConceptID } from '../../domain/concept/value-objects/ConceptID';
@@ -15,7 +15,7 @@ describe('Sprint 2: CE-03 & CE-09 - InMemoryConceptRepository', () => {
     const concept = new Concept({ id: conceptId, relations: [] });
 
     await repository.save(concept);
-    const found = await repository.findById(conceptId);
+    const found = await repository.findById(conceptId as unknown as string);
 
     expect(found).not.toBeNull();
     expect(found?.id.equals(conceptId)).toBe(true);
@@ -32,7 +32,7 @@ describe('Sprint 2: CE-03 & CE-09 - InMemoryConceptRepository', () => {
     await repository.save(c1);
     await repository.save(c2);
 
-    const foundList = await repository.findMany([id1, id2, id3]);
+    const foundList = await repository.findMany([id1 as unknown as string, id2 as unknown as string, id3 as unknown as string]);
 
     expect(foundList).toHaveLength(2);
     expect(foundList.some((c: Concept) => c.id.equals(id1))).toBe(true);
@@ -41,7 +41,7 @@ describe('Sprint 2: CE-03 & CE-09 - InMemoryConceptRepository', () => {
 
   it('olmayan kavram sorgulandığında null dönmelidir', async () => {
     const conceptId = ConceptID.create();
-    const found = await repository.findById(conceptId);
+    const found = await repository.findById(conceptId as unknown as string);
 
     expect(found).toBeNull();
   });
@@ -51,10 +51,10 @@ describe('Sprint 2: CE-03 & CE-09 - InMemoryConceptRepository', () => {
     const concept = new Concept({ id: conceptId, relations: [] });
 
     await repository.save(concept);
-    expect(await repository.exists(conceptId)).toBe(true);
+    expect(await repository.exists(conceptId as unknown as string)).toBe(true);
 
-    const deleted = await repository.delete(conceptId);
+    const deleted = await repository.delete(conceptId as unknown as string);
     expect(deleted).toBe(true);
-    expect(await repository.exists(conceptId)).toBe(false);
+    expect(await repository.exists(conceptId as unknown as string)).toBe(false);
   });
 });

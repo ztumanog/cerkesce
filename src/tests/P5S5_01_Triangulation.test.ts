@@ -114,7 +114,7 @@ describe('P5S5-01: Cross-Lingual Concept Triangulation Sertifikasyonu', () => {
       expect(meaning?.id).toBe(testCase.expectedMeaningId);
 
       // Step B: MeaningConceptLinker Ã‡Ã¶zÃ¼mleme
-      const resolvedConcept = await linker.resolveConcept(meaning!.id);
+      const resolvedConcept = await linker.resolveConcept(meaning!.id!);
       expect(resolvedConcept).not.toBeNull();
 
       // Step C: Concept Triangulation DoÄŸrulamasÄ±
@@ -126,3 +126,4 @@ describe('P5S5-01: Cross-Lingual Concept Triangulation Sertifikasyonu', () => {
     }
   });
 });
+

@@ -1,4 +1,4 @@
-import { DialectCode } from '../../dialect/types/DialectTypes';
+﻿import { DialectCode } from '../../dialect/types/DialectTypes';
 import { DiscoveryResultDTO } from '../dto/DiscoveryResultDTO';
 import { MultilingualExplorer } from './MultilingualExplorer';
 
@@ -8,7 +8,7 @@ export class SearchFacade {
   /**
    * Dış dünya için saf API Giriş Kapısı
    */
-  public async search(query: string, preferredDialect: DialectCode = DialectCode.ADY_WEST): Promise<DiscoveryResultDTO> {
+  public async search(query: string, preferredDialect: DialectCode = DialectCode.ADY): Promise<DiscoveryResultDTO> {
     return this.explorer.explore(query, { targetDialect: preferredDialect });
   }
 }

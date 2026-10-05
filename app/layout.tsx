@@ -1,9 +1,10 @@
-/**
+﻿/**
  * File: src/app/layout.tsx
  * Generated: 2026-09-19
  * Layer: UI
  */
 import type { Metadata } from 'next';
+import Script from 'next/script';
 import Header from '@/components/layout/Header';
 import { FooterWrapper } from '@/components/layout/FooterWrapper';
 import { Toaster } from 'sonner';
@@ -58,13 +59,13 @@ export default function RootLayout({
     <html lang="tr" suppressHydrationWarning>
             <head>
         <link rel="manifest" href="/manifest.webmanifest" />
-                <meta name="theme-color" content="#d97706" />
+        <meta name="theme-color" content="#d97706" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
         <meta name="apple-mobile-web-app-title" content="Çerkesçe" />
         <link rel="apple-touch-icon" href="/icons/favicon.svg" />
-        <script dangerouslySetInnerHTML={{ __html: themeScript }} suppressHydrationWarning />
-              </head>
+        
+      </head>
       <body
         suppressHydrationWarning
         className="flex flex-col min-h-screen bg-white dark:bg-slate-950 text-slate-900 dark:text-slate-50 transition-colors duration-200 antialiased"

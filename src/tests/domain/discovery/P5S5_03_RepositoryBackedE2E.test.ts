@@ -1,4 +1,5 @@
-import { describe, it, expect } from 'vitest';
+﻿import { describe, it, expect } from 'vitest';
+import { DialectCode } from '@/domain/dialect/types/DialectTypes';
 import { MultilingualExplorer } from '../../../domain/discovery/services/MultilingualExplorer';
 import { Concept } from '../../../domain/concept/Concept';
 import { ConceptID } from '../../../domain/concept/value-objects/ConceptID';
@@ -102,7 +103,7 @@ describe('P5S5-03: Repository-Backed True E2E Certification', () => {
     );
 
     const startTime = performance.now();
-    const result = await explorer.explore('su', { targetDialect: 'KBD' });
+    const result = await explorer.explore('su', { targetDialect: DialectCode.KBD });
     const duration = performance.now() - startTime;
 
     // Output checks
@@ -110,12 +111,12 @@ describe('P5S5-03: Repository-Backed True E2E Certification', () => {
     expect(result.conceptId).toBe('01ARZ3NDEKTSV4RRFFQ69G5FAV');
     expect(result.canonicalName).toBe('Water');
     expect(result.meanings).toHaveLength(1);
-    expect(result.variants).toHaveLength(1);
-    expect(result.variants[0].term).toBe('ĞŸÑÑ‹');
+    expect(result.variants!).toHaveLength(1);
+    expect(result.variants![0].term).toBe('ĞŸÑÑ‹');
 
     // Graph checks
-    expect(result.relatedConcepts).toHaveLength(2);
-    const relatedIds = result.relatedConcepts?.map(r => r.conceptId);
+    expect(result.relatedConcepts!).toHaveLength(2);
+    const relatedIds = result.relatedConcepts!?.map(r => r.conceptId);
     expect(relatedIds).toContain('01ARZ3NDEKTSV4RRFFQ69G5FB0');
     expect(relatedIds).toContain('01ARZ3NDEKTSV4RRFFQ69G5FB1');
 
