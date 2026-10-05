@@ -2,53 +2,25 @@
 
 import React, { useRef, useEffect, useState, useCallback, useMemo } from 'react';
 import {
-  BookOpen,
-  Check,
-  Copy,
-  Share2,
-  X,
-  Volume2,
-  ChevronRight,
-  Languages,
-  Filter,
-  Zap,
+  BookOpen, Check, Copy, Share2, X, Volume2, ChevronRight, Languages, Filter, Zap,
 } from 'lucide-react';
-import type {
-  DialectFilterValue,
-} from '@/components/dictionary/DialectFilter';
-import type {
-  LanguageFilterValue,
-} from '@/components/dictionary/LanguageFilter';
-import { normalizeLanguage } from '@/lib/normalizers/languageNormalizer';
-import type {
-  DictionaryEntry,
-  SourceContent,
-  SourceSection,
-} from '@/types/dictionary';
+import type { DialectFilterValue } from '@/components/dictionary/DialectFilter';
+import type { LanguageFilterValue } from '@/components/dictionary/LanguageFilter';
+import type { DictionaryEntry, SourceContent, SourceSection } from '@/types/dictionary';
 import { normalizeDrawerContent } from '@/lib/normalizers/drawerContent';
 import PaylasimGorseliModal from '@/components/dictionary/PaylasimGorseliModal';
 import { normalizeToSourceContents } from '@/lib/normalizers/sourceContentNormalizer';
-
 import { resolveSourceMetadata } from '@/lib/normalizers/sourceMetadataResolver';
 import { DiscoveryFacade } from '@/domain/discovery/services/DiscoveryFacade';
 import { InMemoryConceptGraphRepository } from '@/repository/InMemoryConceptGraphRepository';
 import { CorpusExplorerService } from '@/domain/discovery/services/CorpusExplorerService';
 import { CorpusExplorerResult } from '@/domain/discovery/dto/CorpusExplorerDTO';
 import { getRelationLabel, getRelationStyle } from '@/domain/discovery/types/DiscoveryRelationType';
-// HTML tag'lerini temizle
+
 function cleanHtml(html: string): string {
   if (!html) return '';
-  return html
-    .replace(/<[^>]*>/g, ' ')
-    .replace(/&nbsp;/g, ' ')
-    .replace(/&lt;/g, '<')
-    .replace(/&gt;/g, '>')
-    .replace(/&amp;/g, '&')
-    .replace(/\s+/g, ' ')
-    .trim();
+  return html.replace(/<[^>]*>/g, ' ').replace(/&nbsp;/g, ' ').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&amp;/g, '&').replace(/\s+/g, ' ').trim();
 }
-
-
 
 interface KelimeDetayDrawerProps {
   seciliKelime: DictionaryEntry | null;
@@ -61,179 +33,86 @@ interface KelimeDetayDrawerProps {
   onConceptClick?: (word: string) => void;
 }
 
-
 function matchesDialect(source: SourceContent, target: DialectFilterValue): boolean {
   if (target === 'ALL') return true;
-
-const meta = resolveSourceMetadata(source.sourceId || source.sourceName || '');
+  const meta = resolveSourceMetadata(source.sourceId || source.sourceName || '');
   if (meta) {
     const metaDialect = meta.dialect?.toUpperCase();
     const srcLang = meta.sourceLanguage?.toLowerCase();
-
-    if (target === 'KBD') {
-      return metaDialect === 'DOGU' || metaDialect === 'KBD' || srcLang === 'kbd';
-    }
-    if (target === 'ADY') {
-      return metaDialect === 'BATI' || metaDialect === 'ADY' || srcLang === 'ady';
-    }
+    if (target === 'KBD') return metaDialect === 'DOGU' || metaDialect === 'KBD' || srcLang === 'kbd';
+    if (target === 'ADY') return metaDialect === 'BATI' || metaDialect === 'ADY' || srcLang === 'ady';
   }
-
   if (source.dialect) {
     const d = source.dialect.toUpperCase();
     if (target === 'KBD' && (d.includes('DOGU') || d.includes('KBD'))) return true;
     if (target === 'ADY' && (d.includes('BATI') || d.includes('ADY'))) return true;
   }
-
   return false;
 }
 
 function matchesLanguage(source: SourceContent, target: LanguageFilterValue): boolean {
   if (target === 'ALL') return true;
-
   const meta = resolveSourceMetadata(source.sourceId || source.sourceName || '');
   if (!meta) return false;
-
   const src = String(meta.sourceLanguage || '').toLowerCase();
   const tgt = String(meta.targetLanguage || '').toLowerCase();
   const isCirc = (l: string) => l === 'ady' || l === 'kbd';
-
-  if (target === 'MULTI') {
-    return meta.file === '18.Kbd-Ru&En.json';
-  }
-  if (target === 'CIRC') {
-    return isCirc(src) && isCirc(tgt);
-  }
-
+  if (target === 'MULTI') return meta.file === '18.Kbd-Ru&En.json';
+  if (target === 'CIRC') return isCirc(src) && isCirc(tgt);
   const other = !isCirc(src) ? src : tgt;
   return other === target.toLowerCase();
 }
 
-function SectionRenderer({
-  section,
-  depth = 0,
-}: {
-  section: SourceSection;
-  depth?: number;
-}) {
+function SectionRenderer({ section, depth = 0 }: { section: SourceSection; depth?: number }) {
   const indent = depth * 12;
-
-  // ---- ROMAN: "I", "II" ----
   if (section.type === 'roman') {
     return (
       <div style={{ marginLeft: indent }} className="mt-3">
-        <div className="font-bold text-sm text-slate-900 dark:text-slate-100 border-b border-slate-200 dark:border-slate-700 pb-1">
-          {section.label}
-        </div>
-        {section.children?.map((c, i) => (
-          <SectionRenderer key={i} section={c} depth={depth + 1} />
-        ))}
+        <div className="font-bold text-sm text-slate-900 dark:text-slate-100 border-b border-slate-200 dark:border-slate-700 pb-1">{section.label}</div>
+        {section.children?.map((c, i) => <SectionRenderer key={i} section={c} depth={depth + 1} />)}
       </div>
     );
   }
-
-  // ---- ARABIC: "1.", "2." ----
   if (section.type === 'arabic') {
     return (
       <div style={{ marginLeft: indent }} className="mt-3 mb-2">
-        <p
-          className="text-sm font-bold text-slate-600 dark:text-slate-300 leading-relaxed border-l-2 border-slate-300 dark:border-slate-600 pl-2"
-          dangerouslySetInnerHTML={{ __html: section.text }}
-        />
-        {section.children?.map((c, i) => (
-          <SectionRenderer key={i} section={c} depth={depth + 1} />
-        ))}
+        <p className="text-sm font-bold text-slate-600 dark:text-slate-300 leading-relaxed border-l-2 border-slate-300 dark:border-slate-600 pl-2" dangerouslySetInnerHTML={{ __html: section.text }} />
+        {section.children?.map((c, i) => <SectionRenderer key={i} section={c} depth={depth + 1} />)}
       </div>
     );
   }
-
-  // ---- EXAMPLE: "◊" ----
-  if (section.type === 'example') {
-    return (
-      <p
-        style={{ marginLeft: indent }}
-        className="text-xs sm:text-sm italic text-slate-600 dark:text-slate-400 mt-1"
-        dangerouslySetInnerHTML={{ __html: section.text }}
-      />
-    );
-  }
-
-  // ---- RELATED: "/" ----
-if (section.type === 'related') {
-  return (
-    <p
-      style={{ marginLeft: indent }}
-      className="text-xs sm:text-sm text-sky-700 dark:text-sky-300 mt-1 leading-relaxed"
-    >
-      <span className="text-sky-500 mr-1 font-bold">{section.label || '~'}</span>
-      <span dangerouslySetInnerHTML={{ __html: section.text }} />
-    </p>
-  );
-}
-  // ---- SUFFIX: "-" ----
-  if (section.type === 'suffix') {
-    return (
-      <p
-        style={{ marginLeft: indent }}
-        className="text-xs sm:text-sm text-slate-500 dark:text-slate-500 mt-1 italic"
-        dangerouslySetInnerHTML={{ __html: section.text }}
-      />
-    );
-  }
-
-  // ---- PLAIN: Direkt HTML render ----
-  return (
-    <p
-      style={{ marginLeft: indent }}
-      className="text-xs sm:text-sm text-slate-700 dark:text-slate-300 mt-1 leading-relaxed"
-      dangerouslySetInnerHTML={{ __html: section.text }}
-    />
-  );
+  if (section.type === 'example') return <p style={{ marginLeft: indent }} className="text-xs sm:text-sm italic text-slate-600 dark:text-slate-400 mt-1" dangerouslySetInnerHTML={{ __html: section.text }} />;
+  if (section.type === 'related') return <p style={{ marginLeft: indent }} className="text-xs sm:text-sm text-sky-700 dark:text-sky-300 mt-1 leading-relaxed"><span className="text-sky-500 mr-1 font-bold">{section.label || '~'}</span><span dangerouslySetInnerHTML={{ __html: section.text }} /></p>;
+  if (section.type === 'suffix') return <p style={{ marginLeft: indent }} className="text-xs sm:text-sm text-slate-500 mt-1 italic" dangerouslySetInnerHTML={{ __html: section.text }} />;
+  return <p style={{ marginLeft: indent }} className="text-xs sm:text-sm text-slate-700 dark:text-slate-300 mt-1 leading-relaxed" dangerouslySetInnerHTML={{ __html: section.text }} />;
 }
 
-export default function KelimeDetayDrawer({
-
-
-  seciliKelime,
-  isOpen,
-  open,
-  onClose,
-  metinBoyutu = 16,
-  dialectFilter = 'ALL',
-  languageFilter = 'ALL',
-  onConceptClick,
-}: KelimeDetayDrawerProps) {
+export default function KelimeDetayDrawer({ seciliKelime, isOpen, open, onClose, metinBoyutu = 16, dialectFilter = 'ALL', languageFilter = 'ALL', onConceptClick }: KelimeDetayDrawerProps) {
   const [corpusData, setCorpusData] = useState<CorpusExplorerResult | null>(null);
+  const [familyMembers, setFamilyMembers] = useState<any[]>([]);
+  const [relatedConcepts, setRelatedConcepts] = useState<any[]>([]);
+  const [isLoadingRelated, setIsLoadingRelated] = useState(false);
+  const [kopyalandi, setKopyalandi] = useState(false);
+  const [paylasimAcik, setPaylasimAcik] = useState(false);
+  const [hasSpeechSupport, setHasSpeechSupport] = useState(false);
+  const [sozlukFilter, setSozlukFilter] = useState<string>('ALL');
   const corpusExplorerServiceRef = useRef<CorpusExplorerService | null>(null);
+  const drawerRef = useRef<HTMLDivElement>(null);
+  const kapatBtnRef = useRef<HTMLButtonElement>(null);
 
-  // P5-004: Corpus Explorer - dictionaries.json yukle
+  // Speech support
+  useEffect(() => { if (typeof window !== 'undefined' && 'speechSynthesis' in window) setHasSpeechSupport(true); }, []);
+
+  // Corpus Explorer
   useEffect(() => {
-    if (!corpusExplorerServiceRef.current) {
-      corpusExplorerServiceRef.current = new CorpusExplorerService();
-    }
-
-    fetch('/data/dictionaries.json')
-      .then((r) => r.json())
-      .then((dicts) => {
-        corpusExplorerServiceRef.current?.loadDictionaries(dicts);
-      })
-      .catch((e) => {
-        console.warn('CorpusExplorerService: dictionaries yuklenemedi', e);
-      });
+    if (!corpusExplorerServiceRef.current) corpusExplorerServiceRef.current = new CorpusExplorerService();
+    fetch('/data/dictionaries.json').then((r) => r.json()).then((dicts) => corpusExplorerServiceRef.current?.loadDictionaries(dicts)).catch((e) => console.warn('CorpusExplorerService: dictionaries yuklenemedi', e));
   }, []);
 
-  // P5-004: Secili kelime degistiginde corpus verisini guncelle
   useEffect(() => {
-    if (!corpusExplorerServiceRef.current || !seciliKelime) {
-      setCorpusData(null);
-      return;
-    }
-
+    if (!corpusExplorerServiceRef.current || !seciliKelime) { setCorpusData(null); return; }
     const word = seciliKelime.lemma || seciliKelime.word || '';
-    if (!word) {
-      setCorpusData(null);
-      return;
-    }
-
+    if (!word) { setCorpusData(null); return; }
     const sourceContents = normalizeToSourceContents(seciliKelime);
     const allLangs = new Set<string>();
     let totalMeanings = 0;
@@ -242,165 +121,73 @@ export default function KelimeDetayDrawer({
       if (source.sourceLanguage) allLangs.add(source.sourceLanguage);
       if (source.targetLanguage) allLangs.add(source.targetLanguage);
     }
-    setCorpusData({
-      word,
-      meaningCount: totalMeanings,
-      languages: Array.from(allLangs),
-      dictionaries: sourceContents.map(s => ({
-        file: s.sourceId || s.sourceName || '',
-        title: s.sourceName || s.title || '',
-        sourceLanguage: s.sourceLanguage || '',
-        targetLanguage: s.targetLanguage || '',
-        dialect: s.dialect || '',
-        year: String(s.year || ''),
-        author: s.author || '',
-      })),
-      totalDictionaries: sourceContents.length,
+    setCorpusData({ word, meaningCount: totalMeanings, languages: Array.from(allLangs), dictionaries: sourceContents.map(s => ({ file: s.sourceId || s.sourceName || '', title: s.sourceName || s.title || '', sourceLanguage: s.sourceLanguage || '', targetLanguage: s.targetLanguage || '', dialect: s.dialect || '', year: String(s.year || ''), author: s.author || '' })), totalDictionaries: sourceContents.length });
+  }, [seciliKelime]);
+
+  // Word Family üyeleri
+  useEffect(() => {
+    console.log('=== FAMILY USE EFFECT TETIKLENDI ===');
+    console.log('seciliKelime:', seciliKelime);
+    console.log('seciliKelime.wordFamilyId:', seciliKelime?.wordFamilyId);
+    if (!seciliKelime?.wordFamilyId) { setFamilyMembers([]); return; }
+    fetch(`/api/sozluk/family/${seciliKelime.wordFamilyId}`).then((r) => r.json()).then((data) => {
+      console.log('familyMembers data:', data);
+      setFamilyMembers(data.members || []);
+    }).catch((e) => {
+      console.error('familyMembers fetch error:', e);
+      setFamilyMembers([]);
     });
+  }, [seciliKelime?.wordFamilyId]);
+
+  // İlgili kavramlar
+  useEffect(() => {
+    if (!seciliKelime || !seciliKelime.word) { setRelatedConcepts([]); return; }
+    setIsLoadingRelated(true);
+    const repo = new InMemoryConceptGraphRepository();
+    const facade = new DiscoveryFacade(repo);
+    facade.explore(seciliKelime.word, { maxDepth: 1 }).then((result) => setRelatedConcepts((result.relatedConcepts || []) as any[])).catch(() => setRelatedConcepts([])).finally(() => setIsLoadingRelated(false));
   }, [seciliKelime]);
 
   const isDrawerOpen = open ?? isOpen ?? false;
 
-  const [relatedConcepts, setRelatedConcepts] = useState<Array<{
-    conceptId: string;
-    displayName?: string;
-    displayNameTr?: string;
-    canonicalName?: string;
-    relationType: string;
-    score?: number;
-  }>>([]);
-  const [isLoadingRelated, setIsLoadingRelated] = useState(false);
+  useEffect(() => { if (isDrawerOpen) setSozlukFilter('ALL'); }, [isDrawerOpen, seciliKelime]);
 
   useEffect(() => {
-    console.log("USE EFFECT TETIKLENDI, seciliKelime:", seciliKelime);
-      console.log("SECILI KELIME WORD:", seciliKelime?.word);
-      console.log("SECILI KELIME MEANINGS:", seciliKelime?.meanings);
-      console.log("SECILI KELIME ANAHTARLARI:", seciliKelime ? Object.keys(seciliKelime) : null);
-    if (!seciliKelime || !seciliKelime.word) {
-      setRelatedConcepts([]);
-      return;
-    }
-    setIsLoadingRelated(true);
-    const repo = new InMemoryConceptGraphRepository();
-    const facade = new DiscoveryFacade(repo);
-    facade.explore(seciliKelime.word, {
-        maxDepth: 1,
-        hints: [
-          seciliKelime.meaning,
-          seciliKelime.anlam,
-          seciliKelime.definition,
-          seciliKelime.tanim,
-          ...((seciliKelime as any).definitions || []),
-          ...((seciliKelime as any).meanings || []),
-        ]
-          .filter(Boolean)
-          .map((h: any) => {
-            if (typeof h === 'string') return h;
-            return h?.text || h?.value || h?.meaning || '';
-          })
-          .map((h: string) => String(h).replace(/<[^>]*>/g, ' '))
-          .map((h: string) => String(h).replace(/[^\p{L}\s]/gu, ' '))
-          .flatMap((h: string) => String(h).split(/\s+/))
-          .map((h: string) => h.trim().toLowerCase())
-          .filter((h: string) => h.length > 1 && /[\u0400-\u04FF\u2C00-\u2C5F]/.test(h))
-          .slice(0, 20)
-      })
-      .then(result => {
-        console.log("DISCOVERY RESULT:", result);
-        console.log("RELATED CONCEPTS:", result.relatedConcepts);
-        setRelatedConcepts((result.relatedConcepts || []) as any[]);
-      })
-      .catch(err => {
-        console.error("DISCOVERY ERROR:", err);
-        setRelatedConcepts([]);
-      })
-      .finally(() => setIsLoadingRelated(false));
-  }, [seciliKelime]);
-
-  const drawerRef = useRef<HTMLDivElement>(null);
-  const kapatBtnRef = useRef<HTMLButtonElement>(null);
-
-  const [kopyalandi, setKopyalandi] = useState<boolean>(false);
-  const [paylasimAcik, setPaylasimAcik] = useState<boolean>(false);
-  const [hasSpeechSupport, setHasSpeechSupport] = useState<boolean>(false);
-
-  const [sozlukFilter, setSozlukFilter] = useState<string>('ALL');
- 
-  useEffect(() => {
-    if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
-      setHasSpeechSupport(true);
-    }
-  }, []);
-
-  useEffect(() => {
-    if (isDrawerOpen) {
-      setSozlukFilter('ALL');
-    }
-  }, [isDrawerOpen, seciliKelime]);
-
-  useEffect(() => {
-    const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') {
-        onClose();
-      }
-    };
-
+    const handleKeyDown = (e: KeyboardEvent) => { if (e.key === 'Escape') onClose(); };
     if (isDrawerOpen) {
       window.addEventListener('keydown', handleKeyDown);
       const timer = setTimeout(() => kapatBtnRef.current?.focus(), 50);
-
-      return () => {
-        clearTimeout(timer);
-        window.removeEventListener('keydown', handleKeyDown);
-      };
+      return () => { clearTimeout(timer); window.removeEventListener('keydown', handleKeyDown); };
     }
   }, [isDrawerOpen, onClose]);
 
-  const content = useMemo(() => {
-    return seciliKelime ? normalizeDrawerContent(seciliKelime) : null;
-  }, [seciliKelime]);
-
-  const sourceContents = useMemo(() => {
-    return seciliKelime ? normalizeToSourceContents(seciliKelime) : [];
-  }, [seciliKelime]);
+  const content = useMemo(() => (seciliKelime ? normalizeDrawerContent(seciliKelime) : null), [seciliKelime]);
+  const sourceContents = useMemo(() => (seciliKelime ? normalizeToSourceContents(seciliKelime) : []), [seciliKelime]);
 
   const filtrelenmisKaynaklar = useMemo(() => {
     return sourceContents.filter((source) => {
       if (!matchesDialect(source, dialectFilter)) return false;
       if (!matchesLanguage(source, languageFilter)) return false;
-
       if (sozlukFilter !== 'ALL') {
         const meta = resolveSourceMetadata(source.sourceId || source.sourceName || '');
         const name = meta?.displayName || source.sourceName || source.title || '';
         if (name !== sozlukFilter) return false;
       }
-
       return true;
     });
   }, [sourceContents, dialectFilter, languageFilter, sozlukFilter]);
 
   const sozlukGroups = useMemo(() => {
-    const groups: Record<string, string[]> = {
-      'ÇERKESÇE': [],
-      'TÜRKÇE': [],
-      'İNGİLİZCE': [],
-      'RUSÇA': [],
-      'ARAPÇA': [],
-      'ÇOK DİLLİ (Ru-En)': [],
-    };
-
+    const groups: Record<string, string[]> = { 'ÇERKESÇE': [], 'TÜRKÇE': [], 'İNGİLİZCE': [], 'RUSÇA': [], 'ARAPÇA': [], 'ÇOK DİLLİ (Ru-En)': [] };
     const seen = new Set<string>();
-
     sourceContents.forEach((source) => {
       const meta = resolveSourceMetadata(source.sourceId || source.sourceName || '');
       const name = meta?.displayName || source.sourceName || source.title;
       if (!name || seen.has(name)) return;
       seen.add(name);
-
       const src = String(meta?.sourceLanguage || '').toLowerCase();
       const tgt = String(meta?.targetLanguage || '').toLowerCase();
       const isCirc = (l: string) => l === 'ady' || l === 'kbd';
-
       let group = '';
       if (meta?.file === '18.Kbd-Ru&En.json') group = 'ÇOK DİLLİ (Ru-En)';
       else if (isCirc(src) && isCirc(tgt)) group = 'ÇERKESÇE';
@@ -411,18 +198,10 @@ export default function KelimeDetayDrawer({
         else if (other === 'ru') group = 'RUSÇA';
         else if (other === 'ar') group = 'ARAPÇA';
       }
-
       if (group) groups[group].push(name);
     });
-
     const SIRA = ['ÇERKESÇE', 'TÜRKÇE', 'İNGİLİZCE', 'RUSÇA', 'ARAPÇA', 'ÇOK DİLLİ (Ru-En)'];
-
-    return SIRA
-      .filter((g) => groups[g].length > 0)
-      .map((g) => ({
-        group: g,
-        items: groups[g].sort((a, b) => a.localeCompare(b, 'tr')),
-      }));
+    return SIRA.filter((g) => groups[g].length > 0).map((g) => ({ group: g, items: groups[g].sort((a, b) => a.localeCompare(b, 'tr')) }));
   }, [sourceContents]);
 
   const sozlukCounts = useMemo(() => {
@@ -430,9 +209,7 @@ export default function KelimeDetayDrawer({
     sourceContents.forEach((source) => {
       const meta = resolveSourceMetadata(source.sourceId || source.sourceName || '');
       const name = meta?.displayName || source.sourceName || source.title;
-      if (name) {
-        counts[name] = (counts[name] ?? 0) + 1;
-      }
+      if (name) counts[name] = (counts[name] ?? 0) + 1;
     });
     return counts;
   }, [sourceContents]);
@@ -444,25 +221,18 @@ export default function KelimeDetayDrawer({
       content.cerkesce ? `Çerkesçe: ${content.cerkesce}` : '',
       `Sözlük Kaynak Sayısı: ${sourceContents.length}`,
       ...sourceContents.map((s) => {
-const meta = resolveSourceMetadata(s.sourceId || s.sourceName || '');
-const name = meta?.displayName || s.sourceName || s.title || 'Kaynak';
+        const meta = resolveSourceMetadata(s.sourceId || s.sourceName || '');
+        const name = meta?.displayName || s.sourceName || s.title || 'Kaynak';
         return `• ${name}: ${(s.meanings ?? []).map(cleanHtml).join(', ')}`;
       }),
     ].filter(Boolean).join('\n');
   }, [content, sourceContents]);
 
   const panoyaKopyala = useCallback(async () => {
-    try {
-      await navigator.clipboard.writeText(paylasimMetni);
-      setKopyalandi(true);
-      setTimeout(() => setKopyalandi(false), 1800);
-    } catch (error) {
-      console.error('Kopyalama hatası:', error);
-    }
+    try { await navigator.clipboard.writeText(paylasimMetni); setKopyalandi(true); setTimeout(() => setKopyalandi(false), 1800); } catch (error) { console.error('Kopyalama hatası:', error); }
   }, [paylasimMetni]);
-const paylas = useCallback(() => {
-  setPaylasimAcik(true);
-}, []);
+
+  const paylas = useCallback(() => setPaylasimAcik(true), []);
 
   const dinle = useCallback(() => {
     if (hasSpeechSupport && content) {
@@ -473,48 +243,19 @@ const paylas = useCallback(() => {
     }
   }, [hasSpeechSupport, content]);
 
-  if (!isDrawerOpen || !seciliKelime || !content) return null;
+if (!isDrawerOpen || !seciliKelime || !content) return null;
 
+console.log('=== DRAWER RENDER ===');
+console.log('familyMembers.length:', familyMembers.length);
   return (
-    <div
-      role="dialog"
-      aria-modal="true"
-      aria-labelledby="drawer-title"
-      className="fixed inset-0 z-[9999] flex justify-end transition-opacity duration-300"
-    >
-      <div
-        onClick={onClose}
-        aria-hidden="true"
-        className="fixed inset-0 bg-black/60 backdrop-blur-sm transition-opacity cursor-pointer active:opacity-80"
-      />
-
-      <div
-        ref={drawerRef}
-        style={{ fontSize: `${metinBoyutu}px` }}
-        className="relative z-10 w-full max-w-[540px] h-full bg-slate-100 dark:bg-slate-900 text-slate-900 dark:text-slate-100 shadow-2xl flex flex-col border-l border-slate-300 dark:border-slate-800 overscroll-contain touch-pan-y"
-      >
+    <div role="dialog" aria-modal="true" aria-labelledby="drawer-title" className="fixed inset-0 z-[9999] flex justify-end transition-opacity duration-300">
+      <div onClick={onClose} aria-hidden="true" className="fixed inset-0 bg-black/60 backdrop-blur-sm transition-opacity cursor-pointer active:opacity-80" />
+      <div ref={drawerRef} style={{ fontSize: `${metinBoyutu}px` }} className="relative z-10 w-full max-w-[540px] h-full bg-slate-100 dark:bg-slate-900 text-slate-900 dark:text-slate-100 shadow-2xl flex flex-col border-l border-slate-300 dark:border-slate-800 overscroll-contain touch-pan-y">
         <div className="flex items-center justify-between p-4 sm:p-6 pb-4 border-b border-slate-300 dark:border-slate-800 shrink-0 bg-white dark:bg-slate-900 sticky top-0 z-20">
-          <div className="flex items-center gap-2 min-w-0">
-            <h2 id="drawer-title" className="text-xl sm:text-2xl font-bold text-orange-500 truncate">
-              {content.word}
-            </h2>
-            {content.dialect && (
-              <span className="text-[10px] uppercase font-bold px-2 py-0.5 rounded-md border bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 border-slate-300 dark:border-slate-700 shrink-0">
-                {content.dialect}
-              </span>
-            )}
-          </div>
-          <button
-            ref={kapatBtnRef}
-            onClick={onClose}
-            aria-label="Kapat"
-            className="p-2 rounded-lg text-slate-400 hover:text-slate-700 dark:hover:text-slate-200 hover:bg-slate-200 dark:hover:bg-slate-800 transition-colors shrink-0"
-          >
-            <X size={20} />
-          </button>
+          <h2 id="drawer-title" className="text-xl sm:text-2xl font-bold text-orange-500 truncate">{content.word}</h2>
+          <button ref={kapatBtnRef} onClick={onClose} aria-label="Kapat" className="p-2 rounded-lg text-slate-400 hover:text-slate-700 dark:hover:text-slate-200 hover:bg-slate-200 dark:hover:bg-slate-800 transition-colors shrink-0"><X size={20} /></button>
         </div>
 
-        {/* P5-004: Corpus Explorer ozeti */}
         {corpusData && corpusData.totalDictionaries > 0 && (
           <div className="flex items-center gap-4 px-4 py-2 bg-amber-50 dark:bg-amber-950/20 border-b border-amber-200 dark:border-amber-800 text-xs text-slate-600 dark:text-slate-400 shrink-0">
             <span>📖 {corpusData.meaningCount} anlam</span>
@@ -523,157 +264,128 @@ const paylas = useCallback(() => {
           </div>
         )}
 
-        <div className="flex-1 overflow-y-auto p-4 sm:p-5 pb-28 space-y-5 scroll-smooth -webkit-overflow-scrolling-touch">
+        <div className="flex-1 overflow-y-auto p-4 sm:p-5 pb-28 space-y-5 scroll-smooth">
           {content.cerkesce && (
             <div className="rounded-xl border border-amber-200 bg-amber-50/80 p-3.5 dark:border-amber-900/40 dark:bg-amber-950/20">
-              <span className="text-xs font-semibold text-amber-800 dark:text-amber-300 block mb-0.5">
-                Çerkesçe Karşılık
-              </span>
-              <p className="text-base font-bold text-amber-950 dark:text-amber-100">
-                {content.cerkesce}
-              </p>
+              <span className="text-xs font-semibold text-amber-800 dark:text-amber-300 block mb-0.5">Çerkesçe Karşılık</span>
+              <p className="text-base font-bold text-amber-950 dark:text-amber-100">{content.cerkesce}</p>
             </div>
           )}
 
-                    {/* D-1B: Dilbilimsel Bilgiler */}
+          <section className="space-y-2">
+            <div className="flex flex-wrap gap-1.5">
+              {seciliKelime.dialect && seciliKelime.dialect !== 'western' && seciliKelime.dialect !== 'eastern' && (
+                <span className="text-[10px] font-bold px-2 py-0.5 rounded-md border bg-blue-100 dark:bg-blue-950 text-blue-800 dark:text-blue-300 border-blue-300 dark:border-blue-800">{seciliKelime.dialect}</span>
+              )}
+              {seciliKelime.partOfSpeech && (
+                <span className="text-[10px] font-bold px-2 py-0.5 rounded-md border bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border-slate-300 dark:border-slate-700">{seciliKelime.partOfSpeech.toUpperCase()}</span>
+              )}
+              {seciliKelime.ipa && (
+                <span className="text-[10px] font-bold px-2 py-0.5 rounded-md border bg-cyan-100 dark:bg-cyan-950 text-cyan-800 dark:text-cyan-300 border-cyan-300 dark:border-cyan-800 font-mono">{seciliKelime.ipa}</span>
+              )}
+              {seciliKelime.corpusFrequency ? (
+                <span className="text-[10px] font-bold px-2 py-0.5 rounded-md border bg-amber-100 dark:bg-amber-950 text-amber-800 dark:text-amber-300 border-amber-300 dark:border-amber-800">{seciliKelime.corpusFrequency} kullanım</span>
+              ) : null}
+            </div>
+          </section>
+
           {(seciliKelime.rootIds?.length || seciliKelime.wordFamilyId || seciliKelime.conceptId) && (
             <section className="space-y-2">
-              <h3 className="text-sm font-bold text-slate-800 dark:text-slate-200 flex items-center gap-2">
-                <Zap size={16} className="text-orange-500" />
-                Dilbilimsel Bilgiler
-              </h3>
+              <h3 className="text-sm font-bold text-slate-800 dark:text-slate-200 flex items-center gap-2"><Zap size={16} className="text-orange-500" />Dilbilimsel Bilgiler</h3>
               <div className="grid grid-cols-3 gap-2">
                 <div className="rounded-xl border border-emerald-200 bg-emerald-50/80 p-3 dark:border-emerald-900/40 dark:bg-emerald-950/20">
-                  <span className="text-[10px] font-bold text-emerald-700 dark:text-emerald-400 uppercase block mb-1">
-                    Kök
-                  </span>
-                  <span className="text-xs font-mono text-emerald-900 dark:text-emerald-100">
-                    {seciliKelime.rootIds?.join(', ') || '—'}
-                  </span>
+                  <span className="text-[10px] font-bold text-emerald-700 dark:text-emerald-400 uppercase block mb-1">Kök</span>
+                  <span className="text-xs font-mono text-emerald-900 dark:text-emerald-100">{seciliKelime.rootIds?.join(', ') || '—'}</span>
                 </div>
                 <div className="rounded-xl border border-purple-200 bg-purple-50/80 p-3 dark:border-purple-900/40 dark:bg-purple-950/20">
-                  <span className="text-[10px] font-bold text-purple-700 dark:text-purple-400 uppercase block mb-1">
-                    Family
-                  </span>
-                  <span className="text-xs font-mono text-purple-900 dark:text-purple-100">
-                    {seciliKelime.wordFamilyId || '—'}
-                  </span>
+                  <span className="text-[10px] font-bold text-purple-700 dark:text-purple-400 uppercase block mb-1">Family</span>
+                  <span className="text-xs font-mono text-purple-900 dark:text-purple-100">{seciliKelime.wordFamilyId || '—'}</span>
                 </div>
                 <div className="rounded-xl border border-orange-200 bg-orange-50/80 p-3 dark:border-orange-900/40 dark:bg-orange-950/20">
-                  <span className="text-[10px] font-bold text-orange-700 dark:text-orange-400 uppercase block mb-1">
-                    Concept
-                  </span>
-                  <span className="text-xs font-mono text-orange-900 dark:text-orange-100">
-                    {seciliKelime.conceptId || '—'}
-                  </span>
+                  <span className="text-[10px] font-bold text-orange-700 dark:text-orange-400 uppercase block mb-1">Concept</span>
+                  <span className="text-xs font-mono text-orange-900 dark:text-orange-100">{seciliKelime.conceptId || '—'}</span>
                 </div>
               </div>
             </section>
           )}
-<section className="space-y-3">
-            <div className="flex items-center justify-between border-b border-slate-300 dark:border-slate-800 pb-2">
-              <h3 className="text-sm font-bold text-slate-800 dark:text-slate-200 flex items-center gap-2">
-                <BookOpen size={16} className="text-orange-500" />
-                Sözlük Kaynakları ({sourceContents.length} / {sourceContents.length})
-              </h3>
-            </div>
 
+          {seciliKelime.dialectVariants && (seciliKelime.dialectVariants.adyghe || seciliKelime.dialectVariants.kabardian) && (
+            <section className="space-y-2">
+              <h3 className="text-sm font-bold text-slate-800 dark:text-slate-200 flex items-center gap-2"><Languages size={16} className="text-orange-500" />Lehçe Karşılıkları</h3>
+              <div className="rounded-xl border border-sky-200 bg-sky-50/60 p-3 dark:border-sky-900/40 dark:bg-sky-950/20 space-y-1.5">
+                {seciliKelime.dialectVariants.adyghe && (
+                  <div className="flex gap-3 items-baseline">
+                    <span className="text-[10px] font-bold uppercase px-2 py-0.5 rounded-md bg-sky-200 dark:bg-sky-900 text-sky-800 dark:text-sky-200 border border-sky-300 dark:border-sky-800 shrink-0 w-12 text-center">ADY</span>
+                    <span className="text-sm font-medium text-slate-800 dark:text-slate-200">{seciliKelime.dialectVariants.adyghe}</span>
+                  </div>
+                )}
+                {seciliKelime.dialectVariants.kabardian && (
+                  <div className="flex gap-3 items-baseline">
+                    <span className="text-[10px] font-bold uppercase px-2 py-0.5 rounded-md bg-sky-200 dark:bg-sky-900 text-sky-800 dark:text-sky-200 border border-sky-300 dark:border-sky-800 shrink-0 w-12 text-center">KBD</span>
+                    <span className="text-sm font-medium text-slate-800 dark:text-slate-200">{seciliKelime.dialectVariants.kabardian}</span>
+                  </div>
+                )}
+              </div>
+            </section>
+          )}
+
+          {seciliKelime.wordFamilyId && familyMembers.length > 0 && (
+            <section className="space-y-2">
+              <h3 className="text-sm font-bold text-slate-800 dark:text-slate-200 flex items-center gap-2"><ChevronRight size={16} className="text-purple-500" />Aynı Aileden Kelimeler ({familyMembers.length})</h3>
+              <div className="rounded-xl border border-purple-200 bg-purple-50/60 p-3 dark:border-purple-900/40 dark:bg-purple-950/20">
+                <div className="flex flex-wrap gap-1.5">
+                  {familyMembers.slice(0, 12).map((m: any) => (
+                    <span key={m.id} className="text-xs px-2 py-1 rounded-md bg-white dark:bg-slate-800 border border-purple-200 dark:border-purple-800 text-purple-800 dark:text-purple-200 font-medium cursor-pointer hover:bg-purple-100 dark:hover:bg-purple-900 transition-colors" title={m.literalMeaning} onClick={() => { if (m.form && onConceptClick) onConceptClick(m.form); }}>{m.form}</span>
+                  ))}
+                </div>
+                {familyMembers.length > 12 && <p className="text-[11px] text-purple-600 dark:text-purple-400 mt-2 font-semibold">+{familyMembers.length - 12} kelime daha</p>}
+              </div>
+            </section>
+          )}
+
+          <section className="space-y-3">
+            <div className="flex items-center justify-between border-b border-slate-300 dark:border-slate-800 pb-2">
+              <h3 className="text-sm font-bold text-slate-800 dark:text-slate-200 flex items-center gap-2"><BookOpen size={16} className="text-orange-500" />Sözlük Kaynakları ({filtrelenmisKaynaklar.length} / {sourceContents.length})</h3>
+            </div>
             {sourceContents.length > 1 && sozlukGroups.length > 0 && (
               <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl p-3 space-y-3 shadow-sm">
                 <div className="flex items-center justify-between text-xs font-semibold text-slate-500 border-b border-slate-100 dark:border-slate-800 pb-1.5">
-                  <span className="flex items-center gap-1.5">
-                    <Filter size={14} className="text-orange-500" /> Kaynak Filtreleri
-                  </span>
-                  {sozlukFilter !== 'ALL' && (
-                    <button
-                      onClick={() => setSozlukFilter('ALL')}
-                      className="text-orange-500 hover:underline text-[11px]"
-                    >
-                      Sıfırla
-                    </button>
-                  )}
+                  <span className="flex items-center gap-1.5"><Filter size={14} className="text-orange-500" /> Kaynak Filtreleri</span>
+                  {sozlukFilter !== 'ALL' && <button onClick={() => setSozlukFilter('ALL')} className="text-orange-500 hover:underline text-[11px]">Sıfırla</button>}
                 </div>
-
-                <div>
-                  <span className="text-[11px] font-bold text-slate-400 block mb-1">Sözlük Seçimi</span>
-                  <select
-                    value={sozlukFilter}
-                    onChange={(e) => setSozlukFilter(e.target.value)}
-                    className="w-full text-xs p-2 rounded-lg border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-slate-700 dark:text-slate-200 focus:outline-none focus:ring-1 focus:ring-orange-500 transition-all"
-                  >
-                    <option value="ALL">Tüm Sözlükler ({sourceContents.length})</option>
-                    {sozlukGroups.map((g) => (
-                      <optgroup key={g.group} label={g.group}>
-                        {g.items.map((displayName) => (
-                          <option key={displayName} value={displayName}>
-                            {displayName} ({sozlukCounts[displayName] ?? 0})
-                          </option>
-                        ))}
-                      </optgroup>
-                    ))}
-                  </select>
-                </div>
+                <select value={sozlukFilter} onChange={(e) => setSozlukFilter(e.target.value)} className="w-full text-xs p-2 rounded-lg border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-slate-700 dark:text-slate-200 focus:outline-none focus:ring-1 focus:ring-orange-500 transition-all">
+                  <option value="ALL">Tüm Sözlükler ({sourceContents.length})</option>
+                  {sozlukGroups.map((g) => (
+                    <optgroup key={g.group} label={g.group}>
+                      {g.items.map((displayName) => (<option key={displayName} value={displayName}>{displayName} ({sozlukCounts[displayName] ?? 0})</option>))}
+                    </optgroup>
+                  ))}
+                </select>
               </div>
             )}
-
             <div className="space-y-3 pt-1">
               {filtrelenmisKaynaklar.map((source: SourceContent, index: number) => {
                 const meta = resolveSourceMetadata(source.sourceId || source.sourceName || '');
                 const displayTitle = meta?.displayName || source.sourceName || source.title || 'Kaynak';
-
                 const srcLang = meta?.sourceLanguage?.toUpperCase() || source.sourceLanguage?.toUpperCase();
                 const trgLang = meta?.targetLanguage?.toUpperCase() || source.targetLanguage?.toUpperCase();
                 const langBadge = srcLang && trgLang ? `${srcLang} → ${trgLang}` : null;
-
                 return (
-                  <div
-                    key={`${source.sourceId || 'src'}-${index}`}
-                    className="overflow-hidden rounded-xl border border-slate-300 dark:border-slate-800 bg-white dark:bg-slate-800/50 shadow-sm transition-all"
-                  >
+                  <div key={`${source.sourceId || 'src'}-${index}`} className="overflow-hidden rounded-xl border border-slate-300 dark:border-slate-800 bg-white dark:bg-slate-800/50 shadow-sm transition-all">
                     <details className="group" open={index === 0}>
                       <summary className="flex cursor-pointer list-none items-center justify-between p-3.5 text-xs sm:text-sm font-semibold text-slate-800 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors">
                         <div className="flex flex-col min-w-0 pr-2">
-                          <span className="font-bold text-slate-900 dark:text-slate-100 truncate">
-                            {displayTitle}
-                          </span>
-                          {meta?.author && (
-                            <span className="text-[11px] text-slate-500 dark:text-slate-400 font-normal truncate">
-                              Yazar: {meta.author} {meta.year ? `(${meta.year})` : ''}
-                            </span>
-                          )}
+                          <span className="font-bold text-slate-900 dark:text-slate-100 truncate">{displayTitle}</span>
+                          {meta?.author && <span className="text-[11px] text-slate-500 dark:text-slate-400 font-normal truncate">Yazar: {meta.author} {meta.year ? `(${meta.year})` : ''}</span>}
                         </div>
-
                         <div className="flex items-center gap-1.5 shrink-0">
-                          {langBadge && (
-                            <span className="text-[10px] font-bold px-1.5 py-0.5 rounded bg-orange-100 dark:bg-orange-950/60 text-orange-700 dark:text-orange-300 border border-orange-200 dark:border-orange-800/50 flex items-center gap-1">
-                              <Languages size={10} />
-                              {langBadge}
-                            </span>
-                          )}
-                          <ChevronRight
-                            size={16}
-                            className="text-slate-400 transition-transform duration-200 group-open:rotate-90 shrink-0"
-                          />
+                          {langBadge && <span className="text-[10px] font-bold px-1.5 py-0.5 rounded bg-orange-100 dark:bg-orange-950/60 text-orange-700 dark:text-orange-300 border border-orange-200 dark:border-orange-800/50 flex items-center gap-1"><Languages size={10} />{langBadge}</span>}
+                          <ChevronRight size={16} className="text-slate-400 transition-transform duration-200 group-open:rotate-90 shrink-0" />
                         </div>
                       </summary>
-
                       <div className="border-t border-slate-200 dark:border-slate-700/60 p-3.5 space-y-3 bg-slate-50/50 dark:bg-slate-900/30">
-                        {source.sections && source.sections.length > 0 && (
-                          <div className="space-y-1">
-                            {source.sections.map((section, sIdx) => (
-                              <SectionRenderer key={sIdx} section={section} depth={0} />
-                            ))}
-                          </div>
-                        )}
-
-                        {source.notes && (
-                          <div className="text-xs text-slate-600 dark:text-slate-400 bg-amber-50/50 dark:bg-slate-800/80 p-2.5 rounded-lg border border-amber-200/60 dark:border-slate-700">
-                            <span className="font-semibold block text-amber-800 dark:text-amber-300">
-                              Not:
-                            </span>
-                            {source.notes}
-                          </div>
-                        )}
+                        {source.sections && source.sections.length > 0 && (<div className="space-y-1">{source.sections.map((section, sIdx) => <SectionRenderer key={sIdx} section={section} depth={0} />)}</div>)}
+                        {source.notes && (<div className="text-xs text-slate-600 dark:text-slate-400 bg-amber-50/50 dark:bg-slate-800/80 p-2.5 rounded-lg border border-amber-200/60 dark:border-slate-700"><span className="font-semibold block text-amber-800 dark:text-amber-300">Not:</span>{source.notes}</div>)}
                       </div>
                     </details>
                   </div>
@@ -681,30 +393,16 @@ const paylas = useCallback(() => {
               })}
             </div>
           </section>
-          {/* İlgili Kavramlar */}
+
           {(isLoadingRelated || relatedConcepts.length > 0) && (
             <div className="mt-6 border-t border-slate-200 dark:border-slate-700 pt-4">
-              <h3 className="text-sm font-semibold text-slate-800 dark:text-slate-200 mb-3 flex items-center gap-2">
-                <ChevronRight className="w-4 h-4 text-orange-500" />
-                İlgili Kavramlar
-              </h3>
-              {isLoadingRelated ? (
-                <p className="text-xs text-slate-500 dark:text-slate-400 italic">Yükleniyor...</p>
-              ) : (
+              <h3 className="text-sm font-semibold text-slate-800 dark:text-slate-200 mb-3 flex items-center gap-2"><ChevronRight className="w-4 h-4 text-orange-500" />İlgili Kavramlar</h3>
+              {isLoadingRelated ? (<p className="text-xs text-slate-500 dark:text-slate-400 italic">Yükleniyor...</p>) : (
                 <ul className="space-y-2">
                   {relatedConcepts.map((concept, idx) => (
                     <li key={idx} className="flex items-center justify-between gap-3 text-xs cursor-pointer hover:bg-slate-100 dark:hover:bg-slate-700 rounded px-1 py-0.5 transition-colors" onClick={() => onConceptClick?.(concept.displayName || concept.canonicalName || concept.conceptId)}>
-                      <span className="font-medium text-slate-700 dark:text-slate-300 truncate flex-1">
-                        {concept.displayName || concept.canonicalName || concept.conceptId}
-                        {concept.displayNameTr && concept.displayNameTr !== concept.displayName && (
-                          <span className="text-slate-400 dark:text-slate-500 ml-1 font-normal">
-                            ({concept.displayNameTr})
-                          </span>
-                        )}
-                      </span>
-                      <span className={`text-[10px] px-2 py-0.5 rounded-full border flex-shrink-0 ${getRelationStyle(concept.relationType)}`}>
-                        {getRelationLabel(concept.relationType)}
-                      </span>
+                      <span className="font-medium text-slate-700 dark:text-slate-300 truncate flex-1">{concept.displayName || concept.canonicalName || concept.conceptId}</span>
+                      <span className={`text-[10px] px-2 py-0.5 rounded-full border flex-shrink-0 ${getRelationStyle(concept.relationType)}`}>{getRelationLabel(concept.relationType)}</span>
                     </li>
                   ))}
                 </ul>
@@ -713,64 +411,21 @@ const paylas = useCallback(() => {
           )}
         </div>
 
-        <PaylasimGorseliModal
-  isOpen={paylasimAcik}
-  onClose={() => setPaylasimAcik(false)}
-  kelime={{
-    kelime: content.word,
-    anlam: filtrelenmisKaynaklar[0]?.meanings?.[0] || content.cerkesce || '',
-    cerkesce: content.cerkesce || '',
-    kaynaklar: filtrelenmisKaynaklar.map((s) => {
-      const meta = resolveSourceMetadata(s.sourceId || '');
-      return meta?.displayName || s.sourceName || s.title || 'Kaynak';
-    }),
-    tarih: new Date().toLocaleDateString('tr-TR'),
-      ornekler: filtrelenmisKaynaklar.flatMap((s) =>
-      (s.meanings || []).filter((m) =>
-        m.includes('◊') || m.includes('-') || m.includes(':')
-      )
-    ).slice(0, 5),
-  }}
-/>
+        <PaylasimGorseliModal isOpen={paylasimAcik} onClose={() => setPaylasimAcik(false)} kelime={{ kelime: content.word, anlam: filtrelenmisKaynaklar[0]?.meanings?.[0] || content.cerkesce || '', cerkesce: content.cerkesce || '', kaynaklar: filtrelenmisKaynaklar.map((s) => { const meta = resolveSourceMetadata(s.sourceId || ''); return meta?.displayName || s.sourceName || s.title || 'Kaynak'; }), tarih: new Date().toLocaleDateString('tr-TR'), ornekler: filtrelenmisKaynaklar.flatMap((s) => (s.meanings || []).filter((m) => m.includes('◊') || m.includes('-') || m.includes(':'))).slice(0, 5) }} />
 
         <div className="absolute inset-x-0 bottom-0 z-20 flex gap-2 border-t border-slate-300 bg-white/95 p-3.5 backdrop-blur dark:border-slate-800 dark:bg-slate-900/95">
-          <button
-            type="button"
-            onClick={panoyaKopyala}
-            className="flex min-h-11 flex-1 items-center justify-center gap-2 rounded-xl border border-slate-300 bg-slate-50 px-3 text-xs sm:text-sm font-semibold text-slate-700 transition-colors active:scale-95 dark:border-slate-700 dark:bg-slate-800 dark:text-slate-200"
-          >
+          <button type="button" onClick={panoyaKopyala} className="flex min-h-11 flex-1 items-center justify-center gap-2 rounded-xl border border-slate-300 bg-slate-50 px-3 text-xs sm:text-sm font-semibold text-slate-700 transition-colors active:scale-95 dark:border-slate-700 dark:bg-slate-800 dark:text-slate-200">
             {kopyalandi ? <Check size={16} /> : <Copy size={16} />}
             {kopyalandi ? 'Kopyalandı' : 'Kopyala'}
           </button>
-
-          <button
-            type="button"
-            onClick={dinle}
-            disabled={!hasSpeechSupport}
-            className={`flex min-h-11 flex-1 items-center justify-center gap-2 rounded-xl border border-slate-300 bg-slate-50 px-3 text-xs sm:text-sm font-semibold transition-colors active:scale-95 dark:border-slate-700 dark:bg-slate-800 ${hasSpeechSupport
-              ? 'text-slate-700 dark:text-slate-200'
-              : 'text-slate-400 opacity-50 cursor-not-allowed'
-              }`}
-          >
-            <Volume2 size={16} />
-            Dinle
+          <button type="button" onClick={dinle} disabled={!hasSpeechSupport} className={`flex min-h-11 flex-1 items-center justify-center gap-2 rounded-xl border border-slate-300 bg-slate-50 px-3 text-xs sm:text-sm font-semibold transition-colors active:scale-95 dark:border-slate-700 dark:bg-slate-800 ${hasSpeechSupport ? 'text-slate-700 dark:text-slate-200' : 'text-slate-400 opacity-50 cursor-not-allowed'}`}>
+            <Volume2 size={16} />Dinle
           </button>
-
-          <button
-            type="button"
-            onClick={paylas}
-            className="flex min-h-11 flex-1 items-center justify-center gap-2 rounded-xl bg-orange-500 px-3 text-xs sm:text-sm font-semibold text-white transition-colors active:scale-95 hover:bg-orange-600"
-          >
-            <Share2 size={16} />
-            Paylaş
+          <button type="button" onClick={paylas} className="flex min-h-11 flex-1 items-center justify-center gap-2 rounded-xl bg-orange-500 px-3 text-xs sm:text-sm font-semibold text-white transition-colors active:scale-95 hover:bg-orange-600">
+            <Share2 size={16} />Paylaş
           </button>
         </div>
       </div>
     </div>
-    
   );
 }
-
-
-
-
