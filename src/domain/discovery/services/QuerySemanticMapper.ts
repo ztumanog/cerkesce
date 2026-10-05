@@ -11,6 +11,7 @@
 
 import { TranslationService } from '@/services/TranslationService';
 import { InMemoryTranslationRepository } from '@/repository/InMemoryTranslationRepository';
+import { CONCEPT_REGISTRY, getConceptUlid } from '../../concept/ConceptRegistry';
 import { ConceptCandidateResolver } from './ConceptCandidateResolver';
 import { WordFamilyResolver } from './WordFamilyResolver';
 import { ConceptCandidateDTO } from '../dto/ConceptCandidateDTO';
@@ -47,7 +48,8 @@ export class QuerySemanticMapper {
       .toLowerCase();
 
     // Basit sozluk: TR/EN/RU/ADY -> CONCEPT_WATER
-    const WATER_CONCEPT_ID = '01ARZ3NDEKTSV4RRFFQ69G5FAV';
+    // ID artik elle yazilmiyor, registry tek kaynak.
+    const WATER_CONCEPT_ID: string = getConceptUlid(CONCEPT_REGISTRY.WATER) ?? CONCEPT_REGISTRY.WATER;
     const waterWords = ['su', 'water', 'вода', 'псы'];
     const partialWords = ['akarsular', 'akarsu', 'nehir'];
 
