@@ -43,12 +43,13 @@ describe("InMemoryTranslationRepository Tests", () => {
   it("findByLemma() doğru sonucu getirmelidir", async () => {
     const result = await repository.findByLemma("шъхьэ");
     expect(result).not.toBeNull();
-    expect(result?.id).toBe("e-1");
+    expect(Array.isArray(result)).toBe(true);
+    expect(result[0]?.id).toBe("e-1");
   });
 
   it("findByLemma() var olmayan lemma için null döner", async () => {
     const result = await repository.findByLemma("olmayan_kelime");
-    expect(result).toBeNull();
+    expect(result).toEqual([]);
   });
 
   it("searchCrossDictionary() meanings içinde arama yapabilmelidir", async () => {
@@ -73,6 +74,8 @@ describe("InMemoryTranslationRepository Tests", () => {
   it("MockTranslationRepository de aynı sonuçları döndürmelidir", async () => {
     const inMem = await repository.findByLemma("шъхьэ");
     const mock = await mockRepository.findByLemma("шъхьэ");
-    expect(inMem?.lemma).toBe(mock?.lemma);
+    expect((inMem as any)?.lemma).toBe((mock as any)?.lemma);
   });
 });
+
+

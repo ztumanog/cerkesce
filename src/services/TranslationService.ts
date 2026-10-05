@@ -1,22 +1,20 @@
-﻿/**
+/**
  * @file src/services/TranslationService.ts
  * @description Çeviri ve arama operasyonlarını yöneten servis sınıfı.
+ * @layer Application
+ * @generated 2026-09-19
+ * @lastUpdated 2026-10-05
  */
 
-import { InMemoryTranslationRepository } from '../repository/InMemoryTranslationRepository';
+import { ITranslationRepository } from '../repository/ITranslationRepository';
 import { TranslationEntry } from '../domain/translation';
 
 export class TranslationService {
-  /**
-   * TranslationService Kurucu Metodu
-   * 
-   * @param repository - Veri erişim katmanı (InMemoryTranslationRepository)
-   * @param matchingService - Morfolojik eşleştirme servisi (Opsiyonel / Test Uyumluluğu İçin)
-   */
   constructor(
-    private repository: InMemoryTranslationRepository,
+    private repository: ITranslationRepository,
     private matchingService?: any
   ) {}
+
   async search(query: string): Promise<TranslationEntry[]> {
     return this.repository.search(query);
   }
@@ -26,9 +24,10 @@ export class TranslationService {
   }
 
   async getById(id: string): Promise<TranslationEntry | null> {
-    const entry = await this.repository.findCanonicalById(id);
+    const entry = await this.repository.findCanonicalById!(id);
     if (entry) return entry;
-    return this.repository.findByLemma(id);
+    const entries = await this.repository.findByLemma(id);
+    return entries.length > 0 ? entries[0] : null;
   }
 
   async reverseLookup(meaning: string): Promise<TranslationEntry | null> {
@@ -43,31 +42,21 @@ export class TranslationService {
   }
 
   async searchCrossDictionary(query: string): Promise<TranslationEntry[]> {
-    return this.repository.searchCrossDictionary(query);
+    return this.repository.searchCrossDictionary!(query);
   }
 
   async findSimilarTerms(lemma: string): Promise<TranslationEntry[]> {
-    const entry = await this.repository.findByLemma(lemma);
-    return entry ? [entry] : [];
+    return this.repository.findByLemma(lemma);
   }
 
   async getDialectVariations(lemma: string, fromDialect?: string): Promise<TranslationEntry[]> {
-    const entry = await this.repository.findByLemma(lemma);
-    return entry ? [entry] : [];
+    return this.repository.findByLemma(lemma);
   }
 
   filterByLanguage(entries: TranslationEntry[], language: string): TranslationEntry[] {
     const lang = language.toUpperCase();
     return entries.filter((e) =>
-      e.meanings?.some((m) => m.language?.toUpperCase() === lang)
+      e.meanings?.some((m: any) => m.language?.toUpperCase() === lang)
     );
-  }
-
-  filterByDialect(entries: TranslationEntry[], dialect: string): TranslationEntry[] {
-    return entries.filter((e) => e.dialect?.toLowerCase() === dialect.toLowerCase());
-  }
-
-  async getAllEntries(): Promise<TranslationEntry[]> {
-    return this.repository.findAll();
   }
 }

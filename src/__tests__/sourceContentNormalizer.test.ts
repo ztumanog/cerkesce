@@ -45,7 +45,7 @@ describe('InMemoryTranslationRepository', () => {
     const result = await repo.findByLemma('test');
 
     if (result) {
-      expect(result.meanings?.[0]).toBeDefined();
+      expect((result as any).meanings?.[0]).toBeDefined();
     }
   });
 
@@ -69,7 +69,7 @@ describe('InMemoryTranslationRepository', () => {
     // ✅ DÜZELTİLDİ: findByWord yok → findByLemma
     const result = await repo.findByLemma('test');
 
-    const firstMeaning = result?.meanings?.[0]?.text;
+    const firstMeaning = (result as any)?.meanings?.[0]?.text;
     expect(firstMeaning).toBeDefined();
   });
 });

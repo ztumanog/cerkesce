@@ -5,6 +5,8 @@ import { NetworkAnalyticsResultDTO } from '../../domain/analytics/dto/NetworkAna
 
 describe('Phase 7.2 - Analytics Dashboard UI Certification Tests', () => {
   const mockAnalytics: NetworkAnalyticsResultDTO = {
+  nodeCount: 2,
+  edgeCount: 1,
     density: 0.1428,
     degreeCentrality: { N1: 3, N2: 1 },
     isolatedNodes: ['N3'],
@@ -26,3 +28,4 @@ describe('Phase 7.2 - Analytics Dashboard UI Certification Tests', () => {
     expect(element.type).toBe(AnalyticsDashboardPage);
   });
 });
+

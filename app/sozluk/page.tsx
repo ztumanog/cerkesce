@@ -12,6 +12,10 @@ interface Lexeme {
   dialectVariants?: { adyghe?: string; kabardian?: string };
   wordFamilyId?: string;
   notes?: string;
+  rootIds?: string[];
+  conceptId?: string | null;
+  corpusFrequency?: number;
+  derivation?: { rootIds?: string[]; rule?: string } | null;
 }
 
 interface SearchResult {
@@ -122,15 +126,55 @@ export default function SozlukPage() {
             </h3>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {/* Kök Bilgisi */}
               <div className="bg-gradient-to-br from-emerald-50 to-teal-50 rounded-lg p-4">
                 <h4 className="font-semibold text-gray-700 mb-3">Kök Bilgisi</h4>
-                <p className="text-gray-600">Kelime: {selected.lexeme.form}</p>
-                {selected.lexeme.ipa && (
-                  <p className="text-gray-600">IPA: {selected.lexeme.ipa}</p>
+                {selected.lexeme.rootIds && selected.lexeme.rootIds.length > 0 ? (
+                  <div className="flex flex-wrap gap-2">
+                    {selected.lexeme.rootIds.map((rootId: string) => (
+                      <span
+                        key={rootId}
+                        className="px-2 py-1 bg-emerald-200 text-emerald-800 rounded text-sm font-mono"
+                      >
+                        {rootId}
+                      </span>
+                    ))}
+                  </div>
+                ) : (
+                  <p className="text-gray-500">Kök bilgisi yok</p>
                 )}
               </div>
 
-              <div className="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-lg p-4">
+              {/* Word Family */}
+              <div className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-lg p-4">
+                <h4 className="font-semibold text-gray-700 mb-3">Word Family</h4>
+                {selected.lexeme.wordFamilyId ? (
+                  <p className="text-gray-600 font-mono">{selected.lexeme.wordFamilyId}</p>
+                ) : (
+                  <p className="text-gray-500">Aile bilgisi yok</p>
+                )}
+              </div>
+
+              {/* Concept */}
+              <div className="bg-gradient-to-br from-orange-50 to-yellow-50 rounded-lg p-4">
+                <h4 className="font-semibold text-gray-700 mb-3">Kavram</h4>
+                {selected.lexeme.conceptId ? (
+                  <p className="text-gray-600 font-mono">{selected.lexeme.conceptId}</p>
+                ) : (
+                  <p className="text-gray-500">Kavram bilgisi yok</p>
+                )}
+              </div>
+
+              {/* Sıklık */}
+              <div className="bg-gradient-to-br from-cyan-50 to-blue-50 rounded-lg p-4">
+                <h4 className="font-semibold text-gray-700 mb-3">Kullanım Sıklığı</h4>
+                <p className="text-2xl font-bold text-blue-600">
+                  {selected.lexeme.corpusFrequency ?? 0}
+                </p>
+              </div>
+
+              {/* Lehçe Karşılıkları */}
+              <div className="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-lg p-4 md:col-span-2">
                 <h4 className="font-semibold text-gray-700 mb-3">Lehçe Karşılıkları</h4>
                 {selected.lexeme.dialectVariants ? (
                   <>
@@ -145,6 +189,14 @@ export default function SozlukPage() {
                   <p className="text-gray-500">Lehçe bilgisi yok</p>
                 )}
               </div>
+
+              {/* Kaynak */}
+              {selected.lexeme.notes && (
+                <div className="bg-gradient-to-br from-gray-50 to-slate-50 rounded-lg p-4 md:col-span-2">
+                  <h4 className="font-semibold text-gray-700 mb-3">Kaynak</h4>
+                  <p className="text-gray-600 text-sm">{selected.lexeme.notes}</p>
+                </div>
+              )}
             </div>
 
             <button
