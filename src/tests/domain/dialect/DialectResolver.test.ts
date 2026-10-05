@@ -18,7 +18,7 @@ describe('Sprint 2 (Phase 4): Repository & Strict O(1) DialectResolver Engine', 
     resolver = new DialectResolver(repo, linker);
 
     resolver.registerDialect(new Dialect({
-      code: DialectCode.ADY_WEST,
+      code: DialectCode.ADY,
       name: 'Batı Adığece Standardı',
       regionGroup: RegionGroup.WEST,
     }));
@@ -27,13 +27,13 @@ describe('Sprint 2 (Phase 4): Repository & Strict O(1) DialectResolver Engine', 
       code: DialectCode.ABZAKH,
       name: 'Abzeh Diyalekti',
       regionGroup: RegionGroup.WEST,
-      parentDialectCode: DialectCode.ADY_WEST,
+      parentDialectCode: DialectCode.ADY,
     }));
   });
 
   it('1. VariantRepository save & findById çalışmalıdır', async () => {
     const varId = VariantId.create('v-1');
-    const v = new Variant({ id: varId, dialectCode: DialectCode.ADY_WEST, spelling: 'псы' });
+    const v = new Variant({ id: varId, dialectCode: DialectCode.ADY, spelling: 'псы' });
     await repo.save(v);
 
     const found = await repo.findById(varId);
@@ -41,10 +41,10 @@ describe('Sprint 2 (Phase 4): Repository & Strict O(1) DialectResolver Engine', 
   });
 
   it('2. VariantRepository findByDialectCode çalışmalıdır', async () => {
-    const v1 = new Variant({ id: VariantId.create('v-1'), dialectCode: DialectCode.ADY_WEST, spelling: 'псы' });
+    const v1 = new Variant({ id: VariantId.create('v-1'), dialectCode: DialectCode.ADY, spelling: 'псы' });
     await repo.save(v1);
 
-    const list = await repo.findByDialectCode(DialectCode.ADY_WEST);
+    const list = await repo.findByDialectCode(DialectCode.ADY);
     expect(list).toHaveLength(1);
   });
 
@@ -62,15 +62,15 @@ describe('Sprint 2 (Phase 4): Repository & Strict O(1) DialectResolver Engine', 
 
   it('4. Parent fallback resolution (Üst diyalekte düşme) çalışmalıdır', async () => {
     const parentVarId = VariantId.create('v-west-1');
-    const parentVariant = new Variant({ id: parentVarId, dialectCode: DialectCode.ADY_WEST, spelling: 'псы (Standart)' });
+    const parentVariant = new Variant({ id: parentVarId, dialectCode: DialectCode.ADY, spelling: 'псы (Standart)' });
 
     await resolver.indexVariant('m-water', parentVariant);
 
-    // Abzeh isteniyor ancak sadece üst diyalekt (ADY_WEST) mevcut
+    // Abzeh isteniyor ancak sadece üst diyalekt (ADY) mevcut
     const result = await resolver.resolveBestVariant('m-water', DialectCode.ABZAKH);
     expect(result).not.toBeNull();
     expect(result?.spelling).toBe('псы (Standart)');
-    expect(result?.dialectCode).toBe(DialectCode.ADY_WEST);
+    expect(result?.dialectCode).toBe(DialectCode.ADY);
   });
 
   it('5. Unknown/Unregistered dialect durumunda güvenli şekilde null dönmelidir', async () => {

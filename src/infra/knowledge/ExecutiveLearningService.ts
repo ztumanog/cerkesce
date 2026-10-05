@@ -1,4 +1,4 @@
-import { HistoricalTrendIntelligenceService } from './HistoricalTrendIntelligenceService';
+﻿import { HistoricalTrendIntelligenceService } from './HistoricalTrendIntelligenceService';
 import { OperationalKnowledgeBaseService } from './OperationalKnowledgeBaseService';
 import { RootCauseIntelligenceService } from './RootCauseIntelligenceService';
 import { ArchitectureKnowledgeGraphService } from './ArchitectureKnowledgeGraphService';
@@ -24,6 +24,8 @@ export interface ExecutiveLearningDashboard {
 
 export class ExecutiveLearningService {
   static getDashboard(metrics: string[] = ['cpu', 'memory', 'latency']): ExecutiveLearningDashboard {
+    ArchitectureKnowledgeGraphService.loadAll();
+    this.ensureKnowledgeBase();
     const trends = HistoricalTrendIntelligenceService.getReport(metrics);
     const knowledge = OperationalKnowledgeBaseService.getReport();
     const rootCauses = RootCauseIntelligenceService.getReport();
@@ -96,4 +98,41 @@ export class ExecutiveLearningService {
       summary,
     };
   }
+
+  private static ensureKnowledgeBase(): void {
+    const report = OperationalKnowledgeBaseService.getReport();
+    if (report.totalEntries > 0) return;
+
+    OperationalKnowledgeBaseService.add({
+      type: 'runbook',
+      title: 'ADR Katalogu',
+      description: 'Proje ADR katalogu ve yonetisim kararlari',
+      tags: ['adr', 'governance'],
+    });
+    OperationalKnowledgeBaseService.add({
+      type: 'solution',
+      title: 'Morphology Engine',
+      description: 'Morfoloji analiz motoru',
+      tags: ['morphology'],
+    });
+    OperationalKnowledgeBaseService.add({
+      type: 'solution',
+      title: 'Discovery Engine',
+      description: 'Kesif motoru',
+      tags: ['discovery'],
+    });
+    OperationalKnowledgeBaseService.add({
+      type: 'solution',
+      title: 'API Gateway',
+      description: 'REST ve GraphQL API',
+      tags: ['api'],
+    });
+    OperationalKnowledgeBaseService.add({
+      type: 'runbook',
+      title: 'Phase Durumu',
+      description: 'Faz durumu ve kapanis',
+      tags: ['phase'],
+    });
+  }
+
 }

@@ -1,4 +1,5 @@
-import { describe, it, expect, beforeEach } from 'vitest';
+﻿import { describe, it, expect, beforeEach } from 'vitest';
+import { DialectCode } from '@/domain/dialect/types/DialectTypes';
 import { MultilingualExplorer } from '../../domain/discovery/services/MultilingualExplorer';
 import { GraphTraversalService } from '../../domain/discovery/services/GraphTraversalService';
 import { DiscoveryAssembler } from '../../domain/discovery/services/DiscoveryAssembler';
@@ -75,7 +76,7 @@ describe('Phase 5.1 Sprint 5: True Domain Construction E2E Certification', () =>
       discoveryAssembler
     );
 
-    const result = await explorer.explore('su', { targetDialect: 'KBD' });
+    const result = await explorer.explore('su', { targetDialect: DialectCode.KBD });
 
     expect(result).toBeDefined();
     expect(result.query).toBe('su');

@@ -1,3 +1,4 @@
+﻿export type LanguageCode = 'TR' | 'EN' | 'RU' | 'ADY' | 'KBD' | 'AR';
 // src/domain/translation.ts
 
 // ============================================================

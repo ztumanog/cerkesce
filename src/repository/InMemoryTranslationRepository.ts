@@ -1,5 +1,6 @@
 // src/repository/InMemoryTranslationRepository.ts
 import type { TranslationEntry, TranslationGroup } from '../domain/translation';
+import type { ITranslationRepository } from './ITranslationRepository';
 
 // ============================================================
 // Varsayılan Mock Verileri
@@ -144,7 +145,7 @@ export const DEFAULT_MOCK_ENTRIES: TranslationEntry[] = [
 // ============================================================
 // InMemoryTranslationRepository
 // ============================================================
-export class InMemoryTranslationRepository {
+export class InMemoryTranslationRepository implements ITranslationRepository {
   private entriesMap: Map<string, TranslationEntry> = new Map();
   private groups: TranslationGroup[] = [];
 
@@ -171,8 +172,15 @@ export class InMemoryTranslationRepository {
     return Array.from(this.entriesMap.values());
   }
 
-  async save(entry: TranslationEntry): Promise<void> {
+  // ===== TEMEL METOTLAR =====
+
+  async save(entry: TranslationEntry): Promise<TranslationEntry> {
     this.entriesMap.set(entry.id, entry);
+    return entry;
+  }
+
+  async addEntry(entry: TranslationEntry): Promise<TranslationEntry> {
+    return this.save(entry);
   }
 
   async saveBatch(entries: TranslationEntry[]): Promise<void> {
@@ -194,12 +202,16 @@ export class InMemoryTranslationRepository {
     this.groups = [];
   }
 
-  getAll(): TranslationEntry[] {
+  async getAll(): Promise<TranslationEntry[]> {
     return Array.from(this.entriesMap.values());
   }
 
-  findAll(): TranslationEntry[] {
+  async findAll(): Promise<TranslationEntry[]> {
     return this.getAll();
+  }
+
+  async findById(id: string): Promise<TranslationEntry | null> {
+    return this.entriesMap.get(id) || null;
   }
 
   async findCanonicalById(id: string): Promise<TranslationEntry | null> {
@@ -215,7 +227,9 @@ export class InMemoryTranslationRepository {
     });
   }
 
-  async findByLemma(lemma: string): Promise<TranslationEntry | null> {
+  async findByLemma(
+    lemma: string
+  ): Promise<TranslationEntry[] | TranslationEntry | null> {
     if (!lemma) return null;
     const trimmed = lemma.trim().toLowerCase();
     return (
@@ -311,6 +325,21 @@ export class InMemoryTranslationRepository {
 
   async search(query: string): Promise<TranslationEntry[]> {
     return this.searchCrossDictionary(query);
+  }
+
+  async count(): Promise<number> {
+    return this.entriesMap.size;
+  }
+
+  async exists(lemma: string): Promise<boolean> {
+    const trimmed = lemma.trim().toLowerCase();
+    return this.entries.some(
+      (e) => (e.lemma || '').toLowerCase() === trimmed
+    );
+  }
+
+  async getAllGroups(): Promise<TranslationGroup[]> {
+    return [...this.groups];
   }
 }
 

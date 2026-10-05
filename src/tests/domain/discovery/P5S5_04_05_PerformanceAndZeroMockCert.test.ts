@@ -1,4 +1,5 @@
-import { describe, it, expect } from 'vitest';
+﻿import { describe, it, expect } from 'vitest';
+import { DialectCode } from '@/domain/dialect/types/DialectTypes';
 import { MultilingualExplorer } from '../../../domain/discovery/services/MultilingualExplorer';
 import { GraphTraversalService } from '../../../domain/discovery/services/GraphTraversalService';
 import { ConceptID } from '../../../domain/concept/value-objects/ConceptID';
@@ -62,7 +63,7 @@ describe('P5S5-04 & P5S5-05: Performance & Zero-Mock Certification', () => {
     const latencies: number[] = [];
     for (let i = 0; i < 50; i++) {
       const start = performance.now();
-      await explorer.explore('su', { targetDialect: 'KBD' });
+      await explorer.explore('su', { targetDialect: DialectCode.KBD });
       latencies.push(performance.now() - start);
     }
 
@@ -83,7 +84,7 @@ describe('P5S5-04 & P5S5-05: Performance & Zero-Mock Certification', () => {
       graphService
     );
 
-    const result = await explorer.explore('su', { targetDialect: 'KBD' });
+    const result = await explorer.explore('su', { targetDialect: DialectCode.KBD });
 
     expect(result.conceptId).toBe('01ARZ3NDEKTSV4RRFFQ69G5FAV');
     expect(result.meanings).toHaveLength(1);

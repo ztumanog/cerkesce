@@ -1,4 +1,4 @@
-import { describe, it, expect, beforeEach } from 'vitest';
+﻿import { describe, it, expect, beforeEach } from 'vitest';
 import { DiscoveryFacade } from '../../../domain/discovery/services/DiscoveryFacade';
 
 describe('Phase 5.3.3 - Integration & Validation Certification (IV)', () => {
@@ -52,7 +52,7 @@ describe('Phase 5.3.3 - Integration & Validation Certification (IV)', () => {
     
     const stateCluster = result.contextClusters!.find((c: any) => c.clusterId === 'state');
     expect(stateCluster).toBeDefined();
-    expect(stateCluster!.concepts.some((c: any) => c.conceptId === ICE_ID)).toBe(true);
+    expect((stateCluster as any)!.concepts.some((c: any) => c.conceptId === ICE_ID)).toBe(true);
   });
 
   it('IV-004: DiscoveryFacade Contract Stability - DTO projeksiyon stabilitesi', async () => {

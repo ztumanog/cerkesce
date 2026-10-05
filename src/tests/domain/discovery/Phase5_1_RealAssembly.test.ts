@@ -1,4 +1,4 @@
-import { describe, it, expect, beforeEach } from 'vitest';
+﻿import { describe, it, expect, beforeEach } from 'vitest';
 import { MultilingualExplorer } from '../../../domain/discovery/services/MultilingualExplorer';
 import { SearchFacade } from '../../../domain/discovery/services/SearchFacade';
 import { DialectCode } from '../../../domain/dialect/types/DialectTypes';
@@ -26,8 +26,8 @@ describe('Phase 5.1 Sprint 1: Real InMemory Domain Assembly', () => {
     };
 
     const realVariantStore = [
-      { id: 'v-ady', conceptId: 'CONCEPT_WATER', dialectCode: DialectCode.ADY_WEST, term: 'псы', isFallback: false },
-      { id: 'v-abz', conceptId: 'CONCEPT_WATER', dialectCode: DialectCode.ABZAKH, term: 'псы', isFallback: true, fallbackSourceDialect: DialectCode.ADY_WEST }
+      { id: 'v-ady', conceptId: 'CONCEPT_WATER', dialectCode: DialectCode.ADY, term: 'псы', isFallback: false },
+      { id: 'v-abz', conceptId: 'CONCEPT_WATER', dialectCode: DialectCode.ABZAKH, term: 'псы', isFallback: true, fallbackSourceDialect: DialectCode.ADY }
     ];
 
     // 2. Real Service Adapters
@@ -77,11 +77,11 @@ describe('Phase 5.1 Sprint 1: Real InMemory Domain Assembly', () => {
     expect(terms).toContain('вода');
 
     // Real Dialect Fallback Resolution Verification
-    expect(result.variants.length).toBeGreaterThan(0);
-    const abzakhVariant = result.variants.find(v => v.dialectCode === DialectCode.ABZAKH);
+    expect(result.variants!.length).toBeGreaterThan(0);
+    const abzakhVariant = result.variants!.find(v => v.dialectCode === DialectCode.ABZAKH);
     expect(abzakhVariant).toBeDefined();
-    expect(abzakhVariant?.term).toBe('псы');
-    expect(abzakhVariant?.isFallback).toBe(true);
+    expect((abzakhVariant as any)?.term).toBe('псы');
+    expect((abzakhVariant as any)?.isFallback).toBe(true);
 
     // Latency Check (<50ms)
     expect(duration).toBeLessThan(50);

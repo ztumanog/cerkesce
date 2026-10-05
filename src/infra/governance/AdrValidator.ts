@@ -66,7 +66,7 @@ export class AdrValidator {
     const rows: Array<{ canonical: string; physical: string }> = [];
 
     // | ADR-XXXX | ... | `DOSYA.md` | ...
-    const regex = /\| (ADR[-_][A-Z0-9_-]+) \|[^|]*\| `([^`]+\.md)`/gi;
+    const regex = /\|\s*(ADR[-_][A-Za-z0-9_-]+) \|[^|]*\| `([^`]+\.md)`/gi;
     let match;
     while ((match = regex.exec(content)) !== null) {
       rows.push({

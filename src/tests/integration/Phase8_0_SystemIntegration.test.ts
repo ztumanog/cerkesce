@@ -36,6 +36,7 @@ describe('Phase 8.0 - System Integration & End-to-End API Wiring Certification',
     const analyticsData = await ApiClientService.fetchNetworkAnalytics(conceptNetwork);
 
     expect(conceptNetwork.nodes.map(n => n.id)).toContain('forest');
-    expect(Object.keys(analyticsData.degreeCentrality)).toContain('forest');
+    expect(Object.keys(analyticsData.degreeCentrality ?? {})).toContain('forest');
   });
 });
+

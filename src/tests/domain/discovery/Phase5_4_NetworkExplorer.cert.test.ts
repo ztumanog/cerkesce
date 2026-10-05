@@ -11,8 +11,8 @@ describe('Phase 5.4 - Interactive Concept Network Explorer Certification (NET)',
   const mockDiscoveryResult: DiscoveryResultDTO = {
     conceptId: WATER_ID,
     relatedConcepts: [
-      { conceptId: ICE_ID, label: 'МЫЛ', score: 1.0, relationType: 'STATE_OF' },
-      { conceptId: RIVER_ID, label: 'ПСЫ', score: 0.8, relationType: 'LOCATION_OF' }
+      { conceptId: ICE_ID, displayName: 'МЫЛ', score: 1.0, relationType: 'STATE_OF', depth: 1 },
+      { conceptId: RIVER_ID, displayName: 'ПСЫ', score: 0.8, relationType: 'LOCATION_OF', depth: 1 }
     ],
     contextClusters: [
       { clusterId: 'state', label: 'ЩЫТЫКIЭ', concepts: [{ conceptId: ICE_ID }] },
@@ -75,3 +75,5 @@ describe('Phase 5.4 - Interactive Concept Network Explorer Certification (NET)',
     expect(JSON.stringify(cyto1)).toBe(JSON.stringify(cyto2));
   });
 });
+
+

@@ -1,4 +1,4 @@
-import { describe, it, expect, beforeEach } from "vitest";
+﻿import { describe, it, expect, beforeEach } from "vitest";
 import { MultilingualExplorer } from "../../../domain/discovery/services/MultilingualExplorer";
 import { SearchFacade } from "../../../domain/discovery/services/SearchFacade";
 import { DialectCode } from "../../../domain/dialect/types/DialectTypes";
@@ -25,7 +25,7 @@ describe("Phase 5 Sprint 3: True E2E Platform Certification Suite", () => {
     };
 
     const realVariantStore = [
-      { id: 'v-abz', conceptId: 'CONCEPT_WATER', dialectCode: DialectCode.ABZAKH, term: 'псы', isFallback: true, fallbackSourceDialect: DialectCode.ADY_WEST }
+      { id: 'v-abz', conceptId: 'CONCEPT_WATER', dialectCode: DialectCode.ABZAKH, term: 'псы', isFallback: true, fallbackSourceDialect: DialectCode.ADY }
     ];
 
     const translationServiceAdapter = {
@@ -64,8 +64,8 @@ describe("Phase 5 Sprint 3: True E2E Platform Certification Suite", () => {
     expect(result.conceptId).toBe('CONCEPT_WATER');
     expect(result.canonicalName).toBe('WATER');
 
-    expect(result.variants.length).toBeGreaterThan(0);
-    expect(result.variants[0].dialectCode).toBe(DialectCode.ABZAKH);
-    expect(result.variants[0].term).toBe('псы');
+    expect(result.variants!.length).toBeGreaterThan(0);
+    expect(result.variants![0].dialectCode).toBe(DialectCode.ABZAKH);
+    expect(result.variants![0].term).toBe('псы');
   });
 });
