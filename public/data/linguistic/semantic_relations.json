@@ -2503,5 +2503,41 @@
     "evidence": "balik alani",
     "confidence": 1.0,
     "evidenceSource": "dictionary"
+  },
+  {
+    "id": "SR-WATER-RIVER",
+    "source": "WATER",
+    "target": "RIVER",
+    "type": "related",
+    "evidence": "псы ~ псыежэх",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary"
+  },
+  {
+    "id": "SR-WATER-DRINK",
+    "source": "WATER",
+    "target": "DRINK",
+    "type": "related",
+    "evidence": "псы ефэн",
+    "confidence": 1.0,
+    "evidenceSource": "corpus"
+  },
+  {
+    "id": "SR-WATER-WELL",
+    "source": "WATER",
+    "target": "WELL",
+    "type": "related",
+    "evidence": "псынэ",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary"
+  },
+  {
+    "id": "SR-WATER-STREAM",
+    "source": "WATER",
+    "target": "STREAM",
+    "type": "related",
+    "evidence": "псы кӀантӀэ",
+    "confidence": 1.0,
+    "evidenceSource": "dictionary"
   }
 ]
