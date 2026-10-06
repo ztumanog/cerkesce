@@ -10,6 +10,31 @@ import QRCode from 'qrcode';
 
 
 /* ═══════════════════ HTML TEMİZLEME ═══════════════════ */
+function wrapText(
+  ctx: CanvasRenderingContext2D,
+  text: string,
+  maxWidth: number
+): string[] {
+  const words = text.split(' ');
+  const lines: string[] = [];
+  let currentLine = '';
+
+  for (const word of words) {
+    const testLine = currentLine ? `${currentLine} ${word}` : word;
+    const metrics = ctx.measureText(testLine);
+
+    if (metrics.width > maxWidth && currentLine) {
+      lines.push(currentLine);
+      currentLine = word;
+    } else {
+      currentLine = testLine;
+    }
+  }
+
+  if (currentLine) lines.push(currentLine);
+  return lines;
+}
+
 function cleanHtml(html: string): string {
   if (!html) return '';
 
@@ -164,7 +189,11 @@ export async function olusturPaylasimGorseli(
   // ═══ ANLAM ═══
   ctx.fillStyle = 'rgba(255, 255, 255, 0.85)';
   ctx.font = '36px Georgia, "Times New Roman", serif';
-  ctx.fillText(cleanHtml(options.anlam), boyut.width / 2, boyut.height * 0.46);
+  const anlamMetni = cleanHtml(options.anlam);
+  const anlamSatirlari = wrapText(ctx, anlamMetni, boyut.width * 0.85);
+  anlamSatirlari.slice(0, 3).forEach((satir, i) => {
+    ctx.fillText(satir, boyut.width / 2, boyut.height * 0.46 + i * 40);
+  });
 
   // ═══ LEHÇE BADGE ═══
   if (options.lehce) {
