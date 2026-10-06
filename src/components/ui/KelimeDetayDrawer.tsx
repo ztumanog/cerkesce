@@ -710,8 +710,18 @@ const cokDilliKarsiliklar = useMemo(() => {
 
         </div>
 
-        <PaylasimGorseliModal isOpen={paylasimAcik} onClose={() => setPaylasimAcik(false)} kelime={{ kelime: content.word, anlam: sourceContents[0]?.meanings?.[0] || content.cerkesce || '', cerkesce: content.cerkesce || '', kaynaklar: sourceContents.map((s) => displayNameOf(s)), tarih: new Date().toLocaleDateString('tr-TR'), ornekler: sourceContents.flatMap((s) => (s.meanings || []).filter((m) => m.includes('◊') || m.includes('-') || m.includes(':'))).slice(0, 5) }} />
-
+<PaylasimGorseliModal 
+  isOpen={paylasimAcik} 
+  onClose={() => setPaylasimAcik(false)} 
+  kelime={{ 
+    kelime: content.cerkesce || content.word, 
+    anlam: content.cerkesce ? content.word : (sourceContents[0]?.meanings?.[0] || ''), 
+    cerkesce: content.cerkesce || '', 
+    kaynaklar: sourceContents.map((s) => displayNameOf(s)), 
+    tarih: new Date().toLocaleDateString('tr-TR'), 
+    ornekler: sourceContents.flatMap((s) => (s.meanings || []).filter((m) => m.includes('◊') || m.includes('-') || m.includes(':'))).slice(0, 5) 
+  }} 
+/>
         <div className="absolute inset-x-0 bottom-0 z-20 flex gap-2 border-t border-slate-300 bg-white/95 p-3.5 backdrop-blur dark:border-slate-800 dark:bg-slate-900/95">
           <button type="button" onClick={panoyaKopyala} className="flex min-h-11 flex-1 items-center justify-center gap-2 rounded-xl border border-slate-300 bg-slate-50 px-3 text-xs sm:text-sm font-semibold text-slate-700 transition-colors active:scale-95 dark:border-slate-700 dark:bg-slate-800 dark:text-slate-200">
             {kopyalandi ? <Check size={16} /> : <Copy size={16} />}
