@@ -231,7 +231,7 @@ export async function olusturPaylasimGorseli(
     ctx.font = '24px Georgia, "Times New Roman", serif';
 
     for (let i = 0; i < ornekLimit; i++) {
-      const ornek = options.ornekler[i];
+      const ornek = cleanHtml(options.ornekler[i]);
       const truncated = ornek.length > 45 ? ornek.slice(0, 42) + '...' : ornek;
       const y = ornekStartY + 50 + i * 42;
 
