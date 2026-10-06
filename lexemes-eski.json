@@ -48,8 +48,7 @@
     "corpusFrequencyAdy": 5,
     "corpusFrequencyKbd": 13,
     "partOfSpeech": "verb",
-    "corpusFrequency": 13,
-    "conceptId": "THOUGHT"
+    "corpusFrequency": 13
   },
   {
     "id": "L-GUBZHYGE",
@@ -191,8 +190,7 @@
     "corpusFrequencyAdy": 0,
     "corpusFrequencyKbd": 11,
     "partOfSpeech": "verb",
-    "corpusFrequency": 11,
-    "conceptId": "THOUGHT"
+    "corpusFrequency": 11
   },
   {
     "id": "L-GUBZH",
@@ -377,8 +375,7 @@
     "corpusFrequencyAdy": 428,
     "corpusFrequencyKbd": 0,
     "partOfSpeech": "noun",
-    "corpusFrequency": 428,
-    "conceptId": "THOUGHT"
+    "corpusFrequency": 428
   },
   {
     "id": "L-GURYYUEZHYN",
@@ -430,14 +427,13 @@
     "corpusFrequencyAdy": 0,
     "corpusFrequencyKbd": 4,
     "partOfSpeech": "verb",
-    "corpusFrequency": 4,
-    "conceptId": "THOUGHT"
+    "corpusFrequency": 4
   },
   {
     "id": "L-GUSHCH",
     "form": "гущэ",
     "ipa": "/gʷǝɕɐ/",
-    "literalMeaning": "besik; besik, kundak",
+    "literalMeaning": "besik",
     "derivation": {
       "rootIds": [
         "R-GUSHCH"
@@ -1195,8 +1191,7 @@
     "corpusFrequencyAdy": 0,
     "corpusFrequencyKbd": 92,
     "partOfSpeech": "noun",
-    "corpusFrequency": 92,
-    "conceptId": "NOSE"
+    "corpusFrequency": 92
   },
   {
     "id": "L-PERYT",
@@ -1296,7 +1291,7 @@
     "id": "L-YEDJAP1E",
     "form": "еджапӀэ",
     "ipa": "/je:dᶎɑ:pʹɐ/",
-    "literalMeaning": "okuma yeri; okul",
+    "literalMeaning": "okuma yeri",
     "dialectVariants": {
       "adyghe": "еджапӀэ",
       "kabardian": "еджапӀэ"
@@ -1948,8 +1943,7 @@
     "corpusFrequencyKbd": 111,
     "lemmaId": "LEMMA-BZE",
     "partOfSpeech": "noun",
-    "corpusFrequency": 153,
-    "conceptId": "TONGUE"
+    "corpusFrequency": 153
   },
   {
     "id": "L-FYN",
@@ -2161,26 +2155,106 @@
     "corpusFrequency": 1753
   },
   {
-    "id": "L-PC1Y",
+    "id": "L-P1C1Y",
     "form": "пцӀы",
-    "literalMeaning": "yalan; yalan, yanlis",
-    "conceptId": "LIE",
-    "wordFamilyId": "WF-PC1Y",
-    "partOfSpeech": "adjective",
-    "ipa": "/ptsʼə/",
-    "corpusFrequency": 5010,
-    "notes": "KBD Corpus rank 78"
+    "ipa": "/pt͡sʼə/",
+    "literalMeaning": "yalan",
+    "derivation": {
+      "rootIds": [
+        "R-P1C1"
+      ],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-P1C1",
+    "conceptIds": [
+      "LIE",
+      "DECEPTION"
+    ],
+    "dialectVariants": {
+      "adyghe": "пцӀы",
+      "kabardian": "пцӀы"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 15,
+      "sources": [
+        "Wiktionary (2023)",
+        "Abaze (2005)",
+        "Huvaj (2007)",
+        "Hasan (1991)",
+        "Aşemez (2013)",
+        "Yamisha (2018)"
+      ],
+      "meanings": {
+        "ru": "ложь, обман",
+        "en": "lies, deception",
+        "tr": "yalan, aldatma"
+      }
+    },
+    "corpusEvidence": {
+      "source": "Adigece korpus (adygvoice.ru, 1991-2021)",
+      "dialect": "adyghe",
+      "examples": [
+        "ПцӀы ӀэфӀ нэхърэ пэж дыдж. (Tatlı yalan, acı gerçekten iyidir.)",
+        "ПцӀы хэмылъу, нобэ хъарзынэу дылэжьащ. (Şüphesiz, bugün iyi iş çıkardık.)"
+      ]
+    },
+    "notes": "İsim: yalan, aldatma. Etimoloji: [пцӀ] + -ы. 15 sözlük + Wiktionary + Adigece korpus.",
+    "corpusFrequencyAdy": 178,
+    "corpusFrequencyKbd": 253,
+    "partOfSpeech": "noun",
+    "corpusFrequency": 431
   },
   {
-    "id": "L-PSYNCH1E",
+    "id": "L-PSYNSH1E",
     "form": "псынщӀэ",
-    "literalMeaning": "su gibi akan; hizli, hafif",
-    "conceptId": "FAST",
-    "wordFamilyId": "WF-PSYNCH1E",
-    "partOfSpeech": "adjective",
-    "ipa": "/psənɕʼa/",
-    "corpusFrequency": 4300,
-    "notes": "KBD Corpus rank 85"
+    "ipa": "/psǝnɕʹɐ/",
+    "literalMeaning": "su gibi akan",
+    "derivation": {
+      "rootIds": [
+        "R-PSY"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "wordFamilyId": "WF-PSY",
+    "conceptIds": [
+      "LIGHT_WEIGHT",
+      "FAST",
+      "QUICK",
+      "EASY",
+      "LIVELY"
+    ],
+    "dialectVariants": {
+      "adyghe": "псынщӀэ",
+      "kabardian": "псынщӀэ"
+    },
+    "dictionaryEvidence": {
+      "sourceCount": 2,
+      "sources": [
+        "Wiktionary (2023)",
+        "Yamisha (2018)"
+      ],
+      "meanings": {
+        "ru": "1. лёгкий (о весе) 2. быстрый, скорый 3. легкомысленный",
+        "en": "1. light (about weight) 2. quick, fast 3. frivolous",
+        "tr": "1. hafif 2. hızlı 3. hafifmeşrep"
+      }
+    },
+    "corpusEvidence": {
+      "source": "Kabardeyce Wiktionary",
+      "examples": [
+        "Вакъэ псынщӀэ. (Hafif ayakkabı.)",
+        "Машинэ псынщӀэ. (Hızlı araba.)",
+        "ЩӀалэ псынщӀэ. (Canlı delikanlı.)"
+      ]
+    },
+    "etymology": "[псынщӀ] + -э",
+    "notes": "Polisemik: hafif + hızlı + canlı + hafifmeşrep. Etimoloji: [псынщӀ] + -э. Su gibi akan.",
+    "corpusFrequencyAdy": 0,
+    "corpusFrequencyKbd": 170,
+    "partOfSpeech": "noun",
+    "corpusFrequency": 170
   },
   {
     "id": "L-SH1Y",
@@ -2235,8 +2309,7 @@
     "corpusFrequencyAdy": 0,
     "corpusFrequencyKbd": 329,
     "partOfSpeech": "noun",
-    "corpusFrequency": 329,
-    "conceptId": "PETROLEUM"
+    "corpusFrequency": 329
   },
   {
     "id": "L-SH1E",
@@ -2361,7 +2434,7 @@
     "id": "L-SHE",
     "form": "шэ",
     "ipa": "/ʂɐ/",
-    "literalMeaning": "sut, lateks; süt; süt",
+    "literalMeaning": "sut, lateks; süt",
     "conceptIds": [
       "FAT",
       "THREE_TIMES",
@@ -2467,8 +2540,7 @@
     "corpusFrequencyAdy": 0,
     "corpusFrequencyKbd": 69,
     "partOfSpeech": "noun",
-    "corpusFrequency": 69,
-    "conceptId": "RABBIT"
+    "corpusFrequency": 69
   },
   {
     "id": "L-K1YH",
@@ -2601,8 +2673,7 @@
     "corpusFrequencyAdy": 0,
     "corpusFrequencyKbd": 13,
     "partOfSpeech": "noun",
-    "corpusFrequency": 13,
-    "conceptId": "WOLF"
+    "corpusFrequency": 13
   },
   {
     "id": "L-ZHY",
@@ -2671,7 +2742,7 @@
     "id": "L-DYGHUZHY",
     "form": "дыгъужь",
     "ipa": "/dǝʁʷǝʑ/",
-    "literalMeaning": "eski hırsız; kurt; kurt",
+    "literalMeaning": "eski hırsız; kurt",
     "derivation": {
       "rootIds": [
         "R-DYGHU",
@@ -2757,7 +2828,7 @@
     "id": "L-KHY",
     "form": "хы",
     "ipa": "/xǝ/",
-    "literalMeaning": "deniz; altı; altı (6)",
+    "literalMeaning": "deniz; altı",
     "derivation": {
       "rootIds": [
         "R-KHY"
@@ -3038,8 +3109,7 @@
     "corpusFrequencyAdy": 11,
     "corpusFrequencyKbd": 230,
     "partOfSpeech": "noun",
-    "corpusFrequency": 230,
-    "conceptId": "TRAIN"
+    "corpusFrequency": 230
   },
   {
     "id": "L-MAF1EGU",
@@ -4467,7 +4537,7 @@
     "id": "L-KUE",
     "form": "къуэ",
     "ipa": "/qʷa/",
-    "literalMeaning": "vadi, dere; ogul; ogul",
+    "literalMeaning": "vadi, dere; ogul",
     "derivation": {
       "rootIds": [
         "R-KUE"
@@ -5748,8 +5818,7 @@
       "rule": "auto_prefix"
     },
     "partOfSpeech": "noun",
-    "corpusFrequency": 54,
-    "conceptId": "LIGHT"
+    "corpusFrequency": 54
   },
   {
     "id": "L-NE-DAWN",
@@ -5770,8 +5839,7 @@
       "rule": "auto_prefix"
     },
     "partOfSpeech": "noun",
-    "corpusFrequency": 30,
-    "conceptId": "LIGHT"
+    "corpusFrequency": 30
   },
   {
     "id": "L-NE-KINDNESS",
@@ -5792,8 +5860,7 @@
       "rule": "auto_prefix"
     },
     "partOfSpeech": "noun",
-    "corpusFrequency": 7,
-    "conceptId": "LIGHT"
+    "corpusFrequency": 7
   },
   {
     "id": "L-NE-JOY",
@@ -5814,8 +5881,7 @@
       "rule": "auto_prefix"
     },
     "partOfSpeech": "noun",
-    "corpusFrequency": 12,
-    "conceptId": "LIGHT"
+    "corpusFrequency": 12
   },
   {
     "id": "L-GUK1EGHU",
@@ -5836,17 +5902,28 @@
       "rule": "auto_prefix"
     },
     "partOfSpeech": "noun",
-    "corpusFrequency": 324,
-    "conceptId": "THOUGHT"
+    "corpusFrequency": 324
   },
   {
-    "id": "L-GUKHELH",
+    "id": "L-GUKHELHE",
     "form": "гухэлъ",
-    "literalMeaning": "niyet, amac; niyet, icsel arzu",
-    "conceptId": "INTENTION",
+    "literalMeaning": "niyet, amac",
     "wordFamilyId": "WF-GU",
+    "dialectVariants": {
+      "adyghe": "гухэлъ",
+      "kabardian": "гухэлъ"
+    },
+    "corpusFrequencyAdy": 102,
+    "corpusFrequencyKbd": 27,
+    "notes": "C-9.5. Slovar: 11 kaynak.",
+    "derivation": {
+      "rootIds": [
+        "R-GU"
+      ],
+      "rule": "auto_prefix"
+    },
     "partOfSpeech": "noun",
-    "notes": "Felsefi/ontolojik kavram"
+    "corpusFrequency": 129
   },
   {
     "id": "L-GUPSAF",
@@ -5867,8 +5944,7 @@
       "rule": "auto_prefix"
     },
     "partOfSpeech": "noun",
-    "corpusFrequency": 70,
-    "conceptId": "THOUGHT"
+    "corpusFrequency": 70
   },
   {
     "id": "L-GUGHU",
@@ -5889,8 +5965,7 @@
       "rule": "auto_prefix"
     },
     "partOfSpeech": "noun",
-    "corpusFrequency": 671,
-    "conceptId": "THOUGHT"
+    "corpusFrequency": 671
   },
   {
     "id": "L-GUGHUEGHE",
@@ -5911,8 +5986,7 @@
       "rule": "auto_prefix"
     },
     "partOfSpeech": "noun",
-    "corpusFrequency": 189,
-    "conceptId": "THOUGHT"
+    "corpusFrequency": 189
   },
   {
     "id": "L-GULHYTE",
@@ -5933,8 +6007,7 @@
       "rule": "auto_prefix"
     },
     "partOfSpeech": "noun",
-    "corpusFrequency": 230,
-    "conceptId": "THOUGHT"
+    "corpusFrequency": 230
   },
   {
     "id": "L-GUKHEK1",
@@ -5955,8 +6028,7 @@
       "rule": "auto_prefix"
     },
     "partOfSpeech": "noun",
-    "corpusFrequency": 54,
-    "conceptId": "THOUGHT"
+    "corpusFrequency": 54
   },
   {
     "id": "L-GUGHAП1E",
@@ -5977,8 +6049,7 @@
       "rule": "auto_prefix"
     },
     "partOfSpeech": "noun",
-    "corpusFrequency": 68,
-    "conceptId": "THOUGHT"
+    "corpusFrequency": 68
   },
   {
     "id": "L-GUZEZHO",
@@ -5999,8 +6070,7 @@
       "rule": "auto_prefix"
     },
     "partOfSpeech": "noun",
-    "corpusFrequency": 47,
-    "conceptId": "THOUGHT"
+    "corpusFrequency": 47
   },
   {
     "id": "L-GUSH1UAGHO",
@@ -6021,8 +6091,7 @@
       "rule": "auto_prefix"
     },
     "partOfSpeech": "noun",
-    "corpusFrequency": 0,
-    "conceptId": "THOUGHT"
+    "corpusFrequency": 0
   },
   {
     "id": "L-1EPY1EGHU",
@@ -6043,8 +6112,7 @@
       "rule": "auto_prefix"
     },
     "partOfSpeech": "noun",
-    "corpusFrequency": 313,
-    "conceptId": "HAND"
+    "corpusFrequency": 313
   },
   {
     "id": "L-1EMAL",
@@ -6065,8 +6133,7 @@
       "rule": "auto_prefix"
     },
     "partOfSpeech": "noun",
-    "corpusFrequency": 376,
-    "conceptId": "HAND"
+    "corpusFrequency": 376
   },
   {
     "id": "L-1EZEGHU",
@@ -6087,8 +6154,7 @@
       "rule": "auto_prefix"
     },
     "partOfSpeech": "noun",
-    "corpusFrequency": 51,
-    "conceptId": "HAND"
+    "corpusFrequency": 51
   },
   {
     "id": "L-1EF1",
@@ -6109,8 +6175,7 @@
       "rule": "auto_prefix"
     },
     "partOfSpeech": "noun",
-    "corpusFrequency": 124,
-    "conceptId": "HAND"
+    "corpusFrequency": 124
   },
   {
     "id": "L-1ESHCH",
@@ -6131,8 +6196,7 @@
       "rule": "auto_prefix"
     },
     "partOfSpeech": "noun",
-    "corpusFrequency": 115,
-    "conceptId": "HAND"
+    "corpusFrequency": 115
   },
   {
     "id": "L-LHEUZHY",
@@ -6153,8 +6217,7 @@
       "rule": "auto_prefix"
     },
     "partOfSpeech": "noun",
-    "corpusFrequency": 67,
-    "conceptId": "SOLE"
+    "corpusFrequency": 67
   },
   {
     "id": "L-LHEGUA",
@@ -6175,8 +6238,7 @@
       "rule": "auto_prefix"
     },
     "partOfSpeech": "noun",
-    "corpusFrequency": 11,
-    "conceptId": "SOLE"
+    "corpusFrequency": 11
   },
   {
     "id": "L-LHEMYDJ",
@@ -6197,8 +6259,7 @@
       "rule": "auto_prefix"
     },
     "partOfSpeech": "noun",
-    "corpusFrequency": 30,
-    "conceptId": "SOLE"
+    "corpusFrequency": 30
   },
   {
     "id": "L-LHESHCH",
@@ -6219,8 +6280,7 @@
       "rule": "auto_prefix"
     },
     "partOfSpeech": "noun",
-    "corpusFrequency": 99,
-    "conceptId": "SOLE"
+    "corpusFrequency": 99
   },
   {
     "id": "L-LHENYQO",
@@ -6241,8 +6301,7 @@
       "rule": "auto_prefix"
     },
     "partOfSpeech": "noun",
-    "corpusFrequency": 72,
-    "conceptId": "SOLE"
+    "corpusFrequency": 72
   },
   {
     "id": "L-SHHYASHE",
@@ -6715,7 +6774,7 @@
     "id": "L-BZEBZA",
     "form": "бзэбзэ",
     "ipa": "/bzabza/",
-    "literalMeaning": "dil dil; geveze",
+    "literalMeaning": "dil dil",
     "derivation": {
       "rootIds": [
         "R-BZE"
@@ -7159,7 +7218,7 @@
     "id": "L-K1UIBLY",
     "form": "къуиблы",
     "ipa": "/q╩Àijbl╔Ö/",
-    "literalMeaning": "yedi ogul; yedigen",
+    "literalMeaning": "yedi ogul",
     "derivation": {
       "rootIds": [
         "R-K1UE"
@@ -7583,7 +7642,7 @@
   {
     "id": "L-SHHO",
     "form": "шъо",
-    "literalMeaning": "deri; deri, cilt",
+    "literalMeaning": "deri",
     "derivation": {
       "rootIds": [
         "R-SHHE"
@@ -8884,7 +8943,7 @@
   {
     "id": "L-MEZKOGHUM",
     "form": "мэзкъогъум",
-    "literalMeaning": "orman vadisi; orman kuytusu",
+    "literalMeaning": "orman vadisi",
     "wordFamilyId": "WF-MEZ",
     "conceptId": "FOREST_VALLEY",
     "dialectVariants": {
@@ -9374,7 +9433,7 @@
   {
     "id": "L-BZASH1EPSE",
     "form": "бзащӀэпс",
-    "literalMeaning": "yay teli; sive",
+    "literalMeaning": "yay teli",
     "partOfSpeech": "noun",
     "wordFamilyId": "WF-BZE2",
     "conceptId": "BOWSTRING",
@@ -9897,7 +9956,7 @@
   {
     "id": "L-SHCHY",
     "form": "щы",
-    "literalMeaning": "uc; uç",
+    "literalMeaning": "uc",
     "partOfSpeech": "numeral",
     "wordFamilyId": "WF-NUM",
     "conceptId": "THREE",
@@ -9921,15 +9980,14 @@
     "corpusFrequency": 43
   },
   {
-    "id": "L-TXU",
+    "id": "L-TKHU",
     "form": "тху",
     "literalMeaning": "bes",
-    "conceptId": "FIVE",
-    "wordFamilyId": "WF-TXU",
     "partOfSpeech": "numeral",
-    "ipa": "/txʷə/",
-    "corpusFrequency": 3910,
-    "notes": "KBD Corpus rank 89"
+    "wordFamilyId": "WF-NUM",
+    "conceptId": "FIVE",
+    "notes": "C-11.3: bes.",
+    "corpusFrequency": 27
   },
   {
     "id": "L-BLY",
@@ -9942,26 +10000,24 @@
     "corpusFrequency": 32
   },
   {
-    "id": "L-BGHWU",
+    "id": "L-BGHU",
     "form": "бгъу",
     "literalMeaning": "dokuz",
-    "conceptId": "NINE",
-    "wordFamilyId": "WF-BGHWU",
     "partOfSpeech": "numeral",
-    "ipa": "/bʁʷə/",
-    "corpusFrequency": 3500,
-    "notes": "KBD Corpus rank 93"
+    "wordFamilyId": "WF-NUM",
+    "conceptId": "NINE",
+    "notes": "C-11.3: dokuz.",
+    "corpusFrequency": 66
   },
   {
-    "id": "L-PSH1Y",
+    "id": "L-PSHCH1Y",
     "form": "пщӀы",
     "literalMeaning": "on",
-    "conceptId": "TEN",
-    "wordFamilyId": "WF-PSH1Y",
     "partOfSpeech": "numeral",
-    "ipa": "/pɕʼə/",
-    "corpusFrequency": 3410,
-    "notes": "KBD Corpus rank 94"
+    "wordFamilyId": "WF-NUM",
+    "conceptId": "TEN",
+    "notes": "C-11.3: on.",
+    "corpusFrequency": 38
   },
   {
     "id": "L-PL1YSHCH",
@@ -10296,15 +10352,18 @@
     "corpusFrequency": 245
   },
   {
-    "id": "L-PSHEDDZHYZH",
+    "id": "L-PSHCHEDDZHYZH",
     "form": "пщэдджыжь",
     "literalMeaning": "sabah",
     "conceptId": "MORNING",
-    "wordFamilyId": "WF-PSHEDDZHYZH",
     "partOfSpeech": "noun",
-    "ipa": "/pɕadʒəʑ/",
-    "corpusFrequency": 5600,
-    "notes": "KBD Corpus rank 72"
+    "wordFamilyId": "WF-BASIC",
+    "dialectVariants": {
+      "adyghe": "пщэдджыжь",
+      "kabardian": "пщэдджыжь"
+    },
+    "notes": "C-11.3: temel kelime. Kabardeyce.",
+    "corpusFrequency": 103
   },
   {
     "id": "L-PSHCHYKHESHCH",
@@ -10369,7 +10428,7 @@
   {
     "id": "L-DELHXU",
     "form": "дэлъху",
-    "literalMeaning": "erkek kardes (kizin); kardes",
+    "literalMeaning": "erkek kardes (kizin)",
     "conceptId": "BROTHER_OF_SISTER",
     "partOfSpeech": "noun",
     "wordFamilyId": "WF-KINSHIP",
@@ -10500,7 +10559,7 @@
   {
     "id": "L-SHCHALE",
     "form": "щӀалэ",
-    "literalMeaning": "genc erkek, cocuk; oglan; genc",
+    "literalMeaning": "genc erkek, cocuk; oglan",
     "conceptId": "BOY",
     "partOfSpeech": "noun",
     "wordFamilyId": "WF-PERSON",
@@ -11208,8 +11267,7 @@
     "wordFamilyId": "WF-ANIMAL",
     "notes": "C-11.3: kategori tasnifi. [NADIR]",
     "status": "rare",
-    "corpusFrequency": 42,
-    "conceptId": "DEER"
+    "corpusFrequency": 42
   },
   {
     "id": "L-MYSHE",
@@ -11219,8 +11277,7 @@
     "wordFamilyId": "WF-ANIMAL",
     "notes": "C-11.3: kategori tasnifi. [NADIR]",
     "status": "rare",
-    "corpusFrequency": 45,
-    "conceptId": "DEER"
+    "corpusFrequency": 45
   },
   {
     "id": "L-BADZE",
@@ -11230,8 +11287,7 @@
     "wordFamilyId": "WF-ANIMAL",
     "notes": "C-11.3: kategori tasnifi. [NADIR]",
     "status": "rare",
-    "corpusFrequency": 28,
-    "conceptId": "DEER"
+    "corpusFrequency": 28
   },
   {
     "id": "L-BZHE",
@@ -11241,17 +11297,23 @@
     "wordFamilyId": "WF-ANIMAL",
     "notes": "C-11.3: kategori tasnifi. [NADIR]",
     "status": "rare",
-    "corpusFrequency": 72,
-    "conceptId": "DEER"
+    "corpusFrequency": 72
   },
   {
-    "id": "L-KHQUEBAN",
+    "id": "L-KHUEBAN",
     "form": "кхъуэбан",
-    "literalMeaning": "yaban domuzu; domuz agili",
-    "conceptId": "PIG",
-    "wordFamilyId": "WF-KHQUE",
+    "literalMeaning": "yaban domuzu",
     "partOfSpeech": "noun",
-    "notes": "Dogrulandi: sozluk kaynagi"
+    "wordFamilyId": "WF-ANIMAL",
+    "notes": "C-11.3: kategori tasnifi. [NADIR]",
+    "status": "rare",
+    "derivation": {
+      "rootIds": [
+        "R-KKHUHE"
+      ],
+      "rule": "auto_prefix"
+    },
+    "corpusFrequency": 0
   },
   {
     "id": "L-BADZ",
@@ -11261,17 +11323,17 @@
     "wordFamilyId": "WF-ANIMAL",
     "notes": "C-11.3: kategori tasnifi. [NADIR]",
     "status": "rare",
-    "corpusFrequency": 0,
-    "conceptId": "DEER"
+    "corpusFrequency": 0
   },
   {
-    "id": "L-SHCHUE",
+    "id": "L-SHHXHU2",
     "form": "щхъу",
-    "literalMeaning": "mavi; gri",
-    "conceptId": "GRAY",
-    "wordFamilyId": "WF-SHCHUE",
+    "literalMeaning": "mavi",
     "partOfSpeech": "noun",
-    "notes": "Dogrulandi: sozluk kaynagi"
+    "wordFamilyId": "WF-COLOR",
+    "notes": "C-11.3: kategori tasnifi. [NADIR]",
+    "status": "rare",
+    "corpusFrequency": 0
   },
   {
     "id": "L-MORE",
@@ -11373,8 +11435,7 @@
     "wordFamilyId": "WF-FLORA",
     "notes": "C-11.3: kategori tasnifi. [NADIR]",
     "status": "rare",
-    "corpusFrequency": 346,
-    "conceptId": "OAK_TREE"
+    "corpusFrequency": 346
   },
   {
     "id": "L-PKHEKHUEY",
@@ -11384,8 +11445,7 @@
     "wordFamilyId": "WF-FLORA",
     "notes": "C-11.3: kategori tasnifi. [NADIR]",
     "status": "rare",
-    "corpusFrequency": 0,
-    "conceptId": "OAK_TREE"
+    "corpusFrequency": 0
   },
   {
     "id": "L-DESHXUEY",
@@ -11395,8 +11455,7 @@
     "wordFamilyId": "WF-FLORA",
     "notes": "C-11.3: kategori tasnifi. [NADIR]",
     "status": "rare",
-    "corpusFrequency": 2,
-    "conceptId": "OAK_TREE"
+    "corpusFrequency": 2
   },
   {
     "id": "L-ZHYGEY",
@@ -11413,13 +11472,14 @@
     "conceptId": "OAK_TREE"
   },
   {
-    "id": "L-DEZHEY",
+    "id": "L-DEZHYGEY",
     "form": "дежьей",
-    "literalMeaning": "findik agaci; findiklik",
-    "conceptId": "HAZEL",
-    "wordFamilyId": "WF-DEZHEY",
+    "literalMeaning": "findik agaci",
     "partOfSpeech": "noun",
-    "notes": "Dogrulandi: sozluk kaynagi"
+    "wordFamilyId": "WF-FLORA",
+    "notes": "C-11.3: kategori tasnifi. [NADIR]",
+    "status": "rare",
+    "corpusFrequency": 0
   },
   {
     "id": "L-PSEY",
@@ -11429,8 +11489,7 @@
     "wordFamilyId": "WF-FLORA",
     "notes": "C-11.3: cam. Teshu 1991. [NADIR]",
     "status": "rare",
-    "corpusFrequency": 1,
-    "conceptId": "OAK_TREE"
+    "corpusFrequency": 1
   },
   {
     "id": "L-KEDR",
@@ -11440,8 +11499,7 @@
     "wordFamilyId": "WF-FLORA",
     "notes": "C-11.3: kategori tasnifi. [NADIR]",
     "status": "rare",
-    "corpusFrequency": 3,
-    "conceptId": "OAK_TREE"
+    "corpusFrequency": 3
   },
   {
     "id": "L-BZHYXHU",
@@ -11451,8 +11509,7 @@
     "wordFamilyId": "WF-FLORA",
     "notes": "C-11.3: kategori tasnifi. [NADIR]",
     "status": "rare",
-    "corpusFrequency": 7,
-    "conceptId": "OAK_TREE"
+    "corpusFrequency": 7
   },
   {
     "id": "L-PKHEZHABE",
@@ -11462,17 +11519,17 @@
     "wordFamilyId": "WF-FLORA",
     "notes": "C-11.3: kategori tasnifi. [NADIR]",
     "status": "rare",
-    "corpusFrequency": 0,
-    "conceptId": "OAK_TREE"
+    "corpusFrequency": 0
   },
   {
-    "id": "L-SHEZAE",
+    "id": "L-SHEZAYE",
     "form": "шезае",
-    "literalMeaning": "akcaagac; ihlamur agaci",
-    "conceptId": "LINDEN",
-    "wordFamilyId": "WF-SHEZAE",
+    "literalMeaning": "akcaagac",
     "partOfSpeech": "noun",
-    "notes": "Dogrulandi: sozluk kaynagi"
+    "wordFamilyId": "WF-FLORA",
+    "notes": "C-11.3: kategori tasnifi. [NADIR]",
+    "status": "rare",
+    "corpusFrequency": 0
   },
   {
     "id": "L-KHER",
@@ -11482,8 +11539,7 @@
     "wordFamilyId": "WF-FLORA",
     "notes": "C-11.3: kategori tasnifi. [NADIR]",
     "status": "rare",
-    "corpusFrequency": 0,
-    "conceptId": "OAK_TREE"
+    "corpusFrequency": 0
   },
   {
     "id": "L-BALYDZHE",
@@ -11493,8 +11549,7 @@
     "wordFamilyId": "WF-FLORA",
     "notes": "C-11.3: kategori tasnifi. [NADIR]",
     "status": "rare",
-    "corpusFrequency": 9,
-    "conceptId": "OAK_TREE"
+    "corpusFrequency": 9
   },
   {
     "id": "L-K1ERT1OF",
@@ -11504,8 +11559,7 @@
     "wordFamilyId": "WF-FLORA",
     "notes": "C-11.3: kategori tasnifi. [NADIR]",
     "status": "rare",
-    "corpusFrequency": 55,
-    "conceptId": "OAK_TREE"
+    "corpusFrequency": 55
   },
   {
     "id": "L-DEGHUNDE",
@@ -11515,8 +11569,7 @@
     "wordFamilyId": "WF-FLORA",
     "notes": "C-11.3: kategori tasnifi. [NADIR]",
     "status": "rare",
-    "corpusFrequency": 25,
-    "conceptId": "OAK_TREE"
+    "corpusFrequency": 25
   },
   {
     "id": "L-K1EBYSTE",
@@ -11526,8 +11579,7 @@
     "wordFamilyId": "WF-FLORA",
     "notes": "C-11.3: kategori tasnifi. [NADIR]",
     "status": "rare",
-    "corpusFrequency": 34,
-    "conceptId": "OAK_TREE"
+    "corpusFrequency": 34
   },
   {
     "id": "L-BZHYN",
@@ -11537,8 +11589,7 @@
     "wordFamilyId": "WF-FLORA",
     "notes": "C-11.3: kategori tasnifi. [NADIR]",
     "status": "rare",
-    "corpusFrequency": 24,
-    "conceptId": "OAK_TREE"
+    "corpusFrequency": 24
   },
   {
     "id": "L-BZHYNYXHU",
@@ -11548,8 +11599,7 @@
     "wordFamilyId": "WF-FLORA",
     "notes": "C-11.3: kategori tasnifi. [NADIR]",
     "status": "rare",
-    "corpusFrequency": 7,
-    "conceptId": "OAK_TREE"
+    "corpusFrequency": 7
   },
   {
     "id": "L-DESH",
@@ -11559,8 +11609,7 @@
     "wordFamilyId": "WF-FLORA",
     "notes": "C-11.3: kategori tasnifi. [NADIR]",
     "status": "rare",
-    "corpusFrequency": 0,
-    "conceptId": "OAK_TREE"
+    "corpusFrequency": 0
   },
   {
     "id": "L-NAKHE",
@@ -11576,8 +11625,7 @@
       ],
       "rule": "auto_fuzzy"
     },
-    "corpusFrequency": 42,
-    "conceptId": "OAK_TREE"
+    "corpusFrequency": 42
   },
   {
     "id": "L-K1EB",
@@ -11587,8 +11635,7 @@
     "wordFamilyId": "WF-FLORA",
     "notes": "C-11.3: kategori tasnifi. [NADIR]",
     "status": "rare",
-    "corpusFrequency": 0,
-    "conceptId": "OAK_TREE"
+    "corpusFrequency": 0
   },
   {
     "id": "L-GUEDZ",
@@ -11604,8 +11651,7 @@
       ],
       "rule": "auto_prefix"
     },
-    "corpusFrequency": 78,
-    "conceptId": "OAK_TREE"
+    "corpusFrequency": 78
   },
   {
     "id": "L-KHUGU",
@@ -11615,8 +11661,7 @@
     "wordFamilyId": "WF-FLORA",
     "notes": "C-11.3: kategori tasnifi. [NADIR]",
     "status": "rare",
-    "corpusFrequency": 30,
-    "conceptId": "OAK_TREE"
+    "corpusFrequency": 30
   },
   {
     "id": "L-KHE",
@@ -11626,8 +11671,7 @@
     "wordFamilyId": "WF-FLORA",
     "notes": "C-11.3: kategori tasnifi. [NADIR]",
     "status": "rare",
-    "corpusFrequency": 1,
-    "conceptId": "OAK_TREE"
+    "corpusFrequency": 1
   },
   {
     "id": "L-ZANTKHE",
@@ -11637,8 +11681,7 @@
     "wordFamilyId": "WF-FLORA",
     "notes": "C-11.3: kategori tasnifi. [NADIR]",
     "status": "rare",
-    "corpusFrequency": 19,
-    "conceptId": "OAK_TREE"
+    "corpusFrequency": 19
   },
   {
     "id": "L-CHYGEY",
@@ -11944,15 +11987,14 @@
     "corpusFrequency": 1
   },
   {
-    "id": "L-UAFE",
+    "id": "L-WAFE",
     "form": "уафэ",
     "literalMeaning": "gokyuzu",
-    "conceptId": "SKY",
-    "wordFamilyId": "WF-WAFE",
     "partOfSpeech": "noun",
-    "ipa": "/waːfa/",
-    "corpusFrequency": 330,
-    "notes": "KBD Corpus rank 225"
+    "wordFamilyId": "WF-Nature",
+    "notes": "C-11.3: kategori tasnifi. [NADIR]",
+    "status": "rare",
+    "corpusFrequency": 144
   },
   {
     "id": "L-WAFEGHUAGHUE",
@@ -11991,24 +12033,24 @@
     "corpusFrequency": 23
   },
   {
-    "id": "L-UESHX",
+    "id": "L-WASHX",
     "form": "уэшх",
     "literalMeaning": "yagmur",
-    "conceptId": "RAIN",
-    "wordFamilyId": "WF-WESHX",
     "partOfSpeech": "noun",
-    "ipa": "/waʃx/",
-    "corpusFrequency": 320,
-    "notes": "KBD Corpus rank 227"
+    "wordFamilyId": "WF-Nature",
+    "notes": "C-11.3: kategori tasnifi. [NADIR]",
+    "status": "rare",
+    "corpusFrequency": 169
   },
   {
-    "id": "L-UE",
+    "id": "L-WA",
     "form": "уэ",
-    "literalMeaning": "dolu; sen",
-    "conceptId": "YOU",
-    "wordFamilyId": "WF-ZAMIR",
+    "literalMeaning": "dolu",
     "partOfSpeech": "noun",
-    "notes": "Dogrulandi: temel kelime"
+    "wordFamilyId": "WF-Nature",
+    "notes": "C-11.3: kategori tasnifi. [NADIR]",
+    "status": "rare",
+    "corpusFrequency": 3287
   },
   {
     "id": "L-GUALE",
@@ -12047,22 +12089,24 @@
     "corpusFrequency": 25
   },
   {
-    "id": "L-PSHCHYK1U",
+    "id": "L-PSHCH1YK1U",
     "form": "пщӀыкӀу",
-    "literalMeaning": "on bir; onlu sayi eki",
-    "conceptId": "TEN",
-    "wordFamilyId": "WF-PSHCHYK1U",
+    "literalMeaning": "on bir",
     "partOfSpeech": "noun",
-    "notes": "Dogrulandi: sozluk kaynagi"
+    "wordFamilyId": "WF-Number",
+    "notes": "C-11.3: kategori tasnifi. [NADIR]",
+    "status": "rare",
+    "corpusFrequency": 0
   },
   {
-    "id": "L-PSHCHYK1UT1",
+    "id": "L-PSHCH1YK1UT1",
     "form": "пщӀыкӀутӀ",
     "literalMeaning": "on iki",
-    "conceptId": "TWELVE",
-    "wordFamilyId": "WF-PSHCHYK1U",
     "partOfSpeech": "noun",
-    "notes": "Dogrulandi: sozluk kaynagi"
+    "wordFamilyId": "WF-Number",
+    "notes": "C-11.3: kategori tasnifi. [NADIR]",
+    "status": "rare",
+    "corpusFrequency": 0
   },
   {
     "id": "L-NOBE",
@@ -12127,15 +12171,14 @@
     "corpusFrequency": 25
   },
   {
-    "id": "L-GHATXE",
+    "id": "L-GHATKHE",
     "form": "гъатхэ",
     "literalMeaning": "ilkbahar",
-    "conceptId": "SPRING",
-    "wordFamilyId": "WF-GHATXE",
     "partOfSpeech": "noun",
-    "ipa": "/ʁaːtxa/",
-    "corpusFrequency": 5200,
-    "notes": "KBD Corpus rank 76"
+    "wordFamilyId": "WF-Time",
+    "notes": "C-11.3: kategori tasnifi. [NADIR]",
+    "status": "rare",
+    "corpusFrequency": 66
   },
   {
     "id": "L-GHAMAKHUE",
@@ -12425,7 +12468,7 @@
   {
     "id": "L-ZEKHKHEKHEN",
     "form": "зэхэхын",
-    "literalMeaning": "duymak; duymak, isitmek; duymak",
+    "literalMeaning": "duymak; duymak, isitmek",
     "conceptId": "HEAR",
     "partOfSpeech": "noun",
     "wordFamilyId": "WF-BASIC",
@@ -12458,7 +12501,7 @@
   {
     "id": "L-KHEDZHABZ",
     "form": "хьэджэбз",
-    "literalMeaning": "kiz; akici konusma",
+    "literalMeaning": "kiz",
     "conceptId": "GIRL",
     "partOfSpeech": "noun",
     "wordFamilyId": "WF-BASIC",
@@ -12469,7 +12512,7 @@
   {
     "id": "L-ZEDELHXU",
     "form": "зэдэлъху",
-    "literalMeaning": "kardes (birbirinin); erkek kardesler",
+    "literalMeaning": "kardes (birbirinin)",
     "partOfSpeech": "noun",
     "wordFamilyId": "WF-KINSHIP",
     "conceptId": "SIBLING",
@@ -12477,13 +12520,14 @@
     "corpusFrequency": 0
   },
   {
-    "id": "L-DELKHAN",
+    "id": "L-DALHXAN",
     "form": "дэлъхан",
-    "literalMeaning": "?; icine atmak",
-    "conceptId": "THROW",
-    "wordFamilyId": "WF-DELKHAN",
+    "literalMeaning": "?",
     "partOfSpeech": "noun",
-    "notes": "Dogrulandi: sozluk kaynagi"
+    "wordFamilyId": "WF-Family",
+    "notes": "C-11.3: IPA kaynakli. [NADIR]",
+    "status": "rare",
+    "corpusFrequency": 0
   },
   {
     "id": "L-DEHAN",
@@ -12659,8 +12703,7 @@
       ],
       "rule": "auto_prefix"
     },
-    "corpusFrequency": 782,
-    "conceptId": "HEART"
+    "corpusFrequency": 782
   },
   {
     "id": "L-GUPSESAN",
@@ -12752,13 +12795,14 @@
     "corpusFrequency": 0
   },
   {
-    "id": "L-EGUPSESEN",
+    "id": "L-YAGUPSESAN",
     "form": "егупсэсэн",
-    "literalMeaning": "?; dusunmek",
-    "conceptId": "THOUGHT",
-    "wordFamilyId": "WF-GU",
+    "literalMeaning": "?",
     "partOfSpeech": "noun",
-    "notes": "Dogrulandi: sozluk kaynagi"
+    "wordFamilyId": "WF-Verb",
+    "notes": "C-11.3: IPA kaynakli. [NADIR]",
+    "status": "rare",
+    "corpusFrequency": 0
   },
   {
     "id": "L-YALHAN",
@@ -12801,8 +12845,7 @@
       ],
       "rule": "auto_fuzzy"
     },
-    "corpusFrequency": 3,
-    "conceptId": "HEART"
+    "corpusFrequency": 3
   },
   {
     "id": "L-LHAGHE",
@@ -12977,12 +13020,18 @@
     "corpusFrequency": 0
   },
   {
-    "id": "L-NYBZHY",
+    "id": "L-NYBZH",
     "form": "ныбжь",
-    "literalMeaning": "yas; yaş",
-    "wordFamilyId": "WF-NYBZHY",
-    "conceptId": "AGE",
+    "literalMeaning": "yas",
     "partOfSpeech": "noun",
+    "wordFamilyId": "WF-Noun",
+    "notes": "C-11.3: IPA kaynakli.",
+    "derivation": {
+      "rootIds": [
+        "R-NYBZHY"
+      ],
+      "rule": "auto_prefix"
+    },
     "corpusFrequency": 143
   },
   {
@@ -13604,13 +13653,13 @@
     "corpusFrequency": 0
   },
   {
-    "id": "L-TKHE",
+    "id": "L-TKHE2",
     "form": "тхьэ",
-    "literalMeaning": "tanri; Tanri, yaratici",
-    "conceptId": "GOD",
-    "wordFamilyId": "WF-TKHE",
+    "literalMeaning": "tanri",
     "partOfSpeech": "noun",
-    "notes": "Felsefi/ontolojik kavram"
+    "wordFamilyId": "WF-Religion",
+    "notes": "C-11.3: IPA kaynakli.",
+    "corpusFrequency": 1842
   },
   {
     "id": "L-TKHEUSYKHE",
@@ -13688,13 +13737,13 @@
     "corpusFrequency": 2996
   },
   {
-    "id": "L-C1YXUGHE",
+    "id": "L-TSYXHUGHE",
     "form": "цӀыхугъэ",
-    "literalMeaning": "insanlik; insanlik, humanizm",
-    "conceptId": "HUMANITY",
-    "wordFamilyId": "WF-C1YXU",
+    "literalMeaning": "insanlik",
     "partOfSpeech": "noun",
-    "notes": "Felsefi/ontolojik kavram"
+    "wordFamilyId": "WF-Noun",
+    "notes": "C-11.3: IPA kaynakli.",
+    "corpusFrequency": 53
   },
   {
     "id": "L-TKHUASHCH",
@@ -13881,15 +13930,14 @@
     "corpusFrequency": 5
   },
   {
-    "id": "L-EPLHYN",
+    "id": "L-YEPLHEN",
     "form": "еплъын",
-    "literalMeaning": "tatmak; bakmak, seyretmek",
-    "conceptId": "LOOK",
-    "wordFamilyId": "WF-PLH",
+    "literalMeaning": "tatmak",
+    "conceptId": "TASTE",
     "partOfSpeech": "verb",
-    "ipa": "/japɬən/",
-    "corpusFrequency": 2920,
-    "notes": "KBD Corpus rank 99"
+    "wordFamilyId": "WF-SENSE",
+    "notes": "C-11.4: 5 duyu organi.",
+    "corpusFrequency": 165
   },
   {
     "id": "L-KHEGHUEN",
@@ -14219,6 +14267,27 @@
     "corpusFrequency": 38
   },
   {
+    "id": "L-D0B0D0B1D18B",
+    "form": "абы",
+    "ipa": "/ɐˈbǝ/",
+    "literalMeaning": "Эргативнэ падежым ит ещанэ щхьэ къэзыгъэлъагъуэ цӀэпапщӀэ.",
+    "partOfSpeech": "pronoun",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-D0B0D0B1D18B",
+    "notes": "he, him, she, her, it (ergative case)",
+    "examples": [
+      {
+        "text": "Ӏэдииху и лӀыр къыщысыж пӀалъэр ищӀэрти, жэщ мазэхэу къыщысыжым и деж, абы и ӀэдиитӀыр щхьэгъубжэмкӀэ къыдигъэжырти, лъэмыжыр нэху хъурти, и лӀым къиху шыхэри а лъэмыжымкӀэ кърихурт. {{тхыгъэ|kbd|цӀэ=Нарт.}}",
+        "translation": ""
+      }
+    ],
+    "corpusFrequency": 10039
+  },
+  {
     "id": "L-_",
     "form": "я",
     "ipa": "/jɑ:/",
@@ -14235,22 +14304,50 @@
     "corpusFrequency": 8778
   },
   {
-    "id": "L-AR",
+    "id": "L-__",
     "form": "ар",
-    "literalMeaning": "Именительнэ падежым иту ещанэ щхьэр къэзыгъэлъагъуэ цӀэпапщӀэ.; o",
-    "conceptId": "HE",
-    "wordFamilyId": "WF-ZAMIR",
-    "partOfSpeech": "noun",
-    "notes": "Dogrulandi: temel kelime"
+    "ipa": "/ɐr/",
+    "literalMeaning": "Именительнэ падежым иту ещанэ щхьэр къэзыгъэлъагъуэ цӀэпапщӀэ.",
+    "partOfSpeech": "pronoun",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-__",
+    "notes": "ар = he, she, it, they",
+    "examples": [
+      {
+        "text": "Ар къуажэ мэлыхъуэти, ӀуэрыӀуатэ куэд ищӀэрт.",
+        "translation": ""
+      },
+      {
+        "text": "Народыр зыхуэныкъуэр, зыщӀэгупсысыр фӀыуэ зэхэзыщӀыкӀ лӀыуэ щытащ ар [ПащӀэ Б.].",
+        "translation": ""
+      }
+    ],
+    "corpusFrequency": 13160
   },
   {
-    "id": "L-SE",
+    "id": "L-__",
     "form": "сэ",
-    "literalMeaning": "Псалъэ жызыӀэм езым и щхьэр кърегъэлъагъуэ.; ben",
-    "conceptId": "I",
-    "wordFamilyId": "WF-ZAMIR",
-    "partOfSpeech": "noun",
-    "notes": "Dogrulandi: temel kelime"
+    "ipa": "/sɐ/",
+    "literalMeaning": "Псалъэ жызыӀэм езым и щхьэр кърегъэлъагъуэ.",
+    "partOfSpeech": "pronoun",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-__",
+    "notes": "I, me",
+    "examples": [
+      {
+        "text": "- Сэ сыудкъым, сыубэркъым, - жиӀащ Ӏэдииху, - лӀы и щытхъуи згъэкӀуэдкъым.  {{тхыгъэ|kbd|цӀэ=Нарт.}}",
+        "translation": ""
+      }
+    ],
+    "corpusFrequency": 9071
   },
   {
     "id": "L-__",
@@ -14269,13 +14366,20 @@
     "corpusFrequency": 4768
   },
   {
-    "id": "L-A",
+    "id": "L-_",
     "form": "а",
-    "literalMeaning": "Адыгэ алфавитым и япэ хьэрф.; o (uzak)",
-    "conceptId": "THAT",
-    "wordFamilyId": "WF-ZAMIR",
-    "partOfSpeech": "noun",
-    "notes": "Dogrulandi: temel kelime"
+    "ipa": "/ɐ, ɑ:/",
+    "literalMeaning": "Адыгэ алфавитым и япэ хьэрф.",
+    "partOfSpeech": "letter",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-_",
+    "notes": "а = first letter of the Kabardino-Cherkess alphabet",
+    "examples": [],
+    "corpusFrequency": 7172
   },
   {
     "id": "L-__",
@@ -14292,6 +14396,27 @@
     "notes": "second person singular possessive indicator, functionally equivalent to English “your, yours”",
     "examples": [],
     "corpusFrequency": 4320
+  },
+  {
+    "id": "L-D181D18BD182",
+    "form": "сыт",
+    "ipa": "/sǝt/",
+    "literalMeaning": "ЦӀыхум къинэмыщӀа адрей псоми ирищӀоупщӀэ.",
+    "partOfSpeech": "interrogative_pronoun",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-D181D18BD182",
+    "notes": "what? (questions about everything except people)",
+    "examples": [
+      {
+        "text": "ЩӀым сыт тепсэми, къытепхыжынщ.  {{тхыгъэ|kbd|цӀэ=Псжь.}}",
+        "translation": ""
+      }
+    ],
+    "corpusFrequency": 3113
   },
   {
     "id": "L-D186D38FD18B",
@@ -14363,6 +14488,27 @@
       }
     ],
     "corpusFrequency": 2895
+  },
+  {
+    "id": "L-D0BDD18DD185",
+    "form": "нэхъ",
+    "ipa": "/nɐχ/",
+    "literalMeaning": "Зыгуэрым и щытыкӀэр нэгъуэщӀым зэрыщхьэпрыкӀыр (п. п. фӀагъкӀэ, ӀеягъкӀэ, куэдагъкӀэ) къызэрагъэлъаг...",
+    "partOfSpeech": "particle",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-D0BDD18DD185",
+    "notes": "1. more, to a greater degree or extent 2. except, unless, perhaps, maybe, only",
+    "examples": [
+      {
+        "text": "ЛӀы я нэхъ мыгъуэми Ӏуэхугъуибгъу зэпеч.  {{тхыгъэ|kbd|цӀэ=Псжь.}}",
+        "translation": ""
+      }
+    ],
+    "corpusFrequency": 2556
   },
   {
     "id": "L-__",
@@ -14459,13 +14605,20 @@
     "corpusFrequency": 2030
   },
   {
-    "id": "L-DE",
+    "id": "L-__",
     "form": "дэ",
-    "literalMeaning": "Япэ щхьэм иту куэд бжыгъэ къэзыгъэлъагъуэ щхьэ цӀэпапщӀэ.; biz",
-    "conceptId": "WE",
-    "wordFamilyId": "WF-ZAMIR",
-    "partOfSpeech": "noun",
-    "notes": "Dogrulandi: temel kelime"
+    "ipa": "/dɐ/",
+    "literalMeaning": "Япэ щхьэм иту куэд бжыгъэ къэзыгъэлъагъуэ щхьэ цӀэпапщӀэ.",
+    "partOfSpeech": "pronoun",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-__",
+    "notes": "we",
+    "examples": [],
+    "corpusFrequency": 1731
   },
   {
     "id": "L-D189D38FD18B",
@@ -14702,6 +14855,82 @@
     "corpusFrequency": 958
   },
   {
+    "id": "L-D185D18DD182",
+    "form": "хэт",
+    "ipa": "/xɐt/",
+    "literalMeaning": "Зи гугъу ящӀ, зытепсэлъыхь цӀыхур къегъэлъагъуэ.",
+    "partOfSpeech": "interrogative_pronoun",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-D185D18DD182",
+    "notes": "1. who (only about people) 2. as a separator: one... another…, some... others...",
+    "examples": [
+      {
+        "text": "Хэт, тӀысэ, уезыгъэджауэ жыхуэпӀэр?",
+        "translation": ""
+      }
+    ],
+    "corpusFrequency": 1170
+  },
+  {
+    "id": "L-D0B8D0B4D0B6",
+    "form": "иджы",
+    "ipa": "/jǝ'dᶎǝ/",
+    "literalMeaning": "Ит зэманым; лэжьыгъэр, Ӏуэхур щекӀуэкӀ зэманым.",
+    "partOfSpeech": "adverb",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-D0B8D0B4D0B6",
+    "notes": "now, at present",
+    "examples": [
+      {
+        "text": "Япэм мыр дэркӀэ унэу щитами, иджы гъэрыпӀэ хъужащ.",
+        "translation": ""
+      }
+    ],
+    "corpusFrequency": 863
+  },
+  {
+    "id": "L-D0B3D183D0B6",
+    "form": "гужьей",
+    "ipa": "",
+    "literalMeaning": "panik",
+    "partOfSpeech": "noun",
+    "derivation": {
+      "rootIds": [
+        "R-ГУ"
+      ],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-D0B3D183D0B6",
+    "notes": "",
+    "corpusFrequency": 2
+  },
+  {
+    "id": "L-D0B3D183D0BC",
+    "form": "гумыгъуэ",
+    "ipa": "",
+    "literalMeaning": "şefkatli",
+    "partOfSpeech": "adjective",
+    "derivation": {
+      "rootIds": [
+        "R-ГУ"
+      ],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-D0B3D183D0BC",
+    "notes": "",
+    "corpusFrequency": 2
+  },
+  {
     "id": "L-D0B3D183D0B1",
     "form": "губжь",
     "ipa": "",
@@ -14734,6 +14963,23 @@
     "wordFamilyId": "WF-L-D0B3D183D0B8",
     "notes": "",
     "corpusFrequency": 1
+  },
+  {
+    "id": "L-D0BDD0B0D184",
+    "form": "наф",
+    "ipa": "",
+    "literalMeaning": "kör",
+    "partOfSpeech": "adjective",
+    "derivation": {
+      "rootIds": [
+        "R-НЭ"
+      ],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-D0BDD0B0D184",
+    "notes": "",
+    "corpusFrequency": 11
   },
   {
     "id": "L-D0BDD0B0D0BF",
@@ -14787,6 +15033,23 @@
     "corpusFrequency": 0
   },
   {
+    "id": "L-D0BDD0B0D188",
+    "form": "нашэ",
+    "ipa": "",
+    "literalMeaning": "şaşı",
+    "partOfSpeech": "adjective",
+    "derivation": {
+      "rootIds": [
+        "R-НЭ"
+      ],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-D0BDD0B0D188",
+    "notes": "",
+    "corpusFrequency": 11
+  },
+  {
     "id": "L-D380D18DD180",
     "form": "Ӏэрытх",
     "ipa": "",
@@ -14804,6 +15067,23 @@
     "corpusFrequency": 17
   },
   {
+    "id": "L-D189D185D18C",
+    "form": "щхьэпс",
+    "ipa": "",
+    "literalMeaning": "kalın ip",
+    "partOfSpeech": "noun",
+    "derivation": {
+      "rootIds": [
+        "R-ЩХЬЭ"
+      ],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-D189D185D18C",
+    "notes": "",
+    "corpusFrequency": 16
+  },
+  {
     "id": "L-D182D185D18C",
     "form": "тхьэӀкумэчӀыхь",
     "ipa": "",
@@ -14817,6 +15097,51 @@
     "wordFamilyId": "WF-L-D182D185D18C",
     "notes": "",
     "corpusFrequency": 0
+  },
+  {
+    "id": "L-D185D18BD0BA",
+    "form": "хыкъа",
+    "ipa": "",
+    "literalMeaning": "yunus",
+    "partOfSpeech": "noun",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-D185D18BD0BA",
+    "notes": "",
+    "corpusFrequency": 0
+  },
+  {
+    "id": "L-D0BCD18DD0B7",
+    "form": "мэзчэт",
+    "ipa": "",
+    "literalMeaning": "sülün",
+    "partOfSpeech": "noun",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-D0BCD18DD0B7",
+    "notes": "",
+    "corpusFrequency": 4
+  },
+  {
+    "id": "L-D0B4D18BD0B3",
+    "form": "дыгъэ",
+    "ipa": "",
+    "literalMeaning": "güneş",
+    "partOfSpeech": "noun",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-D0B4D18BD0B3",
+    "notes": "",
+    "corpusFrequency": 110
   },
   {
     "id": "L-D0B8D0B4D0B6",
@@ -14864,6 +15189,21 @@
     "corpusFrequency": 223
   },
   {
+    "id": "L-D185D18AD18B",
+    "form": "хъыджэбз",
+    "ipa": "",
+    "literalMeaning": "genç kız",
+    "partOfSpeech": "noun",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-D185D18AD18B",
+    "notes": "",
+    "corpusFrequency": 192
+  },
+  {
     "id": "L-D189D380D18B",
     "form": "щӀыӀэ",
     "ipa": "",
@@ -14892,6 +15232,21 @@
     "wordFamilyId": "WF-L-D184D380D18B",
     "notes": "",
     "corpusFrequency": 516
+  },
+  {
+    "id": "L-D0BAD380D18D",
+    "form": "кӀэщӀ",
+    "ipa": "",
+    "literalMeaning": "kısa",
+    "partOfSpeech": "adjective",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-D0BAD380D18D",
+    "notes": "",
+    "corpusFrequency": 142
   },
   {
     "id": "L-D0B1D18BD0B4",
@@ -14939,6 +15294,21 @@
     "corpusFrequency": 57
   },
   {
+    "id": "L-D0B6D18BD380",
+    "form": "жыӀэн",
+    "ipa": "",
+    "literalMeaning": "söylemek, demek",
+    "partOfSpeech": "verb",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-D0B6D18BD380",
+    "notes": "",
+    "corpusFrequency": 226
+  },
+  {
     "id": "L-D189D18BD182",
     "form": "щытын",
     "ipa": "",
@@ -14954,15 +15324,34 @@
     "corpusFrequency": 440
   },
   {
-    "id": "L-IN",
+    "id": "L-D0B8D0BD",
     "form": "ин",
-    "literalMeaning": "büyük; buyuk",
-    "conceptId": "BIG",
-    "wordFamilyId": "WF-IN",
+    "ipa": "",
+    "literalMeaning": "büyük",
     "partOfSpeech": "adjective",
-    "ipa": "/jən/",
-    "corpusFrequency": 4900,
-    "notes": "KBD Corpus rank 79"
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-D0B8D0BD",
+    "notes": "",
+    "corpusFrequency": 771
+  },
+  {
+    "id": "L-D0B4D0B0D185",
+    "form": "дахэ",
+    "ipa": "",
+    "literalMeaning": "güzel",
+    "partOfSpeech": "adjective",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-D0B4D0B0D185",
+    "notes": "",
+    "corpusFrequency": 408
   },
   {
     "id": "L-D0B8D0BAD18A",
@@ -15053,6 +15442,66 @@
     "wordFamilyId": "WF-L-D0B8D183D0B6",
     "notes": "",
     "corpusFrequency": 287
+  },
+  {
+    "id": "L-D189D380D18B",
+    "form": "щӀын",
+    "ipa": "",
+    "literalMeaning": "yapmak, etmek",
+    "partOfSpeech": "verb",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-D189D380D18B",
+    "notes": "",
+    "corpusFrequency": 1589
+  },
+  {
+    "id": "L-D182D185D18B",
+    "form": "тхын",
+    "ipa": "",
+    "literalMeaning": "yazmak",
+    "partOfSpeech": "verb",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-D182D185D18B",
+    "notes": "",
+    "corpusFrequency": 101
+  },
+  {
+    "id": "L-D0B5D184D18D",
+    "form": "ефэн",
+    "ipa": "",
+    "literalMeaning": "içmek",
+    "partOfSpeech": "verb",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-D0B5D184D18D",
+    "notes": "",
+    "corpusFrequency": 98
+  },
+  {
+    "id": "L-D0B3D18AD183",
+    "form": "гъуэлъын",
+    "ipa": "",
+    "literalMeaning": "yatmak",
+    "partOfSpeech": "verb",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-D0B3D18AD183",
+    "notes": "",
+    "corpusFrequency": 18
   },
   {
     "id": "L-D0BAD18AD18D",
@@ -15370,6 +15819,21 @@
     "corpusFrequency": 6
   },
   {
+    "id": "L-D186D380D18D",
+    "form": "цӀэ",
+    "ipa": "",
+    "literalMeaning": "isim, ad",
+    "partOfSpeech": "noun",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-D186D380D18D",
+    "notes": "",
+    "corpusFrequency": 280
+  },
+  {
     "id": "L-D0B6D0B0D0B3",
     "form": "жагъуэгъу",
     "ipa": "",
@@ -15443,6 +15907,21 @@
     "wordFamilyId": "WF-L-D0B5D0B3D18A",
     "notes": "",
     "corpusFrequency": 173
+  },
+  {
+    "id": "L-D0B5D0B4D0B6",
+    "form": "еджакӀуэ",
+    "ipa": "",
+    "literalMeaning": "öğrenci",
+    "partOfSpeech": "noun",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-D0B5D0B4D0B6",
+    "notes": "",
+    "corpusFrequency": 118
   },
   {
     "id": "L-D181D18BD0BC",
@@ -15520,6 +15999,21 @@
     "corpusFrequency": 0
   },
   {
+    "id": "L-D0B2D0B0D0B3",
+    "form": "вагъуэ",
+    "ipa": "",
+    "literalMeaning": "yıldız",
+    "partOfSpeech": "noun",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-D0B2D0B0D0B3",
+    "notes": "",
+    "corpusFrequency": 41
+  },
+  {
     "id": "L-D0B3D183D0B1",
     "form": "губгъуэ",
     "ipa": "",
@@ -15535,6 +16029,21 @@
     "corpusFrequency": 189
   },
   {
+    "id": "L-D0B4D183D0BD",
+    "form": "дуней",
+    "ipa": "",
+    "literalMeaning": "dünya, evren",
+    "partOfSpeech": "noun",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-D0B4D183D0BD",
+    "notes": "",
+    "corpusFrequency": 349
+  },
+  {
     "id": "L-D189D18DD0B4",
     "form": "щэджагъуэ",
     "ipa": "",
@@ -15548,6 +16057,24 @@
     "wordFamilyId": "WF-L-D189D18DD0B4",
     "notes": "",
     "corpusFrequency": 2
+  },
+  {
+    "id": "L-D0B7D18DD0BC",
+    "form": "зэман",
+    "ipa": "",
+    "literalMeaning": "zaman, vakit",
+    "partOfSpeech": "noun",
+    "notes": "",
+    "conceptId": "TIME",
+    "wordFamilyId": "WF-ZEMAN",
+    "derivation": {
+      "rootIds": [
+        "R-ZEMAN"
+      ],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "corpusFrequency": 425
   },
   {
     "id": "L-D0B1D0B6D18D",
@@ -15580,6 +16107,21 @@
     "corpusFrequency": 0
   },
   {
+    "id": "L-D380D18DD0BD",
+    "form": "Ӏэнэ",
+    "ipa": "",
+    "literalMeaning": "masa",
+    "partOfSpeech": "noun",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-D380D18DD0BD",
+    "notes": "",
+    "corpusFrequency": 77
+  },
+  {
     "id": "L-D188D18DD0BD",
     "form": "шэнт",
     "ipa": "",
@@ -15593,6 +16135,24 @@
     "wordFamilyId": "WF-L-D188D18DD0BD",
     "notes": "",
     "corpusFrequency": 30
+  },
+  {
+    "id": "L-D182D185D18B",
+    "form": "тхылъ",
+    "ipa": "",
+    "literalMeaning": "kitap",
+    "partOfSpeech": "noun",
+    "notes": "",
+    "conceptId": "BOOK",
+    "wordFamilyId": "WF-TKHYL",
+    "derivation": {
+      "rootIds": [
+        "R-TKHYL"
+      ],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "corpusFrequency": 629
   },
   {
     "id": "L-D0BAD18AD0B0",
@@ -15638,6 +16198,24 @@
     "wordFamilyId": "WF-L-D183D18DD0B4",
     "notes": "",
     "corpusFrequency": 0
+  },
+  {
+    "id": "L-D189D380D0B0",
+    "form": "щӀакхъуэ",
+    "ipa": "",
+    "literalMeaning": "ekmek",
+    "partOfSpeech": "noun",
+    "notes": "",
+    "conceptId": "BREAD",
+    "wordFamilyId": "WF-SH1AKHQUE",
+    "derivation": {
+      "rootIds": [
+        "R-SH1AKHQUE"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "corpusFrequency": 188
   },
   {
     "id": "L-D188D18BD0B3",
@@ -15775,6 +16353,21 @@
     "corpusFrequency": 45
   },
   {
+    "id": "L-D0BFD18DD0B6",
+    "form": "пэж",
+    "ipa": "",
+    "literalMeaning": "doğru, gerçek",
+    "partOfSpeech": "adjective",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-D0BFD18DD0B6",
+    "notes": "",
+    "corpusFrequency": 314
+  },
+  {
     "id": "L-D184D18B",
     "form": "фы",
     "ipa": "",
@@ -15788,6 +16381,21 @@
     "wordFamilyId": "WF-L-D184D18B",
     "notes": "",
     "corpusFrequency": 12
+  },
+  {
+    "id": "L-D0B0D185D18D",
+    "form": "ахэр",
+    "ipa": "",
+    "literalMeaning": "onlar",
+    "partOfSpeech": "pronoun",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-D0B0D185D18D",
+    "notes": "",
+    "corpusFrequency": 4939
   },
   {
     "id": "L-D0B4D18DD0BD",
@@ -15908,6 +16516,21 @@
     "wordFamilyId": "WF-L-D0B0D0BBD18B",
     "notes": "",
     "corpusFrequency": 40
+  },
+  {
+    "id": "L-D0BAD18AD18D",
+    "form": "къэтӀэсын",
+    "ipa": "",
+    "literalMeaning": "oturmak (bir yere)",
+    "partOfSpeech": "verb",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-D0BAD18AD18D",
+    "notes": "",
+    "corpusFrequency": 0
   },
   {
     "id": "L-D0BAD18AD18D",
@@ -16120,6 +16743,21 @@
     "corpusFrequency": 0
   },
   {
+    "id": "L-D0B4D18DD0BB",
+    "form": "дэлъын",
+    "ipa": "",
+    "literalMeaning": "içinde yatmak",
+    "partOfSpeech": "verb",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-D0B4D18DD0BB",
+    "notes": "",
+    "corpusFrequency": 17
+  },
+  {
     "id": "L-D0B4D18DD182",
     "form": "дэтын",
     "ipa": "",
@@ -16133,6 +16771,21 @@
     "wordFamilyId": "WF-L-D0B4D18DD182",
     "notes": "",
     "corpusFrequency": 8
+  },
+  {
+    "id": "L-D0BAD18AD18D",
+    "form": "къэшын",
+    "ipa": "",
+    "literalMeaning": "evlenmek (erkek)",
+    "partOfSpeech": "verb",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-D0BAD18AD18D",
+    "notes": "",
+    "corpusFrequency": 22
   },
   {
     "id": "L-D0B4D18DD0BA",
@@ -16283,6 +16936,21 @@
     "wordFamilyId": "WF-L-D0B7D18BD185",
     "notes": "",
     "corpusFrequency": 24
+  },
+  {
+    "id": "L-D185D18DD0BB",
+    "form": "хэлъхьэн",
+    "ipa": "",
+    "literalMeaning": "koymak, eklemek",
+    "partOfSpeech": "verb",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-D185D18DD0BB",
+    "notes": "",
+    "corpusFrequency": 142
   },
   {
     "id": "L-D0B3D18AD18D",
@@ -16735,13 +17403,19 @@
     "corpusFrequency": 8
   },
   {
-    "id": "L-LY",
+    "id": "L-D0BBD18B",
     "form": "лы",
+    "ipa": "",
     "literalMeaning": "et",
-    "conceptId": "MEAT",
-    "wordFamilyId": "WF-LY",
     "partOfSpeech": "noun",
-    "notes": "Dogrulandi: temel kelime"
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-D0BBD18B",
+    "notes": "",
+    "corpusFrequency": 162
   },
   {
     "id": "L-D0BBD18BD0B3",
@@ -16969,6 +17643,21 @@
     "corpusFrequency": 36
   },
   {
+    "id": "L-D0BFD18DD188",
+    "form": "пэш",
+    "ipa": "",
+    "literalMeaning": "oda",
+    "partOfSpeech": "noun",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-D0BFD18DD188",
+    "notes": "",
+    "corpusFrequency": 122
+  },
+  {
     "id": "L-D0B4D18DD0BB",
     "form": "дэлъхьэпӀэ",
     "ipa": "",
@@ -17014,13 +17703,22 @@
     "corpusFrequency": 8
   },
   {
-    "id": "L-SHY",
+    "id": "L-D188D18B",
     "form": "шы",
+    "ipa": "",
     "literalMeaning": "at",
+    "partOfSpeech": "noun",
+    "notes": "",
     "conceptId": "HORSE",
     "wordFamilyId": "WF-SHY",
-    "partOfSpeech": "noun",
-    "notes": "Dogrulandi: temel kelime"
+    "derivation": {
+      "rootIds": [
+        "R-SHY"
+      ],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "corpusFrequency": 473
   },
   {
     "id": "L-D0B1D0B6D18D",
@@ -17039,6 +17737,24 @@
       "rule": "root"
     },
     "corpusFrequency": 51
+  },
+  {
+    "id": "L-D185D18CD18D",
+    "form": "хьэ",
+    "ipa": "",
+    "literalMeaning": "köpek",
+    "partOfSpeech": "noun",
+    "notes": "",
+    "conceptId": "DOG",
+    "wordFamilyId": "WF-KHHE",
+    "derivation": {
+      "rootIds": [
+        "R-KHHE"
+      ],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "corpusFrequency": 190
   },
   {
     "id": "L-D0B4D0B6D18D",
@@ -17147,6 +17863,21 @@
     "wordFamilyId": "WF-L-D0B1D0B3D18A",
     "notes": "",
     "corpusFrequency": 1
+  },
+  {
+    "id": "L-D0BAD18AD0B0",
+    "form": "къандж",
+    "ipa": "",
+    "literalMeaning": "saksağan",
+    "partOfSpeech": "noun",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-D0BAD18AD0B0",
+    "notes": "",
+    "corpusFrequency": 4
   },
   {
     "id": "L-D0B1D0B3D18B",
@@ -17734,6 +18465,21 @@
     "corpusFrequency": 38
   },
   {
+    "id": "L-D185D0B0D0B1",
+    "form": "хабзэ",
+    "ipa": "",
+    "literalMeaning": "Çerkes örf ve adetleri",
+    "partOfSpeech": "noun",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-D185D0B0D0B1",
+    "notes": "",
+    "corpusFrequency": 370
+  },
+  {
     "id": "L-D0BDD0B0D0BC",
     "form": "намыс",
     "ipa": "",
@@ -17884,15 +18630,19 @@
     "corpusFrequency": 219
   },
   {
-    "id": "L-YI",
+    "id": "L-D0B8",
     "form": "и",
-    "literalMeaning": "sekiz (8); sekiz",
-    "conceptId": "EIGHT",
-    "wordFamilyId": "WF-YI",
+    "ipa": "",
+    "literalMeaning": "sekiz (8)",
     "partOfSpeech": "numeral",
-    "ipa": "/jə/",
-    "corpusFrequency": 3600,
-    "notes": "KBD Corpus rank 92"
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-D0B8",
+    "notes": "",
+    "corpusFrequency": 30937
   },
   {
     "id": "L-D182D380D0BE",
@@ -19200,6 +19950,21 @@
     "corpusFrequency": 0
   },
   {
+    "id": "L-D189D380D18D",
+    "form": "щӀэныгъэ",
+    "ipa": "",
+    "literalMeaning": "bilim, ilim",
+    "partOfSpeech": "noun",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-D189D380D18D",
+    "notes": "",
+    "corpusFrequency": 233
+  },
+  {
     "id": "L-D0BFD18DD0B6",
     "form": "пэжагъэ",
     "ipa": "",
@@ -19273,6 +20038,21 @@
     "wordFamilyId": "WF-L-D0B7D18BD0BA",
     "notes": "",
     "corpusFrequency": 0
+  },
+  {
+    "id": "L-D0BBD380D18B",
+    "form": "лӀыгъэ",
+    "ipa": "",
+    "literalMeaning": "mertlik, yiğitlik",
+    "partOfSpeech": "noun",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-D0BBD380D18B",
+    "notes": "",
+    "corpusFrequency": 248
   },
   {
     "id": "L-D0B3D183D0B3",
@@ -19410,13 +20190,72 @@
     "corpusFrequency": 0
   },
   {
-    "id": "L-KHUN",
+    "id": "L-KHUN-1",
     "form": "хъун",
-    "literalMeaning": "ot, çayır otu; güve (moth)",
-    "conceptId": "BE",
-    "wordFamilyId": "WF-FIIL",
+    "ipa": "/χʷǝn/",
+    "literalMeaning": "ot, çayır otu",
     "partOfSpeech": "noun",
-    "notes": "Dogrulandi: temel kelime"
+    "notes": "Apaşev (2008), Amcad Camuha (1997), Kokov (2008)",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-KHUN-1",
+    "dialectVariants": {
+      "adyghe": "уцы",
+      "kabardian": "удз"
+    },
+    "corpusFrequency": 2484
+  },
+  {
+    "id": "L-KHUN-2",
+    "form": "хъун",
+    "ipa": "/χʷǝn/",
+    "literalMeaning": "güve (moth)",
+    "partOfSpeech": "noun",
+    "notes": "Baş Editör (1960), Sherdjes (1994)",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-KHUN-2",
+    "corpusFrequency": 2484
+  },
+  {
+    "id": "L-KHUN-3",
+    "form": "хъун",
+    "ipa": "/χʷǝn/",
+    "literalMeaning": "temel, dokuma ipliği",
+    "partOfSpeech": "noun",
+    "notes": "Sherdjes (1994)",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-KHUN-3",
+    "corpusFrequency": 2484
+  },
+  {
+    "id": "L-KHUN-4",
+    "form": "хъун",
+    "ipa": "/χʷǝn/",
+    "literalMeaning": "olmak, başlamak, büyümek, olgunlaşmak",
+    "partOfSpeech": "verb",
+    "notes": "Apaşev (2008), Kardanov (1957), Tharkaho (1991), + 19 kaynak (CSV)",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "wordFamilyId": "WF-L-KHUN-4",
+    "dialectVariants": {
+      "adyghe": "мэхъу",
+      "kabardian": "хъун"
+    },
+    "corpusFrequency": 2484
   },
   {
     "id": "L-D0BCD18DD0BA",
@@ -20221,6 +21060,42 @@
     "corpusFrequency": 11
   },
   {
+    "id": "L-D0BAD18AD0B0",
+    "form": "къалэ",
+    "ipa": "",
+    "literalMeaning": "şehir",
+    "partOfSpeech": "noun",
+    "notes": "Kardanov (1957); Huvaj (2007)",
+    "conceptId": "CITY",
+    "wordFamilyId": "WF-QALE",
+    "derivation": {
+      "rootIds": [
+        "R-QALE"
+      ],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "corpusFrequency": 321
+  },
+  {
+    "id": "L-D183D18DD180",
+    "form": "уэрам",
+    "ipa": "",
+    "literalMeaning": "sokak, cadde",
+    "partOfSpeech": "noun",
+    "notes": "Kardanov (1957)",
+    "conceptId": "STREET",
+    "wordFamilyId": "WF-UERAM",
+    "derivation": {
+      "rootIds": [
+        "R-UERAM"
+      ],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "corpusFrequency": 74
+  },
+  {
     "id": "L-D0BAD18AD18D",
     "form": "къэлэм",
     "ipa": "",
@@ -20239,6 +21114,17 @@
     "corpusFrequency": 5
   },
   {
+    "id": "L-GUSHHE",
+    "form": "гущэ",
+    "literalMeaning": "besik, kundak",
+    "wordFamilyId": "WF-GUSHCH",
+    "conceptId": "CRADLE",
+    "partOfSpeech": "noun",
+    "ipa": "/ˈgʷǝɕɐ/",
+    "notes": "Wiktionary; Apaşev (2008); Yamisha (2023); Kardanov (1957); Huvaj (2007)",
+    "corpusFrequency": 40
+  },
+  {
     "id": "L-P1C1",
     "form": "пцӀ",
     "literalMeaning": "aldatma, yalan",
@@ -20247,12 +21133,48 @@
     "partOfSpeech": "noun"
   },
   {
+    "id": "L-SHE2",
+    "form": "шэ",
+    "literalMeaning": "süt",
+    "wordFamilyId": "WF-SHE2",
+    "conceptId": "MILK",
+    "partOfSpeech": "noun",
+    "corpusFrequency": 213
+  },
+  {
+    "id": "L-KHY2",
+    "form": "хы",
+    "literalMeaning": "altı (6)",
+    "wordFamilyId": "WF-KHY2",
+    "conceptId": "SIX",
+    "partOfSpeech": "numeral",
+    "corpusFrequency": 325
+  },
+  {
+    "id": "L-NYBZHY",
+    "form": "ныбжь",
+    "literalMeaning": "yaş",
+    "wordFamilyId": "WF-NYBZHY",
+    "conceptId": "AGE",
+    "partOfSpeech": "noun",
+    "corpusFrequency": 143
+  },
+  {
     "id": "L-1UEKHU",
     "form": "Ӏуэху",
     "literalMeaning": "iş, mesele",
     "wordFamilyId": "WF-1UEKHU",
     "conceptId": "WORK",
     "partOfSpeech": "noun"
+  },
+  {
+    "id": "L-SHCH",
+    "form": "щы",
+    "literalMeaning": "uç",
+    "wordFamilyId": "WF-SHCH",
+    "conceptId": "POINT",
+    "partOfSpeech": "noun",
+    "corpusFrequency": 60
   },
   {
     "id": "L-ZE",
@@ -20264,11 +21186,137 @@
     "corpusFrequency": 617
   },
   {
+    "id": "L-SHEZAE",
+    "form": "шезае",
+    "literalMeaning": "ihlamur agaci",
+    "conceptId": "LINDEN",
+    "wordFamilyId": "WF-SHEZAE",
+    "partOfSpeech": "noun",
+    "notes": "Dogrulandi: sozluk kaynagi"
+  },
+  {
+    "id": "L-DEZHEY",
+    "form": "дежьей",
+    "literalMeaning": "findiklik",
+    "conceptId": "HAZEL",
+    "wordFamilyId": "WF-DEZHEY",
+    "partOfSpeech": "noun",
+    "notes": "Dogrulandi: sozluk kaynagi"
+  },
+  {
+    "id": "L-MEZQOGHUM",
+    "form": "мэзкъогъум",
+    "literalMeaning": "orman kuytusu",
+    "conceptId": "FOREST",
+    "wordFamilyId": "WF-MEZQOGHUM",
+    "partOfSpeech": "noun",
+    "notes": "Dogrulandi: sozluk kaynagi"
+  },
+  {
+    "id": "L-PSHCHYK1U",
+    "form": "пщӀыкӀу",
+    "literalMeaning": "onlu sayi eki",
+    "conceptId": "TEN",
+    "wordFamilyId": "WF-PSHCHYK1U",
+    "partOfSpeech": "noun",
+    "notes": "Dogrulandi: sozluk kaynagi"
+  },
+  {
+    "id": "L-PSHCHYK1UT1",
+    "form": "пщӀыкӀутӀ",
+    "literalMeaning": "on iki",
+    "conceptId": "TWELVE",
+    "wordFamilyId": "WF-PSHCHYK1U",
+    "partOfSpeech": "noun",
+    "notes": "Dogrulandi: sozluk kaynagi"
+  },
+  {
+    "id": "L-QUIBLY",
+    "form": "къуиблы",
+    "literalMeaning": "yedigen",
+    "conceptId": "HEPTAGON",
+    "wordFamilyId": "WF-QUIBLY",
+    "partOfSpeech": "noun",
+    "notes": "Dogrulandi: sozluk kaynagi"
+  },
+  {
+    "id": "L-ZEDELKHU",
+    "form": "зэдэлъху",
+    "literalMeaning": "erkek kardesler",
+    "conceptId": "BROTHER",
+    "wordFamilyId": "WF-ZEDELKHU",
+    "partOfSpeech": "noun",
+    "notes": "Dogrulandi: sozluk kaynagi"
+  },
+  {
     "id": "L-EDZHAKUE",
     "form": "еджакӀуэ",
     "literalMeaning": "ogrenci",
     "conceptId": "STUDENT",
     "wordFamilyId": "WF-EDZHAKUE",
+    "partOfSpeech": "noun",
+    "notes": "Dogrulandi: sozluk kaynagi"
+  },
+  {
+    "id": "L-BZEBZE",
+    "form": "бзэбзэ",
+    "literalMeaning": "geveze",
+    "conceptId": "TALKATIVE",
+    "wordFamilyId": "WF-BZE",
+    "partOfSpeech": "noun",
+    "notes": "Dogrulandi: sozluk kaynagi"
+  },
+  {
+    "id": "L-BZASH1EPS",
+    "form": "бзащӀэпс",
+    "literalMeaning": "sive",
+    "conceptId": "DIALECT",
+    "wordFamilyId": "WF-BZE",
+    "partOfSpeech": "noun",
+    "notes": "Dogrulandi: sozluk kaynagi"
+  },
+  {
+    "id": "L-KHEDZHEBZ",
+    "form": "хьэджэбз",
+    "literalMeaning": "akici konusma",
+    "conceptId": "SPEECH",
+    "wordFamilyId": "WF-BZE",
+    "partOfSpeech": "noun",
+    "notes": "Dogrulandi: sozluk kaynagi"
+  },
+  {
+    "id": "L-EGUPSESEN",
+    "form": "егупсэсэн",
+    "literalMeaning": "dusunmek",
+    "conceptId": "THOUGHT",
+    "wordFamilyId": "WF-GU",
+    "partOfSpeech": "noun",
+    "notes": "Dogrulandi: sozluk kaynagi"
+  },
+  {
+    "id": "L-KHQUEBAN",
+    "form": "кхъуэбан",
+    "literalMeaning": "domuz agili",
+    "conceptId": "PIG",
+    "wordFamilyId": "WF-KHQUE",
+    "partOfSpeech": "noun",
+    "notes": "Dogrulandi: sozluk kaynagi"
+  },
+  {
+    "id": "L-SHCHUE",
+    "form": "щхъу",
+    "literalMeaning": "gri",
+    "conceptId": "GRAY",
+    "wordFamilyId": "WF-SHCHUE",
+    "partOfSpeech": "noun",
+    "notes": "Dogrulandi: sozluk kaynagi"
+  },
+  {
+    "id": "L-DELKHAN",
+    "form": "дэлъхан",
+    "literalMeaning": "icine atmak",
+    "conceptId": "THROW",
+    "wordFamilyId": "WF-DELKHAN",
     "partOfSpeech": "noun",
     "notes": "Dogrulandi: sozluk kaynagi"
   },
@@ -20421,10 +21469,55 @@
     }
   },
   {
+    "id": "L-SE",
+    "form": "сэ",
+    "literalMeaning": "ben",
+    "conceptId": "I",
+    "wordFamilyId": "WF-ZAMIR",
+    "partOfSpeech": "noun",
+    "notes": "Dogrulandi: temel kelime"
+  },
+  {
+    "id": "L-UE",
+    "form": "уэ",
+    "literalMeaning": "sen",
+    "conceptId": "YOU",
+    "wordFamilyId": "WF-ZAMIR",
+    "partOfSpeech": "noun",
+    "notes": "Dogrulandi: temel kelime"
+  },
+  {
+    "id": "L-AR",
+    "form": "ар",
+    "literalMeaning": "o",
+    "conceptId": "HE",
+    "wordFamilyId": "WF-ZAMIR",
+    "partOfSpeech": "noun",
+    "notes": "Dogrulandi: temel kelime"
+  },
+  {
+    "id": "L-DE",
+    "form": "дэ",
+    "literalMeaning": "biz",
+    "conceptId": "WE",
+    "wordFamilyId": "WF-ZAMIR",
+    "partOfSpeech": "noun",
+    "notes": "Dogrulandi: temel kelime"
+  },
+  {
     "id": "L-AKHER",
     "form": "ахэр",
     "literalMeaning": "onlar",
     "conceptId": "THEY",
+    "wordFamilyId": "WF-ZAMIR",
+    "partOfSpeech": "noun",
+    "notes": "Dogrulandi: temel kelime"
+  },
+  {
+    "id": "L-A",
+    "form": "а",
+    "literalMeaning": "o (uzak)",
+    "conceptId": "THAT",
     "wordFamilyId": "WF-ZAMIR",
     "partOfSpeech": "noun",
     "notes": "Dogrulandi: temel kelime"
@@ -20520,10 +21613,37 @@
     "notes": "Dogrulandi: temel kelime"
   },
   {
+    "id": "L-SH1YMAKHUE",
+    "form": "щӀымахуэ",
+    "literalMeaning": "kis",
+    "conceptId": "WINTER",
+    "wordFamilyId": "WF-ZAMAN",
+    "partOfSpeech": "noun",
+    "notes": "Dogrulandi: temel kelime"
+  },
+  {
+    "id": "L-KHUN",
+    "form": "хъун",
+    "literalMeaning": "olmak",
+    "conceptId": "BE",
+    "wordFamilyId": "WF-FIIL",
+    "partOfSpeech": "noun",
+    "notes": "Dogrulandi: temel kelime"
+  },
+  {
     "id": "L-SH1YN",
     "form": "щӀын",
     "literalMeaning": "yapmak",
     "conceptId": "DO",
+    "wordFamilyId": "WF-FIIL",
+    "partOfSpeech": "noun",
+    "notes": "Dogrulandi: temel kelime"
+  },
+  {
+    "id": "L-KEK1UEN",
+    "form": "къэкӀуэн",
+    "literalMeaning": "gelmek",
+    "conceptId": "COME",
     "wordFamilyId": "WF-FIIL",
     "partOfSpeech": "noun",
     "notes": "Dogrulandi: temel kelime"
@@ -20547,15 +21667,22 @@
     "notes": "Dogrulandi: temel kelime"
   },
   {
-    "id": "L-TXYN",
+    "id": "L-EDZHEN",
+    "form": "еджэн",
+    "literalMeaning": "okumak",
+    "conceptId": "READ",
+    "wordFamilyId": "WF-FIIL",
+    "partOfSpeech": "noun",
+    "notes": "Dogrulandi: temel kelime"
+  },
+  {
+    "id": "L-TKHYN",
     "form": "тхын",
     "literalMeaning": "yazmak",
     "conceptId": "WRITE",
-    "wordFamilyId": "WF-TX",
-    "partOfSpeech": "verb",
-    "ipa": "/txən/",
-    "corpusFrequency": 3100,
-    "notes": "KBD Corpus rank 97"
+    "wordFamilyId": "WF-FIIL",
+    "partOfSpeech": "noun",
+    "notes": "Dogrulandi: temel kelime"
   },
   {
     "id": "L-SHKHEN",
@@ -20585,15 +21712,22 @@
     "notes": "Dogrulandi: temel kelime"
   },
   {
-    "id": "L-C1YXUN",
+    "id": "L-TSYXUN",
     "form": "цӀыхун",
-    "literalMeaning": "tanimak; tanimak, bilmek",
+    "literalMeaning": "tanimak",
     "conceptId": "KNOW",
-    "wordFamilyId": "WF-C1YXU",
-    "partOfSpeech": "verb",
-    "ipa": "/tsʼəxʷn/",
-    "corpusFrequency": 2260,
-    "notes": "KBD Corpus rank 109"
+    "wordFamilyId": "WF-FIIL",
+    "partOfSpeech": "noun",
+    "notes": "Dogrulandi: temel kelime"
+  },
+  {
+    "id": "L-ZEKHEKHEN",
+    "form": "зэхэхын",
+    "literalMeaning": "duymak",
+    "conceptId": "HEAR",
+    "wordFamilyId": "WF-FIIL",
+    "partOfSpeech": "noun",
+    "notes": "Dogrulandi: temel kelime"
   },
   {
     "id": "L-DELHYN",
@@ -20614,6 +21748,15 @@
     "notes": "Dogrulandi: temel kelime"
   },
   {
+    "id": "L-SH1ALE",
+    "form": "щӀалэ",
+    "literalMeaning": "genc",
+    "conceptId": "YOUTH",
+    "wordFamilyId": "WF-SH1ALE",
+    "partOfSpeech": "noun",
+    "notes": "Dogrulandi: temel kelime"
+  },
+  {
     "id": "L-KHYDZHEBZ",
     "form": "хъыджэбз",
     "literalMeaning": "kiz",
@@ -20623,11 +21766,56 @@
     "notes": "Dogrulandi: temel kelime"
   },
   {
+    "id": "L-QUE",
+    "form": "къуэ",
+    "literalMeaning": "ogul",
+    "conceptId": "SON",
+    "wordFamilyId": "WF-QUE",
+    "partOfSpeech": "noun",
+    "notes": "Dogrulandi: temel kelime"
+  },
+  {
+    "id": "L-DELKHU",
+    "form": "дэлъху",
+    "literalMeaning": "kardes",
+    "conceptId": "BROTHER",
+    "wordFamilyId": "WF-DELKHU",
+    "partOfSpeech": "noun",
+    "notes": "Dogrulandi: temel kelime"
+  },
+  {
+    "id": "L-SHYPKHU",
+    "form": "шыпхъу",
+    "literalMeaning": "kiz kardes",
+    "conceptId": "SISTER",
+    "wordFamilyId": "WF-SHYPKHU",
+    "partOfSpeech": "noun",
+    "notes": "Dogrulandi: temel kelime"
+  },
+  {
+    "id": "L-QUAZHE",
+    "form": "къуажэ",
+    "literalMeaning": "koy",
+    "conceptId": "VILLAGE",
+    "wordFamilyId": "WF-QUAZHE",
+    "partOfSpeech": "noun",
+    "notes": "Dogrulandi: temel kelime"
+  },
+  {
     "id": "L-QALE",
     "form": "къалэ",
     "literalMeaning": "sehir",
     "conceptId": "CITY",
     "wordFamilyId": "WF-QALE",
+    "partOfSpeech": "noun",
+    "notes": "Dogrulandi: temel kelime"
+  },
+  {
+    "id": "L-NYBZHEGU",
+    "form": "ныбжьэгъу",
+    "literalMeaning": "arkadas",
+    "conceptId": "FRIEND",
+    "wordFamilyId": "WF-NYBZHEGU",
     "partOfSpeech": "noun",
     "notes": "Dogrulandi: temel kelime"
   },
@@ -20650,6 +21838,15 @@
     "notes": "Dogrulandi: temel kelime"
   },
   {
+    "id": "L-SHY",
+    "form": "шы",
+    "literalMeaning": "at",
+    "conceptId": "HORSE",
+    "wordFamilyId": "WF-SHY",
+    "partOfSpeech": "noun",
+    "notes": "Dogrulandi: temel kelime"
+  },
+  {
     "id": "L-KHHE",
     "form": "хьэ",
     "literalMeaning": "kopek",
@@ -20668,6 +21865,15 @@
     "notes": "Dogrulandi: temel kelime"
   },
   {
+    "id": "L-SE2",
+    "form": "сэ",
+    "literalMeaning": "bicak",
+    "conceptId": "KNIFE",
+    "wordFamilyId": "WF-SE",
+    "partOfSpeech": "noun",
+    "notes": "Dogrulandi: temel kelime"
+  },
+  {
     "id": "L-1ENE",
     "form": "Ӏэнэ",
     "literalMeaning": "masa",
@@ -20677,15 +21883,31 @@
     "notes": "Dogrulandi: temel kelime"
   },
   {
-    "id": "L-TX",
+    "id": "L-TKHYL",
     "form": "тхылъ",
     "literalMeaning": "kitap",
     "conceptId": "BOOK",
-    "wordFamilyId": "WF-TX",
+    "wordFamilyId": "WF-TKHYL",
     "partOfSpeech": "noun",
-    "ipa": "/txəɬ/",
-    "corpusFrequency": 6000,
-    "notes": "KBD Corpus rank 68"
+    "notes": "Dogrulandi: temel kelime"
+  },
+  {
+    "id": "L-KHQUXY",
+    "form": "кхъухь",
+    "literalMeaning": "gemi",
+    "conceptId": "SHIP",
+    "wordFamilyId": "WF-KHQUXY",
+    "partOfSpeech": "noun",
+    "notes": "Dogrulandi: temel kelime"
+  },
+  {
+    "id": "L-SHHYE",
+    "form": "щхьэ",
+    "literalMeaning": "bas",
+    "conceptId": "HEAD",
+    "wordFamilyId": "WF-SHHYE",
+    "partOfSpeech": "noun",
+    "notes": "Dogrulandi: temel kelime"
   },
   {
     "id": "L-LHE",
@@ -20693,6 +21915,15 @@
     "literalMeaning": "ayak",
     "conceptId": "FOOT",
     "wordFamilyId": "WF-LHE",
+    "partOfSpeech": "noun",
+    "notes": "Dogrulandi: temel kelime"
+  },
+  {
+    "id": "L-LY",
+    "form": "лы",
+    "literalMeaning": "et",
+    "conceptId": "MEAT",
+    "wordFamilyId": "WF-LY",
     "partOfSpeech": "noun",
     "notes": "Dogrulandi: temel kelime"
   },
@@ -20796,6 +22027,28 @@
     "notes": "KBD Corpus rank 67"
   },
   {
+    "id": "L-TX",
+    "form": "тхылъ",
+    "literalMeaning": "kitap",
+    "conceptId": "BOOK",
+    "wordFamilyId": "WF-TX",
+    "partOfSpeech": "noun",
+    "ipa": "/txəɬ/",
+    "corpusFrequency": 6000,
+    "notes": "KBD Corpus rank 68"
+  },
+  {
+    "id": "L-EDZ",
+    "form": "еджапӀэ",
+    "literalMeaning": "okul",
+    "conceptId": "SCHOOL",
+    "wordFamilyId": "WF-EDZ",
+    "partOfSpeech": "noun",
+    "ipa": "/jadʒaːpʼa/",
+    "corpusFrequency": 5900,
+    "notes": "KBD Corpus rank 69"
+  },
+  {
     "id": "L-LEZHAP1E",
     "form": "лэжьапӀэ",
     "literalMeaning": "is yeri, calisma alani",
@@ -20805,6 +22058,17 @@
     "ipa": "/laʑaːpʼa/",
     "corpusFrequency": 5810,
     "notes": "KBD Corpus rank 70"
+  },
+  {
+    "id": "L-PSHEDDZHYZH",
+    "form": "пщэдджыжь",
+    "literalMeaning": "sabah",
+    "conceptId": "MORNING",
+    "wordFamilyId": "WF-PSHEDDZHYZH",
+    "partOfSpeech": "noun",
+    "ipa": "/pɕadʒəʑ/",
+    "corpusFrequency": 5600,
+    "notes": "KBD Corpus rank 72"
   },
   {
     "id": "L-BZHYH",
@@ -20818,6 +22082,17 @@
     "notes": "KBD Corpus rank 75"
   },
   {
+    "id": "L-GHATXE",
+    "form": "гъатхэ",
+    "literalMeaning": "ilkbahar",
+    "conceptId": "SPRING",
+    "wordFamilyId": "WF-GHATXE",
+    "partOfSpeech": "noun",
+    "ipa": "/ʁaːtxa/",
+    "corpusFrequency": 5200,
+    "notes": "KBD Corpus rank 76"
+  },
+  {
     "id": "L-PEZH",
     "form": "пэж",
     "literalMeaning": "dogru, gercek",
@@ -20829,6 +22104,39 @@
     "notes": "KBD Corpus rank 77"
   },
   {
+    "id": "L-PC1Y",
+    "form": "пцӀы",
+    "literalMeaning": "yalan, yanlis",
+    "conceptId": "LIE",
+    "wordFamilyId": "WF-PC1Y",
+    "partOfSpeech": "adjective",
+    "ipa": "/ptsʼə/",
+    "corpusFrequency": 5010,
+    "notes": "KBD Corpus rank 78"
+  },
+  {
+    "id": "L-IN",
+    "form": "ин",
+    "literalMeaning": "buyuk",
+    "conceptId": "BIG",
+    "wordFamilyId": "WF-IN",
+    "partOfSpeech": "adjective",
+    "ipa": "/jən/",
+    "corpusFrequency": 4900,
+    "notes": "KBD Corpus rank 79"
+  },
+  {
+    "id": "L-C1YK1U",
+    "form": "цӀыкӀу",
+    "literalMeaning": "kucuk",
+    "conceptId": "SMALL",
+    "wordFamilyId": "WF-C1YK1U",
+    "partOfSpeech": "adjective",
+    "ipa": "/tsʼəkʷ/",
+    "corpusFrequency": 4820,
+    "notes": "KBD Corpus rank 80"
+  },
+  {
     "id": "L-K1ESH1",
     "form": "кӀэщӀ",
     "literalMeaning": "kisa",
@@ -20838,6 +22146,94 @@
     "ipa": "/tʃʼaɕʼ/",
     "corpusFrequency": 4400,
     "notes": "KBD Corpus rank 84"
+  },
+  {
+    "id": "L-PSYNCH1E",
+    "form": "псынщӀэ",
+    "literalMeaning": "hizli, hafif",
+    "conceptId": "FAST",
+    "wordFamilyId": "WF-PSYNCH1E",
+    "partOfSpeech": "adjective",
+    "ipa": "/psənɕʼa/",
+    "corpusFrequency": 4300,
+    "notes": "KBD Corpus rank 85"
+  },
+  {
+    "id": "L-TXU",
+    "form": "тху",
+    "literalMeaning": "bes",
+    "conceptId": "FIVE",
+    "wordFamilyId": "WF-TXU",
+    "partOfSpeech": "numeral",
+    "ipa": "/txʷə/",
+    "corpusFrequency": 3910,
+    "notes": "KBD Corpus rank 89"
+  },
+  {
+    "id": "L-XY",
+    "form": "хы",
+    "literalMeaning": "alti",
+    "conceptId": "SIX",
+    "wordFamilyId": "WF-XY",
+    "partOfSpeech": "numeral",
+    "ipa": "/xə/",
+    "corpusFrequency": 3800,
+    "notes": "KBD Corpus rank 90"
+  },
+  {
+    "id": "L-YI",
+    "form": "и",
+    "literalMeaning": "sekiz",
+    "conceptId": "EIGHT",
+    "wordFamilyId": "WF-YI",
+    "partOfSpeech": "numeral",
+    "ipa": "/jə/",
+    "corpusFrequency": 3600,
+    "notes": "KBD Corpus rank 92"
+  },
+  {
+    "id": "L-BGHWU",
+    "form": "бгъу",
+    "literalMeaning": "dokuz",
+    "conceptId": "NINE",
+    "wordFamilyId": "WF-BGHWU",
+    "partOfSpeech": "numeral",
+    "ipa": "/bʁʷə/",
+    "corpusFrequency": 3500,
+    "notes": "KBD Corpus rank 93"
+  },
+  {
+    "id": "L-PSH1Y",
+    "form": "пщӀы",
+    "literalMeaning": "on",
+    "conceptId": "TEN",
+    "wordFamilyId": "WF-PSH1Y",
+    "partOfSpeech": "numeral",
+    "ipa": "/pɕʼə/",
+    "corpusFrequency": 3410,
+    "notes": "KBD Corpus rank 94"
+  },
+  {
+    "id": "L-TXYN",
+    "form": "тхын",
+    "literalMeaning": "yazmak",
+    "conceptId": "WRITE",
+    "wordFamilyId": "WF-TX",
+    "partOfSpeech": "verb",
+    "ipa": "/txən/",
+    "corpusFrequency": 3100,
+    "notes": "KBD Corpus rank 97"
+  },
+  {
+    "id": "L-EPLHYN",
+    "form": "еплъын",
+    "literalMeaning": "bakmak, seyretmek",
+    "conceptId": "LOOK",
+    "wordFamilyId": "WF-PLH",
+    "partOfSpeech": "verb",
+    "ipa": "/japɬən/",
+    "corpusFrequency": 2920,
+    "notes": "KBD Corpus rank 99"
   },
   {
     "id": "L-ZEKHEKH1YN",
@@ -20934,6 +22330,17 @@
     "notes": "KBD Corpus rank 108"
   },
   {
+    "id": "L-C1YXUN",
+    "form": "цӀыхун",
+    "literalMeaning": "tanimak, bilmek",
+    "conceptId": "KNOW",
+    "wordFamilyId": "WF-C1YXU",
+    "partOfSpeech": "verb",
+    "ipa": "/tsʼəxʷn/",
+    "corpusFrequency": 2260,
+    "notes": "KBD Corpus rank 109"
+  },
+  {
     "id": "L-SH1EUN",
     "form": "щӀэун",
     "literalMeaning": "anlamak, kavramak",
@@ -20989,6 +22396,17 @@
     "notes": "KBD Corpus rank 224"
   },
   {
+    "id": "L-UAFE",
+    "form": "уафэ",
+    "literalMeaning": "gokyuzu",
+    "conceptId": "SKY",
+    "wordFamilyId": "WF-WAFE",
+    "partOfSpeech": "noun",
+    "ipa": "/waːfa/",
+    "corpusFrequency": 330,
+    "notes": "KBD Corpus rank 225"
+  },
+  {
     "id": "L-SH1YLHE",
     "form": "щӀылъэ",
     "literalMeaning": "yeryuzu, toprak",
@@ -20998,6 +22416,17 @@
     "ipa": "/ɕʼəɬa/",
     "corpusFrequency": 325,
     "notes": "KBD Corpus rank 226"
+  },
+  {
+    "id": "L-UESHX",
+    "form": "уэшх",
+    "literalMeaning": "yagmur",
+    "conceptId": "RAIN",
+    "wordFamilyId": "WF-WESHX",
+    "partOfSpeech": "noun",
+    "ipa": "/waʃx/",
+    "corpusFrequency": 320,
+    "notes": "KBD Corpus rank 227"
   },
   {
     "id": "L-AKHSHE",
@@ -21029,6 +22458,15 @@
     "wordFamilyId": "WF-XXX",
     "partOfSpeech": "noun",
     "notes": "Dogrulandi: sozluk kaynagi"
+  },
+  {
+    "id": "L-TKHE",
+    "form": "тхьэ",
+    "literalMeaning": "Tanri, yaratici",
+    "conceptId": "GOD",
+    "wordFamilyId": "WF-TKHE",
+    "partOfSpeech": "noun",
+    "notes": "Felsefi/ontolojik kavram"
   },
   {
     "id": "L-DUNEY",
@@ -21085,6 +22523,15 @@
     "notes": "Felsefi/ontolojik kavram"
   },
   {
+    "id": "L-C1YXUGHE",
+    "form": "цӀыхугъэ",
+    "literalMeaning": "insanlik, humanizm",
+    "conceptId": "HUMANITY",
+    "wordFamilyId": "WF-C1YXU",
+    "partOfSpeech": "noun",
+    "notes": "Felsefi/ontolojik kavram"
+  },
+  {
     "id": "L-QEBZAGHE",
     "form": "къэбзагъэ",
     "literalMeaning": "saflik, durustluk",
@@ -21117,6 +22564,15 @@
     "literalMeaning": "gaye, niyet",
     "conceptId": "GOAL",
     "wordFamilyId": "WF-MURAD",
+    "partOfSpeech": "noun",
+    "notes": "Felsefi/ontolojik kavram"
+  },
+  {
+    "id": "L-GUKHELH",
+    "form": "гухэлъ",
+    "literalMeaning": "niyet, icsel arzu",
+    "conceptId": "INTENTION",
+    "wordFamilyId": "WF-GU",
     "partOfSpeech": "noun",
     "notes": "Felsefi/ontolojik kavram"
   },
@@ -21202,6 +22658,15 @@
     "notes": "Somatik/destan kaynagi"
   },
   {
+    "id": "L-DYGHUZH",
+    "form": "дыгъужь",
+    "literalMeaning": "kurt",
+    "conceptId": "WOLF",
+    "wordFamilyId": "WF-DYGHU",
+    "partOfSpeech": "noun",
+    "notes": "Somatik/destan kaynagi"
+  },
+  {
     "id": "L-KHYQ",
     "form": "хыкъа",
     "literalMeaning": "yunus",
@@ -21274,6 +22739,15 @@
     "notes": "Somatik/destan kaynagi"
   },
   {
+    "id": "L-DE2",
+    "form": "дэ",
+    "literalMeaning": "ceviz",
+    "conceptId": "WALNUT",
+    "wordFamilyId": "WF-DE",
+    "partOfSpeech": "noun",
+    "notes": "Somatik/destan kaynagi"
+  },
+  {
     "id": "L-FARA",
     "form": "фара",
     "literalMeaning": "soylu at",
@@ -21310,6 +22784,15 @@
     "notes": "Somatik/destan kaynagi"
   },
   {
+    "id": "L-SHKO",
+    "form": "шъо",
+    "literalMeaning": "deri, cilt",
+    "conceptId": "SKIN",
+    "wordFamilyId": "WF-SHKO",
+    "partOfSpeech": "noun",
+    "notes": "Somatik/destan kaynagi"
+  },
+  {
     "id": "L-SHKAM",
     "form": "шкам",
     "literalMeaning": "bank, sira",
@@ -21317,838 +22800,5 @@
     "wordFamilyId": "WF-SHKAM",
     "partOfSpeech": "noun",
     "notes": "Somatik/destan kaynagi"
-  },
-  {
-    "id": "L-K1UE",
-    "form": "кIуэ",
-    "literalMeaning": "gelmek (kök)",
-    "conceptId": "COME",
-    "wordFamilyId": "WF-K1U",
-    "partOfSpeech": "verb",
-    "notes": "Kok - fiil"
-  },
-  {
-    "id": "L-P1C1Y",
-    "form": "пцӀы",
-    "ipa": "/pt͡sʼə/",
-    "literalMeaning": "yalan",
-    "partOfSpeech": "noun",
-    "conceptId": null,
-    "conceptIds": [
-      "LIE",
-      "DECEPTION"
-    ],
-    "wordFamilyId": "WF-P1C1",
-    "derivation": {
-      "rootIds": [
-        "R-P1C1"
-      ],
-      "morphemeIds": [],
-      "rule": "root"
-    },
-    "corpusFrequency": 431,
-    "dialectVariants": {
-      "adyghe": "пцӀы",
-      "kabardian": "пцӀы"
-    }
-  },
-  {
-    "id": "L-PSYNSH1E",
-    "form": "псынщӀэ",
-    "ipa": "/psǝnɕʹɐ/",
-    "literalMeaning": "su gibi akan",
-    "partOfSpeech": "noun",
-    "conceptId": null,
-    "conceptIds": [
-      "LIGHT_WEIGHT",
-      "FAST",
-      "QUICK",
-      "EASY",
-      "LIVELY"
-    ],
-    "wordFamilyId": "WF-PSY",
-    "derivation": {
-      "rootIds": [
-        "R-PSY"
-      ],
-      "morphemeIds": [],
-      "rule": "compound"
-    },
-    "corpusFrequency": 170,
-    "dialectVariants": {
-      "adyghe": "псынщӀэ",
-      "kabardian": "псынщӀэ"
-    }
-  },
-  {
-    "id": "L-GUKHELHE",
-    "form": "гухэлъ",
-    "ipa": null,
-    "literalMeaning": "niyet, amac",
-    "partOfSpeech": "noun",
-    "conceptId": null,
-    "conceptIds": null,
-    "wordFamilyId": "WF-GU",
-    "derivation": {
-      "rootIds": [
-        "R-GU"
-      ],
-      "rule": "auto_prefix"
-    },
-    "corpusFrequency": 129,
-    "dialectVariants": {
-      "adyghe": "гухэлъ",
-      "kabardian": "гухэлъ"
-    }
-  },
-  {
-    "id": "L-TKHU",
-    "form": "тху",
-    "ipa": null,
-    "literalMeaning": "bes",
-    "partOfSpeech": "numeral",
-    "conceptId": "FIVE",
-    "conceptIds": null,
-    "wordFamilyId": "WF-NUM",
-    "derivation": null,
-    "corpusFrequency": 27,
-    "dialectVariants": null
-  },
-  {
-    "id": "L-BGHU",
-    "form": "бгъу",
-    "ipa": null,
-    "literalMeaning": "dokuz",
-    "partOfSpeech": "numeral",
-    "conceptId": "NINE",
-    "conceptIds": null,
-    "wordFamilyId": "WF-NUM",
-    "derivation": null,
-    "corpusFrequency": 66,
-    "dialectVariants": null
-  },
-  {
-    "id": "L-PSHCH1Y",
-    "form": "пщӀы",
-    "ipa": null,
-    "literalMeaning": "on",
-    "partOfSpeech": "numeral",
-    "conceptId": "TEN",
-    "conceptIds": null,
-    "wordFamilyId": "WF-NUM",
-    "derivation": null,
-    "corpusFrequency": 38,
-    "dialectVariants": null
-  },
-  {
-    "id": "L-PSHCHEDDZHYZH",
-    "form": "пщэдджыжь",
-    "ipa": null,
-    "literalMeaning": "sabah",
-    "partOfSpeech": "noun",
-    "conceptId": "MORNING",
-    "conceptIds": null,
-    "wordFamilyId": "WF-BASIC",
-    "derivation": null,
-    "corpusFrequency": 103,
-    "dialectVariants": {
-      "adyghe": "пщэдджыжь",
-      "kabardian": "пщэдджыжь"
-    }
-  },
-  {
-    "id": "L-KHUEBAN",
-    "form": "кхъуэбан",
-    "ipa": null,
-    "literalMeaning": "yaban domuzu",
-    "partOfSpeech": "noun",
-    "conceptId": null,
-    "conceptIds": null,
-    "wordFamilyId": "WF-ANIMAL",
-    "derivation": {
-      "rootIds": [
-        "R-KKHUHE"
-      ],
-      "rule": "auto_prefix"
-    },
-    "corpusFrequency": 0,
-    "dialectVariants": null
-  },
-  {
-    "id": "L-SHHXHU2",
-    "form": "щхъу",
-    "ipa": null,
-    "literalMeaning": "mavi",
-    "partOfSpeech": "noun",
-    "conceptId": null,
-    "conceptIds": null,
-    "wordFamilyId": "WF-COLOR",
-    "derivation": null,
-    "corpusFrequency": 0,
-    "dialectVariants": null
-  },
-  {
-    "id": "L-DEZHYGEY",
-    "form": "дежьей",
-    "ipa": null,
-    "literalMeaning": "findik agaci",
-    "partOfSpeech": "noun",
-    "conceptId": null,
-    "conceptIds": null,
-    "wordFamilyId": "WF-FLORA",
-    "derivation": null,
-    "corpusFrequency": 0,
-    "dialectVariants": null
-  },
-  {
-    "id": "L-SHEZAYE",
-    "form": "шезае",
-    "ipa": null,
-    "literalMeaning": "akcaagac",
-    "partOfSpeech": "noun",
-    "conceptId": null,
-    "conceptIds": null,
-    "wordFamilyId": "WF-FLORA",
-    "derivation": null,
-    "corpusFrequency": 0,
-    "dialectVariants": null
-  },
-  {
-    "id": "L-WAFE",
-    "form": "уафэ",
-    "ipa": null,
-    "literalMeaning": "gokyuzu",
-    "partOfSpeech": "noun",
-    "conceptId": null,
-    "conceptIds": null,
-    "wordFamilyId": "WF-Nature",
-    "derivation": null,
-    "corpusFrequency": 144,
-    "dialectVariants": null
-  },
-  {
-    "id": "L-WASHX",
-    "form": "уэшх",
-    "ipa": null,
-    "literalMeaning": "yagmur",
-    "partOfSpeech": "noun",
-    "conceptId": null,
-    "conceptIds": null,
-    "wordFamilyId": "WF-Nature",
-    "derivation": null,
-    "corpusFrequency": 169,
-    "dialectVariants": null
-  },
-  {
-    "id": "L-WA",
-    "form": "уэ",
-    "ipa": null,
-    "literalMeaning": "dolu",
-    "partOfSpeech": "noun",
-    "conceptId": null,
-    "conceptIds": null,
-    "wordFamilyId": "WF-Nature",
-    "derivation": null,
-    "corpusFrequency": 3287,
-    "dialectVariants": null
-  },
-  {
-    "id": "L-PSHCH1YK1U",
-    "form": "пщӀыкӀу",
-    "ipa": null,
-    "literalMeaning": "on bir",
-    "partOfSpeech": "noun",
-    "conceptId": null,
-    "conceptIds": null,
-    "wordFamilyId": "WF-Number",
-    "derivation": null,
-    "corpusFrequency": 0,
-    "dialectVariants": null
-  },
-  {
-    "id": "L-PSHCH1YK1UT1",
-    "form": "пщӀыкӀутӀ",
-    "ipa": null,
-    "literalMeaning": "on iki",
-    "partOfSpeech": "noun",
-    "conceptId": null,
-    "conceptIds": null,
-    "wordFamilyId": "WF-Number",
-    "derivation": null,
-    "corpusFrequency": 0,
-    "dialectVariants": null
-  },
-  {
-    "id": "L-GHATKHE",
-    "form": "гъатхэ",
-    "ipa": null,
-    "literalMeaning": "ilkbahar",
-    "partOfSpeech": "noun",
-    "conceptId": null,
-    "conceptIds": null,
-    "wordFamilyId": "WF-Time",
-    "derivation": null,
-    "corpusFrequency": 66,
-    "dialectVariants": null
-  },
-  {
-    "id": "L-DALHXAN",
-    "form": "дэлъхан",
-    "ipa": null,
-    "literalMeaning": "?",
-    "partOfSpeech": "noun",
-    "conceptId": null,
-    "conceptIds": null,
-    "wordFamilyId": "WF-Family",
-    "derivation": null,
-    "corpusFrequency": 0,
-    "dialectVariants": null
-  },
-  {
-    "id": "L-YAGUPSESAN",
-    "form": "егупсэсэн",
-    "ipa": null,
-    "literalMeaning": "?",
-    "partOfSpeech": "noun",
-    "conceptId": null,
-    "conceptIds": null,
-    "wordFamilyId": "WF-Verb",
-    "derivation": null,
-    "corpusFrequency": 0,
-    "dialectVariants": null
-  },
-  {
-    "id": "L-NYBZH",
-    "form": "ныбжь",
-    "ipa": null,
-    "literalMeaning": "yas",
-    "partOfSpeech": "noun",
-    "conceptId": null,
-    "conceptIds": null,
-    "wordFamilyId": "WF-Noun",
-    "derivation": {
-      "rootIds": [
-        "R-NYBZHY"
-      ],
-      "rule": "auto_prefix"
-    },
-    "corpusFrequency": 143,
-    "dialectVariants": null
-  },
-  {
-    "id": "L-TKHE2",
-    "form": "тхьэ",
-    "ipa": null,
-    "literalMeaning": "tanri",
-    "partOfSpeech": "noun",
-    "conceptId": null,
-    "conceptIds": null,
-    "wordFamilyId": "WF-Religion",
-    "derivation": null,
-    "corpusFrequency": 1842,
-    "dialectVariants": null
-  },
-  {
-    "id": "L-TSYXHUGHE",
-    "form": "цӀыхугъэ",
-    "ipa": null,
-    "literalMeaning": "insanlik",
-    "partOfSpeech": "noun",
-    "conceptId": null,
-    "conceptIds": null,
-    "wordFamilyId": "WF-Noun",
-    "derivation": null,
-    "corpusFrequency": 53,
-    "dialectVariants": null
-  },
-  {
-    "id": "L-YEPLHEN",
-    "form": "еплъын",
-    "ipa": null,
-    "literalMeaning": "tatmak",
-    "partOfSpeech": "verb",
-    "conceptId": "TASTE",
-    "conceptIds": null,
-    "wordFamilyId": "WF-SENSE",
-    "derivation": null,
-    "corpusFrequency": 165,
-    "dialectVariants": null
-  },
-  {
-    "id": "L-KHUN-1",
-    "form": "уцы",
-    "ipa": "/χʷǝn/",
-    "literalMeaning": "ot, çayır otu",
-    "partOfSpeech": "noun",
-    "conceptId": null,
-    "conceptIds": null,
-    "wordFamilyId": "WF-L-KHUN-1",
-    "derivation": {
-      "rootIds": [],
-      "morphemeIds": [],
-      "rule": "root"
-    },
-    "corpusFrequency": 2484,
-    "dialectVariants": {
-      "adyghe": "уцы",
-      "kabardian": "удз"
-    }
-  },
-  {
-    "id": "L-KHUN-2",
-    "form": "хъун",
-    "ipa": "/χʷǝn/",
-    "literalMeaning": "güve (moth)",
-    "partOfSpeech": "noun",
-    "conceptId": null,
-    "conceptIds": null,
-    "wordFamilyId": "WF-L-KHUN-2",
-    "derivation": {
-      "rootIds": [],
-      "morphemeIds": [],
-      "rule": "root"
-    },
-    "corpusFrequency": 2484,
-    "dialectVariants": null
-  },
-  {
-    "id": "L-KHUN-3",
-    "form": "хъун",
-    "ipa": "/χʷǝn/",
-    "literalMeaning": "temel, dokuma ipliği",
-    "partOfSpeech": "noun",
-    "conceptId": null,
-    "conceptIds": null,
-    "wordFamilyId": "WF-L-KHUN-3",
-    "derivation": {
-      "rootIds": [],
-      "morphemeIds": [],
-      "rule": "root"
-    },
-    "corpusFrequency": 2484,
-    "dialectVariants": null
-  },
-  {
-    "id": "L-KHUN-4",
-    "form": "мэхъу",
-    "ipa": "/χʷǝn/",
-    "literalMeaning": "olmak, başlamak, büyümek, olgunlaşmak",
-    "partOfSpeech": "verb",
-    "conceptId": null,
-    "conceptIds": null,
-    "wordFamilyId": "WF-L-KHUN-4",
-    "derivation": {
-      "rootIds": [],
-      "morphemeIds": [],
-      "rule": "root"
-    },
-    "corpusFrequency": 2484,
-    "dialectVariants": {
-      "adyghe": "мэхъу",
-      "kabardian": "хъун"
-    }
-  },
-  {
-    "id": "L-GUSHHE",
-    "form": "гущэ",
-    "ipa": "/ˈgʷǝɕɐ/",
-    "literalMeaning": "besik, kundak",
-    "partOfSpeech": "noun",
-    "conceptId": "CRADLE",
-    "conceptIds": null,
-    "wordFamilyId": "WF-GUSHCH",
-    "derivation": null,
-    "corpusFrequency": 40,
-    "dialectVariants": null
-  },
-  {
-    "id": "L-SHE2",
-    "form": "шэ",
-    "ipa": null,
-    "literalMeaning": "süt",
-    "partOfSpeech": "noun",
-    "conceptId": "MILK",
-    "conceptIds": null,
-    "wordFamilyId": "WF-SHE2",
-    "derivation": null,
-    "corpusFrequency": 213,
-    "dialectVariants": null
-  },
-  {
-    "id": "L-KHY2",
-    "form": "хы",
-    "ipa": null,
-    "literalMeaning": "altı (6)",
-    "partOfSpeech": "numeral",
-    "conceptId": "SIX",
-    "conceptIds": null,
-    "wordFamilyId": "WF-KHY2",
-    "derivation": null,
-    "corpusFrequency": 325,
-    "dialectVariants": null
-  },
-  {
-    "id": "L-SHCH",
-    "form": "щы",
-    "ipa": null,
-    "literalMeaning": "uç",
-    "partOfSpeech": "noun",
-    "conceptId": "POINT",
-    "conceptIds": null,
-    "wordFamilyId": "WF-SHCH",
-    "derivation": null,
-    "corpusFrequency": 60,
-    "dialectVariants": null
-  },
-  {
-    "id": "L-MEZQOGHUM",
-    "form": "мэзкъогъум",
-    "ipa": null,
-    "literalMeaning": "orman kuytusu",
-    "partOfSpeech": "noun",
-    "conceptId": "FOREST",
-    "conceptIds": null,
-    "wordFamilyId": "WF-MEZQOGHUM",
-    "derivation": null,
-    "corpusFrequency": null,
-    "dialectVariants": null
-  },
-  {
-    "id": "L-QUIBLY",
-    "form": "къуиблы",
-    "ipa": null,
-    "literalMeaning": "yedigen",
-    "partOfSpeech": "noun",
-    "conceptId": "HEPTAGON",
-    "conceptIds": null,
-    "wordFamilyId": "WF-QUIBLY",
-    "derivation": null,
-    "corpusFrequency": null,
-    "dialectVariants": null
-  },
-  {
-    "id": "L-ZEDELKHU",
-    "form": "зэдэлъху",
-    "ipa": null,
-    "literalMeaning": "erkek kardesler",
-    "partOfSpeech": "noun",
-    "conceptId": "BROTHER",
-    "conceptIds": null,
-    "wordFamilyId": "WF-ZEDELKHU",
-    "derivation": null,
-    "corpusFrequency": null,
-    "dialectVariants": null
-  },
-  {
-    "id": "L-BZEBZE",
-    "form": "бзэбзэ",
-    "ipa": null,
-    "literalMeaning": "geveze",
-    "partOfSpeech": "noun",
-    "conceptId": "TALKATIVE",
-    "conceptIds": null,
-    "wordFamilyId": "WF-BZE",
-    "derivation": null,
-    "corpusFrequency": null,
-    "dialectVariants": null
-  },
-  {
-    "id": "L-BZASH1EPS",
-    "form": "бзащӀэпс",
-    "ipa": null,
-    "literalMeaning": "sive",
-    "partOfSpeech": "noun",
-    "conceptId": "DIALECT",
-    "conceptIds": null,
-    "wordFamilyId": "WF-BZE",
-    "derivation": null,
-    "corpusFrequency": null,
-    "dialectVariants": null
-  },
-  {
-    "id": "L-KHEDZHEBZ",
-    "form": "хьэджэбз",
-    "ipa": null,
-    "literalMeaning": "akici konusma",
-    "partOfSpeech": "noun",
-    "conceptId": "SPEECH",
-    "conceptIds": null,
-    "wordFamilyId": "WF-BZE",
-    "derivation": null,
-    "corpusFrequency": null,
-    "dialectVariants": null
-  },
-  {
-    "id": "L-SH1YMAKHUE",
-    "form": "щӀымахуэ",
-    "ipa": null,
-    "literalMeaning": "kis",
-    "partOfSpeech": "noun",
-    "conceptId": "WINTER",
-    "conceptIds": null,
-    "wordFamilyId": "WF-ZAMAN",
-    "derivation": null,
-    "corpusFrequency": null,
-    "dialectVariants": null
-  },
-  {
-    "id": "L-KEK1UEN",
-    "form": "къэкӀуэн",
-    "ipa": null,
-    "literalMeaning": "gelmek",
-    "partOfSpeech": "noun",
-    "conceptId": "COME",
-    "conceptIds": null,
-    "wordFamilyId": "WF-FIIL",
-    "derivation": null,
-    "corpusFrequency": null,
-    "dialectVariants": null
-  },
-  {
-    "id": "L-EDZHEN",
-    "form": "еджэн",
-    "ipa": null,
-    "literalMeaning": "okumak",
-    "partOfSpeech": "noun",
-    "conceptId": "READ",
-    "conceptIds": null,
-    "wordFamilyId": "WF-FIIL",
-    "derivation": null,
-    "corpusFrequency": null,
-    "dialectVariants": null
-  },
-  {
-    "id": "L-TKHYN",
-    "form": "тхын",
-    "ipa": null,
-    "literalMeaning": "yazmak",
-    "partOfSpeech": "noun",
-    "conceptId": "WRITE",
-    "conceptIds": null,
-    "wordFamilyId": "WF-FIIL",
-    "derivation": null,
-    "corpusFrequency": null,
-    "dialectVariants": null
-  },
-  {
-    "id": "L-TSYXUN",
-    "form": "цӀыхун",
-    "ipa": null,
-    "literalMeaning": "tanimak",
-    "partOfSpeech": "noun",
-    "conceptId": "KNOW",
-    "conceptIds": null,
-    "wordFamilyId": "WF-FIIL",
-    "derivation": null,
-    "corpusFrequency": null,
-    "dialectVariants": null
-  },
-  {
-    "id": "L-ZEKHEKHEN",
-    "form": "зэхэхын",
-    "ipa": null,
-    "literalMeaning": "duymak",
-    "partOfSpeech": "noun",
-    "conceptId": "HEAR",
-    "conceptIds": null,
-    "wordFamilyId": "WF-FIIL",
-    "derivation": null,
-    "corpusFrequency": null,
-    "dialectVariants": null
-  },
-  {
-    "id": "L-SH1ALE",
-    "form": "щӀалэ",
-    "ipa": null,
-    "literalMeaning": "genc",
-    "partOfSpeech": "noun",
-    "conceptId": "YOUTH",
-    "conceptIds": null,
-    "wordFamilyId": "WF-SH1ALE",
-    "derivation": null,
-    "corpusFrequency": null,
-    "dialectVariants": null
-  },
-  {
-    "id": "L-QUE",
-    "form": "къуэ",
-    "ipa": null,
-    "literalMeaning": "ogul",
-    "partOfSpeech": "noun",
-    "conceptId": "SON",
-    "conceptIds": null,
-    "wordFamilyId": "WF-QUE",
-    "derivation": null,
-    "corpusFrequency": null,
-    "dialectVariants": null
-  },
-  {
-    "id": "L-DELKHU",
-    "form": "дэлъху",
-    "ipa": null,
-    "literalMeaning": "kardes",
-    "partOfSpeech": "noun",
-    "conceptId": "BROTHER",
-    "conceptIds": null,
-    "wordFamilyId": "WF-DELKHU",
-    "derivation": null,
-    "corpusFrequency": null,
-    "dialectVariants": null
-  },
-  {
-    "id": "L-SHYPKHU",
-    "form": "шыпхъу",
-    "ipa": null,
-    "literalMeaning": "kiz kardes",
-    "partOfSpeech": "noun",
-    "conceptId": "SISTER",
-    "conceptIds": null,
-    "wordFamilyId": "WF-SHYPKHU",
-    "derivation": null,
-    "corpusFrequency": null,
-    "dialectVariants": null
-  },
-  {
-    "id": "L-QUAZHE",
-    "form": "къуажэ",
-    "ipa": null,
-    "literalMeaning": "koy",
-    "partOfSpeech": "noun",
-    "conceptId": "VILLAGE",
-    "conceptIds": null,
-    "wordFamilyId": "WF-QUAZHE",
-    "derivation": null,
-    "corpusFrequency": null,
-    "dialectVariants": null
-  },
-  {
-    "id": "L-NYBZHEGU",
-    "form": "ныбжьэгъу",
-    "ipa": null,
-    "literalMeaning": "arkadas",
-    "partOfSpeech": "noun",
-    "conceptId": "FRIEND",
-    "conceptIds": null,
-    "wordFamilyId": "WF-NYBZHEGU",
-    "derivation": null,
-    "corpusFrequency": null,
-    "dialectVariants": null
-  },
-  {
-    "id": "L-SE2",
-    "form": "сэ",
-    "ipa": null,
-    "literalMeaning": "bicak",
-    "partOfSpeech": "noun",
-    "conceptId": "KNIFE",
-    "conceptIds": null,
-    "wordFamilyId": "WF-SE",
-    "derivation": null,
-    "corpusFrequency": null,
-    "dialectVariants": null
-  },
-  {
-    "id": "L-TKHYL",
-    "form": "тхылъ",
-    "ipa": null,
-    "literalMeaning": "kitap",
-    "partOfSpeech": "noun",
-    "conceptId": "BOOK",
-    "conceptIds": null,
-    "wordFamilyId": "WF-TKHYL",
-    "derivation": null,
-    "corpusFrequency": null,
-    "dialectVariants": null
-  },
-  {
-    "id": "L-KHQUXY",
-    "form": "кхъухь",
-    "ipa": null,
-    "literalMeaning": "gemi",
-    "partOfSpeech": "noun",
-    "conceptId": "SHIP",
-    "conceptIds": null,
-    "wordFamilyId": "WF-KHQUXY",
-    "derivation": null,
-    "corpusFrequency": null,
-    "dialectVariants": null
-  },
-  {
-    "id": "L-SHHYE",
-    "form": "щхьэ",
-    "ipa": null,
-    "literalMeaning": "bas",
-    "partOfSpeech": "noun",
-    "conceptId": "HEAD",
-    "conceptIds": null,
-    "wordFamilyId": "WF-SHHYE",
-    "derivation": null,
-    "corpusFrequency": null,
-    "dialectVariants": null
-  },
-  {
-    "id": "L-EDZ",
-    "form": "еджапӀэ",
-    "ipa": "/jadʒaːpʼa/",
-    "literalMeaning": "okul",
-    "partOfSpeech": "noun",
-    "conceptId": "SCHOOL",
-    "conceptIds": null,
-    "wordFamilyId": "WF-EDZ",
-    "derivation": null,
-    "corpusFrequency": 5900,
-    "dialectVariants": null
-  },
-  {
-    "id": "L-C1YK1U",
-    "form": "цӀыкӀу",
-    "ipa": "/tsʼəkʷ/",
-    "literalMeaning": "kucuk",
-    "partOfSpeech": "adjective",
-    "conceptId": "SMALL",
-    "conceptIds": null,
-    "wordFamilyId": "WF-C1YK1U",
-    "derivation": null,
-    "corpusFrequency": 4820,
-    "dialectVariants": null
-  },
-  {
-    "id": "L-XY",
-    "form": "хы",
-    "ipa": "/xə/",
-    "literalMeaning": "alti",
-    "partOfSpeech": "numeral",
-    "conceptId": "SIX",
-    "conceptIds": null,
-    "wordFamilyId": "WF-XY",
-    "derivation": null,
-    "corpusFrequency": 3800,
-    "dialectVariants": null
-  },
-  {
-    "id": "L-DYGHUZH",
-    "form": "дыгъужь",
-    "ipa": null,
-    "literalMeaning": "kurt",
-    "partOfSpeech": "noun",
-    "conceptId": "WOLF",
-    "conceptIds": null,
-    "wordFamilyId": "WF-DYGHU",
-    "derivation": null,
-    "corpusFrequency": null,
-    "dialectVariants": null
-  },
-  {
-    "id": "L-SHKO",
-    "form": "шъо",
-    "ipa": null,
-    "literalMeaning": "deri, cilt",
-    "partOfSpeech": "noun",
-    "conceptId": "SKIN",
-    "conceptIds": null,
-    "wordFamilyId": "WF-SHKO",
-    "derivation": null,
-    "corpusFrequency": null,
-    "dialectVariants": null
   }
 ]
