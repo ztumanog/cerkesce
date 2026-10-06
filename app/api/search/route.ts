@@ -15,6 +15,7 @@ function loadLexemes() {
 
 import { loadDictionaryData } from '@/lib/dictionaryLoader';
 import { normalizePalochka } from '@/domain/utils/normalizePalochka';
+import { buildLexemeIndex, normKey } from '@/lib/lexemeIndex';
 
 export interface DictionaryEntry {
   kelime?: string;
@@ -61,6 +62,7 @@ interface GroupedResult {
   kaynaklar: KaynakInfo[];
   dialect?: string;
   score: number;
+  meaning?: string;                                // ⭐ EKLE
   // D-1A: Dilbilimsel Bilgiler
   rootIds?: string[];
   wordFamilyId?: string | null;
@@ -288,9 +290,7 @@ export async function GET(request: NextRequest) {
 
     // D-1A: Lexeme map
     const lexemes = loadLexemes();
-    const lexemeMap = new Map(
-      lexemes.map((l: any) => [String(l.form || '' ).toLowerCase(), l])
-    );
+   const lexemeIndex = buildLexemeIndex(lexemes);
 
 
     const groupedMap = new Map<string, GroupedResult>();
@@ -345,11 +345,12 @@ export async function GET(request: NextRequest) {
           existing.kaynaklar.push(kaynak);
         }
       } else {
-        const lexeme = lexemeMap.get(key);
+		const lexeme = lexemeIndex.get(normKey(key));
         groupedMap.set(key, {
             kelime: String(rawWord),
             anaKelime: String(rawWord),
             anlamlar: kaynak.anlam ? [kaynak.anlam] : [],
+			 meaning: kaynak.anlam || '',
             kaynaklar: [kaynak],
             dialect: entry.dialect ? String(entry.dialect) : undefined,
             score,
@@ -370,8 +371,7 @@ export async function GET(request: NextRequest) {
     const startIndex = (page - 1) * limit;
     const paginated = grouped.slice(startIndex, startIndex + limit);
 
-    return NextResponse.json({ success: true, results: paginated, data: paginated, total, page, limit });
-  } catch (error: unknown) {
+	return NextResponse.json({ success: true, results: paginated, total, page, limit });  } catch (error: unknown) {
     const errorMessage = error instanceof Error ? error.message : 'Arama hatası';
     console.error('[API /search] Hata:', error);
     return NextResponse.json({ success: false, error: errorMessage }, { status: 500 });
