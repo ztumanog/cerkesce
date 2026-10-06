@@ -355,7 +355,7 @@ export async function GET(request: NextRequest) {
             dialect: entry.dialect ? String(entry.dialect) : undefined,
             score,
             // D-1A: Dilbilimsel Bilgiler
-            rootIds: lexeme?.derivation?.rootIds ?? [],
+            rootIds: lexeme?.rootIds ?? lexeme?.derivation?.rootIds ?? [],
             wordFamilyId: lexeme?.wordFamilyId ?? null,
             conceptId: lexeme?.conceptId ?? null,
             ipa: lexeme?.ipa ?? null,
