@@ -35,7 +35,7 @@ function wrapText(
   return lines;
 }
 
-function cleanHtml(html: string): string {
+export function cleanHtml(html: string): string {
   if (!html) return '';
 
   let text = String(html);

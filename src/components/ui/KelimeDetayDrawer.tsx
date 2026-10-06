@@ -34,7 +34,7 @@ const FEATURED_LANG_ORDER = ['tr', 'ru', 'en', 'ar', 'ady', 'kbd'];
 /* ═══════════════════ YARDIMCILAR ═══════════════════ */
 
 function cleanHtml(html: string): string {
-  if (!html) return '';
+	if (!html) return '';
 
   let text = String(html);
 

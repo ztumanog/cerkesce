@@ -5,6 +5,7 @@ import { X, Share2, Download, Copy, Square, Smartphone } from 'lucide-react';
 import {
   olusturPaylasimGorseli,
   indirBlob,
+  cleanHtml,
   type PaylasimGorseliOptions,
 } from '@/lib/paylasimGorseli';
 import { Share } from '@capacitor/share';
@@ -167,10 +168,10 @@ TR: ${kelime.anlam}${kelime.cerkesce ? `\nEN: ${kelime.cerkesce}` : ''}`;
     const metin = [
       '🎓 Açık Mektep Çerkesçe Sözlük',
       '',
-      `📖 ${kelime.kelime}`,
-      `🇹🇷 ${kelime.anlam}`,
+      `📖 ${cleanHtml(kelime.kelime)}`,
+      `🇹🇷 ${cleanHtml(kelime.anlam)}`,
       kelime.ornekler && kelime.ornekler.length > 0
-        ? `\n💬 Örnekler:\n${kelime.ornekler.map((o) => `  • ${o}`).join('\n')}`
+        ? `\n💬 Örnekler:\n${kelime.ornekler.map((o) => `  • ${cleanHtml(o)}`).join('\n')}`
         : '',
       '',
       '🔗 acikmektep.com',
