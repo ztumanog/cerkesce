@@ -92,6 +92,11 @@ async function abazeSozlugunuYukle(): Promise<RawDictionaryEntry[]> {
   const words = data?.words;
   if (!words || typeof words !== 'object') return [];
 
+  // Çerkesçe karakter kontrolü
+  const isCircassian = (text: string): boolean => {
+    return /[ӏӀ]|[гклптфхцщ]ъ|[кптфхцщ]Ӏ/.test(text);
+  };
+
   return Object.entries(words)
     .map(([id, value]) => {
       const item = value as { spelling?: string; full_definition_in_html?: string };
@@ -102,12 +107,33 @@ async function abazeSozlugunuYukle(): Promise<RawDictionaryEntry[]> {
       const ornekler = parcalar
         .slice(1)
         .map((p) => p.trim().replace(/^[-–—]\s*/, ''))
-        .filter((p) => p.length > 0);
+        .filter((p) => p.length > 0)
+        .filter((p) => p.length < 80)
+        .filter((p) => !/^\d+\./.test(p))
+        .filter((p) => !/^[IVX]+\./.test(p));
+
+      const spelling = item.spelling || id;
+      const spellingCirc = isCircassian(spelling);
+      const definitionCirc = isCircassian(anlam);
+
+      let lemma: string;
+      let translation: string;
+
+      if (spellingCirc && !definitionCirc) {
+        lemma = spelling;
+        translation = anlam;
+      } else if (!spellingCirc && definitionCirc) {
+        lemma = anlam;
+        translation = spelling;
+      } else {
+        lemma = spelling;
+        translation = anlam;
+      }
 
       return {
         id,
-        lemma: item.spelling || id,
-        translation: anlam,
+        lemma,
+        translation,
         ornekler: ornekler.length > 0 ? ornekler : undefined,
         dialect: 'Adigece',
       };
