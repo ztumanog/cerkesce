@@ -5390,8 +5390,7 @@
     "partOfSpeech": "noun",
     "corpusFrequency": 45,
     "rootIds": [
-      "R-MAXWA",
-      "R-WASHKH"
+      "R-MAXWA"
     ],
     "wordFamilyId": "WF-MAXWA",
     "derivation": {
@@ -6483,9 +6482,7 @@
     "corpusFrequencyKbd": 452,
     "partOfSpeech": "noun",
     "corpusFrequency": 0,
-    "rootIds": [
-      "R-QWA"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-QWA",
     "derivation": {
       "rule": "compound",
@@ -7368,9 +7365,7 @@
     "notes": "Dogruluk. C-9.3 yeni lexeme.",
     "partOfSpeech": "noun",
     "corpusFrequency": 392,
-    "rootIds": [
-      "R-QA"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-QA",
     "derivation": {
       "rule": "root",
@@ -7847,9 +7842,7 @@
     "partOfSpeech": "noun",
     "corpusFrequency": 2,
     "ipa": "/хьэзыр/",
-    "rootIds": [
-      "R-LHA"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-LHA",
     "derivation": {
       "rule": "root",
@@ -9023,9 +9016,7 @@
     "notes": "C-11.3: gormek. ADY: лъэгъун, KBD: лъагъун.",
     "partOfSpeech": "verb",
     "corpusFrequency": 31,
-    "rootIds": [
-      "R-LHA"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-LHA",
     "derivation": {
       "rule": "root",
@@ -9097,8 +9088,7 @@
     "corpusFrequency": 41,
     "ipa": "/плъ/",
     "rootIds": [
-      "R-PLHA",
-      "R-LHA"
+      "R-PLHA"
     ],
     "wordFamilyId": "WF-PLHA",
     "derivation": {
@@ -9693,8 +9683,7 @@
     "notes": "C-11.3: gitmek. Korpus: 2921.",
     "corpusFrequency": 374,
     "rootIds": [
-      "R-KWA",
-      "R-WA"
+      "R-KWA"
     ],
     "wordFamilyId": "WF-KWA",
     "derivation": {
@@ -9723,8 +9712,7 @@
     "ipa": "/kʹʷɐ/",
     "corpusFrequency": 185,
     "rootIds": [
-      "R-KWA",
-      "R-WA"
+      "R-KWA"
     ],
     "wordFamilyId": "WF-KWA",
     "derivation": {
@@ -9752,8 +9740,7 @@
     "notes": "C-11.3: giden. Korpus: 1164.",
     "corpusFrequency": 8,
     "rootIds": [
-      "R-KWA",
-      "R-WA"
+      "R-KWA"
     ],
     "wordFamilyId": "WF-KWA",
     "derivation": {
@@ -9981,9 +9968,7 @@
     "partOfSpeech": "noun",
     "corpusFrequency": 35,
     "ipa": "/русский'''  !! '''инджылыбзэ/",
-    "rootIds": [
-      "R-ANA"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-ANA",
     "derivation": {
       "rule": "root",
@@ -10021,9 +10006,7 @@
     "partOfSpeech": "noun",
     "corpusFrequency": 15,
     "ipa": "/жьынду/",
-    "rootIds": [
-      "R-ZHY"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-ZHY",
     "derivation": {
       "rule": "root",
@@ -10133,9 +10116,7 @@
     "conceptId": "FOUR",
     "notes": "C-11.3: dort.",
     "corpusFrequency": 43,
-    "rootIds": [
-      "R-LHY"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-LHY",
     "derivation": {
       "rule": "root",
@@ -10212,9 +10193,7 @@
     "conceptId": "FORTY",
     "notes": "C-11.3: kirk.",
     "corpusFrequency": 30,
-    "rootIds": [
-      "R-LHY"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-LHY",
     "derivation": {
       "rule": "root",
@@ -10240,9 +10219,7 @@
     "conceptId": "SIXTY",
     "notes": "C-11.3: altmis.",
     "corpusFrequency": 16,
-    "rootIds": [
-      "R-KHY"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-KHY",
     "derivation": {
       "rule": "root",
@@ -10605,9 +10582,7 @@
     "notes": "C-11.3: temel kelime. Kabardeyce.",
     "corpusFrequency": 1041,
     "ipa": "/илъэс/",
-    "rootIds": [
-      "R-LHA"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-LHA",
     "derivation": {
       "rule": "root",
@@ -11437,9 +11412,7 @@
     "status": "rare",
     "corpusFrequency": 4,
     "ipa": "/дзаж/",
-    "rootIds": [
-      "R-LHA"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-LHA",
     "derivation": {
       "rule": "root",
@@ -12124,9 +12097,7 @@
     "status": "rare",
     "corpusFrequency": 1,
     "conceptId": "OAK_TREE",
-    "rootIds": [
-      "R-WAS"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-WAS",
     "derivation": {
       "rule": "root",
@@ -12589,9 +12560,7 @@
     "partOfSpeech": "noun",
     "notes": "C-11.3: meyve/sebze. Jonty, Abaze, Teshu.",
     "corpusFrequency": 8,
-    "rootIds": [
-      "R-CHA"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-CHA",
     "derivation": {
       "rule": "root",
@@ -12708,9 +12677,7 @@
     "notes": "C-11.3: kategori tasnifi. [NADIR]",
     "status": "rare",
     "corpusFrequency": 27,
-    "rootIds": [
-      "R-WA"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-KWA",
     "derivation": {
       "rule": "compound",
@@ -13287,7 +13254,6 @@
     "notes": "C-11.3: tek atimlik tufek. шэ (mermi) + закъуэ (tek). Vikisozluk.",
     "corpusFrequency": 1,
     "rootIds": [
-      "R-QWA",
       "R-SHA"
     ],
     "wordFamilyId": "WF-QWA",
@@ -13375,9 +13341,7 @@
     "notes": "C-11.3: IPA kaynakli. [NADIR]",
     "status": "rare",
     "corpusFrequency": 0,
-    "rootIds": [
-      "R-DZA"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-DZA",
     "derivation": {
       "rule": "root",
@@ -13573,9 +13537,7 @@
     "partOfSpeech": "noun",
     "notes": "C-11.3: IPA kaynakli.",
     "corpusFrequency": 0,
-    "rootIds": [
-      "R-DZA"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-DZA",
     "derivation": {
       "rule": "root",
@@ -13828,9 +13790,7 @@
     "notes": "C-11.3: IPA kaynakli. [NADIR]",
     "status": "rare",
     "corpusFrequency": 0,
-    "rootIds": [
-      "R-LHA"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-LHA",
     "derivation": {
       "rule": "root",
@@ -14104,9 +14064,7 @@
     "notes": "C-11.3: IPA kaynakli. [NADIR]",
     "status": "rare",
     "corpusFrequency": 0,
-    "rootIds": [
-      "R-DZA"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-DZA",
     "derivation": {
       "rule": "root",
@@ -15027,9 +14985,7 @@
     "notes": "C-11.4: 5 duyu organi.",
     "corpusFrequency": 94,
     "ipa": "/русский'''  !! '''инджылыбзэ/",
-    "rootIds": [
-      "R-NA"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-NA",
     "derivation": {
       "rule": "root",
@@ -15835,9 +15791,7 @@
     "notes": "",
     "corpusFrequency": 687,
     "conceptId": "FAMILY",
-    "rootIds": [
-      "R-ANA"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-ANA",
     "derivation": {
       "rule": "root",
@@ -16560,9 +16514,7 @@
     "notes": "",
     "corpusFrequency": 0,
     "conceptId": "ANIMAL",
-    "rootIds": [
-      "R-SHA"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-SHA",
     "derivation": {
       "rule": "root",
@@ -16599,9 +16551,7 @@
     "partOfSpeech": "noun",
     "notes": "",
     "corpusFrequency": 1289,
-    "rootIds": [
-      "R-QA"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-QA",
     "derivation": {
       "rule": "root",
@@ -17151,9 +17101,7 @@
     "partOfSpeech": "verb",
     "notes": "",
     "corpusFrequency": 11,
-    "rootIds": [
-      "R-LHA"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-LHA",
     "derivation": {
       "rule": "root",
@@ -17299,9 +17247,7 @@
     "notes": "",
     "corpusFrequency": 0,
     "conceptId": "COLOR",
-    "rootIds": [
-      "R-LHY"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-LHY",
     "derivation": {
       "rule": "root",
@@ -17329,9 +17275,7 @@
     "notes": "",
     "corpusFrequency": 35,
     "conceptId": "MULTICOLOR",
-    "rootIds": [
-      "R-QWA"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-QWA",
     "derivation": {
       "rule": "root",
@@ -18496,8 +18440,7 @@
     "notes": "",
     "corpusFrequency": 76,
     "rootIds": [
-      "R-DYZHYN",
-      "R-ZHY"
+      "R-DYZHYN"
     ],
     "wordFamilyId": "WF-DYZHYN",
     "derivation": {
@@ -18671,9 +18614,7 @@
     "partOfSpeech": "adjective",
     "notes": "",
     "corpusFrequency": 230,
-    "rootIds": [
-      "R-ANA"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-ANA",
     "derivation": {
       "rule": "root",
@@ -18690,9 +18631,7 @@
     "partOfSpeech": "adjective",
     "notes": "",
     "corpusFrequency": 0,
-    "rootIds": [
-      "R-ANA"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-ANA",
     "derivation": {
       "rule": "root",
@@ -18709,9 +18648,7 @@
     "partOfSpeech": "adjective",
     "notes": "",
     "corpusFrequency": 52,
-    "rootIds": [
-      "R-ANA"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-ANA",
     "derivation": {
       "rule": "root",
@@ -18728,9 +18665,7 @@
     "partOfSpeech": "adjective",
     "notes": "",
     "corpusFrequency": 15,
-    "rootIds": [
-      "R-ANA"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-ANA",
     "derivation": {
       "rule": "root",
@@ -19125,9 +19060,7 @@
     "notes": "Yirmilik sistem: 100 ÷ 2",
     "corpusFrequency": 9,
     "conceptId": "BODY",
-    "rootIds": [
-      "R-QWA"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-QWA",
     "derivation": {
       "rule": "root",
@@ -19494,7 +19427,6 @@
     "conceptId": "ANIMAL",
     "rootIds": [
       "R-SHYGHW",
-      "R-WAFA",
       "R-FO"
     ],
     "wordFamilyId": "WF-SHYGHW",
@@ -19562,9 +19494,7 @@
     "partOfSpeech": "adverb",
     "notes": "",
     "corpusFrequency": 0,
-    "rootIds": [
-      "R-SHA"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-SHA",
     "derivation": {
       "rule": "root",
@@ -21301,9 +21231,7 @@
     "notes": "Dogrulandi: sozluk kaynagi",
     "corpusFrequency": 4,
     "ipa": "/дз/",
-    "rootIds": [
-      "R-DZA"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-DZA",
     "derivation": {
       "rule": "root",
@@ -21662,9 +21590,7 @@
     "notes": "Dogrulandi: temel kelime",
     "corpusFrequency": 268,
     "ipa": "/русский'''  !! '''инджылыбзэ/",
-    "rootIds": [
-      "R-QA"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-QA",
     "derivation": {
       "rule": "root",
@@ -21833,8 +21759,7 @@
     "corpusFrequency": 7950,
     "notes": "KBD Corpus rank 53",
     "rootIds": [
-      "R-KHABZA",
-      "R-BZA"
+      "R-KHABZA"
     ],
     "wordFamilyId": "WF-KHABZA",
     "derivation": {
@@ -22149,9 +22074,7 @@
     "ipa": "/ʃardʒas/",
     "corpusFrequency": 450,
     "notes": "KBD Corpus rank 200",
-    "rootIds": [
-      "R-SHA"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-SHA",
     "derivation": {
       "rule": "root",
@@ -22299,9 +22222,7 @@
     "notes": "Felsefi/ontolojik kavram",
     "corpusFrequency": 318,
     "ipa": "/шэч/",
-    "rootIds": [
-      "R-SHA"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-SHA",
     "derivation": {
       "rule": "root",
@@ -23911,9 +23832,7 @@
       "kabardian": ""
     },
     "notes": "Corpus v1.0 (freq: 1023, lang: ady, source: 30.Ady-Rus_ThreeVolumes)",
-    "rootIds": [
-      "R-FA"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-FA",
     "derivation": {
       "rule": "root",
@@ -25794,9 +25713,7 @@
     "notes": "Corpus v1.0 (freq: 267, lang: kbd, source: 1.Ady-Ady_AP)",
     "ipa": "/закъу/",
     "conceptId": "COLOR",
-    "rootIds": [
-      "R-QWA"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-QWA",
     "derivation": {
       "rule": "root",
@@ -26031,9 +25948,7 @@
       "kabardian": ""
     },
     "notes": "Corpus v1.0 (freq: 244, lang: ady, source: 2.Ady-Ara)",
-    "rootIds": [
-      "R-FA"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-FA",
     "derivation": {
       "rule": "root",
@@ -26054,9 +25969,7 @@
     },
     "notes": "Corpus v1.0 (freq: 244, lang: ady, source: 0.Ady-Ady_AIG)",
     "conceptId": "COLOR",
-    "rootIds": [
-      "R-FA"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-FA",
     "derivation": {
       "rule": "root",
@@ -26308,9 +26221,7 @@
     },
     "notes": "Corpus v1.0 (freq: 215, lang: ady, source: 0.Ady-Ady_AIG)",
     "conceptId": "COLOR",
-    "rootIds": [
-      "R-KHY"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-KHY",
     "derivation": {
       "rule": "root",
@@ -26487,9 +26398,7 @@
     "notes": "Corpus v1.0 (freq: 205, lang: kbd, source: 1.Ady-Ady_AP)",
     "ipa": "/пкъ/",
     "conceptId": "ANIMAL",
-    "rootIds": [
-      "R-QA"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-QA",
     "derivation": {
       "rule": "root",
@@ -26535,8 +26444,7 @@
     "notes": "Corpus v1.0 (freq: 204, lang: kbd, source: 0.Ady-Ady_AIG)",
     "ipa": "/плъ/",
     "rootIds": [
-      "R-PLHA",
-      "R-LHA"
+      "R-PLHA"
     ],
     "wordFamilyId": "WF-PLHA",
     "derivation": {
@@ -26779,7 +26687,6 @@
     "ipa": "/русский'''  !! '''инджылыбзэ/",
     "conceptId": "COLOR",
     "rootIds": [
-      "R-BZA",
       "R-QA"
     ],
     "wordFamilyId": "WF-BZA",
@@ -27547,9 +27454,7 @@
     },
     "notes": "Corpus v1.0 (freq: 161, lang: kbd, source: 1.Ady-Ady_AP)",
     "ipa": "/къалэн/",
-    "rootIds": [
-      "R-QA"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-QA",
     "derivation": {
       "rule": "root",
@@ -28276,9 +28181,7 @@
       "kabardian": "закъуэу"
     },
     "notes": "Corpus v1.0 (freq: 133, lang: kbd, source: 13.Kbd-Ar-Jonty)",
-    "rootIds": [
-      "R-QWA"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-QWA",
     "derivation": {
       "rule": "root",
@@ -29175,9 +29078,7 @@
       "kabardian": ""
     },
     "notes": "Corpus v1.0 (freq: 115, lang: ady, source: 0.Ady-Ady_AIG)",
-    "rootIds": [
-      "R-TSY"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-TSY",
     "derivation": {
       "rule": "root",
@@ -29362,7 +29263,6 @@
     "ipa": "/русский'''  !! '''инджылыбзэ/",
     "conceptId": "COLOR",
     "rootIds": [
-      "R-BZA",
       "R-QA"
     ],
     "wordFamilyId": "WF-BZA",
@@ -29540,9 +29440,7 @@
     "notes": "Corpus v1.0 (freq: 106, lang: kbd, source: 0.Ady-Ady_AIG)",
     "ipa": "/русский'''  !! '''инджылыбзэ/",
     "conceptId": "COLOR",
-    "rootIds": [
-      "R-DZA"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-DZA",
     "derivation": {
       "rule": "root",
@@ -30365,7 +30263,6 @@
     "ipa": "/русский'''  !! '''инджылыбзэ/",
     "conceptId": "COLOR",
     "rootIds": [
-      "R-BZA",
       "R-QA"
     ],
     "wordFamilyId": "WF-BZA",
@@ -30619,9 +30516,7 @@
     },
     "notes": "Corpus v1.0 (freq: 90, lang: ady, source: 8.Ady-Tur_Huvaj)",
     "conceptId": "COLOR",
-    "rootIds": [
-      "R-FA"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-FA",
     "derivation": {
       "rule": "root",
@@ -30998,9 +30893,7 @@
     },
     "notes": "Corpus v1.0 (freq: 87, lang: ady, source: 0.Ady-Ady_AIG)",
     "conceptId": "COLOR",
-    "rootIds": [
-      "R-LY"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-LY",
     "derivation": {
       "rule": "root",
@@ -31493,8 +31386,7 @@
     "notes": "Corpus v1.0 (freq: 81, lang: ady, source: 0.Ady-Ady_AIG)",
     "ipa": "/плъ/",
     "rootIds": [
-      "R-PLHA",
-      "R-LHA"
+      "R-PLHA"
     ],
     "wordFamilyId": "WF-PLHA",
     "derivation": {
@@ -32082,9 +31974,7 @@
       "kabardian": ""
     },
     "notes": "Corpus v1.0 (freq: 75, lang: ady, source: 3.Ady-En)",
-    "rootIds": [
-      "R-SHA"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-SHA",
     "derivation": {
       "rule": "root",
@@ -32264,9 +32154,7 @@
     },
     "notes": "Corpus v1.0 (freq: 72, lang: kbd, source: 1.Ady-Ady_AP)",
     "ipa": "/чэнджэщ/",
-    "rootIds": [
-      "R-CHA"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-CHA",
     "derivation": {
       "rule": "root",
@@ -32781,9 +32669,7 @@
     },
     "notes": "Corpus v1.0 (freq: 69, lang: kbd, source: 1.Ady-Ady_AP)",
     "ipa": "/фоч/",
-    "rootIds": [
-      "R-FO"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-FO",
     "derivation": {
       "rule": "root",
@@ -32805,9 +32691,7 @@
     "notes": "Corpus v1.0 (freq: 69, lang: kbd, source: 1.Ady-Ady_AP)",
     "ipa": "/шэч/",
     "conceptId": "ANIMAL",
-    "rootIds": [
-      "R-SHA"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-SHA",
     "derivation": {
       "rule": "root",
@@ -33337,9 +33221,7 @@
     "notes": "Corpus v1.0 (freq: 65, lang: kbd, source: 1.Ady-Ady_AP)",
     "ipa": "/хь/",
     "conceptId": "COLOR",
-    "rootIds": [
-      "R-KHY"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-KHY",
     "derivation": {
       "rule": "root",
@@ -33398,9 +33280,7 @@
     },
     "notes": "Corpus v1.0 (freq: 65, lang: ady, source: 0.Ady-Ady_AIG)",
     "ipa": "/чэтэн/",
-    "rootIds": [
-      "R-CHA"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-CHET",
     "derivation": {
       "rule": "compound",
@@ -33627,9 +33507,7 @@
       "kabardian": ""
     },
     "notes": "Corpus v1.0 (freq: 64, lang: ady, source: 2.Ady-Ara)",
-    "rootIds": [
-      "R-FA"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-FA",
     "derivation": {
       "rule": "root",
@@ -34065,7 +33943,6 @@
     "ipa": "/русский'''  !! '''инджылыбзэ/",
     "conceptId": "COLOR",
     "rootIds": [
-      "R-BZA",
       "R-QA"
     ],
     "wordFamilyId": "WF-BZA",
@@ -34279,9 +34156,7 @@
     "notes": "Corpus v1.0 (freq: 60, lang: kbd, source: 0.Ady-Ady_AIG)",
     "ipa": "/чэф/",
     "conceptId": "COLOR",
-    "rootIds": [
-      "R-CHA"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-CHA",
     "derivation": {
       "rule": "root",
@@ -35248,9 +35123,7 @@
     },
     "notes": "Corpus v1.0 (freq: 53, lang: kbd, source: 1.Ady-Ady_AP)",
     "ipa": "/шэтыр/",
-    "rootIds": [
-      "R-SHA"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-SHA",
     "derivation": {
       "rule": "root",
@@ -37514,9 +37387,7 @@
       "kabardian": ""
     },
     "notes": "Corpus v1.0 (freq: 45, lang: ady, source: 0.Ady-Ady_AIG)",
-    "rootIds": [
-      "R-WAS"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-WAS",
     "derivation": {
       "rule": "root",
@@ -37872,9 +37743,7 @@
     "notes": "Corpus v1.0 (freq: 44, lang: ady, source: 0.Ady-Ady_AIG)",
     "ipa": "/русский'''  !! '''инджылыбзэ/",
     "conceptId": "COLOR",
-    "rootIds": [
-      "R-DZA"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-DZA",
     "derivation": {
       "rule": "root",
@@ -43993,9 +43862,7 @@
     },
     "notes": "Corpus v1.0 (freq: 31, lang: ady, source: 0.Ady-Ady_AIG)",
     "conceptId": "COLOR",
-    "rootIds": [
-      "R-FA"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-FA",
     "derivation": {
       "rule": "root",
@@ -45364,9 +45231,7 @@
       "kabardian": ""
     },
     "notes": "Corpus v1.0 (freq: 29, lang: ady, source: 4.Ady-En_Adam)",
-    "rootIds": [
-      "R-CHA"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-CHA",
     "derivation": {
       "rule": "root",
@@ -45634,9 +45499,7 @@
     },
     "notes": "Corpus v1.0 (freq: 28, lang: kbd, source: 0.Ady-Ady_AIG)",
     "ipa": "/чэтэн/",
-    "rootIds": [
-      "R-CHA"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-CHET",
     "derivation": {
       "rule": "compound",
@@ -46318,9 +46181,7 @@
     },
     "notes": "Corpus v1.0 (freq: 27, lang: kbd, source: 8.Ady-Tur_Huvaj)",
     "conceptId": "COLOR",
-    "rootIds": [
-      "R-FA"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-FA",
     "derivation": {
       "rule": "root",
@@ -46581,8 +46442,7 @@
     "notes": "Corpus v1.0 (freq: 27, lang: kbd, source: 0.Ady-Ady_AIG)",
     "ipa": "/гъу/",
     "rootIds": [
-      "R-PLHA",
-      "R-LHA"
+      "R-PLHA"
     ],
     "wordFamilyId": "WF-PLHA",
     "derivation": {
@@ -46666,9 +46526,7 @@
       "kabardian": "хыхьэ"
     },
     "notes": "Corpus v1.0 (freq: 27, lang: kbd, source: 2.Ady-Ara)",
-    "rootIds": [
-      "R-KHY"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-KHY",
     "derivation": {
       "rule": "root",
@@ -51189,9 +51047,7 @@
       "kabardian": ""
     },
     "notes": "Corpus v1.0 (freq: 23, lang: ady, source: 8.Ady-Tur_Huvaj)",
-    "rootIds": [
-      "R-FA"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-FA",
     "derivation": {
       "rule": "root",
@@ -55688,9 +55544,7 @@
     "notes": "Corpus v1.0 (freq: 20, lang: ady, source: 0.Ady-Ady_AIG)",
     "ipa": "/чэф/",
     "conceptId": "COLOR",
-    "rootIds": [
-      "R-CHA"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-CHA",
     "derivation": {
       "rule": "root",
@@ -58180,8 +58034,7 @@
     "notes": "Corpus v1.0 (freq: 18, lang: kbd, source: 17.Kbd-En_Amjad)",
     "conceptId": "ANIMAL",
     "rootIds": [
-      "R-SHHA",
-      "R-QWA"
+      "R-SHHA"
     ],
     "wordFamilyId": "WF-SHHA",
     "derivation": {
@@ -58856,9 +58709,7 @@
       "kabardian": ""
     },
     "notes": "Corpus v1.0 (freq: 18, lang: ady, source: 2.Ady-Ara)",
-    "rootIds": [
-      "R-FA"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-FA",
     "derivation": {
       "rule": "root",
@@ -58893,9 +58744,7 @@
     },
     "notes": "Corpus v1.0 (freq: 18, lang: ady, source: 0.Ady-Ady_AIG)",
     "conceptId": "COLOR",
-    "rootIds": [
-      "R-FA"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-FA",
     "derivation": {
       "rule": "root",
@@ -60509,9 +60358,7 @@
     },
     "notes": "Corpus v1.0 (freq: 17, lang: kbd, source: 1.Ady-Ady_AP)",
     "ipa": "/чэнджэщ/",
-    "rootIds": [
-      "R-CHA"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-CHA",
     "derivation": {
       "rule": "root",
@@ -61881,9 +61728,7 @@
     "notes": "Corpus v1.0 (freq: 16, lang: kbd, source: 1.Ady-Ady_AP)",
     "ipa": "/фоч/",
     "conceptId": "COLOR",
-    "rootIds": [
-      "R-FO"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-FO",
     "derivation": {
       "rule": "root",
@@ -64277,9 +64122,7 @@
     "notes": "Corpus v1.0 (freq: 15, lang: kbd, source: 1.Ady-Ady_AP)",
     "ipa": "/тэтэр/",
     "conceptId": "COLOR",
-    "rootIds": [
-      "R-TET"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-TET",
     "derivation": {
       "rule": "root",
@@ -67915,9 +67758,7 @@
     "notes": "Corpus v1.0 (freq: 14, lang: kbd, source: 1.Ady-Ady_AP)",
     "ipa": "/хь/",
     "conceptId": "COLOR",
-    "rootIds": [
-      "R-KHY"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-KHY",
     "derivation": {
       "rule": "root",
@@ -69716,9 +69557,7 @@
       "kabardian": ""
     },
     "notes": "Corpus v1.0 (freq: 14, lang: ady, source: 30.Ady-Rus_ThreeVolumes)",
-    "rootIds": [
-      "R-LY"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-LY",
     "derivation": {
       "rule": "root",
@@ -70739,9 +70578,7 @@
     "notes": "Corpus v1.0 (freq: 13, lang: kbd, source: 1.Ady-Ady_AP)",
     "ipa": "/чэф/",
     "conceptId": "ANIMAL",
-    "rootIds": [
-      "R-CHA"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-CHA",
     "derivation": {
       "rule": "root",
@@ -72580,9 +72417,7 @@
       "kabardian": ""
     },
     "notes": "Corpus v1.0 (freq: 13, lang: ady, source: 0.Ady-Ady_AIG)",
-    "rootIds": [
-      "R-FA"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-FA",
     "derivation": {
       "rule": "root",
@@ -73513,9 +73348,7 @@
       "kabardian": ""
     },
     "notes": "Corpus v1.0 (freq: 13, lang: ady, source: 3.Ady-En)",
-    "rootIds": [
-      "R-WAS"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-WAS",
     "derivation": {
       "rule": "root",
@@ -74999,9 +74832,7 @@
     },
     "notes": "Corpus v1.0 (freq: 12, lang: kbd, source: 1.Ady-Ady_AP)",
     "ipa": "/лей/",
-    "rootIds": [
-      "R-MYL"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-MYL",
     "derivation": {
       "rule": "root",
@@ -81667,9 +81498,7 @@
     },
     "notes": "Corpus v1.0 (freq: 11, lang: ady, source: 0.Ady-Ady_AIG)",
     "conceptId": "COLOR",
-    "rootIds": [
-      "R-KHY"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-KHY",
     "derivation": {
       "rule": "root",
@@ -85991,9 +85820,7 @@
     },
     "notes": "Corpus v1.0 (freq: 10, lang: kbd, source: 1.Ady-Ady_AP)",
     "ipa": "/хыв/",
-    "rootIds": [
-      "R-KHY"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-KHY",
     "derivation": {
       "rule": "root",
@@ -87997,9 +87824,7 @@
       "kabardian": ""
     },
     "notes": "Corpus v1.0 (freq: 10, lang: ady, source: 2.Ady-Ara)",
-    "rootIds": [
-      "R-FA"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-FA",
     "derivation": {
       "rule": "root",
@@ -94998,9 +94823,7 @@
     },
     "notes": "Corpus v1.0 (freq: 9, lang: ady, source: 1.Ady-Ady_AP)",
     "conceptId": "ANIMAL",
-    "rootIds": [
-      "R-FA"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-FA",
     "derivation": {
       "rule": "root",
@@ -96362,9 +96185,7 @@
     },
     "notes": "Corpus v1.0 (freq: 8, lang: kbd, source: 1.Ady-Ady_AP)",
     "conceptId": "ANIMAL",
-    "rootIds": [
-      "R-YN"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-YN",
     "derivation": {
       "rule": "root",
@@ -96677,9 +96498,7 @@
     },
     "notes": "Corpus v1.0 (freq: 8, lang: kbd, source: 1.Ady-Ady_AP)",
     "ipa": "/лъагъу/",
-    "rootIds": [
-      "R-MYL"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-MYL",
     "derivation": {
       "rule": "compound",
@@ -98456,9 +98275,7 @@
     },
     "notes": "Corpus v1.0 (freq: 8, lang: kbd, source: 15.Kbd-En-Jonty)",
     "conceptId": "COLOR",
-    "rootIds": [
-      "R-WASHKH"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-WASHKH",
     "derivation": {
       "rule": "root",
@@ -100040,9 +99857,7 @@
     },
     "notes": "Corpus v1.0 (freq: 8, lang: kbd, source: 1.Ady-Ady_AP)",
     "conceptId": "ANIMAL",
-    "rootIds": [
-      "R-YN"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-YN",
     "derivation": {
       "rule": "root",
@@ -100787,8 +100602,7 @@
     "notes": "Corpus v1.0 (freq: 8, lang: kbd, source: 1.Ady-Ady_AP)",
     "ipa": "/[File:е0015ебгъуанэ.ogg/",
     "rootIds": [
-      "R-BGHW",
-      "R-ANA"
+      "R-BGHW"
     ],
     "wordFamilyId": "WF-BGHW",
     "derivation": {
@@ -102279,9 +102093,7 @@
       "kabardian": ""
     },
     "notes": "Corpus v1.0 (freq: 8, lang: ady, source: 2.Ady-Ara)",
-    "rootIds": [
-      "R-FA"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-FA",
     "derivation": {
       "rule": "root",
@@ -103921,9 +103733,7 @@
       "kabardian": ""
     },
     "notes": "Corpus v1.0 batch-2 (freq: 1747, lang: ady, source: none)",
-    "rootIds": [
-      "R-FA"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-FA",
     "derivation": {
       "rule": "root",
@@ -111760,9 +111570,7 @@
       "kabardian": ""
     },
     "notes": "Corpus v1.0 batch-2 (freq: 119, lang: ady, source: none)",
-    "rootIds": [
-      "R-FA"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-FA",
     "derivation": {
       "rule": "root",
@@ -112820,9 +112628,7 @@
       "kabardian": "закъуэщ"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 109, lang: kbd, source: none)",
-    "rootIds": [
-      "R-QWA"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-QWA",
     "derivation": {
       "rule": "root",
@@ -113419,7 +113225,6 @@
     "notes": "Corpus v1.0 batch-2 (freq: 104, lang: kbd, source: none)",
     "rootIds": [
       "R-QWASH",
-      "R-WASHKH",
       "R-QWA",
       "R-SHKHA"
     ],
@@ -116185,9 +115990,7 @@
       "kabardian": "закъуэм"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 86, lang: kbd, source: none)",
-    "rootIds": [
-      "R-QWA"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-QWA",
     "derivation": {
       "rule": "root",
@@ -118083,9 +117886,7 @@
       "kabardian": "закъуэр"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 76, lang: kbd, source: none)",
-    "rootIds": [
-      "R-QWA"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-QWA",
     "derivation": {
       "rule": "root",
@@ -122702,9 +122503,7 @@
       "kabardian": ""
     },
     "notes": "Corpus v1.0 batch-2 (freq: 62, lang: ady, source: none)",
-    "rootIds": [
-      "R-FA"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-FA",
     "derivation": {
       "rule": "root",
@@ -123120,9 +122919,7 @@
       "kabardian": ""
     },
     "notes": "Corpus v1.0 batch-2 (freq: 61, lang: ady, source: none)",
-    "rootIds": [
-      "R-FA"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-FA",
     "derivation": {
       "rule": "root",
@@ -127969,9 +127766,7 @@
       "kabardian": "имызакъуэу"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 51, lang: kbd, source: none)",
-    "rootIds": [
-      "R-QWA"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-QWA",
     "derivation": {
       "rule": "root",
@@ -131880,9 +131675,7 @@
       "kabardian": ""
     },
     "notes": "Corpus v1.0 batch-2 (freq: 46, lang: ady, source: none)",
-    "rootIds": [
-      "R-FA"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-FA",
     "derivation": {
       "rule": "root",
@@ -131950,9 +131743,7 @@
       "kabardian": ""
     },
     "notes": "Corpus v1.0 batch-2 (freq: 46, lang: ady, source: none)",
-    "rootIds": [
-      "R-FA"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-FA",
     "derivation": {
       "rule": "root",
@@ -132499,9 +132290,7 @@
       "kabardian": ""
     },
     "notes": "Corpus v1.0 batch-2 (freq: 45, lang: ady, source: none)",
-    "rootIds": [
-      "R-FA"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-FA",
     "derivation": {
       "rule": "root",
@@ -132945,9 +132734,7 @@
       "kabardian": "закъуэкъым"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 44, lang: kbd, source: none)",
-    "rootIds": [
-      "R-QWA"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-QWA",
     "derivation": {
       "rule": "root",
@@ -136384,9 +136171,7 @@
       "kabardian": "фочыр"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 40, lang: kbd, source: none)",
-    "rootIds": [
-      "R-FO"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-FO",
     "derivation": {
       "rule": "root",
@@ -136464,9 +136249,7 @@
       "kabardian": "закъуэт"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 40, lang: kbd, source: none)",
-    "rootIds": [
-      "R-QWA"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-QWA",
     "derivation": {
       "rule": "root",
@@ -148190,9 +147973,7 @@
       "kabardian": "мызакъуэу"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 31, lang: kbd, source: none)",
-    "rootIds": [
-      "R-QWA"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-QWA",
     "derivation": {
       "rule": "root",
@@ -157884,9 +157665,7 @@
       "kabardian": ""
     },
     "notes": "Corpus v1.0 batch-2 (freq: 27, lang: ady, source: none)",
-    "rootIds": [
-      "R-FA"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-FA",
     "derivation": {
       "rule": "root",
@@ -169739,9 +169518,7 @@
       "kabardian": ""
     },
     "notes": "Corpus v1.0 batch-2 (freq: 23, lang: ady, source: none)",
-    "rootIds": [
-      "R-FA"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-FA",
     "derivation": {
       "rule": "root",
@@ -174380,8 +174157,7 @@
     },
     "notes": "Corpus v1.0 batch-2 (freq: 21, lang: kbd, source: none)",
     "rootIds": [
-      "R-DYZHYN",
-      "R-ZHY"
+      "R-DYZHYN"
     ],
     "wordFamilyId": "WF-DYZHYN",
     "derivation": {
@@ -188704,9 +188480,7 @@
       "kabardian": "закъуэрщ"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 18, lang: kbd, source: none)",
-    "rootIds": [
-      "R-QWA"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-QWA",
     "derivation": {
       "rule": "root",
@@ -193692,9 +193466,7 @@
       "kabardian": "закъуэтэкъым"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 17, lang: kbd, source: none)",
-    "rootIds": [
-      "R-QWA"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-QWA",
     "derivation": {
       "rule": "root",
@@ -197593,9 +197365,7 @@
       "kabardian": ""
     },
     "notes": "Corpus v1.0 batch-2 (freq: 17, lang: ady, source: none)",
-    "rootIds": [
-      "R-FA"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-FA",
     "derivation": {
       "rule": "root",
@@ -204459,9 +204229,7 @@
       "kabardian": ""
     },
     "notes": "Corpus v1.0 batch-2 (freq: 16, lang: ady, source: none)",
-    "rootIds": [
-      "R-FA"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-FA",
     "derivation": {
       "rule": "root",
@@ -210458,9 +210226,7 @@
       "kabardian": ""
     },
     "notes": "Corpus v1.0 batch-2 (freq: 15, lang: ady, source: none)",
-    "rootIds": [
-      "R-FA"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-FA",
     "derivation": {
       "rule": "root",
@@ -211078,9 +210844,7 @@
       "kabardian": ""
     },
     "notes": "Corpus v1.0 batch-2 (freq: 15, lang: ady, source: none)",
-    "rootIds": [
-      "R-FA"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-FA",
     "derivation": {
       "rule": "root",
@@ -212618,9 +212382,7 @@
       "kabardian": ""
     },
     "notes": "Corpus v1.0 batch-2 (freq: 15, lang: ady, source: none)",
-    "rootIds": [
-      "R-FA"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-FA",
     "derivation": {
       "rule": "root",
@@ -212736,9 +212498,7 @@
       "kabardian": ""
     },
     "notes": "Corpus v1.0 batch-2 (freq: 15, lang: ady, source: none)",
-    "rootIds": [
-      "R-TET"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-TET",
     "derivation": {
       "rule": "root",
@@ -220212,9 +219972,7 @@
       "kabardian": ""
     },
     "notes": "Corpus v1.0 batch-2 (freq: 14, lang: ady, source: none)",
-    "rootIds": [
-      "R-FA"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-FA",
     "derivation": {
       "rule": "root",
@@ -220858,9 +220616,7 @@
       "kabardian": ""
     },
     "notes": "Corpus v1.0 batch-2 (freq: 14, lang: ady, source: none)",
-    "rootIds": [
-      "R-FA"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-FA",
     "derivation": {
       "rule": "root",
@@ -220951,8 +220707,7 @@
     },
     "notes": "Corpus v1.0 batch-2 (freq: 14, lang: ady, source: none)",
     "rootIds": [
-      "R-WNA",
-      "R-FA"
+      "R-WNA"
     ],
     "wordFamilyId": "WF-WNA",
     "derivation": {
@@ -229654,9 +229409,7 @@
       "kabardian": ""
     },
     "notes": "Corpus v1.0 batch-2 (freq: 13, lang: ady, source: none)",
-    "rootIds": [
-      "R-FA"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-FA",
     "derivation": {
       "rule": "root",
@@ -230275,9 +230028,7 @@
       "kabardian": ""
     },
     "notes": "Corpus v1.0 batch-2 (freq: 13, lang: ady, source: none)",
-    "rootIds": [
-      "R-FO"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-FO",
     "derivation": {
       "rule": "root",
@@ -230696,9 +230447,7 @@
       "kabardian": ""
     },
     "notes": "Corpus v1.0 batch-2 (freq: 13, lang: ady, source: none)",
-    "rootIds": [
-      "R-FA"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-FA",
     "derivation": {
       "rule": "root",
@@ -231135,9 +230884,7 @@
       "kabardian": ""
     },
     "notes": "Corpus v1.0 batch-2 (freq: 13, lang: ady, source: none)",
-    "rootIds": [
-      "R-FA"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-FA",
     "derivation": {
       "rule": "root",
@@ -231157,9 +230904,7 @@
       "kabardian": ""
     },
     "notes": "Corpus v1.0 batch-2 (freq: 13, lang: ady, source: none)",
-    "rootIds": [
-      "R-FA"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-FA",
     "derivation": {
       "rule": "root",
@@ -236456,9 +236201,7 @@
       "kabardian": "закъуэкӏэ"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 12, lang: kbd, source: none)",
-    "rootIds": [
-      "R-QWA"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-QWA",
     "derivation": {
       "rule": "root",
@@ -251939,9 +251682,7 @@
     "notes": "Verified (freq: 7, 1.Ady-Ady_AP)",
     "ipa": "/фоч/",
     "conceptId": "ANIMAL",
-    "rootIds": [
-      "R-FO"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-FO",
     "derivation": {
       "rule": "root",
@@ -253328,9 +253069,7 @@
       "kabardian": "тэтэрхэм"
     },
     "notes": "Verified (freq: 7, 6.Ady-Rus_Sherdjes)",
-    "rootIds": [
-      "R-TET"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-TET",
     "derivation": {
       "rule": "root",
@@ -262840,9 +262579,7 @@
     "notes": "Verified (freq: 6, 1.Ady-Ady_AP)",
     "ipa": "/фэджыкхъ/",
     "conceptId": "COLOR",
-    "rootIds": [
-      "R-FA"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-FA",
     "derivation": {
       "rule": "root",
@@ -270837,9 +270574,7 @@
     },
     "notes": "Verified (freq: 6, 14.Kbd-En-2-Jonty)",
     "conceptId": "BODY",
-    "rootIds": [
-      "R-QWA"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-QWA",
     "derivation": {
       "rule": "root",
@@ -273456,9 +273191,7 @@
       "kabardian": ""
     },
     "notes": "Verified (freq: 6, 2.Ady-Ara)",
-    "rootIds": [
-      "R-FA"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-FA",
     "derivation": {
       "rule": "root",
@@ -278282,9 +278015,7 @@
     "notes": "Verified (freq: 5, 1.Ady-Ady_AP)",
     "ipa": "/закъу/",
     "conceptId": "ANIMAL",
-    "rootIds": [
-      "R-QWA"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-QWA",
     "derivation": {
       "rule": "root",
@@ -281781,7 +281512,6 @@
     "conceptId": "COLOR",
     "rootIds": [
       "R-SHHA",
-      "R-QWA",
       "R-ZHA"
     ],
     "wordFamilyId": "WF-SHHA",
@@ -285394,7 +285124,6 @@
     "notes": "Verified (freq: 5, 1.Ady-Ady_AP)",
     "ipa": "/закъу/",
     "rootIds": [
-      "R-QWA",
       "R-SHY",
       "R-GU"
     ],
@@ -291668,9 +291397,7 @@
       "kabardian": ""
     },
     "notes": "Verified (freq: 5, 2.Ady-Ara)",
-    "rootIds": [
-      "R-FA"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-FA",
     "derivation": {
       "rule": "root",
@@ -292930,9 +292657,7 @@
       "kabardian": ""
     },
     "notes": "Verified (freq: 5, 7.Ady-Rus_Tharkaho)",
-    "rootIds": [
-      "R-FA"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-FA",
     "derivation": {
       "rule": "root",
@@ -293651,9 +293376,7 @@
       "kabardian": ""
     },
     "notes": "Verified (freq: 5, 30.Ady-Rus_ThreeVolumes)",
-    "rootIds": [
-      "R-FA"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-FA",
     "derivation": {
       "rule": "root",
