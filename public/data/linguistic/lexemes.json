@@ -1462,7 +1462,10 @@
     "corpusFrequencyAdy": 0,
     "corpusFrequencyKbd": 24,
     "partOfSpeech": "noun",
-    "corpusFrequency": 24
+    "corpusFrequency": 24,
+    "rootIds": [
+      "R-PSYKHWA"
+    ]
   },
   {
     "id": "L-PSYEJEH",
@@ -2170,7 +2173,10 @@
     "corpusFrequencyAdy": 7,
     "corpusFrequencyKbd": 1746,
     "partOfSpeech": "noun",
-    "corpusFrequency": 1753
+    "corpusFrequency": 1753,
+    "rootIds": [
+      "R-FA2"
+    ]
   },
   {
     "id": "L-PC1Y",
@@ -2348,7 +2354,10 @@
     "corpusFrequencyAdy": 53,
     "corpusFrequencyKbd": 120,
     "partOfSpeech": "noun",
-    "corpusFrequency": 173
+    "corpusFrequency": 173,
+    "rootIds": [
+      "R-DAGHA"
+    ]
   },
   {
     "id": "L-SH1YDAGHE",
@@ -2433,7 +2442,10 @@
       "morphemeIds": [],
       "rule": "root"
     },
-    "corpusFrequency": 213
+    "corpusFrequency": 213,
+    "rootIds": [
+      "R-SHA"
+    ]
   },
   {
     "id": "L-TKHEK1UME",
@@ -2486,7 +2498,10 @@
     "corpusFrequencyKbd": 69,
     "partOfSpeech": "noun",
     "corpusFrequency": 69,
-    "conceptId": "RABBIT"
+    "conceptId": "RABBIT",
+    "rootIds": [
+      "R-THAKWUMA"
+    ]
   },
   {
     "id": "L-K1YH",
@@ -2534,7 +2549,10 @@
     "corpusFrequencyAdy": 27,
     "corpusFrequencyKbd": 184,
     "partOfSpeech": "noun",
-    "corpusFrequency": 211
+    "corpusFrequency": 211,
+    "rootIds": [
+      "R-KYHY"
+    ]
   },
   {
     "id": "L-TKHEK1UMECH1YH",
@@ -2683,7 +2701,10 @@
     "corpusFrequencyAdy": 156,
     "corpusFrequencyKbd": 418,
     "partOfSpeech": "noun",
-    "corpusFrequency": 574
+    "corpusFrequency": 574,
+    "rootIds": [
+      "R-ZHY2"
+    ]
   },
   {
     "id": "L-DYGHUZHY",
@@ -2769,7 +2790,10 @@
     "corpusFrequencyAdy": 0,
     "corpusFrequencyKbd": 57,
     "partOfSpeech": "noun",
-    "corpusFrequency": 57
+    "corpusFrequency": 57,
+    "rootIds": [
+      "R-VY"
+    ]
   },
   {
     "id": "L-KHY",
@@ -3785,7 +3809,10 @@
     "corpusFrequencyAdy": 110,
     "corpusFrequencyKbd": 193,
     "partOfSpeech": "noun",
-    "corpusFrequency": 303
+    "corpusFrequency": 303,
+    "rootIds": [
+      "R-DZA"
+    ]
   },
   {
     "id": "L-UESEPS",
@@ -4085,7 +4112,10 @@
       "morphemeIds": [],
       "rule": "root"
     },
-    "corpusFrequency": 89
+    "corpusFrequency": 89,
+    "rootIds": [
+      "R-BZU"
+    ]
   },
   {
     "id": "L-BABYSHCH",
@@ -4531,7 +4561,10 @@
     "corpusFrequencyAdy": 0,
     "corpusFrequencyKbd": 510,
     "partOfSpeech": "noun",
-    "corpusFrequency": 510
+    "corpusFrequency": 510,
+    "rootIds": [
+      "R-QWA2"
+    ]
   },
   {
     "id": "L-KUEPSE",
@@ -4643,7 +4676,10 @@
     "corpusFrequencyAdy": 301,
     "corpusFrequencyKbd": 779,
     "partOfSpeech": "noun",
-    "corpusFrequency": 1080
+    "corpusFrequency": 1080,
+    "rootIds": [
+      "R-TSYKW"
+    ]
   },
   {
     "id": "L-BDZE",
@@ -5540,7 +5576,10 @@
     "corpusFrequencyAdy": 0,
     "corpusFrequencyKbd": 250,
     "partOfSpeech": "noun",
-    "corpusFrequency": 250
+    "corpusFrequency": 250,
+    "rootIds": [
+      "R-QWASH"
+    ]
   },
   {
     "id": "L-SHYPHUE",
@@ -5576,7 +5615,10 @@
     "corpusFrequencyAdy": 11,
     "corpusFrequencyKbd": 73,
     "partOfSpeech": "noun",
-    "corpusFrequency": 84
+    "corpusFrequency": 84,
+    "rootIds": [
+      "R-SHYPKHW"
+    ]
   },
   {
     "id": "L-ADEKUESHH",
@@ -7582,7 +7624,10 @@
     "notes": "C-11.2.1: sac. Somatik.",
     "partOfSpeech": "noun",
     "corpusFrequency": 260,
-    "ipa": "/русский'''  !! '''инджылыбзэ/"
+    "ipa": "/русский'''  !! '''инджылыбзэ/",
+    "rootIds": [
+      "R-TSY"
+    ]
   },
   {
     "id": "L-PQY",
@@ -9166,7 +9211,11 @@
       "rule": "auto_prefix"
     },
     "partOfSpeech": "noun",
-    "corpusFrequency": 6
+    "corpusFrequency": 6,
+    "rootIds": [
+      "R-LEZH"
+    ],
+    "ipa": "/laʑ/"
   },
   {
     "id": "L-LEZHEN",
@@ -10150,7 +10199,10 @@
     },
     "notes": "C-11.3: temel kelime. Kabardeyce.",
     "corpusFrequency": 199,
-    "ipa": "/плъ/"
+    "ipa": "/плъ/",
+    "rootIds": [
+      "R-PLHYZH"
+    ]
   },
   {
     "id": "L-KHUZH",
@@ -10165,7 +10217,10 @@
     },
     "notes": "C-11.3: temel kelime. Kabardeyce.",
     "corpusFrequency": 137,
-    "ipa": "/русский'''  !! '''инджылыбзэ/"
+    "ipa": "/русский'''  !! '''инджылыбзэ/",
+    "rootIds": [
+      "R-KHUZH"
+    ]
   },
   {
     "id": "L-F1YC1E",
@@ -10185,7 +10240,11 @@
       ],
       "rule": "auto_prefix"
     },
-    "corpusFrequency": 131
+    "corpusFrequency": 131,
+    "rootIds": [
+      "R-FYTSA"
+    ],
+    "ipa": "/fʼətsʼa/"
   },
   {
     "id": "L-SHHXHUE",
@@ -10200,7 +10259,10 @@
     },
     "notes": "C-11.3: temel kelime. Kabardeyce.",
     "corpusFrequency": 21,
-    "ipa": "/русский'''  !! '''инджылыбзэ/"
+    "ipa": "/русский'''  !! '''инджылыбзэ/",
+    "rootIds": [
+      "R-SCHKHWA"
+    ]
   },
   {
     "id": "L-UDZYFE",
@@ -10230,7 +10292,10 @@
     },
     "notes": "C-11.3: temel kelime. Kabardeyce.",
     "corpusFrequency": 33,
-    "ipa": "/русский'''  !! '''инджылыбзэ/"
+    "ipa": "/русский'''  !! '''инджылыбзэ/",
+    "rootIds": [
+      "R-GHWAZH"
+    ]
   },
   {
     "id": "L-GHUABZHE",
@@ -10637,7 +10702,11 @@
     "partOfSpeech": "noun",
     "wordFamilyId": "WF-PERSON",
     "notes": "C-11.3: cinsiyet/yas. Kabardeyce.",
-    "corpusFrequency": 755
+    "corpusFrequency": 755,
+    "rootIds": [
+      "R-LHY"
+    ],
+    "ipa": "/ɬʼə/"
   },
   {
     "id": "L-SABIY",
@@ -10648,7 +10717,10 @@
     "wordFamilyId": "WF-PERSON",
     "notes": "C-11.3: cinsiyet/yas. Kabardeyce.",
     "corpusFrequency": 339,
-    "ipa": "/русский'''  !! '''инджылыбзэ/"
+    "ipa": "/русский'''  !! '''инджылыбзэ/",
+    "rootIds": [
+      "R-SABIY"
+    ]
   },
   {
     "id": "L-SHCHALE",
@@ -10664,7 +10736,11 @@
       ],
       "rule": "auto_fuzzy"
     },
-    "corpusFrequency": 564
+    "corpusFrequency": 564,
+    "rootIds": [
+      "R-SCHALA"
+    ],
+    "ipa": "/ɕʼaːla/"
   },
   {
     "id": "L-PSHCHASHE",
@@ -10702,7 +10778,10 @@
       "rule": "auto_prefix"
     },
     "corpusFrequency": 829,
-    "ipa": "/русский'''  !! '''инджылыбзэ/"
+    "ipa": "/русский'''  !! '''инджылыбзэ/",
+    "rootIds": [
+      "R-ADA"
+    ]
   },
   {
     "id": "L-ANE",
@@ -10719,7 +10798,10 @@
       "rule": "auto_prefix"
     },
     "corpusFrequency": 199,
-    "ipa": "/русский'''  !! '''инджылыбзэ/"
+    "ipa": "/русский'''  !! '''инджылыбзэ/",
+    "rootIds": [
+      "R-ANA"
+    ]
   },
   {
     "id": "L-DADE",
@@ -11247,7 +11329,10 @@
     "notes": "C-11.3: kategori tasnifi. [NADIR]",
     "status": "rare",
     "corpusFrequency": 159,
-    "ipa": "/русский'''  !! '''инджылыбзэ/"
+    "ipa": "/русский'''  !! '''инджылыбзэ/",
+    "rootIds": [
+      "R-BGY"
+    ]
   },
   {
     "id": "L-TKHY",
@@ -11379,7 +11464,10 @@
       "rule": "root"
     },
     "corpusFrequency": 88,
-    "ipa": "/русский'''  !! '''инджылыбзэ/"
+    "ipa": "/русский'''  !! '''инджылыбзэ/",
+    "rootIds": [
+      "R-ZHAM"
+    ]
   },
   {
     "id": "L-MEL",
@@ -11398,7 +11486,10 @@
       "rule": "root"
     },
     "corpusFrequency": 206,
-    "ipa": "/русский'''  !! '''инджылыбзэ/"
+    "ipa": "/русский'''  !! '''инджылыбзэ/",
+    "rootIds": [
+      "R-MEL"
+    ]
   },
   {
     "id": "L-SHYD",
@@ -11449,7 +11540,10 @@
     "status": "rare",
     "corpusFrequency": 72,
     "conceptId": "DEER",
-    "ipa": "/русский'''  !! '''инджылыбзэ/"
+    "ipa": "/русский'''  !! '''инджылыбзэ/",
+    "rootIds": [
+      "R-BZHA"
+    ]
   },
   {
     "id": "L-KHQUEBAN",
@@ -12186,7 +12280,10 @@
     "partOfSpeech": "noun",
     "ipa": "/waːfa/",
     "corpusFrequency": 330,
-    "notes": "KBD Corpus rank 225"
+    "notes": "KBD Corpus rank 225",
+    "rootIds": [
+      "R-WAFA"
+    ]
   },
   {
     "id": "L-WAFEGHUAGHUE",
@@ -12235,7 +12332,10 @@
     "partOfSpeech": "noun",
     "ipa": "/waʃx/",
     "corpusFrequency": 320,
-    "notes": "KBD Corpus rank 227"
+    "notes": "KBD Corpus rank 227",
+    "rootIds": [
+      "R-WASHKH"
+    ]
   },
   {
     "id": "L-UE",
@@ -12699,7 +12799,11 @@
     "wordFamilyId": "WF-BASIC",
     "notes": "C-11.3: IPA kaynakli. [NADIR]",
     "status": "rare",
-    "corpusFrequency": 5
+    "corpusFrequency": 5,
+    "rootIds": [
+      "R-WA"
+    ],
+    "ipa": "/ʔʷa/"
   },
   {
     "id": "L-1UEPE",
@@ -13193,7 +13297,10 @@
     "wordFamilyId": "WF-Nature",
     "notes": "C-11.3: IPA kaynakli.",
     "corpusFrequency": 232,
-    "ipa": "/русский'''  !! '''инджылыбзэ/"
+    "ipa": "/русский'''  !! '''инджылыбзэ/",
+    "rootIds": [
+      "R-MYVA"
+    ]
   },
   {
     "id": "L-NA",
@@ -13971,7 +14078,11 @@
     "partOfSpeech": "noun",
     "wordFamilyId": "WF-People",
     "notes": "C-11.3: IPA kaynakli.",
-    "corpusFrequency": 2996
+    "corpusFrequency": 2996,
+    "rootIds": [
+      "R-TSYKHU"
+    ],
+    "ipa": "/tsʼəxʷ/"
   },
   {
     "id": "L-C1YXUGHE",
@@ -14764,7 +14875,10 @@
     "partOfSpeech": "noun",
     "notes": "Dogrulandi: temel kelime",
     "corpusFrequency": 1724,
-    "ipa": "/русский'''  !! '''инджылыбзэ/"
+    "ipa": "/русский'''  !! '''инджылыбзэ/",
+    "rootIds": [
+      "R-DA"
+    ]
   },
   {
     "id": "L-D189D38FD18B",
@@ -15180,7 +15294,7 @@
   {
     "id": "L-D184D380D18B",
     "form": "фӀы",
-    "ipa": "",
+    "ipa": "/fʼə/",
     "literalMeaning": "iyi",
     "partOfSpeech": "adjective",
     "derivation": {
@@ -15190,7 +15304,10 @@
     },
     "wordFamilyId": "WF-L-D184D380D18B",
     "notes": "",
-    "corpusFrequency": 516
+    "corpusFrequency": 516,
+    "rootIds": [
+      "R-FY"
+    ]
   },
   {
     "id": "L-D0B1D18BD0B4",
@@ -15261,7 +15378,10 @@
     "partOfSpeech": "adjective",
     "ipa": "/jən/",
     "corpusFrequency": 4900,
-    "notes": "KBD Corpus rank 79"
+    "notes": "KBD Corpus rank 79",
+    "rootIds": [
+      "R-YN"
+    ]
   },
   {
     "id": "L-D0B8D0BAD18A",
@@ -15897,7 +16017,10 @@
     },
     "wordFamilyId": "WF-L-D188D18DD0BD",
     "notes": "",
-    "corpusFrequency": 30
+    "corpusFrequency": 30,
+    "rootIds": [
+      "R-SHENT"
+    ]
   },
   {
     "id": "L-D0BAD18AD0B0",
@@ -15965,7 +16088,7 @@
   {
     "id": "L-D380D0B5D0B9",
     "form": "Ӏей",
-    "ipa": "",
+    "ipa": "/ʔej/",
     "literalMeaning": "kötü",
     "partOfSpeech": "adjective",
     "derivation": {
@@ -15975,7 +16098,10 @@
     },
     "wordFamilyId": "WF-L-D380D0B5D0B9",
     "notes": "",
-    "corpusFrequency": 269
+    "corpusFrequency": 269,
+    "rootIds": [
+      "R-EI"
+    ]
   },
   {
     "id": "L-D0BAD380D18B",
@@ -17358,7 +17484,10 @@
       "morphemeIds": [],
       "rule": "root"
     },
-    "corpusFrequency": 51
+    "corpusFrequency": 51,
+    "rootIds": [
+      "R-BZHEN"
+    ]
   },
   {
     "id": "L-D0B4D0B6D18D",
@@ -17376,7 +17505,10 @@
       "morphemeIds": [],
       "rule": "root"
     },
-    "corpusFrequency": 70
+    "corpusFrequency": 70,
+    "rootIds": [
+      "R-DJADU"
+    ]
   },
   {
     "id": "L-D0B1D0B7D183",
@@ -17811,12 +17943,15 @@
     },
     "wordFamilyId": "WF-L-D0B4D18BD0B6",
     "notes": "",
-    "corpusFrequency": 76
+    "corpusFrequency": 76,
+    "rootIds": [
+      "R-DYZHYN"
+    ]
   },
   {
     "id": "L-D0B3D18AD183",
     "form": "гъущӀ",
-    "ipa": "",
+    "ipa": "/ʁʷəɕʼ/",
     "literalMeaning": "demir",
     "partOfSpeech": "noun",
     "derivation": {
@@ -17826,7 +17961,10 @@
     },
     "wordFamilyId": "WF-L-D0B3D18AD183",
     "notes": "",
-    "corpusFrequency": 192
+    "corpusFrequency": 192,
+    "rootIds": [
+      "R-GHWSCH"
+    ]
   },
   {
     "id": "L-D0B3D18AD183",
@@ -21044,7 +21182,10 @@
     "partOfSpeech": "noun",
     "notes": "Dogrulandi: temel kelime",
     "corpusFrequency": 108,
-    "ipa": "/русский'''  !! '''инджылыбзэ/"
+    "ipa": "/русский'''  !! '''инджылыбзэ/",
+    "rootIds": [
+      "R-DYGHA"
+    ]
   },
   {
     "id": "L-KHHE",
@@ -21067,7 +21208,11 @@
     "conceptId": "BREAD",
     "wordFamilyId": "WF-SH1AKHQUE",
     "partOfSpeech": "noun",
-    "notes": "Dogrulandi: temel kelime"
+    "notes": "Dogrulandi: temel kelime",
+    "rootIds": [
+      "R-SCHAKHWA"
+    ],
+    "ipa": "/ɕʼaːqχʷa/"
   },
   {
     "id": "L-1ENE",
@@ -21076,7 +21221,11 @@
     "conceptId": "TABLE",
     "wordFamilyId": "WF-1ENE",
     "partOfSpeech": "noun",
-    "notes": "Dogrulandi: temel kelime"
+    "notes": "Dogrulandi: temel kelime",
+    "rootIds": [
+      "R-ANA2"
+    ],
+    "ipa": "/ʔana/"
   },
   {
     "id": "L-TX",
@@ -21123,7 +21272,10 @@
     "partOfSpeech": "noun",
     "ipa": "/xaːbza/",
     "corpusFrequency": 7950,
-    "notes": "KBD Corpus rank 53"
+    "notes": "KBD Corpus rank 53",
+    "rootIds": [
+      "R-KHABZA"
+    ]
   },
   {
     "id": "L-LHEPQU",
@@ -21244,7 +21396,10 @@
     "partOfSpeech": "adjective",
     "ipa": "/tʃʼaɕʼ/",
     "corpusFrequency": 4400,
-    "notes": "KBD Corpus rank 84"
+    "notes": "KBD Corpus rank 84",
+    "rootIds": [
+      "R-KESCH"
+    ]
   },
   {
     "id": "L-ZEKHEKH1YN",
@@ -21402,7 +21557,10 @@
     "partOfSpeech": "noun",
     "ipa": "/vaːʁʷa/",
     "corpusFrequency": 335,
-    "notes": "KBD Corpus rank 224"
+    "notes": "KBD Corpus rank 224",
+    "rootIds": [
+      "R-VAGHWA"
+    ]
   },
   {
     "id": "L-SH1YLHE",
@@ -21967,7 +22125,7 @@
   {
     "id": "L-WAFE",
     "form": "уафэ",
-    "ipa": null,
+    "ipa": "/waːfa/",
     "literalMeaning": "gokyuzu",
     "partOfSpeech": "noun",
     "conceptId": null,
@@ -21975,7 +22133,10 @@
     "wordFamilyId": "WF-Nature",
     "derivation": null,
     "corpusFrequency": 144,
-    "dialectVariants": null
+    "dialectVariants": null,
+    "rootIds": [
+      "R-WAFA"
+    ]
   },
   {
     "id": "L-WASHX",
@@ -21988,7 +22149,10 @@
     "wordFamilyId": "WF-Nature",
     "derivation": null,
     "corpusFrequency": 169,
-    "dialectVariants": null
+    "dialectVariants": null,
+    "rootIds": [
+      "R-WASHKH"
+    ]
   },
   {
     "id": "L-WA",
@@ -22226,7 +22390,10 @@
     "wordFamilyId": "WF-SHE2",
     "derivation": null,
     "corpusFrequency": 213,
-    "dialectVariants": null
+    "dialectVariants": null,
+    "rootIds": [
+      "R-SHA"
+    ]
   },
   {
     "id": "L-KHY2",
@@ -22416,7 +22583,7 @@
   {
     "id": "L-SH1ALE",
     "form": "щӀалэ",
-    "ipa": null,
+    "ipa": "/ɕʼaːla/",
     "literalMeaning": "genc",
     "partOfSpeech": "noun",
     "conceptId": "YOUTH",
@@ -22424,7 +22591,10 @@
     "wordFamilyId": "WF-SH1ALE",
     "derivation": null,
     "corpusFrequency": null,
-    "dialectVariants": null
+    "dialectVariants": null,
+    "rootIds": [
+      "R-SCHALA"
+    ]
   },
   {
     "id": "L-QUE",
@@ -22437,7 +22607,10 @@
     "wordFamilyId": "WF-QUE",
     "derivation": null,
     "corpusFrequency": 510,
-    "dialectVariants": null
+    "dialectVariants": null,
+    "rootIds": [
+      "R-QWA2"
+    ]
   },
   {
     "id": "L-DELKHU",
@@ -22463,7 +22636,10 @@
     "wordFamilyId": "WF-SHYPKHU",
     "derivation": null,
     "corpusFrequency": 73,
-    "dialectVariants": null
+    "dialectVariants": null,
+    "rootIds": [
+      "R-SHYPKHW"
+    ]
   },
   {
     "id": "L-QUAZHE",
@@ -22570,7 +22746,10 @@
     "wordFamilyId": "WF-C1YK1U",
     "derivation": null,
     "corpusFrequency": 4820,
-    "dialectVariants": null
+    "dialectVariants": null,
+    "rootIds": [
+      "R-TSYKW"
+    ]
   },
   {
     "id": "L-XY",
@@ -25994,7 +26173,11 @@
       "kabardian": "бдзэжьей"
     },
     "notes": "Corpus v1.0 (freq: 152, lang: kbd, source: 1.Ady-Ady_AP)",
-    "ipa": "/русский'''  !! '''инджылыбзэ/"
+    "ipa": "/русский'''  !! '''инджылыбзэ/",
+    "rootIds": [
+      "R-BDZAZHEI"
+    ],
+    "wordFamilyId": "WF-BDZAZHEI"
   },
   {
     "id": "L-CORPUS-00272",
@@ -26963,7 +27146,11 @@
       "kabardian": "вакъэ"
     },
     "notes": "Corpus v1.0 (freq: 117, lang: kbd, source: 1.Ady-Ady_AP)",
-    "ipa": "/русский'''  !! '''инджылыбзэ/"
+    "ipa": "/русский'''  !! '''инджылыбзэ/",
+    "rootIds": [
+      "R-VAQA"
+    ],
+    "wordFamilyId": "WF-VAQA"
   },
   {
     "id": "L-CORPUS-00350",
@@ -29906,7 +30093,11 @@
       "kabardian": "джанэ"
     },
     "notes": "Corpus v1.0 (freq: 69, lang: kbd, source: 1.Ady-Ady_AP)",
-    "ipa": "/джан/"
+    "ipa": "/джан/",
+    "rootIds": [
+      "R-DJANA"
+    ],
+    "wordFamilyId": "WF-DJANA"
   },
   {
     "id": "L-CORPUS-00585",
@@ -35915,7 +36106,11 @@
       "kabardian": "бажэ"
     },
     "notes": "Corpus v1.0 (freq: 37, lang: kbd, source: 1.Ady-Ady_AP)",
-    "ipa": "/русский'''  !! '''инджылыбзэ/"
+    "ipa": "/русский'''  !! '''инджылыбзэ/",
+    "rootIds": [
+      "R-BAZHA"
+    ],
+    "wordFamilyId": "WF-BAZHA"
   },
   {
     "id": "L-CORPUS-01062",
@@ -37347,7 +37542,11 @@
       "kabardian": "санэ"
     },
     "notes": "Corpus v1.0 (freq: 34, lang: kbd, source: 0.Ady-Ady_AIG)",
-    "ipa": "/русский'''  !! '''инджылыбзэ/"
+    "ipa": "/русский'''  !! '''инджылыбзэ/",
+    "rootIds": [
+      "R-SANA"
+    ],
+    "wordFamilyId": "WF-SANA"
   },
   {
     "id": "L-CORPUS-01175",
@@ -38921,7 +39120,12 @@
       "adyghe": "ос",
       "kabardian": ""
     },
-    "notes": "Corpus v1.0 (freq: 31, lang: ady, source: 4.Ady-En_Adam)"
+    "notes": "Corpus v1.0 (freq: 31, lang: ady, source: 4.Ady-En_Adam)",
+    "rootIds": [
+      "R-WAS"
+    ],
+    "wordFamilyId": "WF-WAS",
+    "ipa": "/was/"
   },
   {
     "id": "L-CORPUS-01301",
@@ -52221,7 +52425,11 @@
       "kabardian": ""
     },
     "notes": "Corpus v1.0 (freq: 17, lang: ady, source: 0.Ady-Ady_AIG)",
-    "ipa": "/русский'''  !! '''инджылыбзэ/"
+    "ipa": "/русский'''  !! '''инджылыбзэ/",
+    "rootIds": [
+      "R-SANA"
+    ],
+    "wordFamilyId": "WF-SANA"
   },
   {
     "id": "L-CORPUS-02357",
@@ -61341,7 +61549,11 @@
       "kabardian": ""
     },
     "notes": "Corpus v1.0 (freq: 13, lang: ady, source: 1.Ady-Ady_AP)",
-    "ipa": "/шх/"
+    "ipa": "/шх/",
+    "rootIds": [
+      "R-SHKHA"
+    ],
+    "wordFamilyId": "WF-SHKHA"
   },
   {
     "id": "L-CORPUS-03080",
@@ -70505,7 +70717,11 @@
       "kabardian": "шхэ"
     },
     "notes": "Corpus v1.0 (freq: 10, lang: kbd, source: 1.Ady-Ady_AP)",
-    "ipa": "/шх/"
+    "ipa": "/шх/",
+    "rootIds": [
+      "R-SHKHA"
+    ],
+    "wordFamilyId": "WF-SHKHA"
   },
   {
     "id": "L-CORPUS-03810",
@@ -223264,7 +223480,12 @@
       "adyghe": "чэ",
       "kabardian": ""
     },
-    "notes": "Verified (freq: 6, 1.Ady-Ady_AP)"
+    "notes": "Verified (freq: 6, 1.Ady-Ady_AP)",
+    "rootIds": [
+      "R-CHA"
+    ],
+    "wordFamilyId": "WF-CHA",
+    "ipa": "/tʃa/"
   },
   {
     "id": "L-VERIFIED-01321",
@@ -228396,7 +228617,11 @@
       "kabardian": "бзы"
     },
     "notes": "Verified (freq: 5, 0.Ady-Ady_AIG)",
-    "ipa": "/[File:б671бзы.ogg/"
+    "ipa": "/[File:б671бзы.ogg/",
+    "rootIds": [
+      "R-BZY"
+    ],
+    "wordFamilyId": "WF-BZY"
   },
   {
     "id": "L-VERIFIED-01737",
