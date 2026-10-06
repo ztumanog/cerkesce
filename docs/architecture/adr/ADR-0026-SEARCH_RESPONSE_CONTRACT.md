@@ -2,7 +2,7 @@
 
 | | |
 |---|---|
-| **Durum** | ✅ ACCEPTED |
+| **Durum** | ✅ ACCEPTED · IMPLEMENTED · VERIFIED |
 | **Tarih** | 2026-10-06 |
 | **Faz** | 4 — Dictionary Core |
 | **Dayanak** | `ADR-0015-TRANSLATIONENTRY_CANONICAL_IDENTITY.md` |
@@ -264,7 +264,7 @@ markdown
 
 | | |
 |---|---|
-| **Durum** | ✅ ACCEPTED |
+| **Durum** | ✅ ACCEPTED · IMPLEMENTED · VERIFIED |
 | **Tarih** | 2026-10-06 |
 | **Faz** | 4 — Dictionary Core |
 | **Dayanak** | `ADR-0015-TRANSLATIONENTRY_CANONICAL_IDENTITY.md` |
