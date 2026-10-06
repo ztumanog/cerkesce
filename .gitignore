@@ -164,3 +164,7 @@ data/analysis/
 data/analysis/
 
 data/analysis/
+
+# Büyük dump dosyaları
+data/corpus/*.xml
+data/corpus/wiktionary-dumps/
