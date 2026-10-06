@@ -61,10 +61,13 @@ export class RootExtractor {
         ? { lexemeId: 'UNKNOWN', form: input }
         : input;
 
-    // 1. Dictionary-based: lexeme.derivation.rootIds
+    // 1. Dictionary-based: lexeme.rootIds veya lexeme.derivation.rootIds
     const lexeme = this.lexemes.get(inp.lexemeId);
-    if (lexeme?.derivation?.rootIds?.length) {
-      const rootId = lexeme.derivation.rootIds[0];
+    const rootIds = (lexeme as any)?.rootIds?.length
+      ? (lexeme as any).rootIds
+      : lexeme?.derivation?.rootIds;
+    if (rootIds?.length) {
+      const rootId = rootIds[0];
       const root = this.roots.get(rootId);
       const rootForm = root?.form ?? null;
       return {
