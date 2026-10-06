@@ -8,6 +8,33 @@ import { Capacitor } from '@capacitor/core';
 import { Filesystem, Directory } from '@capacitor/filesystem';
 import QRCode from 'qrcode';
 
+
+/* ═══════════════════ HTML TEMİZLEME ═══════════════════ */
+function cleanHtml(html: string): string {
+  if (!html) return '';
+
+  let text = String(html);
+
+  // 1. ÖNCE encoded HTML entity'lerini sil (&lt;...&gt;)
+  text = text.replace(/&lt;.*?&gt;/gi, ' ');
+
+  // 2. Sonra normal HTML tag'lerini sil
+  text = text.replace(/<[^>]+>/g, ' ');
+
+  // 3. Entity'leri çöz
+  text = text
+    .replace(/&nbsp;/gi, ' ')
+    .replace(/&amp;/gi, '&')
+    .replace(/&lt;/gi, '<')
+    .replace(/&gt;/gi, '>')
+    .replace(/&quot;/gi, '"')
+    .replace(/&#39;/gi, "'");
+
+  // 4. Fazla boşlukları temizle
+  text = text.replace(/\s+/g, ' ').trim();
+
+  return text;
+}
 export interface PaylasimGorseliOptions {
   cerkesce?: string;
   kaynaklar?: string[];
@@ -132,12 +159,12 @@ export async function olusturPaylasimGorseli(
   ctx.font = 'bold 96px Georgia, "Times New Roman", serif';
   ctx.textAlign = 'center';
   ctx.textBaseline = 'middle';
-  ctx.fillText(options.kelime, boyut.width / 2, boyut.height * 0.36);
+  ctx.fillText(cleanHtml(options.kelime), boyut.width / 2, boyut.height * 0.36);
 
   // ═══ ANLAM ═══
   ctx.fillStyle = 'rgba(255, 255, 255, 0.85)';
   ctx.font = '36px Georgia, "Times New Roman", serif';
-  ctx.fillText(options.anlam, boyut.width / 2, boyut.height * 0.46);
+  ctx.fillText(cleanHtml(options.anlam), boyut.width / 2, boyut.height * 0.46);
 
   // ═══ LEHÇE BADGE ═══
   if (options.lehce) {
@@ -188,7 +215,7 @@ export async function olusturPaylasimGorseli(
 
       ctx.fillStyle = 'rgba(255, 255, 255, 0.85)';
       ctx.textAlign = 'left';
-      ctx.fillText(truncated, boyut.width * 0.18, y);
+      ctx.fillText(cleanHtml(truncated), boyut.width * 0.18, y);
     }
   }
 
@@ -277,4 +304,5 @@ function blobToBase64(blob: Blob): Promise<string> {
     reader.readAsDataURL(blob);
   });
 }
+
 
