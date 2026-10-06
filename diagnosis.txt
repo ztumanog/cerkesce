@@ -1,5 +1,0 @@
-Gözlem: [Kavram] neden boş?
-  ↓ (3 gün araştırma)
-Kök neden: lexemeMap.set(l.form, l) ← 1 satır
-  ↓ (çift yönlü indeks çözümü)
-Sonuç: Search ve Lexeme aynı dili konuşuyor
