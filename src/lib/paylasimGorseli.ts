@@ -40,26 +40,30 @@ function cleanHtml(html: string): string {
 
   let text = String(html);
 
-  // 1. ÖNCE encoded HTML entity'lerini sil (&lt;...&gt;)
-  text = text.replace(/&lt;.*?&gt;/gi, ' ');
+  // İKİ GEÇİŞ: çift encoded HTML için
+  for (let i = 0; i < 2; i++) {
+    // 1. ÖNCE encoded HTML entity'lerini sil (&lt;...&gt;)
+    text = text.replace(/&lt;.*?&gt;/gi, ' ');
 
-  // 2. Sonra normal HTML tag'lerini sil
-  text = text.replace(/<[^>]+>/g, ' ');
+    // 2. Sonra normal HTML tag'lerini sil
+    text = text.replace(/<[^>]+>/g, ' ');
 
-  // 3. Entity'leri çöz
-  text = text
-    .replace(/&nbsp;/gi, ' ')
-    .replace(/&amp;/gi, '&')
-    .replace(/&lt;/gi, '<')
-    .replace(/&gt;/gi, '>')
-    .replace(/&quot;/gi, '"')
-    .replace(/&#39;/gi, "'");
+    // 3. Entity'leri çöz
+    text = text
+      .replace(/&nbsp;/gi, ' ')
+      .replace(/&amp;/gi, '&')
+      .replace(/&lt;/gi, '<')
+      .replace(/&gt;/gi, '>')
+      .replace(/&quot;/gi, '"')
+      .replace(/&#39;/gi, "'");
+  }
 
   // 4. Fazla boşlukları temizle
   text = text.replace(/\s+/g, ' ').trim();
 
   return text;
 }
+  
 export interface PaylasimGorseliOptions {
   cerkesce?: string;
   kaynaklar?: string[];
