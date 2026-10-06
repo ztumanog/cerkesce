@@ -4,6 +4,21 @@ import React from 'react';
 import { ChevronRight, Star } from 'lucide-react';
 import { KaynakItem } from "@/types/dictionary";
 
+/* ADR-0026 · Aşama 2 — POS Türkçe karşılıkları */
+const POS_TR: Record<string, string> = {
+  noun: 'isim',
+  verb: 'fiil',
+  adjective: 'sıfat',
+  numeral: 'sayı',
+  adverb: 'zarf',
+  pronoun: 'zamir',
+  conjunction: 'bağlaç',
+  possessive_prefix: 'iyelik öneki',
+};
+
+const posTR = (p?: string | null): string | null =>
+  p ? (POS_TR[p] ?? p) : null;
+
 export interface KelimeItem {
   id: string;
   kelime: string;
@@ -143,6 +158,11 @@ export const KelimeKarti: React.FC<KelimeKartiProps> = ({
         <div className="flex items-center gap-2">
           <h3 className="text-base sm:text-lg font-bold text-amber-600 dark:text-orange-500 group-hover:text-amber-700 dark:group-hover:text-orange-400 transition-colors truncate">
             {data.kelime}
+     {data.ipa && (
+  <div className="mt-0.5 font-mono text-sm text-slate-500 dark:text-slate-400">
+    /{data.ipa}/
+  </div>
+)}       
           </h3>
           {data.dialect || data.lehce && (
             <span className={`text-[10px] uppercase font-semibold px-2 py-0.5 rounded-md border shrink-0 ${getLehceBadgeClass(data.dialect || data.lehce)}`}>
