@@ -12224,7 +12224,8 @@
     "notes": "C-11.3: kategori tasnifi. [NADIR]",
     "status": "rare",
     "corpusFrequency": 8,
-    "ipa": "/дыгъ/"
+    "ipa": "/дыгъ/",
+    "conceptId": "SUNFLOWER"
   },
   {
     "id": "L-GUASHENABDZE",
@@ -15143,7 +15144,8 @@
     },
     "wordFamilyId": "WF-L-D0B3D183D0B1",
     "notes": "",
-    "corpusFrequency": 54
+    "corpusFrequency": 54,
+    "conceptId": "ANGER"
   },
   {
     "id": "L-D0B3D183D0B8",
@@ -15160,7 +15162,8 @@
     },
     "wordFamilyId": "WF-L-D0B3D183D0B8",
     "notes": "",
-    "corpusFrequency": 1
+    "corpusFrequency": 1,
+    "conceptId": "FEAR"
   },
   {
     "id": "L-D0BDD0B0D0BF",
@@ -18236,7 +18239,8 @@
     },
     "wordFamilyId": "WF-L-D0BDD0B0D0BC",
     "notes": "",
-    "corpusFrequency": 2
+    "corpusFrequency": 2,
+    "conceptId": "HONOR"
   },
   {
     "id": "L-D0B0D0B4D18B",
@@ -19958,7 +19962,8 @@
       "adyghe": "уцы",
       "kabardian": "удз"
     },
-    "corpusFrequency": 237
+    "corpusFrequency": 237,
+    "conceptId": "GRASS"
   },
   {
     "id": "L-D183D186D18B",
@@ -26641,7 +26646,8 @@
       "adyghe": "",
       "kabardian": "хуитыныгъэ"
     },
-    "notes": "Corpus v1.0 (freq: 133, lang: kbd, source: 1.Ady-Ady_AP)"
+    "notes": "Corpus v1.0 (freq: 133, lang: kbd, source: 1.Ady-Ady_AP)",
+    "conceptId": "FREEDOM"
   },
   {
     "id": "L-CORPUS-00307",
@@ -29281,7 +29287,8 @@
       "kabardian": "тхьэмпэ"
     },
     "notes": "Corpus v1.0 (freq: 79, lang: kbd, source: 1.Ady-Ady_AP)",
-    "ipa": "/русский'''  !! '''инджылыбзэ/"
+    "ipa": "/русский'''  !! '''инджылыбзэ/",
+    "conceptId": "LEAF"
   },
   {
     "id": "L-CORPUS-00518",
@@ -31122,7 +31129,8 @@
       "kabardian": "ажал"
     },
     "notes": "Corpus v1.0 (freq: 62, lang: kbd, source: 1.Ady-Ady_AP)",
-    "ipa": "/[File:а108ажал.ogg/"
+    "ipa": "/[File:а108ажал.ogg/",
+    "conceptId": "DEATH"
   },
   {
     "id": "L-CORPUS-00664",
@@ -31756,7 +31764,8 @@
       "kabardian": "гъэгъа"
     },
     "notes": "Corpus v1.0 (freq: 57, lang: kbd, source: 16.Kbd-En-Ziwar)",
-    "ipa": "/гъэгъ/"
+    "ipa": "/гъэгъ/",
+    "conceptId": "FLOWER"
   },
   {
     "id": "L-CORPUS-00714",
@@ -31980,7 +31989,8 @@
       "kabardian": "мамырыгъэ"
     },
     "notes": "Corpus v1.0 (freq: 55, lang: kbd, source: 1.Ady-Ady_AP)",
-    "ipa": "/мамыр/"
+    "ipa": "/мамыр/",
+    "conceptId": "PEACE"
   },
   {
     "id": "L-CORPUS-00732",
@@ -40516,7 +40526,8 @@
       "kabardian": "ныбжьэгъугъэ"
     },
     "notes": "Corpus v1.0 (freq: 28, lang: kbd, source: 1.Ady-Ady_AP)",
-    "ipa": "/ныбжь/"
+    "ipa": "/ныбжь/",
+    "conceptId": "FRIENDSHIP"
   },
   {
     "id": "L-CORPUS-01409",
@@ -69960,7 +69971,8 @@
       "kabardian": "щхъуэмч"
     },
     "notes": "Corpus v1.0 (freq: 10, lang: kbd, source: 1.Ady-Ady_AP)",
-    "ipa": "/щхъуэмч/"
+    "ipa": "/щхъуэмч/",
+    "conceptId": "CHESTNUT"
   },
   {
     "id": "L-CORPUS-03748",
@@ -215206,7 +215218,8 @@
       "adyghe": "пындж",
       "kabardian": ""
     },
-    "notes": "Verified (freq: 7, 0.Ady-Ady_AIG)"
+    "notes": "Verified (freq: 7, 0.Ady-Ady_AIG)",
+    "conceptId": "RICE"
   },
   {
     "id": "L-VERIFIED-00663",
@@ -232893,7 +232906,8 @@
       "kabardian": "шэдыгъуэ"
     },
     "notes": "Verified (freq: 5, 1.Ady-Ady_AP)",
-    "ipa": "/шэдыгъу/"
+    "ipa": "/шэдыгъу/",
+    "conceptId": "SOUR_CHERRY"
   },
   {
     "id": "L-VERIFIED-02069",
@@ -241096,5 +241110,353 @@
     "rootIds": [],
     "wordFamilyId": null,
     "notes": "Renk (Color)"
+  },
+  {
+    "id": "L-PLANT-000",
+    "form": "адыгэ бжьыныху",
+    "literalMeaning": "Adıge sarımsağı",
+    "conceptId": null,
+    "partOfSpeech": "noun",
+    "rootIds": [
+      "R-PLANT"
+    ],
+    "wordFamilyId": "WF-PLANT",
+    "notes": "Bitki (Plant)"
+  },
+  {
+    "id": "L-PLANT-001",
+    "form": "адыгэ къэб",
+    "literalMeaning": "İnce kabuklu Adıge kabağı",
+    "conceptId": null,
+    "partOfSpeech": "noun",
+    "rootIds": [
+      "R-PLANT"
+    ],
+    "wordFamilyId": "WF-PLANT",
+    "notes": "Bitki (Plant)"
+  },
+  {
+    "id": "L-PLANT-002",
+    "form": "андэрэф",
+    "literalMeaning": "Kamış",
+    "conceptId": "REED",
+    "partOfSpeech": "noun",
+    "rootIds": [
+      "R-PLANT"
+    ],
+    "wordFamilyId": "WF-PLANT",
+    "notes": "Bitki (Plant)"
+  },
+  {
+    "id": "L-PLANT-003",
+    "form": "андзыш",
+    "literalMeaning": "Sığırkuyruğu otu",
+    "conceptId": null,
+    "partOfSpeech": "noun",
+    "rootIds": [
+      "R-PLANT"
+    ],
+    "wordFamilyId": "WF-PLANT",
+    "notes": "Bitki (Plant)"
+  },
+  {
+    "id": "L-PLANT-004",
+    "form": "аІуудз",
+    "literalMeaning": "Zambak",
+    "conceptId": null,
+    "partOfSpeech": "noun",
+    "rootIds": [
+      "R-PLANT"
+    ],
+    "wordFamilyId": "WF-PLANT",
+    "notes": "Bitki (Plant)"
+  },
+  {
+    "id": "L-PLANT-005",
+    "form": "гъэшудз",
+    "literalMeaning": "Yara otu / Çok yapraklı sarı yonca",
+    "conceptId": null,
+    "partOfSpeech": "noun",
+    "rootIds": [
+      "R-PLANT"
+    ],
+    "wordFamilyId": "WF-PLANT",
+    "notes": "Bitki (Plant)"
+  },
+  {
+    "id": "L-PLANT-006",
+    "form": "гъуэжьытх",
+    "literalMeaning": "Katırtırnağı",
+    "conceptId": null,
+    "partOfSpeech": "noun",
+    "rootIds": [
+      "R-PLANT"
+    ],
+    "wordFamilyId": "WF-PLANT",
+    "notes": "Bitki (Plant)"
+  },
+  {
+    "id": "L-PLANT-007",
+    "form": "дахэтхьэпэ",
+    "literalMeaning": "Siyah ban otu",
+    "conceptId": null,
+    "partOfSpeech": "noun",
+    "rootIds": [
+      "R-PLANT"
+    ],
+    "wordFamilyId": "WF-PLANT",
+    "notes": "Bitki (Plant)"
+  },
+  {
+    "id": "L-PLANT-008",
+    "form": "дэжьей",
+    "literalMeaning": "Fındık",
+    "conceptId": "HAZELNUT",
+    "partOfSpeech": "noun",
+    "rootIds": [
+      "R-PLANT"
+    ],
+    "wordFamilyId": "WF-PLANT",
+    "notes": "Bitki (Plant)"
+  },
+  {
+    "id": "L-PLANT-009",
+    "form": "зэхьфиран",
+    "literalMeaning": "Aspir / Yalancı safran",
+    "conceptId": null,
+    "partOfSpeech": "noun",
+    "rootIds": [
+      "R-PLANT"
+    ],
+    "wordFamilyId": "WF-PLANT",
+    "notes": "Bitki (Plant)"
+  },
+  {
+    "id": "L-PLANT-010",
+    "form": "фІарийтхьэмпэ",
+    "literalMeaning": "Sinir otu",
+    "conceptId": null,
+    "partOfSpeech": "noun",
+    "rootIds": [
+      "R-PLANT"
+    ],
+    "wordFamilyId": "WF-PLANT",
+    "notes": "Bitki (Plant)"
+  },
+  {
+    "id": "L-PLANT-011",
+    "form": "щІыгыныху",
+    "literalMeaning": "Kereviz",
+    "conceptId": null,
+    "partOfSpeech": "noun",
+    "rootIds": [
+      "R-PLANT"
+    ],
+    "wordFamilyId": "WF-PLANT",
+    "notes": "Bitki (Plant)"
+  },
+  {
+    "id": "L-PLANT-012",
+    "form": "Іэврэчин",
+    "literalMeaning": "Mısır",
+    "conceptId": null,
+    "partOfSpeech": "noun",
+    "rootIds": [
+      "R-PLANT"
+    ],
+    "wordFamilyId": "WF-PLANT",
+    "notes": "Bitki (Plant)"
+  },
+  {
+    "id": "L-PLANT-013",
+    "form": "щІакхъуэгъэтэдж",
+    "literalMeaning": "Şerbetçi otu",
+    "conceptId": null,
+    "partOfSpeech": "noun",
+    "rootIds": [
+      "R-PLANT"
+    ],
+    "wordFamilyId": "WF-PLANT",
+    "notes": "Bitki (Plant)"
+  },
+  {
+    "id": "L-PLANT-014",
+    "form": "хьэІу",
+    "literalMeaning": "Arpa",
+    "conceptId": null,
+    "partOfSpeech": "noun",
+    "rootIds": [
+      "R-PLANT"
+    ],
+    "wordFamilyId": "WF-PLANT",
+    "notes": "Bitki (Plant)"
+  },
+  {
+    "id": "L-PLANT-015",
+    "form": "мыІэрысэ",
+    "literalMeaning": "Elma",
+    "conceptId": null,
+    "partOfSpeech": "noun",
+    "rootIds": [
+      "R-PLANT"
+    ],
+    "wordFamilyId": "WF-PLANT",
+    "notes": "Bitki (Plant)"
+  },
+  {
+    "id": "L-PLANT-016",
+    "form": "къужъ",
+    "literalMeaning": "Armut",
+    "conceptId": "PEAR",
+    "partOfSpeech": "noun",
+    "rootIds": [
+      "R-PLANT"
+    ],
+    "wordFamilyId": "WF-PLANT",
+    "notes": "Bitki (Plant)"
+  },
+  {
+    "id": "L-PLANT-017",
+    "form": "балъкъэ",
+    "literalMeaning": "Kiraz",
+    "conceptId": "CHERRY",
+    "partOfSpeech": "noun",
+    "rootIds": [
+      "R-PLANT"
+    ],
+    "wordFamilyId": "WF-PLANT",
+    "notes": "Bitki (Plant)"
+  },
+  {
+    "id": "L-PLANT-018",
+    "form": "сэнаниш",
+    "literalMeaning": "Üzüm",
+    "conceptId": "GRAPE",
+    "partOfSpeech": "noun",
+    "rootIds": [
+      "R-PLANT"
+    ],
+    "wordFamilyId": "WF-PLANT",
+    "notes": "Bitki (Plant)"
+  },
+  {
+    "id": "L-CONCEPT-000",
+    "form": "гуфІэ",
+    "literalMeaning": "Sevinç / Neşe",
+    "conceptId": "JOY",
+    "partOfSpeech": "noun",
+    "rootIds": [
+      "R-CONCEPT"
+    ],
+    "wordFamilyId": "WF-CONCEPT",
+    "notes": "Soyut kavram (Abstract concept)"
+  },
+  {
+    "id": "L-CONCEPT-001",
+    "form": "напІцІ",
+    "literalMeaning": "Yalan",
+    "conceptId": "LIE",
+    "partOfSpeech": "noun",
+    "rootIds": [
+      "R-CONCEPT"
+    ],
+    "wordFamilyId": "WF-CONCEPT",
+    "notes": "Soyut kavram (Abstract concept)"
+  },
+  {
+    "id": "L-CONCEPT-002",
+    "form": "нафІ",
+    "literalMeaning": "İyilik",
+    "conceptId": "GOODNESS",
+    "partOfSpeech": "noun",
+    "rootIds": [
+      "R-CONCEPT"
+    ],
+    "wordFamilyId": "WF-CONCEPT",
+    "notes": "Soyut kavram (Abstract concept)"
+  },
+  {
+    "id": "L-CONCEPT-003",
+    "form": "цІыхугъэ",
+    "literalMeaning": "İnsanlık / Hümanizm",
+    "conceptId": "HUMANITY",
+    "partOfSpeech": "noun",
+    "rootIds": [
+      "R-CONCEPT"
+    ],
+    "wordFamilyId": "WF-CONCEPT",
+    "notes": "Soyut kavram (Abstract concept)"
+  },
+  {
+    "id": "L-CONCEPT-004",
+    "form": "пцІы",
+    "literalMeaning": "Yalan / Sahtelik",
+    "conceptId": "LIE",
+    "partOfSpeech": "noun",
+    "rootIds": [
+      "R-CONCEPT"
+    ],
+    "wordFamilyId": "WF-CONCEPT",
+    "notes": "Soyut kavram (Abstract concept)"
+  },
+  {
+    "id": "L-CONCEPT-005",
+    "form": "шыІэныгъэ",
+    "literalMeaning": "Sabır",
+    "conceptId": "PATIENCE",
+    "partOfSpeech": "noun",
+    "rootIds": [
+      "R-CONCEPT"
+    ],
+    "wordFamilyId": "WF-CONCEPT",
+    "notes": "Soyut kavram (Abstract concept)"
+  },
+  {
+    "id": "L-CONCEPT-006",
+    "form": "лІыгъэ",
+    "literalMeaning": "Cesaret / Yiğitlik",
+    "conceptId": "COURAGE",
+    "partOfSpeech": "noun",
+    "rootIds": [
+      "R-CONCEPT"
+    ],
+    "wordFamilyId": "WF-CONCEPT",
+    "notes": "Soyut kavram (Abstract concept)"
+  },
+  {
+    "id": "L-CONCEPT-007",
+    "form": "фІыгъэ",
+    "literalMeaning": "İyilik / Hayır",
+    "conceptId": "GOODNESS",
+    "partOfSpeech": "noun",
+    "rootIds": [
+      "R-CONCEPT"
+    ],
+    "wordFamilyId": "WF-CONCEPT",
+    "notes": "Soyut kavram (Abstract concept)"
+  },
+  {
+    "id": "L-CONCEPT-008",
+    "form": "бзадджагъэ",
+    "literalMeaning": "Kötülük",
+    "conceptId": "EVIL",
+    "partOfSpeech": "noun",
+    "rootIds": [
+      "R-CONCEPT"
+    ],
+    "wordFamilyId": "WF-CONCEPT",
+    "notes": "Soyut kavram (Abstract concept)"
+  },
+  {
+    "id": "L-CONCEPT-009",
+    "form": "насып",
+    "literalMeaning": "Şans / Mutluluk",
+    "conceptId": "LUCK",
+    "partOfSpeech": "noun",
+    "rootIds": [
+      "R-CONCEPT"
+    ],
+    "wordFamilyId": "WF-CONCEPT",
+    "notes": "Soyut kavram (Abstract concept)"
   }
 ]
