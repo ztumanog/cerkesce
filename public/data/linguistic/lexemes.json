@@ -294163,5 +294163,974 @@
     "conceptId": "LUCK",
     "partOfSpeech": "noun",
     "notes": "Soyut kavram (Abstract concept)"
+  },
+  {
+    "id": "L-PROMPT-00000",
+    "form": "щIымахуэ",
+    "literalMeaning": "kış",
+    "ipa": "/ɕ'əmaːxʷa/",
+    "conceptId": "WINTER",
+    "partOfSpeech": "season",
+    "notes": "PROMPT entegrasyonu (season)",
+    "corpusFrequency": 0,
+    "rootIds": [],
+    "wordFamilyId": null,
+    "derivation": null,
+    "dialectVariants": {
+      "adyghe": "щIымахуэ",
+      "kabardian": "щIымахуэ"
+    }
+  },
+  {
+    "id": "L-PROMPT-00001",
+    "form": "щIышылэ",
+    "literalMeaning": "ocak",
+    "ipa": "/ɕ'əʃəla/",
+    "conceptId": "JANUARY",
+    "partOfSpeech": "month",
+    "notes": "PROMPT entegrasyonu (month)",
+    "corpusFrequency": 0,
+    "rootIds": [],
+    "wordFamilyId": null,
+    "derivation": null,
+    "dialectVariants": {
+      "adyghe": "щIышылэ",
+      "kabardian": "щIышылэ"
+    }
+  },
+  {
+    "id": "L-PROMPT-00002",
+    "form": "шыщхьэIу",
+    "literalMeaning": "ağustos",
+    "ipa": "/ʃəɕħaʔw/",
+    "conceptId": "AUGUST",
+    "partOfSpeech": "month",
+    "notes": "PROMPT entegrasyonu (month)",
+    "corpusFrequency": 0,
+    "rootIds": [],
+    "wordFamilyId": null,
+    "derivation": null,
+    "dialectVariants": {
+      "adyghe": "шыщхьэIу",
+      "kabardian": "шыщхьэIу"
+    }
+  },
+  {
+    "id": "L-PROMPT-00003",
+    "form": "фокIадэ",
+    "literalMeaning": "eylül",
+    "ipa": "/fawk'aːda/",
+    "conceptId": "SEPTEMBER",
+    "partOfSpeech": "month",
+    "notes": "PROMPT entegrasyonu (month)",
+    "corpusFrequency": 0,
+    "rootIds": [],
+    "wordFamilyId": null,
+    "derivation": null,
+    "dialectVariants": {
+      "adyghe": "фокIадэ",
+      "kabardian": "фокIадэ"
+    }
+  },
+  {
+    "id": "L-PROMPT-00004",
+    "form": "щэкIуэгъуэ",
+    "literalMeaning": "kasım",
+    "ipa": "/ɕak'waʁʷa/",
+    "conceptId": "NOVEMBER",
+    "partOfSpeech": "month",
+    "notes": "PROMPT entegrasyonu (month)",
+    "corpusFrequency": 0,
+    "rootIds": [],
+    "wordFamilyId": null,
+    "derivation": null,
+    "dialectVariants": {
+      "adyghe": "щэкIуэгъуэ",
+      "kabardian": "щэкIуэгъуэ"
+    }
+  },
+  {
+    "id": "L-PROMPT-00005",
+    "form": "гуфIэ",
+    "literalMeaning": "sevinç",
+    "ipa": "/ɡʷəf'a/",
+    "conceptId": "JOY",
+    "partOfSpeech": "noun",
+    "notes": "PROMPT entegrasyonu (genel)",
+    "corpusFrequency": 0,
+    "rootIds": [],
+    "wordFamilyId": null,
+    "derivation": null,
+    "dialectVariants": {
+      "adyghe": "гуфIэ",
+      "kabardian": "гуфIэ"
+    }
+  },
+  {
+    "id": "L-PROMPT-00006",
+    "form": "гуауэ",
+    "literalMeaning": "keder",
+    "ipa": "/ɡʷaːwa/",
+    "conceptId": "GRIEF",
+    "partOfSpeech": "noun",
+    "notes": "PROMPT entegrasyonu (genel)",
+    "corpusFrequency": 0,
+    "rootIds": [],
+    "wordFamilyId": null,
+    "derivation": null,
+    "dialectVariants": {
+      "adyghe": "гуауэ",
+      "kabardian": "гуауэ"
+    }
+  },
+  {
+    "id": "L-PROMPT-00007",
+    "form": "бампIэ",
+    "literalMeaning": "kasvet",
+    "ipa": "/baːmp'a/",
+    "conceptId": "GLOOM",
+    "partOfSpeech": "noun",
+    "notes": "PROMPT entegrasyonu (genel)",
+    "corpusFrequency": 0,
+    "rootIds": [],
+    "wordFamilyId": null,
+    "derivation": null,
+    "dialectVariants": {
+      "adyghe": "бампIэ",
+      "kabardian": "бампIэ"
+    }
+  },
+  {
+    "id": "L-PROMPT-00008",
+    "form": "гуажэ",
+    "literalMeaning": "gücenme",
+    "ipa": "/ɡʷaːʒa/",
+    "conceptId": "OFFENSE",
+    "partOfSpeech": "noun",
+    "notes": "PROMPT entegrasyonu (genel)",
+    "corpusFrequency": 0,
+    "rootIds": [],
+    "wordFamilyId": null,
+    "derivation": null,
+    "dialectVariants": {
+      "adyghe": "гуажэ",
+      "kabardian": "гуажэ"
+    }
+  },
+  {
+    "id": "L-PROMPT-00009",
+    "form": "гузэвэн",
+    "literalMeaning": "endişe",
+    "ipa": "/ɡʷazavan/",
+    "conceptId": "ANXIETY",
+    "partOfSpeech": "noun",
+    "notes": "PROMPT entegrasyonu (genel)",
+    "corpusFrequency": 0,
+    "rootIds": [],
+    "wordFamilyId": null,
+    "derivation": null,
+    "dialectVariants": {
+      "adyghe": "гузэвэн",
+      "kabardian": "гузэвэн"
+    }
+  },
+  {
+    "id": "L-PROMPT-00010",
+    "form": "укIытэ",
+    "literalMeaning": "utanç",
+    "ipa": "/wək'ətə/",
+    "conceptId": "SHAME",
+    "partOfSpeech": "noun",
+    "notes": "PROMPT entegrasyonu (genel)",
+    "corpusFrequency": 0,
+    "rootIds": [],
+    "wordFamilyId": null,
+    "derivation": null,
+    "dialectVariants": {
+      "adyghe": "укIытэ",
+      "kabardian": "укIытэ"
+    }
+  },
+  {
+    "id": "L-PROMPT-00011",
+    "form": "гущIэгъу",
+    "literalMeaning": "acıma",
+    "ipa": "/ɡʷəɕ'aʁʷ/",
+    "conceptId": "PITY",
+    "partOfSpeech": "noun",
+    "notes": "PROMPT entegrasyonu (genel)",
+    "corpusFrequency": 0,
+    "rootIds": [],
+    "wordFamilyId": null,
+    "derivation": null,
+    "dialectVariants": {
+      "adyghe": "гущIэгъу",
+      "kabardian": "гущIэгъу"
+    }
+  },
+  {
+    "id": "L-PROMPT-00012",
+    "form": "егуэкIуэн",
+    "literalMeaning": "aşk",
+    "ipa": "/jeɡʷak'wan/",
+    "conceptId": "LOVE",
+    "partOfSpeech": "noun",
+    "notes": "PROMPT entegrasyonu (genel)",
+    "corpusFrequency": 0,
+    "rootIds": [],
+    "wordFamilyId": null,
+    "derivation": null,
+    "dialectVariants": {
+      "adyghe": "егуэкIуэн",
+      "kabardian": "егуэкIуэн"
+    }
+  },
+  {
+    "id": "L-PROMPT-00013",
+    "form": "гухэщI",
+    "literalMeaning": "kalp acısı",
+    "ipa": "/ɡʷexaɕ'/",
+    "conceptId": "HEARTACHE",
+    "partOfSpeech": "noun",
+    "notes": "PROMPT entegrasyonu (genel)",
+    "corpusFrequency": 0,
+    "rootIds": [],
+    "wordFamilyId": null,
+    "derivation": null,
+    "dialectVariants": {
+      "adyghe": "гухэщI",
+      "kabardian": "гухэщI"
+    }
+  },
+  {
+    "id": "L-PROMPT-00014",
+    "form": "хьэзаб",
+    "literalMeaning": "eziyet",
+    "ipa": "/ħazaːb/",
+    "conceptId": "TORMENT",
+    "partOfSpeech": "noun",
+    "notes": "PROMPT entegrasyonu (genel)",
+    "corpusFrequency": 0,
+    "rootIds": [],
+    "wordFamilyId": null,
+    "derivation": null,
+    "dialectVariants": {
+      "adyghe": "хьэзаб",
+      "kabardian": "хьэзаб"
+    }
+  },
+  {
+    "id": "L-PROMPT-00015",
+    "form": "гухэщт",
+    "literalMeaning": "heyecan",
+    "ipa": "/ɡʷexaɕt/",
+    "conceptId": "THRILL",
+    "partOfSpeech": "noun",
+    "notes": "PROMPT entegrasyonu (genel)",
+    "corpusFrequency": 0,
+    "rootIds": [],
+    "wordFamilyId": null,
+    "derivation": null,
+    "dialectVariants": {
+      "adyghe": "гухэщт",
+      "kabardian": "гухэщт"
+    }
+  },
+  {
+    "id": "L-PROMPT-00016",
+    "form": "лыуз",
+    "literalMeaning": "iç sızlaması",
+    "ipa": "/ɬəwəz/",
+    "conceptId": "EMPATHY",
+    "partOfSpeech": "noun",
+    "notes": "PROMPT entegrasyonu (genel)",
+    "corpusFrequency": 0,
+    "rootIds": [],
+    "wordFamilyId": null,
+    "derivation": null,
+    "dialectVariants": {
+      "adyghe": "лыуз",
+      "kabardian": "лыуз"
+    }
+  },
+  {
+    "id": "L-PROMPT-00017",
+    "form": "зэш",
+    "literalMeaning": "can sıkıntısı",
+    "ipa": "/zaʃ/",
+    "conceptId": "BOREDOM",
+    "partOfSpeech": "noun",
+    "notes": "PROMPT entegrasyonu (genel)",
+    "corpusFrequency": 0,
+    "rootIds": [],
+    "wordFamilyId": null,
+    "derivation": null,
+    "dialectVariants": {
+      "adyghe": "зэш",
+      "kabardian": "зэш"
+    }
+  },
+  {
+    "id": "L-PROMPT-00018",
+    "form": "гукъеуэ",
+    "literalMeaning": "derin iç acısı",
+    "ipa": "/ɡʷəq'ewa/",
+    "conceptId": "SORROW",
+    "partOfSpeech": "noun",
+    "notes": "PROMPT entegrasyonu (genel)",
+    "corpusFrequency": 0,
+    "rootIds": [],
+    "wordFamilyId": null,
+    "derivation": null,
+    "dialectVariants": {
+      "adyghe": "гукъеуэ",
+      "kabardian": "гукъеуэ"
+    }
+  },
+  {
+    "id": "L-PROMPT-00019",
+    "form": "гущIыхьэ",
+    "literalMeaning": "derin incinme",
+    "ipa": "/ɡʷəɕ'əħa/",
+    "conceptId": "GRIEVANCE",
+    "partOfSpeech": "noun",
+    "notes": "PROMPT entegrasyonu (genel)",
+    "corpusFrequency": 0,
+    "rootIds": [],
+    "wordFamilyId": null,
+    "derivation": null,
+    "dialectVariants": {
+      "adyghe": "гущIыхьэ",
+      "kabardian": "гущIыхьэ"
+    }
+  },
+  {
+    "id": "L-PROMPT-00020",
+    "form": "хъуэпсагъуэ",
+    "literalMeaning": "özlem",
+    "ipa": "/xʷapsaːʁʷa/",
+    "conceptId": "YEARNING",
+    "partOfSpeech": "noun",
+    "notes": "PROMPT entegrasyonu (genel)",
+    "corpusFrequency": 0,
+    "rootIds": [],
+    "wordFamilyId": null,
+    "derivation": null,
+    "dialectVariants": {
+      "adyghe": "хъуэпсагъуэ",
+      "kabardian": "хъуэпсагъуэ"
+    }
+  },
+  {
+    "id": "L-PROMPT-00021",
+    "form": "тхакIуэ",
+    "literalMeaning": "yazar",
+    "ipa": "/txaːk'wa/",
+    "conceptId": "WRITER",
+    "partOfSpeech": "noun",
+    "notes": "PROMPT entegrasyonu (genel)",
+    "corpusFrequency": 0,
+    "rootIds": [],
+    "wordFamilyId": null,
+    "derivation": null,
+    "dialectVariants": {
+      "adyghe": "тхакIуэ",
+      "kabardian": "тхакIуэ"
+    }
+  },
+  {
+    "id": "L-PROMPT-00022",
+    "form": "егъэджакIуэ",
+    "literalMeaning": "öğretmen",
+    "ipa": "/jeʁaːdʒaːk'wa/",
+    "conceptId": "TEACHER",
+    "partOfSpeech": "noun",
+    "notes": "PROMPT entegrasyonu (genel)",
+    "corpusFrequency": 0,
+    "rootIds": [],
+    "wordFamilyId": null,
+    "derivation": null,
+    "dialectVariants": {
+      "adyghe": "егъэджакIуэ",
+      "kabardian": "егъэджакIуэ"
+    }
+  },
+  {
+    "id": "L-PROMPT-00023",
+    "form": "еджакIуэ",
+    "literalMeaning": "öğrenci",
+    "ipa": "/jedʒaːk'wa/",
+    "conceptId": "STUDENT",
+    "partOfSpeech": "noun",
+    "notes": "PROMPT entegrasyonu (genel)",
+    "corpusFrequency": 0,
+    "rootIds": [],
+    "wordFamilyId": null,
+    "derivation": null,
+    "dialectVariants": {
+      "adyghe": "еджакIуэ",
+      "kabardian": "еджакIуэ"
+    }
+  },
+  {
+    "id": "L-PROMPT-00024",
+    "form": "усакIуэ",
+    "literalMeaning": "şair",
+    "ipa": "/wəsaːk'wa/",
+    "conceptId": "POET",
+    "partOfSpeech": "noun",
+    "notes": "PROMPT entegrasyonu (genel)",
+    "corpusFrequency": 0,
+    "rootIds": [],
+    "wordFamilyId": null,
+    "derivation": null,
+    "dialectVariants": {
+      "adyghe": "усакIуэ",
+      "kabardian": "усакIуэ"
+    }
+  },
+  {
+    "id": "L-PROMPT-00025",
+    "form": "щакIуэ",
+    "literalMeaning": "avcı",
+    "ipa": "/ɕaːk'wa/",
+    "conceptId": "HUNTER",
+    "partOfSpeech": "noun",
+    "notes": "PROMPT entegrasyonu (genel)",
+    "corpusFrequency": 0,
+    "rootIds": [],
+    "wordFamilyId": null,
+    "derivation": null,
+    "dialectVariants": {
+      "adyghe": "щакIуэ",
+      "kabardian": "щакIуэ"
+    }
+  },
+  {
+    "id": "L-PROMPT-00026",
+    "form": "лажьакIуэ",
+    "literalMeaning": "işçi",
+    "ipa": "/laːʑaːk'wa/",
+    "conceptId": "WORKER",
+    "partOfSpeech": "noun",
+    "notes": "PROMPT entegrasyonu (genel)",
+    "corpusFrequency": 0,
+    "rootIds": [],
+    "wordFamilyId": null,
+    "derivation": null,
+    "dialectVariants": {
+      "adyghe": "лажьакIуэ",
+      "kabardian": "лажьакIуэ"
+    }
+  },
+  {
+    "id": "L-PROMPT-00027",
+    "form": "къафакIуэ",
+    "literalMeaning": "dansçı",
+    "ipa": "/q'aːfaːk'wa/",
+    "conceptId": "DANCER",
+    "partOfSpeech": "noun",
+    "notes": "PROMPT entegrasyonu (genel)",
+    "corpusFrequency": 0,
+    "rootIds": [],
+    "wordFamilyId": null,
+    "derivation": null,
+    "dialectVariants": {
+      "adyghe": "къафакIуэ",
+      "kabardian": "къафакIуэ"
+    }
+  },
+  {
+    "id": "L-PROMPT-00028",
+    "form": "уэрэдохъуэ",
+    "literalMeaning": "şarkıcı",
+    "ipa": "/waraːdawxʷa/",
+    "conceptId": "SINGER",
+    "partOfSpeech": "noun",
+    "notes": "PROMPT entegrasyonu (genel)",
+    "corpusFrequency": 0,
+    "rootIds": [],
+    "wordFamilyId": null,
+    "derivation": null,
+    "dialectVariants": {
+      "adyghe": "уэрэдохъуэ",
+      "kabardian": "уэрэдохъуэ"
+    }
+  },
+  {
+    "id": "L-PROMPT-00029",
+    "form": "Iэзэ",
+    "literalMeaning": "hekim",
+    "ipa": "/ʔaza/",
+    "conceptId": "DOCTOR",
+    "partOfSpeech": "noun",
+    "notes": "PROMPT entegrasyonu (genel)",
+    "corpusFrequency": 0,
+    "rootIds": [],
+    "wordFamilyId": null,
+    "derivation": null,
+    "dialectVariants": {
+      "adyghe": "Iэзэ",
+      "kabardian": "Iэзэ"
+    }
+  },
+  {
+    "id": "L-PROMPT-00030",
+    "form": "сымаджащIэ",
+    "literalMeaning": "hemşire",
+    "ipa": "/səmaːdʒaɕ'a/",
+    "conceptId": "NURSE",
+    "partOfSpeech": "noun",
+    "notes": "PROMPT entegrasyonu (genel)",
+    "corpusFrequency": 0,
+    "rootIds": [],
+    "wordFamilyId": null,
+    "derivation": null,
+    "dialectVariants": {
+      "adyghe": "сымаджащIэ",
+      "kabardian": "сымаджащIэ"
+    }
+  },
+  {
+    "id": "L-PROMPT-00031",
+    "form": "гъущIIэщIэ",
+    "literalMeaning": "demirci",
+    "ipa": "/ʁʷəɕ'ʔaɕ'a/",
+    "conceptId": "BLACKSMITH",
+    "partOfSpeech": "noun",
+    "notes": "PROMPT entegrasyonu (genel)",
+    "corpusFrequency": 0,
+    "rootIds": [],
+    "wordFamilyId": null,
+    "derivation": null,
+    "dialectVariants": {
+      "adyghe": "гъущIIэщIэ",
+      "kabardian": "гъущIIэщIэ"
+    }
+  },
+  {
+    "id": "L-PROMPT-00032",
+    "form": "пхъэщIэ",
+    "literalMeaning": "marangoz",
+    "ipa": "/pχaɕ'a/",
+    "conceptId": "CARPENTER",
+    "partOfSpeech": "noun",
+    "notes": "PROMPT entegrasyonu (genel)",
+    "corpusFrequency": 0,
+    "rootIds": [],
+    "wordFamilyId": null,
+    "derivation": null,
+    "dialectVariants": {
+      "adyghe": "пхъэщIэ",
+      "kabardian": "пхъэщIэ"
+    }
+  },
+  {
+    "id": "L-PROMPT-00033",
+    "form": "шыгузехуэ",
+    "literalMeaning": "sürücü",
+    "ipa": "/ʃəɡʷəzejxʷa/",
+    "conceptId": "DRIVER",
+    "partOfSpeech": "noun",
+    "notes": "PROMPT entegrasyonu (genel)",
+    "corpusFrequency": 0,
+    "rootIds": [],
+    "wordFamilyId": null,
+    "derivation": null,
+    "dialectVariants": {
+      "adyghe": "шыгузехуэ",
+      "kabardian": "шыгузехуэ"
+    }
+  },
+  {
+    "id": "L-PROMPT-00034",
+    "form": "пщылI",
+    "literalMeaning": "çiftçi",
+    "ipa": "/pɕəɬ'/",
+    "conceptId": "FARMER",
+    "partOfSpeech": "noun",
+    "notes": "PROMPT entegrasyonu (genel)",
+    "corpusFrequency": 0,
+    "rootIds": [],
+    "wordFamilyId": null,
+    "derivation": null,
+    "dialectVariants": {
+      "adyghe": "пщылI",
+      "kabardian": "пщылI"
+    }
+  },
+  {
+    "id": "L-PROMPT-00035",
+    "form": "зауэлI",
+    "literalMeaning": "asker",
+    "ipa": "/zaːwaɬ'/",
+    "conceptId": "SOLDIER",
+    "partOfSpeech": "noun",
+    "notes": "PROMPT entegrasyonu (genel)",
+    "corpusFrequency": 0,
+    "rootIds": [],
+    "wordFamilyId": null,
+    "derivation": null,
+    "dialectVariants": {
+      "adyghe": "зауэлI",
+      "kabardian": "зауэлI"
+    }
+  },
+  {
+    "id": "L-PROMPT-00036",
+    "form": "унэIут",
+    "literalMeaning": "kahya",
+    "ipa": "/wənaʔwt/",
+    "conceptId": "HOUSEKEEPER",
+    "partOfSpeech": "noun",
+    "notes": "PROMPT entegrasyonu (genel)",
+    "corpusFrequency": 0,
+    "rootIds": [],
+    "wordFamilyId": null,
+    "derivation": null,
+    "dialectVariants": {
+      "adyghe": "унэIут",
+      "kabardian": "унэIут"
+    }
+  },
+  {
+    "id": "L-PROMPT-00037",
+    "form": "гъуэгурыкIуэ",
+    "literalMeaning": "yolcu",
+    "ipa": "/ʁʷaɡʷrək'wa/",
+    "conceptId": "TRAVELER",
+    "partOfSpeech": "noun",
+    "notes": "PROMPT entegrasyonu (genel)",
+    "corpusFrequency": 0,
+    "rootIds": [],
+    "wordFamilyId": null,
+    "derivation": null,
+    "dialectVariants": {
+      "adyghe": "гъуэгурыкIуэ",
+      "kabardian": "гъуэгурыкIуэ"
+    }
+  },
+  {
+    "id": "L-PROMPT-00038",
+    "form": "джэгуакIуэ",
+    "literalMeaning": "ozan",
+    "ipa": "/dʒaɡʷaːk'wa/",
+    "conceptId": "MINSTREL",
+    "partOfSpeech": "noun",
+    "notes": "PROMPT entegrasyonu (genel)",
+    "corpusFrequency": 0,
+    "rootIds": [],
+    "wordFamilyId": null,
+    "derivation": null,
+    "dialectVariants": {
+      "adyghe": "джэгуакIуэ",
+      "kabardian": "джэгуакIуэ"
+    }
+  },
+  {
+    "id": "L-PROMPT-00039",
+    "form": "дыщэщIэ",
+    "literalMeaning": "kuyumcu",
+    "ipa": "/dəɕaɕ'a/",
+    "conceptId": "GOLDSMITH",
+    "partOfSpeech": "noun",
+    "notes": "PROMPT entegrasyonu (genel)",
+    "corpusFrequency": 0,
+    "rootIds": [],
+    "wordFamilyId": null,
+    "derivation": null,
+    "dialectVariants": {
+      "adyghe": "дыщэщIэ",
+      "kabardian": "дыщэщIэ"
+    }
+  },
+  {
+    "id": "L-PROMPT-00040",
+    "form": "пхъэIэщэжъ",
+    "literalMeaning": "pullukçu",
+    "ipa": "/pχaʔaɕaʒ/",
+    "conceptId": "PLOWMAN",
+    "partOfSpeech": "noun",
+    "notes": "PROMPT entegrasyonu (genel)",
+    "corpusFrequency": 0,
+    "rootIds": [],
+    "wordFamilyId": null,
+    "derivation": null,
+    "dialectVariants": {
+      "adyghe": "пхъэIэщэжъ",
+      "kabardian": "пхъэIэщэжъ"
+    }
+  },
+  {
+    "id": "L-PROMPT-00041",
+    "form": "бжэнышэ",
+    "literalMeaning": "keçi çobanı",
+    "ipa": "/bʒənəʃa/",
+    "conceptId": "GOATHERD",
+    "partOfSpeech": "noun",
+    "notes": "PROMPT entegrasyonu (genel)",
+    "corpusFrequency": 0,
+    "rootIds": [],
+    "wordFamilyId": null,
+    "derivation": null,
+    "dialectVariants": {
+      "adyghe": "бжэнышэ",
+      "kabardian": "бжэнышэ"
+    }
+  },
+  {
+    "id": "L-PROMPT-00042",
+    "form": "шэхущэ",
+    "literalMeaning": "tüccar",
+    "ipa": "/ʃaxʷəɕa/",
+    "conceptId": "MERCHANT",
+    "partOfSpeech": "noun",
+    "notes": "PROMPT entegrasyonu (genel)",
+    "corpusFrequency": 0,
+    "rootIds": [],
+    "wordFamilyId": null,
+    "derivation": null,
+    "dialectVariants": {
+      "adyghe": "шэхущэ",
+      "kabardian": "шэхущэ"
+    }
+  },
+  {
+    "id": "L-PROMPT-00043",
+    "form": "джанэдэдI",
+    "literalMeaning": "terzi",
+    "ipa": "/dʒaːnadaːd'/",
+    "conceptId": "TAILOR",
+    "partOfSpeech": "noun",
+    "notes": "PROMPT entegrasyonu (genel)",
+    "corpusFrequency": 0,
+    "rootIds": [],
+    "wordFamilyId": null,
+    "derivation": null,
+    "dialectVariants": {
+      "adyghe": "джанэдэдI",
+      "kabardian": "джанэдэдI"
+    }
+  },
+  {
+    "id": "L-PROMPT-00044",
+    "form": "вакъэдэдI",
+    "literalMeaning": "ayakkabıcı",
+    "ipa": "/vaːqaːdaːd'/",
+    "conceptId": "SHOEMAKER",
+    "partOfSpeech": "noun",
+    "notes": "PROMPT entegrasyonu (genel)",
+    "corpusFrequency": 0,
+    "rootIds": [],
+    "wordFamilyId": null,
+    "derivation": null,
+    "dialectVariants": {
+      "adyghe": "вакъэдэдI",
+      "kabardian": "вакъэдэдI"
+    }
+  },
+  {
+    "id": "L-PROMPT-00045",
+    "form": "тхылъзехьэ",
+    "literalMeaning": "kütüphaneci",
+    "ipa": "/txəɬzejħa/",
+    "conceptId": "LIBRARIAN",
+    "partOfSpeech": "noun",
+    "notes": "PROMPT entegrasyonu (genel)",
+    "corpusFrequency": 0,
+    "rootIds": [],
+    "wordFamilyId": null,
+    "derivation": null,
+    "dialectVariants": {
+      "adyghe": "тхылъзехьэ",
+      "kabardian": "тхылъзехьэ"
+    }
+  },
+  {
+    "id": "L-PROMPT-00046",
+    "form": "чылэпащхьэ",
+    "literalMeaning": "muhtar",
+    "ipa": "/tʃəlapaːɕħa/",
+    "conceptId": "VILLAGE_HEAD",
+    "partOfSpeech": "noun",
+    "notes": "PROMPT entegrasyonu (genel)",
+    "corpusFrequency": 0,
+    "rootIds": [],
+    "wordFamilyId": null,
+    "derivation": null,
+    "dialectVariants": {
+      "adyghe": "чылэпащхьэ",
+      "kabardian": "чылэпащхьэ"
+    }
+  },
+  {
+    "id": "L-PROMPT-00047",
+    "form": "щIакхъуэ",
+    "literalMeaning": "ekmek",
+    "ipa": "/ɕ'aːqχʷa/",
+    "conceptId": "BREAD",
+    "partOfSpeech": "noun",
+    "notes": "PROMPT entegrasyonu (genel)",
+    "corpusFrequency": 0,
+    "rootIds": [],
+    "wordFamilyId": null,
+    "derivation": null,
+    "dialectVariants": {
+      "adyghe": "щIакхъуэ",
+      "kabardian": "щIакхъуэ"
+    }
+  },
+  {
+    "id": "L-PROMPT-00048",
+    "form": "жэмыкуэ",
+    "literalMeaning": "kaymak helvası",
+    "ipa": "/ʒaməkʷa/",
+    "conceptId": "CHEESE_CREAM_PORRIDGE",
+    "partOfSpeech": "noun",
+    "notes": "PROMPT entegrasyonu (genel)",
+    "corpusFrequency": 0,
+    "rootIds": [],
+    "wordFamilyId": null,
+    "derivation": null,
+    "dialectVariants": {
+      "adyghe": "жэмыкуэ",
+      "kabardian": "жэмыкуэ"
+    }
+  },
+  {
+    "id": "L-PROMPT-00049",
+    "form": "щэтэ",
+    "literalMeaning": "ekşi krema",
+    "ipa": "/ɕata/",
+    "conceptId": "SOUR_CREAM",
+    "partOfSpeech": "noun",
+    "notes": "PROMPT entegrasyonu (genel)",
+    "corpusFrequency": 0,
+    "rootIds": [],
+    "wordFamilyId": null,
+    "derivation": null,
+    "dialectVariants": {
+      "adyghe": "щэтэ",
+      "kabardian": "щэтэ"
+    }
+  },
+  {
+    "id": "L-PROMPT-00050",
+    "form": "бжьынэ",
+    "literalMeaning": "soğan",
+    "ipa": "/bʒəna/",
+    "conceptId": "ONION",
+    "partOfSpeech": "noun",
+    "notes": "PROMPT entegrasyonu (genel)",
+    "corpusFrequency": 0,
+    "rootIds": [],
+    "wordFamilyId": null,
+    "derivation": null,
+    "dialectVariants": {
+      "adyghe": "бжьынэ",
+      "kabardian": "бжьынэ"
+    }
+  },
+  {
+    "id": "L-PROMPT-00051",
+    "form": "кIэртIоф",
+    "literalMeaning": "patates",
+    "ipa": "/k'art'of/",
+    "conceptId": "POTATO",
+    "partOfSpeech": "noun",
+    "notes": "PROMPT entegrasyonu (genel)",
+    "corpusFrequency": 0,
+    "rootIds": [],
+    "wordFamilyId": null,
+    "derivation": null,
+    "dialectVariants": {
+      "adyghe": "кIэртIоф",
+      "kabardian": "кIэртIоф"
+    }
+  },
+  {
+    "id": "L-PROMPT-00052",
+    "form": "тэмэтус",
+    "literalMeaning": "domates",
+    "ipa": "/tamaːtwəs/",
+    "conceptId": "TOMATO",
+    "partOfSpeech": "noun",
+    "notes": "PROMPT entegrasyonu (genel)",
+    "corpusFrequency": 0,
+    "rootIds": [],
+    "wordFamilyId": null,
+    "derivation": null,
+    "dialectVariants": {
+      "adyghe": "тэмэтус",
+      "kabardian": "тэмэтус"
+    }
+  },
+  {
+    "id": "L-PROMPT-00053",
+    "form": "мыIэрысэ",
+    "literalMeaning": "elma",
+    "ipa": "/məʔarəsa/",
+    "conceptId": "APPLE",
+    "partOfSpeech": "noun",
+    "notes": "PROMPT entegrasyonu (genel)",
+    "corpusFrequency": 0,
+    "rootIds": [],
+    "wordFamilyId": null,
+    "derivation": null,
+    "dialectVariants": {
+      "adyghe": "мыIэрысэ",
+      "kabardian": "мыIэрысэ"
+    }
+  },
+  {
+    "id": "L-PROMPT-00054",
+    "form": "хъарбуз",
+    "literalMeaning": "karpuz",
+    "ipa": "/xaːrbwəz/",
+    "conceptId": "WATERMELON",
+    "partOfSpeech": "noun",
+    "notes": "PROMPT entegrasyonu (genel)",
+    "corpusFrequency": 0,
+    "rootIds": [],
+    "wordFamilyId": null,
+    "derivation": null,
+    "dialectVariants": {
+      "adyghe": "хъарбуз",
+      "kabardian": "хъарбуз"
+    }
+  },
+  {
+    "id": "L-PROMPT-00055",
+    "form": "хьэлыгъу",
+    "literalMeaning": "çörek",
+    "ipa": "/ħaləʁʷ/",
+    "conceptId": "SWEET_BREAD",
+    "partOfSpeech": "noun",
+    "notes": "PROMPT entegrasyonu (genel)",
+    "corpusFrequency": 0,
+    "rootIds": [],
+    "wordFamilyId": null,
+    "derivation": null,
+    "dialectVariants": {
+      "adyghe": "хьэлыгъу",
+      "kabardian": "хьэлыгъу"
+    }
+  },
+  {
+    "id": "L-PROMPT-00056",
+    "form": "чэфэр",
+    "literalMeaning": "kefir",
+    "ipa": "/tʃafar/",
+    "conceptId": "KEFIR",
+    "partOfSpeech": "noun",
+    "notes": "PROMPT entegrasyonu (genel)",
+    "corpusFrequency": 0,
+    "rootIds": [],
+    "wordFamilyId": null,
+    "derivation": null,
+    "dialectVariants": {
+      "adyghe": "чэфэр",
+      "kabardian": "чэфэр"
+    }
   }
 ]
