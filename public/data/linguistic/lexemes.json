@@ -494,7 +494,10 @@
     "corpusFrequencyAdy": 74,
     "corpusFrequencyKbd": 399,
     "partOfSpeech": "noun",
-    "corpusFrequency": 473
+    "corpusFrequency": 473,
+    "rootIds": [
+      "R-A"
+    ]
   },
   {
     "id": "L-1EPE",
@@ -1109,7 +1112,10 @@
     "corpusFrequencyAdy": 23,
     "corpusFrequencyKbd": 146,
     "partOfSpeech": "noun",
-    "corpusFrequency": 169
+    "corpusFrequency": 169,
+    "rootIds": [
+      "R-PA"
+    ]
   },
   {
     "id": "L-PEKUKU",
@@ -1672,7 +1678,10 @@
     "corpusFrequencyAdy": 425,
     "corpusFrequencyKbd": 649,
     "partOfSpeech": "noun",
-    "corpusFrequency": 1074
+    "corpusFrequency": 1074,
+    "rootIds": [
+      "R-WNA"
+    ]
   },
   {
     "id": "L-PEFYQ",
@@ -1949,7 +1958,10 @@
     "lemmaId": "LEMMA-BZE",
     "partOfSpeech": "noun",
     "corpusFrequency": 153,
-    "conceptId": "TONGUE"
+    "conceptId": "TONGUE",
+    "rootIds": [
+      "R-BZA"
+    ]
   },
   {
     "id": "L-FYN",
@@ -2236,7 +2248,10 @@
     "corpusFrequencyKbd": 329,
     "partOfSpeech": "noun",
     "corpusFrequency": 329,
-    "conceptId": "PETROLEUM"
+    "conceptId": "PETROLEUM",
+    "rootIds": [
+      "R-SCHY"
+    ]
   },
   {
     "id": "L-SH1E",
@@ -2275,7 +2290,10 @@
     "corpusFrequencyAdy": 37,
     "corpusFrequencyKbd": 65,
     "partOfSpeech": "noun",
-    "corpusFrequency": 65
+    "corpusFrequency": 65,
+    "rootIds": [
+      "R-SCHE"
+    ]
   },
   {
     "id": "L-DAGHE",
@@ -2809,7 +2827,10 @@
     "corpusFrequencyKbd": 210,
     "partOfSpeech": "noun",
     "corpusFrequency": 325,
-    "conceptId": "SEA"
+    "conceptId": "SEA",
+    "rootIds": [
+      "R-KHY"
+    ]
   },
   {
     "id": "L-KKHUHE",
@@ -2950,7 +2971,10 @@
       "morphemeIds": [],
       "rule": "root"
     },
-    "corpusFrequency": 61
+    "corpusFrequency": 61,
+    "rootIds": [
+      "R-FO"
+    ]
   },
   {
     "id": "L-FOSHYGHU",
@@ -3039,7 +3063,10 @@
     "corpusFrequencyKbd": 230,
     "partOfSpeech": "noun",
     "corpusFrequency": 230,
-    "conceptId": "TRAIN"
+    "conceptId": "TRAIN",
+    "rootIds": [
+      "R-MAFA"
+    ]
   },
   {
     "id": "L-MAF1EGU",
@@ -3135,7 +3162,10 @@
     "corpusFrequencyAdy": 403,
     "corpusFrequencyKbd": 947,
     "partOfSpeech": "noun",
-    "corpusFrequency": 1350
+    "corpusFrequency": 1350,
+    "rootIds": [
+      "R-PSY"
+    ]
   },
   {
     "id": "L-SHEPS",
@@ -3327,7 +3357,10 @@
     "corpusFrequencyAdy": 474,
     "corpusFrequencyKbd": 468,
     "partOfSpeech": "noun",
-    "corpusFrequency": 942
+    "corpusFrequency": 942,
+    "rootIds": [
+      "R-PSA"
+    ]
   },
   {
     "id": "L-PSEUN",
@@ -8869,7 +8902,10 @@
     },
     "partOfSpeech": "noun",
     "corpusFrequency": 312,
-    "ipa": "/русский'''  !! '''инджылыбзэ/"
+    "ipa": "/русский'''  !! '''инджылыбзэ/",
+    "rootIds": [
+      "R-MEZ"
+    ]
   },
   {
     "id": "L-MEZYM",
@@ -9636,7 +9672,10 @@
     ],
     "notes": "C-11.3: git! emir kipi. кӀуэн fiilinden. Deyimler: кӀуэ пэтми, КӀуэ сытми. Korpus: 18203.",
     "ipa": "/kʹʷɐ/",
-    "corpusFrequency": 185
+    "corpusFrequency": 185,
+    "rootIds": [
+      "R-KWA"
+    ]
   },
   {
     "id": "L-K1UER",
@@ -10026,7 +10065,10 @@
     "partOfSpeech": "numeral",
     "ipa": "/bʁʷə/",
     "corpusFrequency": 3500,
-    "notes": "KBD Corpus rank 93"
+    "notes": "KBD Corpus rank 93",
+    "rootIds": [
+      "R-BGHW"
+    ]
   },
   {
     "id": "L-PSH1Y",
@@ -10319,7 +10361,10 @@
       "rule": "auto_prefix"
     },
     "corpusFrequency": 855,
-    "ipa": "/русский'''  !! '''инджылыбзэ/"
+    "ipa": "/русский'''  !! '''инджылыбзэ/",
+    "rootIds": [
+      "R-MAXWA"
+    ]
   },
   {
     "id": "L-MAZE",
@@ -10340,7 +10385,10 @@
       "rule": "auto_fuzzy"
     },
     "corpusFrequency": 192,
-    "ipa": "/русский'''  !! '''инджылыбзэ/"
+    "ipa": "/русский'''  !! '''инджылыбзэ/",
+    "rootIds": [
+      "R-MAZA"
+    ]
   },
   {
     "id": "L-ILHES",
@@ -10555,7 +10603,10 @@
       "rule": "root"
     },
     "corpusFrequency": 34,
-    "ipa": "/пхъу/"
+    "ipa": "/пхъу/",
+    "rootIds": [
+      "R-PKHW"
+    ]
   },
   {
     "id": "L-BZYLKHUGHE",
@@ -10873,7 +10924,10 @@
       "rule": "auto_prefix"
     },
     "corpusFrequency": 678,
-    "ipa": "/русский'''  !! '''инджылыбзэ/"
+    "ipa": "/русский'''  !! '''инджылыбзэ/",
+    "rootIds": [
+      "R-SHHA"
+    ]
   },
   {
     "id": "L-AQYL",
@@ -11077,7 +11131,10 @@
       "rule": "auto_prefix"
     },
     "corpusFrequency": 240,
-    "ipa": "/русский'''  !! '''инджылыбзэ/"
+    "ipa": "/русский'''  !! '''инджылыбзэ/",
+    "rootIds": [
+      "R-NA"
+    ]
   },
   {
     "id": "L-NAP1E",
@@ -11104,7 +11161,10 @@
     "notes": "C-11.3: kategori tasnifi. [NADIR]",
     "status": "rare",
     "corpusFrequency": 69,
-    "ipa": "/жь/"
+    "ipa": "/жь/",
+    "rootIds": [
+      "R-ZHA"
+    ]
   },
   {
     "id": "L-PSHCHE",
@@ -11115,7 +11175,10 @@
     "notes": "C-11.3: kategori tasnifi. [NADIR]",
     "status": "rare",
     "corpusFrequency": 123,
-    "ipa": "/пщ/"
+    "ipa": "/пщ/",
+    "rootIds": [
+      "R-PSHA"
+    ]
   },
   {
     "id": "L-TEMAK",
@@ -11170,7 +11233,10 @@
     "notes": "C-11.3: kategori tasnifi. [NADIR]",
     "status": "rare",
     "corpusFrequency": 82,
-    "ipa": "/ныб/"
+    "ipa": "/ныб/",
+    "rootIds": [
+      "R-NYBA"
+    ]
   },
   {
     "id": "L-BGY",
@@ -11192,7 +11258,10 @@
     "notes": "C-11.3: kategori tasnifi. [NADIR]",
     "status": "rare",
     "corpusFrequency": 42,
-    "ipa": "/тх/"
+    "ipa": "/тх/",
+    "rootIds": [
+      "R-TKH"
+    ]
   },
   {
     "id": "L-1EBLE",
@@ -11353,7 +11422,10 @@
     "status": "rare",
     "corpusFrequency": 45,
     "conceptId": "DEER",
-    "ipa": "/мыщ/"
+    "ipa": "/мыщ/",
+    "rootIds": [
+      "R-MYSHA"
+    ]
   },
   {
     "id": "L-BADZE",
@@ -11417,7 +11489,8 @@
     "notes": "C-11.3: kategori tasnifi. [NADIR]",
     "status": "rare",
     "corpusFrequency": 9,
-    "ipa": "/мор/"
+    "ipa": "/мор/",
+    "conceptId": "PURPLE"
   },
   {
     "id": "L-TKHEMADE",
@@ -12846,7 +12919,10 @@
     },
     "corpusFrequency": 782,
     "conceptId": "HEART",
-    "ipa": "/русский'''  !! '''инджылыбзэ/"
+    "ipa": "/русский'''  !! '''инджылыбзэ/",
+    "rootIds": [
+      "R-GU"
+    ]
   },
   {
     "id": "L-GUPSESAN",
@@ -13817,7 +13893,10 @@
     "partOfSpeech": "noun",
     "notes": "Felsefi/ontolojik kavram",
     "corpusFrequency": 1270,
-    "ipa": "/тхь/"
+    "ipa": "/тхь/",
+    "rootIds": [
+      "R-THA"
+    ]
   },
   {
     "id": "L-TKHEUSYKHE",
@@ -15707,7 +15786,10 @@
     },
     "wordFamilyId": "WF-L-D0B1D0B3D18A",
     "notes": "",
-    "corpusFrequency": 61
+    "corpusFrequency": 61,
+    "rootIds": [
+      "R-BGHA"
+    ]
   },
   {
     "id": "L-D182D185D18B",
@@ -15782,7 +15864,10 @@
     },
     "wordFamilyId": "WF-L-D0B1D0B6D18D",
     "notes": "",
-    "corpusFrequency": 58
+    "corpusFrequency": 58,
+    "rootIds": [
+      "R-BZHA"
+    ]
   },
   {
     "id": "L-D188D18DD0BD",
@@ -15872,7 +15957,10 @@
     },
     "wordFamilyId": "WF-L-D188D18BD0B3",
     "notes": "",
-    "corpusFrequency": 44
+    "corpusFrequency": 44,
+    "rootIds": [
+      "R-SHYGHW"
+    ]
   },
   {
     "id": "L-D380D0B5D0B9",
@@ -16567,7 +16655,7 @@
   {
     "id": "L-D0B3D18AD183",
     "form": "гъуабэ",
-    "ipa": "",
+    "ipa": "/ʁʷaːba/",
     "literalMeaning": "kahverengi",
     "partOfSpeech": "adjective",
     "derivation": {
@@ -16577,7 +16665,8 @@
     },
     "wordFamilyId": "WF-L-D0B3D18AD183",
     "notes": "",
-    "corpusFrequency": 0
+    "corpusFrequency": 0,
+    "conceptId": "BROWN"
   },
   {
     "id": "L-D0BAD18AD183",
@@ -16592,7 +16681,8 @@
     },
     "wordFamilyId": "WF-L-D0BAD18AD183",
     "notes": "",
-    "corpusFrequency": 35
+    "corpusFrequency": 35,
+    "conceptId": "MULTICOLOR"
   },
   {
     "id": "L-D0B0D0BAD18A",
@@ -16963,7 +17053,10 @@
     "partOfSpeech": "noun",
     "notes": "Dogrulandi: temel kelime",
     "corpusFrequency": 112,
-    "ipa": "/русский'''  !! '''инджылыбзэ/"
+    "ipa": "/русский'''  !! '''инджылыбзэ/",
+    "rootIds": [
+      "R-LY"
+    ]
   },
   {
     "id": "L-D0BBD18BD0B3",
@@ -17244,7 +17337,10 @@
     "partOfSpeech": "noun",
     "notes": "Dogrulandi: temel kelime",
     "corpusFrequency": 392,
-    "ipa": "/русский'''  !! '''инджылыбзэ/"
+    "ipa": "/русский'''  !! '''инджылыбзэ/",
+    "rootIds": [
+      "R-SHY"
+    ]
   },
   {
     "id": "L-D0B1D0B6D18D",
@@ -17760,7 +17856,10 @@
     },
     "wordFamilyId": "WF-L-D0BFD185D18A",
     "notes": "",
-    "corpusFrequency": 351
+    "corpusFrequency": 351,
+    "rootIds": [
+      "R-PKHA"
+    ]
   },
   {
     "id": "L-D0BFD189D18D",
@@ -18166,7 +18265,7 @@
   {
     "id": "L-D18249D183",
     "form": "тIу",
-    "ipa": "",
+    "ipa": "/t'əw/",
     "literalMeaning": "iki (2)",
     "partOfSpeech": "numeral",
     "derivation": {
@@ -18176,12 +18275,13 @@
     },
     "wordFamilyId": "WF-L-D18249D183",
     "notes": "",
-    "corpusFrequency": 0
+    "corpusFrequency": 0,
+    "conceptId": "TWO"
   },
   {
     "id": "L-D0BFD0BB49D1",
     "form": "плIы",
-    "ipa": "",
+    "ipa": "/pɬ'ə/",
     "literalMeaning": "dört (4)",
     "partOfSpeech": "numeral",
     "derivation": {
@@ -18191,12 +18291,13 @@
     },
     "wordFamilyId": "WF-L-D0BFD0BB49D1",
     "notes": "",
-    "corpusFrequency": 0
+    "corpusFrequency": 0,
+    "conceptId": "FOUR"
   },
   {
     "id": "L-D0BFD18949D1",
     "form": "пщIы",
-    "ipa": "",
+    "ipa": "/pɕ'ə/",
     "literalMeaning": "on (10)",
     "partOfSpeech": "numeral",
     "derivation": {
@@ -18206,12 +18307,13 @@
     },
     "wordFamilyId": "WF-L-D0BFD18949D1",
     "notes": "",
-    "corpusFrequency": 0
+    "corpusFrequency": 0,
+    "conceptId": "TEN"
   },
   {
     "id": "L-D18249D0BED1",
     "form": "тIощI",
-    "ipa": "",
+    "ipa": "/t'awɕ'/",
     "literalMeaning": "yirmi (20)",
     "partOfSpeech": "numeral",
     "derivation": {
@@ -18221,12 +18323,13 @@
     },
     "wordFamilyId": "WF-L-D18249D0BED1",
     "notes": "Onluk sistem",
-    "corpusFrequency": 0
+    "corpusFrequency": 0,
+    "conceptId": "TWENTY"
   },
   {
     "id": "L-D189D18DD189",
     "form": "щэщI",
-    "ipa": "",
+    "ipa": "/ɕaɕ'/",
     "literalMeaning": "otuz (30)",
     "partOfSpeech": "numeral",
     "derivation": {
@@ -18236,12 +18339,13 @@
     },
     "wordFamilyId": "WF-L-D189D18DD189",
     "notes": "Onluk sistem",
-    "corpusFrequency": 0
+    "corpusFrequency": 0,
+    "conceptId": "THIRTY"
   },
   {
     "id": "L-D0BFD0BB49D1",
     "form": "плIыщI",
-    "ipa": "",
+    "ipa": "/pɬ'əɕ'/",
     "literalMeaning": "kırk (40)",
     "partOfSpeech": "numeral",
     "derivation": {
@@ -18251,12 +18355,13 @@
     },
     "wordFamilyId": "WF-L-D0BFD0BB49D1",
     "notes": "Onluk sistem",
-    "corpusFrequency": 0
+    "corpusFrequency": 0,
+    "conceptId": "FORTY"
   },
   {
     "id": "L-D182D185D183",
     "form": "тхущI",
-    "ipa": "",
+    "ipa": "/txʷəɕ'/",
     "literalMeaning": "elli (50)",
     "partOfSpeech": "numeral",
     "derivation": {
@@ -18266,12 +18371,13 @@
     },
     "wordFamilyId": "WF-L-D182D185D183",
     "notes": "Onluk sistem",
-    "corpusFrequency": 0
+    "corpusFrequency": 0,
+    "conceptId": "FIFTY"
   },
   {
     "id": "L-D185D18BD189",
     "form": "хыщI",
-    "ipa": "",
+    "ipa": "/xəɕ'/",
     "literalMeaning": "altmış (60)",
     "partOfSpeech": "numeral",
     "derivation": {
@@ -18281,12 +18387,13 @@
     },
     "wordFamilyId": "WF-L-D185D18BD189",
     "notes": "Onluk sistem",
-    "corpusFrequency": 0
+    "corpusFrequency": 0,
+    "conceptId": "SIXTY"
   },
   {
     "id": "L-D0B1D0BBD18B",
     "form": "блыщI",
-    "ipa": "",
+    "ipa": "/bɮəɕ'/",
     "literalMeaning": "yetmiş (70)",
     "partOfSpeech": "numeral",
     "derivation": {
@@ -18296,12 +18403,13 @@
     },
     "wordFamilyId": "WF-L-D0B1D0BBD18B",
     "notes": "Onluk sistem",
-    "corpusFrequency": 0
+    "corpusFrequency": 0,
+    "conceptId": "SEVENTY"
   },
   {
     "id": "L-D0B8D18949",
     "form": "ищI",
-    "ipa": "",
+    "ipa": "/jəɕ'/",
     "literalMeaning": "seksen (80)",
     "partOfSpeech": "numeral",
     "derivation": {
@@ -18311,12 +18419,13 @@
     },
     "wordFamilyId": "WF-L-D0B8D18949",
     "notes": "Onluk sistem",
-    "corpusFrequency": 0
+    "corpusFrequency": 0,
+    "conceptId": "EIGHTY"
   },
   {
     "id": "L-D0B1D0B3D18A",
     "form": "бгъущI",
-    "ipa": "",
+    "ipa": "/bʁʷəɕ'/",
     "literalMeaning": "doksan (90)",
     "partOfSpeech": "numeral",
     "derivation": {
@@ -18326,7 +18435,8 @@
     },
     "wordFamilyId": "WF-L-D0B1D0B3D18A",
     "notes": "Onluk sistem",
-    "corpusFrequency": 0
+    "corpusFrequency": 0,
+    "conceptId": "NINETY"
   },
   {
     "id": "L-D18249D0BED1",
@@ -20559,7 +20669,10 @@
     "partOfSpeech": "noun",
     "notes": "Dogrulandi: sozluk kaynagi",
     "corpusFrequency": 231,
-    "ipa": "/дыщ/"
+    "ipa": "/дыщ/",
+    "rootIds": [
+      "R-DYSHA"
+    ]
   },
   {
     "id": "L-MELYL",
@@ -20942,7 +21055,10 @@
     "partOfSpeech": "noun",
     "notes": "Dogrulandi: temel kelime",
     "corpusFrequency": 147,
-    "ipa": "/русский'''  !! '''инджылыбзэ/"
+    "ipa": "/русский'''  !! '''инджылыбзэ/",
+    "rootIds": [
+      "R-HAE"
+    ]
   },
   {
     "id": "L-SH1AKHQUE",
@@ -20982,7 +21098,10 @@
     "partOfSpeech": "noun",
     "notes": "Dogrulandi: temel kelime",
     "corpusFrequency": 76,
-    "ipa": "/лъ/"
+    "ipa": "/лъ/",
+    "rootIds": [
+      "R-LHA"
+    ]
   },
   {
     "id": "L-GHASH1E",
@@ -21754,7 +21873,10 @@
     "wordFamilyId": "WF-NUM",
     "derivation": null,
     "corpusFrequency": 66,
-    "dialectVariants": null
+    "dialectVariants": null,
+    "rootIds": [
+      "R-BGHW"
+    ]
   },
   {
     "id": "L-PSHCH1Y",
@@ -21975,7 +22097,10 @@
     "wordFamilyId": "WF-Religion",
     "derivation": null,
     "corpusFrequency": 1842,
-    "dialectVariants": null
+    "dialectVariants": null,
+    "rootIds": [
+      "R-THA"
+    ]
   },
   {
     "id": "L-TSYXHUGHE",
@@ -22114,7 +22239,10 @@
     "wordFamilyId": "WF-KHY2",
     "derivation": null,
     "corpusFrequency": 325,
-    "dialectVariants": null
+    "dialectVariants": null,
+    "rootIds": [
+      "R-KHY"
+    ]
   },
   {
     "id": "L-SHCH",
@@ -22413,7 +22541,10 @@
     "wordFamilyId": "WF-SHHYE",
     "derivation": null,
     "corpusFrequency": 678,
-    "dialectVariants": null
+    "dialectVariants": null,
+    "rootIds": [
+      "R-SHHA"
+    ]
   },
   {
     "id": "L-EDZ",
@@ -22452,7 +22583,10 @@
     "wordFamilyId": "WF-XY",
     "derivation": null,
     "corpusFrequency": 3800,
-    "dialectVariants": null
+    "dialectVariants": null,
+    "rootIds": [
+      "R-KHY"
+    ]
   },
   {
     "id": "L-DYGHUZH",
@@ -22533,7 +22667,7 @@
   {
     "id": "L-CORPUS-00004",
     "form": "абыхэм",
-    "literalMeaning": "",
+    "literalMeaning": "(personal demonstrative pron., 3rd person plural; used as subject with transitive verbs)\n1) them; ~ сэлам схуефхыж: give them my regards; дэ ~ деплъащ: we looked at them; абыхэмкӀэ егъэджакӀуэм арэзыщ",
     "partOfSpeech": "noun",
     "corpusFrequency": 3051,
     "dialectVariants": {
@@ -22569,7 +22703,7 @@
   {
     "id": "L-CORPUS-00007",
     "form": "псори",
-    "literalMeaning": "",
+    "literalMeaning": "1. (as a) whole; wholly; entirely;\n2. as adj. universal, general; for all; ~ еджапӀэм щегъэджэныгъэ: general school education.",
     "partOfSpeech": "noun",
     "corpusFrequency": 2382,
     "dialectVariants": {
@@ -22926,7 +23060,7 @@
   {
     "id": "L-CORPUS-00036",
     "form": "гуэр",
-    "literalMeaning": "",
+    "literalMeaning": "indefinite  someone; something; some; a certain",
     "partOfSpeech": "noun",
     "corpusFrequency": 679,
     "dialectVariants": {
@@ -23409,7 +23543,7 @@
   {
     "id": "L-CORPUS-00075",
     "form": "хъуа",
-    "literalMeaning": "",
+    "literalMeaning": "ripe",
     "partOfSpeech": "noun",
     "corpusFrequency": 429,
     "dialectVariants": {
@@ -23472,7 +23606,7 @@
   {
     "id": "L-CORPUS-00080",
     "form": "унэм",
-    "literalMeaning": "",
+    "literalMeaning": "at home; ~ щылэжьэн: to work at home",
     "partOfSpeech": "noun",
     "corpusFrequency": 406,
     "dialectVariants": {
@@ -23957,7 +24091,7 @@
   {
     "id": "L-CORPUS-00119",
     "form": "ит",
-    "literalMeaning": "",
+    "literalMeaning": "~ щыӀэкъым: stupid, dull; ~ зэман: gram. present tense",
     "partOfSpeech": "noun",
     "corpusFrequency": 307,
     "dialectVariants": {
@@ -25190,7 +25324,7 @@
   {
     "id": "L-CORPUS-00218",
     "form": "дэтхэнэми",
-    "literalMeaning": "",
+    "literalMeaning": "everyone",
     "partOfSpeech": "noun",
     "corpusFrequency": 183,
     "dialectVariants": {
@@ -25652,7 +25786,7 @@
   {
     "id": "L-CORPUS-00255",
     "form": "ипэ",
-    "literalMeaning": "",
+    "literalMeaning": "ипэм къыщыщӀэдзауэ икӀэм нэс: from beginning to end, from A to Z.",
     "partOfSpeech": "noun",
     "corpusFrequency": 161,
     "dialectVariants": {
@@ -26248,7 +26382,7 @@
   {
     "id": "L-CORPUS-00303",
     "form": "закъуэу",
-    "literalMeaning": "",
+    "literalMeaning": "alone, on one's own; individually",
     "partOfSpeech": "noun",
     "corpusFrequency": 133,
     "dialectVariants": {
@@ -27208,7 +27342,7 @@
   {
     "id": "L-CORPUS-00380",
     "form": "ирехъу",
-    "literalMeaning": "",
+    "literalMeaning": "~ апхуэдэу: all right, very well; right you are, so be it.",
     "partOfSpeech": "noun",
     "corpusFrequency": 107,
     "dialectVariants": {
@@ -27345,7 +27479,7 @@
   {
     "id": "L-CORPUS-00391",
     "form": "егугъуу",
-    "literalMeaning": "",
+    "literalMeaning": "diligently, assiduously, industriously",
     "partOfSpeech": "noun",
     "corpusFrequency": 103,
     "dialectVariants": {
@@ -27624,7 +27758,7 @@
   {
     "id": "L-CORPUS-00413",
     "form": "мыхъу",
-    "literalMeaning": "",
+    "literalMeaning": "unripe.",
     "partOfSpeech": "noun",
     "corpusFrequency": 99,
     "dialectVariants": {
@@ -28319,7 +28453,7 @@
   {
     "id": "L-CORPUS-00469",
     "form": "истамбыл",
-    "literalMeaning": "",
+    "literalMeaning": "Istanbul; Constantinople; Byzantium; * ~ губгъуафэ изоплъ жызыӀам нэхъей: divination by coffee-grounds",
     "partOfSpeech": "noun",
     "corpusFrequency": 87,
     "dialectVariants": {
@@ -29335,7 +29469,7 @@
   {
     "id": "L-CORPUS-00550",
     "form": "амин",
-    "literalMeaning": "",
+    "literalMeaning": "amen!",
     "partOfSpeech": "noun",
     "corpusFrequency": 74,
     "dialectVariants": {
@@ -30029,7 +30163,11 @@
       "kabardian": "пшэ"
     },
     "notes": "Corpus v1.0 (freq: 67, lang: kbd, source: 1.Ady-Ady_AP)",
-    "ipa": "/пш/"
+    "ipa": "/пш/",
+    "rootIds": [
+      "R-PSHA2"
+    ],
+    "wordFamilyId": "WF-PSHA2"
   },
   {
     "id": "L-CORPUS-00605",
@@ -30131,7 +30269,7 @@
   {
     "id": "L-CORPUS-00613",
     "form": "бынхэр",
-    "literalMeaning": "",
+    "literalMeaning": "children, kids, offspring (sons and daughters)",
     "partOfSpeech": "noun",
     "corpusFrequency": 66,
     "dialectVariants": {
@@ -30240,7 +30378,7 @@
   {
     "id": "L-CORPUS-00622",
     "form": "мыхэр",
-    "literalMeaning": "",
+    "literalMeaning": "(demonstrative ) these.",
     "partOfSpeech": "noun",
     "corpusFrequency": 65,
     "dialectVariants": {
@@ -30542,7 +30680,7 @@
   {
     "id": "L-CORPUS-00646",
     "form": "-р",
-    "literalMeaning": "",
+    "literalMeaning": "~р suff. denotes (definite) absolutive case",
     "partOfSpeech": "noun",
     "corpusFrequency": 63,
     "dialectVariants": {
@@ -30802,7 +30940,7 @@
   {
     "id": "L-CORPUS-00667",
     "form": "къэхъуа",
-    "literalMeaning": "",
+    "literalMeaning": "of къэхъун.",
     "partOfSpeech": "noun",
     "corpusFrequency": 62,
     "dialectVariants": {
@@ -30987,7 +31125,11 @@
       "kabardian": "мыл"
     },
     "notes": "Corpus v1.0 (freq: 60, lang: kbd, source: 1.Ady-Ady_AP)",
-    "ipa": "/русский'''  !! '''инджылыбзэ/"
+    "ipa": "/русский'''  !! '''инджылыбзэ/",
+    "rootIds": [
+      "R-MYL"
+    ],
+    "wordFamilyId": "WF-MYL"
   },
   {
     "id": "L-CORPUS-00682",
@@ -31182,7 +31324,7 @@
   {
     "id": "L-CORPUS-00697",
     "form": "игугъу",
-    "literalMeaning": "",
+    "literalMeaning": "(postposition) about (smb., smth.); дэ абы ~ тщӀащ: we talked about him.",
     "partOfSpeech": "noun",
     "corpusFrequency": 59,
     "dialectVariants": {
@@ -31382,7 +31524,7 @@
   {
     "id": "L-CORPUS-00713",
     "form": "гъэгъа",
-    "literalMeaning": "",
+    "literalMeaning": "bot. flower",
     "partOfSpeech": "noun",
     "corpusFrequency": 57,
     "dialectVariants": {
@@ -31792,7 +31934,7 @@
   {
     "id": "L-CORPUS-00746",
     "form": "армыхъумэ",
-    "literalMeaning": "",
+    "literalMeaning": "otherwise; or (else).",
     "partOfSpeech": "noun",
     "corpusFrequency": 53,
     "dialectVariants": {
@@ -32575,7 +32717,7 @@
   {
     "id": "L-CORPUS-00808",
     "form": "дэт",
-    "literalMeaning": "",
+    "literalMeaning": "standing between (smth.)",
     "partOfSpeech": "noun",
     "corpusFrequency": 49,
     "dialectVariants": {
@@ -33898,7 +34040,7 @@
   {
     "id": "L-CORPUS-00913",
     "form": "тэрч",
-    "literalMeaning": "",
+    "literalMeaning": "Terek (name of river in Caucasia); * ~ кхъуэ исыкӀащ: saying. the pig swam across the Terek (reply to indiscreet question of excessively curious person)",
     "partOfSpeech": "noun",
     "corpusFrequency": 43,
     "dialectVariants": {
@@ -34923,7 +35065,7 @@
   {
     "id": "L-CORPUS-00994",
     "form": "нахуэу",
-    "literalMeaning": "",
+    "literalMeaning": "clearly; obviously, evidently, manifestly; definitely; * ~ жыӀэнрэ нэ ищӀынрэ (зэхуэдэщ): saying. home truths are hard to swallow; truth hurts; ~ тхьэр гъэпцӀын: to lie impudently/insolently",
     "partOfSpeech": "noun",
     "corpusFrequency": 40,
     "dialectVariants": {
@@ -35921,7 +36063,7 @@
   {
     "id": "L-CORPUS-01073",
     "form": "къэгъэшын",
-    "literalMeaning": "",
+    "literalMeaning": "1. to bend, curve (smth.); гъущӀкӀапсэр къэгъэшын: to bend the wire;\n2. to turn (smth.) in the other direction;\n3. fig. to persuade (smb.);\n4. fig. to tame, subdue (smb.).",
     "partOfSpeech": "noun",
     "corpusFrequency": 37,
     "dialectVariants": {
@@ -37108,7 +37250,7 @@
   {
     "id": "L-CORPUS-01167",
     "form": "губжьауэ",
-    "literalMeaning": "",
+    "literalMeaning": "angrily; wrathfully",
     "partOfSpeech": "noun",
     "corpusFrequency": 34,
     "dialectVariants": {
@@ -37223,7 +37365,7 @@
   {
     "id": "L-CORPUS-01176",
     "form": "зэщхь",
-    "literalMeaning": "",
+    "literalMeaning": "alike, similar",
     "partOfSpeech": "noun",
     "corpusFrequency": 34,
     "dialectVariants": {
@@ -37659,7 +37801,7 @@
   {
     "id": "L-CORPUS-01211",
     "form": "тха",
-    "literalMeaning": "",
+    "literalMeaning": "1. written;\n2. the one who wrote",
     "partOfSpeech": "noun",
     "corpusFrequency": 33,
     "dialectVariants": {
@@ -37932,7 +38074,7 @@
   {
     "id": "L-CORPUS-01233",
     "form": "къалъхуа",
-    "literalMeaning": "",
+    "literalMeaning": "1. born;\n2. descendant, offspring.",
     "partOfSpeech": "noun",
     "corpusFrequency": 32,
     "dialectVariants": {
@@ -38470,7 +38612,7 @@
   {
     "id": "L-CORPUS-01276",
     "form": "махуэу",
-    "literalMeaning": "",
+    "literalMeaning": "by day.",
     "partOfSpeech": "noun",
     "corpusFrequency": 31,
     "dialectVariants": {
@@ -39051,7 +39193,7 @@
   {
     "id": "L-CORPUS-01322",
     "form": "дапщэщи",
-    "literalMeaning": "",
+    "literalMeaning": "always, anytime.",
     "partOfSpeech": "noun",
     "corpusFrequency": 30,
     "dialectVariants": {
@@ -39192,7 +39334,7 @@
   {
     "id": "L-CORPUS-01333",
     "form": "зэгухьэныгъэ",
-    "literalMeaning": "",
+    "literalMeaning": "1. unification;\n2. unity",
     "partOfSpeech": "noun",
     "corpusFrequency": 30,
     "dialectVariants": {
@@ -39577,7 +39719,7 @@
   {
     "id": "L-CORPUS-01364",
     "form": "ишхын",
-    "literalMeaning": "",
+    "literalMeaning": "to eat away; to corrode",
     "partOfSpeech": "noun",
     "corpusFrequency": 29,
     "dialectVariants": {
@@ -40075,7 +40217,7 @@
   {
     "id": "L-CORPUS-01404",
     "form": "ныкъусаныгъэ",
-    "literalMeaning": "",
+    "literalMeaning": "shortcoming; imperfection; лэжьыгъэм хэлъ ныкъусаныгъэхэр къыщӀэгъэщын: to expose shortcomings in work",
     "partOfSpeech": "noun",
     "corpusFrequency": 28,
     "dialectVariants": {
@@ -40906,7 +41048,7 @@
   {
     "id": "L-CORPUS-01470",
     "form": "дахагъэ",
-    "literalMeaning": "",
+    "literalMeaning": "beauty",
     "partOfSpeech": "noun",
     "corpusFrequency": 27,
     "dialectVariants": {
@@ -42041,7 +42183,7 @@
   {
     "id": "L-CORPUS-01560",
     "form": "мэзкуу",
-    "literalMeaning": "",
+    "literalMeaning": "Moscow (lit.: deep forest).",
     "partOfSpeech": "noun",
     "corpusFrequency": 25,
     "dialectVariants": {
@@ -42154,7 +42296,7 @@
   {
     "id": "L-CORPUS-01569",
     "form": "щхьэмыгъазэу",
-    "literalMeaning": "",
+    "literalMeaning": "definitely, vigorously, positively, emphatically, flatly; сэ абы ~ сырибийщ: I am absolutely opposed to it",
     "partOfSpeech": "noun",
     "corpusFrequency": 25,
     "dialectVariants": {
@@ -42316,7 +42458,7 @@
   {
     "id": "L-CORPUS-01582",
     "form": "пэблагъэу",
-    "literalMeaning": "",
+    "literalMeaning": "near, close by (smb., smth).",
     "partOfSpeech": "noun",
     "corpusFrequency": 25,
     "dialectVariants": {
@@ -43173,7 +43315,7 @@
   {
     "id": "L-CORPUS-01650",
     "form": "къэгъэгубжьын",
-    "literalMeaning": "",
+    "literalMeaning": "1. c.f. къэгубжьын;\n2. to make angry, enrage, anger, infuriate (smb.).",
     "partOfSpeech": "noun",
     "corpusFrequency": 24,
     "dialectVariants": {
@@ -43331,7 +43473,7 @@
   {
     "id": "L-CORPUS-01663",
     "form": "щыс",
-    "literalMeaning": "",
+    "literalMeaning": "gathering of young people of a village (for recreation to while away the winter evenings)",
     "partOfSpeech": "noun",
     "corpusFrequency": 24,
     "dialectVariants": {
@@ -43611,7 +43753,7 @@
   {
     "id": "L-CORPUS-01686",
     "form": "инышхуэ",
-    "literalMeaning": "",
+    "literalMeaning": "enormous, huge, immense, tremendous",
     "partOfSpeech": "noun",
     "corpusFrequency": 23,
     "dialectVariants": {
@@ -44292,7 +44434,7 @@
   {
     "id": "L-CORPUS-01739",
     "form": "къута",
-    "literalMeaning": "",
+    "literalMeaning": "broken (down)",
     "partOfSpeech": "noun",
     "corpusFrequency": 23,
     "dialectVariants": {
@@ -44977,7 +45119,7 @@
   {
     "id": "L-CORPUS-01794",
     "form": "зыпэмыплъа",
-    "literalMeaning": "",
+    "literalMeaning": "1.  surprise;\n2. attr unexpected; sudden; surprise",
     "partOfSpeech": "noun",
     "corpusFrequency": 22,
     "dialectVariants": {
@@ -45078,7 +45220,7 @@
   {
     "id": "L-CORPUS-01802",
     "form": "ирикъуху",
-    "literalMeaning": "",
+    "literalMeaning": "in plenty, in abundance; plenty, enough",
     "partOfSpeech": "noun",
     "corpusFrequency": 22,
     "dialectVariants": {
@@ -45206,7 +45348,7 @@
   {
     "id": "L-CORPUS-01812",
     "form": "принцип",
-    "literalMeaning": "",
+    "literalMeaning": "principle.",
     "partOfSpeech": "noun",
     "corpusFrequency": 22,
     "dialectVariants": {
@@ -45409,7 +45551,7 @@
   {
     "id": "L-CORPUS-01828",
     "form": "итхъа",
-    "literalMeaning": "",
+    "literalMeaning": "line (long narrow mark traced on surface)",
     "partOfSpeech": "noun",
     "corpusFrequency": 22,
     "dialectVariants": {
@@ -45421,7 +45563,7 @@
   {
     "id": "L-CORPUS-01829",
     "form": "къэщтэныгъэ",
-    "literalMeaning": "",
+    "literalMeaning": "act.\n1. taking, seizure; быдапӀэ ~: capture/seizure of a fortress;\n2. approval, confirmation (of smth.); ratification (of an agreement, contract, treaty, pact). | act. of къэщтэн II.",
     "partOfSpeech": "noun",
     "corpusFrequency": 22,
     "dialectVariants": {
@@ -45445,7 +45587,7 @@
   {
     "id": "L-CORPUS-01831",
     "form": "зэпымууэ",
-    "literalMeaning": "",
+    "literalMeaning": "continuously, uninterruptedly",
     "partOfSpeech": "noun",
     "corpusFrequency": 22,
     "dialectVariants": {
@@ -45936,7 +46078,7 @@
   {
     "id": "L-CORPUS-01870",
     "form": "ищхьэ",
-    "literalMeaning": "",
+    "literalMeaning": "1. superior; фӀагъ ~ зиӀэ товар: goods of the highest quality;\n2. : еджапӀэ ~: higher institutes of education; the Higher School; II adv above; * ~ течауэ: adv openly, frankly, candidly",
     "partOfSpeech": "noun",
     "corpusFrequency": 21,
     "dialectVariants": {
@@ -45973,7 +46115,7 @@
   {
     "id": "L-CORPUS-01873",
     "form": "теуэныгъэ",
-    "literalMeaning": "",
+    "literalMeaning": "1. act. of теуэн;\n2.  assault, attack; aggression; теуэныгъэм щӀэкъу: aggressive, belligerent",
     "partOfSpeech": "noun",
     "corpusFrequency": 21,
     "dialectVariants": {
@@ -46549,7 +46691,7 @@
   {
     "id": "L-CORPUS-01918",
     "form": "къэпхъуэтэн",
-    "literalMeaning": "",
+    "literalMeaning": "1. to grab, catch, grasp (smb., smth.);\n2. fig. to under­stand, comprehend, grasp, master, learn (smth.).",
     "partOfSpeech": "noun",
     "corpusFrequency": 21,
     "dialectVariants": {
@@ -47105,7 +47247,7 @@
   {
     "id": "L-CORPUS-01963",
     "form": "гугъуу",
-    "literalMeaning": "",
+    "literalMeaning": "with difficulty",
     "partOfSpeech": "noun",
     "corpusFrequency": 20,
     "dialectVariants": {
@@ -47502,7 +47644,7 @@
   {
     "id": "L-CORPUS-01994",
     "form": "еджагъэшхуэ",
-    "literalMeaning": "",
+    "literalMeaning": "scholar; scientist (specialist in some field)",
     "partOfSpeech": "noun",
     "corpusFrequency": 20,
     "dialectVariants": {
@@ -47553,7 +47695,7 @@
   {
     "id": "L-CORPUS-01998",
     "form": "еуэныгъэ",
-    "literalMeaning": "",
+    "literalMeaning": "act. of еуэн",
     "partOfSpeech": "noun",
     "corpusFrequency": 20,
     "dialectVariants": {
@@ -47616,7 +47758,7 @@
   {
     "id": "L-CORPUS-02003",
     "form": "щыта",
-    "literalMeaning": "",
+    "literalMeaning": "of щытын",
     "partOfSpeech": "noun",
     "corpusFrequency": 20,
     "dialectVariants": {
@@ -48277,7 +48419,7 @@
   {
     "id": "L-CORPUS-02056",
     "form": "къимыдзэн",
-    "literalMeaning": "",
+    "literalMeaning": "n.f. къидзэн; * шотым ~: not to recognize/admit/acknowledge (ex.: smb.'s services).",
     "partOfSpeech": "noun",
     "corpusFrequency": 19,
     "dialectVariants": {
@@ -48353,7 +48495,7 @@
   {
     "id": "L-CORPUS-02062",
     "form": "мытэмэм",
-    "literalMeaning": "",
+    "literalMeaning": "inaccurate, inexact.",
     "partOfSpeech": "noun",
     "corpusFrequency": 19,
     "dialectVariants": {
@@ -48711,7 +48853,7 @@
   {
     "id": "L-CORPUS-02090",
     "form": "дахащэ",
-    "literalMeaning": "",
+    "literalMeaning": "very beautiful, very handsome",
     "partOfSpeech": "noun",
     "corpusFrequency": 19,
     "dialectVariants": {
@@ -49849,7 +49991,7 @@
   {
     "id": "L-CORPUS-02180",
     "form": "губжьа",
-    "literalMeaning": "",
+    "literalMeaning": "1. angered, incensed, infuriated;\n2. as adj angry, cross; irate, wrathful",
     "partOfSpeech": "noun",
     "corpusFrequency": 18,
     "dialectVariants": {
@@ -49963,7 +50105,7 @@
   {
     "id": "L-CORPUS-02189",
     "form": "щхьэзакъуэ",
-    "literalMeaning": "",
+    "literalMeaning": "1. solitary, lonely; lone;\n2. private; ~ мылъку: private property",
     "partOfSpeech": "noun",
     "corpusFrequency": 18,
     "dialectVariants": {
@@ -50244,7 +50386,7 @@
   {
     "id": "L-CORPUS-02211",
     "form": "илъэситху",
-    "literalMeaning": "",
+    "literalMeaning": "1.  five years;\n2. attr of five years; five-year; ~ план: five-year plan",
     "partOfSpeech": "noun",
     "corpusFrequency": 18,
     "dialectVariants": {
@@ -50269,7 +50411,7 @@
   {
     "id": "L-CORPUS-02213",
     "form": "гъуа",
-    "literalMeaning": "",
+    "literalMeaning": "dried up; withered",
     "partOfSpeech": "noun",
     "corpusFrequency": 18,
     "dialectVariants": {
@@ -50346,7 +50488,7 @@
   {
     "id": "L-CORPUS-02219",
     "form": "къэгъэсэбэпыныгъэ",
-    "literalMeaning": "",
+    "literalMeaning": "act. use, utilization.",
     "partOfSpeech": "noun",
     "corpusFrequency": 18,
     "dialectVariants": {
@@ -50759,12 +50901,16 @@
       "kabardian": ""
     },
     "notes": "Corpus v1.0 (freq: 18, lang: ady, source: 1.Ady-Ady_AP)",
-    "ipa": "/русский'''  !! '''инджылыбзэ/"
+    "ipa": "/русский'''  !! '''инджылыбзэ/",
+    "rootIds": [
+      "R-MYL"
+    ],
+    "wordFamilyId": "WF-MYL"
   },
   {
     "id": "L-CORPUS-02253",
     "form": "къурмэну",
-    "literalMeaning": "",
+    "literalMeaning": "~ фӀэгъэжын: to slaughter like a ram",
     "partOfSpeech": "noun",
     "corpusFrequency": 17,
     "dialectVariants": {
@@ -50903,7 +51049,7 @@
   {
     "id": "L-CORPUS-02264",
     "form": "къэзыухъуреихь",
-    "literalMeaning": "",
+    "literalMeaning": "see къэзыухь.",
     "partOfSpeech": "noun",
     "corpusFrequency": 17,
     "dialectVariants": {
@@ -51028,7 +51174,7 @@
   {
     "id": "L-CORPUS-02274",
     "form": "бахъсэн",
-    "literalMeaning": "",
+    "literalMeaning": "Baksan (river in North Caucasus)",
     "partOfSpeech": "noun",
     "corpusFrequency": 17,
     "dialectVariants": {
@@ -51716,7 +51862,7 @@
   {
     "id": "L-CORPUS-02328",
     "form": "езэгъ",
-    "literalMeaning": "",
+    "literalMeaning": "acceptable",
     "partOfSpeech": "noun",
     "corpusFrequency": 17,
     "dialectVariants": {
@@ -51791,7 +51937,7 @@
   {
     "id": "L-CORPUS-02334",
     "form": "шыхьа",
-    "literalMeaning": "",
+    "literalMeaning": "wound; coiled",
     "partOfSpeech": "noun",
     "corpusFrequency": 17,
     "dialectVariants": {
@@ -52225,7 +52371,7 @@
   {
     "id": "L-CORPUS-02369",
     "form": "-м",
-    "literalMeaning": "",
+    "literalMeaning": "~м (suffix) denotes (definite) relative case.",
     "partOfSpeech": "noun",
     "corpusFrequency": 17,
     "dialectVariants": {
@@ -52521,7 +52667,7 @@
   {
     "id": "L-CORPUS-02393",
     "form": "лэжьа",
-    "literalMeaning": "",
+    "literalMeaning": "completed, carried out, done (ex.: of a job) |  worn-out (of clothes)",
     "partOfSpeech": "noun",
     "corpusFrequency": 16,
     "dialectVariants": {
@@ -52684,7 +52830,7 @@
   {
     "id": "L-CORPUS-02406",
     "form": "щыхуэныгъэ",
-    "literalMeaning": "",
+    "literalMeaning": "act smearing, greasing",
     "partOfSpeech": "noun",
     "corpusFrequency": 16,
     "dialectVariants": {
@@ -52774,7 +52920,7 @@
   {
     "id": "L-CORPUS-02413",
     "form": "мобы",
-    "literalMeaning": "",
+    "literalMeaning": "(demonstrative ) that.",
     "partOfSpeech": "noun",
     "corpusFrequency": 16,
     "dialectVariants": {
@@ -52876,7 +53022,7 @@
   {
     "id": "L-CORPUS-02421",
     "form": "тыныгъэ",
-    "literalMeaning": "",
+    "literalMeaning": "lightness, easiness (ex.: of work)",
     "partOfSpeech": "noun",
     "corpusFrequency": 16,
     "dialectVariants": {
@@ -53670,7 +53816,7 @@
   {
     "id": "L-CORPUS-02483",
     "form": "хъумэныгъэ",
-    "literalMeaning": "",
+    "literalMeaning": "act. I\n1. keeping, saving, preserving;\n2. guarding, protection, defence; II  defence",
     "partOfSpeech": "noun",
     "corpusFrequency": 16,
     "dialectVariants": {
@@ -53785,7 +53931,7 @@
   {
     "id": "L-CORPUS-02492",
     "form": "гъэлъэгъуэныгъэ",
-    "literalMeaning": "",
+    "literalMeaning": "act\n1. show, demonstration;\n2. nomination (of candidature)",
     "partOfSpeech": "noun",
     "corpusFrequency": 16,
     "dialectVariants": {
@@ -54836,7 +54982,7 @@
   {
     "id": "L-CORPUS-02576",
     "form": "зэгъэлъэн",
-    "literalMeaning": "",
+    "literalMeaning": "1. to pleat;\n2. to knit (ex.: one's brow); to wrinkle (ex.: one's nose)",
     "partOfSpeech": "noun",
     "corpusFrequency": 15,
     "dialectVariants": {
@@ -55271,7 +55417,7 @@
   {
     "id": "L-CORPUS-02610",
     "form": "шха",
-    "literalMeaning": "",
+    "literalMeaning": "pasted/stuck/gummed/glued together",
     "partOfSpeech": "noun",
     "corpusFrequency": 15,
     "dialectVariants": {
@@ -55296,7 +55442,7 @@
   {
     "id": "L-CORPUS-02612",
     "form": "мышу",
-    "literalMeaning": "",
+    "literalMeaning": "1. fresh, sweet;\n2. not salted, not salty.",
     "partOfSpeech": "noun",
     "corpusFrequency": 15,
     "dialectVariants": {
@@ -55450,7 +55596,7 @@
   {
     "id": "L-CORPUS-02624",
     "form": "мызахуэ",
-    "literalMeaning": "",
+    "literalMeaning": "1. curved; crooked; wry;\n2. fig. unjust, unfair.",
     "partOfSpeech": "noun",
     "corpusFrequency": 15,
     "dialectVariants": {
@@ -55846,7 +55992,7 @@
   {
     "id": "L-CORPUS-02655",
     "form": "узэда",
-    "literalMeaning": "",
+    "literalMeaning": "1. charged, loaded; фоч ~: charged/loaded rifle;\n2. fig armed, equipped (with knowledge)",
     "partOfSpeech": "noun",
     "corpusFrequency": 15,
     "dialectVariants": {
@@ -55922,7 +56068,7 @@
   {
     "id": "L-CORPUS-02661",
     "form": "тхыныгъэ",
-    "literalMeaning": "",
+    "literalMeaning": "act. spelling, writing",
     "partOfSpeech": "noun",
     "corpusFrequency": 15,
     "dialectVariants": {
@@ -56806,7 +56952,7 @@
   {
     "id": "L-CORPUS-02733",
     "form": "ищхьэм",
-    "literalMeaning": "",
+    "literalMeaning": "above; upstairs; ар ~ щопэу: he lives upstairs",
     "partOfSpeech": "noun",
     "corpusFrequency": 14,
     "dialectVariants": {
@@ -56909,7 +57055,7 @@
   {
     "id": "L-CORPUS-02741",
     "form": "общественнэ",
-    "literalMeaning": "",
+    "literalMeaning": "public, social; ~ лэжьыгъэ: public/social work",
     "partOfSpeech": "noun",
     "corpusFrequency": 14,
     "dialectVariants": {
@@ -57078,7 +57224,7 @@
   {
     "id": "L-CORPUS-02754",
     "form": "тхъуа",
-    "literalMeaning": "",
+    "literalMeaning": "1.  of тхъун;\n2. adj grey, grizzled, greying; жьакӀэ ~: grey beard",
     "partOfSpeech": "noun",
     "corpusFrequency": 14,
     "dialectVariants": {
@@ -57245,7 +57391,7 @@
   {
     "id": "L-CORPUS-02767",
     "form": "гукъыдэжыншэ",
-    "literalMeaning": "",
+    "literalMeaning": "languid, inert, dull, indifferent to everything",
     "partOfSpeech": "noun",
     "corpusFrequency": 14,
     "dialectVariants": {
@@ -57283,7 +57429,7 @@
   {
     "id": "L-CORPUS-02770",
     "form": "гъэунэхуа",
-    "literalMeaning": "",
+    "literalMeaning": "of гъэунэхун",
     "partOfSpeech": "noun",
     "corpusFrequency": 14,
     "dialectVariants": {
@@ -57770,7 +57916,7 @@
   {
     "id": "L-CORPUS-02808",
     "form": "мэлыфэ",
-    "literalMeaning": "",
+    "literalMeaning": "1. sheepskin;\n2.  sheepskin.",
     "partOfSpeech": "noun",
     "corpusFrequency": 14,
     "dialectVariants": {
@@ -58013,7 +58159,7 @@
   {
     "id": "L-CORPUS-02827",
     "form": "къыхаха",
-    "literalMeaning": "",
+    "literalMeaning": "~ нэужь къанэ бжыгъэ: math. difference (remainder after subtraction).",
     "partOfSpeech": "noun",
     "corpusFrequency": 14,
     "dialectVariants": {
@@ -58486,7 +58632,7 @@
   {
     "id": "L-CORPUS-02864",
     "form": "егъэлеиныгъэ",
-    "literalMeaning": "",
+    "literalMeaning": "act. of егъэлеин",
     "partOfSpeech": "noun",
     "corpusFrequency": 14,
     "dialectVariants": {
@@ -58756,7 +58902,7 @@
   {
     "id": "L-CORPUS-02886",
     "form": "чэт",
-    "literalMeaning": "",
+    "literalMeaning": "sheepfold, sheep-shed",
     "partOfSpeech": "noun",
     "corpusFrequency": 14,
     "dialectVariants": {
@@ -58764,7 +58910,11 @@
       "kabardian": ""
     },
     "notes": "Corpus v1.0 (freq: 14, lang: ady, source: 17.Kbd-En_Amjad)",
-    "ipa": "/чэт/"
+    "ipa": "/чэт/",
+    "rootIds": [
+      "R-CHET"
+    ],
+    "wordFamilyId": "WF-CHET"
   },
   {
     "id": "L-CORPUS-02887",
@@ -58830,7 +58980,7 @@
   {
     "id": "L-CORPUS-02892",
     "form": "зэгъусэу",
-    "literalMeaning": "",
+    "literalMeaning": "together.",
     "partOfSpeech": "noun",
     "corpusFrequency": 14,
     "dialectVariants": {
@@ -59517,7 +59667,7 @@
   {
     "id": "L-CORPUS-02948",
     "form": "догуэ",
-    "literalMeaning": "",
+    "literalMeaning": "see догуэт; зэ ~: wait a bit",
     "partOfSpeech": "noun",
     "corpusFrequency": 13,
     "dialectVariants": {
@@ -59620,7 +59770,7 @@
   {
     "id": "L-CORPUS-02956",
     "form": "художественнэ",
-    "literalMeaning": "",
+    "literalMeaning": "artistic; of art",
     "partOfSpeech": "noun",
     "corpusFrequency": 13,
     "dialectVariants": {
@@ -60543,7 +60693,7 @@
   {
     "id": "L-CORPUS-03028",
     "form": "европэ",
-    "literalMeaning": "",
+    "literalMeaning": "Europe",
     "partOfSpeech": "noun",
     "corpusFrequency": 13,
     "dialectVariants": {
@@ -60555,7 +60705,7 @@
   {
     "id": "L-CORPUS-03029",
     "form": "гуэша",
-    "literalMeaning": "",
+    "literalMeaning": "divided",
     "partOfSpeech": "noun",
     "corpusFrequency": 13,
     "dialectVariants": {
@@ -60655,7 +60805,7 @@
   {
     "id": "L-CORPUS-03037",
     "form": "пкъымызагъэ",
-    "literalMeaning": "",
+    "literalMeaning": "1. fidget;\n2.  restless, fidgety.",
     "partOfSpeech": "noun",
     "corpusFrequency": 13,
     "dialectVariants": {
@@ -60794,7 +60944,7 @@
   {
     "id": "L-CORPUS-03048",
     "form": "егугъуныгъэ",
-    "literalMeaning": "",
+    "literalMeaning": "act. effort, strenuous exertion",
     "partOfSpeech": "noun",
     "corpusFrequency": 13,
     "dialectVariants": {
@@ -60896,7 +61046,7 @@
   {
     "id": "L-CORPUS-03056",
     "form": "акъылыншэу",
-    "literalMeaning": "",
+    "literalMeaning": "foolishly, stupidly.",
     "partOfSpeech": "noun",
     "corpusFrequency": 13,
     "dialectVariants": {
@@ -60986,7 +61136,7 @@
   {
     "id": "L-CORPUS-03063",
     "form": "тедзэныгъэ",
-    "literalMeaning": "",
+    "literalMeaning": "act. printing",
     "partOfSpeech": "noun",
     "corpusFrequency": 13,
     "dialectVariants": {
@@ -61049,7 +61199,7 @@
   {
     "id": "L-CORPUS-03068",
     "form": "мыпэж",
-    "literalMeaning": "",
+    "literalMeaning": "1. untruth, falsehood, lie;\n2.  lying, mendacious; deceitful; untrue; false.",
     "partOfSpeech": "noun",
     "corpusFrequency": 13,
     "dialectVariants": {
@@ -61147,7 +61297,7 @@
   {
     "id": "L-CORPUS-03076",
     "form": "хэнэн",
-    "literalMeaning": "",
+    "literalMeaning": "1. to stick, to get/be stuck in smth. (in some mass);\n2. fig to lose in a game",
     "partOfSpeech": "noun",
     "corpusFrequency": 13,
     "dialectVariants": {
@@ -61499,7 +61649,7 @@
   {
     "id": "L-CORPUS-03105",
     "form": "советскэ",
-    "literalMeaning": "",
+    "literalMeaning": "hist. Soviet; Советскэ Союз: the Soviet Union",
     "partOfSpeech": "noun",
     "corpusFrequency": 13,
     "dialectVariants": {
@@ -62211,7 +62361,7 @@
   {
     "id": "L-CORPUS-03162",
     "form": "теорие",
-    "literalMeaning": "",
+    "literalMeaning": "theory",
     "partOfSpeech": "noun",
     "corpusFrequency": 12,
     "dialectVariants": {
@@ -62325,7 +62475,7 @@
   {
     "id": "L-CORPUS-03171",
     "form": "хэгъэхъуэныгъэ",
-    "literalMeaning": "",
+    "literalMeaning": "act.\n1. increase, augmenting (in quantity, number);\n2. infusing, infusion (of smth.) (of liquid);\n3. raising, increasing (ex.: wages)",
     "partOfSpeech": "noun",
     "corpusFrequency": 12,
     "dialectVariants": {
@@ -62401,7 +62551,7 @@
   {
     "id": "L-CORPUS-03177",
     "form": "къэщтауэ",
-    "literalMeaning": "",
+    "literalMeaning": "see жыгдэгу.",
     "partOfSpeech": "noun",
     "corpusFrequency": 12,
     "dialectVariants": {
@@ -62668,7 +62818,7 @@
   {
     "id": "L-CORPUS-03198",
     "form": "тез",
-    "literalMeaning": "",
+    "literalMeaning": "full; Ӏэнэм ~ ерыскъы: table full of viands",
     "partOfSpeech": "noun",
     "corpusFrequency": 12,
     "dialectVariants": {
@@ -63248,7 +63398,7 @@
   {
     "id": "L-CORPUS-03244",
     "form": "къеудыхын",
-    "literalMeaning": "",
+    "literalMeaning": "to bring/knock down (smb., smth.); to shoot down (smth.); to push off (from above); бийм и кхъухьлъатэр ~: to shoot/bring down the enemy aircraft; шым зыгуэр ~: to knock smb. off the horse.",
     "partOfSpeech": "noun",
     "corpusFrequency": 12,
     "dialectVariants": {
@@ -63299,7 +63449,7 @@
   {
     "id": "L-CORPUS-03248",
     "form": "жа",
-    "literalMeaning": "",
+    "literalMeaning": "of жэн |  of жын I",
     "partOfSpeech": "noun",
     "corpusFrequency": 12,
     "dialectVariants": {
@@ -63311,7 +63461,7 @@
   {
     "id": "L-CORPUS-03249",
     "form": "къэнэмэт",
-    "literalMeaning": "",
+    "literalMeaning": "~ илӀыукӀым хэхуэн: he got into a mess.",
     "partOfSpeech": "noun",
     "corpusFrequency": 12,
     "dialectVariants": {
@@ -63660,7 +63810,7 @@
   {
     "id": "L-CORPUS-03276",
     "form": "атлетикэ",
-    "literalMeaning": "",
+    "literalMeaning": "athletics; ~ псынщӀэ: track and field athletics; ~ хъэлъэ:  weight-lifting.",
     "partOfSpeech": "noun",
     "corpusFrequency": 12,
     "dialectVariants": {
@@ -63889,7 +64039,7 @@
   {
     "id": "L-CORPUS-03294",
     "form": "гъэшхэныгъэ",
-    "literalMeaning": "",
+    "literalMeaning": "act nursing, suckling; feeding",
     "partOfSpeech": "noun",
     "corpusFrequency": 12,
     "dialectVariants": {
@@ -63965,7 +64115,7 @@
   {
     "id": "L-CORPUS-03300",
     "form": "иныщэ",
-    "literalMeaning": "",
+    "literalMeaning": "1.  mass, bulk;\n2. adj enormous, huge, immense",
     "partOfSpeech": "noun",
     "corpusFrequency": 12,
     "dialectVariants": {
@@ -64079,7 +64229,7 @@
   {
     "id": "L-CORPUS-03309",
     "form": "къэмыгъэхъун",
-    "literalMeaning": "",
+    "literalMeaning": "not to allow, permit (smth.).",
     "partOfSpeech": "noun",
     "corpusFrequency": 12,
     "dialectVariants": {
@@ -64130,7 +64280,7 @@
   {
     "id": "L-CORPUS-03313",
     "form": "убгъуа",
-    "literalMeaning": "",
+    "literalMeaning": "1. of убгъун;\n2. as adj detailed, comprehensive; * псалъуха ~: gram. extended sentence",
     "partOfSpeech": "noun",
     "corpusFrequency": 12,
     "dialectVariants": {
@@ -65264,7 +65414,7 @@
   {
     "id": "L-CORPUS-03406",
     "form": "пэзэз",
-    "literalMeaning": "",
+    "literalMeaning": "1. stopping on the spot; дыгъэ ~: scorching/broiling sun;\n2. fig. plunged/plunging deep in thought;\n3. fig. pained; perturbed.",
     "partOfSpeech": "noun",
     "corpusFrequency": 11,
     "dialectVariants": {
@@ -65276,7 +65426,7 @@
   {
     "id": "L-CORPUS-03407",
     "form": "къэмыхъун",
-    "literalMeaning": "",
+    "literalMeaning": "n.f. къэхъун.",
     "partOfSpeech": "noun",
     "corpusFrequency": 11,
     "dialectVariants": {
@@ -65390,7 +65540,7 @@
   {
     "id": "L-CORPUS-03416",
     "form": "псыгъуэу",
-    "literalMeaning": "",
+    "literalMeaning": "thinly.",
     "partOfSpeech": "noun",
     "corpusFrequency": 11,
     "dialectVariants": {
@@ -65618,7 +65768,7 @@
   {
     "id": "L-CORPUS-03434",
     "form": "мыкъабзэ",
-    "literalMeaning": "",
+    "literalMeaning": "unclean, dirty.",
     "partOfSpeech": "noun",
     "corpusFrequency": 11,
     "dialectVariants": {
@@ -65859,7 +66009,7 @@
   {
     "id": "L-CORPUS-03453",
     "form": "мыбыдэ",
-    "literalMeaning": "",
+    "literalMeaning": "not strong/solid/durable; fragile; precarious, insecure; unstable; псэуалъэ ~: flimsily- constructed building; jerry– built house; щытыкӀэ ~: precarious state.",
     "partOfSpeech": "noun",
     "corpusFrequency": 11,
     "dialectVariants": {
@@ -66014,7 +66164,7 @@
   {
     "id": "L-CORPUS-03465",
     "form": "хэсэныгъэ",
-    "literalMeaning": "",
+    "literalMeaning": "1. act. plating; кӀэртӀоф ~: potato planting;\n2. n seedlings",
     "partOfSpeech": "noun",
     "corpusFrequency": 11,
     "dialectVariants": {
@@ -66341,7 +66491,7 @@
   {
     "id": "L-CORPUS-03491",
     "form": "хэпща",
-    "literalMeaning": "",
+    "literalMeaning": "of хэпщэн",
     "partOfSpeech": "noun",
     "corpusFrequency": 11,
     "dialectVariants": {
@@ -66403,7 +66553,7 @@
   {
     "id": "L-CORPUS-03496",
     "form": "зыгуэри",
-    "literalMeaning": "",
+    "literalMeaning": "nobody, no one; nothing",
     "partOfSpeech": "noun",
     "corpusFrequency": 11,
     "dialectVariants": {
@@ -66718,7 +66868,7 @@
   {
     "id": "L-CORPUS-03521",
     "form": "хэгъэтын",
-    "literalMeaning": "",
+    "literalMeaning": "1. c.f хэтын;\n2. to give (smb.) the opportunity to become member in smth. (in some organization); to participate, take part in smth.",
     "partOfSpeech": "noun",
     "corpusFrequency": 11,
     "dialectVariants": {
@@ -67128,7 +67278,7 @@
   {
     "id": "L-CORPUS-03553",
     "form": "догуэт",
-    "literalMeaning": "",
+    "literalMeaning": "wait a minute/moment! just a minute!",
     "partOfSpeech": "noun",
     "corpusFrequency": 11,
     "dialectVariants": {
@@ -67640,7 +67790,7 @@
   {
     "id": "L-CORPUS-03593",
     "form": "хъуэжыныгъэ",
-    "literalMeaning": "",
+    "literalMeaning": "act. exchange, exchanging",
     "partOfSpeech": "noun",
     "corpusFrequency": 11,
     "dialectVariants": {
@@ -67677,7 +67827,7 @@
   {
     "id": "L-CORPUS-03596",
     "form": "къэхьэуэ",
-    "literalMeaning": "",
+    "literalMeaning": "coffee.",
     "partOfSpeech": "noun",
     "corpusFrequency": 11,
     "dialectVariants": {
@@ -67689,7 +67839,7 @@
   {
     "id": "L-CORPUS-03597",
     "form": "къыхэхыныгъэ",
-    "literalMeaning": "",
+    "literalMeaning": "act. of къыхэхын.",
     "partOfSpeech": "noun",
     "corpusFrequency": 11,
     "dialectVariants": {
@@ -68480,7 +68630,7 @@
   {
     "id": "L-CORPUS-03662",
     "form": "мыдэн",
-    "literalMeaning": "",
+    "literalMeaning": "n.f. дэн I. |  n.f. дэн II.",
     "partOfSpeech": "noun",
     "corpusFrequency": 11,
     "dialectVariants": {
@@ -69284,7 +69434,7 @@
   {
     "id": "L-CORPUS-03726",
     "form": "мохэр",
-    "literalMeaning": "",
+    "literalMeaning": "(demonstrative ) those.",
     "partOfSpeech": "noun",
     "corpusFrequency": 10,
     "dialectVariants": {
@@ -69837,7 +69987,7 @@
   {
     "id": "L-CORPUS-03769",
     "form": "зэхэс",
-    "literalMeaning": "",
+    "literalMeaning": "1. sitting in one group;\n2. living together; II evening-party; ~ щӀын: to organize an evening-party",
     "partOfSpeech": "noun",
     "corpusFrequency": 10,
     "dialectVariants": {
@@ -70257,7 +70407,7 @@
   {
     "id": "L-CORPUS-03802",
     "form": "упса",
-    "literalMeaning": "",
+    "literalMeaning": "shaven",
     "partOfSpeech": "noun",
     "corpusFrequency": 10,
     "dialectVariants": {
@@ -70463,7 +70613,7 @@
   {
     "id": "L-CORPUS-03818",
     "form": "укъуэдия",
-    "literalMeaning": "",
+    "literalMeaning": "1. stretched, stretched out;\n2. stretched; drawn;\n3. stretched (ex.: of leg, arm)",
     "partOfSpeech": "noun",
     "corpusFrequency": 10,
     "dialectVariants": {
@@ -71109,7 +71259,7 @@
   {
     "id": "L-CORPUS-03868",
     "form": "зэзыпх",
-    "literalMeaning": "",
+    "literalMeaning": "connecting, copulative",
     "partOfSpeech": "noun",
     "corpusFrequency": 10,
     "dialectVariants": {
@@ -71159,7 +71309,7 @@
   {
     "id": "L-CORPUS-03872",
     "form": "зэса",
-    "literalMeaning": "",
+    "literalMeaning": "habit; * ~ сэгъейщ: prov. habit is second nature",
     "partOfSpeech": "noun",
     "corpusFrequency": 10,
     "dialectVariants": {
@@ -72078,7 +72228,7 @@
   {
     "id": "L-CORPUS-03944",
     "form": "шэчыныгъэ",
-    "literalMeaning": "",
+    "literalMeaning": "act weighing (of smb., smth.) | act endurance (see шэчын II)",
     "partOfSpeech": "noun",
     "corpusFrequency": 10,
     "dialectVariants": {
@@ -74698,7 +74848,7 @@
   {
     "id": "L-CORPUS-04156",
     "form": "мыарэзы",
-    "literalMeaning": "",
+    "literalMeaning": "dissatisfied, displeased, discontented, ill-pleased.",
     "partOfSpeech": "noun",
     "corpusFrequency": 9,
     "dialectVariants": {
@@ -74710,7 +74860,7 @@
   {
     "id": "L-CORPUS-04157",
     "form": "щта",
-    "literalMeaning": "",
+    "literalMeaning": "(of щтын)\n1. frozen;\n2. as adj frozen; щӀы ~: frozen ground/earth |  (of щтэн I) taken | I  (of щтэн II) frightened, startled",
     "partOfSpeech": "noun",
     "corpusFrequency": 9,
     "dialectVariants": {
@@ -75357,7 +75507,8 @@
       "kabardian": "дыщафэ"
     },
     "notes": "Corpus v1.0 (freq: 9, lang: kbd, source: 1.Ady-Ady_AP)",
-    "ipa": "/дыщ/"
+    "ipa": "/дыщ/",
+    "conceptId": "GOLDEN"
   },
   {
     "id": "L-CORPUS-04208",
@@ -75453,7 +75604,7 @@
   {
     "id": "L-CORPUS-04215",
     "form": "зыщыпсэу",
-    "literalMeaning": "",
+    "literalMeaning": "dwelling; inhabited; residential",
     "partOfSpeech": "noun",
     "corpusFrequency": 9,
     "dialectVariants": {
@@ -75477,7 +75628,7 @@
   {
     "id": "L-CORPUS-04217",
     "form": "зыкъутэ",
-    "literalMeaning": "",
+    "literalMeaning": "blasting; demolition",
     "partOfSpeech": "noun",
     "corpusFrequency": 9,
     "dialectVariants": {
@@ -75654,7 +75805,7 @@
   {
     "id": "L-CORPUS-04231",
     "form": "жыжьагъ",
-    "literalMeaning": "",
+    "literalMeaning": "(э)  distance; range; топышэр зыдынэлъэтысым и ~: range of the gun-shell",
     "partOfSpeech": "noun",
     "corpusFrequency": 9,
     "dialectVariants": {
@@ -75821,7 +75972,7 @@
   {
     "id": "L-CORPUS-04244",
     "form": "хэтыныгъэ",
-    "literalMeaning": "",
+    "literalMeaning": "act. of хэтын",
     "partOfSpeech": "noun",
     "corpusFrequency": 9,
     "dialectVariants": {
@@ -76230,7 +76381,7 @@
   {
     "id": "L-CORPUS-04276",
     "form": "гъуэрыгъуэу",
-    "literalMeaning": "",
+    "literalMeaning": "(рэ)  in turn, by turns",
     "partOfSpeech": "noun",
     "corpusFrequency": 9,
     "dialectVariants": {
@@ -76364,7 +76515,8 @@
       "kabardian": "тхьэмбылыфэ"
     },
     "notes": "Corpus v1.0 (freq: 9, lang: kbd, source: 1.Ady-Ady_AP)",
-    "ipa": "/тхьэмбыл/"
+    "ipa": "/тхьэмбыл/",
+    "conceptId": "PINK"
   },
   {
     "id": "L-CORPUS-04287",
@@ -76548,7 +76700,7 @@
   {
     "id": "L-CORPUS-04301",
     "form": "псэлъэныгъэ",
-    "literalMeaning": "",
+    "literalMeaning": "act. appearance in public (in order to deliver a speech) (lit.: speaking, talking).",
     "partOfSpeech": "noun",
     "corpusFrequency": 9,
     "dialectVariants": {
@@ -76972,7 +77124,7 @@
   {
     "id": "L-CORPUS-04334",
     "form": "къэгубжьа",
-    "literalMeaning": "",
+    "literalMeaning": "angered, incensed, infuriated.",
     "partOfSpeech": "noun",
     "corpusFrequency": 9,
     "dialectVariants": {
@@ -77226,7 +77378,7 @@
   {
     "id": "L-CORPUS-04354",
     "form": "спискэ",
-    "literalMeaning": "",
+    "literalMeaning": "1. list;\n2. record (document)",
     "partOfSpeech": "noun",
     "corpusFrequency": 9,
     "dialectVariants": {
@@ -77251,7 +77403,7 @@
   {
     "id": "L-CORPUS-04356",
     "form": "мыкуу",
-    "literalMeaning": "",
+    "literalMeaning": "not deep, rather shallow; псы ~: shallow river.",
     "partOfSpeech": "noun",
     "corpusFrequency": 9,
     "dialectVariants": {
@@ -77339,7 +77491,7 @@
   {
     "id": "L-CORPUS-04363",
     "form": "губжьыныгъэ",
-    "literalMeaning": "",
+    "literalMeaning": "act of губжьын",
     "partOfSpeech": "noun",
     "corpusFrequency": 9,
     "dialectVariants": {
@@ -77720,7 +77872,7 @@
   {
     "id": "L-CORPUS-04394",
     "form": "мыин",
-    "literalMeaning": "",
+    "literalMeaning": "small, not big/large.",
     "partOfSpeech": "noun",
     "corpusFrequency": 9,
     "dialectVariants": {
@@ -77817,7 +77969,7 @@
   {
     "id": "L-CORPUS-04402",
     "form": "илъэсищэ",
-    "literalMeaning": "",
+    "literalMeaning": "1.  hundred years; century;\n2. attr centenary, centennial",
     "partOfSpeech": "noun",
     "corpusFrequency": 9,
     "dialectVariants": {
@@ -77926,7 +78078,7 @@
   {
     "id": "L-CORPUS-04411",
     "form": "социалистическэ",
-    "literalMeaning": "",
+    "literalMeaning": "socialist",
     "partOfSpeech": "noun",
     "corpusFrequency": 9,
     "dialectVariants": {
@@ -78119,7 +78271,7 @@
   {
     "id": "L-CORPUS-04427",
     "form": "дагъыстан",
-    "literalMeaning": "",
+    "literalMeaning": "1.  Daghestan;\n2. attr Daghestan",
     "partOfSpeech": "noun",
     "corpusFrequency": 9,
     "dialectVariants": {
@@ -79258,7 +79410,7 @@
   {
     "id": "L-CORPUS-04520",
     "form": "зэпытрэ",
-    "literalMeaning": "",
+    "literalMeaning": "~ зэкӀэсу укӀуэ!: colloq. good riddance!, nobody is stopping you",
     "partOfSpeech": "noun",
     "corpusFrequency": 9,
     "dialectVariants": {
@@ -79469,7 +79621,7 @@
   {
     "id": "L-CORPUS-04537",
     "form": "теннис",
-    "literalMeaning": "",
+    "literalMeaning": "1.  lawn tennis; table tennis;\n2. attr tennis",
     "partOfSpeech": "noun",
     "corpusFrequency": 8,
     "dialectVariants": {
@@ -79519,7 +79671,7 @@
   {
     "id": "L-CORPUS-04541",
     "form": "къина",
-    "literalMeaning": "",
+    "literalMeaning": "left; remaining, staying; II\n1. remainder, rest, residue; remains, leavings, leftovers;\n2. embezzler, peculator.",
     "partOfSpeech": "noun",
     "corpusFrequency": 8,
     "dialectVariants": {
@@ -79722,7 +79874,7 @@
   {
     "id": "L-CORPUS-04557",
     "form": "бэлэрыгъауэ",
-    "literalMeaning": "",
+    "literalMeaning": "unexpectedly, by surprise, unawares; * бэлэрыгъыр ~ хуозэ: (saying) an imprudent man is taken unawares",
     "partOfSpeech": "noun",
     "corpusFrequency": 8,
     "dialectVariants": {
@@ -79913,7 +80065,7 @@
   {
     "id": "L-CORPUS-04572",
     "form": "пылъ",
-    "literalMeaning": "",
+    "literalMeaning": "1. that lies near smth., lying near smth., touching smth.;\n2. that hangs on smth., hanging on smth. | \n1. loving;\n2. love.",
     "partOfSpeech": "noun",
     "corpusFrequency": 8,
     "dialectVariants": {
@@ -80015,7 +80167,7 @@
   {
     "id": "L-CORPUS-04580",
     "form": "камерэ",
-    "literalMeaning": "",
+    "literalMeaning": "1. cell, chamber; щхьэзакъуэ ~: solitary (confinement) cell; one-man cell; хьэпшып хъумапӀэ ~: cloak-room, check-room; тутнакъэщ ~: prison cell;\n2. bladder (of ball); inner tube (of tyre); хьэфэтопым ",
     "partOfSpeech": "noun",
     "corpusFrequency": 8,
     "dialectVariants": {
@@ -80179,7 +80331,7 @@
   {
     "id": "L-CORPUS-04593",
     "form": "быдагъ",
-    "literalMeaning": "",
+    "literalMeaning": "(э) strength, solidity, firmness",
     "partOfSpeech": "noun",
     "corpusFrequency": 8,
     "dialectVariants": {
@@ -80447,7 +80599,7 @@
   {
     "id": "L-CORPUS-04614",
     "form": "хозяйствэ",
-    "literalMeaning": "",
+    "literalMeaning": "1. economy;\n2. agric. farm, holding;\n3. housekeeping;\n4. equipment",
     "partOfSpeech": "noun",
     "corpusFrequency": 8,
     "dialectVariants": {
@@ -80485,7 +80637,7 @@
   {
     "id": "L-CORPUS-04617",
     "form": "забастовкэ",
-    "literalMeaning": "",
+    "literalMeaning": "1. strike; ~ къэӀэтын: to strike, to go on strike; to come/walk out; ~ щӀын: to declare a strike;\n2. attr strike",
     "partOfSpeech": "noun",
     "corpusFrequency": 8,
     "dialectVariants": {
@@ -80729,7 +80881,7 @@
   {
     "id": "L-CORPUS-04636",
     "form": "бауэ",
-    "literalMeaning": "",
+    "literalMeaning": "breathing, respiration; breath; ~ хьэлъэ: heavy breath",
     "partOfSpeech": "noun",
     "corpusFrequency": 8,
     "dialectVariants": {
@@ -81037,7 +81189,7 @@
   {
     "id": "L-CORPUS-04660",
     "form": "щымыгъуазэ",
-    "literalMeaning": "",
+    "literalMeaning": "uninformed, ill-informed, not conversant (with), ignorant (of), not acquainted (with)",
     "partOfSpeech": "noun",
     "corpusFrequency": 8,
     "dialectVariants": {
@@ -81316,7 +81468,7 @@
   {
     "id": "L-CORPUS-04682",
     "form": "английскэ",
-    "literalMeaning": "",
+    "literalMeaning": "English; British; ~ шыгъу: Epsom salts.",
     "partOfSpeech": "noun",
     "corpusFrequency": 8,
     "dialectVariants": {
@@ -81353,7 +81505,7 @@
   {
     "id": "L-CORPUS-04685",
     "form": "къытехьа",
-    "literalMeaning": "",
+    "literalMeaning": "of къытехьэн.",
     "partOfSpeech": "noun",
     "corpusFrequency": 8,
     "dialectVariants": {
@@ -81391,7 +81543,7 @@
   {
     "id": "L-CORPUS-04688",
     "form": "тепсэлъыхьыныгъэ",
-    "literalMeaning": "",
+    "literalMeaning": "act. discussion; тхылъыщӀэм ~: discussion of the new book",
     "partOfSpeech": "noun",
     "corpusFrequency": 8,
     "dialectVariants": {
@@ -81788,7 +81940,7 @@
   {
     "id": "L-CORPUS-04719",
     "form": "илъабжьэм",
-    "literalMeaning": "",
+    "literalMeaning": "below, downstairs; ~ си ныбжьэгъур щопсэу: my friend lives downstairs",
     "partOfSpeech": "noun",
     "corpusFrequency": 8,
     "dialectVariants": {
@@ -82042,7 +82194,7 @@
   {
     "id": "L-CORPUS-04739",
     "form": "къатибл",
-    "literalMeaning": "",
+    "literalMeaning": "folk. seven-layered soil.",
     "partOfSpeech": "noun",
     "corpusFrequency": 8,
     "dialectVariants": {
@@ -82182,7 +82334,7 @@
   {
     "id": "L-CORPUS-04750",
     "form": "къытепхъуэн",
-    "literalMeaning": "",
+    "literalMeaning": "1. to spread (smth.); стӀолтепхъуэр ~: to lay the table­-cloth;\n2. to cover (smb., smth. with smth.).",
     "partOfSpeech": "noun",
     "corpusFrequency": 8,
     "dialectVariants": {
@@ -82496,7 +82648,12 @@
       "adyghe": "",
       "kabardian": "тхэ"
     },
-    "notes": "Corpus v1.0 (freq: 8, lang: kbd, source: 5.Ady-Rus_Qarden)"
+    "notes": "Corpus v1.0 (freq: 8, lang: kbd, source: 5.Ady-Rus_Qarden)",
+    "rootIds": [
+      "R-TKHE"
+    ],
+    "wordFamilyId": "WF-TKHE",
+    "ipa": "/txa/"
   },
   {
     "id": "L-CORPUS-04775",
@@ -82937,7 +83094,7 @@
   {
     "id": "L-CORPUS-04809",
     "form": "плъа",
-    "literalMeaning": "",
+    "literalMeaning": "of плъэн. |  (of плъын)\n1. heated, brought to a great heat;\n2. fig. feverish.",
     "partOfSpeech": "noun",
     "corpusFrequency": 8,
     "dialectVariants": {
@@ -83162,7 +83319,7 @@
   {
     "id": "L-CORPUS-04827",
     "form": "къэхъуныгъэ",
-    "literalMeaning": "",
+    "literalMeaning": "act.\n1. emergence, rise;\n2. growth.",
     "partOfSpeech": "noun",
     "corpusFrequency": 8,
     "dialectVariants": {
@@ -83328,7 +83485,7 @@
   {
     "id": "L-CORPUS-04840",
     "form": "ичэзууэ",
-    "literalMeaning": "",
+    "literalMeaning": "in time; at the right/proper time; in proper time; opportunely",
     "partOfSpeech": "noun",
     "corpusFrequency": 8,
     "dialectVariants": {
@@ -83379,7 +83536,7 @@
   {
     "id": "L-CORPUS-04844",
     "form": "псыхьа",
-    "literalMeaning": "",
+    "literalMeaning": "1. tempered, hardened (of metals);\n2. as adj.; fig. hardened, tried and tested.",
     "partOfSpeech": "noun",
     "corpusFrequency": 8,
     "dialectVariants": {
@@ -83532,7 +83689,7 @@
   {
     "id": "L-CORPUS-04856",
     "form": "пружинэ",
-    "literalMeaning": "",
+    "literalMeaning": "spring; сыхьэт ~: mainspring, spring of clock/watch; ~ зэрылъ уэншэку: spring-mattress.",
     "partOfSpeech": "noun",
     "corpusFrequency": 8,
     "dialectVariants": {
@@ -83607,7 +83764,7 @@
   {
     "id": "L-CORPUS-04862",
     "form": "ашыч",
-    "literalMeaning": "",
+    "literalMeaning": "1) box; case; chest;\n2) drawer.",
     "partOfSpeech": "noun",
     "corpusFrequency": 8,
     "dialectVariants": {
@@ -83876,7 +84033,7 @@
   {
     "id": "L-CORPUS-04883",
     "form": "джэшхъурей",
-    "literalMeaning": "",
+    "literalMeaning": "see гуузджэш",
     "partOfSpeech": "noun",
     "corpusFrequency": 8,
     "dialectVariants": {
@@ -84051,7 +84208,7 @@
   {
     "id": "L-CORPUS-04897",
     "form": "мылъагэ",
-    "literalMeaning": "",
+    "literalMeaning": "not high, low.",
     "partOfSpeech": "noun",
     "corpusFrequency": 8,
     "dialectVariants": {
@@ -206935,7 +207092,7 @@
   {
     "id": "L-VERIFIED-00035",
     "form": "член",
-    "literalMeaning": "",
+    "literalMeaning": "member; профсоюзым и ~: member of trade union",
     "partOfSpeech": "noun",
     "corpusFrequency": 8,
     "dialectVariants": {
@@ -207449,7 +207606,7 @@
   {
     "id": "L-VERIFIED-00077",
     "form": "къэуэж",
-    "literalMeaning": "",
+    "literalMeaning": "mil. explosive, bursting; шэ ~: explosive bullet.",
     "partOfSpeech": "noun",
     "corpusFrequency": 7,
     "dialectVariants": {
@@ -207652,7 +207809,7 @@
   {
     "id": "L-VERIFIED-00093",
     "form": "жьэгупащхьэ",
-    "literalMeaning": "",
+    "literalMeaning": "1. place by the hearth;\n2. living room; \n3. fig. family hearth.",
     "partOfSpeech": "noun",
     "corpusFrequency": 7,
     "dialectVariants": {
@@ -207806,7 +207963,7 @@
   {
     "id": "L-VERIFIED-00105",
     "form": "техыныгъэ",
-    "literalMeaning": "",
+    "literalMeaning": "act. of техын",
     "partOfSpeech": "noun",
     "corpusFrequency": 7,
     "dialectVariants": {
@@ -208009,7 +208166,7 @@
   {
     "id": "L-VERIFIED-00121",
     "form": "гъуэрыгъуэ",
-    "literalMeaning": "",
+    "literalMeaning": "shift system, sequence, regular succession",
     "partOfSpeech": "noun",
     "corpusFrequency": 7,
     "dialectVariants": {
@@ -208317,7 +208474,7 @@
   {
     "id": "L-VERIFIED-00145",
     "form": "гува",
-    "literalMeaning": "",
+    "literalMeaning": "1. delayed;\n2. as adj belated, delayed, tardy",
     "partOfSpeech": "noun",
     "corpusFrequency": 7,
     "dialectVariants": {
@@ -208380,7 +208537,7 @@
   {
     "id": "L-VERIFIED-00150",
     "form": "мыдахэ",
-    "literalMeaning": "",
+    "literalMeaning": "plain, not beautiful, not good-looking; ugly, not nice.",
     "partOfSpeech": "noun",
     "corpusFrequency": 7,
     "dialectVariants": {
@@ -208392,7 +208549,7 @@
   {
     "id": "L-VERIFIED-00151",
     "form": "къыпхиудын",
-    "literalMeaning": "",
+    "literalMeaning": "to break, burst, to be breached.",
     "partOfSpeech": "noun",
     "corpusFrequency": 7,
     "dialectVariants": {
@@ -208670,7 +208827,7 @@
   {
     "id": "L-VERIFIED-00173",
     "form": "щыхуэ",
-    "literalMeaning": "",
+    "literalMeaning": "ointment; liniment; grease, oil",
     "partOfSpeech": "noun",
     "corpusFrequency": 7,
     "dialectVariants": {
@@ -208978,7 +209135,7 @@
   {
     "id": "L-VERIFIED-00197",
     "form": "щыхьыбз",
-    "literalMeaning": "",
+    "literalMeaning": "doe (female of deer)",
     "partOfSpeech": "noun",
     "corpusFrequency": 7,
     "dialectVariants": {
@@ -209336,7 +209493,7 @@
   {
     "id": "L-VERIFIED-00225",
     "form": "чэтхъа",
-    "literalMeaning": "",
+    "literalMeaning": "1. torn (to pieces);\n2. as adj torn",
     "partOfSpeech": "noun",
     "corpusFrequency": 7,
     "dialectVariants": {
@@ -209821,7 +209978,7 @@
   {
     "id": "L-VERIFIED-00263",
     "form": "псэущхьэшх",
-    "literalMeaning": "",
+    "literalMeaning": "gullet, throat.",
     "partOfSpeech": "noun",
     "corpusFrequency": 7,
     "dialectVariants": {
@@ -210014,7 +210171,7 @@
   {
     "id": "L-VERIFIED-00278",
     "form": "адыгэщ",
-    "literalMeaning": "",
+    "literalMeaning": "Circassia, land/country of the Circassians, Circassian land/soil.",
     "partOfSpeech": "noun",
     "corpusFrequency": 7,
     "dialectVariants": {
@@ -210153,7 +210310,7 @@
   {
     "id": "L-VERIFIED-00289",
     "form": "нартсанэ",
-    "literalMeaning": "",
+    "literalMeaning": "Narzan (kind of mineral water; lit.: drink of the Narts)",
     "partOfSpeech": "noun",
     "corpusFrequency": 7,
     "dialectVariants": {
@@ -210242,7 +210399,7 @@
   {
     "id": "L-VERIFIED-00296",
     "form": "псибл",
-    "literalMeaning": "",
+    "literalMeaning": "strong; hardy, tough (of very hardy person, animal; lit.: seven souls).",
     "partOfSpeech": "noun",
     "corpusFrequency": 7,
     "dialectVariants": {
@@ -210279,7 +210436,7 @@
   {
     "id": "L-VERIFIED-00299",
     "form": "мыжэ",
-    "literalMeaning": "",
+    "literalMeaning": "stagnant; псы ~: stagnant water.",
     "partOfSpeech": "noun",
     "corpusFrequency": 7,
     "dialectVariants": {
@@ -211579,7 +211736,7 @@
   {
     "id": "L-VERIFIED-00401",
     "form": "утхъуа",
-    "literalMeaning": "",
+    "literalMeaning": "1. of утхъуэн;\n2. as adj turbid, muddy, cloudy; псы ~: turbid water",
     "partOfSpeech": "noun",
     "corpusFrequency": 7,
     "dialectVariants": {
@@ -211733,7 +211890,7 @@
   {
     "id": "L-VERIFIED-00413",
     "form": "ахъшэншэу",
-    "literalMeaning": "",
+    "literalMeaning": "without money.",
     "partOfSpeech": "noun",
     "corpusFrequency": 7,
     "dialectVariants": {
@@ -211925,7 +212082,7 @@
   {
     "id": "L-VERIFIED-00428",
     "form": "щыхьэтлыкъыншэ",
-    "literalMeaning": "",
+    "literalMeaning": "unsubstantiated, unfounded",
     "partOfSpeech": "noun",
     "corpusFrequency": 7,
     "dialectVariants": {
@@ -211950,7 +212107,7 @@
   {
     "id": "L-VERIFIED-00430",
     "form": "убзыхуа",
-    "literalMeaning": "",
+    "literalMeaning": "laid out, arranged, set",
     "partOfSpeech": "noun",
     "corpusFrequency": 7,
     "dialectVariants": {
@@ -212141,7 +212298,7 @@
   {
     "id": "L-VERIFIED-00445",
     "form": "щхьэмыжыбэ",
-    "literalMeaning": "",
+    "literalMeaning": "eared, full of ears; branchy; гуэдз ~: wheat full of ears",
     "partOfSpeech": "noun",
     "corpusFrequency": 7,
     "dialectVariants": {
@@ -212166,7 +212323,7 @@
   {
     "id": "L-VERIFIED-00447",
     "form": "кхъуейлъалъэ",
-    "literalMeaning": "",
+    "literalMeaning": "1.  curds, cottage cheese;\n2. attr of 1",
     "partOfSpeech": "noun",
     "corpusFrequency": 7,
     "dialectVariants": {
@@ -212178,7 +212335,7 @@
   {
     "id": "L-VERIFIED-00448",
     "form": "мынэрылъагъу",
-    "literalMeaning": "",
+    "literalMeaning": "see мынаӀуэ.",
     "partOfSpeech": "noun",
     "corpusFrequency": 7,
     "dialectVariants": {
@@ -212582,7 +212739,7 @@
   {
     "id": "L-VERIFIED-00480",
     "form": "къыхэдзыныгъэ",
-    "literalMeaning": "",
+    "literalMeaning": "act.\n1. separation;\n2. fig. expulsion;\n3. math. subtraction.",
     "partOfSpeech": "noun",
     "corpusFrequency": 7,
     "dialectVariants": {
@@ -212644,7 +212801,7 @@
   {
     "id": "L-VERIFIED-00485",
     "form": "мылъкуншэ",
-    "literalMeaning": "",
+    "literalMeaning": "indigent, poor, not propertied.",
     "partOfSpeech": "noun",
     "corpusFrequency": 7,
     "dialectVariants": {
@@ -212681,7 +212838,7 @@
   {
     "id": "L-VERIFIED-00488",
     "form": "калибр",
-    "literalMeaning": "",
+    "literalMeaning": "calibre; ~ ин (пӀащэ) зиӀэ: large caliber; ~ цӀыкӀу зиӀэ: small-calibre",
     "partOfSpeech": "noun",
     "corpusFrequency": 7,
     "dialectVariants": {
@@ -212693,7 +212850,7 @@
   {
     "id": "L-VERIFIED-00489",
     "form": "щхьэщытхъугъэ",
-    "literalMeaning": "",
+    "literalMeaning": "act bragging, boasting",
     "partOfSpeech": "noun",
     "corpusFrequency": 7,
     "dialectVariants": {
@@ -212705,7 +212862,7 @@
   {
     "id": "L-VERIFIED-00490",
     "form": "хабзэн",
-    "literalMeaning": "",
+    "literalMeaning": "to be in the habit (of), to be accustomed (to), to be inclined (to); to happen; to be used (to)",
     "partOfSpeech": "noun",
     "corpusFrequency": 7,
     "dialectVariants": {
@@ -212742,7 +212899,7 @@
   {
     "id": "L-VERIFIED-00493",
     "form": "убыдыныгъэ",
-    "literalMeaning": "",
+    "literalMeaning": "act. catching, capture",
     "partOfSpeech": "noun",
     "corpusFrequency": 7,
     "dialectVariants": {
@@ -212767,7 +212924,7 @@
   {
     "id": "L-VERIFIED-00495",
     "form": "иушкумба",
-    "literalMeaning": "",
+    "literalMeaning": "1.  of иушкумбэн;\n2. adj concave",
     "partOfSpeech": "noun",
     "corpusFrequency": 7,
     "dialectVariants": {
@@ -212865,7 +213022,7 @@
   {
     "id": "L-VERIFIED-00503",
     "form": "сыс",
-    "literalMeaning": "",
+    "literalMeaning": "unsteady, shaky; лъэмыж ~: unsteady bridge",
     "partOfSpeech": "noun",
     "corpusFrequency": 7,
     "dialectVariants": {
@@ -212901,7 +213058,7 @@
   {
     "id": "L-VERIFIED-00506",
     "form": "дыгъуэныгъэ",
-    "literalMeaning": "",
+    "literalMeaning": "act. stealing, theft",
     "partOfSpeech": "noun",
     "corpusFrequency": 7,
     "dialectVariants": {
@@ -213192,7 +213349,7 @@
   {
     "id": "L-VERIFIED-00530",
     "form": "лирическэ",
-    "literalMeaning": "",
+    "literalMeaning": "lyric; lyrical",
     "partOfSpeech": "noun",
     "corpusFrequency": 7,
     "dialectVariants": {
@@ -215616,7 +215773,7 @@
   {
     "id": "L-VERIFIED-00730",
     "form": "минерал",
-    "literalMeaning": "",
+    "literalMeaning": "mineral.",
     "partOfSpeech": "noun",
     "corpusFrequency": 6,
     "dialectVariants": {
@@ -215783,7 +215940,7 @@
   {
     "id": "L-VERIFIED-00743",
     "form": "унэншэ",
-    "literalMeaning": "",
+    "literalMeaning": "homeless",
     "partOfSpeech": "noun",
     "corpusFrequency": 6,
     "dialectVariants": {
@@ -215808,7 +215965,7 @@
   {
     "id": "L-VERIFIED-00745",
     "form": "зэрыбауэ",
-    "literalMeaning": "",
+    "literalMeaning": "respiratory; ~ гъуэгухэр: respiratory tract",
     "partOfSpeech": "noun",
     "corpusFrequency": 6,
     "dialectVariants": {
@@ -216175,7 +216332,7 @@
   {
     "id": "L-VERIFIED-00774",
     "form": "наурыз",
-    "literalMeaning": "",
+    "literalMeaning": "(наурыз псэлъэгъуей)  dumb dog",
     "partOfSpeech": "noun",
     "corpusFrequency": 6,
     "dialectVariants": {
@@ -216326,7 +216483,7 @@
   {
     "id": "L-VERIFIED-00786",
     "form": "кашэ",
-    "literalMeaning": "",
+    "literalMeaning": "kasha (dish of cooked grain or groats); прунж ~: boiled rice",
     "partOfSpeech": "noun",
     "corpusFrequency": 6,
     "dialectVariants": {
@@ -216799,7 +216956,7 @@
   {
     "id": "L-VERIFIED-00823",
     "form": "гъужа",
-    "literalMeaning": "",
+    "literalMeaning": "1. of гъужын;\n2. as adj stunted; poor; wilted",
     "partOfSpeech": "noun",
     "corpusFrequency": 6,
     "dialectVariants": {
@@ -216926,7 +217083,7 @@
   {
     "id": "L-VERIFIED-00833",
     "form": "хагъуэ",
-    "literalMeaning": "",
+    "literalMeaning": "1. med. opal-like alteration of lungs;\n2. agric. milk-wax stage of ripeness (of maize)",
     "partOfSpeech": "noun",
     "corpusFrequency": 6,
     "dialectVariants": {
@@ -217054,7 +217211,7 @@
   {
     "id": "L-VERIFIED-00843",
     "form": "стрелкэ",
-    "literalMeaning": "",
+    "literalMeaning": "1. pointer; hand; arrow (on drawing, etc.); needle (ex.: of compass);\n2. railway points, switch; стрелкэр ешэкӀын: to change the points",
     "partOfSpeech": "noun",
     "corpusFrequency": 6,
     "dialectVariants": {
@@ -217567,7 +217724,7 @@
   {
     "id": "L-VERIFIED-00883",
     "form": "ящыгъупщэжа",
-    "literalMeaning": "",
+    "literalMeaning": "forgotten",
     "partOfSpeech": "noun",
     "corpusFrequency": 6,
     "dialectVariants": {
@@ -217629,7 +217786,7 @@
   {
     "id": "L-VERIFIED-00888",
     "form": "шахтэ",
-    "literalMeaning": "",
+    "literalMeaning": "mine/pit; мывэ фӀамыщӀ къыщыщӀах ~: coal mine",
     "partOfSpeech": "noun",
     "corpusFrequency": 6,
     "dialectVariants": {
@@ -217873,7 +218030,7 @@
   {
     "id": "L-VERIFIED-00907",
     "form": "пшынэдыкъуакъуэ",
-    "literalMeaning": "",
+    "literalMeaning": "kind of harp.",
     "partOfSpeech": "noun",
     "corpusFrequency": 6,
     "dialectVariants": {
@@ -217898,7 +218055,7 @@
   {
     "id": "L-VERIFIED-00909",
     "form": "удмурт",
-    "literalMeaning": "",
+    "literalMeaning": "1.  Udmurt (male);\n2. attr Udmurt",
     "partOfSpeech": "noun",
     "corpusFrequency": 6,
     "dialectVariants": {
@@ -218422,7 +218579,7 @@
   {
     "id": "L-VERIFIED-00950",
     "form": "макъыншэ",
-    "literalMeaning": "",
+    "literalMeaning": "voiceless.",
     "partOfSpeech": "noun",
     "corpusFrequency": 6,
     "dialectVariants": {
@@ -218473,7 +218630,7 @@
   {
     "id": "L-VERIFIED-00954",
     "form": "ва",
-    "literalMeaning": "",
+    "literalMeaning": "tilled, ploughed",
     "partOfSpeech": "noun",
     "corpusFrequency": 6,
     "dialectVariants": {
@@ -218691,7 +218848,7 @@
   {
     "id": "L-VERIFIED-00971",
     "form": "кремль",
-    "literalMeaning": "",
+    "literalMeaning": "citadel; Московскэ Кремль: the Kremlin",
     "partOfSpeech": "noun",
     "corpusFrequency": 6,
     "dialectVariants": {
@@ -218870,7 +219027,7 @@
   {
     "id": "L-VERIFIED-00985",
     "form": "пэрыуэншэ",
-    "literalMeaning": "",
+    "literalMeaning": "free, unimpeded, unhampered.",
     "partOfSpeech": "noun",
     "corpusFrequency": 6,
     "dialectVariants": {
@@ -219112,7 +219269,7 @@
   {
     "id": "L-VERIFIED-01004",
     "form": "мысостей",
-    "literalMeaning": "",
+    "literalMeaning": "~ бжьищ: obs. the three goblets of the Mysosts (punishment for late-comer to evening-party).",
     "partOfSpeech": "noun",
     "corpusFrequency": 6,
     "dialectVariants": {
@@ -219187,7 +219344,7 @@
   {
     "id": "L-VERIFIED-01010",
     "form": "зэхэлъ-зэгъусэ",
-    "literalMeaning": "",
+    "literalMeaning": "gram.: псалъэуха ~: complex sentence",
     "partOfSpeech": "noun",
     "corpusFrequency": 6,
     "dialectVariants": {
@@ -219555,7 +219712,7 @@
   {
     "id": "L-VERIFIED-01039",
     "form": "тедза",
-    "literalMeaning": "",
+    "literalMeaning": " of тедзын",
     "partOfSpeech": "noun",
     "corpusFrequency": 6,
     "dialectVariants": {
@@ -219643,7 +219800,7 @@
   {
     "id": "L-VERIFIED-01046",
     "form": "пыщэтын",
-    "literalMeaning": "",
+    "literalMeaning": "to slip/work/fall down from the end (of smth.).",
     "partOfSpeech": "noun",
     "corpusFrequency": 6,
     "dialectVariants": {
@@ -219656,7 +219813,7 @@
   {
     "id": "L-VERIFIED-01047",
     "form": "къыхуэпэж",
-    "literalMeaning": "",
+    "literalMeaning": "1. true, loyal, faithful (to smb., smth.); devoted (to smb., smth.);\n2. just, fair (to smb., smth.).",
     "partOfSpeech": "noun",
     "corpusFrequency": 6,
     "dialectVariants": {
@@ -219758,7 +219915,7 @@
   {
     "id": "L-VERIFIED-01055",
     "form": "шывей",
-    "literalMeaning": "",
+    "literalMeaning": "horse manure/dung",
     "partOfSpeech": "noun",
     "corpusFrequency": 6,
     "dialectVariants": {
@@ -219822,7 +219979,7 @@
   {
     "id": "L-VERIFIED-01060",
     "form": "иубыдыныгъэ",
-    "literalMeaning": "",
+    "literalMeaning": "act. eclipse; дыгъэр ~: solar eclipse",
     "partOfSpeech": "noun",
     "corpusFrequency": 6,
     "dialectVariants": {
@@ -220002,7 +220159,7 @@
   {
     "id": "L-VERIFIED-01074",
     "form": "быхъуу",
-    "literalMeaning": "",
+    "literalMeaning": "wide, widely; ~ зэтеха нэхэр: wide-open eyes",
     "partOfSpeech": "noun",
     "corpusFrequency": 6,
     "dialectVariants": {
@@ -220179,7 +220336,7 @@
   {
     "id": "L-VERIFIED-01088",
     "form": "тегъэшэн",
-    "literalMeaning": "",
+    "literalMeaning": "1. to bend down, bow (smth.); къудамэр щӀым ~: to bend down the (tree) branch (to the ground);\n2. to bend (smth.); гъущӀ Ӏунапэр ~: to bend the tip of the nail",
     "partOfSpeech": "noun",
     "corpusFrequency": 6,
     "dialectVariants": {
@@ -220266,7 +220423,7 @@
   {
     "id": "L-VERIFIED-01095",
     "form": "армыхъуамэ",
-    "literalMeaning": "",
+    "literalMeaning": "if that did not happen, if that did not obtain.",
     "partOfSpeech": "noun",
     "corpusFrequency": 6,
     "dialectVariants": {
@@ -220610,7 +220767,7 @@
   {
     "id": "L-VERIFIED-01122",
     "form": "аддэ",
-    "literalMeaning": "",
+    "literalMeaning": "1) there, far away; ар ~ ӀукӀащ: he moved far away;\n2) very long ago, long ago, ages ago; ~ зэманыжь лъандэрэ къокӀуэкӀ а хабзэр: this custom has been in practice since time immemorial.",
     "partOfSpeech": "noun",
     "corpusFrequency": 6,
     "dialectVariants": {
@@ -220622,7 +220779,7 @@
   {
     "id": "L-VERIFIED-01123",
     "form": "зрат",
-    "literalMeaning": "",
+    "literalMeaning": "~ нэхърэ зыт: saying. it is better to give than to take",
     "partOfSpeech": "noun",
     "corpusFrequency": 6,
     "dialectVariants": {
@@ -220915,7 +221072,7 @@
   {
     "id": "L-VERIFIED-01146",
     "form": "пэшхуэ",
-    "literalMeaning": "",
+    "literalMeaning": "1. big nose;\n2.  big-nosed.",
     "partOfSpeech": "noun",
     "corpusFrequency": 6,
     "dialectVariants": {
@@ -220927,7 +221084,7 @@
   {
     "id": "L-VERIFIED-01147",
     "form": "актрисэ",
-    "literalMeaning": "",
+    "literalMeaning": "actress.",
     "partOfSpeech": "noun",
     "corpusFrequency": 6,
     "dialectVariants": {
@@ -221002,7 +221159,7 @@
   {
     "id": "L-VERIFIED-01153",
     "form": "пункт",
-    "literalMeaning": "",
+    "literalMeaning": "1. (in var mean.) point;\n2. station, organization centre;\n3. paragraph, item; point;\n4. prin. point.",
     "partOfSpeech": "noun",
     "corpusFrequency": 6,
     "dialectVariants": {
@@ -221014,7 +221171,7 @@
   {
     "id": "L-VERIFIED-01154",
     "form": "зэрытхэ",
-    "literalMeaning": "",
+    "literalMeaning": "writing; ~ машинкэ: typewriter",
     "partOfSpeech": "noun",
     "corpusFrequency": 6,
     "dialectVariants": {
@@ -221076,7 +221233,7 @@
   {
     "id": "L-VERIFIED-01159",
     "form": "банан",
-    "literalMeaning": "",
+    "literalMeaning": "banana (fruit and tree)",
     "partOfSpeech": "noun",
     "corpusFrequency": 6,
     "dialectVariants": {
@@ -221341,7 +221498,7 @@
   {
     "id": "L-VERIFIED-01180",
     "form": "хыхьа",
-    "literalMeaning": "",
+    "literalMeaning": "of хыхьэн",
     "partOfSpeech": "noun",
     "corpusFrequency": 6,
     "dialectVariants": {
@@ -221442,7 +221599,7 @@
   {
     "id": "L-VERIFIED-01188",
     "form": "мэзджэд",
-    "literalMeaning": "",
+    "literalMeaning": "pheasant (female).",
     "partOfSpeech": "noun",
     "corpusFrequency": 6,
     "dialectVariants": {
@@ -221646,7 +221803,7 @@
   {
     "id": "L-VERIFIED-01204",
     "form": "къэщэхуныгъэ",
-    "literalMeaning": "",
+    "literalMeaning": "act. buying, purchasing, purchase.",
     "partOfSpeech": "noun",
     "corpusFrequency": 6,
     "dialectVariants": {
@@ -221798,7 +221955,7 @@
   {
     "id": "L-VERIFIED-01216",
     "form": "гъавалъэ",
-    "literalMeaning": "",
+    "literalMeaning": "1. barn; granary;\n2. rich/fertile land; fig granary",
     "partOfSpeech": "noun",
     "corpusFrequency": 6,
     "dialectVariants": {
@@ -221952,7 +222109,7 @@
   {
     "id": "L-VERIFIED-01228",
     "form": "щытхъуныгъэ",
-    "literalMeaning": "",
+    "literalMeaning": "act praising, laudation; bragging, boasting",
     "partOfSpeech": "noun",
     "corpusFrequency": 6,
     "dialectVariants": {
@@ -222065,7 +222222,7 @@
   {
     "id": "L-VERIFIED-01237",
     "form": "зэдэпсэун",
-    "literalMeaning": "",
+    "literalMeaning": "to live together",
     "partOfSpeech": "noun",
     "corpusFrequency": 6,
     "dialectVariants": {
@@ -222128,7 +222285,7 @@
   {
     "id": "L-VERIFIED-01242",
     "form": "топгъауэ",
-    "literalMeaning": "",
+    "literalMeaning": "gunner; artilleryman",
     "partOfSpeech": "noun",
     "corpusFrequency": 6,
     "dialectVariants": {
@@ -222242,7 +222399,7 @@
   {
     "id": "L-VERIFIED-01251",
     "form": "уха",
-    "literalMeaning": "",
+    "literalMeaning": "ended, finished",
     "partOfSpeech": "noun",
     "corpusFrequency": 6,
     "dialectVariants": {
@@ -222470,7 +222627,7 @@
   {
     "id": "L-VERIFIED-01269",
     "form": "къиуа",
-    "literalMeaning": "",
+    "literalMeaning": "overflown (of river, etc.).",
     "partOfSpeech": "noun",
     "corpusFrequency": 6,
     "dialectVariants": {
@@ -222532,7 +222689,7 @@
   {
     "id": "L-VERIFIED-01274",
     "form": "гъэжа",
-    "literalMeaning": "",
+    "literalMeaning": " cracked",
     "partOfSpeech": "noun",
     "corpusFrequency": 6,
     "dialectVariants": {
@@ -222556,7 +222713,7 @@
   {
     "id": "L-VERIFIED-01276",
     "form": "гъэхъужыныгъэ",
-    "literalMeaning": "",
+    "literalMeaning": "act cure, medical treatment",
     "partOfSpeech": "noun",
     "corpusFrequency": 6,
     "dialectVariants": {
@@ -222568,7 +222725,7 @@
   {
     "id": "L-VERIFIED-01277",
     "form": "гъэкъэбзэныгъэ",
-    "literalMeaning": "",
+    "literalMeaning": "act cleaning; cleaning off",
     "partOfSpeech": "noun",
     "corpusFrequency": 6,
     "dialectVariants": {
@@ -222605,7 +222762,7 @@
   {
     "id": "L-VERIFIED-01280",
     "form": "къэлъыхъуэныгъэ",
-    "literalMeaning": "",
+    "literalMeaning": "act. search, searching for.",
     "partOfSpeech": "noun",
     "corpusFrequency": 6,
     "dialectVariants": {
@@ -222692,7 +222849,7 @@
   {
     "id": "L-VERIFIED-01287",
     "form": "ущииныгъэ",
-    "literalMeaning": "",
+    "literalMeaning": "act. of ущиин",
     "partOfSpeech": "noun",
     "corpusFrequency": 6,
     "dialectVariants": {
@@ -222728,7 +222885,7 @@
   {
     "id": "L-VERIFIED-01290",
     "form": "закъуэныгъэ",
-    "literalMeaning": "",
+    "literalMeaning": "solitude, loneliness",
     "partOfSpeech": "noun",
     "corpusFrequency": 6,
     "dialectVariants": {
@@ -222764,7 +222921,7 @@
   {
     "id": "L-VERIFIED-01293",
     "form": "хъужыныгъэ",
-    "literalMeaning": "",
+    "literalMeaning": "act. recovery, convalescence",
     "partOfSpeech": "noun",
     "corpusFrequency": 6,
     "dialectVariants": {
@@ -222776,7 +222933,7 @@
   {
     "id": "L-VERIFIED-01294",
     "form": "ефэныгъэ",
-    "literalMeaning": "",
+    "literalMeaning": "act.\n1. drinking (in var. mean.);\n2. sucking (milk from breast); * тутын ~: smoking (tobacco)",
     "partOfSpeech": "noun",
     "corpusFrequency": 6,
     "dialectVariants": {
@@ -222813,7 +222970,7 @@
   {
     "id": "L-VERIFIED-01297",
     "form": "дзыныгъэ",
-    "literalMeaning": "",
+    "literalMeaning": "act\n1. throw, throwing;\n2. setting, placing (ex.: a trap, net, etc.); къапхъэн ~: setting a trap; * джэш ~: fortune-telling (ex.:  by cards)",
     "partOfSpeech": "noun",
     "corpusFrequency": 6,
     "dialectVariants": {
@@ -222825,7 +222982,7 @@
   {
     "id": "L-VERIFIED-01298",
     "form": "ещэныгъэ",
-    "literalMeaning": "",
+    "literalMeaning": "act. hunt, hunting; chase; (game-) shooting; fowling",
     "partOfSpeech": "noun",
     "corpusFrequency": 6,
     "dialectVariants": {
@@ -222850,7 +223007,7 @@
   {
     "id": "L-VERIFIED-01300",
     "form": "хэплъэныгъэ",
-    "literalMeaning": "",
+    "literalMeaning": "act.\n1. scrutinizing, looking at (some mass);\n2. investigation, examination, consideration (ex.: of case in court); discussion (of smth.)",
     "partOfSpeech": "noun",
     "corpusFrequency": 6,
     "dialectVariants": {
@@ -222958,7 +223115,9 @@
       "adyghe": "",
       "kabardian": "гъуэжь-плъыжьыфэ"
     },
-    "notes": "Verified (freq: 6, 13.Kbd-Ar-Jonty)"
+    "notes": "Verified (freq: 6, 13.Kbd-Ar-Jonty)",
+    "conceptId": "ORANGE",
+    "ipa": "/ʁʷaʑ-pɬ'əʑəfa/"
   },
   {
     "id": "L-VERIFIED-01309",
@@ -222987,7 +223146,7 @@
   {
     "id": "L-VERIFIED-01311",
     "form": "сымаджафэ",
-    "literalMeaning": "",
+    "literalMeaning": "pale, sick in appearance",
     "partOfSpeech": "noun",
     "corpusFrequency": 6,
     "dialectVariants": {
@@ -226115,7 +226274,7 @@
   {
     "id": "L-VERIFIED-01570",
     "form": "гъуэг",
-    "literalMeaning": "",
+    "literalMeaning": "noisy howl, loud cry/weeping; roar (ex. of lion)",
     "partOfSpeech": "noun",
     "corpusFrequency": 5,
     "dialectVariants": {
@@ -226398,7 +226557,7 @@
   {
     "id": "L-VERIFIED-01592",
     "form": "бэрэбанауэ",
-    "literalMeaning": "",
+    "literalMeaning": "drummer",
     "partOfSpeech": "noun",
     "corpusFrequency": 5,
     "dialectVariants": {
@@ -226436,7 +226595,7 @@
   {
     "id": "L-VERIFIED-01595",
     "form": "руда",
-    "literalMeaning": "",
+    "literalMeaning": "ore; гъущӀ ~: iron-ore; ~ къыщӀэнын: to extract ore",
     "partOfSpeech": "noun",
     "corpusFrequency": 5,
     "dialectVariants": {
@@ -226513,7 +226672,7 @@
   {
     "id": "L-VERIFIED-01601",
     "form": "гъэхуэжын",
-    "literalMeaning": "",
+    "literalMeaning": "to inseminate, impregnate",
     "partOfSpeech": "noun",
     "corpusFrequency": 5,
     "dialectVariants": {
@@ -226525,7 +226684,7 @@
   {
     "id": "L-VERIFIED-01602",
     "form": "зэхуэгъэзауэ",
-    "literalMeaning": "",
+    "literalMeaning": "face to face",
     "partOfSpeech": "noun",
     "corpusFrequency": 5,
     "dialectVariants": {
@@ -226575,7 +226734,7 @@
   {
     "id": "L-VERIFIED-01606",
     "form": "мылэжьэн",
-    "literalMeaning": "",
+    "literalMeaning": "n.f. лэжьэн.",
     "partOfSpeech": "noun",
     "corpusFrequency": 5,
     "dialectVariants": {
@@ -226675,7 +226834,7 @@
   {
     "id": "L-VERIFIED-01614",
     "form": "щхьэхь-псэхь",
-    "literalMeaning": "",
+    "literalMeaning": "1.  panic, scare; alarm, anxiety, uneasiness;\n2. attr panic; alarm; ~ хъун: to become panic-stricken, to give way to panic",
     "partOfSpeech": "noun",
     "corpusFrequency": 5,
     "dialectVariants": {
@@ -226917,7 +227076,7 @@
   {
     "id": "L-VERIFIED-01633",
     "form": "щыхах",
-    "literalMeaning": "",
+    "literalMeaning": "electoral; election; ~ пункт: election centre",
     "partOfSpeech": "noun",
     "corpusFrequency": 5,
     "dialectVariants": {
@@ -227248,7 +227407,7 @@
   {
     "id": "L-VERIFIED-01659",
     "form": "данэпс",
-    "literalMeaning": "",
+    "literalMeaning": "woman's gauze head-dress",
     "partOfSpeech": "noun",
     "corpusFrequency": 5,
     "dialectVariants": {
@@ -227604,7 +227763,7 @@
   {
     "id": "L-VERIFIED-01687",
     "form": "мыщэгъуэ",
-    "literalMeaning": "",
+    "literalMeaning": "den, lair of bear.",
     "partOfSpeech": "noun",
     "corpusFrequency": 5,
     "dialectVariants": {
@@ -227642,7 +227801,7 @@
   {
     "id": "L-VERIFIED-01690",
     "form": "щхьэхуэныгъэ",
-    "literalMeaning": "",
+    "literalMeaning": "act isolation, separation",
     "partOfSpeech": "noun",
     "corpusFrequency": 5,
     "dialectVariants": {
@@ -227796,7 +227955,7 @@
   {
     "id": "L-VERIFIED-01702",
     "form": "мэзкусэ",
-    "literalMeaning": "",
+    "literalMeaning": "forest belt; woodland belt; губгъуэхъумэ ~: field- protecting forest belt, shelter-belt; ~ хэсэныгъэ: afforestation, planting forests; зыхъумэ ~: forest shelter-belts.",
     "partOfSpeech": "noun",
     "corpusFrequency": 5,
     "dialectVariants": {
@@ -228026,7 +228185,7 @@
   {
     "id": "L-VERIFIED-01720",
     "form": "псыхъурей",
-    "literalMeaning": "",
+    "literalMeaning": "pond; reservoir.",
     "partOfSpeech": "noun",
     "corpusFrequency": 5,
     "dialectVariants": {
@@ -228141,7 +228300,7 @@
   {
     "id": "L-VERIFIED-01729",
     "form": "условнэ",
-    "literalMeaning": "",
+    "literalMeaning": "1. conditional;\n2. conventional; ~ дамыгъэхэр: conventional signs; * ~ наклонение: gram. conditional mood",
     "partOfSpeech": "noun",
     "corpusFrequency": 5,
     "dialectVariants": {
@@ -228153,7 +228312,7 @@
   {
     "id": "L-VERIFIED-01730",
     "form": "финик",
-    "literalMeaning": "",
+    "literalMeaning": "1.  date;\n2. attr of 1; ~ пальмэ: date, date-palm",
     "partOfSpeech": "noun",
     "corpusFrequency": 5,
     "dialectVariants": {
@@ -228406,7 +228565,7 @@
   {
     "id": "L-VERIFIED-01750",
     "form": "хакас",
-    "literalMeaning": "",
+    "literalMeaning": "Khakass (male)",
     "partOfSpeech": "noun",
     "corpusFrequency": 5,
     "dialectVariants": {
@@ -228584,7 +228743,7 @@
   {
     "id": "L-VERIFIED-01764",
     "form": "ло",
-    "literalMeaning": "",
+    "literalMeaning": "flattening rolling machine (ex.: for earthen roof) | see лэу",
     "partOfSpeech": "noun",
     "corpusFrequency": 5,
     "dialectVariants": {
@@ -228722,7 +228881,7 @@
   {
     "id": "L-VERIFIED-01775",
     "form": "кредит",
-    "literalMeaning": "",
+    "literalMeaning": "credit; кредиту къеӀыхын: to obtain/get on credit",
     "partOfSpeech": "noun",
     "corpusFrequency": 5,
     "dialectVariants": {
@@ -229000,7 +229159,7 @@
   {
     "id": "L-VERIFIED-01797",
     "form": "къыпихун",
-    "literalMeaning": "",
+    "literalMeaning": "to smoke (ex.: of a lamp, candle, torch, etc.).",
     "partOfSpeech": "noun",
     "corpusFrequency": 5,
     "dialectVariants": {
@@ -229220,7 +229379,7 @@
   {
     "id": "L-VERIFIED-01814",
     "form": "къызэхуэса",
-    "literalMeaning": "",
+    "literalMeaning": "of къызэхуэсын.",
     "partOfSpeech": "noun",
     "corpusFrequency": 5,
     "dialectVariants": {
@@ -229375,7 +229534,7 @@
   {
     "id": "L-VERIFIED-01826",
     "form": "пагагъ",
-    "literalMeaning": "",
+    "literalMeaning": "(э) pride; haughtiness, arrogance, superciliousness.",
     "partOfSpeech": "noun",
     "corpusFrequency": 5,
     "dialectVariants": {
@@ -229670,7 +229829,7 @@
   {
     "id": "L-VERIFIED-01849",
     "form": "пшэрын",
-    "literalMeaning": "",
+    "literalMeaning": "1. to be fat/fattened; to fatten;\n2. to grow stout, to grow fat/plump; to put on weight.",
     "partOfSpeech": "noun",
     "corpusFrequency": 5,
     "dialectVariants": {
@@ -229695,7 +229854,7 @@
   {
     "id": "L-VERIFIED-01851",
     "form": "уйгур",
-    "literalMeaning": "",
+    "literalMeaning": "1.  Uigur (male);\n2. attr of 1; Uigurian",
     "partOfSpeech": "noun",
     "corpusFrequency": 5,
     "dialectVariants": {
@@ -229733,7 +229892,7 @@
   {
     "id": "L-VERIFIED-01854",
     "form": "пыджэ",
-    "literalMeaning": "",
+    "literalMeaning": "given to butting, apt to butt.",
     "partOfSpeech": "noun",
     "corpusFrequency": 5,
     "dialectVariants": {
@@ -229823,7 +229982,7 @@
   {
     "id": "L-VERIFIED-01861",
     "form": "псыхьэлывэ",
-    "literalMeaning": "",
+    "literalMeaning": "curd dumpling.",
     "partOfSpeech": "noun",
     "corpusFrequency": 5,
     "dialectVariants": {
@@ -230041,7 +230200,7 @@
   {
     "id": "L-VERIFIED-01878",
     "form": "съезд",
-    "literalMeaning": "",
+    "literalMeaning": "congress; conference, convention",
     "partOfSpeech": "noun",
     "corpusFrequency": 5,
     "dialectVariants": {
@@ -230170,7 +230329,7 @@
   {
     "id": "L-VERIFIED-01888",
     "form": "жьэгъуашхэ",
-    "literalMeaning": "",
+    "literalMeaning": "1.  cud;\n2. attr ruminant; Ӏэщ жьэгъуашхэхэр: ruminants, ruminant animals",
     "partOfSpeech": "noun",
     "corpusFrequency": 5,
     "dialectVariants": {
@@ -230401,7 +230560,7 @@
   {
     "id": "L-VERIFIED-01906",
     "form": "хъей",
-    "literalMeaning": "",
+    "literalMeaning": "1. moving, stirring;\n2. oscillating, vacillating, waving to and fro; II\n1. motion; movement;\n2. oscillation, vibration",
     "partOfSpeech": "noun",
     "corpusFrequency": 5,
     "dialectVariants": {
@@ -230528,7 +230687,7 @@
   {
     "id": "L-VERIFIED-01916",
     "form": "нобэ-ныжэбэ",
-    "literalMeaning": "",
+    "literalMeaning": "in a day or two, soon (lit.: by today or by tonight)",
     "partOfSpeech": "noun",
     "corpusFrequency": 5,
     "dialectVariants": {
@@ -230792,7 +230951,7 @@
   {
     "id": "L-VERIFIED-01937",
     "form": "зэманыжь",
-    "literalMeaning": "",
+    "literalMeaning": "old times; antiquity",
     "partOfSpeech": "noun",
     "corpusFrequency": 5,
     "dialectVariants": {
@@ -230830,7 +230989,7 @@
   {
     "id": "L-VERIFIED-01940",
     "form": "мыхьэнэшхуагъэ",
-    "literalMeaning": "",
+    "literalMeaning": "significance, importance, topicality, urgency.",
     "partOfSpeech": "noun",
     "corpusFrequency": 5,
     "dialectVariants": {
@@ -230893,7 +231052,7 @@
   {
     "id": "L-VERIFIED-01945",
     "form": "ву",
-    "literalMeaning": "",
+    "literalMeaning": "see ву-у",
     "partOfSpeech": "noun",
     "corpusFrequency": 5,
     "dialectVariants": {
@@ -230970,7 +231129,7 @@
   {
     "id": "L-VERIFIED-01951",
     "form": "изэрыгуэн",
-    "literalMeaning": "",
+    "literalMeaning": "1. to squeeze (into a multitude);\n2. to invade (some territory)",
     "partOfSpeech": "noun",
     "corpusFrequency": 5,
     "dialectVariants": {
@@ -231313,7 +231472,7 @@
   {
     "id": "L-VERIFIED-01978",
     "form": "мыщафэ",
-    "literalMeaning": "",
+    "literalMeaning": "bear-skin; * мыщафэ Ӏэрымылъхьэм гуащэр щумыгъэгугъ: (prov.) don't count your chickens before they (are) hatch(ed); catch the bear before you sell his skin; never fry a fish till it's caught; first ca",
     "partOfSpeech": "noun",
     "corpusFrequency": 5,
     "dialectVariants": {
@@ -231338,7 +231497,7 @@
   {
     "id": "L-VERIFIED-01980",
     "form": "ухуэна",
-    "literalMeaning": "",
+    "literalMeaning": "adj braided, plaited; щхьэц ~: braided/plaited hair",
     "partOfSpeech": "noun",
     "corpusFrequency": 5,
     "dialectVariants": {
@@ -231569,7 +231728,7 @@
   {
     "id": "L-VERIFIED-01998",
     "form": "къэлыдыныгъэ",
-    "literalMeaning": "",
+    "literalMeaning": "act. ignition, inflammation.",
     "partOfSpeech": "noun",
     "corpusFrequency": 5,
     "dialectVariants": {
@@ -231812,7 +231971,7 @@
   {
     "id": "L-VERIFIED-02017",
     "form": "гъэсэтеин",
-    "literalMeaning": "",
+    "literalMeaning": "1. to level, to make even;\n2. fig to reveal, make evident",
     "partOfSpeech": "noun",
     "corpusFrequency": 5,
     "dialectVariants": {
@@ -231850,7 +232009,7 @@
   {
     "id": "L-VERIFIED-02020",
     "form": "пхыуда",
-    "literalMeaning": "",
+    "literalMeaning": "see пхыудыпӀэ; мыл ~: ice-hole.",
     "partOfSpeech": "noun",
     "corpusFrequency": 5,
     "dialectVariants": {
@@ -231901,7 +232060,7 @@
   {
     "id": "L-VERIFIED-02024",
     "form": "гуэдзых",
-    "literalMeaning": "",
+    "literalMeaning": "1. reaper, harvester, reaping machine;\n2. reaper;\n3. reaping, harvest",
     "partOfSpeech": "noun",
     "corpusFrequency": 5,
     "dialectVariants": {
@@ -232028,7 +232187,7 @@
   {
     "id": "L-VERIFIED-02034",
     "form": "шампанскэ",
-    "literalMeaning": "",
+    "literalMeaning": "champagne; fizz",
     "partOfSpeech": "noun",
     "corpusFrequency": 5,
     "dialectVariants": {
@@ -232245,7 +232404,7 @@
   {
     "id": "L-VERIFIED-02051",
     "form": "нэпсеин",
-    "literalMeaning": "",
+    "literalMeaning": "to be greedy/mean",
     "partOfSpeech": "noun",
     "corpusFrequency": 5,
     "dialectVariants": {
@@ -232524,7 +232683,7 @@
   {
     "id": "L-VERIFIED-02073",
     "form": "динырылажьэ",
-    "literalMeaning": "",
+    "literalMeaning": "1. person who strictly observes the rites, etc., of his religion;\n2. minister, priest",
     "partOfSpeech": "noun",
     "corpusFrequency": 5,
     "dialectVariants": {
@@ -232536,7 +232695,7 @@
   {
     "id": "L-VERIFIED-02074",
     "form": "щыгъуэзэныгъэ",
-    "literalMeaning": "",
+    "literalMeaning": "1. act of щыгъуэзэн 1;\n2. knowledge, possession of information",
     "partOfSpeech": "noun",
     "corpusFrequency": 5,
     "dialectVariants": {
@@ -232790,7 +232949,7 @@
   {
     "id": "L-VERIFIED-02094",
     "form": "адэт",
-    "literalMeaning": "",
+    "literalMeaning": "customs, habits.",
     "partOfSpeech": "noun",
     "corpusFrequency": 5,
     "dialectVariants": {
@@ -233187,7 +233346,7 @@
   {
     "id": "L-VERIFIED-02125",
     "form": "зэблэша",
-    "literalMeaning": "",
+    "literalMeaning": "warped, distorted",
     "partOfSpeech": "noun",
     "corpusFrequency": 5,
     "dialectVariants": {
@@ -233565,7 +233724,7 @@
   {
     "id": "L-VERIFIED-02155",
     "form": "гъуэзэджащэ",
-    "literalMeaning": "",
+    "literalMeaning": "splendid, exquisite",
     "partOfSpeech": "noun",
     "corpusFrequency": 5,
     "dialectVariants": {
@@ -233628,7 +233787,7 @@
   {
     "id": "L-VERIFIED-02160",
     "form": "дыжа",
-    "literalMeaning": "",
+    "literalMeaning": "& part patched (up)",
     "partOfSpeech": "noun",
     "corpusFrequency": 5,
     "dialectVariants": {
@@ -233653,7 +233812,7 @@
   {
     "id": "L-VERIFIED-02162",
     "form": "къэрэхьэлъкъ",
-    "literalMeaning": "",
+    "literalMeaning": "collect.\n1. workers, work people, working-people;\n2. the poor.",
     "partOfSpeech": "noun",
     "corpusFrequency": 5,
     "dialectVariants": {
@@ -233932,7 +234091,7 @@
   {
     "id": "L-VERIFIED-02184",
     "form": "къыхэча",
-    "literalMeaning": "",
+    "literalMeaning": "of къыхэчын.",
     "partOfSpeech": "noun",
     "corpusFrequency": 5,
     "dialectVariants": {
@@ -233982,7 +234141,7 @@
   {
     "id": "L-VERIFIED-02188",
     "form": "сабынгъавэ",
-    "literalMeaning": "",
+    "literalMeaning": "1.  soap-boiler;\n2. attr: ~ завод: soap-works, soap factory",
     "partOfSpeech": "noun",
     "corpusFrequency": 5,
     "dialectVariants": {
@@ -234628,7 +234787,7 @@
   {
     "id": "L-VERIFIED-02239",
     "form": "тезэрыгуэныгъэ",
-    "literalMeaning": "",
+    "literalMeaning": "act. pressing, forcing, impact",
     "partOfSpeech": "noun",
     "corpusFrequency": 5,
     "dialectVariants": {
@@ -234665,7 +234824,7 @@
   {
     "id": "L-VERIFIED-02242",
     "form": "факт",
-    "literalMeaning": "",
+    "literalMeaning": "fact; case; факткэр зэнуэкьэсын: to gather/collect facts; see also Ӏуэнугъуэ 4",
     "partOfSpeech": "noun",
     "corpusFrequency": 5,
     "dialectVariants": {
@@ -234776,7 +234935,7 @@
   {
     "id": "L-VERIFIED-02251",
     "form": "мысакъ",
-    "literalMeaning": "",
+    "literalMeaning": "not vigilant/watchful/careful, careless.",
     "partOfSpeech": "noun",
     "corpusFrequency": 5,
     "dialectVariants": {
@@ -234852,7 +235011,7 @@
   {
     "id": "L-VERIFIED-02257",
     "form": "гъэува",
-    "literalMeaning": "",
+    "literalMeaning": "1. put, placed, set;\n2. appointed (to a post)",
     "partOfSpeech": "noun",
     "corpusFrequency": 5,
     "dialectVariants": {
@@ -234926,7 +235085,7 @@
   {
     "id": "L-VERIFIED-02263",
     "form": "фарфор",
-    "literalMeaning": "",
+    "literalMeaning": "1.  china, porcelain;\n2. china(ware); II attr china; porcelain; ~ шейныч: china/porcelain teapot",
     "partOfSpeech": "noun",
     "corpusFrequency": 5,
     "dialectVariants": {
@@ -234990,7 +235149,7 @@
   {
     "id": "L-VERIFIED-02268",
     "form": "гъэпщта",
-    "literalMeaning": "",
+    "literalMeaning": "adj boiled; baked (only of milk)",
     "partOfSpeech": "noun",
     "corpusFrequency": 5,
     "dialectVariants": {
@@ -235123,7 +235282,8 @@
       "kabardian": "дыжьыныфэ"
     },
     "notes": "Verified (freq: 5, 1.Ady-Ady_AP)",
-    "ipa": "/дыжьын/"
+    "ipa": "/дыжьын/",
+    "conceptId": "SILVER"
   },
   {
     "id": "L-VERIFIED-02279",
@@ -235141,7 +235301,7 @@
   {
     "id": "L-VERIFIED-02280",
     "form": "къэча",
-    "literalMeaning": "",
+    "literalMeaning": "crack, split, cleft, fissure; мылым ~ иӀэщ: there is a crack in the ice.",
     "partOfSpeech": "noun",
     "corpusFrequency": 5,
     "dialectVariants": {
@@ -235191,7 +235351,7 @@
   {
     "id": "L-VERIFIED-02284",
     "form": "ещэ",
-    "literalMeaning": "",
+    "literalMeaning": "of ещэн II",
     "partOfSpeech": "noun",
     "corpusFrequency": 5,
     "dialectVariants": {
@@ -235216,7 +235376,7 @@
   {
     "id": "L-VERIFIED-02286",
     "form": "убалъащхьэ",
-    "literalMeaning": "",
+    "literalMeaning": "pestle (for mortar)",
     "partOfSpeech": "noun",
     "corpusFrequency": 5,
     "dialectVariants": {
@@ -235430,7 +235590,7 @@
   {
     "id": "L-VERIFIED-02303",
     "form": "нэпщысын",
-    "literalMeaning": "",
+    "literalMeaning": "to creep, crawl (to, as far as/smb, smth.)",
     "partOfSpeech": "noun",
     "corpusFrequency": 5,
     "dialectVariants": {
@@ -235568,7 +235728,7 @@
   {
     "id": "L-VERIFIED-02314",
     "form": "егъэджэныгъэ",
-    "literalMeaning": "",
+    "literalMeaning": "act.\n1. teaching, instruction, training;\n2. reading",
     "partOfSpeech": "noun",
     "corpusFrequency": 5,
     "dialectVariants": {
@@ -235581,7 +235741,7 @@
   {
     "id": "L-VERIFIED-02315",
     "form": "гъэбэгъуэныгъэ",
-    "literalMeaning": "",
+    "literalMeaning": "act\n1. math. multiplication;\n2. reproduction in quantity",
     "partOfSpeech": "noun",
     "corpusFrequency": 5,
     "dialectVariants": {
@@ -235668,7 +235828,7 @@
   {
     "id": "L-VERIFIED-02322",
     "form": "хегъэдзэн",
-    "literalMeaning": "",
+    "literalMeaning": "c.f хэдзэн",
     "partOfSpeech": "noun",
     "corpusFrequency": 5,
     "dialectVariants": {
@@ -235719,7 +235879,7 @@
   {
     "id": "L-VERIFIED-02326",
     "form": "зэблэдза",
-    "literalMeaning": "",
+    "literalMeaning": "cross; crucifix",
     "partOfSpeech": "noun",
     "corpusFrequency": 5,
     "dialectVariants": {
@@ -235743,7 +235903,7 @@
   {
     "id": "L-VERIFIED-02328",
     "form": "зэй",
-    "literalMeaning": "",
+    "literalMeaning": "bot. cornel(-tree)",
     "partOfSpeech": "noun",
     "corpusFrequency": 5,
     "dialectVariants": {
@@ -235864,7 +236024,7 @@
   {
     "id": "L-VERIFIED-02338",
     "form": "бэга",
-    "literalMeaning": "",
+    "literalMeaning": "pudgy, plump",
     "partOfSpeech": "noun",
     "corpusFrequency": 5,
     "dialectVariants": {
@@ -235988,7 +236148,7 @@
   {
     "id": "L-VERIFIED-02348",
     "form": "мыкуэд",
-    "literalMeaning": "",
+    "literalMeaning": "a little, some.",
     "partOfSpeech": "noun",
     "corpusFrequency": 5,
     "dialectVariants": {
@@ -236012,7 +236172,7 @@
   {
     "id": "L-VERIFIED-02350",
     "form": "дэкъузэныгъэ",
-    "literalMeaning": "",
+    "literalMeaning": "act.\n1. squeezing, pressing;\n2. fig oppression",
     "partOfSpeech": "noun",
     "corpusFrequency": 5,
     "dialectVariants": {
@@ -236024,7 +236184,7 @@
   {
     "id": "L-VERIFIED-02351",
     "form": "гъэвэныгъэ",
-    "literalMeaning": "",
+    "literalMeaning": "act\n1. cooking, boiling;\n2. boiling",
     "partOfSpeech": "noun",
     "corpusFrequency": 5,
     "dialectVariants": {
@@ -236244,7 +236404,7 @@
   {
     "id": "L-VERIFIED-02369",
     "form": "пальмэ",
-    "literalMeaning": "",
+    "literalMeaning": "1. plam(-tree);\n2.  of\n1.",
     "partOfSpeech": "noun",
     "corpusFrequency": 5,
     "dialectVariants": {
@@ -236849,7 +237009,7 @@
   {
     "id": "L-VERIFIED-02419",
     "form": "рабочэ",
-    "literalMeaning": "",
+    "literalMeaning": "worker, workman, working man; labourer, hand; operator; ӀэщӀагъэ зиӀэ ~: skilled/trained worker |  worker's, working; labour, work",
     "partOfSpeech": "noun",
     "corpusFrequency": 5,
     "dialectVariants": {
@@ -237331,7 +237491,7 @@
   {
     "id": "L-VERIFIED-02459",
     "form": "кипарис",
-    "literalMeaning": "",
+    "literalMeaning": "1. bot. cypress;\n2.  of 1",
     "partOfSpeech": "noun",
     "corpusFrequency": 5,
     "dialectVariants": {
@@ -237910,7 +238070,7 @@
   {
     "id": "L-VERIFIED-02507",
     "form": "народнэ",
-    "literalMeaning": "",
+    "literalMeaning": "people's; national; ~ суд: People's Court; ~ республикэ: People's Republic",
     "partOfSpeech": "noun",
     "corpusFrequency": 5,
     "dialectVariants": {
@@ -238260,7 +238420,7 @@
   {
     "id": "L-VERIFIED-02536",
     "form": "костюм",
-    "literalMeaning": "",
+    "literalMeaning": "costume, dress; suit; compare with кӀэстум",
     "partOfSpeech": "noun",
     "corpusFrequency": 5,
     "dialectVariants": {
@@ -238803,7 +238963,7 @@
   {
     "id": "L-VERIFIED-02581",
     "form": "гукъабзэ",
-    "literalMeaning": "",
+    "literalMeaning": "sincere, frank, candid, open-hearted",
     "partOfSpeech": "noun",
     "corpusFrequency": 5,
     "dialectVariants": {
@@ -239793,7 +239953,7 @@
   {
     "id": "L-VERIFIED-02663",
     "form": "электрическэ",
-    "literalMeaning": "",
+    "literalMeaning": "electric(al); ~ ету: electric iron",
     "partOfSpeech": "noun",
     "corpusFrequency": 5,
     "dialectVariants": {
@@ -240331,7 +240491,7 @@
   {
     "id": "L-VERIFIED-02707",
     "form": "шар",
-    "literalMeaning": "",
+    "literalMeaning": "ball; sphere; хьэуа ~: balloon; шарым ещхь: globular, globe-shaped, spheric(al)",
     "partOfSpeech": "noun",
     "corpusFrequency": 5,
     "dialectVariants": {
@@ -240509,5 +240669,166 @@
       "kabardian": ""
     },
     "notes": "Manuel eklendi (sözlükte var, lexemes'te yoktu)"
+  },
+  {
+    "id": "L-NUM-ELEVEN",
+    "form": "пщыкIуз",
+    "ipa": "/pɕ'ək'wəz/",
+    "literalMeaning": "on bir",
+    "conceptId": "ELEVEN",
+    "partOfSpeech": "numeral",
+    "rootIds": [
+      "R-NUM"
+    ],
+    "wordFamilyId": "WF-NUM",
+    "notes": "Sayı (Numeral)"
+  },
+  {
+    "id": "L-NUM-TWELVE",
+    "form": "пщыкIутI",
+    "ipa": "/pɕ'ək'wət'/",
+    "literalMeaning": "on iki",
+    "conceptId": "TWELVE",
+    "partOfSpeech": "numeral",
+    "rootIds": [
+      "R-NUM"
+    ],
+    "wordFamilyId": "WF-NUM",
+    "notes": "Sayı (Numeral)"
+  },
+  {
+    "id": "L-NUM-THIRTEEN",
+    "form": "пщыкIущ",
+    "ipa": "/pɕ'ək'wəɕ/",
+    "literalMeaning": "on üç",
+    "conceptId": "THIRTEEN",
+    "partOfSpeech": "numeral",
+    "rootIds": [
+      "R-NUM"
+    ],
+    "wordFamilyId": "WF-NUM",
+    "notes": "Sayı (Numeral)"
+  },
+  {
+    "id": "L-NUM-FOURTEEN",
+    "form": "пщыкIуплI",
+    "ipa": "/pɕ'ək'wəpɬ'/",
+    "literalMeaning": "on dört",
+    "conceptId": "FOURTEEN",
+    "partOfSpeech": "numeral",
+    "rootIds": [
+      "R-NUM"
+    ],
+    "wordFamilyId": "WF-NUM",
+    "notes": "Sayı (Numeral)"
+  },
+  {
+    "id": "L-NUM-FIFTEEN",
+    "form": "пщыкIутху",
+    "ipa": "/pɕ'ək'wətxʷ/",
+    "literalMeaning": "on beş",
+    "conceptId": "FIFTEEN",
+    "partOfSpeech": "numeral",
+    "rootIds": [
+      "R-NUM"
+    ],
+    "wordFamilyId": "WF-NUM",
+    "notes": "Sayı (Numeral)"
+  },
+  {
+    "id": "L-NUM-SIXTEEN",
+    "form": "пщыкIух",
+    "ipa": "/pɕ'ək'wəx/",
+    "literalMeaning": "on altı",
+    "conceptId": "SIXTEEN",
+    "partOfSpeech": "numeral",
+    "rootIds": [
+      "R-NUM"
+    ],
+    "wordFamilyId": "WF-NUM",
+    "notes": "Sayı (Numeral)"
+  },
+  {
+    "id": "L-NUM-SEVENTEEN",
+    "form": "пщыкIубл",
+    "ipa": "/pɕ'ək'wəbɮ/",
+    "literalMeaning": "on yedi",
+    "conceptId": "SEVENTEEN",
+    "partOfSpeech": "numeral",
+    "rootIds": [
+      "R-NUM"
+    ],
+    "wordFamilyId": "WF-NUM",
+    "notes": "Sayı (Numeral)"
+  },
+  {
+    "id": "L-NUM-EIGHTEEN",
+    "form": "пщыкIуий",
+    "ipa": "/pɕ'ək'wəj/",
+    "literalMeaning": "on sekiz",
+    "conceptId": "EIGHTEEN",
+    "partOfSpeech": "numeral",
+    "rootIds": [
+      "R-NUM"
+    ],
+    "wordFamilyId": "WF-NUM",
+    "notes": "Sayı (Numeral)"
+  },
+  {
+    "id": "L-NUM-NINETEEN",
+    "form": "пщыкIубгъу",
+    "ipa": "/pɕ'ək'wəbʁʷ/",
+    "literalMeaning": "on dokuz",
+    "conceptId": "NINETEEN",
+    "partOfSpeech": "numeral",
+    "rootIds": [
+      "R-NUM"
+    ],
+    "wordFamilyId": "WF-NUM",
+    "notes": "Sayı (Numeral)"
+  },
+  {
+    "id": "L-COLOR-BLACK",
+    "form": "фIыцIэ",
+    "ipa": "/f'əts'a/",
+    "literalMeaning": "siyah / koyu",
+    "conceptId": "BLACK",
+    "partOfSpeech": "adjective",
+    "rootIds": [],
+    "wordFamilyId": null,
+    "notes": "Renk (Color)"
+  },
+  {
+    "id": "L-COLOR-BLUE",
+    "form": "щхъуантIэ",
+    "ipa": "/ɕxʷaːnt'a/",
+    "literalMeaning": "mavi / gök mavisi",
+    "conceptId": "BLUE",
+    "partOfSpeech": "adjective",
+    "rootIds": [],
+    "wordFamilyId": null,
+    "notes": "Renk (Color)"
+  },
+  {
+    "id": "L-COLOR-NAVY_BLUE",
+    "form": "щIыху",
+    "ipa": "/ɕ'əxʷ/",
+    "literalMeaning": "lacivert",
+    "conceptId": "NAVY_BLUE",
+    "partOfSpeech": "adjective",
+    "rootIds": [],
+    "wordFamilyId": null,
+    "notes": "Renk (Color)"
+  },
+  {
+    "id": "L-COLOR-DARK_COLOR",
+    "form": "кIынфI",
+    "ipa": "/k'ənf'/",
+    "literalMeaning": "koyu / mat",
+    "conceptId": "DARK_COLOR",
+    "partOfSpeech": "adjective",
+    "rootIds": [],
+    "wordFamilyId": null,
+    "notes": "Renk (Color)"
   }
 ]
