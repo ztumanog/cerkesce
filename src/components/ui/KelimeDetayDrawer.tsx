@@ -35,14 +35,28 @@ const FEATURED_LANG_ORDER = ['tr', 'ru', 'en', 'ar', 'ady', 'kbd'];
 
 function cleanHtml(html: string): string {
   if (!html) return '';
-  return html
-    .replace(/<[^>]*>/g, ' ')
-    .replace(/&nbsp;/g, ' ')
-    .replace(/&lt;/g, '<')
-    .replace(/&gt;/g, '>')
-    .replace(/&amp;/g, '&')
-    .replace(/\s+/g, ' ')
-    .trim();
+
+  let text = String(html);
+
+  // 1. ÖNCE encoded HTML entity'lerini sil (&lt;...&gt;)
+  text = text.replace(/&lt;.*?&gt;/gi, ' ');
+
+  // 2. Sonra normal HTML tag'lerini sil
+  text = text.replace(/<[^>]+>/g, ' ');
+
+  // 3. Entity'leri çöz
+  text = text
+    .replace(/&nbsp;/gi, ' ')
+    .replace(/&amp;/gi, '&')
+    .replace(/&lt;/gi, '<')
+    .replace(/&gt;/gi, '>')
+    .replace(/&quot;/gi, '"')
+    .replace(/&#39;/gi, "'");
+
+  // 4. Fazla boşlukları temizle
+  text = text.replace(/\s+/g, ' ').trim();
+
+  return text;
 }
 
 interface KelimeDetayDrawerProps {
