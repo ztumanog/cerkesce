@@ -1,4 +1,4 @@
-import { normalizePalochka } from '@/domain/utils/normalizePalochka';
+﻿import { normalizePalochka } from '@/domain/utils/normalizePalochka';
 
 export interface Lexeme {
   id: string;
@@ -10,17 +10,22 @@ export interface Lexeme {
   ipa?: string;
   corpusFrequency?: number;
   wordFamilyId?: string;
-  derivation?: { rootIds?: string[] } | null;      // ⭐ EKLE
-  dialectVariants?: { adyghe?: string; kabardian?: string } | null;  // ⭐ EKLE
+  rootIds?: string[];
+  derivation?: {
+    rootIds?: string[];
+    rule?: string;
+    components?: string[];
+  } | null;
+  dialectVariants?: { adyghe?: string; kabardian?: string } | null;
 }
 
-/** ADR-0026 K3 — tek normalizasyon noktası */
+/** ADR-0026 K3 â€” tek normalizasyon noktasÄ± */
 export function normKey(s: string | undefined | null): string {
   if (!s) return '';
   return normalizePalochka(s).trim().toLowerCase();
 }
 
-/** ADR-0026 K2 ön filtre */
+/** ADR-0026 K2 Ã¶n filtre */
 const PLACEHOLDERS = new Set(['?', '??', '???', '-', '--', '']);
 
 function isUsableMeaning(lm: string | undefined): boolean {
@@ -28,7 +33,7 @@ function isUsableMeaning(lm: string | undefined): boolean {
   return !PLACEHOLDERS.has(lm.trim());
 }
 
-/** ADR-0026 K2 — Deterministik seçim */
+/** ADR-0026 K2 â€” Deterministik seÃ§im */
 export function pickLexeme(candidates: Lexeme[], key: string): Lexeme | undefined {
   if (candidates.length === 0) return undefined;
   if (candidates.length === 1) return candidates[0];
@@ -46,7 +51,7 @@ export function pickLexeme(candidates: Lexeme[], key: string): Lexeme | undefine
   })[0];
 }
 
-/** Çift yönlü indeks */
+/** Ã‡ift yÃ¶nlÃ¼ indeks */
 export function buildLexemeIndex(lexemes: Lexeme[]): Map<string, Lexeme> {
   const buckets = new Map<string, Lexeme[]>();
 
