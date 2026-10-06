@@ -1,0 +1,3108 @@
+[
+  {
+    "id": "L-P1C1Y",
+    "literalMeaning": "yalan",
+    "conceptId": null,
+    "conceptIds": [
+      "LIE",
+      "DECEPTION"
+    ],
+    "wordFamilyId": "WF-P1C1",
+    "derivation": {
+      "rootIds": [
+        "R-P1C1"
+      ],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "noun",
+    "corpusFrequency": 431,
+    "dialectVariants": {
+      "adyghe": "пцӀы",
+      "kabardian": "пцӀы"
+    }
+  },
+  {
+    "id": "L-PSYNSH1E",
+    "literalMeaning": "su gibi akan",
+    "conceptId": null,
+    "conceptIds": [
+      "LIGHT_WEIGHT",
+      "FAST",
+      "QUICK",
+      "EASY",
+      "LIVELY"
+    ],
+    "wordFamilyId": "WF-PSY",
+    "derivation": {
+      "rootIds": [
+        "R-PSY"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "partOfSpeech": "noun",
+    "corpusFrequency": 170,
+    "dialectVariants": {
+      "adyghe": "псынщӀэ",
+      "kabardian": "псынщӀэ"
+    }
+  },
+  {
+    "id": "L-GUKHELHE",
+    "literalMeaning": "niyet, amac",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-GU",
+    "derivation": {
+      "rootIds": [
+        "R-GU"
+      ],
+      "rule": "auto_prefix"
+    },
+    "partOfSpeech": "noun",
+    "corpusFrequency": 129,
+    "dialectVariants": {
+      "adyghe": "гухэлъ",
+      "kabardian": "гухэлъ"
+    }
+  },
+  {
+    "id": "L-TKHU",
+    "literalMeaning": "bes",
+    "conceptId": "FIVE",
+    "conceptIds": null,
+    "wordFamilyId": "WF-NUM",
+    "derivation": null,
+    "partOfSpeech": "numeral",
+    "corpusFrequency": 27,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-BGHU",
+    "literalMeaning": "dokuz",
+    "conceptId": "NINE",
+    "conceptIds": null,
+    "wordFamilyId": "WF-NUM",
+    "derivation": null,
+    "partOfSpeech": "numeral",
+    "corpusFrequency": 66,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-PSHCH1Y",
+    "literalMeaning": "on",
+    "conceptId": "TEN",
+    "conceptIds": null,
+    "wordFamilyId": "WF-NUM",
+    "derivation": null,
+    "partOfSpeech": "numeral",
+    "corpusFrequency": 38,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-PSHCHEDDZHYZH",
+    "literalMeaning": "sabah",
+    "conceptId": "MORNING",
+    "conceptIds": null,
+    "wordFamilyId": "WF-BASIC",
+    "derivation": null,
+    "partOfSpeech": "noun",
+    "corpusFrequency": 103,
+    "dialectVariants": {
+      "adyghe": "пщэдджыжь",
+      "kabardian": "пщэдджыжь"
+    }
+  },
+  {
+    "id": "L-KHUEBAN",
+    "literalMeaning": "yaban domuzu",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-ANIMAL",
+    "derivation": {
+      "rootIds": [
+        "R-KKHUHE"
+      ],
+      "rule": "auto_prefix"
+    },
+    "partOfSpeech": "noun",
+    "corpusFrequency": 0,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-SHHXHU2",
+    "literalMeaning": "mavi",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-COLOR",
+    "derivation": null,
+    "partOfSpeech": "noun",
+    "corpusFrequency": 0,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-DEZHYGEY",
+    "literalMeaning": "findik agaci",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-FLORA",
+    "derivation": null,
+    "partOfSpeech": "noun",
+    "corpusFrequency": 0,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-SHEZAYE",
+    "literalMeaning": "akcaagac",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-FLORA",
+    "derivation": null,
+    "partOfSpeech": "noun",
+    "corpusFrequency": 0,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-WAFE",
+    "literalMeaning": "gokyuzu",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-Nature",
+    "derivation": null,
+    "partOfSpeech": "noun",
+    "corpusFrequency": 144,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-WASHX",
+    "literalMeaning": "yagmur",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-Nature",
+    "derivation": null,
+    "partOfSpeech": "noun",
+    "corpusFrequency": 169,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-WA",
+    "literalMeaning": "dolu",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-Nature",
+    "derivation": null,
+    "partOfSpeech": "noun",
+    "corpusFrequency": 3287,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-PSHCH1YK1U",
+    "literalMeaning": "on bir",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-Number",
+    "derivation": null,
+    "partOfSpeech": "noun",
+    "corpusFrequency": 0,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-PSHCH1YK1UT1",
+    "literalMeaning": "on iki",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-Number",
+    "derivation": null,
+    "partOfSpeech": "noun",
+    "corpusFrequency": 0,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-GHATKHE",
+    "literalMeaning": "ilkbahar",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-Time",
+    "derivation": null,
+    "partOfSpeech": "noun",
+    "corpusFrequency": 66,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-DALHXAN",
+    "literalMeaning": "?",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-Family",
+    "derivation": null,
+    "partOfSpeech": "noun",
+    "corpusFrequency": 0,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-YAGUPSESAN",
+    "literalMeaning": "?",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-Verb",
+    "derivation": null,
+    "partOfSpeech": "noun",
+    "corpusFrequency": 0,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-NYBZH",
+    "literalMeaning": "yas",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-Noun",
+    "derivation": {
+      "rootIds": [
+        "R-NYBZHY"
+      ],
+      "rule": "auto_prefix"
+    },
+    "partOfSpeech": "noun",
+    "corpusFrequency": 143,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-TKHE2",
+    "literalMeaning": "tanri",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-Religion",
+    "derivation": null,
+    "partOfSpeech": "noun",
+    "corpusFrequency": 1842,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-TSYXHUGHE",
+    "literalMeaning": "insanlik",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-Noun",
+    "derivation": null,
+    "partOfSpeech": "noun",
+    "corpusFrequency": 53,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-YEPLHEN",
+    "literalMeaning": "tatmak",
+    "conceptId": "TASTE",
+    "conceptIds": null,
+    "wordFamilyId": "WF-SENSE",
+    "derivation": null,
+    "partOfSpeech": "verb",
+    "corpusFrequency": 165,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D0B0D0B1D18B",
+    "literalMeaning": "Эргативнэ падежым ит ещанэ щхьэ къэзыгъэлъагъуэ цӀэпапщӀэ.",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-D0B0D0B1D18B",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "pronoun",
+    "corpusFrequency": 10039,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-_",
+    "literalMeaning": "Адыгэ алфавитым и тхущӀрэ еянэ хьэрф.",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-_",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "letter",
+    "corpusFrequency": 8778,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-__",
+    "literalMeaning": "Именительнэ падежым иту ещанэ щхьэр къэзыгъэлъагъуэ цӀэпапщӀэ.",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-__",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "pronoun",
+    "corpusFrequency": 13160,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-__",
+    "literalMeaning": "Псалъэ жызыӀэм езым и щхьэр кърегъэлъагъуэ.",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-__",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "pronoun",
+    "corpusFrequency": 9071,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-__",
+    "literalMeaning": "Сысеиныгъэ къэзыгъэлъагъуэ префикс.",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-__",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "possessive_prefix",
+    "corpusFrequency": 4768,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-_",
+    "literalMeaning": "Адыгэ алфавитым и япэ хьэрф.",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-_",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "letter",
+    "corpusFrequency": 7172,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-__",
+    "literalMeaning": "Еиныгъэ къэзыгъэлъагъуэ префикс.",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-__",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "possessive_prefix",
+    "corpusFrequency": 4320,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D181D18BD182",
+    "literalMeaning": "ЦӀыхум къинэмыщӀа адрей псоми ирищӀоупщӀэ.",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-D181D18BD182",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "interrogative_pronoun",
+    "corpusFrequency": 3113,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D189D185D18C",
+    "literalMeaning": "КъэкӀыгъэхэм я щхьэщыгу лъэныкъуэ.",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-D189D185D18C",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "noun",
+    "corpusFrequency": 2895,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D0BDD18DD185",
+    "literalMeaning": "Зыгуэрым и щытыкӀэр нэгъуэщӀым зэрыщхьэпрыкӀыр (п. п. фӀагъкӀэ, ӀеягъкӀэ, куэдагъкӀэ) къызэрагъэлъаг...",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-D0BDD18DD185",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "particle",
+    "corpusFrequency": 2556,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-__",
+    "literalMeaning": "Догуэт.",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-__",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "interjection",
+    "corpusFrequency": 2423,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-__",
+    "literalMeaning": "Еиныгъэ къэзыгъэлъагъуэ префикс.",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-__",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "possessive_prefix",
+    "corpusFrequency": 2666,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-__",
+    "literalMeaning": "Япэ щхьэм иту куэд бжыгъэ къэзыгъэлъагъуэ щхьэ цӀэпапщӀэ.",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-__",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "pronoun",
+    "corpusFrequency": 1731,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-__",
+    "literalMeaning": "Еиныгъэ къэзыгъэлъагъуэ префикс.",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-__",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "possessive_prefix",
+    "corpusFrequency": 1414,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D0B3D18AD183",
+    "literalMeaning": "ЗыщӀыпӀэ икӀыу нэгъуэщӀыпӀэ кӀуэн папщӀэ къагъэсэбэп зекӀуапӀэ.",
+    "conceptId": "ROAD",
+    "conceptIds": null,
+    "wordFamilyId": "WF-GUEGU",
+    "derivation": {
+      "rootIds": [
+        "R-GUEGU"
+      ],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "noun",
+    "corpusFrequency": 958,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D185D18DD182",
+    "literalMeaning": "Зи гугъу ящӀ, зытепсэлъыхь цӀыхур къегъэлъагъуэ.",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-D185D18DD182",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "interrogative_pronoun",
+    "corpusFrequency": 1170,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D0B8D0B4D0B6",
+    "literalMeaning": "Ит зэманым; лэжьыгъэр, Ӏуэхур щекӀуэкӀ зэманым.",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-D0B8D0B4D0B6",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "adverb",
+    "corpusFrequency": 863,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D0B3D183D0B6",
+    "literalMeaning": "panik",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-D0B3D183D0B6",
+    "derivation": {
+      "rootIds": [
+        "R-ГУ"
+      ],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "noun",
+    "corpusFrequency": 2,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D0B3D183D0BC",
+    "literalMeaning": "şefkatli",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-D0B3D183D0BC",
+    "derivation": {
+      "rootIds": [
+        "R-ГУ"
+      ],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "adjective",
+    "corpusFrequency": 2,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D0B3D183D0B1",
+    "literalMeaning": "öfke",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-D0B3D183D0B1",
+    "derivation": {
+      "rootIds": [
+        "R-ГУ"
+      ],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "noun",
+    "corpusFrequency": 54,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D0B3D183D0B8",
+    "literalMeaning": "korkunç",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-D0B3D183D0B8",
+    "derivation": {
+      "rootIds": [
+        "R-ГУ"
+      ],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "adjective",
+    "corpusFrequency": 1,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D0BDD0B0D184",
+    "literalMeaning": "kör",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-D0BDD0B0D184",
+    "derivation": {
+      "rootIds": [
+        "R-НЭ"
+      ],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "adjective",
+    "corpusFrequency": 11,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D0BDD0B0D0BF",
+    "literalMeaning": "yalan",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-D0BDD0B0D0BF",
+    "derivation": {
+      "rootIds": [
+        "R-НЭ"
+      ],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "noun",
+    "corpusFrequency": 0,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D0BDD0B0D0BF",
+    "literalMeaning": "gözyaşı",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-D0BDD0B0D0BF",
+    "derivation": {
+      "rootIds": [
+        "R-НЭ"
+      ],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "noun",
+    "corpusFrequency": 0,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D0BDD0B0D184",
+    "literalMeaning": "iyilik",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-D0BDD0B0D184",
+    "derivation": {
+      "rootIds": [
+        "R-НЭ"
+      ],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "noun",
+    "corpusFrequency": 0,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D0BDD0B0D188",
+    "literalMeaning": "şaşı",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-D0BDD0B0D188",
+    "derivation": {
+      "rootIds": [
+        "R-НЭ"
+      ],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "adjective",
+    "corpusFrequency": 11,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D189D185D18C",
+    "literalMeaning": "kalın ip",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-D189D185D18C",
+    "derivation": {
+      "rootIds": [
+        "R-ЩХЬЭ"
+      ],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "noun",
+    "corpusFrequency": 16,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D185D18BD0BA",
+    "literalMeaning": "yunus",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-D185D18BD0BA",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "noun",
+    "corpusFrequency": 0,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D0BCD18DD0B7",
+    "literalMeaning": "sülün",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-D0BCD18DD0B7",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "noun",
+    "corpusFrequency": 4,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D0B4D18BD0B3",
+    "literalMeaning": "güneş",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-D0B4D18BD0B3",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "noun",
+    "corpusFrequency": 110,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D0B8D0B4D0B6",
+    "literalMeaning": "şimdi",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-D0B8D0B4D0B6",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "adverb",
+    "corpusFrequency": 172,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D185D18AD18B",
+    "literalMeaning": "genç kız",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-D185D18AD18B",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "noun",
+    "corpusFrequency": 192,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D189D380D18B",
+    "literalMeaning": "soğuk",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-D189D380D18B",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "adjective",
+    "corpusFrequency": 184,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D0BAD380D18D",
+    "literalMeaning": "kısa",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-D0BAD380D18D",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "adjective",
+    "corpusFrequency": 142,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D189D380D18D",
+    "literalMeaning": "hızlıca",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-D189D380D18D",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "adverb",
+    "corpusFrequency": 57,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D0B6D18BD380",
+    "literalMeaning": "söylemek, demek",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-D0B6D18BD380",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "verb",
+    "corpusFrequency": 226,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D0B8D0BD",
+    "literalMeaning": "büyük",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-D0B8D0BD",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "adjective",
+    "corpusFrequency": 771,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D0B4D0B0D185",
+    "literalMeaning": "güzel",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-D0B4D0B0D185",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "adjective",
+    "corpusFrequency": 408,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D189D380D18B",
+    "literalMeaning": "yapmak, etmek",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-D189D380D18B",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "verb",
+    "corpusFrequency": 1589,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D182D185D18B",
+    "literalMeaning": "yazmak",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-D182D185D18B",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "verb",
+    "corpusFrequency": 101,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D0B5D184D18D",
+    "literalMeaning": "içmek",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-D0B5D184D18D",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "verb",
+    "corpusFrequency": 98,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D0B3D18AD183",
+    "literalMeaning": "yatmak",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-D0B3D18AD183",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "verb",
+    "corpusFrequency": 18,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D0BAD18AD18D",
+    "literalMeaning": "kalkmak",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-D0BAD18AD18D",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "verb",
+    "corpusFrequency": 27,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D189D380D18D",
+    "literalMeaning": "çekmek, istemek",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-D189D380D18D",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "verb",
+    "corpusFrequency": 16,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D189D380D18D",
+    "literalMeaning": "bilmek",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-D189D380D18D",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "verb",
+    "corpusFrequency": 0,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D0BAD18AD18D",
+    "literalMeaning": "öğrenmek",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-D0BAD18AD18D",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "verb",
+    "corpusFrequency": 85,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D0BAD18AD18D",
+    "literalMeaning": "getirmek",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-D0BAD18AD18D",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "verb",
+    "corpusFrequency": 88,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D181D18BD0BC",
+    "literalMeaning": "hastalanmak",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-D181D18BD0BC",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "verb",
+    "corpusFrequency": 0,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D0BDD18DD185",
+    "literalMeaning": "yaşça büyük",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-D0BDD18DD185",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "noun",
+    "corpusFrequency": 118,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D0BDD18DD185",
+    "literalMeaning": "yaşça küçük",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-D0BDD18DD185",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "noun",
+    "corpusFrequency": 0,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D0B3D18AD183",
+    "literalMeaning": "komşu",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-D0B3D18AD183",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "noun",
+    "corpusFrequency": 275,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D185D18CD18D",
+    "literalMeaning": "misafir",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-D185D18CD18D",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "noun",
+    "corpusFrequency": 154,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D186D380D18D",
+    "literalMeaning": "isim, ad",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-D186D380D18D",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "noun",
+    "corpusFrequency": 280,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D189D380D18D",
+    "literalMeaning": "torunlar, gelecek nesil",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-D189D380D18D",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "noun",
+    "corpusFrequency": 44,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D0B5D0B4D0B6",
+    "literalMeaning": "öğrenci",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-D0B5D0B4D0B6",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "noun",
+    "corpusFrequency": 118,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D181D18BD0BC",
+    "literalMeaning": "hastane",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-D181D18BD0BC",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "noun",
+    "corpusFrequency": 30,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D181D18BD0BC",
+    "literalMeaning": "hasta",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-D181D18BD0BC",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "noun",
+    "corpusFrequency": 127,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D182D185D18B",
+    "literalMeaning": "sırt",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-D182D185D18B",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "noun",
+    "corpusFrequency": 14,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D0B2D0B0D0B3",
+    "literalMeaning": "yıldız",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-D0B2D0B0D0B3",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "noun",
+    "corpusFrequency": 41,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D0B3D183D0B1",
+    "literalMeaning": "tarla, ova",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-D0B3D183D0B1",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "noun",
+    "corpusFrequency": 189,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D0B4D183D0BD",
+    "literalMeaning": "dünya, evren",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-D0B4D183D0BD",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "noun",
+    "corpusFrequency": 349,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D0B7D18DD0BC",
+    "literalMeaning": "zaman, vakit",
+    "conceptId": "TIME",
+    "conceptIds": null,
+    "wordFamilyId": "WF-ZEMAN",
+    "derivation": {
+      "rootIds": [
+        "R-ZEMAN"
+      ],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "noun",
+    "corpusFrequency": 425,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D380D18DD0BD",
+    "literalMeaning": "masa",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-D380D18DD0BD",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "noun",
+    "corpusFrequency": 77,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D182D185D18B",
+    "literalMeaning": "kitap",
+    "conceptId": "BOOK",
+    "conceptIds": null,
+    "wordFamilyId": "WF-TKHYL",
+    "derivation": {
+      "rootIds": [
+        "R-TKHYL"
+      ],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "noun",
+    "corpusFrequency": 629,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D0BAD18AD0B0",
+    "literalMeaning": "kalem",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-D0BAD18AD0B0",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "noun",
+    "corpusFrequency": 1289,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D189D380D0B0",
+    "literalMeaning": "ekmek",
+    "conceptId": "BREAD",
+    "conceptIds": null,
+    "wordFamilyId": "WF-SH1AKHQUE",
+    "derivation": {
+      "rootIds": [
+        "R-SH1AKHQUE"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "partOfSpeech": "noun",
+    "corpusFrequency": 188,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D185D18CD18D",
+    "literalMeaning": "ağır",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-D185D18CD18D",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "adjective",
+    "corpusFrequency": 211,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D189D380D18D",
+    "literalMeaning": "hızlı",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-D189D380D18D",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "adjective",
+    "corpusFrequency": 112,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D0BFD18DD0B6",
+    "literalMeaning": "doğru, gerçek",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-D0BFD18DD0B6",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "adjective",
+    "corpusFrequency": 314,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D0B0D185D18D",
+    "literalMeaning": "onlar",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-D0B0D185D18D",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "pronoun",
+    "corpusFrequency": 4939,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D0BAD18AD18D",
+    "literalMeaning": "oturmak (bir yere)",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-D0BAD18AD18D",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "verb",
+    "corpusFrequency": 0,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D0BAD18AD18D",
+    "literalMeaning": "durmak, ayağa kalkmak",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-D0BAD18AD18D",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "verb",
+    "corpusFrequency": 8,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D0BAD18AD0B0",
+    "literalMeaning": "dans etmek",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-D0BAD18AD0B0",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "verb",
+    "corpusFrequency": 0,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D189D380D18D",
+    "literalMeaning": "sormak",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-D189D380D18D",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "verb",
+    "corpusFrequency": 0,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D189D380D18D",
+    "literalMeaning": "hatırlamak",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-D189D380D18D",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "verb",
+    "corpusFrequency": 16,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D0B4D18DD0BB",
+    "literalMeaning": "içinde yatmak",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-D0B4D18DD0BB",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "verb",
+    "corpusFrequency": 17,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D0BAD18AD18D",
+    "literalMeaning": "evlenmek (erkek)",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-D0BAD18AD18D",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "verb",
+    "corpusFrequency": 22,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D0BAD18AD18D",
+    "literalMeaning": "düşmek",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-D0BAD18AD18D",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "verb",
+    "corpusFrequency": 0,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D189D380D18D",
+    "literalMeaning": "vurmak, çalmak",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-D189D380D18D",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "verb",
+    "corpusFrequency": 14,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D185D18DD0BB",
+    "literalMeaning": "koymak, eklemek",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-D185D18DD0BB",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "verb",
+    "corpusFrequency": 142,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D189D380D18D",
+    "literalMeaning": "rica etmek",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-D189D380D18D",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "verb",
+    "corpusFrequency": 8,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D0B3D18AD183",
+    "literalMeaning": "kahverengi",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-D0B3D18AD183",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "adjective",
+    "corpusFrequency": 0,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D0BAD18AD0B0",
+    "literalMeaning": "güçlü, kuvvetli",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-D0BAD18AD0B0",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "adjective",
+    "corpusFrequency": 16,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D0BAD18AD0B0",
+    "literalMeaning": "güçsüz, zayıf",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-D0BAD18AD0B0",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "adjective",
+    "corpusFrequency": 91,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D380D18DD0BD",
+    "literalMeaning": "sofra, masa üstü",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-D380D18DD0BD",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "noun",
+    "corpusFrequency": 0,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D0BBD18B",
+    "literalMeaning": "et",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-D0BBD18B",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "noun",
+    "corpusFrequency": 162,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D0BAD18AD18D",
+    "literalMeaning": "kabak",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-D0BAD18AD18D",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "noun",
+    "corpusFrequency": 23,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D0B2D0B0D0B3",
+    "literalMeaning": "tavan, çatı",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-D0B2D0B0D0B3",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "noun",
+    "corpusFrequency": 0,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D189D380D18B",
+    "literalMeaning": "buzdolabı",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-D189D380D18B",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "noun",
+    "corpusFrequency": 0,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D0B3D18AD183",
+    "literalMeaning": "yatak odası",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-D0B3D18AD183",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "noun",
+    "corpusFrequency": 36,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D0BFD18DD188",
+    "literalMeaning": "oda",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-D0BFD18DD188",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "noun",
+    "corpusFrequency": 122,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D0B4D18DD0BB",
+    "literalMeaning": "dolap, sandık",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-D0B4D18DD0BB",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "noun",
+    "corpusFrequency": 1,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D0B3D18AD183",
+    "literalMeaning": "yol başı",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-D0B3D18AD183",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "noun",
+    "corpusFrequency": 8,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D188D18B",
+    "literalMeaning": "at",
+    "conceptId": "HORSE",
+    "conceptIds": null,
+    "wordFamilyId": "WF-SHY",
+    "derivation": {
+      "rootIds": [
+        "R-SHY"
+      ],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "noun",
+    "corpusFrequency": 473,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D185D18CD18D",
+    "literalMeaning": "köpek",
+    "conceptId": "DOG",
+    "conceptIds": null,
+    "wordFamilyId": "WF-KHHE",
+    "derivation": {
+      "rootIds": [
+        "R-KHHE"
+      ],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "noun",
+    "corpusFrequency": 190,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D0BAD18AD0B0",
+    "literalMeaning": "saksağan",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-D0BAD18AD0B0",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "noun",
+    "corpusFrequency": 4,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D0BCD18DD0B7",
+    "literalMeaning": "orman eteği",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-D0BCD18DD0B7",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "noun",
+    "corpusFrequency": 0,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D183D18DD180",
+    "literalMeaning": "fırtına",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-D183D18DD180",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "noun",
+    "corpusFrequency": 0,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D189D380D18B",
+    "literalMeaning": "bölge, memleket",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-D189D380D18B",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "noun",
+    "corpusFrequency": 61,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D0BDD0B0D0BF",
+    "literalMeaning": "göz kapağı üstü",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-D0BDD0B0D0BF",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "noun",
+    "corpusFrequency": 1,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D189D185D18C",
+    "literalMeaning": "baş ağrısı",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-D189D185D18C",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "noun",
+    "corpusFrequency": 2,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D0B3D18AD183",
+    "literalMeaning": "demir",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-D0B3D18AD183",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "noun",
+    "corpusFrequency": 192,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D0B3D18AD183",
+    "literalMeaning": "demiryolu",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-D0B3D18AD183",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "noun",
+    "corpusFrequency": 11,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D185D0B0D0B1",
+    "literalMeaning": "Çerkes örf ve adetleri",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-D185D0B0D0B1",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "noun",
+    "corpusFrequency": 370,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D182D185D18B",
+    "literalMeaning": "tarih, geçmiş",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-D182D185D18B",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "noun",
+    "corpusFrequency": 51,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D183D18DD180",
+    "literalMeaning": "şarkı, türkü",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-D183D18DD180",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "noun",
+    "corpusFrequency": 332,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D0BAD18AD0B0",
+    "literalMeaning": "dans, oyun",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-D0BAD18AD0B0",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "noun",
+    "corpusFrequency": 37,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D0B8",
+    "literalMeaning": "sekiz (8)",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-D0B8",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "numeral",
+    "corpusFrequency": 30937,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D0BAD18AD18D",
+    "literalMeaning": "var etmek, yaratmak",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-D0BAD18AD18D",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "verb",
+    "corpusFrequency": 6,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D0BAD18AD18D",
+    "literalMeaning": "duraklamak, mola vermek",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-D0BAD18AD18D",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "verb",
+    "corpusFrequency": 13,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D0BAD18AD18D",
+    "literalMeaning": "geride kalmak",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-D0BAD18AD18D",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "verb",
+    "corpusFrequency": 0,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D0BAD18AD18D",
+    "literalMeaning": "tamamen bitirmek",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-D0BAD18AD18D",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "verb",
+    "corpusFrequency": 0,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D0BAD380D18D",
+    "literalMeaning": "takip etmek",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-D0BAD380D18D",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "verb",
+    "corpusFrequency": 14,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D181D18BD182",
+    "literalMeaning": "bir şey",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-D181D18BD182",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "pronoun",
+    "corpusFrequency": 0,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D0B4D18BD0B3",
+    "literalMeaning": "gün batımı",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-D0B4D18BD0B3",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "noun",
+    "corpusFrequency": 0,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D0B4D18BD0B3",
+    "literalMeaning": "gün doğumu",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-D0B4D18BD0B3",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "noun",
+    "corpusFrequency": 0,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D0B3D18AD183",
+    "literalMeaning": "demirci",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-D0B3D18AD183",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "noun",
+    "corpusFrequency": 0,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D183D18DD180",
+    "literalMeaning": "dış kapı, avlu kapısı",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-D183D18DD180",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "noun",
+    "corpusFrequency": 0,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D0BAD18AD0B0",
+    "literalMeaning": "şehirli",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-D0BAD18AD0B0",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "noun",
+    "corpusFrequency": 0,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D183D18DD180",
+    "literalMeaning": "ses sanatçısı",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-D183D18DD180",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "noun",
+    "corpusFrequency": 0,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D0BAD18AD0B0",
+    "literalMeaning": "dansçı",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-D0BAD18AD0B0",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "noun",
+    "corpusFrequency": 0,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D189D380D18D",
+    "literalMeaning": "bilim, ilim",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-D189D380D18D",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "noun",
+    "corpusFrequency": 233,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D0BFD18DD0B6",
+    "literalMeaning": "doğruluk",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-D0BFD18DD0B6",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "noun",
+    "corpusFrequency": 0,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D0BBD380D18B",
+    "literalMeaning": "mertlik, yiğitlik",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-D0BBD380D18B",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "noun",
+    "corpusFrequency": 248,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D0B3D183D0B1",
+    "literalMeaning": "akıl, zeka",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-D0B3D183D0B1",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "noun",
+    "corpusFrequency": 0,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D0BAD18AD18D",
+    "literalMeaning": "söylence, efsane",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-D0BAD18AD18D",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "noun",
+    "corpusFrequency": 0,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-KHUN-1",
+    "literalMeaning": "ot, çayır otu",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-KHUN-1",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "noun",
+    "corpusFrequency": 2484,
+    "dialectVariants": {
+      "adyghe": "уцы",
+      "kabardian": "удз"
+    }
+  },
+  {
+    "id": "L-KHUN-2",
+    "literalMeaning": "güve (moth)",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-KHUN-2",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "noun",
+    "corpusFrequency": 2484,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-KHUN-3",
+    "literalMeaning": "temel, dokuma ipliği",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-KHUN-3",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "noun",
+    "corpusFrequency": 2484,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-KHUN-4",
+    "literalMeaning": "olmak, başlamak, büyümek, olgunlaşmak",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-KHUN-4",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "verb",
+    "corpusFrequency": 2484,
+    "dialectVariants": {
+      "adyghe": "мэхъу",
+      "kabardian": "хъун"
+    }
+  },
+  {
+    "id": "L-D0BAD18AD18D",
+    "literalMeaning": "olmak, meydana gelmek",
+    "conceptId": null,
+    "conceptIds": null,
+    "wordFamilyId": "WF-L-D0BAD18AD18D",
+    "derivation": {
+      "rootIds": [],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "verb",
+    "corpusFrequency": 130,
+    "dialectVariants": {
+      "adyghe": "мэхъу",
+      "kabardian": "хъун"
+    }
+  },
+  {
+    "id": "L-D0BAD18AD0B0",
+    "literalMeaning": "şehir",
+    "conceptId": "CITY",
+    "conceptIds": null,
+    "wordFamilyId": "WF-QALE",
+    "derivation": {
+      "rootIds": [
+        "R-QALE"
+      ],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "noun",
+    "corpusFrequency": 321,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D183D18DD180",
+    "literalMeaning": "sokak, cadde",
+    "conceptId": "STREET",
+    "conceptIds": null,
+    "wordFamilyId": "WF-UERAM",
+    "derivation": {
+      "rootIds": [
+        "R-UERAM"
+      ],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "noun",
+    "corpusFrequency": 74,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-D0BAD18AD18D",
+    "literalMeaning": "kalem; kurşun kalem",
+    "conceptId": "PEN",
+    "conceptIds": null,
+    "wordFamilyId": "WF-QALEM",
+    "derivation": {
+      "rootIds": [
+        "R-QALEM"
+      ],
+      "morphemeIds": [],
+      "rule": "root"
+    },
+    "partOfSpeech": "noun",
+    "corpusFrequency": 5,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-GUSHHE",
+    "literalMeaning": "besik, kundak",
+    "conceptId": "CRADLE",
+    "conceptIds": null,
+    "wordFamilyId": "WF-GUSHCH",
+    "derivation": null,
+    "partOfSpeech": "noun",
+    "corpusFrequency": 40,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-SHE2",
+    "literalMeaning": "süt",
+    "conceptId": "MILK",
+    "conceptIds": null,
+    "wordFamilyId": "WF-SHE2",
+    "derivation": null,
+    "partOfSpeech": "noun",
+    "corpusFrequency": 213,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-KHY2",
+    "literalMeaning": "altı (6)",
+    "conceptId": "SIX",
+    "conceptIds": null,
+    "wordFamilyId": "WF-KHY2",
+    "derivation": null,
+    "partOfSpeech": "numeral",
+    "corpusFrequency": 325,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-NYBZHY",
+    "literalMeaning": "yaş",
+    "conceptId": "AGE",
+    "conceptIds": null,
+    "wordFamilyId": "WF-NYBZHY",
+    "derivation": null,
+    "partOfSpeech": "noun",
+    "corpusFrequency": 143,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-SHCH",
+    "literalMeaning": "uç",
+    "conceptId": "POINT",
+    "conceptIds": null,
+    "wordFamilyId": "WF-SHCH",
+    "derivation": null,
+    "partOfSpeech": "noun",
+    "corpusFrequency": 60,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-SHEZAE",
+    "literalMeaning": "ihlamur agaci",
+    "conceptId": "LINDEN",
+    "conceptIds": null,
+    "wordFamilyId": "WF-SHEZAE",
+    "derivation": null,
+    "partOfSpeech": "noun",
+    "corpusFrequency": null,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-DEZHEY",
+    "literalMeaning": "findiklik",
+    "conceptId": "HAZEL",
+    "conceptIds": null,
+    "wordFamilyId": "WF-DEZHEY",
+    "derivation": null,
+    "partOfSpeech": "noun",
+    "corpusFrequency": null,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-MEZQOGHUM",
+    "literalMeaning": "orman kuytusu",
+    "conceptId": "FOREST",
+    "conceptIds": null,
+    "wordFamilyId": "WF-MEZQOGHUM",
+    "derivation": null,
+    "partOfSpeech": "noun",
+    "corpusFrequency": null,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-PSHCHYK1U",
+    "literalMeaning": "onlu sayi eki",
+    "conceptId": "TEN",
+    "conceptIds": null,
+    "wordFamilyId": "WF-PSHCHYK1U",
+    "derivation": null,
+    "partOfSpeech": "noun",
+    "corpusFrequency": null,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-PSHCHYK1UT1",
+    "literalMeaning": "on iki",
+    "conceptId": "TWELVE",
+    "conceptIds": null,
+    "wordFamilyId": "WF-PSHCHYK1U",
+    "derivation": null,
+    "partOfSpeech": "noun",
+    "corpusFrequency": null,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-QUIBLY",
+    "literalMeaning": "yedigen",
+    "conceptId": "HEPTAGON",
+    "conceptIds": null,
+    "wordFamilyId": "WF-QUIBLY",
+    "derivation": null,
+    "partOfSpeech": "noun",
+    "corpusFrequency": null,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-ZEDELKHU",
+    "literalMeaning": "erkek kardesler",
+    "conceptId": "BROTHER",
+    "conceptIds": null,
+    "wordFamilyId": "WF-ZEDELKHU",
+    "derivation": null,
+    "partOfSpeech": "noun",
+    "corpusFrequency": null,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-BZEBZE",
+    "literalMeaning": "geveze",
+    "conceptId": "TALKATIVE",
+    "conceptIds": null,
+    "wordFamilyId": "WF-BZE",
+    "derivation": null,
+    "partOfSpeech": "noun",
+    "corpusFrequency": null,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-BZASH1EPS",
+    "literalMeaning": "sive",
+    "conceptId": "DIALECT",
+    "conceptIds": null,
+    "wordFamilyId": "WF-BZE",
+    "derivation": null,
+    "partOfSpeech": "noun",
+    "corpusFrequency": null,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-KHEDZHEBZ",
+    "literalMeaning": "akici konusma",
+    "conceptId": "SPEECH",
+    "conceptIds": null,
+    "wordFamilyId": "WF-BZE",
+    "derivation": null,
+    "partOfSpeech": "noun",
+    "corpusFrequency": null,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-EGUPSESEN",
+    "literalMeaning": "dusunmek",
+    "conceptId": "THOUGHT",
+    "conceptIds": null,
+    "wordFamilyId": "WF-GU",
+    "derivation": null,
+    "partOfSpeech": "noun",
+    "corpusFrequency": null,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-KHQUEBAN",
+    "literalMeaning": "domuz agili",
+    "conceptId": "PIG",
+    "conceptIds": null,
+    "wordFamilyId": "WF-KHQUE",
+    "derivation": null,
+    "partOfSpeech": "noun",
+    "corpusFrequency": null,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-SHCHUE",
+    "literalMeaning": "gri",
+    "conceptId": "GRAY",
+    "conceptIds": null,
+    "wordFamilyId": "WF-SHCHUE",
+    "derivation": null,
+    "partOfSpeech": "noun",
+    "corpusFrequency": null,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-DELKHAN",
+    "literalMeaning": "icine atmak",
+    "conceptId": "THROW",
+    "conceptIds": null,
+    "wordFamilyId": "WF-DELKHAN",
+    "derivation": null,
+    "partOfSpeech": "noun",
+    "corpusFrequency": null,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-SE",
+    "literalMeaning": "ben",
+    "conceptId": "I",
+    "conceptIds": null,
+    "wordFamilyId": "WF-ZAMIR",
+    "derivation": null,
+    "partOfSpeech": "noun",
+    "corpusFrequency": null,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-UE",
+    "literalMeaning": "sen",
+    "conceptId": "YOU",
+    "conceptIds": null,
+    "wordFamilyId": "WF-ZAMIR",
+    "derivation": null,
+    "partOfSpeech": "noun",
+    "corpusFrequency": null,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-AR",
+    "literalMeaning": "o",
+    "conceptId": "HE",
+    "conceptIds": null,
+    "wordFamilyId": "WF-ZAMIR",
+    "derivation": null,
+    "partOfSpeech": "noun",
+    "corpusFrequency": null,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-DE",
+    "literalMeaning": "biz",
+    "conceptId": "WE",
+    "conceptIds": null,
+    "wordFamilyId": "WF-ZAMIR",
+    "derivation": null,
+    "partOfSpeech": "noun",
+    "corpusFrequency": null,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-AKHER",
+    "literalMeaning": "onlar",
+    "conceptId": "THEY",
+    "conceptIds": null,
+    "wordFamilyId": "WF-ZAMIR",
+    "derivation": null,
+    "partOfSpeech": "noun",
+    "corpusFrequency": null,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-A",
+    "literalMeaning": "o (uzak)",
+    "conceptId": "THAT",
+    "conceptIds": null,
+    "wordFamilyId": "WF-ZAMIR",
+    "derivation": null,
+    "partOfSpeech": "noun",
+    "corpusFrequency": null,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-SH1YMAKHUE",
+    "literalMeaning": "kis",
+    "conceptId": "WINTER",
+    "conceptIds": null,
+    "wordFamilyId": "WF-ZAMAN",
+    "derivation": null,
+    "partOfSpeech": "noun",
+    "corpusFrequency": null,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-KHUN",
+    "literalMeaning": "olmak",
+    "conceptId": "BE",
+    "conceptIds": null,
+    "wordFamilyId": "WF-FIIL",
+    "derivation": null,
+    "partOfSpeech": "noun",
+    "corpusFrequency": null,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-KEK1UEN",
+    "literalMeaning": "gelmek",
+    "conceptId": "COME",
+    "conceptIds": null,
+    "wordFamilyId": "WF-FIIL",
+    "derivation": null,
+    "partOfSpeech": "noun",
+    "corpusFrequency": null,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-EDZHEN",
+    "literalMeaning": "okumak",
+    "conceptId": "READ",
+    "conceptIds": null,
+    "wordFamilyId": "WF-FIIL",
+    "derivation": null,
+    "partOfSpeech": "noun",
+    "corpusFrequency": null,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-TKHYN",
+    "literalMeaning": "yazmak",
+    "conceptId": "WRITE",
+    "conceptIds": null,
+    "wordFamilyId": "WF-FIIL",
+    "derivation": null,
+    "partOfSpeech": "noun",
+    "corpusFrequency": null,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-TSYXUN",
+    "literalMeaning": "tanimak",
+    "conceptId": "KNOW",
+    "conceptIds": null,
+    "wordFamilyId": "WF-FIIL",
+    "derivation": null,
+    "partOfSpeech": "noun",
+    "corpusFrequency": null,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-ZEKHEKHEN",
+    "literalMeaning": "duymak",
+    "conceptId": "HEAR",
+    "conceptIds": null,
+    "wordFamilyId": "WF-FIIL",
+    "derivation": null,
+    "partOfSpeech": "noun",
+    "corpusFrequency": null,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-SH1ALE",
+    "literalMeaning": "genc",
+    "conceptId": "YOUTH",
+    "conceptIds": null,
+    "wordFamilyId": "WF-SH1ALE",
+    "derivation": null,
+    "partOfSpeech": "noun",
+    "corpusFrequency": null,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-QUE",
+    "literalMeaning": "ogul",
+    "conceptId": "SON",
+    "conceptIds": null,
+    "wordFamilyId": "WF-QUE",
+    "derivation": null,
+    "partOfSpeech": "noun",
+    "corpusFrequency": null,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-DELKHU",
+    "literalMeaning": "kardes",
+    "conceptId": "BROTHER",
+    "conceptIds": null,
+    "wordFamilyId": "WF-DELKHU",
+    "derivation": null,
+    "partOfSpeech": "noun",
+    "corpusFrequency": null,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-SHYPKHU",
+    "literalMeaning": "kiz kardes",
+    "conceptId": "SISTER",
+    "conceptIds": null,
+    "wordFamilyId": "WF-SHYPKHU",
+    "derivation": null,
+    "partOfSpeech": "noun",
+    "corpusFrequency": null,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-QUAZHE",
+    "literalMeaning": "koy",
+    "conceptId": "VILLAGE",
+    "conceptIds": null,
+    "wordFamilyId": "WF-QUAZHE",
+    "derivation": null,
+    "partOfSpeech": "noun",
+    "corpusFrequency": null,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-NYBZHEGU",
+    "literalMeaning": "arkadas",
+    "conceptId": "FRIEND",
+    "conceptIds": null,
+    "wordFamilyId": "WF-NYBZHEGU",
+    "derivation": null,
+    "partOfSpeech": "noun",
+    "corpusFrequency": null,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-SHY",
+    "literalMeaning": "at",
+    "conceptId": "HORSE",
+    "conceptIds": null,
+    "wordFamilyId": "WF-SHY",
+    "derivation": null,
+    "partOfSpeech": "noun",
+    "corpusFrequency": null,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-SE2",
+    "literalMeaning": "bicak",
+    "conceptId": "KNIFE",
+    "conceptIds": null,
+    "wordFamilyId": "WF-SE",
+    "derivation": null,
+    "partOfSpeech": "noun",
+    "corpusFrequency": null,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-TKHYL",
+    "literalMeaning": "kitap",
+    "conceptId": "BOOK",
+    "conceptIds": null,
+    "wordFamilyId": "WF-TKHYL",
+    "derivation": null,
+    "partOfSpeech": "noun",
+    "corpusFrequency": null,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-KHQUXY",
+    "literalMeaning": "gemi",
+    "conceptId": "SHIP",
+    "conceptIds": null,
+    "wordFamilyId": "WF-KHQUXY",
+    "derivation": null,
+    "partOfSpeech": "noun",
+    "corpusFrequency": null,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-SHHYE",
+    "literalMeaning": "bas",
+    "conceptId": "HEAD",
+    "conceptIds": null,
+    "wordFamilyId": "WF-SHHYE",
+    "derivation": null,
+    "partOfSpeech": "noun",
+    "corpusFrequency": null,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-LY",
+    "literalMeaning": "et",
+    "conceptId": "MEAT",
+    "conceptIds": null,
+    "wordFamilyId": "WF-LY",
+    "derivation": null,
+    "partOfSpeech": "noun",
+    "corpusFrequency": null,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-TX",
+    "literalMeaning": "kitap",
+    "conceptId": "BOOK",
+    "conceptIds": null,
+    "wordFamilyId": "WF-TX",
+    "derivation": null,
+    "partOfSpeech": "noun",
+    "corpusFrequency": 6000,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-EDZ",
+    "literalMeaning": "okul",
+    "conceptId": "SCHOOL",
+    "conceptIds": null,
+    "wordFamilyId": "WF-EDZ",
+    "derivation": null,
+    "partOfSpeech": "noun",
+    "corpusFrequency": 5900,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-PSHEDDZHYZH",
+    "literalMeaning": "sabah",
+    "conceptId": "MORNING",
+    "conceptIds": null,
+    "wordFamilyId": "WF-PSHEDDZHYZH",
+    "derivation": null,
+    "partOfSpeech": "noun",
+    "corpusFrequency": 5600,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-GHATXE",
+    "literalMeaning": "ilkbahar",
+    "conceptId": "SPRING",
+    "conceptIds": null,
+    "wordFamilyId": "WF-GHATXE",
+    "derivation": null,
+    "partOfSpeech": "noun",
+    "corpusFrequency": 5200,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-PC1Y",
+    "literalMeaning": "yalan, yanlis",
+    "conceptId": "LIE",
+    "conceptIds": null,
+    "wordFamilyId": "WF-PC1Y",
+    "derivation": null,
+    "partOfSpeech": "adjective",
+    "corpusFrequency": 5010,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-IN",
+    "literalMeaning": "buyuk",
+    "conceptId": "BIG",
+    "conceptIds": null,
+    "wordFamilyId": "WF-IN",
+    "derivation": null,
+    "partOfSpeech": "adjective",
+    "corpusFrequency": 4900,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-C1YK1U",
+    "literalMeaning": "kucuk",
+    "conceptId": "SMALL",
+    "conceptIds": null,
+    "wordFamilyId": "WF-C1YK1U",
+    "derivation": null,
+    "partOfSpeech": "adjective",
+    "corpusFrequency": 4820,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-PSYNCH1E",
+    "literalMeaning": "hizli, hafif",
+    "conceptId": "FAST",
+    "conceptIds": null,
+    "wordFamilyId": "WF-PSYNCH1E",
+    "derivation": null,
+    "partOfSpeech": "adjective",
+    "corpusFrequency": 4300,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-TXU",
+    "literalMeaning": "bes",
+    "conceptId": "FIVE",
+    "conceptIds": null,
+    "wordFamilyId": "WF-TXU",
+    "derivation": null,
+    "partOfSpeech": "numeral",
+    "corpusFrequency": 3910,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-XY",
+    "literalMeaning": "alti",
+    "conceptId": "SIX",
+    "conceptIds": null,
+    "wordFamilyId": "WF-XY",
+    "derivation": null,
+    "partOfSpeech": "numeral",
+    "corpusFrequency": 3800,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-YI",
+    "literalMeaning": "sekiz",
+    "conceptId": "EIGHT",
+    "conceptIds": null,
+    "wordFamilyId": "WF-YI",
+    "derivation": null,
+    "partOfSpeech": "numeral",
+    "corpusFrequency": 3600,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-BGHWU",
+    "literalMeaning": "dokuz",
+    "conceptId": "NINE",
+    "conceptIds": null,
+    "wordFamilyId": "WF-BGHWU",
+    "derivation": null,
+    "partOfSpeech": "numeral",
+    "corpusFrequency": 3500,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-PSH1Y",
+    "literalMeaning": "on",
+    "conceptId": "TEN",
+    "conceptIds": null,
+    "wordFamilyId": "WF-PSH1Y",
+    "derivation": null,
+    "partOfSpeech": "numeral",
+    "corpusFrequency": 3410,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-TXYN",
+    "literalMeaning": "yazmak",
+    "conceptId": "WRITE",
+    "conceptIds": null,
+    "wordFamilyId": "WF-TX",
+    "derivation": null,
+    "partOfSpeech": "verb",
+    "corpusFrequency": 3100,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-EPLHYN",
+    "literalMeaning": "bakmak, seyretmek",
+    "conceptId": "LOOK",
+    "conceptIds": null,
+    "wordFamilyId": "WF-PLH",
+    "derivation": null,
+    "partOfSpeech": "verb",
+    "corpusFrequency": 2920,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-C1YXUN",
+    "literalMeaning": "tanimak, bilmek",
+    "conceptId": "KNOW",
+    "conceptIds": null,
+    "wordFamilyId": "WF-C1YXU",
+    "derivation": null,
+    "partOfSpeech": "verb",
+    "corpusFrequency": 2260,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-UAFE",
+    "literalMeaning": "gokyuzu",
+    "conceptId": "SKY",
+    "conceptIds": null,
+    "wordFamilyId": "WF-WAFE",
+    "derivation": null,
+    "partOfSpeech": "noun",
+    "corpusFrequency": 330,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-UESHX",
+    "literalMeaning": "yagmur",
+    "conceptId": "RAIN",
+    "conceptIds": null,
+    "wordFamilyId": "WF-WESHX",
+    "derivation": null,
+    "partOfSpeech": "noun",
+    "corpusFrequency": 320,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-TKHE",
+    "literalMeaning": "Tanri, yaratici",
+    "conceptId": "GOD",
+    "conceptIds": null,
+    "wordFamilyId": "WF-TKHE",
+    "derivation": null,
+    "partOfSpeech": "noun",
+    "corpusFrequency": null,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-C1YXUGHE",
+    "literalMeaning": "insanlik, humanizm",
+    "conceptId": "HUMANITY",
+    "conceptIds": null,
+    "wordFamilyId": "WF-C1YXU",
+    "derivation": null,
+    "partOfSpeech": "noun",
+    "corpusFrequency": null,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-GUKHELH",
+    "literalMeaning": "niyet, icsel arzu",
+    "conceptId": "INTENTION",
+    "conceptIds": null,
+    "wordFamilyId": "WF-GU",
+    "derivation": null,
+    "partOfSpeech": "noun",
+    "corpusFrequency": null,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-DYGHUZH",
+    "literalMeaning": "kurt",
+    "conceptId": "WOLF",
+    "conceptIds": null,
+    "wordFamilyId": "WF-DYGHU",
+    "derivation": null,
+    "partOfSpeech": "noun",
+    "corpusFrequency": null,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-DE2",
+    "literalMeaning": "ceviz",
+    "conceptId": "WALNUT",
+    "conceptIds": null,
+    "wordFamilyId": "WF-DE",
+    "derivation": null,
+    "partOfSpeech": "noun",
+    "corpusFrequency": null,
+    "dialectVariants": null
+  },
+  {
+    "id": "L-SHKO",
+    "literalMeaning": "deri, cilt",
+    "conceptId": "SKIN",
+    "conceptIds": null,
+    "wordFamilyId": "WF-SHKO",
+    "derivation": null,
+    "partOfSpeech": "noun",
+    "corpusFrequency": null,
+    "dialectVariants": null
+  }
+]
