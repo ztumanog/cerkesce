@@ -164,14 +164,14 @@ TR: ${kelime.anlam}${kelime.cerkesce ? `\nEN: ${kelime.cerkesce}` : ''}`;
   // ═══════════════════════════════════════════════════════════
   // 3. METNİ KOPYALA
   // ═══════════════════════════════════════════════════════════
-  const handleMetniKopyala = async () => {
+   const handleMetniKopyala = async () => {
     const metin = [
       '🎓 Açık Mektep Çerkesçe Sözlük',
       '',
       `📖 ${cleanHtml(kelime.kelime)}`,
-      `🇹🇷 ${cleanHtml(kelime.anlam)}`,
+      `${/[а-яА-ЯёЁ]/.test(kelime.anlam) ? '🇨🇿' : '🇹🇷'} ${cleanHtml(kelime.anlam).slice(0, 80)}`,
       kelime.ornekler && kelime.ornekler.length > 0
-        ? `\n💬 Örnekler:\n${kelime.ornekler.map((o) => `  • ${cleanHtml(o)}`).join('\n')}`
+        ? `\n💬 Örnekler:\n${kelime.ornekler.map((o) => `  • ${cleanHtml(o).slice(0, 80)}`).join('\n')}`
         : '',
       '',
       '🔗 acikmektep.com',

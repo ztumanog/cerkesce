@@ -93,8 +93,9 @@ async function abazeSozlugunuYukle(): Promise<RawDictionaryEntry[]> {
   if (!words || typeof words !== 'object') return [];
 
   // Çerkesçe karakter kontrolü
-  const isCircassian = (text: string): boolean => {
-    return /[ӏӀ]|[гклптфхцщ]ъ|[кптфхцщ]Ӏ/.test(text);
+   const isCircassian = (text: string): boolean => {
+    // Kiril alfabesi = Çerkesçe (Adigece/Kabardeyce)
+    return /[а-яА-ЯёЁ]/.test(text);
   };
 
   return Object.entries(words)
@@ -115,6 +116,14 @@ async function abazeSozlugunuYukle(): Promise<RawDictionaryEntry[]> {
       const spelling = item.spelling || id;
       const spellingCirc = isCircassian(spelling);
       const definitionCirc = isCircassian(anlam);
+	        if (item.spelling === 'kalp') {
+        console.log('🔍 KALP DEBUG:', {
+          spelling,
+          anlam,
+          spellingCirc,
+          definitionCirc,
+        });
+      }
 
       let lemma: string;
       let translation: string;
