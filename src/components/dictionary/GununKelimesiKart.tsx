@@ -53,12 +53,29 @@ const KELIMELER_VERITABANI: RawDictionaryEntry[] = [
 const ABAZE_SOZLUK_DOSYASI = '/data/27.Tur-Ady_Abaze.json';
 
 function htmlMetniniCikar(value: unknown): string {
-  return String(value || '')
-    .replace(/<[^>]*>/g, ' ')
-    .replace(/&nbsp;/g, ' ')
-    .replace(/&amp;/g, '&')
-    .replace(/\s+/g, ' ')
-    .trim();
+  if (!value) return '';
+
+  let text = String(value);
+
+  // 1. ÖNCE encoded HTML entity'lerini sil (&lt;...&gt;)
+  text = text.replace(/&lt;.*?&gt;/gi, ' ');
+
+  // 2. Sonra normal HTML tag'lerini sil
+  text = text.replace(/<[^>]+>/g, ' ');
+
+  // 3. Entity'leri çöz
+  text = text
+    .replace(/&nbsp;/gi, ' ')
+    .replace(/&amp;/gi, '&')
+    .replace(/&lt;/gi, '<')
+    .replace(/&gt;/gi, '>')
+    .replace(/&quot;/gi, '\"')
+    .replace(/&#39;/gi, \"'\" );
+
+  // 4. Fazla boşlukları temizle
+  text = text.replace(/\s+/g, ' ').trim();
+
+  return text;
 }
 
 async function abazeSozlugunuYukle(): Promise<RawDictionaryEntry[]> {
