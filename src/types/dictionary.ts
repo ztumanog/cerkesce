@@ -84,6 +84,13 @@ export interface TranslationEntry {
   cerkesce?: string;
   concept?: string;
   relatedTerms?: string[];
+    ipa?: string | null;
+  partOfSpeech?: string | null;
+  conceptId?: string | null;
+  rootIds?: string[];
+  wordFamilyId?: string | null;
+  corpusFrequency?: number;
+  dialectVariants?: { adyghe?: string; kabardian?: string } | null;
   idioms?: string[];
   [key: string]: any;
 }
