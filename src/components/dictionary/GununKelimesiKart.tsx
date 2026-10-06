@@ -11,6 +11,7 @@ import {
   selectMultipleDailyWords,
   getTodayDateString,
 } from '@/utils/dailyWordEngine';
+import { cleanHtml } from '@/lib/paylasimGorseli';
 import PaylasimGorseliModal from '@/components/dictionary/PaylasimGorseliModal';
 import BildirimAyar from '@/components/dictionary/BildirimAyar';
 import type { GununKelimesi } from '@/types/dictionary';
@@ -57,26 +58,31 @@ function htmlMetniniCikar(value: unknown): string {
 
   let text = String(value);
 
-  // 1. ÖNCE encoded HTML entity'lerini sil (&lt;...&gt;)
-  text = text.replace(/&lt;.*?&gt;/gi, ' ');
+  // İKİ GEÇİŞ: çift encoded HTML için
+  for (let i = 0; i < 2; i++) {
+    // 1. ÖNCE encoded HTML entity'lerini sil (&lt;...&gt;)
+    text = text.replace(/&lt;.*?&gt;/gi, ' ');
 
-  // 2. Sonra normal HTML tag'lerini sil
-  text = text.replace(/<[^>]+>/g, ' ');
+    // 2. Sonra normal HTML tag'lerini sil
+    text = text.replace(/<[^>]+>/g, ' ');
 
-  // 3. Entity'leri çöz
-  text = text
-    .replace(/&nbsp;/gi, ' ')
-    .replace(/&amp;/gi, '&')
-    .replace(/&lt;/gi, '<')
-    .replace(/&gt;/gi, '>')
-    .replace(/&quot;/gi, '"')
-    .replace(/&#39;/gi, "'");
+    // 3. Entity'leri çöz
+    text = text
+      .replace(/&nbsp;/gi, ' ')
+      .replace(/&amp;/gi, '&')
+      .replace(/&lt;/gi, '<')
+      .replace(/&gt;/gi, '>')
+      .replace(/&quot;/gi, '"')
+      .replace(/&#39;/gi, "'");
+  }
 
   // 4. Fazla boşlukları temizle
   text = text.replace(/\s+/g, ' ').trim();
 
   return text;
 }
+
+
 
 async function abazeSozlugunuYukle(): Promise<RawDictionaryEntry[]> {
   const response = await fetch(ABAZE_SOZLUK_DOSYASI);
@@ -190,10 +196,10 @@ const handleShare = useCallback(async () => {
   const metin = [
     '🎓 Açık Mektep Çerkesçe Sözlük — Günün Kelimesi',
     '',
-    `📖 Kelime: ${bugunKelimesi.kelime}`,
-    `🇹🇷 Anlam: ${bugunKelimesi.anlam || '—'}`,
+    `📖 Kelime: ${cleanHtml(bugunKelimesi.kelime)}`,
+    `🇹🇷 Anlam: ${cleanHtml(bugunKelimesi.anlam || '—')}`,
     bugunKelimesi.ornekler && bugunKelimesi.ornekler.length > 0
-      ? `💬 Örnek:\n${bugunKelimesi.ornekler.map((o) => `  • ${o}`).join('\n')}`
+      ? `💬 Örnek:\n${bugunKelimesi.ornekler.map((o) => `  • ${cleanHtml(o)}`).join('\n')}`
       : '',
   ]
     .filter(Boolean)
