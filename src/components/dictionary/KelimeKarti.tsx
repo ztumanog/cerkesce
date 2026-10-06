@@ -17,7 +17,21 @@ const POS_TR: Record<string, string> = {
 };
 
 const posTR = (p?: string | null): string | null =>
+
   p ? (POS_TR[p] ?? p) : null;
+
+/* Lehçe Türkçe karşılıkları */
+const LEHCE_TR: Record<string, string> = {
+  'western': 'Batı',
+  'eastern': 'Doğu',
+  'dogu': 'Doğu',
+  'bati': 'Batı',
+  'kbd': 'KBD',
+  'ady': 'ADY',
+};
+
+const lehceTR = (l?: string | null): string | null =>
+  l ? (LEHCE_TR[l.toLowerCase()] ?? l.toUpperCase()) : null;
 
 export interface KelimeItem {
   id: string;
@@ -158,15 +172,15 @@ export const KelimeKarti: React.FC<KelimeKartiProps> = ({
         <div className="flex items-center gap-2">
           <h3 className="text-base sm:text-lg font-bold text-amber-600 dark:text-orange-500 group-hover:text-amber-700 dark:group-hover:text-orange-400 transition-colors truncate">
             {data.kelime}
-     {data.ipa && (
-  <div className="mt-0.5 font-mono text-sm text-slate-500 dark:text-slate-400">
-    /{data.ipa}/
-  </div>
-)}       
           </h3>
-          {data.dialect || data.lehce && (
+          {data.ipa && (
+            <div className="font-mono text-xs text-slate-500 dark:text-slate-400">
+              {data.ipa}
+            </div>
+          )}
+          {lehceTR(data.dialect || data.lehce) && (
             <span className={`text-[10px] uppercase font-semibold px-2 py-0.5 rounded-md border shrink-0 ${getLehceBadgeClass(data.dialect || data.lehce)}`}>
-              {data.dialect || data.lehce}
+              {lehceTR(data.dialect || data.lehce)}
             </span>
           )}
         </div>
@@ -174,7 +188,11 @@ export const KelimeKarti: React.FC<KelimeKartiProps> = ({
           {ilkAnlamMetin}
         </p>
         <div className="flex flex-wrap items-center gap-1.5 text-[10px] font-semibold">
-          <span className="rounded-md bg-orange-100 px-2 py-1 text-orange-700 dark:bg-orange-950/50 dark:text-orange-300">Kavram</span>
+          {posTR(data.partOfSpeech) && (
+            <span className="rounded-md bg-orange-100 px2 py-1 text-orange-700 dark:bg-orange-950/50 dark:text-orange-300">
+              {posTR(data.partOfSpeech)}
+            </span>
+          )}
           <span className="rounded-md bg-slate-100 px-2 py-1 text-slate-500 dark:bg-slate-800 dark:text-slate-400">
             {karsilikSayisi || (ilkAnlamMetin !== '—' ? 1 : 0)} karşılık
           </span>
