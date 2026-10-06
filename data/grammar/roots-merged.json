@@ -1,0 +1,1652 @@
+[
+  {
+    "form": "гу",
+    "ipa": "/ɡʷə/",
+    "literalMeaning": "kalp / merkez / duygu",
+    "rootIds": [
+      "R-GU"
+    ],
+    "wordFamilyId": "WF-GU",
+    "derivation": {
+      "rule": "root",
+      "components": [
+        "гу"
+      ]
+    }
+  },
+  {
+    "form": "нэ",
+    "ipa": "/na/",
+    "literalMeaning": "göz / idrak",
+    "rootIds": [
+      "R-NA"
+    ],
+    "wordFamilyId": "WF-NA",
+    "derivation": {
+      "rule": "root",
+      "components": [
+        "нэ"
+      ]
+    }
+  },
+  {
+    "form": "Ӏэ",
+    "ipa": "/ʔa/",
+    "literalMeaning": "el / kol",
+    "rootIds": [
+      "R-A"
+    ],
+    "wordFamilyId": "WF-A",
+    "derivation": {
+      "rule": "root",
+      "components": [
+        "Ӏэ"
+      ]
+    }
+  },
+  {
+    "form": "лъэ",
+    "ipa": "/ɬa/",
+    "literalMeaning": "ayak / taban",
+    "rootIds": [
+      "R-LHA"
+    ],
+    "wordFamilyId": "WF-LHA",
+    "derivation": {
+      "rule": "root",
+      "components": [
+        "лъэ"
+      ]
+    }
+  },
+  {
+    "form": "щхьэ",
+    "ipa": "/ɕħa/",
+    "literalMeaning": "baş / kafa / tepe",
+    "rootIds": [
+      "R-SHHA"
+    ],
+    "wordFamilyId": "WF-SHHA",
+    "derivation": {
+      "rule": "root",
+      "components": [
+        "щхьэ"
+      ]
+    }
+  },
+  {
+    "form": "псэ",
+    "ipa": "/psa/",
+    "literalMeaning": "ruh / can / yaşam",
+    "rootIds": [
+      "R-PSA"
+    ],
+    "wordFamilyId": "WF-PSA",
+    "derivation": {
+      "rule": "root",
+      "components": [
+        "псэ"
+      ]
+    }
+  },
+  {
+    "form": "бзэ",
+    "ipa": "/bza/",
+    "literalMeaning": "dil / konuşma organı",
+    "rootIds": [
+      "R-BZA"
+    ],
+    "wordFamilyId": "WF-BZA",
+    "derivation": {
+      "rule": "root",
+      "components": [
+        "бзэ"
+      ]
+    }
+  },
+  {
+    "form": "жьэ",
+    "ipa": "/ʑa/",
+    "literalMeaning": "ağız",
+    "rootIds": [
+      "R-ZHA"
+    ],
+    "wordFamilyId": "WF-ZHA",
+    "derivation": {
+      "rule": "root",
+      "components": [
+        "жьэ"
+      ]
+    }
+  },
+  {
+    "form": "пэ",
+    "ipa": "/pa/",
+    "literalMeaning": "burun / ön / uç",
+    "rootIds": [
+      "R-PA"
+    ],
+    "wordFamilyId": "WF-PA",
+    "derivation": {
+      "rule": "root",
+      "components": [
+        "пэ"
+      ]
+    }
+  },
+  {
+    "form": "бгъэ",
+    "ipa": "/bʁa/",
+    "literalMeaning": "göğüs / bağır",
+    "rootIds": [
+      "R-BGHA"
+    ],
+    "wordFamilyId": "WF-BGHA",
+    "derivation": {
+      "rule": "root",
+      "components": [
+        "бгъэ"
+      ]
+    }
+  },
+  {
+    "form": "бгъу",
+    "ipa": "/bʁʷə/",
+    "literalMeaning": "yan / kalça / böğür",
+    "rootIds": [
+      "R-BGHW"
+    ],
+    "wordFamilyId": "WF-BGHW",
+    "derivation": {
+      "rule": "root",
+      "components": [
+        "бгъу"
+      ]
+    }
+  },
+  {
+    "form": "кӀэ",
+    "ipa": "/kʲʼa/",
+    "literalMeaning": "kuyruk / son / uç",
+    "rootIds": [
+      "R-KA"
+    ],
+    "wordFamilyId": "WF-KA",
+    "derivation": {
+      "rule": "root",
+      "components": [
+        "кӀэ"
+      ]
+    }
+  },
+  {
+    "form": "тхы",
+    "ipa": "/txə/",
+    "literalMeaning": "sırt / omurga",
+    "rootIds": [
+      "R-TKH"
+    ],
+    "wordFamilyId": "WF-TKH",
+    "derivation": {
+      "rule": "root",
+      "components": [
+        "тхы"
+      ]
+    }
+  },
+  {
+    "form": "ныбэ",
+    "ipa": "/nəba/",
+    "literalMeaning": "karın",
+    "rootIds": [
+      "R-NYBA"
+    ],
+    "wordFamilyId": "WF-NYBA",
+    "derivation": {
+      "rule": "root",
+      "components": [
+        "ныбэ"
+      ]
+    }
+  },
+  {
+    "form": "пщэ",
+    "ipa": "/pɕa/",
+    "literalMeaning": "boyun",
+    "rootIds": [
+      "R-PSHA"
+    ],
+    "wordFamilyId": "WF-PSHA",
+    "derivation": {
+      "rule": "root",
+      "components": [
+        "пщэ"
+      ]
+    }
+  },
+  {
+    "form": "дзэ",
+    "ipa": "/dza/",
+    "literalMeaning": "diş / ordu",
+    "rootIds": [
+      "R-DZA"
+    ],
+    "wordFamilyId": "WF-DZA",
+    "derivation": {
+      "rule": "root",
+      "components": [
+        "дзэ"
+      ]
+    }
+  },
+  {
+    "form": "цы",
+    "ipa": "/tsə/",
+    "literalMeaning": "kıl / tüy",
+    "rootIds": [
+      "R-TSY"
+    ],
+    "wordFamilyId": "WF-TSY",
+    "derivation": {
+      "rule": "root",
+      "components": [
+        "цы"
+      ]
+    }
+  },
+  {
+    "form": "фэ",
+    "ipa": "/fa/",
+    "literalMeaning": "deri / ten / renk / dış görünüş",
+    "rootIds": [
+      "R-FA"
+    ],
+    "wordFamilyId": "WF-FA",
+    "derivation": {
+      "rule": "root",
+      "components": [
+        "фэ"
+      ]
+    }
+  },
+  {
+    "form": "тхьэкӀумэ",
+    "ipa": "/tħakʲʷəma/",
+    "literalMeaning": "kulak",
+    "rootIds": [
+      "R-THAKWUMA"
+    ],
+    "wordFamilyId": "WF-THAKWUMA",
+    "derivation": {
+      "rule": "root",
+      "components": [
+        "тхьэкӀумэ"
+      ]
+    }
+  },
+  {
+    "form": "Ӏуэ",
+    "ipa": "/ʔʷa/",
+    "literalMeaning": "dudak / ağız kenarı",
+    "rootIds": [
+      "R-WA"
+    ],
+    "wordFamilyId": "WF-WA",
+    "derivation": {
+      "rule": "root",
+      "components": [
+        "Ӏуэ"
+      ]
+    }
+  },
+  {
+    "form": "псы",
+    "ipa": "/psə/",
+    "literalMeaning": "su / nehir",
+    "rootIds": [
+      "R-PSY"
+    ],
+    "wordFamilyId": "WF-PSY",
+    "derivation": {
+      "rule": "root",
+      "components": [
+        "псы"
+      ]
+    }
+  },
+  {
+    "form": "мафӀэ",
+    "ipa": "/maːfʼa/",
+    "literalMeaning": "ateş",
+    "rootIds": [
+      "R-MAFA"
+    ],
+    "wordFamilyId": "WF-MAFA",
+    "derivation": {
+      "rule": "root",
+      "components": [
+        "мафӀэ"
+      ]
+    }
+  },
+  {
+    "form": "щӀы",
+    "ipa": "/ɕʼə/",
+    "literalMeaning": "yer / toprak / dünya",
+    "rootIds": [
+      "R-SCHY"
+    ],
+    "wordFamilyId": "WF-SCHY",
+    "derivation": {
+      "rule": "root",
+      "components": [
+        "щӀы"
+      ]
+    }
+  },
+  {
+    "form": "хы",
+    "ipa": "/xə/",
+    "literalMeaning": "deniz / okyanus",
+    "rootIds": [
+      "R-KHY"
+    ],
+    "wordFamilyId": "WF-KHY",
+    "derivation": {
+      "rule": "root",
+      "components": [
+        "хы"
+      ]
+    }
+  },
+  {
+    "form": "мэз",
+    "ipa": "/maz/",
+    "literalMeaning": "orman",
+    "rootIds": [
+      "R-MEZ"
+    ],
+    "wordFamilyId": "WF-MEZ",
+    "derivation": {
+      "rule": "root",
+      "components": [
+        "мэз"
+      ]
+    }
+  },
+  {
+    "form": "мазэ",
+    "ipa": "/maːza/",
+    "literalMeaning": "ay / takvim ayı",
+    "rootIds": [
+      "R-MAZA"
+    ],
+    "wordFamilyId": "WF-MAZA",
+    "derivation": {
+      "rule": "root",
+      "components": [
+        "мазэ"
+      ]
+    }
+  },
+  {
+    "form": "дыгъэ",
+    "ipa": "/dəʁa/",
+    "literalMeaning": "güneş",
+    "rootIds": [
+      "R-DYGHA"
+    ],
+    "wordFamilyId": "WF-DYGHA",
+    "derivation": {
+      "rule": "root",
+      "components": [
+        "дыгъэ"
+      ]
+    }
+  },
+  {
+    "form": "вагъуэ",
+    "ipa": "/vaːʁʷa/",
+    "literalMeaning": "yıldız",
+    "rootIds": [
+      "R-VAGHWA"
+    ],
+    "wordFamilyId": "WF-VAGHWA",
+    "derivation": {
+      "rule": "root",
+      "components": [
+        "вагъуэ"
+      ]
+    }
+  },
+  {
+    "form": "уафэ",
+    "ipa": "/waːfa/",
+    "literalMeaning": "gökyüzü / gök",
+    "rootIds": [
+      "R-WAFA"
+    ],
+    "wordFamilyId": "WF-WAFA",
+    "derivation": {
+      "rule": "root",
+      "components": [
+        "уафэ"
+      ]
+    }
+  },
+  {
+    "form": "жьы",
+    "ipa": "/ʑə/",
+    "literalMeaning": "rüzgar / hava",
+    "rootIds": [
+      "R-ZHY"
+    ],
+    "wordFamilyId": "WF-ZHY",
+    "derivation": {
+      "rule": "root",
+      "components": [
+        "жьы"
+      ]
+    }
+  },
+  {
+    "form": "ос",
+    "ipa": "/was/",
+    "literalMeaning": "kar",
+    "rootIds": [
+      "R-WAS"
+    ],
+    "wordFamilyId": "WF-WAS",
+    "derivation": {
+      "rule": "root",
+      "components": [
+        "ос"
+      ]
+    }
+  },
+  {
+    "form": "уэшх",
+    "ipa": "/waʃx/",
+    "literalMeaning": "yağmur",
+    "rootIds": [
+      "R-WASHKH"
+    ],
+    "wordFamilyId": "WF-WASHKH",
+    "derivation": {
+      "rule": "root",
+      "components": [
+        "уэшх"
+      ]
+    }
+  },
+  {
+    "form": "пшэ",
+    "ipa": "/pɕa/",
+    "literalMeaning": "bulut",
+    "rootIds": [
+      "R-PSHA2"
+    ],
+    "wordFamilyId": "WF-PSHA2",
+    "derivation": {
+      "rule": "root",
+      "components": [
+        "пшэ"
+      ]
+    }
+  },
+  {
+    "form": "мыл",
+    "ipa": "/məɮ/",
+    "literalMeaning": "buz",
+    "rootIds": [
+      "R-MYL"
+    ],
+    "wordFamilyId": "WF-MYL",
+    "derivation": {
+      "rule": "root",
+      "components": [
+        "мыл"
+      ]
+    }
+  },
+  {
+    "form": "бгы",
+    "ipa": "/bɣə/",
+    "literalMeaning": "dağ / tepe",
+    "rootIds": [
+      "R-BGY"
+    ],
+    "wordFamilyId": "WF-BGY",
+    "derivation": {
+      "rule": "root",
+      "components": [
+        "бгы"
+      ]
+    }
+  },
+  {
+    "form": "къуэ",
+    "ipa": "/qʷa/",
+    "literalMeaning": "vadi / dere / koyak",
+    "rootIds": [
+      "R-QWA"
+    ],
+    "wordFamilyId": "WF-QWA",
+    "derivation": {
+      "rule": "root",
+      "components": [
+        "къуэ"
+      ]
+    }
+  },
+  {
+    "form": "пхъэ",
+    "ipa": "/pχa/",
+    "literalMeaning": "odun / tahta / ağaç malzemesi",
+    "rootIds": [
+      "R-PKHA"
+    ],
+    "wordFamilyId": "WF-PKHA",
+    "derivation": {
+      "rule": "root",
+      "components": [
+        "пхъэ"
+      ]
+    }
+  },
+  {
+    "form": "мывэ",
+    "ipa": "/məva/",
+    "literalMeaning": "taş / kayalık",
+    "rootIds": [
+      "R-MYVA"
+    ],
+    "wordFamilyId": "WF-MYVA",
+    "derivation": {
+      "rule": "root",
+      "components": [
+        "мывэ"
+      ]
+    }
+  },
+  {
+    "form": "чӀыгу",
+    "ipa": "/tʃʼəɡʷ/",
+    "literalMeaning": "toprak / arazi",
+    "rootIds": [
+      "R-CHYWGU"
+    ],
+    "wordFamilyId": "WF-CHYWGU",
+    "derivation": {
+      "rule": "root",
+      "components": [
+        "чӀыгу"
+      ]
+    }
+  },
+  {
+    "form": "псыхъуэ",
+    "ipa": "/psəχʷa/",
+    "literalMeaning": "nehir vadisi / su kıyısı",
+    "rootIds": [
+      "R-PSYKHWA"
+    ],
+    "wordFamilyId": "WF-PSYKHWA",
+    "derivation": {
+      "rule": "root",
+      "components": [
+        "псыхъуэ"
+      ]
+    }
+  },
+  {
+    "form": "адэ",
+    "ipa": "/aːda/",
+    "literalMeaning": "baba",
+    "rootIds": [
+      "R-ADA"
+    ],
+    "wordFamilyId": "WF-ADA",
+    "derivation": {
+      "rule": "root",
+      "components": [
+        "адэ"
+      ]
+    }
+  },
+  {
+    "form": "анэ",
+    "ipa": "/aːna/",
+    "literalMeaning": "anne",
+    "rootIds": [
+      "R-ANA"
+    ],
+    "wordFamilyId": "WF-ANA",
+    "derivation": {
+      "rule": "root",
+      "components": [
+        "анэ"
+      ]
+    }
+  },
+  {
+    "form": "пхъу",
+    "ipa": "/pχʷə/",
+    "literalMeaning": "kız evlat",
+    "rootIds": [
+      "R-PKHW"
+    ],
+    "wordFamilyId": "WF-PKHW",
+    "derivation": {
+      "rule": "root",
+      "components": [
+        "пхъу"
+      ]
+    }
+  },
+  {
+    "form": "шыпхъу",
+    "ipa": "/ʃəpχʷ/",
+    "literalMeaning": "kız kardeş",
+    "rootIds": [
+      "R-SHYPKHW"
+    ],
+    "wordFamilyId": "WF-SHYPKHW",
+    "derivation": {
+      "rule": "root",
+      "components": [
+        "шыпхъу"
+      ]
+    }
+  },
+  {
+    "form": "къуэш",
+    "ipa": "/qʷaʃ/",
+    "literalMeaning": "erkek kardeş",
+    "rootIds": [
+      "R-QWASH"
+    ],
+    "wordFamilyId": "WF-QWASH",
+    "derivation": {
+      "rule": "root",
+      "components": [
+        "къуэш"
+      ]
+    }
+  },
+  {
+    "form": "лӀы",
+    "ipa": "/ɬʼə/",
+    "literalMeaning": "adam / erkek / yiğit",
+    "rootIds": [
+      "R-LHY"
+    ],
+    "wordFamilyId": "WF-LHY",
+    "derivation": {
+      "rule": "root",
+      "components": [
+        "лӀы"
+      ]
+    }
+  },
+  {
+    "form": "бзы",
+    "ipa": "/bzə/",
+    "literalMeaning": "dişi / dişil kök",
+    "rootIds": [
+      "R-BZY"
+    ],
+    "wordFamilyId": "WF-BZY",
+    "derivation": {
+      "rule": "root",
+      "components": [
+        "бзы"
+      ]
+    }
+  },
+  {
+    "form": "щӀалэ",
+    "ipa": "/ɕʼaːla/",
+    "literalMeaning": "genç adam / delikanlı",
+    "rootIds": [
+      "R-SCHALA"
+    ],
+    "wordFamilyId": "WF-SCHALA",
+    "derivation": {
+      "rule": "root",
+      "components": [
+        "щӀалэ"
+      ]
+    }
+  },
+  {
+    "form": "сабий",
+    "ipa": "/saːbəj/",
+    "literalMeaning": "bebek / çocuk",
+    "rootIds": [
+      "R-SABIY"
+    ],
+    "wordFamilyId": "WF-SABIY",
+    "derivation": {
+      "rule": "root",
+      "components": [
+        "сабий"
+      ]
+    }
+  },
+  {
+    "form": "тхьэ",
+    "ipa": "/tħa/",
+    "literalMeaning": "tanrı / ilah",
+    "rootIds": [
+      "R-THA"
+    ],
+    "wordFamilyId": "WF-THA",
+    "derivation": {
+      "rule": "root",
+      "components": [
+        "тхьэ"
+      ]
+    }
+  },
+  {
+    "form": "унэ",
+    "ipa": "/wəna/",
+    "literalMeaning": "ev / yuva",
+    "rootIds": [
+      "R-WNA"
+    ],
+    "wordFamilyId": "WF-WNA",
+    "derivation": {
+      "rule": "root",
+      "components": [
+        "унэ"
+      ]
+    }
+  },
+  {
+    "form": "хабзэ",
+    "ipa": "/xaːbza/",
+    "literalMeaning": "gelenek / örf / yasa",
+    "rootIds": [
+      "R-KHABZA"
+    ],
+    "wordFamilyId": "WF-KHABZA",
+    "derivation": {
+      "rule": "root",
+      "components": [
+        "хабзэ"
+      ]
+    }
+  },
+  {
+    "form": "цӀыху",
+    "ipa": "/tsʼəxʷ/",
+    "literalMeaning": "insan / kişi",
+    "rootIds": [
+      "R-TSYKHU"
+    ],
+    "wordFamilyId": "WF-TSYKHU",
+    "derivation": {
+      "rule": "root",
+      "components": [
+        "цӀыху"
+      ]
+    }
+  },
+  {
+    "form": "шы",
+    "ipa": "/ʃə/",
+    "literalMeaning": "at",
+    "rootIds": [
+      "R-SHY"
+    ],
+    "wordFamilyId": "WF-SHY",
+    "derivation": {
+      "rule": "root",
+      "components": [
+        "шы"
+      ]
+    }
+  },
+  {
+    "form": "хьэ",
+    "ipa": "/ħa/",
+    "literalMeaning": "köpek",
+    "rootIds": [
+      "R-HAE"
+    ],
+    "wordFamilyId": "WF-HAE",
+    "derivation": {
+      "rule": "root",
+      "components": [
+        "хьэ"
+      ]
+    }
+  },
+  {
+    "form": "джэду",
+    "ipa": "/dʒadəw/",
+    "literalMeaning": "kedi",
+    "rootIds": [
+      "R-DJADU"
+    ],
+    "wordFamilyId": "WF-DJADU",
+    "derivation": {
+      "rule": "root",
+      "components": [
+        "джэду"
+      ]
+    }
+  },
+  {
+    "form": "мэл",
+    "ipa": "/maɮ/",
+    "literalMeaning": "koyun",
+    "rootIds": [
+      "R-MEL"
+    ],
+    "wordFamilyId": "WF-MEL",
+    "derivation": {
+      "rule": "root",
+      "components": [
+        "мэл"
+      ]
+    }
+  },
+  {
+    "form": "бжэн",
+    "ipa": "/bʒan/",
+    "literalMeaning": "keçi",
+    "rootIds": [
+      "R-BZHEN"
+    ],
+    "wordFamilyId": "WF-BZHEN",
+    "derivation": {
+      "rule": "root",
+      "components": [
+        "бжэн"
+      ]
+    }
+  },
+  {
+    "form": "вы",
+    "ipa": "/və/",
+    "literalMeaning": "öküz",
+    "rootIds": [
+      "R-VY"
+    ],
+    "wordFamilyId": "WF-VY",
+    "derivation": {
+      "rule": "root",
+      "components": [
+        "вы"
+      ]
+    }
+  },
+  {
+    "form": "жэм",
+    "ipa": "/ʒam/",
+    "literalMeaning": "inek",
+    "rootIds": [
+      "R-ZHAM"
+    ],
+    "wordFamilyId": "WF-ZHAM",
+    "derivation": {
+      "rule": "root",
+      "components": [
+        "жэм"
+      ]
+    }
+  },
+  {
+    "form": "къа",
+    "ipa": "/qa/",
+    "literalMeaning": "domuz",
+    "rootIds": [
+      "R-QA"
+    ],
+    "wordFamilyId": "WF-QA",
+    "derivation": {
+      "rule": "root",
+      "components": [
+        "къа"
+      ]
+    }
+  },
+  {
+    "form": "мыщэ",
+    "ipa": "/məɕa/",
+    "literalMeaning": "ayı",
+    "rootIds": [
+      "R-MYSHA"
+    ],
+    "wordFamilyId": "WF-MYSHA",
+    "derivation": {
+      "rule": "root",
+      "components": [
+        "мыщэ"
+      ]
+    }
+  },
+  {
+    "form": "бажэ",
+    "ipa": "/baːʒa/",
+    "literalMeaning": "tilki",
+    "rootIds": [
+      "R-BAZHA"
+    ],
+    "wordFamilyId": "WF-BAZHA",
+    "derivation": {
+      "rule": "root",
+      "components": [
+        "бажэ"
+      ]
+    }
+  },
+  {
+    "form": "бзу",
+    "ipa": "/bzəw/",
+    "literalMeaning": "kuş",
+    "rootIds": [
+      "R-BZU"
+    ],
+    "wordFamilyId": "WF-BZU",
+    "derivation": {
+      "rule": "root",
+      "components": [
+        "бзу"
+      ]
+    }
+  },
+  {
+    "form": "чэт",
+    "ipa": "/tʃat/",
+    "literalMeaning": "tavuk",
+    "rootIds": [
+      "R-CHET"
+    ],
+    "wordFamilyId": "WF-CHET",
+    "derivation": {
+      "rule": "root",
+      "components": [
+        "чэт"
+      ]
+    }
+  },
+  {
+    "form": "бдзэжьей",
+    "ipa": "/bdzaʑej/",
+    "literalMeaning": "balık",
+    "rootIds": [
+      "R-BDZAZHEI"
+    ],
+    "wordFamilyId": "WF-BDZAZHEI",
+    "derivation": {
+      "rule": "root",
+      "components": [
+        "бдзэжьей"
+      ]
+    }
+  },
+  {
+    "form": "фо",
+    "ipa": "/fo/",
+    "literalMeaning": "bal",
+    "rootIds": [
+      "R-FO"
+    ],
+    "wordFamilyId": "WF-FO",
+    "derivation": {
+      "rule": "root",
+      "components": [
+        "фо"
+      ]
+    }
+  },
+  {
+    "form": "бжьэ",
+    "ipa": "/bʒa/",
+    "literalMeaning": "arı",
+    "rootIds": [
+      "R-BZHA"
+    ],
+    "wordFamilyId": "WF-BZHA",
+    "derivation": {
+      "rule": "root",
+      "components": [
+        "бжьэ"
+      ]
+    }
+  },
+  {
+    "form": "дэ",
+    "ipa": "/da/",
+    "literalMeaning": "ceviz / fındık",
+    "rootIds": [
+      "R-DA"
+    ],
+    "wordFamilyId": "WF-DA",
+    "derivation": {
+      "rule": "root",
+      "components": [
+        "дэ"
+      ]
+    }
+  },
+  {
+    "form": "джашэ",
+    "ipa": "/dʒaːɕa/",
+    "literalMeaning": "fasulye",
+    "rootIds": [
+      "R-DJASHA"
+    ],
+    "wordFamilyId": "WF-DJASHA",
+    "derivation": {
+      "rule": "root",
+      "components": [
+        "джашэ"
+      ]
+    }
+  },
+  {
+    "form": "махуэ",
+    "ipa": "/maːxʷa/",
+    "literalMeaning": "gün / gündüz",
+    "rootIds": [
+      "R-MAXWA"
+    ],
+    "wordFamilyId": "WF-MAXWA",
+    "derivation": {
+      "rule": "root",
+      "components": [
+        "махуэ"
+      ]
+    }
+  },
+  {
+    "form": "бжэ",
+    "ipa": "/bʒa/",
+    "literalMeaning": "kapı",
+    "rootIds": [
+      "R-BZHA2"
+    ],
+    "wordFamilyId": "WF-BZHA2",
+    "derivation": {
+      "rule": "root",
+      "components": [
+        "бжэ"
+      ]
+    }
+  },
+  {
+    "form": "дыщэ",
+    "ipa": "/dəɕa/",
+    "literalMeaning": "altın",
+    "rootIds": [
+      "R-DYSHA"
+    ],
+    "wordFamilyId": "WF-DYSHA",
+    "derivation": {
+      "rule": "root",
+      "components": [
+        "дыщэ"
+      ]
+    }
+  },
+  {
+    "form": "дыжьын",
+    "ipa": "/dəʑən/",
+    "literalMeaning": "gümüş",
+    "rootIds": [
+      "R-DYZHYN"
+    ],
+    "wordFamilyId": "WF-DYZHYN",
+    "derivation": {
+      "rule": "root",
+      "components": [
+        "дыжьын"
+      ]
+    }
+  },
+  {
+    "form": "гъущӀ",
+    "ipa": "/ʁʷəɕʼ/",
+    "literalMeaning": "demir",
+    "rootIds": [
+      "R-GHWSCH"
+    ],
+    "wordFamilyId": "WF-GHWSCH",
+    "derivation": {
+      "rule": "root",
+      "components": [
+        "гъущӀ"
+      ]
+    }
+  },
+  {
+    "form": "вакъэ",
+    "ipa": "/vaːqa/",
+    "literalMeaning": "ayakkabı",
+    "rootIds": [
+      "R-VAQA"
+    ],
+    "wordFamilyId": "WF-VAQA",
+    "derivation": {
+      "rule": "root",
+      "components": [
+        "вакъэ"
+      ]
+    }
+  },
+  {
+    "form": "джанэ",
+    "ipa": "/dʒaːna/",
+    "literalMeaning": "gömlek / elbise",
+    "rootIds": [
+      "R-DJANA"
+    ],
+    "wordFamilyId": "WF-DJANA",
+    "derivation": {
+      "rule": "root",
+      "components": [
+        "джанэ"
+      ]
+    }
+  },
+  {
+    "form": "шыгъу",
+    "ipa": "/ʃəʁʷə/",
+    "literalMeaning": "tuz",
+    "rootIds": [
+      "R-SHYGHW"
+    ],
+    "wordFamilyId": "WF-SHYGHW",
+    "derivation": {
+      "rule": "root",
+      "components": [
+        "шыгъу"
+      ]
+    }
+  },
+  {
+    "form": "лы",
+    "ipa": "/ɬə/",
+    "literalMeaning": "et",
+    "rootIds": [
+      "R-LY"
+    ],
+    "wordFamilyId": "WF-LY",
+    "derivation": {
+      "rule": "root",
+      "components": [
+        "лы"
+      ]
+    }
+  },
+  {
+    "form": "щӀакхъуэ",
+    "ipa": "/ɕʼaːqχʷa/",
+    "literalMeaning": "ekmek",
+    "rootIds": [
+      "R-SCHAKHWA"
+    ],
+    "wordFamilyId": "WF-SCHAKHWA",
+    "derivation": {
+      "rule": "root",
+      "components": [
+        "щӀакхъуэ"
+      ]
+    }
+  },
+  {
+    "form": "шэ",
+    "ipa": "/ʃa/",
+    "literalMeaning": "süt / kurşun",
+    "rootIds": [
+      "R-SHA"
+    ],
+    "wordFamilyId": "WF-SHA",
+    "derivation": {
+      "rule": "root",
+      "components": [
+        "шэ"
+      ]
+    }
+  },
+  {
+    "form": "дагъэ",
+    "ipa": "/daːʁa/",
+    "literalMeaning": "yağ",
+    "rootIds": [
+      "R-DAGHA"
+    ],
+    "wordFamilyId": "WF-DAGHA",
+    "derivation": {
+      "rule": "root",
+      "components": [
+        "дагъэ"
+      ]
+    }
+  },
+  {
+    "form": "санэ",
+    "ipa": "/saːna/",
+    "literalMeaning": "üzüm / şarap",
+    "rootIds": [
+      "R-SANA"
+    ],
+    "wordFamilyId": "WF-SANA",
+    "derivation": {
+      "rule": "root",
+      "components": [
+        "санэ"
+      ]
+    }
+  },
+  {
+    "form": "шэнт",
+    "ipa": "/ʃant/",
+    "literalMeaning": "sandalye / koltuk",
+    "rootIds": [
+      "R-SHENT"
+    ],
+    "wordFamilyId": "WF-SHENT",
+    "derivation": {
+      "rule": "root",
+      "components": [
+        "шэнт"
+      ]
+    }
+  },
+  {
+    "form": "Ӏэнэ",
+    "ipa": "/ʔana/",
+    "literalMeaning": "sofralık masa / sofra",
+    "rootIds": [
+      "R-ANA2"
+    ],
+    "wordFamilyId": "WF-ANA2",
+    "derivation": {
+      "rule": "root",
+      "components": [
+        "Ӏэнэ"
+      ]
+    }
+  },
+  {
+    "form": "плъыжь",
+    "ipa": "/pɬəʑ/",
+    "literalMeaning": "kırmızı",
+    "rootIds": [
+      "R-PLHYZH"
+    ],
+    "wordFamilyId": "WF-PLHYZH",
+    "derivation": {
+      "rule": "root",
+      "components": [
+        "плъыжь"
+      ]
+    }
+  },
+  {
+    "form": "фӀыцӀэ",
+    "ipa": "/fʼətsʼa/",
+    "literalMeaning": "siyah",
+    "rootIds": [
+      "R-FYTSA"
+    ],
+    "wordFamilyId": "WF-FYTSA",
+    "derivation": {
+      "rule": "root",
+      "components": [
+        "фӀыцӀэ"
+      ]
+    }
+  },
+  {
+    "form": "хужь",
+    "ipa": "/xʷəʑ/",
+    "literalMeaning": "beyaz",
+    "rootIds": [
+      "R-KHUZH"
+    ],
+    "wordFamilyId": "WF-KHUZH",
+    "derivation": {
+      "rule": "root",
+      "components": [
+        "хужь"
+      ]
+    }
+  },
+  {
+    "form": "щхъуэ",
+    "ipa": "/ɕχʷa/",
+    "literalMeaning": "mavi / gri",
+    "rootIds": [
+      "R-SCHKHWA"
+    ],
+    "wordFamilyId": "WF-SCHKHWA",
+    "derivation": {
+      "rule": "root",
+      "components": [
+        "щхъуэ"
+      ]
+    }
+  },
+  {
+    "form": "гъуэжь",
+    "ipa": "/ʁʷaʑ/",
+    "literalMeaning": "sarı",
+    "rootIds": [
+      "R-GHWAZH"
+    ],
+    "wordFamilyId": "WF-GHWAZH",
+    "derivation": {
+      "rule": "root",
+      "components": [
+        "гъуэжь"
+      ]
+    }
+  },
+  {
+    "form": "кӀыхь",
+    "ipa": "/kʲʼəħ/",
+    "literalMeaning": "uzun",
+    "rootIds": [
+      "R-KYHY"
+    ],
+    "wordFamilyId": "WF-KYHY",
+    "derivation": {
+      "rule": "root",
+      "components": [
+        "кӀыхь"
+      ]
+    }
+  },
+  {
+    "form": "кӀэщӀ",
+    "ipa": "/kʲʼaɕʼ/",
+    "literalMeaning": "kısa",
+    "rootIds": [
+      "R-KESCH"
+    ],
+    "wordFamilyId": "WF-KESCH",
+    "derivation": {
+      "rule": "root",
+      "components": [
+        "кӀэщӀ"
+      ]
+    }
+  },
+  {
+    "form": "ин",
+    "ipa": "/jən/",
+    "literalMeaning": "büyük / iri",
+    "rootIds": [
+      "R-YN"
+    ],
+    "wordFamilyId": "WF-YN",
+    "derivation": {
+      "rule": "root",
+      "components": [
+        "ин"
+      ]
+    }
+  },
+  {
+    "form": "цӀыкӀу",
+    "ipa": "/tsʼəkʷʼ/",
+    "literalMeaning": "küçük / ufak",
+    "rootIds": [
+      "R-TSYKW"
+    ],
+    "wordFamilyId": "WF-TSYKW",
+    "derivation": {
+      "rule": "root",
+      "components": [
+        "цӀыкӀу"
+      ]
+    }
+  },
+  {
+    "form": "фӀы",
+    "ipa": "/fʼə/",
+    "literalMeaning": "iyi / güzel",
+    "rootIds": [
+      "R-FY"
+    ],
+    "wordFamilyId": "WF-FY",
+    "derivation": {
+      "rule": "root",
+      "components": [
+        "фӀы"
+      ]
+    }
+  },
+  {
+    "form": "Ӏей",
+    "ipa": "/ʔej/",
+    "literalMeaning": "kötü / fena",
+    "rootIds": [
+      "R-EI"
+    ],
+    "wordFamilyId": "WF-EI",
+    "derivation": {
+      "rule": "root",
+      "components": [
+        "Ӏей"
+      ]
+    }
+  },
+  {
+    "form": "щӀэ",
+    "ipa": "/ɕʼa/",
+    "literalMeaning": "yeni",
+    "rootIds": [
+      "R-SCHE"
+    ],
+    "wordFamilyId": "WF-SCHE",
+    "derivation": {
+      "rule": "root",
+      "components": [
+        "щӀэ"
+      ]
+    }
+  },
+  {
+    "form": "тхэ",
+    "ipa": "/txa/",
+    "literalMeaning": "yazmak",
+    "rootIds": [
+      "R-TKHE"
+    ],
+    "wordFamilyId": "WF-TKHE",
+    "derivation": {
+      "rule": "root",
+      "components": [
+        "тхэ"
+      ]
+    }
+  },
+  {
+    "form": "кӀуэ",
+    "ipa": "/kʲʼʷa/",
+    "literalMeaning": "gitmek",
+    "rootIds": [
+      "R-KWA"
+    ],
+    "wordFamilyId": "WF-KWA",
+    "derivation": {
+      "rule": "root",
+      "components": [
+        "кӀуэ"
+      ]
+    }
+  },
+  {
+    "form": "шхэ",
+    "ipa": "/ʃxa/",
+    "literalMeaning": "yemek yemek",
+    "rootIds": [
+      "R-SHKHA"
+    ],
+    "wordFamilyId": "WF-SHKHA",
+    "derivation": {
+      "rule": "root",
+      "components": [
+        "шхэ"
+      ]
+    }
+  },
+  {
+    "form": "чэ",
+    "ipa": "/tʃa/",
+    "literalMeaning": "koşmak",
+    "rootIds": [
+      "R-CHA"
+    ],
+    "wordFamilyId": "WF-CHA",
+    "derivation": {
+      "rule": "root",
+      "components": [
+        "чэ"
+      ]
+    }
+  },
+  {
+    "form": "гъуэлъ",
+    "ipa": "/ʁʷaɬ/",
+    "literalMeaning": "yatmak / uzanmak",
+    "rootIds": [
+      "R-GHWALH"
+    ],
+    "wordFamilyId": "WF-GHWALH",
+    "derivation": {
+      "rule": "root",
+      "components": [
+        "гъуэлъ"
+      ]
+    }
+  },
+  {
+    "form": "тӀыс",
+    "ipa": "/tʼəs/",
+    "literalMeaning": "oturmak",
+    "rootIds": [
+      "R-TYS"
+    ],
+    "wordFamilyId": "WF-TYS",
+    "derivation": {
+      "rule": "root",
+      "components": [
+        "тӀыс"
+      ]
+    }
+  },
+  {
+    "form": "тэт",
+    "ipa": "/tat/",
+    "literalMeaning": "ayakta durmak",
+    "rootIds": [
+      "R-TET"
+    ],
+    "wordFamilyId": "WF-TET",
+    "derivation": {
+      "rule": "root",
+      "components": [
+        "тэт"
+      ]
+    }
+  },
+  {
+    "form": "плъэ",
+    "ipa": "/pɬa/",
+    "literalMeaning": "bakmak / gözlemek",
+    "rootIds": [
+      "R-PLHA"
+    ],
+    "wordFamilyId": "WF-PLHA",
+    "derivation": {
+      "rule": "root",
+      "components": [
+        "плъэ"
+      ]
+    }
+  },
+  {
+    "form": "псэлъ",
+    "ipa": "/psaɬ/",
+    "literalMeaning": "konuşmak",
+    "rootIds": [
+      "R-PSALH"
+    ],
+    "wordFamilyId": "WF-PSALH",
+    "derivation": {
+      "rule": "root",
+      "components": [
+        "псэлъ"
+      ]
+    }
+  },
+  {
+    "form": "Ӏуэт",
+    "ipa": "/ʔwat/",
+    "literalMeaning": "anlatmak / söylemek",
+    "rootIds": [
+      "R-WAT"
+    ],
+    "wordFamilyId": "WF-WAT",
+    "derivation": {
+      "rule": "root",
+      "components": [
+        "Ӏуэт"
+      ]
+    }
+  },
+  {
+    "form": "лэжь",
+    "ipa": "/laʑ/",
+    "literalMeaning": "çalışmak / iş yapmak",
+    "rootIds": [
+      "R-LEZH"
+    ],
+    "wordFamilyId": "WF-LEZH",
+    "derivation": {
+      "rule": "root",
+      "components": [
+        "лэжь"
+      ]
+    }
+  },
+  {
+    "form": "Ӏыгъ",
+    "ipa": "/ʔəʁ/",
+    "literalMeaning": "tutmak / korumak",
+    "rootIds": [
+      "R-IGH"
+    ],
+    "wordFamilyId": "WF-IGH",
+    "derivation": {
+      "rule": "root",
+      "components": [
+        "Ӏыгъ"
+      ]
+    }
+  },
+  {
+    "form": "лъэӀу",
+    "ipa": "/ɬaʔw/",
+    "literalMeaning": "rica etmek / istemek",
+    "rootIds": [
+      "R-LHAWU"
+    ],
+    "wordFamilyId": "WF-LHAWU",
+    "derivation": {
+      "rule": "root",
+      "components": [
+        "лъэӀу"
+      ]
+    }
+  }
+]

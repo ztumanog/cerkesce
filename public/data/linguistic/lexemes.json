@@ -2704,7 +2704,8 @@
     "corpusFrequency": 574,
     "rootIds": [
       "R-ZHY2"
-    ]
+    ],
+    "conceptId": "WIND"
   },
   {
     "id": "L-DYGHUZHY",
@@ -2793,7 +2794,8 @@
     "corpusFrequency": 57,
     "rootIds": [
       "R-VY"
-    ]
+    ],
+    "conceptId": "OX"
   },
   {
     "id": "L-KHY",
@@ -11216,7 +11218,8 @@
     "ipa": "/русский'''  !! '''инджылыбзэ/",
     "rootIds": [
       "R-NA"
-    ]
+    ],
+    "conceptId": "EYE"
   },
   {
     "id": "L-NAP1E",
@@ -11232,7 +11235,8 @@
       ],
       "rule": "auto_fuzzy"
     },
-    "corpusFrequency": 26
+    "corpusFrequency": 26,
+    "conceptId": "EYELID"
   },
   {
     "id": "L-ZHE",
@@ -11246,7 +11250,8 @@
     "ipa": "/жь/",
     "rootIds": [
       "R-ZHA"
-    ]
+    ],
+    "conceptId": "MOUTH"
   },
   {
     "id": "L-PSHCHE",
@@ -11260,7 +11265,8 @@
     "ipa": "/пщ/",
     "rootIds": [
       "R-PSHA"
-    ]
+    ],
+    "conceptId": "NECK"
   },
   {
     "id": "L-TEMAK",
@@ -11271,7 +11277,8 @@
     "notes": "C-11.3: kategori tasnifi. [NADIR]",
     "status": "rare",
     "corpusFrequency": 15,
-    "ipa": "/темакъ/"
+    "ipa": "/темакъ/",
+    "conceptId": "THROAT"
   },
   {
     "id": "L-NAT1E",
@@ -11287,7 +11294,8 @@
       ],
       "rule": "auto_fuzzy"
     },
-    "corpusFrequency": 40
+    "corpusFrequency": 40,
+    "conceptId": "FOREHEAD"
   },
   {
     "id": "L-NAPE",
@@ -11318,7 +11326,8 @@
     "ipa": "/ныб/",
     "rootIds": [
       "R-NYBA"
-    ]
+    ],
+    "conceptId": "BELLY"
   },
   {
     "id": "L-BGY",
@@ -11332,7 +11341,8 @@
     "ipa": "/русский'''  !! '''инджылыбзэ/",
     "rootIds": [
       "R-BGY"
-    ]
+    ],
+    "conceptId": "MOUNTAIN"
   },
   {
     "id": "L-TKHY",
@@ -11346,7 +11356,8 @@
     "ipa": "/тх/",
     "rootIds": [
       "R-TKH"
-    ]
+    ],
+    "conceptId": "BACK"
   },
   {
     "id": "L-1EBLE",
@@ -11411,7 +11422,8 @@
       "rule": "auto_fuzzy"
     },
     "corpusFrequency": 50,
-    "ipa": "/лъ/"
+    "ipa": "/лъ/",
+    "conceptId": "TOE"
   },
   {
     "id": "L-LHEPXHUAMBE",
@@ -13300,7 +13312,8 @@
     "ipa": "/русский'''  !! '''инджылыбзэ/",
     "rootIds": [
       "R-MYVA"
-    ]
+    ],
+    "conceptId": "STONE"
   },
   {
     "id": "L-NA",
@@ -13507,7 +13520,8 @@
     "wordFamilyId": "WF-People",
     "notes": "C-11.3: IPA kaynakli.",
     "corpusFrequency": 217,
-    "ipa": "/пщ/"
+    "ipa": "/пщ/",
+    "conceptId": "FATHER_IN_LAW"
   },
   {
     "id": "L-PSHCHEN",
@@ -15180,7 +15194,8 @@
     },
     "wordFamilyId": "WF-L-D0BDD0B0D0BF",
     "notes": "",
-    "corpusFrequency": 0
+    "corpusFrequency": 0,
+    "conceptId": "TEAR"
   },
   {
     "id": "L-D0BDD0B0D184",
@@ -15726,7 +15741,8 @@
     },
     "wordFamilyId": "WF-L-D0B0D0BDD18B",
     "notes": "",
-    "corpusFrequency": 0
+    "corpusFrequency": 0,
+    "conceptId": "GRANDMOTHER"
   },
   {
     "id": "L-D0BDD18BD0B1",
@@ -15756,7 +15772,8 @@
     },
     "wordFamilyId": "WF-L-D0B3D18AD183",
     "notes": "",
-    "corpusFrequency": 275
+    "corpusFrequency": 275,
+    "conceptId": "NEIGHBOR"
   },
   {
     "id": "L-D185D18CD18D",
@@ -15816,7 +15833,8 @@
     },
     "wordFamilyId": "WF-L-D189D380D18D",
     "notes": "",
-    "corpusFrequency": 44
+    "corpusFrequency": 44,
+    "conceptId": "DESCENDANTS"
   },
   {
     "id": "L-D0B0D0B4D18B",
@@ -15909,7 +15927,8 @@
     "corpusFrequency": 61,
     "rootIds": [
       "R-BGHA"
-    ]
+    ],
+    "conceptId": "CHEST"
   },
   {
     "id": "L-D182D185D18B",
@@ -15954,7 +15973,8 @@
     },
     "wordFamilyId": "WF-L-D0B3D183D0B1",
     "notes": "",
-    "corpusFrequency": 189
+    "corpusFrequency": 189,
+    "conceptId": "FIELD"
   },
   {
     "id": "L-D189D18DD0B4",
@@ -16266,7 +16286,8 @@
     },
     "wordFamilyId": "WF-L-D0B8D0B9",
     "notes": "",
-    "corpusFrequency": 61
+    "corpusFrequency": 61,
+    "conceptId": "EIGHT"
   },
   {
     "id": "L-D0B5",
@@ -17538,7 +17559,8 @@
     },
     "wordFamilyId": "WF-L-D0B1D18DD0B4",
     "notes": "",
-    "corpusFrequency": 9
+    "corpusFrequency": 9,
+    "conceptId": "SPIDER"
   },
   {
     "id": "L-D0B0D180D0B3",
@@ -17553,7 +17575,8 @@
     },
     "wordFamilyId": "WF-L-D0B0D180D0B3",
     "notes": "",
-    "corpusFrequency": 19
+    "corpusFrequency": 19,
+    "conceptId": "MOSQUITO"
   },
   {
     "id": "L-D0B1D0B4D0B6",
@@ -17568,7 +17591,8 @@
     },
     "wordFamilyId": "WF-L-D0B1D0B4D0B6",
     "notes": "",
-    "corpusFrequency": 0
+    "corpusFrequency": 0,
+    "conceptId": "FISH"
   },
   {
     "id": "L-D0BAD18AD180",
@@ -17583,7 +17607,8 @@
     },
     "wordFamilyId": "WF-L-D0BAD18AD180",
     "notes": "",
-    "corpusFrequency": 8
+    "corpusFrequency": 8,
+    "conceptId": "CRANE"
   },
   {
     "id": "L-D0B1D0B3D18A",
@@ -17598,7 +17623,8 @@
     },
     "wordFamilyId": "WF-L-D0B1D0B3D18A",
     "notes": "",
-    "corpusFrequency": 1
+    "corpusFrequency": 1,
+    "conceptId": "EAGLE"
   },
   {
     "id": "L-D0B1D0B3D18B",
@@ -17703,7 +17729,8 @@
     },
     "wordFamilyId": "WF-L-D0BDD0B0D189",
     "notes": "",
-    "corpusFrequency": 23
+    "corpusFrequency": 23,
+    "conceptId": "EYEBROW"
   },
   {
     "id": "L-D0BDD0B0D0BF",
@@ -17778,7 +17805,8 @@
     },
     "wordFamilyId": "WF-L-D0BBD18AD18D",
     "notes": "",
-    "corpusFrequency": 6
+    "corpusFrequency": 6,
+    "conceptId": "KNEE"
   },
   {
     "id": "L-D0BBD18AD18D",
@@ -17997,7 +18025,8 @@
     "corpusFrequency": 351,
     "rootIds": [
       "R-PKHA"
-    ]
+    ],
+    "conceptId": "WOOD"
   },
   {
     "id": "L-D0BFD189D18D",
@@ -19669,7 +19698,8 @@
     },
     "wordFamilyId": "WF-L-D0B0D0BDD18D",
     "notes": "",
-    "corpusFrequency": 0
+    "corpusFrequency": 0,
+    "conceptId": "MATERNAL_KIN"
   },
   {
     "id": "L-D0BFD18DD0B6",
@@ -22128,7 +22158,7 @@
     "ipa": "/waːfa/",
     "literalMeaning": "gokyuzu",
     "partOfSpeech": "noun",
-    "conceptId": null,
+    "conceptId": "SKY",
     "conceptIds": null,
     "wordFamilyId": "WF-Nature",
     "derivation": null,
@@ -22144,7 +22174,7 @@
     "ipa": "/русский'''  !! '''инджылыбзэ/",
     "literalMeaning": "yagmur",
     "partOfSpeech": "noun",
-    "conceptId": null,
+    "conceptId": "RAIN",
     "conceptIds": null,
     "wordFamilyId": "WF-Nature",
     "derivation": null,
@@ -24626,7 +24656,8 @@
       "kabardian": ""
     },
     "notes": "Corpus v1.0 (freq: 258, lang: ady, source: 1.Ady-Ady_AP)",
-    "ipa": "/[File:а074адэжь.ogg/"
+    "ipa": "/[File:а074адэжь.ogg/",
+    "conceptId": "ANCESTOR"
   },
   {
     "id": "L-CORPUS-00148",
@@ -30358,7 +30389,8 @@
     "rootIds": [
       "R-PSHA2"
     ],
-    "wordFamilyId": "WF-PSHA2"
+    "wordFamilyId": "WF-PSHA2",
+    "conceptId": "CLOUD"
   },
   {
     "id": "L-CORPUS-00605",
@@ -31320,7 +31352,8 @@
     "rootIds": [
       "R-MYL"
     ],
-    "wordFamilyId": "WF-MYL"
+    "wordFamilyId": "WF-MYL",
+    "conceptId": "ICE"
   },
   {
     "id": "L-CORPUS-00682",
@@ -36110,7 +36143,8 @@
     "rootIds": [
       "R-BAZHA"
     ],
-    "wordFamilyId": "WF-BAZHA"
+    "wordFamilyId": "WF-BAZHA",
+    "conceptId": "FOX"
   },
   {
     "id": "L-CORPUS-01062",
@@ -39765,7 +39799,8 @@
       "kabardian": "къаз"
     },
     "notes": "Corpus v1.0 (freq: 29, lang: kbd, source: 0.Ady-Ady_AIG)",
-    "ipa": "/русский'''  !! '''инджылыбзэ/"
+    "ipa": "/русский'''  !! '''инджылыбзэ/",
+    "conceptId": "GOOSE"
   },
   {
     "id": "L-CORPUS-01352",
@@ -51109,7 +51144,8 @@
     "rootIds": [
       "R-MYL"
     ],
-    "wordFamilyId": "WF-MYL"
+    "wordFamilyId": "WF-MYL",
+    "conceptId": "ICE"
   },
   {
     "id": "L-CORPUS-02253",
@@ -51436,7 +51472,8 @@
       "kabardian": "гуэгуш"
     },
     "notes": "Corpus v1.0 (freq: 17, lang: kbd, source: 1.Ady-Ady_AP)",
-    "ipa": "/русский'''  !! '''инджылыбзэ/"
+    "ipa": "/русский'''  !! '''инджылыбзэ/",
+    "conceptId": "TURKEY"
   },
   {
     "id": "L-CORPUS-02279",
@@ -59122,7 +59159,8 @@
     "rootIds": [
       "R-CHET"
     ],
-    "wordFamilyId": "WF-CHET"
+    "wordFamilyId": "WF-CHET",
+    "conceptId": "CHICKEN"
   },
   {
     "id": "L-CORPUS-02887",
@@ -70978,7 +71016,8 @@
       "kabardian": "жьэпкъ"
     },
     "notes": "Corpus v1.0 (freq: 10, lang: kbd, source: 1.Ady-Ady_AP)",
-    "ipa": "/жьэпкъ/"
+    "ipa": "/жьэпкъ/",
+    "conceptId": "JAW"
   },
   {
     "id": "L-CORPUS-03830",
@@ -81015,7 +81054,8 @@
       "kabardian": "адэжь"
     },
     "notes": "Corpus v1.0 (freq: 8, lang: kbd, source: 1.Ady-Ady_AP)",
-    "ipa": "/[File:а074адэжь.ogg/"
+    "ipa": "/[File:а074адэжь.ogg/",
+    "conceptId": "ANCESTOR"
   },
   {
     "id": "L-CORPUS-04630",
@@ -234702,7 +234742,8 @@
       "kabardian": "бжьыдзэ"
     },
     "notes": "Verified (freq: 5, 1.Ady-Ady_AP)",
-    "ipa": "/[File:б590бжьыдзэ.ogg/"
+    "ipa": "/[File:б590бжьыдзэ.ogg/",
+    "conceptId": "FLEA"
   },
   {
     "id": "L-VERIFIED-02215",
