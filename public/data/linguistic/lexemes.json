@@ -10642,7 +10642,11 @@
     "partOfSpeech": "numeral",
     "ipa": "/txʷə/",
     "corpusFrequency": 3910,
-    "notes": "KBD Corpus rank 89"
+    "notes": "KBD Corpus rank 89",
+    "dialectVariants": {
+      "adyghe": "тфы",
+      "kabardian": "тху"
+    }
   },
   {
     "id": "L-BLY",
@@ -15770,46 +15774,6 @@
     ]
   },
   {
-    "id": "M-PA",
-    "form": "pa-",
-    "literalMeaning": "on ek: karsilikli eylem",
-    "partOfSpeech": "preverb",
-    "conceptId": "PREFIX",
-    "status": "morpheme",
-    "notes": "C-11.3: dilbilgisel ek.",
-    "corpusFrequency": 0
-  },
-  {
-    "id": "M-TAJ",
-    "form": "taj-",
-    "literalMeaning": "on ek: uzerinde",
-    "partOfSpeech": "preverb",
-    "conceptId": "PREFIX",
-    "status": "morpheme",
-    "notes": "C-11.3: dilbilgisel ek.",
-    "corpusFrequency": 0
-  },
-  {
-    "id": "M-AGHE",
-    "form": "-aːʁ",
-    "literalMeaning": "son ek: sifat->isim",
-    "partOfSpeech": "suffix",
-    "conceptId": "SUFFIX",
-    "status": "morpheme",
-    "notes": "C-11.3: dilbilgisel ek.",
-    "corpusFrequency": 0
-  },
-  {
-    "id": "M-GHUE",
-    "form": "-ʁʷə",
-    "literalMeaning": "son ek: meslek/faaliyet",
-    "partOfSpeech": "suffix",
-    "conceptId": "SUFFIX",
-    "status": "morpheme",
-    "notes": "C-11.3: dilbilgisel ek.",
-    "corpusFrequency": 0
-  },
-  {
     "id": "L-PLHEGHUN2",
     "form": "плъэгъун",
     "literalMeaning": "gormek (birlikte)",
@@ -16776,7 +16740,11 @@
     "corpusFrequency": 223,
     "examples": [
       "Фыз гъуэгумыгъуэ ежьакъым."
-    ]
+    ],
+    "dialectVariants": {
+      "adyghe": "шъуз",
+      "kabardian": "фыз"
+    }
   },
   {
     "id": "L-D189D380D18B",
@@ -20203,7 +20171,7 @@
   },
   {
     "id": "L-D18249D183",
-    "form": "тIу",
+    "form": "тӀу",
     "ipa": "/t'əw/",
     "literalMeaning": "iki (2)",
     "partOfSpeech": "numeral",
@@ -20216,7 +20184,7 @@
   },
   {
     "id": "L-D0BFD0BB49D1",
-    "form": "плIы",
+    "form": "плӀы",
     "ipa": "/pɬ'ə/",
     "literalMeaning": "dört (4)",
     "partOfSpeech": "numeral",
@@ -20229,7 +20197,7 @@
   },
   {
     "id": "L-D0BFD18949D1",
-    "form": "пщIы",
+    "form": "пщӀы",
     "ipa": "/pɕ'ə/",
     "literalMeaning": "on (10)",
     "partOfSpeech": "numeral",
@@ -20239,7 +20207,7 @@
   },
   {
     "id": "L-D18249D0BED1",
-    "form": "тIощI",
+    "form": "тӀощӀ",
     "ipa": "/t'awɕ'/",
     "literalMeaning": "yirmi (20)",
     "partOfSpeech": "numeral",
@@ -20252,7 +20220,7 @@
   },
   {
     "id": "L-D189D18DD189",
-    "form": "щэщI",
+    "form": "щэщӀ",
     "ipa": "/ɕaɕ'/",
     "literalMeaning": "otuz (30)",
     "partOfSpeech": "numeral",
@@ -20262,7 +20230,7 @@
   },
   {
     "id": "L-D0BFD0BB49D1",
-    "form": "плIыщI",
+    "form": "плӀыщӀ",
     "ipa": "/pɬ'əɕ'/",
     "literalMeaning": "kırk (40)",
     "partOfSpeech": "numeral",
@@ -20272,7 +20240,7 @@
   },
   {
     "id": "L-D182D185D183",
-    "form": "тхущI",
+    "form": "тхущӀ",
     "ipa": "/txʷəɕ'/",
     "literalMeaning": "elli (50)",
     "partOfSpeech": "numeral",
@@ -20282,7 +20250,7 @@
   },
   {
     "id": "L-D185D18BD189",
-    "form": "хыщI",
+    "form": "хыщӀ",
     "ipa": "/xəɕ'/",
     "literalMeaning": "altmış (60)",
     "partOfSpeech": "numeral",
@@ -20302,7 +20270,7 @@
   },
   {
     "id": "L-D0B1D0BBD18B",
-    "form": "блыщI",
+    "form": "блыщӀ",
     "ipa": "/bɮəɕ'/",
     "literalMeaning": "yetmiş (70)",
     "partOfSpeech": "numeral",
@@ -20315,7 +20283,7 @@
   },
   {
     "id": "L-D0B8D18949",
-    "form": "ищI",
+    "form": "ищӀ",
     "ipa": "/jəɕ'/",
     "literalMeaning": "seksen (80)",
     "partOfSpeech": "numeral",
@@ -20325,7 +20293,7 @@
   },
   {
     "id": "L-D0B1D0B3D18A",
-    "form": "бгъущI",
+    "form": "бгъущӀ",
     "ipa": "/bʁʷəɕ'/",
     "literalMeaning": "doksan (90)",
     "partOfSpeech": "numeral",
@@ -20345,7 +20313,7 @@
   },
   {
     "id": "L-D18249D0BED1",
-    "form": "тIощIитI",
+    "form": "тӀощӀитӀ",
     "ipa": "",
     "literalMeaning": "kırk (40)",
     "partOfSpeech": "numeral",
@@ -20354,7 +20322,7 @@
   },
   {
     "id": "L-D18249D0BED1",
-    "form": "тIощIищ",
+    "form": "тӀощӀищ",
     "ipa": "",
     "literalMeaning": "altmış (60)",
     "partOfSpeech": "numeral",
@@ -20363,7 +20331,7 @@
   },
   {
     "id": "L-D18249D0BED1",
-    "form": "тIощIиплI",
+    "form": "тӀощӀиплӀ",
     "ipa": "",
     "literalMeaning": "seksen (80)",
     "partOfSpeech": "numeral",
@@ -20390,7 +20358,7 @@
   },
   {
     "id": "L-D0BFD18949D0",
-    "form": "пщIей",
+    "form": "пщӀей",
     "ipa": "",
     "literalMeaning": "seksen (80)",
     "partOfSpeech": "numeral",
@@ -23730,7 +23698,11 @@
     },
     "examples": [
       "Вагъуэхэр уафэгум къыщитӀысхьам, дэ гур щӀэтщӀэжри дыкъежьэжат."
-    ]
+    ],
+    "dialectVariants": {
+      "adyghe": "жъуагъуэ",
+      "kabardian": "вагъуэ"
+    }
   },
   {
     "id": "L-SH1YLHE",
@@ -23792,14 +23764,6 @@
       "Абы хуэдизкӀэ пщӀантӀэр лъагэу мывэ сэрейкӀэ къэщӀыхьати, махъшэ утесми удэплъыфынутэкъым пщӀантӀэ кӀуэцӀым. Щ. Ам. МафӀэр къэлыдащ, пщыӀэ кӀуэцӀыр нэху хъуащ. Щ. Т. {И} кӀуэцӀым изэрыхьын очутиться, ",
       "Илъэсищэ блэкӀам и кӀуэцӀкӀэ Къэбэрдейм псэукӀэ иӀар ПащӀэм и творчествэм къыхощ. Т. Хь."
     ]
-  },
-  {
-    "id": "L-XXX",
-    "form": " kelime ",
-    "literalMeaning": "anlam",
-    "conceptId": "CONCEPT",
-    "partOfSpeech": "noun",
-    "notes": "Dogrulandi: sozluk kaynagi"
   },
   {
     "id": "L-DUNEY",
@@ -24054,7 +24018,7 @@
   },
   {
     "id": "L-NAF1",
-    "form": "нафI",
+    "form": "нафӀ",
     "literalMeaning": "iyilik",
     "conceptId": "GOODNESS",
     "partOfSpeech": "noun",
@@ -24071,7 +24035,7 @@
   },
   {
     "id": "L-1ERYTX",
-    "form": "Iэрытх",
+    "form": "Ӏэрытх",
     "literalMeaning": "el yazmasi",
     "conceptId": "MANUSCRIPT",
     "partOfSpeech": "noun",
@@ -24142,7 +24106,7 @@
   },
   {
     "id": "L-QEGHELAK1UE",
-    "form": "къегъэлакIуэ",
+    "form": "къегъэлакӀуэ",
     "literalMeaning": "kurtarici",
     "conceptId": "SAVIOR",
     "partOfSpeech": "noun",
@@ -24150,7 +24114,7 @@
   },
   {
     "id": "L-U1EGHESHCH",
-    "form": "уIэгъэщ",
+    "form": "уӀэгъэщ",
     "literalMeaning": "hastane",
     "conceptId": "HOSPITAL",
     "partOfSpeech": "noun",
@@ -24265,7 +24229,7 @@
   },
   {
     "id": "L-K1UE",
-    "form": "кIуэ",
+    "form": "кӀуэ",
     "literalMeaning": "gelmek (kök)",
     "conceptId": "COME",
     "partOfSpeech": "verb",
@@ -24365,7 +24329,10 @@
     "conceptId": "FIVE",
     "conceptIds": null,
     "corpusFrequency": 27,
-    "dialectVariants": null
+    "dialectVariants": {
+      "adyghe": "тфы",
+      "kabardian": "тху"
+    }
   },
   {
     "id": "L-BGHU",
@@ -30986,7 +30953,7 @@
     "partOfSpeech": "noun",
     "corpusFrequency": 117,
     "dialectVariants": {
-      "adyghe": "",
+      "adyghe": "цуакъэ",
       "kabardian": "вакъэ"
     },
     "notes": "Corpus v1.0 (freq: 117, lang: kbd, source: 1.Ady-Ady_AP)",
@@ -287184,18 +287151,6 @@
     "ipa": "/филологий/"
   },
   {
-    "id": "L-VERIFIED-01668",
-    "form": "i",
-    "literalMeaning": "пятьдесят девятая буква кабардино-черкесского алфавита / Адыгэ алфавитым и тхущӀрэ ебгъуанэ хьэрф.",
-    "partOfSpeech": "noun",
-    "corpusFrequency": 5,
-    "dialectVariants": {
-      "adyghe": "",
-      "kabardian": "i"
-    },
-    "notes": "Verified (freq: 5, 1.Ady-Ady_AP)"
-  },
-  {
     "id": "L-VERIFIED-01669",
     "form": "къегъэщтэн",
     "literalMeaning": "каузатив к къэщтэн I / Къэщтэн I псалъэм и каузатив. <div style='margin-left:3em",
@@ -305202,7 +305157,7 @@
   },
   {
     "id": "L-NUM-ELEVEN",
-    "form": "пщыкIуз",
+    "form": "пщыкӀуз",
     "ipa": "/pɕ'ək'wəz/",
     "literalMeaning": "on bir",
     "conceptId": "ELEVEN",
@@ -305211,7 +305166,7 @@
   },
   {
     "id": "L-NUM-TWELVE",
-    "form": "пщыкIутI",
+    "form": "пщыкӀутӀ",
     "ipa": "/pɕ'ək'wət'/",
     "literalMeaning": "on iki",
     "conceptId": "TWELVE",
@@ -305220,7 +305175,7 @@
   },
   {
     "id": "L-NUM-THIRTEEN",
-    "form": "пщыкIущ",
+    "form": "пщыкӀущ",
     "ipa": "/pɕ'ək'wəɕ/",
     "literalMeaning": "on üç",
     "conceptId": "THIRTEEN",
@@ -305229,7 +305184,7 @@
   },
   {
     "id": "L-NUM-FOURTEEN",
-    "form": "пщыкIуплI",
+    "form": "пщыкӀуплӀ",
     "ipa": "/pɕ'ək'wəpɬ'/",
     "literalMeaning": "on dört",
     "conceptId": "FOURTEEN",
@@ -305238,7 +305193,7 @@
   },
   {
     "id": "L-NUM-FIFTEEN",
-    "form": "пщыкIутху",
+    "form": "пщыкӀутху",
     "ipa": "/pɕ'ək'wətxʷ/",
     "literalMeaning": "on beş",
     "conceptId": "FIFTEEN",
@@ -305247,7 +305202,7 @@
   },
   {
     "id": "L-NUM-SIXTEEN",
-    "form": "пщыкIух",
+    "form": "пщыкӀух",
     "ipa": "/pɕ'ək'wəx/",
     "literalMeaning": "on altı",
     "conceptId": "SIXTEEN",
@@ -305256,7 +305211,7 @@
   },
   {
     "id": "L-NUM-SEVENTEEN",
-    "form": "пщыкIубл",
+    "form": "пщыкӀубл",
     "ipa": "/pɕ'ək'wəbɮ/",
     "literalMeaning": "on yedi",
     "conceptId": "SEVENTEEN",
@@ -305265,7 +305220,7 @@
   },
   {
     "id": "L-NUM-EIGHTEEN",
-    "form": "пщыкIуий",
+    "form": "пщыкӀуий",
     "ipa": "/pɕ'ək'wəj/",
     "literalMeaning": "on sekiz",
     "conceptId": "EIGHTEEN",
@@ -305274,7 +305229,7 @@
   },
   {
     "id": "L-NUM-NINETEEN",
-    "form": "пщыкIубгъу",
+    "form": "пщыкӀубгъу",
     "ipa": "/pɕ'ək'wəbʁʷ/",
     "literalMeaning": "on dokuz",
     "conceptId": "NINETEEN",
@@ -305293,7 +305248,7 @@
   },
   {
     "id": "L-COLOR-BLACK",
-    "form": "фIыцIэ",
+    "form": "фӀыцӀэ",
     "ipa": "/f'əts'a/",
     "literalMeaning": "siyah / koyu",
     "conceptId": "BLACK",
@@ -305305,7 +305260,7 @@
   },
   {
     "id": "L-COLOR-BLUE",
-    "form": "щхъуантIэ",
+    "form": "щхъуантӀэ",
     "ipa": "/ɕxʷaːnt'a/",
     "literalMeaning": "mavi / gök mavisi",
     "conceptId": "BLUE",
@@ -305317,7 +305272,7 @@
   },
   {
     "id": "L-COLOR-NAVY_BLUE",
-    "form": "щIыху",
+    "form": "щӀыху",
     "ipa": "/ɕ'əxʷ/",
     "literalMeaning": "lacivert",
     "conceptId": "NAVY_BLUE",
@@ -305326,7 +305281,7 @@
   },
   {
     "id": "L-COLOR-DARK_COLOR",
-    "form": "кIынфI",
+    "form": "кӀынфӀ",
     "ipa": "/k'ənf'/",
     "literalMeaning": "koyu / mat",
     "conceptId": "DARK_COLOR",
@@ -305642,7 +305597,7 @@
   },
   {
     "id": "L-PROMPT-00000",
-    "form": "щIымахуэ",
+    "form": "щӀымахуэ",
     "literalMeaning": "kış",
     "ipa": "/ɕ'əmaːxʷa/",
     "conceptId": "WINTER",
@@ -305662,7 +305617,7 @@
   },
   {
     "id": "L-PROMPT-00001",
-    "form": "щIышылэ",
+    "form": "щӀышылэ",
     "literalMeaning": "ocak",
     "ipa": "/ɕ'əʃəla/",
     "conceptId": "JANUARY",
@@ -305679,7 +305634,7 @@
   },
   {
     "id": "L-PROMPT-00002",
-    "form": "шыщхьэIу",
+    "form": "шыщхьэӀу",
     "literalMeaning": "ağustos",
     "ipa": "/ʃəɕħaʔw/",
     "conceptId": "AUGUST",
@@ -305696,7 +305651,7 @@
   },
   {
     "id": "L-PROMPT-00003",
-    "form": "фокIадэ",
+    "form": "фокӀадэ",
     "literalMeaning": "eylül",
     "ipa": "/fawk'aːda/",
     "conceptId": "SEPTEMBER",
@@ -305713,7 +305668,7 @@
   },
   {
     "id": "L-PROMPT-00004",
-    "form": "щэкIуэгъуэ",
+    "form": "щэкӀуэгъуэ",
     "literalMeaning": "kasım",
     "ipa": "/ɕak'waʁʷa/",
     "conceptId": "NOVEMBER",
@@ -305730,7 +305685,7 @@
   },
   {
     "id": "L-PROMPT-00005",
-    "form": "гуфIэ",
+    "form": "гуфӀэ",
     "literalMeaning": "sevinç",
     "ipa": "/ɡʷəf'a/",
     "conceptId": "JOY",
@@ -305770,7 +305725,7 @@
   },
   {
     "id": "L-PROMPT-00007",
-    "form": "бампIэ",
+    "form": "бампӀэ",
     "literalMeaning": "kasvet",
     "ipa": "/baːmp'a/",
     "conceptId": "GLOOM",
@@ -305830,7 +305785,7 @@
   },
   {
     "id": "L-PROMPT-00010",
-    "form": "укIытэ",
+    "form": "укӀытэ",
     "literalMeaning": "utanç",
     "ipa": "/wək'ətə/",
     "conceptId": "SHAME",
@@ -305850,7 +305805,7 @@
   },
   {
     "id": "L-PROMPT-00011",
-    "form": "гущIэгъу",
+    "form": "гущӀэгъу",
     "literalMeaning": "acıma",
     "ipa": "/ɡʷəɕ'aʁʷ/",
     "conceptId": "PITY",
@@ -305870,7 +305825,7 @@
   },
   {
     "id": "L-PROMPT-00012",
-    "form": "егуэкIуэн",
+    "form": "егуэкӀуэн",
     "literalMeaning": "aşk",
     "ipa": "/jeɡʷak'wan/",
     "conceptId": "LOVE",
@@ -305890,7 +305845,7 @@
   },
   {
     "id": "L-PROMPT-00013",
-    "form": "гухэщI",
+    "form": "гухэщӀ",
     "literalMeaning": "kalp acısı",
     "ipa": "/ɡʷexaɕ'/",
     "conceptId": "HEARTACHE",
@@ -306008,7 +305963,7 @@
   },
   {
     "id": "L-PROMPT-00019",
-    "form": "гущIыхьэ",
+    "form": "гущӀыхьэ",
     "literalMeaning": "derin incinme",
     "ipa": "/ɡʷəɕ'əħa/",
     "conceptId": "GRIEVANCE",
@@ -306045,7 +306000,7 @@
   },
   {
     "id": "L-PROMPT-00021",
-    "form": "тхакIуэ",
+    "form": "тхакӀуэ",
     "literalMeaning": "yazar",
     "ipa": "/txaːk'wa/",
     "conceptId": "WRITER",
@@ -306062,7 +306017,7 @@
   },
   {
     "id": "L-PROMPT-00022",
-    "form": "егъэджакIуэ",
+    "form": "егъэджакӀуэ",
     "literalMeaning": "öğretmen",
     "ipa": "/jeʁaːdʒaːk'wa/",
     "conceptId": "TEACHER",
@@ -306082,7 +306037,7 @@
   },
   {
     "id": "L-PROMPT-00023",
-    "form": "еджакIуэ",
+    "form": "еджакӀуэ",
     "literalMeaning": "öğrenci",
     "ipa": "/jedʒaːk'wa/",
     "conceptId": "STUDENT",
@@ -306099,7 +306054,7 @@
   },
   {
     "id": "L-PROMPT-00024",
-    "form": "усакIуэ",
+    "form": "усакӀуэ",
     "literalMeaning": "şair",
     "ipa": "/wəsaːk'wa/",
     "conceptId": "POET",
@@ -306116,7 +306071,7 @@
   },
   {
     "id": "L-PROMPT-00025",
-    "form": "щакIуэ",
+    "form": "щакӀуэ",
     "literalMeaning": "avcı",
     "ipa": "/ɕaːk'wa/",
     "conceptId": "HUNTER",
@@ -306136,7 +306091,7 @@
   },
   {
     "id": "L-PROMPT-00026",
-    "form": "лажьакIуэ",
+    "form": "лажьакӀуэ",
     "literalMeaning": "işçi",
     "ipa": "/laːʑaːk'wa/",
     "conceptId": "WORKER",
@@ -306153,7 +306108,7 @@
   },
   {
     "id": "L-PROMPT-00027",
-    "form": "къафакIуэ",
+    "form": "къафакӀуэ",
     "literalMeaning": "dansçı",
     "ipa": "/q'aːfaːk'wa/",
     "conceptId": "DANCER",
@@ -306187,7 +306142,7 @@
   },
   {
     "id": "L-PROMPT-00029",
-    "form": "Iэзэ",
+    "form": "Ӏэзэ",
     "literalMeaning": "hekim",
     "ipa": "/ʔaza/",
     "conceptId": "DOCTOR",
@@ -306209,7 +306164,7 @@
   },
   {
     "id": "L-PROMPT-00030",
-    "form": "сымаджащIэ",
+    "form": "сымаджащӀэ",
     "literalMeaning": "hemşire",
     "ipa": "/səmaːdʒaɕ'a/",
     "conceptId": "NURSE",
@@ -306226,7 +306181,7 @@
   },
   {
     "id": "L-PROMPT-00031",
-    "form": "гъущIIэщIэ",
+    "form": "гъущӀӀэщӀэ",
     "literalMeaning": "demirci",
     "ipa": "/ʁʷəɕ'ʔaɕ'a/",
     "conceptId": "BLACKSMITH",
@@ -306243,7 +306198,7 @@
   },
   {
     "id": "L-PROMPT-00032",
-    "form": "пхъэщIэ",
+    "form": "пхъэщӀэ",
     "literalMeaning": "marangoz",
     "ipa": "/pχaɕ'a/",
     "conceptId": "CARPENTER",
@@ -306277,7 +306232,7 @@
   },
   {
     "id": "L-PROMPT-00034",
-    "form": "пщылI",
+    "form": "пщылӀ",
     "literalMeaning": "çiftçi",
     "ipa": "/pɕəɬ'/",
     "conceptId": "FARMER",
@@ -306297,7 +306252,7 @@
   },
   {
     "id": "L-PROMPT-00035",
-    "form": "зауэлI",
+    "form": "зауэлӀ",
     "literalMeaning": "asker",
     "ipa": "/zaːwaɬ'/",
     "conceptId": "SOLDIER",
@@ -306317,7 +306272,7 @@
   },
   {
     "id": "L-PROMPT-00036",
-    "form": "унэIут",
+    "form": "унэӀут",
     "literalMeaning": "kahya",
     "ipa": "/wənaʔwt/",
     "conceptId": "HOUSEKEEPER",
@@ -306337,7 +306292,7 @@
   },
   {
     "id": "L-PROMPT-00037",
-    "form": "гъуэгурыкIуэ",
+    "form": "гъуэгурыкӀуэ",
     "literalMeaning": "yolcu",
     "ipa": "/ʁʷaɡʷrək'wa/",
     "conceptId": "TRAVELER",
@@ -306357,7 +306312,7 @@
   },
   {
     "id": "L-PROMPT-00038",
-    "form": "джэгуакIуэ",
+    "form": "джэгуакӀуэ",
     "literalMeaning": "ozan",
     "ipa": "/dʒaɡʷaːk'wa/",
     "conceptId": "MINSTREL",
@@ -306377,7 +306332,7 @@
   },
   {
     "id": "L-PROMPT-00039",
-    "form": "дыщэщIэ",
+    "form": "дыщэщӀэ",
     "literalMeaning": "kuyumcu",
     "ipa": "/dəɕaɕ'a/",
     "conceptId": "GOLDSMITH",
@@ -306394,7 +306349,7 @@
   },
   {
     "id": "L-PROMPT-00040",
-    "form": "пхъэIэщэжъ",
+    "form": "пхъэӀэщэжъ",
     "literalMeaning": "pullukçu",
     "ipa": "/pχaʔaɕaʒ/",
     "conceptId": "PLOWMAN",
@@ -306445,7 +306400,7 @@
   },
   {
     "id": "L-PROMPT-00043",
-    "form": "джанэдэдI",
+    "form": "джанэдэдӀ",
     "literalMeaning": "terzi",
     "ipa": "/dʒaːnadaːd'/",
     "conceptId": "TAILOR",
@@ -306462,7 +306417,7 @@
   },
   {
     "id": "L-PROMPT-00044",
-    "form": "вакъэдэдI",
+    "form": "вакъэдэдӀ",
     "literalMeaning": "ayakkabıcı",
     "ipa": "/vaːqaːdaːd'/",
     "conceptId": "SHOEMAKER",
@@ -306513,7 +306468,7 @@
   },
   {
     "id": "L-PROMPT-00047",
-    "form": "щIакхъуэ",
+    "form": "щӀакхъуэ",
     "literalMeaning": "ekmek",
     "ipa": "/ɕ'aːqχʷa/",
     "conceptId": "BREAD",
@@ -306587,7 +306542,7 @@
   },
   {
     "id": "L-PROMPT-00051",
-    "form": "кIэртIоф",
+    "form": "кӀэртӀоф",
     "literalMeaning": "patates",
     "ipa": "/k'art'of/",
     "conceptId": "POTATO",
@@ -306621,7 +306576,7 @@
   },
   {
     "id": "L-PROMPT-00053",
-    "form": "мыIэрысэ",
+    "form": "мыӀэрысэ",
     "literalMeaning": "elma",
     "ipa": "/məʔarəsa/",
     "conceptId": "APPLE",
@@ -310072,14 +310027,14 @@
   },
   {
     "id": "L-KBD-00160",
-    "form": "ӀэкӀуэлъакӀуагъ(э)",
+    "form": "ӀэкӀуэлъакӀуагъ",
     "literalMeaning": "",
     "partOfSpeech": "",
     "conceptId": "",
     "examples": [
       "Нартхэр дэнэ дежи щызэпоуэ губзыгъагъэкӀи, ӀэкӀуэлъакӀуагъэкӀи.. уэрэд жыӀэнкӀи. Нарт. ӀэкӀуэлъакӀуагъэ хэлъын быть умелым, ловким."
     ],
-    "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
+    "notes": "KBD sozluk: 1.Ady-Ady_AP.json | Orijinal: ӀэкӀуэлъакӀуагъ(э)",
     "corpusFrequency": 0,
     "rootIds": [],
     "wordFamilyId": null,
@@ -312146,7 +312101,7 @@
   },
   {
     "id": "L-KBD-00269",
-    "form": "акъылыншагъ(э)",
+    "form": "акъылыншагъ",
     "literalMeaning": "",
     "partOfSpeech": "",
     "conceptId": "",
@@ -312154,7 +312109,7 @@
       "Пащтыхь троным тесыр зи гущӀэгъуншагъэрэ зи акъылыншагъэкӀэ цӀэрыӀуэ хъуа Николай I",
       "Зэрылэ, укъэлыбами, акъылыншагъэ умылэжь. Щ. Н."
     ],
-    "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
+    "notes": "KBD sozluk: 1.Ady-Ady_AP.json | Orijinal: акъылыншагъ(э)",
     "corpusFrequency": 0,
     "rootIds": [],
     "wordFamilyId": null,
@@ -312166,14 +312121,14 @@
   },
   {
     "id": "L-KBD-00270",
-    "form": "акъылыфӀагъ(э)",
+    "form": "акъылыфӀагъ",
     "literalMeaning": "",
     "partOfSpeech": "",
     "conceptId": "",
     "examples": [
       "А цӀыхубзым и акъылыфӀагъым, абы хэлъ цӀыхугъэм, нэмысым, хабзэм уеблэмэ жылэр къыфӀэлӀыкӀырт. Ӏуащхь."
     ],
-    "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
+    "notes": "KBD sozluk: 1.Ady-Ady_AP.json | Orijinal: акъылыфӀагъ(э)",
     "corpusFrequency": 0,
     "rootIds": [],
     "wordFamilyId": null,
@@ -312223,14 +312178,14 @@
   },
   {
     "id": "L-KBD-00273",
-    "form": "алмэсты(н)",
+    "form": "алмэсты",
     "literalMeaning": "",
     "partOfSpeech": "",
     "conceptId": "",
     "examples": [
       "ЛӀыжьым зэрыжиӀэмкӀэ, алмэстыр цӀыхум хуэдэу мэпсалъэ, ауэ Ӏэщым ещхьу цы Ӏув тетщ, и нэхэр, зэтепӀэ мыхъуу, зэгуопӀэ. фольк. Алмэсты(н) мажьэ злая женщина. Алмэсты(н) щхьэц Ӏыгъын уметь повелевать."
     ],
-    "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
+    "notes": "KBD sozluk: 1.Ady-Ady_AP.json | Orijinal: алмэсты(н)",
     "corpusFrequency": 0,
     "rootIds": [],
     "wordFamilyId": null,
@@ -312641,14 +312596,14 @@
   },
   {
     "id": "L-KBD-00295",
-    "form": "армыхъум(э)",
+    "form": "армыхъум",
     "literalMeaning": "",
     "partOfSpeech": "",
     "conceptId": "",
     "examples": [
       "Софят къеплъмэ, мыр къэфакӀуэ къэкӀуащ, армыхъумэ лэжьэн и мурадкъым, къыхужаӀэнкӀэ хъунщ. Щ. I. Ауану сыкъэнэныр хэлъщ шынагъуэу."
     ],
-    "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
+    "notes": "KBD sozluk: 1.Ady-Ady_AP.json | Orijinal: армыхъум(э)",
     "corpusFrequency": 0,
     "rootIds": [],
     "wordFamilyId": null,
@@ -312755,14 +312710,14 @@
   },
   {
     "id": "L-KBD-00301",
-    "form": "афӀэкӀ(а)",
+    "form": "афӀэкӀ",
     "literalMeaning": "",
     "partOfSpeech": "",
     "conceptId": "",
     "examples": [
       "АфӀэкӀа плъэмыкӀмэ, уи кӀэн къикӀынкъым. Сов. Къэб. ифольк. АфӀэкӀа номыр зимыӀэ ничтожество."
     ],
-    "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
+    "notes": "KBD sozluk: 1.Ady-Ady_AP.json | Orijinal: афӀэкӀ(а)",
     "corpusFrequency": 0,
     "rootIds": [],
     "wordFamilyId": null,
@@ -314299,14 +314254,14 @@
   },
   {
     "id": "L-KBD-00382",
-    "form": "бжьыфӀагъ(э)",
+    "form": "бжьыфӀагъ",
     "literalMeaning": "",
     "partOfSpeech": "",
     "conceptId": "",
     "examples": [
       "Шум бжьыфӀагъэу иӀэр зэралъагъуу, уэркъхэм я гур къолыб. КӀ. Т."
     ],
-    "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
+    "notes": "KBD sozluk: 1.Ady-Ady_AP.json | Orijinal: бжьыфӀагъ(э)",
     "corpusFrequency": 0,
     "rootIds": [],
     "wordFamilyId": null,
@@ -314909,14 +314864,14 @@
   },
   {
     "id": "L-KBD-00414",
-    "form": "бланагъ(э)",
+    "form": "бланагъ",
     "literalMeaning": "",
     "partOfSpeech": "",
     "conceptId": "",
     "examples": [
       "Бланэм хуэдэщ и псынщӀагъыр, мыщэм хуэдэщ ибланагъэр. Къэб."
     ],
-    "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
+    "notes": "KBD sozluk: 1.Ady-Ady_AP.json | Orijinal: бланагъ(э)",
     "corpusFrequency": 0,
     "rootIds": [],
     "wordFamilyId": null,
@@ -315578,7 +315533,7 @@
   },
   {
     "id": "L-KBD-00449",
-    "form": "быдагъ(э)",
+    "form": "быдагъ",
     "literalMeaning": "",
     "partOfSpeech": "",
     "conceptId": "",
@@ -315587,7 +315542,7 @@
       "Фэрщ текӀуэныгъэ зиӀэнур, быдагъэ, лӀыгъэ зивгъэӀэ. П. Б. 3. скупость / Быдэ псалъэм и ещанэ мыхьэнэм кьытекӀа щыӀэцӀэщ.",
       "ХьэкӀулинэ ищӀэрт и быдагъым и зэранкӀэ Зырамыку еджэныр хыфӀидзэжауэ Исмел Къущхьэхъум къикӀыжым, фӀы къызэрыхухэмыкӀынур. Ӏуащхь."
     ],
-    "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
+    "notes": "KBD sozluk: 1.Ady-Ady_AP.json | Orijinal: быдагъ(э)",
     "corpusFrequency": 0,
     "rootIds": [],
     "wordFamilyId": null,
@@ -316819,14 +316774,14 @@
   },
   {
     "id": "L-KBD-00514",
-    "form": "гуакӀуагъ(э)",
+    "form": "гуакӀуагъ",
     "literalMeaning": "",
     "partOfSpeech": "",
     "conceptId": "",
     "examples": [
       "Ӏэружан апхуэдэ дыдэу дахэтэкъым ауэ и гуакӀуагъым узыӀэпишэрт. Щ. I."
     ],
-    "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
+    "notes": "KBD sozluk: 1.Ady-Ady_AP.json | Orijinal: гуакӀуагъ(э)",
     "corpusFrequency": 0,
     "rootIds": [],
     "wordFamilyId": null,
@@ -316876,14 +316831,14 @@
   },
   {
     "id": "L-KBD-00517",
-    "form": "гуапагъ(э)",
+    "form": "гуапагъ",
     "literalMeaning": "",
     "partOfSpeech": "",
     "conceptId": "",
     "examples": [
       "Гуапагъэ хэлъу Джырандыкъуэ къызэрызэплъам сыкъызэригъэгъуэтыжри Ӏуэхум нэхъ сытегушхуащ. Т. Хь. {Сурэ} нэфӀэгуфӀагъи, гуапагъи, гу хуабагъи хэлъыжтэкъым. КӀ. Т."
     ],
-    "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
+    "notes": "KBD sozluk: 1.Ady-Ady_AP.json | Orijinal: гуапагъ(э)",
     "corpusFrequency": 0,
     "rootIds": [],
     "wordFamilyId": null,
@@ -318020,14 +317975,14 @@
   },
   {
     "id": "L-KBD-00577",
-    "form": "гурыхуагъ(э)",
+    "form": "гурыхуагъ",
     "literalMeaning": "",
     "partOfSpeech": "",
     "conceptId": "",
     "examples": [
       "Мэзкуу дэт университетым нэсауэ наӀуэ къащохъу адыгэ щӀалэщӀэм и гурыхуагъэмрэ и губзыгъагъэмрэ. Ӏуащхь."
     ],
-    "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
+    "notes": "KBD sozluk: 1.Ady-Ady_AP.json | Orijinal: гурыхуагъ(э)",
     "corpusFrequency": 0,
     "rootIds": [],
     "wordFamilyId": null,
@@ -318324,14 +318279,14 @@
   },
   {
     "id": "L-KBD-00593",
-    "form": "гухагъ(э)",
+    "form": "гухагъ",
     "literalMeaning": "",
     "partOfSpeech": "",
     "conceptId": "",
     "examples": [
       "КӀулацэ и гухагъым щхьэкӀэ Нафисэт зэгуэп зэпытщ. КӀ. Т."
     ],
-    "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
+    "notes": "KBD sozluk: 1.Ady-Ady_AP.json | Orijinal: гухагъ(э)",
     "corpusFrequency": 0,
     "rootIds": [],
     "wordFamilyId": null,
@@ -319921,14 +319876,14 @@
   },
   {
     "id": "L-KBD-00677",
-    "form": "гъуэгуншагъ(э)",
+    "form": "гъуэгуншагъ",
     "literalMeaning": "",
     "partOfSpeech": "",
     "conceptId": "",
     "examples": [
       "Гъуэгуншагъэм... подразделенэхэр ирахулӀащ нэхъ... къешэлӀэгъуафӀэу щыт артиллерийскэ системэхэр къагъэсэбэпыным. Къ. Б."
     ],
-    "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
+    "notes": "KBD sozluk: 1.Ady-Ady_AP.json | Orijinal: гъуэгуншагъ(э)",
     "corpusFrequency": 0,
     "rootIds": [],
     "wordFamilyId": null,
@@ -320454,14 +320409,14 @@
   },
   {
     "id": "L-KBD-00705",
-    "form": "гъуэрыгъуэу(рэ)",
+    "form": "гъуэрыгъуэу",
     "literalMeaning": "",
     "partOfSpeech": "",
     "conceptId": "",
     "examples": [
       "Ар {хъыджэбзыр} псоми ядогушыӀэ, щӀалэхэм гъуэрыгъуэурэ зарегъэшэж. Хь. Хь. СэлэтитӀым гъуэрыгъуэу дэлъейурэ зыкъызэщӀагъаплъэ. Ӏуащхь."
     ],
-    "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
+    "notes": "KBD sozluk: 1.Ady-Ady_AP.json | Orijinal: гъуэрыгъуэу(рэ)",
     "corpusFrequency": 0,
     "rootIds": [],
     "wordFamilyId": null,
@@ -323676,7 +323631,7 @@
   },
   {
     "id": "L-KBD-00874",
-    "form": "дахагъ(э)",
+    "form": "дахагъ",
     "literalMeaning": "",
     "partOfSpeech": "",
     "conceptId": "",
@@ -323684,7 +323639,7 @@
       "Михаил Рощин.. ирагъэблагъэ дахагъэкӀэ Петербург щыцӀэрыӀуэ гуащэ гуэрым деж. Ш. А. Пэжу, лейуэ зы дахагъэ { пщащэм } нэкӀи щхьэкӀи бгъэдэмылъ. Щ. I. Дахагъэ жыхуаӀэ кӀэрымылъын не блистать красотой.",
       "Дахагъэ жыхуаӀэр кӀэрымылъми, ар егъэгушхуэ Щэлэуат. Щ. Н."
     ],
-    "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
+    "notes": "KBD sozluk: 1.Ady-Ady_AP.json | Orijinal: дахагъ(э)",
     "corpusFrequency": 0,
     "rootIds": [],
     "wordFamilyId": null,
@@ -324991,14 +324946,14 @@
   },
   {
     "id": "L-KBD-00943",
-    "form": "дзыхьщӀыгъуэджагъ(э)",
+    "form": "дзыхьщӀыгъуэджагъ",
     "literalMeaning": "",
     "partOfSpeech": "",
     "conceptId": "",
     "examples": [
       "ПцӀы зэфэзэщрэ дзыхьщӀыгъуэджагъэрэ фӀэкӀа иджы Алий кӀэрилъэгъуэж щыӀэтэкъыми, Дэгъуэтлыкъуэ нэхъри абы хуэсакъырт. КӀ. Т."
     ],
-    "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
+    "notes": "KBD sozluk: 1.Ady-Ady_AP.json | Orijinal: дзыхьщӀыгъуэджагъ(э)",
     "corpusFrequency": 0,
     "rootIds": [],
     "wordFamilyId": null,
@@ -325333,14 +325288,14 @@
   },
   {
     "id": "L-KBD-00961",
-    "form": "догуэ(т)",
+    "form": "догуэ",
     "literalMeaning": "",
     "partOfSpeech": "",
     "conceptId": "",
     "examples": [
       "Зэ, зэ догуэт, дохутыр! Ӏэгъу! Уэ мы Ӏуэхум нэхъ акъыл хэлъу убгъэдыхьэ хъунущ. Щ. Т."
     ],
-    "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
+    "notes": "KBD sozluk: 1.Ady-Ady_AP.json | Orijinal: догуэ(т)",
     "corpusFrequency": 0,
     "rootIds": [],
     "wordFamilyId": null,
@@ -332971,14 +332926,14 @@
   },
   {
     "id": "L-KBD-01362",
-    "form": "жьакӀуагъ(э)",
+    "form": "жьакӀуагъ",
     "literalMeaning": "",
     "partOfSpeech": "",
     "conceptId": "",
     "examples": [
       "ЛӀы къэпсалъэм и жьакӀуагъэр едаӀуэхэм ягъэщӀагъуэрт. Ӏуащхь."
     ],
-    "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
+    "notes": "KBD sozluk: 1.Ady-Ady_AP.json | Orijinal: жьакӀуагъ(э)",
     "corpusFrequency": 0,
     "rootIds": [],
     "wordFamilyId": null,
@@ -334132,14 +334087,14 @@
   },
   {
     "id": "L-KBD-01423",
-    "form": "захуагъэ(э)",
+    "form": "захуагъэ",
     "literalMeaning": "",
     "partOfSpeech": "",
     "conceptId": "",
     "examples": [
       "Захуагъэр мафӀэми исыркъыркъым псыми ихьыркъым. (погов. ) ГъэпщылӀакӀуэхэм къаӀэщӀэкӀыну щебэнми цӀыхубэм лӀыгъэр зэикӀ фӀэкӀуэдакъым, захуагъэр зэрытекӀуэнум зэикӀ шэч къытрихьакъым. Ӏуащхь."
     ],
-    "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
+    "notes": "KBD sozluk: 1.Ady-Ady_AP.json | Orijinal: захуагъэ(э)",
     "corpusFrequency": 0,
     "rootIds": [],
     "wordFamilyId": null,
@@ -347165,14 +347120,14 @@
   },
   {
     "id": "L-KBD-02105",
-    "form": "итӀани(кӀ)",
+    "form": "итӀани",
     "literalMeaning": "",
     "partOfSpeech": "",
     "conceptId": "",
     "examples": [
       "А псори хуэмышэчыжу Нафисэт куэдрэ щӀокӀ, итӀани къегъэзэж. КӀ. Т. II однако, несмотря на это, все же / Ауэ, абы щхьэкӀэ къэмынэу, апхуэдэу щыт пэтми. Сешат, итӀани сымылажьэжу схуэшэчакъым."
     ],
-    "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
+    "notes": "KBD sozluk: 1.Ady-Ady_AP.json | Orijinal: итӀани(кӀ)",
     "corpusFrequency": 0,
     "rootIds": [],
     "wordFamilyId": null,
@@ -351313,7 +351268,7 @@
   },
   {
     "id": "L-KBD-02322",
-    "form": "къабзагъ(э)",
+    "form": "къабзагъ",
     "literalMeaning": "",
     "partOfSpeech": "",
     "conceptId": "",
@@ -351321,7 +351276,7 @@
       "Къабзагъэр узыншагъэщ. (погов. ) Ланэ къабзагъэр фӀыуэ илъагъурт, зыщымылъыпхъэм деж зыгуэр щылъу игу техуэртэкъым. Щ. Ам. 2. красота / Дахагъ, бжьыфӀагъ, зэкӀэлъыкӀуагъ.",
       "А лӀы гупым ягъэщӀагъуэрт щӀалэм и нэмысыфӀагъэмрэ и къабзагъэмрэ. фольк."
     ],
-    "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
+    "notes": "KBD sozluk: 1.Ady-Ady_AP.json | Orijinal: къабзагъ(э)",
     "corpusFrequency": 0,
     "rootIds": [],
     "wordFamilyId": null,
@@ -356463,14 +356418,14 @@
   },
   {
     "id": "L-KBD-02592",
-    "form": "къуаншагъ(э)",
+    "form": "къуаншагъ",
     "literalMeaning": "",
     "partOfSpeech": "",
     "conceptId": "",
     "examples": [
       "ГъуэгущӀэ пхрышам къуаншагъэ щиӀи къохъу. Щ. Ам. 2. переносное вина / Къуаншэу щытыныгъэ. Къуаншагъэр зыбгъэдэлъыр зэхэгъэкӀын. Къуаншагъэ кӀэрылъын лежать на ком"
     ],
-    "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
+    "notes": "KBD sozluk: 1.Ady-Ady_AP.json | Orijinal: къуаншагъ(э)",
     "corpusFrequency": 0,
     "rootIds": [],
     "wordFamilyId": null,
@@ -378739,14 +378694,14 @@
   },
   {
     "id": "L-KBD-03759",
-    "form": "пӀейтеягъ(э)",
+    "form": "пӀейтеягъ",
     "literalMeaning": "",
     "partOfSpeech": "",
     "conceptId": "",
     "examples": [
       "Исхьэкъ пӀейтеягъ лъэпкъ хэмылъу сабырт. КӀ. Т."
     ],
-    "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
+    "notes": "KBD sozluk: 1.Ady-Ady_AP.json | Orijinal: пӀейтеягъ(э)",
     "corpusFrequency": 0,
     "rootIds": [],
     "wordFamilyId": null,
@@ -379215,14 +379170,14 @@
   },
   {
     "id": "L-KBD-03784",
-    "form": "пагагъ(э)",
+    "form": "пагагъ",
     "literalMeaning": "",
     "partOfSpeech": "",
     "conceptId": "",
     "examples": [
       "Хъыджэбзым егъэлеяуэ хэлъа пагагъэм щхьэкӀэ Локъан абы зэрызыригъэцӀыхужар тэмэму ищӀащ. Ӏуащхь. Кавказ къуршхэм пагагъэ, быдагъэ, лъагагъэ яӀэу уаӀуплъэрт . Къ."
     ],
-    "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
+    "notes": "KBD sozluk: 1.Ady-Ady_AP.json | Orijinal: пагагъ(э)",
     "corpusFrequency": 0,
     "rootIds": [],
     "wordFamilyId": null,
@@ -379310,7 +379265,7 @@
   },
   {
     "id": "L-KBD-03789",
-    "form": "папщӀэ(кӀэ)",
+    "form": "папщӀэ",
     "literalMeaning": "",
     "partOfSpeech": "",
     "conceptId": "",
@@ -379318,7 +379273,7 @@
       "А зэманым урыс культурэм пыщӀа хъун папщӀэ, бгырысхэм я дежкӀэ хэкӀыпӀэ нэхъыщхьэу щытар урысыдзэм къулыкъу щыщӀэнырт . Н. Ш. II послелог для, ради кого",
       "{ Чачэ Нахъуэ жриӀэу:}"
     ],
-    "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
+    "notes": "KBD sozluk: 1.Ady-Ady_AP.json | Orijinal: папщӀэ(кӀэ)",
     "corpusFrequency": 0,
     "rootIds": [],
     "wordFamilyId": null,
@@ -380801,14 +380756,14 @@
   },
   {
     "id": "L-KBD-03867",
-    "form": "псыӀагъ(э)",
+    "form": "псыӀагъ",
     "literalMeaning": "",
     "partOfSpeech": "",
     "conceptId": "",
     "examples": [
       "ЩӀы цӀынэм, псыӀагъэм, гъатхэ жьыбгъэм я мэхэр зэхэзэрыхьыжауэ къыпщӀихьэрт. Ӏуащхь."
     ],
-    "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
+    "notes": "KBD sozluk: 1.Ady-Ady_AP.json | Orijinal: псыӀагъ(э)",
     "corpusFrequency": 0,
     "rootIds": [],
     "wordFamilyId": null,
@@ -380935,14 +380890,14 @@
   },
   {
     "id": "L-KBD-03874",
-    "form": "псыгъуагъ(э)",
+    "form": "псыгъуагъ",
     "literalMeaning": "",
     "partOfSpeech": "",
     "conceptId": "",
     "examples": [
       "Жалдуз ибг Ӏэгум къитӀэсэным хуэдиз зи псыгъуагъыр куэдым яфӀэтелъыджэу еплъырт. Черк. фольк."
     ],
-    "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
+    "notes": "KBD sozluk: 1.Ady-Ady_AP.json | Orijinal: псыгъуагъ(э)",
     "corpusFrequency": 0,
     "rootIds": [],
     "wordFamilyId": null,
@@ -383300,14 +383255,14 @@
   },
   {
     "id": "L-KBD-03998",
-    "form": "пщыхьэщхьэкӀэ(рэ)",
+    "form": "пщыхьэщхьэкӀэ",
     "literalMeaning": "",
     "partOfSpeech": "",
     "conceptId": "",
     "examples": [
       "Астемыр.. пщыхьэщхьэкӀэ балигъ хъуам тхылъ яригъащӀэрт. КӀ. А."
     ],
-    "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
+    "notes": "KBD sozluk: 1.Ady-Ady_AP.json | Orijinal: пщыхьэщхьэкӀэ(рэ)",
     "corpusFrequency": 0,
     "rootIds": [],
     "wordFamilyId": null,
@@ -384922,7 +384877,7 @@
   },
   {
     "id": "L-KBD-04083",
-    "form": "пэлъыт(э)",
+    "form": "пэлъыт",
     "literalMeaning": "",
     "partOfSpeech": "",
     "conceptId": "",
@@ -384930,7 +384885,7 @@
       "Пщым и пщӀантӀэр жэнэт пэлъытэ щыхъуауэ езым и пщӀантӀэу къыфӀэщӀыжт Мыкъэ. Ш. А. 2. кубано",
       "Дуней утетыхукӀэ нэхъ пэлъытэр Уэрщи пхудощӀыр дэ нэмыс. Анэд."
     ],
-    "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
+    "notes": "KBD sozluk: 1.Ady-Ady_AP.json | Orijinal: пэлъыт(э)",
     "corpusFrequency": 0,
     "rootIds": [],
     "wordFamilyId": null,
@@ -393445,14 +393400,14 @@
   },
   {
     "id": "L-KBD-04530",
-    "form": "фӀеягъ(э)",
+    "form": "фӀеягъ",
     "literalMeaning": "",
     "partOfSpeech": "",
     "conceptId": "",
     "examples": [
       "Сэ сымыщӀэу уигугъэрэ дэр папщӀэ фӀеягъэу жаӀэнур. Ӏуащхь. ФӀеягъэр зи щытхъу, хъуэнышхуэ зи бэр Къамбулэтщ. фольк."
     ],
-    "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
+    "notes": "KBD sozluk: 1.Ady-Ady_AP.json | Orijinal: фӀеягъ(э)",
     "corpusFrequency": 0,
     "rootIds": [],
     "wordFamilyId": null,
@@ -394018,14 +393973,14 @@
   },
   {
     "id": "L-KBD-04560",
-    "form": "фӀэкӀ(а)",
+    "form": "фӀэкӀ",
     "literalMeaning": "",
     "partOfSpeech": "",
     "conceptId": "",
     "examples": [
       "{ЦӀыхухэм} Къэрэкъурэ фӀэкӀа пхъэгъэсын яӀэтэкъым. Сов. Къэб. ифольк. ФӀэкӀ имыӀэу непременно, наверняка."
     ],
-    "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
+    "notes": "KBD sozluk: 1.Ady-Ady_AP.json | Orijinal: фӀэкӀ(а)",
     "corpusFrequency": 0,
     "rootIds": [],
     "wordFamilyId": null,
@@ -395579,14 +395534,14 @@
   },
   {
     "id": "L-KBD-04642",
-    "form": "хуабагъ(э)",
+    "form": "хуабагъ",
     "literalMeaning": "",
     "partOfSpeech": "",
     "conceptId": "",
     "examples": [
       "Хьэсэнбий тӀэкӀу зигъэщхъри, хуабагъэ хэлъу къыщӀигъуащ:"
     ],
-    "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
+    "notes": "KBD sozluk: 1.Ady-Ady_AP.json | Orijinal: хуабагъ(э)",
     "corpusFrequency": 0,
     "rootIds": [],
     "wordFamilyId": null,
@@ -397319,14 +397274,14 @@
   },
   {
     "id": "L-KBD-04733",
-    "form": "хуэмей-хуэмейуэ(рэ)",
+    "form": "хуэмей-хуэмейуэ",
     "literalMeaning": "",
     "partOfSpeech": "",
     "conceptId": "",
     "examples": [
       "ЛӀыжьыр ежьэжащ хуэму, хуэмей"
     ],
-    "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
+    "notes": "KBD sozluk: 1.Ady-Ady_AP.json | Orijinal: хуэмей-хуэмейуэ(рэ)",
     "corpusFrequency": 0,
     "rootIds": [],
     "wordFamilyId": null,
@@ -397585,14 +397540,14 @@
   },
   {
     "id": "L-KBD-04747",
-    "form": "хуэсакъыпэу(рэ)",
+    "form": "хуэсакъыпэу",
     "literalMeaning": "",
     "partOfSpeech": "",
     "conceptId": "",
     "examples": [
       "Аслъэн хуэсакъыпэу ӀэплӀэм ису хьэвшыр цӀыкӀур унэм къехь. Къэб. п. и ант."
     ],
-    "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
+    "notes": "KBD sozluk: 1.Ady-Ady_AP.json | Orijinal: хуэсакъыпэу(рэ)",
     "corpusFrequency": 0,
     "rootIds": [],
     "wordFamilyId": null,
@@ -397604,7 +397559,7 @@
   },
   {
     "id": "L-KBD-04748",
-    "form": "хуэсакъыу(рэ)",
+    "form": "хуэсакъыу",
     "literalMeaning": "",
     "partOfSpeech": "",
     "conceptId": "",
@@ -397612,7 +397567,7 @@
       "Абы {фызым} илъэсий хъуауэ хуэсакъыу и лӀым и Ӏэмэпсымэ, и щыгъын пхъуантэм дэлъу ихъумахэр къищтэрей хъуащ. Хь. Хь. 2. бдительно / Хуэмыбэлэрыгъыу.",
       "Къэралым и гъунапкъэхэр хуэсакъыу яхъумэ. Ӏуащхь."
     ],
-    "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
+    "notes": "KBD sozluk: 1.Ady-Ady_AP.json | Orijinal: хуэсакъыу(рэ)",
     "corpusFrequency": 0,
     "rootIds": [],
     "wordFamilyId": null,
@@ -399853,14 +399808,14 @@
   },
   {
     "id": "L-KBD-04866",
-    "form": "хьэжэпхъажагъ(э)",
+    "form": "хьэжэпхъажагъ",
     "literalMeaning": "",
     "partOfSpeech": "",
     "conceptId": "",
     "examples": [
       "И зыгъэхъеикӀэм зы хьэжэпхъажагъи пӀейтеиныгъи а цӀыхум хэлъу плъагъуртэкъым абы. Ӏуащхь."
     ],
-    "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
+    "notes": "KBD sozluk: 1.Ady-Ady_AP.json | Orijinal: хьэжэпхъажагъ(э)",
     "corpusFrequency": 0,
     "rootIds": [],
     "wordFamilyId": null,
@@ -402516,14 +402471,14 @@
   },
   {
     "id": "L-KBD-05006",
-    "form": "чэзууэ(рэ)",
+    "form": "чэзууэ",
     "literalMeaning": "",
     "partOfSpeech": "",
     "conceptId": "",
     "examples": [
       "Мурадин а тӀум {Щокъарэрэ Щэныбэмрэ} чэзууэ еплъащ. Къ. Хъ."
     ],
-    "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
+    "notes": "KBD sozluk: 1.Ady-Ady_AP.json | Orijinal: чэзууэ(рэ)",
     "corpusFrequency": 0,
     "rootIds": [],
     "wordFamilyId": null,
@@ -405392,14 +405347,14 @@
   },
   {
     "id": "L-KBD-05157",
-    "form": "щӀигъу(кӀэ)",
+    "form": "щӀигъу",
     "literalMeaning": "",
     "partOfSpeech": "",
     "conceptId": "",
     "examples": [
       "ЛӀыгъур и унэм щекӀуэлӀэжым, Хэкум цӀыхуу исыр зэхуэсри, мазэм щӀигъукӀэ хьэгъуэлӀыгъуэр зэхэтащ. Къэб. таур."
     ],
-    "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
+    "notes": "KBD sozluk: 1.Ady-Ady_AP.json | Orijinal: щӀигъу(кӀэ)",
     "corpusFrequency": 0,
     "rootIds": [],
     "wordFamilyId": null,
@@ -405829,14 +405784,14 @@
   },
   {
     "id": "L-KBD-05180",
-    "form": "щӀыпӀэ-щӀыпӀэм(щӀыпӀэ-щӀыпӀэкӀэрэ)",
+    "form": "щӀыпӀэ-щӀыпӀэм",
     "literalMeaning": "",
     "partOfSpeech": "",
     "conceptId": "",
     "examples": [
       "Тафэр къуэлэн"
     ],
-    "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
+    "notes": "KBD sozluk: 1.Ady-Ady_AP.json | Orijinal: щӀыпӀэ-щӀыпӀэм(щӀыпӀэ-щӀыпӀэкӀэрэ)",
     "corpusFrequency": 0,
     "rootIds": [],
     "wordFamilyId": null,
@@ -412830,14 +412785,14 @@
   },
   {
     "id": "L-KBD-05547",
-    "form": "ярэбин(э)",
+    "form": "ярэбин",
     "literalMeaning": "",
     "partOfSpeech": "",
     "conceptId": "",
     "examples": [
       "Ярэбин, щыгъуэгу хадэм иту пӀэрэ Алий? Ӏуащхь."
     ],
-    "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
+    "notes": "KBD sozluk: 1.Ady-Ady_AP.json | Orijinal: ярэбин(э)",
     "corpusFrequency": 0,
     "rootIds": [],
     "wordFamilyId": null,
@@ -414217,14 +414172,14 @@
   },
   {
     "id": "L-KBD-05620",
-    "form": "без(о)",
+    "form": "без",
     "literalMeaning": "",
     "partOfSpeech": "",
     "conceptId": "",
     "examples": [
       "без четверти два сыхьэтитӀ хъуным дакъикъэ пщыкӀутху иӀэщ"
     ],
-    "notes": "KBD sozluk: 25.Rus-Ady_UASP.json",
+    "notes": "KBD sozluk: 25.Rus-Ady_UASP.json | Orijinal: без(о)",
     "corpusFrequency": 0,
     "rootIds": [],
     "wordFamilyId": null,
@@ -416383,14 +416338,14 @@
   },
   {
     "id": "L-KBD-05734",
-    "form": "с(о)",
+    "form": "с",
     "literalMeaning": "",
     "partOfSpeech": "",
     "conceptId": "",
     "examples": [
       "поздравить с праздником махуэшхуэмкӀэ ехъуэхъун; с праздником! махуэшхуэмкӀэ!"
     ],
-    "notes": "KBD sozluk: 25.Rus-Ady_UASP.json",
+    "notes": "KBD sozluk: 25.Rus-Ady_UASP.json | Orijinal: с(о)",
     "corpusFrequency": 0,
     "rootIds": [],
     "wordFamilyId": null,
