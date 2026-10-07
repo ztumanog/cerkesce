@@ -201,9 +201,7 @@
     "partOfSpeech": "verb",
     "corpusFrequency": 11,
     "conceptId": "THOUGHT",
-    "rootIds": [
-      "R-GU"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-GU",
     "derivation": {
       "rule": "root",
@@ -454,9 +452,7 @@
     "partOfSpeech": "verb",
     "corpusFrequency": 4,
     "conceptId": "THOUGHT",
-    "rootIds": [
-      "R-GU"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-GU",
     "derivation": {
       "rule": "root",
@@ -5652,8 +5648,7 @@
     "partOfSpeech": "noun",
     "corpusFrequency": 3,
     "rootIds": [
-      "R-TSYKW",
-      "R-GU"
+      "R-TSYKW"
     ],
     "wordFamilyId": "WF-TSYKW",
     "derivation": {
@@ -6273,9 +6268,7 @@
     "partOfSpeech": "noun",
     "corpusFrequency": 47,
     "conceptId": "THOUGHT",
-    "rootIds": [
-      "R-GU"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-GU",
     "derivation": {
       "rule": "root",
@@ -6646,9 +6639,7 @@
     "notes": "Sadakat. Kuipers/Kolarusso ornegi | C-9.1: corpus YOK | C-9.1: corpus YOK",
     "partOfSpeech": "noun",
     "corpusFrequency": 0,
-    "rootIds": [
-      "R-GU"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-GU",
     "derivation": {
       "rule": "root",
@@ -8081,8 +8072,7 @@
     "partOfSpeech": "noun",
     "corpusFrequency": 2,
     "rootIds": [
-      "R-WA",
-      "R-GU"
+      "R-WA"
     ],
     "wordFamilyId": "WF-KWA",
     "derivation": {
@@ -14339,8 +14329,7 @@
     "status": "rare",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-PSA",
-      "R-GU"
+      "R-PSA"
     ],
     "wordFamilyId": "WF-PSA",
     "derivation": {
@@ -14358,9 +14347,7 @@
     "partOfSpeech": "noun",
     "notes": "C-11.3: IPA kaynakli.",
     "corpusFrequency": 6,
-    "rootIds": [
-      "R-GU"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-GU",
     "derivation": {
       "rule": "root",
@@ -21390,9 +21377,7 @@
     "partOfSpeech": "noun",
     "notes": "",
     "corpusFrequency": 68,
-    "rootIds": [
-      "R-GU"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-GU",
     "derivation": {
       "rule": "root",
@@ -21431,8 +21416,7 @@
     "notes": "",
     "corpusFrequency": 22,
     "rootIds": [
-      "R-SCHE",
-      "R-GU"
+      "R-SCHE"
     ],
     "wordFamilyId": "WF-SCHE",
     "derivation": {
@@ -21452,8 +21436,7 @@
     "notes": "",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-BZY",
-      "R-GU"
+      "R-BZY"
     ],
     "wordFamilyId": "WF-BZY",
     "derivation": {
@@ -23677,8 +23660,7 @@
     "partOfSpeech": "noun",
     "notes": "Felsefi/ontolojik kavram",
     "rootIds": [
-      "R-QWA",
-      "R-GU"
+      "R-QWA"
     ],
     "wordFamilyId": "WF-QWA",
     "derivation": {
@@ -43382,8 +43364,7 @@
     "notes": "Corpus v1.0 (freq: 36, lang: kbd, source: 1.Ady-Ady_AP)",
     "ipa": "/[File:гу357гупсэхугъуэ.ogg/",
     "rootIds": [
-      "R-PSA",
-      "R-GU"
+      "R-PSA"
     ],
     "wordFamilyId": "WF-PSA",
     "derivation": {
@@ -44123,9 +44104,7 @@
       "kabardian": ""
     },
     "notes": "Corpus v1.0 (freq: 35, lang: ady, source: 2.Ady-Ara)",
-    "rootIds": [
-      "R-GU"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-GU",
     "derivation": {
       "rule": "root",
@@ -44394,8 +44373,7 @@
     "notes": "Corpus v1.0 (freq: 34, lang: kbd, source: 1.Ady-Ady_AP)",
     "ipa": "/[File:гу193губзыгъагъэ.ogg/",
     "rootIds": [
-      "R-BZY",
-      "R-GU"
+      "R-BZY"
     ],
     "wordFamilyId": "WF-BZY",
     "derivation": {
@@ -44562,9 +44540,7 @@
     },
     "notes": "Corpus v1.0 (freq: 34, lang: kbd, source: 14.Kbd-En-2-Jonty)",
     "conceptId": "ANIMAL",
-    "rootIds": [
-      "R-GU"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-GU",
     "derivation": {
       "rule": "root",
@@ -46858,8 +46834,7 @@
     "ipa": "/[File:гу358гупсэхуу.ogg/",
     "conceptId": "ANIMAL",
     "rootIds": [
-      "R-PSA",
-      "R-GU"
+      "R-PSA"
     ],
     "wordFamilyId": "WF-PSA",
     "derivation": {
@@ -49413,9 +49388,7 @@
     "notes": "Corpus v1.0 (freq: 27, lang: kbd, source: 1.Ady-Ady_AP)",
     "ipa": "/[File:гу308гулъытэншэу.ogg/",
     "conceptId": "ANIMAL",
-    "rootIds": [
-      "R-GU"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-GU",
     "derivation": {
       "rule": "root",
@@ -52163,9 +52136,7 @@
       "kabardian": "гузавэу"
     },
     "notes": "Corpus v1.0 (freq: 24, lang: kbd, source: 14.Kbd-En-2-Jonty)",
-    "rootIds": [
-      "R-GU"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-GU",
     "derivation": {
       "rule": "root",
@@ -54245,8 +54216,7 @@
     "notes": "Corpus v1.0 (freq: 23, lang: ady, source: 0.Ady-Ady_AIG)",
     "conceptId": "COLOR",
     "rootIds": [
-      "R-PSA",
-      "R-GU"
+      "R-PSA"
     ],
     "wordFamilyId": "WF-PSA",
     "derivation": {
@@ -57176,8 +57146,7 @@
     "ipa": "/[File:гу191губжьын.ogg/",
     "conceptId": "ANIMAL",
     "rootIds": [
-      "R-ZHY",
-      "R-GU"
+      "R-ZHY"
     ],
     "wordFamilyId": "WF-ZHY",
     "derivation": {
@@ -57769,9 +57738,7 @@
     },
     "notes": "Corpus v1.0 (freq: 20, lang: kbd, source: 1.Ady-Ady_AP)",
     "ipa": "/[File:гу407гурымыхь.ogg/",
-    "rootIds": [
-      "R-GU"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-GU",
     "derivation": {
       "rule": "root",
@@ -57910,9 +57877,7 @@
       "kabardian": "гугъуу"
     },
     "notes": "Corpus v1.0 (freq: 20, lang: kbd, source: 13.Kbd-Ar-Jonty)",
-    "rootIds": [
-      "R-GU"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-GU",
     "derivation": {
       "rule": "root",
@@ -59778,9 +59743,7 @@
       "kabardian": "гужьеяуэ"
     },
     "notes": "Corpus v1.0 (freq: 19, lang: kbd, source: 13.Kbd-Ar-Jonty)",
-    "rootIds": [
-      "R-GU"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-GU",
     "derivation": {
       "rule": "root",
@@ -61615,9 +61578,7 @@
     },
     "notes": "Corpus v1.0 (freq: 18, lang: kbd, source: 13.Kbd-Ar-Jonty)",
     "conceptId": "ANIMAL",
-    "rootIds": [
-      "R-GU"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-GU",
     "derivation": {
       "rule": "root",
@@ -62158,9 +62119,7 @@
     },
     "notes": "Corpus v1.0 (freq: 18, lang: kbd, source: 1.Ady-Ady_AP)",
     "ipa": "/[File:гу246гужьгъэжь.ogg/",
-    "rootIds": [
-      "R-GU"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-GU",
     "derivation": {
       "rule": "root",
@@ -63449,8 +63408,7 @@
     "ipa": "/[File:гу195губзыгъэу.ogg/",
     "conceptId": "ANIMAL",
     "rootIds": [
-      "R-BZY",
-      "R-GU"
+      "R-BZY"
     ],
     "wordFamilyId": "WF-BZY",
     "derivation": {
@@ -65202,8 +65160,7 @@
     },
     "notes": "Corpus v1.0 (freq: 17, lang: ady, source: 0.Ady-Ady_AIG)",
     "rootIds": [
-      "R-QA",
-      "R-GU"
+      "R-QA"
     ],
     "wordFamilyId": "WF-QA",
     "derivation": {
@@ -66059,9 +66016,7 @@
     },
     "notes": "Corpus v1.0 (freq: 16, lang: kbd, source: 1.Ady-Ady_AP)",
     "ipa": "/[File:гу252гузавэ.ogg/",
-    "rootIds": [
-      "R-GU"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-GU",
     "derivation": {
       "rule": "root",
@@ -67474,9 +67429,7 @@
       "kabardian": ""
     },
     "notes": "Corpus v1.0 (freq: 16, lang: ady, source: 4.Ady-En_Adam)",
-    "rootIds": [
-      "R-GU"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-GU",
     "derivation": {
       "rule": "root",
@@ -67721,9 +67674,7 @@
     },
     "notes": "Corpus v1.0 (freq: 16, lang: ady, source: 0.Ady-Ady_AIG)",
     "conceptId": "COLOR",
-    "rootIds": [
-      "R-GU"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-GU",
     "derivation": {
       "rule": "root",
@@ -69770,9 +69721,7 @@
     },
     "notes": "Corpus v1.0 (freq: 15, lang: kbd, source: 1.Ady-Ady_AP)",
     "ipa": "/[File:гу284гукъинэж.ogg/",
-    "rootIds": [
-      "R-GU"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-GU",
     "derivation": {
       "rule": "root",
@@ -71640,9 +71589,7 @@
       "kabardian": "гукъыдэжыншэ"
     },
     "notes": "Corpus v1.0 (freq: 14, lang: kbd, source: 14.Kbd-En-2-Jonty)",
-    "rootIds": [
-      "R-GU"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-GU",
     "derivation": {
       "rule": "root",
@@ -71963,9 +71910,7 @@
     },
     "notes": "Corpus v1.0 (freq: 14, lang: kbd, source: 1.Ady-Ady_AP)",
     "ipa": "/[File:гу403гурылъ.ogg/",
-    "rootIds": [
-      "R-GU"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-GU",
     "derivation": {
       "rule": "root",
@@ -73233,9 +73178,7 @@
     },
     "notes": "Corpus v1.0 (freq: 14, lang: kbd, source: 1.Ady-Ady_AP)",
     "ipa": "/[File:гу489гушхуэныгъэ.ogg/",
-    "rootIds": [
-      "R-GU"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-GU",
     "derivation": {
       "rule": "root",
@@ -78824,9 +78767,7 @@
     },
     "notes": "Corpus v1.0 (freq: 12, lang: kbd, source: 1.Ady-Ady_AP)",
     "ipa": "/[File:гу307гулъытэншэ.ogg/",
-    "rootIds": [
-      "R-GU"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-GU",
     "derivation": {
       "rule": "root",
@@ -85158,9 +85099,7 @@
     "notes": "Corpus v1.0 (freq: 11, lang: kbd, source: 1.Ady-Ady_AP)",
     "ipa": "/[File:гу488гушхуэн.ogg/",
     "conceptId": "ANIMAL",
-    "rootIds": [
-      "R-GU"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-GU",
     "derivation": {
       "rule": "root",
@@ -85509,9 +85448,7 @@
     "notes": "Corpus v1.0 (freq: 11, lang: kbd, source: 0.Ady-Ady_AIG)",
     "ipa": "/[File:гу217гугъэн.ogg/",
     "conceptId": "COLOR",
-    "rootIds": [
-      "R-GU"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-GU",
     "derivation": {
       "rule": "root",
@@ -85996,9 +85933,7 @@
       "kabardian": ""
     },
     "notes": "Corpus v1.0 (freq: 11, lang: ady, source: 0.Ady-Ady_AIG)",
-    "rootIds": [
-      "R-GU"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-GU",
     "derivation": {
       "rule": "root",
@@ -90219,9 +90154,7 @@
     },
     "notes": "Corpus v1.0 (freq: 10, lang: kbd, source: 1.Ady-Ady_AP)",
     "ipa": "/[File:гу286гукъыдэмыж.ogg/",
-    "rootIds": [
-      "R-GU"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-GU",
     "derivation": {
       "rule": "root",
@@ -93072,8 +93005,7 @@
     },
     "notes": "Corpus v1.0 (freq: 10, lang: ady, source: 0.Ady-Ady_AIG)",
     "rootIds": [
-      "R-BZY",
-      "R-GU"
+      "R-BZY"
     ],
     "wordFamilyId": "WF-BZY",
     "derivation": {
@@ -93119,9 +93051,7 @@
       "kabardian": ""
     },
     "notes": "Corpus v1.0 (freq: 10, lang: ady, source: 0.Ady-Ady_AIG)",
-    "rootIds": [
-      "R-GU"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-GU",
     "derivation": {
       "rule": "root",
@@ -98506,9 +98436,7 @@
       "kabardian": "гумахэ"
     },
     "notes": "Corpus v1.0 (freq: 9, lang: kbd, source: 13.Kbd-Ar-Jonty)",
-    "rootIds": [
-      "R-GU"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-GU",
     "derivation": {
       "rule": "root",
@@ -98674,8 +98602,7 @@
     "notes": "Corpus v1.0 (freq: 9, lang: kbd, source: 1.Ady-Ady_AP)",
     "ipa": "/[File:гу325гунэф.ogg/",
     "rootIds": [
-      "R-WNA",
-      "R-GU"
+      "R-WNA"
     ],
     "wordFamilyId": "WF-WNA",
     "derivation": {
@@ -98918,8 +98845,7 @@
     },
     "notes": "Corpus v1.0 (freq: 9, lang: kbd, source: 14.Kbd-En-2-Jonty)",
     "rootIds": [
-      "R-ZHY",
-      "R-GU"
+      "R-ZHY"
     ],
     "wordFamilyId": "WF-ZHY",
     "derivation": {
@@ -99164,8 +99090,7 @@
     "ipa": "/[File:гу195губзыгъэу.ogg/",
     "conceptId": "ANIMAL",
     "rootIds": [
-      "R-BZY",
-      "R-GU"
+      "R-BZY"
     ],
     "wordFamilyId": "WF-BZY",
     "derivation": {
@@ -99401,9 +99326,7 @@
     },
     "notes": "Corpus v1.0 (freq: 9, lang: ady, source: 0.Ady-Ady_AIG)",
     "conceptId": "COLOR",
-    "rootIds": [
-      "R-GU"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-GU",
     "derivation": {
       "rule": "root",
@@ -104351,8 +104274,7 @@
     "notes": "Corpus v1.0 (freq: 8, lang: kbd, source: 1.Ady-Ady_AP)",
     "ipa": "/[File:гу019гуауэщхьэуэ.ogg/",
     "rootIds": [
-      "R-SHHA",
-      "R-GU"
+      "R-SHHA"
     ],
     "wordFamilyId": "WF-SHHA",
     "derivation": {
@@ -109190,9 +109112,7 @@
     },
     "notes": "Corpus v1.0 (freq: 8, lang: ady, source: 0.Ady-Ady_AIG)",
     "conceptId": "COLOR",
-    "rootIds": [
-      "R-GU"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-GU",
     "derivation": {
       "rule": "root",
@@ -116508,9 +116428,7 @@
     },
     "notes": "Corpus v1.0 batch-2 (freq: 136, lang: kbd, source: none)",
     "ipa": "/[File:гу422гурыӏуэгъуэ.ogg/",
-    "rootIds": [
-      "R-GU"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-GU",
     "derivation": {
       "rule": "root",
@@ -121611,8 +121529,7 @@
     },
     "notes": "Corpus v1.0 batch-2 (freq: 90, lang: kbd, source: none)",
     "rootIds": [
-      "R-ZHY",
-      "R-GU"
+      "R-ZHY"
     ],
     "wordFamilyId": "WF-ZHY",
     "derivation": {
@@ -127746,8 +127663,7 @@
     },
     "notes": "Corpus v1.0 batch-2 (freq: 64, lang: kbd, source: none)",
     "rootIds": [
-      "R-ZHY",
-      "R-GU"
+      "R-ZHY"
     ],
     "wordFamilyId": "WF-ZHY",
     "derivation": {
@@ -133151,9 +133067,7 @@
     },
     "notes": "Corpus v1.0 batch-2 (freq: 53, lang: kbd, source: none)",
     "ipa": "/[File:гу423гурыӏуэгъуэу.ogg/",
-    "rootIds": [
-      "R-GU"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-GU",
     "derivation": {
       "rule": "root",
@@ -140224,8 +140138,7 @@
     },
     "notes": "Corpus v1.0 batch-2 (freq: 43, lang: kbd, source: none)",
     "rootIds": [
-      "R-PSY",
-      "R-GU"
+      "R-PSY"
     ],
     "wordFamilyId": "WF-PSY",
     "derivation": {
@@ -154605,9 +154518,7 @@
       "kabardian": "гурыӏуэгъуэщ"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 31, lang: kbd, source: none)",
-    "rootIds": [
-      "R-GU"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-GU",
     "derivation": {
       "rule": "root",
@@ -163216,9 +163127,7 @@
       "kabardian": "гулъытэшхуэ"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 27, lang: kbd, source: none)",
-    "rootIds": [
-      "R-GU"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-GU",
     "derivation": {
       "rule": "root",
@@ -167870,9 +167779,7 @@
     },
     "notes": "Corpus v1.0 batch-2 (freq: 25, lang: kbd, source: none)",
     "ipa": "/[File:гу278гукъэкӏ.ogg/",
-    "rootIds": [
-      "R-GU"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-GU",
     "derivation": {
       "rule": "root",
@@ -171197,8 +171104,7 @@
     },
     "notes": "Corpus v1.0 batch-2 (freq: 24, lang: kbd, source: none)",
     "rootIds": [
-      "R-PSY",
-      "R-GU"
+      "R-PSY"
     ],
     "wordFamilyId": "WF-PSY",
     "derivation": {
@@ -173126,9 +173032,7 @@
       "kabardian": ""
     },
     "notes": "Corpus v1.0 batch-2 (freq: 24, lang: ady, source: none)",
-    "rootIds": [
-      "R-GU"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-GU",
     "derivation": {
       "rule": "root",
@@ -176906,8 +176810,7 @@
     },
     "notes": "Corpus v1.0 batch-2 (freq: 22, lang: kbd, source: none)",
     "rootIds": [
-      "R-BZY",
-      "R-GU"
+      "R-BZY"
     ],
     "wordFamilyId": "WF-BZY",
     "derivation": {
@@ -187939,8 +187842,7 @@
     },
     "notes": "Corpus v1.0 batch-2 (freq: 20, lang: ady, source: none)",
     "rootIds": [
-      "R-PSA",
-      "R-GU"
+      "R-PSA"
     ],
     "wordFamilyId": "WF-PSA",
     "derivation": {
@@ -188196,9 +188098,7 @@
       "kabardian": ""
     },
     "notes": "Corpus v1.0 batch-2 (freq: 20, lang: ady, source: none)",
-    "rootIds": [
-      "R-GU"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-GU",
     "derivation": {
       "rule": "root",
@@ -201717,8 +201617,7 @@
     },
     "notes": "Corpus v1.0 batch-2 (freq: 17, lang: kbd, source: none)",
     "rootIds": [
-      "R-WASHKH",
-      "R-GU"
+      "R-WASHKH"
     ],
     "wordFamilyId": "WF-WASHKH",
     "derivation": {
@@ -206931,8 +206830,7 @@
     },
     "notes": "Corpus v1.0 batch-2 (freq: 16, lang: kbd, source: none)",
     "rootIds": [
-      "R-PSA",
-      "R-GU"
+      "R-PSA"
     ],
     "wordFamilyId": "WF-PSA",
     "derivation": {
@@ -209267,9 +209165,7 @@
     },
     "notes": "Corpus v1.0 batch-2 (freq: 16, lang: kbd, source: none)",
     "ipa": "/[File:гу427гурыӏуэныгъэ.ogg/",
-    "rootIds": [
-      "R-GU"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-GU",
     "derivation": {
       "rule": "root",
@@ -209682,9 +209578,7 @@
     },
     "notes": "Corpus v1.0 batch-2 (freq: 16, lang: kbd, source: none)",
     "ipa": "/[File:гу394гурыгъэӏуэн.ogg/",
-    "rootIds": [
-      "R-GU"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-GU",
     "derivation": {
       "rule": "root",
@@ -210866,9 +210760,7 @@
       "kabardian": ""
     },
     "notes": "Corpus v1.0 batch-2 (freq: 16, lang: ady, source: none)",
-    "rootIds": [
-      "R-GU"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-GU",
     "derivation": {
       "rule": "root",
@@ -212104,9 +211996,7 @@
       "kabardian": ""
     },
     "notes": "Corpus v1.0 batch-2 (freq: 16, lang: ady, source: none)",
-    "rootIds": [
-      "R-GU"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-GU",
     "derivation": {
       "rule": "root",
@@ -213620,9 +213510,7 @@
       "kabardian": "гугъэхэр"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 15, lang: kbd, source: none)",
-    "rootIds": [
-      "R-GU"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-GU",
     "derivation": {
       "rule": "root",
@@ -214926,8 +214814,7 @@
     },
     "notes": "Corpus v1.0 batch-2 (freq: 15, lang: kbd, source: none)",
     "rootIds": [
-      "R-BZY",
-      "R-GU"
+      "R-BZY"
     ],
     "wordFamilyId": "WF-BZY",
     "derivation": {
@@ -217499,9 +217386,7 @@
     },
     "notes": "Corpus v1.0 batch-2 (freq: 15, lang: kbd, source: none)",
     "ipa": "/[File:гу279гукъэкӏыж.ogg/",
-    "rootIds": [
-      "R-GU"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-GU",
     "derivation": {
       "rule": "root",
@@ -220336,9 +220221,7 @@
       "kabardian": ""
     },
     "notes": "Corpus v1.0 batch-2 (freq: 15, lang: ady, source: none)",
-    "rootIds": [
-      "R-GU"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-GU",
     "derivation": {
       "rule": "root",
@@ -221636,9 +221519,7 @@
       "kabardian": "гугъат"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 14, lang: kbd, source: none)",
-    "rootIds": [
-      "R-GU"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-GU",
     "derivation": {
       "rule": "root",
@@ -222251,8 +222132,7 @@
     },
     "notes": "Corpus v1.0 batch-2 (freq: 14, lang: kbd, source: none)",
     "rootIds": [
-      "R-BZY",
-      "R-GU"
+      "R-BZY"
     ],
     "wordFamilyId": "WF-BZY",
     "derivation": {
@@ -227173,9 +227053,7 @@
       "kabardian": ""
     },
     "notes": "Corpus v1.0 batch-2 (freq: 14, lang: ady, source: none)",
-    "rootIds": [
-      "R-GU"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-GU",
     "derivation": {
       "rule": "root",
@@ -227309,9 +227187,7 @@
       "kabardian": ""
     },
     "notes": "Corpus v1.0 batch-2 (freq: 14, lang: ady, source: none)",
-    "rootIds": [
-      "R-GU"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-GU",
     "derivation": {
       "rule": "root",
@@ -231693,9 +231569,7 @@
       "kabardian": "гузэгъэгъуэрэ"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 13, lang: kbd, source: none)",
-    "rootIds": [
-      "R-GU"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-GU",
     "derivation": {
       "rule": "root",
@@ -233306,9 +233180,7 @@
       "kabardian": "гугъэт"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 13, lang: kbd, source: none)",
-    "rootIds": [
-      "R-GU"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-GU",
     "derivation": {
       "rule": "root",
@@ -237463,9 +237335,7 @@
       "kabardian": ""
     },
     "notes": "Corpus v1.0 batch-2 (freq: 13, lang: ady, source: none)",
-    "rootIds": [
-      "R-GU"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-GU",
     "derivation": {
       "rule": "root",
@@ -239731,9 +239601,7 @@
       "kabardian": ""
     },
     "notes": "Corpus v1.0 batch-2 (freq: 13, lang: ady, source: none)",
-    "rootIds": [
-      "R-GU"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-GU",
     "derivation": {
       "rule": "root",
@@ -244333,9 +244201,7 @@
     },
     "notes": "Corpus v1.0 batch-2 (freq: 12, lang: kbd, source: none)",
     "ipa": "/[File:гу410гурыфӏыгъуэ.ogg/",
-    "rootIds": [
-      "R-GU"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-GU",
     "derivation": {
       "rule": "root",
@@ -245566,9 +245432,7 @@
     },
     "notes": "Corpus v1.0 batch-2 (freq: 12, lang: kbd, source: none)",
     "ipa": "/[File:гу424гурыӏуэгъуей.ogg/",
-    "rootIds": [
-      "R-GU"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-GU",
     "derivation": {
       "rule": "root",
@@ -245992,9 +245856,7 @@
       "kabardian": "гукъэкӏыжхэр"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 12, lang: kbd, source: none)",
-    "rootIds": [
-      "R-GU"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-GU",
     "derivation": {
       "rule": "root",
@@ -246169,9 +246031,7 @@
       "kabardian": "гугъуехьхэмрэ"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 12, lang: kbd, source: none)",
-    "rootIds": [
-      "R-GU"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-GU",
     "derivation": {
       "rule": "root",
@@ -249579,8 +249439,7 @@
     },
     "notes": "Corpus v1.0 batch-2 (freq: 12, lang: ady, source: none)",
     "rootIds": [
-      "R-LHA",
-      "R-GU"
+      "R-LHA"
     ],
     "wordFamilyId": "WF-LHA",
     "derivation": {
@@ -249754,9 +249613,7 @@
       "kabardian": ""
     },
     "notes": "Corpus v1.0 batch-2 (freq: 12, lang: ady, source: none)",
-    "rootIds": [
-      "R-GU"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-GU",
     "derivation": {
       "rule": "root",
@@ -251726,9 +251583,7 @@
       "kabardian": ""
     },
     "notes": "Corpus v1.0 batch-2 (freq: 12, lang: ady, source: none)",
-    "rootIds": [
-      "R-GU"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-GU",
     "derivation": {
       "rule": "root",
@@ -252960,9 +252815,7 @@
       "kabardian": ""
     },
     "notes": "Corpus v1.0 batch-2 (freq: 12, lang: ady, source: none)",
-    "rootIds": [
-      "R-GU"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-GU",
     "derivation": {
       "rule": "root",
@@ -253404,8 +253257,7 @@
     },
     "notes": "Corpus v1.0 batch-2 (freq: 11, lang: kbd, source: none)",
     "rootIds": [
-      "R-PSY",
-      "R-GU"
+      "R-PSY"
     ],
     "wordFamilyId": "WF-PSY",
     "derivation": {
@@ -257937,8 +257789,7 @@
     },
     "notes": "Verified (freq: 8, 7.Ady-Rus_Tharkaho)",
     "rootIds": [
-      "R-BZY",
-      "R-GU"
+      "R-BZY"
     ],
     "wordFamilyId": "WF-BZY",
     "derivation": {
@@ -259798,8 +259649,7 @@
     },
     "notes": "Verified (freq: 7, 5.Ady-Rus_Qarden)",
     "rootIds": [
-      "R-QA",
-      "R-GU"
+      "R-QA"
     ],
     "wordFamilyId": "WF-QA",
     "derivation": {
@@ -260477,9 +260327,7 @@
       "kabardian": "гугъар"
     },
     "notes": "Verified (freq: 7, 8.Ady-Tur_Huvaj)",
-    "rootIds": [
-      "R-GU"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-GU",
     "derivation": {
       "rule": "root",
@@ -279370,9 +279218,7 @@
       "kabardian": "гузэвэщэн"
     },
     "notes": "Verified (freq: 6, 16.Kbd-En-Ziwar)",
-    "rootIds": [
-      "R-GU"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-GU",
     "derivation": {
       "rule": "root",
@@ -279672,8 +279518,7 @@
     "ipa": "/[File:гу370гупсысэныгъэ.ogg/",
     "conceptId": "ANIMAL",
     "rootIds": [
-      "R-PSY",
-      "R-GU"
+      "R-PSY"
     ],
     "wordFamilyId": "WF-PSY",
     "derivation": {
@@ -281128,9 +280973,7 @@
       "kabardian": ""
     },
     "notes": "Verified (freq: 6, 2.Ady-Ara)",
-    "rootIds": [
-      "R-GU"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-GU",
     "derivation": {
       "rule": "root",
@@ -281517,9 +281360,7 @@
       "kabardian": ""
     },
     "notes": "Verified (freq: 6, 0.Ady-Ady_AIG)",
-    "rootIds": [
-      "R-GU"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-GU",
     "derivation": {
       "rule": "root",
@@ -296841,9 +296682,7 @@
     },
     "notes": "Verified (freq: 5, 13.Kbd-Ar-Jonty)",
     "ipa": "/[File:гу412гурыхуагъэ.ogg/",
-    "rootIds": [
-      "R-GU"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-GU",
     "derivation": {
       "rule": "root",
@@ -297605,8 +297444,7 @@
     "ipa": "/[File:гу192губжьых.ogg/",
     "conceptId": "ANIMAL",
     "rootIds": [
-      "R-ZHY",
-      "R-GU"
+      "R-ZHY"
     ],
     "wordFamilyId": "WF-ZHY",
     "derivation": {
@@ -299351,9 +299189,7 @@
       "kabardian": ""
     },
     "notes": "Verified (freq: 5, 0.Ady-Ady_AIG)",
-    "rootIds": [
-      "R-GU"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-GU",
     "derivation": {
       "rule": "root",
@@ -299985,9 +299821,7 @@
       "kabardian": ""
     },
     "notes": "Verified (freq: 5, 3.Ady-En)",
-    "rootIds": [
-      "R-GU"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-GU",
     "derivation": {
       "rule": "root",
@@ -300117,9 +299951,7 @@
       "kabardian": ""
     },
     "notes": "Verified (freq: 5, 2.Ady-Ara)",
-    "rootIds": [
-      "R-GU"
-    ],
+    "rootIds": [],
     "wordFamilyId": "WF-GU",
     "derivation": {
       "rule": "root",
@@ -304731,6 +304563,326 @@
     "dialectVariants": {
       "adyghe": "чэфэр",
       "kabardian": "чэфэр"
+    }
+  },
+  {
+    "id": "L-EXTRA-00000",
+    "form": "зыгъэпсын",
+    "literalMeaning": "yıkanmak, kendini temizlemek / kendini hazırlamak, yıkanmak",
+    "partOfSpeech": "verb",
+    "conceptId": "WASH",
+    "notes": "Manuel ekleme",
+    "corpusFrequency": 0,
+    "rootIds": [],
+    "wordFamilyId": null,
+    "derivation": null,
+    "dialectVariants": {
+      "adyghe": "зыгъэпсын",
+      "kabardian": "зыгъэпсын"
+    }
+  },
+  {
+    "id": "L-EXTRA-00001",
+    "form": "зыщытӀэгъэжын",
+    "literalMeaning": "üstünü tekrar giyinmek",
+    "partOfSpeech": "verb",
+    "conceptId": "DRESS",
+    "notes": "Manuel ekleme",
+    "corpusFrequency": 0,
+    "rootIds": [],
+    "wordFamilyId": null,
+    "derivation": null,
+    "dialectVariants": {
+      "adyghe": "зыщытӀэгъэжын",
+      "kabardian": "зыщытӀэгъэжын"
+    }
+  },
+  {
+    "id": "L-EXTRA-00002",
+    "form": "гъэкӀэнтӀэн",
+    "literalMeaning": "eğmek, büktürmek / eğmek, büktürmek (ettirgen)",
+    "partOfSpeech": "verb",
+    "conceptId": "BEND",
+    "notes": "Manuel ekleme",
+    "corpusFrequency": 0,
+    "rootIds": [],
+    "wordFamilyId": null,
+    "derivation": null,
+    "dialectVariants": {
+      "adyghe": "гъэкӀэнтӀэн",
+      "kabardian": "гъэкӀэнтӀэн"
+    }
+  },
+  {
+    "id": "L-EXTRA-00003",
+    "form": "гъэлъэпӀэстхъэн",
+    "literalMeaning": "ufalamak, paramparça etmek / ufalamak, paramparça etmek (ettirgen)",
+    "partOfSpeech": "verb",
+    "conceptId": "CRUSH",
+    "notes": "Manuel ekleme",
+    "corpusFrequency": 0,
+    "rootIds": [],
+    "wordFamilyId": null,
+    "derivation": null,
+    "dialectVariants": {
+      "adyghe": "гъэлъэпӀэстхъэн",
+      "kabardian": "гъэлъэпӀэстхъэн"
+    }
+  },
+  {
+    "id": "L-EXTRA-00004",
+    "form": "дэгъэкӀуэсыкӀын",
+    "literalMeaning": "içeriden söndürüp çıkarmak / içeriden söndürüp çıkarmak (ettirgen)",
+    "partOfSpeech": "verb",
+    "conceptId": "EXTINGUISH",
+    "notes": "Manuel ekleme",
+    "corpusFrequency": 0,
+    "rootIds": [],
+    "wordFamilyId": null,
+    "derivation": null,
+    "dialectVariants": {
+      "adyghe": "дэгъэкӀуэсыкӀын",
+      "kabardian": "дэгъэкӀуэсыкӀын"
+    }
+  },
+  {
+    "id": "L-EXTRA-00005",
+    "form": "зэрегъэшэн",
+    "literalMeaning": "birbiriyle evlendirmek / birbiriyle evlendirmek (ettirgen)",
+    "partOfSpeech": "verb",
+    "conceptId": "MARRY",
+    "notes": "Manuel ekleme",
+    "corpusFrequency": 0,
+    "rootIds": [],
+    "wordFamilyId": null,
+    "derivation": null,
+    "dialectVariants": {
+      "adyghe": "зэрегъэшэн",
+      "kabardian": "зэрегъэшэн"
+    }
+  },
+  {
+    "id": "L-EXTRA-00006",
+    "form": "зэбгъурышэн",
+    "literalMeaning": "yan yana yürütmek / yan yana getirmek, yaklaştırmak",
+    "partOfSpeech": "verb",
+    "conceptId": "LEAD",
+    "notes": "Manuel ekleme",
+    "corpusFrequency": 0,
+    "rootIds": [],
+    "wordFamilyId": null,
+    "derivation": null,
+    "dialectVariants": {
+      "adyghe": "зэбгъурышэн",
+      "kabardian": "зэбгъурышэн"
+    }
+  },
+  {
+    "id": "L-EXTRA-00007",
+    "form": "къыдежьэн",
+    "literalMeaning": "birlikte yola çıkmak",
+    "partOfSpeech": "verb",
+    "conceptId": "DEPART",
+    "notes": "Manuel ekleme",
+    "corpusFrequency": 0,
+    "rootIds": [],
+    "wordFamilyId": null,
+    "derivation": null,
+    "dialectVariants": {
+      "adyghe": "къыдежьэн",
+      "kabardian": "къыдежьэн"
+    }
+  },
+  {
+    "id": "L-EXTRA-00008",
+    "form": "кӀуэцӀыгъэлъэдэн",
+    "literalMeaning": "içeriye koşturmak / içeriye koşturmak (ettirgen)",
+    "partOfSpeech": "verb",
+    "conceptId": "RUN_IN",
+    "notes": "Manuel ekleme",
+    "corpusFrequency": 0,
+    "rootIds": [],
+    "wordFamilyId": null,
+    "derivation": null,
+    "dialectVariants": {
+      "adyghe": "кӀуэцӀыгъэлъэдэн",
+      "kabardian": "кӀуэцӀыгъэлъэдэн"
+    }
+  },
+  {
+    "id": "L-EXTRA-00009",
+    "form": "кӀэрыубэн",
+    "literalMeaning": "dayayarak sıkıştırmak / dayayarak sıkıştırmak, tıkamak",
+    "partOfSpeech": "verb",
+    "conceptId": "PRESS",
+    "notes": "Manuel ekleme",
+    "corpusFrequency": 0,
+    "rootIds": [],
+    "wordFamilyId": null,
+    "derivation": null,
+    "dialectVariants": {
+      "adyghe": "кӀэрыубэн",
+      "kabardian": "кӀэрыубэн"
+    }
+  },
+  {
+    "id": "L-EXTRA-00010",
+    "form": "щӀэшхыкӀын",
+    "literalMeaning": "altından yiyerek bitirmek",
+    "partOfSpeech": "verb",
+    "conceptId": "EAT_UNDER",
+    "notes": "Manuel ekleme",
+    "corpusFrequency": 0,
+    "rootIds": [],
+    "wordFamilyId": null,
+    "derivation": null,
+    "dialectVariants": {
+      "adyghe": "щӀэшхыкӀын",
+      "kabardian": "щӀэшхыкӀын"
+    }
+  },
+  {
+    "id": "L-EXTRA-00011",
+    "form": "къызэщӀэукъубиен",
+    "literalMeaning": "kendi içine büzülmek / kabarmak, taşmak (deniz/dalga)",
+    "partOfSpeech": "verb",
+    "conceptId": "CURL",
+    "notes": "Manuel ekleme",
+    "corpusFrequency": 0,
+    "rootIds": [],
+    "wordFamilyId": null,
+    "derivation": null,
+    "dialectVariants": {
+      "adyghe": "къызэщӀэукъубиен",
+      "kabardian": "къызэщӀэукъубиен"
+    }
+  },
+  {
+    "id": "L-EXTRA-00012",
+    "form": "жьэхэгъэзэрыхьын",
+    "literalMeaning": "yüz yüze karıştırmak / yüz yüze karıştırmak (ettirgen)",
+    "partOfSpeech": "verb",
+    "conceptId": "MIX",
+    "notes": "Manuel ekleme",
+    "corpusFrequency": 0,
+    "rootIds": [],
+    "wordFamilyId": null,
+    "derivation": null,
+    "dialectVariants": {
+      "adyghe": "жьэхэгъэзэрыхьын",
+      "kabardian": "жьэхэгъэзэрыхьын"
+    }
+  },
+  {
+    "id": "L-EXTRA-00013",
+    "form": "щэнэуэн",
+    "literalMeaning": "pazarlık etmek / sallanmak, salınmak",
+    "partOfSpeech": "verb",
+    "conceptId": "BARGAIN",
+    "notes": "Manuel ekleme",
+    "corpusFrequency": 0,
+    "rootIds": [],
+    "wordFamilyId": null,
+    "derivation": null,
+    "dialectVariants": {
+      "adyghe": "щэнэуэн",
+      "kabardian": "щэнэуэн"
+    }
+  },
+  {
+    "id": "L-EXTRA-00014",
+    "form": "щӀакӀуэ-бащлыкъ",
+    "literalMeaning": "Çerkes pelerini ve başlık",
+    "partOfSpeech": "noun",
+    "conceptId": "CLOTHING",
+    "notes": "Manuel ekleme",
+    "corpusFrequency": 0,
+    "rootIds": [],
+    "wordFamilyId": null,
+    "derivation": null,
+    "dialectVariants": {
+      "adyghe": "щӀакӀуэ-бащлыкъ",
+      "kabardian": "щӀакӀуэ-бащлыкъ"
+    }
+  },
+  {
+    "id": "L-EXTRA-00015",
+    "form": "страпил",
+    "literalMeaning": "çatı merteği / çatı merteği (Rusça alıntı)",
+    "partOfSpeech": "noun",
+    "conceptId": "ROOF",
+    "notes": "Manuel ekleme",
+    "corpusFrequency": 0,
+    "rootIds": [],
+    "wordFamilyId": null,
+    "derivation": null,
+    "dialectVariants": {
+      "adyghe": "страпил",
+      "kabardian": "страпил"
+    }
+  },
+  {
+    "id": "L-EXTRA-00016",
+    "form": "уэкъулэ",
+    "literalMeaning": "bir tür kap / yardım isteme, ricacı olma",
+    "partOfSpeech": "noun",
+    "conceptId": "CONTAINER",
+    "notes": "Manuel ekleme",
+    "corpusFrequency": 0,
+    "rootIds": [],
+    "wordFamilyId": null,
+    "derivation": null,
+    "dialectVariants": {
+      "adyghe": "уэкъулэ",
+      "kabardian": "уэкъулэ"
+    }
+  },
+  {
+    "id": "L-EXTRA-00017",
+    "form": "щэхурыпхъуагъэ",
+    "literalMeaning": "gizlilik, sinsi davranma / sinsilik, kurnazlık",
+    "partOfSpeech": "noun",
+    "conceptId": "SECRECY",
+    "notes": "Manuel ekleme",
+    "corpusFrequency": 0,
+    "rootIds": [],
+    "wordFamilyId": null,
+    "derivation": null,
+    "dialectVariants": {
+      "adyghe": "щэхурыпхъуагъэ",
+      "kabardian": "щэхурыпхъуагъэ"
+    }
+  },
+  {
+    "id": "L-EXTRA-00018",
+    "form": "Ӏурыхьэгъуэ",
+    "literalMeaning": "buluşma zamanı / buluşma zamanı, karşılaşma imkânı",
+    "partOfSpeech": "noun",
+    "conceptId": "MEETING",
+    "notes": "Manuel ekleme",
+    "corpusFrequency": 0,
+    "rootIds": [],
+    "wordFamilyId": null,
+    "derivation": null,
+    "dialectVariants": {
+      "adyghe": "Ӏурыхьэгъуэ",
+      "kabardian": "Ӏурыхьэгъуэ"
+    }
+  },
+  {
+    "id": "L-EXTRA-00019",
+    "form": "батыргъэнпэж",
+    "literalMeaning": "tavşancıl otu / sert tavşancıl otu (bitki)",
+    "partOfSpeech": "noun",
+    "conceptId": "PLANT",
+    "notes": "Manuel ekleme",
+    "corpusFrequency": 0,
+    "rootIds": [],
+    "wordFamilyId": null,
+    "derivation": null,
+    "dialectVariants": {
+      "adyghe": "батыргъэнпэж",
+      "kabardian": "батыргъэнпэж"
     }
   }
 ]
