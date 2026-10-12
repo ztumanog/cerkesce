@@ -1,24 +1,33 @@
-﻿import json
+import json
 from pathlib import Path
 
 lex = json.loads(Path("public/data/linguistic/lexemes.json").read_text(encoding="utf-8"))
-shchy = [l for l in lex if l.get("form", "").startswith("щы")]
-bos = [l for l in shchy if not l.get("conceptId") or l.get("conceptId") in ("", "-")]
 
-CEKIM = ["м", "р", "у", "щ", "ми", "мэ", "т", "ти", "хэ", "хэм", "хэр", "хэу",
-         "къым", "тэкъым", "п", "и", "щт", "тэ", "уэ", "эп", "агъ", "агъэ",
-         "т", "щ", "мэ", "ми", "и", "кӏэ", "хэм", "хэр", "хэу", "уэ", "рэ"]
+kalan = [l for l in lex if not l.get("rootIds")]
+print(f"rootIds olmayan: {len(kalan)}")
 
-def cekimli(form):
-    if len(form) < 5:
-        return False
-    for ek in CEKIM:
-        if form.endswith(ek) and len(form) > len(ek) + 2:
-            return True
-    return False
+print(f"\n=== Kalan 30 ornek ===")
+for l in kalan[:30]:
+    form = l.get("form", "?")
+    pos = l.get("partOfSpeech", "?")
+    meaning = l.get("literalMeaning", "")[:30] if l.get("literalMeaning") else "-"
+    print(f"  {form:25s} | {pos:15s} | {meaning}")
 
-kok = [l for l in bos if not cekimli(l.get("form", ""))]
-print(f"Kalan kök/türev adayı: {len(kok)}")
-print()
-for l in kok:
-    print(l.get("form"))
+# Form uzunlugu dagilimi
+from collections import Counter
+len_counter = Counter(len(l.get("form", "")) for l in kalan)
+print(f"\n=== Form uzunlugu ===")
+for length in sorted(len_counter.keys())[:12]:
+    print(f"  {length:2d} harf: {len_counter[length]}")
+
+# ID prefix
+prefix_counter = Counter()
+for l in kalan:
+    id_ = l.get("id", "")
+    parts = id_.split("-")
+    if len(parts) >= 2:
+        prefix = f"{parts[0]}-{parts[1]}"
+        prefix_counter[prefix] += 1
+print(f"\n=== ID prefix ===")
+for prefix, count in prefix_counter.most_common(10):
+    print(f"  {prefix:20s} {count}")
