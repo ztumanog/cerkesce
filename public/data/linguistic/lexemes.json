@@ -341403,7 +341403,12 @@
     "isLemma": false,
     "subConceptId": "SPEAK",
     "taxonomyFamily": "Kültür & Etkileşim",
-    "rootForm": "Ӏу-"
+    "rootForm": "Ӏу-",
+    "translations": {
+      "tr": "ӀУАТЭ I КЪЭӀУАТ(Э) ANLATMA II КЪЭӀУАТЭ ANLATI",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00004",
@@ -341479,7 +341484,7 @@
     "form": "Ӏубэнэн",
     "literalMeaning": "(Ӏуобанэ) неперех. гл. кубано-зеленчукские см. . ((iuobane) nepereh. ch. cubano-zelenchukskie see..)",
     "partOfSpeech": "verb",
-    "conceptId": "APPROACH",
+    "conceptId": "FIGHT_WRESTLE_AT",
     "examples": [
       "Псы хуэлӀа мэл хъушэр псы Ӏуфэм Ӏубэнауэ ефэрт. Черк. ӀуэрыӀу."
     ],
@@ -341493,7 +341498,7 @@
       "kabardian": "Ӏубэнэн"
     },
     "isLemma": false,
-    "subConceptId": "MOVEMENT",
+    "subConceptId": "CLOSE_COMBAT",
     "taxonomyFamily": "Eylem & Fiziksel",
     "rootForm": "Ӏу-"
   },
@@ -341502,7 +341507,7 @@
     "form": "Ӏугъуалъэ",
     "literalMeaning": "that allocates a lot of smoke",
     "partOfSpeech": "noun",
-    "conceptId": "CHIMNEY",
+    "conceptId": "SMOKE_CONTAINER",
     "examples": [
       "МафӀэ цӀыкӀу Ӏугъуалъэ. (погов. )"
     ],
@@ -341516,7 +341521,7 @@
       "kabardian": "Ӏугъуалъэ"
     },
     "isLemma": false,
-    "subConceptId": "CONTAINER",
+    "subConceptId": "SMOKER_TOOL",
     "taxonomyFamily": "Eşya & Araç",
     "rootForm": "Ӏу-"
   },
@@ -341594,7 +341599,7 @@
     "form": "Ӏугъэзыхьын",
     "literalMeaning": "(Ӏуегъэзыхь) перех. гл. кубано-зеленчукские подогнать кого-л. к чему-л. близко, вплотную ((iuegezyh) move. ch. cubano-zelenchukskie fit smb. smth. close close)",
     "partOfSpeech": "verb",
-    "conceptId": "TURN_AROUND",
+    "conceptId": "DRIVE_CLOSE_TO",
     "examples": [
       "Мэлхэр чэтыбжэм Ӏуигъэзыхьа щхьэкӀэ, хущӀэгъэхьэртэкъым. Черк. фольк."
     ],
@@ -341608,7 +341613,7 @@
       "kabardian": "Ӏугъэзыхьын"
     },
     "isLemma": false,
-    "subConceptId": "MOVEMENT",
+    "subConceptId": "PUSH_NEAR_ACTION",
     "taxonomyFamily": "Eylem & Fiziksel",
     "rootForm": "Ӏу-"
   },
@@ -341617,7 +341622,7 @@
     "form": "ӀугъэзэщӀыкӀын",
     "literalMeaning": "а)(ӀуегъэзэщӀыкӀ) перех. гл.,(ӀугъэзэщӀыкӀащ) неперех. гл.кубано-зеленчукскиесм. (a) (iuegezeschiyki) move. sec., (iugezeschiykiasch) nepereh. gl.kubano-zelenchukskiesm.)",
     "partOfSpeech": "verb",
-    "conceptId": "REPEL",
+    "conceptId": "ARRANGED_TIGHTLY_AT",
     "examples": [
       "Бжэр ӀугъэзэщӀыкӀати, унэм щӀэсхэм тыншу уажьэхэплъэрт. Черк. фольк."
     ],
@@ -341631,7 +341636,7 @@
       "kabardian": "ӀугъэзэщӀыкӀын"
     },
     "isLemma": false,
-    "subConceptId": "ACTION",
+    "subConceptId": "ORDER_SET_ACTION",
     "taxonomyFamily": "Eylem & Fiziksel",
     "rootForm": "Ӏу-"
   },
@@ -341661,9 +341666,9 @@
   {
     "id": "L-KBD-00015",
     "form": "ӀугъэлӀыкӀын",
-    "literalMeaning": "",
+    "literalMeaning": "dişlerini kenetlemek",
     "partOfSpeech": "",
-    "conceptId": "KILL_NEAR",
+    "conceptId": "CLENCH_TEETH_SACRIFICE",
     "examples": [
       "Мы фалъэм ит псыр щӀыӀэ дыдэщ и дзэр ӀугъэлӀыкӀ. Черк. фольк."
     ],
@@ -341677,8 +341682,8 @@
       "kabardian": "ӀугъэлӀыкӀын"
     },
     "isLemma": false,
-    "subConceptId": "ACTION",
-    "taxonomyFamily": "Yaşam & Sağlık",
+    "subConceptId": "GRIND_TEETH_ACTION",
+    "taxonomyFamily": "Eylem & Fiziksel",
     "rootForm": "Ӏу-"
   },
   {
@@ -341686,7 +341691,7 @@
     "form": "Ӏугъэлъын",
     "literalMeaning": "causative to i i psalem and causative.",
     "partOfSpeech": "noun",
-    "conceptId": "PLACE_NEAR",
+    "conceptId": "HOLD_IN_MOUTH",
     "examples": [
       "Жэщым щӀалэр Ӏуэбжэм Ӏуагъэлъащ, дыгъужьым къигъэзэжын я гугъэу. фольк."
     ],
@@ -341700,7 +341705,7 @@
       "kabardian": "Ӏугъэлъын"
     },
     "isLemma": false,
-    "subConceptId": "POSITION",
+    "subConceptId": "MOUTH_POSSESSION",
     "taxonomyFamily": "Eylem & Fiziksel",
     "rootForm": "Ӏу-"
   },
@@ -341709,7 +341714,7 @@
     "form": "Ӏугъэлъэдэн",
     "literalMeaning": "causative to",
     "partOfSpeech": "noun",
-    "conceptId": "MAKE_RUN",
+    "conceptId": "MAKE_RUN_TOWARDS",
     "examples": [
       "Астемырхэ фи хьэщӀэщыщӀэм Гуимэ щхъуантӀэр Ӏуагъэлъадэ. Къэб. фольк."
     ],
@@ -341723,7 +341728,7 @@
       "kabardian": "Ӏугъэлъэдэн"
     },
     "isLemma": false,
-    "subConceptId": "MOVEMENT",
+    "subConceptId": "APPROACH_FAST_CAUS",
     "taxonomyFamily": "Eylem & Fiziksel",
     "rootForm": "Ӏу-"
   },
@@ -341732,7 +341737,7 @@
     "form": "Ӏугъэплъэн",
     "literalMeaning": "causative to",
     "partOfSpeech": "noun",
-    "conceptId": "MAKE_LOOK",
+    "conceptId": "SHOW_TO_LOOK",
     "examples": [
       "ЩӀалэ фӀыцӀэу къахуеблэгъами Ахумыдэр.. Ӏуагъаплъэ. Нарт."
     ],
@@ -341746,8 +341751,8 @@
       "kabardian": "Ӏугъэплъэн"
     },
     "isLemma": false,
-    "subConceptId": "PERCEPTION",
-    "taxonomyFamily": "Düşünce & Soyut",
+    "subConceptId": "BRIDE_SHOWING_CUSTOM",
+    "taxonomyFamily": "Kültür & Etkileşim",
     "rootForm": "Ӏу-"
   },
   {
@@ -341755,7 +341760,7 @@
     "form": "Ӏугъэсын",
     "literalMeaning": "causative to",
     "partOfSpeech": "noun",
-    "conceptId": "",
+    "conceptId": "SEAT_IN_FRONT_OF",
     "examples": [
       "Махуэ псом псы Ӏуфэм Ӏуагъэсащ, зекӀуэ къикӀыжхэр псым кърамыгъэкӀыу. фольк."
     ],
@@ -341769,9 +341774,14 @@
       "kabardian": "Ӏугъэсын"
     },
     "isLemma": false,
-    "subConceptId": "",
-    "taxonomyFamily": "",
-    "rootForm": "Ӏу-"
+    "subConceptId": "POSITION_SITTING_CAUS",
+    "taxonomyFamily": "Eylem & Fiziksel",
+    "rootForm": "Ӏу-",
+    "translations": {
+      "tr": "oturtmak",
+      "trSource": "KokAyir+Dogrulama",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00020",
@@ -341824,7 +341834,7 @@
     "form": "Ӏугъэхуэн",
     "literalMeaning": "causative to",
     "partOfSpeech": "noun",
-    "conceptId": "DRIVE_NEAR",
+    "conceptId": "MAKE_HIT_TARGET_AT",
     "examples": [
       "Сэ япэ къэзукӀа {бабыщым} щыщ псоми яӀузгъэхуэну сыхуейт. Къэб."
     ],
@@ -341838,7 +341848,7 @@
       "kabardian": "Ӏугъэхуэн"
     },
     "isLemma": false,
-    "subConceptId": "ACTION",
+    "subConceptId": "DIRECT_TOWARDS_CAUS",
     "taxonomyFamily": "Eylem & Fiziksel",
     "rootForm": "Ӏу-"
   },
@@ -342001,7 +342011,12 @@
     "isLemma": false,
     "subConceptId": "ACTION",
     "taxonomyFamily": "Eylem & Fiziksel",
-    "rootForm": "Ӏу-"
+    "rootForm": "Ӏу-",
+    "translations": {
+      "tr": "Ӏуеин еплъ &lt;&lt;Ӏоин&gt;&gt; MELEMEK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00030",
@@ -342093,7 +342108,12 @@
     "isLemma": false,
     "subConceptId": "MOVEMENT",
     "taxonomyFamily": "Eylem & Fiziksel",
-    "rootForm": "Ӏу-"
+    "rootForm": "Ӏу-",
+    "translations": {
+      "tr": "ӀукӀуэтын / ӀукӀотын еплъ &lt;&lt;ӀУКӀЫН&gt;&gt; UZAKLAŞMAK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00034",
@@ -342208,7 +342228,12 @@
     "isLemma": false,
     "subConceptId": "STATE",
     "taxonomyFamily": "Yaşam & Sağlık",
-    "rootForm": "Ӏу-"
+    "rootForm": "Ӏу-",
+    "translations": {
+      "tr": "ӀУЛӀЭН I (ЕӀУЛӀЭ) TEYELLEMEK, SIRIMAK II (ЕӀУЛӀЭ); ЗЭӀУЛӀЫН (зэреӀулӀы / зреӀулӀ ); ЗЭХЭӀУЛӀЭН (ЗЭХЕӀУЛӀЭ); егъэубытын / егъэу­быдын (регъэубыты / ирегъэубыд ); зэрэгъэубытын / зэрыгъэубыдын (зэрегъэу",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00039",
@@ -342395,7 +342420,12 @@
     "isLemma": false,
     "subConceptId": "",
     "taxonomyFamily": "",
-    "rootForm": "Ӏу-"
+    "rootForm": "Ӏу-",
+    "translations": {
+      "tr": "ӀУЛЫДЖ I зышӀолӀыкӀ / зыфӀэлӀыкӀ , АВТОРИТЕТ OTORİTE (nüfuz) II ЛЪЫТЭ, шъхьакӀаф(э) / щӀыхь İTİBAR III ТЕТЫГЪУ(Э), щӀыхь ; АВТОРИТЕТ NÜFUZ 2 (otorite)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00047",
@@ -342418,7 +342448,12 @@
     "isLemma": false,
     "subConceptId": "MOVEMENT",
     "taxonomyFamily": "Eylem & Fiziksel",
-    "rootForm": "Ӏу-"
+    "rootForm": "Ӏу-",
+    "translations": {
+      "tr": "ӀУЛЭЛЫН еплъ &lt;&lt;кӀэлэлын&gt;&gt; SARKMAK (kenardan aşağı / öteye doğru~)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00048",
@@ -342788,7 +342823,12 @@
     "isLemma": false,
     "subConceptId": "MANNER",
     "taxonomyFamily": "Düşünce & Soyut",
-    "rootForm": "Ӏу-"
+    "rootForm": "Ӏу-",
+    "translations": {
+      "tr": "ӀупщӀакӀэ / ӀупшӀакӀ(э) еплъ &lt;&lt;ӀупшӀэ&gt;&gt; DUDAK (~ ucu / kenarı)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00064",
@@ -342834,7 +342874,12 @@
     "isLemma": false,
     "subConceptId": "SPEECH",
     "taxonomyFamily": "Kültür & Etkileşim",
-    "rootForm": "Ӏу-"
+    "rootForm": "Ӏу-",
+    "translations": {
+      "tr": "ӀупщӀэ еплъ &lt;&lt;ӀупшӀэ&gt;&gt; DUDAK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00066",
@@ -343733,7 +343778,12 @@
     "isLemma": false,
     "subConceptId": "COGNITION",
     "taxonomyFamily": "Düşünce & Soyut",
-    "rootForm": "Ӏу-"
+    "rootForm": "Ӏу-",
+    "translations": {
+      "tr": "Ӏущын / Ӏушын еплъ &lt;&lt;ӀУГЪЭКӀЫН&gt;&gt; UZAKLAŞTIRMAK (çekip götürerek çekil­mesini sağlamak)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00105",
@@ -343779,7 +343829,12 @@
     "isLemma": false,
     "subConceptId": "MANNER",
     "taxonomyFamily": "Düşünce & Soyut",
-    "rootForm": "Ӏу-"
+    "rootForm": "Ӏу-",
+    "translations": {
+      "tr": "Ӏущыщэ / Ӏушыщэ еплъ &lt;&lt;Ӏушые&gt;&gt; DÂHİ",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00107",
@@ -343848,7 +343903,12 @@
     "isLemma": false,
     "subConceptId": "PLACE",
     "taxonomyFamily": "Mekan & Yön",
-    "rootForm": "Ӏу-"
+    "rootForm": "Ӏу-",
+    "translations": {
+      "tr": "Ӏуэгу I еплъ &lt;&lt;ӀэкӀыб&gt;&gt; DIŞ II кӀыб / щӀыб , щагу DIŞARI",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00110",
@@ -343871,7 +343931,12 @@
     "isLemma": false,
     "subConceptId": "LITERATURE",
     "taxonomyFamily": "Kültür & Etkileşim",
-    "rootForm": "Ӏу-"
+    "rootForm": "Ӏу-",
+    "translations": {
+      "tr": "ӀуэрыӀуатэ еплъ &lt;&lt;ӀорыӀуат(э)&gt;&gt; DESTAN, EFSANE, MİTOLOJİ",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00111",
@@ -343963,7 +344028,12 @@
     "isLemma": false,
     "subConceptId": "SPEECH",
     "taxonomyFamily": "Kültür & Etkileşim",
-    "rootForm": "Ӏу-"
+    "rootForm": "Ӏу-",
+    "translations": {
+      "tr": "Ӏуэтэн / Ӏотэн еплъ &lt;&lt;ГЪЭӀУН&gt;&gt; DUYURMAK (yaymak)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00115",
@@ -343986,7 +344056,12 @@
     "isLemma": false,
     "subConceptId": "ACTIVITY",
     "taxonomyFamily": "Düşünce & Soyut",
-    "rootForm": "Ӏу-"
+    "rootForm": "Ӏу-",
+    "translations": {
+      "tr": "Ӏуэхун / Ӏофын Ӏопшын SİPARİŞ ETMEK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00116",
@@ -344141,7 +344216,12 @@
       "adyghe": "",
       "kabardian": "Ӏыхын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "ӀЫХЫН ( сӀихыгъ / сӀихащ : o onu benden aldı (götürdü); пӀихыгъ / пӀихащ: ~senden~; Ӏихыгъ / Ӏихащ : ~ondan~; тӀихыгъ / тӀихащ : ~bizden~; шӀуихыгъ / фӀихащ : ~sizden~; аӀихыгъ / яӀихащ : ~onlardan~; ",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00123",
@@ -344222,7 +344302,12 @@
       "adyghe": "",
       "kabardian": "Ӏыхьэгъу"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "Ӏыхьэгъу еплъ &lt;&lt;Ӏахьагъу&gt;&gt; ORTAK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00127",
@@ -344285,7 +344370,12 @@
     "isLemma": false,
     "subConceptId": "HAND_NAIL",
     "taxonomyFamily": "İnsan & Beden",
-    "rootForm": "Ӏэ-"
+    "rootForm": "Ӏэ-",
+    "translations": {
+      "tr": "Ӏэбжьанэ / Ӏэбжъан(э) EL TIRNAĞI",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00130",
@@ -344607,7 +344697,12 @@
     "isLemma": false,
     "subConceptId": "RELATIVES_NEIGHBORS",
     "taxonomyFamily": "Toplum & İlişki",
-    "rootForm": "Ӏэ-"
+    "rootForm": "Ӏэ-",
+    "translations": {
+      "tr": "Ӏагъоблэгъу / Ӏэгъуэблагъуэ еплъ &lt;&lt;ХЬЭНЭГЪУНЭ&gt;&gt; ÇEVRE",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00144",
@@ -344838,7 +344933,12 @@
     "isLemma": false,
     "subConceptId": "HAND_TOOL",
     "taxonomyFamily": "Eşya & Araç",
-    "rootForm": "Ӏэ-"
+    "rootForm": "Ӏэ-",
+    "translations": {
+      "tr": "Ӏэдэж ПАЛЪ(Э), лые / лей YEDEK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00154",
@@ -344885,7 +344985,12 @@
     "isLemma": false,
     "subConceptId": "HAND_TOOLS_SET",
     "taxonomyFamily": "Eşya & Araç",
-    "rootForm": "Ӏэ-"
+    "rootForm": "Ӏэ-",
+    "translations": {
+      "tr": "Ӏэдэуадэ / Ӏадэуад I ( Абз. ӀАМЭПСЫМА) ALET-EDEVAT II EDEVAT",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00156",
@@ -344932,7 +345037,12 @@
     "isLemma": false,
     "subConceptId": "REMEDY_MEDICINE",
     "taxonomyFamily": "Yaşam & Sağlık",
-    "rootForm": "Ӏэ-"
+    "rootForm": "Ӏэ-",
+    "translations": {
+      "tr": "Ӏэзэгъуэ I еплъ &lt;&lt;Ӏазэгъу&gt;&gt; İLAÇ, DERMAN II еплъ &lt;&lt;Ӏазэгъу&gt;&gt; DEVA (derman)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00158",
@@ -345439,7 +345549,12 @@
     "isLemma": false,
     "subConceptId": "FINGER_HAND",
     "taxonomyFamily": "İnsan & Beden",
-    "rootForm": "Ӏэ-"
+    "rootForm": "Ӏэ-",
+    "translations": {
+      "tr": "ӀэхъомбэжъакӀ / ӀэпхъуамбэжьакӀэ Ӏэхъомбэжъый / ӀэпхъуамбэцӀыкӀу PARMAK (serçe ~ğı)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00180",
@@ -345462,7 +345577,12 @@
     "isLemma": false,
     "subConceptId": "EMBRACE_ACTION",
     "taxonomyFamily": "Eylem & Fiziksel",
-    "rootForm": "Ӏэ-"
+    "rootForm": "Ӏэ-",
+    "translations": {
+      "tr": "Ӏэпхъуэжын / кощыжьын GÖÇMEK (tekrar ~)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00181",
@@ -345854,7 +345974,12 @@
     "isLemma": false,
     "subConceptId": "HAND_CHANCE",
     "taxonomyFamily": "Düşünce & Soyut",
-    "rootForm": "Ӏэ-"
+    "rootForm": "Ӏэ-",
+    "translations": {
+      "tr": "Ӏэрыхуэ / Ӏарыфэгъу еплъ &lt;&lt;ӀэшӀэх&gt;&gt; KOLAY",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00198",
@@ -345923,7 +346048,12 @@
     "isLemma": false,
     "subConceptId": "HAND_PLEDGE",
     "taxonomyFamily": "Toplum & Hukuk",
-    "rootForm": "Ӏэ-"
+    "rootForm": "Ӏэ-",
+    "translations": {
+      "tr": "Ӏэубыт / Ӏэубыд Ӏэзэрэубыт / Ӏэзэ­рыубыд , Ӏапэубыт / Ӏэпэубыд TOKA 1",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00201",
@@ -346015,7 +346145,12 @@
     "isLemma": false,
     "subConceptId": "TASTE_PLEASURE",
     "taxonomyFamily": "Nitelik & Doğa",
-    "rootForm": "Ӏэ-"
+    "rootForm": "Ӏэ-",
+    "translations": {
+      "tr": "ӀэфӀыгъэ / ӀашӀугъ TAT",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00205",
@@ -346061,7 +346196,12 @@
     "isLemma": false,
     "subConceptId": "BODY_SKIN",
     "taxonomyFamily": "İnsan & Beden",
-    "rootForm": "Ӏэ-"
+    "rootForm": "Ӏэ-",
+    "translations": {
+      "tr": "Ӏэшъо / Ӏэфэ I еплъ &lt;&lt;ЗЭРЫХЪ(Э)&gt;&gt; ZIRH (posttan ~) II еплъ &lt;&lt;шъо&gt;&gt; POST",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00207",
@@ -346176,7 +346316,12 @@
     "isLemma": false,
     "subConceptId": "HERDING_PERIOD",
     "taxonomyFamily": "Zaman & Çalışma",
-    "rootForm": "Ӏэ-"
+    "rootForm": "Ӏэ-",
+    "translations": {
+      "tr": "Ӏахъогъу / Ӏэхъуэгъу хъущ(э) / хъушэ , отер, гуартэ SÜRÜ",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00212",
@@ -346245,7 +346390,12 @@
     "isLemma": false,
     "subConceptId": "HAND_FIST",
     "taxonomyFamily": "İnsan & Beden",
-    "rootForm": "Ӏэ-"
+    "rootForm": "Ӏэ-",
+    "translations": {
+      "tr": "ӀэштӀым / Ӏэбжым бжымы YUM­RUK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00215",
@@ -346682,7 +346832,12 @@
     "isLemma": false,
     "subConceptId": "INVOLUNTARY_DROP",
     "taxonomyFamily": "Eylem & Gramer",
-    "rootForm": "Ӏэ-"
+    "rootForm": "Ӏэ-",
+    "translations": {
+      "tr": "ӀэщӀэхун еплъ &lt;&lt;Ӏапызын&gt;&gt; DÜŞMEK 2 (elinden ~)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00234",
@@ -346877,7 +347032,12 @@
       "adyghe": "",
       "kabardian": "абрэдж"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "АБРЭДЖ ( Абз. АБРЭГ); ПАРТИЗАН еплъ &lt;&lt;ЗЭПӀЭЗЭРЫТ&gt;&gt; PARTİZAN, KABA­DAYI, GE­RİLLA",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00243",
@@ -347137,7 +347297,12 @@
       "adyghe": "",
       "kabardian": "адрыщӀ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "(eastern) (адрыщӀ) адрыщӀ / адрычӀ KARŞI (öte yaka)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00256",
@@ -347203,7 +347368,12 @@
     "isLemma": false,
     "subConceptId": "STEPFATHER",
     "taxonomyFamily": "Aile & Akrabalık",
-    "rootForm": "адэ-"
+    "rootForm": "адэ-",
+    "translations": {
+      "tr": "адэмыгу еплъ &lt;&lt;ӀуешӀый&gt;&gt; KABA (kibar değil)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00259",
@@ -347333,7 +347503,12 @@
       "adyghe": "",
       "kabardian": "азэн"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "АЗЭН / АЗАН EZAN",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00265",
@@ -347393,7 +347568,12 @@
       "adyghe": "",
       "kabardian": "академик"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "АКАДЕМИК АКАДЕМИСИЕН AKADE­MİS­YEN",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00268",
@@ -347514,7 +347694,12 @@
       "adyghe": "",
       "kabardian": "алмэсты(н)"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "ÖCÜ",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00274",
@@ -347654,7 +347839,12 @@
       "adyghe": "",
       "kabardian": "анэ-адэ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "ны-ты (янэ-ят) / анэ-адэ ( Абз. АН-АБА) EBEVEYN",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00281",
@@ -347694,7 +347884,12 @@
       "adyghe": "",
       "kabardian": "анэдолэ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "АНЭДОЛЭ АНАТОЛИА ANADOLU",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00283",
@@ -347734,7 +347929,12 @@
       "adyghe": "",
       "kabardian": "анэнэпӀэс"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "нынэпӀос / анэнэпӀэс ( Абз. АНПСЭ) ANALIK (üvey ana)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00285",
@@ -348716,7 +348916,12 @@
       "adyghe": "",
       "kabardian": "бгъэгу"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "БГЪЭГУ БГЪЭ GÖĞÜS, SİNE",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00334",
@@ -348876,7 +349081,12 @@
       "adyghe": "",
       "kabardian": "бгъэдэкӀуэщэн"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "бгъэдэкӀуэщэн / бгъодэкӀошъэн SO­KULMAK (gizlice birine ~)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00342",
@@ -348897,7 +349107,12 @@
       "adyghe": "",
       "kabardian": "бгъэдэлъхьэн"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "бгъэдэлъхьэн / бгъодэлъхьан KOYMAK (yanına / bitişiğine ~)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00343",
@@ -348937,7 +349152,12 @@
       "adyghe": "",
       "kabardian": "бгъэдэтӀысхьэн"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "бгъэдэтӀысхьэн / бгъодэтӀысхьан еплъ &lt;&lt;бгъодэсын&gt;&gt; OTURMAK (yanında, bitişiğinde ~)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00345",
@@ -349097,7 +349317,12 @@
       "adyghe": "",
       "kabardian": "бгъэрыщӀэ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "бгъэрышӀ(э) / бгъэрыщӀэ шыбгъэ­ры­шӀ(э) / шыбгъэрыщӀэ GÖĞÜSLÜK (at ~ü)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00353",
@@ -349257,7 +349482,12 @@
       "adyghe": "",
       "kabardian": "бдзэкъунтх"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "пцэкъынтф / бдзэкъунтх жэлый / кӀэӀунэ OLTA",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00361",
@@ -349720,7 +349950,12 @@
       "adyghe": "",
       "kabardian": "бжьыфӀэ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "бжьышӀо / бжьыфӀэ еплъ &lt;&lt;зэкӀужь&gt;&gt; YAKI­ŞIKLI",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00384",
@@ -349841,7 +350076,12 @@
       "adyghe": "",
       "kabardian": "бжэ-щхьэгъубжэ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "пчъэ-шъхьэнгъупчъ / бжэ-щхьэгъубжэ еплъ &lt;&lt;ПХЪЭХЭКӀ&gt;&gt; DOĞRAMA (kapı-pencere)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00390",
@@ -350061,7 +350301,12 @@
       "adyghe": "",
       "kabardian": "бжэщхьэӀу"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "пчэшъхьэӀу / бжэщхьэӀу EŞİK (kapı ~ği)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00401",
@@ -350161,7 +350406,12 @@
       "adyghe": "",
       "kabardian": "бзэгурэф"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "бзэгурэф / бзэгурацу / бзэгурафэ еплъ &lt;&lt;бза­ко&gt;&gt; DİLSİZ (kekeme)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00406",
@@ -350241,7 +350491,12 @@
       "adyghe": "",
       "kabardian": "бзэн"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "БЗЭН I (МАБЗЭ) BİÇMEK (biçme işini yapmak) II AMELİYAT ETMEK (ыбзагъ / ибзащ ; ЕБЗЭ: o ~etti / ediyor; абзагъ / ябзащ ; абзэ / ябзэ ): onlar ~ettiler / ediyorlar; УПӀЭН ( ыупӀагъ / иупӀащ ; ЕУПӀЭ : o ",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00410",
@@ -350321,7 +350576,12 @@
       "adyghe": "",
       "kabardian": "бинт"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "БИНТ BANT",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00414",
@@ -350441,7 +350701,12 @@
       "adyghe": "",
       "kabardian": "блок"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "БЛОК BLOK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00420",
@@ -350462,7 +350727,12 @@
       "adyghe": "",
       "kabardian": "блыгу"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "блэгу / блыгу KOLTUK 1",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00421",
@@ -350522,7 +350792,12 @@
       "adyghe": "",
       "kabardian": "блэгу"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "блэгу / блыгу KOLTUK 1",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00424",
@@ -350602,7 +350877,12 @@
       "adyghe": "",
       "kabardian": "блэгъэкӀын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "БЛЭГЪЭКӀЫН ATLATMAK 2 (geçirmek, savuşturmak); (блигъэкӀыгъ / блигъэ­кӀащ : geçirdi; geçiştirdi); БЛЕ­ГЪЭКӀ(ы) : geçiriyor; geçiştiriyor); блэ­тӀупщын / блэутӀыпщын (блитӀу­пщыгъ / блиутӀыпщащ ; блетӀ",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00428",
@@ -350945,7 +351225,12 @@
       "adyghe": "",
       "kabardian": "бунт"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "бунт мэхъэджагъ(э), ТЕРРОР TERÖR",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00445",
@@ -351025,7 +351310,12 @@
       "adyghe": "",
       "kabardian": "быӀуэбышэ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "быӀуэбышэ / быӀобыщ еплъ &lt;&lt;Ӏущэ&gt;&gt; ÇARPIK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00449",
@@ -351067,7 +351357,12 @@
       "adyghe": "",
       "kabardian": "быдэн"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "пытэн / быдэн I еплъ &lt;&lt;ПХЪЭШЭН&gt;&gt; SERTLEŞME-K (katılaşmak) II пытэ / быдэ ХЪУН еплъ &lt;&lt;ПХЪЭШЭН&gt;&gt; SERTLEŞME-K",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00451",
@@ -351087,7 +351382,12 @@
       "adyghe": "",
       "kabardian": "быж"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "быж бгырыпхышъхь(э) / бгы­ры­пхы­щхьэ TOKA 3 (kemer ~sı)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00452",
@@ -351547,7 +351847,12 @@
       "adyghe": "",
       "kabardian": "бэджэндыщтэ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "БЭДЖЭНДЫшт(э) / БЭДЖЭНДЫ щтэ еплъ &lt;&lt;БЭДЖЭНДӀЫГЪ&gt;&gt; KİRACI",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00475",
@@ -351808,7 +352113,12 @@
       "adyghe": "",
       "kabardian": "вабдзэ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "цуабзэ / вабдзэ SABAN DEMİRİ",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00488",
@@ -352008,7 +352318,12 @@
       "adyghe": "",
       "kabardian": "выгу"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "цуку / выгу ÖKÜZ ARABASI, KAĞNI",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00498",
@@ -352337,7 +352652,12 @@
     "isLemma": false,
     "subConceptId": "EMOTION",
     "taxonomyFamily": "Duygu & Zihin",
-    "rootForm": "гу"
+    "rootForm": "гу",
+    "translations": {
+      "tr": "ГУӀЭН I (МЭГУӀЭ); шъыгъон / щы­гъуэн (мэшъыгъо / мэщыгъуэ ) YAS TUTMAK II (МЭГУӀЭ) ACI ÇEKMEK (acele etmek)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00514",
@@ -353167,7 +353487,12 @@
     "isLemma": false,
     "subConceptId": "EMOTION",
     "taxonomyFamily": "Duygu & Zihin",
-    "rootForm": "гу"
+    "rootForm": "гу",
+    "translations": {
+      "tr": "гумэщӀын / гумэкӀын ENDİŞELENMEK, HÜZÜNLENMEK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00550",
@@ -353306,7 +353631,12 @@
     "isLemma": false,
     "subConceptId": "-",
     "taxonomyFamily": "-",
-    "rootForm": "гу"
+    "rootForm": "гу",
+    "translations": {
+      "tr": "ГУ уэ / гуо ГУКЪЫТЕУ(Э) NABIZ",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00556",
@@ -353560,7 +353890,12 @@
     "isLemma": false,
     "subConceptId": "-",
     "taxonomyFamily": "-",
-    "rootForm": "гу"
+    "rootForm": "гу",
+    "translations": {
+      "tr": "ГУРБИЯН еплъ &lt;&lt;ЗЭПӀЭЗЭРЫТ&gt;&gt; KABADAYI",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00567",
@@ -353700,7 +354035,12 @@
     "isLemma": false,
     "subConceptId": "-",
     "taxonomyFamily": "-",
-    "rootForm": "гу"
+    "rootForm": "гу",
+    "translations": {
+      "tr": "ГУРЫГЪУАЗЭКӀЭ фэгъэшъоша­гъэу / хуэгъэфэщауэ TAHMİNEN",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00573",
@@ -353907,7 +354247,12 @@
     "isLemma": false,
     "subConceptId": "-",
     "taxonomyFamily": "-",
-    "rootForm": "гу"
+    "rootForm": "гу",
+    "translations": {
+      "tr": "гурыщхъуэщӀ / гурышхъошӀ еплъ &lt;&lt;гурышхъошӀ&gt;&gt; ALINGAN (kuşkucu, başkasına güvenmeyen, evhamlı)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00582",
@@ -353930,7 +354275,12 @@
     "isLemma": false,
     "subConceptId": "-",
     "taxonomyFamily": "-",
-    "rootForm": "гу"
+    "rootForm": "гу",
+    "translations": {
+      "tr": "ГУСЭН (МЭГУСЭ); щыгусэн (щэгусэ), ЗЫГЪЭГУСЭН (ЗЕГЪЭГУСЭ), фэгусэн / хуэгусэн (фэгусэ / хуогусэ ), зыфэгъэгусэн / зыхуэгъэгусэн (зыфегъэгусэ / зыхуегъэгусэ ), ( Абз. ГУШРЭ); фэгубжын / хуэгубжьын (фэгу",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00583",
@@ -354045,7 +354395,12 @@
     "isLemma": false,
     "subConceptId": "-",
     "taxonomyFamily": "-",
-    "rootForm": "гу"
+    "rootForm": "гу",
+    "translations": {
+      "tr": "гушӀуапкӀэ / гуфӀапщӀэ сэуагъ(э), сэуагъапщ!, уаипчъ! MÜJDE",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00588",
@@ -354367,7 +354722,12 @@
     "isLemma": false,
     "subConceptId": "-",
     "taxonomyFamily": "-",
-    "rootForm": "гу"
+    "rootForm": "гу",
+    "translations": {
+      "tr": "СЭМЭРКЪЭУН / гушыӀэн еплъ &lt;&lt;СЭМЭРКЪЭУ шӀын&gt;&gt; ŞAKA YAPMAK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00602",
@@ -354482,7 +354842,12 @@
     "isLemma": false,
     "subConceptId": "-",
     "taxonomyFamily": "-",
-    "rootForm": "гу"
+    "rootForm": "гу",
+    "translations": {
+      "tr": "кушъапӀэ / гущапӀэ ПЕЛЕНКИ, СВИВАЛЬНИК KUNDAK (bebe ~ğı)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00607",
@@ -354574,7 +354939,12 @@
     "isLemma": false,
     "subConceptId": "-",
     "taxonomyFamily": "-",
-    "rootForm": "гу"
+    "rootForm": "гу",
+    "translations": {
+      "tr": "кушъхьаӀыгъ / гущхьэӀыгъ зефакӀу / зехуакӀуэ , кузеф / гузехуэ , ~зеф(э) / ~ зехуэ еплъ &lt;&lt;куф / гуху&gt;&gt; SÜRÜCÜ, ŞOFÖR",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00611",
@@ -354689,7 +355059,12 @@
     "isLemma": false,
     "subConceptId": "OVERWORK",
     "taxonomyFamily": "Yaşam & Sağlık",
-    "rootForm": "гуэ-"
+    "rootForm": "гуэ-",
+    "translations": {
+      "tr": "кобэн / гуэбэн HAM(lık)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00616",
@@ -354758,7 +355133,12 @@
     "isLemma": false,
     "subConceptId": "ANIMAL_SOUND",
     "taxonomyFamily": "Doğa & Hayvan",
-    "rootForm": "гуэ-"
+    "rootForm": "гуэ-",
+    "translations": {
+      "tr": "гуэгуэн / гогон ( Абз. ГУЭГУЭН) GÜĞÜM",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00619",
@@ -354896,7 +355276,12 @@
     "isLemma": false,
     "subConceptId": "GRANARY_PRED",
     "taxonomyFamily": "Gramer & Çekim",
-    "rootForm": "гуэ-"
+    "rootForm": "гуэ-",
+    "translations": {
+      "tr": "конэщ / гуэнэщ СКЛАД DEPO",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00625",
@@ -354942,7 +355327,12 @@
     "isLemma": false,
     "subConceptId": "DETACHMENT",
     "taxonomyFamily": "Düşünce & Soyut",
-    "rootForm": "гуэ-"
+    "rootForm": "гуэ-",
+    "translations": {
+      "tr": "гуэуж гъоулӀыкӀу(э) / гъуолӀыкӀуэ , ГЪЭӀУЛӀЫКӀУ(Э) HABERCİ",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00627",
@@ -355071,7 +355461,12 @@
       "adyghe": "",
       "kabardian": "гъагъын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "гъэгъын / гъагъын (ыгъэгъыгъ / игъагъащ : ağlattı; егъэгъы / егъагъ : ağlatıyor) AĞLATMAK (birini ~)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00633",
@@ -355251,7 +355646,12 @@
       "adyghe": "",
       "kabardian": "гъуанэдэплъ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "гъуанэдэплъ / гъонэдэплъ еплъ &lt;&lt;къогъу­къоплъ&gt;&gt; RÖNTGENCİ (argo)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00642",
@@ -355451,7 +355851,12 @@
       "adyghe": "",
       "kabardian": "гъумыщӀэ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "гъумыщӀэ еплъ &lt;&lt;АБРАГЪУ(Э)&gt;&gt; İRİ",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00652",
@@ -355511,7 +355916,12 @@
       "adyghe": "",
       "kabardian": "гъунэншэ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "гъунэнчъ / гъунэншэ I еплъ &lt;&lt;мыухыжь&gt;&gt; SONSUZ II еплъ &lt;&lt;БЭ&gt;&gt; BOL",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00655",
@@ -356072,7 +356482,12 @@
       "adyghe": "",
       "kabardian": "гъуэгуэгъу"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "гъуэгуэгъу / гъогогъу еплъ &lt;&lt;НЭПКЪЭГЪУ&gt;&gt; &lt;&lt;ГЪУСЭ&gt;&gt; ARKADAŞ , OMUZDAŞ, YOLDAŞ",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00683",
@@ -356272,7 +356687,12 @@
       "adyghe": "",
       "kabardian": "гъуэлъхьэн"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "гъуэлъхьэн / гъолъхьэн KULUÇKAYA YATMAK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00693",
@@ -356413,7 +356833,12 @@
       "adyghe": "",
       "kabardian": "гъуэмылапхъэ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "гъуэмылапхъэ / гъомылапхъ ERZAK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00700",
@@ -356693,7 +357118,12 @@
       "adyghe": "",
       "kabardian": "гъэӀурыщӀэн"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "гъэӀурыщӀэн / гъэӀорышӀэн еплъ &lt;&lt;зегъэ­кӀон&gt;&gt; İDARE ETMEK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00714",
@@ -356953,7 +357383,12 @@
       "adyghe": "",
       "kabardian": "гъэгупсысэн"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "гъэгупшысэн / гъэгупсысэн (егъэгу­пшысэ / егъэгупсысэ ) DÜŞÜNDÜR­MEK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00727",
@@ -356975,7 +357410,12 @@
     },
     "isLemma": false,
     "subConceptId": "EMOTION",
-    "taxonomyFamily": "Duygu & Zihin"
+    "taxonomyFamily": "Duygu & Zihin",
+    "translations": {
+      "tr": "гъэгущӀон / гъэгуфӀэн (егъэгущӀо / егъэгуфӀэ ); ( Абз. РЫГУЫГЪАРА) SEVİNDİRMEK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00728",
@@ -357075,7 +357515,12 @@
       "adyghe": "",
       "kabardian": "гъэгызын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "гъэгырзын / гъэгызын ГЪЭКЪЫР­КЪЫН, ГЪЭСЫСЫН SARSMAK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00733",
@@ -357135,7 +357580,12 @@
       "adyghe": "",
       "kabardian": "гъэдыкъын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "ГЪЭДЫКЪЫН I еплъ &lt;&lt;ГЪЭПЭН&gt;&gt; ÇATLATMAK (meraktan ~, hasetten ~) II еплъ &lt;&lt;ГЪЭЩТЫН&gt;&gt; DONDURMAK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00736",
@@ -357436,7 +357886,12 @@
       "adyghe": "",
       "kabardian": "гъэкӀуэсэн"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "гъэкӀуэсэн еплъ &lt;&lt;гъэчъэн&gt;&gt; KAÇIRMAK (kız ~)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00751",
@@ -357456,7 +357911,12 @@
       "adyghe": "",
       "kabardian": "гъэкӀылын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "гъэлыджын / гъэкӀылын (егъэлыджы / егъэкӀыл ) GIDIKLAMAK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00752",
@@ -357476,7 +357936,12 @@
       "adyghe": "",
       "kabardian": "гъэкӀыхьын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "гъэукӀыхьэн / гъэкӀыхьын еплъ &lt;&lt;ГЪЭКӀЫ­ХЬЭН&gt;&gt; UZATMAK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00753",
@@ -357637,7 +358102,12 @@
       "adyghe": "",
       "kabardian": "гъэлъыхъужын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "гъэлъыхъужьын / гъэлъыхъужын (егъэлъыхъужьы / егъэлъыхъуж ); гъэшыжьын / гъэжэжын (егъэ­шыжьы / егъэжэж ); гъэхуэжын ( егъэхуэж ); псэф щӀын (~ ещӀ: sun’i / yapay dölleme yapıyor, ilkah ediyor ) DÖLLE",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00761",
@@ -357717,7 +358187,12 @@
       "adyghe": "",
       "kabardian": "гъэлъэтэн"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "гъэлъэтэн / гъэбыбын UÇURMAK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00765",
@@ -357857,7 +358332,12 @@
       "adyghe": "",
       "kabardian": "гъэнэжэгужэн"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "гъэнэжэгужэн еплъ &lt;&lt;гъэгушӀон&gt;&gt; ŞENLEN­DİRMEK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00772",
@@ -357917,7 +358397,12 @@
       "adyghe": "",
       "kabardian": "гъэпӀэтӀэуэн"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "гъэпӀэтӀрэон / гъэпӀэтӀэуэн еплъ &lt;&lt;гъэпсын­кӀэн&gt;&gt; CANLANDIRMAK 4",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00775",
@@ -357937,7 +358422,12 @@
       "adyghe": "",
       "kabardian": "гъэплъэн"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "ГЪЭПЛЪЭН (ЕГЪАПЛЪЭ); BAKTIRMAK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00776",
@@ -357957,7 +358447,12 @@
       "adyghe": "",
       "kabardian": "гъэпсэун"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "ГЪЭПСЭУН (ЕГЪЭПСЭУ); ЩЫ­ГЪЭӀЭН (ЩЕГЪЭӀЭ); егъэгъэшӀэн / егъэгъэщӀэн (регъэгъашӀэ / ирегъэ­гъащӀэ ) YAŞATMAK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00777",
@@ -358241,7 +358736,12 @@
       "adyghe": "",
       "kabardian": "гъэсэхын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "гъэсэхын / гъэпщэхын I еплъ &lt;&lt;гъэкӀосэн&gt;&gt; SÖNDÜRMEK II еплъ &lt;&lt;КЪЭ­ГЪЭКӀЫН&gt;&gt; YETİŞTİRMEK (olgunlaş­tırmak bitki ~)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00791",
@@ -358281,7 +358781,12 @@
       "adyghe": "",
       "kabardian": "гъэтӀыгъуэн"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "гъэтӀыргъон / гъэтӀыгъуэн (егъэтӀыр­гъо / егъэтӀыгъуэ ) KIVIRCIKLAŞ­TIRMAK (perma yapmak)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00793",
@@ -358583,7 +359088,12 @@
       "adyghe": "",
       "kabardian": "гъэудэфэн"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "гъэутэшъон / гъэудэфэн еплъ &lt;&lt;ЩЫГЪЭ­КӀЫН&gt;&gt; ŞIMARTMAK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00808",
@@ -358663,7 +359173,12 @@
       "adyghe": "",
       "kabardian": "гъэунэхъун"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "ГЪЭУНЭХЪУН еплъ &lt;&lt;гъэкӀосэн&gt;&gt; SÖNDÜR­MEK, OCAĞINI BATIRMAK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00812",
@@ -358683,7 +359198,12 @@
       "adyghe": "",
       "kabardian": "гъэуфэрэкӀын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "гъэушъорэкӀын / гъэуфэрэкӀын (егъэушъорэкӀы / егъэуфэрэкӀ ); гъэулэрэкӀын / гъэублэрэкӀын (егъэулэрэкӀы / егъэублэрэкӀ ), икӀыкӀын / ищӀыкӀын (рекӀыкӀы / ирещӀыкӀ ), гъэукӀорэин / гъэукӀуриин (егъэукӀ",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00813",
@@ -358864,7 +359384,12 @@
       "adyghe": "",
       "kabardian": "гъэхуабжьын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "гъэхуабжьын / гъэфэмжьын еплъ &lt;&lt;гъэпсынкӀэн&gt;&gt; HIZLANDIRMAK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00822",
@@ -359064,7 +359589,12 @@
       "adyghe": "",
       "kabardian": "гъэхьэщӀэн"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "гъэхьэщӀэн / гъэхьакӀэн еплъ &lt;&lt;ГЪЭЛЪЭ­ПӀЭН&gt;&gt; AĞIRLAMAK (konuk etmek)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00832",
@@ -359184,7 +359714,12 @@
       "adyghe": "",
       "kabardian": "гъэшэсын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "ГЪЭШЭСЫН (ЕГЪЭШЭС(ы); тегъэ­Ӏыстэн (тырегъэӀыстэ); тегъэтӀыс­хьан / тегъэтӀысхьэн (тырегъэтӀыс­хьа / трегъэтӀысхьэ ) BİNDİRMEK (ata~; üstüne~)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00838",
@@ -359364,7 +359899,12 @@
       "adyghe": "",
       "kabardian": "гыз"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "гырз / гыз СЫС, КЪЫРКЪ SARSINTI",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00847",
@@ -359384,7 +359924,12 @@
       "adyghe": "",
       "kabardian": "гызын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "гырзын / гызын (гырзыгъэ / гызащ : sarsıldı; мэгырзы / мэгыз : sarsılıyor ); СЫСЫН (МЭСЫС(ы); КЪЫР­КЪЫН ( къыркъыгъэ / къыркъащ : sarsıldı; МЭКЪЫРКЪ(ы): sarsılıyor ); зэкӀэсысэн / зэщӀэсысэн (зэкӀэсыс",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00848",
@@ -359484,7 +360029,12 @@
       "adyghe": "",
       "kabardian": "дакӀуэ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "(western) дакӀо / дакӀуэ DİKEN 2 (dikici)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00853",
@@ -359725,7 +360275,12 @@
       "adyghe": "",
       "kabardian": "данагъуэ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "дэнагъо / данагъуэ İPEK (sarı ~)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00865",
@@ -359785,7 +360340,12 @@
       "adyghe": "",
       "kabardian": "дапхъэ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "ДАПХЪЭ еплъ &lt;&lt;дэгъошӀу&gt;&gt; MAKBUL",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00868",
@@ -359825,7 +360385,12 @@
       "adyghe": "",
       "kabardian": "дарэ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "дарэ дарэгъу еплъ &lt;&lt;Ӏахьагъу&gt;&gt; ORTAK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00870",
@@ -359866,7 +360431,12 @@
       "adyghe": "",
       "kabardian": "даущыншэ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "даущыншэ I еплъ &lt;&lt;зэгъокӀы&gt;&gt; ISSIZ, TENHA II еплъ &lt;&lt;ом&gt;&gt; DURGUN (sessiz)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00872",
@@ -360407,7 +360977,12 @@
       "adyghe": "",
       "kabardian": "джий"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "чий / джий I къурбэкъэй, къурмакъый / къурмакъей GIRTLAK (boğaz, ümük) II тыкъын / тэмакъ BOĞAZ 1",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00899",
@@ -360669,7 +361244,12 @@
     "isLemma": false,
     "subConceptId": "BOTANY",
     "taxonomyFamily": "Doğa & Hayvan",
-    "rootForm": "джэ-"
+    "rootForm": "джэ-",
+    "translations": {
+      "tr": "чэтгын / джэдгын еплъ &lt;&lt;АДЫГЭ щхынхэр&gt;&gt; GEYİKOTU ( ÇETGIN / CEDGIN)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00911",
@@ -360877,7 +361457,12 @@
     "isLemma": false,
     "subConceptId": "NO_EGG",
     "taxonomyFamily": "Nitelik & Doğa",
-    "rootForm": "джэ-"
+    "rootForm": "джэ-",
+    "translations": {
+      "tr": "джэдыкӀэвынш еплъ &lt;&lt;АДЫГЭ щхынхэр&gt;&gt; CEDIÇ’EVINŞ",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00920",
@@ -361210,7 +361795,12 @@
       "adyghe": "",
       "kabardian": "дзакӀэ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "ДЗАКӀЭ еплъ &lt;&lt;ДЗЭ&gt;&gt; ORDUNUN ARDI, ARTÇI",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00935",
@@ -361414,7 +362004,12 @@
       "adyghe": "",
       "kabardian": "дзыхьщӀыгъуэджэ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "дзыхьщӀыгъуэджэ / цахьшӀыгъуадж цыхьэшӀыгъуадж EVHAMLI",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00945",
@@ -361434,7 +362029,12 @@
       "adyghe": "",
       "kabardian": "дзыхьщӀэгъу"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "цыхьэшӀэгъу / дзыхьщӀэгъу цахьшӀэгъу GÜVENİLİR",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00946",
@@ -361536,7 +362136,12 @@
       "adyghe": "",
       "kabardian": "дзэпашэ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "дзэпашэ / дзэпащ(э) КОМАНДИР KOMUTAN",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00951",
@@ -361996,7 +362601,12 @@
       "adyghe": "",
       "kabardian": "дыгъафӀэ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "тыгъашӀо / дыгъафӀэ КЪЫБЛЭ , ЮГ GÜNEY",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00974",
@@ -362096,7 +362706,12 @@
       "adyghe": "",
       "kabardian": "дыгъуэгъуакӀуэ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "дыгъуэгъуакӀуэ дыгъуакӀуэ / ты­гъуакӀо, тыгъу / дыгъу HIRSIZ",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00979",
@@ -362116,7 +362731,12 @@
       "adyghe": "",
       "kabardian": "дыгъуэсжэщ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "тыгъосчэщ / дыгъуэсжэщ DÜN GECE",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00980",
@@ -362237,7 +362857,12 @@
       "adyghe": "",
       "kabardian": "дыхьэпӀэ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "дэхьапӀ / дыхьэпӀэ GİRİŞ (araya / avluya ~ yeri)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00986",
@@ -362398,7 +363023,12 @@
       "adyghe": "",
       "kabardian": "дыщэкӀ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "дыщэкӀ / дышъэкӀ KUYUMCU",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00994",
@@ -362418,7 +363048,12 @@
       "adyghe": "",
       "kabardian": "дыщэхэкӀ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "дыщэхэкӀ / дышъэхэкӀ ПЫЛЪХЬЭ MÜCEVHER",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-00995",
@@ -362739,7 +363374,12 @@
       "adyghe": "",
       "kabardian": "дэгъэзеигъуэ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "дэгъэзыягъу / дэгъэзеигъуэ RAMPA, YOKUŞ",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-01011",
@@ -362839,7 +363479,12 @@
       "adyghe": "",
       "kabardian": "дэгъэкӀын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "ДЭГЪЭКӀЫН I еплъ &lt;&lt;ифын&gt;&gt; SÜRGÜN 3 (etmek) II дэгъэкӀоен / дэгъэ­кӀуеин ARTTIRMAK 2 (yükseltmek,)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-01016",
@@ -362899,7 +363544,12 @@
       "adyghe": "",
       "kabardian": "дэгъэхын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "ДЭГЪЭХЫН (дигъэхыгъ / дигъэхащ ; ДЕГЪЭХ(ы); шъхьадэгъэун / щхьэ­дэгъэун ( шъхьадигъэугъ / щхьэ­ди­гъэуащ ; шъхьадегъэу / щхьэдегъэу) ; шъхьадегъэхын / щхьэдегъэхын ( шъхьадигъэхыгъ / щхьэдигъэхащ ; шъ",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-01019",
@@ -363259,7 +363909,12 @@
       "adyghe": "",
       "kabardian": "дэкӀуэсэн"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "дэкӀуэсэн кӀуэсэн еплъ &lt;&lt;ДИКӀЫН&gt;&gt; KAÇMAK (kocaya ~)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-01037",
@@ -363519,7 +364174,12 @@
       "adyghe": "",
       "kabardian": "дэнэн"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "ДЭНЭН (дэнэ / донэ) SIKIŞIP KALMAK (arada ~)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-01050",
@@ -363880,7 +364540,12 @@
       "adyghe": "",
       "kabardian": "дэутхеин"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "дэутхыен / дэутхеин I ( деутхые / дреут­хей : sıçratıyor; диутхыягъ / дриутхе­ящ : sıçrattı ) SIÇRATMAK; su serptirmek (yukarıya ~) II ( дэутхыягъ / дэ­утхеящ : sıçradı; дэутхые / доутхей : sıçrıyor )",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-01068",
@@ -363960,7 +364625,12 @@
       "adyghe": "",
       "kabardian": "дэхащэ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "дэхащэ / дахащэ ENFES (çok güzel)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-01072",
@@ -364180,7 +364850,12 @@
       "adyghe": "",
       "kabardian": "еӀуэкӀын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "еӀуэкӀын / еӀокӀын İMA ETMEK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-01083",
@@ -364280,7 +364955,12 @@
       "adyghe": "",
       "kabardian": "еӀэбын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "ЕӀЭБЫН (еӀэбы / йоӀэб) DOKUNMAK (elle ~)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-01088",
@@ -364400,7 +365080,12 @@
       "adyghe": "",
       "kabardian": "ебгын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "ЕБГЫН БГЭН BEDDUA ETMEK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-01094",
@@ -364680,7 +365365,12 @@
       "adyghe": "",
       "kabardian": "егупсысыкӀэ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "егупшысыкӀ(э) / егупсысыкӀэ DÜŞÜ­NÜŞ (bir şeyi ~)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-01108",
@@ -364820,7 +365510,12 @@
       "adyghe": "",
       "kabardian": "егъэӀуэтэжын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "егъэӀуэтэжын / егъэӀотэжьын еплъ &lt;&lt;гъэ­хъужьын&gt;&gt; İYİLEŞTİRMEK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-01115",
@@ -364900,7 +365595,12 @@
       "adyghe": "",
       "kabardian": "егъэбжын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "егъэпчъын / егъэбжын еплъ &lt;&lt;егъэлъытэн&gt;&gt; SAYDIRMAK I (bir çokluğu ~)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-01119",
@@ -364960,7 +365660,12 @@
       "adyghe": "",
       "kabardian": "егъэгъэбыдэн"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "егъэгъэпытэн / егъэгъэбыдэн еплъ &lt;&lt;регъэ­гъэсэн&gt;&gt; KAPATTIRMAK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-01122",
@@ -364980,7 +365685,12 @@
       "adyghe": "",
       "kabardian": "егъэгъэзэн"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "ЕГЪЭГЪЭЗЭН (регъэгъазэ / ире­гъэ­гъазэ ); КЪЕГЪЭГЪЭЗЭН (къыре­гъэгъазэ / кърегъэгъазэ ); гъэкӀэ­рэ­хъон / гъэкӀэрэхъуэн (егъэкӀэрэхъо / егъэкӀэрахъуэ ); гъэчэрэзын / гъэ­джэрэзын (егъэчэрэзы / егъэджэ",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-01123",
@@ -365020,7 +365730,12 @@
       "adyghe": "",
       "kabardian": "егъэгъэщӀэгъуэн"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "егъэгъэщӀэгъуэн / егъэгъэшӀэгъон еплъ &lt;&lt;гъэгъошэн&gt;&gt; ŞAŞIRTMAK (hayret ettirmek)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-01125",
@@ -365120,7 +365835,12 @@
       "adyghe": "",
       "kabardian": "егъэкӀун"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "ЕГЪЭКӀУН I (регъэкӀу / ирегъэкӀу ); ЕГЪЭЗЭГЪЫН (регъэзэгъы / ире­гъэзэгъ ); фэгъэшъошэн / хуэ­гъэ­фэщэн (фегъэшъуашэ / хуегъэ­фа­щэ ) YAKIŞTIRMAK (birini birine~; birini bir şeye ~; uydurmak; layık gö",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-01130",
@@ -365440,7 +366160,12 @@
       "adyghe": "",
       "kabardian": "егъэщхьын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "егъэщхьын / егъэхьщын еплъ &lt;&lt;фэгъэдэн&gt;&gt; BENZETMEK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-01146",
@@ -366065,7 +366790,12 @@
       "adyghe": "",
       "kabardian": "екӀун"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "ЕКӀУН I (екӀу / йокӀу ); ЕЗЭГЪЫН (езэгъы / йозэгъ) ; фэшъошэн / хуэфэ­щэн (фэшъуаш / хуэфащэ(щ ) YAKIŞMAK II еплъ &lt;&lt;шъхьапэн&gt;&gt; YARAMAK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-01177",
@@ -366767,7 +367497,12 @@
       "adyghe": "",
       "kabardian": "емылыдж"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "емылыдж / емлыч ( Абз. ЕМЛЫК) AT (eğitilmemiş ~)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-01212",
@@ -366867,7 +367602,12 @@
       "adyghe": "",
       "kabardian": "епӀэщӀэкӀын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "епӀэщӀэкӀын I еплъ &lt;&lt;гузэжъон&gt;&gt; ACELE ETMEK II еплъ &lt;&lt;псынкӀэн&gt;&gt; ÇABUK OLMAK III еплъ &lt;&lt;хъыен&gt;&gt; CANLANMAK 1",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-01217",
@@ -366947,7 +367687,12 @@
       "adyghe": "",
       "kabardian": "еплъэкӀуэн"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "еплъэкӀуэн / еплъэкӀон DİKİZLEMEK, GÖZETLEMEK (birini ~)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-01221",
@@ -367027,7 +367772,12 @@
       "adyghe": "",
       "kabardian": "епсэлъыхъун"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "ЕПСЭЛЪЫХЪУН еплъ &lt;&lt;псэлъыхъон&gt;&gt; KUR YAPMAK (birine ~)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-01225",
@@ -367207,7 +367957,12 @@
       "adyghe": "",
       "kabardian": "епщылӀэн"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "епщылӀэн / епшылӀэн SOKULMAK (sürünerek birine ~)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-01234",
@@ -367307,7 +368062,12 @@
       "adyghe": "",
       "kabardian": "епэрымэ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "ЕПЭРЫМЭ ЕПЭРЫПС, дыху , ЛОСЬОН LOSYON (kolonya), HOŞ KOKU",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-01239",
@@ -367367,7 +368127,12 @@
       "adyghe": "",
       "kabardian": "ерагъпсэрагъкӀэ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "ерагъпсэрагъкӀэ / ерагъэ-псэрагъоу ерагъэу / ерагъкӀэ , егъэзыгъэу КЪИНКӀЭ ZORLUKLA",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-01242",
@@ -367728,7 +368493,12 @@
       "adyghe": "",
       "kabardian": "етӀэн"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "ЕТӀЭН КЪЭТӀЫН еплъ &lt;&lt;ТӀЫН&gt;&gt; KAZMAK (bir yeri / şeyi ~)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-01260",
@@ -367868,7 +368638,12 @@
       "adyghe": "",
       "kabardian": "еуӀун"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "ЕУӀУН еплъ &lt;&lt;уӀон&gt;&gt; GAGALAMAK (bir şeyi~)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-01267",
@@ -368109,7 +368884,12 @@
       "adyghe": "",
       "kabardian": "еупцӀын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "ЕУПЦӀЫН еплъ &lt;&lt;УПЦӀЫН&gt;&gt; ATMAK (çamur / harç ~)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-01279",
@@ -368169,7 +368949,12 @@
       "adyghe": "",
       "kabardian": "еутӀыпщауэ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "еутӀыпщауэ / етӀупщыгъэу еплъ &lt;&lt;ехьажьа­гъэу&gt;&gt; DOLUDİZGİN",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-01282",
@@ -368250,7 +369035,12 @@
       "adyghe": "",
       "kabardian": "еутэкӀын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "еутэкӀын / еундэкӀын (еутэкӀы / йоундэкӀ ); зэутэкӀын / зэундэкӀэын (зэутэкӀы / зоундэкӀ ); жэхэон / жьэ­хэ­уэн (жэхэо / жьэхоуэ ); зэжэхэон / зэ­жьэхэуэн (зэжэхэо / зэжьэхоуэ ) ÇARPMAK, KAZA (~ yapma",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-01286",
@@ -368732,7 +369522,12 @@
       "adyghe": "",
       "kabardian": "ефиин"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "ешъуин / ефиин еплъ &lt;&lt;ГЪЭЕМЫКӀУН&gt;&gt; YUHALAMAK (ıslıklamak)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-01310",
@@ -368813,7 +369608,12 @@
       "adyghe": "",
       "kabardian": "ефыгъуэн"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "ешъугъон / ефыгъуэн (ешъугъо / йо­фыгъуэ ); ешхъогъон (ешхъуагъо) KISKANMAK (birini ~)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-01314",
@@ -368913,7 +369713,12 @@
       "adyghe": "",
       "kabardian": "ефэнды"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "ЕФЭНДЫ ( Абз. ЕФЭНДЫ), ДИН пащ(э) / ДИН пашэ İMAM",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-01319",
@@ -368933,7 +369738,12 @@
       "adyghe": "",
       "kabardian": "ефэхъуэхын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "ецохъохын / ефэхъуэхын еплъ &lt;&lt;ДЖЭЛЭН&gt;&gt; KAYMAK 2",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-01320",
@@ -369235,7 +370045,12 @@
       "adyghe": "",
       "kabardian": "ехыпӀэ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "ЕХЫПӀЭ ЕХЫКӀЭ, ЕГЪЭЗЫХЫ­ГЪУ(Э) İNİŞ (~yeri)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-01335",
@@ -369435,7 +370250,12 @@
       "adyghe": "",
       "kabardian": "еша"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "ещыгъ / еша пшъыгъэ, улэугъэ / улэуа YORGUN",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-01345",
@@ -369495,7 +370315,12 @@
       "adyghe": "",
       "kabardian": "ешхэ-ефэ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "ешхэ-ефэ ещхэ-ешъу ZİYAFET",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-01348",
@@ -369535,7 +370360,12 @@
       "adyghe": "",
       "kabardian": "ешэкӀын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "ещэкӀын / ешэкӀын еплъ &lt;&lt;щыхьэн&gt;&gt; SARMAK (bir şeyın üzerine / uzağa doğru ~)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-01350",
@@ -369555,7 +370385,12 @@
       "adyghe": "",
       "kabardian": "ещӀа"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "ещӀа ебагъ / еба еплъ &lt;&lt;БГЪУНДЖ&gt;&gt; YAMUK (bir tarafa yatık)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-01351",
@@ -369575,7 +370410,12 @@
       "adyghe": "",
       "kabardian": "ещӀопщэуэн"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "ещӀопщэуэн / екӀэпщэон KAMÇILAMAK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-01352",
@@ -369895,7 +370735,12 @@
       "adyghe": "",
       "kabardian": "жьантӀэ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "жьантӀэ / жантӀ I еплъ &lt;&lt;джэгу&gt;&gt; OCAKBAŞI, BAŞKÖŞE II джэныкъопашъхь(э), джэгупашъхьа / жьэгупащхьэ OCAKBAŞI",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-01368",
@@ -370075,7 +370920,12 @@
       "adyghe": "",
       "kabardian": "жьей"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "БЭГУжъый / жьей фыкъуардэ, фыкъуадэ, щынышхъожъый SİVİLCE",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-01377",
@@ -370316,7 +371166,12 @@
       "adyghe": "",
       "kabardian": "жьэгъул"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "жьэгъул / жэгъул GERDAN ETİ",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-01389",
@@ -371017,7 +371872,12 @@
       "adyghe": "",
       "kabardian": "захуагъэ(э)"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "зэфагъэ(э) / захуагъэ еплъ &lt;&lt;ГУЗЭГЪАЛЪ(Э)&gt;&gt; VİCDAN (doğruluk)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-01424",
@@ -371217,7 +372077,12 @@
       "adyghe": "",
       "kabardian": "зэбгрыгъэкӀын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "зэбгырыгъэкӀын / зэбгрыгъэкӀын еплъ &lt;&lt;гощын&gt;&gt; DAĞITMAK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-01434",
@@ -371357,7 +372222,12 @@
       "adyghe": "",
       "kabardian": "зэбгрыкӀын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "зэбгырыкӀын / зэбгрыкӀын I (зэбгырэ­кӀы / зэбгрокӀ ); ЗЭХЭКӀЫН (зэхэкӀы / зэхокӀ ), зэхэтэкъон / зэхэ­тэкъуэн (зэхэтакъо / зэхотакъуэ ), ЗЭХЭТЭКЪУН (зэхэтэкъу / зэхо­тэкъу ), ЗЭХЭЛЪЭЛЪЭН (зэхэлъа­лъэ ",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-01441",
@@ -371418,7 +372288,12 @@
       "adyghe": "",
       "kabardian": "зэбгрылъэлъын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "зэбгырылъэлъын / зэбгрылъэлъын еплъ &lt;&lt;зэбгырыкӀын&gt;&gt; DAĞILMAK (ufalanıp ~)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-01444",
@@ -371579,7 +372454,12 @@
       "adyghe": "",
       "kabardian": "зэбгрышын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "зэбгырыщын / зэбгрышын еплъ &lt;&lt;гощын&gt;&gt; DAĞITMAK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-01452",
@@ -371800,7 +372680,12 @@
       "adyghe": "",
       "kabardian": "зэбгъэдэкӀыжын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "зэбгъэдэкӀыжын еплъ &lt;&lt;зэбгъодэкӀыжьын&gt;&gt; VEDALAŞMAK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-01463",
@@ -371820,7 +372705,12 @@
       "adyghe": "",
       "kabardian": "зэбгъэдэкӀын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "зэбгъэдэкӀын / зэбгъодэкӀын AYRILMAK (ikisi birbirinin yanından ~)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-01464",
@@ -372181,7 +373071,12 @@
       "adyghe": "",
       "kabardian": "зэблэдзын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "ЗЭБЛЭДЗЫН еплъ &lt;&lt;ЗЭДЗЭКӀЫН&gt;&gt; ÇEVİRMEK; (döndürmek; aktarmak)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-01482",
@@ -372263,7 +373158,12 @@
       "adyghe": "",
       "kabardian": "зэблэкӀын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "ЗЭБЛЭКӀЫН еплъ &lt;&lt;БЛЭКӀЫН&gt;&gt; TEDAVÜL ETMEK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-01486",
@@ -372384,7 +373284,12 @@
       "adyghe": "",
       "kabardian": "зэбэнын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "ЗЭБЭНЫН I (зэбэны / зобэн ); зэзыӀэн (зэзыӀэ / зозыӀэ(р ) GÜREŞMEK (birbiriyle ~) II еплъ &lt;&lt;зэбжъэнтӀын&gt;&gt; BOĞUŞMAK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-01492",
@@ -372424,7 +373329,12 @@
       "adyghe": "",
       "kabardian": "зэвыпӀэ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "зэвыпӀэ / зэжъупӀэ ИТ( щ ) КЪИН ХЭТ( щ ); мэгузажъо / мэгузавэ SIKIŞIK (sıkıntı içinde)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-01494",
@@ -372764,7 +373674,12 @@
       "adyghe": "",
       "kabardian": "зэгуэгъэхьэн"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "зэгуэгъэхьэн / зэгогъэхьан I еплъ &lt;&lt;гъэкӀотэн&gt;&gt; YANAŞTIRMAK (birbirine ~) II еплъ &lt;&lt;ЗЫ шӀын&gt;&gt; BİRLEŞTİRMEK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-01511",
@@ -372784,7 +373699,12 @@
       "adyghe": "",
       "kabardian": "зэгуэгъэчын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "зэгуэгъэчын / зэгогъэчын еплъ &lt;&lt;ГЪЭЧЭН&gt;&gt; ÇATLATMAK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-01512",
@@ -372864,7 +373784,12 @@
       "adyghe": "",
       "kabardian": "зэгуэкӀын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "зэгуэкӀын / зэгокӀын AYRILMAK (ikisi birbirinden ~)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-01516",
@@ -372964,7 +373889,12 @@
       "adyghe": "",
       "kabardian": "зэгуэлъэтын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "зэгуэлъэтын / зэголъэтын AYRILMAK (ikisi birbirinden fırlayıp ~)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-01521",
@@ -373085,7 +374015,12 @@
       "adyghe": "",
       "kabardian": "зэгуэчын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "зэгуэчын / зэгочын еплъ &lt;&lt;ЧЭН&gt;&gt; ÇATLAMAK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-01527",
@@ -373185,7 +374120,12 @@
       "adyghe": "",
       "kabardian": "зэгъусэн"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "ЗЭГЪУСЭН КЪЫЗЭГЪУСЭН, ЗЭРЫЛЫН, КЪЫЗЭРЫЛЫН EŞLEŞMEK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-01532",
@@ -373205,7 +374145,12 @@
       "adyghe": "",
       "kabardian": "зэгъуэкӀ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "зэгъуэкӀ / зэгъокӀы TENHA",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-01533",
@@ -373345,7 +374290,12 @@
       "adyghe": "",
       "kabardian": "зэгъэкӀужын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "зэгъэкӀужьын / зэгъэкӀужын еплъ &lt;&lt;еӀазэкӀын&gt;&gt; TAMİR ETMEK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-01540",
@@ -373367,7 +374317,12 @@
       "adyghe": "",
       "kabardian": "зэгъэкӀун"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "ЗЭГЪЭКӀУН (ЗЭРЕГЪЭКӀУ); ЗЭГЪЭЗЭГЪЫН (ЗЭРЕГЪЭЗЭГЪ(ы); зэфэгъэшъошэн / зэхуэгъэфэщэн (зэфегъэшъуашэ / зэхуегъэфащэ ) YAKIŞTIRMAK (birbirine ~; uydurmak; layık görmek)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-01541",
@@ -373649,7 +374604,12 @@
       "adyghe": "",
       "kabardian": "зэдеӀэн"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "ЗЭДЕӀЭН I (зэдеӀэ / зэдоӀэ ); зэдэӀэпыӀэн / зэдэӀэпыкъун (зэдэӀэпыӀэ / зэдо­Ӏэпыкъу ) YARDIMLAŞMAK II ЗЭДЭӀЭПЫӀЭН DAYANIŞMA",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-01555",
@@ -373889,7 +374849,12 @@
       "adyghe": "",
       "kabardian": "зэдыкӀэ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "зэдыкӀэ / зэдкӀэ зэкӀэ HEP, hepsi",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-01567",
@@ -373989,7 +374954,12 @@
       "adyghe": "",
       "kabardian": "зэдэӀэпыкъун"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "зэдэӀэпыкъун / зэдэӀэпыӀэн еплъ &lt;&lt;ЗЭДЕӀЭН&gt;&gt; YARDIMLAŞMAK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-01572",
@@ -374049,7 +375019,12 @@
       "adyghe": "",
       "kabardian": "зэдэгуэшын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "зэдэгуэшын еплъ &lt;&lt;зэдэгощын&gt;&gt; PAYLAŞMAK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-01575",
@@ -374149,7 +375124,12 @@
       "adyghe": "",
       "kabardian": "зэдэджэгун"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "ЗЭДЭДЖЭГУН (зэдэджэгу(х) / зэдоджэгу(хэ ); зэдешӀэн / зэдещӀэн (зэдешӀэ(х) / зэдещӀэ(хэ ); къызэдешӀэн / къызэдещӀэн (къызэдешӀэ(х) / къызэдещӀэ(хэ ); къызэдэшъон / къызэдэфэн (къызэдэшъо(х) / къызэдо",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-01580",
@@ -374993,7 +375973,12 @@
       "adyghe": "",
       "kabardian": "зэкӀуэцӀылъ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "зэкӀуэцӀылъ еплъ &lt;&lt;зэкӀоцӀылъ&gt;&gt; DÜRÜM",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-01622",
@@ -375133,7 +376118,12 @@
       "adyghe": "",
       "kabardian": "зэкӀуэцӀышыхьын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "зэкӀуэцӀышыхьын / зэкӀоцӀыщыхьэн еплъ &lt;&lt;щыхьэн&gt;&gt; SARMAK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-01629",
@@ -375437,7 +376427,12 @@
       "adyghe": "",
       "kabardian": "зэкӀэлъыпыту"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "зэкӀэлъыпытэу / зэкӀэлъыпыту еплъ &lt;&lt;зэлъыпытэу&gt;&gt; ARDIŞIK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-01644",
@@ -375517,7 +376512,12 @@
       "adyghe": "",
       "kabardian": "зэкӀэрыгъэпщӀэн"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "зэкӀэрыгъэпкӀэн / зэкӀэрыгъэпщӀэн еплъ &lt;&lt;гъэпкӀэн&gt;&gt; YAPIŞTIRMAK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-01648",
@@ -376550,7 +377550,12 @@
       "adyghe": "",
       "kabardian": "зэмалъхъэгъу"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "зэмэлъхъогъу / зэмалъхъэгъу BACANAK (birbinının ~ğı)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-01699",
@@ -376710,7 +377715,12 @@
       "adyghe": "",
       "kabardian": "зэнысэгъу"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "ЗЭНЫСЭГЪУ ELTİ (birbirinin ~si)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-01707",
@@ -376770,7 +377780,12 @@
       "adyghe": "",
       "kabardian": "зэнэсын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "ЗЭНЭСЫН (зэнэсы / зэнос ); ЗЭЛЪЫӀЭСЫН (зэлъэӀэсы / зэлъоӀэс ) KAVUŞMAK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-01710",
@@ -377152,7 +378167,12 @@
       "adyghe": "",
       "kabardian": "зэпрыкӀыпӀэ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "зэпырыкӀыпӀ(э) / зэпрыкӀыпӀэ GEÇİT",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-01729",
@@ -377873,7 +378893,12 @@
       "adyghe": "",
       "kabardian": "зэпыкӀын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "ЗЭПЫКӀЫН AYRILMAK (boşanmak)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-01765",
@@ -378035,7 +379060,12 @@
       "adyghe": "",
       "kabardian": "зэпымыч"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "SERİ",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-01773",
@@ -378095,7 +379125,12 @@
       "adyghe": "",
       "kabardian": "зэпыпхэн"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "ЗЭПЫПХЭН еплъ &lt;&lt;ПХЭН&gt;&gt; BAĞLAMAK (ikisini birbirine uc-uca ~)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-01776",
@@ -378277,7 +379312,12 @@
       "adyghe": "",
       "kabardian": "зэпыщӀэн"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "зэпыщӀэн / зэпышӀэн еплъ &lt;&lt;ПХЭН&gt;&gt; BAĞLAMAK (ikisini birbirine uc-uca ~, ilişkilendirmek)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-01785",
@@ -378760,7 +379800,12 @@
       "adyghe": "",
       "kabardian": "зэпэсын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "ЗЭПЭСЫН I (ЗЭРЕПЭС(ы); угу рихьын / уигу ирихьын (угу рехьы / уигу ирохь ), угу еӀун / уигу еӀун (угу еӀу / уигу йоӀу ), ( Абз. ГУАПХЪЭРЭ) BEĞENMEK II (ЗЭРЕПЭС(ы); ГУКӀЭ штэн / щтэн (~ ештэн / ~ е щтэ",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-01809",
@@ -378801,7 +379846,12 @@
       "adyghe": "",
       "kabardian": "зэпэувын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "зэпэуцун / зэпэувын I еплъ &lt;&lt;ЗЭПЫЩЫТЫН&gt;&gt; ZITLAŞMAK II (зэпэуцу / зэпоув; ЗЭПЭДЫСЫН зэпэдысы / зэподыс ); ЗЭПЭКЪАИГЪЭН (ЗЭПЭКЪАИГЪЭ( щ ); зэпэкӀэуцон / зэпыщӀэувэн (зэпэкӀэуцо / зэпыщӀоувэ(",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-01811",
@@ -378884,7 +379934,12 @@
       "adyghe": "",
       "kabardian": "зэпэщӀэгъэкӀын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "зэпэщӀэгъэкӀын / зэпэкӀэгъэкӀын ELEŞTİRMEK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-01815",
@@ -379145,7 +380200,12 @@
       "adyghe": "",
       "kabardian": "зэрагъэхь"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "ЗЭРАГЪЭХЬ азфагу / я зэхуаку ДЭЛЪЫР FARK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-01828",
@@ -379467,7 +380527,12 @@
       "adyghe": "",
       "kabardian": "зэрихьэлӀэн"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "зэрихьылӀэн / зэрихьэлӀэн еплъ &lt;&lt;зэолӀэн&gt;&gt; RASTLAŞMAK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-01844",
@@ -380167,7 +381232,12 @@
       "adyghe": "",
       "kabardian": "зэрыгъэунэхун"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "зэрэгъэунэфын / зэрыгъэунэхун еплъ &lt;&lt;гъэунэфын&gt;&gt; NİŞANLANMAK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-01879",
@@ -380791,7 +381861,12 @@
       "adyghe": "",
       "kabardian": "зэрыпкӀын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "ЗЭРЫПКӀЫН еплъ &lt;&lt;ИКӀЫН&gt;&gt; ÇIKMAK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-01910",
@@ -380972,7 +382047,12 @@
       "adyghe": "",
       "kabardian": "зэрыукӀын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "зэрэукӀын / зэрыукӀын (зэрэукӀы / зэроукӀ ); зэрэукӀ зао шӀын, зэрыукӀ зауэ щӀын , псэгъэху зауэ щӀын (~ ешӀы / ~ ещӀ ); кӀэкӀо кӀапэ зэдытеуцон / щӀакӀуэ кӀапэ зэдытеувэн (~ зэдытеуцо / ~ зэдытоувэ )",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-01919",
@@ -381092,7 +382172,12 @@
       "adyghe": "",
       "kabardian": "зэрыфыщӀын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "зэрыфыщӀын еплъ &lt;&lt;зэбжъэнтӀын&gt;&gt; BOĞUŞMAK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-01925",
@@ -381374,7 +382459,12 @@
       "adyghe": "",
       "kabardian": "зэрыцӀыхун"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "зэрыцӀыхун еплъ &lt;&lt;зэрэшӀэн&gt;&gt; TANIŞMAK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-01939",
@@ -381435,7 +382525,12 @@
       "adyghe": "",
       "kabardian": "зэрыщӀэн"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "зэрэшӀэн / зэрыщӀэн (зэрэшӀэ(х) / зэрощӀэ(хэ ); НЭӀУАСЭ зэфэхъун / зэхуэхъун (~ зэфэхъу(х) / зэхуохъу(хэ ); зэнэӀосэн / зэнэӀуасэн (зэнэӀуасэ(х) / зонэӀуасэ(хэ ); зэрыцӀыхун ( зэроцӀыху(хэ ) TANIŞMAK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-01942",
@@ -381635,7 +382730,12 @@
       "adyghe": "",
       "kabardian": "зэтӀолъхуэныкъуэгъу"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "зэтӀолъхуэныкъуэгъу / зэтӀолфэныкъу(эгъу) зэтӀуазэ İKİZ (birbirinin ~i)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-01952",
@@ -381735,7 +382835,12 @@
       "adyghe": "",
       "kabardian": "зэтегъуэн"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "зэтегъуэн / зэтегъон еплъ &lt;&lt;шъуагъо ХЪУН&gt;&gt; ZAYIFLAMAK (kurumak)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-01957",
@@ -381935,7 +383040,12 @@
       "adyghe": "",
       "kabardian": "зэтедиен"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "зэтедыен / зэтедиен I еплъ &lt;&lt;къын&gt;&gt; AFALLAMAK (donup kalmak) II еплъ &lt;&lt;КЪЫН&gt;&gt; DONUP KALMAK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-01967",
@@ -382279,7 +383389,12 @@
       "adyghe": "",
       "kabardian": "зэтеувыӀэн"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "зэтеуцон / зэтеувыӀэн (зэтеуцо / зэтоувыӀэ ); къызэтеуцон / къызэтеувыӀэн (къызэтеуцо / къызэтоувыӀэ ) DURAKLAMAK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-01984",
@@ -383067,7 +384182,12 @@
       "adyghe": "",
       "kabardian": "зэфӀэгъэнэн"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "зэшӀогъэнэн / зэфӀэгъэнэн еплъ &lt;&lt;зэхэгъэкӀухьан&gt;&gt; DALLANDIRMAK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-02023",
@@ -383268,7 +384388,12 @@
       "adyghe": "",
       "kabardian": "зэфӀэкӀуэдын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "зэшӀокӀодын / зэфӀэкӀуэдын (зэшӀо­кӀоды / зэфӀокӀуэд ); зэфэӀаен / зэщы­Ӏеин (зэфэӀае(х) / зэщоӀей(хэ ) BOZUŞMAK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-02033",
@@ -383749,7 +384874,12 @@
       "adyghe": "",
       "kabardian": "игъэжыхьын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "игъэчъыхьэн / игъэжыхьын ÇALKALAMAK 2 (içini ~)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-02057",
@@ -383789,7 +384919,12 @@
       "adyghe": "",
       "kabardian": "игъэкӀыжын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "игъэкӀыжьын / игъэкӀыжын еплъ &lt;&lt;щынэ­жын&gt;&gt; BOŞAMAK (erkeğin karısını ~)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-02059",
@@ -383889,7 +385024,12 @@
       "adyghe": "",
       "kabardian": "идзыжын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "идзыжын / идзыжьын еплъ &lt;&lt;дзыжьын&gt;&gt; ATMAK (kuru bir şeyi tekrar öteye / dışarıya ~)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-02064",
@@ -384050,7 +385190,12 @@
       "adyghe": "",
       "kabardian": "икӀуэдыкӀын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "икӀуэдыкӀын / икӀодыкӀын YİTMEK (bir şeyin içinde yitip gitmek)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-02072",
@@ -384090,7 +385235,12 @@
       "adyghe": "",
       "kabardian": "икӀуэтыжын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "икӀуэтыжын / икӀотыжьын икӀотын / икӀуэтын GERİ ÇEKİLMEK; (tekrar öteye ~)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-02074",
@@ -384170,7 +385320,12 @@
       "adyghe": "",
       "kabardian": "икӀыкӀын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "ищӀыкӀын / икӀыкӀын I DEVRİLMEK (yıkılmak) II еплъ &lt;&lt;гъэушъорэкӀын&gt;&gt; DEVİRMEK (ağacı ~)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-02078",
@@ -384813,7 +385968,12 @@
       "adyghe": "",
       "kabardian": "иткӀуэн"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "иткӀуэн еплъ &lt;&lt;иткӀон&gt;&gt; DAMLAMAK (içine ~)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-02110",
@@ -385073,7 +386233,12 @@
       "adyghe": "",
       "kabardian": "ищӀыкӀын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "ищӀыкӀын / икӀыкӀын I DEVRİLMEK (yıkılmak) II еплъ &lt;&lt;гъэушъорэкӀын&gt;&gt; DEVİRMEK (ağacı ~)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-02123",
@@ -385093,7 +386258,12 @@
       "adyghe": "",
       "kabardian": "кӀаблэ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "кӀаблэ кӀэблэ / щӀэблэ , лӀэуж / лӀэужь KUŞAK 1",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-02124",
@@ -385214,7 +386384,12 @@
       "adyghe": "",
       "kabardian": "кӀарц"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "КӀАРЦ АКАЦЭ, АКАЦИЯ AKASYA",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-02130",
@@ -385638,7 +386813,12 @@
       "adyghe": "",
       "kabardian": "кӀуэдыпӀэ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "кӀуэдыпӀэ / кӀодыпӀэ KAYBOLMA YERİ",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-02151",
@@ -385780,7 +386960,12 @@
       "adyghe": "",
       "kabardian": "кӀуэсэн"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "кӀуэсэн дэкӀуэсэн еплъ &lt;&lt;ДИКӀЫН&gt;&gt; KAÇMAK (kocaya ~)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-02158",
@@ -386282,7 +387467,12 @@
       "adyghe": "",
       "kabardian": "кӀын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "КӀЫН (МЭКӀ(ы); КЪЭКӀЫН (къэкӀы / къокӀ ) UZAMAK, BİTMEK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-02183",
@@ -386322,7 +387512,12 @@
       "adyghe": "",
       "kabardian": "кӀыр"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "кӀыры / кӀыр UZUN (~ saç / ekin)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-02185",
@@ -386382,7 +387577,12 @@
       "adyghe": "",
       "kabardian": "кӀыргъын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "КӀЫРГЪЫН щкъыщкъын GICIRDAMAK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-02188",
@@ -386462,7 +387662,12 @@
       "adyghe": "",
       "kabardian": "кӀыхьлӀыхьу"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "кӀыхьэлыхьэу / кӀыхьлӀыхьу еплъ &lt;&lt;игъэкӀотыгъэу&gt;&gt; UZUN UZADIYA",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-02192",
@@ -386502,7 +387707,12 @@
       "adyghe": "",
       "kabardian": "кӀыщ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "КӀЫЩ I ӀофшӀэщ / ӀуэхущӀэщ İŞLETME II ATÖLYE",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-02194",
@@ -386522,7 +387732,12 @@
       "adyghe": "",
       "kabardian": "кӀыщтэн"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "кӀыщтэн еплъ &lt;&lt;псынкӀэн&gt;&gt; SAVURMAK (harman / tınaz ~)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-02195",
@@ -386542,7 +387757,12 @@
       "adyghe": "",
       "kabardian": "кӀэӀупхъуэ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "кӀэӀухъу / кӀэӀупхъуэ I КӀЭПХЫН(э) ÖNLÜK 1 II КӀЭПХЫН ETEK 1",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-02196",
@@ -387308,7 +388528,12 @@
       "adyghe": "",
       "kabardian": "кӀэлъысын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "КӀЭЛЪЫСЫН еплъ &lt;&lt;НЭСЫН&gt;&gt; ULAŞMAK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-02234",
@@ -387791,7 +389016,12 @@
       "adyghe": "",
       "kabardian": "кӀэрыкӀын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "КӀЭРЫКӀЫН I еплъ &lt;&lt;ПЫКӀЫН&gt;&gt; VAZGEÇMEK II еплъ &lt;&lt;тӀупщын&gt;&gt; BIRAKMAK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-02258",
@@ -388194,7 +389424,12 @@
       "adyghe": "",
       "kabardian": "кӀэфий"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "СЫРЫН(Э) / кӀэфий еплъ &lt;&lt;АДЫГЭ пщынхэр&gt;&gt; ZURNA, DÜDÜK, (SIRIN(E)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-02278",
@@ -388817,7 +390052,12 @@
       "adyghe": "",
       "kabardian": "кхъаблэ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "пхъаблэ / кхъаблэ SEDYE",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-02309",
@@ -389218,7 +390458,12 @@
       "adyghe": "",
       "kabardian": "къакъий"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "КЪАКЪИЙ КЪАКӀИЙ еплъ &lt;&lt;джэнчхъу­рай&gt;&gt; NOHUT",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-02329",
@@ -389418,7 +390663,12 @@
       "adyghe": "",
       "kabardian": "къандес"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "къандис / къандес LADES",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-02339",
@@ -389479,7 +390729,12 @@
       "adyghe": "",
       "kabardian": "къанцӀу"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "къанцӀу / КЪАМЫЛ KAVAL",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-02342",
@@ -389781,7 +391036,12 @@
       "adyghe": "",
       "kabardian": "къеӀэн"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "КЪЕӀЭН ( къеӀагъ / къеӀащ : elledi; къеӀэ / къоӀэ : elliyor) ELLEMEK (el atmak, yüklenmek)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-02357",
@@ -390382,7 +391642,12 @@
       "adyghe": "",
       "kabardian": "къегъэгъуэтын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "къегъэгъуэтын / къегъэгъотын BULDURMAK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-02387",
@@ -390423,7 +391688,12 @@
       "adyghe": "",
       "kabardian": "къегъэгъэзэн"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "КЪЕГЪЭГЪЭЗЭН еплъ &lt;&lt;ЕГЪЭГЪЭЗЭН&gt;&gt; DÖNDÜRMEK (beriye çevirmek)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-02389",
@@ -390604,7 +391874,12 @@
       "adyghe": "",
       "kabardian": "къегъэзэгъын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "КЪЕГЪЭЗЭГЪЫН I еплъ &lt;&lt;ЕГЪЭДЭН&gt;&gt; İKNA ETMEK II еплъ &lt;&lt;ЕГЪЭДЭН&gt;&gt; RAZI ETMEK III еплъ &lt;&lt;КЪЫТЕГЪЭ­ХЬЭН&gt;&gt; TAVLAMAK 2 (kız ~)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-02398",
@@ -390945,7 +392220,12 @@
       "adyghe": "",
       "kabardian": "къегъэубыдын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "къегъэубыдын къегъэубытын еплъ &lt;&lt;егъэубытын&gt;&gt; YAKALATMAK (birini birine ~)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-02415",
@@ -391005,7 +392285,12 @@
       "adyghe": "",
       "kabardian": "къегъэуэн"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "къегъэуэн / къегъэон еплъ &lt;&lt;егъэо&gt;&gt; ÇALDIRMAK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-02418",
@@ -391065,7 +392350,12 @@
       "adyghe": "",
       "kabardian": "къегъэхуэхын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "къегъэхуэхын еплъ &lt;&lt;къегъэфэхын&gt;&gt; DÜŞÜRMEK (aşağıya beriye ~)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-02421",
@@ -391527,7 +392817,12 @@
       "adyghe": "",
       "kabardian": "къезэвэкӀын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "къезэжъокӀын / къезэвэкӀын еплъ &lt;&lt;ЕБГЪУЗЭКӀЫН&gt;&gt; DARALMAK (ensiz gelmek)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-02444",
@@ -393274,7 +394569,12 @@
       "adyghe": "",
       "kabardian": "къешэхын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "къещэхын / къешэхын еплъ &lt;&lt;ещехын&gt;&gt; İNDİRMEK (çekerek / eğerek beriye ~)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-02531",
@@ -393895,7 +395195,12 @@
       "adyghe": "",
       "kabardian": "къиун"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "КЪИУН еплъ &lt;&lt;зыунэкӀын&gt;&gt; BOŞALMAK (patlayarak ~)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-02562",
@@ -394137,7 +395442,12 @@
       "adyghe": "",
       "kabardian": "къичыжын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "къичыжьын / къичыжын еплъ &lt;&lt;къэтӀыжьын&gt;&gt; SÖKMEK 2 (bostan ~)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-02574",
@@ -394377,7 +395687,12 @@
       "adyghe": "",
       "kabardian": "къуажэгъу"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "къуажэгъу / къоджэгъу зэ~ HEMŞERİ (köydeş)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-02586",
@@ -394560,7 +395875,12 @@
       "adyghe": "",
       "kabardian": "къуапцӀэ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "КЪУАПЦӀЭ I цӀыфшӀуцӀ, цӀыху фӀыцӀэ , НЕГР ZENCİ II шӀуцӀашъо / фӀыцӀафэ ESMER",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-02595",
@@ -394680,7 +396000,12 @@
       "adyghe": "",
       "kabardian": "къудан"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "къудан / кълдан еплъ &lt;&lt;БЛАНЭ&gt;&gt; BABAYİĞİT",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-02601",
@@ -394920,7 +396245,12 @@
       "adyghe": "",
       "kabardian": "къурӀэн"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "КЪУРӀАН / КЪУРӀЭН KUR’AN",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-02613",
@@ -395043,7 +396373,12 @@
       "adyghe": "",
       "kabardian": "къурмакъей"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "къурмакъый / къурмакъей къурбэкъэй, чий / джий GIRTLAK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-02619",
@@ -395283,7 +396618,12 @@
       "adyghe": "",
       "kabardian": "къуэкӀий"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "къуэкӀий / къокӀий къой-чӀай, тӀуакӀ(э) / тӀуащӀэ , ХЪУАТ(Э), къуэ VADİ",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-02631",
@@ -395364,7 +396704,12 @@
       "adyghe": "",
       "kabardian": "къуэтын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "къуэтэгъу хуэхъун / къотэгъу, фэхъун / къотын / къуэтын KAYIRMAK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-02635",
@@ -395564,7 +396909,12 @@
       "adyghe": "",
       "kabardian": "къыӀукӀыжын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "къыӀукӀыжьынн / къыӀукӀыжын (къыӀокӀыжьы / къыӀокӀыж) ÇEKİLMEK (çekilip geri gelmek)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-02645",
@@ -397489,7 +398839,12 @@
       "adyghe": "",
       "kabardian": "къыжьэдэӀэн"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "къыжэдэӀэн / къыжьэдэӀэн (къыжэ­дэӀэ / къыжьэдэоӀэ ); къыжьэдэ­къуэн ( къыжьэдекъуэ ), Ӏэжэн / Ӏэжьэн (еӀэжэ / еӀэжьэ ), гъэӀэжэн / гъэӀэжьэн (егъэӀэжэ / егъэӀэжьэ ) DİZGİNLEMEK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-02741",
@@ -398153,7 +399508,12 @@
       "adyghe": "",
       "kabardian": "къызэӀыхьэн"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "къызэӀэхьан / къызэӀыхьэн FENALAŞ­MAK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-02774",
@@ -398495,7 +399855,12 @@
       "adyghe": "",
       "kabardian": "къызэдэфэн"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "къызэдэшъон / къызэдэфэн еплъ &lt;&lt;ЗЭДЭ­ДЖЭГУН&gt;&gt; OYNAMAK (birlıkte ~)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-02791",
@@ -399339,7 +400704,12 @@
       "adyghe": "",
       "kabardian": "къызэтегъэувыӀэн"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "къызэтегъэуцон / къызэтегъэувыӀэн DURAKLATMAK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-02833",
@@ -399380,7 +400750,12 @@
       "adyghe": "",
       "kabardian": "къызэтеувыӀэн"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "къызэтеуцон / къызэтеувыӀэн I еплъ &lt;&lt;зэтеуцон&gt;&gt; DURAKLAMAK II (къызэтеуцуагъ / къызэтеувыӀащ : giderken durakladı; къызэтеуцо / къы­зэтоувыӀэ : giderken duraklıyor) DURMAK 3 (giderken dura",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-02835",
@@ -399440,7 +400815,12 @@
       "adyghe": "",
       "kabardian": "къызэфӀэтӀысхьэн"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "къызэфӀэтӀысхьэн / къызэшӀотӀысхьан DOĞRULMAK (doğrulup oturmak)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-02838",
@@ -399481,7 +400861,12 @@
       "adyghe": "",
       "kabardian": "къызэфӀэувэн"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "къызэшӀоуцон / къызэфӀэувэн DOĞRULMAK (doğrulup ayağa kalkmak)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-02840",
@@ -399724,7 +401109,12 @@
       "adyghe": "",
       "kabardian": "къызэщӀэблэн"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "къызэщӀэблэн / къызэкӀэблэн еплъ &lt;&lt;КЪЭПЛЪЫН&gt;&gt; HİDDETLENMEK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-02852",
@@ -400007,7 +401397,12 @@
       "adyghe": "",
       "kabardian": "къызэщӀэтэджэн"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "къызэщӀэтэджэн / къызэкӀэтэджэн еплъ &lt;&lt;ЗЫКЪЭӀЭТЫН&gt;&gt; AYAKLANMAK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-02866",
@@ -400027,7 +401422,12 @@
       "adyghe": "",
       "kabardian": "къызэщӀэубыдэн"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "къызэщӀэубыдэн / къызэкӀэубытэн İÇERMEK (bir şeyi ~)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-02867",
@@ -401675,7 +403075,12 @@
       "adyghe": "",
       "kabardian": "къыркъ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "КЪЫРКЪ гырз / гыз, СЫС SARSINTI",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-02949",
@@ -401795,7 +403200,12 @@
       "adyghe": "",
       "kabardian": "къытевэн"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "къытежъон / къытевэн еплъ &lt;&lt;жъон&gt;&gt; HAŞLANMAK 1 KAYNAMAK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-02955",
@@ -401875,7 +403285,12 @@
       "adyghe": "",
       "kabardian": "къытегъэзэн"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "КЪЫТЕГЪЭЗЭН еплъ &lt;&lt;ТЕГЪЭЗЭН&gt;&gt; TEKRARLAMAK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-02959",
@@ -404219,7 +405634,12 @@
       "adyghe": "",
       "kabardian": "къыщӀэдзын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "къыщӀэдзын / къычӀэдзын ATMAK (kuru bir şeyi, alttan, aşağıdan, konuşana doğru beriye ~)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-03076",
@@ -404439,7 +405859,12 @@
       "adyghe": "",
       "kabardian": "къыщӀэлэлын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "къыщӀэлэлын / къыкӀэлэлын еплъ &lt;&lt;кӀэлэлын&gt;&gt; SARKMAK; (alttan aşağı / beriye~)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-03087",
@@ -405300,7 +406725,12 @@
       "adyghe": "",
       "kabardian": "къэӀэтыжын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "къэӀэтыжьын / къэӀэтыжын KALDIRMAK (düşeni geri ~)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-03130",
@@ -405480,7 +406910,12 @@
       "adyghe": "",
       "kabardian": "къэгумэхэн"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "къэгумэхэн / къэгумахэн (къэгумахэ / къогумахэ ) DUYGULANMAK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-03139",
@@ -405701,7 +407136,12 @@
       "adyghe": "",
       "kabardian": "къэгъэнэхун"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "къэгъэнэхун / къэгъэнэфын еплъ &lt;&lt;гъэнэфын&gt;&gt; AYDINLATMAK 1",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-03150",
@@ -405761,7 +407201,12 @@
       "adyghe": "",
       "kabardian": "къэгъэпсынщӀэн"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "къэгъэпсынщӀэн / къэгъэпсынкӀэн еплъ &lt;&lt;гъэпсынкӀэн&gt;&gt; CANLANDIRMAK 4",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-03153",
@@ -405861,7 +407306,12 @@
       "adyghe": "",
       "kabardian": "къэгъэущын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "къэгъэущын / къэгъэушын I (къегъэ­ущы / къегъэуш ); UYANDIRMAK II AYDINLATMAK 2 (uyandırmak)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-03158",
@@ -406142,7 +407592,12 @@
       "adyghe": "",
       "kabardian": "къэетэжын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "къэетэжьын / къэетэжын (къэетэжьы / къоетэж ); къэхъыежьын / къэхъеижын (къэхъыежьы / къохъеиж ) DEPREŞMEK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-03172",
@@ -406202,7 +407657,12 @@
       "adyghe": "",
       "kabardian": "къэжын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "къэжьын / къэжын еплъ &lt;&lt;жын&gt;&gt; KUSMAK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-03175",
@@ -406222,7 +407682,12 @@
       "adyghe": "",
       "kabardian": "къэжыхь"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "къэчъыхь / къэжыхь еплъ &lt;&lt;АДЫГЭ къашъохэр&gt;&gt; KOŞUŞTURMA OYUNU, (KHEJIH)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-03176",
@@ -406442,7 +407907,12 @@
       "adyghe": "",
       "kabardian": "къэкъутэн"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "КЪЭКЪУТЭН еплъ &lt;&lt;зэщыкъон&gt;&gt; ARIZALANMAK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-03187",
@@ -406542,7 +408012,12 @@
       "adyghe": "",
       "kabardian": "къэлъыхъун"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "КЪЭЛЪЫХЪУН I еплъ &lt;&lt;лъыхъон&gt;&gt; ARAMAK (bir şeyi ~) II еплъ &lt;&lt;КЪЭТӀЭСЫН&gt;&gt; ARAŞTIRMAK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-03192",
@@ -406884,7 +408359,12 @@
       "adyghe": "",
       "kabardian": "къэнэжын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "къэнэжьын / къэнэжын еплъ &lt;&lt;къаӀапыкӀын&gt;&gt; KURTULMAK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-03209",
@@ -406904,7 +408384,12 @@
       "adyghe": "",
       "kabardian": "къэнэхуэн"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "къэнэхуэн / къэнэфэн AYDINLANMAK 1",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-03210",
@@ -407107,7 +408592,12 @@
       "adyghe": "",
       "kabardian": "къэпцӀэн"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "КЪЭПЦӀЭН I еплъ &lt;&lt;ПЦӀЭН&gt;&gt; ALDANMAK II ПЦӀЭН KANMAK I(aldanmak)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-03220",
@@ -407352,7 +408842,12 @@
       "adyghe": "",
       "kabardian": "къэтӀысын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "КЪЭТӀЫСЫН I (къэтӀысы / къотӀыс ) OTURMAK (yatar veya ayakta iken beriye doğru ~) II еплъ &lt;&lt;ТӀЫСЫН&gt;&gt; OTURMAK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-03232",
@@ -407674,7 +409169,12 @@
       "adyghe": "",
       "kabardian": "къэукъубиин"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "ГУР къыдэоен / къэукъубиин еплъ &lt;&lt;ГУ­ЛЫДЖЫН&gt;&gt; COŞMAK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-03248",
@@ -407775,7 +409275,12 @@
       "adyghe": "",
       "kabardian": "къэунэщӀын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "къэунэщӀын / къэунэкӀын I еплъ &lt;&lt;зыунэкӀын&gt;&gt; BOŞALMAK II еплъ &lt;&lt;унэкӀын&gt;&gt; BOŞALTMAK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-03253",
@@ -407836,7 +409341,12 @@
       "adyghe": "",
       "kabardian": "къэухьын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "къэухьэн / къэухьын (КЪЕУХЬ(э), къыдэухьэн / къыдэухьын (КЪЫДЕ­УХЬ(э) DOLAŞMAK (çevresini ~)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-03256",
@@ -407916,7 +409426,12 @@
       "adyghe": "",
       "kabardian": "къэущын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "къэущын / къэушын I (къэущы / къоуш ) UYANMAK II AYDINLANMAK 2 (uyanmak)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-03260",
@@ -408219,7 +409734,12 @@
       "adyghe": "",
       "kabardian": "къэцӀуун"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "къэцӀыун / къэ цӀуун къэжъыун, къэшӀэтын еплъ &lt;&lt;ЛЫДЫН&gt;&gt; PARLAMAK (ışıldamak)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-03275",
@@ -408340,7 +409860,12 @@
       "adyghe": "",
       "kabardian": "къэщӀыхьын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "къэщӀыхьын / къэшӀыхьан еплъ &lt;&lt;шӀыхьан&gt;&gt; ÖRMEK (çit ~)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-03281",
@@ -408360,7 +409885,12 @@
       "adyghe": "",
       "kabardian": "къэщӀэжын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "къэщӀэжын еплъ &lt;&lt;къэкӀэжьын&gt;&gt; TAZELENMEK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-03282",
@@ -408541,7 +410071,12 @@
       "adyghe": "",
       "kabardian": "лӀакъуэ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "лӀакъуэ / лӀакъо I ЛЪЭПКЪ SOY, BOY 1 II ЛЪЭПКЪ, унагъо / унагъуэ SOY",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-03291",
@@ -408621,7 +410156,12 @@
       "adyghe": "",
       "kabardian": "лӀакъуэцӀэ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "лӀэкъуацӀэ / лӀакъуэцӀэ унэгъуацӀэ / унэгъуэцӀэ , унацӀэ / унэцӀэ SOYADI",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-03295",
@@ -408642,7 +410182,12 @@
       "adyghe": "",
       "kabardian": "лӀапӀэ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "ЛӀАПӀЭ ÖLÜM YERİ, ~ ZAMANI",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-03296",
@@ -408734,7 +410279,12 @@
     "isLemma": false,
     "subConceptId": "COWARDICE",
     "taxonomyFamily": "İnsan & Nitelik",
-    "rootForm": "лӀы-"
+    "rootForm": "лӀы-",
+    "translations": {
+      "tr": "лӀыгъэнчъ(э) / лӀыгъэншэ I KALLEŞ II İHTİYAR (adam)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-03300",
@@ -408780,7 +410330,12 @@
     "isLemma": false,
     "subConceptId": "MARRY",
     "taxonomyFamily": "Aile & Akrabalık",
-    "rootForm": "лӀы-"
+    "rootForm": "лӀы-",
+    "translations": {
+      "tr": "ЛӀЫН I еплъ &lt;&lt;УКӀЫН&gt;&gt; ÖLDÜRMEK (boğarak~; süserek ~; dürterek ~) II еплъ &lt;&lt;тхьалэн&gt;&gt; BOĞMAK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-03302",
@@ -408826,7 +410381,12 @@
     "isLemma": false,
     "subConceptId": "MANHOOD_AGE",
     "taxonomyFamily": "İnsan & Yaşam",
-    "rootForm": "лӀы-"
+    "rootForm": "лӀы-",
+    "translations": {
+      "tr": "ЛӀЫНЫБЖЬ I лӀэшӀэгъу / лӀэщӀэгъу , лӀэщӀыгъуэ YÜZYIL II лӀэшӀэгъу / лӀэщӀыгъуэ ASIR, YÜZYIL (adam ömrü)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-03304",
@@ -409146,7 +410706,12 @@
       "adyghe": "",
       "kabardian": "лӀэужь"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "лӀэужь / лӀэуж I кӀаблэ KUŞAK 1 II IRK, GEN",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-03318",
@@ -409187,7 +410752,12 @@
       "adyghe": "",
       "kabardian": "лагъэ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "тепщэч / лагъэ апс KAP, TABAK, ÇANAK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-03320",
@@ -409407,7 +410977,12 @@
       "adyghe": "",
       "kabardian": "лом"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "LEVYE",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-03331",
@@ -409983,7 +411558,12 @@
     "isLemma": false,
     "subConceptId": "HEIGHT_LOW",
     "taxonomyFamily": "Nitelik & Doğa",
-    "rootForm": "лъ-"
+    "rootForm": "лъ-",
+    "translations": {
+      "tr": "лъхъонч / лъахъш ( Абз. ЛЪАХЪША) ÇENGEL 4 (baca ~ı)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-03356",
@@ -410376,7 +411956,12 @@
     "isLemma": false,
     "subConceptId": "BLOOD_REVENGE",
     "taxonomyFamily": "Toplum & Hukuk",
-    "rootForm": "лъ-"
+    "rootForm": "лъ-",
+    "translations": {
+      "tr": "лъыщӀэж / лъышӀэжь гужъ ÖÇ, İNTİKAM",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-03373",
@@ -411261,7 +412846,12 @@
       "adyghe": "",
       "kabardian": "лъэрыхь"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "ЛЪЭРЫХЬ зэшӀокӀ / зэфӀэкӀ ЗИӀ(Э), лъэшы / лъэщ DİRAYETLİ",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-03417",
@@ -411642,7 +413232,12 @@
       "adyghe": "",
       "kabardian": "лъэщӀыхьэн"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "лъэщӀыхьэн / лъэкӀахьын / кӀэхьан еплъ &lt;&lt;НЭСЫН&gt;&gt; ULAŞMAK, YETİŞMEK (arkadan gidip ~)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-03436",
@@ -413448,7 +415043,12 @@
       "adyghe": "",
       "kabardian": "муслъымэныгъэ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "быслъымэныгъ(э) / муслъымэныгъэ еплъ &lt;&lt;ИСЛЪАМ&gt;&gt; İSLAMİYET",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-03525",
@@ -413488,7 +415088,12 @@
       "adyghe": "",
       "kabardian": "мывэдз"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "мывэдз мывэдз Ӏэдэ / мыжъодзӀад, ПРАЩА SAPAN",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-03527",
@@ -413548,7 +415153,12 @@
       "adyghe": "",
       "kabardian": "мывэупцӀэ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "мывэупцӀэ / мыжъолъ / ДЭДЗЭН еплъ &lt;&lt;ЛЪЫН&gt;&gt; BİLEMEK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-03530",
@@ -413769,7 +415379,12 @@
       "adyghe": "",
       "kabardian": "мызагъэу"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "DURMADAN",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-03541",
@@ -413929,7 +415544,12 @@
       "adyghe": "",
       "kabardian": "мылъхупхъу"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "мылъхупхъу / мылъфыпхъу EVLATLIK (kız ~)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-03549",
@@ -414089,7 +415709,12 @@
       "adyghe": "",
       "kabardian": "мыукӀытэ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "МЫУКӀЫТЭ еплъ &lt;&lt;шӀыкӀай&gt;&gt; DENSİZ (utanmaz)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-03557",
@@ -414269,7 +415894,12 @@
       "adyghe": "",
       "kabardian": "мэжэлӀэн"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "мэлэкӀэн / мэжэлӀэн (мэмэлакӀэ / мэмэжалӀэ ), мэлакӀэ лӀэн (мэлакӀэ малӀэ) ACIKMAK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-03566",
@@ -414728,7 +416358,12 @@
       "adyghe": "",
       "kabardian": "мэракӀуапцӀэ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "(eastern) мэракӀуапцӀэ еплъ &lt;&lt;цумпэ&gt;&gt; ÇİLEK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-03587",
@@ -414788,7 +416423,12 @@
       "adyghe": "",
       "kabardian": "мэрэмэжьей"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "мэрэмэжьей еплъ &lt;&lt;АДЫГЭ щхынхэр&gt;&gt; DURU BOZA ( MEREMEJJÉY)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-03590",
@@ -414989,7 +416629,12 @@
       "adyghe": "",
       "kabardian": "надэ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "нэд / надэ EVİNSİZ (dane dolgun değil)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-03600",
@@ -415975,7 +417620,12 @@
       "adyghe": "",
       "kabardian": "ныбэиз"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "НЫБЭИЗ зызгъэнщӀа TOK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-03649",
@@ -415995,7 +417645,12 @@
       "adyghe": "",
       "kabardian": "ныбэпх"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "НЫБЭПХ KAYIŞ (eyer ~ı; kolan)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-03650",
@@ -416216,7 +417871,12 @@
       "adyghe": "",
       "kabardian": "ныкъуэлӀэ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "ныкъуэлӀэ / ныкъуалӀэ YARI ÖLÜ",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-03661",
@@ -416336,7 +417996,12 @@
       "adyghe": "",
       "kabardian": "нысапхъэ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "НЫСАПХЪЭ I еплъ &lt;&lt;гъэунэфыгъэ&gt;&gt; NİŞANLI II GELİNLİK 2 (~ aday)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-03667",
@@ -416468,7 +418133,12 @@
     "isLemma": false,
     "subConceptId": "FRONT",
     "taxonomyFamily": "Yüz & Sima",
-    "rootForm": "нэ-"
+    "rootForm": "нэ-",
+    "translations": {
+      "tr": "НЭӀУ еплъ &lt;&lt;НЭЗ&gt;&gt; KIYI (kenar)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-03673",
@@ -416860,7 +418530,12 @@
     "isLemma": false,
     "subConceptId": "SMILING_FACE",
     "taxonomyFamily": "Yüz & Sima",
-    "rootForm": "нэ-"
+    "rootForm": "нэ-",
+    "translations": {
+      "tr": "нэкӀушъхьэбзыу / нэгуфӀэ GAMZE",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-03690",
@@ -416907,7 +418582,12 @@
     "isLemma": false,
     "subConceptId": "REACH",
     "taxonomyFamily": "Sınır & Mesafe",
-    "rootForm": "нэ-"
+    "rootForm": "нэ-",
+    "translations": {
+      "tr": "нэд / надэ EVİNSİZ (dane dolgun değil)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-03692",
@@ -416953,7 +418633,12 @@
     "isLemma": false,
     "subConceptId": "EYE",
     "taxonomyFamily": "Göz & Görme",
-    "rootForm": "нэ-"
+    "rootForm": "нэ-",
+    "translations": {
+      "tr": "нэжьгъ / нэжгъ ŞAKAK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-03694",
@@ -416976,7 +418661,12 @@
     "isLemma": false,
     "subConceptId": "EYE",
     "taxonomyFamily": "Göz & Görme",
-    "rootForm": "нэ-"
+    "rootForm": "нэ-",
+    "translations": {
+      "tr": "нэжьгъуц / дэбзыкъу FAVORİ 2",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-03695",
@@ -417229,7 +418919,12 @@
     "isLemma": false,
     "subConceptId": "GERMAN_LANG",
     "taxonomyFamily": "Dil & İletişim",
-    "rootForm": "нэ-"
+    "rootForm": "нэ-",
+    "translations": {
+      "tr": "Нэмыцэбзэ / Нэмыцабз(э) ALMANCA",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-03706",
@@ -417850,7 +419545,12 @@
     "isLemma": false,
     "subConceptId": "COMPARISON",
     "taxonomyFamily": "Karşılaştırma",
-    "rootForm": "нэ-"
+    "rootForm": "нэ-",
+    "translations": {
+      "tr": "нэхъуеиншагъэ / нэхъоинчъагъ(э) еплъ &lt;&lt;шэныджагъ(э)&gt;&gt; AHLAKSIZLIK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-03733",
@@ -417874,7 +419574,12 @@
     "isLemma": false,
     "subConceptId": "COMPARISON",
     "taxonomyFamily": "Karşılaştırma",
-    "rootForm": "нэ-"
+    "rootForm": "нэ-",
+    "translations": {
+      "tr": "нэхъуей / нэхъой I еплъ &lt;&lt;НЭМЫС&gt;&gt; İFFET, NAMUS II НАПЭ AHLAK (namus, onur)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-03734",
@@ -417897,7 +419602,12 @@
     "isLemma": false,
     "subConceptId": "COMPARISON",
     "taxonomyFamily": "Karşılaştırma",
-    "rootForm": "нэ-"
+    "rootForm": "нэ-",
+    "translations": {
+      "tr": "нэхъыбапӀэ / нахьыбапӀ(э) ÇOĞUNLUK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-03735",
@@ -418150,7 +419860,12 @@
     "isLemma": false,
     "subConceptId": "",
     "taxonomyFamily": "",
-    "rootForm": "нэ-"
+    "rootForm": "нэ-",
+    "translations": {
+      "tr": "нэщӀэпкӀэ цӀыгъибж, цӀыргъ, хьамлашкӀу SALYANGOZ, SÜMÜKLÜBÖCEK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-03746",
@@ -418733,7 +420448,12 @@
       "adyghe": "",
       "kabardian": "пӀэскӀуэн"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "пӀэскӀуэн еплъ &lt;&lt;пӀэскӀон&gt;&gt; ÇİMDİKLEMEK (~ işini yapmak)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-03774",
@@ -418853,7 +420573,12 @@
       "adyghe": "",
       "kabardian": "пӀэщӀэгъуэкӀэ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "пӀэщӀэгъуэкӀэ I еплъ &lt;&lt;гузэжъогъукӀэ&gt;&gt; ACELE (~ ile; ~ olarak) II еплъ &lt;&lt;гузэжъогъоу&gt;&gt; ACELE (~ile; ~olarak)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-03780",
@@ -418997,7 +420722,12 @@
       "adyghe": "",
       "kabardian": "пакӀэ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "пакӀэ / пащӀэ ( Абз . ПАЦӀЭ) BIYIK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-03787",
@@ -419037,7 +420767,12 @@
       "adyghe": "",
       "kabardian": "палъэ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "ПАЛЪЭ I лӀыкӀо / лӀыкӀуэ VEKİL II ХЭДАПКЪЭ, пэныкъокъу / пэныкъуэкъу , пэуцу / пэув , пэшӀуекӀо / пэфӀекӀуэ , Ӏэшъхьэтет­ПАЛЪЭ / Ӏэщхьэтет ПАЛЪЭ, ПРОТИВОДЕЙСТВИЕ, СОПРОТИВЛЕНИЕ MUHALEFET",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-03789",
@@ -419058,7 +420793,12 @@
       "adyghe": "",
       "kabardian": "папщӀэ(кӀэ)"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "папщӀэ еплъ &lt;&lt;пае&gt;&gt; İÇİN",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-03790",
@@ -419098,7 +420838,12 @@
       "adyghe": "",
       "kabardian": "папыщ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "ПАПЫЩ еплъ &lt;&lt;УНЭцуакъ&gt;&gt; TERLİK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-03792",
@@ -419359,7 +421104,12 @@
       "adyghe": "",
       "kabardian": "пегъэхын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "ПЕГЪЭХЫН (пырегъэхы / прегъэх ) KESTİRMEK (ucundan testere ile ~)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-03805",
@@ -420120,7 +421870,12 @@
       "adyghe": "",
       "kabardian": "плӀэӀу"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "ПЛӀЭӀУ тэмашъхь / дамащхьэ OMUZ",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-03843",
@@ -420220,7 +421975,12 @@
       "adyghe": "",
       "kabardian": "плъакӀуэ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "плъакӀуэ / плъакӀо ПЛЪЫР GÖZCÜ",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-03848",
@@ -420264,7 +422024,12 @@
       "adyghe": "",
       "kabardian": "плъыгъэ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "плъыгъэ къэплъыгъ / къэплъа KIZGIN",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-03850",
@@ -420653,7 +422418,12 @@
       "adyghe": "",
       "kabardian": "псыӀу"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "ПСЫӀУ ПСЫӀУшъу / ПСЫӀУ фэ еплъ &lt;&lt;Ӏушъо&gt;&gt; SAHİL",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-03869",
@@ -420773,7 +422543,12 @@
       "adyghe": "",
       "kabardian": "псыгъуагъ(э)"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "NEZAKET",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-03875",
@@ -420873,7 +422648,12 @@
       "adyghe": "",
       "kabardian": "псын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "ПСЫН (МЭПС(ы) IŞIMAK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-03880",
@@ -420934,7 +422714,12 @@
       "adyghe": "",
       "kabardian": "псынщӀэн"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "псынщӀэн / псынкӀэн еплъ &lt;&lt;хъыен&gt;&gt; CANLANMAK 1",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-03883",
@@ -421054,7 +422839,12 @@
       "adyghe": "",
       "kabardian": "псыфэ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "псышъо / псыфэ зечъ(э) / зежэ, зечъал(э) / зежэрилэ SIVI",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-03889",
@@ -421299,7 +423089,12 @@
     "isLemma": false,
     "subConceptId": "CHEERFUL",
     "taxonomyFamily": "Ruh & Can",
-    "rootForm": "псэ"
+    "rootForm": "псэ",
+    "translations": {
+      "tr": "ПСЭӀУХ щынагъо / шынагъуэ , гуих / гу их KORKUNÇ",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-03901",
@@ -421346,7 +423141,12 @@
     "isLemma": false,
     "subConceptId": "SIN",
     "taxonomyFamily": "Ruh & Can",
-    "rootForm": "псэ"
+    "rootForm": "псэ",
+    "translations": {
+      "tr": "псэкӀуэд / псэкӀод GÜNAH",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-03903",
@@ -421622,7 +423422,12 @@
     "isLemma": false,
     "subConceptId": "DEVOTED",
     "taxonomyFamily": "Ruh & Can",
-    "rootForm": "псэ"
+    "rootForm": "псэ",
+    "translations": {
+      "tr": "псэхэлӀэ еплъ &lt;&lt;псэхалӀ&gt;&gt; MURDAR, MUNDAR",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-03915",
@@ -421742,7 +423547,12 @@
       "adyghe": "",
       "kabardian": "пхъаблэ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "пхъаблэ / кхъаблэ SEDYE",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-03921",
@@ -421871,7 +423681,12 @@
     "isLemma": false,
     "subConceptId": "SNATCH_GRAB",
     "taxonomyFamily": "Eylem & Fiziksel",
-    "rootForm": "пхъу-"
+    "rootForm": "пхъу-",
+    "translations": {
+      "tr": "пхъуэтэн / пхъотэн KAPMAK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-03927",
@@ -422071,7 +423886,12 @@
       "adyghe": "",
       "kabardian": "пхъэлъантхъуэ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "пхъэлъантхъуэ / пкъэулантхъ еплъ &lt;&lt;шышӀоӀу&gt;&gt; ÇENGEL 2 (at bağlama ~i)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-03937",
@@ -422111,7 +423931,12 @@
       "adyghe": "",
       "kabardian": "пхъэмбей"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "пхъэмбай / пхъэмбей TABUT",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-03939",
@@ -422371,7 +424196,12 @@
       "adyghe": "",
       "kabardian": "пхыгъэ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "пхыгъэ / пха еплъ &lt;&lt;щыхьагъэ&gt;&gt; SARILI",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-03952",
@@ -422552,7 +424382,12 @@
       "adyghe": "",
       "kabardian": "пхэщӀ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "пхэщӀ / пхэкӀ ПХЭ KALÇA, KIÇ",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-03961",
@@ -422632,7 +424467,12 @@
       "adyghe": "",
       "kabardian": "пцӀэгъуэплъ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "пцӀэгъуэплъ еплъ &lt;&lt;пцӀэгъоплъ&gt;&gt; DORU AT",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-03965",
@@ -422932,7 +424772,12 @@
       "adyghe": "",
       "kabardian": "пщӀантӀэдэт"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "щагудэт / пщӀантӀэдэт еплъ &lt;&lt;ГЪЭСА&gt;&gt; EVCİL",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-03980",
@@ -422973,7 +424818,12 @@
       "adyghe": "",
       "kabardian": "пщӀанэ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "(eastern) пщӀанэ / пшӀанэ ONDA BİR (I / I0)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-03982",
@@ -423035,7 +424885,12 @@
       "adyghe": "",
       "kabardian": "пщӀыхь"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "пщӀыхь / пкӀыхь пкӀыхьыпӀ / пщӀыхьэпӀэ DÜŞ, RÜYA",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-03985",
@@ -423115,7 +424970,12 @@
       "adyghe": "",
       "kabardian": "пщафӀэ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "пщэрыхь / пщафӀэ еплъ &lt;&lt;лӀышӀэ&gt;&gt; HİZMETLİ (hizmetkâr)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-03989",
@@ -423175,7 +425035,12 @@
       "adyghe": "",
       "kabardian": "пщхьэпэ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "пщхьэпэ / пшъхьап(э) FAYDALI, İSTİFADE",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-03992",
@@ -423215,7 +425080,12 @@
       "adyghe": "",
       "kabardian": "пщыгъуэ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "пщыгъуэ / пщыгъо пщыгъуэпсэукӀэ / пщыгъопсэукӀ(э) FEODALİTE",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-03994",
@@ -423436,7 +425306,12 @@
       "adyghe": "",
       "kabardian": "пщэдеймыщкӀэ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "пщэдеймыщкӀэ / неущмыкӀ YARINDAN SONRA",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-04005",
@@ -423456,7 +425331,12 @@
       "adyghe": "",
       "kabardian": "пщэдыкъ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "пщэдыкъ / пшъэтыкъ пшъэб ENSE",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-04006",
@@ -423820,7 +425700,12 @@
       "adyghe": "",
       "kabardian": "пыгъэзын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "пыгъэзын / кӀэрыгъэхун (пегъэзы / кӀэрегъэху ) DÜŞÜRMEK (fiyatını ~; ucundan ~)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-04024",
@@ -423840,7 +425725,12 @@
       "adyghe": "",
       "kabardian": "пыгъэкӀын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "ПЫГЪЭКӀЫН (ПЕГЪЭКӀ(ы); КӀЭРЫГЪЭКӀЫН (КӀЭРЕГЪЭКӀ(ы); ыуж / и ужь ИГЪЭКӀЫН (~ регъэкӀы / ~ ирегъэкӀ ) VAZGEÇİRMEK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-04025",
@@ -423941,7 +425831,12 @@
       "adyghe": "",
       "kabardian": "пыжьбанэ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "пыжьбанэ цыжьбанэ , пыжъы KİRPİ",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-04030",
@@ -423981,7 +425876,12 @@
       "adyghe": "",
       "kabardian": "пылъхьэ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "ПЫЛЪХЬЭ лъэпӀэхэкӀ / лъапӀэхэкӀ , дышъэхэкӀ / дыщэхэкӀ , ДРАГОЦЕННОСТЬ MÜCEVHER",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-04032",
@@ -424221,7 +426121,12 @@
       "adyghe": "",
       "kabardian": "пытхъын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "ПЫТХЪЫН I (питхъыгъ / питхъащ : ~ kopardı ; ПЕТХЪ(ы) KOPARMAK (ucundan asılarak ~) II еплъ &lt;&lt;ПЫЗЫН&gt;&gt; KOPMAK (ucundan asılınarak ~)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-04044",
@@ -424341,7 +426246,12 @@
       "adyghe": "",
       "kabardian": "пыхъыжьэн"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "пыхъыжьэн еплъ &lt;&lt;пыхъыжъыхьан&gt;&gt; ASILMAK 3 (askıntı olmak)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-04050",
@@ -424701,7 +426611,12 @@
     "isLemma": false,
     "subConceptId": "MEET_ACTION",
     "taxonomyFamily": "Eylem & Fiziksel",
-    "rootForm": "пэ-"
+    "rootForm": "пэ-",
+    "translations": {
+      "tr": "пэгъуэкӀын / пэгъокӀын еплъ &lt;&lt;ПЕЖЬЭН&gt;&gt; KARŞILAMAK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-04066",
@@ -424932,7 +426847,12 @@
     "isLemma": false,
     "subConceptId": "REALITY",
     "taxonomyFamily": "Düşünce & Soyut",
-    "rootForm": "пэ-"
+    "rootForm": "пэ-",
+    "translations": {
+      "tr": "пэжыпӀэ шъыпкъапӀэ / щыпкъапӀэ еплъ &lt;&lt;ЗЫТЕТЫМ ТЕТ&gt;&gt; REALİTE, ESAS, ASIL",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-04076",
@@ -425209,7 +427129,12 @@
     "isLemma": false,
     "subConceptId": "SENSE",
     "taxonomyFamily": "İnsan & Beden",
-    "rootForm": "пэ-"
+    "rootForm": "пэ-",
+    "translations": {
+      "tr": "ПЭМЭН (пэмагъэ / пэмащ : kokladı ; МЭПАМЭ : kokluyor); ЕПЭМЫН (епэмыгъ / епэмащ : kokladı; епэмы / йопэм : kokluyor) KOKLAMAK (~ işini yapmak; bir şeyi ~))",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-04088",
@@ -425232,7 +427157,12 @@
     "isLemma": false,
     "subConceptId": "NOSE_SHAPE",
     "taxonomyFamily": "Nitelik & Beden",
-    "rootForm": "пэ-"
+    "rootForm": "пэ-",
+    "translations": {
+      "tr": "ПЭНТӀЫКЪ I еплъ &lt;&lt;шыгу&gt;&gt; DORUK II чӀылъэцып(э) / щӀылъэцыпэ : (тыгъаджэ / дыгъэджэ ПЭНТӀЫКЪ: Kuzey kutbu ; тыгъашӀо / дыгъэфӀэ ПЭНТӀЫКЪ: Güney kutbu ) ПОЛЮС KUTUP",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-04089",
@@ -425278,7 +427208,12 @@
     "isLemma": false,
     "subConceptId": "NOSE_SHAPE",
     "taxonomyFamily": "Nitelik & Beden",
-    "rootForm": "пэ-"
+    "rootForm": "пэ-",
+    "translations": {
+      "tr": "пэнцӀыв / пэбзыджын BURUN UCU",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-04091",
@@ -425440,7 +427375,12 @@
     "isLemma": false,
     "subConceptId": "STRETCHING_HAND",
     "taxonomyFamily": "Nitelik & Beden",
-    "rootForm": "пэ-"
+    "rootForm": "пэ-",
+    "translations": {
+      "tr": "ПЭРЫӀЭБЭ Ӏадэ / Ӏэдэ , ЩИПЦЫ MAŞA",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-04098",
@@ -425716,7 +427656,12 @@
     "isLemma": false,
     "subConceptId": "POSITION",
     "taxonomyFamily": "Eylem & Fiziksel",
-    "rootForm": "пэ-"
+    "rootForm": "пэ-",
+    "translations": {
+      "tr": "ПЭРЫСЫН ИГЪУСЭН, ПЭСЫН еплъ &lt;&lt;ГЪУСЭН&gt;&gt; REFAKAT ETMEK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-04110",
@@ -425877,7 +427822,12 @@
     "isLemma": false,
     "subConceptId": "SETTLE_FRONT",
     "taxonomyFamily": "Eylem & Fiziksel",
-    "rootForm": "пэ-"
+    "rootForm": "пэ-",
+    "translations": {
+      "tr": "ПЭТӀЫСЫН (пэтӀысы / потӀыс ); ешэкӀон / ещэкӀуэн (ешакӀо / йощакӀуэ ); екӀошъэн / екӀуэщэн (екӀуашъэ / йокӀуащэ ); РАСПОЛАГАТЬСЯ MEVZİLENMEK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-04117",
@@ -425900,7 +427850,12 @@
     "isLemma": false,
     "subConceptId": "POSITION",
     "taxonomyFamily": "Eylem & Fiziksel",
-    "rootForm": "пэ-"
+    "rootForm": "пэ-",
+    "translations": {
+      "tr": "ПЭТЫН еплъ &lt;&lt;ПЭПЛЪЭН&gt;&gt; BEKLEMEK (başında durup ~)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-04118",
@@ -426772,7 +428727,12 @@
       "adyghe": "",
       "kabardian": "санэху"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "сэнэф / САНЭ ху еплъ &lt;&lt;САНЭ&gt;&gt; ŞARAP (beyaz ~)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-04158",
@@ -426852,7 +428812,12 @@
       "adyghe": "",
       "kabardian": "сеин"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "сэин / сеин еплъ &lt;&lt;ИЗ ХЪУН&gt;&gt; DOLMAK (çukur dolup kapanmak)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-04162",
@@ -427393,7 +429358,12 @@
       "adyghe": "",
       "kabardian": "сэжьей"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "сэжьей / сэжъый еплъ &lt;&lt;чан&gt;&gt; BIÇAK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-04189",
@@ -427473,7 +429443,12 @@
       "adyghe": "",
       "kabardian": "сэнтх"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "СЭНТХ еплъ &lt;&lt;ТХЫПЭ&gt;&gt; TEPE",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-04193",
@@ -427755,7 +429730,12 @@
       "adyghe": "",
       "kabardian": "тӀуанэ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "ТӀУАНЭ KUMA",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-04207",
@@ -427976,7 +429956,12 @@
       "adyghe": "",
       "kabardian": "тӀэпӀын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "ТӀЭПӀЫН (МЭТӀЭПӀ(ы) SÖKÜLMEK (dikiş ~)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-04218",
@@ -427997,7 +429982,12 @@
       "adyghe": "",
       "kabardian": "тӀэтэн"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "ТӀЭТЭН зэшӀохын / зэфӀэхын , зэшӀогъэкӀын / зэфӀэгъэкӀын , зэкъодзын / зэкъуэдзын ÇÖZMEK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-04219",
@@ -428358,7 +430348,12 @@
       "adyghe": "",
       "kabardian": "теӀунщӀэн"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "теӀунщӀэн / теӀункӀэн еплъ &lt;&lt;ЕГЪЭЗЫН&gt;&gt; ZORLAMAK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-04237",
@@ -429120,7 +431115,12 @@
       "adyghe": "",
       "kabardian": "тегъэзэн"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "ТЕГЪЭЗЭН (тырегъазэ / трегъазэ ); тегъэзэжьын / тегъэзэжын (тырегъэзэжьы / трегъэзэж ); КЪЫТЕГЪЭЗЭН (къытырегъазэ / къытрегъазэ ); къытегъэзэжьын / къытегъэзэжын (къытырегъэзэжьы / къытрегъэзэж ) TEKR",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-04275",
@@ -429261,7 +431261,12 @@
       "adyghe": "",
       "kabardian": "тегъэтӀысхьэн"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "тегъэӀыстэн / тегъэтӀысхьэн еплъ &lt;&lt;ГЪЭШЭСЫН&gt;&gt; BİNDİRMEK (üstüne ~)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-04282",
@@ -429301,7 +431306,12 @@
       "adyghe": "",
       "kabardian": "тегъэхьэн"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "тегъэхьан / тегъэхьэн ДЗЫТЭН TAYİN ETMEK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-04284",
@@ -429482,7 +431492,12 @@
       "adyghe": "",
       "kabardian": "тезэкӀухьын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "тезэкӀухьэн / тезэкӀухьын еплъ &lt;&lt;зекӀон&gt;&gt; DOLAŞMAK (gezinmek, gezinti yapmak)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-04293",
@@ -429644,7 +431659,12 @@
       "adyghe": "",
       "kabardian": "телӀэн"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "ТЕЛӀЭН I (телӀэ / толӀэ ); ехъопсэщэн / ехъуэпсэщэн (ехъопсащэ / йохъуэ­псащэ ); шӀоГУРЫХЬЫ­ЩЭН / фӀэ­ ГУРЫХЬЫЩЭН (шӀоГУРЫХЬЫЩ / фӀэ ГУРЫХЬЫЩЭ( щ ); шӀогъэшӀэ­гъонын / фӀэгъэщӀэгъуэнын (шӀо­гъэшӀэгъон",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-04301",
@@ -429825,7 +431845,12 @@
       "adyghe": "",
       "kabardian": "телъэфэжын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "телъэшъожьын / телъэфэжын (тырелъэшъожьы / трелъэфэж ) KIVIRMAK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-04310",
@@ -429845,7 +431870,12 @@
       "adyghe": "",
       "kabardian": "телъэщӀыхьын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "телъэщӀыхьын / телъэкӀыхьан еплъ &lt;&lt;ИЦӀЭЛЫКӀЫН&gt;&gt; SİLMEK (üzerinden hafifçe ~)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-04311",
@@ -431447,7 +433477,12 @@
       "adyghe": "",
       "kabardian": "тхыбыӀу"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "тхыбыӀу быты еплъ &lt;&lt;тхыщэ&gt;&gt; OMURGASI EĞRİ",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-04391",
@@ -431570,7 +433605,12 @@
     "isLemma": false,
     "subConceptId": "PRAYER_BLESSING",
     "taxonomyFamily": "Dua & Yemin",
-    "rootForm": "тхьэ-"
+    "rootForm": "тхьэ-",
+    "translations": {
+      "tr": "тхьэгъэпсэу / тхьагъэпсэу TEŞEKKUR",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-04397",
@@ -431593,7 +433633,12 @@
     "isLemma": false,
     "subConceptId": "OATH_FALSE",
     "taxonomyFamily": "Dua & Yemin",
-    "rootForm": "тхьэ-"
+    "rootForm": "тхьэ-",
+    "translations": {
+      "tr": "тхьэгъэпцӀ / тхьагъэпцӀ къогъукъошӀ, хъоршэр HİLEKÂR",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-04398",
@@ -431616,7 +433661,12 @@
     "isLemma": false,
     "subConceptId": "OATH_FALSE",
     "taxonomyFamily": "Dua & Yemin",
-    "rootForm": "тхьэ-"
+    "rootForm": "тхьэ-",
+    "translations": {
+      "tr": "тхьэгъэпцӀыгъэ / тхьагъэпцӀыгъ къогъукъошӀыгъ, хъоршэрыгъ HİLE",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-04399",
@@ -431825,7 +433875,12 @@
     "isLemma": false,
     "subConceptId": "PRAYER_BLESSING",
     "taxonomyFamily": "Dua & Yemin",
-    "rootForm": "тхьэ-"
+    "rootForm": "тхьэ-",
+    "translations": {
+      "tr": "тхьэмщӀыгъу / тхьамкӀыгъу шӀу, шӀурагъу KARACİĞER",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-04408",
@@ -432086,7 +434141,12 @@
       "adyghe": "",
       "kabardian": "тэджэлей"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "тэджэлый / тэджэлей ЖИЛЕТ YELEK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-04420",
@@ -432106,7 +434166,12 @@
       "adyghe": "",
       "kabardian": "тэкурэку"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "ТЭКУРЭКУ еплъ &lt;&lt;ЛЪАХЭ&gt;&gt; BÖLGE",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-04421",
@@ -432306,7 +434371,12 @@
       "adyghe": "",
       "kabardian": "уӀэгъэпх"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "уӀэгъэпх / уӀагъэпх еплъ &lt;&lt;хъужьрыпх&gt;&gt; PANSUMAN",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-04431",
@@ -432366,7 +434436,12 @@
       "adyghe": "",
       "kabardian": "уанапӀэ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "уанапӀэ / онапӀ(э) джыдау EYER VURULAN YER",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-04434",
@@ -432586,7 +434661,12 @@
       "adyghe": "",
       "kabardian": "ублэрэкӀын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "улэрэкӀын / ублэрэкӀын DEVRİLMEK (yuvarlanmak)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-04445",
@@ -432707,7 +434787,12 @@
       "adyghe": "",
       "kabardian": "удж"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "УДЖ еплъ &lt;&lt;АДЫГЭ къашъохэр&gt;&gt; DANS (WUIC, VUIC)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-04451",
@@ -432727,7 +434812,12 @@
       "adyghe": "",
       "kabardian": "уджын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "УДЖЫН еплъ &lt;&lt;къэшъон&gt;&gt; DANS ETMEK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-04452",
@@ -433027,7 +435117,12 @@
       "adyghe": "",
       "kabardian": "улэуэн"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "улэуэн / улэун еплъ &lt;&lt;пшъын&gt;&gt; YORULMAK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-04467",
@@ -433327,7 +435422,12 @@
       "adyghe": "",
       "kabardian": "упӀэщӀын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "упӀэщӀын / убыкӀын еплъ &lt;&lt;ПӀЫТӀЫН&gt;&gt; EZMEK (bastırıp sıkarak ~)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-04482",
@@ -433347,7 +435447,12 @@
       "adyghe": "",
       "kabardian": "упсахуэ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "упсахуэ / упсаф еплъ &lt;&lt;ПХЪЭӀукӀэн&gt;&gt; YONGA (iri ~), TALAŞ",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-04483",
@@ -433367,7 +435472,12 @@
       "adyghe": "",
       "kabardian": "упцӀын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "УПЦӀЫН (ЕУПЦӀ(Ы); ЕУПЦӀЫН (реупцӀы / иреупцӀ ) ATMAK (bir yüzeye çamur / harç ~)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-04484",
@@ -433407,7 +435517,12 @@
       "adyghe": "",
       "kabardian": "упщӀыӀун"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "учъыӀун / упщӀыӀун (мэучъыӀу / мэу­пщӀыӀу ); ПЛЪЫКЪУН (МЭП­ЛЪЫКЪУ); плъыкъон / плъыкъуэн (мэплъыкъо / мэплъыкъуэ ); плъы­къожьын / плъыкъуэжын (мэплъы­къожьы / мэплъыкъуэж ) SOĞUMAK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-04486",
@@ -433548,7 +435663,12 @@
       "adyghe": "",
       "kabardian": "уфэрэкӀын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "ушъорэкӀын / уфэрэкӀын DEVRİLMEK (yuvarlanmak)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-04493",
@@ -433568,7 +435688,12 @@
       "adyghe": "",
       "kabardian": "ухеин"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "ухыин / ухеин (еухыи / еухей ) YARGILAMAK, AKLAMAK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-04494",
@@ -433588,7 +435713,12 @@
       "adyghe": "",
       "kabardian": "ухэсын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "УХЭСЫН (ЕУХЭС(ы), аухэсы / яухэс ; ЗЭХЭУХЭСЭН (ЗЭХАУХАСЭ); зэджэнджэщын / зэчэнджэщын (зэджэнджэщы(х) / зочэнджэщ(хэ ), ХЭПЛЪЭН (зэплъэ(х) / хоплъэ(хэ ); зэдэгущыӀэн / ЗЭДЭПСЭЛЪЭН (зэдэгущыӀэ(х) / зэд",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-04495",
@@ -434053,7 +436183,12 @@
       "adyghe": "",
       "kabardian": "уэтэр"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "уэтэр чэл, ШЭТРЭ , пщыӀэ ÇADIR",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-04518",
@@ -434113,7 +436248,12 @@
       "adyghe": "",
       "kabardian": "уэф"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "уэф / ошъу DOLU (yağış türü)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-04521",
@@ -434173,7 +436313,12 @@
       "adyghe": "",
       "kabardian": "уэщӀ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "уэщӀ еплъ &lt;&lt;очӀ&gt;&gt; EVREN, KÂİNAT",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-04524",
@@ -434274,7 +436419,12 @@
       "adyghe": "",
       "kabardian": "фӀанэ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "шӀуанэ / фӀанэ ÇAPA 1",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-04529",
@@ -434374,7 +436524,12 @@
       "adyghe": "",
       "kabardian": "фӀыкӀейуэ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "шӀукӀаеу / фӀыкӀейуэ еплъ &lt;&lt;зыкъаум&gt;&gt; EPEY, HAYLİ",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-04534",
@@ -434576,7 +436731,12 @@
       "adyghe": "",
       "kabardian": "фӀэӀуэхун"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "шӀоӀофын / фӀэӀуэхун I еплъ &lt;&lt;ЗЕГЪЭГЪЭПЭН&gt;&gt; ALDIRIŞ ETMEK II еплъ &lt;&lt;зышӀогъэ­Ӏо­фын&gt;&gt; ÖNEMSEMEK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-04544",
@@ -434676,7 +436836,12 @@
       "adyghe": "",
       "kabardian": "фӀэгъэжын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "шӀогъэчъын / фӀэгъэжын KESMEK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-04549",
@@ -434797,7 +436962,12 @@
       "adyghe": "",
       "kabardian": "фӀэдзапӀэ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "шӀодзапӀ / фӀэдзапӀэ жэлый / кӀэӀунэ , лыкъу / къарышъу, къакъыш ÇENGEL 1",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-04555",
@@ -434977,7 +437147,12 @@
       "adyghe": "",
       "kabardian": "фӀэкӀыпӀэншэ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "шӀокӀыпӀэнчъ / фӀэкӀыпӀэншэ еплъ &lt;&lt;егъэзыгъ&gt;&gt; MECBUR",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-04564",
@@ -435037,7 +437212,12 @@
       "adyghe": "",
       "kabardian": "фӀэлӀыкӀын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "шӀолӀыкӀын / фӀэлӀыкӀын УКӀЫ­ТЭН, ЩЫУКӀЫТЭН, темыгушхон / темыгушхуэн , ТАУЧЭЛ мыщӀын , РЕЩИМОСТЬ, СМЕЛОСТЬ ÇEKİNMEK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-04567",
@@ -435358,7 +437538,12 @@
       "adyghe": "",
       "kabardian": "фӀэфӀын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "шӀошӀун / фӀэфӀын еплъ &lt;&lt;икӀэсэн&gt;&gt; ARZU ETMEK, İSTEMEK,",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-04583",
@@ -435579,7 +437764,12 @@
       "adyghe": "",
       "kabardian": "фӀэщӀын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "шӀошӀын / фӀэщӀын еплъ &lt;&lt;КЪЫЩЫХЪУН&gt;&gt; ZANNETMEK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-04594",
@@ -435639,7 +437829,12 @@
       "adyghe": "",
       "kabardian": "фабгъуэ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "шъуамбгъо / фабгъуэ бгъуэ GENİŞ, ENLİ",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-04597",
@@ -435819,7 +438014,12 @@
       "adyghe": "",
       "kabardian": "фафӀэ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "шъуашӀо / фафӀэ DOLGUN (gürbüz)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-04606",
@@ -435839,7 +438039,12 @@
       "adyghe": "",
       "kabardian": "фахуэ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "ТУТЫН шъуаф / фахуэ ТУТЫН ныкъошъу / ныкъуэф İZMARİT",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-04607",
@@ -435859,7 +438064,12 @@
       "adyghe": "",
       "kabardian": "февраль"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "ФЕВРАЛЬ еплъ &lt;&lt;мэзае&gt;&gt; ŞUBAT",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-04608",
@@ -435959,7 +438169,12 @@
       "adyghe": "",
       "kabardian": "фестиваль"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "ФЕСТИВАЛЬ FESTİVAL",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-04613",
@@ -436139,7 +438354,12 @@
       "adyghe": "",
       "kabardian": "фтыреин"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "шъутырэен / фтыреин еплъ &lt;&lt;шъутырэн&gt;&gt; TEKMELEMEK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-04622",
@@ -436199,7 +438419,12 @@
       "adyghe": "",
       "kabardian": "фыгъуэн"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "шъугъон / фыгъуэн (мэшъугъо / мэфыгъуэ ); шхъогъон (мэшхъуагъо) KISKANMAK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-04625",
@@ -436515,7 +438740,12 @@
       "adyghe": "",
       "kabardian": "фэрэкӀ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "шъорэкӀ(ы) / фэрэкӀ AŞI (çiçek hastalığı ~sı)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-04640",
@@ -436896,7 +439126,12 @@
       "adyghe": "",
       "kabardian": "хуилъын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "хуилъын / филъын еплъ &lt;&lt;ИЛЪЫН&gt;&gt; III HÜCUM ETMEK, ÇIKIŞMAK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-04659",
@@ -437297,7 +439532,12 @@
       "adyghe": "",
       "kabardian": "хуэӀурыщӀэн"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "хуэӀурыщӀэн / фэӀорышӀэн еплъ &lt;&lt;зыфэуфэн&gt;&gt; İTAAT ETMEK (birine ~)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-04679",
@@ -437357,7 +439597,12 @@
       "adyghe": "",
       "kabardian": "хуэӀуэхун"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "хуэӀуэхун / фэӀофын I еплъ &lt;&lt;Ӏопщын&gt;&gt; ISMARLAMAK II еплъ &lt;&lt;фэгъэзэн&gt;&gt; HAVALE (bir işi ~ etmek; delege etmek; ısmarlamak; sipariş etmek) III фэӀопшын SİPARİŞ ETMEK (birine ~; ıs",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-04682",
@@ -437577,7 +439822,12 @@
       "adyghe": "",
       "kabardian": "хуэгуӀэн"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "хуэгуӀэн / фэгуӀан еплъ &lt;&lt;тхьаусхэн&gt;&gt; TAZİYE VERMEK (taziyede bulunmak)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-04693",
@@ -437639,7 +439889,12 @@
       "adyghe": "",
       "kabardian": "хуэгуфӀэн"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "хуэгуфӀэн / фэгушӀон еплъ &lt;&lt;ЕХЪУЭХЪУН&gt;&gt; TEBRİK ETMEK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-04696",
@@ -438907,7 +441162,12 @@
       "adyghe": "",
       "kabardian": "хуэщыгъуэн"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "хуэщыгъуэн / фэшъыгъон еплъ &lt;&lt;тхьаусхэн&gt;&gt; TAZİYE VERMEK (taziyede bulunmak)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-04759",
@@ -439469,7 +441729,12 @@
       "adyghe": "",
       "kabardian": "хъумпӀэцӀэдж"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "хъумпӀэцӀэдж / къамзэгу KARINCA",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-04787",
@@ -439509,7 +441774,12 @@
       "adyghe": "",
       "kabardian": "хъунщӀэ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "хъунщӀэ / хъункӀ(э) ТЕХ GASP, SOYGUN, YAĞMA. ÇAPUL",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-04789",
@@ -439549,7 +441819,12 @@
       "adyghe": "",
       "kabardian": "хъуныджэ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "хъуныдж(э) / хъуныджэ нае / ней OLUMSUZ",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-04791",
@@ -439609,7 +441884,12 @@
       "adyghe": "",
       "kabardian": "хъуныфӀэ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "хъунышӀо / хъуныфӀэ еплъ &lt;&lt;нэшӀу&gt;&gt; OLUMLU",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-04794",
@@ -439909,7 +442189,12 @@
       "adyghe": "",
       "kabardian": "хъущӀэн"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "хъущӀэн / хъушӀэн еплъ &lt;&lt;ЦӀЭЦӀЭН&gt;&gt; AZARLAMAK (hedefsiz ~ işini yapmak)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-04809",
@@ -440069,7 +442354,12 @@
       "adyghe": "",
       "kabardian": "хъуэпсырджэн"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "хъуэпсырджэн шъыхьэчэм / щыхь­жэм , щыхьбжэн / шъыхьэпчэн, шъыхьэ / щыхь , БЛАНЭ GEYİK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-04817",
@@ -440269,7 +442559,12 @@
       "adyghe": "",
       "kabardian": "хъыжьагъэ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "хъыжьагъэ / губжыгъэягъ HİDDET",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-04827",
@@ -440431,7 +442726,12 @@
       "adyghe": "",
       "kabardian": "хыхьэхэкӀ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "хэхьэхэкӀ / хыхьэхэкӀ хэхьэхэкӀыкӀэ / хыхьэхэкӀыкӀэ GÖRGÜ",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-04835",
@@ -441025,7 +443325,12 @@
     "isLemma": false,
     "subConceptId": "",
     "taxonomyFamily": "",
-    "rootForm": "хьэ-"
+    "rootForm": "хьэ-",
+    "translations": {
+      "tr": "хьэжькурий / жьыхьажь(э) гъуэжькуий , жьыхьарзэ HORTUM ( rüzgâr ~u)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-04861",
@@ -442522,7 +444827,12 @@
     "isLemma": false,
     "subConceptId": "CHAT_RUMOR",
     "taxonomyFamily": "Dil & İletişim",
-    "rootForm": "хьэ-"
+    "rootForm": "хьэ-",
+    "translations": {
+      "tr": "хьэхэбасэ / хьахэбас(э) HAYLAZ",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-04926",
@@ -442591,7 +444901,12 @@
     "isLemma": false,
     "subConceptId": "GUEST",
     "taxonomyFamily": "Misafirperverlik/Gelenek",
-    "rootForm": "хьэ-"
+    "rootForm": "хьэ-",
+    "translations": {
+      "tr": "хьэщӀакӀуэ / хьакӀакӀу(э) хьэщӀэ / хьакӀэ ZİYARETÇİ",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-04929",
@@ -442752,7 +445067,12 @@
     "isLemma": false,
     "subConceptId": "DEVOTION",
     "taxonomyFamily": "Ahlak/Kişilik",
-    "rootForm": "хьэ-"
+    "rootForm": "хьэ-",
+    "translations": {
+      "tr": "хьэщхьэрыӀуэ / хьашхъурэӀу KUDUZ",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-04936",
@@ -443201,7 +445521,12 @@
       "adyghe": "",
       "kabardian": "цӀугъэнэ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "цӀыу / цӀугъэнэ нэфы(н) / нэху , ЛЫД PIRILTI",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-04958",
@@ -443242,7 +445567,12 @@
       "adyghe": "",
       "kabardian": "цӀуун"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "цӀыун / цӀуун жъыун, шӀэтын еплъ &lt;&lt;ЛЫДЫН&gt;&gt; PARLAMAK (ışıldamak)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-04960",
@@ -443302,7 +445632,12 @@
       "adyghe": "",
       "kabardian": "цӀыкӀу-цӀыкӀу"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "цӀыкӀу-цӀыкӀу еплъ &lt;&lt;жъажъэ&gt;&gt; AĞIR (yavaş)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-04963",
@@ -443622,7 +445957,12 @@
       "adyghe": "",
       "kabardian": "цӀэцӀэн"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "ЦӀЭЦӀЭН (МЭЦӀАЦӀЭ); шхыдэн ( мэшхыдэ ); гыен / гиен (мэгые / мэгие / мэгей ); хъушӀэн / хъущӀэн (мэхъушӀэ / мэхъущӀэ ); СКВЕРНОСЛОВИТЬ AZARLAMAK (hedefsiz ~ işini yapmak)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-04979",
@@ -444423,7 +446763,12 @@
       "adyghe": "",
       "kabardian": "шкӀахъуэ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "шкӀахъо / шкӀахъуэ ÇOBAN (buzağı ~ı)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-05020",
@@ -444844,7 +447189,12 @@
       "adyghe": "",
       "kabardian": "шхупцӀатэ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "шхыухадзэ / шхупцӀатэ MAYA (yoğurt ~sı)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-05041",
@@ -444864,7 +447214,12 @@
       "adyghe": "",
       "kabardian": "шхуэӀу"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "шхуэӀу еплъ &lt;&lt;шхоӀу&gt;&gt; DİZGİN",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-05042",
@@ -444884,7 +447239,12 @@
       "adyghe": "",
       "kabardian": "шхуэмылакӀэ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "шхуэмылакӀэ / шхомлакӀ еплъ &lt;&lt;шхоӀу&gt;&gt; DİZGİN, KANTARMA",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-05043",
@@ -445254,7 +447614,12 @@
       "adyghe": "",
       "kabardian": "шыбг"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "ШЫБГ ( Абз. ШӀЫБГӀА) EYER VURULAN YER",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-05061",
@@ -445534,7 +447899,12 @@
       "adyghe": "",
       "kabardian": "шыкӀэпшынэ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "шыкӀэпщын / шыкӀэпшынэ еплъ &lt;&lt;АДЫГЭ пщынхэр&gt;&gt; KEMENÇE (Adıge ~si; şıç’epşın(e)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-05075",
@@ -446135,7 +448505,12 @@
       "adyghe": "",
       "kabardian": "шэдж"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "щэдж / шэдж еплъ &lt;&lt;Ӏат(э)&gt;&gt; YIĞIN (zahire ~ı)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-05105",
@@ -446517,7 +448892,12 @@
       "adyghe": "",
       "kabardian": "шэсын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "ШЭСЫН I (МЭШЭС(ы), теӀыстэн (теӀыстэ); тетӀысхьан / тетӀысхьэн (тетӀысхьа / тотӀысхьэ ) BİNMEK (ata~, üstüne ~) II шэсэкӀон / шэсэкӀуэн , ( Абз. ЧЪЫГӀУРЭ) BİNİCİLİK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-05124",
@@ -446877,7 +449257,12 @@
       "adyghe": "",
       "kabardian": "щӀанэ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "щӀанэ / кӀанэ / шӀанэ еплъ &lt;&lt;кӀэ&gt;&gt; TAZE",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-05142",
@@ -447057,7 +449442,12 @@
       "adyghe": "",
       "kabardian": "щӀегъуэжын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "щӀегъуэжын / кӀэгъожьын еплъ &lt;&lt;ГЪЭЗЭН&gt;&gt; DÖNMEK (caymak, pişman olmak)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-05151",
@@ -447118,7 +449508,12 @@
       "adyghe": "",
       "kabardian": "щӀегъэгъуэжын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "щӀегъэгъуэжын / кӀэгъэгъожьын еплъ &lt;&lt;ЕГЪЭГЪЭЗЭН&gt;&gt; DÖNDÜRMEK, CAYDIRMAK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-05154",
@@ -447238,7 +449633,12 @@
       "adyghe": "",
       "kabardian": "щӀопщыкъу"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "кӀэпщыкӀ / щӀопщыкъу КЪАМЫЩЫ кӀ / КЪАМЫШЫ къу KAMÇI SAPI",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-05160",
@@ -447278,7 +449678,12 @@
       "adyghe": "",
       "kabardian": "щӀыӀуб"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "щӀыӀуб / шӀумбыякъ щӀыӀубнэф / чӀыхъумбыйнэшъу KÖSTEBEK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-05162",
@@ -447318,7 +449723,12 @@
       "adyghe": "",
       "kabardian": "щӀыӀунэ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "щӀыӀунэ / кӀыӀун чыӀун İLİK 2 (düğme ~ği)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-05164",
@@ -447718,7 +450128,12 @@
       "adyghe": "",
       "kabardian": "щӀытэн"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "кӀытэн / щӀытэн ( кӀытагъэ / щӀытащ : tavlandı; мэкӀытэ / мэщӀытэ : tavlanıyor ) TAVLANMAK (suda ~)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-05184",
@@ -447860,7 +450275,12 @@
       "adyghe": "",
       "kabardian": "щӀыхьэху"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "щӀыхьэху / шӀыхьафы İMECE",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-05191",
@@ -448041,7 +450461,12 @@
       "adyghe": "",
       "kabardian": "щӀэӀэн"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "щӀэӀэн / чӀэӀэн DAYANMAK (alttan yüklenmek)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-05200",
@@ -448606,7 +451031,12 @@
       "adyghe": "",
       "kabardian": "щӀэгъуэ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "щӀэгъуэ / шӀэгъу еплъ &lt;&lt;пӀэлъэгъу&gt;&gt; DEVRE (yapım / ekim zamanı)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-05228",
@@ -448626,7 +451056,12 @@
       "adyghe": "",
       "kabardian": "щӀэгъуэлъхьэн"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "щӀэгъуэлъхьэн / чӀэгъолъхьан ALTINA YATMAK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-05229",
@@ -448706,7 +451141,12 @@
       "adyghe": "",
       "kabardian": "щӀэгъэбыдэн"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "щӀэгъэбыдэн / чӀэгъэпытэн I кӀэгъэпытыхьэн / щӀэгъэбыдыхьын еплъ &lt;&lt;гъэпытэн&gt;&gt; BELGELEMEK, KANITLAMAK, KESİNLEŞTİRMEK PEKİŞTİRMEK II еплъ &lt;&lt;гъэлъэшын&gt;&gt; GARANTİLEMEK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-05233",
@@ -449067,7 +451507,12 @@
       "adyghe": "",
       "kabardian": "щӀэгъэпщын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "щӀэгъэпщын / кӀэгъэпщын еплъ &lt;&lt;псын­кӀэн&gt;&gt; SAVURMAK (harman / tınaz ~)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-05251",
@@ -449187,7 +451632,12 @@
       "adyghe": "",
       "kabardian": "щӀэгъэфын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "щӀэгъэфын / чӀэгъэшъун EMZİRMEK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-05257",
@@ -449207,7 +451657,12 @@
       "adyghe": "",
       "kabardian": "щӀэгъэхун"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "щӀэгъэхун еплъ &lt;&lt;кӀэгъэзын&gt;&gt; DÜŞÜRMEK (altından ~)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-05258",
@@ -449367,7 +451822,12 @@
       "adyghe": "",
       "kabardian": "щӀэджыкӀын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "щӀэджыкӀын / кӀэджыкӀын OKUMAK (baştan sona ~)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-05266",
@@ -449851,7 +452311,12 @@
       "adyghe": "",
       "kabardian": "щӀэкӀэн"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "щӀэкӀэн I еплъ &lt;&lt;кӀэкӀэн&gt;&gt; DÖKMEK (köküne / dibine sıvı bir şey ~) II еплъ &lt;&lt;кӀэкӀэн&gt;&gt; DÖKÜLMEK (köküne / dibine sıvı ~)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-05290",
@@ -450354,7 +452819,12 @@
       "adyghe": "",
       "kabardian": "щӀэпхъаджэ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "щӀэпхъаджэ / шӀэпхъадж(э) еплъ &lt;&lt;къоды&gt;&gt; YASAK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-05315",
@@ -450594,7 +453064,12 @@
       "adyghe": "",
       "kabardian": "щӀэрыщӀэ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "щӀэрыщӀэ / кӀэпсрышӀ YENİLİK (~yapmak; icat)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-05327",
@@ -450654,7 +453129,12 @@
       "adyghe": "",
       "kabardian": "щӀэсэн"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "щӀэсэн еплъ &lt;&lt;кӀэсэн II&gt;&gt; ÇAKMAK, DİKMEK (altına ~)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-05330",
@@ -450796,7 +453276,12 @@
       "adyghe": "",
       "kabardian": "щӀэтӀэн"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "щӀэтӀэн / чӀэтӀэн GÖMMEK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-05337",
@@ -451038,7 +453523,12 @@
       "adyghe": "",
       "kabardian": "щӀэудэн"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "узгъэху текӀутэн / теудэн / щӀэутхэн / щӀэудэн DEZENFEKTE ETMEK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-05349",
@@ -451179,7 +453669,12 @@
       "adyghe": "",
       "kabardian": "щӀэуфэ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "щӀэуфэ / чӀэухъумэ KAMUFLAJ",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-05356",
@@ -451683,7 +454178,12 @@
       "adyghe": "",
       "kabardian": "щӀэщыгъуэ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "щӀэщыгъуэ / кӀэщыгъу HEVES",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-05381",
@@ -452124,7 +454624,12 @@
       "adyghe": "",
       "kabardian": "щхъухьпсыхь"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "щхъухьпсыхь шхъухьа / щхъухь , УМЭХЪ, МАХЪ(Э) BÜYÜ",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-05403",
@@ -452184,7 +454689,12 @@
       "adyghe": "",
       "kabardian": "щхъуэкӀэплъыкӀэ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "щхъуэкӀэплъыкӀэ къолэнсэлэн, къолэн / къуэлэн RENKLİ, ALABULA",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-05406",
@@ -452500,7 +455010,12 @@
     "isLemma": false,
     "subConceptId": "HEAD_STAND",
     "taxonomyFamily": "Kendi & Öz",
-    "rootForm": "щхьэ-"
+    "rootForm": "щхьэ-",
+    "translations": {
+      "tr": "щхьэгъэрыт / шъхьагърыт I еплъ &lt;&lt;лӀышӀэ&gt;&gt; HİZMETLİ (hizmetkâr) II GARSON",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-05420",
@@ -452523,7 +455038,12 @@
     "isLemma": false,
     "subConceptId": "HEAD_SHAME",
     "taxonomyFamily": "Duygu & Durum",
-    "rootForm": "щхьэ-"
+    "rootForm": "щхьэ-",
+    "translations": {
+      "tr": "щхьэщэ / щхьэгъэщхъ / шъхьащ(э) еплъ &lt;&lt;ЛЪЫТЭ&gt;&gt; SAYGI",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-05421",
@@ -454202,7 +456722,12 @@
     "isLemma": false,
     "subConceptId": "EMOTION",
     "taxonomyFamily": "Düşünce & Soyut",
-    "rootForm": "щы-"
+    "rootForm": "щы-",
+    "translations": {
+      "tr": "ЩЫГЪЭГУГЪЫН еплъ &lt;&lt;ГЪЭГУГЪЭН&gt;&gt; GÜVENDİRMEK (bir şeyden ~)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-05494",
@@ -454248,7 +456773,12 @@
     "isLemma": false,
     "subConceptId": "POSITION",
     "taxonomyFamily": "Eylem & Fiziksel",
-    "rootForm": "щы-"
+    "rootForm": "щы-",
+    "translations": {
+      "tr": "ЩЫГЪЭСЫН еплъ &lt;&lt;ГЪЭТӀЫСЫН&gt;&gt; OTURTMAK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-05496",
@@ -454292,7 +456822,12 @@
     "isLemma": false,
     "subConceptId": "KNOWLEDGE",
     "taxonomyFamily": "Düşünce & Soyut",
-    "rootForm": "щы-"
+    "rootForm": "щы-",
+    "translations": {
+      "tr": "щыгъэщӀэн / щыгъэкӀэн еплъ &lt;&lt;ПЫГЪЭ­ЗЫН&gt;&gt; EKSİLTMEK (ucuzlatmak)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-05498",
@@ -454910,7 +457445,12 @@
     "isLemma": false,
     "subConceptId": "EMOTION",
     "taxonomyFamily": "Duygu & Zihin",
-    "rootForm": "щы-"
+    "rootForm": "щы-",
+    "translations": {
+      "tr": "ЩЫУКӀЫТЭН еплъ &lt;&lt;шӀолӀыкӀын&gt;&gt; ÇEKİNMEK",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-05525",
@@ -455094,7 +457634,12 @@
     "isLemma": false,
     "subConceptId": "ANIMAL_AGE",
     "taxonomyFamily": "Doğa & Hayvan",
-    "rootForm": "щы-"
+    "rootForm": "щы-",
+    "translations": {
+      "tr": "щыщӀэ / щыкӀ(э) еплъ &lt;&lt;нэцӀэкӀ&gt;&gt; NOKSAN",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-05533",
@@ -455182,7 +457727,12 @@
       "adyghe": "",
       "kabardian": "щэдж"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "щэдж / шэдж еплъ &lt;&lt;Ӏат(э)&gt;&gt; YIĞIN (zahire ~ı)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-05537",
@@ -455263,7 +457813,12 @@
       "adyghe": "",
       "kabardian": "щэхуакӀуэ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "щэхуакӀуэ / щэфакӀу щафэрэр / щахуэр ALICI 1 (satın ~)",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-05541",
@@ -455423,7 +457978,12 @@
       "adyghe": "",
       "kabardian": "ятӀэху"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "ятӀэху / етӀэф ЕЧ, ЛЭЧ KİREÇ, SIVA",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-05549",
@@ -455746,7 +458306,12 @@
       "adyghe": "",
       "kabardian": "дзэлъэщӀ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "цэлъэкӀ / дзэлъэщӀ DİŞ FIRÇASI",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-05565",
@@ -458572,7 +461137,12 @@
       "adyghe": "",
       "kabardian": "отчёт"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "ОТЧЁТ еплъ &lt;&lt;гъозэПСАЛЪ&gt;&gt; RAPOR",
+      "trSource": "8.Ady-Tur_Huvaj.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-05706",
@@ -460413,7 +462983,12 @@
       "adyghe": "",
       "kabardian": "brüt"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "brüt Type: Definitions: 1. валовой",
+      "trSource": "26.Tu-Kbd-Jonty.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-05799",
@@ -460433,7 +463008,12 @@
       "adyghe": "",
       "kabardian": "sövmek"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "хъуэнэн, ◊ sövüp saymak: ехъуэнын.",
+      "trSource": "27.Tur-Ady_Abaze.json",
+      "trVerified": false
+    }
   },
   {
     "id": "L-KBD-05800",
@@ -460453,7 +463033,12 @@
       "adyghe": "",
       "kabardian": "çift"
     },
-    "isLemma": false
+    "isLemma": false,
+    "translations": {
+      "tr": "çift Type: Definitions: 1. гуэгъу 2. тӀуащӀэ 3. зэгуэгъу",
+      "trSource": "26.Tu-Kbd-Jonty.json",
+      "trVerified": false
+    }
   },
   {
     "form": "бгъэщӀэращӀэ",

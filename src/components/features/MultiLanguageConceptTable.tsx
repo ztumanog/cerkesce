@@ -1,10 +1,6 @@
 import React, { ReactNode, isValidElement } from 'react';
 import { z } from 'zod';
 
-// ============================================================================
-// 1. ZOD SCHEMA & TYPESCRIPT DEFINITIONS
-// ============================================================================
-
 export const ConceptItemSchema = z.object({
   id: z.string(),
   term: z.string(),
@@ -21,10 +17,6 @@ export interface MultiLanguageConceptTableProps {
   fallbackText?: string;
 }
 
-// ============================================================================
-// 2. TYPE GUARDS (NARROWING)
-// ============================================================================
-
 function safeRenderReactNode(value: unknown, fallback: ReactNode = null): ReactNode {
   if (typeof value === 'string' || typeof value === 'number') {
     return value;
@@ -40,19 +32,13 @@ function isConceptItemArray(value: unknown): value is ConceptItem[] {
   return value.every((item) => ConceptItemSchema.safeParse(item).success);
 }
 
-// ============================================================================
-// 3. COMPONENT IMPLEMENTATION
-// ============================================================================
-
 export function MultiLanguageConceptTable({
   title,
   concepts,
-  fallbackText = 'Veri bulunamadÄ±.',
+  fallbackText = 'Veri bulunamadı.',
 }: MultiLanguageConceptTableProps) {
-  // Safe Heading Node Narrowing (Prevents TS2322)
-  const renderedTitle = safeRenderReactNode(title, 'Ã‡erkesÃ§e Kavram Tablosu');
+  const renderedTitle = safeRenderReactNode(title, 'Çerkesçe Kavram Tablosu');
 
-  // Safe Array Type Narrowing (Prevents TS2339 & TS2322)
   const validConcepts: ConceptItem[] = isConceptItemArray(concepts) ? concepts : [];
   const hasConcepts = validConcepts.length > 0;
 
@@ -71,23 +57,23 @@ export function MultiLanguageConceptTable({
           <table className="w-full text-left border-collapse text-sm">
             <thead>
               <tr className="bg-slate-100 text-slate-700">
-                <th className="p-3 font-semibold border-b">Kavram (Ã‡erkesÃ§e)</th>
-                <th className="p-3 font-semibold border-b">Ã‡eviri</th>
-                <th className="p-3 font-semibold border-b">AÃ§Ä±klama</th>
-                <th className="p-3 font-semibold border-b">Ã–rnekler</th>
+                <th className="p-3 font-semibold border-b">Kavram (Çerkesçe)</th>
+                <th className="p-3 font-semibold border-b">Çeviri</th>
+                <th className="p-3 font-semibold border-b">Açıklama</th>
+                <th className="p-3 font-semibold border-b">Örnekler</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-slate-100">
-              {validConcepts.map((item) => (
-                <tr key={item.id} className="hover:bg-slate-50/80 transition-colors">
+              {validConcepts.map((item, index) => (
+                <tr key={`${item.id}-${index}`} className="hover:bg-slate-50/80 transition-colors">
                   <td className="p-3 font-medium text-slate-900">{item.term}</td>
                   <td className="p-3 text-slate-700">{item.translation}</td>
                   <td className="p-3 text-slate-600">{item.description ?? '-'}</td>
                   <td className="p-3 text-slate-600">
                     {item.examples && item.examples.length > 0 ? (
                       <ul className="list-disc list-inside space-y-0.5">
-                        {item.examples.map((example, index) => (
-                          <li key={`${item.id}-ex-${index}`}>{example}</li>
+                        {item.examples.map((example, i) => (
+                          <li key={`${item.id}-ex-${i}`}>{example}</li>
                         ))}
                       </ul>
                     ) : (

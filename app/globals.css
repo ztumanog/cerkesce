@@ -3,7 +3,61 @@
 @variant dark (&:where(.dark, .dark *));
 
 @layer base {
-  html {
-    font-size: 16px;
+  :root {
+    --font-scale: 1;
+    --line-height: 1.5;
+    --letter-spacing: 0em;
+    --contrast-boost: 0;
+  }
+
+  /* Yazı Boyutu */
+  html[data-font="sm"]  { --font-scale: 0.875; }
+  html[data-font="md"]  { --font-scale: 1; }
+  html[data-font="lg"]  { --font-scale: 1.125; }
+  html[data-font="xl"]  { --font-scale: 1.25; }
+
+  /* Satır Aralığı */
+  html[data-line="tight"]  { --line-height: 1.35; }
+  html[data-line="normal"] { --line-height: 1.5; }
+  html[data-line="loose"]  { --line-height: 1.8; }
+
+  /* Harf Aralığı */
+  html[data-letter="normal"] { --letter-spacing: 0em; }
+  html[data-letter="wide"]   { --letter-spacing: 0.05em; }
+
+  /* Kontrast */
+  html[data-contrast="high"] { --contrast-boost: 1; }
+
+  body {
+    line-height: var(--line-height);
+    letter-spacing: var(--letter-spacing);
+    font-size: calc(1rem * var(--font-scale));
+  }
+
+  /* Yüksek Kontrast Modu */
+  html[data-contrast="high"] body {
+    background-color: #fff !important;
+    color: #000 !important;
+  }
+
+  html.dark[data-contrast="high"] body {
+    background-color: #000 !important;
+    color: #fff !important;
+  }
+
+  html[data-contrast="high"] * {
+    border-color: currentColor !important;
+  }
+
+  /* Sistem Tercihleri */
+  @media (prefers-contrast: more) {
+    :root { --contrast-boost: 1; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      transition-duration: 0.01ms !important;
+    }
   }
 }

@@ -82,7 +82,35 @@ function htmlMetniniCikar(value: unknown): string {
   return text;
 }
 
+/* Kiril alfabesi içeriyor mu? (Adigece/Kabardeyce ya da Rusça) */
+const KIRIL_RE = /[\u0400-\u04FF]/;
+const kirilMi = (text: string): boolean => KIRIL_RE.test(text);
 
+/**
+ * Çok anlamlı (homonim) tanımdan ilk anlamı alır ve baştaki/sondaki
+ * işaretleri temizler.
+ *   "I гу. II нэпцӀ."  →  "гу"
+ *   "фӀагъэ зегъэкӀын." →  "фӀагъэ зегъэкӀын"
+ *
+ * Not: Adigece yazımda palochka yerine Latin "I" kullanılabiliyor (СиIэшIу),
+ * bu yüzden Roma rakamı yalnızca boşlukla ayrılmış tek başına bir token
+ * olduğunda sayılır.
+ */
+function ilkAnlamiAl(metin: string): string {
+  let t = metin.replace(/\s+/g, ' ').trim();
+
+  // Baştaki Roma rakamı: "I гу. ..." → "гу. ..."
+  t = t.replace(/^(?:I{1,3}|IV|V|VI)\.?\s+/, '');
+  // Sonraki Roma rakamında kes: "гу. II нэпцӀ." → "гу."
+  t = t.split(/\s+(?:II|III|IV|V|VI)\.?\s+/)[0];
+
+  // Arap rakamlı anlamlar: "1. ... 2. ..." → ilki
+  t = t.replace(/^\d+[.)]\s*/, '');
+  t = t.split(/\s+\d+[.)]\s+/)[0];
+
+  // Sondaki noktalama
+  return t.replace(/[\s,;:.]+$/, '').trim();
+}
 
 async function abazeSozlugunuYukle(): Promise<RawDictionaryEntry[]> {
   const response = await fetch(ABAZE_SOZLUK_DOSYASI);
@@ -92,62 +120,58 @@ async function abazeSozlugunuYukle(): Promise<RawDictionaryEntry[]> {
   const words = data?.words;
   if (!words || typeof words !== 'object') return [];
 
-  // Çerkesçe karakter kontrolü
-   const isCircassian = (text: string): boolean => {
-    // Kiril alfabesi = Çerkesçe (Adigece/Kabardeyce)
-    return /[а-яА-ЯёЁ]/.test(text);
-  };
+  const sonuc: RawDictionaryEntry[] = [];
 
-  return Object.entries(words)
-    .map(([id, value]) => {
-      const item = value as { spelling?: string; full_definition_in_html?: string };
-      const ham = htmlMetniniCikar(item.full_definition_in_html);
+  for (const [id, value] of Object.entries(words)) {
+    const item = value as { spelling?: string; full_definition_in_html?: string };
+    const ham = htmlMetniniCikar(item.full_definition_in_html);
 
-      const parcalar = ham.split('◊');
-      const anlam = parcalar[0].trim().replace(/[,;]\s*$/, '');
-      const ornekler = parcalar
-        .slice(1)
-        .map((p) => p.trim().replace(/^[-–—]\s*/, ''))
-        .filter((p) => p.length > 0)
-        .filter((p) => p.length < 80)
-        .filter((p) => !/^\d+\./.test(p))
-        .filter((p) => !/^[IVX]+\./.test(p));
+    const parcalar = ham.split('◊');
+    const anlam = parcalar[0].trim().replace(/[,;]\s*$/, '');
+    const ornekler = parcalar
+      .slice(1)
+      .map((p) => p.trim().replace(/^[-–—]\s*/, ''))
+      .filter((p) => p.length > 0)
+      .filter((p) => p.length < 80)
+      .filter((p) => !/^\d+\./.test(p))
+      .filter((p) => !/^[IVX]+\./.test(p));
 
-      const spelling = item.spelling || id;
-      const spellingCirc = isCircassian(spelling);
-      const definitionCirc = isCircassian(anlam);
-	        if (item.spelling === 'kalp') {
-        console.log('🔍 KALP DEBUG:', {
-          spelling,
-          anlam,
-          spellingCirc,
-          definitionCirc,
-        });
-      }
+    const spelling = (item.spelling || id).trim();
+    const spellingCirc = kirilMi(spelling);
+    const definitionCirc = kirilMi(anlam);
 
-      let lemma: string;
-      let translation: string;
+    let lemma: string;
+    let translation: string;
 
-      if (spellingCirc && !definitionCirc) {
-        lemma = spelling;
-        translation = anlam;
-      } else if (!spellingCirc && definitionCirc) {
-        lemma = anlam;
-        translation = spelling;
-      } else {
-        lemma = spelling;
-        translation = anlam;
-      }
+    if (!spellingCirc && definitionCirc) {
+      // Türkçe madde başı → Adigece karşılık (asıl durum: Tur-Ady sözlüğü)
+      lemma = ilkAnlamiAl(anlam);
+      translation = spelling;
+    } else if (spellingCirc && !definitionCirc) {
+      // Adigece madde başı → Türkçe tanım
+      lemma = spelling;
+      translation = anlam;
+    } else if (spellingCirc && definitionCirc) {
+      // İkisi de Kiril: tanım büyük ihtimalle Rusça. Türkçe kartta
+      // Rusça anlam göstermemek için bu kayıtları atla.
+      continue;
+    } else {
+      lemma = spelling;
+      translation = anlam;
+    }
 
-      return {
-        id,
-        lemma,
-        translation,
-        ornekler: ornekler.length > 0 ? ornekler : undefined,
-        dialect: 'Adigece',
-      };
-    })
-    .filter((entry) => entry.lemma && entry.translation);
+    if (!lemma || !translation) continue;
+
+    sonuc.push({
+      id,
+      lemma,
+      translation,
+      ornekler: ornekler.length > 0 ? ornekler : undefined,
+      dialect: 'Adigece',
+    });
+  }
+
+  return sonuc;
 }
 
 export default function GununKelimesiKart({
@@ -224,65 +248,65 @@ export default function GununKelimesiKart({
     }
   }, [bugunKelimesi, isSavedInStorage]);
 
-const handleShare = useCallback(async () => {
-  if (!bugunKelimesi) return;
-  setShareLoading(true);
+  const handleShare = useCallback(async () => {
+    if (!bugunKelimesi) return;
+    setShareLoading(true);
 
-  const metin = [
-    '🎓 Açık Mektep Çerkesçe Sözlük — Günün Kelimesi',
-    '',
-    `📖 Kelime: ${cleanHtml(bugunKelimesi.kelime)}`,
-    `🇹🇷 Anlam: ${cleanHtml(bugunKelimesi.anlam || '—')}`,
-    bugunKelimesi.ornekler && bugunKelimesi.ornekler.length > 0
-      ? `💬 Örnek:\n${bugunKelimesi.ornekler.map((o) => `  • ${cleanHtml(o)}`).join('\n')}`
-      : '',
-  ]
-    .filter(Boolean)
-    .join('\n');
+    const metin = [
+      '🎓 Açık Mektep Çerkesçe Sözlük — Günün Kelimesi',
+      '',
+      `📖 Kelime: ${cleanHtml(bugunKelimesi.kelime)}`,
+      `🇹🇷 Anlam: ${cleanHtml(bugunKelimesi.anlam || '—')}`,
+      bugunKelimesi.ornekler && bugunKelimesi.ornekler.length > 0
+        ? `💬 Örnek:\n${bugunKelimesi.ornekler.map((o) => `  • ${cleanHtml(o)}`).join('\n')}`
+        : '',
+    ]
+      .filter(Boolean)
+      .join('\n');
 
-  try {
-    // 1. Android/iOS: Capacitor Share
-    if (Capacitor.isNativePlatform()) {
-      await Share.share({
-        title: 'Açık Mektep Çerkesçe Sözlük',
-        text: metin,
-        url: 'https://acikmektep.com',
-        dialogTitle: 'Paylaş',
-      });
-      toast.success('Paylaşıldı');
-    }
-    // 2. Web: Web Share API
-    else if (typeof navigator !== 'undefined' && navigator.share) {
-      await navigator.share({
-        title: 'Açık Mektep Çerkesçe Sözlük',
-        text: metin,
-        url: 'https://acikmektep.com',
-      });
-      toast.success('Paylaşıldı');
-    }
-    // 3. Fallback: Panoya kopyala
-    else if (typeof navigator !== 'undefined' && navigator.clipboard) {
-      await navigator.clipboard.writeText(metin);
-      toast.success('Metin panoya kopyalandı');
-    } else {
-      toast.error('Paylaşım veya kopyalama desteklenmiyor');
-    }
-  } catch (err: any) {
-    if (err?.name !== 'AbortError') {
-      console.error('Paylaşım hatası:', err);
-      try {
-        if (typeof navigator !== 'undefined' && navigator.clipboard) {
-          await navigator.clipboard.writeText(metin);
-          toast.success('Metin panoya kopyalandı');
-        }
-      } catch (copyErr) {
-        toast.error('Paylaşım yapılırken bir hata oluştu');
+    try {
+      // 1. Android/iOS: Capacitor Share
+      if (Capacitor.isNativePlatform()) {
+        await Share.share({
+          title: 'Açık Mektep Çerkesçe Sözlük',
+          text: metin,
+          url: 'https://acikmektep.com',
+          dialogTitle: 'Paylaş',
+        });
+        toast.success('Paylaşıldı');
       }
+      // 2. Web: Web Share API
+      else if (typeof navigator !== 'undefined' && navigator.share) {
+        await navigator.share({
+          title: 'Açık Mektep Çerkesçe Sözlük',
+          text: metin,
+          url: 'https://acikmektep.com',
+        });
+        toast.success('Paylaşıldı');
+      }
+      // 3. Fallback: Panoya kopyala
+      else if (typeof navigator !== 'undefined' && navigator.clipboard) {
+        await navigator.clipboard.writeText(metin);
+        toast.success('Metin panoya kopyalandı');
+      } else {
+        toast.error('Paylaşım veya kopyalama desteklenmiyor');
+      }
+    } catch (err: any) {
+      if (err?.name !== 'AbortError') {
+        console.error('Paylaşım hatası:', err);
+        try {
+          if (typeof navigator !== 'undefined' && navigator.clipboard) {
+            await navigator.clipboard.writeText(metin);
+            toast.success('Metin panoya kopyalandı');
+          }
+        } catch (copyErr) {
+          toast.error('Paylaşım yapılırken bir hata oluştu');
+        }
+      }
+    } finally {
+      setShareLoading(false);
     }
-  } finally {
-    setShareLoading(false);
-  }
-}, [bugunKelimesi]);
+  }, [bugunKelimesi]);
 
   const handleSave = useCallback(() => {
     if (!bugunKelimesi) return;
@@ -392,8 +416,6 @@ const handleShare = useCallback(async () => {
               <span>📤</span>
               <span>Paylaş</span>
             </button>
-
-            
 
             <button
               type="button"

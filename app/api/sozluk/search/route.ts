@@ -25,6 +25,9 @@ export async function POST(req: NextRequest) {
     const searchTerm = query.toLowerCase().trim();
 
     const results = lexemes
+      // 1. SADECE LEMMALAR (sözlük maddeleri)
+      .filter((l: any) => l.isLemma === true)
+      // 2. Arama filtresi
       .filter((l: any) =>
         l.form?.toLowerCase().includes(searchTerm) ||
         l.literalMeaning?.toLowerCase().includes(searchTerm)
@@ -36,6 +39,7 @@ export async function POST(req: NextRequest) {
           form: l.form,
           ipa: l.ipa,
           literalMeaning: l.literalMeaning,
+          literalMeaningAdy: l.literalMeaningAdy ?? null,
           partOfSpeech: l.partOfSpeech,
           dialectVariants: l.dialectVariants,
           wordFamilyId: l.wordFamilyId,
@@ -44,6 +48,7 @@ export async function POST(req: NextRequest) {
           conceptId: l.conceptId ?? null,
           corpusFrequency: l.corpusFrequency ?? 0,
           derivation: l.derivation ?? null,
+          examples: l.examples ?? [],
         },
         confidence: 85,
       }));
@@ -54,4 +59,3 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: 'Sunucu hatası' }, { status: 500 });
   }
 }
-

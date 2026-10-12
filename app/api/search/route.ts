@@ -1,4 +1,4 @@
-import { NextRequest, NextResponse } from 'next/server';
+﻿import { NextRequest, NextResponse } from 'next/server';
 import fs from 'fs';
 import path from 'path';
 
@@ -16,6 +16,24 @@ function loadLexemes() {
 import { loadDictionaryData } from '@/lib/dictionaryLoader';
 import { normalizePalochka } from '@/domain/utils/normalizePalochka';
 import { buildLexemeIndex, normKey } from '@/lib/lexemeIndex';
+
+/** ADR-0027: Server-side HTML strip — tüm tag'leri kaldırır */
+function stripHtml(raw: string): string {
+  if (!raw) return '';
+  return raw
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&amp;/g, '&')
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;/g, "'")
+    .replace(/<\/?(div|p|br|hr|ul|ol|li)[^>]*>/gi, '\n')
+    .replace(/<[^>]*>/g, ' ')
+    .replace(/\(western\)/gi, '')
+    .replace(/\(eastern\)/gi, '')
+    .replace(/[ \t]+/g, ' ')
+    .replace(/\n\s*\n/g, '\n')
+    .trim();
+}
 
 export interface DictionaryEntry {
   kelime?: string;
@@ -62,7 +80,8 @@ interface GroupedResult {
   kaynaklar: KaynakInfo[];
   dialect?: string;
   score: number;
-  meaning?: string;                                // ⭐ EKLE
+  meaning?: string;
+
   // D-1A: Dilbilimsel Bilgiler
   rootIds?: string[];
   wordFamilyId?: string | null;
@@ -71,6 +90,9 @@ interface GroupedResult {
   partOfSpeech?: string | null;
   corpusFrequency?: number;
   dialectVariants?: { adyghe?: string; kabardian?: string } | null;
+  literalMeaning?: string;
+  /** Türkçe karşılık — lexemes.json translations.tr */
+  ilkAnlam?: string;
 }
 
 function normalizeDialectParam(val: string): string {
@@ -110,7 +132,6 @@ function parseDictionaryText(text: string): ParsedText {
 
   const decoded = decodeHTMLEntities(text).toLowerCase();
 
-  // Arapça ال (el-) takısını temizle
   const normalizeArabic = (str: string): string => {
     return str.replace(/^ال/, '').trim();
   };
@@ -130,10 +151,10 @@ function parseDictionaryText(text: string): ParsedText {
   const exampleSection = tildeParts.slice(1).join(' ');
 
   const tokenize = (str: string) =>
-  str
-    .split(/[;,/\n|:=،]+/)   // ← ، eklendi
-    .map((s) => s.replace(/^[\d\.\)\s]+/, '').trim())
-    .filter(Boolean);
+    str
+      .split(/[;,/\n|:=،]+/)
+      .map((s) => s.replace(/^[\d\.\)\s]+/, '').trim())
+      .filter(Boolean);
 
   return {
     raw: decoded,
@@ -221,9 +242,6 @@ export async function GET(request: NextRequest) {
 
       let score = 0;
 
-      const matchesExactly = (parsed: ParsedText) =>
-        parsed.raw === q || parsed.mainTokens.some((tok) => tok === q);
-
       const matchesInParen = (parsed: ParsedText) =>
         parsed.parenTokens.some((tok) => tok === q);
 
@@ -290,8 +308,7 @@ export async function GET(request: NextRequest) {
 
     // D-1A: Lexeme map
     const lexemes = loadLexemes();
-   const lexemeIndex = buildLexemeIndex(lexemes);
-
+    const lexemeIndex = buildLexemeIndex(lexemes);
 
     const groupedMap = new Map<string, GroupedResult>();
 
@@ -317,10 +334,12 @@ export async function GET(request: NextRequest) {
         ''
       );
 
+      const cleanMeaning = stripHtml(rawMeaning);
+
       const kaynak: KaynakInfo = {
         kelime: String(rawWord),
         sözlük: String(entry.dictionaryName || sourceFile || 'Bilinmeyen Sözlük'),
-        anlam: rawMeaning,
+        anlam: cleanMeaning,
         author: entry.author ? String(entry.author) : undefined,
         year: entry.year ? String(entry.year) : undefined,
         dialect: entry.dialect ? String(entry.dialect) : undefined,
@@ -345,23 +364,45 @@ export async function GET(request: NextRequest) {
           existing.kaynaklar.push(kaynak);
         }
       } else {
-		const lexeme = lexemeIndex.get(normKey(key));
+        // Palochka (Ӏ U+04C0) toLowerCase() ile ӏ (U+04CF) olur; eşleşme kaçmasın
+        // diye üç yazımı sırayla dene.
+        const lexeme: any =
+          lexemeIndex.get(normKey(key)) ??
+          lexemeIndex.get(normKey(String(rawWord))) ??
+          lexemeIndex.get(normKey(normalizePalochka(String(rawWord))));
+
+        // Türkçe karşılık: yalnızca translations.tr
+        const trRaw = lexeme?.translations?.tr;
+        const turkceAnlam: string | undefined =
+          typeof trRaw === 'string' && trRaw.trim() ? trRaw.trim() : undefined;
+
+        // L-KBD-* kayıtlarında literalMeaning Türkçe değil (translations.tr hiçbirinde yok);
+        // bu kayıtlarda karta gönderme, kart temiz kaynak metnine düşsün.
+        const otomatikKbd =
+          typeof lexeme?.id === 'string' && lexeme.id.startsWith('L-KBD-');
+        const literalMeaning: string | undefined =
+          lexeme?.literalMeaning && (turkceAnlam || !otomatikKbd)
+            ? String(lexeme.literalMeaning)
+            : undefined;
+
         groupedMap.set(key, {
-            kelime: String(rawWord),
-            anaKelime: String(rawWord),
-            anlamlar: kaynak.anlam ? [kaynak.anlam] : [],
-			 meaning: kaynak.anlam || '',
-            kaynaklar: [kaynak],
-            dialect: entry.dialect ? String(entry.dialect) : undefined,
-            score,
-            // D-1A: Dilbilimsel Bilgiler
-            rootIds: lexeme?.rootIds ?? lexeme?.derivation?.rootIds ?? [],
-            wordFamilyId: lexeme?.wordFamilyId ?? null,
-            conceptId: lexeme?.conceptId ?? null,
-            ipa: lexeme?.ipa ?? null,
-            partOfSpeech: lexeme?.partOfSpeech ?? null,
-            corpusFrequency: lexeme?.corpusFrequency ?? 0,
-            dialectVariants: lexeme?.dialectVariants ?? null,
+          kelime: String(rawWord),
+          anaKelime: String(rawWord),
+          anlamlar: kaynak.anlam ? [kaynak.anlam] : [],
+          meaning: kaynak.anlam || '',
+          kaynaklar: [kaynak],
+          dialect: entry.dialect ? String(entry.dialect) : undefined,
+          score,
+          // D-1A: Dilbilimsel Bilgiler
+          rootIds: lexeme?.rootIds ?? lexeme?.derivation?.rootIds ?? [],
+          wordFamilyId: lexeme?.wordFamilyId ?? null,
+          conceptId: lexeme?.conceptId ?? null,
+          ipa: lexeme?.ipa ?? null,
+          partOfSpeech: lexeme?.partOfSpeech ?? null,
+          corpusFrequency: lexeme?.corpusFrequency ?? 0,
+          dialectVariants: lexeme?.dialectVariants ?? null,
+          literalMeaning,
+          ilkAnlam: turkceAnlam,
         });
       }
     }
@@ -371,15 +412,10 @@ export async function GET(request: NextRequest) {
     const startIndex = (page - 1) * limit;
     const paginated = grouped.slice(startIndex, startIndex + limit);
 
-	return NextResponse.json({ success: true, results: paginated, total, page, limit });  } catch (error: unknown) {
+    return NextResponse.json({ success: true, results: paginated, total, page, limit });
+  } catch (error: unknown) {
     const errorMessage = error instanceof Error ? error.message : 'Arama hatası';
     console.error('[API /search] Hata:', error);
     return NextResponse.json({ success: false, error: errorMessage }, { status: 500 });
   }
 }
-
-
-
-
-
-

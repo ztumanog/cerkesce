@@ -1,0 +1,176 @@
+"""
+L-KBD kayıtları için korpustan Rusça kısa karşılıkları (gloss) çıkarır.
+Çeviri YAPMAZ; sadece kanıt toplar ve kapsamayı ölçer.
+
+Kullanım: proje köküne (E:\\projeler\\Cerkesce) koy ve çalıştır:
+    python ru_gloss.py
+
+Girdiler:
+    data/corpus/raw/circassian_kbd_ru.jsonl   (kbd → ru)
+    data/corpus/raw/circassian_ru_kbd.jsonl   (ru → kbd, varsa)
+    lexemes.tr-candidates.json                (kapsama.py çıktısı, varsa)
+Çıktılar (lexemes.json'a DOKUNULMAZ):
+    lkbd-ru-glosses.json    id → form, rusça karşılıklar, varsa Türkçe adaylar
+    ceviri-girdi.jsonl      Rusça→Türkçe çeviri adımı için satır satır girdi
+    ru_gloss_out.txt        rapor
+
+Not: Doğu lehçesi (Kabardeyce) dosyaları kullanılır; circassian_ady_* dosyalarına bakılmaz.
+"""
+import json
+import random
+import re
+import sys
+from collections import Counter
+from pathlib import Path
+
+BASE = Path(__file__).resolve().parent
+if not (BASE / "public" / "data").exists():
+    BASE = Path.cwd()
+VERI = BASE / "public" / "data"
+RAW = BASE / "data" / "corpus" / "raw"
+
+KIRIL = re.compile(r"[\u0400-\u04FF]")
+PALOCHKA_VARYANT = {"\u04c0", "\u04cf", "I", "l", "1", "|"}
+MAX_KBD_KELIME = 3   # kbd tarafı en fazla bu kadar kelime (cümleleri ele)
+MAX_RU_KELIME = 4    # ru karşılığı en fazla bu kadar kelime
+MAX_GLOSS = 6        # kayıt başına tutulacak karşılık sayısı
+
+rapor = []
+
+
+def yaz(*a):
+    s = " ".join(str(x) for x in a)
+    rapor.append(s)
+    print(s)
+
+
+def norm(s):
+    s = (s or "").strip()
+    if KIRIL.search(s):
+        s = "".join("\u04cf" if ch in PALOCHKA_VARYANT else ch for ch in s)
+    return s.lower()
+
+
+def temiz_ru(s):
+    s = re.sub(r"\([^)]*\)", " ", s or "")
+    s = re.sub(r"\s+", " ", s).strip(" .;,:-–—").lower()
+    return s
+
+
+if not (VERI / "linguistic" / "lexemes.json").exists():
+    print("HATA: public/data/linguistic/lexemes.json bulunamadı.")
+    sys.exit(1)
+
+lex = json.load(open(VERI / "linguistic" / "lexemes.json", encoding="utf-8"))
+kbd = [l for l in lex if str(l.get("id", "")).startswith("L-KBD-")]
+formlar = {}
+for l in kbd:
+    formlar.setdefault(norm(l.get("form", "")), []).append(l)
+yaz(f"L-KBD kayıt: {len(kbd)}")
+
+# ---------------------------------------------------------------
+# Korpustan topla: norm(form) -> Counter(rusça karşılık)
+# ---------------------------------------------------------------
+glosslar = {}
+okunan = {"satir": 0, "kelime_cifti": 0, "eslesen": 0}
+
+
+def tara(yol, kbd_alani="kbd", ru_alani="ru"):
+    if not yol.exists():
+        yaz(f"  (yok) {yol.name}")
+        return
+    yaz(f"  okunuyor: {yol.name}")
+    with open(yol, encoding="utf-8") as f:
+        for satir in f:
+            satir = satir.strip()
+            if not satir:
+                continue
+            okunan["satir"] += 1
+            try:
+                t = json.loads(satir).get("translation", {})
+            except Exception:  # noqa: BLE001
+                continue
+            k, r = t.get(kbd_alani), t.get(ru_alani)
+            if not k or not r:
+                continue
+            if len(k.split()) > MAX_KBD_KELIME:
+                continue
+            r = temiz_ru(r)
+            if not r or len(r.split()) > MAX_RU_KELIME:
+                continue
+            okunan["kelime_cifti"] += 1
+            anahtar = norm(k)
+            if anahtar in formlar:
+                okunan["eslesen"] += 1
+                glosslar.setdefault(anahtar, Counter())[r] += 1
+
+
+yaz("Korpus taranıyor…")
+tara(RAW / "circassian_kbd_ru.jsonl")
+tara(RAW / "circassian_ru_kbd.jsonl")
+yaz(f"  toplam satır: {okunan['satir']}, kelime düzeyi çift: {okunan['kelime_cifti']}, "
+    f"L-KBD ile eşleşen çift: {okunan['eslesen']}")
+
+# Türkçe adaylar (varsa)
+tr_adaylar = {}
+tr_yol = BASE / "lexemes.tr-candidates.json"
+if tr_yol.exists():
+    d = json.load(open(tr_yol, encoding="utf-8")).get("adaylar", {})
+    for lid, v in d.items():
+        tr_adaylar[lid] = [{"tr": a["tr"], "guven": a["guven"]} for a in v["adaylar"][:3]]
+    yaz(f"Türkçe adaylar okundu: {len(tr_adaylar)} kayıt")
+else:
+    yaz("(lexemes.tr-candidates.json yok; önce kapsama.py çalıştırılabilir, zorunlu değil)")
+
+# ---------------------------------------------------------------
+# Kayıt bazında birleştir
+# ---------------------------------------------------------------
+sonuc = {}
+for anahtar, sayac in glosslar.items():
+    ru = [g for g, _ in sayac.most_common(MAX_GLOSS)]
+    for l in formlar[anahtar]:
+        sonuc[l["id"]] = {"form": l["form"], "ru": ru}
+        if l["id"] in tr_adaylar:
+            sonuc[l["id"]]["tr_adaylar"] = tr_adaylar[l["id"]]
+
+toplam = len(kbd)
+
+
+def oran(n):
+    return f"{n} / {toplam} (%{100 * n / max(1, toplam):.1f})"
+
+
+ru_var = set(sonuc)
+tr_var = set(tr_adaylar)
+yaz("=" * 60)
+yaz("KAPSAMA")
+yaz("  Rusça karşılığı olan      :", oran(len(ru_var)))
+yaz("  Türkçe adayı olan         :", oran(len(tr_var)))
+yaz("  İkisi de olan             :", oran(len(ru_var & tr_var)))
+yaz("  İkisi de olmayan          :", oran(toplam - len(ru_var | tr_var)))
+dag = Counter(min(len(v["ru"]), 5) for v in sonuc.values())
+yaz("  Karşılık sayısı dağılımı  :", {k: dag[k] for k in sorted(dag)}, "(5 = 5 ve üzeri)")
+
+random.seed(2)
+yaz("=" * 60)
+yaz("12 RASTGELE ÖRNEK:")
+for lid in random.sample(sorted(sonuc), min(12, len(sonuc))):
+    v = sonuc[lid]
+    yaz("  ", lid, v["form"], "→", v["ru"], v.get("tr_adaylar", ""))
+
+yok = [l for l in kbd if l["id"] not in ru_var]
+yaz("=" * 60)
+yaz("RUSÇA KARŞILIĞI OLMAYAN 12 RASTGELE FORM:")
+for l in random.sample(yok, min(12, len(yok))):
+    yaz("  ", l["id"], l["form"])
+
+# ---------------------------------------------------------------
+# Çıktılar
+# ---------------------------------------------------------------
+(BASE / "lkbd-ru-glosses.json").write_text(
+    json.dumps(sonuc, ensure_ascii=False, indent=1), encoding="utf-8")
+with open(BASE / "ceviri-girdi.jsonl", "w", encoding="utf-8") as f:
+    for lid, v in sonuc.items():
+        f.write(json.dumps({"id": lid, **v}, ensure_ascii=False) + "\n")
+(BASE / "ru_gloss_out.txt").write_text("\n".join(rapor), encoding="utf-8")
+print(f"\nYazıldı: lkbd-ru-glosses.json, ceviri-girdi.jsonl, ru_gloss_out.txt ({BASE})", file=sys.stderr)

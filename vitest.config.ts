@@ -1,4 +1,4 @@
-import { defineConfig } from 'vitest/config';
+﻿import { defineConfig } from 'vitest/config';
 import path from 'path';
 
 export default defineConfig({
@@ -7,7 +7,7 @@ export default defineConfig({
       '@': path.resolve('./src'),
     },
   },
-  test: {
+  test: { globals: true, globals: true,
     include: ['src/tests/**/*.test.ts', 'src/repository/**/*.test.ts'],
     exclude: [
       'src/tests/smoke/**',
@@ -26,4 +26,6 @@ export default defineConfig({
     ],
   },
 });
+
+
 

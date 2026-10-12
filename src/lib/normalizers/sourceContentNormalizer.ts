@@ -394,7 +394,6 @@ export function normalizeToSourceContents(
       }
 
       const cleanedText = temizleHtml(rawParts.join('\n'));
-     console.log('CLEANED TEXT:', JSON.stringify(cleanedText));
       const sections = buildSections(cleanedText);
       const flat = flattenSections(sections);
 

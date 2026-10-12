@@ -1,15 +1,15 @@
-﻿/**
- * File: src/app/layout.tsx
- * Generated: 2026-09-19
+/**
+ * File: app/layout.tsx
  * Layer: UI
  */
 import type { Metadata } from 'next';
-import Script from 'next/script';
 import Header from '@/components/layout/Header';
 import { FooterWrapper } from '@/components/layout/FooterWrapper';
 import { Toaster } from 'sonner';
 import BildirimBaslatici from '@/components/features/BildirimBaslatici';
 import SWRegister from './SWRegister';
+import { TercihProvider } from '@/contexts/TercihContext';
+import { TemaBaslatici } from '@/components/features/TemaBaslatici';
 import './globals.css';
 
 export const metadata: Metadata = {
@@ -28,28 +28,6 @@ export const metadata: Metadata = {
   },
 };
 
-const themeScript = `
-  (function() {
-    try {
-      var theme = localStorage.getItem('theme');
-      var fontSize = localStorage.getItem('font-size');
-
-      if (theme === 'dark' || (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-        document.documentElement.classList.add('dark');
-      } else {
-        document.documentElement.classList.remove('dark');
-      }
-
-      if (fontSize) {
-        var size = parseInt(fontSize, 10);
-        if (!isNaN(size) && size >= 12 && size <= 22) {
-          document.documentElement.style.setProperty('--font-size-base', size + 'px');
-        }
-      }
-    } catch (e) {}
-  })();
-`;
-
 export default function RootLayout({
   children,
 }: {
@@ -57,38 +35,43 @@ export default function RootLayout({
 }) {
   return (
     <html lang="tr" suppressHydrationWarning>
-            <head>
+      <head>
         <link rel="manifest" href="/manifest.webmanifest" />
         <meta name="theme-color" content="#d97706" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
         <meta name="apple-mobile-web-app-title" content="Çerkesçe" />
         <link rel="apple-touch-icon" href="/icons/favicon.svg" />
-        
       </head>
       <body
         suppressHydrationWarning
         className="flex flex-col min-h-screen bg-white dark:bg-slate-950 text-slate-900 dark:text-slate-50 transition-colors duration-200 antialiased"
       >
-        <nav className="bg-gray-900 text-white p-4">
-  <div className="container mx-auto flex flex-wrap gap-4 items-center">
-    <a href="/" className="font-bold text-lg">Çerkesçe Sözlük</a>
-    <a href="/executive" className="hover:text-blue-400">Executive</a>
-    <a href="/governance" className="hover:text-blue-400">Governance</a>
-    <a href="/intelligence" className="hover:text-blue-400">Intelligence</a>
-    <a href="/knowledge" className="hover:text-blue-400">Knowledge</a>
-          <a href="/knowledge/details" className="hover:text-blue-400 text-sm opacity-75">↳ Details</a>
-    <a href="/operations" className="hover:text-blue-400">Operations</a>
-    <a href="/morphology" className="hover:text-blue-400">Morfoloji</a>
-    <a href="/sozluk" className="hover:text-blue-400">Sözlük</a>
-  </div>
-</nav>
-               <SWRegister />
-        <BildirimBaslatici />
-        <Header />
-        <main className="flex-1 w-full">{children}</main>
-<FooterWrapper />        <Toaster richColors position="bottom-right" />
+
+        <TemaBaslatici />
+        <TercihProvider>
+          <nav className="bg-gray-900 text-white p-4">
+            <div className="container mx-auto flex flex-wrap gap-4 items-center">
+              <a href="/" className="font-bold text-lg">Çerkesçe Sözlük</a>
+              <a href="/executive" className="hover:text-blue-400">Executive</a>
+              <a href="/governance" className="hover:text-blue-400">Governance</a>
+              <a href="/intelligence" className="hover:text-blue-400">Intelligence</a>
+              <a href="/knowledge" className="hover:text-blue-400">Knowledge</a>
+              <a href="/knowledge/details" className="hover:text-blue-400 text-sm opacity-75">↳ Details</a>
+              <a href="/operations" className="hover:text-blue-400">Operations</a>
+              <a href="/morphology" className="hover:text-blue-400">Morfoloji</a>
+              <a href="/sozluk" className="hover:text-blue-400">Sözlük</a>
+            </div>
+          </nav>
+          <SWRegister />
+          <BildirimBaslatici />
+          <Header />
+          <main className="flex-1 w-full">{children}</main>
+          <FooterWrapper />
+          <Toaster richColors position="bottom-right" />
+        </TercihProvider>
       </body>
     </html>
   );
 }
+

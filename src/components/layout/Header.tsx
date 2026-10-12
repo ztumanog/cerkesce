@@ -3,41 +3,26 @@
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Star, Sun, Moon, Type } from 'lucide-react';
+import { Star } from 'lucide-react';
+import { useTercih } from '@/contexts/TercihContext';
 
 export default function Header() {
-  const [theme, setTheme] = useState<'dark' | 'light'>('dark');
-  const [fontSize, setFontSize] = useState<number>(17);
   const [mounted, setMounted] = useState(false);
+  const [theme, setTheme] = useState<'dark' | 'light'>('dark');
+  const { font, setFont, line, setLine, letter, setLetter, contrast, setContrast } = useTercih();
 
-  // ===== HYDRATION FIX =====
   useEffect(() => {
     setMounted(true);
   }, []);
 
-  // Sayfa yüklendiğinde hafızadaki tercihleri oku
   useEffect(() => {
     if (!mounted) return;
-
     const savedTheme = localStorage.getItem('theme') as 'dark' | 'light' | null;
-    if (savedTheme) {
-      setTheme(savedTheme);
-    }
-
-    const savedFontSize = localStorage.getItem('fontSize');
-    if (savedFontSize) {
-      const size = Number(savedFontSize);
-      // Güvenlik: 14-20px aralığında tut
-      if (size >= 14 && size <= 20) {
-        setFontSize(size);
-      }
-    }
+    if (savedTheme) setTheme(savedTheme);
   }, [mounted]);
 
-  // Tema değişimi ve localStorage senkronizasyonu
   useEffect(() => {
     if (!mounted) return;
-
     const root = document.documentElement;
     if (theme === 'dark') {
       root.classList.add('dark');
@@ -47,27 +32,35 @@ export default function Header() {
     localStorage.setItem('theme', theme);
   }, [theme, mounted]);
 
-  // Font boyutu değişimi ve localStorage senkronizasyonu
+  // Klavye kısayolları
   useEffect(() => {
     if (!mounted) return;
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (!e.ctrlKey && !e.metaKey) return;
+      const fontSizes: Array<'sm' | 'md' | 'lg' | 'xl'> = ['sm', 'md', 'lg', 'xl'];
+      if (e.key === '=' || e.key === '+') {
+        e.preventDefault();
+        const idx = fontSizes.indexOf(font);
+        setFont(fontSizes[Math.min(idx + 1, 3)]);
+      }
+      if (e.key === '-') {
+        e.preventDefault();
+        const idx = fontSizes.indexOf(font);
+        setFont(fontSizes[Math.max(idx - 1, 0)]);
+      }
+      if (e.key === '0') {
+        e.preventDefault();
+        setFont('md');
+      }
+      if (e.key === 'c' || e.key === 'C') {
+        e.preventDefault();
+        setContrast(contrast === 'high' ? 'normal' : 'high');
+      }
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [font, contrast, mounted, setFont, setContrast]);
 
-    document.documentElement.style.fontSize = `${fontSize}px`;
-    localStorage.setItem('fontSize', String(fontSize));
-  }, [fontSize, mounted]);
-
-  const toggleTheme = () => {
-    setTheme((prev) => (prev === 'dark' ? 'light' : 'dark'));
-  };
-
-  const decreaseFont = () => {
-    setFontSize((prev) => Math.max(14, prev - 1));
-  };
-
-  const increaseFont = () => {
-    setFontSize((prev) => Math.min(20, prev + 1));
-  };
-
-  // Hydration sırasında render etme
   if (!mounted) {
     return (
       <header className="border-b border-slate-200 dark:border-slate-800 px-3 py-2.5 sm:px-8 sm:py-4 bg-white/90 dark:bg-[#090d16]/90 backdrop-blur-md sticky top-0 z-50">
@@ -89,7 +82,6 @@ export default function Header() {
   return (
     <header className="border-b border-slate-200 dark:border-slate-800 px-3 py-2.5 sm:px-8 sm:py-4 bg-white/90 dark:bg-[#090d16]/90 backdrop-blur-md sticky top-0 z-50 transition-colors duration-300">
       <div className="max-w-4xl mx-auto flex items-center justify-between gap-2 sm:gap-4">
-        {/* Logo ve Başlık */}
         <div className="flex items-center gap-2 sm:gap-3 min-w-0">
           <div className="relative h-9 w-9 sm:h-11 sm:w-11 flex items-center justify-center rounded-lg sm:rounded-xl overflow-hidden shrink-0 border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900 transition-colors duration-300">
             <Image
@@ -99,21 +91,15 @@ export default function Header() {
               className="object-contain p-1"
               priority
               onError={(e) => {
-                // Logo yüklenemezse fallback
                 const img = e.target as HTMLImageElement;
                 img.style.display = 'none';
                 const parent = img.parentElement;
-                if (parent) {
-                  parent.textContent = '📚';
-                }
+                if (parent) parent.textContent = '📚';
               }}
             />
           </div>
           <div className="min-w-0">
-            <h1 
-              className="text-base sm:text-lg font-bold text-slate-900 dark:text-white leading-tight truncate transition-colors duration-300"
-              title="Çerkesçe Sözlük"
-            >
+            <h1 className="text-base sm:text-lg font-bold text-slate-900 dark:text-white leading-tight truncate transition-colors duration-300" title="Çerkesçe Sözlük">
               Çerkesçe Sözlük
             </h1>
             <p className="hidden sm:block text-xs text-slate-600 dark:text-slate-300 transition-colors duration-300">
@@ -122,62 +108,73 @@ export default function Header() {
           </div>
         </div>
 
-        {/* Font Boyutu ve Tema Kontrolleri */}
         <div className="flex items-center gap-1 bg-slate-100 dark:bg-[#131b2e] p-1 rounded-lg sm:rounded-xl border border-slate-300 dark:border-slate-700 transition-colors duration-300">
-          
-          {/* FONT BOYUTU KONTROL */}
-          <div className="flex items-center text-xs sm:text-sm font-mono text-slate-700 dark:text-slate-200 px-0.5 sm:px-1">
-            <button
-              onClick={decreaseFont}
-              disabled={fontSize <= 14}
-              className="px-1.5 sm:px-2 py-1 hover:bg-slate-200 dark:hover:bg-slate-700 rounded-lg transition-colors font-bold whitespace-nowrap active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed"
-              title="Metni Küçült (En az 14px)"
-              aria-label="Yazı boyutunu küçült"
-            >
-              −A
-            </button>
-            <span 
-              className="px-2 py-1 text-slate-600 dark:text-slate-300 border-x border-slate-300 dark:border-slate-700 mx-1 font-semibold min-w-[48px] text-center transition-colors duration-300"
-              aria-live="polite"
-            >
-              {fontSize}px
-            </span>
-            <button
-              onClick={increaseFont}
-              disabled={fontSize >= 20}
-              className="px-1.5 sm:px-2 py-1 hover:bg-slate-200 dark:hover:bg-slate-700 rounded-lg transition-colors font-bold whitespace-nowrap active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed"
-              title="Metni Büyüt (En fazla 20px)"
-              aria-label="Yazı boyutunu büyüt"
-            >
-              +A
-            </button>
+          <div className="flex items-center">
+            {(['sm', 'md', 'lg', 'xl'] as const).map((size) => (
+              <button
+                key={size}
+                onClick={() => setFont(size)}
+                className={`px-2 py-1 text-[11px] sm:text-xs font-semibold rounded-lg transition-all duration-200 ${
+                  font === size
+                    ? 'bg-amber-500 text-white'
+                    : 'text-slate-700 dark:text-slate-200 hover:bg-slate-200 dark:hover:bg-slate-700'
+                }`}
+                title={`Yazı boyutu: ${size === 'sm' ? 'Küçük' : size === 'md' ? 'Normal' : size === 'lg' ? 'Büyük' : 'Çok Büyük'}`}
+              >
+                A
+              </button>
+            ))}
           </div>
 
-                   {/* FAVORİLER LİNKİ */}
+          <select
+            value={line}
+            onChange={(e) => setLine(e.target.value as 'tight' | 'normal' | 'loose')}
+            className="px-2 py-1 text-[11px] sm:text-xs font-semibold text-slate-700 dark:text-slate-200 bg-transparent border border-slate-300 dark:border-slate-700 rounded-lg cursor-pointer focus:outline-none focus:ring-2 focus:ring-amber-500"
+            title="Satır aralığı"
+          >
+            <option value="tight">Sıkı</option>
+            <option value="normal">Normal</option>
+            <option value="loose">Geniş</option>
+          </select>
+
+          <button
+            onClick={() => setLetter(letter === 'wide' ? 'normal' : 'wide')}
+            className={`px-2 py-1 text-[11px] sm:text-xs font-semibold rounded-lg transition-all duration-200 ${
+              letter === 'wide'
+                ? 'bg-sky-500 text-white'
+                : 'text-slate-700 dark:text-slate-200 hover:bg-slate-200 dark:hover:bg-slate-700'
+            }`}
+            title={`Harf aralığı: ${letter === 'wide' ? 'Geniş' : 'Normal'}`}
+          >
+            Harf
+          </button>
+
+          <button
+            onClick={() => setContrast(contrast === 'high' ? 'normal' : 'high')}
+            className={`px-2 py-1 text-[11px] sm:text-xs font-semibold rounded-lg transition-all duration-200 ${
+              contrast === 'high'
+                ? 'bg-purple-500 text-white'
+                : 'text-slate-700 dark:text-slate-200 hover:bg-slate-200 dark:hover:bg-slate-700'
+            }`}
+            title={`Kontrast modu (Ctrl + C) - Şu an: ${contrast === 'high' ? 'Yüksek' : 'Normal'}`}
+          >
+            🌓
+          </button>
+
           <Link
             href="/favoriler"
-            className="flex items-center gap-1 px-2 sm:px-3 py-1.5 text-[11px] sm:text-xs font-semibold text-yellow-700 dark:text-yellow-300 bg-yellow-500/10 hover:bg-yellow-500/20 dark:hover:bg-yellow-500/30 rounded-lg transition-all duration-300 border border-yellow-500/30 whitespace-nowrap"
-            aria-label="Favoriler"
+            className="flex items-center gap-1 px-2 py-1 text-[11px] sm:text-xs font-semibold text-yellow-700 dark:text-yellow-300 hover:bg-yellow-500/20 rounded-lg transition-all duration-200"
             title="Favoriler"
           >
             <Star size={14} className="text-yellow-500" fill="currentColor" />
-            <span className="hidden sm:inline">Favoriler</span>
           </Link>
 
-          {/* TEMA TOGGLE */}
           <button
-            onClick={toggleTheme}
-            
-            className="flex items-center gap-1 px-2 sm:px-3 py-1.5 text-[11px] sm:text-xs font-semibold text-amber-700 dark:text-amber-300 bg-amber-500/10 hover:bg-amber-500/20 dark:hover:bg-amber-500/30 rounded-lg transition-all duration-300 border border-amber-500/30 whitespace-nowrap"
-            aria-label={`Temayı değiştir (Şu an: ${theme === 'dark' ? 'Karanlık' : 'Aydınlık'})`}
-            title={`Temayı değiştir (Şu an: ${theme === 'dark' ? 'Karanlık' : 'Aydınlık'})`}
+            onClick={() => setTheme(t => t === 'dark' ? 'light' : 'dark')}
+            className="px-2 py-1 text-[11px] sm:text-xs font-semibold text-amber-700 dark:text-amber-300 hover:bg-amber-500/20 rounded-lg transition-all duration-200"
+            title={`Tema: ${theme === 'dark' ? 'Karanlık' : 'Aydınlık'}`}
           >
-            <span className="transition-transform duration-300 inline-block">
-              {theme === 'dark' ? '☀️' : '🌙'}
-            </span>
-            <span className="hidden sm:inline">
-              {theme === 'dark' ? 'Aydınlık' : 'Karanlık'}
-            </span>
+            {theme === 'dark' ? '☀️' : '🌙'}
           </button>
         </div>
       </div>

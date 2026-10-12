@@ -1,4 +1,4 @@
-﻿import { normalizePalochka } from '@/domain/utils/normalizePalochka';
+import { normalizePalochka } from '@/domain/utils/normalizePalochka';
 
 export interface Lexeme {
   id: string;
