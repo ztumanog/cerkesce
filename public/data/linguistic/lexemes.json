@@ -6580,7 +6580,7 @@
   {
     "id": "L-GUSHHUE",
     "form": "гушхуэ",
-    "ipa": "/gwǝʃxʷa/",
+    "ipa": "/gʷǝʂ'xʷɐn/",
     "literalMeaning": "buyuk kalp",
     "conceptId": "CHARACTER",
     "dialectVariants": {
@@ -7865,7 +7865,8 @@
     },
     "subConceptId": "BRIDGE",
     "taxonomyFamily": "Ayak & Adım",
-    "rootForm": "лъэ-"
+    "rootForm": "лъэ-",
+    "ipa": "/ɬɐ'mǝᶎ/"
   },
   {
     "id": "L-LHESHCH",
@@ -7934,7 +7935,7 @@
     "subConceptId": "SIDE",
     "taxonomyFamily": "Ayak & Adım",
     "rootForm": "лъэ-",
-    "ipa": "/ɬɐn/"
+    "ipa": "/ɬɐ'nǝqʹʷɐ/"
   },
   {
     "id": "L-SHHYASHE",
@@ -8731,7 +8732,7 @@
   {
     "id": "L-PSYK1ANT1E",
     "form": "псы кӀантӀэ",
-    "ipa": "/ps╔Ö k╩À╩╝ant╩╣a/",
+    "ipa": "/psǝˈtʹʂɑ:ntʹɐ/",
     "literalMeaning": "kucuk su",
     "conceptId": "STREAM",
     "dialectVariants": {
@@ -9358,7 +9359,7 @@
   {
     "id": "L-SHQE",
     "form": "шъыпкъэ",
-    "ipa": "/ʂəpqʷʼa/",
+    "ipa": "/'ɕǝpʹqʹɐ/",
     "literalMeaning": "dogru",
     "conceptId": "TRUE",
     "dialectVariants": {
@@ -9381,7 +9382,7 @@
   {
     "id": "L-SHQAGHE",
     "form": "шъыпкъагъэ",
-    "ipa": "/ʂəpqʷʼaʁa/",
+    "ipa": "/ɕǝ'pʹqʹɑ:ʁɐ/",
     "literalMeaning": "dogruluk",
     "conceptId": "TRUTH",
     "dialectVariants": {
@@ -9411,7 +9412,7 @@
   {
     "id": "L-SHQEU",
     "form": "шъыпкъэу",
-    "ipa": "/ʂəpqʷʼaw/",
+    "ipa": "/'ɕǝpʹqʹɐ/",
     "literalMeaning": "dogru olarak",
     "conceptId": "TRULY",
     "dialectVariants": {
@@ -9434,7 +9435,7 @@
   {
     "id": "L-SHQEM",
     "form": "шъыпкъэм",
-    "ipa": "/ʂəpqʷʼam/",
+    "ipa": "/'ɕǝpʹqʹɐ/",
     "literalMeaning": "dogruya",
     "conceptId": "TRUTH",
     "dialectVariants": {
@@ -9684,7 +9685,8 @@
       ],
       "morphemeIds": [],
       "rule": "root"
-    }
+    },
+    "ipa": "/ɕo:/"
   },
   {
     "id": "L-TSYGHO",
@@ -17330,7 +17332,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/xor/"
   },
   {
     "id": "L-ZENDALE",
@@ -19630,7 +19633,8 @@
     "translations": {
       "tr": "?"
     },
-    "conceptId": "BODY_STRUCTURE"
+    "conceptId": "BODY_STRUCTURE",
+    "ipa": "/ɬɐ'dɑ:nɐ/"
   },
   {
     "id": "L-LHEN",
@@ -20506,7 +20510,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "PROTECT"
+    "conceptId": "PROTECT",
+    "ipa": "/qʹɐʁɐ'ɕtɐn/"
   },
   {
     "id": "L-KESHENEN",
@@ -20729,7 +20734,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "VALLEY"
+    "conceptId": "VALLEY",
+    "ipa": "/qʹʷǝ'ħɐn/"
   },
   {
     "id": "L-KUKHAFEZHEY",
@@ -20886,7 +20892,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "YEAR"
+    "conceptId": "YEAR",
+    "ipa": "/ʁɐɕ'tɐn/"
   },
   {
     "id": "L-GHESHENEN",
@@ -21764,7 +21771,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/xɐˈʁʷɐn/"
   },
   {
     "id": "L-ME-YEUN",
@@ -25463,7 +25471,7 @@
   {
     "id": "L-D0BAD18AD18D-5",
     "form": "къэхуэн",
-    "ipa": null,
+    "ipa": "/qʹʷɐ'xʷɐn/",
     "literalMeaning": "düşmek",
     "partOfSpeech": "verb",
     "notes": "",
@@ -25791,7 +25799,7 @@
   {
     "id": "L-D0B3D18AD183-3",
     "form": "гъуабэ",
-    "ipa": "/ʁʷaːba/",
+    "ipa": "/'ʁʷɑ:bᶎɐ/",
     "literalMeaning": "kahverengi",
     "partOfSpeech": "adjective",
     "notes": "",
@@ -26518,7 +26526,7 @@
   {
     "id": "L-D0BCD18DD180",
     "form": "мэрмысэ",
-    "ipa": null,
+    "ipa": "/mɐrɐˈmǝsɐ/",
     "literalMeaning": "mısır çorbası",
     "partOfSpeech": "noun",
     "notes": "",
@@ -28327,7 +28335,7 @@
   {
     "id": "L-D0B1D0B6D0B0",
     "form": "бжамий",
-    "ipa": null,
+    "ipa": "/bʑɐ'mi:j/",
     "literalMeaning": "flüt, kaval",
     "partOfSpeech": "noun",
     "notes": "",
@@ -28820,7 +28828,7 @@
   {
     "id": "L-D0B3D18AD18D-5",
     "form": "гъэжьын",
-    "ipa": null,
+    "ipa": "/ʁɐ'ᶎǝn/",
     "literalMeaning": "kızartmak, kavurmak",
     "partOfSpeech": "verb",
     "notes": "",
@@ -29069,7 +29077,7 @@
   {
     "id": "L-D0B3D18AD18D-6",
     "form": "гъэбзэщӀэн",
-    "ipa": null,
+    "ipa": "/ʁɐzɐ'ɕʹɐn/",
     "literalMeaning": "bezemek, donatmak",
     "partOfSpeech": "verb",
     "notes": "[ANIMAL etiketinden cikarildi]",
@@ -29122,7 +29130,7 @@
   {
     "id": "L-D0BAD18AD18D-10",
     "form": "къэухыжын",
-    "ipa": null,
+    "ipa": "/qʹɐxǝ'ᶎǝn/",
     "literalMeaning": "tamamen bitirmek",
     "partOfSpeech": "verb",
     "notes": "",
@@ -29200,7 +29208,7 @@
   {
     "id": "L-D183D0B1D0B3",
     "form": "убгъон",
-    "ipa": null,
+    "ipa": "/wǝb'ʁʷǝn/",
     "literalMeaning": "yaymak, sermek",
     "partOfSpeech": "verb",
     "notes": "",
@@ -29463,7 +29471,7 @@
   {
     "id": "L-D188D18DD187-2",
     "form": "шэчншэу",
-    "ipa": null,
+    "ipa": "/ʂɐ'tʂǝnʂɐw/",
     "literalMeaning": "şüphesiz",
     "partOfSpeech": "adverb",
     "notes": "",
@@ -29736,7 +29744,7 @@
   {
     "id": "L-D0BFD181D18B-4",
     "form": "псыджанэ",
-    "ipa": null,
+    "ipa": "/psǝˈdɑ:nɐ/",
     "literalMeaning": "göl, gölet",
     "partOfSpeech": "noun",
     "notes": "",
@@ -30840,7 +30848,7 @@
   {
     "id": "L-D0BED180D18D-2",
     "form": "орэдыжь",
-    "ipa": null,
+    "ipa": "/wɐrɐ'dǝʑ/",
     "literalMeaning": "ağıt",
     "partOfSpeech": "noun",
     "notes": "",
@@ -34046,7 +34054,7 @@
     "literalMeaning": "anlamak, hissetmek",
     "conceptId": "FEEL",
     "partOfSpeech": "verb",
-    "ipa": "/zaxaɕʼən/",
+    "ipa": "/zɐxʷɐ'ɕʹǝn/",
     "corpusFrequency": 2850,
     "notes": "KBD Corpus rank 100",
     "rootIds": [
@@ -37397,7 +37405,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/ʁʷɐgʷ/"
   },
   {
     "id": "L-CORPUS-00047",
@@ -38042,7 +38051,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/ɐ'rǝɕ/"
   },
   {
     "id": "L-CORPUS-00071",
@@ -38638,7 +38648,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/zǝ'gʷɐr/"
   },
   {
     "id": "L-CORPUS-00093",
@@ -40058,7 +40069,8 @@
       ],
       "morphemeIds": [],
       "rule": "root"
-    }
+    },
+    "ipa": "/qʹʷɐ/"
   },
   {
     "id": "L-CORPUS-00149",
@@ -41244,7 +41256,8 @@
       ]
     },
     "isLemma": false,
-    "conceptId": "MORNING"
+    "conceptId": "MORNING",
+    "ipa": "/'dɐʁʷɐw/"
   },
   {
     "id": "L-CORPUS-00195",
@@ -41644,7 +41657,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "DINING_ROOM"
+    "conceptId": "DINING_ROOM",
+    "ipa": "/wɐ'rɐd/"
   },
   {
     "id": "L-CORPUS-00209",
@@ -42532,7 +42546,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "COLOR"
+    "conceptId": "COLOR",
+    "ipa": "/te:ˈtǝʁʷɐ/"
   },
   {
     "id": "L-CORPUS-00244",
@@ -43109,7 +43124,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/'dǝɕɐ/"
   },
   {
     "id": "L-CORPUS-00266",
@@ -43710,7 +43726,8 @@
     "conceptId": "LIVE",
     "subConceptId": "LIFE",
     "taxonomyFamily": "Yaşam & Sağlık",
-    "rootForm": "щы-"
+    "rootForm": "щы-",
+    "ipa": "/ɕǝpsɐ'wǝn/"
   },
   {
     "id": "L-CORPUS-00287",
@@ -45303,7 +45320,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "COLOR"
+    "conceptId": "COLOR",
+    "ipa": "/'qʹʷǝɕħɐ/"
   },
   {
     "id": "L-CORPUS-00349",
@@ -47519,7 +47537,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/'ɐrqʹǝm/"
   },
   {
     "id": "L-CORPUS-00433",
@@ -49038,7 +49057,8 @@
       ],
       "morphemeIds": [],
       "rule": "root"
-    }
+    },
+    "ipa": "/ʑǝ/"
   },
   {
     "id": "L-CORPUS-00493",
@@ -49676,7 +49696,8 @@
     },
     "rootIds": [
       "R-SHKH"
-    ]
+    ],
+    "ipa": "/ɕħɐ/"
   },
   {
     "id": "L-CORPUS-00520",
@@ -52781,7 +52802,8 @@
       ],
       "morphemeIds": [],
       "rule": "root"
-    }
+    },
+    "ipa": "/'ɕɑ:bɐ/"
   },
   {
     "id": "L-CORPUS-00639",
@@ -53626,7 +53648,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "MULTICOLOR"
+    "conceptId": "MULTICOLOR",
+    "ipa": "/'zɑ:qʹʷɐ/"
   },
   {
     "id": "L-CORPUS-00673",
@@ -54397,7 +54420,8 @@
     "translations": {
       "ru": "правый, -ая, -ое <div style='"
     },
-    "conceptId": "NINE"
+    "conceptId": "NINE",
+    "ipa": "/dᶎɐ'bɐʁʷ/"
   },
   {
     "id": "L-CORPUS-00700",
@@ -54820,7 +54844,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "COLOR"
+    "conceptId": "COLOR",
+    "ipa": "/pɕɐ'rǝɬ/"
   },
   {
     "id": "L-CORPUS-00716",
@@ -55040,7 +55065,8 @@
       ],
       "morphemeIds": [],
       "rule": "root"
-    }
+    },
+    "ipa": "/'ɕɑ:wɐ/"
   },
   {
     "id": "L-CORPUS-00724",
@@ -55905,7 +55931,8 @@
       ],
       "morphemeIds": [],
       "rule": "root"
-    }
+    },
+    "ipa": "/je:'wɐn/"
   },
   {
     "id": "L-CORPUS-00756",
@@ -56314,7 +56341,8 @@
       ],
       "morphemeIds": [],
       "rule": "suffix"
-    }
+    },
+    "ipa": "/'zɑ:ʁʷɐwǝrɐ/"
   },
   {
     "id": "L-CORPUS-00770",
@@ -56833,7 +56861,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "TOP"
+    "conceptId": "TOP",
+    "ipa": "/qʹǝxʷɐʁɐ'ʁʷǝn/"
   },
   {
     "id": "L-CORPUS-00789",
@@ -58569,7 +58598,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/qʹɐ'χʷǝʁɐ/"
   },
   {
     "id": "L-CORPUS-00859",
@@ -59403,7 +59433,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/'mǝʁʷɐ/"
   },
   {
     "id": "L-CORPUS-00889",
@@ -60622,7 +60653,8 @@
       ]
     },
     "isLemma": false,
-    "conceptId": "MIND"
+    "conceptId": "MIND",
+    "ipa": "/'psǝχʷɐ/"
   },
   {
     "id": "L-CORPUS-00933",
@@ -62536,7 +62568,8 @@
       ],
       "morphemeIds": [],
       "rule": "root"
-    }
+    },
+    "ipa": "/'zɑ:wɐ/"
   },
   {
     "id": "L-CORPUS-01004",
@@ -63513,7 +63546,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "PROTECT"
+    "conceptId": "PROTECT",
+    "ipa": "/qʹɐ'χʷǝn/"
   },
   {
     "id": "L-CORPUS-01039",
@@ -63955,7 +63989,8 @@
       ]
     },
     "isLemma": false,
-    "conceptId": "BODY_STRUCTURE"
+    "conceptId": "BODY_STRUCTURE",
+    "ipa": "/qʹɐʁɐɬɐ'ʁʷɐn/"
   },
   {
     "id": "L-CORPUS-01056",
@@ -67564,7 +67599,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "SEA"
+    "conceptId": "SEA",
+    "ipa": "/te:ˈχʷɐn/"
   },
   {
     "id": "L-CORPUS-01188",
@@ -67617,7 +67653,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "VALLEY"
+    "conceptId": "VALLEY",
+    "ipa": "/bǝrˈsǝr/"
   },
   {
     "id": "L-CORPUS-01190",
@@ -68244,7 +68281,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/te:ˈwɐn/"
   },
   {
     "id": "L-CORPUS-01214",
@@ -68378,7 +68416,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/qʹʷɐ'dǝ/"
   },
   {
     "id": "L-CORPUS-01219",
@@ -70524,7 +70563,7 @@
       "kabardian": ""
     },
     "notes": "Corpus v1.0 (freq: 31, lang: ady, source: 4.Ady-En_Adam)",
-    "ipa": "/was/",
+    "ipa": "/wɐs/",
     "rootIds": [
       "R-WAS"
     ],
@@ -70595,7 +70634,8 @@
     "isLemma": true,
     "translations": {
       "ru": "имасд. выз"
-    }
+    },
+    "ipa": "/χʷǝ'ᶎǝn/"
   },
   {
     "id": "L-CORPUS-01303",
@@ -70623,7 +70663,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "COLOR"
+    "conceptId": "COLOR",
+    "ipa": "/qʹʷɐxʷ/"
   },
   {
     "id": "L-CORPUS-01304",
@@ -71755,7 +71796,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "JOY"
+    "conceptId": "JOY",
+    "ipa": "/xɐʁɐˈχʷɐn/"
   },
   {
     "id": "L-CORPUS-01347",
@@ -72722,7 +72764,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "COLOR"
+    "conceptId": "COLOR",
+    "ipa": "/'qʹʷǝpɕħɐ/"
   },
   {
     "id": "L-CORPUS-01381",
@@ -72776,7 +72819,7 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/pʹqʹǝ/"
+    "ipa": "/'pʹqʹǝʁʷɐ/"
   },
   {
     "id": "L-CORPUS-01383",
@@ -74242,7 +74285,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "PROTECT"
+    "conceptId": "PROTECT",
+    "ipa": "/qʹɐʁʷɐ'tǝn/"
   },
   {
     "id": "L-CORPUS-01441",
@@ -74270,7 +74314,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/tʂɐn/"
   },
   {
     "id": "L-CORPUS-01442",
@@ -75481,7 +75526,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/xɐ'χʷɐn/"
   },
   {
     "id": "L-CORPUS-01488",
@@ -76946,7 +76992,8 @@
       ]
     },
     "isLemma": false,
-    "conceptId": "PLANT"
+    "conceptId": "PLANT",
+    "ipa": "/ʁʷɐmǝ'ɮɑ:pχɐ/"
   },
   {
     "id": "L-CORPUS-01545",
@@ -77070,7 +77117,8 @@
     "rootForm": "лъ-",
     "rootIds": [
       "R-LA_1"
-    ]
+    ],
+    "ipa": "/ɬɐ'ʁʷǝn/"
   },
   {
     "id": "L-CORPUS-01550",
@@ -78158,7 +78206,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "CRADLE"
+    "conceptId": "CRADLE",
+    "ipa": "/qʹʷɐ'ʂǝn/"
   },
   {
     "id": "L-CORPUS-01590",
@@ -78350,7 +78399,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/'dɑ:ʁʷɐ/"
   },
   {
     "id": "L-CORPUS-01597",
@@ -78405,7 +78455,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/te:ˈχʷɐn/"
   },
   {
     "id": "L-CORPUS-01599",
@@ -80109,7 +80160,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "TOP"
+    "conceptId": "TOP",
+    "ipa": "/wǝ'nɑ:ʁʷɐ/"
   },
   {
     "id": "L-CORPUS-01659",
@@ -80167,7 +80219,8 @@
     "conceptId": "NATURE",
     "subConceptId": "FIELD",
     "taxonomyFamily": "Doğa & Arazi",
-    "rootForm": "губгъуэ"
+    "rootForm": "губгъуэ",
+    "ipa": "/'gʷǝbʁʷɐ/"
   },
   {
     "id": "L-CORPUS-01661",
@@ -80536,7 +80589,8 @@
       ],
       "morphemeIds": [],
       "rule": "suffix"
-    }
+    },
+    "ipa": "/'ɕɑ:bɐw/"
   },
   {
     "id": "L-CORPUS-01675",
@@ -80589,7 +80643,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "LIFE_PARTNER"
+    "conceptId": "LIFE_PARTNER",
+    "ipa": "/zǝ'gʷɐr/"
   },
   {
     "id": "L-CORPUS-01678",
@@ -82534,7 +82589,8 @@
       ]
     },
     "isLemma": false,
-    "conceptId": "WAIT"
+    "conceptId": "WAIT",
+    "ipa": "/ʁʷɐpɬ/"
   },
   {
     "id": "L-CORPUS-01744",
@@ -83061,7 +83117,8 @@
     "isLemma": true,
     "translations": {
       "tr": "<font color"
-    }
+    },
+    "ipa": "/'psǝʁʷɐ/"
   },
   {
     "id": "L-CORPUS-01766",
@@ -83775,7 +83832,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/je:gʷǝ'ʁʷǝn/"
   },
   {
     "id": "L-CORPUS-01793",
@@ -84939,7 +84997,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "NOSE"
+    "conceptId": "NOSE",
+    "ipa": "/zɐpǝ'mǝw:ɐ/"
   },
   {
     "id": "L-CORPUS-01832",
@@ -85002,7 +85061,7 @@
     "subConceptId": "ANIMAL_LIVING_BEING",
     "taxonomyFamily": "Ruh & Can",
     "rootForm": "псэ",
-    "ipa": "/psɐw/"
+    "ipa": "/psɐ'wǝɕħɐ/"
   },
   {
     "id": "L-CORPUS-01834",
@@ -87266,7 +87325,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/wɐr'wɐru:/"
   },
   {
     "id": "L-CORPUS-01922",
@@ -87379,7 +87439,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/gʷɐ'ɕʹǝn/"
   },
   {
     "id": "L-CORPUS-01927",
@@ -87777,7 +87838,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "LEG_FOOT"
+    "conceptId": "LEG_FOOT",
+    "ipa": "/pʲɪsʲˈmo/"
   },
   {
     "id": "L-CORPUS-01945",
@@ -89697,7 +89759,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "GREEN"
+    "conceptId": "GREEN",
+    "ipa": "/ɕɐ'dᶎɑ:ɕɐ/"
   },
   {
     "id": "L-CORPUS-02014",
@@ -89740,7 +89803,8 @@
     "rootIds": [
       "R-SHKH"
     ],
-    "conceptId": "COLOR"
+    "conceptId": "COLOR",
+    "ipa": "/ɕħɐ'ʁʷǝsɐ/"
   },
   {
     "id": "L-CORPUS-02016",
@@ -89939,7 +90003,8 @@
       ],
       "morphemeIds": [],
       "rule": "root"
-    }
+    },
+    "ipa": "/wɐn/"
   },
   {
     "id": "L-CORPUS-02027",
@@ -90027,7 +90092,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/qʹʷɐʁʷ/"
   },
   {
     "id": "L-CORPUS-02031",
@@ -92192,7 +92258,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "COLOR"
+    "conceptId": "COLOR",
+    "ipa": "/pɕɐχʷ/"
   },
   {
     "id": "L-CORPUS-02114",
@@ -92437,7 +92504,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/wǝˈqʹχʷɐn/"
   },
   {
     "id": "L-CORPUS-02126",
@@ -92547,7 +92615,8 @@
     "isLemma": true,
     "translations": {
       "ru": "имасд.</"
-    }
+    },
+    "ipa": "/ʁɐtɐrɐzǝ'ᶎǝn/"
   },
   {
     "id": "L-CORPUS-02132",
@@ -92686,7 +92755,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "YEAR"
+    "conceptId": "YEAR",
+    "ipa": "/ʁɐ'ʑɐn/"
   },
   {
     "id": "L-CORPUS-02138",
@@ -92712,7 +92782,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/ˈqʹʷɑ:ɕʹɐ/"
   },
   {
     "id": "L-CORPUS-02139",
@@ -94289,7 +94360,8 @@
     "translations": {
       "ru": "негодный, бесполезный, никчемный / Хъер, сэбэп зыпымылъ"
     },
-    "conceptId": "TOP"
+    "conceptId": "TOP",
+    "ipa": "/mǝpˈɕħɐpɐ/"
   },
   {
     "id": "L-CORPUS-02197",
@@ -95112,7 +95184,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/zɐ'pǝtu:/"
   },
   {
     "id": "L-CORPUS-02227",
@@ -95341,7 +95414,8 @@
       "morphemeIds": [],
       "rule": "root"
     },
-    "conceptId": "COLOR"
+    "conceptId": "COLOR",
+    "ipa": "/gʷɐr/"
   },
   {
     "id": "L-CORPUS-02239",
@@ -98097,7 +98171,8 @@
     },
     "notes": "Corpus v1.0 (freq: 17, lang: ady, source: 0.Ady-Ady_AIG)",
     "conceptId": "COLOR",
-    "isLemma": false
+    "isLemma": false,
+    "ipa": "/wɐ'tɐr/"
   },
   {
     "id": "L-CORPUS-02346",
@@ -98405,7 +98480,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/ʁʷɐ'ɮɐn/"
   },
   {
     "id": "L-CORPUS-02362",
@@ -98795,7 +98871,8 @@
       ],
       "morphemeIds": [],
       "rule": "root"
-    }
+    },
+    "ipa": "/wɐʁʷ/"
   },
   {
     "id": "L-CORPUS-02380",
@@ -98854,7 +98931,8 @@
     "isLemma": true,
     "translations": {
       "ru": "имасд. виднеться<"
-    }
+    },
+    "ipa": "/qʹɐɬɐ'ʁʷɐn/"
   },
   {
     "id": "L-CORPUS-02383",
@@ -98935,7 +99013,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/sǝ'mɑ:dᶎɐ/"
   },
   {
     "id": "L-CORPUS-02386",
@@ -102087,7 +102166,7 @@
     "rootIds": [
       "R-KHEK"
     ],
-    "ipa": "/xɐkʷ/"
+    "ipa": "/xɐ'kʷǝʑ/"
   },
   {
     "id": "L-CORPUS-02502",
@@ -102140,7 +102219,8 @@
       ],
       "morphemeIds": [],
       "rule": "root"
-    }
+    },
+    "ipa": "/ˈnǝwɐ/"
   },
   {
     "id": "L-CORPUS-02504",
@@ -102411,7 +102491,8 @@
     "conceptId": "JOY",
     "subConceptId": "EMOTION",
     "taxonomyFamily": "Duygu & Zihin",
-    "rootForm": "гу"
+    "rootForm": "гу",
+    "ipa": "/'gʷɑ:χʷɐ/"
   },
   {
     "id": "L-CORPUS-02518",
@@ -102523,7 +102604,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/'pɕɑ:ɕɐ/"
   },
   {
     "id": "L-CORPUS-02525",
@@ -102675,7 +102757,8 @@
     },
     "subConceptId": "ANGER_VERB",
     "taxonomyFamily": "Duygu & Zihin",
-    "rootForm": "гу"
+    "rootForm": "гу",
+    "ipa": "/gʷǝb'ʑǝn/"
   },
   {
     "id": "L-CORPUS-02534",
@@ -103079,7 +103162,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "BONE"
+    "conceptId": "BONE",
+    "ipa": "/zɐxʷɐmǝ'dɐn/"
   },
   {
     "id": "L-CORPUS-02552",
@@ -106247,7 +106331,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "GREEN"
+    "conceptId": "GREEN",
+    "ipa": "/de:'ɮɑ:ʁɐ/"
   },
   {
     "id": "L-CORPUS-02673",
@@ -106671,7 +106756,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/ʁɐʑɐ'wɐn/"
   },
   {
     "id": "L-CORPUS-02691",
@@ -107054,7 +107140,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "TRUE"
+    "conceptId": "TRUE",
+    "ipa": "/'ɕǝʁʷɐ/"
   },
   {
     "id": "L-CORPUS-02705",
@@ -107308,7 +107395,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/zɐgʷɐ'tǝn/"
   },
   {
     "id": "L-CORPUS-02719",
@@ -107363,7 +107451,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/zɐ'xɐtu:/"
   },
   {
     "id": "L-CORPUS-02721",
@@ -111399,7 +111488,8 @@
       ]
     },
     "isLemma": false,
-    "conceptId": "BODY_STRUCTURE"
+    "conceptId": "BODY_STRUCTURE",
+    "ipa": "/ɬɐbʁʷ/"
   },
   {
     "id": "L-CORPUS-02871",
@@ -111564,7 +111654,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/ʁʷɐ'gʷɐʁʷ/"
   },
   {
     "id": "L-CORPUS-02878",
@@ -111865,7 +111956,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "EYE"
+    "conceptId": "EYE",
+    "ipa": "/xɐwɐ'qʹʷɐn/"
   },
   {
     "id": "L-CORPUS-02892",
@@ -112070,7 +112162,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "COLOR"
+    "conceptId": "COLOR",
+    "ipa": "/qʹʷɐps/"
   },
   {
     "id": "L-CORPUS-02900",
@@ -112453,7 +112546,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "EYE"
+    "conceptId": "EYE",
+    "ipa": "/bʑɐ/"
   },
   {
     "id": "L-CORPUS-02919",
@@ -112796,7 +112890,8 @@
     "translations": {
       "ru": "желтый, -ая, -ое <di"
     },
-    "conceptId": "EYE"
+    "conceptId": "EYE",
+    "ipa": "/ʁʷɐʑ/"
   },
   {
     "id": "L-CORPUS-02932",
@@ -112978,7 +113073,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/qʹe:wǝfɐ'xǝn/"
   },
   {
     "id": "L-CORPUS-02940",
@@ -116789,7 +116885,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/'pɕǝʁɐ/"
   },
   {
     "id": "L-CORPUS-03075",
@@ -117228,7 +117325,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "JOY"
+    "conceptId": "JOY",
+    "ipa": "/xɐʁɐˈwɐn/"
   },
   {
     "id": "L-CORPUS-03095",
@@ -117262,7 +117360,8 @@
     "isLemma": true,
     "rootIds": [
       "R-SHCH"
-    ]
+    ],
+    "ipa": "/ɕǝ'wɑ:ʁɐ/"
   },
   {
     "id": "L-CORPUS-03098",
@@ -117640,7 +117739,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "BIG_WORK"
+    "conceptId": "BIG_WORK",
+    "ipa": "/je:ʁɐˈwɐn/"
   },
   {
     "id": "L-CORPUS-03120",
@@ -117893,7 +117993,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/'ʑɑ:ʑɐw/"
   },
   {
     "id": "L-CORPUS-03132",
@@ -122750,7 +122851,8 @@
     "isLemma": true,
     "translations": {
       "ru": "имасд. <d"
-    }
+    },
+    "ipa": "/wǝˈɕɐn/"
   },
   {
     "id": "L-CORPUS-03316",
@@ -122974,7 +123076,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "COLOR"
+    "conceptId": "COLOR",
+    "ipa": "/pɕɐ/"
   },
   {
     "id": "L-CORPUS-03328",
@@ -123045,7 +123148,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "COLOR"
+    "conceptId": "COLOR",
+    "ipa": "/qʹʷɐ'ɮɐn/"
   },
   {
     "id": "L-CORPUS-03331",
@@ -123152,7 +123256,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/je:ɮ'bɐtu:/"
   },
   {
     "id": "L-CORPUS-03335",
@@ -123177,7 +123282,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "SEA"
+    "conceptId": "SEA",
+    "ipa": "/'xɐχʷɐ/"
   },
   {
     "id": "L-CORPUS-03337",
@@ -123194,7 +123300,8 @@
     "isLemma": true,
     "translations": {
       "ru": "пчъ. шестьсот Шъэу хы <div style='marg"
-    }
+    },
+    "ipa": "/ɕi:x/"
   },
   {
     "id": "L-CORPUS-03338",
@@ -123681,7 +123788,8 @@
     "rootIds": [
       "R-SHKH"
     ],
-    "conceptId": "COLOR"
+    "conceptId": "COLOR",
+    "ipa": "/ɕħɐ'xǝʁɐ/"
   },
   {
     "id": "L-CORPUS-03359",
@@ -124258,7 +124366,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/'ɕǝnɐ/"
   },
   {
     "id": "L-CORPUS-03385",
@@ -124496,7 +124605,8 @@
     "translations": {
       "tr": "يُعيد له، يُرجع"
     },
-    "conceptId": "EYE"
+    "conceptId": "EYE",
+    "ipa": "/je:tǝ'ᶎǝn/"
   },
   {
     "id": "L-CORPUS-03394",
@@ -124576,7 +124686,8 @@
       ],
       "morphemeIds": [],
       "rule": "root"
-    }
+    },
+    "ipa": "/wɐd/"
   },
   {
     "id": "L-CORPUS-03399",
@@ -124646,7 +124757,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "SEA"
+    "conceptId": "SEA",
+    "ipa": "/zɐte:'tǝn/"
   },
   {
     "id": "L-CORPUS-03402",
@@ -130263,7 +130375,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "VALLEY"
+    "conceptId": "VALLEY",
+    "ipa": "/zɐqʹʷɐtǝ'nǝʁɐ/"
   },
   {
     "id": "L-CORPUS-03608",
@@ -130450,7 +130563,8 @@
       ],
       "morphemeIds": [],
       "rule": "root"
-    }
+    },
+    "ipa": "/jǝˈwɐn/"
   },
   {
     "id": "L-CORPUS-03619",
@@ -130669,7 +130783,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "WRITE"
+    "conceptId": "WRITE",
+    "ipa": "/te:wǝbzǝˈtɐn/"
   },
   {
     "id": "L-CORPUS-03628",
@@ -130879,7 +130994,8 @@
       ],
       "morphemeIds": [],
       "rule": "root"
-    }
+    },
+    "ipa": "/ʂxʷɐ/"
   },
   {
     "id": "L-CORPUS-03638",
@@ -130933,7 +131049,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/ʁɐgʷǝb'ʑǝn/"
   },
   {
     "id": "L-CORPUS-03640",
@@ -131030,7 +131147,8 @@
       ]
     },
     "isLemma": false,
-    "conceptId": "KALMYK"
+    "conceptId": "KALMYK",
+    "ipa": "/ɕǝ'pʹqʹɑ:ʁɐ/"
   },
   {
     "id": "L-CORPUS-03646",
@@ -131135,7 +131253,8 @@
     "rootForm": "щы-",
     "rootIds": [
       "R-SHCH"
-    ]
+    ],
+    "ipa": "/ɕǝχʷǝ'mɐn/"
   },
   {
     "id": "L-CORPUS-03650",
@@ -131430,7 +131549,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "SUITOR"
+    "conceptId": "SUITOR",
+    "ipa": "/zǝte:ʁɐ'wɐn/"
   },
   {
     "id": "L-CORPUS-03664",
@@ -131483,7 +131603,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/ʑɐn/"
   },
   {
     "id": "L-CORPUS-03667",
@@ -131591,7 +131712,8 @@
     "isLemma": true,
     "translations": {
       "ru": "имасд. <"
-    }
+    },
+    "ipa": "/ʁɐχʷǝ'ᶎǝn/"
   },
   {
     "id": "L-CORPUS-03673",
@@ -131661,7 +131783,8 @@
       ]
     },
     "isLemma": false,
-    "conceptId": "EYE"
+    "conceptId": "EYE",
+    "ipa": "/qʹɐʁʷɐtǝ'ᶎǝn/"
   },
   {
     "id": "L-CORPUS-03679",
@@ -131794,7 +131917,8 @@
     "isLemma": true,
     "translations": {
       "ru": "имасд"
-    }
+    },
+    "ipa": "/ʁɐɬɐ'ʁʷɐn/"
   },
   {
     "id": "L-CORPUS-03686",
@@ -139122,7 +139246,8 @@
     "isLemma": true,
     "translations": {
       "tr": "يضرب في، يطلق النار في/ ينغرز في/ ينتقد/ يسيء إلى/ يتقلص"
-    }
+    },
+    "ipa": "/xɐ'wɐn/"
   },
   {
     "id": "L-CORPUS-03953",
@@ -139401,7 +139526,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "THOUSAND"
+    "conceptId": "THOUSAND",
+    "ipa": "/wǝˈʑʁɐn/"
   },
   {
     "id": "L-CORPUS-03965",
@@ -139626,7 +139752,8 @@
     "isLemma": true,
     "translations": {
       "tr": "يحشر، يحشو"
-    }
+    },
+    "ipa": "/jǝ'kʷɐn/"
   },
   {
     "id": "L-CORPUS-03974",
@@ -139654,7 +139781,8 @@
       "morphemeIds": [],
       "rule": "root"
     },
-    "conceptId": "COLOR"
+    "conceptId": "COLOR",
+    "ipa": "/ˈte:wɐ/"
   },
   {
     "id": "L-CORPUS-03975",
@@ -139708,7 +139836,8 @@
     },
     "literalMeaningAdy": "роса Атмосферэ шынэгъакӀэу",
     "isLemma": true,
-    "conceptId": "OAK_TREE"
+    "conceptId": "OAK_TREE",
+    "ipa": "/'wɐsɐps/"
   },
   {
     "id": "L-CORPUS-03977",
@@ -139761,7 +139890,8 @@
     "rootForm": "щы-",
     "rootIds": [
       "R-SHCH"
-    ]
+    ],
+    "ipa": "/ɕǝ'ʁʷɑ:zɐ/"
   },
   {
     "id": "L-CORPUS-03979",
@@ -139814,7 +139944,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/zɐ'wɐn/"
   },
   {
     "id": "L-CORPUS-03981",
@@ -139862,7 +139993,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "EYEBROW"
+    "conceptId": "EYEBROW",
+    "ipa": "/'nɑ:bʁɐ/"
   },
   {
     "id": "L-CORPUS-03983",
@@ -140059,7 +140191,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/qʹǝte:'wɐn/"
   },
   {
     "id": "L-CORPUS-03993",
@@ -140217,7 +140350,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "JOY"
+    "conceptId": "JOY",
+    "ipa": "/ʁʷɐz/"
   },
   {
     "id": "L-CORPUS-03999",
@@ -140507,7 +140641,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "BIG_WORK"
+    "conceptId": "BIG_WORK",
+    "ipa": "/je:ʁɐʁʷɐˈtǝn/"
   },
   {
     "id": "L-CORPUS-04014",
@@ -140699,7 +140834,8 @@
     "conceptId": "MIND",
     "subConceptId": "INTELLIGENCE",
     "taxonomyFamily": "Duygu & Zihin",
-    "rootForm": "губзы"
+    "rootForm": "губзы",
+    "ipa": "/gʷǝb'zǝʁɐ/"
   },
   {
     "id": "L-CORPUS-04024",
@@ -140715,7 +140851,8 @@
     "isLemma": true,
     "translations": {
       "tr": "ثلاثمائة"
-    }
+    },
+    "ipa": "/ɕi:ɕ/"
   },
   {
     "id": "L-CORPUS-04025",
@@ -140768,7 +140905,8 @@
     "conceptId": "JOY",
     "subConceptId": "EMOTION",
     "taxonomyFamily": "Duygu & Zihin",
-    "rootForm": "гу"
+    "rootForm": "гу",
+    "ipa": "/gʷǝʂ'xʷɐn/"
   },
   {
     "id": "L-CORPUS-04027",
@@ -140920,7 +141058,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "LOVE"
+    "conceptId": "LOVE",
+    "ipa": "/'bzɑ:kʹʷɐ/"
   },
   {
     "id": "L-CORPUS-04034",
@@ -141700,7 +141839,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/ʁʷɐ'ɮɐn/"
   },
   {
     "id": "L-CORPUS-04069",
@@ -141966,7 +142106,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/zɐɕǝ'qʹʷɐn/"
   },
   {
     "id": "L-CORPUS-04081",
@@ -142993,7 +143134,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "SEA"
+    "conceptId": "SEA",
+    "ipa": "/zɐte:mǝ'xʷɐn/"
   },
   {
     "id": "L-CORPUS-04122",
@@ -150399,7 +150541,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/qʹɐgʷǝ'bʑǝn/"
   },
   {
     "id": "L-CORPUS-04401",
@@ -150865,7 +151008,8 @@
     "conceptId": "SEE",
     "subConceptId": "SIGHT_VIEW",
     "taxonomyFamily": "Göz & Görme",
-    "rootForm": "плъэ-"
+    "rootForm": "плъэ-",
+    "ipa": "/ˈpɬɐʁʷɐ/"
   },
   {
     "id": "L-CORPUS-04419",
@@ -151029,7 +151173,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/dᶎɐ'gʷɐʁʷ/"
   },
   {
     "id": "L-CORPUS-04427",
@@ -151162,7 +151307,7 @@
     "rootIds": [
       "R-SHCH"
     ],
-    "ipa": "/'ɕǝʁɐ/"
+    "ipa": "/ɕǝʁɐʁʷɐ'zɐn/"
   },
   {
     "id": "L-CORPUS-04434",
@@ -151190,7 +151335,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/qʹʷɑ:ʁ/"
   },
   {
     "id": "L-CORPUS-04435",
@@ -151403,7 +151549,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/zǝɕǝ'dzǝn/"
   },
   {
     "id": "L-CORPUS-04446",
@@ -151432,7 +151579,7 @@
       "rule": "compound"
     },
     "conceptId": "YEAR",
-    "ipa": "/ʁɐtʂ/"
+    "ipa": "/ʁɐ'tʂɐn/"
   },
   {
     "id": "L-CORPUS-04447",
@@ -151501,7 +151648,8 @@
     "translations": {
       "tr": "يهيئ، يجهز، ينظم"
     },
-    "conceptId": "MIND"
+    "conceptId": "MIND",
+    "ipa": "/zɐte:ʁɐpsǝˈħǝn/"
   },
   {
     "id": "L-CORPUS-04450",
@@ -151640,7 +151788,7 @@
       "morphemeIds": [],
       "rule": "root"
     },
-    "ipa": "/o:/"
+    "ipa": "/wɐr/"
   },
   {
     "id": "L-CORPUS-04458",
@@ -151855,7 +152003,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "BONE"
+    "conceptId": "BONE",
+    "ipa": "/χʷǝˈɕɐn/"
   },
   {
     "id": "L-CORPUS-04466",
@@ -151883,7 +152032,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/qʹe:wǝɕɐˈxǝn/"
   },
   {
     "id": "L-CORPUS-04468",
@@ -151992,7 +152142,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/'nǝqʹʷɐ/"
   },
   {
     "id": "L-CORPUS-04472",
@@ -152020,7 +152171,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/je:'dᶎɐʁʷɐ/"
   },
   {
     "id": "L-CORPUS-04473",
@@ -152350,7 +152502,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "CRADLE"
+    "conceptId": "CRADLE",
+    "ipa": "/'mǝɕɐ/"
   },
   {
     "id": "L-CORPUS-04489",
@@ -152453,7 +152606,8 @@
     "isLemma": true,
     "translations": {
       "tr": "وكيل، محام"
-    }
+    },
+    "ipa": "/wɐ'tʂǝɮ/"
   },
   {
     "id": "L-CORPUS-04493",
@@ -152505,7 +152659,8 @@
     },
     "literalMeaningAdy": "великан Пшысэмэ ахэт цӀыф",
     "isLemma": true,
-    "conceptId": "BIG"
+    "conceptId": "BIG",
+    "ipa": "/jǝ’nǝʑ/"
   },
   {
     "id": "L-CORPUS-04495",
@@ -152746,7 +152901,8 @@
     },
     "literalMeaningAdy": "река Къуладжэ зиӀэу чъэрэ",
     "isLemma": true,
-    "conceptId": "MIND"
+    "conceptId": "MIND",
+    "ipa": "/'psǝχʷɐ/"
   },
   {
     "id": "L-CORPUS-04506",
@@ -152873,7 +153029,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/ʁɐ'sɐn/"
   },
   {
     "id": "L-CORPUS-04511",
@@ -152929,7 +153086,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/qʹi:'tʂǝn/"
   },
   {
     "id": "L-CORPUS-04514",
@@ -153172,7 +153330,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "JOY"
+    "conceptId": "JOY",
+    "ipa": "/ʁʷɐ'ɬǝn/"
   },
   {
     "id": "L-CORPUS-04523",
@@ -153197,7 +153356,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/zǝɕǝχʷǝ'mɐn/"
   },
   {
     "id": "L-CORPUS-04524",
@@ -161517,7 +161677,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "WRITE"
+    "conceptId": "WRITE",
+    "ipa": "/'ʁɑ:bʁɐ/"
   },
   {
     "id": "L-CORPUS-04829",
@@ -163377,7 +163538,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/zɐxɐze:'xʷɐn/"
   },
   {
     "id": "L-CORPUS-04897",
@@ -163630,7 +163792,8 @@
     "isLemma": true,
     "translations": {
       "ru": "уч. обстоятельство мурад обстоятельств</"
-    }
+    },
+    "ipa": "/ɐpstɐˈjætʲɪlʲstvɐ/"
   },
   {
     "id": "L-CORPUS-04907",
@@ -163658,7 +163821,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "YELLOW"
+    "conceptId": "YELLOW",
+    "ipa": "/'ʁʷǝɕɐ/"
   },
   {
     "id": "L-CORPUS-04908",
@@ -163792,7 +163956,7 @@
       "rule": "compound"
     },
     "conceptId": "JOY",
-    "ipa": "/zɐʁ/"
+    "ipa": "/zɐʁɐʁʷɐˈtǝn/"
   },
   {
     "id": "L-CORPUS-04913",
@@ -163809,7 +163973,8 @@
     "isLemma": true,
     "translations": {
       "tr": "<"
-    }
+    },
+    "ipa": "/'ɕɑ:ʁɐ/"
   },
   {
     "id": "L-CORPUS-04915",
@@ -163886,7 +164051,8 @@
       ]
     },
     "isLemma": false,
-    "conceptId": "BODY_STRUCTURE"
+    "conceptId": "BODY_STRUCTURE",
+    "ipa": "/dɐɬɐ'tɐn/"
   },
   {
     "id": "L-CORPUS-04919",
@@ -163936,7 +164102,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/ˈpɕɑ:gʷɐ/"
   },
   {
     "id": "L-CORPUS-04921",
@@ -164000,7 +164167,8 @@
     "rootForm": "щы-",
     "rootIds": [
       "R-SHCH"
-    ]
+    ],
+    "ipa": "/ɕǝ'wɐn/"
   },
   {
     "id": "L-CORPUS-04927",
@@ -164260,7 +164428,8 @@
     "rootIds": [
       "R-F"
     ],
-    "conceptId": "ROT"
+    "conceptId": "ROT",
+    "ipa": "/ˈfabrʲɪkə/"
   },
   {
     "id": "L-CORPUS-04941",
@@ -164333,7 +164502,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "EYE"
+    "conceptId": "EYE",
+    "ipa": "/pǝ'tʂǝʁʷɐ/"
   },
   {
     "id": "L-CORPUS-04945",
@@ -164471,7 +164641,8 @@
       ],
       "morphemeIds": [],
       "rule": "root"
-    }
+    },
+    "ipa": "/'dɑ:wɐ/"
   },
   {
     "id": "L-CORPUS-04950",
@@ -164499,7 +164670,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "JOY"
+    "conceptId": "JOY",
+    "ipa": "/mǝˈʁɑ:sɐ/"
   },
   {
     "id": "L-CORPUS-04951",
@@ -164672,7 +164844,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "NOSE"
+    "conceptId": "NOSE",
+    "ipa": "/'pʂɑ:χʷɐ/"
   },
   {
     "id": "L-CORPUS-04958",
@@ -164811,7 +164984,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "VALLEY"
+    "conceptId": "VALLEY",
+    "ipa": "/zɐ'qʹʷɐʂ/"
   },
   {
     "id": "L-CORPUS-04965",
@@ -165048,7 +165222,8 @@
     "isLemma": true,
     "translations": {
       "ru": "имасд. затвердет"
-    }
+    },
+    "ipa": "/tʂǝn/"
   },
   {
     "id": "L-CORPUS-04976",
@@ -165076,7 +165251,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "EYE"
+    "conceptId": "EYE",
+    "ipa": "/te:ˈkʷɐn/"
   },
   {
     "id": "L-CORPUS-04977",
@@ -165348,7 +165524,7 @@
       "rule": "compound"
     },
     "conceptId": "NOSE",
-    "ipa": "/zɐ'pǝu:/"
+    "ipa": "/zɐpǝ'wǝʁʷɐ/"
   },
   {
     "id": "L-CORPUS-04987",
@@ -165628,7 +165804,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/ɕǝu:/"
   },
   {
     "id": "L-CORPUS-04999",
@@ -165973,7 +166150,8 @@
       ]
     },
     "isLemma": false,
-    "conceptId": "GRANDMOTHER"
+    "conceptId": "GRANDMOTHER",
+    "ipa": "/je:'tʹwɑ:nɐ/"
   },
   {
     "id": "L-CORPUS2-00014",
@@ -166620,7 +166798,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/'jǝʁʷɐw/"
   },
   {
     "id": "L-CORPUS2-00044",
@@ -168943,7 +169122,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/ʁʷɐgʷ/"
   },
   {
     "id": "L-CORPUS2-00147",
@@ -168993,7 +169173,7 @@
     },
     "isLemma": false,
     "conceptId": "VALLEY",
-    "ipa": "/qʹʷɐ/"
+    "ipa": "/qʹo:m/"
   },
   {
     "id": "L-CORPUS2-00150",
@@ -169111,7 +169291,8 @@
     "rootIds": [
       "R-SHQE"
     ],
-    "conceptId": "TRUE"
+    "conceptId": "TRUE",
+    "ipa": "/'ɕǝpʹqʹɐ/"
   },
   {
     "id": "L-CORPUS2-00155",
@@ -170339,7 +170520,8 @@
     "conceptId": "SIN",
     "subConceptId": "SIN",
     "taxonomyFamily": "Ruh & Can",
-    "rootForm": "псэ"
+    "rootForm": "псэ",
+    "ipa": "/psɐˈkʹʷɐd/"
   },
   {
     "id": "L-CORPUS2-00214",
@@ -174970,7 +175152,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "COLOR"
+    "conceptId": "COLOR",
+    "ipa": "/'qʹʷǝɕħɐ/"
   },
   {
     "id": "L-CORPUS2-00430",
@@ -176319,7 +176502,8 @@
       ]
     },
     "isLemma": false,
-    "conceptId": "MIND"
+    "conceptId": "MIND",
+    "ipa": "/'psǝχʷɐ/"
   },
   {
     "id": "L-CORPUS2-00493",
@@ -177193,7 +177377,8 @@
       ],
       "morphemeIds": [],
       "rule": "root"
-    }
+    },
+    "ipa": "/ʔʷɐ/"
   },
   {
     "id": "L-CORPUS2-00531",
@@ -177391,7 +177576,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/ʔʷǝ'zɑ:ʁɐ/"
   },
   {
     "id": "L-CORPUS2-00539",
@@ -178595,7 +178781,8 @@
       ],
       "morphemeIds": [],
       "rule": "root"
-    }
+    },
+    "ipa": "/kʹʷɐ/"
   },
   {
     "id": "L-CORPUS2-00590",
@@ -179060,7 +179247,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "MULTICOLOR"
+    "conceptId": "MULTICOLOR",
+    "ipa": "/'zɑ:qʹʷɐ/"
   },
   {
     "id": "L-CORPUS2-00610",
@@ -180498,7 +180686,8 @@
     "conceptId": "SOUL",
     "subConceptId": "WITH_SOUL",
     "taxonomyFamily": "Ruh & Can",
-    "rootForm": "псэ-"
+    "rootForm": "псэ-",
+    "ipa": "/psɐ'wǝtʹʂɐ/"
   },
   {
     "id": "L-CORPUS2-00670",
@@ -180721,7 +180910,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/kʹʷɐn/"
   },
   {
     "id": "L-CORPUS2-00681",
@@ -181398,7 +181588,8 @@
     "conceptId": "ALIVE",
     "subConceptId": "ALIVE",
     "taxonomyFamily": "Ruh & Can",
-    "rootForm": "псэ"
+    "rootForm": "псэ",
+    "ipa": "/psɐwǝˈdɐw/"
   },
   {
     "id": "L-CORPUS2-00710",
@@ -182263,7 +182454,8 @@
       ],
       "morphemeIds": [],
       "rule": "root"
-    }
+    },
+    "ipa": "/wɐɕ/"
   },
   {
     "id": "L-CORPUS2-00747",
@@ -184949,7 +185141,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "COMPANION"
+    "conceptId": "COMPANION",
+    "ipa": "/'jǝʁʷɐ/"
   },
   {
     "id": "L-CORPUS2-00867",
@@ -184999,7 +185192,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "BIG_WORK"
+    "conceptId": "BIG_WORK",
+    "ipa": "/je:ʁɐˈdᶎɐtʹʂɐ/"
   },
   {
     "id": "L-CORPUS2-00869",
@@ -186099,7 +186293,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/ʁʷɐgʷ/"
   },
   {
     "id": "L-CORPUS2-00916",
@@ -188251,7 +188446,8 @@
     "rootIds": [
       "R-SHKH"
     ],
-    "conceptId": "COLOR"
+    "conceptId": "COLOR",
+    "ipa": "/ɕħɐje:ʁɐ'zǝpʹɐ/"
   },
   {
     "id": "L-CORPUS2-01014",
@@ -188276,7 +188472,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "COLOR"
+    "conceptId": "COLOR",
+    "ipa": "/te:ˈtǝʁʷɐ/"
   },
   {
     "id": "L-CORPUS2-01015",
@@ -190899,7 +191096,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/'ʔʷɑ:ɕħɐ/"
   },
   {
     "id": "L-CORPUS2-01128",
@@ -192782,7 +192980,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "BONE"
+    "conceptId": "BONE",
+    "ipa": "/χʷǝˈro:mɐ/"
   },
   {
     "id": "L-CORPUS2-01213",
@@ -192893,7 +193092,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "EYE"
+    "conceptId": "EYE",
+    "ipa": "/te:kʹʷɐ'nǝʁɐ/"
   },
   {
     "id": "L-CORPUS2-01219",
@@ -194668,7 +194868,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "LIFE_PARTNER"
+    "conceptId": "LIFE_PARTNER",
+    "ipa": "/zǝgʷɐ'rtʹʂɐ/"
   },
   {
     "id": "L-CORPUS2-01301",
@@ -194743,7 +194944,8 @@
       ]
     },
     "isLemma": false,
-    "conceptId": "KALMYK"
+    "conceptId": "KALMYK",
+    "ipa": "/ɕǝ'pʹqʹɑ:ʁɐ/"
   },
   {
     "id": "L-CORPUS2-01304",
@@ -194820,7 +195022,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "COMPANION"
+    "conceptId": "COMPANION",
+    "ipa": "/'jǝʁʷɐw/"
   },
   {
     "id": "L-CORPUS2-01307",
@@ -194873,7 +195076,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "COLOR"
+    "conceptId": "COLOR",
+    "ipa": "/ᶎǝpʔɐnu:/"
   },
   {
     "id": "L-CORPUS2-01309",
@@ -196418,7 +196622,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "SPARE"
+    "conceptId": "SPARE",
+    "ipa": "/xʷɐ'χʷǝn/"
   },
   {
     "id": "L-CORPUS2-01377",
@@ -196630,7 +196835,8 @@
       ]
     },
     "isLemma": false,
-    "conceptId": "EAGLE"
+    "conceptId": "EAGLE",
+    "ipa": "/qʹǝbʁɐdɐ'tʹʂǝn/"
   },
   {
     "id": "L-CORPUS2-01386",
@@ -196902,7 +197108,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "SNAKE"
+    "conceptId": "SNAKE",
+    "ipa": "/jǝri:'kʹʷɐn/"
   },
   {
     "id": "L-CORPUS2-01400",
@@ -197820,7 +198027,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "TOP"
+    "conceptId": "TOP",
+    "ipa": "/qʹǝtʹʂɐɬǝ'kʹʷɐn/"
   },
   {
     "id": "L-CORPUS2-01439",
@@ -200024,7 +200232,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/kʹʷɐtʹs/"
   },
   {
     "id": "L-CORPUS2-01536",
@@ -200943,7 +201152,8 @@
       ]
     },
     "isLemma": false,
-    "conceptId": "HONEY"
+    "conceptId": "HONEY",
+    "ipa": "/fo:ˈɕʹɐᶎ/"
   },
   {
     "id": "L-CORPUS2-01579",
@@ -202393,7 +202603,7 @@
     },
     "isLemma": false,
     "conceptId": "BODY_STRUCTURE",
-    "ipa": "/ɬɐn/"
+    "ipa": "/ɬɐ'nǝqʹʷɐtʹʂɐ/"
   },
   {
     "id": "L-CORPUS2-01639",
@@ -202445,7 +202655,8 @@
     "conceptId": "NATURE",
     "subConceptId": "",
     "taxonomyFamily": "",
-    "rootForm": "губгъуэ"
+    "rootForm": "губгъуэ",
+    "ipa": "/'gʷǝbʁʷɐ/"
   },
   {
     "id": "L-CORPUS2-01641",
@@ -204351,7 +204562,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "MULTICOLOR"
+    "conceptId": "MULTICOLOR",
+    "ipa": "/'zɑ:qʹʷɐ/"
   },
   {
     "id": "L-CORPUS2-01729",
@@ -205243,7 +205455,8 @@
       ]
     },
     "isLemma": false,
-    "conceptId": "KALMYK"
+    "conceptId": "KALMYK",
+    "ipa": "/ɕǝ'pʹqʹɑ:ʁɐ/"
   },
   {
     "id": "L-CORPUS2-01770",
@@ -205341,7 +205554,8 @@
     "rootForm": "лӀы-",
     "rootIds": [
       "R-LIY"
-    ]
+    ],
+    "ipa": "/'ɬʹǝkʹʷɐ/"
   },
   {
     "id": "L-CORPUS2-01774",
@@ -206295,7 +206509,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/ˈɬʹɑ:qʹʷɐ/"
   },
   {
     "id": "L-CORPUS2-01816",
@@ -206320,7 +206535,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "DINING_ROOM"
+    "conceptId": "DINING_ROOM",
+    "ipa": "/ˈpɑ:kʹʷɐ/"
   },
   {
     "id": "L-CORPUS2-01817",
@@ -206624,7 +206840,8 @@
     "rootForm": "Ӏэ-",
     "rootIds": [
       "R-1E"
-    ]
+    ],
+    "ipa": "/ʔɐɕħɐ'te:t/"
   },
   {
     "id": "L-CORPUS2-01834",
@@ -207613,7 +207830,8 @@
       ]
     },
     "isLemma": false,
-    "conceptId": "THURSDAY"
+    "conceptId": "THURSDAY",
+    "ipa": "/ʁʷɐ'mǝɮɐ/"
   },
   {
     "id": "L-CORPUS2-01879",
@@ -209926,7 +210144,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "MULTICOLOR"
+    "conceptId": "MULTICOLOR",
+    "ipa": "/'zɑ:qʹʷɐ/"
   },
   {
     "id": "L-CORPUS2-01981",
@@ -212292,7 +212511,8 @@
     "rootForm": "щы-",
     "rootIds": [
       "R-SHCH"
-    ]
+    ],
+    "ipa": "/ɕǝze:'kʹʷɐn/"
   },
   {
     "id": "L-CORPUS2-02082",
@@ -212573,7 +212793,8 @@
       "kabardian": ""
     },
     "notes": "Corpus v1.0 batch-2 (freq: 43, lang: ady, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "ipa": "/ze:'kʹʷɐn/"
   },
   {
     "id": "L-CORPUS2-02096",
@@ -212735,7 +212956,8 @@
       ]
     },
     "isLemma": false,
-    "conceptId": "BODY_STRUCTURE"
+    "conceptId": "BODY_STRUCTURE",
+    "ipa": "/ɬɐ'pʹɐn/"
   },
   {
     "id": "L-CORPUS2-02104",
@@ -212837,7 +213059,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "PROTECT"
+    "conceptId": "PROTECT",
+    "ipa": "/qʹɐ'kʹʷɐn/"
   },
   {
     "id": "L-CORPUS2-02109",
@@ -215393,7 +215616,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "DEFECT"
+    "conceptId": "DEFECT",
+    "ipa": "/qʹe:tʹʂǝn/"
   },
   {
     "id": "L-CORPUS2-02217",
@@ -218566,7 +218790,8 @@
     "rootForm": "лӀы-",
     "rootIds": [
       "R-LIY"
-    ]
+    ],
+    "ipa": "/ɬʹǝʑ/"
   },
   {
     "id": "L-CORPUS2-02359",
@@ -219236,7 +219461,8 @@
       "kabardian": "ипӏэкӏэ"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 38, lang: kbd, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "ipa": "/jǝ'pɐtʹʂɐ/"
   },
   {
     "id": "L-CORPUS2-02387",
@@ -219929,7 +220155,8 @@
       ],
       "morphemeIds": [],
       "rule": "root"
-    }
+    },
+    "ipa": "/ʔʷɐn/"
   },
   {
     "id": "L-CORPUS2-02417",
@@ -221576,7 +221803,8 @@
     "rootForm": "Ӏэ-",
     "rootIds": [
       "R-1E"
-    ]
+    ],
+    "ipa": "/ʔɐ'nɐʁʷ/"
   },
   {
     "id": "L-CORPUS2-02490",
@@ -222088,7 +222316,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/'ʔʷǝʁʷɐ/"
   },
   {
     "id": "L-CORPUS2-02515",
@@ -223151,7 +223380,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "COLOR"
+    "conceptId": "COLOR",
+    "ipa": "/'ʔʷǝɕħɐ/"
   },
   {
     "id": "L-CORPUS2-02561",
@@ -225250,7 +225480,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/kʹʷɐ'dǝn/"
   },
   {
     "id": "L-CORPUS2-02654",
@@ -225838,7 +226069,8 @@
       ]
     },
     "isLemma": false,
-    "conceptId": "BODY_STRUCTURE"
+    "conceptId": "BODY_STRUCTURE",
+    "ipa": "/je:ɬɐ'ʔʷǝn/"
   },
   {
     "id": "L-CORPUS2-02681",
@@ -225961,7 +226193,8 @@
       ]
     },
     "isLemma": false,
-    "conceptId": "EAGLE"
+    "conceptId": "EAGLE",
+    "ipa": "/xɐʁɐˈχʷɐn/"
   },
   {
     "id": "L-CORPUS2-02686",
@@ -227481,7 +227714,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "COLOR"
+    "conceptId": "COLOR",
+    "ipa": "/wǝ'nɑ:ɕħɐ/"
   },
   {
     "id": "L-CORPUS2-02754",
@@ -230008,7 +230242,7 @@
       "R-KE"
     ],
     "conceptId": "COLOR",
-    "ipa": "/qʹɐ'rɑ:ɮ/"
+    "ipa": "/qʹɐrɐ'ɮǝʁʷɐ/"
   },
   {
     "id": "L-CORPUS2-02863",
@@ -230095,7 +230329,8 @@
       ]
     },
     "isLemma": false,
-    "conceptId": "KALMYK"
+    "conceptId": "KALMYK",
+    "ipa": "/ɕǝ'pʹqʹɑ:ʁɐ/"
   },
   {
     "id": "L-CORPUS2-02868",
@@ -230120,7 +230355,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "PROTECT"
+    "conceptId": "PROTECT",
+    "ipa": "/qʹɐ'kʹʷɐn/"
   },
   {
     "id": "L-CORPUS2-02869",
@@ -230919,7 +231155,8 @@
     "conceptId": "SIN",
     "subConceptId": "AS_SIN",
     "taxonomyFamily": "Ruh & Can",
-    "rootForm": "псэ"
+    "rootForm": "псэ",
+    "ipa": "/psɐˈkʹʷɐdu:/"
   },
   {
     "id": "L-CORPUS2-02907",
@@ -232206,7 +232443,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "BLUE"
+    "conceptId": "BLUE",
+    "ipa": "/xʷǝɕʹɐ'qʹʷǝn/"
   },
   {
     "id": "L-CORPUS2-02965",
@@ -235409,7 +235647,8 @@
     "rootForm": "лӀы-",
     "rootIds": [
       "R-LIY"
-    ]
+    ],
+    "ipa": "/'ɬʹǝkʹʷɐ/"
   },
   {
     "id": "L-CORPUS2-03107",
@@ -235758,7 +235997,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "EAR"
+    "conceptId": "EAR",
+    "ipa": "/tħɐʁɐˈpʹtʹsǝʁɐ/"
   },
   {
     "id": "L-CORPUS2-03123",
@@ -236741,7 +236981,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "SEE_LOVE"
+    "conceptId": "SEE_LOVE",
+    "ipa": "/qʹe:ʁɐɬɐ'ʁʷǝn/"
   },
   {
     "id": "L-CORPUS2-03166",
@@ -239187,7 +239428,8 @@
       ]
     },
     "isLemma": false,
-    "conceptId": "MIND"
+    "conceptId": "MIND",
+    "ipa": "/'psǝχʷɐ/"
   },
   {
     "id": "L-CORPUS2-03275",
@@ -240144,7 +240386,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "TOP"
+    "conceptId": "TOP",
+    "ipa": "/qʹǝtʹʂɐɬǝ'kʹʷɐn/"
   },
   {
     "id": "L-CORPUS2-03317",
@@ -243438,7 +243681,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/zɐpɐ'ʔɐɕʹɐw/"
   },
   {
     "id": "L-CORPUS2-03459",
@@ -243475,7 +243719,8 @@
       "kabardian": "хуищӏу"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 28, lang: kbd, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "ipa": "/'xʷi:ɕʹɐw/"
   },
   {
     "id": "L-CORPUS2-03461",
@@ -244996,7 +245241,7 @@
     "rootIds": [
       "R-LIY"
     ],
-    "ipa": "/ɬʹǝχʷ/"
+    "ipa": "/ɬʹǝ'χʷǝʑ/"
   },
   {
     "id": "L-CORPUS2-03523",
@@ -245021,7 +245266,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "NOSE"
+    "conceptId": "NOSE",
+    "ipa": "/'pʂɑ:χʷɐ/"
   },
   {
     "id": "L-CORPUS2-03524",
@@ -245618,7 +245864,8 @@
       ]
     },
     "isLemma": false,
-    "conceptId": "GO"
+    "conceptId": "GO",
+    "ipa": "/dɐ'kʹʷɐn/"
   },
   {
     "id": "L-CORPUS2-03550",
@@ -246593,7 +246840,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "BOW_MUSIC"
+    "conceptId": "BOW_MUSIC",
+    "ipa": "/ɕʹɐ'wǝpʹɕʹɐ/"
   },
   {
     "id": "L-CORPUS2-03591",
@@ -248445,7 +248693,8 @@
     "conceptId": "HERD_ASSOCIATES",
     "subConceptId": "HERD_GROUP",
     "taxonomyFamily": "Toplum & Meslek",
-    "rootForm": "Ӏэ-"
+    "rootForm": "Ӏэ-",
+    "ipa": "/ʔɐχʷǝ'ɬɐχʷ/"
   },
   {
     "id": "L-CORPUS2-03668",
@@ -249154,7 +249403,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/kʹʷɐ'dǝpʹɐ/"
   },
   {
     "id": "L-CORPUS2-03699",
@@ -249336,7 +249586,8 @@
     "rootIds": [
       "R-SHQE"
     ],
-    "conceptId": "TRUE"
+    "conceptId": "TRUE",
+    "ipa": "/'ɕǝpʹqʹɐ/"
   },
   {
     "id": "L-CORPUS2-03709",
@@ -252520,7 +252771,8 @@
     "rootForm": "лӀы-",
     "rootIds": [
       "R-LIY"
-    ]
+    ],
+    "ipa": "/'ɬʹǝkʹʷɐ/"
   },
   {
     "id": "L-CORPUS2-03843",
@@ -253787,7 +254039,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "YEAR"
+    "conceptId": "YEAR",
+    "ipa": "/ʁɐkʹʷɐ'dǝn/"
   },
   {
     "id": "L-CORPUS2-03902",
@@ -253832,7 +254085,8 @@
     "rootForm": "лӀы-",
     "rootIds": [
       "R-LIY"
-    ]
+    ],
+    "ipa": "/'ɬʹǝkʹʷɐ/"
   },
   {
     "id": "L-CORPUS2-03904",
@@ -254146,7 +254400,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "YEAR"
+    "conceptId": "YEAR",
+    "ipa": "/ʁɐ'kʹʷɐn/"
   },
   {
     "id": "L-CORPUS2-03919",
@@ -257917,7 +258172,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "TOP"
+    "conceptId": "TOP",
+    "ipa": "/wǝ'nɑ:ʁʷɐ/"
   },
   {
     "id": "L-CORPUS2-04082",
@@ -263068,7 +263324,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "EYE"
+    "conceptId": "EYE",
+    "ipa": "/te:'kʹʷɐn/"
   },
   {
     "id": "L-CORPUS2-04302",
@@ -265747,7 +266004,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "SPARE"
+    "conceptId": "SPARE",
+    "ipa": "/xʷɐ'kʹʷɐn/"
   },
   {
     "id": "L-CORPUS2-04411",
@@ -267348,7 +267606,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "TOP"
+    "conceptId": "TOP",
+    "ipa": "/qʹǝʔʷǝ'nɐn/"
   },
   {
     "id": "L-CORPUS2-04479",
@@ -271069,7 +271328,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "EYE"
+    "conceptId": "EYE",
+    "ipa": "/ˈmǝχʷǝmi:/"
   },
   {
     "id": "L-CORPUS2-04640",
@@ -271368,7 +271628,8 @@
     "conceptId": "OPPONENT",
     "subConceptId": "RESISTER",
     "taxonomyFamily": "Toplum & Meslek",
-    "rootForm": "пэ-"
+    "rootForm": "пэ-",
+    "ipa": "/pɐɕʹɐwǝˈvɐn/"
   },
   {
     "id": "L-CORPUS2-04652",
@@ -272832,7 +273093,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "COLOR"
+    "conceptId": "COLOR",
+    "ipa": "/'qʹʷǝɕħɐ/"
   },
   {
     "id": "L-CORPUS2-04714",
@@ -273346,7 +273608,8 @@
       "morphemeIds": [],
       "rule": "root"
     },
-    "conceptId": "COLOR"
+    "conceptId": "COLOR",
+    "ipa": "/'zɐwɐ/"
   },
   {
     "id": "L-CORPUS2-04738",
@@ -274146,7 +274409,8 @@
       "kabardian": ""
     },
     "notes": "Corpus v1.0 batch-2 (freq: 22, lang: ady, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "ipa": "/ze:'kʹʷɐtʹʂɐ/"
   },
   {
     "id": "L-CORPUS2-04777",
@@ -276803,7 +277067,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "SEA"
+    "conceptId": "SEA",
+    "ipa": "/te:ˈχʷɐn/"
   },
   {
     "id": "L-CORPUS2-04892",
@@ -277049,7 +277314,7 @@
     },
     "isLemma": false,
     "conceptId": "VALLEY",
-    "ipa": "/qʹʷɐ/"
+    "ipa": "/qʹo:m/"
   },
   {
     "id": "L-CORPUS2-04903",
@@ -279447,7 +279712,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "PROTECT"
+    "conceptId": "PROTECT",
+    "ipa": "/qʹɐ'kʹʷɐn/"
   },
   {
     "id": "L-CORPUS2-05009",
@@ -280149,7 +280415,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "COLOR"
+    "conceptId": "COLOR",
+    "ipa": "/sɐrˈsɐru:/"
   },
   {
     "id": "L-CORPUS2-05039",
@@ -285207,7 +285474,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "BIG_WORK"
+    "conceptId": "BIG_WORK",
+    "ipa": "/je:ʁɐ'ʂɐn/"
   },
   {
     "id": "L-CORPUS2-05257",
@@ -287516,7 +287784,7 @@
     "subConceptId": "-",
     "taxonomyFamily": "-",
     "rootForm": "гу",
-    "ipa": "/gʷǝ'ɕǝtʹʂ/"
+    "ipa": "/gʷǝɕǝ'tʹʂǝʁʷɐ/"
   },
   {
     "id": "L-CORPUS2-05362",
@@ -287678,7 +287946,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "EYE"
+    "conceptId": "EYE",
+    "ipa": "/te:kʹʷɐ'nǝʁɐ/"
   },
   {
     "id": "L-CORPUS2-05370",
@@ -287884,7 +288153,8 @@
       ]
     },
     "isLemma": false,
-    "conceptId": "EYEBROW"
+    "conceptId": "EYEBROW",
+    "ipa": "/te:ˈdzɐn/"
   },
   {
     "id": "L-CORPUS2-05380",
@@ -290400,7 +290670,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/qʹʷɐ'nɐf/"
   },
   {
     "id": "L-CORPUS2-05490",
@@ -290513,7 +290784,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/zɐgʷǝrǝ'ʔʷɐn/"
   },
   {
     "id": "L-CORPUS2-05495",
@@ -292512,7 +292784,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "SKIN"
+    "conceptId": "SKIN",
+    "ipa": "/ɕo:'dᶎɐn/"
   },
   {
     "id": "L-CORPUS2-05579",
@@ -292918,7 +293191,8 @@
       ]
     },
     "isLemma": false,
-    "conceptId": "BODY_STRUCTURE"
+    "conceptId": "BODY_STRUCTURE",
+    "ipa": "/'ɬɐtʹʂɐ/"
   },
   {
     "id": "L-CORPUS2-05596",
@@ -292978,7 +293252,8 @@
     "rootForm": "Ӏэ-",
     "rootIds": [
       "R-1E"
-    ]
+    ],
+    "ipa": "/ʔɐ'χʷɐʁʷ/"
   },
   {
     "id": "L-CORPUS2-05599",
@@ -293999,7 +294274,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "NOSE"
+    "conceptId": "NOSE",
+    "ipa": "/zɐprǝ'tʹʂǝn/"
   },
   {
     "id": "L-CORPUS2-05646",
@@ -294307,7 +294583,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "BONE"
+    "conceptId": "BONE",
+    "ipa": "/zɐχʷɐ'tʹʂǝʁʷɐ/"
   },
   {
     "id": "L-CORPUS2-05660",
@@ -294926,7 +295203,8 @@
       ]
     },
     "isLemma": false,
-    "conceptId": "MIND"
+    "conceptId": "MIND",
+    "ipa": "/ʁɐ'psǝtʹʂɐ/"
   },
   {
     "id": "L-CORPUS2-05687",
@@ -295610,7 +295888,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "LIFE_PARTNER"
+    "conceptId": "LIFE_PARTNER",
+    "ipa": "/'tʹʂɑ:ɕʹɐ/"
   },
   {
     "id": "L-CORPUS2-05721",
@@ -296532,7 +296811,7 @@
     },
     "isLemma": false,
     "conceptId": "VALLEY",
-    "ipa": "/qʹʷɐ/"
+    "ipa": "/qʹo:m/"
   },
   {
     "id": "L-CORPUS2-05760",
@@ -297247,7 +297526,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "DENSE"
+    "conceptId": "DENSE",
+    "ipa": "/mǝu:vǝˈʔɐᶎu:/"
   },
   {
     "id": "L-CORPUS2-05793",
@@ -300030,7 +300310,7 @@
     "rootIds": [
       "R-IEG"
     ],
-    "ipa": "/ʔɐgʷ/"
+    "ipa": "/ʔɐ'gʷǝbʑɐ/"
   },
   {
     "id": "L-CORPUS2-05905",
@@ -300119,7 +300399,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "DINING_ROOM"
+    "conceptId": "DINING_ROOM",
+    "ipa": "/tʹsɐ'rǝʔʷɐ/"
   },
   {
     "id": "L-CORPUS2-05909",
@@ -300583,7 +300864,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/qʹe:wǝɕɐˈtʹʂǝn/"
   },
   {
     "id": "L-CORPUS2-05934",
@@ -302442,7 +302724,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/'ɬɑ:qʹʷɐ/"
   },
   {
     "id": "L-CORPUS2-06016",
@@ -302795,7 +303078,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "DINING_ROOM"
+    "conceptId": "DINING_ROOM",
+    "ipa": "/tʹsɐ'rǝʔʷɐ/"
   },
   {
     "id": "L-CORPUS2-06031",
@@ -303038,7 +303322,8 @@
     "conceptId": "BELIRSIZ",
     "subConceptId": "-",
     "taxonomyFamily": "-",
-    "rootForm": "гу"
+    "rootForm": "гу",
+    "ipa": "/gʷɐ'tʹʂǝn/"
   },
   {
     "id": "L-CORPUS2-06041",
@@ -305957,7 +306242,8 @@
       ]
     },
     "isLemma": false,
-    "conceptId": "KALMYK"
+    "conceptId": "KALMYK",
+    "ipa": "/qʹǝfʹɐmǝ'ʔʷɐxʷu:/"
   },
   {
     "id": "L-CORPUS2-06170",
@@ -309856,7 +310142,8 @@
       "kabardian": ""
     },
     "notes": "Corpus v1.0 batch-2 (freq: 17, lang: ady, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "ipa": "/'ze:kʹʷɐ/"
   },
   {
     "id": "L-CORPUS2-06335",
@@ -310341,7 +310628,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "BONE"
+    "conceptId": "BONE",
+    "ipa": "/zɐχʷɐtʹʂǝ'nǝʁɐ/"
   },
   {
     "id": "L-CORPUS2-06358",
@@ -310511,7 +310799,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "JOY"
+    "conceptId": "JOY",
+    "ipa": "/ʁʷɐ'ɕɑ:ʁɐ/"
   },
   {
     "id": "L-CORPUS2-06366",
@@ -311189,7 +311478,8 @@
       ]
     },
     "isLemma": false,
-    "conceptId": "MIND"
+    "conceptId": "MIND",
+    "ipa": "/'psǝχʷɐ/"
   },
   {
     "id": "L-CORPUS2-06396",
@@ -311641,7 +311931,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "DINING_ROOM"
+    "conceptId": "DINING_ROOM",
+    "ipa": "/'dɑ:kʹʷɐ/"
   },
   {
     "id": "L-CORPUS2-06416",
@@ -312334,7 +312625,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/'ʔʷǝʁʷɐ/"
   },
   {
     "id": "L-CORPUS2-06450",
@@ -313013,7 +313305,8 @@
     "rootForm": "щы-",
     "rootIds": [
       "R-SHCH"
-    ]
+    ],
+    "ipa": "/ɕǝ'ɕʹɑ:ʁɐ/"
   },
   {
     "id": "L-CORPUS2-06484",
@@ -316321,7 +316614,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "THOUSAND"
+    "conceptId": "THOUSAND",
+    "ipa": "/qʹi:ɕɐ'tɐn/"
   },
   {
     "id": "L-CORPUS2-06621",
@@ -320491,7 +320785,7 @@
       "rule": "compound"
     },
     "conceptId": "COLOR",
-    "ipa": "/xɐtʹʂ/"
+    "ipa": "/xɐkʹʷɐ'dɐn/"
   },
   {
     "id": "L-CORPUS2-06799",
@@ -320965,7 +321259,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/'ʔʷǝpχʷɐ/"
   },
   {
     "id": "L-CORPUS2-06818",
@@ -322053,7 +322348,8 @@
       ]
     },
     "isLemma": false,
-    "conceptId": "MIND"
+    "conceptId": "MIND",
+    "ipa": "/'psǝʁʷɐ/"
   },
   {
     "id": "L-CORPUS2-06867",
@@ -322281,7 +322577,8 @@
       ]
     },
     "isLemma": false,
-    "conceptId": "EYE"
+    "conceptId": "EYE",
+    "ipa": "/te:tʹʂǝˈᶎǝn/"
   },
   {
     "id": "L-CORPUS2-06877",
@@ -322621,7 +322918,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "COLOR"
+    "conceptId": "COLOR",
+    "ipa": "/qʹʷɐ'tʹʂǝpʹɐ/"
   },
   {
     "id": "L-CORPUS2-06892",
@@ -323032,7 +323330,8 @@
       ]
     },
     "isLemma": false,
-    "conceptId": "BED_COVER"
+    "conceptId": "BED_COVER",
+    "ipa": "/zɐbɮɐ'χʷǝn/"
   },
   {
     "id": "L-CORPUS2-06912",
@@ -323627,7 +323926,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "BONE"
+    "conceptId": "BONE",
+    "ipa": "/zɐχʷɐ'tʹʂǝn/"
   },
   {
     "id": "L-CORPUS2-06939",
@@ -323970,7 +324270,8 @@
       ]
     },
     "isLemma": false,
-    "conceptId": "MORNING"
+    "conceptId": "MORNING",
+    "ipa": "/pɕɐ'fʹǝn/"
   },
   {
     "id": "L-CORPUS2-06955",
@@ -331627,7 +331928,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "LOVE"
+    "conceptId": "LOVE",
+    "ipa": "/zɐrǝ'xʷɐn/"
   },
   {
     "id": "L-CORPUS2-07280",
@@ -332222,7 +332524,7 @@
     "subConceptId": "OATH_TAKING",
     "taxonomyFamily": "Dua & Yemin",
     "rootForm": "тхьэ-",
-    "ipa": "/tħɐ/"
+    "ipa": "/tħɐˈrǝʔʷɐ/"
   },
   {
     "id": "L-CORPUS2-07306",
@@ -333536,7 +333838,8 @@
       ]
     },
     "isLemma": false,
-    "conceptId": "MORNING"
+    "conceptId": "MORNING",
+    "ipa": "/'dɐʁʷɐ/"
   },
   {
     "id": "L-CORPUS2-07364",
@@ -334044,7 +334347,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/'ʔʷǝʁʷɐ/"
   },
   {
     "id": "L-CORPUS2-07386",
@@ -335258,7 +335562,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "TOP"
+    "conceptId": "TOP",
+    "ipa": "/wǝ'nɑ:ʁʷɐ/"
   },
   {
     "id": "L-CORPUS2-07441",
@@ -335396,7 +335701,8 @@
       "kabardian": ""
     },
     "notes": "Corpus v1.0 batch-2 (freq: 15, lang: ady, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "ipa": "/je:kʹʷɐ'ɬʹɐn/"
   },
   {
     "id": "L-CORPUS2-07448",
@@ -335604,7 +335910,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "EYE"
+    "conceptId": "EYE",
+    "ipa": "/te:kʹʷɐ'nǝʁɐ/"
   },
   {
     "id": "L-CORPUS2-07460",
@@ -335786,7 +336093,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/'ʔʷɑ:ɕħɐ/"
   },
   {
     "id": "L-CORPUS2-07467",
@@ -336135,7 +336443,8 @@
     "rootForm": "Ӏэ-",
     "rootIds": [
       "R-1E"
-    ]
+    ],
+    "ipa": "/ʔɐ'χʷɐʁʷ/"
   },
   {
     "id": "L-CORPUS2-07482",
@@ -336424,7 +336733,7 @@
     "subConceptId": "-",
     "taxonomyFamily": "-",
     "rootForm": "гу",
-    "ipa": "/gʷǝ'rǝʁ/"
+    "ipa": "/gʷǝrǝʁɐ'ʔʷɐn/"
   },
   {
     "id": "L-CORPUS2-07496",
@@ -336758,7 +337067,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "PROTECT"
+    "conceptId": "PROTECT",
+    "ipa": "/qʹɐʔʷɐ'tɐn/"
   },
   {
     "id": "L-CORPUS2-07512",
@@ -339750,7 +340060,8 @@
       ]
     },
     "isLemma": false,
-    "conceptId": "DEFECT"
+    "conceptId": "DEFECT",
+    "ipa": "/ʑɐrǝ'ʔɑ:tɐw/"
   },
   {
     "id": "L-CORPUS2-07642",
@@ -340891,7 +341202,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "BOW_MUSIC"
+    "conceptId": "BOW_MUSIC",
+    "ipa": "/pxǝ'pɕǝn/"
   },
   {
     "id": "L-CORPUS2-07692",
@@ -345940,7 +346252,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/zɐbɮɐˈχʷǝʁʷɐ/"
   },
   {
     "id": "L-CORPUS2-07901",
@@ -345964,7 +346277,8 @@
       ]
     },
     "isLemma": false,
-    "conceptId": "THURSDAY"
+    "conceptId": "THURSDAY",
+    "ipa": "/ʁʷɐ'mǝɮɐ/"
   },
   {
     "id": "L-CORPUS2-07902",
@@ -346606,7 +346920,8 @@
     "conceptId": "BELIRSIZ",
     "subConceptId": "-",
     "taxonomyFamily": "-",
-    "rootForm": "гу"
+    "rootForm": "гу",
+    "ipa": "/gʷǝ'ɕʹɐʁʷ/"
   },
   {
     "id": "L-CORPUS2-07931",
@@ -347384,7 +347699,8 @@
     "conceptId": "BELIRSIZ",
     "subConceptId": "-",
     "taxonomyFamily": "-",
-    "rootForm": "гу"
+    "rootForm": "гу",
+    "ipa": "/gʷǝrǝ'ʔʷɐn/"
   },
   {
     "id": "L-CORPUS2-07968",
@@ -347610,7 +347926,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "TOP"
+    "conceptId": "TOP",
+    "ipa": "/qʹǝtʹʂɐɬǝ'kʹʷɐn/"
   },
   {
     "id": "L-CORPUS2-07978",
@@ -349256,7 +349573,8 @@
     "conceptId": "SPEECH",
     "subConceptId": "SPEECH",
     "taxonomyFamily": "Ruh & Can",
-    "rootForm": "псэ"
+    "rootForm": "псэ",
+    "ipa": "/psɐ'ɬɐn/"
   },
   {
     "id": "L-CORPUS2-08053",
@@ -350489,7 +350807,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "LIE"
+    "conceptId": "LIE",
+    "ipa": "/wǝpʹɐˈpʹǝn/"
   },
   {
     "id": "L-CORPUS2-08114",
@@ -350539,7 +350858,8 @@
       ]
     },
     "isLemma": false,
-    "conceptId": "EAGLE"
+    "conceptId": "EAGLE",
+    "ipa": "/xɐʁɐˈtʹʂǝn/"
   },
   {
     "id": "L-CORPUS2-08116",
@@ -351158,7 +351478,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "SPARE"
+    "conceptId": "SPARE",
+    "ipa": "/xʷǝ'ɕʹǝn/"
   },
   {
     "id": "L-CORPUS2-08144",
@@ -353465,7 +353786,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "SPARE"
+    "conceptId": "SPARE",
+    "ipa": "/xʷɐ'ɕʹǝn/"
   },
   {
     "id": "L-CORPUS2-08242",
@@ -356487,7 +356809,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "PETROLEUM"
+    "conceptId": "PETROLEUM",
+    "ipa": "/zǝxʷɐʁɐħɐzǝ'rǝn/"
   },
   {
     "id": "L-CORPUS2-08364",
@@ -358069,7 +358392,8 @@
       ]
     },
     "isLemma": false,
-    "conceptId": "MIND"
+    "conceptId": "MIND",
+    "ipa": "/psǝˈnɕʹɑ:ʁ/"
   },
   {
     "id": "L-CORPUS2-08428",
@@ -359341,7 +359665,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "THOUSAND"
+    "conceptId": "THOUSAND",
+    "ipa": "/qʹi:'xʷɐn/"
   },
   {
     "id": "L-CORPUS2-08481",
@@ -360062,7 +360387,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "THIS_ONE"
+    "conceptId": "THIS_ONE",
+    "ipa": "/mǝb'de:ᶎ/"
   },
   {
     "id": "L-CORPUS2-08510",
@@ -360534,7 +360860,7 @@
       "rule": "compound"
     },
     "conceptId": "VALLEY",
-    "ipa": "/'zɐtʹʂɐ/"
+    "ipa": "/zɐtʹʂɐ'ɬǝkʹʷɐw/"
   },
   {
     "id": "L-CORPUS2-08529",
@@ -360722,7 +361048,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "TOP"
+    "conceptId": "TOP",
+    "ipa": "/qʹǝte:'wɐn/"
   },
   {
     "id": "L-CORPUS2-08537",
@@ -360796,7 +361123,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "BONE"
+    "conceptId": "BONE",
+    "ipa": "/zɐχʷɐtʹʂǝ'nǝʁɐ/"
   },
   {
     "id": "L-CORPUS2-08540",
@@ -361620,7 +361948,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "VALLEY"
+    "conceptId": "VALLEY",
+    "ipa": "/zɐkʹʷɐ'tʹʂǝn/"
   },
   {
     "id": "L-CORPUS2-08579",
@@ -364333,7 +364662,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/kʹʷɐ'dǝpʹɐ/"
   },
   {
     "id": "L-CORPUS2-08707",
@@ -364472,7 +364802,8 @@
       ]
     },
     "isLemma": false,
-    "conceptId": "EYE"
+    "conceptId": "EYE",
+    "ipa": "/kʹʷɐ'ᶎǝn/"
   },
   {
     "id": "L-CORPUS2-08713",
@@ -366047,7 +366378,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "PROTECT"
+    "conceptId": "PROTECT",
+    "ipa": "/qʹɐ'tʹʂǝʁɐ/"
   },
   {
     "id": "L-CORPUS2-08784",
@@ -366175,7 +366507,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/ʔʷɐn'tʹɑ:ʁɐ/"
   },
   {
     "id": "L-CORPUS2-08789",
@@ -366383,7 +366716,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/ʔʷǝʁɐkʹʷɐ'tǝn/"
   },
   {
     "id": "L-CORPUS2-08802",
@@ -366569,7 +366903,8 @@
       ]
     },
     "isLemma": false,
-    "conceptId": "EAGLE"
+    "conceptId": "EAGLE",
+    "ipa": "/zɐɕǝʁɐ'qʹʷɐn/"
   },
   {
     "id": "L-CORPUS2-08810",
@@ -366708,7 +367043,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "BONE"
+    "conceptId": "BONE",
+    "ipa": "/zɐxɐqʹʷǝ'tɐn/"
   },
   {
     "id": "L-CORPUS2-08816",
@@ -366785,7 +367121,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/qʹǝxɐ'xǝn/"
   },
   {
     "id": "L-CORPUS2-08819",
@@ -366956,7 +367293,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/ʔʷǝ'dzǝn/"
   },
   {
     "id": "L-CORPUS2-08826",
@@ -368914,7 +369252,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "THOUSAND"
+    "conceptId": "THOUSAND",
+    "ipa": "/qʹi:wǝ'vɐn/"
   },
   {
     "id": "L-CORPUS2-08907",
@@ -378965,7 +379304,8 @@
     "rootForm": "Ӏэ-",
     "rootIds": [
       "R-1E"
-    ]
+    ],
+    "ipa": "/ʔɐ'χʷɐʁʷ/"
   },
   {
     "id": "L-CORPUS2-09334",
@@ -380136,7 +380476,8 @@
       ]
     },
     "isLemma": false,
-    "conceptId": "LIFE_PARTNER"
+    "conceptId": "LIFE_PARTNER",
+    "ipa": "/χʷɐˈpsɐn/"
   },
   {
     "id": "L-CORPUS2-09389",
@@ -381934,7 +382275,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "BONE"
+    "conceptId": "BONE",
+    "ipa": "/zɐxɐɕʹǝtʹʂǝ'nǝʁɐ/"
   },
   {
     "id": "L-CORPUS2-09470",
@@ -381959,7 +382301,7 @@
     },
     "isLemma": false,
     "conceptId": "BODY_STRUCTURE",
-    "ipa": "/jǝ'ɬɐs/"
+    "ipa": "/jǝɬɐ'si:ɕɐ/"
   },
   {
     "id": "L-CORPUS2-09472",
@@ -383155,7 +383497,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "COLOR"
+    "conceptId": "COLOR",
+    "ipa": "/'pɑ:ɕħɐ/"
   },
   {
     "id": "L-CORPUS2-09528",
@@ -383812,7 +384155,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "COLOR"
+    "conceptId": "COLOR",
+    "ipa": "/qʹʷɐ'tʹʂǝpʹɐ/"
   },
   {
     "id": "L-CORPUS2-09566",
@@ -384760,7 +385104,7 @@
     "subConceptId": "-",
     "taxonomyFamily": "-",
     "rootForm": "гу",
-    "ipa": "/'gʷǝxɐ/"
+    "ipa": "/gʷǝ'xɐχʷɐ/"
   },
   {
     "id": "L-CORPUS2-09611",
@@ -384927,7 +385271,8 @@
     "conceptId": "JOY",
     "subConceptId": "",
     "taxonomyFamily": "",
-    "rootForm": "губгъуэ"
+    "rootForm": "губгъуэ",
+    "ipa": "/'gʷǝbʁʷɐ/"
   },
   {
     "id": "L-CORPUS2-09618",
@@ -385563,7 +385908,8 @@
     "conceptId": "SEE",
     "subConceptId": "PRESENT_ACTION",
     "taxonomyFamily": "Göz & Görme",
-    "rootForm": "плъэ-"
+    "rootForm": "плъэ-",
+    "ipa": "/ˈpɬɐʁʷɐ/"
   },
   {
     "id": "L-CORPUS2-09646",
@@ -385757,7 +386103,8 @@
     "rootIds": [
       "R-SHKH"
     ],
-    "conceptId": "COLOR"
+    "conceptId": "COLOR",
+    "ipa": "/ɕħɐje:ʁɐ'zǝpʹɐ/"
   },
   {
     "id": "L-CORPUS2-09656",
@@ -386055,7 +386402,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/qʹǝgʷǝrǝ'ʔʷɐn/"
   },
   {
     "id": "L-CORPUS2-09673",
@@ -386180,7 +386528,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "VALLEY"
+    "conceptId": "VALLEY",
+    "ipa": "/'qʹʷǝpɕħɐ/"
   },
   {
     "id": "L-CORPUS2-09678",
@@ -386699,7 +387048,8 @@
       ]
     },
     "isLemma": false,
-    "conceptId": "COLOR"
+    "conceptId": "COLOR",
+    "ipa": "/fɐˈʁɑ:zɐ/"
   },
   {
     "id": "L-CORPUS2-09703",
@@ -386723,7 +387073,8 @@
       ]
     },
     "isLemma": false,
-    "conceptId": "EAGLE"
+    "conceptId": "EAGLE",
+    "ipa": "/te:ʁɐˈtǝn/"
   },
   {
     "id": "L-CORPUS2-09704",
@@ -386929,7 +387280,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/zɐgʷǝrǝʔʷɐ'nǝʁɐ/"
   },
   {
     "id": "L-CORPUS2-09715",
@@ -386954,7 +387306,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "YEAR"
+    "conceptId": "YEAR",
+    "ipa": "/ʁɐkʹʷɐ'sɐn/"
   },
   {
     "id": "L-CORPUS2-09717",
@@ -388033,7 +388386,8 @@
       "kabardian": "щоджэ"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 11, lang: kbd, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "ipa": "/ɕo:'dᶎɐn/"
   },
   {
     "id": "L-CORPUS2-09764",
@@ -391871,7 +392225,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/wǝˈtʹʂǝtʹʂɐ/"
   },
   {
     "id": "L-CORPUS2-09934",
@@ -393327,7 +393682,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/ˈmǝχʷǝmi:/"
   },
   {
     "id": "L-CORPUS2-09997",
@@ -393833,7 +394189,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/ʁʷɐ'ɣǝn/"
   },
   {
     "id": "L-VERIFIED-00017",
@@ -394286,7 +394643,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "YEAR"
+    "conceptId": "YEAR",
+    "ipa": "/ʁɐʁʷǝ'ɕǝn/"
   },
   {
     "id": "L-VERIFIED-00034",
@@ -394468,7 +394826,8 @@
     "conceptId": "BELIRSIZ",
     "subConceptId": "-",
     "taxonomyFamily": "-",
-    "rootForm": "гу"
+    "rootForm": "гу",
+    "ipa": "/gʷǝbzǝ'ʁɑ:ʁɐ/"
   },
   {
     "id": "L-VERIFIED-00041",
@@ -394627,7 +394986,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "WRITE"
+    "conceptId": "WRITE",
+    "ipa": "/te:wǝˈbʁʷɐn/"
   },
   {
     "id": "L-VERIFIED-00047",
@@ -394654,7 +395014,8 @@
     "translations": {
       "tr": "يمدح نفسه، يُطرِي نفسه"
     },
-    "conceptId": "EYE"
+    "conceptId": "EYE",
+    "ipa": "/zǝɕǝtχʷǝ'ᶎǝn/"
   },
   {
     "id": "L-VERIFIED-00048",
@@ -394685,7 +395046,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/'ɬɑ:qʹʷɐ/"
   },
   {
     "id": "L-VERIFIED-00049",
@@ -400308,7 +400670,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/xʷɐ'ᶎǝn/"
   },
   {
     "id": "L-VERIFIED-00248",
@@ -406664,7 +407027,8 @@
     "isLemma": true,
     "translations": {
       "ru": "несвободный"
-    }
+    },
+    "ipa": "/xʷi:'mǝtu:/"
   },
   {
     "id": "L-VERIFIED-00479",
@@ -407747,7 +408111,8 @@
     "isLemma": true,
     "translations": {
       "tr": "يُطَرِّي، يُنعِّم"
-    }
+    },
+    "ipa": "/wǝɕɐˈbǝn/"
   },
   {
     "id": "L-VERIFIED-00522",
@@ -407860,7 +408225,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "BONE"
+    "conceptId": "BONE",
+    "ipa": "/zɐxɐ'wɐn/"
   },
   {
     "id": "L-VERIFIED-00527",
@@ -408024,7 +408390,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/ʁʷɐ'ɕɑ:ʁɐ/"
   },
   {
     "id": "L-VERIFIED-00534",
@@ -408102,7 +408469,8 @@
       ]
     },
     "literalMeaningAdy": "имасд. завязать КӀапсэ",
-    "isLemma": true
+    "isLemma": true,
+    "ipa": "/zɐqʹʷɐ'dzɐn/"
   },
   {
     "id": "L-VERIFIED-00537",
@@ -408429,7 +408797,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "TOP"
+    "conceptId": "TOP",
+    "ipa": "/qʹǝpxi:'dzǝn/"
   },
   {
     "id": "L-VERIFIED-00550",
@@ -408457,7 +408826,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/je:ʁɐzǝˈxǝʁʷɐ/"
   },
   {
     "id": "L-VERIFIED-00551",
@@ -408762,7 +409132,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/zɐpǝ'ɕʹǝn/"
   },
   {
     "id": "L-VERIFIED-00563",
@@ -408790,7 +409161,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/xɐχʷɐ'nǝʁɐ/"
   },
   {
     "id": "L-VERIFIED-00564",
@@ -409063,7 +409435,8 @@
     },
     "subConceptId": "PROXIMITY",
     "taxonomyFamily": "Mekan & Yön",
-    "rootForm": "пэ-"
+    "rootForm": "пэ-",
+    "ipa": "/pɐˈbɮɑ:ʁɐ/"
   },
   {
     "id": "L-VERIFIED-00575",
@@ -409088,7 +409461,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "SISTER"
+    "conceptId": "SISTER",
+    "ipa": "/zɐdɐ'wɐn/"
   },
   {
     "id": "L-VERIFIED-00576",
@@ -409168,7 +409542,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "LIFE_PARTNER"
+    "conceptId": "LIFE_PARTNER",
+    "ipa": "/χʷɐχʷ/"
   },
   {
     "id": "L-VERIFIED-00579",
@@ -409298,7 +409673,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "SPARE"
+    "conceptId": "SPARE",
+    "ipa": "/te:ɕɐˈxɐn/"
   },
   {
     "id": "L-VERIFIED-00584",
@@ -409314,7 +409690,8 @@
     "isLemma": true,
     "translations": {
       "ru": "уздень Пщым иоркъ Оркъыжъым ихьадэ блэ мэбэг"
-    }
+    },
+    "ipa": "/wɐrqʹ/"
   },
   {
     "id": "L-VERIFIED-00585",
@@ -409487,7 +409864,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/gʷɐ'xǝn/"
   },
   {
     "id": "L-VERIFIED-00591",
@@ -409558,7 +409936,8 @@
       ]
     },
     "isLemma": false,
-    "conceptId": "EYE"
+    "conceptId": "EYE",
+    "ipa": "/qʹɐnɐ'ᶎǝn/"
   },
   {
     "id": "L-VERIFIED-00594",
@@ -409849,7 +410228,8 @@
     "translations": {
       "tr": "يشتهي، يرغب في، يَحسد على، يغبط على"
     },
-    "conceptId": "LIFE_PARTNER"
+    "conceptId": "LIFE_PARTNER",
+    "ipa": "/je:χʷɐpˈsɐn/"
   },
   {
     "id": "L-VERIFIED-00605",
@@ -409928,7 +410308,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "PROTECT"
+    "conceptId": "PROTECT",
+    "ipa": "/qʹɐ'rɑ:bɐ/"
   },
   {
     "id": "L-VERIFIED-00608",
@@ -409953,7 +410334,8 @@
     },
     "literalMeaningAdy": "грецкий орех Дэшхо чъыгым къыпыкӀэрэ пхъэшъхьэ-мышъхьэр ары <div style='",
     "isLemma": true,
-    "conceptId": "BONE"
+    "conceptId": "BONE",
+    "ipa": "/'dɐʂxʷɐ/"
   },
   {
     "id": "L-VERIFIED-00609",
@@ -410257,7 +410639,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/'ɬɑ:qʹʷɐ/"
   },
   {
     "id": "L-VERIFIED-00621",
@@ -410285,7 +410668,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/ʁʷǝ'ɕǝn/"
   },
   {
     "id": "L-VERIFIED-00622",
@@ -410418,7 +410802,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "PROTECT"
+    "conceptId": "PROTECT",
+    "ipa": "/qʹɐɬɐ'fǝn/"
   },
   {
     "id": "L-VERIFIED-00627",
@@ -410446,7 +410831,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/zɐɕǝʁɐ'qʹʷɐn/"
   },
   {
     "id": "L-VERIFIED-00628",
@@ -410700,7 +411086,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "WAIT"
+    "conceptId": "WAIT",
+    "ipa": "/te:'pɬɑ:dᶎɐ/"
   },
   {
     "id": "L-VERIFIED-00638",
@@ -410755,7 +411142,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "TOP"
+    "conceptId": "TOP",
+    "ipa": "/qʹǝxɐ'χʷɐn/"
   },
   {
     "id": "L-VERIFIED-00640",
@@ -410868,7 +411256,8 @@
     },
     "literalMeaningAdy": "сарай Былымхэр е нэмыкӀхэр чӀэтынэу ашӀырэ бгъагъэр ары <div style",
     "isLemma": true,
-    "conceptId": "KALMYK"
+    "conceptId": "KALMYK",
+    "ipa": "/qʹɐ'qʹǝrɐ/"
   },
   {
     "id": "L-VERIFIED-00644",
@@ -411509,7 +411898,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/jǝʁɐ'χʷɐn/"
   },
   {
     "id": "L-VERIFIED-00670",
@@ -411638,7 +412028,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "SUITOR"
+    "conceptId": "SUITOR",
+    "ipa": "/zǝte:'pχʷɐn/"
   },
   {
     "id": "L-VERIFIED-00676",
@@ -411793,7 +412184,8 @@
       ]
     },
     "isLemma": false,
-    "conceptId": "GO"
+    "conceptId": "GO",
+    "ipa": "/dɐ'kʷɐn/"
   },
   {
     "id": "L-VERIFIED-00682",
@@ -411821,7 +412213,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/je:zɐ'wɐn/"
   },
   {
     "id": "L-VERIFIED-00683",
@@ -411942,7 +412335,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "THOUSAND"
+    "conceptId": "THOUSAND",
+    "ipa": "/qʹi:'bzǝn/"
   },
   {
     "id": "L-VERIFIED-00688",
@@ -412052,7 +412446,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/bɐ'ʁʷɐn/"
   },
   {
     "id": "L-VERIFIED-00692",
@@ -412317,7 +412712,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "PROTECT"
+    "conceptId": "PROTECT",
+    "ipa": "/qʹɐn'ᶎɑ:ɮ/"
   },
   {
     "id": "L-VERIFIED-00703",
@@ -421052,7 +421448,8 @@
     "conceptId": "WAITING",
     "subConceptId": "ATTENTION",
     "taxonomyFamily": "Düşünce & Soyut",
-    "rootForm": "пэ-"
+    "rootForm": "пэ-",
+    "ipa": "/pɐ'pɬɐn/"
   },
   {
     "id": "L-VERIFIED-01019",
@@ -422731,7 +423128,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "TOP"
+    "conceptId": "TOP",
+    "ipa": "/qʹǝxʷɐʁɐ'ʁʷǝn/"
   },
   {
     "id": "L-VERIFIED-01080",
@@ -425182,7 +425580,8 @@
     "rootIds": [
       "R-F"
     ],
-    "conceptId": "ROT"
+    "conceptId": "ROT",
+    "ipa": "/frɐn'dʐǝ/"
   },
   {
     "id": "L-VERIFIED-01169",
@@ -427296,7 +427695,8 @@
     "conceptId": "OBSTACLE",
     "subConceptId": "IMPACT",
     "taxonomyFamily": "Eylem & Fiziksel",
-    "rootForm": "пэ-"
+    "rootForm": "пэ-",
+    "ipa": "/pɐrǝˈwɐn/"
   },
   {
     "id": "L-VERIFIED-01245",
@@ -428176,7 +428576,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/zɐte:'xʷɐn/"
   },
   {
     "id": "L-VERIFIED-01276",
@@ -430166,7 +430567,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/mɐˈχɑ:dᶎɐ/"
   },
   {
     "id": "L-VERIFIED-01351",
@@ -430242,7 +430644,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/ʁɐgʷǝʂ'xʷɐn/"
   },
   {
     "id": "L-VERIFIED-01354",
@@ -430690,7 +431093,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "BLUE"
+    "conceptId": "BLUE",
+    "ipa": "/tχʷɐ/"
   },
   {
     "id": "L-VERIFIED-01373",
@@ -430716,7 +431120,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "EYE"
+    "conceptId": "EYE",
+    "ipa": "/'bʑɑ:qʹʷɐ/"
   },
   {
     "id": "L-VERIFIED-01374",
@@ -430818,7 +431223,8 @@
     "rootForm": "щы-",
     "rootIds": [
       "R-SHCH"
-    ]
+    ],
+    "ipa": "/ɕǝ'χʷɐn/"
   },
   {
     "id": "L-VERIFIED-01378",
@@ -430919,7 +431325,8 @@
     "isLemma": true,
     "translations": {
       "ru": "сабля Чатэ <div style='margin-left:3e"
-    }
+    },
+    "ipa": "/'sɐʂxʷɐ/"
   },
   {
     "id": "L-VERIFIED-01382",
@@ -431021,7 +431428,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "TOP"
+    "conceptId": "TOP",
+    "ipa": "/qʹǝgʷɐ'tʂǝn/"
   },
   {
     "id": "L-VERIFIED-01386",
@@ -431359,7 +431767,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "NOSE"
+    "conceptId": "NOSE",
+    "ipa": "/zɐpǝʁɐ'ʑɐn/"
   },
   {
     "id": "L-VERIFIED-01399",
@@ -431431,7 +431840,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/gʷɐ'tǝn/"
   },
   {
     "id": "L-VERIFIED-01402",
@@ -431485,7 +431895,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "JOY"
+    "conceptId": "JOY",
+    "ipa": "/ʁʷɐ'tǝn/"
   },
   {
     "id": "L-VERIFIED-01404",
@@ -431961,7 +432372,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "DEFECT"
+    "conceptId": "DEFECT",
+    "ipa": "/qʹe:'wɐn/"
   },
   {
     "id": "L-VERIFIED-01423",
@@ -431989,7 +432401,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/qʹɐgʷǝ'ʂxʷɐn/"
   },
   {
     "id": "L-VERIFIED-01424",
@@ -432179,7 +432592,8 @@
     "rootForm": "щы-",
     "rootIds": [
       "R-SHCH"
-    ]
+    ],
+    "ipa": "/ɕǝ'wɑ:ʁɐ/"
   },
   {
     "id": "L-VERIFIED-01432",
@@ -432207,7 +432621,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "YEAR"
+    "conceptId": "YEAR",
+    "ipa": "/ʁɐbǝrsǝ'rǝn/"
   },
   {
     "id": "L-VERIFIED-01433",
@@ -432311,7 +432726,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "TOP"
+    "conceptId": "TOP",
+    "ipa": "/qʹǝdɐ'χʷǝn/"
   },
   {
     "id": "L-VERIFIED-01437",
@@ -432504,7 +432920,8 @@
       ],
       "morphemeIds": [],
       "rule": "root"
-    }
+    },
+    "ipa": "/ɕɐ/"
   },
   {
     "id": "L-VERIFIED-01444",
@@ -432672,7 +433089,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "PROTECT"
+    "conceptId": "PROTECT",
+    "ipa": "/qʹɐ'rɑ:bʁɐ/"
   },
   {
     "id": "L-VERIFIED-01450",
@@ -433631,7 +434049,8 @@
     "isLemma": true,
     "translations": {
       "ru": "лъым. пахал, -а, -о <div style='margin-left"
-    }
+    },
+    "ipa": "/'ʑɑ:ʁɐ/"
   },
   {
     "id": "L-VERIFIED-01490",
@@ -434069,7 +434488,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/ʁʷɐ'ʁʷɐn/"
   },
   {
     "id": "L-VERIFIED-01508",
@@ -434138,7 +434558,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/χʷɐˈnɐn/"
   },
   {
     "id": "L-VERIFIED-01511",
@@ -434299,7 +434720,8 @@
     "isLemma": true,
     "translations": {
       "ru": "выкройка Щыгъыныр зэрэбзыгъэн фае"
-    }
+    },
+    "ipa": "/ˈbzǝpχɐ/"
   },
   {
     "id": "L-VERIFIED-01518",
@@ -434350,7 +434772,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "LIFE_PARTNER"
+    "conceptId": "LIFE_PARTNER",
+    "ipa": "/zǝ'gʷɐru:/"
   },
   {
     "id": "L-VERIFIED-01520",
@@ -434378,7 +434801,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "JOY"
+    "conceptId": "JOY",
+    "ipa": "/zɐgʷɐ'tʂǝn/"
   },
   {
     "id": "L-VERIFIED-01521",
@@ -434444,7 +434868,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/pɕǝn/"
   },
   {
     "id": "L-VERIFIED-01524",
@@ -434499,7 +434924,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/zǝxɐ'ɕʹɐn/"
   },
   {
     "id": "L-VERIFIED-01526",
@@ -434642,7 +435068,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "SEA"
+    "conceptId": "SEA",
+    "ipa": "/je:χʷɐˈnǝn/"
   },
   {
     "id": "L-VERIFIED-01531",
@@ -434696,7 +435123,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/zɐzɐ'wɐn/"
   },
   {
     "id": "L-VERIFIED-01533",
@@ -435054,7 +435482,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/ʂxʷǝʑ/"
   },
   {
     "id": "L-VERIFIED-01547",
@@ -435079,7 +435508,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "PROTECT"
+    "conceptId": "PROTECT",
+    "ipa": "/qʹɐ'ʑǝn/"
   },
   {
     "id": "L-VERIFIED-01548",
@@ -435565,7 +435995,8 @@
     "translations": {
       "tr": "يتبادل، يتقايض"
     },
-    "conceptId": "EYE"
+    "conceptId": "EYE",
+    "ipa": "/zɐχʷɐ'ᶎǝn/"
   },
   {
     "id": "L-VERIFIED-01568",
@@ -436260,7 +436691,7 @@
     "subConceptId": "-",
     "taxonomyFamily": "-",
     "rootForm": "гу",
-    "ipa": "/gʷ/"
+    "ipa": "/gʷo:/"
   },
   {
     "id": "L-VERIFIED-01595",
@@ -457282,7 +457713,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "COLOR"
+    "conceptId": "COLOR",
+    "ipa": "/te:ˈtǝʁʷɐ/"
   },
   {
     "id": "L-VERIFIED-02367",
@@ -457449,7 +457881,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/je:dɐ'wɐn/"
   },
   {
     "id": "L-VERIFIED-02373",
@@ -457477,7 +457910,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "YEAR"
+    "conceptId": "YEAR",
+    "ipa": "/ʁɐp'ɕǝn/"
   },
   {
     "id": "L-VERIFIED-02374",
@@ -457530,7 +457964,8 @@
     "isLemma": true,
     "translations": {
       "ru": "лъым. 1"
-    }
+    },
+    "ipa": "/ʁʷɐɬǝ'ᶎǝʁʷɐ/"
   },
   {
     "id": "L-VERIFIED-02376",
@@ -457612,7 +458047,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/ʁɐʁʷɐ'zɐn/"
   },
   {
     "id": "L-VERIFIED-02379",
@@ -457923,7 +458359,8 @@
     },
     "literalMeaningAdy": "орнамент Тхыпхъэ шӀыкӀэкӀэ Ӏазэ",
     "isLemma": true,
-    "conceptId": "BACK"
+    "conceptId": "BACK",
+    "ipa": "/ˈtxǝpχɐ/"
   },
   {
     "id": "L-VERIFIED-02392",
@@ -458229,7 +458666,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/wɐgʷ/"
   },
   {
     "id": "L-VERIFIED-02404",
@@ -458286,7 +458724,8 @@
       ],
       "morphemeIds": [],
       "rule": "root"
-    }
+    },
+    "ipa": "/'ʂɑ:wɐ/"
   },
   {
     "id": "L-VERIFIED-02406",
@@ -458315,7 +458754,8 @@
     "isLemma": true,
     "translations": {
       "ru": "имасд. отправиться обратно <div style"
-    }
+    },
+    "ipa": "/je:ʑɐ'ᶎǝn/"
   },
   {
     "id": "L-VERIFIED-02407",
@@ -458576,7 +459016,8 @@
     "translations": {
       "tr": "منتجات غذائية، مواد غذائية"
     },
-    "conceptId": "THURSDAY"
+    "conceptId": "THURSDAY",
+    "ipa": "/ʁʷɐmǝ'ɮɑ:pχɐ/"
   },
   {
     "id": "L-VERIFIED-02417",
@@ -458773,7 +459214,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/ʁɐ'sǝn/"
   },
   {
     "id": "L-VERIFIED-02426",
@@ -458899,7 +459341,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/zǝde:ʁɐħɐ'xǝn/"
   },
   {
     "id": "L-VERIFIED-02431",
@@ -459075,7 +459518,7 @@
     "rootIds": [
       "R-SHCH"
     ],
-    "ipa": "/'ɕǝʁɐ/"
+    "ipa": "/ɕǝʁɐ'wɐn/"
   },
   {
     "id": "L-VERIFIED-02439",
@@ -459098,7 +459541,8 @@
     "rootForm": "щы-",
     "rootIds": [
       "R-SHCH"
-    ]
+    ],
+    "ipa": "/ɕǝ'nɑ:bʁɐ/"
   },
   {
     "id": "L-VERIFIED-02440",
@@ -459168,7 +459612,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/qʹe:wǝvɐ'xǝn/"
   },
   {
     "id": "L-VERIFIED-02443",
@@ -459384,7 +459829,7 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/qʹǝqʹ/"
+    "ipa": "/qʹǝqʹʷɐ'nɐn/"
   },
   {
     "id": "L-VERIFIED-02452",
@@ -459743,7 +460188,8 @@
     "notes": "Verified (freq: 5, 0.Ady-Ady_AIG)",
     "conceptId": "COLOR",
     "literalMeaningAdy": "пчъ. семьсот Шъэу блы Тятэ сомэ шъиблкӀэ чэм къыщэфыгъ</div",
-    "isLemma": true
+    "isLemma": true,
+    "ipa": "/ɕi:bɮ/"
   },
   {
     "id": "L-VERIFIED-02467",
@@ -459899,7 +460345,8 @@
     "rootIds": [
       "R-SHKH"
     ],
-    "conceptId": "COLOR"
+    "conceptId": "COLOR",
+    "ipa": "/ɕħɐwǝ'bɑ:tɐ/"
   },
   {
     "id": "L-VERIFIED-02473",
@@ -460263,7 +460710,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "COLOR"
+    "conceptId": "COLOR",
+    "ipa": "/'pɑ:ɕħɐ/"
   },
   {
     "id": "L-VERIFIED-02487",
@@ -460475,7 +460923,8 @@
     "isLemma": true,
     "translations": {
       "ru": "имасд. судиться <div style='mar"
-    }
+    },
+    "ipa": "/dɐ'wɐn/"
   },
   {
     "id": "L-VERIFIED-02495",
@@ -460551,7 +461000,8 @@
       "morphemeIds": [],
       "rule": "root"
     },
-    "conceptId": "COLOR"
+    "conceptId": "COLOR",
+    "ipa": "/tʂɐ/"
   },
   {
     "id": "L-VERIFIED-02498",
@@ -460702,7 +461152,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/ʁʷɐ'ɕɐn/"
   },
   {
     "id": "L-VERIFIED-02505",
@@ -460929,7 +461380,8 @@
     "translations": {
       "tr": "يغازل"
     },
-    "conceptId": "SUITOR"
+    "conceptId": "SUITOR",
+    "ipa": "/je:psɐɬǝ'χʷǝn/"
   },
   {
     "id": "L-VERIFIED-02514",
@@ -461037,7 +461489,7 @@
       "rule": "compound"
     },
     "conceptId": "YEAR",
-    "ipa": "/ʁɐʂ/"
+    "ipa": "/ʁɐɕɐ'bɐn/"
   },
   {
     "id": "L-VERIFIED-02518",
@@ -461190,7 +461642,8 @@
     "translations": {
       "tr": "يتعافى من مرض/ يحدث مجدداً/ يصبح صالحاً"
     },
-    "conceptId": "EYE"
+    "conceptId": "EYE",
+    "ipa": "/qʹɐχʷǝ'ᶎǝn/"
   },
   {
     "id": "L-VERIFIED-02524",
@@ -461407,7 +461860,8 @@
     "isLemma": true,
     "translations": {
       "tr": "يسبق، يتجاوز ركضاً"
-    }
+    },
+    "ipa": "/te:ˈtʂǝn/"
   },
   {
     "id": "L-VERIFIED-02533",
@@ -461795,7 +462249,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "SUITOR"
+    "conceptId": "SUITOR",
+    "ipa": "/zǝte:wǝ'bʁʷɐn/"
   },
   {
     "id": "L-VERIFIED-02549",
@@ -461848,7 +462303,8 @@
     "translations": {
       "tr": "يلتئم ، يتلبد، يتآزر"
     },
-    "conceptId": "BODY_STRUCTURE"
+    "conceptId": "BODY_STRUCTURE",
+    "ipa": "/zɐqʹʷɐɬɐ'dɐn/"
   },
   {
     "id": "L-VERIFIED-02552",
@@ -461893,7 +462349,8 @@
     "isLemma": true,
     "translations": {
       "ru": "имасд. выбежал <div"
-    }
+    },
+    "ipa": "/jǝˈtʂǝn/"
   },
   {
     "id": "L-VERIFIED-02554",
@@ -462203,7 +462660,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/zɐpʹqʹrǝ'xǝn/"
   },
   {
     "id": "L-VERIFIED-02567",
@@ -462258,7 +462716,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "EYE"
+    "conceptId": "EYE",
+    "ipa": "/je:ˈtχʷɐn/"
   },
   {
     "id": "L-VERIFIED-02569",
@@ -462695,7 +463154,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "OAK_TREE"
+    "conceptId": "OAK_TREE",
+    "ipa": "/χɐ'dᶎɐn/"
   },
   {
     "id": "L-VERIFIED-02586",
@@ -462725,7 +463185,8 @@
     "conceptId": "LIFE_PARTNER",
     "subConceptId": "LIFE_PARTNER",
     "taxonomyFamily": "Ruh & Can",
-    "rootForm": "псэ"
+    "rootForm": "псэ",
+    "ipa": "/psɐˈwɐʁʷ/"
   },
   {
     "id": "L-VERIFIED-02587",
@@ -463372,7 +463833,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "COLOR"
+    "conceptId": "COLOR",
+    "ipa": "/qʹʷɐ'ɮɐn/"
   },
   {
     "id": "L-VERIFIED-02612",
@@ -463440,7 +463902,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "BONE"
+    "conceptId": "BONE",
+    "ipa": "/dǝɕ/"
   },
   {
     "id": "L-VERIFIED-02615",
@@ -463621,7 +464084,8 @@
       ]
     },
     "isLemma": false,
-    "conceptId": "SNAKE"
+    "conceptId": "SNAKE",
+    "ipa": "/dɐwǝ'bɐn/"
   },
   {
     "id": "L-VERIFIED-02622",
@@ -463638,7 +464102,8 @@
     "isLemma": true,
     "translations": {
       "ru": "пчъ. восемьсот Шъэу и Фермэм мэл шъий тет"
-    }
+    },
+    "ipa": "/ɕi:j/"
   },
   {
     "id": "L-VERIFIED-02623",
@@ -463780,7 +464245,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "TOP"
+    "conceptId": "TOP",
+    "ipa": "/qʹǝxɐʁʷɐ'tɐn/"
   },
   {
     "id": "L-VERIFIED-02629",
@@ -464221,7 +464687,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "CRADLE"
+    "conceptId": "CRADLE",
+    "ipa": "/qʹi:'ʂǝn/"
   },
   {
     "id": "L-VERIFIED-02647",
@@ -464249,7 +464716,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/wǝzɐˈdǝn/"
   },
   {
     "id": "L-VERIFIED-02648",
@@ -464505,7 +464973,8 @@
     "conceptId": "KICK",
     "subConceptId": "KICK",
     "taxonomyFamily": "Ayak & Adım",
-    "rootForm": "лъэ-"
+    "rootForm": "лъэ-",
+    "ipa": "/ɬɐqʹʷɐ'wɐn/"
   },
   {
     "id": "L-VERIFIED-02658",
@@ -464754,7 +465223,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "TOP"
+    "conceptId": "TOP",
+    "ipa": "/wǝ'nɑ:ʁʷɐ/"
   },
   {
     "id": "L-VERIFIED-02669",
@@ -465028,7 +465498,8 @@
       ]
     },
     "literalMeaningAdy": "имасд. поднять Натрыфыр кӀ",
-    "isLemma": true
+    "isLemma": true,
+    "ipa": "/dɐ'ħǝn/"
   },
   {
     "id": "L-VERIFIED-02680",
@@ -465126,7 +465597,8 @@
     },
     "notes": "Verified (freq: 5, 0.Ady-Ady_AIG)",
     "literalMeaningAdy": "рабочий Обществэм ыкӀоцӀкӀэ производствэм Ӏутэу Ӏоф зышӀэу производствэ амал",
-    "isLemma": true
+    "isLemma": true,
+    "ipa": "/rɐˈbot͡ɕɐ/"
   },
   {
     "id": "L-VERIFIED-02684",
@@ -465321,7 +465793,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "SEA"
+    "conceptId": "SEA",
+    "ipa": "/zɐte:ɕɐ'xɐn/"
   },
   {
     "id": "L-VERIFIED-02693",
@@ -465349,7 +465822,8 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "conceptId": "JOY"
+    "conceptId": "JOY",
+    "ipa": "/zɐ'gʷɐt/"
   },
   {
     "id": "L-VERIFIED-02694",
@@ -465798,7 +466272,8 @@
     "conceptId": "NATURE",
     "subConceptId": "FIELD",
     "taxonomyFamily": "Doğa & Arazi",
-    "rootForm": "губгъуэ"
+    "rootForm": "губгъуэ",
+    "ipa": "/'gʷǝbʁʷɐ/"
   },
   {
     "id": "L-VERIFIED-02715",
@@ -466258,7 +466733,8 @@
     "isLemma": true,
     "translations": {
       "tr": "Kamış"
-    }
+    },
+    "ipa": "/ɐn'drɐf/"
   },
   {
     "id": "L-PLANT-003",
@@ -466577,7 +467053,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/bɐɬ'qʹɐr/"
   },
   {
     "id": "L-PLANT-018",
@@ -466767,7 +467244,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/bzɐ'dᶎɑ:ʁɐ/"
   },
   {
     "id": "L-CONCEPT-009",
@@ -467716,7 +468194,7 @@
     "id": "L-PROMPT-00040",
     "form": "пхъэӀэщэжъ",
     "literalMeaning": "pullukçu",
-    "ipa": "/pχɐ'ʔɐɕɐ/",
+    "ipa": "/pχɐʔɐ'ɕɐʑ/",
     "conceptId": "PLOWMAN",
     "partOfSpeech": "noun",
     "notes": "PROMPT entegrasyonu (genel)",
@@ -494028,7 +494506,8 @@
       "adyghe": "",
       "kabardian": "джгукӀэ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "ipa": "/dᶎɐ'gʷǝtʹʂɐ/"
   },
   {
     "id": "L-KBD-00898",
@@ -498928,7 +499407,8 @@
       "tr": "дэхащэ / дахащэ ENFES (çok güzel)",
       "trSource": "8.Ady-Tur_Huvaj.json",
       "trVerified": false
-    }
+    },
+    "ipa": "/dɐ'xɑ:ɕʹɐ/"
   },
   {
     "id": "L-KBD-01072",
@@ -499035,7 +499515,8 @@
       "adyghe": "",
       "kabardian": "дэчыхьын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "ipa": "/dɐtʂǝ'xǝn/"
   },
   {
     "id": "L-KBD-01076",
@@ -503520,7 +504001,8 @@
       "adyghe": "",
       "kabardian": "епщкӀузанэ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "ipa": "/je:pɕǝkʹʷǝ'zɑ:nɐ/"
   },
   {
     "id": "L-KBD-01230",
@@ -505253,7 +505735,8 @@
       "adyghe": "",
       "kabardian": "еухыгъуэ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "ipa": "/je:wɐˈxǝʁʷɐ/"
   },
   {
     "id": "L-KBD-01290",
@@ -507104,7 +507587,8 @@
       "tr": "ещӀопщэуэн / екӀэпщэон KAMÇILAMAK",
       "trSource": "8.Ady-Tur_Huvaj.json",
       "trVerified": false
-    }
+    },
+    "ipa": "/je:ɕʹɐpɕɐˈwɐn/"
   },
   {
     "id": "L-KBD-01352",
@@ -511006,7 +511490,8 @@
       "adyghe": "",
       "kabardian": "зэблэупщӀыкӀын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "ipa": "/zɐbɮɐwǝptʹsǝˈtʹʂǝn/"
   },
   {
     "id": "L-KBD-01489",
@@ -511219,7 +511704,8 @@
       "adyghe": "",
       "kabardian": "зэгрыукӀуриикӀын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "ipa": "/zɐbɣrǝu:kʹʷǝri:jǝ'tʹʂǝn/"
   },
   {
     "id": "L-KBD-01496",
@@ -513973,7 +514459,8 @@
       "adyghe": "",
       "kabardian": "зэдэпсэуэн"
     },
-    "isLemma": false
+    "isLemma": false,
+    "ipa": "/zɐdɐpsɐ'wǝn/"
   },
   {
     "id": "L-KBD-01589",
@@ -516734,7 +517221,8 @@
       "adyghe": "",
       "kabardian": "зэлгъэлъэн"
     },
-    "isLemma": false
+    "isLemma": false,
+    "ipa": "/zɐʁɐ'ɬɐn/"
   },
   {
     "id": "L-KBD-01683",
@@ -518374,7 +518862,8 @@
       "adyghe": "",
       "kabardian": "зэпхрыбруукӀын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "ipa": "/zɐpxǝbru:wǝ'tʹʂǝn/"
   },
   {
     "id": "L-KBD-01739",
@@ -537355,7 +537844,8 @@
       "adyghe": "",
       "kabardian": "къегъэкӀуэкӀ-негъэкӀэкӀ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "ipa": "/qʹe:ʁɐkʹʷɐtʹʂne:ʁɐ'kʹʷɐtʹʂ/"
   },
   {
     "id": "L-KBD-02403",
@@ -550471,7 +550961,8 @@
       "adyghe": "",
       "kabardian": "къызэщӀэвыӀыкӀын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "ipa": "/qʹǝzɐɕʹɐwǝvǝʔǝ'tʹʂǝn/"
   },
   {
     "id": "L-KBD-02854",
@@ -555931,7 +556422,8 @@
       "adyghe": "",
       "kabardian": "къыхэпэжэкӀын"
     },
-    "isLemma": false
+    "isLemma": false,
+    "ipa": "/qʹǝxɐpɐᶎǝ'tʹʂǝn/"
   },
   {
     "id": "L-KBD-03041",
@@ -570580,7 +571072,8 @@
       "adyghe": "",
       "kabardian": "мыункӀфӀыж"
     },
-    "isLemma": false
+    "isLemma": false,
+    "ipa": "/mǝu:ntʹʂǝˈfʹǝᶎ/"
   },
   {
     "id": "L-KBD-03558",
@@ -572149,7 +572642,8 @@
       "adyghe": "",
       "kabardian": "напщӀащхьэ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "ipa": "/nɐ'pʹɑ:ɕħɐ/"
   },
   {
     "id": "L-KBD-03612",
@@ -584265,7 +584759,8 @@
     "isLemma": false,
     "subConceptId": "ECHO_BACK",
     "taxonomyFamily": "Eylem & Dil",
-    "rootForm": "пэ-"
+    "rootForm": "пэ-",
+    "ipa": "/pɐʔʷǝˈᶎǝn/"
   },
   {
     "id": "L-KBD-04054",
@@ -595565,7 +596060,8 @@
       "adyghe": "",
       "kabardian": "удэрэщхъун"
     },
-    "isLemma": false
+    "isLemma": false,
+    "ipa": "/wǝdɐrɐˈɕχʷɐn/"
   },
   {
     "id": "L-KBD-04455",
@@ -613607,7 +614103,8 @@
       "adyghe": "",
       "kabardian": "шэ-пӀастӀэ"
     },
-    "isLemma": false
+    "isLemma": false,
+    "ipa": "/ʂɐ'pʹɑ:stɐ/"
   },
   {
     "id": "L-KBD-05103",
@@ -616123,7 +616620,8 @@
       "adyghe": "",
       "kabardian": "щӀэбгъуэнлъэн"
     },
-    "isLemma": false
+    "isLemma": false,
+    "ipa": "/ɕʹɐbʁʷǝ'nɬɐn/"
   },
   {
     "id": "L-KBD-05203",
@@ -628349,7 +628847,8 @@
       "adyghe": "",
       "kabardian": "отбой"
     },
-    "isLemma": false
+    "isLemma": false,
+    "ipa": "/ɐˈboɪ̯/"
   },
   {
     "id": "L-KBD-05700",
@@ -630722,7 +631221,8 @@
     "id": "L-MORPHO-ХЫКЪУЭ",
     "rootIds": [
       "R-KHY"
-    ]
+    ],
+    "ipa": "/ˈxǝqʹχʷɐ/"
   },
   {
     "form": "хьэндрабгъуэ",
@@ -630748,7 +631248,8 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
+    },
+    "ipa": "/ħɐndǝ'rɑ:bʁʷɐ/"
   },
   {
     "form": "хьэнтӀрабыщ",
