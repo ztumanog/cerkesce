@@ -7288,7 +7288,7 @@
     "conceptId": "CONDITION",
     "ipa": "/русский'''  !! '''инджылыбзэ/",
     "rootIds": [
-      "R-GU"
+      "R-GUG"
     ],
     "wordFamilyId": "WF-GU",
     "derivation": {
@@ -7326,7 +7326,7 @@
     "conceptId": "CONDITION",
     "ipa": null,
     "rootIds": [
-      "R-GU"
+      "R-GUG"
     ],
     "wordFamilyId": "WF-GU",
     "derivation": {
@@ -7499,7 +7499,7 @@
     "corpusFrequency": 0,
     "conceptId": "JOY",
     "rootIds": [
-      "R-GU"
+      "R-GUF"
     ],
     "wordFamilyId": "WF-GU",
     "derivation": {
@@ -11940,7 +11940,7 @@
       "tr": "muzik yayi"
     },
     "rootIds": [
-      "R-ПЩЫ"
+      "R-PSHCHY"
     ]
   },
   {
@@ -13891,7 +13891,7 @@
       "tr": "genc kiz"
     },
     "rootIds": [
-      "R-ПЩА"
+      "R-PSHCHA"
     ]
   },
   {
@@ -14320,7 +14320,7 @@
       "tr": "akil, beyin"
     },
     "rootIds": [
-      "R-АКЪ"
+      "R-AK"
     ]
   },
   {
@@ -14743,7 +14743,7 @@
       "tr": "bogaz"
     },
     "rootIds": [
-      "R-ТЭМ"
+      "R-TEM"
     ]
   },
   {
@@ -17538,7 +17538,7 @@
     "status": "rare",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ДЭХ"
+      "R-DEKH"
     ],
     "wordFamilyId": "WF-DA",
     "derivation": {
@@ -18535,7 +18535,7 @@
       "tr": "prens"
     },
     "rootIds": [
-      "R-ПЩЫ"
+      "R-PSHCHY"
     ]
   },
   {
@@ -19599,7 +19599,7 @@
       "tr": "sicak"
     },
     "rootIds": [
-      "R-ХУА"
+      "R-KHUA"
     ]
   },
   {
@@ -19615,7 +19615,7 @@
       "tr": "?"
     },
     "rootIds": [
-      "R-ХУА"
+      "R-KHUA"
     ]
   },
   {
@@ -20512,7 +20512,7 @@
     "literalMeaningAdy": "Зыкъом, Ӏэджэ, зыбжанэ",
     "isLemma": true,
     "rootIds": [
-      "R-КУЭ"
+      "R-KUE_1"
     ]
   },
   {
@@ -20532,7 +20532,7 @@
     "literalMeaningAdy": "Ӏеигъэ лъэпкъ хэмылъу, мыбзаджэу, хъарзынэу, дэгъуэу, хуабжьу, икъукӀэ",
     "isLemma": true,
     "rootIds": [
-      "R-ФӀЫ"
+      "R-FIY"
     ]
   },
   {
@@ -20689,7 +20689,7 @@
     "literalMeaningAdy": "ЗыщӀыпӀэ икӀыу нэгъуэщӀыпӀэ кӀуэн папщӀэ къагъэсэбэп зекӀуапӀэ",
     "isLemma": true,
     "rootIds": [
-      "R-ГЪУ"
+      "R-GU_1"
     ]
   },
   {
@@ -21163,7 +21163,7 @@
     "notes": "",
     "corpusFrequency": 1137,
     "rootIds": [
-      "R-ДЭЖ"
+      "R-DEZH"
     ],
     "wordFamilyId": "WF-DA",
     "derivation": {
@@ -21493,7 +21493,7 @@
     "notes": "",
     "corpusFrequency": 118,
     "rootIds": [
-      "R-НЭХ"
+      "R-NEKH_2"
     ],
     "wordFamilyId": "WF-NA",
     "derivation": {
@@ -22043,7 +22043,7 @@
       "tr": "nacak, balta"
     },
     "rootIds": [
-      "R-УЭЩ"
+      "R-UESHCH"
     ]
   },
   {
@@ -22388,7 +22388,7 @@
       "tr": "çoğunlukla"
     },
     "rootIds": [
-      "R-КУЭ"
+      "R-KUE_1"
     ]
   },
   {
@@ -23092,7 +23092,7 @@
       "tr": "akıllı, bilge"
     },
     "rootIds": [
-      "R-АКЪ"
+      "R-AK"
     ]
   },
   {
@@ -23108,7 +23108,7 @@
       "tr": "akılsız, cahil"
     },
     "rootIds": [
-      "R-АКЪ"
+      "R-AK_1"
     ]
   },
   {
@@ -23342,7 +23342,7 @@
       "tr": "uzun süre"
     },
     "rootIds": [
-      "R-КУЭ"
+      "R-KUE_1"
     ]
   },
   {
@@ -26560,7 +26560,7 @@
     "notes": "",
     "corpusFrequency": 23,
     "rootIds": [
-      "R-ХАД"
+      "R-KHAD"
     ],
     "wordFamilyId": "WF-ADA",
     "derivation": {
@@ -26768,7 +26768,7 @@
     "subConceptId": "SOCIAL_STATUS",
     "taxonomyFamily": "Toplum & Meslek",
     "rootIds": [
-      "R-ПЩЫ"
+      "R-PSHCHY"
     ]
   },
   {
@@ -27156,7 +27156,7 @@
     "corpusFrequency": 0,
     "conceptId": "CONDITION",
     "rootIds": [
-      "R-GU"
+      "R-GUG"
     ],
     "wordFamilyId": "WF-GU",
     "derivation": {
@@ -28821,7 +28821,7 @@
     "corpusFrequency": 2556,
     "ipa": "/нэхъ/",
     "rootIds": [
-      "R-НЭХ"
+      "R-NEKH"
     ],
     "wordFamilyId": "WF-NA",
     "derivation": {
@@ -28931,7 +28931,7 @@
       "tr": "soylemek"
     },
     "rootIds": [
-      "R-ЖЫӀ"
+      "R-ZHYI"
     ]
   },
   {
@@ -29816,7 +29816,7 @@
     "corpusFrequency": 450,
     "notes": "KBD Corpus rank 200",
     "rootIds": [
-      "R-ШЭР"
+      "R-SHER"
     ],
     "wordFamilyId": "WF-SHA",
     "derivation": {
@@ -29847,7 +29847,7 @@
     "taxonomyFamily": "Toplum & Yaşam",
     "rootForm": "хьэ-",
     "rootIds": [
-      "R-ХЬЭ"
+      "R-KHE"
     ]
   },
   {
@@ -30482,7 +30482,7 @@
       "tr": "rehber"
     },
     "rootIds": [
-      "R-ГЪУ"
+      "R-GU_1"
     ]
   },
   {
@@ -31713,7 +31713,7 @@
     "ipa": "/нэхъ/",
     "conceptId": "COMPARISON",
     "rootIds": [
-      "R-НЭХ"
+      "R-NEKH"
     ],
     "wordFamilyId": "WF-NA",
     "derivation": {
@@ -33438,7 +33438,7 @@
     "taxonomyFamily": "Eylem & Dil",
     "rootForm": "джэ-",
     "rootIds": [
-      "R-ДЖЭ"
+      "R-DZHE"
     ]
   },
   {
@@ -34604,7 +34604,7 @@
     "ipa": "/нэхъ/",
     "conceptId": "COMPARISON",
     "rootIds": [
-      "R-НЭХ"
+      "R-NEKH"
     ],
     "wordFamilyId": "WF-NA",
     "derivation": {
@@ -34708,7 +34708,7 @@
       "ru": "очень <div style='margin-left:3"
     },
     "rootIds": [
-      "R-КУЭ"
+      "R-KUE_1"
     ]
   },
   {
@@ -36071,7 +36071,7 @@
       "ru": "семя, семена <div style='margin-left:3em"
     },
     "rootIds": [
-      "R-ЖЫЛ"
+      "R-ZHYL"
     ]
   },
   {
@@ -36841,7 +36841,7 @@
     "literalMeaningAdy": "польза, прок / Зыгуэрым щхьэкӀэ щхьэпэ, мыхьэнэ зиӀэ",
     "isLemma": true,
     "rootIds": [
-      "R-СЭБ"
+      "R-SEB"
     ]
   },
   {
@@ -37284,7 +37284,7 @@
     "literalMeaningAdy": "время Уахътэр блэкӀыгъ <div sty",
     "isLemma": true,
     "rootIds": [
-      "R-УАХ"
+      "R-UAKH"
     ]
   },
   {
@@ -37609,7 +37609,7 @@
     "ipa": "/нэхъ/",
     "conceptId": "COMPARISON",
     "rootIds": [
-      "R-НЭХ"
+      "R-NEKH"
     ],
     "wordFamilyId": "WF-NA",
     "derivation": {
@@ -38252,7 +38252,7 @@
     "literalMeaningAdy": "число, счёт, цифра / Зыгуэрыр куэдагъ-мащӀагъкӀ",
     "isLemma": true,
     "rootIds": [
-      "R-БЖЫ"
+      "R-BZHY"
     ]
   },
   {
@@ -38900,7 +38900,7 @@
       "ru": "отличный, превосходный, очень хороший <div style='margin-le"
     },
     "rootIds": [
-      "R-БЭЛ"
+      "R-BEL"
     ]
   },
   {
@@ -39084,7 +39084,7 @@
     "ipa": "/нэхъ/",
     "conceptId": "COMPARISON",
     "rootIds": [
-      "R-НЭХ"
+      "R-NEKH"
     ],
     "wordFamilyId": "WF-NA",
     "derivation": {
@@ -39573,7 +39573,7 @@
       "ru": "глубоко <div style='margin-left"
     },
     "rootIds": [
-      "R-КУУ"
+      "R-KUU"
     ]
   },
   {
@@ -40315,7 +40315,7 @@
       "ru": "глубокая, -ое къып"
     },
     "rootIds": [
-      "R-КУУ"
+      "R-KUU"
     ]
   },
   {
@@ -41651,7 +41651,7 @@
       "ru": "сомнение Теубытагъэу щымытыр ары"
     },
     "rootIds": [
-      "R-ЩЭЧ"
+      "R-SHCHECH"
     ]
   },
   {
@@ -41787,7 +41787,7 @@
     "ipa": "/нэхъ/",
     "conceptId": "COMPARISON",
     "rootIds": [
-      "R-НЭХ"
+      "R-NEKH"
     ],
     "wordFamilyId": "WF-NA",
     "derivation": {
@@ -42560,7 +42560,7 @@
     "notes": "Corpus v1.0 (freq: 67, lang: kbd, source: 0.Ady-Ady_AIG)",
     "ipa": "/русский'''  !! '''инджылыбзэ/",
     "rootIds": [
-      "R-ХАД"
+      "R-KHAD"
     ],
     "wordFamilyId": "WF-ADA",
     "derivation": {
@@ -43422,7 +43422,7 @@
     "notes": "Corpus v1.0 (freq: 63, lang: kbd, source: 13.Kbd-Ar-Jonty)",
     "isLemma": false,
     "rootIds": [
-      "R-КУЭ"
+      "R-KUE_1"
     ]
   },
   {
@@ -43586,7 +43586,7 @@
     "notes": "Corpus v1.0 (freq: 63, lang: ady, source: 3.Ady-En)",
     "isLemma": false,
     "rootIds": [
-      "R-ПЩЫ"
+      "R-PSHCHY"
     ]
   },
   {
@@ -44668,7 +44668,7 @@
     "literalMeaningAdy": "советчик Джэнджэшэгъу, Ӏофым дегупшысэрэр, деусэрэр А",
     "isLemma": true,
     "rootIds": [
-      "R-АКЪ"
+      "R-AK"
     ]
   },
   {
@@ -45104,7 +45104,7 @@
     "notes": "Corpus v1.0 (freq: 55, lang: ady, source: 3.Ady-En)",
     "isLemma": false,
     "rootIds": [
-      "R-ПЩЫ"
+      "R-PSHCHY"
     ]
   },
   {
@@ -45467,7 +45467,7 @@
       "ru": "средний <"
     },
     "rootIds": [
-      "R-КУР"
+      "R-KUR"
     ]
   },
   {
@@ -46413,7 +46413,7 @@
       "ru": "богатый, -ая, -ое <div s"
     },
     "rootIds": [
-      "R-БАЙ"
+      "R-BAY"
     ]
   },
   {
@@ -46910,7 +46910,7 @@
     },
     "notes": "Corpus v1.0 (freq: 48, lang: kbd, source: 14.Kbd-En-2-Jonty)",
     "rootIds": [
-      "R-ГЪА"
+      "R-GA"
     ],
     "wordFamilyId": "WF-TKHE",
     "derivation": {
@@ -47142,7 +47142,7 @@
     "notes": "Corpus v1.0 (freq: 47, lang: kbd, source: 14.Kbd-En-2-Jonty)",
     "isLemma": false,
     "rootIds": [
-      "R-БЖЫ"
+      "R-BZHY"
     ]
   },
   {
@@ -48147,7 +48147,7 @@
     "ipa": "/нэхъ/",
     "conceptId": "COMPARISON",
     "rootIds": [
-      "R-НЭХ"
+      "R-NEKH"
     ],
     "wordFamilyId": "WF-NA",
     "derivation": {
@@ -49361,7 +49361,7 @@
       "ru": "палка <div style='margin"
     },
     "rootIds": [
-      "R-БЭЩ"
+      "R-BESHCH"
     ]
   },
   {
@@ -49435,7 +49435,7 @@
     "literalMeaningAdy": "шашка; сабля / Джатэм и лъэпкъ Ӏэщэ. ◊ <font color",
     "isLemma": true,
     "rootIds": [
-      "R-СЭШ"
+      "R-SESH"
     ]
   },
   {
@@ -49991,7 +49991,7 @@
       "ru": "имасд. взвесит"
     },
     "rootIds": [
-      "R-ЩЭЧ"
+      "R-SHCHECH"
     ]
   },
   {
@@ -51090,7 +51090,7 @@
     "ipa": "/нэхъ/",
     "conceptId": "COMPARISON",
     "rootIds": [
-      "R-НЭХ"
+      "R-NEKH"
     ],
     "wordFamilyId": "WF-NA",
     "derivation": {
@@ -51193,7 +51193,7 @@
       "tr": "г"
     },
     "rootIds": [
-      "R-ПЩЫ"
+      "R-PSHCHY"
     ]
   },
   {
@@ -52893,7 +52893,7 @@
       "ru": "устар. уорк, уздень <div style="
     },
     "rootIds": [
-      "R-УЭР"
+      "R-UER"
     ]
   },
   {
@@ -54287,7 +54287,7 @@
     "ipa": "/нэхъ/",
     "conceptId": "COMPARISON",
     "rootIds": [
-      "R-НЭХ"
+      "R-NEKH"
     ],
     "wordFamilyId": "WF-NA",
     "derivation": {
@@ -55674,7 +55674,7 @@
     },
     "notes": "Corpus v1.0 (freq: 31, lang: kbd, source: 16.Kbd-En-Ziwar)",
     "rootIds": [
-      "R-НЭХ"
+      "R-NEKH_2"
     ],
     "wordFamilyId": "WF-NA",
     "derivation": {
@@ -57336,7 +57336,7 @@
     },
     "notes": "Corpus v1.0 (freq: 29, lang: kbd, source: 13.Kbd-Ar-Jonty)",
     "rootIds": [
-      "R-НЭХ"
+      "R-NEKH"
     ],
     "wordFamilyId": "WF-NA",
     "derivation": {
@@ -67990,7 +67990,7 @@
     "literalMeaningAdy": "[[щабэ]] 1,2,3,5,6 псалъэм къытекӀа щыӀэцӀэ",
     "isLemma": true,
     "rootIds": [
-      "R-ЩАБ"
+      "R-SHCHAB"
     ]
   },
   {
@@ -69277,7 +69277,7 @@
     "taxonomyFamily": "Toplum & Yaşam",
     "rootForm": "хьэ-",
     "rootIds": [
-      "R-ХЬЭ"
+      "R-KHE"
     ]
   },
   {
@@ -69342,7 +69342,7 @@
     },
     "notes": "Corpus v1.0 (freq: 20, lang: kbd, source: 13.Kbd-Ar-Jonty)",
     "rootIds": [
-      "R-GU"
+      "R-GUG"
     ],
     "wordFamilyId": "WF-GU",
     "derivation": {
@@ -73755,7 +73755,7 @@
     "notes": "Corpus v1.0 (freq: 18, lang: kbd, source: 0.Ady-Ady_AIG)",
     "ipa": "/инженер/",
     "rootIds": [
-      "R-ИН"
+      "R-IN"
     ],
     "wordFamilyId": "WF-YN",
     "derivation": {
@@ -82267,7 +82267,7 @@
       "ru": "уродиться <font"
     },
     "rootIds": [
-      "R-БЭГ"
+      "R-BEG"
     ]
   },
   {
@@ -82819,7 +82819,7 @@
       "ru": "глупый, -ая, -ое, неразумный, -ая, -ое <div st"
     },
     "rootIds": [
-      "R-АКЪ"
+      "R-AK"
     ]
   },
   {
@@ -84325,7 +84325,7 @@
     "ipa": "/нэхъуей/",
     "conceptId": "COMPARISON",
     "rootIds": [
-      "R-НЭХ"
+      "R-NEKH"
     ],
     "wordFamilyId": "WF-NA",
     "derivation": {
@@ -84471,7 +84471,7 @@
     "literalMeaningAdy": "численность, количество / Куэд псалъэм къытекӀа щыӀэцӀэ",
     "isLemma": true,
     "rootIds": [
-      "R-КУЭ"
+      "R-KUE_1"
     ]
   },
   {
@@ -88584,7 +88584,7 @@
     "notes": "Corpus v1.0 (freq: 13, lang: kbd, source: 14.Kbd-En-2-Jonty)",
     "isLemma": false,
     "rootIds": [
-      "R-ХУА"
+      "R-KHUA"
     ]
   },
   {
@@ -90248,7 +90248,7 @@
     "notes": "Corpus v1.0 (freq: 13, lang: kbd, source: 5.Ady-Rus_Qarden)",
     "conceptId": "COLOR",
     "rootIds": [
-      "R-ИН"
+      "R-IN"
     ],
     "wordFamilyId": "WF-YN",
     "derivation": {
@@ -90458,7 +90458,7 @@
     "notes": "Corpus v1.0 (freq: 13, lang: kbd, source: 0.Ady-Ady_AIG)",
     "ipa": "/институт/",
     "rootIds": [
-      "R-ИН"
+      "R-IN"
     ],
     "wordFamilyId": "WF-YN",
     "derivation": {
@@ -90542,7 +90542,7 @@
       "tr": "foolishly, stupidly"
     },
     "rootIds": [
-      "R-АКЪ"
+      "R-AK_1"
     ]
   },
   {
@@ -92623,7 +92623,7 @@
       "ru": "бесчисленно <div style='margin-left"
     },
     "rootIds": [
-      "R-БЖЫ"
+      "R-BZHY"
     ]
   },
   {
@@ -93401,7 +93401,7 @@
       "ru": "сэбэпыныгъэ"
     },
     "rootIds": [
-      "R-СЭБ"
+      "R-SEB"
     ]
   },
   {
@@ -95902,7 +95902,7 @@
     },
     "notes": "Corpus v1.0 (freq: 12, lang: ady, source: 0.Ady-Ady_AIG)",
     "rootIds": [
-      "R-ДЭХ"
+      "R-DEKH"
     ],
     "wordFamilyId": "WF-DA",
     "derivation": {
@@ -96307,7 +96307,7 @@
       "ru": "глупость, неразумность <div style='margi"
     },
     "rootIds": [
-      "R-АКЪ"
+      "R-AK"
     ]
   },
   {
@@ -97133,7 +97133,7 @@
     "notes": "Corpus v1.0 (freq: 11, lang: kbd, source: 14.Kbd-En-2-Jonty)",
     "isLemma": false,
     "rootIds": [
-      "R-КУЭ"
+      "R-KUE_1"
     ]
   },
   {
@@ -99342,7 +99342,7 @@
     "ipa": null,
     "conceptId": "CONDITION",
     "rootIds": [
-      "R-GU"
+      "R-GUG"
     ],
     "wordFamilyId": "WF-GU",
     "derivation": {
@@ -100116,7 +100116,7 @@
       "ru": "глупость акъылыншагъэ зехьэн делать глупости<"
     },
     "rootIds": [
-      "R-АКЪ"
+      "R-AK"
     ]
   },
   {
@@ -101362,7 +101362,7 @@
       "tr": "الآلة الموسيقية عامة/ الأكورديون"
     },
     "rootIds": [
-      "R-ПЩЫ"
+      "R-PSHCHY"
     ]
   },
   {
@@ -102044,7 +102044,7 @@
       "ru": "лъым.</fo"
     },
     "rootIds": [
-      "R-ПЩЫ"
+      "R-PSHCHY"
     ]
   },
   {
@@ -118598,7 +118598,7 @@
       "ru": "Атом, молекулэ с ху"
     },
     "rootIds": [
-      "R-ХУА1"
+      "R-KHUA_1"
     ]
   },
   {
@@ -118904,7 +118904,7 @@
     "notes": "Corpus v1.0 (freq: 8, lang: kbd, source: 1.Ady-Ady_AP) [ANIMAL etiketinden cikarildi]",
     "conceptId": null,
     "rootIds": [
-      "R-ИН"
+      "R-IN"
     ],
     "wordFamilyId": "WF-YN",
     "derivation": {
@@ -123618,7 +123618,7 @@
     "notes": "Corpus v1.0 (freq: 8, lang: kbd, source: 1.Ady-Ady_AP) [ANIMAL etiketinden cikarildi]",
     "conceptId": null,
     "rootIds": [
-      "R-ИН"
+      "R-IN"
     ],
     "wordFamilyId": "WF-YN",
     "derivation": {
@@ -123813,7 +123813,7 @@
       "ru": "основная, главная дорога"
     },
     "rootIds": [
-      "R-ГЪУ"
+      "R-GU_1"
     ]
   },
   {
@@ -125592,7 +125592,7 @@
     "notes": "Corpus v1.0 (freq: 8, lang: kbd, source: 1.Ady-Ady_AP)",
     "ipa": "/хад/",
     "rootIds": [
-      "R-ХАД"
+      "R-KHAD"
     ],
     "wordFamilyId": "WF-ADA",
     "derivation": {
@@ -128400,7 +128400,7 @@
       "ru": "Еплъ &quot"
     },
     "rootIds": [
-      "R-F"
+      "R-FIE"
     ]
   },
   {
@@ -128736,7 +128736,7 @@
     "literalMeaningAdy": "Къабыл щӀыныгъэ",
     "isLemma": true,
     "rootIds": [
-      "R-F"
+      "R-FIE"
     ]
   },
   {
@@ -129255,7 +129255,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 390, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-ГЪА1"
+      "R-GA_1"
     ]
   },
   {
@@ -129524,7 +129524,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 358, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-ГЪУ"
+      "R-GU_1"
     ]
   },
   {
@@ -130003,7 +130003,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 326, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-ГЪА1"
+      "R-GA_1"
     ]
   },
   {
@@ -130331,7 +130331,7 @@
     },
     "notes": "Corpus v1.0 batch-2 (freq: 301, lang: kbd, source: none)",
     "rootIds": [
-      "R-ХАД"
+      "R-KHAD"
     ],
     "wordFamilyId": "WF-ADA",
     "derivation": {
@@ -130691,7 +130691,7 @@
     "taxonomyFamily": "İnsan & Cinsiyet",
     "rootForm": "лӀы-",
     "rootIds": [
-      "R-ЛӀЫ"
+      "R-LIY"
     ]
   },
   {
@@ -130936,7 +130936,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 263, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-ЩӀА"
+      "R-SHCHIA"
     ]
   },
   {
@@ -130991,7 +130991,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 261, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-ЩӀА"
+      "R-SHCHIA"
     ]
   },
   {
@@ -131702,7 +131702,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 221, lang: ady, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-УАХ"
+      "R-UAKH"
     ]
   },
   {
@@ -131958,7 +131958,7 @@
     "literalMeaningAdy": "Ӏуэху е псалъэ гуапэм и жэуап гурыщӀэ",
     "isLemma": true,
     "rootIds": [
-      "R-ФӀЫ"
+      "R-FIY"
     ]
   },
   {
@@ -132572,7 +132572,7 @@
     "taxonomyFamily": "İnsan & Cinsiyet",
     "rootForm": "лӀы-",
     "rootIds": [
-      "R-ЛӀЫ"
+      "R-LIY"
     ]
   },
   {
@@ -132696,7 +132696,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 186, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-ЖАӀ"
+      "R-ZHAI"
     ]
   },
   {
@@ -133099,7 +133099,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 175, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-ГЪУ"
+      "R-GU_1"
     ]
   },
   {
@@ -134170,7 +134170,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 154, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-АКЪ"
+      "R-AK"
     ]
   },
   {
@@ -134728,7 +134728,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 143, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-F"
+      "R-FIE"
     ]
   },
   {
@@ -134959,7 +134959,7 @@
     },
     "notes": "Corpus v1.0 batch-2 (freq: 140, lang: kbd, source: none)",
     "rootIds": [
-      "R-НЭХ"
+      "R-NEKH"
     ],
     "wordFamilyId": "WF-NA",
     "derivation": {
@@ -135057,7 +135057,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 138, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-ЖЫЛ"
+      "R-ZHYL"
     ]
   },
   {
@@ -135073,7 +135073,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 138, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-ЖАӀ"
+      "R-ZHAI"
     ]
   },
   {
@@ -135617,7 +135617,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 130, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-F"
+      "R-FIE"
     ]
   },
   {
@@ -135964,7 +135964,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 125, lang: kbd, source: none)",
     "ipa": "/нэхъ/",
     "rootIds": [
-      "R-НЭХ"
+      "R-NEKH"
     ],
     "wordFamilyId": "WF-NA",
     "derivation": {
@@ -137247,7 +137247,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 114, lang: ady, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-УАХ"
+      "R-UAKH"
     ]
   },
   {
@@ -137357,7 +137357,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 113, lang: kbd, source: none)",
     "ipa": "/нэхъ/",
     "rootIds": [
-      "R-НЭХ"
+      "R-NEKH"
     ],
     "wordFamilyId": "WF-NA",
     "derivation": {
@@ -138056,7 +138056,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 107, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-ПЩЫ"
+      "R-PSHCHY"
     ]
   },
   {
@@ -138726,7 +138726,7 @@
     },
     "notes": "Corpus v1.0 batch-2 (freq: 103, lang: ady, source: none)",
     "rootIds": [
-      "R-ДЭЖ"
+      "R-DEZH"
     ],
     "wordFamilyId": "WF-DA",
     "derivation": {
@@ -138990,7 +138990,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 100, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-КУЭ"
+      "R-KUE_1"
     ]
   },
   {
@@ -139274,7 +139274,7 @@
     "taxonomyFamily": "Toplum & Rol",
     "rootForm": "лӀы-",
     "rootIds": [
-      "R-ЛӀЫ"
+      "R-LIY"
     ]
   },
   {
@@ -139308,7 +139308,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 99, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-АКЪ"
+      "R-AK"
     ]
   },
   {
@@ -139403,7 +139403,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 98, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-ЖАӀ"
+      "R-ZHAI"
     ]
   },
   {
@@ -139652,7 +139652,7 @@
     "taxonomyFamily": "İnsan & Yaşam",
     "rootForm": "лӀы-",
     "rootIds": [
-      "R-ЛӀЫ"
+      "R-LIY"
     ]
   },
   {
@@ -139707,7 +139707,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 96, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-ПЩӀ"
+      "R-PSHCHI"
     ]
   },
   {
@@ -139922,7 +139922,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 95, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-ЩӀЫ1"
+      "R-SHCHIY_1"
     ]
   },
   {
@@ -140493,7 +140493,7 @@
     "literalMeaningAdy": "ФӀыкӀэ дызэӀущӀэ, узыншэу, узыншэу ущыт",
     "isLemma": true,
     "rootIds": [
-      "R-ФӀЫ"
+      "R-FIY"
     ]
   },
   {
@@ -141004,7 +141004,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 90, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-ЖАӀ"
+      "R-ZHAI"
     ]
   },
   {
@@ -141653,7 +141653,7 @@
     "taxonomyFamily": "Eşya & Savaş",
     "rootForm": "Ӏэ-",
     "rootIds": [
-      "R-1E"
+      "R-IESHCH"
     ]
   },
   {
@@ -142027,7 +142027,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 84, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-ЖАӀ"
+      "R-ZHAI"
     ]
   },
   {
@@ -142220,7 +142220,7 @@
     "literalMeaningAdy": "Мылъкушхуэ, лъапӀагъэ зиӀэ",
     "isLemma": true,
     "rootIds": [
-      "R-ФӀЫ"
+      "R-FIY"
     ]
   },
   {
@@ -142580,7 +142580,7 @@
       "ru": "Еплъ &quot"
     },
     "rootIds": [
-      "R-ПЩӀ"
+      "R-PSHCHI"
     ]
   },
   {
@@ -142722,7 +142722,7 @@
     "taxonomyFamily": "Toplum & Meslek",
     "rootForm": "Ӏэ-",
     "rootIds": [
-      "R-1E"
+      "R-IESHCH_1"
     ]
   },
   {
@@ -143498,7 +143498,7 @@
     "literalMeaningAdy": "ПсынщӀэу, щӀэхыу, напӀэзыпӀэкӀэ, занщӀэу",
     "isLemma": true,
     "rootIds": [
-      "R-КӀЭ"
+      "R-KIE"
     ]
   },
   {
@@ -143579,7 +143579,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 77, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-ЖАӀ"
+      "R-ZHAI"
     ]
   },
   {
@@ -144448,7 +144448,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 74, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-БЖЫ"
+      "R-BZHY"
     ]
   },
   {
@@ -144507,7 +144507,7 @@
       "ru": "Зыгуэрым и псалъэ, и унафэ"
     },
     "rootIds": [
-      "R-ЖЫӀ"
+      "R-ZHYI"
     ]
   },
   {
@@ -144813,7 +144813,7 @@
     },
     "notes": "Corpus v1.0 batch-2 (freq: 73, lang: kbd, source: none)",
     "rootIds": [
-      "R-НЭХ"
+      "R-NEKH_2"
     ],
     "wordFamilyId": "WF-NA",
     "derivation": {
@@ -145558,7 +145558,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 70, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-ФӀЫ"
+      "R-FIY"
     ]
   },
   {
@@ -145774,7 +145774,7 @@
     "literalMeaningAdy": "Еплъ псалъафэ зэпыщӀахэр",
     "isLemma": true,
     "rootIds": [
-      "R-ПЩӀ"
+      "R-PSHCHI"
     ]
   },
   {
@@ -146278,7 +146278,7 @@
     "taxonomyFamily": "Toplum & Meslek",
     "rootForm": "Ӏэ-",
     "rootIds": [
-      "R-1E"
+      "R-IESHCH_1"
     ]
   },
   {
@@ -146566,7 +146566,7 @@
     "taxonomyFamily": "Toplum & Rol",
     "rootForm": "лӀы-",
     "rootIds": [
-      "R-ЛӀЫ"
+      "R-LIY"
     ]
   },
   {
@@ -146957,7 +146957,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 66, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-МАЩ"
+      "R-MASHCH"
     ]
   },
   {
@@ -146972,7 +146972,7 @@
     },
     "notes": "Corpus v1.0 batch-2 (freq: 66, lang: kbd, source: none)",
     "rootIds": [
-      "R-GU"
+      "R-GUG"
     ],
     "wordFamilyId": "WF-GU",
     "derivation": {
@@ -147328,7 +147328,7 @@
     "literalMeaningAdy": "Мыхьэнэ къимыкӀыу, лъэужь къэмынэу",
     "isLemma": true,
     "rootIds": [
-      "R-ПЩӀ"
+      "R-PSHCHI"
     ]
   },
   {
@@ -147364,7 +147364,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 65, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-БЖЫ"
+      "R-BZHY"
     ]
   },
   {
@@ -147602,7 +147602,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 64, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-ФӀЫ"
+      "R-FIY"
     ]
   },
   {
@@ -147648,7 +147648,7 @@
     "taxonomyFamily": "İnsan & Nitelik",
     "rootForm": "лӀы-",
     "rootIds": [
-      "R-ЛӀЫ"
+      "R-LIY_1"
     ]
   },
   {
@@ -148556,7 +148556,7 @@
     },
     "notes": "Corpus v1.0 batch-2 (freq: 62, lang: kbd, source: none)",
     "rootIds": [
-      "R-GU"
+      "R-GUF"
     ],
     "wordFamilyId": "WF-GU",
     "derivation": {
@@ -149089,7 +149089,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 61, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-КУЭ"
+      "R-KUE_1"
     ]
   },
   {
@@ -150489,7 +150489,7 @@
     "literalMeaningAdy": "ЦӀыхухэр зэзышалӀэ гурыщӀэ ӀэфӀ",
     "isLemma": true,
     "rootIds": [
-      "R-ФӀЫ"
+      "R-FIY"
     ]
   },
   {
@@ -150541,7 +150541,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 58, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-СЭШ"
+      "R-SESH"
     ]
   },
   {
@@ -150557,7 +150557,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 58, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-ФӀЫ"
+      "R-FIY"
     ]
   },
   {
@@ -152188,7 +152188,7 @@
     "taxonomyFamily": "Gramer & Çekim",
     "rootForm": "Ӏэ-",
     "rootIds": [
-      "R-1E"
+      "R-IESHCH"
     ]
   },
   {
@@ -152264,7 +152264,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 55, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-ФӀЫ"
+      "R-FIY"
     ]
   },
   {
@@ -152679,7 +152679,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 55, lang: ady, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-АКЪ"
+      "R-AK"
     ]
   },
   {
@@ -153269,7 +153269,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 53, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-ФӀЫ"
+      "R-FIY"
     ]
   },
   {
@@ -154761,7 +154761,7 @@
     "taxonomyFamily": "Toplum & Rol",
     "rootForm": "лӀы-",
     "rootIds": [
-      "R-ЛӀЫ"
+      "R-LIY"
     ]
   },
   {
@@ -155498,7 +155498,7 @@
     },
     "notes": "Corpus v1.0 batch-2 (freq: 50, lang: kbd, source: none)",
     "rootIds": [
-      "R-ХАД"
+      "R-KHAD"
     ],
     "wordFamilyId": "WF-ADA",
     "derivation": {
@@ -155928,7 +155928,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 49, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-ПЩЫ"
+      "R-PSHCHY"
     ]
   },
   {
@@ -155944,7 +155944,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 49, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-КӀУ"
+      "R-KIU"
     ]
   },
   {
@@ -156151,7 +156151,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 49, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-ПЩӀ"
+      "R-PSHCHI"
     ]
   },
   {
@@ -156436,7 +156436,7 @@
     "taxonomyFamily": "Toplum & Rol",
     "rootForm": "лӀы-",
     "rootIds": [
-      "R-ЛӀЫ"
+      "R-LIY"
     ]
   },
   {
@@ -157774,7 +157774,7 @@
     "taxonomyFamily": "Gramer & Çekim",
     "rootForm": "Ӏэ-",
     "rootIds": [
-      "R-1E"
+      "R-IESHCH"
     ]
   },
   {
@@ -158680,7 +158680,7 @@
     "literalMeaningAdy": "КъэкӀыгъэ хасам зэран хуэхъу удз, ежьужьхэр ӀэкӀэ къичын е зыгуэркӀэ иудын,…",
     "isLemma": true,
     "rootIds": [
-      "R-ПЩӀ"
+      "R-PSHCHI"
     ]
   },
   {
@@ -159205,7 +159205,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 45, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-ЖЫЛ"
+      "R-ZHYL"
     ]
   },
   {
@@ -159425,7 +159425,7 @@
     "taxonomyFamily": "İnsan & Nitelik",
     "rootForm": "лӀы-",
     "rootIds": [
-      "R-ЛӀЫ"
+      "R-LIY_1"
     ]
   },
   {
@@ -159534,7 +159534,7 @@
     "literalMeaningAdy": "[[акъылыфӀэ]] псалъэм къытекӀа щыӀэцӀэ",
     "isLemma": true,
     "rootIds": [
-      "R-АКЪ"
+      "R-AK"
     ]
   },
   {
@@ -161143,7 +161143,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 43, lang: kbd, source: none)",
     "ipa": "/нэхъ/",
     "rootIds": [
-      "R-НЭХ"
+      "R-NEKH_3"
     ],
     "wordFamilyId": "WF-NA",
     "derivation": {
@@ -161887,7 +161887,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 42, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-ЩӀА"
+      "R-SHCHIA"
     ]
   },
   {
@@ -162023,7 +162023,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 42, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-КӀУ"
+      "R-KIU"
     ]
   },
   {
@@ -162636,7 +162636,7 @@
     },
     "notes": "Corpus v1.0 batch-2 (freq: 41, lang: kbd, source: none)",
     "rootIds": [
-      "R-НЭХ"
+      "R-NEKH_3"
     ],
     "wordFamilyId": "WF-NA",
     "derivation": {
@@ -163168,7 +163168,7 @@
     },
     "notes": "Corpus v1.0 batch-2 (freq: 41, lang: kbd, source: none)",
     "rootIds": [
-      "R-GU"
+      "R-GUF"
     ],
     "wordFamilyId": "WF-GU",
     "derivation": {
@@ -163365,7 +163365,7 @@
     "literalMeaningAdy": "Здэщыт хъун е здэщытын хуей щӀыпӀэ",
     "isLemma": true,
     "rootIds": [
-      "R-УВЫ1"
+      "R-UVY_1"
     ]
   },
   {
@@ -164816,7 +164816,7 @@
     },
     "notes": "Corpus v1.0 batch-2 (freq: 39, lang: kbd, source: none)",
     "rootIds": [
-      "R-НЭХ"
+      "R-NEKH_3"
     ],
     "wordFamilyId": "WF-NA",
     "derivation": {
@@ -165073,7 +165073,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 39, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-ПЩЫ"
+      "R-PSHCHY"
     ]
   },
   {
@@ -165383,7 +165383,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 39, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-АКЪ"
+      "R-AK"
     ]
   },
   {
@@ -165770,7 +165770,7 @@
     "taxonomyFamily": "İnsan & Yaşam",
     "rootForm": "лӀы-",
     "rootIds": [
-      "R-ЛӀЫ"
+      "R-LIY"
     ]
   },
   {
@@ -166507,7 +166507,7 @@
     "taxonomyFamily": "İnsan & Cinsiyet",
     "rootForm": "лӀы-",
     "rootIds": [
-      "R-ЛӀЫ"
+      "R-LIY"
     ]
   },
   {
@@ -168877,7 +168877,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 36, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-ЩӀЫ1"
+      "R-SHCHIY_1"
     ]
   },
   {
@@ -169646,7 +169646,7 @@
       "ru": "Сэбэпагъ къэзымышэ"
     },
     "rootIds": [
-      "R-ПЩӀ"
+      "R-PSHCHI"
     ]
   },
   {
@@ -169902,7 +169902,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 35, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-ПЩЫ"
+      "R-PSHCHY"
     ]
   },
   {
@@ -170042,7 +170042,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 35, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-ЩӀА"
+      "R-SHCHIA"
     ]
   },
   {
@@ -170132,7 +170132,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 35, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-БЖЫ"
+      "R-BZHY"
     ]
   },
   {
@@ -170227,7 +170227,7 @@
     "taxonomyFamily": "Toplum & Rol",
     "rootForm": "лӀы-",
     "rootIds": [
-      "R-ЛӀЫ"
+      "R-LIY"
     ]
   },
   {
@@ -170243,7 +170243,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 35, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-ПЩА"
+      "R-PSHCHA"
     ]
   },
   {
@@ -171048,7 +171048,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 34, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-F"
+      "R-FIE"
     ]
   },
   {
@@ -171550,7 +171550,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 34, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-F"
+      "R-FIE"
     ]
   },
   {
@@ -172834,7 +172834,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 33, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-ПЩА"
+      "R-PSHCHA"
     ]
   },
   {
@@ -173097,7 +173097,7 @@
     "literalMeaningAdy": "Зэман куэдкӀэ, куэдрэ",
     "isLemma": true,
     "rootIds": [
-      "R-МАЩ"
+      "R-MASHCH"
     ]
   },
   {
@@ -173236,7 +173236,7 @@
     "literalMeaningAdy": "ПсынщӀэу, щӀэхыу, напӀэзыпӀэкӀэ, занщӀэу, кӀэщӀу",
     "isLemma": true,
     "rootIds": [
-      "R-КӀЭ"
+      "R-KIE"
     ]
   },
   {
@@ -173415,7 +173415,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 33, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-ПЩЫ"
+      "R-PSHCHY"
     ]
   },
   {
@@ -173650,7 +173650,7 @@
     "taxonomyFamily": "Gramer & Çekim",
     "rootForm": "Ӏэ-",
     "rootIds": [
-      "R-1E"
+      "R-IEP"
     ]
   },
   {
@@ -174546,7 +174546,7 @@
       "ru": "Бжыгъэ 12"
     },
     "rootIds": [
-      "R-ПЩЫ"
+      "R-PSHCHY"
     ]
   },
   {
@@ -174562,7 +174562,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 32, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-ЩӀА"
+      "R-SHCHIA"
     ]
   },
   {
@@ -174882,7 +174882,7 @@
     },
     "notes": "Corpus v1.0 batch-2 (freq: 32, lang: kbd, source: none)",
     "rootIds": [
-      "R-GU"
+      "R-GUG"
     ],
     "wordFamilyId": "WF-GU",
     "derivation": {
@@ -175005,7 +175005,7 @@
     },
     "notes": "Corpus v1.0 batch-2 (freq: 32, lang: kbd, source: none)",
     "rootIds": [
-      "R-GU"
+      "R-GUG"
     ],
     "wordFamilyId": "WF-GU",
     "derivation": {
@@ -175376,7 +175376,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 32, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-ЩӀА"
+      "R-SHCHIA_2"
     ]
   },
   {
@@ -176483,7 +176483,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 31, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-БЖЫ"
+      "R-BZHY"
     ]
   },
   {
@@ -177608,7 +177608,7 @@
     "taxonomyFamily": "Toplum & Rol",
     "rootForm": "лӀы-",
     "rootIds": [
-      "R-ЛӀЫ"
+      "R-LIY"
     ]
   },
   {
@@ -178330,7 +178330,7 @@
     "literalMeaningAdy": "ЦӀыхур ныбжьыщӀэу щыщытымрэ балигъ щыхъумрэ яку дэлъ гъащӀэ Ӏыхьэр",
     "isLemma": true,
     "rootIds": [
-      "R-ЩӀА"
+      "R-SHCHIA_2"
     ]
   },
   {
@@ -178498,7 +178498,7 @@
     "literalMeaningAdy": "Зыгуэрым упызыщӀэ гурыщӀэ лъагэ",
     "isLemma": true,
     "rootIds": [
-      "R-ЩӀА1"
+      "R-SHCHIA_1"
     ]
   },
   {
@@ -179129,7 +179129,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 30, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-ГЪА1"
+      "R-GA_1"
     ]
   },
   {
@@ -179678,7 +179678,7 @@
     "taxonomyFamily": "İnsan & Cinsiyet",
     "rootForm": "лӀы-",
     "rootIds": [
-      "R-ЛӀЫ"
+      "R-LIY"
     ]
   },
   {
@@ -179906,7 +179906,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 30, lang: ady, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-АКЪ"
+      "R-AK"
     ]
   },
   {
@@ -180670,7 +180670,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 29, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-ЩӀА"
+      "R-SHCHIA"
     ]
   },
   {
@@ -182133,7 +182133,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 29, lang: ady, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-АКЪ"
+      "R-AK"
     ]
   },
   {
@@ -182342,7 +182342,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 29, lang: ady, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-ПЩЫ"
+      "R-PSHCHY"
     ]
   },
   {
@@ -182845,7 +182845,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 28, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-ПЩЫ"
+      "R-PSHCHY"
     ]
   },
   {
@@ -183118,7 +183118,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 28, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-ФӀЫ"
+      "R-FIY"
     ]
   },
   {
@@ -183182,7 +183182,7 @@
     },
     "notes": "Corpus v1.0 batch-2 (freq: 28, lang: kbd, source: none)",
     "rootIds": [
-      "R-НЭХ"
+      "R-NEKH"
     ],
     "wordFamilyId": "WF-NA",
     "derivation": {
@@ -184190,7 +184190,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 28, lang: ady, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-АКЪ"
+      "R-AK"
     ]
   },
   {
@@ -184276,7 +184276,7 @@
     "taxonomyFamily": "Toplum & Rol",
     "rootForm": "лӀы-",
     "rootIds": [
-      "R-ЛӀЫ"
+      "R-LIY"
     ]
   },
   {
@@ -185377,7 +185377,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 27, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-ПЩӀ"
+      "R-PSHCHI"
     ]
   },
   {
@@ -185566,7 +185566,7 @@
     "literalMeaningAdy": "Зыгуэр къыщыувыӀэну хухэха щӀыпӀэ",
     "isLemma": true,
     "rootIds": [
-      "R-УВЫ"
+      "R-UVY"
     ]
   },
   {
@@ -185960,7 +185960,7 @@
     },
     "notes": "Corpus v1.0 batch-2 (freq: 27, lang: kbd, source: none)",
     "rootIds": [
-      "R-GU"
+      "R-GUG"
     ],
     "wordFamilyId": "WF-GU",
     "derivation": {
@@ -185988,7 +185988,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 27, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-КӀУ"
+      "R-KIU"
     ]
   },
   {
@@ -188724,7 +188724,7 @@
     "taxonomyFamily": "Mekan & Yön",
     "rootForm": "лъ-",
     "rootIds": [
-      "R-ЛЪА"
+      "R-LA"
     ]
   },
   {
@@ -189100,7 +189100,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 26, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-КУЭ"
+      "R-KUE_1"
     ]
   },
   {
@@ -189542,7 +189542,7 @@
     "taxonomyFamily": "Toplum & Rol",
     "rootForm": "лӀы-",
     "rootIds": [
-      "R-ЛӀЫ"
+      "R-LIY"
     ]
   },
   {
@@ -190472,7 +190472,7 @@
     "taxonomyFamily": "Toplum & Rol",
     "rootForm": "лӀы-",
     "rootIds": [
-      "R-ЛӀЫ"
+      "R-LIY"
     ]
   },
   {
@@ -190581,7 +190581,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 26, lang: ady, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-УАХ"
+      "R-UAKH"
     ]
   },
   {
@@ -190791,7 +190791,7 @@
       "ru": "Бжыгъэ 15"
     },
     "rootIds": [
-      "R-ПЩЫ"
+      "R-PSHCHY"
     ]
   },
   {
@@ -191015,7 +191015,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 25, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-ФӀЫ"
+      "R-FIY"
     ]
   },
   {
@@ -192590,7 +192590,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 25, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-ЖЫЛ"
+      "R-ZHYL"
     ]
   },
   {
@@ -192680,7 +192680,7 @@
       "ru": "Егъэлеяуэ куэд хъу, нэхъыбэ"
     },
     "rootIds": [
-      "R-КУЭ"
+      "R-KUE_1"
     ]
   },
   {
@@ -194125,7 +194125,7 @@
       "ru": "Мылъку, къулеигъэ"
     },
     "rootIds": [
-      "R-ХЪУ"
+      "R-KHU"
     ]
   },
   {
@@ -194443,7 +194443,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 24, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-ПЩЫ"
+      "R-PSHCHY"
     ]
   },
   {
@@ -194544,7 +194544,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 24, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-ПЩӀ"
+      "R-PSHCHI"
     ]
   },
   {
@@ -194719,7 +194719,7 @@
     },
     "notes": "Corpus v1.0 batch-2 (freq: 24, lang: kbd, source: none)",
     "rootIds": [
-      "R-GU"
+      "R-GUF"
     ],
     "wordFamilyId": "WF-GU",
     "derivation": {
@@ -195016,7 +195016,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 24, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-F"
+      "R-FIE"
     ]
   },
   {
@@ -195052,7 +195052,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 24, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-ЩӀА"
+      "R-SHCHIA"
     ]
   },
   {
@@ -195503,7 +195503,7 @@
     "taxonomyFamily": "İnsan & Nitelik",
     "rootForm": "лӀы-",
     "rootIds": [
-      "R-ЛӀЫ"
+      "R-LIY_1"
     ]
   },
   {
@@ -195609,7 +195609,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 24, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-ГЪУ"
+      "R-GU_1"
     ]
   },
   {
@@ -197140,7 +197140,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 23, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-УВЫ1"
+      "R-UVY_1"
     ]
   },
   {
@@ -197601,7 +197601,7 @@
     "taxonomyFamily": "Toplum & Rol",
     "rootForm": "лӀы-",
     "rootIds": [
-      "R-ЛӀЫ"
+      "R-LIY"
     ]
   },
   {
@@ -197674,7 +197674,7 @@
     "taxonomyFamily": "Gramer & Çekim",
     "rootForm": "Ӏэ-",
     "rootIds": [
-      "R-1E"
+      "R-IESHCH_1"
     ]
   },
   {
@@ -198017,7 +198017,7 @@
     "taxonomyFamily": "Gramer & Çekim",
     "rootForm": "Ӏэ-",
     "rootIds": [
-      "R-1E"
+      "R-IEP"
     ]
   },
   {
@@ -198216,7 +198216,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 23, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-ЖАӀ"
+      "R-ZHAI"
     ]
   },
   {
@@ -199056,7 +199056,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 23, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-ЩӀА"
+      "R-SHCHIA"
     ]
   },
   {
@@ -200871,7 +200871,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 23, lang: ady, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-БЭЩ"
+      "R-BESHCH"
     ]
   },
   {
@@ -201612,7 +201612,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 22, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-ЖАӀ"
+      "R-ZHAI"
     ]
   },
   {
@@ -201632,7 +201632,7 @@
     "taxonomyFamily": "İnsan & Nitelik",
     "rootForm": "лӀы-",
     "rootIds": [
-      "R-ЛӀЫ"
+      "R-LIY_1"
     ]
   },
   {
@@ -202120,7 +202120,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 22, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-АКЪ"
+      "R-AK_1"
     ]
   },
   {
@@ -202218,7 +202218,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 22, lang: kbd, source: none)",
     "ipa": "/нэхъ/",
     "rootIds": [
-      "R-НЭХ"
+      "R-NEKH"
     ],
     "wordFamilyId": "WF-NA",
     "derivation": {
@@ -205086,7 +205086,7 @@
     "literalMeaningAdy": "Зи щӀалэгъуэ цӀыхухэр",
     "isLemma": true,
     "rootIds": [
-      "R-ЩӀА"
+      "R-SHCHIA"
     ]
   },
   {
@@ -206857,7 +206857,7 @@
     "taxonomyFamily": "Toplum & Rol",
     "rootForm": "лӀы-",
     "rootIds": [
-      "R-ЛӀЫ"
+      "R-LIY"
     ]
   },
   {
@@ -206877,7 +206877,7 @@
     "taxonomyFamily": "Gramer & Çekim",
     "rootForm": "Ӏэ-",
     "rootIds": [
-      "R-1E"
+      "R-IESHCH_1"
     ]
   },
   {
@@ -206998,7 +206998,7 @@
     },
     "notes": "Corpus v1.0 batch-2 (freq: 21, lang: kbd, source: none)",
     "rootIds": [
-      "R-GU"
+      "R-GUG"
     ],
     "wordFamilyId": "WF-GU",
     "derivation": {
@@ -207107,7 +207107,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 21, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-ФӀЫ"
+      "R-FIY"
     ]
   },
   {
@@ -207422,7 +207422,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 21, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-ГЪУ"
+      "R-GU_1"
     ]
   },
   {
@@ -210159,7 +210159,7 @@
     },
     "notes": "Corpus v1.0 batch-2 (freq: 20, lang: kbd, source: none)",
     "rootIds": [
-      "R-НЭХ"
+      "R-NEKH"
     ],
     "wordFamilyId": "WF-NA",
     "derivation": {
@@ -210283,7 +210283,7 @@
     "literalMeaningAdy": "Зи къару илъыгъуэ, зи дахэгъуэ цӀыхухъу ныбжьыщӀэ",
     "isLemma": true,
     "rootIds": [
-      "R-ЩӀА"
+      "R-SHCHIA"
     ]
   },
   {
@@ -210506,7 +210506,7 @@
     "taxonomyFamily": "Toplum & Rol",
     "rootForm": "лӀы-",
     "rootIds": [
-      "R-ЛӀЫ"
+      "R-LIY"
     ]
   },
   {
@@ -211956,7 +211956,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 20, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-ЩӀЫ1"
+      "R-SHCHIY_1"
     ]
   },
   {
@@ -212322,7 +212322,7 @@
     "literalMeaningAdy": "Егъэлеяуэ куэд, куэдыщэ, куэдыӀуэ",
     "isLemma": true,
     "rootIds": [
-      "R-КУЭ"
+      "R-KUE_1"
     ]
   },
   {
@@ -212492,7 +212492,7 @@
     "literalMeaningAdy": "Гум фӀэфӀ щӀыӀэ мащӀэ",
     "isLemma": true,
     "rootIds": [
-      "R-ЩӀЫ1"
+      "R-SHCHIY_1"
     ]
   },
   {
@@ -214450,7 +214450,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 20, lang: ady, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-АКЪ"
+      "R-AK"
     ]
   },
   {
@@ -215379,7 +215379,7 @@
     "literalMeaningAdy": "[[фӏы]] псалъэм къытекӀа щыӀэцӀэ",
     "isLemma": true,
     "rootIds": [
-      "R-ФӀЫ"
+      "R-FIY"
     ]
   },
   {
@@ -215676,7 +215676,7 @@
     },
     "notes": "Corpus v1.0 batch-2 (freq: 19, lang: kbd, source: none)",
     "rootIds": [
-      "R-GU"
+      "R-GUG"
     ],
     "wordFamilyId": "WF-GU",
     "derivation": {
@@ -216268,7 +216268,7 @@
     "taxonomyFamily": "Toplum & Hukuk",
     "rootForm": "лӀы-",
     "rootIds": [
-      "R-ЛӀЫ"
+      "R-LIY"
     ]
   },
   {
@@ -216540,7 +216540,7 @@
     "taxonomyFamily": "Gramer & Çekim",
     "rootForm": "Ӏэ-",
     "rootIds": [
-      "R-1E"
+      "R-IESHCH"
     ]
   },
   {
@@ -217129,7 +217129,7 @@
     "literalMeaningAdy": "Зэхэпха, къэхъуа-къэщӀа гуэр, уи нэгу щӀэкӀа, плъэгъуа гуэр Ӏуэтэжын",
     "isLemma": true,
     "rootIds": [
-      "R-ЖЫӀ"
+      "R-ZHYI"
     ]
   },
   {
@@ -218320,7 +218320,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 19, lang: ady, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-БЭЩ"
+      "R-BESHCH"
     ]
   },
   {
@@ -218583,7 +218583,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 19, lang: ady, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-ПЩЫ"
+      "R-PSHCHY"
     ]
   },
   {
@@ -218986,7 +218986,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 19, lang: ady, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-АКЪ"
+      "R-AK"
     ]
   },
   {
@@ -220054,7 +220054,7 @@
     "literalMeaningAdy": "Губгъуэхэм щащӀ псэупӀэу, пхъэ зэупсея, мэкъукӀэ зэщӀэбгъэжа",
     "isLemma": true,
     "rootIds": [
-      "R-ПЩЫ"
+      "R-PSHCHY"
     ]
   },
   {
@@ -221501,7 +221501,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 18, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-МАЩ"
+      "R-MASHCH"
     ]
   },
   {
@@ -222122,7 +222122,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 18, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-МАЩ"
+      "R-MASHCH"
     ]
   },
   {
@@ -222982,7 +222982,7 @@
     "taxonomyFamily": "Eşya & Mutfak",
     "rootForm": "Ӏэ-",
     "rootIds": [
-      "R-1E"
+      "R-IEG"
     ]
   },
   {
@@ -225629,7 +225629,7 @@
     "literalMeaningAdy": "ФӀы дыдэу, дэгъуэу, егъэлеяуэ фӀыуэ",
     "isLemma": true,
     "rootIds": [
-      "R-ФӀЫ"
+      "R-FIY"
     ]
   },
   {
@@ -225671,7 +225671,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 17, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-ХУА"
+      "R-KHUA"
     ]
   },
   {
@@ -226088,7 +226088,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 17, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-ФӀЫ"
+      "R-FIY"
     ]
   },
   {
@@ -226255,7 +226255,7 @@
     },
     "notes": "Corpus v1.0 batch-2 (freq: 17, lang: kbd, source: none)",
     "rootIds": [
-      "R-GU"
+      "R-GUF"
     ],
     "wordFamilyId": "WF-GU",
     "derivation": {
@@ -226283,7 +226283,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 17, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-ПЩӀ"
+      "R-PSHCHI"
     ]
   },
   {
@@ -228041,7 +228041,7 @@
     "taxonomyFamily": "Gramer & Çekim",
     "rootForm": "Ӏэ-",
     "rootIds": [
-      "R-1E"
+      "R-IESHCH"
     ]
   },
   {
@@ -228059,7 +228059,7 @@
     "literalMeaningAdy": "ЖыӀэщӀэ",
     "isLemma": true,
     "rootIds": [
-      "R-ЖЫӀ"
+      "R-ZHYI"
     ]
   },
   {
@@ -228817,7 +228817,7 @@
     "literalMeaningAdy": "Зыгуэрым и щӀагъым зыгуэр щӀэгъэзэгъэн, щӀэдзэн",
     "isLemma": true,
     "rootIds": [
-      "R-КӀЭ"
+      "R-KIE"
     ]
   },
   {
@@ -228997,7 +228997,7 @@
     },
     "notes": "Corpus v1.0 batch-2 (freq: 17, lang: kbd, source: none)",
     "rootIds": [
-      "R-GU"
+      "R-GUG"
     ],
     "wordFamilyId": "WF-GU",
     "derivation": {
@@ -229478,7 +229478,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 17, lang: ady, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-ПЩЫ"
+      "R-PSHCHY"
     ]
   },
   {
@@ -231953,7 +231953,7 @@
     "taxonomyFamily": "Gramer & Çekim",
     "rootForm": "Ӏэ-",
     "rootIds": [
-      "R-1E"
+      "R-IEG"
     ]
   },
   {
@@ -232274,7 +232274,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 16, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-ФӀЫ"
+      "R-FIY"
     ]
   },
   {
@@ -232327,7 +232327,7 @@
     "taxonomyFamily": "Gramer & Çekim",
     "rootForm": "Ӏэ-",
     "rootIds": [
-      "R-1E"
+      "R-IEP"
     ]
   },
   {
@@ -232483,7 +232483,7 @@
     "literalMeaningAdy": "Еплъ псалъафэ зэпыщӀахэр",
     "isLemma": true,
     "rootIds": [
-      "R-ФӀЫ"
+      "R-FIY"
     ]
   },
   {
@@ -233157,7 +233157,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 16, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-ФӀЫ"
+      "R-FIY"
     ]
   },
   {
@@ -233186,7 +233186,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 16, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-ТЭМ"
+      "R-TEM"
     ]
   },
   {
@@ -233202,7 +233202,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 16, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-ФӀЫ"
+      "R-FIY"
     ]
   },
   {
@@ -233749,7 +233749,7 @@
       "ru": "Еплъ &quot"
     },
     "rootIds": [
-      "R-УВЫ"
+      "R-UVY"
     ]
   },
   {
@@ -234190,7 +234190,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 16, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-ПЩӀ"
+      "R-PSHCHI"
     ]
   },
   {
@@ -234402,7 +234402,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 16, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-ФӀЫ"
+      "R-FIY"
     ]
   },
   {
@@ -234959,7 +234959,7 @@
     "taxonomyFamily": "Toplum & Rol",
     "rootForm": "лӀы-",
     "rootIds": [
-      "R-ЛӀЫ"
+      "R-LIY"
     ]
   },
   {
@@ -235124,7 +235124,7 @@
     "taxonomyFamily": "Nitelik & Beden",
     "rootForm": "Ӏэ-",
     "rootIds": [
-      "R-1E"
+      "R-IEP"
     ]
   },
   {
@@ -235610,7 +235610,7 @@
     "literalMeaningAdy": "[[фӏыцӏэ]] псалъэм къытекӀа щыӀэцӀэ",
     "isLemma": true,
     "rootIds": [
-      "R-ФӀЫ"
+      "R-FIY"
     ]
   },
   {
@@ -235851,7 +235851,7 @@
     },
     "notes": "Corpus v1.0 batch-2 (freq: 16, lang: kbd, source: none)",
     "rootIds": [
-      "R-НЭХ"
+      "R-NEKH"
     ],
     "wordFamilyId": "WF-NA",
     "derivation": {
@@ -237271,7 +237271,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 16, lang: ady, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-АКЪ"
+      "R-AK"
     ]
   },
   {
@@ -238010,7 +238010,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 16, lang: ady, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-АКЪ"
+      "R-AK"
     ]
   },
   {
@@ -240646,7 +240646,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 15, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-ГЪУ"
+      "R-GU_1"
     ]
   },
   {
@@ -240734,7 +240734,7 @@
     "taxonomyFamily": "Yer/Yerleşim",
     "rootForm": "хьэ-",
     "rootIds": [
-      "R-ХЬЭ"
+      "R-KHE"
     ]
   },
   {
@@ -241301,7 +241301,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 15, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-ПЩЫ"
+      "R-PSHCHY"
     ]
   },
   {
@@ -241617,7 +241617,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 15, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-ПЩЫ"
+      "R-PSHCHY"
     ]
   },
   {
@@ -241633,7 +241633,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 15, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-ГЪУ"
+      "R-GU_1"
     ]
   },
   {
@@ -242329,7 +242329,7 @@
     "taxonomyFamily": "İnsan & Nitelik",
     "rootForm": "лӀы-",
     "rootIds": [
-      "R-ЛӀЫ"
+      "R-LIY_1"
     ]
   },
   {
@@ -242786,7 +242786,7 @@
       "ru": "Псалъафэ"
     },
     "rootIds": [
-      "R-ЖЫӀ"
+      "R-ZHYI"
     ]
   },
   {
@@ -242894,7 +242894,7 @@
     "taxonomyFamily": "Gramer & Çekim",
     "rootForm": "лъ-",
     "rootIds": [
-      "R-ЛЪА"
+      "R-LA"
     ]
   },
   {
@@ -243077,7 +243077,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 15, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-МАЩ"
+      "R-MASHCH"
     ]
   },
   {
@@ -243271,7 +243271,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 15, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-ГЪУ"
+      "R-GU_1"
     ]
   },
   {
@@ -243484,7 +243484,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 15, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-АКЪ"
+      "R-AK"
     ]
   },
   {
@@ -244148,7 +244148,7 @@
     "taxonomyFamily": "Gramer & Çekim",
     "rootForm": "Ӏэ-",
     "rootIds": [
-      "R-1E"
+      "R-IEP"
     ]
   },
   {
@@ -244313,7 +244313,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 15, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-ЩӀА1"
+      "R-SHCHIA_1"
     ]
   },
   {
@@ -245156,7 +245156,7 @@
     "taxonomyFamily": "Gramer & Çekim",
     "rootForm": "Ӏэ-",
     "rootIds": [
-      "R-1E"
+      "R-IESHCH"
     ]
   },
   {
@@ -245330,7 +245330,7 @@
     },
     "notes": "Corpus v1.0 batch-2 (freq: 15, lang: kbd, source: none)",
     "rootIds": [
-      "R-ХАД"
+      "R-KHAD"
     ],
     "wordFamilyId": "WF-ADA",
     "derivation": {
@@ -245702,7 +245702,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 15, lang: ady, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-АКЪ"
+      "R-AK"
     ]
   },
   {
@@ -248850,7 +248850,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 14, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-КУУ"
+      "R-KUU"
     ]
   },
   {
@@ -249066,7 +249066,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 14, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-F"
+      "R-FIE"
     ]
   },
   {
@@ -249123,7 +249123,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 14, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-ТЭМ"
+      "R-TEM"
     ]
   },
   {
@@ -249524,7 +249524,7 @@
       "ru": "Бжыгъэ 14"
     },
     "rootIds": [
-      "R-ПЩЫ"
+      "R-PSHCHY"
     ]
   },
   {
@@ -249688,7 +249688,7 @@
     "literalMeaningAdy": "Зыгуэрым кӀуэцӀылъхьэн, кӀуэцӀыгъэкӀэрэхъуэн",
     "isLemma": true,
     "rootIds": [
-      "R-КӀУ"
+      "R-KIU"
     ]
   },
   {
@@ -251318,7 +251318,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 14, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-ФӀЫ"
+      "R-FIY"
     ]
   },
   {
@@ -251436,7 +251436,7 @@
     "taxonomyFamily": "Toplum & Rol",
     "rootForm": "лӀы-",
     "rootIds": [
-      "R-ЛӀЫ"
+      "R-LIY"
     ]
   },
   {
@@ -251891,7 +251891,7 @@
     "literalMeaningAdy": "Куэзырыр зэригуэш дамыгъиплӀым ящыщу чресым, трамэм, лэкъумым нэмыщӀкӀэ щыӀэр",
     "isLemma": true,
     "rootIds": [
-      "R-ФӀЫ"
+      "R-FIY"
     ]
   },
   {
@@ -252453,7 +252453,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 14, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-БЭЛ"
+      "R-BEL"
     ]
   },
   {
@@ -252615,7 +252615,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 14, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-ЩӀА"
+      "R-SHCHIA_2"
     ]
   },
   {
@@ -252945,7 +252945,7 @@
     "taxonomyFamily": "Eşya & Savaş",
     "rootForm": "Ӏэ-",
     "rootIds": [
-      "R-1E"
+      "R-IESHCH"
     ]
   },
   {
@@ -253242,7 +253242,7 @@
     "taxonomyFamily": "İnsan & Yaşam",
     "rootForm": "лӀы-",
     "rootIds": [
-      "R-ЛӀЫ"
+      "R-LIY"
     ]
   },
   {
@@ -253258,7 +253258,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 14, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-КӀЭ"
+      "R-KIE"
     ]
   },
   {
@@ -258291,7 +258291,7 @@
     },
     "notes": "Corpus v1.0 batch-2 (freq: 13, lang: kbd, source: none)",
     "rootIds": [
-      "R-GU"
+      "R-GUF"
     ],
     "wordFamilyId": "WF-GU",
     "derivation": {
@@ -258332,7 +258332,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 13, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-УЭР"
+      "R-UER"
     ]
   },
   {
@@ -258658,7 +258658,7 @@
     "literalMeaningAdy": "Ӏэмал зэриӀэкӀэ зьпуэр нэхъ псынщӀэу зэфӀэбгъэкӀыну, пщӀэну хэтын",
     "isLemma": true,
     "rootIds": [
-      "R-P1E"
+      "R-PIE"
     ]
   },
   {
@@ -258948,7 +258948,7 @@
     },
     "notes": "Corpus v1.0 batch-2 (freq: 13, lang: kbd, source: none)",
     "rootIds": [
-      "R-НЭХ"
+      "R-NEKH"
     ],
     "wordFamilyId": "WF-NA",
     "derivation": {
@@ -259081,7 +259081,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 13, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-АКЪ"
+      "R-AK_1"
     ]
   },
   {
@@ -259114,7 +259114,7 @@
     "taxonomyFamily": "İnsan & Yaşam",
     "rootForm": "лӀы-",
     "rootIds": [
-      "R-ЛӀЫ"
+      "R-LIY"
     ]
   },
   {
@@ -259377,7 +259377,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 13, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-ФӀЫ"
+      "R-FIY"
     ]
   },
   {
@@ -259436,7 +259436,7 @@
     },
     "notes": "Corpus v1.0 batch-2 (freq: 13, lang: kbd, source: none)",
     "rootIds": [
-      "R-НЭХ"
+      "R-NEKH_2"
     ],
     "wordFamilyId": "WF-NA",
     "derivation": {
@@ -259531,7 +259531,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 13, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-МАЩ"
+      "R-MASHCH"
     ]
   },
   {
@@ -260667,7 +260667,7 @@
     },
     "notes": "Corpus v1.0 batch-2 (freq: 13, lang: kbd, source: none)",
     "rootIds": [
-      "R-GU"
+      "R-GUG"
     ],
     "wordFamilyId": "WF-GU",
     "derivation": {
@@ -260777,7 +260777,7 @@
     },
     "notes": "Corpus v1.0 batch-2 (freq: 13, lang: kbd, source: none)",
     "rootIds": [
-      "R-GU"
+      "R-GUG"
     ],
     "wordFamilyId": "WF-GU",
     "derivation": {
@@ -261550,7 +261550,7 @@
     "taxonomyFamily": "Toplum & Rol",
     "rootForm": "лӀы-",
     "rootIds": [
-      "R-ЛӀЫ"
+      "R-LIY"
     ]
   },
   {
@@ -262018,7 +262018,7 @@
     "taxonomyFamily": "Kültür & Etkileşim",
     "rootForm": "Ӏэ-",
     "rootIds": [
-      "R-1E"
+      "R-IEG"
     ]
   },
   {
@@ -262829,7 +262829,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 13, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-МАЩ"
+      "R-MASHCH"
     ]
   },
   {
@@ -263075,7 +263075,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 13, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-ГЪА1"
+      "R-GA_1"
     ]
   },
   {
@@ -263207,7 +263207,7 @@
     "literalMeaningAdy": "Фэм къыпхив псы, ткӀуаткӀуэ",
     "isLemma": true,
     "rootIds": [
-      "R-ПЩӀ"
+      "R-PSHCHI"
     ]
   },
   {
@@ -264039,7 +264039,7 @@
     "literalMeaningAdy": "Зыгуэр кӀуэныр, хъеиныр, лэжьэныр щигъэту и пӀэм къинэн",
     "isLemma": true,
     "rootIds": [
-      "R-УВЫ"
+      "R-UVY"
     ]
   },
   {
@@ -264100,7 +264100,7 @@
     "literalMeaningAdy": "КъэгубжьыгъуафӀэ",
     "isLemma": true,
     "rootIds": [
-      "R-ТЭМ"
+      "R-TEM"
     ]
   },
   {
@@ -264458,7 +264458,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 13, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-ХУА"
+      "R-KHUA"
     ]
   },
   {
@@ -264949,7 +264949,7 @@
     },
     "notes": "Corpus v1.0 batch-2 (freq: 13, lang: kbd, source: none)",
     "rootIds": [
-      "R-НЭХ"
+      "R-NEKH"
     ],
     "wordFamilyId": "WF-NA",
     "derivation": {
@@ -265060,7 +265060,7 @@
     "taxonomyFamily": "Gramer & Çekim",
     "rootForm": "Ӏэ-",
     "rootIds": [
-      "R-1E"
+      "R-IEP"
     ]
   },
   {
@@ -268330,7 +268330,7 @@
     "taxonomyFamily": "Toplum & Rol",
     "rootForm": "лӀы-",
     "rootIds": [
-      "R-ЛӀЫ"
+      "R-LIY"
     ]
   },
   {
@@ -269094,7 +269094,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 13, lang: ady, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-АКЪ"
+      "R-AK"
     ]
   },
   {
@@ -269743,7 +269743,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 13, lang: ady, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-ПЩЫ"
+      "R-PSHCHY"
     ]
   },
   {
@@ -271229,7 +271229,7 @@
     },
     "notes": "Corpus v1.0 batch-2 (freq: 12, lang: kbd, source: none)",
     "rootIds": [
-      "R-НЭХ"
+      "R-NEKH"
     ],
     "wordFamilyId": "WF-NA",
     "derivation": {
@@ -271715,7 +271715,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 12, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-F"
+      "R-FIE"
     ]
   },
   {
@@ -271823,7 +271823,7 @@
     "taxonomyFamily": "Gramer & Çekim",
     "rootForm": "Ӏэ-",
     "rootIds": [
-      "R-1E"
+      "R-IEB"
     ]
   },
   {
@@ -271877,7 +271877,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 12, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-ГЪА1"
+      "R-GA_1"
     ]
   },
   {
@@ -272207,7 +272207,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 12, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-F"
+      "R-FIE"
     ]
   },
   {
@@ -272964,7 +272964,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 12, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-ПЩЫ"
+      "R-PSHCHY"
     ]
   },
   {
@@ -273066,7 +273066,7 @@
     "literalMeaningAdy": "Лъэсу е зыгуэркӀэ зыгуэрым пхыкӀын, зыгуэрым хэту кӀуэн",
     "isLemma": true,
     "rootIds": [
-      "R-КӀУ"
+      "R-KIU"
     ]
   },
   {
@@ -273635,7 +273635,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 12, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-ЖЫӀ"
+      "R-ZHYI"
     ]
   },
   {
@@ -273668,7 +273668,7 @@
     "taxonomyFamily": "Gramer & Çekim",
     "rootForm": "Ӏэ-",
     "rootIds": [
-      "R-1E"
+      "R-IEG"
     ]
   },
   {
@@ -274120,7 +274120,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 12, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-ФӀЫ"
+      "R-FIY"
     ]
   },
   {
@@ -274244,7 +274244,7 @@
     "literalMeaningAdy": "ЖаӀэм едаӀуэ, и пщэ къралъхьэр, къалэн къыщащӀыр зыгъэзащӀэ",
     "isLemma": true,
     "rootIds": [
-      "R-ЖЫӀ"
+      "R-ZHYI"
     ]
   },
   {
@@ -274790,7 +274790,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 12, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-КӀЭ"
+      "R-KIE"
     ]
   },
   {
@@ -275581,7 +275581,7 @@
     "literalMeaningAdy": "ЗыщӀыпӀэ кӀуэуэ гъуэгу тет цӀыху",
     "isLemma": true,
     "rootIds": [
-      "R-ГЪУ"
+      "R-GU_2"
     ]
   },
   {
@@ -276627,7 +276627,7 @@
     },
     "notes": "Corpus v1.0 batch-2 (freq: 12, lang: kbd, source: none)",
     "rootIds": [
-      "R-GU"
+      "R-GUG"
     ],
     "wordFamilyId": "WF-GU",
     "derivation": {
@@ -279279,7 +279279,7 @@
     "taxonomyFamily": "Toplum & Rol",
     "rootForm": "лӀы-",
     "rootIds": [
-      "R-ЛӀЫ"
+      "R-LIY"
     ]
   },
   {
@@ -279357,7 +279357,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 12, lang: ady, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-КУУ"
+      "R-KUU"
     ]
   },
   {
@@ -284302,7 +284302,7 @@
       "ru": "Бжыгъэ 16"
     },
     "rootIds": [
-      "R-ПЩЫ"
+      "R-PSHCHY"
     ]
   },
   {
@@ -284473,7 +284473,7 @@
       "ru": "Гуапагъ лъэпкъ хэмылъу"
     },
     "rootIds": [
-      "R-ЩӀЫ1"
+      "R-SHCHIY_1"
     ]
   },
   {
@@ -284851,7 +284851,7 @@
     },
     "notes": "Corpus v1.0 batch-2 (freq: 11, lang: kbd, source: none)",
     "rootIds": [
-      "R-GU"
+      "R-GUF"
     ],
     "wordFamilyId": "WF-GU",
     "derivation": {
@@ -285523,7 +285523,7 @@
     },
     "notes": "Corpus v1.0 batch-2 (freq: 11, lang: kbd, source: none)",
     "rootIds": [
-      "R-GU"
+      "R-GUF"
     ],
     "wordFamilyId": "WF-GU",
     "derivation": {
@@ -285861,7 +285861,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 11, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-ХЪУ"
+      "R-KHU"
     ]
   },
   {
@@ -286418,7 +286418,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 11, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-ПЩЫ"
+      "R-PSHCHY"
     ]
   },
   {
@@ -286854,7 +286854,7 @@
     "literalMeaningAdy": "ЦӀэ етын, егъэгъуэтын",
     "isLemma": true,
     "rootIds": [
-      "R-F"
+      "R-FIE"
     ]
   },
   {
@@ -287055,7 +287055,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 11, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-ФӀЫ"
+      "R-FIY"
     ]
   },
   {
@@ -287127,7 +287127,7 @@
     "literalMeaningAdy": "ЖаӀэм емыдаӀуэ, щхьэзыфӀэфӀ",
     "isLemma": true,
     "rootIds": [
-      "R-ЖЫӀ"
+      "R-ZHYI"
     ]
   },
   {
@@ -287229,7 +287229,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 11, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-ФӀЫ"
+      "R-FIY"
     ]
   },
   {
@@ -287578,7 +287578,7 @@
     "literalMeaningAdy": "Зыгуэрым и щӀагъым щӀэкӀын",
     "isLemma": true,
     "rootIds": [
-      "R-КӀЭ"
+      "R-KIE"
     ]
   },
   {
@@ -287909,7 +287909,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 11, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-ПЩӀ"
+      "R-PSHCHI"
     ]
   },
   {
@@ -288105,7 +288105,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 11, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-ПЩЫ"
+      "R-PSHCHY"
     ]
   },
   {
@@ -288223,7 +288223,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 11, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-ЖАӀ"
+      "R-ZHAI"
     ]
   },
   {
@@ -288265,7 +288265,7 @@
     "notes": "Corpus v1.0 batch-2 (freq: 11, lang: kbd, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-ГЪА1"
+      "R-GA_1"
     ]
   },
   {
@@ -288375,7 +288375,7 @@
       "ru": "Цы хужь зытет"
     },
     "rootIds": [
-      "R-ПЩӀ"
+      "R-PSHCHI"
     ]
   },
   {
@@ -293488,7 +293488,7 @@
     "literalMeaningAdy": "тепло, жарко / Хуабагъэ щӀэлъу, мыщӀыӀэу",
     "isLemma": true,
     "rootIds": [
-      "R-ХУА"
+      "R-KHUA"
     ]
   },
   {
@@ -296695,7 +296695,7 @@
       "ru": "период созревания чего-л"
     },
     "rootIds": [
-      "R-ХЪУ"
+      "R-KHU"
     ]
   },
   {
@@ -296745,7 +296745,7 @@
     "notes": "Verified (freq: 7, 14.Kbd-En-2-Jonty)",
     "isLemma": false,
     "rootIds": [
-      "R-ХУА"
+      "R-KHUA"
     ]
   },
   {
@@ -308095,7 +308095,7 @@
       "ru": "бесчисленный, несчётный / Зи бжыгъэр къыпхуэмылъытэ"
     },
     "rootIds": [
-      "R-БЖЫ"
+      "R-BZHY"
     ]
   },
   {
@@ -311848,7 +311848,7 @@
       "ru": "жарища, сильная жара / Егъэлеяуэ хуабэ"
     },
     "rootIds": [
-      "R-ХУА"
+      "R-KHUA"
     ]
   },
   {
@@ -315400,7 +315400,7 @@
     },
     "notes": "Verified (freq: 6, 16.Kbd-En-Ziwar)",
     "rootIds": [
-      "R-GU"
+      "R-GUZ"
     ],
     "wordFamilyId": "WF-GU",
     "derivation": {
@@ -318266,7 +318266,7 @@
     },
     "notes": "Verified (freq: 6, 30.Ady-Rus_ThreeVolumes)",
     "rootIds": [
-      "R-НЭХ"
+      "R-NEKH"
     ],
     "wordFamilyId": "WF-NA",
     "derivation": {
@@ -330859,7 +330859,7 @@
     "literalMeaningAdy": "бесполезно / Сэбэп имыӀэу",
     "isLemma": true,
     "rootIds": [
-      "R-СЭБ"
+      "R-SEB"
     ]
   },
   {
@@ -330961,7 +330961,7 @@
     "ipa": "/нэхъ/",
     "conceptId": "COMPARISON",
     "rootIds": [
-      "R-НЭХ"
+      "R-NEKH"
     ],
     "wordFamilyId": "WF-NA",
     "derivation": {
@@ -331832,7 +331832,7 @@
       "ru": "бесполезный / Сэбэп зыпымылъ, зыхэмылъ, сэбэп зыпылъ, зымылэжьыф"
     },
     "rootIds": [
-      "R-СЭБ"
+      "R-SEB"
     ]
   },
   {
@@ -332774,7 +332774,7 @@
     "literalMeaningAdy": "глубина / Куу псалъэм къытекӀа щыӀэцӀэ",
     "isLemma": true,
     "rootIds": [
-      "R-КУУ"
+      "R-KUU"
     ]
   },
   {
@@ -333627,7 +333627,7 @@
     "notes": "Verified (freq: 5, 14.Kbd-En-2-Jonty)",
     "isLemma": false,
     "rootIds": [
-      "R-ГЪУ"
+      "R-GU_1"
     ]
   },
   {
@@ -333826,7 +333826,7 @@
     "literalMeaningAdy": "полезность / Сэбэп псалъэм къытекӀа щыӀэцӀэ",
     "isLemma": true,
     "rootIds": [
-      "R-СЭБ"
+      "R-SEB"
     ]
   },
   {
@@ -339208,7 +339208,7 @@
     "literalMeaningAdy": "разум, разумность Ӏушыгъ Ащ зи акъылыгъэ хэлъэп</",
     "isLemma": true,
     "rootIds": [
-      "R-АКЪ"
+      "R-AK"
     ]
   },
   {
@@ -340742,7 +340742,7 @@
       "ru": "дышло, прикрепленное к плугу для того, чтобы запрячь четверку быков, лошадей"
     },
     "rootIds": [
-      "R-БЭЩ"
+      "R-BESHCH"
     ]
   },
   {
@@ -343833,7 +343833,7 @@
     "notes": "Verified (freq: 5, 30.Ady-Rus_ThreeVolumes)",
     "isLemma": false,
     "rootIds": [
-      "R-ПЩЫ"
+      "R-PSHCHY"
     ]
   },
   {
@@ -344007,7 +344007,7 @@
       "tr": "on bir"
     },
     "rootIds": [
-      "R-ПЩЫ"
+      "R-PSHCHY"
     ]
   },
   {
@@ -344023,7 +344023,7 @@
       "tr": "on iki"
     },
     "rootIds": [
-      "R-ПЩЫ"
+      "R-PSHCHY"
     ]
   },
   {
@@ -344039,7 +344039,7 @@
       "tr": "on üç"
     },
     "rootIds": [
-      "R-ПЩЫ"
+      "R-PSHCHY"
     ]
   },
   {
@@ -344055,7 +344055,7 @@
       "tr": "on dört"
     },
     "rootIds": [
-      "R-ПЩЫ"
+      "R-PSHCHY"
     ]
   },
   {
@@ -344071,7 +344071,7 @@
       "tr": "on beş"
     },
     "rootIds": [
-      "R-ПЩЫ"
+      "R-PSHCHY"
     ]
   },
   {
@@ -344087,7 +344087,7 @@
       "tr": "on altı"
     },
     "rootIds": [
-      "R-ПЩЫ"
+      "R-PSHCHY"
     ]
   },
   {
@@ -344103,7 +344103,7 @@
       "tr": "on yedi"
     },
     "rootIds": [
-      "R-ПЩЫ"
+      "R-PSHCHY"
     ]
   },
   {
@@ -344119,7 +344119,7 @@
       "tr": "on sekiz"
     },
     "rootIds": [
-      "R-ПЩЫ"
+      "R-PSHCHY"
     ]
   },
   {
@@ -344158,7 +344158,7 @@
     ],
     "isLemma": true,
     "rootIds": [
-      "R-ФӀЫ"
+      "R-FIY"
     ]
   },
   {
@@ -344341,7 +344341,7 @@
     "partOfSpeech": "noun",
     "notes": "Bitki (Plant)",
     "rootIds": [
-      "R-ДЭЖ"
+      "R-DEZH"
     ],
     "wordFamilyId": "WF-DA",
     "derivation": {
@@ -344658,7 +344658,7 @@
     "notes": "PROMPT entegrasyonu (month)",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ШЫ"
+      "R-SHY"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -344802,7 +344802,7 @@
     "notes": "PROMPT entegrasyonu (genel)",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-GU"
+      "R-GUZ"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -345299,7 +345299,7 @@
     "notes": "PROMPT entegrasyonu (genel)",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ШЫ"
+      "R-SHY"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -345322,7 +345322,7 @@
     "notes": "PROMPT entegrasyonu (genel)",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ПЩЫ"
+      "R-PSHCHY"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -345399,7 +345399,7 @@
     "notes": "PROMPT entegrasyonu (genel)",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ГЪУ"
+      "R-GU_2"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -345491,7 +345491,7 @@
     "notes": "PROMPT entegrasyonu (genel)",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-БЖЭ"
+      "R-BZHE"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -345558,7 +345558,7 @@
     "notes": "PROMPT entegrasyonu (genel)",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ВАК"
+      "R-VAK"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -345581,7 +345581,7 @@
     "notes": "PROMPT entegrasyonu (genel)",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ТХЫ"
+      "R-TKHY"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -345987,7 +345987,7 @@
     "notes": "Manuel ekleme",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-КӀУ"
+      "R-KIU"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -349442,7 +349442,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-1E"
+      "R-IEB"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -349467,7 +349467,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-1E"
+      "R-IEB"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -349492,7 +349492,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-1E"
+      "R-IEB"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -349517,7 +349517,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-1E"
+      "R-IEG"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -349542,7 +349542,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-1E"
+      "R-IEG"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -349567,7 +349567,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-1E"
+      "R-IEG"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -350876,7 +350876,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-1E"
+      "R-IEP"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -350902,7 +350902,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-1E"
+      "R-IEP"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -350927,7 +350927,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-1E"
+      "R-IEP"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -350952,7 +350952,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-1E"
+      "R-IEP"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -350977,7 +350977,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-1E"
+      "R-IEP"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -351557,7 +351557,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-1E"
+      "R-IESHCH_1"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -352087,7 +352087,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-1E"
+      "R-IESHCH"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -352764,7 +352764,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json | Orijinal: акъылыншагъ(э)",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-АКЪ"
+      "R-AK"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -352786,7 +352786,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json | Orijinal: акъылыфӀагъ(э)",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-АКЪ"
+      "R-AK"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -354020,7 +354020,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-БГЪ"
+      "R-BG"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -354042,7 +354042,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-БГЪ"
+      "R-BG"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -354064,7 +354064,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-БГЪ"
+      "R-BG"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -355148,7 +355148,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-БЖЬ"
+      "R-BZH"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -355250,7 +355250,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-БЖЭ"
+      "R-BZHE"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -355277,7 +355277,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-БЖЭ"
+      "R-BZHE"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -355299,7 +355299,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-БЖЭ"
+      "R-BZHE"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -355321,7 +355321,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-БЖЭ"
+      "R-BZHE"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -355343,7 +355343,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-БЖЭ"
+      "R-BZHE"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -355365,7 +355365,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-БЖЭ"
+      "R-BZHE"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -355387,7 +355387,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-БЖЭ"
+      "R-BZHE"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -355409,7 +355409,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-БЖЭ"
+      "R-BZHE"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -355431,7 +355431,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-БЖЭ"
+      "R-BZHE"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -355453,7 +355453,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-БЖЭ"
+      "R-BZHE"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -355475,7 +355475,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-БЖЭ"
+      "R-BZHE"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -355497,7 +355497,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-БЖЭ"
+      "R-BZHE"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -355586,7 +355586,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-БЗЭ"
+      "R-BZE_1"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -355608,7 +355608,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-БЗЭ"
+      "R-BZE_1"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -355635,7 +355635,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-БЗЭ"
+      "R-BZE_1"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -358256,7 +358256,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-GU"
+      "R-GUG"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -359822,7 +359822,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-GU"
+      "R-GUF"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -359847,7 +359847,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-GU"
+      "R-GUF"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -359872,7 +359872,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-GU"
+      "R-GUF"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -361012,7 +361012,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ГЪА1"
+      "R-GA_1"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -361730,7 +361730,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ГЪУ"
+      "R-GU_1"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -361752,7 +361752,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ГЪУ"
+      "R-GU_1"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -361774,7 +361774,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ГЪУ"
+      "R-GU_1"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -361796,7 +361796,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ГЪУ"
+      "R-GU_1"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -361818,7 +361818,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ГЪУ"
+      "R-GU_1"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -361840,7 +361840,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ГЪУ"
+      "R-GU_1"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -361862,7 +361862,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ГЪУ"
+      "R-GU_1"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -361884,7 +361884,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json | Orijinal: гъуэгуншагъ(э)",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ГЪУ"
+      "R-GU_1"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -361906,7 +361906,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ГЪУ"
+      "R-GU_1"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -361928,7 +361928,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ГЪУ"
+      "R-GU_2"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -361950,7 +361950,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ГЪУ"
+      "R-GU_2"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -361972,7 +361972,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ГЪУ"
+      "R-GU_1"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -361994,7 +361994,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ГЪУ"
+      "R-GU_1"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -362101,7 +362101,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ГЪУ2"
+      "R-GU_3"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -362123,7 +362123,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ГЪУ2"
+      "R-GU_3"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -369327,7 +369327,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ДЭЖ"
+      "R-DEZH"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -370205,7 +370205,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ДЭХ"
+      "R-DEKH"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -391168,7 +391168,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ИН"
+      "R-IN"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -391190,7 +391190,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ИН"
+      "R-IN"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -391212,7 +391212,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ИН"
+      "R-IN"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -392593,7 +392593,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-КӀУ"
+      "R-KIU"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -392615,7 +392615,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-КӀУ"
+      "R-KIU"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -392638,7 +392638,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-КӀУ"
+      "R-KIU"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -392660,7 +392660,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-КӀУ"
+      "R-KIU"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -392682,7 +392682,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-КӀУ"
+      "R-KIU"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -392704,7 +392704,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-КӀУ"
+      "R-KIU"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -392726,7 +392726,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-КӀУ"
+      "R-KIU"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -392748,7 +392748,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-КӀУ"
+      "R-KIU"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -392770,7 +392770,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-КӀУ"
+      "R-KIU"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -392792,7 +392792,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-КӀУ"
+      "R-KIU"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -392814,7 +392814,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-КӀУ"
+      "R-KIU"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -392836,7 +392836,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-КӀУ"
+      "R-KIU"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -392858,7 +392858,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-КӀУ"
+      "R-KIU"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -392880,7 +392880,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-КӀУ"
+      "R-KIU"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -392903,7 +392903,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-КӀУ"
+      "R-KIU"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -392925,7 +392925,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-КӀУ"
+      "R-KIU"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -392947,7 +392947,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-КӀУ"
+      "R-KIU"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -392969,7 +392969,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-КӀУ"
+      "R-KIU"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -392991,7 +392991,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-КӀУ"
+      "R-KIU"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -395119,7 +395119,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-КӀЭ"
+      "R-KIE"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -395141,7 +395141,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-КӀЭ"
+      "R-KIE"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -395163,7 +395163,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-КӀЭ"
+      "R-KIE"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -395185,7 +395185,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-КӀЭ"
+      "R-KIE"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -395207,7 +395207,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-КӀЭ"
+      "R-KIE"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -395229,7 +395229,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-КӀЭ"
+      "R-KIE"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -395251,7 +395251,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-КӀЭ"
+      "R-KIE"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -395273,7 +395273,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-КӀЭ"
+      "R-KIE"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -395295,7 +395295,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-КӀЭ"
+      "R-KIE"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -395317,7 +395317,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-КӀЭ"
+      "R-KIE"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -395339,7 +395339,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-КӀЭ"
+      "R-KIE"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -395361,7 +395361,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-КӀЭ"
+      "R-KIE"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -415919,7 +415919,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ЛӀЫ"
+      "R-LIY"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -415944,7 +415944,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ЛӀЫ"
+      "R-LIY"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -415969,7 +415969,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ЛӀЫ"
+      "R-LIY"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -415994,7 +415994,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ЛӀЫ"
+      "R-LIY_1"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -416024,7 +416024,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ЛӀЫ"
+      "R-LIY"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -416049,7 +416049,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ЛӀЫ"
+      "R-LIY"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -416079,7 +416079,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ЛӀЫ"
+      "R-LIY"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -416104,7 +416104,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ЛӀЫ"
+      "R-LIY"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -416134,7 +416134,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ЛӀЫ"
+      "R-LIY"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -416160,7 +416160,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ЛӀЫ"
+      "R-LIY"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -416185,7 +416185,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ЛӀЫ"
+      "R-LIY"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -416211,7 +416211,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ЛӀЫ"
+      "R-LIY"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -416236,7 +416236,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ЛӀЫ"
+      "R-LIY"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -416261,7 +416261,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ЛӀЫ"
+      "R-LIY"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -416286,7 +416286,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ЛӀЫ"
+      "R-LIY"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -416311,7 +416311,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ЛӀЫ"
+      "R-LIY"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -416336,7 +416336,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ЛӀЫ"
+      "R-LIY"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -416362,7 +416362,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ЛӀЫ"
+      "R-LIY"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -416387,7 +416387,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ЛӀЫ"
+      "R-LIY"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -416412,7 +416412,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ЛӀЫ"
+      "R-LIY"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -420980,7 +420980,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-МЫВ"
+      "R-MYV"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -421007,7 +421007,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-МЫВ"
+      "R-MYV"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -421029,7 +421029,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-МЫВ"
+      "R-MYV"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -421051,7 +421051,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-МЫВ"
+      "R-MYV"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -421078,7 +421078,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-МЫВ"
+      "R-MYV"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -424669,7 +424669,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-NE"
+      "R-NEK"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -424694,7 +424694,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-NE"
+      "R-NEK"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -424719,7 +424719,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-NE"
+      "R-NEK"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -424744,7 +424744,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-NE"
+      "R-NEK"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -424769,7 +424769,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-NE"
+      "R-NEK"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -425074,7 +425074,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-NE"
+      "R-NEP"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -425099,7 +425099,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-NE"
+      "R-NEP"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -425374,7 +425374,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-NE"
+      "R-NEKH_1"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -425399,7 +425399,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-NE"
+      "R-NEKH_1"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -425424,7 +425424,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-NE"
+      "R-NEKH_1"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -425449,7 +425449,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-NE"
+      "R-NEKH_1"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -425474,7 +425474,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-NE"
+      "R-NEKH_1"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -425499,7 +425499,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-НЭХ"
+      "R-NEKH"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -425524,7 +425524,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-НЭХ"
+      "R-NEKH"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -425549,7 +425549,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-НЭХ"
+      "R-NEKH"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -425574,7 +425574,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-НЭХ"
+      "R-NEKH"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -425605,7 +425605,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-НЭХ"
+      "R-NEKH"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -425635,7 +425635,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-НЭХ"
+      "R-NEKH"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -425665,7 +425665,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-НЭХ"
+      "R-NEKH_2"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -425790,7 +425790,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-NE"
+      "R-NESHCH"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -425815,7 +425815,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-NE"
+      "R-NESHCH"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -425840,7 +425840,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-NE"
+      "R-NESHCH"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -425865,7 +425865,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-NE"
+      "R-NESHCH"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -425890,7 +425890,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-NE"
+      "R-NESHCH"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -425915,7 +425915,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json [BODY yanlis etiket temizlendi]",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-NE"
+      "R-NESHCH"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -426667,7 +426667,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-P1E"
+      "R-PIE"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -429038,7 +429038,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-PSY"
+      "R-PSY_1"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -429344,7 +429344,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ПСЭ1"
+      "R-PSE_2"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -429369,7 +429369,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ПСЭ1"
+      "R-PSE_2"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -429394,7 +429394,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ПСЭ1"
+      "R-PSE_2"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -429419,7 +429419,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ПСЭ1"
+      "R-PSE_2"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -429444,7 +429444,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ПСЭ1"
+      "R-PSE_4"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -429469,7 +429469,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ПСЭ1"
+      "R-PSE_4"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -429494,7 +429494,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ПСЭ"
+      "R-PSE_1"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -429519,7 +429519,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ПСЭ"
+      "R-PSE_1"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -429544,7 +429544,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ПСЭ"
+      "R-PSE_1"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -431138,7 +431138,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ПЩӀ"
+      "R-PSHCHI"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -431160,7 +431160,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ПЩӀ"
+      "R-PSHCHI"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -431292,7 +431292,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ПЩЫ1"
+      "R-PSHCHY_1"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -431319,7 +431319,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ПЩЫ"
+      "R-PSHCHY"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -431341,7 +431341,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ПЩЫ"
+      "R-PSHCHY"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -431363,7 +431363,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ПЩЫ"
+      "R-PSHCHY"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -431386,7 +431386,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ПЩЫ"
+      "R-PSHCHY"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -431408,7 +431408,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json | Orijinal: пщыхьэщхьэкӀэ(рэ)",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ПЩЫ"
+      "R-PSHCHY"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -431430,7 +431430,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ПЩЫ"
+      "R-PSHCHY"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -431452,7 +431452,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ПЩЫ"
+      "R-PSHCHY"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -431474,7 +431474,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ПЩЫ"
+      "R-PSHCHY"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -439908,7 +439908,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ТХЫ"
+      "R-TKHY"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -440010,7 +440010,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ТХЬ"
+      "R-TKH"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -440040,7 +440040,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ТХЬ"
+      "R-TKH"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -440070,7 +440070,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ТХЬ"
+      "R-TKH"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -440100,7 +440100,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ТХЬ"
+      "R-TKH"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -440125,7 +440125,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ТХЬ"
+      "R-TKH"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -440150,7 +440150,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ТХЬ"
+      "R-TKH"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -440175,7 +440175,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ТХЬ"
+      "R-TKH"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -440200,7 +440200,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ТХЬ"
+      "R-TKH"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -440252,7 +440252,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ТХЬ"
+      "R-TKH"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -440277,7 +440277,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ТХЬ"
+      "R-TKH"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -440302,7 +440302,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ТХЬ"
+      "R-TKH"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -440332,7 +440332,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ТХЬ"
+      "R-TKH"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -440357,7 +440357,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ТХЬ"
+      "R-TKH"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -440382,7 +440382,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ТХЬ"
+      "R-TKH"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -440407,7 +440407,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ТХЬ"
+      "R-TKH"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -440432,7 +440432,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ТХЬ"
+      "R-TKH"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -440457,7 +440457,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ТХЬ"
+      "R-TKH"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -440482,7 +440482,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ТХЬ"
+      "R-TKH_2"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -440637,7 +440637,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ТЭМ"
+      "R-TEM"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -442352,7 +442352,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-УЭЗ"
+      "R-UEZ"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -442374,7 +442374,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-УЭЗ"
+      "R-UEZ"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -442777,7 +442777,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-УЭЩ"
+      "R-UESHCH"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -442804,7 +442804,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-УЭЩ"
+      "R-UESHCH"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -442826,7 +442826,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-УЭЩ"
+      "R-UESHCH"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -443008,7 +443008,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ФӀЫ"
+      "R-FIY"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -443035,7 +443035,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ФӀЫ"
+      "R-FIY"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -443057,7 +443057,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ФӀЫ"
+      "R-FIY"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -443079,7 +443079,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ФӀЫ"
+      "R-FIY"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -443101,7 +443101,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ФӀЫ"
+      "R-FIY"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -443123,7 +443123,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ФӀЫ"
+      "R-FIY"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -443145,7 +443145,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ФӀЫ"
+      "R-FIY"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -443167,7 +443167,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ФӀЫ"
+      "R-FIY"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -443190,7 +443190,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ФӀЫ"
+      "R-FIY"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -444368,7 +444368,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-F"
+      "R-FIE"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -444395,7 +444395,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-F"
+      "R-FIE"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -444417,7 +444417,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-F"
+      "R-FIE"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -445527,7 +445527,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ХУА1"
+      "R-KHUA_1"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -445589,7 +445589,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ХУА"
+      "R-KHUA"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -454224,7 +454224,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ШЫ"
+      "R-SHY"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -454246,7 +454246,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ШЫ"
+      "R-SHY"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -454268,7 +454268,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ШЫ"
+      "R-SHY"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -454290,7 +454290,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ШЫ"
+      "R-SHY"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -454312,7 +454312,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ШЫ"
+      "R-SHY"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -454334,7 +454334,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ШЫ"
+      "R-SHY"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -454356,7 +454356,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ШЫ"
+      "R-SHY"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -454383,7 +454383,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ШЫ"
+      "R-SHY"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -454405,7 +454405,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ШЫ"
+      "R-SHY"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -454427,7 +454427,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ШЫ"
+      "R-SHY"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -454449,7 +454449,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ШЫ"
+      "R-SHY"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -454471,7 +454471,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ШЫ"
+      "R-SHY"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -454493,7 +454493,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ШЫ"
+      "R-SHY"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -454515,7 +454515,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ШЫ"
+      "R-SHY"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -454537,7 +454537,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ШЫ"
+      "R-SHY"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -454559,7 +454559,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ШЫ"
+      "R-SHY"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -454581,7 +454581,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ШЫ"
+      "R-SHY"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -454603,7 +454603,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ШЫ"
+      "R-SHY"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -454625,7 +454625,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ШЫ"
+      "R-SHY"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -454647,7 +454647,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ШЫ"
+      "R-SHY"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -454669,7 +454669,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ШЫ"
+      "R-SHY"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -454696,7 +454696,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ШЫ"
+      "R-SHY"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -454718,7 +454718,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ШЫ"
+      "R-SHY"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -454740,7 +454740,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ШЫ"
+      "R-SHY"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -454762,7 +454762,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ШЫ"
+      "R-SHY"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -454784,7 +454784,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ШЫ"
+      "R-SHY"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -454806,7 +454806,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ШЫ"
+      "R-SHY"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -454828,7 +454828,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ШЫ"
+      "R-SHY"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -454851,7 +454851,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ШЫ"
+      "R-SHY"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -454873,7 +454873,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ШЫ"
+      "R-SHY"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -454895,7 +454895,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ШЫ"
+      "R-SHY"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -454917,7 +454917,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ШЫ"
+      "R-SHY"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -454939,7 +454939,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ШЫ"
+      "R-SHY"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -454961,7 +454961,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ШЫ"
+      "R-SHY"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -454983,7 +454983,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ШЫ"
+      "R-SHY"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -455005,7 +455005,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ШЫ"
+      "R-SHY"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -455027,7 +455027,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ШЫ"
+      "R-SHY"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -455049,7 +455049,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ШЫ"
+      "R-SHY"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -455071,7 +455071,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ШЫ"
+      "R-SHY"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -455093,7 +455093,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ШЫ"
+      "R-SHY"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -455115,7 +455115,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ШЫ"
+      "R-SHY"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -455137,7 +455137,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ШЫ"
+      "R-SHY"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -455159,7 +455159,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ШЫ"
+      "R-SHY"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -455181,7 +455181,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ШЫ"
+      "R-SHY"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -455203,7 +455203,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ШЫ"
+      "R-SHY"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -455225,7 +455225,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ШЫ"
+      "R-SHY"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -455247,7 +455247,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ШЫ"
+      "R-SHY"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -455269,7 +455269,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ШЫ"
+      "R-SHY"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -456099,7 +456099,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ЩӀА"
+      "R-SHCHIA"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -456186,7 +456186,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ЩӀА1"
+      "R-SHCHIA_1"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -456208,7 +456208,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ЩӀА1"
+      "R-SHCHIA_1"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -456230,7 +456230,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ЩӀА1"
+      "R-SHCHIA_1"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -456646,7 +456646,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ЩӀЫ1"
+      "R-SHCHIY_1"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -456668,7 +456668,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ЩӀЫ1"
+      "R-SHCHIY_1"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -456690,7 +456690,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ЩӀЫ1"
+      "R-SHCHIY_1"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -456712,7 +456712,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ЩӀЫ1"
+      "R-SHCHIY_1"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -456734,7 +456734,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ЩӀЫ1"
+      "R-SHCHIY_1"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -463752,7 +463752,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-SHHYE"
+      "R-SHCHKH"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -466388,7 +466388,7 @@
     "notes": "KBD sozluk: 5.Ady-Rus_Qarden.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-NE"
+      "R-NESHCH"
     ],
     "wordFamilyId": null,
     "derivation": null,
@@ -468225,7 +468225,7 @@
     "notes": "KBD sozluk: 25.Rus-Ady_UASP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-ИН"
+      "R-IN"
     ],
     "wordFamilyId": null,
     "derivation": null,
