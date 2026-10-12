@@ -15,7 +15,7 @@ mevcut_ids = {r["id"] for r in mevcut_roots if "id" in r}
 print(f"Mevcut form: {len(mevcut_forms)}")
 print(f"Mevcut ID: {len(mevcut_ids)}")
 
-csv_path = BASE / "_scripts/root_adaylari_full.csv"
+csv_path = BASE / "_scripts/root_adaylari_full2.csv"
 
 yeni_adaylar = []
 if csv_path.exists():
