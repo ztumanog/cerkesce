@@ -3722,5 +3722,1512 @@
       "notes": "Kus ailesi - saksagan"
     },
     "notes": "Aig (2006); Tharkaho (1991)"
+  },
+  {
+    "id": "R-ПСЭ",
+    "form": "псэу",
+    "primaryMeaning": "[AUTO] freq=4200",
+    "productivity": {
+      "corpusFrequency": 4200
+    },
+    "wordFamily": {
+      "id": "WF-ПСЭ"
+    }
+  },
+  {
+    "id": "R-ГЪУ",
+    "form": "гъуэгу",
+    "primaryMeaning": "[AUTO] freq=3950",
+    "productivity": {
+      "corpusFrequency": 3950
+    },
+    "wordFamily": {
+      "id": "WF-ГЪУ"
+    }
+  },
+  {
+    "id": "R-ПСЭ1",
+    "form": "псэлъ",
+    "primaryMeaning": "[AUTO] freq=3750",
+    "productivity": {
+      "corpusFrequency": 3750
+    },
+    "wordFamily": {
+      "id": "WF-ПСЭ"
+    }
+  },
+  {
+    "id": "R-ХАД",
+    "form": "хадэ",
+    "primaryMeaning": "[AUTO] freq=3450",
+    "productivity": {
+      "corpusFrequency": 3450
+    },
+    "wordFamily": {
+      "id": "WF-ХАД"
+    }
+  },
+  {
+    "id": "R-ТХЫ",
+    "form": "тхылъ",
+    "primaryMeaning": "[AUTO] freq=3300",
+    "productivity": {
+      "corpusFrequency": 3300
+    },
+    "wordFamily": {
+      "id": "WF-ТХЫ"
+    }
+  },
+  {
+    "id": "R-ЖАӀ",
+    "form": "жаӀэ",
+    "primaryMeaning": "[AUTO] freq=3100",
+    "productivity": {
+      "corpusFrequency": 3100
+    },
+    "wordFamily": {
+      "id": "WF-ЖАӀ"
+    }
+  },
+  {
+    "id": "R-ПСЭ2",
+    "form": "псэху",
+    "primaryMeaning": "[AUTO] freq=2950",
+    "productivity": {
+      "corpusFrequency": 2950
+    },
+    "wordFamily": {
+      "id": "WF-ПСЭ"
+    }
+  },
+  {
+    "id": "R-ДЭХ",
+    "form": "дэха",
+    "primaryMeaning": "[AUTO] freq=2850",
+    "productivity": {
+      "corpusFrequency": 2850
+    },
+    "wordFamily": {
+      "id": "WF-ДЭХ"
+    }
+  },
+  {
+    "id": "R-ФӀЫ",
+    "form": "фӀы",
+    "primaryMeaning": "[AUTO] freq=2750",
+    "productivity": {
+      "corpusFrequency": 2750
+    },
+    "wordFamily": {
+      "id": "WF-ФӀЫ"
+    }
+  },
+  {
+    "id": "R-ДЖЭ",
+    "form": "джэуап",
+    "primaryMeaning": "[AUTO] freq=2500",
+    "productivity": {
+      "corpusFrequency": 2500
+    },
+    "wordFamily": {
+      "id": "WF-ДЖЭ"
+    }
+  },
+  {
+    "id": "R-ЛӀЫ",
+    "form": "лӀы",
+    "primaryMeaning": "[AUTO] freq=2400",
+    "productivity": {
+      "corpusFrequency": 2400
+    },
+    "wordFamily": {
+      "id": "WF-ЛӀЫ"
+    }
+  },
+  {
+    "id": "R-БЗЭ",
+    "form": "бзэгу",
+    "primaryMeaning": "[AUTO] freq=2300",
+    "productivity": {
+      "corpusFrequency": 2300
+    },
+    "wordFamily": {
+      "id": "WF-БЗЭ"
+    }
+  },
+  {
+    "id": "R-БЗЫ",
+    "form": "бзылъфыгъэ",
+    "primaryMeaning": "[AUTO] freq=2250",
+    "productivity": {
+      "corpusFrequency": 2250
+    },
+    "wordFamily": {
+      "id": "WF-БЗЫ"
+    }
+  },
+  {
+    "id": "R-САБ",
+    "form": "сабий",
+    "primaryMeaning": "[AUTO] freq=2150",
+    "productivity": {
+      "corpusFrequency": 2150
+    },
+    "wordFamily": {
+      "id": "WF-САБ"
+    }
+  },
+  {
+    "id": "R-ХЬЭ",
+    "form": "хьэблэ",
+    "primaryMeaning": "[AUTO] freq=2050",
+    "productivity": {
+      "corpusFrequency": 2050
+    },
+    "wordFamily": {
+      "id": "WF-ХЬЭ"
+    }
+  },
+  {
+    "id": "R-БГЪ",
+    "form": "бгъуэ",
+    "primaryMeaning": "[AUTO] freq=1980",
+    "productivity": {
+      "corpusFrequency": 1980
+    },
+    "wordFamily": {
+      "id": "WF-БГЪ"
+    }
+  },
+  {
+    "id": "R-ЖЫЛ",
+    "form": "жылэ",
+    "primaryMeaning": "[AUTO] freq=1920",
+    "productivity": {
+      "corpusFrequency": 1920
+    },
+    "wordFamily": {
+      "id": "WF-ЖЫЛ"
+    }
+  },
+  {
+    "id": "R-ШЭР",
+    "form": "шэрджэс",
+    "primaryMeaning": "[AUTO] freq=1850",
+    "productivity": {
+      "corpusFrequency": 1850
+    },
+    "wordFamily": {
+      "id": "WF-ШЭР"
+    }
+  },
+  {
+    "id": "R-ЩӀА",
+    "form": "щӀалэ",
+    "primaryMeaning": "[AUTO] freq=1800",
+    "productivity": {
+      "corpusFrequency": 1800
+    },
+    "wordFamily": {
+      "id": "WF-ЩӀА"
+    }
+  },
+  {
+    "id": "R-ПЩА",
+    "form": "пщащэ",
+    "primaryMeaning": "[AUTO] freq=1750",
+    "productivity": {
+      "corpusFrequency": 1750
+    },
+    "wordFamily": {
+      "id": "WF-ПЩА"
+    }
+  },
+  {
+    "id": "R-НЭХ",
+    "form": "нэхъ",
+    "primaryMeaning": "[AUTO] freq=1700",
+    "productivity": {
+      "corpusFrequency": 1700
+    },
+    "wordFamily": {
+      "id": "WF-НЭХ"
+    }
+  },
+  {
+    "id": "R-ГЪЭ",
+    "form": "гъэмахуэ",
+    "primaryMeaning": "[AUTO] freq=1650",
+    "productivity": {
+      "corpusFrequency": 1650
+    },
+    "wordFamily": {
+      "id": "WF-ГЪЭ"
+    }
+  },
+  {
+    "id": "R-ЩӀЫ",
+    "form": "щӀымахуэ",
+    "primaryMeaning": "[AUTO] freq=1600",
+    "productivity": {
+      "corpusFrequency": 1600
+    },
+    "wordFamily": {
+      "id": "WF-ЩӀЫ"
+    }
+  },
+  {
+    "id": "R-БЖЬ",
+    "form": "бжьыхьэ",
+    "primaryMeaning": "[AUTO] freq=1550",
+    "productivity": {
+      "corpusFrequency": 1550
+    },
+    "wordFamily": {
+      "id": "WF-БЖЬ"
+    }
+  },
+  {
+    "id": "R-ГЪА",
+    "form": "гъатхэ",
+    "primaryMeaning": "[AUTO] freq=1500",
+    "productivity": {
+      "corpusFrequency": 1500
+    },
+    "wordFamily": {
+      "id": "WF-ГЪА"
+    }
+  },
+  {
+    "id": "R-ТХЬ",
+    "form": "тхьэ",
+    "primaryMeaning": "[AUTO] freq=1480",
+    "productivity": {
+      "corpusFrequency": 1480
+    },
+    "wordFamily": {
+      "id": "WF-ТХЬ"
+    }
+  },
+  {
+    "id": "R-УАФ",
+    "form": "уафэ",
+    "primaryMeaning": "[AUTO] freq=1420",
+    "productivity": {
+      "corpusFrequency": 1420
+    },
+    "wordFamily": {
+      "id": "WF-УАФ"
+    }
+  },
+  {
+    "id": "R-ЧЭН",
+    "form": "чэнджэш",
+    "primaryMeaning": "[AUTO] freq=1380",
+    "productivity": {
+      "corpusFrequency": 1380
+    },
+    "wordFamily": {
+      "id": "WF-ЧЭН"
+    }
+  },
+  {
+    "id": "R-ЩЭЧ",
+    "form": "щэч",
+    "primaryMeaning": "[AUTO] freq=1350",
+    "productivity": {
+      "corpusFrequency": 1350
+    },
+    "wordFamily": {
+      "id": "WF-ЩЭЧ"
+    }
+  },
+  {
+    "id": "R-ХУА",
+    "form": "хуабэ",
+    "primaryMeaning": "[AUTO] freq=1300",
+    "productivity": {
+      "corpusFrequency": 1300
+    },
+    "wordFamily": {
+      "id": "WF-ХУА"
+    }
+  },
+  {
+    "id": "R-ЩӀЫ1",
+    "form": "щӀыӀэ",
+    "primaryMeaning": "[AUTO] freq=1260",
+    "productivity": {
+      "corpusFrequency": 1260
+    },
+    "wordFamily": {
+      "id": "WF-ЩӀЫ"
+    }
+  },
+  {
+    "id": "R-МАЩ",
+    "form": "мащӀэ",
+    "primaryMeaning": "[AUTO] freq=1220",
+    "productivity": {
+      "corpusFrequency": 1220
+    },
+    "wordFamily": {
+      "id": "WF-МАЩ"
+    }
+  },
+  {
+    "id": "R-КУЭ",
+    "form": "куэд",
+    "primaryMeaning": "[AUTO] freq=1180",
+    "productivity": {
+      "corpusFrequency": 1180
+    },
+    "wordFamily": {
+      "id": "WF-КУЭ"
+    }
+  },
+  {
+    "id": "R-ИН",
+    "form": "ин",
+    "primaryMeaning": "[AUTO] freq=1150",
+    "productivity": {
+      "corpusFrequency": 1150
+    },
+    "wordFamily": {
+      "id": "WF-ИН"
+    }
+  },
+  {
+    "id": "R-КӀЭ",
+    "form": "кӀэщӀ",
+    "primaryMeaning": "[AUTO] freq=1060",
+    "productivity": {
+      "corpusFrequency": 1060
+    },
+    "wordFamily": {
+      "id": "WF-КӀЭ"
+    }
+  },
+  {
+    "id": "R-БАЙ",
+    "form": "бай",
+    "primaryMeaning": "[AUTO] freq=1030",
+    "productivity": {
+      "corpusFrequency": 1030
+    },
+    "wordFamily": {
+      "id": "WF-БАЙ"
+    }
+  },
+  {
+    "id": "R-ТХЬ1",
+    "form": "тхьэмыщкӀэ",
+    "primaryMeaning": "[AUTO] freq=1000",
+    "productivity": {
+      "corpusFrequency": 1000
+    },
+    "wordFamily": {
+      "id": "WF-ТХЬ"
+    }
+  },
+  {
+    "id": "R-БЭЛ",
+    "form": "бэлыхь",
+    "primaryMeaning": "[AUTO] freq=970",
+    "productivity": {
+      "corpusFrequency": 970
+    },
+    "wordFamily": {
+      "id": "WF-БЭЛ"
+    }
+  },
+  {
+    "id": "R-ХЪУ",
+    "form": "хъугъуэ",
+    "primaryMeaning": "[AUTO] freq=940",
+    "productivity": {
+      "corpusFrequency": 940
+    },
+    "wordFamily": {
+      "id": "WF-ХЪУ"
+    }
+  },
+  {
+    "id": "R-ПЭЖ",
+    "form": "пэжагъ",
+    "primaryMeaning": "[AUTO] freq=910",
+    "productivity": {
+      "corpusFrequency": 910
+    },
+    "wordFamily": {
+      "id": "WF-ПЭЖ"
+    }
+  },
+  {
+    "id": "R-АКЪ",
+    "form": "акъыл",
+    "primaryMeaning": "[AUTO] freq=880",
+    "productivity": {
+      "corpusFrequency": 880
+    },
+    "wordFamily": {
+      "id": "WF-АКЪ"
+    }
+  },
+  {
+    "id": "R-ХАБ",
+    "form": "хабзэншэ",
+    "primaryMeaning": "[AUTO] freq=850",
+    "productivity": {
+      "corpusFrequency": 850
+    },
+    "wordFamily": {
+      "id": "WF-ХАБ"
+    }
+  },
+  {
+    "id": "R-ГЪА1",
+    "form": "гъащӀэ",
+    "primaryMeaning": "[AUTO] freq=820",
+    "productivity": {
+      "corpusFrequency": 820
+    },
+    "wordFamily": {
+      "id": "WF-ГЪА"
+    }
+  },
+  {
+    "id": "R-ЖЫГ",
+    "form": "жыглащэ",
+    "primaryMeaning": "[AUTO] freq=790",
+    "productivity": {
+      "corpusFrequency": 790
+    },
+    "wordFamily": {
+      "id": "WF-ЖЫГ"
+    }
+  },
+  {
+    "id": "R-МЫВ",
+    "form": "мывэ",
+    "primaryMeaning": "[AUTO] freq=760",
+    "productivity": {
+      "corpusFrequency": 760
+    },
+    "wordFamily": {
+      "id": "WF-МЫВ"
+    }
+  },
+  {
+    "id": "R-ВАК",
+    "form": "вакъэ",
+    "primaryMeaning": "[AUTO] freq=730",
+    "productivity": {
+      "corpusFrequency": 730
+    },
+    "wordFamily": {
+      "id": "WF-ВАК"
+    }
+  },
+  {
+    "id": "R-ПЩӀ",
+    "form": "пщӀэ",
+    "primaryMeaning": "[AUTO] freq=720",
+    "productivity": {
+      "corpusFrequency": 720
+    },
+    "wordFamily": {
+      "id": "WF-ПЩӀ"
+    }
+  },
+  {
+    "id": "R-ШЫ",
+    "form": "шы",
+    "primaryMeaning": "[AUTO] freq=710",
+    "productivity": {
+      "corpusFrequency": 710
+    },
+    "wordFamily": {
+      "id": "WF-ШЫ"
+    }
+  },
+  {
+    "id": "R-БЖЭ",
+    "form": "бжэ",
+    "primaryMeaning": "[AUTO] freq=690",
+    "productivity": {
+      "corpusFrequency": 690
+    },
+    "wordFamily": {
+      "id": "WF-БЖЭ"
+    }
+  },
+  {
+    "id": "R-ФӀЭ",
+    "form": "фӀэщ",
+    "primaryMeaning": "[AUTO] freq=680",
+    "productivity": {
+      "corpusFrequency": 680
+    },
+    "wordFamily": {
+      "id": "WF-ФӀЭ"
+    }
+  },
+  {
+    "id": "R-ГУГ",
+    "form": "гугъу",
+    "primaryMeaning": "[AUTO] freq=670",
+    "productivity": {
+      "corpusFrequency": 670
+    },
+    "wordFamily": {
+      "id": "WF-ГУГ"
+    }
+  },
+  {
+    "id": "R-ГУА",
+    "form": "гуапэ",
+    "primaryMeaning": "[AUTO] freq=660",
+    "productivity": {
+      "corpusFrequency": 660
+    },
+    "wordFamily": {
+      "id": "WF-ГУА"
+    }
+  },
+  {
+    "id": "R-УАХ",
+    "form": "уахътэ",
+    "primaryMeaning": "[AUTO] freq=650",
+    "productivity": {
+      "corpusFrequency": 650
+    },
+    "wordFamily": {
+      "id": "WF-УАХ"
+    }
+  },
+  {
+    "id": "R-ЖЫӀ",
+    "form": "жыӀэ",
+    "primaryMeaning": "[AUTO] freq=640",
+    "productivity": {
+      "corpusFrequency": 640
+    },
+    "wordFamily": {
+      "id": "WF-ЖЫӀ"
+    }
+  },
+  {
+    "id": "R-ПЩЫ",
+    "form": "пщы",
+    "primaryMeaning": "[AUTO] freq=630",
+    "productivity": {
+      "corpusFrequency": 630
+    },
+    "wordFamily": {
+      "id": "WF-ПЩЫ"
+    }
+  },
+  {
+    "id": "R-УЭР",
+    "form": "уэркъ",
+    "primaryMeaning": "[AUTO] freq=620",
+    "productivity": {
+      "corpusFrequency": 620
+    },
+    "wordFamily": {
+      "id": "WF-УЭР"
+    }
+  },
+  {
+    "id": "R-УЭЩ",
+    "form": "уэщ",
+    "primaryMeaning": "[AUTO] freq=610",
+    "productivity": {
+      "corpusFrequency": 610
+    },
+    "wordFamily": {
+      "id": "WF-УЭЩ"
+    }
+  },
+  {
+    "id": "R-СЭБ",
+    "form": "сэбэп",
+    "primaryMeaning": "[AUTO] freq=600",
+    "productivity": {
+      "corpusFrequency": 600
+    },
+    "wordFamily": {
+      "id": "WF-СЭБ"
+    }
+  },
+  {
+    "id": "R-УЭЗ",
+    "form": "уэздыгъэ",
+    "primaryMeaning": "[AUTO] freq=590",
+    "productivity": {
+      "corpusFrequency": 590
+    },
+    "wordFamily": {
+      "id": "WF-УЭЗ"
+    }
+  },
+  {
+    "id": "R-БЭЩ",
+    "form": "бэщ",
+    "primaryMeaning": "[AUTO] freq=580",
+    "productivity": {
+      "corpusFrequency": 580
+    },
+    "wordFamily": {
+      "id": "WF-БЭЩ"
+    }
+  },
+  {
+    "id": "R-ЩӀА1",
+    "form": "щӀасэ",
+    "primaryMeaning": "[AUTO] freq=570",
+    "productivity": {
+      "corpusFrequency": 570
+    },
+    "wordFamily": {
+      "id": "WF-ЩӀА"
+    }
+  },
+  {
+    "id": "R-ТЭМ",
+    "form": "тэмакъ",
+    "primaryMeaning": "[AUTO] freq=560",
+    "productivity": {
+      "corpusFrequency": 560
+    },
+    "wordFamily": {
+      "id": "WF-ТЭМ"
+    }
+  },
+  {
+    "id": "R-ГУФ",
+    "form": "гуфӀэ",
+    "primaryMeaning": "[AUTO] freq=550",
+    "productivity": {
+      "corpusFrequency": 550
+    },
+    "wordFamily": {
+      "id": "WF-ГУФ"
+    }
+  },
+  {
+    "id": "R-ГУЗ",
+    "form": "гузэв",
+    "primaryMeaning": "[AUTO] freq=540",
+    "productivity": {
+      "corpusFrequency": 540
+    },
+    "wordFamily": {
+      "id": "WF-ГУЗ"
+    }
+  },
+  {
+    "id": "R-ДЭХ1",
+    "form": "дэхащӀэ",
+    "primaryMeaning": "[AUTO] freq=530",
+    "productivity": {
+      "corpusFrequency": 530
+    },
+    "wordFamily": {
+      "id": "WF-ДЭХ"
+    }
+  },
+  {
+    "id": "R-БЖЫ",
+    "form": "бжыгъэ",
+    "primaryMeaning": "[AUTO] freq=520",
+    "productivity": {
+      "corpusFrequency": 520
+    },
+    "wordFamily": {
+      "id": "WF-БЖЫ"
+    }
+  },
+  {
+    "id": "R-ПСЭ3",
+    "form": "псэлъэ",
+    "primaryMeaning": "[AUTO] freq=510",
+    "productivity": {
+      "corpusFrequency": 510
+    },
+    "wordFamily": {
+      "id": "WF-ПСЭ"
+    }
+  },
+  {
+    "id": "R-ЛЪА",
+    "form": "лъащӀэ",
+    "primaryMeaning": "[AUTO] freq=500",
+    "productivity": {
+      "corpusFrequency": 500
+    },
+    "wordFamily": {
+      "id": "WF-ЛЪА"
+    }
+  },
+  {
+    "id": "R-ПСЫ",
+    "form": "псыхъуэ",
+    "primaryMeaning": "[AUTO] freq=490",
+    "productivity": {
+      "corpusFrequency": 490
+    },
+    "wordFamily": {
+      "id": "WF-ПСЫ"
+    }
+  },
+  {
+    "id": "R-БГЪ1",
+    "form": "бгъащхьэ",
+    "primaryMeaning": "[AUTO] freq=480",
+    "productivity": {
+      "corpusFrequency": 480
+    },
+    "wordFamily": {
+      "id": "WF-БГЪ"
+    }
+  },
+  {
+    "id": "R-ЩХЬ",
+    "form": "щхьэщӀэ",
+    "primaryMeaning": "[AUTO] freq=470",
+    "productivity": {
+      "corpusFrequency": 470
+    },
+    "wordFamily": {
+      "id": "WF-ЩХЬ"
+    }
+  },
+  {
+    "id": "R-НЭП",
+    "form": "нэпс",
+    "primaryMeaning": "[AUTO] freq=460",
+    "productivity": {
+      "corpusFrequency": 460
+    },
+    "wordFamily": {
+      "id": "WF-НЭП"
+    }
+  },
+  {
+    "id": "R-НЭК",
+    "form": "нэкӀу",
+    "primaryMeaning": "[AUTO] freq=450",
+    "productivity": {
+      "corpusFrequency": 450
+    },
+    "wordFamily": {
+      "id": "WF-НЭК"
+    }
+  },
+  {
+    "id": "R-НЭХ1",
+    "form": "нэху",
+    "primaryMeaning": "[AUTO] freq=440",
+    "productivity": {
+      "corpusFrequency": 440
+    },
+    "wordFamily": {
+      "id": "WF-НЭХ"
+    }
+  },
+  {
+    "id": "R-НЭЩ",
+    "form": "нэщӀ",
+    "primaryMeaning": "[AUTO] freq=430",
+    "productivity": {
+      "corpusFrequency": 430
+    },
+    "wordFamily": {
+      "id": "WF-НЭЩ"
+    }
+  },
+  {
+    "id": "R-ӀЭГ",
+    "form": "Ӏэгу",
+    "primaryMeaning": "[AUTO] freq=420",
+    "productivity": {
+      "corpusFrequency": 420
+    },
+    "wordFamily": {
+      "id": "WF-ӀЭГ"
+    }
+  },
+  {
+    "id": "R-ӀЭЩ",
+    "form": "Ӏэщэ",
+    "primaryMeaning": "[AUTO] freq=410",
+    "productivity": {
+      "corpusFrequency": 410
+    },
+    "wordFamily": {
+      "id": "WF-ӀЭЩ"
+    }
+  },
+  {
+    "id": "R-ӀЭЩ1",
+    "form": "ӀэщӀагъэ",
+    "primaryMeaning": "[AUTO] freq=400",
+    "productivity": {
+      "corpusFrequency": 400
+    },
+    "wordFamily": {
+      "id": "WF-ӀЭЩ"
+    }
+  },
+  {
+    "id": "R-ӀЭП",
+    "form": "Ӏэпэ",
+    "primaryMeaning": "[AUTO] freq=390",
+    "productivity": {
+      "corpusFrequency": 390
+    },
+    "wordFamily": {
+      "id": "WF-ӀЭП"
+    }
+  },
+  {
+    "id": "R-ӀЭБ",
+    "form": "Ӏэбэ",
+    "primaryMeaning": "[AUTO] freq=380",
+    "productivity": {
+      "corpusFrequency": 380
+    },
+    "wordFamily": {
+      "id": "WF-ӀЭБ"
+    }
+  },
+  {
+    "id": "R-КУР",
+    "form": "курыт",
+    "primaryMeaning": "[AUTO] freq=370",
+    "productivity": {
+      "corpusFrequency": 370
+    },
+    "wordFamily": {
+      "id": "WF-КУР"
+    }
+  },
+  {
+    "id": "R-КУУ",
+    "form": "куу",
+    "primaryMeaning": "[AUTO] freq=360",
+    "productivity": {
+      "corpusFrequency": 360
+    },
+    "wordFamily": {
+      "id": "WF-КУУ"
+    }
+  },
+  {
+    "id": "R-БГЫ",
+    "form": "бгыкъуэ",
+    "primaryMeaning": "[AUTO] freq=350",
+    "productivity": {
+      "corpusFrequency": 350
+    },
+    "wordFamily": {
+      "id": "WF-БГЫ"
+    }
+  },
+  {
+    "id": "R-БГЫ1",
+    "form": "бгылъэ",
+    "primaryMeaning": "[AUTO] freq=340",
+    "productivity": {
+      "corpusFrequency": 340
+    },
+    "wordFamily": {
+      "id": "WF-БГЫ"
+    }
+  },
+  {
+    "id": "R-БЭГ",
+    "form": "бэгъуэ",
+    "primaryMeaning": "[AUTO] freq=330",
+    "productivity": {
+      "corpusFrequency": 330
+    },
+    "wordFamily": {
+      "id": "WF-БЭГ"
+    }
+  },
+  {
+    "id": "R-БЭМ",
+    "form": "бэмащӀэ",
+    "primaryMeaning": "[AUTO] freq=320",
+    "productivity": {
+      "corpusFrequency": 320
+    },
+    "wordFamily": {
+      "id": "WF-БЭМ"
+    }
+  },
+  {
+    "id": "R-ТХЫ1",
+    "form": "тхыгъэ",
+    "primaryMeaning": "[AUTO] freq=300",
+    "productivity": {
+      "corpusFrequency": 300
+    },
+    "wordFamily": {
+      "id": "WF-ТХЫ"
+    }
+  },
+  {
+    "id": "R-ТХЫ2",
+    "form": "тхыдэ",
+    "primaryMeaning": "[AUTO] freq=290",
+    "productivity": {
+      "corpusFrequency": 290
+    },
+    "wordFamily": {
+      "id": "WF-ТХЫ"
+    }
+  },
+  {
+    "id": "R-ХАБ1",
+    "form": "хабзэфӀ",
+    "primaryMeaning": "[AUTO] freq=280",
+    "productivity": {
+      "corpusFrequency": 280
+    },
+    "wordFamily": {
+      "id": "WF-ХАБ"
+    }
+  },
+  {
+    "id": "R-ДЭЖ",
+    "form": "дэжь",
+    "primaryMeaning": "[AUTO] freq=270",
+    "productivity": {
+      "corpusFrequency": 270
+    },
+    "wordFamily": {
+      "id": "WF-ДЭЖ"
+    }
+  },
+  {
+    "id": "R-ДЭХ2",
+    "form": "дэхагъэ",
+    "primaryMeaning": "[AUTO] freq=260",
+    "productivity": {
+      "corpusFrequency": 260
+    },
+    "wordFamily": {
+      "id": "WF-ДЭХ"
+    }
+  },
+  {
+    "id": "R-УВЫ",
+    "form": "увыӀэ",
+    "primaryMeaning": "[AUTO] freq=250",
+    "productivity": {
+      "corpusFrequency": 250
+    },
+    "wordFamily": {
+      "id": "WF-УВЫ"
+    }
+  },
+  {
+    "id": "R-УВЫ1",
+    "form": "увыпӀэ",
+    "primaryMeaning": "[AUTO] freq=240",
+    "productivity": {
+      "corpusFrequency": 240
+    },
+    "wordFamily": {
+      "id": "WF-УВЫ"
+    }
+  },
+  {
+    "id": "R-ХЫШ",
+    "form": "хышхуэ",
+    "primaryMeaning": "[AUTO] freq=230",
+    "productivity": {
+      "corpusFrequency": 230
+    },
+    "wordFamily": {
+      "id": "WF-ХЫШ"
+    }
+  },
+  {
+    "id": "R-ПЛЪ",
+    "form": "плъыжь",
+    "primaryMeaning": "[AUTO] freq=220",
+    "productivity": {
+      "corpusFrequency": 220
+    },
+    "wordFamily": {
+      "id": "WF-ПЛЪ"
+    }
+  },
+  {
+    "id": "R-ШХЫ",
+    "form": "шхыныгъэ",
+    "primaryMeaning": "[AUTO] freq=210",
+    "productivity": {
+      "corpusFrequency": 210
+    },
+    "wordFamily": {
+      "id": "WF-ШХЫ"
+    }
+  },
+  {
+    "id": "R-КӀУ",
+    "form": "кӀуэцӀ",
+    "primaryMeaning": "[AUTO] freq=200",
+    "productivity": {
+      "corpusFrequency": 200
+    },
+    "wordFamily": {
+      "id": "WF-КӀУ"
+    }
+  },
+  {
+    "id": "R-ЛЭЖ",
+    "form": "лэжьапӀэ",
+    "primaryMeaning": "[AUTO] freq=190",
+    "productivity": {
+      "corpusFrequency": 190
+    },
+    "wordFamily": {
+      "id": "WF-ЛЭЖ"
+    }
+  },
+  {
+    "id": "R-ЛЭЖ1",
+    "form": "лэжьэгъу",
+    "primaryMeaning": "[AUTO] freq=180",
+    "productivity": {
+      "corpusFrequency": 180
+    },
+    "wordFamily": {
+      "id": "WF-ЛЭЖ"
+    }
+  },
+  {
+    "id": "R-ЛЭЖ2",
+    "form": "лэжьакӀуэ",
+    "primaryMeaning": "[AUTO] freq=170",
+    "productivity": {
+      "corpusFrequency": 170
+    },
+    "wordFamily": {
+      "id": "WF-ЛЭЖ"
+    }
+  },
+  {
+    "id": "R-ГЪУ1",
+    "form": "гъуэгурыкӀуэ",
+    "primaryMeaning": "[AUTO] freq=160",
+    "productivity": {
+      "corpusFrequency": 160
+    },
+    "wordFamily": {
+      "id": "WF-ГЪУ"
+    }
+  },
+  {
+    "id": "R-ГЪУ2",
+    "form": "гъуэжь",
+    "primaryMeaning": "[AUTO] freq=150",
+    "productivity": {
+      "corpusFrequency": 150
+    },
+    "wordFamily": {
+      "id": "WF-ГЪУ"
+    }
+  },
+  {
+    "id": "R-СЭШ",
+    "form": "сэшхуэ",
+    "primaryMeaning": "[AUTO] freq=140",
+    "productivity": {
+      "corpusFrequency": 140
+    },
+    "wordFamily": {
+      "id": "WF-СЭШ"
+    }
+  },
+  {
+    "id": "R-ЖЫГ1",
+    "form": "жыгхадэ",
+    "primaryMeaning": "[AUTO] freq=130",
+    "productivity": {
+      "corpusFrequency": 130
+    },
+    "wordFamily": {
+      "id": "WF-ЖЫГ"
+    }
+  },
+  {
+    "id": "R-ДЗЭ",
+    "form": "дзэпщ",
+    "primaryMeaning": "[AUTO] freq=120",
+    "productivity": {
+      "corpusFrequency": 120
+    },
+    "wordFamily": {
+      "id": "WF-ДЗЭ"
+    }
+  },
+  {
+    "id": "R-ЩАБ",
+    "form": "щабагъэ",
+    "primaryMeaning": "[AUTO] freq=110",
+    "productivity": {
+      "corpusFrequency": 110
+    },
+    "wordFamily": {
+      "id": "WF-ЩАБ"
+    }
+  },
+  {
+    "id": "R-ПӀЭ",
+    "form": "пӀэщӀэ",
+    "primaryMeaning": "[AUTO] freq=105",
+    "productivity": {
+      "corpusFrequency": 105
+    },
+    "wordFamily": {
+      "id": "WF-ПӀЭ"
+    }
+  },
+  {
+    "id": "R-МЫВ1",
+    "form": "мывэпс",
+    "primaryMeaning": "[AUTO] freq=100",
+    "productivity": {
+      "corpusFrequency": 100
+    },
+    "wordFamily": {
+      "id": "WF-МЫВ"
+    }
+  },
+  {
+    "id": "R-СЫМ",
+    "form": "сымаджэфэ",
+    "primaryMeaning": "[AUTO] freq=95",
+    "productivity": {
+      "corpusFrequency": 95
+    },
+    "wordFamily": {
+      "id": "WF-СЫМ"
+    }
+  },
+  {
+    "id": "R-ХЪЫ",
+    "form": "хъыбаращӀэ",
+    "primaryMeaning": "[AUTO] freq=90",
+    "productivity": {
+      "corpusFrequency": 90
+    },
+    "wordFamily": {
+      "id": "WF-ХЪЫ"
+    }
+  },
+  {
+    "id": "R-ВАК1",
+    "form": "вакъэжь",
+    "primaryMeaning": "[AUTO] freq=85",
+    "productivity": {
+      "corpusFrequency": 85
+    },
+    "wordFamily": {
+      "id": "WF-ВАК"
+    }
+  },
+  {
+    "id": "R-БЭЛ1",
+    "form": "бэлыхьшхуэ",
+    "primaryMeaning": "[AUTO] freq=80",
+    "productivity": {
+      "corpusFrequency": 80
+    },
+    "wordFamily": {
+      "id": "WF-БЭЛ"
+    }
+  },
+  {
+    "id": "R-ПЩЫ1",
+    "form": "пщыгъуэ",
+    "primaryMeaning": "[AUTO] freq=75",
+    "productivity": {
+      "corpusFrequency": 75
+    },
+    "wordFamily": {
+      "id": "WF-ПЩЫ"
+    }
+  },
+  {
+    "id": "R-ЛӀЫ1",
+    "form": "лӀыгъэ",
+    "primaryMeaning": "[AUTO] freq=70",
+    "productivity": {
+      "corpusFrequency": 70
+    },
+    "wordFamily": {
+      "id": "WF-ЛӀЫ"
+    }
+  },
+  {
+    "id": "R-ЛӀЫ2",
+    "form": "лӀыхъуэ",
+    "primaryMeaning": "[AUTO] freq=68",
+    "productivity": {
+      "corpusFrequency": 68
+    },
+    "wordFamily": {
+      "id": "WF-ЛӀЫ"
+    }
+  },
+  {
+    "id": "R-БЗЫ1",
+    "form": "бзылъфыгъэщ",
+    "primaryMeaning": "[AUTO] freq=65",
+    "productivity": {
+      "corpusFrequency": 65
+    },
+    "wordFamily": {
+      "id": "WF-БЗЫ"
+    }
+  },
+  {
+    "id": "R-ХЬЭ1",
+    "form": "хьэблэдэс",
+    "primaryMeaning": "[AUTO] freq=62",
+    "productivity": {
+      "corpusFrequency": 62
+    },
+    "wordFamily": {
+      "id": "WF-ХЬЭ"
+    }
+  },
+  {
+    "id": "R-ЖЫЛ1",
+    "form": "жылэдэс",
+    "primaryMeaning": "[AUTO] freq=60",
+    "productivity": {
+      "corpusFrequency": 60
+    },
+    "wordFamily": {
+      "id": "WF-ЖЫЛ"
+    }
+  },
+  {
+    "id": "R-ШЭР1",
+    "form": "шэрджэсыбзэ",
+    "primaryMeaning": "[AUTO] freq=58",
+    "productivity": {
+      "corpusFrequency": 58
+    },
+    "wordFamily": {
+      "id": "WF-ШЭР"
+    }
+  },
+  {
+    "id": "R-ЩӀА2",
+    "form": "щӀалэгъуэ",
+    "primaryMeaning": "[AUTO] freq=55",
+    "productivity": {
+      "corpusFrequency": 55
+    },
+    "wordFamily": {
+      "id": "WF-ЩӀА"
+    }
+  },
+  {
+    "id": "R-ПЩА1",
+    "form": "пщащэщӀэ",
+    "primaryMeaning": "[AUTO] freq=52",
+    "productivity": {
+      "corpusFrequency": 52
+    },
+    "wordFamily": {
+      "id": "WF-ПЩА"
+    }
+  },
+  {
+    "id": "R-НЭХ2",
+    "form": "нэхъыжь",
+    "primaryMeaning": "[AUTO] freq=50",
+    "productivity": {
+      "corpusFrequency": 50
+    },
+    "wordFamily": {
+      "id": "WF-НЭХ"
+    }
+  },
+  {
+    "id": "R-НЭХ3",
+    "form": "нэхъыщӀэ",
+    "primaryMeaning": "[AUTO] freq=48",
+    "productivity": {
+      "corpusFrequency": 48
+    },
+    "wordFamily": {
+      "id": "WF-НЭХ"
+    }
+  },
+  {
+    "id": "R-ТХЬ2",
+    "form": "тхьэшхуэ",
+    "primaryMeaning": "[AUTO] freq=45",
+    "productivity": {
+      "corpusFrequency": 45
+    },
+    "wordFamily": {
+      "id": "WF-ТХЬ"
+    }
+  },
+  {
+    "id": "R-УАФ1",
+    "form": "уафэгу",
+    "primaryMeaning": "[AUTO] freq=42",
+    "productivity": {
+      "corpusFrequency": 42
+    },
+    "wordFamily": {
+      "id": "WF-УАФ"
+    }
+  },
+  {
+    "id": "R-ХУА1",
+    "form": "хуабагъэ",
+    "primaryMeaning": "[AUTO] freq=40",
+    "productivity": {
+      "corpusFrequency": 40
+    },
+    "wordFamily": {
+      "id": "WF-ХУА"
+    }
+  },
+  {
+    "id": "R-ЩӀЫ2",
+    "form": "щӀыӀагъэ",
+    "primaryMeaning": "[AUTO] freq=38",
+    "productivity": {
+      "corpusFrequency": 38
+    },
+    "wordFamily": {
+      "id": "WF-ЩӀЫ"
+    }
+  },
+  {
+    "id": "R-МАЩ1",
+    "form": "мащӀагъэ",
+    "primaryMeaning": "[AUTO] freq=35",
+    "productivity": {
+      "corpusFrequency": 35
+    },
+    "wordFamily": {
+      "id": "WF-МАЩ"
+    }
+  },
+  {
+    "id": "R-КУЭ1",
+    "form": "куэдагъэ",
+    "primaryMeaning": "[AUTO] freq=32",
+    "productivity": {
+      "corpusFrequency": 32
+    },
+    "wordFamily": {
+      "id": "WF-КУЭ"
+    }
+  },
+  {
+    "id": "R-ИНА",
+    "form": "инагъэ",
+    "primaryMeaning": "[AUTO] freq=30",
+    "productivity": {
+      "corpusFrequency": 30
+    },
+    "wordFamily": {
+      "id": "WF-ИНА"
+    }
+  },
+  {
+    "id": "R-ЦӀЫ",
+    "form": "цӀыкӀуагъэ",
+    "primaryMeaning": "[AUTO] freq=28",
+    "productivity": {
+      "corpusFrequency": 28
+    },
+    "wordFamily": {
+      "id": "WF-ЦӀЫ"
+    }
+  },
+  {
+    "id": "R-КӀЫ",
+    "form": "кӀыхьагъэ",
+    "primaryMeaning": "[AUTO] freq=25",
+    "productivity": {
+      "corpusFrequency": 25
+    },
+    "wordFamily": {
+      "id": "WF-КӀЫ"
+    }
+  },
+  {
+    "id": "R-КӀЭ1",
+    "form": "кӀэщӀагъэ",
+    "primaryMeaning": "[AUTO] freq=22",
+    "productivity": {
+      "corpusFrequency": 22
+    },
+    "wordFamily": {
+      "id": "WF-КӀЭ"
+    }
+  },
+  {
+    "id": "R-БАЯ",
+    "form": "баягъэ",
+    "primaryMeaning": "[AUTO] freq=20",
+    "productivity": {
+      "corpusFrequency": 20
+    },
+    "wordFamily": {
+      "id": "WF-БАЯ"
+    }
+  },
+  {
+    "id": "R-ТХЬ3",
+    "form": "тхьэмыщкӀагъэ",
+    "primaryMeaning": "[AUTO] freq=18",
+    "productivity": {
+      "corpusFrequency": 18
+    },
+    "wordFamily": {
+      "id": "WF-ТХЬ"
+    }
+  },
+  {
+    "id": "R-ПЭЖ1",
+    "form": "пэжагъэншэ",
+    "primaryMeaning": "[AUTO] freq=15",
+    "productivity": {
+      "corpusFrequency": 15
+    },
+    "wordFamily": {
+      "id": "WF-ПЭЖ"
+    }
+  },
+  {
+    "id": "R-АКЪ1",
+    "form": "акъылыншэ",
+    "primaryMeaning": "[AUTO] freq=12",
+    "productivity": {
+      "corpusFrequency": 12
+    },
+    "wordFamily": {
+      "id": "WF-АКЪ"
+    }
   }
 ]
