@@ -11327,7 +11327,10 @@
     },
     "subConceptId": "PERCEIVE_ACTION",
     "taxonomyFamily": "Eylem & Fiziksel",
-    "rootForm": "лъ-"
+    "rootForm": "лъ-",
+    "rootIds": [
+      "R-LA_1"
+    ]
   },
   {
     "id": "L-PLHEGHUN",
@@ -11421,7 +11424,10 @@
     },
     "subConceptId": "EMOTION",
     "taxonomyFamily": "Duygu & Zihin",
-    "rootForm": "лъ-"
+    "rootForm": "лъ-",
+    "rootIds": [
+      "R-LA_1"
+    ]
   },
   {
     "id": "L-LEZH",
@@ -14576,7 +14582,9 @@
     "status": "rare",
     "corpusFrequency": 4,
     "ipa": "/дзаж/",
-    "rootIds": [],
+    "rootIds": [
+      "R-DZA"
+    ],
     "wordFamilyId": "WF-LHA",
     "derivation": {
       "rule": "root",
@@ -15504,7 +15512,10 @@
       "tr": "yetim"
     },
     "subConceptId": "FAMILY_STATUS",
-    "taxonomyFamily": "Toplum & İlişki"
+    "taxonomyFamily": "Toplum & İlişki",
+    "rootIds": [
+      "R-ZEI"
+    ]
   },
   {
     "id": "L-ZHYG",
@@ -18905,7 +18916,10 @@
     "isLemma": true,
     "translations": {
       "tr": "koy"
-    }
+    },
+    "rootIds": [
+      "R-KU_1"
+    ]
   },
   {
     "id": "L-KUASHCH",
@@ -21270,7 +21284,9 @@
     "partOfSpeech": "verb",
     "notes": "",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-DEI"
+    ],
     "wordFamilyId": "WF-DA",
     "derivation": {
       "rule": "root",
@@ -21378,7 +21394,10 @@
     "isLemma": true,
     "translations": {
       "tr": "ayağa kalkmak"
-    }
+    },
+    "rootIds": [
+      "R-UVY_2"
+    ]
   },
   {
     "id": "L-D189D18DD185",
@@ -21430,7 +21449,10 @@
       "tr": "getirmek"
     },
     "subConceptId": "CARRY_ACTION",
-    "taxonomyFamily": "Eylem & Fiziksel"
+    "taxonomyFamily": "Eylem & Fiziksel",
+    "rootIds": [
+      "R-KE_2"
+    ]
   },
   {
     "id": "L-D184D0B5D189",
@@ -21482,7 +21504,10 @@
     "isLemma": true,
     "translations": {
       "tr": "hastalanmak"
-    }
+    },
+    "rootIds": [
+      "R-SYM_1"
+    ]
   },
   {
     "id": "L-D0BDD18DD185",
@@ -21735,7 +21760,10 @@
     "isLemma": true,
     "translations": {
       "tr": "kral, hükümdar"
-    }
+    },
+    "rootIds": [
+      "R-PASHCH"
+    ]
   },
   {
     "id": "L-D0B5D0B3D18A",
@@ -21778,7 +21806,10 @@
     "isLemma": true,
     "translations": {
       "tr": "hastane"
-    }
+    },
+    "rootIds": [
+      "R-SYM_1"
+    ]
   },
   {
     "id": "L-D181D18BD0BC-3",
@@ -21794,7 +21825,10 @@
     "isLemma": true,
     "translations": {
       "tr": "hasta"
-    }
+    },
+    "rootIds": [
+      "R-SYM_1"
+    ]
   },
   {
     "id": "L-D0B1D0B3D18A",
@@ -22011,7 +22045,9 @@
     "partOfSpeech": "noun",
     "notes": "",
     "corpusFrequency": 1289,
-    "rootIds": [],
+    "rootIds": [
+      "R-KA_1"
+    ],
     "wordFamilyId": "WF-QA",
     "derivation": {
       "rule": "root",
@@ -22131,7 +22167,10 @@
     "partOfSpeech": "adjective",
     "notes": "",
     "corpusFrequency": 0,
-    "isLemma": true
+    "isLemma": true,
+    "rootIds": [
+      "R-KIY_1"
+    ]
   },
   {
     "id": "L-D0BCD0B0D189",
@@ -22170,7 +22209,10 @@
     "isLemma": true,
     "translations": {
       "tr": "aptal, cahil"
-    }
+    },
+    "rootIds": [
+      "R-DEL"
+    ]
   },
   {
     "id": "L-D0BFD181D18B",
@@ -22470,7 +22512,10 @@
     "conceptId": "PLAY",
     "subConceptId": "ACTION",
     "taxonomyFamily": "Eylem & Fiziksel",
-    "rootForm": "джэ-"
+    "rootForm": "джэ-",
+    "rootIds": [
+      "R-DZHE_1"
+    ]
   },
   {
     "id": "L-D0BED180D18D",
@@ -23125,7 +23170,10 @@
     "isLemma": true,
     "translations": {
       "tr": "mutlu, şanslı"
-    }
+    },
+    "rootIds": [
+      "R-NAS"
+    ]
   },
   {
     "id": "L-D0BDD0B0D181-2",
@@ -23144,7 +23192,10 @@
       "tr": "mutsuz, şanssız"
     },
     "subConceptId": "",
-    "taxonomyFamily": ""
+    "taxonomyFamily": "",
+    "rootIds": [
+      "R-NAS"
+    ]
   },
   {
     "id": "L-D0BAD18AD0B0-3",
@@ -23206,7 +23257,10 @@
     "isLemma": true,
     "translations": {
       "tr": "uğurlu, hayırlı"
-    }
+    },
+    "rootIds": [
+      "R-UG"
+    ]
   },
   {
     "id": "L-D183D0B3D18A-2",
@@ -23225,7 +23279,10 @@
       "tr": "uğursuz, hayırsız"
     },
     "subConceptId": "",
-    "taxonomyFamily": ""
+    "taxonomyFamily": "",
+    "rootIds": [
+      "R-UG"
+    ]
   },
   {
     "id": "L-D0BAD18AD183-3",
@@ -23241,7 +23298,10 @@
     "isLemma": true,
     "translations": {
       "tr": "zengin"
-    }
+    },
+    "rootIds": [
+      "R-KU"
+    ]
   },
   {
     "id": "L-D0BAD18AD183-4",
@@ -23260,7 +23320,10 @@
       "tr": "fakir, yoksul"
     },
     "subConceptId": "",
-    "taxonomyFamily": ""
+    "taxonomyFamily": "",
+    "rootIds": [
+      "R-KU"
+    ]
   },
   {
     "id": "L-D0B1D0B5D0BB",
@@ -23276,7 +23339,10 @@
       "tr": "belirli, belli"
     },
     "subConceptId": "",
-    "taxonomyFamily": ""
+    "taxonomyFamily": "",
+    "rootIds": [
+      "R-BEL_2"
+    ]
   },
   {
     "id": "L-D0B3D183D0B0",
@@ -23324,7 +23390,10 @@
       "tr": "bol, bereketli"
     },
     "subConceptId": "QUANTITY_QUALITY",
-    "taxonomyFamily": "Nitelik & Doğa"
+    "taxonomyFamily": "Nitelik & Doğa",
+    "rootIds": [
+      "R-BEG_1"
+    ]
   },
   {
     "id": "L-D0BAD183D18D-3",
@@ -23717,7 +23786,10 @@
     "isLemma": true,
     "translations": {
       "tr": "pasta"
-    }
+    },
+    "rootIds": [
+      "R-PAS"
+    ]
   },
   {
     "id": "L-D0B1D0B6D18C",
@@ -23878,7 +23950,10 @@
     "isLemma": true,
     "translations": {
       "tr": "cam, ayna"
-    }
+    },
+    "rootIds": [
+      "R-ABD"
+    ]
   },
   {
     "id": "L-D189D380D18B-2",
@@ -24597,7 +24672,10 @@
       "tr": "diş eti"
     },
     "subConceptId": "MOUTH_BODY",
-    "taxonomyFamily": "İnsan & Beden"
+    "taxonomyFamily": "İnsan & Beden",
+    "rootIds": [
+      "R-DZA"
+    ]
   },
   {
     "id": "L-D186D380D18B",
@@ -25057,7 +25135,10 @@
     "isLemma": true,
     "translations": {
       "tr": "bir zamanlar"
-    }
+    },
+    "rootIds": [
+      "R-ZEG"
+    ]
   },
   {
     "id": "L-D0B7D18BD189",
@@ -25209,7 +25290,10 @@
     "isLemma": true,
     "translations": {
       "tr": "şarkı, türkü"
-    }
+    },
+    "rootIds": [
+      "R-UER_1"
+    ]
   },
   {
     "id": "L-D0BFD188D18B",
@@ -26869,7 +26953,10 @@
     "isLemma": true,
     "translations": {
       "tr": "ses sanatçısı"
-    }
+    },
+    "rootIds": [
+      "R-UER_1"
+    ]
   },
   {
     "id": "L-D0BAD18AD0B0-7",
@@ -28858,7 +28945,10 @@
     "isLemma": true,
     "translations": {
       "tr": "zaman"
-    }
+    },
+    "rootIds": [
+      "R-ZEM"
+    ]
   },
   {
     "id": "L-SH1YN",
@@ -29124,7 +29214,9 @@
     "notes": "Dogrulandi: temel kelime",
     "corpusFrequency": 268,
     "ipa": "/русский'''  !! '''инджылыбзэ/",
-    "rootIds": [],
+    "rootIds": [
+      "R-KA_1"
+    ],
     "wordFamilyId": "WF-QA",
     "derivation": {
       "rule": "root",
@@ -29996,7 +30088,10 @@
     "isLemma": true,
     "translations": {
       "tr": "dunya, evren"
-    }
+    },
+    "rootIds": [
+      "R-DUN"
+    ]
   },
   {
     "id": "L-L1ENYGHE",
@@ -30189,7 +30284,10 @@
     "isLemma": true,
     "translations": {
       "tr": "gaye, niyet"
-    }
+    },
+    "rootIds": [
+      "R-MUR"
+    ]
   },
   {
     "id": "L-SHYNE",
@@ -32363,7 +32461,10 @@
     "isLemma": true,
     "translations": {
       "ru": "весть, известие, сообщение"
-    }
+    },
+    "rootIds": [
+      "R-KHY_2"
+    ]
   },
   {
     "id": "L-CORPUS-00059",
@@ -33115,7 +33216,10 @@
     "isLemma": true,
     "translations": {
       "ru": "Зыгуэрым тепсэлъыхьу, тетхыхьу щытауэ"
-    }
+    },
+    "rootIds": [
+      "R-TEU"
+    ]
   },
   {
     "id": "L-CORPUS-00098",
@@ -33783,7 +33887,10 @@
     "ipa": "/къэрал/",
     "conceptId": "COLOR",
     "literalMeaningAdy": "страна, государство / Хэку, зы унафэм щӀэт цӀыхухэр щыпсэу щӀыналъэ",
-    "isLemma": true
+    "isLemma": true,
+    "rootIds": [
+      "R-KE"
+    ]
   },
   {
     "id": "L-CORPUS-00135",
@@ -33988,7 +34095,10 @@
     "isLemma": true,
     "translations": {
       "ru": "теухуа Type: preposition Definitions: <span style='f"
-    }
+    },
+    "rootIds": [
+      "R-TEU"
+    ]
   },
   {
     "id": "L-CORPUS-00147",
@@ -35572,7 +35682,10 @@
     "isLemma": true,
     "translations": {
       "ru": "война / Къэралхэр, обществэм щыщ классхэр зэпэу"
-    }
+    },
+    "rootIds": [
+      "R-ZAU"
+    ]
   },
   {
     "id": "L-CORPUS-00230",
@@ -36036,7 +36149,9 @@
     },
     "notes": "Corpus v1.0 (freq: 161, lang: kbd, source: 1.Ady-Ady_AP)",
     "ipa": "/къалэн/",
-    "rootIds": [],
+    "rootIds": [
+      "R-KA_1"
+    ],
     "wordFamilyId": "WF-QA",
     "derivation": {
       "rule": "root",
@@ -36800,7 +36915,10 @@
     "isLemma": true,
     "translations": {
       "ru": "зэгуэр"
-    }
+    },
+    "rootIds": [
+      "R-ZEG"
+    ]
   },
   {
     "id": "L-CORPUS-00294",
@@ -39324,7 +39442,10 @@
       "Хэкум емыкӀур къылъысмэ, псэр умылъытэу къыщыж."
     ],
     "literalMeaningAdy": "область Хэку зэӀукӀ <div",
-    "isLemma": true
+    "isLemma": true,
+    "rootIds": [
+      "R-KHEK"
+    ]
   },
   {
     "id": "L-CORPUS-00428",
@@ -41040,7 +41161,10 @@
     "isLemma": true,
     "translations": {
       "tr": "<b"
-    }
+    },
+    "rootIds": [
+      "R-SHKH"
+    ]
   },
   {
     "id": "L-CORPUS-00520",
@@ -43741,7 +43865,10 @@
     "literalMeaningAdy": "смерть / Псэр хэкӀыныгъэ, гъашӀэр иухыныгъэ, лӀэ-ныг",
     "isLemma": true,
     "subConceptId": "",
-    "taxonomyFamily": ""
+    "taxonomyFamily": "",
+    "rootIds": [
+      "R-AZHA"
+    ]
   },
   {
     "id": "L-CORPUS-00664",
@@ -44263,7 +44390,10 @@
     },
     "subConceptId": "DANCE_PLAY",
     "taxonomyFamily": "Kültür & Etkileşim",
-    "rootForm": "джэ-"
+    "rootForm": "джэ-",
+    "rootIds": [
+      "R-DZHE_1"
+    ]
   },
   {
     "id": "L-CORPUS-00690",
@@ -44629,7 +44759,10 @@
     "isLemma": true,
     "translations": {
       "ru": "особый, необычный, особенный, специальный"
-    }
+    },
+    "rootIds": [
+      "R-KHEKH"
+    ]
   },
   {
     "id": "L-CORPUS-00709",
@@ -46079,7 +46212,10 @@
     },
     "subConceptId": "HALAL",
     "taxonomyFamily": "İnanç/Ahlak",
-    "rootForm": "хьэ-"
+    "rootForm": "хьэ-",
+    "rootIds": [
+      "R-KHE_2"
+    ]
   },
   {
     "id": "L-CORPUS-00782",
@@ -46279,7 +46415,10 @@
     "isLemma": true,
     "subConceptId": "FOOT_PATH",
     "taxonomyFamily": "Mekan & Yön",
-    "rootForm": "лъ-"
+    "rootForm": "лъ-",
+    "rootIds": [
+      "R-LA_1"
+    ]
   },
   {
     "id": "L-CORPUS-00794",
@@ -46784,7 +46923,10 @@
     "notes": "Corpus v1.0 (freq: 48, lang: kbd, source: 1.Ady-Ady_AP)",
     "ipa": "/насып/",
     "literalMeaningAdy": "несчастье, беда / Насыпыншэ псалъэм къытекӀа щыӀэцӀэ",
-    "isLemma": true
+    "isLemma": true,
+    "rootIds": [
+      "R-NAS"
+    ]
   },
   {
     "id": "L-CORPUS-00823",
@@ -48244,7 +48386,10 @@
       "kabardian": "хъыбархэр"
     },
     "notes": "Corpus v1.0 (freq: 44, lang: kbd, source: 14.Kbd-En-2-Jonty)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-KHY_2"
+    ]
   },
   {
     "id": "L-CORPUS-00899",
@@ -49132,7 +49277,10 @@
     "notes": "Corpus v1.0 (freq: 42, lang: kbd, source: 1.Ady-Ady_AP)",
     "ipa": "/дуней/",
     "literalMeaningAdy": "всемирный, мировой / Дунейр зэрыщыту къызэщӀиубыдэу",
-    "isLemma": true
+    "isLemma": true,
+    "rootIds": [
+      "R-DUN"
+    ]
   },
   {
     "id": "L-CORPUS-00942",
@@ -52243,7 +52391,10 @@
     "isLemma": true,
     "translations": {
       "ru": "особо, отдельно, специально"
-    }
+    },
+    "rootIds": [
+      "R-KHEKH"
+    ]
   },
   {
     "id": "L-CORPUS-01094",
@@ -52870,7 +53021,10 @@
     "isLemma": true,
     "translations": {
       "ru": "зауэр / заорэр DÖVÜŞEN"
-    }
+    },
+    "rootIds": [
+      "R-ZAU"
+    ]
   },
   {
     "id": "L-CORPUS-01127",
@@ -55790,7 +55944,10 @@
     "isLemma": true,
     "translations": {
       "ru": "активный, живой"
-    }
+    },
+    "rootIds": [
+      "R-ZHYD"
+    ]
   },
   {
     "id": "L-CORPUS-01275",
@@ -58518,7 +58675,10 @@
     },
     "subConceptId": "FORBIDDEN_RELIGION",
     "taxonomyFamily": "Din & Ahlak",
-    "rootForm": "хьэ-"
+    "rootForm": "хьэ-",
+    "rootIds": [
+      "R-KHE_3"
+    ]
   },
   {
     "id": "L-CORPUS-01413",
@@ -60278,7 +60438,10 @@
     },
     "subConceptId": "KINDNESS",
     "taxonomyFamily": "Ahlak/Kişilik",
-    "rootForm": "хьэ-"
+    "rootForm": "хьэ-",
+    "rootIds": [
+      "R-KHE_2"
+    ]
   },
   {
     "id": "L-CORPUS-01504",
@@ -61166,7 +61329,10 @@
     "conceptId": "PATH",
     "subConceptId": "FOOT_TRAIL",
     "taxonomyFamily": "Mekan & Yön",
-    "rootForm": "лъ-"
+    "rootForm": "лъ-",
+    "rootIds": [
+      "R-LA_1"
+    ]
   },
   {
     "id": "L-CORPUS-01550",
@@ -61220,7 +61386,10 @@
     "isLemma": true,
     "translations": {
       "ru": "активно, живо, расторопно"
-    }
+    },
+    "rootIds": [
+      "R-ZHYD"
+    ]
   },
   {
     "id": "L-CORPUS-01554",
@@ -65319,7 +65488,10 @@
       "kabardian": ""
     },
     "notes": "Corpus v1.0 (freq: 23, lang: ady, source: 4.Ady-En_Adam)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-NAS"
+    ]
   },
   {
     "id": "L-CORPUS-01754",
@@ -65536,7 +65708,10 @@
     "isLemma": true,
     "translations": {
       "ru": "ударить ( <font co"
-    }
+    },
+    "rootIds": [
+      "R-KE_1"
+    ]
   },
   {
     "id": "L-CORPUS-01768",
@@ -67639,7 +67814,10 @@
     "isLemma": true,
     "translations": {
       "ru": "царство / Пащтыхьым и къэрал, пащтыхьыр щытепщэ"
-    }
+    },
+    "rootIds": [
+      "R-PASHCH"
+    ]
   },
   {
     "id": "L-CORPUS-01873",
@@ -68920,7 +69098,10 @@
     "isLemma": true,
     "translations": {
       "ru": "открыто Нафэу <div style='margi"
-    }
+    },
+    "rootIds": [
+      "R-SHKH"
+    ]
   },
   {
     "id": "L-CORPUS-01942",
@@ -69973,7 +70154,10 @@
     "conceptId": "MORALITY",
     "subConceptId": "SIN",
     "taxonomyFamily": "Ahlak/İnanç",
-    "rootForm": "хьэ-"
+    "rootForm": "хьэ-",
+    "rootIds": [
+      "R-KHE_3"
+    ]
   },
   {
     "id": "L-CORPUS-01992",
@@ -70470,7 +70654,10 @@
       "kabardian": ""
     },
     "notes": "Corpus v1.0 (freq: 20, lang: ady, source: 4.Ady-En_Adam)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-SHKH"
+    ]
   },
   {
     "id": "L-CORPUS-02016",
@@ -73547,7 +73734,10 @@
     "notes": "Corpus v1.0 (freq: 18, lang: kbd, source: 1.Ady-Ady_AP)",
     "ipa": "/къэхьп/",
     "literalMeaningAdy": "развратница / Псэжь, куэпэч, укӀытэ зимыӀэ, нэчыхьыншэу зэрашэ цӀыхубз",
-    "isLemma": true
+    "isLemma": true,
+    "rootIds": [
+      "R-KE_2"
+    ]
   },
   {
     "id": "L-CORPUS-02184",
@@ -77603,7 +77793,10 @@
     "isLemma": true,
     "translations": {
       "ru": "государство / Хэку, къэрал"
-    }
+    },
+    "rootIds": [
+      "R-KE"
+    ]
   },
   {
     "id": "L-CORPUS-02402",
@@ -77934,7 +78127,10 @@
     "isLemma": true,
     "translations": {
       "ru": "вывалять кого-что-л"
-    }
+    },
+    "rootIds": [
+      "R-KHEK"
+    ]
   },
   {
     "id": "L-CORPUS-02417",
@@ -78214,7 +78410,10 @@
     "isLemma": true,
     "translations": {
       "ru": "выносливый / Куэд зи фэ дэзыгъэхуэф, куэд зышэчыф"
-    }
+    },
+    "rootIds": [
+      "R-BESH"
+    ]
   },
   {
     "id": "L-CORPUS-02432",
@@ -78229,7 +78428,10 @@
     "notes": "Corpus v1.0 (freq: 16, lang: kbd, source: 0.Ady-Ady_AIG)",
     "ipa": "/совет/",
     "literalMeaningAdy": "совет Къэралыгъо хабзэм иӀ",
-    "isLemma": true
+    "isLemma": true,
+    "rootIds": [
+      "R-SOV"
+    ]
   },
   {
     "id": "L-CORPUS-02433",
@@ -79790,7 +79992,10 @@
     "isLemma": true,
     "translations": {
       "ru": "руины <div st"
-    }
+    },
+    "rootIds": [
+      "R-KHEK"
+    ]
   },
   {
     "id": "L-CORPUS-02502",
@@ -80847,7 +81052,10 @@
     },
     "subConceptId": "KINDNESS",
     "taxonomyFamily": "Karakter/Ahlak",
-    "rootForm": "хьэ-"
+    "rootForm": "хьэ-",
+    "rootIds": [
+      "R-KHE_3"
+    ]
   },
   {
     "id": "L-CORPUS-02569",
@@ -81338,7 +81546,10 @@
     "isLemma": true,
     "translations": {
       "ru": "принести <font colo"
-    }
+    },
+    "rootIds": [
+      "R-KE_2"
+    ]
   },
   {
     "id": "L-CORPUS-02592",
@@ -81735,7 +81946,10 @@
       "tr": "fresh, sweet"
     },
     "subConceptId": "TASTE_FRESHNESS",
-    "taxonomyFamily": "Nitelik & Duyu"
+    "taxonomyFamily": "Nitelik & Duyu",
+    "rootIds": [
+      "R-MYSH"
+    ]
   },
   {
     "id": "L-CORPUS-02613",
@@ -81808,7 +82022,10 @@
     "isLemma": true,
     "translations": {
       "ru": "старая родина"
-    }
+    },
+    "rootIds": [
+      "R-KHEK"
+    ]
   },
   {
     "id": "L-CORPUS-02616",
@@ -90128,7 +90345,10 @@
       "tr": "fidget"
     },
     "subConceptId": "RESTLESS_BEHAVIOR",
-    "taxonomyFamily": "Nitelik & Beden"
+    "taxonomyFamily": "Nitelik & Beden",
+    "rootIds": [
+      "R-PK"
+    ]
   },
   {
     "id": "L-CORPUS-03038",
@@ -91374,7 +91594,10 @@
       "ru": "hist. Soviet; Советскэ : the Soviet Union"
     },
     "subConceptId": "HISTORICAL_TERM",
-    "taxonomyFamily": "Toplum & Yurt"
+    "taxonomyFamily": "Toplum & Yurt",
+    "rootIds": [
+      "R-SOV"
+    ]
   },
   {
     "id": "L-CORPUS-03107",
@@ -92546,7 +92769,10 @@
     "conceptId": "HATRED",
     "subConceptId": "ENMITY_EMOTION",
     "taxonomyFamily": "Nitelik & Zihin",
-    "rootForm": "лъ-"
+    "rootForm": "лъ-",
+    "rootIds": [
+      "R-LA_1"
+    ]
   },
   {
     "id": "L-CORPUS-03181",
@@ -92787,7 +93013,10 @@
     "notes": "Corpus v1.0 (freq: 12, lang: kbd, source: 1.Ady-Ady_AP)",
     "ipa": "/къуаж/",
     "literalMeaningAdy": "житель села / Къуажэм сыт щыгъуи щыпсэу, зи гъащӀэр щызыгъакӀуэ цӀыху",
-    "isLemma": true
+    "isLemma": true,
+    "rootIds": [
+      "R-KU_1"
+    ]
   },
   {
     "id": "L-CORPUS-03192",
@@ -94631,7 +94860,10 @@
     "isLemma": true,
     "translations": {
       "ru": "развратность / Псэжьыгъэ, куэпэчыгъэ"
-    }
+    },
+    "rootIds": [
+      "R-KE_2"
+    ]
   },
   {
     "id": "L-CORPUS-03284",
@@ -95938,7 +96170,10 @@
       "kabardian": ""
     },
     "notes": "Corpus v1.0 (freq: 12, lang: ady, source: 3.Ady-En)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-SHKH"
+    ]
   },
   {
     "id": "L-CORPUS-03359",
@@ -98118,7 +98353,10 @@
     "isLemma": true,
     "translations": {
       "ru": "встретиться друг с другом"
-    }
+    },
+    "rootIds": [
+      "R-ZEKH"
+    ]
   },
   {
     "id": "L-CORPUS-03470",
@@ -100833,7 +101071,10 @@
     "isLemma": true,
     "translations": {
       "tr": "coffee"
-    }
+    },
+    "rootIds": [
+      "R-KE_2"
+    ]
   },
   {
     "id": "L-CORPUS-03597",
@@ -103358,7 +103599,10 @@
     "conceptId": "MANNER",
     "subConceptId": "KINDNESS",
     "taxonomyFamily": "Karakter/Ahlak",
-    "rootForm": "хьэ-"
+    "rootForm": "хьэ-",
+    "rootIds": [
+      "R-KHE_3"
+    ]
   },
   {
     "id": "L-CORPUS-03740",
@@ -104863,7 +105107,10 @@
     "isLemma": true,
     "translations": {
       "ru": "ясно; определённо <div style='margin"
-    }
+    },
+    "rootIds": [
+      "R-BEL_2"
+    ]
   },
   {
     "id": "L-CORPUS-03815",
@@ -105367,7 +105614,10 @@
     "isLemma": true,
     "translations": {
       "ru": "активность, расторопность, живость"
-    }
+    },
+    "rootIds": [
+      "R-ZHYD"
+    ]
   },
   {
     "id": "L-CORPUS-03838",
@@ -105884,7 +106134,10 @@
     },
     "subConceptId": "SEEING_VISIT",
     "taxonomyFamily": "Kültür & Etkileşim",
-    "rootForm": "лъ-"
+    "rootForm": "лъ-",
+    "rootIds": [
+      "R-LA_1"
+    ]
   },
   {
     "id": "L-CORPUS-03860",
@@ -109299,7 +109552,10 @@
     "isLemma": true,
     "translations": {
       "tr": "دولة"
-    }
+    },
+    "rootIds": [
+      "R-KE"
+    ]
   },
   {
     "id": "L-CORPUS-04052",
@@ -110343,7 +110599,10 @@
     "isLemma": true,
     "translations": {
       "tr": ">"
-    }
+    },
+    "rootIds": [
+      "R-URY"
+    ]
   },
   {
     "id": "L-CORPUS-04109",
@@ -112088,7 +112347,10 @@
       "НэхъыжьыфӀхэм пщӀэ хуащӀ, дзажэ дакъэр хухах. фольк. дзажэ пщафэ часть туши от шейного позвонка до ребер / Пщэм къытрахуу дзажэмкӀэ ягъакӀуэ лыпцӀэ."
     ],
     "literalMeaningAdy": "бок / СэмэгурабгъумкӀи ижьыр",
-    "isLemma": true
+    "isLemma": true,
+    "rootIds": [
+      "R-DZA"
+    ]
   },
   {
     "id": "L-CORPUS-04190",
@@ -113070,7 +113332,10 @@
     "isLemma": true,
     "translations": {
       "ru": "предание, сказание / Пасэм, зэманыжьым теухуа хъыбар"
-    }
+    },
+    "rootIds": [
+      "R-KHY_2"
+    ]
   },
   {
     "id": "L-CORPUS-04236",
@@ -114718,7 +114983,10 @@
     "conceptId": "PLAYFUL",
     "subConceptId": "CHARACTER",
     "taxonomyFamily": "Düşünce & Soyut",
-    "rootForm": "джэ-"
+    "rootForm": "джэ-",
+    "rootIds": [
+      "R-DZHE_1"
+    ]
   },
   {
     "id": "L-CORPUS-04314",
@@ -115434,7 +115702,10 @@
     "isLemma": true,
     "translations": {
       "ru": "тонкий, прозрачный ( <font color='slategray'"
-    }
+    },
+    "rootIds": [
+      "R-ABD"
+    ]
   },
   {
     "id": "L-CORPUS-04347",
@@ -115747,7 +116018,10 @@
     },
     "subConceptId": "KINDNESS",
     "taxonomyFamily": "Ahlak/Kişilik",
-    "rootForm": "хьэ-"
+    "rootForm": "хьэ-",
+    "rootIds": [
+      "R-KHE_2"
+    ]
   },
   {
     "id": "L-CORPUS-04362",
@@ -118109,7 +118383,10 @@
     "isLemma": true,
     "translations": {
       "tr": "مدع، متبجح، مادح نفسه"
-    }
+    },
+    "rootIds": [
+      "R-SHKH"
+    ]
   },
   {
     "id": "L-CORPUS-04510",
@@ -121568,7 +121845,9 @@
     },
     "notes": "Corpus v1.0 (freq: 8, lang: kbd, source: 15.Kbd-En-Jonty)",
     "conceptId": "COLOR",
-    "rootIds": [],
+    "rootIds": [
+      "R-ZAU"
+    ],
     "wordFamilyId": "WF-WASHKH",
     "derivation": {
       "rule": "root",
@@ -128205,7 +128484,10 @@
       "kabardian": "дунейм"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 1041, lang: kbd, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-DUN"
+    ]
   },
   {
     "id": "L-CORPUS2-00020",
@@ -128841,7 +129123,10 @@
       "kabardian": "зэманым"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 509, lang: kbd, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-ZEM"
+    ]
   },
   {
     "id": "L-CORPUS2-00060",
@@ -129934,7 +130219,10 @@
       "kabardian": "хъыбарыр"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 332, lang: kbd, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-KHY_2"
+    ]
   },
   {
     "id": "L-CORPUS2-00127",
@@ -129970,7 +130258,10 @@
       "kabardian": "хэкум"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 329, lang: kbd, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-KHEK"
+    ]
   },
   {
     "id": "L-CORPUS2-00129",
@@ -130838,7 +131129,9 @@
       "kabardian": "къуажэм"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 271, lang: kbd, source: none)",
-    "rootIds": [],
+    "rootIds": [
+      "R-KU_1"
+    ],
     "wordFamilyId": "WF-ZHAM",
     "derivation": {
       "rule": "root",
@@ -131661,7 +131954,10 @@
       "kabardian": "зэманыр"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 222, lang: kbd, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-ZEM"
+    ]
   },
   {
     "id": "L-CORPUS2-00238",
@@ -131769,7 +132065,10 @@
       "kabardian": "дунейр"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 217, lang: kbd, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-DUN"
+    ]
   },
   {
     "id": "L-CORPUS2-00245",
@@ -131782,7 +132081,10 @@
       "kabardian": "къэралым"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 217, lang: kbd, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-KE"
+    ]
   },
   {
     "id": "L-CORPUS2-00246",
@@ -132668,7 +132970,10 @@
       "kabardian": "зауэм"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 187, lang: kbd, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-ZAU"
+    ]
   },
   {
     "id": "L-CORPUS2-00304",
@@ -134445,7 +134750,10 @@
       "kabardian": "хъыбарыфӏыр"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 147, lang: kbd, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-KHY_2"
+    ]
   },
   {
     "id": "L-CORPUS2-00414",
@@ -135563,7 +135871,10 @@
       "kabardian": "пащтыхьым"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 131, lang: kbd, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-PASHCH"
+    ]
   },
   {
     "id": "L-CORPUS2-00486",
@@ -137624,7 +137935,10 @@
       "kabardian": "хъыбарым"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 110, lang: kbd, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-KHY_2"
+    ]
   },
   {
     "id": "L-CORPUS2-00612",
@@ -140356,7 +140670,10 @@
       "kabardian": "сымаджэр"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 93, lang: kbd, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-SYM_1"
+    ]
   },
   {
     "id": "L-CORPUS2-00771",
@@ -140421,7 +140738,10 @@
       "kabardian": "пкъым"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 92, lang: kbd, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-PK"
+    ]
   },
   {
     "id": "L-CORPUS2-00777",
@@ -140507,7 +140827,9 @@
       "kabardian": "сымаджэм"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 92, lang: kbd, source: none)",
-    "rootIds": [],
+    "rootIds": [
+      "R-SYM_1"
+    ],
     "wordFamilyId": "WF-ZHAM",
     "derivation": {
       "rule": "root",
@@ -141072,7 +141394,10 @@
       "Псым и ижьырабгъу ӀуащхьэхэмкӀэ къиукӀ пулеметхэм щхьэкӀэ къамыгъанэу, зэрыкӀуэм хуэдэурэ, ди зауэлӀхэр Дон зэпрыкӀыу хуежьащ. Ӏуащхь."
     ],
     "literalMeaningAdy": "Зауэ Ӏуэхум хуэгъэса цӀыху, дзэ къулыкъум хэт цӀыху, сэлэт",
-    "isLemma": true
+    "isLemma": true,
+    "rootIds": [
+      "R-ZAU"
+    ]
   },
   {
     "id": "L-CORPUS2-00814",
@@ -141172,7 +141497,10 @@
       "kabardian": "мурадыр"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 89, lang: kbd, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-MUR"
+    ]
   },
   {
     "id": "L-CORPUS2-00822",
@@ -143327,7 +143655,10 @@
       "Ӏэнкуну къэна щӀалэр зы дакъикъэ хуэдизкӀэ кӀэлъыплъащ губжьауэ гъуэгум ирикӀуэ хъыджэбз пкъыфӀэм."
     ],
     "literalMeaningAdy": "Зыгуэрым и ужьымкӀэ плъэн, и ужь иплъэн",
-    "isLemma": true
+    "isLemma": true,
+    "rootIds": [
+      "R-KIE_2"
+    ]
   },
   {
     "id": "L-CORPUS2-00956",
@@ -144285,7 +144616,10 @@
       "kabardian": ""
     },
     "notes": "Corpus v1.0 batch-2 (freq: 75, lang: ady, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-SHKH"
+    ]
   },
   {
     "id": "L-CORPUS2-01014",
@@ -145155,7 +145489,10 @@
       "kabardian": "зыщӏэ"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 72, lang: kbd, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-ZYSHCH"
+    ]
   },
   {
     "id": "L-CORPUS2-01069",
@@ -145741,7 +146078,10 @@
       "kabardian": "ажалым"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 69, lang: kbd, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-AZHA"
+    ]
   },
   {
     "id": "L-CORPUS2-01107",
@@ -146330,7 +146670,10 @@
       "kabardian": "хэкур"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 68, lang: kbd, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-KHEK"
+    ]
   },
   {
     "id": "L-CORPUS2-01143",
@@ -146904,7 +147247,10 @@
       "kabardian": "мурадхэр"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 66, lang: kbd, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-MUR"
+    ]
   },
   {
     "id": "L-CORPUS2-01183",
@@ -146917,7 +147263,10 @@
       "kabardian": "уэрэдыр"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 66, lang: kbd, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-UER_1"
+    ]
   },
   {
     "id": "L-CORPUS2-01184",
@@ -148542,7 +148891,10 @@
       "kabardian": "пащтыхьыгъуэр"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 62, lang: kbd, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-PASHCH"
+    ]
   },
   {
     "id": "L-CORPUS2-01285",
@@ -149360,7 +149712,10 @@
       "kabardian": "хъыбарыфӏым"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 60, lang: kbd, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-KHY_2"
+    ]
   },
   {
     "id": "L-CORPUS2-01333",
@@ -149976,7 +150331,10 @@
       "kabardian": "пащтыхьыр"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 59, lang: kbd, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-PASHCH"
+    ]
   },
   {
     "id": "L-CORPUS2-01373",
@@ -149989,7 +150347,10 @@
       "kabardian": "зауэлӏхэм"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 59, lang: kbd, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-ZAU"
+    ]
   },
   {
     "id": "L-CORPUS2-01374",
@@ -151559,7 +151920,10 @@
       "kabardian": ""
     },
     "notes": "Corpus v1.0 batch-2 (freq: 57, lang: ady, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-SHKH"
+    ]
   },
   {
     "id": "L-CORPUS2-01469",
@@ -152346,7 +152710,10 @@
       "kabardian": "зыщӏэт"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 55, lang: kbd, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-ZYSHCH"
+    ]
   },
   {
     "id": "L-CORPUS2-01516",
@@ -154548,7 +154915,10 @@
       "kabardian": "къэралыр"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 51, lang: kbd, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-KE"
+    ]
   },
   {
     "id": "L-CORPUS2-01652",
@@ -154604,7 +154974,10 @@
       "kabardian": "пащтыхьыгъуэм"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 51, lang: kbd, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-PASHCH"
+    ]
   },
   {
     "id": "L-CORPUS2-01656",
@@ -155040,7 +155413,10 @@
       "kabardian": ""
     },
     "notes": "Corpus v1.0 batch-2 (freq: 51, lang: ady, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-SHKH"
+    ]
   },
   {
     "id": "L-CORPUS2-01684",
@@ -155206,7 +155582,10 @@
       "kabardian": "мураду"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 50, lang: kbd, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-MUR"
+    ]
   },
   {
     "id": "L-CORPUS2-01697",
@@ -155560,7 +155939,10 @@
       "kabardian": ""
     },
     "notes": "Corpus v1.0 batch-2 (freq: 50, lang: ady, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-UPCH"
+    ]
   },
   {
     "id": "L-CORPUS2-01719",
@@ -157692,7 +158074,10 @@
       "kabardian": "къэралхэм"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 47, lang: kbd, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-KE"
+    ]
   },
   {
     "id": "L-CORPUS2-01857",
@@ -157840,7 +158225,10 @@
       "kabardian": "уэрэдым"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 47, lang: kbd, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-UER_1"
+    ]
   },
   {
     "id": "L-CORPUS2-01866",
@@ -158127,7 +158515,10 @@
       "kabardian": ""
     },
     "notes": "Corpus v1.0 batch-2 (freq: 47, lang: ady, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-SHKH"
+    ]
   },
   {
     "id": "L-CORPUS2-01886",
@@ -158408,7 +158799,10 @@
     "conceptId": "LOVE_NOMINATIVE",
     "subConceptId": "AFFECTION_NOM",
     "taxonomyFamily": "Gramer & Çekim",
-    "rootForm": "лъ-"
+    "rootForm": "лъ-",
+    "rootIds": [
+      "R-LA_1"
+    ]
   },
   {
     "id": "L-CORPUS2-01903",
@@ -158659,7 +159053,10 @@
       "kabardian": "зэманкӏэ"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 46, lang: kbd, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-ZEM"
+    ]
   },
   {
     "id": "L-CORPUS2-01918",
@@ -158730,7 +159127,10 @@
       "kabardian": "къуажэр"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 46, lang: kbd, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-KU_1"
+    ]
   },
   {
     "id": "L-CORPUS2-01922",
@@ -161743,7 +162143,10 @@
       "kabardian": "ажалыр"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 42, lang: kbd, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-AZHA"
+    ]
   },
   {
     "id": "L-CORPUS2-02111",
@@ -162850,7 +163253,10 @@
       "kabardian": "зэманми"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 41, lang: kbd, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-ZEM"
+    ]
   },
   {
     "id": "L-CORPUS2-02177",
@@ -164926,7 +165332,10 @@
       "kabardian": "насыпыр"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 39, lang: kbd, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-NAS"
+    ]
   },
   {
     "id": "L-CORPUS2-02304",
@@ -166174,7 +166583,10 @@
       "kabardian": "уэрэдыӏуэхэмрэ"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 38, lang: kbd, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-UER_1"
+    ]
   },
   {
     "id": "L-CORPUS2-02383",
@@ -167425,7 +167837,10 @@
     "conceptId": "AT_CELEBRATION",
     "subConceptId": "GRAMMAR",
     "taxonomyFamily": "Gramer & Çekim",
-    "rootForm": "джэ-"
+    "rootForm": "джэ-",
+    "rootIds": [
+      "R-DZHE_1"
+    ]
   },
   {
     "id": "L-CORPUS2-02465",
@@ -168129,7 +168544,10 @@
       "kabardian": ""
     },
     "notes": "Corpus v1.0 batch-2 (freq: 37, lang: ady, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-NAS"
+    ]
   },
   {
     "id": "L-CORPUS2-02511",
@@ -168224,7 +168642,10 @@
       "kabardian": "мурадым"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 36, lang: kbd, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-MUR"
+    ]
   },
   {
     "id": "L-CORPUS2-02518",
@@ -171378,7 +171799,10 @@
       "kabardian": "мурадкӏэ"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 34, lang: kbd, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-MUR"
+    ]
   },
   {
     "id": "L-CORPUS2-02711",
@@ -171664,7 +172088,10 @@
       "Шэджэмокъуэ Исмел зэрыщымыӀэжымкӀэ хъыбарегъащӀэу ягъэкӀуар шым пхэнжу епсыхащ, зэрыщыхьэкӀуэр абыкӀэ яригъащӀэу."
     ],
     "literalMeaningAdy": "ПсалъэкӀэ е тхыгъэкӀэ зыгуэр хэӀущӀыӀу зэращӀ, зэрыхагъаӀуэ",
-    "isLemma": true
+    "isLemma": true,
+    "rootIds": [
+      "R-KHY_2"
+    ]
   },
   {
     "id": "L-CORPUS2-02727",
@@ -172581,7 +173008,10 @@
       "kabardian": "пащтыхьхэм"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 33, lang: kbd, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-PASHCH"
+    ]
   },
   {
     "id": "L-CORPUS2-02788",
@@ -173216,7 +173646,10 @@
       "kabardian": "зыщӏэлъ"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 33, lang: kbd, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-ZYSHCH"
+    ]
   },
   {
     "id": "L-CORPUS2-02824",
@@ -173595,7 +174028,10 @@
       "kabardian": "сымаджэщым"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 33, lang: kbd, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-SYM_1"
+    ]
   },
   {
     "id": "L-CORPUS2-02848",
@@ -173817,7 +174253,10 @@
       "kabardian": ""
     },
     "notes": "Corpus v1.0 batch-2 (freq: 33, lang: ady, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-KE"
+    ]
   },
   {
     "id": "L-CORPUS2-02863",
@@ -181235,7 +181674,10 @@
     "conceptId": "PLEASANT_TO_SEE",
     "subConceptId": "LOVABLE_LOOK",
     "taxonomyFamily": "Nitelik & Beden",
-    "rootForm": "лъ-"
+    "rootForm": "лъ-",
+    "rootIds": [
+      "R-LA_1"
+    ]
   },
   {
     "id": "L-CORPUS2-03340",
@@ -181409,7 +181851,10 @@
       "kabardian": "зыщӏэр"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 29, lang: kbd, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-ZYSHCH"
+    ]
   },
   {
     "id": "L-CORPUS2-03350",
@@ -182006,7 +182451,10 @@
       "kabardian": ""
     },
     "notes": "Corpus v1.0 batch-2 (freq: 29, lang: ady, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-UPCH"
+    ]
   },
   {
     "id": "L-CORPUS2-03387",
@@ -186200,7 +186648,10 @@
       "kabardian": "хъыбару"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 27, lang: kbd, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-KHY_2"
+    ]
   },
   {
     "id": "L-CORPUS2-03640",
@@ -188374,7 +188825,10 @@
     "conceptId": "THE_PLAY",
     "subConceptId": "GRAMMAR",
     "taxonomyFamily": "Gramer & Çekim",
-    "rootForm": "джэ-"
+    "rootForm": "джэ-",
+    "rootIds": [
+      "R-DZHE_1"
+    ]
   },
   {
     "id": "L-CORPUS2-03775",
@@ -189446,7 +189900,10 @@
     "notes": "Corpus v1.0 batch-2 (freq: 26, lang: kbd, source: none)",
     "ipa": "/уэрэд/",
     "literalMeaningAdy": "Ӏэзэу уэрэд зыгъэзащӀэ, жызыӀэ цӀыху",
-    "isLemma": true
+    "isLemma": true,
+    "rootIds": [
+      "R-UER_1"
+    ]
   },
   {
     "id": "L-CORPUS2-03838",
@@ -191363,7 +191820,10 @@
       "kabardian": "кӏэлъыкӏуэу"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 25, lang: kbd, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-KIE_2"
+    ]
   },
   {
     "id": "L-CORPUS2-03956",
@@ -191894,7 +192354,10 @@
       "kabardian": "зыщӏэм"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 25, lang: kbd, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-ZYSHCH"
+    ]
   },
   {
     "id": "L-CORPUS2-03989",
@@ -192635,7 +193098,10 @@
       "Нобэрей тхакӀуэр ауэ сытми гъащӀэм и кӀэлъыплъакӀуэ къудейкъым. Ӏуащхь."
     ],
     "literalMeaningAdy": "Зыгуэрым кӀэлъыплъыну зи къалэн цӀыху",
-    "isLemma": true
+    "isLemma": true,
+    "rootIds": [
+      "R-KIE_2"
+    ]
   },
   {
     "id": "L-CORPUS2-04030",
@@ -192661,7 +193127,10 @@
       "kabardian": "уэрэдхэр"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 25, lang: kbd, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-UER_1"
+    ]
   },
   {
     "id": "L-CORPUS2-04032",
@@ -194503,7 +194972,10 @@
       "kabardian": "зауэлӏхэр"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 24, lang: kbd, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-ZAU"
+    ]
   },
   {
     "id": "L-CORPUS2-04146",
@@ -194843,7 +195315,10 @@
       "kabardian": "пащтыхьу"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 24, lang: kbd, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-PASHCH"
+    ]
   },
   {
     "id": "L-CORPUS2-04166",
@@ -195161,7 +195636,10 @@
       "kabardian": "зыщӏэхъуэпс"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 24, lang: kbd, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-ZYSHCH"
+    ]
   },
   {
     "id": "L-CORPUS2-04185",
@@ -195224,7 +195702,10 @@
       "УэфӀым умыгъуэт уейм бгъуэтыжыркъым."
     ],
     "literalMeaningAdy": "Къешх-къес щымыӀэу, хьэуар псыӀэгъэншэу къабзэу щыщыт",
-    "isLemma": true
+    "isLemma": true,
+    "rootIds": [
+      "R-UEF"
+    ]
   },
   {
     "id": "L-CORPUS2-04188",
@@ -196283,7 +196764,10 @@
       "kabardian": ""
     },
     "notes": "Corpus v1.0 batch-2 (freq: 24, lang: ady, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-NAS"
+    ]
   },
   {
     "id": "L-CORPUS2-04261",
@@ -198060,7 +198544,10 @@
     "conceptId": "PLAY_STYLE",
     "subConceptId": "MANNER",
     "taxonomyFamily": "Düşünce & Soyut",
-    "rootForm": "джэ-"
+    "rootForm": "джэ-",
+    "rootIds": [
+      "R-DZHE_1"
+    ]
   },
   {
     "id": "L-CORPUS2-04365",
@@ -198780,7 +199267,10 @@
     "conceptId": "LOVE_OBLIQUE",
     "subConceptId": "AFFECTION_DAT",
     "taxonomyFamily": "Gramer & Çekim",
-    "rootForm": "лъ-"
+    "rootForm": "лъ-",
+    "rootIds": [
+      "R-LA_1"
+    ]
   },
   {
     "id": "L-CORPUS2-04407",
@@ -203207,7 +203697,10 @@
       "kabardian": "кӏэлъыплъыныгъэ"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 22, lang: kbd, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-KIE_2"
+    ]
   },
   {
     "id": "L-CORPUS2-04677",
@@ -203908,7 +204401,10 @@
       "kabardian": ""
     },
     "notes": "Corpus v1.0 batch-2 (freq: 22, lang: ady, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-SYM_1"
+    ]
   },
   {
     "id": "L-CORPUS2-04723",
@@ -206712,7 +207208,10 @@
       "kabardian": "зыщӏэхэм"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 21, lang: kbd, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-ZYSHCH"
+    ]
   },
   {
     "id": "L-CORPUS2-04897",
@@ -206934,7 +207433,10 @@
       "kabardian": "къэралхэр"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 21, lang: kbd, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-KE"
+    ]
   },
   {
     "id": "L-CORPUS2-04909",
@@ -209947,7 +210449,10 @@
       "kabardian": "кӏэлъыплъ"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 20, lang: kbd, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-KIE_2"
+    ]
   },
   {
     "id": "L-CORPUS2-05098",
@@ -210715,7 +211220,10 @@
       "kabardian": "зыщӏэхэр"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 20, lang: kbd, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-ZYSHCH"
+    ]
   },
   {
     "id": "L-CORPUS2-05139",
@@ -211459,7 +211967,10 @@
       "kabardian": "насыпыншагъэм"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 20, lang: kbd, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-NAS"
+    ]
   },
   {
     "id": "L-CORPUS2-05180",
@@ -215161,7 +215672,10 @@
       "Тутын Ӏугъуэ гуэрэнхэр зэман-зэманкӀэрэ щӀакӀуэ щӀагъым къыщӀиутӀыпщыкӀырти жьым иригъэпхъуатэрт."
     ],
     "literalMeaningAdy": "Куэд дэмыкӀыурэ, кӀэщӀ-кӀэщӀурэ, пӀалъэ-пӀалъэкӀэрэ",
-    "isLemma": true
+    "isLemma": true,
+    "rootIds": [
+      "R-ZEM"
+    ]
   },
   {
     "id": "L-CORPUS2-05422",
@@ -215359,7 +215873,10 @@
       "kabardian": "зэману"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 19, lang: kbd, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-ZEM"
+    ]
   },
   {
     "id": "L-CORPUS2-05436",
@@ -216244,7 +216761,10 @@
       "kabardian": "насыпым"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 19, lang: kbd, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-NAS"
+    ]
   },
   {
     "id": "L-CORPUS2-05488",
@@ -217161,7 +217681,10 @@
       "kabardian": "насыпыфӏэу"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 19, lang: kbd, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-NAS"
+    ]
   },
   {
     "id": "L-CORPUS2-05540",
@@ -219838,7 +220361,10 @@
       "kabardian": "хъыбарыфӏ"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 18, lang: kbd, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-KHY_2"
+    ]
   },
   {
     "id": "L-CORPUS2-05714",
@@ -219897,7 +220423,10 @@
       "kabardian": "абджыр"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 18, lang: kbd, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-ABD"
+    ]
   },
   {
     "id": "L-CORPUS2-05718",
@@ -220762,7 +221291,10 @@
     "conceptId": "PATH_NOMINATIVE",
     "subConceptId": "TRAIL_NOM",
     "taxonomyFamily": "Gramer & Çekim",
-    "rootForm": "лъ-"
+    "rootForm": "лъ-",
+    "rootIds": [
+      "R-LA_1"
+    ]
   },
   {
     "id": "L-CORPUS2-05771",
@@ -221812,7 +222344,10 @@
     "conceptId": "MINSTREL",
     "subConceptId": "OCCUPATION",
     "taxonomyFamily": "Toplum & Meslek",
-    "rootForm": "джэ-"
+    "rootForm": "джэ-",
+    "rootIds": [
+      "R-DZHE_1"
+    ]
   },
   {
     "id": "L-CORPUS2-05837",
@@ -222545,7 +223080,10 @@
       "kabardian": "къулейуэ"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 18, lang: kbd, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-KU"
+    ]
   },
   {
     "id": "L-CORPUS2-05878",
@@ -222875,7 +223413,10 @@
       "kabardian": "абджым"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 18, lang: kbd, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-ABD"
+    ]
   },
   {
     "id": "L-CORPUS2-05898",
@@ -226755,7 +227296,10 @@
       "kabardian": "насыпщ"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 17, lang: kbd, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-NAS"
+    ]
   },
   {
     "id": "L-CORPUS2-06156",
@@ -228137,7 +228681,10 @@
       "kabardian": "къэралми"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 17, lang: kbd, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-KE"
+    ]
   },
   {
     "id": "L-CORPUS2-06235",
@@ -228366,7 +228913,10 @@
       "kabardian": "хэкухэм"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 17, lang: kbd, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-KHEK"
+    ]
   },
   {
     "id": "L-CORPUS2-06249",
@@ -228677,7 +229227,10 @@
       "kabardian": "хъыбари"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 17, lang: kbd, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-KHY_2"
+    ]
   },
   {
     "id": "L-CORPUS2-06266",
@@ -229994,7 +230547,10 @@
       "kabardian": ""
     },
     "notes": "Corpus v1.0 batch-2 (freq: 17, lang: ady, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-KE"
+    ]
   },
   {
     "id": "L-CORPUS2-06352",
@@ -231888,7 +232444,10 @@
       "kabardian": ""
     },
     "notes": "Corpus v1.0 batch-2 (freq: 17, lang: ady, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-SHKH"
+    ]
   },
   {
     "id": "L-CORPUS2-06482",
@@ -233450,7 +234009,10 @@
       "kabardian": "къэралыгъуэм"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 16, lang: kbd, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-KE"
+    ]
   },
   {
     "id": "L-CORPUS2-06579",
@@ -233894,7 +234456,10 @@
       "kabardian": "къуажэхэм"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 16, lang: kbd, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-KU_1"
+    ]
   },
   {
     "id": "L-CORPUS2-06604",
@@ -234875,7 +235440,10 @@
     "conceptId": "PATH_OBLIQUE",
     "subConceptId": "TRAIL_DAT",
     "taxonomyFamily": "Gramer & Çekim",
-    "rootForm": "лъ-"
+    "rootForm": "лъ-",
+    "rootIds": [
+      "R-LA_1"
+    ]
   },
   {
     "id": "L-CORPUS2-06662",
@@ -235577,7 +236145,10 @@
       "kabardian": "хъыбарыфӏзехьэхэм"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 16, lang: kbd, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-KHY_2"
+    ]
   },
   {
     "id": "L-CORPUS2-06705",
@@ -235882,7 +236453,10 @@
       "ЩӀыпӀэ жыжьэ кӀуэ къэхутакӀуэхэм зыхуей хьэпшыпхэр кӀэлъызэрахьэну щӀалэ къуданхэр къащтэрт."
     ],
     "literalMeaningAdy": "Зыгуэрым и ужь иту зыгуэр къехьэкӀын",
-    "isLemma": true
+    "isLemma": true,
+    "rootIds": [
+      "R-KIE_2"
+    ]
   },
   {
     "id": "L-CORPUS2-06725",
@@ -243338,7 +243912,10 @@
       "kabardian": "теухуащ"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 15, lang: kbd, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-TEU"
+    ]
   },
   {
     "id": "L-CORPUS2-07172",
@@ -243566,7 +244143,10 @@
       "kabardian": "сымаджэу"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 15, lang: kbd, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-SYM_1"
+    ]
   },
   {
     "id": "L-CORPUS2-07188",
@@ -245423,7 +246003,10 @@
       "kabardian": "хъыбарыщӏэхэр"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 15, lang: kbd, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-KHY_2"
+    ]
   },
   {
     "id": "L-CORPUS2-07301",
@@ -248949,7 +249532,10 @@
       "kabardian": "насыпыфӏэщ"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 14, lang: kbd, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-NAS"
+    ]
   },
   {
     "id": "L-CORPUS2-07536",
@@ -249164,7 +249750,10 @@
     "conceptId": "RELIGION",
     "subConceptId": "HALAL",
     "taxonomyFamily": "İnanç/Ahlak",
-    "rootForm": "хьэ-"
+    "rootForm": "хьэ-",
+    "rootIds": [
+      "R-KHE_2"
+    ]
   },
   {
     "id": "L-CORPUS2-07548",
@@ -249344,7 +249933,10 @@
       "Сыт, си нэху, укъыщӀэкӀуар, хъыбарыщӀэ къысхуэпхьа?"
     ],
     "literalMeaningAdy": "КъаӀэрыхьагъащӀэ хъыбар, Ӏуэху екӀуэкӀым, къэхъуагъащӀэм и хъыбар",
-    "isLemma": true
+    "isLemma": true,
+    "rootIds": [
+      "R-KHY_2"
+    ]
   },
   {
     "id": "L-CORPUS2-07559",
@@ -249384,7 +249976,10 @@
       "kabardian": "сымаджэхэм"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 14, lang: kbd, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-SYM_1"
+    ]
   },
   {
     "id": "L-CORPUS2-07561",
@@ -249629,7 +250224,10 @@
       "kabardian": "уэрэдкӏэ"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 14, lang: kbd, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-UER_1"
+    ]
   },
   {
     "id": "L-CORPUS2-07578",
@@ -250624,7 +251222,10 @@
       "kabardian": "увыӏащ"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 14, lang: kbd, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-UVY_2"
+    ]
   },
   {
     "id": "L-CORPUS2-07643",
@@ -252960,7 +253561,9 @@
     },
     "notes": "Corpus v1.0 batch-2 (freq: 14, lang: kbd, source: none)",
     "ipa": "/дэӀу/",
-    "rootIds": [],
+    "rootIds": [
+      "R-DEI"
+    ],
     "wordFamilyId": "WF-DA",
     "derivation": {
       "rule": "root",
@@ -254569,7 +255172,10 @@
       "kabardian": ""
     },
     "notes": "Corpus v1.0 batch-2 (freq: 14, lang: ady, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-KHEK"
+    ]
   },
   {
     "id": "L-CORPUS2-07878",
@@ -258496,7 +259102,10 @@
       "kabardian": "къулейм"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 13, lang: kbd, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-KU"
+    ]
   },
   {
     "id": "L-CORPUS2-08132",
@@ -260109,7 +260718,10 @@
       "kabardian": "зэманри"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 13, lang: kbd, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-ZEM"
+    ]
   },
   {
     "id": "L-CORPUS2-08231",
@@ -263544,7 +264156,10 @@
       "kabardian": "бэгъуауэ"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 13, lang: kbd, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-BEG_1"
+    ]
   },
   {
     "id": "L-CORPUS2-08427",
@@ -263646,7 +264261,10 @@
       "kabardian": "насыпти"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 13, lang: kbd, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-NAS"
+    ]
   },
   {
     "id": "L-CORPUS2-08432",
@@ -264238,7 +264856,10 @@
       "kabardian": "кӏэлъыплъырт"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 13, lang: kbd, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-KIE_2"
+    ]
   },
   {
     "id": "L-CORPUS2-08465",
@@ -268698,7 +269319,10 @@
       "kabardian": ""
     },
     "notes": "Corpus v1.0 batch-2 (freq: 13, lang: ady, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-SHKH"
+    ]
   },
   {
     "id": "L-CORPUS2-08758",
@@ -269240,7 +269864,10 @@
       "kabardian": ""
     },
     "notes": "Corpus v1.0 batch-2 (freq: 13, lang: ady, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-KHEK"
+    ]
   },
   {
     "id": "L-CORPUS2-08791",
@@ -269878,7 +270505,10 @@
       "kabardian": "хъыбарыфӏу"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 12, lang: kbd, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-KHY_2"
+    ]
   },
   {
     "id": "L-CORPUS2-08832",
@@ -270027,7 +270657,10 @@
       "kabardian": "хэхам"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 12, lang: kbd, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-KHEKH"
+    ]
   },
   {
     "id": "L-CORPUS2-08841",
@@ -270406,7 +271039,10 @@
       "kabardian": "пащтыхьхэми"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 12, lang: kbd, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-PASHCH"
+    ]
   },
   {
     "id": "L-CORPUS2-08862",
@@ -271023,7 +271659,10 @@
       "kabardian": "зыщӏэу"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 12, lang: kbd, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-ZYSHCH"
+    ]
   },
   {
     "id": "L-CORPUS2-08899",
@@ -273816,7 +274455,10 @@
     "conceptId": "WILL_PLAY",
     "subConceptId": "GRAMMAR",
     "taxonomyFamily": "Gramer & Çekim",
-    "rootForm": "джэ-"
+    "rootForm": "джэ-",
+    "rootIds": [
+      "R-DZHE_1"
+    ]
   },
   {
     "id": "L-CORPUS2-09068",
@@ -275017,7 +275659,10 @@
       "kabardian": "къуажэпщым"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 12, lang: kbd, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-KU_1"
+    ]
   },
   {
     "id": "L-CORPUS2-09141",
@@ -275726,7 +276371,10 @@
       "kabardian": "къуажэдэсхэм"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 12, lang: kbd, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-KU_1"
+    ]
   },
   {
     "id": "L-CORPUS2-09185",
@@ -277725,7 +278373,10 @@
     "notes": "Corpus v1.0 batch-2 (freq: 12, lang: kbd, source: none)",
     "ipa": "/уф/",
     "literalMeaningAdy": "ЗыщӀэхъумэн, зыгуэр зытепӀэн",
-    "isLemma": true
+    "isLemma": true,
+    "rootIds": [
+      "R-ZYSHCH"
+    ]
   },
   {
     "id": "L-CORPUS2-09299",
@@ -279940,7 +280591,10 @@
       "kabardian": ""
     },
     "notes": "Corpus v1.0 batch-2 (freq: 12, lang: ady, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-NAS"
+    ]
   },
   {
     "id": "L-CORPUS2-09442",
@@ -280074,7 +280728,10 @@
       "kabardian": ""
     },
     "notes": "Corpus v1.0 batch-2 (freq: 12, lang: ady, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-UPCH"
+    ]
   },
   {
     "id": "L-CORPUS2-09451",
@@ -283035,7 +283692,10 @@
       "kabardian": ""
     },
     "notes": "Corpus v1.0 batch-2 (freq: 12, lang: ady, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-SHKH"
+    ]
   },
   {
     "id": "L-CORPUS2-09656",
@@ -285747,7 +286407,10 @@
       "kabardian": "дунейри"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 11, lang: kbd, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-DUN"
+    ]
   },
   {
     "id": "L-CORPUS2-09829",
@@ -286654,7 +287317,10 @@
     "conceptId": "OUTLAW",
     "subConceptId": "OUTLAW_BANDIT",
     "taxonomyFamily": "Toplum & Hukuk",
-    "rootForm": "хьэ-"
+    "rootForm": "хьэ-",
+    "rootIds": [
+      "R-KHE_3"
+    ]
   },
   {
     "id": "L-CORPUS2-09886",
@@ -287110,7 +287776,10 @@
       "kabardian": "къэхьи"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 11, lang: kbd, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-KE_2"
+    ]
   },
   {
     "id": "L-CORPUS2-09915",
@@ -287545,7 +288214,10 @@
       "kabardian": "мурадхэмрэ"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 11, lang: kbd, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-MUR"
+    ]
   },
   {
     "id": "L-CORPUS2-09943",
@@ -287856,7 +288528,10 @@
       "kabardian": "къэралымрэ"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 11, lang: kbd, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-KE"
+    ]
   },
   {
     "id": "L-CORPUS2-09962",
@@ -288500,7 +289175,10 @@
       "kabardian": "мурадхэм"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 11, lang: kbd, source: none)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-MUR"
+    ]
   },
   {
     "id": "L-VERIFIED-00000",
@@ -289015,7 +289693,10 @@
     "isLemma": true,
     "subConceptId": "CONTAINER",
     "taxonomyFamily": "Eşya & Araç",
-    "rootForm": "джэ-"
+    "rootForm": "джэ-",
+    "rootIds": [
+      "R-DZHE_1"
+    ]
   },
   {
     "id": "L-VERIFIED-00031",
@@ -289906,7 +290587,10 @@
       "ru": "mil. explosive, bursting; шэ ~: explosive bullet"
     },
     "subConceptId": "WEAPON_BURST",
-    "taxonomyFamily": "Nitelik & Doğa"
+    "taxonomyFamily": "Nitelik & Doğa",
+    "rootIds": [
+      "R-KE_1"
+    ]
   },
   {
     "id": "L-VERIFIED-00078",
@@ -290886,7 +291570,10 @@
     },
     "subConceptId": "REUNION_VERB",
     "taxonomyFamily": "Eylem & Fiziksel",
-    "rootForm": "лъ-"
+    "rootForm": "лъ-",
+    "rootIds": [
+      "R-LA_1"
+    ]
   },
   {
     "id": "L-VERIFIED-00120",
@@ -295389,7 +296076,10 @@
     "conceptId": "MORALITY",
     "subConceptId": "HONESTY",
     "taxonomyFamily": "Ahlak/Kişilik",
-    "rootForm": "хьэ-"
+    "rootForm": "хьэ-",
+    "rootIds": [
+      "R-KHE_3"
+    ]
   },
   {
     "id": "L-VERIFIED-00322",
@@ -296140,7 +296830,10 @@
     "ipa": "/таучэл/",
     "conceptId": null,
     "literalMeaningAdy": "таучэлмыщӀ",
-    "isLemma": true
+    "isLemma": true,
+    "rootIds": [
+      "R-TAU"
+    ]
   },
   {
     "id": "L-VERIFIED-00359",
@@ -297344,7 +298037,10 @@
       "Ар [Щамел] балигъ хъухункӀэ сымаджэрилэ зэпыту щытащ."
     ],
     "literalMeaningAdy": "болезненный, часто болеющий / Узылэ, уз зыкӀэрымыкӀ, куэдрэ сымаджэ",
-    "isLemma": true
+    "isLemma": true,
+    "rootIds": [
+      "R-SYM_1"
+    ]
   },
   {
     "id": "L-VERIFIED-00416",
@@ -297952,7 +298648,10 @@
     "notes": "Verified (freq: 7, 1.Ady-Ady_AP)",
     "ipa": "/къулейсыз/",
     "literalMeaningAdy": "бедность, убожество / Къулейсыз псалъэм къытекӀа щыӀэцӀэ",
-    "isLemma": true
+    "isLemma": true,
+    "rootIds": [
+      "R-KU"
+    ]
   },
   {
     "id": "L-VERIFIED-00444",
@@ -298338,7 +299037,10 @@
       "kabardian": "хъыбарзехьэ"
     },
     "notes": "Verified (freq: 7, 14.Kbd-En-2-Jonty)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-KHY_2"
+    ]
   },
   {
     "id": "L-VERIFIED-00462",
@@ -301050,7 +301752,10 @@
     },
     "notes": "Verified (freq: 7, 0.Ady-Ady_AIG)",
     "literalMeaningAdy": "ветренник Шъхьэубат, шӀыкӀай Ар кӀэлэ",
-    "isLemma": true
+    "isLemma": true,
+    "rootIds": [
+      "R-SHKH"
+    ]
   },
   {
     "id": "L-VERIFIED-00607",
@@ -301139,7 +301844,10 @@
     },
     "notes": "Verified (freq: 7, 0.Ady-Ady_AIG)",
     "literalMeaningAdy": "головная боль Шъхьэуз Ӏае иӀ Шъхьэуз уц",
-    "isLemma": true
+    "isLemma": true,
+    "rootIds": [
+      "R-SHKH"
+    ]
   },
   {
     "id": "L-VERIFIED-00612",
@@ -301284,7 +301992,10 @@
     "isLemma": true,
     "translations": {
       "ru": "шаль Шъхьэм тырахъорэр ары Тучаны"
-    }
+    },
+    "rootIds": [
+      "R-SHKH"
+    ]
   },
   {
     "id": "L-VERIFIED-00620",
@@ -311700,7 +312411,10 @@
     "isLemma": true,
     "translations": {
       "ru": "зэхуэзэныгъэ Type: noun Definitions: 1"
-    }
+    },
+    "rootIds": [
+      "R-ZEKH"
+    ]
   },
   {
     "id": "L-VERIFIED-01119",
@@ -313038,7 +313752,10 @@
     "isLemma": true,
     "translations": {
       "ru": "жыджэрагъ"
-    }
+    },
+    "rootIds": [
+      "R-ZHYD"
+    ]
   },
   {
     "id": "L-VERIFIED-01182",
@@ -313142,7 +313859,10 @@
       "kabardian": "дунейпсом"
     },
     "notes": "Verified (freq: 6, 13.Kbd-Ar-Jonty)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-DUN"
+    ]
   },
   {
     "id": "L-VERIFIED-01187",
@@ -315556,7 +316276,10 @@
       "kabardian": "къэралзэхуаку"
     },
     "notes": "Verified (freq: 6, 13.Kbd-Ar-Jonty)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-KE"
+    ]
   },
   {
     "id": "L-VERIFIED-01297",
@@ -322949,7 +323672,10 @@
     "isLemma": true,
     "subConceptId": "UGLY_LOOK",
     "taxonomyFamily": "Nitelik & Beden",
-    "rootForm": "лъ-"
+    "rootForm": "лъ-",
+    "rootIds": [
+      "R-LA_1"
+    ]
   },
   {
     "id": "L-VERIFIED-01686",
@@ -328406,7 +329132,10 @@
     },
     "subConceptId": "KINDNESS",
     "taxonomyFamily": "Ahlak/Kişilik",
-    "rootForm": "хьэ-"
+    "rootForm": "хьэ-",
+    "rootIds": [
+      "R-KHE_2"
+    ]
   },
   {
     "id": "L-VERIFIED-01930",
@@ -328571,7 +329300,10 @@
     "isLemma": true,
     "translations": {
       "tr": "old times"
-    }
+    },
+    "rootIds": [
+      "R-ZEM"
+    ]
   },
   {
     "id": "L-VERIFIED-01938",
@@ -328846,7 +329578,10 @@
       "kabardian": "къэуэныгъэ"
     },
     "notes": "Verified (freq: 5, 13.Kbd-Ar-Jonty)",
-    "isLemma": false
+    "isLemma": false,
+    "rootIds": [
+      "R-KE_1"
+    ]
   },
   {
     "id": "L-VERIFIED-01951",
@@ -329766,7 +330501,10 @@
     "notes": "Verified (freq: 5, 1.Ady-Ady_AP)",
     "ipa": "/къуаж/",
     "literalMeaningAdy": "загадка / Зи мыхьэнэр къэщӀэн хуейуэ щыджэгукӀэ, зым адрейм ирит псалъэ гупыр е…",
-    "isLemma": true
+    "isLemma": true,
+    "rootIds": [
+      "R-KU_1"
+    ]
   },
   {
     "id": "L-VERIFIED-01993",
@@ -330841,7 +331579,10 @@
     "isLemma": true,
     "translations": {
       "ru": "соотечественник"
-    }
+    },
+    "rootIds": [
+      "R-KHEK"
+    ]
   },
   {
     "id": "L-VERIFIED-02040",
@@ -332443,7 +333184,10 @@
     "isLemma": true,
     "translations": {
       "ru": "выиграть что-л"
-    }
+    },
+    "rootIds": [
+      "R-KE_2"
+    ]
   },
   {
     "id": "L-VERIFIED-02112",
@@ -333339,7 +334083,10 @@
       "ЗэрагъэщӀэгъуэнур ящӀэртэкъым Къарэмырзэ и бэшэчагъыу къыщӀэкӀар."
     ],
     "literalMeaningAdy": "выносливость / Бэшэч 1 псалъэм къытекӀа щыӀэцӀэ",
-    "isLemma": true
+    "isLemma": true,
+    "rootIds": [
+      "R-BESH"
+    ]
   },
   {
     "id": "L-VERIFIED-02154",
@@ -338462,7 +339209,10 @@
     },
     "notes": "Verified (freq: 5, 0.Ady-Ady_AIG)",
     "literalMeaningAdy": "несчастный, -ая, -ое Насып зимыӀ",
-    "isLemma": true
+    "isLemma": true,
+    "rootIds": [
+      "R-NAS"
+    ]
   },
   {
     "id": "L-VERIFIED-02414",
@@ -338592,7 +339342,10 @@
     "isLemma": true,
     "translations": {
       "tr": "مشط الرأس"
-    }
+    },
+    "rootIds": [
+      "R-SHKH"
+    ]
   },
   {
     "id": "L-VERIFIED-02422",
@@ -339506,7 +340259,10 @@
     "isLemma": true,
     "translations": {
       "tr": "مزعج، ثرثار"
-    }
+    },
+    "rootIds": [
+      "R-SHKH"
+    ]
   },
   {
     "id": "L-VERIFIED-02473",
@@ -340117,7 +340873,10 @@
     "isLemma": true,
     "translations": {
       "tr": "أصلع، أجرد الرأس"
-    }
+    },
+    "rootIds": [
+      "R-SHKH"
+    ]
   },
   {
     "id": "L-VERIFIED-02507",
@@ -341405,7 +342164,10 @@
     "isLemma": true,
     "translations": {
       "ru": "лъым. <font"
-    }
+    },
+    "rootIds": [
+      "R-BEG_1"
+    ]
   },
   {
     "id": "L-VERIFIED-02578",
@@ -344201,7 +344963,10 @@
     "isLemma": true,
     "translations": {
       "tr": "karanlık"
-    }
+    },
+    "rootIds": [
+      "R-KIY_1"
+    ]
   },
   {
     "id": "L-PLANT-000",
@@ -344646,7 +345411,10 @@
       "tr": "Şans / Mutluluk"
     },
     "subConceptId": "EMOTION",
-    "taxonomyFamily": "Duygu & Zihin"
+    "taxonomyFamily": "Duygu & Zihin",
+    "rootIds": [
+      "R-NAS"
+    ]
   },
   {
     "id": "L-PROMPT-00002",
@@ -345183,7 +345951,9 @@
     "partOfSpeech": "noun",
     "notes": "PROMPT entegrasyonu (genel)",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-UER_1"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -345349,7 +346119,9 @@
     "partOfSpeech": "noun",
     "notes": "PROMPT entegrasyonu (genel)",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-ZAU"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -345424,7 +346196,9 @@
     "partOfSpeech": "noun",
     "notes": "PROMPT entegrasyonu (genel)",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-DZHE_1"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -352151,7 +352925,9 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-ABD"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -354130,7 +354906,9 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-BG_2"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -354150,7 +354928,9 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-BG_2"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -354170,7 +354950,9 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-BG_2"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -354190,7 +354972,9 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-BG_2"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -354210,7 +354994,9 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-BG_2"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -354230,7 +355016,9 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-BG_2"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -354250,7 +355038,9 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-BG_2"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -354276,7 +355066,9 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-BG_2"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -354301,7 +355093,9 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-BG_2"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -354321,7 +355115,9 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-BG_2"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -354346,7 +355142,9 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-BG_2"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -354366,7 +355164,9 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-BG_2"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -354386,7 +355186,9 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-BG_2"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -354406,7 +355208,9 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-BG_2"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -354758,7 +355562,9 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-BEL_2"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -357046,7 +357852,9 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-BEG_1"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -366116,7 +366924,9 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-DEL"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -366621,7 +367431,9 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-DZHE_1"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -366644,7 +367456,9 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-DZHE_1"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -366668,7 +367482,9 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-DZHE_1"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -366691,7 +367507,9 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-DZHE_1"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -366714,7 +367532,9 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-DZHE_1"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -367282,7 +368102,9 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-DZA"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -368650,7 +369472,9 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-DEI"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -368671,7 +369495,9 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-DEI"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -368691,7 +369517,9 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-DEI"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -377433,7 +378261,9 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-ZAU"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -377453,7 +378283,9 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-ZAU"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -379515,7 +380347,9 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-ZEG"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -380891,7 +381725,9 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-ZED"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -380911,7 +381747,9 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-ZED"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -383176,7 +384014,9 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-ZEM"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -393614,7 +394454,9 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-KIE_2"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -393634,7 +394476,9 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-KIE_2"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -393654,7 +394498,9 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-KIE_2"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -393674,7 +394520,9 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-KIE_2"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -393695,7 +394543,9 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-KIE_2"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -393715,7 +394565,9 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-KIE_2"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -393735,7 +394587,9 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-KIE_2"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -393755,7 +394609,9 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-KIE_2"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -393775,7 +394631,9 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-KIE_2"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -393795,7 +394653,9 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-KIE_2"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -393815,7 +394675,9 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-KIE_2"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -393835,7 +394697,9 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-KIE_2"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -393855,7 +394719,9 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-KIE_2"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -393875,7 +394741,9 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-KIE_2"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -393896,7 +394764,9 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-KIE_2"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -393916,7 +394786,9 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-KIE_2"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -393936,7 +394808,9 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-KIE_2"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -393956,7 +394830,9 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-KIE_2"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -393976,7 +394852,9 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-KIE_2"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -393996,7 +394874,9 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-KIE_2"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -394016,7 +394896,9 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-KIE_2"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -394037,7 +394919,9 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-KIE_2"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -394057,7 +394941,9 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-KIE_2"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -394077,7 +394963,9 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-KIE_2"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -394097,7 +394985,9 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-KIE_2"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -394117,7 +395007,9 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-KIE_2"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -394137,7 +395029,9 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-KIE_2"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -394157,7 +395051,9 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-KIE_2"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -394177,7 +395073,9 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-KIE_2"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -394202,7 +395100,9 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-KIE_2"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -394222,7 +395122,9 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-KIE_2"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -394242,7 +395144,9 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-KIE_2"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -394262,7 +395166,9 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-KIE_2"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -394282,7 +395188,9 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-KIE_2"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -394302,7 +395210,9 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-KIE_2"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -394322,7 +395232,9 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-KIE_2"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -394342,7 +395254,9 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-KIE_2"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -394362,7 +395276,9 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-KIE_2"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -394382,7 +395298,9 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-KIE_2"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -396477,7 +397395,9 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-KA"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -401350,7 +402270,9 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-KU_1"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -401370,7 +402292,9 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-KU_1"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -401395,7 +402319,9 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-KU_1"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -401415,7 +402341,9 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-KU_1"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -401435,7 +402363,9 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-KU_1"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -415162,7 +416092,9 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-KE_1"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -415425,7 +416357,9 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-KE_2"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -416822,7 +417756,9 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-LA_1"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -417520,7 +418456,9 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-LY"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -417543,7 +418481,9 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-LY"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -419826,7 +420766,9 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-MAZ"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -419846,7 +420788,9 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-MAZ"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -422885,7 +423829,9 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-NAS"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -423681,7 +424627,9 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-NYK"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -423701,7 +424649,9 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-NYK"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -423721,7 +424671,9 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-NYK"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -423741,7 +424693,9 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-NYK"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -423761,7 +424715,9 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-NYK"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -423782,7 +424738,9 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-NYK"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -423807,7 +424765,9 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-NYK"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -423827,7 +424787,9 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-NYK"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -423847,7 +424809,9 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-NYK"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -423867,7 +424831,9 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-NYK"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -423887,7 +424853,9 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-NYK"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -427145,7 +428113,9 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-PASHCH"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -428441,7 +429411,9 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-PSA"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -431535,7 +432507,9 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-PSHCHE"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -436672,7 +437646,9 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-TAU"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -441193,7 +442169,9 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-UVY_2"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -441213,7 +442191,9 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-UG"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -449098,7 +450078,9 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-KHU_1"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -449138,7 +450120,9 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-KHY_2"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -449158,7 +450142,9 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-KHY_2"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -449178,7 +450164,9 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-KHY_2"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -449198,7 +450186,9 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-KHY_2"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -450577,7 +451567,9 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-KHE_2"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -451176,7 +452168,9 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-KHE_3"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -451199,7 +452193,9 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-KHE_3"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
@@ -466876,7 +467872,9 @@
     ],
     "notes": "KBD sozluk: 5.Ady-Rus_Qarden.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-KHEK"
+    ],
     "wordFamilyId": null,
     "derivation": null,
     "dialectVariants": {
