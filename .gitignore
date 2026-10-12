@@ -171,3 +171,9 @@ data/corpus/wiktionary-dumps/
 _scripts/*.txt
 _scripts/*.json
 _scripts/**/*.bak
+
+# Backups
+*.bak-*
+
+# Wiktionary dump ve ara dosyalar (buyuk dosyalar, git'te tutulmaz)
+_wiktionary/
