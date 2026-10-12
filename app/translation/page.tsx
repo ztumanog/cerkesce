@@ -33,19 +33,24 @@ export default function TranslationPage() {
           </div>
         )}
 
-        {!loading && !error && results.length > 0 && (
-          <div>
-            <p className="text-gray-600 dark:text-gray-400 mb-4">{results.length} sonuç bulundu</p>
-            <TranslationTable rows={results.map((entry) => ({
-              kavram: entry.word,
-              'Türkçe': entry.meaning,
-              detaylar: entry.meanings?.map((m) => ({
-                tanim: m.text,
-                kaynak_sozluk: entry.groupName,
-              })) || [],
-            }))} />
-          </div>
-        )}
+       {!loading && !error && results.length > 0 && (
+  <div>
+    <p className="text-gray-600 dark:text-gray-400 mb-4">
+      {results.length} sonuç bulundu
+    </p>
+    <TranslationTable
+      rows={results.map((entry) => ({
+        kavram: entry.word,
+        'Türkçe': entry.meaning,
+        detaylar: (entry.detaylar ?? []).map((d: { tanim?: string; dialect?: string }) => ({
+          tanim: d.tanim ?? "",
+          kaynak_sozluk: entry.groupName,
+          dialect: d.dialect,
+        })),
+      }))}
+    />
+  </div>
+)}
 
         {!loading && !error && results.length === 0 && query && (
           <div className="text-center py-8">

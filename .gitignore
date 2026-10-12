@@ -177,3 +177,6 @@ _scripts/**/*.bak
 
 # Wiktionary dump ve ara dosyalar (buyuk dosyalar, git'te tutulmaz)
 _wiktionary/
+
+# Backup dosyalar
+*.bak-*
