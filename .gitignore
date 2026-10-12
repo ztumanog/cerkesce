@@ -168,3 +168,6 @@ data/analysis/
 # Büyük dump dosyaları
 data/corpus/*.xml
 data/corpus/wiktionary-dumps/
+_scripts/*.txt
+_scripts/*.json
+_scripts/**/*.bak
