@@ -1,0 +1,171 @@
+import sys
+sys.stdout.reconfigure(encoding="utf-8")
+import json
+from pathlib import Path
+
+lex_path = Path("public/data/linguistic/lexemes.json")
+lex = json.loads(lex_path.read_text(encoding="utf-8"))
+mevcut = {l["id"] for l in lex}
+
+# IPA -> Kabardeyce cevirileri
+yeni = [
+    # Aile
+    {"id": "L-DALHXAN", "form": "дэлъхан", "literalMeaning": "?", "cat": "Family"},
+    {"id": "L-DALHXU", "form": "дэлъху", "literalMeaning": "erkek kardes (kizin)", "cat": "Family"},
+    {"id": "L-DEHAN", "form": "дэхан", "literalMeaning": "?", "cat": "Family"},
+    {"id": "L-DEGHUASA", "form": "дэгъуаса", "literalMeaning": "?", "cat": "Family"},
+    {"id": "L-DEGHUAPSHEH", "form": "дэгъуапщэхь", "literalMeaning": "?", "cat": "Family"},
+    # Hayvanlar
+    {"id": "L-DZA", "form": "дза", "literalMeaning": "?", "cat": "Animal"},
+    {"id": "L-DZEN", "form": "дзэн", "literalMeaning": "?", "cat": "Animal"},
+    {"id": "L-DZHADEW", "form": "джадэу", "literalMeaning": "?", "cat": "Animal"},
+    {"id": "L-DZHAN", "form": "джан", "literalMeaning": "?", "cat": "Animal"},
+    # Bitkiler
+    {"id": "L-F1AMESHCH1", "form": "фӀамыщӀ", "literalMeaning": "komur", "cat": "Flora"},
+    {"id": "L-FAYTSAY", "form": "файцай", "literalMeaning": "?", "cat": "Flora"},
+    {"id": "L-F1ETS1A", "form": "фӀэцӀа", "literalMeaning": "?", "cat": "Flora"},
+    {"id": "L-GUASHA", "form": "гуащэ", "literalMeaning": "prenses", "cat": "People"},
+    {"id": "L-GUAPE", "form": "гуапэ", "literalMeaning": "sicak, samimi", "cat": "Adjective"},
+    {"id": "L-GUASHCH", "form": "гуащ", "literalMeaning": "?", "cat": "Noun"},
+    {"id": "L-GU", "form": "гу", "literalMeaning": "kalp", "cat": "Anatomy"},
+    {"id": "L-GUPSESAN", "form": "гупсэсан", "literalMeaning": "?", "cat": "Verb"},
+    {"id": "L-GUGHA", "form": "гугъа", "literalMeaning": "umut", "cat": "Noun"},
+    # Renkler
+    {"id": "L-KHE2", "form": "хьэ", "literalMeaning": "kopek", "cat": "Animal"},
+    {"id": "L-KHEN", "form": "хьэн", "literalMeaning": "?", "cat": "Verb"},
+    # Fiiller
+    {"id": "L-YASHCHAN", "form": "ещан", "literalMeaning": "?", "cat": "Verb"},
+    {"id": "L-YADZHAKUE", "form": "еджакуэ", "literalMeaning": "?", "cat": "Verb"},
+    {"id": "L-YADZHAN", "form": "еджан", "literalMeaning": "okumak", "cat": "Verb"},
+    {"id": "L-YADZHAZHEN", "form": "еджажэн", "literalMeaning": "?", "cat": "Verb"},
+    {"id": "L-YAGUPSESAU", "form": "егупсэсауэ", "literalMeaning": "?", "cat": "Verb"},
+    {"id": "L-YAGUPSESAN", "form": "егупсэсэн", "literalMeaning": "?", "cat": "Verb"},
+    {"id": "L-YALHAN", "form": "елъан", "literalMeaning": "?", "cat": "Verb"},
+    {"id": "L-YALHATAKHEN", "form": "елъэтахэн", "literalMeaning": "?", "cat": "Verb"},
+    {"id": "L-YEDZHE", "form": "еджэ", "literalMeaning": "oku!", "cat": "Verb"},
+    # Anatomi
+    {"id": "L-LHA", "form": "лъа", "literalMeaning": "?", "cat": "Anatomy"},
+    {"id": "L-LHAGHE", "form": "лъагэ", "literalMeaning": "yuksek", "cat": "Adjective"},
+    {"id": "L-LHAGHEGHU", "form": "лъагэгъу", "literalMeaning": "yukseklik", "cat": "Noun"},
+    {"id": "L-LHAKUE", "form": "лъакъуэ", "literalMeaning": "bacak", "cat": "Anatomy"},
+    {"id": "L-LHEGHUN", "form": "лъэгъун", "literalMeaning": "gormek", "cat": "Verb"},
+    {"id": "L-LAZHE", "form": "лажьэ", "literalMeaning": "kusur, keder", "cat": "Noun"},
+    {"id": "L-LHEDAN", "form": "лъэдан", "literalMeaning": "?", "cat": "Verb"},
+    {"id": "L-LHEN", "form": "лъэн", "literalMeaning": "atlamak", "cat": "Verb"},
+    {"id": "L-LAZHAKUE", "form": "лажьакуэ", "literalMeaning": "?", "cat": "Noun"},
+    {"id": "L-LAZHEN", "form": "лажьэн", "literalMeaning": "calismak", "cat": "Verb"},
+    {"id": "L-LHY", "form": "лъы", "literalMeaning": "kan", "cat": "Anatomy"},
+    # Aile
+    {"id": "L-MALHXE", "form": "малъхъэ", "literalMeaning": "damat", "cat": "Family"},
+    {"id": "L-MAZTKHERUQAF", "form": "мазтхьэрыкъуаф", "literalMeaning": "?", "cat": "Noun"},
+    {"id": "L-MESHCHENE", "form": "мэщынэ", "literalMeaning": "?", "cat": "Noun"},
+    {"id": "L-MYVE", "form": "мывэ", "literalMeaning": "tas", "cat": "Nature"},
+    {"id": "L-NA", "form": "на", "literalMeaning": "?", "cat": "Noun"},
+    {"id": "L-NANE", "form": "нанэ", "literalMeaning": "nine", "cat": "Family"},
+    {"id": "L-NAPE2", "form": "напэ", "literalMeaning": "yuz", "cat": "Anatomy"},
+    {"id": "L-NEGHUEDZHA", "form": "нэгъуэджа", "literalMeaning": "?", "cat": "Noun"},
+    {"id": "L-NEKHU", "form": "нэху", "literalMeaning": "isik", "cat": "Noun"},
+    {"id": "L-NYBZH", "form": "ныбжь", "literalMeaning": "yas", "cat": "Noun"},
+    {"id": "L-NYBZHEGHU2", "form": "ныбжьэгъу", "literalMeaning": "arkadas", "cat": "People"},
+    {"id": "L-PE3", "form": "пэ", "literalMeaning": "burun", "cat": "Anatomy"},
+    {"id": "L-P1ASHCH1E", "form": "пӀащӀэ", "literalMeaning": "kalin", "cat": "Adjective"},
+    {"id": "L-PAPSHE", "form": "папщӀэ", "literalMeaning": "icin", "cat": "Postposition"},
+    {"id": "L-PASE", "form": "пасэ", "literalMeaning": "eski", "cat": "Adjective"},
+    {"id": "L-PASEU", "form": "пасэу", "literalMeaning": "eskiden", "cat": "Adverb"},
+    {"id": "L-PADZEZHEN", "form": "падзэжэн", "literalMeaning": "?", "cat": "Verb"},
+    {"id": "L-PADZHAN", "form": "паджан", "literalMeaning": "?", "cat": "Verb"},
+    {"id": "L-PADZHAZHEN", "form": "паджажэн", "literalMeaning": "?", "cat": "Verb"},
+    {"id": "L-PSHCHA", "form": "пща", "literalMeaning": "?", "cat": "Noun"},
+    {"id": "L-PSHCHADAY", "form": "пщадай", "literalMeaning": "?", "cat": "Noun"},
+    {"id": "L-PSHCHADZHYZH", "form": "пщаджджыжь", "literalMeaning": "?", "cat": "Noun"},
+    {"id": "L-PSHCHY", "form": "пщы", "literalMeaning": "prens", "cat": "People"},
+    {"id": "L-PSHCHEN", "form": "пщэн", "literalMeaning": "?", "cat": "Verb"},
+    {"id": "L-PSHCHYPHU", "form": "пщыпхъу", "literalMeaning": "kocanin kiz kardesi", "cat": "Family"},
+    {"id": "L-PSHCHYQHUE", "form": "пщыкъуэ", "literalMeaning": "kocanin kardesi", "cat": "Family"},
+    {"id": "L-PSHCHTEN", "form": "пщтэн", "literalMeaning": "?", "cat": "Verb"},
+    {"id": "L-PEDZAN", "form": "пэдзан", "literalMeaning": "?", "cat": "Verb"},
+    {"id": "L-PL1Y2", "form": "плӀы", "literalMeaning": "dort", "cat": "Number"},
+    {"id": "L-PLHYZH3", "form": "плъыжь", "literalMeaning": "kirmizi", "cat": "Color"},
+    {"id": "L-PSE2", "form": "псы", "literalMeaning": "su", "cat": "Nature"},
+    {"id": "L-PSHYNE", "form": "пшынэ", "literalMeaning": "akordeon", "cat": "Noun"},
+    {"id": "L-PSESA", "form": "псыса", "literalMeaning": "?", "cat": "Noun"},
+    {"id": "L-PKHASHCHAMESHCH", "form": "пхъащхьэмыщхьэ", "literalMeaning": "meyve", "cat": "Flora"},
+    {"id": "L-PKHU2", "form": "пхъу", "literalMeaning": "kiz", "cat": "Family"},
+    {"id": "L-PKHUZH", "form": "пхъужь", "literalMeaning": "?", "cat": "Flora"},
+    {"id": "L-KASHCHXHUE", "form": "къащхъуэ", "literalMeaning": "?", "cat": "Noun"},
+    {"id": "L-KESHCHTEN", "form": "къэщтэн", "literalMeaning": "almak", "cat": "Verb"},
+    {"id": "L-KEHWAUAFE", "form": "къэхьауафэ", "literalMeaning": "?", "cat": "Noun"},
+    {"id": "L-KEPSHEHEN", "form": "къэпщэхьэн", "literalMeaning": "?", "cat": "Verb"},
+    {"id": "L-KEPSHTEN", "form": "къэпщтэн", "literalMeaning": "?", "cat": "Verb"},
+    {"id": "L-KARAL", "form": "къарал", "literalMeaning": "?", "cat": "Noun"},
+    {"id": "L-KEGHEPSHTEN", "form": "къэгъэпщтэн", "literalMeaning": "?", "cat": "Verb"},
+    {"id": "L-KESHENEN", "form": "къэшынэн", "literalMeaning": "?", "cat": "Verb"},
+    {"id": "L-KEDEHAN", "form": "къэдэхьан", "literalMeaning": "?", "cat": "Verb"},
+    {"id": "L-KEPERYKHEN", "form": "къэпэрыхэн", "literalMeaning": "?", "cat": "Verb"},
+    {"id": "L-KEKHEKHEN", "form": "къэхэхэн", "literalMeaning": "?", "cat": "Verb"},
+    {"id": "L-KUA", "form": "къуа", "literalMeaning": "?", "cat": "Noun"},
+    {"id": "L-KUAZHE", "form": "къуажэ", "literalMeaning": "koy", "cat": "Noun"},
+    {"id": "L-KUASHCH", "form": "къуащ", "literalMeaning": "?", "cat": "Noun"},
+    {"id": "L-KUEDAMA", "form": "къуэдама", "literalMeaning": "?", "cat": "Noun"},
+    {"id": "L-KUKHUE", "form": "къухьэ", "literalMeaning": "gemi", "cat": "Noun"},
+    {"id": "L-KUKHAFEZHEY", "form": "къухьафэжьей", "literalMeaning": "?", "cat": "Noun"},
+    {"id": "L-KUKHEZHY", "form": "къухьэжь", "literalMeaning": "?", "cat": "Noun"},
+    {"id": "L-KUKHEZHAY", "form": "къухьэжьай", "literalMeaning": "?", "cat": "Noun"},
+    {"id": "L-GHE2", "form": "гъэ", "literalMeaning": "yil", "cat": "Time"},
+    {"id": "L-GHEMAKHUE", "form": "гъэмахуэ", "literalMeaning": "yaz", "cat": "Time"},
+    {"id": "L-GHATKHE2", "form": "гъатхэ", "literalMeaning": "ilkbahar", "cat": "Time"},
+    {"id": "L-GHESHCHTEN", "form": "гъэщтэн", "literalMeaning": "korkutmak", "cat": "Verb"},
+    {"id": "L-GHEPSHTEN", "form": "гъэпщтэн", "literalMeaning": "?", "cat": "Verb"},
+    {"id": "L-GHESHENEN", "form": "гъэшынэн", "literalMeaning": "?", "cat": "Verb"},
+    {"id": "L-GHUESHCH1", "form": "гъуэщӀ", "literalMeaning": "yeni", "cat": "Adjective"},
+    {"id": "L-SHCHEN5", "form": "щэн", "literalMeaning": "satmak", "cat": "Verb"},
+    {"id": "L-SHCHYNE", "form": "щынэ", "literalMeaning": "kuzu", "cat": "Animal"},
+    {"id": "L-SHCHYNEGHE", "form": "щынэгъэ", "literalMeaning": "?", "cat": "Noun"},
+    {"id": "L-SHCHYNEGHENSHE", "form": "щынэгъэншэ", "literalMeaning": "?", "cat": "Noun"},
+    {"id": "L-SHCHYNEGHECH1E", "form": "щынэгъэчӀэ", "literalMeaning": "?", "cat": "Noun"},
+    {"id": "L-SHCHYNEGHUE", "form": "щынэгъуэ", "literalMeaning": "?", "cat": "Noun"},
+    {"id": "L-SHCHYNEGHUENSHE", "form": "щынэгъуэншэ", "literalMeaning": "?", "cat": "Noun"},
+    {"id": "L-SHCHYNEN", "form": "щынэн", "literalMeaning": "?", "cat": "Verb"},
+    {"id": "L-SHCHYPHU", "form": "щыпхъу", "literalMeaning": "?", "cat": "Family"},
+    {"id": "L-TAYLHEDAN", "form": "тэйлъэдан", "literalMeaning": "?", "cat": "Verb"},
+    {"id": "L-TAYKHUAN", "form": "тэйхуан", "literalMeaning": "?", "cat": "Verb"},
+    {"id": "L-TKHE2", "form": "тхьэ", "literalMeaning": "tanri", "cat": "Religion"},
+    {"id": "L-TKHEMADE2", "form": "тхьэмадэ", "literalMeaning": "kocanin babasi", "cat": "Family"},
+    {"id": "L-TKHEUSYKHE", "form": "тхьэусыха", "literalMeaning": "?", "cat": "Noun"},
+    {"id": "L-TKHEUSYKHEN", "form": "тхьэусыхан", "literalMeaning": "?", "cat": "Verb"},
+    {"id": "L-TKHEUSYKHEZHEN", "form": "тхьэусыхажэн", "literalMeaning": "?", "cat": "Verb"},
+    {"id": "L-CH1EH", "form": "чӀэхь", "literalMeaning": "?", "cat": "Noun"},
+    {"id": "L-CH1EHAGHE", "form": "чӀэхьагъ", "literalMeaning": "?", "cat": "Noun"},
+    {"id": "L-TSYXH2", "form": "цӀых", "literalMeaning": "kisi", "cat": "People"},
+    {"id": "L-TSYXHEBZ", "form": "цӀыхэбз", "literalMeaning": "?", "cat": "Noun"},
+    {"id": "L-TSYXHU3", "form": "цӀыху", "literalMeaning": "insan", "cat": "People"},
+    {"id": "L-TSYXHUGHE", "form": "цӀыхугъэ", "literalMeaning": "insanlik", "cat": "Noun"},
+    {"id": "L-TSYXHUKHU", "form": "цӀыхухъу", "literalMeaning": "erkek", "cat": "People"},
+    {"id": "L-TKHUASHCH", "form": "тхъуащ", "literalMeaning": "?", "cat": "Noun"},
+    {"id": "L-VASEMAKHUE", "form": "уэсэмахуэ", "literalMeaning": "?", "cat": "Time"},
+    {"id": "L-VASEPSCHEH", "form": "уэсэпщэхь", "literalMeaning": "?", "cat": "Noun"},
+    {"id": "L-VASEZHASHCH", "form": "уэсэжащ", "literalMeaning": "?", "cat": "Noun"},
+    {"id": "L-WEDZEFA", "form": "удзыфэ", "literalMeaning": "yesil", "cat": "Color"},
+    {"id": "L-WENE", "form": "унэ", "literalMeaning": "ev", "cat": "Noun"},
+    {"id": "L-KHEKHEN", "form": "хэхэн", "literalMeaning": "secmek", "cat": "Verb"},
+    {"id": "L-KHY3", "form": "хы", "literalMeaning": "deniz", "cat": "Nature"},
+    {"id": "L-KHUABE", "form": "хуабэ", "literalMeaning": "sicak", "cat": "Adjective"},
+    {"id": "L-KHUABEVAKH", "form": "хуабэвах", "literalMeaning": "?", "cat": "Noun"},
+    {"id": "L-KHUAEN", "form": "хуаен", "literalMeaning": "?", "cat": "Verb"},
+    {"id": "L-ZHA", "form": "жьа", "literalMeaning": "?", "cat": "Noun"},
+    {"id": "L-ZHAUE", "form": "жьауэ", "literalMeaning": "?", "cat": "Noun"},
+]
+
+eklenen = 0
+for y in yeni:
+    if y["id"] not in mevcut:
+        y["partOfSpeech"] = "noun"
+        y["wordFamilyId"] = f"WF-{y.pop('cat')}"
+        y["corpusFrequency"] = 0
+        y["notes"] = "C-11.3: IPA kaynakli."
+        lex.append(y)
+        eklenen += 1
+
+lex_path.write_text(json.dumps(lex, ensure_ascii=False, indent=2), encoding="utf-8")
+print(f"Eklenen: {eklenen}")
+print(f"Toplam lexeme: {len(lex)}")
