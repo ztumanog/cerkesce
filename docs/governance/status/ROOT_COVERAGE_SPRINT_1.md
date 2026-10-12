@@ -10,28 +10,31 @@
 
 | Metrik | Baslangic | Bitis | Fark |
 |---|---|---|---|
-| Toplam kok | 69 | 206 | +137 |
-| Root'lu kayit | 4.527 | 7.651 | +3.124 |
-| Coverage | %18,8 | %31,8 | +13,0 puan |
+| Toplam kok | 69 | 295 | +226 |
+| Root'lu kayit | 4.527 | 8.025 | +3.498 |
+| Coverage | %18,8 | %33,4 | +14,6 puan |
 
 ---
 
 ## 2. YAPILANLAR
 
-### 2.1 Kok Envanteri Genisletildi
+### 2.1 Kok Envanteri Genisletildi (3 tur)
 - Ilk 50 aday (Gemini) -> +46 kok
 - Son 91 aday (Gemini) -> +91 kok
-- Toplam: 69 -> 206 kok
+- 89 aday (NotebookLM) -> +89 kok
+- Toplam: 69 -> 295 kok
 
 ### 2.2 Fuzzy Match Uygulandi
 - 2.900 kayit atandi (ilk 50 kok)
 - 224 kayit atandi (son 91 kok)
-- Toplam: +3.124 kayit
+- 374 kayit atandi (295 kok)
+- Toplam: +3.498 kayit
 
 ### 2.3 Yontem
 - startswith prefix match
-- Uzunluk siralamasi (uzun kokler once)
+- Uzunluk siralamasi
 - Normalize (I -> I)
+- Latin ID'ler (Kiril yok)
 
 ---
 
@@ -39,42 +42,16 @@
 
 | Hedef | Gercek | Fark |
 |---|---|---|
-| %35 | %31,8 | -3,2 puan |
+| %35 | %33,4 | -1,6 puan |
 
-Hedefe %91 ulasildi.
-
----
-
-## 4. BULGULAR
-
-### 4.1 Prefix Match Yetersiz
-- Son 91 kok sadece +224 kayit getirdi
-- Cunku bu kokler nadir kelimeler
-- Lexeme'lerde turemis form var
-
-### 4.2 Orta Match Gerekli
-- Suffix + orta match
-- Ama yanlis eslesme riski
-- Sprint 2'de degerlendirilecek
-
-### 4.3 Kalan Root'suz
-- 16.384 kayit root'suz
-- %68,2
-- Yeni strateji gerekli
+Hedefe %95 ulasildi.
 
 ---
 
-## 5. SIRADAKI ADIM
+## 4. KALAN
 
-### Sprint 1 Kapanisi
-- Root Coverage %31,8
-- 206 kok
-- 7.651 root'lu kayit
-
-### Sprint 2: WordFamily Coverage
-- Mevcut: %21,5
-- Hedef: %80+
-- Yontem: wordFamilyId doldurma
+- 16.010 kayit root'suz (%66,6)
+- Sprint 2: WordFamily Coverage
 
 ---
 
