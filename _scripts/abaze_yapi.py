@@ -1,28 +1,48 @@
-﻿import json
+import json
+import os
 from pathlib import Path
 
-p = Path("public/data/27.Tur-Ady_Abaze.json")
-data = json.loads(p.read_text(encoding="utf-8"))
+os.chdir("E:/projeler/Cerkesce")
 
-print(f"Anahtarlar: {list(data.keys())}")
-print(f"words tipi: {type(data['words']).__name__}")
+# 27.Tur-Ady_Abaze.json
+f = Path('public/data/27.Tur-Ady_Abaze.json')
+data = json.loads(f.read_text(encoding='utf-8'))
 
-words = data["words"]
-if isinstance(words, dict):
-    print(f"words anahtar sayısı: {len(words)}")
-    ilk_anahtar = list(words.keys())[0]
-    print(f"\nİlk anahtar: {ilk_anahtar}")
-    print(f"İlk değer: {json.dumps(words[ilk_anahtar], ensure_ascii=False, indent=2)[:500]}")
+print(f"Tip: {type(data)}")
+print(f"Keys: {list(data.keys()) if isinstance(data, dict) else 'Liste'}")
+print()
+
+if isinstance(data, dict):
+    print(f"Title: {data.get('title', '?')}")
+    print(f"ID: {data.get('id', '?')}")
+    print(f"FromLang: {data.get('fromLang', '?')}")
+    print(f"ToLang: {data.get('toLang', '?')}")
+    print(f"Format: {data.get('format', '?')}")
     
-    # Örnek cümle var mı?
-    sayac = 0
-    for k, v in words.items():
-        if isinstance(v, dict):
-            for key, val in v.items():
-                if isinstance(val, str) and len(val) > 50:
-                    if "◊" in val or "~" in val:
-                        print(f"\n  {k} [{key}]: {val[:200]}")
-                        sayac += 1
-                        break
-        if sayac >= 3:
-            break
+    if 'words' in data:
+        words = data['words']
+        print(f"\nToplam kelime: {len(words)}")
+        print()
+        print("=== ORNEK KAYITLAR (ilk 5) ===")
+        for i, (k, v) in enumerate(words.items()):
+            if i >= 5:
+                break
+            print(f"Key: '{k}'")
+            if isinstance(v, dict):
+                print(f"  spelling: {v.get('spelling', '')[:100]}")
+                print(f"  html: {v.get('full_definition_in_html', '')[:200]}")
+            else:
+                print(f"  Value: {str(v)[:200]}")
+            print()
+elif isinstance(data, list):
+    print(f"Uzunluk: {len(data)}")
+    print()
+    print("=== ORNEK KAYITLAR (ilk 5) ===")
+    for i, item in enumerate(data[:5]):
+        print(f"  {i}. Tip: {type(item)}")
+        if isinstance(item, dict):
+            print(f"     Keys: {list(item.keys())}")
+            print(f"     {json.dumps(item, ensure_ascii=False)[:300]}")
+        else:
+            print(f"     {str(item)[:300]}")
+        print()
