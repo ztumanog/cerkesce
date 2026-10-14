@@ -672,7 +672,8 @@
     "isLemma": true,
     "translations": {
       "en": "arm and hand",
-      "ru": "рука"
+      "ru": "рука",
+      "tr": "El, kol"
     },
     "subConceptId": "HAND_BODY",
     "taxonomyFamily": "İnsan & Beden",
@@ -841,7 +842,8 @@
     "isLemma": true,
     "translations": {
       "ru": "тело (человека, животного); телосложение",
-      "en": "body (human, animal); physique"
+      "en": "body (human, animal); physique",
+      "tr": "Beden; vücut yapısı"
     },
     "subConceptId": "BODY_PARTS",
     "taxonomyFamily": "İnsan & Beden",
@@ -16449,7 +16451,8 @@
     "isLemma": true,
     "translations": {
       "en": "arm",
-      "ru": "рука от плеча до кисти"
+      "ru": "рука от плеча до кисти",
+      "tr": "Omuzdan bileğe kadar kol"
     },
     "subConceptId": "ARM_SHOULDER",
     "taxonomyFamily": "İnsan & Beden",
@@ -34142,7 +34145,8 @@
     "isLemma": true,
     "translations": {
       "en": "feed, fodder, forage, food",
-      "ru": "корм; фураж, еда, пища"
+      "ru": "корм; фураж, еда, пища",
+      "tr": "Yem, hayvan yemi"
     },
     "subConceptId": "ANIMAL_FEED",
     "taxonomyFamily": "Doğa & Hayvan",
@@ -500293,7 +500297,8 @@
     "ipa": "/ʔe:'jǝʑ/",
     "translations": {
       "en": "disgusting, repugnant, repulsive, obnoxious, ugly, distasteful, horrid",
-      "ru": "противный (о внешнем виде)"
+      "ru": "противный (о внешнем виде)",
+      "tr": "İğrenç, sevimsiz, antipatik"
     }
   },
   {
@@ -500365,7 +500370,8 @@
     "ipa": "/'ʔʷɑ:pʹɐ/",
     "translations": {
       "en": "threshing floor",
-      "ru": "ток; гумно"
+      "ru": "ток; гумно",
+      "tr": "Harman yeri"
     }
   },
   {
@@ -500402,7 +500408,8 @@
       "trSource": "8.Ady-Tur_Huvaj.json",
       "trVerified": false,
       "en": "rumour",
-      "ru": "молва, слух"
+      "ru": "молва, слух",
+      "tr": "Söylenti, şayia"
     },
     "ipa": "/'ʔʷɑ:tɐ/"
   },
@@ -502068,7 +502075,8 @@
     "ipa": "/ʔʷǝm'pʹɑ:fʹɐ/",
     "translations": {
       "en": "soft, mild, obedient, docile, submissive, manageable (about sb)",
-      "ru": "мягкий, податливый, послушный (о ком-л.)"
+      "ru": "мягкий, податливый, послушный (о ком-л.)",
+      "tr": "Yumuşak, uysal"
     }
   },
   {
@@ -502650,7 +502658,8 @@
       "trSource": "8.Ady-Tur_Huvaj.json",
       "trVerified": false,
       "en": "part, piece, share",
-      "ru": "часть, кусок, доля"
+      "ru": "часть, кусок, доля",
+      "tr": "Parça, kısım, pay"
     },
     "ipa": "/'ʔʷǝpʹɕʹɐ/",
     "dictionaryEvidence": [
@@ -503804,7 +503813,8 @@
     "ipa": "/ʔʷǝ'ħǝn/",
     "translations": {
       "en": "honour, dignity, face",
-      "ru": "честь"
+      "ru": "честь",
+      "tr": "Dolaşmak, gezinmek"
     }
   },
   {
@@ -504245,7 +504255,8 @@
       "trSource": "8.Ady-Tur_Huvaj.json",
       "trVerified": false,
       "en": "courtyard",
-      "ru": "двор"
+      "ru": "двор",
+      "tr": "Avlu"
     },
     "ipa": "/ʔʷɐgʷ/"
   },
@@ -504907,7 +504918,8 @@
       "trSource": "8.Ady-Tur_Huvaj.json",
       "trVerified": false,
       "en": "fingernail",
-      "ru": "ноготь пальца руки"
+      "ru": "ноготь пальца руки",
+      "tr": "El tırnağı"
     },
     "ipa": "/ʔɐ'bʑɑ:nɐ/",
     "dictionaryEvidence": [
@@ -505773,7 +505785,8 @@
       "trSource": "8.Ady-Tur_Huvaj.json",
       "trVerified": false,
       "en": "way of treating a disease or sickness.",
-      "ru": "способ лечения какой-л. болезни"
+      "ru": "способ лечения какой-л. болезни",
+      "tr": "Şifa, derman"
     },
     "ipa": "/ʔɐ'zɐʁʷɐ/"
   },
@@ -505834,7 +505847,8 @@
     "ipa": "/'ʔɐkʹʷɐ/",
     "translations": {
       "en": "good, excellent, skillful, masterful, dexterous",
-      "ru": "хороший, отменный, умелый, искусный; ловкий"
+      "ru": "хороший, отменный, умелый, искусный; ловкий",
+      "tr": "İyi, mükemmel, kaliteli"
     }
   },
   {
@@ -506653,7 +506667,8 @@
     "ipa": "/ʔɐ'pɕɐχʷ/",
     "translations": {
       "en": "bracelet, armband, wristband, bangle",
-      "ru": "браслет"
+      "ru": "браслет",
+      "tr": "Bilezik"
     }
   },
   {
@@ -507578,7 +507593,8 @@
     "ipa": "/ʔɐɕʹ/",
     "translations": {
       "en": "back of the hand",
-      "ru": "тыльная сторона ладони"
+      "ru": "тыльная сторона ладони",
+      "tr": "Elin arkası"
     }
   },
   {
@@ -684340,6 +684356,644 @@
     "conceptId": "KADIM",
     "translations": {
       "tr": "Fok"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV2-IАГЪ",
+    "form": "Ӏагъ",
+    "partOfSpeech": "noun",
+    "conceptId": "UNKNOWN",
+    "translations": {
+      "tr": "Ah, tüh"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV2-IАГЪУ",
+    "form": "Ӏагъу",
+    "partOfSpeech": "noun",
+    "conceptId": "UNKNOWN",
+    "translations": {
+      "tr": "Ah, tüh"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV2-IАУ",
+    "form": "Ӏау",
+    "partOfSpeech": "noun",
+    "conceptId": "UNKNOWN",
+    "translations": {
+      "tr": "Hah!, Ya!, Tabii!"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV2-IЕИГЪУЭ",
+    "form": "Ӏеигъуэ",
+    "partOfSpeech": "noun",
+    "conceptId": "UNKNOWN",
+    "translations": {
+      "tr": "Uğursuz zaman, kötü dönem"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV2-IЕИН",
+    "form": "Ӏеин",
+    "partOfSpeech": "noun",
+    "conceptId": "UNKNOWN",
+    "translations": {
+      "tr": "Kötü olmak, fena olmak"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV2-IЕЙУЭ",
+    "form": "Ӏейуэ",
+    "partOfSpeech": "noun",
+    "conceptId": "UNKNOWN",
+    "translations": {
+      "tr": "Çok fazla, aşırı derecede"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV2-IЕЯГЪ",
+    "form": "Ӏеягъ",
+    "partOfSpeech": "noun",
+    "conceptId": "UNKNOWN",
+    "translations": {
+      "tr": "Kötülük, şer"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV2-IЕЯЩIЭ",
+    "form": "ӀеящӀэ",
+    "partOfSpeech": "noun",
+    "conceptId": "UNKNOWN",
+    "translations": {
+      "tr": "Kötülük yapan, kötü niyetli"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV2-IИБЛИС",
+    "form": "Ӏиблис",
+    "partOfSpeech": "noun",
+    "conceptId": "DIN",
+    "translations": {
+      "tr": "İblis, şeytan"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV2-IИЗЫН",
+    "form": "Ӏизын",
+    "partOfSpeech": "noun",
+    "conceptId": "UNKNOWN",
+    "translations": {
+      "tr": "İzin, müsaade"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV2-IИЗЫНЫНШЭУ",
+    "form": "Ӏизыныншэу",
+    "partOfSpeech": "noun",
+    "conceptId": "UNKNOWN",
+    "translations": {
+      "tr": "İzinsiz, müsaadesiz"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV2-IИМАМ",
+    "form": "Ӏимам",
+    "partOfSpeech": "noun",
+    "conceptId": "DIN",
+    "translations": {
+      "tr": "İmam, din adamı"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV2-IИМАН",
+    "form": "Ӏиман",
+    "partOfSpeech": "noun",
+    "conceptId": "DIN",
+    "translations": {
+      "tr": "İman"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV2-IИМАНСЫЗ",
+    "form": "Ӏимансыз",
+    "partOfSpeech": "noun",
+    "conceptId": "DIN",
+    "translations": {
+      "tr": "İmansız, dinsiz"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV2-IИМАНЫНШАГЪЭ",
+    "form": "Ӏиманыншагъэ",
+    "partOfSpeech": "noun",
+    "conceptId": "DIN",
+    "translations": {
+      "tr": "İmansızlık"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV2-IИМАНЫНШЭ",
+    "form": "Ӏиманыншэ",
+    "partOfSpeech": "noun",
+    "conceptId": "DIN",
+    "translations": {
+      "tr": "Dinsiz, inançsız"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV2-IИНДЖЫЛ",
+    "form": "Ӏинджыл",
+    "partOfSpeech": "noun",
+    "conceptId": "DIN",
+    "translations": {
+      "tr": "İncil"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV2-IИСТОФРИЛЭХЬ",
+    "form": "Ӏистофрилэхь",
+    "partOfSpeech": "noun",
+    "conceptId": "DIN",
+    "translations": {
+      "tr": "Estağfirullah"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV2-IИЧРАМ",
+    "form": "Ӏичрам",
+    "partOfSpeech": "noun",
+    "conceptId": "UNKNOWN",
+    "translations": {
+      "tr": "İkram"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV2-IУ",
+    "form": "Ӏу",
+    "partOfSpeech": "noun",
+    "conceptId": "DIL",
+    "translations": {
+      "tr": "Kabardey-Çerkes alfabesinin 60. harfi"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV2-IУБ",
+    "form": "Ӏуб",
+    "partOfSpeech": "noun",
+    "conceptId": "UNKNOWN",
+    "translations": {
+      "tr": "Yudum, yutkunma hareketi"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV2-IУБАНЭ",
+    "form": "Ӏубанэ",
+    "partOfSpeech": "noun",
+    "conceptId": "HASTALIK",
+    "translations": {
+      "tr": "Ağız içi iltihabı, stomatit"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV2-IУБГЪУЭ",
+    "form": "Ӏубгъуэ",
+    "partOfSpeech": "noun",
+    "conceptId": "EV",
+    "translations": {
+      "tr": "Geniş ağızlı kap/kavanoz"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV2-IУБЗЭХЫКIЫН",
+    "form": "ӀубзэхыкӀын",
+    "partOfSpeech": "noun",
+    "conceptId": "UNKNOWN",
+    "translations": {
+      "tr": "Yok olmak, kaybolup gitmek"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV2-IУБЫГЪУЭИЗ",
+    "form": "Ӏубыгъуэиз",
+    "partOfSpeech": "noun",
+    "conceptId": "UNKNOWN",
+    "translations": {
+      "tr": "Bir yudum dolusu"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV2-IУБЫДЗ",
+    "form": "Ӏубыдз",
+    "partOfSpeech": "noun",
+    "conceptId": "ALET",
+    "translations": {
+      "tr": "Tırpanın topuk/dip kısmındaki delik"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV2-IУБЫЖЫН",
+    "form": "Ӏубыжын",
+    "partOfSpeech": "noun",
+    "conceptId": "UNKNOWN",
+    "translations": {
+      "tr": "Bir şeyi tekrar baş aşağı kapatmak"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV2-IУБЫН",
+    "form": "Ӏубын",
+    "partOfSpeech": "noun",
+    "conceptId": "UNKNOWN",
+    "translations": {
+      "tr": "Devirmek, baş aşağı çevirmek"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV2-IУВ",
+    "form": "Ӏув",
+    "partOfSpeech": "noun",
+    "conceptId": "UNKNOWN",
+    "translations": {
+      "tr": "Yoğun, sık, gür"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV2-IУВАГЪ",
+    "form": "Ӏувагъ",
+    "partOfSpeech": "noun",
+    "conceptId": "UNKNOWN",
+    "translations": {
+      "tr": "Yoğunluk, sıklık, gürlük"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV2-IУВУ",
+    "form": "Ӏуву",
+    "partOfSpeech": "noun",
+    "conceptId": "UNKNOWN",
+    "translations": {
+      "tr": "Sıkça, yoğun bir şekilde"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV2-IУГЪУЭ",
+    "form": "Ӏугъуэ",
+    "partOfSpeech": "noun",
+    "conceptId": "DOGA",
+    "translations": {
+      "tr": "Duman"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV2-IУГЪУЭНШЭ",
+    "form": "Ӏугъуэншэ",
+    "partOfSpeech": "noun",
+    "conceptId": "DOGA",
+    "translations": {
+      "tr": "Dumansız"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV2-IУДАНЭ",
+    "form": "Ӏуданэ",
+    "partOfSpeech": "noun",
+    "conceptId": "ALET",
+    "translations": {
+      "tr": "İplik, ip"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV2-IУДАНЭМАСТЭ",
+    "form": "Ӏуданэмастэ",
+    "partOfSpeech": "noun",
+    "conceptId": "ALET",
+    "translations": {
+      "tr": "İğne iplik"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV2-IУДЖЭIУЩЭ",
+    "form": "ӀуджэӀущэ",
+    "partOfSpeech": "noun",
+    "conceptId": "UNKNOWN",
+    "translations": {
+      "tr": "Fakir, yoksul, gariban"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV2-IУДЫР",
+    "form": "Ӏудыр",
+    "partOfSpeech": "noun",
+    "conceptId": "UNKNOWN",
+    "translations": {
+      "tr": "Açgözlü, hırslı, doyumsuz"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV2-IУДЭ",
+    "form": "Ӏудэ",
+    "partOfSpeech": "noun",
+    "conceptId": "UNKNOWN",
+    "translations": {
+      "tr": "Dantel; püskül, saçak"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV2-IУЖ",
+    "form": "Ӏуж",
+    "partOfSpeech": "noun",
+    "conceptId": "ALET",
+    "translations": {
+      "tr": "İplik, bükülmüş iplik"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV2-IУЖАЖЭ",
+    "form": "Ӏужажэ",
+    "partOfSpeech": "noun",
+    "conceptId": "UNKNOWN",
+    "translations": {
+      "tr": "Yaltaq, dalkavuk"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV2-IУЗАГЪ(Э)",
+    "form": "Ӏузагъ(э)",
+    "partOfSpeech": "noun",
+    "conceptId": "UNKNOWN",
+    "translations": {
+      "tr": "Darlık"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV2-IУЗЭ",
+    "form": "Ӏузэ",
+    "partOfSpeech": "noun",
+    "conceptId": "UNKNOWN",
+    "translations": {
+      "tr": "Dar"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV2-IУЛЪХЬЭ",
+    "form": "Ӏулъхьэ",
+    "partOfSpeech": "noun",
+    "conceptId": "YEMEK",
+    "translations": {
+      "tr": "Küçük parça, lokma"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV2-IУМПIАФIАГЪ(Э)",
+    "form": "ӀумпӀафӀагъ(э)",
+    "partOfSpeech": "noun",
+    "conceptId": "UNKNOWN",
+    "translations": {
+      "tr": "Yumuşakbaşlılık, uysallık"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV2-IУМПIЭ",
+    "form": "ӀумпӀэ",
+    "partOfSpeech": "noun",
+    "conceptId": "ALET",
+    "translations": {
+      "tr": "Dizgin, yular"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV2-IУН",
+    "form": "Ӏун",
+    "partOfSpeech": "noun",
+    "conceptId": "UNKNOWN",
+    "translations": {
+      "tr": "Yayılmak, dağılmak (ses, koku)"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV2-IУНАЛЪЭ",
+    "form": "Ӏуналъэ",
+    "partOfSpeech": "noun",
+    "conceptId": "ALET",
+    "translations": {
+      "tr": "Çivi ve alet kutusu"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV2-IУНКIАХУЭ",
+    "form": "ӀункӀахуэ",
+    "partOfSpeech": "noun",
+    "conceptId": "YEMEK",
+    "translations": {
+      "tr": "Kabuk, kepek, kışır"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV2-IУНКIЫБЗЭ",
+    "form": "ӀункӀыбзэ",
+    "partOfSpeech": "noun",
+    "conceptId": "ALET",
+    "translations": {
+      "tr": "Kilit"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV2-IУНКIЫБЗЭIУХ",
+    "form": "ӀункӀыбзэӀух",
+    "partOfSpeech": "noun",
+    "conceptId": "ALET",
+    "translations": {
+      "tr": "Anahtar"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV2-IУНКIЫБЗЭКЪЭБ",
+    "form": "ӀункӀыбзэкъэб",
+    "partOfSpeech": "noun",
+    "conceptId": "ALET",
+    "translations": {
+      "tr": "Asma kilit"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV2-IУНЭ",
+    "form": "Ӏунэ",
+    "partOfSpeech": "noun",
+    "conceptId": "ALET",
+    "translations": {
+      "tr": "Çivi"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV2-IУНЭУАЛЪЭ",
+    "form": "Ӏунэуалъэ",
+    "partOfSpeech": "noun",
+    "conceptId": "ALET",
+    "translations": {
+      "tr": "Dübel"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV2-IУНЭХЭЧ",
+    "form": "Ӏунэхэч",
+    "partOfSpeech": "noun",
+    "conceptId": "ALET",
+    "translations": {
+      "tr": "Keser, çivi söken alet"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV2-IУНЭЩI",
+    "form": "ӀунэщӀ",
+    "partOfSpeech": "noun",
+    "conceptId": "UNKNOWN",
+    "translations": {
+      "tr": "Aç, karnı boş"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV2-IУПС",
+    "form": "Ӏупс",
+    "partOfSpeech": "noun",
+    "conceptId": "VUCUT",
+    "translations": {
+      "tr": "Tükürük, salya"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV2-IУПХЪУЭ",
+    "form": "Ӏупхъуэ",
+    "partOfSpeech": "noun",
+    "conceptId": "EV",
+    "translations": {
+      "tr": "Perde, stor perde"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV2-IУПЩI",
+    "form": "ӀупщӀ",
+    "partOfSpeech": "noun",
+    "conceptId": "UNKNOWN",
+    "translations": {
+      "tr": "Açık, net, belirgin, berrak"
     },
     "ipa": "",
     "rootIds": []
