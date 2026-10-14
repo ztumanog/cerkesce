@@ -27639,7 +27639,10 @@
     "conceptId": "TABLE_TOP",
     "subConceptId": "TABLE_HEAD",
     "taxonomyFamily": "Eşya & Mutfak",
-    "rootForm": "Ӏэ-"
+    "rootForm": "Ӏэ-",
+    "translations": {
+      "tr": "başköşe"
+    }
   },
   {
     "id": "L-D0B1D0B6D18D-2",
@@ -684994,6 +684997,1920 @@
     "conceptId": "UNKNOWN",
     "translations": {
       "tr": "Açık, net, belirgin, berrak"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IА",
+    "form": "Ӏа",
+    "partOfSpeech": "noun",
+    "conceptId": "VUCUT",
+    "translations": {
+      "tr": "el / kol"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IАБИЙ",
+    "form": "Ӏабий",
+    "partOfSpeech": "noun",
+    "conceptId": "ALET",
+    "translations": {
+      "tr": "yaba, harman çatalı"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IАБЖЬ",
+    "form": "Ӏабжь",
+    "partOfSpeech": "noun",
+    "conceptId": "ALET",
+    "translations": {
+      "tr": "kulp, tutamak"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IАБЖЬАНЭ",
+    "form": "Ӏабжьанэ",
+    "partOfSpeech": "noun",
+    "conceptId": "VUCUT",
+    "translations": {
+      "tr": "el tırnağı"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IАБЖЬЭ",
+    "form": "Ӏабжьэ",
+    "partOfSpeech": "noun",
+    "conceptId": "VUCUT",
+    "translations": {
+      "tr": "avuç"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IАБЖЪЭ",
+    "form": "Ӏабжъэ",
+    "partOfSpeech": "noun",
+    "conceptId": "VUCUT",
+    "translations": {
+      "tr": "tırnak / çatal tırnak"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IАБДЗАЩ",
+    "form": "Ӏабдзащ",
+    "partOfSpeech": "noun",
+    "conceptId": "VUCUT",
+    "translations": {
+      "tr": "el bileği / el ayası"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IАБЫЛ",
+    "form": "Ӏабыл",
+    "partOfSpeech": "noun",
+    "conceptId": "ALET",
+    "translations": {
+      "tr": "kürek"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IАБЭ",
+    "form": "Ӏабэ",
+    "partOfSpeech": "noun",
+    "conceptId": "VERB",
+    "translations": {
+      "tr": "ellemek, dokunmak"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IАБЭН",
+    "form": "Ӏабэн",
+    "partOfSpeech": "noun",
+    "conceptId": "VERB",
+    "translations": {
+      "tr": "yakalamak, dokunmaya çalışmak"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IАВЭ",
+    "form": "Ӏавэ",
+    "partOfSpeech": "noun",
+    "conceptId": "UNKNOWN",
+    "translations": {
+      "tr": "aptal, budala"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IАГАПIЭ",
+    "form": "ӀагапӀэ",
+    "partOfSpeech": "noun",
+    "conceptId": "ALET",
+    "translations": {
+      "tr": "kulp yeri, tutacak"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IАГУ",
+    "form": "Ӏагу",
+    "partOfSpeech": "noun",
+    "conceptId": "VUCUT",
+    "translations": {
+      "tr": "avuç içi"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IАГУЛЪ",
+    "form": "Ӏагулъ",
+    "partOfSpeech": "noun",
+    "conceptId": "GIYIM",
+    "translations": {
+      "tr": "eldiven"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IАДЖЭ",
+    "form": "Ӏаджэ",
+    "partOfSpeech": "noun",
+    "conceptId": "UNKNOWN",
+    "translations": {
+      "tr": "çok, fazla"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IАДЭ",
+    "form": "Ӏадэ",
+    "partOfSpeech": "noun",
+    "conceptId": "ALET",
+    "translations": {
+      "tr": "pense, kıskaç"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IАДЗЭ",
+    "form": "Ӏадзэ",
+    "partOfSpeech": "noun",
+    "conceptId": "UNKNOWN",
+    "translations": {
+      "tr": "ordu, asker"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IАЖИ",
+    "form": "Ӏажи",
+    "partOfSpeech": "noun",
+    "conceptId": "ALET",
+    "translations": {
+      "tr": "kızak"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IАЖЭ",
+    "form": "Ӏажэ",
+    "partOfSpeech": "noun",
+    "conceptId": "ALET",
+    "translations": {
+      "tr": "araba, kağnı"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IАЗЭ",
+    "form": "Ӏазэ",
+    "partOfSpeech": "noun",
+    "conceptId": "UNKNOWN",
+    "translations": {
+      "tr": "becerikli, usta"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IАЗАГЪЭ",
+    "form": "Ӏазагъэ",
+    "partOfSpeech": "noun",
+    "conceptId": "UNKNOWN",
+    "translations": {
+      "tr": "ustalık, beceri"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IАЗО",
+    "form": "Ӏазо",
+    "partOfSpeech": "noun",
+    "conceptId": "MESLEK",
+    "translations": {
+      "tr": "eczacı, hekim"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IАКЪЫЛ",
+    "form": "Ӏакъыл",
+    "partOfSpeech": "noun",
+    "conceptId": "UNKNOWN",
+    "translations": {
+      "tr": "akıl, zeka"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IАКЪЫЛЫФIЭ",
+    "form": "ӀакъылыфӀэ",
+    "partOfSpeech": "noun",
+    "conceptId": "UNKNOWN",
+    "translations": {
+      "tr": "akıllı, zeki"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IАКЪЫЛЖЬ",
+    "form": "Ӏакъылжь",
+    "partOfSpeech": "noun",
+    "conceptId": "UNKNOWN",
+    "translations": {
+      "tr": "bilge"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IАКЪЫЛСЫЗ",
+    "form": "Ӏакъылсыз",
+    "partOfSpeech": "noun",
+    "conceptId": "UNKNOWN",
+    "translations": {
+      "tr": "akılsız, cahil"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IАКЪУЖЬ",
+    "form": "Ӏакъужь",
+    "partOfSpeech": "noun",
+    "conceptId": "UNKNOWN",
+    "translations": {
+      "tr": "sakat, topal"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IАЛЭ",
+    "form": "Ӏалэ",
+    "partOfSpeech": "noun",
+    "conceptId": "UNKNOWN",
+    "translations": {
+      "tr": "yabani, evcil olmayan"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IАМАЛ",
+    "form": "Ӏамал",
+    "partOfSpeech": "noun",
+    "conceptId": "UNKNOWN",
+    "translations": {
+      "tr": "çare, imkan, yöntem"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IАМАЛСЫЗ",
+    "form": "Ӏамалсыз",
+    "partOfSpeech": "noun",
+    "conceptId": "UNKNOWN",
+    "translations": {
+      "tr": "çaresiz, mecburen"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IАМАЛЫНШАГЪЭ",
+    "form": "Ӏамалыншагъэ",
+    "partOfSpeech": "noun",
+    "conceptId": "UNKNOWN",
+    "translations": {
+      "tr": "çaresizlik"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IАМАТ",
+    "form": "Ӏамат",
+    "partOfSpeech": "noun",
+    "conceptId": "EV",
+    "translations": {
+      "tr": "kap kacak"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IАМЭ",
+    "form": "Ӏамэ",
+    "partOfSpeech": "noun",
+    "conceptId": "ALET",
+    "translations": {
+      "tr": "alet, edevat"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IАНАБЖЬЭ",
+    "form": "Ӏанабжьэ",
+    "partOfSpeech": "noun",
+    "conceptId": "EV",
+    "translations": {
+      "tr": "tepsi"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IАНЭ",
+    "form": "Ӏанэ",
+    "partOfSpeech": "noun",
+    "conceptId": "EV",
+    "translations": {
+      "tr": "sofra, masa"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IАНЭГУ",
+    "form": "Ӏанэгу",
+    "partOfSpeech": "noun",
+    "conceptId": "EV",
+    "translations": {
+      "tr": "sofra ortası"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IАНЭЩХЬЭ",
+    "form": "Ӏанэщхьэ",
+    "partOfSpeech": "noun",
+    "conceptId": "EV",
+    "translations": {
+      "tr": "sofra başı"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IАПЛI",
+    "form": "ӀаплӀ",
+    "partOfSpeech": "noun",
+    "conceptId": "VERB",
+    "translations": {
+      "tr": "kucaklaşma"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IАПЛIЭН",
+    "form": "ӀаплӀэн",
+    "partOfSpeech": "noun",
+    "conceptId": "VERB",
+    "translations": {
+      "tr": "kucaklamak"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IАППIЭ",
+    "form": "ӀаппӀэ",
+    "partOfSpeech": "noun",
+    "conceptId": "UNKNOWN",
+    "translations": {
+      "tr": "terbiye, büyütme"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IАПЫIЭ",
+    "form": "ӀапыӀэ",
+    "partOfSpeech": "noun",
+    "conceptId": "UNKNOWN",
+    "translations": {
+      "tr": "yardım, destek"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IАПЫIЭГЪУ",
+    "form": "ӀапыӀэгъу",
+    "partOfSpeech": "noun",
+    "conceptId": "MESLEK",
+    "translations": {
+      "tr": "yardımcı"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IАПЭ",
+    "form": "Ӏапэ",
+    "partOfSpeech": "noun",
+    "conceptId": "VUCUT",
+    "translations": {
+      "tr": "parmak / el parmağı"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IАПЭИЖИ",
+    "form": "Ӏапэижи",
+    "partOfSpeech": "noun",
+    "conceptId": "GIYIM",
+    "translations": {
+      "tr": "yüzük"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IАПЭКIЭ",
+    "form": "ӀапэкӀэ",
+    "partOfSpeech": "noun",
+    "conceptId": "VUCUT",
+    "translations": {
+      "tr": "parmak uçları"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IАПЭЛЪАЩЭ",
+    "form": "Ӏапэлъащэ",
+    "partOfSpeech": "noun",
+    "conceptId": "UNKNOWN",
+    "translations": {
+      "tr": "beceriksiz, sakar"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IАПЭПIЭ",
+    "form": "ӀапэпӀэ",
+    "partOfSpeech": "noun",
+    "conceptId": "UNKNOWN",
+    "translations": {
+      "tr": "parmak izi"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IАРГЪО",
+    "form": "Ӏаргъо",
+    "partOfSpeech": "noun",
+    "conceptId": "HAYVANLAR",
+    "translations": {
+      "tr": "öveç, atsineği"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IАРГЪЭЩ",
+    "form": "Ӏаргъэщ",
+    "partOfSpeech": "noun",
+    "conceptId": "EV",
+    "translations": {
+      "tr": "çatı katı, samanlık"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IАРАМ",
+    "form": "Ӏарам",
+    "partOfSpeech": "noun",
+    "conceptId": "UNKNOWN",
+    "translations": {
+      "tr": "yabani"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IАРАП",
+    "form": "Ӏарап",
+    "partOfSpeech": "noun",
+    "conceptId": "UNKNOWN",
+    "translations": {
+      "tr": "Arap"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IАРУ",
+    "form": "Ӏару",
+    "partOfSpeech": "noun",
+    "conceptId": "UNKNOWN",
+    "translations": {
+      "tr": "uysal, sakin"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IАРШ",
+    "form": "Ӏарш",
+    "partOfSpeech": "noun",
+    "conceptId": "UNKNOWN",
+    "translations": {
+      "tr": "arşın"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IАРЫСЭ",
+    "form": "Ӏарысэ",
+    "partOfSpeech": "noun",
+    "conceptId": "UNKNOWN",
+    "translations": {
+      "tr": "evcil"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IАРЫСЭНЫГЪЭ",
+    "form": "Ӏарысэныгъэ",
+    "partOfSpeech": "noun",
+    "conceptId": "UNKNOWN",
+    "translations": {
+      "tr": "evcillik"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IАРЫХА",
+    "form": "Ӏарыха",
+    "partOfSpeech": "noun",
+    "conceptId": "UNKNOWN",
+    "translations": {
+      "tr": "alınmış, seçilmiş"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IАТЭ",
+    "form": "Ӏатэ",
+    "partOfSpeech": "noun",
+    "conceptId": "UNKNOWN",
+    "translations": {
+      "tr": "demet, bağlam"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IАТЭН",
+    "form": "Ӏатэн",
+    "partOfSpeech": "noun",
+    "conceptId": "VERB",
+    "translations": {
+      "tr": "kaldırmak, kalkmak"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IАУЭ",
+    "form": "Ӏауэ",
+    "partOfSpeech": "noun",
+    "conceptId": "SES",
+    "translations": {
+      "tr": "gürültü, patırtı"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IАЩЭ",
+    "form": "Ӏащэ",
+    "partOfSpeech": "noun",
+    "conceptId": "WEAPON",
+    "translations": {
+      "tr": "silah"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IАЩЭГУ",
+    "form": "Ӏащэгу",
+    "partOfSpeech": "noun",
+    "conceptId": "WEAPON",
+    "translations": {
+      "tr": "mühimmat"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IАЩЭШХУЭ",
+    "form": "Ӏащэшхуэ",
+    "partOfSpeech": "noun",
+    "conceptId": "WEAPON",
+    "translations": {
+      "tr": "ağır silah"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IАЩЭЗЭЩ",
+    "form": "Ӏащэзэщ",
+    "partOfSpeech": "noun",
+    "conceptId": "MESLEK",
+    "translations": {
+      "tr": "silahçı"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IЕЙГЪЭ",
+    "form": "Ӏейгъэ",
+    "partOfSpeech": "noun",
+    "conceptId": "UNKNOWN",
+    "translations": {
+      "tr": "kötülük, hınç"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IЕКIУ",
+    "form": "ӀекӀу",
+    "partOfSpeech": "noun",
+    "conceptId": "UNKNOWN",
+    "translations": {
+      "tr": "uygun, yakışan"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IЕКIУН",
+    "form": "ӀекӀун",
+    "partOfSpeech": "noun",
+    "conceptId": "VERB",
+    "translations": {
+      "tr": "yakışmak, uymak"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IЕХЫН",
+    "form": "Ӏехын",
+    "partOfSpeech": "noun",
+    "conceptId": "VERB",
+    "translations": {
+      "tr": "almak, indirmek"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IЕШЫН",
+    "form": "Ӏешын",
+    "partOfSpeech": "noun",
+    "conceptId": "VERB",
+    "translations": {
+      "tr": "götürmek, çekmek"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IИГЪЭН",
+    "form": "Ӏигъэн",
+    "partOfSpeech": "noun",
+    "conceptId": "VERB",
+    "translations": {
+      "tr": "sıkmak, basmak"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IИЖЫН",
+    "form": "Ӏижын",
+    "partOfSpeech": "noun",
+    "conceptId": "VERB",
+    "translations": {
+      "tr": "sıkıp çıkarmak"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IИЗ",
+    "form": "Ӏиз",
+    "partOfSpeech": "noun",
+    "conceptId": "UNKNOWN",
+    "translations": {
+      "tr": "dolu, eksiksiz"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IИЗНЫГЪЭ",
+    "form": "Ӏизныгъэ",
+    "partOfSpeech": "noun",
+    "conceptId": "UNKNOWN",
+    "translations": {
+      "tr": "doluluk"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IИКЪУН",
+    "form": "Ӏикъун",
+    "partOfSpeech": "noun",
+    "conceptId": "VERB",
+    "translations": {
+      "tr": "yetmek, kafi gelmek"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IИНЫН",
+    "form": "Ӏинын",
+    "partOfSpeech": "noun",
+    "conceptId": "VERB",
+    "translations": {
+      "tr": "büyük olmak"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IИСЫН",
+    "form": "Ӏисын",
+    "partOfSpeech": "noun",
+    "conceptId": "VERB",
+    "translations": {
+      "tr": "oturmak, kalmak"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IИХЫН",
+    "form": "Ӏихын",
+    "partOfSpeech": "noun",
+    "conceptId": "VERB",
+    "translations": {
+      "tr": "almak, elinden almak"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IО",
+    "form": "Ӏо",
+    "partOfSpeech": "noun",
+    "conceptId": "VERB",
+    "translations": {
+      "tr": "der, söylüyor"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IОБГЭН",
+    "form": "Ӏобгэн",
+    "partOfSpeech": "noun",
+    "conceptId": "VERB",
+    "translations": {
+      "tr": "azarlamak, sövmek"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IОГЪУ",
+    "form": "Ӏогъу",
+    "partOfSpeech": "noun",
+    "conceptId": "DOGA",
+    "translations": {
+      "tr": "duman"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IОГЪУЭ",
+    "form": "Ӏогъуэ",
+    "partOfSpeech": "noun",
+    "conceptId": "TARIM",
+    "translations": {
+      "tr": "harman, ürün"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IОДЖЫН",
+    "form": "Ӏоджын",
+    "partOfSpeech": "noun",
+    "conceptId": "VERB",
+    "translations": {
+      "tr": "çağırmak, seslenmek"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IОЖЫН",
+    "form": "Ӏожын",
+    "partOfSpeech": "noun",
+    "conceptId": "VERB",
+    "translations": {
+      "tr": "karşılamaya koşmak"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IОКIЫН",
+    "form": "ӀокӀын",
+    "partOfSpeech": "noun",
+    "conceptId": "VERB",
+    "translations": {
+      "tr": "karşılaşmak, çıkmak"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IОМАЩIЭ",
+    "form": "ӀомащӀэ",
+    "partOfSpeech": "noun",
+    "conceptId": "UNKNOWN",
+    "translations": {
+      "tr": "az konuşan, sessiz"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IОМАХУЭ",
+    "form": "Ӏомахуэ",
+    "partOfSpeech": "noun",
+    "conceptId": "UNKNOWN",
+    "translations": {
+      "tr": "uğurlu, bereketli"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IОМЫГЪУ",
+    "form": "Ӏомыгъу",
+    "partOfSpeech": "noun",
+    "conceptId": "UNKNOWN",
+    "translations": {
+      "tr": "çekilmez, katlanılmaz"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IОНЫХЬ",
+    "form": "Ӏоныхь",
+    "partOfSpeech": "noun",
+    "conceptId": "UNKNOWN",
+    "translations": {
+      "tr": "hediye, armağan"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IОПЕЛЪЭН",
+    "form": "Ӏопелъэн",
+    "partOfSpeech": "noun",
+    "conceptId": "VERB",
+    "translations": {
+      "tr": "öpmek"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IОПЛЪЫН",
+    "form": "Ӏоплъын",
+    "partOfSpeech": "noun",
+    "conceptId": "VERB",
+    "translations": {
+      "tr": "içeri bakmak, göz gezdirmek"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IОПУД",
+    "form": "Ӏопуд",
+    "partOfSpeech": "noun",
+    "conceptId": "UNKNOWN",
+    "translations": {
+      "tr": "ucuz"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IОРЫЛЪ",
+    "form": "Ӏорылъ",
+    "partOfSpeech": "noun",
+    "conceptId": "UNKNOWN",
+    "translations": {
+      "tr": "söylenti, kulaktan kulağa"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IОРЫАТЭ",
+    "form": "Ӏорыатэ",
+    "partOfSpeech": "noun",
+    "conceptId": "KULTUR",
+    "translations": {
+      "tr": "sözlü kültür, folklor"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IОРЫГЪУ",
+    "form": "Ӏорыгъу",
+    "partOfSpeech": "noun",
+    "conceptId": "KULTUR",
+    "translations": {
+      "tr": "atasözü, deyim"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IОРЫКIЭ",
+    "form": "ӀорыкӀэ",
+    "partOfSpeech": "noun",
+    "conceptId": "UNKNOWN",
+    "translations": {
+      "tr": "sonuç, akıbet"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IОРЫХЫН",
+    "form": "Ӏорыхын",
+    "partOfSpeech": "noun",
+    "conceptId": "VERB",
+    "translations": {
+      "tr": "ağzından kaçırmak"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IОТЭН",
+    "form": "Ӏотэн",
+    "partOfSpeech": "noun",
+    "conceptId": "VERB",
+    "translations": {
+      "tr": "anlatmak, aktarmak"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IОТЭЖЫН",
+    "form": "Ӏотэжын",
+    "partOfSpeech": "noun",
+    "conceptId": "VERB",
+    "translations": {
+      "tr": "tekrar anlatmak"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IОХУ",
+    "form": "Ӏоху",
+    "partOfSpeech": "noun",
+    "conceptId": "UNKNOWN",
+    "translations": {
+      "tr": "iş, mesele, konu"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IОХУГЪУЭ",
+    "form": "Ӏохугъуэ",
+    "partOfSpeech": "noun",
+    "conceptId": "UNKNOWN",
+    "translations": {
+      "tr": "olay, husus"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IОХУЩIЭ",
+    "form": "ӀохущӀэ",
+    "partOfSpeech": "noun",
+    "conceptId": "UNKNOWN",
+    "translations": {
+      "tr": "çalışma, faaliyet"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IОХУШХУЭ",
+    "form": "Ӏохушхуэ",
+    "partOfSpeech": "noun",
+    "conceptId": "UNKNOWN",
+    "translations": {
+      "tr": "büyük/önemli iş"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IОХУЩIАЧЭ",
+    "form": "ӀохущӀачэ",
+    "partOfSpeech": "noun",
+    "conceptId": "UNKNOWN",
+    "translations": {
+      "tr": "avare, işsiz güçsüz"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IОЩЫН",
+    "form": "Ӏощын",
+    "partOfSpeech": "noun",
+    "conceptId": "VERB",
+    "translations": {
+      "tr": "donarak yapışmak"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IОЩХЫН",
+    "form": "Ӏощхын",
+    "partOfSpeech": "noun",
+    "conceptId": "DOGA",
+    "translations": {
+      "tr": "yağmur yağmak"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IЫГЪАН",
+    "form": "Ӏыгъан",
+    "partOfSpeech": "noun",
+    "conceptId": "VERB",
+    "translations": {
+      "tr": "tutmak, muhafaza etmek"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IЫГЪЫН",
+    "form": "Ӏыгъын",
+    "partOfSpeech": "noun",
+    "conceptId": "VERB",
+    "translations": {
+      "tr": "elinde tutmak"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IЫГЪЫПIЭ",
+    "form": "ӀыгъыпӀэ",
+    "partOfSpeech": "noun",
+    "conceptId": "ALET",
+    "translations": {
+      "tr": "tutacak yeri"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IЫДЖЫН",
+    "form": "Ӏыджын",
+    "partOfSpeech": "noun",
+    "conceptId": "VERB",
+    "translations": {
+      "tr": "tiksinmek, iğrenmek"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IЫКIЭ",
+    "form": "ӀыкӀэ",
+    "partOfSpeech": "noun",
+    "conceptId": "UNKNOWN",
+    "translations": {
+      "tr": "parça, kısım"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IЫХЬЭ",
+    "form": "Ӏыхьэ",
+    "partOfSpeech": "noun",
+    "conceptId": "UNKNOWN",
+    "translations": {
+      "tr": "pay, hisse"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IЫХЬЭЛЫ",
+    "form": "Ӏыхьэлы",
+    "partOfSpeech": "noun",
+    "conceptId": "AILE",
+    "translations": {
+      "tr": "akraba"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IЫХЬЭНЫГЪЭ",
+    "form": "Ӏыхьэныгъэ",
+    "partOfSpeech": "noun",
+    "conceptId": "UNKNOWN",
+    "translations": {
+      "tr": "paydaşlık, katılım"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IЫХЬЭЩIЫН",
+    "form": "ӀыхьэщӀын",
+    "partOfSpeech": "noun",
+    "conceptId": "VERB",
+    "translations": {
+      "tr": "paylaştırmak, bölmek"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IЫМС",
+    "form": "Ӏымс",
+    "partOfSpeech": "noun",
+    "conceptId": "UNKNOWN",
+    "translations": {
+      "tr": "yumuşak, tüylü"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IЫПСЫН",
+    "form": "Ӏыпсын",
+    "partOfSpeech": "noun",
+    "conceptId": "VERB",
+    "translations": {
+      "tr": "yontmak, rendelemek"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IЫРГЪЫН",
+    "form": "Ӏыргъын",
+    "partOfSpeech": "noun",
+    "conceptId": "VERB",
+    "translations": {
+      "tr": "titremek, sallanmak"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IЫСАХ",
+    "form": "Ӏысах",
+    "partOfSpeech": "noun",
+    "conceptId": "UNKNOWN",
+    "translations": {
+      "tr": "çiftlik, mülk"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IЫСЫПIЭ",
+    "form": "ӀысыпӀэ",
+    "partOfSpeech": "noun",
+    "conceptId": "EV",
+    "translations": {
+      "tr": "oturak, ikametgah"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IЫЩЫН",
+    "form": "Ӏыщын",
+    "partOfSpeech": "noun",
+    "conceptId": "VERB",
+    "translations": {
+      "tr": "yolmak, çekip çıkarmak"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IЭБАГЪУЭ",
+    "form": "Ӏэбагъуэ",
+    "partOfSpeech": "noun",
+    "conceptId": "UNKNOWN",
+    "translations": {
+      "tr": "geniş adım"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IЭБАЙ",
+    "form": "Ӏэбай",
+    "partOfSpeech": "noun",
+    "conceptId": "UNKNOWN",
+    "translations": {
+      "tr": "savruk, dikkatsiz"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IЭБЖЪЭ",
+    "form": "Ӏэбжъэ",
+    "partOfSpeech": "noun",
+    "conceptId": "VUCUT",
+    "translations": {
+      "tr": "çatal tırnak"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IЭБЭ-ЛЪЭБЭ",
+    "form": "Ӏэбэ-лъэбэ",
+    "partOfSpeech": "noun",
+    "conceptId": "UNKNOWN",
+    "translations": {
+      "tr": "el yordamıyla"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IЭБЭТ",
+    "form": "Ӏэбэт",
+    "partOfSpeech": "noun",
+    "conceptId": "EGITIM",
+    "translations": {
+      "tr": "alfabe, elifba"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IЭВЭЛЬ-ЭВЭЛЬ",
+    "form": "Ӏэвэль-эвэль",
+    "partOfSpeech": "noun",
+    "conceptId": "UNKNOWN",
+    "translations": {
+      "tr": "zorla, güç belâ"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IЭГУАЖЭ",
+    "form": "Ӏэгуажэ",
+    "partOfSpeech": "noun",
+    "conceptId": "OYUN",
+    "translations": {
+      "tr": "top"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IЭГУАУЭ",
+    "form": "Ӏэгуауэ",
+    "partOfSpeech": "noun",
+    "conceptId": "SES",
+    "translations": {
+      "tr": "alkış"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IЭГУЛЪ",
+    "form": "Ӏэгулъ",
+    "partOfSpeech": "noun",
+    "conceptId": "GIYIM",
+    "translations": {
+      "tr": "eldiven"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IЭГУПЕЛ",
+    "form": "Ӏэгупел",
+    "partOfSpeech": "noun",
+    "conceptId": "EV",
+    "translations": {
+      "tr": "tepsi"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IЭГУЩIЭ",
+    "form": "ӀэгущӀэ",
+    "partOfSpeech": "noun",
+    "conceptId": "GIYIM",
+    "translations": {
+      "tr": "astar, el altlığı"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IЭДАКЪЭ",
+    "form": "Ӏэдакъэ",
+    "partOfSpeech": "noun",
+    "conceptId": "VUCUT",
+    "translations": {
+      "tr": "el bileği"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IЭДАКЪЭЖЬ",
+    "form": "Ӏэдакъэжь",
+    "partOfSpeech": "noun",
+    "conceptId": "GIYIM",
+    "translations": {
+      "tr": "bilezik"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IЭДАЛЭ",
+    "form": "Ӏэдалэ",
+    "partOfSpeech": "noun",
+    "conceptId": "VUCUT",
+    "translations": {
+      "tr": "kürek kemiği"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IЭДЭ",
+    "form": "Ӏэдэ",
+    "partOfSpeech": "noun",
+    "conceptId": "ALET",
+    "translations": {
+      "tr": "kıskaç, pense"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IЭДЭБ",
+    "form": "Ӏэдэб",
+    "partOfSpeech": "noun",
+    "conceptId": "UNKNOWN",
+    "translations": {
+      "tr": "edep, terbiye"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IЭДЭБЫНШАГЪЭ",
+    "form": "Ӏэдэбыншагъэ",
+    "partOfSpeech": "noun",
+    "conceptId": "UNKNOWN",
+    "translations": {
+      "tr": "edepsizlik, terbiyesizlik"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IЭДЭПКЪ",
+    "form": "Ӏэдэпкъ",
+    "partOfSpeech": "noun",
+    "conceptId": "VUCUT",
+    "translations": {
+      "tr": "el eklemi"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IЭДЗЭ",
+    "form": "Ӏэдзэ",
+    "partOfSpeech": "noun",
+    "conceptId": "UNKNOWN",
+    "translations": {
+      "tr": "ordu"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IЭЖЬЭ",
+    "form": "Ӏэжьэ",
+    "partOfSpeech": "noun",
+    "conceptId": "ALET",
+    "translations": {
+      "tr": "kızak"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IЭЗАГЪЭ",
+    "form": "Ӏэзагъэ",
+    "partOfSpeech": "noun",
+    "conceptId": "UNKNOWN",
+    "translations": {
+      "tr": "beceri, ustalık"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IЭЗЭНЫГЪЭ",
+    "form": "Ӏэзэныгъэ",
+    "partOfSpeech": "noun",
+    "conceptId": "MESLEK",
+    "translations": {
+      "tr": "hekimlik, şifacılık"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IЭЗЫНЫГЪЭ",
+    "form": "Ӏэзыныгъэ",
+    "partOfSpeech": "noun",
+    "conceptId": "UNKNOWN",
+    "translations": {
+      "tr": "el yatkınlığı"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IЭИЖЬ",
+    "form": "Ӏэижь",
+    "partOfSpeech": "noun",
+    "conceptId": "UNKNOWN",
+    "translations": {
+      "tr": "solak"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IЭИКЪ",
+    "form": "Ӏэикъ",
+    "partOfSpeech": "noun",
+    "conceptId": "GIYIM",
+    "translations": {
+      "tr": "kolluk, giysi kolu"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IЭКIЭ",
+    "form": "ӀэкӀэ",
+    "partOfSpeech": "noun",
+    "conceptId": "UNKNOWN",
+    "translations": {
+      "tr": "elle, el ile"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IЭКIУЭЛIАКIУЭ",
+    "form": "ӀэкӀуэлӀакӀуэ",
+    "partOfSpeech": "noun",
+    "conceptId": "UNKNOWN",
+    "translations": {
+      "tr": "kavrayışlı, becerikli"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IЭКIЭЩIЫН",
+    "form": "ӀэкӀэщӀын",
+    "partOfSpeech": "noun",
+    "conceptId": "VERB",
+    "translations": {
+      "tr": "elden kaymak"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IЭКIЭХУН",
+    "form": "ӀэкӀэхун",
+    "partOfSpeech": "noun",
+    "conceptId": "VERB",
+    "translations": {
+      "tr": "elden düşmek"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IЭМАЛ",
+    "form": "Ӏэмал",
+    "partOfSpeech": "noun",
+    "conceptId": "UNKNOWN",
+    "translations": {
+      "tr": "yöntem, çare, hile"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IЭМАЛЩIЭ",
+    "form": "ӀэмалщӀэ",
+    "partOfSpeech": "noun",
+    "conceptId": "UNKNOWN",
+    "translations": {
+      "tr": "dümen, hile"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IЭМЫЩIЭ",
+    "form": "ӀэмыщӀэ",
+    "partOfSpeech": "noun",
+    "conceptId": "VUCUT",
+    "translations": {
+      "tr": "bir avuç"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IЭНАПIЭ",
+    "form": "ӀэнапӀэ",
+    "partOfSpeech": "noun",
+    "conceptId": "UNKNOWN",
+    "translations": {
+      "tr": "hisse, pay"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IЭПЛIЭ",
+    "form": "ӀэплӀэ",
+    "partOfSpeech": "noun",
+    "conceptId": "VERB",
+    "translations": {
+      "tr": "kucaklama"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IЭПОПIЭ",
+    "form": "ӀэпопӀэ",
+    "partOfSpeech": "noun",
+    "conceptId": "AILE",
+    "translations": {
+      "tr": "büyütülen çocuk, evlatlık"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IЭППIЭН",
+    "form": "ӀэппӀэн",
+    "partOfSpeech": "noun",
+    "conceptId": "VERB",
+    "translations": {
+      "tr": "büyütmek, eğitmek"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IЭПЫIЭГЪУ",
+    "form": "ӀэпыӀэгъу",
+    "partOfSpeech": "noun",
+    "conceptId": "MESLEK",
+    "translations": {
+      "tr": "yardımcı"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IЭПЭБАЙ",
+    "form": "Ӏэпэбай",
+    "partOfSpeech": "noun",
+    "conceptId": "UNKNOWN",
+    "translations": {
+      "tr": "eli açık, savurgan"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IЭПЭЗАПЭ",
+    "form": "Ӏэпэзапэ",
+    "partOfSpeech": "noun",
+    "conceptId": "VUCUT",
+    "translations": {
+      "tr": "parmak uçları"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IЭПЭИЖИ",
+    "form": "Ӏэпэижи",
+    "partOfSpeech": "noun",
+    "conceptId": "GIYIM",
+    "translations": {
+      "tr": "yüzük"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IЭПЭЛЪАЩЭ",
+    "form": "Ӏэпэлъащэ",
+    "partOfSpeech": "noun",
+    "conceptId": "UNKNOWN",
+    "translations": {
+      "tr": "sakar"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IЭПЭПIЭ",
+    "form": "ӀэпэпӀэ",
+    "partOfSpeech": "noun",
+    "conceptId": "UNKNOWN",
+    "translations": {
+      "tr": "parmak izi"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IЭПЭРАПЭ",
+    "form": "Ӏэпэрапэ",
+    "partOfSpeech": "noun",
+    "conceptId": "UNKNOWN",
+    "translations": {
+      "tr": "üstünkörü, aceleyle"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IЭРАМ",
+    "form": "Ӏэрам",
+    "partOfSpeech": "noun",
+    "conceptId": "UNKNOWN",
+    "translations": {
+      "tr": "yabani"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IЭРАМЭ",
+    "form": "Ӏэрамэ",
+    "partOfSpeech": "noun",
+    "conceptId": "UNKNOWN",
+    "translations": {
+      "tr": "demet, kucak"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IЭРЫДЗ",
+    "form": "Ӏэрыдз",
+    "partOfSpeech": "noun",
+    "conceptId": "UNKNOWN",
+    "translations": {
+      "tr": "el atışı"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IЭРЫЛАЖЬЭ",
+    "form": "Ӏэрылажьэ",
+    "partOfSpeech": "noun",
+    "conceptId": "MESLEK",
+    "translations": {
+      "tr": "zanaatkar, el işçisi"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IЭРЫСЭ",
+    "form": "Ӏэрысэ",
+    "partOfSpeech": "noun",
+    "conceptId": "UNKNOWN",
+    "translations": {
+      "tr": "evcil"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IЭТЭ",
+    "form": "Ӏэтэ",
+    "partOfSpeech": "noun",
+    "conceptId": "UNKNOWN",
+    "translations": {
+      "tr": "demet"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IЭТЭН",
+    "form": "Ӏэтэн",
+    "partOfSpeech": "noun",
+    "conceptId": "VERB",
+    "translations": {
+      "tr": "kaldırmak"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IЭТЭНЫГЪЭ",
+    "form": "Ӏэтэныгъэ",
+    "partOfSpeech": "noun",
+    "conceptId": "UNKNOWN",
+    "translations": {
+      "tr": "yükseliş"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IЭЩЭ",
+    "form": "Ӏэщэ",
+    "partOfSpeech": "noun",
+    "conceptId": "WEAPON",
+    "translations": {
+      "tr": "silah"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IЭЩЭЗЭЩ",
+    "form": "Ӏэщэзэщ",
+    "partOfSpeech": "noun",
+    "conceptId": "MESLEK",
+    "translations": {
+      "tr": "silah ustası"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IЭЩХЬЭ",
+    "form": "Ӏэщхьэ",
+    "partOfSpeech": "noun",
+    "conceptId": "VUCUT",
+    "translations": {
+      "tr": "ön kol"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "HUV3-IЭЩХЬЭЗЭГЪЭ",
+    "form": "Ӏэщхьэзэгъэ",
+    "partOfSpeech": "noun",
+    "conceptId": "GIYIM",
+    "translations": {
+      "tr": "bilezik"
     },
     "ipa": "",
     "rootIds": []
