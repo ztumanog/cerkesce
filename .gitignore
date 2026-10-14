@@ -195,3 +195,8 @@ tools/sprint3a/
 
 # Kavram indeksi (41 MB)
 _wiktionary/kbd_kavram_indeksi.json
+
+# Deneme scriptleri
+_scripts/hilmi_eslestir*.ts
+_scripts/test_converter.ts
+ipa_kalan_notebooklm.txt
