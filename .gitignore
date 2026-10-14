@@ -183,3 +183,15 @@ _wiktionary/
 
 # Gecici calisma dosyalari
 ipa_kalan_notebooklm.txt
+
+# Gecici calisma dosyalari (kok dizin)
+_*.py
+_scripts/*.py
+!ipa_kalan_notebooklm.txt
+
+# Sprint 3A
+data/sprint3a/
+tools/sprint3a/
+
+# Kavram indeksi (41 MB)
+_wiktionary/kbd_kavram_indeksi.json

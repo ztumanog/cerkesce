@@ -1,9 +1,11 @@
 import json
+import sys
 from pathlib import Path
+
+sys.stdout.reconfigure(encoding="utf-8")
 
 lex = json.loads(Path("public/data/linguistic/lexemes.json").read_text(encoding="utf-8"))
 print(f"Toplam: {len(lex)}")
-print()
 
 # Ana alanlar
 alanlar = [
@@ -36,7 +38,7 @@ ek_alanlar = [
     ("examples", "Examples"),
     ("isLemma", "isLemma"),
     ("subConceptId", "SubConcept"),
-    ("taxonomyFamily", "Taxonomy"),
+    ("taxonomyId", "Taxonomy"),
 ]
 for alan, isim in ek_alanlar:
     dolu = sum(1 for l in lex if l.get(alan))
