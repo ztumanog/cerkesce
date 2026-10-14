@@ -408,5 +408,22 @@
     "sourceLanguage": "en",
     "targetLanguage": "ady",
     "confidence": "HIGH"
+  },
+  {
+    "file": "34.Kbd-Ru&En&Tr_Sukunov.json",
+    "title": "Kabardeyce-Rusça-İngilizce-Türkçe Resimli Sözlük",
+    "originalTitle": "Кабардино-черкесско-русско-англо-турецкий словарь в иллюстрациях",
+    "dialect": "DOGU",
+    "author": "H. H. Sukunov, I. H. Sukunova",
+    "editor": "A. N. Baskakov",
+    "publisher": "Эль-Фа, Nalçik",
+    "year": "1998",
+    "total_words": 2669,
+    "sourceLanguage": "kbd",
+    "targetLanguage": "tr",
+    "confidence": "VERIFIED",
+    "shortLabel": "Sukunov (1998)",
+    "shortLabelKiril": "Сукунов (1998)",
+    "note": "4 dilli, resimli, konsept bazlı, array format"
   }
 ]
