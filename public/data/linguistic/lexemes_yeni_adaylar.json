@@ -1,0 +1,2006 @@
+[
+ {
+  "id": "KAV-КЪЫКӀЭРЫХУА-НЫКӀЭРЫХУА",
+  "form": "къыкӀэрыхуа-ныкӀэрыхуа",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_ОПОЗДАВШИЕ",
+  "translations": {
+   "ru": "опоздавшие; остатки; остаток; отбросы"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json, 5.Ady-Rus_Qarden.json | öncelik: 10 | kavram: 6 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ПЭ-",
+  "form": "пэ-",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_ГЛАГОЛЬНАЯ ПРИСТАВКА",
+  "translations": {
+   "ru": "глагольная приставка; назад; передаётся описательно; пэджэн"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json, 5.Ady-Rus_Qarden.json | öncelik: 10 | kavram: 6 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-МЫЩТЭФ-МЫУЭФ",
+  "form": "мыщтэф-мыуэф",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_БЕЗЫНИЦИАТИВНЫЙ",
+  "translations": {
+   "ru": "безынициативный; мы мыщтэф-мыуэф; неделовитый; неделовой человек"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json, 6.Ady-Rus_Sherdjes.json | öncelik: 9 | kavram: 5 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ГУЩТЭ-ГУЛЭ",
+  "form": "гущтэ-гулэ",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_НЕДОВЕРЧИВЫЙ",
+  "translations": {
+   "ru": "недоверчивый; пугливый; пугливый человек; щтэрей"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json, 6.Ady-Rus_Sherdjes.json | öncelik: 8 | kavram: 4 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ЗЭМ-ЗЭМ",
+  "form": "зэм-зэм",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_В БУДУЩЕМ",
+  "translations": {
+   "ru": "в будущем; иногда; когда-нибудь; редко"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json, 5.Ady-Rus_Qarden.json | öncelik: 8 | kavram: 4 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-МАЩӀЭ-МАЩӀЭУРЭ",
+  "form": "мащӀэ-мащӀэурэ",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_ИСПОДВОЛЬ",
+  "translations": {
+   "ru": "исподволь; мало-помалу; понемногу; постепенный"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 19.Kbd-Ru-2-Jonty.json, 5.Ady-Rus_Qarden.json | öncelik: 8 | kavram: 4 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-НЕХЬЭКӀ-КЪЕХЬЭКӀЫНШЭ",
+  "form": "нехьэкӀ-къехьэкӀыншэ",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_ОТКРОВЕННЫЙ",
+  "translations": {
+   "ru": "откровенный; правдивый; принципиальный; прямой"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json, 5.Ady-Rus_Qarden.json | öncelik: 8 | kavram: 4 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-НЕХЬЭКӀ-КЪЕХЬЭКӀЫНШЭУ",
+  "form": "нехьэкӀ-къехьэкӀыншэу",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_ОТКРОВЕННО",
+  "translations": {
+   "ru": "откровенно; правдиво; принципиально; прямо"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json, 5.Ady-Rus_Qarden.json | öncelik: 8 | kavram: 4 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ПХЫ-",
+  "form": "пхы-",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_ГЛАГОЛЬНАЯ ПРИСТАВКА",
+  "translations": {
+   "ru": "глагольная приставка; движение; обозначает действие; сквозь что-л"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json, 5.Ady-Rus_Qarden.json | öncelik: 8 | kavram: 4 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ХУЩХЬЭ-ЩАТЭУ",
+  "form": "хущхьэ-щатэу",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_ВЗДЫХАЯ",
+  "translations": {
+   "ru": "вздыхая; зевая; то вздыхая; то зевая"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json, 5.Ady-Rus_Qarden.json | öncelik: 8 | kavram: 4 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-БЫДАГЪ(Э)",
+  "form": "быдагъ(э)",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_ВЫНОСЛИВОСТЬ",
+  "translations": {
+   "ru": "выносливость; крепость; прочность; стойкость"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json | öncelik: 7 | kavram: 5 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ГЪУЭРЫГЪУЭУ(РЭ)",
+  "form": "гъуэрыгъуэу(рэ)",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_ПООЧЕРЕДНО",
+  "translations": {
+   "ru": "поочередно; поочерёдно; посменно"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json, 5.Ady-Rus_Qarden.json | öncelik: 7 | kavram: 3 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ЕРЫХЬ-ЕРЫШХ",
+  "form": "ерыхь-ерышх",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_ВЫМОГАТЕЛЬ",
+  "translations": {
+   "ru": "вымогатель; грабитель; разбойник"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json, 6.Ady-Rus_Sherdjes.json | öncelik: 7 | kavram: 3 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ЗЭШ-ЗЭХУЕФЭ",
+  "form": "зэш-зэхуефэ",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_БЕЗ ПОСТОРОННИХ",
+  "translations": {
+   "ru": "без посторонних; дружеском кругу; нартыбэр щызоуэ"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json, 6.Ady-Rus_Sherdjes.json | öncelik: 7 | kavram: 3 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ИМЫКУРЭ-ИМЫБГЫУ",
+  "form": "имыкурэ-имыбгыу",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_НЕ ВОВРЕМЯ",
+  "translations": {
+   "ru": "не вовремя; некстати; совершенно некстати"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json, 5.Ady-Rus_Qarden.json | öncelik: 7 | kavram: 3 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-НЫКЪУЭ-",
+  "form": "ныкъуэ-",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_НЕДО",
+  "translations": {
+   "ru": "недо; полу; соответствует полу"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json, 5.Ady-Rus_Qarden.json | öncelik: 7 | kavram: 3 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ХУАБАГЪ(Э)",
+  "form": "хуабагъ(э)",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_ДОБРОТА",
+  "translations": {
+   "ru": "доброта; сердечность; степень нагретости; тепло"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json | öncelik: 7 | kavram: 5 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ХЪАТЭӀ",
+  "form": "хъатэӀ",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_ГУАУЭ",
+  "translations": {
+   "ru": "гуауэ; неприятность; несчастье"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json, 6.Ady-Rus_Sherdjes.json | öncelik: 7 | kavram: 3 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ЩӀЫӀЭ-ЩӀЫӀЭУ",
+  "form": "щӀыӀэ-щӀыӀэу",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_НЕПРИВЕТЛИВО",
+  "translations": {
+   "ru": "неприветливо; очень холодно; холодновато"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json, 5.Ady-Rus_Qarden.json | öncelik: 7 | kavram: 3 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ГЪУДЭ-БАДЗЭ",
+  "form": "гъудэ-бадзэ",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_МОШКАРА",
+  "translations": {
+   "ru": "мошкара; насекомое"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 19.Kbd-Ru-2-Jonty.json, 5.Ady-Rus_Qarden.json | öncelik: 6 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ЖЬЭ-",
+  "form": "жьэ-",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_В УПОР",
+  "translations": {
+   "ru": "в упор; глагольная приставка; обозначает действие; посмотреть прямо"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 5.Ady-Rus_Qarden.json | öncelik: 6 | kavram: 4 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ПЫКӀ-ПЫХЬЭ",
+  "form": "пыкӀ-пыхьэ",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_ДРУЖБЕ",
+  "translations": {
+   "ru": "дружбе; неверность дружбе"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 5.Ady-Rus_Qarden.json, 6.Ady-Rus_Sherdjes.json | öncelik: 6 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ПӀАРЭ-ПӀАРЭ",
+  "form": "пӀарэ-пӀарэ",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_ГОМОН",
+  "translations": {
+   "ru": "гомон; трескотня"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json, 5.Ady-Rus_Qarden.json | öncelik: 6 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ФЭНШЭ-ЛЫНШЭ",
+  "form": "фэншэ-лыншэ",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_НЕВЗРАЧНЫЙ",
+  "translations": {
+   "ru": "невзрачный; тощий; фыз фэншэ-лыншэ; худой"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json | öncelik: 6 | kavram: 4 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ФӀЭКӀ(А)",
+  "form": "фӀэкӀ(а)",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_ЛИШЬ",
+  "translations": {
+   "ru": "лишь; наверняка; послелог кроме; только"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json | öncelik: 6 | kavram: 4 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ХУЭКӀЭ-БЖЬЭКӀЭ",
+  "form": "хуэкӀэ-бжьэкӀэ",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_СУХОЖИЛИЕ",
+  "translations": {
+   "ru": "сухожилие; сухожилия"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 19.Kbd-Ru-2-Jonty.json, 5.Ady-Rus_Qarden.json | öncelik: 6 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ХУЭСАКЪЫУ(РЭ)",
+  "form": "хуэсакъыу(рэ)",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_АККУРАТНО",
+  "translations": {
+   "ru": "аккуратно; бдительно; бережно; осторожно"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json | öncelik: 6 | kavram: 4 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ХЪУНКӀЭРИ-ХЪУН",
+  "form": "хъункӀэри-хъун",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_ВОЗМОЖНО",
+  "translations": {
+   "ru": "возможно; пожалуй"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 19.Kbd-Ru-2-Jonty.json, 20.Kbd-Ru-Jonty.json | öncelik: 6 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ЩӀЭЩЫГЪУЭ-ЩӀЭЩЫГЪУЭУРЭ",
+  "form": "щӀэщыгъуэ-щӀэщыгъуэурэ",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_ПО НАСТРОЕНИЮ",
+  "translations": {
+   "ru": "по настроению; с удовольствием"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json, 5.Ady-Rus_Qarden.json | öncelik: 6 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ӀЭКӀУЭЛЪАКӀУАГЪ(Э)",
+  "form": "ӀэкӀуэлъакӀуагъ(э)",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_ЛОВКИМ",
+  "translations": {
+   "ru": "ловким; ловкость; мастерство; умение"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json | öncelik: 6 | kavram: 4 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ӀЭХЪУЭ-ШЫХЪУЭ",
+  "form": "Ӏэхъуэ-шыхъуэ",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_ПАСТУХ-ТАБУНЩИК",
+  "translations": {
+   "ru": "пастух-табунщик; пастухи-табунщики"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json, 5.Ady-Rus_Qarden.json | öncelik: 6 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-АКЪЫЛЫНШАГЪ(Э)",
+  "form": "акъылыншагъ(э)",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_БЕСТОЛКОВОСТЬ",
+  "translations": {
+   "ru": "бестолковость; глупость; совершать глупости"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json | öncelik: 5 | kavram: 3 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-АРМЫХЪУМ(Э)",
+  "form": "армыхъум(э)",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_ИНАЧЕ",
+  "translations": {
+   "ru": "иначе; однако; только"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json | öncelik: 5 | kavram: 3 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-БАРГЪ(Э)-СЫРГЪ(Э)",
+  "form": "баргъ(э)-сыргъ(э)",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_БАХ",
+  "translations": {
+   "ru": "бах; бух; трах-трах"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json | öncelik: 5 | kavram: 3 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-БГЪЭ-",
+  "form": "бгъэ-",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_ГЛАГОЛЬНАЯ ПРИСТАВКА",
+  "translations": {
+   "ru": "глагольная приставка; около; рядом"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 5.Ady-Rus_Qarden.json | öncelik: 5 | kavram: 3 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-БЕЛЭМ-БЕШЭМ",
+  "form": "белэм-бешэм",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_НЕЛОВКИЙ",
+  "translations": {
+   "ru": "неловкий; неуклюжий; придурковатый"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 5.Ady-Rus_Qarden.json | öncelik: 5 | kavram: 3 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ВЫЛ-БАЛЫДЖЭ",
+  "form": "выл-балыджэ",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_АБРАКАДАБРА",
+  "translations": {
+   "ru": "абракадабра; бессмыслица; перепутать что-л"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json | öncelik: 5 | kavram: 3 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ГУАПАГЪ(Э)",
+  "form": "гуапагъ(э)",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_ЛАСКА",
+  "translations": {
+   "ru": "ласка; сердечность; теплота"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json | öncelik: 5 | kavram: 3 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ГУАЩӀАГЪ(Э)",
+  "form": "гуащӀагъ(э)",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_КИСЛОТНОСТЬ ЧЕГО-Л",
+  "translations": {
+   "ru": "кислотность чего-л; крепость; суровость"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json | öncelik: 5 | kavram: 3 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ДЫДЖ-ДЫДЖУ",
+  "form": "дыдж-дыджу",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_ЕДКО",
+  "translations": {
+   "ru": "едко; переносное зло; с горечью"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json | öncelik: 5 | kavram: 3 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ЗАХУАГЪЭ(Э)",
+  "form": "захуагъэ(э)",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_ГЛАДКОСТЬ",
+  "translations": {
+   "ru": "гладкость; невиновность; ровность"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json | öncelik: 5 | kavram: 3 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ЗИХЪУ-ЗИЛЪУ",
+  "form": "зихъу-зилъу",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_ЕРШАСЬ",
+  "translations": {
+   "ru": "ершась; задираясь; хорохорясь"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json | öncelik: 5 | kavram: 3 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ЗЫФЭ-ЗЫЛЭ",
+  "form": "зыфэ-зылэ",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_ОДИНАКОВЫЕ",
+  "translations": {
+   "ru": "одинаковые; однородные; одноцветные"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 5.Ady-Rus_Qarden.json | öncelik: 5 | kavram: 3 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ЗЭРЫХЬ-ЗЭРИЙ",
+  "form": "зэрыхь-зэрий",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_БЕГОТНЯ",
+  "translations": {
+   "ru": "беготня; волнение; суета"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 5.Ady-Rus_Qarden.json | öncelik: 5 | kavram: 3 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ЗЭТ-",
+  "form": "зэт-",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_ГЛАГОЛЬНАЯ ПРИСТАВКА",
+  "translations": {
+   "ru": "глагольная приставка; обозначает полноту; совокупность действия"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 5.Ady-Rus_Qarden.json | öncelik: 5 | kavram: 3 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ЗЭХЪУН-ЗЭӀУЩЭ",
+  "form": "зэхъун-зэӀущэ",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_ЖИТЬ СРЕДНЕ",
+  "translations": {
+   "ru": "жить средне; как все; не выпячиваясь"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 6.Ady-Rus_Sherdjes.json | öncelik: 5 | kavram: 3 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-КЪЭ-",
+  "form": "къэ-",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_ГЛАГОЛЬНАЯ ПРИСТАВКА",
+  "translations": {
+   "ru": "глагольная приставка; движение; приближение"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 5.Ady-Rus_Qarden.json | öncelik: 5 | kavram: 3 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-КӀЭЩӀЭЛЪАДЭ-КӀЭЩӀЭЖЫЖ",
+  "form": "кӀэщӀэлъадэ-кӀэщӀэжыж",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_БЕСПРИНЦИПНЫЙ ЧЕЛОВЕК",
+  "translations": {
+   "ru": "беспринципный человек; подхалим; угодник"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json | öncelik: 5 | kavram: 3 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ПАГАГЪ(Э)",
+  "form": "пагагъ(э)",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_ВЫСОКОМЕРИЕ",
+  "translations": {
+   "ru": "высокомерие; гордость; заносчивость"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json | öncelik: 5 | kavram: 3 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ПСЫӀАГЪ(Э)",
+  "form": "псыӀагъ(э)",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_ВЛАГА",
+  "translations": {
+   "ru": "влага; влажность; сырость"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json | öncelik: 5 | kavram: 3 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ПӀЫТӀА-ХУЗА",
+  "form": "пӀытӀа-хуза",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_НЕРЕШИТЕЛЬНЫЙ",
+  "translations": {
+   "ru": "нерешительный; несмелый; робкий"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json | öncelik: 5 | kavram: 3 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ТӀАРКЪ-ТӀАРКЪ",
+  "form": "тӀаркъ-тӀаркъ",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_КОРОТКИХ УДАРОВ",
+  "translations": {
+   "ru": "коротких ударов; стука; шагов"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json | öncelik: 5 | kavram: 3 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ХАМЭГУ-ХАМАЩХЬЭ",
+  "form": "хамэгу-хамащхьэ",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_НЕДОВЕРЧИВЫЙ",
+  "translations": {
+   "ru": "недоверчивый; нелюдимый; необщительный"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json | öncelik: 5 | kavram: 3 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ХУЭМЕЙ-ХУЭМЕЙУЭ(РЭ)",
+  "form": "хуэмей-хуэмейуэ(рэ)",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_БЕЗ ЖЕЛАНИЯ",
+  "translations": {
+   "ru": "без желания; неохотно; нехотя"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json | öncelik: 5 | kavram: 3 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ХУЭСАКЪЫПЭУ(РЭ)",
+  "form": "хуэсакъыпэу(рэ)",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_АККУРАТНО",
+  "translations": {
+   "ru": "аккуратно; бережно; очень осторожно"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json | öncelik: 5 | kavram: 3 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ХЭӀУ-ХЭВЫХЬ",
+  "form": "хэӀу-хэвыхь",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_БОЛТУН",
+  "translations": {
+   "ru": "болтун; пустослов; трепач"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json | öncelik: 5 | kavram: 3 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ХЭӀЭ-ХЭПХЪУЭ",
+  "form": "хэӀэ-хэпхъуэ",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_НЕСЕРЬЕЗНЫЙ",
+  "translations": {
+   "ru": "несерьезный; суетливый; суматошный"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json | öncelik: 5 | kavram: 3 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ЩӀАЛАГЪ(Э)",
+  "form": "щӀалагъ(э)",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_ЛЕГКОМЫСЛИЕ",
+  "translations": {
+   "ru": "легкомыслие; мальчишество; молодость"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json | öncelik: 5 | kavram: 3 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ЩӀЭТКӀУКӀ-ЩӀЭСЫКӀЫУ",
+  "form": "щӀэткӀукӀ-щӀэсыкӀыу",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_БЕСМЫСЛЕННО",
+  "translations": {
+   "ru": "бесмысленно; переносное бесполезно; тлея"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json | öncelik: 5 | kavram: 3 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ЩӀЭХ-ЩӀЭХЫУ",
+  "form": "щӀэх-щӀэхыу",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_БЫСТРО",
+  "translations": {
+   "ru": "быстро; скоро; срочно"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 5.Ady-Rus_Qarden.json | öncelik: 5 | kavram: 3 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-АДЭМУЩИЙ-АНЭМУЩИЙ",
+  "form": "адэмущий-анэмущий",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_НЕВОСПИТАННЫЙ",
+  "translations": {
+   "ru": "невоспитанный; развязный"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 5.Ady-Rus_Qarden.json | öncelik: 4 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-АЛЫХЬ-БИЛЫХЬ",
+  "form": "алыхь-билыхь",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_ЗАКЛИНАТЬ КОГО-Л",
+  "translations": {
+   "ru": "заклинать кого-л; умолять"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json | öncelik: 4 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-АНЭШХУЭ-АДЭШХУЭ",
+  "form": "анэшхуэ-адэшхуэ",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_БАБУШКА",
+  "translations": {
+   "ru": "бабушка; дедушка"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 19.Kbd-Ru-2-Jonty.json | öncelik: 4 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-АФӀЭКӀ(А)",
+  "form": "афӀэкӀ(а)",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_БОЛЬШЕ",
+  "translations": {
+   "ru": "больше; кроме"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json | öncelik: 4 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-АХЭР-ЕЗЫХЭР",
+  "form": "ахэр-езыхэр",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_ОНИ САМИ",
+  "translations": {
+   "ru": "они сами; самостоятельно"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 5.Ady-Rus_Qarden.json | öncelik: 4 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-АӀУЖЫЖ-МЫӀУЖЫЖ",
+  "form": "аӀужыж-мыӀужыж",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_БЛЮДОЛИЗ",
+  "translations": {
+   "ru": "блюдолиз; подхалим"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 6.Ady-Rus_Sherdjes.json | öncelik: 4 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-БАРГЪ(Э)",
+  "form": "баргъ(э)",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_БАБАХ",
+  "translations": {
+   "ru": "бабах; бах"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json | öncelik: 4 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-БАРФ(Э)",
+  "form": "барф(э)",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_БУХ",
+  "translations": {
+   "ru": "бух; плюх"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json | öncelik: 4 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-БАУЭ-БАПЩЭУ",
+  "form": "бауэ-бапщэу",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_ЗАПЫХАВШИСЬ",
+  "translations": {
+   "ru": "запыхавшись; прерывисто дыша"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 5.Ady-Rus_Qarden.json | öncelik: 4 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-БГЪУРЫ-",
+  "form": "бгъуры-",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_ГЛАГОЛЬНАЯ ПРИСТАВКА",
+  "translations": {
+   "ru": "глагольная приставка; пройти сбоку"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 5.Ady-Rus_Qarden.json | öncelik: 4 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-БЕЛДЖЫЛЫНШАГЪ(Э)",
+  "form": "белджылыншагъ(э)",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_НЕОПРЕДЕЛЕННОСТЬ",
+  "translations": {
+   "ru": "неопределенность; неясность"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json | öncelik: 4 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-БЖЬЫФӀАГЪ(Э)",
+  "form": "бжьыфӀагъ(э)",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_ПРЕДСТАВИТЕЛЬНОСТЬ",
+  "translations": {
+   "ru": "представительность; эффектность"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json | öncelik: 4 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-БЛАНАГЪ(Э)",
+  "form": "бланагъ(э)",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_МОЩЬ",
+  "translations": {
+   "ru": "мощь; сила"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json | öncelik: 4 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-БЫХЬУ-БЫХЬУ",
+  "form": "быхьу-быхьу",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_ЗВУКОПОДРАЖАНИЕ",
+  "translations": {
+   "ru": "звукоподражание; имитирующее кашель"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json | öncelik: 4 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ГУМАЩӀАГЪ(Э)",
+  "form": "гумащӀагъ(э)",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_ДОБРОСЕРДЕЧНОСТЬ",
+  "translations": {
+   "ru": "добросердечность; отзывчивость"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json | öncelik: 4 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ГУРЫХУАГЪ(Э)",
+  "form": "гурыхуагъ(э)",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_ПАМЯТЛИВОСТЬ",
+  "translations": {
+   "ru": "памятливость; способность"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json | öncelik: 4 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ГЪУНЭГЪУ-ЖЭРЭГЪУ",
+  "form": "гъунэгъу-жэрэгъу",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_ОКРУЖАЮЩИЕ",
+  "translations": {
+   "ru": "окружающие; соседи"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json | öncelik: 4 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ГЪЭ-",
+  "form": "гъэ-",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_ГЛАГОЛЬНАЯ ПРИСТАВКА",
+  "translations": {
+   "ru": "глагольная приставка; обозначает побуждение"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 5.Ady-Rus_Qarden.json | öncelik: 4 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ГЪЭРЫХЪУ-ЩӀЫРЫХЪУ",
+  "form": "гъэрыхъу-щӀырыхъу",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_ОТКОРМЛЕННЫЙ СКОТ",
+  "translations": {
+   "ru": "откормленный скот; скот"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 6.Ady-Rus_Sherdjes.json | öncelik: 4 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ДАР(А)",
+  "form": "дар(а)",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_КАКОЙ",
+  "translations": {
+   "ru": "какой; какой-либо"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json | öncelik: 4 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ДАУЭ-ДАПЩЭ",
+  "form": "дауэ-дапщэ",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_ТОРЖЕСТВЕННОЕ СОБЫТИЕ",
+  "translations": {
+   "ru": "торжественное событие; торжество"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 5.Ady-Rus_Qarden.json | öncelik: 4 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ДЕЛЭ-ДЕЛЭУ",
+  "form": "делэ-делэу",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_РАССЕЯННО",
+  "translations": {
+   "ru": "рассеянно; растерянно"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json | öncelik: 4 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ДОГУЭ(Т)",
+  "form": "догуэ(т)",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_ДОГУЭ ЗЭ",
+  "translations": {
+   "ru": "догуэ зэ; частица погоди"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json | öncelik: 4 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ЕКӀУ-ЕЗЭГЪ",
+  "form": "екӀу-езэгъ",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_ОБРАЗЦАМ",
+  "translations": {
+   "ru": "образцам; стандартам"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json | öncelik: 4 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ЕМЫӀУСЭ-ЦЫСНЭӀУ",
+  "form": "емыӀусэ-цыснэӀу",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_ОБИДЧИВЫЙ",
+  "translations": {
+   "ru": "обидчивый; щепетильный"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 5.Ady-Rus_Qarden.json | öncelik: 4 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ЖАГЪУАГЪ(Э)",
+  "form": "жагъуагъ(э)",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_НЕПРИЯТНОСТЬ",
+  "translations": {
+   "ru": "неприятность; огорчение"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json | öncelik: 4 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ЖЫЛЭ-ЖЫЛЭКӀЭРЭ",
+  "form": "жылэ-жылэкӀэрэ",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_ПЕРЕН",
+  "translations": {
+   "ru": "перен; по селам"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json | öncelik: 4 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ЖЬАКӀУАГЪ(Э)",
+  "form": "жьакӀуагъ(э)",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_КРАСНОРЕЧИВОСТЬ",
+  "translations": {
+   "ru": "красноречивость; красноречие"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json | öncelik: 4 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ЖЬЭРЫХУ-ӀЭРЫХУ",
+  "form": "жьэрыху-Ӏэрыху",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_БЕЗЫНИЦИАТИВНЫЙ",
+  "translations": {
+   "ru": "безынициативный; ленивый человек"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json | öncelik: 4 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ЖЬЭХЭ-",
+  "form": "жьэхэ-",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_ГЛАГОЛЬНАЯ ПРИСТАВКА",
+  "translations": {
+   "ru": "глагольная приставка; указывающая"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json | öncelik: 4 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ЖЭЩКӀЭ(РЭ)",
+  "form": "жэщкӀэ(рэ)",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_НОЧАМИ",
+  "translations": {
+   "ru": "ночами; ночью"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json | öncelik: 4 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ЗИӀУ-ЗИЩӀУ",
+  "form": "зиӀу-зищӀу",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_ВАЖНИЧАЯ",
+  "translations": {
+   "ru": "важничая; важно"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json | öncelik: 4 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ЗИӀУАНТӀЭ-ЗИШАНТӀЭУ",
+  "form": "зиӀуантӀэ-зишантӀэу",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_ЗИГЗАГАМИ",
+  "translations": {
+   "ru": "зигзагами; извиваясь"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json | öncelik: 4 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ЗЫМАХУЭ-ЗЫМАХУЭКӀЭ",
+  "form": "зымахуэ-зымахуэкӀэ",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_БЕРЫЧЭТ-БЕСЫН",
+  "translations": {
+   "ru": "берычэт-бесын; когда-нибудь"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json | öncelik: 4 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ЗЭ-",
+  "form": "зэ-",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_ГЛАГОЛЬНАЯ ПРИСТАВКА",
+  "translations": {
+   "ru": "глагольная приставка; зэзэуэн драться"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 5.Ady-Rus_Qarden.json | öncelik: 4 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ЗЭКӀЭ-ЗЭУЖЬ",
+  "form": "зэкӀэ-зэужь",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_ОЧЕРЕДЬ",
+  "translations": {
+   "ru": "очередь; чэзу"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 6.Ady-Rus_Sherdjes.json | öncelik: 4 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ЗЭЛЪИӀЭ-ЗЭЛЪИПЛЪЭ",
+  "form": "зэлъиӀэ-зэлъиплъэ",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_НЕОГОРОЖЕННОСТЬ",
+  "translations": {
+   "ru": "неогороженность; открытость"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 6.Ady-Rus_Sherdjes.json | öncelik: 4 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ЗЭУАКӀУЭ-БЭНАКӀУЭ",
+  "form": "зэуакӀуэ-бэнакӀуэ",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_ДРАЧУН",
+  "translations": {
+   "ru": "драчун; завоеватель"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json | öncelik: 4 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ЗЭХУЭМЫФӀ-ЗЭФӀЭӀУА",
+  "form": "зэхуэмыфӀ-зэфӀэӀуа",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_НЕБРЕЖНО",
+  "translations": {
+   "ru": "небрежно; плохо одетый"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json | öncelik: 4 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ЗЭШ-ЗЭБЫН(ХЭР)",
+  "form": "зэш-зэбын(хэр)",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_ЗЭШ-ЗЭБЫНХЭР ЗЭХЭСТ",
+  "translations": {
+   "ru": "зэш-зэбынхэр зэхэст; семьи братьев"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json | öncelik: 4 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ЗЭЩӀЭВЭ-ЗЭЩӀЭЖЬЭ",
+  "form": "зэщӀэвэ-зэщӀэжьэ",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_ГВАЛТ",
+  "translations": {
+   "ru": "гвалт; шум"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json | öncelik: 4 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ИКЪУ-ИКЪУЖКӀЭ",
+  "form": "икъу-икъужкӀэ",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_СЛИШКОМ",
+  "translations": {
+   "ru": "слишком; черезвучайно"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json | öncelik: 4 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-КОКА-КОЛА",
+  "form": "кока-кола",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_КОКА-КОЛА",
+  "translations": {
+   "ru": "кока-кола; кола"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 19.Kbd-Ru-2-Jonty.json | öncelik: 4 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-КЪАБЗАГЪ(Э)",
+  "form": "къабзагъ(э)",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_КРАСОТА",
+  "translations": {
+   "ru": "красота; чистота"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json | öncelik: 4 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-КЪАДЖЭ-НАДЖЭ",
+  "form": "къаджэ-наджэ",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_О ТЕХ",
+  "translations": {
+   "ru": "о тех; тревожит кого-л"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json | öncelik: 4 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-КЪУАБЭ-БЖЬАБЭ",
+  "form": "къуабэ-бжьабэ",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_РОГУЛИНА",
+  "translations": {
+   "ru": "рогулина; суковатый"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 5.Ady-Rus_Qarden.json | öncelik: 4 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-КЪУАНШАГЪ(Э)",
+  "form": "къуаншагъ(э)",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_КРИВИЗНА",
+  "translations": {
+   "ru": "кривизна; переносное вина"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json | öncelik: 4 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-КЪУЭПХЪУ-ШЫПХЪУ",
+  "form": "къуэпхъу-шыпхъу",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_РОДНЯ",
+  "translations": {
+   "ru": "родня; родственники"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json | öncelik: 4 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-КЪУЭШИ-ШЫЛӀИ",
+  "form": "къуэши-шылӀи",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_РОДНЯ",
+  "translations": {
+   "ru": "родня; родственники"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json | öncelik: 4 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-КЪЫКӀЭРЫЩЭЩА-НЫКӀЭРЫЩЭЩА",
+  "form": "къыкӀэрыщэща-ныкӀэрыщэща",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_КРОШКИ",
+  "translations": {
+   "ru": "крошки; крупинки чего-л"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json | öncelik: 4 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-КЪЫПЫЖ-НЫПЫЖ",
+  "form": "къыпыж-ныпыж",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_НЕЗНАЧАЩИЙ",
+  "translations": {
+   "ru": "незначащий; переносное незначительный"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json | öncelik: 4 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-КЪЭДЗ-НЭДЗ",
+  "form": "къэдз-нэдз",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_ПАСОВКА",
+  "translations": {
+   "ru": "пасовка; перебрасывание"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 5.Ady-Rus_Qarden.json | öncelik: 4 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-КЪЭРАБГЪАГЪ(Э)",
+  "form": "къэрабгъагъ(э)",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_БОЯЗЛИВОСТЬ",
+  "translations": {
+   "ru": "боязливость; трусость"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json | öncelik: 4 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-КӀАПЭ-КӀАПЭУ",
+  "form": "кӀапэ-кӀапэу",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_КУСОЧКАМИ",
+  "translations": {
+   "ru": "кусочками; на куски"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json | öncelik: 4 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-КӀУЭЦӀЫ-",
+  "form": "кӀуэцӀы-",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_ГЛАГОЛЬНАЯ ПРИСТАВКА",
+  "translations": {
+   "ru": "глагольная приставка; сквозь что-л"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 5.Ady-Rus_Qarden.json | öncelik: 4 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-КӀЭ-",
+  "form": "кӀэ-",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_ГЛАГОЛЬНАЯ ПРИСТАВКА",
+  "translations": {
+   "ru": "глагольная приставка; передаётся"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 5.Ady-Rus_Qarden.json | öncelik: 4 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-КӀЭНШЭ-ПЭНШЭ",
+  "form": "кӀэншэ-пэншэ",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_БЕСКРАЙНИЙ",
+  "translations": {
+   "ru": "бескрайний; беспредельный"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json | öncelik: 4 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-КӀЭРЫХУ-БЖЬЭРЫХУ",
+  "form": "кӀэрыху-бжьэрыху",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_ОТБРОСЫ",
+  "translations": {
+   "ru": "отбросы; отходы"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 5.Ady-Rus_Qarden.json | öncelik: 4 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ЛЫХЪУ-ЛЫШХ",
+  "form": "лыхъу-лышх",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_ДЗЭЛ УЗ",
+  "translations": {
+   "ru": "дзэл уз; цынга"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 6.Ady-Rus_Sherdjes.json | öncelik: 4 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ЛӀЫГЪУЭ-ФЫЗЫГЪУЭ",
+  "form": "лӀыгъуэ-фызыгъуэ",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_СВЯЗЬ",
+  "translations": {
+   "ru": "связь; сожительство"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 5.Ady-Rus_Qarden.json | öncelik: 4 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-МАХЪЭ-ХЪЕР",
+  "form": "махъэ-хъер",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_БОГАТСТВО",
+  "translations": {
+   "ru": "богатство; добро"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json | öncelik: 4 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-МАЩӀЭ-МАЩӀЭУ",
+  "form": "мащӀэ-мащӀэу",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_МАЛО-ПОМАЛУ",
+  "translations": {
+   "ru": "мало-помалу; понемногу"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json | öncelik: 4 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-МЫЛӀЭ-МЫПСЭУ",
+  "form": "мылӀэ-мыпсэу",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_БОЛЬНОЙ",
+  "translations": {
+   "ru": "больной; хилый"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json | öncelik: 4 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-МЫУПЩӀЭРЭ-МЫУСЭУ",
+  "form": "мыупщӀэрэ-мыусэу",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_БЕЗ СПРОСА",
+  "translations": {
+   "ru": "без спроса; самовольно"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json | öncelik: 4 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-НЫБЖЬЭГЪУ-ЖЭРЭГЪУ",
+  "form": "ныбжьэгъу-жэрэгъу",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_ДРУЗЬЯ-ПРИЯТЕЛИ",
+  "translations": {
+   "ru": "друзья-приятели; друзья-товарищи"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json | öncelik: 4 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-НЭ-",
+  "form": "нэ-",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_ГЛАГОЛЬНАЯ ПРИСТАВКА",
+  "translations": {
+   "ru": "глагольная приставка; обозначает"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 5.Ady-Rus_Qarden.json | öncelik: 4 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-НЭМЫЗ-ӀУМЫЗ",
+  "form": "нэмыз-Ӏумыз",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_ГРУСТЬ",
+  "translations": {
+   "ru": "грусть; постоянное недомогание"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 6.Ady-Rus_Sherdjes.json | öncelik: 4 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-НЭРЫЩЭ-ГУРЫЩЭКӀЭ",
+  "form": "нэрыщэ-гурыщэкӀэ",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_НА ГЛАЗ",
+  "translations": {
+   "ru": "на глаз; приблизительно"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json | öncelik: 4 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ПАКӀЭ-ПАКӀЭУ",
+  "form": "пакӀэ-пакӀэу",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_ГРУППАМИ",
+  "translations": {
+   "ru": "группами; частями"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json | öncelik: 4 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ПЩЫХЬЭЩХЬЭКӀЭ(РЭ)",
+  "form": "пщыхьэщхьэкӀэ(рэ)",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_ВЕЧЕРАМИ",
+  "translations": {
+   "ru": "вечерами; по вечерам"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json | öncelik: 4 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ПЫГЪУКӀ-ПЫСЫКӀЫУ",
+  "form": "пыгъукӀ-пысыкӀыу",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_СКУДНО",
+  "translations": {
+   "ru": "скудно; скупо"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json | öncelik: 4 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ПЫТХЪ-СЫТХЪ",
+  "form": "пытхъ-сытхъ",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_ХА-ХА-ХА",
+  "translations": {
+   "ru": "ха-ха-ха; хи-хи-хи"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json | öncelik: 4 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ПЫЧЫГЪУЭ-ПЫЧЫГЪУЭКӀЭРЭ",
+  "form": "пычыгъуэ-пычыгъуэкӀэрэ",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_ПО ОТРЫВКАМ",
+  "translations": {
+   "ru": "по отрывкам; по слогам"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json | öncelik: 4 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ПЭЛЪЫТ(Э)",
+  "form": "пэлъыт(э)",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_ПОЧИТАЕМЫЙ",
+  "translations": {
+   "ru": "почитаемый; равносильный"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json | öncelik: 4 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ТЕКӀ-ТЕХЬЭ",
+  "form": "текӀ-техьэ",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_НЕВНИМАТЕЛЬНЫЙ",
+  "translations": {
+   "ru": "невнимательный; рассеянный"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 5.Ady-Rus_Qarden.json | öncelik: 4 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ТР-",
+  "form": "тр-",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_ГЛАГОЛЬНАЯ ПРИСТАВКА",
+  "translations": {
+   "ru": "глагольная приставка; обозначает движение"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 5.Ady-Rus_Qarden.json | öncelik: 4 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ТӀЭКӀУ-ТӀЭКӀУ",
+  "form": "тӀэкӀу-тӀэкӀу",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_НЕМНОГО",
+  "translations": {
+   "ru": "немного; понемногу"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json | öncelik: 4 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ФЭШХ-ЛЫШХ",
+  "form": "фэшх-лышх",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_ВЫЗЫВАЕМЫЕ ИМИ",
+  "translations": {
+   "ru": "вызываемые ими; паразиты животных"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json | öncelik: 4 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ФӀАГЪ-БЗАДЖАГЪ",
+  "form": "фӀагъ-бзаджагъ",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_КАЧЕСТВО",
+  "translations": {
+   "ru": "качество; степень качества"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 5.Ady-Rus_Qarden.json | öncelik: 4 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ФӀЭ-",
+  "form": "фӀэ-",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_ГДЕ-ЛИБО",
+  "translations": {
+   "ru": "где-либо; глагольная приставка"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 5.Ady-Rus_Qarden.json | öncelik: 4 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ХЬЭДЭӀУСЫШХ(Э)",
+  "form": "хьэдэӀусышх(э)",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_ПОМИНАЛЬНОГО ОБЕДА",
+  "translations": {
+   "ru": "поминального обеда; участник поминок"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json | öncelik: 4 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ХЬЭЖЭПХЪАЖАГЪ(Э)",
+  "form": "хьэжэпхъажагъ(э)",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_ПЕРЕПОЛОХ",
+  "translations": {
+   "ru": "переполох; суматоха"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json | öncelik: 4 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ХЬЭЛЫФӀЭ-ЩЭНЫФӀЭ",
+  "form": "хьэлыфӀэ-щэныфӀэ",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_ВОСПИТАННЫЙ",
+  "translations": {
+   "ru": "воспитанный; корректный"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json | öncelik: 4 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ХЬЭПИ-ШЫПИ",
+  "form": "хьэпи-шыпи",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_ВЕСЬ СКАРБ",
+  "translations": {
+   "ru": "весь скарб; все пожитки"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json | öncelik: 4 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ХЬЭЧЭ-ХЬЭПСЭУ",
+  "form": "хьэчэ-хьэпсэу",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_ВПОПЫХАХ",
+  "translations": {
+   "ru": "впопыхах; второпях"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 5.Ady-Rus_Qarden.json | öncelik: 4 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ХЭ-",
+  "form": "хэ-",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_ГДЕ-ЛИБО",
+  "translations": {
+   "ru": "где-либо; глагольная приставка"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 5.Ady-Rus_Qarden.json | öncelik: 4 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ХЭМЫХЪУЭ-МЫХЪУРАТӀ",
+  "form": "хэмыхъуэ-мыхъуратӀ",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_ВРЕДНЫЙ МАЛЫЙ",
+  "translations": {
+   "ru": "вредный малый; низкого роста"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json | öncelik: 4 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ХЭЧЫХЬАУЭ(РЭ)",
+  "form": "хэчыхьауэ(рэ)",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_ВЫБОРОЧНО",
+  "translations": {
+   "ru": "выборочно; избирательно"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json | öncelik: 4 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ШЫГЪЭ-ЛӀЫГЪЭ",
+  "form": "шыгъэ-лӀыгъэ",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_СМЕЛОСТЬ",
+  "translations": {
+   "ru": "смелость; храбрость наездника"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json | öncelik: 4 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ЩАБАГЪ(Э)",
+  "form": "щабагъ(э)",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_МЯГКОСТЬ",
+  "translations": {
+   "ru": "мягкость; порошкообразность"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json | öncelik: 4 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ЩХЪУАНТӀЭ-СЫРЫХУ",
+  "form": "щхъуантӀэ-сырыху",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_БЛЕДНО-ГОЛУБОЙ",
+  "translations": {
+   "ru": "бледно-голубой; бледно-зеленый"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json | öncelik: 4 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ЩХЪУАНТӀЭ-СЫРЫХУФЭ",
+  "form": "щхъуантӀэ-сырыхуфэ",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_ГОЛУБОВАТЫЙ",
+  "translations": {
+   "ru": "голубоватый; серовато-зеленый"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json | öncelik: 4 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ЩХЪУАНТӀЭ-ФӀЫЦӀАФЭ",
+  "form": "щхъуантӀэ-фӀыцӀафэ",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_ТЕМНО-ГОЛУБОЙ",
+  "translations": {
+   "ru": "темно-голубой; темно-зеленый"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json | öncelik: 4 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ЩӀИГЪУ(КӀЭ)",
+  "form": "щӀигъу(кӀэ)",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_БОЛЬШЕ",
+  "translations": {
+   "ru": "больше; свыше"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json | öncelik: 4 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ЩӀЫКӀЭНШАГЪ(Э)",
+  "form": "щӀыкӀэншагъ(э)",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_БЕСТАКТНОСТЬ",
+  "translations": {
+   "ru": "бестактность; невоспитанность"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json | öncelik: 4 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ЯБГАГЪЭ(Э)",
+  "form": "ябгагъэ(э)",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_ГНЕВ",
+  "translations": {
+   "ru": "гнев; ярость"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json | öncelik: 4 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ӀУХЬЭ-ӀУКӀЫУ",
+  "form": "Ӏухьэ-ӀукӀыу",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_БЕСПЕРЕБОЙНО",
+  "translations": {
+   "ru": "бесперебойно; беспрерывно"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json | öncelik: 4 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ӀЭИЖЬ-ӀЭСЭМЭГУУ",
+  "form": "Ӏэижь-Ӏэсэмэгуу",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_В СПЕШКЕ",
+  "translations": {
+   "ru": "в спешке; гузавэу"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 6.Ady-Rus_Sherdjes.json | öncelik: 4 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ӀЭМАЩӀЭ-ЛЪЭМАЩӀЭ",
+  "form": "ӀэмащӀэ-лъэмащӀэ",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_НЕБОЛЬШОЙ",
+  "translations": {
+   "ru": "небольшой; хрупкий"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 5.Ady-Rus_Qarden.json | öncelik: 4 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ӀЭМЫКӀУЭ-ЛЪЭМЫКӀУАГЪЭ",
+  "form": "ӀэмыкӀуэ-лъэмыкӀуагъэ",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_ЛЕНЬ",
+  "translations": {
+   "ru": "лень; неорганизованность"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 5.Ady-Rus_Qarden.json | öncelik: 4 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ӀЭПЕЙ-ЛЪЭПЕЙ",
+  "form": "Ӏэпей-лъэпей",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_ВРЕДНЫЙ",
+  "translations": {
+   "ru": "вредный; проказничающий"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json | öncelik: 4 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ӀЭПСО-ЛЪЭПСО",
+  "form": "Ӏэпсо-лъэпсо",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_НЕВРЕДИМЫЙ",
+  "translations": {
+   "ru": "невредимый; целый"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 5.Ady-Rus_Qarden.json | öncelik: 4 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ӀЭПСЭУ-ЛЪЭПСЭУ",
+  "form": "Ӏэпсэу-лъэпсэу",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_НЕВРЕДИМЫЙ",
+  "translations": {
+   "ru": "невредимый; целый"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json | öncelik: 4 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ӀЭПЭ-ЛЪАПЭ",
+  "form": "Ӏэпэ-лъапэ",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_КОНЧИКИ ПАЛЬЦЕВ",
+  "translations": {
+   "ru": "кончики пальцев; пальцы"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json | öncelik: 4 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ӀЭФӀЕЙ-ЛЪЭФӀЕЙ",
+  "form": "ӀэфӀей-лъэфӀей",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_ГРЯЗНЫЙ",
+  "translations": {
+   "ru": "грязный; неопрятный"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json | öncelik: 4 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ӀЭШЫРЭӀ",
+  "form": "ӀэшырэӀ",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_КАРТОФЕЛЯ",
+  "translations": {
+   "ru": "картофеля; фасоли"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 5.Ady-Rus_Qarden.json | öncelik: 4 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ },
+ {
+  "id": "KAV-ӀЭЩӀ-ӀЭДЖАФЭ",
+  "form": "ӀэщӀ-Ӏэджафэ",
+  "partOfSpeech": "noun",
+  "conceptId": "KAVRAM_БЕДНЫЙ",
+  "translations": {
+   "ru": "бедный; несостоятельный"
+  },
+  "ipa": "",
+  "rootIds": [],
+  "notes": "Kaynak: 1.Ady-Ady_AP.json | öncelik: 4 | kavram: 2 | POS otomatik (doğrulanmalı)"
+ }
+]
