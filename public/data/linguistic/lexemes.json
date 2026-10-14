@@ -682145,5 +682145,1094 @@
     "ipa": "",
     "rootIds": [],
     "conceptId": null
+  },
+  {
+    "id": "CEFR-SELAMLASMA-КЪЕБЛАГЪЭ",
+    "form": "Къеблагъэ",
+    "partOfSpeech": "noun",
+    "conceptId": "SELAMLASMA",
+    "translations": {
+      "tr": "Hoş geldin"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "CEFR-SELAMLASMA-УЗЫНШЭУ-УП",
+    "form": "Узыншэу упсэу",
+    "partOfSpeech": "noun",
+    "conceptId": "SELAMLASMA",
+    "translations": {
+      "tr": "Sağlıklı yaşa"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "CEFR-SELAMLASMA-СЫТ-УИ-ХЪЫ",
+    "form": "Сыт уи хъыбар?",
+    "partOfSpeech": "noun",
+    "conceptId": "SELAMLASMA",
+    "translations": {
+      "tr": "Ne haber?"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "CEFR-SELAMLASMA-УПСЭУ",
+    "form": "Упсэу",
+    "partOfSpeech": "noun",
+    "conceptId": "SELAMLASMA",
+    "translations": {
+      "tr": "Teşekkür ederim"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "CEFR-SELAMLASMA-ТХЬЭУЭГЪЭП",
+    "form": "Тхьэуэгъэпсэу",
+    "partOfSpeech": "noun",
+    "conceptId": "SELAMLASMA",
+    "translations": {
+      "tr": "Teşekkür ederim"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "CEFR-AILE-АДЭ",
+    "form": "Адэ",
+    "partOfSpeech": "noun",
+    "conceptId": "AILE",
+    "translations": {
+      "tr": "Baba"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "CEFR-AILE-АНЭ",
+    "form": "Анэ",
+    "partOfSpeech": "noun",
+    "conceptId": "AILE",
+    "translations": {
+      "tr": "Anne"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "CEFR-AILE-КЪУЭ",
+    "form": "Къуэ",
+    "partOfSpeech": "noun",
+    "conceptId": "AILE",
+    "translations": {
+      "tr": "Oğul"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "CEFR-AILE-ПХЪУ",
+    "form": "Пхъу",
+    "partOfSpeech": "noun",
+    "conceptId": "AILE",
+    "translations": {
+      "tr": "Kız"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "CEFR-AILE-КЪУЭШ",
+    "form": "Къуэш",
+    "partOfSpeech": "noun",
+    "conceptId": "AILE",
+    "translations": {
+      "tr": "Erkek kardeş"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "CEFR-AILE-ШЫПХЪУ",
+    "form": "Шыпхъу",
+    "partOfSpeech": "noun",
+    "conceptId": "AILE",
+    "translations": {
+      "tr": "Kız kardeş"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "CEFR-DOGA-ДЫГЪЭ",
+    "form": "Дыгъэ",
+    "partOfSpeech": "noun",
+    "conceptId": "DOGA",
+    "translations": {
+      "tr": "Güneş"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "CEFR-DOGA-МАЗЭ",
+    "form": "Мазэ",
+    "partOfSpeech": "noun",
+    "conceptId": "DOGA",
+    "translations": {
+      "tr": "Ay"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "CEFR-DOGA-УЭШХ",
+    "form": "Уэшх",
+    "partOfSpeech": "noun",
+    "conceptId": "DOGA",
+    "translations": {
+      "tr": "Yağmur"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "CEFR-DOGA-УЭС",
+    "form": "Уэс",
+    "partOfSpeech": "noun",
+    "conceptId": "DOGA",
+    "translations": {
+      "tr": "Kar"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "CEFR-DOGA-ВАГЪУЭ",
+    "form": "Вагъуэ",
+    "partOfSpeech": "noun",
+    "conceptId": "DOGA",
+    "translations": {
+      "tr": "Yıldız"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "CEFR-ZAMAN-ЗЫ",
+    "form": "Зы",
+    "partOfSpeech": "noun",
+    "conceptId": "ZAMAN",
+    "translations": {
+      "tr": "Bir (1)"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "CEFR-ZAMAN-ТIУ",
+    "form": "ТӀу",
+    "partOfSpeech": "noun",
+    "conceptId": "ZAMAN",
+    "translations": {
+      "tr": "İki (2)"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "CEFR-ZAMAN-ЩЫ",
+    "form": "Щы",
+    "partOfSpeech": "noun",
+    "conceptId": "ZAMAN",
+    "translations": {
+      "tr": "Üç (3)"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "CEFR-ZAMAN-БЛЫЩХЬЭ",
+    "form": "Блыщхьэ",
+    "partOfSpeech": "noun",
+    "conceptId": "ZAMAN",
+    "translations": {
+      "tr": "Pazartesi"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "CEFR-ZAMAN-ГЪУБЖ",
+    "form": "Гъубж",
+    "partOfSpeech": "noun",
+    "conceptId": "ZAMAN",
+    "translations": {
+      "tr": "Salı"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "CEFR-ZAMAN-БЭРЭЖЬЕЙ",
+    "form": "Бэрэжьей",
+    "partOfSpeech": "noun",
+    "conceptId": "ZAMAN",
+    "translations": {
+      "tr": "Çarşamba"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "CEFR-RENKLER-ХУЖЬ",
+    "form": "Хужь",
+    "partOfSpeech": "noun",
+    "conceptId": "RENKLER",
+    "translations": {
+      "tr": "Beyaz"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "CEFR-RENKLER-ФIЫЦIЭ",
+    "form": "ФӀыцӀэ",
+    "partOfSpeech": "noun",
+    "conceptId": "RENKLER",
+    "translations": {
+      "tr": "Siyah"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "CEFR-RENKLER-ПЛЪЫЖЬ",
+    "form": "Плъыжь",
+    "partOfSpeech": "noun",
+    "conceptId": "RENKLER",
+    "translations": {
+      "tr": "Kırmızı"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "CEFR-RENKLER-ЩХЪУАНТIЭ",
+    "form": "ЩхъуантӀэ",
+    "partOfSpeech": "noun",
+    "conceptId": "RENKLER",
+    "translations": {
+      "tr": "Mavi"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "CEFR-RENKLER-УДЗЫФЭ",
+    "form": "Удзыфэ",
+    "partOfSpeech": "noun",
+    "conceptId": "RENKLER",
+    "translations": {
+      "tr": "Yeşil"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "CEFR-RENKLER-ГЪУЭЖЬ",
+    "form": "Гъуэжь",
+    "partOfSpeech": "noun",
+    "conceptId": "RENKLER",
+    "translations": {
+      "tr": "Sarı"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "CEFR-OKUL-ТХЫЛЪ",
+    "form": "Тхылъ",
+    "partOfSpeech": "noun",
+    "conceptId": "OKUL",
+    "translations": {
+      "tr": "Kitap"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "CEFR-OKUL-ТЕТРАД",
+    "form": "Тетрад",
+    "partOfSpeech": "noun",
+    "conceptId": "OKUL",
+    "translations": {
+      "tr": "Defter"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "CEFR-OKUL-КЪЭРЭНДАЩ",
+    "form": "Къэрэндащ",
+    "partOfSpeech": "noun",
+    "conceptId": "OKUL",
+    "translations": {
+      "tr": "Kalem"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "CEFR-OKUL-ЕГЪЭДЖАКIУ",
+    "form": "ЕгъэджакӀуэ",
+    "partOfSpeech": "noun",
+    "conceptId": "OKUL",
+    "translations": {
+      "tr": "Öğretmen"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "CEFR-OKUL-ЕДЖАКIУЭ",
+    "form": "ЕджакӀуэ",
+    "partOfSpeech": "noun",
+    "conceptId": "OKUL",
+    "translations": {
+      "tr": "Öğrenci"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "CEFR-EV-УНЭ",
+    "form": "Унэ",
+    "partOfSpeech": "noun",
+    "conceptId": "EV",
+    "translations": {
+      "tr": "Ev"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "CEFR-EV-ПХЪУАНТЭ",
+    "form": "Пхъуантэ",
+    "partOfSpeech": "noun",
+    "conceptId": "EV",
+    "translations": {
+      "tr": "Sandık"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "CEFR-EV-ШЭНТ",
+    "form": "Шэнт",
+    "partOfSpeech": "noun",
+    "conceptId": "EV",
+    "translations": {
+      "tr": "Sandalye"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "CEFR-YEMEK-ЛАКЪУМ",
+    "form": "Лакъум",
+    "partOfSpeech": "noun",
+    "conceptId": "YEMEK",
+    "translations": {
+      "tr": "Lokum"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "CEFR-YEMEK-ШАСТЭ",
+    "form": "Шастэ",
+    "partOfSpeech": "noun",
+    "conceptId": "YEMEK",
+    "translations": {
+      "tr": "Pasta"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "CEFR-YEMEK-КХЪУЕЙПЛЪЫ",
+    "form": "Кхъуейплъыжь",
+    "partOfSpeech": "noun",
+    "conceptId": "YEMEK",
+    "translations": {
+      "tr": "Çerkes peyniri"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "CEFR-YEMEK-ЛЫБЖЬЭ",
+    "form": "Лыбжьэ",
+    "partOfSpeech": "noun",
+    "conceptId": "YEMEK",
+    "translations": {
+      "tr": "Et yemeği"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "CEFR-YEMEK-ЛЭПС",
+    "form": "Лэпс",
+    "partOfSpeech": "noun",
+    "conceptId": "YEMEK",
+    "translations": {
+      "tr": "Et suyu"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "CEFR-GIYIM-ДЖАНЭ",
+    "form": "Джанэ",
+    "partOfSpeech": "noun",
+    "conceptId": "GIYIM",
+    "translations": {
+      "tr": "Gömlek"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "CEFR-GIYIM-ГЪУЭНШЭДЖ",
+    "form": "Гъуэншэдж",
+    "partOfSpeech": "noun",
+    "conceptId": "GIYIM",
+    "translations": {
+      "tr": "Pantolon"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "CEFR-GIYIM-БГЫРЫПХ",
+    "form": "Бгырыпх",
+    "partOfSpeech": "noun",
+    "conceptId": "GIYIM",
+    "translations": {
+      "tr": "Kemer"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "CEFR-GIYIM-ВАКЪЭ",
+    "form": "Вакъэ",
+    "partOfSpeech": "noun",
+    "conceptId": "GIYIM",
+    "translations": {
+      "tr": "Ayakkabı"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "CEFR-VUCUT-ЩХЬЭЦ",
+    "form": "Щхьэц",
+    "partOfSpeech": "noun",
+    "conceptId": "VUCUT",
+    "translations": {
+      "tr": "Saç"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "CEFR-VUCUT-НАПЭ",
+    "form": "Напэ",
+    "partOfSpeech": "noun",
+    "conceptId": "VUCUT",
+    "translations": {
+      "tr": "Yüz"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "CEFR-VUCUT-НЭ",
+    "form": "Нэ",
+    "partOfSpeech": "noun",
+    "conceptId": "VUCUT",
+    "translations": {
+      "tr": "Göz"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "CEFR-VUCUT-ПЭ",
+    "form": "Пэ",
+    "partOfSpeech": "noun",
+    "conceptId": "VUCUT",
+    "translations": {
+      "tr": "Burun"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "CEFR-VUCUT-ЛЪАКЪУЭ",
+    "form": "Лъакъуэ",
+    "partOfSpeech": "noun",
+    "conceptId": "VUCUT",
+    "translations": {
+      "tr": "Ayak"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "CEFR-HAYVANLAR-ШЫ",
+    "form": "Шы",
+    "partOfSpeech": "noun",
+    "conceptId": "HAYVANLAR",
+    "translations": {
+      "tr": "At"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "CEFR-HAYVANLAR-МЭЛ",
+    "form": "Мэл",
+    "partOfSpeech": "noun",
+    "conceptId": "HAYVANLAR",
+    "translations": {
+      "tr": "Koyun"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "CEFR-HAYVANLAR-ЖЭМ",
+    "form": "Жэм",
+    "partOfSpeech": "noun",
+    "conceptId": "HAYVANLAR",
+    "translations": {
+      "tr": "İnek"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "CEFR-HAYVANLAR-ХЬЭ",
+    "form": "Хьэ",
+    "partOfSpeech": "noun",
+    "conceptId": "HAYVANLAR",
+    "translations": {
+      "tr": "Köpek"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "CEFR-HAYVANLAR-ДЖЭДУ",
+    "form": "Джэду",
+    "partOfSpeech": "noun",
+    "conceptId": "HAYVANLAR",
+    "translations": {
+      "tr": "Kedi"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "CEFR-YONLER-ИЩХЪЭРЭ",
+    "form": "Ищхъэрэ",
+    "partOfSpeech": "noun",
+    "conceptId": "YONLER",
+    "translations": {
+      "tr": "Kuzey"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "CEFR-YONLER-ИПЩЭ",
+    "form": "Ипщэ",
+    "partOfSpeech": "noun",
+    "conceptId": "YONLER",
+    "translations": {
+      "tr": "Güney"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "CEFR-YONLER-КЪУЭКIЫПIЭ",
+    "form": "КъуэкӀыпӀэ",
+    "partOfSpeech": "noun",
+    "conceptId": "YONLER",
+    "translations": {
+      "tr": "Doğu"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "CEFR-YONLER-КЪУХЬЭПIЭ",
+    "form": "КъухьэпӀэ",
+    "partOfSpeech": "noun",
+    "conceptId": "YONLER",
+    "translations": {
+      "tr": "Batı"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "CEFR-YONLER-ПСЫ",
+    "form": "Псы",
+    "partOfSpeech": "noun",
+    "conceptId": "YONLER",
+    "translations": {
+      "tr": "Su/Nehir"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "CEFR-DUYGULAR-ГУФIЭГЪУЭ",
+    "form": "ГуфӀэгъуэ",
+    "partOfSpeech": "noun",
+    "conceptId": "DUYGULAR",
+    "translations": {
+      "tr": "Sevinçli"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "CEFR-DUYGULAR-ГУАУЭ-ЗИIЭ",
+    "form": "Гуауэ зиӀэ",
+    "partOfSpeech": "noun",
+    "conceptId": "DUYGULAR",
+    "translations": {
+      "tr": "Üzüntülü"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "CEFR-DUYGULAR-НЭЩХЪЕЙ",
+    "form": "Нэщхъей",
+    "partOfSpeech": "noun",
+    "conceptId": "DUYGULAR",
+    "translations": {
+      "tr": "Mahzun"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "CEFR-DUYGULAR-МЭЖАЛIЭ",
+    "form": "МэжалӀэ",
+    "partOfSpeech": "noun",
+    "conceptId": "DUYGULAR",
+    "translations": {
+      "tr": "Aç"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "CEFR-DUYGULAR-ПСЫХУЭЛIЭ",
+    "form": "ПсыхуэлӀэ",
+    "partOfSpeech": "noun",
+    "conceptId": "DUYGULAR",
+    "translations": {
+      "tr": "Susamış"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "CEFR-XABZE-НЭМЫС",
+    "form": "Нэмыс",
+    "partOfSpeech": "noun",
+    "conceptId": "XABZE",
+    "translations": {
+      "tr": "Saygı"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "CEFR-XABZE-ХАБЗЭ",
+    "form": "Хабзэ",
+    "partOfSpeech": "noun",
+    "conceptId": "XABZE",
+    "translations": {
+      "tr": "Gelenek"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "CEFR-XABZE-ХЬЭЩIЭ",
+    "form": "ХьэщӀэ",
+    "partOfSpeech": "noun",
+    "conceptId": "XABZE",
+    "translations": {
+      "tr": "Misafir"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "CEFR-XABZE-ЛЪЭПКЪ",
+    "form": "Лъэпкъ",
+    "partOfSpeech": "noun",
+    "conceptId": "XABZE",
+    "translations": {
+      "tr": "Soy"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "CEFR-KAFKASYA-КЪУРШ",
+    "form": "Къурш",
+    "partOfSpeech": "noun",
+    "conceptId": "KAFKASYA",
+    "translations": {
+      "tr": "Dağlar"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "CEFR-KAFKASYA-ЖЫГЕЙ",
+    "form": "Жыгей",
+    "partOfSpeech": "noun",
+    "conceptId": "KAFKASYA",
+    "translations": {
+      "tr": "Meşe"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "CEFR-KAFKASYA-ПСЕЙ",
+    "form": "Псей",
+    "partOfSpeech": "noun",
+    "conceptId": "KAFKASYA",
+    "translations": {
+      "tr": "Ladin"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "CEFR-KAFKASYA-БАЛИЕЙ",
+    "form": "Балией",
+    "partOfSpeech": "noun",
+    "conceptId": "KAFKASYA",
+    "translations": {
+      "tr": "Vişne ağacı"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "CEFR-KAFKASYA-ДЭШХУЕЙ",
+    "form": "Дэшхуей",
+    "partOfSpeech": "noun",
+    "conceptId": "KAFKASYA",
+    "translations": {
+      "tr": "Ceviz ağacı"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "CEFR-ELSANATLARI-ЦЕЙ",
+    "form": "Цей",
+    "partOfSpeech": "noun",
+    "conceptId": "ELSANATLARI",
+    "translations": {
+      "tr": "Çerkeska"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "CEFR-ELSANATLARI-КЪЭРМАКЪ",
+    "form": "Къэрмакъ",
+    "partOfSpeech": "noun",
+    "conceptId": "ELSANATLARI",
+    "translations": {
+      "tr": "Kopça"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "CEFR-ELSANATLARI-ДАНЭ",
+    "form": "Данэ",
+    "partOfSpeech": "noun",
+    "conceptId": "ELSANATLARI",
+    "translations": {
+      "tr": "İpek"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "CEFR-ELSANATLARI-ХЬЭЗЫР",
+    "form": "Хьэзыр",
+    "partOfSpeech": "noun",
+    "conceptId": "ELSANATLARI",
+    "translations": {
+      "tr": "Fişeklik"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "CEFR-ELSANATLARI-ЩХЬЭТЕПХЪУ",
+    "form": "Щхьэтепхъуэ",
+    "partOfSpeech": "noun",
+    "conceptId": "ELSANATLARI",
+    "translations": {
+      "tr": "Başlık"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "CEFR-ELSANATLARI-БАЩЛЪЫКЪ",
+    "form": "Бащлъыкъ",
+    "partOfSpeech": "noun",
+    "conceptId": "ELSANATLARI",
+    "translations": {
+      "tr": "Başlık"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "CEFR-ELSANATLARI-ЩIАКIУЭ",
+    "form": "ЩӀакӀуэ",
+    "partOfSpeech": "noun",
+    "conceptId": "ELSANATLARI",
+    "translations": {
+      "tr": "Burka"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "CEFR-MUZIK-ШЫКIЭПШЫНЭ",
+    "form": "ШыкӀэпшынэ",
+    "partOfSpeech": "noun",
+    "conceptId": "MUZIK",
+    "translations": {
+      "tr": "Çerkes kemanı"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "CEFR-MUZIK-ПХЪЭЦIЫЧ",
+    "form": "ПхъэцӀыч",
+    "partOfSpeech": "noun",
+    "conceptId": "MUZIK",
+    "translations": {
+      "tr": "Kastanet"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "CEFR-MUZIK-ПШЫНЭ",
+    "form": "Пшынэ",
+    "partOfSpeech": "noun",
+    "conceptId": "MUZIK",
+    "translations": {
+      "tr": "Akordeon"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "CEFR-MUZIK-КЪАМЫЛ",
+    "form": "Къамыл",
+    "partOfSpeech": "noun",
+    "conceptId": "MUZIK",
+    "translations": {
+      "tr": "Çerkes flütü"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "CEFR-RITUELLER-ЛЪЭТЕУВЭ",
+    "form": "Лъэтеувэ",
+    "partOfSpeech": "noun",
+    "conceptId": "RITUELLER",
+    "translations": {
+      "tr": "İlk adım töreni"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "CEFR-RITUELLER-ГУЩЭХУЖ",
+    "form": "Гущэхуж",
+    "partOfSpeech": "noun",
+    "conceptId": "RITUELLER",
+    "translations": {
+      "tr": "Beşiğe yatırma"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "CEFR-RITUELLER-ГУЩЭХЭПХЭ",
+    "form": "Гущэхэпхэ",
+    "partOfSpeech": "noun",
+    "conceptId": "RITUELLER",
+    "translations": {
+      "tr": "Beşiğe yatırma"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "CEFR-RITUELLER-ХЬЭДАГЪЭ",
+    "form": "Хьэдагъэ",
+    "partOfSpeech": "noun",
+    "conceptId": "RITUELLER",
+    "translations": {
+      "tr": "Yas töreni"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "CEFR-SOYUT-ХЭКУ",
+    "form": "Хэку",
+    "partOfSpeech": "noun",
+    "conceptId": "SOYUT",
+    "translations": {
+      "tr": "Vatan"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "CEFR-MITOLOJI-ТХЬЭШХУЭ",
+    "form": "Тхьэшхуэ",
+    "partOfSpeech": "noun",
+    "conceptId": "MITOLOJI",
+    "translations": {
+      "tr": "Ulu Tanrı"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "CEFR-MITOLOJI-НЭРТХЭР",
+    "form": "Нэртхэр",
+    "partOfSpeech": "noun",
+    "conceptId": "MITOLOJI",
+    "translations": {
+      "tr": "Nartlar"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "CEFR-MITOLOJI-СЭТЭНЕЙ",
+    "form": "Сэтэней",
+    "partOfSpeech": "noun",
+    "conceptId": "MITOLOJI",
+    "translations": {
+      "tr": "Satanay"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "CEFR-MITOLOJI-ЛЪЭПЩ",
+    "form": "Лъэпщ",
+    "partOfSpeech": "noun",
+    "conceptId": "MITOLOJI",
+    "translations": {
+      "tr": "Demircilik Tanrısı"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "CEFR-KADIM-КIАПЦIЭ",
+    "form": "КӀапцӀэ",
+    "partOfSpeech": "noun",
+    "conceptId": "KADIM",
+    "translations": {
+      "tr": "Mide"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "CEFR-KADIM-ХЬЭМБАШ",
+    "form": "Хьэмбаш",
+    "partOfSpeech": "noun",
+    "conceptId": "KADIM",
+    "translations": {
+      "tr": "Zincir"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "CEFR-KADIM-ШЫКIУРТIАК",
+    "form": "ШыкӀуртӀакъ",
+    "partOfSpeech": "noun",
+    "conceptId": "KADIM",
+    "translations": {
+      "tr": "Afyon"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "CEFR-KADIM-УЭГУПЛЪ",
+    "form": "Уэгуплъ",
+    "partOfSpeech": "noun",
+    "conceptId": "KADIM",
+    "translations": {
+      "tr": "Lapis-lazuli"
+    },
+    "ipa": "",
+    "rootIds": []
+  },
+  {
+    "id": "CEFR-KADIM-ХЫКХЪУЭ",
+    "form": "Хыкхъуэ",
+    "partOfSpeech": "noun",
+    "conceptId": "KADIM",
+    "translations": {
+      "tr": "Fok"
+    },
+    "ipa": "",
+    "rootIds": []
   }
 ]
