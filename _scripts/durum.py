@@ -1,13 +1,22 @@
+"""
+Durum raporu - duzeltilmis versiyon
+translations.tr dogru sayar (eski versiyon sadece obje varligina bakiyordu)
+"""
 import json
-import sys
 from pathlib import Path
-
-sys.stdout.reconfigure(encoding="utf-8")
 
 lex = json.loads(Path("public/data/linguistic/lexemes.json").read_text(encoding="utf-8"))
 print(f"Toplam: {len(lex)}")
+print()
 
-# Ana alanlar
+def tr_dolu(x):  return bool((x.get("translations") or {}).get("tr"))
+def en_dolu(x):  return bool((x.get("translations") or {}).get("en"))
+def ru_dolu(x):  return bool((x.get("translations") or {}).get("ru"))
+
+def trans_herhangi(x):
+    t = x.get("translations")
+    return bool(t) and (t.get("tr") or t.get("en") or t.get("ru"))
+
 alanlar = [
     ("form", "Form"),
     ("ipa", "IPA"),
@@ -16,7 +25,6 @@ alanlar = [
     ("wordFamilyId", "WordFamily"),
     ("conceptId", "Concept"),
     ("derivation", "Derivation"),
-    ("translations", "Translations"),
     ("literalMeaning", "Meaning"),
     ("examples", "Examples"),
     ("audioUrl", "Audio"),
@@ -29,18 +37,28 @@ for alan, isim in alanlar:
     bar = "█" * int(pct / 5) + "░" * (20 - int(pct / 5))
     print(f"  {isim:15s} {dolu:6}/{len(lex)} ({pct:5.1f}%) {bar}")
 
-# Ek alanlar
+print()
+print("=== TRANSLATIONS DETAYLI ===")
+for isim, fn in [
+    ("tr (Turkce)", tr_dolu),
+    ("en (Ingilizce)", en_dolu),
+    ("ru (Rusca)", ru_dolu),
+    ("herhangi", trans_herhangi),
+]:
+    dolu = sum(1 for l in lex if fn(l))
+    pct = 100 * dolu / len(lex)
+    bar = "█" * int(pct / 5) + "░" * (20 - int(pct / 5))
+    print(f"  {isim:15s} {dolu:6}/{len(lex)} ({pct:5.1f}%) {bar}")
+
 print()
 print("=== EK ALANLAR ===")
-ek_alanlar = [
+for alan, isim in [
     ("dialectVariants", "Dialect"),
     ("notes", "Notes"),
-    ("examples", "Examples"),
     ("isLemma", "isLemma"),
     ("subConceptId", "SubConcept"),
-    ("taxonomyId", "Taxonomy"),
-]
-for alan, isim in ek_alanlar:
+    ("taxonomyFamily", "Taxonomy"),
+]:
     dolu = sum(1 for l in lex if l.get(alan))
     pct = 100 * dolu / len(lex)
     print(f"  {isim:15s} {dolu:6}/{len(lex)} ({pct:5.1f}%)")
