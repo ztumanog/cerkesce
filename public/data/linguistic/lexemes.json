@@ -39370,24 +39370,6 @@
     "ipaSource": "root-derived"
   },
   {
-    "id": "L-CORPUS-00022",
-    "form": "-",
-    "literalMeaning": "Type: Definitions: <span style='font-weight:bold'",
-    "partOfSpeech": "noun",
-    "corpusFrequency": 827,
-    "dialectVariants": {
-      "adyghe": "",
-      "kabardian": "-"
-    },
-    "notes": "Corpus v1.0 (freq: 827, lang: kbd, source: 26.Tu-Kbd-Jonty)",
-    "isLemma": true,
-    "translations": {
-      "tr": "Type: Definitions: <span style='font-weight:bold'"
-    },
-    "ipa": null,
-    "ipaSource": "skipped-grammatical"
-  },
-  {
     "id": "L-CORPUS-00023",
     "form": "апхуэдэ",
     "literalMeaning": "определит",
@@ -48532,30 +48514,6 @@
     ]
   },
   {
-    "id": "L-CORPUS-00350",
-    "form": "-м",
-    "literalMeaning": "",
-    "partOfSpeech": "noun",
-    "corpusFrequency": 117,
-    "dialectVariants": {
-      "adyghe": "",
-      "kabardian": "-м"
-    },
-    "notes": "Corpus v1.0 (freq: 117, lang: kbd, source: 17.Kbd-En_Amjad)",
-    "isLemma": false,
-    "rootIds": [],
-    "wordFamilyId": "WF--М",
-    "derivation": {
-      "rootIds": [
-        "R--М"
-      ],
-      "morphemeIds": [],
-      "rule": "root"
-    },
-    "ipa": null,
-    "ipaSource": "skipped-grammatical"
-  },
-  {
     "id": "L-CORPUS-00351",
     "form": "лъагэу",
     "literalMeaning": "",
@@ -56639,36 +56597,6 @@
       "R-KUE_1"
     ],
     "ipa": "/kʷɐd/"
-  },
-  {
-    "id": "L-CORPUS-00646",
-    "form": "-р",
-    "literalMeaning": "~р suff",
-    "partOfSpeech": "noun",
-    "corpusFrequency": 63,
-    "dialectVariants": {
-      "adyghe": "",
-      "kabardian": "-р"
-    },
-    "notes": "Corpus v1.0 (freq: 63, lang: kbd, source: 17.Kbd-En_Amjad) [NATURE yanlis etiket temizlendi]",
-    "conceptId": "",
-    "isLemma": true,
-    "translations": {
-      "tr": "~р suff"
-    },
-    "subConceptId": "",
-    "taxonomyFamily": "",
-    "rootIds": [],
-    "wordFamilyId": "WF--Р",
-    "derivation": {
-      "rootIds": [
-        "R--Р"
-      ],
-      "morphemeIds": [],
-      "rule": "root"
-    },
-    "ipa": null,
-    "ipaSource": "skipped-grammatical"
   },
   {
     "id": "L-CORPUS-00647",
@@ -70141,33 +70069,6 @@
       "morphemeIds": [],
       "rule": "compound"
     }
-  },
-  {
-    "id": "L-CORPUS-01112",
-    "form": "-рэ",
-    "literalMeaning": "рэ Type: conjunction Definitions: <span style='font",
-    "partOfSpeech": "noun",
-    "corpusFrequency": 36,
-    "dialectVariants": {
-      "adyghe": "-рэ",
-      "kabardian": ""
-    },
-    "notes": "Corpus v1.0 (freq: 36, lang: ady, source: 15.Kbd-En-Jonty)",
-    "isLemma": true,
-    "translations": {
-      "ru": "рэ Type: conjunction Definitions: <span style='font"
-    },
-    "rootIds": [],
-    "wordFamilyId": "WF--РЭ",
-    "derivation": {
-      "rootIds": [
-        "R--РЭ"
-      ],
-      "morphemeIds": [],
-      "rule": "root"
-    },
-    "ipa": null,
-    "ipaSource": "skipped-grammatical"
   },
   {
     "id": "L-CORPUS-01113",
@@ -105444,34 +105345,6 @@
     },
     "ipa": "/wǝˈdzǝfɐ/",
     "ipaSource": "root-derived"
-  },
-  {
-    "id": "L-CORPUS-02369",
-    "form": "-м",
-    "literalMeaning": "~м denotes relative case",
-    "partOfSpeech": "noun",
-    "corpusFrequency": 17,
-    "dialectVariants": {
-      "adyghe": "-м",
-      "kabardian": ""
-    },
-    "notes": "Corpus v1.0 (freq: 17, lang: ady, source: 17.Kbd-En_Amjad) [ANIMAL etiketinden cikarildi]",
-    "conceptId": null,
-    "isLemma": true,
-    "translations": {
-      "tr": "~м denotes relative case"
-    },
-    "rootIds": [],
-    "wordFamilyId": "WF--М",
-    "derivation": {
-      "rootIds": [
-        "R--М"
-      ],
-      "morphemeIds": [],
-      "rule": "root"
-    },
-    "ipa": null,
-    "ipaSource": "skipped-grammatical"
   },
   {
     "id": "L-CORPUS-02370",
