@@ -180,3 +180,6 @@ _wiktionary/
 
 # Backup dosyalar
 *.bak-*
+
+# Gecici calisma dosyalari
+ipa_kalan_notebooklm.txt
