@@ -59,4 +59,29 @@ describe('ADR-0040: RootClassifier', () => {
     expect(classifier.getType('гу')).toBe('STABLE');
     expect(classifier.getType('-сы')).toBe('BOUND');
   });
+
+  // ============================================
+  // PALOCHKA UYUMU (veri U+04C0 kullaniyor, kurallar Latin "I" kullaniyordu)
+  // ============================================
+
+  it('RC-011: palochka ile biten bound root (гущӀэ)', () => {
+    const r = classifier.classify('гущӀэ');
+    expect(r.type).toBe('BOUND');
+    expect(r.confidence).toBeGreaterThanOrEqual(0.9);
+  });
+
+  it('RC-012: Latin I ile yazilmis bound root da yakalanir (гущIэ)', () => {
+    const r = classifier.classify('гущIэ');
+    expect(r.type).toBe('BOUND');
+  });
+
+  it('RC-013: donen form orijinal haliyle korunur', () => {
+    const r = classifier.classify('гущIэ');
+    expect(r.form).toBe('гущIэ');
+  });
+
+  it('RC-014: stabil root kontrolu bound kontrolunden once gelir (псы)', () => {
+    // "псы" ayni zamanda "-сы" eki ile bitiyor; STABLE kazanmali
+    expect(classifier.classify('псы').type).toBe('STABLE');
+  });
 });

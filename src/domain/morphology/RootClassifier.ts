@@ -9,6 +9,11 @@
  * - STABLE: Kararli, degismez
  *
  * Referans: Kumakhov, gl4.pdf
+ *
+ * NOT (palochka): Veri seti palochka olarak U+04C0 (Ӏ) kullaniyor; ancak
+ * bazi kayitlar/scriptler Latin "I", "l", U+04CF (ӏ), U+0406 (І), U+0456 (і)
+ * kullanabiliyor. Karsilastirma oncesi bu karakterler tek forma cevrilir,
+ * aksi hâlde "-щIэ" gibi kurallar gercek veride hicbir zaman eslesmiyor.
  */
 
 export type RootType = 'FREE' | 'BOUND' | 'NEUTRAL' | 'STABLE';
@@ -20,18 +25,27 @@ export interface RootClassification {
   reason: string;
 }
 
+/** Kanonik palochka karakteri (Cyrillic small palochka, U+04C0) */
+const PALOCHKA = '\u04C0';
+
+/** Palochka varyantlarini kanonik forma cevirir. */
+function normalizePalochka(s: string): string {
+  return s.replace(/[\u04CFIl\u0406\u0456]/g, PALOCHKA);
+}
+
 /**
  * Bilinen bound root'lar (Kumakhov gl4.pdf)
+ * NOT: Palochka icerenler kanonik U+04C0 ile yazilir.
  */
 const KNOWN_BOUND_ROOTS = [
   '-сы',
   '-лъы',
   '-ты',
   '-гъы',
-  '-къIэ',
-  '-щIэ',
-  '-пIэ',
-  '-кIэ',
+  `-къ${PALOCHKA}э`,
+  `-щ${PALOCHKA}э`,
+  `-п${PALOCHKA}э`,
+  `-к${PALOCHKA}э`,
 ];
 
 /**
@@ -51,11 +65,13 @@ export class RootClassifier {
    * Bir kokun tipini belirler.
    */
   classify(form: string): RootClassification {
-    const normalized = form.trim();
+    const orijinal = form.trim();
+    // Karsilastirmalar palochka normalize edilerek yapilir; donen deger orijinaldir.
+    const normalized = normalizePalochka(orijinal);
 
     if (!normalized) {
       return {
-        form: '',
+        form: orijinal,
         type: 'NEUTRAL',
         confidence: 0,
         reason: 'Bos form',
@@ -65,7 +81,7 @@ export class RootClassifier {
     // 1. Bound root kontrolu (onek ile baslar)
     if (normalized.startsWith('-')) {
       return {
-        form: normalized,
+        form: orijinal,
         type: 'BOUND',
         confidence: 1.0,
         reason: 'Onek isareti (-) ile basliyor',
@@ -76,7 +92,7 @@ export class RootClassifier {
     for (const stable of KNOWN_STABLE_ROOTS) {
       if (normalized === stable) {
         return {
-          form: normalized,
+          form: orijinal,
           type: 'STABLE',
           confidence: 1.0,
           reason: `Bilinen stabil root: ${stable}`,
@@ -89,7 +105,7 @@ export class RootClassifier {
       const boundForm = bound.replace('-', '');
       if (normalized.endsWith(boundForm)) {
         return {
-          form: normalized,
+          form: orijinal,
           type: 'BOUND',
           confidence: 0.9,
           reason: `Bilinen bound root: ${bound}`,
@@ -100,7 +116,7 @@ export class RootClassifier {
     // 4. Tek basina gorunuyorsa FREE
     if (normalized.length >= 2 && !normalized.startsWith('-')) {
       return {
-        form: normalized,
+        form: orijinal,
         type: 'FREE',
         confidence: 0.7,
         reason: 'Tek basina gorunur form',
@@ -109,7 +125,7 @@ export class RootClassifier {
 
     // 5. Fallback
     return {
-      form: normalized,
+      form: orijinal,
       type: 'NEUTRAL',
       confidence: 0.5,
       reason: 'Belirsiz — varsayilan NEUTRAL',

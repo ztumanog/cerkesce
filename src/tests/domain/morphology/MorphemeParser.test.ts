@@ -1,4 +1,4 @@
-﻿import { describe, it, expect } from 'vitest';
+import { describe, it, expect } from 'vitest';
 import { MorphemeParser } from '../../../domain/morphology/MorphemeParser';
 import { Morpheme } from '../../../domain/linguistic/Morpheme';
 import morphemesData from '../../../../public/data/linguistic/morphemes.json';
@@ -143,5 +143,71 @@ describe('ADR-0040: MorphemeParser entegrasyon', () => {
   it('getSuccessRate doner', () => {
     const results = parser.parseBatch(['гу', 'псы']);
     expect(parser.getSuccessRate(results)).toBe(1.0);
+  });
+});
+
+// ============================================
+// derivation.components (GUNCEL SEMA) DESTEGI
+// ============================================
+
+describe('MorphemeParser — derivation.components', () => {
+  const parser = new MorphemeParser(morphemesData as any);
+
+  it('components alanindan morfemleri cozer', () => {
+    const lexeme = (lexemesData as any[]).find(
+      l => l.derivation?.components?.length > 0
+    );
+    expect(lexeme).toBeTruthy();
+
+    const result = parser.parse({
+      lexemeId: lexeme.id,
+      form: lexeme.form,
+      derivation: lexeme.derivation,
+    });
+
+    expect(result.method).toBe('dictionary');
+    expect(result.morphemes.some(m => m.morphemeId !== null)).toBe(true);
+    expect(result.confidence).toBeGreaterThan(0);
+  });
+
+  it('ters sirali components yuzey sirasina cevrilir', () => {
+    // Veri setinde гупсысэ -> ["псы", "гу"] seklinde ters kayitli
+    const result = parser.parse({
+      lexemeId: 'TEST',
+      form: 'гупсысэ',
+      derivation: { components: ['псы', 'гу'] } as any,
+    });
+
+    const cozulen = result.morphemes.filter(m => m.morphemeId !== null);
+    expect(cozulen.length).toBeGreaterThan(0);
+
+    const yerler = cozulen
+      .map(m => 'гупсысэ'.indexOf(m.form))
+      .filter(p => p >= 0);
+    expect(yerler).toEqual([...yerler].sort((a, b) => a - b));
+  });
+
+  it('tireli morfem formunu da eslestirir (-щӀэ)', () => {
+    // morphemes.json'da "-щӀэ" olarak kayitli; components'te "щӀэ" geciyor
+    const result = parser.parse({
+      lexemeId: 'TEST',
+      form: 'гущӀэ',
+      derivation: { components: ['гу', 'щӀэ'] } as any,
+    });
+
+    const s1e = result.morphemes.find(m => m.form.replace(/^-+/, '') === 'щӀэ');
+    expect(s1e).toBeTruthy();
+    expect(s1e!.morphemeId).not.toBeNull();
+  });
+
+  it('hicbir bilesen cozulemezse greedy moda duser', () => {
+    const result = parser.parse({
+      lexemeId: 'TEST',
+      form: 'гуфӀэ',
+      derivation: { components: ['YOK-BILESEN'] } as any,
+    });
+
+    expect(result.morphemes.length).toBeGreaterThan(0);
+    expect(result.morphemes.some(m => m.morphemeId !== null)).toBe(true);
   });
 });
