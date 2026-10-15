@@ -3060,7 +3060,7 @@
     "translations": {
       "ru": "1. жир, масло 2. горючее",
       "en": "1. grease, oil 2. fuel",
-      "tr": "AYÇİÇEĞİ YAĞI"
+      "tr": "yağ, sıvı yağ"
     },
     "conceptId": "YAĞ"
   },
@@ -6282,7 +6282,7 @@
     ],
     "isLemma": true,
     "translations": {
-      "tr": "kose kenarlari",
+      "tr": "köşe kenarları, köşe bucak",
       "en": "edges, protrusions",
       "ru": "углы края, выступы"
     },
@@ -7304,7 +7304,7 @@
     "ipaSource": "root-derived",
     "ipa": "/nɐfǝnɐ/",
     "translations": {
-      "tr": "AYDINLANMAK"
+      "tr": "ışık, aydınlık, aydınlanma"
     }
   },
   {
@@ -11483,7 +11483,7 @@
     },
     "isLemma": true,
     "translations": {
-      "tr": "ev duvari"
+      "tr": "ev duvarı"
     },
     "ipa": "/bɮǝn/"
   },
@@ -11989,7 +11989,7 @@
     },
     "isLemma": true,
     "translations": {
-      "tr": "orman kenari"
+      "tr": "orman kenarı, orman eteği"
     },
     "subConceptId": "FOREST_EDGE",
     "taxonomyFamily": "Doğa & Coğrafya",
@@ -16422,7 +16422,7 @@
     ],
     "isLemma": true,
     "translations": {
-      "tr": "karin",
+      "tr": "karın",
       "en": "belly, abdomen, front side of the body, stomach, mother's womb",
       "ru": "живот, лицевая сторона туловища, желудок, материнская утроба"
     },
@@ -16663,7 +16663,7 @@
     },
     "isLemma": true,
     "translations": {
-      "tr": "ayak parmaklari",
+      "tr": "ayak parmakları",
       "en": "toe",
       "ru": "палец ноги"
     },
@@ -16909,7 +16909,7 @@
     ],
     "isLemma": true,
     "translations": {
-      "tr": "ari",
+      "tr": "arı",
       "en": "horn, wine glass, goblet, beaker, drinking horn, a bottle of sprits (liquor).",
       "ru": "рог, рог, чарка, бокал, стопка со спиртным напитком, бутылка спиртного"
     },
@@ -17154,7 +17154,7 @@
     },
     "isLemma": true,
     "translations": {
-      "tr": "karinin babasi"
+      "tr": "karının babası, kayınpeder"
     },
     "subConceptId": "KINSHIP",
     "taxonomyFamily": "Toplum & İlişki",
@@ -17881,7 +17881,7 @@
     "ipa": "/xʷǝgʷ/",
     "isLemma": true,
     "translations": {
-      "tr": "dari",
+      "tr": "darı",
       "en": "millet",
       "ru": "пшено"
     },
@@ -19080,7 +19080,7 @@
     "conceptId": "TOMORROW",
     "isLemma": true,
     "translations": {
-      "tr": "yarin",
+      "tr": "yarın",
       "en": "tomorrow",
       "ru": "завтра"
     }
@@ -21321,7 +21321,7 @@
     "ipa": "/pɕɐ'ddᶎǝʑ/",
     "ipaSource": "root-derived",
     "translations": {
-      "tr": "KAPIŞTIRMAK"
+      "tr": "kapıştırmak, sürüklemek, çekmek"
     }
   },
   {
@@ -22888,7 +22888,7 @@
     "translations": {
       "en": "хэгъуэн: shrivel up, dry out (about sth)",
       "ru": "хэгъуэн: усохнуть (о чём-л.)",
-      "tr": "TATMAK, TADINA, BAKMAK"
+      "tr": "tatmak, tadına bakmak"
     },
     "rootIds": [
       "R-GU"
@@ -33033,7 +33033,7 @@
     "translations": {
       "en": "exist, be, be located or situated swh, be present",
       "ru": "существовать, быть, находиться где-л., иметься, быть в наличии",
-      "tr": "GEÇİNMEK, BULUNMAK"
+      "tr": "bulunmak, var olmak, yaşamak"
     },
     "conceptId": "EXISTENCE",
     "subConceptId": "STATE",
@@ -39093,7 +39093,7 @@
     "ipa": "/wǝˈdzǝfɐ/",
     "ipaSource": "root-derived",
     "translations": {
-      "tr": "BAYGIN GIBI"
+      "tr": "gibi, benzeyen"
     },
     "literalMeaningSource": "translations.tr (yuksek)"
   },
@@ -39568,7 +39568,7 @@
     "ipa": "/'gʷǝfʹɐ/",
     "ipaSource": "root-derived",
     "translations": {
-      "tr": "GÜCENDİRMEK"
+      "tr": "onun kalbi, onun gönlü"
     },
     "literalMeaningSource": "translations.tr (yuksek)"
   },
@@ -42451,7 +42451,7 @@
     "ipaSource": "root-derived",
     "ipa": "/mǝrɐwɕtɐw/",
     "translations": {
-      "tr": "BÖYLECE, ŞÖYLE"
+      "tr": "böylece, şöyle, bu şekilde"
     }
   },
   {
@@ -42710,7 +42710,7 @@
     "ipa": "/dɐ'ᶎǝn/",
     "ipaSource": "root-derived",
     "translations": {
-      "tr": "ELHAMDÜLILLAH"
+      "tr": "onun yanında, onun katında"
     }
   },
   {
@@ -42743,7 +42743,7 @@
     "ipa": "/'ʔɐpɐ/",
     "ipaSource": "root-derived",
     "translations": {
-      "tr": "BEHER, BEHERI"
+      "tr": "her bir, her biri, beher"
     },
     "literalMeaningSource": "translations.tr (yuksek)"
   },
@@ -42848,7 +42848,7 @@
     },
     "ipa": "/gʷɐn/",
     "translations": {
-      "tr": "GÖNÜL RAHATLIĞI"
+      "tr": "senin kalbin, senin gönlün"
     },
     "literalMeaningSource": "translations.tr (yuksek)"
   },
@@ -43153,7 +43153,7 @@
     "ipa": "/χʷǝ'mɐn/",
     "ipaSource": "root-derived",
     "translations": {
-      "tr": "YAKLAŞIRKEN"
+      "tr": "yaklaşırken, olduğu zaman"
     },
     "literalMeaningSource": "translations.tr (yuksek)"
   },
@@ -43909,7 +43909,7 @@
     "isLemma": true,
     "translations": {
       "ru": "бжъ. чужой, -ая, -о",
-      "tr": "GARIP"
+      "tr": "yabancı, el"
     },
     "ipa": "/xǝn/"
   },
@@ -44514,7 +44514,7 @@
     "isLemma": true,
     "translations": {
       "ru": "весть, новость Хъэбар</d",
-      "tr": "ISTIHBARATÇI"
+      "tr": "haber, duyum, bilgi"
     },
     "rootIds": [
       "R-KHUMEN"
@@ -44585,7 +44585,7 @@
     "ipaSource": "root-derived",
     "ipa": "/fɐʂħaf/",
     "translations": {
-      "tr": "BAŞKA, DEĞİŞİK"
+      "tr": "başka, değişik, farklı"
     }
   },
   {
@@ -45228,7 +45228,7 @@
     "translations": {
       "ru": "мягкий, нежёсткий",
       "en": "soft, not hard; not stale, fresh, soft, tender, plump (about a body), soft (about metal, wood, etc.), soft, powdery, light (about rain), with small mesh, cells, fine-mesh, цith a soft character (about",
-      "tr": "NARİN"
+      "tr": "yumuşak, narin, esnek"
     },
     "rootIds": [
       "R-SHABE"
@@ -45636,7 +45636,7 @@
     "translations": {
       "en": "horseman, horseback rider, headquarters (governing body)",
       "ru": "всадник, штаб (руководящий орган)",
-      "tr": "Atlı, süvari"
+      "tr": "atlı, süvari"
     },
     "dictionaryEvidence": [
       "sukunov-1998"
@@ -46317,7 +46317,7 @@
     "ipaSource": "root-derived",
     "ipa": "/renɐw/",
     "translations": {
-      "tr": "BITEVIYELIK"
+      "tr": "sürekli, daima, biteviye"
     }
   },
   {
@@ -47040,7 +47040,7 @@
     "ipa": "/jɐpɐ're:j/",
     "ipaSource": "root-derived",
     "translations": {
-      "tr": "ABSTRAKSYON"
+      "tr": "onun önü, onun burnu, öncesi"
     },
     "literalMeaningSource": "translations.tr (yuksek)"
   },
@@ -47100,7 +47100,7 @@
     "ipa": "/pǝtʹǝ'sħɐn/",
     "ipaSource": "root-derived",
     "translations": {
-      "tr": "DERIN UYUMAK"
+      "tr": "sıkıca, sağlamca, kuvvetlice"
     },
     "literalMeaningSource": "translations.tr (yuksek)"
   },
@@ -47167,7 +47167,7 @@
     "rootForm": "щы-",
     "ipa": "/ɕǝpsɐ'wǝn/",
     "translations": {
-      "tr": "GARIP"
+      "tr": "orada yaşayan, ikamet eden, sakin"
     },
     "literalMeaningSource": "translations.tr (yuksek)"
   },
@@ -47326,7 +47326,7 @@
     "ipa": "/sɐ'bi:j/",
     "ipaSource": "root-derived",
     "translations": {
-      "tr": "ADEMIIKTIDAR"
+      "tr": "çocuk, bebek, sabi"
     }
   },
   {
@@ -48721,7 +48721,7 @@
     "translations": {
       "ru": "поздравление, привет ◊ Сэл",
       "en": "hello! hi! greetings!",
-      "tr": "ALEYKÜMSELAM"
+      "tr": "selam, selamlaşma"
     },
     "rootIds": [
       "R-LHA"
@@ -49487,7 +49487,7 @@
     "translations": {
       "ru": "приметы ( указывающие на предстоящее явление природы</f",
       "en": "signs (pointing to coming natural phenomenon), a sign or symptom of sth, omen, harbinger, foreshadowing of sth, a symbol of sth",
-      "tr": "GÖSTERGE İŞARET",
+      "tr": "işaret, simge, gösterge, belirti",
       "trSource": "en->tr koprusu (orta)"
     },
     "subConceptId": "SIGN",
@@ -49513,7 +49513,7 @@
     "translations": {
       "ru": "глупый, -ая, -ое, дурак, дура <div style='margin-left:3em'",
       "en": "mentally ill, insane, fool",
-      "tr": "APTALLAŞMAK"
+      "tr": "aptal, budala, deli"
     },
     "rootIds": [
       "R-FE"
@@ -50803,7 +50803,7 @@
     "translations": {
       "en": "threshing floor",
       "ru": "ток; гумно",
-      "tr": "KÖPEKLEŞMEK"
+      "tr": "köpeğin, köpeğe"
     },
     "literalMeaningSource": "translations.tr (yuksek)"
   },
@@ -51467,7 +51467,7 @@
     "isLemma": true,
     "translations": {
       "ru": "хэтэу / хэту DÂHİL",
-      "tr": "KARARLAMADAN"
+      "tr": "dururken, bulunurken, içindeyken"
     },
     "rootIds": [
       "R-KHET"
@@ -303224,7 +303224,7 @@
     "ipa": "/ɬɐ'gʷɑ:ʑɐ/",
     "ipaSource": "root-derived",
     "translations": {
-      "tr": "KURTARICI"
+      "tr": "kurtarıcı"
     }
   },
   {
@@ -703464,7 +703464,7 @@
     "partOfSpeech": "noun",
     "conceptId": "RENKLER",
     "translations": {
-      "tr": "Sarı",
+      "tr": "sarı",
       "en": "Yellow",
       "ru": "Желтый"
     },
@@ -704189,7 +704189,7 @@
     "partOfSpeech": "noun",
     "conceptId": "XABZE",
     "translations": {
-      "tr": "Soy",
+      "tr": "millet, halk, soy, kabile, etnik köken",
       "en": "Family, kin",
       "ru": "Племя, род"
     },
@@ -715474,7 +715474,7 @@
     "partOfSpeech": "noun",
     "conceptId": "ÖYKÜ",
     "translations": {
-      "tr": "ÖYKÜ"
+      "tr": "tarih, geçmiş"
     },
     "ipa": "/txǝdɐ/",
     "rootIds": [],
