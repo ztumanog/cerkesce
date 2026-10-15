@@ -201304,7 +201304,7 @@
     "ipaSource": "form-derived",
     "ipa": "/ʒaʔɐ/",
     "translations": {
-      "tr": "ALDIRIŞSIZ"
+      "tr": "söylemek, denmek"
     }
   },
   {
@@ -728984,7 +728984,7 @@
     "form": "ЛӀыхъуэ",
     "partOfSpeech": "noun",
     "translations": {
-      "tr": "Erkeklik taslama"
+      "tr": "kahraman, yiğit"
     },
     "ipa": "/ɬʼǝχʷɐ/",
     "rootIds": [],
@@ -729510,7 +729510,7 @@
     "form": "ПӀэщӀэ",
     "partOfSpeech": "noun",
     "translations": {
-      "tr": "Yeni yatak"
+      "tr": "yatak altı, döşek altı"
     },
     "ipa": "/pʼɐɕʼɐ/",
     "rootIds": [],
@@ -730441,7 +730441,7 @@
     "form": "ЦӀыкӀуагъэ",
     "partOfSpeech": "noun",
     "translations": {
-      "tr": "Küçüklük"
+      "tr": "küçüklük"
     },
     "ipa": "/tsʼǝkʷʼaʁɐ/",
     "rootIds": [],
@@ -1011416,5 +1011416,213 @@
     "notes": "Kaynak: 5.Ady-Rus_Qarden.json | öncelik: 3 | kavram: 1 | POS otomatik (doğrulanmalı)",
     "literalMeaning": "cm. .",
     "literalMeaningSource": "ru->tr (KAVRAM_ etiketi) (orta)"
+  },
+  {
+    "form": "псэлъ",
+    "translations": {
+      "tr": "konuşmak, sohbet etmek"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[GOLD] 30 kelime test seti"
+  },
+  {
+    "form": "дэха",
+    "translations": {
+      "tr": "güzel, göz gezdirdi"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[GOLD] 30 kelime test seti"
+  },
+  {
+    "form": "чэнджэш",
+    "translations": {
+      "tr": "danışma, meclis, tavsiye"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[GOLD] 30 kelime test seti"
+  },
+  {
+    "form": "жыглащэ",
+    "translations": {
+      "tr": "budaklı ağaç, sık ormanlık"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[GOLD] 30 kelime test seti"
+  },
+  {
+    "form": "гузэв",
+    "translations": {
+      "tr": "endişe, kaygı, daralma"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[GOLD] 30 kelime test seti"
+  },
+  {
+    "form": "дэхащӀэ",
+    "translations": {
+      "tr": "güzelleştiren, yeni güzel"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[GOLD] 30 kelime test seti"
+  },
+  {
+    "form": "бгъащхьэ",
+    "translations": {
+      "tr": "bağır, göğüs üstü"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[GOLD] 30 kelime test seti"
+  },
+  {
+    "form": "щхьэщӀэ",
+    "translations": {
+      "tr": "saygı, hürmet (baş eğme)"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[GOLD] 30 kelime test seti"
+  },
+  {
+    "form": "бгыкъуэ",
+    "translations": {
+      "tr": "dağ vadisi, dağ geçidi"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[GOLD] 30 kelime test seti"
+  },
+  {
+    "form": "бэгъуэ",
+    "translations": {
+      "tr": "çoğalmak, berekete ermek"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[GOLD] 30 kelime test seti"
+  },
+  {
+    "form": "бэмащӀэ",
+    "translations": {
+      "tr": "az çok, değişken miktar"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[GOLD] 30 kelime test seti"
+  },
+  {
+    "form": "хабзэфӀ",
+    "translations": {
+      "tr": "iyi gelenek, güzel adet"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[GOLD] 30 kelime test seti"
+  },
+  {
+    "form": "дэхагъэ",
+    "translations": {
+      "tr": "güzellik"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[GOLD] 30 kelime test seti"
+  },
+  {
+    "form": "шхыныгъэ",
+    "translations": {
+      "tr": "yiyecek, gıda, besin"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[GOLD] 30 kelime test seti"
+  },
+  {
+    "form": "мывэпс",
+    "translations": {
+      "tr": "maden suyu, taş suyu"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[GOLD] 30 kelime test seti"
+  },
+  {
+    "form": "сымаджэфэ",
+    "translations": {
+      "tr": "hastalık rengi, solgunluk"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[GOLD] 30 kelime test seti"
+  },
+  {
+    "form": "хъыбаращӀэ",
+    "translations": {
+      "tr": "yeni haber, taze haber"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[GOLD] 30 kelime test seti"
+  },
+  {
+    "form": "вакъэжь",
+    "translations": {
+      "tr": "eski ayakkabı"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[GOLD] 30 kelime test seti"
+  },
+  {
+    "form": "бэлыхьшхуэ",
+    "translations": {
+      "tr": "büyük felaket"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[GOLD] 30 kelime test seti"
+  },
+  {
+    "form": "бзылъфыгъэщ",
+    "translations": {
+      "tr": "kadındır"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[GOLD] 30 kelime test seti"
+  },
+  {
+    "form": "хьэблэдэс",
+    "translations": {
+      "tr": "mahalleli, komşu"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[GOLD] 30 kelime test seti"
+  },
+  {
+    "form": "шэрджэсыбзэ",
+    "translations": {
+      "tr": "Çerkesçe, Çerkes dili"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[GOLD] 30 kelime test seti"
+  },
+  {
+    "form": "пщащэщӀэ",
+    "translations": {
+      "tr": "yeni genç kız"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[GOLD] 30 kelime test seti"
+  },
+  {
+    "form": "куэдагъэ",
+    "translations": {
+      "tr": "çokluk, bolluk"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[GOLD] 30 kelime test seti"
+  },
+  {
+    "form": "инагъэ",
+    "translations": {
+      "tr": "büyüklük, hacim"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[GOLD] 30 kelime test seti"
+  },
+  {
+    "form": "кӀэщӀагъэ",
+    "translations": {
+      "tr": "kısalık"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[GOLD] 30 kelime test seti"
   }
 ]
