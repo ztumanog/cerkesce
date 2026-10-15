@@ -656880,7 +656880,8 @@
     "ipa": "/'fʹǝpʹɐ/",
     "translations": {
       "en": "the best piece or part of sth, the upper surface or face (of a piece of fabric)",
-      "ru": "лучшая часть, кусок чего-л., лицевая часть (ткани)"
+      "ru": "лучшая часть, кусок чего-л., лицевая часть (ткани)",
+      "tr": "en iyi yer"
     }
   },
   {
@@ -711889,7 +711890,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ХОРОШО",
     "translations": {
-      "ru": "хорошо"
+      "ru": "хорошо",
+      "tr": "iyi, guzel"
     },
     "ipa": "/fʼǝwɐ/",
     "rootIds": [],
@@ -740200,7 +740202,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_БЛАГОПОЛУЧНЫЙ",
     "translations": {
-      "ru": "благополучный"
+      "ru": "благополучный",
+      "tr": "iyilik, kalite"
     },
     "ipa": "/fʼǝʁɐ/",
     "rootIds": [],
@@ -751672,7 +751675,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ПОКА",
     "translations": {
-      "ru": "пока"
+      "ru": "пока",
+      "tr": "hoscakal"
     },
     "ipa": "/fʼǝkʼɐ/",
     "rootIds": [],
@@ -781073,7 +781077,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ОЧЕНЬ ХОРОШИЙ",
     "translations": {
-      "ru": "очень хороший"
+      "ru": "очень хороший",
+      "tr": "enfes"
     },
     "ipa": "/fʼǝɕɐ/",
     "rootIds": [],
@@ -781103,7 +781108,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ПИКИ",
     "translations": {
-      "ru": "пики"
+      "ru": "пики",
+      "tr": "kara (hamam bocegi)"
     },
     "ipa": "/fʼǝtsʼɐʑ/",
     "rootIds": [],
@@ -781115,7 +781121,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ДОБРОЕ ДЕЛО",
     "translations": {
-      "ru": "доброе дело"
+      "ru": "доброе дело",
+      "tr": "iyilik"
     },
     "ipa": "/fʼǝɕʼaʁɐ/",
     "rootIds": [],
@@ -850893,7 +850900,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ПОДОБРУ-ПОЗДОРОВУ",
     "translations": {
-      "ru": "подобру-поздорову"
+      "ru": "подобру-поздорову",
+      "tr": "iyilikle"
     },
     "ipa": "/fʼǝrǝfʼkʼɐ/",
     "rootIds": [],
@@ -850960,7 +850968,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_НЕБЛАГОДАРНЫЙ",
     "translations": {
-      "ru": "неблагодарный"
+      "ru": "неблагодарный",
+      "tr": "nankor"
     },
     "ipa": "/fʼǝɕʼɐnʃɐ/",
     "rootIds": [],
