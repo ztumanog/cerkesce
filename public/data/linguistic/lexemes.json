@@ -213372,7 +213372,7 @@
     },
     "ipa": "/qʹʷǝr'mɐn/",
     "translations": {
-      "tr": ""
+      "tr": "KURBAN + MAHALLINDE"
     }
   },
   {
@@ -1019278,5 +1019278,405 @@
     },
     "pos": "UNKNOWN",
     "notes": "[GOLD] 30 kelime test seti"
+  },
+  {
+    "form": "абджын",
+    "translations": {
+      "tr": "şişe"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] 200 kelimelik liste"
+  },
+  {
+    "form": "аблэ",
+    "translations": {
+      "tr": "yılan"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] 200 kelimelik liste"
+  },
+  {
+    "form": "аблэжь",
+    "translations": {
+      "tr": "büyük yılan"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] 200 kelimelik liste"
+  },
+  {
+    "form": "адыгабзэ",
+    "translations": {
+      "tr": "Çerkesçe"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] 200 kelimelik liste"
+  },
+  {
+    "form": "адыгэбгынэ",
+    "translations": {
+      "tr": "Çerkes tütünü"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] 200 kelimelik liste"
+  },
+  {
+    "form": "адыгэпщынэ",
+    "translations": {
+      "tr": "Çerkes mızıkası"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] 200 kelimelik liste"
+  },
+  {
+    "form": "адыгэшхын",
+    "translations": {
+      "tr": "Çerkes mutfağı"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] 200 kelimelik liste"
+  },
+  {
+    "form": "аихьэ",
+    "translations": {
+      "tr": "hisse, pay"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] 200 kelimelik liste"
+  },
+  {
+    "form": "аймэ",
+    "translations": {
+      "tr": "ayva"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] 200 kelimelik liste"
+  },
+  {
+    "form": "акъылшӀэныгъ",
+    "translations": {
+      "tr": "bilgelik, ilim"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] 200 kelimelik liste"
+  },
+  {
+    "form": "алажьэ",
+    "translations": {
+      "tr": "suç, kabahat"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] 200 kelimelik liste"
+  },
+  {
+    "form": "алэжьын",
+    "translations": {
+      "tr": "suç işlemek"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] 200 kelimelik liste"
+  },
+  {
+    "form": "алмаз",
+    "translations": {
+      "tr": "elmas"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] 200 kelimelik liste"
+  },
+  {
+    "form": "амбэ",
+    "translations": {
+      "tr": "arı kovanı"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] 200 kelimelik liste"
+  },
+  {
+    "form": "ампыл",
+    "translations": {
+      "tr": "top"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] 200 kelimelik liste"
+  },
+  {
+    "form": "анэбгынэ",
+    "translations": {
+      "tr": "anne sütü"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] 200 kelimelik liste"
+  },
+  {
+    "form": "анэдэжь",
+    "translations": {
+      "tr": "anane, gelenek"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] 200 kelimelik liste"
+  },
+  {
+    "form": "анэжъы",
+    "translations": {
+      "tr": "nine, büyükanne"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] 200 kelimelik liste"
+  },
+  {
+    "form": "апкъ",
+    "translations": {
+      "tr": "vücut, gövde"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] 200 kelimelik liste"
+  },
+  {
+    "form": "апсалъэ",
+    "translations": {
+      "tr": "atasözü, deyim"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] 200 kelimelik liste"
+  },
+  {
+    "form": "апщ",
+    "translations": {
+      "tr": "prens, bey"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] 200 kelimelik liste"
+  },
+  {
+    "form": "арырэ",
+    "translations": {
+      "tr": "öyle mi?"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] 200 kelimelik liste"
+  },
+  {
+    "form": "астэу",
+    "translations": {
+      "tr": "bardak, kupa"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] 200 kelimelik liste"
+  },
+  {
+    "form": "асыгъу",
+    "translations": {
+      "tr": "sabırsızlık"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] 200 kelimelik liste"
+  },
+  {
+    "form": "атӀахъу",
+    "translations": {
+      "tr": "mısır koçanı"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] 200 kelimelik liste"
+  },
+  {
+    "form": "аубгъу",
+    "translations": {
+      "tr": "yaygın, dağınık"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] 200 kelimelik liste"
+  },
+  {
+    "form": "аушъын",
+    "translations": {
+      "tr": "değiştirmek"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] 200 kelimelik liste"
+  },
+  {
+    "form": "ащӀы",
+    "translations": {
+      "tr": "toprak, zemin"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] 200 kelimelik liste"
+  },
+  {
+    "form": "ащэ",
+    "translations": {
+      "tr": "satış"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] 200 kelimelik liste"
+  },
+  {
+    "form": "баджэ",
+    "translations": {
+      "tr": "tilki"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] 200 kelimelik liste"
+  },
+  {
+    "form": "бакълъэ",
+    "translations": {
+      "tr": "fasulye"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] 200 kelimelik liste"
+  },
+  {
+    "form": "балахэ",
+    "translations": {
+      "tr": "lahana"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] 200 kelimelik liste"
+  },
+  {
+    "form": "балыкъ",
+    "translations": {
+      "tr": "balık"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] 200 kelimelik liste"
+  },
+  {
+    "form": "бамбы",
+    "translations": {
+      "tr": "pamuk"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] 200 kelimelik liste"
+  },
+  {
+    "form": "барабан",
+    "translations": {
+      "tr": "davul"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] 200 kelimelik liste"
+  },
+  {
+    "form": "барэх",
+    "translations": {
+      "tr": "arkadaş"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] 200 kelimelik liste"
+  },
+  {
+    "form": "бащ",
+    "translations": {
+      "tr": "söğüt ağacı"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] 200 kelimelik liste"
+  },
+  {
+    "form": "бедыр",
+    "translations": {
+      "tr": "ördek"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] 200 kelimelik liste"
+  },
+  {
+    "form": "белей",
+    "translations": {
+      "tr": "bela, sıkıntı"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] 200 kelimelik liste"
+  },
+  {
+    "form": "бережъ",
+    "translations": {
+      "tr": "yavaşça"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] 200 kelimelik liste"
+  },
+  {
+    "form": "берэс",
+    "translations": {
+      "tr": "huş ağacı"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] 200 kelimelik liste"
+  },
+  {
+    "form": "бзэрабз",
+    "translations": {
+      "tr": "dedikodu"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] 200 kelimelik liste"
+  },
+  {
+    "form": "бийын",
+    "translations": {
+      "tr": "düşmanlık etmek"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] 200 kelimelik liste"
+  },
+  {
+    "form": "блокъ",
+    "translations": {
+      "tr": "blok"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] 200 kelimelik liste"
+  },
+  {
+    "form": "бгъэны",
+    "translations": {
+      "tr": "yabani ot"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] 200 kelimelik liste"
+  },
+  {
+    "form": "бурдж",
+    "translations": {
+      "tr": "burç, kule"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] 200 kelimelik liste"
+  },
+  {
+    "form": "бущ",
+    "translations": {
+      "tr": "boş, manasız"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] 200 kelimelik liste"
+  },
+  {
+    "form": "быд",
+    "translations": {
+      "tr": "sağlam"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] 200 kelimelik liste"
+  },
+  {
+    "form": "быдзы",
+    "translations": {
+      "tr": "anne sütü"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] 200 kelimelik liste"
+  },
+  {
+    "form": "быны",
+    "translations": {
+      "tr": "çocuk, evlat"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] 200 kelimelik liste"
   }
 ]
