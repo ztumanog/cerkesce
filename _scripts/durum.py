@@ -3,7 +3,14 @@ Durum raporu - duzeltilmis versiyon
 translations.tr dogru sayar (eski versiyon sadece obje varligina bakiyordu)
 """
 import json
+import sys
 from pathlib import Path
+
+# Windows konsolu cp1254 olabildigi icin █ / ░ karakterleri basamiyor
+try:
+    sys.stdout.reconfigure(encoding="utf-8")
+except Exception:
+    pass
 
 lex = json.loads(Path("public/data/linguistic/lexemes.json").read_text(encoding="utf-8"))
 print(f"Toplam: {len(lex)}")
