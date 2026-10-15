@@ -195699,7 +195699,10 @@
       "rule": "compound"
     },
     "ipa": "/je:'ru:/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-00226",
@@ -212287,7 +212290,10 @@
       "rule": "compound"
     },
     "conceptId": "BIG_WORK",
-    "ipa": "/je:ʁɐˈdᶎɐtʹʂɐ/"
+    "ipa": "/je:ʁɐˈdᶎɐtʹʂɐ/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-00869",
@@ -225520,7 +225526,10 @@
       "rule": "compound"
     },
     "ipaSource": "root-derived",
-    "ipa": "/reformatorǝm/"
+    "ipa": "/reformatorǝm/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-01383",
@@ -229220,7 +229229,10 @@
     },
     "isLemma": false,
     "conceptId": "WRITE",
-    "ipa": "/ʔʷǝ'mɐt/"
+    "ipa": "/ʔʷǝ'mɐt/",
+    "translations": {
+      "tr": "TOKMAK + yazı"
+    }
   },
   {
     "id": "L-CORPUS2-01524",
@@ -230957,7 +230969,7 @@
     "ipa": "/'ʔɐpʹqʹɬɐpʹqʹ/",
     "ipaSource": "root-derived",
     "translations": {
-      "tr": ""
+      "tr": "ayak + dried up"
     }
   },
   {
@@ -232992,7 +233004,10 @@
     },
     "isLemma": false,
     "ipa": "/qʹʷɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "Dikmek + Oğul"
+    }
   },
   {
     "id": "L-CORPUS2-01669",
@@ -239445,7 +239460,7 @@
     "isLemma": false,
     "ipa": "/ɬɐ'tʹʂǝn/",
     "translations": {
-      "tr": "HAZINE + Demirci dükkanı"
+      "tr": ""
     }
   },
   {
@@ -239867,7 +239882,10 @@
       "rule": "compound"
     },
     "ipa": "/sɐ'bɐp/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "yil + PEKİ iyi"
+    }
   },
   {
     "id": "L-CORPUS2-01943",
@@ -247323,7 +247341,10 @@
       ]
     },
     "isLemma": false,
-    "ipa": "/qʹǝp/"
+    "ipa": "/qʹǝp/",
+    "translations": {
+      "tr": "yemek + yil + eski"
+    }
   },
   {
     "id": "L-CORPUS2-02226",
@@ -249478,7 +249499,10 @@
       ]
     },
     "isLemma": false,
-    "ipa": "/qʹʷi:j/"
+    "ipa": "/qʹʷi:j/",
+    "translations": {
+      "tr": "kuyu + kucuk + Oğul"
+    }
   },
   {
     "id": "L-CORPUS2-02311",
@@ -250194,7 +250218,10 @@
     },
     "conceptId": "DEFECT",
     "ipa": "/ɬɐ'gʷɑ:ʑɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "KUYU + yil"
+    }
   },
   {
     "id": "L-CORPUS2-02337",
@@ -254064,7 +254091,10 @@
     },
     "isLemma": false,
     "ipa": "/'ʔɐpʹqʹɬɐpʹqʹ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-02486",
@@ -260568,7 +260598,7 @@
     },
     "ipa": "/qʹʷǝr'mɐn/",
     "translations": {
-      "tr": ""
+      "tr": "KURBAN + YATAK"
     }
   },
   {
@@ -260737,7 +260767,7 @@
     "ipa": "/'ʔɐpʹqʹɬɐpʹqʹ/",
     "ipaSource": "root-derived",
     "translations": {
-      "tr": ""
+      "tr": "IÇINDE + KIŞ"
     }
   },
   {
@@ -261953,7 +261983,10 @@
     },
     "notes": "Corpus v1.0 batch-2 (freq: 33, lang: kbd, source: none)",
     "isLemma": false,
-    "ipa": "/mwħamatdʒarjij/"
+    "ipa": "/mwħamatdʒarjij/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-02797",
@@ -262258,7 +262291,10 @@
     },
     "conceptId": "COMPANION",
     "ipa": "/'ʁʷǝsɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "yil + gitti"
+    }
   },
   {
     "id": "L-CORPUS2-02808",
@@ -262387,7 +262423,10 @@
       ]
     },
     "isLemma": false,
-    "ipa": "/jǝ'ɬɐs/"
+    "ipa": "/jǝ'ɬɐs/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-02813",
@@ -266735,7 +266774,7 @@
     "ipa": "/nɐb'ʑǝts/",
     "ipaSource": "root-derived",
     "translations": {
-      "tr": "Çukur + dairy + iş + AKSAKAL"
+      "tr": ""
     }
   },
   {
@@ -267172,7 +267211,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/χʷɐn/"
+    "ipa": "/χʷɐn/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-03005",
@@ -273916,7 +273958,10 @@
       "rule": "compound"
     },
     "ipa": "/'gʷǝfʹɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "ego + Kan damarı"
+    }
   },
   {
     "id": "L-CORPUS2-03261",
@@ -277735,7 +277780,7 @@
     "ipa": "/'ʔɐpʹqʹɬɐpʹqʹ/",
     "ipaSource": "root-derived",
     "translations": {
-      "tr": ""
+      "tr": "ayak + KIŞ"
     }
   },
   {
@@ -277827,7 +277872,7 @@
     "isLemma": false,
     "ipa": "/ɬɐ'tʹʂǝn/",
     "translations": {
-      "tr": "HAZINE + Demirci dükkanı"
+      "tr": ""
     }
   },
   {
@@ -278359,7 +278404,10 @@
     },
     "conceptId": "WRITE",
     "ipa": "/txɐn/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "Sayı + hiv"
+    }
   },
   {
     "id": "L-CORPUS2-03432",
@@ -278960,7 +279008,7 @@
     "ipa": "/pʹɐ'te:pχʷɐ/",
     "ipaSource": "root-derived",
     "translations": {
-      "tr": "BEZIRBENÇ + Barut"
+      "tr": ""
     }
   },
   {
@@ -279521,7 +279569,10 @@
       "rule": "compound"
     },
     "ipaSource": "root-derived",
-    "ipa": "/reformatorǝr/"
+    "ipa": "/reformatorǝr/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-03476",
@@ -279546,7 +279597,10 @@
     },
     "isLemma": false,
     "conceptId": "BIG",
-    "ipa": "/jǝ'nɑ:ʁ/"
+    "ipa": "/jǝ'nɑ:ʁ/",
+    "translations": {
+      "tr": "su birikintisi + dikkat"
+    }
   },
   {
     "id": "L-CORPUS2-03477",
@@ -280596,7 +280650,10 @@
     },
     "isLemma": false,
     "conceptId": "WRITE",
-    "ipa": "/ʔʷǝ'mɐt/"
+    "ipa": "/ʔʷǝ'mɐt/",
+    "translations": {
+      "tr": "TOKMAK + yazı"
+    }
   },
   {
     "id": "L-CORPUS2-03513",
@@ -285782,7 +285839,7 @@
     "conceptId": "DEFECT",
     "ipa": "/qʹe:'mǝkʹʷ/",
     "translations": {
-      "tr": "SAKINCALI + BABACA"
+      "tr": ""
     }
   },
   {
@@ -285843,7 +285900,7 @@
     },
     "ipa": "/'ħɐtʹʂɐ/",
     "translations": {
-      "tr": ""
+      "tr": "kopek + YIRTICI + İhtiyar"
     }
   },
   {
@@ -286653,7 +286710,10 @@
       ]
     },
     "isLemma": false,
-    "ipa": "/qʹʷi:j/"
+    "ipa": "/qʹʷi:j/",
+    "translations": {
+      "tr": "kuyu + kucuk + Oğul"
+    }
   },
   {
     "id": "L-CORPUS2-03745",
@@ -286852,7 +286912,10 @@
       ]
     },
     "isLemma": false,
-    "ipa": "/qʹʷi:j/"
+    "ipa": "/qʹʷi:j/",
+    "translations": {
+      "tr": "kuyu + kucuk + BOL"
+    }
   },
   {
     "id": "L-CORPUS2-03752",
@@ -287555,7 +287618,10 @@
     },
     "isLemma": false,
     "ipa": "/'ʔɐpʹqʹɬɐpʹqʹ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "Mezar taşı + ALARM"
+    }
   },
   {
     "id": "L-CORPUS2-03777",
@@ -287849,7 +287915,10 @@
     },
     "conceptId": "SEE_LOVE",
     "ipa": "/ɬɐ'ʁʷǝn/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "yil + YOLAK"
+    }
   },
   {
     "id": "L-CORPUS2-03789",
@@ -289553,7 +289622,10 @@
       "rule": "compound"
     },
     "ipaSource": "root-derived",
-    "ipa": "/iɬʼaqo/"
+    "ipa": "/iɬʼaqo/",
+    "translations": {
+      "tr": "KOCALIK + BALIK"
+    }
   },
   {
     "id": "L-CORPUS2-03850",
@@ -293433,7 +293505,10 @@
     },
     "conceptId": "BOREDOM_GLOOM",
     "ipaSource": "root-derived",
-    "ipa": "/zɐʃitʼǝm/"
+    "ipa": "/zɐʃitʼǝm/",
+    "translations": {
+      "tr": "can sıkıntısı + Koç"
+    }
   },
   {
     "id": "L-CORPUS2-04002",
@@ -295491,7 +295566,10 @@
     },
     "conceptId": "MULTICOLOR",
     "ipa": "/qʹʷɐ'ɮɐn/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "sansli ev + BALIK"
+    }
   },
   {
     "id": "L-CORPUS2-04080",
@@ -295909,7 +295987,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/'jǝqʹɐ/"
+    "ipa": "/'jǝqʹɐ/",
+    "translations": {
+      "tr": "Çukur + Kap"
+    }
   },
   {
     "id": "L-CORPUS2-04096",
@@ -298141,7 +298222,7 @@
     ],
     "ipa": "/fʹɐɕχʷǝ'nǝʁɐ/",
     "translations": {
-      "tr": ""
+      "tr": "dikkat + INANÇ"
     }
   },
   {
@@ -298377,7 +298458,7 @@
     "ipa": "/ɕʹɐn/",
     "ipaSource": "root-derived",
     "translations": {
-      "tr": "expert + CINSEL"
+      "tr": ""
     }
   },
   {
@@ -300833,7 +300914,7 @@
     "ipa": "/nɐb'ʑǝts/",
     "ipaSource": "root-derived",
     "translations": {
-      "tr": "Çukur + dairy + iş + AKSAKAL"
+      "tr": ""
     }
   },
   {
@@ -300969,7 +301050,10 @@
       ]
     },
     "isLemma": false,
-    "ipa": "/ɬɐ'tʹʂǝn/"
+    "ipa": "/ɬɐ'tʹʂǝn/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-04284",
@@ -301895,7 +301979,10 @@
       "rule": "compound"
     },
     "ipaSource": "root-derived",
-    "ipa": "/triɬħɐri/"
+    "ipa": "/triɬħɐri/",
+    "translations": {
+      "tr": "IÇINDE + ISIRMAK"
+    }
   },
   {
     "id": "L-CORPUS2-04321",
@@ -301922,7 +302009,10 @@
     },
     "conceptId": "SEE_LOVE",
     "ipa": "/ɬɐ'ʁʷǝn/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "yil + YOLAK"
+    }
   },
   {
     "id": "L-CORPUS2-04322",
@@ -303230,7 +303320,7 @@
     },
     "ipa": "/ħɐr'fǝʂxʷɐ/",
     "translations": {
-      "tr": ""
+      "tr": "Harf + buyuk"
     }
   },
   {
@@ -304327,7 +304417,10 @@
       "rule": "compound"
     },
     "ipa": "/'gʷǝfʹɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "yil + umut"
+    }
   },
   {
     "id": "L-CORPUS2-04408",
@@ -306679,7 +306772,7 @@
     "ipa": "/psɐˈɬǝχʷ/",
     "ipaSource": "root-derived",
     "translations": {
-      "tr": ""
+      "tr": "TESLIM + GÖNÜLSÜZ"
     }
   },
   {
@@ -308684,7 +308777,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/qʹǝp/"
+    "ipa": "/qʹǝp/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-04573",
@@ -311351,7 +311447,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/'ɐχʂɐ/"
+    "ipa": "/'ɐχʂɐ/",
+    "translations": {
+      "tr": "para + buyuk"
+    }
   },
   {
     "id": "L-CORPUS2-04673",
@@ -312181,7 +312280,10 @@
     },
     "isLemma": false,
     "ipa": "/'ʔɐpʹqʹɬɐpʹqʹ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-04705",
@@ -314197,7 +314299,10 @@
     },
     "isLemma": false,
     "conceptId": "BROTHERHOOD",
-    "ipa": "/zɐ'qʹʷɐʂ/"
+    "ipa": "/zɐ'qʹʷɐʂ/",
+    "translations": {
+      "tr": "kasvet + Koç"
+    }
   },
   {
     "id": "L-CORPUS2-04787",
@@ -317969,7 +318074,10 @@
       "rule": "compound"
     },
     "ipaSource": "root-derived",
-    "ipa": "/reformatsɐr/"
+    "ipa": "/reformatsɐr/",
+    "translations": {
+      "tr": "bütün + KÜRDAN"
+    }
   },
   {
     "id": "L-CORPUS2-04931",
@@ -318433,7 +318541,7 @@
     "ipa": "/ɕǝs'ħǝn/",
     "ipaSource": "root-derived",
     "translations": {
-      "tr": ""
+      "tr": "onların + PILI"
     }
   },
   {
@@ -318878,7 +318986,10 @@
     "isLemma": false,
     "conceptId": "NINE",
     "ipa": "/bʁʷǝ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "otoyol + Dokuz + EŞLEMEK"
+    }
   },
   {
     "id": "L-CORPUS2-04966",
@@ -320373,7 +320484,7 @@
     "ipa": "/nɐb'ʑǝts/",
     "ipaSource": "root-derived",
     "translations": {
-      "tr": "CINSEL + eski + yazı"
+      "tr": ""
     }
   },
   {
@@ -320619,7 +320730,7 @@
     "ipa": "/ɕħɐgʷ/",
     "ipaSource": "root-derived",
     "translations": {
-      "tr": "ISLIK + BABACA"
+      "tr": ""
     }
   },
   {
@@ -322624,7 +322735,10 @@
     },
     "conceptId": "PLANT",
     "ipa": "/dǝʁɐ'ʁɑ:zɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "BIRBIRI + KIZGIN"
+    }
   },
   {
     "id": "L-CORPUS2-05110",
@@ -323129,7 +323243,7 @@
     "ipa": "/qʹʷɐ/",
     "ipaSource": "root-derived",
     "translations": {
-      "tr": ""
+      "tr": "mısır gevreği + Oğul"
     }
   },
   {
@@ -324032,7 +324146,10 @@
     },
     "isLemma": false,
     "conceptId": "BROTHERHOOD",
-    "ipa": "/zɐ'qʹʷɐʂ/"
+    "ipa": "/zɐ'qʹʷɐʂ/",
+    "translations": {
+      "tr": "kasvet + Koç"
+    }
   },
   {
     "id": "L-CORPUS2-05163",
@@ -328577,7 +328694,7 @@
     "ipa": "/wǝˈdzǝfɐ/",
     "ipaSource": "root-derived",
     "translations": {
-      "tr": "POST + CINSEL"
+      "tr": ""
     }
   },
   {
@@ -330862,7 +330979,10 @@
     },
     "conceptId": "COMPANION",
     "ipa": "/'ʁʷǝsɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "yil + kayıp"
+    }
   },
   {
     "id": "L-CORPUS2-05432",
@@ -333899,7 +334019,7 @@
     "ipa": "/'gʷǝfʹɐ/",
     "ipaSource": "root-derived",
     "translations": {
-      "tr": ""
+      "tr": "BULGAR + MEVSIM"
     }
   },
   {
@@ -334821,7 +334941,7 @@
     "ipa": "/'ʔɐpʹqʹɬɐpʹqʹ/",
     "ipaSource": "root-derived",
     "translations": {
-      "tr": ""
+      "tr": "HAZINE + DEMİRCİ"
     }
   },
   {
@@ -336933,7 +337053,7 @@
     "ipa": "/tħɐ'kʹʷǝmɐ/",
     "ipaSource": "root-derived",
     "translations": {
-      "tr": "ITBOĞAN + ağır"
+      "tr": ""
     }
   },
   {
@@ -338661,7 +338781,10 @@
     },
     "conceptId": "MIND",
     "ipa": "/gʷǝp'sǝsɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "yil + aldatma"
+    }
   },
   {
     "id": "L-CORPUS2-05731",
@@ -339972,7 +340095,10 @@
     },
     "conceptId": "BOREDOM_GLOOM",
     "ipaSource": "root-derived",
-    "ipa": "/zɐʃitʼǝr/"
+    "ipa": "/zɐʃitʼǝr/",
+    "translations": {
+      "tr": "can sıkıntısı + Koç"
+    }
   },
   {
     "id": "L-CORPUS2-05785",
@@ -340693,7 +340819,10 @@
     },
     "notes": "Corpus v1.0 batch-2 (freq: 18, lang: kbd, source: none)",
     "isLemma": false,
-    "ipa": "/jaːrjiʁaːɕaw/"
+    "ipa": "/jaːrjiʁaːɕaw/",
+    "translations": {
+      "tr": "onların + hayat"
+    }
   },
   {
     "id": "L-CORPUS2-05811",
@@ -343021,7 +343150,7 @@
     "ipa": "/ɐ'nɐʂxʷɐ/",
     "ipaSource": "root-derived",
     "translations": {
-      "tr": "Çukur + anne"
+      "tr": ""
     }
   },
   {
@@ -344189,7 +344318,10 @@
       "rule": "compound"
     },
     "ipa": "/ɕǝs'ħǝn/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "SÖZ + BU SENE"
+    }
   },
   {
     "id": "L-CORPUS2-05942",
@@ -345306,7 +345438,7 @@
     "ipa": "/'ʔɐpʹqʹɬɐpʹqʹ/",
     "ipaSource": "root-derived",
     "translations": {
-      "tr": ""
+      "tr": "Post + ayak + dried up"
     }
   },
   {
@@ -346524,7 +346656,10 @@
     },
     "conceptId": "THOUSAND",
     "ipa": "/mi:n/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "onların + Bin"
+    }
   },
   {
     "id": "L-CORPUS2-06033",
@@ -350859,7 +350994,7 @@
     },
     "ipa": "/qʹʷǝr'mɐn/",
     "translations": {
-      "tr": "KURBAN + KAPLAMAK"
+      "tr": ""
     }
   },
   {
@@ -351595,7 +351730,10 @@
       "rule": "compound"
     },
     "ipa": "/pʹqʹǝ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "dikkat + suphe"
+    }
   },
   {
     "id": "L-CORPUS2-06227",
@@ -355195,7 +355333,10 @@
       "rule": "compound"
     },
     "ipa": "/jɐpɐ're:j/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "onun önü + yil"
+    }
   },
   {
     "id": "L-CORPUS2-06367",
@@ -355252,7 +355393,10 @@
     "isLemma": false,
     "conceptId": "WRITE",
     "ipa": "/txɐn/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-06369",
@@ -355875,7 +356019,7 @@
     "ipa": "/'wɑ:fɐ/",
     "ipaSource": "root-derived",
     "translations": {
-      "tr": "gokyuzu + SENBEN"
+      "tr": ""
     }
   },
   {
@@ -356957,7 +357101,7 @@
     "ipa": "/nɐb'ʑǝts/",
     "ipaSource": "root-derived",
     "translations": {
-      "tr": "ITBOĞAN + eski"
+      "tr": ""
     }
   },
   {
@@ -357358,7 +357502,10 @@
       "rule": "compound"
     },
     "ipa": "/ɕǝs'ħǝn/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "SÖZ + BU SENE"
+    }
   },
   {
     "id": "L-CORPUS2-06455",
@@ -360344,7 +360491,10 @@
     },
     "conceptId": "THOUSAND",
     "ipa": "/mi:n/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "yil + gitti"
+    }
   },
   {
     "id": "L-CORPUS2-06570",
@@ -362373,7 +362523,7 @@
     "ipa": "/qʹʷɐ/",
     "ipaSource": "root-derived",
     "translations": {
-      "tr": ""
+      "tr": "mısır gevreği + Oğul"
     }
   },
   {
@@ -362662,7 +362812,10 @@
       "rule": "compound"
     },
     "ipa": "/qʹʷɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "Mezar taşı + ÇAĞIRTI"
+    }
   },
   {
     "id": "L-CORPUS2-06658",
@@ -363628,7 +363781,10 @@
       "rule": "compound"
     },
     "ipa": "/sɐ'bɐp/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "yil + PEKİ iyi"
+    }
   },
   {
     "id": "L-CORPUS2-06697",
@@ -365994,7 +366150,7 @@
     "ipa": "/ɕǝs'ħǝn/",
     "ipaSource": "root-derived",
     "translations": {
-      "tr": ""
+      "tr": "SÖZ + sounding"
     }
   },
   {
@@ -367084,7 +367240,10 @@
     },
     "isLemma": false,
     "ipa": "/'ʔɐpʹqʹɬɐpʹqʹ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "KUYU + ayak"
+    }
   },
   {
     "id": "L-CORPUS2-06823",
@@ -370077,7 +370236,10 @@
       "rule": "compound"
     },
     "ipa": "/'ʔɐpʹqʹɬɐpʹqʹ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "HAZINE + BALIK"
+    }
   },
   {
     "id": "L-CORPUS2-06940",
@@ -370136,7 +370298,7 @@
     "ipa": "/'ʁʷǝsɐ/",
     "ipaSource": "root-derived",
     "translations": {
-      "tr": "BABACA + YANI SIRA"
+      "tr": ""
     }
   },
   {
@@ -374496,7 +374658,10 @@
     },
     "conceptId": "BIG_WORK",
     "ipa": "/ʔʷɐ'xʷǝʂxʷɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "yil + TAMAMEN"
+    }
   },
   {
     "id": "L-CORPUS2-07103",
@@ -376088,7 +376253,7 @@
     "ipa": "/'ʔɐpʹqʹɬɐpʹqʹ/",
     "ipaSource": "root-derived",
     "translations": {
-      "tr": ""
+      "tr": "KÜS + ayak + dried up"
     }
   },
   {
@@ -376738,7 +376903,10 @@
     },
     "isLemma": false,
     "conceptId": "BIG",
-    "ipa": "/jǝ'nɑ:ʁ/"
+    "ipa": "/jǝ'nɑ:ʁ/",
+    "translations": {
+      "tr": "su birikintisi + dikkat"
+    }
   },
   {
     "id": "L-CORPUS2-07194",
@@ -378438,7 +378606,10 @@
     },
     "conceptId": "SEE_LOVE",
     "ipa": "/ɬɐ'ʁʷǝn/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "yil + YOLAK"
+    }
   },
   {
     "id": "L-CORPUS2-07260",
@@ -378464,7 +378635,10 @@
       "rule": "compound"
     },
     "ipa": "/sɐ'bɐp/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "yil + PEKİ iyi"
+    }
   },
   {
     "id": "L-CORPUS2-07261",
@@ -380988,7 +381162,7 @@
     "ipaSource": "root-derived",
     "ipa": "/sʃʼɐɕtǝr/",
     "translations": {
-      "tr": "BILGI + BABACA"
+      "tr": ""
     }
   },
   {
@@ -381989,7 +382163,10 @@
       "rule": "compound"
     },
     "ipa": "/ɕǝs'ħǝn/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "SÖZ + Kıskaç"
+    }
   },
   {
     "id": "L-CORPUS2-07394",
@@ -385707,7 +385884,7 @@
     ],
     "ipa": "/fʹɐɕχʷǝ'nǝʁɐ/",
     "translations": {
-      "tr": ""
+      "tr": "dikkat + INANÇ"
     }
   },
   {
@@ -386056,7 +386233,10 @@
     "isLemma": false,
     "conceptId": "MIND",
     "ipa": "/gʷǝp'sǝsɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "PIYAZ + Masal"
+    }
   },
   {
     "id": "L-CORPUS2-07557",
@@ -386529,7 +386709,7 @@
     },
     "ipa": "/qʹʷǝr'mɐn/",
     "translations": {
-      "tr": "KURBAN + MAHALLINDE"
+      "tr": ""
     }
   },
   {
@@ -387157,7 +387337,10 @@
     },
     "notes": "Corpus v1.0 batch-2 (freq: 14, lang: kbd, source: none)",
     "isLemma": false,
-    "ipa": "/jaːrjiʁaɕanw/"
+    "ipa": "/jaːrjiʁaɕanw/",
+    "translations": {
+      "tr": "onların + süt mamulu"
+    }
   },
   {
     "id": "L-CORPUS2-07601",
@@ -390450,7 +390633,7 @@
     "ipa": "/nɐb'ʑǝts/",
     "ipaSource": "root-derived",
     "translations": {
-      "tr": "Sürmek + IKLIM"
+      "tr": ""
     }
   },
   {
@@ -391254,7 +391437,7 @@
     "conceptId": "DINING_ROOM",
     "ipa": "/zɐ'tʂǝr/",
     "translations": {
-      "tr": "relig. divine service song + ŞAIRANE"
+      "tr": ""
     }
   },
   {
@@ -392161,7 +392344,10 @@
       "rule": "compound"
     },
     "ipa": "/'gʷǝfʹɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "ACIMAK + agiz"
+    }
   },
   {
     "id": "L-CORPUS2-07787",
@@ -394899,7 +395085,7 @@
     "ipa": "/nɐb'ʑǝts/",
     "ipaSource": "root-derived",
     "translations": {
-      "tr": "BEZIRBENÇ + eski"
+      "tr": ""
     }
   },
   {
@@ -395406,7 +395592,7 @@
     "isLemma": false,
     "ipa": "/ʐwʁaχw/",
     "translations": {
-      "tr": "TOPLULUK + CINSEL"
+      "tr": ""
     }
   },
   {
@@ -396962,7 +397148,7 @@
     "ipa": "/'ʔɐpʹqʹɬɐpʹqʹ/",
     "ipaSource": "root-derived",
     "translations": {
-      "tr": ""
+      "tr": "Post + ayak"
     }
   },
   {
@@ -398940,7 +399126,10 @@
       "rule": "compound"
     },
     "ipa": "/'gʷǝfʹɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "yil + MORAL + yil"
+    }
   },
   {
     "id": "L-CORPUS2-08050",
@@ -399256,7 +399445,10 @@
       ]
     },
     "isLemma": false,
-    "ipa": "/jǝ'ɬɐs/"
+    "ipa": "/jǝ'ɬɐs/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-08063",
@@ -403080,7 +403272,10 @@
     },
     "notes": "Corpus v1.0 batch-2 (freq: 13, lang: kbd, source: none)",
     "isLemma": false,
-    "ipa": "/jiwtəpɕaːɕ/"
+    "ipa": "/jiwtəpɕaːɕ/",
+    "translations": {
+      "tr": "Koç + Boyun"
+    }
   },
   {
     "id": "L-CORPUS2-08213",
@@ -403849,7 +404044,10 @@
     },
     "conceptId": "DINING_ROOM",
     "ipa": "/'ʂxɑ:pʹɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "yatak altı + KIŞ"
+    }
   },
   {
     "id": "L-CORPUS2-08243",
@@ -403876,7 +404074,10 @@
       "rule": "compound"
     },
     "ipaSource": "root-derived",
-    "ipa": "/iraʁɐblɐʁaɕ/"
+    "ipa": "/iraʁɐblɐʁaɕ/",
+    "translations": {
+      "tr": "dikkat + yılan + AĞLAMAK"
+    }
   },
   {
     "id": "L-CORPUS2-08244",
@@ -404327,7 +404528,10 @@
     },
     "conceptId": "SPARE",
     "ipa": "/ʂħa sǝn/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "onların + BILDIRGE"
+    }
   },
   {
     "id": "L-CORPUS2-08260",
@@ -404977,7 +405181,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/ʔʷǝ'tʹʂǝn/"
+    "ipa": "/ʔʷǝ'tʹʂǝn/",
+    "translations": {
+      "tr": "FORA + donmak"
+    }
   },
   {
     "id": "L-CORPUS2-08283",
@@ -405381,7 +405588,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/sǝqʹ/"
+    "ipa": "/sǝqʹ/",
+    "translations": {
+      "tr": "sansli ev + yil"
+    }
   },
   {
     "id": "L-CORPUS2-08299",
@@ -405544,7 +405754,7 @@
     "ipa": "/qʹʷɐ/",
     "ipaSource": "root-derived",
     "translations": {
-      "tr": ""
+      "tr": "mısır gevreği + BOL"
     }
   },
   {
@@ -406124,7 +406334,7 @@
     "ipa": "/'ʔɐpʹqʹɬɐpʹqʹ/",
     "ipaSource": "root-derived",
     "translations": {
-      "tr": ""
+      "tr": "onların + ayak + dried up"
     }
   },
   {
@@ -411521,7 +411731,10 @@
     },
     "isLemma": false,
     "ipa": "/'ʔɐpʹqʹɬɐpʹqʹ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "ayak + dried up"
+    }
   },
   {
     "id": "L-CORPUS2-08522",
@@ -414324,7 +414537,7 @@
     "ipaSource": "form-derived",
     "ipa": "/ʃʼwʃʼɐnǝm/",
     "translations": {
-      "tr": "nankor + CICI ANNE"
+      "tr": ""
     }
   },
   {
@@ -415566,7 +415779,7 @@
     "ipa": "/wǝˈdzǝfɐ/",
     "ipaSource": "root-derived",
     "translations": {
-      "tr": "POST + CINSEL"
+      "tr": ""
     }
   },
   {
@@ -417027,7 +417240,10 @@
     },
     "conceptId": "PROTECT",
     "ipa": "/χʷǝ'mɐn/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "VERİM + şimdi"
+    }
   },
   {
     "id": "L-CORPUS2-08746",
@@ -418710,7 +418926,10 @@
     "isLemma": false,
     "conceptId": "EAGLE",
     "ipaSource": "root-derived",
-    "ipa": "/ebʁɐɬɐʁʷn/"
+    "ipa": "/ebʁɐɬɐʁʷn/",
+    "translations": {
+      "tr": "Atmaca cinsi + Görmek"
+    }
   },
   {
     "id": "L-CORPUS2-08811",
@@ -422183,7 +422402,10 @@
     "rootIds": [
       "R-FIE"
     ],
-    "ipa": "/fʹɐɕχʷǝ'nǝʁɐ/"
+    "ipa": "/fʹɐɕχʷǝ'nǝʁɐ/",
+    "translations": {
+      "tr": "dikkat + INANÇ"
+    }
   },
   {
     "id": "L-CORPUS2-08940",
@@ -423844,7 +424066,10 @@
       "rule": "compound"
     },
     "ipa": "/dᶎɐʂ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "ÇAĞIRTI + HAN"
+    }
   },
   {
     "id": "L-CORPUS2-09004",
@@ -431055,7 +431280,10 @@
       ]
     },
     "isLemma": false,
-    "ipa": "/tʹʂǝɕ/"
+    "ipa": "/tʹʂǝɕ/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-09274",
@@ -432597,7 +432825,10 @@
     "taxonomyFamily": "Toplum & Etkileşim",
     "rootForm": "мэз-",
     "ipaSource": "root-derived",
-    "ipa": "/mɐzekʼox/"
+    "ipa": "/mɐzekʼox/",
+    "translations": {
+      "tr": "KREP + orada"
+    }
   },
   {
     "id": "L-CORPUS2-09335",
@@ -435637,7 +435868,7 @@
     "ipa": "/χʷǝ'mɐn/",
     "ipaSource": "root-derived",
     "translations": {
-      "tr": "CIRLAMAK + CINSEL"
+      "tr": ""
     }
   },
   {
@@ -435906,7 +436137,10 @@
       "rule": "compound"
     },
     "ipa": "/'ʔɐpʹqʹɬɐpʹqʹ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "KOCALIK + agac"
+    }
   },
   {
     "id": "L-CORPUS2-09468",
@@ -436198,7 +436432,7 @@
     "ipaSource": "root-derived",
     "ipa": "/jatɐ-janɐxɐm/",
     "translations": {
-      "tr": ""
+      "tr": "onların + BABACIL"
     }
   },
   {
@@ -436253,7 +436487,10 @@
     },
     "isLemma": false,
     "conceptId": "MIND",
-    "ipa": "/'zǝtʹʂɐ/"
+    "ipa": "/'zǝtʹʂɐ/",
+    "translations": {
+      "tr": "ODUR + medcezir"
+    }
   },
   {
     "id": "L-CORPUS2-09481",
@@ -438403,7 +438640,7 @@
     "isLemma": false,
     "ipa": "/aːtəraːdzaːʁ/",
     "translations": {
-      "tr": "BABACA + Ordu"
+      "tr": ""
     }
   },
   {
@@ -439010,7 +439247,7 @@
     "isLemma": false,
     "ipa": "/tʃaɕtər/",
     "translations": {
-      "tr": "BILGI + BABACA"
+      "tr": ""
     }
   },
   {
@@ -439932,7 +440169,7 @@
     "conceptId": "DEFECT",
     "ipa": "/qʹe:kʹʷ/",
     "translations": {
-      "tr": "yakışıklı + BABACA"
+      "tr": ""
     }
   },
   {
@@ -440578,7 +440815,7 @@
     },
     "ipa": "/'ħɐtʹʂɐ/",
     "translations": {
-      "tr": ""
+      "tr": "kopek + ayak tabanı"
     }
   },
   {
@@ -441564,7 +441801,7 @@
     "ipa": "/'ʔɐpʹqʹɬɐpʹqʹ/",
     "ipaSource": "root-derived",
     "translations": {
-      "tr": "HAZINE + Demirci dükkanı + Doğu"
+      "tr": ""
     }
   },
   {
@@ -442239,7 +442476,7 @@
     },
     "ipa": "/qʹǝp/",
     "translations": {
-      "tr": ""
+      "tr": "yemek + KIŞ"
     }
   },
   {
@@ -445885,7 +446122,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/sǝqʹ/"
+    "ipa": "/sǝqʹ/",
+    "translations": {
+      "tr": "sansli ev + yil + gitti"
+    }
   },
   {
     "id": "L-CORPUS2-09880",
