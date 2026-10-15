@@ -685,7 +685,7 @@
     "translations": {
       "en": "arm and hand",
       "ru": "рука",
-      "tr": "El",
+      "tr": "el",
       "ar": "يد"
     },
     "subConceptId": "HAND_BODY",
@@ -769,7 +769,7 @@
     ],
     "isLemma": true,
     "translations": {
-      "tr": "Avuç içi, aya",
+      "tr": "avuç",
       "en": "palm (of the hand)",
       "ru": "ладонь"
     },
@@ -858,7 +858,7 @@
     "translations": {
       "ru": "тело (человека, животного); телосложение",
       "en": "body (human, animal); physique",
-      "tr": "Beden; vücut yapısı",
+      "tr": "vücut",
       "ar": "جسم"
     },
     "subConceptId": "BODY_PARTS",
@@ -1961,7 +1961,7 @@
     "translations": {
       "en": "well, spring, source",
       "ru": "колодец, родник, источник",
-      "tr": "Kuyu",
+      "tr": "pınar, kaynak",
       "trSource": "en->tr koprusu (orta)",
       "ar": "عين الماء، الينبوع/ البئر"
     }
@@ -2076,7 +2076,7 @@
     ],
     "isLemma": true,
     "translations": {
-      "tr": "nehir, ırmak",
+      "tr": "nehir",
       "en": "river",
       "ru": "река",
       "ar": "نهر"
@@ -2891,7 +2891,7 @@
     "translations": {
       "ru": "1. вы (мест.) 2. кожа, шкура, кожура, кора",
       "en": "1. you (pl.) 2. skin, hide, peel, bark",
-      "tr": "deri, cilt; siz",
+      "tr": "deri",
       "trSource": "en->tr koprusu (orta)",
       "ar": "جلد"
     }
@@ -4897,7 +4897,7 @@
     "translations": {
       "en": "tongue",
       "ru": "язык (орган)",
-      "tr": "Dil",
+      "tr": "dil",
       "ar": "اللسان (عضو في الكائنات الحية)"
     },
     "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d4/%D0%91626%D0%B1%D0%B7%D1%8D%D0%B3%D1%83.ogg"
@@ -4983,7 +4983,7 @@
     ],
     "isLemma": true,
     "translations": {
-      "tr": "ordu",
+      "tr": "diş",
       "en": "army",
       "ru": "армия",
       "ar": "جيش"
@@ -5336,7 +5336,7 @@
     ],
     "isLemma": true,
     "translations": {
-      "tr": "kus",
+      "tr": "kuş",
       "en": "bird",
       "ru": "птица",
       "ar": "طائر"
@@ -5375,7 +5375,7 @@
     "corpusFrequency": 42,
     "isLemma": true,
     "translations": {
-      "tr": "ordek",
+      "tr": "ördek",
       "en": "duck",
       "ru": "утка",
       "ar": "بطة"
@@ -9953,7 +9953,7 @@
     ],
     "isLemma": true,
     "translations": {
-      "tr": "Yün",
+      "tr": "yün",
       "en": "wool; hair",
       "ru": "шерсть; волос",
       "ar": "الشَعْر، الصوف"
@@ -12044,7 +12044,7 @@
     ],
     "isLemma": true,
     "translations": {
-      "tr": "KREP",
+      "tr": "orman",
       "en": "forest, woods, woodland",
       "ru": "лес",
       "ar": "غابة"
@@ -13013,7 +13013,7 @@
     "translations": {
       "en": "fat, grease",
       "ru": "жир, сало",
-      "tr": "Kurşun",
+      "tr": "yüz",
       "trSource": "en->tr koprusu (orta)",
       "ar": "الحليب/ الطلقة، السهم، القذيفة/ القنبلة/ ثلاث مرات"
     },
@@ -14087,7 +14087,7 @@
     },
     "isLemma": true,
     "translations": {
-      "tr": "bes",
+      "tr": "beş",
       "en": "five (5), a 5 mark/grade = A mark/grade",
       "ru": "пять, пятёрка (оценка)",
       "ar": "خمسة"
@@ -14128,7 +14128,7 @@
     ],
     "isLemma": true,
     "translations": {
-      "tr": "Yedi",
+      "tr": "yedi",
       "en": "seven (7)",
       "ru": "семь",
       "ar": "سبعة، الرقم سبعة"
@@ -14173,7 +14173,7 @@
     ],
     "isLemma": true,
     "translations": {
-      "tr": "Dokuz",
+      "tr": "dokuz",
       "en": "side, lateral surface",
       "ru": "бок, боковая сторона",
       "ar": "تسعة، العدد تسعة/ جهة، طرف/ ناحية/ عريض"
@@ -14497,7 +14497,7 @@
     },
     "isLemma": true,
     "translations": {
-      "tr": "mavi",
+      "tr": "gri (renk); zehir (yan anlam)",
       "en": "grey",
       "ru": "серый"
     },
@@ -15239,7 +15239,7 @@
     ],
     "isLemma": true,
     "translations": {
-      "tr": "Gelin",
+      "tr": "gelin",
       "en": "daughter-in-law; sister-in-law",
       "ru": "невестка",
       "ar": "العروس"
@@ -15582,7 +15582,7 @@
     ],
     "isLemma": true,
     "translations": {
-      "tr": "genc kiz",
+      "tr": "genç kız",
       "en": "girl, young woman",
       "ru": "девушка"
     },
@@ -16058,7 +16058,7 @@
     ],
     "isLemma": true,
     "translations": {
-      "tr": "bas",
+      "tr": "baş",
       "en": "head (human, animal), head (unit for counting livestock), the top, cover or lid of sth, roof",
       "ru": "голова (человека, животного), голова (единица счёта скота), верх чего-л.; крышка, крыша",
       "ar": "رأس"
@@ -16539,7 +16539,7 @@
     ],
     "isLemma": true,
     "translations": {
-      "tr": "Göz kapağı",
+      "tr": "alın",
       "en": "eyelid",
       "ru": "веко",
       "ar": "جفن"
@@ -16584,7 +16584,7 @@
     ],
     "isLemma": true,
     "translations": {
-      "tr": "agiz",
+      "tr": "ağız",
       "en": "mouth, language (as a means of communcation)",
       "ru": "рот, язык (как средство общения)",
       "ar": "فم"
@@ -16751,7 +16751,7 @@
     ],
     "isLemma": true,
     "translations": {
-      "tr": "İşkembe",
+      "tr": "karın",
       "en": "belly, abdomen, front side of the body, stomach, mother's womb",
       "ru": "живот, лицевая сторона туловища, желудок, материнская утроба",
       "ar": "البطن/ المعدة"
@@ -16786,7 +16786,7 @@
     ],
     "isLemma": true,
     "translations": {
-      "tr": "Bel",
+      "tr": "dağ",
       "en": "mountain, summit, peak",
       "ru": "гора, вершина",
       "ar": "I \\tأرض مرتفعة، سلسلة مرتفعة، هضبة، تل   II \\tخَصر، وسط الجسم"
@@ -17180,7 +17180,7 @@
     ],
     "isLemma": true,
     "translations": {
-      "tr": "ayi",
+      "tr": "ayı",
       "en": "bear",
       "ru": "медведь",
       "ar": "دب"
@@ -17217,7 +17217,7 @@
     ],
     "isLemma": true,
     "translations": {
-      "tr": "Sinek",
+      "tr": "sinek",
       "en": "fly, housefly",
       "ru": "муха",
       "ar": "الذباب"
@@ -17254,7 +17254,7 @@
     ],
     "isLemma": true,
     "translations": {
-      "tr": "Arı",
+      "tr": "arı",
       "en": "horn, wine glass, goblet, beaker, drinking horn, a bottle of sprits (liquor).",
       "ru": "рог, рог, чарка, бокал, стопка со спиртным напитком, бутылка спиртного",
       "ar": "النحل (حشرة)"
@@ -17611,7 +17611,7 @@
     "ipa": "/ᶎǝɣ/",
     "isLemma": true,
     "translations": {
-      "tr": "agac",
+      "tr": "ağaç",
       "en": "tree",
       "ru": "дерево",
       "ar": "شجرة"
@@ -18120,7 +18120,7 @@
     },
     "isLemma": true,
     "translations": {
-      "tr": "Soğan",
+      "tr": "soğan",
       "en": "(bulb) onion",
       "ru": "лук репчатый",
       "ar": "بصلة"
@@ -18167,7 +18167,7 @@
     ],
     "isLemma": true,
     "translations": {
-      "tr": "Sarmısak",
+      "tr": "sarımsak",
       "en": "garlic",
       "ru": "чеснок",
       "ar": "ثوم"
@@ -18293,7 +18293,7 @@
     },
     "isLemma": true,
     "translations": {
-      "tr": "bugday",
+      "tr": "buğday",
       "en": "wheat",
       "ru": "пшеница",
       "ar": "قمح"
@@ -19097,7 +19097,7 @@
     ],
     "isLemma": true,
     "translations": {
-      "tr": "cilek",
+      "tr": "yemiş",
       "en": "wild strawberry",
       "ru": "земляника"
     },
@@ -19114,7 +19114,7 @@
     "ipa": "/mɐˈmqʹʷǝt/",
     "isLemma": true,
     "translations": {
-      "tr": "ahududu",
+      "tr": "çilek",
       "en": "raspberry (berry)",
       "ru": "малина (ягода)",
       "ar": "توت العليق"
@@ -19388,7 +19388,7 @@
     "conceptId": "NATURE",
     "isLemma": true,
     "translations": {
-      "tr": "gol",
+      "tr": "göl",
       "en": "lake",
       "ru": "озеро",
       "ar": "بحيرة"
@@ -19410,7 +19410,7 @@
     "conceptId": "THOUSAND",
     "isLemma": true,
     "translations": {
-      "tr": "Bin",
+      "tr": "bin",
       "en": "one thousand, 1000",
       "ru": "тысяча, 1000",
       "ar": "ألف (العدد ألف)"
@@ -19447,7 +19447,7 @@
     ],
     "isLemma": true,
     "translations": {
-      "tr": "on bin",
+      "tr": "milyon",
       "en": "million, a large quantity",
       "ru": "миллион, большое количество"
     },
@@ -20907,7 +20907,7 @@
     ],
     "isLemma": true,
     "translations": {
-      "tr": "Kalp",
+      "tr": "domuz",
       "en": "the sixth letter of the Kabardino-Cherkess (Circassian) alphabet",
       "ru": "шестая буква кабардино-черкесского алфавита",
       "ar": "القَلب، النَفْس"
@@ -22147,7 +22147,7 @@
     "translations": {
       "en": "light-, sky blue (usually about the sky)",
       "ru": "голубой (чаще о небе)",
-      "tr": "MAVİ"
+      "tr": "mavi"
     },
     "conceptId": "BLUE",
     "dictionaryEvidence": [
@@ -23496,7 +23496,7 @@
     "translations": {
       "en": "shade, shadow",
       "ru": "тень",
-      "tr": "GÖLGE",
+      "tr": "şemsiye",
       "ar": "مظلة"
     },
     "rootIds": [
@@ -25034,7 +25034,7 @@
     "translations": {
       "en": "word, lexeme, speech, conversation",
       "ru": "слово, разговор; речь",
-      "tr": "KELİME",
+      "tr": "kelime, söz",
       "ar": "كلمة"
     },
     "conceptId": "KONUŞMA",
@@ -26601,7 +26601,7 @@
     ],
     "isLemma": true,
     "translations": {
-      "tr": "Atmaca cinsi",
+      "tr": "göğüs",
       "en": "eagle",
       "ru": "орёл",
       "ar": "I \\tالصَدر، صدر الإنسان والحيوان   II \\tالعُقاب (من الجوارح)   III \\tالفرس العقيم"
@@ -26701,7 +26701,7 @@
     ],
     "isLemma": true,
     "translations": {
-      "tr": "tarla, ova",
+      "tr": "bozkır, tarla",
       "en": "prairie, steppe, field",
       "ru": "степь, поле",
       "ar": "حقل"
@@ -28275,7 +28275,7 @@
     ],
     "isLemma": true,
     "translations": {
-      "tr": "alaca, benekli",
+      "tr": "renkli",
       "en": "colourful, multi-coloured, variegated, motley",
       "ru": "разноцветный, пёстрый",
       "ar": "واجب"
@@ -30565,7 +30565,7 @@
     ],
     "isLemma": true,
     "translations": {
-      "tr": "odun, tahta, kütük",
+      "tr": "odun",
       "en": "wood, lumber, board (as a building material), firewood",
       "ru": "лес (как стройматериал), дрова",
       "ar": "الخشب، الحطب"
@@ -31212,7 +31212,7 @@
     ],
     "isLemma": true,
     "translations": {
-      "tr": "I (",
+      "tr": "sekiz",
       "en": "seventeenth letter of the Kabardino-Cherkess (Circassian) alphabet",
       "ru": "семнадцатая буква кабардино-черкесского алфавита",
       "ar": "I \\tالحرف الرابع عشر من الألفباء الشركسية ويعني (ثمانية)   II \\tثمان، ثمانية/ ضمير الملكية للغائب (خاصته)"
@@ -31344,7 +31344,7 @@
     "translations": {
       "en": "four (4)",
       "ru": "четыре (4)",
-      "tr": "Dört",
+      "tr": "dört",
       "ar": "أربع، أربعة"
     },
     "dictionaryEvidence": [
@@ -31396,7 +31396,7 @@
     "conceptId": "THIRTY",
     "isLemma": true,
     "translations": {
-      "tr": "otuz",
+      "tr": "yirmi",
       "en": "thirty (30)",
       "ru": "тридцать (30)",
       "ar": "ثلاثين"
@@ -31432,7 +31432,7 @@
     "translations": {
       "en": "forty (40)",
       "ru": "сорок (40)",
-      "tr": "Kırk",
+      "tr": "kırk",
       "ar": "أربعون"
     },
     "dictionaryEvidence": [
@@ -31463,7 +31463,7 @@
     },
     "isLemma": true,
     "translations": {
-      "tr": "altmis",
+      "tr": "altmış",
       "en": "sixty (60)",
       "ru": "шестьдесят (60)",
       "ar": "ستون"
@@ -31499,7 +31499,7 @@
     "translations": {
       "en": "seventy (70)",
       "ru": "семьдесят (70)",
-      "tr": "Yetmiş",
+      "tr": "yetmiş",
       "ar": "سبعين"
     },
     "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/3/38/%D0%91774%D0%B1%D0%BB%D1%8B%D1%89%D3%8F.ogg",
@@ -33934,7 +33934,7 @@
     "translations": {
       "en": "grass, plant",
       "ru": "трава",
-      "tr": "OT",
+      "tr": "ot",
       "ar": "عشب"
     },
     "rootIds": [
@@ -37925,7 +37925,7 @@
     ],
     "isLemma": true,
     "translations": {
-      "tr": "dunya, evren",
+      "tr": "dünya",
       "en": "",
       "ru": "world, universe, Earth, life (in this world), weather, ever, for goodness’ sake, on earth, in the world (as a particle reinforcing a statement)",
       "ar": "عالم"
@@ -39411,7 +39411,7 @@
     "translations": {
       "en": "six (6)",
       "ru": "шесть (6)",
-      "tr": "altı; deniz",
+      "tr": "altı",
       "ar": "I \\tالبحر   II \\tستة، العدد ستة"
     },
     "notes": "Kaynak: sukunov-1998",
@@ -44608,7 +44608,7 @@
     "ipa": "/gʷǝb'zǝʁɐ/",
     "ipaSource": "root-derived",
     "translations": {
-      "tr": "Terzi kadın"
+      "tr": "kadın"
     },
     "literalMeaningSource": "translations.tr (yuksek)"
   },
@@ -45317,7 +45317,7 @@
     "translations": {
       "ru": "большая часть кого-чего-л",
       "en": "the greater part of sth, the majority",
-      "tr": "büyük",
+      "tr": "otuz",
       "ar": "غامِر"
     },
     "subConceptId": "COMPARISON",
@@ -46667,7 +46667,7 @@
     "translations": {
       "ru": "корень <div style='margin-l",
       "en": "root (of a plant), foundation, base (building), bottom, foot, lower part of sth (for example, of a rick or haystack), hoof, root (word), source, basis of sth, material well-being",
-      "tr": "Kök, dip",
+      "tr": "kök",
       "ar": "فرضية"
     },
     "subConceptId": "PLANT_ROOT",
@@ -47684,7 +47684,7 @@
     "translations": {
       "ru": "семя, семена <div style='margin-left:3em",
       "en": "village, villagers",
-      "tr": "CEMİYET",
+      "tr": "tohum",
       "ar": "بذرة"
     },
     "rootIds": [
@@ -47959,7 +47959,7 @@
     "translations": {
       "ru": "буква / Макъ къызэрагъэлъагъуэ дамыгъэ",
       "en": "letter (of the alphabet)",
-      "tr": "Harf"
+      "tr": "harf"
     },
     "conceptId": "LETTER",
     "subConceptId": "LETTER_ALPHABET",
@@ -48155,7 +48155,7 @@
     "translations": {
       "en": "fish",
       "ru": "рыба",
-      "tr": "BALIK",
+      "tr": "balık",
       "ar": "سمكة"
     },
     "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c1/%D0%91443%D0%B1%D0%B4%D0%B7%D1%8D%D0%B6%D1%8C%D0%B5%D0%B9.ogg",
@@ -48187,7 +48187,7 @@
     "translations": {
       "ru": "грамм. предложение / Зы псалъэу е псалъэ зыбжанэу",
       "en": "sentence, clause (grammar)",
-      "tr": "CÜMLE",
+      "tr": "cümle",
       "ar": "جملة"
     },
     "conceptId": "CÜMLE",
@@ -51165,7 +51165,7 @@
     "translations": {
       "en": "number, numeral, count, digit, quantity, figure, sum, amount",
       "ru": "число, счёт, цифра, сумма",
-      "tr": "Sayı",
+      "tr": "sayı",
       "ar": "كمية"
     },
     "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5d/%D0%91529%D0%B1%D0%B6%D1%8B%D0%B3%D1%8A%D1%8D.ogg",
@@ -54887,7 +54887,7 @@
     "translations": {
       "en": "third, 3rd, hundredth, 100th",
       "ru": "третий, 3-й, сотый, 100-й",
-      "tr": "MART",
+      "tr": "üçüncü",
       "ar": "ثالث"
     }
   },
@@ -55473,7 +55473,7 @@
     "translations": {
       "en": "leaf (for example, of a tree)",
       "ru": "лист (напр. дерева)",
-      "tr": "Yaprak",
+      "tr": "yaprak",
       "ar": "ورقة نبات"
     },
     "dictionaryEvidence": [
@@ -56184,7 +56184,7 @@
     "translations": {
       "en": "near, close (about distance)",
       "ru": "близкий (о расстоянии)",
-      "tr": "Kiriş-lif",
+      "tr": "akraba",
       "ar": "قريب، دانِ/ مجدول، مضفور"
     },
     "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/1/19/%D0%91690%D0%B1%D0%BB%D0%B0%D0%B3%D1%8A%D1%8D.ogg",
@@ -57933,7 +57933,7 @@
     "translations": {
       "en": "vowel sound",
       "ru": "гласный звук",
-      "tr": "HARF",
+      "tr": "sesli harf",
       "ar": "حرف علة"
     },
     "literalMeaningSource": "translations.tr (yuksek)"
@@ -61404,7 +61404,7 @@
     "conceptId": "FLOWER",
     "isLemma": true,
     "translations": {
-      "tr": "bot. flower",
+      "tr": "çiçek",
       "en": "flower, blossom, bloom",
       "ru": "цветок"
     },
@@ -64282,7 +64282,7 @@
     "translations": {
       "en": "sand",
       "ru": "песок",
-      "tr": "Kum",
+      "tr": "kum",
       "ar": "رمل"
     },
     "dictionaryEvidence": [
@@ -65436,7 +65436,7 @@
     ],
     "ipa": "/'bᶎǝʁɐ/",
     "translations": {
-      "tr": "BINER"
+      "tr": "sayılar"
     },
     "literalMeaningSource": "translations.tr (yuksek)"
   },
@@ -67686,7 +67686,7 @@
     "translations": {
       "en": "mouse",
       "ru": "мышь",
-      "tr": "Fare, sıçan",
+      "tr": "fare",
       "ar": "فأر"
     },
     "dictionaryEvidence": [
@@ -71384,7 +71384,7 @@
     "translations": {
       "en": "bucket, pail",
       "ru": "ведро",
-      "tr": "Kova",
+      "tr": "kova",
       "ar": "دلو"
     },
     "dictionaryEvidence": [
@@ -72436,7 +72436,7 @@
     "translations": {
       "en": "fox, vixen, a fox, a shrewd, sly person (about a person)",
       "ru": "лиса, лиса, хитрец (о человеке)",
-      "tr": "Tilki",
+      "tr": "tilki",
       "ar": "ثعلب"
     },
     "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/7/78/%D0%91023%D0%B1%D0%B0%D0%B6%D1%8D.ogg",
@@ -74722,7 +74722,7 @@
     "translations": {
       "ru": "план",
       "en": "plan (numbers and figures), plan, map, blueprint (drawing), plan (of a presentation)",
-      "tr": "planlamacı",
+      "tr": "plan",
       "ar": "مخطط، خطة، مصور"
     },
     "examples": [
@@ -76025,7 +76025,7 @@
     "translations": {
       "ru": "вино <div style='margin-left:3em",
       "en": "currant (berry), currant (plant)",
-      "tr": "Frenk üzümü",
+      "tr": "üzüm",
       "ar": "النبيذ، الخمرة/ العنب"
     },
     "dictionaryEvidence": [
@@ -76971,7 +76971,7 @@
     "translations": {
       "en": "deer",
       "ru": "олень",
-      "tr": "Geyik",
+      "tr": "geyik",
       "ar": "بسكويت معقود (على شكل عقدة)"
     },
     "dictionaryEvidence": [
@@ -81394,7 +81394,7 @@
     "translations": {
       "ru": "гусь <div style='margi",
       "en": "goose",
-      "tr": "Kuğu",
+      "tr": "kaz",
       "ar": "أوز"
     },
     "subConceptId": "GOOSE",
@@ -83186,7 +83186,7 @@
     "translations": {
       "en": "wild birds (in general) (literally: crows and sparrows)",
       "ru": "птицы (дикие)",
-      "tr": "Yaban kuşları"
+      "tr": "kuş"
     },
     "dictionaryEvidence": [
       "sukunov-1998"
@@ -85882,7 +85882,7 @@
     "translations": {
       "en": "a wicker basket",
       "ru": "корзина из прутьев",
-      "tr": "Sepet",
+      "tr": "sepet",
       "ar": "يَهِبُ،  يمنح"
     },
     "dictionaryEvidence": [
@@ -86022,7 +86022,7 @@
     "translations": {
       "ru": "козел / Бжэнхэм яхъу",
       "en": "billy goat, he-goat",
-      "tr": "Teke",
+      "tr": "keçi",
       "ar": "عنزة"
     },
     "subConceptId": "HE_GOAT",
@@ -86188,7 +86188,7 @@
     "translations": {
       "en": "pear (fruit)",
       "ru": "груша (плод)",
-      "tr": "ARMUT",
+      "tr": "armut",
       "ar": "كمثرى"
     },
     "literalMeaningSource": "translations.tr (yuksek)",
@@ -88041,7 +88041,7 @@
     "translations": {
       "en": "rice",
       "ru": "рис",
-      "tr": "ÇORBA",
+      "tr": "pirinç",
       "trSource": "en->tr koprusu (orta)",
       "ar": "أرز"
     },
@@ -92417,7 +92417,7 @@
     "translations": {
       "ru": "бот. 1",
       "en": "sunflower (plant), sunflower seeds",
-      "tr": "Öd, safra"
+      "tr": "ayçiçeği"
     },
     "rootIds": [
       "R-SEKH"
@@ -92913,7 +92913,7 @@
     "translations": {
       "en": "camel",
       "ru": "верблюд",
-      "tr": "Deve",
+      "tr": "deve",
       "ar": "جمل"
     },
     "dictionaryEvidence": [
@@ -93103,7 +93103,7 @@
     "translations": {
       "en": "head, ear, spike",
       "ru": "колос",
-      "tr": "Başak"
+      "tr": "meyve"
     },
     "dictionaryEvidence": [
       "sukunov-1998"
@@ -95797,7 +95797,7 @@
     "translations": {
       "en": "hammer, mallet",
       "ru": "молот; молоток",
-      "tr": "Çekiç, balyoz",
+      "tr": "çekiç",
       "ar": "مطرقة"
     },
     "dictionaryEvidence": [
@@ -97237,7 +97237,7 @@
     "translations": {
       "en": "blood vessel (artery, vein)",
       "ru": "кровеносный сосуд",
-      "tr": "DAMAR"
+      "tr": "damar"
     },
     "dictionaryEvidence": [
       "sukunov-1998"
@@ -99988,7 +99988,7 @@
     "translations": {
       "en": "hip",
       "ru": "бедро",
-      "tr": "Uyluk",
+      "tr": "uyluk",
       "ar": "فخذ"
     },
     "dictionaryEvidence": [
@@ -103837,7 +103837,7 @@
     "translations": {
       "en": "axe, hatchet",
       "ru": "топор",
-      "tr": "Balta"
+      "tr": "balta"
     },
     "dictionaryEvidence": [
       "sukunov-1998"
@@ -105970,7 +105970,7 @@
     "translations": {
       "ru": "слон Фил <div style='marg",
       "en": "elephant",
-      "tr": "Fil",
+      "tr": "fil",
       "ar": "الفيل (حيوان)"
     },
     "rootIds": [
@@ -106287,7 +106287,7 @@
     "translations": {
       "en": "shin, tibia, tree trunk or stem of a plant",
       "ru": "голень, берцовая кость, ствол, стебель растения",
-      "tr": "İncik",
+      "tr": "bacak",
       "ar": "قصبة الرجل"
     },
     "dictionaryEvidence": [
@@ -106674,7 +106674,7 @@
     "translations": {
       "en": "plain, flatland, prairie, steppe; flat space",
       "ru": "равнина, ровное пространство",
-      "tr": "OVA",
+      "tr": "ova",
       "trSource": "en->tr koprusu (orta)",
       "ar": "سهل"
     }
@@ -108208,7 +108208,7 @@
     "translations": {
       "en": "large puddle, swamp, quagmire",
       "ru": "большая лужа, болото, трясина",
-      "tr": "SIĞ"
+      "tr": "bataklık"
     },
     "literalMeaningSource": "translations.tr (yuksek)"
   },
@@ -115648,7 +115648,7 @@
     "translations": {
       "en": "lungs",
       "ru": "лёгкие",
-      "tr": "Akciğer",
+      "tr": "akciğer",
       "ar": "رئة"
     },
     "dictionaryEvidence": [
@@ -123457,7 +123457,7 @@
     "translations": {
       "en": "saw (tool)",
       "ru": "пила",
-      "tr": "Testere, bıçkı",
+      "tr": "testere",
       "ar": "المنشار"
     },
     "dictionaryEvidence": [
@@ -128938,7 +128938,7 @@
     "ipa": "/'ʔɐpʹqʹɬɐpʹqʹ/",
     "ipaSource": "root-derived",
     "translations": {
-      "tr": "Aslan",
+      "tr": "aslan",
       "ar": "الأسد، السبع (حيوان)"
     },
     "literalMeaningSource": "translations.tr (yuksek)"
@@ -132706,7 +132706,7 @@
     "ipa": "/'ʔɐpʹqʹɬɐpʹqʹ/",
     "ipaSource": "root-derived",
     "translations": {
-      "tr": "SINIR",
+      "tr": "sinir",
       "ar": "عصب"
     },
     "literalMeaningSource": "translations.tr (yuksek)"
@@ -137913,7 +137913,7 @@
     "translations": {
       "ru": "родители / Анэмрэ адэмрэ, быныр къэзылъхуахэр",
       "en": "parents, father and mother",
-      "tr": "EBEVEYN",
+      "tr": "ebeveyn",
       "trSource": "en->tr koprusu (orta)",
       "ar": "أبوي"
     },
@@ -138723,7 +138723,7 @@
     "translations": {
       "en": "tiger",
       "ru": "тигр",
-      "tr": "Kaplan",
+      "tr": "kaplan",
       "ar": "نمر"
     },
     "dictionaryEvidence": [
@@ -155518,7 +155518,7 @@
     "translations": {
       "en": "lower jaw, chin, mandible",
       "ru": "нижняя челюсть, подбородок",
-      "tr": "Çene",
+      "tr": "çene",
       "ar": "ذقن"
     },
     "dictionaryEvidence": [
@@ -156652,7 +156652,7 @@
     "translations": {
       "en": "bag, sack, scabbard, sheath, ear (maize)",
       "ru": "кулёк, ножны, початок",
-      "tr": "Kese kağıdı"
+      "tr": "çanta"
     },
     "dictionaryEvidence": [
       "sukunov-1998"
@@ -156875,7 +156875,7 @@
     "translations": {
       "ru": "бот. морковь посевная <d",
       "en": "carrot",
-      "tr": "Havuç",
+      "tr": "havuç",
       "ar": "الجَزَر"
     },
     "rootIds": [
@@ -168782,7 +168782,7 @@
     "translations": {
       "en": "butterfly, moth",
       "ru": "бабочка",
-      "tr": "KELEBEK",
+      "tr": "kelebek",
       "ar": "فراشة"
     },
     "literalMeaningSource": "translations.tr (yuksek)"
@@ -169296,7 +169296,7 @@
     "translations": {
       "en": "pink (colour)",
       "ru": "розовый (о цвете)",
-      "tr": "Pembe",
+      "tr": "pembe",
       "ar": "زهري"
     },
     "dictionaryEvidence": [
@@ -179903,7 +179903,7 @@
     "translations": {
       "en": "kidney (organ)",
       "ru": "почка (орган)",
-      "tr": "Böbrek",
+      "tr": "böbrek",
       "ar": "كلية"
     },
     "dictionaryEvidence": [
@@ -189948,7 +189948,7 @@
     "translations": {
       "en": "case",
       "ru": "падеж",
-      "tr": "iş, mesele",
+      "tr": "hal (gramer)",
       "trSource": "en->tr koprusu (orta)",
       "ar": "الحال والصيغة الإعرابية"
     },
@@ -206588,7 +206588,7 @@
     ],
     "ipa": "/ɕǝ'ʁǝn/",
     "translations": {
-      "tr": "FORM"
+      "tr": "giysiler"
     },
     "literalMeaningSource": "translations.tr (yuksek)"
   },
@@ -255344,7 +255344,7 @@
     "rootForm": "Ӏэ-",
     "ipa": "/ʔɐmɐ'psǝmɐ/",
     "translations": {
-      "tr": "DONANIM"
+      "tr": "araç gereçler"
     }
   },
   {
@@ -265676,7 +265676,7 @@
     "rootForm": "псэ",
     "ipa": "/psɐ'wǝɕħɐ/",
     "translations": {
-      "tr": "HAYVANAT"
+      "tr": "hayvanlar"
     },
     "literalMeaningSource": "translations.tr (yuksek)"
   },
@@ -379892,7 +379892,7 @@
     "conceptId": "WRITE",
     "ipa": "/nɐr'tǝxʷ/",
     "translations": {
-      "tr": "Mısır"
+      "tr": "mısır"
     }
   },
   {
@@ -465194,7 +465194,7 @@
     "translations": {
       "ru": "свитер",
       "en": "sweater, jumper, cardigan",
-      "tr": "KAZAK",
+      "tr": "kazak",
       "ar": "سُترة"
     },
     "examples": [
@@ -474939,7 +474939,7 @@
     "translations": {
       "ru": "алыча 1",
       "en": "cherry plum (fruit)",
-      "tr": "Sarı erik",
+      "tr": "erik",
       "ar": "الجانرك (الخوخ الأصفر)"
     },
     "examples": [
@@ -477045,7 +477045,7 @@
     "translations": {
       "en": "alphabet",
       "ru": "алфавит",
-      "tr": "abecealfabe"
+      "tr": "alfabe"
     },
     "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2e/%D0%90169%D0%B0%D0%BB%D1%84%D0%B0%D0%B2%D0%B8%D1%82.ogg"
   },
@@ -506921,7 +506921,7 @@
     "translations": {
       "en": "sea",
       "ru": "море",
-      "tr": "deniz, okyanus",
+      "tr": "deniz",
       "trSource": "en->tr koprusu (orta)",
       "ar": "بحر"
     },
@@ -512523,7 +512523,7 @@
     "translations": {
       "en": "rose, rosehips",
       "ru": "шиповник",
-      "tr": "ERKENMISIR"
+      "tr": "alıç"
     },
     "examples": [
       "*Хъэцыбанэ шей."
@@ -536496,7 +536496,7 @@
     "translations": {
       "en": "potato, spud",
       "ru": "картофель, картошка",
-      "tr": "Patetes",
+      "tr": "patates",
       "ar": "بطاطس"
     },
     "dictionaryEvidence": [
@@ -536565,7 +536565,7 @@
     },
     "isLemma": true,
     "translations": {
-      "tr": "elma agaci",
+      "tr": "elma",
       "en": "apple",
       "ru": "яблоко",
       "ar": "تفاحة"
@@ -542091,7 +542091,7 @@
       "trVerified": false,
       "en": "fingernail",
       "ru": "ноготь пальца руки",
-      "tr": "El tırnağı",
+      "tr": "parmak tırnağı",
       "ar": "ظفر"
     },
     "ipa": "/ʔɐ'bʑɑ:nɐ/",
@@ -558798,7 +558798,7 @@
     "translations": {
       "en": "true flies, diptera (insects)",
       "ru": "двукрылые [насекомые]",
-      "tr": "diptera insects {}"
+      "tr": "sivrisinek"
     }
   },
   {
@@ -615063,7 +615063,7 @@
     "translations": {
       "en": "sea buckthorn, sandthorn, sallowthorn, seaberry (fruit).",
       "ru": "облепиха (плод)",
-      "tr": "YABANIIĞDE"
+      "tr": "yaban mersini"
     }
   },
   {
@@ -623969,7 +623969,7 @@
     "translations": {
       "en": "hollow, valley; gulley, ravine, lowland, hem, flap, tail",
       "ru": "ложбина; лощина, балка, подол, пола",
-      "tr": "ayak tabanı",
+      "tr": "vadi, dere",
       "trSource": "en->tr koprusu (orta)"
     },
     "literalMeaningSource": "translations.ru->tr (orta)"
@@ -656706,7 +656706,7 @@
     "translations": {
       "en": "meadow, a place for making hay, hayfield",
       "ru": "луг, сенокосные угодья",
-      "tr": "BILDIRCIN",
+      "tr": "çayır",
       "ar": "مرج غابي، أرض مرج وحشائش"
     }
   },
@@ -727569,7 +727569,7 @@
     "partOfSpeech": "noun",
     "conceptId": "AILE",
     "translations": {
-      "tr": "Baba",
+      "tr": "baba",
       "en": "Father",
       "ru": "Отец",
       "ar": "إذ َن/ السرطان (مرض)"
@@ -727592,7 +727592,7 @@
     "partOfSpeech": "noun",
     "conceptId": "AILE",
     "translations": {
-      "tr": "Anne",
+      "tr": "anne",
       "en": "Mother",
       "ru": "Мать",
       "ar": "أم"
@@ -727615,7 +727615,7 @@
     "partOfSpeech": "noun",
     "conceptId": "AILE",
     "translations": {
-      "tr": "Oğul",
+      "tr": "oğul",
       "en": "Son",
       "ru": "Сын",
       "ar": "ابن"
@@ -727805,7 +727805,7 @@
     "partOfSpeech": "noun",
     "conceptId": "ZAMAN",
     "translations": {
-      "tr": "Kazık",
+      "tr": "bir",
       "en": "One",
       "ru": "Один",
       "ar": "واحد"
@@ -727840,7 +727840,7 @@
     "partOfSpeech": "noun",
     "conceptId": "ZAMAN",
     "translations": {
-      "tr": "two",
+      "tr": "iki",
       "en": "Two",
       "ru": "Два",
       "ar": "اثنان"
@@ -727860,7 +727860,7 @@
     "partOfSpeech": "noun",
     "conceptId": "ZAMAN",
     "translations": {
-      "tr": "Üç",
+      "tr": "üç",
       "en": "Three",
       "ru": "Три",
       "ar": "ثلاثة"
@@ -727935,7 +727935,7 @@
     "partOfSpeech": "noun",
     "conceptId": "RENKLER",
     "translations": {
-      "tr": "Beyaz",
+      "tr": "beyaz",
       "en": "White",
       "ru": "Белый",
       "ar": "أبيض"
@@ -727973,7 +727973,7 @@
     "partOfSpeech": "noun",
     "conceptId": "RENKLER",
     "translations": {
-      "tr": "Koyu kırmızı",
+      "tr": "kırmızı",
       "en": "Red",
       "ru": "Красный",
       "ar": "أحمر"
@@ -728011,7 +728011,7 @@
     "partOfSpeech": "noun",
     "conceptId": "RENKLER",
     "translations": {
-      "tr": "Yeşil",
+      "tr": "yeşil",
       "en": "Green",
       "ru": "Зеленый",
       "ar": "أخضر"
@@ -728294,7 +728294,7 @@
     "partOfSpeech": "noun",
     "conceptId": "GIYIM",
     "translations": {
-      "tr": "Gömlek",
+      "tr": "gömlek",
       "en": "Shirt, blouse",
       "ru": "Рубашка",
       "ar": "قميص"
@@ -728337,7 +728337,7 @@
     "partOfSpeech": "noun",
     "conceptId": "GIYIM",
     "translations": {
-      "tr": "Bel",
+      "tr": "kemer",
       "en": "Belt, girdle",
       "ru": "Пояс (муж., женск.)",
       "ar": "حزام، نطاق، زنار، طوق"
@@ -728422,7 +728422,7 @@
     "partOfSpeech": "noun",
     "conceptId": "VUCUT",
     "translations": {
-      "tr": "Göz",
+      "tr": "göz",
       "en": "Eye",
       "ru": "Глаз",
       "ar": "العين"
@@ -728444,7 +728444,7 @@
     "partOfSpeech": "noun",
     "conceptId": "VUCUT",
     "translations": {
-      "tr": "Burun",
+      "tr": "burun",
       "en": "Nose",
       "ru": "Нос",
       "ar": "الأنف، المقدم/ أمام"
@@ -728487,7 +728487,7 @@
     "partOfSpeech": "noun",
     "conceptId": "HAYVANLAR",
     "translations": {
-      "tr": "KIKIRDAK",
+      "tr": "at",
       "en": "Horse",
       "ru": "Лошадь",
       "ar": "حصان/ أخ"
@@ -728507,7 +728507,7 @@
     "partOfSpeech": "noun",
     "conceptId": "HAYVANLAR",
     "translations": {
-      "tr": "Koyun",
+      "tr": "koyun",
       "en": "Sheep",
       "ru": "Овца",
       "ar": "خروف"
@@ -728529,7 +728529,7 @@
     "partOfSpeech": "noun",
     "conceptId": "HAYVANLAR",
     "translations": {
-      "tr": "İnek",
+      "tr": "inek",
       "en": "Cow",
       "ru": "Корова",
       "ar": "بقرة"
@@ -728561,7 +728561,7 @@
     "partOfSpeech": "noun",
     "conceptId": "HAYVANLAR",
     "translations": {
-      "tr": "Arpacık",
+      "tr": "köpek",
       "en": "Dog",
       "ru": "Собака",
       "ar": "كلب/ الشعير(من الحبوب)"
@@ -728583,7 +728583,7 @@
     "partOfSpeech": "noun",
     "conceptId": "HAYVANLAR",
     "translations": {
-      "tr": "Kedi",
+      "tr": "kedi",
       "en": "Cat",
       "ru": "Кошка",
       "ar": "هرة"
@@ -728679,7 +728679,7 @@
     "partOfSpeech": "noun",
     "conceptId": "YONLER",
     "translations": {
-      "tr": "Subasar",
+      "tr": "su",
       "ar": "الماء، النهر/ سلسلة، شريط/ حساء",
       "en": "i water",
       "ru": "i  вода"
@@ -733135,7 +733135,7 @@
     "form": "ЛӀы",
     "partOfSpeech": "noun",
     "translations": {
-      "tr": "Adam, erkek, koca",
+      "tr": "erkek",
       "ar": "رَجل، زوج، شجاع",
       "en": "man",
       "ru": "мужчина"
@@ -735562,7 +735562,7 @@
     "form": "ЩӀалэ",
     "partOfSpeech": "noun",
     "translations": {
-      "tr": "Genç, delikanlı",
+      "tr": "genç erkek",
       "ar": "شاب",
       "en": "i the young man, the guy",
       "ru": "i  юноша, парень"
@@ -735705,7 +735705,7 @@
     "form": "ЩӀыгу",
     "partOfSpeech": "noun",
     "translations": {
-      "tr": "Yer, ülke",
+      "tr": "yer, toprak",
       "en": "Black earth",
       "ru": "Чернозем"
     },
@@ -737142,7 +737142,7 @@
     "partOfSpeech": "noun",
     "conceptId": "DEMİR",
     "translations": {
-      "tr": "DEMİR",
+      "tr": "demir",
       "en": "Iron",
       "ru": "Железо"
     },
@@ -739355,7 +739355,7 @@
     "partOfSpeech": "noun",
     "conceptId": "AYAK",
     "translations": {
-      "tr": "AYAK",
+      "tr": "ayak",
       "en": "Foot",
       "ru": "Нога",
       "ar": "القَدم (قدم الرِجْل)، الرِِجل"
@@ -739435,7 +739435,7 @@
     "partOfSpeech": "noun",
     "conceptId": "OVA",
     "translations": {
-      "tr": "Çember",
+      "tr": "ayak tabanı",
       "en": "Sole",
       "ru": "Подошва",
       "ar": "أخمص القدم/ أرض (الغرفة مثلاً)/ منخفض، وهدة"
@@ -739616,7 +739616,7 @@
     "partOfSpeech": "noun",
     "conceptId": "ÇORAP",
     "translations": {
-      "tr": "Parmak",
+      "tr": "çorap",
       "ar": "جراب (جوارب)، كلسات",
       "en": "stocking, socks",
       "ru": "чулок, носок"
@@ -740300,7 +740300,7 @@
     "partOfSpeech": "noun",
     "conceptId": "ON",
     "translations": {
-      "tr": "ON",
+      "tr": "on",
       "en": "Ten",
       "ru": "Десять",
       "ar": "عشرة"
@@ -740561,7 +740561,7 @@
     "partOfSpeech": "noun",
     "conceptId": "SIRT",
     "translations": {
-      "tr": "clam",
+      "tr": "sırt",
       "en": "Spine, back",
       "ru": "Спина; позвоночник",
       "ar": "الظهر (الانسان وغيره)/ سلسلة (جبلية)"
@@ -740996,7 +740996,7 @@
     "partOfSpeech": "noun",
     "conceptId": "KULAK",
     "translations": {
-      "tr": "KULAK",
+      "tr": "kulak",
       "en": "Ear",
       "ru": "Ухо",
       "ar": "أذن"
@@ -741150,7 +741150,7 @@
     "partOfSpeech": "noun",
     "conceptId": "ELLİ",
     "translations": {
-      "tr": "ELLİ",
+      "tr": "elli",
       "en": "Fifty",
       "ru": "Пятьдесят",
       "ar": "خمسين"
@@ -741473,7 +741473,7 @@
     "partOfSpeech": "noun",
     "conceptId": "ARAP",
     "translations": {
-      "tr": "ARAP",
+      "tr": "siyah",
       "en": "Black",
       "ru": "Черный",
       "ar": "أسود"
@@ -750222,7 +750222,7 @@
     "conceptId": "KAVRAM_ЗЕМЛЯ",
     "translations": {
       "ru": "земля",
-      "tr": "HUMUS",
+      "tr": "toprak",
       "en": "Humus"
     },
     "ipa": "/ɕʼǝgʷɬ/",
@@ -753283,7 +753283,7 @@
     "conceptId": "KAVRAM_ЛИЧИНКА",
     "translations": {
       "ru": "личинка",
-      "tr": "BIT",
+      "tr": "böcek",
       "en": "worm; larva"
     },
     "ipa": "/ħɐpʼatsʼɐ/",
@@ -760183,7 +760183,7 @@
     "conceptId": "KAVRAM_КОРИЧНЕВЫЙ",
     "translations": {
       "ru": "коричневый",
-      "tr": "Kahverengi",
+      "tr": "kahverengi",
       "en": "brown"
     },
     "ipa": "/q͡χwɐɕǝnǝfɐ/",
@@ -772150,7 +772150,7 @@
     "conceptId": "KAVRAM_ХИЩНЫЙ ЗВЕРЬ",
     "translations": {
       "ru": "хищный зверь",
-      "tr": "canavar",
+      "tr": "hayvan",
       "ar": "وحش",
       "en": "beast of prey"
     },
@@ -782506,7 +782506,7 @@
     "conceptId": "KAVRAM_ПЛОД КАЛИНЫ",
     "translations": {
       "ru": "плод калины",
-      "tr": "GIREBOLU",
+      "tr": "kartopu",
       "en": "viburnum fruit"
     },
     "ipa": "/zɐrǝdʒɐ/",
@@ -785759,7 +785759,7 @@
     "conceptId": "KAVRAM_РАСТЕНИЕ",
     "translations": {
       "ru": "растение",
-      "tr": "BİTKİ",
+      "tr": "bitki",
       "ar": "نبات",
       "en": "plant"
     },
@@ -786084,7 +786084,7 @@
     "conceptId": "KAVRAM_МЯСО",
     "translations": {
       "ru": "мясо",
-      "tr": "BEN",
+      "tr": "kas",
       "en": "Flesh",
       "ar": "شامة، خال (علامة مميزة)"
     },
@@ -790235,7 +790235,7 @@
     "conceptId": "KAVRAM_ХЬЭПЦӀИЙР ӀУАХЫЖ",
     "translations": {
       "ru": "хьэпцӏийр ӏуахыж",
-      "tr": "ÇAVDAR",
+      "tr": "arpa",
       "en": "Rye"
     },
     "ipa": "/ħɐptsʼij/",
@@ -793886,7 +793886,7 @@
     "conceptId": "KAVRAM_МЕСТОИМЕНИЕ",
     "translations": {
       "ru": "местоимение",
-      "tr": "adil",
+      "tr": "zamir",
       "en": "gram. pronoun"
     },
     "ipa": "/tsʼɐpapɕʼɐ/",
@@ -808542,7 +808542,7 @@
     "conceptId": "KAVRAM_ТЕЛО",
     "translations": {
       "ru": "тело",
-      "tr": "ten",
+      "tr": "vücut, ten",
       "en": "body"
     },
     "ipa": "/ɕʼǝfɐ/",
@@ -860071,7 +860071,7 @@
     "conceptId": "KAVRAM_ГРАНИТ",
     "translations": {
       "ru": "гранит",
-      "tr": "GRANDÜK",
+      "tr": "granit",
       "ar": "غرانيت (صخر)",
       "en": "granite"
     },
@@ -863115,7 +863115,7 @@
     "conceptId": "KAVRAM_ОЛОВО",
     "translations": {
       "ru": "олово",
-      "tr": "NIKEL",
+      "tr": "bakır",
       "en": "Tin-plate"
     },
     "ipa": "/ʁʷxw/",
@@ -930139,7 +930139,7 @@
     "conceptId": "KAVRAM_ЧЕРЕПАХА",
     "translations": {
       "ru": "черепаха",
-      "tr": "KAPLUMBAGA",
+      "tr": "kaplumbağa",
       "en": "Tortoise",
       "ar": "سلحفاة"
     },
@@ -960149,7 +960149,7 @@
     "conceptId": "KAVRAM_ПРЕФИКС",
     "translations": {
       "ru": "префикс",
-      "tr": "OLUMSUZLUK",
+      "tr": "önek",
       "ar": "سابقة الكلمات (قواعد، لغة)",
       "en": "g. prefix"
     },
@@ -963790,7 +963790,7 @@
     "conceptId": "KAVRAM_СУФФИКС",
     "translations": {
       "ru": "суффикс",
-      "tr": "son ek",
+      "tr": "sonek",
       "ar": "لاحقة",
       "en": "gram. suffix"
     },
@@ -1000344,7 +1000344,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ТОРФ",
     "translations": {
-      "ru": "торф"
+      "ru": "торф",
+      "tr": "turba"
     },
     "ipa": "/ʃɐdgʷartsɐ/",
     "rootIds": [],
@@ -1019678,5 +1019679,621 @@
     },
     "pos": "UNKNOWN",
     "notes": "[MANUEL] 200 kelimelik liste"
+  },
+  {
+    "form": "бэлагъэ",
+    "translations": {
+      "tr": "tembellik"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] 200 liste kalan"
+  },
+  {
+    "form": "бэлиц",
+    "translations": {
+      "tr": "doktor"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] 200 liste kalan"
+  },
+  {
+    "form": "гъуазэпсыхьын",
+    "translations": {
+      "tr": "bilinçlendirmek"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[SOZLUK] gъu analizi"
+  },
+  {
+    "form": "гъуап",
+    "translations": {
+      "tr": "kol, kolluk (elbise)"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[SOZLUK] gъu analizi"
+  },
+  {
+    "form": "гъуапчэ",
+    "translations": {
+      "tr": "sarımsı"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[SOZLUK] gъu analizi"
+  },
+  {
+    "form": "гъуаргу",
+    "translations": {
+      "tr": "tak tak (kapı sesi)"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[SOZLUK] gъu analizi"
+  },
+  {
+    "form": "гъубдж",
+    "translations": {
+      "tr": "salı"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[SOZLUK] gъu analizi"
+  },
+  {
+    "form": "гъугъэр",
+    "translations": {
+      "tr": "kurumuş"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[SOZLUK] gъu analizi"
+  },
+  {
+    "form": "гъуи",
+    "translations": {
+      "tr": "seyrek orman"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[SOZLUK] gъu analizi"
+  },
+  {
+    "form": "гъуйсый",
+    "translations": {
+      "tr": "yoksul, aç"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[SOZLUK] gъu analizi"
+  },
+  {
+    "form": "гъукӀагъэ",
+    "translations": {
+      "tr": "demircilik yaptı"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[SOZLUK] gъu analizi"
+  },
+  {
+    "form": "гъукӀагъэр",
+    "translations": {
+      "tr": "demircilik yapan"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[SOZLUK] gъu analizi"
+  },
+  {
+    "form": "гъукӀакӀэ",
+    "translations": {
+      "tr": "demircilik gibi"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[SOZLUK] gъu analizi"
+  },
+  {
+    "form": "гъумт1ымыгъэ",
+    "translations": {
+      "tr": "homurdanma"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[SOZLUK] gъu analizi"
+  },
+  {
+    "form": "гъумыгъугъэ",
+    "translations": {
+      "tr": "homurdandı"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[SOZLUK] gъu analizi"
+  },
+  {
+    "form": "гъундж",
+    "translations": {
+      "tr": "ayna"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[SOZLUK] gъu analizi"
+  },
+  {
+    "form": "гъунджэшху",
+    "translations": {
+      "tr": "büyük ayna"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[SOZLUK] gъu analizi"
+  },
+  {
+    "form": "гъунэнчъ",
+    "translations": {
+      "tr": "sonsuz, sınırsız"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[SOZLUK] gъu analizi"
+  },
+  {
+    "form": "гъупчъ",
+    "translations": {
+      "tr": "orak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[SOZLUK] gъu analizi"
+  },
+  {
+    "form": "жзэгу",
+    "translations": {
+      "tr": "ocak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Domanic PDF"
+  },
+  {
+    "form": "бжэгу",
+    "translations": {
+      "tr": "avlu"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Domanic PDF"
+  },
+  {
+    "form": "щӀыфэгу",
+    "translations": {
+      "tr": "yeryüzü"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Domanic PDF"
+  },
+  {
+    "form": "хэгъогу",
+    "translations": {
+      "tr": "memleket, vatan"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Domanic PDF"
+  },
+  {
+    "form": "хэмыт",
+    "translations": {
+      "tr": "içinde olmayan"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Domanic PDF"
+  },
+  {
+    "form": "хэтэгъо",
+    "translations": {
+      "tr": "başıboş dolaşan"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Domanic PDF"
+  },
+  {
+    "form": "хэӀатын",
+    "translations": {
+      "tr": "bir şeyi başka şey içinde tutmak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Domanic PDF"
+  },
+  {
+    "form": "хэӀаӀатын",
+    "translations": {
+      "tr": "birini ortalıkta bırakmak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Domanic PDF"
+  },
+  {
+    "form": "хэмэ",
+    "translations": {
+      "tr": "yabancı"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Domanic PDF"
+  },
+  {
+    "form": "хэсэ",
+    "translations": {
+      "tr": "cemiyet, toplum"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Domanic PDF"
+  },
+  {
+    "form": "хьэдирыхэ",
+    "translations": {
+      "tr": "ölüler yurdu, ahiret"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Domanic PDF"
+  },
+  {
+    "form": "хэӀэ",
+    "translations": {
+      "tr": "yer, toprak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Domanic PDF"
+  },
+  {
+    "form": "хэщэ",
+    "translations": {
+      "tr": "bahçe, bostan"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Domanic PDF"
+  },
+  {
+    "form": "хэщтэн",
+    "translations": {
+      "tr": "toprağa dikmek"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Domanic PDF"
+  },
+  {
+    "form": "хэгъэн",
+    "translations": {
+      "tr": "topraktan çıkmak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Domanic PDF"
+  },
+  {
+    "form": "хэгъутын",
+    "translations": {
+      "tr": "toprağı bulamak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Domanic PDF"
+  },
+  {
+    "form": "хэкӀурийэн",
+    "translations": {
+      "tr": "yere yuvarlanmak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Domanic PDF"
+  },
+  {
+    "form": "хэзэрыхын",
+    "translations": {
+      "tr": "toprağa karışmak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Domanic PDF"
+  },
+  {
+    "form": "хэгъодэн",
+    "translations": {
+      "tr": "yeryüzünde kaybolmak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Domanic PDF"
+  },
+  {
+    "form": "хэӀэжын",
+    "translations": {
+      "tr": "dünya kalabalığına girmek"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Domanic PDF"
+  },
+  {
+    "form": "хирих",
+    "translations": {
+      "tr": "altışar"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Domanic PDF"
+  },
+  {
+    "form": "щых",
+    "translations": {
+      "tr": "altı yüz"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Domanic PDF"
+  },
+  {
+    "form": "хэнэ",
+    "translations": {
+      "tr": "altıda bir"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Domanic PDF"
+  },
+  {
+    "form": "псалъэзэпха",
+    "translations": {
+      "tr": "birleşik kelime"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[PDF] Abazov + Klepinina"
+  },
+  {
+    "form": "макъ дэкIуашэ",
+    "translations": {
+      "tr": "sessiz harf"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[PDF] Abazov + Klepinina"
+  },
+  {
+    "form": "щIыIэцIэ",
+    "translations": {
+      "tr": "isim"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[PDF] Abazov + Klepinina"
+  },
+  {
+    "form": "бжыгъэцIэ",
+    "translations": {
+      "tr": "sayı sıfatı"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[PDF] Abazov + Klepinina"
+  },
+  {
+    "form": "склоненэ",
+    "translations": {
+      "tr": "çekim"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[PDF] Abazov + Klepinina"
+  },
+  {
+    "form": "нэрыплъыхь",
+    "translations": {
+      "tr": "ufuk"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[PDF] Abazov + Klepinina"
+  },
+  {
+    "form": "къэблэмэ",
+    "translations": {
+      "tr": "pusula"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[PDF] Abazov + Klepinina"
+  },
+  {
+    "form": "жыг хадэ",
+    "translations": {
+      "tr": "meyve bahçesi"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[PDF] Abazov + Klepinina"
+  },
+  {
+    "form": "мывэ фIамыщI",
+    "translations": {
+      "tr": "kömür"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[PDF] Abazov + Klepinina"
+  },
+  {
+    "form": "сэху мывэ",
+    "translations": {
+      "tr": "kireç taşı"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[PDF] Abazov + Klepinina"
+  },
+  {
+    "form": "мраморыр",
+    "translations": {
+      "tr": "mermer"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[PDF] Abazov + Klepinina"
+  },
+  {
+    "form": "мелыр",
+    "translations": {
+      "tr": "tebeşir"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[PDF] Abazov + Klepinina"
+  },
+  {
+    "form": "пкIауэлъатэ",
+    "translations": {
+      "tr": "yusufçuk"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[PDF] Abazov + Klepinina"
+  },
+  {
+    "form": "кхъуэпIащхъуэ",
+    "translations": {
+      "tr": "yaban domuzu"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[PDF] Abazov + Klepinina"
+  },
+  {
+    "form": "чэтэнудз",
+    "translations": {
+      "tr": "keten"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[PDF] Abazov + Klepinina"
+  },
+  {
+    "form": "шыгъулды",
+    "translations": {
+      "tr": "yaban mersini"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[PDF] Abazov + Klepinina"
+  },
+  {
+    "form": "купкъыкI",
+    "translations": {
+      "tr": "kızılcık"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[PDF] Abazov + Klepinina"
+  },
+  {
+    "form": "плъыфэхэр",
+    "translations": {
+      "tr": "renkler"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[PDF] Circassian Essentials (Nassip)"
+  },
+  {
+    "form": "балищIэ",
+    "translations": {
+      "tr": "bordo"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[PDF] Circassian Essentials (Nassip)"
+  },
+  {
+    "form": "гъуэжьыплъыжьыфэ",
+    "translations": {
+      "tr": "turuncu"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[PDF] Circassian Essentials (Nassip)"
+  },
+  {
+    "form": "щырыкъу",
+    "translations": {
+      "tr": "bot"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[PDF] Circassian Essentials (Nassip)"
+  },
+  {
+    "form": "къуэншыбэ",
+    "translations": {
+      "tr": "büstiyer"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[PDF] Circassian Essentials (Nassip)"
+  },
+  {
+    "form": "пылэ",
+    "translations": {
+      "tr": "şapka"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[PDF] Circassian Essentials (Nassip)"
+  },
+  {
+    "form": "цакъуэ",
+    "translations": {
+      "tr": "ceket"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[PDF] Circassian Essentials (Nassip)"
+  },
+  {
+    "form": "Iэлджан",
+    "translations": {
+      "tr": "kol"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[PDF] Circassian Essentials (Nassip)"
+  },
+  {
+    "form": "щIагъыщIэлъ",
+    "translations": {
+      "tr": "iç çamaşırı"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[PDF] Circassian Essentials (Nassip)"
+  },
+  {
+    "form": "бэхъщэ",
+    "translations": {
+      "tr": "cüzdan"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[PDF] Circassian Essentials (Nassip)"
+  },
+  {
+    "form": "лъэгуанджэ",
+    "translations": {
+      "tr": "diz"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[PDF] Circassian Essentials (Nassip)"
+  },
+  {
+    "form": "дамэщхьэ",
+    "translations": {
+      "tr": "omuz"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[PDF] Circassian Essentials (Nassip)"
+  },
+  {
+    "form": "жьапхъэ",
+    "translations": {
+      "tr": "süpürge"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[PDF] Circassian Essentials (Nassip)"
+  },
+  {
+    "form": "къампас",
+    "translations": {
+      "tr": "pense"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[PDF] Circassian Essentials (Nassip)"
+  },
+  {
+    "form": "цуох",
+    "translations": {
+      "tr": "öküz"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[PDF] Circassian Essentials (Nassip)"
+  },
+  {
+    "form": "былъэ",
+    "translations": {
+      "tr": "boğa"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[PDF] Circassian Essentials (Nassip)"
+  },
+  {
+    "form": "хъэндыркъуакъуэ",
+    "translations": {
+      "tr": "kurbağa"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[PDF] Circassian Essentials (Nassip)"
+  },
+  {
+    "form": "япэрэ",
+    "translations": {
+      "tr": "birinci"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[PDF] Circassian Essentials (Nassip)"
   }
 ]
