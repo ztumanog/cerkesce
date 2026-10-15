@@ -47211,7 +47211,7 @@
     "notes": "Corpus v1.0 (freq: 172, lang: ady, source: 0.Ady-Ady_AIG)",
     "isLemma": true,
     "translations": {
-      "tr": "",
+      "tr": "nasıl, ne kadar",
       "ru": "СЫДЭУ нареч.\n\t1. как, каким образом. Сыдэу хъугъа? Сыдэу пшӀына адэ.\n\t2. какой. ЫгъэшӀйгъоу, игу къеоу къаӀоу мэхъу. Сыдэу уцӀыф гъэшӀэгъон шъыу. Сыдэу удела?!"
     },
     "rootIds": [
@@ -48458,7 +48458,7 @@
     "translations": {
       "ru": "хьэмэ. ◊ <font color='slategra",
       "en": "or (other)",
-      "tr": ""
+      "tr": "yoksa, yahut, veya"
     },
     "subConceptId": "OR_OPTION",
     "taxonomyFamily": "Dil & Gramer",
@@ -51125,7 +51125,7 @@
     "translations": {
       "ru": "и ( соединяет опр",
       "en": "and (links certain tense forms of the verb)",
-      "tr": ""
+      "tr": "hatta, bile, -de/da"
     },
     "rootIds": [
       "R-ABI"
@@ -53660,7 +53660,7 @@
     "notes": "Corpus v1.0 (freq: 90, lang: ady, source: 0.Ady-Ady_AIG)",
     "isLemma": true,
     "translations": {
-      "tr": "",
+      "tr": "işte o, tam da o",
       "ar": "ذلك، تلك",
       "ru": "ДЖА / джа. ЦӀэп. Тот. ГущыӀэрэм ежь пэблагъэу щымытыр зэригъэунэфрэ гущыӀ. Джа пшъашъэр ары зыфэсӀуагъэр."
     },
@@ -55046,7 +55046,7 @@
     "translations": {
       "ru": "междом",
       "en": "shoo! shoo! (a cry used to chase away chickens)",
-      "tr": ""
+      "tr": "kardeşi (erkek)"
     },
     "rootIds": [
       "R-YSH"
@@ -56043,7 +56043,7 @@
     "translations": {
       "en": "a few, several, not many",
       "ru": "несколько",
-      "tr": "BİRKAÇ",
+      "tr": "",
       "ar": "عدة"
     },
     "literalMeaningSource": "translations.tr (yuksek)"
@@ -66595,7 +66595,7 @@
     "translations": {
       "ru": "мозд. диалект название национального танца /",
       "en": "name of a Circassian national dance",
-      "tr": ""
+      "tr": "hazır olarak, durmadan"
     },
     "subConceptId": "DANCE_FOLK",
     "taxonomyFamily": "Sanat & Kültür",
@@ -67928,7 +67928,7 @@
     "translations": {
       "ru": "{начиная} от",
       "en": "[beginning] from..., with...",
-      "tr": ""
+      "tr": "başlayarak, -den itibaren"
     },
     "rootIds": [
       "R-NE"
@@ -69966,7 +69966,7 @@
     "ipa": "/fiwsǝʁ/",
     "translations": {
       "ru": "ФИУСЫГЪ (феусы) лъы.1., фэшГ.\n\t1. назвал, -а, -о (его); дал ему имя. Щэ фишЬыгъ. Пшъашъэм Нэфисэт цӀэу .фиусыгъ.\n\t2. сочинил, -а, -о> про него. Фызэхилъхьагъ. Орэд фиусыгъ. ♦ ПцӀы фиусыгъ. — обманул, ",
-      "tr": ""
+      "tr": "bostanınız, yazdığınız"
     }
   },
   {
@@ -73265,7 +73265,7 @@
     "ipaSource": "root-derived",
     "translations": {
       "ru": "плъыжь наӀуэ",
-      "tr": ""
+      "tr": "al, kırmızı"
     }
   },
   {
@@ -74956,7 +74956,7 @@
     "ipaSource": "root-derived",
     "translations": {
       "ru": "РИТЫГЪ (реты) лъыӀ.\n\t1. подарил, -а, -о (ему). Тэу ритыгъ. Иблагъэ чэм ритыгъ.\n\t2. дал, -а, -о (на время). Хьафэу ритыгъ. Еджэнэу тхылъ ритыгъ. Чэмым Ӏус ритыгъ.",
-      "tr": ""
+      "tr": "ona verdi"
     }
   },
   {
@@ -76112,7 +76112,7 @@
     "isLemma": true,
     "translations": {
       "ru": "лъым. <div style='margin",
-      "tr": ""
+      "tr": "orada oturdu, içindeydi"
     },
     "ipa": "/dɐ'sǝn/",
     "ipaSource": "root-derived"
@@ -78360,7 +78360,7 @@
     "ipaSource": "root-derived",
     "translations": {
       "ru": "БОСТОН / бостон. Бостон (костюм- ная ткань). КӀэкозэпылъ зыхашӀыкӀырэ цы шэкӀ дэгъу лъэпкъ. Бостон кӀэкозэпылъ язгъэшӀыгъ.",
-      "tr": ""
+      "tr": "yünlü elbise kumaşı (boston)"
     }
   },
   {
@@ -82620,7 +82620,7 @@
     "ipaSource": "root-derived",
     "translations": {
       "ru": "КЪЫГЪЭЗЭЖЬЫГЪ (къегъэзэ- жьы) лъыӀ. вернулся, -лась, -лось (сюда). КъэкӀожьыгъ. КӀалэу къа- лэм ежьагъэм къыгъэзэжьыгъ. Машинам, къыгъэзэжьыгъ.",
-      "tr": ""
+      "tr": "geri döndürdü"
     }
   },
   {
@@ -84015,7 +84015,7 @@
     "isLemma": true,
     "translations": {
       "ru": "сами Шъор-шъорэу шъулэжьы <div",
-      "tr": ""
+      "tr": "şarıl şarıl"
     },
     "rootIds": [
       "R-SHO"
@@ -85493,7 +85493,7 @@
     "ipa": "/zɐ'wǝɮ/",
     "translations": {
       "ru": "ЗАУЛЭРЭ. Нареч. Некоторое время. ТӀэкӀурэ, охътэ мыбащэм къыкӀоцӀ. Мафэм заулэрэ тызэӀукӀэу къыхэкӀы (КӀэрэщэ Т.).",
-      "tr": ""
+      "tr": "birkaç kez, bir süre"
     }
   },
   {
@@ -95128,7 +95128,7 @@
     "translations": {
       "ru": "слово, которое употребляется с целью подчеркнуть какие-л",
       "en": "a word used to emphasize features of sb or sth",
-      "tr": ""
+      "tr": "iyileşmiş olarak"
     },
     "rootIds": [
       "R-SHE2"
@@ -97994,7 +97994,7 @@
     "translations": {
       "en": "Houri",
       "ru": "гурия",
-      "tr": ""
+      "tr": "anka kuşu, süt kreması"
     },
     "examples": [
       "*Хур хъыджэбз."
@@ -99335,7 +99335,7 @@
     "isLemma": true,
     "translations": {
       "ru": "сам, -а, -о Ор-орэу зэгъафэ <di",
-      "tr": ""
+      "tr": "kendi kendine, ayrı ayrı"
     },
     "rootIds": [
       "R-EZH"
@@ -99530,7 +99530,7 @@
     "translations": {
       "ru": "небольшое количество / Зыкъом, зыбжанэ",
       "en": "several, a little, a few, a small quantity",
-      "tr": "BİRKAÇ",
+      "tr": "",
       "trSource": "en->tr koprusu (orta)",
       "ar": "عدة، بضع (بين الواحد والثلاثة)"
     },
@@ -100244,7 +100244,7 @@
     "translations": {
       "en": "several times, a few times",
       "ru": "несколько раз",
-      "tr": "BİRKAÇ"
+      "tr": ""
     }
   },
   {
@@ -104034,7 +104034,7 @@
     "translations": {
       "en": "in front",
       "ru": "гупэм Type: preposition Definitions: 1. впереди",
-      "tr": ""
+      "tr": "ön tarafta, göğüste"
     }
   },
   {
@@ -104788,7 +104788,7 @@
     "translations": {
       "ru": "огорчить <font co",
       "en": "upset sb; do sth unpleasant to sb; offend sb, to harm sb or sth (for example, about smoking)",
-      "tr": ""
+      "tr": "hücum etmek, saldırmak"
     },
     "rootIds": [
       "R-GU"
@@ -106020,7 +106020,7 @@
     "translations": {
       "ru": "незадолго до чего-л",
       "en": "shortly before or shortly after sth",
-      "tr": ""
+      "tr": "son zamanlarda"
     },
     "rootIds": [
       "R-DZHE"
@@ -106130,7 +106130,7 @@
     "translations": {
       "ru": "наступить, стать во",
       "en": "step on or stand in sth from the front or from above, take up some area of work, engage in some kind of work",
-      "tr": ""
+      "tr": "karşı durmak, direnmek"
     },
     "subConceptId": "BLOCK_WAY",
     "taxonomyFamily": "Eylem & Fiziksel",
@@ -106742,7 +106742,7 @@
     "translations": {
       "ru": "столько раз, так много",
       "en": "that many times, so many times; as many times (as); that long, so long",
-      "tr": ""
+      "tr": "o kadar çok, defalarca"
     },
     "rootIds": [
       "R-A"
@@ -108551,7 +108551,7 @@
     "ipa": "/wɐn/",
     "translations": {
       "ru": "псыблэ",
-      "tr": ""
+      "tr": "iz, peş, ardından"
     }
   },
   {
@@ -109325,7 +109325,7 @@
     "translations": {
       "ru": "потянуть, натянуть",
       "en": "pull sth down, lower sth, greedily drink sth, suppress in yourself any feelings, restrain yourself",
-      "tr": ""
+      "tr": "aşağı süzülmek"
     },
     "rootIds": [
       "R-KHY"
@@ -113835,7 +113835,7 @@
     "translations": {
       "ru": "{я} сам, {я} один, {я} самостоятельно / Си",
       "en": "I myself, I alone, only I, I independently",
-      "tr": ""
+      "tr": "bizzat ben, tek başıma"
     },
     "rootIds": [
       "R-SER"
@@ -115739,7 +115739,7 @@
     "translations": {
       "ru": "посмотреть вверх</di",
       "en": "look up, look upwards, take an example from sb",
-      "tr": ""
+      "tr": "yukarı bakmak"
     }
   },
   {
@@ -117018,7 +117018,7 @@
     "isLemma": true,
     "translations": {
       "ru": "больше чем следует",
-      "tr": ""
+      "tr": "çoğu kez, sık sık"
     },
     "rootIds": [
       "R-SHE"
@@ -121408,7 +121408,7 @@
     "isLemma": true,
     "translations": {
       "ru": "лъым. был, находился, -лась",
-      "tr": ""
+      "tr": "içindeydi, gruptaydı"
     },
     "rootIds": [
       "R-KHET"
@@ -123676,7 +123676,7 @@
     "translations": {
       "en": "greedily",
       "ru": "жадно",
-      "tr": ""
+      "tr": "umursamazca, kayıtsızca"
     }
   },
   {
@@ -124549,7 +124549,7 @@
     "translations": {
       "ru": "сколько раз / Сыт и бжыгъэрэ? Дапщэрэ?",
       "en": "how many times?",
-      "tr": ""
+      "tr": "kaç kez, ne kadar sık"
     },
     "rootIds": [
       "R-PSHA"
@@ -126575,7 +126575,7 @@
     "translations": {
       "ru": "куда там / Дауэ хъунт",
       "en": "wherever; it's not likely, fat chance",
-      "tr": ""
+      "tr": "neresi olursa olsun"
     }
   },
   {
@@ -127814,7 +127814,7 @@
     "isLemma": true,
     "translations": {
       "ru": "зэм.</fon",
-      "tr": ""
+      "tr": "içinde yatan şey"
     },
     "rootIds": [
       "R-LHE"
@@ -129412,7 +129412,7 @@
     "translations": {
       "en": "limitlessly, infinitely, boundlessly",
       "ru": "безгранично, беспредельно",
-      "tr": ""
+      "tr": "sınırsızca, sonsuzca"
     }
   },
   {
@@ -130130,7 +130130,7 @@
     "translations": {
       "ru": "в состоянии опьянения, в пьяном виде / Фад",
       "en": "in a condition of drunkenness, drunkenly, in an intoxicated way or manner",
-      "tr": ""
+      "tr": "neşeyle, keyifle"
     },
     "examples": [
       "*Чэфу жеин."
@@ -131046,7 +131046,7 @@
     "translations": {
       "ru": "идентично / Хуэдэ дыдэу, ещхьыпсу",
       "en": "identically, in exactly the same manner",
-      "tr": ""
+      "tr": "birebir aynı şekilde"
     }
   },
   {
@@ -136415,7 +136415,7 @@
     "translations": {
       "ru": "бесчисленно <div style='margin-left",
       "en": "countlessly, innumerably",
-      "tr": ""
+      "tr": "sayısızca, hesapsızca"
     },
     "rootIds": [
       "R-BZHY"
@@ -138469,7 +138469,7 @@
     "translations": {
       "ru": "of жэн | of жын",
       "en": "of жэн",
-      "tr": ""
+      "tr": "akar, akıcıdır"
     },
     "rootIds": [
       "R-ZHA"
@@ -140626,7 +140626,7 @@
     "isLemma": true,
     "translations": {
       "ru": "лъым. <div style='marg",
-      "tr": ""
+      "tr": "yola çıktı, başladı"
     },
     "rootIds": [
       "R-ZHA"
@@ -141676,7 +141676,7 @@
     "isLemma": true,
     "translations": {
       "ru": "мы сами Тэр-тэрэу дгъэпсыгъэ",
-      "tr": ""
+      "tr": "sırayla, birer birer"
     },
     "rootIds": [
       "R-SHY"
@@ -376367,7 +376367,7 @@
     "conceptId": "GRANDMOTHER",
     "ipa": "/zǝ'bᶎɑ:nɐ/",
     "translations": {
-      "tr": "BİRKAÇ"
+      "tr": ""
     }
   },
   {
@@ -476865,7 +476865,7 @@
     "translations": {
       "ru": "очень похожий , вылитый / Хуэдэкъа",
       "en": "very similar to (about sb or sth), the spitting image of (about sb.)",
-      "tr": ""
+      "tr": "ALACA"
     },
     "examples": [
       "*ЩӀалэ цӀыкӀур и адэм ещхьыркъабзэщ."
@@ -480229,7 +480229,7 @@
     "translations": {
       "ru": "осмотреть, рассмотреть пристально кого-что-л",
       "en": "inspect or examine sb or sth closely (on all sides)",
-      "tr": ""
+      "tr": "BÜSBÜTÜN"
     },
     "rootIds": [
       "R-PE"
@@ -551301,7 +551301,7 @@
     "translations": {
       "en": "pass by (walking, riding or driving) very near sb or sth",
       "ru": "очень близко пройти мимо кого-чего-л.",
-      "tr": ""
+      "tr": "ALACA"
     },
     "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6b/%D0%91748%D0%B1%D0%BB%D1%8D%D1%82%D1%85%D1%8A%D1%83%D0%BD.ogg"
   },
@@ -553021,7 +553021,7 @@
     "translations": {
       "en": "very small, cramped (about a room)",
       "ru": "очень тесный (о помещении)",
-      "tr": ""
+      "tr": "ALACA"
     },
     "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/5/53/%D0%91194%D0%B1%D1%8D%D0%BD%D0%B7%D1%8D%D0%B2.ogg"
   },
@@ -657670,7 +657670,7 @@
     "translations": {
       "en": "jutting brows || with jutting brows",
       "ru": "слишком выпуклые надбровья || с очень выпуклыми надбровьями",
-      "tr": ""
+      "tr": "ALACA"
     }
   },
   {
@@ -662732,7 +662732,7 @@
     "translations": {
       "en": "look forward to sth, really want or desire sth.",
       "ru": "с нетерпением ждать чего-л., очень хотеть, желать чего-л.",
-      "tr": ""
+      "tr": "ALACA"
     }
   },
   {
@@ -666262,7 +666262,7 @@
     "translations": {
       "en": "a special trough with water for hardening or tempering iron products",
       "ru": "специальная посуда с водой для закалки железных изделий",
-      "tr": ""
+      "tr": "Kapkacak"
     }
   },
   {
@@ -676992,7 +676992,7 @@
     "translations": {
       "en": "several times (literally: two or three times)",
       "ru": "несколько раз (букв. два-три раза)",
-      "tr": "BİRKAÇ"
+      "tr": ""
     }
   },
   {
@@ -687076,7 +687076,7 @@
     "translations": {
       "en": "collapse, crumble, break down, disintegrate or deteriorate fully or completely",
       "ru": "разрушиться полностью",
-      "tr": ""
+      "tr": "BÜSBÜTÜN"
     }
   },
   {
@@ -712548,7 +712548,7 @@
     "translations": {
       "en": "cover sb or sth completely (with sth dry and powdery or granular)",
       "ru": "покрыть, засыпать кого-что-л. полностью (о чем-л. сыпучем)",
-      "tr": ""
+      "tr": "BÜSBÜTÜN"
     }
   },
   {
@@ -719733,7 +719733,7 @@
     "translations": {
       "en": "хуабэ ~ : very hot",
       "ru": "◊ хуабэ вэх очень жаркий",
-      "tr": ""
+      "tr": "ALACA"
     }
   },
   {
@@ -720198,7 +720198,7 @@
     "translations": {
       "en": "къуахъуэ-псыхъуэр зэрихьу мэкӀий: he is shouting at the top of his voice (anxiously, repeatedly)",
       "ru": "◊ къуахъуэпсыхъуэр ззрихьэу мэкӀий кричит на всю долину (кричит очень громко и тревожно, повторяя свой крик).",
-      "tr": ""
+      "tr": "ALACA"
     }
   },
   {
@@ -723725,7 +723725,7 @@
     "ipa": "/watlt/",
     "translations": {
       "ru": "м. быбыжьыныгъ время отлёта птиц на юг къолэбзыухэр къыблэмкӀэ быбыжьынхэм иуахът ◊ жить на отлёте разг. пэчыжьэу щыӀэн",
-      "tr": ""
+      "tr": "yaşamak"
     }
   },
   {
@@ -751689,7 +751689,7 @@
     "conceptId": "KAVRAM_ЩХЬЭЦ БАРИНЭ",
     "translations": {
       "ru": "щхьэц баринэ",
-      "tr": ""
+      "tr": "Saç"
     },
     "ipa": "/zɐɕʼɐwtʼɐrɐza/",
     "rootIds": [],
@@ -767007,7 +767007,7 @@
     "translations": {
       "ru": "покрыться ржавчиной",
       "en": "nepereh. ch. rust, completely rust",
-      "tr": ""
+      "tr": "BÜSBÜTÜN"
     },
     "ipa": "/zɐɕʼɐwɬiеn/",
     "rootIds": [],
@@ -767228,7 +767228,7 @@
     "translations": {
       "ru": "раскиснуть",
       "en": "nepereh. ch. shall be melted completely",
-      "tr": ""
+      "tr": "BÜSBÜTÜN"
     },
     "ipa": "/zɐxɐwtsʼǝnǝħǝn/",
     "rootIds": [],
@@ -771509,7 +771509,7 @@
     "translations": {
       "ru": "ужасного состояния",
       "en": "to bring smth. down to an ugly, terrible state.",
-      "tr": ""
+      "tr": "ALACA"
     },
     "ipa": "/ħɐlɐtʃǝptsʼɐ/",
     "rootIds": [],
@@ -794548,7 +794548,7 @@
     "translations": {
       "ru": "очень кривой",
       "en": "very curve; quite uneven",
-      "tr": ""
+      "tr": "ALACA"
     },
     "ipa": "/ʔʷʃɐnaʃɐ/",
     "rootIds": [],
@@ -797000,7 +797000,7 @@
     "translations": {
       "ru": "сильно затупленный",
       "en": "much blunt, very goofy",
-      "tr": ""
+      "tr": "ALACA"
     },
     "ipa": "/dzagʷеj/",
     "rootIds": [],
@@ -800069,7 +800069,7 @@
     "translations": {
       "ru": "захватить",
       "en": "move. ch. take fully capture fill smth.",
-      "tr": ""
+      "tr": "BÜSBÜTÜN"
     },
     "ipa": "/zɐɕʼɐɕtɐn/",
     "rootIds": [],
@@ -807396,7 +807396,7 @@
     "translations": {
       "ru": "отменный",
       "en": "very good, excellent",
-      "tr": ""
+      "tr": "ALACA"
     },
     "ipa": "/fʼǝʔʷɐ/",
     "rootIds": [],
@@ -829034,7 +829034,7 @@
     "translations": {
       "ru": "живущий",
       "en": "living, existing for a long time; secular",
-      "tr": ""
+      "tr": "ALACA"
     },
     "ipa": "/nǝbʑrеj/",
     "rootIds": [],
@@ -830258,7 +830258,7 @@
     "translations": {
       "ru": "очень лёгкий",
       "en": "very easy",
-      "tr": ""
+      "tr": "ALACA"
     },
     "ipa": "/psǝnɕʼabzɐ/",
     "rootIds": [],
@@ -841102,7 +841102,7 @@
     "translations": {
       "ru": "отточить что-л",
       "en": "move. ch. greatly sharpened, to make a very sharp smth.",
-      "tr": ""
+      "tr": "ALACA"
     },
     "ipa": "/zɐɕʼɐɬǝkʼǝn/",
     "rootIds": [],
@@ -866118,7 +866118,7 @@
     "translations": {
       "ru": "очень горький",
       "en": "very bitter",
-      "tr": ""
+      "tr": "ALACA"
     },
     "ipa": "/dǝdʒzɐz/",
     "rootIds": [],
@@ -871391,7 +871391,7 @@
     "translations": {
       "ru": "очень противный",
       "en": "very nasty .",
-      "tr": ""
+      "tr": "ALACA"
     },
     "ipa": "/жaʁʷɐzɐrabg/",
     "rootIds": [],
@@ -875972,7 +875972,7 @@
     "conceptId": "KAVRAM_НЕСКОЛЬКО",
     "translations": {
       "ru": "несколько",
-      "tr": "BİRKAÇ",
+      "tr": "",
       "en": "a few"
     },
     "ipa": "/zǝpɬʼǝtxw/",
@@ -875988,7 +875988,7 @@
     "conceptId": "KAVRAM_НЕСКОЛЬКО",
     "translations": {
       "ru": "несколько",
-      "tr": "BİRKAÇ",
+      "tr": "",
       "en": "a few"
     },
     "ipa": "/tʷʼɕ/",
@@ -882383,7 +882383,7 @@
     "translations": {
       "ru": "ар хуэгъэхъеякъым",
       "en": "nepereh. ch. pull smth. several times in a row",
-      "tr": "BİRKAÇ"
+      "tr": ""
     },
     "ipa": "/zɐkʼɐɬеʔɐn/",
     "rootIds": [],
@@ -887695,7 +887695,7 @@
     "translations": {
       "ru": "мэракӏуэр зэщӏэщыпэн",
       "en": "move. ch. collect all smth.",
-      "tr": ""
+      "tr": "BÜSBÜTÜN"
     },
     "ipa": "/zɐɕʼɐɕǝpɐn/",
     "rootIds": [],
@@ -893268,7 +893268,8 @@
     "conceptId": "KAVRAM_КХЪЭДЭКӀЫМ ХЭТЫН",
     "translations": {
       "ru": "кхъэдэкӏым хэтын",
-      "en": "rel. wake with the reading of the koran, arranged in a cemetery"
+      "en": "rel. wake with the reading of the koran, arranged in a cemetery",
+      "tr": "Mezar"
     },
     "ipa": "/q͡χɐdɐkʼ/",
     "rootIds": [],
@@ -908834,7 +908835,7 @@
     "translations": {
       "ru": "хьэнтхъупс пӏащӏабзэ",
       "en": "i is very thin, watery",
-      "tr": ""
+      "tr": "ALACA"
     },
     "ipa": "/pʼaɕʼabzɐ/",
     "rootIds": [],
@@ -920402,7 +920403,7 @@
     "translations": {
       "ru": "очень бедный",
       "en": "very poor",
-      "tr": ""
+      "tr": "ALACA"
     },
     "ipa": "/faqǝrɐpɐɕmɐn/",
     "rootIds": [],
@@ -983747,7 +983748,7 @@
     "translations": {
       "ru": "покрасить что-л",
       "en": "move. ch. paint, paint completely smth.",
-      "tr": ""
+      "tr": "BÜSBÜTÜN"
     },
     "ipa": "/zɐɕʼɐlɐn/",
     "rootIds": [],
@@ -1000591,7 +1000592,7 @@
     "translations": {
       "ru": "фарфоровый",
       "en": "of фарфор I 2; ~ хьэкъущыкъу: china",
-      "tr": ""
+      "tr": "Kapkacak"
     },
     "ipa": "/farforovɐ/",
     "rootIds": [],
@@ -1001803,7 +1001804,7 @@
     "conceptId": "KAVRAM_НЕСКОЛЬКО КРИВОЙ",
     "translations": {
       "ru": "несколько кривой",
-      "tr": "BİRKAÇ"
+      "tr": ""
     },
     "ipa": "/xwɐʔʷʃɐ/",
     "rootIds": [],
@@ -1010555,7 +1010556,7 @@
     "conceptId": "KAVRAM_КОНЦЫ РЕМНЕЙ",
     "translations": {
       "ru": "концы ремней",
-      "tr": "BİRKAÇ"
+      "tr": ""
     },
     "ipa": "/ʃǝq͡χablɐ/",
     "rootIds": [],
@@ -1016209,7 +1016210,7 @@
     "translations": {
       "ru": "женщине",
       "en": "a very beautiful girl, woman",
-      "tr": ""
+      "tr": "ALACA"
     },
     "ipa": "nɐtx'pɐtx",
     "rootIds": [],
