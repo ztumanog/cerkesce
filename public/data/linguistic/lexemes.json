@@ -463,7 +463,8 @@
     "isLemma": true,
     "translations": {
       "ru": "глубина души",
-      "en": "the depth of one's soul"
+      "en": "the depth of one's soul",
+      "tr": "Yürek, bağır, acıma, merhamet"
     },
     "subConceptId": "EMOTION",
     "taxonomyFamily": "Duygu & Zihin",
@@ -20366,7 +20367,10 @@
     "taxonomyFamily": "İnsan & Nitelik",
     "rootForm": "дахэ-",
     "ipa": "/dɐ'xʷɐn/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "İçine sürmek, içeri girmek"
+    }
   },
   {
     "id": "L-DEGHUASA",
@@ -20392,7 +20396,10 @@
     "taxonomyFamily": "Zaman & Doğa",
     "rootForm": "гъуа-",
     "ipa": "/pɕɐ'ddᶎǝʑ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "Dün akşam"
+    }
   },
   {
     "id": "L-DEGHUAPSHEH",
@@ -20419,7 +20426,10 @@
     "taxonomyFamily": "Zaman & Doğa",
     "rootForm": "пщэхь-",
     "ipa": "/pɕɐ'ddᶎǝʑ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "Dün akşamüstü"
+    }
   },
   {
     "id": "L-DZA",
@@ -20441,7 +20451,10 @@
       "rule": "root"
     },
     "ipa": "/'nɑ:bdzɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "Ordu, askerlik, sıra, diş"
+    }
   },
   {
     "id": "L-DZEN",
@@ -20494,7 +20507,10 @@
     "taxonomyFamily": "Eylem & Tarz",
     "rootForm": "джадэ-",
     "ipaSource": "root-derived",
-    "ipa": "/dʒadɐw/"
+    "ipa": "/dʒadɐw/",
+    "translations": {
+      "tr": "Sersemleşmiş, şaşkın, dik kafalı"
+    }
   },
   {
     "id": "L-DZHAN",
@@ -20560,7 +20576,10 @@
       "R-F"
     ],
     "ipaSource": "root-derived",
-    "ipa": "/fajtsaj/"
+    "ipa": "/fajtsaj/",
+    "translations": {
+      "tr": "Hızlı, çabuk, aceleci, oynak"
+    }
   },
   {
     "id": "L-F1ETS1A",
@@ -20578,7 +20597,10 @@
       "R-F"
     ],
     "ipaSource": "root-derived",
-    "ipa": "/fʼɐtsʼa/"
+    "ipa": "/fʼɐtsʼa/",
+    "translations": {
+      "tr": "Kapkara, simsiyah"
+    }
   },
   {
     "id": "L-GUAPE",
@@ -20704,7 +20726,10 @@
     "subConceptId": "EMOTION",
     "taxonomyFamily": "Duygu & Zihin",
     "rootForm": "гу-",
-    "ipa": "/gʷǝ'psɐ/"
+    "ipa": "/gʷǝ'psɐ/",
+    "translations": {
+      "tr": "Derin düşünmek, tefekkür etmek"
+    }
   },
   {
     "id": "L-GUGHA",
@@ -20812,7 +20837,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/je:'dᶎɑ:/"
+    "ipa": "/je:'dᶎɑ:/",
+    "translations": {
+      "tr": "Öğrenci, okuyan kişi"
+    }
   },
   {
     "id": "L-YADZHAN",
@@ -20861,7 +20889,10 @@
       "rule": "compound"
     },
     "conceptId": "BIG_WORK",
-    "ipa": "/je:'dᶎɑ:/"
+    "ipa": "/je:'dᶎɑ:/",
+    "translations": {
+      "tr": "Okumaya başlamak, okuyup koşmak"
+    }
   },
   {
     "id": "L-YAGUPSESAU",
@@ -20887,7 +20918,10 @@
     "taxonomyFamily": "Duygu & Düşünce",
     "rootForm": "гу-",
     "ipa": "/psɐʁʷ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "Derin düşüncelere dalmış olarak"
+    }
   },
   {
     "id": "L-EGUPSESEN",
@@ -20939,7 +20973,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/je:'ɬɐn/"
+    "ipa": "/je:'ɬɐn/",
+    "translations": {
+      "tr": "Üzerine atlamak, saldırmak"
+    }
   },
   {
     "id": "L-YALHATAKHEN",
@@ -20961,7 +20998,10 @@
     },
     "isLemma": true,
     "conceptId": "BINDING",
-    "ipa": "/je:'ɬɐn/"
+    "ipa": "/je:'ɬɐn/",
+    "translations": {
+      "tr": "Uçarak üstüne konmak, hamle yapmak"
+    }
   },
   {
     "id": "L-YEDZHE",
@@ -21012,7 +21052,10 @@
       "morphemeIds": [],
       "rule": "root"
     },
-    "ipa": "/ɬɐn/"
+    "ipa": "/ɬɐn/",
+    "translations": {
+      "tr": "Kan, bacak, ayak"
+    }
   },
   {
     "id": "L-LHAGHE",
@@ -21145,7 +21188,10 @@
     ],
     "conceptId": "WORKER",
     "ipa": "/ɮɐʑi:ˈχɑ:ti:/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "İşçi, çalışan, emekçi"
+    }
   },
   {
     "id": "L-LAZHEN",
@@ -21192,7 +21238,10 @@
     "isLemma": true,
     "conceptId": "LEADER",
     "ipa": "/tħɐ'kʹʷǝmɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "Ay ışığı rengi, soluk gümüş rengi"
+    }
   },
   {
     "id": "L-MESHCHENE",
@@ -21214,7 +21263,10 @@
       "rule": "compound"
     },
     "ipaSource": "root-derived",
-    "ipa": "/mɐɕǝnɐ/"
+    "ipa": "/mɐɕǝnɐ/",
+    "translations": {
+      "tr": "Korkuyor, ürküyor"
+    }
   },
   {
     "id": "L-MYVE",
@@ -21326,7 +21378,10 @@
     "subConceptId": "GLASSES_WEARER",
     "taxonomyFamily": "Göz & Görme",
     "rootForm": "нэ-",
-    "ipa": "/nɐʁʷ/"
+    "ipa": "/nɐʁʷ/",
+    "translations": {
+      "tr": "Şaşı, gözü kaymış"
+    }
   },
   {
     "id": "L-NYBZHY",
@@ -21492,7 +21547,10 @@
     "isLemma": true,
     "conceptId": "TOOTH",
     "ipa": "/zǝxɐ'dzɐn/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "Öne atılmak, tekrar öne koşmak"
+    }
   },
   {
     "id": "L-PADZHAN",
@@ -21516,7 +21574,10 @@
     },
     "conceptId": "ACTION",
     "ipa": "/zǝxɐ'dzɐn/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "Öne doğru koşmak, sivrilmek"
+    }
   },
   {
     "id": "L-PADZHAZHEN",
@@ -21540,7 +21601,10 @@
     },
     "conceptId": "ACTION",
     "ipa": "/zǝxɐ'dzɐn/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "Öne fırlayıp koşmak"
+    }
   },
   {
     "id": "L-PSHCHA",
@@ -21562,7 +21626,10 @@
       "rule": "root"
     },
     "ipa": "/ˈpɕɑ:ʁɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "Boyun, boğaz, fırtına"
+    }
   },
   {
     "id": "L-PSHCHADAY",
@@ -21585,7 +21652,10 @@
       "rule": "compound"
     },
     "ipa": "/ˈpɕɑ:ʁɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "Yarın akşam, yarın gündüz"
+    }
   },
   {
     "id": "L-PSHCHADZHYZH",
@@ -21608,7 +21678,10 @@
       "rule": "compound"
     },
     "ipa": "/ˈpɕɑ:ʁɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "Sabah, sabah erken vakit"
+    }
   },
   {
     "id": "L-PSHCHY",
@@ -21704,7 +21777,10 @@
     "taxonomyFamily": "Eylem & Fiziksel",
     "rootForm": "пэ-",
     "ipa": "/'ʔɐpɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "Öne fırlamak, önde başlamak"
+    }
   },
   {
     "id": "L-PSHYNE",
@@ -21755,7 +21831,10 @@
     "isLemma": true,
     "conceptId": "MIND",
     "ipa": "/gʷǝp'sǝsɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "Masal, öykü, anlatı"
+    }
   },
   {
     "id": "L-PKHASHCHAMESHCH",
@@ -21908,7 +21987,10 @@
     "isLemma": true,
     "conceptId": "SKY",
     "ipa": "/'wɑ:fɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "Vuruş, dövüş edası, saldıran eda"
+    }
   },
   {
     "id": "L-KEPSHEHEN",
@@ -21930,7 +22012,10 @@
     },
     "isLemma": true,
     "conceptId": "MORNING",
-    "ipa": "/qʹɐp/"
+    "ipa": "/qʹɐp/",
+    "translations": {
+      "tr": "Etrafı dolaşmak, gezinmek, devriye gezmek"
+    }
   },
   {
     "id": "L-KEPSHTEN",
@@ -21977,7 +22062,10 @@
     "isLemma": true,
     "conceptId": "KALMYK",
     "ipa": "/qʹɐ'ɮmǝqʹ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "Devlet, ülke, memleket"
+    }
   },
   {
     "id": "L-KEGHEPSHTEN",
@@ -22000,7 +22088,10 @@
       "rule": "compound"
     },
     "conceptId": "PROTECT",
-    "ipa": "/qʹɐʁɐ'ɕtɐn/"
+    "ipa": "/qʹɐʁɐ'ɕtɐn/",
+    "translations": {
+      "tr": "Isıtmak, kızdırmak, heveslendirmek"
+    }
   },
   {
     "id": "L-KESHENEN",
@@ -22016,7 +22107,8 @@
     "isLemma": true,
     "translations": {
       "en": "feel fright or fear, be scared",
-      "ru": "почувствовать страх, боязнь"
+      "ru": "почувствовать страх, боязнь",
+      "tr": "Korkmak, irkilmek"
     },
     "rootIds": [
       "R-NE"
@@ -22052,7 +22144,10 @@
     },
     "conceptId": "PROTECT",
     "ipa": "/χʷǝ'mɐn/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "İçeri girmek, içeri dalmak"
+    }
   },
   {
     "id": "L-KEPERYKHEN",
@@ -22075,7 +22170,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/qʹɐp/"
+    "ipa": "/qʹɐp/",
+    "translations": {
+      "tr": "Öne geçip düşürmek, önünü kesmek"
+    }
   },
   {
     "id": "L-KEKHEKHEN",
@@ -22099,7 +22197,10 @@
     },
     "conceptId": "PROTECT",
     "ipa": "/χʷǝ'mɐn/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "İçinden seçip çıkarmak"
+    }
   },
   {
     "id": "L-KUA",
@@ -22120,7 +22221,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/qʹʷɐn/"
+    "ipa": "/qʹʷɐn/",
+    "translations": {
+      "tr": "Dik açı, köşe, kuytu, vadi"
+    }
   },
   {
     "id": "L-KUAZHE",
@@ -22187,7 +22291,10 @@
       ]
     },
     "isLemma": true,
-    "ipa": "/qʹʷɐ/"
+    "ipa": "/qʹʷɐ/",
+    "translations": {
+      "tr": "Dal, dallar, kol"
+    }
   },
   {
     "id": "L-KUKHUE",
@@ -22235,7 +22342,10 @@
       "rule": "compound"
     },
     "ipa": "/wǝˈdzǝfɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "Küçük eski kayık, küçük sandal"
+    }
   },
   {
     "id": "L-KUKHEZHY",
@@ -22257,7 +22367,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/qʹʷǝ'ħɐn/"
+    "ipa": "/qʹʷǝ'ħɐn/",
+    "translations": {
+      "tr": "Eski gemi, eski kayık"
+    }
   },
   {
     "id": "L-KUKHEZHAY",
@@ -22280,7 +22393,10 @@
       "rule": "compound"
     },
     "ipa": "/qʹʷɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "Eski küçük kayıklar, tekneler"
+    }
   },
   {
     "id": "L-GHEMAKHUE",
@@ -22468,7 +22584,10 @@
     "rootIds": [
       "R-SHCH"
     ],
-    "ipa": "/'ɕǝnɐ/"
+    "ipa": "/'ɕǝnɐ/",
+    "translations": {
+      "tr": "Korkunçluk, tehlike, emniyetsizlik"
+    }
   },
   {
     "id": "L-SHCHYNEGHENSHE",
@@ -22486,7 +22605,10 @@
     "rootIds": [
       "R-SHCH"
     ],
-    "ipa": "/'ɕǝnɐ/"
+    "ipa": "/'ɕǝnɐ/",
+    "translations": {
+      "tr": "Tehlikesiz, güvenli, emniyetli"
+    }
   },
   {
     "id": "L-SHCHYNEGHECH1E",
@@ -22504,7 +22626,10 @@
     "rootIds": [
       "R-SHCH"
     ],
-    "ipa": "/'ɕǝnɐ/"
+    "ipa": "/'ɕǝnɐ/",
+    "translations": {
+      "tr": "Tehlike yaratan, korkutucu"
+    }
   },
   {
     "id": "L-SHCHYNEGHUE",
@@ -38490,7 +38615,10 @@
     },
     "isLemma": true,
     "ipaSource": "root-derived",
-    "translationSource": "literalMeaning-derived"
+    "translationSource": "literalMeaning-derived",
+    "translations": {
+      "tr": "İçine atlamak, içeri fırlamak"
+    }
   },
   {
     "id": "L-YAGUPSESAN",
@@ -80377,7 +80505,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/ʂxǝn/"
+    "ipa": "/ʂxǝn/",
+    "translations": {
+      "tr": "Yemek yemek"
+    }
   },
   {
     "id": "L-CORPUS-01365",
@@ -157013,7 +157144,8 @@
     "isLemma": true,
     "translations": {
       "ru": "материнское сердце <div style='margin-le",
-      "en": "a mother’s heart, someone who is deeply attached to their mother"
+      "en": "a mother’s heart, someone who is deeply attached to their mother",
+      "tr": "Anne kalbi, şefkati"
     },
     "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/9/99/%D0%90199%D0%B0%D0%BD%D1%8D%D0%B3%D1%83.ogg"
   },
@@ -182669,7 +182801,8 @@
     "isLemma": true,
     "translations": {
       "ru": "домашняя птица / Дамэ зытет унэ",
-      "en": "poultry (literally: chickens and geese)"
+      "en": "poultry (literally: chickens and geese)",
+      "tr": "Kümes hayvanı"
     },
     "subConceptId": "POULTRY",
     "rootForm": "джэд",
@@ -320283,7 +320416,10 @@
     },
     "isLemma": false,
     "conceptId": "GRANDMOTHER",
-    "ipa": "/ɐ'nɐʂ/"
+    "ipa": "/ɐ'nɐʂ/",
+    "translations": {
+      "tr": "Hayır dua eden ana"
+    }
   },
   {
     "id": "L-CORPUS2-05332",
@@ -439844,7 +439980,8 @@
     },
     "translations": {
       "en": "facial powder",
-      "ru": "пудра"
+      "ru": "пудра",
+      "tr": "Barut"
     },
     "examples": [
       "*Пудрэ зыщыхуэн."
@@ -486882,7 +487019,8 @@
     "isLemma": true,
     "translations": {
       "ru": "кобель / Хьэм ящыщу хъу",
-      "en": "male dog"
+      "en": "male dog",
+      "tr": "Köpek"
     },
     "subConceptId": "DOG_MALE",
     "taxonomyFamily": "Hayvanlar & Doğa",
@@ -502998,7 +503136,8 @@
     "isLemma": true,
     "translations": {
       "ru": "база / Зыгуэрым и лъабжьэ, и къегъэжьап",
-      "en": "база (основа чего-л.), база, склад"
+      "en": "база (основа чего-л.), база, склад",
+      "tr": "Temel, baz"
     },
     "rootIds": [
       "R-BAZ"
@@ -552235,7 +552374,8 @@
     "ipa": "/dᶎɐ'mǝdɐ/",
     "translations": {
       "en": "brown (about the color of cattle)",
-      "ru": "бурый (о масти крупного рогатого скота)"
+      "ru": "бурый (о масти крупного рогатого скота)",
+      "tr": "Kahverengi"
     }
   },
   {
@@ -552345,7 +552485,8 @@
     "ipa": "/dᶎɐ'rǝɕʹɐ/",
     "translations": {
       "en": "crupper (belt at the back of a saddle to keep it from slipping when riding downhill)",
-      "ru": "подхвостник (ремень для удержания седла при спуске с горы)"
+      "ru": "подхвостник (ремень для удержания седла при спуске с горы)",
+      "tr": "Sağrı"
     }
   },
   {
@@ -632572,7 +632713,8 @@
     "ipa": "/ɬɐ'pɑ:χʷɐ/",
     "translations": {
       "en": "loose, not suffed into one's boots (about trousers)",
-      "ru": "навыпуск (о брюках)"
+      "ru": "навыпуск (о брюках)",
+      "tr": "Pantolon"
     }
   },
   {
@@ -641156,7 +641298,10 @@
     },
     "isLemma": false,
     "ipa": "/nɐ'pʹɑ:ɕħɐ/",
-    "translationSource": "literalMeaning-derived"
+    "translationSource": "literalMeaning-derived",
+    "translations": {
+      "tr": "Üst göz kapağı"
+    }
   },
   {
     "id": "L-KBD-03612",
@@ -733271,7 +733416,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_КУЗНЕЧНЫЙ ГОРН",
     "translations": {
-      "ru": "кузнечный горн"
+      "ru": "кузнечный горн",
+      "tr": "Demirci dükkanı"
     },
     "ipa": "/ʔɐmgʷapɐ/",
     "rootIds": [],
@@ -736436,7 +736582,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_НЕПЛОХОЙ",
     "translations": {
-      "ru": "неплохой"
+      "ru": "неплохой",
+      "tr": "İyi; güzel"
     },
     "ipa": "/mǝʔеj/",
     "rootIds": [],
@@ -743112,7 +743259,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ОТВАЛ",
     "translations": {
-      "ru": "отвал"
+      "ru": "отвал",
+      "tr": "Bıçak ağzı"
     },
     "ipa": "/pχɐʔɐɕɐnɐkʷʼ/",
     "rootIds": [],
@@ -745593,7 +745741,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_КОРОБКА",
     "translations": {
-      "ru": "коробка"
+      "ru": "коробка",
+      "tr": "Sandık"
     },
     "ipa": "/dеstɐ/",
     "rootIds": [],
@@ -752224,7 +752373,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ОТЛОМИТЬСЯ СНИЗУ",
     "translations": {
-      "ru": "отломиться снизу"
+      "ru": "отломиться снизу",
+      "tr": "Alt"
     },
     "ipa": "/ɕʼɐɕʼǝkʼǝn/",
     "rootIds": [],
@@ -754092,7 +754242,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ОТВАЛ",
     "translations": {
-      "ru": "отвал"
+      "ru": "отвал",
+      "tr": "Bıçak ağzı"
     },
     "ipa": "/ʔʷpχɐbʁʷ/",
     "rootIds": [],
@@ -755494,7 +755645,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_АРКАНЩИК",
     "translations": {
-      "ru": "арканщик"
+      "ru": "арканщик",
+      "tr": "Kın"
     },
     "ipa": "/arqɐnawɐ/",
     "rootIds": [],
@@ -765121,7 +765273,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ГРЕБЕНЬ",
     "translations": {
-      "ru": "гребень"
+      "ru": "гребень",
+      "tr": "Tarak"
     },
     "ipa": "/maʑɐqʷanʃɐ/",
     "rootIds": [],
@@ -767681,7 +767834,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ПРОСТЫНЯ",
     "translations": {
-      "ru": "простыня"
+      "ru": "простыня",
+      "tr": "Tabaka"
     },
     "ipa": "/wɐnʃɐkʷtеpχʷɐ/",
     "rootIds": [],
@@ -775616,7 +775770,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ЗАКОУЛОК",
     "translations": {
-      "ru": "закоулок"
+      "ru": "закоулок",
+      "tr": "Köşe"
     },
     "ipa": "/dwrɐʃ/",
     "rootIds": [],
@@ -782300,7 +782455,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ЩЫМЫЛАЖЬЭ МАХУЭ",
     "translations": {
-      "ru": "щымылажьэ махуэ"
+      "ru": "щымылажьэ махуэ",
+      "tr": "Perşembe"
     },
     "ipa": "/bɐrɐskɐ/",
     "rootIds": [],
@@ -790732,7 +790888,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_УПИТАННЫЙ",
     "translations": {
-      "ru": "упитанный"
+      "ru": "упитанный",
+      "tr": "Yağ"
     },
     "ipa": "/pʃɐrǝwɐ/",
     "rootIds": [],
@@ -791335,7 +791492,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_КОРОНКА",
     "translations": {
-      "ru": "коронка"
+      "ru": "коронка",
+      "tr": "Gem"
     },
     "ipa": "/dzɐtеbzɐ/",
     "rootIds": [],
@@ -798258,7 +798416,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_БАНТ",
     "translations": {
-      "ru": "бант"
+      "ru": "бант",
+      "tr": "Yay"
     },
     "ipa": "/zɐrǝɬɐfǝʁʷɐ/",
     "rootIds": [],
@@ -801245,7 +801404,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_КУБОК",
     "translations": {
-      "ru": "кубок"
+      "ru": "кубок",
+      "tr": "Tas, bardak"
     },
     "ipa": "/kʷbok/",
     "rootIds": [],
@@ -801690,7 +801850,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_РОСТОК",
     "translations": {
-      "ru": "росток"
+      "ru": "росток",
+      "tr": "Sürgün, filiz"
     },
     "ipa": "/qikʼǝkʼa/",
     "rootIds": [],
@@ -806765,7 +806926,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ВЯЗАНКА",
     "translations": {
-      "ru": "вязанка"
+      "ru": "вязанка",
+      "tr": "Demet, tutam"
     },
     "ipa": "/ħɐnж/",
     "rootIds": [],
@@ -806919,7 +807081,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ПО ДЕСЯТЬ",
     "translations": {
-      "ru": "по десять"
+      "ru": "по десять",
+      "tr": "On"
     },
     "ipa": "/pɕʼǝrǝpɕʼ/",
     "rootIds": [],
@@ -810394,7 +810557,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ЗЕРНОВЫЕ",
     "translations": {
-      "ru": "зерновые"
+      "ru": "зерновые",
+      "tr": "Tahıllar"
     },
     "ipa": "/ħɐdzɐxɐkʼ/",
     "rootIds": [],
@@ -810622,7 +810786,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_СОЛОМЕННЫЙ",
     "translations": {
-      "ru": "соломенный"
+      "ru": "соломенный",
+      "tr": "Saman"
     },
     "ipa": "/ħɐwazaɕħɐ/",
     "rootIds": [],
@@ -835233,7 +835398,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_СЛАБОСТЬ",
     "translations": {
-      "ru": "слабость"
+      "ru": "слабость",
+      "tr": "Güçsüzlük"
     },
     "ipa": "/sǝmadʒɐwʑǝpqɐ/",
     "rootIds": [],
@@ -838290,7 +838456,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ПРОУШИНА",
     "translations": {
-      "ru": "проушина"
+      "ru": "проушина",
+      "tr": "Göz"
     },
     "ipa": "/dʒǝdɐnɐ/",
     "rootIds": [],
@@ -839010,7 +839177,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ДИВИЗИЯ",
     "translations": {
-      "ru": "дивизия"
+      "ru": "дивизия",
+      "tr": "Bölme"
     },
     "ipa": "/diviziе/",
     "rootIds": [],
@@ -846924,7 +847092,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ЗАВЕДУЮЩИЙ",
     "translations": {
-      "ru": "заведующий"
+      "ru": "заведующий",
+      "tr": "Baş"
     },
     "ipa": "/zavеdwɕ/",
     "rootIds": [],
@@ -861723,7 +861892,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_СТРЕЛКА",
     "translations": {
-      "ru": "стрелка"
+      "ru": "стрелка",
+      "tr": "Yay, ok"
     },
     "ipa": "/kʼǝgʷ/",
     "rootIds": [],
@@ -863759,7 +863929,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_КОМБИКОРМ",
     "translations": {
-      "ru": "комбикорм"
+      "ru": "комбикорм",
+      "tr": "Yem, hayvan yemi"
     },
     "ipa": "/kombikorm/",
     "rootIds": [],
@@ -865376,7 +865547,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ДЕРБНИК",
     "translations": {
-      "ru": "дербник"
+      "ru": "дербник",
+      "tr": "Bozdoğan"
     },
     "ipa": "/qarʁaɕχʷɐ/",
     "rootIds": [],
@@ -866169,7 +866341,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ФАТА",
     "translations": {
-      "ru": "фата"
+      "ru": "фата",
+      "tr": "Peçe, duvak"
     },
     "ipa": "/qеpχʷx/",
     "rootIds": [],
@@ -879566,7 +879739,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_КЕРНЕР",
     "translations": {
-      "ru": "кернер"
+      "ru": "кернер",
+      "tr": "Nokta zımbası, zımba"
     },
     "ipa": "/pʼɐiʁɐɕ/",
     "rootIds": [],
@@ -881821,7 +881995,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_БЕРДО",
     "translations": {
-      "ru": "бердо"
+      "ru": "бердо",
+      "tr": "Şimşir"
     },
     "ipa": "/pχaɕɐqеdzǝx/",
     "rootIds": [],
@@ -884948,7 +885123,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_РЮМКА",
     "translations": {
-      "ru": "рюмка"
+      "ru": "рюмка",
+      "tr": "Bardak"
     },
     "ipa": "/rюmkɐ/",
     "rootIds": [],
@@ -890643,7 +890819,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ФУРАЖКА",
     "translations": {
-      "ru": "фуражка"
+      "ru": "фуражка",
+      "tr": "Şapka, kalpak"
     },
     "ipa": "/fwraʃkʼɐ/",
     "rootIds": [],
@@ -896779,7 +896956,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ЛИЧИНКА ОВОДА",
     "translations": {
-      "ru": "личинка овода"
+      "ru": "личинка овода",
+      "tr": "Kurtçuk, larva"
     },
     "ipa": "/tsʼǝvħɐpatʼɐ/",
     "rootIds": [],
@@ -900389,7 +900567,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_КОНОПЛЯНИК",
     "translations": {
-      "ru": "конопляник"
+      "ru": "конопляник",
+      "tr": "Kendir, kenevir"
     },
     "ipa": "/ɕʼɐpǝpqɐ/",
     "rootIds": [],
@@ -977704,7 +977883,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_КРУПНО",
     "translations": {
-      "ru": "крупно"
+      "ru": "крупно",
+      "tr": "Büyük; geniş"
     },
     "ipa": "jǝn'jǝnu:",
     "rootIds": [],
