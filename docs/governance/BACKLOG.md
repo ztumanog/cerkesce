@@ -1,8 +1,68 @@
-﻿# BACKLOG — FAZ 1-15 BORCLAR
+# BACKLOG — FAZ 1-15 BORCLAR
 
-**Tarih:** 12.10.2026
-**Kapsam:** Faz 1-15 Denetim Bulgulari
+**Tarih:** 15.10.2026
+**Kapsam:** Faz 1-15 Denetim + Product Stage
 **Durum:** AKTIF
+
+---
+
+## 0. PRODUCT STAGE — GÜNCEL DURUM (15.10.2026)
+
+### ✅ TAMAMLANAN
+
+| Metrik | Önce | Şimdi | Durum |
+|---|---|---|---|
+| Form | %0 | %100,0 | ✅ TAM |
+| IPA | %21,5 | %98,9 | ✅ TAM |
+| POS | — | %99,0 | ✅ TAM |
+
+### 🟡 BÜYÜK ÖLÇÜDE TAMAMLANDI
+
+| Metrik | Önce | Şimdi | Hedef | Durum |
+|---|---|---|---|---|
+| Concept | %27,1 | %76,1 | %90 | 🟡 |
+| Root | %18,8 | %51,0 | %80 | 🟡 |
+| WordFamily | %21,5 | %43,7 | %80 | 🟡 |
+
+### 🔴 YÜKSEK ÖNCELİK (Product Stage)
+
+| # | Metrik | Şimdi | Hedef | Not |
+|---|---|---|---|---|
+| 1 | **Translation (tr)** | **%54,2** | %80+ | +9.481 bugün |
+| 1b | Translation (en) | %30,3 | %60+ | +931 bugün |
+| 1c | Translation (ru) | %72,7 | %85+ | +132 bugün |
+| 1d | Translation (herhangi) | %85,4 | %95+ | +2.302 bugün |
+| 2 | Concept Kalitesi | — | YUKSEK | BELIRSIZ, GRAMMAR, COLOR temizligi |
+| 3 | Examples | %24,7 | %60+ | +1.105 onceki |
+| 4 | Audio | %3,1 | %20+ | 1.319/43.137 |
+| 5 | Audio UI | — | — | audioUrl → oynatici → UI |
+
+### 🆕 DEPLOYMENT / VERCEL BACKLOG
+
+| # | Kontrol | Durum |
+|---|---|---|
+| 1 | Vercel Production deploy başarılı mı? | ❓ |
+| 2 | Build warning/hatalar sıfır mı? | ❓ |
+| 3 | Environment variables belgelenmiş mi? | ❓ |
+| 4 | `next build` temiz mi? | ❓ |
+| 5 | API route'lar Vercel'de çalışıyor mu? | ❓ |
+| 6 | Audio URL'ler CDN'den erişilebilir mi? | ❓ |
+| 7 | Büyük JSON'lar Vercel limitine takılıyor mu? | ❓ |
+| 8 | SSR/ISR stratejileri belgelenmiş mi? | ❓ |
+| 9 | Lighthouse ölçümleri alınmış mı? | ❓ |
+| 10 | Domain + SSL yapılandırması | ❓ |
+
+### 🎯 YENİ ÖNCELİK SIRASI
+
+1. **Translation Coverage** (%54,2 → %80+)
+2. **Concept Kalitesi** (BELIRSIZ, GRAMMAR, COLOR)
+3. **Examples Coverage** (%24,7 → %60+)
+4. **Audio Coverage** (%3,1 → %20+)
+5. **Audio UI**
+6. **Vercel Hardening**
+7. **L-KBD Enrichment**
+
+**Not:** Root ve IPA artık aktif risk değil; Translation ve kalite yeni darboğaz.
 
 ---
 
@@ -123,7 +183,7 @@
 
 ---
 
-## 6. UNTRACKED DOSYALAR (Faz 1 Temizlik)
+## 6. UNTRACKED DOSYALAR
 
 - 120+ untracked dosya
 - _scripts/*.txt (70 dosya)
@@ -132,40 +192,45 @@
 
 ---
 
-## 7. VERI KAPSAMI (Product Stage)
+## 7. VERI KAPSAMI (Product Stage) — Güncel 15.10.2026
 
-| # | Konu | Mevcut | Hedef |
-|---|---|---|---|
-| 1 | Root Coverage | %18,8 | %80+ |
-| 2 | WordFamily Coverage | %21,5 | %80+ |
-| 3 | IPA Coverage | %21,5 | %80+ |
-| 4 | Translation Coverage | %27,1 | %80+ |
-| 5 | L-KBD Enrichment | 0 | 100% |
-| 6 | DialectConverter uygulama | 0 | 100% |
-| 7 | EMOTION kategorisi | 0 | ? |
-| 8 | COLOR kategorisi | 0 | ? |
-| 9 | Concept Kalitesi | ? | YUKSEK |
+| # | Konu | Mevcut | Hedef | Durum |
+|---|---|---|---|---|
+| 1 | Root Coverage | %51,0 | %80+ | 🟡 |
+| 2 | WordFamily Coverage | %43,7 | %80+ | 🟡 |
+| 3 | IPA Coverage | %98,9 | %80+ | ✅ |
+| 4 | Translation (tr) | %54,2 | %80+ | 🔴 |
+| 5 | Translation (en) | %30,3 | %60+ | 🔴 |
+| 6 | Translation (ru) | %72,7 | %85+ | 🟡 |
+| 7 | L-KBD Enrichment | 0 | 100% | 🔴 |
+| 8 | DialectConverter uygulama | 0 | 100% | 🔴 |
+| 9 | Concept Kalitesi | ? | YUKSEK | 🔴 |
+| 10 | Examples | %24,7 | %60+ | 🟡 |
+| 11 | Audio | %3,1 | %20+ | 🟡 |
 
 ---
 
-## 8. ONCELIK SIRASI
+## 8. ONCELIK SIRASI (Baş Mimar Kararı — 15.10.2026)
 
-### Yuksek Oncelik
-1. Product Stage Veri Kapsami (Root, Family, IPA, Translation)
-2. L-KBD Enrichment
-3. Concept Kalitesi
+### ✅ BİTTİ
+- Root Coverage
+- IPA Coverage
+- UNKNOWN Temizliği
+- Kiril Temizliği
 
-### Orta Oncelik
-4. ADR Plan = PROPOSED duzeltmeleri
-5. docs/phases/phase-9-15 klasorleri
-6. src/infra/ kategorizasyonu
+### 🟡 DEVAM EDİYOR
+1. **Translation Coverage** — %54,2 → %80+ (🔴 Çok Yüksek)
+2. **Concept Kalitesi** — BELIRSIZ/GRAMMAR/COLOR (🔴 Yüksek)
+3. **Examples** — %24,7 → %60+ (🟡 Orta)
+4. **Audio** — %3,1 → %20+ (🟡 Orta)
+5. **Audio UI** — audioUrl → oynatıcı (🟢 Sonraki)
+6. **Vercel Hardening** (🟢 Sonraki)
 
-### Dusuk Oncelik
-7. ADR-0020 statu hizalama
-8. Test sayisi belgeleme
-9. Untracked temizlik
+### 🚫 ACİL DEĞİL
+- Root, IPA, Kiril, UNKNOWN (çözüldü)
 
 ---
 
 **Durum:** AKTIF
-**Sonraki:** Faz Sonu Temizlik
+**Son Güncelleme:** 15.10.2026
+**Sonraki:** Translation Coverage Sprint
