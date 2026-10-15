@@ -1026,7 +1026,7 @@
     },
     "isLemma": true,
     "translations": {
-      "tr": "ÇIZME KAYTANI",
+      "tr": "ayakkabı bağı, kök, soy",
       "en": "laces, straps (footwear)",
       "ru": "шнурок (обуви)",
       "ar": "شريط، رباط (الحذاء مثلاً)، سير، خيط/ ماء تقسية الحديد في ورشة الحديد"
@@ -7584,7 +7584,7 @@
     },
     "isLemma": true,
     "translations": {
-      "tr": "ESIRGEMEMEK"
+      "tr": "merhamet, şefkat, acıma"
     },
     "subConceptId": "EMOTION",
     "taxonomyFamily": "Duygu & Zihin",
@@ -7886,7 +7886,7 @@
     },
     "isLemma": true,
     "translations": {
-      "tr": "ACİL, ACELE",
+      "tr": "telaş, sıkıntı, dar zaman",
       "ar": "أمر  عاجل، عجلة، أزمة، إسعاف سريع"
     },
     "subConceptId": "EMOTION",
@@ -9781,7 +9781,7 @@
     "corpusFrequency": 215,
     "isLemma": true,
     "translations": {
-      "tr": "REKONSTRÜKSIYON"
+      "tr": "gerçekten, dürüstçe, samimiyetle"
     },
     "rootIds": [
       "R-SHQE"
@@ -14934,7 +14934,7 @@
     },
     "isLemma": true,
     "translations": {
-      "tr": "IŞIKÖLÇER",
+      "tr": "yıl, sene",
       "en": "year",
       "ru": "год",
       "ar": "السنة، العام"
@@ -20359,7 +20359,7 @@
     "translations": {
       "en": "gather sb together in one place, connect sth (for example, rivers, canals)",
       "ru": "собрать кого-л. в одном месте, соединить что-л. (напр. реки, каналы)",
-      "tr": "DÜZENLEMEK"
+      "tr": "birbirine katmak, yönetmek"
     },
     "rootIds": [
       "R-SHE2"
@@ -20694,7 +20694,7 @@
     "ipa": "/zǝxɐ'dzɐn/",
     "ipaSource": "root-derived",
     "translations": {
-      "tr": "MÜHÜRLEMEK"
+      "tr": "atmak, fırlatmak"
     }
   },
   {
@@ -22736,7 +22736,7 @@
     "translations": {
       "en": "",
       "ru": "каузатив к шынэн: испугать; грозить",
-      "tr": "KORKUTMAK",
+      "tr": "korkutmak",
       "ar": "يهدد"
     },
     "rootIds": [
@@ -23289,7 +23289,7 @@
     "conceptId": "BLUE",
     "ipa": "/tχʷɐn/",
     "translations": {
-      "tr": "HAZIR"
+      "tr": "ağardı, kırlaştı"
     }
   },
   {
@@ -25747,7 +25747,7 @@
     },
     "isLemma": true,
     "translations": {
-      "tr": "SIKLAŞMAK",
+      "tr": "yanında, nezdinde, -e doğru",
       "ar": "عند، قُرب"
     },
     "conceptId": "HAZELNUT",
@@ -31803,7 +31803,7 @@
     "translations": {
       "en": "create, make",
       "ru": "создать, сотворить",
-      "tr": "HAZIRLAMAK",
+      "tr": "yaratmak, var etmek",
       "trSource": "en->tr koprusu (orta)",
       "ar": "يُولد"
     }
@@ -33020,7 +33020,7 @@
     },
     "isLemma": true,
     "translations": {
-      "tr": "demirci"
+      "tr": "demirci, demir ustası"
     }
   },
   {
@@ -33999,7 +33999,7 @@
     "translations": {
       "en": "grow (up), develop, become, appear, happen, arrive, occur",
       "ru": "вырасти, подрасти, возникнуть, произойти, наступить, стать",
-      "tr": "DERILENMEK",
+      "tr": "olmak, doğmak, meydana gelmek",
       "trSource": "en->tr koprusu (orta)",
       "ar": "يحدث، يحصل/ يولد، يُخلق"
     },
@@ -35831,7 +35831,7 @@
     "corpusFrequency": 7,
     "isLemma": true,
     "translations": {
-      "tr": "ISLIK ÇALMAK",
+      "tr": "ıslık çalmak",
       "ar": "يصفِّر"
     },
     "rootIds": [
@@ -37102,7 +37102,7 @@
     "notes": "KBD Corpus rank 55",
     "isLemma": true,
     "translations": {
-      "tr": "KEÇIBOYNUZU",
+      "tr": "vatan, memleket, yurt",
       "en": "region, territory, country, homeland, land, farmstead, homestead, country",
       "ru": "край, страна, родина, территория; страна",
       "ar": "وطن، دولة، بلد، قُطر"
@@ -37307,7 +37307,7 @@
     "translations": {
       "en": "workplace, place of employment",
       "ru": "место работы",
-      "tr": "İŞYERİ, İŞ",
+      "tr": "iş yeri, çalışma mekanı",
       "ar": "مكان العمل، موقع العمل، مصلحة، معمل، مؤسسة"
     }
   },
@@ -38506,7 +38506,7 @@
     },
     "isLemma": true,
     "translations": {
-      "tr": "SÜLÜNERKEK",
+      "tr": "sülün, orman tavuğu",
       "ar": "دُراجة (دجاجة الغابة)"
     },
     "subConceptId": "PHEASANT",
@@ -39179,7 +39179,7 @@
     "translations": {
       "en": "The ancient Adyghes' (Circassians') dieties, gods, Allah",
       "ru": "божества у древних адыгов, Аллах",
-      "tr": "ANDIÇIRMEK",
+      "tr": "Tanrı, Allah",
       "ar": "الرب، الإله/ مقياس مسافات قديم طوله بحدود المتر"
     }
   },
@@ -39347,7 +39347,7 @@
     "translations": {
       "en": "meadow grass",
       "ru": "луговая трава",
-      "tr": "SÜRTÜŞMEK",
+      "tr": "olmak, gerçekleşmek",
       "ar": "يحدث، يكون، يصير/ الحدث، الكون/ يرعى/ حسناً"
     },
     "dictionaryEvidence": [
@@ -40293,7 +40293,7 @@
     "isLemma": true,
     "translations": {
       "ru": "хъугъэ / хъуащ еплъ <<зэгъэпэш",
-      "tr": "HAZIR"
+      "tr": "oldu, gerçekleşti, tamamlandı"
     },
     "rootIds": [
       "R-SHE2"
@@ -40382,7 +40382,7 @@
     "isLemma": true,
     "translations": {
       "ru": "что <div style='margin-left:1em",
-      "tr": "BEHEMEHAL",
+      "tr": "ne? (soru zamiri)",
       "ar": "ماذا"
     },
     "rootIds": [
@@ -40478,7 +40478,7 @@
     "notes": "Corpus v1.0 (freq: 836, lang: ady, source: 0.Ady-Ady_AIG)",
     "isLemma": true,
     "translations": {
-      "tr": "esir",
+      "tr": "işte, burada, işte bu",
       "ar": "ها هو/ هذا هو",
       "ru": "МАРЫ, -рых / мары.\n\t1. Вот. Мы- чыжьэу къыщыхъурэ хъугъэ-шӀагъэр, ыпашъхьэ итыр къырагъэлъагъоу къаӀорэ гущыӀ. Мары, мы кӀалэр ары къэкӀогъа-гъэр. \n\t2. Уахътэр къырагъэлъагъоу къаӀо. Ма-ры гъэр икӀыгъ"
     },
@@ -40856,7 +40856,7 @@
     "ipa": "/wǝˈdzǝfɐ/",
     "ipaSource": "root-derived",
     "translations": {
-      "tr": "GEÇEN GÜN"
+      "tr": "gündüzün, günde, o günde"
     },
     "literalMeaningSource": "translations.tr (yuksek)"
   },
@@ -41146,7 +41146,7 @@
     "translations": {
       "ru": "после чего-л",
       "en": "after sth",
-      "tr": "AHDICEDIT"
+      "tr": "sonra, iz, peş, ardından"
     },
     "subConceptId": "COMPARISON",
     "taxonomyFamily": "Karşılaştırma",
@@ -41246,7 +41246,7 @@
     "isLemma": true,
     "translations": {
       "ru": "сильно, очень <div style='marg",
-      "tr": "YALVARMAK, RİCA"
+      "tr": "çok, son derece, güçlü bir şekilde"
     },
     "subConceptId": "STRONGLY",
     "taxonomyFamily": "Ayak & Adım",
@@ -41971,7 +41971,7 @@
     "translations": {
       "ru": "устар. господин, повелитель <div style",
       "en": "sir, mister (a polite form of address)",
-      "tr": "HAŞMETMEAP",
+      "tr": "efendi, bey, hazretleri",
       "ar": "نبيل"
     },
     "rootIds": [
@@ -42214,7 +42214,7 @@
     "translations": {
       "en": "religion, faith",
       "ru": "религия, вера",
-      "tr": "ARŞIBIŞOP",
+      "tr": "din, inanç",
       "ar": "الدِين، الديانة"
     },
     "literalMeaningSource": "translations.tr (yuksek)"
@@ -42566,7 +42566,7 @@
     "isLemma": true,
     "translations": {
       "ru": "поклон Ышъхьэ фиуфагъ <div sty",
-      "tr": "HÜRMETKAR",
+      "tr": "saygı, hürmet, baş eğme",
       "ar": "احترام، تقدير، تبجيل/ عبادة"
     },
     "rootIds": [
@@ -42635,7 +42635,7 @@
     "translations": {
       "ru": "хвала, слава Дауш <div style='m",
       "en": "praise, commendation, kudos",
-      "tr": "MÜDAHENECI",
+      "tr": "övgü, iltifat, takdir",
       "ar": "مديح، ثناء"
     },
     "conceptId": "PRAISE",
@@ -42975,7 +42975,7 @@
     "isLemma": true,
     "translations": {
       "ru": "так, таким образом, еплъ &",
-      "tr": "ÖYLELIKLE",
+      "tr": "öylece, o şekilde, aynen öyle",
       "ar": "وهكذا، وعلى هذه الحال"
     },
     "rootIds": [
@@ -43475,7 +43475,7 @@
     "translations": {
       "en": "~ щыӀэкъым: stupid, dull; ~ зэман: gram. present tense",
       "ru": "ИТ, итых. Стоит где-л., в чем-л. ЫкӀоцӀ щыщыт. Унэм ит.",
-      "tr": ""
+      "tr": "içinde duruyor, bulunuyor"
     }
   },
   {
@@ -44511,7 +44511,7 @@
     },
     "ipa": "/χʷɐn/",
     "translations": {
-      "tr": "OLMAYACAK"
+      "tr": "olmaz, olmayacak, mümkün değil"
     },
     "literalMeaningSource": "translations.tr (yuksek)"
   },
@@ -45033,7 +45033,7 @@
     "ipa": "/je:'zǝ/",
     "ipaSource": "root-derived",
     "translations": {
-      "tr": "KENDILERI",
+      "tr": "kendileri, kendilerinin",
       "ar": "أنفسهم"
     },
     "literalMeaningSource": "translations.tr (yuksek)"
@@ -45414,7 +45414,7 @@
     "ipaSource": "root-derived",
     "ipa": "/nɐwʒǝm/",
     "translations": {
-      "tr": "MUAHHÂREN"
+      "tr": "sonradan, daha sonra"
     }
   },
   {
@@ -45997,7 +45997,7 @@
     },
     "ipa": "/wɐn/",
     "translations": {
-      "tr": "GERİLEMEK"
+      "tr": "izinde, peşinde, arkasında"
     },
     "literalMeaningSource": "translations.tr (yuksek)"
   },
@@ -46098,7 +46098,7 @@
     "translations": {
       "ru": "чрезмерно, слишком, чересчур <div st",
       "en": "too (much, many), excessively, overly; extremely, very",
-      "tr": "DOLUDİZGİN",
+      "tr": "aşırı derecede, fazlasıyla",
       "trSource": "en->tr koprusu (orta)",
       "ar": "للغاية"
     },
@@ -46868,7 +46868,7 @@
     "ipaSource": "root-derived",
     "ipa": "/peʁǝmbar/",
     "translations": {
-      "tr": "MESIH, ISA"
+      "tr": "peygamber"
     },
     "literalMeaningSource": "translations.tr (yuksek)"
   },
@@ -728176,7 +728176,7 @@
     "partOfSpeech": "noun",
     "conceptId": "XABZE",
     "translations": {
-      "tr": "anarşi",
+      "tr": "gelenek, görenek, örf, töre",
       "ar": "نظام، قانون، عادة"
     },
     "ipa": "/xabzɐ/",
@@ -728213,7 +728213,7 @@
     "partOfSpeech": "noun",
     "conceptId": "XABZE",
     "translations": {
-      "tr": "Soy",
+      "tr": "halk, ulus, soy, millet",
       "en": "Family, kin",
       "ru": "Племя, род",
       "ar": "شعب، أمة، قوم/ عشيرة/ نوع، جنس، صنف، سلالة"
