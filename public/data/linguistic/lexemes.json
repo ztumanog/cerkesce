@@ -23313,7 +23313,10 @@
     "isLemma": true,
     "conceptId": "HOLIDAY",
     "ipa": "/mɐ'xʷɐʂxʷɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "kar + gun"
+    }
   },
   {
     "id": "L-VASEPSCHEH",
@@ -23336,7 +23339,10 @@
     "isLemma": true,
     "conceptId": "MORNING",
     "ipa": "/pɕɐ'ddᶎǝʑ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "kar + boyun"
+    }
   },
   {
     "id": "L-VASEZHASHCH",
@@ -30162,7 +30168,10 @@
     "subConceptId": "TIPTOE",
     "taxonomyFamily": "Ayak & Adım",
     "rootForm": "лъэ-",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "ayak parmağı ucu"
+    }
   },
   {
     "id": "L-D380D18DD0BF",
@@ -30186,7 +30195,10 @@
     "isLemma": true,
     "subConceptId": "FINGER_PART",
     "taxonomyFamily": "İnsan & Beden",
-    "rootForm": "Ӏэ-"
+    "rootForm": "Ӏэ-",
+    "translations": {
+      "tr": "el parmağı ucu"
+    }
   },
   {
     "id": "L-D0BBD18AD18D-4",
@@ -30582,7 +30594,10 @@
       ]
     },
     "isLemma": true,
-    "conceptId": "MORNING"
+    "conceptId": "MORNING",
+    "translations": {
+      "tr": "erkenden"
+    }
   },
   {
     "id": "L-D0BFD189D18B",
@@ -32588,7 +32603,10 @@
         "къуэ"
       ]
     },
-    "isLemma": true
+    "isLemma": true,
+    "translations": {
+      "tr": "girintili çıkıntılı dere yatağı"
+    }
   },
   {
     "id": "L-D0B1D0B3D18B-2",
@@ -32946,7 +32964,10 @@
       "rule": "compound"
     },
     "ipaSource": "root-derived",
-    "ipa": "/ʒǝglabɐ/"
+    "ipa": "/ʒǝglabɐ/",
+    "translations": {
+      "tr": "kök"
+    }
   },
   {
     "id": "L-D0BFD185D18A-2",
@@ -33049,7 +33070,10 @@
     "conceptId": "STREET_DOOR",
     "subConceptId": "DOOR_TYPE",
     "taxonomyFamily": "Eşya & Mekan",
-    "rootForm": "бжэ-"
+    "rootForm": "бжэ-",
+    "translations": {
+      "tr": "dış kapı"
+    }
   },
   {
     "id": "L-D183D0BDD18D-3",
@@ -33441,7 +33465,10 @@
         "анэ"
       ]
     },
-    "isLemma": true
+    "isLemma": true,
+    "translations": {
+      "tr": "anne tarafı akrabalar"
+    }
   },
   {
     "id": "L-D0BFD18DD0B6",
@@ -193533,7 +193560,10 @@
       "rule": "compound"
     },
     "ipaSource": "root-derived",
-    "ipa": "/ǝnɐʃʼw/"
+    "ipa": "/ǝnɐʃʼw/",
+    "translations": {
+      "tr": "GÖZ YUMMAK + Karaciğer"
+    }
   },
   {
     "id": "L-CORPUS2-00138",
@@ -196803,7 +196833,10 @@
       "rule": "prefix+suffix"
     },
     "ipaSource": "form-derived",
-    "ipa": "/rǝkʼoxɐrɐm/"
+    "ipa": "/rǝkʼoxɐrɐm/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-00275",
@@ -199732,7 +199765,10 @@
       "R-SH1Y"
     ],
     "conceptId": "NAVY_BLUE",
-    "ipa": "/'ɕʹǝtʹʂɐ/"
+    "ipa": "/'ɕʹǝtʹʂɐ/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-00392",
@@ -201823,7 +201859,10 @@
     "isLemma": false,
     "conceptId": "HOUSEWIFE",
     "ipa": "/wǝnɐ'gʷɑ:ɕɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-00473",
@@ -202318,7 +202357,10 @@
       "rule": "compound"
     },
     "ipaSource": "root-derived",
-    "ipa": "/wʑkʼɐ/"
+    "ipa": "/wʑkʼɐ/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-00495",
@@ -202440,7 +202482,10 @@
       "rule": "compound"
     },
     "ipa": "/te:t/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-00500",
@@ -203920,7 +203965,10 @@
     ],
     "conceptId": "EAT_UNDER",
     "ipa": "/ɕʹɐn/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "yeni + arpa"
+    }
   },
   {
     "id": "L-CORPUS2-00555",
@@ -204017,7 +204065,10 @@
     "isLemma": false,
     "conceptId": "KALMYK",
     "ipa": "/qʹɐ'ɮmǝqʹ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "Kuzey Batı + LALA"
+    }
   },
   {
     "id": "L-CORPUS2-00558",
@@ -204819,7 +204870,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/ħɐ'tǝr/"
+    "ipa": "/ħɐ'tǝr/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-00587",
@@ -205772,7 +205826,10 @@
     "rootIds": [
       "R-1E"
     ],
-    "ipa": "/ʔɐ'mi:n/"
+    "ipa": "/ʔɐ'mi:n/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-00623",
@@ -207259,7 +207316,10 @@
     },
     "isLemma": false,
     "conceptId": "CHICKEN",
-    "ipa": "/tʂɐ'tɐn/"
+    "ipa": "/tʂɐ'tɐn/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-00680",
@@ -211380,7 +211440,10 @@
     },
     "conceptId": "SKIN",
     "ipaSource": "root-derived",
-    "ipa": "/ʂorkʼɐ/"
+    "ipa": "/ʂorkʼɐ/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-00839",
@@ -211775,7 +211838,10 @@
     },
     "isLemma": false,
     "ipa": "/qʹʷɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-00853",
@@ -213037,7 +213103,10 @@
     },
     "conceptId": "NOSE",
     "ipa": "/jɐpɐ're:j/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "KALIN + verimli"
+    }
   },
   {
     "id": "L-CORPUS2-00900",
@@ -213062,7 +213131,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/qʹʷǝr'mɐn/"
+    "ipa": "/qʹʷǝr'mɐn/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-00901",
@@ -213753,7 +213825,10 @@
       "rule": "compound"
     },
     "ipaSource": "form-derived",
-    "ipa": "/tiʔɐjatɐ/"
+    "ipa": "/tiʔɐjatɐ/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-00927",
@@ -214103,7 +214178,10 @@
       "rule": "compound"
     },
     "ipaSource": "root-derived",
-    "ipa": "/iʔɐjatɐ/"
+    "ipa": "/iʔɐjatɐ/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-00941",
@@ -214234,7 +214312,10 @@
     },
     "isLemma": false,
     "ipa": "/'ʔɐpʹqʹɬɐpʹqʹ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-00946",
@@ -214292,7 +214373,10 @@
     },
     "isLemma": false,
     "ipa": "/'ʔɐpʹqʹɬɐpʹqʹ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "bilemek + ötmek"
+    }
   },
   {
     "id": "L-CORPUS2-00948",
@@ -215029,7 +215113,10 @@
       "rule": "prefix+suffix"
     },
     "ipaSource": "form-derived",
-    "ipa": "/rǝkʼoxɐrɐr/"
+    "ipa": "/rǝkʼoxɐrɐr/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-00978",
@@ -216928,7 +217015,10 @@
       "rule": "compound"
     },
     "ipaSource": "root-derived",
-    "ipa": "/sʃʼɐrɐp/"
+    "ipa": "/sʃʼɐrɐp/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-01053",
@@ -218267,7 +218357,10 @@
       "rule": "compound"
     },
     "ipa": "/'qʹʷǝɕħɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-01102",
@@ -218912,7 +219005,10 @@
       "rule": "compound"
     },
     "ipa": "/'ʔɐpʹqʹɬɐpʹqʹ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-01127",
@@ -220907,7 +221003,10 @@
     },
     "isLemma": false,
     "conceptId": "KALMYK",
-    "ipa": "/qʹɐ'ru:/"
+    "ipa": "/qʹɐ'ru:/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-01205",
@@ -221170,7 +221269,10 @@
     },
     "isLemma": false,
     "ipa": "/'ʔɐpʹqʹɬɐpʹqʹ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-01216",
@@ -221432,7 +221534,10 @@
       "rule": "compound"
     },
     "conceptId": "JUSTICE",
-    "ipa": "/kʹʷɐn/"
+    "ipa": "/kʹʷɐn/",
+    "translations": {
+      "tr": "git! + donmak"
+    }
   },
   {
     "id": "L-CORPUS2-01229",
@@ -222428,7 +222533,10 @@
     },
     "notes": "Corpus v1.0 batch-2 (freq: 63, lang: ady, source: none)",
     "isLemma": false,
-    "ipa": "/ɕaːmaran/"
+    "ipa": "/ɕaːmaran/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-01270",
@@ -222560,7 +222668,10 @@
       "rule": "compound"
     },
     "ipaSource": "root-derived",
-    "ipa": "/ʔejkʼɐ/"
+    "ipa": "/ʔejkʼɐ/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-01275",
@@ -223008,7 +223119,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/qʹǝp/"
+    "ipa": "/qʹǝp/",
+    "translations": {
+      "tr": "yemek + BAĞIŞ"
+    }
   },
   {
     "id": "L-CORPUS2-01293",
@@ -223256,7 +223370,10 @@
       "rule": "compound"
     },
     "ipaSource": "root-derived",
-    "ipa": "/sɐrkʼɐ/"
+    "ipa": "/sɐrkʼɐ/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-01302",
@@ -224075,7 +224192,10 @@
     "rootIds": [
       "R-KHY_2"
     ],
-    "ipa": "/χǝ'bɑ:r/"
+    "ipa": "/χǝ'bɑ:r/",
+    "translations": {
+      "tr": "HABER + iyimser"
+    }
   },
   {
     "id": "L-CORPUS2-01333",
@@ -225880,7 +226000,10 @@
     },
     "isLemma": false,
     "conceptId": "MORNING",
-    "ipa": "/te:pɕɐ'nǝʁɐ/"
+    "ipa": "/te:pɕɐ'nǝʁɐ/",
+    "translations": {
+      "tr": "DESPOTİZM + buyuk"
+    }
   },
   {
     "id": "L-CORPUS2-01403",
@@ -226180,7 +226303,10 @@
       "R-SHCH"
     ],
     "ipa": "/ɕǝs'ħǝn/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-01414",
@@ -227523,7 +227649,10 @@
       ]
     },
     "isLemma": false,
-    "ipa": "/qʹǝr/"
+    "ipa": "/qʹǝr/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-01465",
@@ -227689,7 +227818,10 @@
     },
     "conceptId": "CRADLE",
     "ipa": "/kuɕa/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-01471",
@@ -228237,7 +228369,10 @@
     "isLemma": false,
     "conceptId": "HOUSEWIFE",
     "ipa": "/wǝnɐ'gʷɑ:ɕɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-01492",
@@ -229170,7 +229305,10 @@
       "rule": "compound"
     },
     "ipa": "/pʹqʹǝ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-01528",
@@ -229196,7 +229334,10 @@
       "rule": "compound"
     },
     "ipaSource": "form-derived",
-    "ipa": "/tǝmǝkʼodɐw/"
+    "ipa": "/tǝmǝkʼodɐw/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-01529",
@@ -229554,7 +229695,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/χʷǝn/"
+    "ipa": "/χʷǝn/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-01545",
@@ -229936,7 +230080,10 @@
       "rule": "compound"
     },
     "ipaSource": "root-derived",
-    "ipa": "/aʃʼɐrɐp/"
+    "ipa": "/aʃʼɐrɐp/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-01560",
@@ -229960,7 +230107,10 @@
       ]
     },
     "isLemma": false,
-    "ipa": "/ɬɐ'tʹʂǝn/"
+    "ipa": "/ɬɐ'tʹʂǝn/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-01561",
@@ -230102,7 +230252,10 @@
     },
     "conceptId": "DEFECT",
     "ipa": "/ɬɐ'gʷɑ:ʑɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "Dar + BILGI"
+    }
   },
   {
     "id": "L-CORPUS2-01566",
@@ -230291,7 +230444,10 @@
     "isLemma": false,
     "conceptId": "WORK",
     "ipaSource": "root-derived",
-    "ipa": "/din-lɐʑakʷʼɐxɐm/"
+    "ipa": "/din-lɐʑakʷʼɐxɐm/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-01575",
@@ -230799,7 +230955,10 @@
     },
     "isLemma": false,
     "ipa": "/'ʔɐpʹqʹɬɐpʹqʹ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-01593",
@@ -230994,7 +231153,10 @@
     },
     "conceptId": "CRADLE",
     "ipa": "/kuɕa/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-01600",
@@ -231415,7 +231577,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/ɕʹɐ/"
+    "ipa": "/ɕʹɐ/",
+    "translations": {
+      "tr": "onların + yeni"
+    }
   },
   {
     "id": "L-CORPUS2-01615",
@@ -231608,7 +231773,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/mǝħɐ'nɐ/"
+    "ipa": "/mǝħɐ'nɐ/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-01622",
@@ -233401,7 +233569,10 @@
       "rule": "compound"
     },
     "ipa": "/pʹqʹǝ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-01692",
@@ -233426,7 +233597,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/qʹʷǝr'mɐn/"
+    "ipa": "/qʹʷǝr'mɐn/",
+    "translations": {
+      "tr": "KURBAN + BÎNAMAZ"
+    }
   },
   {
     "id": "L-CORPUS2-01693",
@@ -234857,7 +235031,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/'ʔǝħɐ/"
+    "ipa": "/'ʔǝħɐ/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-01752",
@@ -236075,7 +236252,10 @@
       "rule": "compound"
     },
     "conceptId": "THURSDAY",
-    "ipa": "/'mǝdɐ/"
+    "ipa": "/'mǝdɐ/",
+    "translations": {
+      "tr": "onların + kuyu"
+    }
   },
   {
     "id": "L-CORPUS2-01801",
@@ -237287,7 +237467,10 @@
     ],
     "conceptId": "COMPASSION",
     "ipa": "/ɕǝs'ħǝn/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-01850",
@@ -237634,7 +237817,10 @@
       "R-C1YQ1U"
     ],
     "conceptId": "COWARD",
-    "ipa": "/tʹsǝkʹʷ/"
+    "ipa": "/tʹsǝkʹʷ/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-01864",
@@ -238012,7 +238198,10 @@
     },
     "notes": "Corpus v1.0 batch-2 (freq: 47, lang: ady, source: none)",
     "isLemma": false,
-    "ipa": "/jaːwptʃəʁ/"
+    "ipa": "/jaːwptʃəʁ/",
+    "translations": {
+      "tr": "onların + KUYU"
+    }
   },
   {
     "id": "L-CORPUS2-01880",
@@ -238351,7 +238540,10 @@
       "rule": "compound"
     },
     "ipa": "/'zǝmi:/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "KOLON + yeni"
+    }
   },
   {
     "id": "L-CORPUS2-01893",
@@ -239251,7 +239443,10 @@
       ]
     },
     "isLemma": false,
-    "ipa": "/ɬɐ'tʹʂǝn/"
+    "ipa": "/ɬɐ'tʹʂǝn/",
+    "translations": {
+      "tr": "HAZINE + Demirci dükkanı"
+    }
   },
   {
     "id": "L-CORPUS2-01927",
@@ -240801,7 +240996,10 @@
     },
     "conceptId": "PETROLEUM",
     "ipaSource": "root-derived",
-    "ipa": "/zǝɕaʃʼǝrɐ/"
+    "ipa": "/zǝɕaʃʼǝrɐ/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-01987",
@@ -241947,7 +242145,10 @@
     },
     "isLemma": false,
     "conceptId": "HOUSEWIFE",
-    "ipa": "/wǝnɐ'ʔʷǝt/"
+    "ipa": "/wǝnɐ'ʔʷǝt/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-02030",
@@ -242370,7 +242571,10 @@
     "isLemma": false,
     "conceptId": "KALMYK",
     "ipa": "/qʹɐ'ɮmǝqʹ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "dikkat + PEKİ iyi"
+    }
   },
   {
     "id": "L-CORPUS2-02046",
@@ -242666,7 +242870,10 @@
     },
     "conceptId": "PROTECT",
     "ipa": "/χʷǝ'mɐn/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "Çukur + BULUŞ"
+    }
   },
   {
     "id": "L-CORPUS2-02057",
@@ -242864,7 +243071,10 @@
       "rule": "compound"
     },
     "ipa": "/pso:/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-02065",
@@ -242888,7 +243098,10 @@
       ]
     },
     "isLemma": false,
-    "ipa": "/'psɑ:ɬɐ/"
+    "ipa": "/'psɑ:ɬɐ/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-02067",
@@ -243333,7 +243546,10 @@
     "rootIds": [
       "R-SHCH"
     ],
-    "ipa": "/ɕǝze:'kʹʷɐn/"
+    "ipa": "/ɕǝze:'kʹʷɐn/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-02082",
@@ -243912,7 +244128,10 @@
     "subConceptId": "",
     "taxonomyFamily": "",
     "rootForm": "пэ-",
-    "ipa": "/pɐ'ɕɐ/"
+    "ipa": "/pɐ'ɕɐ/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-02106",
@@ -244930,7 +245149,10 @@
       "rule": "compound"
     },
     "ipa": "/tʹʂǝħ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "KUYU + YAYGARA"
+    }
   },
   {
     "id": "L-CORPUS2-02147",
@@ -244957,7 +245179,10 @@
     },
     "conceptId": "LOVE",
     "ipa": "/'gʷǝɕʹɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-02148",
@@ -247269,7 +247494,10 @@
       "rule": "compound"
     },
     "ipa": "/'gʷǝfʹɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-02232",
@@ -247377,7 +247605,10 @@
       "rule": "compound"
     },
     "ipa": "/'gʷǝfʹɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "onun kalbi + iyi"
+    }
   },
   {
     "id": "L-CORPUS2-02236",
@@ -247526,7 +247757,10 @@
     "subConceptId": "EYE",
     "taxonomyFamily": "Göz & Görme",
     "rootForm": "нэ-",
-    "ipa": "/nɐfʹ/"
+    "ipa": "/nɐfʹ/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-02242",
@@ -248047,7 +248281,10 @@
       "rule": "compound"
     },
     "ipaSource": "root-derived",
-    "ipa": "/dǝmǝkʷʼɐdw/"
+    "ipa": "/dǝmǝkʷʼɐdw/",
+    "translations": {
+      "tr": "Sağlam + git!"
+    }
   },
   {
     "id": "L-CORPUS2-02263",
@@ -248394,7 +248631,10 @@
     },
     "conceptId": "NOSE",
     "ipa": "/jɐpɐ're:j/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-02276",
@@ -248740,7 +248980,10 @@
     },
     "isLemma": false,
     "ipa": "/'ʔɐpʹqʹɬɐpʹqʹ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "BUZCU + Kalın"
+    }
   },
   {
     "id": "L-CORPUS2-02292",
@@ -249594,7 +249837,10 @@
       "rule": "compound"
     },
     "ipa": "/ɐ'rɑ:ɕ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "ACABA + Çukur"
+    }
   },
   {
     "id": "L-CORPUS2-02324",
@@ -249888,7 +250134,10 @@
     },
     "conceptId": "MAN",
     "ipa": "/tʹsǝ'xʷǝχʷ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-02335",
@@ -250085,7 +250334,10 @@
     },
     "conceptId": "CRADLE",
     "ipa": "/kuɕa/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "prens"
+    }
   },
   {
     "id": "L-CORPUS2-02343",
@@ -250401,7 +250653,10 @@
     },
     "conceptId": "LOVE",
     "ipa": "/'gʷǝɕʹɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-02357",
@@ -250909,7 +251164,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/be:ʁǝm'bɑ:r/"
+    "ipa": "/be:ʁǝm'bɑ:r/",
+    "translations": {
+      "tr": "peygamber + Söylenti"
+    }
   },
   {
     "id": "L-CORPUS2-02376",
@@ -251088,7 +251346,10 @@
       "R-UER_1"
     ],
     "conceptId": "SINGER",
-    "ipa": "/wɐ'rɐd/"
+    "ipa": "/wɐ'rɐd/",
+    "translations": {
+      "tr": "ŞARKI + agiz"
+    }
   },
   {
     "id": "L-CORPUS2-02383",
@@ -251591,7 +251852,10 @@
     "isLemma": false,
     "conceptId": "HOUSEWIFE",
     "ipa": "/wǝnɐ'gʷɑ:ɕɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "ev + Karaciğer"
+    }
   },
   {
     "id": "L-CORPUS2-02402",
@@ -251936,7 +252200,10 @@
     },
     "conceptId": "THOUSAND",
     "ipa": "/mi:n/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "FOTOJENIK + yil"
+    }
   },
   {
     "id": "L-CORPUS2-02415",
@@ -252009,7 +252276,10 @@
       "rule": "compound"
     },
     "ipa": "/'kʷǝpʹɕʹɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-02418",
@@ -252363,7 +252633,10 @@
     },
     "notes": "Corpus v1.0 batch-2 (freq: 37, lang: kbd, source: none)",
     "isLemma": false,
-    "ipa": "/jaːrjitaːɕ/"
+    "ipa": "/jaːrjitaːɕ/",
+    "translations": {
+      "tr": "onların + ÖNCEKI"
+    }
   },
   {
     "id": "L-CORPUS2-02434",
@@ -253905,7 +254178,10 @@
       "rule": "compound"
     },
     "ipa": "/'gʷǝfʹɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-02492",
@@ -254782,7 +255058,10 @@
     },
     "isLemma": false,
     "ipa": "/'ʔɐpʹqʹɬɐpʹqʹ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "bilemek + ötmek"
+    }
   },
   {
     "id": "L-CORPUS2-02529",
@@ -255044,7 +255323,10 @@
     "subConceptId": "INDEFINITE_INS",
     "taxonomyFamily": "Gramer & Çekim",
     "rootForm": "гуэ-",
-    "ipa": "/gʷɐr/"
+    "ipa": "/gʷɐr/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-02538",
@@ -255069,7 +255351,10 @@
     },
     "isLemma": false,
     "conceptId": "MORNING",
-    "ipa": "/te:pɕɐ'nǝʁɐ/"
+    "ipa": "/te:pɕɐ'nǝʁɐ/",
+    "translations": {
+      "tr": "DESPOTİZM + buyuk"
+    }
   },
   {
     "id": "L-CORPUS2-02539",
@@ -255717,7 +256002,10 @@
     },
     "conceptId": "SUITOR",
     "ipa": "/psɐˈɬǝχʷ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "TESLIM + GÖNÜLSÜZ"
+    }
   },
   {
     "id": "L-CORPUS2-02564",
@@ -255769,7 +256057,10 @@
       "R-SHCH"
     ],
     "ipa": "/ɕǝs'ħǝn/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "NUMUNELIK + yanak"
+    }
   },
   {
     "id": "L-CORPUS2-02566",
@@ -255841,7 +256132,10 @@
     },
     "notes": "Corpus v1.0 batch-2 (freq: 36, lang: ady, source: none)",
     "isLemma": false,
-    "ipa": "/rəkwaxaramra/"
+    "ipa": "/rəkwaxaramra/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-02569",
@@ -255867,7 +256161,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/'ʁʷǝsɐ/"
+    "ipa": "/'ʁʷǝsɐ/",
+    "translations": {
+      "tr": "onların + yol arkadaşı"
+    }
   },
   {
     "id": "L-CORPUS2-02570",
@@ -256124,7 +256421,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/qʹʷǝr'mɐn/"
+    "ipa": "/qʹʷǝr'mɐn/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-02581",
@@ -256268,7 +256568,10 @@
     },
     "conceptId": "CRADLE",
     "ipa": "/kuɕa/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-02587",
@@ -256528,7 +256831,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/be:ʁǝm'bɑ:r/"
+    "ipa": "/be:ʁǝm'bɑ:r/",
+    "translations": {
+      "tr": "peygamber + Söylenti"
+    }
   },
   {
     "id": "L-CORPUS2-02598",
@@ -257153,7 +257459,10 @@
     },
     "conceptId": "THURSDAY",
     "ipa": "/mɐqʹʷɐˈwɐʁʷɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "onların + BAĞIL"
+    }
   },
   {
     "id": "L-CORPUS2-02621",
@@ -257726,7 +258035,10 @@
       "rule": "compound"
     },
     "conceptId": "LOVE",
-    "ipa": "/bzɐ'dᶎɑ:ʁɐ/"
+    "ipa": "/bzɐ'dᶎɑ:ʁɐ/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-02643",
@@ -257744,7 +258056,10 @@
       "R-K1YH"
     ],
     "conceptId": "LONG",
-    "ipa": "/tʹʂǝħ/"
+    "ipa": "/tʹʂǝħ/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-02644",
@@ -257942,7 +258257,10 @@
     },
     "conceptId": "LOVE",
     "ipa": "/'gʷǝɕʹɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-02652",
@@ -258103,7 +258421,10 @@
       "rule": "compound"
     },
     "ipaSource": "root-derived",
-    "ipa": "/bar-nabbɐrɐ/"
+    "ipa": "/bar-nabbɐrɐ/",
+    "translations": {
+      "tr": "bar + fickle"
+    }
   },
   {
     "id": "L-CORPUS2-02658",
@@ -258175,7 +258496,10 @@
     },
     "isLemma": false,
     "ipa": "/'ʔɐpʹqʹɬɐpʹqʹ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-02661",
@@ -259454,7 +259778,10 @@
       "R-MUR"
     ],
     "conceptId": "GOAL",
-    "ipa": "/mu:'rɑ:d/"
+    "ipa": "/mu:'rɑ:d/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-02711",
@@ -259515,7 +259842,10 @@
       "rule": "compound"
     },
     "conceptId": "FATHERHOOD",
-    "ipa": "/'bǝdɐ/"
+    "ipa": "/'bǝdɐ/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-02714",
@@ -260236,7 +260566,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/qʹʷǝr'mɐn/"
+    "ipa": "/qʹʷǝr'mɐn/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-02743",
@@ -260402,7 +260735,10 @@
     },
     "isLemma": false,
     "ipa": "/'ʔɐpʹqʹɬɐpʹqʹ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-02750",
@@ -260544,7 +260880,10 @@
       "rule": "compound"
     },
     "ipaSource": "root-derived",
-    "ipa": "/zɐxɐsxǝʁɐ/"
+    "ipa": "/zɐxɐsxǝʁɐ/",
+    "translations": {
+      "tr": "CELSE + yil"
+    }
   },
   {
     "id": "L-CORPUS2-02756",
@@ -260591,7 +260930,10 @@
     "subConceptId": "",
     "taxonomyFamily": "",
     "rootForm": "пэ-",
-    "ipa": "/pɐ'ɕɐ/"
+    "ipa": "/pɐ'ɕɐ/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-02758",
@@ -260616,7 +260958,10 @@
     },
     "isLemma": false,
     "ipa": "/'ʔɐpʹqʹɬɐpʹqʹ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "Bostan korkuluğu + ALARM"
+    }
   },
   {
     "id": "L-CORPUS2-02760",
@@ -260741,7 +261086,10 @@
       "rule": "compound"
     },
     "conceptId": "PROTECT",
-    "ipa": "/qʹɐb/"
+    "ipa": "/qʹɐb/",
+    "translations": {
+      "tr": "ÖYKÜ + verimli"
+    }
   },
   {
     "id": "L-CORPUS2-02765",
@@ -261175,7 +261523,10 @@
     },
     "conceptId": "LOVE",
     "ipa": "/'gʷǝɕʹɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-02780",
@@ -261851,7 +262202,10 @@
     },
     "isLemma": false,
     "ipa": "/qʹʷɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-02806",
@@ -261963,7 +262317,10 @@
       ]
     },
     "isLemma": false,
-    "ipa": "/ɬɐtʹʂǝ'nǝʁɐ/"
+    "ipa": "/ɬɐtʹʂǝ'nǝʁɐ/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-02810",
@@ -262587,7 +262944,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/kʹʷɐn/"
+    "ipa": "/kʹʷɐn/",
+    "translations": {
+      "tr": "sansli ev + gitti"
+    }
   },
   {
     "id": "L-CORPUS2-02834",
@@ -263071,7 +263431,10 @@
     },
     "conceptId": "LOVE",
     "ipa": "/'gʷǝɕʹɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-02853",
@@ -263300,7 +263663,10 @@
     },
     "isLemma": false,
     "ipa": "/'ʔɐpʹqʹɬɐpʹqʹ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "Karaciğer + ayak + gossip"
+    }
   },
   {
     "id": "L-CORPUS2-02861",
@@ -263506,7 +263872,10 @@
     },
     "isLemma": false,
     "ipa": "/'ʔɐpʹqʹɬɐpʹqʹ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "EVET + ayak"
+    }
   },
   {
     "id": "L-CORPUS2-02870",
@@ -263561,7 +263930,10 @@
     },
     "isLemma": false,
     "ipa": "/nɐb'ʑǝts/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-02872",
@@ -263846,7 +264218,10 @@
       "rule": "compound"
     },
     "ipa": "/ɕǝs'ħǝn/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "ISLIK + ÖMÜR"
+    }
   },
   {
     "id": "L-CORPUS2-02884",
@@ -263930,7 +264305,10 @@
       "rule": "compound"
     },
     "ipa": "/nɐb'ʑǝts/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "yil + DAKIKA"
+    }
   },
   {
     "id": "L-CORPUS2-02887",
@@ -264040,7 +264418,10 @@
       "rule": "compound"
     },
     "conceptId": "THOUSAND",
-    "ipa": "/mǝħamɐt-amin/"
+    "ipa": "/mǝħamɐt-amin/",
+    "translations": {
+      "tr": "sansli ev + amen!"
+    }
   },
   {
     "id": "L-CORPUS2-02891",
@@ -264067,7 +264448,10 @@
       "rule": "compound"
     },
     "ipa": "/'ɕǝpʹqʹɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-02892",
@@ -264418,7 +264802,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/gʷǝrǝ'ʔʷɐn/"
+    "ipa": "/gʷǝrǝ'ʔʷɐn/",
+    "translations": {
+      "tr": "onun kalbi + ötmek"
+    }
   },
   {
     "id": "L-CORPUS2-02908",
@@ -264500,7 +264887,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/ħɐmzɐt/"
+    "ipa": "/ħɐmzɐt/",
+    "translations": {
+      "tr": "köpeğin + ada"
+    }
   },
   {
     "id": "L-CORPUS2-02911",
@@ -264591,7 +264981,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/'jɑ:ʁɐ/"
+    "ipa": "/'jɑ:ʁɐ/",
+    "translations": {
+      "tr": "Uyuz + kuyu"
+    }
   },
   {
     "id": "L-CORPUS2-02915",
@@ -264778,7 +265171,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/ħɐrf/"
+    "ipa": "/ħɐrf/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-02922",
@@ -265010,7 +265406,10 @@
       "rule": "compound"
     },
     "ipaSource": "root-derived",
-    "ipa": "/zɐvʁaɕʼɐ/"
+    "ipa": "/zɐvʁaɕʼɐ/",
+    "translations": {
+      "tr": "Dar + hayat"
+    }
   },
   {
     "id": "L-CORPUS2-02931",
@@ -265435,7 +265834,10 @@
     },
     "isLemma": false,
     "conceptId": "MORNING",
-    "ipa": "/'jǝpɕɐ/"
+    "ipa": "/'jǝpɕɐ/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-02950",
@@ -265459,7 +265861,10 @@
       ]
     },
     "isLemma": false,
-    "ipa": "/ɬɐtʹʂǝ'nǝʁɐ/"
+    "ipa": "/ɬɐtʹʂǝ'nǝʁɐ/",
+    "translations": {
+      "tr": "güçlü + buyuk"
+    }
   },
   {
     "id": "L-CORPUS2-02951",
@@ -265484,7 +265889,10 @@
     },
     "isLemma": false,
     "ipa": "/qʹʷɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "gossip + Oğul"
+    }
   },
   {
     "id": "L-CORPUS2-02952",
@@ -266325,7 +266733,10 @@
     },
     "isLemma": false,
     "ipa": "/nɐb'ʑǝts/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "Çukur + dairy + iş + AKSAKAL"
+    }
   },
   {
     "id": "L-CORPUS2-02989",
@@ -266351,7 +266762,10 @@
       "rule": "compound"
     },
     "ipaSource": "form-derived",
-    "ipa": "/aʔoɕtǝʁɐ/"
+    "ipa": "/aʔoɕtǝʁɐ/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-02990",
@@ -266603,7 +267017,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/qʹʷǝr'mɐn/"
+    "ipa": "/qʹʷǝr'mɐn/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-02999",
@@ -266798,7 +267215,10 @@
     },
     "notes": "Corpus v1.0 batch-2 (freq: 32, lang: ady, source: none)",
     "isLemma": false,
-    "ipa": "/aːħəʃwaw/"
+    "ipa": "/aːħəʃwaw/",
+    "translations": {
+      "tr": "Parça + verimli"
+    }
   },
   {
     "id": "L-CORPUS2-03008",
@@ -266875,7 +267295,10 @@
       "rule": "compound"
     },
     "ipa": "/dᶎɐʂ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "ÇAĞIRTI + Örme zırh gömlek"
+    }
   },
   {
     "id": "L-CORPUS2-03011",
@@ -267045,7 +267468,10 @@
     },
     "isLemma": false,
     "conceptId": "KALMYK",
-    "ipa": "/qʼɐ'rǝtʼʂ/"
+    "ipa": "/qʼɐ'rǝtʼʂ/",
+    "translations": {
+      "tr": "EVET + Kalın"
+    }
   },
   {
     "id": "L-CORPUS2-03018",
@@ -267209,7 +267635,10 @@
       "R-F"
     ],
     "ipaSource": "root-derived",
-    "ipa": "/fǝzɐdʒar/"
+    "ipa": "/fǝzɐdʒar/",
+    "translations": {
+      "tr": "kadın + IŞTE O"
+    }
   },
   {
     "id": "L-CORPUS2-03024",
@@ -267344,7 +267773,10 @@
     "rootIds": [
       "R-1UEKHU"
     ],
-    "ipa": "/ʔʷɐxʷ/"
+    "ipa": "/ʔʷɐxʷ/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-03029",
@@ -268668,7 +269100,10 @@
     },
     "conceptId": "COMPASSION",
     "ipa": "/ɕǝs'ħǝn/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "onların + onların"
+    }
   },
   {
     "id": "L-CORPUS2-03078",
@@ -268749,7 +269184,10 @@
       "rule": "compound"
     },
     "conceptId": "PROTECT",
-    "ipa": "/tʹʂǝn/"
+    "ipa": "/tʹʂǝn/",
+    "translations": {
+      "tr": "bitmek + donmak"
+    }
   },
   {
     "id": "L-CORPUS2-03081",
@@ -269600,7 +270038,10 @@
     "subConceptId": "OATH_NAME",
     "taxonomyFamily": "Dua & Yemin",
     "rootForm": "тхьэ-",
-    "ipa": "/tħɐmkʼɐ/"
+    "ipa": "/tħɐmkʼɐ/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-03112",
@@ -269740,7 +270181,10 @@
       "rule": "compound"
     },
     "ipa": "/'kʷǝpʹɕʹɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-03118",
@@ -270731,7 +271175,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/'xɑ:sɐ/"
+    "ipa": "/'xɑ:sɐ/",
+    "translations": {
+      "tr": "MECLİS + buyuk"
+    }
   },
   {
     "id": "L-CORPUS2-03157",
@@ -270962,7 +271409,10 @@
     },
     "isLemma": false,
     "conceptId": "HOLIDAY",
-    "ipa": "/qʹe:mɐ'tmɑ:xʷɐ/"
+    "ipa": "/qʹe:mɐ'tmɑ:xʷɐ/",
+    "translations": {
+      "tr": "sansli ev + GÜNDÜZ"
+    }
   },
   {
     "id": "L-CORPUS2-03165",
@@ -272999,7 +273449,10 @@
       "rule": "compound"
     },
     "ipaSource": "root-derived",
-    "ipa": "/ǝʃʼɐɕtǝʁɐ/"
+    "ipa": "/ǝʃʼɐɕtǝʁɐ/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-03240",
@@ -273293,7 +273746,10 @@
       "rule": "compound"
     },
     "ipa": "/pǝtʹǝ'sħɐn/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-03255",
@@ -273319,7 +273775,10 @@
       "rule": "compound"
     },
     "ipa": "/tʹʂǝħ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "KUYU + Lastik"
+    }
   },
   {
     "id": "L-CORPUS2-03256",
@@ -273819,7 +274278,10 @@
     },
     "conceptId": "PROTECT",
     "ipa": "/χʷǝ'mɐn/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "Çukur + TOPLULUK + KIŞ"
+    }
   },
   {
     "id": "L-CORPUS2-03276",
@@ -274117,7 +274579,10 @@
       "rule": "compound"
     },
     "conceptId": "BOW_MUSIC",
-    "ipa": "/ɕʹo:pɕ/"
+    "ipa": "/ɕʹo:pɕ/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-03290",
@@ -274504,7 +274969,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/'ʔʷǝmpʹɐ/"
+    "ipa": "/'ʔʷǝmpʹɐ/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-03304",
@@ -275159,7 +275627,10 @@
       "rule": "compound"
     },
     "ipaSource": "root-derived",
-    "ipa": "/ɬǝmkʼɐ/"
+    "ipa": "/ɬǝmkʼɐ/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-03327",
@@ -275384,7 +275855,10 @@
       "rule": "compound"
     },
     "ipa": "/pso:/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-03335",
@@ -275464,7 +275938,10 @@
       "rule": "compound"
     },
     "conceptId": "PROTECT",
-    "ipa": "/qʹɐ'kʹʷɐʁʷɐ/"
+    "ipa": "/qʹɐ'kʹʷɐʁʷɐ/",
+    "translations": {
+      "tr": "bitmek + DARBE"
+    }
   },
   {
     "id": "L-CORPUS2-03338",
@@ -276840,7 +277317,10 @@
       "rule": "compound"
     },
     "ipa": "/'ɕǝpʹqʹɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "Çukur + dairy + iş + yil"
+    }
   },
   {
     "id": "L-CORPUS2-03388",
@@ -276962,7 +277442,10 @@
       "rule": "compound"
     },
     "ipa": "/xɐ'sɐn/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-03394",
@@ -277250,7 +277733,10 @@
     },
     "isLemma": false,
     "ipa": "/'ʔɐpʹqʹɬɐpʹqʹ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-03406",
@@ -277339,7 +277825,10 @@
       ]
     },
     "isLemma": false,
-    "ipa": "/ɬɐ'tʹʂǝn/"
+    "ipa": "/ɬɐ'tʹʂǝn/",
+    "translations": {
+      "tr": "HAZINE + Demirci dükkanı"
+    }
   },
   {
     "id": "L-CORPUS2-03411",
@@ -277495,7 +277984,10 @@
     },
     "conceptId": "THOUSAND",
     "ipa": "/mi:n/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-03417",
@@ -277721,7 +278213,10 @@
     },
     "notes": "Corpus v1.0 batch-2 (freq: 28, lang: kbd, source: none)",
     "isLemma": false,
-    "ipa": "/jaːdaːqəm/"
+    "ipa": "/jaːdaːqəm/",
+    "translations": {
+      "tr": "onların + BALIK"
+    }
   },
   {
     "id": "L-CORPUS2-03427",
@@ -277834,7 +278329,10 @@
       "rule": "compound"
     },
     "conceptId": "PROTECT",
-    "ipa": "/tɐˈdɐn/"
+    "ipa": "/tɐˈdɐn/",
+    "translations": {
+      "tr": "VERİM + AYNIYLA"
+    }
   },
   {
     "id": "L-CORPUS2-03431",
@@ -278207,7 +278705,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/je:'qʹʷɑ:/"
+    "ipa": "/je:'qʹʷɑ:/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-03445",
@@ -278427,7 +278928,10 @@
     },
     "conceptId": "JOY",
     "ipa": "/'gʷǝfʹɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "LÜTFEN ne olur! + unless"
+    }
   },
   {
     "id": "L-CORPUS2-03453",
@@ -278454,7 +278958,10 @@
     },
     "conceptId": "BED_COVER",
     "ipa": "/pʹɐ'te:pχʷɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "BEZIRBENÇ + Barut"
+    }
   },
   {
     "id": "L-CORPUS2-03454",
@@ -278814,7 +279321,10 @@
     "isLemma": false,
     "conceptId": "GRANDFATHER",
     "ipa": "/ɐ'dɐʂxʷɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "prens + dede"
+    }
   },
   {
     "id": "L-CORPUS2-03468",
@@ -278926,7 +279436,10 @@
     "rootIds": [
       "R-1UEKHU"
     ],
-    "ipa": "/ʔʷɐxʷ/"
+    "ipa": "/ʔʷɐxʷ/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-03473",
@@ -279061,7 +279574,10 @@
     "subConceptId": "LEG_BY",
     "taxonomyFamily": "Gramer & Çekim",
     "rootForm": "лъ-",
-    "ipa": "/'ɬɑ:qʹʷɐ/"
+    "ipa": "/'ɬɑ:qʹʷɐ/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-03478",
@@ -279086,7 +279602,10 @@
     },
     "isLemma": false,
     "conceptId": "LIFE_PARTNER",
-    "ipa": "/χʷɐˈpsɐn/"
+    "ipa": "/χʷɐˈpsɐn/",
+    "translations": {
+      "tr": "İMRENMEK + yil"
+    }
   },
   {
     "id": "L-CORPUS2-03479",
@@ -279883,7 +280402,10 @@
     "isLemma": false,
     "conceptId": "TONGUE",
     "ipaSource": "root-derived",
-    "ipa": "/bzɐdʒaʃʼɐxɐm/"
+    "ipa": "/bzɐdʒaʃʼɐxɐm/",
+    "translations": {
+      "tr": "dil + <div style + BILGI"
+    }
   },
   {
     "id": "L-CORPUS2-03506",
@@ -279910,7 +280432,10 @@
     },
     "conceptId": "CRADLE",
     "ipa": "/kuɕa/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-03507",
@@ -280125,7 +280650,10 @@
       "rule": "compound"
     },
     "ipa": "/ɐ'rǝɕ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "FANTI + dikkat"
+    }
   },
   {
     "id": "L-CORPUS2-03515",
@@ -280935,7 +281463,10 @@
     },
     "conceptId": "LOVE",
     "ipa": "/'gʷǝɕʹɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-03547",
@@ -281045,7 +281576,10 @@
     },
     "isLemma": false,
     "conceptId": "WAIT",
-    "ipa": "/'te:pɬɐ/"
+    "ipa": "/'te:pɬɐ/",
+    "translations": {
+      "tr": "onların + düşünme"
+    }
   },
   {
     "id": "L-CORPUS2-03551",
@@ -281946,7 +282480,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/wǝ'nɑ:fɐ/"
+    "ipa": "/wǝ'nɑ:fɐ/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-03585",
@@ -282264,7 +282801,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/be:ʁǝm'bɑ:r/"
+    "ipa": "/be:ʁǝm'bɑ:r/",
+    "translations": {
+      "tr": "peygamber + Söylenti"
+    }
   },
   {
     "id": "L-CORPUS2-03596",
@@ -282290,7 +282830,10 @@
       "rule": "compound"
     },
     "ipa": "/ɕħɐgʷ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "AMIYANE + NURLU"
+    }
   },
   {
     "id": "L-CORPUS2-03597",
@@ -282594,7 +283137,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/dǝxʷ/"
+    "ipa": "/dǝxʷ/",
+    "translations": {
+      "tr": "KOLONYA + AİT"
+    }
   },
   {
     "id": "L-CORPUS2-03608",
@@ -282732,7 +283278,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/χʷǝn/"
+    "ipa": "/χʷǝn/",
+    "translations": {
+      "tr": "MÜMKÜN + Çukur"
+    }
   },
   {
     "id": "L-CORPUS2-03614",
@@ -282785,7 +283334,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/'jɑ:ʁɐ/"
+    "ipa": "/'jɑ:ʁɐ/",
+    "translations": {
+      "tr": "Uyuz + participator; accomplice"
+    }
   },
   {
     "id": "L-CORPUS2-03616",
@@ -283380,7 +283932,10 @@
       "rule": "compound"
     },
     "ipaSource": "root-derived",
-    "ipa": "/mɐʃǝnɐ/"
+    "ipa": "/mɐʃǝnɐ/",
+    "translations": {
+      "tr": "Korkuyor"
+    }
   },
   {
     "id": "L-CORPUS2-03638",
@@ -283660,7 +284215,10 @@
     },
     "notes": "Corpus v1.0 batch-2 (freq: 27, lang: kbd, source: none)",
     "isLemma": false,
-    "ipa": "/jaːəʁəw/"
+    "ipa": "/jaːəʁəw/",
+    "translations": {
+      "tr": "onların + dikkat"
+    }
   },
   {
     "id": "L-CORPUS2-03649",
@@ -283780,7 +284338,10 @@
     },
     "isLemma": false,
     "conceptId": "BED_COVER",
-    "ipa": "/ɕʹɐ'pχʷɐn/"
+    "ipa": "/ɕʹɐ'pχʷɐn/",
+    "translations": {
+      "tr": "Kendir + HAZIR"
+    }
   },
   {
     "id": "L-CORPUS2-03654",
@@ -285042,7 +285603,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/ˈχʷǝʁɐ/"
+    "ipa": "/ˈχʷǝʁɐ/",
+    "translations": {
+      "tr": "ÂCİZ + BILGI + yil"
+    }
   },
   {
     "id": "L-CORPUS2-03701",
@@ -285068,7 +285632,10 @@
     },
     "isLemma": false,
     "conceptId": "HOUSEWIFE",
-    "ipa": "/wǝnɐ'ʔʷǝt/"
+    "ipa": "/wǝnɐ'ʔʷǝt/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-03702",
@@ -285213,7 +285780,10 @@
       "rule": "compound"
     },
     "conceptId": "DEFECT",
-    "ipa": "/qʹe:'mǝkʹʷ/"
+    "ipa": "/qʹe:'mǝkʹʷ/",
+    "translations": {
+      "tr": "SAKINCALI + BABACA"
+    }
   },
   {
     "id": "L-CORPUS2-03710",
@@ -285271,7 +285841,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/'ħɐtʹʂɐ/"
+    "ipa": "/'ħɐtʹʂɐ/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-03712",
@@ -286006,7 +286579,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/ɕʹɐn/"
+    "ipa": "/ɕʹɐn/",
+    "translations": {
+      "tr": "onların + anlamak"
+    }
   },
   {
     "id": "L-CORPUS2-03742",
@@ -286302,7 +286878,10 @@
       "rule": "compound"
     },
     "conceptId": "GREEN",
-    "ipa": "/sǝħɐzǝrɕ/"
+    "ipa": "/sǝħɐzǝrɕ/",
+    "translations": {
+      "tr": "IH + BIRBIRI"
+    }
   },
   {
     "id": "L-CORPUS2-03753",
@@ -286436,7 +287015,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/'ɬɑ:pʹɐ/"
+    "ipa": "/'ɬɑ:pʹɐ/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-03758",
@@ -286503,7 +287085,10 @@
       "rule": "compound"
     },
     "ipa": "/pʹqʹǝ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "enfeksiyon + şimdi"
+    }
   },
   {
     "id": "L-CORPUS2-03761",
@@ -286892,7 +287477,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/χʷɑ:/"
+    "ipa": "/χʷɑ:/",
+    "translations": {
+      "tr": "ripe + Çukur"
+    }
   },
   {
     "id": "L-CORPUS2-03774",
@@ -287366,7 +287954,10 @@
     },
     "isLemma": false,
     "conceptId": "THURSDAY",
-    "ipa": "/mǝɬkʷ/"
+    "ipa": "/mǝɬkʷ/",
+    "translations": {
+      "tr": "IPOTEKLI + buyuk"
+    }
   },
   {
     "id": "L-CORPUS2-03793",
@@ -287481,7 +288072,10 @@
       "rule": "compound"
     },
     "ipaSource": "root-derived",
-    "ipa": "/jaɕʼǝʁʷw/"
+    "ipa": "/jaɕʼǝʁʷw/",
+    "translations": {
+      "tr": "onların + BİRLİKTE"
+    }
   },
   {
     "id": "L-CORPUS2-03797",
@@ -288042,7 +288636,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/qʹǝp/"
+    "ipa": "/qʹǝp/",
+    "translations": {
+      "tr": "yemek + AYAK"
+    }
   },
   {
     "id": "L-CORPUS2-03817",
@@ -288116,7 +288713,10 @@
     "rootIds": [
       "R-1E"
     ],
-    "ipa": "/ʔɐmǝr/"
+    "ipa": "/ʔɐmǝr/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-03820",
@@ -288924,7 +289524,10 @@
     "taxonomyFamily": "Sınır & Mesafe",
     "rootForm": "нэ-",
     "ipa": "/ɬɐ'gʷɑ:ʑɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "bu güne kadar + eskiden"
+    }
   },
   {
     "id": "L-CORPUS2-03849",
@@ -289034,7 +289637,10 @@
       "rule": "compound"
     },
     "ipaSource": "root-derived",
-    "ipa": "/ǝʃʼɐʁɐ/"
+    "ipa": "/ǝʃʼɐʁɐ/",
+    "translations": {
+      "tr": "BILGI + yil"
+    }
   },
   {
     "id": "L-CORPUS2-03853",
@@ -289155,7 +289761,10 @@
     },
     "notes": "Corpus v1.0 batch-2 (freq: 26, lang: ady, source: none)",
     "isLemma": false,
-    "ipa": "/ʐwʁatsaːka/"
+    "ipa": "/ʐwʁatsaːka/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-03858",
@@ -289249,7 +289858,10 @@
       "rule": "compound"
     },
     "ipa": "/jɐpɐ're:j/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-03863",
@@ -289502,7 +290114,10 @@
       "rule": "compound"
     },
     "ipa": "/ɐ'rǝɕ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "EVET + DEJENERE"
+    }
   },
   {
     "id": "L-CORPUS2-03872",
@@ -289663,7 +290278,10 @@
     "isLemma": false,
     "conceptId": "TONGUE",
     "ipaSource": "root-derived",
-    "ipa": "/bzɐdʒaʃʼɐm/"
+    "ipa": "/bzɐdʒaʃʼɐm/",
+    "translations": {
+      "tr": "dil + <div style + BILGI"
+    }
   },
   {
     "id": "L-CORPUS2-03878",
@@ -290049,7 +290667,10 @@
       "rule": "compound"
     },
     "ipa": "/ɕħɐgʷ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-03895",
@@ -291292,7 +291913,10 @@
     "subConceptId": "EYE",
     "taxonomyFamily": "Göz & Görme",
     "rootForm": "нэ-",
-    "ipa": "/nɐfʹ/"
+    "ipa": "/nɐfʹ/",
+    "translations": {
+      "tr": "iyilik + act smearing"
+    }
   },
   {
     "id": "L-CORPUS2-03943",
@@ -293130,7 +293754,10 @@
       "rule": "compound"
     },
     "conceptId": "JOY",
-    "ipa": "/zɐʁaɕʼɐ/"
+    "ipa": "/zɐʁaɕʼɐ/",
+    "translations": {
+      "tr": "isik + yeni"
+    }
   },
   {
     "id": "L-CORPUS2-04014",
@@ -294172,7 +294799,10 @@
     },
     "conceptId": "THOUSAND",
     "ipa": "/mi:n/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "ISLIK + CAHILIYET"
+    }
   },
   {
     "id": "L-CORPUS2-04053",
@@ -294257,7 +294887,10 @@
     },
     "conceptId": "CRADLE",
     "ipa": "/kuɕa/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-04057",
@@ -294403,7 +295036,10 @@
     "isLemma": false,
     "conceptId": "DEFECT",
     "ipa": "/ɬɐ'gʷɑ:ʑɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "present + agiz"
+    }
   },
   {
     "id": "L-CORPUS2-04062",
@@ -294707,7 +295343,10 @@
     },
     "isLemma": false,
     "ipa": "/nɐb'ʑǝts/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-04075",
@@ -294933,7 +295572,10 @@
       "rule": "compound"
     },
     "ipa": "/'ʔɐpʹqʹɬɐpʹqʹ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-04084",
@@ -295293,7 +295935,10 @@
       "rule": "compound"
     },
     "ipa": "/'kʷǝpʹɕʹɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-04097",
@@ -295784,7 +296429,10 @@
     "rootIds": [
       "R-SHCH"
     ],
-    "ipa": "/ɕǝgʷ/"
+    "ipa": "/ɕǝgʷ/",
+    "translations": {
+      "tr": "DORUK + iyi + KIŞ"
+    }
   },
   {
     "id": "L-CORPUS2-04115",
@@ -296334,7 +296982,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/'pɑ:ʂɐ/"
+    "ipa": "/'pɑ:ʂɐ/",
+    "translations": {
+      "tr": "DİREKTÖR + buyuk"
+    }
   },
   {
     "id": "L-CORPUS2-04135",
@@ -296953,7 +297604,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/ɕʹɐ'tʹʂǝn/"
+    "ipa": "/ɕʹɐ'tʹʂǝn/",
+    "translations": {
+      "tr": "rising + donmak"
+    }
   },
   {
     "id": "L-CORPUS2-04157",
@@ -297437,7 +298091,10 @@
     },
     "conceptId": "SEE_LOVE",
     "ipa": "/ɬɐ'ʁʷǝn/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "GÖRSEL + Çukur"
+    }
   },
   {
     "id": "L-CORPUS2-04174",
@@ -297482,7 +298139,10 @@
     "rootIds": [
       "R-FIE"
     ],
-    "ipa": "/fʹɐɕχʷǝ'nǝʁɐ/"
+    "ipa": "/fʹɐɕχʷǝ'nǝʁɐ/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-04176",
@@ -297715,7 +298375,10 @@
       "R-ZYSHCH"
     ],
     "ipa": "/ɕʹɐn/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "expert + CINSEL"
+    }
   },
   {
     "id": "L-CORPUS2-04185",
@@ -297948,7 +298611,10 @@
       "rule": "compound"
     },
     "conceptId": "JUSTICE",
-    "ipa": "/zɐ'xʷɑ:ʁɐ/"
+    "ipa": "/zɐ'xʷɑ:ʁɐ/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-04193",
@@ -298741,7 +299407,10 @@
     "taxonomyFamily": "Ruh & Can",
     "rootForm": "псэ",
     "ipa": "/psɐʁʷ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "merhamet + CETVEL"
+    }
   },
   {
     "id": "L-CORPUS2-04223",
@@ -298768,7 +299437,10 @@
     },
     "conceptId": "THOUSAND",
     "ipa": "/mi:n/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "soyadi + onların + Bin"
+    }
   },
   {
     "id": "L-CORPUS2-04224",
@@ -298880,7 +299552,10 @@
       ]
     },
     "isLemma": false,
-    "ipa": "/'ɕɑ:ʁɐ/"
+    "ipa": "/'ɕɑ:ʁɐ/",
+    "translations": {
+      "tr": "TIĞ dantel ~ı + Koç + kan + eski"
+    }
   },
   {
     "id": "L-CORPUS2-04228",
@@ -299325,7 +300000,10 @@
     },
     "conceptId": "LOVE",
     "ipa": "/'gʷǝɕʹɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-04246",
@@ -299468,7 +300146,10 @@
       "rule": "compound"
     },
     "ipa": "/pʹqʹǝ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-04253",
@@ -299899,7 +300580,10 @@
     "taxonomyFamily": "Ruh & Can",
     "rootForm": "псэ",
     "ipa": "/psɐʁʷ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "merhamet + BILGI + Sabahlık"
+    }
   },
   {
     "id": "L-CORPUS2-04269",
@@ -300119,7 +300803,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/sǝqʹ/"
+    "ipa": "/sǝqʹ/",
+    "translations": {
+      "tr": "sansli ev + MÜTEKAIT"
+    }
   },
   {
     "id": "L-CORPUS2-04277",
@@ -300144,7 +300831,10 @@
     },
     "isLemma": false,
     "ipa": "/nɐb'ʑǝts/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "Çukur + dairy + iş + AKSAKAL"
+    }
   },
   {
     "id": "L-CORPUS2-04279",
@@ -300575,7 +301265,10 @@
     },
     "isLemma": false,
     "ipa": "/'ʔɐpʹqʹɬɐpʹqʹ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "HAZINE + obsolete. cm."
+    }
   },
   {
     "id": "L-CORPUS2-04296",
@@ -301089,7 +301782,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/ɕʹɐ/"
+    "ipa": "/ɕʹɐ/",
+    "translations": {
+      "tr": "onların + yeni"
+    }
   },
   {
     "id": "L-CORPUS2-04316",
@@ -301115,7 +301811,10 @@
     "isLemma": false,
     "conceptId": "KALMYK",
     "ipa": "/qʹɐ'ɮmǝqʹ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "dikkat + YOLAK"
+    }
   },
   {
     "id": "L-CORPUS2-04317",
@@ -301250,7 +301949,10 @@
     },
     "isLemma": false,
     "conceptId": "SUITOR",
-    "ipa": "/psɐ'ɬɐn/"
+    "ipa": "/psɐ'ɬɐn/",
+    "translations": {
+      "tr": "Çuval + Bileği taşı"
+    }
   },
   {
     "id": "L-CORPUS2-04323",
@@ -301823,7 +302525,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/be:ʁǝm'bɑ:r/"
+    "ipa": "/be:ʁǝm'bɑ:r/",
+    "translations": {
+      "tr": "peygamber + Söylenti"
+    }
   },
   {
     "id": "L-CORPUS2-04344",
@@ -302101,7 +302806,10 @@
     "subConceptId": "EYE",
     "taxonomyFamily": "Göz & Görme",
     "rootForm": "нэ-",
-    "ipa": "/nɐfʹ/"
+    "ipa": "/nɐfʹ/",
+    "translations": {
+      "tr": "iyilik + act smearing"
+    }
   },
   {
     "id": "L-CORPUS2-04354",
@@ -302462,7 +303170,10 @@
       "rule": "compound"
     },
     "ipa": "/qʹʷɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "bristle + ÇAĞIRTI"
+    }
   },
   {
     "id": "L-CORPUS2-04367",
@@ -302517,7 +303228,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/ħɐr'fǝʂxʷɐ/"
+    "ipa": "/ħɐr'fǝʂxʷɐ/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-04369",
@@ -303100,7 +303814,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/be:ʁǝm'bɑ:r/"
+    "ipa": "/be:ʁǝm'bɑ:r/",
+    "translations": {
+      "tr": "peygamber + Söylenti"
+    }
   },
   {
     "id": "L-CORPUS2-04390",
@@ -303187,7 +303904,10 @@
     },
     "conceptId": "HOLIDAY",
     "ipa": "/mɐ'xʷɐʂxʷɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-04393",
@@ -303237,7 +303957,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/'jɑ:ʁɐ/"
+    "ipa": "/'jɑ:ʁɐ/",
+    "translations": {
+      "tr": "Uyuz + gitti"
+    }
   },
   {
     "id": "L-CORPUS2-04395",
@@ -303325,7 +304048,10 @@
     "subConceptId": "HEAD_WINDOW",
     "taxonomyFamily": "Pencere & Yapı",
     "rootForm": "щхьэ-",
-    "ipa": "/ɕħɐ'ʁʷǝbᶎɐ/"
+    "ipa": "/ɕħɐ'ʁʷǝbᶎɐ/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-04398",
@@ -303378,7 +304104,10 @@
       "rule": "compound"
     },
     "conceptId": "CRADLE",
-    "ipa": "/'dɑ:xɐ/"
+    "ipa": "/'dɑ:xɐ/",
+    "translations": {
+      "tr": "Güzel + TIRIS"
+    }
   },
   {
     "id": "L-CORPUS2-04400",
@@ -303489,7 +304218,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/ʔʷǝ'mɐt/"
+    "ipa": "/ʔʷǝ'mɐt/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-04404",
@@ -304345,7 +305077,10 @@
     },
     "isLemma": false,
     "conceptId": "GRANDMOTHER",
-    "ipa": "/zǝ'bᶎɑ:nɐ/"
+    "ipa": "/zǝ'bᶎɑ:nɐ/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-04436",
@@ -304538,7 +305273,10 @@
     "rootIds": [
       "R-SHCH"
     ],
-    "ipa": "/ɕǝ'ħɐt/"
+    "ipa": "/ɕǝ'ħɐt/",
+    "translations": {
+      "tr": "kanıt + yil"
+    }
   },
   {
     "id": "L-CORPUS2-04443",
@@ -305040,7 +305778,10 @@
     },
     "isLemma": false,
     "conceptId": "THURSDAY",
-    "ipa": "/mǝɬkʷ/"
+    "ipa": "/mǝɬkʷ/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-04462",
@@ -305208,7 +305949,10 @@
       "rule": "compound"
     },
     "ipaSource": "root-derived",
-    "ipa": "/sǝdiʁʷa/"
+    "ipa": "/sǝdiʁʷa/",
+    "translations": {
+      "tr": "BEHEMEHAL + ABBAS"
+    }
   },
   {
     "id": "L-CORPUS2-04468",
@@ -305357,7 +306101,10 @@
     },
     "isLemma": false,
     "ipa": "/nɐb'ʑǝts/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "bitmek + eski"
+    }
   },
   {
     "id": "L-CORPUS2-04474",
@@ -305930,7 +306677,10 @@
     },
     "conceptId": "SUITOR",
     "ipa": "/psɐˈɬǝχʷ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-04497",
@@ -305949,7 +306699,10 @@
     ],
     "conceptId": "SPARE",
     "ipa": "/ʂħa sǝn/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-04498",
@@ -306073,7 +306826,10 @@
     },
     "conceptId": "MANNER",
     "ipaSource": "root-derived",
-    "ipa": "/zadʒɐxɐrɐ/"
+    "ipa": "/zadʒɐxɐrɐ/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-04503",
@@ -306212,7 +306968,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/'ɐʁɐ/"
+    "ipa": "/'ɐʁɐ/",
+    "translations": {
+      "tr": "dikkat + BILGI + dried up"
+    }
   },
   {
     "id": "L-CORPUS2-04510",
@@ -306468,7 +307227,10 @@
     },
     "conceptId": "PROTECT",
     "ipa": "/χʷǝ'mɐn/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "Çukur + Ah"
+    }
   },
   {
     "id": "L-CORPUS2-04519",
@@ -306550,7 +307312,10 @@
     },
     "conceptId": "PROTECT",
     "ipa": "/χʷǝ'mɐn/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "Çukur + Kap"
+    }
   },
   {
     "id": "L-CORPUS2-04522",
@@ -307496,7 +308261,10 @@
       "rule": "compound"
     },
     "ipa": "/'wɐsɐps/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "Bağ + yapmak"
+    }
   },
   {
     "id": "L-CORPUS2-04557",
@@ -307970,7 +308738,10 @@
     "isLemma": false,
     "conceptId": "EAGLE",
     "ipaSource": "root-derived",
-    "ipa": "/qabʁɐdɐkʼǝw/"
+    "ipa": "/qabʁɐdɐkʼǝw/",
+    "translations": {
+      "tr": "Atmaca cinsi + KIŞ"
+    }
   },
   {
     "id": "L-CORPUS2-04575",
@@ -308834,7 +309605,10 @@
     },
     "isLemma": false,
     "ipa": "/'ʔɐpʹqʹɬɐpʹqʹ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "IÇINDE + dried up"
+    }
   },
   {
     "id": "L-CORPUS2-04607",
@@ -309699,7 +310473,10 @@
     "isLemma": false,
     "conceptId": "WORK",
     "ipaSource": "root-derived",
-    "ipa": "/din-lɐʑakʷʼɐ/"
+    "ipa": "/din-lɐʑakʷʼɐ/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-04642",
@@ -309825,7 +310602,10 @@
     },
     "isLemma": false,
     "conceptId": "TONGUE",
-    "ipa": "/frɑ:ntsu:ˈzǝbzɐ/"
+    "ipa": "/frɑ:ntsu:ˈzǝbzɐ/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-04647",
@@ -310167,7 +310947,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/'pɑ:ʂɐ/"
+    "ipa": "/'pɑ:ʂɐ/",
+    "translations": {
+      "tr": "DİREKTÖR + buyuk"
+    }
   },
   {
     "id": "L-CORPUS2-04659",
@@ -310965,7 +311748,10 @@
     },
     "isLemma": false,
     "ipaSource": "root-derived",
-    "ipa": "/fɐrkʼɐ/"
+    "ipa": "/fɐrkʼɐ/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-04688",
@@ -311311,7 +312097,10 @@
       "rule": "compound"
     },
     "conceptId": "PROTECT",
-    "ipa": "/qʹɐʂ/"
+    "ipa": "/qʹɐʂ/",
+    "translations": {
+      "tr": "ünlem + BILGI"
+    }
   },
   {
     "id": "L-CORPUS2-04702",
@@ -311406,7 +312195,10 @@
     },
     "notes": "Corpus v1.0 batch-2 (freq: 22, lang: ady, source: none)",
     "isLemma": false,
-    "ipa": "/wxasəʁaw/"
+    "ipa": "/wxasəʁaw/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-04706",
@@ -311791,7 +312583,10 @@
     },
     "conceptId": "SKIN",
     "ipaSource": "root-derived",
-    "ipa": "/ʂorǝkʼɐ/"
+    "ipa": "/ʂorǝkʼɐ/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-04721",
@@ -311957,7 +312752,10 @@
       "rule": "compound"
     },
     "ipaSource": "root-derived",
-    "ipa": "/sǝnɐʃʼw/"
+    "ipa": "/sǝnɐʃʼw/",
+    "translations": {
+      "tr": "Mezar taşı + Karaciğer"
+    }
   },
   {
     "id": "L-CORPUS2-04728",
@@ -311990,7 +312788,10 @@
     },
     "notes": "Corpus v1.0 batch-2 (freq: 22, lang: ady, source: none)",
     "isLemma": false,
-    "ipa": "/tʃarap/"
+    "ipa": "/tʃarap/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-04730",
@@ -312017,7 +312818,10 @@
       "rule": "compound"
     },
     "ipa": "/wǝˈdzǝfɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "onların + Hela"
+    }
   },
   {
     "id": "L-CORPUS2-04732",
@@ -312099,7 +312903,10 @@
       "rule": "compound"
     },
     "ipa": "/kʹʷɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-04735",
@@ -312366,7 +313173,10 @@
       "rule": "compound"
     },
     "ipa": "/'kʷǝpʹɕʹɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-04745",
@@ -312818,7 +313628,10 @@
     },
     "conceptId": "DEFECT",
     "ipa": "/ɬɐ'gʷɑ:ʑɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "AKMAN + dikkat"
+    }
   },
   {
     "id": "L-CORPUS2-04763",
@@ -312858,7 +313671,10 @@
     },
     "notes": "Corpus v1.0 batch-2 (freq: 22, lang: ady, source: none)",
     "isLemma": false,
-    "ipa": "/ʃχwantaːʂwar/"
+    "ipa": "/ʃχwantaːʂwar/",
+    "translations": {
+      "tr": "Gri + Örme zırh gömlek"
+    }
   },
   {
     "id": "L-CORPUS2-04766",
@@ -312913,7 +313729,10 @@
       "rule": "compound"
     },
     "ipa": "/ɕħɐgʷ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "Bostan korkuluğu + ANDIÇMEK"
+    }
   },
   {
     "id": "L-CORPUS2-04768",
@@ -312967,7 +313786,10 @@
     },
     "isLemma": false,
     "ipa": "/nɐb'ʑǝts/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "DELIKANLI + TUTSAK"
+    }
   },
   {
     "id": "L-CORPUS2-04770",
@@ -313051,7 +313873,10 @@
     },
     "conceptId": "THOUSAND",
     "ipa": "/mi:n/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "FOTOJENIK + GEZ"
+    }
   },
   {
     "id": "L-CORPUS2-04774",
@@ -313478,7 +314303,10 @@
     ],
     "conceptId": "NAVY_BLUE",
     "ipa": "/ɕʹǝn/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "toprak + DEMEK"
+    }
   },
   {
     "id": "L-CORPUS2-04791",
@@ -313502,7 +314330,10 @@
       ]
     },
     "isLemma": false,
-    "ipa": "/qʹʷɐ'tʹʂǝpʹɐ/"
+    "ipa": "/qʹʷɐ'tʹʂǝpʹɐ/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-04792",
@@ -313727,7 +314558,10 @@
       "R-KKHUXY"
     ],
     "conceptId": "SHIP",
-    "ipa": "/qʹχʷǝħ/"
+    "ipa": "/qʹχʷǝħ/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-04803",
@@ -313783,7 +314617,10 @@
     },
     "isLemma": false,
     "ipa": "/nɐb'ʑǝts/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "eski + toprak + TUTSAK"
+    }
   },
   {
     "id": "L-CORPUS2-04805",
@@ -314527,7 +315364,10 @@
     ],
     "conceptId": "COMPASSION",
     "ipa": "/ɕǝs'ħǝn/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "otuz + rehavet"
+    }
   },
   {
     "id": "L-CORPUS2-04835",
@@ -316286,7 +317126,10 @@
     "isLemma": false,
     "conceptId": "MIND",
     "ipa": "/gʷǝp'sǝsɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "ASMAN + su"
+    }
   },
   {
     "id": "L-CORPUS2-04899",
@@ -316567,7 +317410,10 @@
     "isLemma": false,
     "conceptId": "WORK",
     "ipaSource": "root-derived",
-    "ipa": "/din-lɐʑakʷʼɐxɐr/"
+    "ipa": "/din-lɐʑakʷʼɐxɐr/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-04910",
@@ -317450,7 +318296,10 @@
       "rule": "compound"
     },
     "ipa": "/'gʷǝfʹɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "HOŞ- + süt mamulu"
+    }
   },
   {
     "id": "L-CORPUS2-04943",
@@ -317501,7 +318350,10 @@
     },
     "conceptId": "THOUSAND",
     "ipa": "/mi:n/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "SASIMAK + ALDIRIŞSIZ"
+    }
   },
   {
     "id": "L-CORPUS2-04945",
@@ -317579,7 +318431,10 @@
     },
     "conceptId": "COMPASSION",
     "ipa": "/ɕǝs'ħǝn/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-04948",
@@ -317809,7 +318664,10 @@
     "rootIds": [
       "R-SHCH"
     ],
-    "ipa": "/'ɕǝnɐ/"
+    "ipa": "/'ɕǝnɐ/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-04958",
@@ -318244,7 +319102,10 @@
       "rule": "compound"
     },
     "ipa": "/'gʷǝfʹɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-04975",
@@ -318534,7 +319395,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/'ɬɑ:pʹɐ/"
+    "ipa": "/'ɬɑ:pʹɐ/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-04987",
@@ -318635,7 +319499,10 @@
     },
     "isLemma": false,
     "ipa": "/'ʔɐpʹqʹɬɐpʹqʹ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-04991",
@@ -318966,7 +319833,10 @@
       "rule": "compound"
     },
     "ipa": "/'zǝmi:/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "KOLON + SEANS"
+    }
   },
   {
     "id": "L-CORPUS2-05003",
@@ -319280,7 +320150,10 @@
     },
     "isLemma": false,
     "ipa": "/'ʔɐpʹqʹɬɐpʹqʹ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-05016",
@@ -319468,7 +320341,10 @@
       ]
     },
     "isLemma": false,
-    "ipa": "/'ɐʁɐ/"
+    "ipa": "/'ɐʁɐ/",
+    "translations": {
+      "tr": "dikkat + eski"
+    }
   },
   {
     "id": "L-CORPUS2-05023",
@@ -319495,7 +320371,10 @@
     },
     "isLemma": false,
     "ipa": "/nɐb'ʑǝts/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "CINSEL + eski + yazı"
+    }
   },
   {
     "id": "L-CORPUS2-05024",
@@ -319621,7 +320500,10 @@
       "rule": "compound"
     },
     "conceptId": "SUITOR",
-    "ipa": "/te:'ħɐn/"
+    "ipa": "/te:'ħɐn/",
+    "translations": {
+      "tr": "TESLIM + TACIZ"
+    }
   },
   {
     "id": "L-CORPUS2-05029",
@@ -319650,7 +320532,10 @@
     },
     "isLemma": false,
     "conceptId": "NINE",
-    "ipa": "/tʂɐ'tɐn/"
+    "ipa": "/tʂɐ'tɐn/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-05030",
@@ -319732,7 +320617,10 @@
       "rule": "compound"
     },
     "ipa": "/ɕħɐgʷ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "ISLIK + BABACA"
+    }
   },
   {
     "id": "L-CORPUS2-05033",
@@ -319894,7 +320782,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/sɐrˈsɐru:/"
+    "ipa": "/sɐrˈsɐru:/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-05039",
@@ -319950,7 +320841,10 @@
     },
     "conceptId": "THOUSAND",
     "ipa": "/mi:n/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "ISLIK + AFERIN"
+    }
   },
   {
     "id": "L-CORPUS2-05041",
@@ -321532,7 +322426,10 @@
       "rule": "compound"
     },
     "ipa": "/'ɬɑ:qʹʷɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "kopek + ÇAĞIRTI"
+    }
   },
   {
     "id": "L-CORPUS2-05103",
@@ -321950,7 +322847,10 @@
     "isLemma": false,
     "conceptId": "LIFE_PARTNER",
     "ipa": "/psɐʁʷ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "onların + BU SENE + ABIS"
+    }
   },
   {
     "id": "L-CORPUS2-05118",
@@ -322081,7 +322981,10 @@
     "isLemma": false,
     "conceptId": "KALMYK",
     "ipa": "/qʹɐ'ɮmǝqʹ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "Kuzey Batı + LALA"
+    }
   },
   {
     "id": "L-CORPUS2-05123",
@@ -322140,7 +323043,10 @@
     },
     "notes": "Corpus v1.0 batch-2 (freq: 20, lang: kbd, source: none)",
     "isLemma": false,
-    "ipa": "/jaːʒjaa/"
+    "ipa": "/jaːʒjaa/",
+    "translations": {
+      "tr": "onların + HITAP"
+    }
   },
   {
     "id": "L-CORPUS2-05126",
@@ -322221,7 +323127,10 @@
     },
     "isLemma": false,
     "ipa": "/qʹʷɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-05129",
@@ -322364,7 +323273,10 @@
     },
     "conceptId": "THOUSAND",
     "ipa": "/mi:n/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-05134",
@@ -323028,7 +323940,10 @@
       ]
     },
     "isLemma": false,
-    "ipa": "/'psɑ:ɬɐ/"
+    "ipa": "/'psɑ:ɬɐ/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-05160",
@@ -323434,7 +324349,10 @@
       "R-SHCH"
     ],
     "conceptId": "COMPASSION",
-    "ipa": "/ɕǝ'ħɐt/"
+    "ipa": "/ɕǝ'ħɐt/",
+    "translations": {
+      "tr": "kanıt + TUTSAK"
+    }
   },
   {
     "id": "L-CORPUS2-05175",
@@ -323625,7 +324543,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/'pɑ:ʂɐ/"
+    "ipa": "/'pɑ:ʂɐ/",
+    "translations": {
+      "tr": "DİREKTÖR + buyuk"
+    }
   },
   {
     "id": "L-CORPUS2-05183",
@@ -323847,7 +324768,10 @@
     ],
     "conceptId": "DEW",
     "ipa": "/'wɐsɐps/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "kar + ATIYYE"
+    }
   },
   {
     "id": "L-CORPUS2-05191",
@@ -324197,7 +325121,10 @@
       "rule": "compound"
     },
     "conceptId": "BOW_MUSIC",
-    "ipa": "/qʹǝp/"
+    "ipa": "/qʹǝp/",
+    "translations": {
+      "tr": "yemek + HUT"
+    }
   },
   {
     "id": "L-CORPUS2-05204",
@@ -324442,7 +325369,10 @@
       "rule": "compound"
     },
     "conceptId": "JUSTICE",
-    "ipa": "/xʷɐ'ɕʹǝn/"
+    "ipa": "/xʷɐ'ɕʹǝn/",
+    "translations": {
+      "tr": "Kapatmak + yil"
+    }
   },
   {
     "id": "L-CORPUS2-05214",
@@ -325851,7 +326781,10 @@
     "isLemma": false,
     "conceptId": "TONGUE",
     "ipaSource": "root-derived",
-    "ipa": "/bzɐdʒaʃʼɐxɐr/"
+    "ipa": "/bzɐdʒaʃʼɐxɐr/",
+    "translations": {
+      "tr": "dil + <div style + BILGI"
+    }
   },
   {
     "id": "L-CORPUS2-05271",
@@ -326214,7 +327147,10 @@
     },
     "notes": "Corpus v1.0 batch-2 (freq: 20, lang: ady, source: none)",
     "isLemma": false,
-    "ipa": "/xrjistwaska/"
+    "ipa": "/xrjistwaska/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-05286",
@@ -326826,7 +327762,10 @@
     ],
     "conceptId": "COMPASSION",
     "ipa": "/ɕǝs'ħǝn/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-05309",
@@ -326886,7 +327825,10 @@
       "rule": "compound"
     },
     "ipa": "/'ʁʷǝsɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "KAMBER + yil"
+    }
   },
   {
     "id": "L-CORPUS2-05311",
@@ -327633,7 +328575,10 @@
       "rule": "compound"
     },
     "ipa": "/wǝˈdzǝfɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "POST + CINSEL"
+    }
   },
   {
     "id": "L-CORPUS2-05339",
@@ -327790,7 +328735,10 @@
       "rule": "compound"
     },
     "conceptId": "PROTECT",
-    "ipa": "/ʁɐ'tʹʂǝn/"
+    "ipa": "/ʁɐ'tʹʂǝn/",
+    "translations": {
+      "tr": "Çukur + yil + KIŞ"
+    }
   },
   {
     "id": "L-CORPUS2-05346",
@@ -327845,7 +328793,10 @@
     "isLemma": false,
     "conceptId": "TONGUE",
     "ipaSource": "root-derived",
-    "ipa": "/bzɐdʒɐʁɐ/"
+    "ipa": "/bzɐdʒɐʁɐ/",
+    "translations": {
+      "tr": "ÇAĞIRTI + yil"
+    }
   },
   {
     "id": "L-CORPUS2-05348",
@@ -328439,7 +329390,10 @@
       "rule": "compound"
     },
     "ipa": "/kʹʷɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "orada + sansli ev"
+    }
   },
   {
     "id": "L-CORPUS2-05373",
@@ -328492,7 +329446,10 @@
     "isLemma": false,
     "conceptId": "MIND",
     "ipa": "/gʷǝp'sǝsɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "su + SANDIKÇI"
+    }
   },
   {
     "id": "L-CORPUS2-05375",
@@ -328866,7 +329823,10 @@
     },
     "isLemma": false,
     "conceptId": "KALMYK",
-    "ipa": "/ɕǝ'pʹqʹɑ:ʁɐ/"
+    "ipa": "/ɕǝ'pʹqʹɑ:ʁɐ/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-05392",
@@ -329032,7 +329992,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/zɐ'pɐɕ/"
+    "ipa": "/zɐ'pɐɕ/",
+    "translations": {
+      "tr": "DÜZENLİ + biçer-döver"
+    }
   },
   {
     "id": "L-CORPUS2-05398",
@@ -329249,7 +330212,10 @@
       "rule": "compound"
     },
     "conceptId": "SNAKE",
-    "ipa": "/jǝri:ħɐ'ɬʹɐn/"
+    "ipa": "/jǝri:ħɐ'ɬʹɐn/",
+    "translations": {
+      "tr": "FAVORI + ÖLMÜŞ"
+    }
   },
   {
     "id": "L-CORPUS2-05406",
@@ -329695,7 +330661,10 @@
     ],
     "conceptId": "ROT",
     "ipaSource": "root-derived",
-    "ipa": "/fɕʼɐrqɐ/"
+    "ipa": "/fɕʼɐrqɐ/",
+    "translations": {
+      "tr": "AFERIN + Çukur"
+    }
   },
   {
     "id": "L-CORPUS2-05424",
@@ -329863,7 +330832,10 @@
       "rule": "compound"
     },
     "conceptId": "LOVE",
-    "ipa": "/zǝ'qʹo:m/"
+    "ipa": "/zǝ'qʹo:m/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-05430",
@@ -330179,7 +331151,10 @@
       "rule": "compound"
     },
     "ipaSource": "root-derived",
-    "ipa": "/jaɕʼǝrt/"
+    "ipa": "/jaɕʼǝrt/",
+    "translations": {
+      "tr": "onların + AFET"
+    }
   },
   {
     "id": "L-CORPUS2-05443",
@@ -330310,7 +331285,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/ɕʹɐn/"
+    "ipa": "/ɕʹɐn/",
+    "translations": {
+      "tr": "onların + anlamak"
+    }
   },
   {
     "id": "L-CORPUS2-05448",
@@ -330364,7 +331342,10 @@
     "isLemma": false,
     "conceptId": "SUITOR",
     "ipa": "/psɐˈɬǝχʷ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "Top + Bileği taşı + rehavet"
+    }
   },
   {
     "id": "L-CORPUS2-05450",
@@ -330615,7 +331596,10 @@
     "subConceptId": "HAVING_LIVED",
     "taxonomyFamily": "Ruh & Can",
     "rootForm": "псэ",
-    "ipa": "/psɐw/"
+    "ipa": "/psɐw/",
+    "translations": {
+      "tr": "ABIS + otherwise"
+    }
   },
   {
     "id": "L-CORPUS2-05459",
@@ -330820,7 +331804,10 @@
     "isLemma": false,
     "conceptId": "MORNING",
     "ipa": "/pɕɐ'ddᶎǝʑ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "SÖZ + BU SENE + millet straw"
+    }
   },
   {
     "id": "L-CORPUS2-05467",
@@ -331306,7 +332293,10 @@
       "rule": "compound"
     },
     "ipa": "/'gʷǝfʹɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "ASMAN + yil"
+    }
   },
   {
     "id": "L-CORPUS2-05486",
@@ -332262,7 +333252,10 @@
       ]
     },
     "isLemma": false,
-    "ipa": "/qʹɑ:ɬ/"
+    "ipa": "/qʹɑ:ɬ/",
+    "translations": {
+      "tr": "HAZINE + dried up"
+    }
   },
   {
     "id": "L-CORPUS2-05521",
@@ -332904,7 +333897,10 @@
       "rule": "compound"
     },
     "ipa": "/'gʷǝfʹɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-05544",
@@ -333100,7 +334096,10 @@
       "rule": "compound"
     },
     "conceptId": "BOW_MUSIC",
-    "ipa": "/qʹǝp/"
+    "ipa": "/qʹǝp/",
+    "translations": {
+      "tr": "yemek + ALTILI"
+    }
   },
   {
     "id": "L-CORPUS2-05553",
@@ -333412,7 +334411,10 @@
     },
     "conceptId": "NINE",
     "ipa": "/bʁʷǝ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-05565",
@@ -333464,7 +334466,10 @@
       "rule": "compound"
     },
     "ipaSource": "root-derived",
-    "ipa": "/ʂofnɐkʼǝm/"
+    "ipa": "/ʂofnɐkʼǝm/",
+    "translations": {
+      "tr": "Küçük toykuşu + IFTAR"
+    }
   },
   {
     "id": "L-CORPUS2-05567",
@@ -333520,7 +334525,10 @@
       "rule": "compound"
     },
     "conceptId": "JOY",
-    "ipa": "/zɐʁaʃʼɐ/"
+    "ipa": "/zɐʁaʃʼɐ/",
+    "translations": {
+      "tr": "isik + BILGI"
+    }
   },
   {
     "id": "L-CORPUS2-05569",
@@ -333700,7 +334708,10 @@
     "isLemma": false,
     "conceptId": "THURSDAY",
     "ipa": "/mɐqʹʷɐˈwɐʁʷɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "ISLIK + IPOTEKLI"
+    }
   },
   {
     "id": "L-CORPUS2-05576",
@@ -333808,7 +334819,10 @@
     },
     "isLemma": false,
     "ipa": "/'ʔɐpʹqʹɬɐpʹqʹ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-05580",
@@ -334001,7 +335015,10 @@
     },
     "conceptId": "FOREST",
     "ipaSource": "root-derived",
-    "ipa": "/wmɐχɐkʼo/"
+    "ipa": "/wmɐχɐkʼo/",
+    "translations": {
+      "tr": "TOKMAK + arpa + orada"
+    }
   },
   {
     "id": "L-CORPUS2-05587",
@@ -334391,7 +335408,10 @@
     },
     "conceptId": "LOVE",
     "ipa": "/'gʷǝɕʹɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-05602",
@@ -334714,7 +335734,10 @@
       "rule": "compound"
     },
     "ipa": "/'gʷǝfʹɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "DIYE + Karaciğer"
+    }
   },
   {
     "id": "L-CORPUS2-05616",
@@ -334984,7 +336007,10 @@
       "rule": "compound"
     },
     "ipa": "/ɕǝs'ħǝn/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-05626",
@@ -335905,7 +336931,10 @@
     "isLemma": false,
     "conceptId": "LEADER",
     "ipa": "/tħɐ'kʹʷǝmɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "ITBOĞAN + ağır"
+    }
   },
   {
     "id": "L-CORPUS2-05662",
@@ -336139,7 +337168,10 @@
       "rule": "compound"
     },
     "ipa": "/wǝˈdzǝfɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-05671",
@@ -336197,7 +337229,10 @@
     },
     "conceptId": "THOUSAND",
     "ipa": "/mi:n/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "ISLIK + Havan"
+    }
   },
   {
     "id": "L-CORPUS2-05673",
@@ -336222,7 +337257,10 @@
     },
     "isLemma": false,
     "ipa": "/'ʔɐpʹqʹɬɐpʹqʹ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-05674",
@@ -336806,7 +337844,10 @@
     "isLemma": false,
     "conceptId": "LIFE_PARTNER",
     "ipa": "/psɐʁʷ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "ISLIK + BIGÜNAH"
+    }
   },
   {
     "id": "L-CORPUS2-05700",
@@ -337121,7 +338162,10 @@
     ],
     "conceptId": "ROT",
     "ipaSource": "root-derived",
-    "ipa": "/fǝnakʷʼɐ/"
+    "ipa": "/fǝnakʷʼɐ/",
+    "translations": {
+      "tr": "çürümek + git!"
+    }
   },
   {
     "id": "L-CORPUS2-05712",
@@ -337250,7 +338294,10 @@
       "rule": "compound"
     },
     "ipaSource": "root-derived",
-    "ipa": "/sɐraqǝm/"
+    "ipa": "/sɐraqǝm/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-05717",
@@ -338766,7 +339813,10 @@
       "rule": "compound"
     },
     "conceptId": "SPARE",
-    "ipa": "/kʹʷɐn/"
+    "ipa": "/kʹʷɐn/",
+    "translations": {
+      "tr": "Bağ + gitti"
+    }
   },
   {
     "id": "L-CORPUS2-05779",
@@ -338948,7 +339998,10 @@
     "isLemma": false,
     "conceptId": "KALMYK",
     "ipa": "/qʹɐ'ɮmǝqʹ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "AGU + agiz"
+    }
   },
   {
     "id": "L-CORPUS2-05786",
@@ -339107,7 +340160,10 @@
       "R-SHCH"
     ],
     "ipa": "/ɕǝs'ħǝn/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "ISSIZ + fearfully"
+    }
   },
   {
     "id": "L-CORPUS2-05792",
@@ -339310,7 +340366,10 @@
     "isLemma": false,
     "conceptId": "KALMYK",
     "ipa": "/qʹɐ'ɮmǝqʹ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "AGU + agiz"
+    }
   },
   {
     "id": "L-CORPUS2-05799",
@@ -340373,7 +341432,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/'pɑ:ʂɐ/"
+    "ipa": "/'pɑ:ʂɐ/",
+    "translations": {
+      "tr": "BAŞBUĞ"
+    }
   },
   {
     "id": "L-CORPUS2-05839",
@@ -340780,7 +341842,10 @@
     "rootIds": [
       "R-MASHCH"
     ],
-    "ipa": "/'mɑ:ɕʹɐ/"
+    "ipa": "/'mɑ:ɕʹɐ/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-05853",
@@ -341129,7 +342194,10 @@
       "rule": "compound"
     },
     "conceptId": "LIFE_PARTNER",
-    "ipa": "/'zǝʁɐ/"
+    "ipa": "/'zǝʁɐ/",
+    "translations": {
+      "tr": "SÜZME + TAMAMEN"
+    }
   },
   {
     "id": "L-CORPUS2-05865",
@@ -341321,7 +342389,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/'wɑ:sɐ/"
+    "ipa": "/'wɑ:sɐ/",
+    "translations": {
+      "tr": "AĞIRLAMAK + buyuk"
+    }
   },
   {
     "id": "L-CORPUS2-05872",
@@ -341628,7 +342699,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/'ɐχʂɐ/"
+    "ipa": "/'ɐχʂɐ/",
+    "translations": {
+      "tr": "teklif"
+    }
   },
   {
     "id": "L-CORPUS2-05882",
@@ -341846,7 +342920,10 @@
       "rule": "compound"
     },
     "conceptId": "JUSTICE",
-    "ipa": "/kʹʷɐ'rǝkʹʷɐ/"
+    "ipa": "/kʹʷɐ'rǝkʹʷɐ/",
+    "translations": {
+      "tr": "giden + git!"
+    }
   },
   {
     "id": "L-CORPUS2-05889",
@@ -341942,7 +343019,10 @@
     "isLemma": false,
     "conceptId": "GRANDMOTHER",
     "ipa": "/ɐ'nɐʂxʷɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "Çukur + anne"
+    }
   },
   {
     "id": "L-CORPUS2-05893",
@@ -342002,7 +343082,10 @@
     "subConceptId": "-",
     "taxonomyFamily": "-",
     "rootForm": "гу",
-    "ipa": "/gʷǝ'fʹɐʁʷɐ/"
+    "ipa": "/gʷǝ'fʹɐʁʷɐ/",
+    "translations": {
+      "tr": "sevinçli gün + buyuk"
+    }
   },
   {
     "id": "L-CORPUS2-05895",
@@ -342119,7 +343202,10 @@
     },
     "conceptId": "THOUSAND",
     "ipa": "/mi:n/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "ISLIK + AIT"
+    }
   },
   {
     "id": "L-CORPUS2-05900",
@@ -342175,7 +343261,10 @@
     },
     "conceptId": "THOUSAND",
     "ipa": "/mi:n/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-05902",
@@ -342527,7 +343616,10 @@
     },
     "isLemma": false,
     "ipa": "/nɐb'ʑǝts/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "BAYSUNGUR + şimdi + KIŞ + eski"
+    }
   },
   {
     "id": "L-CORPUS2-05915",
@@ -342554,7 +343646,10 @@
     },
     "conceptId": "CRADLE",
     "ipa": "/kuɕa/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-05916",
@@ -343235,7 +344330,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/ɕǝ'ʁǝn/"
+    "ipa": "/ɕǝ'ʁǝn/",
+    "translations": {
+      "tr": "onların + FORM"
+    }
   },
   {
     "id": "L-CORPUS2-05947",
@@ -343352,7 +344450,10 @@
     "isLemma": false,
     "conceptId": "PLANT",
     "ipa": "/dǝʁɐ'ʁɑ:zɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "yil + faded"
+    }
   },
   {
     "id": "L-CORPUS2-05952",
@@ -344135,7 +345236,10 @@
     "subConceptId": "",
     "taxonomyFamily": "",
     "rootForm": "пэ-",
-    "ipa": "/pɐ'ɕɐ/"
+    "ipa": "/pɐ'ɕɐ/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-05982",
@@ -344200,7 +345304,10 @@
     },
     "isLemma": false,
     "ipa": "/'ʔɐpʹqʹɬɐpʹqʹ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-05985",
@@ -344328,7 +345435,10 @@
     },
     "conceptId": "YEAR",
     "ipaSource": "root-derived",
-    "ipa": "/ʁɐptsʼakʼokʼɐ/"
+    "ipa": "/ʁɐptsʼakʼokʼɐ/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-05991",
@@ -344422,7 +345532,10 @@
       "rule": "compound"
     },
     "ipa": "/wǝˈdzǝfɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "içecek + YITIRMEK"
+    }
   },
   {
     "id": "L-CORPUS2-05996",
@@ -345132,7 +346245,10 @@
       "rule": "compound"
     },
     "ipa": "/'ʔɐpʹqʹɬɐpʹqʹ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "BAYSUNGUR + yil"
+    }
   },
   {
     "id": "L-CORPUS2-06023",
@@ -345274,7 +346390,10 @@
     },
     "isLemma": false,
     "ipa": "/'ʔɐpʹqʹɬɐpʹqʹ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-06028",
@@ -345580,7 +346699,10 @@
       "rule": "compound"
     },
     "ipa": "/wǝˈdzǝfɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-06039",
@@ -345773,7 +346895,10 @@
     },
     "notes": "Corpus v1.0 batch-2 (freq: 18, lang: ady, source: none)",
     "isLemma": false,
-    "ipa": "/jibraːħjimara/"
+    "ipa": "/jibraːħjimara/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-06047",
@@ -345798,7 +346923,10 @@
     },
     "isLemma": false,
     "ipa": "/'ʔɐpʹqʹɬɐpʹqʹ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-06048",
@@ -345976,7 +347104,10 @@
       "rule": "compound"
     },
     "ipaSource": "root-derived",
-    "ipa": "/qɐnɐʁɐ/"
+    "ipa": "/qɐnɐʁɐ/",
+    "translations": {
+      "tr": "Çukur + yil"
+    }
   },
   {
     "id": "L-CORPUS2-06054",
@@ -346688,7 +347819,10 @@
       "rule": "compound"
     },
     "ipa": "/je:'ʑwǝʑ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "samimi + otherwise"
+    }
   },
   {
     "id": "L-CORPUS2-06085",
@@ -348117,7 +349251,10 @@
     },
     "conceptId": "THURSDAY",
     "ipa": "/mɐqʹʷɐˈwɐʁʷɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "onların + BAĞIL"
+    }
   },
   {
     "id": "L-CORPUS2-06142",
@@ -348135,7 +349272,10 @@
       "R-SHCH"
     ],
     "conceptId": "COMPASSION",
-    "ipa": "/ɕǝ'xʷɐn/"
+    "ipa": "/ɕǝ'xʷɐn/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-06143",
@@ -348752,7 +349892,10 @@
       "R-F"
     ],
     "conceptId": "ROT",
-    "ipa": "/gʷǝ'fʹɐn/"
+    "ipa": "/gʷǝ'fʹɐn/",
+    "translations": {
+      "tr": "onun kalbi + hayran"
+    }
   },
   {
     "id": "L-CORPUS2-06166",
@@ -349409,7 +350552,10 @@
     "isLemma": false,
     "conceptId": "KALMYK",
     "ipa": "/qʹɐ'ɮmǝqʹ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "dikkat + YOLAK"
+    }
   },
   {
     "id": "L-CORPUS2-06189",
@@ -349711,7 +350857,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/qʹʷǝr'mɐn/"
+    "ipa": "/qʹʷǝr'mɐn/",
+    "translations": {
+      "tr": "KURBAN + KAPLAMAK"
+    }
   },
   {
     "id": "L-CORPUS2-06201",
@@ -349803,7 +350952,10 @@
       "rule": "compound"
     },
     "conceptId": "DEFECT",
-    "ipa": "/qʹe:ʁɐ'ɮǝn/"
+    "ipa": "/qʹe:ʁɐ'ɮǝn/",
+    "translations": {
+      "tr": "kurtarmak + yil"
+    }
   },
   {
     "id": "L-CORPUS2-06204",
@@ -350203,7 +351355,10 @@
       "rule": "compound"
     },
     "ipa": "/ʂħa sǝn/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "onların + KENDI"
+    }
   },
   {
     "id": "L-CORPUS2-06219",
@@ -350410,7 +351565,10 @@
     "subConceptId": "-",
     "taxonomyFamily": "-",
     "rootForm": "гу",
-    "ipa": "/gʷǝzɐ'vɐʁʷɐ/"
+    "ipa": "/gʷǝzɐ'vɐʁʷɐ/",
+    "translations": {
+      "tr": "ACİL + buyuk"
+    }
   },
   {
     "id": "L-CORPUS2-06226",
@@ -351360,7 +352518,10 @@
       "R-F"
     ],
     "ipaSource": "root-derived",
-    "ipa": "/fǝzǝxwejr/"
+    "ipa": "/fǝzǝxwejr/",
+    "translations": {
+      "tr": "kadın + GEREKEN"
+    }
   },
   {
     "id": "L-CORPUS2-06263",
@@ -351831,7 +352992,10 @@
     },
     "isLemma": false,
     "conceptId": "WHITE",
-    "ipa": "/xʷǝʑ/"
+    "ipa": "/xʷǝʑ/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-06281",
@@ -351909,7 +353073,10 @@
       "R-SH1Y"
     ],
     "conceptId": "NAVY_BLUE",
-    "ipa": "/ɕʹǝħ/"
+    "ipa": "/ɕʹǝħ/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-06284",
@@ -352163,7 +353330,10 @@
     },
     "notes": "Corpus v1.0 batch-2 (freq: 17, lang: kbd, source: none)",
     "isLemma": false,
-    "ipa": "/jaːwbədaːɕ/"
+    "ipa": "/jaːwbədaːɕ/",
+    "translations": {
+      "tr": "onların + engaged (occupied)"
+    }
   },
   {
     "id": "L-CORPUS2-06294",
@@ -352212,7 +353382,10 @@
       "rule": "compound"
     },
     "ipa": "/'gʷǝfʹɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "ACIMAK + agiz"
+    }
   },
   {
     "id": "L-CORPUS2-06296",
@@ -352613,7 +353786,10 @@
     },
     "conceptId": "MANNER",
     "ipaSource": "root-derived",
-    "ipa": "/zadʒɐxɐrɐm/"
+    "ipa": "/zadʒɐxɐrɐm/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-06310",
@@ -352702,7 +353878,10 @@
       "rule": "compound"
     },
     "ipa": "/ɕǝs'ħǝn/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "ADAY + ÇOKLUK"
+    }
   },
   {
     "id": "L-CORPUS2-06314",
@@ -352765,7 +353944,10 @@
     },
     "isLemma": false,
     "ipa": "/nɐb'ʑǝts/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "Çukur + TOPLULUK + eski"
+    }
   },
   {
     "id": "L-CORPUS2-06317",
@@ -353267,7 +354449,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/qʹʷǝr'mɐn/"
+    "ipa": "/qʹʷǝr'mɐn/",
+    "translations": {
+      "tr": "KURBAN + yil"
+    }
   },
   {
     "id": "L-CORPUS2-06336",
@@ -353432,7 +354617,10 @@
     },
     "conceptId": "THOUSAND",
     "ipa": "/mi:n/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "ISLIK + Kurşun"
+    }
   },
   {
     "id": "L-CORPUS2-06343",
@@ -353820,7 +355008,10 @@
     "isLemma": false,
     "conceptId": "WORK",
     "ipaSource": "root-derived",
-    "ipa": "/fɐlɐʑɐrɐ/"
+    "ipa": "/fɐlɐʑɐrɐ/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-06359",
@@ -354413,7 +355604,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/'ɐʁɐ/"
+    "ipa": "/'ɐʁɐ/",
+    "translations": {
+      "tr": "dikkat + AFSUNLU"
+    }
   },
   {
     "id": "L-CORPUS2-06382",
@@ -354456,7 +355650,10 @@
     },
     "notes": "Corpus v1.0 batch-2 (freq: 17, lang: ady, source: none)",
     "isLemma": false,
-    "ipa": "/aːħəʃw/"
+    "ipa": "/aːħəʃw/",
+    "translations": {
+      "tr": "Parça + Karaciğer"
+    }
   },
   {
     "id": "L-CORPUS2-06384",
@@ -354581,7 +355778,10 @@
     },
     "notes": "Corpus v1.0 batch-2 (freq: 17, lang: ady, source: none)",
     "isLemma": false,
-    "ipa": "/je:kʹʷ/"
+    "ipa": "/je:kʹʷ/",
+    "translations": {
+      "tr": "yakışıklı + KADINLI"
+    }
   },
   {
     "id": "L-CORPUS2-06390",
@@ -354673,7 +355873,10 @@
     "isLemma": false,
     "conceptId": "SKY",
     "ipa": "/'wɑ:fɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "gokyuzu + SENBEN"
+    }
   },
   {
     "id": "L-CORPUS2-06394",
@@ -354699,7 +355902,10 @@
     "isLemma": false,
     "conceptId": "TONGUE",
     "ipaSource": "root-derived",
-    "ipa": "/bzɐdʒaʁɐkʼɐ/"
+    "ipa": "/bzɐdʒaʁɐkʼɐ/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-06395",
@@ -354969,7 +356175,10 @@
     },
     "conceptId": "LOVE",
     "ipa": "/'gʷǝɕʹɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-06405",
@@ -355175,7 +356384,10 @@
     },
     "notes": "Corpus v1.0 batch-2 (freq: 17, lang: ady, source: none)",
     "isLemma": false,
-    "ipa": "/aːħəʃwr/"
+    "ipa": "/aːħəʃwr/",
+    "translations": {
+      "tr": "Parça + KÖTÜLÜK"
+    }
   },
   {
     "id": "L-CORPUS2-06413",
@@ -355420,7 +356632,10 @@
     },
     "conceptId": "THOUSAND",
     "ipa": "/mi:n/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "zhy mistress + yakışıklı"
+    }
   },
   {
     "id": "L-CORPUS2-06423",
@@ -355539,7 +356754,10 @@
       "rule": "compound"
     },
     "ipa": "/wǝˈdzǝfɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "POST + CAIZ"
+    }
   },
   {
     "id": "L-CORPUS2-06428",
@@ -355620,7 +356838,10 @@
     },
     "isLemma": false,
     "ipa": "/'ʔɐpʹqʹɬɐpʹqʹ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "KABIL + yil"
+    }
   },
   {
     "id": "L-CORPUS2-06431",
@@ -355734,7 +356955,10 @@
     },
     "isLemma": false,
     "ipa": "/nɐb'ʑǝts/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "ITBOĞAN + eski"
+    }
   },
   {
     "id": "L-CORPUS2-06437",
@@ -355788,7 +357012,10 @@
     },
     "isLemma": false,
     "ipa": "/'ʔɐpʹqʹɬɐpʹqʹ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "bilemek + yil"
+    }
   },
   {
     "id": "L-CORPUS2-06439",
@@ -355814,7 +357041,10 @@
       "rule": "compound"
     },
     "ipa": "/'ʔɐpʹqʹɬɐpʹqʹ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-06441",
@@ -356070,7 +357300,10 @@
     },
     "conceptId": "THOUSAND",
     "ipa": "/mi:n/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "ISLIK + EMNIYETSIZ"
+    }
   },
   {
     "id": "L-CORPUS2-06453",
@@ -356355,7 +357588,10 @@
     },
     "conceptId": "EYEBROW",
     "ipa": "/'nɑ:bdzɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "Ordu + yil"
+    }
   },
   {
     "id": "L-CORPUS2-06463",
@@ -356599,7 +357835,10 @@
     },
     "isLemma": false,
     "ipa": "/nɐb'ʑǝts/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "BILGI + eski"
+    }
   },
   {
     "id": "L-CORPUS2-06475",
@@ -356724,7 +357963,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/xɐtʹʂ/"
+    "ipa": "/xɐtʹʂ/",
+    "translations": {
+      "tr": "orada + yil"
+    }
   },
   {
     "id": "L-CORPUS2-06481",
@@ -357102,7 +358344,10 @@
     "subConceptId": "EYE",
     "taxonomyFamily": "Göz & Görme",
     "rootForm": "нэ-",
-    "ipa": "/nɐfʹ/"
+    "ipa": "/nɐfʹ/",
+    "translations": {
+      "tr": "iyilik + act smearing"
+    }
   },
   {
     "id": "L-CORPUS2-06496",
@@ -357296,7 +358541,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/ʁɐzɐ'ɕʹɐn/"
+    "ipa": "/ʁɐzɐ'ɕʹɐn/",
+    "translations": {
+      "tr": "Uyuz + anlamak"
+    }
   },
   {
     "id": "L-CORPUS2-06503",
@@ -358258,7 +359506,10 @@
     },
     "conceptId": "BED_COVER",
     "ipa": "/pʹɐ'te:pχʷɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "IÇINDE + kopek"
+    }
   },
   {
     "id": "L-CORPUS2-06540",
@@ -358284,7 +359535,10 @@
       "rule": "compound"
     },
     "ipa": "/'gʷǝfʹɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "ASMAN + iyi"
+    }
   },
   {
     "id": "L-CORPUS2-06541",
@@ -358845,7 +360099,10 @@
     },
     "conceptId": "SEE_LOVE",
     "ipa": "/ɬɐ'ʁʷǝn/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-06561",
@@ -359399,7 +360656,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/gʷǝrǝ'ʔʷɐn/"
+    "ipa": "/gʷǝrǝ'ʔʷɐn/",
+    "translations": {
+      "tr": "onun kalbi + agiz"
+    }
   },
   {
     "id": "L-CORPUS2-06582",
@@ -359614,7 +360874,10 @@
     "subConceptId": "-",
     "taxonomyFamily": "-",
     "rootForm": "гу",
-    "ipa": "/gʷǝ'psɐ/"
+    "ipa": "/gʷǝ'psɐ/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-06590",
@@ -359704,7 +360967,10 @@
     "subConceptId": "SIN_DOER_NOM",
     "taxonomyFamily": "Gramer & Çekim",
     "rootForm": "гуэ-",
-    "ipa": "/gʷɐnǝ'ħǝɕʹɐ/"
+    "ipa": "/gʷɐnǝ'ħǝɕʹɐ/",
+    "translations": {
+      "tr": "günah + AFERIN"
+    }
   },
   {
     "id": "L-CORPUS2-06593",
@@ -359838,7 +361104,10 @@
     "isLemma": false,
     "conceptId": "KALMYK",
     "ipa": "/qʹɐ'ɮmǝqʹ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "AGU + ötmek"
+    }
   },
   {
     "id": "L-CORPUS2-06598",
@@ -360584,7 +361853,10 @@
       "rule": "compound"
     },
     "conceptId": "FOUR",
-    "ipa": "/pʹɬʹǝɕʹ/"
+    "ipa": "/pʹɬʹǝɕʹ/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-06626",
@@ -360673,7 +361945,10 @@
     "subConceptId": "SIN_DOER_DAT",
     "taxonomyFamily": "Gramer & Çekim",
     "rootForm": "гуэ-",
-    "ipa": "/gʷɐnǝ'ħǝɕʹɐ/"
+    "ipa": "/gʷɐnǝ'ħǝɕʹɐ/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-06629",
@@ -360699,7 +361974,10 @@
     "isLemma": false,
     "conceptId": "WORK",
     "ipaSource": "root-derived",
-    "ipa": "/din-lɐʑakʷʼɐxɐmrɐ/"
+    "ipa": "/din-lɐʑakʷʼɐxɐmrɐ/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-06630",
@@ -360831,7 +362109,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/zɐgʷǝrǝʔʷɐ'nǝʁɐ/"
+    "ipa": "/zɐgʷǝrǝʔʷɐ'nǝʁɐ/",
+    "translations": {
+      "tr": "FERAH + AFERIN"
+    }
   },
   {
     "id": "L-CORPUS2-06635",
@@ -360903,7 +362184,10 @@
     },
     "conceptId": "BLUE",
     "ipa": "/ɕχʷɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "trajik + otherwise"
+    }
   },
   {
     "id": "L-CORPUS2-06638",
@@ -360928,7 +362212,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/zɐgʷǝrǝʔʷɐ'nǝʁɐ/"
+    "ipa": "/zɐgʷǝrǝʔʷɐ'nǝʁɐ/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-06639",
@@ -361084,7 +362371,10 @@
     },
     "isLemma": false,
     "ipa": "/qʹʷɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-06646",
@@ -361691,7 +362981,10 @@
       "rule": "compound"
     },
     "ipa": "/ɕħɐgʷ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "AMIYANE + KUSMAK"
+    }
   },
   {
     "id": "L-CORPUS2-06671",
@@ -362043,7 +363336,10 @@
     "isLemma": false,
     "conceptId": "MIND",
     "ipa": "/gʷǝp'sǝsɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "ASMAN + su"
+    }
   },
   {
     "id": "L-CORPUS2-06685",
@@ -362069,7 +363365,10 @@
       "rule": "compound"
     },
     "conceptId": "DEFECT",
-    "ipa": "/qʹe:kʹʷɐ'ɬʹɐn/"
+    "ipa": "/qʹe:kʹʷɐ'ɬʹɐn/",
+    "translations": {
+      "tr": "yakışıklı + ÖLMÜŞ"
+    }
   },
   {
     "id": "L-CORPUS2-06686",
@@ -362528,7 +363827,10 @@
     "rootIds": [
       "R-KHY_2"
     ],
-    "ipa": "/χǝ'bɑ:r/"
+    "ipa": "/χǝ'bɑ:r/",
+    "translations": {
+      "tr": "HABER + TACIZ"
+    }
   },
   {
     "id": "L-CORPUS2-06705",
@@ -362902,7 +364204,10 @@
       "rule": "compound"
     },
     "conceptId": "LOVE",
-    "ipa": "/zɐ'rɑ:n/"
+    "ipa": "/zɐ'rɑ:n/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-06718",
@@ -363103,7 +364408,10 @@
       "rule": "compound"
     },
     "ipa": "/ɕħɐgʷ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "gider + gürültü"
+    }
   },
   {
     "id": "L-CORPUS2-06726",
@@ -364654,7 +365962,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/qʹʷǝ'tɐn/"
+    "ipa": "/qʹʷǝ'tɐn/",
+    "translations": {
+      "tr": "Kırmak + yil"
+    }
   },
   {
     "id": "L-CORPUS2-06781",
@@ -364681,7 +365992,10 @@
       "rule": "compound"
     },
     "ipa": "/ɕǝs'ħǝn/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-06782",
@@ -364862,7 +366176,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/'zɐtʹʂɐ/"
+    "ipa": "/'zɐtʹʂɐ/",
+    "translations": {
+      "tr": "dusty + kan + orada"
+    }
   },
   {
     "id": "L-CORPUS2-06789",
@@ -364915,7 +366232,10 @@
     },
     "conceptId": "THOUSAND",
     "ipa": "/mi:n/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-06791",
@@ -365077,7 +366397,10 @@
     },
     "conceptId": "LOVE",
     "ipa": "/'gʷǝɕʹɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-06797",
@@ -365560,7 +366883,10 @@
       ]
     },
     "isLemma": false,
-    "ipa": "/qʹɐʂ/"
+    "ipa": "/qʹɐʂ/",
+    "translations": {
+      "tr": "ünlem + iş + Taramak"
+    }
   },
   {
     "id": "L-CORPUS2-06815",
@@ -366124,7 +367450,10 @@
     },
     "conceptId": "MANNER",
     "ipaSource": "root-derived",
-    "ipa": "/zadʒɐxɐrɐr/"
+    "ipa": "/zadʒɐxɐrɐr/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-06838",
@@ -366369,7 +367698,10 @@
     },
     "conceptId": "PETROLEUM",
     "ipaSource": "root-derived",
-    "ipa": "/zǝχʷʁɐr/"
+    "ipa": "/zǝχʷʁɐr/",
+    "translations": {
+      "tr": "biçer-döver + TUTSAK"
+    }
   },
   {
     "id": "L-CORPUS2-06847",
@@ -366697,7 +368029,10 @@
     },
     "isLemma": false,
     "ipa": "/'ʔɐpʹqʹɬɐpʹqʹ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "HAZINE + Kalın"
+    }
   },
   {
     "id": "L-CORPUS2-06860",
@@ -366911,7 +368246,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/sǝqʹ/"
+    "ipa": "/sǝqʹ/",
+    "translations": {
+      "tr": "sansli ev + yil"
+    }
   },
   {
     "id": "L-CORPUS2-06868",
@@ -367028,7 +368366,10 @@
       "rule": "compound"
     },
     "ipa": "/wǝˈdzǝfɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-06873",
@@ -367272,7 +368613,10 @@
     },
     "notes": "Corpus v1.0 batch-2 (freq: 16, lang: ady, source: none)",
     "isLemma": false,
-    "ipa": "/zjiarəlħa/"
+    "ipa": "/zjiarəlħa/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-06883",
@@ -367297,7 +368641,10 @@
     },
     "isLemma": false,
     "ipa": "/'ʔɐpʹqʹɬɐpʹqʹ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "bilemek + yil"
+    }
   },
   {
     "id": "L-CORPUS2-06884",
@@ -367689,7 +369036,10 @@
     "taxonomyFamily": "Göz & Görme",
     "rootForm": "плъэ-",
     "ipa": "/pɐ'pɬɐn/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "siyah + yil"
+    }
   },
   {
     "id": "L-CORPUS2-06899",
@@ -367999,7 +369349,10 @@
     },
     "isLemma": false,
     "conceptId": "BED_COVER",
-    "ipa": "/zɐbɮɐ'χʷǝn/"
+    "ipa": "/zɐbɮɐ'χʷǝn/",
+    "translations": {
+      "tr": "yılan + EVLAT"
+    }
   },
   {
     "id": "L-CORPUS2-06912",
@@ -368055,7 +369408,10 @@
     "isLemma": false,
     "conceptId": "LIFE_PARTNER",
     "ipa": "/psɐʁʷ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "onların + BIGÜNAH"
+    }
   },
   {
     "id": "L-CORPUS2-06915",
@@ -368472,7 +369828,10 @@
     },
     "notes": "Corpus v1.0 batch-2 (freq: 16, lang: ady, source: none)",
     "isLemma": false,
-    "ipa": "/ʃwajiʁwaːʁama/"
+    "ipa": "/ʃwajiʁwaːʁama/",
+    "translations": {
+      "tr": "ARZU + dikkat"
+    }
   },
   {
     "id": "L-CORPUS2-06930",
@@ -368525,7 +369884,10 @@
     },
     "isLemma": false,
     "ipa": "/nɐb'ʑǝts/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "dikkat + eski"
+    }
   },
   {
     "id": "L-CORPUS2-06933",
@@ -368742,7 +370104,10 @@
     },
     "conceptId": "WRITE",
     "ipa": "/txɐn/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "BIYOGRAFI"
+    }
   },
   {
     "id": "L-CORPUS2-06941",
@@ -368769,7 +370134,10 @@
       "rule": "compound"
     },
     "ipa": "/'ʁʷǝsɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "BABACA + YANI SIRA"
+    }
   },
   {
     "id": "L-CORPUS2-06942",
@@ -368949,7 +370317,10 @@
     },
     "isLemma": false,
     "conceptId": "PLANT",
-    "ipa": "/pχɐn/"
+    "ipa": "/pχɐn/",
+    "translations": {
+      "tr": "Kütük (parçası) + DOSDOĞRU"
+    }
   },
   {
     "id": "L-CORPUS2-06950",
@@ -369924,7 +371295,10 @@
     },
     "isLemma": false,
     "conceptId": "KALMYK",
-    "ipa": "/qʹɑ:ɕ/"
+    "ipa": "/qʹɑ:ɕ/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-06985",
@@ -370580,7 +371954,10 @@
       "rule": "compound"
     },
     "ipaSource": "form-derived",
-    "ipa": "/ɬʼitʼǝm/"
+    "ipa": "/ɬʼitʼǝm/",
+    "translations": {
+      "tr": "KADINLI + Koç"
+    }
   },
   {
     "id": "L-CORPUS2-07009",
@@ -371334,7 +372711,10 @@
       "rule": "compound"
     },
     "conceptId": "LIFE_PARTNER",
-    "ipa": "/'zǝʁɐ/"
+    "ipa": "/'zǝʁɐ/",
+    "translations": {
+      "tr": "SÜZME + TAMAMEN"
+    }
   },
   {
     "id": "L-CORPUS2-07038",
@@ -371615,7 +372995,10 @@
       "rule": "compound"
     },
     "ipa": "/'wɐsɐps/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "Bağ + yapmak"
+    }
   },
   {
     "id": "L-CORPUS2-07047",
@@ -373012,7 +374395,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/'pɑ:ʂɐ/"
+    "ipa": "/'pɑ:ʂɐ/",
+    "translations": {
+      "tr": "DİREKTÖR + buyuk"
+    }
   },
   {
     "id": "L-CORPUS2-07100",
@@ -373797,7 +375183,10 @@
     },
     "isLemma": false,
     "conceptId": "EAGLE",
-    "ipa": "/qʹɐb/"
+    "ipa": "/qʹɐb/",
+    "translations": {
+      "tr": "kabak + yil + PEKİ iyi"
+    }
   },
   {
     "id": "L-CORPUS2-07129",
@@ -374106,7 +375495,10 @@
       ]
     },
     "isLemma": false,
-    "ipa": "/jǝɬɐ'ʁʷɐn/"
+    "ipa": "/jǝɬɐ'ʁʷɐn/",
+    "translations": {
+      "tr": "IÇINDE + dried up"
+    }
   },
   {
     "id": "L-CORPUS2-07141",
@@ -374213,7 +375605,10 @@
       "rule": "compound"
     },
     "conceptId": "PROTECT",
-    "ipa": "/qɐzǝɕtaxɐm/"
+    "ipa": "/qɐzǝɕtaxɐm/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-07145",
@@ -374434,7 +375829,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/ħɐ'ɕʹɐɕ/"
+    "ipa": "/ħɐ'ɕʹɐɕ/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-07155",
@@ -374577,7 +375975,10 @@
     },
     "notes": "Corpus v1.0 batch-2 (freq: 15, lang: kbd, source: none)",
     "isLemma": false,
-    "ipa": "/vʁalaːpa/"
+    "ipa": "/vʁalaːpa/",
+    "translations": {
+      "tr": "yil + niyet"
+    }
   },
   {
     "id": "L-CORPUS2-07162",
@@ -374685,7 +376086,10 @@
     },
     "isLemma": false,
     "ipa": "/'ʔɐpʹqʹɬɐpʹqʹ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-07166",
@@ -374730,7 +376134,10 @@
       "R-GU_1"
     ],
     "conceptId": "ROAD",
-    "ipa": "/ʁʷɐgʷ/"
+    "ipa": "/ʁʷɐgʷ/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-07168",
@@ -374846,7 +376253,10 @@
       "rule": "compound"
     },
     "conceptId": "DINING_ROOM",
-    "ipa": "/dɐ'qʹi:qʹɐ/"
+    "ipa": "/dɐ'qʹi:qʹɐ/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-07173",
@@ -375606,7 +377016,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/kʹʷɐn/"
+    "ipa": "/kʹʷɐn/",
+    "translations": {
+      "tr": "sansli ev + gitmek"
+    }
   },
   {
     "id": "L-CORPUS2-07205",
@@ -376073,7 +377486,10 @@
     "rootIds": [
       "R-IEP"
     ],
-    "ipa": "/'ʔɐpɐ/"
+    "ipa": "/'ʔɐpɐ/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-07225",
@@ -376290,7 +377706,10 @@
     "subConceptId": "TIME_PERIOD",
     "taxonomyFamily": "Gramer & Zaman",
     "rootForm": "махуэ-",
-    "ipa": "/'mɑ:xʷɐ/"
+    "ipa": "/'mɑ:xʷɐ/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-07233",
@@ -376336,7 +377755,10 @@
     "isLemma": false,
     "conceptId": "DEFECT",
     "ipa": "/ɬɐ'gʷɑ:ʑɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "Mavi + samimi"
+    }
   },
   {
     "id": "L-CORPUS2-07235",
@@ -376391,7 +377813,10 @@
       "rule": "compound"
     },
     "ipa": "/'gʷǝfʹɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "ACIMAK + ötmek"
+    }
   },
   {
     "id": "L-CORPUS2-07237",
@@ -376519,7 +377944,10 @@
     },
     "isLemma": false,
     "conceptId": "WORK",
-    "ipa": "/ɮɐ'ʑǝʁɐ/"
+    "ipa": "/ɮɐ'ʑǝʁɐ/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-07242",
@@ -377131,7 +378559,10 @@
     "isLemma": false,
     "conceptId": "COW",
     "ipaSource": "root-derived",
-    "ipa": "/bʒɐmkʼɐ/"
+    "ipa": "/bʒɐmkʼɐ/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-07264",
@@ -377492,7 +378923,10 @@
     "rootIds": [
       "R-1UEKHU"
     ],
-    "ipa": "/ʔʷɐxʷ/"
+    "ipa": "/ʔʷɐxʷ/",
+    "translations": {
+      "tr": "iş + TELKIN"
+    }
   },
   {
     "id": "L-CORPUS2-07277",
@@ -377684,7 +379118,10 @@
     "rootIds": [
       "R-IESHCH"
     ],
-    "ipa": "/'ʔɐɕɐ/"
+    "ipa": "/'ʔɐɕɐ/",
+    "translations": {
+      "tr": "Silah + ELBİSE"
+    }
   },
   {
     "id": "L-CORPUS2-07285",
@@ -377943,7 +379380,10 @@
       ]
     },
     "isLemma": false,
-    "ipa": "/jǝ'ɬɐs/"
+    "ipa": "/jǝ'ɬɐs/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-07295",
@@ -378063,7 +379503,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/zɐxɐ'ɕʹǝtʹʂ/"
+    "ipa": "/zɐxɐ'ɕʹǝtʹʂ/",
+    "translations": {
+      "tr": "bilinç + ÇALI"
+    }
   },
   {
     "id": "L-CORPUS2-07299",
@@ -378088,7 +379531,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/zɐtʹʂɐ'ɬǝkʹʷɐ/"
+    "ipa": "/zɐtʹʂɐ'ɬǝkʹʷɐ/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-07300",
@@ -378290,7 +379736,10 @@
     },
     "conceptId": "PROTECT",
     "ipa": "/χʷǝ'mɐn/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "BAŞKENT + kapı"
+    }
   },
   {
     "id": "L-CORPUS2-07308",
@@ -378510,7 +379959,10 @@
       "rule": "compound"
     },
     "ipa": "/kʹʷɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "orada + AĞACALIK"
+    }
   },
   {
     "id": "L-CORPUS2-07316",
@@ -378665,7 +380117,10 @@
       "rule": "compound"
     },
     "ipa": "/'gʷǝfʹɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-07323",
@@ -378692,7 +380147,10 @@
     },
     "conceptId": "GRANDMOTHER",
     "ipa": "/ɐ'nɐʂxʷɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-07324",
@@ -378746,7 +380204,10 @@
     "subConceptId": "",
     "taxonomyFamily": "",
     "rootForm": "пэ-",
-    "ipa": "/pɐ'ɕɐ/"
+    "ipa": "/pɐ'ɕɐ/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-07327",
@@ -378845,7 +380306,10 @@
     },
     "isLemma": false,
     "ipa": "/'ʔɐpʹqʹɬɐpʹqʹ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-07332",
@@ -378942,7 +380406,10 @@
       "rule": "compound"
     },
     "ipa": "/ɕǝs'ħǝn/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-07336",
@@ -378968,7 +380435,10 @@
     "isLemma": false,
     "conceptId": "TONGUE",
     "ipaSource": "root-derived",
-    "ipa": "/bzɐdʒaʃʼɐr/"
+    "ipa": "/bzɐdʒaʃʼɐr/",
+    "translations": {
+      "tr": "dil + <div style + BILGI"
+    }
   },
   {
     "id": "L-CORPUS2-07337",
@@ -378994,7 +380464,10 @@
       "rule": "compound"
     },
     "conceptId": "LOVE",
-    "ipa": "/'zǝtʹʂi:/"
+    "ipa": "/'zǝtʹʂi:/",
+    "translations": {
+      "tr": "HİÇ + oath"
+    }
   },
   {
     "id": "L-CORPUS2-07338",
@@ -379046,7 +380519,10 @@
       "rule": "compound"
     },
     "ipa": "/qʹʷɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-07340",
@@ -379102,7 +380578,10 @@
     "isLemma": false,
     "conceptId": "LIFE_PARTNER",
     "ipa": "/psɐʁʷ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "onların + BIGÜNAH"
+    }
   },
   {
     "id": "L-CORPUS2-07342",
@@ -379175,7 +380654,10 @@
       "R-SHCH"
     ],
     "conceptId": "COMPASSION",
-    "ipa": "/'ɕǝnɐ/"
+    "ipa": "/'ɕǝnɐ/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-07345",
@@ -379504,7 +380986,10 @@
       "rule": "compound"
     },
     "ipaSource": "root-derived",
-    "ipa": "/sʃʼɐɕtǝr/"
+    "ipa": "/sʃʼɐɕtǝr/",
+    "translations": {
+      "tr": "BILGI + BABACA"
+    }
   },
   {
     "id": "L-CORPUS2-07357",
@@ -379560,7 +381045,10 @@
       "rule": "compound"
     },
     "ipa": "/pʹqʹǝ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-07359",
@@ -379586,7 +381074,10 @@
       "rule": "compound"
     },
     "ipaSource": "root-derived",
-    "ipa": "/sʃʼoiʁʷaʁɐr/"
+    "ipa": "/sʃʼoiʁʷaʁɐr/",
+    "translations": {
+      "tr": "IÇMEK + dikkat"
+    }
   },
   {
     "id": "L-CORPUS2-07360",
@@ -379641,7 +381132,10 @@
       "rule": "compound"
     },
     "ipaSource": "root-derived",
-    "ipa": "/qǝblɐmkʼɐ/"
+    "ipa": "/qǝblɐmkʼɐ/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-07362",
@@ -380252,7 +381746,10 @@
       "rule": "compound"
     },
     "ipaSource": "root-derived",
-    "ipa": "/iʔɐmǝrkʼɐ/"
+    "ipa": "/iʔɐmǝrkʼɐ/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-07385",
@@ -381301,7 +382798,10 @@
     },
     "isLemma": false,
     "ipa": "/nɐb'ʑǝts/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "yil + eski"
+    }
   },
   {
     "id": "L-CORPUS2-07424",
@@ -381506,7 +383006,10 @@
     },
     "conceptId": "LOVE",
     "ipa": "/'gʷǝɕʹɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-07435",
@@ -382092,7 +383595,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/ʔɑ:ʁ/"
+    "ipa": "/ʔɑ:ʁ/",
+    "translations": {
+      "tr": "onların + Ah"
+    }
   },
   {
     "id": "L-CORPUS2-07462",
@@ -382120,7 +383626,10 @@
     "subConceptId": "",
     "taxonomyFamily": "",
     "rootForm": "пэ-",
-    "ipa": "/pɐ'ɕɐ/"
+    "ipa": "/pɐ'ɕɐ/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-07463",
@@ -382524,7 +384033,10 @@
       "rule": "compound"
     },
     "ipaSource": "root-derived",
-    "ipa": "/zɐpxǝʁɐnɐw/"
+    "ipa": "/zɐpxǝʁɐnɐw/",
+    "translations": {
+      "tr": "KOŞAÇ + yil"
+    }
   },
   {
     "id": "L-CORPUS2-07478",
@@ -383135,7 +384647,10 @@
       "rule": "compound"
     },
     "ipa": "/ɕħɐgʷ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-07502",
@@ -383391,7 +384906,10 @@
       "rule": "compound"
     },
     "conceptId": "PROTECT",
-    "ipa": "/qʹɐp/"
+    "ipa": "/qʹɐp/",
+    "translations": {
+      "tr": "Çuval + anlatmak"
+    }
   },
   {
     "id": "L-CORPUS2-07513",
@@ -383753,7 +385271,10 @@
     "rootIds": [
       "R-1E"
     ],
-    "ipa": "/ʔɐmɐɮǝn'ʂɑ:ʁɐ/"
+    "ipa": "/ʔɐmɐɮǝn'ʂɑ:ʁɐ/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-07526",
@@ -384025,7 +385546,10 @@
     },
     "isLemma": false,
     "conceptId": "EAGLE",
-    "ipa": "/bʁɐʔɐpχʷɐ/"
+    "ipa": "/bʁɐʔɐpχʷɐ/",
+    "translations": {
+      "tr": "Atmaca cinsi + EVLAT"
+    }
   },
   {
     "id": "L-CORPUS2-07537",
@@ -384181,7 +385705,10 @@
     "rootIds": [
       "R-FIE"
     ],
-    "ipa": "/fʹɐɕχʷǝ'nǝʁɐ/"
+    "ipa": "/fʹɐɕχʷǝ'nǝʁɐ/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-07543",
@@ -384500,7 +386027,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/qʹɐs/"
+    "ipa": "/qʹɐs/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-07556",
@@ -384845,7 +386375,10 @@
     },
     "isLemma": false,
     "ipa": "/'ʔɐpʹqʹɬɐpʹqʹ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "DOLU + çubuk"
+    }
   },
   {
     "id": "L-CORPUS2-07570",
@@ -384994,7 +386527,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/qʹʷǝr'mɐn/"
+    "ipa": "/qʹʷǝr'mɐn/",
+    "translations": {
+      "tr": "KURBAN + MAHALLINDE"
+    }
   },
   {
     "id": "L-CORPUS2-07575",
@@ -385069,7 +386605,10 @@
       "R-UER_1"
     ],
     "conceptId": "SINGER",
-    "ipa": "/wɐ'rɐd/"
+    "ipa": "/wɐ'rɐd/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-07578",
@@ -385718,7 +387257,10 @@
       "rule": "compound"
     },
     "conceptId": "PROTECT",
-    "ipa": "/ʁɐ'tʹʂǝn/"
+    "ipa": "/ʁɐ'tʹʂǝn/",
+    "translations": {
+      "tr": "Çukur + yil + KIŞ"
+    }
   },
   {
     "id": "L-CORPUS2-07606",
@@ -385993,7 +387535,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/ʁɐkʹʷɐ'dǝn/"
+    "ipa": "/ʁɐkʹʷɐ'dǝn/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-07617",
@@ -386065,7 +387610,10 @@
       "rule": "compound"
     },
     "conceptId": "SPARE",
-    "ipa": "/'xʷɐdɐ/"
+    "ipa": "/'xʷɐdɐ/",
+    "translations": {
+      "tr": "onların + AYNI"
+    }
   },
   {
     "id": "L-CORPUS2-07620",
@@ -386244,7 +387792,10 @@
     },
     "isLemma": false,
     "ipa": "/'ʔɐpʹqʹɬɐpʹqʹ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "bilemek + ötmek"
+    }
   },
   {
     "id": "L-CORPUS2-07626",
@@ -387315,7 +388866,10 @@
       "R-SH1E"
     ],
     "conceptId": "EAT_UNDER",
-    "ipa": "/ɕʹɐ'nǝʁɐ/"
+    "ipa": "/ɕʹɐ'nǝʁɐ/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-07668",
@@ -387410,7 +388964,10 @@
       ]
     },
     "isLemma": false,
-    "ipa": "/'nǝqʹʷɐ/"
+    "ipa": "/'nǝqʹʷɐ/",
+    "translations": {
+      "tr": "İri + Oğul"
+    }
   },
   {
     "id": "L-CORPUS2-07673",
@@ -387525,7 +389082,10 @@
     "isLemma": false,
     "conceptId": "TONGUE",
     "ipaSource": "root-derived",
-    "ipa": "/bzɐxɐmkʼɐ/"
+    "ipa": "/bzɐxɐmkʼɐ/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-07677",
@@ -387845,7 +389405,10 @@
     },
     "isLemma": false,
     "conceptId": "RAIN",
-    "ipa": "/ʂǝ'nɑ:ʁʷɐ/"
+    "ipa": "/ʂǝ'nɑ:ʁʷɐ/",
+    "translations": {
+      "tr": "tehlikeli + buyuk"
+    }
   },
   {
     "id": "L-CORPUS2-07689",
@@ -388316,7 +389879,10 @@
       "rule": "compound"
     },
     "ipa": "/mɐˈrɑ:kʹʷɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "belediye başkanı + Kızılcık"
+    }
   },
   {
     "id": "L-CORPUS2-07705",
@@ -388457,7 +390023,10 @@
     },
     "isLemma": false,
     "ipa": "/nɐb'ʑǝts/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "Sürmek + DELIKANLI"
+    }
   },
   {
     "id": "L-CORPUS2-07710",
@@ -388597,7 +390166,10 @@
       ]
     },
     "isLemma": false,
-    "ipa": "/ɬɐ'rǝᶎɐ/"
+    "ipa": "/ɬɐ'rǝᶎɐ/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-07716",
@@ -388789,7 +390361,10 @@
       "rule": "compound"
     },
     "ipa": "/'gʷǝfʹɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "SÖZ + onun kalbi"
+    }
   },
   {
     "id": "L-CORPUS2-07723",
@@ -388873,7 +390448,10 @@
     },
     "isLemma": false,
     "ipa": "/nɐb'ʑǝts/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "Sürmek + IKLIM"
+    }
   },
   {
     "id": "L-CORPUS2-07726",
@@ -389194,7 +390772,10 @@
     "isLemma": false,
     "conceptId": "WORK",
     "ipaSource": "root-derived",
-    "ipa": "/sǝɕǝlɐʑaɕ/"
+    "ipa": "/sǝɕǝlɐʑaɕ/",
+    "translations": {
+      "tr": "OCAK + thoroughly fried/roasted"
+    }
   },
   {
     "id": "L-CORPUS2-07738",
@@ -389566,7 +391147,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/ɐ'rɑ:t/"
+    "ipa": "/ɐ'rɑ:t/",
+    "translations": {
+      "tr": "ODUR + Çukur"
+    }
   },
   {
     "id": "L-CORPUS2-07752",
@@ -389668,7 +391252,10 @@
       "rule": "compound"
     },
     "conceptId": "DINING_ROOM",
-    "ipa": "/zɐ'tʂǝr/"
+    "ipa": "/zɐ'tʂǝr/",
+    "translations": {
+      "tr": "relig. divine service song + ŞAIRANE"
+    }
   },
   {
     "id": "L-CORPUS2-07756",
@@ -390181,7 +391768,10 @@
       "rule": "compound"
     },
     "ipa": "/bɑ:ʂ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-07774",
@@ -390210,7 +391800,10 @@
     "taxonomyFamily": "-",
     "rootForm": "гу",
     "ipa": "/qʹɐ'ɮmǝqʹ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-07775",
@@ -390360,7 +391953,10 @@
       "rule": "compound"
     },
     "ipa": "/ɕǝs'ħǝn/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "onların + dikkat"
+    }
   },
   {
     "id": "L-CORPUS2-07780",
@@ -391668,7 +393264,10 @@
     },
     "notes": "Corpus v1.0 batch-2 (freq: 14, lang: kbd, source: none)",
     "isLemma": false,
-    "ipa": "/xjiɕəkərqəm/"
+    "ipa": "/xjiɕəkərqəm/",
+    "translations": {
+      "tr": "Seksen + Kalın"
+    }
   },
   {
     "id": "L-CORPUS2-07828",
@@ -391927,7 +393526,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/xʷǝɕǝ'tǝn/"
+    "ipa": "/xʷǝɕǝ'tǝn/",
+    "translations": {
+      "tr": "treat + yil"
+    }
   },
   {
     "id": "L-CORPUS2-07837",
@@ -392376,7 +393978,10 @@
       ]
     },
     "isLemma": false,
-    "ipa": "/'psɑ:ɬɐ/"
+    "ipa": "/'psɑ:ɬɐ/",
+    "translations": {
+      "tr": "KELİME + balık"
+    }
   },
   {
     "id": "L-CORPUS2-07852",
@@ -392431,7 +394036,10 @@
       "rule": "compound"
     },
     "ipa": "/ɕħɐgʷ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "crowded + ÇETİN"
+    }
   },
   {
     "id": "L-CORPUS2-07854",
@@ -392512,7 +394120,10 @@
     },
     "isLemma": false,
     "ipa": "/'ʔɐpʹqʹɬɐpʹqʹ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-07857",
@@ -392669,7 +394280,10 @@
     },
     "isLemma": false,
     "ipa": "/nɐb'ʑǝts/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "orada + Koyun postu"
+    }
   },
   {
     "id": "L-CORPUS2-07864",
@@ -392937,7 +394551,10 @@
     "isLemma": false,
     "conceptId": "HOUSEWIFE",
     "ipa": "/wǝnɐ'gʷɑ:ɕɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-07875",
@@ -393060,7 +394677,10 @@
     },
     "isLemma": false,
     "conceptId": "KALMYK",
-    "ipa": "/'qʹɑ:fɐ/"
+    "ipa": "/'qʹɑ:fɐ/",
+    "translations": {
+      "tr": "dans + orada"
+    }
   },
   {
     "id": "L-CORPUS2-07880",
@@ -393115,7 +394735,10 @@
       "rule": "compound"
     },
     "ipa": "/'ɐʔɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-07882",
@@ -393274,7 +394897,10 @@
     },
     "isLemma": false,
     "ipa": "/nɐb'ʑǝts/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "BEZIRBENÇ + eski"
+    }
   },
   {
     "id": "L-CORPUS2-07888",
@@ -393521,7 +395147,10 @@
     },
     "conceptId": "COMPANION",
     "ipa": "/'ʁʷǝsɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "ABBAS + obsolete. cm."
+    }
   },
   {
     "id": "L-CORPUS2-07898",
@@ -393775,7 +395404,10 @@
     },
     "notes": "Corpus v1.0 batch-2 (freq: 14, lang: ady, source: none)",
     "isLemma": false,
-    "ipa": "/ʐwʁaχw/"
+    "ipa": "/ʐwʁaχw/",
+    "translations": {
+      "tr": "TOPLULUK + CINSEL"
+    }
   },
   {
     "id": "L-CORPUS2-07908",
@@ -393801,7 +395433,10 @@
       "rule": "compound"
     },
     "ipa": "/'kʷǝpʹɕʹɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-07909",
@@ -393978,7 +395613,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/ɕǝʔɐ'nǝʁɐ/"
+    "ipa": "/ɕǝʔɐ'nǝʁɐ/",
+    "translations": {
+      "tr": "onların + ÖMÜR"
+    }
   },
   {
     "id": "L-CORPUS2-07917",
@@ -394404,7 +396042,10 @@
     },
     "isLemma": false,
     "ipa": "/'ʔɐpʹqʹɬɐpʹqʹ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-07933",
@@ -394487,7 +396128,10 @@
     },
     "isLemma": false,
     "conceptId": "EYEBROW",
-    "ipa": "/qʹǝp/"
+    "ipa": "/qʹǝp/",
+    "translations": {
+      "tr": "yemek + FAL + eski"
+    }
   },
   {
     "id": "L-CORPUS2-07936",
@@ -394601,7 +396245,10 @@
       "rule": "compound"
     },
     "ipa": "/wǝˈdzǝfɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "POST + MECNUNCA"
+    }
   },
   {
     "id": "L-CORPUS2-07941",
@@ -394680,7 +396327,10 @@
     },
     "conceptId": "SPARE",
     "ipa": "/ʂħa sǝn/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-07944",
@@ -394817,7 +396467,10 @@
     },
     "isLemma": false,
     "conceptId": "WRITE",
-    "ipa": "/qʹʷǝr'mɐn/"
+    "ipa": "/qʹʷǝr'mɐn/",
+    "translations": {
+      "tr": "KURBAN + yil + yazı"
+    }
   },
   {
     "id": "L-CORPUS2-07949",
@@ -394842,7 +396495,10 @@
     },
     "isLemma": false,
     "ipa": "/nɐb'ʑǝts/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "yil + Taramak"
+    }
   },
   {
     "id": "L-CORPUS2-07950",
@@ -394882,7 +396538,10 @@
     },
     "notes": "Corpus v1.0 batch-2 (freq: 14, lang: ady, source: none)",
     "isLemma": false,
-    "ipa": "/tʂəxaːtam/"
+    "ipa": "/tʂəxaːtam/",
+    "translations": {
+      "tr": "Kiraz + BAŞAKLAMA"
+    }
   },
   {
     "id": "L-CORPUS2-07952",
@@ -395054,7 +396713,10 @@
     "taxonomyFamily": "-",
     "rootForm": "гу",
     "ipa": "/'gʷǝfʹɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-07960",
@@ -395298,7 +396960,10 @@
     },
     "isLemma": false,
     "ipa": "/'ʔɐpʹqʹɬɐpʹqʹ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-07971",
@@ -395465,7 +397130,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/qʹǝtʹʂɐɬǝ'kʹʷɐn/"
+    "ipa": "/qʹǝtʹʂɐɬǝ'kʹʷɐn/",
+    "translations": {
+      "tr": "GEZ + kan + orada"
+    }
   },
   {
     "id": "L-CORPUS2-07978",
@@ -395767,7 +397435,10 @@
     },
     "isLemma": false,
     "ipa": "/nɐb'ʑǝts/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "orada + Koyun postu"
+    }
   },
   {
     "id": "L-CORPUS2-07989",
@@ -395920,7 +397591,10 @@
     },
     "notes": "Corpus v1.0 batch-2 (freq: 14, lang: ady, source: none)",
     "isLemma": false,
-    "ipa": "/waʃa-daməʃa/"
+    "ipa": "/waʃa-daməʃa/",
+    "translations": {
+      "tr": "yanlışlıkla + BILGI"
+    }
   },
   {
     "id": "L-CORPUS2-07995",
@@ -396273,7 +397947,10 @@
     },
     "isLemma": false,
     "ipa": "/'ʔɐpʹqʹɬɐpʹqʹ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "HAZINE + ARMUT"
+    }
   },
   {
     "id": "L-CORPUS2-08009",
@@ -396415,7 +398092,10 @@
       "rule": "compound"
     },
     "ipaSource": "root-derived",
-    "ipa": "/ʁǝlǝʔadǝm/"
+    "ipa": "/ʁǝlǝʔadǝm/",
+    "translations": {
+      "tr": "dikkat + Sağlam"
+    }
   },
   {
     "id": "L-CORPUS2-08015",
@@ -396480,7 +398160,10 @@
       "rule": "compound"
     },
     "ipa": "/ɕħɐgʷ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-08018",
@@ -396566,7 +398249,10 @@
       "rule": "compound"
     },
     "ipaSource": "root-derived",
-    "ipa": "/aʃʼɐɕtǝʁɐ/"
+    "ipa": "/aʃʼɐɕtǝʁɐ/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-08022",
@@ -396900,7 +398586,10 @@
       ]
     },
     "isLemma": false,
-    "ipa": "/ɬɐ'tʹʂǝn/"
+    "ipa": "/ɬɐ'tʹʂǝn/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-08036",
@@ -396998,7 +398687,10 @@
     },
     "isLemma": false,
     "ipa": "/'ʔɐpʹqʹɬɐpʹqʹ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "HAZINE + uzamak"
+    }
   },
   {
     "id": "L-CORPUS2-08040",
@@ -397067,7 +398759,10 @@
     ],
     "conceptId": "COMPASSION",
     "ipa": "/ɕǝs'ħǝn/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "NUMUNELIK + yanak"
+    }
   },
   {
     "id": "L-CORPUS2-08043",
@@ -397108,7 +398803,10 @@
     },
     "conceptId": "PROTECT",
     "ipa": "/χʷǝ'mɐn/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "Çukur + dairy + TUTSAK"
+    }
   },
   {
     "id": "L-CORPUS2-08045",
@@ -397361,7 +399059,10 @@
       "rule": "compound"
     },
     "ipa": "/'ɕǝpʹqʹɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-08054",
@@ -397435,7 +399136,10 @@
     },
     "notes": "Corpus v1.0 batch-2 (freq: 14, lang: ady, source: none)",
     "isLemma": false,
-    "ipa": "/ʐwʁatsaːkax/"
+    "ipa": "/ʐwʁatsaːkax/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-08057",
@@ -398455,7 +400159,10 @@
     "isLemma": false,
     "conceptId": "PLANT",
     "ipa": "/pχɐx/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "HAMAMCI + Kütük (parçası)"
+    }
   },
   {
     "id": "L-CORPUS2-08100",
@@ -398540,7 +400247,10 @@
     "isLemma": false,
     "conceptId": "PLANT",
     "ipa": "/dǝʁɐ'ʁɑ:zɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "yil + faded"
+    }
   },
   {
     "id": "L-CORPUS2-08103",
@@ -398802,7 +400512,10 @@
       "rule": "compound"
     },
     "conceptId": "BIG_WORK",
-    "ipa": "/je:'dᶎɐtʹʂɐ/"
+    "ipa": "/je:'dᶎɐtʹʂɐ/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-08115",
@@ -399004,7 +400717,10 @@
     },
     "isLemma": false,
     "conceptId": "GRAY",
-    "ipa": "/'kʷɐbᶎɐ/"
+    "ipa": "/'kʷɐbᶎɐ/",
+    "translations": {
+      "tr": "DIŞ KAPI + ENFI"
+    }
   },
   {
     "id": "L-CORPUS2-08124",
@@ -399049,7 +400765,10 @@
     },
     "notes": "Corpus v1.0 batch-2 (freq: 13, lang: kbd, source: none)",
     "isLemma": false,
-    "ipa": "/jwadaːwa/"
+    "ipa": "/jwadaːwa/",
+    "translations": {
+      "tr": "İYOT + agiz"
+    }
   },
   {
     "id": "L-CORPUS2-08126",
@@ -399323,7 +401042,10 @@
       "rule": "compound"
     },
     "ipa": "/qʹʷɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "KEL + Koç"
+    }
   },
   {
     "id": "L-CORPUS2-08136",
@@ -399903,7 +401625,10 @@
     },
     "isLemma": false,
     "conceptId": "KALMYK",
-    "ipa": "/qʼɐ'rǝtʼʂ/"
+    "ipa": "/qʼɐ'rǝtʼʂ/",
+    "translations": {
+      "tr": "EVET + Kalın"
+    }
   },
   {
     "id": "L-CORPUS2-08158",
@@ -400000,7 +401725,10 @@
       "rule": "compound"
     },
     "ipa": "/'gʷǝfʹɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "ISSIZ + onun kalbi"
+    }
   },
   {
     "id": "L-CORPUS2-08162",
@@ -400122,7 +401850,10 @@
       "rule": "compound"
     },
     "ipa": "/qʹʷɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "kendi + yil"
+    }
   },
   {
     "id": "L-CORPUS2-08166",
@@ -400684,7 +402415,10 @@
       "R-FIY"
     ],
     "conceptId": "BLACK",
-    "ipa": "/fʹǝɬɐʁʷǝ'nǝʁɐ/"
+    "ipa": "/fʹǝɬɐʁʷǝ'nǝʁɐ/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-08187",
@@ -400904,7 +402638,10 @@
     "subConceptId": "FLIRT",
     "taxonomyFamily": "Ahlak & Soyut",
     "rootForm": "нэ-",
-    "ipa": "/nɐʂɐ'qʹɑ:ʂɐ/"
+    "ipa": "/nɐʂɐ'qʹɑ:ʂɐ/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-08195",
@@ -401301,7 +403038,10 @@
     ],
     "conceptId": "DEW",
     "ipa": "/'wɐsɐps/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "kar + ATIYYE"
+    }
   },
   {
     "id": "L-CORPUS2-08211",
@@ -401670,7 +403410,10 @@
     },
     "conceptId": "THOUSAND",
     "ipa": "/mi:n/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "IRILI + amen!"
+    }
   },
   {
     "id": "L-CORPUS2-08225",
@@ -402076,7 +403819,10 @@
       "rule": "compound"
     },
     "conceptId": "SPARE",
-    "ipa": "/xʷɐ'ɕʹǝn/"
+    "ipa": "/xʷɐ'ɕʹǝn/",
+    "translations": {
+      "tr": "Bağ + yapmak"
+    }
   },
   {
     "id": "L-CORPUS2-08242",
@@ -402221,7 +403967,10 @@
     "isLemma": false,
     "conceptId": "WORK",
     "ipaSource": "root-derived",
-    "ipa": "/din-lɐʑakʷʼɐm/"
+    "ipa": "/din-lɐʑakʷʼɐm/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-08247",
@@ -403793,7 +405542,10 @@
     },
     "isLemma": false,
     "ipa": "/qʹʷɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-08306",
@@ -403909,7 +405661,10 @@
     },
     "isLemma": false,
     "conceptId": "EAGLE",
-    "ipa": "/bʁɐwvaxɐm/"
+    "ipa": "/bʁɐwvaxɐm/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-08310",
@@ -403944,7 +405699,10 @@
       "R-F"
     ],
     "conceptId": "ROT",
-    "ipa": "/fʹɐtʹʂ/"
+    "ipa": "/fʹɐtʹʂ/",
+    "translations": {
+      "tr": "cm. 2. + ZAYIF"
+    }
   },
   {
     "id": "L-CORPUS2-08312",
@@ -404217,7 +405975,10 @@
       "R-SH1E"
     ],
     "conceptId": "EAT_UNDER",
-    "ipa": "/ɕʹɐ'nǝʁɐ/"
+    "ipa": "/ɕʹɐ'nǝʁɐ/",
+    "translations": {
+      "tr": "bilgi + buyuk"
+    }
   },
   {
     "id": "L-CORPUS2-08323",
@@ -404361,7 +406122,10 @@
     },
     "isLemma": false,
     "ipa": "/'ʔɐpʹqʹɬɐpʹqʹ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-08328",
@@ -404604,7 +406368,10 @@
     "isLemma": false,
     "conceptId": "MORNING",
     "ipa": "/pɕɐ'ddᶎǝʑ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "bristle + boyun"
+    }
   },
   {
     "id": "L-CORPUS2-08336",
@@ -405411,7 +407178,10 @@
       "rule": "compound"
     },
     "conceptId": "PETROLEUM",
-    "ipa": "/zǝxʷɐʁɐħɐzǝ'rǝn/"
+    "ipa": "/zǝxʷɐʁɐħɐzǝ'rǝn/",
+    "translations": {
+      "tr": "biçer-döver + TIĞ dantel ~ı + readiness"
+    }
   },
   {
     "id": "L-CORPUS2-08364",
@@ -405456,7 +407226,10 @@
     "subConceptId": "OTHER_WAY",
     "taxonomyFamily": "Sınır & Mesafe",
     "rootForm": "нэ-",
-    "ipa": "/nɐ'ʁʷɐɕʹ/"
+    "ipa": "/nɐ'ʁʷɐɕʹ/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-08366",
@@ -405916,7 +407689,10 @@
       "rule": "compound"
     },
     "ipa": "/pʹqʹǝ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "CELSE + BALIK"
+    }
   },
   {
     "id": "L-CORPUS2-08383",
@@ -406074,7 +407850,10 @@
     "subConceptId": "VEHICLE_INS",
     "taxonomyFamily": "Gramer & Çekim",
     "rootForm": "лъ-",
-    "ipa": "/ɬɐqʹʷɐrǝ'ʁɑ:ᶎɐ/"
+    "ipa": "/ɬɐqʹʷɐrǝ'ʁɑ:ᶎɐ/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-08389",
@@ -407283,7 +409062,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/ʂɐ/"
+    "ipa": "/ʂɐ/",
+    "translations": {
+      "tr": "SATILIK"
+    }
   },
   {
     "id": "L-CORPUS2-08433",
@@ -407474,7 +409256,10 @@
     "isLemma": false,
     "conceptId": "EAGLE",
     "ipaSource": "root-derived",
-    "ipa": "/qǝbʁɐdɐkʼawɐ/"
+    "ipa": "/qǝbʁɐdɐkʼawɐ/",
+    "translations": {
+      "tr": "outgoing + otherwise"
+    }
   },
   {
     "id": "L-CORPUS2-08440",
@@ -408045,7 +409830,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/zɐrǝ'ɕǝt/"
+    "ipa": "/zɐrǝ'ɕǝt/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-08461",
@@ -408306,7 +410094,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/kʹʷɐn/"
+    "ipa": "/kʹʷɐn/",
+    "translations": {
+      "tr": "Bağ + gitti"
+    }
   },
   {
     "id": "L-CORPUS2-08471",
@@ -409159,7 +410950,10 @@
     },
     "isLemma": false,
     "conceptId": "WORK",
-    "ipa": "/je:ɮɐ'ʑǝn/"
+    "ipa": "/je:ɮɐ'ʑǝn/",
+    "translations": {
+      "tr": "ilgilenmek + yil"
+    }
   },
   {
     "id": "L-CORPUS2-08502",
@@ -409185,7 +410979,10 @@
       "rule": "compound"
     },
     "conceptId": "PETROLEUM",
-    "ipa": "/ɕʹǝ'ᶎǝn/"
+    "ipa": "/ɕʹǝ'ᶎǝn/",
+    "translations": {
+      "tr": "DOYURUCU + KUSMAK"
+    }
   },
   {
     "id": "L-CORPUS2-08503",
@@ -409390,7 +411187,10 @@
       "rule": "compound"
     },
     "conceptId": "THIS_ONE",
-    "ipa": "/mǝb'de:ᶎ/"
+    "ipa": "/mǝb'de:ᶎ/",
+    "translations": {
+      "tr": "buna + Akraba"
+    }
   },
   {
     "id": "L-CORPUS2-08510",
@@ -409437,7 +411237,10 @@
       "rule": "compound"
     },
     "ipa": "/'ʔɐpʹqʹɬɐpʹqʹ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-08512",
@@ -410031,7 +411834,10 @@
       "rule": "compound"
     },
     "ipa": "/ɕħɐgʷ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "dairy + yil"
+    }
   },
   {
     "id": "L-CORPUS2-08533",
@@ -410057,7 +411863,10 @@
     "isLemma": false,
     "conceptId": "LIFE_PARTNER",
     "ipa": "/psɐʁʷ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "ISLIK + BIGÜNAH"
+    }
   },
   {
     "id": "L-CORPUS2-08534",
@@ -410153,7 +411962,10 @@
     "isLemma": false,
     "conceptId": "LIFE_PARTNER",
     "ipa": "/psɐʁʷ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "onların + mesken"
+    }
   },
   {
     "id": "L-CORPUS2-08538",
@@ -410320,7 +412132,10 @@
     "isLemma": false,
     "conceptId": "KALMYK",
     "ipa": "/qʹɐ'ɮmǝqʹ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "ISTAVROZ + hayvan"
+    }
   },
   {
     "id": "L-CORPUS2-08545",
@@ -410507,7 +412322,10 @@
       "R-F"
     ],
     "ipaSource": "root-derived",
-    "ipa": "/fǝziʔɐxɐr/"
+    "ipa": "/fǝziʔɐxɐr/",
+    "translations": {
+      "tr": "kadın + EVSAF"
+    }
   },
   {
     "id": "L-CORPUS2-08552",
@@ -410643,7 +412461,10 @@
     },
     "notes": "Corpus v1.0 batch-2 (freq: 13, lang: ady, source: none)",
     "isLemma": false,
-    "ipa": "/saːwʒka/"
+    "ipa": "/saːwʒka/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-08559",
@@ -410699,7 +412520,10 @@
       "rule": "compound"
     },
     "ipa": "/wǝˈdzǝfɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "onların + Hela"
+    }
   },
   {
     "id": "L-CORPUS2-08561",
@@ -410781,7 +412605,10 @@
       "rule": "compound"
     },
     "ipa": "/wǝˈdzǝfɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-08564",
@@ -410807,7 +412634,10 @@
       "rule": "compound"
     },
     "ipa": "/'zǝmi:/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "KOLON + SEANS"
+    }
   },
   {
     "id": "L-CORPUS2-08565",
@@ -410919,7 +412749,7 @@
     "ipaSource": "root-derived",
     "ipa": "/fɐmǝew/",
     "translations": {
-      "tr": ""
+      "tr": "GÖNÜLSÜZ OLARAK"
     },
     "literalMeaningSource": "translations.tr (yuksek)"
   },
@@ -411338,7 +413168,10 @@
     "isLemma": false,
     "conceptId": "AUNT_PATERNAL",
     "ipaSource": "root-derived",
-    "ipa": "/jaħadɐxɐr/"
+    "ipa": "/jaħadɐxɐr/",
+    "translations": {
+      "tr": "onların + tepe"
+    }
   },
   {
     "id": "L-CORPUS2-08587",
@@ -411534,7 +413367,10 @@
       "R-1E"
     ],
     "ipa": "/'ʂxɑ:pʹɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "Şapka + gossip"
+    }
   },
   {
     "id": "L-CORPUS2-08596",
@@ -411592,7 +413428,10 @@
     },
     "notes": "Corpus v1.0 batch-2 (freq: 13, lang: ady, source: none)",
     "isLemma": false,
-    "ipa": "/paːtʂəħaʁwm/"
+    "ipa": "/paːtʂəħaʁwm/",
+    "translations": {
+      "tr": "HAKAN + Kalın"
+    }
   },
   {
     "id": "L-CORPUS2-08599",
@@ -411691,7 +413530,10 @@
       "rule": "compound"
     },
     "ipaSource": "root-derived",
-    "ipa": "/sʃʼɐɕtǝʁɐ/"
+    "ipa": "/sʃʼɐɕtǝʁɐ/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-08603",
@@ -411937,7 +413779,10 @@
       "rule": "compound"
     },
     "conceptId": "PROTECT",
-    "ipa": "/qʹɐʂ/"
+    "ipa": "/qʹɐʂ/",
+    "translations": {
+      "tr": "ünlem + ANDIÇMEK"
+    }
   },
   {
     "id": "L-CORPUS2-08613",
@@ -411965,7 +413810,10 @@
     "subConceptId": "TIME_WEEK",
     "taxonomyFamily": "Zaman & Takvim",
     "rootForm": "тхьэ-",
-    "ipa": "/tħɐmafɐm/"
+    "ipa": "/tħɐmafɐm/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-08614",
@@ -411992,7 +413840,10 @@
       "rule": "compound"
     },
     "ipa": "/wǝˈdzǝfɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-08615",
@@ -412471,7 +414322,10 @@
       "rule": "compound"
     },
     "ipaSource": "form-derived",
-    "ipa": "/ʃʼwʃʼɐnǝm/"
+    "ipa": "/ʃʼwʃʼɐnǝm/",
+    "translations": {
+      "tr": "nankor + CICI ANNE"
+    }
   },
   {
     "id": "L-CORPUS2-08633",
@@ -412596,7 +414450,10 @@
     },
     "isLemma": false,
     "ipa": "/nɐb'ʑǝts/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "dikkat + eski"
+    }
   },
   {
     "id": "L-CORPUS2-08638",
@@ -412679,7 +414536,10 @@
     },
     "isLemma": false,
     "ipa": "/'ʔɐpʹqʹɬɐpʹqʹ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-08641",
@@ -412706,7 +414566,10 @@
     },
     "conceptId": "PETROLEUM",
     "ipaSource": "root-derived",
-    "ipa": "/zǝxɐʐwʁɐɬ/"
+    "ipa": "/zǝxɐʐwʁɐɬ/",
+    "translations": {
+      "tr": "biçer-döver + TOPLULUK"
+    }
   },
   {
     "id": "L-CORPUS2-08642",
@@ -413192,7 +415055,10 @@
       "rule": "compound"
     },
     "ipa": "/'ʔɐpʹqʹɬɐpʹqʹ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "YATAY + dikkat"
+    }
   },
   {
     "id": "L-CORPUS2-08664",
@@ -413562,7 +415428,10 @@
     },
     "isLemma": false,
     "conceptId": "NINE",
-    "ipa": "/tʂɐ'tɐn/"
+    "ipa": "/tʂɐ'tɐn/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-08680",
@@ -413665,7 +415534,10 @@
     },
     "isLemma": false,
     "conceptId": "EAGLE",
-    "ipa": "/bʁɐwtsʷʁɐxɐm/"
+    "ipa": "/bʁɐwtsʷʁɐxɐm/",
+    "translations": {
+      "tr": "Atmaca cinsi + yetişkin"
+    }
   },
   {
     "id": "L-CORPUS2-08687",
@@ -413692,7 +415564,10 @@
       "rule": "compound"
     },
     "ipa": "/wǝˈdzǝfɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "POST + CINSEL"
+    }
   },
   {
     "id": "L-CORPUS2-08688",
@@ -413847,7 +415722,10 @@
     },
     "isLemma": false,
     "ipa": "/'ʔɐpʹqʹɬɐpʹqʹ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "ayak + yer"
+    }
   },
   {
     "id": "L-CORPUS2-08694",
@@ -413873,7 +415751,10 @@
       "rule": "compound"
     },
     "ipa": "/'gʷǝfʹɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "umut + yil"
+    }
   },
   {
     "id": "L-CORPUS2-08695",
@@ -414981,7 +416862,10 @@
     },
     "conceptId": "PROTECT",
     "ipa": "/χʷǝ'mɐn/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "Çukur + dairy + MEVSIM"
+    }
   },
   {
     "id": "L-CORPUS2-08737",
@@ -415886,7 +417770,10 @@
     "isLemma": false,
     "conceptId": "HOUSEWIFE",
     "ipa": "/wǝnɐ'gʷɑ:ɕɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "Gök Taşı + Çivi"
+    }
   },
   {
     "id": "L-CORPUS2-08774",
@@ -415913,7 +417800,10 @@
     },
     "conceptId": "THOUSAND",
     "ipa": "/mi:n/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-08775",
@@ -416791,7 +418681,7 @@
     "conceptId": "EAGLE",
     "ipa": "/zɐɕǝʁɐ'qʹʷɐn/",
     "translations": {
-      "tr": ""
+      "tr": "Atmaca cinsi + bristle"
     }
   },
   {
@@ -417005,7 +418895,10 @@
       "rule": "compound"
     },
     "conceptId": "GREEN",
-    "ipa": "/tʹʂǝrʁ/"
+    "ipa": "/tʹʂǝrʁ/",
+    "translations": {
+      "tr": "GICIRDAMAK + KIZGIN"
+    }
   },
   {
     "id": "L-CORPUS2-08818",
@@ -417854,7 +419747,10 @@
     },
     "conceptId": "PETROLEUM",
     "ipaSource": "root-derived",
-    "ipa": "/zǝɕʼaxɐr/"
+    "ipa": "/zǝɕʼaxɐr/",
+    "translations": {
+      "tr": "DOYURUCU + onlar"
+    }
   },
   {
     "id": "L-CORPUS2-08850",
@@ -418682,7 +420578,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/tɐ'ɮɑ:j/"
+    "ipa": "/tɐ'ɮɑ:j/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-08881",
@@ -418763,7 +420662,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/kʹʷɐn/"
+    "ipa": "/kʹʷɐn/",
+    "translations": {
+      "tr": "sansli ev + git! + donmak"
+    }
   },
   {
     "id": "L-CORPUS2-08884",
@@ -418876,7 +420778,10 @@
     },
     "isLemma": false,
     "conceptId": "WORK",
-    "ipa": "/ɮɐ'ʑǝʁɐ/"
+    "ipa": "/ɮɐ'ʑǝʁɐ/",
+    "translations": {
+      "tr": "Tane + buyuk"
+    }
   },
   {
     "id": "L-CORPUS2-08888",
@@ -419056,7 +420961,10 @@
       "rule": "compound"
     },
     "ipa": "/'gʷǝfʹɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "ASMAN + hayran"
+    }
   },
   {
     "id": "L-CORPUS2-08894",
@@ -419164,7 +421072,10 @@
     ],
     "conceptId": "COMPASSION",
     "ipa": "/ɕǝs'ħǝn/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-08898",
@@ -419236,7 +421147,10 @@
     "isLemma": false,
     "conceptId": "KALMYK",
     "ipa": "/qʹɐ'ɮmǝqʹ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "dikkat + PEKİ iyi"
+    }
   },
   {
     "id": "L-CORPUS2-08901",
@@ -420049,7 +421963,10 @@
     },
     "conceptId": "THOUSAND",
     "ipa": "/mi:n/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-08932",
@@ -420131,7 +422048,10 @@
     },
     "conceptId": "THURSDAY",
     "ipa": "/mɐqʹʷɐˈwɐʁʷɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "gelişen + olive"
+    }
   },
   {
     "id": "L-CORPUS2-08935",
@@ -420363,7 +422283,10 @@
     },
     "conceptId": "PROTECT",
     "ipa": "/χʷǝ'mɐn/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "Çukur + fire-proof; incombustible."
+    }
   },
   {
     "id": "L-CORPUS2-08944",
@@ -420630,7 +422553,10 @@
     "subConceptId": "SINS_BY",
     "taxonomyFamily": "Gramer & Çekim",
     "rootForm": "гуэ-",
-    "ipa": "/gʷɐ'nǝħ/"
+    "ipa": "/gʷɐ'nǝħ/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-08955",
@@ -421058,7 +422984,10 @@
     "rootIds": [
       "R-FIE"
     ],
-    "ipa": "/fʹɐɕmǝχʷǝ'nǝʁɐ/"
+    "ipa": "/fʹɐɕmǝχʷǝ'nǝʁɐ/",
+    "translations": {
+      "tr": "dikkat + sansli ev"
+    }
   },
   {
     "id": "L-CORPUS2-08972",
@@ -421703,7 +423632,10 @@
     },
     "conceptId": "GREEN",
     "ipa": "/wǝˈdzǝfɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "DA + onların"
+    }
   },
   {
     "id": "L-CORPUS2-08997",
@@ -422220,7 +424152,10 @@
     "isLemma": false,
     "conceptId": "KALMYK",
     "ipa": "/qʹɐ'ɮmǝqʹ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "dikkat + donmak"
+    }
   },
   {
     "id": "L-CORPUS2-09015",
@@ -422675,7 +424610,10 @@
       ]
     },
     "isLemma": false,
-    "ipa": "/ɬɐtʹʂǝ'nǝʁɐ/"
+    "ipa": "/ɬɐtʹʂǝ'nǝʁɐ/",
+    "translations": {
+      "tr": "güçlü + buyuk"
+    }
   },
   {
     "id": "L-CORPUS2-09034",
@@ -422699,7 +424637,10 @@
       ]
     },
     "isLemma": false,
-    "ipa": "/zǝ'ɬɐtʹʂ/"
+    "ipa": "/zǝ'ɬɐtʹʂ/",
+    "translations": {
+      "tr": "guclu + NURLU"
+    }
   },
   {
     "id": "L-CORPUS2-09035",
@@ -423756,7 +425697,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/tʹʂɐn/"
+    "ipa": "/tʹʂɐn/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-09075",
@@ -423980,7 +425924,10 @@
     },
     "notes": "Corpus v1.0 batch-2 (freq: 12, lang: kbd, source: none)",
     "isLemma": false,
-    "ipa": "/xɐʔɐtǝ'tʹʂɑ:/"
+    "ipa": "/xɐʔɐtǝ'tʹʂɑ:/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-09084",
@@ -424127,7 +426074,10 @@
     },
     "isLemma": false,
     "conceptId": "ACUTE_ANGLE",
-    "ipa": "/'zɑ:qʹʷɐ/"
+    "ipa": "/'zɑ:qʹʷɐ/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-09090",
@@ -424154,7 +426104,10 @@
     },
     "conceptId": "SPARE",
     "ipa": "/ʂħa sǝn/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "onların + accomplished"
+    }
   },
   {
     "id": "L-CORPUS2-09091",
@@ -424557,7 +426510,10 @@
       ]
     },
     "isLemma": false,
-    "ipa": "/txǝɬ/"
+    "ipa": "/txǝɬ/",
+    "translations": {
+      "tr": "DOSYA + ISSIZ"
+    }
   },
   {
     "id": "L-CORPUS2-09106",
@@ -424704,7 +426660,10 @@
       "rule": "compound"
     },
     "ipa": "/'zǝmi:/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-09112",
@@ -424953,7 +426912,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/qʹǝp/"
+    "ipa": "/qʹǝp/",
+    "translations": {
+      "tr": "yemek + samimi"
+    }
   },
   {
     "id": "L-CORPUS2-09122",
@@ -425427,7 +427389,10 @@
       "R-KU_1"
     ],
     "conceptId": "VILLAGE",
-    "ipa": "/'qʹʷɑ:ᶎɐ/"
+    "ipa": "/'qʹʷɑ:ᶎɐ/",
+    "translations": {
+      "tr": "koy + AĞALANMAK"
+    }
   },
   {
     "id": "L-CORPUS2-09141",
@@ -425799,7 +427764,10 @@
     "isLemma": false,
     "conceptId": "HONEY",
     "ipaSource": "root-derived",
-    "ipa": "/fotʃkʼɐ/"
+    "ipa": "/fotʃkʼɐ/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-09155",
@@ -425855,7 +427823,10 @@
     "taxonomyFamily": "Yemek & Yiyecek",
     "rootForm": "шхэ-",
     "ipa": "/ʂxɐn/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "BOĞAZLI + Çukur"
+    }
   },
   {
     "id": "L-CORPUS2-09157",
@@ -426305,7 +428276,10 @@
       "rule": "compound"
     },
     "conceptId": "PROTECT",
-    "ipa": "/tɐ'dᶎǝn/"
+    "ipa": "/tɐ'dᶎǝn/",
+    "translations": {
+      "tr": "VERİM + şimdi + donmak"
+    }
   },
   {
     "id": "L-CORPUS2-09174",
@@ -426888,7 +428862,10 @@
     },
     "conceptId": "LOVE",
     "ipa": "/'gʷǝɕʹɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-09194",
@@ -428194,7 +430171,10 @@
     "rootIds": [
       "R-1E"
     ],
-    "ipa": "/ʔɐ'mɑ:ɮ/"
+    "ipa": "/ʔɐ'mɑ:ɮ/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-09242",
@@ -428338,7 +430318,10 @@
       "rule": "compound"
     },
     "ipa": "/'gʷǝfʹɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "Keskin; sivri + Kör; küt"
+    }
   },
   {
     "id": "L-CORPUS2-09247",
@@ -428364,7 +430347,10 @@
     "isLemma": false,
     "conceptId": "LIFE_PARTNER",
     "ipa": "/psɐʁʷ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "AĞACALIK + SAĞOL"
+    }
   },
   {
     "id": "L-CORPUS2-09248",
@@ -428481,7 +430467,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/'pɑ:ʂɐ/"
+    "ipa": "/'pɑ:ʂɐ/",
+    "translations": {
+      "tr": "DİREKTÖR + buyuk"
+    }
   },
   {
     "id": "L-CORPUS2-09252",
@@ -429146,7 +431135,10 @@
     },
     "conceptId": "JOY",
     "ipa": "/'gʷǝfʹɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-09277",
@@ -429282,7 +431274,10 @@
     },
     "isLemma": false,
     "conceptId": "MORNING",
-    "ipa": "/te:pɕɐ'nǝʁɐ/"
+    "ipa": "/te:pɕɐ'nǝʁɐ/",
+    "translations": {
+      "tr": "DESPOTİZM + buyuk"
+    }
   },
   {
     "id": "L-CORPUS2-09283",
@@ -429771,7 +431766,10 @@
     },
     "notes": "Corpus v1.0 batch-2 (freq: 12, lang: kbd, source: none)",
     "isLemma": false,
-    "ipa": "/je:kʹʷɐ'ɬʹɐn/"
+    "ipa": "/je:kʹʷɐ'ɬʹɐn/",
+    "translations": {
+      "tr": "saldırgan + ÖLMÜŞ"
+    }
   },
   {
     "id": "L-CORPUS2-09303",
@@ -429933,7 +431931,10 @@
       "rule": "compound"
     },
     "ipa": "/'gʷǝfʹɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "HOŞ- + AĞLAMAK"
+    }
   },
   {
     "id": "L-CORPUS2-09310",
@@ -430079,7 +432080,10 @@
       "rule": "compound"
     },
     "ipa": "/χʷǝ'mɐn/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-09315",
@@ -430270,7 +432274,10 @@
       "rule": "compound"
     },
     "conceptId": "YELLOW",
-    "ipa": "/ʁʷɐz/"
+    "ipa": "/ʁʷɐz/",
+    "translations": {
+      "tr": "GAZ + TURŞU"
+    }
   },
   {
     "id": "L-CORPUS2-09322",
@@ -430295,7 +432302,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/mɑ:qʹ/"
+    "ipa": "/mɑ:qʹ/",
+    "translations": {
+      "tr": "shooting + care"
+    }
   },
   {
     "id": "L-CORPUS2-09323",
@@ -430350,7 +432360,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/te:'tǝn/"
+    "ipa": "/te:'tǝn/",
+    "translations": {
+      "tr": "ÜSTELEMEK + yil"
+    }
   },
   {
     "id": "L-CORPUS2-09325",
@@ -430371,7 +432384,10 @@
     "rootIds": [
       "R-F"
     ],
-    "ipa": "/jǝ'ʔɐn/"
+    "ipa": "/jǝ'ʔɐn/",
+    "translations": {
+      "tr": "kadın + kuyu"
+    }
   },
   {
     "id": "L-CORPUS2-09326",
@@ -430635,7 +432651,10 @@
     "subConceptId": "",
     "taxonomyFamily": "",
     "rootForm": "пэ-",
-    "ipa": "/pɐ'ɕɐ/"
+    "ipa": "/pɐ'ɕɐ/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-09337",
@@ -430662,7 +432681,10 @@
     },
     "conceptId": "PROTECT",
     "ipa": "/χʷǝ'mɐn/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "Çukur + dairy + yil"
+    }
   },
   {
     "id": "L-CORPUS2-09338",
@@ -430688,7 +432710,10 @@
       "rule": "compound"
     },
     "ipa": "/'qʹʷǝɕħɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-09339",
@@ -430829,7 +432854,10 @@
     },
     "conceptId": "MAN",
     "ipa": "/tʹsǝ'xʷǝχʷ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-09345",
@@ -431094,7 +433122,10 @@
       "rule": "compound"
     },
     "ipa": "/'gʷǝfʹɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "AGU + barge"
+    }
   },
   {
     "id": "L-CORPUS2-09356",
@@ -431120,7 +433151,10 @@
       "rule": "compound"
     },
     "ipaSource": "root-derived",
-    "ipa": "/pʃʼǝʁɐ/"
+    "ipa": "/pʃʼǝʁɐ/",
+    "translations": {
+      "tr": "On + yil"
+    }
   },
   {
     "id": "L-CORPUS2-09357",
@@ -431196,7 +433230,10 @@
     ],
     "conceptId": "COMPASSION",
     "ipa": "/ɕǝs'ħǝn/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "NUMUNELIK + yanak"
+    }
   },
   {
     "id": "L-CORPUS2-09360",
@@ -431779,7 +433816,10 @@
     },
     "isLemma": false,
     "ipa": "/'ʔɐpʹqʹɬɐpʹqʹ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "BUZCU + GIRILTI"
+    }
   },
   {
     "id": "L-CORPUS2-09386",
@@ -431822,7 +433862,10 @@
     "isLemma": false,
     "conceptId": "BACK",
     "ipaSource": "root-derived",
-    "ipa": "/ʁɐsɐpɐtxǝdɐxɐmkʼɐ/"
+    "ipa": "/ʁɐsɐpɐtxǝdɐxɐmkʼɐ/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-09388",
@@ -432271,7 +434314,10 @@
       "rule": "compound"
     },
     "ipa": "/ɐ'rǝɕ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "EVET + TOPLULUK"
+    }
   },
   {
     "id": "L-CORPUS2-09406",
@@ -432456,7 +434502,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/'ɐʁɐ/"
+    "ipa": "/'ɐʁɐ/",
+    "translations": {
+      "tr": "dikkat + DAKIKA"
+    }
   },
   {
     "id": "L-CORPUS2-09413",
@@ -432529,7 +434578,10 @@
     },
     "notes": "Corpus v1.0 batch-2 (freq: 12, lang: ady, source: none)",
     "isLemma": false,
-    "ipa": "/jaːzaːqwap/"
+    "ipa": "/jaːzaːqwap/",
+    "translations": {
+      "tr": "onların + TEKLIK"
+    }
   },
   {
     "id": "L-CORPUS2-09416",
@@ -432572,7 +434624,10 @@
     "isLemma": false,
     "conceptId": "TONGUE",
     "ipaSource": "root-derived",
-    "ipa": "/dʒwrtǝbzɐkʼɐ/"
+    "ipa": "/dʒwrtǝbzɐkʼɐ/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-09418",
@@ -433117,7 +435172,10 @@
     },
     "isLemma": false,
     "ipa": "/'ʔɐpʹqʹɬɐpʹqʹ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "bilemek + Dar"
+    }
   },
   {
     "id": "L-CORPUS2-09438",
@@ -433252,7 +435310,10 @@
     },
     "isLemma": false,
     "conceptId": "HOUSEWIFE",
-    "ipa": "/wǝnɐ'ʔʷǝt/"
+    "ipa": "/wǝnɐ'ʔʷǝt/",
+    "translations": {
+      "tr": "FAKIRHANE + UT"
+    }
   },
   {
     "id": "L-CORPUS2-09444",
@@ -433345,7 +435406,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/'ɐʁɐ/"
+    "ipa": "/'ɐʁɐ/",
+    "translations": {
+      "tr": "dikkat + ALÉSTA"
+    }
   },
   {
     "id": "L-CORPUS2-09448",
@@ -433370,7 +435434,10 @@
     },
     "isLemma": false,
     "ipa": "/'ʔɐpʹqʹɬɐpʹqʹ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-09449",
@@ -433568,7 +435635,10 @@
       "rule": "compound"
     },
     "ipa": "/χʷǝ'mɐn/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "CIRLAMAK + CINSEL"
+    }
   },
   {
     "id": "L-CORPUS2-09457",
@@ -434126,7 +436196,10 @@
       "rule": "compound"
     },
     "ipaSource": "root-derived",
-    "ipa": "/jatɐ-janɐxɐm/"
+    "ipa": "/jatɐ-janɐxɐm/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-09479",
@@ -434152,7 +436225,10 @@
     "isLemma": false,
     "conceptId": "FAT",
     "ipa": "/'bǝdɐw/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "ego + yağ"
+    }
   },
   {
     "id": "L-CORPUS2-09480",
@@ -434251,7 +436327,10 @@
       "rule": "compound"
     },
     "ipa": "/pʹqʹǝ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "AHŞAP + dikkat"
+    }
   },
   {
     "id": "L-CORPUS2-09485",
@@ -434333,7 +436412,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/ʔʷǝ'mɐt/"
+    "ipa": "/ʔʷǝ'mɐt/",
+    "translations": {
+      "tr": "CIDDI + TOKMAK"
+    }
   },
   {
     "id": "L-CORPUS2-09489",
@@ -434543,7 +436625,10 @@
     "isLemma": false,
     "conceptId": "NINE",
     "ipa": "/bʁʷǝ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-09498",
@@ -434599,7 +436684,10 @@
       "rule": "compound"
     },
     "ipa": "/wǝˈdzǝfɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "zhy mistress + DIKKAT"
+    }
   },
   {
     "id": "L-CORPUS2-09500",
@@ -434738,7 +436826,10 @@
     },
     "conceptId": "THURSDAY",
     "ipa": "/mɐqʹʷɐˈwɐʁʷɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "GAMMA + yil + DEĞİL"
+    }
   },
   {
     "id": "L-CORPUS2-09506",
@@ -435006,7 +437097,10 @@
     },
     "notes": "Corpus v1.0 batch-2 (freq: 12, lang: ady, source: none)",
     "isLemma": false,
-    "ipa": "/aːtʃəpaka/"
+    "ipa": "/aːtʃəpaka/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-09518",
@@ -435046,7 +437140,10 @@
       "rule": "compound"
     },
     "conceptId": "DEFECT",
-    "ipa": "/qʹe:kʹʷ/"
+    "ipa": "/qʹe:kʹʷ/",
+    "translations": {
+      "tr": "yakışıklı + KADINLI"
+    }
   },
   {
     "id": "L-CORPUS2-09520",
@@ -435336,7 +437433,10 @@
     },
     "isLemma": false,
     "ipa": "/'ʔɐpʹqʹɬɐpʹqʹ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "YURTSEVER + yil"
+    }
   },
   {
     "id": "L-CORPUS2-09531",
@@ -435390,7 +437490,10 @@
     },
     "isLemma": false,
     "ipa": "/'ʔɐpʹqʹɬɐpʹqʹ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-09533",
@@ -435941,7 +438044,10 @@
     },
     "conceptId": "GREEN",
     "ipa": "/wǝˈdzǝfɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-09563",
@@ -436040,7 +438146,10 @@
     "taxonomyFamily": "-",
     "rootForm": "гу",
     "ipa": "/'gʷǝfʹɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-09567",
@@ -436186,7 +438295,10 @@
       "rule": "compound"
     },
     "ipaSource": "form-derived",
-    "ipa": "/mosɐkʼɐ/"
+    "ipa": "/mosɐkʼɐ/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-09573",
@@ -436289,7 +438401,10 @@
     },
     "notes": "Corpus v1.0 batch-2 (freq: 12, lang: ady, source: none)",
     "isLemma": false,
-    "ipa": "/aːtəraːdzaːʁ/"
+    "ipa": "/aːtəraːdzaːʁ/",
+    "translations": {
+      "tr": "BABACA + Ordu"
+    }
   },
   {
     "id": "L-CORPUS2-09577",
@@ -436678,7 +438793,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/qʹǝp/"
+    "ipa": "/qʹǝp/",
+    "translations": {
+      "tr": "yemek + BILGI"
+    }
   },
   {
     "id": "L-CORPUS2-09593",
@@ -436890,7 +439008,10 @@
     },
     "notes": "Corpus v1.0 batch-2 (freq: 12, lang: ady, source: none)",
     "isLemma": false,
-    "ipa": "/tʃaɕtər/"
+    "ipa": "/tʃaɕtər/",
+    "translations": {
+      "tr": "BILGI + BABACA"
+    }
   },
   {
     "id": "L-CORPUS2-09602",
@@ -436994,7 +439115,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/sǝħatmafɐ/"
+    "ipa": "/sǝħatmafɐ/",
+    "translations": {
+      "tr": "Saat + günlük"
+    }
   },
   {
     "id": "L-CORPUS2-09607",
@@ -437021,7 +439145,10 @@
     },
     "conceptId": "SUITOR",
     "ipa": "/psɐˈɬǝχʷ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "Bıyıklı + MEVSIM"
+    }
   },
   {
     "id": "L-CORPUS2-09609",
@@ -437046,7 +439173,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/qʹǝɬ/"
+    "ipa": "/qʹǝɬ/",
+    "translations": {
+      "tr": "GEVEN + BAĞIL"
+    }
   },
   {
     "id": "L-CORPUS2-09610",
@@ -437095,7 +439225,10 @@
     },
     "notes": "Corpus v1.0 batch-2 (freq: 12, lang: ady, source: none)",
     "isLemma": false,
-    "ipa": "/aːllaːħəmka/"
+    "ipa": "/aːllaːħəmka/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-09612",
@@ -437797,7 +439930,10 @@
       "rule": "compound"
     },
     "conceptId": "DEFECT",
-    "ipa": "/qʹe:kʹʷ/"
+    "ipa": "/qʹe:kʹʷ/",
+    "translations": {
+      "tr": "yakışıklı + BABACA"
+    }
   },
   {
     "id": "L-CORPUS2-09639",
@@ -437824,7 +439960,10 @@
       "rule": "compound"
     },
     "ipa": "/ɕǝs'ħǝn/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "AYNIYLA + Kuru"
+    }
   },
   {
     "id": "L-CORPUS2-09640",
@@ -438377,7 +440516,10 @@
       "rule": "compound"
     },
     "ipa": "/ʔɑ:ʁ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "onların + Ah"
+    }
   },
   {
     "id": "L-CORPUS2-09665",
@@ -438434,7 +440576,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/'ħɐtʹʂɐ/"
+    "ipa": "/'ħɐtʹʂɐ/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-09667",
@@ -438460,7 +440605,10 @@
       "rule": "compound"
     },
     "ipa": "/pʹqʹǝ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-09669",
@@ -438520,7 +440668,10 @@
     ],
     "conceptId": "COMPASSION",
     "ipa": "/ɕǝs'ħǝn/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-09672",
@@ -438919,7 +441070,10 @@
     },
     "conceptId": "LOVE",
     "ipa": "/'gʷǝɕʹɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-09688",
@@ -439354,7 +441508,10 @@
       "rule": "compound"
     },
     "ipaSource": "root-derived",
-    "ipa": "/ǝʃʼɐɕtǝʁɐp/"
+    "ipa": "/ǝʃʼɐɕtǝʁɐp/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-09705",
@@ -439405,7 +441562,10 @@
     },
     "isLemma": false,
     "ipa": "/'ʔɐpʹqʹɬɐpʹqʹ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "HAZINE + Demirci dükkanı + Doğu"
+    }
   },
   {
     "id": "L-CORPUS2-09707",
@@ -439519,7 +441679,10 @@
     },
     "notes": "Corpus v1.0 batch-2 (freq: 12, lang: ady, source: none)",
     "isLemma": false,
-    "ipa": "/ətʃaʁəka/"
+    "ipa": "/ətʃaʁəka/",
+    "translations": {
+      "tr": "altında + GEZ"
+    }
   },
   {
     "id": "L-CORPUS2-09712",
@@ -440021,7 +442184,10 @@
     "subConceptId": "EYE",
     "taxonomyFamily": "Göz & Görme",
     "rootForm": "нэ-",
-    "ipa": "/nɐfʹ/"
+    "ipa": "/nɐfʹ/",
+    "translations": {
+      "tr": "iyilik + act smearing"
+    }
   },
   {
     "id": "L-CORPUS2-09732",
@@ -440071,7 +442237,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/qʹǝp/"
+    "ipa": "/qʹǝp/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-09734",
@@ -440288,7 +442457,10 @@
       "rule": "compound"
     },
     "conceptId": "GREEN",
-    "ipa": "/sǝ'ħɐt/"
+    "ipa": "/sǝ'ħɐt/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-09743",
@@ -441100,7 +443272,10 @@
     "subConceptId": "-",
     "taxonomyFamily": "-",
     "rootForm": "гу",
-    "ipa": "/'gʷǝfʹɐ/"
+    "ipa": "/'gʷǝfʹɐ/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-09776",
@@ -441255,7 +443430,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/pǝ'tʂǝʁʷɐ/"
+    "ipa": "/pǝ'tʂǝʁʷɐ/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-09782",
@@ -441490,7 +443668,10 @@
     ],
     "conceptId": "EAT_UNDER",
     "ipa": "/ɕʹɐn/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-09790",
@@ -441901,7 +444082,10 @@
     },
     "isLemma": false,
     "conceptId": "KALMYK",
-    "ipa": "/'qʹɑ:ɮɐ/"
+    "ipa": "/'qʹɑ:ɮɐ/",
+    "translations": {
+      "tr": "sehir + buyuk"
+    }
   },
   {
     "id": "L-CORPUS2-09806",
@@ -442162,7 +444346,10 @@
       "R-SHE"
     ],
     "conceptId": "SPARE",
-    "ipa": "/ɕɐxʷ/"
+    "ipa": "/ɕɐxʷ/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-09817",
@@ -442214,7 +444401,10 @@
       ]
     },
     "isLemma": false,
-    "ipa": "/ʁɐɬɐ'pʹɐn/"
+    "ipa": "/ʁɐɬɐ'pʹɐn/",
+    "translations": {
+      "tr": "Uyuz + niyet"
+    }
   },
   {
     "id": "L-CORPUS2-09820",
@@ -442271,7 +444461,10 @@
     },
     "conceptId": "PROTECT",
     "ipa": "/χʷǝ'mɐn/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "Çukur + SÜZME + MÜTEKAIT"
+    }
   },
   {
     "id": "L-CORPUS2-09822",
@@ -442596,7 +444789,10 @@
     "rootIds": [
       "R-KHU"
     ],
-    "ipa": "/ˈχʷǝʁʷɐ/"
+    "ipa": "/ˈχʷǝʁʷɐ/",
+    "translations": {
+      "tr": "şenlik + haber"
+    }
   },
   {
     "id": "L-CORPUS2-09836",
@@ -442751,7 +444947,10 @@
     },
     "notes": "Corpus v1.0 batch-2 (freq: 11, lang: kbd, source: none)",
     "isLemma": false,
-    "ipa": "/po:ɕt/"
+    "ipa": "/po:ɕt/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-09843",
@@ -442843,7 +445042,10 @@
     ],
     "conceptId": "COMPASSION",
     "ipa": "/ɕǝs'ħǝn/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-09848",
@@ -442867,7 +445069,10 @@
       ]
     },
     "isLemma": false,
-    "ipa": "/ɬɐɕkʼɐ/"
+    "ipa": "/ɬɐɕkʼɐ/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-09849",
@@ -443398,7 +445603,10 @@
     "taxonomyFamily": "Dil & İletişim",
     "rootForm": "лъэӀуэн-",
     "ipaSource": "root-derived",
-    "ipa": "/mɐɬaʔʷɐ/"
+    "ipa": "/mɐɬaʔʷɐ/",
+    "translations": {
+      "tr": "koyun + agiz"
+    }
   },
   {
     "id": "L-CORPUS2-09869",
@@ -443649,7 +445857,10 @@
     "subConceptId": "ARRIVED_FRONT",
     "taxonomyFamily": "Gramer & Çekim",
     "rootForm": "пэ-",
-    "ipa": "/pɐrǝˈħɐn/"
+    "ipa": "/pɐrǝˈħɐn/",
+    "translations": {
+      "tr": "DERIVASYON + rehavet"
+    }
   },
   {
     "id": "L-CORPUS2-09879",
@@ -444944,7 +447155,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/zɐxɐ'ɕʹǝtʹʂ/"
+    "ipa": "/zɐxɐ'ɕʹǝtʹʂ/",
+    "translations": {
+      "tr": "bilinç + dried up + hayran"
+    }
   },
   {
     "id": "L-CORPUS2-09931",
@@ -445377,7 +447591,10 @@
     },
     "conceptId": "THURSDAY",
     "ipa": "/mɐqʹʷɐˈwɐʁʷɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "onların + HAYIRSIZ"
+    }
   },
   {
     "id": "L-CORPUS2-09948",
@@ -445588,7 +447805,10 @@
     "isLemma": false,
     "conceptId": "KALMYK",
     "ipa": "/qʹɐ'ɮmǝqʹ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "dikkat + YOLAK"
+    }
   },
   {
     "id": "L-CORPUS2-09956",
@@ -446382,7 +448602,10 @@
     "rootIds": [
       "R-GA_1"
     ],
-    "ipa": "/'ʁɑ:ɕʹɐ/"
+    "ipa": "/'ʁɑ:ɕʹɐ/",
+    "translations": {
+      "tr": ""
+    }
   },
   {
     "id": "L-CORPUS2-09986",
@@ -522329,7 +524552,10 @@
       "rule": "compound"
     },
     "ipa": "/'ʁʷǝsɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "DORUK + PARAGRAF"
+    }
   },
   {
     "id": "L-VERIFIED-02415",
@@ -530551,7 +532777,10 @@
       "R-SHCH"
     ],
     "ipa": "/ɕǝs'ħǝn/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "ISSIZ + GAZ"
+    }
   },
   {
     "id": "L-VERIFIED-02711",
@@ -546842,7 +549071,8 @@
     "ipa": "/bʑǝˈfʹɑ:ʁ/",
     "translations": {
       "en": "representativeness; showiness, portliness, with an imposing appearance",
-      "ru": "представительность; эффектность"
+      "ru": "представительность; эффектность",
+      "tr": "Boyunduruk + güvenilirlik"
     },
     "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0f/%D0%91603%D0%B1%D0%B6%D1%8C%D1%8B%D1%84%D3%8F%D0%B0%D0%B3%D1%8A.ogg"
   },
@@ -689992,7 +692222,7 @@
     "translations": {
       "en": "reluctantly, unwillingly, without wanting to",
       "ru": "нехотя, без желания, неохотно",
-      "tr": "",
+      "tr": "ISTEKSIZ + ISTEKSIZ",
       "trSource": "en->tr koprusu (orta)"
     }
   },
@@ -722542,7 +724772,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/bʁɐɕʼɐraɕʼɐ/"
+    "ipa": "/bʁɐɕʼɐraɕʼɐ/",
+    "translations": {
+      "tr": "doğan"
+    }
   },
   {
     "form": "бзыуцӀыкӀу",
@@ -737752,7 +739985,7 @@
     "partOfSpeech": "noun",
     "conceptId": "HİDDETLENMEK ÖFKELENMEK",
     "translations": {
-      "tr": ""
+      "tr": "HİDDETLENMEK ÖFKELENMEK"
     },
     "ipa": "/χiim/",
     "rootIds": [],
