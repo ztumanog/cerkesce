@@ -3,8 +3,9 @@ sys.stdout.reconfigure(encoding="utf-8")
 from pathlib import Path
 
 test_content = '''
+import fs from 'fs';
 import { describe, it, expect } from 'vitest';
-import { MorphemeParser } from '@/domain/linguistic/MorphemeParser';
+import { MorphemeParser } from '@/domain/morphology/MorphemeParser';
 import morphemesData from '../../../../public/data/linguistic/morphemes.json';
 import lexemesData from '../../../../public/data/linguistic/lexemes.json';
 
@@ -12,10 +13,13 @@ describe('MorphemeParser Gercek Kelimeler', () => {
   const parser = new MorphemeParser(morphemesData as any);
 
   it('gercek lexemeleri test et', () => {
+    // morphemeIds artik hic doldurulmuyor (0 kayit); guncel sema derivation.components
     const testler = (lexemesData as any[])
-      .filter(l => l.derivation?.morphemeIds?.length > 0)
+      .filter(l => l.derivation?.morphemeIds?.length > 0 || l.derivation?.components?.length > 0)
       .slice(0, 10);
-    
+
+    expect(testler.length).toBeGreaterThan(0);
+
     const sonuclar: string[] = [];
     for (const lex of testler) {
       const result = parser.parse({
@@ -26,14 +30,18 @@ describe('MorphemeParser Gercek Kelimeler', () => {
       sonuclar.push(
         lex.id + ' | ' + lex.form + ' | morphemes: ' + 
         JSON.stringify(result.morphemes.map(m => m.form)) + 
+        ' | method: ' + result.method +
         ' | conf: ' + result.confidence
       );
     }
-    const fs = require('fs');
     fs.writeFileSync('morph_gercek.json', JSON.stringify(sonuclar, null, 2));
-    expect(true).toBe(true);
+    expect(sonuclar.length).toBe(testler.length);
   });
 });
 '''
-Path("src/tests/domain/linguistic/MorphemeParser.gercek.test.ts").write_text(test_content, encoding="utf-8")
-print("Gercek test olusturuldu")
+# NOT: parser src/domain/morphology/ altinda; import yolu ve cikti dizini duzeltildi.
+# Filtre, guncel derivation.components semasini da kapsayacak sekilde guncellendi.
+cikti = Path("src/tests/domain/morphology/MorphemeParser.gercek.test.ts")
+cikti.parent.mkdir(parents=True, exist_ok=True)
+cikti.write_text(test_content, encoding="utf-8")
+print(f"Gercek test olusturuldu: {cikti}")
