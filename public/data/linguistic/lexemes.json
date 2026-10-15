@@ -23962,7 +23962,7 @@
     "subConceptId": "",
     "taxonomyFamily": "",
     "translations": {
-      "tr": ""
+      "tr": "iyi, güzel"
     }
   },
   {
@@ -39411,7 +39411,7 @@
     "translations": {
       "en": "six (6)",
       "ru": "шесть (6)",
-      "tr": "",
+      "tr": "altı; deniz",
       "ar": "I \\tالبحر   II \\tستة، العدد ستة"
     },
     "notes": "Kaynak: sukunov-1998",
@@ -42797,7 +42797,7 @@
     "translations": {
       "ru": "нареч",
       "en": "once again, anew, afresh",
-      "tr": ""
+      "tr": "DÜZELTMEK"
     },
     "rootIds": [
       "R-GU"
@@ -49038,7 +49038,8 @@
     "isLemma": true,
     "translations": {
       "ru": "правда / Зыгуэрым щыхьэт иритехъуэу къ",
-      "en": "true! that's right!"
+      "en": "true! that's right!",
+      "tr": "Yemek yemek"
     },
     "subConceptId": "TRUTH_PRED",
     "taxonomyFamily": "Gramer & Çekim",
@@ -68574,7 +68575,7 @@
     "translations": {
       "en": "meeting, assemply, gettogether",
       "ru": "сбор, собрание",
-      "tr": "",
+      "tr": "forum",
       "ar": "جمعية"
     },
     "conceptId": "TOPLANTI",
@@ -72579,7 +72580,7 @@
     "translations": {
       "en": "forty-third letter of the Kabardino-Cherkess (Circassian) alphabet",
       "ru": "сорок третья буква кабардино-черкесского алфавита",
-      "tr": ""
+      "tr": "darı"
     },
     "dictionaryEvidence": [
       "sukunov-1998"
@@ -74742,7 +74743,8 @@
     "isLemma": true,
     "translations": {
       "ru": "хьэл. Хьэл-щэн дахэ. <div sty",
-      "en": "character, nature, temperament, habit"
+      "en": "character, nature, temperament, habit",
+      "tr": "depo"
     },
     "subConceptId": "TEMPERAMENT",
     "taxonomyFamily": "Karakter/Mizaç",
@@ -85063,7 +85065,7 @@
     "translations": {
       "ru": "привести снова в",
       "en": "once again, put something in order, change, alter (clothes)",
-      "tr": "",
+      "tr": "tamir etmek",
       "trSource": "en->tr koprusu (orta)",
       "ar": "يُحرر"
     },
@@ -92446,7 +92448,8 @@
     "translations": {
       "ru": "устар. жертвоприношение / Мажусий диным щитам пас",
       "en": "sacrifice, offering",
-      "ar": "قربان، تقدمة للرب"
+      "ar": "قربان، تقدمة للرب",
+      "tr": "kurban"
     },
     "rootIds": [
       "R-TYH"
@@ -105515,7 +105518,7 @@
     "notes": "Corpus v1.0 (freq: 19, lang: ady, source: 0.Ady-Ady_AIG)",
     "isLemma": true,
     "translations": {
-      "tr": "",
+      "tr": "ağız",
       "ar": "الفم/ الزحافة (زحافة الثلج)"
     },
     "rootIds": [
@@ -113813,7 +113816,8 @@
     "isLemma": true,
     "translations": {
       "ru": "вывалять кого-что-л",
-      "en": "make dirty or filthy, sully, dump or roll sb or sth in, among or amidsth sth"
+      "en": "make dirty or filthy, sully, dump or roll sb or sth in, among or amidsth sth",
+      "tr": "devirmek, yuvarlamak"
     },
     "rootIds": [
       "R-KHEK"
@@ -116528,7 +116532,8 @@
     "translations": {
       "ru": "ласкать <font colo",
       "en": "caress sb, be nice to sb., please sb., suck up to sb.",
-      "ar": "يتملق، يتزلف/ يلاطف"
+      "ar": "يتملق، يتزلف/ يلاطف",
+      "tr": "Emeklemek, sürünmek"
     }
   },
   {
@@ -118329,7 +118334,8 @@
     "isLemma": true,
     "translations": {
       "ru": "разгрести что-л",
-      "en": "shovel or rake sth in different directions"
+      "en": "shovel or rake sth in different directions",
+      "tr": "sallamak"
     },
     "rootIds": [
       "R-BLE"
@@ -119424,7 +119430,8 @@
     "isLemma": true,
     "translations": {
       "ru": "пресный, недосоленный / Шыгъу зыхэмылъ",
-      "en": "bland, unsalted, meaningless, senseless"
+      "en": "bland, unsalted, meaningless, senseless",
+      "tr": "Maydonoz"
     },
     "rootIds": [
       "R-SHY"
@@ -126639,7 +126646,8 @@
     "isLemma": true,
     "translations": {
       "ru": "а) спресовать, уплотнить что-л",
-      "en": "compress, compact sth."
+      "en": "compress, compact sth.",
+      "tr": "HAYLAZ"
     },
     "rootIds": [
       "R-GU"
@@ -171500,7 +171508,8 @@
     "isLemma": true,
     "translations": {
       "ru": "быть сведущим в чем-л",
-      "en": "be knowledgeable about sth, aware of sth."
+      "en": "be knowledgeable about sth, aware of sth.",
+      "tr": "DRIPLING"
     },
     "subConceptId": "MIND",
     "taxonomyFamily": "Düşünce & Soyut",
@@ -218303,7 +218312,10 @@
     ],
     "conceptId": "BLACK",
     "ipa": "/fʹǝwɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "iyi, guzel"
+    }
   },
   {
     "id": "L-CORPUS2-01094",
@@ -240448,7 +240460,10 @@
       "R-P1C1"
     ],
     "conceptId": "LIE",
-    "ipa": "/ptʹsǝ/"
+    "ipa": "/ptʹsǝ/",
+    "translations": {
+      "tr": "YILIŞIK"
+    }
   },
   {
     "id": "L-CORPUS2-01959",
@@ -268381,7 +268396,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/qʹǝɕ/"
+    "ipa": "/qʹǝɕ/",
+    "translations": {
+      "tr": "verimli"
+    }
   },
   {
     "id": "L-CORPUS2-03042",
@@ -268488,7 +268506,10 @@
       "rule": "compound"
     },
     "ipaSource": "root-derived",
-    "ipa": "/zɐxaxǝw/"
+    "ipa": "/zɐxaxǝw/",
+    "translations": {
+      "tr": "ŞAKKADAK"
+    }
   },
   {
     "id": "L-CORPUS2-03046",
@@ -268606,7 +268627,10 @@
     "subConceptId": "-",
     "taxonomyFamily": "-",
     "rootForm": "гу",
-    "ipa": "/gʷǝrǝ'ʔʷɐʁʷɐ/"
+    "ipa": "/gʷǝrǝ'ʔʷɐʁʷɐ/",
+    "translations": {
+      "tr": "NASIL"
+    }
   },
   {
     "id": "L-CORPUS2-03051",
@@ -272911,7 +272935,9 @@
     },
     "conceptId": "BOY",
     "ipa": "/'ɕʹɑ:ʁʷɐ/",
-    "translations": {}
+    "translations": {
+      "tr": "Bal"
+    }
   },
   {
     "id": "L-CORPUS2-03212",
@@ -275164,7 +275190,10 @@
     },
     "isLemma": false,
     "conceptId": "CRADLE",
-    "ipa": "/ʂǝ'nɑ:ʁʷɐ/"
+    "ipa": "/ʂǝ'nɑ:ʁʷɐ/",
+    "translations": {
+      "tr": "NASIL"
+    }
   },
   {
     "id": "L-CORPUS2-03303",
@@ -286858,7 +286887,8 @@
     },
     "translations": {
       "en": "dig sth out of the ground.",
-      "ru": "выкопать что-л. из земли"
+      "ru": "выкопать что-л. из земли",
+      "tr": "KAZIMAK"
     }
   },
   {
@@ -296622,7 +296652,10 @@
       "rule": "compound"
     },
     "conceptId": "MULTICOLOR",
-    "ipa": "/'mǝdɐ/"
+    "ipa": "/'mǝdɐ/",
+    "translations": {
+      "tr": "ŞILLIK"
+    }
   },
   {
     "id": "L-CORPUS2-04112",
@@ -303413,7 +303446,7 @@
     "translations": {
       "en": "game (pastime), acting, playing a role (for example, in a play)",
       "ru": "игра (развлечение), игра, исполнение роли (напр. в спектакле)",
-      "tr": "",
+      "tr": "DOMINO",
       "trSource": "en->tr koprusu (orta)"
     }
   },
@@ -311851,7 +311884,10 @@
     },
     "notes": "Corpus v1.0 batch-2 (freq: 22, lang: kbd, source: none)",
     "isLemma": false,
-    "ipa": "/ɐrɐ'zǝn/"
+    "ipa": "/ɐrɐ'zǝn/",
+    "translations": {
+      "tr": "soru"
+    }
   },
   {
     "id": "L-CORPUS2-04681",
@@ -312115,7 +312151,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/qʹǝɕ/"
+    "ipa": "/qʹǝɕ/",
+    "translations": {
+      "tr": "verimli"
+    }
   },
   {
     "id": "L-CORPUS2-04690",
@@ -322039,7 +322078,10 @@
     "rootIds": [
       "R-1UEKHU"
     ],
-    "ipa": "/ʔʷɐxʷ/"
+    "ipa": "/ʔʷɐxʷ/",
+    "translations": {
+      "tr": "ESİN"
+    }
   },
   {
     "id": "L-CORPUS2-05076",
@@ -330600,7 +330642,7 @@
     "ipa": "/tʹsǝxʷ/",
     "translations": {
       "en": "good person; * ~ и гъащӀэр кӀыхь хъуркъым: saying. whom the gods love die young",
-      "tr": ""
+      "tr": "BÜYÜCÜ"
     }
   },
   {
@@ -331164,7 +331206,7 @@
     "conceptId": "LOVE",
     "ipa": "/zǝ'qʹo:m/",
     "translations": {
-      "tr": ""
+      "tr": "kısmen"
     }
   },
   {
@@ -339183,7 +339225,10 @@
     "subConceptId": "LIGHT",
     "taxonomyFamily": "Işık & Aydınlık",
     "rootForm": "нэ-",
-    "ipa": "/nɐxʷ/"
+    "ipa": "/nɐxʷ/",
+    "translations": {
+      "tr": "açıkça"
+    }
   },
   {
     "id": "L-CORPUS2-05738",
@@ -343369,7 +343414,7 @@
     "ipa": "/ɐ'nɐʂxʷɐ/",
     "ipaSource": "root-derived",
     "translations": {
-      "tr": ""
+      "tr": "-ecek"
     }
   },
   {
@@ -352423,7 +352468,10 @@
     "isLemma": false,
     "conceptId": "LIFE_PARTNER",
     "ipa": "/psɐʁʷ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "TEŞEKKUR"
+    }
   },
   {
     "id": "L-CORPUS2-06247",
@@ -371897,7 +371945,10 @@
     },
     "isLemma": false,
     "conceptId": "DEFECT",
-    "ipa": "/'χǝʑɐ/"
+    "ipa": "/'χǝʑɐ/",
+    "translations": {
+      "tr": "YIĞITÇE"
+    }
   },
   {
     "id": "L-CORPUS2-06993",
@@ -394483,7 +394534,9 @@
     "isLemma": false,
     "conceptId": "TONGUE",
     "ipa": "/'ɕʹǝpʹɐ/",
-    "translations": {}
+    "translations": {
+      "tr": "LEHÇE"
+    }
   },
   {
     "id": "L-CORPUS2-07855",
@@ -457044,7 +457097,8 @@
     "isLemma": true,
     "translations": {
       "ru": "гореть, сгореть в чем-л",
-      "en": "burn up in sth, amidst of among sth"
+      "en": "burn up in sth, amidst of among sth",
+      "tr": "SEKMEK"
     },
     "ipa": "/xi:ˈsħɐn/",
     "examples": [
@@ -475406,7 +475460,7 @@
     "translations": {
       "ru": "of гъужын",
       "en": "1. of гъужын;\n2. as adj stunted; poor; wilted",
-      "tr": ""
+      "tr": "Kuru, kurumuş"
     },
     "rootIds": [
       "R-GHWAZH"
@@ -479222,7 +479276,7 @@
     "translations": {
       "en": "at one time, in a single voice",
       "ru": "одновременно, в один голос",
-      "tr": ""
+      "tr": "oy"
     },
     "examples": [
       "*Зыжьэу жыӀэн.",
@@ -480270,7 +480324,8 @@
     "rootForm": "хьэ-",
     "translations": {
       "en": "dog breeder",
-      "ru": "собаковод"
+      "ru": "собаковод",
+      "tr": "Cynodon dactylon"
     }
   },
   {
@@ -484858,7 +484913,7 @@
     "isLemma": true,
     "translations": {
       "ru": "зэхуэзэныгъэ Type: noun Definitions: 1",
-      "tr": ""
+      "tr": "KONGRE"
     },
     "rootIds": [
       "R-ZEKH"
@@ -491021,7 +491076,8 @@
     "ipa": "/wǝˈdzǝfɐ/",
     "ipaSource": "root-derived",
     "translations": {
-      "en": "pale, sick in appearance"
+      "en": "pale, sick in appearance",
+      "tr": "Hasta"
     }
   },
   {
@@ -521820,7 +521876,8 @@
     "isLemma": true,
     "translations": {
       "ru": "объедки",
-      "en": "scraps; leftovers"
+      "en": "scraps; leftovers",
+      "tr": "isirik"
     },
     "rootIds": [
       "R-1E"
@@ -522117,7 +522174,8 @@
     },
     "isLemma": true,
     "translations": {
-      "ru": "бэрэбан"
+      "ru": "бэрэбан",
+      "tr": "FIÇI"
     },
     "ipa": "/fɐnd/"
   },
@@ -545913,7 +545971,7 @@
     "translations": {
       "en": "sb who takes care of sb like a father",
       "ru": "тот, который проявляет отеческую заботу",
-      "tr": ""
+      "tr": "EVCIMEN"
     },
     "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/0/01/%D0%90083%D0%B0%D0%B4%D1%8D%D0%BF%D0%B0%D0%BB%D1%8A%D1%8D.ogg"
   },
@@ -548854,7 +548912,7 @@
     "translations": {
       "en": "breast meat (poultry)",
       "ru": "грудка (у птиц)",
-      "tr": ""
+      "tr": "Kesilmiş hayvanın göğüs kısmı"
     },
     "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/0/08/%D0%B1348%D0%B1%D0%B3%D1%8A%D1%8D%D0%BB%D1%8B%D0%B3%D1%83%D0%B1%D1%8D.ogg"
   },
@@ -567064,7 +567122,8 @@
     "ipa": "/'dᶎǝpχɐ/",
     "translations": {
       "en": "material for research, subject of study",
-      "ru": "предмет изучения, исследования"
+      "ru": "предмет изучения, исследования",
+      "tr": "Hazır iplik"
     }
   },
   {
@@ -601727,7 +601786,7 @@
     "translations": {
       "en": "at the limit of one's strength or abilities",
       "ru": "на пределе, что есть силы",
-      "tr": ""
+      "tr": "Yemek yemek"
     }
   },
   {
@@ -609725,7 +609784,8 @@
     "ipa": "/kʹʷɐtʹsǝ'bɣɐn/",
     "translations": {
       "en": "curse or damn sth",
-      "ru": "проклинать кого-л."
+      "ru": "проклинать кого-л.",
+      "tr": "KÜFRETMEK"
     }
   },
   {
@@ -662782,7 +662842,7 @@
     "translations": {
       "en": "chatter, jabber, talk incessantly",
       "ru": "трещать, тараторить, говорить без умолку",
-      "tr": "",
+      "tr": "KAŞIMAK",
       "trSource": "en->tr koprusu (orta)"
     }
   },
@@ -666170,7 +666230,8 @@
     "ipa": "/psǝˈnɕʹɑ:ʁʷɐ/",
     "translations": {
       "en": "not presenting difficulties, easy for someone, not difficult to do",
-      "ru": "не представляющий трудности, сложности для кого-л., нетрудный для выполнения"
+      "ru": "не представляющий трудности, сложности для кого-л., нетрудный для выполнения",
+      "tr": "Hafif, yeğni"
     }
   },
   {
@@ -704840,7 +704901,8 @@
     "ipa": "/ʂxɐ'psǝɮɐ/",
     "translations": {
       "en": "sticky, adhesive",
-      "ru": "липкий"
+      "ru": "липкий",
+      "tr": "SELOTEYP"
     }
   },
   {
@@ -727430,7 +727492,7 @@
     "partOfSpeech": "noun",
     "conceptId": "ZAMAN",
     "translations": {
-      "tr": "",
+      "tr": "Kazık",
       "en": "One",
       "ru": "Один",
       "ar": "واحد"
@@ -743465,7 +743527,7 @@
     "conceptId": "KAVRAM_БЫСТРО",
     "translations": {
       "ru": "быстро",
-      "tr": "",
+      "tr": "düz",
       "ar": "أماماً",
       "en": "straight; straight"
     },
@@ -747306,7 +747368,7 @@
     "conceptId": "KAVRAM_ВВЕРХ",
     "translations": {
       "ru": "вверх",
-      "tr": "",
+      "tr": "Atlı, süvari",
       "ar": "أعلى",
       "en": "upstairs"
     },
@@ -752058,7 +752120,7 @@
     "conceptId": "KAVRAM_ВРЕМЯ",
     "translations": {
       "ru": "время",
-      "tr": "",
+      "tr": "uçuş",
       "en": "time, time to smth."
     },
     "ipa": "/kʷʼɐʁʷɐ/",
@@ -764787,7 +764849,7 @@
     "conceptId": "KAVRAM_ИСПОРЧЕННЫЙ",
     "translations": {
       "ru": "испорченный",
-      "tr": "",
+      "tr": "ŞIZOFRENI",
       "en": "Schizophrenia"
     },
     "ipa": "/zɐkʷʼɐkʼa/",
@@ -766088,7 +766150,8 @@
     "conceptId": "KAVRAM_ОСТАТКИ СЕЛЕНИЯ",
     "translations": {
       "ru": "остатки селения",
-      "en": "the remains of the village, the tribe."
+      "en": "the remains of the village, the tribe.",
+      "tr": "Son"
     },
     "ipa": "/жǝlakʼɐ/",
     "rootIds": [],
@@ -766543,7 +766606,8 @@
     "conceptId": "KAVRAM_ВЫСТАВЛЯТЬ СЕБЯ",
     "translations": {
       "ru": "выставлять себя",
-      "en": "move. ch. vernacular stick out, to expose themselves"
+      "en": "move. ch. vernacular stick out, to expose themselves",
+      "tr": "karışmak"
     },
     "ipa": "/zǝʁɐpʼiin/",
     "rootIds": [],
@@ -769907,7 +769971,7 @@
     "conceptId": "KAVRAM_ТУДА",
     "translations": {
       "ru": "туда",
-      "tr": "",
+      "tr": "boyunca",
       "ar": "على طول"
     },
     "ipa": "/abǝkʼɐ/",
@@ -779583,7 +779647,8 @@
     "translations": {
       "ru": "сабий ерыкъ",
       "ar": "عنيد، شموس",
-      "en": "with cleft lip"
+      "en": "with cleft lip",
+      "tr": "Dudak"
     },
     "ipa": "/еrǝq/",
     "rootIds": [],
@@ -781207,7 +781272,8 @@
     "conceptId": "KAVRAM_ЗАСТРЕЛИТЬСЯ",
     "translations": {
       "ru": "застрелиться",
-      "en": "move. ch. stabbed, shot"
+      "en": "move. ch. stabbed, shot",
+      "tr": "BAŞIBOŞ"
     },
     "ipa": "/zǝwkʼǝжǝn/",
     "rootIds": [],
@@ -793403,7 +793469,7 @@
     "conceptId": "KAVRAM_ЖЕЛАЮЩИЙ",
     "translations": {
       "ru": "желающий",
-      "tr": ""
+      "tr": "HAIN"
     },
     "ipa": "/zǝfʼɐfʼ/",
     "rootIds": [],
@@ -793854,7 +793920,7 @@
     "conceptId": "KAVRAM_ПРИЧ",
     "translations": {
       "ru": "прич",
-      "tr": ""
+      "tr": "KAÇMA"
     },
     "ipa": "/ɕʼɐpχʷɐжa/",
     "rootIds": [],
@@ -797402,7 +797468,7 @@
     "conceptId": "KAVRAM_НЕРЕШИТЕЛЬНОСТЬ",
     "translations": {
       "ru": "нерешительность",
-      "tr": ""
+      "tr": "become indecisive."
     },
     "ipa": "/gʷpɕʼɐx/",
     "rootIds": [],
@@ -798792,7 +798858,8 @@
     "conceptId": "KAVRAM_ОКОЛО КОГО-Л",
     "translations": {
       "ru": "около кого-л",
-      "en": "move. ch. rub against someone that l."
+      "en": "move. ch. rub against someone that l.",
+      "tr": "cm. ."
     },
     "ipa": "/zǝkʼɐrǝkʷħǝn/",
     "rootIds": [],
@@ -799518,7 +799585,8 @@
     "conceptId": "KAVRAM_ВОЗРОДИТЬСЯ",
     "translations": {
       "ru": "возродиться",
-      "en": "nepereh. ch. stand up straight, unbent"
+      "en": "nepereh. ch. stand up straight, unbent",
+      "tr": "Binmek, tırmanmak"
     },
     "ipa": "/zɐfʼɐwvɐжǝn/",
     "rootIds": [],
@@ -801857,7 +801925,8 @@
     "conceptId": "KAVRAM_ТРУДЯЩИЕСЯ",
     "translations": {
       "ru": "трудящиеся",
-      "en": "working people"
+      "en": "working people",
+      "tr": "insanlar"
     },
     "ipa": "/lɐʑakʷʼɐbɐ/",
     "rootIds": [],
@@ -807715,7 +807784,8 @@
     "conceptId": "KAVRAM_МОРОЗНАЯ ПОГОДА",
     "translations": {
       "ru": "морозная погода",
-      "en": "frosty weather"
+      "en": "frosty weather",
+      "tr": "MUKTEDIR"
     },
     "ipa": "/ʔɐʑakʷʼɐfij/",
     "rootIds": [],
@@ -819604,7 +819674,8 @@
     "conceptId": "KAVRAM_ХОД",
     "translations": {
       "ru": "ход",
-      "en": "course, the development of smth."
+      "en": "course, the development of smth.",
+      "tr": "süreç"
     },
     "ipa": "/zǝwʑǝkʼɐ/",
     "rootIds": [],
@@ -821976,7 +822047,8 @@
     "conceptId": "KAVRAM_РАЗВИНТИТЬ ЧТО-Л",
     "translations": {
       "ru": "развинтить что-л",
-      "en": "move. ch. unscrew, unscrew smth."
+      "en": "move. ch. unscrew, unscrew smth.",
+      "tr": "Boynuz"
     },
     "ipa": "/zɐfʼɐʔʷɐntʼǝkʼǝn/",
     "rootIds": [],
@@ -822724,7 +822796,8 @@
     "conceptId": "KAVRAM_НЕПОНЯТЛИВОСТЬ",
     "translations": {
       "ru": "непонятливость",
-      "en": "dullness, slowness"
+      "en": "dullness, slowness",
+      "tr": "AHMAKÇA"
     },
     "ipa": "/zɐxɐɕʼǝkʼǝnʃaʁɐ/",
     "rootIds": [],
@@ -831909,7 +831982,8 @@
     "conceptId": "KAVRAM_ДЕТСКАЯ РЕЧЬ",
     "translations": {
       "ru": "детская речь",
-      "en": "baby talk"
+      "en": "baby talk",
+      "tr": "Dil"
     },
     "ipa": "/sabiibzɐ/",
     "rootIds": [],
@@ -840847,7 +840921,7 @@
     "conceptId": "KAVRAM_ПРИЧ",
     "translations": {
       "ru": "прич",
-      "tr": ""
+      "tr": "JET"
     },
     "ipa": "/qǝzɐɕʼɐpɬa/",
     "rootIds": [],
@@ -845124,7 +845198,8 @@
     "conceptId": "KAVRAM_ЩТАМЫЛЭР КЪЫЗЫХАЩӀЫК",
     "translations": {
       "ru": "щтамылэр къызыхащӏыкӏ",
-      "en": "i polypore"
+      "en": "i polypore",
+      "tr": "Mantar"
     },
     "ipa": "/ʁʷɐn/",
     "rootIds": [],
@@ -846305,7 +846380,7 @@
     "conceptId": "KAVRAM_ӀАУ",
     "translations": {
       "ru": "ӏау",
-      "tr": "",
+      "tr": "oh",
       "en": "expresses astonishment, surprise oh!; ~, атӀэ мыр уэрай!: oh, is that  (really)  you?!"
     },
     "ipa": "/ʔɐw/",
@@ -850779,7 +850854,8 @@
     "conceptId": "KAVRAM_ӀЭРЫКӀКӀЭ ЖУМАРТ",
     "translations": {
       "ru": "ӏэрыкӏкӏэ жумарт",
-      "en": "item of smb.'s stuff hands"
+      "en": "item of smb.'s stuff hands",
+      "tr": "heykel"
     },
     "ipa": "/ʔɐrǝkʼ/",
     "rootIds": [],
@@ -851165,7 +851241,7 @@
     "translations": {
       "ru": "ӏэхъуэтегъэкӏыу",
       "en": "erk see",
-      "tr": ""
+      "tr": "NASIL"
     },
     "ipa": "/ʔɐχʷɐʁʷɐtеʁɐkʼǝw/",
     "rootIds": [],
@@ -853900,7 +853976,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_БАДЗЭГЪАЛӀЭ",
     "translations": {
-      "ru": "бадзэгъалӏэ"
+      "ru": "бадзэгъалӏэ",
+      "tr": "SINEKOTU"
     },
     "ipa": "/badzɐgǝn/",
     "rootIds": [],
@@ -860254,7 +860331,8 @@
     "conceptId": "KAVRAM_ЗА УСЛУГУ",
     "translations": {
       "ru": "за услугу",
-      "en": "remuneration for a service"
+      "en": "remuneration for a service",
+      "tr": "Çay"
     },
     "ipa": "/gʷʁʷеħǝpɕʼɐ/",
     "rootIds": [],
@@ -865370,7 +865448,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ДЗЭЛКЪЭДАБЭ",
     "translations": {
-      "ru": "дзэлкъэдабэ"
+      "ru": "дзэлкъэдабэ",
+      "tr": "Söğüt, söğüt sorkun"
     },
     "ipa": "/dzɐlxwʑ/",
     "rootIds": [],
@@ -865382,7 +865461,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ДЗЭЛДЭГУ",
     "translations": {
-      "ru": "дзэлдэгу"
+      "ru": "дзэлдэгу",
+      "tr": "Söğüt, söğüt sorkun"
     },
     "ipa": "/dzɐlǝptsʼɐ/",
     "rootIds": [],
@@ -870252,7 +870332,8 @@
     "conceptId": "KAVRAM_НЕБРЕЖНОСТЬ",
     "translations": {
       "ru": "небрежность",
-      "en": "1. carelessness, negligence;\n2. fig. lack of self-control."
+      "en": "1. carelessness, negligence;\n2. fig. lack of self-control.",
+      "tr": "HİDDET"
     },
     "ipa": "/mǝʔɐdɐbǝʁɐ/",
     "rootIds": [],
@@ -874659,7 +874740,8 @@
     "conceptId": "KAVRAM_ПОПЕЧЕНИИ",
     "translations": {
       "ru": "попечении",
-      "en": "move. ch. be on smb. dependent care"
+      "en": "move. ch. be on smb. dependent care",
+      "tr": "Oturmak"
     },
     "ipa": "/zеʁɐpʼǝn/",
     "rootIds": [],
@@ -878119,7 +878201,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_КОКЕТНИЧАТЬ",
     "translations": {
-      "ru": "кокетничать"
+      "ru": "кокетничать",
+      "tr": "davranmak"
     },
     "ipa": "/zǝʁɐfɐrǝɕʼǝn/",
     "rootIds": [],
@@ -878684,7 +878767,8 @@
     "conceptId": "KAVRAM_ДАУИКӀ",
     "translations": {
       "ru": "дауикӏ",
-      "en": "(vi; disapproving) to have a fair opinion of oneself, to give oneself airs; to think no small beer of oneself"
+      "en": "(vi; disapproving) to have a fair opinion of oneself, to give oneself airs; to think no small beer of oneself",
+      "tr": "KASILMAK"
     },
     "ipa": "/zǝqǝzǝfʼɐɕʼǝжǝn/",
     "rootIds": [],
@@ -878779,7 +878863,8 @@
     "conceptId": "KAVRAM_ЗАЗНАЙСТВО",
     "translations": {
       "ru": "зазнайство",
-      "en": "conceit"
+      "en": "conceit",
+      "tr": "hırs"
     },
     "ipa": "/zǝqǝfʼɐɕʼǝжǝnǝʁɐ/",
     "rootIds": [],
@@ -882156,7 +882241,8 @@
     "conceptId": "KAVRAM_ТРЕЩИНА",
     "translations": {
       "ru": "трещина",
-      "en": "crack"
+      "en": "crack",
+      "tr": "Çatal"
     },
     "ipa": "/zɐgʷɐtʃǝpʼɐ/",
     "rootIds": [],
@@ -883190,7 +883276,8 @@
     "conceptId": "KAVRAM_ЗАКАРИС",
     "translations": {
       "ru": "закарис",
-      "en": "zakaris"
+      "en": "zakaris",
+      "tr": "mısır gevreği"
     },
     "ipa": "/zɐkʼɐrǝs/",
     "rootIds": [],
@@ -887343,7 +887430,8 @@
     "conceptId": "KAVRAM_ПРОТОКИ",
     "translations": {
       "ru": "протоки",
-      "en": "nepereh. ch. divided into sleeves, ducts; spread of branched channels"
+      "en": "nepereh. ch. divided into sleeves, ducts; spread of branched channels",
+      "tr": "AYRILMAK, DAĞILMAK"
     },
     "ipa": "/zɐxɐжǝn/",
     "rootIds": [],
@@ -896107,7 +896195,7 @@
     "conceptId": "KAVRAM_САБИЙ КЪУЕЙЩӀЕЙ",
     "translations": {
       "ru": "сабий къуейщӏей",
-      "tr": "",
+      "tr": "mischief",
       "en": "i naughty, mischievous child"
     },
     "ipa": "/qʷеjɕʼеj/",
@@ -901172,7 +901260,8 @@
     "conceptId": "KAVRAM_ЩХЬЭНТЭР КЪАГЪЭБЫРЫБ",
     "translations": {
       "ru": "щхьэнтэр къагъэбырыбащ",
-      "en": "causative to"
+      "en": "causative to",
+      "tr": "DALGALANMAK"
     },
     "ipa": "/qɐʁɐbǝrǝbǝn/",
     "rootIds": [],
@@ -905386,7 +905475,7 @@
     "conceptId": "KAVRAM_НЕМАЛО",
     "translations": {
       "ru": "немало",
-      "tr": ""
+      "tr": "BOL"
     },
     "ipa": "/mǝmaɕʼɐw/",
     "rootIds": [],
@@ -910400,7 +910489,8 @@
     "conceptId": "KAVRAM_ВЬЮК",
     "translations": {
       "ru": "вьюк",
-      "en": "pack"
+      "en": "pack",
+      "tr": "Okul çantası"
     },
     "ipa": "/pɬʼɐrǝħ/",
     "rootIds": [],
@@ -912944,7 +913034,8 @@
     "conceptId": "KAVRAM_КУЧЕВЫЕ ОБЛАКА",
     "translations": {
       "ru": "кучевые облака",
-      "en": "cumulus clouds"
+      "en": "cumulus clouds",
+      "tr": "spindrift clouds"
     },
     "ipa": "/pʃɐɕʼɐw/",
     "rootIds": [],
@@ -926662,7 +926753,7 @@
     "conceptId": "KAVRAM_ОТДЕЛЯТЬ",
     "translations": {
       "ru": "отделять",
-      "tr": "",
+      "tr": "DAĞITMAK",
       "en": "eg. books, houses, trees"
     },
     "ipa": "/zɐpɐɕʼɐxǝn/",
@@ -929746,7 +929837,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ШЫНЭКЪЭРАБГЪЭ",
     "translations": {
-      "ru": "шынэкъэрабгъэ"
+      "ru": "шынэкъэрабгъэ",
+      "tr": "ÜRKEK"
     },
     "ipa": "/ʃǝnɐrеj/",
     "rootIds": [],
@@ -930507,7 +930599,8 @@
     "conceptId": "KAVRAM_ВОСКОВОЙ ЦВЕТ",
     "translations": {
       "ru": "восковой цвет",
-      "en": "waxy color"
+      "en": "waxy color",
+      "tr": "ZAYIF"
     },
     "ipa": "/ʃɐxwfɐ/",
     "rootIds": [],
@@ -932884,7 +932977,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ЩХЬЭЗЫФӀЭФӀАГЪ",
     "translations": {
-      "ru": "щхьэзыфӏэфӏагъ"
+      "ru": "щхьэзыфӏэфӏагъ",
+      "tr": "cruelty"
     },
     "ipa": "/ɕħɐzǝfʼɐfʼǝʁɐ/",
     "rootIds": [],
@@ -933422,7 +933516,8 @@
     "conceptId": "KAVRAM_НЕВОЛЬНЫЙ",
     "translations": {
       "ru": "невольный",
-      "en": "involuntary"
+      "en": "involuntary",
+      "tr": "köle"
     },
     "ipa": "/ɕħɐxwitǝnʃɐ/",
     "rootIds": [],
@@ -952437,7 +952532,7 @@
     "conceptId": "KAVRAM_ФОРЕЛЬ",
     "translations": {
       "ru": "форель",
-      "tr": "",
+      "tr": "Alabalık",
       "en": "Trout"
     },
     "ipa": "/bdzɐʑеjqʷɐlɐn/",
@@ -952633,7 +952728,8 @@
     "conceptId": "KAVRAM_ВЫПУСК",
     "translations": {
       "ru": "выпуск",
-      "en": "къыдэгъэкӀыныгъэ Type: noun Definitions: 1. issue"
+      "en": "къыдэгъэкӀыныгъэ Type: noun Definitions: 1. issue",
+      "tr": "sonuç"
     },
     "ipa": "/qǝdɐʁɐkʼǝnǝʁɐ/",
     "rootIds": [],
@@ -952770,7 +952866,8 @@
     "conceptId": "KAVRAM_НЕ ОСОЗНАЮЩИЙ",
     "translations": {
       "ru": "не осознающий",
-      "en": "къамыхута Type: adjective Definitions: 1. unaware"
+      "en": "къамыхута Type: adjective Definitions: 1. unaware",
+      "tr": "BILINMEYEN"
     },
     "ipa": "/qamǝxwta/",
     "rootIds": [],
@@ -968982,7 +969079,8 @@
     "conceptId": "KAVRAM_ТРУС",
     "translations": {
       "ru": "трус",
-      "en": "шынэгъуафӀэ Type: noun Definitions: 1. coward"
+      "en": "шынэгъуафӀэ Type: noun Definitions: 1. coward",
+      "tr": "ÜRKEK"
     },
     "ipa": "/ʃǝnɐʁʷafʼɐ/",
     "rootIds": [],
@@ -971544,7 +971642,8 @@
     "conceptId": "KAVRAM_ПУСК",
     "translations": {
       "ru": "пуск",
-      "en": "утӀыпщыныгъэ Type: noun Definitions: 1. launch"
+      "en": "утӀыпщыныгъэ Type: noun Definitions: 1. launch",
+      "tr": "emisyon"
     },
     "ipa": "/wtʼǝpɕǝnǝʁɐ/",
     "rootIds": [],
@@ -972533,7 +972632,8 @@
     "conceptId": "KAVRAM_ПРОДОЛЖЕНИЕ",
     "translations": {
       "ru": "продолжение",
-      "en": "къыпыщэныгъэ Type: noun Definitions: 1. continuation"
+      "en": "къыпыщэныгъэ Type: noun Definitions: 1. continuation",
+      "tr": "uzatma"
     },
     "ipa": "/qǝpǝɕɐnǝʁɐ/",
     "rootIds": [],
@@ -974662,7 +974762,8 @@
     "conceptId": "KAVRAM_ПОДХАЛИМНИЧАТЬ РАЗГ",
     "translations": {
       "ru": "подхалимничать разг",
-      "en": "nepereh. ch. fawn"
+      "en": "nepereh. ch. fawn",
+      "tr": "Emeklemek, sürünmek"
     },
     "ipa": "/ʔʷжɐжɐn/",
     "rootIds": [],
@@ -1013156,7 +1013257,7 @@
     "translations": {
       "ru": "берычэт-бесын; когда-нибудь",
       "en": "someday",
-      "tr": ""
+      "tr": "Kara, siyah"
     },
     "ipa": "zǝmɐxʷɐǝ'mɑ:xʷɐtʹʂɐ",
     "rootIds": [],
@@ -1013860,7 +1013961,8 @@
     "conceptId": "KAVRAM_ВЫЗЫВАЕМЫЕ ИМИ",
     "translations": {
       "ru": "вызываемые ими; паразиты животных",
-      "en": "parasites of animals, as well as diseases caused by them"
+      "en": "parasites of animals, as well as diseases caused by them",
+      "tr": "TUFEYLÎ"
     },
     "ipa": "fɐʂxˈɮǝʂx",
     "rootIds": [],
