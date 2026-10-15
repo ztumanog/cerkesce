@@ -18578,7 +18578,7 @@
     "ipa": "/mǝ/",
     "isLemma": true,
     "translations": {
-      "tr": "",
+      "tr": "söylemek, demek",
       "en": "crab apple, wild apple (fruit)",
       "ru": "плод дикой яблони",
       "ar": "I \\tنوع من التفاح البري الحامض   II \\tهذا، هذه، هؤلاء/ غير/ دون/ ليس (سابقة نفي)"
@@ -47388,7 +47388,7 @@
     "isLemma": true,
     "translations": {
       "ru": "хуейр / фаер İSTEYEN",
-      "tr": ""
+      "tr": "isteyen, arzulayan"
     },
     "rootIds": [
       "R-F"
@@ -48815,7 +48815,7 @@
     "notes": "Corpus v1.0 (freq: 141, lang: ady, source: 0.Ady-Ady_AIG)",
     "isLemma": true,
     "translations": {
-      "tr": "",
+      "tr": "önde, önünde",
       "ar": "أمام، في مطلع، في مقدمة"
     },
     "rootIds": [
@@ -49632,7 +49632,7 @@
     "ipa": "/jǝˈwɐn/",
     "ipaSource": "root-derived",
     "translations": {
-      "tr": "",
+      "tr": "vakit, zaman",
       "ar": "الوقت، الزمن، الفترة الزمنية"
     },
     "literalMeaningSource": "translations.tr (yuksek)"
@@ -53369,7 +53369,7 @@
     "isLemma": true,
     "translations": {
       "ru": "теубытагъэ / теубыдагъэ еплъ <&lt",
-      "tr": ""
+      "tr": "kararsızlık, tereddüt"
     },
     "rootIds": [
       "R-TKHE"
@@ -73840,7 +73840,7 @@
     "translations": {
       "ru": "волна / Хы, псы с",
       "en": "wave (water)",
-      "tr": "SALINMAK",
+      "tr": "",
       "trSource": "en->tr koprusu (orta)",
       "ar": "موجة"
     },
@@ -90626,7 +90626,7 @@
     "translations": {
       "ru": "сосчитать, подсчитать <i",
       "en": "count, calculate sb or sth, chatter, talk, chat, prattle nonsense",
-      "tr": "SALINMAK",
+      "tr": "",
       "trSource": "en->tr koprusu (orta)",
       "ar": "يحسب"
     },
@@ -99530,7 +99530,7 @@
     "translations": {
       "ru": "небольшое количество / Зыкъом, зыбжанэ",
       "en": "several, a little, a few, a small quantity",
-      "tr": "",
+      "tr": "birkaç",
       "trSource": "en->tr koprusu (orta)",
       "ar": "عدة، بضع (بين الواحد والثلاثة)"
     },
@@ -102449,7 +102449,7 @@
     "translations": {
       "en": "",
       "ru": "уэн: повалиться, упасть на бок",
-      "tr": "",
+      "tr": "kapatmak, kapamak",
       "ar": "يضرب، يرمي بالسلاح، يطلق النار"
     },
     "rootIds": [
@@ -107848,7 +107848,7 @@
     "translations": {
       "ru": "каузатив к утхъуэн <div style='",
       "en": "",
-      "tr": "BULANDIRMAK"
+      "tr": ""
     },
     "rootIds": [
       "R-GHE"
@@ -126420,7 +126420,7 @@
     "translations": {
       "ru": "махать чем-л",
       "en": "wave, brandish sth (usually threatening sb)",
-      "tr": "SALINMAK",
+      "tr": "",
       "trSource": "en->tr koprusu (orta)"
     }
   },
@@ -131212,7 +131212,7 @@
     "translations": {
       "ru": "/ Командир сыт хуэдэхэм я",
       "en": "command (order, instruction), team, squad, band (special military unit or group of persons with a specific task), crew (ship), team (sports)",
-      "tr": "BULANDIRMAK",
+      "tr": "",
       "trSource": "en->tr koprusu (orta)"
     },
     "rootIds": [
@@ -149230,7 +149230,7 @@
     },
     "ipa": "/zɐqʹʷɐtǝ'nǝʁɐ/",
     "translations": {
-      "tr": "",
+      "tr": "birlik, ittifak",
       "ar": "تضامن، تعاضد"
     }
   },
@@ -214456,7 +214456,7 @@
     "ipa": "/'ʔɐpʹqʹɬɐpʹqʹ/",
     "ipaSource": "root-derived",
     "translations": {
-      "tr": ""
+      "tr": "KUYU + ZARFLAMAK"
     }
   },
   {
@@ -214488,7 +214488,7 @@
     "ipa": "/gʷǝɕʹɐ/",
     "ipaSource": "root-derived",
     "translations": {
-      "tr": "",
+      "tr": "söz, laf, gevezelik",
       "ar": "كلام، قول، خطاب"
     }
   },
@@ -218501,7 +218501,7 @@
     "ipa": "/'qʹʷǝɕħɐ/",
     "ipaSource": "root-derived",
     "translations": {
-      "tr": ""
+      "tr": "TOZ + KONAK"
     }
   },
   {
@@ -225060,7 +225060,7 @@
     "ipa": "/'qʹʷǝɕħɐ/",
     "ipaSource": "root-derived",
     "translations": {
-      "tr": "BULANDIRMAK"
+      "tr": ""
     }
   },
   {
@@ -229845,7 +229845,7 @@
     },
     "ipa": "/χʷǝn/",
     "translations": {
-      "tr": ""
+      "tr": "SÜRTÜŞMEK + SÜZMEK"
     }
   },
   {
@@ -234196,7 +234196,7 @@
     "ipa": "/jǝn/",
     "ipaSource": "root-derived",
     "translations": {
-      "tr": ""
+      "tr": "badana, boya"
     },
     "literalMeaningSource": "translations.tr (yuksek)"
   },
@@ -235184,7 +235184,7 @@
     },
     "ipa": "/'ʔǝħɐ/",
     "translations": {
-      "tr": ""
+      "tr": "yan + FAYDALANMAK"
     }
   },
   {
@@ -241152,7 +241152,7 @@
     "ipaSource": "root-derived",
     "ipa": "/zǝɕaʃʼǝrɐ/",
     "translations": {
-      "tr": ""
+      "tr": "SÖZ + HAPIS(H)ANE"
     }
   },
   {
@@ -257090,7 +257090,7 @@
     "translations": {
       "en": "to disappear, vanish, be lost, spoil, go off, become unusable, perish, to die, be absent, missing, not be present (for an indefinite period), be in vain",
       "ru": "исчезнуть, пропасть, затеряться, испортиться, прийти в негодность, погибнуть, умереть, отлучиться, отсутствовать неопределенное время, оказаться напрасным",
-      "tr": "BULANDIRMAK",
+      "tr": "",
       "trSource": "en->tr koprusu (orta)"
     }
   },
@@ -257182,7 +257182,10 @@
     "subConceptId": "INDICATIVE_PREDICATE",
     "taxonomyFamily": "Gramer & Çekim",
     "rootForm": "махуэ-",
-    "ipa": "/'mɑ:xʷɐ/"
+    "ipa": "/'mɑ:xʷɐ/",
+    "translations": {
+      "tr": "gun"
+    }
   },
   {
     "id": "L-CORPUS2-02604",
@@ -258485,7 +258488,7 @@
     "translations": {
       "en": "",
       "ru": "кӏуэдын:, исчезнуть, пропасть, затеряться, испортиться, прийти в негодность, погибнуть, умереть, отлучиться, отсутствовать неопределенное время, оказаться напрасным",
-      "tr": "BULANDIRMAK",
+      "tr": "",
       "trSource": "en->tr koprusu (orta)",
       "ar": "يضيع، يُفقد/ يفنى، يهلك/ يتلف، يَفسد"
     },
@@ -265983,7 +265986,7 @@
     "translations": {
       "en": "be or get lost against one's will, spoil your relationship with sb, spoil (about food products)",
       "ru": "потеряться вопреки чьему-л. желанию, испортить отношения с кем-л., испортиться (о продуктах)",
-      "tr": "BULANDIRMAK",
+      "tr": "",
       "trSource": "en->tr koprusu (orta)"
     }
   },
@@ -280565,7 +280568,7 @@
     "translations": {
       "en": "",
       "ru": "каузатив к зэӏыхьэн:, испортить, сделать непригодным, сделать хуже, ухудшить",
-      "tr": "BULANDIRMAK",
+      "tr": "",
       "trSource": "en->tr koprusu (orta)"
     }
   },
@@ -293445,7 +293448,10 @@
       "R-GHUSE"
     ],
     "conceptId": "COMPANION",
-    "ipa": "/'ʁʷǝsɐ/"
+    "ipa": "/'ʁʷǝsɐ/",
+    "translations": {
+      "tr": "yol arkadaşı, eş"
+    }
   },
   {
     "id": "L-CORPUS2-03994",
@@ -300713,7 +300719,10 @@
     "taxonomyFamily": "-",
     "rootForm": "гу",
     "ipa": "/'gʷǝfʹɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "öfkeyle titremek"
+    }
   },
   {
     "id": "L-CORPUS2-04266",
@@ -310217,7 +310226,7 @@
     "translations": {
       "en": "worse than sb or sth",
       "ru": "такой, который хуже кого-чего-л.",
-      "tr": "BULANDIRMAK"
+      "tr": ""
     }
   },
   {
@@ -321035,7 +321044,7 @@
     },
     "ipa": "/sɐrˈsɐru:/",
     "translations": {
-      "tr": ""
+      "tr": "BENCILEYIN + BENLI"
     }
   },
   {
@@ -332037,7 +332046,7 @@
     "isLemma": false,
     "ipa": "/to:ɬ'qʹʷǝn/",
     "translations": {
-      "tr": "SALINMAK"
+      "tr": ""
     }
   },
   {
@@ -333740,7 +333749,7 @@
     "translations": {
       "ru": "Зэрыщымыт хъун",
       "en": "change for the worse, become worse, spoil",
-      "tr": "BULANDIRMAK",
+      "tr": "",
       "trSource": "en->tr koprusu (orta)"
     },
     "rootIds": [
@@ -342500,7 +342509,7 @@
     "translations": {
       "en": "kill or shoot sb, upset, cut to the quick, tear apart, destroy (how-L. with words or deeds)",
       "ru": "убить, застрелить, подстрелить кого-л., расстроить, убить (каким-л. словом или поступком)",
-      "tr": "BULANDIRMAK",
+      "tr": "",
       "trSource": "en->tr koprusu (orta)"
     }
   },
@@ -366032,7 +366041,7 @@
     },
     "ipa": "/ħɐqʹʷ'ɕǝqʹʷ/",
     "translations": {
-      "tr": ""
+      "tr": "Kapkacak"
     }
   },
   {
@@ -386854,7 +386863,7 @@
     },
     "ipa": "/qʹʷǝr'mɐn/",
     "translations": {
-      "tr": ""
+      "tr": "KURBAN + MAHALLINDE"
     }
   },
   {
@@ -387743,7 +387752,7 @@
     "isLemma": false,
     "ipa": "/to:ɬ'qʹʷǝn/",
     "translations": {
-      "tr": "SALINMAK"
+      "tr": ""
     }
   },
   {
@@ -398640,7 +398649,10 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "ipa": "/wǝ'tʹʂǝtɐ/"
+    "ipa": "/wǝ'tʹʂǝtɐ/",
+    "translations": {
+      "tr": "utanç"
+    }
   },
   {
     "id": "L-CORPUS2-08025",
@@ -399398,7 +399410,7 @@
     "ipa": "/'ɕǝpʹqʹɐ/",
     "ipaSource": "root-derived",
     "translations": {
-      "tr": ""
+      "tr": "ISLIK + REKONSTRÜKSIYON"
     }
   },
   {
@@ -400018,7 +400030,10 @@
       "rule": "compound"
     },
     "ipaSource": "root-derived",
-    "ipa": "/jatʷʼaʁ/"
+    "ipa": "/jatʷʼaʁ/",
+    "translations": {
+      "tr": "onların + iki + oh"
+    }
   },
   {
     "id": "L-CORPUS2-08081",
@@ -413324,7 +413339,7 @@
     "translations": {
       "en": "",
       "ru": "зэкӏуэкӏын: измениться к худшему, стать хуже, испортиться",
-      "tr": "BULANDIRMAK",
+      "tr": "",
       "trSource": "en->tr koprusu (orta)",
       "ar": "يهتاج، يحنق، يحتد/ يهستر، يجن"
     }
@@ -424848,7 +424863,7 @@
     "translations": {
       "en": "spoil, deteriorate, become unusable, become worse, deteriorate",
       "ru": "испортиться, стать непригодным, стать хуже, ухудшиться",
-      "tr": "BULANDIRMAK",
+      "tr": "",
       "trSource": "en->tr koprusu (orta)"
     }
   },
@@ -432842,7 +432857,10 @@
     },
     "conceptId": "PROTECT",
     "ipa": "/χʷǝ'mɐn/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "BURAYA + oh"
+    }
   },
   {
     "id": "L-CORPUS2-09330",
@@ -482032,7 +482050,7 @@
     "translations": {
       "ru": "махать чем-л",
       "en": "wave sth in front of sb; wave to sb",
-      "tr": "SALINMAK"
+      "tr": ""
     },
     "rootIds": [
       "R-FE"
@@ -482258,7 +482276,7 @@
     "translations": {
       "ru": "шататься, качаться, болтаться / Къебэ",
       "en": "stagger, sway, weave, wobble, hang out, loiter",
-      "tr": "SALINMAK",
+      "tr": "",
       "trSource": "en->tr koprusu (orta)"
     }
   },
@@ -483858,7 +483876,7 @@
     "isLemma": true,
     "translations": {
       "ru": "хуэзэ / фаз / фэз еплъ >",
-      "tr": "RASTLANTI"
+      "tr": ""
     },
     "rootIds": [
       "R-SHE"
@@ -500673,7 +500691,7 @@
     "translations": {
       "en": "avalanche, snowslide",
       "ru": "лавина",
-      "tr": "ÇIĞ"
+      "tr": ""
     },
     "dictionaryEvidence": [
       "sukunov-1998"
@@ -505306,7 +505324,7 @@
     "translations": {
       "en": "chatter, babble, prattle, blather, chitchat, jabber, gab, twaddle",
       "ru": "болтовня",
-      "tr": "SALINMAK",
+      "tr": "",
       "trSource": "en->tr koprusu (orta)"
     },
     "examples": [
@@ -533657,7 +533675,7 @@
     "isLemma": true,
     "translations": {
       "ru": "болтовня",
-      "tr": "SALINMAK"
+      "tr": ""
     },
     "conceptId": "CHATTER",
     "subConceptId": "HEAD_TALK",
@@ -536618,7 +536636,7 @@
     "translations": {
       "en": "stagger, totter, falter, sway, wobble (about sb or sth)",
       "ru": "качаться, шататься (о ком-чём-л.)",
-      "tr": "SALINMAK",
+      "tr": "",
       "trSource": "en->tr koprusu (orta)"
     },
     "ipa": "/ɕɐnɐ'wɐn/"
@@ -553255,7 +553273,7 @@
     "translations": {
       "en": "vase",
       "ru": "ваза",
-      "tr": "vase"
+      "tr": ""
     },
     "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5c/%D0%92025%D0%B2%D0%B0%D0%B7%D1%8D.ogg"
   },
@@ -554457,7 +554475,7 @@
     "translations": {
       "en": "indecisive, hesitant, irresolute, undecided, vacillating, faltering",
       "ru": "нерешительный",
-      "tr": "indecision"
+      "tr": ""
     },
     "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c4/%D0%93%D1%83218%D0%B3%D1%83%D0%B3%D1%8A%D1%8D%D0%BD%D0%B4%D1%8B%D0%B3%D1%8A%D1%8D%D0%BD.ogg"
   },
@@ -563778,7 +563796,7 @@
     "translations": {
       "en": "upset, disrupt, break up or destroy sth",
       "ru": "расстроить, разладить что-л.",
-      "tr": "BULANDIRMAK",
+      "tr": "",
       "trSource": "en->tr koprusu (orta)"
     }
   },
@@ -572525,7 +572543,7 @@
     "translations": {
       "en": "sway, wave, flutter (in the wind)",
       "ru": "колыхаться (на ветру)",
-      "tr": "SALINMAK",
+      "tr": "",
       "trSource": "en->tr koprusu (orta)"
     }
   },
@@ -572651,7 +572669,7 @@
     "translations": {
       "en": "stick or push sth out",
       "ru": "высунуть, выдвинуть что-л. наружу",
-      "tr": "DIŞARI"
+      "tr": ""
     }
   },
   {
@@ -575298,7 +575316,7 @@
     "translations": {
       "en": "throw sb or sth up against sth (for example, wood up against the wall), slam (for example, the door), make sb sb’s partner, appoint sb as sb’s partner.",
       "ru": "бросить кого-что-л. к чему-л. (напр. дрова к стене), прихлопнуть (напр. дверь), прикрепить, дать напарника кому-л.",
-      "tr": "KAPA, MAK",
+      "tr": "",
       "ar": "يدفع بعنف نحو، يرمي بـ .. إلـى"
     },
     "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/8/89/%D0%950319%D0%B5%D0%B4%D0%B7%D1%8B%D0%BB%D3%8F%D1%8D%D0%BD.ogg"
@@ -576501,7 +576519,7 @@
     "translations": {
       "en": "get worse, spoil, deteriorate",
       "ru": "ухудшаться, портиться",
-      "tr": "BULANDIRMAK",
+      "tr": "",
       "trSource": "en->tr koprusu (orta)"
     },
     "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6a/%D0%950374%D0%B5%D0%BA%D3%8F%D1%8D%D0%BA%D3%8F%D1%83%D1%8D%D0%BD.ogg"
@@ -583801,7 +583819,7 @@
     "translations": {
       "en": "spoil, become unusable or dilapidated; deteriorate;",
       "ru": "стать непригодным; испортиться; обветшать",
-      "tr": "BULANDIRMAK",
+      "tr": "",
       "trSource": "en->tr koprusu (orta)"
     }
   },
@@ -605445,7 +605463,7 @@
     "translations": {
       "en": "shake, wobble",
       "ru": "трястись, шататься",
-      "tr": "SALINMAK",
+      "tr": "",
       "trSource": "en->tr koprusu (orta)"
     }
   },
@@ -629527,7 +629545,7 @@
       "trVerified": false,
       "en": "go or turn bad, spoil (about the weather), go bad (for example, about people's relationships, about their well-being), deteriorate (about their mood)",
       "ru": "испортиться (о погоде), испортиться (напр. о взаимоотношениях людей, о самочувствии), испортиться (о настроении)",
-      "tr": "BULANDIRMAK"
+      "tr": ""
     },
     "ipa": "/qʹǝzɐʔǝ'ħɐn/"
   },
@@ -639039,7 +639057,7 @@
     "translations": {
       "en": "start, tremble, flinch, occasionally shudedr (from fright)",
       "ru": "вздрогнуть, изредка вздрагивать (от испуга)",
-      "tr": "SALINMAK",
+      "tr": "",
       "trSource": "en->tr koprusu (orta)"
     }
   },
@@ -641443,7 +641461,7 @@
     "translations": {
       "en": "be timid, indecisive",
       "ru": "проявить нерешительность",
-      "tr": "indecision"
+      "tr": ""
     }
   },
   {
@@ -662310,7 +662328,7 @@
     "translations": {
       "en": "someone who is difficult to raise (about a person or animal)",
       "ru": "такой, которого трудно растить (о человеке, животном), трудновоспитуемый",
-      "tr": "BULANDIRMAK"
+      "tr": ""
     }
   },
   {
@@ -662558,7 +662576,7 @@
     "translations": {
       "en": "chatter, jabber, talk incessantly",
       "ru": "трещать, тараторить, говорить без умолку",
-      "tr": "SALINMAK",
+      "tr": "",
       "trSource": "en->tr koprusu (orta)"
     }
   },
@@ -664180,7 +664198,7 @@
     "translations": {
       "en": "sway, wobble, rock, stagger",
       "ru": "качаться, шататься",
-      "tr": "SALINMAK",
+      "tr": "",
       "trSource": "en->tr koprusu (orta)"
     }
   },
@@ -671170,7 +671188,7 @@
     "translations": {
       "en": "shake, tremble, vibrate - about the end or edge of sth.",
       "ru": "дрожать, трястись - о конце, крае чего-л.",
-      "tr": "SALINMAK",
+      "tr": "",
       "trSource": "en->tr koprusu (orta)"
     }
   },
@@ -677419,7 +677437,7 @@
     "translations": {
       "en": "indecision, hesitation, irresolution, vacillation, wavering, indecisiveness, timidity",
       "ru": "нерешительность",
-      "tr": "indecision"
+      "tr": ""
     }
   },
   {
@@ -682848,7 +682866,7 @@
     "translations": {
       "en": "be choppy or agitated; ripple; be rough; rise in waves, surge, billow, splash (about the water surface), shake (a medicine)",
       "ru": "колебаться, плескаться, волноваться (о водной поверхности), взбалтывать (лекарство)",
-      "tr": "SALINMAK",
+      "tr": "",
       "trSource": "en->tr koprusu (orta)"
     }
   },
@@ -707714,7 +707732,7 @@
     "translations": {
       "en": "wave, flutter",
       "ru": "колыхаться, развеваться",
-      "tr": "SALINMAK",
+      "tr": "",
       "trSource": "en->tr koprusu (orta)"
     }
   },
@@ -713032,7 +713050,7 @@
     "translations": {
       "en": "shake, tremble (usually about the chin or lower lip)",
       "ru": "дрожать (обычно о подбородке, о нижней губе)",
-      "tr": "SALINMAK",
+      "tr": "",
       "trSource": "en->tr koprusu (orta)"
     }
   },
@@ -713061,7 +713079,7 @@
     "translations": {
       "en": "shake, tremble (usually about the chin or lower lip)",
       "ru": "дрожать (обычно о подбородке, о нижней губе)",
-      "tr": "SALINMAK",
+      "tr": "",
       "trSource": "en->tr koprusu (orta)"
     }
   },
@@ -725160,7 +725178,7 @@
     "ipa": "/taːkwaj/",
     "translations": {
       "ru": "апхуэдэ",
-      "tr": "BULANDIRMAK"
+      "tr": ""
     }
   },
   {
@@ -749414,7 +749432,7 @@
     "conceptId": "KAVRAM_ТАКОЙ",
     "translations": {
       "ru": "такой",
-      "tr": "BULANDIRMAK",
+      "tr": "",
       "en": "worse, one that is worse than someone smth."
     },
     "ipa": "/nɐχǝkʼɐ/",
@@ -749639,7 +749657,7 @@
     "conceptId": "KAVRAM_ЗАХЛОПНУТЬ",
     "translations": {
       "ru": "захлопнуть",
-      "tr": "KAPA, MAK",
+      "tr": "",
       "ar": "يوصد، يَصفق ويغلق بشدة/ يحشر",
       "en": "move. ch. tightly closed, shut"
     },
@@ -774310,7 +774328,7 @@
     "translations": {
       "ru": "болтливость",
       "en": "gab",
-      "tr": "SALINMAK"
+      "tr": ""
     },
     "ipa": "/ɕħɐrǝvaʁɐ/",
     "rootIds": [],
@@ -785051,7 +785069,7 @@
     "translations": {
       "ru": "шынэныгъэ",
       "en": "to begin to tremble/shiver.",
-      "tr": "ZANGIRDATMAK"
+      "tr": ""
     },
     "ipa": "/qɐkʼɐzǝzǝn/",
     "rootIds": [],
@@ -793055,7 +793073,7 @@
     "conceptId": "KAVRAM_ЖЕЛАЮЩИЙ",
     "translations": {
       "ru": "желающий",
-      "tr": "HAIN"
+      "tr": ""
     },
     "ipa": "/zǝfʼɐfʼ/",
     "rootIds": [],
@@ -796456,7 +796474,7 @@
     "conceptId": "KAVRAM_НЕУВЕРЕННОСТЬ",
     "translations": {
       "ru": "неуверенность",
-      "tr": "indecision"
+      "tr": ""
     },
     "ipa": "/ɕtɐʔɐɕtablaʁɐ/",
     "rootIds": [],
@@ -797050,7 +797068,7 @@
     "conceptId": "KAVRAM_НЕРЕШИТЕЛЬНОСТЬ",
     "translations": {
       "ru": "нерешительность",
-      "tr": "indecision"
+      "tr": ""
     },
     "ipa": "/gʷpɕʼɐx/",
     "rootIds": [],
@@ -799781,7 +799799,7 @@
     "translations": {
       "ru": "сомкнуться",
       "en": "nepereh. ch. come together",
-      "tr": "RASTLANTI"
+      "tr": ""
     },
     "ipa": "/zɐxwɐkʷʼɐжǝn/",
     "rootIds": [],
@@ -809819,7 +809837,7 @@
     "conceptId": "KAVRAM_СОЙТИСЬ",
     "translations": {
       "ru": "сойтись",
-      "tr": "RASTLANTI",
+      "tr": "",
       "en": "move. ch. weave smth."
     },
     "ipa": "/zɐʔʷɕʼɐn/",
@@ -812923,7 +812941,7 @@
     "conceptId": "KAVRAM_ТАКОЙ",
     "translations": {
       "ru": "такой",
-      "tr": "BULANDIRMAK",
+      "tr": "",
       "en": "so that is difficult to sleep in the same bed"
     },
     "ipa": "/ʁʷɐɬǝkʼеj/",
@@ -839900,7 +839918,7 @@
     "conceptId": "KAVRAM_НАРУЖУ",
     "translations": {
       "ru": "наружу",
-      "tr": "DIŞARI"
+      "tr": ""
     },
     "ipa": "/ɕʼǝbǝm/",
     "rootIds": [],
@@ -855080,7 +855098,7 @@
     "translations": {
       "ru": "ветер",
       "en": "wind, contributing to pollination in flowering time.",
-      "tr": "BULANDIRMAK"
+      "tr": ""
     },
     "ipa": "/жǝggʷw/",
     "rootIds": [],
@@ -862404,7 +862422,7 @@
     "conceptId": "KAVRAM_ТАКОЙ",
     "translations": {
       "ru": "такой",
-      "tr": "BULANDIRMAK",
+      "tr": "",
       "en": "so you can get comfortable to sleep in the same bed"
     },
     "ipa": "/ʁʷɐɬǝkʼafʼɐ/",
@@ -864857,7 +864875,7 @@
     "conceptId": "KAVRAM_НЕРЕШИТЕЛЬНОСТЬ",
     "translations": {
       "ru": "нерешительность",
-      "tr": "indecision"
+      "tr": ""
     },
     "ipa": "/tеmǝgʷʃxwɐnǝʁɐ/",
     "rootIds": [],
@@ -868721,7 +868739,7 @@
     "conceptId": "KAVRAM_ЗАХЛОПНУТЬ",
     "translations": {
       "ru": "захлопнуть",
-      "tr": "KAPA, MAK",
+      "tr": "",
       "en": "move. ch. draw water close to something l."
     },
     "ipa": "/еʁɐwɐɬʼɐn/",
@@ -887494,7 +887512,7 @@
     "conceptId": "KAVRAM_ЗАТРЯСТИСЬ",
     "translations": {
       "ru": "затрястись",
-      "tr": "ZANGIRDATMAK",
+      "tr": "",
       "en": "nepereh. ch. tremble, zatryastis"
     },
     "ipa": "/zɐɕʼɐkʼɐzǝzɐn/",
@@ -919528,7 +919546,7 @@
     "conceptId": "KAVRAM_ЛАВИНА",
     "translations": {
       "ru": "лавина",
-      "tr": "ÇIĞ"
+      "tr": ""
     },
     "ipa": "/wɐsǝq͡χwɐ/",
     "rootIds": [],
@@ -931625,7 +931643,7 @@
     "translations": {
       "ru": "тхьэщӏэпсыр щӏэутхыкӏын",
       "en": "pereh. ch. to throw out smth.",
-      "tr": "DIŞARI"
+      "tr": ""
     },
     "ipa": "/ɕʼɐwtxǝkʼǝn/",
     "rootIds": [],
@@ -999875,7 +999893,7 @@
     "conceptId": "KAVRAM_УКАЗ",
     "translations": {
       "ru": "указ",
-      "tr": ""
+      "tr": "işaret etmek, göstermek"
     },
     "ipa": "/wkaz/",
     "rootIds": [],
