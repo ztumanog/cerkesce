@@ -116927,7 +116927,8 @@
     "isLemma": true,
     "translations": {
       "ru": "пхышын",
-      "en": "to carry, transport or haul sb or sth through sth., press sth through sth."
+      "en": "to carry, transport or haul sb or sth through sth., press sth through sth.",
+      "tr": "Taşımak, götürmek"
     },
     "rootIds": [
       "R-SHY"
@@ -134833,7 +134834,8 @@
     "isLemma": true,
     "translations": {
       "ru": "с ночевкой",
-      "en": "with an overnight stay, sleeping over"
+      "en": "with an overnight stay, sleeping over",
+      "tr": "Pulluk, saban"
     },
     "rootIds": [
       "R-KHES"
@@ -145819,7 +145821,7 @@
     "translations": {
       "en": "annoying, vexatious, vexing, unpleasant",
       "ru": "досадный",
-      "tr": ""
+      "tr": "Tatsız, nahoş"
     },
     "examples": [
       "*Ӏуэху зэгуэпыгъуэ.",
@@ -148975,7 +148977,8 @@
     "isLemma": true,
     "translations": {
       "ru": "пересушенный, сожжённый на солнце / Дыгъэм ижьа",
-      "en": "over-dried, burnt in the sun"
+      "en": "over-dried, burnt in the sun",
+      "tr": "Aşure"
     },
     "conceptId": "PLANT",
     "subConceptId": "",
@@ -170696,7 +170699,7 @@
     "ipa": "/ʁɐbǝ'ɬǝn/",
     "isLemma": true,
     "translations": {
-      "tr": "",
+      "tr": "Deri",
       "en": "hide, conceal or stash sb or sth",
       "ru": "спрятать кого-что-л."
     },
@@ -172620,7 +172623,8 @@
     "isLemma": true,
     "translations": {
       "ru": "злобно, сердито, нахмурившись / Губжьауэ",
-      "en": "with a malicious, angry, crooss look, frowning"
+      "en": "with a malicious, angry, crooss look, frowning",
+      "tr": "Öfkeli; hırçın"
     },
     "subConceptId": "SADNESS",
     "taxonomyFamily": "Üzüntü & Keder",
@@ -185564,7 +185568,8 @@
     "isLemma": true,
     "translations": {
       "ru": "бот. мята перечная <di",
-      "en": "peppermint"
+      "en": "peppermint",
+      "tr": "Nane"
     },
     "rootIds": [
       "R-SER"
@@ -442782,7 +442787,8 @@
     "isLemma": true,
     "translations": {
       "ru": "старая дева / Къыдэнэжа",
-      "en": "old maid, spinster, old maiden"
+      "en": "old maid, spinster, old maiden",
+      "tr": "Yaşlı kız"
     },
     "conceptId": "MIND"
   },
@@ -461691,7 +461697,8 @@
     "isLemma": true,
     "translations": {
       "en": "club, circle, society",
-      "ru": "кружок"
+      "ru": "кружок",
+      "tr": "Çevre; çember; daire; küre"
     },
     "examples": [
       "*Драматическэ кружок."
@@ -471641,7 +471648,8 @@
     "isLemma": true,
     "translations": {
       "ru": "сосчитать, подсчитать, рассчитать что-л",
-      "en": "count, calculate or compute sth for sb, show attention, honour or respect for someone. (for sb's sake or at sb's behest)"
+      "en": "count, calculate or compute sth for sb, show attention, honour or respect for someone. (for sb's sake or at sb's behest)",
+      "tr": "Sayı"
     },
     "rootIds": [
       "R-SHE"
@@ -491725,7 +491733,8 @@
     },
     "translations": {
       "en": "short-stemmed (about plants), short-fibred (about wool)",
-      "ru": "короткостебельный (о растениях), короткий, коротковолокнистый (о шерсти)"
+      "ru": "короткостебельный (о растениях), короткий, коротковолокнистый (о шерсти)",
+      "tr": "Kısa"
     }
   },
   {
@@ -496524,7 +496533,8 @@
     },
     "translations": {
       "en": "brown",
-      "ru": "бурый"
+      "ru": "бурый",
+      "tr": "Kahverengi"
     },
     "examples": [
       "*КӀэстум гъуабжафэ."
@@ -527763,7 +527773,7 @@
     "translations": {
       "en": "empty, without freight or a load, empty-handed",
       "ru": "порожняком, с пустыми руками",
-      "tr": ""
+      "tr": "Boş"
     }
   },
   {
@@ -530901,7 +530911,7 @@
     "translations": {
       "en": "bag, kit-bag, knapsack, haversack",
       "ru": "сума, сумка вещевая",
-      "tr": ""
+      "tr": "Heybe, torba"
     },
     "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e6/%D0%90185%D0%B0%D0%BB%D1%8A%D1%82%D0%BC%D0%B0%D0%BA%D1%8A.ogg"
   },
@@ -532185,7 +532195,7 @@
     "translations": {
       "en": "sth that calms, soothes, helps put the soul at peace (for example, music, a conversation, etc.).",
       "ru": "то, что успокаивает, помогает отвести душу (напр. музыка, беседа и т. п.)",
-      "tr": "",
+      "tr": "Nota",
       "trSource": "en->tr koprusu (orta)"
     },
     "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5b/%D0%91057%D0%B1%D0%B0%D0%BC%D0%BF%D3%8F%D1%8D%D0%B4%D1%8D%D1%85.ogg"
@@ -532221,7 +532231,7 @@
     "translations": {
       "en": "sth that calms, soothes, helps put the soul at peace (for example, music, a conversation, etc.).",
       "ru": "то, что успокаивает, помогает отвести душу (напр. музыка, беседа и т. п.)",
-      "tr": ""
+      "tr": "Nota"
     },
     "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fd/%D0%B1059%D0%B1%D0%B0%D0%BC%D0%BF%D3%8F%D1%8D%D1%82%D0%B5%D0%B3%D1%8A%D1%8D%D1%83.ogg"
   },
@@ -532687,7 +532697,8 @@
     "ipa": "/'bʁʷǝfʹɐ/",
     "translations": {
       "en": "бгъуэ: wide, broad",
-      "ru": "бгъуэ: широкий; просторный"
+      "ru": "бгъуэ: широкий; просторный",
+      "tr": "Geniş, enli, açık"
     },
     "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2d/%D0%B1429%D0%B1%D0%B3%D1%8A%D1%83%D1%84%D3%8F%D1%8D.ogg"
   },
@@ -535594,7 +535605,7 @@
       "trVerified": false,
       "en": "axilla, armpit, underarm, oxter)",
       "ru": "подмышки",
-      "tr": ""
+      "tr": "Koltuk altı"
     },
     "ipa": "/bɮǝgʷ/",
     "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/2/28/%D0%91765%D0%B1%D0%BB%D1%8B%D0%B3%D1%83.ogg"
@@ -543596,7 +543607,8 @@
     "ipa": "/ʁʷɐ*wɐ'gʷǝʂ/",
     "translations": {
       "en": "chestnut, brown (colour of a horse's coat)",
-      "ru": "каурый (о масти)"
+      "ru": "каурый (о масти)",
+      "tr": "Kestane rengi, al"
     }
   },
   {
@@ -549324,7 +549336,7 @@
     "translations": {
       "en": "the place where sth bends; joint",
       "ru": "место сгиба чего-л.",
-      "tr": ""
+      "tr": "Mafsal, eklem yeri"
     }
   },
   {
@@ -551112,7 +551124,8 @@
     "ipa": "/dᶎɐ'tɑ:ɕʹɐ/",
     "translations": {
       "en": "master, specialist in the manufacture of swords, sabers; swordmaker, swordsmith",
-      "ru": "мастер, специалист по изготовлению мечей, сабель"
+      "ru": "мастер, специалист по изготовлению мечей, сабель",
+      "tr": "Orkestra şefi, şef"
     }
   },
   {
@@ -552500,7 +552513,7 @@
       "trVerified": false,
       "en": "edge, border, end, margin, side, periphery, rim, verge",
       "ru": "край, грань чего-л.",
-      "tr": ""
+      "tr": "Kenar, uç"
     },
     "ipa": "/'dzɑ:tʹʂɐ/"
   },
@@ -564504,7 +564517,8 @@
     "ipa": "/je:wǝɕħɐˈsǝn/",
     "translations": {
       "en": "count, rely on sb, trust sb (to do sth)",
-      "ru": "рассчитывать, полагаться на кого-л., доверить кому-л. (что-л. сделать)"
+      "ru": "рассчитывать, полагаться на кого-л., доверить кому-л. (что-л. сделать)",
+      "tr": "Sayı"
     }
   },
   {
@@ -565311,7 +565325,7 @@
       "trVerified": false,
       "en": "mullah, effendi",
       "ru": "мулла, эфенди",
-      "tr": ""
+      "tr": "Molla"
     },
     "ipa": "/je:fɐn'dǝ/"
   },
@@ -584549,7 +584563,7 @@
     "translations": {
       "en": "involving the whole community, group, village, etc.",
       "ru": "всем миром",
-      "tr": ""
+      "tr": "Çitten örülmüş araba gövdesi"
     }
   },
   {
@@ -598672,7 +598686,7 @@
     "translations": {
       "en": "barn, cowshed, loft (usually for hay storage)",
       "ru": "хлев, навес (обычно для хранения сена)",
-      "tr": ""
+      "tr": "Depo, tahıl ambarı"
     }
   },
   {
@@ -607653,7 +607667,7 @@
     "translations": {
       "en": "black, dark (colour), swarthy, hated, despised, loathed",
       "ru": "чёрный (о цвете), смуглый, ненавистный",
-      "tr": ""
+      "tr": "Yağız at"
     }
   },
   {
@@ -616727,7 +616741,8 @@
     "ipa": "/qʹǝzɐɕʹɐ'ɕʹɐn/",
     "translations": {
       "en": "harness, hitch up sth (for example, an ox)",
-      "ru": "запрячь, впрячь кого-л. (напр. вола)"
+      "ru": "запрячь, впрячь кого-л. (напр. вола)",
+      "tr": "Koşum takımı"
     }
   },
   {
@@ -628388,7 +628403,8 @@
     "ipa": "/qʹɐ'pʹɕʹǝn/",
     "translations": {
       "en": "swarm",
-      "ru": "роиться"
+      "ru": "роиться",
+      "tr": "Oğul"
     }
   },
   {
@@ -629477,7 +629493,7 @@
       "trVerified": false,
       "en": "empty, unload sth, rob sb clean, rob sb of sth",
       "ru": "опорожнить, разгрузить что-л., ограбить дочиста, обчистить кого-что-л.",
-      "tr": ""
+      "tr": "Boş"
     },
     "ipa": "/qʹɐwǝnɐ'ɕʹǝn/"
   },
@@ -630728,7 +630744,7 @@
     "translations": {
       "en": "soften up again, once again mollify, become softer, less harsh, strict, severe",
       "ru": "снова смягчиться, размягчиться, снова смягчиться, стать менее суровым, строгим",
-      "tr": "",
+      "tr": "Sert, sıkı, kaba",
       "trSource": "en->tr koprusu (orta)"
     }
   },
@@ -630996,7 +631012,7 @@
     "translations": {
       "en": "a strict, severe, austere or harsh man",
       "ru": "строгий мужчина",
-      "tr": ""
+      "tr": "Sert, sıkı, kaba"
     }
   },
   {
@@ -631730,7 +631746,8 @@
     "ipa": "/ɮɐnˈdǝɕɐ/",
     "translations": {
       "en": "Lily of the valley, May bells",
-      "ru": "ландыш майский"
+      "ru": "ландыш майский",
+      "tr": "İnci çiçeği"
     }
   },
   {
@@ -635208,7 +635225,7 @@
     "translations": {
       "en": "footwear, shoes",
       "ru": "обувь",
-      "tr": ""
+      "tr": "Ayakkabılar"
     }
   },
   {
@@ -643507,7 +643524,8 @@
     "ipa": "/nɐbɐnɐˈwǝʂɐw/",
     "translations": {
       "en": "sleepy, in one's sleep; in a state of drowsiness",
-      "ru": "спросонья, спросонок; в состоянии дремоты"
+      "ru": "спросонья, спросонок; в состоянии дремоты",
+      "tr": "Uykulu"
     }
   },
   {
@@ -643982,7 +644000,8 @@
     "ipa": "/nɐtʹʂǝˈsǝn/",
     "translations": {
       "en": "to throw, toss or cast sth swh, up to sth, to some limit.",
-      "ru": "выплеснуть что-л. до какого-л. места, до какого-л. предела"
+      "ru": "выплеснуть что-л. до какого-л. места, до какого-л. предела",
+      "tr": "Atmak, fırlatmak"
     }
   },
   {
@@ -651160,7 +651179,7 @@
     "translations": {
       "en": "shed, barn, storeroom, the box where you pour flour as it comes out from under the millstone.",
       "ru": "закром, амбар, ящик, куда сыплется мука из-под жернова мельницы",
-      "tr": ""
+      "tr": "Sundurma, hangar"
     }
   },
   {
@@ -654918,7 +654937,7 @@
     "translations": {
       "en": "piece, segment or section of sth.",
       "ru": "кусок; отрезок чего-л.",
-      "tr": ""
+      "tr": "Parça, pay"
     }
   },
   {
@@ -658981,7 +659000,8 @@
     "ipa": "/su:mɐʂɐˈʑe:j/",
     "translations": {
       "en": "irritation, itch, itching",
-      "ru": "раздражение, зуд"
+      "ru": "раздражение, зуд",
+      "tr": "Uyuz"
     }
   },
   {
@@ -659869,7 +659889,7 @@
     "translations": {
       "en": "bolt, latch (door)",
       "ru": "засов, щеколда",
-      "tr": ""
+      "tr": "Sürgü, tirkaz, mandal"
     }
   },
   {
@@ -669816,7 +669836,10 @@
     },
     "isLemma": false,
     "ipaSource": "form-derived",
-    "ipa": "/waʔ/"
+    "ipa": "/waʔ/",
+    "translations": {
+      "tr": "Ağacın alt kısmı"
+    }
   },
   {
     "id": "L-KBD-04502",
@@ -702621,7 +702644,7 @@
     "translations": {
       "en": "in great demand, popular, hot",
       "ru": "нарасхват",
-      "tr": ""
+      "tr": "Sıcak"
     }
   },
   {
@@ -702833,7 +702856,8 @@
     "ipa": "/ˈbɑ:pχɐ/",
     "translations": {
       "en": "mugwort, wormwood, Artemisia (plant)",
-      "ru": "полынь (Artemisia)"
+      "ru": "полынь (Artemisia)",
+      "tr": "Pelin"
     },
     "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/1/16/%D0%91079%D0%B1%D0%B0%D0%BF%D1%85%D1%8A%D1%8D.ogg"
   },
@@ -703483,7 +703507,8 @@
     "ipa": "/qʹǝ'xɑ:dz/",
     "translations": {
       "en": "къыхадз (бжыгъэ): subtrahend, the number subtracted",
-      "ru": "къыхадз (бжыгъэ): вычитаемое [число]"
+      "ru": "къыхадз (бжыгъэ): вычитаемое [число]",
+      "tr": "Çıkan"
     }
   },
   {
@@ -730053,7 +730078,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ЗЛОЙ",
     "translations": {
-      "ru": "злой"
+      "ru": "злой",
+      "tr": "Öfkeli; hırçın"
     },
     "ipa": "/gǝnbʑǝn/",
     "rootIds": [],
@@ -732008,7 +732034,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_УЙТИ ОТКУДА-Л",
     "translations": {
-      "ru": "уйти откуда-л"
+      "ru": "уйти откуда-л",
+      "tr": "Kar"
     },
     "ipa": "/tеkʼǝжǝn/",
     "rootIds": [],
@@ -732879,7 +732906,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ЗЛО",
     "translations": {
-      "ru": "зло"
+      "ru": "зло",
+      "tr": "Kötü, fena"
     },
     "ipa": "/еrеj/",
     "rootIds": [],
@@ -733577,7 +733605,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_БЕСПОКОИТЬСЯ",
     "translations": {
-      "ru": "беспокоиться"
+      "ru": "беспокоиться",
+      "tr": "Fırtına"
     },
     "ipa": "/zǝfǝɕʼǝжǝn/",
     "rootIds": [],
@@ -734319,7 +734348,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ОСЛАБЕТЬ",
     "translations": {
-      "ru": "ослабеть"
+      "ru": "ослабеть",
+      "tr": "Ağacın alt kısmı"
     },
     "ipa": "/qɐtʼɐsχɐn/",
     "rootIds": [],
@@ -734352,7 +734382,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_АЛЬПИНИСТХЭМ",
     "translations": {
-      "ru": "альпинистхэм"
+      "ru": "альпинистхэм",
+      "tr": "Kemer"
     },
     "ipa": "/zǝzɐpǝɕʼɐn/",
     "rootIds": [],
@@ -734520,7 +734551,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ПАСМУРНЫЙ",
     "translations": {
-      "ru": "пасмурный"
+      "ru": "пасмурный",
+      "tr": "Kır"
     },
     "ipa": "/wɐbɐwfɐ/",
     "rootIds": [],
@@ -734547,7 +734579,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_РАЗДАВАТЬСЯ",
     "translations": {
-      "ru": "раздаваться"
+      "ru": "раздаваться",
+      "tr": "Ağacın alt kısmı"
     },
     "ipa": "/xɐʔʷkʼǝn/",
     "rootIds": [],
@@ -734683,7 +734716,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_НЕНАСТНЫЙ",
     "translations": {
-      "ru": "ненастный"
+      "ru": "ненастный",
+      "tr": "Soğuk"
     },
     "ipa": "/wеjpsеj/",
     "rootIds": [],
@@ -735084,7 +735118,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ОБРАБАТЫВАТЬ",
     "translations": {
-      "ru": "обрабатывать"
+      "ru": "обрабатывать",
+      "tr": "Ağacın alt kısmı"
     },
     "ipa": "/tеlɐʑǝħǝn/",
     "rootIds": [],
@@ -735114,7 +735149,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_КОЖАНЫЙ МЕШОК",
     "translations": {
-      "ru": "кожаный мешок"
+      "ru": "кожаный мешок",
+      "tr": "Tane"
     },
     "ipa": "/fɐnжеj/",
     "rootIds": [],
@@ -736383,7 +736419,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ЛЪАЩХЬЭВЭ",
     "translations": {
-      "ru": "лъащхьэвэ"
+      "ru": "лъащхьэвэ",
+      "tr": "Ayağın üst kısmı"
     },
     "ipa": "/ɬɐɕħɐvɐ/",
     "rootIds": [],
@@ -736707,7 +736744,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ХЬЭЩ",
     "translations": {
-      "ru": "хьэщ"
+      "ru": "хьэщ",
+      "tr": "Köpek kulübesi"
     },
     "ipa": "/ħɐwnɐ/",
     "rootIds": [],
@@ -737748,7 +737786,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_КЛОК",
     "translations": {
-      "ru": "клок"
+      "ru": "клок",
+      "tr": "Parça, pay"
     },
     "ipa": "/tʃɐtχaxwɐ/",
     "rootIds": [],
@@ -738426,7 +738465,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ГУЗЭРЫХЪЭМ ИСЫН",
     "translations": {
-      "ru": "гузэрыхъэм исын"
+      "ru": "гузэрыхъэм исын",
+      "tr": "Yük/at arabası"
     },
     "ipa": "/gʷzɐrǝχɐ/",
     "rootIds": [],
@@ -738633,7 +738673,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ПЛОХАЯ",
     "translations": {
-      "ru": "плохая"
+      "ru": "плохая",
+      "tr": "Kötü, fena"
     },
     "ipa": "/ɕǝʁǝnǝkʼɐ/",
     "rootIds": [],
@@ -738809,7 +738850,7 @@
     "conceptId": "KAVRAM_ПЕРЕВАРИТЬ",
     "translations": {
       "ru": "переварить",
-      "tr": ""
+      "tr": "Yağ"
     },
     "ipa": "/ʁɐtkʷʼn/",
     "rootIds": [],
@@ -739401,7 +739442,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_СПУСТИТЬ ЧТО-Л",
     "translations": {
-      "ru": "спустить что-л"
+      "ru": "спустить что-л",
+      "tr": "Ağacın alt kısmı"
     },
     "ipa": "/еʁɐɬɐχʃɐxǝn/",
     "rootIds": [],
@@ -739689,7 +739731,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ПРИТИХНУТЬ",
     "translations": {
-      "ru": "притихнуть"
+      "ru": "притихнуть",
+      "tr": "Deri"
     },
     "ipa": "/zǝwdǝʁʷn/",
     "rootIds": [],
@@ -739961,7 +740004,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ПОДВЕЗТИ КОГО-ЧТО-Л",
     "translations": {
-      "ru": "подвезти кого-что-л"
+      "ru": "подвезти кого-что-л",
+      "tr": "Kurşun"
     },
     "ipa": "/qǝʔʷʃɐn/",
     "rootIds": [],
@@ -740368,7 +740412,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ВПРЯЧЬ КОГО-Л",
     "translations": {
-      "ru": "впрячь кого-л"
+      "ru": "впрячь кого-л",
+      "tr": "Koşum takımı"
     },
     "ipa": "/zɐɕʼɐɕʼɐn/",
     "rootIds": [],
@@ -740429,7 +740474,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ТАЙКОМ ВЫЙТИ",
     "translations": {
-      "ru": "тайком выйти"
+      "ru": "тайком выйти",
+      "tr": "Ağacın alt kısmı"
     },
     "ipa": "/ikʷʼɐsǝkʼǝn/",
     "rootIds": [],
@@ -740763,7 +740809,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_МЭТОРЫР КЪЫЗЭЩӀЭГЪЭН",
     "translations": {
-      "ru": "мэторыр къызэщӏэгъэнэн"
+      "ru": "мэторыр къызэщӏэгъэнэн",
+      "tr": "Ağacın alt kısmı"
     },
     "ipa": "/qǝzɐɕʼɐʁɐnɐn/",
     "rootIds": [],
@@ -740845,7 +740892,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ФЭР КЪЫТЕЛЪЭФЫН",
     "translations": {
-      "ru": "фэр къытелъэфын"
+      "ru": "фэр къытелъэфын",
+      "tr": "Post, deri"
     },
     "ipa": "/qǝtеɬɐfǝn/",
     "rootIds": [],
@@ -742219,7 +742267,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ХОРОШАЯ",
     "translations": {
-      "ru": "хорошая"
+      "ru": "хорошая",
+      "tr": "İyi; güzel"
     },
     "ipa": "/ɕʼǝfʼ/",
     "rootIds": [],
@@ -743449,7 +743498,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ӀЭБЖЬЫБ",
     "translations": {
-      "ru": "ӏэбжьыб"
+      "ru": "ӏэбжьыб",
+      "tr": "Avuç"
     },
     "ipa": "/ʔɐbʑǝgʷ/",
     "rootIds": [],
@@ -743725,7 +743775,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ХРУПКИЙ",
     "translations": {
-      "ru": "хрупкий"
+      "ru": "хрупкий",
+      "tr": "İnce"
     },
     "ipa": "/tsʼamǝɕqij/",
     "rootIds": [],
@@ -743792,7 +743843,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ӀЭРПХЪУЭРЫГЪЭ",
     "translations": {
-      "ru": "ӏэрпхъуэрыгъэ"
+      "ru": "ӏэрпхъуэрыгъэ",
+      "tr": "Saz, sazlık"
     },
     "ipa": "/ʔɐrpχʷɐraʁ/",
     "rootIds": [],
@@ -745040,7 +745092,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ОКРАИНА",
     "translations": {
-      "ru": "окраина"
+      "ru": "окраина",
+      "tr": "Saçak, püskül"
     },
     "ipa": "/pxaɕʼɐ/",
     "rootIds": [],
@@ -745055,7 +745108,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ЗЛОЙ",
     "translations": {
-      "ru": "злой"
+      "ru": "злой",
+      "tr": "Kötü, fena"
     },
     "ipa": "/kʼablaɕħɐ/",
     "rootIds": [],
@@ -745550,7 +745604,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ПОДОЛ",
     "translations": {
-      "ru": "подол"
+      "ru": "подол",
+      "tr": "Etek"
     },
     "ipa": "/qʷaɕʼɐ/",
     "rootIds": [],
@@ -747248,7 +747303,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_СВАЛЯТЬСЯ",
     "translations": {
-      "ru": "сваляться"
+      "ru": "сваляться",
+      "tr": "Yün"
     },
     "ipa": "/zɐxɐptsʼǝħǝn/",
     "rootIds": [],
@@ -747930,7 +747986,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ИӀЭ",
     "translations": {
-      "ru": "иӏэ"
+      "ru": "иӏэ",
+      "tr": "Kuyu"
     },
     "ipa": "/iʔɐt/",
     "rootIds": [],
@@ -748287,7 +748344,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ВЫСКОЛЬЗНУТЬ",
     "translations": {
-      "ru": "выскользнуть"
+      "ru": "выскользнуть",
+      "tr": "Ağacın alt kısmı"
     },
     "ipa": "/kʷʼɐtsʼǝжǝn/",
     "rootIds": [],
@@ -748718,7 +748776,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_КЪЭНЖАЛ КЪРЕУКӀЭКӀЫН",
     "translations": {
-      "ru": "къэнжал къреукӏэкӏын"
+      "ru": "къэнжал къреукӏэкӏын",
+      "tr": "Kapak, cilt"
     },
     "ipa": "/qеwkʼɐkʼǝn/",
     "rootIds": [],
@@ -749253,7 +749312,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ТХЫЛЪЫМПӀЭМ КЪЫПЫГЪЭ",
     "translations": {
-      "ru": "тхылъымпӏэм къыпыгъэпщӏэн"
+      "ru": "тхылъымпӏэм къыпыгъэпщӏэн",
+      "tr": "Dardan yapılan çerkes yemeği"
     },
     "ipa": "/qǝpǝʁɐpɕʼɐn/",
     "rootIds": [],
@@ -749283,7 +749343,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ТХЫЛЪЫМПӀЭ КЪЫПЫШХЭН",
     "translations": {
-      "ru": "тхылъымпӏэ къыпышхэн"
+      "ru": "тхылъымпӏэ къыпышхэн",
+      "tr": "Tutkal"
     },
     "ipa": "/qǝpǝʃxɐn/",
     "rootIds": [],
@@ -750699,7 +750760,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ШИВОРОТ",
     "translations": {
-      "ru": "шиворот"
+      "ru": "шиворот",
+      "tr": "Yaka"
     },
     "ipa": "/pɕɐpq/",
     "rootIds": [],
@@ -750730,7 +750792,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_УХМЫЛЯТЬСЯ",
     "translations": {
-      "ru": "ухмыляться"
+      "ru": "ухмыляться",
+      "tr": "Dişler, diş takımı"
     },
     "ipa": "/pǝdǝħɐʃxǝkʼǝn/",
     "rootIds": [],
@@ -752017,7 +752080,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ТВЕРДАЯ",
     "translations": {
-      "ru": "твердая"
+      "ru": "твердая",
+      "tr": "Katı, sağlam, sert"
     },
     "ipa": "/ɕʼǝqʷpɕħɐ/",
     "rootIds": [],
@@ -752269,7 +752333,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ПРОНЫРА",
     "translations": {
-      "ru": "проныра"
+      "ru": "проныра",
+      "tr": "Gelincik"
     },
     "ipa": "/ɕħɐtχpɐtχ/",
     "rootIds": [],
@@ -753213,7 +753278,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_СВЕТОПРЕСТАВЛЕНИЕ",
     "translations": {
-      "ru": "светопреставление"
+      "ru": "светопреставление",
+      "tr": "Sağanak, fırtına"
     },
     "ipa": "/dwnеjqʷtɐж/",
     "rootIds": [],
@@ -754497,7 +754563,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_АХИ",
     "translations": {
-      "ru": "ахи"
+      "ru": "ахи",
+      "tr": "Ağacın alt kısmı"
     },
     "ipa": "/ʔǝħsǝħ/",
     "rootIds": [],
@@ -757015,7 +757082,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ПЕЧАЛЬНЫЙ",
     "translations": {
-      "ru": "печальный"
+      "ru": "печальный",
+      "tr": "Kederli, mahzun"
     },
     "ipa": "/nɐmǝzʔʷmǝz/",
     "rootIds": [],
@@ -757509,7 +757577,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ТОПИТЬ",
     "translations": {
-      "ru": "топить"
+      "ru": "топить",
+      "tr": "Kaymak, krema, süt başı"
     },
     "ipa": "/ɕʼɐʁɐpɕtħɐn/",
     "rootIds": [],
@@ -758307,7 +758376,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ШУР МЭДЫД",
     "translations": {
-      "ru": "шур мэдыд"
+      "ru": "шур мэдыд",
+      "tr": "Saz, sazlık"
     },
     "ipa": "/dǝdǝn/",
     "rootIds": [],
@@ -759555,7 +759625,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ЖЫХАФЭГУ",
     "translations": {
-      "ru": "жыхафэгу"
+      "ru": "жыхафэгу",
+      "tr": "Döşeme; taban, zemin"
     },
     "ipa": "/ʃxafɐgʷ/",
     "rootIds": [],
@@ -759935,7 +760006,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_МОР",
     "translations": {
-      "ru": "мор"
+      "ru": "мор",
+      "tr": "Filo"
     },
     "ipa": "/ɐskadrɐ/",
     "rootIds": [],
@@ -760053,7 +760125,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_СУРОВЫЙ ВИД",
     "translations": {
-      "ru": "суровый вид"
+      "ru": "суровый вид",
+      "tr": "Katı, sağlam, sert"
     },
     "ipa": "/zǝʁɐяbgɐn/",
     "rootIds": [],
@@ -760638,7 +760711,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_УНЭМ ЗЫЩӀЭДЗЭН",
     "translations": {
-      "ru": "унэм зыщӏэдзэн"
+      "ru": "унэм зыщӏэдзэн",
+      "tr": "Saz, sazlık"
     },
     "ipa": "/zǝɕʼɐdzɐn/",
     "rootIds": [],
@@ -761352,7 +761426,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_БЖЬАМИЙХЭР ЗЭРЫНАЩ",
     "translations": {
-      "ru": "бжьамийхэр зэрынащ"
+      "ru": "бжьамийхэр зэрынащ",
+      "tr": "Ağacın alt kısmı"
     },
     "ipa": "/zɐrǝnɐn/",
     "rootIds": [],
@@ -761368,7 +761443,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ВЫВИХ",
     "translations": {
-      "ru": "вывих"
+      "ru": "вывих",
+      "tr": "Bükmek, bükmek"
     },
     "ipa": "/zɐrǝwa/",
     "rootIds": [],
@@ -761412,7 +761488,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ПХЪЭБГЪУР ЗЭТЕГЪЭКӀЫ",
     "translations": {
-      "ru": "пхъэбгъур зэтегъэкӏын"
+      "ru": "пхъэбгъур зэтегъэкӏын",
+      "tr": "Ağacın alt kısmı"
     },
     "ipa": "/zɐtеʁɐkʼǝn/",
     "rootIds": [],
@@ -761609,7 +761686,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_РАСКИСНУТЬ",
     "translations": {
-      "ru": "раскиснуть"
+      "ru": "раскиснуть",
+      "tr": "Ağacın alt kısmı"
     },
     "ipa": "/qǝzɐxɐtʼɐtʼɐn/",
     "rootIds": [],
@@ -761702,7 +761780,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ХЬЭКУР ЗЭЩӀЭЕН",
     "translations": {
-      "ru": "хьэкур зэщӏэен"
+      "ru": "хьэкур зэщӏэен",
+      "tr": "Kil"
     },
     "ipa": "/zɐɕʼɐеn/",
     "rootIds": [],
@@ -762082,7 +762161,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_МЭКӀУЭР",
     "translations": {
-      "ru": "мэкӏуэр"
+      "ru": "мэкӏуэр",
+      "tr": "Saz, sazlık"
     },
     "ipa": "/kʷʼɐrǝn/",
     "rootIds": [],
@@ -762305,7 +762385,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ОСЛАБЕВАТЬ",
     "translations": {
-      "ru": "ослабевать"
+      "ru": "ослабевать",
+      "tr": "Ağacın alt kısmı"
     },
     "ipa": "/kʼɐɕχɐn/",
     "rootIds": [],
@@ -762931,7 +763012,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_СКЛОНИТЬСЯ",
     "translations": {
-      "ru": "склониться"
+      "ru": "склониться",
+      "tr": "Ağacın alt kısmı"
     },
     "ipa": "/qеblɐblɐxǝn/",
     "rootIds": [],
@@ -763102,7 +763184,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ШЫУАНЫР КЪИЛЪЭЩӀЫКӀЫ",
     "translations": {
-      "ru": "шыуаныр къилъэщӏыкӏын"
+      "ru": "шыуаныр къилъэщӏыкӏын",
+      "tr": "Temiz"
     },
     "ipa": "/qiɬɐɕʼǝkʼǝn/",
     "rootIds": [],
@@ -763956,7 +764039,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_СОРВАТЬ ЧТО-Л",
     "translations": {
-      "ru": "сорвать что-л"
+      "ru": "сорвать что-л",
+      "tr": "Kazma"
     },
     "ipa": "/qǝɕʼɐtʃǝn/",
     "rootIds": [],
@@ -764425,7 +764509,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ШЭХУР КЪЭТӀЭТӀАЩ",
     "translations": {
-      "ru": "шэхур къэтӏэтӏащ"
+      "ru": "шэхур къэтӏэтӏащ",
+      "tr": "Kalın"
     },
     "ipa": "/qɐtʼɐtʼɐn/",
     "rootIds": [],
@@ -765479,7 +765564,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ШАТКИЙ",
     "translations": {
-      "ru": "шаткий"
+      "ru": "шаткий",
+      "tr": "Ağacın alt kısmı"
     },
     "ipa": "/nеbɐqеbɐ/",
     "rootIds": [],
@@ -766145,7 +766231,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ОХРАННИК ВОДОЁМОВ",
     "translations": {
-      "ru": "охранник водоёмов"
+      "ru": "охранник водоёмов",
+      "tr": "Çitten örülmüş araba gövdesi"
     },
     "ipa": "/psǝχʷmɐ/",
     "rootIds": [],
@@ -767136,7 +767223,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_УДЗЫР ТЕХЪУ-КӀЫН",
     "translations": {
-      "ru": "удзыр техъу-кӏын"
+      "ru": "удзыр техъу-кӏын",
+      "tr": "Ağacın alt kısmı"
     },
     "ipa": "/tеχʷkʼǝn/",
     "rootIds": [],
@@ -768365,7 +768453,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ШЫНДЫРХЪУО",
     "translations": {
-      "ru": "шындырхъуо"
+      "ru": "шындырхъуо",
+      "tr": "Kertenkele"
     },
     "ipa": "/ħɐmpɬǝʑ/",
     "rootIds": [],
@@ -772099,7 +772188,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ЧЕРПАТЬ",
     "translations": {
-      "ru": "черпать"
+      "ru": "черпать",
+      "tr": "Kepçe"
     },
     "ipa": "/qikʼɐɕʼǝkʼǝn/",
     "rootIds": [],
@@ -772808,7 +772898,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_НАХОДЯЩЕЕСЯ ГДЕ-Л",
     "translations": {
-      "ru": "находящееся где-л"
+      "ru": "находящееся где-л",
+      "tr": "Temiz"
     },
     "ipa": "/dɐʁɐqɐbzǝkʼǝn/",
     "rootIds": [],
@@ -773550,7 +773641,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_НЕБОЛЬШОЙ",
     "translations": {
-      "ru": "небольшой"
+      "ru": "небольшой",
+      "tr": "Küçük; ufak, dar"
     },
     "ipa": "/ʔɐmaɕʼɐɬɐmaɕʼɐ/",
     "rootIds": [],
@@ -774822,7 +774914,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ЖАТВА",
     "translations": {
-      "ru": "жатва"
+      "ru": "жатва",
+      "tr": "Kursak"
     },
     "ipa": "/mɐʃǝx/",
     "rootIds": [],
@@ -775139,7 +775232,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_НЕДОМОГАЮЩИЙ",
     "translations": {
-      "ru": "недомогающий"
+      "ru": "недомогающий",
+      "tr": "Hasta"
     },
     "ipa": "/ʁеjʃеj/",
     "rootIds": [],
@@ -775365,7 +775459,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ТЯЖЁЛОЕ",
     "translations": {
-      "ru": "тяжёлое"
+      "ru": "тяжёлое",
+      "tr": "Ağır"
     },
     "ipa": "/dʒawɐ/",
     "rootIds": [],
@@ -775952,7 +776047,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_РЫТВИНА",
     "translations": {
-      "ru": "рытвина"
+      "ru": "рытвина",
+      "tr": "Su kabarcığı"
     },
     "ipa": "/dɐwɐʁʷɐ/",
     "rootIds": [],
@@ -776177,7 +776273,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_МЕС",
     "translations": {
-      "ru": "мес"
+      "ru": "мес",
+      "tr": "Ağacın alt kısmı"
     },
     "ipa": "/zɐfʼɐɕɐxɐn/",
     "rootIds": [],
@@ -776546,7 +776643,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_СОХНУТЬ",
     "translations": {
-      "ru": "сохнуть"
+      "ru": "сохнуть",
+      "tr": "Ağacın alt kısmı"
     },
     "ipa": "/pǝʁʷɐlǝħǝn/",
     "rootIds": [],
@@ -777133,7 +777231,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ПОПОЛНЕТЬ",
     "translations": {
-      "ru": "пополнеть"
+      "ru": "пополнеть",
+      "tr": "Ağacın alt kısmı"
     },
     "ipa": "/zǝzɐɕʼɐwkʼɐжǝn/",
     "rootIds": [],
@@ -777786,7 +777885,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_СТЫК",
     "translations": {
-      "ru": "стык"
+      "ru": "стык",
+      "tr": "Mafsal, eklem yeri"
     },
     "ipa": "/zɐpǝɬħɐpʼɐ/",
     "rootIds": [],
@@ -778060,7 +778160,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ПЕРЕПУТАТЬСЯ",
     "translations": {
-      "ru": "перепутаться"
+      "ru": "перепутаться",
+      "tr": "Saç"
     },
     "ipa": "/zɐxɐɬɐrǝχǝħǝn/",
     "rootIds": [],
@@ -779759,7 +779860,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ПОКАТЫЙ",
     "translations": {
-      "ru": "покатый"
+      "ru": "покатый",
+      "tr": "Alçak, basık"
     },
     "ipa": "/natʼagʷɐ/",
     "rootIds": [],
@@ -780646,7 +780748,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ГЛЯДЕТЬ",
     "translations": {
-      "ru": "глядеть"
+      "ru": "глядеть",
+      "tr": "Çehre"
     },
     "ipa": "/xwеpɬɐkʼǝn/",
     "rootIds": [],
@@ -782340,7 +782443,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ЩЭКӀ КЪЕДЭКӀЫН",
     "translations": {
-      "ru": "щэкӏ къедэкӏын"
+      "ru": "щэкӏ къедэкӏын",
+      "tr": "Biye, sırma, şerit"
     },
     "ipa": "/еdzǝħɐkʼǝn/",
     "rootIds": [],
@@ -783219,7 +783323,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_НАХОДЯСЬ ГДЕ-Л",
     "translations": {
-      "ru": "находясь где-л"
+      "ru": "находясь где-л",
+      "tr": "Kuru ot"
     },
     "ipa": "/iʁʷħǝn/",
     "rootIds": [],
@@ -783339,7 +783444,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ОКОЧЕНЕТЬ",
     "translations": {
-      "ru": "окоченеть"
+      "ru": "окоченеть",
+      "tr": "Soğuk alma"
     },
     "ipa": "/zɐɕʼɐdǝqɐn/",
     "rootIds": [],
@@ -784343,7 +784449,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ВРАЩАТЬ",
     "translations": {
-      "ru": "вращать"
+      "ru": "вращать",
+      "tr": "Bükmek, bükmek"
     },
     "ipa": "/iʔʷɐntʼǝħǝn/",
     "rootIds": [],
@@ -784792,7 +784899,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ГОРСТЬ ЧЕГО-Л",
     "translations": {
-      "ru": "горсть чего-л"
+      "ru": "горсть чего-л",
+      "tr": "Avuç"
     },
     "ipa": "/ʔɐmǝɕʼɐɕǝz/",
     "rootIds": [],
@@ -785253,7 +785361,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_НИЗКОРОСЛЫЙ",
     "translations": {
-      "ru": "низкорослый"
+      "ru": "низкорослый",
+      "tr": "Kısa"
     },
     "ipa": "/ʔɐmpʼɐkʼɐɕʼ/",
     "rootIds": [],
@@ -785708,7 +785817,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_СУЕТЛИВОСТЬ",
     "translations": {
-      "ru": "суетливость"
+      "ru": "суетливость",
+      "tr": "Saz, sazlık"
     },
     "ipa": "/ʔɐrpχʷɐrǝʁɐ/",
     "rootIds": [],
@@ -786126,7 +786236,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_МАНЖЕТА",
     "translations": {
-      "ru": "манжета"
+      "ru": "манжета",
+      "tr": "Kol"
     },
     "ipa": "/ʔɐɕħɐpǝɬ/",
     "rootIds": [],
@@ -787508,7 +787619,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ХЛЯСТИК",
     "translations": {
-      "ru": "хлястик"
+      "ru": "хлястик",
+      "tr": "Aba kayışı"
     },
     "ipa": "/bgǝtеdɐ/",
     "rootIds": [],
@@ -787693,7 +787805,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ЖИРНОЕ МОЛОКО",
     "translations": {
-      "ru": "жирное молоко"
+      "ru": "жирное молоко",
+      "tr": "Kalın"
     },
     "ipa": "/ʃatalɐ/",
     "rootIds": [],
@@ -789082,7 +789195,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_БЕЗГОРЕСТНЫЙ",
     "translations": {
-      "ru": "безгорестный"
+      "ru": "безгорестный",
+      "tr": "Mesut, mutlu, şanslı"
     },
     "ipa": "/gʷawɐɕħɐwɐnʃɐ/",
     "rootIds": [],
@@ -789916,7 +790030,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ПРИХВАРЫВАТЬ",
     "translations": {
-      "ru": "прихварывать"
+      "ru": "прихварывать",
+      "tr": "Hasta"
     },
     "ipa": "/ʁеjʃеin/",
     "rootIds": [],
@@ -790077,7 +790192,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ЗЛОЙ",
     "translations": {
-      "ru": "злой"
+      "ru": "злой",
+      "tr": "Öfkeli; hırçın"
     },
     "ipa": "/dǝdʒǝʑ/",
     "rootIds": [],
@@ -790629,7 +790745,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_УДОЙНЫЙ",
     "translations": {
-      "ru": "удойный"
+      "ru": "удойный",
+      "tr": "Süt"
     },
     "ipa": "/ʃafʼɐ/",
     "rootIds": [],
@@ -792400,7 +792517,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ЗАГНУТЬ",
     "translations": {
-      "ru": "загнуть"
+      "ru": "загнуть",
+      "tr": "Pantolon"
     },
     "ipa": "/dɐwblɐrɐkʼеin/",
     "rootIds": [],
@@ -792617,7 +792735,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_УДАРИТЬ КОГО-ЧТО-Л",
     "translations": {
-      "ru": "ударить кого-что-л"
+      "ru": "ударить кого-что-л",
+      "tr": "Kamçı"
     },
     "ipa": "/qǝzɐpеxwlɐkʼǝn/",
     "rootIds": [],
@@ -793267,7 +793386,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_КУШАНЬЕ",
     "translations": {
-      "ru": "кушанье"
+      "ru": "кушанье",
+      "tr": "Yemek"
     },
     "ipa": "/еrǝsqǝʁʷɐ/",
     "rootIds": [],
@@ -793396,7 +793516,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_СКИНУТЬ",
     "translations": {
-      "ru": "скинуть"
+      "ru": "скинуть",
+      "tr": "Ağacın alt kısmı"
     },
     "ipa": "/ɕħɐɕǝdzǝn/",
     "rootIds": [],
@@ -793578,7 +793699,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ЗАСПАННОЕ",
     "translations": {
-      "ru": "заспанное"
+      "ru": "заспанное",
+      "tr": "Uykulu"
     },
     "ipa": "/жеjbaɕχʷɐnɐʔʷ/",
     "rootIds": [],
@@ -794448,7 +794570,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_НАПАСТЬ",
     "translations": {
-      "ru": "напасть"
+      "ru": "напасть",
+      "tr": "Saz, sazlık"
     },
     "ipa": "/zǝpɐɕʼɐdzɐn/",
     "rootIds": [],
@@ -794780,7 +794903,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_КАКИМ-Л",
     "translations": {
-      "ru": "каким-л"
+      "ru": "каким-л",
+      "tr": "Ağacın alt kısmı"
     },
     "ipa": "/pǝχʷħǝn/",
     "rootIds": [],
@@ -795460,7 +795584,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ОЧИСТИТЬСЯ",
     "translations": {
-      "ru": "очиститься"
+      "ru": "очиститься",
+      "tr": "Ağacın alt kısmı"
     },
     "ipa": "/zǝkʼɐrǝɬɐɕʼǝkʼǝn/",
     "rootIds": [],
@@ -795825,7 +795950,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_СОРВАТЬСЯ",
     "translations": {
-      "ru": "сорваться"
+      "ru": "сорваться",
+      "tr": "Saz, sazlık"
     },
     "ipa": "/zǝpχʷɐtɐn/",
     "rootIds": [],
@@ -795962,7 +796088,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ЗАТАИТЬСЯ ГДЕ-Л",
     "translations": {
-      "ru": "затаиться где-л"
+      "ru": "затаиться где-л",
+      "tr": "Deri"
     },
     "ipa": "/zǝtеwdǝʁʷɐn/",
     "rootIds": [],
@@ -795977,7 +796104,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ЗАТАИТЬСЯ ГДЕ-Л",
     "translations": {
-      "ru": "затаиться где-л"
+      "ru": "затаиться где-л",
+      "tr": "Deri"
     },
     "ipa": "/xɐwmɐzɐxɐn/",
     "rootIds": [],
@@ -796391,7 +796519,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_РАСКАЧИВАТЬСЯ",
     "translations": {
-      "ru": "раскачиваться"
+      "ru": "раскачиваться",
+      "tr": "Salıncak"
     },
     "ipa": "/zǝɕʼɐwpskʼɐn/",
     "rootIds": [],
@@ -796418,7 +796547,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ОТСТРАНИТЬСЯ",
     "translations": {
-      "ru": "отстраниться"
+      "ru": "отстраниться",
+      "tr": "Ağacın alt kısmı"
     },
     "ipa": "/zǝɕħɐɕǝxǝn/",
     "rootIds": [],
@@ -797050,7 +797180,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_СВЕРНУТЫМ",
     "translations": {
-      "ru": "свернутым"
+      "ru": "свернутым",
+      "tr": "Ağacın alt kısmı"
     },
     "ipa": "/zɐkʷʼɐtsʼǝlɐlǝn/",
     "rootIds": [],
@@ -797074,7 +797205,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_РАСПАКОВАТЬСЯ",
     "translations": {
-      "ru": "распаковаться"
+      "ru": "распаковаться",
+      "tr": "Açık"
     },
     "ipa": "/qǝzɐkʷʼɐtsʼǝxwn/",
     "rootIds": [],
@@ -797171,7 +797303,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_КУЧЕЙ",
     "translations": {
-      "ru": "кучей"
+      "ru": "кучей",
+      "tr": "Ağacın alt kısmı"
     },
     "ipa": "/zɐkʼɐrǝxwzɐkʼɐrǝɕw/",
     "rootIds": [],
@@ -797370,7 +797503,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_СКРЕПЛЯТЬСЯ",
     "translations": {
-      "ru": "скрепляться"
+      "ru": "скрепляться",
+      "tr": "Ağacın alt kısmı"
     },
     "ipa": "/zɐpqrǝħɐn/",
     "rootIds": [],
@@ -797444,7 +797578,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ПРОЛОМИТЬ",
     "translations": {
-      "ru": "проломить"
+      "ru": "проломить",
+      "tr": "Nokta zımbası, zımba"
     },
     "ipa": "/zɐpxrǝqʷtǝkʼǝn/",
     "rootIds": [],
@@ -797581,7 +797716,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ПРОЛЕТЕТЬ",
     "translations": {
-      "ru": "пролететь"
+      "ru": "пролететь",
+      "tr": "Sinek"
     },
     "ipa": "/zɐpxrǝtsʼɐftǝn/",
     "rootIds": [],
@@ -797697,7 +797833,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_КРАЯ ЧЕГО-Л",
     "translations": {
-      "ru": "края чего-л"
+      "ru": "края чего-л",
+      "tr": "İplik çilesi"
     },
     "ipa": "/zɐpǝtʼɐpʼǝkʼǝn/",
     "rootIds": [],
@@ -797886,7 +798023,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ГУРТОМ",
     "translations": {
-      "ru": "гуртом"
+      "ru": "гуртом",
+      "tr": "Okul"
     },
     "ipa": "/wʁʷеяwɐ/",
     "rootIds": [],
@@ -798131,7 +798269,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ДОБЕЖАТЬ",
     "translations": {
-      "ru": "добежать"
+      "ru": "добежать",
+      "tr": "Güreşmek"
     },
     "ipa": "/zɐrǝnɐxwsǝn/",
     "rootIds": [],
@@ -798283,7 +798422,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ТОПХЭР ЗЭТОГЪУАГЪУЭ",
     "translations": {
-      "ru": "топхэр зэтогъуагъуэ"
+      "ru": "топхэр зэтогъуагъуэ",
+      "tr": "Gök gürültüsü/gürlemesi"
     },
     "ipa": "/zɐtеʁʷɐʁʷɐn/",
     "rootIds": [],
@@ -798371,7 +798511,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ЗАКРЫТЬСЯ",
     "translations": {
-      "ru": "закрыться"
+      "ru": "закрыться",
+      "tr": "Ağacın alt kısmı"
     },
     "ipa": "/zɐtеpkʼɐn/",
     "rootIds": [],
@@ -798386,7 +798527,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_СПРЕССОВАТЬСЯ",
     "translations": {
-      "ru": "спрессоваться"
+      "ru": "спрессоваться",
+      "tr": "Bir kalem sabun"
     },
     "ipa": "/zɐtеtʼǝsħɐn/",
     "rootIds": [],
@@ -799002,7 +799144,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ПОЧИСТИТ",
     "translations": {
-      "ru": "почистит"
+      "ru": "почистит",
+      "tr": "Temiz"
     },
     "ipa": "/zɐɕʼɐɬɐɕʼɐn/",
     "rootIds": [],
@@ -799611,7 +799754,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ВСКОЧИТЬ КУДА-Л",
     "translations": {
-      "ru": "вскочить куда-л"
+      "ru": "вскочить куда-л",
+      "tr": "Şerbetçiotu"
     },
     "ipa": "/ipkʼɐn/",
     "rootIds": [],
@@ -799823,7 +799967,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_КОРЗИНА",
     "translations": {
-      "ru": "корзина"
+      "ru": "корзина",
+      "tr": "Sepet"
     },
     "ipa": "/kʼarzinkʼɐ/",
     "rootIds": [],
@@ -800199,7 +800344,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ОБОРКА",
     "translations": {
-      "ru": "оборка"
+      "ru": "оборка",
+      "tr": "Astar"
     },
     "ipa": "/qеdɐkʼ/",
     "rootIds": [],
@@ -800261,7 +800407,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_НАСТИГНУТЬ КОГО-ЧТО-",
     "translations": {
-      "ru": "настигнуть кого-что-л"
+      "ru": "настигнуть кого-что-л",
+      "tr": "Ağacın alt kısmı"
     },
     "ipa": "/qǝkʼɐɕʼɐzɐrǝħǝn/",
     "rootIds": [],
@@ -800482,7 +800629,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ПОТЕРЯ",
     "translations": {
-      "ru": "потеря"
+      "ru": "потеря",
+      "tr": "İncinen yer, bere"
     },
     "ipa": "/xɐɕʼǝʁɐ/",
     "rootIds": [],
@@ -800537,7 +800685,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_КРУЖИТЬСЯ",
     "translations": {
-      "ru": "кружиться"
+      "ru": "кружиться",
+      "tr": "Çevre; çember; daire; küre"
     },
     "ipa": "/xwɐrɐzɐn/",
     "rootIds": [],
@@ -801141,7 +801290,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_КОСТОЧКА",
     "translations": {
-      "ru": "косточка"
+      "ru": "косточка",
+      "tr": "Taş"
     },
     "ipa": "/kʷpq/",
     "rootIds": [],
@@ -802214,7 +802364,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ВБЕЖАТЬ КУДА-Л",
     "translations": {
-      "ru": "вбежать куда-л"
+      "ru": "вбежать куда-л",
+      "tr": "Saz, sazlık"
     },
     "ipa": "/qǝzɐrǝdɐxwɐn/",
     "rootIds": [],
@@ -802244,7 +802395,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ПРИБЫТЬ КУДА-Л",
     "translations": {
-      "ru": "прибыть куда-л"
+      "ru": "прибыть куда-л",
+      "tr": "Ağacın alt kısmı"
     },
     "ipa": "/qǝzɐrǝħɐsǝn/",
     "rootIds": [],
@@ -802490,7 +802642,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ПРОТЯНУТЬ",
     "translations": {
-      "ru": "протянуть"
+      "ru": "протянуть",
+      "tr": "Kurşun"
     },
     "ipa": "/qǝpxǝʃǝn/",
     "rootIds": [],
@@ -803294,7 +803447,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ОБКОЛОТИТЬ ЧТО-Л",
     "translations": {
-      "ru": "обколотить что-л"
+      "ru": "обколотить что-л",
+      "tr": "Yonga"
     },
     "ipa": "/qɐwdǝnǝħǝn/",
     "rootIds": [],
@@ -803512,7 +803666,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ВОЖАК",
     "translations": {
-      "ru": "вожак"
+      "ru": "вожак",
+      "tr": "Baş"
     },
     "ipa": "/pɐrǝʃɐ/",
     "rootIds": [],
@@ -804421,7 +804576,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_МАЗЭХЪУАНЭР ИКӀМЭ",
     "translations": {
-      "ru": "мазэхъуанэр икӏмэ"
+      "ru": "мазэхъуанэр икӏмэ",
+      "tr": "Şubat"
     },
     "ipa": "/mazɐχʷanɐ/",
     "rootIds": [],
@@ -804436,7 +804592,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_МАЙКА",
     "translations": {
-      "ru": "майка"
+      "ru": "майка",
+      "tr": "Fanila, atlet"
     },
     "ipa": "/majkɐ/",
     "rootIds": [],
@@ -804849,7 +805006,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_МОЛОКА",
     "translations": {
-      "ru": "молока"
+      "ru": "молока",
+      "tr": "Süt"
     },
     "ipa": "/mɐtɐlǝwan/",
     "rootIds": [],
@@ -806415,7 +806573,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ШТАНОВ",
     "translations": {
-      "ru": "штанов"
+      "ru": "штанов",
+      "tr": "Pantolon"
     },
     "ipa": "/pxaɬɐ/",
     "rootIds": [],
@@ -807598,7 +807757,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_СКВЕР",
     "translations": {
-      "ru": "сквер"
+      "ru": "сквер",
+      "tr": "Kare"
     },
     "ipa": "/skvеr/",
     "rootIds": [],
@@ -807754,7 +807914,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_БЕЛЕСЫЙ",
     "translations": {
-      "ru": "белесый"
+      "ru": "белесый",
+      "tr": "Akçıl, beyazımsı"
     },
     "ipa": "/sǝrǝxwfɐ/",
     "rootIds": [],
@@ -807832,7 +807993,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_МИЛЫЙ",
     "translations": {
-      "ru": "милый"
+      "ru": "милый",
+      "tr": "Bal"
     },
     "ipa": "/tʼǝkʷʼɐ/",
     "rootIds": [],
@@ -807946,7 +808108,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ГОЛУБЧИК",
     "translations": {
-      "ru": "голубчик"
+      "ru": "голубчик",
+      "tr": "Bal"
     },
     "ipa": "/tʼǝsɐ/",
     "rootIds": [],
@@ -808967,7 +809130,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ОБРЕЗАННЫЕ СУЧЬЯ",
     "translations": {
-      "ru": "обрезанные сучья"
+      "ru": "обрезанные сучья",
+      "tr": "İplik çilesi"
     },
     "ipa": "/wχʷɐnɕʼaxwɐ/",
     "rootIds": [],
@@ -809669,7 +809833,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_НАКЛОНИТЬ",
     "translations": {
-      "ru": "наклонить"
+      "ru": "наклонить",
+      "tr": "Yay"
     },
     "ipa": "/xwеʁɐzǝxǝn/",
     "rootIds": [],
@@ -809921,7 +810086,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ВДЕВЯТЕРО",
     "translations": {
-      "ru": "вдевятеро"
+      "ru": "вдевятеро",
+      "tr": "Dokuz misli"
     },
     "ipa": "/xwɐdibʁʷkʼɐ/",
     "rootIds": [],
@@ -810340,7 +810506,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ПЫШКА",
     "translations": {
-      "ru": "пышка"
+      "ru": "пышка",
+      "tr": "Hamurdan çerkes yemeği"
     },
     "ipa": "/ħɐldʒеj/",
     "rootIds": [],
@@ -811496,7 +811663,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ШЛАГБАУМ",
     "translations": {
-      "ru": "шлагбаум"
+      "ru": "шлагбаум",
+      "tr": "Avlu kapısı, kapı"
     },
     "ipa": "/ʃlagbawm/",
     "rootIds": [],
@@ -811543,7 +811711,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ШТАМП",
     "translations": {
-      "ru": "штамп"
+      "ru": "штамп",
+      "tr": "Ayı balığı, fok"
     },
     "ipa": "/ʃtamp/",
     "rootIds": [],
@@ -811641,7 +811810,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ШИНЕЛЬ",
     "translations": {
-      "ru": "шинель"
+      "ru": "шинель",
+      "tr": "Palto, manto"
     },
     "ipa": "/ʃǝnеl/",
     "rootIds": [],
@@ -812296,7 +812466,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_НЕ СПАДАТЬ",
     "translations": {
-      "ru": "не спадать"
+      "ru": "не спадать",
+      "tr": "Şapka, kalpak"
     },
     "ipa": "/ɕħɐrǝzɐʁɐn/",
     "rootIds": [],
@@ -814728,7 +814899,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ПОКРЫВАТЬ",
     "translations": {
-      "ru": "покрывать"
+      "ru": "покрывать",
+      "tr": "Ağacın alt kısmı"
     },
     "ipa": "/qǝtеwfɐn/",
     "rootIds": [],
@@ -816311,7 +816483,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_НАКРЕНИТЬ",
     "translations": {
-      "ru": "накренить"
+      "ru": "накренить",
+      "tr": "Kumaş kıyısı"
     },
     "ipa": "/ʁɐɬɐnǝqʷɐbɐn/",
     "rootIds": [],
@@ -816723,7 +816896,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ОТКИНУТЬСЯ НАЗАД",
     "translations": {
-      "ru": "откинуться назад"
+      "ru": "откинуться назад",
+      "tr": "Zayıf, arık"
     },
     "ipa": "/ziʁɐɕʼеikʼǝn/",
     "rootIds": [],
@@ -816863,7 +817037,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ОБШИВАТЬ",
     "translations": {
-      "ru": "обшивать"
+      "ru": "обшивать",
+      "tr": "Kapak, cilt"
     },
     "ipa": "/qɐwkʼǝħǝn/",
     "rootIds": [],
@@ -819139,7 +819314,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ВЕСТНИК ГОРЯ",
     "translations": {
-      "ru": "вестник горя"
+      "ru": "вестник горя",
+      "tr": "Kötü, fena"
     },
     "ipa": "/ɕǝħɐkʷʼɐ/",
     "rootIds": [],
@@ -819877,7 +820053,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_БЖЬЭ",
     "translations": {
-      "ru": "бжьэ"
+      "ru": "бжьэ",
+      "tr": "Çengelli iğne"
     },
     "ipa": "/kʼɐmastɐ/",
     "rootIds": [],
@@ -820621,7 +820798,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_САЛЪЭ",
     "translations": {
-      "ru": "салъэ"
+      "ru": "салъэ",
+      "tr": "Miğfer"
     },
     "ipa": "/tsǝbǝrǝb/",
     "rootIds": [],
@@ -821107,7 +821285,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ОТБИТЬ",
     "translations": {
-      "ru": "отбить"
+      "ru": "отбить",
+      "tr": "Ağacın alt kısmı"
     },
     "ipa": "/ʔʷʁɐɕħɐn/",
     "rootIds": [],
@@ -822577,7 +822756,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ӀУЩАГЪ",
     "translations": {
-      "ru": "ӏущагъ"
+      "ru": "ӏущагъ",
+      "tr": "İlik, beyin"
     },
     "ipa": "/ʔʷɕǝʁɐ/",
     "rootIds": [],
@@ -823120,7 +823300,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_БЛЭГУЩӀЭ",
     "translations": {
-      "ru": "блэгущӏэ"
+      "ru": "блэгущӏэ",
+      "tr": "Koltuk altı"
     },
     "ipa": "/ʔɐblɐgʷ/",
     "rootIds": [],
@@ -823728,7 +823909,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ӀЭЗЭВЛЪЭЗЭВ",
     "translations": {
-      "ru": "ӏэзэвлъэзэв"
+      "ru": "ӏэзэвлъэзэв",
+      "tr": "Dar, ensiz"
     },
     "ipa": "/ʔɐzɐbʁʷzɐ/",
     "rootIds": [],
@@ -825412,7 +825594,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ПРОКРУЧИВАТЬСЯ",
     "translations": {
-      "ru": "прокручиваться"
+      "ru": "прокручиваться",
+      "tr": "Bükmek, bükmek"
     },
     "ipa": "/ʔɐɕʼɐdʒɐrɐzǝħǝn/",
     "rootIds": [],
@@ -825513,7 +825696,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ИСЧЕРПАТЬСЯ",
     "translations": {
-      "ru": "исчерпаться"
+      "ru": "исчерпаться",
+      "tr": "Son, bitim"
     },
     "ipa": "/qǝʔɐɕʼɐwxɐn/",
     "rootIds": [],
@@ -825892,7 +826076,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ОГРОМНЫЙ",
     "translations": {
-      "ru": "огромный"
+      "ru": "огромный",
+      "tr": "Büyük; geniş"
     },
     "ipa": "/pʼɐrɐpʼɐɕɐж/",
     "rootIds": [],
@@ -826553,7 +826738,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ОЙ-ОЙ-ОЙ",
     "translations": {
-      "ru": "ой-ой-ой"
+      "ru": "ой-ой-ой",
+      "tr": "Ağacın alt kısmı"
     },
     "ipa": "/wɐdǝdǝd/",
     "rootIds": [],
@@ -827639,7 +827825,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_АФИША",
     "translations": {
-      "ru": "афиша"
+      "ru": "афиша",
+      "tr": "Gaga"
     },
     "ipa": "/afiʃɐ/",
     "rootIds": [],
@@ -827994,7 +828181,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ЗУБ МУДРОСТИ",
     "translations": {
-      "ru": "зуб мудрости"
+      "ru": "зуб мудрости",
+      "tr": "Azı dişi"
     },
     "ipa": "/baliʁǝdzɐ/",
     "rootIds": [],
@@ -828026,7 +828214,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_БАЛЛ",
     "translations": {
-      "ru": "балл"
+      "ru": "балл",
+      "tr": "Süngünün ucu"
     },
     "ipa": "/ball/",
     "rootIds": [],
@@ -828148,7 +828337,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_БАМПӀЭДЭХ",
     "translations": {
-      "ru": "бампӏэдэх"
+      "ru": "бампӏэдэх",
+      "tr": "Nota"
     },
     "ipa": "/bampʼɐʁɐtʼǝs/",
     "rootIds": [],
@@ -829084,7 +829274,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ПЫДЗАХУЭ",
     "translations": {
-      "ru": "пыдзахуэ"
+      "ru": "пыдзахуэ",
+      "tr": "Kabuk, soyuntu, soymantı"
     },
     "ipa": "/bdzaxwɐ/",
     "rootIds": [],
@@ -829285,7 +829476,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ЛОПАТА СОВКОВАЯ",
     "translations": {
-      "ru": "лопата совковая"
+      "ru": "лопата совковая",
+      "tr": "Büyük kürek"
     },
     "ipa": "/bеlħɐqʷafɐ/",
     "rootIds": [],
@@ -829457,7 +829649,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_РОГА",
     "translations": {
-      "ru": "рога"
+      "ru": "рога",
+      "tr": "Çitten örülmüş araba gövdesi"
     },
     "ipa": "/bʑaqʷɐsɐ/",
     "rootIds": [],
@@ -829591,7 +829784,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_БЖЬЫН",
     "translations": {
-      "ru": "бжьын"
+      "ru": "бжьын",
+      "tr": "Soğan"
     },
     "ipa": "/bʑǝnǝɕχʷɐ/",
     "rootIds": [],
@@ -829889,7 +830083,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ЛИАНА",
     "translations": {
-      "ru": "лиана"
+      "ru": "лиана",
+      "tr": "Yaş dal"
     },
     "ipa": "/bzwɬaχɐ/",
     "rootIds": [],
@@ -830370,7 +830565,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_АЛЭРЫБГЪУ",
     "translations": {
-      "ru": "алэрыбгъу"
+      "ru": "алэрыбгъу",
+      "tr": "Halı, kilim"
     },
     "ipa": "/blǝnеwbʁʷ/",
     "rootIds": [],
@@ -830383,7 +830579,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_АЛЭРЫБГЪУ",
     "translations": {
-      "ru": "алэрыбгъу"
+      "ru": "алэрыбгъу",
+      "tr": "Halı, kilim"
     },
     "ipa": "/blǝnеʔʷɬʼ/",
     "rootIds": [],
@@ -830853,7 +831050,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ЖАДНЫЙ",
     "translations": {
-      "ru": "жадный"
+      "ru": "жадный",
+      "tr": "Obur"
     },
     "ipa": "/natsʼɐrǝfɐ/",
     "rootIds": [],
@@ -831546,7 +831744,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ВАГОНЕТКА",
     "translations": {
-      "ru": "вагонетка"
+      "ru": "вагонетка",
+      "tr": "Yük/at arabası"
     },
     "ipa": "/vagonеtkɐ/",
     "rootIds": [],
@@ -832223,7 +832422,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_УЭГУНЭБЗУ",
     "translations": {
-      "ru": "уэгунэбзу"
+      "ru": "уэгунэбзу",
+      "tr": "Toygar"
     },
     "ipa": "/vǝkʼɐbzw/",
     "rootIds": [],
@@ -832712,7 +832912,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ГЕРБ",
     "translations": {
-      "ru": "герб"
+      "ru": "герб",
+      "tr": "İbik"
     },
     "ipa": "/gеrb/",
     "rootIds": [],
@@ -832789,7 +832990,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ГИЛЬЗА",
     "translations": {
-      "ru": "гильза"
+      "ru": "гильза",
+      "tr": "Kol"
     },
     "ipa": "/gilzɐ/",
     "rootIds": [],
@@ -833262,7 +833464,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ГРИМ",
     "translations": {
-      "ru": "грим"
+      "ru": "грим",
+      "tr": "Ağacın alt kısmı"
     },
     "ipa": "/grim/",
     "rootIds": [],
@@ -834950,7 +835153,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ТОРЖЕСТВО",
     "translations": {
-      "ru": "торжество"
+      "ru": "торжество",
+      "tr": "Çocuğu ilk beşiğe yatırma töreni"
     },
     "ipa": "/maxwɐɕʼǝʁɐ/",
     "rootIds": [],
@@ -834979,7 +835183,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_БЕЗРАДОСТНЫЙ",
     "translations": {
-      "ru": "безрадостный"
+      "ru": "безрадостный",
+      "tr": "Kederli, mahzun"
     },
     "ipa": "/nɐɕχǝfʼaʁʷɐnʃɐ/",
     "rootIds": [],
@@ -835424,7 +835629,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_С КРАЮ",
     "translations": {
-      "ru": "с краю"
+      "ru": "с краю",
+      "tr": "Kapak, cilt"
     },
     "ipa": "/gʷɐwfɐn/",
     "rootIds": [],
@@ -835555,7 +835761,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ВЫСТРАДАТЬ ЧТО-Л",
     "translations": {
-      "ru": "выстрадать что-л"
+      "ru": "выстрадать что-л",
+      "tr": "Ayı"
     },
     "ipa": "/gʷɐɕʼǝn/",
     "rootIds": [],
@@ -835850,7 +836057,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ДЖЭДУ",
     "translations": {
-      "ru": "джэду"
+      "ru": "джэду",
+      "tr": "Kedi"
     },
     "ipa": "/ʁʷnɐʁʷrǝpɕ/",
     "rootIds": [],
@@ -835862,7 +836070,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ДЖЭДУ",
     "translations": {
-      "ru": "джэду"
+      "ru": "джэду",
+      "tr": "Kedi"
     },
     "ipa": "/kʷʼnaw/",
     "rootIds": [],
@@ -840634,7 +840843,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ВЫБЕЖАТЬ ОТКУДА-Л",
     "translations": {
-      "ru": "выбежать откуда-л"
+      "ru": "выбежать откуда-л",
+      "tr": "Şerbetçiotu"
     },
     "ipa": "/qǝɕʼɐtsʼɐftǝn/",
     "rootIds": [],
@@ -841437,7 +841647,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ИСПАЧКАТЬСЯ",
     "translations": {
-      "ru": "испачкаться"
+      "ru": "испачкаться",
+      "tr": "Kireçli toprak"
     },
     "ipa": "/pǝwtsʼɐpʼǝħǝn/",
     "rootIds": [],
@@ -841501,7 +841712,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ВСТРЕЧАЯ РАССВЕТ",
     "translations": {
-      "ru": "встречая рассвет"
+      "ru": "встречая рассвет",
+      "tr": "Karga"
     },
     "ipa": "/dɐwʃɐn/",
     "rootIds": [],
@@ -841532,7 +841744,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_БОЛТАТЬСЯ",
     "translations": {
-      "ru": "болтаться"
+      "ru": "болтаться",
+      "tr": "Salıncak"
     },
     "ipa": "/isǝsǝħǝn/",
     "rootIds": [],
@@ -841587,7 +841800,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_МЕСТО ОТТОКА",
     "translations": {
-      "ru": "место оттока"
+      "ru": "место оттока",
+      "tr": "Ağacın alt kısmı"
     },
     "ipa": "/dɐwɐxǝpʼɐ/",
     "rootIds": [],
@@ -841619,7 +841833,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ШЫХЭР ЩӀИТӀЫКӀАЩ",
     "translations": {
-      "ru": "шыхэр щӏитӏыкӏащ"
+      "ru": "шыхэр щӏитӏыкӏащ",
+      "tr": "Ağacın alt kısmı"
     },
     "ipa": "/dɐxwxǝn/",
     "rootIds": [],
@@ -841966,7 +842181,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ЕБЛАНЭ",
     "translations": {
-      "ru": "ебланэ"
+      "ru": "ебланэ",
+      "tr": "Yedinci"
     },
     "ipa": "/еblanɐrеj/",
     "rootIds": [],
@@ -842783,7 +842999,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ЕКЪУА",
     "translations": {
-      "ru": "екъуа"
+      "ru": "екъуа",
+      "tr": "Satır"
     },
     "ipa": "/еqʷʁɐ/",
     "rootIds": [],
@@ -842809,7 +843026,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ЗАЦЕПКА",
     "translations": {
-      "ru": "зацепка"
+      "ru": "зацепка",
+      "tr": "Kopça"
     },
     "ipa": "/еqʷpʼɐ/",
     "rootIds": [],
@@ -843199,7 +843417,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ПОСПЕШНОСТЬ",
     "translations": {
-      "ru": "поспешность"
+      "ru": "поспешность",
+      "tr": "Saz, sazlık"
     },
     "ipa": "/еwʑɐrǝkʼǝnǝʁɐ/",
     "rootIds": [],
@@ -843282,7 +843501,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ЕПЩӀАНЭ",
     "translations": {
-      "ru": "епщӏанэ"
+      "ru": "епщӏанэ",
+      "tr": "Onuncu"
     },
     "ipa": "/еpɕʼanɐrеj/",
     "rootIds": [],
@@ -843643,7 +843863,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ЕДА",
     "translations": {
-      "ru": "еда"
+      "ru": "еда",
+      "tr": "Aşure"
     },
     "ipa": "/pʼastɐdɐʃx/",
     "rootIds": [],
@@ -843796,7 +844017,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ЕТӀОЩӀАНЭ",
     "translations": {
-      "ru": "етӏощӏанэ"
+      "ru": "етӏощӏанэ",
+      "tr": "Yirminci"
     },
     "ipa": "/еtʼoɕʼanɐrеj/",
     "rootIds": [],
@@ -843808,7 +844030,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ЕТӀУАНЭ",
     "translations": {
-      "ru": "етӏуанэ"
+      "ru": "етӏуанэ",
+      "tr": "İkinci"
     },
     "ipa": "/еtʷʼanɐrеj/",
     "rootIds": [],
@@ -843852,7 +844075,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ЕТХУАНЭ",
     "translations": {
-      "ru": "етхуанэ"
+      "ru": "етхуанэ",
+      "tr": "Beşinci"
     },
     "ipa": "/еtxwanɐrеj/",
     "rootIds": [],
@@ -844253,7 +844477,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ЕХАНЭ",
     "translations": {
-      "ru": "еханэ"
+      "ru": "еханэ",
+      "tr": "Altıncı"
     },
     "ipa": "/еxanɐrеj/",
     "rootIds": [],
@@ -844468,7 +844693,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_НАСТУПАТЬ",
     "translations": {
-      "ru": "наступать"
+      "ru": "наступать",
+      "tr": "Nöbet"
     },
     "ipa": "/qеbʁɐrǝkʷʼɐn/",
     "rootIds": [],
@@ -845008,7 +845234,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ТАКЖЕ МАКӀУХУЭ",
     "translations": {
-      "ru": "также макӏухуэ"
+      "ru": "также макӏухуэ",
+      "tr": "Bir kalem sabun"
     },
     "ipa": "/жmǝx/",
     "rootIds": [],
@@ -846005,7 +846232,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ЖЬЭРЫПЛЪЭ",
     "translations": {
-      "ru": "жьэрыплъэ"
+      "ru": "жьэрыплъэ",
+      "tr": "Guguk"
     },
     "ipa": "/ʑɐwɕʼ/",
     "rootIds": [],
@@ -846017,7 +846245,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ЖЬЭРЫПЛЪЭ",
     "translations": {
-      "ru": "жьэрыплъэ"
+      "ru": "жьэрыплъэ",
+      "tr": "Guguk"
     },
     "ipa": "/ʑɐʔʷrǝxw/",
     "rootIds": [],
@@ -847045,7 +847274,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_КУДА-Л",
     "translations": {
-      "ru": "куда-л"
+      "ru": "куда-л",
+      "tr": "Saz, sazlık"
     },
     "ipa": "/zǝkʼɐɬǝxɐdzɐn/",
     "rootIds": [],
@@ -848332,7 +848562,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ТУТЫН ЗЫӀУРЫГЪЭЛЪЫН",
     "translations": {
-      "ru": "тутын зыӏурыгъэлъын"
+      "ru": "тутын зыӏурыгъэлъын",
+      "tr": "Ağacın alt kısmı"
     },
     "ipa": "/zǝʔʷrǝʁɐɬǝn/",
     "rootIds": [],
@@ -848347,7 +848578,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ТУТЫН ЗЫӀУРЫГЪЭСЫН",
     "translations": {
-      "ru": "тутын зыӏурыгъэсын"
+      "ru": "тутын зыӏурыгъэсын",
+      "tr": "Ağacın alt kısmı"
     },
     "ipa": "/zǝʔʷrǝʁɐsǝn/",
     "rootIds": [],
@@ -848477,7 +848709,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ОСЛАБИТЬ ЧТО-Л",
     "translations": {
-      "ru": "ослабить что-л"
+      "ru": "ослабить что-л",
+      "tr": "Ağacın alt kısmı"
     },
     "ipa": "/qɐʁɐtʼɐsχɐn/",
     "rootIds": [],
@@ -848716,7 +848949,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ПОДВЕЗТИ",
     "translations": {
-      "ru": "подвезти"
+      "ru": "подвезти",
+      "tr": "Ağacın alt kısmı"
     },
     "ipa": "/zɐbʁɐdɐʃɐn/",
     "rootIds": [],
@@ -849513,7 +849747,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_СПРЯТАТЬСЯ СНОВА",
     "translations": {
-      "ru": "спрятаться снова"
+      "ru": "спрятаться снова",
+      "tr": "Deri"
     },
     "ipa": "/zǝʁɐpɕkʷʼжǝn/",
     "rootIds": [],
@@ -849790,7 +850025,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_БЖЭР ЗДЫХУЭЩӀЫН",
     "translations": {
-      "ru": "бжэр здыхуэщӏын"
+      "ru": "бжэр здыхуэщӏын",
+      "tr": "Ağacın alt kısmı"
     },
     "ipa": "/zǝdǝxwɐɕʼǝn/",
     "rootIds": [],
@@ -849883,7 +850119,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_АР ХЪУНУКЪЫМ",
     "translations": {
-      "ru": "ар хъунукъым"
+      "ru": "ар хъунукъым",
+      "tr": "Ağacın alt kısmı"
     },
     "ipa": "/zǝdɐɬaʁʷжǝn/",
     "rootIds": [],
@@ -850442,7 +850679,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ХУЩХЪУЭ ЕФЭРИ",
     "translations": {
-      "ru": "хущхъуэ ефэри"
+      "ru": "хущхъуэ ефэри",
+      "tr": "Ağacın alt kısmı"
     },
     "ipa": "/zǝzɐɕʼɐwfɐn/",
     "rootIds": [],
@@ -850558,7 +850796,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ЛЕЙТЕНАНТЫМ",
     "translations": {
-      "ru": "лейтенантым"
+      "ru": "лейтенантым",
+      "tr": "Deri"
     },
     "ipa": "/zǝkʼɐrǝwdǝʁʷɐn/",
     "rootIds": [],
@@ -850783,7 +851022,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ЗЫКЪУАДЗЭРТ",
     "translations": {
-      "ru": "зыкъуадзэрт"
+      "ru": "зыкъуадзэрт",
+      "tr": "Ağacın alt kısmı"
     },
     "ipa": "/zǝqʷɐdzɐn/",
     "rootIds": [],
@@ -850911,7 +851151,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ЕДЖАКӀУЭХЭМ ЗЫКЪЫЗДА",
     "translations": {
-      "ru": "еджакӏуэхэм зыкъыздаӏэтащ"
+      "ru": "еджакӏуэхэм зыкъыздаӏэтащ",
+      "tr": "Güreşmek"
     },
     "ipa": "/zǝqǝzɐdɐʔɐtǝn/",
     "rootIds": [],
@@ -850927,7 +851168,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ВОЗБУДИТЬСЯ",
     "translations": {
-      "ru": "возбудиться"
+      "ru": "возбудиться",
+      "tr": "Güreşmek"
     },
     "ipa": "/zǝqǝzɐɕʼɐʔɐtɐn/",
     "rootIds": [],
@@ -851665,7 +851907,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ӀЭКӀЭ ЗЫТЕЛЪЭЩӀЫХЬЫН",
     "translations": {
-      "ru": "ӏэкӏэ зытелъэщӏыхьын"
+      "ru": "ӏэкӏэ зытелъэщӏыхьын",
+      "tr": "Temiz"
     },
     "ipa": "/zǝtеɬɐɕʼǝħǝn/",
     "rootIds": [],
@@ -852151,7 +852394,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_СКРЫТЬСЯ",
     "translations": {
-      "ru": "скрыться"
+      "ru": "скрыться",
+      "tr": "Deri"
     },
     "ipa": "/zǝxɐʁɐpɕkʷʼɐn/",
     "rootIds": [],
@@ -852196,7 +852440,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ПРИТИХНУТЬ ГДЕ-Л",
     "translations": {
-      "ru": "притихнуть где-л"
+      "ru": "притихнуть где-л",
+      "tr": "Deri"
     },
     "ipa": "/zǝxɐwdǝʁʷɐn/",
     "rootIds": [],
@@ -852408,7 +852653,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ЮРКНУТЬ КУДА-Л",
     "translations": {
-      "ru": "юркнуть куда-л"
+      "ru": "юркнуть куда-л",
+      "tr": "Mısır çiçeği"
     },
     "ipa": "/zǝɕʼɐʁɐbzɐxɐn/",
     "rootIds": [],
@@ -852558,7 +852804,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ШХЫӀЭНЫМ ЗЫЩӀЭУФЭН",
     "translations": {
-      "ru": "шхыӏэным зыщӏэуфэн"
+      "ru": "шхыӏэным зыщӏэуфэн",
+      "tr": "Ağacın alt kısmı"
     },
     "ipa": "/zǝɕʼɐwfɐn/",
     "rootIds": [],
@@ -852618,7 +852865,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ПЫӀЭ ЗЫЩХЬЭРЫГЪАГЪЫН",
     "translations": {
-      "ru": "пыӏэ зыщхьэрыгъагъын"
+      "ru": "пыӏэ зыщхьэрыгъагъын",
+      "tr": "Şapka, kalpak"
     },
     "ipa": "/zǝɕħɐrǝʁaʁǝn/",
     "rootIds": [],
@@ -852633,7 +852881,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ПЫӀЭ ЗЫЩХЬЭРЫГЪЭСЫН",
     "translations": {
-      "ru": "пыӏэ зыщхьэрыгъэсын"
+      "ru": "пыӏэ зыщхьэрыгъэсын",
+      "tr": "Şapka, kalpak"
     },
     "ipa": "/zǝɕħɐrǝʁɐsǝn/",
     "rootIds": [],
@@ -852648,7 +852897,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ШУМАХУЭ ЗЫКЪИЩӀЭЖАЩ",
     "translations": {
-      "ru": "шумахуэ зыкъищӏэжащ"
+      "ru": "шумахуэ зыкъищӏэжащ",
+      "tr": "Ağacın alt kısmı"
     },
     "ipa": "/zǝɕħɐrǝtʼɐʁɐжǝn/",
     "rootIds": [],
@@ -852937,7 +853187,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_СВАЛЯТЬСЯ",
     "translations": {
-      "ru": "сваляться"
+      "ru": "сваляться",
+      "tr": "Hasır"
     },
     "ipa": "/zɐtеptsʼǝħǝn/",
     "rootIds": [],
@@ -853344,7 +853595,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ПОДВЕЗТИ КОГО-ЧТО-Л",
     "translations": {
-      "ru": "подвезти кого-что-л"
+      "ru": "подвезти кого-что-л",
+      "tr": "Kurşun"
     },
     "ipa": "/zɐʑɐxɐʃɐn/",
     "rootIds": [],
@@ -853735,7 +853987,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_БАТИНКӀЭР ЗЭГУЭБЛЭН",
     "translations": {
-      "ru": "батинкӏэр зэгуэблэн"
+      "ru": "батинкӏэр зэгуэблэн",
+      "tr": "Ayakkabı bağı"
     },
     "ipa": "/zɐgʷɐblɐn/",
     "rootIds": [],
@@ -853795,7 +854048,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ПХЪЭБГЪУИТӀЫР ЗЭГУЭЗ",
     "translations": {
-      "ru": "пхъэбгъуитӏыр зэгуэзэгъащ"
+      "ru": "пхъэбгъуитӏыр зэгуэзэгъащ",
+      "tr": "Kibrit"
     },
     "ipa": "/zɐgʷɐzɐʁɐn/",
     "rootIds": [],
@@ -854880,7 +855134,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ПШАХЪУЭ ЗЭКӀЭЛЪАШЭ",
     "translations": {
-      "ru": "пшахъуэ зэкӏэлъашэ"
+      "ru": "пшахъуэ зэкӏэлъашэ",
+      "tr": "Kurşun"
     },
     "ipa": "/zɐkʼɐɬǝʃɐn/",
     "rootIds": [],
@@ -855379,7 +855634,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ГУХЭР ЗЭЛЪЫӀУШЫН",
     "translations": {
-      "ru": "гухэр зэлъыӏушын"
+      "ru": "гухэр зэлъыӏушын",
+      "tr": "Ağacın alt kısmı"
     },
     "ipa": "/zɐɬǝʔʷʃǝn/",
     "rootIds": [],
@@ -855487,7 +855743,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_НЕПАРНЫЕ",
     "translations": {
-      "ru": "непарные"
+      "ru": "непарные",
+      "tr": "Ağacın alt kısmı"
     },
     "ipa": "/zɐmǝgʷɐʁʷ/",
     "rootIds": [],
@@ -855542,7 +855799,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_АЖЭХЭР ЗОНЭТӀАУЭ",
     "translations": {
-      "ru": "ажэхэр зонэтӏауэ"
+      "ru": "ажэхэр зонэтӏауэ",
+      "tr": "Ağacın alt kısmı"
     },
     "ipa": "/zɐnɐtʼɐwɐn/",
     "rootIds": [],
@@ -855917,7 +856175,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ПРОЛЕТЕТЬ",
     "translations": {
-      "ru": "пролететь"
+      "ru": "пролететь",
+      "tr": "Ağacın alt kısmı"
     },
     "ipa": "/qǝpxǝɬɐtǝn/",
     "rootIds": [],
@@ -856100,7 +856359,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ӀЭПСЛЪЭПСЫР ЗЭПЫПХЪУ",
     "translations": {
-      "ru": "ӏэпслъэпсыр зэпыпхъун"
+      "ru": "ӏэпслъэпсыр зэпыпхъун",
+      "tr": "İplik çilesi"
     },
     "ipa": "/zɐpǝpχʷn/",
     "rootIds": [],
@@ -856391,7 +856651,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ЧАСТО",
     "translations": {
-      "ru": "часто"
+      "ru": "часто",
+      "tr": "Ağacın alt kısmı"
     },
     "ipa": "/zɐpɐzɐvǝn/",
     "rootIds": [],
@@ -856531,7 +856792,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ПКЪО ЗЭПЭЩӀЭСЭН",
     "translations": {
-      "ru": "пкъо зэпэщӏэсэн"
+      "ru": "пкъо зэпэщӏэсэн",
+      "tr": "Ağacın alt kısmı"
     },
     "ipa": "/zɐpɐɕʼɐsɐn/",
     "rootIds": [],
@@ -857411,7 +857673,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ЖЬЫЩӀЫГЪЭР ЗЭРЫЦӀЭЛА",
     "translations": {
-      "ru": "жьыщӏыгъэр зэрыцӏэлащ"
+      "ru": "жьыщӏыгъэр зэрыцӏэлащ",
+      "tr": "Çamurlu; pis"
     },
     "ipa": "/zɐrǝtsʼɐlɐn/",
     "rootIds": [],
@@ -857770,7 +858033,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ССОРИТЬСЯ",
     "translations": {
-      "ru": "ссориться"
+      "ru": "ссориться",
+      "tr": "Satır"
     },
     "ipa": "/zɐtеkʼiеn/",
     "rootIds": [],
@@ -859220,7 +859484,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ТРАКТОРХЭР ЗЭЩӀОВУУЭ",
     "translations": {
-      "ru": "тракторхэр зэщӏовууэ"
+      "ru": "тракторхэр зэщӏовууэ",
+      "tr": "Erkek arı"
     },
     "ipa": "/zɐɕʼɐvwwɐn/",
     "rootIds": [],
@@ -859364,7 +859629,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ЗАДРОЖАТЬ",
     "translations": {
-      "ru": "задрожать"
+      "ru": "задрожать",
+      "tr": "Okluk, sadak"
     },
     "ipa": "/zɐɕʼɐzdʒǝzdʒɐn/",
     "rootIds": [],
@@ -860044,7 +860310,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ВЕРТЕТЬСЯ ГДЕ-Л",
     "translations": {
-      "ru": "вертеться где-л"
+      "ru": "вертеться где-л",
+      "tr": "Bükmek, bükmek"
     },
     "ipa": "/idʒɐrɐzǝħǝn/",
     "rootIds": [],
@@ -861032,7 +861299,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_КӀУЭЦӀФЭЦӀ",
     "translations": {
-      "ru": "кӏуэцӏфэцӏ"
+      "ru": "кӏуэцӏфэцӏ",
+      "tr": "İşkembe"
     },
     "ipa": "/kʷʼɐtsʼbʑɐtsʼ/",
     "rootIds": [],
@@ -861776,7 +862044,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ПОСЛЕ КОГО-Л",
     "translations": {
-      "ru": "после кого-л"
+      "ru": "после кого-л",
+      "tr": "Kurşun"
     },
     "ipa": "/kʼɐɬеʃɐxǝn/",
     "rootIds": [],
@@ -861788,7 +862057,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ГЪУЭМЫЛЭ КӀЭЛЪРАШЭЖЬ",
     "translations": {
-      "ru": "гъуэмылэ кӏэлърашэжьащ"
+      "ru": "гъуэмылэ кӏэлърашэжьащ",
+      "tr": "Kurşun"
     },
     "ipa": "/kʼɐɬеʃɐʑɐn/",
     "rootIds": [],
@@ -862338,7 +862608,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ПОЛЗКОМ ВЗОБРАТЬСЯ",
     "translations": {
-      "ru": "ползком взобраться"
+      "ru": "ползком взобраться",
+      "tr": "Ağacın alt kısmı"
     },
     "ipa": "/kʼɐrǝpɕħɐn/",
     "rootIds": [],
@@ -863383,7 +863654,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_КОЛЛЕГИЯ",
     "translations": {
-      "ru": "коллегия"
+      "ru": "коллегия",
+      "tr": "Kara tahta"
     },
     "ipa": "/kollеgiе/",
     "rootIds": [],
@@ -865643,7 +865915,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_БЭКХЪЫР КЪЕГЪЭТХЪУН",
     "translations": {
-      "ru": "бэкхъыр къегъэтхъун"
+      "ru": "бэкхъыр къегъэтхъун",
+      "tr": "Büyük kürek"
     },
     "ipa": "/qеʁɐtχʷn/",
     "rootIds": [],
@@ -866850,7 +867123,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_КУМГАН",
     "translations": {
-      "ru": "кумган"
+      "ru": "кумган",
+      "tr": "Güğüm"
     },
     "ipa": "/ħɐtsrafɐ/",
     "rootIds": [],
@@ -867552,7 +867826,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_МЭ КЪЫӀУРЫУЭН",
     "translations": {
-      "ru": "мэ къыӏурыуэн"
+      "ru": "мэ къыӏурыуэн",
+      "tr": "Soğuk"
     },
     "ipa": "/qǝʔʷrǝwɐn/",
     "rootIds": [],
@@ -867967,7 +868242,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ПСЫР КЪЫДРЕУТХЕЙ",
     "translations": {
-      "ru": "псыр къыдреутхей"
+      "ru": "псыр къыдреутхей",
+      "tr": "Sürgün, filiz"
     },
     "ipa": "/qǝdriwtxеin/",
     "rootIds": [],
@@ -868451,7 +868727,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ӀУПС КЪЫЖЬЭДЭГЪЭЖЫН",
     "translations": {
-      "ru": "ӏупс къыжьэдэгъэжын"
+      "ru": "ӏупс къыжьэдэгъэжын",
+      "tr": "Ağacın alt kısmı"
     },
     "ipa": "/qǝʑɐdɐʁɐжǝn/",
     "rootIds": [],
@@ -868601,7 +868878,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ОТКРЫТЬ РЫВКОМ",
     "translations": {
-      "ru": "открыть рывком"
+      "ru": "открыть рывком",
+      "tr": "Salıncak"
     },
     "ipa": "/qǝzɐʔʷdzǝn/",
     "rootIds": [],
@@ -868799,7 +869077,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ПЕРЕНОСНОЕ ПОДОЙТИ",
     "translations": {
-      "ru": "переносное подойти"
+      "ru": "переносное подойти",
+      "tr": "Kurşun"
     },
     "ipa": "/qǝzɐrǝʔʷʃɐn/",
     "rootIds": [],
@@ -868888,7 +869167,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_МЫВЭХЭР КЪЫЗЭТЕЛЪЭЛЪ",
     "translations": {
-      "ru": "мывэхэр къызэтелъэлъащ"
+      "ru": "мывэхэр къызэтелъэлъащ",
+      "tr": "Ağacın alt kısmı"
     },
     "ipa": "/qǝzɐtеɬɐɬɐn/",
     "rootIds": [],
@@ -869944,7 +870224,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ОСЫПАТЬСЯ",
     "translations": {
-      "ru": "осыпаться"
+      "ru": "осыпаться",
+      "tr": "Ağacın alt kısmı"
     },
     "ipa": "/qǝpǝɬɐɬǝжǝn/",
     "rootIds": [],
@@ -870250,7 +870531,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ЖЬЭГУМ КЪЫПЭРЫШЭН",
     "translations": {
-      "ru": "жьэгум къыпэрышэн"
+      "ru": "жьэгум къыпэрышэн",
+      "tr": "Kurşun"
     },
     "ipa": "/qǝpɐrǝʃɐn/",
     "rootIds": [],
@@ -870945,7 +871227,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ПКЪОР КЪЫХЭТХЪЫЖЫН",
     "translations": {
-      "ru": "пкъор къыхэтхъыжын"
+      "ru": "пкъор къыхэтхъыжын",
+      "tr": "Ağacın alt kısmı"
     },
     "ipa": "/qǝxɐtχǝжǝn/",
     "rootIds": [],
@@ -870960,7 +871243,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ГЪУАПЛЪЭМ КЪЫХЭУӀУКӀ",
     "translations": {
-      "ru": "гъуаплъэм къыхэуӏукӏын"
+      "ru": "гъуаплъэм къыхэуӏукӏын",
+      "tr": "Demirci dükkanı"
     },
     "ipa": "/qǝxɐwʔʷkʼǝn/",
     "rootIds": [],
@@ -871088,7 +871372,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ЩӀЫХЬЭПӀЭ",
     "translations": {
-      "ru": "щӏыхьэпӏэ"
+      "ru": "щӏыхьэпӏэ",
+      "tr": "Giriş"
     },
     "ipa": "/qǝɕʼǝħɐpʼɐ/",
     "rootIds": [],
@@ -871261,7 +871546,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_БГЫМ КЪЫЩХЬЭДЭШЭХЫН",
     "translations": {
-      "ru": "бгым къыщхьэдэшэхын"
+      "ru": "бгым къыщхьэдэшэхын",
+      "tr": "Kurşun"
     },
     "ipa": "/qǝɕħɐdɐʃɐxǝn/",
     "rootIds": [],
@@ -871568,7 +871854,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ПЭГУНЫР КЪЭГЪЭЖЭЩӀЫЖ",
     "translations": {
-      "ru": "пэгуныр къэгъэжэщӏыжын"
+      "ru": "пэгуныр къэгъэжэщӏыжын",
+      "tr": "Boş"
     },
     "ipa": "/qɐʁɐжɐɕʼǝжǝn/",
     "rootIds": [],
@@ -872346,7 +872633,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ШЕЛУШИТЬСЯ",
     "translations": {
-      "ru": "шелушиться"
+      "ru": "шелушиться",
+      "tr": "Temiz"
     },
     "ipa": "/qɐwtkʼɐpɕʼǝn/",
     "rootIds": [],
@@ -873669,7 +873957,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_КУЭ",
     "translations": {
-      "ru": "куэ"
+      "ru": "куэ",
+      "tr": "Uyluk"
     },
     "ipa": "/ɬɐkʼɐbdz/",
     "rootIds": [],
@@ -873897,7 +874186,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ЛЪЭПХЪУАМБЭШХУЭР ЗЭР",
     "translations": {
-      "ru": "лъэпхъуамбэшхуэр зэрыуэн"
+      "ru": "лъэпхъуамбэшхуэр зэрыуэн",
+      "tr": "Ayak başparmağı"
     },
     "ipa": "/ɬɐpχʷambɐʃxwɐ/",
     "rootIds": [],
@@ -873928,7 +874218,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ЛЭРЫГЪУ",
     "translations": {
-      "ru": "лэрыгъу"
+      "ru": "лэрыгъу",
+      "tr": "Mısır"
     },
     "ipa": "/ɬɐrǝʁʷ/",
     "rootIds": [],
@@ -874700,7 +874991,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ФУТЛЯР",
     "translations": {
-      "ru": "футляр"
+      "ru": "футляр",
+      "tr": "Bayrak kılıfı"
     },
     "ipa": "/lɐnǝstaɬɐ/",
     "rootIds": [],
@@ -876199,7 +876491,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ЛЪЭРЫМЫВЭ",
     "translations": {
-      "ru": "лъэрымывэ"
+      "ru": "лъэрымывэ",
+      "tr": "Bileği taşı"
     },
     "ipa": "/mǝvɐkʼɐraχʷɐ/",
     "rootIds": [],
@@ -876211,7 +876504,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ЛЪЭРЫМЫВЭ",
     "translations": {
-      "ru": "лъэрымывэ"
+      "ru": "лъэрымывэ",
+      "tr": "Bileği taşı"
     },
     "ipa": "/ʃɐrχmǝvɐ/",
     "rootIds": [],
@@ -877109,7 +877403,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_НАКӀЭГУУ",
     "translations": {
-      "ru": "накӏэгуу"
+      "ru": "накӏэгуу",
+      "tr": "Arpacık"
     },
     "ipa": "/nakʼɐbǝdz/",
     "rootIds": [],
@@ -877305,7 +877600,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_НАПЭӀЭЛЪЭЩӀ",
     "translations": {
-      "ru": "напэӏэлъэщӏ"
+      "ru": "напэӏэлъэщӏ",
+      "tr": "Havlu"
     },
     "ipa": "/napɐɬɐɕʼ/",
     "rootIds": [],
@@ -877503,7 +877799,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_НАЩЭГЪЭФӀЭӀУ",
     "translations": {
-      "ru": "нащэгъэфӏэӏу"
+      "ru": "нащэгъэфӏэӏу",
+      "tr": "Dereotu, tereotu"
     },
     "ipa": "/naɕɐʃʷ/",
     "rootIds": [],
@@ -877937,7 +878234,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_АРЕНА ЧЕГО-Л",
     "translations": {
-      "ru": "арена чего-л"
+      "ru": "арена чего-л",
+      "tr": "Ağacın alt kısmı"
     },
     "ipa": "/nǝqʷɐqʷapʼɐ/",
     "rootIds": [],
@@ -877966,7 +878264,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_КЪЭПЫР НЫКЪУЭЩ",
     "translations": {
-      "ru": "къэпыр ныкъуэщ"
+      "ru": "къэпыр ныкъуэщ",
+      "tr": "Ağacın alt kısmı"
     },
     "ipa": "/nǝqʷɐn/",
     "rootIds": [],
@@ -879063,7 +879362,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ОЧЕРЕДЬ",
     "translations": {
-      "ru": "очередь"
+      "ru": "очередь",
+      "tr": "Satır"
     },
     "ipa": "/otʃǝrɐ/",
     "rootIds": [],
@@ -879930,7 +880230,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ПКЪЫРЫМПКЪЫНЭР ХАДЭХ",
     "translations": {
-      "ru": "пкъырымпкъынэр хадэхэм"
+      "ru": "пкъырымпкъынэр хадэхэм",
+      "tr": "Bir bitki türü"
     },
     "ipa": "/pqǝrǝmpqǝnɐ/",
     "rootIds": [],
@@ -880912,7 +881213,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ПСЫКЪЕЛЪЭ",
     "translations": {
-      "ru": "псыкъелъэ"
+      "ru": "псыкъелъэ",
+      "tr": "Şelale"
     },
     "ipa": "/psǝqеpkʼɐ/",
     "rootIds": [],
@@ -880924,7 +881226,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ТОНКОЕ МЕСТО",
     "translations": {
-      "ru": "тонкое место"
+      "ru": "тонкое место",
+      "tr": "Biye, sırma, şerit"
     },
     "ipa": "/psǝʁʷapʼɐ/",
     "rootIds": [],
@@ -880968,7 +881271,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ПСЫДЭУАПӀЭ",
     "translations": {
-      "ru": "псыдэуапӏэ"
+      "ru": "псыдэуапӏэ",
+      "tr": "Körfez"
     },
     "ipa": "/psǝkʼɐdɐxwɐ/",
     "rootIds": [],
@@ -881726,7 +882030,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_РОД ДЕРЕВА",
     "translations": {
-      "ru": "род дерева"
+      "ru": "род дерева",
+      "tr": "Bir bitki türü"
     },
     "ipa": "/pχɐdaxɐ/",
     "rootIds": [],
@@ -882209,7 +882514,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ӀУНЭУАЛЪЭ",
     "translations": {
-      "ru": "ӏунэуалъэ"
+      "ru": "ӏунэуалъэ",
+      "tr": "Tuş"
     },
     "ipa": "/pxǝwdaɬɐ/",
     "rootIds": [],
@@ -882663,7 +882969,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_БГЪУЩӀ",
     "translations": {
-      "ru": "бгъущӏ"
+      "ru": "бгъущӏ",
+      "tr": "Doksan"
     },
     "ipa": "/pɕʼibʁʷ/",
     "rootIds": [],
@@ -883115,7 +883422,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_МЫЩЭХУПЩЕЙ",
     "translations": {
-      "ru": "мыщэхупщей"
+      "ru": "мыщэхупщей",
+      "tr": "Bir bitki türü"
     },
     "ipa": "/pɕɐxwpɕеj/",
     "rootIds": [],
@@ -883263,7 +883571,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ЩЫГЪЫНЫР ПЫГЪЭЛЪЫН",
     "translations": {
-      "ru": "щыгъыныр пыгъэлъын"
+      "ru": "щыгъыныр пыгъэлъын",
+      "tr": "Kenar, uç"
     },
     "ipa": "/pǝʁɐɬǝn/",
     "rootIds": [],
@@ -883589,7 +883898,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ПЛАКАЛЬЩИЦА",
     "translations": {
-      "ru": "плакальщица"
+      "ru": "плакальщица",
+      "tr": "Ağtçı"
     },
     "ipa": "/pǝħɐkʷʼɐ/",
     "rootIds": [],
@@ -883848,7 +884158,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ГЪУНЭГЪУМ ПЭКӀЭЦӀЫН",
     "translations": {
-      "ru": "гъунэгъум пэкӏэцӏын"
+      "ru": "гъунэгъум пэкӏэцӏын",
+      "tr": "Ağacın alt kısmı"
     },
     "ipa": "/pɐkʼɐtsʼǝn/",
     "rootIds": [],
@@ -884314,7 +884625,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_РАСТВОР",
     "translations": {
-      "ru": "раствор"
+      "ru": "раствор",
+      "tr": "Ağacın alt kısmı"
     },
     "ipa": "/rastvor/",
     "rootIds": [],
@@ -885107,7 +885419,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_СОЗРЭЩ КЪЫТЕКӀЫН",
     "translations": {
-      "ru": "созрэщ къытекӏын"
+      "ru": "созрэщ къытекӏын",
+      "tr": "Kızamık"
     },
     "ipa": "/sozrɐɕ/",
     "rootIds": [],
@@ -885206,7 +885519,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_КУБАНО-ЗЕЛЕНЧУКСКИЕ ",
     "translations": {
-      "ru": "кубано-зеленчукские кнут"
+      "ru": "кубано-зеленчукские кнут",
+      "tr": "Kamçı"
     },
     "ipa": "/sop/",
     "rootIds": [],
@@ -886133,7 +886447,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_КУДРЯВИТЬСЯ",
     "translations": {
-      "ru": "кудрявиться"
+      "ru": "кудрявиться",
+      "tr": "Bükmek, bükmek"
     },
     "ipa": "/tʼɐrɐzǝn/",
     "rootIds": [],
@@ -886573,7 +886888,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ПКӀЭУНЭР ТЕЕН",
     "translations": {
-      "ru": "пкӏэунэр теен"
+      "ru": "пкӏэунэр теен",
+      "tr": "Ağacın alt kısmı"
     },
     "ipa": "/tееn/",
     "rootIds": [],
@@ -886618,7 +886934,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ХЬЭР ТЕКЪУГЪЭН",
     "translations": {
-      "ru": "хьэр текъугъэн"
+      "ru": "хьэр текъугъэн",
+      "tr": "Kurt"
     },
     "ipa": "/tеqʷʁɐn/",
     "rootIds": [],
@@ -887057,7 +887374,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ТАЧАНКА",
     "translations": {
-      "ru": "тачанка"
+      "ru": "тачанка",
+      "tr": "Yük/at arabası"
     },
     "ipa": "/tеʃankʼɐ/",
     "rootIds": [],
@@ -887400,7 +887718,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ТУШЬ",
     "translations": {
-      "ru": "тушь"
+      "ru": "тушь",
+      "tr": "Mürekkep"
     },
     "ipa": "/twʃ/",
     "rootIds": [],
@@ -888089,7 +888408,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_УАНЭКЪУАПЭ",
     "translations": {
-      "ru": "уанэкъуапэ"
+      "ru": "уанэкъуапэ",
+      "tr": "Çatal"
     },
     "ipa": "/wanɐpχɐbʑ/",
     "rootIds": [],
@@ -890801,7 +891121,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ЗАДОХНУТЬСЯ",
     "translations": {
-      "ru": "задохнуться"
+      "ru": "задохнуться",
+      "tr": "Ağacın alt kısmı"
     },
     "ipa": "/xitħɐlǝħǝn/",
     "rootIds": [],
@@ -890991,7 +891312,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_КУБАНО-ЗЕЛЕНЧУКСКИЕ ",
     "translations": {
-      "ru": "кубано-зеленчукские плед"
+      "ru": "кубано-зеленчукские плед",
+      "tr": "Şal"
     },
     "ipa": "/xwatɐ/",
     "rootIds": [],
@@ -891003,7 +891325,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ХУГЪУЭ",
     "translations": {
-      "ru": "хугъуэ"
+      "ru": "хугъуэ",
+      "tr": "Darı"
     },
     "ipa": "/xwʁʷɐʑеj/",
     "rootIds": [],
@@ -891235,7 +891558,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ЗАДЕРЖАТЬ КОГО-ЧТО-Л",
     "translations": {
-      "ru": "задержать кого-что-л"
+      "ru": "задержать кого-что-л",
+      "tr": "Ağacın alt kısmı"
     },
     "ipa": "/xwzɐtеʔǝʁɐn/",
     "rootIds": [],
@@ -891617,7 +891941,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ДОХУТЫР ХУЭӀУЭХУЩӀЭ",
     "translations": {
-      "ru": "дохутыр хуэӏуэхущӏэ"
+      "ru": "дохутыр хуэӏуэхущӏэ",
+      "tr": "İlaç"
     },
     "ipa": "/xwɐʔʷxwɐɕʼɐ/",
     "rootIds": [],
@@ -891748,7 +892073,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ЖЬЫЩӀЫГЪЭХЭР ХУЭГЪЭГ",
     "translations": {
-      "ru": "жьыщӏыгъэхэр хуэгъэгъущын"
+      "ru": "жьыщӏыгъэхэр хуэгъэгъущын",
+      "tr": "Çamaşır"
     },
     "ipa": "/xwɐʁɐʁʷɕǝn/",
     "rootIds": [],
@@ -892076,7 +892402,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ӀУЭХУМ ХУЭЖЫДЖЭРЫН",
     "translations": {
-      "ru": "ӏуэхум хуэжыджэрын"
+      "ru": "ӏуэхум хуэжыджэрын",
+      "tr": "Hızlı, süratli, seri"
     },
     "ipa": "/xwɐжǝdʒɐrǝn/",
     "rootIds": [],
@@ -892175,7 +892502,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ХУЭНЩӀЕЙ",
     "translations": {
-      "ru": "хуэнщӏей"
+      "ru": "хуэнщӏей",
+      "tr": "Kepek"
     },
     "ipa": "/xwɐnɕʼaxwɐ/",
     "rootIds": [],
@@ -892593,7 +892921,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_КЪАНДЗЭГУ",
     "translations": {
-      "ru": "къандзэгу"
+      "ru": "къандзэгу",
+      "tr": "Su kabarcığı"
     },
     "ipa": "/χɐntsɐgʷ/",
     "rootIds": [],
@@ -892741,7 +893070,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_КХЪУАКӀЭ",
     "translations": {
-      "ru": "кхъуакӏэ"
+      "ru": "кхъуакӏэ",
+      "tr": "Saçak, püskül"
     },
     "ipa": "/χʷakʼɐ/",
     "rootIds": [],
@@ -893458,7 +893788,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ХЬЭНТХЪУПС",
     "translations": {
-      "ru": "хьэнтхъупс"
+      "ru": "хьэнтхъупс",
+      "tr": "Ağacın alt kısmı"
     },
     "ipa": "/ħɐbǝχʷ/",
     "rootIds": [],
@@ -893549,7 +893880,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ХЬЭДРЭТ ХЪУН",
     "translations": {
-      "ru": "хьэдрэт хъун"
+      "ru": "хьэдрэт хъун",
+      "tr": "Eğri ceset"
     },
     "ipa": "/ħɐdrɐt/",
     "rootIds": [],
@@ -893643,7 +893975,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_КРУПЧАТКА",
     "translations": {
-      "ru": "крупчатка"
+      "ru": "крупчатка",
+      "tr": "Un"
     },
     "ipa": "/ħɐжǝʁɐkʷrǝx/",
     "rootIds": [],
@@ -894099,7 +894432,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ХЬЭМКӀЭШЫГУ",
     "translations": {
-      "ru": "хьэмкӏэшыгу"
+      "ru": "хьэмкӏэшыгу",
+      "tr": "Yük/at arabası"
     },
     "ipa": "/ħɐmkʼɐqʷɐgʷ/",
     "rootIds": [],
@@ -894111,7 +894445,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ЛЪАХЪЭ",
     "translations": {
-      "ru": "лъахъэ"
+      "ru": "лъахъэ",
+      "tr": "Pranga"
     },
     "ipa": "/ħɐmkʼɐɬaχɐ/",
     "rootIds": [],
@@ -894290,7 +894625,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ХЬЭЖЫКӀЭ",
     "translations": {
-      "ru": "хьэжыкӏэ"
+      "ru": "хьэжыкӏэ",
+      "tr": "Adaçayı"
     },
     "ipa": "/ħɐnɐps/",
     "rootIds": [],
@@ -894616,7 +894952,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ХЬЭЦЭПЭЦЭ",
     "translations": {
-      "ru": "хьэцэпэцэ"
+      "ru": "хьэцэпэцэ",
+      "tr": "Mısır"
     },
     "ipa": "/ħɐtsɐpɐtsɐxɐkʼ/",
     "rootIds": [],
@@ -894881,7 +895218,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_РАЗМНОЖИТЬСЯ ГДЕ-Л",
     "translations": {
-      "ru": "размножиться где-л"
+      "ru": "размножиться где-л",
+      "tr": "Çarpmak, vurmak"
     },
     "ipa": "/xɐbɐʁʷɐn/",
     "rootIds": [],
@@ -896228,7 +896566,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ВЫБРАТЬ КОГО-ЧТО-Л",
     "translations": {
-      "ru": "выбрать кого-что-л"
+      "ru": "выбрать кого-что-л",
+      "tr": "Kazma"
     },
     "ipa": "/xɐtʃǝħǝn/",
     "rootIds": [],
@@ -896945,7 +897284,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ПЛОД БЕРЕСКЛЕТА",
     "translations": {
-      "ru": "плод бересклета"
+      "ru": "плод бересклета",
+      "tr": "İğ"
     },
     "ipa": "/tʃǝtsʼǝpɐ/",
     "rootIds": [],
@@ -897158,7 +897498,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ШАМБУЛ",
     "translations": {
-      "ru": "шамбул"
+      "ru": "шамбул",
+      "tr": "Fırtına"
     },
     "ipa": "/ʃamtawl/",
     "rootIds": [],
@@ -897307,7 +897648,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ДАХЭТХЬЭМПЭ",
     "translations": {
-      "ru": "дахэтхьэмпэ"
+      "ru": "дахэтхьэмпэ",
+      "tr": "Bend"
     },
     "ipa": "/ʃеjtʼanʔɐpɐ/",
     "rootIds": [],
@@ -897895,7 +898237,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ПЩӀЭГЪУАЛЭ",
     "translations": {
-      "ru": "пщӏэгъуалэ"
+      "ru": "пщӏэгъуалэ",
+      "tr": "Kır"
     },
     "ipa": "/ʃǝqaz/",
     "rootIds": [],
@@ -898216,7 +898559,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ШЫУАНЩӀЭТ",
     "translations": {
-      "ru": "шыуанщӏэт"
+      "ru": "шыуанщӏэт",
+      "tr": "Nihale, sacayağı"
     },
     "ipa": "/ʃǝwanɬaqʷɐ/",
     "rootIds": [],
@@ -898798,7 +899142,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ЩӀЭРЫКӀУЭ",
     "translations": {
-      "ru": "щӏэрыкӏуэ"
+      "ru": "щӏэрыкӏуэ",
+      "tr": "Yerelması"
     },
     "ipa": "/ɕʼaʁǝrǝkʷʼɐ/",
     "rootIds": [],
@@ -899122,7 +899467,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ЩӀЫӀУБ",
     "translations": {
-      "ru": "щӏыӏуб"
+      "ru": "щӏыӏуб",
+      "tr": "Köstebek"
     },
     "ipa": "/ɕʼǝʔʷgʷ/",
     "rootIds": [],
@@ -899604,7 +899950,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ЩӀИГЪЭЗЫКӀРИ ЩӀЭКӀЫЖ",
     "translations": {
-      "ru": "щӏигъэзыкӏри щӏэкӏыжащ"
+      "ru": "щӏигъэзыкӏри щӏэкӏыжащ",
+      "tr": "Çıkış"
     },
     "ipa": "/ɕʼɐʁɐzǝkʼǝn/",
     "rootIds": [],
@@ -899994,7 +900341,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_УНЭМ ЩӀЭПКӀЫН",
     "translations": {
-      "ru": "унэм щӏэпкӏын"
+      "ru": "унэм щӏэпкӏын",
+      "tr": "Şerbetçiotu"
     },
     "ipa": "/ɕʼɐpkʼǝn/",
     "rootIds": [],
@@ -900009,7 +900357,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ШЫР ЩӀЭПКӀЭТАЩ",
     "translations": {
-      "ru": "шыр щӏэпкӏэтащ"
+      "ru": "шыр щӏэпкӏэтащ",
+      "tr": "Sıkılgan, mahcup"
     },
     "ipa": "/ɕʼɐpkʼɐtǝn/",
     "rootIds": [],
@@ -900991,7 +901340,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ЩХЬЭ УНАЗЭ",
     "translations": {
-      "ru": "щхьэ уназэ"
+      "ru": "щхьэ уназэ",
+      "tr": "Baş dönmesi"
     },
     "ipa": "/ɕħɐkʼɐraχʷɐ/",
     "rootIds": [],
@@ -901171,7 +901521,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ФОЧКӀЭ ЩХЬЭПРЫУКӀЫН",
     "translations": {
-      "ru": "фочкӏэ щхьэпрыукӏын"
+      "ru": "фочкӏэ щхьэпрыукӏын",
+      "tr": "Sürgün, filiz"
     },
     "ipa": "/ɕħɐprǝwkʼǝn/",
     "rootIds": [],
@@ -901228,7 +901579,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ПЫӀЭ ЩХЬЭРЫГЪАГЪЫН",
     "translations": {
-      "ru": "пыӏэ щхьэрыгъагъын"
+      "ru": "пыӏэ щхьэрыгъагъын",
+      "tr": "Şapka, kalpak"
     },
     "ipa": "/ɕħɐrǝʁaʁǝn/",
     "rootIds": [],
@@ -901243,7 +901595,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ПЫӀЭР ЩХЬЭРЫГЪЭТӀЫСХ",
     "translations": {
-      "ru": "пыӏэр щхьэрыгъэтӏысхьэн"
+      "ru": "пыӏэр щхьэрыгъэтӏысхьэн",
+      "tr": "Şapka, kalpak"
     },
     "ipa": "/ɕħɐrǝʁɐtʼǝsħɐn/",
     "rootIds": [],
@@ -902009,7 +902362,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ПОЗУМЕНТЩИК",
     "translations": {
-      "ru": "позументщик"
+      "ru": "позументщик",
+      "tr": "Gümüş"
     },
     "ipa": "/ɕǝʁɐɕʼɐ/",
     "rootIds": [],
@@ -910564,7 +910918,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_СБИВАТЬ",
     "translations": {
-      "ru": "сбивать"
+      "ru": "сбивать",
+      "tr": "Çekiç, balyoz"
     },
     "ipa": "/zɐkʼɐrǝʔʷɬʼɐn/",
     "rootIds": [],
@@ -911747,7 +912102,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_САМОКОНТРОЛЬ",
     "translations": {
-      "ru": "самоконтроль"
+      "ru": "самоконтроль",
+      "tr": "Ağacın alt kısmı"
     },
     "ipa": "/zǝkʼɐɬǝpɬǝжǝn/",
     "rootIds": [],
@@ -913812,7 +914168,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ПУТАТЬСЯ",
     "translations": {
-      "ru": "путаться"
+      "ru": "путаться",
+      "tr": "Yün"
     },
     "ipa": "/zɐxɐptsʼɐn/",
     "rootIds": [],
@@ -915989,7 +916346,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_СЕВЕРНЫЙ",
     "translations": {
-      "ru": "северный"
+      "ru": "северный",
+      "tr": "Kuzey"
     },
     "ipa": "/sеvеrnɐ/",
     "rootIds": [],
@@ -916152,7 +916510,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ВНУТРЕННИЕ ОРГАНЫ",
     "translations": {
-      "ru": "внутренние органы"
+      "ru": "внутренние органы",
+      "tr": "İşkembe"
     },
     "ipa": "/kʷʼɐtsʼǝkʼ/",
     "rootIds": [],
@@ -929023,7 +929382,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ЧЕСАТЬСЯ",
     "translations": {
-      "ru": "чесаться"
+      "ru": "чесаться",
+      "tr": "Uyuz"
     },
     "ipa": "/tʼɐχʷɐn/",
     "rootIds": [],
@@ -931149,7 +931509,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_УЧИЛИЩЕ",
     "translations": {
-      "ru": "училище"
+      "ru": "училище",
+      "tr": "Okul"
     },
     "ipa": "/wtʃiliɕɐ/",
     "rootIds": [],
@@ -938124,7 +938485,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_СДВИГАТЬСЯ",
     "translations": {
-      "ru": "сдвигаться"
+      "ru": "сдвигаться",
+      "tr": "Ağacın alt kısmı"
     },
     "ipa": "/qǝtеkʷʼɐtǝn/",
     "rootIds": [],
@@ -943739,7 +944101,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_СЕРЕДИНА ЛЕТА",
     "translations": {
-      "ru": "середина лета"
+      "ru": "середина лета",
+      "tr": "Temmuz"
     },
     "ipa": "/ʁɐmaxwɐkʷ/",
     "rootIds": [],
@@ -944120,7 +944483,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_БЛЁКЛЫМ",
     "translations": {
-      "ru": "блёклым"
+      "ru": "блёклым",
+      "tr": "Ağacın alt kısmı"
     },
     "ipa": "/ʁɐxwɐlɐn/",
     "rootIds": [],
@@ -945361,7 +945725,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ОТРЕЗАТЬ ЧТО-Л",
     "translations": {
-      "ru": "отрезать что-л"
+      "ru": "отрезать что-л",
+      "tr": "Biye, sırma, şerit"
     },
     "ipa": "/еbzǝɬʼɐn/",
     "rootIds": [],
@@ -945720,7 +946085,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ПОСПЕШИТЬ",
     "translations": {
-      "ru": "поспешить"
+      "ru": "поспешить",
+      "tr": "Saz, sazlık"
     },
     "ipa": "/еpɐsɐwɐn/",
     "rootIds": [],
@@ -946495,7 +946861,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_УДАЛИТЬ КОГО-ЧТО-Л",
     "translations": {
-      "ru": "удалить кого-что-л"
+      "ru": "удалить кого-что-л",
+      "tr": "Ağacın alt kısmı"
     },
     "ipa": "/zǝbʁɐdɐxǝn/",
     "rootIds": [],
@@ -946997,7 +947364,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ПОДПОЯСАТЬСЯ ЧЕМ-Л",
     "translations": {
-      "ru": "подпоясаться чем-л"
+      "ru": "подпоясаться чем-л",
+      "tr": "Kemer"
     },
     "ipa": "/zǝɕʼɐpxɐn/",
     "rootIds": [],
@@ -947891,7 +948259,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ВДЕТЬ",
     "translations": {
-      "ru": "вдеть"
+      "ru": "вдеть",
+      "tr": "Biye, sırma, şerit"
     },
     "ipa": "/zɐfʼɐwn/",
     "rootIds": [],
@@ -952246,7 +952615,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ОСЕСТЬ",
     "translations": {
-      "ru": "осесть"
+      "ru": "осесть",
+      "tr": "Kapak, cilt"
     },
     "ipa": "/qǝkʼɐriħɐn/",
     "rootIds": [],
@@ -960087,7 +960457,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_С ДЕРЕВА",
     "translations": {
-      "ru": "с дерева"
+      "ru": "с дерева",
+      "tr": "Ağacın alt kısmı"
     },
     "ipa": "/pǝʃxǝħǝn/",
     "rootIds": [],
@@ -960980,7 +961351,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_СЕМЕЧКИ",
     "translations": {
-      "ru": "семечки"
+      "ru": "семечки",
+      "tr": "Ayçiçeği"
     },
     "ipa": "/sеmǝʃkʼɐ/",
     "rootIds": [],
@@ -962392,7 +962764,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_СОСТРИЧЬ ЧТО-Л",
     "translations": {
-      "ru": "состричь что-л"
+      "ru": "состричь что-л",
+      "tr": "Saç"
     },
     "ipa": "/tеɕǝkʼǝn/",
     "rootIds": [],
@@ -969682,7 +970055,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ПРЕДПЛУЖНИК",
     "translations": {
-      "ru": "предплужник"
+      "ru": "предплужник",
+      "tr": "Önkol"
     },
     "ipa": "/vabdzɐpɐʁʷ/",
     "rootIds": [],
@@ -970810,7 +971184,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ГЛУБОКИЙ ПОКЛОН",
     "translations": {
-      "ru": "глубокий поклон"
+      "ru": "глубокий поклон",
+      "tr": "Yay"
     },
     "ipa": "/kʷrmǝɕ/",
     "rootIds": [],
@@ -971026,7 +971401,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_МАЛЕНЬКАЯ",
     "translations": {
-      "ru": "маленькая"
+      "ru": "маленькая",
+      "tr": "Düğme"
     },
     "ipa": "/qʷxw/",
     "rootIds": [],
@@ -971118,7 +971494,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ТОПОЛЬ СЕРЕБРИСТЫЙ",
     "translations": {
-      "ru": "тополь серебристый"
+      "ru": "тополь серебристый",
+      "tr": "Ak kavak"
     },
     "ipa": "/qɐdabɐɕixw/",
     "rootIds": [],
@@ -971415,7 +971792,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_МАТРАС ПО-БЕСЛЕНЕЕВС",
     "translations": {
-      "ru": "матрас по-бесленеевски"
+      "ru": "матрас по-бесленеевски",
+      "tr": "Döşek"
     },
     "ipa": "/mеndǝrɐ/",
     "rootIds": [],
@@ -972857,7 +973235,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ДЫЛДА",
     "translations": {
-      "ru": "дылда"
+      "ru": "дылда",
+      "tr": "Uzun"
     },
     "ipa": "/ħɐmtsʼwlɐ/",
     "rootIds": [],
@@ -972968,7 +973347,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ЧУМИЗА",
     "translations": {
-      "ru": "чумиза"
+      "ru": "чумиза",
+      "tr": "Bir bitki türü"
     },
     "ipa": "/tsʼǝramǝɕ/",
     "rootIds": [],
@@ -973070,7 +973450,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ПЛЕТНЕВОМ ЗАБОРЕ",
     "translations": {
-      "ru": "плетневом заборе"
+      "ru": "плетневом заборе",
+      "tr": "Avlu kapısı, kapı"
     },
     "ipa": "/tʃowbжɐ/",
     "rootIds": [],
@@ -973193,7 +973574,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_МУХОРТАЯ МАСТЬ",
     "translations": {
-      "ru": "мухортая масть"
+      "ru": "мухортая масть",
+      "tr": "Kestane rengi, al"
     },
     "ipa": "/ʃǝʁʷɐʃǝgеj/",
     "rootIds": [],
@@ -973748,7 +974130,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ВЗДЫХАЯ",
     "translations": {
-      "ru": "вздыхая; зевая; то вздыхая; то зевая"
+      "ru": "вздыхая; зевая; то вздыхая; то зевая",
+      "tr": "Esnemeler"
     },
     "ipa": "xʷǝɕħɐ'ɕɑ:tɐw",
     "rootIds": [],
@@ -974928,7 +975311,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ПЕРЕН",
     "translations": {
-      "ru": "перен; по селам"
+      "ru": "перен; по селам",
+      "tr": "Ağacın alt kısmı"
     },
     "ipa": "ᶎǝɮɐᶎǝ'ɮɐtʹʂɐrɐ",
     "rootIds": [],
@@ -976753,7 +977137,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ДЭРБЗЭР",
     "translations": {
-      "ru": "дэрбзэр"
+      "ru": "дэрбзэр",
+      "tr": "Terzi"
     },
     "ipa": "dɐkʹʷɐ'bzɑ:kʹʷɐ",
     "rootIds": [],
@@ -977698,7 +978083,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ЗАРОСЛИ",
     "translations": {
-      "ru": "заросли"
+      "ru": "заросли",
+      "tr": "Kalın"
     },
     "ipa": "qʹʷɐtsɐˈtʂǝtsɐ",
     "rootIds": [],
@@ -977758,7 +978144,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ПРИДАЧА",
     "translations": {
-      "ru": "придача"
+      "ru": "придача",
+      "tr": "Çarpmak, vurmak"
     },
     "ipa": "qʹǝgʷɐɬħɐnǝgʷɐ'ɬħɐ",
     "rootIds": [],
@@ -978369,7 +978756,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ПОШЛИ",
     "translations": {
-      "ru": "пошли"
+      "ru": "пошли",
+      "tr": "Kuyu"
     },
     "ipa": "nɐkʹʷɐ'sǝkʹʷɐ",
     "rootIds": [],
