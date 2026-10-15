@@ -1449,7 +1449,7 @@
     "translations": {
       "en": "princess; mother-in-law; doll",
       "ru": "княгиня; свекровь; кукла",
-      "tr": "kocanin kiz kardesi",
+      "tr": "hanım, prenses",
       "trSource": "en->tr koprusu (orta)",
       "ar": "أميرة، سيدة، حماة"
     },
@@ -2242,7 +2242,7 @@
     "translations": {
       "ru": "место; постель, кровать",
       "en": "place; bed",
-      "tr": "KAPLAMAK",
+      "tr": "yer, mekân",
       "trSource": "en->tr koprusu (orta)"
     },
     "rootIds": [
@@ -2641,7 +2641,7 @@
     "translations": {
       "ru": "язык; речь; тетива; замок; лезвие",
       "en": "language; speech; bowstring; lock; blade",
-      "tr": "spring",
+      "tr": "dil, lisan",
       "trSource": "en->tr koprusu (orta)",
       "ar": "اللغة، اللسان/ وتر القوس (السلاح)/ الوتر في الهندسة"
     },
@@ -2891,7 +2891,7 @@
     "translations": {
       "ru": "1. вы (мест.) 2. кожа, шкура, кожура, кора",
       "en": "1. you (pl.) 2. skin, hide, peel, bark",
-      "tr": "saklamak",
+      "tr": "deri, cilt; siz",
       "trSource": "en->tr koprusu (orta)",
       "ar": "جلد"
     }
@@ -3245,7 +3245,7 @@
     "translations": {
       "ru": "1. жир, сало 2. три раза 3. сто 4. частица",
       "en": "1. fat, grease 2. three times 3. hundred 4. particle",
-      "tr": "Yağ, içyağı",
+      "tr": "süt",
       "ar": "دهن (الدواجن والحيوانات)/ دَسَم"
     },
     "subConceptId": "DAIRY_PRODUCT",
@@ -3376,7 +3376,7 @@
     "translations": {
       "ru": "длинный, долгий, высокий",
       "en": "long, tall, distant",
-      "tr": "sleeve",
+      "tr": "uzun",
       "ar": "طويل"
     }
   },
@@ -3560,7 +3560,7 @@
     "translations": {
       "ru": "1. старый, ветхий 2. ветер 3. воздух 4. рано",
       "en": "1. old, dilapidated 2. wind 3. air 4. early",
-      "tr": "Boğaz, gırtlak, yutak",
+      "tr": "eski, yaşlı",
       "ar": "الهواء، الجو/ البُكور/ النَفَس"
     }
   },
@@ -5235,7 +5235,7 @@
     ],
     "isLemma": true,
     "translations": {
-      "tr": "Kertenkele türü",
+      "tr": "yılan",
       "en": "snake",
       "ru": "змея",
       "ar": "الأفعى، الحية/ سبع مرات، سبعاً/ إطار باب أو نافذة"
@@ -6099,7 +6099,7 @@
     "translations": {
       "en": "floodplain",
       "ru": "пойма реки",
-      "tr": "SAHİL"
+      "tr": "taşkın yatağı"
     },
     "rootIds": [
       "R-NYDZHE"
@@ -164912,7 +164912,8 @@
     "isLemma": true,
     "translations": {
       "ru": "религ. главный бог <div style='margin-le",
-      "en": "the main god (the supreme deity of the ancient Adyghes)"
+      "en": "the main god (the supreme deity of the ancient Adyghes)",
+      "tr": "[AUTO] freq=45"
     },
     "subConceptId": "GOD_SUPREME",
     "taxonomyFamily": "Tanrı & İnanç",
@@ -775687,7 +775688,8 @@
     "conceptId": "KAVRAM_СЕЛЬЧАНЕ",
     "translations": {
       "ru": "сельчане",
-      "en": "villagers."
+      "en": "villagers.",
+      "tr": "[AUTO] freq=60"
     },
     "ipa": "/жǝlɐdɐs/",
     "rootIds": [],
@@ -984500,7 +984502,8 @@
     "conceptId": "KAVRAM_НИЧТОЖНОСТЬ",
     "translations": {
       "ru": "ничтожность",
-      "en": "a small amount of something l."
+      "en": "a small amount of something l.",
+      "tr": "[AUTO] freq=35"
     },
     "ipa": "/maɕʼaʁɐ/",
     "rootIds": [],
