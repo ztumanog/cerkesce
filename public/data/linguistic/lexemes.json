@@ -23860,7 +23860,8 @@
     "isLemma": true,
     "translations": {
       "en": "fifty-eighth letter of the Kabardino-Cherkess (Circassian) alphabet",
-      "ru": "пятьдесят восьмая буква кабардино-черкесского алфавита"
+      "ru": "пятьдесят восьмая буква кабардино-черкесского алфавита",
+      "tr": "onların"
     }
   },
   {
@@ -249567,7 +249568,10 @@
       "R-SH1E"
     ],
     "conceptId": "EAT_UNDER",
-    "ipa": "/ɕʹɐx'ɕʹɐxu:/"
+    "ipa": "/ɕʹɐx'ɕʹɐxu:/",
+    "translations": {
+      "tr": "sık sık"
+    }
   },
   {
     "id": "L-CORPUS2-02521",
@@ -552773,7 +552777,7 @@
     "translations": {
       "en": "distrustfully, mistrustfully, suspiciously, indecisively, irresolutely",
       "ru": "недоверчиво, нерешительно",
-      "tr": ""
+      "tr": "şüpheci"
     }
   },
   {
@@ -779953,7 +779957,7 @@
     "conceptId": "KAVRAM_ЗНАКОМЫЙ",
     "translations": {
       "ru": "знакомый",
-      "tr": ""
+      "tr": "tanıdık"
     },
     "ipa": "/nɐʔʷasɐ/",
     "rootIds": [],
