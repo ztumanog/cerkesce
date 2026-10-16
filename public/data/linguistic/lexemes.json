@@ -145,7 +145,7 @@
     "translations": {
       "en": "the crown or top of one's head, the top, peak or summit sth",
       "ru": "макушка (головы), верхушка чего-л.",
-      "tr": "bas",
+      "tr": "başın tepesi, kafatası",
       "trSource": "en->tr koprusu (orta)"
     },
     "subConceptId": "HEAD_TOP",
@@ -7360,7 +7360,7 @@
     ],
     "isLemma": true,
     "translations": {
-      "tr": "Un",
+      "tr": "zorluk, çile, meşakkat",
       "en": "difficulty, hardship, trouble",
       "ru": "трудности, тягости",
       "ar": "صعوبة"
@@ -9094,7 +9094,7 @@
     ],
     "isLemma": true,
     "translations": {
-      "tr": "AL",
+      "tr": "yanak, yüz tarafı",
       "en": "cheek, slope (of a mountain or hill)",
       "ru": "щека, склон (горы, холма)",
       "ar": "الوجه"
@@ -11629,7 +11629,7 @@
     },
     "isLemma": true,
     "translations": {
-      "tr": "yay"
+      "tr": "tatlı dilli, geveze, söz ustası"
     },
     "ipa": "/'gʷǝɕʹɐ/",
     "ipaSource": "root-derived"
@@ -17422,7 +17422,7 @@
     "conceptId": "NATURE",
     "isLemma": true,
     "translations": {
-      "tr": "gul",
+      "tr": "gelin kirpiği, peygamber çiçeği",
       "ar": "وردة"
     },
     "subConceptId": "ROSE",
@@ -19771,7 +19771,7 @@
     "translations": {
       "en": "widow, woman-divorcee, married sister-in-law (usually elderly)",
       "ru": "вдова; разведённая с мужем женщина, замужняя золовка (обычно пожилая)",
-      "tr": "DUL"
+      "tr": "büyük kız kardeş, abla"
     },
     "conceptId": "DAUGHTER",
     "subConceptId": "ELDEST_DAUGHTER",
@@ -21234,7 +21234,7 @@
     "translations": {
       "en": "(дегъуэ) перех. гл. заметить, увидеть в ком-чём-л. какой-л. недостаток, изъян ((degue) move. ch. notice to see in someone smth. a liter. shortcoming, defect)",
       "ru": "заметить, увидеть в ком-чём-л. какой-л. недостаток, изъян",
-      "tr": "Top"
+      "tr": "tıkamak, yamamak, kapatmak"
     },
     "subConceptId": "VISION_ACTION",
     "taxonomyFamily": "Eylem & Zihin"
@@ -21412,7 +21412,7 @@
     "translations": {
       "en": "fifty-eighth letter of the Kabardino-Cherkess (Circassian) alphabet",
       "ru": "пятьдесят восьмая буква кабардино-черкесского алфавита",
-      "tr": "YA",
+      "tr": "onların / altı (6)",
       "ar": "I \\tالحرف السادس والأربعون من الألفباء الشركسية ويعني (خاصتهم) (ضمير ملكية)   II \\tخاصتهم (ضمير ملكية)"
     }
   },
@@ -21549,7 +21549,7 @@
     "translations": {
       "ru": "э алфавитым и япэ хьэрф",
       "en": "that",
-      "tr": "I E"
+      "tr": "o (işaret zamiri)"
     },
     "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3f/0001%D0%B0.ogg"
   },
@@ -21695,7 +21695,7 @@
     "translations": {
       "en": "treetop, crown of a tree or plant",
       "ru": "макушка, верхушка (растения)",
-      "tr": "due"
+      "tr": "fakat, ama, -den dolayı"
     }
   },
   {
@@ -24175,7 +24175,7 @@
     "conceptId": "EIGHT",
     "isLemma": true,
     "translations": {
-      "tr": "ait",
+      "tr": "sekiz (8)",
       "ar": "مُلكه، خاصته، له"
     },
     "rootIds": [
@@ -24207,7 +24207,7 @@
     ],
     "isLemma": true,
     "translations": {
-      "tr": "I (",
+      "tr": "veya, yahut / onun",
       "en": "twelfth letter of the Kabardino-Cherkess (CIrcassian) alphabet.",
       "ru": "двенадцатая буква кабардино-черкесского алфавита.",
       "ar": "I \\tالحرف التاسع من الألفباء الشركسية ويعني ( الشر)   II \\tالشر، السوء/ أو، إما أن"
@@ -26815,7 +26815,7 @@
     ],
     "isLemma": true,
     "translations": {
-      "tr": "diz",
+      "tr": "ayak bileği, aşil tendon bölgesi",
       "en": "calf (leg)",
       "ru": "икра"
     },
@@ -31382,7 +31382,7 @@
     "corpusFrequency": 3,
     "isLemma": true,
     "translations": {
-      "tr": "pas",
+      "tr": "paslanmak, küflenmek",
       "ar": "يصدأ"
     },
     "rootIds": [
@@ -35208,7 +35208,7 @@
     "isLemma": true,
     "translations": {
       "ru": "мы</d",
-      "tr": "BIZ",
+      "tr": "nereye / nerede (Batı diyalekti)",
       "ar": "نحن (ضمير المتكلم الجمع)"
     },
     "rootIds": [
