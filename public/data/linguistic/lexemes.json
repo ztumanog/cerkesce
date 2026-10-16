@@ -29,14 +29,16 @@
     ],
     "isLemma": true,
     "translations": {
-      "tr": "sevgi, mutluluk",
+      "tr": "sevinç, mutluluk",
       "en": "joy, happiness, gladness, pleasure, delight, fun, enjoyment",
       "ru": "радость"
     },
     "subConceptId": "EMOTION",
     "taxonomyFamily": "Duygu & Zihin",
     "rootForm": "гу",
-    "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8e/%D0%93%D1%83450%D0%B3%D1%83%D1%84%D3%8F%D1%8D.ogg"
+    "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8e/%D0%93%D1%83450%D0%B3%D1%83%D1%84%D3%8F%D1%8D.ogg",
+    "root": "гу+фӀэ",
+    "wordFamily": "duygu"
   },
   {
     "id": "L-GUF1EN",
@@ -145,12 +147,14 @@
     "translations": {
       "en": "the crown or top of one's head, the top, peak or summit sth",
       "ru": "макушка (головы), верхушка чего-л.",
-      "tr": "başın tepesi, kafatası",
+      "tr": "başın tepesi",
       "trSource": "en->tr koprusu (orta)"
     },
     "subConceptId": "HEAD_TOP",
     "taxonomyFamily": "Üst & Üzeri",
-    "rootForm": "щхьэ-"
+    "rootForm": "щхьэ-",
+    "root": "щхьэ+гу",
+    "wordFamily": "beden/organ"
   },
   {
     "id": "L-SHHYEUSYGHE",
@@ -219,7 +223,7 @@
     ],
     "isLemma": true,
     "translations": {
-      "tr": "yüz, çehre, surat",
+      "tr": "gözün içi",
       "en": "face, physiognomy",
       "ru": "лицо, физиономия",
       "ar": "الوجه"
@@ -229,7 +233,9 @@
     "rootForm": "нэ-",
     "dictionaryEvidence": [
       "sukunov-1998"
-    ]
+    ],
+    "root": "нэ+гу",
+    "wordFamily": "beden/organ"
   },
   {
     "id": "L-GURYYUEN",
@@ -357,7 +363,9 @@
     },
     "subConceptId": "EMOTION",
     "taxonomyFamily": "Duygu & Zihin",
-    "rootForm": "гу"
+    "rootForm": "гу",
+    "root": "гу+бж",
+    "wordFamily": "duygu"
   },
   {
     "id": "L-GUPSYSE",
@@ -418,7 +426,9 @@
     "subConceptId": "THOUGHT",
     "taxonomyFamily": "Duygu & Zihin",
     "rootForm": "гу",
-    "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/3/35/%D0%93%D1%83363%D0%B3%D1%83%D0%BF%D1%81%D1%8B%D1%81%D1%8D.ogg"
+    "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/3/35/%D0%93%D1%83363%D0%B3%D1%83%D0%BF%D1%81%D1%8B%D1%81%D1%8D.ogg",
+    "root": "гу+псысэ",
+    "wordFamily": "zihinsel"
   },
   {
     "id": "L-GUSH1E",
@@ -469,12 +479,14 @@
     "translations": {
       "ru": "глубина души",
       "en": "the depth of one's soul",
-      "tr": "Yürek, bağır, acıma, merhamet"
+      "tr": "yürek, bağır"
     },
     "subConceptId": "EMOTION",
     "taxonomyFamily": "Duygu & Zihin",
     "rootForm": "гу",
-    "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/d/db/%D0%93%D1%83523%D0%B3%D1%83%D1%89%D3%8F%D1%8D.ogg"
+    "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/d/db/%D0%93%D1%83523%D0%B3%D1%83%D1%89%D3%8F%D1%8D.ogg",
+    "root": "гу+щӀэ",
+    "wordFamily": "beden/organ"
   },
   {
     "id": "L-GUSHCHYE",
@@ -651,7 +663,9 @@
     "subConceptId": "CRADLE",
     "taxonomyFamily": "Ev & Eşya",
     "rootForm": "гу",
-    "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a4/%D0%93%D1%83500%D0%B3%D1%83%D1%89%D1%8D.ogg"
+    "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a4/%D0%93%D1%83500%D0%B3%D1%83%D1%89%D1%8D.ogg",
+    "root": "гу+щэ",
+    "wordFamily": "ev"
   },
   {
     "id": "L-1E",
@@ -685,7 +699,7 @@
     "translations": {
       "en": "arm and hand",
       "ru": "рука",
-      "tr": "el, kol",
+      "tr": "el",
       "ar": "يد"
     },
     "subConceptId": "HAND_BODY",
@@ -693,7 +707,9 @@
     "rootForm": "Ӏэ-",
     "dictionaryEvidence": [
       "sukunov-1998"
-    ]
+    ],
+    "root": "Ӏэ",
+    "wordFamily": "beden/organ"
   },
   {
     "id": "L-1EPE",
@@ -728,14 +744,16 @@
     ],
     "isLemma": true,
     "translations": {
-      "tr": "el ucu",
+      "tr": "parmak",
       "en": "finger, key(s)",
       "ru": "палец (руки), клавиш, клавиша",
       "ar": "لوامس"
     },
     "subConceptId": "FINGER_BODY",
     "taxonomyFamily": "İnsan & Beden",
-    "rootForm": "Ӏэ-"
+    "rootForm": "Ӏэ-",
+    "root": "Ӏэ+пэ",
+    "wordFamily": "beden/organ"
   },
   {
     "id": "L-1EGU",
@@ -769,7 +787,7 @@
     ],
     "isLemma": true,
     "translations": {
-      "tr": "avuç",
+      "tr": "avuç içi",
       "en": "palm (of the hand)",
       "ru": "ладонь"
     },
@@ -778,7 +796,9 @@
     "rootForm": "Ӏэ-",
     "dictionaryEvidence": [
       "sukunov-1998"
-    ]
+    ],
+    "root": "Ӏэ+гу",
+    "wordFamily": "beden/organ"
   },
   {
     "id": "L-1EPKYLEPK",
@@ -881,7 +901,9 @@
     "rootForm": "лъэ-",
     "dictionaryEvidence": [
       "sukunov-1998"
-    ]
+    ],
+    "root": "лъэ+гу",
+    "wordFamily": "beden/organ"
   },
   {
     "id": "L-LHEBAKUE",
@@ -1560,7 +1582,9 @@
     },
     "subConceptId": "NOSE_BODY",
     "taxonomyFamily": "İnsan & Beden",
-    "rootForm": "пэ-"
+    "rootForm": "пэ-",
+    "root": "пэ",
+    "wordFamily": "beden/organ"
   },
   {
     "id": "L-PEKUKU",
@@ -2563,7 +2587,9 @@
       "trSource": "en->tr koprusu (orta)",
       "ar": "اللغة، اللسان/ وتر القوس (السلاح)/ الوتر في الهندسة"
     },
-    "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c6/%D0%91625%D0%B1%D0%B7%D1%8D.ogg"
+    "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c6/%D0%91625%D0%B1%D0%B7%D1%8D.ogg",
+    "root": "бзэ",
+    "wordFamily": "dil"
   },
   {
     "id": "L-FYN",
@@ -4682,10 +4708,12 @@
     "translations": {
       "en": "tongue",
       "ru": "язык (орган)",
-      "tr": "dil",
+      "tr": "dil (organ)",
       "ar": "اللسان (عضو في الكائنات الحية)"
     },
-    "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d4/%D0%91626%D0%B1%D0%B7%D1%8D%D0%B3%D1%83.ogg"
+    "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d4/%D0%91626%D0%B1%D0%B7%D1%8D%D0%B3%D1%83.ogg",
+    "root": "бзэ+гу",
+    "wordFamily": "beden/organ"
   },
   {
     "id": "L-BZEPSE",
@@ -7074,7 +7102,9 @@
     "subConceptId": "DIFFICULTY",
     "taxonomyFamily": "Durum & Nitelik",
     "rootForm": "гугъу",
-    "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e1/%D0%93%D1%83225%D0%B3%D1%83%D0%B3%D1%8A%D1%83.ogg"
+    "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e1/%D0%93%D1%83225%D0%B3%D1%83%D0%B3%D1%8A%D1%83.ogg",
+    "root": "гу+гъу",
+    "wordFamily": "durum"
   },
   {
     "id": "L-GUGHUEGHE",
@@ -7459,7 +7489,9 @@
     "rootForm": "лъэ-",
     "dictionaryEvidence": [
       "sukunov-1998"
-    ]
+    ],
+    "root": "лъэ+гуажьэ",
+    "wordFamily": "beden/organ"
   },
   {
     "id": "L-LHEMYDJ",
@@ -14106,7 +14138,7 @@
     ],
     "isLemma": true,
     "translations": {
-      "tr": "baş, kafa",
+      "tr": "baş",
       "en": "head (human, animal), head (unit for counting livestock), the top, cover or lid of sth, roof",
       "ru": "голова (человека, животного), голова (единица счёта скота), верх чего-л.; крышка, крыша",
       "ar": "رأس"
@@ -14116,7 +14148,9 @@
     "rootForm": "щхьэ-",
     "dictionaryEvidence": [
       "sukunov-1998"
-    ]
+    ],
+    "root": "щхьэ",
+    "wordFamily": "beden/organ"
   },
   {
     "id": "L-AQYL",
@@ -14486,7 +14520,7 @@
     ],
     "isLemma": true,
     "translations": {
-      "tr": "goz",
+      "tr": "göz",
       "en": "eye, opening, hole, eye, cell in sth",
       "ru": "глаз, отверстие, ячейка, ушко в чём-л."
     },
@@ -14496,7 +14530,9 @@
     "dictionaryEvidence": [
       "sukunov-1998"
     ],
-    "conceptId": "GÖZ"
+    "conceptId": "GÖZ",
+    "root": "нэ",
+    "wordFamily": "beden/organ"
   },
   {
     "id": "L-NAP1E",
@@ -14866,7 +14902,7 @@
     "ipa": "/'ʔɐpɕɐ/",
     "isLemma": true,
     "translations": {
-      "tr": "el bilegi",
+      "tr": "bilek",
       "en": "wrist, handle, hilt",
       "ru": "запястье, рукоять, эфес",
       "ar": "معصم"
@@ -14876,7 +14912,9 @@
     "rootForm": "Ӏэ-",
     "dictionaryEvidence": [
       "sukunov-1998"
-    ]
+    ],
+    "root": "Ӏэ+пщэ",
+    "wordFamily": "beden/organ"
   },
   {
     "id": "L-1EFRAK1E",
@@ -15023,7 +15061,9 @@
     "rootForm": "лъэ-",
     "dictionaryEvidence": [
       "sukunov-1998"
-    ]
+    ],
+    "root": "лъэ+дакъэ",
+    "wordFamily": "beden/organ"
   },
   {
     "id": "L-ZHEM",
@@ -18223,7 +18263,9 @@
     "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f9/%D0%93%D1%83001%D0%B3%D1%83.ogg",
     "dictionaryEvidence": [
       "sukunov-1998"
-    ]
+    ],
+    "root": "гу",
+    "wordFamily": "beden/organ"
   },
   {
     "id": "L-KHEN",
@@ -21472,7 +21514,9 @@
       "tr": "yol",
       "ar": "طريق"
     },
-    "literalMeaningSource": "translations.tr (yuksek)"
+    "literalMeaningSource": "translations.tr (yuksek)",
+    "root": "гъуэ+гу",
+    "wordFamily": "mekan"
   },
   {
     "id": "L-D0B3D183D0B1",
@@ -26935,7 +26979,7 @@
     ],
     "isLemma": true,
     "translations": {
-      "tr": "merhamet, şefkat",
+      "tr": "merhamet",
       "en": "mercy, empathy, pity, compassion, sympathy, charity, clemency",
       "ru": "сострадание, жалость; милосердие",
       "ar": "تعاطف"
@@ -26943,7 +26987,9 @@
     "subConceptId": "EMOTION",
     "taxonomyFamily": "Duygu & Zihin",
     "rootForm": "гу",
-    "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/6/69/%D0%93%D1%83524%D0%B3%D1%83%D1%89%D3%8F%D1%8D%D0%B3%D1%8A%D1%83.ogg"
+    "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/6/69/%D0%93%D1%83524%D0%B3%D1%83%D1%89%D3%8F%D1%8D%D0%B3%D1%8A%D1%83.ogg",
+    "root": "гу+щӀэгъу",
+    "wordFamily": "duygu"
   },
   {
     "id": "L-D182D380D0BE",
@@ -31747,7 +31793,9 @@
     "rootForm": "лъэ-",
     "dictionaryEvidence": [
       "sukunov-1998"
-    ]
+    ],
+    "root": "лъэ",
+    "wordFamily": "beden/organ"
   },
   {
     "id": "L-GHASH1E",
@@ -76074,12 +76122,14 @@
     "translations": {
       "ru": "кожа головы / Щхьэм телъ фэ",
       "en": "scalp, skin of the head, surface of sth (for example, of the Earth), the upper belt part of a bridle or halter",
-      "tr": "yüzey",
+      "tr": "başın yüzeyi",
       "ar": "سطح"
     },
     "subConceptId": "HEAD_SKIN",
     "taxonomyFamily": "Baş & Kafa",
-    "rootForm": "щхьэ-"
+    "rootForm": "щхьэ-",
+    "root": "щхьэ+фэ",
+    "wordFamily": "beden/organ"
   },
   {
     "id": "L-CORPUS-01424",
@@ -113831,7 +113881,7 @@
     "translations": {
       "ru": "макушка, верхняя часть чего-л",
       "en": "the top, the summit, the peak, the crest, the upper part of sth, the upper space above sb or sth; zenith",
-      "tr": "bas",
+      "tr": "tepenin ortası",
       "trSource": "en->tr koprusu (orta)"
     },
     "subConceptId": "HEAD_TOP",
@@ -113840,7 +113890,9 @@
     "examples": [
       "*Бгы щхьэщыгу.",
       "*Дыгъэр щхьэщыгум къихьащ."
-    ]
+    ],
+    "root": "щхьэ+щыгу",
+    "wordFamily": "beden/organ"
   },
   {
     "id": "L-CORPUS-02752",
@@ -157655,12 +157707,14 @@
     "translations": {
       "ru": "кончик языка / Бзэгум и пэ",
       "en": "the tip of the tongue, the tonguetip",
-      "tr": "Dilin ucu"
+      "tr": "dil ucu"
     },
     "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/4/40/%D0%91631%D0%B1%D0%B7%D1%8D%D0%B3%D1%83%D0%BF%D1%8D.ogg",
     "dictionaryEvidence": [
       "sukunov-1998"
-    ]
+    ],
+    "root": "бзэ+гу+пэ",
+    "wordFamily": "beden/organ"
   },
   {
     "id": "L-CORPUS-04333",
@@ -307146,14 +307200,16 @@
     ],
     "isLemma": true,
     "translations": {
-      "tr": "hekim",
+      "tr": "usta, doktor",
       "en": "dexterous, skillful, knowledgeable, well-versed, talented, gifted, learned, erudite",
       "ru": "ловкий, искусный, умелый, знающий, сведущий, талантливый, одаренный, ученый, эрудированный",
       "ar": "ماهر"
     },
     "subConceptId": "DOCTOR_PHYSICIAN",
     "taxonomyFamily": "Toplum & Meslek",
-    "rootForm": "Ӏэ-"
+    "rootForm": "Ӏэ-",
+    "root": "Ӏэ+зэ",
+    "wordFamily": "meslek"
   },
   {
     "id": "L-PROMPT-00030",
@@ -313806,8 +313862,10 @@
     "translations": {
       "en": "a lot of, much, many, plenty of",
       "ru": "много",
-      "tr": "Kurşun, mermi"
-    }
+      "tr": "alet, edevat"
+    },
+    "root": "Ӏэ+мэ",
+    "wordFamily": "araç"
   },
   {
     "id": "L-KBD-00170",
@@ -465936,12 +465994,14 @@
     "partOfSpeech": "noun",
     "conceptId": "ALET",
     "translations": {
-      "tr": "Maşa, kıskaç, kerpeten"
+      "tr": "kerpeten"
     },
     "ipa": "/ʔadɐ/",
     "rootIds": [],
     "literalMeaning": "pense, kıskaç",
-    "literalMeaningSource": "translations.tr (yuksek)"
+    "literalMeaningSource": "translations.tr (yuksek)",
+    "root": "Ӏэ+дэ",
+    "wordFamily": "araç"
   },
   {
     "id": "HUV3-IАДЗЭ",
@@ -467465,7 +467525,7 @@
     "partOfSpeech": "noun",
     "conceptId": "ALET",
     "translations": {
-      "tr": "Kesici diş, ön diş",
+      "tr": "kerpeten",
       "en": "Tongs, pliers, pincers",
       "ru": "Щипцы, клещи"
     },
@@ -467479,7 +467539,9 @@
       "! Адыгэбзэ, Гугъуэт Л. Т., Зэхъуэхъу Л. Хь,  !!  «Эльбрус» тхылъ тедзапӀэ, Налшык, 1984''' !! нап. 57",
       "! адыгэбзэ !! урысыбзэ/русский  !! инджылыбзэ/English",
       "| Ӏэбу Ӏэди уади иӀэщ. || У Абу инструменты.|| Abu has some tools."
-    ]
+    ],
+    "root": "Ӏэ+дэ",
+    "wordFamily": "araç"
   },
   {
     "id": "HUV3-IЭДЭБ",
@@ -468007,7 +468069,7 @@
     "partOfSpeech": "noun",
     "conceptId": "WEAPON",
     "translations": {
-      "tr": "silah",
+      "tr": "çolak, elsiz",
       "en": "Arm, weapon",
       "ru": "Оружие",
       "ar": "أسلحة"
@@ -468021,7 +468083,9 @@
       "Дзэлыкъуэ зауэм щыгъуэ Къылышбийр кӀуауэ щытащ Ӏэщэ къэзыӀэта къэрэхьэлъкъыр зэбгрихуну. КӀ. А.",
       "ӀэщэкӀэ зэщӀэузэда шууитӀым япэуващ Сэфар. Ӏуащхь."
     ],
-    "examplesSource": "1.Ady-Ady_AP.json (◊)"
+    "examplesSource": "1.Ady-Ady_AP.json (◊)",
+    "root": "Ӏэ+шэ",
+    "wordFamily": "durum"
   },
   {
     "id": "HUV3-IЭЩЭЗЭЩ",
@@ -479738,7 +479802,7 @@
     "conceptId": "KAVRAM_СПОКОЙНЫЙ",
     "translations": {
       "ru": "спокойный",
-      "tr": "EHLILEŞMEK",
+      "tr": "uslu, alışkın",
       "en": "tranquil"
     },
     "ipa": "/ʔɐsɐ/",
@@ -479749,7 +479813,9 @@
     "examples": [
       "*ЩӀалэ Ӏэсэ.",
       "*Жэм Ӏэсэ."
-    ]
+    ],
+    "root": "Ӏэ+сэ",
+    "wordFamily": "kişilik"
   },
   {
     "id": "KAV-ТХЪУРЫМБЕЙ",
@@ -480501,7 +480567,7 @@
     "conceptId": "KAVRAM_БОКАЛ",
     "translations": {
       "ru": "бокал",
-      "tr": "bardak",
+      "tr": "avuç",
       "ar": "كأس",
       "en": "glass"
     },
@@ -480512,7 +480578,9 @@
     "literalMeaningSource": "ru->tr (KAVRAM_ etiketi) (orta)",
     "examples": [
       "*ӀэгубжьэкӀэ махъсымэ ефэн."
-    ]
+    ],
+    "root": "Ӏэ+гу+бжьэ",
+    "wordFamily": "beden/organ"
   },
   {
     "id": "KAV-КЪАУГЪЭНШЭ",
@@ -483803,7 +483871,7 @@
     "conceptId": "KAVRAM_ПЕРЧАТКИ",
     "translations": {
       "ru": "перчатки",
-      "tr": "ELDİVEN",
+      "tr": "eldiven",
       "ar": "قفاز",
       "en": "gloves; mittens; mittens"
     },
@@ -483812,7 +483880,9 @@
     "notes": "Kaynak: 1.Ady-Ady_AP.json, 19.Kbd-Ru-2-Jonty.json",
     "examples": [
       "*Цы Ӏэлъэ."
-    ]
+    ],
+    "root": "Ӏэ+лъэ",
+    "wordFamily": "giyim"
   },
   {
     "id": "KAV-ЦӀЫКӀУФЭКӀУ",
@@ -484328,7 +484398,7 @@
     "conceptId": "KAVRAM_ИНОЯЗЫЧНЫЙ",
     "translations": {
       "ru": "иноязычный",
-      "tr": "TAT",
+      "tr": "dilsiz",
       "ar": "أبكم، كل أعجمي لا يتكلم اللغة الأدِغية (الشركسية)",
       "en": "foreign language"
     },
@@ -484339,7 +484409,9 @@
       "Хьэжы-Исмел щӀибжыкӀ бзэмыӀубзэм лъэщыгъэ ин хэлъу.. къафӀощӀ зыкъомым. Ш. А."
     ],
     "examplesSource": "1.Ady-Ady_AP.json (◊)",
-    "audioUrl": "б639бзэмыӏу.ogg"
+    "audioUrl": "б639бзэмыӏу.ogg",
+    "root": "бзэ+мыӀу",
+    "wordFamily": "durum"
   },
   {
     "id": "KAV-БЛЭТХЬЭКӀУМЭ",
@@ -497134,7 +497206,7 @@
     "conceptId": "KAVRAM_НЕУКРОТИМЫМ",
     "translations": {
       "ru": "неукротимым",
-      "tr": "HUYLANMAK",
+      "tr": "yüzük",
       "en": "meel; ch. be unchecked"
     },
     "ipa": "/ʔɐlǝn/",
@@ -497143,7 +497215,9 @@
     "examples": [
       "- Апхуэдизу умыӀэл, цӀыхум уахэзэгъэнкъым, - еущиерт лӀыр и лэжьэгъу щӀалэм. Лъэб."
     ],
-    "examplesSource": "1.Ady-Ady_AP.json (◊)"
+    "examplesSource": "1.Ady-Ady_AP.json (◊)",
+    "root": "Ӏэ+лын",
+    "wordFamily": "süs"
   },
   {
     "id": "KAV-ЛЭЖЬЭКӀЭ",
@@ -688825,18 +688899,22 @@
   {
     "form": "гузэпыкӏы",
     "translations": {
-      "tr": "endişelenmek, kaygılanmak"
+      "tr": "endişelenmek"
     },
     "pos": "UNKNOWN",
-    "notes": "[MANUEL] Dogu kok"
+    "notes": "[MANUEL] Dogu kok",
+    "root": "гу+зэпыкӀы",
+    "wordFamily": "duygu"
   },
   {
     "form": "гукъэбзагъэ",
     "translations": {
-      "tr": "temiz kalplilik, samimiyet"
+      "tr": "temiz kalplilik"
     },
     "pos": "UNKNOWN",
-    "notes": "[MANUEL] Dogu kok"
+    "notes": "[MANUEL] Dogu kok",
+    "root": "гу+къэбзагъэ",
+    "wordFamily": "ahlak"
   },
   {
     "form": "гупсэса",
@@ -690849,10 +690927,12 @@
   {
     "form": "Ӏэгъуэ",
     "translations": {
-      "tr": "yakın çevre, komşuluk"
+      "tr": "giden, yürüyen el"
     },
     "pos": "UNKNOWN",
-    "notes": "[1.AP]"
+    "notes": "[1.AP]",
+    "root": "Ӏэ+гъуэ",
+    "wordFamily": "kişilik"
   },
   {
     "form": "Ӏэмблъэмб",
@@ -701405,5 +701485,265 @@
     },
     "pos": "UNKNOWN",
     "notes": "[Jonty]"
+  },
+  {
+    "form": "Ӏэпщо",
+    "translations": {
+      "tr": "bilezik"
+    },
+    "pos": "UNKNOWN",
+    "root": "Ӏэ+пщо",
+    "wordFamily": "süs",
+    "notes": "[Domanic PDF]"
+  },
+  {
+    "form": "Ӏэрилъа",
+    "translations": {
+      "tr": "peşin ödeme"
+    },
+    "pos": "UNKNOWN",
+    "root": "Ӏэ+рилъа",
+    "wordFamily": "ticaret",
+    "notes": "[Domanic PDF]"
+  },
+  {
+    "form": "Ӏэрмилъа",
+    "translations": {
+      "tr": "veresiye"
+    },
+    "pos": "UNKNOWN",
+    "root": "Ӏэ+рмилъа",
+    "wordFamily": "ticaret",
+    "notes": "[Domanic PDF]"
+  },
+  {
+    "form": "ӀэвидипӀэ",
+    "translations": {
+      "tr": "kulp, tutamak"
+    },
+    "pos": "UNKNOWN",
+    "root": "Ӏэ+видипӀэ",
+    "wordFamily": "araç",
+    "notes": "[Domanic PDF]"
+  },
+  {
+    "form": "ӀэвидипӀэншэ",
+    "translations": {
+      "tr": "tutacak yeri olmayan"
+    },
+    "pos": "UNKNOWN",
+    "root": "Ӏэ+видипӀэ+ншэ",
+    "wordFamily": "durum",
+    "notes": "[Domanic PDF]"
+  },
+  {
+    "form": "Ӏэрисен",
+    "translations": {
+      "tr": "el emeği ile yetiştirmek"
+    },
+    "pos": "UNKNOWN",
+    "root": "Ӏэ+рисен",
+    "wordFamily": "eylem",
+    "notes": "[Domanic PDF]"
+  },
+  {
+    "form": "Ӏэригъэхьэн",
+    "translations": {
+      "tr": "ele geçirmek"
+    },
+    "pos": "UNKNOWN",
+    "root": "Ӏэ+ригъэхьэн",
+    "wordFamily": "eylem",
+    "notes": "[Domanic PDF]"
+  },
+  {
+    "form": "гузэв",
+    "translations": {
+      "tr": "telaş"
+    },
+    "pos": "UNKNOWN",
+    "root": "гу+зэв",
+    "wordFamily": "duygu",
+    "notes": "[Domanic PDF]"
+  },
+  {
+    "form": "гупсэсэн",
+    "translations": {
+      "tr": "derin düşünmek"
+    },
+    "pos": "UNKNOWN",
+    "root": "гу+псэсэн",
+    "wordFamily": "zihinsel",
+    "notes": "[Domanic PDF]"
+  },
+  {
+    "form": "гуфӀэгъу",
+    "translations": {
+      "tr": "sevinç, mutluluk"
+    },
+    "pos": "UNKNOWN",
+    "root": "гу+фӀэгъу",
+    "wordFamily": "duygu",
+    "notes": "[Domanic PDF]"
+  },
+  {
+    "form": "гугъа",
+    "translations": {
+      "tr": "ümit etmek"
+    },
+    "pos": "UNKNOWN",
+    "root": "гу+гъа",
+    "wordFamily": "duygu",
+    "notes": "[Domanic PDF]"
+  },
+  {
+    "form": "бзэгухьин",
+    "translations": {
+      "tr": "dedikoducu"
+    },
+    "pos": "UNKNOWN",
+    "root": "бзэ+гухьин",
+    "wordFamily": "kişilik",
+    "notes": "[Domanic PDF]"
+  },
+  {
+    "form": "лъэпэ",
+    "translations": {
+      "tr": "ayak ucu"
+    },
+    "pos": "UNKNOWN",
+    "root": "лъэ+пэ",
+    "wordFamily": "beden/organ",
+    "notes": "[Domanic PDF]"
+  },
+  {
+    "form": "лъэпэгу",
+    "translations": {
+      "tr": "ayak ucu bölgesi"
+    },
+    "pos": "UNKNOWN",
+    "root": "лъэ+пэ+гу",
+    "wordFamily": "beden/organ",
+    "notes": "[Domanic PDF]"
+  },
+  {
+    "form": "пэгу",
+    "translations": {
+      "tr": "burnun ortası"
+    },
+    "pos": "UNKNOWN",
+    "root": "пэ+гу",
+    "wordFamily": "beden/organ",
+    "notes": "[Domanic PDF]"
+  },
+  {
+    "form": "нэпэ",
+    "translations": {
+      "tr": "yüz, surat"
+    },
+    "pos": "UNKNOWN",
+    "root": "нэ+пэ",
+    "wordFamily": "beden/organ",
+    "notes": "[Domanic PDF]"
+  },
+  {
+    "form": "нэпэгу",
+    "translations": {
+      "tr": "suratın ortası"
+    },
+    "pos": "UNKNOWN",
+    "root": "нэ+пэ+гу",
+    "wordFamily": "beden/organ",
+    "notes": "[Domanic PDF]"
+  },
+  {
+    "form": "нэтэ",
+    "translations": {
+      "tr": "alın"
+    },
+    "pos": "UNKNOWN",
+    "root": "нэ+тэ",
+    "wordFamily": "beden/organ",
+    "notes": "[Domanic PDF]"
+  },
+  {
+    "form": "нэтэгу",
+    "translations": {
+      "tr": "alının ortası"
+    },
+    "pos": "UNKNOWN",
+    "root": "нэ+тэ+гу",
+    "wordFamily": "beden/organ",
+    "notes": "[Domanic PDF]"
+  },
+  {
+    "form": "щхьэфэгу",
+    "translations": {
+      "tr": "tepenin ortası"
+    },
+    "pos": "UNKNOWN",
+    "root": "щхьэ+фэ+гу",
+    "wordFamily": "beden/organ",
+    "notes": "[Domanic PDF]"
+  },
+  {
+    "form": "жэгу",
+    "translations": {
+      "tr": "ocak"
+    },
+    "pos": "UNKNOWN",
+    "root": "жэ+гу",
+    "wordFamily": "ev",
+    "notes": "[Domanic PDF]"
+  },
+  {
+    "form": "бжэгу",
+    "translations": {
+      "tr": "avlu"
+    },
+    "pos": "UNKNOWN",
+    "root": "бжэ+гу",
+    "wordFamily": "mekan",
+    "notes": "[Domanic PDF]"
+  },
+  {
+    "form": "Ӏэтхыгъэ",
+    "translations": {
+      "tr": "el yazısı"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[Domanic PDF]"
+  },
+  {
+    "form": "бзэӀагъэ",
+    "translations": {
+      "tr": "arsız"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[Domanic PDF]"
+  },
+  {
+    "form": "Ӏэвлъэв хъун",
+    "translations": {
+      "tr": "ı sınmak, çözülmek"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[Domanic PDF]"
+  },
+  {
+    "form": "Ӏэвос",
+    "translations": {
+      "tr": "yulaf"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[Domanic PDF]"
+  },
+  {
+    "form": "Ӏэвосгъуэжь",
+    "translations": {
+      "tr": "yulaf (sarı)"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[Domanic PDF]"
   }
 ]
