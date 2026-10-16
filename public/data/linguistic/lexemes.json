@@ -17547,7 +17547,7 @@
     },
     "isLemma": true,
     "translations": {
-      "tr": "lale"
+      "tr": "arı otu (bitki)"
     },
     "conceptId": "PLANT",
     "subConceptId": "GARLIC_FLOWER",
@@ -34180,7 +34180,7 @@
     },
     "isLemma": true,
     "translations": {
-      "tr": "eksiklik, yoksunluk"
+      "tr": "eksiklik, kusur, yoksunluk"
     },
     "subConceptId": "EMOTION",
     "taxonomyFamily": "Duygu & Zihin",
@@ -190120,7 +190120,7 @@
     "ipaSource": "root-derived",
     "ipa": "/eħǝɬʼɐʁɐ/",
     "translations": {
-      "tr": "hijyenik"
+      "tr": "ilişki, alaka, dair olma"
     }
   },
   {
@@ -217473,7 +217473,10 @@
     },
     "conceptId": "SEVEN",
     "ipaSource": "root-derived",
-    "ipa": "/blǝwrɐ/"
+    "ipa": "/blǝwrɐ/",
+    "translations": {
+      "tr": "yedişerli, yedi kez"
+    }
   },
   {
     "id": "L-CORPUS2-04410",
@@ -236263,7 +236266,7 @@
     "ipa": "/ʔʷɐ'xʷǝʂxʷɐ/",
     "ipaSource": "root-derived",
     "translations": {
-      "tr": "yil + TAMAMEN"
+      "tr": "yönetici, icra eden"
     }
   },
   {
@@ -247071,7 +247074,7 @@
     "conceptId": "WORK",
     "ipa": "/je:ɮɐ'ʑǝn/",
     "translations": {
-      "tr": "ilgilenmek + yil"
+      "tr": "çalışma, emek verme"
     }
   },
   {
@@ -248998,7 +249001,7 @@
     "ipa": "/'gʷǝfʹɐ/",
     "ipaSource": "root-derived",
     "translations": {
-      "tr": "IŞÇEN"
+      "tr": "bağışlama, cömertlik"
     },
     "literalMeaningSource": "translations.tr (yuksek)"
   },
@@ -827075,7 +827078,7 @@
   {
     "form": "адыгэшхы",
     "translations": {
-      "tr": "Çerkes mutfağı"
+      "tr": "Çerkes mutfağı, Çerkes yemeği"
     },
     "pos": "UNKNOWN",
     "notes": "[MANUEL] Dogu kok ekleme"
@@ -827139,7 +827142,7 @@
   {
     "form": "ашхы",
     "translations": {
-      "tr": "yemek"
+      "tr": "yemek, yemek yemek"
     },
     "pos": "UNKNOWN",
     "notes": "[MANUEL] Dogu kok"
@@ -827444,6 +827447,174 @@
     "form": "жьыбгъ",
     "translations": {
       "tr": "rüzgar"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "бгощы",
+    "translations": {
+      "tr": "bölmek, parçalamak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "бжьыфӏагъэ",
+    "translations": {
+      "tr": "güz sonu, sonbahar güzelliği"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "блана",
+    "translations": {
+      "tr": "genişlemek, yayılmak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "бэды",
+    "translations": {
+      "tr": "çoğalmak, artmak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "гуфӏэгъуэ",
+    "translations": {
+      "tr": "sevinç, mutluluk"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "гъахъ",
+    "translations": {
+      "tr": "yetişmiş, olgunlaşmış"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "гъуналъэ",
+    "translations": {
+      "tr": "sınır, hudut çizgisi"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "гъусул",
+    "translations": {
+      "tr": "gusül abdesti"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "гъущӏыщӏэ",
+    "translations": {
+      "tr": "yeni demir, çelik"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "гъуэфкӏыфӏ",
+    "translations": {
+      "tr": "koyu kızıl renk"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "гъуэщӏ",
+    "translations": {
+      "tr": "sığınak, mağara, gizli yer"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "джейран",
+    "translations": {
+      "tr": "ceylan"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "джума",
+    "translations": {
+      "tr": "Cuma günü"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "джэрэзэ",
+    "translations": {
+      "tr": "kamçı, at sürme aracı"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "еджажэ",
+    "translations": {
+      "tr": "okumaya çalışmak, öğrenim görmek"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "елъэтахэ",
+    "translations": {
+      "tr": "yalvarmak, rica etmek"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "епты",
+    "translations": {
+      "tr": "vermek"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "епӏо",
+    "translations": {
+      "tr": "söylemek, ifade etmek"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "естыжьы",
+    "translations": {
+      "tr": "geri vermek, iade etmek"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "еупчӏы",
+    "translations": {
+      "tr": "sormak, sorgulamak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "ехъуэхы",
+    "translations": {
+      "tr": "tebrik etmek, kutlamak"
     },
     "pos": "UNKNOWN",
     "notes": "[MANUEL] Dogu kok"
