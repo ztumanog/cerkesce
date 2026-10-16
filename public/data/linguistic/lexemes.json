@@ -34535,7 +34535,10 @@
     },
     "isLemma": true,
     "ipaSource": "root-derived",
-    "translationSource": "literalMeaning-derived"
+    "translationSource": "literalMeaning-derived",
+    "translations": {
+      "tr": "düşünmek, tasalanmak"
+    }
   },
   {
     "id": "L-NYBZH",
@@ -34950,7 +34953,7 @@
     "translations": {
       "en": "brother (in relation to sister)",
       "ru": "брат (по отношению к сестре)",
-      "tr": "erkek kardeş (kadına göre)"
+      "tr": "erkek kardeş (bayan için)"
     },
     "notes": "Kaynak: sukunov-1998",
     "dictionaryEvidence": [
@@ -97678,7 +97681,8 @@
     "notes": "Corpus v1.0 (freq: 19, lang: kbd, source: 6.Ady-Rus_Sherdjes)",
     "isLemma": true,
     "translations": {
-      "ru": "кон. Анзор"
+      "ru": "кон. Анзор",
+      "tr": "Anzor (özel isim)"
     },
     "ipa": "/aːnzwar/"
   },
@@ -98993,7 +98997,7 @@
     "translations": {
       "ru": "жалоба",
       "en": "complaint; whimper",
-      "tr": "ŞİKAYET",
+      "tr": "şikayet",
       "ar": "شكوى"
     },
     "conceptId": "COMPLAINT",
@@ -109266,7 +109270,7 @@
     "translations": {
       "ru": "вдали, вдалеке / Зыгуэрым пэмыгъунэгъуу, п",
       "en": "far away, distantly, remotely",
-      "tr": "",
+      "tr": "uzaktan uzağa, epeyce uzakta",
       "trSource": "en->tr koprusu (orta)"
     },
     "subConceptId": "FAR_ADV",
@@ -130288,7 +130292,8 @@
     "notes": "Corpus v1.0 (freq: 12, lang: kbd, source: 6.Ady-Rus_Sherdjes)",
     "isLemma": true,
     "translations": {
-      "ru": "кон. Кушук"
+      "ru": "кон. Кушук",
+      "tr": "küçük araba, sepetli araç"
     },
     "rootIds": [
       "R-SHY"
@@ -141114,7 +141119,7 @@
     "translations": {
       "en": "as long a you live, for the rest of one's life of your life, until his death.",
       "ru": "до конца жизни",
-      "tr": "",
+      "tr": "yaşadığı sürece, hayatta iken",
       "trSource": "en->tr koprusu (orta)"
     }
   },
@@ -157017,7 +157022,8 @@
     "ipa": "/ʃwafjar/",
     "translations": {
       "ar": "سائق",
-      "ru": "ШОФЕР, -рых / шофер, -рхэр, -рмэ // -рхэм. Шофер. Автомашинэ зеф. Шоферым машинэр етхьакӀы. Ащ шоферэу Ӏоф ешӀэ."
+      "ru": "ШОФЕР, -рых / шофер, -рхэр, -рмэ // -рхэм. Шофер. Автомашинэ зеф. Шоферым машинэр етхьакӀы. Ащ шоферэу Ӏоф ешӀэ.",
+      "tr": "şoför, sürücü"
     }
   },
   {
@@ -166400,7 +166406,8 @@
     "conceptId": "CRADLE",
     "ipa": "/ʂaxt/",
     "translations": {
-      "ru": "ШАХТЕР, -рых / шахтер, -рхэр, -рмэ // -рхэм. Шахтер. Шахтым Ӏоф щызышӀэрэр, щылажьэрэр. Ар – шахтер пэрыт. Шахтерым ипшъэрылъ дэгъоу егъэцакӀэ."
+      "ru": "ШАХТЕР, -рых / шахтер, -рхэр, -рмэ // -рхэм. Шахтер. Шахтым Ӏоф щызышӀэрэр, щылажьэрэр. Ар – шахтер пэрыт. Шахтерым ипшъэрылъ дэгъоу егъэцакӀэ.",
+      "tr": "madenci, şahter"
     }
   },
   {
@@ -487190,7 +487197,7 @@
     "translations": {
       "en": "",
       "ru": "хуэсакъыу(рэ):, осторожно, бережно, аккуратно, бдительно",
-      "tr": "Uğrunda can vermek"
+      "tr": "dikkat ederek, sakınarak"
     }
   },
   {
@@ -781189,5 +781196,13 @@
     },
     "pos": "UNKNOWN",
     "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "янэ-ятэ",
+    "translations": {
+      "tr": "ebeveynler, ana-baba"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL]"
   }
 ]
