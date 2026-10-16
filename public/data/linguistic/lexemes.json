@@ -685,7 +685,7 @@
     "translations": {
       "en": "arm and hand",
       "ru": "рука",
-      "tr": "el",
+      "tr": "el, kol",
       "ar": "يد"
     },
     "subConceptId": "HAND_BODY",
@@ -1534,7 +1534,7 @@
     },
     "isLemma": true,
     "translations": {
-      "tr": "bas deligi",
+      "tr": "pencere",
       "en": "window",
       "ru": "окно",
       "ar": "نافذة"
@@ -3560,7 +3560,7 @@
     "translations": {
       "ru": "1. старый, ветхий 2. ветер 3. воздух 4. рано",
       "en": "1. old, dilapidated 2. wind 3. air 4. early",
-      "tr": "eski, yaşlı",
+      "tr": "rüzgar",
       "ar": "الهواء، الجو/ البُكور/ النَفَس"
     }
   },
@@ -4743,7 +4743,7 @@
     ],
     "isLemma": true,
     "translations": {
-      "tr": "yalan",
+      "tr": "kalp (sahte), yürek",
       "en": "lie",
       "ru": "ложь"
     },
@@ -5154,7 +5154,7 @@
     "translations": {
       "en": "Eurasian coot",
       "ru": "лысуха",
-      "tr": "ÖRDEK"
+      "tr": "su tavuğu"
     }
   },
   {
@@ -11631,7 +11631,7 @@
     "translations": {
       "en": "the hostess of the house (with respect to the guests)",
       "ru": "хозяйка дома (по отношению к гостям)",
-      "tr": "misafirperver ev hanimi"
+      "tr": "ev sahibesi"
     },
     "rootIds": [
       "R-GU"
@@ -13106,7 +13106,7 @@
     ],
     "isLemma": true,
     "translations": {
-      "tr": "cati, tavan",
+      "tr": "çatı",
       "en": "roof of a house, ceiling",
       "ru": "крыша, кровля дома, потолок",
       "ar": "سقف"
@@ -16362,7 +16362,7 @@
     ],
     "isLemma": true,
     "translations": {
-      "tr": "kanat; omuz",
+      "tr": "omuz",
       "en": "wing (bird), wing (for example, of an aeroplane), shoulder (human)",
       "ru": "крыло (птицы), крыло (напр. самолета), плечо (человека)",
       "ar": "لعبة الداما"
@@ -18489,7 +18489,7 @@
     "corpusFrequency": 15,
     "isLemma": true,
     "translations": {
-      "tr": "elma agaci",
+      "tr": "elma ağacı",
       "en": "apple tree",
       "ru": "яблоня"
     },
@@ -19191,7 +19191,7 @@
     ],
     "isLemma": true,
     "translations": {
-      "tr": "gokyuzu",
+      "tr": "gökyüzü",
       "en": "sky",
       "ru": "небо",
       "ar": "السماء"
@@ -19631,7 +19631,7 @@
     ],
     "isLemma": true,
     "translations": {
-      "tr": "evvelsi gun",
+      "tr": "evvelki gün",
       "en": "the day before yesterday, two days ago",
       "ru": "позавчера"
     },
@@ -19696,7 +19696,7 @@
     ],
     "isLemma": true,
     "translations": {
-      "tr": "ilkbahar, bahar",
+      "tr": "ilkbahar",
       "en": "spring (season)",
       "ru": "весна",
       "ar": "الربيع"
@@ -20907,7 +20907,7 @@
     ],
     "isLemma": true,
     "translations": {
-      "tr": "domuz",
+      "tr": "kalp",
       "en": "the sixth letter of the Kabardino-Cherkess (Circassian) alphabet",
       "ru": "шестая буква кабардино-черкесского алфавита",
       "ar": "القَلب، النَفْس"
@@ -26601,7 +26601,7 @@
     ],
     "isLemma": true,
     "translations": {
-      "tr": "göğüs",
+      "tr": "kartal",
       "en": "eagle",
       "ru": "орёл",
       "ar": "I \\tالصَدر، صدر الإنسان والحيوان   II \\tالعُقاب (من الجوارح)   III \\tالفرس العقيم"
@@ -27825,7 +27825,7 @@
     ],
     "isLemma": true,
     "translations": {
-      "tr": "evlenmek",
+      "tr": "evlenmek (kadın)",
       "en": "go with sb, accompany sb.",
       "ru": "идти, ехать вместе с кем-л., сопровождать кого-л."
     },
@@ -30412,7 +30412,7 @@
     "translations": {
       "en": "sad, mournful, sorrowful, rueful, doleful, dolorous, woeful, lugubrious",
       "ru": "печальный, скорбный",
-      "tr": "üzüntü, keder",
+      "tr": "kalp ağrısı",
       "trSource": "en->tr koprusu (orta)",
       "ar": "مرض القلب"
     },
@@ -36772,7 +36772,7 @@
     ],
     "isLemma": true,
     "translations": {
-      "tr": "aile",
+      "tr": "aile, ev halkı",
       "en": "family, household",
       "ru": "семья",
       "ar": "عائلة"
@@ -37925,7 +37925,7 @@
     ],
     "isLemma": true,
     "translations": {
-      "tr": "dünya",
+      "tr": "dünya, evren",
       "en": "",
       "ru": "world, universe, Earth, life (in this world), weather, ever, for goodness’ sake, on earth, in the world (as a particle reinforcing a statement)",
       "ar": "عالم"
@@ -38881,7 +38881,7 @@
     "translations": {
       "en": "intimate feeling; dream, beloved, dear",
       "ru": "сокровенное чувство; мечта, возлюбленный",
-      "tr": "düşünce",
+      "tr": "kalpteki",
       "ar": "النية، الفكرة/ خطة"
     },
     "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1b/%D0%93%D1%83463%D0%B3%D1%83%D1%85%D1%8D%D0%BB%D1%8A.ogg"
@@ -39411,7 +39411,7 @@
     "translations": {
       "en": "six (6)",
       "ru": "шесть (6)",
-      "tr": "altı",
+      "tr": "deniz",
       "ar": "I \\tالبحر   II \\tستة، العدد ستة"
     },
     "notes": "Kaynak: sukunov-1998",
@@ -46987,7 +46987,7 @@
     "translations": {
       "en": "child, family",
       "ru": "дитя, семья",
-      "tr": "soyadi",
+      "tr": "evlat, nesil",
       "trSource": "en->tr koprusu (orta)"
     },
     "rootIds": [
@@ -47621,7 +47621,7 @@
     "translations": {
       "en": "very first of people or things following one after another",
       "ru": "самый первый из идущих один за другим",
-      "tr": "ahdi atik",
+      "tr": "önce, evvel",
       "ar": "قبل"
     },
     "dictionaryEvidence": [
@@ -61819,7 +61819,7 @@
     "translations": {
       "en": "small, little, tiny, insignificant, minor, petty (about a person)",
       "ru": "мелкий, незначительный, мелочный (о человеке)",
-      "tr": "Küçük, ufak"
+      "tr": "serçe"
     },
     "dictionaryEvidence": [
       "sukunov-1998"
@@ -72077,7 +72077,8 @@
     "ipa": "/'ʔɐpʹqʹɬɐpʹqʹ/",
     "ipaSource": "root-derived",
     "translations": {
-      "ar": "قفزة (المرة من القفز)/ زمن القفز/ يَرى، يشاهد"
+      "ar": "قفزة (المرة من القفز)/ زمن القفز/ يَرى، يشاهد",
+      "tr": "görüyor"
     }
   },
   {
@@ -74371,7 +74372,7 @@
     "translations": {
       "ru": "хозяева, хозяин по отношению к гостю <div style='margin",
       "en": "hosts (with respect to their guests)",
-      "tr": "EV, SAHİBİ",
+      "tr": "ev sahibi",
       "ar": "المضيف/ المالك/ الاقتصادي (المعزب)"
     },
     "rootIds": [
@@ -75455,7 +75456,7 @@
     "translations": {
       "ru": "непогода <div style=",
       "en": "cold, cold spell, freeze, severe cold, hard frost",
-      "tr": "Fırtına",
+      "tr": "yağmurlu",
       "ar": "مطر عاصف"
     },
     "rootIds": [
@@ -76233,7 +76234,8 @@
     "conceptId": "WHERE",
     "isLemma": true,
     "translations": {
-      "ru": "еплъ ></"
+      "ru": "еплъ ></",
+      "tr": "nerede?"
     },
     "rootIds": [
       "R-DEN"
@@ -78679,7 +78681,7 @@
     "ipa": "/ɐ'rǝɕ/",
     "ipaSource": "root-derived",
     "translations": {
-      "tr": "evet öyle idi"
+      "tr": "evet öyleydi"
     }
   },
   {
@@ -82396,7 +82398,10 @@
       ]
     },
     "isLemma": false,
-    "ipa": "/ɬɐ/"
+    "ipa": "/ɬɐ/",
+    "translations": {
+      "tr": "mu?"
+    }
   },
   {
     "id": "L-CORPUS-01382",
@@ -87592,7 +87597,7 @@
     "translations": {
       "ru": "привезти, привести",
       "en": "bring, deliver (on foot or by conveyance), get married, wed",
-      "tr": "EVLENMEK"
+      "tr": "evlenmek (erkek)"
     },
     "rootIds": [
       "R-SHE2"
@@ -95665,7 +95670,8 @@
     "rootForm": "пэ-",
     "translations": {
       "en": "almost",
-      "ru": "чуть не"
+      "ru": "чуть не",
+      "tr": "devam etti"
     }
   },
   {
@@ -98219,7 +98225,7 @@
     "translations": {
       "ru": "класс <div style='margin",
       "en": "class, class, grade, form (at school), class (degree of preparedness in sth)",
-      "tr": "SINIFLI",
+      "tr": "sınıf",
       "ar": "صف، درس/ غرفة الدرس"
     },
     "conceptId": "SINIF",
@@ -98408,7 +98414,7 @@
     "translations": {
       "ru": "бот. сосна <div style='margin-le",
       "en": "pine",
-      "tr": "Çam",
+      "tr": "ladin",
       "ar": "صنوبر"
     },
     "rootIds": [
@@ -98796,7 +98802,7 @@
     "translations": {
       "en": "development, improvement, enhancement, advancement, betterment",
       "ru": "развитие, совершенствование",
-      "tr": "EVRİM",
+      "tr": "evrim",
       "ar": "تنمية"
     },
     "conceptId": "GELIŞME",
@@ -109320,7 +109326,8 @@
     },
     "translations": {
       "en": "in vain, (all) for nothing, to no avail, to no purpose",
-      "ru": "напрасно, зря"
+      "ru": "напрасно, зря",
+      "tr": "açıkça"
     },
     "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6a/%D0%90164%D0%B0%D0%BB%D0%B5%D0%B9%D1%83%D1%8D.ogg"
   },
@@ -109834,7 +109841,7 @@
     "translations": {
       "ru": "индейка / Унэ джэдкъазхэм ящыщ",
       "en": "turkey",
-      "tr": "HİNDİ",
+      "tr": "hindi",
       "ar": "ديك الحبش"
     },
     "subConceptId": "POULTRY_BIRD",
@@ -111042,7 +111049,7 @@
     "translations": {
       "ru": "холмистый, -ая, -ое Бгыбэ",
       "en": "mountainous (about the terrain)",
-      "tr": "TEPELIK",
+      "tr": "dağlık",
       "ar": "صخري"
     },
     "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/8/86/%D0%91251%D0%B1%D0%B3%D1%8B%D0%BB%D1%8A%D1%8D.ogg",
@@ -112528,7 +112535,8 @@
     "ipa": "/wǝˈdzǝfɐ/",
     "ipaSource": "root-derived",
     "translations": {
-      "en": "in summer"
+      "en": "in summer",
+      "tr": "yazın"
     }
   },
   {
@@ -113506,7 +113514,7 @@
     "translations": {
       "ru": "вершина",
       "en": "summit, peek, vertex, crown, top",
-      "tr": "DORUK",
+      "tr": "yeryüzü, yüzey",
       "ar": "قمة"
     },
     "subConceptId": "TOP_LOCATION",
@@ -115281,7 +115289,8 @@
     "isLemma": true,
     "translations": {
       "ru": "устар. посредник, содействующий примирению враждующих <div style='margin-left",
-      "en": "mediator facilitating the reconciliation of warring parties"
+      "en": "mediator facilitating the reconciliation of warring parties",
+      "tr": "medet, yardım"
     },
     "rootIds": [
       "R-NE"
@@ -119411,7 +119420,8 @@
     "isLemma": true,
     "translations": {
       "ru": "наставлять, поучать кого-л",
-      "en": "teach, educate or instruct sb."
+      "en": "teach, educate or instruct sb.",
+      "tr": "öğüt vermek"
     },
     "rootIds": [
       "R-IN"
@@ -120482,7 +120492,7 @@
     "translations": {
       "en": "affection, pleasantry, obsequiousness",
       "ru": "ласка, любезничанье, угодничанье",
-      "tr": "",
+      "tr": "senin dilin",
       "trSource": "en->tr koprusu (orta)"
     },
     "literalMeaningSource": "translations.ru->tr (orta)"
@@ -121207,7 +121217,7 @@
     "isLemma": true,
     "translations": {
       "ru": "прич. молотый",
-      "tr": ""
+      "tr": "kıyma"
     },
     "subConceptId": "GROUND_FLOUR",
     "taxonomyFamily": "Yiyecek & Mutfak",
@@ -122995,7 +123005,7 @@
     "translations": {
       "ru": "бот. груша кавказская ( <font color='slat",
       "en": "Caucasian pear (tree), domestic pear (tree)",
-      "tr": "ARMUTAĞACIYABANI"
+      "tr": "armut ağacı"
     },
     "rootIds": [
       "R-KHUMEN"
@@ -145009,7 +145019,7 @@
     "translations": {
       "en": "pen (for writing)",
       "ru": "ручка (для письма)",
-      "tr": "KAPÇIK",
+      "tr": "tükenmez kalem",
       "trSource": "en->tr koprusu (orta)"
     },
     "examples": [
@@ -154422,7 +154432,7 @@
     "translations": {
       "en": "family, household",
       "ru": "семья",
-      "tr": "aile",
+      "tr": "evli barklı",
       "trSource": "en->tr koprusu (orta)"
     },
     "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9d/%D0%91857%D0%B1%D1%8B%D0%BD%D1%83%D0%BD%D1%8D.ogg"
@@ -211824,7 +211834,10 @@
       "rule": "compound"
     },
     "conceptId": "MANNER",
-    "ipa": "/jǝ'ħɐn/"
+    "ipa": "/jǝ'ħɐn/",
+    "translations": {
+      "tr": "girdi"
+    }
   },
   {
     "id": "L-CORPUS2-00844",
@@ -285905,7 +285918,10 @@
       "rule": "root"
     },
     "ipaSource": "form-derived",
-    "ipa": "/bwʃ/"
+    "ipa": "/bwʃ/",
+    "translations": {
+      "tr": "boş"
+    }
   },
   {
     "id": "L-CORPUS2-03697",
@@ -384457,7 +384473,7 @@
     "ipa": "/ʁʷɐʑ/",
     "ipaSource": "root-derived",
     "translations": {
-      "tr": ""
+      "tr": "tırmalamak, kaşımak"
     }
   },
   {
@@ -479525,7 +479541,7 @@
     "translations": {
       "en": "desk (school)",
       "ru": "парта",
-      "tr": "school desk"
+      "tr": "sıra"
     }
   },
   {
@@ -513298,7 +513314,7 @@
     "translations": {
       "en": "marten",
       "ru": "куница",
-      "tr": "Hermin"
+      "tr": "su samuru"
     },
     "dictionaryEvidence": [
       "sukunov-1998"
@@ -513597,7 +513613,7 @@
     "translations": {
       "en": "pig, swine",
       "ru": "свинья",
-      "tr": "domuz",
+      "tr": "domuz yavrusu",
       "trSource": "en->tr koprusu (orta)",
       "ar": "خنزير"
     },
@@ -542091,7 +542107,7 @@
       "trVerified": false,
       "en": "fingernail",
       "ru": "ноготь пальца руки",
-      "tr": "parmak tırnağı",
+      "tr": "tırnak",
       "ar": "ظفر"
     },
     "ipa": "/ʔɐ'bʑɑ:nɐ/",
@@ -556726,7 +556742,7 @@
     "translations": {
       "en": "heart valve",
       "ru": "клапан (сердца)",
-      "tr": "Kapakçık"
+      "tr": "kalp kapağı"
     },
     "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/2/29/%D0%93%D1%83434%D0%B3%D1%83%D1%82%D1%85%D1%8C%D1%8D%D0%BA%D3%8F%D1%83%D0%BC%D1%8D.ogg",
     "dictionaryEvidence": [
@@ -687617,7 +687633,7 @@
       "trVerified": false,
       "en": "a big hailstone",
       "ru": "крупная градина",
-      "tr": "DOLU"
+      "tr": "fırtına"
     },
     "ipa": "/wɐf/"
   },
@@ -687714,7 +687730,7 @@
       "trVerified": false,
       "en": "lowland, valley, hollow",
       "ru": "низина",
-      "tr": "OVA"
+      "tr": "evren, kainat"
     },
     "ipa": "/wɐɕʹ/"
   },
@@ -727637,7 +727653,7 @@
     "partOfSpeech": "noun",
     "conceptId": "AILE",
     "translations": {
-      "tr": "Kız",
+      "tr": "kız evlat",
       "en": "Daughter",
       "ru": "Дочь",
       "ar": "الابنة"
@@ -728051,7 +728067,7 @@
     "partOfSpeech": "noun",
     "conceptId": "OKUL",
     "translations": {
-      "tr": "raf",
+      "tr": "kitap",
       "en": "Book",
       "ru": "Книга",
       "ar": "كتاب/ معروض/ مؤلَف/ رسالة، وثيقة"
@@ -728109,7 +728125,7 @@
     "partOfSpeech": "noun",
     "conceptId": "OKUL",
     "translations": {
-      "tr": "danışman",
+      "tr": "öğretmen",
       "en": "Teacher",
       "ru": "Учитель",
       "ar": "مدرس"
@@ -728151,7 +728167,7 @@
     "partOfSpeech": "noun",
     "conceptId": "EV",
     "translations": {
-      "tr": "zhy servants",
+      "tr": "ev",
       "ar": "منزل، مسكن، بيت/ غرفة",
       "en": "house",
       "ru": "дом"
@@ -728400,7 +728416,7 @@
     "partOfSpeech": "noun",
     "conceptId": "VUCUT",
     "translations": {
-      "tr": "Yüz, çehre, surat",
+      "tr": "yüz",
       "en": "Face",
       "ru": "Лицо",
       "ar": "الوجه/ الخجل والحياء/ ناموس/ الضمير"
@@ -728911,7 +728927,7 @@
     "partOfSpeech": "noun",
     "conceptId": "KAFKASYA",
     "translations": {
-      "tr": "Ladin",
+      "tr": "çam",
       "en": "Fir",
       "ru": "Ель, пихта"
     },
@@ -735543,7 +735559,7 @@
     "form": "ЩӀымахуэ",
     "partOfSpeech": "noun",
     "translations": {
-      "tr": "Kış mevsimi",
+      "tr": "kış",
       "en": "Winter",
       "ru": "Зима",
       "ar": "الشتاء"
@@ -738607,7 +738623,7 @@
     "partOfSpeech": "noun",
     "conceptId": "ZALİM",
     "translations": {
-      "tr": "Veba",
+      "tr": "kalpsiz, zalim",
       "ar": "ظالم/ عديم الرحمة"
     },
     "ipa": "/ʐalǝm/",
@@ -738676,7 +738692,7 @@
     "partOfSpeech": "noun",
     "conceptId": "MEZARLIK KABRİSTAN",
     "translations": {
-      "tr": "MEZARLIK KABRİSTAN",
+      "tr": "sazan",
       "en": "Husk",
       "ru": "Шелуха (зерна)"
     },
@@ -740262,7 +740278,7 @@
     "partOfSpeech": "noun",
     "conceptId": "TER",
     "translations": {
-      "tr": "TER",
+      "tr": "avlu",
       "ar": "فناء",
       "en": "court",
       "ru": "двор"
@@ -748454,7 +748470,7 @@
     "conceptId": "KAVRAM_КУНАЦКАЯ",
     "translations": {
       "ru": "кунацкая",
-      "tr": "otel",
+      "tr": "misafir odası, otel",
       "ar": "فندق",
       "en": "kunatsky, living room"
     },
@@ -748618,7 +748634,7 @@
     "conceptId": "KAVRAM_КРАЙ",
     "translations": {
       "ru": "край",
-      "tr": "yer",
+      "tr": "yer, mekan",
       "ar": "مكان",
       "en": "place, terrain"
     },
@@ -750997,7 +751013,7 @@
     "conceptId": "KAVRAM_СЛУЖАЩИЙ",
     "translations": {
       "ru": "служащий",
-      "tr": "ÇALIŞAN",
+      "tr": "işçi",
       "ar": "موظف",
       "en": "i workers,"
     },
@@ -756036,7 +756052,7 @@
     "translations": {
       "ru": "ставня",
       "en": "shutter",
-      "tr": "shutter"
+      "tr": "pencere kanadı"
     },
     "ipa": "/ɕħɐʁʷbжɐʔʷpʼɐ/",
     "rootIds": [],
@@ -756202,7 +756218,7 @@
     "conceptId": "KAVRAM_ХОЛМ",
     "translations": {
       "ru": "холм",
-      "tr": "tepe",
+      "tr": "tepe, höyük",
       "ar": "تل",
       "en": "hill, hill"
     },
@@ -761604,7 +761620,7 @@
     "conceptId": "KAVRAM_ДЖЭДЫР ФЫЩӀЫН",
     "translations": {
       "ru": "джэдыр фыщӏын",
-      "tr": "",
+      "tr": "yolmak, koparmak",
       "en": "pereh. ch. pluck up smb."
     },
     "ipa": "/fǝɕʼǝn/",
@@ -763669,7 +763685,7 @@
     "translations": {
       "ru": "выращенный кем-л",
       "en": "grown by smb.",
-      "tr": ""
+      "tr": "el ile çıkarmak"
     },
     "ipa": "/ʔɐrǝʁɐkʼ/",
     "rootIds": [],
@@ -772078,7 +772094,7 @@
     "conceptId": "KAVRAM_УГОРЬ",
     "translations": {
       "ru": "угорь",
-      "tr": "TUMABALIĞI",
+      "tr": "turna balığı",
       "en": "Pike"
     },
     "ipa": "/ħɐbdzɐʑеj/",
@@ -775117,7 +775133,7 @@
     "translations": {
       "ru": "быть безработным",
       "en": "nepereh. ch. sit back",
-      "tr": ""
+      "tr": "işsiz, boş"
     },
     "ipa": "/ʔʷɐxwnʃɐn/",
     "rootIds": [],
@@ -776180,7 +776196,7 @@
     "conceptId": "KAVRAM_ЧАСТИЦА ДА",
     "translations": {
       "ru": "частица да",
-      "tr": "evet",
+      "tr": "evet (hayır)",
       "ar": "نعم"
     },
     "ipa": "/ntʼɐ/",
@@ -781582,7 +781598,7 @@
     "conceptId": "KAVRAM_УМЫВАЛЬНИК",
     "translations": {
       "ru": "умывальник",
-      "tr": "lavabo",
+      "tr": "banyo, lavabo",
       "en": "Wash-stand",
       "ar": "حوض"
     },
@@ -789283,7 +789299,7 @@
     "conceptId": "KAVRAM_ГЪУЭГУНЭБЗУ",
     "translations": {
       "ru": "гъуэгунэбзу",
-      "tr": "TARLAKUŞU",
+      "tr": "tarla kuşu",
       "en": "Lark"
     },
     "ipa": "/wɐgʷnɐbzw/",
@@ -798875,7 +798891,7 @@
     "translations": {
       "ru": "находиться",
       "en": "is not very good. ch. to lie down under smth.",
-      "tr": ""
+      "tr": "altında yatmak"
     },
     "ipa": "/ɕʼɐɬǝn/",
     "rootIds": [],
@@ -803275,7 +803291,7 @@
     "conceptId": "KAVRAM_СТРОИТЕЛЬ",
     "translations": {
       "ru": "строитель",
-      "tr": "MÜHENDİS, İNŞAATÇI",
+      "tr": "inşaatçı",
       "ar": "بَنّاء",
       "en": "builder"
     },
@@ -846736,7 +846752,7 @@
     "conceptId": "KAVRAM_ӀАУ",
     "translations": {
       "ru": "ӏау",
-      "tr": "",
+      "tr": "el (ünlem)",
       "en": "expresses astonishment, surprise oh!; ~, атӀэ мыр уэрай!: oh, is that  (really)  you?!"
     },
     "ipa": "/ʔɐw/",
@@ -869507,7 +869523,7 @@
     "translations": {
       "ru": "добро пожаловать",
       "en": "(greeting) welcome!",
-      "tr": ""
+      "tr": "iyilik, hoş geldin"
     },
     "ipa": "/fʼǝqеblaʁɐ/",
     "rootIds": [],
@@ -874276,7 +874292,7 @@
     "translations": {
       "ru": "коровье масло",
       "en": "butter.",
-      "tr": ""
+      "tr": "inek yağı, tereyağı"
     },
     "ipa": "/жɐmǝtχʷ/",
     "rootIds": [],
@@ -875177,7 +875193,7 @@
     "translations": {
       "ru": "хъыджэбз цӏыкӏу",
       "en": "move. ch. enroll somewhere l.",
-      "tr": ""
+      "tr": "yazdırmak"
     },
     "ipa": "/zеʁɐtxǝn/",
     "rootIds": [],
@@ -894177,7 +894193,7 @@
     "translations": {
       "ru": "свинарник",
       "en": "pigsty",
-      "tr": "pigsty, pigpen"
+      "tr": "domuz ahırı"
     },
     "ipa": "/q͡χwɐɕ/",
     "rootIds": [],
@@ -903938,7 +903954,7 @@
     "conceptId": "KAVRAM_МАНЕРА ПРЫГАТЬ",
     "translations": {
       "ru": "манера прыгать",
-      "tr": "muktedir",
+      "tr": "ayak ucu",
       "en": "style jump"
     },
     "ipa": "/ɬɐkʼɐ/",
@@ -933150,7 +933166,7 @@
     "conceptId": "KAVRAM_ОКОННАЯ РАМА",
     "translations": {
       "ru": "оконная рама",
-      "tr": "PENCERE",
+      "tr": "pencere kasası",
       "en": "window frame"
     },
     "ipa": "/ɕħɐʁʷbжɐblǝpq/",
@@ -952324,7 +952340,7 @@
     "conceptId": "KAVRAM_КАБАН",
     "translations": {
       "ru": "кабан",
-      "tr": "Yaban domuzu"
+      "tr": "erkek domuz"
     },
     "ipa": "/q͡χwɐχʷ/",
     "rootIds": [],
@@ -960818,7 +960834,7 @@
     "conceptId": "KAVRAM_УСТЬЕ",
     "translations": {
       "ru": "устье",
-      "tr": "iltica"
+      "tr": "su kavşağı"
     },
     "ipa": "/psǝxɐxwapʼɐ/",
     "rootIds": [],
@@ -1004113,7 +1004129,7 @@
     "translations": {
       "ru": "персидский порошок",
       "en": "insect-powder (insecticide)",
-      "tr": ""
+      "tr": "bit (haşere)"
     },
     "ipa": "/tsʼɐgǝn/",
     "rootIds": [],
@@ -1006062,7 +1006078,7 @@
     "translations": {
       "ru": "оконщик",
       "en": "window-maker",
-      "tr": "window-maker"
+      "tr": "pencere imalatçısı"
     },
     "ipa": "/ɕħɐʁʷbжɐɕʼ/",
     "rootIds": [],
@@ -1007903,7 +1007919,7 @@
     "conceptId": "KAVRAM_АДЫГСКОЕ ПЛЕМЯ",
     "translations": {
       "ru": "адыгское племя",
-      "tr": "",
+      "tr": "gömlek, elbise",
       "ar": "جانه (احدى العشائر الأدغية التي أبادها الروس في القرن 18)"
     },
     "ipa": "/жanɐ/",
@@ -1019571,7 +1019587,7 @@
   {
     "form": "бащ",
     "translations": {
-      "tr": "söğüt ağacı"
+      "tr": "söğüt"
     },
     "pos": "UNKNOWN",
     "notes": "[MANUEL] 200 kelimelik liste"
@@ -1019603,7 +1019619,7 @@
   {
     "form": "берэс",
     "translations": {
-      "tr": "huş ağacı"
+      "tr": "huş"
     },
     "pos": "UNKNOWN",
     "notes": "[MANUEL] 200 kelimelik liste"
@@ -1020343,5 +1020359,357 @@
     },
     "pos": "UNKNOWN",
     "notes": "[PDF] Circassian Essentials"
+  },
+  {
+    "form": "псы цIыкIу",
+    "translations": {
+      "tr": "dere"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[PDF] Klepinina - DuneyhegHuaze"
+  },
+  {
+    "form": "псы Iуфэ",
+    "translations": {
+      "tr": "su kenarı"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[PDF] Klepinina - DuneyhegHuaze"
+  },
+  {
+    "form": "щыжей пэш",
+    "translations": {
+      "tr": "yatak odası"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[PDF] Klepinina - DuneyhegHuaze"
+  },
+  {
+    "form": "доскэ",
+    "translations": {
+      "tr": "tahta"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[PDF] Klepinina - DuneyhegHuaze"
+  },
+  {
+    "form": "ныбэлым",
+    "translations": {
+      "tr": "mide"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[PDF] Klepinina - DuneyhegHuaze"
+  },
+  {
+    "form": "цыжьада",
+    "translations": {
+      "tr": "baştankara"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[PDF] Klepinina - DuneyhegHuaze"
+  },
+  {
+    "form": "бжьэндэхъу",
+    "translations": {
+      "tr": "sığırcık"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[PDF] Klepinina - DuneyhegHuaze"
+  },
+  {
+    "form": "тхьэмпэбгъуэ",
+    "translations": {
+      "tr": "çınar"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[PDF] Klepinina - DuneyhegHuaze"
+  },
+  {
+    "form": "чыпщIэпщхьэпэ",
+    "translations": {
+      "tr": "kiraz ağacı"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[PDF] Klepinina - DuneyhegHuaze"
+  },
+  {
+    "form": "къэлэрдэгу",
+    "translations": {
+      "tr": "müge"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[PDF] Klepinina - DuneyhegHuaze"
+  },
+  {
+    "form": "мэз пащIэдахэ",
+    "translations": {
+      "tr": "anemon"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[PDF] Klepinina - DuneyhegHuaze"
+  },
+  {
+    "form": "къуэрэдырэ",
+    "translations": {
+      "tr": "ardıç"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[PDF] Klepinina - DuneyhegHuaze"
+  },
+  {
+    "form": "шыщIыдзэ",
+    "translations": {
+      "tr": "çan çiçeği"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[PDF] Klepinina - DuneyhegHuaze"
+  },
+  {
+    "form": "енэб",
+    "translations": {
+      "tr": "eğrelti otu"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[PDF] Klepinina - DuneyhegHuaze"
+  },
+  {
+    "form": "хьэкуIэщI",
+    "translations": {
+      "tr": "çoban"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[PDF] Klepinina - DuneyhegHuaze"
+  },
+  {
+    "form": "унапчъ",
+    "translations": {
+      "tr": "ev kapısı"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[PDF] Abaze + Teshu + Huvaj (ev+kalp)"
+  },
+  {
+    "form": "унэрыу",
+    "translations": {
+      "tr": "ev soyan"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[PDF] Abaze + Teshu + Huvaj (ev+kalp)"
+  },
+  {
+    "form": "унэшчъэ",
+    "translations": {
+      "tr": "evsiz barksız"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[PDF] Abaze + Teshu + Huvaj (ev+kalp)"
+  },
+  {
+    "form": "унагъом еплъын",
+    "translations": {
+      "tr": "eve bakmak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[PDF] Abaze + Teshu + Huvaj (ev+kalp)"
+  },
+  {
+    "form": "унэм исын",
+    "translations": {
+      "tr": "evde olmak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[PDF] Abaze + Teshu + Huvaj (ev+kalp)"
+  },
+  {
+    "form": "унэ щэфын",
+    "translations": {
+      "tr": "ev almak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[PDF] Abaze + Teshu + Huvaj (ev+kalp)"
+  },
+  {
+    "form": "унэ шIын",
+    "translations": {
+      "tr": "ev yapmak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[PDF] Abaze + Teshu + Huvaj (ev+kalp)"
+  },
+  {
+    "form": "унэ убытын",
+    "translations": {
+      "tr": "ev tutmak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[PDF] Abaze + Teshu + Huvaj (ev+kalp)"
+  },
+  {
+    "form": "унэтӀэкӀын",
+    "translations": {
+      "tr": "ev soymak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[PDF] Abaze + Teshu + Huvaj (ev+kalp)"
+  },
+  {
+    "form": "щагухь",
+    "translations": {
+      "tr": "ev köpeği"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[PDF] Abaze + Teshu + Huvaj (ev+kalp)"
+  },
+  {
+    "form": "унэм ихатэ",
+    "translations": {
+      "tr": "evin bahçesi"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[PDF] Abaze + Teshu + Huvaj (ev+kalp)"
+  },
+  {
+    "form": "гуау",
+    "translations": {
+      "tr": "kalp üzüntüsü"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[PDF] Abaze + Teshu + Huvaj (ev+kalp)"
+  },
+  {
+    "form": "гу щифэу",
+    "translations": {
+      "tr": "kalp doyasıya"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[PDF] Abaze + Teshu + Huvaj (ev+kalp)"
+  },
+  {
+    "form": "гузэпыкӀын",
+    "translations": {
+      "tr": "kalp kırmak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[PDF] Abaze + Teshu + Huvaj (ev+kalp)"
+  },
+  {
+    "form": "ыгу илъын",
+    "translations": {
+      "tr": "kalpte tutmak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[PDF] Abaze + Teshu + Huvaj (ev+kalp)"
+  },
+  {
+    "form": "пынджыр",
+    "translations": {
+      "tr": "pencere camı"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[PDF] Abaze + Teshu + Huvaj (ev+kalp)"
+  },
+  {
+    "form": "шыгъуэгу щхьэгъубжэ",
+    "translations": {
+      "tr": "arka pencere"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[PDF] Abaze + Teshu + Huvaj (ev+kalp)"
+  },
+  {
+    "form": "щхьэхущӀын",
+    "translations": {
+      "tr": "yıkanmak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[PDF] Abaze + Teshu + Huvaj (ev+kalp)"
+  },
+  {
+    "form": "ӀэтхьэщӀыпӀэ",
+    "translations": {
+      "tr": "lavabo"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[PDF] Abaze + Teshu + Huvaj (ev+kalp)"
+  },
+  {
+    "form": "хьэмам",
+    "translations": {
+      "tr": "hamam"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[PDF] Abaze + Teshu + Huvaj (ev+kalp)"
+  },
+  {
+    "form": "хьакӀэщ",
+    "translations": {
+      "tr": "otel"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[PDF] Abaze + Teshu + Huvaj (ev+kalp)"
+  },
+  {
+    "form": "кхъуэбз",
+    "translations": {
+      "tr": "dişi domuz"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[PDF] Abaze + Teshu + Huvaj (ev+kalp)"
+  },
+  {
+    "form": "кхъуэшыр",
+    "translations": {
+      "tr": "domuz yavrusu"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[PDF] Abaze + Teshu + Huvaj (ev+kalp)"
+  },
+  {
+    "form": "нэчыхь егъэтхын",
+    "translations": {
+      "tr": "nikah kıymak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[PDF] Abaze + Teshu + Huvaj (ev+kalp)"
+  },
+  {
+    "form": "икъэщэгъу",
+    "translations": {
+      "tr": "evlenme çağı (erkek)"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[PDF] Abaze + Teshu + Huvaj (ev+kalp)"
+  },
+  {
+    "form": "идэкӀогъу",
+    "translations": {
+      "tr": "evlenme çağı (kız)"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[PDF] Abaze + Teshu + Huvaj (ev+kalp)"
+  },
+  {
+    "form": "уэрэ-щӀырэ",
+    "translations": {
+      "tr": "evren, kainat"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[PDF] Abaze + Teshu + Huvaj (ev+kalp)"
+  },
+  {
+    "form": "ипэу",
+    "translations": {
+      "tr": "evvela"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[PDF] Abaze + Teshu + Huvaj (ev+kalp)"
+  },
+  {
+    "form": "ипэрей",
+    "translations": {
+      "tr": "evveliyat"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[PDF] Abaze + Teshu + Huvaj (ev+kalp)"
   }
 ]
