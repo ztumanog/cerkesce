@@ -33768,7 +33768,7 @@
     "ipa": "/'ɬʹǝʁɐ/",
     "isLemma": true,
     "translations": {
-      "tr": "erdem, yigitlik",
+      "tr": "yiğitlik, cesaret, mertlik",
       "en": "bravery, courage, valour",
       "ru": "мужество"
     },
@@ -34537,7 +34537,7 @@
     "ipaSource": "root-derived",
     "translationSource": "literalMeaning-derived",
     "translations": {
-      "tr": "düşünmek, tasalanmak"
+      "tr": "düşünmek"
     }
   },
   {
@@ -56689,7 +56689,7 @@
     "translations": {
       "ru": "имасд",
       "en": "train, rear, bring up, educate, foster, teach, instruct, train, tutor sb (a profession, to be a soldier, etc.), tame, train (wild animals), break, train (a horse, ox)",
-      "tr": "tren",
+      "tr": "eğitmek, terbiye etmek",
       "trSource": "en->tr koprusu (orta)",
       "ar": "يُدرب، يُربي، يُثقف"
     },
@@ -66011,7 +66011,7 @@
     "translations": {
       "ru": "имасд",
       "en": "count (for example, money)",
-      "tr": "SAYILAMAK",
+      "tr": "saymak, kabul etmek",
       "ar": "يَعد، يحصي/ يقوِّم، يثمن/ يحترم/ الاحصاء، العد، التعداد"
     },
     "subConceptId": "ACTION",
@@ -66757,7 +66757,7 @@
     "translations": {
       "ru": "показать, продемонстрировать ко",
       "en": "show or demonstrate sth to sb; put on, display sth (at an exhibition), nominate sb as a candidate",
-      "tr": "GÖSTERMEK",
+      "tr": "göstermek, gözler önüne sermek",
       "ar": "يعرض"
     },
     "conceptId": "GÖRÜNTÜLEMEK"
@@ -69399,7 +69399,7 @@
     "translations": {
       "ru": "имасд. з",
       "en": "",
-      "tr": "ISITMAK",
+      "tr": "ısıtmak, kor hale getirmek",
       "ar": "يُحمي، يزيد في حرارة، يُثير، يُسخّن"
     },
     "rootIds": [
@@ -71749,7 +71749,7 @@
     "translations": {
       "ru": "гузэгъэгъуэ гъуэтын успокоиться, утешиться",
       "en": "",
-      "tr": "dikkat, ilgi",
+      "tr": "endişe verici bir şekilde",
       "trSource": "en->tr koprusu (orta)"
     },
     "subConceptId": "EMOTION",
@@ -93669,7 +93669,7 @@
     "translations": {
       "ru": "осмелиться, решиться на что-л",
       "en": "dare, be brave enough to do sth.",
-      "tr": "ETKİLEMEK",
+      "tr": "cesaretlenmek, yüreklenmek",
       "trSource": "en->tr koprusu (orta)",
       "ar": "يجرؤ"
     },
@@ -95583,7 +95583,7 @@
     "translations": {
       "ru": "каузатив к тегушхуэн / Тегушхуэн пс",
       "en": "",
-      "tr": "cesaretlendirmek, teşvik etmek",
+      "tr": "teşvik etmek, yüreklendirmek",
       "ar": "يُحفِز"
     },
     "rootIds": [
@@ -103194,7 +103194,7 @@
     },
     "ipa": "/χʷɐn/",
     "translations": {
-      "tr": "KORUMAK",
+      "tr": "korumak, kollamak",
       "ar": "يحمي، يصون، يحافظ على"
     }
   },
@@ -109270,7 +109270,7 @@
     "translations": {
       "ru": "вдали, вдалеке / Зыгуэрым пэмыгъунэгъуу, п",
       "en": "far away, distantly, remotely",
-      "tr": "uzaktan uzağa, epeyce uzakta",
+      "tr": "uzaktan uzağa",
       "trSource": "en->tr koprusu (orta)"
     },
     "subConceptId": "FAR_ADV",
@@ -130293,7 +130293,7 @@
     "isLemma": true,
     "translations": {
       "ru": "кон. Кушук",
-      "tr": "küçük araba, sepetli araç"
+      "tr": "küçük araba"
     },
     "rootIds": [
       "R-SHY"
@@ -136714,7 +136714,7 @@
     ],
     "isLemma": true,
     "translations": {
-      "tr": "SEKMEK",
+      "tr": "uçmak",
       "en": "wave, flutter in the wind (about a flag), fly",
       "ru": "развеваться, колыхаться, трепетать на ветру (о флаге), летать",
       "ar": "يطير"
@@ -141119,7 +141119,7 @@
     "translations": {
       "en": "as long a you live, for the rest of one's life of your life, until his death.",
       "ru": "до конца жизни",
-      "tr": "yaşadığı sürece, hayatta iken",
+      "tr": "yaşadığı sürece",
       "trSource": "en->tr koprusu (orta)"
     }
   },
@@ -157023,7 +157023,7 @@
     "translations": {
       "ar": "سائق",
       "ru": "ШОФЕР, -рых / шофер, -рхэр, -рмэ // -рхэм. Шофер. Автомашинэ зеф. Шоферым машинэр етхьакӀы. Ащ шоферэу Ӏоф ешӀэ.",
-      "tr": "şoför, sürücü"
+      "tr": "şoför"
     }
   },
   {
@@ -166407,7 +166407,7 @@
     "ipa": "/ʂaxt/",
     "translations": {
       "ru": "ШАХТЕР, -рых / шахтер, -рхэр, -рмэ // -рхэм. Шахтер. Шахтым Ӏоф щызышӀэрэр, щылажьэрэр. Ар – шахтер пэрыт. Шахтерым ипшъэрылъ дэгъоу егъэцакӀэ.",
-      "tr": "madenci, şahter"
+      "tr": "madenci"
     }
   },
   {
@@ -167537,7 +167537,7 @@
     "ipa": "/ʁɐbǝ'ɬǝn/",
     "isLemma": true,
     "translations": {
-      "tr": "Deri",
+      "tr": "saklamak, gizlemek",
       "en": "hide, conceal or stash sb or sth",
       "ru": "спрятать кого-что-л.",
       "ar": "يُخبئ، يَخفي"
@@ -184452,7 +184452,7 @@
     "translations": {
       "en": "part, share, plot, lot, slice, piece of sth",
       "ru": "доля, часть, кусок чего-л.",
-      "tr": "yan, taraf",
+      "tr": "parça, pay, hisse",
       "trSource": "en->tr koprusu (orta)"
     },
     "dictionaryEvidence": [
@@ -184886,7 +184886,8 @@
     ],
     "conceptId": "PLACE",
     "translations": {
-      "en": "if, whether"
+      "en": "if, whether",
+      "tr": "acaba"
     }
   },
   {
@@ -185725,7 +185726,7 @@
     "translations": {
       "en": "again, once more, anew, afresh",
       "ru": "заново, вновь, снова",
-      "tr": "",
+      "tr": "baştan",
       "trSource": "en->tr koprusu (orta)"
     }
   },
@@ -187007,7 +187008,8 @@
     "ipaSource": "root-derived",
     "translations": {
       "en": "къикӀыр Type: phrase Definitions: 1. consist in",
-      "ru": "заключаться"
+      "ru": "заключаться",
+      "tr": "ANLAM"
     }
   },
   {
@@ -190918,7 +190920,8 @@
     "ipa": "/qʹe:ʔǝ'xǝn/",
     "translations": {
       "en": "take or accept sb or sth from sb",
-      "ru": "взять, принять кого-что-л. у кого-л."
+      "ru": "взять, принять кого-что-л. у кого-л.",
+      "tr": "almak"
     }
   },
   {
@@ -191679,7 +191682,8 @@
     "ipa": "/'mɑ:ɕʹɐ/",
     "translations": {
       "en": "мащӀэщ Type: adverb Definitions: 1. few",
-      "ru": "мало"
+      "ru": "мало",
+      "tr": "ramak"
     }
   },
   {
@@ -192531,7 +192535,7 @@
     "translations": {
       "en": "sinner, wicked person, transgressor, wrongdoer",
       "ru": "грешник, грешница",
-      "tr": "günahkâr, suç işleyen"
+      "tr": "günahkâr"
     },
     "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8c/%D0%93%D1%83120%D0%B3%D1%83%D1%8D%D0%BD%D1%8B%D1%85%D1%8C%D1%8B%D1%89%D3%8F%D1%8D.ogg"
   },
@@ -194142,7 +194146,7 @@
     "translations": {
       "ru": "Зэхуэзэныгъэ",
       "en": "meeting, gathering, session, match",
-      "tr": "toplantı, buluşma, görüşme",
+      "tr": "toplantı",
       "trSource": "en->tr koprusu (orta)"
     },
     "rootIds": [
@@ -196316,7 +196320,8 @@
     ],
     "translations": {
       "en": "weed",
-      "ru": "полоть, прополоть что-л."
+      "ru": "полоть, прополоть что-л.",
+      "tr": "ot ayıklamak"
     }
   },
   {
@@ -196569,7 +196574,7 @@
     "translations": {
       "en": "cut or chop sth off from the edge, the end, cut or chop down (tree); mow (grass), truncate or cut off (a word)",
       "ru": "отрезать, отрубить что-л. от края, конца, срубить (дерево); скосить (траву), отрубить, отрезать (о слове)",
-      "tr": ""
+      "tr": "Kesmek"
     },
     "dictionaryEvidence": [
       "sukunov-1998"
@@ -197483,7 +197488,8 @@
     "conceptId": "YEAR",
     "translations": {
       "en": "1. to utter a sound;\n2. to spread, diffuse (ex.: rumours);\n3. fig c.f Ӏун",
-      "ru": "каузатив к Ӏун: давать или заставить звучать, разливаться"
+      "ru": "каузатив к Ӏун: давать или заставить звучать, разливаться",
+      "tr": "YAYMAK"
     }
   },
   {
@@ -199353,7 +199359,8 @@
     },
     "translations": {
       "en": "pour sth swh, on or over the surface of sth.",
-      "ru": "лить куда-л., на поверхность чего-л., разливать что-л. по поверхности чего-л."
+      "ru": "лить куда-л., на поверхность чего-л., разливать что-л. по поверхности чего-л.",
+      "tr": "ANKASTIRE"
     }
   },
   {
@@ -199778,7 +199785,8 @@
     "isLemma": true,
     "translations": {
       "en": "demand a high price for sth, set a high price for sb or sth, appreciate or respect sb or sth, treat sb or sth with respect, celebrate sth in a solemn or festive manner",
-      "ru": "дорого запросить за кого-что-л., назначить высокую цену кому-чему-л., ценить, почитать кого-что-л., относиться с уважением к кому-чему-л., отмечать что-л. в торжественной обстановке"
+      "ru": "дорого запросить за кого-что-л., назначить высокую цену кому-чему-л., ценить, почитать кого-что-л., относиться с уважением к кому-чему-л., отмечать что-л. в торжественной обстановке",
+      "tr": "AĞIRLAMAK"
     }
   },
   {
@@ -201322,7 +201330,7 @@
     "translations": {
       "en": "to disappear, vanish, be lost, spoil, go off, become unusable, perish, to die, be absent, missing, not be present (for an indefinite period), be in vain",
       "ru": "исчезнуть, пропасть, затеряться, испортиться, прийти в негодность, погибнуть, умереть, отлучиться, отсутствовать неопределенное время, оказаться напрасным",
-      "tr": "",
+      "tr": "kaybolmak",
       "trSource": "en->tr koprusu (orta)"
     }
   },
@@ -202021,7 +202029,8 @@
     },
     "translations": {
       "en": "thresh",
-      "ru": "обмолотить что-л."
+      "ru": "обмолотить что-л.",
+      "tr": "DÖVEN"
     }
   },
   {
@@ -202582,7 +202591,7 @@
     "translations": {
       "en": "many, many times",
       "ru": "немало, много раз",
-      "tr": "",
+      "tr": "az değil",
       "trSource": "en->tr koprusu (orta)"
     }
   },
@@ -203271,7 +203280,8 @@
     "ipa": "/'zǝʁɐ/",
     "translations": {
       "en": "зыгъэзащӀэ Type: adjective Definitions: 1. executive",
-      "ru": "исполнительный"
+      "ru": "исполнительный",
+      "tr": "sanatçı"
     }
   },
   {
@@ -203324,7 +203334,7 @@
     "translations": {
       "en": "be or get lost against one's will, spoil your relationship with sb, spoil (about food products)",
       "ru": "потеряться вопреки чьему-л. желанию, испортить отношения с кем-л., испортиться (о продуктах)",
-      "tr": "",
+      "tr": "misplace",
       "trSource": "en->tr koprusu (orta)"
     }
   },
@@ -204358,7 +204368,8 @@
     "conceptId": "EAT_UNDER",
     "translations": {
       "en": "chase sb out of or expel sb from a room or from under sth, exclude or expel sb from swh (for example, a school), distill, get sth in the process of technical processing, distillation, to separate (mil",
-      "ru": "выгнать кого-л. из помещения или из-под чего-л., исключить, выгнать кого-л. откуда-л. (напр. из школы), получить что-л. в процессе технической обработки, перегонки, сепарировать (молоко)"
+      "ru": "выгнать кого-л. из помещения или из-под чего-л., исключить, выгнать кого-л. откуда-л. (напр. из школы), получить что-л. в процессе технической обработки, перегонки, сепарировать (молоко)",
+      "tr": "KOVMAK"
     }
   },
   {
@@ -205314,7 +205325,8 @@
     "ipa": "/ɕǝ'ʔɐn/",
     "translations": {
       "en": "щыӀэнущ Type: verb Definitions: 1. will",
-      "ru": "будет"
+      "ru": "будет",
+      "tr": "-ecek"
     }
   },
   {
@@ -207168,7 +207180,7 @@
     "translations": {
       "en": "meet or encounter sb or sth",
       "ru": "встретиться с кем-чем-л.",
-      "tr": ""
+      "tr": "rastlamak"
     }
   },
   {
@@ -207392,7 +207404,8 @@
     },
     "ipa": "/'ʔʷǝpɐ/",
     "translations": {
-      "ru": "(ищхьэ-ищӀагъ) губы."
+      "ru": "(ищхьэ-ищӀагъ) губы.",
+      "tr": "Alt dudak"
     }
   },
   {
@@ -207561,7 +207574,7 @@
     "translations": {
       "en": "",
       "ru": "каузатив к зэӏыхьэн:, испортить, сделать непригодным, сделать хуже, ухудшить",
-      "tr": "",
+      "tr": "spoil",
       "trSource": "en->tr koprusu (orta)"
     }
   },
@@ -209208,7 +209221,8 @@
     "conceptId": "YEAR",
     "translations": {
       "en": "гъэлӀэн Type: verb Definitions: 1. poison",
-      "ru": "каузатив к лӏэн: умертвить; уморить (голодом), замучить, иунурить кого-л., пережить кого-л., рассмешить до изнеможения, до упаду"
+      "ru": "каузатив к лӏэн: умертвить; уморить (голодом), замучить, иунурить кого-л., пережить кого-л., рассмешить до изнеможения, до упаду",
+      "tr": "ÖLDÜRMEK"
     }
   },
   {
@@ -209380,7 +209394,8 @@
     "ipa": "/qʹǝᶎǝ'ʔɐn/",
     "translations": {
       "en": "tell sth (for example, a story)",
-      "ru": "рассказать что-л."
+      "ru": "рассказать что-л.",
+      "tr": "demek"
     }
   },
   {
@@ -209556,7 +209571,8 @@
     },
     "translations": {
       "en": "as it turns out",
-      "ru": "оказывается, как выясняется"
+      "ru": "оказывается, как выясняется",
+      "tr": "NASIL"
     }
   },
   {
@@ -210923,7 +210939,8 @@
     "ipa": "/tʹʂǝħ/",
     "translations": {
       "en": "lengthily; in length",
-      "ru": "нареч. длинно"
+      "ru": "нареч. длинно",
+      "tr": "UZUNCA"
     }
   },
   {
@@ -211364,7 +211381,7 @@
     "translations": {
       "en": "act\n1. walking, pacing;\n2. motion run (of mechanism);\n3. ride; drive; travel",
       "ru": "и. д. 1) ходьба, хождение 2) ход (механизма) 3) езда",
-      "tr": "gidiş, yürüyüş, hareket"
+      "tr": "gidiş"
     }
   },
   {
@@ -212377,7 +212394,7 @@
     "translations": {
       "en": "bandage, cut sth up into parts, cross, traverse sth, traverse, cover (some distance)",
       "ru": "перевязать, разрезать что-л. на части, пересечь, перейти что-л. поперёк, преодолеть (какое-л. расстояние)",
-      "tr": ""
+      "tr": "Kesmek"
     },
     "dictionaryEvidence": [
       "sukunov-1998"
@@ -214997,7 +215014,8 @@
     "conceptId": "JUSTICE",
     "translations": {
       "en": "repair, mend or fix sth for sb; restore (sth destroyed or broken) for for sb or sth., do sth in response to sb., perform some act in response to sb.",
-      "ru": "отремонтировать, исправить, починить что-л. для кого-л., кому-л.; восстановить (что-л. разрушенное, разбитое) для кого-л., кому-л., сделать что-л. в ответ кому-л., совершить какой-л. поступок в ответ"
+      "ru": "отремонтировать, исправить, починить что-л. для кого-л., кому-л.; восстановить (что-л. разрушенное, разбитое) для кого-л., кому-л., сделать что-л. в ответ кому-л., совершить какой-л. поступок в ответ",
+      "tr": "tamir etmek"
     }
   },
   {
@@ -215203,7 +215221,7 @@
     "translations": {
       "en": "worse than sb or sth",
       "ru": "такой, который хуже кого-чего-л.",
-      "tr": "daha genç, küçük olan"
+      "tr": "daha genç"
     }
   },
   {
@@ -215278,7 +215296,7 @@
     "translations": {
       "en": "gait, principles of operation of mechanisms, move (for example, in chess), flight (for example, of an arrow)",
       "ru": "походка, принцип работы механизмов, ход (напр. в шахматах), полёт (напр. стрелы)",
-      "tr": "gidişat, yürüyüş tarzı"
+      "tr": "gidişat"
     }
   },
   {
@@ -215788,7 +215806,8 @@
     "conceptId": "COMPANION",
     "translations": {
       "en": "игъэтӀысхьэн Type: verb Definitions: 1. inhabit",
-      "ru": "каузатив к итӏысхьэн: заставить сесть куда-л., во что-л."
+      "ru": "каузатив к итӏысхьэн: заставить сесть куда-л., во что-л.",
+      "tr": "BİNDİRMEK"
     }
   },
   {
@@ -217332,7 +217351,8 @@
     "conceptId": "EAT_UNDER",
     "translations": {
       "en": "1. to rinse (ex.: linen, washing);\n2. to distil (some liquid);\n3. to blue (smth.), to rinse (smth.) in blue, to apply blueing (to smth.) (ex.: linen);\n4. to let (smth.) (go) under smth.; * нэпсыр ~: t",
-      "ru": "каузатив к щӏэжын I: заставить выбежать откуда-л., из-под чего-л., отделить ягнят от овцематок"
+      "ru": "каузатив к щӏэжын I: заставить выбежать откуда-л., из-под чего-л., отделить ягнят от овцематок",
+      "tr": "SÜZMEK"
     }
   },
   {
@@ -218268,7 +218288,7 @@
     "translations": {
       "en": "approximately, about two or three",
       "ru": "приблизительно два-три",
-      "tr": "birkaç, birtakım"
+      "tr": "birkaç"
     }
   },
   {
@@ -218303,7 +218323,7 @@
     "translations": {
       "en": "caress, cherish, pamper or indulge sb., carry sb or sth in your heart, cherish in your soul (a dream, hope, etc.)",
       "ru": "ласкать, лелеять кого-л.; нежить, баловать кого-л., носить в себе, лелеять в душе (мечту, надежду и т. п.)",
-      "tr": "",
+      "tr": "ağirlamak",
       "trSource": "en->tr koprusu (orta)"
     }
   },
@@ -219081,7 +219101,8 @@
     },
     "translations": {
       "en": "sloppiness, untidiness, mediocrity; dissatisfaction",
-      "ru": "неряшливость, неопрятность, посредственность; неудовлетворённость"
+      "ru": "неряшливость, неопрятность, посредственность; неудовлетворённость",
+      "tr": "düzensizlik"
     }
   },
   {
@@ -219275,7 +219296,8 @@
     "conceptId": "DINING_ROOM",
     "translations": {
       "en": "mash, rumble or crumple sth",
-      "ru": "помять, измять что-л."
+      "ru": "помять, измять что-л.",
+      "tr": "buruşmak"
     }
   },
   {
@@ -219465,7 +219487,8 @@
     "conceptId": "DINING_ROOM",
     "translations": {
       "en": "spend a long time doing or working on sth, do sth carefully, thoroughly, take care of, be attentive to sb or sth",
-      "ru": "долго возиться с чём-л., аккуратно, тщательно делать что-л., проявлять заботу, усердие по отношению к кому-чему-л."
+      "ru": "долго возиться с чём-л., аккуратно, тщательно делать что-л., проявлять заботу, усердие по отношению к кому-чему-л.",
+      "tr": "Uğrunda can vermek"
     },
     "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/6/63/%D0%950482%D0%B5%D0%BB%D3%8F%D1%8D%D0%BB%D3%8F%D1%8D%D0%BD.ogg"
   },
@@ -220812,7 +220835,8 @@
     "conceptId": "SPARE",
     "translations": {
       "en": "skilfully, adeptly, dextrously",
-      "ru": "искусно"
+      "ru": "искусно",
+      "tr": "iyi"
     }
   },
   {
@@ -221102,7 +221126,8 @@
     },
     "translations": {
       "en": "cut sth off sth, chop sth down (for example, a tree)",
-      "ru": "отрезать что-л. от чего-л., срубить что-л. (напр. дерево)"
+      "ru": "отрезать что-л. от чего-л., срубить что-л. (напр. дерево)",
+      "tr": "Kesmek"
     }
   },
   {
@@ -221311,7 +221336,8 @@
     },
     "translations": {
       "en": "put on one's shoes",
-      "ru": "обуть что-л. обуть, надеть (ботинки)"
+      "ru": "обуть что-л. обуть, надеть (ботинки)",
+      "tr": "Ayakkabı giy(dir)mek"
     },
     "dictionaryEvidence": [
       "sukunov-1998"
@@ -221642,7 +221668,8 @@
     },
     "translations": {
       "en": "spread out (arms, legs, wings), plant sparcely, at a distance from each other, sow discord, quarrel with someone.",
-      "ru": "расставить, раздвинуть (руки, ноги, крылья), рассадить, разделить, внести раздор, поссорить кого-л."
+      "ru": "расставить, раздвинуть (руки, ноги, крылья), рассадить, разделить, внести раздор, поссорить кого-л.",
+      "tr": "DAĞITMAK"
     }
   },
   {
@@ -222086,7 +222113,8 @@
     "ipa": "/zɐprǝ'tʹʂǝn/",
     "translations": {
       "en": "зэпырыкӀын Type: verb Definitions: 1. cross",
-      "ru": "переходить"
+      "ru": "переходить",
+      "tr": "ÇIKMAK"
     }
   },
   {
@@ -222519,7 +222547,8 @@
     "ipa": "/ɕʹɐqʹʷǝ'zɐn/",
     "translations": {
       "en": "tighten (the cynch), press or pin sb or sth to sth",
-      "ru": "затянуть, подтянуть что-л. (напр. подпругу)., прижать кого-что-л. к чему-л."
+      "ru": "затянуть, подтянуть что-л. (напр. подпругу)., прижать кого-что-л. к чему-л.",
+      "tr": "maruz kalma"
     }
   },
   {
@@ -223276,7 +223305,8 @@
     "rootForm": "нэ-",
     "translations": {
       "en": "thoughtlessly, without aforethought; at random",
-      "ru": "необдуманно; наобум"
+      "ru": "необдуманно; наобум",
+      "tr": "TAHMİNEN"
     }
   },
   {
@@ -223547,7 +223577,7 @@
     "translations": {
       "en": "kill or shoot sb, upset, cut to the quick, tear apart, destroy (how-L. with words or deeds)",
       "ru": "убить, застрелить, подстрелить кого-л., расстроить, убить (каким-л. словом или поступком)",
-      "tr": "",
+      "tr": "AVLAMAK",
       "trSource": "en->tr koprusu (orta)"
     }
   },
@@ -223756,7 +223786,8 @@
     "ipa": "/qʹǝzɐɕʹɐ'nɐn/",
     "translations": {
       "en": "light up, kindle, start burning (about a fire), light up, start shining (for example, about a lamp), start up, turn over (about the engine), light up, get light (about the dawn), blush, go red in the",
-      "ru": "разжечься, разгореться (об огне), зажечься, засветиться (напр. о лампе), завестись (о моторе), загореться (о заре), покраснеть, раскраснеться (от стыда, гнева и т.п.)"
+      "ru": "разжечься, разгореться (об огне), зажечься, засветиться (напр. о лампе), завестись (о моторе), загореться (о заре), покраснеть, раскраснеться (от стыда, гнева и т.п.)",
+      "tr": "HIRÇINLAŞMAK"
     }
   },
   {
@@ -224027,7 +224058,8 @@
     "isLemma": true,
     "translations": {
       "en": "smooth sth.",
-      "ru": "пригладить что-л."
+      "ru": "пригладить что-л.",
+      "tr": "sıvazlamak"
     }
   },
   {
@@ -225153,7 +225185,8 @@
     },
     "translations": {
       "en": "baste or sew sth onto sth, nail or bang sth onto sth (with nails)",
-      "ru": "пришить, приметать что-л. к чему-л., прибить, приколотить что-л. к чему-л. (гвоздями)."
+      "ru": "пришить, приметать что-л. к чему-л., прибить, приколотить что-л. к чему-л. (гвоздями).",
+      "tr": "ÇAKMAK"
     }
   },
   {
@@ -225313,7 +225346,8 @@
     "conceptId": "CRADLE",
     "translations": {
       "en": "wrap or wind or sth on or in sth",
-      "ru": "намотать что-л. на кого-что-л.; обернуть, закутать кого-что-л. во что-л."
+      "ru": "намотать что-л. на кого-что-л.; обернуть, закутать кого-что-л. во что-л.",
+      "tr": "BARDAKERİĞİ"
     }
   },
   {
@@ -225582,7 +225616,8 @@
     "conceptId": "HOUSEWIFE",
     "translations": {
       "en": "direct sb or sth towards sb or sth, devote or orient (one's life or activities) to sth, to direct (one's life or activities) towards sth",
-      "ru": "направить кого-что-л. в сторону кого-чего-л., посвятить (жизнь, деятельность) чему-л., направить (жизнь, деятельность) на что-л."
+      "ru": "направить кого-что-л. в сторону кого-чего-л., посвятить (жизнь, деятельность) чему-л., направить (жизнь, деятельность) на что-л.",
+      "tr": "amaçlamak"
     }
   },
   {
@@ -226007,7 +226042,8 @@
     "conceptId": "MULTICOLOR",
     "translations": {
       "en": "separate yourself from sth, remove sth, to lose sth, to part with sth, to part with sb forever",
-      "ru": "отделиться, обособиться от чего-л., лишиться чего-л., расстаться с чем-л., расстаться навсегда с кем-л."
+      "ru": "отделиться, обособиться от чего-л., лишиться чего-л., расстаться с чем-л., расстаться навсегда с кем-л.",
+      "tr": "TERK"
     }
   },
   {
@@ -226257,7 +226293,8 @@
     ],
     "translations": {
       "en": "put or place sth under sth",
-      "ru": "подложить что-л. подо что-л."
+      "ru": "подложить что-л. подо что-л.",
+      "tr": "SULAMAK"
     }
   },
   {
@@ -226410,7 +226447,8 @@
     },
     "translations": {
       "en": "ӀугъэкӀуэтын Type: verb Definitions: 1. move",
-      "ru": "каузатив к ӏукӏуэтын: заставить отодвинуться от кого-чего-л."
+      "ru": "каузатив к ӏукӏуэтын: заставить отодвинуться от кого-чего-л.",
+      "tr": "uzaklaştirma"
     }
   },
   {
@@ -226574,7 +226612,8 @@
     "ipa": "/xɐkʹʷǝˈtɐn/",
     "translations": {
       "en": "pour sth (dry and granular or powdery) into sth (amidst or among sth)",
-      "ru": "всыпать что-л. во что-л. (в какую-л. массу)"
+      "ru": "всыпать что-л. во что-л. (в какую-л. массу)",
+      "tr": "DÖKMEK"
     }
   },
   {
@@ -226638,7 +226677,7 @@
     "translations": {
       "en": "act. of къэщӀэн\n2.",
       "ru": "и. д. угадывание, разгадывание; разгадка, отгадка, догадка",
-      "tr": "bilgi, ilim, öğrenme"
+      "tr": "bilgi"
     }
   },
   {
@@ -226669,7 +226708,7 @@
     "translations": {
       "en": "act of гъэкӀын",
       "ru": "и. д. 1) выращивание 2) отращивание",
-      "tr": "yetiştirme, büyütme"
+      "tr": "yetiştirme"
     }
   },
   {
@@ -228085,7 +228124,8 @@
     },
     "translations": {
       "en": "sharpen the tip of sth, do sth in a haphazard, careless way",
-      "ru": "заострить конец чего-л., сделать что-л. кое-как"
+      "ru": "заострить конец чего-л., сделать что-л. кое-как",
+      "tr": "SIVRILTMEK"
     }
   },
   {
@@ -228219,7 +228259,7 @@
     "translations": {
       "en": "chew, crack, gnaw, eat (sunflower seeds, nuts)",
       "ru": "грызть, щёлкать что-л. (напр. семечки, орехи)",
-      "tr": "",
+      "tr": "çıtlatmak",
       "trSource": "en->tr koprusu (orta)"
     }
   },
@@ -228409,7 +228449,8 @@
     "conceptId": "YEAR",
     "translations": {
       "en": "1. to grow, cultivate (smth.);\n2. to grow (smth.); жьакӀэр ~: to grow a beard",
-      "ru": "каузатив к кӏын: растить, вырастить, отрастить"
+      "ru": "каузатив к кӏын: растить, вырастить, отрастить",
+      "tr": "YETİŞTİRMEK"
     }
   },
   {
@@ -229499,7 +229540,8 @@
     "conceptId": "DINING_ROOM",
     "ipa": "/nɐpʹɐ'zǝpʹɐ/",
     "translations": {
-      "en": "напӀэзыпӀэу Type: adverb Definitions: 1. instantly"
+      "en": "напӀэзыпӀэу Type: adverb Definitions: 1. instantly",
+      "tr": "aniden"
     }
   },
   {
@@ -229593,7 +229635,8 @@
     "isLemma": true,
     "translations": {
       "en": "drag sb or sth into or under sth (inside), drag sb swh (by force, cajolling or persuasion)",
-      "ru": "втащить, затащить кого-что-л. (в помещение), подо что-л., затащить кого-л. куда-л. (силой, уговорами и т. п.)"
+      "ru": "втащить, затащить кого-что-л. (в помещение), подо что-л., затащить кого-л. куда-л. (силой, уговорами и т. п.)",
+      "tr": "akmak"
     }
   },
   {
@@ -231494,7 +231537,8 @@
     ],
     "translations": {
       "en": "be conceited, treat sb or sth with disdain",
-      "ru": "зазнаваться, относиться с пренебрежением к кому-чему-л."
+      "ru": "зазнаваться, относиться с пренебрежением к кому-чему-л.",
+      "tr": "ŞIMARMAK"
     }
   },
   {
@@ -232220,7 +232264,8 @@
     ],
     "translations": {
       "en": "break or tear away from sb's hands, escape or slip away from sb, miss or lose sth, unwittingly or inadvertently do sthor allow sth to happen.",
-      "ru": "вырваться из чьих-л. рук, убежать, ускользнуть от кого-л., упустить что-л., лишиться чего-л., допустить, невольно сделать что-л."
+      "ru": "вырваться из чьих-л. рук, убежать, ускользнуть от кого-л., упустить что-л., лишиться чего-л., допустить, невольно сделать что-л.",
+      "tr": "SIYRILMAK"
     }
   },
   {
@@ -232348,7 +232393,8 @@
     "isLemma": true,
     "translations": {
       "en": "to nonplus, perplex (smb.); to bewilder (smb.); to astonish, surprise, amaze (smb.); to discourage, dishearten, dispirit (smb.).",
-      "ru": "каузатив к къэуӏэбжьын: заставить прийти в недоумение, растеряться"
+      "ru": "каузатив к къэуӏэбжьын: заставить прийти в недоумение, растеряться",
+      "tr": "Üstüne koymak"
     }
   },
   {
@@ -232846,7 +232892,8 @@
     "rootForm": "Ӏу-",
     "translations": {
       "en": "get up in front of sth, near sth, get or find a job",
-      "ru": "встать перед чем-л., около чего-л., поступить на работу"
+      "ru": "встать перед чем-л., около чего-л., поступить на работу",
+      "tr": "BARIKAT"
     }
   },
   {
@@ -232913,7 +232960,8 @@
     "conceptId": "PROTECT",
     "translations": {
       "en": "swell (about buds on trees)",
-      "ru": "набухнуть (о почках деревьев)"
+      "ru": "набухнуть (о почках деревьев)",
+      "tr": "TOMURCUKLANMAK"
     }
   },
   {
@@ -233208,7 +233256,8 @@
     "conceptId": "BOW_MUSIC",
     "translations": {
       "en": "launch, throw or hurl sth at sb, sick or unleash sb on sb, say sth unpleasant to sb, cast aspersions at sb",
-      "ru": "запустить чем-л. в кого-л., бросить, кинуть что-л. в кого-л., напустить, натравить кого-л. на кого-что-л., бросить, сказать что-л. неприятное кому-л. бросить камень в собаку."
+      "ru": "запустить чем-л. в кого-л., бросить, кинуть что-л. в кого-л., напустить, натравить кого-л. на кого-что-л., бросить, сказать что-л. неприятное кому-л. бросить камень в собаку.",
+      "tr": "ATMAK"
     }
   },
   {
@@ -235001,7 +235050,7 @@
     "translations": {
       "en": "by that time; until, until the time that",
       "ru": "к тому времени; до тех пор, пока",
-      "tr": "",
+      "tr": "-ken",
       "trSource": "en->tr koprusu (orta)"
     },
     "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/3/35/%D0%90243%D0%B0%D0%BF%D1%89%D3%8F%D0%BE%D0%BD%D0%B4%D1%8D%D1%85%D1%83.ogg"
@@ -235144,7 +235193,8 @@
     "conceptId": "HEAR",
     "translations": {
       "en": "turn sth to the side",
-      "ru": "повернуть что-л. в сторону"
+      "ru": "повернуть что-л. в сторону",
+      "tr": "VIDALAMAK"
     }
   },
   {
@@ -235428,7 +235478,8 @@
     },
     "translations": {
       "en": "grow swh on the surface of sth., appear or form on the surface of sth (for example, a boil)",
-      "ru": "вырасти где-л., на поверхности чего-л., появиться, образоваться на поверхности чего-л. (напр. о фурункуле)"
+      "ru": "вырасти где-л., на поверхности чего-л., появиться, образоваться на поверхности чего-л. (напр. о фурункуле)",
+      "tr": "birlikte yola çıkmak"
     },
     "literalMeaningSource": "translations.ru->tr (orta)"
   },
@@ -235466,7 +235517,7 @@
     "translations": {
       "en": "stand supporting sb or sth, stand against or opposite sb or sth, in front of sb or sth",
       "ru": "стоять, подпирая кого-что-л., стоять против кого-чего-л., перед кем-чем-л.",
-      "tr": "",
+      "tr": "durmak",
       "trSource": "en->tr koprusu (orta)"
     },
     "literalMeaningSource": "translations.ru->tr (orta)"
@@ -235756,7 +235807,8 @@
     "conceptId": "PROTECT",
     "translations": {
       "en": "persuade sb to do sth, convince sb.",
-      "ru": "склонить кого-л. к чему-л., уговорить кого-л."
+      "ru": "склонить кого-л. к чему-л., уговорить кого-л.",
+      "tr": "cesaretini kırmak"
     }
   },
   {
@@ -235978,7 +236030,7 @@
     "translations": {
       "en": "close, snap shut (for example, about a lock), encounter, unexpectedly meet sb or sth.",
       "ru": "закрыться, защёлкнуться (напр. о замке), столкнуться, неожиданно встретиться с кем-чем-л.",
-      "tr": "",
+      "tr": "karşılaşmak",
       "trSource": "en->tr koprusu (orta)"
     }
   },
@@ -236751,7 +236803,8 @@
     "conceptId": "EAT_UNDER",
     "translations": {
       "en": "eat all the grass under or beneath sth",
-      "ru": "съесть всю траву под чем-л."
+      "ru": "съесть всю траву под чем-л.",
+      "tr": "BÜYÜMEK"
     }
   },
   {
@@ -236814,7 +236867,8 @@
     "conceptId": "SPARE",
     "translations": {
       "en": "threefold, thrice, three times (more, less)",
-      "ru": "втрое, в три раза (больше, меньше)"
+      "ru": "втрое, в три раза (больше, меньше)",
+      "tr": "Üç"
     }
   },
   {
@@ -237110,7 +237164,7 @@
     "translations": {
       "en": "be held in the hand, possess, have something, be under sb's control",
       "ru": "быть, находиться в руке, обладать, располагать чем-л., быть в чьём-л. ведении",
-      "tr": ""
+      "tr": "durmak"
     },
     "literalMeaningSource": "translations.ru->tr (orta)"
   },
@@ -237240,7 +237294,8 @@
     "conceptId": "SPARE",
     "translations": {
       "en": "straight in the direction of sb or sth",
-      "ru": "прямо по направлению к кому-чему-л."
+      "ru": "прямо по направлению к кому-чему-л.",
+      "tr": "DIKEY"
     }
   },
   {
@@ -237323,7 +237378,8 @@
     "conceptId": "MIND",
     "translations": {
       "en": "shave sth off, plane sth off, remove sth., clean up sth; eat up fully, take sth away completey.",
-      "ru": "сбрить что-л., сострогать что-л., подчистить; дочиста, без остатка съесть, забрать что-л."
+      "ru": "сбрить что-л., сострогать что-л., подчистить; дочиста, без остатка съесть, забрать что-л.",
+      "tr": "tıraş etmek"
     }
   },
   {
@@ -239330,7 +239386,8 @@
     "ipa": "/fʹɐ'nɐn/",
     "translations": {
       "en": "hook or catch on sth, snag, argue, quarrel with sb",
-      "ru": "цепляться за что-л., ссориться, ругаться с кем-л."
+      "ru": "цепляться за что-л., ссориться, ругаться с кем-л.",
+      "tr": "TAKILMAK"
     }
   },
   {
@@ -239570,7 +239627,8 @@
     "conceptId": "PROTECT",
     "translations": {
       "en": "to persuade (smb.); to tempt, seduce (smb.).",
-      "ru": "каузатив к къэӏулэн: соблазнить, прельстить чем-л."
+      "ru": "каузатив к къэӏулэн: соблазнить, прельстить чем-л.",
+      "tr": "ALDATMAK"
     }
   },
   {
@@ -239835,7 +239893,8 @@
     "conceptId": "DEFECT",
     "translations": {
       "en": "build or erect sth in a row, in a series",
-      "ru": "построить, возвести что-л. в ряд"
+      "ru": "построить, возвести что-л. в ряд",
+      "tr": "BARDAKERİĞİ"
     }
   },
   {
@@ -240476,7 +240535,8 @@
     },
     "translations": {
       "en": "carry or take sth to the side, carry or put sth behind sth, divide or split up a word between lines",
-      "ru": "отнести, убрать что-л. в сторону, убрать, отнести что-л. за что-л., перенести слово на новую строку"
+      "ru": "отнести, убрать что-л. в сторону, убрать, отнести что-л. за что-л., перенести слово на новую строку",
+      "tr": "Düzenlemek"
     },
     "literalMeaningSource": "translations.ru->tr (orta)"
   },
@@ -240561,7 +240621,8 @@
     "ipaSource": "root-derived",
     "ipa": "/xwzɐʔʷɬʼǝn/",
     "translations": {
-      "ru": "перех. 1) сбивать, сбить, сколачивать, сколотить что-л. для кого-либо 2) сметать, наметать что-л. для кого-либо"
+      "ru": "перех. 1) сбивать, сбить, сколачивать, сколотить что-л. для кого-либо 2) сметать, наметать что-л. для кого-либо",
+      "tr": "BAĞLAMAK"
     }
   },
   {
@@ -240681,7 +240742,8 @@
     "rootForm": "Ӏу-",
     "translations": {
       "en": "drive or hammer sth into sth (for example, a cork), seal or board sth up in front (for example, a window)",
-      "ru": "вбить, вколотить, вогнать что-л. во что-л. (напр. пробку), забить что-л. чем-л. спереди (напр. окно)"
+      "ru": "вбить, вколотить, вогнать что-л. во что-л. (напр. пробку), забить что-л. чем-л. спереди (напр. окно)",
+      "tr": "TIKAMAK"
     }
   },
   {
@@ -240789,7 +240851,8 @@
     },
     "translations": {
       "en": "bring or move one thing closer to another, take sth (for example, medicine), appropriate sth",
-      "ru": "поднести, приблизить одно к другому, принять что-л. (напр. лекарство), присвоить себе что-л."
+      "ru": "поднести, приблизить одно к другому, принять что-л. (напр. лекарство), присвоить себе что-л.",
+      "tr": "almak"
     },
     "literalMeaningSource": "translations.ru->tr (orta)"
   },
@@ -241080,7 +241143,8 @@
     "conceptId": "YEAR",
     "translations": {
       "en": "bathe or wash sb",
-      "ru": "купать, мыть кого-л."
+      "ru": "купать, мыть кого-л.",
+      "tr": "YIKAMAK"
     }
   },
   {
@@ -241148,7 +241212,8 @@
     },
     "translations": {
       "en": "free or liberate yourself, run away from sb or sth.",
-      "ru": "освободиться, убежать от кого-чего-л."
+      "ru": "освободиться, убежать от кого-чего-л.",
+      "tr": "Prostata adenoma"
     }
   },
   {
@@ -242461,7 +242526,7 @@
     "translations": {
       "en": "sit down on sth, mount sth (for example, a horse, a chair), fall down on, settle on sth (for example, snowflakes, leaves)",
       "ru": "сесть на кого-что-л. (напр. на коня, на стул), сесть, опуститься на кого-что-л. (напр. о снежинках, листьях)",
-      "tr": ""
+      "tr": "oturmak"
     },
     "literalMeaningSource": "translations.ru->tr (orta)"
   },
@@ -242590,7 +242655,8 @@
     "conceptId": "YEAR",
     "translations": {
       "en": "to soak, steep (smth.)",
-      "ru": "каузатив к уцӏынын: заставить отсыреть, отмокнуть, взмокнуть; размочить"
+      "ru": "каузатив к уцӏынын: заставить отсыреть, отмокнуть, взмокнуть; размочить",
+      "tr": "ISLATMAK"
     }
   },
   {
@@ -243961,7 +244027,10 @@
     "taxonomyFamily": "Sınır & Mesafe",
     "rootForm": "нэ-",
     "ipa": "/nɐf/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "Natan (özel isim)"
+    }
   },
   {
     "id": "L-CORPUS2-08725",
@@ -243989,7 +244058,8 @@
     "ipa": "/wǝˈdzǝfɐ/",
     "ipaSource": "root-derived",
     "translations": {
-      "ru": "ФЭДИТӀУ / фэдитӀо. В двукратном размере. Зыгорэм фэдэу тӀу. Хатэу иӀэм фэдитӀу ышӀагъ."
+      "ru": "ФЭДИТӀУ / фэдитӀо. В двукратном размере. Зыгорэм фэдэу тӀу. Хатэу иӀэм фэдитӀу ышӀагъ.",
+      "tr": "iki misli"
     }
   },
   {
@@ -245102,7 +245172,8 @@
     "isLemma": true,
     "translations": {
       "en": "request or demand from sb (a high price)",
-      "ru": "заломить, запросить с кого-л. (высокую цену)"
+      "ru": "заломить, запросить с кого-л. (высокую цену)",
+      "tr": "FIRÇALAMAK"
     }
   },
   {
@@ -245888,7 +245959,8 @@
     "isLemma": true,
     "translations": {
       "en": "do or build sth carelessly, in a slipshod manner",
-      "ru": "сделать, построить что-л. небрежно, кое-как"
+      "ru": "сделать, построить что-л. небрежно, кое-как",
+      "tr": "Kapatmak"
     },
     "literalMeaningSource": "translations.ru->tr (orta)"
   },
@@ -246290,7 +246362,7 @@
     "translations": {
       "en": "naughty or spoiled child, bully, prankster",
       "ru": "озорник, забияка, баловник, проказник",
-      "tr": ""
+      "tr": "mischief"
     }
   },
   {
@@ -246490,7 +246562,7 @@
     "translations": {
       "en": "spoil, deteriorate, become unusable, become worse, deteriorate",
       "ru": "испортиться, стать непригодным, стать хуже, ухудшиться",
-      "tr": "",
+      "tr": "BOZULMAK",
       "trSource": "en->tr koprusu (orta)"
     }
   },
@@ -247051,7 +247123,8 @@
     "conceptId": "DENSE",
     "translations": {
       "en": "turn sth off (for example, a machine or the radio) for sb (for sb's sake or at sb's request), soothe or relieve sth (for example, pain) for sb, pacify sb, calm sb down for sb (for sb's sake or at sb's",
-      "ru": "выключить что-л. (напр. станок, радио) для кого-л. (ради кого-л., по чьей-л. просьбе), успокоить, снять что-л. (напр. боль) кому-л., усмирить, успокоить, унять кого-л. для кого-л. (ради кого-л., по чь"
+      "ru": "выключить что-л. (напр. станок, радио) для кого-л. (ради кого-л., по чьей-л. просьбе), успокоить, снять что-л. (напр. боль) кому-л., усмирить, успокоить, унять кого-л. для кого-л. (ради кого-л., по чь",
+      "tr": "SAKINLEŞTIRMEK"
     }
   },
   {
@@ -247835,7 +247908,8 @@
     "conceptId": "WRITE",
     "translations": {
       "en": "write sth at the bottom below sth, attribute or ascribe sth (illegally, deliberately)",
-      "ru": "написать что-л. внизу под чем-л., приписать что-л. (незаконно, умышленно)"
+      "ru": "написать что-л. внизу под чем-л., приписать что-л. (незаконно, умышленно)",
+      "tr": "Kısa yazmak"
     }
   },
   {
@@ -247974,7 +248048,8 @@
     "conceptId": "BLUE",
     "translations": {
       "en": "regret (what you have done or said), repent (for what you have done or said)",
-      "ru": "сожалеть (о содеянном, сказанном), раскаяться (в содеянном, сказанном)"
+      "ru": "сожалеть (о содеянном, сказанном), раскаяться (в содеянном, сказанном)",
+      "tr": "KISKANMAK"
     }
   },
   {
@@ -248219,7 +248294,8 @@
     },
     "translations": {
       "en": "build an anex to sth, build sth attached to sth",
-      "ru": "пристроить что-л. к чему-л."
+      "ru": "пристроить что-л. к чему-л.",
+      "tr": "YARGILAMAK"
     }
   },
   {
@@ -248375,7 +248451,8 @@
     },
     "translations": {
       "en": "press or crush sb or sth in large quantities, kneading, mix or blend sth with sth",
-      "ru": "давить кого-что-л. в большом количестве, смешать, перемешать что-л. с чём-л., разминая"
+      "ru": "давить кого-что-л. в большом количестве, смешать, перемешать что-л. с чём-л., разминая",
+      "tr": "BASTIRMAK"
     }
   },
   {
@@ -248712,7 +248789,8 @@
     "ipa": "/qʹǝʔɐɕʹɐ'xǝn/",
     "translations": {
       "en": "accept or take sb or sth from sb's hands, take sb or sth away form sb or sth; save or rescue sb or sth from sth or sth.",
-      "ru": "брать, взять кого-что-л. у кого-л. из рук, отнять кого-что-л. у кого-чего-л.; спасти кого-что-л. от кого-чего-л."
+      "ru": "брать, взять кого-что-л. у кого-л. из рук, отнять кого-что-л. у кого-чего-л.; спасти кого-что-л. от кого-чего-л.",
+      "tr": "Almak"
     }
   },
   {
@@ -248776,7 +248854,8 @@
     "conceptId": "EYEBROW",
     "translations": {
       "en": "throw or toss sth under sb or sth, secretly give or toss sb or sth to sb",
-      "ru": "подбросить, подкинуть что-л. под кого-что-л., подбросить, подкинуть кого-что-л. кому-л."
+      "ru": "подбросить, подкинуть что-л. под кого-что-л., подбросить, подкинуть кого-что-л. кому-л.",
+      "tr": "SULAMAK"
     }
   },
   {
@@ -248965,7 +249044,8 @@
     ],
     "ipa": "/ʔʷɐxʷ/",
     "translations": {
-      "en": "ӀуэхуеплъыкӀэ Type: noun Definitions: 1. belief"
+      "en": "ӀуэхуеплъыкӀэ Type: noun Definitions: 1. belief",
+      "tr": "olaylara bakış açısı"
     }
   },
   {
@@ -249061,7 +249141,8 @@
     "ipa": "/zɐʁɐ'ɕʹɐn/",
     "translations": {
       "en": "зэгъэщӀэныгъэ Type: noun Definitions: 1. mastery 2. knowledge",
-      "ru": "освоение"
+      "ru": "освоение",
+      "tr": "öğrenim"
     }
   },
   {
@@ -250287,7 +250368,10 @@
     },
     "notes": "Corpus v1.0 batch-2 (freq: 12, lang: ady, source: none)",
     "isLemma": false,
-    "ipa": "/swljajmaːn/"
+    "ipa": "/swljajmaːn/",
+    "translations": {
+      "tr": "Süleyman (özel isim)"
+    }
   },
   {
     "id": "L-CORPUS2-09570",
@@ -250376,7 +250460,8 @@
     "ipa": "/kʹʷɐ/",
     "ipaSource": "root-derived",
     "translations": {
-      "ru": "КӀОЧӀЭГЪУ. Равный по силе. КӀуа-чӀэу иӀэмкӀэ зыгорэм гоуцоу ары. Ар ащ кӀочӀэгъу фэхъу."
+      "ru": "КӀОЧӀЭГЪУ. Равный по силе. КӀуа-чӀэу иӀэмкӀэ зыгорэм гоуцоу ары. Ар ащ кӀочӀэгъу фэхъу.",
+      "tr": "dayanak"
     }
   },
   {
@@ -251865,7 +251950,8 @@
     },
     "translations": {
       "en": "miss or release sb or sth (without restraining it or holding it back), miss sb or sth (for exapmle, opportunity, chance); lose or be deprived of sth.",
-      "ru": "упустить, выпустить кого-что-л. (не удержав), упустить кого-что-л. (напр. возможность, случай); лишиться чего-л., потерять что-л."
+      "ru": "упустить, выпустить кого-что-л. (не удержав), упустить кого-что-л. (напр. возможность, случай); лишиться чего-л., потерять что-л.",
+      "tr": "USANMAK"
     }
   },
   {
@@ -251880,7 +251966,10 @@
     },
     "notes": "Corpus v1.0 batch-2 (freq: 11, lang: kbd, source: none)",
     "isLemma": false,
-    "ipa": "/jafrwan/"
+    "ipa": "/jafrwan/",
+    "translations": {
+      "tr": "Efron (özel isim)"
+    }
   },
   {
     "id": "L-CORPUS2-09811",
@@ -251939,7 +252028,8 @@
     },
     "translations": {
       "en": "scrape sth off the surface of sth, clean sth. from sth.",
-      "ru": "соскоблить что-л. с поверхности чего-л., очистить что-л. от чего-л."
+      "ru": "соскоблить что-л. с поверхности чего-л., очистить что-л. от чего-л.",
+      "tr": "EĞELEMEK"
     }
   },
   {
@@ -252100,7 +252190,8 @@
     "conceptId": "MIND",
     "translations": {
       "en": "clean sth from the surface of sth (sth. unnecessary or undesirable), destroy sb or sth swh on the surface of sth, liquidate or eliminate sth.",
-      "ru": "очистить что-л. с поверхности чего-л. (лишнее, ненужное, нежелательное), уничтожить кого-что-л. где-л., на поверхности чего-л., устранить, ликвидировать что-л."
+      "ru": "очистить что-л. с поверхности чего-л. (лишнее, ненужное, нежелательное), уничтожить кого-что-л. где-л., на поверхности чего-л., устранить, ликвидировать что-л.",
+      "tr": "soymak"
     }
   },
   {
@@ -252337,7 +252428,8 @@
     "conceptId": "DINING_ROOM",
     "translations": {
       "en": "screw, twist something.",
-      "ru": "завинтить, закрутить что-л."
+      "ru": "завинтить, закрутить что-л.",
+      "tr": "VIDALAMAK"
     }
   },
   {
@@ -257586,7 +257678,8 @@
     "ipa": "/qʹǝp/",
     "translations": {
       "en": "to break, burst, to be breached.",
-      "ru": "неперех. пробиваться, пробиться, прорываться, прорваться, разрываться, разорваться"
+      "ru": "неперех. пробиваться, пробиться, прорываться, прорваться, разрываться, разорваться",
+      "tr": "to break"
     }
   },
   {
@@ -258016,7 +258109,8 @@
     },
     "translations": {
       "en": "a spell to keep a missing animal safe.",
-      "ru": "заклинание, чтобы пропавшая скотина осталась невредимой"
+      "ru": "заклинание, чтобы пропавшая скотина осталась невредимой",
+      "tr": "ev gereçleri"
     }
   },
   {
@@ -258454,7 +258548,8 @@
     "rootForm": "хьэ-",
     "translations": {
       "en": "lack of initiative, inertia, passivity",
-      "ru": "безынициативность, инертность, пассивность"
+      "ru": "безынициативность, инертность, пассивность",
+      "tr": "ticaretsizlik"
     }
   },
   {
@@ -268620,7 +268715,8 @@
     "ipa": "/mi:n/",
     "ipaSource": "root-derived",
     "translations": {
-      "ru": "дэлэн нэщӀ"
+      "ru": "дэлэн нэщӀ",
+      "tr": "krep"
     }
   },
   {
@@ -271237,7 +271333,7 @@
     "isLemma": false,
     "ipa": "/qʹɐnɐ'ᶎǝn/",
     "translations": {
-      "tr": "KURTULMAK"
+      "tr": "geriye kalmak, baki kalmak"
     },
     "literalMeaningSource": "translations.tr (yuksek)"
   },
@@ -275598,7 +275694,7 @@
     "translations": {
       "en": "the upper part of a saddle that the rider sits on",
       "ru": "верхняя часть седла, на которой сидит всадник",
-      "tr": ""
+      "tr": "eyer kaşı"
     }
   },
   {
@@ -278233,7 +278329,7 @@
     "isLemma": true,
     "translations": {
       "ru": "спокойно, без суматохи, без дрязг, без неприятностей",
-      "tr": ""
+      "tr": "patırtısız"
     },
     "subConceptId": "PEACE",
     "taxonomyFamily": "Barış/Huzur",
@@ -279131,7 +279227,8 @@
     "isLemma": true,
     "translations": {
       "ru": "снять с себя / Уи пк",
-      "en": "take sth off or remove sth from yourself (for example, a kerchief or burden)"
+      "en": "take sth off or remove sth from yourself (for example, a kerchief or burden)",
+      "tr": "üzerinden çıkarmak"
     },
     "rootIds": [
       "R-KHY"
@@ -279214,7 +279311,8 @@
     "isLemma": true,
     "translations": {
       "ru": "сгребая, набросать что-л",
-      "en": "raking or shovelling, throw sth on some surface, cast or hurl at sb (abuse)"
+      "en": "raking or shovelling, throw sth on some surface, cast or hurl at sb (abuse)",
+      "tr": "üzerine sürmek"
     },
     "rootIds": [
       "R-TYET"
@@ -280594,7 +280692,8 @@
     "isLemma": true,
     "translations": {
       "ru": "вылизывать, вылизать, облизывать, облизать, облизнуть что-л",
-      "en": "lick sb or sth, eat or lick sth clean"
+      "en": "lick sb or sth, eat or lick sth clean",
+      "tr": "birbirine karıştırmak"
     },
     "rootIds": [
       "R-SHE2"
@@ -280755,7 +280854,7 @@
     "translations": {
       "ru": "просторечие быстро запихивать что-л",
       "en": "quickly stuff sth into one's mouth",
-      "tr": ""
+      "tr": "ağzına düşmek"
     }
   },
   {
@@ -280778,7 +280877,7 @@
     "translations": {
       "ru": "хворост / Чы гъур",
       "en": "brushwood, young underbrush",
-      "tr": ""
+      "tr": "esnek söğüt çubuğu"
     }
   },
   {
@@ -280798,7 +280897,8 @@
     "isLemma": true,
     "translations": {
       "ru": "обогнать, опередить кого-что-л",
-      "en": "overtake, pass up, outrun sb or sth"
+      "en": "overtake, pass up, outrun sb or sth",
+      "tr": "üzerine koşup gelmek"
     },
     "rootIds": [
       "R-SHHA"
@@ -280829,7 +280929,8 @@
     "isLemma": true,
     "translations": {
       "ru": "выгрести что-л",
-      "en": "rake or shovel sth dry, powdery or granular out of sth, rake or shovel sth away from sth (in the direction of the speaker)"
+      "en": "rake or shovel sth dry, powdery or granular out of sth, rake or shovel sth away from sth (in the direction of the speaker)",
+      "tr": "kazımak"
     },
     "rootIds": [
       "R-IN"
@@ -281105,7 +281206,8 @@
     "isLemma": true,
     "translations": {
       "ru": "обременять кого-л",
-      "en": "burden sb, load sb down, to encumber sb"
+      "en": "burden sb, load sb down, to encumber sb",
+      "tr": "üzerine yüklenmek"
     },
     "examples": [
       "*Къалэныр техьэлъэн."
@@ -282302,7 +282404,7 @@
     "translations": {
       "en": "[you] yourself",
       "ru": "[вы] сами, самостоятельно",
-      "tr": ""
+      "tr": "renk renk"
     },
     "examples": [
       "*Фэр-фэру фызэгурыӀуэж."
@@ -282999,7 +283101,8 @@
     "isLemma": true,
     "translations": {
       "ru": "каузатив к къэухын / Къэухын псалъэм и каузатив",
-      "en": "1. to make (smb.) finish, leave (ex.: school);\n2. to give the opportunity to finish, leave (smth.); еджапӀэм къегъэухын: to give the opportunity to leave school."
+      "en": "1. to make (smb.) finish, leave (ex.: school);\n2. to give the opportunity to finish, leave (smth.); еджапӀэм къегъэухын: to give the opportunity to leave school.",
+      "tr": "tamamlatmak"
     },
     "rootIds": [
       "R-KHY"
@@ -283297,7 +283400,8 @@
     "isLemma": true,
     "translations": {
       "ru": "гурьбой ворваться куда-л",
-      "en": "as a crowd, rush into swh; to crowd into swh"
+      "en": "as a crowd, rush into swh; to crowd into swh",
+      "tr": "birlikte koşuşmak"
     },
     "examples": [
       "*ПщӀантӀэм дэзэрыгуэн.",
@@ -284341,7 +284445,8 @@
     "isLemma": true,
     "translations": {
       "ru": "а) впахать что-л",
-      "en": "plough sth up to swh"
+      "en": "plough sth up to swh",
+      "tr": "varabilmek"
     },
     "subConceptId": "COMPLETE_PLOW",
     "taxonomyFamily": "Sınır & Mesafe",
@@ -284866,7 +284971,8 @@
     "isLemma": true,
     "translations": {
       "en": "slide or fall off the end or edge of sth.",
-      "ru": "сползти, свалиться с края или конца чего-л."
+      "ru": "сползти, свалиться с края или конца чего-л.",
+      "tr": "bağlı durmak"
     },
     "rootIds": [
       "R-SHE"
@@ -284968,7 +285074,8 @@
     "isLemma": true,
     "translations": {
       "ru": "каузатив к зэщыхьэн / Зэщыхьэн псалъэм и каузативщ",
-      "en": "каузатив к (causative to)"
+      "en": "каузатив к (causative to)",
+      "tr": "yanıltmak"
     },
     "rootIds": [
       "R-SHCH"
@@ -285263,7 +285370,8 @@
     "isLemma": true,
     "translations": {
       "ru": "act. eclipse; дыгъэр ~: solar eclipse",
-      "en": "act. eclipse; дыгъэр ~: solar eclipse"
+      "en": "act. eclipse; дыгъэр ~: solar eclipse",
+      "tr": "kavrama"
     },
     "rootIds": [
       "R-BGHW"
@@ -285330,7 +285438,8 @@
     "isLemma": true,
     "translations": {
       "ru": "внести кого-что-л",
-      "en": "carry or bear sb or sth swh, introduce, install sth among sb or sth"
+      "en": "carry or bear sb or sth swh, introduce, install sth among sb or sth",
+      "tr": "katılmak"
     },
     "rootIds": [
       "R-SHHA"
@@ -285508,7 +285617,7 @@
     "translations": {
       "ru": "поговорить с кем-л",
       "en": "talk or speak to sb for sb (at sb's request, insistence or in sb's interests)",
-      "tr": ""
+      "tr": "hitaben konuşmak"
     }
   },
   {
@@ -286068,7 +286177,8 @@
     "notes": "Verified (freq: 6, 5.Ady-Rus_Qarden)",
     "isLemma": true,
     "translations": {
-      "ru": "Вьетнам"
+      "ru": "Вьетнам",
+      "tr": "Vietnam (özel isim)"
     },
     "ipa": "/vjatnaːm/"
   },
@@ -287177,7 +287287,7 @@
     "translations": {
       "ru": "перенести кого-что-л",
       "en": "carry sb or sth across sth, to the other side of sth (for example, a river or street)",
-      "tr": ""
+      "tr": "karşıya geçirmek"
     },
     "rootIds": [
       "R-KHY"
@@ -288721,7 +288831,8 @@
     "notes": "Verified (freq: 6, 5.Ady-Rus_Qarden)",
     "isLemma": true,
     "translations": {
-      "ru": "Лондон г"
+      "ru": "Лондон г",
+      "tr": "Londra (özel isim)"
     },
     "ipa": "/lwandwan/"
   },
@@ -288798,7 +288909,8 @@
     "isLemma": true,
     "translations": {
       "ru": "хъужауэ",
-      "en": "a word used to emphasize features of sb or sth"
+      "en": "a word used to emphasize features of sb or sth",
+      "tr": "iyileşerek"
     },
     "rootIds": [
       "R-SHE2"
@@ -288952,7 +289064,7 @@
     "translations": {
       "en": "to bits, to pieces, to tatters, to smithereens",
       "ru": "в пух и прах",
-      "tr": ""
+      "tr": "cıvıl cıvıl"
     }
   },
   {
@@ -290021,7 +290133,8 @@
     "isLemma": true,
     "translations": {
       "en": "hang yourself, commit suicide by hanging",
-      "ru": "удушиться, повеситься"
+      "ru": "удушиться, повеситься",
+      "tr": "yorulmak"
     },
     "examples": [
       "*ЛӀым зитхъэлэжащ."
@@ -290357,7 +290470,7 @@
     "translations": {
       "ru": "спросонья, с заспанными глазами",
       "en": "sleepily",
-      "tr": ""
+      "tr": "uyku sersemi"
     }
   },
   {
@@ -290489,7 +290602,8 @@
     "isLemma": true,
     "translations": {
       "ru": "натянуть на голову что-л",
-      "en": "pull sth down over your head (for example, a hat)"
+      "en": "pull sth down over your head (for example, a hat)",
+      "tr": "başını eğmek"
     },
     "subConceptId": "HEAD_COVER",
     "taxonomyFamily": "Baş & Kafa",
@@ -290515,7 +290629,7 @@
     "translations": {
       "ru": "перебегать через что-л",
       "en": "run across sth, flow through sth",
-      "tr": ""
+      "tr": "karşıdan karşıya koşmak"
     },
     "rootIds": [
       "R-PE"
@@ -291267,7 +291381,7 @@
     "translations": {
       "ru": "взимать, взыскать что-л",
       "en": "charge, collect sth from sb, extract, find, get or ferret out sth from sb.",
-      "tr": "",
+      "tr": "içinden çıkarmak",
       "trSource": "en->tr koprusu (orta)"
     },
     "rootIds": [
@@ -291721,7 +291835,8 @@
     "isLemma": true,
     "translations": {
       "ru": "склеить что-л",
-      "en": "glue or paste sth together."
+      "en": "glue or paste sth together.",
+      "tr": "üst üste yemek"
     },
     "examples": [
       "*ШхэпскӀэ тхылъымпӀэр зэтешхэн."
@@ -291863,7 +291978,8 @@
     "isLemma": true,
     "translations": {
       "ru": "нахмуриться / Нэщхъейуэ, нэщхъпэщхъыу, губжьауэ щытын",
-      "en": "frown, scowl"
+      "en": "frown, scowl",
+      "tr": "büzülmek"
     },
     "rootIds": [
       "R-FE"
@@ -292713,7 +292829,8 @@
     "ipa": "/xɐ'pɬɐn/",
     "translations": {
       "en": "act.\n1. scrutinizing, looking at (some mass);\n2. investigation, examination, consideration (ex.: of case in court); discussion (of smth.)",
-      "ru": "и. д. 1) рассматривание (какой-л. массы) 2) разбор, рассмотрение ( напр. дела в суде) ; обсуждение чего-л."
+      "ru": "и. д. 1) рассматривание (какой-л. массы) 2) разбор, рассмотрение ( напр. дела в суде) ; обсуждение чего-л.",
+      "tr": "inceleme"
     }
   },
   {
@@ -295859,7 +295976,8 @@
     "ipa": "/nɐb'ʑǝts/",
     "ipaSource": "root-derived",
     "translations": {
-      "ru": "ГЪЭФЭБЭЖЬЫН. Масд.\n\t1. Подогреть что-л. Гъэстырыжьын. Шхын чъыӀэр бгъэфэбэжьын фае. \n\t2. Подогревание. Гъэстырыжьыгъэныр. Шхын чъыӀэр бгъэфэбэжьыныр дэгъу."
+      "ru": "ГЪЭФЭБЭЖЬЫН. Масд.\n\t1. Подогреть что-л. Гъэстырыжьын. Шхын чъыӀэр бгъэфэбэжьын фае. \n\t2. Подогревание. Гъэстырыжьыгъэныр. Шхын чъыӀэр бгъэфэбэжьыныр дэгъу.",
+      "tr": "tekrar ısıtmak"
     }
   },
   {
@@ -295876,7 +295994,8 @@
     "isLemma": true,
     "translations": {
       "ru": "застрять, завязнуть в чем-л",
-      "en": "get stuck in sth (through your own fault), lose to sb (in chess, checkers, cards)"
+      "en": "get stuck in sth (through your own fault), lose to sb (in chess, checkers, cards)",
+      "tr": "kendini bırakmak"
     },
     "rootIds": [
       "R-NE"
@@ -296552,7 +296671,8 @@
     },
     "ipa": "/qʹǝdɐ'χʷǝn/",
     "translations": {
-      "ru": "КЪЫДЭХЪУӀ, къадэхъу. ЛъыӀ. Удается кому-л. что-л. Зыфаер егъоты. А кӀалэр насыпышӀоу щыт, зыфаер зэкӀэ къыдэхъу."
+      "ru": "КЪЫДЭХЪУӀ, къадэхъу. ЛъыӀ. Удается кому-л. что-л. Зыфаер егъоты. А кӀалэр насыпышӀоу щыт, зыфаер зэкӀэ къыдэхъу.",
+      "tr": "başarılı olmak"
     }
   },
   {
@@ -296632,7 +296752,8 @@
     "notes": "Verified (freq: 6, 7.Ady-Rus_Tharkaho)",
     "isLemma": true,
     "translations": {
-      "ru": "опубликовать, напечатать что-л"
+      "ru": "опубликовать, напечатать что-л",
+      "tr": "içinden fırlatmak"
     },
     "rootIds": [
       "R-SHHA"
@@ -298623,7 +298744,8 @@
     },
     "isLemma": true,
     "translations": {
-      "ru": "вспомнить, воссоздать в памяти что-л"
+      "ru": "вспомнить, воссоздать в памяти что-л",
+      "tr": "yeniden tasarlamak"
     },
     "ipa": "/nɐb'ʑǝts/",
     "ipaSource": "root-derived"
@@ -300695,7 +300817,7 @@
     "translations": {
       "en": "wordlessly, silently, without saying a word",
       "ru": "бессловесно, молча",
-      "tr": ""
+      "tr": "konuşmaksızın"
     }
   },
   {
@@ -301412,7 +301534,8 @@
     "isLemma": true,
     "translations": {
       "ru": "стать спелым, окончательно созреть / Игъуэ хъууэ щхьэпришыжын, и хъун ирикъуп",
-      "en": "get ripe, become totally ripe, fully ripen"
+      "en": "get ripe, become totally ripe, fully ripen",
+      "tr": "istenmek"
     },
     "rootIds": [
       "R-PE"
@@ -301687,7 +301810,7 @@
     "translations": {
       "ru": "а) перегнать кого-что-л",
       "en": "chase or drive sb or sth over, above or across sth",
-      "tr": ""
+      "tr": "başının üzerinden düşmek"
     },
     "subConceptId": "HEAD_OVER",
     "taxonomyFamily": "Üst & Üzeri",
@@ -302034,7 +302157,8 @@
     "isLemma": true,
     "translations": {
       "ru": "обогреть для кого-л",
-      "en": "heat (a room) for sth"
+      "en": "heat (a room) for sth",
+      "tr": "kızdırmak"
     },
     "rootIds": [
       "R-SHE"
@@ -302269,7 +302393,7 @@
     "translations": {
       "ru": "затолкать, засунуть что-л",
       "en": "shove, stuff sth in your mouth",
-      "tr": ""
+      "tr": "ağzına tepmek"
     }
   },
   {
@@ -302357,7 +302481,7 @@
     "translations": {
       "ru": "перебежать через возвышенность / Уж",
       "en": "run over or across a hill or rise, get ahead or or overtake sb when running",
-      "tr": ""
+      "tr": "üzerinden koşup geçmek"
     },
     "subConceptId": "HEAD_OVER",
     "taxonomyFamily": "Üst & Üzeri",
@@ -302744,7 +302868,8 @@
     "isLemma": true,
     "translations": {
       "ru": "норов 2",
-      "en": "temper (horse)"
+      "en": "temper (horse)",
+      "tr": "taramak (saç)"
     },
     "rootIds": [
       "R-UESHCH"
@@ -304032,7 +304157,7 @@
     "translations": {
       "ru": "лечь над кем-чем-л",
       "en": "lie down on top of sb or sth",
-      "tr": ""
+      "tr": "baş ucuna koymak"
     },
     "subConceptId": "HEAD_OVER",
     "taxonomyFamily": "Üst & Üzeri",
@@ -304463,7 +304588,7 @@
     "translations": {
       "ru": "несмотря на что-л",
       "en": "despite, in spite of, not withstanding",
-      "tr": ""
+      "tr": "engelsiz bir şekilde"
     },
     "rootIds": [
       "R-NE"
@@ -304505,7 +304630,8 @@
     "isLemma": true,
     "translations": {
       "ru": "подбежать к чему-л",
-      "en": "run up to sth"
+      "en": "run up to sth",
+      "tr": "önüne koşmak"
     },
     "subConceptId": "APPROACH_RUN",
     "taxonomyFamily": "Eylem & Fiziksel",
@@ -304868,7 +304994,8 @@
     "isLemma": true,
     "translations": {
       "ru": "ещэщэхын",
-      "en": "pour downwards (about sth dry and powdery or granular)"
+      "en": "pour downwards (about sth dry and powdery or granular)",
+      "tr": "aşağı doğru kaymak"
     },
     "rootIds": [
       "R-SHE"
@@ -305704,7 +305831,8 @@
     "ipa": "/zɐrǝ'wɐn/",
     "translations": {
       "en": "be dislocated, be sprained",
-      "ru": "вывихнуться"
+      "ru": "вывихнуться",
+      "tr": "birbirine vurmak"
     }
   },
   {
@@ -305863,7 +305991,8 @@
     "ipa": "/mi:n/",
     "ipaSource": "root-derived",
     "translations": {
-      "ru": "ТУВИН / (-ыр), -нхэр, тувин.\n\t1. Еплъ тувиных."
+      "ru": "ТУВИН / (-ыр), -нхэр, тувин.\n\t1. Еплъ тувиных.",
+      "tr": "Tuva (özel isim)"
     }
   },
   {
@@ -306195,7 +306324,8 @@
     "isLemma": true,
     "translations": {
       "ru": "каузатив к къыгуэун / Къыгуэун псалъэм и каузатив",
-      "en": "1. to bring down, cause to fall, crumble (smth.);\n2. to chop off, lop off (smth.); къудамэхэр ~: to lop off the twigs."
+      "en": "1. to bring down, cause to fall, crumble (smth.);\n2. to chop off, lop off (smth.); къудамэхэр ~: to lop off the twigs.",
+      "tr": "yanına çarptırmak"
     },
     "rootIds": [
       "R-GU"
@@ -306777,7 +306907,8 @@
     "notes": "Verified (freq: 5, 5.Ady-Rus_Qarden)",
     "isLemma": true,
     "translations": {
-      "ru": "Куркужин р"
+      "ru": "Куркужин р",
+      "tr": "kurulup durmak"
     },
     "rootIds": [
       "R-QWA"
@@ -308557,7 +308688,7 @@
     "translations": {
       "ru": "къызэтеуэн",
       "en": "fall apart, collapse, close, slam (about a chest, a suitcase, etc.)",
-      "tr": "",
+      "tr": "üst üste vurmak",
       "trSource": "en->tr koprusu (orta)"
     },
     "rootIds": [
@@ -308735,7 +308866,8 @@
     "isLemma": true,
     "translations": {
       "ru": "узыпэмылъэщын Type: adjective Definitions: 1",
-      "en": "узыпэмылъэщын Type: adjective Definitions: 1. compulsive"
+      "en": "узыпэмылъэщын Type: adjective Definitions: 1. compulsive",
+      "tr": "gücünün yetmemesi"
     },
     "ipa": "/'ʔɐpʹqʹɬɐpʹqʹ/",
     "ipaSource": "root-derived"
@@ -308802,7 +308934,7 @@
     "translations": {
       "ru": "перелететь через что-л",
       "en": "fly over or across sth, fly above sth",
-      "tr": ""
+      "tr": "üzerinden uçup geçmek"
     },
     "subConceptId": "HEAD_OVER",
     "taxonomyFamily": "Üst & Üzeri",
@@ -309242,7 +309374,7 @@
     "translations": {
       "ru": "сосчитать кого-что-л",
       "en": "count sb or sth for sb.",
-      "tr": ""
+      "tr": "adam yerine koymak"
     },
     "rootIds": [
       "R-SHE"
@@ -310115,7 +310247,8 @@
     "isLemma": true,
     "translations": {
       "ru": "сжечь, пожечь / Куэд",
-      "en": "burn, set on fire (everything, a lot of sth)"
+      "en": "burn, set on fire (everything, a lot of sth)",
+      "tr": "üst üste bindirmek"
     },
     "rootIds": [
       "R-KHY"
@@ -310187,7 +310320,8 @@
     "isLemma": true,
     "translations": {
       "ru": "вытащить что-л",
-      "en": "pull or haul sth out of swh, get sb out of swh"
+      "en": "pull or haul sth out of swh, get sb out of swh",
+      "tr": "içine sürüklemek"
     },
     "examples": [
       "*Ӏэжьэр пщӀантӀэм дэлъэфын."
@@ -310908,7 +311042,8 @@
     "isLemma": true,
     "translations": {
       "ru": "подогнать кого-что-л",
-      "en": "chase or drive sb or sth up to or towards sb or sth"
+      "en": "chase or drive sb or sth up to or towards sb or sth",
+      "tr": "yanına düşmek"
     },
     "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/8/89/%D0%91329%D0%B1%D0%B3%D1%8A%D1%8D%D0%B4%D1%8D%D1%85%D1%83%D1%8D%D0%BD.ogg"
   },
@@ -311097,7 +311232,8 @@
     "isLemma": false,
     "ipa": "/matχw/",
     "translations": {
-      "ru": "МЭТХЪУ, мэтхъух. ЛъымыӀ. Седеет. Къэрабы мэхъу. Шъхьацыр мэтхъу. ЛӀыжъым ыжакӀэ мэтхъу."
+      "ru": "МЭТХЪУ, мэтхъух. ЛъымыӀ. Седеет. Къэрабы мэхъу. Шъхьацыр мэтхъу. ЛӀыжъым ыжакӀэ мэтхъу.",
+      "tr": "erimek"
     }
   },
   {
@@ -311180,7 +311316,8 @@
     "isLemma": true,
     "translations": {
       "ru": "запах плесени / Гъуэтам щыу мэ",
-      "en": "smell of mould"
+      "en": "smell of mould",
+      "tr": "bulunursa"
     },
     "rootIds": [
       "R-GHWAZH"
@@ -311349,7 +311486,8 @@
     "isLemma": true,
     "translations": {
       "ru": "побив , придать неп",
-      "en": "give an unsightly appearances as a result of being knocked down (by wind or hail), to rob or burgle sb or sth."
+      "en": "give an unsightly appearances as a result of being knocked down (by wind or hail), to rob or burgle sb or sth.",
+      "tr": "eğrilmek"
     },
     "rootIds": [
       "R-FE"
@@ -311917,7 +312055,8 @@
     "isLemma": true,
     "translations": {
       "ru": "а) выпить что-л",
-      "en": "drink sth more"
+      "en": "drink sth more",
+      "tr": "üzerine geri örtmek"
     },
     "rootIds": [
       "R-FE"
@@ -312628,7 +312767,7 @@
     "translations": {
       "ru": "разбросать что-л",
       "en": "scatter sth on top, flip or page through sth",
-      "tr": ""
+      "tr": "durdurup aşağı atmak"
     },
     "rootIds": [
       "R-SHHA"
@@ -312898,7 +313037,8 @@
     "isLemma": true,
     "translations": {
       "ru": "стащить кого-что-л",
-      "en": "pull or drag sb or sth down off sb or sth"
+      "en": "pull or drag sb or sth down off sb or sth",
+      "tr": "aşağı doğru sürüklemek"
     }
   },
   {
@@ -313277,7 +313417,7 @@
     "translations": {
       "ru": "каузатив к бэлэрыгъын / Бэлэрыгъын псалъэм и каузатив",
       "en": "to distract (smb. from smth.), to draw away (smb.'s) attention (from smth.); to get round (smb.), to distract (smb.) purposely by talking",
-      "tr": ""
+      "tr": "ihmal ettirmek"
     },
     "rootIds": [
       "R-GHE"
@@ -313635,7 +313775,7 @@
     "translations": {
       "ru": "так, и без того / Апхуэдэу щымытми, мыхъуми, армыруи, ар хэмытуи",
       "en": "and so, as it is (already), anyway",
-      "tr": ""
+      "tr": "öyle olmasa bile"
     },
     "rootIds": [
       "R-ARY"
@@ -313675,7 +313815,8 @@
     "isLemma": true,
     "translations": {
       "ru": "высыпать что-л",
-      "en": "pour sth out of sth (dry or granular), peel off the shell (for example, grains, beans), cause a rash"
+      "en": "pour sth out of sth (dry or granular), peel off the shell (for example, grains, beans), cause a rash",
+      "tr": "dökmek"
     },
     "examples": [
       "*Сэмбым къигъэлъэлъын.",
@@ -315028,7 +315169,8 @@
     "isLemma": true,
     "translations": {
       "ru": "каузатив к пхыдзын / Пхыдзын псалъэм и каузатив",
-      "en": "каузатив к (causative to)"
+      "en": "каузатив к (causative to)",
+      "tr": "içinden geçirtip attırmak"
     }
   },
   {
@@ -315553,7 +315695,7 @@
     "translations": {
       "en": "band up, cut sth up into parts",
       "ru": "перевязать, разрезать что-л. на части",
-      "tr": "",
+      "tr": "karşıya koşturmak",
       "trSource": "en->tr koprusu (orta)",
       "ar": "يقطّع"
     }
@@ -315704,7 +315846,8 @@
     "isLemma": true,
     "translations": {
       "ru": "быть, находиться во рту ( о жидкости </",
-      "en": "be in the mouth (about a liquid), be or fit in (a groove)"
+      "en": "be in the mouth (about a liquid), be or fit in (a groove)",
+      "tr": "ağzında durmak"
     },
     "ipa": "/ʑɐdɐ'tǝn/",
     "examples": [
@@ -316203,7 +316346,7 @@
     "translations": {
       "en": "sandpaper",
       "ru": "наждак, наждачная бумага",
-      "tr": ""
+      "tr": "iri kumlu alan"
     },
     "examples": [
       "*Улъияр пшахъуашхэкӀэ кӀэрыгъэкӀын."
@@ -316413,7 +316556,7 @@
     "translations": {
       "ru": "раскроить все, многое / Куэд бзын, з",
       "en": "",
-      "tr": "",
+      "tr": "biçip şekillendirmek",
       "trSource": "en->tr koprusu (orta)"
     }
   },
@@ -317411,7 +317554,7 @@
     "translations": {
       "en": "fearlessly, relentlessly, persistently",
       "ru": "бесстрашно, неотступно, настойчиво",
-      "tr": "",
+      "tr": "yalpalatmadan",
       "trSource": "en->tr koprusu (orta)"
     }
   },
@@ -317665,7 +317808,8 @@
     "isLemma": true,
     "translations": {
       "ru": "просторечие добрести до чего-л",
-      "en": "wander, make your way as far as sth"
+      "en": "wander, make your way as far as sth",
+      "tr": "kenarına varıp oturmak"
     },
     "subConceptId": "SIT_UNTIL",
     "taxonomyFamily": "Eylem",
@@ -318467,7 +318611,7 @@
     "translations": {
       "ru": "отрезать часть, кусок кого-чего-л",
       "en": "cut off a part or piece of sb or sth",
-      "tr": ""
+      "tr": "yanından koşturup geçirmek"
     },
     "subConceptId": "GU_VERB",
     "taxonomyFamily": "Duygu & Zihin",
@@ -318843,7 +318987,8 @@
     "isLemma": true,
     "translations": {
       "ru": "къэмыщтэн Type: verb Definitions: 1",
-      "en": "къэмыщтэн Type: verb Definitions: 1. abolish 2. deny"
+      "en": "къэмыщтэн Type: verb Definitions: 1. abolish 2. deny",
+      "tr": "almamak"
     },
     "rootIds": [
       "R-KHUMEN"
@@ -318995,7 +319140,8 @@
     "isLemma": true,
     "translations": {
       "ru": "наклеить что-л",
-      "en": "glue or paste sth onto the surface of sth"
+      "en": "glue or paste sth onto the surface of sth",
+      "tr": "üzerinde yemek yemek"
     },
     "examples": [
       "*ТхылъымпӀэ тешхэн."
@@ -319981,7 +320127,8 @@
     "isLemma": true,
     "translations": {
       "ru": "ежьэжыныгъэ Type: noun Definitions: 1",
-      "en": "ежьэжыныгъэ Type: noun Definitions: 1. departure"
+      "en": "ежьэжыныгъэ Type: noun Definitions: 1. departure",
+      "tr": "geri yola çıkma"
     },
     "ipa": "/je:ʑɐ'ᶎǝn/"
   },
@@ -320732,7 +320879,7 @@
     "translations": {
       "ru": "каузатив к жьэдэлъэдэн / Жьэдэлъэдэн псалъэм",
       "en": "to push/shove (smth.) into mouth; to pour (smth.) into mouth",
-      "tr": ""
+      "tr": "ağzına koşturmak"
     },
     "examples": [
       "*Блэм хъэндыркъуакъуэр жьэдигъэлъэдащ."
@@ -321038,7 +321185,8 @@
     },
     "isLemma": true,
     "translations": {
-      "ru": "и. д. отлёт, перелёт"
+      "ru": "и. д. отлёт, перелёт",
+      "tr": "geri uçma"
     },
     "subConceptId": "FLIGHT_DEPARTURE",
     "taxonomyFamily": "Ayak & Adım",
@@ -322080,7 +322228,8 @@
     "isLemma": true,
     "translations": {
       "ru": "подогнать кого-что-л",
-      "en": "chase or drive sb or sth up to the side of sb or sth."
+      "en": "chase or drive sb or sth up to the side of sb or sth.",
+      "tr": "yan tarafına düşmek"
     },
     "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3b/%D0%91417%D0%B1%D0%B3%D1%8A%D1%83%D1%80%D1%8B%D1%85%D1%83%D1%8D%D0%BD.ogg",
     "examples": [
@@ -322652,7 +322801,8 @@
     },
     "isLemma": true,
     "translations": {
-      "ru": "быть занятым"
+      "ru": "быть занятым",
+      "tr": "gücü yetişmemek"
     },
     "ipa": "/wǝnɐ'gʷɑ:ɕɐ/",
     "ipaSource": "root-derived"
@@ -322823,7 +322973,8 @@
     "ipa": "/nɐpɕǝsǝn/",
     "translations": {
       "en": "to creep, crawl (to, as far as/smb, smth.)",
-      "ru": "неперех. доползти до кого-чего-л."
+      "ru": "неперех. доползти до кого-чего-л.",
+      "tr": "kırağı düşüp oturmak"
     }
   },
   {
@@ -323289,7 +323440,7 @@
     "translations": {
       "ru": "считать себя кем-л",
       "en": "consider yourself to be sb or sth.",
-      "tr": ""
+      "tr": "kendini sanmak"
     },
     "rootIds": [
       "R-SHCH"
@@ -324863,7 +325014,7 @@
     "ipa": "/'ɬɑ:qʹʷɐ/",
     "ipaSource": "root-derived",
     "translations": {
-      "tr": "FELIKS",
+      "tr": "palmiye",
       "en": "1. plam(-tree);\n2.  of\n1.",
       "ru": "1. пальма 2. в знач. опр. пальмовый"
     }
@@ -325588,7 +325739,8 @@
     "ipaSource": "root-derived",
     "translations": {
       "ar": "يدفأ بعد تبرد، يعود فيدفأ",
-      "ru": "ФЭБЭЖЬЫН. Масд. Подогреться, разогреться. Лэпсыр фэбэжьын."
+      "ru": "ФЭБЭЖЬЫН. Масд. Подогреться, разогреться. Лэпсыр фэбэжьын.",
+      "tr": "ısınmak"
     }
   },
   {
@@ -326199,7 +326351,8 @@
     "ipa": "/qʹɐʂ/",
     "translations": {
       "ar": "يحْمَرّ، يتورد، يصبح لونه أحمر",
-      "ru": "КЪЭШЭПЛЪЫН. Масд. Зарумяниться, порозоветь. Плъыжьышъо хъуныр. Хъырбыдзхэм къэшэплъын рагъэ-жьагъ."
+      "ru": "КЪЭШЭПЛЪЫН. Масд. Зарумяниться, порозоветь. Плъыжьышъо хъуныр. Хъырбыдзхэм къэшэплъын рагъэ-жьагъ.",
+      "tr": "kızarmak"
     }
   },
   {
@@ -328440,7 +328593,7 @@
     "ipa": "/mwadra/",
     "translations": {
       "en": "that other (visible)",
-      "tr": ""
+      "tr": "öteki"
     }
   },
   {
@@ -329184,7 +329337,8 @@
     "translations": {
       "en": "to surpass; to outrun; to outdistance; to run faster than something and passing it",
       "ru": "течын:, сорвать что-л. с чего-л., ощипать (напр. курицу)",
-      "ar": "يسبق، يتجاوز ركضاً"
+      "ar": "يسبق، يتجاوز ركضاً",
+      "tr": "üzerinden koşmak"
     },
     "ipa": "/te:ˈtʂǝn/"
   },
@@ -329201,7 +329355,8 @@
     "notes": "Verified (freq: 5, 7.Ady-Rus_Tharkaho)",
     "isLemma": true,
     "translations": {
-      "ru": "консолидироваться, сплотиться, спаяться, объединиться"
+      "ru": "консолидироваться, сплотиться, спаяться, объединиться",
+      "tr": "birlikte ayakta durmak"
     },
     "rootIds": [
       "R-QWA"
@@ -329420,7 +329575,8 @@
     "ipa": "/qʹɐ'wǝħ/",
     "translations": {
       "ar": "يلتف حول، يدور حول",
-      "ru": "объехать, обогнуть, обойти кого-что-л."
+      "ru": "объехать, обогнуть, обойти кого-что-л.",
+      "tr": "etrafını sarmak"
     }
   },
   {
@@ -329436,7 +329592,8 @@
     "notes": "Verified (freq: 5, 24.Rus-Ady_UAG)",
     "isLemma": true,
     "translations": {
-      "ru": "м. пастор, ефэнды"
+      "ru": "м. пастор, ефэнды",
+      "tr": "pastor"
     },
     "ipa": "/paːstwar/"
   },
@@ -329570,7 +329727,8 @@
     "isLemma": true,
     "translations": {
       "ru": "лечь, распластаться над кем-чем-л",
-      "en": ""
+      "en": "",
+      "tr": "yayılmak"
     },
     "rootIds": [
       "R-PSALH"
@@ -331076,7 +331234,8 @@
     "translations": {
       "ar": "يسبح في",
       "en": "to swim",
-      "ru": "ХЭСЫХЬАН. Масд. Заплыть куда-л. Есэу хэхьан, хэсын. Псым хэсыхьан."
+      "ru": "ХЭСЫХЬАН. Масд. Заплыть куда-л. Есэу хэхьан, хэсын. Псым хэсыхьан.",
+      "tr": "arasında oturup durmak"
     }
   },
   {
@@ -333602,7 +333761,8 @@
     "ipa": "/zɐte:ɕɐ'xɐn/",
     "translations": {
       "ar": "يُلصق بعضه فوق بعض",
-      "ru": "ЗЭТЕЩХЭН. Масд. Склеить что-л. одно на другое. Зым зыр тещхэн. Тхылъы-пӀэхэр зэтещхэных."
+      "ru": "ЗЭТЕЩХЭН. Масд. Склеить что-л. одно на другое. Зым зыр тещхэн. Тхылъы-пӀэхэр зэтещхэных.",
+      "tr": "gülüşmek"
     }
   },
   {
@@ -334832,7 +334992,7 @@
     "notes": "Bitki (Plant)",
     "isLemma": true,
     "translations": {
-      "tr": ""
+      "tr": "Arpa"
     },
     "subConceptId": "GRAIN_BARLEY",
     "taxonomyFamily": "Tarım & Yiyecek",
@@ -335032,7 +335192,9 @@
       "ЛӀыгъэ зиӀэм Ӏэщэр щощтэ. (погов. ) Сэ къысфӀэщӀырт а си къуэшым нэхърэ нэхъ лӀыгъэ зиӀэ щымыӀэу, абы зыри къыпэмылъэщыну. Къ. З."
     ],
     "examplesSource": "1.Ady-Ady_AP.json (◊)",
-    "translations": {}
+    "translations": {
+      "tr": "Cesaret / Yiğitlik"
+    }
   },
   {
     "id": "L-CONCEPT-007",
@@ -336490,7 +336652,8 @@
     "isLemma": true,
     "translations": {
       "en": "кубано-зеленчукские  каузатив к (kubano-zelenchuk causative to)",
-      "ru": "каузатив к кӏэнтӏэн: заставить изнемочь, отощать, похудеть, сделать кого-л. сговорчивым, уступчивым"
+      "ru": "каузатив к кӏэнтӏэн: заставить изнемочь, отощать, похудеть, сделать кого-л. сговорчивым, уступчивым",
+      "tr": "yalpalatmak"
     },
     "ipa": "/ʁɐtʹʂɐn'tʹɐn/"
   },
@@ -336523,7 +336686,8 @@
     "isLemma": true,
     "translations": {
       "en": "каузатив к (causative to)",
-      "ru": "каузатив к лъэпӏэстхъэн: царапать; заставлять стараться добиваться, стремиться к чему-л."
+      "ru": "каузатив к лъэпӏэстхъэн: царапать; заставлять стараться добиваться, стремиться к чему-л.",
+      "tr": "tiftiklemek"
     },
     "ipa": "/ʁɐɬɐpʹɐs'tχɐn/"
   },
@@ -337836,7 +338000,8 @@
     "ipa": "/ʔʷǝʁɐ'wǝn/",
     "translations": {
       "en": "burst sth (a dam, dike or retaining wall)",
-      "ru": "прорвать что-л. (напр. плотину, запруду)"
+      "ru": "прорвать что-л. (напр. плотину, запруду)",
+      "tr": "dövüp uzaklaştırmak"
     }
   },
   {
@@ -338651,7 +338816,8 @@
     "ipa": "/ʔʷǝɬɐtǝ'ᶎǝn/",
     "translations": {
       "en": "fly away from sth once again",
-      "ru": "улететь, отлететь от чего-л. снова"
+      "ru": "улететь, отлететь от чего-л. снова",
+      "tr": "uçup gitmek"
     }
   },
   {
@@ -339101,7 +339267,8 @@
     "ipa": "/ʔʷǝmɐ'tʹsɐn/",
     "translations": {
       "en": "be greedy, insatiable",
-      "ru": "быть жадным, ненасытным"
+      "ru": "быть жадным, ненасытным",
+      "tr": "ağzını gevelemek"
     }
   },
   {
@@ -339445,7 +339612,7 @@
       "trVerified": false,
       "en": "part, piece, share",
       "ru": "часть, кусок, доля",
-      "tr": "Parça, kısım, pay"
+      "tr": "parça, net ve keskin"
     },
     "ipa": "/'ʔʷǝpʹɕʹɐ/",
     "dictionaryEvidence": [
@@ -339486,7 +339653,7 @@
     "translations": {
       "en": "in parts, pieces, sections, shares or chunks",
       "ru": "частями, долями, кусками",
-      "tr": ""
+      "tr": "adv. parts"
     }
   },
   {
@@ -340268,7 +340435,8 @@
     "ipa": "/ʔʷǝrǝ'xʷɐn/",
     "translations": {
       "en": "be eaten or consumed",
-      "ru": "быть съеденным"
+      "ru": "быть съеденным",
+      "tr": "önüne katıp sürmek"
     }
   },
   {
@@ -340673,7 +340841,8 @@
     "ipa": "/ʔʷǝtʹsɐ'tʹsɐn/",
     "translations": {
       "en": "look at sth with greed; covet sth., anticipate, look forward to, foretaste sth",
-      "ru": "с жадностью смотреть на кого-что-л.; зариться на что-л., предвкушать что-л."
+      "ru": "с жадностью смотреть на кого-что-л.; зариться на что-л., предвкушать что-л.",
+      "tr": "dökülmek"
     }
   },
   {
@@ -340820,7 +340989,8 @@
     "ipa": "/ʔʷǝɕ'tǝn/",
     "translations": {
       "en": "being frightened, leave or abandon sb or sth",
-      "ru": "испугавшись оставить, покинуть кого-что-л."
+      "ru": "испугавшись оставить, покинуть кого-что-л.",
+      "tr": "ağzı buz tutmak"
     }
   },
   {
@@ -341090,7 +341260,8 @@
     "ipa": "/ʔʷɐrǝʔʷɐ'dzǝn/",
     "translations": {
       "en": "be a wit, a buffoon",
-      "ru": "быть острословом, балагуром"
+      "ru": "быть острословом, балагуром",
+      "tr": "söylenti çıkarmak"
     }
   },
   {
@@ -344385,7 +344556,8 @@
     "ipa": "/ʔɐɕʹɐʁɐwǝ'vɐn/",
     "translations": {
       "en": "hand sth to sb, foist sth on sb",
-      "ru": "вручить, всучить что-л. кому-л."
+      "ru": "вручить, всучить что-л. кому-л.",
+      "tr": "el koymak"
     }
   },
   {
@@ -344478,7 +344650,8 @@
     "ipa": "/ʔɐɕʹɐtʹʂɐrɐχʷǝ'tʹʂǝn/",
     "translations": {
       "en": "jump or fly out of sb's hands (about sth), lose from sight",
-      "ru": "выскочить из рук (о чём-л.), потерять из виду"
+      "ru": "выскочить из рук (о чём-л.), потерять из виду",
+      "tr": "elinden yuvarlanıp düşmek"
     }
   },
   {
@@ -344540,7 +344713,8 @@
     "ipa": "/ʔɐɕʹɐqʹʷǝ'zɐn/",
     "translations": {
       "en": "clutch, squeeze or grip sth in your hand",
-      "ru": "зажать что-л. в руке"
+      "ru": "зажать что-л. в руке",
+      "tr": "elinde sıkıştırmak"
     }
   },
   {
@@ -344601,7 +344775,8 @@
     "ipa": "/ʔɐɕʹɐɬɐ'ʁʷɐn/",
     "translations": {
       "en": "(ӀэщӀолъагъуэ) неперех. гл. увидеть, заметить кого-что-л. ((i eshiolague) is not at fault. ch. to see (to see) smb.)",
-      "ru": "увидеть, заметить кого-что-л."
+      "ru": "увидеть, заметить кого-что-л.",
+      "tr": "elinde bulundurmak"
     }
   },
   {
@@ -344631,7 +344806,8 @@
     "ipa": "/ʔɐɕʹɐɬɐ'fǝn/",
     "translations": {
       "en": "pull something out of your hands (e.g. rope)",
-      "ru": "вытянуть что-л. из руки (напр. верёвку)"
+      "ru": "вытянуть что-л. из руки (напр. верёвку)",
+      "tr": "elinden sürükleyip çıkarmak"
     }
   },
   {
@@ -344661,7 +344837,8 @@
     "ipa": "/ʔɐɕʹɐpɬǝ'ħǝn/",
     "translations": {
       "en": "examine sth in sb's hands",
-      "ru": "рассматривать что-л., находящееся в чьих-л. руках"
+      "ru": "рассматривать что-л., находящееся в чьих-л. руках",
+      "tr": "elindekini incelemek"
     }
   },
   {
@@ -344817,7 +344994,8 @@
     "ipa": "/ʔɐɕʹɐ'xʷɐn/",
     "translations": {
       "en": "fit in one`s palm, fall into sb's hands, be caught or captured by sb",
-      "ru": "поместиться в ладони, попасться кому-л. в руки"
+      "ru": "поместиться в ладони, попасться кому-л. в руки",
+      "tr": "elinden düşmek"
     }
   },
   {
@@ -345175,7 +345353,8 @@
     "ipa": "/ɐɡrɐˈnom/",
     "translations": {
       "en": "agronomist, agriculturalist",
-      "ru": "агроном"
+      "ru": "агроном",
+      "tr": "ziraat mühendisi"
     },
     "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/d/db/%D0%90059%D0%B0%D0%B3%D1%80%D0%BE%D0%BD%D0%BE%D0%BC.ogg"
   },
@@ -346532,7 +346711,8 @@
     "ipa": "/ɐrmǝ'rɑ:mi:/",
     "translations": {
       "en": "anyway, as it is",
-      "ru": "(и) так, и без того"
+      "ru": "(и) так, и без того",
+      "tr": "yoksa"
     },
     "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c0/%D0%90304%D0%B0%D1%80%D0%BC%D1%8B%D1%80%D0%B0%D0%BC%D0%B8.ogg"
   },
@@ -346566,7 +346746,8 @@
     "ipa": "/ɐrmǝ'rǝxxɐmi:/",
     "translations": {
       "en": "and so, as it is (already), anyway",
-      "ru": "(и) так, и без того"
+      "ru": "(и) так, и без того",
+      "tr": "hiç öyle olmasa bile"
     },
     "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/8/85/%D0%90308%D0%B0%D1%80%D0%BC%D1%8B%D1%80%D1%8B%D1%85%D1%85%D1%8D%D0%BC%D0%B8.ogg"
   },
@@ -346690,7 +346871,8 @@
     "ipa": "/ɐwǝʂǝ'dᶎɐr/",
     "translations": {
       "en": "mythical god (Saint George)",
-      "ru": "мифическое божество (Святой Георгий)"
+      "ru": "мифическое божество (Святой Георгий)",
+      "tr": "Avşejer (Nart koruyucu azizi)"
     },
     "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d5/%D0%90377%D0%B0%D1%83%D1%88%D1%8B%D0%B4%D0%B6%D1%8D%D1%80.ogg"
   },
@@ -347324,7 +347506,7 @@
     "translations": {
       "en": "open-chested, with shirt unbuttoned",
       "ru": "нараспашку, с открытой грудью",
-      "tr": ""
+      "tr": "adv. wide open"
     },
     "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fd/%D0%B1271%D0%B1%D0%B3%D1%8A%D0%B0%D0%BD%D1%82%D3%8F%D1%8D%D1%83.ogg"
   },
@@ -347393,7 +347575,8 @@
     "ipa": "/bʁʷǝnˈɬɐn/",
     "translations": {
       "en": "tilt, shift to the side",
-      "ru": "накрениться, сдвинуться в сторону"
+      "ru": "накрениться, сдвинуться в сторону",
+      "tr": "yanına sokulmak"
     },
     "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/1/17/%D0%B1384%D0%B1%D0%B3%D1%8A%D1%83%D0%BD%D0%BB%D1%8A%D1%8D%D0%BD.ogg"
   },
@@ -347498,7 +347681,8 @@
     "ipa": "/'bʁʷǝrǝħɐn/",
     "translations": {
       "en": "walk up to, approach sb or sth from the side.",
-      "ru": "подойти к кому-чему-л. сбоку"
+      "ru": "подойти к кому-чему-л. сбоку",
+      "tr": "yanına yanaşmak"
     },
     "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2f/%D0%B1419%D0%B1%D0%B3%D1%8A%D1%83%D1%80%D1%8B%D1%85%D1%8C%D1%8D%D0%BD.ogg"
   },
@@ -348122,7 +348306,7 @@
     "translations": {
       "en": "quickly run, rush or jump to sb or sth",
       "ru": "быстро подбежать, подскочить к кому-чему-л.",
-      "tr": ""
+      "tr": "yanına yapışmak"
     },
     "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a2/%D0%B1334%D0%B1%D0%B3%D1%8A%D1%8D%D0%B4%D1%8D%D1%86%D3%8F%D1%8D%D1%84%D1%82%D1%8D%D0%BD.ogg"
   },
@@ -350654,7 +350838,7 @@
     "translations": {
       "en": "pass by (walking, riding or driving) very near sb or sth",
       "ru": "очень близко пройти мимо кого-чего-л.",
-      "tr": ""
+      "tr": "sırtını kaşımak"
     },
     "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6b/%D0%91748%D0%B1%D0%BB%D1%8D%D1%82%D1%85%D1%8A%D1%83%D0%BD.ogg"
   },
@@ -350852,7 +351036,8 @@
     "ipa": "/bo:ˈsǝn/",
     "translations": {
       "en": "in the meaning of \"let! may!»",
-      "ru": "в значении «пусть, пускай»"
+      "ru": "в значении «пусть, пускай»",
+      "tr": "dökülmek"
     },
     "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/5/55/%D0%91796%D0%B1%D0%BE%D1%81%D1%8B%D0%BD.ogg"
   },
@@ -350948,7 +351133,8 @@
     "ipa": "/brʲɪɡɐˈdʲir/",
     "translations": {
       "en": "foreman, brigadier, brigade leader",
-      "ru": "бригадир"
+      "ru": "бригадир",
+      "tr": "ekip başı"
     },
     "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/3/37/%D0%91808%D0%B1%D1%80%D0%B8%D0%B3%D0%B0%D0%B4%D0%B8%D1%80.ogg"
   },
@@ -351343,7 +351529,7 @@
     "translations": {
       "en": "navel, belly button, embryo, germ (in tubers, grains)",
       "ru": "пуп, пупок, зародыш (у клубней, зёрен)",
-      "tr": ""
+      "tr": "aile ocağı"
     },
     "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/7/73/%D0%91854%D0%B1%D1%8B%D0%BD%D0%B6%D1%8D%D0%B3%D1%83.ogg"
   },
@@ -351584,7 +351770,8 @@
     "ipa": "/bǝrˈʁǝn/",
     "translations": {
       "en": "make a discordant, inharmonious sound",
-      "ru": "издать нестройный звук"
+      "ru": "издать нестройный звук",
+      "tr": "şiddetle esmek"
     },
     "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9b/%D0%91868%D0%B1%D1%8B%D1%80%D0%B3%D1%8A%D1%8B%D0%BD.ogg"
   },
@@ -353752,7 +353939,7 @@
     "translations": {
       "en": "giving peace of mind, calmingly, comfortingly",
       "ru": "доставляя спокойствие",
-      "tr": ""
+      "tr": "adv. delivering peace of mind"
     },
     "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0e/%D0%93%D1%83258%D0%B3%D1%83%D0%B7%D1%8D%D0%B3%D1%8A%D1%8D%D0%B3%D1%8A%D1%83%D1%8D%D1%83.ogg"
   },
@@ -353813,7 +354000,8 @@
     "ipa": "/gʷǝzɐsɐ'ᶎǝn/",
     "translations": {
       "en": "experience deep grief or woe",
-      "ru": "переживать тяжкое горе"
+      "ru": "переживать тяжкое горе",
+      "tr": "yüreği yatışmak"
     },
     "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a6/%D0%93%D1%83262%D0%B3%D1%83%D0%B7%D1%8D%D1%81%D1%8D%D0%B6%D1%8B%D0%BD.ogg"
   },
@@ -353906,7 +354094,7 @@
     "translations": {
       "en": "indecisively, hesitantly, hesitatingly, irresolutely",
       "ru": "нерешительно",
-      "tr": ""
+      "tr": "adv. hesitatingly"
     },
     "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/9/90/%D0%93%D1%83272%D0%B3%D1%83%D0%B8%D1%82%D3%8F%D1%89%D1%85%D1%8C%D0%B8%D1%82%D3%8F%D1%83.ogg"
   },
@@ -354062,7 +354250,7 @@
     "translations": {
       "en": "restless, anxious",
       "ru": "беспокойно, тревожно",
-      "tr": ""
+      "tr": "adv. restless"
     },
     "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9a/%D0%93%D1%83291%D0%B3%D1%83%D0%BB%D1%8D%D0%B3%D1%83%D1%89%D1%82%D1%8D%D1%83.ogg"
   },
@@ -355510,7 +355698,8 @@
     "ipa": "/gʷǝxɐ'psǝxɐ/",
     "translations": {
       "en": "sentimental (about a person)",
-      "ru": "сентиментальный (о человеке)"
+      "ru": "сентиментальный (о человеке)",
+      "tr": "yürek sızlatan"
     },
     "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3c/%D0%93%D1%83465%D0%B3%D1%83%D1%85%D1%8D%D0%BF%D1%81%D1%8B%D1%85%D1%8D.ogg"
   },
@@ -356056,7 +356245,8 @@
     "ipa": "/gʷǝɕɐ'xɐpxɐ/",
     "translations": {
       "en": "a ritual in honor of a newborn baby when it is laid in the cradle for the first time",
-      "ru": "обряд в честь новорожденного, когда его первый раз укладывают в колыбель"
+      "ru": "обряд в честь новорожденного, когда его первый раз укладывают в колыбель",
+      "tr": "beşik bağı"
     },
     "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/6/60/%D0%93%D1%83505%D0%B3%D1%83%D1%89%D1%8D%D1%85%D1%8D%D0%BF%D1%85%D1%8D.ogg"
   },
@@ -356559,7 +356749,7 @@
     "translations": {
       "en": "a participant in the dividing up of sth",
       "ru": "один из участников дележа",
-      "tr": ""
+      "tr": "paylaşım ortağı"
     },
     "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/1/19/%D0%93%D1%83162%D0%B3%D1%83%D1%8D%D1%88%D1%8D%D0%B3%D1%8A%D1%83.ogg"
   },
@@ -356796,7 +356986,8 @@
     "ipa": "/ʁe:jǝ'ᶎǝn/",
     "translations": {
       "en": "mourn sb.",
-      "ru": "оплакивать кого-л."
+      "ru": "оплакивать кого-л.",
+      "tr": "ağlatmak"
     }
   },
   {
@@ -357206,7 +357397,8 @@
     "ipa": "/ʁʷǝtʹʂɐʁɐ'sɐn/",
     "translations": {
       "en": "an apprentice or assistant blacksmith, an apprentice, sb's follower.",
-      "ru": "подмастерье, подручный кузнеца, ученик, последователь кого-л."
+      "ru": "подмастерье, подручный кузнеца, ученик, последователь кого-л.",
+      "tr": "demircilik öğretmek"
     }
   },
   {
@@ -357723,7 +357915,8 @@
     "ipa": "/ʁʷǝ'ɕʹɐn/",
     "translations": {
       "en": "go dry (for example, about the throat)",
-      "ru": "пересохнуть (напр. о горле)"
+      "ru": "пересохнуть (напр. о горле)",
+      "tr": "kurutmak"
     }
   },
   {
@@ -357894,7 +358087,7 @@
     "translations": {
       "en": "the part of the carcass between the hind limbs and the belly",
       "ru": "часть туши между задними конечностями и брюхом",
-      "tr": ""
+      "tr": "pas temizleme biçimi"
     }
   },
   {
@@ -358372,7 +358565,7 @@
     "translations": {
       "en": "a place where there are a lot of burrows, dens or warrens",
       "ru": "местность, где много нор",
-      "tr": ""
+      "tr": "sarımsı"
     }
   },
   {
@@ -358669,7 +358862,8 @@
     "ipa": "/ʁʷɐmbǝ'rɐɕ/",
     "translations": {
       "en": "a recess under the ground or in a rock (serving as a shelter or temporary housing), a very small room, a \"closet\"",
-      "ru": "углубление под землёй или в скале (служащее в качестве укрытия, временного жилья), каморка, конура"
+      "ru": "углубление под землёй или в скале (служащее в качестве укрытия, временного жилья), каморка, конура",
+      "tr": "obur"
     }
   },
   {
@@ -358701,7 +358895,8 @@
     "ipa": "/ʁʷɐmǝ'ɮɑ:tʹʂɐ/",
     "translations": {
       "en": "remaining provisions or supplies taken when travelling",
-      "ru": "остатки провизии, взятой в дорогу"
+      "ru": "остатки провизии, взятой в дорогу",
+      "tr": "azık türü"
     }
   },
   {
@@ -359046,7 +359241,8 @@
     "ipa": "/ʁʷɐtǝ'ᶎǝn/",
     "translations": {
       "en": "find locate (once again) (for example, sth lost)",
-      "ru": "найти, отыскать (напр. пропажу)"
+      "ru": "найти, отыскать (напр. пропажу)",
+      "tr": "yeniden bulmak"
     }
   },
   {
@@ -359352,7 +359548,8 @@
     "ipa": "/ʁɐʔɐrǝ'xʷɐn/",
     "translations": {
       "en": "adapt, make sth convenient for sth.",
-      "ru": "приспособить, сделать что-л. удобным для чего-л."
+      "ru": "приспособить, сделать что-л. удобным для чего-л.",
+      "tr": "becerikli kılmak"
     }
   },
   {
@@ -359487,7 +359684,8 @@
     "ipa": "/ʁɐbzǝtǝn/",
     "translations": {
       "en": "pereh. ch. cm.",
-      "ru": "перех. гл. см.  pereh. ch. cm.)"
+      "ru": "перех. гл. см.  pereh. ch. cm.)",
+      "tr": "kestirmek"
     }
   },
   {
@@ -359520,7 +359718,8 @@
     "ipa": "/ʁɐ'bzɐn/",
     "translations": {
       "en": "work with, wield sth that cuts (usually scissors, a saber, a sword)",
-      "ru": "действовать, орудовать чем-л. режущим (обычно ножницами, шашкой, саблей)"
+      "ru": "действовать, орудовать чем-л. режущим (обычно ножницами, шашкой, саблей)",
+      "tr": "temizletmek"
     }
   },
   {
@@ -360071,7 +360270,8 @@
     "ipa": "/ʁɐdǝr'gʷǝn/",
     "translations": {
       "en": "gobble sth down, eat quickly and noisily",
-      "ru": "слопать что-л."
+      "ru": "слопать что-л.",
+      "tr": "gürletmek"
     }
   },
   {
@@ -360139,7 +360339,7 @@
     "translations": {
       "en": "to consider sb to be like a brother; to treat sb like a brother (about women)",
       "ru": "считать кого-л. названым братом; относиться к кому-л. как к брату (о женщине)",
-      "tr": ""
+      "tr": "doğurtmak"
     }
   },
   {
@@ -360484,7 +360684,7 @@
     "translations": {
       "en": "consider sb or sth the main or most important",
       "ru": "считать главным кого-что-л.",
-      "tr": ""
+      "tr": "taşırıvermek"
     }
   },
   {
@@ -360725,7 +360925,8 @@
     "ipa": "/ʁɐkʷɐ'ʂǝn/",
     "translations": {
       "en": "to instill uncertainty, doubt in sb; to cause fluctuations in sb, to transplant sth (for example, a tree), to move, rearrange sth to another place; to transport, transfer sb or sth from one place to a",
-      "ru": "вселить в кого-л. неуверенность, сомнение; вызвать в ком-л. колебания, пересадить что-л. (напр. дерево), передвинуть, переставить что-л. на другое место; перевезти, перенести кого-что-л. с одного мест"
+      "ru": "вселить в кого-л. неуверенность, сомнение; вызвать в ком-л. колебания, пересадить что-л. (напр. дерево), передвинуть, переставить что-л. на другое место; перевезти, перенести кого-что-л. с одного мест",
+      "tr": "kardeş edinmek"
     }
   },
   {
@@ -362515,7 +362716,8 @@
     "ipa": "/ʁɐwǝtʹʂɐrɐp'ɕǝn/",
     "translations": {
       "en": "become covered in blisters",
-      "ru": "покрываться волдырями"
+      "ru": "покрываться волдырями",
+      "tr": "utandırmak"
     }
   },
   {
@@ -362549,7 +362751,7 @@
     "translations": {
       "en": "upset, disrupt, break up or destroy sth",
       "ru": "расстроить, разладить что-л.",
-      "tr": "",
+      "tr": "yuvarlatmak",
       "trSource": "en->tr koprusu (orta)"
     }
   },
@@ -362895,7 +363097,8 @@
     "ipa": "/ʁɐfɐ'ɕʹǝn/",
     "translations": {
       "en": "sprinkle or spray sb or sth with sth",
-      "ru": "обрызгать, окропить кого-что-л. чем-л."
+      "ru": "обрызгать, окропить кого-что-л. чем-л.",
+      "tr": "ıslatmak"
     }
   },
   {
@@ -371425,7 +371628,7 @@
     "translations": {
       "en": "hurriedly, fussily",
       "ru": "торопливо, суетливо",
-      "tr": ""
+      "tr": "adv. quickly"
     }
   },
   {
@@ -375050,7 +375253,7 @@
     "translations": {
       "en": "headlong",
       "ru": "стремглав, опрометью",
-      "tr": ""
+      "tr": "adv. headlong"
     },
     "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c6/%D0%950424%D0%B5%D0%BA%D1%8A%D1%83%D1%83.ogg"
   },
@@ -379921,7 +380124,7 @@
     "translations": {
       "en": "directly, candidly, frankly, openly, overtly, freely, honestly, sincerely, plainly, clearly, explicitly, bluntly, downright",
       "ru": "прямо, откровенно",
-      "tr": "",
+      "tr": "adv. straight",
       "trSource": "en->tr koprusu (orta)"
     }
   },
@@ -382536,7 +382739,7 @@
     "translations": {
       "en": "one or two times, once or twice",
       "ru": "один-два раза",
-      "tr": ""
+      "tr": "adv. once or twice"
     }
   },
   {
@@ -382773,7 +382976,7 @@
     "translations": {
       "en": "arrange, put or place sb or sth.",
       "ru": "расставить кого-что-л.",
-      "tr": ""
+      "tr": "arrange someone smth."
     }
   },
   {
@@ -388396,7 +388599,7 @@
     "translations": {
       "en": "one or two times, once or twice",
       "ru": "раз-другой",
-      "tr": ""
+      "tr": "adv. once or twice"
     }
   },
   {
@@ -390980,7 +391183,7 @@
     "translations": {
       "en": "openly, visibly",
       "ru": "открыто, доступно взору",
-      "tr": "",
+      "tr": "adv. openness",
       "trSource": "en->tr koprusu (orta)"
     }
   },
@@ -391388,7 +391591,8 @@
     "ipa": "/zɐɮɐ'ʑɐʁʷ/",
     "translations": {
       "en": "coworkers, employees; partners",
-      "ru": "сослуживцы, сотрудники; напарники"
+      "ru": "сослуживцы, сотрудники; напарники",
+      "tr": "co-workers"
     }
   },
   {
@@ -391829,7 +392033,8 @@
     "translationSource": "literalMeaning-derived",
     "translations": {
       "en": "neighbors on the desk",
-      "ru": "соседи по парте"
+      "ru": "соседи по парте",
+      "tr": "neighbors on the desk"
     }
   },
   {
@@ -394295,7 +394500,7 @@
     "translations": {
       "en": "одеваться шикарно. (to dress smartly.)",
       "ru": "",
-      "tr": ""
+      "tr": "to dress smartly."
     }
   },
   {
@@ -394773,7 +394978,7 @@
     "translations": {
       "en": "opposite or aganst each other",
       "ru": "друг против друга, напротив",
-      "tr": ""
+      "tr": "adv. against each other"
     }
   },
   {
@@ -396376,7 +396581,7 @@
     "translations": {
       "en": "the whole family",
       "ru": "всей семьёй",
-      "tr": ""
+      "tr": "adv. the whole family"
     }
   },
   {
@@ -398045,7 +398250,7 @@
     "translations": {
       "en": "the whole village together",
       "ru": "всем селом",
-      "tr": ""
+      "tr": "adv. the whole village"
     }
   },
   {
@@ -399011,7 +399216,7 @@
     "translations": {
       "en": "respectively, accordingly, correspondingly",
       "ru": "соответственно",
-      "tr": ""
+      "tr": "adv. respectively"
     }
   },
   {
@@ -399045,7 +399250,7 @@
     "translations": {
       "en": "будь что будет. (whatever happens.)",
       "ru": "",
-      "tr": ""
+      "tr": "whatever happens."
     }
   },
   {
@@ -401350,7 +401555,8 @@
     "ipa": "/zɐtegɐxwɐn/",
     "translations": {
       "en": "i causative to",
-      "ru": "i каузатив к"
+      "ru": "i каузатив к",
+      "tr": "i causative to"
     }
   },
   {
@@ -406246,7 +406452,8 @@
     "ipa": "/kʹʷɐ'dǝtʹʂɐ/",
     "translations": {
       "en": "the reason or the circumstances of the death, disappearance or loss of sb or sth",
-      "ru": "причина, обстоятельства гибели, исчезновения, пропажи кого-чего-л."
+      "ru": "причина, обстоятельства гибели, исчезновения, пропажи кого-чего-л.",
+      "tr": "reason"
     }
   },
   {
@@ -407550,7 +407757,7 @@
     "translations": {
       "en": "while still dark, before dawn, before sunup",
       "ru": "затемно; до рассвета",
-      "tr": ""
+      "tr": "adv. daybreak; before dawn"
     }
   },
   {
@@ -407955,7 +408162,8 @@
     "ipa": "/tʹʂɐ'qʹʷɑ:ʁ/",
     "translations": {
       "en": "the space concealed beneath some item of clothing.",
-      "ru": "пространство под полой одежды."
+      "ru": "пространство под полой одежды.",
+      "tr": "a hollow space under the clothes"
     }
   },
   {
@@ -415348,7 +415556,7 @@
     "translations": {
       "en": "beginning, initial period, first stage of something.",
       "ru": "начало, начальный период, первая стадия чего-л.",
-      "tr": ""
+      "tr": "the beginning"
     }
   },
   {
@@ -437382,7 +437590,7 @@
     "translations": {
       "en": "unusually, remarkably, uncommonly, extremely, extraordinarily, incredibly, exceptionally",
       "ru": "необыкновенно",
-      "tr": ""
+      "tr": "cubano-zelenchukskie adv. uncommonly"
     }
   },
   {
@@ -444668,7 +444876,8 @@
     "ipa": "/ɮe:ˈja:ʁɐ/",
     "translations": {
       "en": "injustice, unfairness, inequity, wrong, iniquity",
-      "ru": "несправедливость"
+      "ru": "несправедливость",
+      "tr": "cubano-zelenchukskie injustice"
     }
   },
   {
@@ -447174,7 +447383,8 @@
     "translations": {
       "en": "the properties and qualities that make up an individual feature of a nation or a separate genus.",
       "ru": "признаки, качества, составляющие индивидуальную особенность нации или отдельного рода",
-      "ar": "قومية (صفة)"
+      "ar": "قومية (صفة)",
+      "tr": "symptoms"
     }
   },
   {
@@ -447489,7 +447699,7 @@
     "translations": {
       "en": "standing on your feet",
       "ru": "стоя на ногах",
-      "tr": ""
+      "tr": "adv. on his feet"
     }
   },
   {
@@ -450176,7 +450386,8 @@
     "ipa": "/me:ˈdɑ:n/",
     "translations": {
       "en": "instant, moment, jiffy",
-      "ru": "мгновенье"
+      "ru": "мгновенье",
+      "tr": "moment"
     }
   },
   {
@@ -452091,7 +452302,8 @@
     "ipa": "/mɐɮˈχʷǝn/",
     "translations": {
       "en": "sheep raising, sheep farming, sheep breeding",
-      "ru": "овцеводство"
+      "ru": "овцеводство",
+      "tr": "cubano sheep-zelenchukskie"
     }
   },
   {
@@ -452857,7 +453069,7 @@
     "translations": {
       "en": "просторечие набить морду. (vernacular fill its head.)",
       "ru": "",
-      "tr": ""
+      "tr": "vernacular fill its head."
     }
   },
   {
@@ -453034,7 +453246,7 @@
     "translations": {
       "en": "one hair at a time; one thread at a time, thread-by-thread",
       "ru": "по одному волоску, по одной ниточке",
-      "tr": ""
+      "tr": "adv. one thread"
     }
   },
   {
@@ -453498,7 +453710,7 @@
     "translations": {
       "en": "waddled, with a flare; waddling gait; swaying; staggering",
       "ru": "вразвалку, с развальцем; переваливающейся походкой",
-      "tr": ""
+      "tr": "adv. waddle"
     }
   },
   {
@@ -455943,7 +456155,7 @@
     "translations": {
       "en": "in shiny drops",
       "ru": "блестящими каплями",
-      "tr": ""
+      "tr": "adv. shiny drops"
     }
   },
   {
@@ -456287,7 +456499,7 @@
     "translations": {
       "en": "early in the morning, at first light, at dawn",
       "ru": "спозаранок, чуть свет",
-      "tr": ""
+      "tr": "adv. spozaranok"
     }
   },
   {
@@ -456576,7 +456788,7 @@
     "translations": {
       "en": "boldly, naturally, simply, without shyness",
       "ru": "смело, непринуждённо, просто, без застенчивости",
-      "tr": ""
+      "tr": "adv. safely"
     }
   },
   {
@@ -457222,7 +457434,8 @@
     "ipa": "/pʹu:r/",
     "translations": {
       "en": "a child given to an atalyk for upbringing",
-      "ru": "ребенок, отданный на воспитание аталыку"
+      "ru": "ребенок, отданный на воспитание аталыку",
+      "tr": "etn. baby"
     }
   },
   {
@@ -458061,7 +458274,7 @@
     "translations": {
       "en": "angrily sniffling and sighing",
       "ru": "гневно сопя и вздыхая",
-      "tr": ""
+      "tr": "adv. angrily puffing and sighing"
     }
   },
   {
@@ -459440,7 +459653,7 @@
     "translations": {
       "en": "in heaps, in piles; in pieces, in shreds",
       "ru": "грудой, грудами; кусками, в клочья",
-      "tr": ""
+      "tr": "adv."
     }
   },
   {
@@ -463624,7 +463837,7 @@
     "translations": {
       "en": "cirrus clouds",
       "ru": "перистые облака",
-      "tr": ""
+      "tr": "spindrift clouds"
     }
   },
   {
@@ -470856,7 +471069,7 @@
     "translations": {
       "en": "sth insignificant, a trifle",
       "ru": "что-л. незначительное, мелочь",
-      "tr": ""
+      "tr": "smth. insignificant"
     }
   },
   {
@@ -480638,7 +480851,7 @@
     "translations": {
       "en": "to strike or start a fire by hitting a firesteel against a piece of flint.",
       "ru": "высекать искру, бить по кремню кресалом",
-      "tr": ""
+      "tr": "nepereh. ch. cm."
     }
   },
   {
@@ -482802,7 +483015,7 @@
     "translations": {
       "en": "sb's external attractiveness, skin-deep beauty, beauty on the surface",
       "ru": "внешняя привлекательностъ кого-л.",
-      "tr": ""
+      "tr": "outward appeal of smb."
     }
   },
   {
@@ -487239,7 +487452,7 @@
     "translations": {
       "en": "",
       "ru": "хуэсакъыу(рэ):, осторожно, бережно, аккуратно, бдительно",
-      "tr": "dikkat ederek, sakınarak"
+      "tr": "dikkat ederek"
     }
   },
   {
@@ -488346,7 +488559,8 @@
     "ipa": "/χʷǝmɐˈkʹʷɐʁʷ/",
     "translations": {
       "en": "shift watchman; watchman's replacement",
-      "ru": "сменный сторож; сменщик сторожа"
+      "ru": "сменный сторож; сменщик сторожа",
+      "tr": "replacement watchman; watchman"
     }
   },
   {
@@ -493343,7 +493557,8 @@
     "ipa": "/ħɐɕʹɐmǝ'ʁɑ:ʂxɐ/",
     "translations": {
       "en": "a uncaring host who does not regale guests at the table",
-      "ru": "нерадушный, не потчующий гостей за столом хозяин"
+      "ru": "нерадушный, не потчующий гостей за столом хозяин",
+      "tr": "heartless"
     }
   },
   {
@@ -538354,7 +538569,8 @@
     "conceptId": "KAVRAM_ВРЕДНЫЙ",
     "translations": {
       "ru": "вредный",
-      "en": "vernacular harmful, insidious"
+      "en": "vernacular harmful, insidious",
+      "tr": "insidious"
     },
     "ipa": "/еmǝnɐrǝɬxw/",
     "rootIds": [],
@@ -539688,7 +539904,7 @@
     "conceptId": "KAVRAM_ТАКОЙ",
     "translations": {
       "ru": "такой",
-      "tr": "",
+      "tr": "daha genç",
       "en": "worse, one that is worse than someone smth."
     },
     "ipa": "/nɐχǝkʼɐ/",
@@ -540381,7 +540597,7 @@
     "conceptId": "KAVRAM_ПЕРЕНОСНОЕ ПЕРЕСЕЧЬ",
     "translations": {
       "ru": "переносное пересечь",
-      "tr": "",
+      "tr": "Kesmek",
       "en": "To cut"
     },
     "ipa": "/zɐpǝwpɕʼǝn/",
@@ -546175,7 +546391,7 @@
     "conceptId": "KAVRAM_ТОТ",
     "translations": {
       "ru": "тот",
-      "tr": "",
+      "tr": "bir tür kap / yardım isteme",
       "en": "one who acts secretly, secretly"
     },
     "ipa": "/еtɐrɕɐxw/",
@@ -546717,7 +546933,8 @@
     "conceptId": "KAVRAM_КЛУБОК",
     "translations": {
       "ru": "клубок",
-      "en": "clew skein"
+      "en": "clew skein",
+      "tr": "Top"
     },
     "ipa": "/bʑamɐ/",
     "rootIds": [],
@@ -549352,7 +549569,8 @@
     "conceptId": "KAVRAM_ОБЪЕДИНИТЬ",
     "translations": {
       "ru": "объединить",
-      "en": "move. ch. collect, combine, group someone that l."
+      "en": "move. ch. collect, combine, group someone that l.",
+      "tr": "AYARLAMAK"
     },
     "ipa": "/zɐɕʼɐʁɐwʔʷɐn/",
     "rootIds": [],
@@ -549775,7 +549993,7 @@
     "conceptId": "KAVRAM_ОТРЕЗАТЬ",
     "translations": {
       "ru": "отрезать",
-      "tr": "",
+      "tr": "Kesmek",
       "en": "move. ch. cut away smth."
     },
     "ipa": "/qǝpǝwpɕʼǝn/",
@@ -551888,7 +552106,8 @@
     "conceptId": "KAVRAM_ПРИТУПИТЬ ЧТО-Л",
     "translations": {
       "ru": "притупить что-л",
-      "en": "iuegue"
+      "en": "iuegue",
+      "tr": "KÖRELMEK"
     },
     "ipa": "/ʔʷgʷɐn/",
     "rootIds": [],
@@ -554091,7 +554310,7 @@
     "translations": {
       "ru": "беспокойство",
       "en": "anxiety, excitement",
-      "tr": "huzursuzca, endişeli"
+      "tr": "endişeyle, huzursuzca"
     },
     "ipa": "/gʷlɐgʷɕtɐ/",
     "rootIds": [],
@@ -554111,7 +554330,7 @@
     "conceptId": "KAVRAM_КОЛЕБАТЬСЯ",
     "translations": {
       "ru": "колебаться",
-      "tr": "kararsızca, ikircikli",
+      "tr": "tereddütle, ikircikli bir şekilde",
       "en": "be undecided oscillate."
     },
     "ipa": "/gʷitʼɕħitʼ/",
@@ -558679,7 +558898,7 @@
     "translations": {
       "ru": "скосить",
       "en": "move. ch. cut away smth. laterally",
-      "tr": ""
+      "tr": "Kesmek"
     },
     "ipa": "/qǝkʼɐrǝwpɕʼǝkʼǝn/",
     "rootIds": [],
@@ -566232,7 +566451,8 @@
     "conceptId": "KAVRAM_БЛАГОПОЛУЧИЕ",
     "translations": {
       "ru": "благополучие",
-      "en": "nepereh. ch. be kind, cordial"
+      "en": "nepereh. ch. be kind, cordial",
+      "tr": "uğurlu"
     },
     "ipa": "/wʁʷrlǝn/",
     "rootIds": [],
@@ -568142,7 +568362,7 @@
     "conceptId": "KAVRAM_ОЗОРНИК",
     "translations": {
       "ru": "озорник",
-      "tr": "",
+      "tr": "mischief",
       "en": "mischievous, bully, mischievous child, mischievous"
     },
     "ipa": "/еʔʷяɕʼɐ/",
@@ -577835,7 +578055,7 @@
     "translations": {
       "ru": "чувственно",
       "en": "нареч. чувственно, эффективно; значительно (adverb. sensually, effectively; much)",
-      "tr": ""
+      "tr": "cokca"
     },
     "ipa": "/xwiɕʼɐw/",
     "rootIds": [],
@@ -583040,7 +583260,8 @@
     "translations": {
       "ru": "края",
       "ar": "يتجمد طرفه، تجمد الأطراف",
-      "en": "nepereh. ch. otmerznut from the end edge"
+      "en": "nepereh. ch. otmerznut from the end edge",
+      "tr": "dudak"
     },
     "ipa": "/pǝɕtǝkʼǝn/",
     "rootIds": [],
@@ -583111,7 +583332,7 @@
     "conceptId": "KAVRAM_ТОТ",
     "translations": {
       "ru": "тот",
-      "tr": ""
+      "tr": "bir tür kap / yardım isteme"
     },
     "ipa": "/dʒatɐdɐpɕ/",
     "rootIds": [],
@@ -583411,7 +583632,8 @@
     "conceptId": "KAVRAM_РАЗОРИТЬСЯ",
     "translations": {
       "ru": "разориться",
-      "en": "nepereh. ch. weary, be reduced to a pulp, falling down"
+      "en": "nepereh. ch. weary, be reduced to a pulp, falling down",
+      "tr": "BOZULMAK"
     },
     "ipa": "/zɐfʼɐwtɐxɐn/",
     "rootIds": [],
@@ -583571,7 +583793,7 @@
     "conceptId": "KAVRAM_БЫСТРО",
     "translations": {
       "ru": "быстро",
-      "tr": "",
+      "tr": "cok",
       "en": "patter quickly"
     },
     "ipa": "/pʼaɕʼɐrǝpsaɬɐw/",
@@ -584325,7 +584547,7 @@
     "translations": {
       "ru": "косой",
       "en": "нареч. вручную, косой (о косьбе ) (adverb. by hand)",
-      "tr": ""
+      "tr": "sasi"
     },
     "ipa": "/ʃɐmɐdʒrawɐw/",
     "rootIds": [],
@@ -585349,7 +585571,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ИЗЪЯН",
     "translations": {
-      "ru": "изъян"
+      "ru": "изъян",
+      "tr": "kusur"
     },
     "ipa": "/nǝqsan/",
     "rootIds": [],
@@ -585713,7 +585936,7 @@
     "translations": {
       "ru": "великолепно",
       "en": "нареч. ослепительно, великолепно (adverb. dazzling, magnificent)",
-      "tr": ""
+      "tr": "güzelce"
     },
     "ipa": "/wzɐrimǝʁɐpɬw/",
     "rootIds": [],
@@ -586363,7 +586586,7 @@
     "translations": {
       "ru": "союз подобно",
       "en": "союз подобно, словно, будто; ӀэплӀэ къыхуащӀыр жыпӀэ-ну щхьэмыжхэр дамэм тогъуалъ-хьэ словно желая обнять, колосья на плечи ложатся. (union alike, as if, as though; ieplie kyhuaschiyr zhypie, well sch",
-      "tr": ""
+      "tr": "AYNI"
     },
     "ipa": "/жǝpʼɐnw/",
     "rootIds": [],
@@ -586905,7 +587128,8 @@
     "conceptId": "KAVRAM_ПРИНАРЯДИТЬСЯ",
     "translations": {
       "ru": "принарядиться",
-      "en": "move. ch. strive to be good"
+      "en": "move. ch. strive to be good",
+      "tr": "yıkanmak"
     },
     "ipa": "/zǝʁɐfǝn/",
     "rootIds": [],
@@ -588830,7 +589054,7 @@
     "conceptId": "KAVRAM_МНОГО",
     "translations": {
       "ru": "много",
-      "tr": ""
+      "tr": "BOL"
     },
     "ipa": "/еrtʃǝn/",
     "rootIds": [],
@@ -588898,7 +589122,7 @@
     "translations": {
       "ru": "очень хорошо",
       "en": "нареч. очень хорошо, здорово, изумительно (adverb. very good, cool, amazing)",
-      "tr": ""
+      "tr": "iyi"
     },
     "ipa": "/fʼǝɕɐw/",
     "rootIds": [],
@@ -589083,7 +589307,8 @@
     "conceptId": "KAVRAM_ПОДНЯТЬ",
     "translations": {
       "ru": "поднять",
-      "en": "move. ch. raise smb."
+      "en": "move. ch. raise smb.",
+      "tr": "Kaldırmak"
     },
     "ipa": "/qǝzɐɕʼɐʁɐwʔʷɐn/",
     "rootIds": [],
@@ -590238,7 +590463,8 @@
     "conceptId": "KAVRAM_УМЕРЕТЬ",
     "translations": {
       "ru": "умереть",
-      "en": "nepereh., razg. okolet, give tips; die, die."
+      "en": "nepereh., razg. okolet, give tips; die, die.",
+      "tr": "rahatlamak"
     },
     "ipa": "/xɐbɐgɐn/",
     "rootIds": [],
@@ -590425,7 +590651,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ВЕРНОСТЬ",
     "translations": {
-      "ru": "верность"
+      "ru": "верность",
+      "tr": "dogruluk"
     },
     "ipa": "/tɐmɐmaʁɐ/",
     "rootIds": [],
@@ -593348,7 +593575,8 @@
     "conceptId": "KAVRAM_ОТБИТЬ",
     "translations": {
       "ru": "отбить",
-      "en": "schieukiasch"
+      "en": "schieukiasch",
+      "tr": "ucunu koparmak"
     },
     "ipa": "/zɐɕʼɐwʔʷkʼǝn/",
     "rootIds": [],
@@ -594369,7 +594597,8 @@
     "conceptId": "KAVRAM_БЫТЬ СЛОМАННЫМ",
     "translations": {
       "ru": "быть сломанным",
-      "en": "iueschiyki"
+      "en": "iueschiyki",
+      "tr": "Kırmak"
     },
     "ipa": "/ʔʷɕʼǝkʼǝn/",
     "rootIds": [],
@@ -595172,7 +595401,7 @@
     "conceptId": "KAVRAM_БЫСТРО",
     "translations": {
       "ru": "быстро",
-      "tr": "",
+      "tr": "cok",
       "en": "non-stop, fast"
     },
     "ipa": "/еwɐеwɐkʼɐ/",
@@ -595306,7 +595535,7 @@
     "translations": {
       "ru": "неловко",
       "en": "нареч. неловко, неумело (adverb. awkwardly)",
-      "tr": ""
+      "tr": "BECERİKSİZ"
     },
     "ipa": "/ʔɐmǝkʷʼɐɬɐmǝkʷʼɐw/",
     "rootIds": [],
@@ -595483,7 +595712,7 @@
     "translations": {
       "ru": "грубо",
       "en": "нареч. грубо, неаккуратно (действовать ) (adverb. rude)",
-      "tr": ""
+      "tr": "crude"
     },
     "ipa": "/ʔɐpχaʃɐɬɐpχaʃɐw/",
     "rootIds": [],
@@ -595593,7 +595822,8 @@
     "conceptId": "KAVRAM_ПАРТНЁР",
     "translations": {
       "ru": "партнёр",
-      "en": "partner"
+      "en": "partner",
+      "tr": "ORTAK"
     },
     "ipa": "/dɐdʒɐgʷɐʁʷ/",
     "rootIds": [],
@@ -596056,7 +596286,7 @@
     "translations": {
       "ru": "переносное обладать",
       "en": "i  is not alone. ch. to be in one's hand",
-      "tr": ""
+      "tr": "durmak"
     },
     "ipa": "/ʔɐɕʼɐɬǝn/",
     "rootIds": [],
@@ -596494,7 +596724,8 @@
     "conceptId": "KAVRAM_ЕДИНОМЫШЛЕННИК",
     "translations": {
       "ru": "единомышленник",
-      "en": "confederate"
+      "en": "confederate",
+      "tr": "like-minded person"
     },
     "ipa": "/mɐsħɐbɐʁʷ/",
     "rootIds": [],
@@ -599203,7 +599434,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_МОСТ",
     "translations": {
-      "ru": "мост"
+      "ru": "мост",
+      "tr": "KÖPRÜ"
     },
     "ipa": "/qʷampǝrɐ/",
     "rootIds": [],
@@ -600120,7 +600352,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ПЛАЧ",
     "translations": {
-      "ru": "плач"
+      "ru": "плач",
+      "tr": "gözyaşı"
     },
     "ipa": "/ʁɐɬχʷtǝn/",
     "rootIds": [],
@@ -601249,7 +601482,7 @@
     "translations": {
       "ru": "сильно",
       "en": "much very",
-      "tr": ""
+      "tr": "cok"
     },
     "ipa": "/ɬʼɐnqɐnɐnw/",
     "rootIds": [],
@@ -602461,7 +602694,8 @@
     "conceptId": "KAVRAM_ЗАБЛУЖДАТЬСЯ",
     "translations": {
       "ru": "заблуждаться",
-      "en": "nepereh. 1. get lost; 2. perrin. entangled in smth., to err."
+      "en": "nepereh. 1. get lost; 2. perrin. entangled in smth., to err.",
+      "tr": "yanıltmak"
     },
     "ipa": "/xɐɕħɐrǝwɐn/",
     "rootIds": [],
@@ -603871,7 +604105,8 @@
     "conceptId": "KAVRAM_КУДА-Л",
     "translations": {
       "ru": "куда-л",
-      "en": "move. ch. lurk somewhere l., clogged between someone smth., where l."
+      "en": "move. ch. lurk somewhere l., clogged between someone smth., where l.",
+      "tr": "vurmak"
     },
     "ipa": "/zǝdɐwdǝʁʷɐn/",
     "rootIds": [],
@@ -605061,7 +605296,7 @@
     "translations": {
       "ru": "одновременно",
       "en": "together, at the same time; one to another",
-      "tr": ""
+      "tr": "PALANKA"
     },
     "ipa": "/zɐɕʼɐtw/",
     "rootIds": [],
@@ -606803,7 +607038,7 @@
     "conceptId": "KAVRAM_ПОДРЯД",
     "translations": {
       "ru": "подряд",
-      "tr": ""
+      "tr": "DEVAMLI"
     },
     "ipa": "/xɐnɬǝħǝnʃɐw/",
     "rootIds": [],
@@ -607254,7 +607489,8 @@
     "conceptId": "KAVRAM_СКАЗАТЬ ЧТО-Л",
     "translations": {
       "ru": "сказать что-л",
-      "en": "nepereh. ch. turning, say l."
+      "en": "nepereh. ch. turning, say l.",
+      "tr": "soylemek"
     },
     "ipa": "/zɐpsɐɬɐkʼǝn/",
     "rootIds": [],
@@ -608198,7 +608434,7 @@
     "translations": {
       "ru": "раскрыть",
       "en": "pereh. ch. to open  with smb.",
-      "tr": ""
+      "tr": "GÖSTERI"
     },
     "ipa": "/xwɐwqǝn/",
     "rootIds": [],
@@ -611602,7 +611838,7 @@
     "conceptId": "KAVRAM_ОТРЕЗАТЬ",
     "translations": {
       "ru": "отрезать",
-      "tr": "",
+      "tr": "Kesmek",
       "en": "i  move. ch. cut, cut smth. laterally"
     },
     "ipa": "/qǝkʼɐrǝʁɐжǝn/",
@@ -611766,7 +612002,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ЖИВОТНОЕ",
     "translations": {
-      "ru": "животное"
+      "ru": "животное",
+      "tr": "cani olan"
     },
     "ipa": "/tʷʼrǝtʼǝɬxw/",
     "rootIds": [],
@@ -612022,7 +612259,8 @@
     "conceptId": "KAVRAM_ПОДНЯТЬ",
     "translations": {
       "ru": "поднять",
-      "en": "move. ch. drag, drag upward someone that l. back"
+      "en": "move. ch. drag, drag upward someone that l. back",
+      "tr": "Kaldırmak"
     },
     "ipa": "/qǝdɐɬɐfеiжǝn/",
     "rootIds": [],
@@ -613142,7 +613380,8 @@
     "conceptId": "KAVRAM_ОЖИВИТЬСЯ",
     "translations": {
       "ru": "оживиться",
-      "en": "nepereh. ch. cheer up, brighten"
+      "en": "nepereh. ch. cheer up, brighten",
+      "tr": "neşelenmek"
     },
     "ipa": "/qɐnɐɕχǝfʼɐn/",
     "rootIds": [],
@@ -613781,7 +614020,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_СВАТ",
     "translations": {
-      "ru": "сват"
+      "ru": "сват",
+      "tr": "DÜNÜRCÜ"
     },
     "ipa": "/ɬǝzǝʁɐχʷ/",
     "rootIds": [],
@@ -614397,7 +614637,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_МГНОВЕНЬЕ",
     "translations": {
-      "ru": "мгновенье"
+      "ru": "мгновенье",
+      "tr": "moment"
     },
     "ipa": "/nɐʔɐrǝkʷ/",
     "rootIds": [],
@@ -614796,7 +615037,8 @@
     "conceptId": "KAVRAM_БЕССТЫДСТВО",
     "translations": {
       "ru": "бесстыдство",
-      "en": "insolence, impudence"
+      "en": "insolence, impudence",
+      "tr": "AHLAKSIZLIK"
     },
     "ipa": "/nɐmǝwkʼǝtaʁɐ/",
     "rootIds": [],
@@ -615923,7 +616165,8 @@
     "conceptId": "KAVRAM_ДРОВА",
     "translations": {
       "ru": "дрова",
-      "en": "firewood"
+      "en": "firewood",
+      "tr": "odun"
     },
     "ipa": "/pχɐʁɐsǝn/",
     "rootIds": [],
@@ -616019,7 +616262,8 @@
     "conceptId": "KAVRAM_УМЕРЕТЬ",
     "translations": {
       "ru": "умереть",
-      "en": "nepereh., razg. die okolet where l."
+      "en": "nepereh., razg. die okolet where l.",
+      "tr": "rahatlamak"
     },
     "ipa": "/xɐbɐgǝħǝn/",
     "rootIds": [],
@@ -616053,7 +616297,8 @@
     "conceptId": "KAVRAM_УМЕРЕТЬ",
     "translations": {
       "ru": "умереть",
-      "en": "1. to leave an inheritance;\n2. to die, to pass away, to depart"
+      "en": "1. to leave an inheritance;\n2. to die, to pass away, to depart",
+      "tr": "rahatlamak"
     },
     "ipa": "/ɕʼɐnǝжǝn/",
     "rootIds": [],
@@ -618185,7 +618430,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_СДЕРЖАННОСТЬ",
     "translations": {
-      "ru": "сдержанность"
+      "ru": "сдержанность",
+      "tr": "restraint"
     },
     "ipa": "/tɐmaqkʼǝħaʁɐ/",
     "rootIds": [],
@@ -618308,7 +618554,8 @@
     "conceptId": "KAVRAM_УДАР",
     "translations": {
       "ru": "удар",
-      "en": "act.\n1. of еӀэдэкъэуэн;\n2. put, throw (ex.: the shot)."
+      "en": "act.\n1. of еӀэдэкъэуэн;\n2. put, throw (ex.: the shot).",
+      "tr": "CADILAŞMAK"
     },
     "ipa": "/еʔɐdɐqɐwɐnǝʁɐ/",
     "rootIds": [],
@@ -624735,7 +624982,8 @@
     "conceptId": "KAVRAM_ПОЗНАНИЕ",
     "translations": {
       "ru": "познание",
-      "en": "зэгъэщӀэныгъэ Type: noun Definitions: 1. mastery 2. knowledge"
+      "en": "зэгъэщӀэныгъэ Type: noun Definitions: 1. mastery 2. knowledge",
+      "tr": "öğrenim"
     },
     "ipa": "/zɐʁɐɕʼɐnǝʁɐ/",
     "rootIds": [],
@@ -629943,7 +630191,8 @@
     "conceptId": "KAVRAM_ОТБИТЬ",
     "translations": {
       "ru": "отбить",
-      "en": "pereh. ch. beat off"
+      "en": "pereh. ch. beat off",
+      "tr": "ucunu koparmak"
     },
     "ipa": "/ɕʼɐwʔʷkʼǝn/",
     "rootIds": [],
@@ -631019,7 +631268,7 @@
     "conceptId": "KAVRAM_ТОТ",
     "translations": {
       "ru": "тот",
-      "tr": "",
+      "tr": "bir tür kap / yardım isteme",
       "en": "one who lies with someone in the same bed"
     },
     "ipa": "/ʁʷɐɬɐʁʷ/",
@@ -631203,7 +631452,7 @@
     "conceptId": "KAVRAM_ОКРЕСТНОСТЬ",
     "translations": {
       "ru": "окрестность",
-      "tr": ""
+      "tr": "cm. ."
     },
     "ipa": "/ʔɐxɐɬaxɐ/",
     "rootIds": [],
@@ -632680,7 +632929,7 @@
     "conceptId": "KAVRAM_БЫСТРО",
     "translations": {
       "ru": "быстро",
-      "tr": "",
+      "tr": "cok",
       "en": "nepereh. ch. vernacular drop; fast, easy to get anywhere l."
     },
     "ipa": "/itsʼɐftɐn/",
@@ -632699,7 +632948,7 @@
     "conceptId": "KAVRAM_БЫСТРО",
     "translations": {
       "ru": "быстро",
-      "tr": "",
+      "tr": "cok",
       "en": ""
     },
     "ipa": "/χʷnɕʼɐpsǝnɕʼɐw/",
@@ -633017,7 +633266,7 @@
     "conceptId": "KAVRAM_ГРУДНОЙ РЕБЁНОК",
     "translations": {
       "ru": "грудной ребёнок",
-      "tr": "",
+      "tr": "cm. .",
       "en": "chest child"
     },
     "ipa": "/dzadzʷ/",
@@ -634605,7 +634854,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_АБХАЗКА",
     "translations": {
-      "ru": "абхазка"
+      "ru": "абхазка",
+      "tr": "Abhaz"
     },
     "ipa": "/abχazǝpχʷ/",
     "rootIds": [],
@@ -634619,7 +634869,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_АБХАЗЫ",
     "translations": {
-      "ru": "абхазы"
+      "ru": "абхазы",
+      "tr": "Abhaz"
     },
     "ipa": "/abχɐzxɐm/",
     "rootIds": [],
@@ -635109,7 +635360,8 @@
     "conceptId": "KAVRAM_ЕДИНОМЫШЛЕННИК",
     "translations": {
       "ru": "единомышленник",
-      "en": "confederate"
+      "en": "confederate",
+      "tr": "like-minded person"
     },
     "ipa": "/damɐʁʷ/",
     "rootIds": [],
@@ -639246,7 +639498,7 @@
     "conceptId": "KAVRAM_ВНУК",
     "translations": {
       "ru": "внук",
-      "tr": ""
+      "tr": "kuzen"
     },
     "ipa": "/pxwrǝɬxw/",
     "rootIds": [],
@@ -639544,7 +639796,8 @@
     "conceptId": "KAVRAM_ПРОТУХНУТЬ",
     "translations": {
       "ru": "протухнуть",
-      "en": "to go bad, to become rotten"
+      "en": "to go bad, to become rotten",
+      "tr": "Çıkmak"
     },
     "ipa": "/dɐtɐn/",
     "rootIds": [],
@@ -641385,7 +641638,8 @@
     "conceptId": "KAVRAM_СЕРДЕЧНОСТЬ",
     "translations": {
       "ru": "сердечность",
-      "en": "warmth/tenderness of feeling, cordiality, affability"
+      "en": "warmth/tenderness of feeling, cordiality, affability",
+      "tr": "kindness"
     },
     "ipa": "/gʷħɐlɐlǝʁɐ/",
     "rootIds": [],
@@ -641460,7 +641714,8 @@
     "conceptId": "KAVRAM_БЛАГОПОЛУЧИЕ",
     "translations": {
       "ru": "благополучие",
-      "en": "wellbeing"
+      "en": "wellbeing",
+      "tr": "uğurlu"
     },
     "ipa": "/gʷawɐɕħɐwɐnʃaʁɐ/",
     "rootIds": [],
@@ -641475,7 +641730,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_БЛАГОПОЛУЧИЕ",
     "translations": {
-      "ru": "благополучие"
+      "ru": "благополучие",
+      "tr": "uğurlu"
     },
     "ipa": "/zɐʔʷzɐpɐɕaʁɐ/",
     "rootIds": [],
@@ -644236,7 +644492,8 @@
     "conceptId": "KAVRAM_ВЫЯСНИТЬ ЧТО-Л",
     "translations": {
       "ru": "выяснить что-л",
-      "en": "move. ch. find smth."
+      "en": "move. ch. find smth.",
+      "tr": "öğrenmek"
     },
     "ipa": "/qǝzɐxɐxwn/",
     "rootIds": [],
@@ -648079,7 +648336,8 @@
     "conceptId": "KAVRAM_ВЫБЕЖАТЬ ОТКУДА-Л",
     "translations": {
       "ru": "выбежать откуда-л",
-      "en": "nepereh. ch. jump, run out from l."
+      "en": "nepereh. ch. jump, run out from l.",
+      "tr": "hatırlamak"
     },
     "ipa": "/dɐdʒɐrɐzǝkʼǝn/",
     "rootIds": [],
@@ -648097,7 +648355,8 @@
     "conceptId": "KAVRAM_ВЫБЕЖАТЬ ОТКУДА-Л",
     "translations": {
       "ru": "выбежать откуда-л",
-      "en": "nepereh. ch. cubano-zelenchukskie jump, run out from l."
+      "en": "nepereh. ch. cubano-zelenchukskie jump, run out from l.",
+      "tr": "hatırlamak"
     },
     "ipa": "/dɐdǝdǝkʼǝn/",
     "rootIds": [],
@@ -651521,7 +651780,8 @@
     "conceptId": "KAVRAM_ПЬЯНСТВОВАТЬ",
     "translations": {
       "ru": "пьянствовать",
-      "en": "nepereh. ch. often drinking, carousing"
+      "en": "nepereh. ch. often drinking, carousing",
+      "tr": "icmek"
     },
     "ipa": "/еfɐrеin/",
     "rootIds": [],
@@ -654188,7 +654448,8 @@
     "conceptId": "KAVRAM_КУДА-Л",
     "translations": {
       "ru": "куда-л",
-      "en": "nepereh. ch. cm."
+      "en": "nepereh. ch. cm.",
+      "tr": "vurmak"
     },
     "ipa": "/qеsɐn/",
     "rootIds": [],
@@ -654203,7 +654464,8 @@
     "conceptId": "KAVRAM_КУДА-Л",
     "translations": {
       "ru": "куда-л",
-      "en": "is not without. ch. pour under smth., smth."
+      "en": "is not without. ch. pour under smth., smth.",
+      "tr": "vurmak"
     },
     "ipa": "/ɕʼɐɬɐɬɐn/",
     "rootIds": [],
@@ -655112,7 +655374,8 @@
     "conceptId": "KAVRAM_В ЧЕМ-Л",
     "translations": {
       "ru": "в чем-л",
-      "en": "i (хещӀыхь) перех. 1. строить что-л. где-л., в чем-л. (в какой-л. массе); 2. перен. внести свой вклад, принимая участие в каком-л. предприятии; 3. нарисовать, сделать узоры на чем-л. ii (хэшӀыхьащ) не"
+      "en": "i (хещӀыхь) перех. 1. строить что-л. где-л., в чем-л. (в какой-л. массе); 2. перен. внести свой вклад, принимая участие в каком-л. предприятии; 3. нарисовать, сделать узоры на чем-л. ii (хэшӀыхьащ) не",
+      "tr": "etkilemek"
     },
     "ipa": "/xɐʃʼǝħǝn/",
     "rootIds": [],
@@ -665681,7 +665944,8 @@
     "conceptId": "KAVRAM_СКРЫТЬ ЧТО-Л",
     "translations": {
       "ru": "скрыть что-л",
-      "en": "move. ch. hush, hide-n."
+      "en": "move. ch. hush, hide-n.",
+      "tr": "saklamak"
     },
     "ipa": "/zɐtеwfɐn/",
     "rootIds": [],
@@ -666216,7 +666480,8 @@
     "conceptId": "KAVRAM_СБОР",
     "translations": {
       "ru": "сбор",
-      "en": "зэщӀэкъуэжыныгъэ Type: noun Definitions: 1. gathering"
+      "en": "зэщӀэкъуэжыныгъэ Type: noun Definitions: 1. gathering",
+      "tr": "KONGRE"
     },
     "ipa": "/zɐɕʼɐqʷɐжǝnǝʁɐ/",
     "rootIds": [],
@@ -666991,7 +667256,8 @@
     "conceptId": "KAVRAM_СЪЕСТЬ",
     "translations": {
       "ru": "съесть",
-      "en": "move. ch. lick someone's l."
+      "en": "move. ch. lick someone's l.",
+      "tr": "yemek"
     },
     "ipa": "/zɐɕʼɐbzееn/",
     "rootIds": [],
@@ -668327,7 +668593,8 @@
     "conceptId": "KAVRAM_ЗАСТАТЬ КОГО-ЧТО-Л",
     "translations": {
       "ru": "застать кого-что-л",
-      "en": "nepereh. ch. meet someone that l."
+      "en": "nepereh. ch. meet someone that l.",
+      "tr": "DÜŞMEK 4"
     },
     "ipa": "/iriħɐɬʼɐn/",
     "rootIds": [],
@@ -669808,7 +670075,8 @@
     "conceptId": "KAVRAM_ПРОХОДИТЬ",
     "translations": {
       "ru": "проходить",
-      "en": "nepereh. ch. translucent, pass"
+      "en": "nepereh. ch. translucent, pass",
+      "tr": "takip etmek"
     },
     "ipa": "/pxǝpsǝn/",
     "rootIds": [],
@@ -670592,7 +670860,8 @@
     "conceptId": "KAVRAM_ПОЧАТОК",
     "translations": {
       "ru": "початок",
-      "en": "ear of corn"
+      "en": "ear of corn",
+      "tr": "Kese kağıdı"
     },
     "ipa": "/kʼɐtʃan/",
     "rootIds": [],
@@ -671248,7 +671517,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_КИТАЙЦЫ",
     "translations": {
-      "ru": "китайцы"
+      "ru": "китайцы",
+      "tr": "chinese"
     },
     "ipa": "/χʷtxɐm/",
     "rootIds": [],
@@ -674306,7 +674576,7 @@
     "conceptId": "KAVRAM_ОТРЕЗАТЬ",
     "translations": {
       "ru": "отрезать",
-      "tr": "",
+      "tr": "Kesmek",
       "en": "i causative to"
     },
     "ipa": "/qǝpǝʁɐжǝn/",
@@ -674322,7 +674592,7 @@
     "conceptId": "KAVRAM_ОТРЕЗАТЬ",
     "translations": {
       "ru": "отрезать",
-      "tr": "",
+      "tr": "Kesmek",
       "en": "i  pereh. ch. cut off for someone; mow down for smb."
     },
     "ipa": "/xwpǝwpɕʼǝn/",
@@ -674714,7 +674984,8 @@
     "conceptId": "KAVRAM_СОСЛУЖИВЕЦ",
     "translations": {
       "ru": "сослуживец",
-      "en": "colleague"
+      "en": "colleague",
+      "tr": "IŞGÜNÜ"
     },
     "ipa": "/qʷlǝqʷɕʼɐʁʷ/",
     "rootIds": [],
@@ -680492,7 +680763,8 @@
     "conceptId": "KAVRAM_НАСТУПИТЬ",
     "translations": {
       "ru": "наступить",
-      "en": "nepereh. ch. approach, being moved to the front to someone smth."
+      "en": "nepereh. ch. approach, being moved to the front to someone smth.",
+      "tr": "olmak"
     },
     "ipa": "/ʑɐxɐkʷʼɐtɐn/",
     "rootIds": [],
@@ -682061,7 +682333,8 @@
     "conceptId": "KAVRAM_О ЧЕЛОВЕКЕ",
     "translations": {
       "ru": "о человеке",
-      "en": "abstemious, sparing in one's food and drink"
+      "en": "abstemious, sparing in one's food and drink",
+      "tr": "yeni evli"
     },
     "ipa": "/еmǝfɐеmǝʃxɐ/",
     "rootIds": [],
@@ -684657,7 +684930,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_СОБИРАНИЕ",
     "translations": {
-      "ru": "собирание"
+      "ru": "собирание",
+      "tr": "picking"
     },
     "ipa": "/zɐxwɐʃɐnǝʁɐ/",
     "rootIds": [],
@@ -686103,7 +686377,8 @@
     "conceptId": "KAVRAM_НЕВЕСЁЛЫЙ",
     "translations": {
       "ru": "невесёлый",
-      "en": "мыгуфӀэгъуэу Type: adjective Definitions: 1. joyless"
+      "en": "мыгуфӀэгъуэу Type: adjective Definitions: 1. joyless",
+      "tr": "moody"
     },
     "ipa": "/mǝgʷfʼɐʁʷɐw/",
     "rootIds": [],
@@ -687789,7 +688064,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ПОЛЯКИ",
     "translations": {
-      "ru": "поляки"
+      "ru": "поляки",
+      "tr": "LEHLI"
     },
     "ipa": "/laħxɐm/",
     "rootIds": [],
@@ -688552,7 +688828,7 @@
     "conceptId": "KAVRAM_БОЛТЛИВЫЙ",
     "translations": {
       "ru": "болтливый",
-      "tr": "cm. pselerey."
+      "tr": "akıcı, tıkır tıkır"
     },
     "ipa": "/ʔʷrǝbжɐ/",
     "rootIds": [],
@@ -689092,7 +689368,8 @@
     "conceptId": "KAVRAM_ПРЕСЛЕДОВАНИЕ",
     "translations": {
       "ru": "преследование",
-      "en": "хуныгъэ Type: noun Definitions: 1. pursuit"
+      "en": "хуныгъэ Type: noun Definitions: 1. pursuit",
+      "tr": "BALTALAMAK"
     },
     "ipa": "/xwnǝʁɐ/",
     "rootIds": [],
@@ -689934,7 +690211,8 @@
     "conceptId": "KAVRAM_ГНЁТ",
     "translations": {
       "ru": "гнёт",
-      "en": "дэубыдэныгъэ Type: noun Definitions: 1. oppression"
+      "en": "дэубыдэныгъэ Type: noun Definitions: 1. oppression",
+      "tr": "bondage"
     },
     "ipa": "/dɐwbǝdɐnǝʁɐ/",
     "rootIds": [],
@@ -695131,7 +695409,8 @@
     "conceptId": "KAVRAM_СТЫДЛИВОСТЬ",
     "translations": {
       "ru": "стыдливость",
-      "en": "bashfulness"
+      "en": "bashfulness",
+      "tr": "shame"
     },
     "ipa": "/wkʼǝtɐxǝʁɐ/",
     "rootIds": [],
@@ -697903,7 +698182,8 @@
     "conceptId": "KAVRAM_ПОНЯТЬ ЧТО-Л",
     "translations": {
       "ru": "понять что-л",
-      "en": "is not without. ch. to be able to hear, understand smth."
+      "en": "is not without. ch. to be able to hear, understand smth.",
+      "tr": "anlamak"
     },
     "ipa": "/xwzɐxɐɕʼǝkʼǝn/",
     "rootIds": [],
@@ -698636,7 +698916,7 @@
     "conceptId": "KAVRAM_ВДВОЕ",
     "translations": {
       "ru": "вдвое",
-      "tr": ""
+      "tr": "Çift olarak"
     },
     "ipa": "/tʷʼaɕʼɐw/",
     "rootIds": [],
@@ -700285,7 +700565,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_КЛАПАНЫ",
     "translations": {
-      "ru": "клапаны"
+      "ru": "клапаны",
+      "tr": "barutluk cebi"
     },
     "ipa": "/gʷtħɐkʷʼmɐxɐr/",
     "rootIds": [],
@@ -706878,7 +707159,8 @@
     "conceptId": "KAVRAM_УЭ УРИӀУЭХУКЪЫМ",
     "translations": {
       "ru": "уэ уриӏуэхукъым",
-      "en": "is not without. ch. to be depressed"
+      "en": "is not without. ch. to be depressed",
+      "tr": "bunalımda hissetmek"
     },
     "ipa": "/ɕħɐжɐʁʷɐn/",
     "rootIds": [],
@@ -748928,7 +749210,8 @@
     "conceptId": "KAVRAM_ИЗНУРИТЬ КОГО-Л",
     "translations": {
       "ru": "изнурить кого-л",
-      "en": "causative to"
+      "en": "causative to",
+      "tr": "öldürmek"
     },
     "ipa": "/ʁɐdʒɐɬɐn/",
     "rootIds": [],
@@ -753435,7 +753718,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_РАЗГРАНИЧЕНИЕ",
     "translations": {
-      "ru": "разграничение"
+      "ru": "разграничение",
+      "tr": "BOZULMAK"
     },
     "ipa": "/zɐɕħɐɕǝʁɐkʼǝnǝʁɐ/",
     "rootIds": [],
@@ -756818,7 +757102,8 @@
     "conceptId": "KAVRAM_ТРОНУТЬ КОГО-ЧТО-Л",
     "translations": {
       "ru": "тронуть кого-что-л",
-      "en": "is not perfect. ch. to touch smb. in spite of smb. will"
+      "en": "is not perfect. ch. to touch smb. in spite of smb. will",
+      "tr": "dokunmak"
     },
     "ipa": "/fʼеʔɐbǝn/",
     "rootIds": [],
@@ -757352,7 +757637,8 @@
     "conceptId": "KAVRAM_ПРИРУЧИТЬ КОГО-Л",
     "translations": {
       "ru": "приручить кого-л",
-      "en": "causative to"
+      "en": "causative to",
+      "tr": "SAKINLEŞTIRMEK"
     },
     "ipa": "/qɐʁɐʔɐsɐn/",
     "rootIds": [],
@@ -774408,7 +774694,7 @@
     "conceptId": "KAVRAM_НЕДОВЕРЧИВЫЙ",
     "translations": {
       "ru": "недоверчивый; пугливый; пугливый человек; щтэрей",
-      "tr": "korkuyla, ürkekçe",
+      "tr": "korku ve ürkeklikle, çekinerek",
       "en": "fearful"
     },
     "ipa": "gʷǝɕtɐ'gʷǝɮɐ",
@@ -774426,7 +774712,7 @@
     "translations": {
       "ru": "в будущем; иногда; когда-нибудь; редко",
       "en": "sometime in the future",
-      "tr": ""
+      "tr": "SEYREKÇE"
     },
     "ipa": "zɐmˈzɐm",
     "rootIds": [],
@@ -775521,7 +775807,8 @@
     "partOfSpeech": "noun",
     "conceptId": "KAVRAM_ОБИДЧИВЫЙ",
     "translations": {
-      "ru": "обидчивый; щепетильный"
+      "ru": "обидчивый; щепетильный",
+      "tr": "ALINGAN"
     },
     "ipa": "",
     "rootIds": [],
@@ -775705,7 +775992,7 @@
     "translations": {
       "ru": "слишком; черезвучайно",
       "en": "too, cherezvuchayno",
-      "tr": ""
+      "tr": "DOLUDİZGİN"
     },
     "ipa": "jǝqʹʷǝji:'qʹʷǝᶎtʹʂɐ",
     "rootIds": [],
@@ -776234,7 +776521,7 @@
     "conceptId": "KAVRAM_ВПОПЫХАХ",
     "translations": {
       "ru": "впопыхах; второпях",
-      "tr": ""
+      "tr": "cm. piaschie-thythyu zyhuepen."
     },
     "ipa": "",
     "rootIds": [],
@@ -776405,7 +776692,8 @@
     "conceptId": "KAVRAM_НЕБОЛЬШОЙ",
     "translations": {
       "ru": "небольшой; хрупкий",
-      "en": "small, frail (of person )"
+      "en": "small, frail (of person )",
+      "tr": "cm. ."
     },
     "ipa": "",
     "rootIds": [],
@@ -778937,7 +779225,8 @@
     "conceptId": "KAVRAM_БЕЗОТЦОВЩИНА",
     "translations": {
       "ru": "безотцовщина",
-      "en": "fatherlessness"
+      "en": "fatherlessness",
+      "tr": "widow's daughter"
     },
     "ipa": "fǝzɐbɐqʹʷɐfǝzɑ:ˈbɐpχʷ",
     "rootIds": [],
@@ -779696,7 +779985,7 @@
     "translations": {
       "ru": "разориться",
       "en": "нареч. см. . (adverb. cm. .)",
-      "tr": ""
+      "tr": "BOZULMAK"
     },
     "ipa": "ʔɐgʷǝnɐɕʹʔɐgʷǝ'dᶎɑ:fɐw",
     "rootIds": [],
@@ -781747,6 +782036,1054 @@
     "form": "къытекӏэ",
     "translations": {
       "tr": "üzerinden çıkmak, türemek"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "изэгъэшӏэ",
+    "translations": {
+      "tr": "tamamen öğretmek"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "хуэгъэлъэпӏэ",
+    "translations": {
+      "tr": "onurlandırmak, saygı göstermek"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "уцӏырхъы",
+    "translations": {
+      "tr": "çimdiklemek, yolmak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "хуэгъэувыӏэ",
+    "translations": {
+      "tr": "durdurmasını sağlamak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "кӏэщӏэтхэ",
+    "translations": {
+      "tr": "altına yazmak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "хущӏегъуэжы",
+    "translations": {
+      "tr": "pişman olmak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "кӏэщӏэдзэ",
+    "translations": {
+      "tr": "başlamak, girişmek"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "хуэщӏэжы",
+    "translations": {
+      "tr": "yeniden yapmak, hatırlamak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "тепщы",
+    "translations": {
+      "tr": "hükmetmek, yönetmek"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "псэужы",
+    "translations": {
+      "tr": "yeniden dirilmek, yaşamak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "хуей-хуэмей",
+    "translations": {
+      "tr": "istemese de, mecbur kalmasa da"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "дэпщхьэ",
+    "translations": {
+      "tr": "içine örtmek, sarmak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "арынша",
+    "translations": {
+      "tr": "öyle olmasa bile"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "блэплъы",
+    "translations": {
+      "tr": "göz atıp geçmek"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "дэгъэчъы",
+    "translations": {
+      "tr": "koşturmak, kaçırtmak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "гошын",
+    "translations": {
+      "tr": "dağıtmak, paylaştırmak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "пшыхьан",
+    "translations": {
+      "tr": "ıslatmak, sırılsıklam etmek"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "ешъуэн",
+    "translations": {
+      "tr": "içmek"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "щэин",
+    "translations": {
+      "tr": "uzatmak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "гъэухьан",
+    "translations": {
+      "tr": "kuşattırmak, çevreletmek"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "гъэчэрэгъон",
+    "translations": {
+      "tr": "çevirmek, döndürmek"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "къилъэдэн",
+    "translations": {
+      "tr": "içeri fırlamak, koşarak girmek"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "пщыунэ",
+    "translations": {
+      "tr": "hizmetçi odası"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "хьэӀу",
+    "translations": {
+      "tr": "helva"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "ӀыхьэхэмыӀу",
+    "translations": {
+      "tr": "pay almadan, hissesizce"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "ӀэгунэщӀ",
+    "translations": {
+      "tr": "eli boş olarak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "Ӏэгъуэджэ",
+    "translations": {
+      "tr": "yanlış adım, sakat iş"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "ӀэщакӀуэ",
+    "translations": {
+      "tr": "silahlı kişi"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "бгъантӀэ",
+    "translations": {
+      "tr": "eğri bükrü"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "гуакӀуагъэ",
+    "translations": {
+      "tr": "çekicilik, sevimlilik"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "гухагъэ",
+    "translations": {
+      "tr": "içtenlik, samimiyet"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "гъэхъуртэ",
+    "translations": {
+      "tr": "zorlamak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "гъэхъыбары",
+    "translations": {
+      "tr": "haber yaymak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "гъэхыщӏэ",
+    "translations": {
+      "tr": "acı vermek"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "гъэхьэбэуэ",
+    "translations": {
+      "tr": "kuyruk sallamak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "гъэхьэцэрэцэ",
+    "translations": {
+      "tr": "kuyruk sallamak (hayvan)"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "джэдлъыхъ",
+    "translations": {
+      "tr": "tavuk toplama geleneği"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "джэлъэ",
+    "translations": {
+      "tr": "zor nefes almak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "дэӏуэнтӏэ",
+    "translations": {
+      "tr": "içeri sokmak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "дэгупсэ",
+    "translations": {
+      "tr": "sadık olmak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "дэгъуэщыхьы",
+    "translations": {
+      "tr": "kaybolmak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "дэгъэпсынщӏэ",
+    "translations": {
+      "tr": "kolaylaştırmak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "дэджэрэзэ",
+    "translations": {
+      "tr": "yuvarlanmak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "дэлыпщӏеи",
+    "translations": {
+      "tr": "alevlenmek"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "дэпӏиикӏы",
+    "translations": {
+      "tr": "dışarı sarkmak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "дэпхъуэ",
+    "translations": {
+      "tr": "hızla el uzatmak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "дэпхъуэты",
+    "translations": {
+      "tr": "kapmak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "дэтӏэтӏы",
+    "translations": {
+      "tr": "kazmak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "дэхуэрзэ",
+    "translations": {
+      "tr": "dalgalanmak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "дэхэщӏэ",
+    "translations": {
+      "tr": "yalvarmak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "дэцӏэлъы",
+    "translations": {
+      "tr": "sıvamak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "дэчыхьы",
+    "translations": {
+      "tr": "batmak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "дэшиикӏы",
+    "translations": {
+      "tr": "dışarı çıkarmak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "дэшхыкӏы",
+    "translations": {
+      "tr": "eksik vermek"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "еӏэ-епхъуэ",
+    "translations": {
+      "tr": "aceleyle"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "еӏэбыхы",
+    "translations": {
+      "tr": "el uzatmak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "еблыхы",
+    "translations": {
+      "tr": "yukarıdan aşağı dizmek"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "егъуэгъузэ",
+    "translations": {
+      "tr": "sıkıntıyla"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "егъэмэрэкӏуэхы",
+    "translations": {
+      "tr": "silip süpürmek (yemek)"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "еджэдэлӏэжы",
+    "translations": {
+      "tr": "sürünerek gelmek"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "едзылӏэ",
+    "translations": {
+      "tr": "fırlatmak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "ежьуу",
+    "translations": {
+      "tr": "eşlik etmek (şarkıya)"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "ежьэлъэ",
+    "translations": {
+      "tr": "açgözlülükle ısırmak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "ежэкӏы",
+    "translations": {
+      "tr": "koşup gitmek"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "екъу",
+    "translations": {
+      "tr": "hızla, koşarak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "екъуэншэкӏы",
+    "translations": {
+      "tr": "haksızlık etmek"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "елӏыфӏэкӏы",
+    "translations": {
+      "tr": "üstün gelmek"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "елъыпы",
+    "translations": {
+      "tr": "yudumlamak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "елъэбышэуэ",
+    "translations": {
+      "tr": "topallamak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "елъэгэкӏы",
+    "translations": {
+      "tr": "yüksek olmak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "елъэрэзэкӏы",
+    "translations": {
+      "tr": "sıçramak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "елъэстэуэ",
+    "translations": {
+      "tr": "sıçramak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "епӏытӏылӏэ",
+    "translations": {
+      "tr": "sıkıca bastırmak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "епкӏэуэ",
+    "translations": {
+      "tr": "kuyruk sallamak (balık)"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "еплъэкӏы",
+    "translations": {
+      "tr": "etrafına bakmak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "епсыхыжы",
+    "translations": {
+      "tr": "geri yüzmek"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "есыхы",
+    "translations": {
+      "tr": "aşağı yüzmek"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "етӏысылӏэжы",
+    "translations": {
+      "tr": "tekrar oturmak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "етап",
+    "translations": {
+      "tr": "aşama"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "етхъунщӏэуэжы",
+    "translations": {
+      "tr": "tekrar sıvamak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "еукъулэжы",
+    "translations": {
+      "tr": "tekrar rica etmek"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "еумэмэкӏы",
+    "translations": {
+      "tr": "bağırmak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "еушкӏуриехы",
+    "translations": {
+      "tr": "şırıl şırıl akmak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "еуэиригъэшхы",
+    "translations": {
+      "tr": "kararlılıkla"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "еуэршэрылӏэ",
+    "translations": {
+      "tr": "sohbet etmek"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "еуэсэ",
+    "translations": {
+      "tr": "alışmak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "ефӏыцӏэкӏы",
+    "translations": {
+      "tr": "daha siyah olmak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "ефыгъуэжы",
+    "translations": {
+      "tr": "tekrar kıskanmak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "ефэгъуэкӏы",
+    "translations": {
+      "tr": "daha solgun görünmek"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "ефэжы",
+    "translations": {
+      "tr": "üstüne içmek"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "ехуэкӏы",
+    "translations": {
+      "tr": "sürükleyip götürmek"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "ехъурэхъуэкӏы",
+    "translations": {
+      "tr": "boyunca otlamak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "ехъуэжы",
+    "translations": {
+      "tr": "değiştirmek"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "ехъуэкӏы",
+    "translations": {
+      "tr": "boyunca otlamak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "ехъуэскӏэуэ",
+    "translations": {
+      "tr": "sıçramak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "ехьелэкӏы",
+    "translations": {
+      "tr": "kandırmak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "ехьэкӏыншэ",
+    "translations": {
+      "tr": "açıkça"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "ехьэулеилӏэ",
+    "translations": {
+      "tr": "boşa harcamak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "ещэбэкӏы",
+    "translations": {
+      "tr": "daha yumuşak olmak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "ещэжы",
+    "translations": {
+      "tr": "ihanet etmek"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "жьгъыжьгъыжь",
+    "translations": {
+      "tr": "çınlama sesi"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "жьэгъуэшхэ",
+    "translations": {
+      "tr": "geviş getirmek"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "жьэдэкӏэ",
+    "translations": {
+      "tr": "ağza dökmek"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "жьэдэлъы",
+    "translations": {
+      "tr": "ağızda tutmak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "жьэдэплъыхьы",
+    "translations": {
+      "tr": "ağzı incelemek"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "жьэдэпхэ",
+    "translations": {
+      "tr": "ağza bağlamak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "жьэрэжьэ",
+    "translations": {
+      "tr": "yanmak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "жьэхэӏунщӏэ",
+    "translations": {
+      "tr": "itmek"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "жьэхэгъэкъуэ",
+    "translations": {
+      "tr": "dayamak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "зусыгъуэджэ",
+    "translations": {
+      "tr": "hor görmek"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "зэ-тӏэ",
+    "translations": {
+      "tr": "bir-iki kez"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "зэбгрыгуэшыкӏы",
+    "translations": {
+      "tr": "dağıtmak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "зэбгрыгъэувыкӏы",
+    "translations": {
+      "tr": "dizmek"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "зэбгрылъэсыкӏы",
+    "translations": {
+      "tr": "dağıtmak (su)"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "зэбгрылъэтыкӏы",
+    "translations": {
+      "tr": "dağıtmak (uçarak)"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "зэбгрытыкӏы",
+    "translations": {
+      "tr": "dağıtmak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "зэбгрыутхыкӏы",
+    "translations": {
+      "tr": "serpmek"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "зэбгъэдэщӏыхьы",
+    "translations": {
+      "tr": "yan yana inşa etmek"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "зэбзэгуэгъ",
+    "translations": {
+      "tr": "arkadaş"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "зэблэлъэтыкӏы",
+    "translations": {
+      "tr": "karşılıklı uçmak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "зэблэцӏэфты",
+    "translations": {
+      "tr": "karşılıklı atlamak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "зэбэдзэуэ",
+    "translations": {
+      "tr": "savurmak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "зэгуэбдзэ",
+    "translations": {
+      "tr": "yan yana tutturmak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "зэгуэбэты",
+    "translations": {
+      "tr": "şişmanlamak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "зэгуэгъэжьэ",
+    "translations": {
+      "tr": "yan yana kaynatmak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "зэгуэкӏыкӏы",
+    "translations": {
+      "tr": "şişmanlamak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "зэгуэшэгъ",
+    "translations": {
+      "tr": "paylaşanlar"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "зэгъэӏусэ",
+    "translations": {
+      "tr": "bir araya getirmek"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "зэдегупсысы",
+    "translations": {
+      "tr": "birlikte düşünmek"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "зэдэӏуэкӏы",
+    "translations": {
+      "tr": "kulak vermek"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "зэдэгъуэты",
+    "translations": {
+      "tr": "birlikte bulmak"
     },
     "pos": "UNKNOWN",
     "notes": "[MANUEL] Dogu kok"
