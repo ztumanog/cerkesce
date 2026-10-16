@@ -7887,7 +7887,7 @@
     },
     "isLemma": true,
     "translations": {
-      "tr": "keskin goz"
+      "tr": "keskin gözlü, keskin göz"
     },
     "subConceptId": "SHARP_EYE",
     "taxonomyFamily": "Göz & Görme",
@@ -21442,7 +21442,7 @@
     "translations": {
       "ru": "Зыгуэри, хэти",
       "en": "no one, nobody, nothing",
-      "tr": "Sıfır",
+      "tr": "hiçbiri, hiç kimse",
       "ar": "لا يوجد"
     },
     "rootIds": [
@@ -35433,7 +35433,7 @@
     "translations": {
       "ru": "никто, ничто / Зыгуэрми",
       "en": "nobody, no one, nothing, no",
-      "tr": "hiçbir şey",
+      "tr": "hiçbiri, hiç kimse",
       "ar": "بدون"
     },
     "rootIds": [
@@ -43843,7 +43843,7 @@
     "translations": {
       "ru": "острый, наточенньй перочинный нож, бри",
       "en": "sharp, acute (for example, a knife)",
-      "tr": "Keskin; sivri"
+      "tr": "keskin, sivri, çevik"
     },
     "rootIds": [
       "R-ZHAN"
@@ -49262,7 +49262,7 @@
     },
     "ipa": "/tʂɐn/",
     "translations": {
-      "tr": "KESKIN",
+      "tr": "keskin, sivri, çevik",
       "ar": "حاد، قاطع/ سكين حادة، شفرة/ نشيط"
     }
   },
@@ -50938,7 +50938,7 @@
     "translations": {
       "en": "oath, pledge, vow",
       "ru": "клятва",
-      "tr": "cubano-zelenchukskie oath",
+      "tr": "yemin, ant",
       "trSource": "en->tr koprusu (orta)",
       "ar": "القَسَم، اليمين"
     }
@@ -110222,7 +110222,7 @@
     "ipa": "/pɕɐ'ddᶎǝʑ/",
     "ipaSource": "root-derived",
     "translations": {
-      "tr": "BASKIN",
+      "tr": "baskın, egemen, hakim",
       "ar": "مُسيطر"
     },
     "literalMeaningSource": "translations.tr (yuksek)"
@@ -116535,7 +116535,7 @@
     },
     "isLemma": true,
     "translations": {
-      "tr": "sheepskin"
+      "tr": "koyun postu, koyun derisi"
     },
     "conceptId": "MATERIAL",
     "subConceptId": "SHEEPSKIN",
@@ -135466,7 +135466,7 @@
     "ipa": "/zǝ'gʷɐr/",
     "translations": {
       "en": "somebody",
-      "tr": "somebody"
+      "tr": "biri, birisi, herhangi biri"
     }
   },
   {
@@ -200279,7 +200279,7 @@
     "translations": {
       "en": "sharp-nosed, pointed",
       "ru": "остроносый, остроконечный",
-      "tr": "Keskin; sivri"
+      "tr": "sivri, keskin uçlu"
     },
     "dictionaryEvidence": [
       "sukunov-1998"
@@ -201513,7 +201513,7 @@
     "translations": {
       "en": "oath, pledge",
       "ru": "клятва",
-      "tr": "oath",
+      "tr": "yemin, ant",
       "trSource": "en->tr koprusu (orta)"
     }
   },
@@ -206822,7 +206822,7 @@
     "translations": {
       "en": "body (flesh, muscles), skin covering, epidermis",
       "ru": "тело (мясо, мышцы), кожный покров",
-      "tr": "1. body;\n2. human skin; skin cover; integument"
+      "tr": "cilt, ten, beden yüzeyi"
     }
   },
   {
@@ -224111,7 +224111,7 @@
     "translations": {
       "en": "",
       "ru": "тхьэрыӏуэ: клятва",
-      "tr": "cubano-zelenchukskie oath",
+      "tr": "yemin, ant",
       "trSource": "en->tr koprusu (orta)"
     }
   },
@@ -300017,7 +300017,7 @@
     "conceptId": "SKIN",
     "isLemma": true,
     "translations": {
-      "tr": "bear-skin"
+      "tr": "ayı postu, ayı derisi"
     },
     "rootIds": [
       "R-FE"
@@ -324808,7 +324808,7 @@
       "trVerified": false,
       "en": "part, piece, share",
       "ru": "часть, кусок, доля",
-      "tr": "parça, net ve keskin"
+      "tr": "parça, net, keskin, belirgin"
     },
     "ipa": "/'ʔʷǝpʹɕʹɐ/",
     "dictionaryEvidence": [
@@ -324849,7 +324849,7 @@
     "translations": {
       "en": "in parts, pieces, sections, shares or chunks",
       "ru": "частями, долями, кусками",
-      "tr": "parça parça, keskin bir şekilde"
+      "tr": "parça parça, net ve keskin"
     }
   },
   {
@@ -334766,7 +334766,7 @@
     "translations": {
       "en": "goat herder; goatherd",
       "ru": "козопас",
-      "tr": "goatherd"
+      "tr": "keçi çobanı"
     },
     "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/d/db/%D0%91516%D0%B1%D0%B6%D1%8D%D0%BD%D1%8B%D1%85%D1%8A%D1%83%D1%8D.ogg"
   },
@@ -361607,7 +361607,7 @@
     "translations": {
       "en": "a tool in the form of a sickle made of wood or iron with blunt teeth for working hides",
       "ru": "инструмент в виде серпа из дерева или железа с тупыми зубцами для выделки шкур",
-      "tr": "device having a sickle-like shape used for dressing (hide), especially sheepskin"
+      "tr": "deri tabaklama orağı"
     }
   },
   {
@@ -364100,7 +364100,7 @@
     "translations": {
       "en": "villainy, wickedness",
       "ru": "злодейство",
-      "tr": "villainy"
+      "tr": "alçaklık, kötülük, cani hareket"
     }
   },
   {
@@ -388740,7 +388740,7 @@
     "translations": {
       "en": "oath, pledge, vow, swearing",
       "ru": "клятва",
-      "tr": "cubano-zelenchukskie oath"
+      "tr": "yemin, ikrar, ahit"
     }
   },
   {
@@ -431067,7 +431067,7 @@
     "translations": {
       "en": "heel with cracked skin.",
       "ru": "пятка с потрескавшейся кожей",
-      "tr": "heel with cracked skin"
+      "tr": "çatlak topuklu"
     }
   },
   {
@@ -478942,7 +478942,7 @@
     "translations": {
       "en": "human skin",
       "ru": "кожа человека",
-      "tr": "human skin"
+      "tr": "insan derisi, insan teni"
     }
   },
   {
@@ -479472,7 +479472,7 @@
     "translations": {
       "en": "until very sharp [highly sharpened] (for example, a knife)",
       "ru": "очень остро [наточенный] (напр. нож)",
-      "tr": "Keskin; sivri",
+      "tr": "sivri, keskin uçlu",
       "trSource": "en->tr koprusu (orta)"
     }
   },
@@ -483777,7 +483777,7 @@
     "translations": {
       "en": "skin of a premature lamb",
       "ru": "шкура недоношенного ягнёнка",
-      "tr": "premature lamb skin"
+      "tr": "erken doğmuş kuzu derisi"
     }
   },
   {
@@ -569979,7 +569979,7 @@
     "conceptId": "KAVRAM_ЗАЯВЛЕНИЕ",
     "translations": {
       "ru": "заявление",
-      "tr": "KÜFRETMEK"
+      "tr": "söylenmiş söz, yemin, ant"
     },
     "ipa": "/ʔʷaʁɐ/",
     "rootIds": [],
@@ -579168,7 +579168,7 @@
     "translations": {
       "ru": "неуправляемый",
       "en": "unmanageable",
-      "tr": "sly, cunning, artful, dangerous, slippery; wicked, malicious; intractable, unapproachable"
+      "tr": "kaypak, kurnaz, tutarsız"
     },
     "ipa": "/ʔɐwbǝdǝpʼɐnʃɐ/",
     "rootIds": [],
@@ -600604,7 +600604,7 @@
     "conceptId": "KAVRAM_ОСТРЫЙ",
     "translations": {
       "ru": "острый",
-      "tr": "KESKIN"
+      "tr": "keskin gözlü, gözü keskin"
     },
     "ipa": "/nɐжan/",
     "rootIds": [],
@@ -670982,7 +670982,7 @@
     "translations": {
       "ru": "присяга",
       "en": "oath",
-      "tr": "oath."
+      "tr": "yemin, ant"
     },
     "ipa": "/prisяgɐ/",
     "rootIds": [],
@@ -676901,7 +676901,7 @@
     "translations": {
       "ru": "токарь",
       "en": "turner",
-      "tr": "turner"
+      "tr": "bileyici, keskinleştiren"
     },
     "ipa": "/zǝʁɐжan/",
     "rootIds": [],
@@ -697831,7 +697831,7 @@
     "translations": {
       "ru": "полушубок",
       "en": "short sheepskin coat, sheepskin jacket",
-      "tr": "short sheepskin coat, sheepskin jacket"
+      "tr": "kısa kürk ceket"
     },
     "ipa": "/dʒɐdǝgʷkʼɐɕʼ/",
     "rootIds": [],
@@ -716120,7 +716120,7 @@
     "translations": {
       "ru": "фактический",
       "en": "actual; real; factual; virtual",
-      "tr": "actual; real; factual; virtual"
+      "tr": "fiili, gerçek, olgusal"
     },
     "ipa": "/faktitʃеskɐ/",
     "rootIds": [],
@@ -716695,7 +716695,7 @@
     "translations": {
       "ru": "рекомендация",
       "en": "recommendation; (character) reference",
-      "tr": "recommendation; (character) reference"
+      "tr": "tavsiye, öneri, referans"
     },
     "ipa": "/rеkomеndatsiе/",
     "rootIds": [],
@@ -718557,7 +718557,7 @@
     "translations": {
       "ru": "тактический",
       "en": "tactical",
-      "tr": "tactical"
+      "tr": "taktiksel"
     },
     "ipa": "/taktitʃеskɐ/",
     "rootIds": [],
@@ -719413,7 +719413,7 @@
     "translations": {
       "ru": "тракт",
       "en": "tract",
-      "tr": "tract"
+      "tr": "anayol, şose"
     },
     "ipa": "/trakt/",
     "rootIds": [],
@@ -720048,7 +720048,7 @@
     "translations": {
       "ru": "отвлечённый",
       "en": "abstract",
-      "tr": "abstract"
+      "tr": "netleşmiş, açıklığa kavuşmuş"
     },
     "ipa": "/wbzǝxwawɐ/",
     "rootIds": [],
@@ -720347,7 +720347,7 @@
     "translations": {
       "ru": "авантюра",
       "en": "adventure, venture, escapade, gamble, hazardous activity.",
-      "tr": "adventure, venture, escapade, gamble, hazardous activity."
+      "tr": "macera, serüven"
     },
     "ipa": "/avantюrɐ/",
     "rootIds": [],
@@ -722733,7 +722733,7 @@
     "translations": {
       "ru": "включение",
       "en": "act. admission, reception; inclusion",
-      "tr": "act. admission, reception; inclusion"
+      "tr": "dahil etme, katma"
     },
     "ipa": "/xɐʁǝħɐnǝʁɐ/",
     "rootIds": [],
@@ -726329,7 +726329,7 @@
     "translations": {
       "ru": "компактный",
       "en": "compact",
-      "tr": "compact"
+      "tr": "sıkı, derli toplu, kompakt"
     },
     "ipa": "/zɐkʷʼɐtsʼǝɬw/",
     "rootIds": [],
@@ -726815,7 +726815,7 @@
     "translations": {
       "ru": "разоблачение",
       "en": "act. exposure, unmasking.",
-      "tr": "act. exposure, unmasking."
+      "tr": "açığa çıkarma, ifşa etme"
     },
     "ipa": "/qɐwmǝsǝnǝʁɐ/",
     "rootIds": [],
@@ -727646,7 +727646,7 @@
     "translations": {
       "ru": "угнетение",
       "en": "act. oppression",
-      "tr": "act. oppression"
+      "tr": "baskı yapma, zulmetme"
     },
     "ipa": "/еgʷxǝnǝʁɐ/",
     "rootIds": [],
@@ -728804,7 +728804,7 @@
     "translations": {
       "ru": "авиазавод",
       "en": "aircraft factory/works.",
-      "tr": "aircraft factory/works."
+      "tr": "uçak fabrikası"
     },
     "ipa": "/aviazavod/",
     "rootIds": [],
@@ -731714,7 +731714,7 @@
     "translations": {
       "ru": "решённый",
       "en": "realized, carried out, put into practice, settled",
-      "tr": "realized, carried out, put into practice, settled"
+      "tr": "gerçekleştirilmiş, uygulanmış"
     },
     "ipa": "/ʁɐzɐɕʼa/",
     "rootIds": [],
@@ -733847,7 +733847,7 @@
     "translations": {
       "ru": "мена",
       "en": "act. exchange; swop",
-      "tr": "act. exchange; swop"
+      "tr": "değiştirme, takas etme"
     },
     "ipa": "/еχʷɐжǝnǝʁɐ/",
     "rootIds": [],
@@ -734031,7 +734031,7 @@
     "translations": {
       "ru": "орнамент",
       "en": "zhy embossed on the skin in the form of ornament",
-      "tr": "ornamental pattern on skin, stamping on skin"
+      "tr": "deri süsleme baskısı"
     },
     "ipa": "/ʑɐrǝkʷɐ/",
     "rootIds": [],
@@ -736647,7 +736647,7 @@
     "translations": {
       "ru": "зарождение",
       "en": "act. conception",
-      "tr": "act. conception"
+      "tr": "dölleme, gebe kalma"
     },
     "ipa": "/iridzɐnǝʁɐ/",
     "rootIds": [],
@@ -737542,7 +737542,7 @@
     "translations": {
       "ru": "киноактриса",
       "en": "film actress",
-      "tr": "film actress"
+      "tr": "sinema kadın oyuncusu"
     },
     "ipa": "/kinoaktrisɐ/",
     "rootIds": [],
@@ -737556,7 +737556,7 @@
     "translations": {
       "ru": "киноактёр",
       "en": "film actor",
-      "tr": "film actor"
+      "tr": "sinema erkek oyuncusu"
     },
     "ipa": "/kinoaktёr/",
     "rootIds": [],
@@ -738186,7 +738186,7 @@
     "translations": {
       "ru": "котик",
       "en": "1. zool. fur-seal;\n2.  sealskin, seal",
-      "tr": "1. zool. fur-seal;\n2.  sealskin, seal"
+      "tr": "deniz ayısı kürkü"
     },
     "ipa": "/kotik/",
     "rootIds": [],
@@ -738521,7 +738521,7 @@
     "translations": {
       "ru": "скандалы",
       "en": "act. brawl(ing).",
-      "tr": "act. brawl(ing)."
+      "tr": "kavga etme, gürültü çıkarma"
     },
     "ipa": "/qajʁɐnǝʁɐ/",
     "rootIds": [],
@@ -738777,7 +738777,7 @@
     "translations": {
       "ru": "кипение",
       "en": "act. boiling, seething.",
-      "tr": "act. boiling, seething."
+      "tr": "kaynama, coşma"
     },
     "ipa": "/qiqʷɐɬǝkʼǝnǝʁɐ/",
     "rootIds": [],
@@ -739793,7 +739793,7 @@
     "translations": {
       "ru": "вырывание",
       "en": "act. pulling/tearing out.",
-      "tr": "act. pulling/tearing out."
+      "tr": "sökme, koparıp çıkarma"
     },
     "ipa": "/qǝxɐtʃǝnǝʁɐ/",
     "rootIds": [],
@@ -740269,7 +740269,7 @@
     "translations": {
       "ru": "оживление",
       "en": "act. revival, rebirth, renascence; reanimation, reviving.",
-      "tr": "act. revival, rebirth, renascence; reanimation, reviving."
+      "tr": "yeniden canlanma, diriliş"
     },
     "ipa": "/qɐpsɐwжǝnǝʁɐ/",
     "rootIds": [],
@@ -740490,7 +740490,7 @@
     "translations": {
       "ru": "дойка",
       "en": "act. milking.",
-      "tr": "act. milking."
+      "tr": "sağma eylemi"
     },
     "ipa": "/qɐʃǝnǝʁɐ/",
     "rootIds": [],
@@ -741502,7 +741502,7 @@
     "translations": {
       "ru": "мистификация",
       "en": "mystification; practical joke; hoax; leg-pull.",
-      "tr": "mystification; practical joke; hoax; leg-pull."
+      "tr": "yanıltmaca, aldatmaca"
     },
     "ipa": "/mistifikatsiе/",
     "rootIds": [],
@@ -741843,7 +741843,7 @@
     "translations": {
       "ru": "небезынтересный",
       "en": "interesting, striking, attractive, not uninteresting.",
-      "tr": "interesting, striking, attractive, not uninteresting."
+      "tr": "ilgi çekici, kayda değer"
     },
     "ipa": "/mǝʁɐɕʼɐʁʷɐnǝnʃɐ/",
     "rootIds": [],
@@ -744191,7 +744191,7 @@
     "translations": {
       "ru": "мягкотелый",
       "en": "flabby, having a soft body.",
-      "tr": "flabby, having a soft body."
+      "tr": "gevşek vücutlu"
     },
     "ipa": "/pqǝɕabɐ/",
     "rootIds": [],
@@ -746140,7 +746140,7 @@
     "translations": {
       "ru": "нюх",
       "en": "act. smelling, smell.",
-      "tr": "act. smelling, smell."
+      "tr": "koklama, koku alma"
     },
     "ipa": "/pɐmɐnǝʁɐ/",
     "rootIds": [],
@@ -746181,7 +746181,7 @@
     "translations": {
       "ru": "пререкание",
       "en": "act. excusing oneself; argument, wrangle, altercation.",
-      "tr": "act. excusing oneself; argument, wrangle, altercation."
+      "tr": "itiraz etme, mazeret sunma"
     },
     "ipa": "/pɐpsɐɬɐnǝʁɐ/",
     "rootIds": [],
@@ -746457,7 +746457,7 @@
     "translations": {
       "ru": "реакционный",
       "en": "reactionary",
-      "tr": "reactionary"
+      "tr": "gerici, reaksiyoner"
     },
     "ipa": "/rеaktsionnɐ/",
     "rootIds": [],
@@ -747517,7 +747517,7 @@
     "translations": {
       "ru": "копка",
       "en": "act. digging",
-      "tr": "act. digging"
+      "tr": "kazma eylemi"
     },
     "ipa": "/tʼɐnǝʁɐ/",
     "rootIds": [],
@@ -747693,7 +747693,7 @@
     "translations": {
       "ru": "расходование",
       "en": "act. expenditure",
-      "tr": "act. expenditure"
+      "tr": "masraf etme, harcama"
     },
     "ipa": "/tеʁɐkʷʼɐdɐnǝʁɐ/",
     "rootIds": [],
@@ -747945,7 +747945,7 @@
     "translations": {
       "ru": "рыдание",
       "en": "act. mourning, bemoaning, sobbing",
-      "tr": "act. mourning, bemoaning, sobbing"
+      "tr": "ağıt yakma, yas tutma"
     },
     "ipa": "/tеpǝħɐnǝʁɐ/",
     "rootIds": [],
@@ -748733,7 +748733,7 @@
     "translations": {
       "ru": "устремление",
       "en": "act. directing, turning",
-      "tr": "act. directing, turning"
+      "tr": "yönlendirme, doğrultma"
     },
     "ipa": "/wnɐtʼǝʁɐ/",
     "rootIds": [],
@@ -748835,7 +748835,7 @@
     "translations": {
       "ru": "условность",
       "en": "1. conditional character;\n2. convention, conventionality",
-      "tr": "1. conditional character;\n2. convention, conventionality"
+      "tr": "şartlılık, koşulluluk"
     },
     "ipa": "/wslovnaʁɐ/",
     "rootIds": [],
@@ -748936,7 +748936,7 @@
     "translations": {
       "ru": "размол",
       "en": "act. pulverization; grinding, milling",
-      "tr": "act. pulverization; grinding, milling"
+      "tr": "öğütme, ufalama"
     },
     "ipa": "/wɕɐbǝnǝʁɐ/",
     "rootIds": [],
@@ -749075,7 +749075,7 @@
     "translations": {
       "ru": "фабзавком",
       "en": "factory (trade union) committee",
-      "tr": "factory (trade union) committee"
+      "tr": "fabrika sendika komitesi"
     },
     "ipa": "/fabzavkom/",
     "rootIds": [],
@@ -749697,7 +749697,7 @@
     "translations": {
       "ru": "формулировка",
       "en": "1. act. formulating, formulation;\n2. formula, wording",
-      "tr": "1. act. formulating, formulation;\n2. formula, wording"
+      "tr": "formüle etme, ifade biçimi"
     },
     "ipa": "/formwlirovkɐ/",
     "rootIds": [],
@@ -751066,7 +751066,7 @@
     "translations": {
       "ru": "вынужденно",
       "en": "act. coercing, forcing, obliging",
-      "tr": "act. coercing, forcing, obliging"
+      "tr": "zorlama, mecbur etme"
     },
     "ipa": "/xɐʁɐzǝħǝnǝʁɐ/",
     "rootIds": [],
@@ -751256,7 +751256,7 @@
     "translations": {
       "ru": "циркач",
       "en": "circus actor/artiste, acrobat",
-      "tr": "circus actor/artiste, acrobat"
+      "tr": "sirk akrobatı"
     },
     "ipa": "/tsirkatʃ/",
     "rootIds": [],
@@ -753237,7 +753237,7 @@
     "translations": {
       "ru": "оберегание",
       "en": "act protecting, protection",
-      "tr": "act protecting, protection"
+      "tr": "muhafaza etme, koruma"
     },
     "ipa": "/ɕǝχʷmɐnǝʁɐ/",
     "rootIds": [],
@@ -753293,7 +753293,7 @@
     "translations": {
       "ru": "охотничий промысел",
       "en": "act hunting, game-shooting",
-      "tr": "act hunting, game-shooting"
+      "tr": "avcılık, avlanma"
     },
     "ipa": "/ɕɐkʷʼɐnǝʁɐ/",
     "rootIds": [],
