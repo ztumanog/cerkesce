@@ -15105,7 +15105,7 @@
     },
     "isLemma": true,
     "translations": {
-      "tr": "genislik"
+      "tr": "komşu, yan yana olan"
     },
     "subConceptId": "COMPANION",
     "taxonomyFamily": "Toplum & İlişki",
@@ -212730,7 +212730,7 @@
     "ipaSource": "root-derived",
     "ipa": "/blɐkʼǝʁɐ/",
     "translations": {
-      "tr": "ABIR"
+      "tr": "geçmiş, mazi"
     }
   },
   {
@@ -249144,7 +249144,10 @@
     },
     "notes": "Corpus v1.0 batch-2 (freq: 19, lang: kbd, source: none)",
     "isLemma": false,
-    "ipa": "/aːtabjiji/"
+    "ipa": "/aːtabjiji/",
+    "translations": {
+      "tr": "Atabiy (özel isim)"
+    }
   },
   {
     "id": "L-CORPUS2-05506",
@@ -391758,7 +391761,7 @@
     "notes": "Soyut kavram (Abstract concept)",
     "isLemma": true,
     "translations": {
-      "tr": "Kötülük"
+      "tr": "kötülük, fenalık"
     },
     "rootIds": [
       "R-SCHE"
@@ -875373,7 +875376,7 @@
   {
     "form": "асыгъу",
     "translations": {
-      "tr": "sabırsızlık"
+      "tr": "sabırsızlık, telaş"
     },
     "pos": "UNKNOWN",
     "notes": "[MANUEL] 200 kelimelik liste"
@@ -875397,7 +875400,7 @@
   {
     "form": "аушъын",
     "translations": {
-      "tr": "değiştirmek"
+      "tr": "değiştirmek, takas etmek"
     },
     "pos": "UNKNOWN",
     "notes": "[MANUEL] 200 kelimelik liste"
@@ -875485,7 +875488,7 @@
   {
     "form": "бэлагъэ",
     "translations": {
-      "tr": "tembellik"
+      "tr": "tembellik, uyuşukluk"
     },
     "pos": "UNKNOWN",
     "notes": "[MANUEL] 200 liste kalan"
@@ -875637,7 +875640,7 @@
   {
     "form": "бжэгу",
     "translations": {
-      "tr": "avlu"
+      "tr": "kapı önü, eşik"
     },
     "pos": "UNKNOWN",
     "notes": "[MANUEL] Domanic PDF"
@@ -876313,5 +876316,189 @@
     },
     "pos": "UNKNOWN",
     "notes": "[MANUEL] Dogu kok ekleme"
+  },
+  {
+    "form": "адэнапӏас",
+    "translations": {
+      "tr": "baba ocağı"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "анэ пщыпхъ",
+    "translations": {
+      "tr": "kaynana"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "анэнапӏас",
+    "translations": {
+      "tr": "ana ocağı"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "анэшӏ",
+    "translations": {
+      "tr": "iyi ana"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "атакъэ",
+    "translations": {
+      "tr": "horoz"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "атӏахъу",
+    "translations": {
+      "tr": "mısır koçanı"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "ашхы",
+    "translations": {
+      "tr": "yemek"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "ашъхьа",
+    "translations": {
+      "tr": "üzerinde, başucunda"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "ашӏагъэ",
+    "translations": {
+      "tr": "yaptıkları"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "бампӏэ",
+    "translations": {
+      "tr": "bataklık, alçak nemli yer"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "бжэщхьэӏу",
+    "translations": {
+      "tr": "kapı başı, eşik üstü"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "бжэӏупэ",
+    "translations": {
+      "tr": "kapı ağzı, giriş"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "бзащӏэ",
+    "translations": {
+      "tr": "dil bilen, tercüman, casus"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "бзащӏэпс",
+    "translations": {
+      "tr": "casusluk"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "бзуущӏэ",
+    "translations": {
+      "tr": "kuşçuluk"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "бзэджашӏэ",
+    "translations": {
+      "tr": "kötülük yapan, hain"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "блэнэпцӏ",
+    "translations": {
+      "tr": "yılan dili (bitki)"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "бырджы",
+    "translations": {
+      "tr": "burç, kale kulesi"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "бэмащӏэ",
+    "translations": {
+      "tr": "oldukça az, pek az"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "бэчы",
+    "translations": {
+      "tr": "kırbaç, kamçı"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "вакъэдэдӏ",
+    "translations": {
+      "tr": "ayakkabıcı, kunduracı"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "гу щифэ",
+    "translations": {
+      "tr": "gönülden isteyerek"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "гуауэ зиӏэ",
+    "translations": {
+      "tr": "derdi olan, kederli"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
   }
 ]
