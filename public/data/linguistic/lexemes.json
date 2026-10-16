@@ -14717,7 +14717,7 @@
     },
     "isLemma": true,
     "translations": {
-      "tr": "uvey baba"
+      "tr": "baba ocağı"
     },
     "subConceptId": "STEPFATHER",
     "taxonomyFamily": "Aile & Akrabalık",
@@ -227906,7 +227906,10 @@
     },
     "conceptId": "EYEBROW",
     "ipa": "/'nɑ:bdzɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "Abzeh (Çerkes boyu)"
+    }
   },
   {
     "id": "L-CORPUS2-03695",
@@ -876174,5 +876177,141 @@
     },
     "pos": "UNKNOWN",
     "notes": "[PDF] Abaze + Teshu + Huvaj (ev+kalp)"
+  },
+  {
+    "form": "абджы",
+    "translations": {
+      "tr": "şişe, cam eşya"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok ekleme"
+  },
+  {
+    "form": "абдзэ",
+    "translations": {
+      "tr": "Abzeh lehçesi"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok ekleme"
+  },
+  {
+    "form": "абинэ",
+    "translations": {
+      "tr": "sığınak, barınak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok ekleme"
+  },
+  {
+    "form": "агурыгъаӏ",
+    "translations": {
+      "tr": "anlayışlı, idrak eden"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok ekleme"
+  },
+  {
+    "form": "агъэзэжьы",
+    "translations": {
+      "tr": "geri döndürmek"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok ekleme"
+  },
+  {
+    "form": "агъэфедэ",
+    "translations": {
+      "tr": "faydalanmak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok ekleme"
+  },
+  {
+    "form": "агъэхьазыры",
+    "translations": {
+      "tr": "hazırlamak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok ekleme"
+  },
+  {
+    "form": "агъэшӏагъо",
+    "translations": {
+      "tr": "harika, şaşırtıcı"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok ekleme"
+  },
+  {
+    "form": "агъэшӏэгъуа",
+    "translations": {
+      "tr": "hayret uyandırmak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok ekleme"
+  },
+  {
+    "form": "ада",
+    "translations": {
+      "tr": "babalık"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok ekleme"
+  },
+  {
+    "form": "адрыщӏы",
+    "translations": {
+      "tr": "öbür taraf, karşı taraf"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok ekleme"
+  },
+  {
+    "form": "адыгэ бжьыных",
+    "translations": {
+      "tr": "Çerkes sarımsağı"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok ekleme"
+  },
+  {
+    "form": "адыгэшхы",
+    "translations": {
+      "tr": "Çerkes mutfağı"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok ekleme"
+  },
+  {
+    "form": "ажалы",
+    "translations": {
+      "tr": "ecel, ölüm vakti"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok ekleme"
+  },
+  {
+    "form": "акъылшӏэ",
+    "translations": {
+      "tr": "bilgelik, akıl ilmi"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok ekleme"
+  },
+  {
+    "form": "акъылы",
+    "translations": {
+      "tr": "akıllılık, zeka"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok ekleme"
+  },
+  {
+    "form": "акъылышӏуа",
+    "translations": {
+      "tr": "akıllılık, hikmet"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok ekleme"
   }
 ]
