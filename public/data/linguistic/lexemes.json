@@ -106,7 +106,7 @@
     ],
     "isLemma": true,
     "translations": {
-      "tr": "akilli",
+      "tr": "akıllı",
       "en": "clever, intelligent, smart, brainy, bright, quick, reasonable, prudent",
       "ru": "умный, рассудительный, смышлёный",
       "ar": "ذكي"
@@ -353,7 +353,7 @@
     },
     "isLemma": true,
     "translations": {
-      "tr": "ofke"
+      "tr": "öfke"
     },
     "subConceptId": "EMOTION",
     "taxonomyFamily": "Duygu & Zihin",
@@ -410,7 +410,7 @@
     ],
     "isLemma": true,
     "translations": {
-      "tr": "dusunce",
+      "tr": "düşünce",
       "en": "thought, idea",
       "ru": "мысль, дума",
       "ar": "اقتراح"
@@ -646,7 +646,7 @@
     "translations": {
       "ru": "люлька, колыбель",
       "en": "cradle",
-      "tr": "besik"
+      "tr": "beşik"
     },
     "subConceptId": "CRADLE",
     "taxonomyFamily": "Ev & Eşya",
@@ -947,7 +947,7 @@
     ],
     "isLemma": true,
     "translations": {
-      "tr": "ayak adimi",
+      "tr": "ayak adımı",
       "en": "step, pace, stride",
       "ru": "шаг",
       "ar": "خطوة"
@@ -1188,7 +1188,7 @@
     "isLemma": true,
     "translations": {
       "ru": "сделанный руками человека",
-      "tr": "el yapimi",
+      "tr": "el yapımı",
       "en": "handmade",
       "ar": "اصطناعي"
     },
@@ -1335,7 +1335,7 @@
     "translations": {
       "ru": "спутник жизни",
       "en": "life partner",
-      "tr": "hayat arkadasi"
+      "tr": "hayat arkadaşı"
     },
     "subConceptId": "LIFE_PARTNER",
     "taxonomyFamily": "Ruh & Can",
@@ -1384,7 +1384,7 @@
     "translations": {
       "ru": "хозяйка дома",
       "en": "housewife",
-      "tr": "ev hanimi",
+      "tr": "ev hanımı",
       "ar": "ربّة منزل"
     }
   },
@@ -1622,7 +1622,7 @@
     },
     "isLemma": true,
     "translations": {
-      "tr": "burun kemigi",
+      "tr": "burun kemiği",
       "en": "nasal septum",
       "ru": "носовая перегородка"
     },
@@ -1750,7 +1750,7 @@
     ],
     "isLemma": true,
     "translations": {
-      "tr": "TAKIRTI",
+      "tr": "takırtı",
       "en": "leading, advanced, the most important, basic",
       "ru": "передовой, самый главный, основной",
       "ar": "مُقدم، رئيس، قائد، إمام"
@@ -1799,7 +1799,7 @@
     "translations": {
       "ru": "покрывало",
       "en": "bed cover",
-      "tr": "yatak ortusu"
+      "tr": "yatak örtüsü"
     },
     "examples": [
       "*ПӀэтепхъуэ дахэ.",
@@ -1836,7 +1836,7 @@
     "translations": {
       "ru": "столовая",
       "en": "dining room",
-      "tr": "yemek odasi",
+      "tr": "yemek odası",
       "ar": "مقهى"
     },
     "rootIds": [
@@ -728396,7 +728396,7 @@
     "partOfSpeech": "noun",
     "conceptId": "VUCUT",
     "translations": {
-      "tr": "Saç",
+      "tr": "baş kılı",
       "en": "Hair",
       "ru": "Волосы",
       "ar": "شعر"
@@ -735538,7 +735538,7 @@
     "form": "ЩӀы",
     "partOfSpeech": "noun",
     "translations": {
-      "tr": "Toprak, kış",
+      "tr": "toprak",
       "en": "Soil",
       "ru": "Почва",
       "ar": "أرض"
