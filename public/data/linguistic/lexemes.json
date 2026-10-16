@@ -7492,7 +7492,7 @@
     "translations": {
       "en": "footprint, track, trace, mark in life, legacy",
       "ru": "след, след в жизни",
-      "tr": "İZ",
+      "tr": "ayak izi, iz, takip yolu",
       "ar": "أثر"
     },
     "subConceptId": "FOOTPRINT",
@@ -12480,7 +12480,7 @@
     "translations": {
       "en": "ten (10)",
       "ru": "десять (10)",
-      "tr": "on"
+      "tr": "on (10)"
     },
     "dictionaryEvidence": [
       "sukunov-1998"
@@ -13145,7 +13145,7 @@
     "translations": {
       "en": "moon, month",
       "ru": "месяц, луна, месяц",
-      "tr": "ay"
+      "tr": "ay (takvim ve gök cismi)"
     },
     "dictionaryEvidence": [
       "sukunov-1998"
@@ -23290,7 +23290,7 @@
     "translations": {
       "en": "small, little, minor, insignificant",
       "ru": "малый, незначительный",
-      "tr": "az",
+      "tr": "az, azıcık",
       "ar": "بضع"
     },
     "conceptId": "LOVE"
@@ -28990,7 +28990,7 @@
     "translations": {
       "en": "grass, plant",
       "ru": "трава",
-      "tr": "ot",
+      "tr": "ot, çim, bitki",
       "ar": "عشب"
     },
     "rootIds": [
@@ -34046,7 +34046,7 @@
     "translations": {
       "en": "three (3)",
       "ru": "три (3)",
-      "tr": "uç"
+      "tr": "üç (3)"
     },
     "dictionaryEvidence": [
       "sukunov-1998"
@@ -35134,7 +35134,7 @@
     "translations": {
       "ru": "это Мыр тхылъ дэгъу <div style='",
       "en": "this, these",
-      "tr": "BUNSUZ"
+      "tr": "bu, işte bu"
     },
     "rootIds": [
       "R-MYR"
@@ -44066,7 +44066,7 @@
     "translations": {
       "en": "meaningless, senseless",
       "ru": "бесполезный, бессмысленный",
-      "tr": "az",
+      "tr": "anlamsız, önemsiz",
       "ar": "طفيف"
     },
     "conceptId": "KÜÇÜK"
@@ -55943,7 +55943,7 @@
     "ipa": "/jɐpɐ're:j/",
     "ipaSource": "root-derived",
     "translations": {
-      "tr": "EN"
+      "tr": "en çok, özellikle"
     }
   },
   {
@@ -56263,7 +56263,7 @@
     "translations": {
       "ru": "мука / Гъавэ хьэжа",
       "en": "flour",
-      "tr": "UN",
+      "tr": "un, öğütülmüş tahıl",
       "ar": "طحين"
     },
     "subConceptId": "BAKING_INGREDIENT",
@@ -78986,7 +78986,7 @@
     "translations": {
       "en": "",
       "ru": "",
-      "tr": "dikkat, ilgi",
+      "tr": "götürmek, taşımak",
       "trSource": "en->tr koprusu (orta)"
     }
   },
@@ -102483,7 +102483,7 @@
     "translations": {
       "ru": "инициатива",
       "en": "intiative, undertaking",
-      "tr": "iş",
+      "tr": "ticaret, iş, çaba",
       "ar": "عمل"
     },
     "subConceptId": "ACTION_INITIATIVE",
@@ -126081,7 +126081,7 @@
     "translations": {
       "ru": "ардинская порода лошадей / А",
       "en": "the Kabardian (Circassian) breed of horses (both for riding and as a pack-horse)",
-      "tr": "At"
+      "tr": "Çerkes atı"
     },
     "subConceptId": "KABARDIN_HORSE",
     "rootForm": "адыгэш",
@@ -154389,7 +154389,7 @@
     "translations": {
       "ru": "вдох и выдох / Зэ жьы жьэдэшэгъуэрэ къыжьэдегъэхужыгъуэрэ",
       "en": "one breath; inhale and exhale once; a single breath in and out",
-      "tr": "UF"
+      "tr": "nefes alma zamanı"
     },
     "rootIds": [
       "R-BEU"
@@ -157717,7 +157717,7 @@
     "translations": {
       "en": "weed",
       "ru": "сорняк, сорная трава",
-      "tr": "ot",
+      "tr": "yaban otu, kuru ot",
       "ar": "عُشب ضار"
     },
     "examples": [
@@ -157917,7 +157917,7 @@
     "ipaSource": "root-derived",
     "translations": {
       "ru": "СОМИЩ. Три рубля. Сомищым сомитӀу хэбгъахъомэ – сомитф мэхъу.",
-      "tr": "Üç"
+      "tr": "üç ruble, üç som"
     }
   },
   {
@@ -215421,7 +215421,7 @@
     "ipaSource": "root-derived",
     "ipa": "/nɐkʼɐw/",
     "translations": {
-      "tr": "AÇ"
+      "tr": "aç karnına, boş halde"
     }
   },
   {
@@ -233689,7 +233689,7 @@
     "conceptId": "EYEBROW",
     "ipa": "/dzɐɮ/",
     "translations": {
-      "tr": "ER",
+      "tr": "savaşçı, asker",
       "ar": "جندي"
     }
   },
@@ -244546,7 +244546,7 @@
     "translations": {
       "en": "arrow (for a bow)",
       "ru": "стрела (для лука)",
-      "tr": "OK"
+      "tr": "ok (ok ve yay oku)"
     },
     "literalMeaningSource": "translations.tr (yuksek)"
   },
@@ -246936,7 +246936,7 @@
     "translations": {
       "ru": "устар. золотник <div s",
       "en": "zolotnik (old Russian unit of measure equal to, 26 g), insignificant, minuscule in size",
-      "tr": "az",
+      "tr": "miskal, dirhem",
       "trSource": "en->tr koprusu (orta)",
       "ar": "مثقال/ معيار للذهب"
     }
@@ -257094,7 +257094,7 @@
     "isLemma": true,
     "translations": {
       "ru": "хуэгъэгъуныгъэ Type: noun Definitions: 1",
-      "tr": "AF"
+      "tr": "bağışlama, affetme"
     },
     "rootIds": [
       "R-SHE"
@@ -258697,7 +258697,7 @@
     "isLemma": true,
     "translations": {
       "ru": "сеть Пцэжъые къызэрыхадзрэ хъыр ары Хъыты",
-      "tr": "ağ",
+      "tr": "balık ağı, ağ",
       "ar": "شبكة صيد (السمك)/ أحبولة، شرك"
     },
     "rootIds": [
@@ -260720,7 +260720,7 @@
     "translations": {
       "en": "a three-year-old colt (male baby horse)",
       "ru": "жеребёнок-трёхлеток, третьяк",
-      "tr": "AT",
+      "tr": "tay (2-3 yaşında)",
       "ar": "مهر عمره 2 – 3 سنوات، فِلُو"
     }
   },
@@ -269935,7 +269935,7 @@
     "translations": {
       "en": "at one time, in a single voice",
       "ru": "одновременно, в один голос",
-      "tr": "oy"
+      "tr": "bir solukta"
     },
     "examples": [
       "*Зыжьэу жыӀэн.",
@@ -286378,7 +286378,7 @@
     "ipa": "/'nɑ:bdzɐ/",
     "ipaSource": "root-derived",
     "translations": {
-      "tr": "ek"
+      "tr": "buğday, tahıl"
     },
     "literalMeaningSource": "translations.tr (yuksek)"
   },
@@ -329564,7 +329564,7 @@
     "translations": {
       "en": "get or fall into sb's hands, be caught by sb.",
       "ru": "попасть в чьи-л. руки",
-      "tr": "el"
+      "tr": "el uzatmak, dokunmak"
     }
   },
   {
@@ -329815,7 +329815,7 @@
     "translations": {
       "en": "die in sb's arms",
       "ru": "умереть на руках у кого-л.",
-      "tr": "el"
+      "tr": "elinde can vermek"
     }
   },
   {
@@ -329970,7 +329970,7 @@
     "translations": {
       "en": "become bored or sick of sb.",
       "ru": "надоесть, опостылеть кому-л.",
-      "tr": "el"
+      "tr": "elinden bıkmak, usanmak"
     }
   },
   {
@@ -330096,7 +330096,7 @@
     "translations": {
       "en": "take sb or sth from sb's hand, deprive sb of sth.",
       "ru": "взять кого-что-л. у кого-л. из рук, лишить кого-л. чего-л.",
-      "tr": "el"
+      "tr": "elinden çekip almak"
     }
   },
   {
@@ -331651,7 +331651,7 @@
     "translations": {
       "en": "a specially trained horse ridden by a lassoer to rope horses.",
       "ru": "специально тренированная лошадь арканщика для ловли лошадей",
-      "tr": "At"
+      "tr": "kement atı, kementçi atlı"
     },
     "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a9/%D0%90291%D0%B0%D1%80%D0%BA%D1%8A%D1%8D%D0%BD%D0%BA%D3%8F%D1%8D%D1%88.ogg"
   },
@@ -349767,7 +349767,7 @@
     "translations": {
       "en": "rosy, ruddy, with red sides (about fruit)",
       "ru": "румяный, с красным бочком (о плодах)",
-      "tr": "AL"
+      "tr": "kızıl yamaç, al yamaç"
     }
   },
   {
@@ -360383,7 +360383,7 @@
       "trVerified": false,
       "en": "unbroken (for example, a horse), ill-mannered (about a man)",
       "ru": "необъезженный (напр. о коне), невоспитанный (о человеке)",
-      "tr": "AT"
+      "tr": "amansız, çetin"
     },
     "ipa": "/je:mǝ'ɮǝdᶎ/",
     "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/9/99/%D0%950498%D0%B5%D0%BC%D1%8B%D0%BB%D1%8B%D0%B4%D0%B6.ogg"
@@ -420898,7 +420898,7 @@
     "translations": {
       "en": "go out from swh lazily, without hurrying (for example, from a room)",
       "ru": "лениво, не торопясь выйти откуда-л. (напр. из помещения)",
-      "tr": "an"
+      "tr": "altından fırlamak"
     }
   },
   {
@@ -429491,7 +429491,7 @@
     "translations": {
       "en": "footprint, track, trace",
       "ru": "отпечаток ноги, след",
-      "tr": "İZ",
+      "tr": "ayak izi, basılan yer",
       "trSource": "en->tr koprusu (orta)"
     }
   },
@@ -431151,7 +431151,7 @@
     "translations": {
       "en": "a horse with a short tuft of hair on its forelock.",
       "ru": "лошадь с короткими волосами на щётке",
-      "tr": "At"
+      "tr": "tüylü topuklu at"
     }
   },
   {
@@ -439960,7 +439960,7 @@
     "translations": {
       "en": "with red, ruddy cheeks || red-cheeked",
       "ru": "красные, румяные щёки || краснощёкий",
-      "tr": "AL"
+      "tr": "al yanaklı, pembe yüzlü"
     }
   },
   {
@@ -442312,7 +442312,7 @@
     "translations": {
       "en": "spouse, partner",
       "ru": "супруг; супруга",
-      "tr": "eş"
+      "tr": "yastık, baş yastığı"
     }
   },
   {
@@ -517230,7 +517230,7 @@
     "conceptId": "KAVRAM_НЕМНОГО",
     "translations": {
       "ru": "немного",
-      "tr": "evrim",
+      "tr": "biraz, azıcık",
       "ar": "قليل، يسير",
       "en": "i insignificant, small"
     },
@@ -521887,7 +521887,7 @@
     "conceptId": "KAVRAM_ВЫМОРОЧНОЕ ИМУЩЕСТВО",
     "translations": {
       "ru": "выморочное имущество",
-      "tr": "miras",
+      "tr": "miras, yadigar",
       "ar": "تراث",
       "en": "inheritance"
     },
@@ -522567,7 +522567,7 @@
     "conceptId": "KAVRAM_МЕЛКИЙ",
     "translations": {
       "ru": "мелкий",
-      "tr": "Küçük; ufak",
+      "tr": "ufak tefek şeyler",
       "en": "i small, small in size, size"
     },
     "ipa": "/tsʼǝkʷʼfɐkʷʼ/",
@@ -526624,7 +526624,7 @@
     "conceptId": "KAVRAM_НЕЗНАЧИТЕЛЬНЫЙ",
     "translations": {
       "ru": "незначительный",
-      "tr": "AZICIK",
+      "tr": "azıcık, minik miktar",
       "en": "i small, too small, insignificant"
     },
     "ipa": "/tʼɐkʷʼnitʼɐ/",
@@ -681586,7 +681586,7 @@
     "translations": {
       "ru": "втрое",
       "en": "хуэдищкӀэ Type: adjective Definitions: 1. threefold",
-      "tr": "Üç"
+      "tr": "üç katı, üç misli"
     },
     "ipa": "/xwɐdiɕkʼɐ/",
     "rootIds": [],
@@ -765346,5 +765346,29 @@
     },
     "pos": "UNKNOWN",
     "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "икӀыб",
+    "translations": {
+      "tr": "arkası, sırtı, ardı"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL]"
+  },
+  {
+    "form": "жейн",
+    "translations": {
+      "tr": "uyumak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL]"
+  },
+  {
+    "form": "абыр",
+    "translations": {
+      "tr": "o, şu (işaret sözü)"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL]"
   }
 ]
