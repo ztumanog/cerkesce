@@ -185128,7 +185128,7 @@
     "translations": {
       "en": "being, existence, presence",
       "ru": "бытие, существование, пребывание, наличие",
-      "tr": "ÖMÜR"
+      "tr": "hayat, varlık"
     }
   },
   {
@@ -192530,7 +192530,8 @@
     "rootForm": "гуэныхь",
     "translations": {
       "en": "sinner, wicked person, transgressor, wrongdoer",
-      "ru": "грешник, грешница"
+      "ru": "грешник, грешница",
+      "tr": "günahkâr, suç işleyen"
     },
     "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8c/%D0%93%D1%83120%D0%B3%D1%83%D1%8D%D0%BD%D1%8B%D1%85%D1%8C%D1%8B%D1%89%D3%8F%D1%8D.ogg"
   },
@@ -193638,7 +193639,10 @@
     },
     "notes": "Corpus v1.0 batch-2 (freq: 56, lang: ady, source: none)",
     "isLemma": false,
-    "ipa": "/tsjiwan/"
+    "ipa": "/tsjiwan/",
+    "translations": {
+      "tr": "Siyon (özel isim)"
+    }
   },
   {
     "id": "L-CORPUS2-01489",
@@ -194059,7 +194063,10 @@
     },
     "notes": "Corpus v1.0 batch-2 (freq: 54, lang: kbd, source: none)",
     "isLemma": false,
-    "ipa": "/xanaan/"
+    "ipa": "/xanaan/",
+    "translations": {
+      "tr": "Kenan (tarihi bölge)"
+    }
   },
   {
     "id": "L-CORPUS2-01549",
@@ -194135,7 +194142,7 @@
     "translations": {
       "ru": "Зэхуэзэныгъэ",
       "en": "meeting, gathering, session, match",
-      "tr": "",
+      "tr": "toplantı, buluşma, görüşme",
       "trSource": "en->tr koprusu (orta)"
     },
     "rootIds": [
@@ -202299,7 +202306,10 @@
     ],
     "conceptId": "ROT",
     "ipaSource": "root-derived",
-    "ipa": "/filipson/"
+    "ipa": "/filipson/",
+    "translations": {
+      "tr": "Philipson (özel isim)"
+    }
   },
   {
     "id": "L-CORPUS2-02760",
@@ -211353,7 +211363,8 @@
     "ipa": "/kʹʷɐn/",
     "translations": {
       "en": "act\n1. walking, pacing;\n2. motion run (of mechanism);\n3. ride; drive; travel",
-      "ru": "и. д. 1) ходьба, хождение 2) ход (механизма) 3) езда"
+      "ru": "и. д. 1) ходьба, хождение 2) ход (механизма) 3) езда",
+      "tr": "gidiş, yürüyüş, hareket"
     }
   },
   {
@@ -213919,7 +213930,10 @@
     },
     "conceptId": "THOUSAND",
     "ipa": "/mi:n/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "Calvin (özel isim)"
+    }
   },
   {
     "id": "L-CORPUS2-04402",
@@ -214156,7 +214170,10 @@
     },
     "notes": "Corpus v1.0 batch-2 (freq: 23, lang: kbd, source: none)",
     "isLemma": false,
-    "ipa": "/stjafaːn/"
+    "ipa": "/stjafaːn/",
+    "translations": {
+      "tr": "Stefan (özel isim)"
+    }
   },
   {
     "id": "L-CORPUS2-04428",
@@ -214664,7 +214681,10 @@
     },
     "notes": "Corpus v1.0 batch-2 (freq: 23, lang: ady, source: none)",
     "isLemma": false,
-    "ipa": "/assjan/"
+    "ipa": "/assjan/",
+    "translations": {
+      "tr": "Essen (şehir)"
+    }
   },
   {
     "id": "L-CORPUS2-04502",
@@ -215183,7 +215203,7 @@
     "translations": {
       "en": "worse than sb or sth",
       "ru": "такой, который хуже кого-чего-л.",
-      "tr": ""
+      "tr": "daha genç, küçük olan"
     }
   },
   {
@@ -215257,7 +215277,8 @@
     "conceptId": "JUSTICE",
     "translations": {
       "en": "gait, principles of operation of mechanisms, move (for example, in chess), flight (for example, of an arrow)",
-      "ru": "походка, принцип работы механизмов, ход (напр. в шахматах), полёт (напр. стрелы)"
+      "ru": "походка, принцип работы механизмов, ход (напр. в шахматах), полёт (напр. стрелы)",
+      "tr": "gidişat, yürüyüş tarzı"
     }
   },
   {
@@ -216040,7 +216061,10 @@
     },
     "notes": "Corpus v1.0 batch-2 (freq: 22, lang: ady, source: none)",
     "isLemma": false,
-    "ipa": "/kjadra/"
+    "ipa": "/kjadra/",
+    "translations": {
+      "tr": "sedir ağacı"
+    }
   },
   {
     "id": "L-CORPUS2-04760",
@@ -217731,7 +217755,10 @@
     },
     "notes": "Corpus v1.0 batch-2 (freq: 21, lang: ady, source: none)",
     "isLemma": false,
-    "ipa": "/wǝ'bɐn/"
+    "ipa": "/wǝ'bɐn/",
+    "translations": {
+      "tr": "Ruben (özel isim)"
+    }
   },
   {
     "id": "L-CORPUS2-04982",
@@ -218051,7 +218078,10 @@
     "isLemma": false,
     "conceptId": "KALMYK",
     "ipa": "/qʹɐ'ɮmǝqʹ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "Kabil (dini isim)"
+    }
   },
   {
     "id": "L-CORPUS2-05031",
@@ -218237,7 +218267,8 @@
     "conceptId": "SUITOR",
     "translations": {
       "en": "approximately, about two or three",
-      "ru": "приблизительно два-три"
+      "ru": "приблизительно два-три",
+      "tr": "birkaç, birtakım"
     }
   },
   {
@@ -219276,7 +219307,7 @@
     "translations": {
       "en": "skilled or adept at sth, knowing sth well, having a mastery of sth, well-versed",
       "ru": "искусный в чём-л., хорошо знающий что-л., хорошо владеющий чем-л.",
-      "tr": "hekim",
+      "tr": "usta, becerikli",
       "trSource": "en->tr koprusu (orta)"
     },
     "examples": [
@@ -220116,7 +220147,10 @@
       "rule": "compound"
     },
     "ipa": "/pʹqʹǝ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "Susan (özel isim)"
+    }
   },
   {
     "id": "L-CORPUS2-05318",
@@ -222512,7 +222546,10 @@
       "rule": "compound"
     },
     "conceptId": "LIFE_PARTNER",
-    "ipa": "/'tʹʂɑ:ɕʹɐ/"
+    "ipa": "/'tʹʂɑ:ɕʹɐ/",
+    "translations": {
+      "tr": "kısa boylu"
+    }
   },
   {
     "id": "L-CORPUS2-05727",
@@ -223169,7 +223206,10 @@
       "rule": "compound"
     },
     "ipa": "/me:ɮ'wɑ:n/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "Melanchthon (özel isim)"
+    }
   },
   {
     "id": "L-CORPUS2-05836",
@@ -224047,7 +224087,7 @@
     "ipa": "/mi:n/",
     "ipaSource": "root-derived",
     "translations": {
-      "tr": ""
+      "tr": "sizin dininiz"
     }
   },
   {
@@ -226597,7 +226637,8 @@
     "ipa": "/qʹɐ'ɕʹɐn/",
     "translations": {
       "en": "act. of къэщӀэн\n2.",
-      "ru": "и. д. угадывание, разгадывание; разгадка, отгадка, догадка"
+      "ru": "и. д. угадывание, разгадывание; разгадка, отгадка, догадка",
+      "tr": "bilgi, ilim, öğrenme"
     }
   },
   {
@@ -226627,7 +226668,8 @@
     "ipa": "/ʁɐ'tʹʂǝn/",
     "translations": {
       "en": "act of гъэкӀын",
-      "ru": "и. д. 1) выращивание 2) отращивание"
+      "ru": "и. д. 1) выращивание 2) отращивание",
+      "tr": "yetiştirme, büyütme"
     }
   },
   {
@@ -781204,5 +781246,509 @@
     },
     "pos": "UNKNOWN",
     "notes": "[MANUEL]"
+  },
+  {
+    "form": "щӏэрыщӏэ",
+    "translations": {
+      "tr": "yeniden, yepisyeni"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "етӏуанэ",
+    "translations": {
+      "tr": "ikinci olarak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "ирихьэлӏэ",
+    "translations": {
+      "tr": "rastlayarak, denk getirerek"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "щӏымахуэ",
+    "translations": {
+      "tr": "kış mevsimi"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "пыупщӏы",
+    "translations": {
+      "tr": "koparıp almak, kesip ayırmak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "кӏуэцӏ",
+    "translations": {
+      "tr": "iç, iç taraf"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "текӏэ",
+    "translations": {
+      "tr": "yenmek, galip gelmek"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "кӏуэды",
+    "translations": {
+      "tr": "kaybolmak, mahvolmak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "умыщы",
+    "translations": {
+      "tr": "unutma (olumsuz emir)"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "кӏуэ",
+    "translations": {
+      "tr": "gitmek"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "кӏыхь",
+    "translations": {
+      "tr": "uzun"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "пӏопэ",
+    "translations": {
+      "tr": "beşik sallamak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "амино",
+    "translations": {
+      "tr": "Aminon (terim)"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "зэпыупщӏы",
+    "translations": {
+      "tr": "kesip koparmak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "сыткӏ",
+    "translations": {
+      "tr": "her ne şekilde olursa olsun"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "хуэщӏыжы",
+    "translations": {
+      "tr": "tamir etmek, yeniden yapmak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "зэшэлӏэ",
+    "translations": {
+      "tr": "evlendirmek, eşleştirmek"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "пэщӏэувэ",
+    "translations": {
+      "tr": "karşı çıkmak, direnmek"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "пыупсыкӏы",
+    "translations": {
+      "tr": "koparıp atmak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "упӏышкӏу",
+    "translations": {
+      "tr": "çimdiklemek, yolarak koparmak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "къыпыупщӏы",
+    "translations": {
+      "tr": "koparıp almak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "зэкӏуэкӏы",
+    "translations": {
+      "tr": "uyuşmak, uyumlu olmak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "зэпырыкӏы",
+    "translations": {
+      "tr": "karşıdan karşıya geçmek"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "сегупшыса",
+    "translations": {
+      "tr": "düşünmek, kafa yormak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "птхы",
+    "translations": {
+      "tr": "yazmak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "щӏэкъузэ",
+    "translations": {
+      "tr": "araştırmak, incelemek"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "нэуфӏыцӏщхьэрыуэ",
+    "translations": {
+      "tr": "gözleri siyah örtülü"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "хуэдитӏ",
+    "translations": {
+      "tr": "iki katı"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "къэукӏы",
+    "translations": {
+      "tr": "öldürmek"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "къызэщӏэнэ",
+    "translations": {
+      "tr": "toparlanmak, hazırlanmak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "телъэщӏэ",
+    "translations": {
+      "tr": "ilave etmek, eklemek"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "кӏэрыӏулӏэ",
+    "translations": {
+      "tr": "yapışmak, takılmak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "къешыхьэкӏы",
+    "translations": {
+      "tr": "tanıtmak, ispatlamak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "хуэунэтӏы",
+    "translations": {
+      "tr": "yönelmek"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "пыкӏы",
+    "translations": {
+      "tr": "kopmak, kesilmek"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "кӏэщӏэлъхьэ",
+    "translations": {
+      "tr": "altına koymak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "ещӏэжы",
+    "translations": {
+      "tr": "hatırlamak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "ӏугъэкӏуэты",
+    "translations": {
+      "tr": "dışarı çıkarmak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "хэкӏутэ",
+    "translations": {
+      "tr": "sıçratmak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "къыдэкӏыр",
+    "translations": {
+      "tr": "dışarı çıkmakta olan"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "ӏункӏы",
+    "translations": {
+      "tr": "kilitlemek, kapatmak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "гъэкӏы",
+    "translations": {
+      "tr": "yetiştirmek, büyütmek"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "къищтэ",
+    "translations": {
+      "tr": "alıp getirmek, içeriden almak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "щыкӏы",
+    "translations": {
+      "tr": "eksilmek, yoksun kalmak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "еутӏыпщы",
+    "translations": {
+      "tr": "serbest bırakmak, çözmek"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "иубытэ",
+    "translations": {
+      "tr": "tutmak, yakalamak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "пэщӏэты",
+    "translations": {
+      "tr": "karşısında durmak, direnmek"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "ӏууэ",
+    "translations": {
+      "tr": "söylemek, ifade etmek"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "пхрыпщы",
+    "translations": {
+      "tr": "delip geçmek"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "щӏэхъукӏы",
+    "translations": {
+      "tr": "dönüşmek, haline gelmek"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "гъэнщӏы",
+    "translations": {
+      "tr": "güçlendirmek, pekiştirmek"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "аукӏы",
+    "translations": {
+      "tr": "öldürülmek, katledilmek"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "фӏэнэ",
+    "translations": {
+      "tr": "istemek, arzu etmek"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "хуащӏы",
+    "translations": {
+      "tr": "ona yapmak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "къещӏэкӏы",
+    "translations": {
+      "tr": "ortaya çıkarmak, keşfetmek"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "ехьэкӏы",
+    "translations": {
+      "tr": "içeri sokmak, ulaştırmak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "ӏуукӏэ",
+    "translations": {
+      "tr": "karşılaşmak, buluşmak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "зэхьэлӏэ",
+    "translations": {
+      "tr": "denkleşmek, uyuşmak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "гъэпскӏы",
+    "translations": {
+      "tr": "yıkamak, banyo yaptırmak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "итхъыкӏы",
+    "translations": {
+      "tr": "üzerinden silmek, kazımak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "хуищӏы",
+    "translations": {
+      "tr": "ona yapmak, hakkını vermek"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "тетӏысхьэ",
+    "translations": {
+      "tr": "üzerine oturmak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "къытекӏэ",
+    "translations": {
+      "tr": "üzerinden çıkmak, türemek"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
   }
 ]
