@@ -528,7 +528,7 @@
       "ru": "слово; речь",
       "en": "word; speech",
       "ar": "كلمة، وَعْد، قَوْل",
-      "tr": "bir söz söylememek"
+      "tr": "konuşma, kelime"
     },
     "subConceptId": "WORD",
     "taxonomyFamily": "Dil & İletişim",
@@ -7450,7 +7450,7 @@
     ],
     "isLemma": true,
     "translations": {
-      "tr": "zorluk, sikinti",
+      "tr": "zor, zahmetli",
       "en": "difficult, hard, onerous, complex, complicated (for example, about work), difficult, hard (for example, about life)",
       "ru": "трудный, тяжёлый, сложный (напр. о работе), трудный, тяжелый (напр. о жизни)",
       "ar": "مُصاب، مصيبة، مشكلة"
@@ -7676,7 +7676,7 @@
     },
     "isLemma": true,
     "translations": {
-      "tr": "sevinç, nese"
+      "tr": "sevinç, mutluluk, şenlik"
     },
     "subConceptId": "EMOTION",
     "taxonomyFamily": "Duygu & Zihin",
@@ -8204,7 +8204,7 @@
     },
     "isLemma": true,
     "translations": {
-      "tr": "kalp bagliligi"
+      "tr": "kesinti, ayrılma, kopuş"
     },
     "subConceptId": "EMOTION",
     "taxonomyFamily": "Duygu & Zihin",
@@ -14777,34 +14777,6 @@
     "ipaSource": "root-derived"
   },
   {
-    "id": "L-ANEPHYPHU",
-    "form": "анэ пщыпхъу",
-    "literalMeaning": "teyze",
-    "conceptId": "AUNT_MATERNAL",
-    "partOfSpeech": "noun",
-    "notes": "C-11.3: IPA kaynakli. [NADIR]",
-    "status": "rare",
-    "corpusFrequency": 0,
-    "rootIds": [
-      "R-PKHW",
-      "R-ANA"
-    ],
-    "wordFamilyId": "WF-PKHW",
-    "derivation": {
-      "rule": "compound",
-      "components": [
-        "пхъу",
-        "анэ"
-      ]
-    },
-    "isLemma": true,
-    "translations": {
-      "tr": "teyze"
-    },
-    "ipa": "/pʹɐ'te:pχʷɐ/",
-    "ipaSource": "root-derived"
-  },
-  {
     "id": "L-ANEKYLHXU",
     "form": "анэкъилъху",
     "literalMeaning": "oz kardes",
@@ -19423,35 +19395,6 @@
     "dictionaryEvidence": [
       "sukunov-1998"
     ]
-  },
-  {
-    "id": "L-GUPSESAN",
-    "form": "гупсэсан",
-    "literalMeaning": "?",
-    "partOfSpeech": "noun",
-    "notes": "C-11.3: IPA kaynakli. [NADIR] [EMOTION belirsiz temizlendi]",
-    "status": "rare",
-    "corpusFrequency": 0,
-    "rootIds": [
-      "R-PSA"
-    ],
-    "wordFamilyId": "WF-PSA",
-    "derivation": {
-      "rule": "compound",
-      "components": [
-        "псэ",
-        "гу"
-      ]
-    },
-    "isLemma": true,
-    "conceptId": "BELOVED",
-    "subConceptId": "EMOTION",
-    "taxonomyFamily": "Duygu & Zihin",
-    "rootForm": "гу-",
-    "ipa": "/gʷǝ'psɐ/",
-    "translations": {
-      "tr": "Derin düşünmek, tefekkür etmek"
-    }
   },
   {
     "id": "L-KHEN",
@@ -34807,7 +34750,7 @@
     },
     "isLemma": true,
     "translations": {
-      "tr": "keder, huzun"
+      "tr": "eksiklik, yoksunluk"
     },
     "subConceptId": "EMOTION",
     "taxonomyFamily": "Duygu & Zihin",
@@ -35093,31 +35036,6 @@
     "rootIds": [
       "R-GU_1"
     ]
-  },
-  {
-    "id": "L-ADAGHE",
-    "form": "адагъэ",
-    "literalMeaning": "babalik",
-    "conceptId": "FATHERHOOD",
-    "partOfSpeech": "noun",
-    "notes": "Somatik/destan kaynagi",
-    "corpusFrequency": 2,
-    "rootIds": [
-      "R-DAGHE"
-    ],
-    "wordFamilyId": "WF-DAGHE",
-    "derivation": {
-      "rule": "root",
-      "components": [
-        "дагъэ"
-      ]
-    },
-    "isLemma": true,
-    "translations": {
-      "tr": "babalik"
-    },
-    "ipa": "/'bǝdɐw/",
-    "ipaSource": "root-derived"
   },
   {
     "id": "L-DZHATE",
@@ -81408,7 +81326,7 @@
     ],
     "isLemma": true,
     "translations": {
-      "tr": "beauty",
+      "tr": "güzellik, zarafet",
       "en": "beauty, pulchritude",
       "ru": "красота",
       "ar": "جمال"
@@ -148015,7 +147933,7 @@
     "translations": {
       "ru": "религ. грешный / Гуэныхь зи куэд. ◊ <font color='s",
       "en": "sinful, wicked",
-      "tr": "kötü",
+      "tr": "günahkâr, kabahatli",
       "trSource": "en->tr koprusu (orta)"
     },
     "subConceptId": "SINNER",
@@ -189476,36 +189394,6 @@
     }
   },
   {
-    "id": "L-CORPUS2-00304",
-    "form": "цӏыфхэу",
-    "literalMeaning": "",
-    "partOfSpeech": "noun",
-    "corpusFrequency": 187,
-    "dialectVariants": {
-      "adyghe": "цӏыфхэу",
-      "kabardian": ""
-    },
-    "notes": "Corpus v1.0 batch-2 (freq: 187, lang: ady, source: none)",
-    "isLemma": false,
-    "rootIds": [
-      "R-TSYKHU"
-    ],
-    "wordFamilyId": "WF-TSYKHU",
-    "derivation": {
-      "rootIds": [
-        "R-TSYKHU"
-      ],
-      "morphemeIds": [],
-      "rule": "compound"
-    },
-    "conceptId": "MAN",
-    "ipa": "/tʹsǝ'xʷǝχʷ/",
-    "ipaSource": "root-derived",
-    "translations": {
-      "tr": "HAZIMLI"
-    }
-  },
-  {
     "id": "L-CORPUS2-00306",
     "form": "мыӏэрысэр",
     "literalMeaning": "",
@@ -189736,35 +189624,6 @@
       "tr": "kırpmak"
     },
     "literalMeaningSource": "translations.tr (yuksek)"
-  },
-  {
-    "id": "L-CORPUS2-00328",
-    "form": "иӏэкъым",
-    "literalMeaning": "",
-    "partOfSpeech": "noun",
-    "corpusFrequency": 176,
-    "dialectVariants": {
-      "adyghe": "",
-      "kabardian": "иӏэкъым"
-    },
-    "notes": "Corpus v1.0 batch-2 (freq: 176, lang: kbd, source: none)",
-    "isLemma": false,
-    "rootIds": [
-      "R-I1E"
-    ],
-    "wordFamilyId": "WF-ИӀЭ",
-    "derivation": {
-      "rootIds": [
-        "R-ИӀЭ"
-      ],
-      "morphemeIds": [],
-      "rule": "compound"
-    },
-    "ipaSource": "root-derived",
-    "ipa": "/iʔɐqǝm/",
-    "translations": {
-      "tr": "kuyu"
-    }
   },
   {
     "id": "L-CORPUS2-00333",
@@ -191477,36 +191336,6 @@
     }
   },
   {
-    "id": "L-CORPUS2-00503",
-    "form": "ащыщхэу",
-    "literalMeaning": "",
-    "partOfSpeech": "noun",
-    "corpusFrequency": 128,
-    "dialectVariants": {
-      "adyghe": "ащыщхэу",
-      "kabardian": ""
-    },
-    "notes": "Corpus v1.0 batch-2 (freq: 128, lang: ady, source: none)",
-    "isLemma": false,
-    "rootIds": [
-      "R-SHCH"
-    ],
-    "wordFamilyId": "WF-SHCH",
-    "conceptId": "POINT",
-    "derivation": {
-      "rootIds": [
-        "R-SHCH"
-      ],
-      "morphemeIds": [],
-      "rule": "compound"
-    },
-    "ipa": "/ɕǝs'ħǝn/",
-    "ipaSource": "root-derived",
-    "translations": {
-      "tr": "ADAY"
-    }
-  },
-  {
     "id": "L-CORPUS2-00511",
     "form": "зекӏуэ",
     "literalMeaning": "",
@@ -192006,35 +191835,6 @@
       "en": "manual",
       "tr": "manual",
       "ru": "ӀэкӀэ Type: adjective Definitions: 1. ручной"
-    }
-  },
-  {
-    "id": "L-CORPUS2-00548",
-    "form": "ӏофхэу",
-    "literalMeaning": "",
-    "partOfSpeech": "noun",
-    "corpusFrequency": 120,
-    "dialectVariants": {
-      "adyghe": "ӏофхэу",
-      "kabardian": ""
-    },
-    "notes": "Corpus v1.0 batch-2 (freq: 120, lang: ady, source: none)",
-    "isLemma": false,
-    "rootIds": [
-      "R-1OF"
-    ],
-    "wordFamilyId": "WF-ӀОФ",
-    "derivation": {
-      "rootIds": [
-        "R-ӀОФ"
-      ],
-      "morphemeIds": [],
-      "rule": "compound"
-    },
-    "ipaSource": "form-derived",
-    "ipa": "/ʔofxɐw/",
-    "translations": {
-      "tr": "Havan"
     }
   },
   {
@@ -192999,35 +192799,6 @@
       "en": "underneath",
       "tr": "underneath",
       "ru": "щӀагъым Type: preposition Definitions: 1. под"
-    }
-  },
-  {
-    "id": "L-CORPUS2-00640",
-    "form": "хуейкъым",
-    "literalMeaning": "",
-    "partOfSpeech": "noun",
-    "corpusFrequency": 106,
-    "dialectVariants": {
-      "adyghe": "",
-      "kabardian": "хуейкъым"
-    },
-    "notes": "Corpus v1.0 batch-2 (freq: 106, lang: kbd, source: none)",
-    "isLemma": false,
-    "rootIds": [
-      "R-SHY"
-    ],
-    "wordFamilyId": "WF-SHY",
-    "derivation": {
-      "rootIds": [
-        "R-SHY"
-      ],
-      "morphemeIds": [],
-      "rule": "compound"
-    },
-    "conceptId": "CRADLE",
-    "ipa": "/xʷe:j/",
-    "translations": {
-      "tr": "Akağaç türü"
     }
   },
   {
@@ -197734,38 +197505,6 @@
     "ipaSource": "root-derived"
   },
   {
-    "id": "L-CORPUS2-01072",
-    "form": "гущыӏэхэу",
-    "literalMeaning": "",
-    "partOfSpeech": "noun",
-    "corpusFrequency": 72,
-    "dialectVariants": {
-      "adyghe": "гущыӏэхэу",
-      "kabardian": ""
-    },
-    "notes": "Corpus v1.0 batch-2 (freq: 72, lang: ady, source: none)",
-    "rootIds": [
-      "R-GUSHCH"
-    ],
-    "wordFamilyId": "WF-GU",
-    "derivation": {
-      "rule": "root",
-      "components": [
-        "гу"
-      ]
-    },
-    "isLemma": false,
-    "conceptId": "LANGUAGE",
-    "subConceptId": "WORDS",
-    "taxonomyFamily": "Dil & İletişim",
-    "rootForm": "гущыӏ",
-    "ipa": "/gʷǝɕʹɐ/",
-    "ipaSource": "root-derived",
-    "translations": {
-      "tr": ""
-    }
-  },
-  {
     "id": "L-CORPUS2-01075",
     "form": "кӏыхьэ",
     "literalMeaning": "",
@@ -198218,27 +197957,6 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
-  },
-  {
-    "id": "L-CORPUS2-01119",
-    "form": "щыткъым",
-    "literalMeaning": "",
-    "partOfSpeech": "noun",
-    "corpusFrequency": 69,
-    "dialectVariants": {
-      "adyghe": "",
-      "kabardian": "щыткъым"
-    },
-    "notes": "Corpus v1.0 batch-2 (freq: 69, lang: kbd, source: none)",
-    "isLemma": false,
-    "rootIds": [
-      "R-SHCH"
-    ],
-    "conceptId": "COMPASSION",
-    "ipa": "/ɕǝtqǝm/",
-    "translations": {
-      "tr": "TUNDRA"
     }
   },
   {
@@ -199099,35 +198817,6 @@
     "ipa": "/aʔozɐ/",
     "translations": {
       "tr": "ASIYE"
-    }
-  },
-  {
-    "id": "L-CORPUS2-01192",
-    "form": "абдзэхэ",
-    "literalMeaning": "",
-    "partOfSpeech": "noun",
-    "corpusFrequency": 66,
-    "dialectVariants": {
-      "adyghe": "абдзэхэ",
-      "kabardian": ""
-    },
-    "notes": "Corpus v1.0 batch-2 (freq: 66, lang: ady, source: none)",
-    "rootIds": [
-      "R-DZA"
-    ],
-    "wordFamilyId": "WF-DZA",
-    "derivation": {
-      "rule": "root",
-      "components": [
-        "дзэ"
-      ]
-    },
-    "isLemma": false,
-    "conceptId": "EYEBROW",
-    "ipa": "/'nɑ:bdzɐ/",
-    "ipaSource": "root-derived",
-    "translations": {
-      "tr": "KARACA"
     }
   },
   {
@@ -200983,36 +200672,6 @@
     "ipa": "/zǝzɐxaxǝm/"
   },
   {
-    "id": "L-CORPUS2-01357",
-    "form": "гъашӏэм",
-    "literalMeaning": "",
-    "partOfSpeech": "noun",
-    "corpusFrequency": 60,
-    "dialectVariants": {
-      "adyghe": "гъашӏэм",
-      "kabardian": ""
-    },
-    "notes": "Corpus v1.0 batch-2 (freq: 60, lang: ady, source: none)",
-    "isLemma": false,
-    "rootIds": [
-      "R-TKHE"
-    ],
-    "wordFamilyId": "WF-TKHE",
-    "derivation": {
-      "rootIds": [
-        "R-TKHE"
-      ],
-      "morphemeIds": [],
-      "rule": "compound"
-    },
-    "conceptId": "WRITE",
-    "ipa": "/txɐn/",
-    "ipaSource": "root-derived",
-    "translations": {
-      "tr": "BENGISU"
-    }
-  },
-  {
     "id": "L-CORPUS2-01359",
     "form": "зэхэшӏыкӏ",
     "literalMeaning": "",
@@ -201068,23 +200727,6 @@
     "ipa": "/t/",
     "translations": {
       "tr": "İp gibi süzülerek"
-    }
-  },
-  {
-    "id": "L-CORPUS2-01363",
-    "form": "идакъым",
-    "literalMeaning": "",
-    "partOfSpeech": "noun",
-    "corpusFrequency": 59,
-    "dialectVariants": {
-      "adyghe": "",
-      "kabardian": "идакъым"
-    },
-    "notes": "Corpus v1.0 batch-2 (freq: 59, lang: kbd, source: none)",
-    "isLemma": false,
-    "ipa": "/jidaːqəm/",
-    "translations": {
-      "tr": "BAŞKAN"
     }
   },
   {
@@ -203487,34 +203129,6 @@
     }
   },
   {
-    "id": "L-CORPUS2-01595",
-    "form": "гущӏэгъум",
-    "literalMeaning": "",
-    "partOfSpeech": "noun",
-    "corpusFrequency": 53,
-    "dialectVariants": {
-      "adyghe": "",
-      "kabardian": "гущӏэгъум"
-    },
-    "notes": "Corpus v1.0 batch-2 (freq: 53, lang: kbd, source: none)",
-    "rootIds": [
-      "R-GUSHCH"
-    ],
-    "wordFamilyId": "WF-GU",
-    "derivation": {
-      "rule": "root",
-      "components": [
-        "гу"
-      ]
-    },
-    "isLemma": false,
-    "conceptId": "LANGUAGE",
-    "subConceptId": "",
-    "taxonomyFamily": "",
-    "rootForm": "гущӏэ",
-    "ipa": "/gʷǝ'ɕʹɐʁʷ/"
-  },
-  {
     "id": "L-CORPUS2-01596",
     "form": "ягъусэу",
     "literalMeaning": "",
@@ -204440,32 +204054,6 @@
     "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9b/%D0%950551%D0%B5%D0%BF%D0%BB%D1%8A%D1%8B%D0%BA%D3%8F%D1%8D.ogg"
   },
   {
-    "id": "L-CORPUS2-01675",
-    "form": "абинэр",
-    "literalMeaning": "",
-    "partOfSpeech": "noun",
-    "corpusFrequency": 51,
-    "dialectVariants": {
-      "adyghe": "абинэр",
-      "kabardian": ""
-    },
-    "notes": "Corpus v1.0 batch-2 (freq: 51, lang: ady, source: none)",
-    "isLemma": false,
-    "rootIds": [
-      "R-NE"
-    ],
-    "wordFamilyId": "WF-NE",
-    "derivation": {
-      "rootIds": [
-        "R-NE"
-      ],
-      "morphemeIds": [],
-      "rule": "compound"
-    },
-    "ipaSource": "root-derived",
-    "ipa": "/abinɐr/"
-  },
-  {
     "id": "L-CORPUS2-01679",
     "form": "етыгъэу",
     "literalMeaning": "",
@@ -204552,35 +204140,6 @@
     }
   },
   {
-    "id": "L-CORPUS2-01691",
-    "form": "хъущтыгъэ",
-    "literalMeaning": "",
-    "partOfSpeech": "noun",
-    "corpusFrequency": 51,
-    "dialectVariants": {
-      "adyghe": "хъущтыгъэ",
-      "kabardian": ""
-    },
-    "notes": "Corpus v1.0 batch-2 (freq: 51, lang: ady, source: none)",
-    "isLemma": false,
-    "rootIds": [
-      "R-SHE2"
-    ],
-    "wordFamilyId": "WF-SHE2",
-    "derivation": {
-      "rootIds": [
-        "R-SHE2"
-      ],
-      "morphemeIds": [],
-      "rule": "compound"
-    },
-    "ipa": "/pʹqʹǝ/",
-    "ipaSource": "root-derived",
-    "translations": {
-      "tr": ""
-    }
-  },
-  {
     "id": "L-CORPUS2-01692",
     "form": "къурмэнышӏэу",
     "literalMeaning": "",
@@ -204625,34 +204184,6 @@
     ],
     "conceptId": "COMPASSION",
     "ipa": "/ɕǝ'ʔɐn/"
-  },
-  {
-    "id": "L-CORPUS2-01705",
-    "form": "гуащӏэм",
-    "literalMeaning": "",
-    "partOfSpeech": "noun",
-    "corpusFrequency": 50,
-    "dialectVariants": {
-      "adyghe": "",
-      "kabardian": "гуащӏэм"
-    },
-    "notes": "Corpus v1.0 batch-2 (freq: 50, lang: kbd, source: none)",
-    "rootIds": [
-      "R-GU"
-    ],
-    "wordFamilyId": "WF-GU",
-    "derivation": {
-      "rule": "root",
-      "components": [
-        "гу"
-      ]
-    },
-    "isLemma": false,
-    "conceptId": "LABOR",
-    "subConceptId": "POWER",
-    "taxonomyFamily": "Güç & Emek",
-    "rootForm": "гуащӀэ",
-    "ipa": "/'gʷɑ:ɕʹɐ/"
   },
   {
     "id": "L-CORPUS2-01715",
@@ -204767,34 +204298,6 @@
     "ipaSource": "root-derived",
     "translations": {
       "tr": "DIZ"
-    }
-  },
-  {
-    "id": "L-CORPUS2-01723",
-    "form": "хъухэу",
-    "literalMeaning": "",
-    "partOfSpeech": "noun",
-    "corpusFrequency": 50,
-    "dialectVariants": {
-      "adyghe": "хъухэу",
-      "kabardian": ""
-    },
-    "notes": "Corpus v1.0 batch-2 (freq: 50, lang: ady, source: none)",
-    "isLemma": false,
-    "rootIds": [
-      "R-SHE2"
-    ],
-    "wordFamilyId": "WF-SHE2",
-    "derivation": {
-      "rootIds": [
-        "R-SHE2"
-      ],
-      "morphemeIds": [],
-      "rule": "compound"
-    },
-    "ipa": "/χʷxɐw/",
-    "translations": {
-      "tr": "CINSEL"
     }
   },
   {
@@ -205555,27 +205058,6 @@
     },
     "conceptId": "GREEN",
     "ipa": "/χʷɐn/"
-  },
-  {
-    "id": "L-CORPUS2-01797",
-    "form": "щытакъым",
-    "literalMeaning": "",
-    "partOfSpeech": "noun",
-    "corpusFrequency": 48,
-    "dialectVariants": {
-      "adyghe": "",
-      "kabardian": "щытакъым"
-    },
-    "notes": "Corpus v1.0 batch-2 (freq: 48, lang: kbd, source: none)",
-    "isLemma": false,
-    "rootIds": [
-      "R-SHCH"
-    ],
-    "conceptId": "COMPASSION",
-    "ipa": "/ɕǝtaqǝm/",
-    "translations": {
-      "tr": "NASIL"
-    }
   },
   {
     "id": "L-CORPUS2-01800",
@@ -207255,27 +206737,6 @@
     }
   },
   {
-    "id": "L-CORPUS2-01941",
-    "form": "щыщхэу",
-    "literalMeaning": "",
-    "partOfSpeech": "noun",
-    "corpusFrequency": 46,
-    "dialectVariants": {
-      "adyghe": "щыщхэу",
-      "kabardian": ""
-    },
-    "notes": "Corpus v1.0 batch-2 (freq: 46, lang: ady, source: none)",
-    "isLemma": false,
-    "rootIds": [
-      "R-SHCH"
-    ],
-    "conceptId": "COMPASSION",
-    "ipa": "/ɕǝɕxɐw/",
-    "translations": {
-      "tr": ""
-    }
-  },
-  {
     "id": "L-CORPUS2-01944",
     "form": "зэхэсхащ",
     "literalMeaning": "",
@@ -207323,34 +206784,6 @@
       "ru": "стол",
       "tr": "sıra"
     }
-  },
-  {
-    "id": "L-CORPUS2-01948",
-    "form": "гущӏэгъур",
-    "literalMeaning": "",
-    "partOfSpeech": "noun",
-    "corpusFrequency": 45,
-    "dialectVariants": {
-      "adyghe": "",
-      "kabardian": "гущӏэгъур"
-    },
-    "notes": "Corpus v1.0 batch-2 (freq: 45, lang: kbd, source: none)",
-    "rootIds": [
-      "R-GUSHCH"
-    ],
-    "wordFamilyId": "WF-GU",
-    "derivation": {
-      "rule": "root",
-      "components": [
-        "гу"
-      ]
-    },
-    "isLemma": false,
-    "conceptId": "LANGUAGE",
-    "subConceptId": "",
-    "taxonomyFamily": "",
-    "rootForm": "гущӏэ",
-    "ipa": "/gʷǝ'ɕʹɐʁʷ/"
   },
   {
     "id": "L-CORPUS2-01950",
@@ -208023,31 +207456,6 @@
       "ru": "кунацкая, гостиная, гостиница",
       "tr": "otel"
     }
-  },
-  {
-    "id": "L-CORPUS2-02003",
-    "form": "закъуэкъым",
-    "literalMeaning": "",
-    "partOfSpeech": "noun",
-    "corpusFrequency": 44,
-    "dialectVariants": {
-      "adyghe": "",
-      "kabardian": "закъуэкъым"
-    },
-    "notes": "Corpus v1.0 batch-2 (freq: 44, lang: kbd, source: none)",
-    "rootIds": [
-      "R-KUE"
-    ],
-    "wordFamilyId": "WF-KUE",
-    "derivation": {
-      "rule": "root",
-      "components": [
-        "къуэ"
-      ]
-    },
-    "isLemma": false,
-    "conceptId": "ACUTE_ANGLE",
-    "ipa": "/'zɑ:qʹʷɐ/"
   },
   {
     "id": "L-CORPUS2-02005",
@@ -211114,31 +210522,6 @@
     }
   },
   {
-    "id": "L-CORPUS2-02265",
-    "form": "гъуэлъыпӏэм",
-    "literalMeaning": "",
-    "partOfSpeech": "noun",
-    "corpusFrequency": 40,
-    "dialectVariants": {
-      "adyghe": "",
-      "kabardian": "гъуэлъыпӏэм"
-    },
-    "notes": "Corpus v1.0 batch-2 (freq: 40, lang: kbd, source: none)",
-    "rootIds": [
-      "R-GHWALH"
-    ],
-    "wordFamilyId": "WF-GHWALH",
-    "derivation": {
-      "rule": "root",
-      "components": [
-        "гъуэлъ"
-      ]
-    },
-    "isLemma": false,
-    "conceptId": "LIE",
-    "ipa": "/ʁʷɐ'ɬǝpʹɐ/"
-  },
-  {
     "id": "L-CORPUS2-02267",
     "form": "ӏуэхущӏапӏэ",
     "literalMeaning": "",
@@ -212611,34 +211994,6 @@
     }
   },
   {
-    "id": "L-CORPUS2-02405",
-    "form": "хъунхэу",
-    "literalMeaning": "",
-    "partOfSpeech": "noun",
-    "corpusFrequency": 38,
-    "dialectVariants": {
-      "adyghe": "хъунхэу",
-      "kabardian": ""
-    },
-    "notes": "Corpus v1.0 batch-2 (freq: 38, lang: ady, source: none)",
-    "isLemma": false,
-    "rootIds": [
-      "R-SHE2"
-    ],
-    "wordFamilyId": "WF-SHE2",
-    "derivation": {
-      "rootIds": [
-        "R-SHE2"
-      ],
-      "morphemeIds": [],
-      "rule": "compound"
-    },
-    "ipa": "/χʷǝn/",
-    "translations": {
-      "tr": "KONSEY"
-    }
-  },
-  {
     "id": "L-CORPUS2-02406",
     "form": "якъэбар",
     "literalMeaning": "",
@@ -213426,35 +212781,6 @@
       "ru": "расцепить что-л., разрешить спор между кем-л., закончить, завершить что-л.",
       "tr": "bitirmek",
       "trSource": "en->tr koprusu (orta)"
-    }
-  },
-  {
-    "id": "L-CORPUS2-02471",
-    "form": "къэкӏуакъым",
-    "literalMeaning": "",
-    "partOfSpeech": "noun",
-    "corpusFrequency": 37,
-    "dialectVariants": {
-      "adyghe": "",
-      "kabardian": "къэкӏуакъым"
-    },
-    "notes": "Corpus v1.0 batch-2 (freq: 37, lang: kbd, source: none)",
-    "isLemma": false,
-    "rootIds": [
-      "R-KHUMEN"
-    ],
-    "wordFamilyId": "WF-KHUMEN",
-    "derivation": {
-      "rootIds": [
-        "R-KHUMEN"
-      ],
-      "morphemeIds": [],
-      "rule": "compound"
-    },
-    "conceptId": "PROTECT",
-    "ipa": "/kʹʷɐn/",
-    "translations": {
-      "tr": "visitor"
     }
   },
   {
@@ -216410,34 +215736,6 @@
     }
   },
   {
-    "id": "L-CORPUS2-02729",
-    "form": "хъукъым",
-    "literalMeaning": "",
-    "partOfSpeech": "noun",
-    "corpusFrequency": 34,
-    "dialectVariants": {
-      "adyghe": "",
-      "kabardian": "хъукъым"
-    },
-    "notes": "Corpus v1.0 batch-2 (freq: 34, lang: kbd, source: none)",
-    "isLemma": false,
-    "rootIds": [
-      "R-SHE2"
-    ],
-    "wordFamilyId": "WF-SHE2",
-    "derivation": {
-      "rootIds": [
-        "R-SHE2"
-      ],
-      "morphemeIds": [],
-      "rule": "compound"
-    },
-    "ipa": "/χʷɐn/",
-    "translations": {
-      "tr": "CINSEL"
-    }
-  },
-  {
     "id": "L-CORPUS2-02730",
     "form": "макӏо",
     "literalMeaning": "",
@@ -219009,7 +218307,7 @@
     "ipaSource": "root-derived",
     "ipa": "/ʁɐnɐfɐʁɐ/",
     "translations": {
-      "tr": "belirli"
+      "tr": "aydınlatma, belirginleştirme"
     },
     "literalMeaningSource": "translations.tr (yuksek)"
   },
@@ -219463,32 +218761,6 @@
     "translations": {
       "tr": "ev içi, avlu, aile çevresi"
     }
-  },
-  {
-    "id": "L-CORPUS2-03013",
-    "form": "ашӏагъэм",
-    "literalMeaning": "",
-    "partOfSpeech": "noun",
-    "corpusFrequency": 32,
-    "dialectVariants": {
-      "adyghe": "ашӏагъэм",
-      "kabardian": ""
-    },
-    "notes": "Corpus v1.0 batch-2 (freq: 32, lang: ady, source: none)",
-    "isLemma": false,
-    "rootIds": [
-      "R-NE"
-    ],
-    "wordFamilyId": "WF-NE",
-    "derivation": {
-      "rootIds": [
-        "R-NE"
-      ],
-      "morphemeIds": [],
-      "rule": "compound"
-    },
-    "ipaSource": "root-derived",
-    "ipa": "/aʃʼaʁɐm/"
   },
   {
     "id": "L-CORPUS2-03014",
@@ -220591,34 +219863,6 @@
     "ipaSource": "root-derived"
   },
   {
-    "id": "L-CORPUS2-03098",
-    "form": "агъэфедэрэ",
-    "literalMeaning": "",
-    "partOfSpeech": "noun",
-    "corpusFrequency": 31,
-    "dialectVariants": {
-      "adyghe": "агъэфедэрэ",
-      "kabardian": ""
-    },
-    "notes": "Corpus v1.0 batch-2 (freq: 31, lang: ady, source: none)",
-    "isLemma": false,
-    "rootIds": [
-      "R-ZHY"
-    ],
-    "wordFamilyId": "WF-ZHY",
-    "derivation": {
-      "rootIds": [
-        "R-ZHY"
-      ],
-      "morphemeIds": [],
-      "rule": "compound"
-    },
-    "ipa": "/'ɐʁɐ/",
-    "translations": {
-      "tr": "ABRIZ"
-    }
-  },
-  {
     "id": "L-CORPUS2-03099",
     "form": "лӏэуж",
     "literalMeaning": "",
@@ -221259,31 +220503,6 @@
       "trSource": "en->tr koprusu (orta)"
     },
     "literalMeaningSource": "translations.ru->tr (orta)"
-  },
-  {
-    "id": "L-CORPUS2-03160",
-    "form": "бжэӏупэм",
-    "literalMeaning": "",
-    "partOfSpeech": "noun",
-    "corpusFrequency": 30,
-    "dialectVariants": {
-      "adyghe": "",
-      "kabardian": "бжэӏупэм"
-    },
-    "notes": "Corpus v1.0 batch-2 (freq: 30, lang: kbd, source: none)",
-    "rootIds": [
-      "R-BZHA2"
-    ],
-    "wordFamilyId": "WF-BZHA2",
-    "derivation": {
-      "rule": "root",
-      "components": [
-        "бжэ"
-      ]
-    },
-    "isLemma": false,
-    "conceptId": "GRAY",
-    "ipa": "/bᶎɐ'ʔʷǝpɐ/"
   },
   {
     "id": "L-CORPUS2-03162",
@@ -225070,35 +224289,6 @@
     }
   },
   {
-    "id": "L-CORPUS2-03479",
-    "form": "гъущӏыр",
-    "literalMeaning": "",
-    "partOfSpeech": "noun",
-    "corpusFrequency": 28,
-    "dialectVariants": {
-      "adyghe": "",
-      "kabardian": "гъущӏыр"
-    },
-    "notes": "Corpus v1.0 batch-2 (freq: 28, lang: kbd, source: none)",
-    "isLemma": false,
-    "rootIds": [
-      "R-GHWAZH"
-    ],
-    "wordFamilyId": "WF-GHWAZH",
-    "derivation": {
-      "rootIds": [
-        "R-GHWAZH"
-      ],
-      "morphemeIds": [],
-      "rule": "compound"
-    },
-    "conceptId": "YELLOW",
-    "ipa": "/ʁʷǝɕʹ/",
-    "translations": {
-      "tr": "tav"
-    }
-  },
-  {
     "id": "L-CORPUS2-03480",
     "form": "ӏэдэбу",
     "literalMeaning": "",
@@ -225365,36 +224555,6 @@
     "ipaSource": "root-derived"
   },
   {
-    "id": "L-CORPUS2-03498",
-    "form": "къэнакъым",
-    "literalMeaning": "",
-    "partOfSpeech": "noun",
-    "corpusFrequency": 28,
-    "dialectVariants": {
-      "adyghe": "",
-      "kabardian": "къэнакъым"
-    },
-    "notes": "Corpus v1.0 batch-2 (freq: 28, lang: kbd, source: none)",
-    "isLemma": false,
-    "rootIds": [
-      "R-KHUMEN"
-    ],
-    "wordFamilyId": "WF-KHUMEN",
-    "derivation": {
-      "rootIds": [
-        "R-KHUMEN"
-      ],
-      "morphemeIds": [],
-      "rule": "compound"
-    },
-    "conceptId": "PROTECT",
-    "ipa": "/χʷǝ'mɐn/",
-    "ipaSource": "root-derived",
-    "translations": {
-      "tr": "DURUK"
-    }
-  },
-  {
     "id": "L-CORPUS2-03500",
     "form": "ещӏэн",
     "literalMeaning": "",
@@ -225530,35 +224690,6 @@
     }
   },
   {
-    "id": "L-CORPUS2-03505",
-    "form": "бзэджашӏэхэм",
-    "literalMeaning": "",
-    "partOfSpeech": "noun",
-    "corpusFrequency": 28,
-    "dialectVariants": {
-      "adyghe": "бзэджашӏэхэм",
-      "kabardian": ""
-    },
-    "notes": "Corpus v1.0 batch-2 (freq: 28, lang: ady, source: none)",
-    "rootIds": [
-      "R-BZA"
-    ],
-    "wordFamilyId": "WF-BZA",
-    "derivation": {
-      "rule": "root",
-      "components": [
-        "бзэ"
-      ]
-    },
-    "isLemma": false,
-    "conceptId": "TONGUE",
-    "ipaSource": "root-derived",
-    "ipa": "/bzɐdʒaʃʼɐxɐm/",
-    "translations": {
-      "tr": "dil + <div style + BILGI"
-    }
-  },
-  {
     "id": "L-CORPUS2-03506",
     "form": "зышӏэщтыгъэхэм",
     "literalMeaning": "",
@@ -225614,7 +224745,7 @@
     "conceptId": "YEAR",
     "ipa": "/ʁɐ'sɑ:/",
     "translations": {
-      "tr": "TERBIYECI"
+      "tr": "eğitmen, terbiyeci, hoca"
     }
   },
   {
@@ -225879,23 +225010,6 @@
     "ipa": "/aːwji/",
     "translations": {
       "tr": "HEMDIL"
-    }
-  },
-  {
-    "id": "L-CORPUS2-03535",
-    "form": "ибынхэу",
-    "literalMeaning": "",
-    "partOfSpeech": "noun",
-    "corpusFrequency": 28,
-    "dialectVariants": {
-      "adyghe": "ибынхэу",
-      "kabardian": ""
-    },
-    "notes": "Corpus v1.0 batch-2 (freq: 28, lang: ady, source: none)",
-    "isLemma": false,
-    "ipa": "/ibǝnxɐw/",
-    "translations": {
-      "tr": "soyadi"
     }
   },
   {
@@ -227032,34 +226146,6 @@
     }
   },
   {
-    "id": "L-CORPUS2-03616",
-    "form": "щхьэкӏэкъым",
-    "literalMeaning": "",
-    "partOfSpeech": "noun",
-    "corpusFrequency": 27,
-    "dialectVariants": {
-      "adyghe": "",
-      "kabardian": "щхьэкӏэкъым"
-    },
-    "notes": "Corpus v1.0 batch-2 (freq: 27, lang: kbd, source: none)",
-    "rootIds": [
-      "R-SHHA"
-    ],
-    "wordFamilyId": "WF-SHHA",
-    "derivation": {
-      "rule": "root",
-      "components": [
-        "щхьэ"
-      ]
-    },
-    "isLemma": false,
-    "conceptId": "REASON",
-    "subConceptId": "HEAD_REASON",
-    "taxonomyFamily": "Söz & Neden",
-    "rootForm": "щхьэ-",
-    "ipa": "/'ɕħɐtʹʂɐ/"
-  },
-  {
     "id": "L-CORPUS2-03621",
     "form": "ткӏуэпс",
     "literalMeaning": "",
@@ -227799,34 +226885,6 @@
     "ipaSource": "root-derived"
   },
   {
-    "id": "L-CORPUS2-03683",
-    "form": "къалэхэу",
-    "literalMeaning": "",
-    "partOfSpeech": "noun",
-    "corpusFrequency": 27,
-    "dialectVariants": {
-      "adyghe": "къалэхэу",
-      "kabardian": ""
-    },
-    "notes": "Corpus v1.0 batch-2 (freq: 27, lang: ady, source: none)",
-    "rootIds": [
-      "R-QA"
-    ],
-    "wordFamilyId": "WF-QA",
-    "derivation": {
-      "rule": "root",
-      "components": [
-        "къа"
-      ]
-    },
-    "isLemma": false,
-    "conceptId": "KALMYK",
-    "ipa": "/'qʹɑ:ɮɐ/",
-    "translations": {
-      "tr": "sehir"
-    }
-  },
-  {
     "id": "L-CORPUS2-03684",
     "form": "иджабгъукӏэ",
     "literalMeaning": "",
@@ -227909,35 +226967,6 @@
     "ipaSource": "root-derived",
     "translations": {
       "tr": "Abzeh (Çerkes boyu)"
-    }
-  },
-  {
-    "id": "L-CORPUS2-03695",
-    "form": "адам",
-    "literalMeaning": "",
-    "partOfSpeech": "noun",
-    "corpusFrequency": 27,
-    "dialectVariants": {
-      "adyghe": "адам",
-      "kabardian": ""
-    },
-    "notes": "Corpus v1.0 batch-2 (freq: 27, lang: ady, source: none)",
-    "isLemma": false,
-    "rootIds": [
-      "R-DAGHE"
-    ],
-    "wordFamilyId": "WF-DAGHE",
-    "derivation": {
-      "rootIds": [
-        "R-DAGHE"
-      ],
-      "morphemeIds": [],
-      "rule": "compound"
-    },
-    "conceptId": "FATHERHOOD",
-    "ipa": "/dɐn/",
-    "translations": {
-      "tr": "ÂDEM"
     }
   },
   {
@@ -230081,35 +229110,6 @@
     "literalMeaningSource": "translations.tr (yuksek)"
   },
   {
-    "id": "L-CORPUS2-03877",
-    "form": "бзэджашӏэм",
-    "literalMeaning": "",
-    "partOfSpeech": "noun",
-    "corpusFrequency": 26,
-    "dialectVariants": {
-      "adyghe": "бзэджашӏэм",
-      "kabardian": ""
-    },
-    "notes": "Corpus v1.0 batch-2 (freq: 26, lang: ady, source: none)",
-    "rootIds": [
-      "R-BZA"
-    ],
-    "wordFamilyId": "WF-BZA",
-    "derivation": {
-      "rule": "root",
-      "components": [
-        "бзэ"
-      ]
-    },
-    "isLemma": false,
-    "conceptId": "TONGUE",
-    "ipaSource": "root-derived",
-    "ipa": "/bzɐdʒaʃʼɐm/",
-    "translations": {
-      "tr": "dil + <div style + BILGI"
-    }
-  },
-  {
     "id": "L-CORPUS2-03878",
     "form": "ибрахьими",
     "literalMeaning": "",
@@ -231355,35 +230355,6 @@
     "ipa": "/iritǝʒaɕ/"
   },
   {
-    "id": "L-CORPUS2-03994",
-    "form": "теткъым",
-    "literalMeaning": "",
-    "partOfSpeech": "noun",
-    "corpusFrequency": 25,
-    "dialectVariants": {
-      "adyghe": "",
-      "kabardian": "теткъым"
-    },
-    "notes": "Corpus v1.0 batch-2 (freq: 25, lang: kbd, source: none)",
-    "isLemma": false,
-    "rootIds": [
-      "R-TYET"
-    ],
-    "wordFamilyId": "WF-ТЕТ",
-    "derivation": {
-      "rootIds": [
-        "R-ТЕТ"
-      ],
-      "morphemeIds": [],
-      "rule": "compound"
-    },
-    "ipa": "/te:t/",
-    "ipaSource": "root-derived",
-    "translations": {
-      "tr": "kocanin babasi"
-    }
-  },
-  {
     "id": "L-CORPUS2-03995",
     "form": "дыкӏуащ",
     "literalMeaning": "",
@@ -231409,37 +230380,6 @@
     "ipa": "/kʹʷɐn/",
     "translations": {
       "tr": "BIZ"
-    }
-  },
-  {
-    "id": "L-CORPUS2-03996",
-    "form": "гуащӏэр",
-    "literalMeaning": "",
-    "partOfSpeech": "noun",
-    "corpusFrequency": 25,
-    "dialectVariants": {
-      "adyghe": "",
-      "kabardian": "гуащӏэр"
-    },
-    "notes": "Corpus v1.0 batch-2 (freq: 25, lang: kbd, source: none)",
-    "rootIds": [
-      "R-GU"
-    ],
-    "wordFamilyId": "WF-GU",
-    "derivation": {
-      "rule": "root",
-      "components": [
-        "гу"
-      ]
-    },
-    "isLemma": false,
-    "conceptId": "LABOR",
-    "subConceptId": "POWER",
-    "taxonomyFamily": "Güç & Emek",
-    "rootForm": "гуащӀэ",
-    "ipa": "/'gʷɑ:ɕʹɐ/",
-    "translations": {
-      "tr": "hafiflemek"
     }
   },
   {
@@ -232079,35 +231019,6 @@
     "notes": "Corpus v1.0 batch-2 (freq: 25, lang: ady, source: none)",
     "isLemma": false,
     "ipa": "/jadwam/"
-  },
-  {
-    "id": "L-CORPUS2-04038",
-    "form": "бзылъфыгъэхэу",
-    "literalMeaning": "",
-    "partOfSpeech": "noun",
-    "corpusFrequency": 25,
-    "dialectVariants": {
-      "adyghe": "бзылъфыгъэхэу",
-      "kabardian": ""
-    },
-    "notes": "Corpus v1.0 batch-2 (freq: 25, lang: ady, source: none)",
-    "rootIds": [
-      "R-BZY"
-    ],
-    "wordFamilyId": "WF-BZY",
-    "derivation": {
-      "rule": "root",
-      "components": [
-        "бзы"
-      ]
-    },
-    "isLemma": false,
-    "conceptId": "MIND",
-    "ipa": "/gʷǝb'zǝʁɐ/",
-    "ipaSource": "root-derived",
-    "translations": {
-      "tr": "Terzi kadın"
-    }
   },
   {
     "id": "L-CORPUS2-04043",
@@ -233738,33 +232649,6 @@
     "ipaSource": "root-derived"
   },
   {
-    "id": "L-CORPUS2-04159",
-    "form": "гуфӏэжу",
-    "literalMeaning": "",
-    "partOfSpeech": "noun",
-    "corpusFrequency": 24,
-    "dialectVariants": {
-      "adyghe": "",
-      "kabardian": "гуфӏэжу"
-    },
-    "notes": "Corpus v1.0 batch-2 (freq: 24, lang: kbd, source: none)",
-    "rootIds": [
-      "R-GUF"
-    ],
-    "wordFamilyId": "WF-GU",
-    "derivation": {
-      "rule": "root",
-      "components": [
-        "гу"
-      ]
-    },
-    "isLemma": false,
-    "subConceptId": "-",
-    "taxonomyFamily": "-",
-    "rootForm": "гу",
-    "ipa": "/'gʷǝfʹɐ/"
-  },
-  {
     "id": "L-CORPUS2-04161",
     "form": "дэкӏмэ",
     "literalMeaning": "",
@@ -235139,28 +234023,6 @@
     "translations": {
       "tr": "BEZIRBENÇ",
       "ar": "ثمانون"
-    }
-  },
-  {
-    "id": "L-CORPUS2-04269",
-    "form": "щыӏэхэу",
-    "literalMeaning": "",
-    "partOfSpeech": "noun",
-    "corpusFrequency": 24,
-    "dialectVariants": {
-      "adyghe": "щыӏэхэу",
-      "kabardian": ""
-    },
-    "notes": "Corpus v1.0 batch-2 (freq: 24, lang: ady, source: none)",
-    "isLemma": false,
-    "rootIds": [
-      "R-SHCH"
-    ],
-    "conceptId": "COMPASSION",
-    "ipa": "/ɕǝs'ħǝn/",
-    "ipaSource": "root-derived",
-    "translations": {
-      "tr": "present"
     }
   },
   {
@@ -236559,38 +235421,6 @@
     }
   },
   {
-    "id": "L-CORPUS2-04391",
-    "form": "хабзэкъым",
-    "literalMeaning": "",
-    "partOfSpeech": "noun",
-    "corpusFrequency": 23,
-    "dialectVariants": {
-      "adyghe": "",
-      "kabardian": "хабзэкъым"
-    },
-    "notes": "Corpus v1.0 batch-2 (freq: 23, lang: kbd, source: none)",
-    "rootIds": [
-      "R-KHABZA",
-      "R-BZA"
-    ],
-    "wordFamilyId": "WF-KHABZA",
-    "derivation": {
-      "rule": "compound",
-      "components": [
-        "хабзэ",
-        "бзэ"
-      ]
-    },
-    "isLemma": false,
-    "subConceptId": "TRADITION_NEGATION",
-    "taxonomyFamily": "Dil & Gramer",
-    "rootForm": "хабзэ-",
-    "ipa": "/'xɑ:bzɐ/",
-    "translations": {
-      "tr": "ÇERKES ADETI"
-    }
-  },
-  {
     "id": "L-CORPUS2-04393",
     "form": "цӏыкӏунитӏэ",
     "literalMeaning": "",
@@ -237674,32 +236504,6 @@
     "translations": {
       "tr": "GÜNCEL"
     }
-  },
-  {
-    "id": "L-CORPUS2-04485",
-    "form": "ашӏагъэхэр",
-    "literalMeaning": "",
-    "partOfSpeech": "noun",
-    "corpusFrequency": 23,
-    "dialectVariants": {
-      "adyghe": "ашӏагъэхэр",
-      "kabardian": ""
-    },
-    "notes": "Corpus v1.0 batch-2 (freq: 23, lang: ady, source: none)",
-    "isLemma": false,
-    "rootIds": [
-      "R-NE"
-    ],
-    "wordFamilyId": "WF-NE",
-    "derivation": {
-      "rootIds": [
-        "R-NE"
-      ],
-      "morphemeIds": [],
-      "rule": "compound"
-    },
-    "ipaSource": "root-derived",
-    "ipa": "/aʃʼaʁɐxɐr/"
   },
   {
     "id": "L-CORPUS2-04486",
@@ -239278,36 +238082,6 @@
       "rule": "compound"
     },
     "ipa": "/zɐʂɐ'ɬʹɐn/"
-  },
-  {
-    "id": "L-CORPUS2-04645",
-    "form": "гущӏыӏум",
-    "literalMeaning": "",
-    "partOfSpeech": "noun",
-    "corpusFrequency": 22,
-    "dialectVariants": {
-      "adyghe": "",
-      "kabardian": "гущӏыӏум"
-    },
-    "notes": "Corpus v1.0 batch-2 (freq: 22, lang: kbd, source: none)",
-    "rootIds": [
-      "R-GUSHCH"
-    ],
-    "wordFamilyId": "WF-GU",
-    "derivation": {
-      "rule": "root",
-      "components": [
-        "гу"
-      ]
-    },
-    "isLemma": false,
-    "subConceptId": "-",
-    "taxonomyFamily": "-",
-    "rootForm": "гу",
-    "ipa": "/gʷǝ'ɕʹǝʔʷ/",
-    "translations": {
-      "tr": "üzerinde"
-    }
   },
   {
     "id": "L-CORPUS2-04647",
@@ -241145,33 +239919,6 @@
     }
   },
   {
-    "id": "L-CORPUS2-04808",
-    "form": "дежкӏи",
-    "literalMeaning": "",
-    "partOfSpeech": "noun",
-    "corpusFrequency": 21,
-    "dialectVariants": {
-      "adyghe": "",
-      "kabardian": "дежкӏи"
-    },
-    "notes": "Corpus v1.0 batch-2 (freq: 21, lang: kbd, source: none)",
-    "isLemma": false,
-    "rootIds": [
-      "R-DYEZH"
-    ],
-    "wordFamilyId": "WF-ДЕЖ",
-    "derivation": {
-      "rootIds": [
-        "R-ДЕЖ"
-      ],
-      "morphemeIds": [],
-      "rule": "compound"
-    },
-    "conceptId": "PLANT",
-    "ipa": "/de:ᶎ/",
-    "ipaSource": "root-derived"
-  },
-  {
     "id": "L-CORPUS2-04811",
     "form": "щӏэз",
     "literalMeaning": "",
@@ -242606,34 +241353,6 @@
     }
   },
   {
-    "id": "L-CORPUS2-04919",
-    "form": "къудейкъым",
-    "literalMeaning": "",
-    "partOfSpeech": "noun",
-    "corpusFrequency": 21,
-    "dialectVariants": {
-      "adyghe": "",
-      "kabardian": "къудейкъым"
-    },
-    "notes": "Corpus v1.0 batch-2 (freq: 21, lang: kbd, source: none)",
-    "isLemma": false,
-    "rootIds": [
-      "R-QWA"
-    ],
-    "wordFamilyId": "WF-QWA",
-    "derivation": {
-      "rootIds": [
-        "R-QWA"
-      ],
-      "morphemeIds": [],
-      "rule": "compound"
-    },
-    "ipa": "/qʹʷǝ'de:j/",
-    "translations": {
-      "tr": "SADECE"
-    }
-  },
-  {
     "id": "L-CORPUS2-04923",
     "form": "щӏэмычэу",
     "literalMeaning": "",
@@ -243686,33 +242405,6 @@
     "ipaSource": "root-derived",
     "translations": {
       "tr": "FAVORI"
-    }
-  },
-  {
-    "id": "L-CORPUS2-05022",
-    "form": "агъэзэжьыгъ",
-    "literalMeaning": "",
-    "partOfSpeech": "noun",
-    "corpusFrequency": 21,
-    "dialectVariants": {
-      "adyghe": "агъэзэжьыгъ",
-      "kabardian": ""
-    },
-    "notes": "Corpus v1.0 batch-2 (freq: 21, lang: ady, source: none)",
-    "rootIds": [
-      "R-ZHY"
-    ],
-    "wordFamilyId": "WF-ZHY",
-    "derivation": {
-      "rule": "root",
-      "components": [
-        "жьы"
-      ]
-    },
-    "isLemma": false,
-    "ipa": "/'ɐʁɐ/",
-    "translations": {
-      "tr": "dikkat + eski"
     }
   },
   {
@@ -246590,35 +245282,6 @@
     }
   },
   {
-    "id": "L-CORPUS2-05270",
-    "form": "бзэджашӏэхэр",
-    "literalMeaning": "",
-    "partOfSpeech": "noun",
-    "corpusFrequency": 20,
-    "dialectVariants": {
-      "adyghe": "бзэджашӏэхэр",
-      "kabardian": ""
-    },
-    "notes": "Corpus v1.0 batch-2 (freq: 20, lang: ady, source: none)",
-    "rootIds": [
-      "R-BZA"
-    ],
-    "wordFamilyId": "WF-BZA",
-    "derivation": {
-      "rule": "root",
-      "components": [
-        "бзэ"
-      ]
-    },
-    "isLemma": false,
-    "conceptId": "TONGUE",
-    "ipaSource": "root-derived",
-    "ipa": "/bzɐdʒaʃʼɐxɐr/",
-    "translations": {
-      "tr": "dil + <div style + BILGI"
-    }
-  },
-  {
     "id": "L-CORPUS2-05271",
     "form": "къэбарышӏу",
     "literalMeaning": "",
@@ -247260,34 +245923,6 @@
     "literalMeaningSource": "translations.tr (yuksek)"
   },
   {
-    "id": "L-CORPUS2-05331",
-    "form": "анэшӏу",
-    "literalMeaning": "",
-    "partOfSpeech": "noun",
-    "corpusFrequency": 20,
-    "dialectVariants": {
-      "adyghe": "анэшӏу",
-      "kabardian": ""
-    },
-    "notes": "Corpus v1.0 batch-2 (freq: 20, lang: ady, source: none)",
-    "rootIds": [
-      "R-ANA"
-    ],
-    "wordFamilyId": "WF-ANA",
-    "derivation": {
-      "rule": "root",
-      "components": [
-        "анэ"
-      ]
-    },
-    "isLemma": false,
-    "conceptId": "GRANDMOTHER",
-    "ipa": "/ɐ'nɐʂ/",
-    "translations": {
-      "tr": "Hayır dua eden ana"
-    }
-  },
-  {
     "id": "L-CORPUS2-05332",
     "form": "щыпсэухэрэр",
     "literalMeaning": "",
@@ -247620,35 +246255,6 @@
     }
   },
   {
-    "id": "L-CORPUS2-05359",
-    "form": "ашӏагъэр",
-    "literalMeaning": "",
-    "partOfSpeech": "noun",
-    "corpusFrequency": 20,
-    "dialectVariants": {
-      "adyghe": "ашӏагъэр",
-      "kabardian": ""
-    },
-    "notes": "Corpus v1.0 batch-2 (freq: 20, lang: ady, source: none)",
-    "isLemma": false,
-    "rootIds": [
-      "R-NE"
-    ],
-    "wordFamilyId": "WF-NE",
-    "derivation": {
-      "rootIds": [
-        "R-NE"
-      ],
-      "morphemeIds": [],
-      "rule": "compound"
-    },
-    "ipaSource": "root-derived",
-    "ipa": "/aʃʼaʁɐr/",
-    "translations": {
-      "tr": "ASURI"
-    }
-  },
-  {
     "id": "L-CORPUS2-05360",
     "form": "гущыкӏыгъо",
     "literalMeaning": "",
@@ -247739,27 +246345,6 @@
     "ipaSource": "root-derived",
     "translations": {
       "tr": "su + SANDIKÇI"
-    }
-  },
-  {
-    "id": "L-CORPUS2-05376",
-    "form": "акъылыгъэ",
-    "literalMeaning": "",
-    "partOfSpeech": "noun",
-    "corpusFrequency": 20,
-    "dialectVariants": {
-      "adyghe": "акъылыгъэ",
-      "kabardian": ""
-    },
-    "notes": "Corpus v1.0 batch-2 (freq: 20, lang: ady, source: none)",
-    "isLemma": false,
-    "rootIds": [
-      "R-AK"
-    ],
-    "conceptId": "MIND",
-    "ipa": "/ɐ'qʹǝɮ/",
-    "translations": {
-      "tr": "ANLIK"
     }
   },
   {
@@ -247973,32 +246558,6 @@
     "ipaSource": "root-derived"
   },
   {
-    "id": "L-CORPUS2-05395",
-    "form": "бжэщхьэӏум",
-    "literalMeaning": "",
-    "partOfSpeech": "noun",
-    "corpusFrequency": 19,
-    "dialectVariants": {
-      "adyghe": "",
-      "kabardian": "бжэщхьэӏум"
-    },
-    "notes": "Corpus v1.0 batch-2 (freq: 19, lang: kbd, source: none)",
-    "rootIds": [
-      "R-SHHA",
-      "R-BZHA2"
-    ],
-    "wordFamilyId": "WF-SHHA",
-    "derivation": {
-      "rule": "compound",
-      "components": [
-        "щхьэ",
-        "бжэ"
-      ]
-    },
-    "isLemma": false,
-    "ipa": "/bᶎɐ'ɕħɐʔʷ/"
-  },
-  {
     "id": "L-CORPUS2-05404",
     "form": "щӏигъу",
     "literalMeaning": "",
@@ -248118,35 +246677,6 @@
       "en": "spend",
       "tr": "spend"
     }
-  },
-  {
-    "id": "L-CORPUS2-05413",
-    "form": "хъункъым",
-    "literalMeaning": "HAYIR-YRI",
-    "partOfSpeech": "noun",
-    "corpusFrequency": 19,
-    "dialectVariants": {
-      "adyghe": "",
-      "kabardian": "хъункъым"
-    },
-    "notes": "Corpus v1.0 batch-2 (freq: 19, lang: kbd, source: none)",
-    "isLemma": false,
-    "rootIds": [
-      "R-SHE2"
-    ],
-    "wordFamilyId": "WF-SHE2",
-    "derivation": {
-      "rootIds": [
-        "R-SHE2"
-      ],
-      "morphemeIds": [],
-      "rule": "compound"
-    },
-    "ipa": "/χʷɐn/",
-    "translations": {
-      "tr": "HAYIR-YRI"
-    },
-    "literalMeaningSource": "translations.tr (yuksek)"
   },
   {
     "id": "L-CORPUS2-05414",
@@ -249069,35 +247599,6 @@
     ]
   },
   {
-    "id": "L-CORPUS2-05499",
-    "form": "хуэдэкъым",
-    "literalMeaning": "",
-    "partOfSpeech": "noun",
-    "corpusFrequency": 19,
-    "dialectVariants": {
-      "adyghe": "",
-      "kabardian": "хуэдэкъым"
-    },
-    "notes": "Corpus v1.0 batch-2 (freq: 19, lang: kbd, source: none)",
-    "isLemma": false,
-    "rootIds": [
-      "R-SHE"
-    ],
-    "wordFamilyId": "WF-SHE",
-    "derivation": {
-      "rootIds": [
-        "R-SHE"
-      ],
-      "morphemeIds": [],
-      "rule": "compound"
-    },
-    "conceptId": "SPARE",
-    "ipa": "/xwɐdɐqǝm/",
-    "translations": {
-      "tr": "Bağ, kiriş"
-    }
-  },
-  {
     "id": "L-CORPUS2-05500",
     "form": "мыпӏащӏэу",
     "literalMeaning": "Хуэмурэ",
@@ -249184,33 +247685,6 @@
       ],
       "morphemeIds": [],
       "rule": "compound"
-    }
-  },
-  {
-    "id": "L-CORPUS2-05507",
-    "form": "къуэхэу",
-    "literalMeaning": "",
-    "partOfSpeech": "noun",
-    "corpusFrequency": 19,
-    "dialectVariants": {
-      "adyghe": "",
-      "kabardian": "къуэхэу"
-    },
-    "notes": "Corpus v1.0 batch-2 (freq: 19, lang: kbd, source: none)",
-    "rootIds": [
-      "R-QWA"
-    ],
-    "wordFamilyId": "WF-QWA",
-    "derivation": {
-      "rule": "root",
-      "components": [
-        "къуэ"
-      ]
-    },
-    "isLemma": false,
-    "ipa": "/qʹʷɐ/",
-    "translations": {
-      "tr": "Oğul"
     }
   },
   {
@@ -256365,23 +254839,6 @@
     "ipa": "/gʷǝ'fʹɐʁʷɐ/"
   },
   {
-    "id": "L-CORPUS2-06130",
-    "form": "пщӏэркъым",
-    "literalMeaning": "",
-    "partOfSpeech": "noun",
-    "corpusFrequency": 17,
-    "dialectVariants": {
-      "adyghe": "",
-      "kabardian": "пщӏэркъым"
-    },
-    "notes": "Corpus v1.0 batch-2 (freq: 17, lang: kbd, source: none)",
-    "isLemma": false,
-    "rootIds": [
-      "R-PSHCHI"
-    ],
-    "ipa": "/pʹɕʹɐ/"
-  },
-  {
     "id": "L-CORPUS2-06131",
     "form": "хьэщӏэу",
     "literalMeaning": "",
@@ -257849,32 +256306,6 @@
     "literalMeaningSource": "translations.ru->tr (orta)"
   },
   {
-    "id": "L-CORPUS2-06258",
-    "form": "бампӏэм",
-    "literalMeaning": "",
-    "partOfSpeech": "noun",
-    "corpusFrequency": 17,
-    "dialectVariants": {
-      "adyghe": "",
-      "kabardian": "бампӏэм"
-    },
-    "notes": "Corpus v1.0 batch-2 (freq: 17, lang: kbd, source: none)",
-    "isLemma": false,
-    "rootIds": [
-      "R-1E"
-    ],
-    "wordFamilyId": "WF-1E",
-    "derivation": {
-      "rootIds": [
-        "R-1E"
-      ],
-      "morphemeIds": [],
-      "rule": "compound"
-    },
-    "conceptId": "DINING_ROOM",
-    "ipa": "/'bɑ:mpʹɐ/"
-  },
-  {
     "id": "L-CORPUS2-06260",
     "form": "къуейщӏей",
     "literalMeaning": "",
@@ -258114,35 +256545,6 @@
     "translations": {
       "en": "openly",
       "tr": "openly"
-    }
-  },
-  {
-    "id": "L-CORPUS2-06282",
-    "form": "хэткъым",
-    "literalMeaning": "",
-    "partOfSpeech": "noun",
-    "corpusFrequency": 17,
-    "dialectVariants": {
-      "adyghe": "",
-      "kabardian": "хэткъым"
-    },
-    "notes": "Corpus v1.0 batch-2 (freq: 17, lang: kbd, source: none)",
-    "isLemma": false,
-    "rootIds": [
-      "R-KHET"
-    ],
-    "wordFamilyId": "WF-ХЭТ",
-    "derivation": {
-      "rootIds": [
-        "R-ХЭТ"
-      ],
-      "morphemeIds": [],
-      "rule": "compound"
-    },
-    "conceptId": "WHO",
-    "ipa": "/xɐtqǝm/",
-    "translations": {
-      "tr": "Ü, Ü"
     }
   },
   {
@@ -258718,34 +257120,6 @@
     "ipa": "/sʃʼǝʁɐ/",
     "translations": {
       "tr": "BENZET"
-    }
-  },
-  {
-    "id": "L-CORPUS2-06322",
-    "form": "иӏэхэу",
-    "literalMeaning": "",
-    "partOfSpeech": "noun",
-    "corpusFrequency": 17,
-    "dialectVariants": {
-      "adyghe": "иӏэхэу",
-      "kabardian": ""
-    },
-    "notes": "Corpus v1.0 batch-2 (freq: 17, lang: ady, source: none)",
-    "isLemma": false,
-    "rootIds": [
-      "R-I1E"
-    ],
-    "wordFamilyId": "WF-ИӀЭ",
-    "derivation": {
-      "rootIds": [
-        "R-ИӀЭ"
-      ],
-      "morphemeIds": [],
-      "rule": "compound"
-    },
-    "ipa": "/iʔɐxɐw/",
-    "translations": {
-      "tr": "kuyu"
     }
   },
   {
@@ -259327,34 +257701,6 @@
     }
   },
   {
-    "id": "L-CORPUS2-06381",
-    "form": "агъэшӏагъоу",
-    "literalMeaning": "",
-    "partOfSpeech": "noun",
-    "corpusFrequency": 17,
-    "dialectVariants": {
-      "adyghe": "агъэшӏагъоу",
-      "kabardian": ""
-    },
-    "notes": "Corpus v1.0 batch-2 (freq: 17, lang: ady, source: none)",
-    "isLemma": false,
-    "rootIds": [
-      "R-ZHY"
-    ],
-    "wordFamilyId": "WF-ZHY",
-    "derivation": {
-      "rootIds": [
-        "R-ZHY"
-      ],
-      "morphemeIds": [],
-      "rule": "compound"
-    },
-    "ipa": "/'ɐʁɐ/",
-    "translations": {
-      "tr": "dikkat + AFSUNLU"
-    }
-  },
-  {
     "id": "L-CORPUS2-06382",
     "form": "ядин",
     "literalMeaning": "",
@@ -259398,38 +257744,6 @@
     "ipa": "/aːħəʃw/",
     "translations": {
       "tr": "Parça + Karaciğer"
-    }
-  },
-  {
-    "id": "L-CORPUS2-06384",
-    "form": "лъапӏэхэу",
-    "literalMeaning": "",
-    "partOfSpeech": "noun",
-    "corpusFrequency": 17,
-    "dialectVariants": {
-      "adyghe": "лъапӏэхэу",
-      "kabardian": ""
-    },
-    "notes": "Corpus v1.0 batch-2 (freq: 17, lang: ady, source: none)",
-    "isLemma": false,
-    "conceptId": "PRECIOUS_PLURAL_ADV",
-    "subConceptId": "VALUE_PL_ADV",
-    "taxonomyFamily": "Gramer & Nitelik",
-    "rootForm": "лъ-",
-    "rootIds": [
-      "R-LHE"
-    ],
-    "wordFamilyId": "WF-LHE",
-    "derivation": {
-      "rootIds": [
-        "R-LHE"
-      ],
-      "morphemeIds": [],
-      "rule": "compound"
-    },
-    "ipa": "/'ɬɑ:pʹɐ/",
-    "translations": {
-      "tr": "niyet, amac"
     }
   },
   {
@@ -259730,32 +258044,6 @@
     "literalMeaningSource": "translations.ru->tr (orta)"
   },
   {
-    "id": "L-CORPUS2-06414",
-    "form": "дакӏоу",
-    "literalMeaning": "",
-    "partOfSpeech": "noun",
-    "corpusFrequency": 17,
-    "dialectVariants": {
-      "adyghe": "дакӏоу",
-      "kabardian": ""
-    },
-    "notes": "Corpus v1.0 batch-2 (freq: 17, lang: ady, source: none)",
-    "isLemma": false,
-    "rootIds": [
-      "R-1E"
-    ],
-    "wordFamilyId": "WF-1E",
-    "derivation": {
-      "rootIds": [
-        "R-1E"
-      ],
-      "morphemeIds": [],
-      "rule": "compound"
-    },
-    "conceptId": "DINING_ROOM",
-    "ipa": "/'dɑ:kʹʷɐ/"
-  },
-  {
     "id": "L-CORPUS2-06418",
     "form": "кӏэй",
     "literalMeaning": "",
@@ -259783,35 +258071,6 @@
     "translations": {
       "tr": "ayak tabanı",
       "ar": "حوض واد، (أودية)، صقع واطئ، ناحية منخفضة"
-    }
-  },
-  {
-    "id": "L-CORPUS2-06419",
-    "form": "гъэшӏэгъонхэу",
-    "literalMeaning": "",
-    "partOfSpeech": "noun",
-    "corpusFrequency": 17,
-    "dialectVariants": {
-      "adyghe": "гъэшӏэгъонхэу",
-      "kabardian": ""
-    },
-    "notes": "Corpus v1.0 batch-2 (freq: 17, lang: ady, source: none)",
-    "isLemma": false,
-    "rootIds": [
-      "R-GHE"
-    ],
-    "wordFamilyId": "WF-ГЪЭ",
-    "derivation": {
-      "rootIds": [
-        "R-ГЪЭ"
-      ],
-      "morphemeIds": [],
-      "rule": "compound"
-    },
-    "conceptId": "YEAR",
-    "ipa": "/ʁɐʃʼɐʁonxɐw/",
-    "translations": {
-      "tr": "ACEBÜLACAIP"
     }
   },
   {
@@ -262019,37 +260278,6 @@
       "tr": "Onuncu"
     },
     "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8d/%D0%950608%D0%B5%D0%BF%D1%89%D3%8F%D0%B0%D0%BD%D1%8D.ogg"
-  },
-  {
-    "id": "L-CORPUS2-06589",
-    "form": "гупсэхужыпӏэм",
-    "literalMeaning": "",
-    "partOfSpeech": "noun",
-    "corpusFrequency": 16,
-    "dialectVariants": {
-      "adyghe": "",
-      "kabardian": "гупсэхужыпӏэм"
-    },
-    "notes": "Corpus v1.0 batch-2 (freq: 16, lang: kbd, source: none)",
-    "rootIds": [
-      "R-PSA"
-    ],
-    "wordFamilyId": "WF-PSA",
-    "derivation": {
-      "rule": "compound",
-      "components": [
-        "псэ",
-        "гу"
-      ]
-    },
-    "isLemma": false,
-    "subConceptId": "-",
-    "taxonomyFamily": "-",
-    "rootForm": "гу",
-    "ipa": "/gʷǝ'psɐ/",
-    "translations": {
-      "tr": ""
-    }
   },
   {
     "id": "L-CORPUS2-06591",
@@ -264637,36 +262865,6 @@
     }
   },
   {
-    "id": "L-CORPUS2-06782",
-    "form": "нахьыжъхэу",
-    "literalMeaning": "",
-    "partOfSpeech": "noun",
-    "corpusFrequency": 16,
-    "dialectVariants": {
-      "adyghe": "нахьыжъхэу",
-      "kabardian": ""
-    },
-    "notes": "Corpus v1.0 batch-2 (freq: 16, lang: ady, source: none)",
-    "isLemma": false,
-    "rootIds": [
-      "R-PE"
-    ],
-    "wordFamilyId": "WF-PE",
-    "derivation": {
-      "rootIds": [
-        "R-PE"
-      ],
-      "morphemeIds": [],
-      "rule": "compound"
-    },
-    "conceptId": "NOSE",
-    "ipa": "/jɐpɐ're:j/",
-    "ipaSource": "root-derived",
-    "translations": {
-      "tr": "ABLA"
-    }
-  },
-  {
     "id": "L-CORPUS2-06783",
     "form": "фыжьэу",
     "literalMeaning": "",
@@ -265424,35 +263622,6 @@
     }
   },
   {
-    "id": "L-CORPUS2-06849",
-    "form": "щытхэу",
-    "literalMeaning": "",
-    "partOfSpeech": "noun",
-    "corpusFrequency": 16,
-    "dialectVariants": {
-      "adyghe": "щытхэу",
-      "kabardian": ""
-    },
-    "notes": "Corpus v1.0 batch-2 (freq: 16, lang: ady, source: none)",
-    "rootIds": [
-      "R-TKHE"
-    ],
-    "wordFamilyId": "WF-TKHE",
-    "derivation": {
-      "rule": "root",
-      "components": [
-        "тхэ"
-      ]
-    },
-    "isLemma": false,
-    "conceptId": "WRITE",
-    "ipa": "/txɐn/",
-    "ipaSource": "root-derived",
-    "translations": {
-      "tr": "TUNDRA"
-    }
-  },
-  {
     "id": "L-CORPUS2-06851",
     "form": "чӏахьи",
     "literalMeaning": "",
@@ -265478,27 +263647,6 @@
     "conceptId": "SNAKE",
     "ipaSource": "root-derived",
     "ipa": "/tʃʼaħi/"
-  },
-  {
-    "id": "L-CORPUS2-06856",
-    "form": "акъылышӏуагъэ",
-    "literalMeaning": "",
-    "partOfSpeech": "noun",
-    "corpusFrequency": 16,
-    "dialectVariants": {
-      "adyghe": "акъылышӏуагъэ",
-      "kabardian": ""
-    },
-    "notes": "Corpus v1.0 batch-2 (freq: 16, lang: ady, source: none)",
-    "isLemma": false,
-    "rootIds": [
-      "R-AK"
-    ],
-    "conceptId": "MIND",
-    "ipa": "/ɐ'qʹǝɮ/",
-    "translations": {
-      "tr": "ARIFANE"
-    }
   },
   {
     "id": "L-CORPUS2-06862",
@@ -266115,35 +264263,6 @@
     }
   },
   {
-    "id": "L-CORPUS2-06904",
-    "form": "фэдэхэу",
-    "literalMeaning": "",
-    "partOfSpeech": "noun",
-    "corpusFrequency": 16,
-    "dialectVariants": {
-      "adyghe": "фэдэхэу",
-      "kabardian": ""
-    },
-    "notes": "Corpus v1.0 batch-2 (freq: 16, lang: ady, source: none)",
-    "rootIds": [
-      "R-FE"
-    ],
-    "wordFamilyId": "WF-FA",
-    "derivation": {
-      "rule": "root",
-      "components": [
-        "фэ"
-      ]
-    },
-    "isLemma": false,
-    "conceptId": "GREEN",
-    "ipa": "/wǝˈdzǝfɐ/",
-    "ipaSource": "root-derived",
-    "translations": {
-      "tr": "GÖSTERIŞ"
-    }
-  },
-  {
     "id": "L-CORPUS2-06908",
     "form": "къутамэр",
     "literalMeaning": "",
@@ -266592,36 +264711,6 @@
     "ipaSource": "root-derived",
     "translations": {
       "tr": "HAZINE + BALIK"
-    }
-  },
-  {
-    "id": "L-CORPUS2-06940",
-    "form": "гъашӏэр",
-    "literalMeaning": "",
-    "partOfSpeech": "noun",
-    "corpusFrequency": 16,
-    "dialectVariants": {
-      "adyghe": "гъашӏэр",
-      "kabardian": ""
-    },
-    "notes": "Corpus v1.0 batch-2 (freq: 16, lang: ady, source: none)",
-    "isLemma": false,
-    "rootIds": [
-      "R-TKHE"
-    ],
-    "wordFamilyId": "WF-TKHE",
-    "derivation": {
-      "rootIds": [
-        "R-TKHE"
-      ],
-      "morphemeIds": [],
-      "rule": "compound"
-    },
-    "conceptId": "WRITE",
-    "ipa": "/txɐn/",
-    "ipaSource": "root-derived",
-    "translations": {
-      "tr": "BIYOGRAFI"
     }
   },
   {
@@ -267505,33 +265594,6 @@
     "ipaSource": "root-derived"
   },
   {
-    "id": "L-CORPUS2-07012",
-    "form": "къикӏыркъым",
-    "literalMeaning": "",
-    "partOfSpeech": "noun",
-    "corpusFrequency": 15,
-    "dialectVariants": {
-      "adyghe": "",
-      "kabardian": "къикӏыркъым"
-    },
-    "notes": "Corpus v1.0 batch-2 (freq: 15, lang: kbd, source: none)",
-    "isLemma": false,
-    "rootIds": [
-      "R-IN"
-    ],
-    "wordFamilyId": "WF-IN",
-    "derivation": {
-      "rootIds": [
-        "R-IN"
-      ],
-      "morphemeIds": [],
-      "rule": "compound"
-    },
-    "conceptId": "THOUSAND",
-    "ipa": "/mi:n/",
-    "ipaSource": "root-derived"
-  },
-  {
     "id": "L-CORPUS2-07014",
     "form": "зэӏыхын",
     "literalMeaning": "Зым адрейм зыгуэр иритын, зэтэн",
@@ -267630,35 +265692,6 @@
     "ipa": "/qɐdʒaɕ/",
     "translations": {
       "tr": "donmak"
-    }
-  },
-  {
-    "id": "L-CORPUS2-07019",
-    "form": "яхэткъым",
-    "literalMeaning": "",
-    "partOfSpeech": "noun",
-    "corpusFrequency": 15,
-    "dialectVariants": {
-      "adyghe": "",
-      "kabardian": "яхэткъым"
-    },
-    "notes": "Corpus v1.0 batch-2 (freq: 15, lang: kbd, source: none)",
-    "isLemma": false,
-    "rootIds": [
-      "R-NE"
-    ],
-    "wordFamilyId": "WF-NE",
-    "derivation": {
-      "rootIds": [
-        "R-NE"
-      ],
-      "morphemeIds": [],
-      "rule": "compound"
-    },
-    "ipaSource": "root-derived",
-    "ipa": "/jaxɐtqǝm/",
-    "translations": {
-      "tr": "kim"
     }
   },
   {
@@ -267934,36 +265967,6 @@
       "ru": "уродливый, с безобразным лицом",
       "tr": "ANLAMSIZ",
       "trSource": "en->tr koprusu (orta)"
-    }
-  },
-  {
-    "id": "L-CORPUS2-07041",
-    "form": "гущӏэгъукӏэ",
-    "literalMeaning": "",
-    "partOfSpeech": "noun",
-    "corpusFrequency": 15,
-    "dialectVariants": {
-      "adyghe": "",
-      "kabardian": "гущӏэгъукӏэ"
-    },
-    "notes": "Corpus v1.0 batch-2 (freq: 15, lang: kbd, source: none)",
-    "rootIds": [
-      "R-GUSHCH"
-    ],
-    "wordFamilyId": "WF-GU",
-    "derivation": {
-      "rule": "root",
-      "components": [
-        "гу"
-      ]
-    },
-    "isLemma": false,
-    "subConceptId": "-",
-    "taxonomyFamily": "-",
-    "rootForm": "гу",
-    "ipa": "/gʷǝ'ɕʹɐʁʷ/",
-    "translations": {
-      "tr": "VICDANEN"
     }
   },
   {
@@ -269295,37 +267298,6 @@
     "ipaSource": "root-derived"
   },
   {
-    "id": "L-CORPUS2-07132",
-    "form": "гуащӏэкӏэ",
-    "literalMeaning": "",
-    "partOfSpeech": "noun",
-    "corpusFrequency": 15,
-    "dialectVariants": {
-      "adyghe": "",
-      "kabardian": "гуащӏэкӏэ"
-    },
-    "notes": "Corpus v1.0 batch-2 (freq: 15, lang: kbd, source: none)",
-    "rootIds": [
-      "R-GU"
-    ],
-    "wordFamilyId": "WF-GU",
-    "derivation": {
-      "rule": "root",
-      "components": [
-        "гу"
-      ]
-    },
-    "isLemma": false,
-    "conceptId": "LABOR",
-    "subConceptId": "BY_HARD_WORK",
-    "taxonomyFamily": "Güç & Emek",
-    "rootForm": "гуащӀэ",
-    "ipa": "/'gʷɑ:ɕʹɐ/",
-    "translations": {
-      "tr": "AMELE"
-    }
-  },
-  {
     "id": "L-CORPUS2-07135",
     "form": "ӏуихащ",
     "literalMeaning": "",
@@ -270569,32 +268541,6 @@
     }
   },
   {
-    "id": "L-CORPUS2-07247",
-    "form": "бампӏэр",
-    "literalMeaning": "",
-    "partOfSpeech": "noun",
-    "corpusFrequency": 15,
-    "dialectVariants": {
-      "adyghe": "",
-      "kabardian": "бампӏэр"
-    },
-    "notes": "Corpus v1.0 batch-2 (freq: 15, lang: kbd, source: none)",
-    "isLemma": false,
-    "rootIds": [
-      "R-1E"
-    ],
-    "wordFamilyId": "WF-1E",
-    "derivation": {
-      "rootIds": [
-        "R-1E"
-      ],
-      "morphemeIds": [],
-      "rule": "compound"
-    },
-    "conceptId": "DINING_ROOM",
-    "ipa": "/'bɑ:mpʹɐ/"
-  },
-  {
     "id": "L-CORPUS2-07249",
     "form": "къыщыскӏэ",
     "literalMeaning": "",
@@ -271720,35 +269666,6 @@
     "ipaSource": "root-derived",
     "translations": {
       "tr": ""
-    }
-  },
-  {
-    "id": "L-CORPUS2-07336",
-    "form": "бзэджашӏэр",
-    "literalMeaning": "",
-    "partOfSpeech": "noun",
-    "corpusFrequency": 15,
-    "dialectVariants": {
-      "adyghe": "бзэджашӏэр",
-      "kabardian": ""
-    },
-    "notes": "Corpus v1.0 batch-2 (freq: 15, lang: ady, source: none)",
-    "rootIds": [
-      "R-BZA"
-    ],
-    "wordFamilyId": "WF-BZA",
-    "derivation": {
-      "rule": "root",
-      "components": [
-        "бзэ"
-      ]
-    },
-    "isLemma": false,
-    "conceptId": "TONGUE",
-    "ipaSource": "root-derived",
-    "ipa": "/bzɐdʒaʃʼɐr/",
-    "translations": {
-      "tr": "dil + <div style + BILGI"
     }
   },
   {
@@ -276272,32 +274189,6 @@
     }
   },
   {
-    "id": "L-CORPUS2-07694",
-    "form": "ищӏыркъым",
-    "literalMeaning": "",
-    "partOfSpeech": "noun",
-    "corpusFrequency": 14,
-    "dialectVariants": {
-      "adyghe": "",
-      "kabardian": "ищӏыркъым"
-    },
-    "notes": "Corpus v1.0 batch-2 (freq: 14, lang: kbd, source: none)",
-    "isLemma": false,
-    "rootIds": [
-      "R-NE"
-    ],
-    "wordFamilyId": "WF-NE",
-    "derivation": {
-      "rootIds": [
-        "R-NE"
-      ],
-      "morphemeIds": [],
-      "rule": "compound"
-    },
-    "ipaSource": "root-derived",
-    "ipa": "/iɕʼǝrqǝm/"
-  },
-  {
     "id": "L-CORPUS2-07696",
     "form": "хакӏуэ",
     "literalMeaning": "aygır",
@@ -276781,32 +274672,6 @@
     "translations": {
       "tr": "TINLAMAK"
     }
-  },
-  {
-    "id": "L-CORPUS2-07730",
-    "form": "уасэкъым",
-    "literalMeaning": "",
-    "partOfSpeech": "noun",
-    "corpusFrequency": 14,
-    "dialectVariants": {
-      "adyghe": "",
-      "kabardian": "уасэкъым"
-    },
-    "notes": "Corpus v1.0 batch-2 (freq: 14, lang: kbd, source: none)",
-    "isLemma": false,
-    "rootIds": [
-      "R-SCHY"
-    ],
-    "wordFamilyId": "WF-SCHY",
-    "derivation": {
-      "rootIds": [
-        "R-SCHY"
-      ],
-      "morphemeIds": [],
-      "rule": "compound"
-    },
-    "conceptId": "PETROLEUM",
-    "ipa": "/'wɑ:sɐ/"
   },
   {
     "id": "L-CORPUS2-07731",
@@ -277732,7 +275597,10 @@
     },
     "isLemma": false,
     "ipa": "/'ʔɐpʹqʹɬɐpʹqʹ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "rica etmek, yalvarmak"
+    }
   },
   {
     "id": "L-CORPUS2-07805",
@@ -278665,7 +276533,7 @@
     "conceptId": "YEAR",
     "ipa": "/ʁɐ'χʷǝn/",
     "translations": {
-      "tr": "DEJENERASYON"
+      "tr": "gelişme, büyüme, başarı"
     }
   },
   {
@@ -278779,24 +276647,6 @@
     "translations": {
       "tr": "FITOPATOLOJI"
     }
-  },
-  {
-    "id": "L-CORPUS2-07862",
-    "form": "атакъэр",
-    "literalMeaning": "HOROZ ÖTMESI",
-    "partOfSpeech": "noun",
-    "corpusFrequency": 14,
-    "dialectVariants": {
-      "adyghe": "атакъэр",
-      "kabardian": ""
-    },
-    "notes": "Corpus v1.0 batch-2 (freq: 14, lang: ady, source: none)",
-    "isLemma": false,
-    "ipa": "/aːtaːqar/",
-    "translations": {
-      "tr": "HOROZ ÖTMESI"
-    },
-    "literalMeaningSource": "translations.tr (yuksek)"
   },
   {
     "id": "L-CORPUS2-07866",
@@ -280213,37 +278063,6 @@
     }
   },
   {
-    "id": "L-CORPUS2-07993",
-    "form": "гукъэбзагъэкӏэ",
-    "literalMeaning": "",
-    "partOfSpeech": "noun",
-    "corpusFrequency": 14,
-    "dialectVariants": {
-      "adyghe": "гукъэбзагъэкӏэ",
-      "kabardian": ""
-    },
-    "notes": "Corpus v1.0 batch-2 (freq: 14, lang: ady, source: none)",
-    "rootIds": [
-      "R-GU"
-    ],
-    "wordFamilyId": "WF-GU",
-    "derivation": {
-      "rule": "root",
-      "components": [
-        "гу"
-      ]
-    },
-    "isLemma": false,
-    "subConceptId": "-",
-    "taxonomyFamily": "-",
-    "rootForm": "гу",
-    "ipa": "/'gʷǝfʹɐ/",
-    "ipaSource": "root-derived",
-    "translations": {
-      "tr": "HULUSKÂRANE"
-    }
-  },
-  {
     "id": "L-CORPUS2-07995",
     "form": "зеӏом",
     "literalMeaning": "",
@@ -280896,35 +278715,6 @@
     "translations": {
       "tr": "tatmak",
       "ar": "يدخل يده ملامساً، يمس بيده"
-    }
-  },
-  {
-    "id": "L-CORPUS2-08067",
-    "form": "кӏонхэу",
-    "literalMeaning": "",
-    "partOfSpeech": "noun",
-    "corpusFrequency": 14,
-    "dialectVariants": {
-      "adyghe": "кӏонхэу",
-      "kabardian": ""
-    },
-    "notes": "Corpus v1.0 batch-2 (freq: 14, lang: ady, source: none)",
-    "isLemma": false,
-    "rootIds": [
-      "R-K1O"
-    ],
-    "wordFamilyId": "WF-КӀО",
-    "derivation": {
-      "rootIds": [
-        "R-КӀО"
-      ],
-      "morphemeIds": [],
-      "rule": "compound"
-    },
-    "ipa": "/kʹʷɐ/",
-    "ipaSource": "root-derived",
-    "translations": {
-      "tr": "Gitmek"
     }
   },
   {
@@ -281710,34 +279500,6 @@
     "ipa": "/xɐʁɐˈtʹʂǝn/",
     "translations": {
       "tr": "HAZFETMEK"
-    }
-  },
-  {
-    "id": "L-CORPUS2-08116",
-    "form": "тыншкъым",
-    "literalMeaning": "",
-    "partOfSpeech": "noun",
-    "corpusFrequency": 13,
-    "dialectVariants": {
-      "adyghe": "",
-      "kabardian": "тыншкъым"
-    },
-    "notes": "Corpus v1.0 batch-2 (freq: 13, lang: kbd, source: none)",
-    "isLemma": false,
-    "rootIds": [
-      "R-TYN"
-    ],
-    "wordFamilyId": "WF-ТЫН",
-    "derivation": {
-      "rootIds": [
-        "R-ТЫН"
-      ],
-      "morphemeIds": [],
-      "rule": "compound"
-    },
-    "ipa": "/tǝnʂ/",
-    "translations": {
-      "tr": "BASİT"
     }
   },
   {
@@ -282537,35 +280299,6 @@
     "conceptId": "NOSE",
     "ipa": "/jɐpɐ're:j/",
     "ipaSource": "root-derived"
-  },
-  {
-    "id": "L-CORPUS2-08176",
-    "form": "гъущӏым",
-    "literalMeaning": "",
-    "partOfSpeech": "noun",
-    "corpusFrequency": 13,
-    "dialectVariants": {
-      "adyghe": "",
-      "kabardian": "гъущӏым"
-    },
-    "notes": "Corpus v1.0 batch-2 (freq: 13, lang: kbd, source: none)",
-    "isLemma": false,
-    "rootIds": [
-      "R-GHWAZH"
-    ],
-    "wordFamilyId": "WF-GHWAZH",
-    "derivation": {
-      "rootIds": [
-        "R-GHWAZH"
-      ],
-      "morphemeIds": [],
-      "rule": "compound"
-    },
-    "conceptId": "YELLOW",
-    "ipa": "/ʁʷǝɕʹ/",
-    "translations": {
-      "tr": "demir"
-    }
   },
   {
     "id": "L-CORPUS2-08177",
@@ -283732,7 +281465,10 @@
     },
     "conceptId": "GRANDFATHER",
     "ipa": "/ɐ'dɐʂxʷɐ/",
-    "ipaSource": "root-derived"
+    "ipaSource": "root-derived",
+    "translations": {
+      "tr": "büyük anne, nine"
+    }
   },
   {
     "id": "L-CORPUS2-08250",
@@ -283931,36 +281667,6 @@
     "literalMeaningSource": "translations.ru->tr (orta)"
   },
   {
-    "id": "L-CORPUS2-08263",
-    "form": "гугъукъым",
-    "literalMeaning": "",
-    "partOfSpeech": "noun",
-    "corpusFrequency": 13,
-    "dialectVariants": {
-      "adyghe": "",
-      "kabardian": "гугъукъым"
-    },
-    "notes": "Corpus v1.0 batch-2 (freq: 13, lang: kbd, source: none)",
-    "rootIds": [
-      "R-GUG"
-    ],
-    "wordFamilyId": "WF-GU",
-    "derivation": {
-      "rule": "root",
-      "components": [
-        "гу"
-      ]
-    },
-    "isLemma": false,
-    "subConceptId": "-",
-    "taxonomyFamily": "-",
-    "rootForm": "гу",
-    "ipa": "/gʷǝʁʷ/",
-    "translations": {
-      "tr": "zorluk, sikinti"
-    }
-  },
-  {
     "id": "L-CORPUS2-08264",
     "form": "хузэӏулӏын",
     "literalMeaning": "",
@@ -284063,35 +281769,6 @@
     "ipaSource": "root-derived",
     "translations": {
       "tr": "impossible"
-    }
-  },
-  {
-    "id": "L-CORPUS2-08275",
-    "form": "цӏыхухэу",
-    "literalMeaning": "",
-    "partOfSpeech": "noun",
-    "corpusFrequency": 13,
-    "dialectVariants": {
-      "adyghe": "",
-      "kabardian": "цӏыхухэу"
-    },
-    "notes": "Corpus v1.0 batch-2 (freq: 13, lang: kbd, source: none)",
-    "isLemma": false,
-    "rootIds": [
-      "R-TSYKHU"
-    ],
-    "wordFamilyId": "WF-TSYKHU",
-    "derivation": {
-      "rootIds": [
-        "R-TSYKHU"
-      ],
-      "morphemeIds": [],
-      "rule": "compound"
-    },
-    "conceptId": "MAN",
-    "ipa": "/tʹsǝxʷ/",
-    "translations": {
-      "tr": "insan"
     }
   },
   {
@@ -287875,36 +285552,6 @@
     }
   },
   {
-    "id": "L-CORPUS2-08550",
-    "form": "пащэхэу",
-    "literalMeaning": "",
-    "partOfSpeech": "noun",
-    "corpusFrequency": 13,
-    "dialectVariants": {
-      "adyghe": "пащэхэу",
-      "kabardian": ""
-    },
-    "notes": "Corpus v1.0 batch-2 (freq: 13, lang: ady, source: none)",
-    "isLemma": false,
-    "rootIds": [
-      "R-SHE"
-    ],
-    "wordFamilyId": "WF-SHE",
-    "conceptId": "FAT",
-    "derivation": {
-      "rootIds": [
-        "R-SHE"
-      ],
-      "morphemeIds": [],
-      "rule": "compound"
-    },
-    "ipa": "/ʂħa sǝn/",
-    "ipaSource": "root-derived",
-    "translations": {
-      "tr": "LİDER"
-    }
-  },
-  {
     "id": "L-CORPUS2-08552",
     "form": "пшӏоигъор",
     "literalMeaning": "",
@@ -290760,35 +288407,6 @@
     }
   },
   {
-    "id": "L-CORPUS2-08765",
-    "form": "хэшӏыкӏыгъэхэу",
-    "literalMeaning": "",
-    "partOfSpeech": "noun",
-    "corpusFrequency": 13,
-    "dialectVariants": {
-      "adyghe": "хэшӏыкӏыгъэхэу",
-      "kabardian": ""
-    },
-    "notes": "Corpus v1.0 batch-2 (freq: 13, lang: ady, source: none)",
-    "isLemma": false,
-    "rootIds": [
-      "R-SHE2"
-    ],
-    "wordFamilyId": "WF-SHE2",
-    "derivation": {
-      "rootIds": [
-        "R-SHE2"
-      ],
-      "morphemeIds": [],
-      "rule": "compound"
-    },
-    "ipa": "/pʹqʹǝ/",
-    "ipaSource": "root-derived",
-    "translations": {
-      "tr": "BAKIYE"
-    }
-  },
-  {
     "id": "L-CORPUS2-08766",
     "form": "бгъэфедэн",
     "literalMeaning": "",
@@ -292655,35 +290273,6 @@
     }
   },
   {
-    "id": "L-CORPUS2-08888",
-    "form": "къэхъуакъым",
-    "literalMeaning": "",
-    "partOfSpeech": "noun",
-    "corpusFrequency": 12,
-    "dialectVariants": {
-      "adyghe": "",
-      "kabardian": "къэхъуакъым"
-    },
-    "notes": "Corpus v1.0 batch-2 (freq: 12, lang: kbd, source: none)",
-    "isLemma": false,
-    "rootIds": [
-      "R-KHUMEN"
-    ],
-    "wordFamilyId": "WF-KHUMEN",
-    "derivation": {
-      "rootIds": [
-        "R-KHUMEN"
-      ],
-      "morphemeIds": [],
-      "rule": "compound"
-    },
-    "conceptId": "PROTECT",
-    "ipa": "/χʷɐn/",
-    "translations": {
-      "tr": "ERMİŞ"
-    }
-  },
-  {
     "id": "L-CORPUS2-08892",
     "form": "щӏэхъумэн",
     "literalMeaning": "",
@@ -293146,35 +290735,6 @@
       "en": "gently, quietly, modestly, in a balanced fashion (behave, act)",
       "ru": "тихо, спокойно (вести себя)",
       "tr": "meekly"
-    }
-  },
-  {
-    "id": "L-CORPUS2-08923",
-    "form": "гъэщӏэгъуэнкъым",
-    "literalMeaning": "",
-    "partOfSpeech": "noun",
-    "corpusFrequency": 12,
-    "dialectVariants": {
-      "adyghe": "",
-      "kabardian": "гъэщӏэгъуэнкъым"
-    },
-    "notes": "Corpus v1.0 batch-2 (freq: 12, lang: kbd, source: none)",
-    "isLemma": false,
-    "rootIds": [
-      "R-GHE"
-    ],
-    "wordFamilyId": "WF-ГЪЭ",
-    "derivation": {
-      "rootIds": [
-        "R-ГЪЭ"
-      ],
-      "morphemeIds": [],
-      "rule": "compound"
-    },
-    "conceptId": "YEAR",
-    "ipa": "/ʁɐɕʹɐ'ʁʷɐn/",
-    "translations": {
-      "tr": "wonder"
     }
   },
   {
@@ -293792,34 +291352,6 @@
     "ipa": "/fʹɐɕmǝχʷǝ'nǝʁɐ/",
     "translations": {
       "tr": "dikkat + sansli ev"
-    }
-  },
-  {
-    "id": "L-CORPUS2-08972",
-    "form": "хъужыркъым",
-    "literalMeaning": "",
-    "partOfSpeech": "noun",
-    "corpusFrequency": 12,
-    "dialectVariants": {
-      "adyghe": "",
-      "kabardian": "хъужыркъым"
-    },
-    "notes": "Corpus v1.0 batch-2 (freq: 12, lang: kbd, source: none)",
-    "isLemma": false,
-    "rootIds": [
-      "R-SHE2"
-    ],
-    "wordFamilyId": "WF-SHE2",
-    "derivation": {
-      "rootIds": [
-        "R-SHE2"
-      ],
-      "morphemeIds": [],
-      "rule": "compound"
-    },
-    "ipa": "/χʷǝᶎǝr/",
-    "translations": {
-      "tr": "CINSEL"
     }
   },
   {
@@ -298757,27 +296289,6 @@
     "conceptId": "LOVE"
   },
   {
-    "id": "L-CORPUS2-09319",
-    "form": "фӏэфӏкъым",
-    "literalMeaning": "",
-    "partOfSpeech": "noun",
-    "corpusFrequency": 12,
-    "dialectVariants": {
-      "adyghe": "",
-      "kabardian": "фӏэфӏкъым"
-    },
-    "notes": "Corpus v1.0 batch-2 (freq: 12, lang: kbd, source: none)",
-    "isLemma": false,
-    "rootIds": [
-      "R-F"
-    ],
-    "conceptId": "ROT",
-    "ipa": "/fʹɐfʹ/",
-    "translations": {
-      "tr": "tatli, lezzetli"
-    }
-  },
-  {
     "id": "L-CORPUS2-09321",
     "form": "гъуэзфӏэӏу",
     "literalMeaning": "",
@@ -298803,7 +296314,7 @@
     "conceptId": "YELLOW",
     "ipa": "/ʁʷɐz/",
     "translations": {
-      "tr": "GAZ + TURŞU"
+      "tr": "mahir, usta, becerikli"
     }
   },
   {
@@ -299611,35 +297122,6 @@
     "ipa": "/jismaːħjilji/"
   },
   {
-    "id": "L-CORPUS2-09407",
-    "form": "зэхэугуфыкӏыгъэхэу",
-    "literalMeaning": "",
-    "partOfSpeech": "noun",
-    "corpusFrequency": 12,
-    "dialectVariants": {
-      "adyghe": "зэхэугуфыкӏыгъэхэу",
-      "kabardian": ""
-    },
-    "notes": "Corpus v1.0 batch-2 (freq: 12, lang: ady, source: none)",
-    "isLemma": false,
-    "rootIds": [
-      "R-GU"
-    ],
-    "wordFamilyId": "WF-GU",
-    "derivation": {
-      "rootIds": [
-        "R-GU"
-      ],
-      "morphemeIds": [],
-      "rule": "compound"
-    },
-    "ipa": "/'gʷǝfʹɐ/",
-    "ipaSource": "root-derived",
-    "translations": {
-      "tr": "BARIZ"
-    }
-  },
-  {
     "id": "L-CORPUS2-09408",
     "form": "пӏоу",
     "literalMeaning": "",
@@ -299696,36 +297178,6 @@
     "ipaSource": "root-derived"
   },
   {
-    "id": "L-CORPUS2-09413",
-    "form": "едэӏунхэу",
-    "literalMeaning": "",
-    "partOfSpeech": "noun",
-    "corpusFrequency": 12,
-    "dialectVariants": {
-      "adyghe": "едэӏунхэу",
-      "kabardian": ""
-    },
-    "notes": "Corpus v1.0 batch-2 (freq: 12, lang: ady, source: none)",
-    "isLemma": false,
-    "rootIds": [
-      "R-KE_1"
-    ],
-    "wordFamilyId": "WF-KE_1",
-    "derivation": {
-      "rootIds": [
-        "R-KE_1"
-      ],
-      "morphemeIds": [],
-      "rule": "compound"
-    },
-    "conceptId": "EXPLOSIVE_BURSTING",
-    "ipa": "/qʹɐ'wɐn/",
-    "ipaSource": "root-derived",
-    "translations": {
-      "tr": "DINLEMEK"
-    }
-  },
-  {
     "id": "L-CORPUS2-09414",
     "form": "типсэкӏодхэр",
     "literalMeaning": "",
@@ -299769,35 +297221,6 @@
     "ipa": "/waːʂwaxam/",
     "translations": {
       "tr": "Örme zırh gömlek"
-    }
-  },
-  {
-    "id": "L-CORPUS2-09417",
-    "form": "джуртыбзэкӏэ",
-    "literalMeaning": "",
-    "partOfSpeech": "noun",
-    "corpusFrequency": 12,
-    "dialectVariants": {
-      "adyghe": "джуртыбзэкӏэ",
-      "kabardian": ""
-    },
-    "notes": "Corpus v1.0 batch-2 (freq: 12, lang: ady, source: none)",
-    "rootIds": [
-      "R-BZA"
-    ],
-    "wordFamilyId": "WF-BZA",
-    "derivation": {
-      "rule": "root",
-      "components": [
-        "бзэ"
-      ]
-    },
-    "isLemma": false,
-    "conceptId": "TONGUE",
-    "ipaSource": "root-derived",
-    "ipa": "/dʒwrtǝbzɐkʼɐ/",
-    "translations": {
-      "tr": ""
     }
   },
   {
@@ -300130,34 +297553,6 @@
     "ipaSource": "root-derived"
   },
   {
-    "id": "L-CORPUS2-09447",
-    "form": "агъэхьазырыгъ",
-    "literalMeaning": "",
-    "partOfSpeech": "noun",
-    "corpusFrequency": 12,
-    "dialectVariants": {
-      "adyghe": "агъэхьазырыгъ",
-      "kabardian": ""
-    },
-    "notes": "Corpus v1.0 batch-2 (freq: 12, lang: ady, source: none)",
-    "isLemma": false,
-    "rootIds": [
-      "R-ZHY"
-    ],
-    "wordFamilyId": "WF-ZHY",
-    "derivation": {
-      "rootIds": [
-        "R-ZHY"
-      ],
-      "morphemeIds": [],
-      "rule": "compound"
-    },
-    "ipa": "/'ɐʁɐ/",
-    "translations": {
-      "tr": "dikkat + ALÉSTA"
-    }
-  },
-  {
     "id": "L-CORPUS2-09449",
     "form": "уипщылӏхэм",
     "literalMeaning": "",
@@ -300338,28 +297733,6 @@
     }
   },
   {
-    "id": "L-CORPUS2-09460",
-    "form": "шъыпкъэхэу",
-    "literalMeaning": "",
-    "partOfSpeech": "noun",
-    "corpusFrequency": 12,
-    "dialectVariants": {
-      "adyghe": "шъыпкъэхэу",
-      "kabardian": ""
-    },
-    "notes": "Corpus v1.0 batch-2 (freq: 12, lang: ady, source: none)",
-    "isLemma": false,
-    "rootIds": [
-      "R-SHQE"
-    ],
-    "conceptId": "TRUE",
-    "ipa": "/'ɕǝpʹqʹɐ/",
-    "ipaSource": "root-derived",
-    "translations": {
-      "tr": "dogru"
-    }
-  },
-  {
     "id": "L-CORPUS2-09462",
     "form": "къэсысыгъ",
     "literalMeaning": "",
@@ -300519,36 +297892,6 @@
     "conceptId": "MORNING",
     "ipa": "/pɕɐ'ddᶎǝʑ/",
     "ipaSource": "root-derived"
-  },
-  {
-    "id": "L-CORPUS2-09473",
-    "form": "къабзэхэу",
-    "literalMeaning": "",
-    "partOfSpeech": "noun",
-    "corpusFrequency": 12,
-    "dialectVariants": {
-      "adyghe": "къабзэхэу",
-      "kabardian": ""
-    },
-    "notes": "Corpus v1.0 batch-2 (freq: 12, lang: ady, source: none)",
-    "rootIds": [
-      "R-BZA",
-      "R-QA"
-    ],
-    "wordFamilyId": "WF-BZA",
-    "derivation": {
-      "rule": "compound",
-      "components": [
-        "бзэ",
-        "къа"
-      ]
-    },
-    "isLemma": false,
-    "conceptId": "TONGUE",
-    "ipa": "/'qʹɑ:bzɐ/",
-    "translations": {
-      "tr": "belirli, belli"
-    }
   },
   {
     "id": "L-CORPUS2-09475",
@@ -301158,33 +298501,6 @@
     "ipa": "/psǝn/",
     "translations": {
       "tr": "ACIL"
-    }
-  },
-  {
-    "id": "L-CORPUS2-09525",
-    "form": "лъэпкъхэу",
-    "literalMeaning": "",
-    "partOfSpeech": "noun",
-    "corpusFrequency": 12,
-    "dialectVariants": {
-      "adyghe": "лъэпкъхэу",
-      "kabardian": ""
-    },
-    "notes": "Corpus v1.0 batch-2 (freq: 12, lang: ady, source: none)",
-    "rootIds": [
-      "R-LHA"
-    ],
-    "wordFamilyId": "WF-LHA",
-    "derivation": {
-      "rule": "root",
-      "components": [
-        "лъэ"
-      ]
-    },
-    "isLemma": false,
-    "ipa": "/ɬɐpʹqʹ/",
-    "translations": {
-      "tr": "ÇİN CUMHURİYETİ"
     }
   },
   {
@@ -302370,32 +299686,6 @@
     }
   },
   {
-    "id": "L-CORPUS2-09637",
-    "form": "агурыгъаӏу",
-    "literalMeaning": "",
-    "partOfSpeech": "noun",
-    "corpusFrequency": 12,
-    "dialectVariants": {
-      "adyghe": "агурыгъаӏу",
-      "kabardian": ""
-    },
-    "notes": "Corpus v1.0 batch-2 (freq: 12, lang: ady, source: none)",
-    "isLemma": false,
-    "rootIds": [
-      "R-GU"
-    ],
-    "wordFamilyId": "WF-GU",
-    "derivation": {
-      "rootIds": [
-        "R-GU"
-      ],
-      "morphemeIds": [],
-      "rule": "compound"
-    },
-    "ipa": "/'gʷǝfʹɐ/",
-    "ipaSource": "root-derived"
-  },
-  {
     "id": "L-CORPUS2-09638",
     "form": "къекӏущтыр",
     "literalMeaning": "",
@@ -302422,36 +299712,6 @@
     "ipa": "/qʹe:kʹʷ/",
     "translations": {
       "tr": ""
-    }
-  },
-  {
-    "id": "L-CORPUS2-09639",
-    "form": "джащыгъур",
-    "literalMeaning": "",
-    "partOfSpeech": "noun",
-    "corpusFrequency": 12,
-    "dialectVariants": {
-      "adyghe": "джащыгъур",
-      "kabardian": ""
-    },
-    "notes": "Corpus v1.0 batch-2 (freq: 12, lang: ady, source: none)",
-    "isLemma": false,
-    "rootIds": [
-      "R-SHCH"
-    ],
-    "wordFamilyId": "WF-SHCH",
-    "conceptId": "POINT",
-    "derivation": {
-      "rootIds": [
-        "R-SHCH"
-      ],
-      "morphemeIds": [],
-      "rule": "compound"
-    },
-    "ipa": "/ɕǝs'ħǝn/",
-    "ipaSource": "root-derived",
-    "translations": {
-      "tr": "AYNIYLA + Kuru"
     }
   },
   {
@@ -304530,38 +301790,6 @@
     "ipaSource": "root-derived",
     "translations": {
       "tr": "EVLAT"
-    }
-  },
-  {
-    "id": "L-CORPUS2-09829",
-    "form": "пэжкъым",
-    "literalMeaning": "",
-    "partOfSpeech": "noun",
-    "corpusFrequency": 11,
-    "dialectVariants": {
-      "adyghe": "",
-      "kabardian": "пэжкъым"
-    },
-    "notes": "Corpus v1.0 batch-2 (freq: 11, lang: kbd, source: none)",
-    "rootIds": [
-      "R-PA"
-    ],
-    "wordFamilyId": "WF-PA",
-    "derivation": {
-      "rule": "root",
-      "components": [
-        "пэ"
-      ]
-    },
-    "isLemma": false,
-    "conceptId": "NOT_TRUE",
-    "subConceptId": "NEGATIVE_STATE",
-    "taxonomyFamily": "Gramer & Çekim",
-    "rootForm": "пэ-",
-    "ipa": "/'ʔɐpɐ/",
-    "ipaSource": "root-derived",
-    "translations": {
-      "tr": "dogru, gercek"
     }
   },
   {
@@ -391294,28 +388522,6 @@
     "rootIds": [
       "R-KIY_1"
     ]
-  },
-  {
-    "id": "L-PLANT-000",
-    "form": "адыгэ бжьыныху",
-    "literalMeaning": "Adıge sarımsağı",
-    "partOfSpeech": "noun",
-    "notes": "Bitki (Plant)",
-    "rootIds": [
-      "R-ZHY"
-    ],
-    "wordFamilyId": "WF-ZHY",
-    "derivation": {
-      "rule": "root",
-      "components": [
-        "жьы"
-      ]
-    },
-    "isLemma": true,
-    "translations": {
-      "tr": "Adıge sarımsağı"
-    },
-    "ipa": "/ɐ'dǝɣɐ/"
   },
   {
     "id": "L-PLANT-003",
@@ -876318,25 +873524,9 @@
     "notes": "[MANUEL] Dogu kok ekleme"
   },
   {
-    "form": "адэнапӏас",
-    "translations": {
-      "tr": "baba ocağı"
-    },
-    "pos": "UNKNOWN",
-    "notes": "[MANUEL] Dogu kok"
-  },
-  {
     "form": "анэ пщыпхъ",
     "translations": {
       "tr": "kaynana"
-    },
-    "pos": "UNKNOWN",
-    "notes": "[MANUEL] Dogu kok"
-  },
-  {
-    "form": "анэнапӏас",
-    "translations": {
-      "tr": "ana ocağı"
     },
     "pos": "UNKNOWN",
     "notes": "[MANUEL] Dogu kok"
@@ -876422,14 +873612,6 @@
     "notes": "[MANUEL] Dogu kok"
   },
   {
-    "form": "бзащӏэпс",
-    "translations": {
-      "tr": "casusluk"
-    },
-    "pos": "UNKNOWN",
-    "notes": "[MANUEL] Dogu kok"
-  },
-  {
     "form": "бзуущӏэ",
     "translations": {
       "tr": "kuşçuluk"
@@ -876441,14 +873623,6 @@
     "form": "бзэджашӏэ",
     "translations": {
       "tr": "kötülük yapan, hain"
-    },
-    "pos": "UNKNOWN",
-    "notes": "[MANUEL] Dogu kok"
-  },
-  {
-    "form": "блэнэпцӏ",
-    "translations": {
-      "tr": "yılan dili (bitki)"
     },
     "pos": "UNKNOWN",
     "notes": "[MANUEL] Dogu kok"
@@ -876478,14 +873652,6 @@
     "notes": "[MANUEL] Dogu kok"
   },
   {
-    "form": "вакъэдэдӏ",
-    "translations": {
-      "tr": "ayakkabıcı, kunduracı"
-    },
-    "pos": "UNKNOWN",
-    "notes": "[MANUEL] Dogu kok"
-  },
-  {
     "form": "гу щифэ",
     "translations": {
       "tr": "gönülden isteyerek"
@@ -876494,9 +873660,169 @@
     "notes": "[MANUEL] Dogu kok"
   },
   {
-    "form": "гуауэ зиӏэ",
+    "form": "гуащӏэ",
     "translations": {
-      "tr": "derdi olan, kederli"
+      "tr": "emek, alın teri, zahmet"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "гузэпыкӏы",
+    "translations": {
+      "tr": "endişelenmek, kaygılanmak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "гукъэбзагъэ",
+    "translations": {
+      "tr": "temiz kalplilik, samimiyet"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "гупсэса",
+    "translations": {
+      "tr": "sakinleşmek, huzur bulmak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "гупсэхужыпӏэ",
+    "translations": {
+      "tr": "dinlenme yeri"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "гуфӏа",
+    "translations": {
+      "tr": "sevinmek, mutlu olmak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "гуфӏэж",
+    "translations": {
+      "tr": "sevinerek, gülümseyerek"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "гущӏыӏу",
+    "translations": {
+      "tr": "iç soğukluğu, ıstırap"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "гущӏэгъу",
+    "translations": {
+      "tr": "merhamet, şefkat, acıma"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "гъашӏэ",
+    "translations": {
+      "tr": "ömür, hayat"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "гъущӏ",
+    "translations": {
+      "tr": "demir, metal"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "гъуэлъыпӏэ",
+    "translations": {
+      "tr": "yatak, yatakhane"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "гъэбагъу",
+    "translations": {
+      "tr": "çoğaltmak, bereketlendirmek"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "гъэбзэщӏэ",
+    "translations": {
+      "tr": "temizletmek, süsletmek"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "дакӏо",
+    "translations": {
+      "tr": "beraber giderek"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "дежкӏ",
+    "translations": {
+      "tr": "yanına da, göre de"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "дежьа",
+    "translations": {
+      "tr": "yola çıkmak, hareket etmek"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "деплъы",
+    "translations": {
+      "tr": "bakmak, göz atmak"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "джащыгъу",
+    "translations": {
+      "tr": "o zaman, o esnada"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "джуртыбзэ",
+    "translations": {
+      "tr": "İbranice, Yahudi dili"
+    },
+    "pos": "UNKNOWN",
+    "notes": "[MANUEL] Dogu kok"
+  },
+  {
+    "form": "долагъу",
+    "translations": {
+      "tr": "görmek"
     },
     "pos": "UNKNOWN",
     "notes": "[MANUEL] Dogu kok"
