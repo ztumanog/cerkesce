@@ -62839,7 +62839,8 @@
     "wordFamilyId": "WF-KHEK",
     "wordFamily": {
       "id": "WF-KHEK"
-    }
+    },
+    "entry_type": "lemma"
   },
   {
     "id": "L-CORPUS-00428",
@@ -150222,7 +150223,8 @@
     "wordFamilyId": "WF-KHEK",
     "wordFamily": {
       "id": "WF-KHEK"
-    }
+    },
+    "entry_type": "lemma"
   },
   {
     "id": "L-CORPUS-02616",
@@ -397616,7 +397618,8 @@
     "translations": {
       "ru": "соотечественник",
       "en": "compatriot, fellow countryman",
-      "tr": "YURTTAŞ"
+      "tr": "YURTTAŞ",
+      "ar": "ابن البلد"
     },
     "rootIds": [
       "R-KHEK"
@@ -397625,7 +397628,8 @@
     "wordFamilyId": "WF-KHEK",
     "wordFamily": {
       "id": "WF-KHEK"
-    }
+    },
+    "entry_type": "lemma"
   },
   {
     "id": "L-VERIFIED-02040",
@@ -755642,13 +755646,15 @@
     "translations": {
       "ru": "патриот",
       "tr": "VATANSEVER",
-      "en": "patriot"
+      "en": "patriot",
+      "ar": "وطني"
     },
     "ipa": "/xɐkʷpsɐ/",
     "rootIds": [],
     "notes": "Kaynak: 19.Kbd-Ru-2-Jonty.json",
     "literalMeaning": "patriot",
-    "literalMeaningSource": "ru->tr (KAVRAM_ etiketi) (orta)"
+    "literalMeaningSource": "ru->tr (KAVRAM_ etiketi) (orta)",
+    "entry_type": "compound"
   },
   {
     "id": "KAV-ПЕДАГОГ",
@@ -821395,7 +821401,8 @@
     "rootIds": [],
     "notes": "Kaynak: 20.Kbd-Ru-Jonty.json",
     "literalMeaning": "patriot",
-    "literalMeaningSource": "ru->tr (KAVRAM_ etiketi) (orta)"
+    "literalMeaningSource": "ru->tr (KAVRAM_ etiketi) (orta)",
+    "entry_type": "lemma"
   },
   {
     "id": "KAV-ВОЖДЬ",
@@ -833392,11 +833399,13 @@
     "translations": {
       "ru": "эмигрант",
       "tr": "GÖÇMEN",
-      "en": "emigrant"
+      "en": "emigrant",
+      "ar": "مهاجر"
     },
     "ipa": "/xɐkʷikʼǝжa/",
     "rootIds": [],
-    "notes": "Kaynak: 19.Kbd-Ru-2-Jonty.json"
+    "notes": "Kaynak: 19.Kbd-Ru-2-Jonty.json",
+    "entry_type": "compound"
   },
   {
     "id": "KAV-ЭМИГРАЦЭ",
@@ -938153,5 +938162,73 @@
       "adyghe": "нэшъу"
     },
     "notes": "Homonym: ???=isik (Bati), ???=kor (Dogu)"
+  },
+  {
+    "form": "хэкуан",
+    "translations": {
+      "tr": "anavatan",
+      "en": "motherland",
+      "ar": "الوطن الأм",
+      "ru": "Родина-мать"
+    },
+    "pos": "NOUN",
+    "root": "хэку",
+    "rootIds": [
+      "R-KHEK"
+    ],
+    "wordFamilyId": "WF-KHEK",
+    "entry_type": "compound",
+    "notes": "[Sozluk-WF-KHEK]"
+  },
+  {
+    "form": "хэкупащ",
+    "translations": {
+      "tr": "cumhurbaşkanı",
+      "en": "president",
+      "ar": "رئيس الجمهورية",
+      "ru": "Президент"
+    },
+    "pos": "NOUN",
+    "root": "хэку",
+    "rootIds": [
+      "R-KHEK"
+    ],
+    "wordFamilyId": "WF-KHEK",
+    "entry_type": "compound",
+    "notes": "[Sozluk-WF-KHEK]"
+  },
+  {
+    "form": "хэкумэтх",
+    "translations": {
+      "tr": "coğrafya",
+      "en": "geography",
+      "ar": "الجغرافيا",
+      "ru": "География"
+    },
+    "pos": "NOUN",
+    "root": "хэку",
+    "rootIds": [
+      "R-KHEK"
+    ],
+    "wordFamilyId": "WF-KHEK",
+    "entry_type": "compound",
+    "notes": "[Sozluk-WF-KHEK]"
+  },
+  {
+    "form": "хэкугъу",
+    "translations": {
+      "tr": "halk",
+      "en": "people",
+      "ar": "الشعب",
+      "ru": "Народ"
+    },
+    "pos": "NOUN",
+    "root": "хэку",
+    "rootIds": [
+      "R-KHEK"
+    ],
+    "wordFamilyId": "WF-KHEK",
+    "entry_type": "compound",
+    "notes": "[Sozluk-WF-KHEK]"
   }
 ]
