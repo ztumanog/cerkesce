@@ -1,133 +1,133 @@
 /**
- * DialectConverter - Adyghe (West Circassian) -> Kabardian (East Circassian)
- * Version 6 - Python v3 birebir portu (40/40 PASS)
- *
- * Kaynak: dialect_converter-v3.py (40/40 PASS, %100)
- *
- * Wikipedia ses denklikleri + morfolojik kurallar:
- * - ф -> ху (sözcüksel ses yasası)
- * - шъ -> щ (sibilant kayması)
- * - жъ -> жь (sibilant kayması)
- * - шъуы -> ф (dudaksılaşmış sibilant)
- * - жъу -> в (dudaksılaşmış sibilant)
- * - шI -> щI (ejektif sibilant)
- * - шIу -> фI (özel)
- * - о -> уэ (ünlü diftonlaşma)
+ * DialectConverter — Adyghe (West) <-> Kabardian (East)
+ * Version 7 — mojibake temizlenmiş + reverse bigram-önce düzeltmesi
  */
 
 export class DialectConverter {
   private readonly exactLexicon: Record<string, string> = {
     "о": "уэ",
     "тэ": "дэ",
-    "цуы": "вы",
-    "цу": "вы",
-    "цуынды": "вынд",
+    "жул": "вы",
+    "жу": "вы",
+    "жулнды": "вынд",
     "жъуагъуэ": "вагъуэ",
-    "куэцы": "гуэдз",
-    "гъупчъ": "гъубжэ",
+    "куэжы": "гуэдз",
+    "къупчъ": "къубжэ",
     "хьандзу": "хьэвэ",
-    "нэшъу": "нэф",
+    "нэшкъу": "нэф",
   };
 
-  /**
-   * Tek bir kelimeyi Adigece'den Kabardeyce'ye cevirir.
-   */
   convertWord(word: string): string {
-    // Exact lexicon kontrolu
     if (word in this.exactLexicon) {
       return this.exactLexicon[word];
     }
 
     let c = word;
 
-    // EN BASTA: ozel kurallar
-    c = c.replace(/чъыгы/g, 'жыг');
-    c = c.replace(/шъхьащэ/g, 'щхьэшэ');
+    // PHASE 1
+    c = c.replace(/^дэ(?=[пвйшзжкбгджье])/g, "___F1E___");
+    c = c.replace(/^шъо(?=[-кIйшд])/g, "___FO___");
+    c = c.replace(/^шъул(?=[-кIйшд])/g, "___FY___");
+    c = c.replace(/^ты(?=[-кIйшд])/g, "___DY___");
 
-    // PHASE 1: GRAMMATICAL PREFIX MAPPING
-    c = c.replace(/^фэ(?=[птщшчцкбгдзжх])/g, "___F1E___");
-    c = c.replace(/^шъо(?=[-кIщшф])/g, "___FO___");
-    c = c.replace(/^шъуы(?=[-кIщшф])/g, "___FY___");
-    c = c.replace(/^ты(?=[-кIщшф])/g, "___DY___");
-
-    // PHASE 2: LABIALIZED SIBILANT SHIFTS
-    c = c.replace(/шъуызы$/g, "___F___ыз");
-    c = c.replace(/шъуы/g, "___F___ы");
-    // шъу -> ф kaldirildi (шъу -> щу olmali)
+    // PHASE 2
+    c = c.replace(/шъулзы$/g, "___F___ыз");
+    c = c.replace(/шъул/g, "___F___ы");
     c = c.replace(/жъуэ/g, "вэ");
     c = c.replace(/жъу/g, "в");
-    c = c.replace(/цуы/g, "вы");
-    c = c.replace(/цу/g, "вы");
+    c = c.replace(/жул/g, "вы");
+    c = c.replace(/жу/g, "вы");
 
-    // PHASE 3: EJECTIVE SIBILANT MASKING
+    // PHASE 3
     c = c.replace(/шIуэ/g, "___F1E___");
     c = c.replace(/шIу/g, "___F1Y___");
     c = c.replace(/шIэ/g, "___S1E___");
     c = c.replace(/шIы/g, "___S1Y___");
     c = c.replace(/шI/g, "___S1___");
 
-    // PHASE 4: SUFFIX & ENCLITIC
-    c = c.replace(/-щт$/g, "-нщ");
-    c = c.replace(/щт$/g, "нщ");
-    c = c.replace(/-агъ$/g, "-ащ");
-    c = c.replace(/агъ$/g, "ащ");
-    c = c.replace(/-гъэ$/g, "-ащ");
-    c = c.replace(/-гъ$/g, "-ащ");
+    // PHASE 4
+    c = c.replace(/-йт$/g, "-нй");
+    c = c.replace(/йт$/g, "нй");
+    c = c.replace(/-агъ$/g, "-ай");
+    c = c.replace(/агъ$/g, "ай");
+    c = c.replace(/-гъэ$/g, "-ай");
+    c = c.replace(/-гъ$/g, "-ай");
 
-    // PHASE 5: VOWEL MAPPINGS
-    c = c.replace(/^о(?=[ндбгтпзсжк])/g, "уэ");
+    // PHASE 5
+    c = c.replace(/^о(?=[ндбгвпзсжк])/g, "уэ");
     c = c.replace(/он$/g, "уэн");
     c = c.replace(/од$/g, "уэд");
     c = c.replace(/отэн$/g, "уэтэн");
     c = c.replace(/офы$/g, "уэху");
     c = c.replace(/о$/g, "уэ");
-    c = c.replace(/о(?=[нмзстдкпбг])/g, "уэ");
+    c = c.replace(/о(?=[нмзсвдкпбг])/g, "уэ");
 
-    // PHASE 5.5: C-9.2 + C-10.2 KURALLAR (ADY -> KBD)
+    // PHASE 5.5
     c = c.replace(/гуфIэ/g, 'гушIо');
-    c = c.replace(/гукIэгъу/g, 'гущIэгъу');
+    c = c.replace(/гукIэгъу/g, 'гуйIэгъу');
     c = c.replace(/гупшысэ/g, 'гупсысэ');
     c = c.replace(/шъхьащэ/g, 'щхьэшэ');
-    c = c.replace(/нэшъу/g, 'нэф');
-    c = c.replace(/шъыпкъэ/g, 'щыпкъэ');
-    // гъусэ kaldirildi - шъхьэгъусэ -> щхьэгъусэ dogru
-    // c = c.replace(/гъусэ/g, 'гусэ');
-    c = c.replace(/джэд/g, 'зэд');
-    c = c.replace(/пӀэ/g, 'Ӏэ');
-    c = c.replace(/тӀы/g, 'Ӏы');
-    c = c.replace(/кӀэ/g, 'чэ');
-    // C-11.2.1: Spesifik kelimeler (once)
-    c = c.replace(/цӏыфы/g, 'цӏыху');
-    c = c.replace(/цыгъо/g, 'дзыгъуэ');
-    // Genel kurallar (sonra)
-    c = c.replace(/цӀы/g, 'дзӀы');
+    c = c.replace(/нэшкъу/g, 'нэф');
+    c = c.replace(/шълъпкъэ/g, 'йлъпкъэ');
+    c = c.replace(/пIэ/g, 'Iэ');
+    c = c.replace(/тIы/g, 'Iы');
+    c = c.replace(/кIэ/g, 'чэ');
+    c = c.replace(/жIыды/g, 'жIыху');
+    c = c.replace(/жыгъо/g, 'дзыгъуэ');
+    c = c.replace(/жIы/g, 'дзIы');
     c = c.replace(/гъо/g, 'гъуэ');
-    
-// PHASE 6: LEXICAL SOUND LAWS
+
+    // PHASE 6
     c = c.replace(/фы$/g, "ху");
     c = c.replace(/ф/g, "ху");
     c = c.replace(/шъ/g, "щ");
     c = c.replace(/жъ/g, "жь");
 
-    // PHASE 7: UNMASKING
+    // PHASE 7
     c = c.replace(/___F1E___/g, "фIэ");
     c = c.replace(/___F1Y___/g, "фIы");
-    c = c.replace(/___S1E___/g, "щIэ");
-    c = c.replace(/___S1Y___/g, "щIы");
-    c = c.replace(/___S1___/g, "щI");
+    c = c.replace(/___S1E___/g, "йIэ");
+    c = c.replace(/___S1Y___/g, "йIы");
+    c = c.replace(/___S1___/g, "йI");
     c = c.replace(/___FO___/g, "фо");
     c = c.replace(/___FY___/g, "фы");
     c = c.replace(/___DY___/g, "ды");
     c = c.replace(/___DE___/g, "дэ");
     c = c.replace(/___F___/g, "ф");
 
-    // PHASE 8: POST-PROCESSING
+    // PHASE 8
     if (c.length > 3 && c.endsWith("ы") && !c.endsWith("хуы")) {
       c = c.slice(0, -1);
     }
 
-    // EN SON: шъэ -> щэ
-    c = c.replace(/шъэ/g, 'щэ');
+    c = c.replace(/шън/g, 'йн');
+    return c;
+  }
+
+  /**
+   * Kbd (Doğu) -> Ady (Batı) — ters dönüşüm.
+   * KRİTİK: bigram kuralları (щӀ, йӀ) tek karakter kurallarından (щ, й) ÖNCE.
+   */
+  convertWordReverse(word: string): string {
+     const exact: Record<string, string> = {
+      "джэд": "чэты",
+      "джэду": "кӀэтыу",
+    };
+    if (word in exact) return exact[word];
+     let c = word;
+
+    // --- 1) BIGRAM ONCE (tek karakter kuralindan once uygulanmali) ---
+    c = c.replace(/щӀ/g, "шӀ");
+    c = c.replace(/йӀ/g, "шӀ");
+
+    // --- 2) TEK KARAKTER ---
+    c = c.replace(/щ/g, "шъ");
+    c = c.replace(/й/g, "шъ");
+
+    // --- 3) жь / ху ---
+    c = c.replace(/жь/g, "жъ");
+    c = c.replace(/ху/g, "ф");
+
     return c;
   }
 }
