@@ -4336,10 +4336,8 @@
     "corpusFrequencyKbd": 1746,
     "partOfSpeech": "noun",
     "corpusFrequency": 1753,
-    "rootIds": [
-      "R-FE"
-    ],
-    "wordFamilyId": "WF-FE",
+    "rootIds": [],
+    "wordFamilyId": "WF-PRONOUN",
     "derivation": {
       "rule": "root",
       "components": [
@@ -4359,7 +4357,7 @@
       "trSource": "en->tr koprusu (orta)",
       "ar": "جلد"
     },
-    "root": "фэ",
+    "root": null,
     "wordFamily": {
       "id": "WF-FE",
       "lexemeIds": [
@@ -23350,11 +23348,8 @@
       "ar": "مُزهر",
       "en": "floral"
     },
-    "rootIds": [
-      "R-FA",
-      "R-FE"
-    ],
-    "wordFamilyId": "WF-FE",
+    "rootIds": [],
+    "wordFamilyId": null,
     "derivation": {
       "rootIds": [
         "R-FE"
@@ -23365,22 +23360,8 @@
     "conceptId": "GREEN",
     "ipa": "/wǝˈdzǝfɐ/",
     "ipaSource": "root-derived",
-    "root": "фэ",
-    "wordFamily": {
-      "id": "WF-FE",
-      "lexemeIds": [
-        "L-FE"
-      ],
-      "conceptIds": [
-        "SKIN"
-      ],
-      "morphemeIds": [],
-      "productivity": {
-        "totalLexemes": 0,
-        "corpusFrequency": 0
-      },
-      "notes": "Bos aile - sonra doldurulacak"
-    }
+    "root": null,
+    "wordFamily": null
   },
   {
     "id": "L-DYGHEGHEZ",
@@ -24588,11 +24569,8 @@
       "ru": "час (единица времени), часы",
       "ar": "ساعة"
     },
-    "rootIds": [
-      "R-FA",
-      "R-FE"
-    ],
-    "wordFamilyId": "WF-FE",
+    "rootIds": [],
+    "wordFamilyId": null,
     "derivation": {
       "rootIds": [
         "R-FE"
@@ -24607,22 +24585,8 @@
       "- Уэ, сыхьэт мыгъуэм хуэзэн Хъуэжэ, мы къыдэпщӀар сыт? - жаӀащ лӀыхэм. Къэб. фольк."
     ],
     "examplesSource": "1.Ady-Ady_AP.json (◊)",
-    "root": "фэ",
-    "wordFamily": {
-      "id": "WF-FE",
-      "lexemeIds": [
-        "L-FE"
-      ],
-      "conceptIds": [
-        "SKIN"
-      ],
-      "morphemeIds": [],
-      "productivity": {
-        "totalLexemes": 0,
-        "corpusFrequency": 0
-      },
-      "notes": "Bos aile - sonra doldurulacak"
-    }
+    "root": null,
+    "wordFamily": null
   },
   {
     "id": "L-BDZEZHEYASHE",
@@ -26278,11 +26242,8 @@
     "notes": "C-11.3: IPA kaynakli.",
     "corpusFrequency": 1,
     "isLemma": true,
-    "rootIds": [
-      "R-FA",
-      "R-FE"
-    ],
-    "wordFamilyId": "WF-FE",
+    "rootIds": [],
+    "wordFamilyId": null,
     "derivation": {
       "rootIds": [
         "R-FE"
@@ -26297,22 +26258,8 @@
       "tr": "köpürmek",
       "ar": "يفور، يغلي"
     },
-    "root": "фэ",
-    "wordFamily": {
-      "id": "WF-FE",
-      "lexemeIds": [
-        "L-FE"
-      ],
-      "conceptIds": [
-        "SKIN"
-      ],
-      "morphemeIds": [],
-      "productivity": {
-        "totalLexemes": 0,
-        "corpusFrequency": 0
-      },
-      "notes": "Bos aile - sonra doldurulacak"
-    }
+    "root": null,
+    "wordFamily": null
   },
   {
     "id": "L-PEDZAN",
@@ -46937,8 +46884,10 @@
     "ipa": "/wǝˈdzǝfɐ/",
     "ipaSource": "root-derived",
     "translations": {
-      "tr": "GÖSTERIŞ",
-      "ar": "يخيط لـ..(ل)، يشبه"
+      "tr": "gibi, benzer",
+      "ar": "مثل / شبيه",
+      "en": "like, similar",
+      "ru": "Подобный / как"
     },
     "literalMeaningSource": "translations.tr (yuksek)",
     "root": "фэ",
@@ -47265,11 +47214,8 @@
       "ar": "ها هو/ هذا هو",
       "ru": "МАРЫ, -рых / мары.\n\t1. Вот. Мы- чыжьэу къыщыхъурэ хъугъэ-шӀагъэр, ыпашъхьэ итыр къырагъэлъагъоу къаӀорэ гущыӀ. Мары, мы кӀалэр ары къэкӀогъа-гъэр. \n\t2. Уахътэр къырагъэлъагъоу къаӀо. Ма-ры гъэр икӀыгъ"
     },
-    "rootIds": [
-      "R-FA",
-      "R-FE"
-    ],
-    "wordFamilyId": "WF-FE",
+    "rootIds": [],
+    "wordFamilyId": null,
     "derivation": {
       "rootIds": [
         "R-FE"
@@ -47279,22 +47225,8 @@
     },
     "ipa": "/wǝˈdzǝfɐ/",
     "ipaSource": "root-derived",
-    "root": "фэ",
-    "wordFamily": {
-      "id": "WF-FE",
-      "lexemeIds": [
-        "L-FE"
-      ],
-      "conceptIds": [
-        "SKIN"
-      ],
-      "morphemeIds": [],
-      "productivity": {
-        "totalLexemes": 0,
-        "corpusFrequency": 0
-      },
-      "notes": "Bos aile - sonra doldurulacak"
-    }
+    "root": null,
+    "wordFamily": null
   },
   {
     "id": "L-CORPUS-00023",
@@ -47687,11 +47619,8 @@
     },
     "notes": "Corpus v1.0 (freq: 692, lang: ady, source: 3.Ady-En)",
     "isLemma": false,
-    "rootIds": [
-      "R-FA",
-      "R-FE"
-    ],
-    "wordFamilyId": "WF-FE",
+    "rootIds": [],
+    "wordFamilyId": null,
     "conceptId": "SKIN",
     "derivation": {
       "rootIds": [
@@ -47706,22 +47635,8 @@
       "tr": "gündüzün, günde, o günde"
     },
     "literalMeaningSource": "translations.tr (yuksek)",
-    "root": "фэ",
-    "wordFamily": {
-      "id": "WF-FE",
-      "lexemeIds": [
-        "L-FE"
-      ],
-      "conceptIds": [
-        "SKIN"
-      ],
-      "morphemeIds": [],
-      "productivity": {
-        "totalLexemes": 0,
-        "corpusFrequency": 0
-      },
-      "notes": "Bos aile - sonra doldurulacak"
-    }
+    "root": null,
+    "wordFamily": null
   },
   {
     "id": "L-CORPUS-00034",
@@ -51418,11 +51333,8 @@
     },
     "notes": "Corpus v1.0 (freq: 290, lang: ady, source: 0.Ady-Ady_AIG)",
     "isLemma": true,
-    "rootIds": [
-      "R-FA",
-      "R-FE"
-    ],
-    "wordFamilyId": "WF-FE",
+    "rootIds": [],
+    "wordFamilyId": null,
     "derivation": {
       "rootIds": [
         "R-FE"
@@ -51436,22 +51348,8 @@
       "tr": "günlük",
       "ar": "نهار/ مبارك"
     },
-    "root": "фэ",
-    "wordFamily": {
-      "id": "WF-FE",
-      "lexemeIds": [
-        "L-FE"
-      ],
-      "conceptIds": [
-        "SKIN"
-      ],
-      "morphemeIds": [],
-      "productivity": {
-        "totalLexemes": 0,
-        "corpusFrequency": 0
-      },
-      "notes": "Bos aile - sonra doldurulacak"
-    }
+    "root": null,
+    "wordFamily": null
   },
   {
     "id": "L-CORPUS-00126",
@@ -52802,8 +52700,10 @@
     "ipa": "/wǝˈdzǝfɐ/",
     "ipaSource": "root-derived",
     "translations": {
-      "tr": "AŞAĞI",
-      "ar": "نحو/ تقريباً/ بقدر"
+      "tr": "kadar, büyüklükte, miktarda",
+      "ar": "بقدر / بحجم",
+      "en": "as much as, size of",
+      "ru": "Столько / размером с"
     },
     "root": "фэ",
     "wordFamily": {
@@ -57021,7 +56921,9 @@
     "ipaSource": "root-derived",
     "translations": {
       "tr": "BELİRLİ",
-      "ar": "واضح،  بين، جلي"
+      "ar": "واضح،  بين، جلي",
+      "en": "clear, obvious, explicit",
+      "ru": "Явный / очевидный"
     },
     "literalMeaningSource": "translations.tr (yuksek)",
     "root": "фэ",
@@ -58848,11 +58750,8 @@
       "tr": "Tütün",
       "ar": "التبغ، الطباق"
     },
-    "rootIds": [
-      "R-FA",
-      "R-FE"
-    ],
-    "wordFamilyId": "WF-FE",
+    "rootIds": [],
+    "wordFamilyId": null,
     "derivation": {
       "rootIds": [
         "R-FE"
@@ -58864,22 +58763,8 @@
       "sukunov-1998"
     ],
     "conceptId": "TÜTÜN",
-    "root": "фэ",
-    "wordFamily": {
-      "id": "WF-FE",
-      "lexemeIds": [
-        "L-FE"
-      ],
-      "conceptIds": [
-        "SKIN"
-      ],
-      "morphemeIds": [],
-      "productivity": {
-        "totalLexemes": 0,
-        "corpusFrequency": 0
-      },
-      "notes": "Bos aile - sonra doldurulacak"
-    }
+    "root": null,
+    "wordFamily": null
   },
   {
     "id": "L-CORPUS-00306",
@@ -61347,16 +61232,13 @@
     ],
     "isLemma": true,
     "translations": {
-      "ru": "глупый, -ая, -ое, дурак, дура <div style='margin-left:3em'",
-      "en": "mentally ill, insane, fool",
-      "tr": "Delikli kütük",
-      "ar": "مجنون، أحمق"
+      "ru": "Глупый / дурак",
+      "en": "fool, idiot",
+      "tr": "aptal, budala",
+      "ar": "أحمق / مغفل"
     },
-    "rootIds": [
-      "R-FA",
-      "R-FE"
-    ],
-    "wordFamilyId": "WF-FE",
+    "rootIds": [],
+    "wordFamilyId": null,
     "derivation": {
       "rootIds": [
         "R-FE"
@@ -61365,22 +61247,8 @@
       "rule": "compound"
     },
     "conceptId": "GREEN",
-    "root": "фэ",
-    "wordFamily": {
-      "id": "WF-FE",
-      "lexemeIds": [
-        "L-FE"
-      ],
-      "conceptIds": [
-        "SKIN"
-      ],
-      "morphemeIds": [],
-      "productivity": {
-        "totalLexemes": 0,
-        "corpusFrequency": 0
-      },
-      "notes": "Bos aile - sonra doldurulacak"
-    }
+    "root": null,
+    "wordFamily": null
   },
   {
     "id": "L-CORPUS-00368",
@@ -63796,11 +63664,8 @@
       "tr": "Saat",
       "ar": "الساعة"
     },
-    "rootIds": [
-      "R-FA",
-      "R-FE"
-    ],
-    "wordFamilyId": "WF-FE",
+    "rootIds": [],
+    "wordFamilyId": null,
     "derivation": {
       "rootIds": [
         "R-FE"
@@ -63809,22 +63674,8 @@
       "rule": "compound"
     },
     "ipa": "/sǝħat/",
-    "root": "фэ",
-    "wordFamily": {
-      "id": "WF-FE",
-      "lexemeIds": [
-        "L-FE"
-      ],
-      "conceptIds": [
-        "SKIN"
-      ],
-      "morphemeIds": [],
-      "productivity": {
-        "totalLexemes": 0,
-        "corpusFrequency": 0
-      },
-      "notes": "Bos aile - sonra doldurulacak"
-    }
+    "root": null,
+    "wordFamily": null
   },
   {
     "id": "L-CORPUS-00422",
@@ -64812,8 +64663,10 @@
     "ipa": "/wǝˈdzǝfɐ/",
     "ipaSource": "root-derived",
     "translations": {
-      "tr": "FECRISADIK",
-      "ar": "من وقت إلى وقت آخر، دوريا ً(زمنياً)"
+      "tr": "vakit, zaman, çağ",
+      "ar": "وقت / زمن",
+      "en": "time, era",
+      "ru": "Время / эпоха"
     },
     "root": "фэ",
     "wordFamily": {
@@ -65020,7 +64873,9 @@
     "isLemma": true,
     "translations": {
       "ru": "фэгъэхьыгъэу еплъ",
-      "tr": "DAİR, AİT"
+      "tr": "DAİR, AİT",
+      "en": "regarding, concerning",
+      "ar": "بخصوص / متعلق بـ"
     },
     "ipa": "/wǝˈdzǝfɐ/",
     "ipaSource": "root-derived",
@@ -66524,7 +66379,10 @@
     "ipa": "/wǝˈdzǝfɐ/",
     "ipaSource": "root-derived",
     "translations": {
-      "tr": "ADALETLI"
+      "tr": "ADALETLI",
+      "en": "justice, fairness",
+      "ar": "عدالة / إنصاف",
+      "ru": "Справедливость"
     },
     "literalMeaningSource": "translations.tr (yuksek)",
     "root": "фэ",
@@ -67928,7 +67786,10 @@
     "ipa": "/wǝˈdzǝfɐ/",
     "ipaSource": "root-derived",
     "translations": {
-      "tr": "gizemli"
+      "tr": "açıkça, alenen, net olarak",
+      "en": "clearly, openly",
+      "ar": "بوضوح / علناً",
+      "ru": "Явно / открыто"
     },
     "literalMeaningSource": "translations.tr (yuksek)",
     "root": "фэ",
@@ -68449,11 +68310,8 @@
       "en": "stupidity, silliness, foolishness",
       "tr": "APTALCA"
     },
-    "rootIds": [
-      "R-FA",
-      "R-FE"
-    ],
-    "wordFamilyId": "WF-FE",
+    "rootIds": [],
+    "wordFamilyId": null,
     "derivation": {
       "rootIds": [
         "R-FE"
@@ -68462,22 +68320,8 @@
       "rule": "compound"
     },
     "conceptId": "GREEN",
-    "root": "фэ",
-    "wordFamily": {
-      "id": "WF-FE",
-      "lexemeIds": [
-        "L-FE"
-      ],
-      "conceptIds": [
-        "SKIN"
-      ],
-      "morphemeIds": [],
-      "productivity": {
-        "totalLexemes": 0,
-        "corpusFrequency": 0
-      },
-      "notes": "Bos aile - sonra doldurulacak"
-    }
+    "root": null,
+    "wordFamily": null
   },
   {
     "id": "L-CORPUS-00546",
@@ -72068,8 +71912,10 @@
     "ipa": "/wǝˈdzǝfɐ/",
     "ipaSource": "root-derived",
     "translations": {
-      "tr": "AVK",
-      "ar": "يملك ما يكفيه/ يصبح لـ/ ينمو لـ/ يرعى لـ"
+      "tr": "yaramak, nasip olmak",
+      "ar": "يناسب / يكون جديراً",
+      "en": "to befit, to be worthy",
+      "ru": "Быть достойным"
     },
     "root": "фэ",
     "wordFamily": {
@@ -80065,11 +79911,8 @@
       "ru": "махуэхэр / мафэхэр GÜNLER",
       "tr": "GÜNLER"
     },
-    "rootIds": [
-      "R-FA",
-      "R-FE"
-    ],
-    "wordFamilyId": "WF-FE",
+    "rootIds": [],
+    "wordFamilyId": null,
     "conceptId": "SKIN",
     "derivation": {
       "rootIds": [
@@ -80080,22 +79923,8 @@
     },
     "ipa": "/wǝˈdzǝfɐ/",
     "ipaSource": "root-derived",
-    "root": "фэ",
-    "wordFamily": {
-      "id": "WF-FE",
-      "lexemeIds": [
-        "L-FE"
-      ],
-      "conceptIds": [
-        "SKIN"
-      ],
-      "morphemeIds": [],
-      "productivity": {
-        "totalLexemes": 0,
-        "corpusFrequency": 0
-      },
-      "notes": "Bos aile - sonra doldurulacak"
-    }
+    "root": null,
+    "wordFamily": null
   },
   {
     "id": "L-CORPUS-00837",
