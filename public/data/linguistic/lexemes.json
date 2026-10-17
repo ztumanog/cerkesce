@@ -704384,5 +704384,95 @@
     },
     "pos": "UNKNOWN",
     "notes": "[Sozluk]"
+  },
+  {
+    "form": "гуфэгъо",
+    "translations": {
+      "tr": "mutluluk",
+      "ru": "счастье, радость",
+      "en": "happiness"
+    },
+    "pos": "NOUN",
+    "notes": "[Domanic]"
+  },
+  {
+    "form": "гузэвэгъо",
+    "translations": {
+      "tr": "telaş",
+      "ru": "тревога, беспокойство",
+      "en": "worry, anxiety"
+    },
+    "pos": "NOUN",
+    "notes": "[Domanic]"
+  },
+  {
+    "form": "лыншэ",
+    "translations": {
+      "tr": "erkeksizlik",
+      "ru": "безмужняя, отсутствие мужчины",
+      "en": "manlessness"
+    },
+    "pos": "NOUN",
+    "notes": "[Domanic]",
+    "rootIds": [
+      "R-LI"
+    ],
+    "wordFamilyId": "WF-LI",
+    "conceptId": "MAN"
+  },
+  {
+    "form": "жэлэгъо",
+    "translations": {
+      "tr": "delikanlılık",
+      "ru": "юношество",
+      "en": "youth, adolescence"
+    },
+    "pos": "NOUN",
+    "notes": "[Domanic]"
+  },
+  {
+    "form": "сухыншэ",
+    "translations": {
+      "tr": "insansız",
+      "ru": "безлюдный",
+      "en": "unmanned, deserted"
+    },
+    "pos": "NOUN",
+    "notes": "[Domanic]",
+    "rootIds": [
+      "R-SUKH"
+    ],
+    "wordFamilyId": "WF-SUKH",
+    "conceptId": "HUMAN"
+  },
+  {
+    "form": "сухиншагъэ",
+    "translations": {
+      "tr": "işe yaramazlık",
+      "ru": "бесполезность",
+      "en": "uselessness"
+    },
+    "pos": "NOUN",
+    "notes": "[Domanic]",
+    "rootIds": [
+      "R-SUKH"
+    ],
+    "wordFamilyId": "WF-SUKH",
+    "conceptId": "HUMAN"
+  },
+  {
+    "form": "нахыжыгъа",
+    "translations": {
+      "tr": "daha yaşlı olma",
+      "ru": "старшинство",
+      "en": "seniority"
+    },
+    "pos": "NOUN",
+    "notes": "[Domanic]",
+    "rootIds": [
+      "R-ZHY"
+    ],
+    "wordFamilyId": "WF-ZHY",
+    "conceptId": "AGE"
   }
 ]
