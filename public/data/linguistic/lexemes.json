@@ -6876,7 +6876,8 @@
     "ipaSource": "root-derived",
     "ipa": "/nɐfǝnɐ/",
     "translations": {
-      "tr": "ışık, aydınlık, aydınlanma"
+      "tr": "ışık, aydınlık, aydınlanma",
+      "en": "light"
     }
   },
   {
@@ -7059,7 +7060,8 @@
     },
     "isLemma": true,
     "translations": {
-      "tr": "rahat, huzurlu"
+      "tr": "rahat, huzurlu",
+      "en": "comfortable"
     },
     "subConceptId": "EMOTION",
     "taxonomyFamily": "Duygu & Zihin",
@@ -7524,7 +7526,8 @@
     "isLemma": true,
     "translations": {
       "tr": "kopru",
-      "ar": "جسر، قنطرة"
+      "ar": "جسر، قنطرة",
+      "en": "bridge"
     },
     "subConceptId": "BRIDGE",
     "taxonomyFamily": "Ayak & Adım",
@@ -7597,7 +7600,7 @@
     "isLemma": true,
     "translations": {
       "tr": "Yan, taraf, yön",
-      "en": "",
+      "en": "side; one side of",
       "ru": "лъэныкъуэ:, сторона, один из пары чего-л., край, область, сторона, составная часть чего-л."
     },
     "subConceptId": "SIDE",
@@ -7631,7 +7634,7 @@
     "isLemma": true,
     "translations": {
       "tr": "basin ustu",
-      "en": "",
+      "en": "bow",
       "ru": ""
     },
     "subConceptId": "HEAD_BOW",
@@ -7759,7 +7762,9 @@
     },
     "isLemma": true,
     "translations": {
-      "tr": "kesinti, ayrılma, kopuş"
+      "tr": "kesinti, ayrılma, kopuş",
+      "en": "assistance; presence; standing by; support",
+      "ru": "помощь; присутствие"
     },
     "subConceptId": "EMOTION",
     "taxonomyFamily": "Duygu & Zihin",
@@ -7799,7 +7804,9 @@
     },
     "isLemma": true,
     "translations": {
-      "tr": "kotu goz"
+      "tr": "kotu goz",
+      "en": "evil eye; harmful gaze",
+      "ru": "дурной глаз; сглаз"
     },
     "subConceptId": "EVIL_EYE",
     "taxonomyFamily": "Göz & Görme",
@@ -7841,7 +7848,9 @@
     },
     "isLemma": true,
     "translations": {
-      "tr": "keskin gözlü, keskin göz"
+      "tr": "keskin gözlü, keskin göz",
+      "en": "sharp-sighted; keen-eyed; observant",
+      "ru": "зоркий; остроглазый"
     },
     "subConceptId": "SHARP_EYE",
     "taxonomyFamily": "Göz & Görme",
@@ -8124,7 +8133,9 @@
     },
     "isLemma": true,
     "translations": {
-      "tr": "burun yalani"
+      "tr": "burun yalani",
+      "en": "sharp-pointed; pointed tip",
+      "ru": "остроконечный"
     },
     "subConceptId": "LIE",
     "taxonomyFamily": "Düşünce & Soyut",
@@ -8553,7 +8564,9 @@
     "isLemma": true,
     "translations": {
       "tr": "savunmak",
-      "ar": "يحمي، يحرس، يحافظ على/ يدافع عن"
+      "ar": "يحمي، يحرس، يحافظ على/ يدافع عن",
+      "en": "to protect; to defend; to guard",
+      "ru": "защищать; охранять"
     },
     "rootIds": [
       "R-KHUMEN"
@@ -8584,7 +8597,9 @@
     "corpusFrequency": 3,
     "isLemma": true,
     "translations": {
-      "tr": "savunmak"
+      "tr": "savunmak",
+      "en": "to protect; to defend; to guard",
+      "ru": "защищать; охранять"
     },
     "rootIds": [
       "R-KHUMEN"
@@ -8845,7 +8860,8 @@
     "isLemma": true,
     "translations": {
       "tr": "Fare, sıçan",
-      "ar": "فأر"
+      "ar": "فأر",
+      "en": "mouse"
     },
     "ipa": "/tsǝ/",
     "ipaSource": "root-derived"
@@ -8904,7 +8920,9 @@
     },
     "isLemma": true,
     "translations": {
-      "tr": "Çerkeska (geleneksel Çerkes kaftanı)"
+      "tr": "Çerkeska (geleneksel Çerkes kaftanı)",
+      "en": "Cherkesska (traditional Circassian coat)",
+      "ru": "черкеска"
     },
     "ipa": "/tsǝ/",
     "ipaSource": "root-derived"
@@ -8933,7 +8951,8 @@
     },
     "isLemma": true,
     "translations": {
-      "tr": "Vizon"
+      "tr": "Vizon",
+      "en": "marten"
     },
     "ipa": "/tsǝ/",
     "ipaSource": "root-derived"
@@ -8963,7 +8982,9 @@
     "isLemma": true,
     "translations": {
       "tr": "yapiskan",
-      "ar": "دبق، غروي/ متماسك/ جاف، قاس (إنسان)"
+      "ar": "دبق، غروي/ متماسك/ جاف، قاس (إنسان)",
+      "en": "coarse homespun woolen cloth; felted wool",
+      "ru": "домотканое сукно; войлок"
     },
     "ipa": "/tsǝ/",
     "ipaSource": "root-derived"
@@ -8993,7 +9014,9 @@
     "isLemma": true,
     "translations": {
       "tr": "yun sepeti",
-      "ar": "سلة الصوف، قفة لوضع الصوف"
+      "ar": "سلة الصوف، قفة لوضع الصوف",
+      "en": "fur-lined; downy layer; woolly cover",
+      "ru": "меховой; пушистый"
     },
     "ipa": "/tsǝ/",
     "ipaSource": "root-derived"
@@ -9286,7 +9309,9 @@
     "corpusFrequency": 4,
     "isLemma": true,
     "translations": {
-      "tr": "gumus zincir"
+      "tr": "gumus zincir",
+      "en": "instant drink; ready-made beverage",
+      "ru": "готовый напиток"
     },
     "subConceptId": "JEWELRY",
     "taxonomyFamily": "Aksesuar/Takı",
@@ -10332,7 +10357,9 @@
     },
     "isLemma": true,
     "translations": {
-      "tr": "ev duvarı"
+      "tr": "ev duvarı",
+      "en": "wall of the house",
+      "ru": "стена дома"
     },
     "ipa": "/bɮǝn/"
   },
@@ -10395,7 +10422,8 @@
     },
     "isLemma": true,
     "translations": {
-      "tr": "teyze"
+      "tr": "teyze",
+      "en": "aunt"
     },
     "ipa": "/ʂǝpχʷ/",
     "ipaSource": "root-derived"
@@ -10414,7 +10442,8 @@
     "corpusFrequency": 2,
     "isLemma": true,
     "translations": {
-      "tr": "DAYI"
+      "tr": "DAYI",
+      "en": "uncle"
     },
     "rootIds": [
       "R-YATE"
@@ -10524,7 +10553,9 @@
     "isLemma": true,
     "translations": {
       "tr": "orman",
-      "ar": "غابة"
+      "ar": "غابة",
+      "en": "forest, woods, woodland",
+      "ru": "лес"
     },
     "subConceptId": "FOREST_NATURE",
     "taxonomyFamily": "Doğa & Coğrafya",
@@ -10564,7 +10595,8 @@
     "isLemma": true,
     "translations": {
       "tr": "Görmek",
-      "ar": "يرى، يشاهد/ يحب/ مهمة، عمل"
+      "ar": "يرى، يشاهد/ يحب/ مهمة، عمل",
+      "en": "see"
     },
     "subConceptId": "SEE",
     "taxonomyFamily": "Ayak & Adım",
@@ -11525,7 +11557,10 @@
     "corpusFrequency": 217,
     "isLemma": true,
     "translations": {
-      "tr": "gitti"
+      "tr": "gitti",
+      "en": "went / gone",
+      "ar": "ذهبَ",
+      "ru": "пошел / ушел"
     },
     "rootIds": [
       "R-KWA"
@@ -17007,7 +17042,10 @@
     },
     "isLemma": true,
     "translations": {
-      "tr": "on bir"
+      "tr": "on bir",
+      "en": "teen (suffix component for 11-19)",
+      "ar": "عشَر (في الأعداد)",
+      "ru": "-надцать (компонент числительных)"
     },
     "subConceptId": "TEN",
     "taxonomyFamily": "Sayılar & Ölçü",
@@ -17033,7 +17071,10 @@
     },
     "isLemma": true,
     "translations": {
-      "tr": "on iki"
+      "tr": "on iki",
+      "en": "twelve (12)",
+      "ar": "اثنا عشر (12)",
+      "ru": "двенадцать (12)"
     },
     "subConceptId": "TWELVE",
     "taxonomyFamily": "Sayılar & Ölçü",
@@ -23472,7 +23513,10 @@
     },
     "isLemma": true,
     "translations": {
-      "tr": "çıkmak, tırmanmak"
+      "tr": "çıkmak, tırmanmak",
+      "en": "to go up climb ascend",
+      "ar": "صَعِدَ / تَسَلَّقَ",
+      "ru": "подниматься / всходить"
     },
     "conceptId": "GO",
     "ipaSource": "root-derived"
@@ -27936,7 +27980,10 @@
     "conceptId": "DANCER",
     "isLemma": true,
     "translations": {
-      "tr": "dansçı"
+      "tr": "dansçı",
+      "en": "dancer",
+      "ar": "راقص",
+      "ru": "танцор / плясун"
     },
     "ipaSource": "root-derived"
   },
@@ -27962,7 +28009,10 @@
     "conceptId": "WORKER",
     "isLemma": true,
     "translations": {
-      "tr": "işçi, emekçi"
+      "tr": "işçi, emekçi",
+      "en": "worker laborer",
+      "ar": "عامل / شغّال",
+      "ru": "рабочий / труженик"
     },
     "ipaSource": "root-derived"
   },
@@ -32612,7 +32662,10 @@
     "notes": "Somatik/destan kaynagi",
     "isLemma": true,
     "translations": {
-      "tr": "kurtarici"
+      "tr": "kurtarici",
+      "en": "savior rescuer",
+      "ar": "مُنقِذ / مُخَلِّص",
+      "ru": "спаситель / избавитель"
     },
     "rootIds": [
       "R-ZHA"
@@ -312776,10 +312829,11 @@
     "rootForm": "Ӏэ-",
     "ipa": "/ʔɐ'kʹʷɐtʹs/",
     "translations": {
-      "en": "",
-      "ru": "",
+      "en": "palm of the hand",
+      "ru": "ладонь",
       "tr": "sansli ev",
-      "trSource": "en->tr koprusu (orta)"
+      "trSource": "en->tr koprusu (orta)",
+      "ar": "كَفّ اليَد / رَاحَة اليَد"
     }
   },
   {
@@ -332469,9 +332523,10 @@
     "isLemma": false,
     "ipa": "/ʁɐχʷɐ'kʹʷɐn/",
     "translations": {
-      "en": "",
+      "en": "to drive to pasture cause to graze",
       "ru": "каузатив к хъуэкӏуэн: заставить, давать пастись",
-      "tr": "causative to"
+      "tr": "causative to",
+      "ar": "رَعَى / قَادَ إِلَى المَرْعَى"
     }
   },
   {
@@ -332675,9 +332730,10 @@
     "isLemma": false,
     "ipa": "/ʁɐʂkʹʷǝ'rɐn/",
     "translations": {
-      "en": "",
+      "en": "to roll make roll",
       "ru": "каузатив к шкӏурэн: заставить журчать",
-      "tr": "causative to"
+      "tr": "causative to",
+      "ar": "دَحْرَجَ / كَوْرَنَ"
     }
   },
   {
@@ -338096,7 +338152,7 @@
     "isLemma": false,
     "ipa": "/dɐʁɐkʹʷɐte:'jǝn/",
     "translations": {
-      "en": "",
+      "en": "to cause to go up/ascend",
       "ru": "каузатив к дэкӏуэтеин: поднять выше; продвинуть кого-л. к почётному месту, пасадить на более почётное место (за столом); повысить (в должности, по службе)",
       "tr": "causative to",
       "ar": "ترقية"
@@ -352293,9 +352349,10 @@
     "translations": {
       "trSource": "8.Ady-Tur_Huvaj.json",
       "trVerified": false,
-      "en": "",
+      "en": "to reconcile harmonize align",
       "ru": "каузатив к зэкӏужын: заставить помириться друг с другом",
-      "tr": "causative to"
+      "tr": "causative to",
+      "ar": "صَالَحَ / وَفَّقَ بَيْن"
     },
     "ipa": "/zɐʁɐkʹʷǝ'ᶎǝn/"
   },
@@ -353434,9 +353491,10 @@
     "isLemma": false,
     "ipa": "/zɐdɐʁɐ'kʹʷɐn/",
     "translations": {
-      "en": "",
+      "en": "to send together cause to go together",
       "ru": "каузатив к зэдэкӏуэн: заставить идти, ехать вместе куда-л., стричь [всех] под одну гребёнку (напр. правого и виноватого), выполнять одновременно (разные работы), сочетать (разные виды деятельности)",
-      "tr": "causative to i"
+      "tr": "causative to i",
+      "ar": "أَرْسَلَ مَعاً / جَعَلَهُم يَذْهَبُونَ مَعاً"
     }
   },
   {
@@ -354552,9 +354610,10 @@
     "isLemma": false,
     "ipa": "/zɐkʹʷɐtʹsǝʁɐ'ʁʷɐn/",
     "translations": {
-      "en": "",
+      "en": "to intertwine entangle insert inside each other",
       "ru": "каузатив к зэкӏуэцӏыгъуэн:, заставить высохнуть, засохнуть, заставить иссохнуть, исхудать",
-      "tr": "causative to"
+      "tr": "causative to",
+      "ar": "تشَابَكَ / أدْخَلَ بَعْضَهُ فِي بَعْض"
     }
   },
   {
@@ -369623,9 +369682,10 @@
     "isLemma": false,
     "ipa": "/kʹʷɐtʹsrǝʁɐ'ᶎǝn/",
     "translations": {
-      "en": "",
+      "en": "to cause to flow through the inside",
       "ru": "каузатив к кӏуэцӏрыжын:, заставить протекать через что-л. (напр. через село), заставить пробежать через, сквозь что-л.",
-      "tr": "i causative to"
+      "tr": "i causative to",
+      "ar": "جَعَلَهُ يَجْرِي مِنْ الخَالِل / أَسَالَ فِي الدَّاخِل"
     }
   },
   {
@@ -369851,9 +369911,10 @@
     "isLemma": false,
     "ipa": "/kʹʷɐtʹsǝʁɐʁʷɐɬ'ħɐn/",
     "translations": {
-      "en": "",
+      "en": "to lay inside place/embed within",
       "ru": "каузатив к кӏуэцӏыгъуэлъхьэн: заставить кого-л. лечь, завернувшись во что-л.",
-      "tr": "causative to"
+      "tr": "causative to",
+      "ar": "وَضَعَ فِي الدَّاخِل / أَضْجَعَ فِي البَاطِن"
     }
   },
   {
@@ -371143,9 +371204,10 @@
     "isLemma": false,
     "ipa": "/tʹʂɐɬǝʁɐ'kʹʷɐn/",
     "translations": {
-      "en": "",
+      "en": "to send after dispatch after someone",
       "ru": "каузатив к кӏэлъыкӏуэн: заставить кого-л. следовать за кем-чем-л.; заставить кого-л. проходить, пройти чередой; заставить кого-л. сходить к кому-чему-л., посетить кого-что-л.; заставить кого-л. находи",
-      "tr": "causative to"
+      "tr": "causative to",
+      "ar": "أَرْسَلَ خَلْفَهُ / أَتْبَعَهُ"
     }
   },
   {
@@ -375882,9 +375944,10 @@
     "isLemma": false,
     "ipa": "/qʹe:ʁɐkʹʷǝ'ħǝn/",
     "translations": {
-      "en": "",
+      "en": "to show around cause to walk around",
       "ru": "каузатив к къэкӏухьын:, заставить ходить, ездить, заставить обойти, объехать всюду",
-      "tr": "causative to"
+      "tr": "causative to",
+      "ar": "طَوَّفَ / جَوَّلَ"
     }
   },
   {
@@ -375949,9 +376012,10 @@
     "isLemma": false,
     "ipa": "/qʹe:ʁɐkʹʷɐtɐ'xǝn/",
     "translations": {
-      "en": "",
+      "en": "to slide down shift downward/backward",
       "ru": "каузатив к къекӏуэтэхын:, заставить спуститься вниз, заставить продвинуться, отойти ближе к выходу (от почетного места для старших)",
-      "tr": "causative to"
+      "tr": "causative to",
+      "ar": "زَحْزَحَ إِلَى الأَسْفَل / سَحَبَ لِلْخَلْف"
     }
   },
   {
@@ -377017,10 +377081,11 @@
     "isLemma": false,
     "ipa": "/qʹe:kʹʷɐtʹʂǝ'tʹʂɑ:/",
     "translations": {
-      "en": "",
-      "ru": "",
+      "en": "developed evolved passed through cycles",
+      "ru": "развившийся / прошедший путь",
       "tr": "dikkat, ilgi",
-      "trSource": "en->tr koprusu (orta)"
+      "trSource": "en->tr koprusu (orta)",
+      "ar": "مُتَطَوِّر / مَارّ بِمَرَاحِل"
     }
   },
   {
@@ -397979,10 +398044,11 @@
     "isLemma": false,
     "ipa": "/ɮe:jˈrǝkʹʷɐ/",
     "translations": {
-      "en": "",
-      "ru": "",
+      "en": "wasted spent in vain lost unjustly",
+      "ru": "пошедший понапрасну / потраченный впустую",
       "tr": "sansli ev",
-      "trSource": "en->tr koprusu (orta)"
+      "trSource": "en->tr koprusu (orta)",
+      "ar": "ضَائِع هَبَاءً / مُهْدَر"
     }
   },
   {
@@ -413212,10 +413278,11 @@
     "isLemma": false,
     "ipa": "/psǝxɐ'kʹʷɑ:dɐ/",
     "translations": {
-      "en": "",
-      "ru": "",
+      "en": "drowned in water perished/lost in water",
+      "ru": "утонувший / сгинувший в воде",
       "tr": "dikkat, ilgi",
-      "trSource": "en->tr koprusu (orta)"
+      "trSource": "en->tr koprusu (orta)",
+      "ar": "غَرِيق / غَارِق فِي المَاء"
     }
   },
   {
@@ -418764,9 +418831,10 @@
     "rootForm": "пэ-",
     "ipa": "/pɐrǝʁɐwǝkʹʷǝri:ˈje:n/",
     "translations": {
-      "en": "",
+      "en": "to roll along in front cause to tumble forward",
       "ru": "каузатив к пэрыукӏуриен: заставить повалиться, упасть во что-л. сверху или спереди",
-      "tr": "causative to"
+      "tr": "causative to",
+      "ar": "دَحْرَجَ"
     }
   },
   {
@@ -466965,7 +467033,8 @@
     "partOfSpeech": "noun",
     "conceptId": "MESLEK",
     "translations": {
-      "tr": "ASİSTAN"
+      "tr": "ASİSTAN",
+      "en": "help; aid; assistance"
     },
     "ipa": "/ʔɐpǝʔɐʁʷ/",
     "rootIds": [],
@@ -704223,7 +704292,12 @@
     "pos": "UNKNOWN",
     "root": "лъэ+пэ+гу",
     "wordFamily": "beden/organ",
-    "notes": "[Domanic PDF]"
+    "notes": "[Domanic PDF]",
+    "rootIds": [
+      "R-LHE"
+    ],
+    "wordFamilyId": "WF-LHE",
+    "conceptId": "BODY"
   },
   {
     "form": "пэгу",
@@ -704474,5 +704548,167 @@
     ],
     "wordFamilyId": "WF-ZHY",
     "conceptId": "AGE"
+  },
+  {
+    "id": "L-УБЖ",
+    "form": "убж",
+    "isLemma": true,
+    "translations": {
+      "tr": "kapı menteşesi, sürgü",
+      "en": "door hinge; gate latch; bar fastener",
+      "ru": "дверная петля; засов"
+    },
+    "rootIds": [
+      "R-UBJ"
+    ],
+    "wordFamilyId": "WF-UBJ",
+    "conceptId": "OBJECT"
+  },
+  {
+    "id": "L-ГУКIЭГЪУ",
+    "form": "гукӀэгъу",
+    "isLemma": true,
+    "translations": {
+      "tr": "merhamet, şefkat, acıma",
+      "en": "compassion; pity; mercy; sympathy",
+      "ru": "сострадание; милосердие"
+    },
+    "rootIds": [
+      "R-GU"
+    ],
+    "wordFamilyId": "WF-GU",
+    "conceptId": "EMOTION"
+  },
+  {
+    "id": "L-ГУХЭКI",
+    "form": "гухэкӀ",
+    "isLemma": true,
+    "translations": {
+      "tr": "keder, hüzün, kırgınlık",
+      "en": "grief; sorrow; heartache; disappointment",
+      "ru": "горе; печаль"
+    },
+    "rootIds": [
+      "R-GU"
+    ],
+    "wordFamilyId": "WF-GU",
+    "conceptId": "EMOTION"
+  },
+  {
+    "id": "L-IЭЗЭГЪУ",
+    "form": "Ӏэзэгъу",
+    "isLemma": true,
+    "translations": {
+      "tr": "şifa, derman, tedavi",
+      "en": "remedy; cure; medicine; treatment",
+      "ru": "лекарство; лечение"
+    },
+    "rootIds": [
+      "R-EZE"
+    ],
+    "wordFamilyId": "WF-EZE",
+    "conceptId": "MEDICINE"
+  },
+  {
+    "id": "L-УНЭ_ЩIЫБ",
+    "form": "унэ щӀыб",
+    "isLemma": true,
+    "translations": {
+      "tr": "ev arkası, arka bahçe",
+      "en": "backyard; behind the house",
+      "ru": "задний двор"
+    },
+    "rootIds": [
+      "R-UNE",
+      "R-SHIB"
+    ],
+    "wordFamilyId": "WF-UNE",
+    "conceptId": "PLACE"
+  },
+  {
+    "form": "лъэгун",
+    "translations": {
+      "tr": "ayak altı etmek, çiğnemek",
+      "ru": "попирать, топтать",
+      "en": "to trample, to violate"
+    },
+    "pos": "NOUN",
+    "notes": "[Domanic GU Parti 4]",
+    "rootIds": [
+      "R-LHE"
+    ],
+    "wordFamilyId": "WF-LHE",
+    "conceptId": "ACTION"
+  },
+  {
+    "form": "нэкъу",
+    "translations": {
+      "tr": "yanak, çehre",
+      "ru": "щека, лицо",
+      "en": "cheek, face"
+    },
+    "pos": "NOUN",
+    "notes": "[Domanic GU Parti 4]",
+    "rootIds": [
+      "R-NE"
+    ],
+    "wordFamilyId": "WF-NE",
+    "conceptId": "BODY"
+  },
+  {
+    "form": "жьыбугу",
+    "translations": {
+      "tr": "sırtın ortası",
+      "ru": "середина спины",
+      "en": "middle of the back"
+    },
+    "pos": "NOUN",
+    "notes": "[Domanic GU Parti 4]",
+    "rootIds": [
+      "R-ZHYB"
+    ],
+    "wordFamilyId": "WF-ZHYB",
+    "conceptId": "BODY"
+  },
+  {
+    "form": "бгыгу",
+    "translations": {
+      "tr": "belin ortası",
+      "ru": "середина пояса",
+      "en": "middle of the waist"
+    },
+    "pos": "NOUN",
+    "notes": "[Domanic GU Parti 4]",
+    "rootIds": [
+      "R-BGY"
+    ],
+    "wordFamilyId": "WF-BGY",
+    "conceptId": "BODY"
+  },
+  {
+    "form": "лъэгубжэ",
+    "translations": {
+      "tr": "ayak altı",
+      "ru": "подошва, подножие",
+      "en": "sole, foot bottom"
+    },
+    "pos": "NOUN",
+    "notes": "[Domanic GU Parti 4]"
+  },
+  {
+    "id": "L-ЗЭКIЭЛЫГЪЭКIУЭН",
+    "form": "зэкӀэлыгъэкӀуэн",
+    "isLemma": true,
+    "translations": {
+      "tr": "sırayla/peş peşe göndermek",
+      "en": "to send in succession send one after another",
+      "ar": "أرْسَلَ بالتَتَابُع / أَتْبَعَ",
+      "ru": "отправлять друг за другом / последовательно"
+    },
+    "rootIds": [
+      "R-КIУЭН (ЗЭКIЭЛЪЫ- + ГЪЭ-)"
+    ],
+    "wordFamilyId": "WF-КIУЭН (ЗЭКIЭЛЪЫ- + ГЪЭ-)",
+    "conceptId": "CAUSATIVE_MOTION_VERB"
   }
 ]
