@@ -770,7 +770,8 @@
     "translations": {
       "ru": "глубина души",
       "en": "the depth of one's soul",
-      "tr": "yürek, bağır"
+      "tr": "yürek, bağır",
+      "ar": "قلب / أحشاء"
     },
     "subConceptId": "EMOTION",
     "taxonomyFamily": "Duygu & Zihin",
@@ -1029,10 +1030,8 @@
     "corpusFrequencyKbd": 39,
     "partOfSpeech": "noun",
     "corpusFrequency": 40,
-    "rootIds": [
-      "R-GUSHCH"
-    ],
-    "wordFamilyId": "WF-GUSHCH",
+    "rootIds": [],
+    "wordFamilyId": null,
     "derivation": {
       "rule": "root",
       "components": [
@@ -1053,22 +1052,8 @@
     "taxonomyFamily": "Ev & Eşya",
     "rootForm": "гу",
     "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a4/%D0%93%D1%83500%D0%B3%D1%83%D1%89%D1%8D.ogg",
-    "root": "гущ",
-    "wordFamily": {
-      "id": "WF-GUSHCH",
-      "lexemeIds": [
-        "L-GUSHHE"
-      ],
-      "conceptIds": [
-        "CRADLE"
-      ],
-      "morphemeIds": [],
-      "productivity": {
-        "totalLexemes": 0,
-        "corpusFrequency": 0
-      },
-      "notes": "Bos aile - sonra doldurulacak"
-    }
+    "root": null,
+    "wordFamily": null
   },
   {
     "id": "L-1E",
@@ -2200,10 +2185,8 @@
     "partOfSpeech": "noun",
     "corpusFrequency": 119,
     "conceptId": "PERSON",
-    "rootIds": [
-      "R-GUASHE"
-    ],
-    "wordFamilyId": "WF-GUASHE",
+    "rootIds": [],
+    "wordFamilyId": null,
     "derivation": {
       "rule": "root",
       "components": [
@@ -2225,22 +2208,8 @@
     "taxonomyFamily": "Sosyal Rol",
     "rootForm": "гуащэ",
     "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8e/%D0%93%D1%83027%D0%B3%D1%83%D0%B0%D1%89%D1%8D.ogg",
-    "root": "гу",
-    "wordFamily": {
-      "id": "WF-GUASHE",
-      "lexemeIds": [
-        "L-GUASHE"
-      ],
-      "conceptIds": [
-        "LADY"
-      ],
-      "morphemeIds": [],
-      "productivity": {
-        "totalLexemes": 0,
-        "corpusFrequency": 0
-      },
-      "notes": "Bos aile - sonra doldurulacak"
-    }
+    "root": null,
+    "wordFamily": null
   },
   {
     "id": "L-SHHYEKHUIT",
@@ -6657,10 +6626,11 @@
     ],
     "isLemma": true,
     "translations": {
-      "en": "the groom, matchmaking",
+      "en": "suitor, fiance, matchmaking",
       "ru": "жених, сватовство",
-      "tr": "DÜNÜRCÜ",
-      "trSource": "en->tr koprusu (orta)"
+      "tr": "damat aday?, talip",
+      "trSource": "en->tr koprusu (orta)",
+      "ar": "خاطب"
     },
     "subConceptId": "SUITOR",
     "taxonomyFamily": "Ruh & Can",
@@ -10678,7 +10648,9 @@
     "isLemma": true,
     "translations": {
       "tr": "rahat, huzurlu",
-      "en": "comfortable"
+      "en": "comfortable",
+      "ar": "مرتاح / هادئ",
+      "ru": "Спокойный / душевный"
     },
     "subConceptId": "EMOTION",
     "taxonomyFamily": "Duygu & Zihin",
@@ -10898,7 +10870,7 @@
     "translations": {
       "tr": "hassas",
       "en": "be attentive, caring, helpful. attentively. give attention to smb., to take care of someone smth.",
-      "ru": "",
+      "ru": "Внимание / чуткость",
       "ar": "ملاحظة"
     },
     "subConceptId": "ATTENTION",
@@ -11890,7 +11862,8 @@
     "translations": {
       "tr": "kesinti, ayrılma, kopuş",
       "en": "assistance; presence; standing by; support",
-      "ru": "помощь; присутствие"
+      "ru": "помощь; присутствие",
+      "ar": "مساندة / وقوف"
     },
     "subConceptId": "EMOTION",
     "taxonomyFamily": "Duygu & Zihin",
@@ -12438,8 +12411,10 @@
     },
     "isLemma": true,
     "translations": {
-      "tr": "dayanikli, canli",
-      "en": "of life"
+      "tr": "dayan?kl?, canl?, g??l?",
+      "en": "resilient, hardy, tough",
+      "ar": "قوي التحمل",
+      "ru": "Живучий"
     },
     "subConceptId": "RESILIENT",
     "taxonomyFamily": "Ruh & Can",
@@ -14168,7 +14143,8 @@
     "translations": {
       "tr": "endise",
       "en": "anxious person; alarmist; worrier",
-      "ru": ""
+      "ru": "Беспокойный человек",
+      "ar": "قلق / كثير الخوف"
     },
     "subConceptId": "EMOTION",
     "taxonomyFamily": "Duygu & Zihin",
@@ -15645,10 +15621,8 @@
       "ru": "хозяйка дома (по отношению к гостям)",
       "tr": "ev sahibesi"
     },
-    "rootIds": [
-      "R-GU"
-    ],
-    "wordFamilyId": "WF-GU",
+    "rootIds": [],
+    "wordFamilyId": null,
     "derivation": {
       "rootIds": [
         "R-GU"
@@ -15657,39 +15631,8 @@
       "rule": "compound"
     },
     "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7b/%D0%91881%D0%B1%D1%8B%D1%81%D1%8B%D0%BC%D0%B3%D1%83%D0%B0%D1%89%D1%8D.ogg",
-    "root": "гу",
-    "wordFamily": {
-      "id": "WF-GU",
-      "lexemeIds": [
-        "L-GUF1E",
-        "L-GUGHE",
-        "L-GUBZHYGE",
-        "L-GUETYNEGHE",
-        "L-GUF1EN"
-      ],
-      "conceptIds": [
-        "ANGER",
-        "ANXIETY",
-        "HOPE",
-        "INTELLIGENCE",
-        "JOY",
-        "LOYALTY",
-        "SOUL_DEPTH",
-        "THOUGHT"
-      ],
-      "morphemeIds": [
-        "M-F1E",
-        "M-GHE",
-        "M-BZHYGE",
-        "M-F1EN"
-      ],
-      "productivity": {
-        "totalLexemes": 47,
-        "corpusFrequency": 22788,
-        "mostFrequentLexemeId": "L-GUF1E"
-      },
-      "notes": "En uretken somatik kok ailesi. 22 bilesik yapi korpusta dogrulandi."
-    }
+    "root": null,
+    "wordFamily": null
   },
   {
     "id": "L-UNEBLYN",
@@ -22349,10 +22292,8 @@
       "en": "beet. beetroot",
       "ru": "свёкла обыкновенная"
     },
-    "rootIds": [
-      "R-GU"
-    ],
-    "wordFamilyId": "WF-GU",
+    "rootIds": [],
+    "wordFamilyId": null,
     "derivation": {
       "rootIds": [
         "R-GU"
@@ -22374,39 +22315,8 @@
       "! !! !! нап. 75",
       "|| Сабийхэм жэгундэ, нащэ, бэдрэжан жылэхэр хасэ.|| Дети сажают семена свёклы, огурцов, помидоров. || The children are planting beet, cucumber and tomato seeds."
     ],
-    "root": "гу",
-    "wordFamily": {
-      "id": "WF-GU",
-      "lexemeIds": [
-        "L-GUF1E",
-        "L-GUGHE",
-        "L-GUBZHYGE",
-        "L-GUETYNEGHE",
-        "L-GUF1EN"
-      ],
-      "conceptIds": [
-        "ANGER",
-        "ANXIETY",
-        "HOPE",
-        "INTELLIGENCE",
-        "JOY",
-        "LOYALTY",
-        "SOUL_DEPTH",
-        "THOUGHT"
-      ],
-      "morphemeIds": [
-        "M-F1E",
-        "M-GHE",
-        "M-BZHYGE",
-        "M-F1EN"
-      ],
-      "productivity": {
-        "totalLexemes": 47,
-        "corpusFrequency": 22788,
-        "mostFrequentLexemeId": "L-GUF1E"
-      },
-      "notes": "En uretken somatik kok ailesi. 22 bilesik yapi korpusta dogrulandi."
-    }
+    "root": null,
+    "wordFamily": null
   },
   {
     "id": "L-K1EBYSTE",
@@ -22671,10 +22581,8 @@
     "corpusFrequency": 78,
     "conceptId": "AGRICULTURE",
     "ipa": "/gʷɐdz/",
-    "rootIds": [
-      "R-GU"
-    ],
-    "wordFamilyId": "WF-GU",
+    "rootIds": [],
+    "wordFamilyId": null,
     "derivation": {
       "rule": "root",
       "components": [
@@ -22700,39 +22608,8 @@
       "*Бжьыхьэсэ гуэдз.",
       "*Гуэдз бэв."
     ],
-    "root": "гу",
-    "wordFamily": {
-      "id": "WF-GU",
-      "lexemeIds": [
-        "L-GUF1E",
-        "L-GUGHE",
-        "L-GUBZHYGE",
-        "L-GUETYNEGHE",
-        "L-GUF1EN"
-      ],
-      "conceptIds": [
-        "ANGER",
-        "ANXIETY",
-        "HOPE",
-        "INTELLIGENCE",
-        "JOY",
-        "LOYALTY",
-        "SOUL_DEPTH",
-        "THOUGHT"
-      ],
-      "morphemeIds": [
-        "M-F1E",
-        "M-GHE",
-        "M-BZHYGE",
-        "M-F1EN"
-      ],
-      "productivity": {
-        "totalLexemes": 47,
-        "corpusFrequency": 22788,
-        "mostFrequentLexemeId": "L-GUF1E"
-      },
-      "notes": "En uretken somatik kok ailesi. 22 bilesik yapi korpusta dogrulandi."
-    }
+    "root": null,
+    "wordFamily": null
   },
   {
     "id": "L-KHUGU",
@@ -22750,10 +22627,8 @@
       "en": "millet",
       "ru": "пшено"
     },
-    "rootIds": [
-      "R-GU"
-    ],
-    "wordFamilyId": "WF-GU",
+    "rootIds": [],
+    "wordFamilyId": null,
     "derivation": {
       "rootIds": [
         "R-GU"
@@ -22777,39 +22652,8 @@
       "! !! !! нап. 104",
       "|| Хугу уэстынщи, уэрэд жыӀэ.|| Я тебе дам пшена и ты песню споешь.|| I will give you some millet and you sing a song."
     ],
-    "root": "гу",
-    "wordFamily": {
-      "id": "WF-GU",
-      "lexemeIds": [
-        "L-GUF1E",
-        "L-GUGHE",
-        "L-GUBZHYGE",
-        "L-GUETYNEGHE",
-        "L-GUF1EN"
-      ],
-      "conceptIds": [
-        "ANGER",
-        "ANXIETY",
-        "HOPE",
-        "INTELLIGENCE",
-        "JOY",
-        "LOYALTY",
-        "SOUL_DEPTH",
-        "THOUGHT"
-      ],
-      "morphemeIds": [
-        "M-F1E",
-        "M-GHE",
-        "M-BZHYGE",
-        "M-F1EN"
-      ],
-      "productivity": {
-        "totalLexemes": 47,
-        "corpusFrequency": 22788,
-        "mostFrequentLexemeId": "L-GUF1E"
-      },
-      "notes": "En uretken somatik kok ailesi. 22 bilesik yapi korpusta dogrulandi."
-    }
+    "root": null,
+    "wordFamily": null
   },
   {
     "id": "L-KHE",
@@ -23582,10 +23426,8 @@
     "notes": "C-11.3: kategori tasnifi. [NADIR]",
     "status": "rare",
     "corpusFrequency": 3,
-    "rootIds": [
-      "R-GU"
-    ],
-    "wordFamilyId": "WF-GU",
+    "rootIds": [],
+    "wordFamilyId": null,
     "derivation": {
       "rule": "compound",
       "components": [
@@ -23604,39 +23446,8 @@
     "taxonomyFamily": "Doğa & Flora",
     "rootForm": "гуащэ",
     "ipa": "/'gʷɑ:ɕɐ/",
-    "root": "гу",
-    "wordFamily": {
-      "id": "WF-GU",
-      "lexemeIds": [
-        "L-GUF1E",
-        "L-GUGHE",
-        "L-GUBZHYGE",
-        "L-GUETYNEGHE",
-        "L-GUF1EN"
-      ],
-      "conceptIds": [
-        "ANGER",
-        "ANXIETY",
-        "HOPE",
-        "INTELLIGENCE",
-        "JOY",
-        "LOYALTY",
-        "SOUL_DEPTH",
-        "THOUGHT"
-      ],
-      "morphemeIds": [
-        "M-F1E",
-        "M-GHE",
-        "M-BZHYGE",
-        "M-F1EN"
-      ],
-      "productivity": {
-        "totalLexemes": 47,
-        "corpusFrequency": 22788,
-        "mostFrequentLexemeId": "L-GUF1E"
-      },
-      "notes": "En uretken somatik kok ailesi. 22 bilesik yapi korpusta dogrulandi."
-    }
+    "root": null,
+    "wordFamily": null
   },
   {
     "id": "L-BZHYNGHEGHE",
@@ -24014,10 +23825,8 @@
     "status": "rare",
     "corpusFrequency": 19,
     "ipa": "/gʷɐɮ/",
-    "rootIds": [
-      "R-GU"
-    ],
-    "wordFamilyId": "WF-GU",
+    "rootIds": [],
+    "wordFamilyId": null,
     "derivation": {
       "rule": "root",
       "components": [
@@ -24039,39 +23848,8 @@
     "taxonomyFamily": "Doğa & Coğrafya",
     "rootForm": "гуэл",
     "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/0/06/%D0%93%D1%83101%D0%B3%D1%83%D1%8D%D0%BB.ogg",
-    "root": "гу",
-    "wordFamily": {
-      "id": "WF-GU",
-      "lexemeIds": [
-        "L-GUF1E",
-        "L-GUGHE",
-        "L-GUBZHYGE",
-        "L-GUETYNEGHE",
-        "L-GUF1EN"
-      ],
-      "conceptIds": [
-        "ANGER",
-        "ANXIETY",
-        "HOPE",
-        "INTELLIGENCE",
-        "JOY",
-        "LOYALTY",
-        "SOUL_DEPTH",
-        "THOUGHT"
-      ],
-      "morphemeIds": [
-        "M-F1E",
-        "M-GHE",
-        "M-BZHYGE",
-        "M-F1EN"
-      ],
-      "productivity": {
-        "totalLexemes": 47,
-        "corpusFrequency": 22788,
-        "mostFrequentLexemeId": "L-GUF1E"
-      },
-      "notes": "En uretken somatik kok ailesi. 22 bilesik yapi korpusta dogrulandi."
-    }
+    "root": null,
+    "wordFamily": null
   },
   {
     "id": "L-MIN",
@@ -27889,10 +27667,8 @@
       "tr": "tatmak, tadına bakmak",
       "ar": "ييبس في"
     },
-    "rootIds": [
-      "R-GU"
-    ],
-    "wordFamilyId": "WF-GU",
+    "rootIds": [],
+    "wordFamilyId": null,
     "derivation": {
       "rootIds": [
         "R-GU"
@@ -27901,39 +27677,8 @@
       "rule": "compound"
     },
     "ipa": "/xɐˈʁʷɐn/",
-    "root": "гу",
-    "wordFamily": {
-      "id": "WF-GU",
-      "lexemeIds": [
-        "L-GUF1E",
-        "L-GUGHE",
-        "L-GUBZHYGE",
-        "L-GUETYNEGHE",
-        "L-GUF1EN"
-      ],
-      "conceptIds": [
-        "ANGER",
-        "ANXIETY",
-        "HOPE",
-        "INTELLIGENCE",
-        "JOY",
-        "LOYALTY",
-        "SOUL_DEPTH",
-        "THOUGHT"
-      ],
-      "morphemeIds": [
-        "M-F1E",
-        "M-GHE",
-        "M-BZHYGE",
-        "M-F1EN"
-      ],
-      "productivity": {
-        "totalLexemes": 47,
-        "corpusFrequency": 22788,
-        "mostFrequentLexemeId": "L-GUF1E"
-      },
-      "notes": "En uretken somatik kok ailesi. 22 bilesik yapi korpusta dogrulandi."
-    }
+    "root": null,
+    "wordFamily": null
   },
   {
     "id": "L-ME-YEUN",
@@ -31700,10 +31445,8 @@
     "notes": "",
     "corpusFrequency": 189,
     "conceptId": "NATURE",
-    "rootIds": [
-      "R-GU"
-    ],
-    "wordFamilyId": "WF-GU",
+    "rootIds": [],
+    "wordFamilyId": null,
     "derivation": {
       "rule": "compound",
       "components": [
@@ -31725,39 +31468,8 @@
     "taxonomyFamily": "Doğa & Arazi",
     "rootForm": "губгъуэ",
     "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8a/%D0%93%D1%83176%D0%B3%D1%83%D0%B1%D0%B3%D1%8A%D1%83%D1%8D.ogg",
-    "root": "гу",
-    "wordFamily": {
-      "id": "WF-GU",
-      "lexemeIds": [
-        "L-GUF1E",
-        "L-GUGHE",
-        "L-GUBZHYGE",
-        "L-GUETYNEGHE",
-        "L-GUF1EN"
-      ],
-      "conceptIds": [
-        "ANGER",
-        "ANXIETY",
-        "HOPE",
-        "INTELLIGENCE",
-        "JOY",
-        "LOYALTY",
-        "SOUL_DEPTH",
-        "THOUGHT"
-      ],
-      "morphemeIds": [
-        "M-F1E",
-        "M-GHE",
-        "M-BZHYGE",
-        "M-F1EN"
-      ],
-      "productivity": {
-        "totalLexemes": 47,
-        "corpusFrequency": 22788,
-        "mostFrequentLexemeId": "L-GUF1E"
-      },
-      "notes": "En uretken somatik kok ailesi. 22 bilesik yapi korpusta dogrulandi."
-    }
+    "root": null,
+    "wordFamily": null
   },
   {
     "id": "L-D0B1D0B6D18D",
@@ -40044,7 +39756,7 @@
   },
   {
     "id": "L-D093D183D0B0",
-    "form": "Гуажэ",
+    "form": "гуажэ",
     "ipa": "/ˈgʷɑ:ᶎɐ/",
     "literalMeaning": "kırgınlık",
     "partOfSpeech": "noun",
@@ -40060,8 +39772,7 @@
       "ru": "обида"
     },
     "rootIds": [
-      "R-GUASCH",
-      "R-GUASCHA"
+      "R-GU"
     ],
     "wordFamilyId": "WF-GU",
     "derivation": {
@@ -40073,7 +39784,7 @@
     },
     "conceptId": "PERSON",
     "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e6/%D0%93%D1%83002%D0%B3%D1%83%D0%B0%D0%B6%D1%8D.ogg",
-    "root": "гуащ"
+    "root": "гу"
   },
   {
     "id": "L-D093D183D0BA",
@@ -40263,7 +39974,7 @@
   },
   {
     "id": "L-D093D183D0B0-2",
-    "form": "Гуауэ",
+    "form": "гуауэ",
     "ipa": "/'gʷɑ:wɐ/",
     "literalMeaning": "acı, keder",
     "partOfSpeech": "noun",
@@ -40280,8 +39991,7 @@
       "ar": "حزن"
     },
     "rootIds": [
-      "R-GUASCH",
-      "R-GUASCHA"
+      "R-GU"
     ],
     "wordFamilyId": "WF-GU",
     "derivation": {
@@ -40293,7 +40003,7 @@
     },
     "conceptId": "PERSON",
     "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9a/%D0%93%D1%83017%D0%B3%D1%83%D0%B0%D1%83%D1%8D.ogg",
-    "root": "гуащ"
+    "root": "гу"
   },
   {
     "id": "L-D093D183D0BA-2",
@@ -51671,10 +51381,8 @@
     "notes": "Corpus v1.0 (freq: 290, lang: kbd, source: 0.Ady-Ady_AIG)",
     "ipa": "/gʷǝp/",
     "conceptId": "COLLECTIVE",
-    "rootIds": [
-      "R-GU"
-    ],
-    "wordFamilyId": "WF-GU",
+    "rootIds": [],
+    "wordFamilyId": null,
     "derivation": {
       "rule": "root",
       "components": [
@@ -51695,39 +51403,8 @@
     "taxonomyFamily": "Topluluk",
     "rootForm": "гуп",
     "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/d/df/%D0%93%D1%83333%D0%B3%D1%83%D0%BF.ogg",
-    "root": "гу",
-    "wordFamily": {
-      "id": "WF-GU",
-      "lexemeIds": [
-        "L-GUF1E",
-        "L-GUGHE",
-        "L-GUBZHYGE",
-        "L-GUETYNEGHE",
-        "L-GUF1EN"
-      ],
-      "conceptIds": [
-        "ANGER",
-        "ANXIETY",
-        "HOPE",
-        "INTELLIGENCE",
-        "JOY",
-        "LOYALTY",
-        "SOUL_DEPTH",
-        "THOUGHT"
-      ],
-      "morphemeIds": [
-        "M-F1E",
-        "M-GHE",
-        "M-BZHYGE",
-        "M-F1EN"
-      ],
-      "productivity": {
-        "totalLexemes": 47,
-        "corpusFrequency": 22788,
-        "mostFrequentLexemeId": "L-GUF1E"
-      },
-      "notes": "En uretken somatik kok ailesi. 22 bilesik yapi korpusta dogrulandi."
-    }
+    "root": null,
+    "wordFamily": null
   },
   {
     "id": "L-CORPUS-00125",
