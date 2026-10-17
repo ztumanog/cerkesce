@@ -11501,7 +11501,8 @@
     "translations": {
       "tr": "kopru",
       "ar": "جسر، قنطرة",
-      "en": "bridge"
+      "en": "bridge",
+      "ru": "Мост"
     },
     "subConceptId": "BRIDGE",
     "taxonomyFamily": "Ayak & Adım",
@@ -14245,10 +14246,8 @@
     "subConceptId": "CARTRIDGE_BOX",
     "taxonomyFamily": "Askeri & Silah",
     "rootForm": "хьэ-",
-    "rootIds": [
-      "R-LHE"
-    ],
-    "wordFamilyId": "WF-LHE",
+    "rootIds": [],
+    "wordFamilyId": null,
     "derivation": {
       "rootIds": [
         "R-LHE"
@@ -14259,31 +14258,8 @@
     "dictionaryEvidence": [
       "sukunov-1998"
     ],
-    "root": "лъэ",
-    "wordFamily": {
-      "id": "WF-LHE",
-      "lexemeIds": [
-        "L-1EPKYLEPK",
-        "L-LHEGU",
-        "L-LHEBAKUE",
-        "L-LHAKUE",
-        "L-LHEPS"
-      ],
-      "conceptIds": [
-        "BINDING",
-        "BLOOD",
-        "LEG",
-        "SOLE",
-        "STEP"
-      ],
-      "morphemeIds": [],
-      "productivity": {
-        "totalLexemes": 5,
-        "corpusFrequency": 10729,
-        "mostFrequentLexemeId": "L-LHAKUE"
-      },
-      "notes": "Ayak/bacak ailesi (лъэ). Somatik kok. Corpus: 10.729 kullanim."
-    }
+    "root": null,
+    "wordFamily": null
   },
   {
     "id": "L-KHEZYRYLHE",
@@ -14298,10 +14274,8 @@
     "partOfSpeech": "noun",
     "corpusFrequency": 2,
     "ipa": "/ħɐzǝ'rǝɬɐ/",
-    "rootIds": [
-      "R-LHE"
-    ],
-    "wordFamilyId": "WF-LHE",
+    "rootIds": [],
+    "wordFamilyId": null,
     "derivation": {
       "rule": "root",
       "components": [
@@ -14323,31 +14297,8 @@
     "examples": [
       "*Хьэзырылъэм хьэзыр илъщ."
     ],
-    "root": "лъэ",
-    "wordFamily": {
-      "id": "WF-LHE",
-      "lexemeIds": [
-        "L-1EPKYLEPK",
-        "L-LHEGU",
-        "L-LHEBAKUE",
-        "L-LHAKUE",
-        "L-LHEPS"
-      ],
-      "conceptIds": [
-        "BINDING",
-        "BLOOD",
-        "LEG",
-        "SOLE",
-        "STEP"
-      ],
-      "morphemeIds": [],
-      "productivity": {
-        "totalLexemes": 5,
-        "corpusFrequency": 10729,
-        "mostFrequentLexemeId": "L-LHAKUE"
-      },
-      "notes": "Ayak/bacak ailesi (лъэ). Somatik kok. Corpus: 10.729 kullanim."
-    }
+    "root": null,
+    "wordFamily": null
   },
   {
     "id": "L-KHEZYRYPS",
@@ -18837,10 +18788,8 @@
     "notes": "C-11.3: temel kelime. Kabardeyce.",
     "corpusFrequency": 1041,
     "ipa": "/jǝ'ɬɐs/",
-    "rootIds": [
-      "R-LHE"
-    ],
-    "wordFamilyId": "WF-LHE",
+    "rootIds": [],
+    "wordFamilyId": null,
     "derivation": {
       "rule": "root",
       "components": [
@@ -18859,31 +18808,8 @@
       "*Илъэс тӀощӀ.",
       "*илъэсибл"
     ],
-    "root": "лъэ",
-    "wordFamily": {
-      "id": "WF-LHE",
-      "lexemeIds": [
-        "L-1EPKYLEPK",
-        "L-LHEGU",
-        "L-LHEBAKUE",
-        "L-LHAKUE",
-        "L-LHEPS"
-      ],
-      "conceptIds": [
-        "BINDING",
-        "BLOOD",
-        "LEG",
-        "SOLE",
-        "STEP"
-      ],
-      "morphemeIds": [],
-      "productivity": {
-        "totalLexemes": 5,
-        "corpusFrequency": 10729,
-        "mostFrequentLexemeId": "L-LHAKUE"
-      },
-      "notes": "Ayak/bacak ailesi (лъэ). Somatik kok. Corpus: 10.729 kullanim."
-    }
+    "root": null,
+    "wordFamily": null
   },
   {
     "id": "L-GHE",
@@ -21257,7 +21183,8 @@
     "translations": {
       "tr": "ayak parmakları",
       "en": "toe",
-      "ru": "палец ноги"
+      "ru": "палец ноги",
+      "ar": "أصابع القدم"
     },
     "subConceptId": "TOE",
     "taxonomyFamily": "Ayak & Adım",
@@ -25317,10 +25244,8 @@
     "subConceptId": "CARRY_MOVE",
     "taxonomyFamily": "Eylem & Hareket",
     "rootForm": "хьэ-",
-    "rootIds": [
-      "R-LHE"
-    ],
-    "wordFamilyId": "WF-LHE",
+    "rootIds": [],
+    "wordFamilyId": null,
     "derivation": {
       "rootIds": [
         "R-LHE"
@@ -25333,31 +25258,8 @@
     "translations": {
       "tr": "GÖTÜRMEK"
     },
-    "root": "лъэ",
-    "wordFamily": {
-      "id": "WF-LHE",
-      "lexemeIds": [
-        "L-1EPKYLEPK",
-        "L-LHEGU",
-        "L-LHEBAKUE",
-        "L-LHAKUE",
-        "L-LHEPS"
-      ],
-      "conceptIds": [
-        "BINDING",
-        "BLOOD",
-        "LEG",
-        "SOLE",
-        "STEP"
-      ],
-      "morphemeIds": [],
-      "productivity": {
-        "totalLexemes": 5,
-        "corpusFrequency": 10729,
-        "mostFrequentLexemeId": "L-LHAKUE"
-      },
-      "notes": "Ayak/bacak ailesi (лъэ). Somatik kok. Corpus: 10.729 kullanim."
-    }
+    "root": null,
+    "wordFamily": null
   },
   {
     "id": "L-YASHCHAN",
@@ -25655,7 +25557,10 @@
     "isLemma": true,
     "ipa": "/ɬɐ'dɑ:nɐ/",
     "translations": {
-      "tr": "bacak tendonu"
+      "tr": "bacak tendonu",
+      "en": "leg tendon, Achilles tendon",
+      "ar": "وتر العرقوب",
+      "ru": "Сухожилие ноги"
     },
     "root": "лъэ",
     "wordFamily": {
@@ -26817,7 +26722,7 @@
       "ar": "ريفي"
     },
     "rootIds": [
-      "R-KU_1"
+      "R-KU"
     ],
     "root": "къуажэ",
     "wordFamilyId": "WF-KU_1",
@@ -32796,10 +32701,10 @@
     ],
     "isLemma": true,
     "translations": {
-      "tr": "Hamur teknesi",
-      "en": "fly",
-      "ru": "летать",
-      "ar": "يقفز، يثب، يطفر"
+      "tr": "uçmak",
+      "en": "to fly",
+      "ru": "Летать",
+      "ar": "يطير"
     },
     "conceptId": "FLY",
     "subConceptId": "FLY",
@@ -33688,7 +33593,7 @@
     "subConceptId": "QUANTITY_QUALITY",
     "taxonomyFamily": "Nitelik & Doğa",
     "rootIds": [
-      "R-BEG_1"
+      "R-BEG"
     ],
     "root": "бэгъу",
     "wordFamilyId": "WF-BEG_1",
@@ -35415,7 +35320,8 @@
     "translations": {
       "tr": "ayak bileği, aşil tendon bölgesi",
       "en": "calf (leg)",
-      "ru": "икра"
+      "ru": "икра",
+      "ar": "كاحل"
     },
     "subConceptId": "KNEE_JOINT",
     "taxonomyFamily": "Ayak & Adım",
@@ -35474,7 +35380,10 @@
     "rootForm": "лъэ-",
     "ipaSource": "root-derived",
     "translations": {
-      "tr": "ayak parmağı ucu"
+      "tr": "ayak parmağı ucu",
+      "en": "tiptoe, tip of the toe",
+      "ar": "أطراف الأصابع",
+      "ru": "Кончик пальца ноги"
     },
     "root": "лъэ",
     "wordFamily": {
@@ -35582,7 +35491,8 @@
     "translations": {
       "en": "indentation, recess on the foot from the side of the sole",
       "ru": "выемка, углубление на ступне со стороны подошвы",
-      "tr": "ayak kavis yeri"
+      "tr": "ayak kavis yeri",
+      "ar": "قوس القدم"
     },
     "subConceptId": "FOOT_ARCH",
     "taxonomyFamily": "Ayak & Adım",
@@ -40589,10 +40499,8 @@
       "ru": "мучение, мука, страдание",
       "ar": "معاناة; عبء"
     },
-    "rootIds": [
-      "R-LHE"
-    ],
-    "wordFamilyId": "WF-LHE",
+    "rootIds": [],
+    "wordFamilyId": null,
     "derivation": {
       "rootIds": [
         "R-LHE"
@@ -40601,31 +40509,8 @@
       "rule": "compound"
     },
     "conceptId": "LEG_FOOT",
-    "root": "лъэ",
-    "wordFamily": {
-      "id": "WF-LHE",
-      "lexemeIds": [
-        "L-1EPKYLEPK",
-        "L-LHEGU",
-        "L-LHEBAKUE",
-        "L-LHAKUE",
-        "L-LHEPS"
-      ],
-      "conceptIds": [
-        "BINDING",
-        "BLOOD",
-        "LEG",
-        "SOLE",
-        "STEP"
-      ],
-      "morphemeIds": [],
-      "productivity": {
-        "totalLexemes": 5,
-        "corpusFrequency": 10729,
-        "mostFrequentLexemeId": "L-LHAKUE"
-      },
-      "notes": "Ayak/bacak ailesi (лъэ). Somatik kok. Corpus: 10.729 kullanim."
-    }
+    "root": null,
+    "wordFamily": null
   },
   {
     "id": "L-D0A2D0B0D183",
@@ -43551,11 +43436,11 @@
     ],
     "isLemma": true,
     "translations": {
-      "en": "nation, people, tribe, ethnos, clan, family, bloodline (relatives within the bounds of one family line), family, breed (of domestic animal), sort (of plants)",
-      "ru": "племя; нация, род (родственники в пределах одной фамилии), порода (скота), сорт (растений)",
-      "tr": "ÇİN CUMHURİYETİ",
+      "en": "nation, tribe, ethnicity, people",
+      "ru": "Народ / нация / племя",
+      "tr": "soy, boy, millet, halk",
       "trSource": "en->tr koprusu (orta)",
-      "ar": "أمة; قبلي; جنسية; وطني; عرقي; قبيلة"
+      "ar": "أمة / شعب / قبيلة"
     },
     "subConceptId": "NATION",
     "taxonomyFamily": "Ayak & Adım",
@@ -48113,7 +47998,9 @@
     "isLemma": true,
     "translations": {
       "ru": "сильно, очень <div style='marg",
-      "tr": "çok, son derece, güçlü bir şekilde"
+      "tr": "çok, son derece, güçlü bir şekilde",
+      "en": "very, extremely, strongly",
+      "ar": "جداً / بقوة"
     },
     "subConceptId": "STRONGLY",
     "taxonomyFamily": "Ayak & Adım",
@@ -173992,7 +173879,7 @@
     "literalMeaningAdy": "житель села / Къуажэм сыт щыгъуи щыпсэу, зи гъащӀэр щызыгъакӀуэ цӀыху",
     "isLemma": true,
     "rootIds": [
-      "R-KU_1"
+      "R-KU"
     ],
     "conceptId": "VILLAGE",
     "translations": {
@@ -209221,7 +209108,7 @@
       "trSource": "en->tr koprusu (orta)"
     },
     "rootIds": [
-      "R-LE"
+      "R-LHE"
     ],
     "wordFamilyId": "WF-LE",
     "derivation": {
@@ -398699,7 +398586,7 @@
     "literalMeaningAdy": "загадка / Зи мыхьэнэр къэщӀэн хуейуэ щыджэгукӀэ, зым адрейм ирит псалъэ гупыр е…",
     "isLemma": true,
     "rootIds": [
-      "R-KU_1"
+      "R-KU"
     ],
     "conceptId": "VILLAGE",
     "translations": {
@@ -420042,7 +419929,7 @@
       "tr": "FEYZ"
     },
     "rootIds": [
-      "R-BEG_1"
+      "R-BEG"
     ],
     "ipa": "/bɐ'ʁʷɐn/",
     "ipaSource": "root-derived",
@@ -429099,10 +428986,8 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [
-      "R-LHE"
-    ],
-    "wordFamilyId": "WF-LHE",
+    "rootIds": [],
+    "wordFamilyId": null,
     "derivation": {
       "rootIds": [
         "R-LHE"
@@ -429124,31 +429009,8 @@
       "ru": "то, что выделяет много дыма",
       "tr": "AYIP"
     },
-    "root": "лъэ",
-    "wordFamily": {
-      "id": "WF-LHE",
-      "lexemeIds": [
-        "L-1EPKYLEPK",
-        "L-LHEGU",
-        "L-LHEBAKUE",
-        "L-LHAKUE",
-        "L-LHEPS"
-      ],
-      "conceptIds": [
-        "BINDING",
-        "BLOOD",
-        "LEG",
-        "SOLE",
-        "STEP"
-      ],
-      "morphemeIds": [],
-      "productivity": {
-        "totalLexemes": 5,
-        "corpusFrequency": 10729,
-        "mostFrequentLexemeId": "L-LHAKUE"
-      },
-      "notes": "Ayak/bacak ailesi (лъэ). Somatik kok. Corpus: 10.729 kullanim."
-    }
+    "root": null,
+    "wordFamily": null
   },
   {
     "id": "L-KBD-00009",
@@ -429680,10 +429542,8 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [
-      "R-LHE"
-    ],
-    "wordFamilyId": "WF-LHE",
+    "rootIds": [],
+    "wordFamilyId": null,
     "derivation": {
       "rootIds": [
         "R-LHE"
@@ -429705,31 +429565,8 @@
       "ru": "каузатив к ӏулъэдэн: заставить подбежать; подъехать к чему-л.",
       "tr": "causative to"
     },
-    "root": "лъэ",
-    "wordFamily": {
-      "id": "WF-LHE",
-      "lexemeIds": [
-        "L-1EPKYLEPK",
-        "L-LHEGU",
-        "L-LHEBAKUE",
-        "L-LHAKUE",
-        "L-LHEPS"
-      ],
-      "conceptIds": [
-        "BINDING",
-        "BLOOD",
-        "LEG",
-        "SOLE",
-        "STEP"
-      ],
-      "morphemeIds": [],
-      "productivity": {
-        "totalLexemes": 5,
-        "corpusFrequency": 10729,
-        "mostFrequentLexemeId": "L-LHAKUE"
-      },
-      "notes": "Ayak/bacak ailesi (лъэ). Somatik kok. Corpus: 10.729 kullanim."
-    }
+    "root": null,
+    "wordFamily": null
   },
   {
     "id": "L-KBD-00018",
@@ -430815,10 +430652,8 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [
-      "R-LHE"
-    ],
-    "wordFamilyId": "WF-LHE",
+    "rootIds": [],
+    "wordFamilyId": null,
     "derivation": {
       "rootIds": [
         "R-LHE"
@@ -430840,31 +430675,8 @@
       "ru": "подбежать; подъехать к чему-л.",
       "tr": "UĞRAMAK"
     },
-    "root": "лъэ",
-    "wordFamily": {
-      "id": "WF-LHE",
-      "lexemeIds": [
-        "L-1EPKYLEPK",
-        "L-LHEGU",
-        "L-LHEBAKUE",
-        "L-LHAKUE",
-        "L-LHEPS"
-      ],
-      "conceptIds": [
-        "BINDING",
-        "BLOOD",
-        "LEG",
-        "SOLE",
-        "STEP"
-      ],
-      "morphemeIds": [],
-      "productivity": {
-        "totalLexemes": 5,
-        "corpusFrequency": 10729,
-        "mostFrequentLexemeId": "L-LHAKUE"
-      },
-      "notes": "Ayak/bacak ailesi (лъэ). Somatik kok. Corpus: 10.729 kullanim."
-    }
+    "root": null,
+    "wordFamily": null
   },
   {
     "id": "L-KBD-00042",
@@ -430877,10 +430689,8 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [
-      "R-LHE"
-    ],
-    "wordFamilyId": "WF-LHE",
+    "rootIds": [],
+    "wordFamilyId": null,
     "derivation": {
       "rootIds": [
         "R-LHE"
@@ -430902,31 +430712,8 @@
       "ru": "размыть (напр. берег реки), вымыть (горизонтальную поверхность) перед чем-л.",
       "tr": "KIYI"
     },
-    "root": "лъэ",
-    "wordFamily": {
-      "id": "WF-LHE",
-      "lexemeIds": [
-        "L-1EPKYLEPK",
-        "L-LHEGU",
-        "L-LHEBAKUE",
-        "L-LHAKUE",
-        "L-LHEPS"
-      ],
-      "conceptIds": [
-        "BINDING",
-        "BLOOD",
-        "LEG",
-        "SOLE",
-        "STEP"
-      ],
-      "morphemeIds": [],
-      "productivity": {
-        "totalLexemes": 5,
-        "corpusFrequency": 10729,
-        "mostFrequentLexemeId": "L-LHAKUE"
-      },
-      "notes": "Ayak/bacak ailesi (лъэ). Somatik kok. Corpus: 10.729 kullanim."
-    }
+    "root": null,
+    "wordFamily": null
   },
   {
     "id": "L-KBD-00043",
@@ -430939,10 +430726,8 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [
-      "R-LHE"
-    ],
-    "wordFamilyId": "WF-LHE",
+    "rootIds": [],
+    "wordFamilyId": null,
     "derivation": {
       "rootIds": [
         "R-LHE"
@@ -430964,31 +430749,8 @@
       "ru": "улететь, отлететь от чего-л. снова",
       "tr": "uçup gitmek"
     },
-    "root": "лъэ",
-    "wordFamily": {
-      "id": "WF-LHE",
-      "lexemeIds": [
-        "L-1EPKYLEPK",
-        "L-LHEGU",
-        "L-LHEBAKUE",
-        "L-LHAKUE",
-        "L-LHEPS"
-      ],
-      "conceptIds": [
-        "BINDING",
-        "BLOOD",
-        "LEG",
-        "SOLE",
-        "STEP"
-      ],
-      "morphemeIds": [],
-      "productivity": {
-        "totalLexemes": 5,
-        "corpusFrequency": 10729,
-        "mostFrequentLexemeId": "L-LHAKUE"
-      },
-      "notes": "Ayak/bacak ailesi (лъэ). Somatik kok. Corpus: 10.729 kullanim."
-    }
+    "root": null,
+    "wordFamily": null
   },
   {
     "id": "L-KBD-00044",
@@ -431001,10 +430763,8 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [
-      "R-LHE"
-    ],
-    "wordFamilyId": "WF-LHE",
+    "rootIds": [],
+    "wordFamilyId": null,
     "derivation": {
       "rootIds": [
         "R-LHE"
@@ -431026,31 +430786,8 @@
       "ru": "быстро улететь, отлететь от чего-л.",
       "tr": "sinek"
     },
-    "root": "лъэ",
-    "wordFamily": {
-      "id": "WF-LHE",
-      "lexemeIds": [
-        "L-1EPKYLEPK",
-        "L-LHEGU",
-        "L-LHEBAKUE",
-        "L-LHAKUE",
-        "L-LHEPS"
-      ],
-      "conceptIds": [
-        "BINDING",
-        "BLOOD",
-        "LEG",
-        "SOLE",
-        "STEP"
-      ],
-      "morphemeIds": [],
-      "productivity": {
-        "totalLexemes": 5,
-        "corpusFrequency": 10729,
-        "mostFrequentLexemeId": "L-LHAKUE"
-      },
-      "notes": "Ayak/bacak ailesi (лъэ). Somatik kok. Corpus: 10.729 kullanim."
-    }
+    "root": null,
+    "wordFamily": null
   },
   {
     "id": "L-KBD-00045",
@@ -431064,10 +430801,8 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [
-      "R-LHE"
-    ],
-    "wordFamilyId": "WF-LHE",
+    "rootIds": [],
+    "wordFamilyId": null,
     "derivation": {
       "rootIds": [
         "R-LHE"
@@ -431089,31 +430824,8 @@
       "ru": "улететь, отлететь от чего-л. (о птицах), быстро отбежать, отскочить от кого-чего-л.",
       "tr": "ÇIVMAK"
     },
-    "root": "лъэ",
-    "wordFamily": {
-      "id": "WF-LHE",
-      "lexemeIds": [
-        "L-1EPKYLEPK",
-        "L-LHEGU",
-        "L-LHEBAKUE",
-        "L-LHAKUE",
-        "L-LHEPS"
-      ],
-      "conceptIds": [
-        "BINDING",
-        "BLOOD",
-        "LEG",
-        "SOLE",
-        "STEP"
-      ],
-      "morphemeIds": [],
-      "productivity": {
-        "totalLexemes": 5,
-        "corpusFrequency": 10729,
-        "mostFrequentLexemeId": "L-LHAKUE"
-      },
-      "notes": "Ayak/bacak ailesi (лъэ). Somatik kok. Corpus: 10.729 kullanim."
-    }
+    "root": null,
+    "wordFamily": null
   },
   {
     "id": "L-KBD-00046",
@@ -444711,7 +444423,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-BG_2"
+      "R-BG"
     ],
     "wordFamilyId": "WF-BG_2",
     "derivation": null,
@@ -444744,7 +444456,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-BG_2"
+      "R-BG"
     ],
     "wordFamilyId": "WF-BG_2",
     "derivation": null,
@@ -444777,7 +444489,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-BG_2"
+      "R-BG"
     ],
     "wordFamilyId": "WF-BG_2",
     "derivation": null,
@@ -444810,7 +444522,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-BG_2"
+      "R-BG"
     ],
     "wordFamilyId": "WF-BG_2",
     "derivation": null,
@@ -444843,7 +444555,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-BG_2"
+      "R-BG"
     ],
     "wordFamilyId": "WF-BG_2",
     "derivation": null,
@@ -444876,7 +444588,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-BG_2"
+      "R-BG"
     ],
     "wordFamilyId": "WF-BG_2",
     "derivation": null,
@@ -444910,7 +444622,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-BG_2"
+      "R-BG"
     ],
     "wordFamilyId": "WF-BG_2",
     "derivation": null,
@@ -444946,7 +444658,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-BG_2"
+      "R-BG"
     ],
     "wordFamilyId": "WF-BG_2",
     "derivation": null,
@@ -444981,7 +444693,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-BG_2"
+      "R-BG"
     ],
     "wordFamilyId": "WF-BG_2",
     "derivation": null,
@@ -445015,7 +444727,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-BG_2"
+      "R-BG"
     ],
     "wordFamilyId": "WF-BG_2",
     "derivation": null,
@@ -445050,7 +444762,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-BG_2"
+      "R-BG"
     ],
     "wordFamilyId": "WF-BG_2",
     "derivation": null,
@@ -445083,7 +444795,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-BG_2"
+      "R-BG"
     ],
     "wordFamilyId": "WF-BG_2",
     "derivation": null,
@@ -445117,7 +444829,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-BG_2"
+      "R-BG"
     ],
     "wordFamilyId": "WF-BG_2",
     "derivation": null,
@@ -445150,7 +444862,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-BG_2"
+      "R-BG"
     ],
     "wordFamilyId": "WF-BG_2",
     "derivation": null,
@@ -450381,7 +450093,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-BEG_1"
+      "R-BEG"
     ],
     "wordFamilyId": "WF-BEG_1",
     "derivation": null,
@@ -465557,7 +465269,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-PSE_1"
+      "R-PSE"
     ],
     "wordFamilyId": "WF-PSE_1",
     "derivation": {
@@ -470153,7 +469865,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-BEG_1"
+      "R-BEG"
     ],
     "wordFamilyId": "WF-BEG_1",
     "derivation": {
@@ -484335,7 +484047,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-PSE_2"
+      "R-PSE"
     ],
     "wordFamilyId": "WF-PSE_2",
     "derivation": {
@@ -493684,7 +493396,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-BG_3"
+      "R-BG"
     ],
     "wordFamilyId": "WF-BG_3",
     "derivation": {
@@ -493723,7 +493435,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-BG_2"
+      "R-BG"
     ],
     "wordFamilyId": "WF-BG_2",
     "derivation": {
@@ -493761,7 +493473,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-BG_2"
+      "R-BG"
     ],
     "wordFamilyId": "WF-BG_2",
     "derivation": {
@@ -493799,7 +493511,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-BG_2"
+      "R-BG"
     ],
     "wordFamilyId": "WF-BG_2",
     "derivation": {
@@ -493837,7 +493549,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-BG_2"
+      "R-BG"
     ],
     "wordFamilyId": "WF-BG_2",
     "derivation": {
@@ -493875,7 +493587,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-BG_2"
+      "R-BG"
     ],
     "wordFamilyId": "WF-BG_2",
     "derivation": {
@@ -493915,7 +493627,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-BG_2"
+      "R-BG"
     ],
     "wordFamilyId": "WF-BG_2",
     "derivation": {
@@ -493955,7 +493667,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-BG_2"
+      "R-BG"
     ],
     "wordFamilyId": "WF-BG_2",
     "derivation": {
@@ -494052,7 +493764,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-BG_2"
+      "R-BG"
     ],
     "wordFamilyId": "WF-BG_2",
     "derivation": {
@@ -494090,7 +493802,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-BG_2"
+      "R-BG"
     ],
     "wordFamilyId": "WF-BG_2",
     "derivation": {
@@ -494128,7 +493840,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-BG_2"
+      "R-BG"
     ],
     "wordFamilyId": "WF-BG_2",
     "derivation": {
@@ -494166,7 +493878,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-BG_2"
+      "R-BG"
     ],
     "wordFamilyId": "WF-BG_2",
     "derivation": {
@@ -503548,7 +503260,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-KU_1"
+      "R-KU"
     ],
     "wordFamilyId": "WF-KU_1",
     "derivation": {
@@ -513620,7 +513332,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-KU_1"
+      "R-KU"
     ],
     "wordFamilyId": "WF-KU_1",
     "derivation": {
@@ -513852,7 +513564,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-PSE_1"
+      "R-PSE"
     ],
     "wordFamilyId": "WF-PSE_1",
     "derivation": {
@@ -539222,7 +538934,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-KU_1"
+      "R-KU"
     ],
     "wordFamilyId": "WF-KU_1",
     "derivation": null,
@@ -539254,7 +538966,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-KU_1"
+      "R-KU"
     ],
     "wordFamilyId": "WF-KU_1",
     "derivation": null,
@@ -539288,7 +539000,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-KU_1"
+      "R-KU"
     ],
     "wordFamilyId": "WF-KU_1",
     "derivation": null,
@@ -539320,7 +539032,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-KU_1"
+      "R-KU"
     ],
     "wordFamilyId": "WF-KU_1",
     "derivation": null,
@@ -539352,7 +539064,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-KU_1"
+      "R-KU"
     ],
     "wordFamilyId": "WF-KU_1",
     "derivation": null,
@@ -542666,7 +542378,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-BG_3"
+      "R-BG"
     ],
     "wordFamilyId": "WF-BG_3",
     "derivation": {
@@ -542705,7 +542417,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-BG_2"
+      "R-BG"
     ],
     "wordFamilyId": "WF-BG_2",
     "derivation": {
@@ -542743,7 +542455,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-BG_2"
+      "R-BG"
     ],
     "wordFamilyId": "WF-BG_2",
     "derivation": {
@@ -542925,7 +542637,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-BG_2"
+      "R-BG"
     ],
     "wordFamilyId": "WF-BG_2",
     "derivation": {
@@ -542964,7 +542676,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-BG_2"
+      "R-BG"
     ],
     "wordFamilyId": "WF-BG_2",
     "derivation": {
@@ -544278,7 +543990,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-PSE_2"
+      "R-PSE"
     ],
     "wordFamilyId": "WF-PSE_2",
     "derivation": {
@@ -612736,7 +612448,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-PSE_2"
+      "R-PSE"
     ],
     "wordFamilyId": "WF-PSE_2",
     "derivation": {
@@ -612775,7 +612487,7 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-PSE_1"
+      "R-PSE"
     ],
     "wordFamilyId": "WF-PSE_1",
     "derivation": {

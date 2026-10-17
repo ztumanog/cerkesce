@@ -4727,6 +4727,7 @@
         "L-CORPUS-04095",
         "L-CORPUS-04104",
         "L-CORPUS-04125",
+        "L-CORPUS-04132",
         "L-CORPUS-04160",
         "L-CORPUS-04272",
         "L-CORPUS-04310",
@@ -4771,20 +4772,11 @@
         "L-CORPUS2-08408",
         "L-CORPUS2-08466",
         "L-CORPUS2-09124",
-        "L-D0A5D18CD18D",
         "L-D0BBD18AD18D",
         "L-D0BBD18AD18D-2",
         "L-D0BBD18AD18D-3",
         "L-D0BBD18AD18D-4",
         "L-EXTRA-00003",
-        "L-ILHES",
-        "L-KBD-00008",
-        "L-KBD-00017",
-        "L-KBD-00041",
-        "L-KBD-00042",
-        "L-KBD-00043",
-        "L-KBD-00044",
-        "L-KBD-00045",
         "L-KBD-00324",
         "L-KBD-00334",
         "L-KBD-00698",
@@ -4990,9 +4982,6 @@
         "L-KBD-05001",
         "L-KBD-05003",
         "L-KBD-05384",
-        "L-KHEN",
-        "L-KHEZYR",
-        "L-KHEZYRYLHE",
         "L-LHAGHE",
         "L-LHAKUE",
         "L-LHE",
@@ -6602,25 +6591,17 @@
       "id": "WF-FE",
       "lexemeIds": [
         "L-CORPUS-00014",
-        "L-CORPUS-00021",
-        "L-CORPUS-00033",
         "L-CORPUS-00048",
-        "L-CORPUS-00125",
         "L-CORPUS-00158",
         "L-CORPUS-00159",
         "L-CORPUS-00261",
-        "L-CORPUS-00305",
-        "L-CORPUS-00367",
-        "L-CORPUS-00421",
         "L-CORPUS-00450",
         "L-CORPUS-00454",
         "L-CORPUS-00493",
         "L-CORPUS-00530",
-        "L-CORPUS-00545",
         "L-CORPUS-00642",
         "L-CORPUS-00644",
         "L-CORPUS-00768",
-        "L-CORPUS-00836",
         "L-CORPUS-00853",
         "L-CORPUS-00886",
         "L-CORPUS-00930",
@@ -6753,7 +6734,6 @@
         "L-D0B1D0B3D18A-3",
         "L-EFEN",
         "L-EXTRA-00016",
-        "L-FE",
         "L-KBD-00263",
         "L-KBD-00302",
         "L-KBD-00313",
@@ -6827,9 +6807,6 @@
         "L-KBD-05607",
         "L-MORAFE",
         "L-MORE",
-        "L-PSHCHTEN",
-        "L-SYKHET",
-        "L-UDZ GHEGHE",
         "L-UDZYFE",
         "L-VERIFIED-00020",
         "L-VERIFIED-00021",
@@ -10377,15 +10354,19 @@
         "L-CORPUS2-07045",
         "L-KBD-00062",
         "L-KBD-00310",
+        "L-KBD-00776",
         "L-KBD-00824",
         "L-KBD-00967",
         "L-KBD-00968",
         "L-KBD-00969",
         "L-KBD-01055",
+        "L-KBD-01224",
         "L-KBD-01332",
         "L-KBD-01412",
         "L-KBD-01551",
         "L-KBD-01735",
+        "L-KBD-01907",
+        "L-KBD-02711",
         "L-KBD-03900",
         "L-KBD-03901",
         "L-KBD-03902",
@@ -10398,6 +10379,8 @@
         "L-KBD-03910",
         "L-KBD-03912",
         "L-KBD-03914",
+        "L-KBD-04320",
+        "L-KBD-04321",
         "L-KBD-04774",
         "L-KBD-04969",
         "L-PSE",
@@ -13826,25 +13809,9 @@
     "notes": "Aig (2006); Tharkaho (1991)"
   },
   {
-    "id": "R-PSE_1",
-    "form": "псэу",
-    "primaryMeaning": "[AUTO] freq=4200",
-    "productivity": {
-      "corpusFrequency": 4200
-    },
-    "wordFamily": {
-      "id": "WF-PSE_1",
-      "lexemeIds": [
-        "L-KBD-00776",
-        "L-KBD-01907",
-        "L-KBD-04321"
-      ]
-    }
-  },
-  {
     "id": "R-GU_1",
     "form": "гъуэгу",
-    "primaryMeaning": "[AUTO] freq=3950",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 3950
     },
@@ -13867,25 +13834,9 @@
     }
   },
   {
-    "id": "R-PSE_2",
-    "form": "псэлъ",
-    "primaryMeaning": "[AUTO] freq=3750",
-    "productivity": {
-      "corpusFrequency": 3750
-    },
-    "wordFamily": {
-      "id": "WF-PSE_2",
-      "lexemeIds": [
-        "L-KBD-01224",
-        "L-KBD-02711",
-        "L-KBD-04320"
-      ]
-    }
-  },
-  {
     "id": "R-KHAD",
     "form": "хадэ",
-    "primaryMeaning": "[AUTO] freq=3450",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 3450
     },
@@ -13901,7 +13852,7 @@
   {
     "id": "R-TKHY",
     "form": "тхылъ",
-    "primaryMeaning": "[AUTO] freq=3300",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 3300
     },
@@ -13916,7 +13867,7 @@
   {
     "id": "R-ZHAI",
     "form": "жаӀэ",
-    "primaryMeaning": "[AUTO] freq=3100",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 3100
     },
@@ -13925,20 +13876,9 @@
     }
   },
   {
-    "id": "R-PSE_3",
-    "form": "псэху",
-    "primaryMeaning": "[AUTO] freq=2950",
-    "productivity": {
-      "corpusFrequency": 2950
-    },
-    "wordFamily": {
-      "id": "WF-PSE_3"
-    }
-  },
-  {
     "id": "R-DEKH",
     "form": "дэха",
-    "primaryMeaning": "[AUTO] freq=2850",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 2850
     },
@@ -13959,7 +13899,7 @@
   {
     "id": "R-FIY",
     "form": "фӀы",
-    "primaryMeaning": "[AUTO] freq=2750",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 2750
     },
@@ -13997,7 +13937,7 @@
   {
     "id": "R-DZHE",
     "form": "джэуап",
-    "primaryMeaning": "[AUTO] freq=2500",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 2500
     },
@@ -14020,7 +13960,7 @@
   {
     "id": "R-LIY",
     "form": "лӀы",
-    "primaryMeaning": "[AUTO] freq=2400",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 2400
     },
@@ -14073,7 +14013,7 @@
   {
     "id": "R-BZE_1",
     "form": "бзэгу",
-    "primaryMeaning": "[AUTO] freq=2300",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 2300
     },
@@ -14084,7 +14024,7 @@
   {
     "id": "R-BZY",
     "form": "бзылъфыгъэ",
-    "primaryMeaning": "[AUTO] freq=2250",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 2250
     },
@@ -14121,7 +14061,7 @@
   {
     "id": "R-SAB",
     "form": "сабий",
-    "primaryMeaning": "[AUTO] freq=2150",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 2150
     },
@@ -14135,7 +14075,7 @@
   {
     "id": "R-KHE",
     "form": "хьэблэ",
-    "primaryMeaning": "[AUTO] freq=2050",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 2050
     },
@@ -14149,7 +14089,7 @@
   {
     "id": "R-BG",
     "form": "бгъуэ",
-    "primaryMeaning": "[AUTO] freq=1980",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 1980
     },
@@ -14158,9 +14098,40 @@
       "lexemeIds": [
         "L-KBD-00330",
         "L-KBD-00332",
+        "L-KBD-00335",
+        "L-KBD-00336",
+        "L-KBD-00337",
+        "L-KBD-00338",
+        "L-KBD-00339",
+        "L-KBD-00340",
+        "L-KBD-00341",
+        "L-KBD-00342",
+        "L-KBD-00343",
+        "L-KBD-00344",
+        "L-KBD-00345",
+        "L-KBD-00346",
+        "L-KBD-00347",
+        "L-KBD-00348",
         "L-KBD-01267",
+        "L-KBD-01457",
+        "L-KBD-01458",
+        "L-KBD-01459",
+        "L-KBD-01460",
+        "L-KBD-01461",
+        "L-KBD-01462",
+        "L-KBD-01463",
+        "L-KBD-01464",
+        "L-KBD-01466",
+        "L-KBD-01467",
+        "L-KBD-01468",
+        "L-KBD-01469",
         "L-KBD-02003",
         "L-KBD-02358",
+        "L-KBD-02672",
+        "L-KBD-02673",
+        "L-KBD-02674",
+        "L-KBD-02677",
+        "L-KBD-02678",
         "L-KBD-03331",
         "L-KBD-03617",
         "L-MORPHO-ХЬЭНДРАБГЪ"
@@ -14170,7 +14141,7 @@
   {
     "id": "R-ZHYL",
     "form": "жылэ",
-    "primaryMeaning": "[AUTO] freq=1920",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 1920
     },
@@ -14185,7 +14156,7 @@
   {
     "id": "R-SHER",
     "form": "шэрджэс",
-    "primaryMeaning": "[AUTO] freq=1850",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 1850
     },
@@ -14199,7 +14170,7 @@
   {
     "id": "R-SHCHIA",
     "form": "щӀалэ",
-    "primaryMeaning": "[AUTO] freq=1800",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 1800
     },
@@ -14216,7 +14187,7 @@
   {
     "id": "R-PSHCHA",
     "form": "пщащэ",
-    "primaryMeaning": "[AUTO] freq=1750",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 1750
     },
@@ -14230,7 +14201,7 @@
   {
     "id": "R-NEKH",
     "form": "нэхъ",
-    "primaryMeaning": "[AUTO] freq=1700",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 1700
     },
@@ -14241,7 +14212,7 @@
   {
     "id": "R-GE",
     "form": "гъэмахуэ",
-    "primaryMeaning": "[AUTO] freq=1650",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 1650
     },
@@ -14252,7 +14223,7 @@
   {
     "id": "R-SHCHIY",
     "form": "щӀымахуэ",
-    "primaryMeaning": "[AUTO] freq=1600",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 1600
     },
@@ -14263,7 +14234,7 @@
   {
     "id": "R-BZH",
     "form": "бжьыхьэ",
-    "primaryMeaning": "[AUTO] freq=1550",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 1550
     },
@@ -14277,7 +14248,7 @@
   {
     "id": "R-GA",
     "form": "гъатхэ",
-    "primaryMeaning": "[AUTO] freq=1500",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 1500
     },
@@ -14291,7 +14262,7 @@
   {
     "id": "R-TKH",
     "form": "тхьэ",
-    "primaryMeaning": "[AUTO] freq=1480",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 1480
     },
@@ -14428,7 +14399,7 @@
   {
     "id": "R-UAF",
     "form": "уафэ",
-    "primaryMeaning": "[AUTO] freq=1420",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 1420
     },
@@ -14450,7 +14421,7 @@
   {
     "id": "R-CHEN",
     "form": "чэнджэш",
-    "primaryMeaning": "[AUTO] freq=1380",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 1380
     },
@@ -14461,7 +14432,7 @@
   {
     "id": "R-SHCHECH",
     "form": "щэч",
-    "primaryMeaning": "[AUTO] freq=1350",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 1350
     },
@@ -14477,7 +14448,7 @@
   {
     "id": "R-KHUA",
     "form": "хуабэ",
-    "primaryMeaning": "[AUTO] freq=1300",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 1300
     },
@@ -14498,7 +14469,7 @@
   {
     "id": "R-SHCHIY_1",
     "form": "щӀыӀэ",
-    "primaryMeaning": "[AUTO] freq=1260",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 1260
     },
@@ -14515,7 +14486,7 @@
   {
     "id": "R-MASHCH",
     "form": "мащӀэ",
-    "primaryMeaning": "[AUTO] freq=1220",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 1220
     },
@@ -14530,7 +14501,7 @@
   {
     "id": "R-KUE_1",
     "form": "куэд",
-    "primaryMeaning": "[AUTO] freq=1180",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 1180
     },
@@ -14551,7 +14522,7 @@
   {
     "id": "R-IN",
     "form": "ин",
-    "primaryMeaning": "[AUTO] freq=1150",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 1150
     },
@@ -14825,7 +14796,7 @@
   {
     "id": "R-KIE",
     "form": "кӀэщӀ",
-    "primaryMeaning": "[AUTO] freq=1060",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 1060
     },
@@ -14849,7 +14820,7 @@
   {
     "id": "R-BAY",
     "form": "бай",
-    "primaryMeaning": "[AUTO] freq=1030",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 1030
     },
@@ -14865,7 +14836,7 @@
   {
     "id": "R-TKH_1",
     "form": "тхьэмыщкӀэ",
-    "primaryMeaning": "[AUTO] freq=1000",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 1000
     },
@@ -14876,7 +14847,7 @@
   {
     "id": "R-BEL",
     "form": "бэлыхь",
-    "primaryMeaning": "[AUTO] freq=970",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 970
     },
@@ -14890,7 +14861,7 @@
   {
     "id": "R-KHU",
     "form": "хъугъуэ",
-    "primaryMeaning": "[AUTO] freq=940",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 940
     },
@@ -14906,7 +14877,7 @@
   {
     "id": "R-PEZH",
     "form": "пэжагъ",
-    "primaryMeaning": "[AUTO] freq=910",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 910
     },
@@ -14917,7 +14888,7 @@
   {
     "id": "R-AK",
     "form": "акъыл",
-    "primaryMeaning": "[AUTO] freq=880",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 880
     },
@@ -14948,7 +14919,7 @@
   {
     "id": "R-KHAB",
     "form": "хабзэншэ",
-    "primaryMeaning": "[AUTO] freq=850",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 850
     },
@@ -14959,7 +14930,7 @@
   {
     "id": "R-GA_1",
     "form": "гъащӀэ",
-    "primaryMeaning": "[AUTO] freq=820",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 820
     },
@@ -14973,7 +14944,7 @@
   {
     "id": "R-ZHYG",
     "form": "жыглащэ",
-    "primaryMeaning": "[AUTO] freq=790",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 790
     },
@@ -14990,7 +14961,7 @@
   {
     "id": "R-MYV",
     "form": "мывэ",
-    "primaryMeaning": "[AUTO] freq=760",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 760
     },
@@ -15015,7 +14986,7 @@
   {
     "id": "R-VAK",
     "form": "вакъэ",
-    "primaryMeaning": "[AUTO] freq=730",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 730
     },
@@ -15029,7 +15000,7 @@
   {
     "id": "R-PSHCHI",
     "form": "пщӀэ",
-    "primaryMeaning": "[AUTO] freq=720",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 720
     },
@@ -15053,7 +15024,7 @@
   {
     "id": "R-SHY",
     "form": "шы",
-    "primaryMeaning": "[AUTO] freq=710",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 710
     },
@@ -15351,7 +15322,7 @@
   {
     "id": "R-BZHE",
     "form": "бжэ",
-    "primaryMeaning": "[AUTO] freq=690",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 690
     },
@@ -15385,7 +15356,7 @@
   {
     "id": "R-FIE",
     "form": "фӀэщ",
-    "primaryMeaning": "[AUTO] freq=680",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 680
     },
@@ -15401,31 +15372,9 @@
     }
   },
   {
-    "id": "R-GUG",
-    "form": "гугъу",
-    "primaryMeaning": "[AUTO] freq=670",
-    "productivity": {
-      "corpusFrequency": 670
-    },
-    "wordFamily": {
-      "id": "WF-GUG"
-    }
-  },
-  {
-    "id": "R-GUA",
-    "form": "гуапэ",
-    "primaryMeaning": "[AUTO] freq=660",
-    "productivity": {
-      "corpusFrequency": 660
-    },
-    "wordFamily": {
-      "id": "WF-GUA"
-    }
-  },
-  {
     "id": "R-UAKH",
     "form": "уахътэ",
-    "primaryMeaning": "[AUTO] freq=650",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 650
     },
@@ -15441,7 +15390,7 @@
   {
     "id": "R-ZHYI",
     "form": "жыӀэ",
-    "primaryMeaning": "[AUTO] freq=640",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 640
     },
@@ -15461,7 +15410,7 @@
   {
     "id": "R-PSHCHY",
     "form": "пщы",
-    "primaryMeaning": "[AUTO] freq=630",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 630
     },
@@ -15553,7 +15502,7 @@
   {
     "id": "R-UER",
     "form": "уэркъ",
-    "primaryMeaning": "[AUTO] freq=620",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 620
     },
@@ -15568,7 +15517,7 @@
   {
     "id": "R-UESHCH",
     "form": "уэщ",
-    "primaryMeaning": "[AUTO] freq=610",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 610
     },
@@ -15631,7 +15580,7 @@
   {
     "id": "R-SEB",
     "form": "сэбэп",
-    "primaryMeaning": "[AUTO] freq=600",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 600
     },
@@ -15650,7 +15599,7 @@
   {
     "id": "R-UEZ",
     "form": "уэздыгъэ",
-    "primaryMeaning": "[AUTO] freq=590",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 590
     },
@@ -15664,7 +15613,7 @@
   {
     "id": "R-BESHCH",
     "form": "бэщ",
-    "primaryMeaning": "[AUTO] freq=580",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 580
     },
@@ -15679,7 +15628,7 @@
   {
     "id": "R-SHCHIA_1",
     "form": "щӀасэ",
-    "primaryMeaning": "[AUTO] freq=570",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 570
     },
@@ -15695,7 +15644,7 @@
   {
     "id": "R-TEM",
     "form": "тэмакъ",
-    "primaryMeaning": "[AUTO] freq=560",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 560
     },
@@ -15709,31 +15658,9 @@
     }
   },
   {
-    "id": "R-GUF",
-    "form": "гуфӀэ",
-    "primaryMeaning": "[AUTO] freq=550",
-    "productivity": {
-      "corpusFrequency": 550
-    },
-    "wordFamily": {
-      "id": "WF-GUF"
-    }
-  },
-  {
-    "id": "R-GUZ",
-    "form": "гузэв",
-    "primaryMeaning": "[AUTO] freq=540",
-    "productivity": {
-      "corpusFrequency": 540
-    },
-    "wordFamily": {
-      "id": "WF-GUZ"
-    }
-  },
-  {
     "id": "R-DEKH_1",
     "form": "дэхащӀэ",
-    "primaryMeaning": "[AUTO] freq=530",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 530
     },
@@ -15744,7 +15671,7 @@
   {
     "id": "R-BZHY",
     "form": "бжыгъэ",
-    "primaryMeaning": "[AUTO] freq=520",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 520
     },
@@ -15768,20 +15695,9 @@
     }
   },
   {
-    "id": "R-PSE_4",
-    "form": "псэлъэ",
-    "primaryMeaning": "[AUTO] freq=510",
-    "productivity": {
-      "corpusFrequency": 510
-    },
-    "wordFamily": {
-      "id": "WF-PSE_4"
-    }
-  },
-  {
     "id": "R-LA",
     "form": "лъащӀэ",
-    "primaryMeaning": "[AUTO] freq=500",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 500
     },
@@ -15794,20 +15710,9 @@
     }
   },
   {
-    "id": "R-PSY_1",
-    "form": "псыхъуэ",
-    "primaryMeaning": "[AUTO] freq=490",
-    "productivity": {
-      "corpusFrequency": 490
-    },
-    "wordFamily": {
-      "id": "WF-PSY_1"
-    }
-  },
-  {
     "id": "R-BG_1",
     "form": "бгъащхьэ",
-    "primaryMeaning": "[AUTO] freq=480",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 480
     },
@@ -15818,7 +15723,7 @@
   {
     "id": "R-SHCHKH",
     "form": "щхьэщӀэ",
-    "primaryMeaning": "[AUTO] freq=470",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 470
     },
@@ -15829,7 +15734,7 @@
   {
     "id": "R-NEP",
     "form": "нэпс",
-    "primaryMeaning": "[AUTO] freq=460",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 460
     },
@@ -15840,7 +15745,7 @@
   {
     "id": "R-NEK",
     "form": "нэкӀу",
-    "primaryMeaning": "[AUTO] freq=450",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 450
     },
@@ -15851,7 +15756,7 @@
   {
     "id": "R-NEKH_1",
     "form": "нэху",
-    "primaryMeaning": "[AUTO] freq=440",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 440
     },
@@ -15862,7 +15767,7 @@
   {
     "id": "R-NESHCH",
     "form": "нэщӀ",
-    "primaryMeaning": "[AUTO] freq=430",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 430
     },
@@ -15873,7 +15778,7 @@
   {
     "id": "R-IEG",
     "form": "Ӏэгу",
-    "primaryMeaning": "[AUTO] freq=420",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 420
     },
@@ -15887,7 +15792,7 @@
   {
     "id": "R-IESHCH",
     "form": "Ӏэщэ",
-    "primaryMeaning": "[AUTO] freq=410",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 410
     },
@@ -15902,7 +15807,7 @@
   {
     "id": "R-IESHCH_1",
     "form": "ӀэщӀагъэ",
-    "primaryMeaning": "[AUTO] freq=400",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 400
     },
@@ -15917,7 +15822,7 @@
   {
     "id": "R-IEP",
     "form": "Ӏэпэ",
-    "primaryMeaning": "[AUTO] freq=390",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 390
     },
@@ -15932,7 +15837,7 @@
   {
     "id": "R-IEB",
     "form": "Ӏэбэ",
-    "primaryMeaning": "[AUTO] freq=380",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 380
     },
@@ -15943,7 +15848,7 @@
   {
     "id": "R-KUR",
     "form": "курыт",
-    "primaryMeaning": "[AUTO] freq=370",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 370
     },
@@ -15957,7 +15862,7 @@
   {
     "id": "R-KUU",
     "form": "куу",
-    "primaryMeaning": "[AUTO] freq=360",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 360
     },
@@ -15974,7 +15879,7 @@
   {
     "id": "R-BGY",
     "form": "бгыкъуэ",
-    "primaryMeaning": "[AUTO] freq=350",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 350
     },
@@ -16002,7 +15907,7 @@
   {
     "id": "R-BGY_1",
     "form": "бгылъэ",
-    "primaryMeaning": "[AUTO] freq=340",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 340
     },
@@ -16013,7 +15918,7 @@
   {
     "id": "R-BEG",
     "form": "бэгъуэ",
-    "primaryMeaning": "[AUTO] freq=330",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 330
     },
@@ -16022,16 +15927,20 @@
       "lexemeIds": [
         "L-CORPUS-01362",
         "L-CORPUS-02638",
+        "L-D0B1D18DD0B3",
+        "L-KBD-00472",
+        "L-KBD-00883",
         "L-KBD-01856",
         "L-VERIFIED-01578",
-        "L-VERIFIED-02315"
+        "L-VERIFIED-02315",
+        "L-VERIFIED-02577"
       ]
     }
   },
   {
     "id": "R-BEM",
     "form": "бэмащӀэ",
-    "primaryMeaning": "[AUTO] freq=320",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 320
     },
@@ -16042,7 +15951,7 @@
   {
     "id": "R-TKHY_1",
     "form": "тхыгъэ",
-    "primaryMeaning": "[AUTO] freq=300",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 300
     },
@@ -16053,7 +15962,7 @@
   {
     "id": "R-TKHY_2",
     "form": "тхыдэ",
-    "primaryMeaning": "[AUTO] freq=290",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 290
     },
@@ -16064,7 +15973,7 @@
   {
     "id": "R-KHAB_1",
     "form": "хабзэфӀ",
-    "primaryMeaning": "[AUTO] freq=280",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 280
     },
@@ -16075,7 +15984,7 @@
   {
     "id": "R-DEZH",
     "form": "дэжь",
-    "primaryMeaning": "[AUTO] freq=270",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 270
     },
@@ -16093,7 +16002,7 @@
   {
     "id": "R-DEKH_2",
     "form": "дэхагъэ",
-    "primaryMeaning": "[AUTO] freq=260",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 260
     },
@@ -16104,7 +16013,7 @@
   {
     "id": "R-UVY",
     "form": "увыӀэ",
-    "primaryMeaning": "[AUTO] freq=250",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 250
     },
@@ -16120,7 +16029,7 @@
   {
     "id": "R-UVY_1",
     "form": "увыпӀэ",
-    "primaryMeaning": "[AUTO] freq=240",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 240
     },
@@ -16134,7 +16043,7 @@
   {
     "id": "R-KHYSH",
     "form": "хышхуэ",
-    "primaryMeaning": "[AUTO] freq=230",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 230
     },
@@ -16145,7 +16054,7 @@
   {
     "id": "R-PL",
     "form": "плъыжь",
-    "primaryMeaning": "[AUTO] freq=220",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 220
     },
@@ -16159,7 +16068,7 @@
   {
     "id": "R-SHKHY",
     "form": "шхыныгъэ",
-    "primaryMeaning": "[AUTO] freq=210",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 210
     },
@@ -16170,7 +16079,7 @@
   {
     "id": "R-KIU",
     "form": "кӀуэцӀ",
-    "primaryMeaning": "[AUTO] freq=200",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 200
     },
@@ -16209,7 +16118,7 @@
   {
     "id": "R-LEZH_1",
     "form": "лэжьапӀэ",
-    "primaryMeaning": "[AUTO] freq=190",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 190
     },
@@ -16220,7 +16129,7 @@
   {
     "id": "R-LEZH_2",
     "form": "лэжьэгъу",
-    "primaryMeaning": "[AUTO] freq=180",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 180
     },
@@ -16234,7 +16143,7 @@
   {
     "id": "R-LEZH_3",
     "form": "лэжьакӀуэ",
-    "primaryMeaning": "[AUTO] freq=170",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 170
     },
@@ -16245,7 +16154,7 @@
   {
     "id": "R-GU_2",
     "form": "гъуэгурыкӀуэ",
-    "primaryMeaning": "[AUTO] freq=160",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 160
     },
@@ -16262,7 +16171,7 @@
   {
     "id": "R-GU_3",
     "form": "гъуэжь",
-    "primaryMeaning": "[AUTO] freq=150",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 150
     },
@@ -16278,7 +16187,7 @@
   {
     "id": "R-SESH",
     "form": "сэшхуэ",
-    "primaryMeaning": "[AUTO] freq=140",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 140
     },
@@ -16294,7 +16203,7 @@
   {
     "id": "R-ZHYG_1",
     "form": "жыгхадэ",
-    "primaryMeaning": "[AUTO] freq=130",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 130
     },
@@ -16305,7 +16214,7 @@
   {
     "id": "R-DZE_1",
     "form": "дзэпщ",
-    "primaryMeaning": "[AUTO] freq=120",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 120
     },
@@ -16316,7 +16225,7 @@
   {
     "id": "R-SHCHAB",
     "form": "щабагъэ",
-    "primaryMeaning": "[AUTO] freq=110",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 110
     },
@@ -16330,7 +16239,7 @@
   {
     "id": "R-PIE",
     "form": "пӀэщӀэ",
-    "primaryMeaning": "[AUTO] freq=105",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 105
     },
@@ -16345,7 +16254,7 @@
   {
     "id": "R-MYV_1",
     "form": "мывэпс",
-    "primaryMeaning": "[AUTO] freq=100",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 100
     },
@@ -16356,7 +16265,7 @@
   {
     "id": "R-SYM",
     "form": "сымаджэфэ",
-    "primaryMeaning": "[AUTO] freq=95",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 95
     },
@@ -16367,7 +16276,7 @@
   {
     "id": "R-KHY_1",
     "form": "хъыбаращӀэ",
-    "primaryMeaning": "[AUTO] freq=90",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 90
     },
@@ -16378,7 +16287,7 @@
   {
     "id": "R-VAK_1",
     "form": "вакъэжь",
-    "primaryMeaning": "[AUTO] freq=85",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 85
     },
@@ -16389,7 +16298,7 @@
   {
     "id": "R-BEL_1",
     "form": "бэлыхьшхуэ",
-    "primaryMeaning": "[AUTO] freq=80",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 80
     },
@@ -16400,7 +16309,7 @@
   {
     "id": "R-PSHCHY_1",
     "form": "пщыгъуэ",
-    "primaryMeaning": "[AUTO] freq=75",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 75
     },
@@ -16414,7 +16323,7 @@
   {
     "id": "R-LIY_1",
     "form": "лӀыгъэ",
-    "primaryMeaning": "[AUTO] freq=70",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 70
     },
@@ -16429,7 +16338,7 @@
   {
     "id": "R-LIY_2",
     "form": "лӀыхъуэ",
-    "primaryMeaning": "[AUTO] freq=68",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 68
     },
@@ -16440,7 +16349,7 @@
   {
     "id": "R-BZY_1",
     "form": "бзылъфыгъэщ",
-    "primaryMeaning": "[AUTO] freq=65",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 65
     },
@@ -16451,7 +16360,7 @@
   {
     "id": "R-KHE_1",
     "form": "хьэблэдэс",
-    "primaryMeaning": "[AUTO] freq=62",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 62
     },
@@ -16462,7 +16371,7 @@
   {
     "id": "R-ZHYL_1",
     "form": "жылэдэс",
-    "primaryMeaning": "[AUTO] freq=60",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 60
     },
@@ -16473,7 +16382,7 @@
   {
     "id": "R-SHER_1",
     "form": "шэрджэсыбзэ",
-    "primaryMeaning": "[AUTO] freq=58",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 58
     },
@@ -16484,7 +16393,7 @@
   {
     "id": "R-SHCHIA_2",
     "form": "щӀалэгъуэ",
-    "primaryMeaning": "[AUTO] freq=55",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 55
     },
@@ -16498,7 +16407,7 @@
   {
     "id": "R-PSHCHA_1",
     "form": "пщащэщӀэ",
-    "primaryMeaning": "[AUTO] freq=52",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 52
     },
@@ -16509,7 +16418,7 @@
   {
     "id": "R-NEKH_2",
     "form": "нэхъыжь",
-    "primaryMeaning": "[AUTO] freq=50",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 50
     },
@@ -16520,7 +16429,7 @@
   {
     "id": "R-NEKH_3",
     "form": "нэхъыщӀэ",
-    "primaryMeaning": "[AUTO] freq=48",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 48
     },
@@ -16531,7 +16440,7 @@
   {
     "id": "R-TKH_2",
     "form": "тхьэшхуэ",
-    "primaryMeaning": "[AUTO] freq=45",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 45
     },
@@ -16545,7 +16454,7 @@
   {
     "id": "R-UAF_1",
     "form": "уафэгу",
-    "primaryMeaning": "[AUTO] freq=42",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 42
     },
@@ -16556,7 +16465,7 @@
   {
     "id": "R-KHUA_1",
     "form": "хуабагъэ",
-    "primaryMeaning": "[AUTO] freq=40",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 40
     },
@@ -16571,7 +16480,7 @@
   {
     "id": "R-SHCHIY_2",
     "form": "щӀыӀагъэ",
-    "primaryMeaning": "[AUTO] freq=38",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 38
     },
@@ -16582,7 +16491,7 @@
   {
     "id": "R-MASHCH_1",
     "form": "мащӀагъэ",
-    "primaryMeaning": "[AUTO] freq=35",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 35
     },
@@ -16593,7 +16502,7 @@
   {
     "id": "R-KUE_2",
     "form": "куэдагъэ",
-    "primaryMeaning": "[AUTO] freq=32",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 32
     },
@@ -16604,7 +16513,7 @@
   {
     "id": "R-INA",
     "form": "инагъэ",
-    "primaryMeaning": "[AUTO] freq=30",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 30
     },
@@ -16615,7 +16524,7 @@
   {
     "id": "R-TSIY",
     "form": "цӀыкӀуагъэ",
-    "primaryMeaning": "[AUTO] freq=28",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 28
     },
@@ -16626,7 +16535,7 @@
   {
     "id": "R-KIY",
     "form": "кӀыхьагъэ",
-    "primaryMeaning": "[AUTO] freq=25",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 25
     },
@@ -16637,7 +16546,7 @@
   {
     "id": "R-KIE_1",
     "form": "кӀэщӀагъэ",
-    "primaryMeaning": "[AUTO] freq=22",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 22
     },
@@ -16648,7 +16557,7 @@
   {
     "id": "R-BAYA",
     "form": "баягъэ",
-    "primaryMeaning": "[AUTO] freq=20",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 20
     },
@@ -16659,7 +16568,7 @@
   {
     "id": "R-TKH_3",
     "form": "тхьэмыщкӀагъэ",
-    "primaryMeaning": "[AUTO] freq=18",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 18
     },
@@ -16670,7 +16579,7 @@
   {
     "id": "R-PEZH_1",
     "form": "пэжагъэншэ",
-    "primaryMeaning": "[AUTO] freq=15",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 15
     },
@@ -16681,7 +16590,7 @@
   {
     "id": "R-AK_1",
     "form": "акъылыншэ",
-    "primaryMeaning": "[AUTO] freq=12",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 12
     },
@@ -16696,7 +16605,7 @@
   {
     "id": "R-LA_1",
     "form": "лъагъу",
-    "primaryMeaning": "[AUTO] freq=18500",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 18500
     },
@@ -16752,7 +16661,7 @@
   {
     "id": "R-GUP",
     "form": "гупсыс",
-    "primaryMeaning": "[AUTO] freq=16200",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 16200
     },
@@ -16763,7 +16672,7 @@
   {
     "id": "R-PSA",
     "form": "псалъэ",
-    "primaryMeaning": "[AUTO] freq=15800",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 15800
     },
@@ -16885,7 +16794,7 @@
   {
     "id": "R-UVY_2",
     "form": "увы",
-    "primaryMeaning": "[AUTO] freq=14500",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 14500
     },
@@ -16914,7 +16823,7 @@
   {
     "id": "R-DEI",
     "form": "дэӀу",
-    "primaryMeaning": "[AUTO] freq=13900",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 13900
     },
@@ -16942,7 +16851,7 @@
   {
     "id": "R-UPCH",
     "form": "упчӀэ",
-    "primaryMeaning": "[AUTO] freq=12800",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 12800
     },
@@ -16953,7 +16862,7 @@
   {
     "id": "R-DZHE_1",
     "form": "джэгу",
-    "primaryMeaning": "[AUTO] freq=12400",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 12400
     },
@@ -16978,7 +16887,7 @@
   {
     "id": "R-UER_1",
     "form": "уэрэд",
-    "primaryMeaning": "[AUTO] freq=11900",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 11900
     },
@@ -16995,7 +16904,7 @@
   {
     "id": "R-SYM_1",
     "form": "сымаджэ",
-    "primaryMeaning": "[AUTO] freq=11200",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 11200
     },
@@ -17017,7 +16926,7 @@
   {
     "id": "R-TKH_4",
     "form": "тхьэмадэ",
-    "primaryMeaning": "[AUTO] freq=10800",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 10800
     },
@@ -17028,7 +16937,7 @@
   {
     "id": "R-KA",
     "form": "къару",
-    "primaryMeaning": "[AUTO] freq=10400",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 10400
     },
@@ -17054,7 +16963,7 @@
   {
     "id": "R-NAS",
     "form": "насып",
-    "primaryMeaning": "[AUTO] freq=10100",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 10100
     },
@@ -17076,7 +16985,7 @@
   {
     "id": "R-UG",
     "form": "угъур",
-    "primaryMeaning": "[AUTO] freq=9800",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 9800
     },
@@ -17091,7 +17000,7 @@
   {
     "id": "R-KU",
     "form": "къулей",
-    "primaryMeaning": "[AUTO] freq=9500",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 9500
     },
@@ -17099,18 +17008,28 @@
       "id": "WF-KU",
       "lexemeIds": [
         "L-CORPUS-00685",
+        "L-CORPUS-03191",
         "L-D0BAD18AD183-3",
         "L-D0BAD18AD183-4",
+        "L-KBD-01671",
+        "L-KBD-01901",
+        "L-KBD-02584",
+        "L-KBD-02585",
+        "L-KBD-02586",
+        "L-KBD-02587",
+        "L-KBD-02588",
         "L-KBD-04729",
+        "L-KUAZHE",
         "L-VERIFIED-00351",
-        "L-VERIFIED-00443"
+        "L-VERIFIED-00443",
+        "L-VERIFIED-01992"
       ]
     }
   },
   {
     "id": "R-BEL_2",
     "form": "белджылы",
-    "primaryMeaning": "[AUTO] freq=9200",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 9200
     },
@@ -17134,7 +17053,7 @@
   {
     "id": "R-ZAU",
     "form": "зауэ",
-    "primaryMeaning": "[AUTO] freq=8900",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 8900
     },
@@ -17175,51 +17094,9 @@
     }
   },
   {
-    "id": "R-LE",
-    "form": "лъэга",
-    "primaryMeaning": "[AUTO] freq=8600",
-    "productivity": {
-      "corpusFrequency": 8600
-    },
-    "wordFamily": {
-      "id": "WF-LE",
-      "lexemeIds": [
-        "L-CORPUS-04132"
-      ]
-    }
-  },
-  {
-    "id": "R-GUA_1",
-    "form": "гуащӀэ",
-    "primaryMeaning": "[AUTO] freq=8300",
-    "productivity": {
-      "corpusFrequency": 8300
-    },
-    "wordFamily": {
-      "id": "WF-GUA_1"
-    }
-  },
-  {
-    "id": "R-BEG_1",
-    "form": "бэгъу",
-    "primaryMeaning": "[AUTO] freq=8100",
-    "productivity": {
-      "corpusFrequency": 8100
-    },
-    "wordFamily": {
-      "id": "WF-BEG_1",
-      "lexemeIds": [
-        "L-D0B1D18DD0B3",
-        "L-KBD-00472",
-        "L-KBD-00883",
-        "L-VERIFIED-02577"
-      ]
-    }
-  },
-  {
     "id": "R-PAS",
     "form": "пастэ",
-    "primaryMeaning": "[AUTO] freq=7900",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 7900
     },
@@ -17230,7 +17107,7 @@
   {
     "id": "R-ABD",
     "form": "абдж",
-    "primaryMeaning": "[AUTO] freq=7000",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 7000
     },
@@ -17246,7 +17123,7 @@
   {
     "id": "R-DUN",
     "form": "дуней",
-    "primaryMeaning": "[AUTO] freq=6800",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 6800
     },
@@ -17262,7 +17139,7 @@
   {
     "id": "R-GUB",
     "form": "губгъу",
-    "primaryMeaning": "[AUTO] freq=6000",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 6000
     },
@@ -17273,7 +17150,7 @@
   {
     "id": "R-DYG",
     "form": "дыгъуа",
-    "primaryMeaning": "[AUTO] freq=5400",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 5400
     },
@@ -17284,7 +17161,7 @@
   {
     "id": "R-PSHCHE",
     "form": "пщэде",
-    "primaryMeaning": "[AUTO] freq=5200",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 5200
     },
@@ -17298,7 +17175,7 @@
   {
     "id": "R-ZEM",
     "form": "зэман",
-    "primaryMeaning": "[AUTO] freq=4600",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 4600
     },
@@ -17323,7 +17200,7 @@
   {
     "id": "R-FOSH",
     "form": "фошыгъ",
-    "primaryMeaning": "[AUTO] freq=4000",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 4000
     },
@@ -17334,7 +17211,7 @@
   {
     "id": "R-DEL",
     "form": "деле",
-    "primaryMeaning": "[AUTO] freq=3800",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 3800
     },
@@ -17348,7 +17225,7 @@
   {
     "id": "R-BESH",
     "form": "бэшэч",
-    "primaryMeaning": "[AUTO] freq=3700",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 3700
     },
@@ -17362,7 +17239,7 @@
   {
     "id": "R-URY",
     "form": "урыху",
-    "primaryMeaning": "[AUTO] freq=3600",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 3600
     },
@@ -17378,7 +17255,7 @@
   {
     "id": "R-KIY_1",
     "form": "кӀынфӀ",
-    "primaryMeaning": "[AUTO] freq=3500",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 3500
     },
@@ -17392,7 +17269,7 @@
   {
     "id": "R-KHEKH",
     "form": "хэха",
-    "primaryMeaning": "[AUTO] freq=3400",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 3400
     },
@@ -17408,7 +17285,7 @@
   {
     "id": "R-AZHA",
     "form": "ажал",
-    "primaryMeaning": "[AUTO] freq=3300",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 3300
     },
@@ -17423,7 +17300,7 @@
   {
     "id": "R-SHYN",
     "form": "шынагъ",
-    "primaryMeaning": "[AUTO] freq=3200",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 3200
     },
@@ -17434,7 +17311,7 @@
   {
     "id": "R-MUR",
     "form": "мурад",
-    "primaryMeaning": "[AUTO] freq=3000",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 3000
     },
@@ -17448,7 +17325,7 @@
   {
     "id": "R-KHEK",
     "form": "хэку",
-    "primaryMeaning": "[AUTO] freq=2800",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 2800
     },
@@ -17466,7 +17343,7 @@
   {
     "id": "R-PSE_5",
     "form": "псэбэп",
-    "primaryMeaning": "[AUTO] freq=2450",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 2450
     },
@@ -17477,7 +17354,7 @@
   {
     "id": "R-KHE_2",
     "form": "хьэлэл",
-    "primaryMeaning": "[AUTO] freq=2400",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 2400
     },
@@ -17493,7 +17370,7 @@
   {
     "id": "R-KHE_3",
     "form": "хьэрэм",
-    "primaryMeaning": "[AUTO] freq=2350",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 2350
     },
@@ -17512,42 +17389,9 @@
     }
   },
   {
-    "id": "R-GUB_1",
-    "form": "губжь",
-    "primaryMeaning": "[AUTO] freq=2250",
-    "productivity": {
-      "corpusFrequency": 2250
-    },
-    "wordFamily": {
-      "id": "WF-GUB_1"
-    }
-  },
-  {
-    "id": "R-GUG_1",
-    "form": "гугъэ",
-    "primaryMeaning": "[AUTO] freq=2200",
-    "productivity": {
-      "corpusFrequency": 2200
-    },
-    "wordFamily": {
-      "id": "WF-GUG_1"
-    }
-  },
-  {
-    "id": "R-SHCHIY_3",
-    "form": "щӀыпӀэ",
-    "primaryMeaning": "[AUTO] freq=2100",
-    "productivity": {
-      "corpusFrequency": 2100
-    },
-    "wordFamily": {
-      "id": "WF-SHCHIY_3"
-    }
-  },
-  {
     "id": "R-KHY_2",
     "form": "хъыбар",
-    "primaryMeaning": "[AUTO] freq=2050",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 2050
     },
@@ -17568,51 +17412,9 @@
     }
   },
   {
-    "id": "R-BG_2",
-    "form": "бгъэдэ",
-    "primaryMeaning": "[AUTO] freq=2000",
-    "productivity": {
-      "corpusFrequency": 2000
-    },
-    "wordFamily": {
-      "id": "WF-BG_2",
-      "lexemeIds": [
-        "L-KBD-00335",
-        "L-KBD-00336",
-        "L-KBD-00337",
-        "L-KBD-00338",
-        "L-KBD-00339",
-        "L-KBD-00340",
-        "L-KBD-00341",
-        "L-KBD-00342",
-        "L-KBD-00343",
-        "L-KBD-00344",
-        "L-KBD-00345",
-        "L-KBD-00346",
-        "L-KBD-00347",
-        "L-KBD-00348",
-        "L-KBD-01458",
-        "L-KBD-01459",
-        "L-KBD-01460",
-        "L-KBD-01461",
-        "L-KBD-01462",
-        "L-KBD-01463",
-        "L-KBD-01464",
-        "L-KBD-01466",
-        "L-KBD-01467",
-        "L-KBD-01468",
-        "L-KBD-01469",
-        "L-KBD-02673",
-        "L-KBD-02674",
-        "L-KBD-02677",
-        "L-KBD-02678"
-      ]
-    }
-  },
-  {
     "id": "R-TEU",
     "form": "теухуа",
-    "primaryMeaning": "[AUTO] freq=1950",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 1950
     },
@@ -17627,7 +17429,7 @@
   {
     "id": "R-SHCHIE",
     "form": "щӀэху",
-    "primaryMeaning": "[AUTO] freq=1900",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 1900
     },
@@ -17638,7 +17440,7 @@
   {
     "id": "R-NEG",
     "form": "нэгъуэ",
-    "primaryMeaning": "[AUTO] freq=1850",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 1850
     },
@@ -17647,43 +17449,9 @@
     }
   },
   {
-    "id": "R-LE_1",
-    "form": "лъэпкъ",
-    "primaryMeaning": "[AUTO] freq=1800",
-    "productivity": {
-      "corpusFrequency": 1800
-    },
-    "wordFamily": {
-      "id": "WF-LE_1"
-    }
-  },
-  {
-    "id": "R-KU_1",
-    "form": "къуажэ",
-    "primaryMeaning": "[AUTO] freq=1750",
-    "productivity": {
-      "corpusFrequency": 1750
-    },
-    "wordFamily": {
-      "id": "WF-KU_1",
-      "lexemeIds": [
-        "L-CORPUS-03191",
-        "L-KBD-01671",
-        "L-KBD-01901",
-        "L-KBD-02584",
-        "L-KBD-02585",
-        "L-KBD-02586",
-        "L-KBD-02587",
-        "L-KBD-02588",
-        "L-KUAZHE",
-        "L-VERIFIED-01992"
-      ]
-    }
-  },
-  {
     "id": "R-KA_1",
     "form": "къалэ",
-    "primaryMeaning": "[AUTO] freq=1700",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 1700
     },
@@ -17699,7 +17467,7 @@
   {
     "id": "R-UNE_1",
     "form": "унэщӀ",
-    "primaryMeaning": "[AUTO] freq=1650",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 1650
     },
@@ -17710,7 +17478,7 @@
   {
     "id": "R-ZEKH",
     "form": "зэхуэз",
-    "primaryMeaning": "[AUTO] freq=1550",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 1550
     },
@@ -17725,7 +17493,7 @@
   {
     "id": "R-ZYSHCH",
     "form": "зыщӀэ",
-    "primaryMeaning": "[AUTO] freq=1500",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 1500
     },
@@ -17738,20 +17506,9 @@
     }
   },
   {
-    "id": "R-LE_2",
-    "form": "лъэщ",
-    "primaryMeaning": "[AUTO] freq=1450",
-    "productivity": {
-      "corpusFrequency": 1450
-    },
-    "wordFamily": {
-      "id": "WF-LE_2"
-    }
-  },
-  {
     "id": "R-NYK",
     "form": "ныкъуэ",
-    "primaryMeaning": "[AUTO] freq=1250",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 1250
     },
@@ -17778,7 +17535,7 @@
   {
     "id": "R-SHCHIE_1",
     "form": "щӀэщӀ",
-    "primaryMeaning": "[AUTO] freq=1200",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 1200
     },
@@ -17789,7 +17546,7 @@
   {
     "id": "R-ZEG",
     "form": "зэгуэр",
-    "primaryMeaning": "[AUTO] freq=1100",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 1100
     },
@@ -17804,7 +17561,7 @@
   {
     "id": "R-KHU_1",
     "form": "хъуэрэ",
-    "primaryMeaning": "[AUTO] freq=1050",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 1050
     },
@@ -17818,7 +17575,7 @@
   {
     "id": "R-KE",
     "form": "къэрал",
-    "primaryMeaning": "[AUTO] freq=950",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 950
     },
@@ -17835,7 +17592,7 @@
   {
     "id": "R-ZHYD",
     "form": "жыджэр",
-    "primaryMeaning": "[AUTO] freq=850",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 850
     },
@@ -17849,20 +17606,9 @@
     }
   },
   {
-    "id": "R-PSY_2",
-    "form": "псыхъу",
-    "primaryMeaning": "[AUTO] freq=800",
-    "productivity": {
-      "corpusFrequency": 800
-    },
-    "wordFamily": {
-      "id": "WF-PSY_2"
-    }
-  },
-  {
     "id": "R-MEZ_1",
     "form": "мэзлъэ",
-    "primaryMeaning": "[AUTO] freq=700",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 700
     },
@@ -17873,7 +17619,7 @@
   {
     "id": "R-BZH_1",
     "form": "бжьэщӀ",
-    "primaryMeaning": "[AUTO] freq=650",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 650
     },
@@ -17882,31 +17628,9 @@
     }
   },
   {
-    "id": "R-SHCHIY_4",
-    "form": "щӀыгу",
-    "primaryMeaning": "[AUTO] freq=600",
-    "productivity": {
-      "corpusFrequency": 600
-    },
-    "wordFamily": {
-      "id": "WF-SHCHIY_4"
-    }
-  },
-  {
-    "id": "R-DYG_1",
-    "form": "дыгъэ",
-    "primaryMeaning": "[AUTO] freq=550",
-    "productivity": {
-      "corpusFrequency": 550
-    },
-    "wordFamily": {
-      "id": "WF-DYG_1"
-    }
-  },
-  {
     "id": "R-MAZ",
     "form": "мазэ",
-    "primaryMeaning": "[AUTO] freq=500",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 500
     },
@@ -17925,7 +17649,7 @@
   {
     "id": "R-VAG",
     "form": "вагъуэ",
-    "primaryMeaning": "[AUTO] freq=450",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 450
     },
@@ -17936,7 +17660,7 @@
   {
     "id": "R-UEF",
     "form": "уэфӀ",
-    "primaryMeaning": "[AUTO] freq=400",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 400
     },
@@ -17954,7 +17678,7 @@
   {
     "id": "R-UESH",
     "form": "уэшх",
-    "primaryMeaning": "[AUTO] freq=350",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 350
     },
@@ -17971,7 +17695,7 @@
   {
     "id": "R-TAU",
     "form": "таучэл",
-    "primaryMeaning": "[AUTO] freq=50",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 50
     },
@@ -17986,7 +17710,7 @@
   {
     "id": "R-PASHCH",
     "form": "пащты",
-    "primaryMeaning": "[AUTO] freq=2300",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 2300
     },
@@ -18000,20 +17724,9 @@
     }
   },
   {
-    "id": "R-BZE_2",
-    "form": "бзэджа",
-    "primaryMeaning": "[AUTO] freq=2000",
-    "productivity": {
-      "corpusFrequency": 2000
-    },
-    "wordFamily": {
-      "id": "WF-BZE_2"
-    }
-  },
-  {
     "id": "R-ZED",
     "form": "зэдэп",
-    "primaryMeaning": "[AUTO] freq=1900",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 1900
     },
@@ -18028,7 +17741,7 @@
   {
     "id": "R-KE_1",
     "form": "къэуэ",
-    "primaryMeaning": "[AUTO] freq=1800",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 1800
     },
@@ -18058,7 +17771,7 @@
   {
     "id": "R-PK",
     "form": "пкъым",
-    "primaryMeaning": "[AUTO] freq=1700",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 1700
     },
@@ -18072,7 +17785,7 @@
   {
     "id": "R-DEG",
     "form": "дэгон",
-    "primaryMeaning": "[AUTO] freq=1600",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 1600
     },
@@ -18083,7 +17796,7 @@
   {
     "id": "R-SOV",
     "form": "совет",
-    "primaryMeaning": "[AUTO] freq=1500",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 1500
     },
@@ -18098,7 +17811,7 @@
   {
     "id": "R-MYSH",
     "form": "мышу",
-    "primaryMeaning": "[AUTO] freq=1400",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 1400
     },
@@ -18112,7 +17825,7 @@
   {
     "id": "R-DZA",
     "form": "дзажэ",
-    "primaryMeaning": "[AUTO] freq=1300",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 1300
     },
@@ -18227,7 +17940,7 @@
   {
     "id": "R-LYG",
     "form": "лыгъэ",
-    "primaryMeaning": "[AUTO] freq=1200",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 1200
     },
@@ -18247,7 +17960,7 @@
   {
     "id": "R-SHKHA",
     "form": "шхалъ",
-    "primaryMeaning": "[AUTO] freq=1100",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 1100
     },
@@ -18287,7 +18000,7 @@
   {
     "id": "R-ZEI",
     "form": "зеинш",
-    "primaryMeaning": "[AUTO] freq=1000",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 1000
     },
@@ -18305,7 +18018,7 @@
   {
     "id": "R-KIE_2",
     "form": "кӀэлъ",
-    "primaryMeaning": "[AUTO] freq=900",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 900
     },
@@ -18352,7 +18065,7 @@
   {
     "id": "R-IUZH",
     "form": "иужьы",
-    "primaryMeaning": "[AUTO] freq=800",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 800
     },
@@ -18363,7 +18076,7 @@
   {
     "id": "R-LY",
     "form": "лъыкъ",
-    "primaryMeaning": "[AUTO] freq=700",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 700
     },
@@ -18397,7 +18110,7 @@
   {
     "id": "R-SHKH",
     "form": "шъхьэ",
-    "primaryMeaning": "[AUTO] freq=600",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 600
     },
@@ -18406,24 +18119,9 @@
     }
   },
   {
-    "id": "R-BG_3",
-    "form": "бгъэд",
-    "primaryMeaning": "[AUTO] freq=500",
-    "productivity": {
-      "corpusFrequency": 500
-    },
-    "wordFamily": {
-      "id": "WF-BG_3",
-      "lexemeIds": [
-        "L-KBD-01457",
-        "L-KBD-02672"
-      ]
-    }
-  },
-  {
     "id": "R-KE_2",
     "form": "къэхь",
-    "primaryMeaning": "[AUTO] freq=400",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 400
     },
@@ -18443,7 +18141,7 @@
   {
     "id": "R-SHCHIE_2",
     "form": "щӀэхы",
-    "primaryMeaning": "[AUTO] freq=300",
+    "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 300
     },
@@ -25673,25 +25371,17 @@
     "wordFamily": {
       "lexemeIds": [
         "L-CORPUS-00014",
-        "L-CORPUS-00021",
-        "L-CORPUS-00033",
         "L-CORPUS-00048",
-        "L-CORPUS-00125",
         "L-CORPUS-00158",
         "L-CORPUS-00159",
         "L-CORPUS-00261",
-        "L-CORPUS-00305",
-        "L-CORPUS-00367",
-        "L-CORPUS-00421",
         "L-CORPUS-00450",
         "L-CORPUS-00454",
         "L-CORPUS-00493",
         "L-CORPUS-00530",
-        "L-CORPUS-00545",
         "L-CORPUS-00642",
         "L-CORPUS-00644",
         "L-CORPUS-00768",
-        "L-CORPUS-00836",
         "L-CORPUS-00853",
         "L-CORPUS-00886",
         "L-CORPUS-00930",
@@ -25897,9 +25587,6 @@
         "L-KBD-05607",
         "L-MORAFE",
         "L-MORE",
-        "L-PSHCHTEN",
-        "L-SYKHET",
-        "L-UDZ GHEGHE",
         "L-UDZYFE",
         "L-VERIFIED-00020",
         "L-VERIFIED-00021",
