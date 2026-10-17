@@ -12240,38 +12240,6 @@
     ]
   },
   {
-    "id": "L-PL1Y",
-    "form": "плӀы",
-    "literalMeaning": "dort",
-    "partOfSpeech": "numeral",
-    "conceptId": "FOUR",
-    "notes": "C-11.3: dort.",
-    "corpusFrequency": 43,
-    "rootIds": [
-      "R-LIY"
-    ],
-    "wordFamilyId": "WF-LIY",
-    "derivation": {
-      "rule": "root",
-      "components": [
-        "лӀы"
-      ]
-    },
-    "examples": [
-      "Шууэ щым, плӀым я деж ягъажэрти хъыбар ирагъащӀэрт."
-    ],
-    "isLemma": true,
-    "translations": {
-      "tr": "dort",
-      "en": "four (4)",
-      "ru": "четыре (4)"
-    },
-    "ipa": "/pʹɬʹǝ/",
-    "dictionaryEvidence": [
-      "sukunov-1998"
-    ]
-  },
-  {
     "id": "L-TXU",
     "form": "тху",
     "literalMeaning": "bes",
@@ -12412,35 +12380,6 @@
     ]
   },
   {
-    "id": "L-PL1YSHCH",
-    "form": "плӀыщӀ",
-    "literalMeaning": "kirk",
-    "partOfSpeech": "numeral",
-    "conceptId": "FORTY",
-    "notes": "C-11.3: kirk.",
-    "corpusFrequency": 30,
-    "rootIds": [
-      "R-LIY"
-    ],
-    "wordFamilyId": "WF-LIY",
-    "derivation": {
-      "rule": "root",
-      "components": [
-        "лӀы"
-      ]
-    },
-    "isLemma": true,
-    "translations": {
-      "tr": "kirk",
-      "en": "forty (40)",
-      "ru": "сорок (40)"
-    },
-    "ipa": "/pʹɬʹǝɕʹ/",
-    "dictionaryEvidence": [
-      "sukunov-1998"
-    ]
-  },
-  {
     "id": "L-TKHUSHCH",
     "form": "тхущӀ",
     "literalMeaning": "elli",
@@ -12466,69 +12405,6 @@
       "rule": "compound"
     },
     "ipa": "/txʷǝɕʹ/",
-    "dictionaryEvidence": [
-      "sukunov-1998"
-    ]
-  },
-  {
-    "id": "L-KHYSHCH",
-    "form": "хыщӀ",
-    "literalMeaning": "altmis",
-    "partOfSpeech": "numeral",
-    "conceptId": "SIXTY",
-    "notes": "C-11.3: altmis. | Kaynak: sukunov-1998",
-    "corpusFrequency": 16,
-    "rootIds": [
-      "R-KHY"
-    ],
-    "wordFamilyId": "WF-KHY",
-    "derivation": {
-      "rule": "root",
-      "components": [
-        "хы"
-      ]
-    },
-    "isLemma": true,
-    "ipa": "/xǝɕʹ/",
-    "translations": {
-      "en": "sixty (60)",
-      "ru": "шестьдесят (60)",
-      "tr": "Altmış"
-    },
-    "dictionaryEvidence": [
-      "sukunov-1998"
-    ]
-  },
-  {
-    "id": "L-BLYSHCH",
-    "form": "блыщӀ",
-    "literalMeaning": "yetmis",
-    "partOfSpeech": "numeral",
-    "conceptId": "SEVENTY",
-    "notes": "C-11.3: yetmis.",
-    "corpusFrequency": 20,
-    "examples": [
-      "НыщӀигъуами илъэс блыщӀым Дадэ макӀуэ щащкӀэ мэлыр."
-    ],
-    "isLemma": true,
-    "translations": {
-      "tr": "yetmis",
-      "en": "seventy (70)",
-      "ru": "семьдесят (70)"
-    },
-    "rootIds": [
-      "R-BLY"
-    ],
-    "wordFamilyId": "WF-БЛЫ",
-    "derivation": {
-      "rootIds": [
-        "R-БЛЫ"
-      ],
-      "morphemeIds": [],
-      "rule": "compound"
-    },
-    "ipa": "/bɮǝɕʹ/",
-    "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/3/38/%D0%91774%D0%B1%D0%BB%D1%8B%D1%89%D3%8F.ogg",
     "dictionaryEvidence": [
       "sukunov-1998"
     ]
@@ -12629,43 +12505,6 @@
       "tr": "beyaz",
       "en": "white (colour), light, pale (not dark), with light skin (as a trait of race)",
       "ru": "белый (о цвете), светлый, со светлой кожей (как признак расы)"
-    },
-    "dictionaryEvidence": [
-      "sukunov-1998"
-    ]
-  },
-  {
-    "id": "L-F1YC1E",
-    "form": "фӀыцӀэ",
-    "literalMeaning": "siyah",
-    "conceptId": "BLACK",
-    "partOfSpeech": "noun",
-    "dialectVariants": {
-      "adyghe": "фӀыцӀэ",
-      "kabardian": "фӀыцӀэ"
-    },
-    "notes": "C-11.3: temel kelime. Kabardeyce.",
-    "corpusFrequency": 131,
-    "ipa": "/'fʹǝtʹsɐ/",
-    "rootIds": [
-      "R-FYTSA"
-    ],
-    "wordFamilyId": "WF-FYTSA",
-    "derivation": {
-      "rule": "compound",
-      "components": [
-        "фӀыцӀэ",
-        "фӀы"
-      ]
-    },
-    "examples": [
-      "ГъэщӀэгъуэнщ, ахэр [фызхэр] гуащэ зэрыхъуу щхьэфӀэпхыкӀ фӀыцӀэкӀэ я щхьэр фӀапхыкӀыу щӀадзэ."
-    ],
-    "isLemma": true,
-    "translations": {
-      "tr": "siyah",
-      "en": "black, dark (colour), swarthy, hated, despised, loathed",
-      "ru": "чёрный (о цвете), смуглый, ненавистный"
     },
     "dictionaryEvidence": [
       "sukunov-1998"
@@ -14085,39 +13924,6 @@
       "ru": "зима"
     },
     "ipa": "/ɕʹǝ'mɑ:xʷɐ/",
-    "dictionaryEvidence": [
-      "sukunov-1998"
-    ]
-  },
-  {
-    "id": "L-SHHXHUANT1E",
-    "form": "щхъуантӀэ",
-    "literalMeaning": "yesil/mavi",
-    "conceptId": "GREEN",
-    "partOfSpeech": "noun",
-    "notes": "C-11.3: IPA kaynakli.",
-    "corpusFrequency": 45,
-    "examples": [
-      "Нартыху цӀыкӀухэм я бзий щхъуантӀэр мэӀущащэ."
-    ],
-    "isLemma": true,
-    "translations": {
-      "tr": "yesil/mavi",
-      "en": "green, light blue (sky)",
-      "ru": "зелёный, голубой (небо)"
-    },
-    "rootIds": [
-      "R-1E"
-    ],
-    "wordFamilyId": "WF-1E",
-    "derivation": {
-      "rootIds": [
-        "R-1E"
-      ],
-      "morphemeIds": [],
-      "rule": "compound"
-    },
-    "ipa": "/'ɕχʷɑ:ntʹɐ/",
     "dictionaryEvidence": [
       "sukunov-1998"
     ]
@@ -17575,63 +17381,6 @@
     "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7a/%D0%91019%D0%B1%D0%B0%D0%B4%D0%B7%D1%8D%D1%83%D1%8D%D0%B3%D1%8A%D1%83%D1%8D.ogg"
   },
   {
-    "id": "L-SHYSHCHE1U",
-    "form": "шыщхьэӀу",
-    "literalMeaning": "agustos",
-    "partOfSpeech": "noun",
-    "notes": "C-11.3: kategori tasnifi. [NADIR]",
-    "status": "rare",
-    "corpusFrequency": 4,
-    "ipa": "/ʁɐ'txɐkʷ/",
-    "rootIds": [
-      "R-SHHA",
-      "R-SHY"
-    ],
-    "wordFamilyId": "WF-SHHA",
-    "derivation": {
-      "rule": "compound",
-      "components": [
-        "щхьэ",
-        "шы"
-      ]
-    },
-    "conceptId": "AUGUST",
-    "isLemma": true,
-    "translations": {
-      "tr": "agustos",
-      "en": "August",
-      "ru": "август"
-    }
-  },
-  {
-    "id": "L-FOK1ADE",
-    "form": "фокӀадэ",
-    "literalMeaning": "eylul",
-    "partOfSpeech": "noun",
-    "notes": "C-11.3: kategori tasnifi. [NADIR]",
-    "status": "rare",
-    "corpusFrequency": 4,
-    "rootIds": [
-      "R-FO"
-    ],
-    "wordFamilyId": "WF-ADA",
-    "derivation": {
-      "rule": "compound",
-      "components": [
-        "адэ",
-        "фо"
-      ]
-    },
-    "conceptId": "SEPTEMBER",
-    "isLemma": true,
-    "translations": {
-      "tr": "eylul",
-      "en": "september",
-      "ru": "фокӏэдэ: сентябрь"
-    },
-    "ipa": "/fo:ˈtʹʂɑ:dɐ/"
-  },
-  {
     "id": "L-1UEGHUE",
     "form": "Ӏуэгъуэ",
     "literalMeaning": "ekim",
@@ -17663,35 +17412,6 @@
     "examples": [
       "*Ӏуэгъуэр къэсат."
     ]
-  },
-  {
-    "id": "L-SHCHAK1UEGHUE",
-    "form": "щэкӀуэгъуэ",
-    "literalMeaning": "kasim",
-    "partOfSpeech": "noun",
-    "notes": "C-11.3: kategori tasnifi. [NADIR]",
-    "status": "rare",
-    "corpusFrequency": 5,
-    "rootIds": [
-      "R-KWA",
-      "R-WA"
-    ],
-    "wordFamilyId": "WF-KWA",
-    "derivation": {
-      "rule": "compound",
-      "components": [
-        "кӀуэ",
-        "Ӏуэ"
-      ]
-    },
-    "conceptId": "NOVEMBER",
-    "isLemma": true,
-    "translations": {
-      "tr": "kasim",
-      "en": "November",
-      "ru": "ноябрь"
-    },
-    "ipa": "/ɕɐ'k'ʷɐʁʷɐ/"
   },
   {
     "id": "L-SEKYND",
@@ -18361,33 +18081,6 @@
     "translations": {
       "tr": "Okumaya başlamak, okuyup koşmak"
     }
-  },
-  {
-    "id": "L-EGUPSESEN",
-    "form": "егупсэсэн",
-    "literalMeaning": "?; dusunmek",
-    "conceptId": "MIND",
-    "partOfSpeech": "noun",
-    "notes": "Dogrulandi: sozluk kaynagi",
-    "rootIds": [
-      "R-PSA"
-    ],
-    "wordFamilyId": "WF-PSA",
-    "derivation": {
-      "rule": "root",
-      "components": [
-        "псэ"
-      ]
-    },
-    "isLemma": true,
-    "translations": {
-      "tr": "?; dusunmek"
-    },
-    "subConceptId": "THINK_DEEPLY",
-    "taxonomyFamily": "Duygu & Düşünce",
-    "rootForm": "гу-",
-    "ipa": "/psɐʁʷ/",
-    "ipaSource": "root-derived"
   },
   {
     "id": "L-YALHAN",
@@ -19684,39 +19377,6 @@
     }
   },
   {
-    "id": "L-TKHE",
-    "form": "тхьэ",
-    "literalMeaning": "tanri; Tanri, yaratici",
-    "conceptId": "GOD",
-    "partOfSpeech": "noun",
-    "notes": "Felsefi/ontolojik kavram",
-    "corpusFrequency": 1270,
-    "ipa": "/tħɐ/",
-    "rootIds": [
-      "R-THA"
-    ],
-    "wordFamilyId": "WF-THA",
-    "derivation": {
-      "rule": "root",
-      "components": [
-        "тхьэ"
-      ]
-    },
-    "examples": [
-      "Ӏуащхьэмахуэ и щыгум щызэхуэсащ Мэзытхьэ, Амыщ, Тхьэгъэлэдж, Созрэщ, Лъэпщ сымэ тхьэхэм я тхьэж Псатхьэ деж."
-    ],
-    "isLemma": true,
-    "translations": {
-      "en": "The ancient Adyghes' (Circassians') dieties, gods, Allah",
-      "ru": "божества у древних адыгов, Аллах",
-      "tr": "ANDIÇIRMEK",
-      "trSource": "en->tr koprusu (orta)"
-    },
-    "subConceptId": "GOD_SUPREME",
-    "taxonomyFamily": "Tanrı & İnanç",
-    "rootForm": "тхьэ-"
-  },
-  {
     "id": "L-TKHEUSYKHEZHEN",
     "form": "тхьэусыхажэн",
     "literalMeaning": "?",
@@ -20768,7 +20428,7 @@
     "literalMeaningAdy": "Псалъэ жызыӀэм езым и щхьэр кърегъэлъагъуэ",
     "isLemma": true,
     "translations": {
-      "tr": "bicak",
+      "tr": "bıçak",
       "en": "I, me",
       "ru": "Нож"
     },
@@ -21628,32 +21288,6 @@
     },
     "conceptId": "DINING_ROOM",
     "ipaSource": "root-derived"
-  },
-  {
-    "id": "L-D0BDD0B0D184",
-    "form": "нафӀ",
-    "literalMeaning": "iyilik",
-    "partOfSpeech": "noun",
-    "notes": "",
-    "corpusFrequency": 0,
-    "isLemma": true,
-    "rootIds": [
-      "R-NE"
-    ],
-    "wordFamilyId": "WF-NE",
-    "derivation": {
-      "rootIds": [
-        "R-NE"
-      ],
-      "morphemeIds": [],
-      "rule": "compound"
-    },
-    "ipaSource": "root-derived",
-    "translations": {
-      "tr": "iyilik"
-    },
-    "translationSource": "literalMeaning-derived",
-    "ipa": "/nafʼ/"
   },
   {
     "id": "L-D380D18DD180",
@@ -22796,42 +22430,6 @@
     ]
   },
   {
-    "id": "L-D0B5D0B3D18A",
-    "form": "егъэджакӀуэ",
-    "ipa": "/je:ʁɐ'dᶎɑ:kʹʷɐ/",
-    "literalMeaning": "öğretmen",
-    "partOfSpeech": "noun",
-    "notes": "",
-    "corpusFrequency": 173,
-    "conceptId": "TEACHER",
-    "rootIds": [
-      "R-WA"
-    ],
-    "wordFamilyId": "WF-KWA",
-    "derivation": {
-      "rule": "compound",
-      "components": [
-        "кӀуэ",
-        "Ӏуэ"
-      ]
-    },
-    "examples": [
-      "Нобэ, сентябрым и 1"
-    ],
-    "isLemma": true,
-    "translations": {
-      "tr": "öğretmen",
-      "en": "teacher, mentor, adviser",
-      "ru": "учитель, наставник; советчик"
-    },
-    "subConceptId": "PROFESSION_EDUCATION",
-    "taxonomyFamily": "Toplum & Meslek",
-    "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/d/dd/%D0%950105%D0%B5%D0%B3%D1%8A%D1%8D%D0%B4%D0%B6%D0%B0%D0%BA%D3%8F%D1%83%D1%8D.ogg",
-    "dictionaryEvidence": [
-      "sukunov-1998"
-    ]
-  },
-  {
     "id": "L-D181D18BD0BC-2",
     "form": "сымаджэщ",
     "ipa": "/sǝmɐ'dᶎɐɕ/",
@@ -23175,24 +22773,6 @@
       "sukunov-1998"
     ],
     "conceptId": "KÖTÜ"
-  },
-  {
-    "id": "L-D0BAD380D18B",
-    "form": "кӀынфӀ",
-    "ipa": "/tʹʂǝn/",
-    "literalMeaning": "karanlık",
-    "partOfSpeech": "adjective",
-    "notes": "",
-    "corpusFrequency": 0,
-    "isLemma": true,
-    "rootIds": [
-      "R-KIY_1"
-    ],
-    "conceptId": "DARK_COLOR",
-    "translations": {
-      "tr": "karanlık"
-    },
-    "translationSource": "literalMeaning-derived"
   },
   {
     "id": "L-D0BCD0B0D189",
@@ -27015,39 +26595,6 @@
     "wordFamily": "duygu"
   },
   {
-    "id": "L-D182D380D0BE",
-    "form": "тӀощӀ",
-    "ipa": "/tʹo:ɕʹ/",
-    "literalMeaning": "yirmi",
-    "partOfSpeech": "numeral",
-    "notes": "Kaynak: sukunov-1998",
-    "corpusFrequency": 52,
-    "examples": [
-      "Лъэбакъуэ тӀощӀ."
-    ],
-    "isLemma": true,
-    "rootIds": [
-      "R-PSHCHY"
-    ],
-    "wordFamilyId": "WF-PSHCHY",
-    "derivation": {
-      "rootIds": [
-        "R-PSHCHY"
-      ],
-      "morphemeIds": [],
-      "rule": "compound"
-    },
-    "conceptId": "BOW_MUSIC",
-    "translations": {
-      "en": "twenty (20)",
-      "ru": "двадцать (20)",
-      "tr": "Yirmi"
-    },
-    "dictionaryEvidence": [
-      "sukunov-1998"
-    ]
-  },
-  {
     "id": "L-D189D18DD189",
     "form": "щэщӀ",
     "ipa": "/ɕɐɕʹ/",
@@ -27064,36 +26611,6 @@
       "en": "thirty (30)",
       "ru": "тридцать (30)",
       "tr": "Otuz"
-    },
-    "dictionaryEvidence": [
-      "sukunov-1998"
-    ]
-  },
-  {
-    "id": "L-D0B8D189D380",
-    "form": "ищӀ",
-    "ipa": "/jǝɕʹ/",
-    "literalMeaning": "seksen",
-    "partOfSpeech": "numeral",
-    "notes": "Kaynak: sukunov-1998",
-    "corpusFrequency": 91,
-    "isLemma": true,
-    "rootIds": [
-      "R-ISCH1"
-    ],
-    "wordFamilyId": "WF-ИЩӀ",
-    "derivation": {
-      "rootIds": [
-        "R-ИЩӀ"
-      ],
-      "morphemeIds": [],
-      "rule": "root"
-    },
-    "conceptId": "EIGHTY",
-    "translations": {
-      "en": "eighty (80)",
-      "ru": "восемьдесят (80)",
-      "tr": "Seksen"
     },
     "dictionaryEvidence": [
       "sukunov-1998"
@@ -27163,29 +26680,6 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "dictionaryEvidence": [
-      "sukunov-1998"
-    ]
-  },
-  {
-    "id": "L-D189D18DD189-2",
-    "form": "щэщӀ",
-    "ipa": "/ɕɐɕʹ/",
-    "literalMeaning": "otuz",
-    "partOfSpeech": "numeral",
-    "notes": "Onluk sistem",
-    "corpusFrequency": 0,
-    "conceptId": "THIRTY",
-    "isLemma": true,
-    "translations": {
-      "tr": "yirmi",
-      "en": "thirty (30)",
-      "ru": "тридцать (30)",
-      "ar": "ثلاثين"
-    },
-    "rootIds": [
-      "R-SHE"
-    ],
     "dictionaryEvidence": [
       "sukunov-1998"
     ]
@@ -28360,57 +27854,6 @@
     }
   },
   {
-    "id": "L-D0B4D18BD189",
-    "form": "дыщэщӀэ",
-    "ipa": "/'dǝɕɐ/",
-    "literalMeaning": "kuyumculuk",
-    "partOfSpeech": "noun",
-    "notes": "",
-    "corpusFrequency": 0,
-    "rootIds": [
-      "R-DYSHA",
-      "R-SCHE"
-    ],
-    "wordFamilyId": "WF-DYSHA",
-    "derivation": {
-      "rule": "compound",
-      "components": [
-        "дыщэ",
-        "щӀэ"
-      ]
-    },
-    "conceptId": "GOLDSMITH",
-    "isLemma": true,
-    "translations": {
-      "tr": "kuyumculuk"
-    }
-  },
-  {
-    "id": "L-D0BFD189D18B-2",
-    "form": "пщылӀ",
-    "ipa": "/pɕǝɬʹ/",
-    "literalMeaning": "hizmetkar, köle",
-    "partOfSpeech": "noun",
-    "notes": "",
-    "corpusFrequency": 74,
-    "conceptId": "SERVANT_SLAVE",
-    "examples": [
-      "Хъан беижь гуэр щыӀащ, унэӀутрэ пщылӀрэ и куэду, ахэр пщӀэншэу хуэлажьэу, езыр тхъэжу псэууэ."
-    ],
-    "isLemma": true,
-    "subConceptId": "SOCIAL_STATUS",
-    "taxonomyFamily": "Toplum & Meslek",
-    "rootIds": [
-      "R-PSHCHY"
-    ],
-    "translations": {
-      "en": "peasant serf",
-      "ru": "крепостной крестьянин",
-      "tr": "hizmetkar, köle",
-      "trSource": "en->tr koprusu (orta)"
-    }
-  },
-  {
     "id": "L-D182D185D0B0",
     "form": "тхакӀуэ",
     "ipa": "/'txɑ:kʹʷɐ/",
@@ -28802,40 +28245,6 @@
     "subConceptId": "EMOTION",
     "taxonomyFamily": "Duygu & Zihin",
     "rootForm": "нэ-"
-  },
-  {
-    "id": "L-KHUN",
-    "form": "хъун",
-    "literalMeaning": "ot, çayır otu",
-    "conceptId": "BE",
-    "partOfSpeech": "noun",
-    "notes": "Dogrulandi: temel kelime",
-    "corpusFrequency": 1466,
-    "ipa": "/χʷǝn/",
-    "examples": [
-      "- Сэ хъун бэгъуа здэщыӀэ сощӀэ, — жиӀэри Ажэжьым бжэн цӀыкӀуищыр иришэжьэжащ."
-    ],
-    "isLemma": true,
-    "translations": {
-      "en": "meadow grass",
-      "ru": "луговая трава",
-      "tr": "Güve",
-      "trSource": "en->tr koprusu (orta)"
-    },
-    "rootIds": [
-      "R-SHE2"
-    ],
-    "wordFamilyId": "WF-SHE2",
-    "derivation": {
-      "rootIds": [
-        "R-SHE2"
-      ],
-      "morphemeIds": [],
-      "rule": "compound"
-    },
-    "dictionaryEvidence": [
-      "sukunov-1998"
-    ]
   },
   {
     "id": "L-D0BCD18DD0BA",
@@ -30463,40 +29872,6 @@
       "morphemeIds": [],
       "rule": "root"
     }
-  },
-  {
-    "id": "L-EDZHAKUE",
-    "form": "еджакӀуэ",
-    "literalMeaning": "ogrenci",
-    "conceptId": "STUDENT",
-    "partOfSpeech": "noun",
-    "notes": "Dogrulandi: sozluk kaynagi",
-    "rootIds": [
-      "R-WA"
-    ],
-    "wordFamilyId": "WF-KWA",
-    "derivation": {
-      "rule": "compound",
-      "components": [
-        "кӀуэ",
-        "Ӏуэ"
-      ]
-    },
-    "isLemma": true,
-    "translations": {
-      "tr": "ogrenci",
-      "en": "school student, pupil, school child",
-      "ru": "учащийся, ученик, школьник"
-    },
-    "ipa": "/je:'dᶎɑ:kʹʷɐ/",
-    "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/4/46/%D0%950296%D0%B5%D0%B4%D0%B6%D0%B0%D0%BA%D3%8F%D1%83%D1%8D.ogg",
-    "dictionaryEvidence": [
-      "sukunov-1998"
-    ],
-    "examples": [
-      "-Уигу гъэзагъэ иджы, еджакӀуэ сокӀуэ, -жиӀащ абы зыфӀимыгъэӀуэхуу, щӀалэми емыплъу. Къу. С."
-    ],
-    "examplesSource": "1.Ady-Ady_AP.json (◊)"
   },
   {
     "id": "L-TYGHOPCHYKH",
@@ -33164,27 +32539,6 @@
     "ipa": "/ˈnɑ:ʂɐ/"
   },
   {
-    "id": "L-1ERYTX",
-    "form": "Ӏэрытх",
-    "literalMeaning": "el yazmasi",
-    "conceptId": "MANUSCRIPT",
-    "partOfSpeech": "noun",
-    "notes": "Somatik/destan kaynagi",
-    "isLemma": true,
-    "subConceptId": "HANDWRITING",
-    "taxonomyFamily": "Eylem & Yazı",
-    "rootForm": "Ӏэ-",
-    "rootIds": [
-      "R-1E"
-    ],
-    "ipa": "/ʔɐ'rǝtx/",
-    "translations": {
-      "en": "hand-written",
-      "ru": "рукописный",
-      "tr": "el yazmasi"
-    }
-  },
-  {
     "id": "L-SHHYEPS",
     "form": "щхьэпс",
     "literalMeaning": "kalin ip",
@@ -33436,35 +32790,6 @@
     }
   },
   {
-    "id": "L-P1C1Y",
-    "form": "пцӀы",
-    "ipa": "/ptʹsǝ/",
-    "literalMeaning": "yalan",
-    "partOfSpeech": "noun",
-    "conceptId": "LIE",
-    "conceptIds": [
-      "LIE",
-      "DECEPTION"
-    ],
-    "corpusFrequency": 431,
-    "dialectVariants": {
-      "adyghe": "пцӀы",
-      "kabardian": "пцӀы"
-    },
-    "examples": [
-      "ПцӀы ӀэфӀ нэхърэ пэж дыдж."
-    ],
-    "isLemma": true,
-    "rootIds": [
-      "R-P1C1"
-    ],
-    "translations": {
-      "en": "lies, deception",
-      "ru": "ложь, обман",
-      "tr": "BÜHTAN"
-    }
-  },
-  {
     "id": "L-GUKHELHE",
     "form": "гухэлъ",
     "ipa": "/gʷǝ'xɐɬ/",
@@ -33508,111 +32833,6 @@
     "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1b/%D0%93%D1%83463%D0%B3%D1%83%D1%85%D1%8D%D0%BB%D1%8A.ogg"
   },
   {
-    "id": "L-KHUEBAN",
-    "form": "кхъуэбан",
-    "ipa": "/qʹχʷɐ/",
-    "literalMeaning": "yaban domuzu",
-    "partOfSpeech": "noun",
-    "conceptId": "PIG",
-    "conceptIds": null,
-    "corpusFrequency": 0,
-    "dialectVariants": null,
-    "isLemma": true,
-    "rootIds": [
-      "R-KKHUHE"
-    ],
-    "translations": {
-      "tr": "yaban domuzu"
-    },
-    "translationSource": "literalMeaning-derived"
-  },
-  {
-    "id": "L-WA",
-    "form": "уэ",
-    "ipa": "/wɐ/",
-    "literalMeaning": "dolu",
-    "partOfSpeech": "noun",
-    "conceptId": "YOU",
-    "conceptIds": null,
-    "corpusFrequency": 3287,
-    "dialectVariants": null,
-    "examples": [
-      "Уэм щыфийуэ къэзыкӀухь, выщхьэм тету &quot;вагъэ зыщӀ&quot; {бзу}. Къэб. п. и ант. Губгъуэм уит е уэм ухэт, сымыупщӀэу гум сыпхуешэ. КӀу. Б. Уэри щӀыри гъэзын перевернуть всё в поисках чего",
-      "Уэ пщӀэри ещӀэ, езым ищӀэри щӀыгъужщ. (погов. ) IV междом. выражает неожиданную радость, удивление, восхищение и т. п. / Зыпэмыплъа гуфӀэгъуэ, гъэщӀэгъуэныгъэ е гуауэ къегъэлъагъуэ.",
-      "Уэ, дыунэхъущ. Уэ, къеблагъэ. V частица и ( употребляется для выражения последовательной смены событий, явлений, действий ) / Ӏуэхугъуэхэр къыщызэкӀэлъахькӀэ къагъэсэбэп щӀэгъэхуэбжьэныгъэ зыхэлъ част"
-    ],
-    "isLemma": true,
-    "rootIds": [
-      "R-UE"
-    ],
-    "wordFamilyId": "WF-УЭ",
-    "derivation": {
-      "rootIds": [
-        "R-УЭ"
-      ],
-      "morphemeIds": [],
-      "rule": "root"
-    },
-    "translations": {
-      "en": "hail (precipitation)",
-      "ru": "град",
-      "tr": "dolu",
-      "ar": "أنت/أنتِ/أنتم"
-    }
-  },
-  {
-    "id": "L-PSHCH1YK1U",
-    "form": "пщӀыкӀу",
-    "ipa": "/pʹɕʹǝ/",
-    "literalMeaning": "on bir",
-    "partOfSpeech": "noun",
-    "conceptId": "PETROLEUM",
-    "conceptIds": null,
-    "corpusFrequency": 0,
-    "dialectVariants": null,
-    "rootIds": [
-      "R-SCHY"
-    ],
-    "wordFamilyId": "WF-SCHY",
-    "derivation": {
-      "rule": "root",
-      "components": [
-        "щӀы"
-      ]
-    },
-    "isLemma": true,
-    "translations": {
-      "tr": "on bir"
-    },
-    "translationSource": "literalMeaning-derived"
-  },
-  {
-    "id": "L-PSHCH1YK1UT1",
-    "form": "пщӀыкӀутӀ",
-    "ipa": "/pʹɕʹǝ/",
-    "literalMeaning": "on iki",
-    "partOfSpeech": "noun",
-    "conceptId": "PETROLEUM",
-    "conceptIds": null,
-    "corpusFrequency": 0,
-    "dialectVariants": null,
-    "rootIds": [
-      "R-SCHY"
-    ],
-    "wordFamilyId": "WF-SCHY",
-    "derivation": {
-      "rule": "root",
-      "components": [
-        "щӀы"
-      ]
-    },
-    "isLemma": true,
-    "translations": {
-      "tr": "on iki"
-    },
-    "translationSource": "literalMeaning-derived"
-  },
-  {
     "id": "L-YAGUPSESAN",
     "form": "егупсэсэн",
     "ipa": "/psɐʁʷ/",
@@ -33638,30 +32858,6 @@
     "translations": {
       "tr": "derin düşünmek",
       "en": "think; meditate; ponder"
-    }
-  },
-  {
-    "id": "L-NYBZH",
-    "form": "ныбжь",
-    "ipa": "/nǝbʑ/",
-    "literalMeaning": "yas",
-    "partOfSpeech": "noun",
-    "conceptId": "AGE",
-    "conceptIds": null,
-    "corpusFrequency": 143,
-    "dialectVariants": null,
-    "examples": [
-      "Илъэс пщыкӀутхум и ныбжьыр фӀэмыкӀами, а щӀалэ цӀыкӀур губзыгъэу икӀи жану жаӀэ."
-    ],
-    "isLemma": true,
-    "rootIds": [
-      "R-NYBZHY"
-    ],
-    "translations": {
-      "en": "age, life, lifetime (the period that sb exists), person of the same age",
-      "ru": "возраст, жизнь, век (период существования кого-л.), сверстник, ровесник",
-      "tr": "YAŞ",
-      "ar": "العُمر"
     }
   },
   {
@@ -33696,38 +32892,6 @@
       "ru": "божества у древних адыгов, Аллах",
       "tr": "Tanrı, Allah",
       "ar": "الرب، الإله/ مقياس مسافات قديم طوله بحدود المتر"
-    }
-  },
-  {
-    "id": "L-TSYXHUGHE",
-    "form": "цӀыхугъэ",
-    "ipa": "/tʹsǝ'xʷǝʁɐ/",
-    "literalMeaning": "insanlik",
-    "partOfSpeech": "noun",
-    "conceptId": "MAN",
-    "conceptIds": null,
-    "corpusFrequency": 53,
-    "dialectVariants": null,
-    "rootIds": [
-      "R-TSYKHU"
-    ],
-    "wordFamilyId": "WF-TSYKHU",
-    "derivation": {
-      "rule": "root",
-      "components": [
-        "цӀыху"
-      ]
-    },
-    "examples": [
-      "ЦӀыхугъэ зыбжанэм яхуэзэн. ЦӀыхугъэ хуэхъун (зэхуэхъун) познакомиться с кем",
-      "{Къазджэрий} икъукӀэ и гуапэ хъуащ зэкъуэшищым, я шыпхъум цӀыхугъэ зэрахуэхъуар. КӀ. А. III см. цӀыхубэ.",
-      "Хуейкъым цӀыхугъэр Зауэм и мафӀэм. Хь. Хь."
-    ],
-    "isLemma": true,
-    "translations": {
-      "en": "humanity (quality)",
-      "ru": "человечность",
-      "tr": "insanlik"
     }
   },
   {
@@ -33768,40 +32932,6 @@
     ]
   },
   {
-    "id": "L-KHUN-2",
-    "form": "хъун",
-    "ipa": "/χʷǝn/",
-    "literalMeaning": "güve",
-    "partOfSpeech": "noun",
-    "conceptIds": null,
-    "corpusFrequency": 2484,
-    "dialectVariants": null,
-    "examples": [
-      "- Сэ хъун бэгъуа здэщыӀэ сощӀэ, — жиӀэри Ажэжьым бжэн цӀыкӀуищыр иришэжьэжащ."
-    ],
-    "isLemma": true,
-    "rootIds": [
-      "R-SHE2"
-    ],
-    "wordFamilyId": "WF-SHE2",
-    "derivation": {
-      "rootIds": [
-        "R-SHE2"
-      ],
-      "morphemeIds": [],
-      "rule": "compound"
-    },
-    "translations": {
-      "en": "meadow grass",
-      "ru": "луговая трава",
-      "tr": "Güve"
-    },
-    "notes": "Kaynak: sukunov-1998",
-    "dictionaryEvidence": [
-      "sukunov-1998"
-    ]
-  },
-  {
     "id": "L-KHUN-3",
     "form": "хъун",
     "ipa": "/χʷǝn/",
@@ -33834,71 +32964,6 @@
       "tr": "olmak, gerçekleşmek",
       "ar": "يحدث، يكون، يصير/ الحدث، الكون/ يرعى/ حسناً"
     },
-    "dictionaryEvidence": [
-      "sukunov-1998"
-    ]
-  },
-  {
-    "id": "L-KHUN-4",
-    "form": "мэхъу",
-    "ipa": "/χʷǝn/",
-    "literalMeaning": "olmak, başlamak, büyümek, olgunlaşmak",
-    "partOfSpeech": "verb",
-    "conceptId": "GRANDMOTHER",
-    "conceptIds": null,
-    "corpusFrequency": 2484,
-    "dialectVariants": {
-      "adyghe": "мэхъу",
-      "kabardian": "хъун"
-    },
-    "isLemma": true,
-    "translations": {
-      "tr": "olmak"
-    },
-    "rootIds": [
-      "R-ANA"
-    ],
-    "wordFamilyId": "WF-ANA",
-    "derivation": {
-      "rootIds": [
-        "R-ANA"
-      ],
-      "morphemeIds": [],
-      "rule": "compound"
-    }
-  },
-  {
-    "id": "L-KHY2",
-    "form": "хы",
-    "ipa": "/xǝ/",
-    "literalMeaning": "altı",
-    "partOfSpeech": "numeral",
-    "conceptId": "SIX",
-    "conceptIds": null,
-    "corpusFrequency": 325,
-    "dialectVariants": null,
-    "rootIds": [
-      "R-KHY"
-    ],
-    "wordFamilyId": "WF-KHY",
-    "derivation": {
-      "rule": "root",
-      "components": [
-        "хы"
-      ]
-    },
-    "examples": [
-      "цӀыхуих шестеро, шесть человек 2. шестерка (цифра). 3. океан; 2. океанский",
-      "хы кхъухъ океанский корабль хым лыгъэ едзын поджечь океан (заниматься бесполезным делом) хы адрыщӀ заморский, заморские земли хы тхьэрыкъуэ чайка (букв. морской голубь)"
-    ],
-    "isLemma": true,
-    "translations": {
-      "en": "six (6)",
-      "ru": "шесть (6)",
-      "tr": "deniz",
-      "ar": "I \\tالبحر   II \\tستة، العدد ستة"
-    },
-    "notes": "Kaynak: sukunov-1998",
     "dictionaryEvidence": [
       "sukunov-1998"
     ]
@@ -33961,36 +33026,6 @@
       "tr": "sive"
     },
     "translationSource": "literalMeaning-derived"
-  },
-  {
-    "id": "L-SH1ALE",
-    "form": "щӀалэ",
-    "ipa": "/'ɕʹɑ:ɮɐ/",
-    "literalMeaning": "genc",
-    "partOfSpeech": "noun",
-    "conceptId": "YOUTH",
-    "conceptIds": null,
-    "corpusFrequency": null,
-    "dialectVariants": null,
-    "rootIds": [
-      "R-SCHALA"
-    ],
-    "wordFamilyId": "WF-SCHALA",
-    "derivation": {
-      "rule": "root",
-      "components": [
-        "щӀалэ"
-      ]
-    },
-    "examples": [
-      "ЩӀалэр унэ псоми я малъхъэщи, хъыджэбзыр унэ псомикӀ я нысэщ."
-    ],
-    "isLemma": true,
-    "translations": {
-      "en": "youth, boy, young man, male child, boy, son",
-      "ru": "юноша, парень, ребёнок мужского пола, мальчик, сын",
-      "tr": "genc"
-    }
   },
   {
     "id": "L-QUE",
@@ -34088,7 +33123,7 @@
     "translations": {
       "en": "I, me",
       "ru": "Нож",
-      "tr": "Bıçak",
+      "tr": "ben (zamir)",
       "ar": "أنا (ضمير المتكلم)/ السكين، الموسى"
     },
     "notes": "Kaynak: sukunov-1998",
@@ -52072,36 +51107,6 @@
       "ar": "أي، كل"
     },
     "literalMeaningSource": "translations.tr (yuksek)"
-  },
-  {
-    "id": "L-CORPUS-00622",
-    "form": "мыхэр",
-    "literalMeaning": "these",
-    "partOfSpeech": "noun",
-    "corpusFrequency": 65,
-    "dialectVariants": {
-      "adyghe": "",
-      "kabardian": "мыхэр"
-    },
-    "notes": "Corpus v1.0 (freq: 65, lang: kbd, source: 13.Kbd-Ar-Jonty) [ANIMAL etiketinden cikarildi]",
-    "isLemma": true,
-    "translations": {
-      "tr": "these",
-      "ar": "هذه",
-      "en": "demonstrative"
-    },
-    "rootIds": [
-      "R-NE"
-    ],
-    "wordFamilyId": "WF-NE",
-    "derivation": {
-      "rootIds": [
-        "R-NE"
-      ],
-      "morphemeIds": [],
-      "rule": "compound"
-    },
-    "ipa": "/mǝ/"
   },
   {
     "id": "L-CORPUS-00623",
@@ -93402,32 +92407,6 @@
     "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/d/df/%D0%93%D1%83087%D0%B3%D1%83%D1%8D%D0%B4%D0%B7%D1%8D.ogg"
   },
   {
-    "id": "L-CORPUS-02003",
-    "form": "щыта",
-    "literalMeaning": "of щытын",
-    "partOfSpeech": "noun",
-    "corpusFrequency": 20,
-    "dialectVariants": {
-      "adyghe": "щыта",
-      "kabardian": ""
-    },
-    "notes": "Corpus v1.0 (freq: 20, lang: ady, source: 13.Kbd-Ar-Jonty)",
-    "isLemma": true,
-    "translations": {
-      "ru": "of щытын",
-      "tr": "NASIL",
-      "ar": "سابق"
-    },
-    "conceptId": "STAND",
-    "subConceptId": "POSITION",
-    "taxonomyFamily": "Eylem & Fiziksel",
-    "rootForm": "щы-",
-    "rootIds": [
-      "R-SHCH"
-    ],
-    "ipa": "/ɕǝn/"
-  },
-  {
     "id": "L-CORPUS-02004",
     "form": "фитныгъэ",
     "literalMeaning": "вольность, свобода еплъ",
@@ -118205,40 +117184,6 @@
     }
   },
   {
-    "id": "L-CORPUS-02892",
-    "form": "зэгъусэу",
-    "literalMeaning": "together",
-    "partOfSpeech": "noun",
-    "corpusFrequency": 14,
-    "dialectVariants": {
-      "adyghe": "зэгъусэу",
-      "kabardian": ""
-    },
-    "notes": "Corpus v1.0 (freq: 14, lang: ady, source: 13.Kbd-Ar-Jonty)",
-    "ipa": "/zɐ'ʁʷǝsɐw/",
-    "conceptId": "TOGETHER_ADV",
-    "isLemma": true,
-    "translations": {
-      "tr": "together",
-      "en": "together, jointly",
-      "ru": "вместе",
-      "ar": "معاً"
-    },
-    "subConceptId": "TOGETHERNESS_ADV",
-    "taxonomyFamily": "Gramer & Nitelik",
-    "rootIds": [
-      "R-GHUSE"
-    ],
-    "wordFamilyId": "WF-GHUSE",
-    "derivation": {
-      "rootIds": [
-        "R-GHUSE"
-      ],
-      "morphemeIds": [],
-      "rule": "compound"
-    }
-  },
-  {
     "id": "L-CORPUS-02894",
     "form": "дэх",
     "literalMeaning": "انحراف عن، خروج عن",
@@ -123519,45 +122464,6 @@
     "examples": [
       "*Уэрэд усын.",
       "*Гъыбзэ усын."
-    ]
-  },
-  {
-    "id": "L-CORPUS-03076",
-    "form": "хэнэн",
-    "literalMeaning": "to stick, to get/be stuck in smth",
-    "partOfSpeech": "noun",
-    "corpusFrequency": 13,
-    "dialectVariants": {
-      "adyghe": "хэнэн",
-      "kabardian": ""
-    },
-    "notes": "Corpus v1.0 (freq: 13, lang: ady, source: 14.Kbd-En-2-Jonty)",
-    "conceptId": "STICK_GET_STUCK",
-    "isLemma": true,
-    "translations": {
-      "en": "get bogged down or stuck in, among or amidst sth, lose in some game or board game",
-      "ru": "увязнуть, застрять в чём-л. (в какой-л. массе, среде), проиграть в какую-л. настольную игру",
-      "tr": "ALEVLENDIRMEK",
-      "trSource": "en->tr koprusu (orta)",
-      "ar": "يقلع، يبطل/ يعلق في، يستعصي في"
-    },
-    "subConceptId": "ATTACH_ACTION",
-    "taxonomyFamily": "Eylem & Fiziksel",
-    "rootIds": [
-      "R-NE"
-    ],
-    "wordFamilyId": "WF-NE",
-    "derivation": {
-      "rootIds": [
-        "R-NE"
-      ],
-      "morphemeIds": [],
-      "rule": "compound"
-    },
-    "ipa": "/xɐ'nɐn/",
-    "examples": [
-      "*ВитӀыр ятӀэм хэнащ.",
-      "*КуэзыркӀэ хэнэн."
     ]
   },
   {
@@ -159623,35 +158529,6 @@
     }
   },
   {
-    "id": "L-CORPUS-04402",
-    "form": "илъэсищэ",
-    "literalMeaning": "hundred years",
-    "partOfSpeech": "noun",
-    "corpusFrequency": 9,
-    "dialectVariants": {
-      "adyghe": "илъэсищэ",
-      "kabardian": ""
-    },
-    "notes": "Corpus v1.0 (freq: 9, lang: ady, source: 14.Kbd-En-2-Jonty) [ANIMAL etiketinden cikarildi]",
-    "ipa": "/jǝɬɐ'si:ɕɐ/",
-    "rootIds": [
-      "R-LHA"
-    ],
-    "wordFamilyId": "WF-LHA",
-    "derivation": {
-      "rule": "root",
-      "components": [
-        "лъэ"
-      ]
-    },
-    "isLemma": true,
-    "translations": {
-      "ru": "Илъэсу щэ",
-      "tr": "hundred years",
-      "en": "100 years, century"
-    }
-  },
-  {
     "id": "L-CORPUS-04403",
     "form": "пачъыхьагъу",
     "literalMeaning": "царство Урысые",
@@ -163557,35 +162434,6 @@
       "en": "invisible, unseen",
       "ru": "невидимый",
       "tr": "görünmez"
-    }
-  },
-  {
-    "id": "L-CORPUS-04572",
-    "form": "пылъ",
-    "literalMeaning": "that lies near smth",
-    "partOfSpeech": "noun",
-    "corpusFrequency": 8,
-    "dialectVariants": {
-      "adyghe": "",
-      "kabardian": "пылъ"
-    },
-    "notes": "Corpus v1.0 (freq: 8, lang: kbd, source: 17.Kbd-En_Amjad) [ANIMAL etiketinden cikarildi]",
-    "isLemma": true,
-    "rootIds": [
-      "R-LHA"
-    ],
-    "wordFamilyId": "WF-LHA",
-    "derivation": {
-      "rootIds": [
-        "R-LHA"
-      ],
-      "morphemeIds": [],
-      "rule": "compound"
-    },
-    "ipa": "/pǝ'ɬɐn/",
-    "translations": {
-      "tr": "İlaç",
-      "en": "1. that lies near smth., lying near smth., touching smth.; 2. that hangs on smth., hanging on smth."
     }
   },
   {
@@ -294847,31 +293695,6 @@
     "ipa": "/te:ˈtǝʁʷɐ/"
   },
   {
-    "id": "L-VERIFIED-02242",
-    "form": "факт",
-    "literalMeaning": "TUTANAK",
-    "partOfSpeech": "noun",
-    "corpusFrequency": 5,
-    "dialectVariants": {
-      "adyghe": "",
-      "kabardian": "факт"
-    },
-    "notes": "Verified (freq: 5, 13.Kbd-Ar-Jonty) [ANIMAL etiketinden cikarildi]",
-    "conceptId": "ROT",
-    "literalMeaningAdy": "fact; case; факткэр зэнуэкьэсын: to gather/collect facts; see also Ӏуэнугъуэ 4",
-    "isLemma": true,
-    "rootIds": [
-      "R-F"
-    ],
-    "ipa": "/fǝn/",
-    "ipaSource": "root-derived",
-    "translations": {
-      "tr": "TUTANAK",
-      "ar": "حقيقة"
-    },
-    "literalMeaningSource": "translations.tr (yuksek)"
-  },
-  {
     "id": "L-VERIFIED-02243",
     "form": "фыкъеблагъэ",
     "literalMeaning": "",
@@ -307598,30 +306421,6 @@
     }
   },
   {
-    "id": "L-PROMPT-00026",
-    "form": "лажьакӀуэ",
-    "literalMeaning": "işçi",
-    "ipa": "/laːʑaːk'wa/",
-    "conceptId": "WORKER",
-    "partOfSpeech": "noun",
-    "notes": "PROMPT entegrasyonu (genel)",
-    "corpusFrequency": 0,
-    "rootIds": [
-      "R-LAZH"
-    ],
-    "wordFamilyId": null,
-    "derivation": null,
-    "dialectVariants": {
-      "adyghe": "лажьакIуэ",
-      "kabardian": "лажьакIуэ"
-    },
-    "isLemma": true,
-    "translations": {
-      "tr": "işçi"
-    },
-    "translationSource": "literalMeaning-derived"
-  },
-  {
     "id": "L-PROMPT-00029",
     "form": "Ӏэзэ",
     "literalMeaning": "hekim",
@@ -307826,37 +306625,6 @@
       "en": "warrior, fighter, soldier",
       "ru": "воин, боец, солдат",
       "ar": "مُحارب"
-    }
-  },
-  {
-    "id": "L-PROMPT-00036",
-    "form": "унэӀут",
-    "literalMeaning": "kahya",
-    "ipa": "/wǝnɐ'ʔʷǝt/",
-    "conceptId": "HOUSE_SERVANT",
-    "partOfSpeech": "noun",
-    "notes": "PROMPT entegrasyonu (genel)",
-    "corpusFrequency": 0,
-    "rootIds": [
-      "R-UNE"
-    ],
-    "wordFamilyId": null,
-    "derivation": null,
-    "dialectVariants": {
-      "adyghe": "унэIут",
-      "kabardian": "унэIут"
-    },
-    "examples": [
-      "Си анэжьыр зиусхьэнхэм унэӀуту къахуэнат."
-    ],
-    "isLemma": true,
-    "subConceptId": "DOMESTIC_WORKER",
-    "taxonomyFamily": "Toplum & Meslek",
-    "translations": {
-      "en": "lackey, serf, bondman, slave",
-      "ru": "холоп",
-      "tr": "hizmetçi",
-      "ar": "البواب، الخادم/ العبد في الترتيب الاجتماعي الأدِغي"
     }
   },
   {
@@ -308093,48 +306861,6 @@
       "ru": "отверстие в ярме для занозы"
     },
     "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/c/ca/%D0%91593%D0%B1%D0%B6%D1%8C%D1%8B%D0%BD%D1%8D.ogg"
-  },
-  {
-    "id": "L-PROMPT-00051",
-    "form": "кӀэртӀоф",
-    "literalMeaning": "patates",
-    "ipa": "/tʹʂɐr'tʹo:f/",
-    "conceptId": "POTATO",
-    "partOfSpeech": "noun",
-    "notes": "PROMPT entegrasyonu (genel) | Kaynak: sukunov-1998",
-    "corpusFrequency": 0,
-    "rootIds": [
-      "R-1E"
-    ],
-    "wordFamilyId": "WF-1E",
-    "derivation": {
-      "rootIds": [
-        "R-1E"
-      ],
-      "morphemeIds": [],
-      "rule": "compound"
-    },
-    "dialectVariants": {
-      "adyghe": "кIэртIоф",
-      "kabardian": "кIэртIоф"
-    },
-    "isLemma": true,
-    "translations": {
-      "en": "potato, spud",
-      "ru": "картофель, картошка",
-      "tr": "patates",
-      "ar": "بطاطس"
-    },
-    "dictionaryEvidence": [
-      "sukunov-1998"
-    ],
-    "examples": [
-      "Зэреджэ тхылъхэм къраха щапхъэхэр",
-      "{| class=\"wikitable\"",
-      "! Адыгэбзэ, Гугъуэт Л. Т., Зэхъуэхъу Л. Хь,  !!  «Эльбрус» тхылъ тедзапӀэ, Налшык, 1984''' !! нап. 36",
-      "! адыгэбзэ !! урысыбзэ/русский  !! инджылыбзэ/English",
-      "| Мызэрэ Жанрэ кӀэртӀоф хасащ. || Мыза и Жан посадили картошку.|| Myza and Zhan have planted some potatoes."
-    ]
   },
   {
     "id": "L-PROMPT-00053",
@@ -350352,44 +349078,6 @@
       "en": "nepereh. ch. to converse with one another",
       "tr": "SAÇMALAMA"
     }
-  },
-  {
-    "id": "L-KBD-01423",
-    "form": "захуагъэ",
-    "literalMeaning": "ADALET",
-    "partOfSpeech": "",
-    "conceptId": "JUSTICE",
-    "examples": [
-      "Захуагъэр мафӀэми исыркъыркъым псыми ихьыркъым. (погов. ) ГъэпщылӀакӀуэхэм къаӀэщӀэкӀыну щебэнми цӀыхубэм лӀыгъэр зэикӀ фӀэкӀуэдакъым, захуагъэр зэрытекӀуэнум зэикӀ шэч къытрихьакъым. Ӏуащхь."
-    ],
-    "notes": "KBD sozluk: 1.Ady-Ady_AP.json | Orijinal: захуагъэ(э)",
-    "corpusFrequency": 0,
-    "rootIds": [
-      "R-UESHCH"
-    ],
-    "wordFamilyId": "WF-UESHCH",
-    "derivation": {
-      "rootIds": [
-        "R-UESHCH"
-      ],
-      "morphemeIds": [],
-      "rule": "compound"
-    },
-    "dialectVariants": {
-      "adyghe": "",
-      "kabardian": "захуагъэ(э)"
-    },
-    "isLemma": false,
-    "translations": {
-      "trSource": "8.Ady-Tur_Huvaj.json",
-      "trVerified": false,
-      "en": "smoothness, flatness, evenness, innocence",
-      "ru": "гладкость, ровность, невиновность",
-      "tr": "ADALET",
-      "ar": "عدالة"
-    },
-    "ipa": "/zɐ'xʷɑ:ʁɐ/",
-    "literalMeaningSource": "translations.tr (yuksek)"
   },
   {
     "id": "L-KBD-01424",
@@ -411819,45 +410507,6 @@
       "tr": "obsolete. cm."
     },
     "ipa": "/ˈpɑ:ɬɐ/"
-  },
-  {
-    "id": "L-KBD-03789",
-    "form": "папщӀэ",
-    "literalMeaning": "icin",
-    "partOfSpeech": "",
-    "examples": [
-      "А зэманым урыс культурэм пыщӀа хъун папщӀэ, бгырысхэм я дежкӀэ хэкӀыпӀэ нэхъыщхьэу щытар урысыдзэм къулыкъу щыщӀэнырт . Н. Ш. II послелог для, ради кого",
-      "{ Чачэ Нахъуэ жриӀэу:}"
-    ],
-    "notes": "KBD sozluk: 1.Ady-Ady_AP.json | Orijinal: папщӀэ(кӀэ)",
-    "corpusFrequency": 0,
-    "rootIds": [
-      "R-1E"
-    ],
-    "wordFamilyId": "WF-1E",
-    "derivation": {
-      "rootIds": [
-        "R-1E"
-      ],
-      "morphemeIds": [],
-      "rule": "compound"
-    },
-    "dialectVariants": {
-      "adyghe": "",
-      "kabardian": "папщӀэ(кӀэ)"
-    },
-    "isLemma": false,
-    "translations": {
-      "trSource": "en->tr koprusu (orta)",
-      "trVerified": false,
-      "en": "to, in order to, so that",
-      "ru": "чтобы, дабы, для того чтобы",
-      "tr": "icin",
-      "ar": "لأجل"
-    },
-    "ipa": "/'pɑ:pʹɕʹɐ/",
-    "conceptId": "IÇIN",
-    "literalMeaningSource": "translations.ru->tr (orta)"
   },
   {
     "id": "L-KBD-03790",
