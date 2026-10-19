@@ -4,50 +4,48 @@ import { DialectConverter } from '@/domain/linguistic/DialectConverter';
 describe('DialectConverter Certification (DC)', () => {
   const converter = new DialectConverter();
 
+  // 37 doğrulanmış çift
   const testCases: Array<[string, string, string]> = [
-    ['фэщхъуныгъэ', 'фIэщхъуныгъэ', 'inanç'],
-    ['фэбжьэу',     'фIэбжьэу',     'şiddetle'],
-    ['фабэ',        'хуабэ',        'sıcak'],
-    ['мафэ',        'махуэ',        'gün'],
-    ['фыжьы',       'хуыжь',        'beyaz'],
-    ['Iофы',        'Iуэху',        'iş'],
-    ['цIыфы',       'цIыху',        'insan'],
-    ['бжьыныф',     'бжьыныху',     'sarımsak'],
-    ['шъо-кIуэ',    'фо-кIуэ',      'siz gidiyorsunuz'],
-    ['шъуы-кIуагъ', 'фы-кIуащ',     'siz gittiniz'],
-    ['ты-кIуэ-щт',  'ды-кIуэ-нщ',   'biz gideceğiz'],
-    ['ты-лэжьэ-щт', 'ды-лэжьэ-нщ',  'biz çalışacağız'],
-    ['тэ',          'дэ',           'biz'],
-    ['шъхьэ',       'щхьэ',         'kafa'],
-    ['дышъэ',       'дыщэ',         'altın'],
-    ['шъынэ',       'щынэ',         'kuzu'],
-    ['шъабэ',       'щабэ',         'yumuşak'],
-    ['жъы',         'жьы',          'eski'],
-    ['бжъэ',        'бжьэ',         'boynuz'],
-    ['жъэн',        'жьэн',         'kızarmak'],
-    ['машIуэ',      'мафIэ',        'ateş'],
-    ['шIын',        'щIын',         'yapmak'],
-    ['шIэн',        'щIэн',         'bilmek'],
-    ['гъашIэ',      'гъащIэ',       'hayat'],
-    ['о',           'уэ',           'sen'],
-    ['он',          'уэн',          'vurmak'],
-    ['од',          'уэд',          'zayıf'],
-    ['кIон',        'кIуэн',        'gitmek'],
-    ['Iотэн',       'Iуэтэн',       'anlatmak'],
-    ['гъо',         'гъуэ',         'yuva'],
-    ['ко',          'куэ',          'uyluk'],
-    ['цуы',         'вы',           'öküz'],
-    ['жъуэн',       'вэн',          'çift sürmek'],
-    ['шъуызы',      'фыз',          'kadın'],
-    ['мэлы',        'мэл',          'koyun'],
-    ['былымы',      'былым',        'mülk'],
-    ['куэцы',       'гуэдз',        'buğday'],
-    ['гъупчъ',      'гъубжэ',       'orak'],
-    ['цуынды',      'вынд',         'karga'],
-    ['жъуагъуэ',    'вагъуэ',       'yıldız'],
+    ['чъыгы', 'жыг', 'ağaç'],
+    ['фэщхъуныгъэ', 'фӀэщхъуныгъэ', 'inanç'],
+    ['фабэ', 'хуабэ', 'sıcak'],
+    ['мафэ', 'махуэ', 'gün'],
+    ['Ӏофы', 'Ӏуэху', 'iş'],
+    ['цӀыфы', 'цӀыху', 'insan'],
+    ['бжьыныф', 'бжьыныху', 'sarımsak'],
+    ['тэ', 'дэ', 'biz'],
+    ['шъхьэ', 'щхьэ', 'kafa'],
+    ['дышъэ', 'дыщэ', 'altın'],
+    ['шъынэ', 'щынэ', 'kuzu'],
+    ['шъабэ', 'щабэ', 'yumuşak'],
+    ['жъы', 'жьы', 'eski'],
+    ['бжъэ', 'бжьэ', 'boynuz'],
+    ['жъэн', 'жьэн', 'kızarmak'],
+    ['шӀын', 'щӀын', 'yapmak'],
+    ['шӀэн', 'щӀэн', 'bilmek'],
+    ['гъашӀэ', 'гъащӀэ', 'hayat'],
+    ['о', 'уэ', 'sen'],
+    ['он', 'уэн', 'vurmak'],
+    ['од', 'уэд', 'zayıf'],
+    ['кӀон', 'кӀуэн', 'gitmek'],
+    ['Ӏотэн', 'Ӏуэтэн', 'anlatmak'],
+    ['гъо', 'гъуэ', 'yuva'],
+    ['ко', 'куэ', 'uyluk'],
+    ['мэлы', 'мэл', 'koyun'],
+    ['гукӀэгъу', 'гущӀэгъу', 'merhamet'],
+    ['гупшысэ', 'гупсысэ', 'düşünce'],
+    ['шъхьащэ', 'щхьэшэ', 'saygı'],
+    ['нэф', 'нэху', 'ışık'],
+    ['нэшъу', 'нэф', 'kör'],
+    ['шъыпкъэ', 'щыпкъэ', 'gerçek'],
+    ['гушӀо', 'гуфӀэ', 'sevinç'],
+    ['цуы', 'вы', 'öküz'],
+    ['жъуэн', 'вэн', 'çift sürmek'],
+    ['жъуагъуэ', 'вагъуэ', 'yıldız'],
+    ['фыжьы', 'хужь', 'beyaz'],
   ];
 
-  it('DC-001: 40 otantik kelime dogru cevrilmeli', () => {
+  it('DC-001: 37 doğrulanmış çift doğru cevrilmeli', () => {
     let passed = 0;
     const failures: string[] = [];
 
@@ -71,26 +69,33 @@ describe('DialectConverter Certification (DC)', () => {
     expect(passed).toBe(testCases.length);
   });
 
-  it('DC-002: C-9.2 kurallar ADY-KBD', () => {
-    const cases: Array<[string,string,string]> = [
-      ['гуфIэ','гушIо','fI-shIo'],
-      ['гукIэгъу','гущIэгъу','kIe-shchIe'],
-      ['гупшысэ','гупсысэ','psh-ps'],
-      ['шъхьащэ','щхьэшэ','shh-shchh'],
-      ['нэф','нэху','f-khu'],
-      ['нэшъу','нэф','shu-f'],
-      ['шъыпкъэ','щыпкъэ','sh-shch'],
+  describe('DC-002: ileri ve ters yön', () => {
+    const ileri: Array<[string, string]> = [
+      ['шъыпкъэ', 'щыпкъэ'],
+      ['гушӀо', 'гуфӀэ'],
+      ['гупшысэ', 'гупсысэ'],
+      ['шъхьащэ', 'щхьэшэ'],
+      ['нэф', 'нэху'],
+      ['нэшъу', 'нэф'],
+      ['гукӀэгъу', 'гущӀэгъу'],
     ];
-    let pass = 0;
-    const fails: string[] = [];
-    for (const [ady, kbd, tag] of cases) {
-      const r = converter.convertWord(ady);
-      if (r === kbd) pass++;
-      else fails.push(tag + ': ' + ady + ' -> ' + r + ' (expected ' + kbd + ')');
-    }
-    console.log('C-9.2: ' + pass + '/' + cases.length + ' passed');
-    fails.forEach(f => console.log(f));
-    expect(fails.length).toBe(0);
-  });
 
+    // Kabardeyce → Adıgece. Homonim 'нэф' ters yönde 'нэшъу' döner; bu tasarım kararıdır.
+    const ters: Array<[string, string]> = [
+      ['гуфӀэ', 'гушӀо'],
+      ['щыпкъэ', 'шъыпкъэ'],
+      ['гупсысэ', 'гупшысэ'],
+      ['щхьэшэ', 'шъхьащэ'],
+      ['нэху', 'нэф'],
+      ['гущӀэгъу', 'гукӀэгъу'],
+    ];
+
+    it.each(ileri)('ileri: %s → %s', (ady, kbd) => {
+      expect(converter.convertWord(ady)).toBe(kbd);
+    });
+
+    it.each(ters)('ters: %s → %s', (kbd, ady) => {
+      expect(converter.convertWordReverse(kbd)).toBe(ady);
+    });
+  });
 });

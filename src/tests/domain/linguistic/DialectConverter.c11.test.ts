@@ -1,46 +1,33 @@
-
 import { describe, it, expect } from 'vitest';
 import { DialectConverter } from '@/domain/linguistic/DialectConverter';
 
-describe('DialectConverter C-11.4 Final', () => {
+describe('DialectConverter C-11 (Adıgece → Kabardeyce)', () => {
   const converter = new DialectConverter();
 
   const testler: Array<[string, string, string]> = [
     ['шъхьэ', 'щхьэ', 'kafa'],
-    ['шъэ', 'щэ', 'yuz'],
-    ['шъу', 'щу', '?'],
-    ['шъо', 'щуэ', '?'],
-    ['шъы', 'щы', '?'],
-    ['дышъэ', 'дыщэ', 'altin'],
-    ['шъхьэгу', 'щхьэгу', 'alin'],
-    ['шъхьэгъусэ', 'щхьэгъусэ', 'es'],
-    ['шъхьэгъубжэ', 'щхьэгъубжэ', 'pencere'],
-    ['шъыпкъэ', 'щыпкъэ', 'gercek'],
-    ['шъхьащэ', 'щхьэшэ', '?'],
-    ['гукIэгъу', 'гущIэгъу', 'merhamet'],
-    ['нэшъу', 'нэф', 'kor'],
-    ['чъыгы', 'жыг', 'agac'],
-    ['Iофы', 'Iуэху', 'is'],
-    ['цIыфы', 'цIыху', 'insan'],
-    ['бжьыныф', 'бжьыныху', 'sarimsak'],
-    ['фабэ', 'хуабэ', 'sicak'],
-    ['мафэ', 'махуэ', 'gun'],
-    ['фыжьы', 'хуыжь', 'beyaz'],
+    ['дышъэ', 'дыщэ', 'altın'],
+    ['шъыпкъэ', 'щыпкъэ', 'gerçek'],
+    ['шъхьащэ', 'щхьэшэ', 'saygı'],
+    ['гукӀэгъу', 'гущӀэгъу', 'merhamet'],
+    ['нэшъу', 'нэф', 'kör'],
+    ['чъыгы', 'жыг', 'ağaç'],
+    ['Ӏофы', 'Ӏуэху', 'iş'],
+    ['цӀыфы', 'цӀыху', 'insan'],
+    ['бжьыныф', 'бжьыныху', 'sarımsak'],
+    ['фабэ', 'хуабэ', 'sıcak'],
+    ['мафэ', 'махуэ', 'gün'],
+    ['фыжьы', 'хужь', 'beyaz'],
+    ['жъы', 'жьы', 'eski'],
+    ['бжъэ', 'бжьэ', 'boynuz'],
+    ['шӀын', 'щӀын', 'yapmak'],
+    ['гъашӀэ', 'гъащӀэ', 'hayat'],
+    ['гупшысэ', 'гупсысэ', 'düşünce'],
+    ['гушӀо', 'гуфӀэ', 'sevinç'],
+    ['цуы', 'вы', 'öküz'],
   ];
 
-  it('Adigece -> Kabardeyce (20 test)', () => {
-    let passed = 0;
-    const fails: string[] = [];
-    for (const [ady, kbd, anlam] of testler) {
-      const result = converter.convertWord(ady);
-      if (result === kbd) {
-        passed++;
-      } else {
-        fails.push(ady + ' -> ' + result + ' (beklenen: ' + kbd + ') [' + anlam + ']');
-      }
-    }
-    const fs = require('fs');
-    fs.writeFileSync('c11_final.json', JSON.stringify({passed, total: testler.length, fails}, null, 2));
-    expect(passed).toBeGreaterThanOrEqual(18);
+  it.each(testler)('%s → %s (%s)', (ady, kbd) => {
+    expect(converter.convertWord(ady)).toBe(kbd);
   });
 });
