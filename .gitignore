@@ -237,3 +237,27 @@ lexemes.json.bak_*
 *.broken_*
 *.snapshot_*
 *.working_*
+
+# Ek ignore
+_scripts/agents_degisiklik.patch
+_scripts/lexemes_HEAD_farki.patch
+_scripts/tr_ai_batches/
+_scripts/tr_gold_batches/
+public/data/linguistic/393-silinen.txt
+public/data/linguistic/590-kalan.txt
+public/data/linguistic/600-liste.txt
+public/data/linguistic/added-by-source.json
+public/data/linguistic/dialects.broken-backup.json
+public/data/linguistic/lexemes.before-*.json
+public/data/linguistic/lexemes.hatali_son.json
+public/data/linguistic/ornek-50.json
+public/data/linguistic/qc-*.json
+public/data/linguistic/review-en.json
+public/data/linguistic/taxonomy.json
+public/data/linguistic/word_families.before_A4.json
+public/data/linguistic/word_families_merged.json
+public/data/linguistic/yasakli-en.json
+mafe-sonuc.json
+old.json
+vitest-result.json
+sayfa201.png
