@@ -17,3 +17,4 @@ for dosya in ["public/data/linguistic/lexemes.json", "_yedek/linguistic/lexemes-
     print(f"  DOLU: {len(dolu)}")
     print(f"  BOS: {len(bos)}")
 
+
