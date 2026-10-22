@@ -141,6 +141,7 @@ dialect_*.json
 morph_*.json
 !c11_*.final.json
 
+!dialect_pairs.json
 # Telif hakki korumali PDF'ler (link ile referans verilir)
 public/data/*.pdf
 docs/**/*.pdf
@@ -223,3 +224,4 @@ _ts_parser*.json
 _ts_v3_sonuc.json
 _ts_v4_sonuc.json
 _ts_v5_sonuc.json
+.vercel
