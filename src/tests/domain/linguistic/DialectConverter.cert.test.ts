@@ -4,7 +4,7 @@ import { DialectConverter } from '@/domain/linguistic/DialectConverter';
 describe('DialectConverter Certification (DC)', () => {
   const converter = new DialectConverter();
 
-  // 37 doğrulanmış çift
+  // doğrulanmış çift
   const testCases: Array<[string, string, string]> = [
     ['чъыгы', 'жыг', 'ağaç'],
     ['фэщхъуныгъэ', 'фӀэщхъуныгъэ', 'inanç'],
@@ -43,9 +43,10 @@ describe('DialectConverter Certification (DC)', () => {
     ['жъуэн', 'вэн', 'çift sürmek'],
     ['жъуагъуэ', 'вагъуэ', 'yıldız'],
     ['фыжьы', 'хужь', 'beyaz'],
+    ['машӀо', 'мафӀэ', 'ateş'],
   ];
 
-  it('DC-001: 37 doğrulanmış çift doğru cevrilmeli', () => {
+  it(`DC-001: ${testCases.length} doğrulanmış çift doğru cevrilmeli`, () => {
     let passed = 0;
     const failures: string[] = [];
 
