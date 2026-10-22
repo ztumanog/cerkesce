@@ -225,3 +225,15 @@ _ts_v3_sonuc.json
 _ts_v4_sonuc.json
 _ts_v5_sonuc.json
 .vercel
+
+# Gecici/analiz dosyalari
+_*.json
+_*.txt
+_backups/
+_raporlar/
+_yedek/
+backups/
+lexemes.json.bak_*
+*.broken_*
+*.snapshot_*
+*.working_*
