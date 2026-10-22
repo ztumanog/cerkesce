@@ -61,21 +61,18 @@
       "M-PSE",
       "M-GU"
     ],
-    "lexemeIds": [
-      "L-NAPS",
-      "L-NEGU",
-      "L-NAF"
-    ],
+    "lexemeIds": [],
     "productivity": {
-      "totalLexemes": 25,
-      "corpusFrequency": 21883
+      "totalLexemes": 0,
+      "corpusFrequency": 0
     },
-    "notes": "Duyu organi koku. нэ + гу = yuz, нэ + псэ = gozyasi",
+    "notes": "WF-NE 679 kayıttan 6 alt aileye dağıtıldı (2026-10-19). Bu aile artık kullanılmıyor. Alt aileler: WF-NE-CORE, VISION, LIGHT, EXPRESSION, ANATOMY, DIGER.",
     "category": "body",
     "subcategory": "head-face",
     "semanticDomains": [
       "perception"
-    ]
+    ],
+    "deprecated": true
   },
   {
     "id": "WF-PSY",
@@ -939,5 +936,121 @@
       "kabardian": "лажьэ"
     },
     "notes": "C-11.3 yeni aile. Kusur/keder/suc. 11 deyim. Homonim: WF-LEZH (calismak) ile karistirilmamali."
+  },
+  {
+    "id": "WF-NE-CORE",
+    "rootId": "R-NE",
+    "category": "body",
+    "subcategory": "head-face",
+    "notes": "нэ (göz) çekirdek: göz, yüz, gözyaşı",
+    "semanticDomains": [
+      "perception",
+      "anatomy"
+    ],
+    "morphemeIds": [
+      "M-PSE",
+      "M-GU"
+    ],
+    "lexemeIds": [],
+    "productivity": {
+      "totalLexemes": 0,
+      "corpusFrequency": 0
+    }
+  },
+  {
+    "id": "WF-NE-VISION",
+    "rootId": "R-NE",
+    "category": "body",
+    "subcategory": "perception",
+    "notes": "нэ görme/görünürlük",
+    "semanticDomains": [
+      "perception"
+    ],
+    "morphemeIds": [
+      "M-PSE",
+      "M-GU"
+    ],
+    "lexemeIds": [],
+    "productivity": {
+      "totalLexemes": 0,
+      "corpusFrequency": 0
+    }
+  },
+  {
+    "id": "WF-NE-LIGHT",
+    "rootId": "R-NE",
+    "category": "nature",
+    "subcategory": "light",
+    "notes": "нэф/нэху ışık, aydınlık",
+    "semanticDomains": [
+      "light"
+    ],
+    "morphemeIds": [
+      "M-PSE",
+      "M-GU"
+    ],
+    "lexemeIds": [],
+    "productivity": {
+      "totalLexemes": 0,
+      "corpusFrequency": 0
+    }
+  },
+  {
+    "id": "WF-NE-EXPRESSION",
+    "rootId": "R-NE",
+    "category": "body",
+    "subcategory": "face-expression",
+    "notes": "нэ yüz ifadesi, duygu",
+    "semanticDomains": [
+      "emotion",
+      "expression"
+    ],
+    "morphemeIds": [
+      "M-PSE",
+      "M-GU"
+    ],
+    "lexemeIds": [],
+    "productivity": {
+      "totalLexemes": 0,
+      "corpusFrequency": 0
+    }
+  },
+  {
+    "id": "WF-NE-ANATOMY",
+    "rootId": "R-NE",
+    "category": "body",
+    "subcategory": "head-face",
+    "notes": "нэ anatomik yapılar: göz kapağı, göz küresi",
+    "semanticDomains": [
+      "anatomy"
+    ],
+    "morphemeIds": [
+      "M-PSE",
+      "M-GU"
+    ],
+    "lexemeIds": [],
+    "productivity": {
+      "totalLexemes": 0,
+      "corpusFrequency": 0
+    }
+  },
+  {
+    "id": "WF-NE-DIGER",
+    "rootId": "R-NE",
+    "category": "grammar",
+    "subcategory": "function",
+    "notes": "нэхъ, нэс, нэужь — gramer, göz değil",
+    "semanticDomains": [
+      "grammar"
+    ],
+    "morphemeIds": [
+      "M-PSE",
+      "M-GU"
+    ],
+    "lexemeIds": [],
+    "productivity": {
+      "totalLexemes": 0,
+      "corpusFrequency": 0
+    }
   }
 ]
