@@ -172,7 +172,7 @@ ACTIVE
 
 ==================================================
 
-PHASE 4 MISSION
+Phase 4 MISSION
 
 1. Documentation Consolidation
 

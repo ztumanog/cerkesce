@@ -1,4 +1,4 @@
-clec# PHASE 5 — COMPLETION REPORT
+clec# Phase 5 — COMPLETION REPORT
 
 **Tarih:** 2026-10-01
 **Faz:** 5 — Discovery Engine
@@ -7,9 +7,9 @@ clec# PHASE 5 — COMPLETION REPORT
 
 ---
 
-## 1. OZET
+### 1. OZET
 
-Faz 5 (Discovery Engine) tamamlandi.
+Faz 5 (Discovery Engine) tamamlandı.
 4 sprint teslim edildi, 276/276 test PASS.
 
 ---
@@ -37,13 +37,13 @@ Faz 5 (Discovery Engine) tamamlandi.
 - `src/domain/discovery/dto/CorpusExplorerDTO.ts`
 - `src/domain/discovery/services/CorpusExplorerService.ts`
 - `src/tests/domain/discovery/CorpusExplorerService.test.ts`
-- UI: KelimeDetayDrawer — "X anlam, Y dil, Z sozluk"
+- UI: KelimeDetayDrawer — "X anlam, Y dil, Z sözlük"
 
 ---
 
-## 4. TEST SONUCLARI
+## 4. TEST SONUÇLARı
 
-| Metrik | Deger |
+| Metrik | Değer |
 |--------|-------|
 | Test Files | 81 passed |
 | Tests | 276 passed |
@@ -51,7 +51,7 @@ Faz 5 (Discovery Engine) tamamlandi.
 | Runner | Vitest |
 
 **Not:** Onceki rapor (2026-09-29) 231 test gosteriyordu. O tarihten sonra
-C-11.4 ve diger calismalarla 276'ya cikti.
+C-11.4 ve diger çalışmalarla 276'ya cikti.
 
 ---
 

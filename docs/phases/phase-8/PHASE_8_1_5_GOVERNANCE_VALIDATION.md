@@ -1,4 +1,4 @@
-﻿# PHASE 8.1.5 — GOVERNANCE VALIDATION REPORT
+# PHASE 8.1.5 — GOVERNANCE VALIDATION REPORT
 
 **Faz:** 8.1.5
 **Tarih:** 2026-10-02
@@ -9,7 +9,7 @@
 
 ## 1. AMAC
 
-Phase 8.1 boyunca yapilan degisikliklerin (Environment, Secret,
+Phase 8.1 boyunca yapılan değişikliklerin (Environment, Secret,
 Error Tracking, Monitoring) governance kurallarina uygunlugunu
 dogrulamak.
 
@@ -23,7 +23,7 @@ runtime karar URETMEZ. Sadece Runtime karar verir.
 | Katman | Gorev | Runtime Karar? | Durum |
 |--------|-------|----------------|-------|
 | Morphology | Uretir | Hayir | ✅ |
-| Phrase | Yapilandirir | Hayir | ✅ |
+| Phrase | Yapılandirir | Hayir | ✅ |
 | Syntax | Analiz eder | Hayir | ✅ |
 | Analytics | Raporlar | Hayir | ✅ |
 | Discovery | Kesfeder | Hayir | ✅ |
@@ -34,13 +34,13 @@ import ETMIYOR (taramada bos cikti).
 
 **Referans:** ADR-GOV-010 (Runtime Decision Authority)
 
-**Sonuc:** PASS
+**Sonuç:** PASS
 
 ---
 
 ## 3. ADR KATALOGU SENKRONIZASYONU
 
-| Metrik | Deger |
+| Metrik | Değer |
 |--------|-------|
 | Toplam ADR dosyasi | 36+ |
 | ADR-GOV kayitlari | 10 (001-010) |
@@ -55,7 +55,7 @@ import ETMIYOR (taramada bos cikti).
 - ADR-GOV-010 (Runtime Decision Authority)
 - ADR-P7-001 (Phase 7 Completion Approval)
 
-**Sonuc:** PASS
+**Sonuç:** PASS
 
 ---
 
@@ -67,7 +67,7 @@ import ETMIYOR (taramada bos cikti).
 | Cert | vitest.cert.config.ts | 87 | 25 |
 | **TOPLAM** | — | **746** | **123** |
 
-**Sonuc:** PASS
+**Sonuç:** PASS
 
 ---
 
@@ -81,7 +81,7 @@ import ETMIYOR (taramada bos cikti).
 
 **Referans:** ADR-GOV-003, ADR-GOV-005
 
-**Sonuc:** PASS
+**Sonuç:** PASS
 
 ---
 
@@ -97,9 +97,9 @@ import ETMIYOR (taramada bos cikti).
 
 ---
 
-## 7. SONUC
+## 7. SONUÇ
 
-**Phase 8.1 (Production Readiness) TAMAMLANDI.**
+**Phase 8.1 (Production Readiness) TAMAMLANDı.**
 
 Tum governance kurallarina uygunluk dogrulandi.
 

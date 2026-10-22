@@ -1,6 +1,6 @@
-﻿# DECISIONS - Karar Kayitlari
+# DECISIONS - Karar Kayitlari
 
-**Son Guncelleme:** 2026-10-02
+**Son Güncelleme:** 2026-10-02
 **Durum:** Faz 7 DEVAM EDIYOR
 
 ---
@@ -23,7 +23,7 @@ Faz 2 resmi olarak KAPANDI.
 - Android Build PASS
 - GitHub Release v1.0.0-stable
 
-**Sonuc:** Faz 2 CLOSED
+**Sonuç:** Faz 2 CLOSED
 
 ---
 
@@ -87,15 +87,15 @@ Faz 2 resmi olarak KAPANDI.
 **Kategori:** Governance
 
 **Karar:**
-Phase 2 (Translation Platform) resmi olarak CLOSED kabul edilmiÅŸtir.
+Phase 2 (Translation Platform) resmi olarak CLOSED kabul edilmiştir.
 
-**KanÄ±tlar:**
+**Kanıtlar:**
 - ADR-0004, ADR-0005, ADR-0006, ADR-0007, ADR-P2-013
 - PHASE_2_COMPLETION_REPORT.md
 - Main: 653/653 PASS
 - Cert: 87/87 PASS
 
-**Sonraki aktif calisma:** Phase 8 Production & Operations
+**Sonraki aktif çalışma:** Phase 8 Production & Operations
 
 **Referans:** docs/architecture/adr/ADR-GOV-006-PHASE_2_CLOSURE_DECISION.md
 ...
@@ -109,7 +109,7 @@ Phase 2 (Translation Platform) resmi olarak CLOSED kabul edilmiÅŸtir.
 **Kategori:** Governance
 
 **Karar:**
-Phase 7 (Analytics & Export) resmi olarak COMPLETED kabul edilmiÅŸtir.
+Phase 7 (Analytics & Export) resmi olarak COMPLETED kabul edilmiştir.
 
 **Kanitlar:**
 - 10 Faz 7 test dosyasi
@@ -131,7 +131,7 @@ Phase 7 (Analytics & Export) resmi olarak COMPLETED kabul edilmiÅŸtir.
 **Faz:** 8.1
 
 **Karar:**
-Phase 8.1 (Production Readiness) kapsaminda asagidaki alanlar ele alinacak:
+Phase 8.1 (Production Readiness) kapsaminda aşağıdaki alanlar ele alinacak:
 
 1. Environment Separation
 2. Secret Management

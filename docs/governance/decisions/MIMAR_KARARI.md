@@ -2,7 +2,7 @@
 
 **Tarih:** 2026-09-24
 **Karar Veren:** Mimar
-**Durum:** FAZ 2 CLOSED
+**Durum:** Faz 2 CLOSED
 
 ---
 
@@ -13,7 +13,7 @@
 | Faz 1 | CLOSED |
 | Faz 2 | CLOSED |
 | Faz 3 | COMPLETE |
-| Faz 4 | Sprintleri Tamamlandi |
+| Faz 4 | Sprintleri Tamamlandı |
 | Product Stage | AKTIF |
 | Faz 5 | LOCKED (Charter PROPOSED) |
 
@@ -56,9 +56,9 @@
 - docs/ADR-P5-001-FAZ5_CHARTER.md: Faz 5 Charter (PROPOSED)
 - docs/ADR-P5-001-REVIZE.md: Revize (PROPOSED)
 - MIMAR_KARARI.md: v9 FINAL (bu dosya)
-- MIMAR_KARARI_ARCHIVE_2026-09-24.md: Eski surumler (arsiv)
+- MIMAR_KARARI_ARCHIVE_2026-09-24.md: Eski sürümler (arsiv)
 - PRODUCT_STAGE_OBSERVATION.md: Gozlem plani
-- FAZ4_KAPANIS_RAPORU.md: Faz 4 kapanis
+- FAZ4_KAPANIS_RAPORU.md: Faz 4 kapanış
 
 ---
 
@@ -82,13 +82,13 @@ Product Stage ACTIVE.
 
 Faz 5 LOCKED (Charter PROPOSED).
 
-Bir sonraki odak alani yeni mimari gelistirme degil, urunun gercek kullanim davranislarinin izlenmesidir.
+Bir sonraki odak alani yeni mimari gelistirme değil, urunun gercek kullanim davranislarinin izlenmesidir.
 
 ---
 
 ## MIMARIN SON SOZU
 
-> Su asamada en degerli bilgi yeni kod degil, gercek kullanim deneyimi olacak. Cunku ilk defa proje deneysel sistem degil, kullanilabilir urun gorunumunde. Bu cok onemli bir esik.
+> Su aşamada en değerli bilgi yeni kod değil, gercek kullanim deneyimi olacak. Cunku ilk defa proje deneysel sistem değil, kullanilabilir urun gorunumunde. Bu cok onemli bir esik.
 
 ---
 

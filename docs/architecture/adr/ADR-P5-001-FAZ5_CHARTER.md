@@ -3,7 +3,7 @@
 **Tarih:** 2026-09-24
 **Durum:** PROPOSED
 **Faz:** 5
-**On Kosul:** Faz 2 CLOSED, Faz 4 Sprintler Tamamlandi
+**On Kosul:** Faz 2 CLOSED, Faz 4 Sprintler Tamamlandı
 **Karar Sahibi:** Mimar
 
 ---
@@ -12,7 +12,7 @@
 
 Faz 5'in amaci:
 
-- Kelimeyi bulmak degil
+- Kelimeyi bulmak değil
 - Kelimeyi anlamak
 - Veriyi analiz etmek
 - Kullanim davranisini olcmek
@@ -27,7 +27,7 @@ Faz 5'in amaci:
 
 **Ornek Ciktilar:**
 - En sik gecen kelimeler
-- En buyuk sozlukler
+- En buyuk sözlükler
 - Dil dagilimi
 - Lehce dagilimi
 - Kaynak yogunlugu
@@ -36,11 +36,11 @@ Faz 5'in amaci:
 
 ### P5-002 Search Analytics
 
-**Amac:** Kullanici davranisini anlamak
+**Amac:** Kullanıcı davranisini anlamak
 
 **Ornek Ciktilar:**
 - En cok aranan kelimeler
-- Sonucsuz sorgular
+- Sonuçsuz sorgular
 - En cok kullanilan filtreler
 - En cok acilan kaynaklar
 
@@ -58,7 +58,7 @@ Faz 5'in amaci:
 ### P5-004 Corpus Explorer
 
 **Amac:** Bir kelimenin:
-- Hangi sozluklerde gectigi
+- Hangi sözlüklerde gectigi
 - Kac farkli anlam tasidigi
 - Hangi dillerde bulundugu
 
@@ -66,7 +66,7 @@ sorusunu cevaplamak.
 
 ---
 
-## Faz 5'te Yapilmayacaklar
+## Faz 5'te Yapılmayacaklar
 
 - Embedding Engine
 - Semantic Vector Search
@@ -95,13 +95,13 @@ sorusunu cevaplamak.
 
 #### Arama
 - En cok aranan kelimeler
-- Sonucsuz sorgular
+- Sonuçsuz sorgular
 - Filtre kullanim oranlari
 
 #### Drawer
 - En cok acilan kaynaklar
-- En cok goruntulenen icerikler
-- En uzun okunan icerikler
+- En cok goruntulenen içerikler
+- En uzun okunan içerikler
 
 #### Gunun Kelimesi
 - Kaydetme orani
@@ -127,7 +127,7 @@ sorusunu cevaplamak.
 - sourceLanguage temizligi
 
 ### META-003: MULTI Stratejisi
-- Yeni cok dilli sozluk gelirse yeniden degerlendirilecek
+- Yeni cok dilli sözlük gelirse yeniden değerlendirilecek
 
 ### DRAWER-001: Ansiklopedik Marker Sunumu
 - Isaretler: ◊, /, I-II-III, 1-2-3
@@ -143,7 +143,7 @@ sorusunu cevaplamak.
 - Product Stage ACTIVE
 - Faz 5 Charter Hazir
 - Faz 5 Henuz Baslatilmadi
-- Faz 5 Tasarim Asamasinda
+- Faz 5 Tasarim Aşamasinda
 
 ---
 

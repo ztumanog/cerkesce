@@ -5,9 +5,9 @@
 
 ---
 
-## Faz C-5 Hedefleri ve Sonuclari
+## Faz C-5 Hedefleri ve Sonuçları
 
-| Metrik | Baslangic | Hedef | Sonuc | Durum |
+| Metrik | Baslangic | Hedef | Sonuç | Durum |
 |---|---|---|---|---|
 | Kok | 32 | 40+ | **40** | TAMAM |
 | Lexeme | 90 | 100+ | **126** | TAMAM |
@@ -86,7 +86,7 @@ R-PSY (10), R-PSE (9), R-NE (6), Diger (5)
 - [x] Runtime'a import YOK
 - [x] 220/220 PASS korundu
 
-**7/7 KRITER TAMAMLANDI**
+**7/7 KRITER TAMAMLANDı**
 
 ---
 

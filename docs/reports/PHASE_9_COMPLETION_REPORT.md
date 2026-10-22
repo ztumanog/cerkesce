@@ -9,7 +9,7 @@
 
 ## 1. YONETICI OZETI
 
-Faz 9 (Platform Intelligence) tamamen tamamlandi.
+Faz 9 (Platform Intelligence) tamamen tamamlandı.
 Platform artik olcen, tahmin eden ve oneren sistem haline geldi.
 
 ### Sprint Durumu
@@ -26,7 +26,7 @@ Platform artik olcen, tahmin eden ve oneren sistem haline geldi.
 
 ## 2. EKLENEN BILESENLER
 
-| Dosya | Icerik |
+| Dosya | Içerik |
 |-------|--------|
 | UsageIntelligenceService.ts | Kullanim analitigi |
 | CapacityForecastingService.ts | Kapasite tahmini |
@@ -36,9 +36,9 @@ Platform artik olcen, tahmin eden ve oneren sistem haline geldi.
 
 ---
 
-## 3. TEST SONUCLARI
+## 3. TEST SONUÇLARı
 
-| Test | Sonuc |
+| Test | Sonuç |
 |------|-------|
 | Phase9_1 Usage | 6/6 PASS |
 | Phase9_2 Capacity | 3/3 PASS |
@@ -49,7 +49,7 @@ Platform artik olcen, tahmin eden ve oneren sistem haline geldi.
 
 ---
 
-## 4. KAPANIS KRITERLERI
+## 4. KAPANıŞ KRITERLERI
 
 | Kriter | Durum |
 |--------|-------|
@@ -63,7 +63,7 @@ Platform artik olcen, tahmin eden ve oneren sistem haline geldi.
 
 ---
 
-## 5. SONUC
+## 5. SONUÇ
 
 Faz 9 (Platform Intelligence) teslimat hedefleri karsilanmistir.
 Platform artik:

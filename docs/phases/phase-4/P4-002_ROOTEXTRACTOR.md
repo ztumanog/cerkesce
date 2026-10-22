@@ -48,7 +48,7 @@ Cikti: {
 - [ ] шэ (mermi) -> R-SHE2
 - [ ] Bilinmeyen form -> null
 
-## Bagimliliklar
+## Bağımlıliklar
 - roots.json
 - morphemes.json
 - lexemes.json
@@ -56,5 +56,5 @@ Cikti: {
 
 ## Runtime Izolasyonu
 - Bu modul sadece veri uretir
-- Discovery Runtime'a baglanmaz
+- Discovery Runtime'a bağlanmaz
 - ADR-ROOT-001 korunur

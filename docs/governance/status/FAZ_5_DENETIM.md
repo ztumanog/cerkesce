@@ -2,8 +2,8 @@
 
 **Tarih:** 12.10.2026
 **Faz:** 5 - Discovery Engine
-**Kapanis Tarihi:** 2026-10-01
-**Karar:** DENETIM TAMAMLANDI
+**Kapanış Tarihi:** 2026-10-01
+**Karar:** DENETIM TAMAMLANDı
 **Mimari Denetci Onayi:** EVET
 
 ---
@@ -11,7 +11,7 @@
 ## 1. FAZ 5 DURUMU
 
 - Ad: Discovery Engine
-- Kapanis: 2026-10-01
+- Kapanış: 2026-10-01
 - Durum: COMPLETED
 - Test: 276/276 PASS
 - 4 sprint: P5-001, P5-002, P5-003, P5-004
@@ -50,7 +50,7 @@ Kanit: PHASE_5_COMPLETION_REPORT.md
 
 ### 4.1 Dondurulmus Entegrasyon
 
-Discovery Engine runtime'a bagli DEGIL:
+Discovery Engine runtime'a bagli DEĞIL:
 - app/api/discovery/route.ts YOK
 - app/**/discovery*.tsx YOK
 - app/**/*DiscoveryFacade* import YOK
@@ -64,7 +64,7 @@ Sebep: Bilincli izolasyon (Faz 4 pattern)
 - Kod: QuerySemanticMapper.ts var
 - Siniflandirma: GOVERNANCE BORCU
 
-### 4.3 Faz 5 Test Sayisi
+### 4.3 Faz 5 Test Sayısı
 
 - Faz 4: 276 test
 - Faz 5: 276 test
@@ -79,17 +79,17 @@ Sebep: Bilincli izolasyon (Faz 4 pattern)
 
 ## 5. MIMAR KARARI
 
-**Hukum:** HATA DEGIL - DONDURULMUS ENTEGRASYON
+**Hukum:** HATA DEĞIL - DONDURULMUS ENTEGRASYON
 
-**Karar:** Faz 5 kapanisi KORUNUYOR.
-
----
-
-## 6. SONUC
-
-- Faz 5 DENETIMI: TAMAMLANDI
-- Faz 5 KAPANISI: KORUNUYOR
+**Karar:** Faz 5 kapanışi KORUNUYOR.
 
 ---
 
-**Durum:** TAMAMLANDI
+## 6. SONUÇ
+
+- Faz 5 DENETIMI: TAMAMLANDı
+- Faz 5 KAPANıŞI: KORUNUYOR
+
+---
+
+**Durum:** TAMAMLANDı

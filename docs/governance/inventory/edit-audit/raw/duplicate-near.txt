@@ -1,0 +1,49 @@
+== TAM METİN (boşluk ve büyük/küçük harf duyarsız) aynı olanlar ==
+COUNT=4
+  archive/temizlik-2026-10/archItecture__adr__ADR_INDEX.md.bak-20261005-051109
+  archive/temizlik-2026-10/archItecture__adr__ADR_INDEX.md.bak-20261005-051718
+  archive/temizlik-2026-10/archItecture__adr__ADR_INDEX.md.bak-20261005-051740
+  archive/temizlik-2026-10/archItecture__adr__ADR_INDEX.md.bak-20261005-051910
+COUNT=2
+  archive/temizlik-2026-10/archItecture__adr__ADR_INDEX.md.bak
+  archive/temizlik-2026-10/archItecture__adr__ADR_INDEX.md.bak-20261005-051043
+COUNT=2
+  archive/temizlik-2026-10/phases__phase-2__FAZ2_KAPANIS_DUYURUSU.md
+  phases/phase-2/PHASE_2_COMPLETION_REPORT.md
+COUNT=2
+  archive/temizlik-2026-10/references__kumakhov-1989__README.md
+  references/README.md
+COUNT=2
+  archive/PROJECT_ROADMAP.md - Çerkesçe Sözlük Teknik Dokümantasyonu.md
+  archive/temizlik-2026-10/archIve__DUPLICATE_PROJECT_SUMMARY.md
+COUNT=2
+  architecture/TECHNICAL_ARCHITECTURE_GUIDE.md
+  archive/temizlik-2026-10/archIve__DUPLICATE_ProjeYolHarItasI.md
+COUNT=2
+  architecture/adr/ADR-0016-Phase3-7-Dondurma-SUPERSEDED.md
+  archive/temizlik-2026-10/archIve__ADR-0016_super_kopya.md
+
+== İLK 1200 KARAKTERİ AYNI olanlar (kopya + ek bölüm şüphesi) ==
+COUNT=8
+  archive/temizlik-2026-10/archItecture__adr__ADR_INDEX.md.bak
+  archive/temizlik-2026-10/archItecture__adr__ADR_INDEX.md.bak-20261005-051043
+  archive/temizlik-2026-10/archItecture__adr__ADR_INDEX.md.bak-20261005-051109
+  archive/temizlik-2026-10/archItecture__adr__ADR_INDEX.md.bak-20261005-051718
+  archive/temizlik-2026-10/archItecture__adr__ADR_INDEX.md.bak-20261005-051740
+  archive/temizlik-2026-10/archItecture__adr__ADR_INDEX.md.bak-20261005-051910
+  archive/temizlik-2026-10/archItecture__adr__ADR_INDEX.md.bak-20261005-053049
+  archive/temizlik-2026-10/archItecture__adr__ADR_INDEX.md.bak-20261005-053155
+COUNT=4
+  architecture/TECHNICAL_ARCHITECTURE_GUIDE.md
+  archive/PROJECT_ROADMAP.md - Çerkesçe Sözlük Teknik Dokümantasyonu.md
+  archive/temizlik-2026-10/archIve__DUPLICATE_PROJECT_SUMMARY.md
+  archive/temizlik-2026-10/archIve__DUPLICATE_ProjeYolHarItasI.md
+COUNT=2
+  archive/temizlik-2026-10/references__kumakhov-1989__README.md
+  references/README.md
+COUNT=2
+  archive/temizlik-2026-10/phases__phase-2__FAZ2_KAPANIS_DUYURUSU.md
+  phases/phase-2/PHASE_2_COMPLETION_REPORT.md
+COUNT=2
+  architecture/adr/ADR-0016-Phase3-7-Dondurma-SUPERSEDED.md
+  archive/temizlik-2026-10/archIve__ADR-0016_super_kopya.md

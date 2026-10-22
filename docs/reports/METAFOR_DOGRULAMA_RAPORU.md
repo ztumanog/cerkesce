@@ -3,7 +3,7 @@
 **Corpus:** adyghe.web-corpora.net
 
 ## Ozet
-| Metrik | Deger |
+| Metrik | Değer |
 |--------|-------|
 | Aday | 18 |
 | Dogrulanan | 13 |
@@ -21,5 +21,5 @@ SR-FOOT-PLACE (0.85)
 SR-HEAD-TOP (0.60), SR-HEAD-REASON (0.65), SR-SHHYE-FREEDOM (0.70),
 SR-SHHYE-WINDOW (0.65), SR-GU-ANGER (0.75)
 
-## Sonuc
+## Sonuç
 17/17 DOGRULANDI

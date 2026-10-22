@@ -22,7 +22,7 @@
 
 **Gerekce:**
 - 240 vektor (kucuk olcek)
-- FAISS native bagimlilik getirir (C++ binding)
+- FAISS native bağımlılik getirir (C++ binding)
 - Pure TS Float32Array ile < 1ms
 - Build/CI-CD karmasasi yok
 
@@ -73,7 +73,7 @@
 
 ---
 
-## SONUC
+## SONUÇ
 
 Tum sorular cevaplandi. Mimar onayi alindi.
 FAISS kaldirildi, Pure TypeScript kullanilacak.

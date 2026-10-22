@@ -7,7 +7,7 @@
 
 ---
 
-## 1. BAGLAM
+## 1. BAĞLAM
 
 Phase 6 kimligi icin iki farkli yorum vardi:
 
@@ -34,9 +34,9 @@ Bu celiski yonetisim karmasasi yaratiyordu.
 
 ### Embedding = Research Track
 
-Embedding, Vector Search ve LLM ozellikleri:
+Embedding, Vector Search ve LLM özellikleri:
 
-- Faz 6 DEGILDIR
+- Faz 6 DEĞILDIR
 - Ayri bir arastirma hattidir
 - `docs/embedding/` altinda yasar
 - ADR-P5-000-UNLOCK_APPROVAL.md ile uyumludur
@@ -47,12 +47,12 @@ Embedding, Vector Search ve LLM ozellikleri:
 
 1. ADR-GOV-003 kabul edilmis yonetisim kararidir
 2. ADR-P5-000 Embedding'i Faz 5 disinda birakmistir
-3. Iki farkli calisma ayni faz numarasi altinda toplanamaz
+3. Iki farkli çalışma ayni faz numarasi altinda toplanamaz
 4. Yonetisim karmasasi onlenmelidir
 
 ---
 
-## 4. SONUCLAR
+## 4. SONUÇLAR
 
 ### Olumlu
 
@@ -62,7 +62,7 @@ Embedding, Vector Search ve LLM ozellikleri:
 
 ### Olumsuz
 
-- ⚠️ Embedding belgeleri guncellenmeli
+- ⚠️ Embedding belgeleri güncellenmeli
 - ⚠️ Faz 6 etiketi Embedding icin kullanilmamali
 
 ---

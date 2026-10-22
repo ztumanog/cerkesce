@@ -1,6 +1,6 @@
 # DECISIONS - Karar Kayitlari
 
-**Son Guncelleme:** 2026-09-24
+**Son Güncelleme:** 2026-09-24
 **Durum:** Faz 2 CLOSED
 
 ---
@@ -33,7 +33,7 @@ Faz 2 resmi olarak KAPANDI.
 - Android Build PASS
 - GitHub Release v1.0.0-stable
 
-**Sonuc:** Faz 2 CLOSED
+**Sonuç:** Faz 2 CLOSED
 
 ---
 

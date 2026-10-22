@@ -7,9 +7,9 @@
 
 ---
 
-## Baglam
+## Bağlam
 
-Faz 4 tamamlandi. Product Stage gozlemleri yapildi.
+Faz 4 tamamlandı. Product Stage gozlemleri yapıldi.
 
 - 14 gun kullanim
 - 50+ oturum
@@ -51,9 +51,9 @@ Faz 5 kilidinin acilmasi onerilir.
 
 ---
 
-## Sonuc
+## Sonuç
 
-**FAZ 5 UNLOCK RECOMMENDED**
+**Faz 5 UNLOCK RECOMMENDED**
 
 ---
 

@@ -14,7 +14,7 @@
 **Cevap:** EVET
 
 **Kanit:**
-- Commit: 979cd5c (Faz 5 kapanis karari)
+- Commit: 979cd5c (Faz 5 kapanış karari)
 - Commit: 156320c (Faz C-7 tamamlama)
 - PROJECT_STATUS.md: Faz 5 = COMPLETED
 - ROADMAP.md: Faz 5 = COMPLETED

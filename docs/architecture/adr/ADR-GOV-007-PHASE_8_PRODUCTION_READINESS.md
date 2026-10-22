@@ -24,7 +24,7 @@ Ancak **üretim hazırlığı** eksiktir:
 - Monitoring yok
 - Alerting yok
 
-Bu eksiklikler nedeniyle sistem **teknik olarak güçlü** ama 
+Bu eksiklikler nedeniyle sistem **teknik olarak güçlü** ama
 **operasyonel olarak hazır değildir.**
 
 ---

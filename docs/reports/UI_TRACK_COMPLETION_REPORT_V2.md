@@ -9,7 +9,7 @@
 
 ## 1. YONETICI OZETI
 
-UI/UX Track tamamen tamamlandi.
+UI/UX Track tamamen tamamlandı.
 10 sprint, 5 dashboard servisi + 5 dashboard UI.
 
 ### Sprint Durumu
@@ -31,7 +31,7 @@ UI/UX Track tamamen tamamlandi.
 
 ## 2. API ENDPOINT'LERI
 
-| Endpoint | Icerik |
+| Endpoint | Içerik |
 |----------|--------|
 | GET /api/governance/view | Governance Dashboard |
 | GET /api/governance/operations | Operations Dashboard |
@@ -53,9 +53,9 @@ UI/UX Track tamamen tamamlandi.
 
 ---
 
-## 4. TEST SONUCLARI
+## 4. TEST SONUÇLARı
 
-| Test | Sonuc |
+| Test | Sonuç |
 |------|-------|
 | TrackU6 | 3/3 PASS |
 | TrackU7 | 3/3 PASS |
@@ -66,7 +66,7 @@ UI/UX Track tamamen tamamlandi.
 
 ---
 
-## 5. SONUC
+## 5. SONUÇ
 
 UI/UX Track teslimat hedefleri karsilanmistir.
 Platform artik 5 farkli dashboard ile hem servis hem UI olarak izlenebiliyor.

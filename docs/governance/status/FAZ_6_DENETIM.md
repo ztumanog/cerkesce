@@ -1,9 +1,9 @@
-﻿# FAZ 6 DENETIM RAPORU
+# FAZ 6 DENETIM RAPORU
 
 **Tarih:** 12.10.2026
 **Faz:** 6 - API Gateway
-**Kapanis Tarihi:** 2026-09-24 (CERTIFIED)
-**Karar:** DENETIM TAMAMLANDI
+**Kapanış Tarihi:** 2026-09-24 (CERTIFIED)
+**Karar:** DENETIM TAMAMLANDı
 **Mimari Denetci Onayi:** EVET
 
 ---
@@ -11,7 +11,7 @@
 ## 1. FAZ 6 DURUMU
 
 - Ad: API Gateway
-- Kapanis: 2026-09-24
+- Kapanış: 2026-09-24
 - Durum: CERTIFIED
 - Alt-fazlar:
   - Faz 6.1 (API Gateway) - CERTIFIED (2026-09-02)
@@ -51,7 +51,7 @@ Iki API sistemi:
 - Next.js App Router (app/api/*)
 - Express Gateway (src/infrastructure/api/*)
 
-Siniflandirma: MIMARI TERCIH (ihlal degil)
+Siniflandirma: MIMARI TERCIH (ihlal değil)
 Sebep: API Gateway Strategy (ADR-GOV-011) ile uyumlu
 
 ### 4.2 Mock Default Graph
@@ -72,7 +72,7 @@ Sebep: API Gateway Strategy (ADR-GOV-011) ile uyumlu
 
 ## 5. MIMAR KARARI (12.10.2026)
 
-**Hukum:** FAZ 6 GERCEKTEN UYGULANMIS
+**Hukum:** Faz 6 GERCEKTEN UYGULANMIS
 
 **Neden:**
 - Runtime katmani mevcut
@@ -81,14 +81,14 @@ Sebep: API Gateway Strategy (ADR-GOV-011) ile uyumlu
 - ADR-0014 tam uyumlu
 - 2 alt-faz sertifikali
 
-**Karar:** Faz 6 kapanisi KORUNUYOR. Kucuk sapmalar BACKLOG'a.
+**Karar:** Faz 6 kapanışi KORUNUYOR. Kucuk sapmalar BACKLOG'a.
 
 ---
 
-## 6. SONUC
+## 6. SONUÇ
 
-- Faz 6 DENETIMI: TAMAMLANDI
-- Faz 6 KAPANISI: KORUNUYOR
+- Faz 6 DENETIMI: TAMAMLANDı
+- Faz 6 KAPANıŞI: KORUNUYOR
 - API Gateway: Aktif
 - Runtime Entegrasyonu: VAR
 
@@ -100,5 +100,5 @@ Faz 7 Denetimi baslatilabilir.
 
 ---
 
-**Durum:** TAMAMLANDI
+**Durum:** TAMAMLANDı
 **Sonraki Faz:** Faz 7 - Analytics & Export

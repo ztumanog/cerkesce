@@ -1,10 +1,10 @@
-# KULLANICI KILAVUZU
+# KULLANıCı KILAVUZU
 
 **Tarih:** 2026-09-30
 **Versiyon:** 1.0
 
 ## 1. GIRIS
-Cerkesce Sozluk uygulamasina hos geldiniz.
+Cerkesce Sözlük uygulamasina hos geldiniz.
 
 ## 2. BASLANGIC
 - Web: https://cerkesce.vercel.app
@@ -24,7 +24,7 @@ Cerkesce Sozluk uygulamasina hos geldiniz.
 Her gun yeni kelime.
 
 ## 6. KAYNAKLAR
-- 34 sozluk
+- 34 sözlük
 - 331,468 corpus cifti
 
 ## 7. MOBIL
@@ -32,7 +32,7 @@ Her gun yeni kelime.
 - Offline arama
 
 ## 8. SORUN GIDERME
-- Arama sonuc vermiyor
+- Arama sonuç vermiyor
 - Uygulama yavas
 
 ## 9. ILETISIM
@@ -40,4 +40,4 @@ Her gun yeni kelime.
 
 ---
 
-*Son guncelleme: 2026-09-30*
+*Son güncelleme: 2026-09-30*

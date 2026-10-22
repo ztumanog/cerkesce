@@ -108,7 +108,7 @@
 
 ### 7 Adımlı Akış (Değişmez)
 
-```
+```text
 ┌─────────┐
 │ SOURCE  │  Ham veri tanımı, erişim yolu
 └────┬────┘
@@ -279,7 +279,7 @@
 
 ### ✅ DOĞRU AKIŞ
 
-```
+```text
 Repository → Service → Hook → UI
 ```
 
@@ -317,7 +317,7 @@ Repository → Service → Hook → UI
 - Heterojen format: JSON, HTML, Array
 
 **Mimarisi:**
-```
+```text
 Dictionary
   ↓
 DictionaryEntry (Tekil kayıt)
@@ -330,7 +330,7 @@ DictionaryEntry (Tekil kayıt)
 ```
 
 **Veri İşleme:**
-```
+```text
 34 Sözlük
     ↓
 Loader (Ham veri)
@@ -361,7 +361,7 @@ UI (Render)
 **Hedef:** Aynı kavramın farklı dillerdeki karşılıklarını bir grupta sunmak
 
 **Örnek:**
-```
+```text
 TRG_WATER (TranslationGroup ID)
 ├── Türkçe: su
 ├── English: water
@@ -371,7 +371,7 @@ TRG_WATER (TranslationGroup ID)
 ```
 
 **Faz 2 Mimarisi:**
-```
+```text
 Dictionary Entry (Phase 1)
     ↓
 TranslationGroup (Phase 2) ← Sense tabanlı
@@ -410,9 +410,9 @@ Concept (Phase 3) ← Language-independent
 
 ---
 
-## DOSYA YAPISI
+## DOSYA YAPıSI
 
-```
+```text
 CERKESCE_KNOWLEDGE_ENGINE/
 │
 ├── src/

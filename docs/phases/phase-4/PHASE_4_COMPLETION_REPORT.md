@@ -8,7 +8,7 @@
 
 ## 1. Ozet
 
-Phase 4 (Morphology Engine) tamamlandi.
+Phase 4 (Morphology Engine) tamamlandı.
 5 ana bilesen teslim edildi, 276/276 test PASS.
 
 ---
@@ -25,9 +25,9 @@ Phase 4 (Morphology Engine) tamamlandi.
 
 ---
 
-## 3. Test Sonuclari
+## 3. Test Sonuçları
 
-| Metrik | Deger |
+| Metrik | Değer |
 |--------|-------|
 | Test Files | 82 passed |
 | Tests | 276 passed |
@@ -47,8 +47,8 @@ Phase 4 (Morphology Engine) tamamlandi.
 
 ## 5. Runtime Izolasyonu
 
-- Discovery'ye baglanmaz
-- SemanticRelations runtime'da degil
+- Discovery'ye bağlanmaz
+- SemanticRelations runtime'da değil
 - ADR-ROOT-001 uyumlu
 
 ---

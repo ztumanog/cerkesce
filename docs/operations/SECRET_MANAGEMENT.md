@@ -22,7 +22,7 @@
 | Database | DATABASE_URL | Opsiyonel |
 | Error Tracking | SENTRY_DSN | Opsiyonel |
 
-## 3. Dosya Yapisi
+## 3. Dosya Yapısi
 
 | Dosya | Amac | Git'e |
 |-------|------|-------|
@@ -60,4 +60,4 @@ Beklenen: Bos cikti.
 - src/infrastructure/config/secretManager.ts
 - ADR-GOV-007
 
-**Son Guncelleme:** 2026-10-02
+**Son Güncelleme:** 2026-10-02

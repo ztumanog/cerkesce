@@ -1,4 +1,4 @@
-# FAZ 5 KAPANIS RAPORU
+# FAZ 5 KAPANıŞ RAPORU
 
 **Tarih:** 2026-09-29
 **Durum:** COMPLETED
@@ -6,12 +6,12 @@
 
 ---
 
-## Faz 5 Hedefleri ve Sonuclari
+## Faz 5 Hedefleri ve Sonuçları
 
 Charter'dan (ADR-P5-001):
 
 > Faz 5'in amaci:
-> - Kelimeyi bulmak degil
+> - Kelimeyi bulmak değil
 > - Kelimeyi anlamak
 > - Veriyi analiz etmek
 > - Kullanim davranisini olcmek
@@ -37,7 +37,7 @@ Charter'dan (ADR-P5-001):
 
 ### Ciktilar
 
-- `SmartSuggestionDTO.ts` - oneri veri yapisi
+- `SmartSuggestionDTO.ts` - oneri veri yapısi
 - `SmartSuggestionService.ts` - Levenshtein mesafesi
 - `SearchBox.tsx` - "Bunu mu demek istediniz?" UI
 - 6 yeni test: SS-001 - SS-006
@@ -52,7 +52,7 @@ Charter'dan (ADR-P5-001):
 ## P5-004 Corpus Explorer
 
 **Amac:** Bir kelimenin:
-- Hangi sozluklerde gectigi
+- Hangi sözlüklerde gectigi
 - Kac farkli anlam tasidigi
 - Hangi dillerde bulundugu
 
@@ -60,21 +60,21 @@ sorusunu cevaplamak.
 
 ### Ciktilar
 
-- `CorpusExplorerDTO.ts` - corpus veri yapisi
-- `CorpusExplorerService.ts` - sozluk tarayici
-- `KelimeDetayDrawer.tsx` - "X anlam, Y dil, Z sozluk" ozeti
+- `CorpusExplorerDTO.ts` - corpus veri yapısi
+- `CorpusExplorerService.ts` - sözlük tarayici
+- `KelimeDetayDrawer.tsx` - "X anlam, Y dil, Z sözlük" ozeti
 - 5 yeni test: CE-001 - CE-005
 
 ### Dogrulama
 
-- пэ kelimesi: gercek anlam/dil/sozluk sayilari (sourceContents'ten)
+- пэ kelimesi: gercek anlam/dil/sözlük sayıları (sourceContents'ten)
 - UI'da calisiyor
 
 ---
 
 ## Test Durumu
 
-| Test | Sonuc |
+| Test | Sonuç |
 |---|---|
 | Test Files | 81 passed (81) |
 | Tests | 276 passed (276) |
@@ -94,11 +94,11 @@ sorusunu cevaplamak.
 - [x] Testler PASS (276/276)
 - [x] Kritik teknik borc: 0
 
-**7/7 KRITER TAMAMLANDI**
+**7/7 KRITER TAMAMLANDı**
 
 ---
 
-## Faz 5'te Yapilmayanlar (Charter'dan)
+## Faz 5'te Yapılmayanlar (Charter'dan)
 
 - Embedding Engine (Faz 6)
 - Semantic Vector Search (Faz 6)
@@ -122,7 +122,7 @@ sorusunu cevaplamak.
 ## One Cikan Basarilar
 
 1. P5-003 + P5-004 runtime'da calisiyor
-2. UI entegrasyonu tamamlandi
+2. UI entegrasyonu tamamlandı
 3. 11 yeni test eklendi
 4. Mevcut performans korundu
 5. Runtime izolasyonu bozulmadi
@@ -131,7 +131,7 @@ sorusunu cevaplamak.
 
 ## Sonraki Adimlar
 
-1. **Mimar onayi:** Faz 5 kapanis
+1. **Mimar onayi:** Faz 5 kapanış
 2. **Faz 6:** Embedding Engine, Semantic Vector Search
 3. **Faz 7:** Analytics & Export
 

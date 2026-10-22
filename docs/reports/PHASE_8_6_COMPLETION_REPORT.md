@@ -9,7 +9,7 @@
 
 ## 1. YONETICI OZETI
 
-Faz 8.6 (Service Reliability) tamamen tamamlandi.
+Faz 8.6 (Service Reliability) tamamen tamamlandı.
 Sistem dayanikliligi saglandi.
 
 ### Sprint Durumu
@@ -26,7 +26,7 @@ Sistem dayanikliligi saglandi.
 
 ## 2. EKLENEN BILESENLER
 
-| Dosya | Icerik |
+| Dosya | Içerik |
 |-------|--------|
 | ErrorBudgetService.ts | SLO, budget, consumed |
 | RecoveryObjectiveService.ts | RTO/RPO, tier |
@@ -36,9 +36,9 @@ Sistem dayanikliligi saglandi.
 
 ---
 
-## 3. TEST SONUCLARI
+## 3. TEST SONUÇLARı
 
-| Test | Sonuc |
+| Test | Sonuç |
 |------|-------|
 | Phase8_6_1 | 3/3 PASS |
 | Phase8_6_2 | 3/3 PASS |
@@ -49,7 +49,7 @@ Sistem dayanikliligi saglandi.
 
 ---
 
-## 4. KAPANIS KRITERLERI
+## 4. KAPANıŞ KRITERLERI
 
 | Kriter | Durum |
 |--------|-------|
@@ -63,12 +63,12 @@ Sistem dayanikliligi saglandi.
 
 ---
 
-## 5. SONUC
+## 5. SONUÇ
 
 Faz 8.6 (Service Reliability) teslimat hedefleri karsilanmistir.
 Sistem dayanikliligi saglanmistir.
 
-**Faz 8 tamamen tamamlandi.**
+**Faz 8 tamamen tamamlandı.**
 
 ---
 

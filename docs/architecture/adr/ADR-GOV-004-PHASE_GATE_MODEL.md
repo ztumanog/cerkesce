@@ -7,9 +7,9 @@
 
 ---
 
-## 1. BAGLAM
+## 1. BAĞLAM
 
-Her faz gecisi icin gate (kapi) modeli tanimlanmali.
+Her faz geçişi icin gate (kapi) modeli tanimlanmali.
 Bu model, fazlarin resmi olarak kapanmasi icin gereklidir.
 
 ---
@@ -25,11 +25,11 @@ Bu model, fazlarin resmi olarak kapanmasi icin gereklidir.
 | Phase 3 | Phase 3 Gate Report | CLOSED |
 | Phase 4 | 621/621 PASS | COMPLETED |
 | Phase 5 | PHASE_5_COMPLETION_REPORT | COMPLETED |
-| Phase 6 | ADR-GOV-005 | TAMAMLANDI |
+| Phase 6 | ADR-GOV-005 | TAMAMLANDı |
 | Phase 7 | Sprint 7.0.1-7.3 | DEVAM EDIYOR |
 | Phase 8 | Production Readiness | PROPOSED |
 
-### Gate Gecis Kriterleri
+### Gate Geçiş Kriterleri
 
 1. Tum testler PASS
 2. Governance belgeleri senkron
@@ -40,24 +40,24 @@ Bu model, fazlarin resmi olarak kapanmasi icin gereklidir.
 
 ## 3. GEREKCE
 
-1. Faz gecisleri resmi olmali
+1. Faz geçişleri resmi olmali
 2. Gate kriterleri net olmali
 3. Her faz icin kanit gerekli
 4. Tek gerceklik ilkesi
 
 ---
 
-## 4. SONUCLAR
+## 4. SONUÇLAR
 
 ### Olumlu
 
-- Faz gecisleri net
+- Faz geçişleri net
 - Gate kriterleri belirli
 - Tek gerceklik
 
 ### Olumsuz
 
-- Kati surec
+- Kati süreç
 - Ek dokumantasyon
 
 ---

@@ -1,8 +1,8 @@
-﻿# FAZ 1-15 KAPANIS OZETI
+# FAZ 1-15 KAPANıŞ OZETI
 
 **Tarih:** 12.10.2026
 **Kapsam:** Faz 1-15 Denetim Serisi
-**Durum:** TAMAMLANDI
+**Durum:** TAMAMLANDı
 **Mimari Denetci Onayi:** EVET
 
 ---
@@ -13,7 +13,7 @@ Faz 1-15 denetimleri tamamlanmistir.
 
 ### Faz Durumlari
 
-| Faz | Ad | Denetim | Kapanis | Rapor |
+| Faz | Ad | Denetim | Kapanış | Rapor |
 |---|---|---|---|---|
 | 1 | Core Dictionary | OK | OK | FAZ_1_KAPANIS.md |
 | 2 | Translation Platform | OK | OK | FAZ_2_DENETIM.md |
@@ -33,7 +33,7 @@ Faz 1-15 denetimleri tamamlanmistir.
 
 ---
 
-## 2. GENEL DEGERLENDIRME
+## 2. GENEL DEĞERLENDIRME
 
 | Alan | Durum |
 |---|---|
@@ -52,7 +52,7 @@ Faz 1-15 denetimleri tamamlanmistir.
 ### Basari
 - Kod var
 - Test var
-- Kapanis karari var
+- Kapanış karari var
 - Servisler var
 - Runtime izolasyonu KORUNUYOR
 
@@ -62,13 +62,13 @@ Faz 1-15 denetimleri tamamlanmistir.
 - DONDURULMUS TEKNIK BORC: search/route.ts, LemmaBuilderV2, vb.
 - KATEGORIZASYON BORCU: src/infra/ Faz 8-15 karisik
 
-### Sonuc
+### Sonuç
 TEKNIK BASARISIZLIK: YOK
 MIMARI COKUS: YOK
 
 ---
 
-## 4. MEMO GUNCELLEMESI
+## 4. MEMO GÜNCELLEMESI
 
 | Faz | Karar |
 |---|---|
@@ -105,5 +105,5 @@ Asil eksik olan: VERI KAPSAMI ve VERI KALITESI.
 
 ---
 
-**Durum:** TAMAMLANDI
+**Durum:** TAMAMLANDı
 **Sonraki:** BACKLOG.md

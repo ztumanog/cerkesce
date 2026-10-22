@@ -1,2 +1,2 @@
-## Faz Özeti (Tek Gerçek)
+### Faz Özeti (Tek Gerçek)
 ...

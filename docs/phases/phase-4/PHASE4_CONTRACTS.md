@@ -16,7 +16,7 @@
 - Cikti: Morpheme listesi
 
 ## P4-004: LemmaBuilder
-- Amac: Lemma olusturma
+- Amac: Lemma oluşturma
 - Girdi: Lexeme grubu
 - Cikti: Lemma ID
 

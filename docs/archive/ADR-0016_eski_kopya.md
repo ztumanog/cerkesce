@@ -1,10 +1,10 @@
 # 📋 ADR-0016: Phase 3-7 Modüllerinin Dondurulması ve Test İzolasyonu
 
-**Dosya:** ADR-0016-Phase3-7-Dondurma.md  
-**Tarih:** [Belirtilmemiş - Tahmini: Ağustos 2026]  
-**Durum:** ✅ Kabul Edildi  
-**Faz:** Faz 2 (Translation Platform)  
-**Etkilenen Katmanlar:** Test Suite, Module Freezing, CI/CD  
+**Dosya:** ADR-0016-Phase3-7-Dondurma.md\
+**Tarih:** [Belirtilmemiş - Tahmini: Ağustos 2026]\
+**Durum:** ✅ Kabul Edildi\
+**Faz:** Faz 2 (Translation Platform)\
+**Etkilenen Katmanlar:** Test Suite, Module Freezing, CI/CD\
 **Sertifikasyon:** Enterprise Grade v12.0-enterprise-certified ✅
 
 ---
@@ -43,7 +43,7 @@ Test koşturmalarında **Faz 7'ye** (Dialect Analytics, Export Engine, Layout En
 
 ### 📊 Etkilenen Fazlar
 
-```
+```text
 Faz 2: Translation Platform (AKTIF)
      ↓
 Faz 3: Concept Engine (KILITLI - Hata oluşturuyor)
@@ -75,7 +75,7 @@ export default defineConfig({
   test: {
     // Faz 2 testleri
     include: ['src/**/__tests__/phase2/**/*.test.ts'],
-    
+
     // Faz 3-7 testleri EXCLUDE
     exclude: [
       'src/**/__tests__/phase3/**/*.test.ts',
@@ -125,22 +125,22 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      
+
       - name: Install dependencies
         run: npm ci
-      
+
       - name: Run Phase 2 Tests Only
         run: npm run test:phase2
-        
+
       - name: Check Phase Lock
         run: npm run check:phase-lock
-      
+
       - name: Build
         run: npm run build
 ```
 
 **4. Dosya Yapısı Güncellemesi**
-```
+```text
 src/
 ├── __tests__/
 │   ├── phase1/           # ✅ Tamamlandı
@@ -229,7 +229,7 @@ src/
 
 ### Bağımlılık Zinciri
 
-```
+```text
 ADR-0001: Modüler Tip Mimarisi
      ↓
 ADR-0002: Domain Model Standardlaşma
@@ -286,12 +286,12 @@ export class PhaseLock {
     'phase-6': { locked: true, reason: 'Awaiting Phase 5 completion' },
     'phase-7': { locked: true, reason: 'Awaiting Phase 6 completion' },
   };
-  
+
   static isLocked(phase: string): boolean {
     const phaseLock = this.PHASE_LOCK_MAP[phase as keyof typeof this.PHASE_LOCK_MAP];
     return phaseLock?.locked ?? false;
   }
-  
+
   static assertUnlocked(phase: string): void {
     if (this.isLocked(phase)) {
       const phaseLock = this.PHASE_LOCK_MAP[phase as keyof typeof this.PHASE_LOCK_MAP];
@@ -300,9 +300,9 @@ export class PhaseLock {
       );
     }
   }
-  
+
   static getStatus(phase: string): { locked: boolean; reason: string } {
-    return this.PHASE_LOCK_MAP[phase as keyof typeof this.PHASE_LOCK_MAP] || 
+    return this.PHASE_LOCK_MAP[phase as keyof typeof this.PHASE_LOCK_MAP] ||
            { locked: true, reason: 'Unknown phase' };
   }
 }
@@ -328,13 +328,13 @@ export default defineConfig({
     globals: true,
     environment: 'jsdom',
     setupFiles: ['./src/__tests__/setup.ts'],
-    
+
     // ✅ PHASE 2 TESTLERI DAHIL
     include: [
       'src/__tests__/phase1/**/*.test.ts',
       'src/__tests__/phase2/**/*.test.ts',
     ],
-    
+
     // 🔒 PHASE 3-7 TESTLERI EXCLUDE
     exclude: [
       'node_modules',
@@ -345,7 +345,7 @@ export default defineConfig({
       'src/__tests__/phase6/**/*.test.ts',
       'src/__tests__/phase7/**/*.test.ts',
     ],
-    
+
     coverage: {
       provider: 'v8',
       reporter: ['text', 'json', 'html'],
@@ -379,37 +379,37 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
-      
+
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
           node-version: '18'
           cache: 'npm'
-      
+
       - name: Install dependencies
         run: npm ci
-      
+
       - name: Check Phase Lock
         run: npm run check:phase-lock
-      
+
       - name: Run Phase 2 Tests
         run: npm run test:phase2
-      
+
       - name: Generate Coverage Report
         run: npm run test:coverage
-      
+
       - name: Upload Coverage
         uses: codecov/codecov-action@v3
         with:
           files: ./coverage/coverage-final.json
-      
+
       - name: Build
         run: npm run build
-      
+
       - name: Type Check
         run: npx tsc --noEmit
 ```
@@ -436,7 +436,7 @@ jobs:
 
 ### Phase 2 Test Suite
 
-```
+```text
 ✅ Phase 2 Tests: 104/104 PASS
 ├── Translation Platform Tests (50)
 ├── Repository Tests (30)
@@ -470,7 +470,7 @@ jobs:
 
 ### Faz 2 Tamamlandığında
 
-```
+```text
 Faz 2 Exit Criteria ✅
      ↓
 ADR-0018: Phase Unlock Mekanizması Uygulanır
@@ -488,7 +488,7 @@ Phase 4 Unlock
 
 ### Unlock Checklist
 
-```
+```text
 Phase 2 Unlock Öncesi:
 ☐ Tüm Faz 2 testleri PASS (104/104)
 ☐ Code coverage > 95%
@@ -560,7 +560,7 @@ Phase 3 Unlock Öncesi:
 
 ---
 
-**Son Güncelleme:** 19 Eylül 2026  
-**Versiyon:** v8.2  
-**Faz:** Phase 2 (Translation Platform)  
-**Durum:** ✅ TAMAMLANDI VE ONAYLANDI
+**Son Güncelleme:** 19 Eylül 2026\
+**Versiyon:** v8.2\
+**Faz:** Phase 2 (Translation Platform)\
+**Durum:** ✅ TAMAMLANDı VE ONAYLANDI

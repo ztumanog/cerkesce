@@ -1,7 +1,7 @@
 # Faz C-9 Tamamlama Raporu
 
 **Tarih:** 2026-09-30
-**Durum:** TAMAMLANDI
+**Durum:** TAMAMLANDı
 **Sure:** 1 gun
 
 ---
@@ -90,7 +90,7 @@ Yeni Eklenen (1):
 
 ### C-9.5 Lexeme Hedefi
 - Hedef: 220+ lexeme
-- Sonuc: 240 lexeme
+- Sonuç: 240 lexeme
 - Asim: +20
 
 ---
@@ -116,7 +116,7 @@ Cozum: Test dosyasindaki Kiril karakterler Latin'e cevrildi.
 280b804 chore: gecici dosyalar gitignore'a eklendi
 4008426 chore: gecici dosyalar gitignore'a eklendi
 47b51f1 Faz C-9.4: Metaforik zincirler dogrulandi
-d419b05 Faz C-9.1: Corpus dogrulama tamamlandi
+d419b05 Faz C-9.1: Corpus dogrulama tamamlandı
 daf8f63 Faz C-9.1: Corpus dogrulama
 053e386 Faz C-9.3: WF-KHUMEN + WF-SHQE yeni aileler
 464bdab Faz C-9.2: DialectConverter 7 yeni kural
@@ -134,7 +134,7 @@ daf8f63 Faz C-9.1: Corpus dogrulama
 
 ---
 
-## 7. SONUC
+## 7. SONUÇ
 
 Faz C-9, tum hedeflerine ulasmis ve bazilarini asmistir:
 - DialectConverter 47/47 PASS
@@ -148,4 +148,4 @@ Faz C-9 basariyla tamamlanmistir.
 ---
 
 *Rapor otomatik olarak olusturulmustur.*
-*Son guncelleme: 2026-09-30*
+*Son güncelleme: 2026-09-30*

@@ -1,9 +1,9 @@
 # ADR-0011: Meaning Graph Bootstrap
 
-**Status:** ACCEPTED ✅  
-**Date:** 2 Eylül 2026  
-**Phase:** Faz 3 (Concept Engine)  
-**Etkilenen Katmanlar:** Domain, Service, Repository  
+**Status:** ACCEPTED ✅\
+**Date:** 2 Eylül 2026\
+**Phase:** Faz 3 (Concept Engine)\
+**Etkilenen Katmanlar:** Domain, Service, Repository\
 **Confidence:** HIGH 🔥
 
 ---
@@ -97,13 +97,13 @@ interface GraphMetadata {
 class MeaningGraphBuilder {
   async buildFromTranslations(translations: TranslationGroup[]): Promise<MeaningGraph> {
     const graph = new MeaningGraph();
-    
+
     // 1. Node'ları oluştur
     for (const translation of translations) {
       const concept = this.extractConcept(translation);
       graph.addNode(concept);
     }
-    
+
     // 2. Edge'leri oluştur (anlamsal ilişkilere göre)
     for (const [conceptId, concept] of graph.nodes) {
       const relatedConcepts = this.findRelatedConcepts(concept, graph.nodes);
@@ -111,28 +111,28 @@ class MeaningGraphBuilder {
         graph.addEdge(conceptId, relatedId, relationType);
       }
     }
-    
+
     // 3. Metrikleri hesapla
     graph.calculateMetrics();
-    
+
     return graph;
   }
-  
+
   private findRelatedConcepts(
     concept: Concept,
     allConcepts: Map<string, Concept>
   ): Map<string, EdgeType> {
     const related = new Map<string, EdgeType>();
-    
+
     for (const [otherId, other] of allConcepts) {
       if (otherId === concept.id) continue;
-      
+
       const similarity = this.calculateSimilarity(concept, other);
       if (similarity > 0.7) {
         related.set(otherId, 'RELATED');
       }
     }
-    
+
     return related;
   }
 }
@@ -146,21 +146,21 @@ class GraphTraversal {
     const visited = new Set<string>();
     const queue: [string, number][] = [[startId, 0]];
     const result: string[] = [];
-    
+
     while (queue.length > 0) {
       const [nodeId, currentDepth] = queue.shift()!;
       if (visited.has(nodeId) || currentDepth > depth) continue;
-      
+
       visited.add(nodeId);
       result.push(nodeId);
-      
+
       for (const edge of graph.edges.get(nodeId) || []) {
         if (!visited.has(edge.target)) {
           queue.push([edge.target, currentDepth + 1]);
         }
       }
     }
-    
+
     return result;
   }
 }
@@ -174,19 +174,19 @@ class GraphTraversal {
     const ranks = new Map<string, number>();
     const n = graph.nodes.size;
     const dampingFactor = 0.85;
-    
+
     // İlk değerler
     for (const nodeId of graph.nodes.keys()) {
       ranks.set(nodeId, 1 / n);
     }
-    
+
     // Iterasyon
     for (let i = 0; i < iterations; i++) {
       const newRanks = new Map<string, number>();
-      
+
       for (const [nodeId, node] of graph.nodes) {
         let rank = (1 - dampingFactor) / n;
-        
+
         // Gelen edge'leri kontrol et
         for (const [sourceId, edges] of graph.edges) {
           for (const edge of edges) {
@@ -196,13 +196,13 @@ class GraphTraversal {
             }
           }
         }
-        
+
         newRanks.set(nodeId, rank);
       }
-      
+
       ranks = newRanks;
     }
-    
+
     return ranks;
   }
 }

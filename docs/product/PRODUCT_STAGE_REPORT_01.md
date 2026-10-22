@@ -10,7 +10,7 @@
 
 ## 1. KULLANIM ISTATISTIKLERI
 
-| Metrik | Deger |
+| Metrik | Değer |
 |:-------|:------|
 | Toplam Gun | 14 |
 | Toplam Oturum | 50+ |
@@ -33,18 +33,18 @@
 
 ### 3.1. Ters Arama Calismiyor
 
-- **Sorun:** 'псы' Turkce sozluklerde hedef dilde (Cerkessce tarafi)
+- **Sorun:** 'псы' Turkce sözlüklerde hedef dilde (Cerkessce tarafi)
 - **Beklenen:** Kaynak + Hedef dilde arama
 - **Gelen:** Sadece kaynak dilde
 - **Etkilenen:** Abaze, Huvaj, Teshu, Hilmi
 - **Etiket:** [SEARCH] [DATA]
 
-### 3.2. 15 Sozluk Atlaniyor
+### 3.2. 15 Sözlük Atlaniyor
 
-- **Beklenen:** 34 sozluk
+- **Beklenen:** 34 sözlük
 - **Gelen:** 19 kaynak
-- **Atlanan:** 15 sozluk
-- **Kritik:** Turkce sozlukler atlaniyor
+- **Atlanan:** 15 sözlük
+- **Kritik:** Turkce sözlükler atlaniyor
 - **Etiket:** [DATA] [SEARCH]
 
 ### 3.3. HTML Render Edilmiyor
@@ -63,7 +63,7 @@
 
 ### 3.5. Paylasim Menusu
 
-- **Sorun:** Paylas menusu kopyala ile ayni islemi yapiyor
+- **Sorun:** Paylas menusu kopyala ile ayni islemi yapıyor
 - **Beklenen:** Kart seklinde paylasim menusu
 - **Etiket:** [DRAWER]
 
@@ -75,7 +75,7 @@
 
 ---
 
-## 4. BASARILI OZELLIKLER
+## 4. BASARILI ÖZELLIKLER
 
 - Arama hizli (150 ms)
 - Drawer semantik sunum guzel
@@ -112,9 +112,9 @@
 |:-----|:------|
 | Teknik Kapi | PASS |
 | Urun Kapisi | PASS |
-| Kullanim Kapisi | TAMAMLANDI |
+| Kullanim Kapisi | TAMAMLANDı |
 
-**Sonuc:** Faz 5 kilit acma icin Kullanim Kapisi tamamlandi.
+**Sonuç:** Faz 5 kilit acma icin Kullanim Kapisi tamamlandı.
 
 ---
 
@@ -124,9 +124,9 @@
 
 ---
 
-## 8. COZULEN SORUNLAR (2026-09-25 Guncellemesi)
+## 8. COZULEN SORUNLAR (2026-09-25 Güncellemesi)
 
-Asagidaki sorunlar **COZULDU** ve dogrulandi:
+Aşağıdaki sorunlar **COZULDU** ve dogrulandi:
 
 | # | Sorun | Durum | Kanit |
 |:-:|:------|:------|:------|
@@ -135,7 +135,7 @@ Asagidaki sorunlar **COZULDU** ve dogrulandi:
 | 3.5 | Paylasim Menusu (kopyala ile ayni) | ✅ COZULDU | `PaylasimGorseliModal` Drawer'a eklendi |
 | 3.6 | Kopyalama HTML ile | ✅ COZULDU | HTML kopyalama temizlendi |
 
-### Yapilan Duzeltmeler
+### Yapılan Duzeltmeler
 
 - `PaylasimGorseliModal` -> Drawer'a eklendi
 - `GununKelimesiKart` -> Paylas butonu modal acar
@@ -148,10 +148,10 @@ Asagidaki sorunlar **COZULDU** ve dogrulandi:
 | # | Sorun | Durum |
 |:-:|:------|:------|
 | 1 | Ters Arama Calismiyor | 🔒 Faz 5 (P5-001) |
-| 2 | 15 Sozluk Atlaniyor (34 -> 19) | 🔒 Faz 5 (P5-001) |
+| 2 | 15 Sözlük Atlaniyor (34 -> 19) | 🔒 Faz 5 (P5-001) |
 | 4 | Arama Tutarsizligi (su -> sumak gelmiyor) | 🔒 Faz 5 (P5-001) |
 
 **Not:** Kalan 3 sorun **Faz 5 / P5-001 Corpus Coverage** kapsaminda cozulecek.
 
 ---
-**Guncelleme Tarihi:** 2026-09-25
+**Güncelleme Tarihi:** 2026-09-25

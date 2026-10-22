@@ -1,7 +1,7 @@
 # 📜 CLEANUP-DUPLICATES.PS1 - TAM DOKÜMANTASYON
 
-**Versiyon:** 2.0  
-**Tarih:** 13 Eylül 2026  
+**Versiyon:** 2.0\
+**Tarih:** 13 Eylül 2026\
 **Proje:** Çerkesçe Sözlük Teknik Dokümantasyonu
 
 ---
@@ -20,7 +20,7 @@
 - ✓ Detaylı rapor oluşturur
 
 ### 🎨 Renkli Çıktı
-```
+```text
 [✓] Başarılı işlemler      - Yeşil
 [✗] Hata mesajları        - Kırmızı
 [!] Uyarı mesajları       - Sarı
@@ -53,7 +53,7 @@
 - Sonuçları rapor eder
 
 **Çıktı Örneği:**
-```
+```text
 ╔════════════════════════════════════════╗
 ║  DUPLIKAT DOSYA TEMIZLIK SCRIPTI 2.0  ║
 ║  Çerkesçe Sözlük Projesi              ║
@@ -70,7 +70,7 @@ MOD: DRY-RUN (Simulasyon - Hiçbir şey yapılmaz)
 [i] Hatalı dosya adı sayısı: 2
 ```
 
-### 2. GERCEK CALISMA (Dosyaları Sil)
+### 2. GERCEK ÇALıŞMA (Dosyaları Sil)
 
 ```powershell
 .\cleanup-duplicates.ps1
@@ -99,8 +99,8 @@ MOD: DRY-RUN (Simulasyon - Hiçbir şey yapılmaz)
 
 ## 📊 SCRIPT ADIMLARI
 
-### ADIM 1: BACKUP OLUSTURMA
-```
+### ADIM 1: BACKUP OLUŞTURMA
+```text
 ✓ Backup klasörü oluştur (backup_yyyyMMdd_HHmmss)
 ✓ Tüm dosyaları kopyala
 ✓ Klasör yapısını koru
@@ -108,7 +108,7 @@ MOD: DRY-RUN (Simulasyon - Hiçbir şey yapılmaz)
 ```
 
 ### ADIM 2: DUPLIKAT ANALIZI
-```
+```text
 ✓ Duplikat dosyaları listele
 ✓ Boş klasörleri tespit et
 ✓ Hatalı dosya adlarını bul
@@ -116,7 +116,7 @@ MOD: DRY-RUN (Simulasyon - Hiçbir şey yapılmaz)
 ```
 
 ### ADIM 3: DOSYA SILME
-```
+```text
 ✓ Her duplikat dosyayı sil
 ✓ Dosya boyutunu kaydet
 ✓ Hatalı adları düzelt
@@ -124,7 +124,7 @@ MOD: DRY-RUN (Simulasyon - Hiçbir şey yapılmaz)
 ```
 
 ### ADIM 4: BOS KLASOR SILME
-```
+```text
 ✓ Her klasörün içini kontrol et
 ✓ Boş klasörleri sil
 ✓ Dolu klasörleri atla
@@ -132,7 +132,7 @@ MOD: DRY-RUN (Simulasyon - Hiçbir şey yapılmaz)
 ```
 
 ### ADIM 5: DOGRULAMA
-```
+```text
 ✓ Toplam dosya sayısını say
 ✓ Toplam klasör sayısını say
 ✓ MD5 hash ile duplikat kontrol
@@ -144,7 +144,7 @@ MOD: DRY-RUN (Simulasyon - Hiçbir şey yapılmaz)
 ## 📝 SİLİNECEK DOSYALAR (26 dosya)
 
 ### Linguistics Duplikatları (13 dosya)
-```
+```text
 ✓ linguistics\001-derivational-suffixes.md
 ✓ linguistics\translation-platform\001-translation-entry.md
 ✓ linguistics\grammer\002-derivational-prefixes.md
@@ -161,7 +161,7 @@ MOD: DRY-RUN (Simulasyon - Hiçbir şey yapılmaz)
 ```
 
 ### Architecture Duplikatları (5 dosya)
-```
+```text
 ✓ architecture\DECISIONS.md
 ✓ architecture\INDEX.md
 ✓ domain\ONTOLOGY_SYSTEM.md
@@ -170,7 +170,7 @@ MOD: DRY-RUN (Simulasyon - Hiçbir şey yapılmaz)
 ```
 
 ### Özel Durumlar (8 dosya)
-```
+```text
 ✓ domain\linguistics\001-derivational-suffixes.md
 ✓ domain\linguistics\004-verbal-operators.md
 ✓ domain\linguistics\analysis-001-synonyms.md
@@ -185,7 +185,7 @@ MOD: DRY-RUN (Simulasyon - Hiçbir şey yapılmaz)
 
 ## 🗂️ SİLİNECEK KLASÖRLER (4 klasör)
 
-```
+```text
 ✓ linguistics\translation-platform\
 ✓ linguistics\grammer\
 ✓ linguistics\dictionory-17\
@@ -250,7 +250,7 @@ Parametreler: $Path
 ## 📊 BEKLENEN SONUÇLAR
 
 ### Önceki Durum
-```
+```text
 • Toplam Dosya: 92
 • Duplikat Dosya: 26
 • Boş Klasör: 4
@@ -259,7 +259,7 @@ Parametreler: $Path
 ```
 
 ### Sonrası Durum
-```
+```text
 • Toplam Dosya: 66 (Tahmini)
 • Duplikat Dosya: 0
 • Boş Klasör: 0
@@ -268,7 +268,7 @@ Parametreler: $Path
 ```
 
 ### Tasarruf
-```
+```text
 • Silinen Dosya: 26
 • Silinen Klasör: 4
 • Tasarruf Edilen Alan: ~40 KB
@@ -280,7 +280,7 @@ Parametreler: $Path
 ## ⚠️ ÖNEMLİ NOTLAR
 
 ### Backup Konumu
-```
+```text
 E:\home\ProjeDoc\docs\backup_20260913_155030\
 ```
 
@@ -348,17 +348,17 @@ Copy-Item -Path "backup_20260913_155030\*" -Destination "." -Recurse -Force
 ## 📞 DESTEK
 
 ### Sorun: Script çalışmıyor
-```
+```text
 Çözüm: PowerShell'i yönetici olarak açın
 ```
 
 ### Sorun: Erişim reddedildi
-```
+```text
 Çözüm: Dosyaların kilitli olmadığından emin olun
 ```
 
 ### Sorun: Backup oluşturulamadı
-```
+```text
 Çözüm: Disk alanını kontrol edin (En az 100 MB)
 ```
 
@@ -379,7 +379,7 @@ Copy-Item -Path "backup_20260913_155030\*" -Destination "." -Recurse -Force
 
 ---
 
-## 🎉 TAMAMLANDI
+## 🎉 TAMAMLANDı
 
 **Script hazır!** Kullanmaya başlayabilirsiniz.
 

@@ -2,7 +2,7 @@
 
 **Tarih:** 12.10.2026
 **Sprint:** 1 - Root Coverage
-**Durum:** TAMAMLANDI
+**Durum:** TAMAMLANDı
 
 ---
 
@@ -16,7 +16,7 @@
 
 ---
 
-## 2. YAPILANLAR
+## 2. YAPıLANLAR
 
 ### 2.1 Kok Envanteri Genisletildi (3 tur)
 - Ilk 50 aday (Gemini) -> +46 kok
@@ -30,7 +30,7 @@
 - 374 kayit atandi (295 kok)
 - Toplam: +3.498 kayit
 
-### 2.3 Yontem
+### 2.3 Yöntem
 - startswith prefix match
 - Uzunluk siralamasi
 - Normalize (I -> I)
@@ -55,5 +55,5 @@ Hedefe %95 ulasildi.
 
 ---
 
-**Durum:** TAMAMLANDI
+**Durum:** TAMAMLANDı
 **Sonraki:** Sprint 2 - WordFamily Coverage

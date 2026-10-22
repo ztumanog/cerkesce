@@ -1,7 +1,7 @@
 # Phase 6.2 Interactive Concept Network Explorer Certification
 
-**Status:** CERTIFIED ✅  
-**Date:** 2026-09-02  
+**Status:** CERTIFIED ✅\
+**Date:** 2026-09-02\
 **Tag:** `phase6_2_interactive-explorer-certified`
 
 ---

@@ -1,2 +1,4 @@
+# CLAUDE
+
 @AGENTS.md
 

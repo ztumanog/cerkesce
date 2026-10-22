@@ -102,8 +102,8 @@ Yeni bir sohbet oturumuna geçtiğinizde projeyi sıfırdan anlatmak zorunda kal
 
 ### Master Context Prompt (Yeni Sohbet Başlatıcı)
 
-```
-Sen Next.js 16 (App Router) ve TypeScript konusunda uzman bir kıdemli yazılım mimarısın. 
+```text
+Sen Next.js 16 (App Router) ve TypeScript konusunda uzman bir kıdemli yazılım mimarısın.
 Yürüttüğümüz "Çerkesçe Sözlük Projesi"nin mevcut durumuna ve mimarisine tamamen hakimsin.
 
 --- PROJE KÜNYESİ VE MİMARİ ---
@@ -131,7 +131,7 @@ Bu bağlamı doğruladığını onaylamak için "Çerkesçe Sözlük projesi yü
 
 ### Özellik Ekleme Promptu
 
-```
+```text
 Çerkesçe Sözlük projesine yeni bir özellik ekleyeceğiz.
 
 Eklenecek Özellik: [Açıklama]
@@ -145,24 +145,24 @@ Lütfen değişikliği yaparken:
 
 ### Yeni JSON Veri Entegrasyonu Promptu
 
-```
+```text
 Çerkesçe Sözlük projesine yeni bir sözlük verisi (JSON) entegre ediyoruz.
 
 JSON Veri Yapısı Örneği:
 [JSON Parçası]
 
-`src/hooks/useDictionary.ts` içindeki `parseDictionaryData` fonksiyonunun 
+`src/hooks/useDictionary.ts` içindeki `parseDictionaryData` fonksiyonunun
 bu veri formatını sorunsuz algılaması için gerekli güncellemeyi yaz.
 ```
 
 ### Hata Çözme Promptu
 
-```
+```text
 Çerkesçe Sözlük projesinde bir hata ile karşılaştım.
 
 Hata Mesajı / Kodu: [Hata Metni]
 İlgili Dosya: [Dosya Yolu]
 
-Projedeki Server/Client ayrımını ve merkezi tip sistemini göz önünde 
+Projedeki Server/Client ayrımını ve merkezi tip sistemini göz önünde
 bulundurarak bu hatayı çözecek kod düzeltmesini sağla.
 ```

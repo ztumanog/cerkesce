@@ -29,10 +29,10 @@
 
 | Canonical | Başlık | Physical File | Durum |
 |-----------|--------|---------------|-------|
-| ADR-0001 | Modüler Tip | `ADR_0001_MODULAR_TYPE_ARCHITECTURE.md` | Accepted |
-| ADR-0002 | Çok Dilli Meaning | `ADR_0002_DOMAIN_MODEL_MEANING_GROUP.md` | Accepted |
-| ADR-0003 | Repository Ayrışımı | `ADR_0003_ITRANSLATIONREPOSITORY_SEPARATION.md` | Accepted |
-| ADR-0004 | Heterojen Normalizasyon | `ADR-ADR_0004_SERVER_ACTIONS_ASYNC_SAFETY.md` | Accepted |
+| ADR-0001 | Modüler Tip | `ADR-0001-MODULAR_TYPE_ARCHITECTURE.md` | Accepted |
+| ADR-0002 | Çok Dilli Meaning | `ADR-0002-DOMAIN_MODEL_MEANING_GROUP.md` | Accepted |
+| ADR-0003 | Repository Ayrışımı | `ADR-0003-ITRANSLATIONREPOSITORY_SEPARATION.md` | Accepted |
+| ADR-0004 | Heterojen Normalizasyon | `ADR-0004-SERVER_ACTIONS_ASYNC_SAFETY.md` | Accepted |
 
 ### Faz 2 — Translation Platform
 
@@ -47,7 +47,7 @@
 | ADR-0011 | Phase 3-7 Freeze | `ADR-0016-Phase3-7-Dondurma-SUPERSEDED.md` | Superseded |
 | ADR-0012 | Filter Flow | `ADR-P2-011-FILTER_FLOW_AUDIT.md` | Accepted |
 
-### Faz 3 — Concept Engine (TAMAMLANDI)
+### Faz 3 — Concept Engine (TAMAMLANDı)
 
 | Canonical | Başlık | Physical File | Durum |
 |-----------|--------|---------------|-------|
@@ -61,7 +61,7 @@
 |-----------|--------|---------------|-------|
 | ADR-0030 | Discovery | `ADR-0012-REAL_KNOWLEDGE_DISCOVERY_ASSEMBLY.md` | Accepted |
 | ADR-0031 | Query Semantic | `ADR-0013-QUERY_SEMANTIC_MAPPING.md` | Proposed |
-| ADR-0032 | Network Projection | `ADR_0014_CONCEPT_NETWORK_PROJECTION.md` | Accepted |
+| ADR-0032 | Network Projection | `ADR-0014-CONCEPT_NETWORK_PROJECTION.md` | Accepted |
 
 
 ### Faz 4 — Morphology Engine

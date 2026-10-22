@@ -1,16 +1,16 @@
 # MIMAR RAPORU - 2026-10-06
 
-**Durum:** MVP Baseline Olusturuldu
+**Durum:** MVP Baseline Oluşturuldu
 **Tag:** v0.1.0-mvp
 **Test:** 1010/1010
 **ADR-0026:** ACCEPTED - IMPLEMENTED - VERIFIED
 
-## Asama Durumu
+## Aşama Durumu
 
-| Asama | Is | Durum |
+| Aşama | Is | Durum |
 |---|---|---|
 | 0 | Dogrulama | OK |
-| 1 | ADR-0026 Veri Sozlesmesi | OK |
+| 1 | ADR-0026 Veri Sözleşmesi | OK |
 | 2 | POS + IPA + Lehce | OK |
 | 3 | HTML Temizligi | Bekliyor |
 | 4 | Concept Label | Bekliyor |
@@ -21,14 +21,14 @@
 |---|---|---|
 | D1 | 110 kayit denetimi | Yuksek |
 | D2 | 77 ? kaydi | Orta |
-| D7 | Asama 2 test kapsami (0) | Orta |
+| D7 | Aşama 2 test kapsami (0) | Orta |
 | D8 | LEHCE_TR <-> ADR-0008 | Orta |
 
 ## Sonraki Oturum
 
 D1 - 110 silinen kaydin denetimi
 
-## Kapanis
+## Kapanış
 
 > Search katmani ile lexeme katmani artik ayni dili konusuyor.
 

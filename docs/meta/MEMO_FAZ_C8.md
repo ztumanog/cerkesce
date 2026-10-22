@@ -1,14 +1,14 @@
-# MEMO: Faz C-8 Tamamlandi, Faz C-9 Baslangic
+# MEMO: Faz C-8 Tamamlandı, Faz C-9 Baslangic
 
 **Tarih:** 2026-09-30
 **Proje:** E:\projeler\Cerkesce
-**Konu:** Faz C-8 tamamlandi, Faz C-9 baslayacak
+**Konu:** Faz C-8 tamamlandı, Faz C-9 baslayacak
 
 ---
 
-## GUNCEL DURUM
+## GÜNCEL DURUM
 
-| Metrik | Deger | Hedef | Durum |
+| Metrik | Değer | Hedef | Durum |
 |---|---|---|---|
 | Roots | 58 | 55+ | ✅ |
 | Lexemes | 200 | 200+ | ✅ |
@@ -21,18 +21,18 @@
 
 ## FAZ C-8 OZET
 
-### Tamamlanan Asamalar
+### Tamamlanan Aşamalar
 
-| Asama | Is | Sonuc |
+| Aşama | Is | Sonuç |
 |---|---|---|
 | 1 | R-NYBZHY koku | 50 -> 51 |
-| 2 | M-SHXUE, M-C1YQ1U guncelleme | ✅ |
+| 2 | M-SHXUE, M-C1YQ1U güncelleme | ✅ |
 | 3.0 | 4 yeni kok | 51 -> 55 |
 | 3.1 | 9 -шхуэ lexeme'i | 177 -> 186 |
 | 3.2 | 8 -цӀыкӀу lexeme'i | 186 -> 194 |
 | 3.3 | 6 akrabalik lexeme'i | 192 -> 198 |
 | 3.4 | 2 dede lexeme'i | 198 -> 200 |
-| 4 | Word Families guncelleme | 18 -> 30 |
+| 4 | Word Families güncelleme | 18 -> 30 |
 | 5 | 5 yeni morfem | 70 -> 75 |
 | 6 | 21 yeni semantik iliski | 154 -> 175 |
 | Bonus | DialectConverter Python v3 portu | 40/40 PASS |
@@ -63,7 +63,7 @@ WF-NYBZHY, WF-ADE, WF-ANE, WF-K1UASH, WF-SHYPHUE, WF-TETE, WF-DADE, WF-BZE, WF-1
 
 4. **шъуэ → шхуэ duzeltmesi:**
    - ADY standart: шхуэ
-   - Sozluk kaniti: Адыгэ-урыс псалъалъэ (2008)
+   - Sözlük kaniti: Адыгэ-урыс псалъалъэ (2008)
 
 5. **дадэшхуэ** = buyuk dede (KBD)
 
@@ -75,7 +75,7 @@ WF-NYBZHY, WF-ADE, WF-ANE, WF-K1UASH, WF-SHYPHUE, WF-TETE, WF-DADE, WF-BZE, WF-1
 
 ## DOSYA KONUMLARI
 
-| Dosya | Konum | Deger |
+| Dosya | Konum | Değer |
 |---|---|---|
 | roots.json | public/data/linguistic/ | 58 |
 | lexemes.json | public/data/linguistic/ | 200 |
@@ -115,9 +115,9 @@ WF-NYBZHY, WF-ADE, WF-ANE, WF-K1UASH, WF-SHYPHUE, WF-TETE, WF-DADE, WF-BZE, WF-1
 Son commit'ler (Faz C-8):
 - d88c215 docs: Belge hizalama - Faz C-8 metrikleri
 - 67a30f1 Faz C-8: Tamamlama raporu
-- 935d840 Faz C-8 Asama 6: Semantic Relations (154 -> 175)
-- 7c30ef5 Faz C-8 Asama 5: 5 yeni morfem (70 -> 75)
-- 57a0c6e Faz C-8 Asama 4: Word Families (18 -> 30)
+- 935d840 Faz C-8 Aşama 6: Semantic Relations (154 -> 175)
+- 7c30ef5 Faz C-8 Aşama 5: 5 yeni morfem (70 -> 75)
+- 57a0c6e Faz C-8 Aşama 4: Word Families (18 -> 30)
 
 ---
 
@@ -128,7 +128,7 @@ Son commit'ler (Faz C-8):
 - Corpus frequency dogrulama
 - Yeni lexeme'ler ekleme
 
-### 2. Diyalekt Donusumu Genisletme
+### 2. Diyalekt Dönüşümu Genisletme
 - DialectConverter yeni kurallar
 - ADY ↔ KBD cift yonlu
 - Test setini buyutme
@@ -142,7 +142,7 @@ Son commit'ler (Faz C-8):
 - Metaforik zincirler
 - Kavramsal kumeler
 
-### 5. Sozluk Kaynaklari
+### 5. Sözlük Kaynaklari
 - Yeni akademik kaynaklar
 - Wiktionary entegrasyonu
 

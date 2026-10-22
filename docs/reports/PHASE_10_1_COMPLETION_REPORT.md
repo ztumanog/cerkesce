@@ -9,14 +9,14 @@
 
 ## 1. YONETICI OZETI
 
-Sprint 10.1 (Predictive Alerts) tamamen tamamlandi.
+Sprint 10.1 (Predictive Alerts) tamamen tamamlandı.
 Platform artik sorun olusmadan once uyari uretebiliyor.
 
 ---
 
 ## 2. EKLENEN BILESENLER
 
-| Dosya | Icerik |
+| Dosya | Içerik |
 |-------|--------|
 | PredictiveAlertDTO.ts | Alert DTO |
 | AlertRuleEngine.ts | 5 kural |
@@ -27,9 +27,9 @@ Platform artik sorun olusmadan once uyari uretebiliyor.
 
 ---
 
-## 3. TEST SONUCLARI
+## 3. TEST SONUÇLARı
 
-| Test | Sonuc |
+| Test | Sonuç |
 |------|-------|
 | AlertRuleEngine | 5/5 PASS |
 | TrendAnalyzer | 5/5 PASS |
@@ -40,7 +40,7 @@ Platform artik sorun olusmadan once uyari uretebiliyor.
 
 ---
 
-## 4. KAPANIS KRITERLERI
+## 4. KAPANıŞ KRITERLERI
 
 | Kriter | Durum |
 |--------|-------|
@@ -63,9 +63,9 @@ Bu sinir korunuyor.
 
 ---
 
-## 6. SONUC
+## 6. SONUÇ
 
-Sprint 10.1 tamamlandi.
+Sprint 10.1 tamamlandı.
 
 ---
 

@@ -7,7 +7,7 @@
 
 ---
 
-## 1. BAGLAM
+## 1. BAĞLAM
 
 Platform; Operations, Intelligence, Governance, Knowledge, Ecosystem
 katmanlarina ulasmistir.
@@ -32,14 +32,14 @@ Phase 15: Platform Reliability Engineering olarak tanimlanir.
 
 ---
 
-## 4. SPRINT YAPISI
+## 4. SPRINT YAPıSI
 
 | Sprint | Ad | Amac |
 |--------|-----|------|
 | 15.1 | Availability Engineering | SLA takibi, uptime analizi |
 | 15.2 | Error Budget Management | Hata butcesi, risk esikleri |
 | 15.3 | Failure Analytics | Ariza siniflandirma, kok neden |
-| 15.4 | Service Dependency Mapping | Servis bagimlilik haritasi |
+| 15.4 | Service Dependency Mapping | Servis bağımlılik haritasi |
 | 15.5 | Reliability Dashboard | Guvenilirlik dashboard |
 
 ---
@@ -47,11 +47,11 @@ Phase 15: Platform Reliability Engineering olarak tanimlanir.
 ## 5. ILKELER
 
 Morphology uretir
-Phrase yapilandirir
+Phrase yapılandirir
 Syntax analiz eder
 Analytics olcer
 Intelligence onerir
-Governance degerlendirir
+Governance değerlendirir
 Insan onaylar
 Runtime uygular
 

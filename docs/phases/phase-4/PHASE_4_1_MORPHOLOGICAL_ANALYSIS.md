@@ -12,7 +12,7 @@ Morphology Engine icin temel sema ve arayuzleri tanimlamak.
 | 1 | MorphologicalAnalysis | Ana sema |
 | 2 | Root Extractor | Kok cikarma |
 | 3 | Morpheme Parser | Morfem ayristirma |
-| 4 | Lemma Builder | Lemma olusturma |
+| 4 | Lemma Builder | Lemma oluşturma |
 | 5 | Inflection Handler | Cekim yonetimi |
 
 ## 3. VERI MODELI

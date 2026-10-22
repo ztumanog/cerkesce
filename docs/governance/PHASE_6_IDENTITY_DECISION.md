@@ -34,7 +34,7 @@ Faz 6 tanimi icin iki farkli kaynak:
 ### Faz 6.3: Embedding
 - Tarih: 2026-09-30
 - Belge: FAZ_6_GATE_KAPANIS_FINAL.md
-- Durum: TAMAMLANDI
+- Durum: TAMAMLANDı
 
 ---
 
@@ -46,16 +46,16 @@ Faz 6 tanimi icin iki farkli kaynak:
 |---------|------|-------|
 | 6.1 | API Gateway | CERTIFIED |
 | 6.2 | Interactive Explorer | CERTIFIED |
-| 6.3 | Embedding (Research Track) | TAMAMLANDI |
+| 6.3 | Embedding (Research Track) | TAMAMLANDı |
 
 ---
 
-## 4. SONUC
+## 4. SONUÇ
 
 - Faz 6 = API Gateway + Embedding
 - Alt fazlar: 6.1, 6.2, 6.3
 - Celiski cozuldu
-- ADR-GOV-003 guncellendi
+- ADR-GOV-003 güncellendi
 
 ---
 

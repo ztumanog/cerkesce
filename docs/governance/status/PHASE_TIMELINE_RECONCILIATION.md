@@ -27,7 +27,7 @@ Closure (ADR-GOV-013)
 
 ## Phase 15 Sonrası
 
-Phase 15 = SON BÜYÜK FAZ
+Phase 15 = SON BÜYÜK Faz
 Bundan sonrası Capability Track modeliyle yürütülür.
 
 ## Referans

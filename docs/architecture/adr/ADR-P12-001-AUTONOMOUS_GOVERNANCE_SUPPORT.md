@@ -7,7 +7,7 @@
 
 ---
 
-## 1. BAGLAM
+## 1. BAĞLAM
 
 Platform;
 - Governance Automation
@@ -47,14 +47,14 @@ Ama:
 
 ---
 
-## 4. SPRINT YAPISI
+## 4. SPRINT YAPıSI
 
 | Sprint | Ad | Amac |
 |--------|-----|------|
 | 12.1 | ADR Recommendation Assistant | Eksik/cakisan/eski ADR |
 | 12.2 | Governance Drift Prevention | Belge sapmalari |
 | 12.3 | Architecture Consistency Advisor | Kod-belge uyumsuzlugu |
-| 12.4 | Release Readiness Advisor | Surum hazirlik |
+| 12.4 | Release Readiness Advisor | Sürüm hazirlik |
 | 12.5 | Executive Planning Assistant | Ust yonetim ozeti |
 
 ---
@@ -75,11 +75,11 @@ Ama:
 ## 6. ILKELER
 
 Morphology uretir
-Phrase yapilandirir
+Phrase yapılandirir
 Syntax analiz eder
 Analytics olcer
 Intelligence onerir
-Governance degerlendirir
+Governance değerlendirir
 Insan onaylar
 Runtime uygular
 

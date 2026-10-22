@@ -7,7 +7,7 @@
 
 ---
 
-## 1. BAGLAM
+## 1. BAĞLAM
 
 Phase 8 icin kapsam tanimi gerekli.
 Mimar onayi ile Phase 8 = Production & Operations.
@@ -27,7 +27,7 @@ Mimar onayi ile Phase 8 = Production & Operations.
 | 3 | Monitoring | Health, Metrics |
 | 4 | Logging | Structured |
 | 5 | Alerting | Uyari sistemi |
-| 6 | Operational Security | Guvenlik |
+| 6 | Operational Security | Güvenlik |
 
 **Kapsam Disi:**
 
@@ -49,7 +49,7 @@ Mimar onayi ile Phase 8 = Production & Operations.
 
 ---
 
-## 4. SONUCLAR
+## 4. SONUÇLAR
 
 ### Olumlu
 

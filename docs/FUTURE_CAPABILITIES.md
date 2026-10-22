@@ -13,7 +13,7 @@
 **Yeni Model:** Capability Tracks
 
 **Gerekce:**
-Faz enflasyonunu onlemek ve platformu daha degerli hale getirmek.
+Faz enflasyonunu onlemek ve platformu daha değerli hale getirmek.
 
 ---
 
@@ -32,7 +32,7 @@ Faz enflasyonunu onlemek ve platformu daha degerli hale getirmek.
 | 9 | Intelligence | COMPLETED |
 | 10-15 | Platform Intelligence Program | COMPLETED |
 
-**Phase 15 = SON BUYUK FAZ**
+**Phase 15 = SON BUYUK Faz**
 
 ---
 
@@ -96,11 +96,11 @@ Faz enflasyonunu onlemek ve platformu daha degerli hale getirmek.
 ## 5. KORUNACAK ILKELER
 
 Morphology uretir
-Phrase yapilandirir
+Phrase yapılandirir
 Syntax analiz eder
 Analytics olcer
 Intelligence onerir
-Governance degerlendirir
+Governance değerlendirir
 Insan onaylar
 Runtime uygular
 

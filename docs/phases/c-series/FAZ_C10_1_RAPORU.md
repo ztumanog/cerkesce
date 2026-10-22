@@ -1,7 +1,7 @@
-# FAZ C-10.1 KAPANIS RAPORU
+# FAZ C-10.1 KAPANıŞ RAPORU
 
 **Tarih:** 2026-09-30
-**Durum:** TAMAMLANDI
+**Durum:** TAMAMLANDı
 **Sure:** 1 gun
 
 ## Ozet
@@ -19,7 +19,7 @@ C-10.1 Corpus Genisletme hedefleri:
 |--------|----------|-------------|-------|
 | Lexeme | 240 | 244 | +4 |
 | Frekansli | 184 | 193 | +9 |
-| Sozluk kanitli | - | +5 | +5 |
+| Sözlük kanitli | - | +5 | +5 |
 | Turev | - | +7 | +7 |
 | Test | 233 | 237 | +4 |
 
@@ -47,13 +47,13 @@ C-10.1 Corpus Genisletme hedefleri:
 ## Kavram Agi
 
 ### Merhamet
-- гукӀэгъу (5 sozluk)
-- гукӀэгъуншэ (4 sozluk)
+- гукӀэгъу (5 sözlük)
+- гукӀэгъуншэ (4 sözlük)
 - гу егъун, гу щӀэгъун, гу хущӀэузын
 
 ### Esirgemek
-- щысхьын (2 sozluk)
-- шъхьасын (2 sozluk)
+- щысхьын (2 sözlük)
+- шъхьасын (2 sözlük)
 - хъумэн, къэухъумэн, ухъумэн
 
 ## Mimar Katkisi
@@ -65,17 +65,17 @@ C-10.1 Corpus Genisletme hedefleri:
 ### Prefix Aramasi
 w.startswith(form) ile 9 lexeme bulundu
 
-### Sozluk Kaniti
+### Sözlük Kaniti
 5 kaynak ile kavram agi genisletildi
 
 ## Commit
 
 4d4123f Faz C-10.1: esirgemek kavram agi
-5000022 Faz 6 Gate kapanis + C-10.1 analizi
+5000022 Faz 6 Gate kapanış + C-10.1 analizi
 
-## Sonuc
+## Sonuç
 
-C-10.1 basariyla tamamlandi.
+C-10.1 basariyla tamamlandı.
 Kapsam: %28.6 -> %35
 Lexeme: 240 -> 244
 

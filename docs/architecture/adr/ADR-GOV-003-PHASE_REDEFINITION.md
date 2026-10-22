@@ -61,7 +61,7 @@ Eski tanımlar **SUPERSEDED** olarak işaretlenir.
 
 ---
 
-## GUNCELLEME (2026-10-02)
+## GÜNCELLEME (2026-10-02)
 
 ### Faz 6 Detaylandirma
 
@@ -83,7 +83,7 @@ Alt Fazlar:
 |---------|-------|-------|
 | 6.1 | PHASE_6_1_STATUS.md | CERTIFIED |
 | 6.2 | PHASE_6_2_STATUS.md | CERTIFIED |
-| 6.3 | FAZ_6_GATE_KAPANIS_FINAL.md | TAMAMLANDI |
+| 6.3 | FAZ_6_GATE_KAPANIS_FINAL.md | TAMAMLANDı |
 
 ### Referans
 

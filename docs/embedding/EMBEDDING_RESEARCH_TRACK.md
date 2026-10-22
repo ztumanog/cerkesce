@@ -2,13 +2,13 @@
 
 **Tarih:** 2026-10-02
 **Durum:** ARASTIRMA
-**Karar:** Faz 6 degil, ayri arastirma hatti
+**Karar:** Faz 6 değil, ayri arastirma hatti
 
 ---
 
 ## 1. AMAC
 
-Bu belge, Embedding calismalarinin Faz 6'dan ayrildigini belgeler.
+Bu belge, Embedding çalışmalarinin Faz 6'dan ayrildigini belgeler.
 ADR-GOV-004 ile uyumludur.
 
 ---
@@ -76,12 +76,12 @@ ADR-GOV-004 ile uyumludur.
 
 ---
 
-## 6. SONUC
+## 6. SONUÇ
 
 - ✅ Embedding = Research Track
 - ✅ Faz 6 = API Gateway
 - ✅ ADR-GOV-004 ile uyumlu
-- ⚠️ Belgeler guncellenmeli
+- ⚠️ Belgeler güncellenmeli
 
 ---
 

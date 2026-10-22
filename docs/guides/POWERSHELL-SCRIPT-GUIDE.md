@@ -2,8 +2,8 @@
 
 ## 📥 Script İndir
 
-**Dosya:** `reorganize-files.ps1`  
-**Boyut:** 8.3 KB  
+**Dosya:** `reorganize-files.ps1`\
+**Boyut:** 8.3 KB\
 **Durum:** Production Ready ✅
 
 ---
@@ -59,14 +59,14 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 ### ✅ Yapacakları
 
 #### 1. Yeni Klasörler Oluştur
-```
+```text
 ✓ /docs/metrics/
 ✓ /docs/security/
 ✓ /docs/phases-roadmap/
 ```
 
 #### 2. Dosyaları Taşı (4 dosya)
-```
+```text
 ✓ TECHNICAL_METRICS.md → metrics/
 ✓ SOFTWARE_INVENTORY.md → metrics/
 ✓ SECURITY.md → security/
@@ -74,7 +74,7 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 ```
 
 #### 3. Duplikat Dosyaları Sil (7 dosya)
-```
+```text
 ✓ ontolouiler.md
 ✓ engine_ARCHITECTURE.md
 ✓ ArchitesctureDEtay.md
@@ -85,18 +85,18 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 ```
 
 #### 4. Duplikat Dosyaları Sil (2 dosya - governance/)
-```
+```text
 ✓ ENGINEERING_CONSTITUTION.md
 ✓ TEAM_STRUCTURE.md
 ```
 
 #### 5. Duplikat Klasörü Sil
-```
+```text
 ✓ certification/ (governance/certifications/ tutulacak)
 ```
 
 #### 6. Doğrulama
-```
+```text
 ✓ Dosya sayısını kontrol et
 ✓ Tüm klasörlerin var olup olmadığını kontrol et
 ✓ Rapor göster
@@ -108,7 +108,7 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 
 Script aşağıdaki renklerle çıktı verir:
 
-```
+```text
 🟢 Yeşil (Success)     - İşlem başarılı
 🔴 Kırmızı (Error)     - Hata oluştu
 🟡 Sarı (Warning)      - Uyarı
@@ -122,7 +122,7 @@ Script aşağıdaki renklerle çıktı verir:
 
 ### DRY-RUN Modu Çıktısı
 
-```
+```text
 ========================================
 DOSYA REORGANIZASYON BAŞLANIYOR
 ========================================
@@ -219,7 +219,7 @@ Copy-Item -Path "e:\home\ProjeDoc\docs_backup" -Destination "e:\home\ProjeDoc\do
 ```
 
 Çıktı:
-```
+```text
 DETAYLI RAPOR
 
 Taşınan Dosyalar:
@@ -280,7 +280,7 @@ cd "e:\home\ProjeDoc\docs"
 .\reorganize-files.ps1
 ```
 
-### 6. Sonucu Doğrula
+### 6. Sonuçu Doğrula
 ```powershell
 # Dosya sayısını kontrol et
 (Get-ChildItem -Path "." -Recurse -File).Count
@@ -300,7 +300,7 @@ Get-ChildItem -Path "." -Directory
 - [ ] DRY-RUN çalıştır (-DryRun)
 - [ ] Çıktıyı kontrol et
 - [ ] Gerçek çalıştır
-- [ ] Sonucu doğrula
+- [ ] Sonuçu doğrula
 - [ ] Backup'ı kaldır (başarılıysa)
 
 ---

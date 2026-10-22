@@ -1,3 +1,6 @@
+> TARİHSEL - kanonik degil. docs/ tasinmasindan onceki envanter.
+> Kanonik kaynak: docs/governance/inventory/DOCS_EDIT_AUDIT_INDEX.md
+
 # Documentation Inventory Report
 
 Generated: 2026-09-18 23:34:28
@@ -11,11 +14,11 @@ E:\home\ProjeDoc_FINAL
 ### E:\home\ProjeDoc_FINAL
 
 - E:\home\ProjeDoc_FINAL\AGENTS.md
-- E:\home\ProjeDoc_FINAL\architecture\adr\ADR_0001_MODULAR_TYPE_ARCHITECTURE.md
-- E:\home\ProjeDoc_FINAL\architecture\adr\ADR_0002_DOMAIN_MODEL_MEANING_GROUP.md
-- E:\home\ProjeDoc_FINAL\architecture\adr\ADR_0003_ITRANSLATIONREPOSITORY_SEPARATION.md
+- E:\home\ProjeDoc_FINAL\architecture\adr\ADR-0001-MODULAR_TYPE_ARCHITECTURE.md
+- E:\home\ProjeDoc_FINAL\architecture\adr\ADR-0002-DOMAIN_MODEL_MEANING_GROUP.md
+- E:\home\ProjeDoc_FINAL\architecture\adr\ADR-0003-ITRANSLATIONREPOSITORY_SEPARATION.md
 - E:\home\ProjeDoc_FINAL\architecture\adr\ADR_0009_DIALECT_NAMING_STANDARD.md
-- E:\home\ProjeDoc_FINAL\architecture\adr\ADR_0014_CONCEPT_NETWORK_PROJECTION.md
+- E:\home\ProjeDoc_FINAL\architecture\adr\ADR-0014-CONCEPT_NETWORK_PROJECTION.md
 - E:\home\ProjeDoc_FINAL\architecture\adr\ADR_DECISIONS_SUMMARY.md
 - E:\home\ProjeDoc_FINAL\architecture\adr\ADR-0005-TRANSLATIONGROUP_STRATEGY.md
 - E:\home\ProjeDoc_FINAL\architecture\adr\ADR-0006-CROSS_DICTIONARY_MATCHING.md
@@ -29,7 +32,7 @@ E:\home\ProjeDoc_FINAL
 - E:\home\ProjeDoc_FINAL\architecture\adr\ADR-0015-TRANSLATIONENTRY_CANONICAL_IDENTITY.md
 - E:\home\ProjeDoc_FINAL\architecture\adr\ADR-0016  Phase 3-7 Modüllerinin Dondurulması ve Test İzolasyonu.md
 - E:\home\ProjeDoc_FINAL\architecture\adr\ADR-0016-Phase3-7-Dondurma-SUPERSEDED.md
-- E:\home\ProjeDoc_FINAL\architecture\adr\ADR-ADR_0004_SERVER_ACTIONS_ASYNC_SAFETY.md
+- E:\home\ProjeDoc_FINAL\architecture\adr\ADR-0004-SERVER_ACTIONS_ASYNC_SAFETY.md
 - E:\home\ProjeDoc_FINAL\architecture\adr\ADR-P4-001-PHASE4_ACTIVATION.md
 - E:\home\ProjeDoc_FINAL\architecture\adr\README.md
 - E:\home\ProjeDoc_FINAL\architecture\ARCHITECTURE.md
@@ -87,13 +90,13 @@ E:\home\ProjeDoc_FINAL
 - E:\home\ProjeDoc_FINAL\metrics\SOFTWARE_INVENTORY.md
 - E:\home\ProjeDoc_FINAL\metrics\TECHNICAL_METRICS.md
 - E:\home\ProjeDoc_FINAL\PHASE4_MEMORY.md
-- E:\home\ProjeDoc_FINAL\phases-roadmap\PHASE 2 CLOSURE REVIEW REPORT - Tamamlama Raporu.md
-- E:\home\ProjeDoc_FINAL\phases-roadmap\PHASE 3 EXECUTION PLAN - Yürütme Planı.md
-- E:\home\ProjeDoc_FINAL\phases-roadmap\PHASE 3 MIGRATION PLAN - Geçiş Planı.md
-- E:\home\ProjeDoc_FINAL\phases-roadmap\PHASE 3 READINESS PLAN - Hazırlık Planı.md
-- E:\home\ProjeDoc_FINAL\phases-roadmap\PHASE 3 UNLOCK REVIEW - Kilit Açma İncelemesi.md
-- E:\home\ProjeDoc_FINAL\phases-roadmap\PHASE 6.1 API GATEWAY CERTIFICATION - Sertifikasyon.md
-- E:\home\ProjeDoc_FINAL\phases-roadmap\PHASE 6.2 INTERACTIVE EXPLORER CERTIFICATION - Sertifikasyon.md
+- E:\home\ProjeDoc_FINAL\phases-roadmap\Phase 2 CLOSURE REVIEW REPORT - Tamamlama Raporu.md
+- E:\home\ProjeDoc_FINAL\phases-roadmap\Phase 3 EXECUTION PLAN - Yürütme Planı.md
+- E:\home\ProjeDoc_FINAL\phases-roadmap\Phase 3 MIGRATION PLAN - Geçiş Planı.md
+- E:\home\ProjeDoc_FINAL\phases-roadmap\Phase 3 READINESS PLAN - Hazırlık Planı.md
+- E:\home\ProjeDoc_FINAL\phases-roadmap\Phase 3 UNLOCK REVIEW - Kilit Açma İncelemesi.md
+- E:\home\ProjeDoc_FINAL\phases-roadmap\Phase 6.1 API GATEWAY CERTIFICATION - Sertifikasyon.md
+- E:\home\ProjeDoc_FINAL\phases-roadmap\Phase 6.2 INTERACTIVE EXPLORER CERTIFICATION - Sertifikasyon.md
 - E:\home\ProjeDoc_FINAL\phases-roadmap\PHASES- Faz Detayları.md
 - E:\home\ProjeDoc_FINAL\phases-roadmap\PHASES.md
 - E:\home\ProjeDoc_FINAL\phases-roadmap\PROJECT_ROADMAP.md - Çerkesçe Sözlük Teknik Dokümantasyonu.md
@@ -110,11 +113,11 @@ E:\home\ProjeDoc_FINAL
 ### E:\home\ProjeDoc
 
 - E:\home\ProjeDoc\🚀 PowerShell Script Kullanım Rehberi.md
-- E:\home\ProjeDoc\docs\architecture\adr\ADR_0001_MODULAR_TYPE_ARCHITECTURE.md
-- E:\home\ProjeDoc\docs\architecture\adr\ADR_0002_DOMAIN_MODEL_MEANING_GROUP.md
-- E:\home\ProjeDoc\docs\architecture\adr\ADR_0003_ITRANSLATIONREPOSITORY_SEPARATION.md
+- E:\home\ProjeDoc\docs\architecture\adr\ADR-0001-MODULAR_TYPE_ARCHITECTURE.md
+- E:\home\ProjeDoc\docs\architecture\adr\ADR-0002-DOMAIN_MODEL_MEANING_GROUP.md
+- E:\home\ProjeDoc\docs\architecture\adr\ADR-0003-ITRANSLATIONREPOSITORY_SEPARATION.md
 - E:\home\ProjeDoc\docs\architecture\adr\ADR_0009_DIALECT_NAMING_STANDARD.md
-- E:\home\ProjeDoc\docs\architecture\adr\ADR_0014_CONCEPT_NETWORK_PROJECTION.md
+- E:\home\ProjeDoc\docs\architecture\adr\ADR-0014-CONCEPT_NETWORK_PROJECTION.md
 - E:\home\ProjeDoc\docs\architecture\adr\ADR_DECISIONS_SUMMARY.md
 - E:\home\ProjeDoc\docs\architecture\adr\ADR-0005-TRANSLATIONGROUP_STRATEGY.md
 - E:\home\ProjeDoc\docs\architecture\adr\ADR-0006-CROSS_DICTIONARY_MATCHING.md
@@ -127,7 +130,7 @@ E:\home\ProjeDoc_FINAL
 - E:\home\ProjeDoc\docs\architecture\adr\ADR-0013-QUERY_SEMANTIC_MAPPING.md
 - E:\home\ProjeDoc\docs\architecture\adr\ADR-0015-TRANSLATIONENTRY_CANONICAL_IDENTITY.md
 - E:\home\ProjeDoc\docs\architecture\adr\ADR-0016  Phase 3-7 Modüllerinin Dondurulması ve Test İzolasyonu.md
-- E:\home\ProjeDoc\docs\architecture\adr\ADR-ADR_0004_SERVER_ACTIONS_ASYNC_SAFETY.md
+- E:\home\ProjeDoc\docs\architecture\adr\ADR-0004-SERVER_ACTIONS_ASYNC_SAFETY.md
 - E:\home\ProjeDoc\docs\architecture\adr\README.md
 - E:\home\ProjeDoc\docs\architecture\ARCHITECTURE_REV1.md
 - E:\home\ProjeDoc\docs\architecture\ARCHITECTURE.md
@@ -178,14 +181,14 @@ E:\home\ProjeDoc_FINAL
 - E:\home\ProjeDoc\docs\metrics\SOFTWARE_INVENTORY.md
 - E:\home\ProjeDoc\docs\metrics\TECHNICAL_METRICS.md
 - E:\home\ProjeDoc\docs\phases-roadmap\FROZEN_FILES.md
-- E:\home\ProjeDoc\docs\phases-roadmap\PHASE 2 CLOSURE REVIEW REPORT - Tamamlama Raporu.md
-- E:\home\ProjeDoc\docs\phases-roadmap\PHASE 3 EXECUTION PLAN - Yürütme Planı.md
-- E:\home\ProjeDoc\docs\phases-roadmap\PHASE 3 MIGRATION PLAN - Geçiş Planı.md
-- E:\home\ProjeDoc\docs\phases-roadmap\PHASE 3 READINESS PLAN - Hazırlık Planı.md
-- E:\home\ProjeDoc\docs\phases-roadmap\PHASE 3 UNLOCK REVIEW - Kilit Açma İncelemesi.md
-- E:\home\ProjeDoc\docs\phases-roadmap\PHASE 6.1 API GATEWAY CERTIFICATION - Sertifikasyon.md
-- E:\home\ProjeDoc\docs\phases-roadmap\PHASE 6.2 INTERACTIVE EXPLORER CERTIFICATION - Sertifikasyon.md
-- E:\home\ProjeDoc\docs\phases-roadmap\PHASE GATES REV1 - Faz Geçiş Kontrolleri.md
+- E:\home\ProjeDoc\docs\phases-roadmap\Phase 2 CLOSURE REVIEW REPORT - Tamamlama Raporu.md
+- E:\home\ProjeDoc\docs\phases-roadmap\Phase 3 EXECUTION PLAN - Yürütme Planı.md
+- E:\home\ProjeDoc\docs\phases-roadmap\Phase 3 MIGRATION PLAN - Geçiş Planı.md
+- E:\home\ProjeDoc\docs\phases-roadmap\Phase 3 READINESS PLAN - Hazırlık Planı.md
+- E:\home\ProjeDoc\docs\phases-roadmap\Phase 3 UNLOCK REVIEW - Kilit Açma İncelemesi.md
+- E:\home\ProjeDoc\docs\phases-roadmap\Phase 6.1 API GATEWAY CERTIFICATION - Sertifikasyon.md
+- E:\home\ProjeDoc\docs\phases-roadmap\Phase 6.2 INTERACTIVE EXPLORER CERTIFICATION - Sertifikasyon.md
+- E:\home\ProjeDoc\docs\phases-roadmap\Phase GATES REV1 - Faz Geçiş Kontrolleri.md
 - E:\home\ProjeDoc\docs\phases-roadmap\PHASES- Faz Detayları.md
 - E:\home\ProjeDoc\docs\phases-roadmap\PROJECT_ROADMAP.md - Çerkesçe Sözlük Teknik Dokümantasyonu.md
 - E:\home\ProjeDoc\docs\phases-roadmap\PROJECT_STATUS.md
@@ -228,4 +231,5 @@ E:\home\ProjeDoc_FINAL
 ### AGENTS.md
 - E:\home\ProjeDoc_FINAL\AGENTS.md
 - E:\home\ProjeDoc_FINAL\governance\AGENTS.md
+
 

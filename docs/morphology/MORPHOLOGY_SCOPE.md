@@ -1,4 +1,5 @@
-# MORPHOLOGY_SCOPE.md
+# MORPHOLOGY_SCOPE
+
 
 **Tarih:** 2026-10-02
 **Durum:** AKTIF
@@ -16,34 +17,12 @@ Hangi modul hangi katmanda, hangi import yasak.
 ## 2. KATMANLAR
 
 ### Katman 1: Root (Kok)
-
-| Parser | Gorev |
-|--------|-------|
-| RootClassifier | Kok siniflandirma (FREE/BOUND) |
-| RootExtractor | Kok cikarma |
-
 ### Katman 2: Morpheme (Morfem)
-
-| Parser | Gorev |
-|--------|-------|
-| MorphemeParser | Morfem ayristirma |
-| PossessivePrefixDecompiler | Iyelik onekleri |
-| NounCaseParser | Isim durum ekleri |
-| NominalDerivationDecompiler | Isim turetme |
-| PronounDecompiler | Zamirler |
-| NumeralDecompiler | Sayilar |
-| VerbDecompiler | Fiil onekleri |
-| ParticipleDecompiler | Partisipler |
-| AdverbDecompiler | Zarflar |
-| PostpositionDecompiler | Edatlar |
-| ConjunctionDecompiler | Baglaclar |
-| ParticleDecompiler | Parcaciklar |
-
 ### Katman 3: Lemma
 
 | Parser | Gorev |
 |--------|-------|
-| LemmaBuilder | Lemma olusturma |
+| LemmaBuilder | Lemma oluşturma |
 | InflectionHandler | Cekim isleme |
 
 ### Katman 4: Phrase (Obek)
@@ -56,7 +35,7 @@ Hangi modul hangi katmanda, hangi import yasak.
 
 | Parser | Gorev |
 |--------|-------|
-| SyntaxAnalyzer | Cumle yapisi (SOV, OSV, SV, OV, ERGATIVE, AFFECTIVE, BARE) |
+| SyntaxAnalyzer | Cumle yapısi (SOV, OSV, SV, OV, ERGATIVE, AFFECTIVE, BARE) |
 
 ---
 
@@ -71,26 +50,26 @@ Hangi modul hangi katmanda, hangi import yasak.
 - Cekim
 
 **Yasak:**
-- Cumle yapisi
+- Cumle yapısi
 - Anlam analizi
-- Baglam analizi
+- Bağlam analizi
 
 ### Phrase Siniri
 
 **Kapsam:**
 - Kelime obekleri
 - Obek basi (head)
-- Obek bagimlilari
+- Obek bağımlılari
 
 **Yasak:**
-- Cumle yapisi
+- Cumle yapısi
 - Anlam analizi
 - Runtime import
 
 ### Syntax Siniri
 
 **Kapsam:**
-- Cumle yapisi
+- Cumle yapısi
 - Ozne/nesne/yuklem
 - Ergatif/affektif
 
@@ -104,150 +83,11 @@ Hangi modul hangi katmanda, hangi import yasak.
 ## 4. RUNTIME YASAGI
 
 **Morphology Engine HICBIR modulu su modulleri import ETMEZ:**
-
-| Yasakli Modul | Neden |
-|---------------|-------|
-| DiscoveryFacade | Runtime katmani |
-| KnowledgeRanker | Runtime katmani |
-| SemanticRetrieval | Runtime katmani |
-| Search Runtime | Runtime katmani |
-
-**Kanit:** (asagidaki komutla dogrulanir)
-```powershell
-Get-ChildItem ".\src\domain\morphology" -Filter "*.ts" |
-  Select-String -Pattern "Discovery|KnowledgeRanker|SemanticRetrieval|Search Runtime"
-
-PowerShell'de **backtick (`)** escape karakteridir. Yani komut bozuluyor.
-
-## Çözüm: MORPHOLOGY_SCOPE.md'yi Basitleştir
-
-MORPHOLOGY_SCOPE.md'nin içindeki **kod bloğunu** kaldıralım — çünkü PowerShell'de sorun çıkarıyor.
-
-### Yeni MORPHOLOGY_SCOPE.md (Backtick'siz)
-
-```powershell
-Set-Location "E:\projeler\Cerkesce"
-
-$scope = @'
-# MORPHOLOGY_SCOPE.md
-
-**Tarih:** 2026-10-02
-**Durum:** AKTIF
-**Versiyon:** v1.0
-
----
-
-## 1. AMAC
-
-Bu belge, Morphology Engine'in SINIRLARINI tanimlar.
-Hangi modul hangi katmanda, hangi import yasak.
-
----
-
-## 2. KATMANLAR
-
-### Katman 1: Root (Kok)
-
-| Parser | Gorev |
-|--------|-------|
-| RootClassifier | Kok siniflandirma (FREE/BOUND) |
-| RootExtractor | Kok cikarma |
-
-### Katman 2: Morpheme (Morfem)
-
-| Parser | Gorev |
-|--------|-------|
-| MorphemeParser | Morfem ayristirma |
-| PossessivePrefixDecompiler | Iyelik onekleri |
-| NounCaseParser | Isim durum ekleri |
-| NominalDerivationDecompiler | Isim turetme |
-| PronounDecompiler | Zamirler |
-| NumeralDecompiler | Sayilar |
-| VerbDecompiler | Fiil onekleri |
-| ParticipleDecompiler | Partisipler |
-| AdverbDecompiler | Zarflar |
-| PostpositionDecompiler | Edatlar |
-| ConjunctionDecompiler | Baglaclar |
-| ParticleDecompiler | Parcaciklar |
-
-### Katman 3: Lemma
-
-| Parser | Gorev |
-|--------|-------|
-| LemmaBuilder | Lemma olusturma |
-| InflectionHandler | Cekim isleme |
-
-### Katman 4: Phrase (Obek)
-
-| Parser | Gorev |
-|--------|-------|
-| PhraseAnalyzer | Kelime obekleri (NP, AdjP, NumP, PossP, PP, VP, PartP, BARE) |
-
-### Katman 5: Syntax (Cumle)
-
-| Parser | Gorev |
-|--------|-------|
-| SyntaxAnalyzer | Cumle yapisi (SOV, OSV, SV, OV, ERGATIVE, AFFECTIVE, BARE) |
-
----
-
-## 3. SINIR TANIMLARI
-
-### Morphology Siniri
-
-**Kapsam:**
-- Kok
-- Morfem
-- Lemma
-- Cekim
-
-**Yasak:**
-- Cumle yapisi
-- Anlam analizi
-- Baglam analizi
-
-### Phrase Siniri
-
-**Kapsam:**
-- Kelime obekleri
-- Obek basi (head)
-- Obek bagimlilari
-
-**Yasak:**
-- Cumle yapisi
-- Anlam analizi
-- Runtime import
-
-### Syntax Siniri
-
-**Kapsam:**
-- Cumle yapisi
-- Ozne/nesne/yuklem
-- Ergatif/affektif
-
-**Yasak:**
-- Anlam analizi
-- Discovery
-- Runtime import
-
----
-
-## 4. RUNTIME YASAGI
-
-**Morphology Engine HICBIR modulu su modulleri import ETMEZ:**
-
-| Yasakli Modul | Neden |
-|---------------|-------|
-| DiscoveryFacade | Runtime katmani |
-| KnowledgeRanker | Runtime katmani |
-| SemanticRetrieval | Runtime katmani |
-| Search Runtime | Runtime katmani |
-
 **Dogrulama Komutu:**
 
 Get-ChildItem ".\src\domain\morphology" -Filter "*.ts" | Select-String -Pattern "Discovery|KnowledgeRanker|SemanticRetrieval|Search Runtime"
 
-**Beklenen:** Hic sonuc donmemeli.
+**Beklenen:** Hic sonuç donmemeli.
 
 ---
 
@@ -277,8 +117,8 @@ Token -> RootClassifier (FREE/BOUND) -> RootExtractor (kok) -> MorphemeParser (m
 | ADR-ROOT-001 | Korunuyor |
 | Runtime Izolasyonu | Korunuyor |
 | Sadece veri uretir | Evet |
-| Discovery'ye baglanmaz | Evet |
-| SemanticRelations runtime'da degil | Evet |
+| Discovery'ye bağlanmaz | Evet |
+| SemanticRelations runtime'da değil | Evet |
 
 ---
 
@@ -332,7 +172,7 @@ Her yeni modul icin:
 
 Get-ChildItem ".\src\domain\morphology" -Filter "*.ts" | Select-String -Pattern "Discovery|KnowledgeRanker|SemanticRetrieval|SearchService|SuggestionService"
 
-Beklenen: Hic sonuc donmemeli.
+Beklenen: Hic sonuç donmemeli.
 
 ### Neden Bu Kural Var?
 
@@ -340,7 +180,7 @@ Gecmiste 7 kez sistem coktu:
 
 Morphology -> Discovery -> Semantic -> Morphology
 
-Dongusel bagimlilik -> sistem kararsiz -> veri kaybi
+Dongusel bağımlılik -> sistem kararsiz -> veri kaybi
 
 Bu kural, sistem stabilitesi icin kritik.
 
@@ -349,6 +189,6 @@ Bu kural, sistem stabilitesi icin kritik.
 1. Testler fail eder
 2. Sistem kararsiz hale gelir
 3. Veri kaybi riski
-4. Dongusel bagimlilik olusur
+4. Dongusel bağımlılik olusur
 
 **Bu kural gevsetilemez.**

@@ -8,29 +8,29 @@
 
 ## 1. AMAC
 
-34 sozluk neden 19'a dusuyor? Hangi sozlukler indekslenmiyor?
+34 sözlük neden 19'a dusuyor? Hangi sözlükler indekslenmiyor?
 
 ---
 
 ## 2. SORULAR
 
-### Soru 1: 34 Sozluk Envanteri
+### Soru 1: 34 Sözlük Envanteri
 
-- [ ] Tum sozluk dosyalari listelendi mi?
+- [ ] Tum sözlük dosyalari listelendi mi?
 - [ ] dictionaries.json'da kac kayit var?
 - [ ] public/data/'da kac dosya var?
 
 ### Soru 2: Index Coverage
 
 - [ ] TranslationRepository hangi dosyalari yukluyor?
-- [ ] Hangi sozlukler eksik?
+- [ ] Hangi sözlükler eksik?
 - [ ] Neden eksik?
 
 ### Soru 3: Arama Kapsami
 
 - [ ] `псы` aramasi -> 19 kaynak
-- [ ] 34 sozluk nerede?
-- [ ] Turkce sozlukler neden yok?
+- [ ] 34 sözlük nerede?
+- [ ] Turkce sözlükler neden yok?
 
 ### Soru 4: Ters Arama
 
@@ -45,7 +45,7 @@
 
 ---
 
-## 4. SONUC
+## 4. SONUÇ
 
 (Bekliyor)
 
@@ -106,19 +106,6 @@ P5-001 TAMAMEN COZULDU - Arama modu semantigi net
 ---
 
 ## P5-001 ARAMA MODU SEMANTIGI (2026-09-25)
-
-### Sorun
-- tam modu, iceren gibi davraniyordu (t.includes kullaniliyordu)
-- Arapca ال (el-) takisi normalizasyonu yoktu
-- Arapca virgul (،) tokenize edilmiyordu
-
-### Cozum
-- tam = exact match (w === q, t === q, wParsed/tParsed.mainTokens)
-- baslayan = prefix search (w.startsWith, t.startsWith)
-- iceren = full-text search (w.includes, t.includes)
-- normalizeArabic: Arapca ال temizleme
-- tokenize regex: Arapca virgul (،) eklendi
-
 ### Dogrulama
 - псы (tam) -> 19 kaynak
 - псы (baslayan) -> псы* kelimeleri

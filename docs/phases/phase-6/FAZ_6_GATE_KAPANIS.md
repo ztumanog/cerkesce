@@ -1,7 +1,7 @@
-# FAZ 6 GATE KAPANIS RAPORU
+# FAZ 6 GATE KAPANıŞ RAPORU
 
 **Tarih:** 2026-09-30
-**Durum:** TAMAMLANDI
+**Durum:** TAMAMLANDı
 **Mimar Karari:** KOSULLU ONAY
 
 ## Sorular ve Kararlar
@@ -25,6 +25,6 @@
 
 d94e203 Faz 6 Gate revizyonu
 
-## Sonuc
+## Sonuç
 
-Faz 6 Gate basariyla tamamlandi.
+Faz 6 Gate basariyla tamamlandı.

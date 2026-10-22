@@ -52,7 +52,7 @@ Ornek:
 | Yasak | Neden |
 |-------|-------|
 | Ayni numarayi iki farkli ADR icin kullanmak | Catisma |
-| Numarasiz ADR olusturmak | Takip edilemez |
+| Numarasiz ADR oluşturmak | Takip edilemez |
 | Physical = Canonical uyumsuzlugu | Karisiklik |
 
 ---
@@ -62,8 +62,8 @@ Ornek:
 1. Catisma tespit edilir
 2. ADR_INDEX.md kontrol edilir
 3. Yeni numara atanir
-4. Dosya adi guncellenir
-5. Tum referanslar guncellenir
+4. Dosya adi güncellenir
+5. Tum referanslar güncellenir
 
 ---
 
@@ -83,7 +83,7 @@ Ornek:
 
 ## 6. DOGRULAMA
 
-Her ADR ekleme/guncelleme sonrasi:
+Her ADR ekleme/güncelleme sonrasi:
 
 1. ADR_INDEX.md kontrol
 2. Physical dosya kontrol

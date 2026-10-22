@@ -8,7 +8,7 @@
 
 ## 1. MEVCUT YUK
 
-| Metrik | Deger |
+| Metrik | Değer |
 |--------|-------|
 | CPU | 8 cores, %0 |
 | Memory | 49 GB, %44.58 |
@@ -26,7 +26,7 @@
 | 5x | 5x | %0 | %100 | critical |
 | 10x | 10x | %0 | %100 | critical |
 
-**Sonuc:** Memory, buyume ile ilk darbogaz noktasi.
+**Sonuç:** Memory, buyume ile ilk darbogaz noktasi.
 
 ---
 
@@ -56,7 +56,7 @@
 ## 5. RUNTIME ISOLATION
 
 Morphology uretir
-Phrase yapilandirir
+Phrase yapılandirir
 Syntax analiz eder
 Runtime karar verir
 

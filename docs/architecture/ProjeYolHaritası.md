@@ -1,6 +1,6 @@
 # 🛠️ Çerkesçe Sözlük - Teknik Dokümantasyon
 
-**Son Güncelleme:** 13 Eylül 2026  
+**Son Güncelleme:** 13 Eylül 2026\
 **Teknoloji:** Next.js 16 + TypeScript
 
 ---
@@ -25,7 +25,7 @@
 - **API:** REST + GraphQL
 
 ### Katmanlar
-```
+```text
 ┌─────────────────────────┐
 │   UI Layer (React)      │
 ├─────────────────────────┤
@@ -41,7 +41,7 @@
 
 ## 📁 Klasör Yapısı
 
-```
+```text
 cerkesce-sozluk/
 ├── app/                          # Next.js 16 App Router
 │   ├── layout.tsx               # Root layout
@@ -49,7 +49,7 @@ cerkesce-sozluk/
 │   ├── api/                     # API routes
 │   │   ├── dictionary/
 │   │   ├── search/
-│   │   └��─ translate/
+│   │   └── translate/
 │   └── [slug]/                  # Dynamic routes
 │
 ├── src/
@@ -124,8 +124,9 @@ interface SearchResult {
 }
 
 // Kategoriler
-type WordCategory = 
+type WordCategory =
   | 'isim'
+|---|
   | 'fiil'
   | 'sifat'
   | 'zarf'
@@ -175,7 +176,7 @@ if (word) {
 ## 💡 Prompt Kütüphanesi
 
 ### Master Context
-```
+```text
 Çerkesçe Sözlük uygulaması Next.js 16 + TypeScript ile geliştirilmektedir.
 - Veritabanı: PostgreSQL
 - Frontend: React + Tailwind CSS
@@ -184,7 +185,7 @@ if (word) {
 ```
 
 ### Feature Prompt
-```
+```text
 Yeni özellik eklerken:
 1. src/types/ klasörüne tip tanımı ekle
 2. src/components/ klasörüne bileşen ekle
@@ -193,7 +194,7 @@ Yeni özellik eklerken:
 ```
 
 ### Data Integration
-```
+```text
 Veri entegrasyonunda:
 1. Veritabanı şemasını kontrol et
 2. Migration yazı
@@ -202,7 +203,7 @@ Veri entegrasyonunda:
 ```
 
 ### Error Fix
-```
+```text
 Hata çözerken:
 1. Error mesajını oku
 2. src/types/ kontrol et

@@ -1,3 +1,5 @@
+# PROJECT_STATUS
+
 ## Faz Özeti (Tek Gerçek)
 
 > Bu tablo, PHASES.md ve ROADMAP.md ile birebir uyumludur.
@@ -19,32 +21,11 @@
 **Not:** Phase 6 = API Gateway (ADR-GOV-003). Embedding ayrı Research Track.
 
 ---
-## Faz Özeti (Tek Gerçek)
-
-> Bu tablo, PHASES.md ve ROADMAP.md ile birebir uyumludur.
-> Son güncelleme: 2026-10-03
-
-| Faz | Ad | Durum |
-|-----|-----|-------|
-| 1 | Foundation / Dataset | CLOSED |
-| 2 | Translation Platform | CLOSED |
-| 3 | Concept Foundations | CLOSED |
-| 4 | Morphology Engine | COMPLETED |
-| 5 | Discovery Engine | COMPLETED |
-| 6 | API Gateway | COMPLETED |
-| 7 | Analytics & Export | COMPLETED |
-| 8 | Production & Operations | COMPLETED |
-| 9 | Platform Intelligence | COMPLETED |
-| 10-15 | Platform Intelligence Program | COMPLETED |
-
-**Not:** Phase 6 = API Gateway (ADR-GOV-003). Embedding ayrı Research Track.
-
----
-## Phase 2 â€” Translation Platform
+## Phase 2 — Translation Platform
 
 **Status:** CLOSED
 **Karar:** ADR-GOV-006
-**Kapanis Tarihi:** 2026-10-02
+**Kapanış Tarihi:** 2026-10-02
 
 ### Teslimatlar
 - TranslationEntry
@@ -64,7 +45,7 @@
 Phase 3 Planning
 
 ---
-## Phase 4 â€” Morphology Engine
+## Phase 4 — Morphology Engine
 **Status:** COMPLETED
 **Kanit:** PHASE_4_COMPLETION_REPORT.md
 
@@ -77,15 +58,15 @@ Phase 3 Planning
 | P4-005 | InflectionHandler | OK |
 
 **Runtime Izolasyonu:** Korunuyor
-- Discovery'ye baglanmaz
-- SemanticRelations runtime'da degil
+- Discovery'ye bağlanmaz
+- SemanticRelations runtime'da değil
 - ADR-ROOT-001 uyumlu
 
 **Sonraki:** P4-006 PossessivePrefixDecompiler (planlanan)
 
 ---
 
-## Lexeme Sayilari (C-11.4)
+## Lexeme Sayıları (C-11.4)
 
 | Kategori | Sayi |
 |----------|------|
@@ -98,20 +79,20 @@ Phase 3 Planning
 
 ## Homonim Durumu
 
-Asagidaki homonimler icin LEMMA ayrimi yapildi:
+Aşağıdaki homonimler icin LEMMA ayrimi yapıldi:
 
 | Yuzey Form | Anlam | Lemma ID |
 |------------|-------|----------|
-| ÑˆÑ | sut | LEMMA-SHE (sense: sut) |
-| ÑˆÑ | mermi | LEMMA-SHE (sense: mermi) |
-| Ğ±Ğ·Ñ | dil | LEMMA-BZE (sense: dil) |
-| Ğ±Ğ·Ñ | yay | LEMMA-BZE (sense: yay) |
+| шы | sut | LEMMA-SHE (sense: sut) |
+| шы | mermi | LEMMA-SHE (sense: mermi) |
+| бзэ | dil | LEMMA-BZE (sense: dil) |
+| бзэ | yay | LEMMA-BZE (sense: yay) |
 
 Referans: ADR-0024 (Model A)
 
 ---
 
-## Phase 5 â€” Discovery Engine
+## Phase 5 — Discovery Engine
 **Status:** COMPLETED
 
 | Sprint | Baslik | Durum |
@@ -141,7 +122,7 @@ Referans: ADR-0024 (Model A)
 
 ## Capability Track Modeli (Phase 15 Sonrasi)
 
-**Phase 15 = SON BÜYÜK FAZ**
+**Phase 15 = SON BÜYÜK Faz**
 Bundan sonraki tüm geliştirmeler Capability Track modeliyle yürütülür.
 
 | Track | Durum |
@@ -152,6 +133,9 @@ Bundan sonraki tüm geliştirmeler Capability Track modeliyle yürütülür.
 | Track D — Research | Araştırma |
 
 **Referans:** PHASE_PROGRAM_CLOSURE.md, FUTURE_CAPABILITIES.md
+
+
+
 
 
 

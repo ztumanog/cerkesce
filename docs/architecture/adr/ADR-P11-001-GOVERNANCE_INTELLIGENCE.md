@@ -7,7 +7,7 @@
 
 ---
 
-## 1. BAGLAM
+## 1. BAĞLAM
 
 Platform; Operations, Intelligence ve Intelligence Automation
 katmanlarina ulasmistir.
@@ -32,7 +32,7 @@ Phase 11: Governance Intelligence olarak tanimlanir.
 
 ---
 
-## 4. SPRINT YAPISI
+## 4. SPRINT YAPıSI
 
 | Sprint | Ad | Amac |
 |--------|-----|------|
@@ -47,7 +47,7 @@ Phase 11: Governance Intelligence olarak tanimlanir.
 ## 5. ILKELER
 
 Morphology uretir
-Phrase yapilandirir
+Phrase yapılandirir
 Syntax analiz eder
 Analytics olcer
 Intelligence onerir

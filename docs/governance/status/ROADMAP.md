@@ -15,10 +15,10 @@
 | 9 | Platform Intelligence | COMPLETED |
 | 10-15 | Platform Intelligence Program | COMPLETED |
 
-**NOT:** Phase 15 = SON BUYUK FAZ. Bundan sonrasi Capability Tracks.
+**NOT:** Phase 15 = SON BUYUK Faz. Bundan sonrasi Capability Tracks.
 **Referans:** PHASES.md, ADR-GOV-013
 
-## Ayri Arastirma Hatti (Faz Degil)
+## Ayri Arastirma Hatti (Faz Değil)
 
 | Ad | Durum |
 |----|-------|

@@ -2,7 +2,7 @@
 
 **Tarih:** 12.10.2026
 **Faz:** 2 — Translation Platform
-**Karar:** DENETİM TAMAMLANDI
+**Karar:** DENETİM TAMAMLANDı
 **Mimari Denetçi Onayı:** EVET
 
 ---
@@ -81,7 +81,7 @@
 | # | Bulgu | Öncelik |
 |---|---|---|
 | 1 | search/route.ts → ADR-0007 eski mimari | Orta |
-| 2 | sozluk/family/route.ts → ADR-0007 eski mimari | Orta |
+| 2 | sözlük/family/route.ts → ADR-0007 eski mimari | Orta |
 | 3 | ITranslationRepository şişmiş (Service işi karışmış) | Düşük |
 | 4 | TranslationService zayıf (sadece delegate) | Düşük |
 | 5 | toStringSafe adı ADR-0004'te var, kodda yok | Düşük |
@@ -91,7 +91,7 @@
 ## 7. SONUÇ
 
 - ✅ Faz 2 = CLOSED (korunuyor)
-- ✅ Faz 2 Denetimi = TAMAMLANDI
+- ✅ Faz 2 Denetimi = TAMAMLANDı
 - ✅ 5/6 ADR uyumlu
 - 📦 1 dondurulmuş teknik borç (backlog)
 - 📦 5 bulgu backlog'a alındı
@@ -104,5 +104,5 @@
 
 ---
 
-**Durum:** TAMAMLANDI
+**Durum:** TAMAMLANDı
 **Sonraki Faz:** Faz 3 — Concept Engine

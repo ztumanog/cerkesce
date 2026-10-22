@@ -1,7 +1,7 @@
 # Morphology Engine Charter
 
 ## Amac
-Kabardeyce kelimelerin kok, morfem, lemma ve cekim yapilarini modellemek.
+Kabardeyce kelimelerin kok, morfem, lemma ve cekim yapılarini modellemek.
 
 ## Kapsam
 
@@ -37,7 +37,7 @@ Kabardeyce kelimelerin kok, morfem, lemma ve cekim yapilarini modellemek.
 | ADR-ROOT-001 | Korunuyor |
 | Runtime Izolasyonu | Korunuyor |
 | Sadece veri uretir | Evet |
-| Discovery''ye baglanmaz | Evet |
+| Discovery''ye bağlanmaz | Evet |
 | ADR-0040 (Root Taxonomy) | Uygulaniyor |
 
 ## Zincir
@@ -103,7 +103,7 @@ Morphology Engine analiz uretir, karar uretmez.
 
 Get-ChildItem ".\src\domain\morphology" -Filter "*.ts" | Select-String -Pattern "Discovery|KnowledgeRanker|SemanticRetrieval|SearchService|SuggestionService"
 
-Beklenen: Hic sonuc donmemeli.
+Beklenen: Hic sonuç donmemeli.
 
 ### Neden?
 
@@ -111,7 +111,7 @@ Gecmiste 7 kez sistem coktu:
 
 Morphology -> Discovery -> Semantic -> Morphology
 
-Dongusel bagimlilik -> sistem kararsiz -> veri kaybi
+Dongusel bağımlılik -> sistem kararsiz -> veri kaybi
 
 **Bu kural gevsetilemez.**
 
@@ -120,9 +120,9 @@ Dongusel bagimlilik -> sistem kararsiz -> veri kaybi
 
 ---
 
-## GUNCELLEME (2026-10-02)
+## GÜNCELLEME (2026-10-02)
 
-### Parser Sayisi: 18
+### Parser Sayısı: 18
 
 #### Root Katmani (2 parser)
 - P4-002: RootExtractor (13 test)
@@ -172,52 +172,3 @@ Dongusel bagimlilik -> sistem kararsiz -> veri kaybi
 
 ---
 
-## GUNCELLEME (2026-10-02)
-
-### Parser Sayisi: 18
-
-#### Root Katmani (2)
-- RootExtractor (13 test)
-- RootClassifier (10 test)
-
-#### Morpheme Katmani (12)
-- MorphemeParser (15 test)
-- PossessivePrefixDecompiler (15 test)
-- NounCaseParser (23 test)
-- NominalDerivationDecompiler (24 test)
-- PronounDecompiler (25 test)
-- NumeralDecompiler (30 test)
-- VerbDecompiler (24 test)
-- ParticipleDecompiler (24 test)
-- AdverbDecompiler (24 test)
-- PostpositionDecompiler (24 test)
-- ConjunctionDecompiler (24 test)
-- ParticleDecompiler (24 test)
-
-#### Lemma Katmani (2)
-- LemmaBuilder (10 test)
-- InflectionHandler (5 test)
-
-#### Phrase Katmani (1)
-- PhraseAnalyzer (30 test)
-
-#### Syntax Katmani (1)
-- SyntaxAnalyzer (40 test)
-
-### Toplam
-- 18 parser
-- 621 test PASS
-
-### Runtime Izolasyonu
-- Discovery import yok
-- KnowledgeRanker import yok
-- SemanticRetrieval import yok
-- Search Runtime import yok
-
-### Referans
-- MORPHOLOGY_SCOPE.md
-- PHASE_4_TEKNIK_KAPANIS_MATRISI.md
-- ROOTCLASSIFIER_COVERAGE.md
-
-**Imza:** Mimari Ekip
-**Tarih:** 2026-10-02

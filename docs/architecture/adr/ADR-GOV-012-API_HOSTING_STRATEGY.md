@@ -8,9 +8,9 @@
 
 ---
 
-## 1. BAGLAM
+## 1. BAĞLAM
 
-Phase 8.2 (Deployment) tamamlandi. Ancak:
+Phase 8.2 (Deployment) tamamlandı. Ancak:
 
 - Next.js UI → Vercel'de ✅
 - Express API → Henuz deploy edilmedi ❌
@@ -78,7 +78,7 @@ Express API icin hosting platformu secilecek.
 - Baglanti testi
 
 ### Sprint 8.5.4: Vercel Entegrasyonu
-- `next.config.ts` rewrites guncelle
+- `next.config.ts` rewrites güncelle
 - API URL env
 
 ---

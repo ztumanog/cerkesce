@@ -7,7 +7,7 @@
 
 ---
 
-## 1. BAGLAM
+## 1. BAĞLAM
 
 Platform;
 - Morphology Engine
@@ -49,7 +49,7 @@ Phase 10: Platform Intelligence Automation olarak tanimlanir.
 
 ---
 
-## 5. SPRINT YAPISI
+## 5. SPRINT YAPıSI
 
 | Sprint | Ad | Amac |
 |--------|-----|------|

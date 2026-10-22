@@ -1,7 +1,7 @@
 # Phase Program Closure
 
 ## Karar
-Phase 15 = SON BÜYÜK FAZ
+Phase 15 = SON BÜYÜK Faz
 Core Platform Program = CLOSED
 Future Development = Capability Tracks
 

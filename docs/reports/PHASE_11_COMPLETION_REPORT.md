@@ -9,7 +9,7 @@
 
 ## 1. YONETICI OZETI
 
-Faz 11 (Governance Intelligence) tamamen tamamlandi.
+Faz 11 (Governance Intelligence) tamamen tamamlandı.
 Platform artik kendi yonetisimini olcebiliyor.
 
 ### Sprint Durumu
@@ -26,7 +26,7 @@ Platform artik kendi yonetisimini olcebiliyor.
 
 ## 2. EKLENEN BILESENLER
 
-| Dosya | Icerik |
+| Dosya | Içerik |
 |-------|--------|
 | AdrHealthScoringService.ts | ADR saglik puani |
 | TechnicalDebtForecastingService.ts | Teknik borc tahmini |
@@ -36,9 +36,9 @@ Platform artik kendi yonetisimini olcebiliyor.
 
 ---
 
-## 3. TEST SONUCLARI
+## 3. TEST SONUÇLARı
 
-| Test | Sonuc |
+| Test | Sonuç |
 |------|-------|
 | Phase11_1 | 3/3 PASS |
 | Phase11_2 | 4/4 PASS |
@@ -49,7 +49,7 @@ Platform artik kendi yonetisimini olcebiliyor.
 
 ---
 
-## 4. KAPANIS KRITERLERI
+## 4. KAPANıŞ KRITERLERI
 
 | Kriter | Durum |
 |--------|-------|
@@ -66,7 +66,7 @@ Platform artik kendi yonetisimini olcebiliyor.
 ## 5. ILKELER
 
 Morphology uretir
-Phrase yapilandirir
+Phrase yapılandirir
 Syntax analiz eder
 Analytics olcer
 Intelligence onerir
@@ -77,7 +77,7 @@ Embedding = Research Track
 
 ---
 
-## 6. SONUC
+## 6. SONUÇ
 
 Faz 11 (Governance Intelligence) teslimat hedefleri karsilanmistir.
 Platform artik kendi mimarisini izleyebiliyor.

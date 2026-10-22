@@ -6,9 +6,9 @@
 
 ---
 
-## 1. BAGLAM
+## 1. BAĞLAM
 
-Projede asagidaki temel programlar tamamlanmistir:
+Projede aşağıdaki temel programlar tamamlanmistir:
 
 - Foundation
 - Translation
@@ -29,7 +29,7 @@ Faz 10'dan sonraki fazlar (10-15) ayni buyuk programin farkli sprintleri olmustu
 
 Phase 15 = Son Buyuk Faz olarak kabul edilir.
 
-Phase 15 sonrasi calismalar **Future Capabilities** altinda yonetilir.
+Phase 15 sonrasi çalışmalar **Future Capabilities** altinda yonetilir.
 
 Yeni ana faz acilmasi istisnai hale gelir.
 
@@ -37,8 +37,8 @@ Yeni ana faz acilmasi istisnai hale gelir.
 
 ## 3. GEREKCE
 
-Bu nedenle bundan sonra deger:
-- Yeni faz acmaktan degil
+Bu nedenle bundan sonra değer:
+- Yeni faz acmaktan değil
 - Mevcut platformu gelistirmekten gelir.
 
 ---
@@ -88,7 +88,7 @@ Bu nedenle bundan sonra deger:
 
 ---
 
-## 6. KAPANIS ETIKETI
+## 6. KAPANıŞ ETIKETI
 
 - Phase 15 = COMPLETED
 - Core Platform Program = COMPLETE

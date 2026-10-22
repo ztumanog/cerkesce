@@ -50,7 +50,7 @@ Yeni parser eklenemez, mevcut parser degistirilemez.
 ### Runtime Isolation Rule
 
 - Morphology uretir
-- Phrase yapilandirir
+- Phrase yapılandirir
 - Syntax analiz eder
 - Runtime karar verir
 
@@ -70,7 +70,7 @@ Yeni parser eklenemez, mevcut parser degistirilemez.
 
 - Hata duzeltme
 - Test ekleme
-- Dokumantasyon guncelleme
+- Dokumantasyon güncelleme
 - Refactoring (davranis degismeden)
 
 ### Istisna
@@ -91,7 +91,7 @@ Beklenen: 621/621 PASS
 
 Get-ChildItem ".\src\domain\morphology" -Filter "*.ts" | Select-String -Pattern "Discovery|KnowledgeRanker|SemanticRetrieval"
 
-Beklenen: Hic sonuc donmemeli.
+Beklenen: Hic sonuç donmemeli.
 
 ---
 
@@ -105,7 +105,7 @@ Beklenen: Hic sonuc donmemeli.
 
 ---
 
-## 6. SONUC
+## 6. SONUÇ
 
 - ✅ Morphology Engine teslim edildi
 - ✅ 18 parser donduruldu

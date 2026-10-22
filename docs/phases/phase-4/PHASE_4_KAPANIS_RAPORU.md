@@ -1,11 +1,11 @@
-# PHASE 4 KAPANIS RAPORU
+# PHASE 4 KAPANıŞ RAPORU
 
 **Tarih:** 2026-09-30
-**Durum:** TAMAMLANDI
+**Durum:** TAMAMLANDı
 
 ## 1. OZET
 
-Phase 4 (Morphology Engine) basariyla tamamlandi.
+Phase 4 (Morphology Engine) basariyla tamamlandı.
 
 ## 2. ALT GOREVLER
 
@@ -20,7 +20,7 @@ Phase 4 (Morphology Engine) basariyla tamamlandi.
 
 ## 3. METRIKLER
 
-| Metrik | Deger |
+| Metrik | Değer |
 |--------|-------|
 | Test | 257/257 PASS |
 | Test Dosyasi | 81 |
@@ -28,15 +28,15 @@ Phase 4 (Morphology Engine) basariyla tamamlandi.
 
 ## 4. COMMIT
 
-9af5517 feat(PHASE 4.5): InflectionHandler + 5 test
-ac81c12 feat(PHASE 4.4): LemmaBuilder + 5 test
-33c0592 fix(PHASE 4.3): MorphemeParser test tip duzeltmesi
-d564758 feat(PHASE 4.3): MorphemeParser + 4 test
-398c11a feat(PHASE 4.2): RootExtractor + 6 test
+9af5517 feat(Phase 4.5): InflectionHandler + 5 test
+ac81c12 feat(Phase 4.4): LemmaBuilder + 5 test
+33c0592 fix(Phase 4.3): MorphemeParser test tip duzeltmesi
+d564758 feat(Phase 4.3): MorphemeParser + 4 test
+398c11a feat(Phase 4.2): RootExtractor + 6 test
 
-## 5. SONUC
+## 5. SONUÇ
 
-Phase 4 basariyla tamamlandi.
+Phase 4 basariyla tamamlandı.
 Morphology Engine calisiyor.
 20/20 test PASS.
 

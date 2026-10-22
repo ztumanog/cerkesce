@@ -24,7 +24,7 @@ CE-03, CE-04, CE-05, CE-06, CE-10, CE-11, CE-12, CE-13, CE-14, CE-15
 - Monitoring ✅
 - Team training ✅
 
-## Review Sureci
+## Review Süreçi
 1. Steering Committee ⏳
 2. Security review ⏳
 3. Performance review ⏳
@@ -32,6 +32,6 @@ CE-03, CE-04, CE-05, CE-06, CE-10, CE-11, CE-12, CE-13, CE-14, CE-15
 5. Team readiness ⏳
 6. Kilit acma ⏳
 
-## Sonuc
-Faz 3 teknik olarak tamamlandi.
+## Sonuç
+Faz 3 teknik olarak tamamlandı.
 Gate review icin hazir.

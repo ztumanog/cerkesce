@@ -1,9 +1,9 @@
-﻿# FAZ 10 DENETIM RAPORU
+# FAZ 10 DENETIM RAPORU
 
 **Tarih:** 12.10.2026
 **Faz:** 10 - Platform Intelligence Automation
-**Kapanis Tarihi:** 2026-10-03
-**Karar:** DENETIM TAMAMLANDI
+**Kapanış Tarihi:** 2026-10-03
+**Karar:** DENETIM TAMAMLANDı
 **Mimari Denetci Onayi:** EVET
 
 ---
@@ -11,7 +11,7 @@
 ## 1. FAZ 10 DURUMU
 
 - Ad: Platform Intelligence Automation
-- Kapanis: 2026-10-03
+- Kapanış: 2026-10-03
 - Durum: COMPLETED
 - Karar Kaydi: ADR-P10-001
 - Test: 38/38 PASS (belgede)
@@ -49,7 +49,7 @@ Kanit seviyesi: Belgeden + Koddan dogrulandi
 |---|---|---|
 | src/infra/operations/ | 9 servis | Koddan dogrulandi |
 | src/tests/infra/ | 91 test dosyasi | Koddan dogrulandi |
-| Test sonucu | 334 PASS | Koddan dogrulandi |
+| Test sonuçu | 334 PASS | Koddan dogrulandi |
 | ADR-Completion | ACCEPTED | Belgeden dogrulandi |
 
 ---
@@ -58,7 +58,7 @@ Kanit seviyesi: Belgeden + Koddan dogrulandi
 
 ### 5.1 ADR-P10-001-Plan PROPOSED
 - Plan ADR'si PROPOSED kalmis
-- Kapanis ADR'si ACCEPTED
+- Kapanış ADR'si ACCEPTED
 - Siniflandirma: GOVERNANCE BORCU
 
 ### 5.2 docs/phases/phase-10/ YOK
@@ -66,7 +66,7 @@ Kanit seviyesi: Belgeden + Koddan dogrulandi
 - phase-10 YOK
 - Siniflandirma: BELGELEME BORCU
 
-### 5.3 Test Sayisi Belirsiz
+### 5.3 Test Sayısı Belirsiz
 - Belgede: 38/38 PASS
 - Gercekte: 334/334 PASS (91 dosya)
 - Siniflandirma: BELGELEME BORCU
@@ -75,7 +75,7 @@ Kanit seviyesi: Belgeden + Koddan dogrulandi
 
 ## 6. MIMAR KARARI (12.10.2026)
 
-**Hukum:** FAZ 10 TAMAMLANMIS
+**Hukum:** Faz 10 TAMAMLANMIS
 
 **Neden:**
 - ADR-P10-001-Completion ACCEPTED
@@ -86,14 +86,14 @@ Kanit seviyesi: Belgeden + Koddan dogrulandi
 
 **Siniflandirma:** GOVERNANCE + BELGELEME BORCU
 
-**Karar:** Faz 10 kapanisi KORUNUYOR.
+**Karar:** Faz 10 kapanışi KORUNUYOR.
 
 ---
 
-## 7. SONUC
+## 7. SONUÇ
 
-- Faz 10 DENETIMI: TAMAMLANDI
-- Faz 10 KAPANISI: KORUNUYOR
+- Faz 10 DENETIMI: TAMAMLANDı
+- Faz 10 KAPANıŞI: KORUNUYOR
 - Platform Intelligence Automation: Uygulanmis
 - Bulgular: Governance + Belgeleme borcu
 
@@ -105,5 +105,5 @@ Faz 11 Denetimi baslatilabilir.
 
 ---
 
-**Durum:** TAMAMLANDI
+**Durum:** TAMAMLANDı
 **Sonraki Faz:** Faz 11 - Governance Intelligence

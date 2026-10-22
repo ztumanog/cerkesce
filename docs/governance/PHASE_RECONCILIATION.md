@@ -16,9 +16,9 @@
 | Faz 4 | COMPLETED | PHASE_4_COMPLETION_REPORT.md |
 | Faz 5 | COMPLETED | PHASE_5_COMPLETION_REPORT.md |
 | Faz 6 | COMPLETED | ADR-GOV-005 (API Gateway) |
-| Faz 7 | ACTIVE | Sprint 7.0.1-7.3 tamamlandi |
+| Faz 7 | ACTIVE | Sprint 7.0.1-7.3 tamamlandı |
 
-**Not:** Anayasa guncellendi. Faz 2 CLOSED, Faz 3+ aktif.
+**Not:** Anayasa güncellendi. Faz 2 CLOSED, Faz 3+ aktif.
 **Kaynak:** ADR-GOV-003, ADR-GOV-005, PHASES.md
 
 ---
@@ -49,9 +49,9 @@
 
 ---
 
-## 4. EMBEDDING CALISMALARI
+## 4. EMBEDDING ÇALıŞMALARI
 
-**Onemli:** Embedding calismalari **Faz 6 degildir.**
+**Onemli:** Embedding çalışmalari **Faz 6 değildir.**
 
 **Kaynak:** ADR-GOV-003 → Faz 6 = API Gateway
 **Kaynak:** ADR-P5-000 → Embedding kapsam disi
@@ -87,7 +87,7 @@ tum kataloglarda gorunur:
 
 ---
 
-## 7. SONUC
+## 7. SONUÇ
 
 - Anayasa ile repo arasinda **terminoloji farki** var
 - Bu fark **belge seviyesinde** kabul edildi

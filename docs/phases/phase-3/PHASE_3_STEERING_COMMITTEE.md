@@ -3,7 +3,7 @@
 **Durum:** ONAY BEKLENIYOR
 
 ## Review Ozeti
-| Surec | Durum | Sonuc |
+| Süreç | Durum | Sonuç |
 |-------|-------|-------|
 | Security | ✅ | 5/5 PASS |
 | Performance | ✅ | 5/5 PASS |

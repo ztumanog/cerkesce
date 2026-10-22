@@ -108,9 +108,9 @@ ADR-GOV-003 ile uyumludur.
 
 ---
 
-## GUNCELLEME (2026-10-02)
+## GÜNCELLEME (2026-10-02)
 
-### Sprint 7.0.4 TAMAMLANDI
+### Sprint 7.0.4 TAMAMLANDı
 
 | # | Bilesen | Test | Durum |
 |---|---------|------|-------|

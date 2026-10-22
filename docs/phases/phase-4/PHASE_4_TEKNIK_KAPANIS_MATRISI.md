@@ -1,12 +1,12 @@
-# PHASE 4 TEKNIK KAPANIS MATRISI
+# PHASE 4 TEKNIK KAPANıŞ MATRISI
 
 **Tarih:** 2026-10-02
-**Durum:** TAMAMLANDI
+**Durum:** TAMAMLANDı
 **Versiyon:** v1.0
 
 ---
 
-## 1. PARSER SAYISI
+## 1. PARSER SAYıSı
 
 | Katman | Parser | Test |
 |--------|--------|------|
@@ -19,9 +19,9 @@
 
 ---
 
-## 2. TEST SAYISI
+## 2. TEST SAYıSı
 
-| Metrik | Deger |
+| Metrik | Değer |
 |--------|-------|
 | Toplam test | 621 |
 | PASS | 621 |
@@ -36,9 +36,9 @@
 |--------|--------|-------|
 | Root | Kok siniflandirma | ✅ |
 | Morpheme | Morfem ayristirma | ✅ |
-| Lemma | Lemma olusturma | ✅ |
+| Lemma | Lemma oluşturma | ✅ |
 | Phrase | Kelime obekleri | ✅ |
-| Syntax | Cumle yapisi | ✅ |
+| Syntax | Cumle yapısi | ✅ |
 
 ---
 
@@ -78,7 +78,7 @@
 
 ---
 
-## 7. SONUC
+## 7. SONUÇ
 
 - ✅ 18 parser
 - ✅ 621 test PASS

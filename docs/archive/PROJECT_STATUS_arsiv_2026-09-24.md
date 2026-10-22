@@ -1,7 +1,7 @@
 # Project Status Report
 
-**Last Updated:** 2026-09-22  
-**Version:** 8.2.14 (Phase 2 Recovery)  
+**Last Updated:** 2026-09-22\
+**Version:** 8.2.14 (Phase 2 Recovery)
 
 ---
 
@@ -30,7 +30,7 @@
 
 ## 📊 Test Results Summary
 
-```
+```text
 Total Tests:    225
 Passed:         143 ✅
 Failed:         82 ❌
@@ -45,8 +45,8 @@ TypeScript:     ✅ PASS
 ## 🔴 CRITICAL ISSUES (Phase 2)
 
 ### Issue #1: TranslationRepository Contract Broken
-**Severity:** CRITICAL  
-**Impact:** 4+ test files failing  
+**Severity:** CRITICAL\
+**Impact:** 4+ test files failing\
 **Affected Methods:**
 - `save()` → NOT A FUNCTION
 - `saveBatch()` → NOT A FUNCTION
@@ -61,8 +61,8 @@ TypeScript:     ✅ PASS
 **Status:** 🔴 BLOCKING
 
 ### Issue #2: MorphologyAwareMatchingService Contract Broken
-**Severity:** CRITICAL  
-**Impact:** MatchingService.test.ts (19 tests)  
+**Severity:** CRITICAL\
+**Impact:** MatchingService.test.ts (19 tests)\
 **Affected Methods:**
 - `matchEntries()` → NOT A FUNCTION
 - `setRules()` → NOT A FUNCTION
@@ -75,15 +75,15 @@ TypeScript:     ✅ PASS
 **Status:** 🔴 BLOCKING
 
 ### Issue #3: Repository Data Loading Failure
-**Severity:** CRITICAL  
+**Severity:** CRITICAL\
 **Evidence:**
-```
+```text
 search('water') → []
 findByLemma('шъхьэ') → null
 searchCrossDictionary('baş') → []
 ```
 
-**Root Cause:** 
+**Root Cause:**
 - entries not initializing
 - OR constructor clearing data
 - OR save()/loadEntries() missing
@@ -91,15 +91,15 @@ searchCrossDictionary('baş') → []
 **Status:** 🔴 BLOCKING
 
 ### Issue #4: TranslationGroup Broken
-**Severity:** HIGH  
+**Severity:** HIGH\
 **Evidence:**
-```
+```text
 group = null
 groupName = undefined
 ```
 
 **Expected:**
-```
+```text
 g-head → Baş Kavramı
 g-water → Su ve Sıvı Kavramı
 TRG_WATER → Su
@@ -108,9 +108,9 @@ TRG_WATER → Su
 **Status:** 🟠 BLOCKING
 
 ### Issue #5: Reverse Translation Search Broken
-**Severity:** HIGH  
+**Severity:** HIGH\
 **Evidence:**
-```
+```text
 water → null
 head → null
 hope → null
@@ -137,8 +137,8 @@ hope → null
 ## 📋 Recovery Plan
 
 ### Priority 1: TranslationRepository Contract
-**Objective:** Restore save(), saveBatch(), loadEntries()  
-**Timeline:** IMMEDIATE  
+**Objective:** Restore save(), saveBatch(), loadEntries()\
+**Timeline:** IMMEDIATE\
 **Verification:**
 ```bash
 npx vitest run src/tests/InMemoryTranslationRepository.test.ts
@@ -146,8 +146,8 @@ npx vitest run src/tests/InMemoryTranslationRepository.test.ts
 ```
 
 ### Priority 2: Repository Data Loading
-**Objective:** Verify entries initialization  
-**Timeline:** IMMEDIATE  
+**Objective:** Verify entries initialization\
+**Timeline:** IMMEDIATE\
 **Verification:**
 ```bash
 npx vitest run src/tests/DebugRepository.test.ts
@@ -155,8 +155,8 @@ npx vitest run src/tests/DebugRepository.test.ts
 ```
 
 ### Priority 3: MatchingService Contract
-**Objective:** Restore matchEntries(), setRules(), addRule()  
-**Timeline:** IMMEDIATE  
+**Objective:** Restore matchEntries(), setRules(), addRule()\
+**Timeline:** IMMEDIATE\
 **Verification:**
 ```bash
 npx vitest run src/tests/MatchingService.test.ts
@@ -164,8 +164,8 @@ npx vitest run src/tests/MatchingService.test.ts
 ```
 
 ### Priority 4: TranslationGroup
-**Objective:** Fix groupName and entries  
-**Timeline:** TODAY  
+**Objective:** Fix groupName and entries\
+**Timeline:** TODAY\
 **Verification:**
 ```bash
 npx vitest run src/tests/domain/discovery/services/RelatedConceptResolver.test.ts
@@ -173,8 +173,8 @@ npx vitest run src/tests/domain/discovery/services/RelatedConceptResolver.test.t
 ```
 
 ### Priority 5: Reverse Translation Search
-**Objective:** Fix searchByMeaning() flow  
-**Timeline:** TODAY  
+**Objective:** Fix searchByMeaning() flow\
+**Timeline:** TODAY\
 **Verification:**
 ```bash
 npx vitest run src/tests/ReverseTranslationSearch.test.ts
@@ -211,8 +211,8 @@ npx vitest run src/tests/ReverseTranslationSearch.test.ts
 
 ## 📞 Contact
 
-**Maintainer:** Architecture Team  
-**Last Review:** 2026-09-22  
+**Maintainer:** Architecture Team\
+**Last Review:** 2026-09-22\
 **Next Review:** 2026-09-22 (after recovery)
 
 ---
@@ -226,17 +226,17 @@ npx vitest run src/tests/ReverseTranslationSearch.test.ts
   - `dialectCounts` -> `ALL = ADY + KBD`
   - `getDictMeta` -> `sourceId` temizleme (`-0` son eki)
   - `matchesLanguage` -> `CIRC/MULTI` destegi
-  - Drawer -> dis filtre prop, ic sadece Sozluk Secimi
+  - Drawer -> dis filtre prop, ic sadece Sözlük Secimi
 
 - **Dil Listesi Yenilendi** - 7 secenek
   - Tumu, Cerkesce, Turkce, English, Russkiy, Arabic, Cok Dilli (Ru-En)
 
-- **Sozluk Gruplama** - Drawer'da `<optgroup>` ile dile gore
+- **Sözlük Gruplama** - Drawer'da `<optgroup>` ile dile gore
 
 ### Beklemede
 
 - `getDictMeta` -> `resolveSourceMetadata` birlestirmesi
-- Cok dilli sozluk olceklenmesi (`MULTI` grubu)
+- Cok dilli sözlük olceklenmesi (`MULTI` grubu)
 - API `sourceLanguage` onek temizligi
 
 ### Referans
@@ -256,7 +256,7 @@ npx vitest run src/tests/ReverseTranslationSearch.test.ts
   - Tekil alan fallback (`entry.anlam`, `entry.translation`, vb.)
   - Iki `handleSearch` tanimi tek tanima indirildi
 
-- **Yeni Ozellik: Arama Gecmisi (P4-007-A)** - EKLENDI
+- **Yeni Özellik: Arama Gecmisi (P4-007-A)** - EKLENDI
   - `useAramaGecmisi` hook (localStorage, max 10)
   - `AramaGecmisi` component (chip'ler)
   - `SozlukEkrani` entegrasyonu
@@ -267,7 +267,7 @@ npx vitest run src/tests/ReverseTranslationSearch.test.ts
   - Vercel otomatik deploy
   - TypeScript 0 hata
 
-- **Git Temizligi** - TAMAMLANDI
+- **Git Temizligi** - TAMAMLANDı
   - 9 backup klasoru silindi
   - `.gitignore` duzeltildi (`src/data/` eklendi)
   - Turkce karakter encoding duzeltildi

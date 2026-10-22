@@ -1,4 +1,4 @@
-﻿# ADR-GOV-006: Phase 2 Closure Decision
+# ADR-GOV-006: Phase 2 Closure Decision
 
 **Tarih:** 2026-10-02
 **Durum:** PROPOSED

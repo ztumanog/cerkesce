@@ -1,7 +1,7 @@
-﻿# Phase 6.1 API Gateway Certification
+# Phase 6.1 API Gateway Certification
 
-**Status:** CERTIFIED ✅  
-**Date:** 2026-09-02  
+**Status:** CERTIFIED ✅\
+**Date:** 2026-09-02\
 **Tag:** `phase6_1_api-gateway-certified`
 
 ---

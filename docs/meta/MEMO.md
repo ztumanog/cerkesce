@@ -1,4 +1,4 @@
-# MEMO - Cerkesce Sozluk Projesi
+# MEMO - Cerkesce Sözlük Projesi
 
 **Tarih:** 2026-09-23
 **Sonraki Oturum Icin**
@@ -29,7 +29,7 @@
 
 ### Oncelik 1: Favori Kelimeler (40 dk)
 
-**Hedef:** Kullanici kelimeleri favorilere ekleyebilsin.
+**Hedef:** Kullanıcı kelimeleri favorilere ekleyebilsin.
 
 **Bilesenler:**
 - useFavoriler hook (localStorage)
@@ -42,11 +42,11 @@
 - Ctrl+K - Arama
 - Esc - Drawer kapat
 - Enter - Ara
-- Up/Down - Sonuclarda gezin
+- Up/Down - Sonuçlarda gezin
 
 ### Oncelik 3: PWA Iyilestirme (30 dk)
 
-- manifest.json guncelle
+- manifest.json güncelle
 - Service Worker (offline cache)
 - Install prompt
 
@@ -61,7 +61,7 @@
 
 ## ONEMLI DOSYALAR
 
-- src/components/dictionary/SozlukEkrani.tsx - Ana ekran
+- src/components/dictionary/SözlükEkrani.tsx - Ana ekran
 - src/components/ui/KelimeDetayDrawer.tsx - Drawer
 - src/hooks/useAramaGecmisi.ts - Arama gecmisi
 - src/lib/normalizers/sourceMetadataResolver.ts - Metadata
@@ -78,48 +78,6 @@
 
 **Hazirlayan:** Gemos
 **Versiyon:** 2.0
-
----
-
-## ✅ P4-009: Drawer Semantik Sunum (2026-09-24)
-
-### Tamamlanan
-
-- **`cleanHtml.tsx`** → HTML etiketlerini KORUR (silmez)
-  - `&lt;` ve `&gt;` korunur
-  - Entity'ler çözülür
-  - Fazla boşluklar temizlenir
-
-- **`SectionRenderer`** → `dangerouslySetInnerHTML` eklendi
-  - `plain` → HTML direct render
-  - `arabic` → HTML direct render
-  - `example` → HTML direct render
-  - `related` → HTML direct render
-  - `suffix` → HTML direct render
-
-- **`sourceContentNormalizer.ts`** → `buildSections` basitleştirildi
-  - `~`, `♦`, `а)`, `б)` ayrımı
-  - Roman (I, II) ve Arabic (1., 2.) desteği
-
-- **`dictionaries.json`** → `displayName` düzeltildi (34 kayıt)
-  - `"Türkçe-Adıgece", Abaze, İ., ...` → `Abaze (2005)`
-
-### Sonuç
-
-- `I`, `II` → **bold**
-- `1.`, `2.` → **bold + sol çizgi**
-- `1)`, `2)` → **yeşil numara**
-- `◊`, `♦` → **sarı elmas**
-- `/`, `~` → **mavi eğik çizgi**
-- `а)`, `б)` → **peru rengi**
-- HTML **doğrudan render** ediliyor
-- Çerkesçe/Rusça ayrımı **otomatik**
-
-### Doğrulama
-
-- ✅ `npx tsc --noEmit` PASS
-- ✅ `npm test` → 62/62 PASS, 193/193 PASS
-
 
 ---
 

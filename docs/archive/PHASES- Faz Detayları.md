@@ -4,7 +4,7 @@
 
 ## Faz 1 — Core Dictionary Platform
 
-**Durum:** ✅ TAMAMLANDI
+**Durum:** ✅ TAMAMLANDı
 
 ### Çıktılar
 - DictionaryLoader
@@ -56,7 +56,7 @@ Faz 2 Translation Platform çalışmalarına geçmeden önce tip sistemi, build 
 - 🟡 Build Gate son doğrulama aşamasında
 
 **Build Gate Kriterleri:**
-```
+```text
 🟡 npx tsc --noEmit = Son doğrulama (16 errors in 4 files)
 🟡 npm run build = Son doğrulama (42 errors in 10 files)
 ```
@@ -65,7 +65,7 @@ Faz 2 Translation Platform çalışmalarına geçmeden önce tip sistemi, build 
 
 **DictionaryEntry = Single Source of Truth (SSOT)**
 
-```
+```text
 RawDictionaryItem
     ↓
 normalizeDictionaryEntry()
@@ -94,7 +94,7 @@ UI (Yalnızca DictionaryEntry tüketir)
 - ✅ Dictionary tip sistemi yeniden kuruldu
 - ✅ Merge conflict temizliği tamamlandı
 - ✅ SearchBox kurtarıldı
-- ✅ SozlukEkrani kurtarıldı
+- ✅ SözlükEkrani kurtarıldı
 - ✅ KelimeKarti kurtarıldı
 - ✅ GununKelimesi modeli geri kazanıldı
 - ✅ TranslationMeaning modeli ADR-0002 ile uyumlu hale getirildi

@@ -4,7 +4,7 @@
 
 ## Faz 1 — Core Dictionary Platform
 
-**Durum:** ✅ TAMAMLANDI
+**Durum:** ✅ TAMAMLANDı
 
 ### Çıktılar
 - DictionaryLoader
@@ -24,7 +24,7 @@
 
 ## Faz 2 — Translation Platform
 
-**Durum:** ✅ TAMAMLANDI
+**Durum:** ✅ TAMAMLANDı
 
 ### Çıktılar
 - TranslationEntry (Canonical ID)

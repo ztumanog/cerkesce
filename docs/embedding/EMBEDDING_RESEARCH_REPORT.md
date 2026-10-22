@@ -9,7 +9,7 @@
 
 ## 1. OZET
 
-Faz 6 Gate tamamlandi. 6 soru cevaplandi, 4/4 InMemoryVectorStore testi PASS.
+Faz 6 Gate tamamlandı. 6 soru cevaplandi, 4/4 InMemoryVectorStore testi PASS.
 Ancak "Embedding Runtime" tam olarak tamamlanmadi — arastirma katmani seviyesinde.
 
 ---
@@ -54,7 +54,7 @@ Ancak "Embedding Runtime" tam olarak tamamlanmadi — arastirma katmani seviyesi
 
 ## 4. METRIKLER
 
-| Metrik | Deger |
+| Metrik | Değer |
 |--------|-------|
 | Embedding Unit | Root |
 | Vector Store | Pure TS |
@@ -77,7 +77,7 @@ Ancak "Embedding Runtime" tam olarak tamamlanmadi — arastirma katmani seviyesi
 
 **Ancak:**
 
-- "Embedding Runtime" tam olarak devrede degil
+- "Embedding Runtime" tam olarak devrede değil
 - Bu bir arastirma katmani
 - Gercek runtime entegrasyonu ileriki fazlarda
 
@@ -86,7 +86,7 @@ Ancak "Embedding Runtime" tam olarak tamamlanmadi — arastirma katmani seviyesi
 ## 6. RUNTIME IZOLASYONU
 
 - Discovery Engine: etkilenmedi
-- SemanticRelations runtime'da degil
+- SemanticRelations runtime'da değil
 - ADR-ROOT-001 uyumlu
 
 ---

@@ -8,9 +8,9 @@
 
 ## 1. PROJE OZETI
 
-| Ozellik | Deger |
+| Özellik | Değer |
 |---------|-------|
-| Proje | Cerkesce Sozluk |
+| Proje | Cerkesce Sözlük |
 | Framework | Next.js 16 + TypeScript 5 |
 | Parser | 18 |
 | Ana Testler | 653 |
@@ -113,7 +113,7 @@
 
 ### Main Pipeline
 
-| Ozellik | Deger |
+| Özellik | Değer |
 |---------|-------|
 | Config | vitest.config.ts |
 | Test | 621 |
@@ -123,7 +123,7 @@
 
 ### Cert Pipeline
 
-| Ozellik | Deger |
+| Özellik | Değer |
 |---------|-------|
 | Config | vitest.cert.config.ts |
 | Test | 87 |
@@ -133,7 +133,7 @@
 
 ### TOPLAM
 
-| Metrik | Deger |
+| Metrik | Değer |
 |--------|-------|
 | Test | 708 |
 | PASS | 740 |
@@ -175,7 +175,7 @@
 ### Ilkeler
 
 - Morphology uretir
-- Phrase yapilandirir
+- Phrase yapılandirir
 - Syntax analiz eder
 - Runtime karar verir
 
@@ -241,7 +241,7 @@
 | Runtime Izolasyonu | Korunuyor |
 | Kapsam Dondurma | Korunuyor |
 | Morphology = Frozen Scope | Korunuyor |
-| Discovery'ye baglanmaz | Korunuyor |
+| Discovery'ye bağlanmaz | Korunuyor |
 
 ---
 

@@ -1,4 +1,4 @@
-# 📂 YAZILIM DOSYA YAPISI
+# 📂 YAZILIM DOSYA YAPıSI
 
 **Proje Yapısı**
 

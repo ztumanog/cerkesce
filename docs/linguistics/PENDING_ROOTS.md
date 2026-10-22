@@ -1,8 +1,8 @@
-﻿# Bekleyen Kokler
+# Bekleyen Kokler
 
-## Aktif Calisma: гу Ailesi (Faz C-2)
+## Aktif Çalışma: гу Ailesi (Faz C-2)
 
-- [x] губзыгъэ (62 sonuc) — Tamamlandi
+- [x] губзыгъэ (62 sonuç) — Tamamlandı
 - [ ] губжь (ofke) — Sirada
 - [ ] гупшысэ (dusunce)
 - [ ] гущыӏэ (kelime)

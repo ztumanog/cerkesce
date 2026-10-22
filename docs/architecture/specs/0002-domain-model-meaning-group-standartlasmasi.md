@@ -1,11 +1,11 @@
-﻿# 2. Domain Modelinde Çok Dilli Meaning ve Group Name Standartlaşması
+# 2. Domain Modelinde Çok Dilli Meaning ve Group Name Standartlaşması
 
 * **Statü:** Kabul Edildi
 * **Tarih:** Ağustos 2026
 * **Yazar:** Çerkesçe Sözlük Geliştirme Ekibi
 
 ## Bağlam (Context)
-Çeviri anlamlarında hedef dil bilgisinin olmaması çok dilli altyapıyı zorlaştırıyordu. Ayrıca grup nesnelerinde 
+Çeviri anlamlarında hedef dil bilgisinin olmaması çok dilli altyapıyı zorlaştırıyordu. Ayrıca grup nesnelerinde
 ame ve groupName isim uyumsuzlukları vardı.
 
 ## Karar (Decision)

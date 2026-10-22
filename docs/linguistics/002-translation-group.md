@@ -15,7 +15,7 @@ water
 su
 ماء
 
-Araştırma Sonucu:
+Araştırma Sonuçu:
 
 TranslationEntry tek başına yeterli görünmüyor.
 

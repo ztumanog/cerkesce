@@ -20,7 +20,7 @@
 
 
 
-Faz 8.5 (Operational Intelligence) tamamen tamamlandi.
+Faz 8.5 (Operational Intelligence) tamamen tamamlandı.
 
 Operasyonel metrikler otomatik izleniyor.
 
@@ -58,7 +58,7 @@ Operasyonel metrikler otomatik izleniyor.
 
 
 
-| Dosya | Icerik |
+| Dosya | Içerik |
 
 |-------|--------|
 
@@ -78,7 +78,7 @@ Operasyonel metrikler otomatik izleniyor.
 
 
 
-| Endpoint | Icerik |
+| Endpoint | Içerik |
 
 |----------|--------|
 
@@ -90,11 +90,11 @@ Operasyonel metrikler otomatik izleniyor.
 
 
 
-## 3. TEST SONUCLARI
+## 3. TEST SONUÇLARı
 
 
 
-| Test Dosyasi | Test | Sonuc |
+| Test Dosyasi | Test | Sonuç |
 
 |--------------|------|-------|
 
@@ -218,7 +218,7 @@ Tum alt sistemler entegre:
 
 
 
-## 9. KAPANIS KRITERLERI
+## 9. KAPANıŞ KRITERLERI
 
 
 
@@ -246,7 +246,7 @@ Tum alt sistemler entegre:
 
 
 
-## 10. SONUC
+## 10. SONUÇ
 
 
 

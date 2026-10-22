@@ -1,4 +1,4 @@
-﻿# ADR-GOV-011: API Gateway Strategy
+# ADR-GOV-011: API Gateway Strategy
 
 **Durum:** PROPOSED
 **Tarih:** 2026-10-02
@@ -8,7 +8,7 @@
 
 ---
 
-## 1. BAGLAM
+## 1. BAĞLAM
 
 Projede iki API katmani var:
 
@@ -83,7 +83,7 @@ belirsiz.
 
 ---
 
-## 6. SONUCLAR
+## 6. SONUÇLAR
 
 ### Olumlu
 - Express kodu korunur
@@ -99,7 +99,7 @@ belirsiz.
 
 ## 7. SPRINT 8.2 PLANI
 
-| Sprint | Ad | Icerik |
+| Sprint | Ad | Içerik |
 |--------|-----|--------|
 | 8.2.1 | Docker | Dockerfile (Next.js + Express), docker-compose.yml |
 | 8.2.2 | GitHub Actions | Main + Cert pipeline |

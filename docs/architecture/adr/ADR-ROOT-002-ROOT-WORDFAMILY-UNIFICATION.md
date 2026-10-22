@@ -1,10 +1,10 @@
-﻿# ADR-0024: Root + WordFamily Unification
+# ADR-0024: Root + WordFamily Unification
 
 **Durum:** ONERILDI
 **Tarih:** 2026-10-04
 **Ilgili ADR:** ADR-ROOT-001
 
-## Baglam
+## Bağlam
 
 Iki ayri dosya var:
 - roots.json (65 kok)

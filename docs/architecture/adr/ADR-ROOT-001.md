@@ -2,13 +2,13 @@
 
 **Durum:** KABUL EDILDI (Faz C-5 ile veriyle desteklendi)
 **Tarih:** 2026-09-28
-**Guncelleme:** 2026-09-29
+**Güncelleme:** 2026-09-29
 **Karar Veren:** Mimar
 **Kapsam:** SADECE VERI KATMANI - Runtime degismez
 
 ---
 
-## Baglam
+## Bağlam
 
 - kabardian_roots_database.json (~1500 kok)
 - Kuipers, Phoneme and Morpheme in Kabardian (1960)
@@ -77,7 +77,7 @@ Konum: src/domain/linguistic/
 - [x] Runtime'a import YOK
 - [x] 220/220 PASS korunuyor
 
-**6/6 KRITER TAMAMLANDI**
+**6/6 KRITER TAMAMLANDı**
 
 ---
 
@@ -89,7 +89,7 @@ Get-ChildItem "src" -Recurse -Filter "*.ts" |
     Where-Object { $_.FullName -notlike "*\linguistic\*" } |
     Select-String "from.*linguistic" -List
 
-### Beklenen Sonuc
+### Beklenen Sonuç
 
 Bos cikti.
 
@@ -105,7 +105,7 @@ Bos cikti.
 
 ---
 
-## Faz C-5 Sonucu
+## Faz C-5 Sonuçu
 
 **Tarih:** 2026-09-29
 **Durum:** COMPLETED
@@ -116,14 +116,14 @@ Bos cikti.
 - Linguistic Dataset Layer buyudu
 - Hicbir motor etkilenmedi
 - R-PSE ve R-PSY ayrimi netlesti
-- Korpus dogrulamasi yapildi
+- Korpus dogrulamasi yapıldi
 
 ---
 
 ## Sonraki ADR
 
 ADR-ROOT-002: Linguistic Dataset -> Runtime Entegrasyonu
-(DRAFT asamasina bile alinmayacak)
+(DRAFT aşamasina bile alinmayacak)
 
 ---
 

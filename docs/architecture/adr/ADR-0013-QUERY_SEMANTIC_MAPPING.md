@@ -1,8 +1,8 @@
 # ADR-0013: Deterministic Query Semantic Mapping Layer
 
-**Date:** 2026-09-02  
-**Status:** PROPOSED  
-**Context:** Phase 5.3 - Query-Semantic Mapping  
+**Date:** 2026-09-02\
+**Status:** PROPOSED\
+**Context:** Phase 5.3 - Query-Semantic Mapping\
 **Deciders:** Architecture Team
 
 ---
@@ -52,11 +52,11 @@ interface QueryPattern {
 }
 
 const patterns = [
-  { pattern: /^(su|water|av)\s+(nedir|ne|what)/i, 
-    conceptId: 'WATER', 
+  { pattern: /^(su|water|av)\s+(nedir|ne|what)/i,
+    conceptId: 'WATER',
     relationTypes: ['STATE_OF', 'LOCATION_OF'] },
-  { pattern: /^(çay|tea|çaî)\s+(içecek|drink)/i, 
-    conceptId: 'DRINK', 
+  { pattern: /^(çay|tea|çaî)\s+(içecek|drink)/i,
+    conceptId: 'DRINK',
     relationTypes: ['DRINK_OF'] }
 ];
 ```
@@ -88,7 +88,7 @@ enum QueryIntent {
 
 ## Architecture
 
-```
+```text
 User Query
     ↓
 [1] Unicode NFC Normalizasyonu

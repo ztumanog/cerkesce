@@ -5,9 +5,9 @@
 
 ---
 
-## Faz C-6 Hedefleri ve Sonuclari
+## Faz C-6 Hedefleri ve Sonuçları
 
-| Metrik | Faz C-5 | Hedef | Sonuc | Durum |
+| Metrik | Faz C-5 | Hedef | Sonuç | Durum |
 |---|---|---|---|---|
 | Kok | 40 | 45+ | **45** | TAMAM |
 | Lexeme | 126 | 150+ | **150** | TAMAM |
@@ -20,7 +20,7 @@
 
 ---
 
-## Faz C-6 Calismalari
+## Faz C-6 Çalışmalari
 
 ### 1. Corpus Evidence Guclendirme
 - L-PSY (psы): 320 korpus
@@ -84,7 +84,7 @@
 - [x] Runtime'a import YOK
 - [x] 220/220 PASS korundu
 
-**7/7 KRITER TAMAMLANDI**
+**7/7 KRITER TAMAMLANDı**
 
 ---
 
@@ -94,7 +94,7 @@
 2. Dictionary evidence ile 5+ kaynak dogrulamasi
 3. Dialect evidence ile Adigece-Kabardeyce karsilastirmasi
 4. 6 yeni biyolojik aile (hayvan/kar)
-5. R-BDZE duzeltmesi (sevruga, genel balik degil)
+5. R-BDZE duzeltmesi (sevruga, genel balik değil)
 
 ---
 

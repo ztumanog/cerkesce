@@ -1,7 +1,7 @@
-# FAZ 6 GATE KAPANIS
+# FAZ 6 GATE KAPANıŞ
 
 **Tarih:** 2026-09-30
-**Durum:** TAMAMLANDI
+**Durum:** TAMAMLANDı
 **Karar:** ONAYLANDI
 
 ## 1. GATE SORULARI VE CEVAPLARI
@@ -40,7 +40,7 @@
 
 ## 3. METRIKLER
 
-| Metrik | Deger |
+| Metrik | Değer |
 |--------|-------|
 | Embedding Unit | Root |
 | Vector Store | Pure TS |
@@ -57,14 +57,14 @@ dc96046 Faz 6.3: Semantic Benchmark 2.0
 c75db84 Faz 6.2: Embedding uretimi
 aa4598e Faz 6.1: Embedding Dataset Builder
 
-## 5. SONUC
+## 5. SONUÇ
 
-Faz 6 Gate basariyla tamamlandi.
+Faz 6 Gate basariyla tamamlandı.
 Mimar onayi alindi.
 Tum sorular cevaplandi.
 Pure TypeScript kullanildi.
 
 ## 6. SONRAKI ADIM
 
-Faz 6 kapanis.
-C-11 planlamasina gecis.
+Faz 6 kapanış.
+C-11 planlamasina geçiş.

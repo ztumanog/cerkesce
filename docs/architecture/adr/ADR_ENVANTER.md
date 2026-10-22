@@ -10,10 +10,10 @@
 
 | # | Canonical | Başlık | Physical File | Durum | Faz |
 |---|-----------|--------|---------------|-------|-----|
-| 1 | ADR-0001 | Modüler Tip | `ADR_0001_MODULAR_TYPE_ARCHITECTURE.md` | Accepted | 1 |
-| 2 | ADR-0002 | Çok Dilli Meaning | `ADR_0002_DOMAIN_MODEL_MEANING_GROUP.md` | Accepted | 1 |
-| 3 | ADR-0003 | Repository Ayrışımı | `ADR_0003_ITRANSLATIONREPOSITORY_SEPARATION.md` | Accepted | 1 |
-| 4 | ADR-0004 | Heterojen Normalizasyon | `ADR-ADR_0004_SERVER_ACTIONS_ASYNC_SAFETY.md` | Accepted | 1 |
+| 1 | ADR-0001 | Modüler Tip | `ADR-0001-MODULAR_TYPE_ARCHITECTURE.md` | Accepted | 1 |
+| 2 | ADR-0002 | Çok Dilli Meaning | `ADR-0002-DOMAIN_MODEL_MEANING_GROUP.md` | Accepted | 1 |
+| 3 | ADR-0003 | Repository Ayrışımı | `ADR-0003-ITRANSLATIONREPOSITORY_SEPARATION.md` | Accepted | 1 |
+| 4 | ADR-0004 | Heterojen Normalizasyon | `ADR-0004-SERVER_ACTIONS_ASYNC_SAFETY.md` | Accepted | 1 |
 | 5 | ADR-0005 | TranslationGroup | `ADR-0005-TRANSLATIONGROUP_STRATEGY.md` | Accepted | 2 |
 | 6 | ADR-0006 | Cross Dictionary | `ADR-0006-CROSS_DICTIONARY_MATCHING.md` | Accepted | 2 |
 | 7 | ADR-0007 | Repository Contract | `ADR-0007-TRANSLATIONREPOSITORY_CONTRACT.md` | Accepted | 2 |
@@ -27,7 +27,7 @@
 | 15 | ADR-0022 | Meaning Graph | `ADR-0011-MEANING_GRAPH_BOOTSTRAP.md` | Accepted | 3 |
 | 16 | ADR-0030 | Discovery | `ADR-0012-REAL_KNOWLEDGE_DISCOVERY_ASSEMBLY.md` | Accepted | 5 |
 | 17 | ADR-0031 | Query Semantic | `ADR-0013-QUERY_SEMANTIC_MAPPING.md` | Proposed | 5 |
-| 18 | ADR-0032 | Network Projection | `ADR_0014_CONCEPT_NETWORK_PROJECTION.md` | Accepted | 5 |
+| 18 | ADR-0032 | Network Projection | `ADR-0014-CONCEPT_NETWORK_PROJECTION.md` | Accepted | 5 |
 | 19 | ADR-GOV-001 | Catalog Strategy | `ADR-GOV-001-CANONICAL_CATALOG_STRATEGY.md` | Accepted | — |
 | 20 | ADR-GOV-002 | Supersession | `ADR-GOV-002-HISTORICAL_SUPERSESSION.md` | Accepted | — |
 | 21 | ADR-P4-001 | Phase 4 | `ADR-P4-001-PHASE4_ACTIVATION.md` | Accepted | — |

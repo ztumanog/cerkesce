@@ -1,7 +1,7 @@
 # FAZ 5 KILIT ACMA TALEBI
 
-**Tarih:** 
-**Talep Eden:** 
+**Tarih:**
+**Talep Eden:**
 **Durum:** WAITING FOR PRODUCT STAGE EVIDENCE
 
 ---
@@ -31,12 +31,12 @@ Tamamlanan Paketler:
 
 ---
 
-## Product Stage Sonuclari
+## Product Stage Sonuçları
 
 | Kontrol | Durum |
 |:--------|:------|
 | Kullanim Gozlemi Toplandi | BEKLIYOR |
-| Kullanici Geri Bildirimi Toplandi | BEKLIYOR |
+| Kullanıcı Geri Bildirimi Toplandi | BEKLIYOR |
 | Product Stage Raporu Uretildi | BEKLIYOR |
 
 ---
@@ -45,7 +45,7 @@ Tamamlanan Paketler:
 
 ### P5-001 Corpus Analytics
 - Kelime sikliklari
-- Sozluk dagilimlari
+- Sözlük dagilimlari
 - Lehce dagilimlari
 
 ### P5-002 Search Analytics
@@ -59,7 +59,7 @@ Tamamlanan Paketler:
 - Varyant eslesmeleri
 
 ### P5-004 Corpus Explorer
-- Kelime hangi sozluklerde?
+- Kelime hangi sözlüklerde?
 - Kac kez geciyor?
 - Hangi lehcelerde kullaniliyor?
 
@@ -76,7 +76,7 @@ Tamamlanan Paketler:
 
 ## Talep
 
-Phase 5 kilidinin acilmasi icin Product Stage ciktilarinin degerlendirilmesini talep ederiz.
+Phase 5 kilidinin acilmasi icin Product Stage ciktilarinin değerlendirilmesini talep ederiz.
 
 ---
 

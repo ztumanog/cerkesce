@@ -1,9 +1,9 @@
 # ADR-0010: Concept Repository
 
-**Status:** ACCEPTED ✅  
-**Date:** 2 Eylül 2026  
-**Phase:** Faz 3 (Concept Engine)  
-**Etkilenen Katmanlar:** Service, Repository, Domain  
+**Status:** ACCEPTED ✅\
+**Date:** 2 Eylül 2026\
+**Phase:** Faz 3 (Concept Engine)\
+**Etkilenen Katmanlar:** Service, Repository, Domain\
 **Confidence:** HIGH 🔥
 
 ---
@@ -53,15 +53,15 @@ interface ConceptRepository<T = Concept> {
   // Temel CRUD işlemleri
   getConceptById(conceptId: string): Promise<T | null>;
   getConceptsByIds(conceptIds: string[]): Promise<T[]>;
-  
+
   // İlişki sorgulaması
   getRelatedConcepts(conceptId: string, depth?: number): Promise<T[]>;
   getConceptRelations(conceptId: string): Promise<ConceptEdge[]>;
-  
+
   // Oluşturma ve güncelleme
   createConcept(concept: Omit<T, 'id'>): Promise<string>;
   updateConceptRelations(conceptId: string, relations: ConceptEdge[]): Promise<void>;
-  
+
   // Arama
   searchConcepts(query: string, language?: string): Promise<T[]>;
 }
@@ -97,25 +97,25 @@ interface ConceptEdge {
 class InMemoryConceptRepository implements ConceptRepository {
   private concepts: Map<string, Concept> = new Map();
   private edges: Map<string, ConceptEdge[]> = new Map();
-  
+
   async getConceptById(conceptId: string): Promise<Concept | null> {
     return this.concepts.get(conceptId) || null;
   }
-  
+
   async getRelatedConcepts(conceptId: string, depth: number = 1): Promise<Concept[]> {
     // BFS algoritması ile ilişkili kavramları getir
     const visited = new Set<string>();
     const queue: [string, number][] = [[conceptId, 0]];
     const result: Concept[] = [];
-    
+
     while (queue.length > 0) {
       const [id, d] = queue.shift()!;
       if (visited.has(id) || d > depth) continue;
-      
+
       visited.add(id);
       const concept = this.concepts.get(id);
       if (concept) result.push(concept);
-      
+
       const edges = this.edges.get(id) || [];
       for (const edge of edges) {
         if (!visited.has(edge.targetId)) {
@@ -123,10 +123,10 @@ class InMemoryConceptRepository implements ConceptRepository {
         }
       }
     }
-    
+
     return result;
   }
-  
+
   async createConcept(concept: Omit<Concept, 'id'>): Promise<string> {
     const id = `CONCEPT_${Date.now()}`;
     this.concepts.set(id, { ...concept, id });
@@ -140,13 +140,13 @@ class InMemoryConceptRepository implements ConceptRepository {
 ```typescript
 class JsonConceptRepository implements ConceptRepository {
   private data: Concept[] = [];
-  
+
   async loadFromFile(filePath: string): Promise<void> {
     // JSON dosyasından kavramları yükle
     const content = await fs.readFile(filePath, 'utf-8');
     this.data = JSON.parse(content);
   }
-  
+
   async getConceptById(conceptId: string): Promise<Concept | null> {
     return this.data.find(c => c.id === conceptId) || null;
   }
@@ -158,11 +158,11 @@ class JsonConceptRepository implements ConceptRepository {
 ```typescript
 class DatabaseConceptRepository implements ConceptRepository {
   constructor(private db: Database) {}
-  
+
   async getConceptById(conceptId: string): Promise<Concept | null> {
     return this.db.query('SELECT * FROM concepts WHERE id = ?', [conceptId]);
   }
-  
+
   async getRelatedConcepts(conceptId: string, depth: number = 1): Promise<Concept[]> {
     const query = `
       WITH RECURSIVE concept_tree AS (
@@ -242,11 +242,11 @@ class DatabaseConceptRepository implements ConceptRepository {
 
 ## Implementation Roadmap
 
-**Phase 3.1:** InMemoryConceptRepository implementasyonu  
-**Phase 3.2:** JsonConceptRepository implementasyonu  
-**Phase 3.3:** DatabaseConceptRepository implementasyonu  
-**Phase 3.4:** Unit test yazılması  
-**Phase 3.5:** Integration test yazılması  
+**Phase 3.1:** InMemoryConceptRepository implementasyonu\
+**Phase 3.2:** JsonConceptRepository implementasyonu\
+**Phase 3.3:** DatabaseConceptRepository implementasyonu\
+**Phase 3.4:** Unit test yazılması\
+**Phase 3.5:** Integration test yazılması\
 **Phase 3.6:** Performance optimization
 
 ---

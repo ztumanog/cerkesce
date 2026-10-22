@@ -1,9 +1,9 @@
 # 1) C-10.3 Kapanış Raporu
 @'
-# FAZ C-10.3 KAPANIS RAPORU
+## FAZ C-10.3 KAPANıŞ RAPORU
 
 **Tarih:** 2026-09-30
-**Durum:** TAMAMLANDI
+**Durum:** TAMAMLANDı
 
 ## Ozet
 Yeni aileler eklendi: WF-NAPE, WF-ZE, WF-PLHE, WF-TKHE
@@ -18,7 +18,7 @@ Yeni aileler eklendi: WF-NAPE, WF-ZE, WF-PLHE, WF-TKHE
 | Test | 237 | 237 | 0 |
 
 ## Yeni Aileler (4)
-- WF-NAPE (yuz/vicdan) - 8 lexeme, 19 sozluk
+- WF-NAPE (yuz/vicdan) - 8 lexeme, 19 sözlük
 - WF-ZE (agiz) - 1 lexeme
 - WF-PLHE (bakmak) - 2 lexeme
 - WF-TKHE (yazmak) - 1 lexeme
@@ -36,8 +36,8 @@ Yeni aileler eklendi: WF-NAPE, WF-ZE, WF-PLHE, WF-TKHE
 ## Commit
 0c81267 Faz C-10.3: WF-NAPE ailesi eklendi
 
-## Sonuc
-C-10.3 basariyla tamamlandi.
+## Sonuç
+C-10.3 basariyla tamamlandı.
 Toplam: 42 aile, 244 lexeme, 237/237 PASS
 
 ## Sonraki Adim
@@ -46,10 +46,10 @@ C-10.4 Metaforik Zincirler
 
 code docs\FAZ_C10_3_RAPORU.md
 
-# 2) Commit
+## 2) Commit
 git add docs/FAZ_C10_3_RAPORU.md
-git commit -m "docs(C-10.3): Kapanis raporu olusturuldu"
+git commit -m "docs(C-10.3): Kapanış raporu oluşturuldu"
 git push origin main
 
-# 3) Doğrula
+## 3) Doğrula
 git log --oneline -3

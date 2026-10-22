@@ -15,12 +15,12 @@
 | 9 | Platform Intelligence | COMPLETED |
 | 10-15 | Platform Intelligence Program | COMPLETED |
 
-**NOT:** Phase 15 = SON BUYUK FAZ
+**NOT:** Phase 15 = SON BUYUK Faz
 Bundan sonrasi Capability Tracks olarak yonetilir.
 Detay: FUTURE_CAPABILITIES.md
 Karar: ADR-GOV-013
 
-## Ayri Arastirma Hatti (Faz Degil)
+## Ayri Arastirma Hatti (Faz Değil)
 
 | Ad | Durum |
 |----|-------|
@@ -30,13 +30,13 @@ Karar: ADR-GOV-013
 
 ---
 
-**Son Guncelleme:** 2026-10-03
+**Son Güncelleme:** 2026-10-03
 
 ---
 
 ## Capability Track Modeli
 
-**Phase 15 = SON BÜYÜK FAZ**
+**Phase 15 = SON BÜYÜK Faz**
 Bundan sonraki tüm geliştirmeler Capability Track modeliyle yürütülür.
 
 | Track | Durum |

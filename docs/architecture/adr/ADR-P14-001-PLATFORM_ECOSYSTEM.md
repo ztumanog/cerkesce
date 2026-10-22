@@ -7,7 +7,7 @@
 
 ---
 
-## 1. BAGLAM
+## 1. BAĞLAM
 
 Platform; Operations, Intelligence, Governance, Knowledge
 katmanlarina ulasmistir.
@@ -32,7 +32,7 @@ Phase 14: Platform Ecosystem olarak tanimlanir.
 
 ---
 
-## 4. SPRINT YAPISI
+## 4. SPRINT YAPıSI
 
 | Sprint | Ad | Amac |
 |--------|-----|------|
@@ -47,11 +47,11 @@ Phase 14: Platform Ecosystem olarak tanimlanir.
 ## 5. ILKELER
 
 Morphology uretir
-Phrase yapilandirir
+Phrase yapılandirir
 Syntax analiz eder
 Analytics olcer
 Intelligence onerir
-Governance degerlendirir
+Governance değerlendirir
 Insan onaylar
 Runtime uygular
 

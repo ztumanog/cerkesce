@@ -7,7 +7,7 @@
 
 ---
 
-## 1. BAGLAM
+## 1. BAĞLAM
 
 Analytics katmani veri uretir.
 Ama Discovery kararlarini degistirmemeli.
@@ -38,7 +38,7 @@ Ama Discovery kararlarini degistirmemeli.
 
 ## 3. GEREKCE
 
-1. Analytics = gozlemci, karar verici degil
+1. Analytics = gozlemci, karar verici değil
 2. Discovery = karar verici
 3. Bu ayrim korunmali
 4. Runtime izolasyonu

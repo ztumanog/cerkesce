@@ -9,12 +9,12 @@ Referans: ADR-0022
 
 ## 1. Free Root (Serbest Kok)
 
-**Tanim:** Tek basina sozluk maddesi olabilen kok.
+**Tanim:** Tek basina sözlük maddesi olabilen kok.
 
-**Ozellik:**
+**Özellik:**
 - Bagimsiz gorunur
 - Cekimlenebilir
-- Sozlukte kendi maddesi vardir
+- Sözlükte kendi maddesi vardir
 
 **Ornek:**
 - (gl4.pdf'ten alinacak)
@@ -25,8 +25,8 @@ Referans: ADR-0022
 
 **Tanim:** Tek basina gorunmeyen, mutlaka onek/sonek alan kok.
 
-**Ozellik:**
-- Tek basina sozluk maddesi OLAMAZ
+**Özellik:**
+- Tek basina sözlük maddesi OLAMAZ
 - Mutlaka bir morfemle birlikte gorunur
 - Morfolojik cekirdek gorevi gorur
 
@@ -44,11 +44,11 @@ Aksi halde parser yanlis kok cikarir.
 
 ## 3. Neutral Root (Notr Kok)
 
-**Tanim:** Baglama gore free veya bound davranan kok.
+**Tanim:** Bağlama gore free veya bound davranan kok.
 
-**Ozellik:**
-- Bazi baglamlarda serbest
-- Bazi baglamlarda bagli
+**Özellik:**
+- Bazi bağlamlarda serbest
+- Bazi bağlamlarda bagli
 
 **Ornek:**
 - (gl4.pdf'ten alinacak)
@@ -59,7 +59,7 @@ Aksi halde parser yanlis kok cikarir.
 
 **Tanim:** Degismeyen, kararli kok.
 
-**Ozellik:**
+**Özellik:**
 - Cekimde degismez
 - Sabit kalir
 
@@ -68,7 +68,7 @@ Aksi halde parser yanlis kok cikarir.
 
 ---
 
-## Parser Sozlesmesi
+## Parser Sözleşmesi
 
 RootClassifier:
 - Girdi: yuzey formu
@@ -82,7 +82,7 @@ RootExtractor:
 
 ## Oncelik
 
-Root Type bilinmeden Prefix parse YANLIS sonuc verebilir.
+Root Type bilinmeden Prefix parse YANLIS sonuç verebilir.
 Bu yuzden Root Taxonomy, Prefix Slot Grammar'dan ONCE gelir.
 
 ---

@@ -1,9 +1,9 @@
-﻿# FAZ 11 DENETIM RAPORU
+# FAZ 11 DENETIM RAPORU
 
 **Tarih:** 12.10.2026
 **Faz:** 11 - Governance Intelligence
-**Kapanis Tarihi:** 2026-10-03
-**Karar:** DENETIM TAMAMLANDI
+**Kapanış Tarihi:** 2026-10-03
+**Karar:** DENETIM TAMAMLANDı
 **Mimari Denetci Onayi:** EVET
 
 ---
@@ -11,7 +11,7 @@
 ## 1. FAZ 11 DURUMU
 
 - Ad: Governance Intelligence
-- Kapanis: 2026-10-03
+- Kapanış: 2026-10-03
 - Durum: COMPLETED
 - Karar Kaydi: ADR-P11-001
 - Test: 16/16 PASS (belgeden)
@@ -59,7 +59,7 @@ Kanit seviyesi: Belgeden + Koddan dogrulandi
 
 ### 5.1 ADR-P11-001-Plan PROPOSED
 - Plan ADR'si PROPOSED
-- Kapanis ADR'si ACCEPTED
+- Kapanış ADR'si ACCEPTED
 - Siniflandirma: GOVERNANCE BORCU
 
 ### 5.2 docs/phases/phase-11/ YOK
@@ -71,16 +71,16 @@ Kanit seviyesi: Belgeden + Koddan dogrulandi
 
 ## 6. MIMAR KARARI (12.10.2026)
 
-**Hukum:** FAZ 11 TAMAMLANMIS
+**Hukum:** Faz 11 TAMAMLANMIS
 
-**Karar:** Faz 11 kapanisi KORUNUYOR.
+**Karar:** Faz 11 kapanışi KORUNUYOR.
 
 ---
 
-## 7. SONUC
+## 7. SONUÇ
 
-- Faz 11 DENETIMI: TAMAMLANDI
-- Faz 11 KAPANISI: KORUNUYOR
+- Faz 11 DENETIMI: TAMAMLANDı
+- Faz 11 KAPANıŞI: KORUNUYOR
 - Governance Intelligence: Uygulanmis
 
 ---
@@ -91,5 +91,5 @@ Faz 12 Denetimi baslatilabilir.
 
 ---
 
-**Durum:** TAMAMLANDI
+**Durum:** TAMAMLANDı
 **Sonraki Faz:** Faz 12 - Autonomous Governance Support

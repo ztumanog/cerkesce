@@ -2,7 +2,7 @@
 
 **Tarih:** 2026-09-24
 **Karar Veren:** Mimar
-**Durum:** FAZ 2 CLOSED
+**Durum:** Faz 2 CLOSED
 
 ---
 
@@ -11,7 +11,7 @@
 - **Faz 1:** CLOSED
 - **Faz 2:** CLOSED
 - **Faz 3:** CLOSED
-- **Faz 4:** ACTIVE (P4-005, P4-006, P4-007, P4-009 tamamlandi)
+- **Faz 4:** ACTIVE (P4-005, P4-006, P4-007, P4-009 tamamlandı)
 - **Product Stage:** ACTIVE
 - **Kritik Teknik Borc:** 0
 
@@ -62,10 +62,10 @@
 
 Product Stage
 
-Icerik:
+Içerik:
 - Kullanim
 - Gozlem
-- Kullanici geri bildirimi
+- Kullanıcı geri bildirimi
 - Iyilestirme backlog'u
 
 ---
@@ -74,13 +74,13 @@ Icerik:
 
 Phase 2 resmi olarak CLOSED kabul edilmistir.
 
-Bir sonraki odak alani yeni mimari gelistirme degil, urunun gercek kullanim davranislarinin izlenmesidir.
+Bir sonraki odak alani yeni mimari gelistirme değil, urunun gercek kullanim davranislarinin izlenmesidir.
 
 ---
 
 ## ARSIV
 
-Tum eski MIMAR_KARARI surumleri (v1-v8) su dosyaya tasindi:
+Tum eski MIMAR_KARARI sürümleri (v1-v8) su dosyaya tasindi:
 
 - MIMAR_KARARI_ARCHIVE_2026-09-24.md
 

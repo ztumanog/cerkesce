@@ -8,7 +8,7 @@
 
 ---
 
-## Baglam
+## Bağlam
 
 - Phase 2 closed.
 - Phase 3 complete.

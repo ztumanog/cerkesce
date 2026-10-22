@@ -51,26 +51,26 @@ Farklı kaynak sözlüklerden gelen verilerin **tekil ikili çeviri girdileri** 
 
 ### 📐 Kimlik Formülü
 
-```
+```text
 TranslationEntry.id = normalize(sourceWord) + "|" + normalize(targetWord)
 ```
 
 ### 💡 Örnekler
 
 **Örnek 1: Çerkesçe → Türkçe**
-```
+```text
 normalize("su") + "|" + normalize("su")
 → "su|su"
 ```
 
 **Örnek 2: Çerkesçe → Rusça**
-```
+```text
 normalize("псы") + "|" + normalize("вода")
 → "пси|вода"
 ```
 
 **Örnek 3: Varyant Kelimelerin Normalize Edilmesi**
-```
+```text
 normalize("suu") + "|" + normalize("su")
 → "su|su" (normalizasyon sonrası aynı)
 
@@ -79,7 +79,7 @@ normalize("SU") + "|" + normalize("SU")
 ```
 
 **Örnek 4: Özel Karakterler**
-```
+```text
 normalize("sü") + "|" + normalize("sü")
 → "su|su" (aksanlar kaldırılır)
 ```
@@ -184,7 +184,7 @@ function normalize(word: string): string {
 
 ### Bağımlılık Zinciri
 
-```
+```text
 ADR-0002: Domain Modelinde Çok Dilli Standartlaşma
      ↓ (Temel)
 ADR-0015: TranslationEntry Canonical Identity ← [BURASI]
@@ -294,7 +294,7 @@ ADR-0008: TranslationMeaning Representation Strategy
 
 ### 🚀 Proje Başarısına Katkısı
 
-```
+```text
 ADR-0015 Başarısı
      ↓
 Phase 2 Başarısı (104/104 test)
@@ -385,7 +385,7 @@ Proje Başarısı ✅
 
 ---
 
-**Son Güncelleme:** 19 Eylül 2026  
-**Versiyon:** v8.2  
-**Faz:** Phase 2 (Translation Platform)  
-**Durum:** ✅ TAMAMLANDI VE ONAYLANDI
+**Son Güncelleme:** 19 Eylül 2026\
+**Versiyon:** v8.2\
+**Faz:** Phase 2 (Translation Platform)\
+**Durum:** ✅ TAMAMLANDı VE ONAYLANDI

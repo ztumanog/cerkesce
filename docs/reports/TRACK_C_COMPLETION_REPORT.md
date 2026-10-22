@@ -9,7 +9,7 @@
 
 ## 1. YONETICI OZETI
 
-Track C (Knowledge) tamamen tamamlandi.
+Track C (Knowledge) tamamen tamamlandı.
 
 ### Capability Durumu
 
@@ -25,7 +25,7 @@ Track C (Knowledge) tamamen tamamlandi.
 
 ## 2. EKLENEN BILESENLER
 
-| Dosya | Icerik |
+| Dosya | Içerik |
 |-------|--------|
 | AdrSearchService.ts | ADR arama |
 | KnowledgeGraphService.ts | Bilgi grafi |
@@ -35,9 +35,9 @@ Track C (Knowledge) tamamen tamamlandi.
 
 ---
 
-## 3. TEST SONUCLARI
+## 3. TEST SONUÇLARı
 
-| Test | Sonuc |
+| Test | Sonuç |
 |------|-------|
 | TrackC_1 | 4/4 PASS |
 | TrackC_2 | 4/4 PASS |
@@ -48,7 +48,7 @@ Track C (Knowledge) tamamen tamamlandi.
 
 ---
 
-## 4. SONUC
+## 4. SONUÇ
 
 Track C (Knowledge) teslimat hedefleri karsilanmistir.
 Bilgi katmani aranabilir, izlenebilir ve akil yurutebilir hale gelmistir.

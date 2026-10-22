@@ -8,7 +8,7 @@
 
 ## 1. OZET
 
-Faz 4 kapsaminda 2 haftalik Product Stage gozlemi yapildi. 6 beta tester ile test edildi. Asagidaki tespitler olustu.
+Faz 4 kapsaminda 2 haftalik Product Stage gozlemi yapıldi. 6 beta tester ile test edildi. Aşağıdaki tespitler olustu.
 
 ---
 
@@ -16,18 +16,18 @@ Faz 4 kapsaminda 2 haftalik Product Stage gozlemi yapildi. 6 beta tester ile tes
 
 ### 2.1. Ters Arama Calismiyor
 
-- **Sorun:** 'псы' Turkce sozluklerde hedef dilde (Cerkessce tarafi)
+- **Sorun:** 'псы' Turkce sözlüklerde hedef dilde (Cerkessce tarafi)
 - **Beklenen:** Kaynak + Hedef dilde arama
 - **Gelen:** Sadece kaynak dilde
 - **Etkilenen:** Abaze, Huvaj, Teshu, Hilmi
 - **Etiket:** [SEARCH] [DATA]
 
-### 2.2. 15 Sozluk Atlaniyor
+### 2.2. 15 Sözlük Atlaniyor
 
-- **Beklenen:** 34 sozluk
+- **Beklenen:** 34 sözlük
 - **Gelen:** 19 kaynak
-- **Atlanan:** 15 sozluk
-- **Kritik:** Turkce sozlukler atlaniyor (Abaze, Huvaj, Teshu, Hilmi)
+- **Atlanan:** 15 sözlük
+- **Kritik:** Turkce sözlükler atlaniyor (Abaze, Huvaj, Teshu, Hilmi)
 - **Etiket:** [DATA] [SEARCH]
 
 ### 2.3. HTML Render Edilmiyor
@@ -65,7 +65,7 @@ Faz 4 kapsaminda 2 haftalik Product Stage gozlemi yapildi. 6 beta tester ile tes
 
 ---
 
-## 3. BASARILI OZELLIKLER
+## 3. BASARILI ÖZELLIKLER
 
 - Arama hizli (150 ms)
 - Drawer semantik sunum guzel
@@ -98,11 +98,11 @@ Faz 4 kapsaminda 2 haftalik Product Stage gozlemi yapildi. 6 beta tester ile tes
 
 ---
 
-## 6. FAZ 4 KAPSAMINDA DEGERLENDIRME
+## 6. FAZ 4 KAPSAMINDA DEĞERLENDIRME
 
 Bu tespitler Faz 4 kapsaminda mi, yoksa Faz 5'e mi birakilmali?
 
-### Faz 4'te Yapilabilir
+### Faz 4'te Yapılabilir
 
 - Paylasim menusu tasima
 - 'Cerkesce' -> 'Cerkesce' duzeltmesi
@@ -113,7 +113,7 @@ Bu tespitler Faz 4 kapsaminda mi, yoksa Faz 5'e mi birakilmali?
 - Ters arama
 - Arama modu
 - HTML render
-- 15 sozluk sorunu
+- 15 sözlük sorunu
 
 ---
 
@@ -121,16 +121,16 @@ Bu tespitler Faz 4 kapsaminda mi, yoksa Faz 5'e mi birakilmali?
 
 1. **Ters Arama:** Faz 4'te mi, Faz 5'te mi?
 2. **HTML Render:** Faz 4'te mi, Faz 5'te mi?
-3. **15 Sozluk:** Faz 4'te mi, Faz 5'te mi?
+3. **15 Sözlük:** Faz 4'te mi, Faz 5'te mi?
 4. **Arama Modu:** Faz 4'te mi, Faz 5'te mi?
-5. **Paylasim Menusu:** Faz 4'te yapilabilir mi?
-6. **'Cerkesce' Duzeltmesi:** Faz 4'te yapilabilir mi?
+5. **Paylasim Menusu:** Faz 4'te yapılabilir mi?
+6. **'Cerkesce' Duzeltmesi:** Faz 4'te yapılabilir mi?
 
 ---
 
-## 8. SONUC
+## 8. SONUÇ
 
-Product Stage gozlemleri tamamlandi. 7 tespit, 6 beta tester, 2 haftalik kullanim.
+Product Stage gozlemleri tamamlandı. 7 tespit, 6 beta tester, 2 haftalik kullanim.
 
 **Karar Bekleyen:** Mimar
 

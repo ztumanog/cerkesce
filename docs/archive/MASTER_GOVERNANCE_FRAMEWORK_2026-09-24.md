@@ -49,7 +49,7 @@
 | Faz 1 | CLOSED |
 | Faz 2 | CLOSED |
 | Faz 3 | COMPLETE |
-| Faz 4 | Sprintler tamamlandi |
+| Faz 4 | Sprintler tamamlandı |
 | Product Stage | ACTIVE |
 | Faz 5 | LOCKED (Charter PROPOSED) |
 

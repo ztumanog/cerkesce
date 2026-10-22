@@ -1,7 +1,7 @@
-﻿# DECISIONS - Karar Kayitlari
+# DECISIONS - Karar Kayitlari
 
-**Son Guncelleme:** 2026-10-02
-**Durum:** Faz 8.1 TAMAMLANDI, Faz 8.2 DEVAM EDIYOR
+**Son Güncelleme:** 2026-10-02
+**Durum:** Faz 8.1 TAMAMLANDı, Faz 8.2 DEVAM EDIYOR
 **SSOT:** docs/architecture/adr/ADR_INDEX.md
 
 ---
@@ -70,7 +70,7 @@
 - Main: 659/659 PASS
 - Cert: 87/87 PASS
 
-**Sonraki aktif calisma:** Phase 8 Production & Operations
+**Sonraki aktif çalışma:** Phase 8 Production & Operations
 
 **Referans:** docs/architecture/adr/ADR-GOV-006-PHASE_2_CLOSURE_DECISION.md
 
@@ -83,7 +83,7 @@
 **Faz:** 8.1
 
 **Karar:**
-Phase 8.1 (Production Readiness) kapsaminda asagidaki alanlar ele alinacak:
+Phase 8.1 (Production Readiness) kapsaminda aşağıdaki alanlar ele alinacak:
 
 1. Environment Separation
 2. Secret Management

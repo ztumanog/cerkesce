@@ -41,7 +41,7 @@ Faz 5 belgelerinde celiskiler var:
 
 1. FAZ5_DURUM_RAPORU.md incelensin
 2. Faz 5 icin tek gerceklik belirlensin
-3. PHASES.md guncellensin
+3. PHASES.md güncellensin
 
 ---
 

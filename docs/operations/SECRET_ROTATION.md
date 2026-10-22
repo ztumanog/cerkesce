@@ -19,9 +19,9 @@ Acil rotation: Sizinti suphesinde derhal.
 
 1. Yeni key uret: openssl rand -hex 32
 2. .env.local'a ekle: CERKESCE_API_KEY_DEV_NEW=<yeni>
-3. Kod guncelle: hem eski hem yeni key kabul et
+3. Kod güncelle: hem eski hem yeni key kabul et
 4. Deploy et
-5. Istemcileri guncelle
+5. Istemcileri güncelle
 6. Eski key'i sil
 7. Dokumante et
 
@@ -29,7 +29,7 @@ Acil rotation: Sizinti suphesinde derhal.
 
 1. Yeni secret uret: openssl rand -base64 64
 2. Environment'a ekle: JWT_SECRET_NEW=<yeni>
-3. Kod guncelle: cift dogrulama (eski + yeni)
+3. Kod güncelle: cift dogrulama (eski + yeni)
 4. Grace period: 7-30 gun
 5. Grace period sonunda eski secret'i sil
 
@@ -37,7 +37,7 @@ Acil rotation: Sizinti suphesinde derhal.
 
 1. Yeni secret uret
 2. Hem eski hem yeni kabul et
-3. Webhook saglayiciyi guncelle
+3. Webhook saglayiciyi güncelle
 4. Eski secret'i sil
 
 ## 5. Rotation Log
@@ -63,4 +63,4 @@ Sizinti suphesi:
 - src/infrastructure/config/secretManager.ts
 - ADR-GOV-007
 
-**Son Guncelleme:** 2026-10-02
+**Son Güncelleme:** 2026-10-02

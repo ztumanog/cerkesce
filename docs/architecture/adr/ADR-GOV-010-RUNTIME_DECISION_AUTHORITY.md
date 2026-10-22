@@ -7,7 +7,7 @@
 
 ---
 
-## 1. BAGLAM
+## 1. BAĞLAM
 
 Hangi katman ne yapar?
 Bu ayrim korunmali.
@@ -21,14 +21,14 @@ Bu ayrim korunmali.
 | Katman | Gorev | Karar Verme |
 |--------|-------|-------------|
 | Morphology | Analiz uretir | HAYIR |
-| Phrase | Yapilandirir | HAYIR |
+| Phrase | Yapılandirir | HAYIR |
 | Syntax | Analiz eder | HAYIR |
 | Runtime | Karar verir | EVET |
 
 ### Kural
 
 Morphology uretir.
-Phrase yapilandirir.
+Phrase yapılandirir.
 Syntax analiz eder.
 Runtime karar verir.
 
@@ -40,12 +40,12 @@ Hicbir analiz katmani Runtime rolunu ustlenemez.
 
 1. Sorumluluk ayrimi
 2. Runtime izolasyonu
-3. Dongusel bagimlilik onleme
+3. Dongusel bağımlılik onleme
 4. Sistem stabilitesi
 
 ---
 
-## 4. SONUCLAR
+## 4. SONUÇLAR
 
 ### Olumlu
 
@@ -56,7 +56,7 @@ Hicbir analiz katmani Runtime rolunu ustlenemez.
 ### Olumsuz
 
 - Kati sinirlar
-- Bazi ozellikler imkansiz
+- Bazi özellikler imkansiz
 
 ---
 

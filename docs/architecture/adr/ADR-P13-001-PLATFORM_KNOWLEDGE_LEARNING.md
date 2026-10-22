@@ -7,7 +7,7 @@
 
 ---
 
-## 1. BAGLAM
+## 1. BAĞLAM
 
 Platform;
 - Operations (Faz 8)
@@ -38,7 +38,7 @@ Phase 13: Platform Knowledge & Learning olarak tanimlanir.
 
 ---
 
-## 4. SPRINT YAPISI
+## 4. SPRINT YAPıSI
 
 | Sprint | Ad | Amac |
 |--------|-----|------|
@@ -53,11 +53,11 @@ Phase 13: Platform Knowledge & Learning olarak tanimlanir.
 ## 5. ILKELER
 
 Morphology uretir
-Phrase yapilandirir
+Phrase yapılandirir
 Syntax analiz eder
 Analytics olcer
 Intelligence onerir
-Governance degerlendirir
+Governance değerlendirir
 Insan onaylar
 Runtime uygular
 

@@ -17,7 +17,7 @@ ADR-GOV-003 ve ADR-GOV-005 ile uyumludur.
 
 ### Main Pipeline (Release Kriteri)
 
-| Ozellik | Deger |
+| Özellik | Değer |
 |---------|-------|
 | Config | vitest.config.ts |
 | Test | 621 |
@@ -27,7 +27,7 @@ ADR-GOV-003 ve ADR-GOV-005 ile uyumludur.
 
 ### Cert Pipeline (Kalite Hatti)
 
-| Ozellik | Deger |
+| Özellik | Değer |
 |---------|-------|
 | Config | vitest.cert.config.ts |
 | Test | 87 |
@@ -99,7 +99,7 @@ npm run test:cert:ci
 
 ---
 
-## 7. SONUC
+## 7. SONUÇ
 
 - ✅ Main Pipeline = 621 test
 - ✅ Cert Pipeline = 87 test

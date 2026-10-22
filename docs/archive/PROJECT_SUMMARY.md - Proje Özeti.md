@@ -1,8 +1,8 @@
 # Proje Özeti
 
-**Proje Adı:** Çerkesçe Knowledge Engine  
-**Versiyon:** v12.0-enterprise-certified  
-**Başlangıç:** 15 Aralık 2025  
+**Proje Adı:** Çerkesçe Knowledge Engine\
+**Versiyon:** v12.0-enterprise-certified\
+**Başlangıç:** 15 Aralık 2025\
 **Hedef:** 31 Aralık 2027
 
 ---

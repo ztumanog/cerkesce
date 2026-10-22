@@ -19,7 +19,7 @@ key = headword     !=    index = form
 (TR/RU/EN)               (Cerkesce)
 
 34 sozlugun cogu TR/RU/EN baslikli. lexemeMap yalniz form ile kurulu.
-Sonuc: conceptId = null, ipa = null, partOfSpeech = null -> UI [Kavram] basiyor.
+Sonuç: conceptId = null, ipa = null, partOfSpeech = null -> UI [Kavram] basiyor.
 
 ---
 
@@ -29,7 +29,7 @@ Sonuc: conceptId = null, ipa = null, partOfSpeech = null -> UI [Kavram] basiyor.
 
 meaning = anlamlar[0] ?? ''
 
-literalMeaning DEGIL anlamlar[0] kullanilir.
+literalMeaning DEĞIL anlamlar[0] kullanilir.
 Gerekce: join basarisiz olsa bile meaning dolu gelir.
 
 ### K2 - Deterministik Lexeme Secimi
@@ -50,7 +50,7 @@ Response'tan data alani kaldirilir; results canonical.
 
 ### K5 - CIKARILDI
 
-/api/sozluk/search -> P1'e tasindi.
+/api/sözlük/search -> P1'e tasindi.
 
 ### K6 - Kapsam Siniri
 
@@ -82,7 +82,7 @@ Degisen: app/api/search/route.ts
 
 ## 4. DOGRULAMA
 
-| # | Kriter | Sonuc |
+| # | Kriter | Sonuç |
 |---|---|---|
 | 1 | "su" -> meaning dolu | OK |
 | 2 | "psı" regresyon yok | OK |
@@ -92,7 +92,7 @@ Degisen: app/api/search/route.ts
 | 6 | conceptIds git diff temiz | OK |
 | 7 | npx tsc --noEmit | OK |
 | 8 | 1010/1010 test | OK |
-| 9 | /api/sozluk/search = 0 cagri | OK |
+| 9 | /api/sözlük/search = 0 cagri | OK |
 
 ---
 
@@ -110,12 +110,12 @@ Tek satirlik hata. Indeks yalniz form (Cerkesce) ile kuruluydu.
 |---|---|
 | D1 | 110 silinen kayit denetimi |
 | D2 | 77 ? kaydi |
-| D7 | Asama 2 test kapsami |
+| D7 | Aşama 2 test kapsami |
 | D8 | LEHCE_TR <-> ADR-0008 |
 
 ---
 
-## 7. KAPANIS
+## 7. KAPANıŞ
 
 > Search katmani ile lexeme katmani artik ayni dili konusuyor.
 

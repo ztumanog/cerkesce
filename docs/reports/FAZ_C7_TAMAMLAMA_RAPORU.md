@@ -5,9 +5,9 @@
 
 ---
 
-## Faz C-7 Hedefleri ve Sonuclari
+## Faz C-7 Hedefleri ve Sonuçları
 
-| Metrik | Faz C-6 | Hedef | Sonuc | Durum |
+| Metrik | Faz C-6 | Hedef | Sonuç | Durum |
 |---|---|---|---|---|
 | Kok | 45 | 50+ | **50** | TAMAM |
 | Lexeme | 150 | 175+ | **177** | TAMAM |
@@ -20,7 +20,7 @@
 
 ---
 
-## Faz C-7 Calismalari
+## Faz C-7 Çalışmalari
 
 ### 1. Yeni Aileler (9)
 
@@ -46,7 +46,7 @@
 - L-KUEREDERE (ardic), L-K1UESHYGHE (kardeslik)
 
 **Diger (8):**
-- L-KUAPE (kose), L-PSE (ruh) guncelleme, L-KHUABZHU (cok), vb.
+- L-KUAPE (kose), L-PSE (ruh) güncelleme, L-KHUABZHU (cok), vb.
 
 ### 3. Morfem'ler (5 yeni)
 
@@ -87,7 +87,7 @@
 - [x] Runtime'a import YOK
 - [x] 231/231 PASS korundu
 
-**7/7 KRITER TAMAMLANDI**
+**7/7 KRITER TAMAMLANDı**
 
 ---
 

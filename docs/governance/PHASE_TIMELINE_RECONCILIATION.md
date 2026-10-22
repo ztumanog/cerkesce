@@ -8,7 +8,7 @@
 
 ## 1. AMAC
 
-Bu belge, fazlar arasındaki gecisleri ve tarihsel sureci tek kaynakta toplar.
+Bu belge, fazlar arasındaki geçişleri ve tarihsel süreçi tek kaynakta toplar.
 Freeze -> Activation -> Closure zincirini belgeler.
 
 ---
@@ -22,13 +22,13 @@ Freeze -> Activation -> Closure zincirini belgeler.
 | Phase 3 | Morphological Analysis | CLOSED | PHASE3_COMPLETION_REPORT |
 | Phase 4 | Morphology + Syntax Engine | COMPLETED | 621/621 PASS |
 | Phase 5 | Discovery Engine | COMPLETED | PHASE_5_COMPLETION_REPORT |
-| Phase 6 | API Gateway | TAMAMLANDI | ADR-GOV-005 |
+| Phase 6 | API Gateway | TAMAMLANDı | ADR-GOV-005 |
 | Phase 7 | Analytics & Export | COMPLETED | ADR-P7-001 |
 | Phase 8 | Production & Operations | ACTIVE | ADR-GOV-007 |
 
 ---
 
-## 3. TARIHSEL SUREC
+## 3. TARIHSEL SÜREÇ
 
 ### Phase 3-7 Dondurma (ADR-0016)
 - Tarih: Agustos 2026
@@ -43,12 +43,12 @@ Freeze -> Activation -> Closure zincirini belgeler.
 
 ### Phase 5 Tamamlanma
 - Tarih: 2026-09-26
-- Karar: Phase 5 tamamlandi
+- Karar: Phase 5 tamamlandı
 - Kanit: PHASE_5_COMPLETION_REPORT
 
 ### Phase 6 Tamamlanma
 - Tarih: 2026-09-30
-- Karar: Phase 6 tamamlandi
+- Karar: Phase 6 tamamlandı
 - Alt Fazlar:
   - 6.1: API Gateway (2026-09-02)
   - 6.2: Interactive Explorer (2026-09-02)
@@ -85,11 +85,11 @@ ADR-GOV-003 (Redefinition)
 
 ---
 
-## 6. SONUC
+## 6. SONUÇ
 
-- ✅ Phase 1-5 tamamlandi
-- ✅ Phase 4 Morphology + Syntax Engine tamamlandi
-- ✅ Phase 6 tamamlandi (API Gateway + Embedding)
+- ✅ Phase 1-5 tamamlandı
+- ✅ Phase 4 Morphology + Syntax Engine tamamlandı
+- ✅ Phase 6 tamamlandı (API Gateway + Embedding)
 - ⏳ Phase 7 planlandi
 
 ---

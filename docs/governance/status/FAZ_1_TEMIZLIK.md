@@ -2,12 +2,12 @@
 
 **Tarih:** 12.10.2026
 **Faz:** 1 — Core Dictionary
-**Karar:** TEMİZLİK TAMAMLANDI
+**Karar:** TEMİZLİK TAMAMLANDı
 **Mimari Denetçi Onayı:** EVET
 
 ---
 
-## 1. YAPILANLAR
+## 1. YAPıLANLAR
 
 ### 1.1 Debug Dosyaları Silindi
 - debug_ie.py
@@ -101,7 +101,7 @@ Seçenekler:
 
 ### 5.2 Faz 1 Kararı
 
-**FAZ 1 TAMAMEN KAPANDI.**
+**Faz 1 TAMAMEN KAPANDI.**
 
 - Denetim tamamlandı
 - Kapanış raporu: FAZ_1_KAPANIS.md
@@ -122,5 +122,5 @@ Seçenekler:
 
 ---
 
-**Durum:** TAMAMLANDI
+**Durum:** TAMAMLANDı
 **Sonraki Adım:** Faz 2 Denetimi

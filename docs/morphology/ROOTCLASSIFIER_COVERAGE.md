@@ -19,7 +19,7 @@ ADR-0040 (Root Taxonomy) uyumunu dogrular.
 |-----|-------|-------|
 | FREE | Tek basina gorunur | унэ, псы, жыг |
 | BOUND | Tek basina gorunmez | -сы, -лъы, -ты, -гъы, -къIэ |
-| NEUTRAL | Baglama gore degisir | (notr kokler) |
+| NEUTRAL | Bağlama gore degisir | (notr kokler) |
 | STABLE | Kararli, degismez | (kararli kokler) |
 
 ---
@@ -61,7 +61,7 @@ ADR-0040 (Root Taxonomy) uyumunu dogrular.
 
 ## 4. TEST DURUMU
 
-| Kategori | Test Sayisi | Durum |
+| Kategori | Test Sayısı | Durum |
 |----------|-------------|-------|
 | FREE | 4 | ✅ |
 | BOUND | 5 | ✅ |
@@ -92,7 +92,7 @@ ADR-0040 (Root Taxonomy) uyumunu dogrular.
 
 ---
 
-## 7. SONUC
+## 7. SONUÇ
 
 - ✅ 10 test PASS
 - ✅ FREE/BOUND siniflandirma calisiyor

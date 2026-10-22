@@ -32,7 +32,7 @@ uygulama planini tanimlar. ADR-GOV-003 ve ADR-GOV-005 ile uyumludur.
 ### Embedding = Research Track
 
 - Ayri bir arastirma hatti
-- Urun fazi degil
+- Urun fazi değil
 - docs/embedding/ altinda
 
 ---
@@ -50,7 +50,7 @@ Client -> API Gateway (REST) -> Controller -> DiscoveryFacade -> ConceptGraphAda
 | Controller | ConceptNetworkController.ts | HTTP istekleri |
 | Controller | DiscoveryGatewayController.ts | Gateway |
 | Route | discoveryRoutes.ts | Route tanimlari |
-| Adapter | ConceptGraphAdapter.ts | DTO donusumu |
+| Adapter | ConceptGraphAdapter.ts | DTO dönüşümu |
 | Spec | openapi/ | OpenAPI 3.0 |
 
 ---

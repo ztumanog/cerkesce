@@ -35,8 +35,8 @@ Mimar, **Faz 5'in acilmasini** onayladi.
 ## 2. FAZ 5 KAPSAMI
 
 ### P5-001: Corpus Coverage & Search Intelligence
-- 34 sozluk neden 19'a dusuyor?
-- Hangi sozlukler indekslenmiyor?
+- 34 sözlük neden 19'a dusuyor?
+- Hangi sözlükler indekslenmiyor?
 - TranslationRepository hangi kayitlari disliyor?
 - Arama kapsami gercek mi?
 
@@ -47,11 +47,11 @@ Mimar, **Faz 5'in acilmasini** onayladi.
 
 ### P5-003: Search Analytics
 - En cok aranan kelimeler
-- Sonucsuz sorgular
+- Sonuçsuz sorgular
 - Filtre kullanimi
 
 ### P5-004: Corpus Explorer
-- Kelime hangi sozluklerde?
+- Kelime hangi sözlüklerde?
 - Kac kez geciyor?
 - Hangi lehcelerde?
 

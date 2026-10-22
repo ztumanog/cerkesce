@@ -5,7 +5,7 @@
 | KPI | Hedef |
 |:----|:------|
 | Basarili arama orani | > %90 |
-| Sonuc bulan kullanici orani | > %85 |
+| Sonuç bulan kullanıcı orani | > %85 |
 | Drawer acilma orani | > %40 |
 | Gunun Kelimesi tiklanma orani | > %10 |
 
@@ -15,7 +15,7 @@
 |:----|:------|
 | Dil filtresi kullanimi | Olc |
 | Lehce filtresi kullanimi | Olc |
-| Sozluk filtresi kullanimi | Olc |
+| Sözlük filtresi kullanimi | Olc |
 
 ## Performans
 
@@ -26,11 +26,11 @@
 | APK cokme orani | 0 |
 | Bellek kullanimi | Stabil |
 
-## Icerik
+## Içerik
 
 | KPI | Hedef |
 |:----|:------|
-| Eksik sozluk kaydi bildirimi | Olc |
+| Eksik sözlük kaydi bildirimi | Olc |
 | Hatali anlam bildirimi | Olc |
 | En cok kullanilan kaynaklar | Olc |
 

@@ -10,7 +10,7 @@
 - DictionaryLoader
 - DictionaryService
 - DictionaryResolver
-- Source Registry (34 sozluk)
+- Source Registry (34 sözlük)
 - Normalization Layer
 - Zod Validation
 - Search Engine
@@ -66,7 +66,7 @@
 
 - P4-008: Urun Kullanim Gozlemi (Bekliyor)
 - Product Stage Observations (Bekliyor)
-- Kullanici Geri Bildirimi (Bekliyor)
+- Kullanıcı Geri Bildirimi (Bekliyor)
 
 ---
 

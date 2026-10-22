@@ -22,7 +22,7 @@ Grammaticalization in the North Caucasian languages
 
 ---
 
-# Morphology Sources — Kaynakça
+## Morphology Sources — Kaynakça
 
 Bu dosya, Morphology Engine çalışmalarında kullanılan kaynakların
 telif hakkına saygılı bir şekilde listelendiği yerdir.

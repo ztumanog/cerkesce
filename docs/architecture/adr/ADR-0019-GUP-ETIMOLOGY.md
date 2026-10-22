@@ -4,7 +4,7 @@
 **Durum:** ACCEPTED
 
 ## Karar
-гуп = YERLI Cerkessce kelime. Anlam: "on/yuz/cephe" (topluluk degil).
+гуп = YERLI Cerkessce kelime. Anlam: "on/yuz/cephe" (topluluk değil).
 
 ## Kanit
 - 5 corpus ornegi (adyghe.web-corpora.net): hepsi "перед/фасад" gloss'u
@@ -12,9 +12,9 @@
 - Tharkaho (1991): on, yuz kismi, cephe
 
 ## Rusca Alinti mi?
-Hayir. Fonetik donusum zorlama. "GUP" (buyuk harf) = Rusca kisaltma, ayri kelime.
+Hayir. Fonetik dönüşüm zorlama. "GUP" (buyuk harf) = Rusca kisaltma, ayri kelime.
 
-## Sonuc
+## Sonuç
 - SR-GU-FRONT metaforu eklendi (conf 0.85)
 - Metafor: 4 -> 17
-- WF-PE ailesi ile iliskili
+- WF-PE ailesi ile ilişkili

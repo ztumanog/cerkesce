@@ -39,3 +39,4 @@ export interface TranslationRepository {
   searchByMeaning(text: string): TranslationEntry[];
   reverseLookup(targetLanguage: string, text: string): TranslationEntry[];
 }
+```

@@ -4,7 +4,7 @@
 > Son güncelleme: 2026-10-03
 
 ---
-# ADR INDEX — Single Source of Truth (SSOT)
+## ADR INDEX — Single Source of Truth (SSOT)
 
 **Tarih:** 2026-10-02
 **Versiyon:** v2.0
@@ -20,10 +20,10 @@
 
 | Canonical | Başlık | Physical File | Durum | Faz |
 |-----------|--------|---------------|-------|-----|
-| ADR-0001 | Modüler Tip | `ADR_0001_MODULAR_TYPE_ARCHITECTURE.md` | Accepted | 1 |
-| ADR-0002 | Çok Dilli Meaning | `ADR_0002_DOMAIN_MODEL_MEANING_GROUP.md` | Accepted | 1 |
-| ADR-0003 | Repository Ayrışımı | `ADR_0003_ITRANSLATIONREPOSITORY_SEPARATION.md` | Accepted | 1 |
-| ADR-0004 | Heterojen Normalizasyon | `ADR-ADR_0004_SERVER_ACTIONS_ASYNC_SAFETY.md` | Accepted | 1 |
+| ADR-0001 | Modüler Tip | `ADR-0001-MODULAR_TYPE_ARCHITECTURE.md` | Accepted | 1 |
+| ADR-0002 | Çok Dilli Meaning | `ADR-0002-DOMAIN_MODEL_MEANING_GROUP.md` | Accepted | 1 |
+| ADR-0003 | Repository Ayrışımı | `ADR-0003-ITRANSLATIONREPOSITORY_SEPARATION.md` | Accepted | 1 |
+| ADR-0004 | Heterojen Normalizasyon | `ADR-0004-SERVER_ACTIONS_ASYNC_SAFETY.md` | Accepted | 1 |
 | ADR-0005 | TranslationGroup | `ADR-0005-TRANSLATIONGROUP_STRATEGY.md` | Accepted | 2 |
 | ADR-0006 | Cross Dictionary | `ADR-0006-CROSS_DICTIONARY_MATCHING.md` | Accepted | 2 |
 | ADR-0007 | Repository Contract | `ADR-0007-TRANSLATIONREPOSITORY_CONTRACT.md` | Accepted | 2 |
@@ -43,8 +43,9 @@
 | ADR-0026 | Search Response Contract & Lexeme Join | `ADR-0026-SEARCH_RESPONSE_CONTRACT.md` | Accepted | 4 |
 | ADR-0030 | Discovery | `ADR-0012-REAL_KNOWLEDGE_DISCOVERY_ASSEMBLY.md` | Accepted | 5 |
 | ADR-0031 | Query Semantic | `ADR-0013-QUERY_SEMANTIC_MAPPING.md` | Proposed | 5 |
-| ADR-0032 | Network Projection | `ADR_0014_CONCEPT_NETWORK_PROJECTION.md` | Accepted | 5 |
+| ADR-0032 | Network Projection | `ADR-0014-CONCEPT_NETWORK_PROJECTION.md` | Accepted | 5 |
 | ADR-0040 | Morphological Root Taxonomy | `ADR-0040.md` | Accepted | 4 |
+| ADR-0041 | Besleney Veri Kaynağı | `ADR-0041-BESLENEY_VERI_KAYNAGI.md` | Proposed | — |
 | ADR-ROOT-001 | Root Taxonomy | `ADR-ROOT-001.md` | Accepted | 4 |
 | ADR-ROOT-002 | Root WordFamily Unification | `ADR-ROOT-002-ROOT-WORDFAMILY-UNIFICATION.md` | Accepted | 4 |
 | ADR-P4-001 | Phase 4 Activation | `ADR-P4-001-PHASE4_ACTIVATION.md` | Accepted | 4 |
@@ -115,15 +116,15 @@ Bu dosya, tum ADR katalogunun TEK RESMI KAYNAGIDIR.
 ### Kural
 
 - Tum ADR'ler bu dosyada listelenir
-- Canonical ↔ Physical eslemesi burada yapilir
-- Yeni ADR eklenince bu dosya guncellenir
+- Canonical ↔ Physical eslemesi burada yapılir
+- Yeni ADR eklenince bu dosya güncellenir
 - ADR numaralandirma catismasi bu dosya ile onlenir
 
 ### Sorumluluk
 
 - ADR_INDEX.md = Tek otorite
 - Diger belgeler bu dosyadan turetilir
-- ADR_DASHBOARD.md, ADR_ENVANTER.md, ADR_DECISIONS_SUMMARY.md bu dosyaya bagimlidir
+- ADR_DASHBOARD.md, ADR_ENVANTER.md, ADR_DECISIONS_SUMMARY.md bu dosyaya bağımlıdir
 
 ### Ihlal Durumunda
 
@@ -159,7 +160,6 @@ Bu dosya, tum ADR katalogunun TEK RESMI KAYNAGIDIR.
 | ADR | Baslik | Dosya | Durum | Faz |
 |-----|--------|-------|-------|-----|
 
+## Politika Belgeleri
 
-
-
-
+- ADR_NUMBERING_POLICY.md — ADR numaralandırma politikası

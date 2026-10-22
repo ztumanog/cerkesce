@@ -9,7 +9,7 @@
 
 ## 1. YONETICI OZETI
 
-Track B (Intelligence) tamamen tamamlandi.
+Track B (Intelligence) tamamen tamamlandı.
 
 ### Capability Durumu
 
@@ -25,7 +25,7 @@ Track B (Intelligence) tamamen tamamlandi.
 
 ## 2. EKLENEN BILESENLER
 
-| Dosya | Icerik |
+| Dosya | Içerik |
 |-------|--------|
 | RecommendationTuningService.ts | Oneri ayarlama |
 | ConfidenceScoringService.ts | Guven puani |
@@ -35,9 +35,9 @@ Track B (Intelligence) tamamen tamamlandi.
 
 ---
 
-## 3. TEST SONUCLARI
+## 3. TEST SONUÇLARı
 
-| Test | Sonuc |
+| Test | Sonuç |
 |------|-------|
 | TrackB_1 | 4/4 PASS |
 | TrackB_2 | 4/4 PASS |
@@ -48,7 +48,7 @@ Track B (Intelligence) tamamen tamamlandi.
 
 ---
 
-## 4. SONUC
+## 4. SONUÇ
 
 Track B (Intelligence) teslimat hedefleri karsilanmistir.
 Zeka katmani daha guvenilir ve aciklanabilir hale gelmistir.

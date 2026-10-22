@@ -1,9 +1,9 @@
 # PRODUCT STAGE OBSERVATION
 
-**Tarih:** 
-**Surum:** 
+**Tarih:**
+**Sürüm:**
 **Platform:** Web / Android APK
-**Gozlemci:** 
+**Gozlemci:**
 
 ---
 
@@ -11,11 +11,11 @@
 
 Aranan Kelime:
 
-Sonuc Bulundu mu?
+Sonuç Bulundu mu?
 [ ] Evet
 [ ] Hayir
 
-Sonuclar beklendigi gibi miydi?
+Sonuçlar beklendigi gibi miydi?
 1 2 3 4 5
 
 Arama Hizi:
@@ -30,12 +30,12 @@ Notlar:
 Kullanilan Filtreler:
 [ ] Dil
 [ ] Lehce
-[ ] Sozluk
+[ ] Sözlük
 
 Filtreler anlasilir mi?
 1 2 3 4 5
 
-Filtre sonucu beklendigi gibi mi?
+Filtre sonuçu beklendigi gibi mi?
 1 2 3 4 5
 
 Notlar:
@@ -47,7 +47,7 @@ Notlar:
 Kaynaklar anlasilir mi?
 1 2 3 4 5
 
-Icerik okunabilir mi?
+Içerik okunabilir mi?
 1 2 3 4 5
 
 Drawer icinde eksik bilgi var mi?
@@ -85,13 +85,13 @@ Notlar:
 
 ---
 
-## 6. Genel Degerlendirme
+## 6. Genel Değerlendirme
 
-En yararli ozellik:
+En yararli özellik:
 
 En rahatsiz eden konu:
 
-Eksik kalan ozellik:
+Eksik kalan özellik:
 
 Yeni oneri:
 

@@ -1,8 +1,8 @@
 # 📋 FAX G-3 TAMAMLAMA RAPORU
 
-**Tarih:** 2026-09-29  
-**Onceki rapor:** 2026-09-28 (raschiv)  
-**Hazırlayan:** Dipo  
+**Tarih:** 2026-09-29\
+**Onceki rapor:** 2026-09-28 (raschiv)\
+**Hazırlayan:** Dipo\
 **Onay:** Piloş
 
 ---
@@ -60,7 +60,7 @@ sınab sattı, kabul kriterlerinden fazlası karZılandı.
 
 ## 🧪 Test Sonuçaları
 
-```
+```text
 Test Files 73 passed (73)
 Tests 220 passed (220)
 ```

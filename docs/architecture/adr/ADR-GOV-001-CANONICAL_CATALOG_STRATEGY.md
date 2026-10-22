@@ -17,7 +17,7 @@
 4. ADR silinmez, SUPERSEDED edilir
 5. Dashboard / README / Inventory / Summary ayni SSOT'tan uretilir
 
-## Sonuc
+## Sonuç
 
 ADR_INDEX.md = SSOT
 

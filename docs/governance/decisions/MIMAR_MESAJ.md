@@ -1,8 +1,8 @@
-c
+# Mimar Mesajları
 
 ---
 
-## Faz C-10 Planı (2026-09-30)
+### Faz C-10 Planı (2026-09-30)
 
 ### Mevcut Durum
 - Lexeme: 240

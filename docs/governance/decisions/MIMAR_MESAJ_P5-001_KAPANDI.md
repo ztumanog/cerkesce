@@ -1,7 +1,7 @@
 # MIMAR'A MESAJ: P5-001 KAPANDI + ADR-P5-002
 
 **Tarih:** 2026-09-25
-**Konu:** P5-001 Tamamlandi, ADR-P5-002 Eklendi
+**Konu:** P5-001 Tamamlandı, ADR-P5-002 Eklendi
 
 ---
 

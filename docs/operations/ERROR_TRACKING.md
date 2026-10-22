@@ -54,7 +54,7 @@ Express middleware:
 ## 6. Kisisel Veri Korumasi
 
 ErrorTracker ASLA su verileri loglamaz:
-- Kullanici sifresi
+- Kullanıcı sifresi
 - Token / JWT
 - Kredi karti
 - TC kimlik
@@ -76,4 +76,4 @@ Context'e sadece ID/reference eklenir.
 - ADR-GOV-007
 - docs/operations/SECRET_MANAGEMENT.md
 
-**Son Guncelleme:** 2026-10-02
+**Son Güncelleme:** 2026-10-02

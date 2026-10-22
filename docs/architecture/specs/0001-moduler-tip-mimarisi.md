@@ -1,4 +1,4 @@
-﻿# 1. Modüler Tip Mimarisi ve Tip Tanımlarının Merkezi Yönetimi
+# 1. Modüler Tip Mimarisi ve Tip Tanımlarının Merkezi Yönetimi
 
 * **Statü:** Kabul Edildi
 * **Tarih:** Ağustos 2026

@@ -1,15 +1,15 @@
 # 📋 MİMAR RAPORU — FAZ C-4
 
-**Tarih:** 2026-09-29  
-**Hazırlayan:** Dipo  
-**Kime:** Mimar  
+**Tarih:** 2026-09-29\
+**Hazırlayan:** Dipo\
+**Kime:** Mimar\
 **Konu:** Faz C-4 tamamlandı — 32 kök, 90 lexeme, 220/220 test
 
 ---
 
 ## 🎯 Yönetici Özeti
 
-Faz C-4 **tamamen tamamlandı**. Bugün **19 yeni kök** ve **30 yeni lexeme** eklendi.  
+Faz C-4 **tamamen tamamlandı**. Bugün **19 yeni kök** ve **30 yeni lexeme** eklendi.\
 Tüm testler geçiyor (**220/220**), `tsc` temiz, commit ve push başarılı.
 
 **Mimar onayı bekleniyor.**
@@ -68,8 +68,8 @@ Tüm testler geçiyor (**220/220**), `tsc` temiz, commit ve push başarılı.
 
 ## 🧪 Test Sonuçları
 
-Test Files: 73 passed (73)  
-Tests: 220 passed (220)  
+Test Files: 73 passed (73)\
+Tests: 220 passed (220)\
 Duration: 8.34s
 
 tsc --noEmit temiz.
@@ -78,7 +78,7 @@ tsc --noEmit temiz.
 
 ## 💾 Git Durumu
 
-**Commit:** 29226c6 — Tek commit, temiz  
+**Commit:** 29226c6 — Tek commit, temiz\
 **Push:** c330128..29226c6 main -> main ✅
 
 ---
@@ -96,7 +96,7 @@ tsc --noEmit temiz.
 
 ## 📝 Sonuç
 
-**Faz C-4 tamamen tamamlandı.**  
+**Faz C-4 tamamen tamamlandı.**\
 32 kök, 90 lexeme, 220/220 test, tsc temiz, commit + push başarılı.
 
 **Proje Faz C-5'e geçmeye hazır.**

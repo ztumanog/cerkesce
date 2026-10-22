@@ -1,9 +1,9 @@
-﻿# FAZ 12 DENETIM RAPORU
+# FAZ 12 DENETIM RAPORU
 
 **Tarih:** 12.10.2026
 **Faz:** 12 - Autonomous Governance Support
-**Kapanis Tarihi:** 2026-10-03
-**Karar:** DENETIM TAMAMLANDI
+**Kapanış Tarihi:** 2026-10-03
+**Karar:** DENETIM TAMAMLANDı
 **Mimari Denetci Onayi:** EVET
 
 ---
@@ -11,7 +11,7 @@
 ## 1. FAZ 12 DURUMU
 
 - Ad: Autonomous Governance Support
-- Kapanis: 2026-10-03
+- Kapanış: 2026-10-03
 - Durum: COMPLETED
 - Karar Kaydi: ADR-P12-001
 - Test: 18/18 PASS (belgeden)
@@ -60,7 +60,7 @@ Kanit seviyesi: Belgeden + Koddan dogrulandi
 
 ### 5.1 ADR-P12-001-Plan PROPOSED
 - Plan ADR'si PROPOSED
-- Kapanis ADR'si ACCEPTED
+- Kapanış ADR'si ACCEPTED
 - Siniflandirma: GOVERNANCE BORCU
 
 ### 5.2 docs/phases/phase-12/ YOK
@@ -78,7 +78,7 @@ Kanit seviyesi: Belgeden + Koddan dogrulandi
 
 ## 6. MIMAR KARARI (12.10.2026)
 
-**Hukum:** FAZ 12 TAMAMLANMIS
+**Hukum:** Faz 12 TAMAMLANMIS
 
 **Neden:**
 - ADR-P12-001-Completion ACCEPTED
@@ -89,14 +89,14 @@ Kanit seviyesi: Belgeden + Koddan dogrulandi
 
 **Siniflandirma:** GOVERNANCE + BELGELEME BORCU
 
-**Karar:** Faz 12 kapanisi KORUNUYOR.
+**Karar:** Faz 12 kapanışi KORUNUYOR.
 
 ---
 
-## 7. SONUC
+## 7. SONUÇ
 
-- Faz 12 DENETIMI: TAMAMLANDI
-- Faz 12 KAPANISI: KORUNUYOR
+- Faz 12 DENETIMI: TAMAMLANDı
+- Faz 12 KAPANıŞI: KORUNUYOR
 - Autonomous Governance Support: Uygulanmis
 - Bulgular: Governance + Belgeleme borcu
 
@@ -108,5 +108,5 @@ Faz 13 Denetimi baslatilabilir.
 
 ---
 
-**Durum:** TAMAMLANDI
+**Durum:** TAMAMLANDı
 **Sonraki Faz:** Faz 13 - Platform Knowledge & Learning

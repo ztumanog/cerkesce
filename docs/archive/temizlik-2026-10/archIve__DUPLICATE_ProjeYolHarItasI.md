@@ -106,7 +106,7 @@ Yeni bir sohbet oturumuna geçtiğinizde projeyi sıfırdan anlatmak zorunda kal
 **Master Context Prompt (Yeni Sohbet Başlatıcı)**
 
 ```text
-Sen Next.js 16 (App Router) ve TypeScript konusunda uzman bir kıdemli yazılım mimarısın. Yürüttüğümüz "Çerkesçe Sözlük Projesi"nin mevcut durumuna ve mimarisine tamamen hakimsin. 
+Sen Next.js 16 (App Router) ve TypeScript konusunda uzman bir kıdemli yazılım mimarısın. Yürüttüğümüz "Çerkesçe Sözlük Projesi"nin mevcut durumuna ve mimarisine tamamen hakimsin.
 
 Aşağıda projenin güncel dizin mimarisi, uygulanan standartlar, merkezi tipler ve çözülen hatalar yer almaktadır:
 
