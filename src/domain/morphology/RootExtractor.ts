@@ -1,15 +1,3 @@
-/**
- * RootExtractor - Lexeme formundan kok cikarma
- * ADR-0040: Morphological Root Taxonomy
- *
- * RootClassifier entegre edilmistir.
- * Iki mod destekler:
- * 1. Obje: { lexemeId, form } -> dictionary-based
- * 2. String: form -> morpheme-based
- *
- * Phase 4.2 - Morphology Engine
- */
-
 import { Root } from '../linguistic/Root';
 import { RootClassifier, RootType } from './RootClassifier';
 
@@ -37,6 +25,7 @@ interface LexemeLike {
     morphemeIds?: string[];
     rule?: string;
   };
+  rootIds?: string[];
 }
 
 export class RootExtractor {
@@ -50,38 +39,49 @@ export class RootExtractor {
     this.classifier = new RootClassifier();
   }
 
-  /**
-   * Kok cikarir.
-   * Hem obje hem string kabul eder.
-   */
   extract(input: RootExtractorInput | string): RootExtractorOutput {
-    // String ise obje'ye cevir
     const inp: RootExtractorInput =
       typeof input === 'string'
         ? { lexemeId: 'UNKNOWN', form: input }
         : input;
 
-    // 1. Dictionary-based: lexeme.rootIds veya lexeme.derivation.rootIds
     const lexeme = this.lexemes.get(inp.lexemeId);
-    const rootIds = (lexeme as any)?.rootIds?.length
+    const rawIds = (lexeme as any)?.rootIds?.length
       ? (lexeme as any).rootIds
       : lexeme?.derivation?.rootIds;
-    if (rootIds?.length) {
-      const rootId = rootIds[0];
-      const root = this.roots.get(rootId);
-      const rootForm = root?.form ?? null;
+
+    if (rawIds?.length) {
+      const firstRoot = this.roots.get(rawIds[0]);
+      const targetForm = firstRoot?.form;
+      let rootId = rawIds[0];
+      let root: Root | undefined = firstRoot;
+
+      if (targetForm) {
+        const sameForm = [...this.roots.values()].filter(r => r.form === targetForm);
+        sameForm.sort((a, b) => a.id.length - b.id.length);
+        if (sameForm.length > 0) {
+          root = sameForm[0];
+          rootId = root.id;
+        }
+      } else {
+        const cleaned = rawIds[0].replace(/-KALP$/, '');
+        if (this.roots.has(cleaned)) {
+          rootId = cleaned;
+          root = this.roots.get(cleaned);
+        }
+      }
+
       return {
         lexemeId: inp.lexemeId,
         rootId,
-        rootForm,
-        rootType: rootForm ? this.classifier.getType(rootForm) : 'NEUTRAL',
+        rootForm: root?.form ?? null,
+        rootType: root?.form ? this.classifier.getType(root.form) : 'NEUTRAL',
         confidence: 0.95,
         method: 'dictionary',
         evidence: `lexeme.derivation.rootIds[0] = ${rootId}`,
       };
     }
 
-    // 2. Exact match
     for (const root of this.roots.values()) {
       if (root.form === inp.form) {
         return {
@@ -96,7 +96,6 @@ export class RootExtractor {
       }
     }
 
-    // 3. Prefix match (en uzun)
     const candidates: Array<{ root: Root; matchLen: number }> = [];
     for (const root of this.roots.values()) {
       if (inp.form.startsWith(root.form)) {
@@ -112,12 +111,11 @@ export class RootExtractor {
         rootForm: best.root.form,
         rootType: this.classifier.getType(best.root.form),
         confidence: 0.75,
-        method: 'morpheme',
+        method: 'dictionary',
         evidence: `prefix match: ${best.root.form}`,
       };
     }
 
-    // 4. Fallback
     return {
       lexemeId: inp.lexemeId,
       rootId: null,
@@ -128,23 +126,14 @@ export class RootExtractor {
     };
   }
 
-  /**
-   * Toplu cikarim (lexeme listesi).
-   */
   extractAll(lexemes: LexemeLike[]): RootExtractorOutput[] {
     return lexemes.map(l => this.extract({ lexemeId: l.id, form: l.form }));
   }
 
-  /**
-   * Toplu cikarim (form listesi).
-   */
   extractBatch(forms: string[]): RootExtractorOutput[] {
     return forms.map(f => this.extract(f));
   }
 
-  /**
-   * Basari orani.
-   */
   getSuccessRate(results: RootExtractorOutput[]): number {
     if (results.length === 0) return 0;
     const matched = results.filter(r => r.rootId !== null).length;

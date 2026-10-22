@@ -3,6 +3,7 @@
  * Layer: UI
  */
 import type { Metadata } from 'next';
+import Link from 'next/link';
 import Header from '@/components/layout/Header';
 import { FooterWrapper } from '@/components/layout/FooterWrapper';
 import { Toaster } from 'sonner';
@@ -47,22 +48,22 @@ export default function RootLayout({
         suppressHydrationWarning
         className="flex flex-col min-h-screen bg-white dark:bg-slate-950 text-slate-900 dark:text-slate-50 transition-colors duration-200 antialiased"
       >
-
         <TemaBaslatici />
         <TercihProvider>
+          {/* Yeni Üst Menü */}
           <nav className="bg-gray-900 text-white p-4">
-            <div className="container mx-auto flex flex-wrap gap-4 items-center">
-              <a href="/" className="font-bold text-lg">Çerkesçe Sözlük</a>
-              <a href="/executive" className="hover:text-blue-400">Executive</a>
-              <a href="/governance" className="hover:text-blue-400">Governance</a>
-              <a href="/intelligence" className="hover:text-blue-400">Intelligence</a>
-              <a href="/knowledge" className="hover:text-blue-400">Knowledge</a>
-              <a href="/knowledge/details" className="hover:text-blue-400 text-sm opacity-75">↳ Details</a>
-              <a href="/operations" className="hover:text-blue-400">Operations</a>
-              <a href="/morphology" className="hover:text-blue-400">Morfoloji</a>
-              <a href="/sozluk" className="hover:text-blue-400">Sözlük</a>
+            <div className="container mx-auto flex flex-wrap gap-6 items-center text-sm font-medium">
+              <Link href="/sozluk" className="font-bold text-lg hover:text-emerald-400 transition-colors mr-4">
+                Çerkesçe Sözlük
+              </Link>
+              <Link href="/sozluk" className="hover:text-emerald-400 transition-colors">Sözlük</Link>
+              <Link href="/sozluk/morphology" className="hover:text-emerald-400 transition-colors">Morfoloji</Link>
+              <Link href="/sozluk/converter" className="hover:text-emerald-400 transition-colors">Converter</Link>
+              <Link href="/sozluk/favoriler" className="hover:text-emerald-400 transition-colors">Favoriler</Link>
+              <Link href="/yonetim" className="hover:text-emerald-400 transition-colors">Yönetim</Link>
             </div>
           </nav>
+          
           <SWRegister />
           <BildirimBaslatici />
           <Header />
@@ -74,4 +75,3 @@ export default function RootLayout({
     </html>
   );
 }
-

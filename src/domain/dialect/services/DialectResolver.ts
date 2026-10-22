@@ -18,9 +18,6 @@ export class DialectResolver {
     this.dialectsByCode.set(dialect.code, dialect);
   }
 
-  /**
-   * İndeksi günceller veya yeniden inşa eder (O(1) lookup garantisi için).
-   */
   public async indexVariant(meaningId: string, variant: Variant): Promise<void> {
     await this.variantRepo.save(variant);
     this.linker.link(meaningId, variant.id.getValue());
@@ -29,26 +26,56 @@ export class DialectResolver {
     this.directLookupIndex.set(key, variant);
   }
 
-  /**
-   * Belirtilen meaningId için istenen diyalektteki varyantı kesin O(1) sürede arar.
-   * Bulamazsa hiyerarşide parentDialectCode yönünde O(1) adımlarla ilerler.
-   */
-  public async resolveBestVariant(meaningId: string, preferredDialectCode: DialectCode): Promise<Variant | null> {
+  // EKLENDİ: Phase5 ve MultilingualExplorer'ın beklediği metod
+  public async resolveVariants(
+    meaningId: string, 
+    targetDialects: DialectCode | DialectCode[]
+  ): Promise<Variant[]> {
+    const codes = Array.isArray(targetDialects) ? targetDialects : [targetDialects];
+    const results: Variant[] = [];
+    for (const code of codes) {
+      const v = await this.resolveBestVariant(meaningId, code);
+      if (v) results.push(v);
+    }
+    return results;
+  }
+
+  public async resolveBestVariant(
+    meaningId: string, 
+    preferredDialectCode: DialectCode
+  ): Promise<Variant | null> {
+    const visited = new Set<DialectCode>();
     let currentCode: DialectCode | undefined = preferredDialectCode;
 
-    while (currentCode) {
+    while (currentCode && !visited.has(currentCode)) {
+      visited.add(currentCode);
+      
       const key = meaningId + ':' + currentCode;
       const matched = this.directLookupIndex.get(key);
-
       if (matched) {
         return matched;
       }
 
-      // Üst diyalekt kontrolü - Hiyerarşi derinliği max 2-3 (O(1) adım sayısı)
       const dialectObj = this.dialectsByCode.get(currentCode);
       currentCode = dialectObj?.parentDialectCode;
     }
 
     return null;
+  }
+
+  // EKLENDİ: Uygulama restart'ta indeks boş kalmasın
+  public async loadFromRepository(
+    meaningVariantMap: Map<string, string[]> // meaningId -> variantId[]
+  ): Promise<void> {
+    const allVariants = await this.variantRepo.findAll();
+    for (const variant of allVariants) {
+      // variantId -> meaningId reverse lookup
+      for (const [meaningId, variantIds] of meaningVariantMap.entries()) {
+        if (variantIds.includes(variant.id.getValue())) {
+          const key = meaningId + ':' + variant.dialectCode;
+          this.directLookupIndex.set(key, variant);
+        }
+      }
+    }
   }
 }

@@ -1,51 +1,41 @@
+import pairsData from "../../../public/data/linguistic/dialect_pairs.json";
+
 export type DialectPair = readonly [adyghe: string, kabardian: string];
 
 const PALOCHKA = "\u04C0"; // Ӏ
 
+interface DialectPairRecord {
+  ady: string;
+  kbd: string;
+}
+
+interface DialectPairsFile {
+  version: number;
+  sources: string[];
+  note?: string;
+  pairs: DialectPairRecord[];
+}
+
 /**
- * Doğrulanmış Adıgece–Kabardeyce çiftleri (37).
- * Kaynak: Huvaj, AP, Ara, AIG, Ru&En, En_Adam, ThreeVolumes, Tharkaho, Jonty, 1960, Sukunov.
- * Not: Çoğu çift tek sözlükte iki formun birlikte geçmesine dayanır; anlam doğrulaması değildir.
+ * Doğrulanmış Adıgece–Kabardeyce çiftleri.
+ * Veri: public/data/linguistic/dialect_pairs.json (koda gömülü değil).
+ * Dosya geçersizse sessizce boş listeyle devam etmez, hata fırlatır.
  */
-export const VERIFIED_PAIRS: readonly DialectPair[] = [
-  ["чъыгы", "жыг"],
-  ["фэщхъуныгъэ", "фӀэщхъуныгъэ"],
-  ["фабэ", "хуабэ"],
-  ["мафэ", "махуэ"],
-  ["Ӏофы", "Ӏуэху"],
-  ["цӀыфы", "цӀыху"],
-  ["бжьыныф", "бжьыныху"],
-  ["тэ", "дэ"],
-  ["шъхьэ", "щхьэ"],
-  ["дышъэ", "дыщэ"],
-  ["шъынэ", "щынэ"],
-  ["шъабэ", "щабэ"],
-  ["жъы", "жьы"],
-  ["бжъэ", "бжьэ"],
-  ["жъэн", "жьэн"],
-  ["шӀын", "щӀын"],
-  ["шӀэн", "щӀэн"],
-  ["гъашӀэ", "гъащӀэ"],
-  ["о", "уэ"],
-  ["он", "уэн"],
-  ["од", "уэд"],
-  ["кӀон", "кӀуэн"],
-  ["Ӏотэн", "Ӏуэтэн"],
-  ["гъо", "гъуэ"],
-  ["ко", "куэ"],
-  ["мэлы", "мэл"],
-  ["гукӀэгъу", "гущӀэгъу"],
-  ["гупшысэ", "гупсысэ"],
-  ["шъхьащэ", "щхьэшэ"],
-  ["нэф", "нэху"],
-  ["нэшъу", "нэф"],
-  ["шъыпкъэ", "щыпкъэ"],
-  ["гушӀо", "гуфӀэ"],
-  ["цуы", "вы"],
-  ["жъуэн", "вэн"],
-  ["жъуагъуэ", "вагъуэ"],
-  ["фыжьы", "хужь"],
-];
+function loadPairs(data: unknown): readonly DialectPair[] {
+  const file = data as Partial<DialectPairsFile> | null;
+  if (!file || !Array.isArray(file.pairs) || file.pairs.length === 0) {
+    throw new Error("dialect_pairs.json: 'pairs' alanı boş veya geçersiz");
+  }
+  return file.pairs.map((p, i): DialectPair => {
+    if (typeof p?.ady !== "string" || typeof p?.kbd !== "string" || !p.ady.trim() || !p.kbd.trim()) {
+      throw new Error(`dialect_pairs.json: ${i}. kayıt geçersiz`);
+    }
+    return [p.ady, p.kbd] as const;
+  });
+}
+
+export const VERIFIED_PAIRS: readonly DialectPair[] = loadPairs(pairsData);
+export const PAIR_SOURCES: readonly string[] = (pairsData as DialectPairsFile).sources ?? [];
 
 /**
  * Palochka varyantlarını tek biçime getirir:
@@ -73,11 +63,31 @@ export class DialectConverter {
     }
   }
 
+  /**
+   * Adıgece -> Kabardeyce dönüşümü
+   * 1. Önce VERIFIED_PAIRS listesine bakar (tam eşleşme).
+   * 2. Eşleşme yoksa, "o" harfini "уэ" ile değiştirir (Adıgece'de "o", Kabardeyce'de "уэ" olur).
+   */
   convertWord(word: string): string {
-    return this.adyToKbd.get(normalizeKey(word)) ?? word;
+    const key = normalizeKey(word);
+    const exactMatch = this.adyToKbd.get(key);
+    if (exactMatch) return exactMatch;
+
+    // Tam eşleşme yoksa otomatik "o -> уэ" kuralını uygula
+    // Örnek: "мафIохъу" -> "мафIуэхъу"
+    return word.replace(/о/gi, "уэ").replace(/o/gi, "уэ");
   }
 
+  /**
+   * Kabardeyce -> Adıgece dönüşümü
+   */
   convertWordReverse(word: string): string {
-    return this.kbdToAdy.get(normalizeKey(word)) ?? word;
+    const key = normalizeKey(word);
+    const exactMatch = this.kbdToAdy.get(key);
+    if (exactMatch) return exactMatch;
+
+    // Tam eşleşme yoksa otomatik "уэ -> o" kuralını uygula
+    return word.replace(/уэ/gi, "о").replace(/уэ/gi, "о");
   }
 }
+

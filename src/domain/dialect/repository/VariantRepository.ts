@@ -6,4 +6,6 @@ export interface VariantRepository {
   save(variant: Variant): Promise<void>;
   findById(id: VariantId): Promise<Variant | null>;
   findByDialectCode(code: DialectCode): Promise<Variant[]>;
+  findByMeaningId(meaningId: string): Promise<Variant[]>; // +++
+  findAll(): Promise<Variant[]>; // +++
 }

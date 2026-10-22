@@ -162,7 +162,7 @@ export default function Header() {
           </button>
 
           <Link
-            href="/favoriler"
+            href="/sozluk/favoriler"
             className="flex items-center gap-1 px-2 py-1 text-[11px] sm:text-xs font-semibold text-yellow-700 dark:text-yellow-300 hover:bg-yellow-500/20 rounded-lg transition-all duration-200"
             title="Favoriler"
           >

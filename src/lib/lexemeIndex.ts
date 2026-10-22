@@ -47,7 +47,7 @@ export function pickLexeme(candidates: Lexeme[], key: string): Lexeme | undefine
     const bfr = b.corpusFrequency ?? -1;
     if (afr !== bfr) return bfr - afr;
 
-    return a.id.localeCompare(b.id);
+    return (a.id || "").localeCompare(b.id || "");
   })[0];
 }
 
@@ -79,3 +79,4 @@ export function buildLexemeIndex(lexemes: Lexeme[]): Map<string, Lexeme> {
   }
   return index;
 }
+
