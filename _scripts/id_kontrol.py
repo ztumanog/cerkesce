@@ -1,29 +1,28 @@
-﻿import json
+import json
 from pathlib import Path
-from collections import Counter
 
 lex = json.loads(Path("public/data/linguistic/lexemes.json").read_text(encoding="utf-8"))
+lex = lex if isinstance(lex, list) else lex.get("lexemes", [])
 
-lcorpus = [l for l in lex if l.get("id", "").startswith("L-CORPUS")]
-print(f"Toplam L-CORPUS: {len(lcorpus)}")
+id_yok = 0
+id_bos = 0
+ornek = []
+for e in lex:
+    if "id" not in e:
+        id_yok += 1
+        if len(ornek) < 5:
+            ornek.append((e.get("form","?"), "id YOK"))
+    elif not e["id"]:
+        id_bos += 1
+        if len(ornek) < 10:
+            ornek.append((e.get("form","?"), "id BOŞ"))
 
-# ID ornekleri
-print("\nIlk 5:")
-for l in lcorpus[:5]:
-    print(f"  {l.get('id')}")
+print(f"Toplam lexeme : {len(lex)}")
+print(f"id YOK        : {id_yok}")
+print(f"id BOŞ        : {id_bos}")
+print(f"id SORUNLU    : {id_yok + id_bos}")
 
-print("\nSon 5:")
-for l in lcorpus[-5:]:
-    print(f"  {l.get('id')}")
-
-# ID uzunluklari
-uzunluklar = Counter(len(l.get("id", "")) for l in lcorpus)
-print(f"\nID uzunluk dagilimi:")
-for uz, sayi in sorted(uzunluklar.items()):
-    print(f"  {uz} karakter: {sayi} kayit")
-
-# ID prefix dagilimi
-prefixler = Counter(l.get("id", "").rsplit("-", 1)[0] if "-" in l.get("id", "") else l.get("id", "") for l in lcorpus)
-print(f"\nID prefix dagilimi (ilk 10):")
-for p, s in sorted(prefixler.items(), key=lambda x: -x[1])[:10]:
-    print(f"  {p}: {s}")
+if ornek:
+    print("\n=== ORNEK ===")
+    for form, sorun in ornek:
+        print(f"  {form:20s} | {sorun}")

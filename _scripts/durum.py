@@ -1,71 +1,65 @@
-"""
-Durum raporu - duzeltilmis versiyon
-translations.tr dogru sayar (eski versiyon sadece obje varligina bakiyordu)
-"""
-import json
+﻿import json
 import sys
 from pathlib import Path
 
-# Windows konsolu cp1254 olabildigi icin █ / ░ karakterleri basamiyor
 try:
     sys.stdout.reconfigure(encoding="utf-8")
 except Exception:
     pass
 
 lex = json.loads(Path("public/data/linguistic/lexemes.json").read_text(encoding="utf-8"))
-print(f"Toplam: {len(lex)}")
-print()
+if isinstance(lex, dict):
+    lex = lex.get("lexemes", [])
 
-def tr_dolu(x):  return bool((x.get("translations") or {}).get("tr"))
-def en_dolu(x):  return bool((x.get("translations") or {}).get("en"))
-def ru_dolu(x):  return bool((x.get("translations") or {}).get("ru"))
+total = len(lex)
 
-def trans_herhangi(x):
-    t = x.get("translations")
-    return bool(t) and (t.get("tr") or t.get("en") or t.get("ru"))
+proper = sum(1 for e in lex if e.get("etymologyType") == "proper_noun")
+loan = sum(1 for e in lex if e.get("etymologyType") == "loanword")
+native = sum(1 for e in lex if e.get("etymologyType") == "native")
+unknown = sum(1 for e in lex if e.get("etymologyType") == "unknown")
+
+exempt = proper + loan
+rootable = total - exempt
+
+has_root = sum(1 for e in lex if e.get("rootIds"))
+has_wf = sum(1 for e in lex if e.get("wordFamilyId"))
+
+print(f"==================================================")
+print(f"=== PROJE GENEL DURUM RAPORU (SPRINT R2) ===")
+print(f"==================================================")
+print(f"Toplam Lexeme          : {total}")
+print(f"Etimoloji Dagilimi:")
+print(f"  native               : {native:6d}")
+print(f"  unknown              : {unknown:6d}")
+print(f"  proper_noun          : {proper:6d}")
+print(f"  loanword             : {loan:6d}")
+print(f"--------------------------------------------------")
+print(f"Kok Disi / Muaf        : {exempt:5d}")
+print(f"Koklenebilir Havuz     : {rootable:5d}")
+print(f"--------------------------------------------------")
 
 alanlar = [
-    ("form", "Form"),
-    ("ipa", "IPA"),
-    ("partOfSpeech", "POS"),
-    ("rootIds", "Root"),
-    ("wordFamilyId", "WordFamily"),
-    ("conceptId", "Concept"),
-    ("derivation", "Derivation"),
-    ("literalMeaning", "Meaning"),
-    ("examples", "Examples"),
-    ("audioUrl", "Audio"),
-    ("corpusFrequency", "Frequency"),
+    ("form","Form"), ("ipa","IPA"), ("partOfSpeech","POS"),
+    ("conceptId","Concept"), ("derivation","Derivation"),
+    ("literalMeaning","Meaning"), ("examples","Examples"),
+    ("audioUrl","Audio"), ("corpusFrequency","Frequency"),
 ]
-
 for alan, isim in alanlar:
     dolu = sum(1 for l in lex if l.get(alan))
-    pct = 100 * dolu / len(lex)
-    bar = "█" * int(pct / 5) + "░" * (20 - int(pct / 5))
-    print(f"  {isim:15s} {dolu:6}/{len(lex)} ({pct:5.1f}%) {bar}")
+    pct = 100 * dolu / total
+    bar = "█" * int(pct/5) + "░" * (20 - int(pct/5))
+    print(f"  {isim:15s} {dolu:6d}/{total} ({pct:5.1f}%) {bar}")
 
-print()
-print("=== TRANSLATIONS DETAYLI ===")
-for isim, fn in [
-    ("tr (Turkce)", tr_dolu),
-    ("en (Ingilizce)", en_dolu),
-    ("ru (Rusca)", ru_dolu),
-    ("herhangi", trans_herhangi),
-]:
-    dolu = sum(1 for l in lex if fn(l))
-    pct = 100 * dolu / len(lex)
-    bar = "█" * int(pct / 5) + "░" * (20 - int(pct / 5))
-    print(f"  {isim:15s} {dolu:6}/{len(lex)} ({pct:5.1f}%) {bar}")
+print(f"--------------------------------------------------")
+root_raw = 100 * has_root / total
+root_real = 100 * has_root / rootable if rootable > 0 else 0
+bar_r = "█" * int(root_real/5) + "░" * (20 - int(root_real/5))
+print(f"  Root (Ham)      {has_root:6d}/{total} ({root_raw:5.1f}%)")
+print(f"  Root (GERCEK)   {has_root:6d}/{rootable} ({root_real:5.1f}%) {bar_r} 🎯")
 
-print()
-print("=== EK ALANLAR ===")
-for alan, isim in [
-    ("dialectVariants", "Dialect"),
-    ("notes", "Notes"),
-    ("isLemma", "isLemma"),
-    ("subConceptId", "SubConcept"),
-    ("taxonomyFamily", "Taxonomy"),
-]:
-    dolu = sum(1 for l in lex if l.get(alan))
-    pct = 100 * dolu / len(lex)
-    print(f"  {isim:15s} {dolu:6}/{len(lex)} ({pct:5.1f}%)")
+wf_raw = 100 * has_wf / total
+wf_real = 100 * has_wf / rootable if rootable > 0 else 0
+bar_w = "█" * int(wf_real/5) + "░" * (20 - int(wf_real/5))
+print(f"  WF   (Ham)      {has_wf:6d}/{total} ({wf_raw:5.1f}%)")
+print(f"  WF   (GERCEK)   {has_wf:6d}/{rootable} ({wf_real:5.1f}%) {bar_w} 🎯")
+print(f"==================================================")

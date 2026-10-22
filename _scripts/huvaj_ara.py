@@ -1,31 +1,77 @@
+﻿import json
 import sys
-sys.stdout.reconfigure(encoding="utf-8")
-import json
 from pathlib import Path
 
-f = Path("public/data/8.Ady-Tur_Huvaj.json")
-data = json.loads(f.read_text(encoding="utf-8"))
-words = data["words"]
+# Huvaj JSON
+huvaj_path = Path("public/data/28.Tur-Ady_Huvaj.json")
+if not huvaj_path.exists():
+    print(f"❌ Dosya yok: {huvaj_path}")
+    sys.exit(1)
 
-print(f"Toplam kelime: {len(words)}")
+huvaj = json.loads(huvaj_path.read_text(encoding="utf-8"))
 
-# Test kelimelerimizi ara
-test_kelimeler = ["шъхьэ", "шъэ", "шъу", "шъо", "шъы", "дышъэ",
-                  "шъхьэгу", "шъхьэгъусэ", "шъхьэгъубжэ", "шъыпкъэ",
-                  "шъхьащэ", "гукIэгъу", "нэшъу", "чъыгы",
-                  "Iофы", "цIыфы", "бжьыныф", "фабэ", "мафэ", "фыжьы"]
+# Aranacak çiftler (Adıgece, Kabardeyce)
+ciftler = [
+    ("чъыгы", "жыг"),
+    ("фэбжьэу", "фIэбжьэу"),
+    ("фыжьы", "хуыжь"),
+    ("бжьыныф", "бжьыныху"),
+    ("ты-лэжьэ-щт", "ды-лэжьэ-нщ"),
+    ("жъы", "жьы"),
+    ("бжъэ", "бжьэ"),
+    ("жъэн", "жьэн"),
+    ("жъуэн", "вэн"),
+    ("жъуагъуэ", "вагъуэ"),
+    ("мафэ", "махуэ"),
+    ("фабэ", "хуабэ"),
+    ("нэшъу", "нэф"),
+    ("нэф", "нэху"),
+    ("шIын", "щIын"),
+    ("шIэн", "щIэн"),
+    ("гъашIэ", "гъащIэ"),
+    ("шъхьэ", "щхьэ"),
+    ("дышъэ", "дыщэ"),
+    ("шъынэ", "щынэ"),
+    ("шъабэ", "щабэ"),
+    ("шъхьащэ", "щхьэшэ"),
+    ("гукIэгъу", "гущIэгъу"),
+    ("гупшысэ", "гупсысэ"),
+    ("гушIо", "гуфIэ"),
+]
 
-print("\n=== Huvaj'da ARAMA ===")
-for k in test_kelimeler:
-    found = False
-    for word_key, word_data in words.items():
-        spelling = word_data.get("spelling", "")
-        if k in spelling:
-            print(f"\n{k}:")
-            print(f"  spelling: {spelling[:100]}")
-            defn = word_data.get("full_definition_in_html", "")[:200]
-            print(f"  tanim: {defn}")
-            found = True
-            break
-    if not found:
-        print(f"\n{k}: BULUNAMADI")
+print("=" * 70)
+print("HUVAJ'DA ÇİFT ARAMA")
+print("=" * 70)
+print()
+
+dogrulanmis = 0
+dogrulanmamis = 0
+
+for ady, kbd in ciftler:
+    bulundu = []
+    for madde, m in huvaj.items():
+        html = m.get("full_definition_in_html", "") if isinstance(m, dict) else ""
+        if not html:
+            continue
+        # Her iki form da geçiyor mu?
+        if ady in html and kbd in html:
+            bulundu.append(madde)
+        # Veya sadece Adıgece geçiyor mu? (kaynak olabilir)
+        elif ady in html:
+            bulundu.append(f"{madde} (sadece Adıgece)")
+    
+    if bulundu:
+        print(f"✅ {ady} -> {kbd}")
+        for b in bulundu[:3]:
+            print(f"     Huvaj: {b}")
+        dogrulanmis += 1
+    else:
+        print(f"❌ {ady} -> {kbd}  (Huvaj'da yok)")
+        dogrulanmamis += 1
+
+print()
+print("=" * 70)
+print(f"Doğrulanmış: {dogrulanmis}")
+print(f"Doğrulanmamış: {dogrulanmamis}")
+print(f"Toplam: {dogrulanmis + dogrulanmamis}")
+print("=" * 70)

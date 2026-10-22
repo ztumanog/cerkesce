@@ -1,19 +1,23 @@
 ﻿import json
 from pathlib import Path
 
-lex = json.loads(Path("public/data/linguistic/lexemes.json").read_text(encoding="utf-8"))
+LEX = Path("public/data/linguistic/lexemes.json")
+d = json.loads(LEX.read_text(encoding="utf-8"))
+l = d if isinstance(d, list) else d["lexemes"]
 
-hedefler = ["щысхьын", "щы", "щыкъуанэ", "щыкъухъыджэбз", "щыкъу",
-            "щыкъу щӀалэ", "щыкъу хьэджэбз", "щыпкъэ", "щыкъу адэ",
-            "щыблэ", "щытыну", "щытынущ", "щытыныгъ", "щытыныгъэ",
-            "щытыпӏэ", "щытыр", "щытых", "щытыщт", "щытэп"]
+hedef_idler = {"L-PSE", "L-PSEXUN", "L-PSEBYDE", "KAV-ПСЭУНЭ"}
+hedef_formlar = {"псэр", "псэхэр"}
 
-for form in hedefler:
-    bulunan = [l for l in lex if l.get("form") == form]
-    if bulunan:
-        l = bulunan[0]
-        cid = l.get("conceptId", "YOK")
-        sid = l.get("subConceptId", "YOK")
-        print(f"  {form:30s} | {cid:20s} | {sid}")
-    else:
-        print(f"  {form:30s} | BULUNAMADI")
+bulunan = 0
+for e in l:
+    if e.get("id") in hedef_idler or e.get("form") in hedef_formlar:
+        bulunan += 1
+        print(
+            e.get("id"), "|",
+            e.get("form"), "| status:", e.get("status"),
+            "| rootIds:", e.get("rootIds"),
+            "| wordFamilyId:", e.get("wordFamilyId"),
+            "| meaning:", e.get("meaning"),
+        )
+
+print("Bulunan kayit sayisi:", bulunan)

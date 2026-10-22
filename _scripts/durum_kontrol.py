@@ -1,36 +1,31 @@
-import json
+﻿import json
 from pathlib import Path
+from collections import Counter
 
-BASE = Path(r"E:\projeler\Cerkesce")
-lex = json.loads((BASE/"public/data/linguistic/lexemes.json").read_text(encoding="utf-8"))
+LEX = Path("public/data/linguistic/lexemes.json")
+if not LEX.exists():
+    print("❌ lexemes.json bulunamadı!")
+    exit()
 
-def dolu(l, field):
-    v = l.get(field)
-    if v is None: return False
-    if isinstance(v, str): return len(v.strip()) >= 2
-    if isinstance(v, (list, dict)): return len(v) > 0
-    return bool(v)
+lex = json.loads(LEX.read_text(encoding="utf-8"))
+lexemes = lex if isinstance(lex, list) else lex.get("lexemes", [])
 
-print(f"Toplam: {len(lex)}\n")
-for alan in ["form", "ipa", "partOfSpeech", "rootIds", "wordFamilyId", "conceptId",
-             "derivation", "translations", "literalMeaning", "examples", "audioUrl"]:
-    sayi = sum(1 for l in lex if dolu(l, alan))
-    pct = 100*sayi/len(lex)
-    bar = "#" * int(pct/5) + "." * (20 - int(pct/5))
-    print(f"  {alan:18} {sayi:6}/{len(lex)} ({pct:5.1f}%) {bar}")
+print(f"📊 TOPLAM KAYIT: {len(lexemes)}\n")
 
-# IPA kalite kontrolu
-print("\n=== IPA KALITE ===")
-def ipa_gecerli(ipa):
-    if not ipa: return False
-    if not ipa.startswith("/") or not ipa.endswith("/"): return False
-    ic = ipa.strip("/")
-    if not ic: return False
-    if any('\u0400' <= c <= '\u04FF' for c in ic): return False
-    if any('a' <= c.lower() <= 'z' and c.isascii() for c in ic): return False
-    if '╩' in ic or '\ufffd' in ic: return False
-    return True
+# Status dağılımı
+status_counter = Counter(e.get("status", "status_yok") for e in lexemes)
+print("=== DURUM (STATUS) DAĞILIMI ===")
+for st, count in status_counter.most_common():
+    print(f"  {st:30s}: {count:6d}")
 
-gecerli = sum(1 for l in lex if ipa_gecerli(l.get("ipa", "")))
-print(f"  Temiz IPA: {gecerli} (%{100*gecerli/len(lex):.1f})")
-print(f"  Kirli IPA: {len(lex) - gecerli}")
+# Son eklenen doğrulanmış kelimeler
+print("\n=== SON EKLENEN DOĞRULANMIŞ KELİMELER (İlk 10) ===")
+verified = [e for e in lexemes if e.get("status") == "VERIFIED"]
+for e in verified[:10]:
+    print(f"  ✅ {e.get('form','?'):20s} | root={e.get('root','?'):15s} | concept={e.get('conceptId','?')}")
+
+# Karantinadakiler
+print("\n=== KARANTİNADAKİ KELİMELER (İlk 10) ===")
+karantina = [e for e in lexemes if e.get("status") == "UNVERIFIED_OR_SYNTHETIC"]
+for e in karantina[:10]:
+    print(f"  🚫 {e.get('form','?'):20s} | Sebep: {e.get('quarantine_reason','?')}")

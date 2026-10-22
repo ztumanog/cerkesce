@@ -69,7 +69,6 @@ for f in sorted(data_dir.glob("*.json")):
 
                 item = item.strip()
 
-
                 if not item:
                     continue
 

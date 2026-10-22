@@ -1,18 +1,8 @@
-import json
+import json, collections
 from pathlib import Path
-from collections import Counter
-
-lex = json.loads(Path("public/data/linguistic/lexemes.json").read_text(encoding="utf-8"))
-
-concept_dagilim = Counter()
-for l in lex:
-    cid = l.get("conceptId")
-    if cid:
-        concept_dagilim[cid] += 1
-
-print(f"=== CONCEPT DAGILIMI (Toplam: {len(concept_dagilim)} farkli kavram) ===")
-for cid, sayi in concept_dagilim.most_common(50):
-    print(f"  {cid:30s} {sayi:5d}")
-
-print(f"\nToplam conceptId dolu: {sum(concept_dagilim.values())}")
-print(f"Toplam kayit: {len(lex)}")
+l = json.loads(Path("public/data/linguistic/lexemes.json").read_text(encoding="utf-8"))
+bos = [e for e in l if not e.get("conceptId")]
+kavram = [e for e in l if str(e.get("conceptId") or "").startswith("KAVRAM_")]
+print("toplam:", len(l), "| bos conceptId:", len(bos), "| KAVRAM_:", len(kavram))
+print("dialect (bos):", collections.Counter(e.get("dialect") for e in bos).most_common(10))
+print("POS (bos):", collections.Counter(e.get("partOfSpeech") for e in bos).most_common(10))
