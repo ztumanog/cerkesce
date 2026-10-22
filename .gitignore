@@ -275,3 +275,17 @@ exclude_gecmisi.txt
 sprint-3.5-pipeline.py
 vitest-result.json
 public/vercel.json
+
+# Ek ignore (devam)
+_scripts/*.ts
+_scripts/*.mjs
+_scripts/*.ps1
+_scripts/tr_ai_batches/
+_scripts/tr_gold_batches/
+durum.py
+grupla.py
+check_*.py
+exclude_gecmisi.txt
+sprint-3.5-pipeline.py
+vitest-result.json
+public/vercel.json
