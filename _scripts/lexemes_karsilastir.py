@@ -1,7 +1,7 @@
-﻿import json
+import json
 from pathlib import Path
 
-for dosya in ["public/data/linguistic/lexemes.json", "public/data/linguistic/lexemes-yeni.json"]:
+for dosya in ["public/data/linguistic/lexemes.json", "_yedek/linguistic/lexemes-yeni.broken.json"]:
     p = Path(dosya)
     if not p.exists():
         print(f"{dosya}: YOK")
@@ -16,3 +16,4 @@ for dosya in ["public/data/linguistic/lexemes.json", "public/data/linguistic/lex
     print(f"  щы-: {len(shchy)}")
     print(f"  DOLU: {len(dolu)}")
     print(f"  BOS: {len(bos)}")
+
