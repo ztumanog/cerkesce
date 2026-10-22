@@ -1,0 +1,898 @@
+{
+  "timestamp": "2026-10-22T12:25:02.364909",
+  "kirik_root_ids": [
+    "R-BE",
+    "R-DEN",
+    "R-LHA",
+    "R-ME",
+    "R-NA",
+    "R-SE",
+    "R-SHTE",
+    "R-SY",
+    "R-TEN"
+  ],
+  "kayitlar": [
+    {
+      "id": "L-MALHXE",
+      "form": "малъхъэ",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-D185D18CD18B",
+      "form": "хьын",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-D09DD18DD189",
+      "form": "НэщхъыфӀагъэ",
+      "cikarilan": [
+        "R-NA"
+      ]
+    },
+    {
+      "id": "L-KHELHHEN",
+      "form": "хэлъхьэн",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-AKHER",
+      "form": "ахэр",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-CORPUS-00225",
+      "form": "тыдэ",
+      "cikarilan": [
+        "R-DEN"
+      ]
+    },
+    {
+      "id": "L-CORPUS-00238",
+      "form": "хьыкум",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-CORPUS-00253",
+      "form": "хэлъ",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-CORPUS-00287",
+      "form": "телъхьэн",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-CORPUS-00340",
+      "form": "сэлам",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-CORPUS-00358",
+      "form": "телъыджэ",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-CORPUS-00552",
+      "form": "телъ",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-CORPUS-00557",
+      "form": "хэлъкъым",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-CORPUS-00587",
+      "form": "телъхьэ",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-CORPUS-00597",
+      "form": "хэлъын",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-CORPUS-00609",
+      "form": "пылъ",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-CORPUS-00618",
+      "form": "хэлъыр",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-CORPUS-00656",
+      "form": "хэлъхьан",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-CORPUS-00703",
+      "form": "телъхьан",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-CORPUS-00737",
+      "form": "итын",
+      "cikarilan": [
+        "R-TEN"
+      ]
+    },
+    {
+      "id": "L-CORPUS-00742",
+      "form": "псаоу",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-CORPUS-00821",
+      "form": "залымыгъэ",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-CORPUS-00924",
+      "form": "залым",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-CORPUS-00980",
+      "form": "бэмэ",
+      "cikarilan": [
+        "R-BE"
+      ]
+    },
+    {
+      "id": "L-CORPUS-01007",
+      "form": "тегъэувэн",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-CORPUS-01015",
+      "form": "сэлэт",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-CORPUS-01040",
+      "form": "исын",
+      "cikarilan": [
+        "R-SY"
+      ]
+    },
+    {
+      "id": "L-CORPUS-01182",
+      "form": "тыда",
+      "cikarilan": [
+        "R-DEN"
+      ]
+    },
+    {
+      "id": "L-CORPUS-01258",
+      "form": "псау",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-CORPUS-01376",
+      "form": "хэлъхьэныгъэ",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-CORPUS-01390",
+      "form": "мысэ",
+      "cikarilan": [
+        "R-SE"
+      ]
+    },
+    {
+      "id": "L-CORPUS-01438",
+      "form": "пылъын",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-CORPUS-01528",
+      "form": "тегъэхуэн",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-CORPUS-01548",
+      "form": "зетын",
+      "cikarilan": [
+        "R-TEN"
+      ]
+    },
+    {
+      "id": "L-CORPUS-01562",
+      "form": "телъын",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-CORPUS-01578",
+      "form": "модэ",
+      "cikarilan": [
+        "R-ME"
+      ]
+    },
+    {
+      "id": "L-CORPUS-01588",
+      "form": "ислъам",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-CORPUS-01809",
+      "form": "тегъэуэн",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-CORPUS-01988",
+      "form": "тегъэтын",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-CORPUS-02187",
+      "form": "телъыджэу",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-CORPUS-02256",
+      "form": "тегъэун",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-CORPUS-02413",
+      "form": "мобы",
+      "cikarilan": [
+        "R-ME"
+      ]
+    },
+    {
+      "id": "L-CORPUS-02500",
+      "form": "телевизор",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-CORPUS-02677",
+      "form": "пштэмэ",
+      "cikarilan": [
+        "R-SHTE"
+      ]
+    },
+    {
+      "id": "L-CORPUS-02928",
+      "form": "аслъан",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-CORPUS-02994",
+      "form": "алъандэрэ",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-CORPUS-03031",
+      "form": "зэлъа",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-CORPUS-03045",
+      "form": "псантхуэ",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-CORPUS-03212",
+      "form": "хьыныгъэ",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-CORPUS-03328",
+      "form": "пылъыгъ",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-CORPUS-03346",
+      "form": "телъыгъ",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-CORPUS-03411",
+      "form": "тегъэзэгъэн",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-CORPUS-03430",
+      "form": "тэлай",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-CORPUS-03851",
+      "form": "тегъэлъын",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-CORPUS-03852",
+      "form": "тегъэжын",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-CORPUS-03914",
+      "form": "тегъэчыныхьын",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-CORPUS-04056",
+      "form": "тегъэуцон",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-CORPUS-04367",
+      "form": "зылэн",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-CORPUS-04511",
+      "form": "псалъ",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-CORPUS-04658",
+      "form": "амыщ",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-CORPUS-04822",
+      "form": "хэлъхьэ",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-CORPUS-04842",
+      "form": "хэлъхьэжын",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-CORPUS2-01113",
+      "form": "тегъэщӀапӀэ",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-CORPUS2-02240",
+      "form": "зыӀыгъ",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-CORPUS2-02913",
+      "form": "зыӀут",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-CORPUS2-02960",
+      "form": "зыӀэрыгъэхьэн",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-CORPUS2-03220",
+      "form": "тегъэкӀуэдэн",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-CORPUS2-03576",
+      "form": "зыӀэщӀэлъ",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-CORPUS2-04010",
+      "form": "тегъэкӀын",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-CORPUS2-05217",
+      "form": "цӀапӀэ",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-CORPUS2-05506",
+      "form": "Ӏулъхьэ",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-CORPUS2-06243",
+      "form": "зыӀуегъэх",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-CORPUS2-06719",
+      "form": "телъхьэпӀэ",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-CORPUS2-09803",
+      "form": "зыӀэщӀэгъэкӀын",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-VERIFIED-00095",
+      "form": "малъхъэдис",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-VERIFIED-00099",
+      "form": "пылъхьэн",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-VERIFIED-00213",
+      "form": "алъп",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-VERIFIED-00453",
+      "form": "телъхьэгъу",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-VERIFIED-00555",
+      "form": "тегъолъхьан",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-VERIFIED-00668",
+      "form": "тегъэхьан",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-VERIFIED-00729",
+      "form": "алътес",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-VERIFIED-01366",
+      "form": "пылъхьан",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-VERIFIED-01397",
+      "form": "пылъагъэр",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-VERIFIED-01586",
+      "form": "хьыжын",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-VERIFIED-01808",
+      "form": "хэлъхухьын",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-VERIFIED-01893",
+      "form": "хэлъытэн",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-VERIFIED-02061",
+      "form": "зэлъытын",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-VERIFIED-02087",
+      "form": "телеграммэ",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-VERIFIED-02183",
+      "form": "силос",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-VERIFIED-02643",
+      "form": "зэлъыпытэу",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-KBD-00039",
+      "form": "Ӏулъхьэн",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-KBD-00040",
+      "form": "Ӏулъын",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-KBD-00046",
+      "form": "Ӏулыдж",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-KBD-00047",
+      "form": "Ӏулэлын",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-KBD-00274",
+      "form": "алътмакъ",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-KBD-01683",
+      "form": "зэлъагъэ",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-KBD-01685",
+      "form": "зэлъыӀудзын",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-KBD-01686",
+      "form": "зэлъыӀукӀуэтын",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-KBD-01687",
+      "form": "зэлъыӀукӀын",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-KBD-01689",
+      "form": "зэлъыӀутхъун",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-KBD-01690",
+      "form": "зэлъыӀуха",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-KBD-01695",
+      "form": "зэлымпӀын",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-KBD-03478",
+      "form": "малыхъу",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-KBD-04031",
+      "form": "пылъхьэ",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-KBD-04033",
+      "form": "пылэлын",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-KBD-04190",
+      "form": "сэлам-чэлам",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-KBD-04264",
+      "form": "тегъухьын",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-KBD-04266",
+      "form": "тегъуэгъуэн",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-KBD-04270",
+      "form": "тегъэӀукӀын",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-KBD-04272",
+      "form": "тегъэдиен",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-KBD-04274",
+      "form": "тегъэзэн",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-KBD-04275",
+      "form": "тегъэкӀуэн",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-KBD-04278",
+      "form": "тегъэлэн",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-KBD-04280",
+      "form": "тегъэпкӀын",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-KBD-04281",
+      "form": "тегъэтӀысхьэн",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-KBD-04282",
+      "form": "тегъэукӀуриен",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-KBD-04283",
+      "form": "тегъэхьэн",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-KBD-04304",
+      "form": "телъытэн",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-KBD-04312",
+      "form": "телыдэн",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-KBD-04441",
+      "form": "убакӀуэ",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-KBD-04955",
+      "form": "цӀахуэ",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-KBD-04956",
+      "form": "цӀащхъ",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-KBD-05624",
+      "form": "бессознательный",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-KBD-05670",
+      "form": "заложить",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-KBD-05689",
+      "form": "мало",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    },
+    {
+      "id": "L-KBD-05741",
+      "form": "сила",
+      "cikarilan": [
+        "R-LHA"
+      ]
+    }
+  ]
+}
