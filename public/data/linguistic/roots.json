@@ -28660,5 +28660,194 @@
       },
       "notes": "65 kok temizligi - mimar onayli Grup A"
     }
+  },
+  {
+    "id": "R-DZY",
+    "form": "дзын",
+    "primaryMeaning": "atmak, firlatmak",
+    "semanticDomains": [
+      "action"
+    ],
+    "source": "migration-v5",
+    "status": "PENDING_REVIEW",
+    "wordFamily": {
+      "id": "WF-DZY",
+      "lexemeIds": [],
+      "conceptIds": [],
+      "morphemeIds": [],
+      "productivity": {
+        "totalLexemes": 0,
+        "corpusFrequency": 0
+      },
+      "notes": "41 tanimsiz derivation temizligi"
+    }
+  },
+  {
+    "id": "R-BLY",
+    "form": "блы",
+    "primaryMeaning": "yedi (7)",
+    "semanticDomains": [
+      "number"
+    ],
+    "source": "migration-v5",
+    "status": "PENDING_REVIEW",
+    "wordFamily": {
+      "id": "WF-BLY",
+      "lexemeIds": [],
+      "conceptIds": [],
+      "morphemeIds": [],
+      "productivity": {
+        "totalLexemes": 0,
+        "corpusFrequency": 0
+      },
+      "notes": "41 tanimsiz derivation temizligi"
+    }
+  },
+  {
+    "id": "R-PSO",
+    "form": "псо",
+    "primaryMeaning": "butun, hepsi",
+    "semanticDomains": [
+      "quantity"
+    ],
+    "source": "migration-v5",
+    "status": "PENDING_REVIEW",
+    "wordFamily": {
+      "id": "WF-PSO",
+      "lexemeIds": [],
+      "conceptIds": [],
+      "morphemeIds": [],
+      "productivity": {
+        "totalLexemes": 0,
+        "corpusFrequency": 0
+      },
+      "notes": "41 tanimsiz derivation temizligi"
+    }
+  },
+  {
+    "id": "R-TSE",
+    "form": "цэ",
+    "primaryMeaning": "dis",
+    "semanticDomains": [
+      "body"
+    ],
+    "source": "migration-v5",
+    "status": "PENDING_REVIEW",
+    "wordFamily": {
+      "id": "WF-TSE",
+      "lexemeIds": [],
+      "conceptIds": [],
+      "morphemeIds": [],
+      "productivity": {
+        "totalLexemes": 0,
+        "corpusFrequency": 0
+      },
+      "notes": "41 tanimsiz derivation temizligi"
+    }
+  },
+  {
+    "id": "R-NY",
+    "form": "ны",
+    "primaryMeaning": "anne (Adigece)",
+    "semanticDomains": [
+      "family"
+    ],
+    "source": "migration-v5",
+    "status": "PENDING_REVIEW",
+    "wordFamily": {
+      "id": "WF-NY",
+      "lexemeIds": [],
+      "conceptIds": [],
+      "morphemeIds": [],
+      "productivity": {
+        "totalLexemes": 0,
+        "corpusFrequency": 0
+      },
+      "notes": "41 tanimsiz derivation temizligi"
+    }
+  },
+  {
+    "id": "R-TSU",
+    "form": "цу",
+    "primaryMeaning": "okuz",
+    "semanticDomains": [
+      "animal"
+    ],
+    "source": "migration-v5",
+    "status": "PENDING_REVIEW",
+    "wordFamily": {
+      "id": "WF-TSU",
+      "lexemeIds": [],
+      "conceptIds": [],
+      "morphemeIds": [],
+      "productivity": {
+        "totalLexemes": 0,
+        "corpusFrequency": 0
+      },
+      "notes": "41 tanimsiz derivation temizligi"
+    }
+  },
+  {
+    "id": "R-LE",
+    "form": "лэ",
+    "primaryMeaning": "boya, astar",
+    "semanticDomains": [
+      "object"
+    ],
+    "source": "migration-v5",
+    "status": "PENDING_REVIEW",
+    "wordFamily": {
+      "id": "WF-LE",
+      "lexemeIds": [],
+      "conceptIds": [],
+      "morphemeIds": [],
+      "productivity": {
+        "totalLexemes": 0,
+        "corpusFrequency": 0
+      },
+      "notes": "41 tanimsiz derivation temizligi"
+    }
+  },
+  {
+    "id": "R-DU",
+    "form": "ду",
+    "primaryMeaning": "dunya (alinti)",
+    "semanticDomains": [
+      "abstract"
+    ],
+    "source": "migration-v5",
+    "status": "PENDING_REVIEW",
+    "wordFamily": {
+      "id": "WF-DU",
+      "lexemeIds": [],
+      "conceptIds": [],
+      "morphemeIds": [],
+      "productivity": {
+        "totalLexemes": 0,
+        "corpusFrequency": 0
+      },
+      "notes": "41 tanimsiz derivation temizligi"
+    }
+  },
+  {
+    "id": "R-UE",
+    "form": "уэ",
+    "primaryMeaning": "dolu (yagis)",
+    "semanticDomains": [
+      "weather"
+    ],
+    "source": "migration-v5",
+    "status": "PENDING_REVIEW",
+    "wordFamily": {
+      "id": "WF-UE",
+      "lexemeIds": [],
+      "conceptIds": [],
+      "morphemeIds": [],
+      "productivity": {
+        "totalLexemes": 0,
+        "corpusFrequency": 0
+      },
+      "notes": "41 tanimsiz derivation temizligi"
+    }
   }
 ]

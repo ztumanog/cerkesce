@@ -2717,5 +2717,21 @@
     "function": "possessive",
     "meaningTr": "kendinin (dönüşlü iyelik)",
     "meaningEn": "own (reflexive possessive)"
+  },
+  {
+    "id": "R-DI",
+    "form": "ди-",
+    "type": "prefix",
+    "function": "possessive",
+    "meaningTr": "bizim (1. cogul iyelik)",
+    "meaningEn": "our (1pl possessive)"
+  },
+  {
+    "id": "R-SHU",
+    "form": "шу",
+    "type": "noun",
+    "function": "agent",
+    "meaningTr": "atli, suvari",
+    "meaningEn": "horseman, rider"
   }
 ]
