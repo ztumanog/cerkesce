@@ -2612,5 +2612,110 @@
       "L-K1ESH1"
     ],
     "notes": "derivation.components taramasindan uretildi; kaynak: lexeme.literalMeaning; 1 lexeme'de bilesen"
+  },
+  {
+    "id": "R-GE",
+    "form": "гъэ",
+    "type": "prefix",
+    "function": "causative",
+    "meaningTr": "ettirgen öneki",
+    "meaningEn": "causative prefix",
+    "notes": "Fiil köküne eklenir, 'yaptırmak' anlamı verir."
+  },
+  {
+    "id": "R-DZHY",
+    "form": "джы",
+    "type": "adverb",
+    "function": "temporal",
+    "meaningTr": "şimdi",
+    "meaningEn": "now"
+  },
+  {
+    "id": "R-KHET",
+    "form": "хэт",
+    "type": "pronoun",
+    "function": "interrogative",
+    "meaningTr": "kim?",
+    "meaningEn": "who?"
+  },
+  {
+    "id": "R-ARY",
+    "form": "ары",
+    "type": "particle",
+    "function": "affirmative",
+    "meaningTr": "evet / odur",
+    "meaningEn": "yes / that is"
+  },
+  {
+    "id": "R-SYD",
+    "form": "сыда",
+    "type": "pronoun",
+    "function": "interrogative",
+    "meaningTr": "niye? / ne?",
+    "meaningEn": "why? / what?"
+  },
+  {
+    "id": "R-ARA",
+    "form": "аращ",
+    "type": "particle",
+    "function": "affirmative",
+    "meaningTr": "odur",
+    "meaningEn": "that is"
+  },
+  {
+    "id": "R-EZY",
+    "form": "езы",
+    "type": "pronoun",
+    "function": "reflexive",
+    "meaningTr": "kendi",
+    "meaningEn": "self"
+  },
+  {
+    "id": "R-SER",
+    "form": "сэры",
+    "type": "pronoun",
+    "function": "emphatic",
+    "meaningTr": "ben kendim",
+    "meaningEn": "I myself"
+  },
+  {
+    "id": "R-ZYR",
+    "form": "зыри",
+    "type": "pronoun",
+    "function": "negative",
+    "meaningTr": "hiçbiri",
+    "meaningEn": "none"
+  },
+  {
+    "id": "R-AUE",
+    "form": "ауэ",
+    "type": "conjunction",
+    "function": "contrast",
+    "meaningTr": "ama / fakat",
+    "meaningEn": "but"
+  },
+  {
+    "id": "R-SI",
+    "form": "си-",
+    "type": "prefix",
+    "function": "possessive",
+    "meaningTr": "benim (1. tekil iyelik)",
+    "meaningEn": "my (1sg possessive)"
+  },
+  {
+    "id": "R-UI",
+    "form": "уи-",
+    "type": "prefix",
+    "function": "possessive",
+    "meaningTr": "senin (2. tekil iyelik)",
+    "meaningEn": "your (2sg possessive)"
+  },
+  {
+    "id": "R-ZI",
+    "form": "зи-",
+    "type": "prefix",
+    "function": "possessive",
+    "meaningTr": "kendinin (dönüşlü iyelik)",
+    "meaningEn": "own (reflexive possessive)"
   }
 ]
