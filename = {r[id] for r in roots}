@@ -1,0 +1,5556 @@
+warning: in the working copy of '.vercelignore', LF will be replaced by CRLF the next time Git touches it
+[1mdiff --git a/.vercelignore b/.vercelignore[m
+[1mindex ce9a0d0..23a3bb8 100644[m
+[1m--- a/.vercelignore[m
+[1m+++ b/.vercelignore[m
+[36m@@ -1,4 +1,18 @@[m
+ node_modules[m
+ .next[m
+ .git[m
+[31m-*.log[m
+\ No newline at end of file[m
+[32m+[m[32m.vercel[m
+[32m+[m[32m.env*.local[m
+[32m+[m[32mmorph-test[m
+[32m+[m[32m_scripts[m
+[32m+[m[32m_wiktionary[m
+[32m+[m[32m_yedek[m
+[32m+[m[32m/data[m
+[32m+[m[32mold.json[m
+[32m+[m[32m*.tsv[m
+[32m+[m[32m*.pdf[m
+[32m+[m[32mpublic/data/tum_kelimeler.csv[m
+[32m+[m[32mpublic/data/linguistic/*yedek*[m
+[32m+[m[32mpublic/data/linguistic/*backup*[m
+[32m+[m[32mpublic/data/linguistic/*pre-*[m
+[32m+[m[32mpublic/data/linguistic/*.bak*[m
+[1mdiff --git a/_scripts/son_durum.py b/_scripts/son_durum.py[m
+[1mindex 819b680..e563027 100644[m
+[1m--- a/_scripts/son_durum.py[m
+[1m+++ b/_scripts/son_durum.py[m
+[36m@@ -1,16 +1,63 @@[m
+[31m-﻿import json[m
+[32m+[m[32mimport json[m
+ from pathlib import Path[m
+ [m
+[32m+[m[32m# Tüm dosyaları yükle[m
+[32m+[m[32mroots = json.loads(Path("public/data/linguistic/roots.json").read_text(encoding="utf-8"))[m
+ lex = json.loads(Path("public/data/linguistic/lexemes.json").read_text(encoding="utf-8"))[m
+[31m-shchy = [l for l in lex if l.get("form", "").startswith("щы")][m
+[31m-dolu = [l for l in shchy if l.get("conceptId") and l.get("conceptId") not in ("", "-")][m
+[31m-bos = [l for l in shchy if not l.get("conceptId") or l.get("conceptId") in ("", "-")][m
+[31m-[m
+[31m-print(f"Toplam щы-: {len(shchy)}")[m
+[31m-print(f"DOLU: {len(dolu)}")[m
+[31m-print(f"BOS: {len(bos)}")[m
+[31m-[m
+[31m-# Ornek bos[m
+[31m-print("\nBOS olanlar (ilk 20):")[m
+[31m-for l in bos[:20]:[m
+[31m-    print(f"  {l.get('form')}")[m
+[32m+[m
+[32m+[m[32mprint("=" * 70)[m
+[32m+[m[32mprint("ЗЭКУЭФЭУЭН — TAM DURUM")[m
+[32m+[m[32mprint("=" * 70)[m
+[32m+[m
+[32m+[m[32m# Lexeme kayıtları[m
+[32m+[m[32mprint("\n### LEXEME KAYITLARI ###")[m
+[32m+[m[32mfor e in lex:[m
+[32m+[m[32m    if e.get("id") in ("L-KBD-01670", "L-KBD-01670-T"):[m
+[32m+[m[32m        print(f"\nID: {e.get('id')}")[m
+[32m+[m[32m        print(f"  form: {e.get('form')}")[m
+[32m+[m[32m        print(f"  ipa: {e.get('ipa')}")[m
+[32m+[m[32m        print(f"  POS: {e.get('partOfSpeech')}")[m
+[32m+[m[32m        print(f"  literalMeaning: {(e.get('literalMeaning') or '')[:80]}")[m
+[32m+[m[32m        print(f"  rootIds: {e.get('rootIds')}")[m
+[32m+[m[32m        print(f"  wordFamilyId: {e.get('wordFamilyId')}")[m
+[32m+[m[32m        print(f"  translations.tr: {e.get('translations', {}).get('tr', '')[:60]}")[m
+[32m+[m[32m        print(f"  dialect: {e.get('dialect')}")[m
+[32m+[m
+[32m+[m[32m# Kökler[m
+[32m+[m[32mprint("\n\n### KÖKLER ###")[m
+[32m+[m[32mfor r in roots:[m
+[32m+[m[32m    if r.get("id") in ("R-KUE", "R-WA", "R-FE", "R-FA", "R-UE-HAIL", "R-UE-PRON"):[m
+[32m+[m[32m        wf = r.get("wordFamily", {})[m
+[32m+[m[32m        uye_sayisi = len(wf.get("lexemeIds", []))[m
+[32m+[m[32m        print(f"\n{r.get('id')}:")[m
+[32m+[m[32m        print(f"  form: {r.get('form')}")[m
+[32m+[m[32m        print(f"  primaryMeaning: {(r.get('primaryMeaning') or '')[:80]}")[m
+[32m+[m[32m        print(f"  üye sayısı: {uye_sayisi}")[m
+[32m+[m[32m        # зэкуэфэуэн bu kökte mi?[m
+[32m+[m[32m        if any(l.startswith("L-KBD-01670") for l in wf.get("lexemeIds", [])):[m
+[32m+[m[32m            print(f"  ✅ зэкуэфэуэн bu kökte")[m
+[32m+[m
+[32m+[m[32m# L-UE (dolu/sen) durumu[m
+[32m+[m[32mprint("\n\n### L-UE (уэ = dolu) ###")[m
+[32m+[m[32mfor e in lex:[m
+[32m+[m[32m    if e.get("id") in ("L-UE", "L-UE-PRON"):[m
+[32m+[m[32m        print(f"\nID: {e.get('id')}")[m
+[32m+[m[32m        print(f"  form: {e.get('form')}")[m
+[32m+[m[32m        print(f"  POS: {e.get('partOfSpeech')}")[m
+[32m+[m[32m        print(f"  literalMeaning: {(e.get('literalMeaning') or '')[:80]}")[m
+[32m+[m[32m        print(f"  rootIds: {e.get('rootIds')}")[m
+[32m+[m[32m        print(f"  translations.tr: {e.get('translations', {}).get('tr', '')}")[m
+[32m+[m
+[32m+[m[32m# Genel istatistik[m
+[32m+[m[32mprint("\n\n### GENEL İSTATİSTİK ###")[m
+[32m+[m[32mprint(f"Toplam kök: {len(roots)}")[m
+[32m+[m[32mprint(f"Toplam lexeme: {len(lex)}")[m
+[32m+[m
+[32m+[m[32m# Boş aile var mı?[m
+[32m+[m[32mbos = sum(1 for r in roots if not r.get("wordFamily", {}).get("lexemeIds"))[m
+[32m+[m[32mprint(f"Boş aile: {bos}")[m
+[32m+[m
+[32m+[m[32m# Hayalet ID var mı?[m
+[32m+[m[32mlex_ids = {e.get("id") for e in lex}[m
+[32m+[m[32mhayalet = sum(1 for r in roots for lid in r.get("wordFamily", {}).get("lexemeIds", []) if lid not in lex_ids)[m
+[32m+[m[32mprint(f"Hayalet ID: {hayalet}")[m
+[1mdiff --git a/app/kaynaklar/page.tsx b/app/kaynaklar/page.tsx[m
+[1mindex cafd211..94dcf5e 100644[m
+[1m--- a/app/kaynaklar/page.tsx[m
+[1m+++ b/app/kaynaklar/page.tsx[m
+[36m@@ -1,3 +1,4 @@[m
+[32m+[m[32m// TASLAK: Bu sayfa deneme amacli olusturuldu, henuz tamamlanmadi.[m
+ import Kaynaklar from "@/components/layout/Kaynaklar";[m
+ [m
+ export default function KaynaklarPage() {[m
+[1mdiff --git a/app/sozluk/converter/page.tsx b/app/sozluk/converter/page.tsx[m
+[1mindex ba9c661..b94ef2e 100644[m
+[1m--- a/app/sozluk/converter/page.tsx[m
+[1m+++ b/app/sozluk/converter/page.tsx[m
+[36m@@ -1,3 +1,4 @@[m
+[32m+[m[32m// TASLAK: Bu sayfa deneme amacli olusturuldu, henuz tamamlanmadi.[m
+ import { DialectConverterComponent } from "@/components/dictionary/DialectConverter";[m
+ [m
+ export default function ConverterPage() {[m
+[1mdiff --git a/app/sozluk/favoriler/page.tsx b/app/sozluk/favoriler/page.tsx[m
+[1mindex f7e2e68..60e5679 100644[m
+[1m--- a/app/sozluk/favoriler/page.tsx[m
+[1m+++ b/app/sozluk/favoriler/page.tsx[m
+[36m@@ -1,3 +1,4 @@[m
+[32m+[m[32m// TASLAK: Bu sayfa deneme amacli olusturuldu, henuz tamamlanmadi.[m
+ 'use client';[m
+ [m
+ import { useFavoriler } from '@/hooks/useFavoriler';[m
+[1mdiff --git a/app/yonetim/page.tsx b/app/yonetim/page.tsx[m
+[1mindex bdb6455..0a7c51b 100644[m
+[1m--- a/app/yonetim/page.tsx[m
+[1m+++ b/app/yonetim/page.tsx[m
+[36m@@ -1,3 +1,4 @@[m
+[32m+[m[32m// TASLAK: Bu sayfa deneme amacli olusturuldu, henuz tamamlanmadi.[m
+ import Link from "next/link";[m
+ [m
+ export default function YonetimPage() {[m
+[1mdiff --git a/public/data/linguistic/lexemes.json b/public/data/linguistic/lexemes.json[m
+[1mindex 5dcb896..72d9bd1 100644[m
+[1m--- a/public/data/linguistic/lexemes.json[m
+[1m+++ b/public/data/linguistic/lexemes.json[m
+[36m@@ -23685,10 +23685,10 @@[m
+   {[m
+     "id": "L-UE",[m
+     "form": "уэ",[m
+[31m-    "literalMeaning": "dolu; sen",[m
+[32m+[m[32m    "literalMeaning": "dolu (yağış)",[m
+     "conceptId": "YOU",[m
+     "partOfSpeech": "noun",[m
+[31m-    "notes": "Dogrulandi: temel kelime",[m
+[32m+[m[32m    "notes": "Dogrulandi: dolu (yağış). Abaze (2005): уэ, уэф. Vikisözlük: уэ I.",[m
+     "corpusFrequency": 3287,[m
+     "ipa": "/wɐ/",[m
+     "examples": [[m
+[36m@@ -23698,13 +23698,14 @@[m
+     ],[m
+     "isLemma": true,[m
+     "translations": {[m
+[31m-      "tr": "Sen / Dolu (yağış)",[m
+[32m+[m[32m      "tr": "dolu (yağış)",[m
+       "en": "hail (precipitation)",[m
+       "ru": "град",[m
+[31m-      "ar": "أنت/أنتِ/أنتم"[m
+[32m+[m[32m      "ady": "ошъу",[m
+[32m+[m[32m      "kbd": "уэ / уэф"[m
+     },[m
+     "rootIds": [[m
+[31m-      "R-WA"[m
+[32m+[m[32m      "R-UE-HAIL"[m
+     ],[m
+     "wordFamilyId": "WF-УЭ",[m
+     "derivation": {[m
+[36m@@ -23715,7 +23716,8 @@[m
+       "rule": "root"[m
+     },[m
+     "etymologyType": "native",[m
+[31m-    "rootForm": "уэ"[m
+[32m+[m[32m    "rootForm": "уэ",[m
+[32m+[m[32m    "status": "PENDING_REVIEW"[m
+   },[m
+   {[m
+     "id": "L-GUALE",[m
+[36m@@ -29645,7 +29647,9 @@[m
+     "partOfSpeech": "noun",[m
+     "notes": "R-NE kok yanilgisi: R-NE-DIGER",[m
+     "corpusFrequency": 118,[m
+[31m-    "rootIds": [],[m
+[32m+[m[32m    "rootIds": [[m
+[32m+[m[32m      "R-NEKH_2"[m
+[32m+[m[32m    ],[m
+     "wordFamilyId": null,[m
+     "derivation": {[m
+       "rule": "root",[m
+[36m@@ -52025,7 +52029,7 @@[m
+   {[m
+     "id": "L-CORPUS-00196",[m
+     "form": "еуэн",[m
+[31m-    "literalMeaning": "ударять, бить, колотить",[m
+[32m+[m[32m    "literalMeaning": "vurmak, çarpmak, dövmek",[m
+     "partOfSpeech": "verb",[m
+     "corpusFrequency": 198,[m
+     "dialectVariants": {[m
+[36m@@ -52045,8 +52049,10 @@[m
+       "tr": "Vurmak",[m
+       "ar": "يضرب"[m
+     },[m
+[31m-    "rootIds": [],[m
+[31m-    "wordFamilyId": "WF-ЕУЭ",[m
+[32m+[m[32m    "rootIds": [[m
+[32m+[m[32m      "R-WA"[m
+[32m+[m[32m    ],[m
+[32m+[m[32m    "wordFamilyId": "WF-WA",[m
+     "derivation": {[m
+       "rootIds": [[m
+         "R-ЕУЭ"[m
+[36m@@ -259423,7 +259429,9 @@[m
+     },[m
+     "notes": "R-NE kok yanilgisi: R-NE-DIGER",[m
+     "ipa": "/nɐ'χǝɕʹɐ/",[m
+[31m-    "rootIds": [],[m
+[32m+[m[32m    "rootIds": [[m
+[32m+[m[32m      "R-NEKH_3"[m
+[32m+[m[32m    ],[m
+     "wordFamilyId": null,[m
+     "derivation": {[m
+       "rule": "root",[m
+[36m@@ -489328,17 +489336,17 @@[m
+     "form": "зэкуэфэуэн",[m
+     "literalMeaning": "(зокуэфауэ) неперех. гл. хлопнуть себя ладонями по бедрам (при сильном удивлении, огорчении и т. п.) ((zokuefaue) nepereh. ch. slap palms thighs (at strong surprise, bitterness and so on. n.))",[m
+     "partOfSpeech": "verb",[m
+[31m-    "conceptId": "SKIN",[m
+[32m+[m[32m    "conceptId": null,[m
+     "examples": [[m
+       "Унэм дыщынэсыжам, ди анэр зэкуэфауэу къыщӀэжащ. М. З. Фызхэм нащхьэӀущхьэ зэхуащӀ, зэкуэфауэу мэдыхьэшх. Ӏуащхь."[m
+     ],[m
+     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",[m
+     "corpusFrequency": 0,[m
+     "rootIds": [[m
+[31m-      "R-FA",[m
+[31m-      "R-FE"[m
+[32m+[m[32m      "R-KUE",[m
+[32m+[m[32m      "R-WA"[m
+     ],[m
+[31m-    "wordFamilyId": "WF-FA",[m
+[32m+[m[32m    "wordFamilyId": "WF-WA",[m
+     "derivation": {[m
+       "rootIds": [[m
+         "R-FE"[m
+[36m@@ -489355,18 +489363,16 @@[m
+     "translations": {[m
+       "en": "slap your hips with the palms of your hands (when very surprised, disapointed, etc.)",[m
+       "ru": "хлопнуть себя ладонями по бёдрам (при сильном удивлении, огорчении и т. п.)",[m
+[31m-      "tr": "AYAK",[m
+[31m-      "trSource": "en->tr koprusu (orta)"[m
+[32m+[m[32m      "tr": "kalçalara avuç içiyle vurmak (şaşkınlık/üzüntüyle)"[m
+     },[m
+     "root": "фэ",[m
+     "wordFamily": {[m
+       "id": "WF-FE",[m
+       "lexemeIds": [[m
+[31m-        "L-FE"[m
+[31m-      ],[m
+[31m-      "conceptIds": [[m
+[31m-        "SKIN"[m
+[32m+[m[32m        "L-FE",[m
+[32m+[m[32m        "L-KBD-01670"[m
+       ],[m
+[32m+[m[32m      "conceptIds": [],[m
+       "morphemeIds": [],[m
+       "productivity": {[m
+         "totalLexemes": 0,[m
+[36m@@ -489374,7 +489380,12 @@[m
+       },[m
+       "notes": "Bos aile - sonra doldurulacak"[m
+     },[m
+[31m-    "etymologyType": "native"[m
+[32m+[m[32m    "etymologyType": "native",[m
+[32m+[m[32m    "dialect": "kbd",[m
+[32m+[m[32m    "dialectVariantsSource": {[m
+[32m+[m[32m      "adyghe": "",[m
+[32m+[m[32m      "kabardian": "1.Ady-Ady_AP.json (Apaşev 2008)"[m
+[32m+[m[32m    }[m
+   },[m
+   {[m
+     "id": "L-KBD-01671",[m
+[36m@@ -657385,7 +657396,7 @@[m
+     },[m
+     "ipa": "/txǝʁɐ-ɕіǝʁɐ/",[m
+     "rootIds": [[m
+[31m-      "R-TKHY_1"[m
+[32m+[m[32m      "R-TKH"[m
+     ],[m
+     "dialectVariants": [[m
+       "тхыгъэ-шІыгъэ, гъэшъыпкъалъ, щэстхылъ, тхьапэ"[m
+[36m@@ -657419,7 +657430,7 @@[m
+     },[m
+     "ipa": "/txǝʁɐkіɐɕі/",[m
+     "rootIds": [[m
+[31m-      "R-TKHY_1"[m
+[32m+[m[32m      "R-TKH"[m
+     ],[m
+     "dialectVariants": [[m
+       "гъозалъ, тхыгъэкІэкІ, къэозгъэшІэжь"[m
+[36m@@ -657437,7 +657448,7 @@[m
+     },[m
+     "ipa": "/txǝʁɐɬɐ/",[m
+     "rootIds": [[m
+[31m-      "R-TKHY_1"[m
+[32m+[m[32m      "R-TKH"[m
+     ],[m
+     "dialectVariants": [[m
+       "тхыгъалъ"[m
+[36m@@ -692477,7 +692488,9 @@[m
+       "en": "jr."[m
+     },[m
+     "ipa": "/nɐχǝɕʼɐ/",[m
+[31m-    "rootIds": [],[m
+[32m+[m[32m    "rootIds": [[m
+[32m+[m[32m      "R-NEKH_3"[m
+[32m+[m[32m    ],[m
+     "notes": "R-NE kok yanilgisi: R-NE-DIGER",[m
+     "examples": [[m
+       "НэхъыщӀэр нэхъ щӀасэщ. (погов. ) Нэхъыжьым жьэ ет, нэхъыщӀэм гъуэгу ет. (погов. )"[m
+[36m@@ -707171,7 +707184,9 @@[m
+       "tr": "[AUTO] freq=60"[m
+     },[m
+     "ipa": "/жǝlɐdɐs/",[m
+[31m-    "rootIds": [],[m
+[32m+[m[32m    "rootIds": [[m
+[32m+[m[32m      "R-ZHYL_1"[m
+[32m+[m[32m    ],[m
+     "notes": "Kaynak: 1.Ady-Ady_AP.json, 5.Ady-Rus_Qarden.json",[m
+     "examples": [[m
+       "*Жылэдэсхэм я зэӀущӀэ."[m
+[36m@@ -711327,7 +711342,7 @@[m
+     },[m
+     "ipa": "/lɐʑapʼɐnʃɐ/",[m
+     "rootIds": [[m
+[31m-      "R-LEZH_1"[m
+[32m+[m[32m      "R-LEZH"[m
+     ],[m
+     "notes": "Kaynak: 1.Ady-Ady_AP.json, 5.Ady-Rus_Qarden.json",[m
+     "examples": [[m
+[36m@@ -764019,7 +764034,9 @@[m
+       "tr": "BUZ"[m
+     },[m
+     "ipa": "/ɕʼǝʔaʁɐ/",[m
+[31m-    "rootIds": [],[m
+[32m+[m[32m    "rootIds": [[m
+[32m+[m[32m      "R-SHCHIY_2"[m
+[32m+[m[32m    ],[m
+     "notes": "Kaynak: 5.Ady-Rus_Qarden.json",[m
+     "etymologyType": "unknown",[m
+     "conceptNorm": "ХОЛОД"[m
+[36m@@ -853697,7 +853714,7 @@[m
+     },[m
+     "ipa": "/ɕʼǝmaxwɐkʼɐ/",[m
+     "rootIds": [[m
+[31m-      "R-SHCHIY"[m
+[32m+[m[32m      "R-MAXWA"[m
+     ],[m
+     "notes": "Kaynak: 1.Ady-Ady_AP.json",[m
+     "etymologyType": "native",[m
+[36m@@ -868161,7 +868178,9 @@[m
+       "tr": "1.  (tree) garden;\n2. attr (tree) garden"[m
+     },[m
+     "ipa": "/жǝgxadɐ/",[m
+[31m-    "rootIds": [],[m
+[32m+[m[32m    "rootIds": [[m
+[32m+[m[32m      "R-ZHYG_1"[m
+[32m+[m[32m    ],[m
+     "notes": "Kaynak: 5.Ady-Rus_Qarden.json",[m
+     "etymologyType": "unknown",[m
+     "conceptNorm": "САД"[m
+[36m@@ -874618,7 +874637,9 @@[m
+       "tr": "UZUNLUK"[m
+     },[m
+     "ipa": "/kʼǝħaʁɐ/",[m
+[31m-    "rootIds": [],[m
+[32m+[m[32m    "rootIds": [[m
+[32m+[m[32m      "R-KIY"[m
+[32m+[m[32m    ],[m
+     "notes": "Kaynak: 5.Ady-Rus_Qarden.json",[m
+     "etymologyType": "unknown",[m
+     "conceptNorm": "ДЛИНА"[m
+[36m@@ -881426,7 +881447,7 @@[m
+     },[m
+     "ipa": "/lɐʑapʼɐnʃaʁɐ/",[m
+     "rootIds": [[m
+[31m-      "R-LEZH_1"[m
+[32m+[m[32m      "R-LEZH"[m
+     ],[m
+     "notes": "Kaynak: 19.Kbd-Ru-2-Jonty.json",[m
+     "etymologyType": "native",[m
+[36m@@ -916147,7 +916168,9 @@[m
+       "tr": "[AUTO] freq=35"[m
+     },[m
+     "ipa": "/maɕʼaʁɐ/",[m
+[31m-    "rootIds": [],[m
+[32m+[m[32m    "rootIds": [[m
+[32m+[m[32m      "R-MASHCH_1"[m
+[32m+[m[32m    ],[m
+     "notes": "Kaynak: 5.Ady-Rus_Qarden.json",[m
+     "etymologyType": "unknown",[m
+     "conceptNorm": "ACTION_VERB"[m
+[36m@@ -925055,7 +925078,7 @@[m
+     },[m
+     "ipa": "/txǝʁɐnʃɐ/",[m
+     "rootIds": [[m
+[31m-      "R-TKHY_1"[m
+[32m+[m[32m      "R-TKH"[m
+     ],[m
+     "notes": "Kaynak: 5.Ady-Rus_Qarden.json",[m
+     "etymologyType": "native",[m
+[36m@@ -940792,12 +940815,13 @@[m
+     "pos": "UNKNOWN",[m
+     "notes": "[MANUEL] 200 kelimelik liste",[m
+     "root": "адыгэ + бзэ",[m
+[31m-    "wordFamilyId": "WF-DYG",[m
+[32m+[m[32m    "wordFamilyId": null,[m
+     "tr_status": "fixed_manual",[m
+     "etymologyType": "native",[m
+     "id": "L-AUTO-00010",[m
+     "status": "SYNTHETIC",[m
+[31m-    "synthetic_reason": "L-AUTO otomatik uretim, sozlukte yok, concept yok, POS yok"[m
+[32m+[m[32m    "synthetic_reason": "L-AUTO otomatik uretim, sozlukte yok, concept yok, POS yok",[m
+[32m+[m[32m    "rootIds": [][m
+   },[m
+   {[m
+     "form": "алэжьын",[m
+[36m@@ -968483,5 +968507,107 @@[m
+     "source": "Sozluk_Ara2_Manuel_Dogrulama",[m
+     "meaning": "şıngırtı sesi (kırılan cam/eşya)",[m
+     "frequency": 1[m
+[32m+[m[32m  },[m
+[32m+[m[32m  {[m
+[32m+[m[32m    "id": "L-KBD-01670-T",[m
+[32m+[m[32m    "form": "зэкуэфэуэжын",[m
+[32m+[m[32m    "literalMeaning": "kalçalara avuç içiyle tekrar tekrar vurmak (dövünmek)",[m
+[32m+[m[32m    "partOfSpeech": "verb",[m
+[32m+[m[32m    "conceptId": null,[m
+[32m+[m[32m    "examples": [],[m
+[32m+[m[32m    "notes": "Türev: зэкуэфэуэн + -ж- (tekrar) + -ын. Kaynak: Abaze (2005)",[m
+[32m+[m[32m    "corpusFrequency": 0,[m
+[32m+[m[32m    "rootIds": [[m
+[32m+[m[32m      "R-KUE",[m
+[32m+[m[32m      "R-WA"[m
+[32m+[m[32m    ],[m
+[32m+[m[32m    "wordFamilyId": "WF-WA",[m
+[32m+[m[32m    "derivation": {[m
+[32m+[m[32m      "rootIds": [[m
+[32m+[m[32m        "R-FE"[m
+[32m+[m[32m      ],[m
+[32m+[m[32m      "morphemeIds": [],[m
+[32m+[m[32m      "rule": "compound+repetitive"[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "dialect": "kbd",[m
+[32m+[m[32m    "dialectVariants": {[m
+[32m+[m[32m      "adyghe": "",[m
+[32m+[m[32m      "kabardian": "зэкуэфэуэжын"[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "isLemma": false,[m
+[32m+[m[32m    "ipa": "",[m
+[32m+[m[32m    "translations": {[m
+[32m+[m[32m      "en": "to slap one's hips repeatedly with the palms (in surprise, grief, etc.)",[m
+[32m+[m[32m      "ru": "хлопать себя ладонями по бёдрам (повторно, при удивлении/огорчении)",[m
+[32m+[m[32m      "tr": "kalçalara avuç içiyle tekrar tekrar vurmak (dövünmek)"[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "root": "фэ",[m
+[32m+[m[32m    "wordFamily": {[m
+[32m+[m[32m      "id": "WF-FE",[m
+[32m+[m[32m      "lexemeIds": [[m
+[32m+[m[32m        "L-FE",[m
+[32m+[m[32m        "L-KBD-01670-T"[m
+[32m+[m[32m      ],[m
+[32m+[m[32m      "conceptIds": [],[m
+[32m+[m[32m      "morphemeIds": [],[m
+[32m+[m[32m      "productivity": {[m
+[32m+[m[32m        "totalLexemes": 0,[m
+[32m+[m[32m        "corpusFrequency": 0[m
+[32m+[m[32m      },[m
+[32m+[m[32m      "notes": "Bos aile - sonra doldurulacak"[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "etymologyType": "native",[m
+[32m+[m[32m    "sources": [[m
+[32m+[m[32m      "Abaze (2005)"[m
+[32m+[m[32m    ],[m
+[32m+[m[32m    "status": "VERIFIED",[m
+[32m+[m[32m    "dialectVariantsSource": {[m
+[32m+[m[32m      "adyghe": "",[m
+[32m+[m[32m      "kabardian": "Abaze (2005), 27.Tur-Ady_Abaze.json"[m
+[32m+[m[32m    }[m
+[32m+[m[32m  },[m
+[32m+[m[32m  {[m
+[32m+[m[32m    "id": "L-TEST-CACHE-001",[m
+[32m+[m[32m    "form": "тесткэш",[m
+[32m+[m[32m    "literalMeaning": "cache test kelimesi",[m
+[32m+[m[32m    "partOfSpeech": "noun",[m
+[32m+[m[32m    "dialect": "kbd",[m
+[32m+[m[32m    "dialectVariants": {[m
+[32m+[m[32m      "adyghe": "",[m
+[32m+[m[32m      "kabardian": "тесткэш"[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "translations": {[m
+[32m+[m[32m      "tr": "test cache"[m
+[32m+[m[32m    }[m
+[32m+[m[32m  },[m
+[32m+[m[32m  {[m
+[32m+[m[32m    "id": "L-UE-PRON",[m
+[32m+[m[32m    "form": "уэ",[m
+[32m+[m[32m    "ipa": "wɐ",[m
+[32m+[m[32m    "literalMeaning": "sen (2. tekil şahıs zamiri)",[m
+[32m+[m[32m    "partOfSpeech": "pronoun",[m
+[32m+[m[32m    "translations": {[m
+[32m+[m[32m      "tr": "sen",[m
+[32m+[m[32m      "en": "you, thou (2nd person singular)",[m
+[32m+[m[32m      "ru": "ты",[m
+[32m+[m[32m      "ar": "أنت/أنتِ",[m
+[32m+[m[32m      "ady": "уэ",[m
+[32m+[m[32m      "kbd": "уэ"[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "rootIds": [[m
+[32m+[m[32m      "R-UE-PRON"[m
+[32m+[m[32m    ],[m
+[32m+[m[32m    "dialectVariants": {[m
+[32m+[m[32m      "adyghe": "уэ",[m
+[32m+[m[32m      "kabardian": "уэ"[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "dialect": "kbd",[m
+[32m+[m[32m    "notes": "Dogrulandi: 2. tekil şahıs zamiri. Vikisözlük: уэ III.",[m
+[32m+[m[32m    "status": "VERIFIED",[m
+[32m+[m[32m    "sources": [[m
+[32m+[m[32m      "Vikisozluk",[m
+[32m+[m[32m      "Aparsev (2008)",[m
+[32m+[m[32m      "Kardanov (1957)"[m
+[32m+[m[32m    ][m
+   }[m
+ ][m
+\ No newline at end of file[m
+[1mdiff --git a/public/data/linguistic/roots.json b/public/data/linguistic/roots.json[m
+[1mindex 26b3d6e..a53cd83 100644[m
+[1m--- a/public/data/linguistic/roots.json[m
+[1m+++ b/public/data/linguistic/roots.json[m
+[36m@@ -499,10 +499,7 @@[m
+         "L-CORPUS-04958",[m
+         "L-CORPUS-04969",[m
+         "L-CORPUS2-00198",[m
+[31m-        "L-CORPUS2-00463",[m
+[31m-        "L-CORPUS2-00539",[m
+         "L-CORPUS2-00724",[m
+[31m-        "L-CORPUS2-00755",[m
+         "L-CORPUS2-00946",[m
+         "L-CORPUS2-01138",[m
+         "L-CORPUS2-01140",[m
+[36m@@ -511,79 +508,59 @@[m
+         "L-CORPUS2-01341",[m
+         "L-CORPUS2-01410",[m
+         "L-CORPUS2-01482",[m
+[31m-        "L-CORPUS2-01587",[m
+         "L-CORPUS2-01805",[m
+         "L-CORPUS2-02229",[m
+[31m-        "L-CORPUS2-02236",[m
+         "L-CORPUS2-02506",[m
+         "L-CORPUS2-02514",[m
+         "L-CORPUS2-02518",[m
+         "L-CORPUS2-02692",[m
+         "L-CORPUS2-02741",[m
+[31m-        "L-CORPUS2-02799",[m
+         "L-CORPUS2-02819",[m
+[31m-        "L-CORPUS2-03057",[m
+         "L-CORPUS2-03061",[m
+[31m-        "L-CORPUS2-03200",[m
+         "L-CORPUS2-03359",[m
+         "L-CORPUS2-03438",[m
+         "L-CORPUS2-03560",[m
+         "L-CORPUS2-03737",[m
+         "L-CORPUS2-03817",[m
+         "L-CORPUS2-03853",[m
+[31m-        "L-CORPUS2-03921",[m
+         "L-CORPUS2-03940",[m
+         "L-CORPUS2-04019",[m
+         "L-CORPUS2-04047",[m
+[31m-        "L-CORPUS2-04332",[m
+         "L-CORPUS2-04336",[m
+[31m-        "L-CORPUS2-04416",[m
+         "L-CORPUS2-04798",[m
+         "L-CORPUS2-05146",[m
+         "L-CORPUS2-05360",[m
+[31m-        "L-CORPUS2-05476",[m
+         "L-CORPUS2-05494",[m
+         "L-CORPUS2-05744",[m
+         "L-CORPUS2-05873",[m
+         "L-CORPUS2-06040",[m
+         "L-CORPUS2-06167",[m
+[31m-        "L-CORPUS2-06297",[m
+[31m-        "L-CORPUS2-06467",[m
+[31m-        "L-CORPUS2-06497",[m
+         "L-CORPUS2-06726",[m
+         "L-CORPUS2-06743",[m
+         "L-CORPUS2-06771",[m
+         "L-CORPUS2-06997",[m
+         "L-CORPUS2-07138",[m
+         "L-CORPUS2-07277",[m
+[31m-        "L-CORPUS2-07297",[m
+[31m-        "L-CORPUS2-07412",[m
+         "L-CORPUS2-07495",[m
+[31m-        "L-CORPUS2-07743",[m
+         "L-CORPUS2-07930",[m
+         "L-CORPUS2-07967",[m
+         "L-CORPUS2-08085",[m
+[31m-        "L-CORPUS2-08119",[m
+         "L-CORPUS2-08260",[m
+         "L-CORPUS2-08442",[m
+         "L-CORPUS2-08639",[m
+         "L-CORPUS2-08718",[m
+[31m-        "L-CORPUS2-08800",[m
+         "L-CORPUS2-08801",[m
+         "L-CORPUS2-08804",[m
+         "L-CORPUS2-08926",[m
+[31m-        "L-CORPUS2-08960",[m
+         "L-CORPUS2-09050",[m
+         "L-CORPUS2-09109",[m
+         "L-CORPUS2-09195",[m
+[31m-        "L-CORPUS2-09317",[m
+         "L-CORPUS2-09459",[m
+         "L-CORPUS2-09598",[m
+         "L-CORPUS2-09672",[m
+         "L-CORPUS2-09696",[m
+         "L-CORPUS2-09713",[m
+         "L-CORPUS2-09722",[m
+[31m-        "L-CORPUS2-09869",[m
+         "L-D093D183D0B0",[m
+         "L-D093D183D0B0-2",[m
+         "L-D093D183D0B7",[m
+[36m@@ -613,7 +590,6 @@[m
+         "L-GUAPE",[m
+         "L-GUBZH",[m
+         "L-GUBZHYGE",[m
+[31m-        "L-GUENYQAGHE",[m
+         "L-GUETYNEGHE",[m
+         "L-GUF1E",[m
+         "L-GUF1EN",[m
+[36m@@ -1029,7 +1005,6 @@[m
+         "L-VERIFIED-02708",[m
+         "L-VERIFIED-02714",[m
+         "L-WEGU",[m
+[31m-        "L-ГУКIЭГЪУ",[m
+         "L-ГУХЭКI",[m
+         "L-GUEDZ",[m
+         "L-CORPUS-00124",[m
+[36m@@ -1496,14 +1471,11 @@[m
+         "L-CORPUS2-00851",[m
+         "L-CORPUS2-01438",[m
+         "L-CORPUS2-01605",[m
+[31m-        "L-CORPUS2-01984",[m
+         "L-CORPUS2-02005",[m
+         "L-CORPUS2-02083",[m
+         "L-CORPUS2-02096",[m
+[31m-        "L-CORPUS2-02172",[m
+         "L-CORPUS2-02196",[m
+         "L-CORPUS2-02261",[m
+[31m-        "L-CORPUS2-02463",[m
+         "L-CORPUS2-02474",[m
+         "L-CORPUS2-02548",[m
+         "L-CORPUS2-02655",[m
+[36m@@ -1511,29 +1483,21 @@[m
+         "L-CORPUS2-03029",[m
+         "L-CORPUS2-03246",[m
+         "L-CORPUS2-03322",[m
+[31m-        "L-CORPUS2-03327",[m
+         "L-CORPUS2-03634",[m
+         "L-CORPUS2-03742",[m
+[31m-        "L-CORPUS2-03765",[m
+         "L-CORPUS2-03781",[m
+[31m-        "L-CORPUS2-03840",[m
+         "L-CORPUS2-04021",[m
+         "L-CORPUS2-04478",[m
+         "L-CORPUS2-04590",[m
+[31m-        "L-CORPUS2-04599",[m
+[31m-        "L-CORPUS2-04831",[m
+         "L-CORPUS2-04862",[m
+         "L-CORPUS2-04887",[m
+         "L-CORPUS2-04918",[m
+         "L-CORPUS2-05140",[m
+[31m-        "L-CORPUS2-05219",[m
+[31m-        "L-CORPUS2-05481",[m
+         "L-CORPUS2-05490",[m
+         "L-CORPUS2-05872",[m
+         "L-CORPUS2-05875",[m
+         "L-CORPUS2-06171",[m
+         "L-CORPUS2-06235",[m
+[31m-        "L-CORPUS2-06408",[m
+         "L-CORPUS2-06563",[m
+         "L-CORPUS2-06888",[m
+         "L-CORPUS2-07086",[m
+[36m@@ -1548,24 +1512,17 @@[m
+         "L-CORPUS2-07650",[m
+         "L-CORPUS2-07669",[m
+         "L-CORPUS2-08127",[m
+[31m-        "L-CORPUS2-08296",[m
+         "L-CORPUS2-08351",[m
+         "L-CORPUS2-08421",[m
+         "L-CORPUS2-08461",[m
+         "L-CORPUS2-08469",[m
+         "L-CORPUS2-08481",[m
+[31m-        "L-CORPUS2-08619",[m
+         "L-CORPUS2-08625",[m
+         "L-CORPUS2-08778",[m
+[31m-        "L-CORPUS2-08905",[m
+         "L-CORPUS2-08963",[m
+         "L-CORPUS2-09065",[m
+[31m-        "L-CORPUS2-09104",[m
+         "L-CORPUS2-09107",[m
+         "L-CORPUS2-09188",[m
+[31m-        "L-CORPUS2-09217",[m
+[31m-        "L-CORPUS2-09272",[m
+[31m-        "L-CORPUS2-09676",[m
+         "L-D0A9D185D18C",[m
+         "L-D0B1D0B3D18B",[m
+         "L-D0B1D0B6D18C",[m
+[36m@@ -1827,7 +1784,6 @@[m
+         "L-SHHYESHYEZHYN",[m
+         "L-SHHYETS",[m
+         "L-SHHYEUSYGHE",[m
+[31m-        "L-SHXHEGAVAGHE",[m
+         "L-UNAGHUE",[m
+         "L-UNASH1E",[m
+         "L-UNESHHXHE",[m
+[36m@@ -2118,7 +2074,6 @@[m
+         "KAV-НЭӀУЭН",[m
+         "KAV-НЭӀЭ",[m
+         "KAV-НЭӀЭРЫКУ",[m
+[31m-        "L-CONCEPT-002",[m
+         "L-CORPUS-00024",[m
+         "L-CORPUS-00042",[m
+         "L-CORPUS-00064",[m
+[36m@@ -2333,10 +2288,8 @@[m
+         "L-CORPUS2-00045",[m
+         "L-CORPUS2-00360",[m
+         "L-CORPUS2-00438",[m
+[31m-        "L-CORPUS2-00447",[m
+         "L-CORPUS2-00481",[m
+         "L-CORPUS2-00514",[m
+[31m-        "L-CORPUS2-00555",[m
+         "L-CORPUS2-00575",[m
+         "L-CORPUS2-00596",[m
+         "L-CORPUS2-00630",[m
+[36m@@ -2344,62 +2297,46 @@[m
+         "L-CORPUS2-01028",[m
+         "L-CORPUS2-01261",[m
+         "L-CORPUS2-01366",[m
+[31m-        "L-CORPUS2-01401",[m
+         "L-CORPUS2-01606",[m
+         "L-CORPUS2-01671",[m
+         "L-CORPUS2-01742",[m
+[31m-        "L-CORPUS2-01762",[m
+         "L-CORPUS2-02072",[m
+         "L-CORPUS2-02452",[m
+         "L-CORPUS2-02477",[m
+         "L-CORPUS2-02607",[m
+[31m-        "L-CORPUS2-02970",[m
+[31m-        "L-CORPUS2-03065",[m
+         "L-CORPUS2-03403",[m
+         "L-CORPUS2-03500",[m
+         "L-CORPUS2-03532",[m
+[31m-        "L-CORPUS2-03633",[m
+[31m-        "L-CORPUS2-03920",[m
+         "L-CORPUS2-04055",[m
+         "L-CORPUS2-04190",[m
+         "L-CORPUS2-04361",[m
+         "L-CORPUS2-04434",[m
+[31m-        "L-CORPUS2-04621",[m
+         "L-CORPUS2-04674",[m
+         "L-CORPUS2-04821",[m
+         "L-CORPUS2-05112",[m
+[31m-        "L-CORPUS2-05167",[m
+         "L-CORPUS2-05556",[m
+         "L-CORPUS2-05749",[m
+         "L-CORPUS2-05846",[m
+[31m-        "L-CORPUS2-05878",[m
+         "L-CORPUS2-05886",[m
+         "L-CORPUS2-06000",[m
+         "L-CORPUS2-06033",[m
+         "L-CORPUS2-06716",[m
+         "L-CORPUS2-06862",[m
+         "L-CORPUS2-07039",[m
+[31m-        "L-CORPUS2-07087",[m
+         "L-CORPUS2-07124",[m
+         "L-CORPUS2-07137",[m
+         "L-CORPUS2-07421",[m
+[31m-        "L-CORPUS2-07841",[m
+         "L-CORPUS2-08101",[m
+         "L-CORPUS2-08342",[m
+         "L-CORPUS2-08349",[m
+[31m-        "L-CORPUS2-08422",[m
+[31m-        "L-CORPUS2-08504",[m
+         "L-CORPUS2-08667",[m
+         "L-CORPUS2-08717",[m
+[31m-        "L-CORPUS2-08724",[m
+         "L-CORPUS2-08784",[m
+         "L-CORPUS2-09059",[m
+[31m-        "L-CORPUS2-09095",[m
+         "L-CORPUS2-09169",[m
+         "L-CORPUS2-09223",[m
+         "L-CORPUS2-09701",[m
+         "L-CORPUS2-09783",[m
+[31m-        "L-CORPUS2-09960",[m
+         "L-D09AD18AD18D-2",[m
+         "L-D09AD18AD18D-3",[m
+         "L-D0A8D18BD0BD",[m
+[36m@@ -2411,9 +2348,7 @@[m
+         "L-D0B5D189D380",[m
+         "L-D0B8D182D380",[m
+         "L-D0BDD18DD185",[m
+[31m-        "L-D0BDD18DD185-2",[m
+         "L-D0BDD18DD189",[m
+[31m-        "L-D0BDD18DD189-2",[m
+         "L-EPLHYN",[m
+         "L-KBD-00007",[m
+         "L-KBD-00037",[m
+[36m@@ -2475,7 +2410,6 @@[m
+         "L-KBD-01879",[m
+         "L-KBD-02022",[m
+         "L-KBD-02037",[m
+[31m-        "L-KBD-02105",[m
+         "L-KBD-02106",[m
+         "L-KBD-02107",[m
+         "L-KBD-02108",[m
+[36m@@ -2643,8 +2577,6 @@[m
+         "L-KBD-05718",[m
+         "L-KBD-05769",[m
+         "L-KHYDZHEBZ",[m
+[31m-        "L-MORPHO-ХЬЭНЭЩӀЫУ",[m
+[31m-        "L-NAF1",[m
+         "L-NAPE",[m
+         "L-NAPS",[m
+         "L-NAT1E",[m
+[36m@@ -2653,12 +2585,10 @@[m
+         "L-NE-DAWN",[m
+         "L-NE-JOY",[m
+         "L-NE-LIGHT",[m
+[31m-        "L-NE1EY",[m
+         "L-NEBZHYTS",[m
+         "L-NEBZHYTSYLE",[m
+         "L-NEF-KOR",[m
+         "L-NEF1",[m
+[31m-        "L-NEF1EGU",[m
+         "L-NEGHABE",[m
+         "L-NEGU",[m
+         "L-NEK1U",[m
+[36m@@ -2670,8 +2600,6 @@[m
+         "L-NESHEBEGU",[m
+         "L-NESHXH",[m
+         "L-NESYN2",[m
+[31m-        "L-NEZHAN",[m
+[31m-        "L-PROMPT-00043",[m
+         "L-PROMPT-00050",[m
+         "L-VERIFIED-00017",[m
+         "L-VERIFIED-00038",[m
+[36m@@ -2777,7 +2705,6 @@[m
+         "L-VERIFIED-02594",[m
+         "L-VERIFIED-02613",[m
+         "L-VERIFIED-02615",[m
+[31m-        "L-YEPLHEN",[m
+         "KAV-КӀЭЛЪЫПЛЪЫНЫГЪЭ",[m
+         "KAV-УКӀЫТЭНШЭ",[m
+         "KAV-ЕКӀУУ",[m
+[36m@@ -2999,11 +2926,8 @@[m
+         "L-CORPUS-04948",[m
+         "L-CORPUS2-00090",[m
+         "L-CORPUS2-00157",[m
+[31m-        "L-CORPUS2-00737",[m
+         "L-CORPUS2-02197",[m
+         "L-CORPUS2-02526",[m
+[31m-        "L-CORPUS2-02830",[m
+[31m-        "L-CORPUS2-04685",[m
+         "L-CORPUS2-05296",[m
+         "L-CORPUS2-05686",[m
+         "L-CORPUS2-05961",[m
+[36m@@ -3148,78 +3072,6 @@[m
+       "notes": "Doga koku. напс = нэ + псэ (goz + su) bilesimi."[m
+     }[m
+   },[m
+[31m-  {[m
+[31m-    "id": "R-GUSHCH",[m
+[31m-    "form": "гущ",[m
+[31m-    "ipa": "/gʷǝɕ/",[m
+[31m-    "primaryMeaning": "besik",[m
+[31m-    "secondaryMeanings": [[m
+[31m-      "pekistirme edati"[m
+[31m-    ],[m
+[31m-    "semanticDomains": [[m
+[31m-      "object",[m
+[31m-      "household",[m
+[31m-      "culture"[m
+[31m-    ],[m
+[31m-    "dialectVariants": {[m
+[31m-      "adyghe": "кушъэ",[m
+[31m-      "kabardian": "гущэ"[m
+[31m-    },[m
+[31m-    "productivity": {[m
+[31m-      "lemmaCount": 7,[m
+[31m-      "compoundCount": 6,[m
+[31m-      "dictionarySources": 10,[m
+[31m-      "corpusFrequency": 125,[m
+[31m-      "adyFreq": 12,[m
+[31m-      "kbdFreq": 113[m
+[31m-    },[m
+[31m-    "derivedWords": [[m
+[31m-      {[m
+[31m-        "form": "гущэ баш",[m
+[31m-        "meaning": "besik cubugu"[m
+[31m-      },[m
+[31m-      {[m
+[31m-        "form": "гущэ пхъэбгъу",[m
+[31m-        "meaning": "besik tahtasi"[m
+[31m-      },[m
+[31m-      {[m
+[31m-        "form": "гущэ уэншэку",[m
+[31m-        "meaning": "besik yatagi"[m
+[31m-      },[m
+[31m-      {[m
+[31m-        "form": "гущэ хъыдан",[m
+[31m-        "meaning": "bebek bezi"[m
+[31m-      },[m
+[31m-      {[m
+[31m-        "form": "гущэ шхыӀэн",[m
+[31m-        "meaning": "besik yorgani"[m
+[31m-      },[m
+[31m-      {[m
+[31m-        "form": "гущэ щхьэнтэ",[m
+[31m-        "meaning": "besik yastigi"[m
+[31m-      },[m
+[31m-      {[m
+[31m-        "form": "гущэ уэрэд",[m
+[31m-        "meaning": "ninni"[m
+[31m-      }[m
+[31m-    ],[m
+[31m-    "notes": "Gu koku DEGIL. Ayri bir kok. Diyalekt: Adigece кушъэ <-> Kabardeyce гущэ.",[m
+[31m-    "wordFamily": {[m
+[31m-      "id": "WF-GUSHCH",[m
+[31m-      "lexemeIds": [[m
+[31m-        "L-GUSHHE"[m
+[31m-      ],[m
+[31m-      "conceptIds": [[m
+[31m-        "CRADLE"[m
+[31m-      ],[m
+[31m-      "morphemeIds": [],[m
+[31m-      "productivity": {[m
+[31m-        "totalLexemes": 0,[m
+[31m-        "corpusFrequency": 0[m
+[31m-      },[m
+[31m-      "notes": "Bos aile - sonra doldurulacak"[m
+[31m-    }[m
+[31m-  },[m
+   {[m
+     "id": "R-1E",[m
+     "form": "Ӏэ",[m
+[36m@@ -3270,60 +3122,26 @@[m
+       "id": "WF-1E",[m
+       "lexemeIds": [[m
+         "HUV3-IАДЭ",[m
+[31m-        "HUV3-IЭБАГЪУЭ",[m
+[31m-        "HUV3-IЭБАЙ",[m
+[31m-        "HUV3-IЭБЭ-ЛЪЭБЭ",[m
+[31m-        "HUV3-IЭБЭТ",[m
+[31m-        "HUV3-IЭВЭЛЬ-ЭВЭЛЬ",[m
+[31m-        "HUV3-IЭГУАЖЭ",[m
+         "HUV3-IЭГУАУЭ",[m
+[31m-        "HUV3-IЭГУЛЪ",[m
+[31m-        "HUV3-IЭГУПЕЛ",[m
+[31m-        "HUV3-IЭГУЩIЭ",[m
+         "HUV3-IЭДАКЪЭ",[m
+[31m-        "HUV3-IЭДАКЪЭЖЬ",[m
+[31m-        "HUV3-IЭДАЛЭ",[m
+[31m-        "HUV3-IЭДЗЭ",[m
+         "HUV3-IЭДЭ",[m
+         "HUV3-IЭДЭБ",[m
+         "HUV3-IЭДЭБЫНШАГЪЭ",[m
+[31m-        "HUV3-IЭДЭПКЪ",[m
+         "HUV3-IЭЖЬЭ",[m
+         "HUV3-IЭЗАГЪЭ",[m
+[31m-        "HUV3-IЭЗЫНЫГЪЭ",[m
+         "HUV3-IЭЗЭНЫГЪЭ",[m
+[31m-        "HUV3-IЭИЖЬ",[m
+[31m-        "HUV3-IЭИКЪ",[m
+[31m-        "HUV3-IЭКIУЭЛIАКIУЭ",[m
+         "HUV3-IЭКIЭ",[m
+[31m-        "HUV3-IЭКIЭХУН",[m
+[31m-        "HUV3-IЭКIЭЩIЫН",[m
+         "HUV3-IЭМАЛ",[m
+[31m-        "HUV3-IЭМАЛЩIЭ",[m
+         "HUV3-IЭМЫЩIЭ",[m
+[31m-        "HUV3-IЭНАПIЭ",[m
+         "HUV3-IЭПЛIЭ",[m
+[31m-        "HUV3-IЭПОПIЭ",[m
+[31m-        "HUV3-IЭППIЭН",[m
+         "HUV3-IЭПЫIЭГЪУ",[m
+[31m-        "HUV3-IЭПЭБАЙ",[m
+[31m-        "HUV3-IЭПЭЗАПЭ",[m
+[31m-        "HUV3-IЭПЭИЖИ",[m
+[31m-        "HUV3-IЭПЭЛЪАЩЭ",[m
+         "HUV3-IЭПЭПIЭ",[m
+[31m-        "HUV3-IЭПЭРАПЭ",[m
+         "HUV3-IЭРАМ",[m
+         "HUV3-IЭРАМЭ",[m
+[31m-        "HUV3-IЭРЫДЗ",[m
+[31m-        "HUV3-IЭРЫЛАЖЬЭ",[m
+         "HUV3-IЭРЫСЭ",[m
+         "HUV3-IЭТЭ",[m
+[31m-        "HUV3-IЭТЭН",[m
+[31m-        "HUV3-IЭТЭНЫГЪЭ",[m
+         "HUV3-IЭЩХЬЭ",[m
+[31m-        "HUV3-IЭЩХЬЭЗЭГЪЭ",[m
+         "HUV3-IЭЩЭ",[m
+[31m-        "HUV3-IЭЩЭЗЭЩ",[m
+         "KAV-ӀЭ-ЛЪАКЪУЭ",[m
+         "KAV-ӀЭБГЪУ",[m
+         "KAV-ӀЭБЖЬАНАПӀЭ",[m
+[36m@@ -3602,9 +3420,7 @@[m
+         "KAV-ӀЭӀЭТ",[m
+         "L-1E",[m
+         "L-1E-DELHEN",[m
+[31m-        "L-1E-SHCHYHuen",[m
+         "L-1EBLE",[m
+[31m-        "L-1EBZYGE",[m
+         "L-1EF1",[m
+         "L-1EFRAK1E",[m
+         "L-1EGU",[m
+[36m@@ -3621,7 +3437,6 @@[m
+         "L-BALYDZHE",[m
+         "L-C1E",[m
+         "L-COLOR-BLUE",[m
+[31m-        "L-CONCEPT-001",[m
+         "L-CORPUS-00023",[m
+         "L-CORPUS-00047",[m
+         "L-CORPUS-00103",[m
+[36m@@ -3693,7 +3508,6 @@[m
+         "L-CORPUS2-01967",[m
+         "L-CORPUS2-02010",[m
+         "L-CORPUS2-02353",[m
+[31m-        "L-CORPUS2-02472",[m
+         "L-CORPUS2-02489",[m
+         "L-CORPUS2-02610",[m
+         "L-CORPUS2-03099",[m
+[36m@@ -3702,50 +3516,33 @@[m
+         "L-CORPUS2-03666",[m
+         "L-CORPUS2-03753",[m
+         "L-CORPUS2-03839",[m
+[31m-        "L-CORPUS2-04328",[m
+[31m-        "L-CORPUS2-04372",[m
+[31m-        "L-CORPUS2-04384",[m
+         "L-CORPUS2-04387",[m
+         "L-CORPUS2-04841",[m
+         "L-CORPUS2-04877",[m
+         "L-CORPUS2-05065",[m
+[31m-        "L-CORPUS2-05178",[m
+[31m-        "L-CORPUS2-05198",[m
+         "L-CORPUS2-05598",[m
+         "L-CORPUS2-05908",[m
+         "L-CORPUS2-05943",[m
+         "L-CORPUS2-06030",[m
+[31m-        "L-CORPUS2-06140",[m
+         "L-CORPUS2-06230",[m
+         "L-CORPUS2-06617",[m
+[31m-        "L-CORPUS2-06754",[m
+[31m-        "L-CORPUS2-06758",[m
+         "L-CORPUS2-06963",[m
+         "L-CORPUS2-06978",[m
+[31m-        "L-CORPUS2-07105",[m
+[31m-        "L-CORPUS2-07227",[m
+         "L-CORPUS2-07291",[m
+[31m-        "L-CORPUS2-07539",[m
+         "L-CORPUS2-07573",[m
+         "L-CORPUS2-07682",[m
+[31m-        "L-CORPUS2-07821",[m
+         "L-CORPUS2-08074",[m
+         "L-CORPUS2-08330",[m
+         "L-CORPUS2-08471",[m
+         "L-CORPUS2-08478",[m
+[31m-        "L-CORPUS2-08488",[m
+         "L-CORPUS2-08869",[m
+[31m-        "L-CORPUS2-08922",[m
+[31m-        "L-CORPUS2-09026",[m
+         "L-CORPUS2-09085",[m
+         "L-CORPUS2-09210",[m
+[31m-        "L-CORPUS2-09219",[m
+         "L-CORPUS2-09270",[m
+         "L-CORPUS2-09347",[m
+         "L-CORPUS2-09570",[m
+         "L-CORPUS2-09633",[m
+         "L-CORPUS2-09861",[m
+[31m-        "L-CORPUS2-09901",[m
+         "L-CORPUS2-09946",[m
+         "L-D091D0B0D0BC",[m
+         "L-D093D183D184",[m
+[36m@@ -3756,11 +3553,8 @@[m
+         "L-D0B4D18DD380-2",[m
+         "L-D0BAD18AD183-8",[m
+         "L-D0BAD18AD18D-8",[m
+[31m-        "L-D0BDD0B0D0BF",[m
+         "L-D0BED180D18D",[m
+         "L-D183D0BAD380",[m
+[31m-        "L-D380D18DD0BD",[m
+[31m-        "L-D380D18DD0BF",[m
+         "L-D380D18DD180",[m
+         "L-DAKYQE",[m
+         "L-DELHYN",[m
+[36m@@ -4606,19 +4400,13 @@[m
+         "L-KBD-05578",[m
+         "L-KBD-05685",[m
+         "L-KET1ESYN",[m
+[31m-        "L-KUAPEPAPC1E",[m
+         "L-L1ENYGHE",[m
+[31m-        "L-MORPHO-БГЪЭЩӀЭРАЩ",[m
+         "L-MORPHO-ШКӀЭ",[m
+         "L-MY1ERYSEY",[m
+         "L-NAP1E",[m
+         "L-PROMPT-00007",[m
+         "L-PROMPT-00010",[m
+         "L-PROMPT-00029",[m
+[31m-        "L-PROMPT-00030",[m
+[31m-        "L-PROMPT-00031",[m
+[31m-        "L-PROMPT-00032",[m
+[31m-        "L-PROMPT-00039",[m
+         "L-PROMPT-00053",[m
+         "L-PSH1ANTE",[m
+         "L-SHXAP1E",[m
+[36m@@ -4687,113 +4475,23 @@[m
+         "HUV2-IУНЭХЭЧ",[m
+         "HUV2-IУНЭЩI",[m
+         "HUV2-IУПХЪУЭ",[m
+[31m-        "HUV3-IА",[m
+[31m-        "HUV3-IАБИЙ",[m
+[31m-        "HUV3-IАБЖЬ",[m
+[31m-        "HUV3-IАБЖЬАНЭ",[m
+[31m-        "HUV3-IАБЖЬЭ",[m
+[31m-        "HUV3-IАБДЗАЩ",[m
+[31m-        "HUV3-IАБЫЛ",[m
+[31m-        "HUV3-IАБЭ",[m
+         "HUV3-IАБЭН",[m
+[31m-        "HUV3-IАВЭ",[m
+[31m-        "HUV3-IАГАПIЭ",[m
+         "HUV3-IАГУ",[m
+[31m-        "HUV3-IАГУЛЪ",[m
+         "HUV3-IАДЖЭ",[m
+[31m-        "HUV3-IАДЗЭ",[m
+[31m-        "HUV3-IАЖИ",[m
+         "HUV3-IАЖЭ",[m
+         "HUV3-IАЗЭ",[m
+[31m-        "HUV3-IАЗАГЪЭ",[m
+[31m-        "HUV3-IАЗО",[m
+[31m-        "HUV3-IАКЪЫЛ",[m
+[31m-        "HUV3-IАКЪЫЛЫФIЭ",[m
+[31m-        "HUV3-IАКЪЫЛЖЬ",[m
+[31m-        "HUV3-IАКЪЫЛСЫЗ",[m
+[31m-        "HUV3-IАКЪУЖЬ",[m
+[31m-        "HUV3-IАЛЭ",[m
+[31m-        "HUV3-IАМАЛ",[m
+[31m-        "HUV3-IАМАЛСЫЗ",[m
+[31m-        "HUV3-IАМАЛЫНШАГЪЭ",[m
+[31m-        "HUV3-IАМАТ",[m
+[31m-        "HUV3-IАМЭ",[m
+[31m-        "HUV3-IАНАБЖЬЭ",[m
+         "HUV3-IАНЭ",[m
+[31m-        "HUV3-IАНЭГУ",[m
+[31m-        "HUV3-IАНЭЩХЬЭ",[m
+         "HUV3-IАПЛI",[m
+         "HUV3-IАПЛIЭН",[m
+[31m-        "HUV3-IАППIЭ",[m
+[31m-        "HUV3-IАПЫIЭ",[m
+[31m-        "HUV3-IАПЫIЭГЪУ",[m
+         "HUV3-IАПЭ",[m
+[31m-        "HUV3-IАПЭИЖИ",[m
+         "HUV3-IАПЭКIЭ",[m
+[31m-        "HUV3-IАПЭЛЪАЩЭ",[m
+         "HUV3-IАПЭПIЭ",[m
+[31m-        "HUV3-IАРГЪЭЩ",[m
+[31m-        "HUV3-IАРАМ",[m
+[31m-        "HUV3-IАРАП",[m
+[31m-        "HUV3-IАРУ",[m
+[31m-        "HUV3-IАРШ",[m
+[31m-        "HUV3-IАРЫСЭ",[m
+[31m-        "HUV3-IАРЫСЭНЫГЪЭ",[m
+[31m-        "HUV3-IАРЫХА",[m
+[31m-        "HUV3-IАТЭ",[m
+         "HUV3-IАТЭН",[m
+[31m-        "HUV3-IАУЭ",[m
+[31m-        "HUV3-IАЩЭЗЭЩ",[m
+[31m-        "HUV3-IЕЙГЪЭ",[m
+[31m-        "HUV3-IЕКIУ",[m
+[31m-        "HUV3-IЕКIУН",[m
+[31m-        "HUV3-IЕХЫН",[m
+[31m-        "HUV3-IЕШЫН",[m
+[31m-        "HUV3-IИГЪЭН",[m
+[31m-        "HUV3-IИЖЫН",[m
+         "HUV3-IИЗ",[m
+[31m-        "HUV3-IИЗНЫГЪЭ",[m
+[31m-        "HUV3-IИКЪУН",[m
+[31m-        "HUV3-IИНЫН",[m
+[31m-        "HUV3-IИСЫН",[m
+         "HUV3-IИХЫН",[m
+         "HUV3-IО",[m
+[31m-        "HUV3-IОБГЭН",[m
+[31m-        "HUV3-IОДЖЫН",[m
+[31m-        "HUV3-IОЖЫН",[m
+[31m-        "HUV3-IОКIЫН",[m
+[31m-        "HUV3-IОМАЩIЭ",[m
+[31m-        "HUV3-IОМАХУЭ",[m
+[31m-        "HUV3-IОМЫГЪУ",[m
+[31m-        "HUV3-IОНЫХЬ",[m
+[31m-        "HUV3-IОПЕЛЪЭН",[m
+[31m-        "HUV3-IОПЛЪЫН",[m
+[31m-        "HUV3-IОПУД",[m
+[31m-        "HUV3-IОРЫЛЪ",[m
+[31m-        "HUV3-IОРЫКIЭ",[m
+[31m-        "HUV3-IОРЫХЫН",[m
+         "HUV3-IОТЭН",[m
+[31m-        "HUV3-IОТЭЖЫН",[m
+[31m-        "HUV3-IОХУ",[m
+[31m-        "HUV3-IОХУГЪУЭ",[m
+[31m-        "HUV3-IОХУЩIЭ",[m
+[31m-        "HUV3-IОХУШХУЭ",[m
+[31m-        "HUV3-IОХУЩIАЧЭ",[m
+[31m-        "HUV3-IОЩЫН",[m
+[31m-        "HUV3-IЫГЪАН",[m
+         "HUV3-IЫГЪЫН",[m
+[31m-        "HUV3-IЫГЪЫПIЭ",[m
+[31m-        "HUV3-IЫДЖЫН",[m
+[31m-        "HUV3-IЫКIЭ",[m
+[31m-        "HUV3-IЫХЬЭЛЫ",[m
+[31m-        "HUV3-IЫХЬЭНЫГЪЭ",[m
+[31m-        "HUV3-IЫХЬЭЩIЫН",[m
+[31m-        "HUV3-IЫМС",[m
+[31m-        "HUV3-IЫПСЫН",[m
+[31m-        "HUV3-IЫРГЪЫН",[m
+[31m-        "HUV3-IЫСАХ",[m
+[31m-        "HUV3-IЫСЫПIЭ",[m
+[31m-        "HUV3-IЫЩЫН",[m
+         "KAV-ХУЭКӀУЭН",[m
+         "KAV-КУПЩӀЭНШЭ",[m
+         "KAV-ТХЪУРЫМБЕЙ",[m
+[36m@@ -4973,7 +4671,6 @@[m
+       "lexemeIds": [[m
+         "HUV6-ЛЪЭПКЪТЕПЩЭ",[m
+         "HUV6-ЛЪЭПЫДАГЪЭ",[m
+[31m-        "HUV6-ЛЪЭРЫГЪЭУВЫІЭ",[m
+         "HUV6-ЛЪЭТЭГЪУЭ",[m
+         "HUV6-ЛЪЭХЪЭНЭБЖ",[m
+         "KAV-ЛЪЭБАКЪУЭДЖЭ",[m
+[36m@@ -5197,20 +4894,13 @@[m
+         "L-CORPUS2-00075",[m
+         "L-CORPUS2-00294",[m
+         "L-CORPUS2-00370",[m
+[31m-        "L-CORPUS2-00415",[m
+[31m-        "L-CORPUS2-00569",[m
+         "L-CORPUS2-01020",[m
+[31m-        "L-CORPUS2-01184",[m
+         "L-CORPUS2-01867",[m
+         "L-CORPUS2-02000",[m
+         "L-CORPUS2-02022",[m
+[31m-        "L-CORPUS2-02465",[m
+         "L-CORPUS2-02588",[m
+         "L-CORPUS2-03062",[m
+         "L-CORPUS2-03745",[m
+[31m-        "L-CORPUS2-03831",[m
+[31m-        "L-CORPUS2-04666",[m
+[31m-        "L-CORPUS2-04768",[m
+         "L-CORPUS2-05169",[m
+         "L-CORPUS2-06054",[m
+         "L-CORPUS2-06237",[m
+[36m@@ -5219,13 +4909,10 @@[m
+         "L-CORPUS2-07639",[m
+         "L-CORPUS2-08213",[m
+         "L-CORPUS2-08332",[m
+[31m-        "L-CORPUS2-08353",[m
+[31m-        "L-CORPUS2-08408",[m
+         "L-CORPUS2-08466",[m
+         "L-CORPUS2-09124",[m
+         "L-D0BBD18AD18D",[m
+         "L-D0BBD18AD18D-2",[m
+[31m-        "L-D0BBD18AD18D-3",[m
+         "L-D0BBD18AD18D-4",[m
+         "L-EXTRA-00003",[m
+         "L-KBD-00324",[m
+[36m@@ -5438,7 +5125,6 @@[m
+         "L-LHE",[m
+         "L-LHEBAKUE",[m
+         "L-LHEDAKHE",[m
+[31m-        "L-LHEDAN",[m
+         "L-LHEGHUN",[m
+         "L-LHEGU",[m
+         "L-LHEGUA",[m
+[36m@@ -5450,7 +5136,6 @@[m
+         "L-LHEPXHUAMBE",[m
+         "L-LHESHCH",[m
+         "L-LHEUZHY",[m
+[31m-        "L-MORPHO-ХЬЭНТӀРАБЫ",[m
+         "L-PLANT-014",[m
+         "L-PROMPT-00014",[m
+         "L-PROMPT-00055",[m
+[36m@@ -5508,12 +5193,9 @@[m
+         "L-VERIFIED-02639",[m
+         "L-VERIFIED-02657",[m
+         "L-VERIFIED-02659",[m
+[31m-        "L-YALHAN",[m
+[31m-        "L-YALHATAKHEN",[m
+         "L-D0A5D18CD18D",[m
+         "HUV6-ГЪЭУВЫІЭЛЪЭ",[m
+         "HUV6-ГЪУЭБЖ",[m
+[31m-        "HUV6-ЛЪЭПКЪТЕЛЪХЬ",[m
+         "KAV-ЩӀЭРАЩӀЭ",[m
+         "KAV-ЗАЛЫМЫГЪЭКӀЭ",[m
+         "KAV-МЫЛЫПС",[m
+[36m@@ -5899,18 +5581,13 @@[m
+         "L-CORPUS-04946",[m
+         "L-CORPUS-04956",[m
+         "L-CORPUS-04986",[m
+[31m-        "L-CORPUS2-00462",[m
+         "L-CORPUS2-00896",[m
+[31m-        "L-CORPUS2-00910",[m
+         "L-CORPUS2-01199",[m
+[31m-        "L-CORPUS2-01334",[m
+[31m-        "L-CORPUS2-01367",[m
+         "L-CORPUS2-01445",[m
+         "L-CORPUS2-01598",[m
+         "L-CORPUS2-01726",[m
+         "L-CORPUS2-01767",[m
+         "L-CORPUS2-01813",[m
+[31m-        "L-CORPUS2-01841",[m
+         "L-CORPUS2-02098",[m
+         "L-CORPUS2-02271",[m
+         "L-CORPUS2-02972",[m
+[36m@@ -5920,29 +5597,19 @@[m
+         "L-CORPUS2-03492",[m
+         "L-CORPUS2-03582",[m
+         "L-CORPUS2-03612",[m
+[31m-        "L-CORPUS2-04183",[m
+         "L-CORPUS2-04305",[m
+         "L-CORPUS2-04657",[m
+[31m-        "L-CORPUS2-04825",[m
+[31m-        "L-CORPUS2-05060",[m
+         "L-CORPUS2-05188",[m
+         "L-CORPUS2-05378",[m
+         "L-CORPUS2-05500",[m
+[31m-        "L-CORPUS2-05645",[m
+         "L-CORPUS2-06211",[m
+[31m-        "L-CORPUS2-06558",[m
+         "L-CORPUS2-06616",[m
+[31m-        "L-CORPUS2-06871",[m
+         "L-CORPUS2-06915",[m
+         "L-CORPUS2-07004",[m
+         "L-CORPUS2-07622",[m
+         "L-CORPUS2-07984",[m
+         "L-CORPUS2-08103",[m
+[31m-        "L-CORPUS2-08485",[m
+         "L-CORPUS2-08746",[m
+[31m-        "L-CORPUS2-08824",[m
+[31m-        "L-CORPUS2-09150",[m
+[31m-        "L-CORPUS2-09199",[m
+         "L-CORPUS2-09928",[m
+         "L-CORPUS2-09940",[m
+         "L-D0BFD188D0B0",[m
+[36m@@ -6129,7 +5796,6 @@[m
+         "L-KBD-05034",[m
+         "L-KBD-05134",[m
+         "L-KBD-05546",[m
+[31m-        "L-KEPERYKHEN",[m
+         "L-KHEPEMEN",[m
+         "L-KHEZYR1UPE",[m
+         "L-KUAPE",[m
+[36m@@ -6138,12 +5804,9 @@[m
+         "L-KUAPEXHIME",[m
+         "L-KUAPEZADE",[m
+         "L-PE",[m
+[31m-        "L-PEDZAN",[m
+         "L-PEFYQ",[m
+         "L-PEKUKU",[m
+         "L-PEKURSH",[m
+[31m-        "L-PEMYN",[m
+[31m-        "L-PEPC1Y",[m
+         "L-PEPLEN",[m
+         "L-PERYT",[m
+         "L-PESH",[m
+[36m@@ -6223,7 +5886,6 @@[m
+         "L-VERIFIED-02689",[m
+         "L-YAPEREY",[m
+         "L-YEPEMYN",[m
+[31m-        "L-ZEPEDZEN",[m
+         "KAV-ПАПЦӀЭ",[m
+         "KAV-ТӀЫГУР",[m
+         "KAV-КЪЫӀУКӀЭН",[m
+[36m@@ -6394,7 +6056,6 @@[m
+     "wordFamily": {[m
+       "id": "WF-P1E",[m
+       "lexemeIds": [[m
+[31m-        "L-CORPUS2-00232",[m
+         "L-CORPUS2-07551",[m
+         "L-CORPUS2-08791",[m
+         "L-CORPUS2-08921",[m
+[36m@@ -6535,9 +6196,7 @@[m
+         "L-CORPUS-04576",[m
+         "L-CORPUS2-02177",[m
+         "L-CORPUS2-02398",[m
+[31m-        "L-CORPUS2-04688",[m
+         "L-CORPUS2-05410",[m
+[31m-        "L-CORPUS2-06718",[m
+         "L-CORPUS2-07849",[m
+         "L-CORPUS2-08244",[m
+         "L-GHUSE",[m
+[36m@@ -6766,15 +6425,12 @@[m
+         "L-CORPUS2-02440",[m
+         "L-CORPUS2-02820",[m
+         "L-CORPUS2-03204",[m
+[31m-        "L-CORPUS2-05889",[m
+         "L-CORPUS2-06256",[m
+         "L-CORPUS2-06574",[m
+         "L-CORPUS2-07854",[m
+[31m-        "L-CORPUS2-08825",[m
+         "L-CORPUS2-09032",[m
+         "L-D0B0D0B4D18B",[m
+         "L-D0B0D0B4D18B-2",[m
+[31m-        "L-D0B3D18AD18D-6",[m
+         "L-D0B7D18BD0B3-3",[m
+         "L-EXTRA-00018",[m
+         "L-KBD-00005",[m
+[36m@@ -6950,27 +6606,19 @@[m
+         "L-CORPUS2-00692",[m
+         "L-CORPUS2-00845",[m
+         "L-CORPUS2-01387",[m
+[31m-        "L-CORPUS2-01429",[m
+[31m-        "L-CORPUS2-02756",[m
+         "L-CORPUS2-02947",[m
+[31m-        "L-CORPUS2-03658",[m
+         "L-CORPUS2-03775",[m
+         "L-CORPUS2-03778",[m
+         "L-CORPUS2-04668",[m
+         "L-CORPUS2-06252",[m
+         "L-CORPUS2-07073",[m
+         "L-CORPUS2-07585",[m
+[31m-        "L-CORPUS2-08129",[m
+         "L-CORPUS2-08137",[m
+[31m-        "L-CORPUS2-08147",[m
+[31m-        "L-CORPUS2-08217",[m
+         "L-D184D18B",[m
+         "L-D184D18BD0B7",[m
+         "L-F1AMESHCH1",[m
+[31m-        "L-F1ETS1A",[m
+         "L-FA",[m
+         "L-FARA",[m
+[31m-        "L-FISHCHYN",[m
+         "L-FYN",[m
+         "L-FYZABE",[m
+         "L-KBD-04526",[m
+[36m@@ -7235,11 +6883,8 @@[m
+         "L-CORPUS2-00888",[m
+         "L-CORPUS2-01076",[m
+         "L-CORPUS2-01178",[m
+[31m-        "L-CORPUS2-01326",[m
+         "L-CORPUS2-01481",[m
+[31m-        "L-CORPUS2-02112",[m
+         "L-CORPUS2-02468",[m
+[31m-        "L-CORPUS2-02693",[m
+         "L-CORPUS2-03647",[m
+         "L-CORPUS2-04209",[m
+         "L-CORPUS2-04519",[m
+[36m@@ -7250,11 +6895,8 @@[m
+         "L-CORPUS2-05636",[m
+         "L-CORPUS2-05808",[m
+         "L-CORPUS2-05876",[m
+[31m-        "L-CORPUS2-05971",[m
+         "L-CORPUS2-06007",[m
+[31m-        "L-CORPUS2-06910",[m
+         "L-CORPUS2-07521",[m
+[31m-        "L-CORPUS2-08110",[m
+         "L-CORPUS2-08343",[m
+         "L-CORPUS2-08725",[m
+         "L-CORPUS2-08762",[m
+[36m@@ -7262,7 +6904,6 @@[m
+         "L-CORPUS2-08841",[m
+         "L-CORPUS2-09132",[m
+         "L-CORPUS2-09149",[m
+[31m-        "L-CORPUS2-09231",[m
+         "L-CORPUS2-09316",[m
+         "L-CORPUS2-09588",[m
+         "L-CORPUS2-09635",[m
+[36m@@ -7288,7 +6929,6 @@[m
+         "L-KBD-01318",[m
+         "L-KBD-01319",[m
+         "L-KBD-01347",[m
+[31m-        "L-KBD-01670",[m
+         "L-KBD-01834",[m
+         "L-KBD-02131",[m
+         "L-KBD-02296",[m
+[36m@@ -7428,7 +7068,7 @@[m
+         "totalLexemes": 0,[m
+         "corpusFrequency": 0[m
+       },[m
+[31m-      "notes": "Bos aile - sonra doldurulacak"[m
+[32m+[m[32m      "notes": "фэ (deri, cilt, kabuk; siz). 'зэкуэфэуэн' (uyluk dövmek) buraya ait değil, temizlendi."[m
+     }[m
+   },[m
+   {[m
+[36m@@ -7481,7 +7121,6 @@[m
+       "lexemeIds": [[m
+         "L-CORPUS2-01746",[m
+         "L-CORPUS2-04760",[m
+[31m-        "L-CORPUS2-08113",[m
+         "L-CORPUS2-08218",[m
+         "L-CORPUS2-08681",[m
+         "L-D0B3D18AD18D-4",[m
+[36m@@ -7568,7 +7207,6 @@[m
+     "wordFamily": {[m
+       "id": "WF-SH1Y",[m
+       "lexemeIds": [[m
+[31m-        "L-COLOR-NAVY_BLUE",[m
+         "L-CORPUS-00294",[m
+         "L-CORPUS-00332",[m
+         "L-CORPUS-00356",[m
+[36m@@ -7585,13 +7223,10 @@[m
+         "L-CORPUS2-00070",[m
+         "L-CORPUS2-00084",[m
+         "L-CORPUS2-00187",[m
+[31m-        "L-CORPUS2-00254",[m
+         "L-CORPUS2-00361",[m
+         "L-CORPUS2-00527",[m
+         "L-CORPUS2-00667",[m
+[31m-        "L-CORPUS2-00670",[m
+         "L-CORPUS2-00743",[m
+[31m-        "L-CORPUS2-00767",[m
+         "L-CORPUS2-00904",[m
+         "L-CORPUS2-01230",[m
+         "L-CORPUS2-01840",[m
+[36m@@ -7604,7 +7239,6 @@[m
+         "L-CORPUS2-04421",[m
+         "L-CORPUS2-04640",[m
+         "L-CORPUS2-04822",[m
+[31m-        "L-CORPUS2-04882",[m
+         "L-CORPUS2-06168",[m
+         "L-CORPUS2-06302",[m
+         "L-CORPUS2-06776",[m
+[36m@@ -7619,9 +7253,7 @@[m
+         "L-D0BAD18AD18D-7",[m
+         "L-D0BFD18949D0",[m
+         "L-D183D0B0D181",[m
+[31m-        "L-D184D0B5D189",[m
+         "L-D189D380D18B",[m
+[31m-        "L-D189D380D18B-2",[m
+         "L-D189D380D18B-3",[m
+         "L-D189D38FD18B",[m
+         "L-KBD-00013",[m
+[36m@@ -7696,12 +7328,10 @@[m
+         "L-KBD-05191",[m
+         "L-KBD-05192",[m
+         "L-PSH1Y",[m
+[31m-        "L-PSHCHYK1U",[m
+         "L-PSHCHYK1UT1",[m
+         "L-SH1Y",[m
+         "L-SH1YDAGHE",[m
+         "L-SH1YLHE",[m
+[31m-        "L-SH1YN",[m
+         "L-SHCHYGU",[m
+         "L-SHCHYPTS1ESHCHYDE",[m
+         "L-SHCHYSHYLE",[m
+[36m@@ -7788,7 +7418,6 @@[m
+         "L-CORPUS2-03941",[m
+         "L-CORPUS2-04016",[m
+         "L-CORPUS2-04174",[m
+[31m-        "L-CORPUS2-04354",[m
+         "L-CORPUS2-04388",[m
+         "L-CORPUS2-04811",[m
+         "L-CORPUS2-04848",[m
+[36m@@ -7800,19 +7429,14 @@[m
+         "L-CORPUS2-05883",[m
+         "L-CORPUS2-06149",[m
+         "L-CORPUS2-06513",[m
+[31m-        "L-CORPUS2-06623",[m
+         "L-CORPUS2-06752",[m
+         "L-CORPUS2-07222",[m
+         "L-CORPUS2-07226",[m
+         "L-CORPUS2-07632",[m
+[31m-        "L-CORPUS2-07789",[m
+[31m-        "L-CORPUS2-08857",[m
+         "L-CORPUS2-08892",[m
+         "L-CORPUS2-08903",[m
+         "L-CORPUS2-08909",[m
+         "L-CORPUS2-09296",[m
+[31m-        "L-CORPUS2-09780",[m
+[31m-        "L-CORPUS2-09948",[m
+         "L-EXTRA-00010",[m
+         "L-KBD-05193",[m
+         "L-KBD-05194",[m
+[36m@@ -8024,7 +7648,6 @@[m
+         "L-CORPUS-01603",[m
+         "L-CORPUS-01952",[m
+         "L-CORPUS-02805",[m
+[31m-        "L-CORPUS2-02074",[m
+         "L-D0B1D18BD0B4",[m
+         "L-DAGHE",[m
+         "L-KBD-00252",[m
+[36m@@ -8202,7 +7825,6 @@[m
+         "L-CORPUS2-00974",[m
+         "L-CORPUS2-01500",[m
+         "L-CORPUS2-01579",[m
+[31m-        "L-CORPUS2-02184",[m
+         "L-CORPUS2-02248",[m
+         "L-CORPUS2-02329",[m
+         "L-CORPUS2-02367",[m
+[36m@@ -8215,7 +7837,6 @@[m
+         "L-CORPUS2-04534",[m
+         "L-CORPUS2-04652",[m
+         "L-CORPUS2-04662",[m
+[31m-        "L-CORPUS2-04745",[m
+         "L-CORPUS2-04832",[m
+         "L-CORPUS2-05180",[m
+         "L-CORPUS2-05432",[m
+[36m@@ -8223,12 +7844,9 @@[m
+         "L-CORPUS2-05933",[m
+         "L-CORPUS2-06520",[m
+         "L-CORPUS2-06923",[m
+[31m-        "L-CORPUS2-06972",[m
+         "L-CORPUS2-07673",[m
+         "L-CORPUS2-07719",[m
+[31m-        "L-CORPUS2-07785",[m
+         "L-CORPUS2-07795",[m
+[31m-        "L-CORPUS2-07833",[m
+         "L-CORPUS2-08223",[m
+         "L-CORPUS2-08420",[m
+         "L-CORPUS2-08957",[m
+[36m@@ -8319,9 +7937,7 @@[m
+         "L-KBD-05542",[m
+         "L-KBD-05550",[m
+         "L-KBD-05605",[m
+[31m-        "L-KHUAEN",[m
+         "L-NAKHE",[m
+[31m-        "L-PROMPT-00004",[m
+         "L-SHCHEN",[m
+         "L-SHE",[m
+         "L-SHEBET",[m
+[36m@@ -8626,7 +8242,6 @@[m
+         "L-CORPUS2-00316",[m
+         "L-CORPUS2-00961",[m
+         "L-CORPUS2-01002",[m
+[31m-        "L-CORPUS2-01017",[m
+         "L-CORPUS2-01030",[m
+         "L-CORPUS2-01253",[m
+         "L-CORPUS2-01325",[m
+[36m@@ -8634,48 +8249,32 @@[m
+         "L-CORPUS2-01540",[m
+         "L-CORPUS2-01741",[m
+         "L-CORPUS2-02067",[m
+[31m-        "L-CORPUS2-02082",[m
+         "L-CORPUS2-02199",[m
+         "L-CORPUS2-02536",[m
+         "L-CORPUS2-02730",[m
+         "L-CORPUS2-02841",[m
+[31m-        "L-CORPUS2-02952",[m
+[31m-        "L-CORPUS2-03021",[m
+         "L-CORPUS2-03167",[m
+         "L-CORPUS2-03212",[m
+         "L-CORPUS2-03435",[m
+[31m-        "L-CORPUS2-03740",[m
+         "L-CORPUS2-04092",[m
+         "L-CORPUS2-04135",[m
+[31m-        "L-CORPUS2-04436",[m
+         "L-CORPUS2-05132",[m
+[31m-        "L-CORPUS2-05307",[m
+[31m-        "L-CORPUS2-05381",[m
+         "L-CORPUS2-05659",[m
+[31m-        "L-CORPUS2-05764",[m
+         "L-CORPUS2-05859",[m
+         "L-CORPUS2-06119",[m
+         "L-CORPUS2-06289",[m
+         "L-CORPUS2-06301",[m
+         "L-CORPUS2-06357",[m
+         "L-CORPUS2-06536",[m
+[31m-        "L-CORPUS2-06739",[m
+         "L-CORPUS2-06938",[m
+         "L-CORPUS2-07261",[m
+         "L-CORPUS2-07282",[m
+         "L-CORPUS2-07366",[m
+[31m-        "L-CORPUS2-07750",[m
+         "L-CORPUS2-08201",[m
+[31m-        "L-CORPUS2-08307",[m
+[31m-        "L-CORPUS2-08405",[m
+[31m-        "L-CORPUS2-08416",[m
+[31m-        "L-CORPUS2-08813",[m
+[31m-        "L-CORPUS2-08815",[m
+         "L-CORPUS2-08999",[m
+         "L-CORPUS2-09097",[m
+         "L-CORPUS2-09103",[m
+         "L-CORPUS2-09200",[m
+[31m-        "L-CORPUS2-09248",[m
+         "L-D09BD18BD183",[m
+         "L-D183D0B7D18B",[m
+         "L-D188D18DD185",[m
+[36m@@ -8980,7 +8579,6 @@[m
+       "id": "WF-TKHEK1UME",[m
+       "lexemeIds": [[m
+         "L-KBD-04404",[m
+[31m-        "L-MORPHO-ТХЬЭКӀУМЭХ",[m
+         "L-TKHEK1UME"[m
+       ],[m
+       "conceptIds": [[m
+[36m@@ -9057,7 +8655,6 @@[m
+       "lexemeIds": [[m
+         "L-CORPUS2-01075",[m
+         "L-CORPUS2-02014",[m
+[31m-        "L-CORPUS2-03998",[m
+         "L-K1YH",[m
+         "L-KBD-00752",[m
+         "L-KBD-02191",[m
+[36m@@ -9242,7 +8839,6 @@[m
+       "lexemeIds": [[m
+         "L-BZHYH'E",[m
+         "L-BZHYN",[m
+[31m-        "L-BZHYNGHEGHE",[m
+         "L-BZHYNYXHU",[m
+         "L-CORPUS-00107",[m
+         "L-CORPUS-00335",[m
+[36m@@ -9308,7 +8904,6 @@[m
+         "L-CORPUS2-00883",[m
+         "L-CORPUS2-01217",[m
+         "L-CORPUS2-01526",[m
+[31m-        "L-CORPUS2-01545",[m
+         "L-CORPUS2-01897",[m
+         "L-CORPUS2-01919",[m
+         "L-CORPUS2-02245",[m
+[36m@@ -9318,9 +8913,7 @@[m
+         "L-CORPUS2-02954",[m
+         "L-CORPUS2-03130",[m
+         "L-CORPUS2-03764",[m
+[31m-        "L-CORPUS2-03767",[m
+         "L-CORPUS2-04014",[m
+[31m-        "L-CORPUS2-04155",[m
+         "L-CORPUS2-04301",[m
+         "L-CORPUS2-04940",[m
+         "L-CORPUS2-05092",[m
+[36m@@ -9329,11 +8922,9 @@[m
+         "L-CORPUS2-05369",[m
+         "L-CORPUS2-05591",[m
+         "L-CORPUS2-05608",[m
+[31m-        "L-CORPUS2-05861",[m
+         "L-CORPUS2-06876",[m
+         "L-CORPUS2-07125",[m
+         "L-CORPUS2-07417",[m
+[31m-        "L-CORPUS2-07887",[m
+         "L-CORPUS2-07899",[m
+         "L-CORPUS2-08100",[m
+         "L-CORPUS2-08517",[m
+[36m@@ -9731,20 +9322,14 @@[m
+         "L-CORPUS2-00129",[m
+         "L-CORPUS2-00265",[m
+         "L-CORPUS2-00645",[m
+[31m-        "L-CORPUS2-00648",[m
+[31m-        "L-CORPUS2-00909",[m
+[31m-        "L-CORPUS2-01090",[m
+         "L-CORPUS2-01553",[m
+         "L-CORPUS2-01860",[m
+[31m-        "L-CORPUS2-01965",[m
+         "L-CORPUS2-02127",[m
+         "L-CORPUS2-02666",[m
+         "L-CORPUS2-03177",[m
+[31m-        "L-CORPUS2-03278",[m
+         "L-CORPUS2-03290",[m
+         "L-CORPUS2-03487",[m
+         "L-CORPUS2-03504",[m
+[31m-        "L-CORPUS2-03699",[m
+         "L-CORPUS2-03761",[m
+         "L-CORPUS2-04006",[m
+         "L-CORPUS2-04168",[m
+[36m@@ -9754,48 +9339,34 @@[m
+         "L-CORPUS2-04865",[m
+         "L-CORPUS2-04876",[m
+         "L-CORPUS2-05243",[m
+[31m-        "L-CORPUS2-05540",[m
+         "L-CORPUS2-05728",[m
+         "L-CORPUS2-05794",[m
+[31m-        "L-CORPUS2-05907",[m
+         "L-CORPUS2-05988",[m
+[31m-        "L-CORPUS2-06156",[m
+         "L-CORPUS2-06196",[m
+         "L-CORPUS2-06277",[m
+         "L-CORPUS2-06518",[m
+[31m-        "L-CORPUS2-06698",[m
+         "L-CORPUS2-06748",[m
+         "L-CORPUS2-06817",[m
+         "L-CORPUS2-07014",[m
+         "L-CORPUS2-07054",[m
+         "L-CORPUS2-07101",[m
+[31m-        "L-CORPUS2-07162",[m
+         "L-CORPUS2-08179",[m
+         "L-CORPUS2-08183",[m
+         "L-CORPUS2-08257",[m
+         "L-CORPUS2-08467",[m
+         "L-CORPUS2-08476",[m
+         "L-CORPUS2-08508",[m
+[31m-        "L-CORPUS2-08755",[m
+[31m-        "L-CORPUS2-08818",[m
+         "L-CORPUS2-08819",[m
+         "L-CORPUS2-08937",[m
+[31m-        "L-CORPUS2-08970",[m
+         "L-CORPUS2-09027",[m
+[31m-        "L-CORPUS2-09280",[m
+[31m-        "L-CORPUS2-09719",[m
+[31m-        "L-CORPUS2-09720",[m
+         "L-CORPUS2-09723",[m
+         "L-D0B3D18AD18D-3",[m
+[31m-        "L-D0B5D185D18A",[m
+         "L-D0B5D185D18B",[m
+         "L-D0B7D18BD0B4",[m
+         "L-D0BAD18AD18B-2",[m
+[31m-        "L-D0BAD18AD18D-10",[m
+         "L-D183D185D18B",[m
+         "L-D185D18BD182",[m
+         "L-D185D18BD189",[m
+[31m-        "L-D186D380D18B",[m
+         "L-DEKHASHCHKHYN",[m
+         "L-DYKHESHKHYN",[m
+         "L-KBD-00070",[m
+[36m@@ -10260,20 +9831,14 @@[m
+         "L-CORPUS2-00129",[m
+         "L-CORPUS2-00265",[m
+         "L-CORPUS2-00645",[m
+[31m-        "L-CORPUS2-00648",[m
+[31m-        "L-CORPUS2-00909",[m
+[31m-        "L-CORPUS2-01090",[m
+         "L-CORPUS2-01553",[m
+         "L-CORPUS2-01860",[m
+[31m-        "L-CORPUS2-01965",[m
+         "L-CORPUS2-02127",[m
+         "L-CORPUS2-02666",[m
+         "L-CORPUS2-03177",[m
+[31m-        "L-CORPUS2-03278",[m
+         "L-CORPUS2-03290",[m
+         "L-CORPUS2-03487",[m
+         "L-CORPUS2-03504",[m
+[31m-        "L-CORPUS2-03699",[m
+         "L-CORPUS2-03761",[m
+         "L-CORPUS2-04006",[m
+         "L-CORPUS2-04168",[m
+[36m@@ -10283,48 +9848,34 @@[m
+         "L-CORPUS2-04865",[m
+         "L-CORPUS2-04876",[m
+         "L-CORPUS2-05243",[m
+[31m-        "L-CORPUS2-05540",[m
+         "L-CORPUS2-05728",[m
+         "L-CORPUS2-05794",[m
+[31m-        "L-CORPUS2-05907",[m
+         "L-CORPUS2-05988",[m
+[31m-        "L-CORPUS2-06156",[m
+         "L-CORPUS2-06196",[m
+         "L-CORPUS2-06277",[m
+         "L-CORPUS2-06518",[m
+[31m-        "L-CORPUS2-06698",[m
+         "L-CORPUS2-06748",[m
+         "L-CORPUS2-06817",[m
+         "L-CORPUS2-07014",[m
+         "L-CORPUS2-07054",[m
+         "L-CORPUS2-07101",[m
+[31m-        "L-CORPUS2-07162",[m
+         "L-CORPUS2-08179",[m
+         "L-CORPUS2-08183",[m
+         "L-CORPUS2-08257",[m
+         "L-CORPUS2-08467",[m
+         "L-CORPUS2-08476",[m
+         "L-CORPUS2-08508",[m
+[31m-        "L-CORPUS2-08755",[m
+[31m-        "L-CORPUS2-08818",[m
+         "L-CORPUS2-08819",[m
+         "L-CORPUS2-08937",[m
+[31m-        "L-CORPUS2-08970",[m
+         "L-CORPUS2-09027",[m
+[31m-        "L-CORPUS2-09280",[m
+[31m-        "L-CORPUS2-09719",[m
+[31m-        "L-CORPUS2-09720",[m
+         "L-CORPUS2-09723",[m
+         "L-D0B3D18AD18D-3",[m
+[31m-        "L-D0B5D185D18A",[m
+         "L-D0B5D185D18B",[m
+         "L-D0B7D18BD0B4",[m
+         "L-D0BAD18AD18B-2",[m
+[31m-        "L-D0BAD18AD18D-10",[m
+         "L-D183D185D18B",[m
+         "L-D185D18BD182",[m
+         "L-D185D18BD189",[m
+[31m-        "L-D186D380D18B",[m
+         "L-DEKHASHCHKHYN",[m
+         "L-DYKHESHKHYN",[m
+         "L-KBD-00070",[m
+[36m@@ -10636,7 +10187,6 @@[m
+         "L-CORPUS-04271",[m
+         "L-CORPUS-04649",[m
+         "L-CORPUS2-01344",[m
+[31m-        "L-CORPUS2-03344",[m
+         "L-KBD-00809",[m
+         "L-KBD-02318",[m
+         "L-KBD-02319",[m
+[36m@@ -10644,7 +10194,6 @@[m
+         "L-KBD-02321",[m
+         "L-KBD-03246",[m
+         "L-KBD-04950",[m
+[31m-        "L-KHQUEBAN",[m
+         "L-KKHUHE",[m
+         "L-PLANT-013",[m
+         "L-VERIFIED-01779",[m
+[36m@@ -10804,7 +10353,6 @@[m
+       "id": "WF-MAF1E",[m
+       "lexemeIds": [[m
+         "L-CORPUS2-06751",[m
+[31m-        "L-CORPUS2-09025",[m
+         "L-KBD-03499",[m
+         "L-MAF1E",[m
+         "L-MAF1EGU",[m
+[36m@@ -10892,9 +10440,6 @@[m
+         "L-CORPUS-04993",[m
+         "L-CORPUS2-00213",[m
+         "L-CORPUS2-00669",[m
+[31m-        "L-CORPUS2-01412",[m
+[31m-        "L-CORPUS2-02454",[m
+[31m-        "L-CORPUS2-07045",[m
+         "L-KBD-00062",[m
+         "L-KBD-00310",[m
+         "L-KBD-00776",[m
+[36m@@ -11051,10 +10596,6 @@[m
+         "L-CORPUS2-05143",[m
+         "L-CORPUS2-06848",[m
+         "L-CORPUS2-06919",[m
+[31m-        "L-CORPUS2-07850",[m
+[31m-        "L-CORPUS2-07900",[m
+[31m-        "L-CORPUS2-08264",[m
+[31m-        "L-CORPUS2-08988",[m
+         "L-CORPUS2-09071",[m
+         "L-KBD-00371",[m
+         "L-KBD-00423",[m
+[36m@@ -11110,7 +10651,6 @@[m
+         "L-KBD-04252",[m
+         "L-KBD-04444",[m
+         "L-KBD-05397",[m
+[31m-        "L-MORPHO-БЛЭНЭПЦӀ",[m
+         "L-PSYBLE",[m
+         "L-SHTEN",[m
+         "L-SHTENYGHE",[m
+[36m@@ -11217,9 +10757,6 @@[m
+         "L-KBD-05137",[m
+         "L-KBD-05564",[m
+         "L-KBD-05708",[m
+[31m-        "L-PADZEZHEN",[m
+[31m-        "L-PADZHAN",[m
+[31m-        "L-PADZHAZHEN",[m
+         "L-VERIFIED-00767",[m
+         "L-VERIFIED-01039",[m
+         "L-ZYKHEDZEN"[m
+[36m@@ -11417,7 +10954,6 @@[m
+       "lexemeIds": [[m
+         "L-BZU",[m
+         "L-CORPUS-01410",[m
+[31m-        "L-D0B1D0B7D183",[m
+         "L-KBD-00403",[m
+         "L-PSYBZU",[m
+         "L-VERIFIED-00211"[m
+[36m@@ -11464,7 +11000,6 @@[m
+         "L-CORPUS-02106",[m
+         "L-CORPUS-02816",[m
+         "L-CORPUS-04893",[m
+[31m-        "L-CORPUS2-02180",[m
+         "L-DZHED",[m
+         "L-KBD-00909",[m
+         "L-KBD-00910",[m
+[36m@@ -11842,14 +11377,12 @@[m
+         "L-CORPUS2-00190",[m
+         "L-CORPUS2-00392",[m
+         "L-CORPUS2-01122",[m
+[31m-        "L-CORPUS2-01314",[m
+         "L-CORPUS2-01617",[m
+         "L-CORPUS2-02277",[m
+         "L-CORPUS2-02678",[m
+         "L-CORPUS2-02808",[m
+         "L-CORPUS2-03031",[m
+         "L-CORPUS2-03189",[m
+[31m-        "L-CORPUS2-03218",[m
+         "L-CORPUS2-03491",[m
+         "L-CORPUS2-03501",[m
+         "L-CORPUS2-03838",[m
+[36m@@ -11858,27 +11391,22 @@[m
+         "L-CORPUS2-05153",[m
+         "L-CORPUS2-05825",[m
+         "L-CORPUS2-05885",[m
+[31m-        "L-CORPUS2-05896",[m
+         "L-CORPUS2-06061",[m
+         "L-CORPUS2-06249",[m
+         "L-CORPUS2-06257",[m
+         "L-CORPUS2-06733",[m
+[31m-        "L-CORPUS2-06775",[m
+         "L-CORPUS2-07090",[m
+         "L-CORPUS2-07493",[m
+         "L-CORPUS2-07506",[m
+         "L-CORPUS2-07731",[m
+         "L-CORPUS2-08228",[m
+[31m-        "L-CORPUS2-08300",[m
+         "L-CORPUS2-08429",[m
+         "L-CORPUS2-08578",[m
+         "L-CORPUS2-08626",[m
+         "L-CORPUS2-08856",[m
+         "L-CORPUS2-09305",[m
+[31m-        "L-CORPUS2-09726",[m
+         "L-D0BAD18AD183-2",[m
+         "L-D0BAD18AD183-5",[m
+[31m-        "L-D0BAD18AD183-7",[m
+         "L-KBD-00461",[m
+         "L-KBD-00463",[m
+         "L-KBD-00464",[m
+[36m@@ -12230,14 +11758,12 @@[m
+         "L-CORPUS2-00190",[m
+         "L-CORPUS2-00392",[m
+         "L-CORPUS2-01122",[m
+[31m-        "L-CORPUS2-01314",[m
+         "L-CORPUS2-01617",[m
+         "L-CORPUS2-02277",[m
+         "L-CORPUS2-02678",[m
+         "L-CORPUS2-02808",[m
+         "L-CORPUS2-03031",[m
+         "L-CORPUS2-03189",[m
+[31m-        "L-CORPUS2-03218",[m
+         "L-CORPUS2-03491",[m
+         "L-CORPUS2-03501",[m
+         "L-CORPUS2-03838",[m
+[36m@@ -12246,29 +11772,23 @@[m
+         "L-CORPUS2-05153",[m
+         "L-CORPUS2-05825",[m
+         "L-CORPUS2-05885",[m
+[31m-        "L-CORPUS2-05896",[m
+         "L-CORPUS2-06061",[m
+         "L-CORPUS2-06249",[m
+         "L-CORPUS2-06257",[m
+         "L-CORPUS2-06733",[m
+[31m-        "L-CORPUS2-06775",[m
+         "L-CORPUS2-07090",[m
+         "L-CORPUS2-07493",[m
+         "L-CORPUS2-07506",[m
+         "L-CORPUS2-07731",[m
+         "L-CORPUS2-08228",[m
+[31m-        "L-CORPUS2-08300",[m
+         "L-CORPUS2-08429",[m
+         "L-CORPUS2-08578",[m
+         "L-CORPUS2-08626",[m
+         "L-CORPUS2-08856",[m
+         "L-CORPUS2-09305",[m
+[31m-        "L-CORPUS2-09726",[m
+         "L-D0BAD18AD183-2",[m
+         "L-D0BAD18AD183-5",[m
+[31m-        "L-D0BAD18AD183-7",[m
+         "L-K1UE",[m
+[31m-        "L-K1UIT1U",[m
+         "L-KBD-00461",[m
+         "L-KBD-00463",[m
+         "L-KBD-00464",[m
+[36m@@ -12617,7 +12137,6 @@[m
+       "lexemeIds": [[m
+         "L-CORPUS-00934",[m
+         "L-CORPUS-02391",[m
+[31m-        "L-CORPUS2-09205",[m
+         "L-KBD-00770",[m
+         "L-KBD-03646",[m
+         "L-NYBZHY"[m
+[36m@@ -12846,12 +12365,10 @@[m
+     "wordFamily": {[m
+       "id": "WF-1UEKHU",[m
+       "lexemeIds": [[m
+[31m-        "L-1UEKHU",[m
+         "L-1UEKHUASHHUE",[m
+         "L-CORPUS2-00284",[m
+         "L-CORPUS2-02267",[m
+         "L-CORPUS2-02318",[m
+[31m-        "L-CORPUS2-04428",[m
+         "L-CORPUS2-06298",[m
+         "L-CORPUS2-08155",[m
+         "L-CORPUS2-09308",[m
+[36m@@ -13210,7 +12727,6 @@[m
+         "L-CORPUS2-00705",[m
+         "L-CORPUS2-00731",[m
+         "L-CORPUS2-00782",[m
+[31m-        "L-CORPUS2-01035",[m
+         "L-CORPUS2-01062",[m
+         "L-CORPUS2-01120",[m
+         "L-CORPUS2-01141",[m
+[36m@@ -13225,48 +12741,31 @@[m
+         "L-CORPUS2-03042",[m
+         "L-CORPUS2-03146",[m
+         "L-CORPUS2-03190",[m
+[31m-        "L-CORPUS2-03722",[m
+         "L-CORPUS2-03956",[m
+         "L-CORPUS2-03980",[m
+[31m-        "L-CORPUS2-04199",[m
+         "L-CORPUS2-04438",[m
+         "L-CORPUS2-04754",[m
+[31m-        "L-CORPUS2-04780",[m
+         "L-CORPUS2-05010",[m
+[31m-        "L-CORPUS2-05018",[m
+         "L-CORPUS2-05156",[m
+         "L-CORPUS2-05192",[m
+         "L-CORPUS2-05509",[m
+[31m-        "L-CORPUS2-05865",[m
+[31m-        "L-CORPUS2-06160",[m
+         "L-CORPUS2-06305",[m
+[31m-        "L-CORPUS2-06544",[m
+         "L-CORPUS2-06571",[m
+         "L-CORPUS2-06668",[m
+         "L-CORPUS2-06761",[m
+[31m-        "L-CORPUS2-06957",[m
+[31m-        "L-CORPUS2-06961",[m
+         "L-CORPUS2-07108",[m
+[31m-        "L-CORPUS2-07245",[m
+         "L-CORPUS2-07296",[m
+[31m-        "L-CORPUS2-07349",[m
+[31m-        "L-CORPUS2-07454",[m
+         "L-CORPUS2-07511",[m
+         "L-CORPUS2-07655",[m
+         "L-CORPUS2-07776",[m
+[31m-        "L-CORPUS2-07831",[m
+[31m-        "L-CORPUS2-08149",[m
+         "L-CORPUS2-08783",[m
+         "L-CORPUS2-09787",[m
+         "L-CORPUS2-09811",[m
+[31m-        "L-CORPUS2-09862",[m
+         "L-D09AD18AD18D-4",[m
+         "L-D0BAD18AD18D",[m
+         "L-D0BAD18AD18D-12",[m
+         "L-D0BAD18AD18D-13",[m
+[31m-        "L-D0BAD18AD18D-5",[m
+         "L-D0BAD18AD18D-6",[m
+[31m-        "L-D0BAD18AD18D-9",[m
+         "L-K1EBYSTE",[m
+         "L-KBD-00292",[m
+         "L-KBD-00293",[m
+[36m@@ -13326,10 +12825,6 @@[m
+         "L-KBD-04785",[m
+         "L-KBD-04786",[m
+         "L-KBD-04787",[m
+[31m-        "L-KEDEHAN",[m
+[31m-        "L-KEGHEPSHTEN",[m
+[31m-        "L-KEKHEKHEN",[m
+[31m-        "L-KEPSHTEN",[m
+         "L-KESHCHTEN",[m
+         "L-KEZHER",[m
+         "L-KHUMEN",[m
+[36m@@ -13337,7 +12832,6 @@[m
+         "L-KUEKHUMEN",[m
+         "L-KUEUKHUMEN",[m
+         "L-MORPHO-МЫХЪУМЫБЗ",[m
+[31m-        "L-QEBZAGHE",[m
+         "L-QELTMAQ",[m
+         "L-VERIFIED-00011",[m
+         "L-VERIFIED-00113",[m
+[36m@@ -13417,33 +12911,6 @@[m
+       "notes": "C-9.3 yeni aile. Korumak kok ailesi. Wiktionary kaniti."[m
+     }[m
+   },[m
+[31m-  {[m
+[31m-    "id": "R-SHQE",[m
+[31m-    "form": "шъыпкъ",[m
+[31m-    "meaning": "dogru/gercek",[m
+[31m-    "notes": "C-9.3 yeni kok",[m
+[31m-    "wordFamily": {[m
+[31m-      "id": "WF-SHQE",[m
+[31m-      "lexemeIds": [[m
+[31m-        "L-SHQE",[m
+[31m-        "L-SHQAGHE",[m
+[31m-        "L-SHQEU",[m
+[31m-        "L-SHQEM"[m
+[31m-      ],[m
+[31m-      "conceptIds": [[m
+[31m-        "TRUE",[m
+[31m-        "TRULY",[m
+[31m-        "TRUTH"[m
+[31m-      ],[m
+[31m-      "morphemeIds": [],[m
+[31m-      "productivity": {[m
+[31m-        "totalLexemes": 4,[m
+[31m-        "corpusFrequency": 2130,[m
+[31m-        "mostFrequentLexemeId": "L-SHQE"[m
+[31m-      },[m
+[31m-      "notes": "C-9.3 yeni aile. Dogru/gercek kok ailesi. Yuksek frekans."[m
+[31m-    }[m
+[31m-  },[m
+   {[m
+     "id": "R-MEZ",[m
+     "form": "мэз",[m
+[36m@@ -13532,7 +12999,6 @@[m
+         "L-CORPUS-04289",[m
+         "L-CORPUS2-03833",[m
+         "L-CORPUS2-03959",[m
+[31m-        "L-CORPUS2-03975",[m
+         "L-CORPUS2-04191",[m
+         "L-CORPUS2-07100",[m
+         "L-CORPUS2-08501",[m
+[36m@@ -13779,30 +13245,20 @@[m
+         "L-CORPUS2-00283",[m
+         "L-CORPUS2-00300",[m
+         "L-CORPUS2-00350",[m
+[31m-        "L-CORPUS2-00476",[m
+         "L-CORPUS2-00750",[m
+         "L-CORPUS2-00763",[m
+         "L-CORPUS2-00765",[m
+         "L-CORPUS2-00898",[m
+         "L-CORPUS2-01417",[m
+         "L-CORPUS2-01485",[m
+[31m-        "L-CORPUS2-01788",[m
+[31m-        "L-CORPUS2-01922",[m
+         "L-CORPUS2-01964",[m
+         "L-CORPUS2-02200",[m
+[31m-        "L-CORPUS2-02208",[m
+         "L-CORPUS2-02256",[m
+         "L-CORPUS2-02547",[m
+[31m-        "L-CORPUS2-02782",[m
+         "L-CORPUS2-02900",[m
+         "L-CORPUS2-03033",[m
+[31m-        "L-CORPUS2-03202",[m
+         "L-CORPUS2-03496",[m
+[31m-        "L-CORPUS2-03679",[m
+[31m-        "L-CORPUS2-03938",[m
+[31m-        "L-CORPUS2-04025",[m
+         "L-CORPUS2-04097",[m
+[31m-        "L-CORPUS2-04303",[m
+         "L-CORPUS2-04348",[m
+         "L-CORPUS2-05037",[m
+         "L-CORPUS2-05136",[m
+[36m@@ -13817,8 +13273,6 @@[m
+         "L-CORPUS2-06413",[m
+         "L-CORPUS2-06483",[m
+         "L-CORPUS2-06538",[m
+[31m-        "L-CORPUS2-06548",[m
+[31m-        "L-CORPUS2-06960",[m
+         "L-CORPUS2-07027",[m
+         "L-CORPUS2-07286",[m
+         "L-CORPUS2-07293",[m
+[36m@@ -13829,7 +13283,6 @@[m
+         "L-CORPUS2-08235",[m
+         "L-CORPUS2-08782",[m
+         "L-CORPUS2-09271",[m
+[31m-        "L-CORPUS2-09294",[m
+         "L-CORPUS2-09971",[m
+         "L-CORPUS2-09977",[m
+         "L-D0B6D18DD189",[m
+[36m@@ -14087,7 +13540,6 @@[m
+         "L-CORPUS2-05047",[m
+         "L-CORPUS2-07126",[m
+         "L-CORPUS2-08452",[m
+[31m-        "L-CORPUS2-09192",[m
+         "L-D09DD0B0D180",[m
+         "L-GHATKHEPE",[m
+         "L-GHATXE",[m
+[36m@@ -14188,7 +13640,6 @@[m
+         "L-CORPUS2-05047",[m
+         "L-CORPUS2-07126",[m
+         "L-CORPUS2-08452",[m
+[31m-        "L-CORPUS2-09192",[m
+         "L-D09DD0B0D180",[m
+         "L-GHATKHEPE",[m
+         "L-GHATXE",[m
+[36m@@ -14288,7 +13739,6 @@[m
+         "L-CORPUS2-05047",[m
+         "L-CORPUS2-07126",[m
+         "L-CORPUS2-08452",[m
+[31m-        "L-CORPUS2-09192",[m
+         "L-D09DD0B0D180",[m
+         "L-GHATKHEPE",[m
+         "L-GHATXE",[m
+[36m@@ -14422,18 +13872,6 @@[m
+       ][m
+     }[m
+   },[m
+[31m-  {[m
+[31m-    "id": "R-ZHAI",[m
+[31m-    "form": "жаӀэ",[m
+[31m-    "primaryMeaning": null,[m
+[31m-    "productivity": {[m
+[31m-      "corpusFrequency": 3100[m
+[31m-    },[m
+[31m-    "wordFamily": {[m
+[31m-      "id": "WF-ZHAI",[m
+[31m-      "lexemeIds": [][m
+[31m-    }[m
+[31m-  },[m
+   {[m
+     "id": "R-DEKH",[m
+     "form": "дэха",[m
+[36m@@ -14467,14 +13905,11 @@[m
+       "lexemeIds": [[m
+         "L-COLOR-BLACK",[m
+         "L-CORPUS-02145",[m
+[31m-        "L-CORPUS2-00257",[m
+         "L-CORPUS2-00779",[m
+         "L-CORPUS2-00885",[m
+         "L-CORPUS2-01404",[m
+         "L-CORPUS2-05436",[m
+[31m-        "L-CORPUS2-06086",[m
+         "L-CORPUS2-06516",[m
+[31m-        "L-CORPUS2-06706",[m
+         "L-CORPUS2-07720",[m
+         "L-D184D380D18B",[m
+         "L-D184D38FD18B",[m
+[36m@@ -14527,7 +13962,6 @@[m
+       "id": "WF-LIY",[m
+       "lexemeIds": [[m
+         "L-CORPUS2-00704",[m
+[31m-        "L-CORPUS2-00726",[m
+         "L-CORPUS2-01664",[m
+         "L-CORPUS2-01773",[m
+         "L-CORPUS2-04205",[m
+[36m@@ -14536,7 +13970,6 @@[m
+         "L-CORPUS2-07799",[m
+         "L-D0BFD0BB49D1",[m
+         "L-D0BFD0BB49D1-2",[m
+[31m-        "L-D0BFD0BBD380",[m
+         "L-KBD-00015",[m
+         "L-KBD-00082",[m
+         "L-KBD-00757",[m
+[36m@@ -14569,18 +14002,6 @@[m
+       ][m
+     }[m
+   },[m
+[31m-  {[m
+[31m-    "id": "R-BZE_1",[m
+[31m-    "form": "бзэгу",[m
+[31m-    "primaryMeaning": null,[m
+[31m-    "productivity": {[m
+[31m-      "corpusFrequency": 2300[m
+[31m-    },[m
+[31m-    "wordFamily": {[m
+[31m-      "id": "WF-BZE_1",[m
+[31m-      "lexemeIds": [][m
+[31m-    }[m
+[31m-  },[m
+   {[m
+     "id": "R-BZY",[m
+     "form": "бзылъфыгъэ",[m
+[36m@@ -14603,7 +14024,6 @@[m
+         "L-CORPUS-04229",[m
+         "L-CORPUS-04582",[m
+         "L-CORPUS2-07818",[m
+[31m-        "L-CORPUS2-09854",[m
+         "L-D093D183D0B1",[m
+         "L-VERIFIED-00065",[m
+         "L-VERIFIED-00215",[m
+[36m@@ -14758,42 +14178,6 @@[m
+       ][m
+     }[m
+   },[m
+[31m-  {[m
+[31m-    "id": "R-NEKH",[m
+[31m-    "form": "нэхъ",[m
+[31m-    "primaryMeaning": null,[m
+[31m-    "productivity": {[m
+[31m-      "corpusFrequency": 1700[m
+[31m-    },[m
+[31m-    "wordFamily": {[m
+[31m-      "id": "WF-NEKH",[m
+[31m-      "lexemeIds": [][m
+[31m-    }[m
+[31m-  },[m
+[31m-  {[m
+[31m-    "id": "R-GE",[m
+[31m-    "form": "гъэмахуэ",[m
+[31m-    "primaryMeaning": null,[m
+[31m-    "productivity": {[m
+[31m-      "corpusFrequency": 1650[m
+[31m-    },[m
+[31m-    "wordFamily": {[m
+[31m-      "id": "WF-GE",[m
+[31m-      "lexemeIds": [][m
+[31m-    }[m
+[31m-  },[m
+[31m-  {[m
+[31m-    "id": "R-SHCHIY",[m
+[31m-    "form": "щӀымахуэ",[m
+[31m-    "primaryMeaning": null,[m
+[31m-    "productivity": {[m
+[31m-      "corpusFrequency": 1600[m
+[31m-    },[m
+[31m-    "wordFamily": {[m
+[31m-      "id": "WF-SHCHIY",[m
+[31m-      "lexemeIds": [][m
+[31m-    }[m
+[31m-  },[m
+   {[m
+     "id": "R-BZH",[m
+     "form": "бжьыхьэ",[m
+[36m@@ -14864,14 +14248,11 @@[m
+         "L-CORPUS-04286",[m
+         "L-CORPUS-04612",[m
+         "L-CORPUS-04855",[m
+[31m-        "L-CORPUS2-00457",[m
+         "L-CORPUS2-01371",[m
+         "L-CORPUS2-01497",[m
+         "L-CORPUS2-01836",[m
+         "L-CORPUS2-02227",[m
+[31m-        "L-CORPUS2-02639",[m
+         "L-CORPUS2-02766",[m
+[31m-        "L-CORPUS2-02839",[m
+         "L-CORPUS2-03122",[m
+         "L-CORPUS2-03215",[m
+         "L-CORPUS2-03222",[m
+[36m@@ -14879,7 +14260,6 @@[m
+         "L-CORPUS2-04419",[m
+         "L-CORPUS2-04628",[m
+         "L-CORPUS2-04700",[m
+[31m-        "L-CORPUS2-04837",[m
+         "L-CORPUS2-05272",[m
+         "L-CORPUS2-05290",[m
+         "L-CORPUS2-05469",[m
+[36m@@ -14920,7 +14300,6 @@[m
+         "L-TKHE2",[m
+         "L-TKHEK1UMECH1YH",[m
+         "L-TKHEMADE",[m
+[31m-        "L-TKHEUSYKHEZHEN",[m
+         "L-TKHY",[m
+         "L-TX",[m
+         "L-TXYN",[m
+[36m@@ -14981,18 +14360,6 @@[m
+       ][m
+     }[m
+   },[m
+[31m-  {[m
+[31m-    "id": "R-CHEN",[m
+[31m-    "form": "чэнджэш",[m
+[31m-    "primaryMeaning": null,[m
+[31m-    "productivity": {[m
+[31m-      "corpusFrequency": 1380[m
+[31m-    },[m
+[31m-    "wordFamily": {[m
+[31m-      "id": "WF-CHEN",[m
+[31m-      "lexemeIds": [][m
+[31m-    }[m
+[31m-  },[m
+   {[m
+     "id": "R-SHCHECH",[m
+     "form": "щэч",[m
+[36m@@ -15189,21 +14556,17 @@[m
+         "L-CORPUS-04931",[m
+         "L-CORPUS-04932",[m
+         "L-CORPUS-04965",[m
+[31m-        "L-CORPUS2-00568",[m
+         "L-CORPUS2-01089",[m
+         "L-CORPUS2-01436",[m
+[31m-        "L-CORPUS2-01735",[m
+         "L-CORPUS2-01970",[m
+         "L-CORPUS2-02109",[m
+         "L-CORPUS2-02130",[m
+         "L-CORPUS2-03325",[m
+         "L-CORPUS2-03543",[m
+[31m-        "L-CORPUS2-04398",[m
+         "L-CORPUS2-04431",[m
+         "L-CORPUS2-05076",[m
+         "L-CORPUS2-05796",[m
+         "L-CORPUS2-05887",[m
+[31m-        "L-CORPUS2-06382",[m
+         "L-CORPUS2-07728",[m
+         "L-CORPUS2-07762",[m
+         "L-CORPUS2-07840",[m
+[36m@@ -15214,7 +14577,6 @@[m
+         "L-CORPUS2-09078",[m
+         "L-CORPUS2-09234",[m
+         "L-CORPUS2-09260",[m
+[31m-        "L-CORPUS2-09860",[m
+         "L-D093D183D0B6",[m
+         "L-D098D0BDD18B",[m
+         "L-D09DD18DD189-2",[m
+[36m@@ -15287,7 +14649,6 @@[m
+         "L-KBD-03327",[m
+         "L-KBD-03357",[m
+         "L-KBD-03358",[m
+[31m-        "L-KBD-03759",[m
+         "L-KBD-03861",[m
+         "L-KBD-04158",[m
+         "L-KBD-04161",[m
+[36m@@ -15300,7 +14661,6 @@[m
+         "L-KBD-04765",[m
+         "L-KBD-05717",[m
+         "L-MIN",[m
+[31m-        "L-PLANT-012",[m
+         "L-ULHYIN",[m
+         "L-VERIFIED-00053",[m
+         "L-VERIFIED-00177",[m
+[36m@@ -15398,18 +14758,6 @@[m
+       ][m
+     }[m
+   },[m
+[31m-  {[m
+[31m-    "id": "R-TKH_1",[m
+[31m-    "form": "тхьэмыщкӀэ",[m
+[31m-    "primaryMeaning": null,[m
+[31m-    "productivity": {[m
+[31m-      "corpusFrequency": 1000[m
+[31m-    },[m
+[31m-    "wordFamily": {[m
+[31m-      "id": "WF-TKH_1",[m
+[31m-      "lexemeIds": [][m
+[31m-    }[m
+[31m-  },[m
+   {[m
+     "id": "R-BEL",[m
+     "form": "бэлыхь",[m
+[36m@@ -15440,18 +14788,6 @@[m
+       ][m
+     }[m
+   },[m
+[31m-  {[m
+[31m-    "id": "R-PEZH",[m
+[31m-    "form": "пэжагъ",[m
+[31m-    "primaryMeaning": null,[m
+[31m-    "productivity": {[m
+[31m-      "corpusFrequency": 910[m
+[31m-    },[m
+[31m-    "wordFamily": {[m
+[31m-      "id": "WF-PEZH",[m
+[31m-      "lexemeIds": [][m
+[31m-    }[m
+[31m-  },[m
+   {[m
+     "id": "R-AK",[m
+     "form": "акъыл",[m
+[36m@@ -15473,7 +14809,6 @@[m
+         "L-CORPUS-03561",[m
+         "L-CORPUS-04312",[m
+         "L-CORPUS-04669",[m
+[31m-        "L-CORPUS2-01971",[m
+         "L-CORPUS2-02330",[m
+         "L-D0B0D0BAD18A",[m
+         "L-KBD-04152",[m
+[36m@@ -15483,18 +14818,6 @@[m
+       ][m
+     }[m
+   },[m
+[31m-  {[m
+[31m-    "id": "R-KHAB",[m
+[31m-    "form": "хабзэншэ",[m
+[31m-    "primaryMeaning": null,[m
+[31m-    "productivity": {[m
+[31m-      "corpusFrequency": 850[m
+[31m-    },[m
+[31m-    "wordFamily": {[m
+[31m-      "id": "WF-KHAB",[m
+[31m-      "lexemeIds": [][m
+[31m-    }[m
+[31m-  },[m
+   {[m
+     "id": "R-GA_1",[m
+     "form": "гъащӀэ",[m
+[36m@@ -15551,20 +14874,6 @@[m
+       ][m
+     }[m
+   },[m
+[31m-  {[m
+[31m-    "id": "R-VAK",[m
+[31m-    "form": "вакъэ",[m
+[31m-    "primaryMeaning": null,[m
+[31m-    "productivity": {[m
+[31m-      "corpusFrequency": 730[m
+[31m-    },[m
+[31m-    "wordFamily": {[m
+[31m-      "id": "WF-VAK",[m
+[31m-      "lexemeIds": [[m
+[31m-        "L-PROMPT-00044"[m
+[31m-      ][m
+[31m-    }[m
+[31m-  },[m
+   {[m
+     "id": "R-PSHCHI",[m
+     "form": "пщӀэ",[m
+[36m@@ -15727,7 +15036,6 @@[m
+         "L-CORPUS-04937",[m
+         "L-CORPUS-04979",[m
+         "L-CORPUS-04983",[m
+[31m-        "L-CORPUS2-01961",[m
+         "L-CORPUS2-02009",[m
+         "L-CORPUS2-04118",[m
+         "L-CORPUS2-04778",[m
+[36m@@ -15736,7 +15044,6 @@[m
+         "L-CORPUS2-06158",[m
+         "L-CORPUS2-06271",[m
+         "L-CORPUS2-06750",[m
+[31m-        "L-CORPUS2-06887",[m
+         "L-CORPUS2-08803",[m
+         "L-CORPUS2-08860",[m
+         "L-CORPUS2-08998",[m
+[36m@@ -15969,8 +15276,6 @@[m
+         "L-CORPUS2-05537",[m
+         "L-CORPUS2-06228",[m
+         "L-CORPUS2-07136",[m
+[31m-        "L-CORPUS2-09093",[m
+[31m-        "L-CORPUS2-09915",[m
+         "L-ZHY1EN"[m
+       ][m
+     }[m
+[36m@@ -16007,7 +15312,6 @@[m
+         "L-CORPUS2-02077",[m
+         "L-CORPUS2-02915",[m
+         "L-CORPUS2-03319",[m
+[31m-        "L-CORPUS2-03730",[m
+         "L-CORPUS2-03923",[m
+         "L-CORPUS2-04143",[m
+         "L-CORPUS2-04603",[m
+[36m@@ -16025,7 +15329,6 @@[m
+         "L-D18249D0BED1",[m
+         "L-D18249D0BED1-2",[m
+         "L-D18249D0BED1-3",[m
+[31m-        "L-D18249D0BED1-4",[m
+         "L-KBD-00779",[m
+         "L-KBD-01230",[m
+         "L-KBD-01449",[m
+[36m@@ -16051,12 +15354,8 @@[m
+         "L-KBD-05159",[m
+         "L-KBD-05545",[m
+         "L-NUM-ELEVEN",[m
+[31m-        "L-NUM-FIFTEEN",[m
+[31m-        "L-NUM-FOURTEEN",[m
+         "L-NUM-SEVENTEEN",[m
+[31m-        "L-NUM-SIXTEEN",[m
+         "L-NUM-THIRTEEN",[m
+[31m-        "L-NUM-TWELVE",[m
+         "L-PROMPT-00034",[m
+         "L-PSHCHY",[m
+         "L-PSHCHYNE1AKUE",[m
+[36m@@ -16106,12 +15405,10 @@[m
+         "L-CORPUS2-03990",[m
+         "L-CORPUS2-04030",[m
+         "L-CORPUS2-04125",[m
+[31m-        "L-CORPUS2-04546",[m
+         "L-CORPUS2-04634",[m
+         "L-CORPUS2-04846",[m
+         "L-CORPUS2-05516",[m
+         "L-CORPUS2-07606",[m
+[31m-        "L-CORPUS2-07805",[m
+         "L-CORPUS2-08215",[m
+         "L-CORPUS2-08288",[m
+         "L-CORPUS2-09029",[m
+[36m@@ -16121,7 +15418,6 @@[m
+         "L-D0B6D0B0D0B3",[m
+         "L-D0B7D18BD0B3-4",[m
+         "L-D183D18DD189",[m
+[31m-        "L-GHUESHCH1",[m
+         "L-KBD-00120",[m
+         "L-KBD-00710",[m
+         "L-KBD-00759",[m
+[36m@@ -16219,24 +15515,11 @@[m
+     "wordFamily": {[m
+       "id": "WF-TEM",[m
+       "lexemeIds": [[m
+[31m-        "L-CORPUS2-08456",[m
+         "L-KBD-03236",[m
+         "L-TEMAK"[m
+       ][m
+     }[m
+   },[m
+[31m-  {[m
+[31m-    "id": "R-DEKH_1",[m
+[31m-    "form": "дэхащӀэ",[m
+[31m-    "primaryMeaning": null,[m
+[31m-    "productivity": {[m
+[31m-      "corpusFrequency": 530[m
+[31m-    },[m
+[31m-    "wordFamily": {[m
+[31m-      "id": "WF-DEKH_1",[m
+[31m-      "lexemeIds": [][m
+[31m-    }[m
+[31m-  },[m
+   {[m
+     "id": "R-BZHY",[m
+     "form": "бжыгъэ",[m
+[36m@@ -16278,78 +15561,6 @@[m
+       ][m
+     }[m
+   },[m
+[31m-  {[m
+[31m-    "id": "R-BG_1",[m
+[31m-    "form": "бгъащхьэ",[m
+[31m-    "primaryMeaning": null,[m
+[31m-    "productivity": {[m
+[31m-      "corpusFrequency": 480[m
+[31m-    },[m
+[31m-    "wordFamily": {[m
+[31m-      "id": "WF-BG_1",[m
+[31m-      "lexemeIds": [][m
+[31m-    }[m
+[31m-  },[m
+[31m-  {[m
+[31m-    "id": "R-SHCHKH",[m
+[31m-    "form": "щхьэщӀэ",[m
+[31m-    "primaryMeaning": null,[m
+[31m-    "productivity": {[m
+[31m-      "corpusFrequency": 470[m
+[31m-    },[m
+[31m-    "wordFamily": {[m
+[31m-      "id": "WF-SHCHKH",[m
+[31m-      "lexemeIds": [][m
+[31m-    }[m
+[31m-  },[m
+[31m-  {[m
+[31m-    "id": "R-NEP",[m
+[31m-    "form": "нэпс",[m
+[31m-    "primaryMeaning": null,[m
+[31m-    "productivity": {[m
+[31m-      "corpusFrequency": 460[m
+[31m-    },[m
+[31m-    "wordFamily": {[m
+[31m-      "id": "WF-NEP",[m
+[31m-      "lexemeIds": [][m
+[31m-    }[m
+[31m-  },[m
+[31m-  {[m
+[31m-    "id": "R-NEK",[m
+[31m-    "form": "нэкӀу",[m
+[31m-    "primaryMeaning": null,[m
+[31m-    "productivity": {[m
+[31m-      "corpusFrequency": 450[m
+[31m-    },[m
+[31m-    "wordFamily": {[m
+[31m-      "id": "WF-NEK",[m
+[31m-      "lexemeIds": [][m
+[31m-    }[m
+[31m-  },[m
+[31m-  {[m
+[31m-    "id": "R-NEKH_1",[m
+[31m-    "form": "нэху",[m
+[31m-    "primaryMeaning": null,[m
+[31m-    "productivity": {[m
+[31m-      "corpusFrequency": 440[m
+[31m-    },[m
+[31m-    "wordFamily": {[m
+[31m-      "id": "WF-NEKH_1",[m
+[31m-      "lexemeIds": [][m
+[31m-    }[m
+[31m-  },[m
+[31m-  {[m
+[31m-    "id": "R-NESHCH",[m
+[31m-    "form": "нэщӀ",[m
+[31m-    "primaryMeaning": null,[m
+[31m-    "productivity": {[m
+[31m-      "corpusFrequency": 430[m
+[31m-    },[m
+[31m-    "wordFamily": {[m
+[31m-      "id": "WF-NESHCH",[m
+[31m-      "lexemeIds": [][m
+[31m-    }[m
+[31m-  },[m
+   {[m
+     "id": "R-IEG",[m
+     "form": "Ӏэгу",[m
+[36m@@ -16374,23 +15585,7 @@[m
+     "wordFamily": {[m
+       "id": "WF-IESHCH",[m
+       "lexemeIds": [[m
+[31m-        "L-CORPUS2-00850",[m
+[31m-        "L-CORPUS2-07783"[m
+[31m-      ][m
+[31m-    }[m
+[31m-  },[m
+[31m-  {[m
+[31m-    "id": "R-IESHCH_1",[m
+[31m-    "form": "ӀэщӀагъэ",[m
+[31m-    "primaryMeaning": null,[m
+[31m-    "productivity": {[m
+[31m-      "corpusFrequency": 400[m
+[31m-    },[m
+[31m-    "wordFamily": {[m
+[31m-      "id": "WF-IESHCH_1",[m
+[31m-      "lexemeIds": [[m
+[31m-        "L-CORPUS2-00914",[m
+[31m-        "L-CORPUS2-01139"[m
+[32m+[m[32m        "L-CORPUS2-00850"[m
+       ][m
+     }[m
+   },[m
+[36m@@ -16409,18 +15604,6 @@[m
+       ][m
+     }[m
+   },[m
+[31m-  {[m
+[31m-    "id": "R-IEB",[m
+[31m-    "form": "Ӏэбэ",[m
+[31m-    "primaryMeaning": null,[m
+[31m-    "productivity": {[m
+[31m-      "corpusFrequency": 380[m
+[31m-    },[m
+[31m-    "wordFamily": {[m
+[31m-      "id": "WF-IEB",[m
+[31m-      "lexemeIds": [][m
+[31m-    }[m
+[31m-  },[m
+   {[m
+     "id": "R-KUR",[m
+     "form": "курыт",[m
+[36m@@ -16480,18 +15663,6 @@[m
+       ][m
+     }[m
+   },[m
+[31m-  {[m
+[31m-    "id": "R-BGY_1",[m
+[31m-    "form": "бгылъэ",[m
+[31m-    "primaryMeaning": null,[m
+[31m-    "productivity": {[m
+[31m-      "corpusFrequency": 340[m
+[31m-    },[m
+[31m-    "wordFamily": {[m
+[31m-      "id": "WF-BGY_1",[m
+[31m-      "lexemeIds": [][m
+[31m-    }[m
+[31m-  },[m
+   {[m
+     "id": "R-BEG",[m
+     "form": "бэгъуэ",[m
+[36m@@ -16514,54 +15685,6 @@[m
+       ][m
+     }[m
+   },[m
+[31m-  {[m
+[31m-    "id": "R-BEM",[m
+[31m-    "form": "бэмащӀэ",[m
+[31m-    "primaryMeaning": null,[m
+[31m-    "productivity": {[m
+[31m-      "corpusFrequency": 320[m
+[31m-    },[m
+[31m-    "wordFamily": {[m
+[31m-      "id": "WF-BEM",[m
+[31m-      "lexemeIds": [][m
+[31m-    }[m
+[31m-  },[m
+[31m-  {[m
+[31m-    "id": "R-TKHY_1",[m
+[31m-    "form": "тхыгъэ",[m
+[31m-    "primaryMeaning": null,[m
+[31m-    "productivity": {[m
+[31m-      "corpusFrequency": 300[m
+[31m-    },[m
+[31m-    "wordFamily": {[m
+[31m-      "id": "WF-TKHY_1",[m
+[31m-      "lexemeIds": [][m
+[31m-    }[m
+[31m-  },[m
+[31m-  {[m
+[31m-    "id": "R-TKHY_2",[m
+[31m-    "form": "тхыдэ",[m
+[31m-    "primaryMeaning": null,[m
+[31m-    "productivity": {[m
+[31m-      "corpusFrequency": 290[m
+[31m-    },[m
+[31m-    "wordFamily": {[m
+[31m-      "id": "WF-TKHY_2",[m
+[31m-      "lexemeIds": [][m
+[31m-    }[m
+[31m-  },[m
+[31m-  {[m
+[31m-    "id": "R-KHAB_1",[m
+[31m-    "form": "хабзэфӀ",[m
+[31m-    "primaryMeaning": null,[m
+[31m-    "productivity": {[m
+[31m-      "corpusFrequency": 280[m
+[31m-    },[m
+[31m-    "wordFamily": {[m
+[31m-      "id": "WF-KHAB_1",[m
+[31m-      "lexemeIds": [][m
+[31m-    }[m
+[31m-  },[m
+   {[m
+     "id": "R-DEZH",[m
+     "form": "дэжь",[m
+[36m@@ -16580,18 +15703,6 @@[m
+       ][m
+     }[m
+   },[m
+[31m-  {[m
+[31m-    "id": "R-DEKH_2",[m
+[31m-    "form": "дэхагъэ",[m
+[31m-    "primaryMeaning": null,[m
+[31m-    "productivity": {[m
+[31m-      "corpusFrequency": 260[m
+[31m-    },[m
+[31m-    "wordFamily": {[m
+[31m-      "id": "WF-DEKH_2",[m
+[31m-      "lexemeIds": [][m
+[31m-    }[m
+[31m-  },[m
+   {[m
+     "id": "R-UVY",[m
+     "form": "увыӀэ",[m
+[36m@@ -16622,18 +15733,6 @@[m
+       ][m
+     }[m
+   },[m
+[31m-  {[m
+[31m-    "id": "R-KHYSH",[m
+[31m-    "form": "хышхуэ",[m
+[31m-    "primaryMeaning": null,[m
+[31m-    "productivity": {[m
+[31m-      "corpusFrequency": 230[m
+[31m-    },[m
+[31m-    "wordFamily": {[m
+[31m-      "id": "WF-KHYSH",[m
+[31m-      "lexemeIds": [][m
+[31m-    }[m
+[31m-  },[m
+   {[m
+     "id": "R-PL",[m
+     "form": "плъыжь",[m
+[36m@@ -16648,18 +15747,6 @@[m
+       ][m
+     }[m
+   },[m
+[31m-  {[m
+[31m-    "id": "R-SHKHY",[m
+[31m-    "form": "шхыныгъэ",[m
+[31m-    "primaryMeaning": null,[m
+[31m-    "productivity": {[m
+[31m-      "corpusFrequency": 210[m
+[31m-    },[m
+[31m-    "wordFamily": {[m
+[31m-      "id": "WF-SHKHY",[m
+[31m-      "lexemeIds": [][m
+[31m-    }[m
+[31m-  },[m
+   {[m
+     "id": "R-KIU",[m
+     "form": "кӀуэцӀ",[m
+[36m@@ -16699,18 +15786,6 @@[m
+       ][m
+     }[m
+   },[m
+[31m-  {[m
+[31m-    "id": "R-LEZH_1",[m
+[31m-    "form": "лэжьапӀэ",[m
+[31m-    "primaryMeaning": null,[m
+[31m-    "productivity": {[m
+[31m-      "corpusFrequency": 190[m
+[31m-    },[m
+[31m-    "wordFamily": {[m
+[31m-      "id": "WF-LEZH_1",[m
+[31m-      "lexemeIds": [][m
+[31m-    }[m
+[31m-  },[m
+   {[m
+     "id": "R-LEZH_2",[m
+     "form": "лэжьэгъу",[m
+[36m@@ -16725,18 +15800,6 @@[m
+       ][m
+     }[m
+   },[m
+[31m-  {[m
+[31m-    "id": "R-LEZH_3",[m
+[31m-    "form": "лэжьакӀуэ",[m
+[31m-    "primaryMeaning": null,[m
+[31m-    "productivity": {[m
+[31m-      "corpusFrequency": 170[m
+[31m-    },[m
+[31m-    "wordFamily": {[m
+[31m-      "id": "WF-LEZH_3",[m
+[31m-      "lexemeIds": [][m
+[31m-    }[m
+[31m-  },[m
+   {[m
+     "id": "R-GU_2",[m
+     "form": "гъуэгурыкӀуэ",[m
+[36m@@ -16749,8 +15812,7 @@[m
+       "lexemeIds": [[m
+         "L-CORPUS2-09175",[m
+         "L-KBD-00679",[m
+[31m-        "L-KBD-00680",[m
+[31m-        "L-PROMPT-00037"[m
+[32m+[m[32m        "L-KBD-00680"[m
+       ][m
+     }[m
+   },[m
+[36m@@ -16795,19 +15857,9 @@[m
+     },[m
+     "wordFamily": {[m
+       "id": "WF-ZHYG_1",[m
+[31m-      "lexemeIds": [][m
+[31m-    }[m
+[31m-  },[m
+[31m-  {[m
+[31m-    "id": "R-DZE_1",[m
+[31m-    "form": "дзэпщ",[m
+[31m-    "primaryMeaning": null,[m
+[31m-    "productivity": {[m
+[31m-      "corpusFrequency": 120[m
+[31m-    },[m
+[31m-    "wordFamily": {[m
+[31m-      "id": "WF-DZE_1",[m
+[31m-      "lexemeIds": [][m
+[32m+[m[32m      "lexemeIds": [[m
+[32m+[m[32m        "KAV-ЖЫГХАДЭ"[m
+[32m+[m[32m      ][m
+     }[m
+   },[m
+   {[m
+[36m@@ -16839,66 +15891,6 @@[m
+       ][m
+     }[m
+   },[m
+[31m-  {[m
+[31m-    "id": "R-MYV_1",[m
+[31m-    "form": "мывэпс",[m
+[31m-    "primaryMeaning": null,[m
+[31m-    "productivity": {[m
+[31m-      "corpusFrequency": 100[m
+[31m-    },[m
+[31m-    "wordFamily": {[m
+[31m-      "id": "WF-MYV_1",[m
+[31m-      "lexemeIds": [][m
+[31m-    }[m
+[31m-  },[m
+[31m-  {[m
+[31m-    "id": "R-SYM",[m
+[31m-    "form": "сымаджэфэ",[m
+[31m-    "primaryMeaning": null,[m
+[31m-    "productivity": {[m
+[31m-      "corpusFrequency": 95[m
+[31m-    },[m
+[31m-    "wordFamily": {[m
+[31m-      "id": "WF-SYM",[m
+[31m-      "lexemeIds": [][m
+[31m-    }[m
+[31m-  },[m
+[31m-  {[m
+[31m-    "id": "R-KHY_1",[m
+[31m-    "form": "хъыбаращӀэ",[m
+[31m-    "primaryMeaning": null,[m
+[31m-    "productivity": {[m
+[31m-      "corpusFrequency": 90[m
+[31m-    },[m
+[31m-    "wordFamily": {[m
+[31m-      "id": "WF-KHY_1",[m
+[31m-      "lexemeIds": [][m
+[31m-    }[m
+[31m-  },[m
+[31m-  {[m
+[31m-    "id": "R-VAK_1",[m
+[31m-    "form": "вакъэжь",[m
+[31m-    "primaryMeaning": null,[m
+[31m-    "productivity": {[m
+[31m-      "corpusFrequency": 85[m
+[31m-    },[m
+[31m-    "wordFamily": {[m
+[31m-      "id": "WF-VAK_1",[m
+[31m-      "lexemeIds": [][m
+[31m-    }[m
+[31m-  },[m
+[31m-  {[m
+[31m-    "id": "R-BEL_1",[m
+[31m-    "form": "бэлыхьшхуэ",[m
+[31m-    "primaryMeaning": null,[m
+[31m-    "productivity": {[m
+[31m-      "corpusFrequency": 80[m
+[31m-    },[m
+[31m-    "wordFamily": {[m
+[31m-      "id": "WF-BEL_1",[m
+[31m-      "lexemeIds": [][m
+[31m-    }[m
+[31m-  },[m
+   {[m
+     "id": "R-PSHCHY_1",[m
+     "form": "пщыгъуэ",[m
+[36m@@ -16928,42 +15920,6 @@[m
+       ][m
+     }[m
+   },[m
+[31m-  {[m
+[31m-    "id": "R-LIY_2",[m
+[31m-    "form": "лӀыхъуэ",[m
+[31m-    "primaryMeaning": null,[m
+[31m-    "productivity": {[m
+[31m-      "corpusFrequency": 68[m
+[31m-    },[m
+[31m-    "wordFamily": {[m
+[31m-      "id": "WF-LIY_2",[m
+[31m-      "lexemeIds": [][m
+[31m-    }[m
+[31m-  },[m
+[31m-  {[m
+[31m-    "id": "R-BZY_1",[m
+[31m-    "form": "бзылъфыгъэщ",[m
+[31m-    "primaryMeaning": null,[m
+[31m-    "productivity": {[m
+[31m-      "corpusFrequency": 65[m
+[31m-    },[m
+[31m-    "wordFamily": {[m
+[31m-      "id": "WF-BZY_1",[m
+[31m-      "lexemeIds": [][m
+[31m-    }[m
+[31m-  },[m
+[31m-  {[m
+[31m-    "id": "R-KHE_1",[m
+[31m-    "form": "хьэблэдэс",[m
+[31m-    "primaryMeaning": null,[m
+[31m-    "productivity": {[m
+[31m-      "corpusFrequency": 62[m
+[31m-    },[m
+[31m-    "wordFamily": {[m
+[31m-      "id": "WF-KHE_1",[m
+[31m-      "lexemeIds": [][m
+[31m-    }[m
+[31m-  },[m
+   {[m
+     "id": "R-ZHYL_1",[m
+     "form": "жылэдэс",[m
+[36m@@ -16973,19 +15929,9 @@[m
+     },[m
+     "wordFamily": {[m
+       "id": "WF-ZHYL_1",[m
+[31m-      "lexemeIds": [][m
+[31m-    }[m
+[31m-  },[m
+[31m-  {[m
+[31m-    "id": "R-SHER_1",[m
+[31m-    "form": "шэрджэсыбзэ",[m
+[31m-    "primaryMeaning": null,[m
+[31m-    "productivity": {[m
+[31m-      "corpusFrequency": 58[m
+[31m-    },[m
+[31m-    "wordFamily": {[m
+[31m-      "id": "WF-SHER_1",[m
+[31m-      "lexemeIds": [][m
+[32m+[m[32m      "lexemeIds": [[m
+[32m+[m[32m        "KAV-ЖЫЛЭДЭС"[m
+[32m+[m[32m      ][m
+     }[m
+   },[m
+   {[m
+[36m@@ -17002,18 +15948,6 @@[m
+       ][m
+     }[m
+   },[m
+[31m-  {[m
+[31m-    "id": "R-PSHCHA_1",[m
+[31m-    "form": "пщащэщӀэ",[m
+[31m-    "primaryMeaning": null,[m
+[31m-    "productivity": {[m
+[31m-      "corpusFrequency": 52[m
+[31m-    },[m
+[31m-    "wordFamily": {[m
+[31m-      "id": "WF-PSHCHA_1",[m
+[31m-      "lexemeIds": [][m
+[31m-    }[m
+[31m-  },[m
+   {[m
+     "id": "R-NEKH_2",[m
+     "form": "нэхъыжь",[m
+[36m@@ -17023,7 +15957,9 @@[m
+     },[m
+     "wordFamily": {[m
+       "id": "WF-NEKH_2",[m
+[31m-      "lexemeIds": [][m
+[32m+[m[32m      "lexemeIds": [[m
+[32m+[m[32m        "L-D0BDD18DD185"[m
+[32m+[m[32m      ][m
+     }[m
+   },[m
+   {[m
+[36m@@ -17035,7 +15971,10 @@[m
+     },[m
+     "wordFamily": {[m
+       "id": "WF-NEKH_3",[m
+[31m-      "lexemeIds": [][m
+[32m+[m[32m      "lexemeIds": [[m
+[32m+[m[32m        "KAV-НЭХЪЫЩӀЭ",[m
+[32m+[m[32m        "L-CORPUS2-02072"[m
+[32m+[m[32m      ][m
+     }[m
+   },[m
+   {[m
+[36m@@ -17052,18 +15991,6 @@[m
+       ][m
+     }[m
+   },[m
+[31m-  {[m
+[31m-    "id": "R-UAF_1",[m
+[31m-    "form": "уафэгу",[m
+[31m-    "primaryMeaning": null,[m
+[31m-    "productivity": {[m
+[31m-      "corpusFrequency": 42[m
+[31m-    },[m
+[31m-    "wordFamily": {[m
+[31m-      "id": "WF-UAF_1",[m
+[31m-      "lexemeIds": [][m
+[31m-    }[m
+[31m-  },[m
+   {[m
+     "id": "R-KHUA_1",[m
+     "form": "хуабагъэ",[m
+[36m@@ -17088,7 +16015,9 @@[m
+     },[m
+     "wordFamily": {[m
+       "id": "WF-SHCHIY_2",[m
+[31m-      "lexemeIds": [][m
+[32m+[m[32m      "lexemeIds": [[m
+[32m+[m[32m        "KAV-ЩӀЫӀАГЪЭ"[m
+[32m+[m[32m      ][m
+     }[m
+   },[m
+   {[m
+[36m@@ -17100,43 +16029,9 @@[m
+     },[m
+     "wordFamily": {[m
+       "id": "WF-MASHCH_1",[m
+[31m-      "lexemeIds": [][m
+[31m-    }[m
+[31m-  },[m
+[31m-  {[m
+[31m-    "id": "R-KUE_2",[m
+[31m-    "form": "куэдагъэ",[m
+[31m-    "primaryMeaning": null,[m
+[31m-    "productivity": {[m
+[31m-      "corpusFrequency": 32[m
+[31m-    },[m
+[31m-    "wordFamily": {[m
+[31m-      "id": "WF-KUE_2",[m
+[31m-      "lexemeIds": [][m
+[31m-    }[m
+[31m-  },[m
+[31m-  {[m
+[31m-    "id": "R-INA",[m
+[31m-    "form": "инагъэ",[m
+[31m-    "primaryMeaning": null,[m
+[31m-    "productivity": {[m
+[31m-      "corpusFrequency": 30[m
+[31m-    },[m
+[31m-    "wordFamily": {[m
+[31m-      "id": "WF-INA",[m
+[31m-      "lexemeIds": [][m
+[31m-    }[m
+[31m-  },[m
+[31m-  {[m
+[31m-    "id": "R-TSIY",[m
+[31m-    "form": "цӀыкӀуагъэ",[m
+[31m-    "primaryMeaning": null,[m
+[31m-    "productivity": {[m
+[31m-      "corpusFrequency": 28[m
+[31m-    },[m
+[31m-    "wordFamily": {[m
+[31m-      "id": "WF-TSIY",[m
+[31m-      "lexemeIds": [][m
+[32m+[m[32m      "lexemeIds": [[m
+[32m+[m[32m        "KAV-МАЩӀАГЪЭ"[m
+[32m+[m[32m      ][m
+     }[m
+   },[m
+   {[m
+[36m@@ -17148,55 +16043,9 @@[m
+     },[m
+     "wordFamily": {[m
+       "id": "WF-KIY",[m
+[31m-      "lexemeIds": [][m
+[31m-    }[m
+[31m-  },[m
+[31m-  {[m
+[31m-    "id": "R-KIE_1",[m
+[31m-    "form": "кӀэщӀагъэ",[m
+[31m-    "primaryMeaning": null,[m
+[31m-    "productivity": {[m
+[31m-      "corpusFrequency": 22[m
+[31m-    },[m
+[31m-    "wordFamily": {[m
+[31m-      "id": "WF-KIE_1",[m
+[31m-      "lexemeIds": [][m
+[31m-    }[m
+[31m-  },[m
+[31m-  {[m
+[31m-    "id": "R-BAYA",[m
+[31m-    "form": "баягъэ",[m
+[31m-    "primaryMeaning": null,[m
+[31m-    "productivity": {[m
+[31m-      "corpusFrequency": 20[m
+[31m-    },[m
+[31m-    "wordFamily": {[m
+[31m-      "id": "WF-BAYA",[m
+[31m-      "lexemeIds": [][m
+[31m-    }[m
+[31m-  },[m
+[31m-  {[m
+[31m-    "id": "R-TKH_3",[m
+[31m-    "form": "тхьэмыщкӀагъэ",[m
+[31m-    "primaryMeaning": null,[m
+[31m-    "productivity": {[m
+[31m-      "corpusFrequency": 18[m
+[31m-    },[m
+[31m-    "wordFamily": {[m
+[31m-      "id": "WF-TKH_3",[m
+[31m-      "lexemeIds": [][m
+[31m-    }[m
+[31m-  },[m
+[31m-  {[m
+[31m-    "id": "R-PEZH_1",[m
+[31m-    "form": "пэжагъэншэ",[m
+[31m-    "primaryMeaning": null,[m
+[31m-    "productivity": {[m
+[31m-      "corpusFrequency": 15[m
+[31m-    },[m
+[31m-    "wordFamily": {[m
+[31m-      "id": "WF-PEZH_1",[m
+[31m-      "lexemeIds": [][m
+[32m+[m[32m      "lexemeIds": [[m
+[32m+[m[32m        "KAV-КӀЫХЬАГЪЭ"[m
+[32m+[m[32m      ][m
+     }[m
+   },[m
+   {[m
+[36m@@ -17243,7 +16092,6 @@[m
+         "L-CORPUS-04362",[m
+         "L-CORPUS-04804",[m
+         "L-CORPUS-04809",[m
+[31m-        "L-CORPUS2-02158",[m
+         "L-CORPUS2-03339",[m
+         "L-CORPUS2-09297",[m
+         "L-KBD-01042",[m
+[36m@@ -17279,7 +16127,14 @@[m
+     },[m
+     "wordFamily": {[m
+       "id": "WF-GUP",[m
+[31m-      "lexemeIds": [][m
+[32m+[m[32m      "lexemeIds": [[m
+[32m+[m[32m        "KAV-КЪЭГУПСЫСАКӀУЭ",[m
+[32m+[m[32m        "KAV-ХЭГУПСЫСЫХЬА",[m
+[32m+[m[32m        "KAV-ХЭГУПСЫСЫХЬРЕЙ",[m
+[32m+[m[32m        "KAV-ХЭГУПСЫСЫХЬЫРЕЙ",[m
+[32m+[m[32m        "L-CORPUS-00124",[m
+[32m+[m[32m        "L-CORPUS-03307"[m
+[32m+[m[32m      ][m
+     }[m
+   },[m
+   {[m
+[36m@@ -17332,20 +16187,13 @@[m
+         "L-CORPUS2-00795",[m
+         "L-CORPUS2-01300",[m
+         "L-CORPUS2-02040",[m
+[31m-        "L-CORPUS2-02923",[m
+         "L-CORPUS2-04991",[m
+[31m-        "L-CORPUS2-05073",[m
+[31m-        "L-CORPUS2-05336",[m
+[31m-        "L-CORPUS2-05720",[m
+         "L-CORPUS2-06476",[m
+         "L-CORPUS2-06598",[m
+[31m-        "L-CORPUS2-06753",[m
+         "L-CORPUS2-07159",[m
+[31m-        "L-CORPUS2-07262",[m
+         "L-CORPUS2-07515",[m
+         "L-CORPUS2-07589",[m
+         "L-CORPUS2-07651",[m
+[31m-        "L-CORPUS2-07701",[m
+         "L-CORPUS2-07845",[m
+         "L-CORPUS2-08146",[m
+         "L-CORPUS2-08354",[m
+[36m@@ -17399,7 +16247,6 @@[m
+         "L-VERIFIED-02485",[m
+         "L-VERIFIED-02570",[m
+         "L-VERIFIED-02653",[m
+[31m-        "L-YAGUPSESAN",[m
+         "L-ZYGHEPSEKHUGHE"[m
+       ][m
+     }[m
+[36m@@ -17422,7 +16269,6 @@[m
+         "L-CORPUS2-03429",[m
+         "L-CORPUS2-05150",[m
+         "L-CORPUS2-07792",[m
+[31m-        "L-CORPUS2-09096",[m
+         "L-D0B3D18AD18D-2",[m
+         "L-D0BAD18AD18D-4",[m
+         "L-D183D0B2D18B",[m
+[36m@@ -17447,7 +16293,6 @@[m
+         "L-CORPUS2-02133",[m
+         "L-CORPUS2-04894",[m
+         "L-CORPUS2-07784",[m
+[31m-        "L-D0B4D18DD380",[m
+         "L-KBD-00806",[m
+         "L-KBD-00995",[m
+         "L-KBD-00996",[m
+[36m@@ -17461,18 +16306,6 @@[m
+       ][m
+     }[m
+   },[m
+[31m-  {[m
+[31m-    "id": "R-UPCH",[m
+[31m-    "form": "упчӀэ",[m
+[31m-    "primaryMeaning": null,[m
+[31m-    "productivity": {[m
+[31m-      "corpusFrequency": 12800[m
+[31m-    },[m
+[31m-    "wordFamily": {[m
+[31m-      "id": "WF-UPCH",[m
+[31m-      "lexemeIds": [][m
+[31m-    }[m
+[31m-  },[m
+   {[m
+     "id": "R-DZHE_1",[m
+     "form": "джэгу",[m
+[36m@@ -17493,7 +16326,6 @@[m
+         "L-KBD-00906",[m
+         "L-KBD-00907",[m
+         "L-KBD-00908",[m
+[31m-        "L-PROMPT-00038",[m
+         "L-VERIFIED-00030"[m
+       ][m
+     }[m
+[36m@@ -17537,18 +16369,6 @@[m
+       ][m
+     }[m
+   },[m
+[31m-  {[m
+[31m-    "id": "R-TKH_4",[m
+[31m-    "form": "тхьэмадэ",[m
+[31m-    "primaryMeaning": null,[m
+[31m-    "productivity": {[m
+[31m-      "corpusFrequency": 10800[m
+[31m-    },[m
+[31m-    "wordFamily": {[m
+[31m-      "id": "WF-TKH_4",[m
+[31m-      "lexemeIds": [][m
+[31m-    }[m
+[31m-  },[m
+   {[m
+     "id": "R-KA",[m
+     "form": "къару",[m
+[36m@@ -17561,11 +16381,8 @@[m
+       "lexemeIds": [[m
+         "L-CORPUS-00476",[m
+         "L-CORPUS-01312",[m
+[31m-        "L-CORPUS2-00249",[m
+         "L-D0B8D0BAD18A",[m
+         "L-D0B8D183D0B6",[m
+[31m-        "L-D0B8D183D0B6-2",[m
+[31m-        "L-K1EB",[m
+         "L-K1ERT1OF",[m
+         "L-KBD-02114",[m
+         "L-KBD-02302",[m
+[36m@@ -17655,7 +16472,6 @@[m
+         "L-CORPUS-02775",[m
+         "L-CORPUS-03453",[m
+         "L-CORPUS-03814",[m
+[31m-        "L-CORPUS2-04138",[m
+         "L-D0B1D0B5D0BB",[m
+         "L-KBD-00365",[m
+         "L-KBD-03030",[m
+[36m@@ -17690,36 +16506,20 @@[m
+         "L-CORPUS2-03298",[m
+         "L-CORPUS2-03300",[m
+         "L-CORPUS2-05495",[m
+[31m-        "L-CORPUS2-06303",[m
+         "L-CORPUS2-06798",[m
+         "L-CORPUS2-07387",[m
+[31m-        "L-CORPUS2-07842",[m
+[31m-        "L-CORPUS2-08829",[m
+         "L-CORPUS2-09378",[m
+         "L-KBD-01419",[m
+         "L-KBD-01421",[m
+         "L-KBD-01422",[m
+         "L-KBD-01602",[m
+         "L-KBD-04946",[m
+[31m-        "L-PROMPT-00035",[m
+         "L-VERIFIED-00917",[m
+         "L-VERIFIED-00938",[m
+         "L-VERIFIED-02004"[m
+       ][m
+     }[m
+   },[m
+[31m-  {[m
+[31m-    "id": "R-PAS",[m
+[31m-    "form": "пастэ",[m
+[31m-    "primaryMeaning": null,[m
+[31m-    "productivity": {[m
+[31m-      "corpusFrequency": 7900[m
+[31m-    },[m
+[31m-    "wordFamily": {[m
+[31m-      "id": "WF-PAS",[m
+[31m-      "lexemeIds": [][m
+[31m-    }[m
+[31m-  },[m
+   {[m
+     "id": "R-ABD",[m
+     "form": "абдж",[m
+[36m@@ -17752,18 +16552,6 @@[m
+       ][m
+     }[m
+   },[m
+[31m-  {[m
+[31m-    "id": "R-GUB",[m
+[31m-    "form": "губгъу",[m
+[31m-    "primaryMeaning": null,[m
+[31m-    "productivity": {[m
+[31m-      "corpusFrequency": 6000[m
+[31m-    },[m
+[31m-    "wordFamily": {[m
+[31m-      "id": "WF-GUB",[m
+[31m-      "lexemeIds": [][m
+[31m-    }[m
+[31m-  },[m
+   {[m
+     "id": "R-DYG",[m
+     "form": "дыгъуа",[m
+[36m@@ -17773,7 +16561,10 @@[m
+     },[m
+     "wordFamily": {[m
+       "id": "WF-DYG",[m
+[31m-      "lexemeIds": [][m
+[32m+[m[32m      "lexemeIds": [[m
+[32m+[m[32m        "KAV-ДЫГЪУАСЭНЭХЪЫПЭ",[m
+[32m+[m[32m        "KAV-КЪЭДЫГЪУА"[m
+[32m+[m[32m      ][m
+     }[m
+   },[m
+   {[m
+[36m@@ -17824,7 +16615,9 @@[m
+     },[m
+     "wordFamily": {[m
+       "id": "WF-FOSH",[m
+[31m-      "lexemeIds": [][m
+[32m+[m[32m      "lexemeIds": [[m
+[32m+[m[32m        "KAV-ФОШЫГЪУЛЪЭ"[m
+[32m+[m[32m      ][m
+     }[m
+   },[m
+   {[m
+[36m@@ -17871,20 +16664,6 @@[m
+       ][m
+     }[m
+   },[m
+[31m-  {[m
+[31m-    "id": "R-KIY_1",[m
+[31m-    "form": "кӀынфӀ",[m
+[31m-    "primaryMeaning": null,[m
+[31m-    "productivity": {[m
+[31m-      "corpusFrequency": 3500[m
+[31m-    },[m
+[31m-    "wordFamily": {[m
+[31m-      "id": "WF-KIY_1",[m
+[31m-      "lexemeIds": [[m
+[31m-        "L-COLOR-DARK_COLOR"[m
+[31m-      ][m
+[31m-    }[m
+[31m-  },[m
+   {[m
+     "id": "R-KHEKH",[m
+     "form": "хэха",[m
+[36m@@ -17925,7 +16704,12 @@[m
+     },[m
+     "wordFamily": {[m
+       "id": "WF-SHYN",[m
+[31m-      "lexemeIds": [][m
+[32m+[m[32m      "lexemeIds": [[m
+[32m+[m[32m        "KAV-ШЫНАГЪУЭЖЬ",[m
+[32m+[m[32m        "KAV-ШЫНАГЪУЭНШАГЪЭ",[m
+[32m+[m[32m        "KAV-ШЫНАГЪУЭЩЭ",[m
+[32m+[m[32m        "KAV-ШЫНАГЪЭНШЭ"[m
+[32m+[m[32m      ][m
+     }[m
+   },[m
+   {[m
+[36m@@ -17960,18 +16744,6 @@[m
+       ][m
+     }[m
+   },[m
+[31m-  {[m
+[31m-    "id": "R-PSE_5",[m
+[31m-    "form": "псэбэп",[m
+[31m-    "primaryMeaning": null,[m
+[31m-    "productivity": {[m
+[31m-      "corpusFrequency": 2450[m
+[31m-    },[m
+[31m-    "wordFamily": {[m
+[31m-      "id": "WF-PSE_5",[m
+[31m-      "lexemeIds": [][m
+[31m-    }[m
+[31m-  },[m
+   {[m
+     "id": "R-KHE_2",[m
+     "form": "хьэлэл",[m
+[36m@@ -18047,30 +16819,6 @@[m
+       ][m
+     }[m
+   },[m
+[31m-  {[m
+[31m-    "id": "R-SHCHIE",[m
+[31m-    "form": "щӀэху",[m
+[31m-    "primaryMeaning": null,[m
+[31m-    "productivity": {[m
+[31m-      "corpusFrequency": 1900[m
+[31m-    },[m
+[31m-    "wordFamily": {[m
+[31m-      "id": "WF-SHCHIE",[m
+[31m-      "lexemeIds": [][m
+[31m-    }[m
+[31m-  },[m
+[31m-  {[m
+[31m-    "id": "R-NEG",[m
+[31m-    "form": "нэгъуэ",[m
+[31m-    "primaryMeaning": null,[m
+[31m-    "productivity": {[m
+[31m-      "corpusFrequency": 1850[m
+[31m-    },[m
+[31m-    "wordFamily": {[m
+[31m-      "id": "WF-NEG",[m
+[31m-      "lexemeIds": [][m
+[31m-    }[m
+[31m-  },[m
+   {[m
+     "id": "R-KA_1",[m
+     "form": "къалэ",[m
+[36m@@ -18087,18 +16835,6 @@[m
+       ][m
+     }[m
+   },[m
+[31m-  {[m
+[31m-    "id": "R-UNE_1",[m
+[31m-    "form": "унэщӀ",[m
+[31m-    "primaryMeaning": null,[m
+[31m-    "productivity": {[m
+[31m-      "corpusFrequency": 1650[m
+[31m-    },[m
+[31m-    "wordFamily": {[m
+[31m-      "id": "WF-UNE_1",[m
+[31m-      "lexemeIds": [][m
+[31m-    }[m
+[31m-  },[m
+   {[m
+     "id": "R-ZEKH",[m
+     "form": "зэхуэз",[m
+[36m@@ -18156,18 +16892,6 @@[m
+       ][m
+     }[m
+   },[m
+[31m-  {[m
+[31m-    "id": "R-SHCHIE_1",[m
+[31m-    "form": "щӀэщӀ",[m
+[31m-    "primaryMeaning": null,[m
+[31m-    "productivity": {[m
+[31m-      "corpusFrequency": 1200[m
+[31m-    },[m
+[31m-    "wordFamily": {[m
+[31m-      "id": "WF-SHCHIE_1",[m
+[31m-      "lexemeIds": [][m
+[31m-    }[m
+[31m-  },[m
+   {[m
+     "id": "R-ZEG",[m
+     "form": "зэгуэр",[m
+[36m@@ -18230,30 +16954,6 @@[m
+       ][m
+     }[m
+   },[m
+[31m-  {[m
+[31m-    "id": "R-MEZ_1",[m
+[31m-    "form": "мэзлъэ",[m
+[31m-    "primaryMeaning": null,[m
+[31m-    "productivity": {[m
+[31m-      "corpusFrequency": 700[m
+[31m-    },[m
+[31m-    "wordFamily": {[m
+[31m-      "id": "WF-MEZ_1",[m
+[31m-      "lexemeIds": [][m
+[31m-    }[m
+[31m-  },[m
+[31m-  {[m
+[31m-    "id": "R-BZH_1",[m
+[31m-    "form": "бжьэщӀ",[m
+[31m-    "primaryMeaning": null,[m
+[31m-    "productivity": {[m
+[31m-      "corpusFrequency": 650[m
+[31m-    },[m
+[31m-    "wordFamily": {[m
+[31m-      "id": "WF-BZH_1",[m
+[31m-      "lexemeIds": [][m
+[31m-    }[m
+[31m-  },[m
+   {[m
+     "id": "R-MAZ",[m
+     "form": "мазэ",[m
+[36m@@ -18270,19 +16970,7 @@[m
+         "L-MAZAE",[m
+         "L-MAZE",[m
+         "L-VERIFIED-01968"[m
+[31m-      ][m
+[31m-    }[m
+[31m-  },[m
+[31m-  {[m
+[31m-    "id": "R-VAG",[m
+[31m-    "form": "вагъуэ",[m
+[31m-    "primaryMeaning": null,[m
+[31m-    "productivity": {[m
+[31m-      "corpusFrequency": 450[m
+[31m-    },[m
+[31m-    "wordFamily": {[m
+[31m-      "id": "WF-VAG",[m
+[31m-      "lexemeIds": [][m
+[32m+[m[32m      ][m
+     }[m
+   },[m
+   {[m
+[36m@@ -18410,18 +17098,6 @@[m
+       ][m
+     }[m
+   },[m
+[31m-  {[m
+[31m-    "id": "R-DEG",[m
+[31m-    "form": "дэгон",[m
+[31m-    "primaryMeaning": null,[m
+[31m-    "productivity": {[m
+[31m-      "corpusFrequency": 1600[m
+[31m-    },[m
+[31m-    "wordFamily": {[m
+[31m-      "id": "WF-DEG",[m
+[31m-      "lexemeIds": [][m
+[31m-    }[m
+[31m-  },[m
+   {[m
+     "id": "R-SOV",[m
+     "form": "совет",[m
+[36m@@ -18511,13 +17187,10 @@[m
+         "L-CORPUS2-04020",[m
+         "L-CORPUS2-05215",[m
+         "L-CORPUS2-05239",[m
+[31m-        "L-CORPUS2-05379",[m
+         "L-CORPUS2-05404",[m
+         "L-CORPUS2-07268",[m
+         "L-CORPUS2-07839",[m
+[31m-        "L-CORPUS2-08483",[m
+         "L-CORPUS2-08708",[m
+[31m-        "L-CORPUS2-09288",[m
+         "L-D0B1D18DD0B4",[m
+         "L-D0B4D0B7D0B0",[m
+         "L-D0B4D0B7D18D",[m
+[36m@@ -18534,7 +17207,6 @@[m
+         "L-KBD-05150",[m
+         "L-KBD-05152",[m
+         "L-KBD-05153",[m
+[31m-        "L-KBD-05157",[m
+         "L-KBD-05763",[m
+         "L-KBD-05764",[m
+         "L-NABDZE",[m
+[36m@@ -18700,7 +17372,9 @@[m
+     },[m
+     "wordFamily": {[m
+       "id": "WF-IUZH",[m
+[31m-      "lexemeIds": [][m
+[32m+[m[32m      "lexemeIds": [[m
+[32m+[m[32m        "KAV-ИУЖЬЫЖКӀЭ"[m
+[32m+[m[32m      ][m
+     }[m
+   },[m
+   {[m
+[36m@@ -18737,18 +17411,6 @@[m
+       ][m
+     }[m
+   },[m
+[31m-  {[m
+[31m-    "id": "R-SHKH",[m
+[31m-    "form": "шъхьэ",[m
+[31m-    "primaryMeaning": null,[m
+[31m-    "productivity": {[m
+[31m-      "corpusFrequency": 600[m
+[31m-    },[m
+[31m-    "wordFamily": {[m
+[31m-      "id": "WF-SHKH",[m
+[31m-      "lexemeIds": [][m
+[31m-    }[m
+[31m-  },[m
+   {[m
+     "id": "R-KE_2",[m
+     "form": "къэхь",[m
+[36m@@ -18769,26 +17431,6 @@[m
+       ][m
+     }[m
+   },[m
+[31m-  {[m
+[31m-    "id": "R-SHCHIE_2",[m
+[31m-    "form": "щӀэхы",[m
+[31m-    "primaryMeaning": null,[m
+[31m-    "productivity": {[m
+[31m-      "corpusFrequency": 300[m
+[31m-    },[m
+[31m-    "wordFamily": {[m
+[31m-      "id": "WF-SHCHIE_2",[m
+[31m-      "lexemeIds": [][m
+[31m-    }[m
+[31m-  },[m
+[31m-  {[m
+[31m-    "id": "R-GHE",[m
+[31m-    "form": null,[m
+[31m-    "ipa": null,[m
+[31m-    "primaryMeaning": null,[m
+[31m-    "semanticDomains": [],[m
+[31m-    "source": "cyr-to-lat-2026-10-12"[m
+[31m-  },[m
+   {[m
+     "id": "R-DE",[m
+     "form": "дэ",[m
+[36m@@ -18829,78 +17471,6 @@[m
+       ][m
+     }[m
+   },[m
+[31m-  {[m
+[31m-    "id": "R-ZHA",[m
+[31m-    "form": null,[m
+[31m-    "ipa": null,[m
+[31m-    "primaryMeaning": null,[m
+[31m-    "semanticDomains": [],[m
+[31m-    "source": "cyr-to-lat-2026-10-12"[m
+[31m-  },[m
+[31m-  {[m
+[31m-    "id": "R-ZY",[m
+[31m-    "form": null,[m
+[31m-    "ipa": null,[m
+[31m-    "primaryMeaning": null,[m
+[31m-    "semanticDomains": [],[m
+[31m-    "source": "cyr-to-lat-2026-10-12"[m
+[31m-  },[m
+[31m-  {[m
+[31m-    "id": "R-MA",[m
+[31m-    "form": null,[m
+[31m-    "ipa": null,[m
+[31m-    "primaryMeaning": null,[m
+[31m-    "semanticDomains": [],[m
+[31m-    "source": "cyr-to-lat-2026-10-12"[m
+[31m-  },[m
+[31m-  {[m
+[31m-    "id": "R-MAMQUT",[m
+[31m-    "form": null,[m
+[31m-    "ipa": null,[m
+[31m-    "primaryMeaning": null,[m
+[31m-    "semanticDomains": [],[m
+[31m-    "source": "cyr-to-lat-2026-10-12"[m
+[31m-  },[m
+[31m-  {[m
+[31m-    "id": "R-PASE",[m
+[31m-    "form": null,[m
+[31m-    "ipa": null,[m
+[31m-    "primaryMeaning": null,[m
+[31m-    "semanticDomains": [],[m
+[31m-    "source": "cyr-to-lat-2026-10-12"[m
+[31m-  },[m
+[31m-  {[m
+[31m-    "id": "R-TKHU",[m
+[31m-    "form": null,[m
+[31m-    "ipa": null,[m
+[31m-    "primaryMeaning": null,[m
+[31m-    "semanticDomains": [],[m
+[31m-    "source": "cyr-to-lat-2026-10-12"[m
+[31m-  },[m
+[31m-  {[m
+[31m-    "id": "R-T1U",[m
+[31m-    "form": null,[m
+[31m-    "ipa": null,[m
+[31m-    "primaryMeaning": null,[m
+[31m-    "semanticDomains": [],[m
+[31m-    "source": "cyr-to-lat-2026-10-12"[m
+[31m-  },[m
+[31m-  {[m
+[31m-    "id": "R-UDZ",[m
+[31m-    "form": null,[m
+[31m-    "ipa": null,[m
+[31m-    "primaryMeaning": null,[m
+[31m-    "semanticDomains": [],[m
+[31m-    "source": "cyr-to-lat-2026-10-12"[m
+[31m-  },[m
+[31m-  {[m
+[31m-    "id": "R-UZ",[m
+[31m-    "form": null,[m
+[31m-    "ipa": null,[m
+[31m-    "primaryMeaning": null,[m
+[31m-    "semanticDomains": [],[m
+[31m-    "source": "cyr-to-lat-2026-10-12"[m
+[31m-  },[m
+   {[m
+     "id": "R-A",[m
+     "form": "Ӏэ",[m
+[36m@@ -18911,60 +17481,26 @@[m
+     "wordFamily": {[m
+       "lexemeIds": [[m
+         "HUV3-IАДЭ",[m
+[31m-        "HUV3-IЭБАГЪУЭ",[m
+[31m-        "HUV3-IЭБАЙ",[m
+[31m-        "HUV3-IЭБЭ-ЛЪЭБЭ",[m
+[31m-        "HUV3-IЭБЭТ",[m
+[31m-        "HUV3-IЭВЭЛЬ-ЭВЭЛЬ",[m
+[31m-        "HUV3-IЭГУАЖЭ",[m
+         "HUV3-IЭГУАУЭ",[m
+[31m-        "HUV3-IЭГУЛЪ",[m
+[31m-        "HUV3-IЭГУПЕЛ",[m
+[31m-        "HUV3-IЭГУЩIЭ",[m
+         "HUV3-IЭДАКЪЭ",[m
+[31m-        "HUV3-IЭДАКЪЭЖЬ",[m
+[31m-        "HUV3-IЭДАЛЭ",[m
+[31m-        "HUV3-IЭДЗЭ",[m
+         "HUV3-IЭДЭ",[m
+         "HUV3-IЭДЭБ",[m
+         "HUV3-IЭДЭБЫНШАГЪЭ",[m
+[31m-        "HUV3-IЭДЭПКЪ",[m
+         "HUV3-IЭЖЬЭ",[m
+         "HUV3-IЭЗАГЪЭ",[m
+[31m-        "HUV3-IЭЗЫНЫГЪЭ",[m
+         "HUV3-IЭЗЭНЫГЪЭ",[m
+[31m-        "HUV3-IЭИЖЬ",[m
+[31m-        "HUV3-IЭИКЪ",[m
+[31m-        "HUV3-IЭКIУЭЛIАКIУЭ",[m
+         "HUV3-IЭКIЭ",[m
+[31m-        "HUV3-IЭКIЭХУН",[m
+[31m-        "HUV3-IЭКIЭЩIЫН",[m
+         "HUV3-IЭМАЛ",[m
+[31m-        "HUV3-IЭМАЛЩIЭ",[m
+         "HUV3-IЭМЫЩIЭ",[m
+[31m-        "HUV3-IЭНАПIЭ",[m
+         "HUV3-IЭПЛIЭ",[m
+[31m-        "HUV3-IЭПОПIЭ",[m
+[31m-        "HUV3-IЭППIЭН",[m
+         "HUV3-IЭПЫIЭГЪУ",[m
+[31m-        "HUV3-IЭПЭБАЙ",[m
+[31m-        "HUV3-IЭПЭЗАПЭ",[m
+[31m-        "HUV3-IЭПЭИЖИ",[m
+[31m-        "HUV3-IЭПЭЛЪАЩЭ",[m
+         "HUV3-IЭПЭПIЭ",[m
+[31m-        "HUV3-IЭПЭРАПЭ",[m
+         "HUV3-IЭРАМ",[m
+         "HUV3-IЭРАМЭ",[m
+[31m-        "HUV3-IЭРЫДЗ",[m
+[31m-        "HUV3-IЭРЫЛАЖЬЭ",[m
+         "HUV3-IЭРЫСЭ",[m
+         "HUV3-IЭТЭ",[m
+[31m-        "HUV3-IЭТЭН",[m
+[31m-        "HUV3-IЭТЭНЫГЪЭ",[m
+         "HUV3-IЭЩХЬЭ",[m
+[31m-        "HUV3-IЭЩХЬЭЗЭГЪЭ",[m
+         "HUV3-IЭЩЭ",[m
+[31m-        "HUV3-IЭЩЭЗЭЩ",[m
+         "KAV-ӀЭ-ЛЪАКЪУЭ",[m
+         "KAV-ӀЭБГЪУ",[m
+         "KAV-ӀЭБЖЬАНАПӀЭ",[m
+[36m@@ -19242,9 +17778,7 @@[m
+         "KAV-ӀЭӀУС",[m
+         "KAV-ӀЭӀЭТ",[m
+         "L-1E-DELHEN",[m
+[31m-        "L-1E-SHCHYHuen",[m
+         "L-1EBLE",[m
+[31m-        "L-1EBZYGE",[m
+         "L-1EF1",[m
+         "L-1EFRAK1E",[m
+         "L-1EMAL",[m
+[36m@@ -19257,7 +17791,6 @@[m
+         "L-BALYDZHE",[m
+         "L-C1E",[m
+         "L-COLOR-BLUE",[m
+[31m-        "L-CONCEPT-001",[m
+         "L-CORPUS-00023",[m
+         "L-CORPUS-00047",[m
+         "L-CORPUS-00103",[m
+[36m@@ -19329,7 +17862,6 @@[m
+         "L-CORPUS2-01967",[m
+         "L-CORPUS2-02010",[m
+         "L-CORPUS2-02353",[m
+[31m-        "L-CORPUS2-02472",[m
+         "L-CORPUS2-02489",[m
+         "L-CORPUS2-02610",[m
+         "L-CORPUS2-03099",[m
+[36m@@ -19338,50 +17870,33 @@[m
+         "L-CORPUS2-03666",[m
+         "L-CORPUS2-03753",[m
+         "L-CORPUS2-03839",[m
+[31m-        "L-CORPUS2-04328",[m
+[31m-        "L-CORPUS2-04372",[m
+[31m-        "L-CORPUS2-04384",[m
+         "L-CORPUS2-04387",[m
+         "L-CORPUS2-04841",[m
+         "L-CORPUS2-04877",[m
+         "L-CORPUS2-05065",[m
+[31m-        "L-CORPUS2-05178",[m
+[31m-        "L-CORPUS2-05198",[m
+         "L-CORPUS2-05598",[m
+         "L-CORPUS2-05908",[m
+         "L-CORPUS2-05943",[m
+         "L-CORPUS2-06030",[m
+[31m-        "L-CORPUS2-06140",[m
+         "L-CORPUS2-06230",[m
+         "L-CORPUS2-06617",[m
+[31m-        "L-CORPUS2-06754",[m
+[31m-        "L-CORPUS2-06758",[m
+         "L-CORPUS2-06963",[m
+         "L-CORPUS2-06978",[m
+[31m-        "L-CORPUS2-07105",[m
+[31m-        "L-CORPUS2-07227",[m
+         "L-CORPUS2-07291",[m
+[31m-        "L-CORPUS2-07539",[m
+         "L-CORPUS2-07573",[m
+         "L-CORPUS2-07682",[m
+[31m-        "L-CORPUS2-07821",[m
+         "L-CORPUS2-08074",[m
+         "L-CORPUS2-08330",[m
+         "L-CORPUS2-08471",[m
+         "L-CORPUS2-08478",[m
+[31m-        "L-CORPUS2-08488",[m
+         "L-CORPUS2-08869",[m
+[31m-        "L-CORPUS2-08922",[m
+[31m-        "L-CORPUS2-09026",[m
+         "L-CORPUS2-09085",[m
+         "L-CORPUS2-09210",[m
+[31m-        "L-CORPUS2-09219",[m
+         "L-CORPUS2-09270",[m
+         "L-CORPUS2-09347",[m
+         "L-CORPUS2-09570",[m
+         "L-CORPUS2-09633",[m
+         "L-CORPUS2-09861",[m
+[31m-        "L-CORPUS2-09901",[m
+         "L-CORPUS2-09946",[m
+         "L-D091D0B0D0BC",[m
+         "L-D093D183D184",[m
+[36m@@ -19392,11 +17907,8 @@[m
+         "L-D0B4D18DD380-2",[m
+         "L-D0BAD18AD183-8",[m
+         "L-D0BAD18AD18D-8",[m
+[31m-        "L-D0BDD0B0D0BF",[m
+         "L-D0BED180D18D",[m
+         "L-D183D0BAD380",[m
+[31m-        "L-D380D18DD0BD",[m
+[31m-        "L-D380D18DD0BF",[m
+         "L-D380D18DD180",[m
+         "L-DAKYQE",[m
+         "L-DELHYN",[m
+[36m@@ -20242,19 +18754,13 @@[m
+         "L-KBD-05578",[m
+         "L-KBD-05685",[m
+         "L-KET1ESYN",[m
+[31m-        "L-KUAPEPAPC1E",[m
+         "L-L1ENYGHE",[m
+[31m-        "L-MORPHO-БГЪЭЩӀЭРАЩ",[m
+         "L-MORPHO-ШКӀЭ",[m
+         "L-MY1ERYSEY",[m
+         "L-NAP1E",[m
+         "L-PROMPT-00007",[m
+         "L-PROMPT-00010",[m
+         "L-PROMPT-00029",[m
+[31m-        "L-PROMPT-00030",[m
+[31m-        "L-PROMPT-00031",[m
+[31m-        "L-PROMPT-00032",[m
+[31m-        "L-PROMPT-00039",[m
+         "L-PROMPT-00053",[m
+         "L-PSH1ANTE",[m
+         "L-SHXAP1E",[m
+[36m@@ -20282,7 +18788,6 @@[m
+     "wordFamily": {[m
+       "lexemeIds": [[m
+         "L-ADE",[m
+[31m-        "L-ADENAP1AS",[m
+         "L-CORPUS-00067",[m
+         "L-CORPUS-00147",[m
+         "L-CORPUS-02071",[m
+[36m@@ -20335,7 +18840,6 @@[m
+         "L-ANE",[m
+         "L-ANEDELHXU",[m
+         "L-ANEKYLHXU",[m
+[31m-        "L-ANENAP1AS",[m
+         "L-CORPUS-00055",[m
+         "L-CORPUS-00069",[m
+         "L-CORPUS-00354",[m
+[36m@@ -20386,11 +18890,9 @@[m
+         "L-CORPUS2-04684",[m
+         "L-CORPUS2-04912",[m
+         "L-CORPUS2-04938",[m
+[31m-        "L-CORPUS2-06174",[m
+         "L-CORPUS2-06223",[m
+         "L-CORPUS2-06587",[m
+         "L-CORPUS2-08720",[m
+[31m-        "L-CORPUS2-09186",[m
+         "L-D0BCD18DD185",[m
+         "L-KBD-00023",[m
+         "L-KBD-00024",[m
+[36m@@ -20421,20 +18923,11 @@[m
+         "L-VERIFIED-01870",[m
+         "L-VERIFIED-01984",[m
+         "L-VERIFIED-01996",[m
+[31m-        "L-VERIFIED-02291",[m
+[31m-        "L-YASHCHAN"[m
+[32m+[m[32m        "L-VERIFIED-02291"[m
+       ],[m
+       "id": "WF-ANA"[m
+     }[m
+   },[m
+[31m-  {[m
+[31m-    "id": "R-ANA2",[m
+[31m-    "form": "Ӏэнэ",[m
+[31m-    "ipa": null,[m
+[31m-    "primaryMeaning": null,[m
+[31m-    "semanticDomains": [],[m
+[31m-    "source": "latin-orphan-2026-10-12"[m
+[31m-  },[m
+   {[m
+     "id": "R-ARBA",[m
+     "form": "арба",[m
+[36m@@ -20574,14 +19067,9 @@[m
+         "L-CORPUS-04307",[m
+         "L-CORPUS-04563",[m
+         "L-CORPUS2-02118",[m
+[31m-        "L-CORPUS2-02685",[m
+[31m-        "L-CORPUS2-03090",[m
+[31m-        "L-CORPUS2-05704",[m
+         "L-CORPUS2-06224",[m
+         "L-CORPUS2-06423",[m
+         "L-CORPUS2-07812",[m
+[31m-        "L-CORPUS2-08115",[m
+[31m-        "L-CORPUS2-09703",[m
+         "L-D0B1D0B3D18A",[m
+         "L-VERIFIED-00195",[m
+         "L-VERIFIED-00416",[m
+[36m@@ -20637,12 +19125,8 @@[m
+         "L-CORPUS-04540",[m
+         "L-CORPUS-04815",[m
+         "L-CORPUS-04878",[m
+[31m-        "L-CORPUS2-01549",[m
+[31m-        "L-CORPUS2-03367",[m
+         "L-CORPUS2-05151",[m
+         "L-CORPUS2-07478",[m
+[31m-        "L-CORPUS2-08866",[m
+[31m-        "L-D183D0B1D0B3",[m
+         "L-KBD-00323",[m
+         "L-KBD-00325",[m
+         "L-KBD-00326",[m
+[36m@@ -20767,15 +19251,12 @@[m
+         "L-CORPUS2-02440",[m
+         "L-CORPUS2-02820",[m
+         "L-CORPUS2-03204",[m
+[31m-        "L-CORPUS2-05889",[m
+         "L-CORPUS2-06256",[m
+         "L-CORPUS2-06574",[m
+         "L-CORPUS2-07854",[m
+[31m-        "L-CORPUS2-08825",[m
+         "L-CORPUS2-09032",[m
+         "L-D0B0D0B4D18B",[m
+         "L-D0B0D0B4D18B-2",[m
+[31m-        "L-D0B3D18AD18D-6",[m
+         "L-D0B7D18BD0B3-3",[m
+         "L-EXTRA-00018",[m
+         "L-KBD-00005",[m
+[36m@@ -20896,19 +19377,6 @@[m
+       "id": "WF-BZHA"[m
+     }[m
+   },[m
+[31m-  {[m
+[31m-    "id": "R-BZHA2",[m
+[31m-    "form": "щхьэ",[m
+[31m-    "ipa": null,[m
+[31m-    "primaryMeaning": null,[m
+[31m-    "semanticDomains": [],[m
+[31m-    "source": "latin-orphan-2026-10-12",[m
+[31m-    "wordFamily": {[m
+[31m-      "lexemeIds": [][m
+[31m-    },[m
+[31m-    "mergedInto": "R-SHHA",[m
+[31m-    "notes": "Tashih: Kopyalanmis lexemeIds temizlendi -> R-SHHA"[m
+[31m-  },[m
+   {[m
+     "id": "R-BZHEN",[m
+     "form": "бжэн",[m
+[36m@@ -20995,7 +19463,6 @@[m
+         "L-CORPUS-03386",[m
+         "L-CORPUS-03450",[m
+         "L-CORPUS-03943",[m
+[31m-        "L-CORPUS2-00678",[m
+         "L-VERIFIED-00178",[m
+         "L-VERIFIED-00190",[m
+         "L-VERIFIED-00225",[m
+[36m@@ -21135,7 +19602,6 @@[m
+         "L-CORPUS-03912",[m
+         "L-CORPUS-04426",[m
+         "L-CORPUS-04883",[m
+[31m-        "L-D0B4D0B6D18D-2",[m
+         "L-D0B4D0B6D18D-3",[m
+         "L-DZHESH",[m
+         "L-KBD-00923",[m
+[36m@@ -21180,8 +19646,6 @@[m
+         "L-CORPUS-03873",[m
+         "L-CORPUS-04665",[m
+         "L-CORPUS2-02274",[m
+[31m-        "L-D0B4D18BD0B3",[m
+[31m-        "L-D0B4D18BD0B3-2",[m
+         "L-DYGHE",[m
+         "L-DYGHEGHEZ",[m
+         "L-DYGHUZHY",[m
+[36m@@ -21192,18 +19656,6 @@[m
+       "id": "WF-DYGHA"[m
+     }[m
+   },[m
+[31m-  {[m
+[31m-    "id": "R-DYGHUZH",[m
+[31m-    "form": "дыгъ",[m
+[31m-    "ipa": null,[m
+[31m-    "primaryMeaning": null,[m
+[31m-    "semanticDomains": [],[m
+[31m-    "source": "latin-orphan-2026-10-12",[m
+[31m-    "wordFamily": {[m
+[31m-      "lexemeIds": [][m
+[31m-    },[m
+[31m-    "notes": "Tashih: Hatali kopyalanmis lexemeIds temizlendi (farkli etimolojik kok)"[m
+[31m-  },[m
+   {[m
+     "id": "R-DYSHA",[m
+     "form": "дыщэ",[m
+[36m@@ -21404,11 +19856,8 @@[m
+         "L-CORPUS2-00888",[m
+         "L-CORPUS2-01076",[m
+         "L-CORPUS2-01178",[m
+[31m-        "L-CORPUS2-01326",[m
+         "L-CORPUS2-01481",[m
+[31m-        "L-CORPUS2-02112",[m
+         "L-CORPUS2-02468",[m
+[31m-        "L-CORPUS2-02693",[m
+         "L-CORPUS2-03647",[m
+         "L-CORPUS2-04209",[m
+         "L-CORPUS2-04519",[m
+[36m@@ -21419,11 +19868,8 @@[m
+         "L-CORPUS2-05636",[m
+         "L-CORPUS2-05808",[m
+         "L-CORPUS2-05876",[m
+[31m-        "L-CORPUS2-05971",[m
+         "L-CORPUS2-06007",[m
+[31m-        "L-CORPUS2-06910",[m
+         "L-CORPUS2-07521",[m
+[31m-        "L-CORPUS2-08110",[m
+         "L-CORPUS2-08343",[m
+         "L-CORPUS2-08725",[m
+         "L-CORPUS2-08762",[m
+[36m@@ -21431,7 +19877,6 @@[m
+         "L-CORPUS2-08841",[m
+         "L-CORPUS2-09132",[m
+         "L-CORPUS2-09149",[m
+[31m-        "L-CORPUS2-09231",[m
+         "L-CORPUS2-09316",[m
+         "L-CORPUS2-09588",[m
+         "L-CORPUS2-09635",[m
+[36m@@ -21457,7 +19902,6 @@[m
+         "L-KBD-01318",[m
+         "L-KBD-01319",[m
+         "L-KBD-01347",[m
+[31m-        "L-KBD-01670",[m
+         "L-KBD-01834",[m
+         "L-KBD-02131",[m
+         "L-KBD-02296",[m
+[36m@@ -21582,7 +20026,8 @@[m
+         "L-VERIFIED-02686",[m
+         "L-VERIFIED-02699"[m
+       ],[m
+[31m-      "id": "WF-FA"[m
+[32m+[m[32m      "id": "WF-FA",[m
+[32m+[m[32m      "notes": "фэ (deri, cilt). 'зэкуэфэуэн' (uyluk dövmek) buraya ait değil, temizlendi."[m
+     }[m
+   },[m
+   {[m
+[36m@@ -21596,14 +20041,11 @@[m
+       "lexemeIds": [[m
+         "L-COLOR-BLACK",[m
+         "L-CORPUS-02145",[m
+[31m-        "L-CORPUS2-00257",[m
+         "L-CORPUS2-00779",[m
+         "L-CORPUS2-00885",[m
+         "L-CORPUS2-01404",[m
+         "L-CORPUS2-05436",[m
+[31m-        "L-CORPUS2-06086",[m
+         "L-CORPUS2-06516",[m
+[31m-        "L-CORPUS2-06706",[m
+         "L-CORPUS2-07720",[m
+         "L-D184D380D18B",[m
+         "L-D184D38FD18B",[m
+[36m@@ -21623,14 +20065,6 @@[m
+     },[m
+     "mergedInto": "R-FIY"[m
+   },[m
+[31m-  {[m
+[31m-    "id": "R-FYTSA",[m
+[31m-    "form": "фӀыц",[m
+[31m-    "ipa": null,[m
+[31m-    "primaryMeaning": null,[m
+[31m-    "semanticDomains": [],[m
+[31m-    "source": "latin-orphan-2026-10-12"[m
+[31m-  },[m
+   {[m
+     "id": "R-GHWALH",[m
+     "form": "гъуэ",[m
+[36m@@ -21659,215 +20093,78 @@[m
+         "L-CORPUS-03756",[m
+         "L-CORPUS-03853",[m
+         "L-CORPUS-03937",[m
+[31m-        "L-CORPUS-04053",[m
+[31m-        "L-CORPUS-04175",[m
+[31m-        "L-CORPUS-04305",[m
+[31m-        "L-CORPUS-04351",[m
+[31m-        "L-CORPUS-04352",[m
+[31m-        "L-CORPUS-04737",[m
+[31m-        "L-CORPUS-04744",[m
+[31m-        "L-CORPUS-04803",[m
+[31m-        "L-CORPUS2-04219",[m
+[31m-        "L-CORPUS2-05801",[m
+[31m-        "L-CORPUS2-07813",[m
+[31m-        "L-D0B3D18AD183",[m
+[31m-        "L-D0B3D18AD183-4",[m
+[31m-        "L-DEGHUEZH",[m
+[31m-        "L-GHUELHYN",[m
+[31m-        "L-GHUEZHY",[m
+[31m-        "L-KBD-00640",[m
+[31m-        "L-KBD-00644",[m
+[31m-        "L-KBD-00652",[m
+[31m-        "L-KBD-00657",[m
+[31m-        "L-KBD-00658",[m
+[31m-        "L-KBD-00659",[m
+[31m-        "L-KBD-00660",[m
+[31m-        "L-KBD-00661",[m
+[31m-        "L-KBD-00663",[m
+[31m-        "L-KBD-00684",[m
+[31m-        "L-KBD-00685",[m
+[31m-        "L-KBD-00686",[m
+[31m-        "L-KBD-00689",[m
+[31m-        "L-KBD-00690",[m
+[31m-        "L-KBD-00691",[m
+[31m-        "L-KBD-00692",[m
+[31m-        "L-KBD-00693",[m
+[31m-        "L-KBD-00694",[m
+[31m-        "L-KBD-00695",[m
+[31m-        "L-KBD-00699",[m
+[31m-        "L-KBD-00703",[m
+[31m-        "L-KBD-00704",[m
+[31m-        "L-KBD-00705",[m
+[31m-        "L-KBD-00706",[m
+[31m-        "L-KBD-00707",[m
+[31m-        "L-VERIFIED-00045",[m
+[31m-        "L-VERIFIED-00121",[m
+[31m-        "L-VERIFIED-00251",[m
+[31m-        "L-VERIFIED-00252",[m
+[31m-        "L-VERIFIED-00470",[m
+[31m-        "L-VERIFIED-00823",[m
+[31m-        "L-VERIFIED-00898",[m
+[31m-        "L-VERIFIED-01570",[m
+[31m-        "L-VERIFIED-01920",[m
+[31m-        "L-VERIFIED-02018",[m
+[31m-        "L-VERIFIED-02043",[m
+[31m-        "L-VERIFIED-02208",[m
+[31m-        "L-VERIFIED-02407",[m
+[31m-        "L-VERIFIED-02424",[m
+[31m-        "L-VERIFIED-02571"[m
+[31m-      ],[m
+[31m-      "id": "WF-GHWALH"[m
+[31m-    }[m
+[31m-  },[m
+[31m-  {[m
+[31m-    "id": "R-GHWAZH",[m
+[31m-    "form": "гъуэ",[m
+[31m-    "ipa": null,[m
+[31m-    "primaryMeaning": null,[m
+[31m-    "semanticDomains": [],[m
+[31m-    "source": "latin-orphan-2026-10-12",[m
+[31m-    "wordFamily": {[m
+[31m-      "lexemeIds": [][m
+[31m-    },[m
+[31m-    "mergedInto": "R-GHWALH",[m
+[31m-    "notes": "Tashih: Kopyalanmis lexemeIds temizlendi -> R-GHWALH"[m
+[31m-  },[m
+[31m-  {[m
+[31m-    "id": "R-GHWSCH",[m
+[31m-    "form": "гъущ",[m
+[31m-    "ipa": null,[m
+[31m-    "primaryMeaning": null,[m
+[31m-    "semanticDomains": [],[m
+[31m-    "source": "latin-orphan-2026-10-12",[m
+[31m-    "wordFamily": {[m
+[31m-      "lexemeIds": [[m
+[31m-        "L-D0B3D18AD183-6",[m
+[31m-        "L-D0B3D18AD183-7",[m
+[31m-        "L-D0B3D18AD183-8"[m
+[31m-      ],[m
+[31m-      "id": "WF-GHWSCH"[m
+[31m-    }[m
+[31m-  },[m
+[31m-  {[m
+[31m-    "id": "R-GU-CART",[m
+[31m-    "form": "мафӀ",[m
+[31m-    "ipa": null,[m
+[31m-    "primaryMeaning": null,[m
+[31m-    "semanticDomains": [],[m
+[31m-    "source": "latin-orphan-2026-10-12",[m
+[31m-    "wordFamily": {[m
+[31m-      "lexemeIds": [][m
+[31m-    },[m
+[31m-    "notes": "Tashih: Hatali kopyalanmis lexemeIds temizlendi (farkli etimolojik kok)"[m
+[31m-  },[m
+[31m-  {[m
+[31m-    "id": "R-GU-SURFACE",[m
+[31m-    "form": "щхьэ",[m
+[31m-    "ipa": null,[m
+[31m-    "primaryMeaning": null,[m
+[31m-    "semanticDomains": [],[m
+[31m-    "source": "latin-orphan-2026-10-12",[m
+[31m-    "wordFamily": {[m
+[31m-      "lexemeIds": [][m
+[31m-    },[m
+[31m-    "mergedInto": "R-SHHA",[m
+[31m-    "notes": "Tashih: Kopyalanmis lexemeIds temizlendi -> R-SHHA"[m
+[31m-  },[m
+[31m-  {[m
+[31m-    "id": "R-GUADZ",[m
+[31m-    "form": "гуэд",[m
+[31m-    "ipa": null,[m
+[31m-    "primaryMeaning": null,[m
+[31m-    "semanticDomains": [],[m
+[31m-    "source": "latin-orphan-2026-10-12"[m
+[31m-  },[m
+[31m-  {[m
+[31m-    "id": "R-GUASCH",[m
+[31m-    "form": "гуащ",[m
+[31m-    "ipa": null,[m
+[31m-    "primaryMeaning": null,[m
+[31m-    "semanticDomains": [],[m
+[31m-    "source": "latin-orphan-2026-10-12"[m
+[31m-  },[m
+[31m-  {[m
+[31m-    "id": "R-GUASCHA",[m
+[31m-    "form": "гуащ",[m
+[31m-    "ipa": null,[m
+[31m-    "primaryMeaning": null,[m
+[31m-    "semanticDomains": [],[m
+[31m-    "source": "latin-orphan-2026-10-12"[m
+[31m-  },[m
+[31m-  {[m
+[31m-    "id": "R-GUBGH",[m
+[31m-    "form": "губг",[m
+[31m-    "ipa": null,[m
+[31m-    "primaryMeaning": null,[m
+[31m-    "semanticDomains": [],[m
+[31m-    "source": "latin-orphan-2026-10-12"[m
+[31m-  },[m
+[31m-  {[m
+[31m-    "id": "R-GUEGUSCH",[m
+[31m-    "form": "гуэг",[m
+[31m-    "ipa": null,[m
+[31m-    "primaryMeaning": null,[m
+[31m-    "semanticDomains": [],[m
+[31m-    "source": "latin-orphan-2026-10-12"[m
+[31m-  },[m
+[31m-  {[m
+[31m-    "id": "R-GUEL",[m
+[31m-    "form": "гуэл",[m
+[31m-    "ipa": null,[m
+[31m-    "primaryMeaning": null,[m
+[31m-    "semanticDomains": [],[m
+[31m-    "source": "latin-orphan-2026-10-12"[m
+[31m-  },[m
+[31m-  {[m
+[31m-    "id": "R-GUER",[m
+[31m-    "form": "гуэр",[m
+[31m-    "ipa": null,[m
+[31m-    "primaryMeaning": null,[m
+[31m-    "semanticDomains": [],[m
+[31m-    "source": "latin-orphan-2026-10-12"[m
+[31m-  },[m
+[31m-  {[m
+[31m-    "id": "R-GUESCH",[m
+[31m-    "form": "гуэщ",[m
+[31m-    "ipa": null,[m
+[31m-    "primaryMeaning": null,[m
+[31m-    "semanticDomains": [],[m
+[31m-    "source": "latin-orphan-2026-10-12"[m
+[31m-  },[m
+[31m-  {[m
+[31m-    "id": "R-GUNAH",[m
+[31m-    "form": "гуэн",[m
+[31m-    "ipa": null,[m
+[31m-    "primaryMeaning": null,[m
+[31m-    "semanticDomains": [],[m
+[31m-    "source": "latin-orphan-2026-10-12"[m
+[31m-  },[m
+[31m-  {[m
+[31m-    "id": "R-GUOUN",[m
+[31m-    "form": "гуоу",[m
+[31m-    "ipa": null,[m
+[31m-    "primaryMeaning": null,[m
+[31m-    "semanticDomains": [],[m
+[31m-    "source": "latin-orphan-2026-10-12"[m
+[31m-  },[m
+[31m-  {[m
+[31m-    "id": "R-GURYMYK",[m
+[31m-    "form": "гуры",[m
+[31m-    "ipa": null,[m
+[31m-    "primaryMeaning": null,[m
+[31m-    "semanticDomains": [],[m
+[31m-    "source": "latin-orphan-2026-10-12"[m
+[32m+[m[32m        "L-CORPUS-04053",[m
+[32m+[m[32m        "L-CORPUS-04175",[m
+[32m+[m[32m        "L-CORPUS-04305",[m
+[32m+[m[32m        "L-CORPUS-04351",[m
+[32m+[m[32m        "L-CORPUS-04352",[m
+[32m+[m[32m        "L-CORPUS-04737",[m
+[32m+[m[32m        "L-CORPUS-04744",[m
+[32m+[m[32m        "L-CORPUS-04803",[m
+[32m+[m[32m        "L-CORPUS2-07813",[m
+[32m+[m[32m        "L-D0B3D18AD183",[m
+[32m+[m[32m        "L-D0B3D18AD183-4",[m
+[32m+[m[32m        "L-DEGHUEZH",[m
+[32m+[m[32m        "L-GHUELHYN",[m
+[32m+[m[32m        "L-GHUEZHY",[m
+[32m+[m[32m        "L-KBD-00640",[m
+[32m+[m[32m        "L-KBD-00644",[m
+[32m+[m[32m        "L-KBD-00652",[m
+[32m+[m[32m        "L-KBD-00657",[m
+[32m+[m[32m        "L-KBD-00658",[m
+[32m+[m[32m        "L-KBD-00659",[m
+[32m+[m[32m        "L-KBD-00660",[m
+[32m+[m[32m        "L-KBD-00661",[m
+[32m+[m[32m        "L-KBD-00663",[m
+[32m+[m[32m        "L-KBD-00684",[m
+[32m+[m[32m        "L-KBD-00685",[m
+[32m+[m[32m        "L-KBD-00686",[m
+[32m+[m[32m        "L-KBD-00689",[m
+[32m+[m[32m        "L-KBD-00690",[m
+[32m+[m[32m        "L-KBD-00691",[m
+[32m+[m[32m        "L-KBD-00692",[m
+[32m+[m[32m        "L-KBD-00693",[m
+[32m+[m[32m        "L-KBD-00694",[m
+[32m+[m[32m        "L-KBD-00695",[m
+[32m+[m[32m        "L-KBD-00699",[m
+[32m+[m[32m        "L-KBD-00703",[m
+[32m+[m[32m        "L-KBD-00704",[m
+[32m+[m[32m        "L-KBD-00705",[m
+[32m+[m[32m        "L-KBD-00706",[m
+[32m+[m[32m        "L-KBD-00707",[m
+[32m+[m[32m        "L-VERIFIED-00045",[m
+[32m+[m[32m        "L-VERIFIED-00121",[m
+[32m+[m[32m        "L-VERIFIED-00251",[m
+[32m+[m[32m        "L-VERIFIED-00252",[m
+[32m+[m[32m        "L-VERIFIED-00470",[m
+[32m+[m[32m        "L-VERIFIED-00823",[m
+[32m+[m[32m        "L-VERIFIED-00898",[m
+[32m+[m[32m        "L-VERIFIED-01570",[m
+[32m+[m[32m        "L-VERIFIED-01920",[m
+[32m+[m[32m        "L-VERIFIED-02018",[m
+[32m+[m[32m        "L-VERIFIED-02043",[m
+[32m+[m[32m        "L-VERIFIED-02208",[m
+[32m+[m[32m        "L-VERIFIED-02407",[m
+[32m+[m[32m        "L-VERIFIED-02424",[m
+[32m+[m[32m        "L-VERIFIED-02571"[m
+[32m+[m[32m      ],[m
+[32m+[m[32m      "id": "WF-GHWALH"[m
+[32m+[m[32m    }[m
+   },[m
+   {[m
+[31m-    "id": "R-GUS",[m
+[31m-    "form": "гус",[m
+[32m+[m[32m    "id": "R-GHWSCH",[m
+[32m+[m[32m    "form": "гъущ",[m
+     "ipa": null,[m
+     "primaryMeaning": null,[m
+     "semanticDomains": [],[m
+[31m-    "source": "latin-orphan-2026-10-12"[m
+[32m+[m[32m    "source": "latin-orphan-2026-10-12",[m
+[32m+[m[32m    "wordFamily": {[m
+[32m+[m[32m      "lexemeIds": [[m
+[32m+[m[32m        "L-D0B3D18AD183-6",[m
+[32m+[m[32m        "L-D0B3D18AD183-7"[m
+[32m+[m[32m      ],[m
+[32m+[m[32m      "id": "WF-GHWSCH"[m
+[32m+[m[32m    }[m
+   },[m
+   {[m
+     "id": "R-GUSCH",[m
+[36m@@ -21878,10 +20175,6 @@[m
+     "source": "latin-orphan-2026-10-12",[m
+     "wordFamily": {[m
+       "lexemeIds": [[m
+[31m-        "L-BZASH1E",[m
+[31m-        "L-BZASH1EPS",[m
+[31m-        "L-BZASH1EPSE",[m
+[31m-        "L-CONCEPT-008",[m
+         "L-CORPUS-00175",[m
+         "L-CORPUS-00248",[m
+         "L-CORPUS-00322",[m
+[36m@@ -21912,7 +20205,6 @@[m
+         "L-CORPUS-04324",[m
+         "L-CORPUS-04886",[m
+         "L-CORPUS-04933",[m
+[31m-        "L-CORPUS2-00411",[m
+         "L-CORPUS2-00522",[m
+         "L-CORPUS2-02021",[m
+         "L-CORPUS2-02195",[m
+[36m@@ -21923,8 +20215,6 @@[m
+         "L-CORPUS2-04139",[m
+         "L-CORPUS2-04523",[m
+         "L-CORPUS2-04655",[m
+[31m-        "L-CORPUS2-04873",[m
+[31m-        "L-CORPUS2-04934",[m
+         "L-CORPUS2-04950",[m
+         "L-CORPUS2-05830",[m
+         "L-CORPUS2-07080",[m
+[36m@@ -21932,19 +20222,15 @@[m
+         "L-CORPUS2-08394",[m
+         "L-CORPUS2-08837",[m
+         "L-CORPUS2-08985",[m
+[31m-        "L-CORPUS2-09256",[m
+[31m-        "L-CORPUS2-09318",[m
+         "L-CORPUS2-09758",[m
+         "L-D093D183D189-2",[m
+         "L-D097D18BD0BA",[m
+         "L-D097D18DD180",[m
+         "L-D0B7D18BD0BA",[m
+         "L-D0B7D18BD189-2",[m
+[31m-        "L-D0BAD18AD18B-3",[m
+         "L-D0BAD18AD18D-2",[m
+         "L-D0BCD0B0D189",[m
+         "L-D0BCD0B0D189-2",[m
+[31m-        "L-D0BFD0B0D0BF",[m
+         "L-D0BFD189D380",[m
+         "L-D183D0BFD189",[m
+         "L-D185D18CD18D",[m
+[36m@@ -22016,36 +20302,11 @@[m
+         "L-VERIFIED-02159",[m
+         "L-VERIFIED-02173",[m
+         "L-VERIFIED-02341",[m
+[31m-        "L-VERIFIED-02576",[m
+[31m-        "L-ZEPEUPHCH1EN"[m
+[32m+[m[32m        "L-VERIFIED-02576"[m
+       ],[m
+       "id": "WF-GUSCH"[m
+     }[m
+   },[m
+[31m-  {[m
+[31m-    "id": "R-GUU",[m
+[31m-    "form": "гуу",[m
+[31m-    "ipa": null,[m
+[31m-    "primaryMeaning": null,[m
+[31m-    "semanticDomains": [],[m
+[31m-    "source": "latin-orphan-2026-10-12"[m
+[31m-  },[m
+[31m-  {[m
+[31m-    "id": "R-GUVA",[m
+[31m-    "form": "гува",[m
+[31m-    "ipa": null,[m
+[31m-    "primaryMeaning": null,[m
+[31m-    "semanticDomains": [],[m
+[31m-    "source": "latin-orphan-2026-10-12"[m
+[31m-  },[m
+[31m-  {[m
+[31m-    "id": "R-GUZERYDZ",[m
+[31m-    "form": "гузэ",[m
+[31m-    "ipa": null,[m
+[31m-    "primaryMeaning": null,[m
+[31m-    "semanticDomains": [],[m
+[31m-    "source": "latin-orphan-2026-10-12"[m
+[31m-  },[m
+   {[m
+     "id": "R-HAE",[m
+     "form": "хьэ",[m
+[36m@@ -22126,7 +20387,6 @@[m
+         "L-CORPUS-02204",[m
+         "L-CORPUS-02273",[m
+         "L-CORPUS-04717",[m
+[31m-        "L-CORPUS2-04262",[m
+         "L-CORPUS2-09989",[m
+         "L-KHABZE",[m
+         "L-VERIFIED-00154",[m
+[36m@@ -22171,10 +20431,8 @@[m
+         "L-CORPUS2-06553",[m
+         "L-CORPUS2-06608",[m
+         "L-D095D0B3D183",[m
+[31m-        "L-D0B4D18DD0BA",[m
+         "L-D0B4D18DD0BA-2",[m
+         "L-D0BAD380D18D",[m
+[31m-        "L-K1UASHCH",[m
+         "L-K1UE-IMP",[m
+         "L-K1UEN",[m
+         "L-K1UER",[m
+[36m@@ -22215,14 +20473,6 @@[m
+       "id": "WF-KWD"[m
+     }[m
+   },[m
+[31m-  {[m
+[31m-    "id": "R-KWE",[m
+[31m-    "form": "рыкӏ",[m
+[31m-    "ipa": null,[m
+[31m-    "primaryMeaning": null,[m
+[31m-    "semanticDomains": [],[m
+[31m-    "source": "latin-orphan-2026-10-12"[m
+[31m-  },[m
+   {[m
+     "id": "R-KWSE",[m
+     "form": "кусэ",[m
+[36m@@ -22290,20 +20540,6 @@[m
+       "id": "WF-LHAWU"[m
+     }[m
+   },[m
+[31m-  {[m
+[31m-    "id": "R-MAFA",[m
+[31m-    "form": "мафӀ",[m
+[31m-    "ipa": null,[m
+[31m-    "primaryMeaning": null,[m
+[31m-    "semanticDomains": [],[m
+[31m-    "source": "latin-orphan-2026-10-12",[m
+[31m-    "wordFamily": {[m
+[31m-      "lexemeIds": [[m
+[31m-        "L-KBD-03498"[m
+[31m-      ],[m
+[31m-      "id": "WF-MAFA"[m
+[31m-    }[m
+[31m-  },[m
+   {[m
+     "id": "R-MAMYR",[m
+     "form": "мамы",[m
+[36m@@ -22424,8 +20660,6 @@[m
+         "L-CORPUS-04130",[m
+         "L-CORPUS-04219",[m
+         "L-CORPUS-04897",[m
+[31m-        "L-CORPUS2-03343",[m
+[31m-        "L-CORPUS2-04782",[m
+         "L-CORPUS2-09082",[m
+         "L-CORPUS2-09424",[m
+         "L-D0BCD18DD0BA",[m
+[36m@@ -22583,19 +20817,6 @@[m
+       "id": "WF-PACHYH"[m
+     }[m
+   },[m
+[31m-  {[m
+[31m-    "id": "R-PACHYHE",[m
+[31m-    "form": "пачъ",[m
+[31m-    "ipa": null,[m
+[31m-    "primaryMeaning": null,[m
+[31m-    "semanticDomains": [],[m
+[31m-    "source": "latin-orphan-2026-10-12",[m
+[31m-    "wordFamily": {[m
+[31m-      "lexemeIds": [][m
+[31m-    },[m
+[31m-    "mergedInto": "R-PACHYH",[m
+[31m-    "notes": "Tashih: Kopyalanmis lexemeIds temizlendi -> R-PACHYH"[m
+[31m-  },[m
+   {[m
+     "id": "R-PCHE",[m
+     "form": "пчъэ",[m
+[36m@@ -22661,12 +20882,9 @@[m
+         "L-CORPUS-04144",[m
+         "L-CORPUS-04904",[m
+         "L-CORPUS-04984",[m
+[31m-        "L-CORPUS2-04441",[m
+[31m-        "L-CORPUS2-06618",[m
+         "L-CORPUS2-07767",[m
+         "L-CORPUS2-08491",[m
+         "L-D0BFD185D18A",[m
+[31m-        "L-D0BFD185D18A-2",[m
+         "L-KBD-04999",[m
+         "L-PKHEZHABE2",[m
+         "L-VERIFIED-00372",[m
+[36m@@ -22710,12 +20928,9 @@[m
+         "L-CORPUS-04750",[m
+         "L-CORPUS-04992",[m
+         "L-CORPUS2-02023",[m
+[31m-        "L-CORPUS2-02592",[m
+[31m-        "L-CORPUS2-03323",[m
+         "L-CORPUS2-03436",[m
+         "L-CORPUS2-04884",[m
+         "L-CORPUS2-05752",[m
+[31m-        "L-CORPUS2-05850",[m
+         "L-CORPUS2-07015",[m
+         "L-CORPUS2-07065",[m
+         "L-CORPUS2-09015",[m
+[36m@@ -22781,15 +20996,11 @@[m
+         "L-CORPUS-04418",[m
+         "L-CORPUS-04839",[m
+         "L-CORPUS2-00788",[m
+[31m-        "L-CORPUS2-03020",[m
+         "L-CORPUS2-03755",[m
+         "L-CORPUS2-04107",[m
+         "L-CORPUS2-04677",[m
+         "L-CORPUS2-06567",[m
+         "L-CORPUS2-06874",[m
+[31m-        "L-CORPUS2-08109",[m
+[31m-        "L-CORPUS2-09718",[m
+[31m-        "L-CORPUS2-09882",[m
+         "L-KBD-02093",[m
+         "L-KBD-04322",[m
+         "L-PLHEGHUN2",[m
+[36m@@ -22874,7 +21085,6 @@[m
+         "L-CORPUS-03940",[m
+         "L-CORPUS-04250",[m
+         "L-CORPUS-04688",[m
+[31m-        "L-CORPUS2-05050",[m
+         "L-CORPUS2-08278",[m
+         "L-CORPUS2-08356",[m
+         "L-VERIFIED-00258",[m
+[36m@@ -22963,10 +21173,7 @@[m
+         "L-CORPUS-04895",[m
+         "L-CORPUS-04973",[m
+         "L-CORPUS2-01208",[m
+[31m-        "L-CORPUS2-06487",[m
+         "L-CORPUS2-06954",[m
+[31m-        "L-CORPUS2-08151",[m
+[31m-        "L-CORPUS2-09242",[m
+         "L-CORPUS2-09683",[m
+         "L-D0B4D0B0D0BF",[m
+         "L-D189D18BD0B3",[m
+[36m@@ -22987,7 +21194,6 @@[m
+         "L-KBD-03602",[m
+         "L-KBD-03606",[m
+         "L-KBD-03635",[m
+[31m-        "L-KEPSHEHEN",[m
+         "L-NAKYGHE",[m
+         "L-NOBE",[m
+         "L-PSHCHE",[m
+[36m@@ -23050,14 +21256,6 @@[m
+       "id": "WF-PSTEW"[m
+     }[m
+   },[m
+[31m-  {[m
+[31m-    "id": "R-PSYKHWA",[m
+[31m-    "form": "псых",[m
+[31m-    "ipa": null,[m
+[31m-    "primaryMeaning": null,[m
+[31m-    "semanticDomains": [],[m
+[31m-    "source": "latin-orphan-2026-10-12"[m
+[31m-  },[m
+   {[m
+     "id": "R-QA",[m
+     "form": "къал",[m
+[36m@@ -23116,7 +21314,6 @@[m
+         "L-CORPUS-04891",[m
+         "L-CORPUS2-00844",[m
+         "L-CORPUS2-01893",[m
+[31m-        "L-CORPUS2-05030",[m
+         "L-CORPUS2-07058",[m
+         "L-D0BAD18AD0B0-3",[m
+         "L-D0BAD18AD0B0-4",[m
+[36m@@ -23284,14 +21481,12 @@[m
+         "L-CORPUS2-00190",[m
+         "L-CORPUS2-00392",[m
+         "L-CORPUS2-01122",[m
+[31m-        "L-CORPUS2-01314",[m
+         "L-CORPUS2-01617",[m
+         "L-CORPUS2-02277",[m
+         "L-CORPUS2-02678",[m
+         "L-CORPUS2-02808",[m
+         "L-CORPUS2-03031",[m
+         "L-CORPUS2-03189",[m
+[31m-        "L-CORPUS2-03218",[m
+         "L-CORPUS2-03491",[m
+         "L-CORPUS2-03501",[m
+         "L-CORPUS2-03838",[m
+[36m@@ -23300,27 +21495,22 @@[m
+         "L-CORPUS2-05153",[m
+         "L-CORPUS2-05825",[m
+         "L-CORPUS2-05885",[m
+[31m-        "L-CORPUS2-05896",[m
+         "L-CORPUS2-06061",[m
+         "L-CORPUS2-06249",[m
+         "L-CORPUS2-06257",[m
+         "L-CORPUS2-06733",[m
+[31m-        "L-CORPUS2-06775",[m
+         "L-CORPUS2-07090",[m
+         "L-CORPUS2-07493",[m
+         "L-CORPUS2-07506",[m
+         "L-CORPUS2-07731",[m
+         "L-CORPUS2-08228",[m
+[31m-        "L-CORPUS2-08300",[m
+         "L-CORPUS2-08429",[m
+         "L-CORPUS2-08578",[m
+         "L-CORPUS2-08626",[m
+         "L-CORPUS2-08856",[m
+         "L-CORPUS2-09305",[m
+[31m-        "L-CORPUS2-09726",[m
+         "L-D0BAD18AD183-2",[m
+         "L-D0BAD18AD183-5",[m
+[31m-        "L-D0BAD18AD183-7",[m
+         "L-KBD-00461",[m
+         "L-KBD-00463",[m
+         "L-KBD-00464",[m
+[36m@@ -23467,19 +21657,6 @@[m
+       "id": "WF-QWA"[m
+     }[m
+   },[m
+[31m-  {[m
+[31m-    "id": "R-QWASH",[m
+[31m-    "form": "къуэ",[m
+[31m-    "ipa": null,[m
+[31m-    "primaryMeaning": null,[m
+[31m-    "semanticDomains": [],[m
+[31m-    "source": "latin-orphan-2026-10-12",[m
+[31m-    "wordFamily": {[m
+[31m-      "lexemeIds": [][m
+[31m-    },[m
+[31m-    "mergedInto": "R-QWA",[m
+[31m-    "notes": "Tashih: Kopyalanmis lexemeIds temizlendi -> R-QWA"[m
+[31m-  },[m
+   {[m
+     "id": "R-RAZE",[m
+     "form": "разэ",[m
+[36m@@ -23638,19 +21815,6 @@[m
+       "id": "WF-SCHALA"[m
+     }[m
+   },[m
+[31m-  {[m
+[31m-    "id": "R-SCHE",[m
+[31m-    "form": "гущӀ",[m
+[31m-    "ipa": null,[m
+[31m-    "primaryMeaning": null,[m
+[31m-    "semanticDomains": [],[m
+[31m-    "source": "latin-orphan-2026-10-12",[m
+[31m-    "wordFamily": {[m
+[31m-      "lexemeIds": [][m
+[31m-    },[m
+[31m-    "mergedInto": "R-GUSCH",[m
+[31m-    "notes": "Tashih: Kopyalanmis lexemeIds temizlendi -> R-GUSCH"[m
+[31m-  },[m
+   {[m
+     "id": "R-SCHKHWA",[m
+     "form": "щхъу",[m
+[36m@@ -23681,7 +21845,6 @@[m
+         "L-CORPUS2-03195",[m
+         "L-CORPUS2-05221",[m
+         "L-CORPUS2-05857",[m
+[31m-        "L-CORPUS2-08492",[m
+         "L-CORPUS2-09201",[m
+         "L-D0B1D0B3D18A-2",[m
+         "L-D182D185D18A",[m
+[36m@@ -23715,7 +21878,6 @@[m
+     "source": "latin-orphan-2026-10-12",[m
+     "wordFamily": {[m
+       "lexemeIds": [[m
+[31m-        "L-COLOR-NAVY_BLUE",[m
+         "L-CORPUS-00294",[m
+         "L-CORPUS-00332",[m
+         "L-CORPUS-00356",[m
+[36m@@ -23732,13 +21894,10 @@[m
+         "L-CORPUS2-00070",[m
+         "L-CORPUS2-00084",[m
+         "L-CORPUS2-00187",[m
+[31m-        "L-CORPUS2-00254",[m
+         "L-CORPUS2-00361",[m
+         "L-CORPUS2-00527",[m
+         "L-CORPUS2-00667",[m
+[31m-        "L-CORPUS2-00670",[m
+         "L-CORPUS2-00743",[m
+[31m-        "L-CORPUS2-00767",[m
+         "L-CORPUS2-00904",[m
+         "L-CORPUS2-01230",[m
+         "L-CORPUS2-01840",[m
+[36m@@ -23751,7 +21910,6 @@[m
+         "L-CORPUS2-04421",[m
+         "L-CORPUS2-04640",[m
+         "L-CORPUS2-04822",[m
+[31m-        "L-CORPUS2-04882",[m
+         "L-CORPUS2-06168",[m
+         "L-CORPUS2-06302",[m
+         "L-CORPUS2-06776",[m
+[36m@@ -23766,9 +21924,7 @@[m
+         "L-D0BAD18AD18D-7",[m
+         "L-D0BFD18949D0",[m
+         "L-D183D0B0D181",[m
+[31m-        "L-D184D0B5D189",[m
+         "L-D189D380D18B",[m
+[31m-        "L-D189D380D18B-2",[m
+         "L-D189D380D18B-3",[m
+         "L-D189D38FD18B",[m
+         "L-KBD-00013",[m
+[36m@@ -23843,10 +21999,8 @@[m
+         "L-KBD-05191",[m
+         "L-KBD-05192",[m
+         "L-PSH1Y",[m
+[31m-        "L-PSHCHYK1U",[m
+         "L-PSHCHYK1UT1",[m
+         "L-SH1YLHE",[m
+[31m-        "L-SH1YN",[m
+         "L-SHCHYGU",[m
+         "L-SHCHYPTS1ESHCHYDE",[m
+         "L-SHCHYSHYLE",[m
+[36m@@ -24101,7 +22255,6 @@[m
+         "L-CORPUS2-00316",[m
+         "L-CORPUS2-00961",[m
+         "L-CORPUS2-01002",[m
+[31m-        "L-CORPUS2-01017",[m
+         "L-CORPUS2-01030",[m
+         "L-CORPUS2-01253",[m
+         "L-CORPUS2-01325",[m
+[36m@@ -24109,48 +22262,32 @@[m
+         "L-CORPUS2-01540",[m
+         "L-CORPUS2-01741",[m
+         "L-CORPUS2-02067",[m
+[31m-        "L-CORPUS2-02082",[m
+         "L-CORPUS2-02199",[m
+         "L-CORPUS2-02536",[m
+         "L-CORPUS2-02730",[m
+         "L-CORPUS2-02841",[m
+[31m-        "L-CORPUS2-02952",[m
+[31m-        "L-CORPUS2-03021",[m
+         "L-CORPUS2-03167",[m
+         "L-CORPUS2-03212",[m
+         "L-CORPUS2-03435",[m
+[31m-        "L-CORPUS2-03740",[m
+         "L-CORPUS2-04092",[m
+         "L-CORPUS2-04135",[m
+[31m-        "L-CORPUS2-04436",[m
+         "L-CORPUS2-05132",[m
+[31m-        "L-CORPUS2-05307",[m
+[31m-        "L-CORPUS2-05381",[m
+         "L-CORPUS2-05659",[m
+[31m-        "L-CORPUS2-05764",[m
+         "L-CORPUS2-05859",[m
+         "L-CORPUS2-06119",[m
+         "L-CORPUS2-06289",[m
+         "L-CORPUS2-06301",[m
+         "L-CORPUS2-06357",[m
+         "L-CORPUS2-06536",[m
+[31m-        "L-CORPUS2-06739",[m
+         "L-CORPUS2-06938",[m
+         "L-CORPUS2-07261",[m
+         "L-CORPUS2-07282",[m
+         "L-CORPUS2-07366",[m
+[31m-        "L-CORPUS2-07750",[m
+         "L-CORPUS2-08201",[m
+[31m-        "L-CORPUS2-08307",[m
+[31m-        "L-CORPUS2-08405",[m
+[31m-        "L-CORPUS2-08416",[m
+[31m-        "L-CORPUS2-08813",[m
+[31m-        "L-CORPUS2-08815",[m
+         "L-CORPUS2-08999",[m
+         "L-CORPUS2-09097",[m
+         "L-CORPUS2-09103",[m
+         "L-CORPUS2-09200",[m
+[31m-        "L-CORPUS2-09248",[m
+         "L-D09BD18BD183",[m
+         "L-D183D0B7D18B",[m
+         "L-D188D18DD185",[m
+[36m@@ -24420,14 +22557,6 @@[m
+       "id": "WF-SHATE"[m
+     }[m
+   },[m
+[31m-  {[m
+[31m-    "id": "R-SHAWE",[m
+[31m-    "form": "шъао",[m
+[31m-    "ipa": null,[m
+[31m-    "primaryMeaning": null,[m
+[31m-    "semanticDomains": [],[m
+[31m-    "source": "latin-orphan-2026-10-12"[m
+[31m-  },[m
+   {[m
+     "id": "R-SHENT",[m
+     "form": "шэнт",[m
+[36m@@ -24755,14 +22884,11 @@[m
+         "L-CORPUS2-00851",[m
+         "L-CORPUS2-01438",[m
+         "L-CORPUS2-01605",[m
+[31m-        "L-CORPUS2-01984",[m
+         "L-CORPUS2-02005",[m
+         "L-CORPUS2-02083",[m
+         "L-CORPUS2-02096",[m
+[31m-        "L-CORPUS2-02172",[m
+         "L-CORPUS2-02196",[m
+         "L-CORPUS2-02261",[m
+[31m-        "L-CORPUS2-02463",[m
+         "L-CORPUS2-02474",[m
+         "L-CORPUS2-02548",[m
+         "L-CORPUS2-02655",[m
+[36m@@ -24770,29 +22896,21 @@[m
+         "L-CORPUS2-03029",[m
+         "L-CORPUS2-03246",[m
+         "L-CORPUS2-03322",[m
+[31m-        "L-CORPUS2-03327",[m
+         "L-CORPUS2-03634",[m
+         "L-CORPUS2-03742",[m
+[31m-        "L-CORPUS2-03765",[m
+         "L-CORPUS2-03781",[m
+[31m-        "L-CORPUS2-03840",[m
+         "L-CORPUS2-04021",[m
+         "L-CORPUS2-04478",[m
+         "L-CORPUS2-04590",[m
+[31m-        "L-CORPUS2-04599",[m
+[31m-        "L-CORPUS2-04831",[m
+         "L-CORPUS2-04862",[m
+         "L-CORPUS2-04887",[m
+         "L-CORPUS2-04918",[m
+         "L-CORPUS2-05140",[m
+[31m-        "L-CORPUS2-05219",[m
+[31m-        "L-CORPUS2-05481",[m
+         "L-CORPUS2-05490",[m
+         "L-CORPUS2-05872",[m
+         "L-CORPUS2-05875",[m
+         "L-CORPUS2-06171",[m
+         "L-CORPUS2-06235",[m
+[31m-        "L-CORPUS2-06408",[m
+         "L-CORPUS2-06563",[m
+         "L-CORPUS2-06888",[m
+         "L-CORPUS2-07086",[m
+[36m@@ -24807,24 +22925,17 @@[m
+         "L-CORPUS2-07650",[m
+         "L-CORPUS2-07669",[m
+         "L-CORPUS2-08127",[m
+[31m-        "L-CORPUS2-08296",[m
+         "L-CORPUS2-08351",[m
+         "L-CORPUS2-08421",[m
+         "L-CORPUS2-08461",[m
+         "L-CORPUS2-08469",[m
+         "L-CORPUS2-08481",[m
+[31m-        "L-CORPUS2-08619",[m
+         "L-CORPUS2-08625",[m
+         "L-CORPUS2-08778",[m
+[31m-        "L-CORPUS2-08905",[m
+         "L-CORPUS2-08963",[m
+         "L-CORPUS2-09065",[m
+[31m-        "L-CORPUS2-09104",[m
+         "L-CORPUS2-09107",[m
+         "L-CORPUS2-09188",[m
+[31m-        "L-CORPUS2-09217",[m
+[31m-        "L-CORPUS2-09272",[m
+[31m-        "L-CORPUS2-09676",[m
+         "L-D0A9D185D18C",[m
+         "L-D0B1D0B3D18B",[m
+         "L-D0B1D0B6D18C",[m
+[36m@@ -25084,7 +23195,6 @@[m
+         "L-SHHYEPS",[m
+         "L-SHHYESHYEZHYN",[m
+         "L-SHHYETS",[m
+[31m-        "L-SHXHEGAVAGHE",[m
+         "L-UNAGHUE",[m
+         "L-UNASH1E",[m
+         "L-UNESHHXHE",[m
+[36m@@ -25217,22 +23327,6 @@[m
+       "id": "WF-SHOGEN"[m
+     }[m
+   },[m
+[31m-  {[m
+[31m-    "id": "R-SHTSH",[m
+[31m-    "form": "шӏош",[m
+[31m-    "ipa": null,[m
+[31m-    "primaryMeaning": null,[m
+[31m-    "semanticDomains": [],[m
+[31m-    "source": "latin-orphan-2026-10-12"[m
+[31m-  },[m
+[31m-  {[m
+[31m-    "id": "R-SHTSHE",[m
+[31m-    "form": "ошӏэ",[m
+[31m-    "ipa": null,[m
+[31m-    "primaryMeaning": null,[m
+[31m-    "semanticDomains": [],[m
+[31m-    "source": "latin-orphan-2026-10-12"[m
+[31m-  },[m
+   {[m
+     "id": "R-SHW",[m
+     "form": "шухь",[m
+[36m@@ -25247,14 +23341,6 @@[m
+       "id": "WF-SHW"[m
+     }[m
+   },[m
+[31m-  {[m
+[31m-    "id": "R-SHWE",[m
+[31m-    "form": "ешъо",[m
+[31m-    "ipa": null,[m
+[31m-    "primaryMeaning": null,[m
+[31m-    "semanticDomains": [],[m
+[31m-    "source": "latin-orphan-2026-10-12"[m
+[31m-  },[m
+   {[m
+     "id": "R-SHXW",[m
+     "form": "шхъу",[m
+[36m@@ -25469,14 +23555,11 @@[m
+         "L-CORPUS-04286",[m
+         "L-CORPUS-04612",[m
+         "L-CORPUS-04855",[m
+[31m-        "L-CORPUS2-00457",[m
+         "L-CORPUS2-01371",[m
+         "L-CORPUS2-01497",[m
+         "L-CORPUS2-01836",[m
+         "L-CORPUS2-02227",[m
+[31m-        "L-CORPUS2-02639",[m
+         "L-CORPUS2-02766",[m
+[31m-        "L-CORPUS2-02839",[m
+         "L-CORPUS2-03122",[m
+         "L-CORPUS2-03215",[m
+         "L-CORPUS2-03222",[m
+[36m@@ -25484,7 +23567,6 @@[m
+         "L-CORPUS2-04419",[m
+         "L-CORPUS2-04628",[m
+         "L-CORPUS2-04700",[m
+[31m-        "L-CORPUS2-04837",[m
+         "L-CORPUS2-05272",[m
+         "L-CORPUS2-05290",[m
+         "L-CORPUS2-05469",[m
+[36m@@ -25525,7 +23607,6 @@[m
+         "L-TKHE2",[m
+         "L-TKHEK1UMECH1YH",[m
+         "L-TKHEMADE",[m
+[31m-        "L-TKHEUSYKHEZHEN",[m
+         "L-TKHY",[m
+         "L-TX",[m
+         "L-TXYN",[m
+[36m@@ -25565,19 +23646,6 @@[m
+       "id": "WF-THA"[m
+     }[m
+   },[m
+[31m-  {[m
+[31m-    "id": "R-THAKWUMA",[m
+[31m-    "form": "тхьэ",[m
+[31m-    "ipa": null,[m
+[31m-    "primaryMeaning": null,[m
+[31m-    "semanticDomains": [],[m
+[31m-    "source": "latin-orphan-2026-10-12",[m
+[31m-    "wordFamily": {[m
+[31m-      "lexemeIds": [][m
+[31m-    },[m
+[31m-    "mergedInto": "R-THA",[m
+[31m-    "notes": "Tashih: Kopyalanmis lexemeIds temizlendi -> R-THA"[m
+[31m-  },[m
+   {[m
+     "id": "R-TOBE",[m
+     "form": "тобэ",[m
+[36m@@ -25661,14 +23729,12 @@[m
+         "L-CORPUS2-07756",[m
+         "L-CORPUS2-07979",[m
+         "L-CORPUS2-08834",[m
+[31m-        "L-D186D38FD18B",[m
+         "L-KBD-04964",[m
+         "L-KBD-04965",[m
+         "L-KBD-04966",[m
+         "L-KBD-04967",[m
+         "L-KBD-04972",[m
+         "L-KBD-04973",[m
+[31m-        "L-TSYXH2",[m
+         "L-TSYXHU",[m
+         "L-TSYXHU3",[m
+         "L-TSYXHUBZ"[m
+[36m@@ -25759,17 +23825,22 @@[m
+   },[m
+   {[m
+     "id": "R-WA",[m
+[31m-    "form": "Ӏуэх",[m
+[31m-    "ipa": null,[m
+[31m-    "primaryMeaning": null,[m
+[31m-    "semanticDomains": [],[m
+[31m-    "source": "latin-orphan-2026-10-12",[m
+[32m+[m[32m    "form": "еуэн",[m
+[32m+[m[32m    "ipa": "je:'wɐn",[m
+[32m+[m[32m    "primaryMeaning": "vurmak, çarpmak, dövmek; çalmak (enstrüman); biçmek; sokmak; ateş etmek",[m
+[32m+[m[32m    "semanticDomains": [[m
+[32m+[m[32m      "action",[m
+[32m+[m[32m      "physical",[m
+[32m+[m[32m      "music",[m
+[32m+[m[32m      "agriculture",[m
+[32m+[m[32m      "hunting"[m
+[32m+[m[32m    ],[m
+[32m+[m[32m    "source": "vikisozluk + aparsev-2008 + colarusso",[m
+     "wordFamily": {[m
+       "lexemeIds": [[m
+         "L-1UE",[m
+         "L-1UEGHUE",[m
+[31m-        "L-1UEKHUGHE",[m
+[31m-        "L-1UEPE",[m
+[32m+[m[32m        "L-CORPUS-00196",[m
+         "L-CORPUS-00205",[m
+         "L-CORPUS-00678",[m
+         "L-CORPUS-00774",[m
+[36m@@ -25809,7 +23880,6 @@[m
+         "L-CORPUS2-08983",[m
+         "L-CORPUS2-09541",[m
+         "L-CORPUS2-09856",[m
+[31m-        "L-D0BAD18AD0B0-7",[m
+         "L-D0BBD0B0D0B6",[m
+         "L-D182D185D0B0",[m
+         "L-D183D181D0B0",[m
+[36m@@ -25841,6 +23911,8 @@[m
+         "L-KBD-01142",[m
+         "L-KBD-01145",[m
+         "L-KBD-01150",[m
+[32m+[m[32m        "L-KBD-01670",[m
+[32m+[m[32m        "L-KBD-01670-T",[m
+         "L-PROMPT-00022",[m
+         "L-PROMPT-00023",[m
+         "L-VERIFIED-00115",[m
+[36m@@ -25857,12 +23929,27 @@[m
+         "L-VERIFIED-02381",[m
+         "L-VERIFIED-02426",[m
+         "L-VERIFIED-02434",[m
+[31m-        "L-YADZHAZHEN",[m
+         "L-YEDZHE",[m
+         "L-YEDZHEN"[m
+       ],[m
+[31m-      "id": "WF-WA"[m
+[31m-    }[m
+[32m+[m[32m      "id": "WF-WA",[m
+[32m+[m[32m      "notes": "⚠️ NEEDS_REVIEW: 'iş/söz/okuma' ile kirlenmiş, temizlenmeli.",[m
+[32m+[m[32m      "status": "NEEDS_REVIEW"[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "secondaryMeanings": [[m
+[32m+[m[32m      "fiziksel darbe indirmek",[m
+[32m+[m[32m      "müzik aleti çalmak",[m
+[32m+[m[32m      "ot/ağaç biçmek",[m
+[32m+[m[32m      "arı/yılan sokması",[m
+[32m+[m[32m      "ateş etmek, avlamak",[m
+[32m+[m[32m      "mecazi: kalbe vurmak"[m
+[32m+[m[32m    ],[m
+[32m+[m[32m    "etymology": "е- + [у] + -э + -н",[m
+[32m+[m[32m    "dialectVariants": {[m
+[32m+[m[32m      "adyghe": "еуэн",[m
+[32m+[m[32m      "kabardian": "еуэн"[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "notes": "Temel fiil kökü. Vikisözlük: е- + [у] + -э + -н."[m
+   },[m
+   {[m
+     "id": "R-WAFA",[m
+[36m@@ -25923,14 +24010,6 @@[m
+       "id": "WF-WASHKH"[m
+     }[m
+   },[m
+[31m-  {[m
+[31m-    "id": "R-WBL",[m
+[31m-    "form": "ыубл",[m
+[31m-    "ipa": null,[m
+[31m-    "primaryMeaning": null,[m
+[31m-    "semanticDomains": [],[m
+[31m-    "source": "latin-orphan-2026-10-12"[m
+[31m-  },[m
+   {[m
+     "id": "R-WBYD",[m
+     "form": "убыд",[m
+[36m@@ -25988,14 +24067,6 @@[m
+       "id": "WF-WEGHW"[m
+     }[m
+   },[m
+[31m-  {[m
+[31m-    "id": "R-WERQ",[m
+[31m-    "form": "уорк",[m
+[31m-    "ipa": null,[m
+[31m-    "primaryMeaning": null,[m
+[31m-    "semanticDomains": [],[m
+[31m-    "source": "latin-orphan-2026-10-12"[m
+[31m-  },[m
+   {[m
+     "id": "R-WNA",[m
+     "form": "унэг",[m
+[36m@@ -26031,7 +24102,6 @@[m
+         "L-CORPUS-04607",[m
+         "L-CORPUS-04789",[m
+         "L-CORPUS-04821",[m
+[31m-        "L-CORPUS2-06183",[m
+         "L-CORPUS2-06300",[m
+         "L-CORPUS2-08362",[m
+         "L-D0B3D18AD183-2",[m
+[36m@@ -26052,9 +24122,7 @@[m
+         "L-UNEK1AF1E",[m
+         "L-UNEK1UETS1",[m
+         "L-UNEKHUN",[m
+[31m-        "L-UNELHASH1E",[m
+         "L-UNEN",[m
+[31m-        "L-UNEPYSH1E",[m
+         "L-UNERYXHE",[m
+         "L-UNERYXHE-UNERYK1YU",[m
+         "L-UNESH1YN",[m
+[36m@@ -26394,21 +24462,17 @@[m
+         "L-CORPUS-04931",[m
+         "L-CORPUS-04932",[m
+         "L-CORPUS-04965",[m
+[31m-        "L-CORPUS2-00568",[m
+         "L-CORPUS2-01089",[m
+         "L-CORPUS2-01436",[m
+[31m-        "L-CORPUS2-01735",[m
+         "L-CORPUS2-01970",[m
+         "L-CORPUS2-02109",[m
+         "L-CORPUS2-02130",[m
+         "L-CORPUS2-03325",[m
+         "L-CORPUS2-03543",[m
+[31m-        "L-CORPUS2-04398",[m
+         "L-CORPUS2-04431",[m
+         "L-CORPUS2-05076",[m
+         "L-CORPUS2-05796",[m
+         "L-CORPUS2-05887",[m
+[31m-        "L-CORPUS2-06382",[m
+         "L-CORPUS2-07728",[m
+         "L-CORPUS2-07762",[m
+         "L-CORPUS2-07840",[m
+[36m@@ -26419,7 +24483,6 @@[m
+         "L-CORPUS2-09078",[m
+         "L-CORPUS2-09234",[m
+         "L-CORPUS2-09260",[m
+[31m-        "L-CORPUS2-09860",[m
+         "L-D093D183D0B6",[m
+         "L-D098D0BDD18B",[m
+         "L-D09DD18DD189-2",[m
+[36m@@ -26492,7 +24555,6 @@[m
+         "L-KBD-03327",[m
+         "L-KBD-03357",[m
+         "L-KBD-03358",[m
+[31m-        "L-KBD-03759",[m
+         "L-KBD-03861",[m
+         "L-KBD-04158",[m
+         "L-KBD-04161",[m
+[36m@@ -26505,7 +24567,6 @@[m
+         "L-KBD-04765",[m
+         "L-KBD-05717",[m
+         "L-MIN",[m
+[31m-        "L-PLANT-012",[m
+         "L-ULHYIN",[m
+         "L-VERIFIED-00053",[m
+         "L-VERIFIED-00177",[m
+[36m@@ -26714,5 +24775,155 @@[m
+         "KAV-ДЭШХУЭ"[m
+       ][m
+     }[m
+[32m+[m[32m  },[m
+[32m+[m[32m  {[m
+[32m+[m[32m    "id": "R-UE-HAIL",[m
+[32m+[m[32m    "form": "уэ",[m
+[32m+[m[32m    "variantForms": [[m
+[32m+[m[32m      "уэф"[m
+[32m+[m[32m    ],[m
+[32m+[m[32m    "ipa": "wɐ",[m
+[32m+[m[32m    "primaryMeaning": "dolu (yağış)",[m
+[32m+[m[32m    "semanticDomains": [[m
+[32m+[m[32m      "weather",[m
+[32m+[m[32m      "nature"[m
+[32m+[m[32m    ],[m
+[32m+[m[32m    "etymology": "[у] + -э",[m
+[32m+[m[32m    "dialectVariants": {[m
+[32m+[m[32m      "adyghe": "ошъу",[m
+[32m+[m[32m      "kabardian": "уэ / уэф"[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "source": "Abaze (2005), Huvaj (2007), Vikisozluk",[m
+[32m+[m[32m    "examples": [[m
+[32m+[m[32m      "Уэ пӀащэ (iri dolu)",[m
+[32m+[m[32m      "Уэм хиубыдэн (doluya tutulmak)",[m
+[32m+[m[32m      "Уэф къехын (dolu yağmak)"[m
+[32m+[m[32m    ],[m
+[32m+[m[32m    "wordFamily": {[m
+[32m+[m[32m      "id": "WF-UE-HAIL",[m
+[32m+[m[32m      "lexemeIds": [[m
+[32m+[m[32m        "L-UE"[m
+[32m+[m[32m      ],[m
+[32m+[m[32m      "conceptIds": [],[m
+[32m+[m[32m      "morphemeIds": [],[m
+[32m+[m[32m      "productivity": {[m
+[32m+[m[32m        "totalLexemes": 0,[m
+[32m+[m[32m        "corpusFrequency": 75742[m
+[32m+[m[32m      },[m
+[32m+[m[32m      "notes": "уэ (dolu) — Abaze 2005 doğrulamalı"[m
+[32m+[m[32m    }[m
+[32m+[m[32m  },[m
+[32m+[m[32m  {[m
+[32m+[m[32m    "id": "R-UE-PRON",[m
+[32m+[m[32m    "form": "уэ",[m
+[32m+[m[32m    "ipa": "wɐ",[m
+[32m+[m[32m    "primaryMeaning": "sen (2. tekil şahıs zamiri)",[m
+[32m+[m[32m    "semanticDomains": [[m
+[32m+[m[32m      "pronoun",[m
+[32m+[m[32m      "grammar"[m
+[32m+[m[32m    ],[m
+[32m+[m[32m    "etymology": "[у] + -э",[m
+[32m+[m[32m    "dialectVariants": {[m
+[32m+[m[32m      "adyghe": "уэ",[m
+[32m+[m[32m      "kabardian": "уэ"[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "source": "Vikisozluk + Aparsev (2008)",[m
+[32m+[m[32m    "wordFamily": {[m
+[32m+[m[32m      "id": "WF-UE-PRON",[m
+[32m+[m[32m      "lexemeIds": [[m
+[32m+[m[32m        "L-UE-PRON"[m
+[32m+[m[32m      ],[m
+[32m+[m[32m      "conceptIds": [],[m
+[32m+[m[32m      "morphemeIds": [],[m
+[32m+[m[32m      "productivity": {[m
+[32m+[m[32m        "totalLexemes": 0,[m
+[32m+[m[32m        "corpusFrequency": 0[m
+[32m+[m[32m      },[m
+[32m+[m[32m      "notes": "уэ (sen) — Vikisözlük doğrulamalı"[m
+[32m+[m[32m    }[m
+[32m+[m[32m  },[m
+[32m+[m[32m  {[m
+[32m+[m[32m    "id": "R-UE-AIR",[m
+[32m+[m[32m    "form": "уэ",[m
+[32m+[m[32m    "ipa": "wɐ",[m
+[32m+[m[32m    "primaryMeaning": "hava",[m
+[32m+[m[32m    "semanticDomains": [[m
+[32m+[m[32m      "weather",[m
+[32m+[m[32m      "nature"[m
+[32m+[m[32m    ],[m
+[32m+[m[32m    "etymology": "[у] + -э",[m
+[32m+[m[32m    "dialectVariants": {[m
+[32m+[m[32m      "adyghe": "уэ",[m
+[32m+[m[32m      "kabardian": "уэ"[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "source": "Vikisozluk",[m
+[32m+[m[32m    "status": "PENDING_REVIEW",[m
+[32m+[m[32m    "wordFamily": {[m
+[32m+[m[32m      "id": "WF-UE-AIR",[m
+[32m+[m[32m      "lexemeIds": [],[m
+[32m+[m[32m      "conceptIds": [],[m
+[32m+[m[32m      "morphemeIds": [],[m
+[32m+[m[32m      "productivity": {[m
+[32m+[m[32m        "totalLexemes": 0,[m
+[32m+[m[32m        "corpusFrequency": 0[m
+[32m+[m[32m      },[m
+[32m+[m[32m      "notes": "уэ (hava) — PENDING_REVIEW"[m
+[32m+[m[32m    }[m
+[32m+[m[32m  },[m
+[32m+[m[32m  {[m
+[32m+[m[32m    "id": "R-UE-INTJ",[m
+[32m+[m[32m    "form": "уэ",[m
+[32m+[m[32m    "ipa": "wɐ",[m
+[32m+[m[32m    "primaryMeaning": "ünlem (şaşkınlık, sevinç, üzüntü)",[m
+[32m+[m[32m    "semanticDomains": [[m
+[32m+[m[32m      "interjection",[m
+[32m+[m[32m      "grammar"[m
+[32m+[m[32m    ],[m
+[32m+[m[32m    "etymology": "[у] + -э",[m
+[32m+[m[32m    "dialectVariants": {[m
+[32m+[m[32m      "adyghe": "уэ",[m
+[32m+[m[32m      "kabardian": "уэ"[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "source": "Vikisozluk",[m
+[32m+[m[32m    "status": "PENDING_REVIEW",[m
+[32m+[m[32m    "wordFamily": {[m
+[32m+[m[32m      "id": "WF-UE-INTJ",[m
+[32m+[m[32m      "lexemeIds": [],[m
+[32m+[m[32m      "conceptIds": [],[m
+[32m+[m[32m      "morphemeIds": [],[m
+[32m+[m[32m      "productivity": {[m
+[32m+[m[32m        "totalLexemes": 0,[m
+[32m+[m[32m        "corpusFrequency": 0[m
+[32m+[m[32m      },[m
+[32m+[m[32m      "notes": "уэ (ünlem) — PENDING_REVIEW"[m
+[32m+[m[32m    }[m
+[32m+[m[32m  },[m
+[32m+[m[32m  {[m
+[32m+[m[32m    "id": "R-UE-PART",[m
+[32m+[m[32m    "form": "уэ",[m
+[32m+[m[32m    "ipa": "wɐ",[m
+[32m+[m[32m    "primaryMeaning": "ve, ise (bağlaç/edat)",[m
+[32m+[m[32m    "semanticDomains": [[m
+[32m+[m[32m      "particle",[m
+[32m+[m[32m      "grammar"[m
+[32m+[m[32m    ],[m
+[32m+[m[32m    "etymology": "[у] + -э",[m
+[32m+[m[32m    "dialectVariants": {[m
+[32m+[m[32m      "adyghe": "уэ",[m
+[32m+[m[32m      "kabardian": "уэ"[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "source": "Vikisozluk",[m
+[32m+[m[32m    "status": "PENDING_REVIEW",[m
+[32m+[m[32m    "wordFamily": {[m
+[32m+[m[32m      "id": "WF-UE-PART",[m
+[32m+[m[32m      "lexemeIds": [],[m
+[32m+[m[32m      "conceptIds": [],[m
+[32m+[m[32m      "morphemeIds": [],[m
+[32m+[m[32m      "productivity": {[m
+[32m+[m[32m        "totalLexemes": 0,[m
+[32m+[m[32m        "corpusFrequency": 0[m
+[32m+[m[32m      },[m
+[32m+[m[32m      "notes": "уэ (ve/ise) — PENDING_REVIEW"[m
+[32m+[m[32m    }[m
+   }[m
+ ][m
+\ No newline at end of file[m

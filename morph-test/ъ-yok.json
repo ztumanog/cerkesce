@@ -1,0 +1,101 @@
+{
+  "word": "зэкуэфэуэжын",
+  "prefixes": [],
+  "root": "зэкуэфэуэжын",
+  "prefixCount": 0,
+  "method": "fallback",
+  "confidence": 0.5,
+  "rootExtractor": {
+    "lexemeId": "UNKNOWN",
+    "rootId": null,
+    "rootForm": null,
+    "rootType": "NEUTRAL",
+    "confidence": 0,
+    "method": "fallback"
+  },
+  "nounCase": {
+    "input": "зэкуэфэуэжын",
+    "case": "bare",
+    "stem": "зэкуэфэуэжын",
+    "suffix": "",
+    "isPlural": false,
+    "isDefinite": false,
+    "confidence": 0.5
+  },
+  "morphemes": {
+    "lexemeId": "UNKNOWN",
+    "morphemes": [
+      {
+        "morphemeId": "M-ZE",
+        "form": "зэ",
+        "type": "grammatical",
+        "gloss": "karsilikli",
+        "position": 0
+      },
+      {
+        "morphemeId": null,
+        "form": "к",
+        "type": "unknown",
+        "position": 1
+      },
+      {
+        "morphemeId": "M-WE",
+        "form": "-уэ",
+        "type": "grammatical",
+        "gloss": "zarf (durum) eki",
+        "position": 2
+      },
+      {
+        "morphemeId": "M-FE",
+        "form": "-фэ",
+        "type": "grammatical",
+        "gloss": "tur/cesit eki",
+        "position": 3
+      },
+      {
+        "morphemeId": "M-WE",
+        "form": "-уэ",
+        "type": "grammatical",
+        "gloss": "zarf (durum) eki",
+        "position": 4
+      },
+      {
+        "morphemeId": "M-ZH",
+        "form": "-ж",
+        "type": "unknown",
+        "gloss": "REPET/REV",
+        "position": 5
+      },
+      {
+        "morphemeId": null,
+        "form": "ы",
+        "type": "unknown",
+        "position": 6
+      },
+      {
+        "morphemeId": "M-N",
+        "form": "-н",
+        "type": "grammatical",
+        "gloss": "mastar (isim-fiil) eki",
+        "position": 7
+      }
+    ],
+    "method": "dictionary",
+    "confidence": 0.75
+  },
+  "knownRootCount": 28393,
+  "lexeme": null,
+  "wordFamily": [],
+  "lemma": "зэкуэфэуэжын",
+  "lemmaPos": "NOUN/LEMMA",
+  "lemmaConfidence": 0.5,
+  "personArguments": [],
+  "lemmaPrefixes": [],
+  "lemmaSuffixes": [],
+  "rootMatches": [],
+  "frequency": {
+    "kabardian": 0,
+    "adyghe": 0
+  },
+  "allMeanings": []
+}

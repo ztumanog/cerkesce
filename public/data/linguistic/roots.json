@@ -25121,14 +25121,6 @@
     "source": "cyr-to-lat-2026-10-12"
   },
   {
-    "id": "R-T1U",
-    "form": null,
-    "ipa": null,
-    "primaryMeaning": null,
-    "semanticDomains": [],
-    "source": "cyr-to-lat-2026-10-12"
-  },
-  {
     "id": "R-ZY",
     "form": null,
     "ipa": null,
@@ -25171,27 +25163,6 @@
       "id": "WF-BZHEY",
       "lexemeIds": [
         "L-BZHEY"
-      ],
-      "conceptIds": [],
-      "morphemeIds": [],
-      "productivity": {
-        "totalLexemes": 1,
-        "corpusFrequency": 0
-      },
-      "notes": "İmla düzeltmesi için eklendi"
-    }
-  },
-  {
-    "id": "R-BZHYXHU",
-    "form": "bzhyxhu",
-    "primaryMeaning": null,
-    "semanticDomains": [],
-    "source": "imla-fix",
-    "status": "PENDING_REVIEW",
-    "wordFamily": {
-      "id": "WF-BZHYXHU",
-      "lexemeIds": [
-        "L-BZHYXHU"
       ],
       "conceptIds": [],
       "morphemeIds": [],
@@ -25352,27 +25323,6 @@
     }
   },
   {
-    "id": "R-GUBGHWE",
-    "form": "gubghwe",
-    "primaryMeaning": null,
-    "semanticDomains": [],
-    "source": "imla-fix",
-    "status": "PENDING_REVIEW",
-    "wordFamily": {
-      "id": "WF-GUBGHWE",
-      "lexemeIds": [
-        "L-GUBGHUE"
-      ],
-      "conceptIds": [],
-      "morphemeIds": [],
-      "productivity": {
-        "totalLexemes": 1,
-        "corpusFrequency": 0
-      },
-      "notes": "İmla düzeltmesi için eklendi"
-    }
-  },
-  {
     "id": "R-GUEDZ",
     "form": "guedz",
     "primaryMeaning": null,
@@ -25405,27 +25355,6 @@
       "id": "WF-GUEL",
       "lexemeIds": [
         "L-GUALE"
-      ],
-      "conceptIds": [],
-      "morphemeIds": [],
-      "productivity": {
-        "totalLexemes": 1,
-        "corpusFrequency": 0
-      },
-      "notes": "İmla düzeltmesi için eklendi"
-    }
-  },
-  {
-    "id": "R-GUENYH",
-    "form": "guenyh",
-    "primaryMeaning": null,
-    "semanticDomains": [],
-    "source": "imla-fix",
-    "status": "PENDING_REVIEW",
-    "wordFamily": {
-      "id": "WF-GUENYH",
-      "lexemeIds": [
-        "L-CORPUS-00099"
       ],
       "conceptIds": [],
       "morphemeIds": [],
@@ -25518,48 +25447,6 @@
       "morphemeIds": [],
       "productivity": {
         "totalLexemes": 2,
-        "corpusFrequency": 0
-      },
-      "notes": "İmla düzeltmesi için eklendi"
-    }
-  },
-  {
-    "id": "R-ILHES",
-    "form": "ilhes",
-    "primaryMeaning": null,
-    "semanticDomains": [],
-    "source": "imla-fix",
-    "status": "PENDING_REVIEW",
-    "wordFamily": {
-      "id": "WF-ILHES",
-      "lexemeIds": [
-        "L-ILHES"
-      ],
-      "conceptIds": [],
-      "morphemeIds": [],
-      "productivity": {
-        "totalLexemes": 1,
-        "corpusFrequency": 0
-      },
-      "notes": "İmla düzeltmesi için eklendi"
-    }
-  },
-  {
-    "id": "R-ISH",
-    "form": "ish",
-    "primaryMeaning": null,
-    "semanticDomains": [],
-    "source": "imla-fix",
-    "status": "PENDING_REVIEW",
-    "wordFamily": {
-      "id": "WF-ISH",
-      "lexemeIds": [
-        "L-ISHCH1"
-      ],
-      "conceptIds": [],
-      "morphemeIds": [],
-      "productivity": {
-        "totalLexemes": 1,
         "corpusFrequency": 0
       },
       "notes": "İmla düzeltmesi için eklendi"
@@ -25707,27 +25594,6 @@
       "id": "WF-MERAK1UE",
       "lexemeIds": [
         "L-MERAK1UE"
-      ],
-      "conceptIds": [],
-      "morphemeIds": [],
-      "productivity": {
-        "totalLexemes": 1,
-        "corpusFrequency": 0
-      },
-      "notes": "İmla düzeltmesi için eklendi"
-    }
-  },
-  {
-    "id": "R-NEKH",
-    "form": "nekh",
-    "primaryMeaning": null,
-    "semanticDomains": [],
-    "source": "imla-fix",
-    "status": "PENDING_REVIEW",
-    "wordFamily": {
-      "id": "WF-NEKH",
-      "lexemeIds": [
-        "KAV-MYNEXQYSHCHX'E"
       ],
       "conceptIds": [],
       "morphemeIds": [],
@@ -25994,69 +25860,6 @@
     }
   },
   {
-    "id": "R-SHCHISH",
-    "form": "shchish",
-    "primaryMeaning": null,
-    "semanticDomains": [],
-    "source": "imla-fix",
-    "status": "PENDING_REVIEW",
-    "wordFamily": {
-      "id": "WF-SHCHISH",
-      "lexemeIds": [
-        "L-SHCHISHCH"
-      ],
-      "conceptIds": [],
-      "morphemeIds": [],
-      "productivity": {
-        "totalLexemes": 1,
-        "corpusFrequency": 0
-      },
-      "notes": "İmla düzeltmesi için eklendi"
-    }
-  },
-  {
-    "id": "R-SHIPLR",
-    "form": "shiplr",
-    "primaryMeaning": null,
-    "semanticDomains": [],
-    "source": "imla-fix",
-    "status": "PENDING_REVIEW",
-    "wordFamily": {
-      "id": "WF-SHIPLR",
-      "lexemeIds": [
-        "L-SHCHIPL1"
-      ],
-      "conceptIds": [],
-      "morphemeIds": [],
-      "productivity": {
-        "totalLexemes": 1,
-        "corpusFrequency": 0
-      },
-      "notes": "İmla düzeltmesi için eklendi"
-    }
-  },
-  {
-    "id": "R-SHITE",
-    "form": "shite",
-    "primaryMeaning": null,
-    "semanticDomains": [],
-    "source": "imla-fix",
-    "status": "PENDING_REVIEW",
-    "wordFamily": {
-      "id": "WF-SHITE",
-      "lexemeIds": [
-        "L-SHCHIT1"
-      ],
-      "conceptIds": [],
-      "morphemeIds": [],
-      "productivity": {
-        "totalLexemes": 1,
-        "corpusFrequency": 0
-      },
-      "notes": "İmla düzeltmesi için eklendi"
-    }
-  },
-  {
     "id": "R-THAKWUMA",
     "form": "thakwuma",
     "primaryMeaning": null,
@@ -26206,27 +26009,6 @@
       "id": "WF-TSEY",
       "lexemeIds": [
         "L-TSEY"
-      ],
-      "conceptIds": [],
-      "morphemeIds": [],
-      "productivity": {
-        "totalLexemes": 1,
-        "corpusFrequency": 0
-      },
-      "notes": "İmla düzeltmesi için eklendi"
-    }
-  },
-  {
-    "id": "R-TXU",
-    "form": "txu",
-    "primaryMeaning": null,
-    "semanticDomains": [],
-    "source": "imla-fix",
-    "status": "PENDING_REVIEW",
-    "wordFamily": {
-      "id": "WF-TXU",
-      "lexemeIds": [
-        "L-TXU"
       ],
       "conceptIds": [],
       "morphemeIds": [],

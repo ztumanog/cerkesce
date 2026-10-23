@@ -1,0 +1,41 @@
+{
+  "word": "хъун",
+  "prefixes": [],
+  "root": "хъун",
+  "prefixCount": 0,
+  "method": "dictionary",
+  "confidence": 1,
+  "source": "temel, dokuma ipliği",
+  "knownRootCount": 29314,
+  "lexeme": {
+    "id": "L-KHUN-3",
+    "form": "хъун",
+    "ipa": "/χʷǝn/",
+    "literalMeaning": "temel, dokuma ipliği",
+    "partOfSpeech": "noun",
+    "dialectVariants": null,
+    "wordFamilyId": "WF-SHA",
+    "notes": "[BODY yanlis etiket temizlendi] | Kaynak: sukunov-1998"
+  },
+  "wordFamily": [],
+  "lemma": "хъун",
+  "lemmaPos": "NOUN",
+  "lemmaConfidence": 1,
+  "personArguments": [],
+  "lemmaPrefixes": [],
+  "lemmaSuffixes": [],
+  "rootMatches": [],
+  "frequency": {
+    "kabardian": 1466,
+    "adyghe": 1018
+  },
+  "allMeanings": [
+    {
+      "id": "L-KHUN-3",
+      "literalMeaning": "temel, dokuma ipliği",
+      "partOfSpeech": "noun",
+      "ipa": "/χʷǝn/",
+      "notes": "[BODY yanlis etiket temizlendi] | Kaynak: sukunov-1998"
+    }
+  ]
+}

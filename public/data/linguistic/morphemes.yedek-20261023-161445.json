@@ -1,0 +1,2616 @@
+[
+  {
+    "id": "M-F1E",
+    "form": "фӀэ",
+    "ipa": "/fʔa/",
+    "gloss": "iyi, aydin, mutlu",
+    "type": "lexical",
+    "dialect": "kabardian",
+    "equivalent": {
+      "adyghe": "шӀо",
+      "kabardian": "фӀэ"
+    },
+    "exampleLexemeIds": [
+      "L-GUF1E",
+      "L-NEF1E",
+      "L-GUF1E-GUMEGHE"
+    ],
+    "notes": "Bagimsiz kullanilabilir (ШӀу! = Iyi!). Diyalekt donusumu: шӀо -> фӀэ"
+  },
+  {
+    "id": "M-SH1O",
+    "form": "шӀо",
+    "ipa": "/ɕʔo/",
+    "gloss": "iyi, aydin (Adigece)",
+    "type": "lexical",
+    "dialect": "adyghe",
+    "equivalent": {
+      "adyghe": "шӀо",
+      "kabardian": "фӀэ"
+    },
+    "exampleLexemeIds": [
+      "L-GUSH1O"
+    ],
+    "notes": "Adigece karsiligi. Korpus dilinde yaygin."
+  },
+  {
+    "id": "M-GHE",
+    "form": "гъэ",
+    "ipa": "/ɣa/",
+    "gloss": "tut-, iste-, arzu et-",
+    "type": "lexical",
+    "dialect": "both",
+    "attachment": "suffix",
+    "exampleLexemeIds": [
+      "L-GUGHE"
+    ],
+    "notes": "Bagli morfem. гугъэ = kalpte tutulan -> umut"
+  },
+  {
+    "id": "M-BZHYGE",
+    "form": "бзыгъэ",
+    "ipa": "/bzəɣa/",
+    "gloss": "zeka, akil",
+    "type": "lexical",
+    "dialect": "both",
+    "exampleLexemeIds": [
+      "L-GUBZHYGE"
+    ],
+    "notes": "губзыгъэ = kalp + zeka -> akilli"
+  },
+  {
+    "id": "M-SH1ON",
+    "form": "шӀон",
+    "ipa": "/ɕʔon/",
+    "gloss": "iyilik et-, memnun et-",
+    "type": "lexical",
+    "dialect": "adyghe",
+    "equivalent": {
+      "adyghe": "шӀон",
+      "kabardian": "фӀэн"
+    },
+    "attachment": "suffix",
+    "notes": "Eylem formu. гушӀон = sevindirmek"
+  },
+  {
+    "id": "M-F1EN",
+    "form": "фӀэн",
+    "ipa": "/fʔan/",
+    "gloss": "iyilik et-, mutlu et-",
+    "type": "lexical",
+    "dialect": "kabardian",
+    "equivalent": {
+      "adyghe": "шӀон",
+      "kabardian": "фӀэн"
+    },
+    "attachment": "suffix",
+    "notes": "Kabardeyce eylem formu. гуфӀэн = sevinmek"
+  },
+  {
+    "id": "M-RY",
+    "form": "ры",
+    "ipa": "/rǝ/",
+    "gloss": "yonelme oneki (icine dogru)",
+    "type": "grammatical",
+    "dialect": "both",
+    "attachment": "prefix",
+    "exampleLexemeIds": [
+      "L-GURYYUEN"
+    ],
+    "notes": "Yonelme oneki. гурыӀуэн = kalbe dogru soz = anlamak."
+  },
+  {
+    "id": "M-TSY",
+    "form": "цы",
+    "ipa": "/t͡sə/",
+    "gloss": "kil, tuy",
+    "type": "lexical",
+    "dialect": "both",
+    "exampleLexemeIds": [
+      "L-SHHYETS",
+      "L-NEBZHYTS"
+    ],
+    "notes": "Bagimsiz kullanilabilir. Ses dusmesi: цы -> ц."
+  },
+  {
+    "id": "M-BZHY",
+    "form": "бжьы",
+    "ipa": "/bʑə/",
+    "gloss": "kenar, cevre, bel",
+    "type": "lexical",
+    "dialect": "both",
+    "exampleLexemeIds": [
+      "L-NEBZHYTS"
+    ],
+    "notes": "Iki anlam: boyunduruk + bel. Mecazi: kenar, cevre."
+  },
+  {
+    "id": "M-GHUE",
+    "form": "гъуэ",
+    "ipa": "/ɣʷa/",
+    "gloss": "birliktelik, eslik",
+    "type": "lexical",
+    "dialect": "both",
+    "exampleLexemeIds": [
+      "L-PSEGHU",
+      "L-SHHYEGHUSE"
+    ],
+    "notes": "Birliktelik eki. псэ + гъуэ = hayat arkadasi."
+  },
+  {
+    "id": "M-NSHE",
+    "form": "ншэ",
+    "ipa": "/nʃa/",
+    "gloss": "-siz, yokluk",
+    "type": "grammatical",
+    "dialect": "both",
+    "exampleLexemeIds": [
+      "L-SHHYEGHUSENSHE"
+    ],
+    "notes": "Yokluk eki. щхьэгъусэ + ншэ = essiz."
+  },
+  {
+    "id": "M-LHE",
+    "form": "лъэ",
+    "ipa": "/ɬa/",
+    "gloss": "ayak",
+    "type": "lexical",
+    "dialect": "both",
+    "exampleLexemeIds": [
+      "L-LHEGU",
+      "L-LHAKUE",
+      "L-LHEBAKUE"
+    ],
+    "notes": "Bagimsiz kok morfem. лъэгу, лъакъуэ."
+  },
+  {
+    "id": "M-PE",
+    "form": "пэ",
+    "ipa": "/pa/",
+    "gloss": "burun, on",
+    "type": "lexical",
+    "dialect": "both",
+    "exampleLexemeIds": [
+      "L-PERYT",
+      "L-YAPEREY"
+    ],
+    "notes": "Burun + on eki. 250+ turev."
+  },
+  {
+    "id": "M-SHHYE",
+    "form": "щхьэ",
+    "ipa": "/ɕħa/",
+    "gloss": "bas",
+    "type": "lexical",
+    "dialect": "both",
+    "exampleLexemeIds": [
+      "L-SHHYEGU",
+      "L-SHHYETS"
+    ],
+    "notes": "Bagimsiz kok morfem. щхьэгу, щхьэц."
+  },
+  {
+    "id": "M-GU",
+    "form": "гу",
+    "ipa": "/gwə/",
+    "gloss": "kalp, ic",
+    "type": "lexical",
+    "dialect": "both",
+    "exampleLexemeIds": [
+      "L-NEGU",
+      "L-LHEGU",
+      "L-1EGU"
+    ],
+    "notes": "Bagimsiz kok morfem. Polisemi: kalp + ic/merkez."
+  },
+  {
+    "id": "M-NE",
+    "form": "нэ",
+    "ipa": "/na/",
+    "gloss": "goz",
+    "type": "lexical",
+    "dialect": "both",
+    "exampleLexemeIds": [
+      "L-NEGU",
+      "L-NEBZHYTS"
+    ],
+    "notes": "Bagimsiz kok morfem. нэгу, нэбжьыц."
+  },
+  {
+    "id": "M-PSE",
+    "form": "псэ",
+    "ipa": "/psa/",
+    "gloss": "can, hayat",
+    "type": "lexical",
+    "dialect": "both",
+    "exampleLexemeIds": [
+      "L-PSEGHU",
+      "L-PSEUP1E"
+    ],
+    "notes": "Bagimsiz kok morfem. псэгъу, псэупӀэ."
+  },
+  {
+    "id": "M-1E",
+    "form": "Ӏэ",
+    "ipa": "/ʔa/",
+    "gloss": "el",
+    "type": "lexical",
+    "dialect": "both",
+    "exampleLexemeIds": [
+      "L-1EPE",
+      "L-1EGU",
+      "L-1ERYSH1"
+    ],
+    "notes": "Bagimsiz kok morfem. Ӏэпэ, Ӏэгу."
+  },
+  {
+    "id": "M-P1E",
+    "form": "пӀэ",
+    "ipa": "/pʹɐ/",
+    "gloss": "yer, mekan",
+    "type": "lexical",
+    "dialect": "both",
+    "exampleLexemeIds": [
+      "L-SHXAP1E",
+      "L-YEDJAP1E",
+      "L-PSEUP1E"
+    ],
+    "notes": "Bagimsiz kok morfem. -пӀэ eki fiil koklerine eklenir."
+  },
+  {
+    "id": "M-UNE",
+    "form": "унэ",
+    "ipa": "/wǝnɐ/",
+    "gloss": "ev",
+    "type": "lexical",
+    "dialect": "both",
+    "exampleLexemeIds": [
+      "L-UNEGUASHE"
+    ],
+    "notes": "Bagimsiz kok morfem. унэгуащэ."
+  },
+  {
+    "id": "M-R",
+    "form": "-р",
+    "ipa": "/r/",
+    "gloss": "nominatif (absolutif) eki",
+    "type": "grammatical",
+    "dialect": "both",
+    "attachment": "suffix",
+    "source": "Matasović 2010: 18",
+    "notes": "Belirli isimlerde ozne/nesne durumu. пӀэр, унэр."
+  },
+  {
+    "id": "M-M",
+    "form": "-м",
+    "ipa": "/m/",
+    "gloss": "ergatif (oblik) eki",
+    "type": "grammatical",
+    "dialect": "both",
+    "attachment": "suffix",
+    "source": "Matasović 2010: 18",
+    "notes": "Gecisli fiillerde ozne + datif + lokatif. пӀэм, унэм."
+  },
+  {
+    "id": "M-CHA",
+    "form": "-чӀэ",
+    "ipa": "/t͡ʃʼa/",
+    "gloss": "enstrümantal (vasita) eki",
+    "type": "grammatical",
+    "dialect": "both",
+    "attachment": "suffix",
+    "source": "Matasović 2010: 18",
+    "notes": "пӀэкӀэ, унэкӀэ. Belirli formda -м- eklenir: пӀэмкӀэ."
+  },
+  {
+    "id": "M-WE",
+    "form": "-уэ",
+    "ipa": "/wa/",
+    "gloss": "zarf (durum) eki",
+    "type": "grammatical",
+    "dialect": "both",
+    "attachment": "suffix",
+    "source": "Matasović 2010: 18",
+    "notes": "пӀэуэ, унэуэ. Zarflastirma ve nominal yuklem."
+  },
+  {
+    "id": "M-N",
+    "form": "-н",
+    "ipa": "/n/",
+    "gloss": "mastar (isim-fiil) eki",
+    "type": "grammatical",
+    "dialect": "both",
+    "attachment": "suffix",
+    "source": "Matasović 2010: 77",
+    "notes": "Fiil koklerine eklenir: пэплъэн (beklemek)."
+  },
+  {
+    "id": "M-XA",
+    "form": "-хэ",
+    "ipa": "/xa/",
+    "gloss": "cogul eki",
+    "type": "grammatical",
+    "dialect": "both",
+    "attachment": "suffix",
+    "source": "Matasović 2010: 17",
+    "notes": "пӀэхэр, унэхэр. Bazen istege bagli."
+  },
+  {
+    "id": "M-GHE2",
+    "form": "-гъэ",
+    "ipa": "/ɣa/",
+    "gloss": "soyut isim turetme eki",
+    "type": "grammatical",
+    "dialect": "both",
+    "attachment": "suffix",
+    "source": "Matasović 2010: 95",
+    "notes": "лӀыгъэ (erkeklik). Sifat/isimden soyut isim yapar."
+  },
+  {
+    "id": "M-K1UE",
+    "form": "-кӀуэ",
+    "ipa": "/kʷʼa/",
+    "gloss": "meslek adi turetme eki",
+    "type": "grammatical",
+    "dialect": "both",
+    "attachment": "suffix",
+    "source": "Matasović 2010: 95",
+    "notes": "тхакӀуэ (yazar). Fiil kokune eklenir."
+  },
+  {
+    "id": "M-GHUE2",
+    "form": "-гъуэ",
+    "ipa": "/ɣʷa/",
+    "gloss": "grup uyesi / katilimci eki",
+    "type": "grammatical",
+    "dialect": "both",
+    "attachment": "suffix",
+    "source": "Matasović 2010: 96",
+    "notes": "лэжьэгъу (is arkadasi). M-ГЪУЭ ile karistirma."
+  },
+  {
+    "id": "M-FE",
+    "form": "-фэ",
+    "ipa": "/fa/",
+    "gloss": "tur/cesit eki",
+    "type": "grammatical",
+    "dialect": "both",
+    "attachment": "suffix",
+    "source": "Matasović 2010: 96",
+    "notes": "узэфэ (bir hastalik turu). fa 'deri' ile ilgili."
+  },
+  {
+    "id": "M-SHCH",
+    "form": "-щ",
+    "ipa": "/ɕ/",
+    "gloss": "yer/mekan turetme eki",
+    "type": "grammatical",
+    "dialect": "both",
+    "attachment": "suffix",
+    "source": "Matasović 2010: 95",
+    "notes": "хъэщ (kopek kulubesi). M-P1E ile karistirma."
+  },
+  {
+    "id": "M-ZHYAY",
+    "form": "-жьай",
+    "ipa": "/ʑaj/",
+    "gloss": "kucultme eki",
+    "type": "grammatical",
+    "dialect": "both",
+    "attachment": "suffix",
+    "source": "Matasović 2010: 95",
+    "notes": "джэджьай (tavuk). Kucuk/sevimli anlami katar."
+  },
+  {
+    "id": "M-AY",
+    "form": "-ай",
+    "ipa": "/aj/",
+    "gloss": "agac adi turetme eki",
+    "type": "grammatical",
+    "dialect": "both",
+    "attachment": "suffix",
+    "source": "Matasović 2010: 95",
+    "notes": "дэй (ceviz agaci). Meyve adindan agac adi yapar."
+  },
+  {
+    "id": "M-ME",
+    "form": "мэ-",
+    "ipa": "/ma/",
+    "gloss": "olumsuzluk oneki (non-finite)",
+    "type": "grammatical",
+    "dialect": "both",
+    "attachment": "prefix",
+    "source": "Matasović 2010: 36",
+    "notes": "мэлажьэ (calismiyor). Mastar/partisip formlarinda."
+  },
+  {
+    "id": "M-QEM",
+    "form": "-къэм",
+    "ipa": "/qʼam/",
+    "gloss": "olumsuzluk eki (finite)",
+    "type": "grammatical",
+    "dialect": "both",
+    "attachment": "suffix",
+    "source": "Matasović 2010: 36",
+    "notes": "сыкъэкӀуакъым (gelmedim). Fiil cekimlerinde."
+  },
+  {
+    "id": "M-GA",
+    "form": "гъэ-",
+    "ipa": "/ɣa/",
+    "gloss": "ettirgen (causative) oneki",
+    "type": "grammatical",
+    "dialect": "both",
+    "attachment": "prefix",
+    "source": "Matasović 2010: 46",
+    "notes": "гъэкӀуэн (gitmesini saglamak). Fiil degerligini artirir."
+  },
+  {
+    "id": "M-ZA",
+    "form": "зэ-",
+    "ipa": "/za/",
+    "gloss": "donuslu (reflexive) oneki",
+    "type": "grammatical",
+    "dialect": "both",
+    "attachment": "prefix",
+    "source": "Matasović 2010: 58",
+    "notes": "зэплъэн (kendine bakmak). Fiil kokune eklenir."
+  },
+  {
+    "id": "M-XWA",
+    "form": "хуэ-",
+    "ipa": "/xʷa/",
+    "gloss": "faydalanma (benefactive) oneki",
+    "type": "grammatical",
+    "dialect": "both",
+    "attachment": "prefix",
+    "source": "Matasović 2010: 53",
+    "notes": "хуэтхэн (biri icin yazmak). Versiyon oneki."
+  },
+  {
+    "id": "M-SH1E",
+    "form": "-щӀэ",
+    "ipa": "/ɕʼa/",
+    "gloss": "tekrar (repetitive) eki",
+    "type": "grammatical",
+    "dialect": "both",
+    "attachment": "suffix",
+    "source": "Matasović 2010: 60",
+    "notes": "къэкӀуэжын (geri gelmek). -жь ile varyant."
+  },
+  {
+    "id": "M-XWE",
+    "form": "-хуэ",
+    "ipa": "/xʷa/",
+    "gloss": "es zamanlilik eki",
+    "type": "grammatical",
+    "dialect": "both",
+    "attachment": "suffix",
+    "source": "Matasović 2010: 98",
+    "notes": "Partisip formuna eklenir. '-iken' anlami verir."
+  },
+  {
+    "id": "M-AH",
+    "form": "-э-",
+    "ipa": "/ah/",
+    "gloss": "baglayici (connective) infix",
+    "type": "grammatical",
+    "dialect": "both",
+    "attachment": "infix",
+    "source": "Kuipers 1960: 76-78",
+    "notes": "Bilesiklerde iki kok arasina girer: пӀэщхьэгъу. Plural -хэ ile ilgili."
+  },
+  {
+    "id": "M-MN",
+    "form": "-м-/-н-",
+    "ipa": "/m/ /n/",
+    "gloss": "baglayici (connective) infix",
+    "type": "grammatical",
+    "dialect": "both",
+    "attachment": "infix",
+    "source": "Kuipers 1960: 78-79",
+    "notes": "Eski genitif/nominatif eki. лъэмб (ayak izi) = лъэ + -м- + б."
+  },
+  {
+    "id": "M-XHUE",
+    "form": "-хъуэ",
+    "ipa": "/χʷa/",
+    "gloss": "yer/mekan eki",
+    "type": "grammatical",
+    "dialect": "both",
+    "attachment": "suffix",
+    "exampleLexemeIds": [
+      "L-PSYXHUE"
+    ],
+    "notes": "Yer eki. псыхъуэ = su yeri -> nehir yatagi."
+  },
+  {
+    "id": "M-1AGHE",
+    "form": "-Ӏагъэ",
+    "ipa": "/ʔaɣa/",
+    "gloss": "soyut ad eki (-lik)",
+    "type": "grammatical",
+    "dialect": "both",
+    "attachment": "suffix",
+    "exampleLexemeIds": [
+      "L-PSY1AGHE"
+    ],
+    "notes": "Soyut ad eki. псыӀагъэ = nem."
+  },
+  {
+    "id": "M-PS",
+    "form": "-пс",
+    "ipa": "/ps/",
+    "gloss": "serit/bag/sivi eki",
+    "type": "grammatical",
+    "dialect": "both",
+    "attachment": "suffix",
+    "exampleLexemeIds": [
+      "L-LHEPS",
+      "L-NAPS",
+      "L-SHEPS"
+    ],
+    "notes": "Bag/serit/sivi eki. лъэпс = ayak bagi; нэпс = gozyasi."
+  },
+  {
+    "id": "M-ZHY",
+    "form": "-жь",
+    "ipa": "/ʑ/",
+    "gloss": "buyutme/eski eki",
+    "type": "grammatical",
+    "dialect": "both",
+    "attachment": "suffix",
+    "exampleLexemeIds": [
+      "L-PSYZHY"
+    ],
+    "notes": "Buyutme eki. Псыжь = Kuban Nehri (buyuk su)."
+  },
+  {
+    "id": "M-GHU",
+    "form": "-гъу",
+    "ipa": "/ɣʷ/",
+    "gloss": "ortaklik/eslik eki",
+    "type": "grammatical",
+    "dialect": "both",
+    "attachment": "suffix",
+    "exampleLexemeIds": [
+      "L-PSEGHU"
+    ],
+    "notes": "Ortaklik eki. псэгъу = can arkadasi."
+  },
+  {
+    "id": "M-K1UED",
+    "form": "-кӀуэд",
+    "ipa": "/kʷʼad/",
+    "gloss": "kaybolma eki",
+    "type": "lexical",
+    "dialect": "both",
+    "attachment": "suffix",
+    "exampleLexemeIds": [
+      "L-PSEK1UED"
+    ],
+    "notes": "Kaybolma eki. псэкIуэд = merhamet (ruhun erimesi)."
+  },
+  {
+    "id": "M-1UX",
+    "form": "-Ӏух",
+    "ipa": "/ʔux/",
+    "gloss": "sokulme/çıkarma eki",
+    "type": "lexical",
+    "dialect": "both",
+    "attachment": "suffix",
+    "exampleLexemeIds": [
+      "L-PSE1UX"
+    ],
+    "notes": "Sokulme eki. псэIух = dehset (ruhun sokulmesi)."
+  },
+  {
+    "id": "M-UN",
+    "form": "-ун",
+    "ipa": "/wən/",
+    "gloss": "mastar/fiil eki",
+    "type": "grammatical",
+    "dialect": "both",
+    "attachment": "suffix",
+    "exampleLexemeIds": [
+      "L-PSEUN"
+    ],
+    "notes": "Mastar eki. псэун = yasamak."
+  },
+  {
+    "id": "M-USHHE",
+    "form": "-ущхьэ",
+    "ipa": "/wɕħa/",
+    "gloss": "varlik/canli eki",
+    "type": "grammatical",
+    "dialect": "both",
+    "attachment": "suffix",
+    "exampleLexemeIds": [
+      "L-PSEUSHHE"
+    ],
+    "notes": "Varlik eki. псэущхьэ = canli varlik."
+  },
+  {
+    "id": "M-BYDE",
+    "form": "-быдэ",
+    "ipa": "/bəda/",
+    "gloss": "saglamlik/kuvvet eki",
+    "type": "lexical",
+    "dialect": "both",
+    "attachment": "suffix",
+    "exampleLexemeIds": [
+      "L-PSEBYDE"
+    ],
+    "notes": "Saglamlik eki. псэбыдэ = dayanikli."
+  },
+  {
+    "id": "M-1UV",
+    "form": "-Ӏув",
+    "ipa": "/ʔuv/",
+    "gloss": "kalinlik/direnc eki",
+    "type": "lexical",
+    "dialect": "both",
+    "attachment": "suffix",
+    "exampleLexemeIds": [
+      "L-PSE1UV"
+    ],
+    "notes": "Kalinlik eki. псэIув = direncli."
+  },
+  {
+    "id": "M-XU",
+    "form": "-ху",
+    "ipa": "/xʷ/",
+    "gloss": "aydinlanma/ak eki",
+    "type": "lexical",
+    "dialect": "both",
+    "attachment": "suffix",
+    "exampleLexemeIds": [
+      "L-PSEXU"
+    ],
+    "notes": "Aydinlanma eki. псэху = huzurlu."
+  },
+  {
+    "id": "M-SHXUE",
+    "form": "-шхуэ",
+    "ipa": "/ʃxʷa/",
+    "gloss": "buyuk, yasli, ulu",
+    "type": "lexical",
+    "dialect": "both",
+    "attachment": "suffix",
+    "exampleLexemeIds": [
+      "L-PSYSHXUE"
+    ],
+    "notes": "Cok uretken buyutme eki. Hemen her isme eklenebilir. Metaforik zincir: buyuk -> yasli -> eski -> ulu.",
+    "productivity": "high",
+    "semanticShift": [
+      "fiziksel buyukluk",
+      "yaslilik",
+      "eskilik",
+      "ululuk",
+      "onem"
+    ],
+    "antonymMorphemeId": "M-C1YQ1U"
+  },
+  {
+    "id": "M-C1YQ1U",
+    "form": "-цӀыкӀу",
+    "ipa": "/t͡sʹǝqʷʼǝ/",
+    "gloss": "kucuk, genc, onemsiz",
+    "type": "lexical",
+    "dialect": "both",
+    "attachment": "suffix",
+    "exampleLexemeIds": [
+      "L-PSYC1YQ1U"
+    ],
+    "notes": "Cok uretken kucultme eki. -шхуэ'nun zit anlamlisi. Metaforik zincir: kucuk -> genc -> onemsiz -> korkak.",
+    "productivity": "high",
+    "semanticShift": [
+      "fiziksel kucukluk",
+      "genclik",
+      "onemsizlik",
+      "korkaklik"
+    ],
+    "antonymMorphemeId": "M-SHXUE"
+  },
+  {
+    "id": "M-ZHAN",
+    "form": "-жан",
+    "ipa": "/ʒan/",
+    "gloss": "keskin",
+    "type": "lexical",
+    "dialect": "both",
+    "attachment": "suffix",
+    "exampleLexemeIds": [
+      "L-NEZHAN"
+    ],
+    "notes": "Keskinlik eki. нэ жан = keskin goz."
+  },
+  {
+    "id": "M-K1E",
+    "form": "-кӀэ",
+    "ipa": "/kʹa/",
+    "gloss": "ile (arac eki)",
+    "type": "grammatical",
+    "dialect": "both",
+    "attachment": "suffix",
+    "exampleLexemeIds": [],
+    "notes": "Arac eki. псыкӀэ = su ile."
+  },
+  {
+    "id": "M-K1YH",
+    "form": "-кӀыхь",
+    "ipa": "/kʹǝħ/",
+    "gloss": "uzun",
+    "type": "lexical",
+    "dialect": "both",
+    "attachment": "suffix",
+    "exampleLexemeIds": [
+      "L-TKHEK1UMECH1YH"
+    ],
+    "notes": "Uzunluk eki. тхьэкӀумэкӀыхь = uzun kulakli = tavsan."
+  },
+  {
+    "id": "M-KHUE",
+    "form": "-хъу",
+    "ipa": "/χʷ/",
+    "gloss": "olma/donusme eki",
+    "type": "grammatical",
+    "dialect": "both",
+    "attachment": "suffix",
+    "exampleLexemeIds": [
+      "L-PSYXHUE"
+    ],
+    "notes": "Olma/donusme eki. псыхъуэ = suyun oldugu yer."
+  },
+  {
+    "id": "M-K1U",
+    "form": "-къу",
+    "ipa": "/qʷ/",
+    "gloss": "ogul/kucultme eki",
+    "type": "lexical",
+    "dialect": "both",
+    "attachment": "suffix",
+    "exampleLexemeIds": [],
+    "notes": "Ogul/kucultme eki."
+  },
+  {
+    "id": "M-L1",
+    "form": "-лӀ",
+    "ipa": "/ɬʹ/",
+    "gloss": "adam/kisi eki",
+    "type": "lexical",
+    "dialect": "both",
+    "attachment": "suffix",
+    "exampleLexemeIds": [],
+    "notes": "Adam/kisi eki."
+  },
+  {
+    "id": "M-DZHE",
+    "form": "-джэ",
+    "ipa": "/d͡ʒa/",
+    "gloss": "pekitme eki",
+    "type": "grammatical",
+    "dialect": "both",
+    "attachment": "suffix",
+    "exampleLexemeIds": [],
+    "notes": "Pekitme eki."
+  },
+  {
+    "id": "M-GHE3",
+    "form": "-гъэ",
+    "ipa": "/ɣa/",
+    "gloss": "gecmis zaman eki",
+    "type": "grammatical",
+    "dialect": "both",
+    "attachment": "suffix",
+    "exampleLexemeIds": [],
+    "notes": "Gecmis zaman eki."
+  },
+  {
+    "id": "M-SH1E2",
+    "form": "-щӀэ",
+    "ipa": "/ɕʹa/",
+    "gloss": "yeni/alt eki",
+    "type": "grammatical",
+    "dialect": "both",
+    "attachment": "suffix",
+    "exampleLexemeIds": [],
+    "notes": "Yeni/alt eki."
+  },
+  {
+    "id": "M-BE",
+    "form": "-бэ",
+    "ipa": "/ba/",
+    "gloss": "cokluk eki",
+    "type": "grammatical",
+    "dialect": "both",
+    "attachment": "suffix",
+    "exampleLexemeIds": [
+      "L-YAK1UBE"
+    ],
+    "notes": "Cokluk eki. якъубэ = bircogu."
+  },
+  {
+    "id": "M-SHCH2",
+    "form": "-щ",
+    "ipa": "/ɕ/",
+    "gloss": "meslek/mesguliyet eki",
+    "type": "grammatical",
+    "dialect": "both",
+    "attachment": "suffix",
+    "exampleLexemeIds": [
+      "L-NEPC1YSHCH"
+    ],
+    "notes": "Meslek eki. нэпцӀыщ = yalanci."
+  },
+  {
+    "id": "M-K1E2",
+    "form": "-кӀэ",
+    "ipa": "/kʹa/",
+    "gloss": "arac eki (ile)",
+    "type": "grammatical",
+    "dialect": "both",
+    "attachment": "suffix",
+    "exampleLexemeIds": [],
+    "notes": "Arac eki. псыкӀэ = su ile."
+  },
+  {
+    "id": "M-NSHE2",
+    "form": "-ншэ",
+    "ipa": "/nʃa/",
+    "gloss": "yokluk eki (-siz)",
+    "type": "grammatical",
+    "dialect": "both",
+    "attachment": "suffix",
+    "exampleLexemeIds": [
+      "L-PSENSHE"
+    ],
+    "notes": "Yokluk eki. псэншэ = cansiz."
+  },
+  {
+    "id": "M-ZHE",
+    "form": "-жь",
+    "ipa": "/ʑ/",
+    "gloss": "buyutme/eski eki",
+    "type": "grammatical",
+    "dialect": "both",
+    "attachment": "suffix",
+    "exampleLexemeIds": [],
+    "notes": "Buyutme eki. Псыжь = Kuban Nehri (buyuk su)."
+  },
+  {
+    "id": "M-TETE",
+    "form": "тэтэ",
+    "ipa": "/tata/",
+    "gloss": "dede (kok)",
+    "type": "lexical",
+    "dialect": "both",
+    "attachment": "free",
+    "exampleLexemeIds": [
+      "L-TETAZH"
+    ],
+    "notes": "Dede koku. ADY agirlikli. Kaynak: Huvaj (2007)."
+  },
+  {
+    "id": "M-DADE",
+    "form": "дадэ",
+    "ipa": "/daːda/",
+    "gloss": "dede (kok)",
+    "type": "lexical",
+    "dialect": "both",
+    "attachment": "free",
+    "exampleLexemeIds": [
+      "L-DADESHHUE"
+    ],
+    "notes": "Dede koku. ADY Abzeh + KBD. Kaynak: Huvaj (2007), Wiktionary."
+  },
+  {
+    "id": "M-NYBZHY",
+    "form": "ныбжь",
+    "ipa": "/nǝbʑ/",
+    "gloss": "yas, omur (kok)",
+    "type": "lexical",
+    "dialect": "both",
+    "attachment": "free",
+    "exampleLexemeIds": [
+      "L-NYBZHYSHXUE",
+      "L-NYBZHYC1YQ1U"
+    ],
+    "notes": "Yas/omur koku. Homonym: ныбжь (golge)."
+  },
+  {
+    "id": "M-K1UASH",
+    "form": "къуэш",
+    "ipa": "/qʷʼǝʃ/",
+    "gloss": "erkek kardes (kok)",
+    "type": "lexical",
+    "dialect": "both",
+    "attachment": "free",
+    "exampleLexemeIds": [
+      "L-K1UASH"
+    ],
+    "notes": "Erkek kardes koku. Bilesiklerde: адэ къуэш, анэ къуэш."
+  },
+  {
+    "id": "M-SHYPHUE",
+    "form": "шыпхъу",
+    "ipa": "/ʃǝpχʷǝ/",
+    "gloss": "kiz kardes (kok)",
+    "type": "lexical",
+    "dialect": "both",
+    "attachment": "free",
+    "exampleLexemeIds": [
+      "L-SHYPHUE"
+    ],
+    "notes": "Kiz kardes koku. Bilesiklerde: адэшыпхъу, анэшыпхъу."
+  },
+  {
+    "id": "M-UY",
+    "form": "уы",
+    "gloss": "faktitif (yapmak)",
+    "type": "grammatical",
+    "dialect": "kabardian",
+    "notes": "C-11.4: faktitif oneki."
+  },
+  {
+    "id": "M-PE3",
+    "form": "пэ",
+    "gloss": "on, karsi",
+    "type": "grammatical",
+    "dialect": "kabardian",
+    "notes": "C-11.4: lokal preverb. Kok: пэ (burun)."
+  },
+  {
+    "id": "M-LHE2",
+    "form": "лъэ",
+    "gloss": "arkasindan",
+    "type": "grammatical",
+    "dialect": "kabardian",
+    "notes": "C-11.4: lokal preverb. Kok: лъэ (ayak)."
+  },
+  {
+    "id": "M-KUE4",
+    "form": "къуэ",
+    "gloss": "yaninda",
+    "type": "grammatical",
+    "dialect": "kabardian",
+    "notes": "C-11.4: lokal preverb. Kok: къуэ (agiz)."
+  },
+  {
+    "id": "M-GU4",
+    "form": "гу",
+    "gloss": "yaninda",
+    "type": "grammatical",
+    "dialect": "kabardian",
+    "notes": "C-11.4: lokal preverb. Kok: гу (kalp)."
+  },
+  {
+    "id": "M-BLE",
+    "form": "блэ",
+    "gloss": "yanindan",
+    "type": "grammatical",
+    "dialect": "kabardian",
+    "notes": "C-11.4: lokal preverb. Kok: блэ (kol)."
+  },
+  {
+    "id": "M-CH1E",
+    "form": "ч1э",
+    "gloss": "altinda",
+    "type": "grammatical",
+    "dialect": "kabardian",
+    "notes": "C-11.4: lokal preverb. Kok: ч1э (dip)."
+  },
+  {
+    "id": "M-K1UETS1Y",
+    "form": "к1уэц1ы",
+    "gloss": "icinde",
+    "type": "grammatical",
+    "dialect": "kabardian",
+    "notes": "C-11.4: lokal preverb."
+  },
+  {
+    "id": "M-PKHY",
+    "form": "пхы",
+    "gloss": "icinden",
+    "type": "grammatical",
+    "dialect": "kabardian",
+    "notes": "C-11.4: lokal preverb."
+  },
+  {
+    "id": "M-DE2",
+    "form": "дэ",
+    "gloss": "birlikte",
+    "type": "grammatical",
+    "dialect": "kabardian",
+    "notes": "C-11.4: birliktelik oneki."
+  },
+  {
+    "id": "M-ZE",
+    "form": "зэ",
+    "gloss": "karsilikli",
+    "type": "grammatical",
+    "dialect": "kabardian",
+    "notes": "C-11.4: karsiliklilik oneki."
+  },
+  {
+    "id": "M-KHUE3",
+    "form": "хуэ",
+    "gloss": "icin (versiyon/potansiyel)",
+    "type": "grammatical",
+    "dialect": "kabardian",
+    "notes": "C-11.4: versiyon/potansiyel oneki."
+  },
+  {
+    "id": "M-KE",
+    "form": "къэ",
+    "gloss": "konusana dogru",
+    "type": "grammatical",
+    "dialect": "kabardian",
+    "notes": "C-11.4: yon oneki."
+  },
+  {
+    "id": "M-NE2",
+    "form": "нэ",
+    "gloss": "konusandan uzaga",
+    "type": "grammatical",
+    "dialect": "kabardian",
+    "notes": "C-11.4: yon oneki."
+  },
+  {
+    "id": "M-ZE2",
+    "form": "зэ",
+    "gloss": "donusluluk",
+    "type": "grammatical",
+    "dialect": "kabardian",
+    "notes": "C-11.4: donusluluk oneki."
+  },
+  {
+    "id": "M-1UE",
+    "form": "ӏуэ",
+    "gloss": "soylemek",
+    "type": "lexical",
+    "dialect": "kabardian",
+    "notes": "C-11.4: soylemek."
+  },
+  {
+    "id": "M-PSYSE",
+    "form": "псысэ",
+    "gloss": "dusunce",
+    "type": "lexical",
+    "dialect": "kabardian",
+    "notes": "C-11.4: dusunce."
+  },
+  {
+    "id": "M-PLHE",
+    "form": "плъэ",
+    "gloss": "bakmak",
+    "type": "lexical",
+    "dialect": "kabardian",
+    "notes": "C-11.4: bakmak."
+  },
+  {
+    "id": "M-KHER",
+    "form": "-хэр",
+    "gloss": "PL.ABS",
+    "meaning": "cogul mutlak",
+    "category": "plural"
+  },
+  {
+    "id": "M-KHEM",
+    "form": "-хэм",
+    "gloss": "PL.OBL",
+    "meaning": "cogul egik",
+    "category": "plural"
+  },
+  {
+    "id": "M-RE",
+    "form": "-рэ",
+    "gloss": "COORD",
+    "meaning": "baglama eki",
+    "category": "conjunction"
+  },
+  {
+    "id": "M-QE",
+    "form": "къы-",
+    "gloss": "DIR/ABL",
+    "meaning": "konusana dogru",
+    "category": "prefix"
+  },
+  {
+    "id": "M-KHE",
+    "form": "хэ-",
+    "gloss": "IN/INESS",
+    "meaning": "icinde bulunma",
+    "category": "prefix"
+  },
+  {
+    "id": "M-TE",
+    "form": "те-",
+    "gloss": "SUPER/SUPERESS",
+    "meaning": "uzerinde bulunma",
+    "category": "prefix"
+  },
+  {
+    "id": "M-K1ERY",
+    "form": "кӀэры-",
+    "gloss": "AD/ADESS",
+    "meaning": "yanina bitisik",
+    "category": "prefix"
+  },
+  {
+    "id": "M-BGHEDE",
+    "form": "бгъэдэ-",
+    "gloss": "AD/PROX",
+    "meaning": "yaninda/yakininda",
+    "category": "prefix"
+  },
+  {
+    "id": "M-1U",
+    "form": "Ӏу-",
+    "gloss": "LAT/FRONT",
+    "meaning": "onunde/hizasinda",
+    "category": "prefix"
+  },
+  {
+    "id": "M-ZHEDE",
+    "form": "жьэдэ-",
+    "gloss": "IN.MOUTH",
+    "meaning": "agzin icinde",
+    "category": "prefix"
+  },
+  {
+    "id": "M-SY",
+    "form": "сы-",
+    "gloss": "1SG",
+    "meaning": "1. tekil sahis (ben)",
+    "category": "person"
+  },
+  {
+    "id": "M-U",
+    "form": "у-",
+    "gloss": "2SG",
+    "meaning": "2. tekil sahis (sen)",
+    "category": "person"
+  },
+  {
+    "id": "M-I",
+    "form": "и-",
+    "gloss": "3SG",
+    "meaning": "3. tekil sahis (o)",
+    "category": "person"
+  },
+  {
+    "id": "M-DY",
+    "form": "ды-",
+    "gloss": "1PL",
+    "meaning": "1. cogul sahis (biz)",
+    "category": "person"
+  },
+  {
+    "id": "M-FY",
+    "form": "фы-",
+    "gloss": "2PL",
+    "meaning": "2. cogul sahis (siz)",
+    "category": "person"
+  },
+  {
+    "id": "M-YA",
+    "form": "я-",
+    "gloss": "3PL",
+    "meaning": "3. cogul sahis (onlar)",
+    "category": "person"
+  },
+  {
+    "id": "M-K1YM",
+    "form": "-къым",
+    "gloss": "NEG",
+    "meaning": "olumsuzluk",
+    "category": "negation"
+  },
+  {
+    "id": "M-NUSHCH",
+    "form": "-нущ",
+    "gloss": "FUT",
+    "meaning": "gelecek zaman",
+    "category": "tense"
+  },
+  {
+    "id": "M-ASHCH",
+    "form": "-ащ",
+    "gloss": "PST",
+    "meaning": "gecmis zaman",
+    "category": "tense"
+  },
+  {
+    "id": "M-ZH",
+    "form": "-ж",
+    "gloss": "REPET/REV",
+    "meaning": "tekrar/geri donme",
+    "category": "aspect"
+  },
+  {
+    "id": "M-ZHYY",
+    "form": "жьы",
+    "ipa": "/ʑǝ/",
+    "gloss": "eski, yaşlı",
+    "type": "lexical",
+    "dialect": "both",
+    "equivalent": {
+      "adyghe": "жьы",
+      "kabardian": "жьы"
+    },
+    "exampleLexemeIds": [
+      "L-NEBZHYTS",
+      "L-ZHY",
+      "L-NYBZHYSHXUE",
+      "L-NEBZHYTSYLE",
+      "L-LEZHYGHE"
+    ],
+    "notes": "derivation.components taramasindan uretildi; kaynak: root.primaryMeaning; 268 lexeme'de bilesen"
+  },
+  {
+    "id": "M-QA",
+    "form": "къа",
+    "gloss": "",
+    "exampleLexemeIds": [
+      "L-SHQAGHE",
+      "L-KALMYK",
+      "L-KARGHE",
+      "L-KASHCHXHUE",
+      "L-KARAL"
+    ],
+    "notes": "derivation.components taramasindan uretildi; ANLAM KANITI YOK (gloss bos); 248 lexeme'de bilesen"
+  },
+  {
+    "id": "M-PSY",
+    "form": "псы",
+    "ipa": "/psǝ/",
+    "gloss": "su",
+    "type": "lexical",
+    "dialect": "both",
+    "equivalent": {
+      "adyghe": "псы",
+      "kabardian": "псы"
+    },
+    "exampleLexemeIds": [
+      "L-GUPSYSE",
+      "L-LHEPS",
+      "L-PSYNE",
+      "L-PSYXHUE",
+      "L-PSYEJEH"
+    ],
+    "notes": "derivation.components taramasindan uretildi; kaynak: root.primaryMeaning; 191 lexeme'de bilesen"
+  },
+  {
+    "id": "M-ZHYE",
+    "form": "жьэ",
+    "ipa": "/ʑɐ/",
+    "gloss": "agiz",
+    "type": "lexical",
+    "exampleLexemeIds": [
+      "L-LHEGUA",
+      "L-PEBZHE",
+      "L-UNELHABZHE",
+      "L-LEZHEN",
+      "L-LEZHENYM"
+    ],
+    "notes": "derivation.components taramasindan uretildi; kaynak: lexeme.literalMeaning; 189 lexeme'de bilesen"
+  },
+  {
+    "id": "M-ANE",
+    "form": "анэ",
+    "ipa": "/'ɐnɐ/",
+    "gloss": "anne",
+    "type": "lexical",
+    "dialect": "both",
+    "equivalent": {
+      "adyghe": "анэ",
+      "kabardian": "анэ"
+    },
+    "exampleLexemeIds": [
+      "L-ANESHHUE",
+      "L-ANESHYPHUE",
+      "L-ANEKUESHH",
+      "L-UNEPL1ANAPE",
+      "L-NYSHYPHUE"
+    ],
+    "notes": "derivation.components taramasindan uretildi; kaynak: root.primaryMeaning; 141 lexeme'de bilesen"
+  },
+  {
+    "id": "M-BZE",
+    "form": "бзэ",
+    "ipa": "/bzɐ/",
+    "gloss": "dil, lisan",
+    "type": "lexical",
+    "dialect": "both",
+    "equivalent": {
+      "adyghe": "бзэ",
+      "kabardian": "бзэ"
+    },
+    "exampleLexemeIds": [
+      "L-BZE",
+      "L-BZEGU",
+      "L-BZEPSE",
+      "L-BZESHXUE",
+      "L-BZEBZA"
+    ],
+    "notes": "derivation.components taramasindan uretildi; kaynak: root.primaryMeaning; 137 lexeme'de bilesen"
+  },
+  {
+    "id": "M-TKH",
+    "form": "тхьэ",
+    "ipa": "/tħɐ/",
+    "gloss": "tanri; Tanri, yaratici",
+    "type": "lexical",
+    "exampleLexemeIds": [
+      "L-TKHEK1UME",
+      "L-TKHEK1UMECH1YH",
+      "L-TKHEMAKHUE",
+      "L-TKHEMADE",
+      "L-MAZTKHERUQAF"
+    ],
+    "notes": "derivation.components taramasindan uretildi; kaynak: lexeme.literalMeaning; 105 lexeme'de bilesen"
+  },
+  {
+    "id": "M-DZE",
+    "form": "дзэ",
+    "ipa": "/dzɐ/",
+    "gloss": "ordu",
+    "type": "lexical",
+    "dialect": "both",
+    "equivalent": {
+      "adyghe": "дзэ",
+      "kabardian": "дзэ"
+    },
+    "exampleLexemeIds": [
+      "L-NABDZE",
+      "L-DZE",
+      "L-BDZE",
+      "L-DZEGHUE",
+      "L-DZEL"
+    ],
+    "notes": "derivation.components taramasindan uretildi; kaynak: root.primaryMeaning; 100 lexeme'de bilesen"
+  },
+  {
+    "id": "M-SHY",
+    "form": "шы",
+    "ipa": "/ʂǝ/",
+    "gloss": "at",
+    "type": "lexical",
+    "exampleLexemeIds": [
+      "L-SHYPHUE",
+      "L-SHYPHUE-NAKHYZH",
+      "L-SHYD",
+      "L-SHYBZHIY",
+      "L-SHYSHCHE1U"
+    ],
+    "notes": "derivation.components taramasindan uretildi; kaynak: lexeme.literalMeaning; 95 lexeme'de bilesen"
+  },
+  {
+    "id": "M-TKHE",
+    "form": "тхэ",
+    "ipa": "/tɐn/",
+    "gloss": "yazı",
+    "type": "lexical",
+    "dialect": "kabardian",
+    "exampleLexemeIds": [
+      "L-TKHEN",
+      "L-GHATXE",
+      "L-GHATKHEPE",
+      "L-CORPUS-00109",
+      "L-CORPUS-00218"
+    ],
+    "notes": "derivation.components taramasindan uretildi; kaynak: lexeme.translations.tr; 80 lexeme'de bilesen"
+  },
+  {
+    "id": "M-PSHCHE",
+    "form": "пщэ",
+    "ipa": "/pɕɐ/",
+    "gloss": "boyun",
+    "type": "lexical",
+    "exampleLexemeIds": [
+      "L-PSHEDDZHYZH",
+      "L-PSHCHE",
+      "L-1EPSHHE",
+      "L-PSHCHEDEY",
+      "L-DEGHUAPSHEH"
+    ],
+    "notes": "derivation.components taramasindan uretildi; kaynak: lexeme.literalMeaning; 79 lexeme'de bilesen"
+  },
+  {
+    "id": "M-BGHW",
+    "form": "бгъу",
+    "ipa": "/bʁʷǝ/",
+    "gloss": "dokuz",
+    "type": "lexical",
+    "exampleLexemeIds": [
+      "L-BGHWU",
+      "L-BGHUSHCH",
+      "L-BGHUE",
+      "L-BGHUEGHU",
+      "L-D0B3D183D0B1-2"
+    ],
+    "notes": "derivation.components taramasindan uretildi; kaynak: lexeme.literalMeaning; 77 lexeme'de bilesen"
+  },
+  {
+    "id": "M-BGHA",
+    "form": "бгъэ",
+    "ipa": "/bʁɐ/",
+    "gloss": "göğüs",
+    "type": "lexical",
+    "exampleLexemeIds": [
+      "L-D0B1D0B3D18A",
+      "L-CORPUS-00771",
+      "L-CORPUS-01522",
+      "L-CORPUS-01776",
+      "L-CORPUS-01906"
+    ],
+    "notes": "derivation.components taramasindan uretildi; kaynak: lexeme.literalMeaning; 77 lexeme'de bilesen"
+  },
+  {
+    "id": "M-PKHA",
+    "form": "пхъэ",
+    "ipa": "/pχɐ/",
+    "gloss": "odun, tahta",
+    "type": "lexical",
+    "exampleLexemeIds": [
+      "L-PKHEKHUEY",
+      "L-PKHEZHABE",
+      "L-PKHEZHABE2",
+      "L-D0BFD185D18A",
+      "L-D0BFD185D18A-2"
+    ],
+    "notes": "derivation.components taramasindan uretildi; kaynak: lexeme.literalMeaning; 75 lexeme'de bilesen"
+  },
+  {
+    "id": "M-SHE2",
+    "form": "шэ",
+    "ipa": "/ʂɐ/",
+    "gloss": "süt",
+    "type": "lexical",
+    "dialect": "adyghe",
+    "equivalent": {
+      "adyghe": "шэ",
+      "kabardian": "щэ"
+    },
+    "exampleLexemeIds": [
+      "L-SHE",
+      "L-SHEPS",
+      "L-SHESHEN",
+      "L-SHEZAQUEURYUE",
+      "L-D188D18DD0BD"
+    ],
+    "notes": "derivation.components taramasindan uretildi; kaynak: root.primaryMeaning; 73 lexeme'de bilesen"
+  },
+  {
+    "id": "M-ADE",
+    "form": "адэ",
+    "ipa": "/'ɐdɐ/",
+    "gloss": "baba",
+    "type": "lexical",
+    "dialect": "both",
+    "equivalent": {
+      "adyghe": "адэ",
+      "kabardian": "адэ"
+    },
+    "exampleLexemeIds": [
+      "L-ADESHHUE",
+      "L-ADEKUESHH",
+      "L-ADESHYPHUE",
+      "L-DADESHHUE",
+      "L-KUAPEZADE"
+    ],
+    "notes": "derivation.components taramasindan uretildi; kaynak: root.primaryMeaning; 63 lexeme'de bilesen"
+  },
+  {
+    "id": "M-TKHY",
+    "form": "тхы",
+    "ipa": "/txǝ/",
+    "gloss": "omurga",
+    "type": "lexical",
+    "exampleLexemeIds": [
+      "L-TKHY",
+      "L-D182D185D18B",
+      "L-D182D185D18B-2",
+      "L-TXYN",
+      "L-TX"
+    ],
+    "notes": "derivation.components taramasindan uretildi; kaynak: lexeme.literalMeaning; 62 lexeme'de bilesen"
+  },
+  {
+    "id": "M-BZY",
+    "form": "бзы",
+    "ipa": "/bzǝ/",
+    "gloss": "Arı beyi, ana arı",
+    "type": "lexical",
+    "dialect": "kabardian",
+    "exampleLexemeIds": [
+      "L-GUBZHYGE",
+      "L-1EBZYGE",
+      "L-1URYBZEBZYXHYN",
+      "L-BZYLKHUGHE",
+      "L-D0B3D183D0B1-3"
+    ],
+    "notes": "derivation.components taramasindan uretildi; kaynak: lexeme.translations.tr; 61 lexeme'de bilesen"
+  },
+  {
+    "id": "M-MYL",
+    "form": "мыл",
+    "ipa": "/mǝɮ/",
+    "gloss": "BUZCU",
+    "type": "lexical",
+    "dialect": "kabardian",
+    "exampleLexemeIds": [
+      "L-CORPUS-00201",
+      "L-CORPUS-00681",
+      "L-CORPUS-00896",
+      "L-CORPUS-01405",
+      "L-CORPUS-01610"
+    ],
+    "notes": "derivation.components taramasindan uretildi; kaynak: lexeme.translations.tr; 61 lexeme'de bilesen"
+  },
+  {
+    "id": "M-LEZH",
+    "form": "лэжь",
+    "ipa": "/ɮɐn/",
+    "gloss": "calismak",
+    "type": "lexical",
+    "dialect": "both",
+    "equivalent": {
+      "adyghe": "лэжь",
+      "kabardian": "лэжь"
+    },
+    "exampleLexemeIds": [
+      "L-LEZH",
+      "L-LEZHEN",
+      "L-LEZHYGHE",
+      "L-LEZHENYM",
+      "L-LEZHAK1UE"
+    ],
+    "notes": "derivation.components taramasindan uretildi; kaynak: root.primaryMeaning; 58 lexeme'de bilesen"
+  },
+  {
+    "id": "M-PXU",
+    "form": "пхъу",
+    "ipa": "/pχʷǝ/",
+    "gloss": "kiz ; kiz",
+    "type": "lexical",
+    "exampleLexemeIds": [
+      "L-P1ETEPXHUE",
+      "L-SHYPHUE",
+      "L-ADESHYPHUE",
+      "L-ANESHYPHUE",
+      "L-NYSHYPHUE"
+    ],
+    "notes": "derivation.components taramasindan uretildi; kaynak: lexeme.literalMeaning; 55 lexeme'de bilesen"
+  },
+  {
+    "id": "M-CHE",
+    "form": "чэ",
+    "ipa": "/tʂɐ/",
+    "gloss": "Dalak",
+    "type": "lexical",
+    "dialect": "adyghe",
+    "exampleLexemeIds": [
+      "L-CHEREZ",
+      "L-CORPUS-00363",
+      "L-CORPUS-00467",
+      "L-CORPUS-00560",
+      "L-CORPUS-00627"
+    ],
+    "notes": "derivation.components taramasindan uretildi; kaynak: lexeme.literalMeaning; 51 lexeme'de bilesen"
+  },
+  {
+    "id": "M-SHKHE",
+    "form": "шхэ",
+    "ipa": "/ʂxɐ/",
+    "gloss": "BOĞAZLI",
+    "type": "lexical",
+    "dialect": "adyghe",
+    "exampleLexemeIds": [
+      "L-SHKHEN",
+      "L-CORPUS-00790",
+      "L-CORPUS-00928",
+      "L-CORPUS-01030",
+      "L-CORPUS-01120"
+    ],
+    "notes": "derivation.components taramasindan uretildi; kaynak: lexeme.literalMeaning; 45 lexeme'de bilesen"
+  },
+  {
+    "id": "M-BZHYE",
+    "form": "бжьэ",
+    "ipa": "/bʑɐ/",
+    "gloss": "ari",
+    "type": "lexical",
+    "exampleLexemeIds": [
+      "L-PEBZHE",
+      "L-UNELHABZHE",
+      "L-NYBZHEGHU",
+      "L-BZHE",
+      "L-ZENYBZHEGHU"
+    ],
+    "notes": "derivation.components taramasindan uretildi; kaynak: lexeme.literalMeaning; 41 lexeme'de bilesen"
+  },
+  {
+    "id": "M-MEL",
+    "form": "мэл",
+    "ipa": "/mɐɮ/",
+    "gloss": "koyun",
+    "type": "lexical",
+    "exampleLexemeIds": [
+      "L-MELHXEGHU",
+      "L-MEL",
+      "L-MELYJ",
+      "L-MELYL",
+      "L-CORPUS-00796"
+    ],
+    "notes": "derivation.components taramasindan uretildi; kaynak: lexeme.literalMeaning; 37 lexeme'de bilesen"
+  },
+  {
+    "id": "M-PSE_2",
+    "form": "псэлъ",
+    "gloss": "",
+    "exampleLexemeIds": [
+      "L-PSELHYQHU",
+      "L-PSELHEN",
+      "L-CORPUS-00564",
+      "L-CORPUS-00972",
+      "L-CORPUS-01520"
+    ],
+    "notes": "derivation.components taramasindan uretildi; ANLAM KANITI YOK (gloss bos); 36 lexeme'de bilesen"
+  },
+  {
+    "id": "M-IN",
+    "form": "ин",
+    "ipa": "/jǝn/",
+    "gloss": "büyük; buyuk",
+    "type": "lexical",
+    "exampleLexemeIds": [
+      "L-IN",
+      "L-CORPUS-00182",
+      "L-CORPUS-00290",
+      "L-CORPUS-00549",
+      "L-CORPUS-01686"
+    ],
+    "notes": "derivation.components taramasindan uretildi; kaynak: lexeme.literalMeaning; 35 lexeme'de bilesen"
+  },
+  {
+    "id": "M-MAKHUE",
+    "form": "махуэ",
+    "ipa": "/'mɑ:xʷɐ/",
+    "gloss": "gun",
+    "type": "lexical",
+    "dialect": "both",
+    "equivalent": {
+      "adyghe": "махуэ",
+      "kabardian": "махуэ"
+    },
+    "exampleLexemeIds": [
+      "L-MAKHUESHHUE",
+      "L-TKHEMAKHUE",
+      "L-MAKHUE",
+      "L-SHCHYMAKHUE",
+      "L-VESEMAKHUE"
+    ],
+    "notes": "derivation.components taramasindan uretildi; kaynak: root.primaryMeaning; 34 lexeme'de bilesen"
+  },
+  {
+    "id": "M-BGY",
+    "form": "бгы",
+    "ipa": "/bɣǝ/",
+    "gloss": "bel",
+    "type": "lexical",
+    "exampleLexemeIds": [
+      "L-BGY",
+      "L-D0B1D0B3D18B",
+      "L-D0B1D0B3D18B-2",
+      "L-CORPUS-00086",
+      "L-CORPUS-01372"
+    ],
+    "notes": "derivation.components taramasindan uretildi; kaynak: lexeme.literalMeaning; 34 lexeme'de bilesen"
+  },
+  {
+    "id": "M-BZHE",
+    "form": "бжэ",
+    "ipa": "/bᶎɐ/",
+    "gloss": "kapı",
+    "type": "lexical",
+    "exampleLexemeIds": [
+      "L-SHHYEGUBZHE",
+      "L-UNEBZHE",
+      "L-GHUABZHE",
+      "L-D0B1D0B6D18D",
+      "L-D0B1D0B6D18D-2"
+    ],
+    "notes": "derivation.components taramasindan uretildi; kaynak: lexeme.literalMeaning; 29 lexeme'de bilesen"
+  },
+  {
+    "id": "M-KHY",
+    "form": "хы",
+    "ipa": "/xǝ/",
+    "gloss": "deniz, okyanus",
+    "type": "lexical",
+    "dialect": "both",
+    "equivalent": {
+      "adyghe": "хы",
+      "kabardian": "хы"
+    },
+    "exampleLexemeIds": [
+      "L-KHY",
+      "L-KHYKKHUHE",
+      "L-KHYSHCH",
+      "L-D185D18BD189",
+      "L-D185D18BD182"
+    ],
+    "notes": "derivation.components taramasindan uretildi; kaynak: root.primaryMeaning; 29 lexeme'de bilesen"
+  },
+  {
+    "id": "M-MEZ",
+    "form": "мэз",
+    "ipa": "/mɐz/",
+    "gloss": "orman",
+    "type": "lexical",
+    "dialect": "both",
+    "equivalent": {
+      "adyghe": "мэз",
+      "kabardian": "мэз"
+    },
+    "exampleLexemeIds": [
+      "L-MEZ",
+      "L-MEZYM",
+      "L-MEZXER",
+      "L-MEZY",
+      "L-MEZKOGHUM"
+    ],
+    "notes": "derivation.components taramasindan uretildi; kaynak: root.primaryMeaning; 29 lexeme'de bilesen"
+  },
+  {
+    "id": "M-KHABZE",
+    "form": "хабзэ",
+    "ipa": "/'xɑ:bzɐ/",
+    "gloss": "gelenek, orf, kural",
+    "type": "lexical",
+    "exampleLexemeIds": [
+      "L-KHABZE",
+      "L-CORPUS-01016",
+      "L-CORPUS-01602",
+      "L-CORPUS-02204",
+      "L-CORPUS-02273"
+    ],
+    "notes": "derivation.components taramasindan uretildi; kaynak: lexeme.literalMeaning; 27 lexeme'de bilesen"
+  },
+  {
+    "id": "M-1UE-2",
+    "form": "Ӏуэ",
+    "ipa": "/ʔʷɐ/",
+    "gloss": "agiz, on",
+    "type": "lexical",
+    "exampleLexemeIds": [
+      "L-1UEKHUASHHUE",
+      "L-GUZEVAK1UE",
+      "L-K1UEN",
+      "L-K1UE-IMP",
+      "L-K1UER"
+    ],
+    "notes": "derivation.components taramasindan uretildi; kaynak: lexeme.literalMeaning; 25 lexeme'de bilesen"
+  },
+  {
+    "id": "M-SH1Y",
+    "form": "щӀы",
+    "ipa": "/ɕʹǝ/",
+    "gloss": "toprak, yer, dünya",
+    "type": "lexical",
+    "dialect": "both",
+    "equivalent": {
+      "adyghe": "щӀы",
+      "kabardian": "щӀы"
+    },
+    "exampleLexemeIds": [
+      "L-SH1Y",
+      "L-SH1YDAGHE",
+      "L-PSH1Y",
+      "L-SHCHYMAKHUE",
+      "L-SHCHYGU"
+    ],
+    "notes": "derivation.components taramasindan uretildi; kaynak: root.primaryMeaning; 24 lexeme'de bilesen"
+  },
+  {
+    "id": "M-UAF",
+    "form": "уафэ",
+    "ipa": "/'wɑ:fɐ/",
+    "gloss": "gokyuzu",
+    "type": "lexical",
+    "exampleLexemeIds": [
+      "L-UAFE",
+      "L-WAFEGHUAGHUE",
+      "L-WAFEKHUEPSK1",
+      "L-KEHWAUAFE",
+      "L-D183D0B0D184"
+    ],
+    "notes": "derivation.components taramasindan uretildi; kaynak: lexeme.literalMeaning; 24 lexeme'de bilesen"
+  },
+  {
+    "id": "M-ZHAM",
+    "form": "жэм",
+    "ipa": "/ᶎɐm/",
+    "gloss": "inek",
+    "type": "lexical",
+    "exampleLexemeIds": [
+      "L-ZHEM",
+      "L-CORPUS-01786",
+      "L-CORPUS-03130",
+      "L-CORPUS-03732",
+      "L-CORPUS2-00183"
+    ],
+    "notes": "derivation.components taramasindan uretildi; kaynak: lexeme.literalMeaning; 23 lexeme'de bilesen"
+  },
+  {
+    "id": "M-UESH",
+    "form": "уэшх",
+    "ipa": "/wɐʂx/",
+    "gloss": "yagmur",
+    "type": "lexical",
+    "exampleLexemeIds": [
+      "L-MAKHUESHHUE",
+      "L-UESHX",
+      "L-CORPUS-02199",
+      "L-CORPUS-02951",
+      "L-CORPUS-04677"
+    ],
+    "notes": "derivation.components taramasindan uretildi; kaynak: lexeme.literalMeaning; 22 lexeme'de bilesen"
+  },
+  {
+    "id": "M-PSHE",
+    "form": "пшэ",
+    "ipa": "/pʂɐ/",
+    "gloss": "BULUT",
+    "type": "lexical",
+    "dialect": "kabardian",
+    "exampleLexemeIds": [
+      "L-CORPUS-00401",
+      "L-CORPUS-00604",
+      "L-CORPUS-02153",
+      "L-CORPUS-03035",
+      "L-CORPUS-04461"
+    ],
+    "notes": "derivation.components taramasindan uretildi; kaynak: lexeme.literalMeaning; 21 lexeme'de bilesen"
+  },
+  {
+    "id": "M-SHCHXUE",
+    "form": "щхъуэ",
+    "ipa": "/ɕχʷɐ/",
+    "gloss": "mavi",
+    "type": "lexical",
+    "dialect": "both",
+    "equivalent": {
+      "adyghe": "щхъуэ",
+      "kabardian": "щхъуэ"
+    },
+    "exampleLexemeIds": [
+      "L-SHHXHUE",
+      "L-KASHCHXHUE",
+      "L-D0B1D0B3D18A-2",
+      "L-CORPUS-00483",
+      "L-CORPUS-00505"
+    ],
+    "notes": "derivation.components taramasindan uretildi; kaynak: lexeme.literalMeaning; 19 lexeme'de bilesen"
+  },
+  {
+    "id": "M-DYG_1",
+    "form": "дыгъэ",
+    "ipa": "/'dǝʁɐ/",
+    "gloss": "gunes",
+    "type": "lexical",
+    "exampleLexemeIds": [
+      "L-DYGHEGHEZ",
+      "L-D0B4D18BD0B3",
+      "L-D0B4D18BD0B3-2",
+      "L-DYGHE",
+      "L-CORPUS-00507"
+    ],
+    "notes": "derivation.components taramasindan uretildi; kaynak: lexeme.literalMeaning; 19 lexeme'de bilesen"
+  },
+  {
+    "id": "M-FO",
+    "form": "фо",
+    "ipa": "/fo:/",
+    "gloss": "bal",
+    "type": "lexical",
+    "dialect": "both",
+    "equivalent": {
+      "adyghe": "фо",
+      "kabardian": "фо"
+    },
+    "exampleLexemeIds": [
+      "L-FO",
+      "L-FOSHYGHU",
+      "L-FOK1ADE",
+      "L-D184D0BED188",
+      "L-CORPUS-00589"
+    ],
+    "notes": "derivation.components taramasindan uretildi; kaynak: root.primaryMeaning; 18 lexeme'de bilesen"
+  },
+  {
+    "id": "M-LY",
+    "form": "лы",
+    "ipa": "/ɮǝ/",
+    "gloss": "et",
+    "type": "lexical",
+    "exampleLexemeIds": [
+      "L-LY",
+      "L-D0BBD18BD0B3",
+      "L-D0BBD18BD0B3-2",
+      "L-CORPUS-01249",
+      "L-CORPUS-02265"
+    ],
+    "notes": "derivation.components taramasindan uretildi; kaynak: lexeme.literalMeaning; 18 lexeme'de bilesen"
+  },
+  {
+    "id": "M-CHET",
+    "form": "чэт",
+    "ipa": "/tʂɐt/",
+    "gloss": "sheepfold, sheep-shed",
+    "type": "lexical",
+    "dialect": "adyghe",
+    "exampleLexemeIds": [
+      "L-MEZCHET",
+      "L-CORPUS-00627",
+      "L-CORPUS-02311",
+      "L-CORPUS-02459",
+      "L-CORPUS-02886"
+    ],
+    "notes": "derivation.components taramasindan uretildi; kaynak: lexeme.literalMeaning; 18 lexeme'de bilesen"
+  },
+  {
+    "id": "M-OS",
+    "form": "ос",
+    "ipa": "/wɐs/",
+    "gloss": "ос / уэс КЪЕСЫН KAR YAĞMAK",
+    "type": "lexical",
+    "dialect": "adyghe",
+    "exampleLexemeIds": [
+      "L-PSEY",
+      "L-CORPUS-00891",
+      "L-CORPUS-01300",
+      "L-CORPUS-02350",
+      "L-CORPUS-03138"
+    ],
+    "notes": "derivation.components taramasindan uretildi; kaynak: 8.Ady-Tur_Huvaj.json (sozluk); 15 lexeme'de bilesen"
+  },
+  {
+    "id": "M-BZU",
+    "form": "бзу",
+    "ipa": "/bzu:/",
+    "gloss": "kus",
+    "type": "lexical",
+    "dialect": "both",
+    "equivalent": {
+      "adyghe": "бзу",
+      "kabardian": "бзу"
+    },
+    "exampleLexemeIds": [
+      "L-BZU",
+      "L-PSYBZU",
+      "L-D0B1D0B7D183",
+      "L-CORPUS-01410",
+      "L-CORPUS2-02616"
+    ],
+    "notes": "derivation.components taramasindan uretildi; kaynak: root.primaryMeaning; 11 lexeme'de bilesen"
+  },
+  {
+    "id": "M-PL",
+    "form": "плъыжь",
+    "ipa": "/pɬǝʑ/",
+    "gloss": "kirmizi",
+    "type": "lexical",
+    "dialect": "both",
+    "equivalent": {
+      "adyghe": "плъыжь",
+      "kabardian": "плъыжь"
+    },
+    "exampleLexemeIds": [
+      "L-PLHYZH",
+      "L-CORPUS-01190",
+      "L-CORPUS-03920",
+      "L-CORPUS2-03948",
+      "L-CORPUS2-06021"
+    ],
+    "notes": "derivation.components taramasindan uretildi; kaynak: lexeme.literalMeaning; 11 lexeme'de bilesen"
+  },
+  {
+    "id": "M-SHYGHU",
+    "form": "шыгъу",
+    "ipa": "/ʂǝʁʷ/",
+    "gloss": "tuz",
+    "type": "lexical",
+    "exampleLexemeIds": [
+      "L-FOSHYGHU",
+      "L-D188D18BD0B3",
+      "L-D188D18BD0B3-2",
+      "L-D184D0BED188",
+      "L-CORPUS-01723"
+    ],
+    "notes": "derivation.components taramasindan uretildi; kaynak: lexeme.literalMeaning; 10 lexeme'de bilesen"
+  },
+  {
+    "id": "M-MAZ",
+    "form": "мазэ",
+    "ipa": "/'mɑ:zɐ/",
+    "gloss": "ay",
+    "type": "lexical",
+    "dialect": "both",
+    "equivalent": {
+      "adyghe": "мазэ",
+      "kabardian": "мазэ"
+    },
+    "exampleLexemeIds": [
+      "L-MAZE",
+      "L-D0BCD0B0D0B7",
+      "L-CORPUS-03702",
+      "L-CORPUS2-01011",
+      "L-CORPUS2-01790"
+    ],
+    "notes": "derivation.components taramasindan uretildi; kaynak: lexeme.literalMeaning; 10 lexeme'de bilesen"
+  },
+  {
+    "id": "M-KHUZH",
+    "form": "хужь",
+    "ipa": "/xʷǝʑ/",
+    "gloss": "beyaz",
+    "type": "lexical",
+    "dialect": "both",
+    "equivalent": {
+      "adyghe": "хужь",
+      "kabardian": "хужь"
+    },
+    "exampleLexemeIds": [
+      "L-KHUZH",
+      "L-CORPUS-01866",
+      "L-CORPUS-03464",
+      "L-CORPUS-04126",
+      "L-CORPUS-04211"
+    ],
+    "notes": "derivation.components taramasindan uretildi; kaynak: lexeme.literalMeaning; 9 lexeme'de bilesen"
+  },
+  {
+    "id": "M-MYV",
+    "form": "мывэ",
+    "ipa": "/'mǝvɐ/",
+    "gloss": "tas",
+    "type": "lexical",
+    "exampleLexemeIds": [
+      "L-MYVE",
+      "L-CORPUS-03867",
+      "L-CORPUS-04674",
+      "L-CORPUS2-01411",
+      "L-CORPUS2-01414"
+    ],
+    "notes": "derivation.components taramasindan uretildi; kaynak: lexeme.literalMeaning; 9 lexeme'de bilesen"
+  },
+  {
+    "id": "M-VAG",
+    "form": "вагъуэ",
+    "ipa": "/'vɑ:ʁʷɐ/",
+    "gloss": "yildiz",
+    "type": "lexical",
+    "dialect": "kabardian",
+    "equivalent": {
+      "adyghe": "жъуагъуэ",
+      "kabardian": "вагъуэ"
+    },
+    "exampleLexemeIds": [
+      "L-D0B2D0B0D0B3",
+      "L-VAGHUE",
+      "L-CORPUS-03204",
+      "L-CORPUS2-02466",
+      "L-CORPUS2-04592"
+    ],
+    "notes": "derivation.components taramasindan uretildi; kaynak: lexeme.literalMeaning; 9 lexeme'de bilesen"
+  },
+  {
+    "id": "M-DAGHE",
+    "form": "дагъэ",
+    "ipa": "/'dɑ:ʁɐ/",
+    "gloss": "yağ, iç yağı",
+    "type": "lexical",
+    "dialect": "both",
+    "equivalent": {
+      "adyghe": "дагъэ",
+      "kabardian": "дагъэ"
+    },
+    "exampleLexemeIds": [
+      "L-DAGHE",
+      "L-SH1YDAGHE",
+      "L-ADAGHE",
+      "L-CORPUS-00906",
+      "L-CORPUS-01152"
+    ],
+    "notes": "derivation.components taramasindan uretildi; kaynak: root.primaryMeaning; 8 lexeme'de bilesen"
+  },
+  {
+    "id": "M-GHUELH",
+    "form": "гъуэлъ",
+    "gloss": "",
+    "exampleLexemeIds": [
+      "L-D0B3D18AD183-4",
+      "L-GHUELHYN",
+      "L-CORPUS-04175",
+      "L-CORPUS2-02265",
+      "L-VERIFIED-00251"
+    ],
+    "notes": "derivation.components taramasindan uretildi; ANLAM KANITI YOK (gloss bos); 8 lexeme'de bilesen"
+  },
+  {
+    "id": "M-SAB",
+    "form": "сабий",
+    "ipa": "/sɐ'bi:j/",
+    "gloss": "bebek, cocuk",
+    "type": "lexical",
+    "exampleLexemeIds": [
+      "L-SABIY",
+      "L-CORPUS-00206",
+      "L-CORPUS2-00224",
+      "L-CORPUS2-00309",
+      "L-CORPUS2-00533"
+    ],
+    "notes": "derivation.components taramasindan uretildi; kaynak: lexeme.literalMeaning; 7 lexeme'de bilesen"
+  },
+  {
+    "id": "M-NYBA",
+    "form": "ныбэ",
+    "ipa": "/'nǝbɐ/",
+    "gloss": "karin",
+    "type": "lexical",
+    "exampleLexemeIds": [
+      "L-NYBE",
+      "L-CORPUS2-02534",
+      "L-CORPUS2-03865",
+      "L-CORPUS2-03915",
+      "L-CORPUS2-04622"
+    ],
+    "notes": "derivation.components taramasindan uretildi; kaynak: lexeme.literalMeaning; 7 lexeme'de bilesen"
+  },
+  {
+    "id": "M-DYSHA",
+    "form": "дыщэ",
+    "ipa": "/'dǝɕɐ/",
+    "gloss": "altin",
+    "type": "lexical",
+    "exampleLexemeIds": [
+      "L-D0B4D18BD189",
+      "L-DYSHE",
+      "L-CORPUS-01091",
+      "L-CORPUS-04184",
+      "L-CORPUS2-02185"
+    ],
+    "notes": "derivation.components taramasindan uretildi; kaynak: lexeme.literalMeaning; 7 lexeme'de bilesen"
+  },
+  {
+    "id": "M-TET",
+    "form": "тэт",
+    "gloss": "",
+    "exampleLexemeIds": [
+      "L-TETAZH",
+      "L-CORPUS-02563",
+      "L-CORPUS2-07472",
+      "L-VERIFIED-00221",
+      "L-VERIFIED-01652"
+    ],
+    "notes": "derivation.components taramasindan uretildi; ANLAM KANITI YOK (gloss bos); 6 lexeme'de bilesen"
+  },
+  {
+    "id": "M-LIY",
+    "form": "лӀы",
+    "ipa": "/ɬʹǝ/",
+    "gloss": "erkek, adam, koca",
+    "type": "lexical",
+    "exampleLexemeIds": [
+      "L-PL1Y",
+      "L-PL1YSHCH",
+      "L-L1Y",
+      "L-L1YGHUABE",
+      "L-D0BFD0BBD380"
+    ],
+    "notes": "derivation.components taramasindan uretildi; kaynak: lexeme.literalMeaning; 6 lexeme'de bilesen"
+  },
+  {
+    "id": "M-GU_3",
+    "form": "гъуэжь",
+    "ipa": "/ʁʷɐʑ/",
+    "gloss": "sari",
+    "type": "lexical",
+    "dialect": "both",
+    "equivalent": {
+      "adyghe": "гъуэжь",
+      "kabardian": "гъуэжь"
+    },
+    "exampleLexemeIds": [
+      "L-GHUEZHY",
+      "L-DEGHUEZH",
+      "L-CORPUS-03756",
+      "L-CORPUS-04744",
+      "L-VERIFIED-01308"
+    ],
+    "notes": "derivation.components taramasindan uretildi; kaynak: lexeme.literalMeaning; 6 lexeme'de bilesen"
+  },
+  {
+    "id": "M-C1YKHU",
+    "form": "цӀыху",
+    "ipa": "/tʹsǝxʷ/",
+    "gloss": "insan",
+    "type": "lexical",
+    "exampleLexemeIds": [
+      "L-TSYXHU",
+      "L-TSYXHUBZ",
+      "L-TSYXHU3",
+      "L-C1YXUGHE",
+      "L-C1YXUN"
+    ],
+    "notes": "derivation.components taramasindan uretildi; kaynak: lexeme.literalMeaning; 6 lexeme'de bilesen"
+  },
+  {
+    "id": "M-SANA",
+    "form": "санэ",
+    "ipa": "/'sɑ:nɐ/",
+    "gloss": "Frenk üzümü",
+    "type": "lexical",
+    "dialect": "kabardian",
+    "exampleLexemeIds": [
+      "L-CORPUS-01174",
+      "L-CORPUS2-05317",
+      "L-CORPUS2-05925",
+      "L-CORPUS2-09511",
+      "L-VERIFIED-00289"
+    ],
+    "notes": "derivation.components taramasindan uretildi; kaynak: lexeme.translations.tr; 6 lexeme'de bilesen"
+  },
+  {
+    "id": "M-SHENT",
+    "form": "шэнт",
+    "ipa": "/ʂɐnt/",
+    "gloss": "sandalye",
+    "type": "lexical",
+    "exampleLexemeIds": [
+      "L-D188D18DD0BD-2",
+      "L-CORPUS-04359",
+      "L-CORPUS2-02717",
+      "L-CORPUS2-02788",
+      "L-CORPUS2-08380"
+    ],
+    "notes": "derivation.components taramasindan uretildi; kaynak: lexeme.literalMeaning; 5 lexeme'de bilesen"
+  },
+  {
+    "id": "M-DYZHYYN",
+    "form": "дыжьын",
+    "ipa": "/dǝ'ʑǝn/",
+    "gloss": "gümüş",
+    "type": "lexical",
+    "exampleLexemeIds": [
+      "L-D0B4D18BD0B6",
+      "L-CORPUS2-00321",
+      "L-CORPUS2-04836",
+      "L-VERIFIED-02278",
+      "L-VERIFIED-02302"
+    ],
+    "notes": "derivation.components taramasindan uretildi; kaynak: lexeme.literalMeaning; 5 lexeme'de bilesen"
+  },
+  {
+    "id": "M-DZHANE",
+    "form": "джанэ",
+    "ipa": "/'dᶎɑ:nɐ/",
+    "gloss": "Gömlek",
+    "type": "lexical",
+    "dialect": "kabardian",
+    "exampleLexemeIds": [
+      "L-D0BFD181D18B-4",
+      "L-CORPUS-00584",
+      "L-CORPUS2-00894",
+      "L-CORPUS2-07076",
+      "L-VERIFIED-00475"
+    ],
+    "notes": "derivation.components taramasindan uretildi; kaynak: lexeme.literalMeaning; 5 lexeme'de bilesen"
+  },
+  {
+    "id": "M-VY",
+    "form": "вы",
+    "ipa": "/vǝ/",
+    "gloss": "öküz",
+    "type": "lexical",
+    "dialect": "both",
+    "equivalent": {
+      "adyghe": "вы",
+      "kabardian": "вы"
+    },
+    "exampleLexemeIds": [
+      "L-VY",
+      "L-CORPUS-03500",
+      "L-CORPUS2-05119",
+      "L-CORPUS2-07278"
+    ],
+    "notes": "derivation.components taramasindan uretildi; kaynak: root.primaryMeaning; 4 lexeme'de bilesen"
+  },
+  {
+    "id": "M-GHUSH1",
+    "form": "гъущӀ",
+    "ipa": "/ʁʷǝɕʹ/",
+    "gloss": "demir",
+    "type": "lexical",
+    "exampleLexemeIds": [
+      "L-BGHUSHCH",
+      "L-D0B3D18AD183-6",
+      "L-D0B3D18AD183-7",
+      "L-D0B3D18AD183-8"
+    ],
+    "notes": "derivation.components taramasindan uretildi; kaynak: lexeme.literalMeaning; 4 lexeme'de bilesen"
+  },
+  {
+    "id": "M-MYSHA",
+    "form": "мыщэ",
+    "ipa": "/'mǝɕɐ/",
+    "gloss": "ayi",
+    "type": "lexical",
+    "exampleLexemeIds": [
+      "L-MYSHE",
+      "L-CORPUS2-05843",
+      "L-CORPUS2-07811",
+      "L-VERIFIED-01687"
+    ],
+    "notes": "derivation.components taramasindan uretildi; kaynak: lexeme.literalMeaning; 4 lexeme'de bilesen"
+  },
+  {
+    "id": "M-BZHEN",
+    "form": "бжэн",
+    "ipa": "/bᶎɐn/",
+    "gloss": "keçi",
+    "type": "lexical",
+    "exampleLexemeIds": [
+      "L-D0B1D0B6D18D-3",
+      "L-CORPUS-03541",
+      "L-CORPUS2-06979",
+      "L-VERIFIED-00205"
+    ],
+    "notes": "derivation.components taramasindan uretildi; kaynak: lexeme.literalMeaning; 4 lexeme'de bilesen"
+  },
+  {
+    "id": "M-BAZHA",
+    "form": "бажэ",
+    "ipa": "/'bɑ:ᶎɐ/",
+    "gloss": "Tilki",
+    "type": "lexical",
+    "dialect": "kabardian",
+    "exampleLexemeIds": [
+      "L-CORPUS-01061",
+      "L-CORPUS-04800",
+      "L-CORPUS2-02931",
+      "L-CORPUS2-04022"
+    ],
+    "notes": "derivation.components taramasindan uretildi; kaynak: lexeme.literalMeaning; 4 lexeme'de bilesen"
+  },
+  {
+    "id": "M-PSY_1",
+    "form": "псыхъуэ",
+    "ipa": "/'psǝχʷɐ/",
+    "gloss": "suyun oldugu yer",
+    "type": "lexical",
+    "dialect": "both",
+    "equivalent": {
+      "adyghe": "псыхъуэ",
+      "kabardian": "псыхъуэ"
+    },
+    "exampleLexemeIds": [
+      "L-PSYXHUE",
+      "L-D0BFD181D18B-5",
+      "L-CORPUS2-05535"
+    ],
+    "notes": "derivation.components taramasindan uretildi; kaynak: lexeme.literalMeaning; 3 lexeme'de bilesen"
+  },
+  {
+    "id": "M-MAF1E",
+    "form": "мафӀэ",
+    "ipa": "/'mɑ:fʹɐ/",
+    "gloss": "ateş",
+    "type": "lexical",
+    "dialect": "kabardian",
+    "equivalent": {
+      "adyghe": "машӀу",
+      "kabardian": "мафӀэ"
+    },
+    "exampleLexemeIds": [
+      "L-MAF1E",
+      "L-MAF1EGU",
+      "L-MAF1ESHHUE"
+    ],
+    "notes": "derivation.components taramasindan uretildi; kaynak: root.primaryMeaning; 3 lexeme'de bilesen"
+  },
+  {
+    "id": "M-SHCHIA",
+    "form": "щӀалэ",
+    "ipa": "/'ɕʹɑ:ɮɐ/",
+    "gloss": "genc erkek, cocuk",
+    "type": "lexical",
+    "exampleLexemeIds": [
+      "L-SHCHALE",
+      "L-SHYQHUSHCHALE",
+      "L-SH1ALE"
+    ],
+    "notes": "derivation.components taramasindan uretildi; kaynak: lexeme.literalMeaning; 3 lexeme'de bilesen"
+  },
+  {
+    "id": "M-DZHEDU",
+    "form": "джэду",
+    "ipa": "/dᶎɐ'du:/",
+    "gloss": "kedi",
+    "type": "lexical",
+    "exampleLexemeIds": [
+      "L-D0B4D0B6D18D-3",
+      "L-CORPUS2-03502",
+      "L-CORPUS2-05839"
+    ],
+    "notes": "derivation.components taramasindan uretildi; kaynak: lexeme.literalMeaning; 3 lexeme'de bilesen"
+  },
+  {
+    "id": "M-BDZEZHYEY",
+    "form": "бдзэжьей",
+    "ipa": "/bdzɐ'ʑe:j/",
+    "gloss": "BALIK",
+    "type": "lexical",
+    "dialect": "kabardian",
+    "exampleLexemeIds": [
+      "L-CORPUS-00271",
+      "L-CORPUS2-04310",
+      "L-CORPUS2-07275"
+    ],
+    "notes": "derivation.components taramasindan uretildi; kaynak: lexeme.literalMeaning; 3 lexeme'de bilesen"
+  },
+  {
+    "id": "M-VAK",
+    "form": "вакъэ",
+    "ipa": "/'vɑ:qʹɐ/",
+    "gloss": "Ayakkabılar",
+    "type": "lexical",
+    "dialect": "kabardian",
+    "equivalent": {
+      "adyghe": "цуакъэ",
+      "kabardian": "вакъэ"
+    },
+    "exampleLexemeIds": [
+      "L-CORPUS-00349",
+      "L-CORPUS2-01864",
+      "L-CORPUS2-05233"
+    ],
+    "notes": "derivation.components taramasindan uretildi; kaynak: lexeme.literalMeaning; 3 lexeme'de bilesen"
+  },
+  {
+    "id": "M-TKHEK1UME",
+    "form": "тхьэкӀумэ",
+    "ipa": "/tħɐ'kʹʷǝmɐ/",
+    "gloss": "kulak",
+    "type": "lexical",
+    "dialect": "both",
+    "equivalent": {
+      "adyghe": "тхьэкӀумэ",
+      "kabardian": "тхьэкӀумэ"
+    },
+    "exampleLexemeIds": [
+      "L-TKHEK1UME",
+      "L-TKHEK1UMECH1YH"
+    ],
+    "notes": "derivation.components taramasindan uretildi; kaynak: root.primaryMeaning; 2 lexeme'de bilesen"
+  },
+  {
+    "id": "M-1EY",
+    "form": "Ӏей",
+    "ipa": "/ʔe:j/",
+    "gloss": "kötü",
+    "type": "lexical",
+    "exampleLexemeIds": [
+      "L-NE1EY",
+      "L-D380D0B5D0B9"
+    ],
+    "notes": "derivation.components taramasindan uretildi; kaynak: lexeme.literalMeaning; 2 lexeme'de bilesen"
+  },
+  {
+    "id": "M-FIY",
+    "form": "фӀы",
+    "ipa": "/fʹǝ/",
+    "gloss": "iyi",
+    "type": "lexical",
+    "exampleLexemeIds": [
+      "L-F1YC1E",
+      "L-D184D380D18B"
+    ],
+    "notes": "derivation.components taramasindan uretildi; kaynak: lexeme.literalMeaning; 2 lexeme'de bilesen"
+  },
+  {
+    "id": "M-1YGH",
+    "form": "Ӏыгъ",
+    "gloss": "",
+    "exampleLexemeIds": [
+      "L-L1YGHUABE",
+      "L-L1YGHE"
+    ],
+    "notes": "derivation.components taramasindan uretildi; ANLAM KANITI YOK (gloss bos); 2 lexeme'de bilesen"
+  },
+  {
+    "id": "M-ANA2",
+    "form": "Ӏэнэ",
+    "ipa": "/'ʔɐnɐ/",
+    "gloss": "masa",
+    "type": "lexical",
+    "exampleLexemeIds": [
+      "L-D380D18DD0BD",
+      "L-1ENE"
+    ],
+    "notes": "derivation.components taramasindan uretildi; kaynak: lexeme.literalMeaning; 2 lexeme'de bilesen"
+  },
+  {
+    "id": "M-HAE",
+    "form": "хьэ",
+    "ipa": "/ħɐ/",
+    "gloss": "kopek",
+    "type": "lexical",
+    "exampleLexemeIds": [
+      "L-KHHE",
+      "L-CORPUS-01956"
+    ],
+    "notes": "derivation.components taramasindan uretildi; kaynak: lexeme.literalMeaning; 2 lexeme'de bilesen"
+  },
+  {
+    "id": "M-F1YC1E",
+    "form": "фӀыцӀэ",
+    "ipa": "/'fʹǝtʹsɐ/",
+    "gloss": "siyah",
+    "type": "lexical",
+    "dialect": "both",
+    "equivalent": {
+      "adyghe": "фӀыцӀэ",
+      "kabardian": "фӀыцӀэ"
+    },
+    "exampleLexemeIds": [
+      "L-F1YC1E"
+    ],
+    "notes": "derivation.components taramasindan uretildi; kaynak: lexeme.literalMeaning; 1 lexeme'de bilesen"
+  },
+  {
+    "id": "M-TYS",
+    "form": "тӀыс",
+    "gloss": "",
+    "exampleLexemeIds": [
+      "L-D182D380D18B"
+    ],
+    "notes": "derivation.components taramasindan uretildi; ANLAM KANITI YOK (gloss bos); 1 lexeme'de bilesen"
+  },
+  {
+    "id": "M-LHE1U",
+    "form": "лъэӀу",
+    "ipa": "/ɬɐʔʷ/",
+    "gloss": "ALARM",
+    "type": "lexical",
+    "exampleLexemeIds": [
+      "L-D189D380D18D-9"
+    ],
+    "notes": "derivation.components taramasindan uretildi; kaynak: lexeme.translations.tr; 1 lexeme'de bilesen"
+  },
+  {
+    "id": "M-SH1AKXUE",
+    "form": "щӀакхъуэ",
+    "ipa": "/'ɕʹɑ:qʹχʷɐ/",
+    "gloss": "ekmek",
+    "type": "lexical",
+    "exampleLexemeIds": [
+      "L-SH1AKHQUE"
+    ],
+    "notes": "derivation.components taramasindan uretildi; kaynak: lexeme.literalMeaning; 1 lexeme'de bilesen"
+  },
+  {
+    "id": "M-KIE",
+    "form": "кӀэщӀ",
+    "ipa": "/tʹʂɐɕʹ/",
+    "gloss": "kisa",
+    "type": "lexical",
+    "exampleLexemeIds": [
+      "L-K1ESH1"
+    ],
+    "notes": "derivation.components taramasindan uretildi; kaynak: lexeme.literalMeaning; 1 lexeme'de bilesen"
+  }
+]

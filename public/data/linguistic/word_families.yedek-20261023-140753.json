@@ -1,0 +1,1120 @@
+[
+  {
+    "id": "WF-GU",
+    "rootId": "R-GU",
+    "morphemeIds": [
+      "M-F1E",
+      "M-GHE",
+      "M-BZHYGE",
+      "M-F1EN"
+    ],
+    "lexemeIds": [
+      "L-GUF1E",
+      "L-GUGHE",
+      "L-GUBZHYGE",
+      "L-GUETYNEGHE",
+      "L-GUF1EN"
+    ],
+    "productivity": {
+      "totalLexemes": 47,
+      "corpusFrequency": 22788,
+      "mostFrequentLexemeId": "L-GUF1E"
+    },
+    "dialectNote": {
+      "adyghe": "гушӀо",
+      "kabardian": "гуфӀэ",
+      "note": "Ses denkligi: шӀо -> фӀэ"
+    },
+    "notes": "En uretken somatik kok ailesi. 22 bilesik yapi korpusta dogrulandi.",
+    "category": "body",
+    "subcategory": "organs",
+    "semanticDomains": [
+      "emotion",
+      "cognition"
+    ]
+  },
+  {
+    "id": "WF-SHHYE",
+    "rootId": "R-SHHYE",
+    "morphemeIds": [
+      "M-GU"
+    ],
+    "lexemeIds": [
+      "L-SHHYEGU",
+      "L-SHHYEUSYGHE"
+    ],
+    "productivity": {
+      "totalLexemes": 30,
+      "corpusFrequency": 9846
+    },
+    "notes": "Metaforik zincir: HEAD -> TOP -> REASON. щхьэусыгъуэ = bas + sebep -> gerekce",
+    "category": "body",
+    "subcategory": "head-face",
+    "semanticDomains": [
+      "cognition"
+    ]
+  },
+  {
+    "id": "WF-NE",
+    "rootId": "R-NE",
+    "morphemeIds": [
+      "M-PSE",
+      "M-GU"
+    ],
+    "lexemeIds": [],
+    "productivity": {
+      "totalLexemes": 0,
+      "corpusFrequency": 0
+    },
+    "notes": "WF-NE 679 kayıttan 6 alt aileye dağıtıldı (2026-10-19). Bu aile artık kullanılmıyor. Alt aileler: WF-NE-CORE, VISION, LIGHT, EXPRESSION, ANATOMY, DIGER.",
+    "category": "body",
+    "subcategory": "head-face",
+    "semanticDomains": [
+      "perception"
+    ],
+    "deprecated": true
+  },
+  {
+    "id": "WF-PSY",
+    "rootId": "R-PSY",
+    "morphemeIds": [
+      "M-NE"
+    ],
+    "lexemeIds": [
+      "L-NAPS"
+    ],
+    "productivity": {
+      "totalLexemes": 20,
+      "corpusFrequency": 6326
+    },
+    "notes": "Doga koku. напс = нэ + псэ (goz + su) bilesimi.",
+    "category": "nature",
+    "subcategory": "terrain-water",
+    "semanticDomains": [
+      "nature"
+    ]
+  },
+  {
+    "id": "WF-PSE",
+    "rootId": "R-PSE",
+    "morphemeIds": [
+      "M-GHU"
+    ],
+    "lexemeIds": [
+      "L-PSEGHU"
+    ],
+    "productivity": {
+      "totalLexemes": 13,
+      "corpusFrequency": 5403
+    },
+    "notes": "Ruh/can ailesi. псэгъу (hayat arkadasi) dahil. R-PSY ailesinden AYRI.",
+    "category": "body",
+    "subcategory": "organs",
+    "semanticDomains": [
+      "emotion",
+      "life"
+    ]
+  },
+  {
+    "id": "WF-UES",
+    "rootId": "R-UES",
+    "morphemeIds": [],
+    "lexemeIds": [
+      "L-UES",
+      "L-UESEPS"
+    ],
+    "productivity": {
+      "totalLexemes": 2,
+      "corpusFrequency": 511
+    },
+    "notes": "Kar ailesi. ueseps (cig) dahil.",
+    "category": "nature",
+    "subcategory": "sky-weather",
+    "semanticDomains": [
+      "nature"
+    ]
+  },
+  {
+    "id": "WF-BLE",
+    "rootId": "R-BLE",
+    "morphemeIds": [],
+    "lexemeIds": [
+      "L-BLE",
+      "L-PSYBLE"
+    ],
+    "productivity": {
+      "totalLexemes": 2,
+      "corpusFrequency": 1092
+    },
+    "notes": "Yilan ailesi. psyble (su yilani) dahil."
+  },
+  {
+    "id": "WF-K1UY",
+    "rootId": "R-K1UY",
+    "morphemeIds": [],
+    "lexemeIds": [
+      "L-K1UY",
+      "L-PSYK1UY"
+    ],
+    "productivity": {
+      "totalLexemes": 2,
+      "corpusFrequency": 122
+    },
+    "notes": "Kuyu ailesi. psyk1uy (kuyu) dahil."
+  },
+  {
+    "id": "WF-BZU",
+    "rootId": "R-BZU",
+    "morphemeIds": [],
+    "lexemeIds": [
+      "L-BZU",
+      "L-PSYBZU"
+    ],
+    "productivity": {
+      "totalLexemes": 2,
+      "corpusFrequency": 268
+    },
+    "notes": "Kus ailesi. psybzu (su kusu) dahil."
+  },
+  {
+    "id": "WF-BABYSHCH",
+    "rootId": "R-BABYSHCH",
+    "morphemeIds": [],
+    "lexemeIds": [
+      "L-BABYSHCH",
+      "L-PSYBABYSHCH"
+    ],
+    "productivity": {
+      "totalLexemes": 2,
+      "corpusFrequency": 69
+    },
+    "notes": "Ordek ailesi. psybabyshch (ordek) dahil."
+  },
+  {
+    "id": "WF-DZHED",
+    "rootId": "R-DZHED",
+    "morphemeIds": [],
+    "lexemeIds": [
+      "L-DZHED",
+      "L-PSYDZHED"
+    ],
+    "productivity": {
+      "totalLexemes": 2,
+      "corpusFrequency": 594
+    },
+    "notes": "Tavuk ailesi. psydzhed (su tavugu) dahil."
+  },
+  {
+    "id": "WF-KUE",
+    "rootId": "R-KUE",
+    "morphemeIds": [],
+    "lexemeIds": [
+      "L-KUE",
+      "L-KUEPSE"
+    ],
+    "productivity": {
+      "totalLexemes": 2,
+      "corpusFrequency": 3144
+    },
+    "notes": "Vadi/dere ailesi. къуэпс (damar) dahil.",
+    "category": "nature",
+    "subcategory": "terrain-water",
+    "semanticDomains": [
+      "nature"
+    ]
+  },
+  {
+    "id": "WF-SHXUE",
+    "rootId": "R-SHXUE",
+    "morphemeIds": [
+      "M-SHXUE"
+    ],
+    "lexemeIds": [
+      "L-SHXUE",
+      "L-PSYSHXUE",
+      "L-NYBZHYSHXUE",
+      "L-UNESHHUE",
+      "L-GUSHHUE",
+      "L-1UEKHUASHHUE",
+      "L-MAF1ESHHUE",
+      "L-ADESHHUE",
+      "L-ANESHHUE",
+      "L-MAKHUESHHUE"
+    ],
+    "productivity": {
+      "totalLexemes": 10,
+      "corpusFrequency": 104,
+      "isSuffixFamily": true
+    },
+    "notes": "Buyutme eki ailesi (-шхуэ). Fiziksel buyukluk, yaslilik, onem, cesaret, yogunluk anlamlari katar."
+  },
+  {
+    "id": "WF-C1YQ1U",
+    "rootId": "R-C1YQ1U",
+    "morphemeIds": [
+      "M-C1YQ1U"
+    ],
+    "lexemeIds": [
+      "L-C1YQ1U",
+      "L-PSYC1YQ1U",
+      "L-UNEC1YQ1U",
+      "L-NYBZHYC1YQ1U",
+      "L-GUC1YQ1U",
+      "L-1UEKHUC1YQ1U",
+      "L-MAF1EC1YQ1U"
+    ],
+    "productivity": {
+      "totalLexemes": 7,
+      "corpusFrequency": 2322,
+      "isSuffixFamily": true
+    },
+    "notes": "Kucultme eki ailesi (-цӀыкӀу). -шхуэ'nun zit anlamlisi."
+  },
+  {
+    "id": "WF-BDZE",
+    "rootId": "R-BDZE",
+    "morphemeIds": [],
+    "lexemeIds": [
+      "L-BDZE",
+      "L-PSYBDZE"
+    ],
+    "productivity": {
+      "totalLexemes": 2,
+      "corpusFrequency": 323
+    },
+    "notes": "Sevruga ailesi. псыбдзэ (su sevrugasi) dahil."
+  },
+  {
+    "id": "WF-NYDZHE",
+    "rootId": "R-NYDZHE",
+    "morphemeIds": [],
+    "lexemeIds": [
+      "L-NYDZHE"
+    ],
+    "productivity": {
+      "totalLexemes": 1,
+      "corpusFrequency": 7
+    },
+    "notes": "Taskin yatagi ailesi."
+  },
+  {
+    "id": "WF-K1UE",
+    "rootId": "R-K1UE",
+    "morphemeIds": [],
+    "lexemeIds": [
+      "L-K1UE",
+      "L-YK1UE",
+      "L-SYK1UE",
+      "L-K1UIT1U",
+      "L-K1UIBLY"
+    ],
+    "productivity": {
+      "totalLexemes": 5,
+      "corpusFrequency": 4262
+    },
+    "notes": "Ogul ailesi. Adigece: къо. Homonym: къуэ (vadi). Korpus: 16385."
+  },
+  {
+    "id": "WF-KHUABZH",
+    "rootId": "R-KHUABZH",
+    "morphemeIds": [],
+    "lexemeIds": [
+      "L-KHUABZHU"
+    ],
+    "productivity": {
+      "totalLexemes": 1,
+      "corpusFrequency": 556
+    },
+    "notes": "Pekistirme ailesi. хуабжьу (cok) dahil. 10 sozluk."
+  },
+  {
+    "id": "WF-NYBZHY",
+    "rootId": "R-NYBZHY",
+    "morphemeIds": [
+      "M-SHXUE",
+      "M-C1YQ1U"
+    ],
+    "lexemeIds": [
+      "L-NYBZHYSHXUE",
+      "L-NYBZHYC1YQ1U"
+    ],
+    "productivity": {
+      "totalLexemes": 2,
+      "corpusFrequency": 1525
+    },
+    "notes": "Yas/omur ailesi. ныбжьышхуэ (yasli) ve ныбжьыцӀыкӀу (genc)."
+  },
+  {
+    "id": "WF-ADE",
+    "rootId": "R-ADE",
+    "morphemeIds": [
+      "M-SHXUE"
+    ],
+    "lexemeIds": [
+      "L-ADESHHUE",
+      "L-ADEKUESHH",
+      "L-ADESHYPHUE"
+    ],
+    "productivity": {
+      "totalLexemes": 3,
+      "corpusFrequency": 2920
+    },
+    "notes": "Baba ailesi. адэшхуэ (dede), адэ къуэш (amca), адэшыпхъу (hala)."
+  },
+  {
+    "id": "WF-ANE",
+    "rootId": "R-ANE",
+    "morphemeIds": [
+      "M-SHXUE"
+    ],
+    "lexemeIds": [
+      "L-ANESHHUE",
+      "L-ANEKUESHH",
+      "L-ANESHYPHUE"
+    ],
+    "productivity": {
+      "totalLexemes": 3,
+      "corpusFrequency": 1209
+    },
+    "notes": "Anne ailesi. анэшхуэ (buyukanne), анэ къуэш (dayi), анэшыпхъу (teyze)."
+  },
+  {
+    "id": "WF-K1UASH",
+    "rootId": "R-K1UASH",
+    "morphemeIds": [],
+    "lexemeIds": [
+      "L-K1UASH",
+      "L-K1UESHYGHE",
+      "L-ADEKUESHH",
+      "L-ANEKUESHH"
+    ],
+    "productivity": {
+      "totalLexemes": 4,
+      "corpusFrequency": 966
+    },
+    "notes": "Erkek kardes ailesi. къуэш, къуэшыгъэ, адэ къуэш, анэ къуэш."
+  },
+  {
+    "id": "WF-SHYPHUE",
+    "rootId": "R-SHYPHUE",
+    "morphemeIds": [],
+    "lexemeIds": [
+      "L-SHYPHUE",
+      "L-ADESHYPHUE",
+      "L-ANESHYPHUE"
+    ],
+    "productivity": {
+      "totalLexemes": 3,
+      "corpusFrequency": 222
+    },
+    "notes": "Kiz kardes ailesi. шыпхъу, адэшыпхъу (hala), анэшыпхъу (teyze)."
+  },
+  {
+    "id": "WF-TETE",
+    "rootId": "R-TETE",
+    "morphemeIds": [],
+    "lexemeIds": [
+      "L-TETAZH"
+    ],
+    "productivity": {
+      "totalLexemes": 1,
+      "corpusFrequency": 65
+    },
+    "notes": "Dede ailesi (ADY). тэтэжъ."
+  },
+  {
+    "id": "WF-DADE",
+    "rootId": "R-DADE",
+    "morphemeIds": [
+      "M-SHXUE"
+    ],
+    "lexemeIds": [
+      "L-DADESHHUE"
+    ],
+    "productivity": {
+      "totalLexemes": 1,
+      "corpusFrequency": 99
+    },
+    "notes": "Dede ailesi (KBD/Abzeh). дадэшхуэ (buyuk dede)."
+  },
+  {
+    "id": "WF-BZE",
+    "rootId": "R-BZE",
+    "morphemeIds": [
+      "M-SHXUE"
+    ],
+    "lexemeIds": [
+      "L-BZE",
+      "L-BZEGU",
+      "L-BZEDYDHU",
+      "L-BZESHXUE",
+      "L-BZEPSE",
+      "L-BZEBZA"
+    ],
+    "productivity": {
+      "totalLexemes": 6,
+      "corpusFrequency": 1427
+    },
+    "notes": "Dil ailesi. бзэ, бзэгу, бзэдыд, бзэшхуэ, бзэпс, бзэбзэ.",
+    "category": "mind",
+    "subcategory": "language",
+    "semanticDomains": [
+      "cognition",
+      "communication"
+    ]
+  },
+  {
+    "id": "WF-1UEKHU",
+    "rootId": "R-1UEKHU",
+    "morphemeIds": [
+      "M-SHXUE",
+      "M-C1YQ1U"
+    ],
+    "lexemeIds": [
+      "L-1UEKHUASHHUE",
+      "L-1UEKHUC1YQ1U"
+    ],
+    "productivity": {
+      "totalLexemes": 2,
+      "corpusFrequency": 5292
+    },
+    "notes": "Is/mesele ailesi. Ӏуэхушхуэ (onemli is), ӀуэхуцӀыкӀу (onemsiz is)."
+  },
+  {
+    "id": "WF-MAF1E",
+    "rootId": "R-MAF1E",
+    "morphemeIds": [
+      "M-SHXUE",
+      "M-C1YQ1U"
+    ],
+    "lexemeIds": [
+      "L-MAF1E",
+      "L-MAF1ASHE",
+      "L-MAF1EGU",
+      "L-MAF1ESHHUE",
+      "L-MAF1EC1YQ1U"
+    ],
+    "productivity": {
+      "totalLexemes": 5,
+      "corpusFrequency": 855
+    },
+    "notes": "Ates ailesi. мафӀэ, мафӀащэ, мафӀэгу, мафӀэшхуэ (yangin), мафӀэцӀыкӀу (kivilcim).",
+    "category": "nature",
+    "subcategory": "element",
+    "semanticDomains": [
+      "nature"
+    ]
+  },
+  {
+    "id": "WF-UNE",
+    "rootId": "R-UNE",
+    "morphemeIds": [
+      "M-SHXUE",
+      "M-C1YQ1U"
+    ],
+    "lexemeIds": [
+      "L-UNE",
+      "L-UNEGUASHE",
+      "L-PSYUNE",
+      "L-UNESHHUE",
+      "L-UNEC1YQ1U"
+    ],
+    "productivity": {
+      "totalLexemes": 5,
+      "corpusFrequency": 4747
+    },
+    "notes": "Ev ailesi. унэ, унэгуащэ, псыунэ, унэшхуэ (buyuk ev), унэцӀыкӀу (kucuk ev)."
+  },
+  {
+    "id": "WF-MAKHUE",
+    "rootId": "R-MAKHUE",
+    "morphemeIds": [
+      "M-SHXUE"
+    ],
+    "lexemeIds": [
+      "L-MAKHUESHHUE"
+    ],
+    "productivity": {
+      "totalLexemes": 1,
+      "corpusFrequency": 3783
+    },
+    "notes": "Gun ailesi. махуэшхуэ (bayram - buyuk gun)."
+  },
+  {
+    "id": "WF-F",
+    "rootId": "R-F",
+    "category": "function",
+    "morphemeIds": [],
+    "lexemeIds": [
+      "L-FYN",
+      "L-FA",
+      "L-SH1EFYQ1YN",
+      "L-1UFYQ1YN"
+    ],
+    "productivity": {
+      "totalLexemes": 4,
+      "corpusFrequency": 32267,
+      "mostFrequentLexemeId": "L-FYN"
+    },
+    "dialectNote": {
+      "adyghe": "шъу",
+      "kabardian": "ф",
+      "note": "C-9.3 corpus dogrulamasi ile eklendi."
+    },
+    "notes": "ф koku — en yuksek frekansli (32.267). Muhtemelen islevsel morfem."
+  },
+  {
+    "id": "WF-1E",
+    "rootId": "R-1E",
+    "category": "body",
+    "morphemeIds": [],
+    "lexemeIds": [
+      "L-1E",
+      "L-1EPE",
+      "L-1EGU",
+      "L-1EPKYLEPK",
+      "L-1ERYSH1"
+    ],
+    "productivity": {
+      "totalLexemes": 5,
+      "corpusFrequency": 11294,
+      "mostFrequentLexemeId": "L-1E"
+    },
+    "dialectNote": {
+      "adyghe": "Ӏэ",
+      "kabardian": "Ӏэ",
+      "note": "C-9.3 corpus dogrulamasi ile eklendi."
+    },
+    "notes": "El ailesi (Ӏэ). Somatik kok. Corpus: 11.294 kullanim.",
+    "subcategory": "limbs",
+    "semanticDomains": [
+      "action"
+    ]
+  },
+  {
+    "id": "WF-LHE",
+    "rootId": "R-LHE",
+    "category": "body",
+    "morphemeIds": [],
+    "lexemeIds": [
+      "L-1EPKYLEPK",
+      "L-LHEGU",
+      "L-LHEBAKUE",
+      "L-LHAKUE",
+      "L-LHEPS"
+    ],
+    "productivity": {
+      "totalLexemes": 5,
+      "corpusFrequency": 10729,
+      "mostFrequentLexemeId": "L-LHAKUE"
+    },
+    "dialectNote": {
+      "adyghe": "лъэ",
+      "kabardian": "лъэ",
+      "note": "C-9.3 corpus dogrulamasi ile eklendi."
+    },
+    "notes": "Ayak/bacak ailesi (лъэ). Somatik kok. Corpus: 10.729 kullanim.",
+    "subcategory": "limbs",
+    "semanticDomains": [
+      "action"
+    ]
+  },
+  {
+    "id": "WF-SH1Y",
+    "rootId": "R-SH1Y",
+    "category": "nature",
+    "morphemeIds": [],
+    "lexemeIds": [
+      "L-SH1Y",
+      "L-SH1YDAGHE"
+    ],
+    "productivity": {
+      "totalLexemes": 2,
+      "corpusFrequency": 9435,
+      "mostFrequentLexemeId": "L-SH1Y"
+    },
+    "dialectNote": {
+      "adyghe": "щӀы",
+      "kabardian": "щӀы",
+      "note": "C-9.3 corpus dogrulamasi ile eklendi."
+    },
+    "notes": "Yer/toprak ailesi (щӀы). Doga koku. Corpus: 9.435 kullanim."
+  },
+  {
+    "id": "WF-SH1E",
+    "rootId": "R-SH1E",
+    "category": "spatial",
+    "morphemeIds": [],
+    "lexemeIds": [
+      "L-SH1E"
+    ],
+    "productivity": {
+      "totalLexemes": 1,
+      "corpusFrequency": 9383,
+      "mostFrequentLexemeId": "L-SH1E"
+    },
+    "dialectNote": {
+      "adyghe": "кӀэ",
+      "kabardian": "щӀэ",
+      "note": "C-9.3 corpus dogrulamasi ile eklendi."
+    },
+    "notes": "Alt/asagi ailesi (щӀэ). Mekan koku. Corpus: 9.383 kullanim."
+  },
+  {
+    "id": "WF-PE",
+    "rootId": "R-PE",
+    "category": "body",
+    "morphemeIds": [],
+    "lexemeIds": [
+      "L-PE",
+      "L-PEKUKU",
+      "L-PEKURSH",
+      "L-YAPEREY",
+      "L-PERYT",
+      "L-PEFYQ",
+      "L-PETINE",
+      "L-PETSURƏ",
+      "L-PEPLEN",
+      "L-KUAPE",
+      "L-KUAPELHAPE"
+    ],
+    "productivity": {
+      "totalLexemes": 11,
+      "corpusFrequency": 7184,
+      "mostFrequentLexemeId": "L-PE"
+    },
+    "dialectNote": {
+      "adyghe": "пэ",
+      "kabardian": "пэ",
+      "note": "C-9.3 corpus dogrulamasi ile eklendi."
+    },
+    "notes": "Burun/on ailesi (пэ). Somatik + mekan. Corpus: 7.184 kullanim.",
+    "subcategory": "head-face",
+    "semanticDomains": [
+      "perception"
+    ]
+  },
+  {
+    "id": "WF-KHUMEN",
+    "rootId": "R-KHUMEN",
+    "morphemeIds": [],
+    "lexemeIds": [
+      "L-KHUMEN",
+      "L-KUEUKHUMEN",
+      "L-KUEKHUMEN",
+      "L-KKHEKHUME"
+    ],
+    "productivity": {
+      "totalLexemes": 4,
+      "corpusFrequency": 130,
+      "mostFrequentLexemeId": "L-KHUMEN"
+    },
+    "dialectNote": {
+      "adyghe": "хъумэн",
+      "kabardian": "хъумэн",
+      "note": "Her iki lehcede ayni"
+    },
+    "notes": "C-9.3 yeni aile. Korumak kok ailesi. Wiktionary kaniti."
+  },
+  {
+    "id": "WF-SHQE",
+    "rootId": "R-SHQE",
+    "morphemeIds": [],
+    "lexemeIds": [
+      "L-SHQE",
+      "L-SHQAGHE",
+      "L-SHQEU",
+      "L-SHQEM"
+    ],
+    "productivity": {
+      "totalLexemes": 4,
+      "corpusFrequency": 2130,
+      "mostFrequentLexemeId": "L-SHQE"
+    },
+    "dialectNote": {
+      "adyghe": "шъыпкъэ",
+      "kabardian": "щыпкъэ",
+      "note": "Ses denkligi: шъ -> щ"
+    },
+    "notes": "C-9.3 yeni aile. Dogru/gercek kok ailesi. Yuksek frekans."
+  },
+  {
+    "id": "WF-ZE",
+    "rootId": "R-ZE",
+    "category": "body",
+    "subcategory": "head-face",
+    "semanticDomains": [
+      "perception",
+      "speech"
+    ],
+    "morphemeIds": [],
+    "lexemeIds": [
+      "L-ZE"
+    ],
+    "productivity": {
+      "totalLexemes": 1,
+      "corpusFrequency": 0,
+      "mostFrequentLexemeId": "L-ZE"
+    },
+    "dialectNote": {
+      "adyghe": "жьэ",
+      "kabardian": "жьэ",
+      "note": "Her iki lehcede ayni"
+    },
+    "notes": "C-10.3 yeni aile. Agiz/konusma kok ailesi."
+  },
+  {
+    "id": "WF-PLHE",
+    "rootId": "R-PLHE",
+    "category": "mind",
+    "subcategory": "perception",
+    "semanticDomains": [
+      "cognition",
+      "perception"
+    ],
+    "morphemeIds": [],
+    "lexemeIds": [
+      "L-PLHE",
+      "L-PEPLEN"
+    ],
+    "productivity": {
+      "totalLexemes": 2,
+      "corpusFrequency": 48,
+      "mostFrequentLexemeId": "L-PEPLEN"
+    },
+    "dialectNote": {
+      "adyghe": "плъэ",
+      "kabardian": "плъэ",
+      "note": "Her iki lehcede ayni"
+    },
+    "notes": "C-10.3 yeni aile. Bakmak/algilamak kok ailesi."
+  },
+  {
+    "id": "WF-TKHE",
+    "rootId": "R-TKHE",
+    "category": "mind",
+    "subcategory": "cognition",
+    "semanticDomains": [
+      "cognition",
+      "communication"
+    ],
+    "morphemeIds": [],
+    "lexemeIds": [
+      "L-TKHE"
+    ],
+    "productivity": {
+      "totalLexemes": 1,
+      "corpusFrequency": 0,
+      "mostFrequentLexemeId": "L-TKHE"
+    },
+    "dialectNote": {
+      "adyghe": "тхэ",
+      "kabardian": "тхэ",
+      "note": "Her iki lehcede ayni"
+    },
+    "notes": "C-10.3 yeni aile. Yazmak kok ailesi."
+  },
+  {
+    "id": "WF-NAPE",
+    "rootId": "R-NAPE",
+    "category": "body",
+    "subcategory": "head-face",
+    "semanticDomains": [
+      "body",
+      "emotion",
+      "cognition"
+    ],
+    "morphemeIds": [],
+    "lexemeIds": [
+      "L-NAPE",
+      "L-NAPE1ELHESHH1",
+      "L-NAPEK1UETS1",
+      "L-NAPELHAGHU",
+      "L-NAPELHE",
+      "L-NAPENSHE",
+      "L-NAPENTEH",
+      "L-NAPENTEHYGHE"
+    ],
+    "productivity": {
+      "totalLexemes": 8,
+      "corpusFrequency": 0,
+      "mostFrequentLexemeId": "L-NAPE",
+      "dictionarySources": 19
+    },
+    "dialectNote": {
+      "adyghe": "напэ",
+      "kabardian": "напэ"
+    },
+    "notes": "C-10.3 yeni aile. Yuz/vicdan kok ailesi. 19 sozluk kaynagi. 10+ turev. 15+ deyim."
+  },
+  {
+    "id": "WF-MEZ",
+    "rootId": "R-MEZ",
+    "category": "nature",
+    "subcategory": "terrain-plant",
+    "semanticDomains": [
+      "nature",
+      "forest"
+    ],
+    "morphemeIds": [],
+    "lexemeIds": [
+      "L-MEZ",
+      "L-MEZYM",
+      "L-MEZXER",
+      "L-MEZY",
+      "L-MEZKOGHUM",
+      "L-MEZLHAPE"
+    ],
+    "productivity": {
+      "totalLexemes": 6,
+      "corpusFrequency": 604,
+      "mostFrequentLexemeId": "L-MEZ"
+    },
+    "dialectNote": {
+      "adyghe": "мэз",
+      "kabardian": "мэз"
+    },
+    "notes": "C-11.3 yeni aile. Orman kok ailesi. Korpus: 604."
+  },
+  {
+    "id": "WF-LEZH",
+    "rootId": "R-LEZH",
+    "category": "other",
+    "subcategory": "action",
+    "semanticDomains": [
+      "work",
+      "action"
+    ],
+    "morphemeIds": [],
+    "lexemeIds": [
+      "L-LEZH",
+      "L-LEZHEN",
+      "L-LEZHYGHE",
+      "L-LEZHENYM",
+      "L-LEZHAK1UE"
+    ],
+    "productivity": {
+      "totalLexemes": 5,
+      "corpusFrequency": 6315,
+      "mostFrequentLexemeId": "L-LEZHYGHE"
+    },
+    "dialectNote": {
+      "adyghe": "лэжь",
+      "kabardian": "лэжь"
+    },
+    "notes": "C-11.3: Calismak kok ailesi. Korpus: 6315. Homonim: WF-LAZHE (kusur) ile karistirilmamali.",
+    "relatedFamilies": [
+      "WF-LAZHE"
+    ]
+  },
+  {
+    "id": "WF-LAZHE",
+    "rootId": "R-LAZH",
+    "category": "abstract",
+    "subcategory": "quality",
+    "semanticDomains": [
+      "defect",
+      "misfortune",
+      "guilt"
+    ],
+    "lexemeIds": [
+      "L-LAZHE-N",
+      "L-LAZHENSHE",
+      "L-LAZHEREY",
+      "L-LAZHESHKHUE"
+    ],
+    "productivity": {
+      "totalLexemes": 4,
+      "corpusFrequency": 1229,
+      "mostFrequentLexemeId": "L-LAZHE-N"
+    },
+    "relatedFamilies": [
+      "WF-LEZH"
+    ],
+    "dialectNote": {
+      "adyghe": "лажьэ",
+      "kabardian": "лажьэ"
+    },
+    "notes": "C-11.3 yeni aile. Kusur/keder/suc. 11 deyim. Homonim: WF-LEZH (calismak) ile karistirilmamali."
+  },
+  {
+    "id": "WF-NE-CORE",
+    "rootId": "R-NE",
+    "category": "body",
+    "subcategory": "head-face",
+    "notes": "нэ (göz) çekirdek: göz, yüz, gözyaşı",
+    "semanticDomains": [
+      "perception",
+      "anatomy"
+    ],
+    "morphemeIds": [
+      "M-PSE",
+      "M-GU"
+    ],
+    "lexemeIds": [],
+    "productivity": {
+      "totalLexemes": 0,
+      "corpusFrequency": 0
+    }
+  },
+  {
+    "id": "WF-NE-VISION",
+    "rootId": "R-NE",
+    "category": "body",
+    "subcategory": "perception",
+    "notes": "нэ görme/görünürlük",
+    "semanticDomains": [
+      "perception"
+    ],
+    "morphemeIds": [
+      "M-PSE",
+      "M-GU"
+    ],
+    "lexemeIds": [],
+    "productivity": {
+      "totalLexemes": 0,
+      "corpusFrequency": 0
+    }
+  },
+  {
+    "id": "WF-NE-LIGHT",
+    "rootId": "R-NE",
+    "category": "nature",
+    "subcategory": "light",
+    "notes": "нэф/нэху ışık, aydınlık",
+    "semanticDomains": [
+      "light"
+    ],
+    "morphemeIds": [
+      "M-PSE",
+      "M-GU"
+    ],
+    "lexemeIds": [],
+    "productivity": {
+      "totalLexemes": 0,
+      "corpusFrequency": 0
+    }
+  },
+  {
+    "id": "WF-NE-EXPRESSION",
+    "rootId": "R-NE",
+    "category": "body",
+    "subcategory": "face-expression",
+    "notes": "нэ yüz ifadesi, duygu",
+    "semanticDomains": [
+      "emotion",
+      "expression"
+    ],
+    "morphemeIds": [
+      "M-PSE",
+      "M-GU"
+    ],
+    "lexemeIds": [],
+    "productivity": {
+      "totalLexemes": 0,
+      "corpusFrequency": 0
+    }
+  },
+  {
+    "id": "WF-NE-ANATOMY",
+    "rootId": "R-NE",
+    "category": "body",
+    "subcategory": "head-face",
+    "notes": "нэ anatomik yapılar: göz kapağı, göz küresi",
+    "semanticDomains": [
+      "anatomy"
+    ],
+    "morphemeIds": [
+      "M-PSE",
+      "M-GU"
+    ],
+    "lexemeIds": [],
+    "productivity": {
+      "totalLexemes": 0,
+      "corpusFrequency": 0
+    }
+  },
+  {
+    "id": "WF-NE-DIGER",
+    "rootId": "R-NE",
+    "category": "grammar",
+    "subcategory": "function",
+    "notes": "нэхъ, нэс, нэужь — gramer, göz değil",
+    "semanticDomains": [
+      "grammar"
+    ],
+    "morphemeIds": [
+      "M-PSE",
+      "M-GU"
+    ],
+    "lexemeIds": [],
+    "productivity": {
+      "totalLexemes": 0,
+      "corpusFrequency": 0
+    }
+  },
+  {
+    "id": "WF-UE-PRON",
+    "rootIds": [
+      "R-UE-PRON"
+    ],
+    "lexemeIds": [
+      "L-UE-PRON"
+    ],
+    "conceptIds": [],
+    "morphemeIds": [],
+    "productivity": {
+      "totalLexemes": 1,
+      "corpusFrequency": 0
+    },
+    "notes": "L-UE homonim ayrımı"
+  },
+  {
+    "id": "WF-UE-INTJ",
+    "rootIds": [
+      "R-UE-INTJ"
+    ],
+    "lexemeIds": [
+      "L-UE-INTJ"
+    ],
+    "conceptIds": [],
+    "morphemeIds": [],
+    "productivity": {
+      "totalLexemes": 1,
+      "corpusFrequency": 0
+    },
+    "notes": "L-UE homonim ayrımı"
+  },
+  {
+    "id": "WF-UE-PART",
+    "rootIds": [
+      "R-UE-PART"
+    ],
+    "lexemeIds": [
+      "L-UE-PART"
+    ],
+    "conceptIds": [],
+    "morphemeIds": [],
+    "productivity": {
+      "totalLexemes": 1,
+      "corpusFrequency": 0
+    },
+    "notes": "L-UE homonim ayrımı"
+  },
+  {
+    "id": "WF-UE-HAIL",
+    "rootIds": [
+      "R-UE-HAIL"
+    ],
+    "lexemeIds": [
+      "L-UE"
+    ],
+    "conceptIds": [],
+    "morphemeIds": [],
+    "productivity": {
+      "totalLexemes": 1,
+      "corpusFrequency": 0
+    },
+    "notes": "L-UE homonim ayrımı"
+  }
+]
