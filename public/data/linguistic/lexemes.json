@@ -925033,5 +925033,4121 @@
       "tr": "bilmece"
     },
     "senseNumber": 1
+  },
+  {
+    "id": "L-GUASHCH_ORPHAN",
+    "form": "гуащэ",
+    "root": "гуащэ",
+    "rootForm": "гуащэ",
+    "rootIds": [
+      "R-GUASHCH"
+    ],
+    "meaning": "prenses; hanim; kayinvalide",
+    "literalMeaning": "prenses; hanim; kayinvalide",
+    "translations": {
+      "tr": "prenses; hanim; kayinvalide",
+      "en": "prenses; hanim; kayinvalide",
+      "ru": "prenses; hanim; kayinvalide"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "гуащэ - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-GUASHCH - prenses; hanim; kayinvalide"
+  },
+  {
+    "id": "L-SHER",
+    "form": "шэрджэс",
+    "root": "шэрджэс",
+    "rootForm": "шэрджэс",
+    "rootIds": [
+      "R-SHER"
+    ],
+    "meaning": "Cerkes; Adige etnonim",
+    "literalMeaning": "Cerkes; Adige etnonim",
+    "translations": {
+      "tr": "Cerkes; Adige etnonim",
+      "en": "Cerkes; Adige etnonim",
+      "ru": "Cerkes; Adige etnonim"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "шэрджэс - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-SHER - Cerkes; Adige etnonim"
+  },
+  {
+    "id": "L-BZH",
+    "form": "бжьыхьэ",
+    "root": "бжьыхьэ",
+    "rootForm": "бжьыхьэ",
+    "rootIds": [
+      "R-BZH"
+    ],
+    "meaning": "ari urunu; petek",
+    "literalMeaning": "ari urunu; petek",
+    "translations": {
+      "tr": "ari urunu; petek",
+      "en": "ari urunu; petek",
+      "ru": "ari urunu; petek"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "бжьыхьэ - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-BZH - ari urunu; petek"
+  },
+  {
+    "id": "L-GA_1",
+    "form": "гъащӀэ",
+    "root": "гъащӀэ",
+    "rootForm": "гъащӀэ",
+    "rootIds": [
+      "R-GA_1"
+    ],
+    "meaning": "hayat; yasam; omur",
+    "literalMeaning": "hayat; yasam; omur",
+    "translations": {
+      "tr": "hayat; yasam; omur",
+      "en": "hayat; yasam; omur",
+      "ru": "hayat; yasam; omur"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "гъащӀэ - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-GA_1 - hayat; yasam; omur"
+  },
+  {
+    "id": "L-IEG",
+    "form": "Ӏэгу",
+    "root": "Ӏэгу",
+    "rootForm": "Ӏэгу",
+    "rootIds": [
+      "R-IEG"
+    ],
+    "meaning": "avuc ici",
+    "literalMeaning": "avuc ici",
+    "translations": {
+      "tr": "avuc ici",
+      "en": "avuc ici",
+      "ru": "avuc ici"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "Ӏэгу - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-IEG - avuc ici"
+  },
+  {
+    "id": "L-KUR",
+    "form": "курыт",
+    "root": "курыт",
+    "rootForm": "курыт",
+    "rootIds": [
+      "R-KUR"
+    ],
+    "meaning": "orta; merkez",
+    "literalMeaning": "orta; merkez",
+    "translations": {
+      "tr": "orta; merkez",
+      "en": "orta; merkez",
+      "ru": "orta; merkez"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "курыт - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-KUR - orta; merkez"
+  },
+  {
+    "id": "L-UVY_1",
+    "form": "увыпӀэ",
+    "root": "увыпӀэ",
+    "rootForm": "увыпӀэ",
+    "rootIds": [
+      "R-UVY_1"
+    ],
+    "meaning": "cukur; oyuk; siginak",
+    "literalMeaning": "cukur; oyuk; siginak",
+    "translations": {
+      "tr": "cukur; oyuk; siginak",
+      "en": "cukur; oyuk; siginak",
+      "ru": "cukur; oyuk; siginak"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "увыпӀэ - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-UVY_1 - cukur; oyuk; siginak"
+  },
+  {
+    "id": "L-ZHYG_1",
+    "form": "жыгхадэ",
+    "root": "жыгхадэ",
+    "rootForm": "жыгхадэ",
+    "rootIds": [
+      "R-ZHYG_1"
+    ],
+    "meaning": "agaclik; ormanlik",
+    "literalMeaning": "agaclik; ormanlik",
+    "translations": {
+      "tr": "agaclik; ormanlik",
+      "en": "agaclik; ormanlik",
+      "ru": "agaclik; ormanlik"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "жыгхадэ - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-ZHYG_1 - agaclik; ormanlik"
+  },
+  {
+    "id": "L-SHCHAB",
+    "form": "щабагъэ",
+    "root": "щабагъэ",
+    "rootForm": "щабагъэ",
+    "rootIds": [
+      "R-SHCHAB"
+    ],
+    "meaning": "yumusaklik",
+    "literalMeaning": "yumusaklik",
+    "translations": {
+      "tr": "yumusaklik",
+      "en": "yumusaklik",
+      "ru": "yumusaklik"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "щабагъэ - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-SHCHAB - yumusaklik"
+  },
+  {
+    "id": "L-PSHCHY_1",
+    "form": "пщыгъуэ",
+    "root": "пщыгъуэ",
+    "rootForm": "пщыгъуэ",
+    "rootIds": [
+      "R-PSHCHY_1"
+    ],
+    "meaning": "ikindi vakti; aksamustu",
+    "literalMeaning": "ikindi vakti; aksamustu",
+    "translations": {
+      "tr": "ikindi vakti; aksamustu",
+      "en": "ikindi vakti; aksamustu",
+      "ru": "ikindi vakti; aksamustu"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "пщыгъуэ - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-PSHCHY_1 - ikindi vakti; aksamustu"
+  },
+  {
+    "id": "L-ZHYL_1",
+    "form": "жылэдэс",
+    "root": "жылэдэс",
+    "rootForm": "жылэдэс",
+    "rootIds": [
+      "R-ZHYL_1"
+    ],
+    "meaning": "yerlesik; koyde oturan",
+    "literalMeaning": "yerlesik; koyde oturan",
+    "translations": {
+      "tr": "yerlesik; koyde oturan",
+      "en": "yerlesik; koyde oturan",
+      "ru": "yerlesik; koyde oturan"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "жылэдэс - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-ZHYL_1 - yerlesik; koyde oturan"
+  },
+  {
+    "id": "L-SHCHIA_2",
+    "form": "щӀалэгъуэ",
+    "root": "щӀалэгъуэ",
+    "rootForm": "щӀалэгъуэ",
+    "rootIds": [
+      "R-SHCHIA_2"
+    ],
+    "meaning": "genclik; delikanlilik",
+    "literalMeaning": "genclik; delikanlilik",
+    "translations": {
+      "tr": "genclik; delikanlilik",
+      "en": "genclik; delikanlilik",
+      "ru": "genclik; delikanlilik"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "щӀалэгъуэ - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-SHCHIA_2 - genclik; delikanlilik"
+  },
+  {
+    "id": "L-NEKH_2",
+    "form": "нэхъыжь",
+    "root": "нэхъыжь",
+    "rootForm": "нэхъыжь",
+    "rootIds": [
+      "R-NEKH_2"
+    ],
+    "meaning": "yaslilik; buyukluk",
+    "literalMeaning": "yaslilik; buyukluk",
+    "translations": {
+      "tr": "yaslilik; buyukluk",
+      "en": "yaslilik; buyukluk",
+      "ru": "yaslilik; buyukluk"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "нэхъыжь - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-NEKH_2 - yaslilik; buyukluk"
+  },
+  {
+    "id": "L-NEKH_3",
+    "form": "нэхъыщӀэ",
+    "root": "нэхъыщӀэ",
+    "rootForm": "нэхъыщӀэ",
+    "rootIds": [
+      "R-NEKH_3"
+    ],
+    "meaning": "genclik; yenilik",
+    "literalMeaning": "genclik; yenilik",
+    "translations": {
+      "tr": "genclik; yenilik",
+      "en": "genclik; yenilik",
+      "ru": "genclik; yenilik"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "нэхъыщӀэ - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-NEKH_3 - genclik; yenilik"
+  },
+  {
+    "id": "L-TKH_2",
+    "form": "тхьэшхуэ",
+    "root": "тхьэшхуэ",
+    "rootForm": "тхьэшхуэ",
+    "rootIds": [
+      "R-TKH_2"
+    ],
+    "meaning": "ulu tanri",
+    "literalMeaning": "ulu tanri",
+    "translations": {
+      "tr": "ulu tanri",
+      "en": "ulu tanri",
+      "ru": "ulu tanri"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "тхьэшхуэ - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-TKH_2 - ulu tanri"
+  },
+  {
+    "id": "L-SHCHIY_2",
+    "form": "щӀыӀагъэ",
+    "root": "щӀыӀагъэ",
+    "rootForm": "щӀыӀагъэ",
+    "rootIds": [
+      "R-SHCHIY_2"
+    ],
+    "meaning": "sogukluk",
+    "literalMeaning": "sogukluk",
+    "translations": {
+      "tr": "sogukluk",
+      "en": "sogukluk",
+      "ru": "sogukluk"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "щӀыӀагъэ - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-SHCHIY_2 - sogukluk"
+  },
+  {
+    "id": "L-MASHCH_1",
+    "form": "мащӀагъэ",
+    "root": "мащӀагъэ",
+    "rootForm": "мащӀагъэ",
+    "rootIds": [
+      "R-MASHCH_1"
+    ],
+    "meaning": "azlik; kitlik",
+    "literalMeaning": "azlik; kitlik",
+    "translations": {
+      "tr": "azlik; kitlik",
+      "en": "azlik; kitlik",
+      "ru": "azlik; kitlik"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "мащӀагъэ - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-MASHCH_1 - azlik; kitlik"
+  },
+  {
+    "id": "L-KIY",
+    "form": "кӀыхьагъэ",
+    "root": "кӀыхьагъэ",
+    "rootForm": "кӀыхьагъэ",
+    "rootIds": [
+      "R-KIY"
+    ],
+    "meaning": "uzunluk",
+    "literalMeaning": "uzunluk",
+    "translations": {
+      "tr": "uzunluk",
+      "en": "uzunluk",
+      "ru": "uzunluk"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "кӀыхьагъэ - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-KIY - uzunluk"
+  },
+  {
+    "id": "L-FOSH",
+    "form": "фошыгъ",
+    "root": "фошыгъ",
+    "rootForm": "фошыгъ",
+    "rootIds": [
+      "R-FOSH"
+    ],
+    "meaning": "tatli; sekerli",
+    "literalMeaning": "tatli; sekerli",
+    "translations": {
+      "tr": "tatli; sekerli",
+      "en": "tatli; sekerli",
+      "ru": "tatli; sekerli"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "фошыгъ - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-FOSH - tatli; sekerli"
+  },
+  {
+    "id": "L-DEL",
+    "form": "деле",
+    "root": "деле",
+    "rootForm": "деле",
+    "rootIds": [
+      "R-DEL"
+    ],
+    "meaning": "deli; aptal",
+    "literalMeaning": "deli; aptal",
+    "translations": {
+      "tr": "deli; aptal",
+      "en": "deli; aptal",
+      "ru": "deli; aptal"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "деле - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-DEL - deli; aptal"
+  },
+  {
+    "id": "L-MUR",
+    "form": "мурад",
+    "root": "мурад",
+    "rootForm": "мурад",
+    "rootIds": [
+      "R-MUR"
+    ],
+    "meaning": "amac; niyet",
+    "literalMeaning": "amac; niyet",
+    "translations": {
+      "tr": "amac; niyet",
+      "en": "amac; niyet",
+      "ru": "amac; niyet"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "мурад - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-MUR - amac; niyet"
+  },
+  {
+    "id": "L-KHU_1",
+    "form": "хъуэрэ",
+    "root": "хъуэрэ",
+    "rootForm": "хъуэрэ",
+    "rootIds": [
+      "R-KHU_1"
+    ],
+    "meaning": "olus; olma",
+    "literalMeaning": "olus; olma",
+    "translations": {
+      "tr": "olus; olma",
+      "en": "olus; olma",
+      "ru": "olus; olma"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "хъуэрэ - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-KHU_1 - olus; olma"
+  },
+  {
+    "id": "L-IUZH",
+    "form": "иужьы",
+    "root": "иужьы",
+    "rootForm": "иужьы",
+    "rootIds": [
+      "R-IUZH"
+    ],
+    "meaning": "sonra; ardindan",
+    "literalMeaning": "sonra; ardindan",
+    "translations": {
+      "tr": "sonra; ardindan",
+      "en": "sonra; ardindan",
+      "ru": "sonra; ardindan"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "иужьы - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-IUZH - sonra; ardindan"
+  },
+  {
+    "id": "L-UE-PRON_ORPHAN",
+    "form": "уэ",
+    "root": "уэ",
+    "rootForm": "уэ",
+    "rootIds": [
+      "R-UE-PRON"
+    ],
+    "meaning": "уэ",
+    "literalMeaning": "уэ",
+    "translations": {
+      "tr": "уэ",
+      "en": "уэ",
+      "ru": "уэ"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "уэ - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-UE-PRON - уэ"
+  },
+  {
+    "id": "L-UE-AIR",
+    "form": "уэ",
+    "root": "уэ",
+    "rootForm": "уэ",
+    "rootIds": [
+      "R-UE-AIR"
+    ],
+    "meaning": "уэ",
+    "literalMeaning": "уэ",
+    "translations": {
+      "tr": "уэ",
+      "en": "уэ",
+      "ru": "уэ"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "уэ - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-UE-AIR - уэ"
+  },
+  {
+    "id": "L-UE-INTJ_ORPHAN",
+    "form": "уэ",
+    "root": "уэ",
+    "rootForm": "уэ",
+    "rootIds": [
+      "R-UE-INTJ"
+    ],
+    "meaning": "уэ",
+    "literalMeaning": "уэ",
+    "translations": {
+      "tr": "уэ",
+      "en": "уэ",
+      "ru": "уэ"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "уэ - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-UE-INTJ - уэ"
+  },
+  {
+    "id": "L-UE-PART_ORPHAN",
+    "form": "уэ",
+    "root": "уэ",
+    "rootForm": "уэ",
+    "rootIds": [
+      "R-UE-PART"
+    ],
+    "meaning": "уэ",
+    "literalMeaning": "уэ",
+    "translations": {
+      "tr": "уэ",
+      "en": "уэ",
+      "ru": "уэ"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "уэ - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-UE-PART - уэ"
+  },
+  {
+    "id": "L-KO",
+    "form": "къо",
+    "root": "къо",
+    "rootForm": "къо",
+    "rootIds": [
+      "R-KO"
+    ],
+    "meaning": "къо",
+    "literalMeaning": "къо",
+    "translations": {
+      "tr": "къо",
+      "en": "къо",
+      "ru": "къо"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "къо - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-KO - къо"
+  },
+  {
+    "id": "L-ZEU",
+    "form": "зэу",
+    "root": "зэу",
+    "rootForm": "зэу",
+    "rootIds": [
+      "R-ZEU"
+    ],
+    "meaning": "зэу",
+    "literalMeaning": "зэу",
+    "translations": {
+      "tr": "зэу",
+      "en": "зэу",
+      "ru": "зэу"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "зэу - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-ZEU - зэу"
+  },
+  {
+    "id": "L-PYT",
+    "form": "пытэ",
+    "root": "пытэ",
+    "rootForm": "пытэ",
+    "rootIds": [
+      "R-PYT"
+    ],
+    "meaning": "пытэ",
+    "literalMeaning": "пытэ",
+    "translations": {
+      "tr": "пытэ",
+      "en": "пытэ",
+      "ru": "пытэ"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "пытэ - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-PYT - пытэ"
+  },
+  {
+    "id": "L-TEZ",
+    "form": "тез",
+    "root": "тез",
+    "rootForm": "тез",
+    "rootIds": [
+      "R-TEZ"
+    ],
+    "meaning": "тез",
+    "literalMeaning": "тез",
+    "translations": {
+      "tr": "тез",
+      "en": "тез",
+      "ru": "тез"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "тез - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-TEZ - тез"
+  },
+  {
+    "id": "L-KHES",
+    "form": "хэс",
+    "root": "хэс",
+    "rootForm": "хэс",
+    "rootIds": [
+      "R-KHES"
+    ],
+    "meaning": "хэс",
+    "literalMeaning": "хэс",
+    "translations": {
+      "tr": "хэс",
+      "en": "хэс",
+      "ru": "хэс"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "хэс - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-KHES - хэс"
+  },
+  {
+    "id": "L-PKHE",
+    "form": "пхэ",
+    "root": "пхэ",
+    "rootForm": "пхэ",
+    "rootIds": [
+      "R-PKHE"
+    ],
+    "meaning": "пхэ",
+    "literalMeaning": "пхэ",
+    "translations": {
+      "tr": "пхэ",
+      "en": "пхэ",
+      "ru": "пхэ"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "пхэ - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-PKHE - пхэ"
+  },
+  {
+    "id": "L-TYN",
+    "form": "тын",
+    "root": "тын",
+    "rootForm": "тын",
+    "rootIds": [
+      "R-TYN"
+    ],
+    "meaning": "тын",
+    "literalMeaning": "тын",
+    "translations": {
+      "tr": "тын",
+      "en": "тын",
+      "ru": "тын"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "тын - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-TYN - тын"
+  },
+  {
+    "id": "L-KIO",
+    "form": "кӀон",
+    "root": "кӀон",
+    "rootForm": "кӀон",
+    "rootIds": [
+      "R-KIO"
+    ],
+    "meaning": "кӀон",
+    "literalMeaning": "кӀон",
+    "translations": {
+      "tr": "кӀон",
+      "en": "кӀон",
+      "ru": "кӀон"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "кӀон - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-KIO - кӀон"
+  },
+  {
+    "id": "L-BYN",
+    "form": "бын",
+    "root": "бын",
+    "rootForm": "бын",
+    "rootIds": [
+      "R-BYN"
+    ],
+    "meaning": "бын",
+    "literalMeaning": "бын",
+    "translations": {
+      "tr": "бын",
+      "en": "бын",
+      "ru": "бын"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "бын - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-BYN - бын"
+  },
+  {
+    "id": "L-GYN",
+    "form": "гын",
+    "root": "гын",
+    "rootForm": "гын",
+    "rootIds": [
+      "R-GYN"
+    ],
+    "meaning": "гын",
+    "literalMeaning": "гын",
+    "translations": {
+      "tr": "гын",
+      "en": "гын",
+      "ru": "гын"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "гын - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-GYN - гын"
+  },
+  {
+    "id": "L-SEKH",
+    "form": "сэху",
+    "root": "сэху",
+    "rootForm": "сэху",
+    "rootIds": [
+      "R-SEKH"
+    ],
+    "meaning": "сэху",
+    "literalMeaning": "сэху",
+    "translations": {
+      "tr": "сэху",
+      "en": "сэху",
+      "ru": "сэху"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "сэху - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-SEKH - сэху"
+  },
+  {
+    "id": "L-TES",
+    "form": "тес",
+    "root": "тес",
+    "rootForm": "тес",
+    "rootIds": [
+      "R-TES"
+    ],
+    "meaning": "тес",
+    "literalMeaning": "тес",
+    "translations": {
+      "tr": "тес",
+      "en": "тес",
+      "ru": "тес"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "тес - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-TES - тес"
+  },
+  {
+    "id": "L-ESE",
+    "form": "есэн",
+    "root": "есэн",
+    "rootForm": "есэн",
+    "rootIds": [
+      "R-ESE"
+    ],
+    "meaning": "есэн",
+    "literalMeaning": "есэн",
+    "translations": {
+      "tr": "есэн",
+      "en": "есэн",
+      "ru": "есэн"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "есэн - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-ESE - есэн"
+  },
+  {
+    "id": "L-GY",
+    "form": "гъын",
+    "root": "гъын",
+    "rootForm": "гъын",
+    "rootIds": [
+      "R-GY"
+    ],
+    "meaning": "гъын",
+    "literalMeaning": "гъын",
+    "translations": {
+      "tr": "гъын",
+      "en": "гъын",
+      "ru": "гъын"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "гъын - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-GY - гъын"
+  },
+  {
+    "id": "L-SYS",
+    "form": "сысын",
+    "root": "сысын",
+    "rootForm": "сысын",
+    "rootIds": [
+      "R-SYS"
+    ],
+    "meaning": "сысын",
+    "literalMeaning": "сысын",
+    "translations": {
+      "tr": "сысын",
+      "en": "сысын",
+      "ru": "сысын"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "сысын - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-SYS - сысын"
+  },
+  {
+    "id": "L-ZHEP",
+    "form": "жэп",
+    "root": "жэп",
+    "rootForm": "жэп",
+    "rootIds": [
+      "R-ZHEP"
+    ],
+    "meaning": "жэп",
+    "literalMeaning": "жэп",
+    "translations": {
+      "tr": "жэп",
+      "en": "жэп",
+      "ru": "жэп"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "жэп - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-ZHEP - жэп"
+  },
+  {
+    "id": "L-VEN",
+    "form": "вэн",
+    "root": "вэн",
+    "rootForm": "вэн",
+    "rootIds": [
+      "R-VEN"
+    ],
+    "meaning": "вэн",
+    "literalMeaning": "вэн",
+    "translations": {
+      "tr": "вэн",
+      "en": "вэн",
+      "ru": "вэн"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "вэн - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-VEN - вэн"
+  },
+  {
+    "id": "L-UKI",
+    "form": "укӀын",
+    "root": "укӀын",
+    "rootForm": "укӀын",
+    "rootIds": [
+      "R-UKI"
+    ],
+    "meaning": "укӀын",
+    "literalMeaning": "укӀын",
+    "translations": {
+      "tr": "укӀын",
+      "en": "укӀын",
+      "ru": "укӀын"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "укӀын - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-UKI - укӀын"
+  },
+  {
+    "id": "L-UDZH",
+    "form": "уджын",
+    "root": "уджын",
+    "rootForm": "уджын",
+    "rootIds": [
+      "R-UDZH"
+    ],
+    "meaning": "уджын",
+    "literalMeaning": "уджын",
+    "translations": {
+      "tr": "уджын",
+      "en": "уджын",
+      "ru": "уджын"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "уджын - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-UDZH - уджын"
+  },
+  {
+    "id": "L-KOTS",
+    "form": "коц",
+    "root": "коц",
+    "rootForm": "коц",
+    "rootIds": [
+      "R-KOTS"
+    ],
+    "meaning": "коц",
+    "literalMeaning": "коц",
+    "translations": {
+      "tr": "коц",
+      "en": "коц",
+      "ru": "коц"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "коц - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-KOTS - коц"
+  },
+  {
+    "id": "L-ZHEN",
+    "form": "жэн",
+    "root": "жэн",
+    "rootForm": "жэн",
+    "rootIds": [
+      "R-ZHEN"
+    ],
+    "meaning": "жэн",
+    "literalMeaning": "жэн",
+    "translations": {
+      "tr": "жэн",
+      "en": "жэн",
+      "ru": "жэн"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "жэн - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-ZHEN - жэн"
+  },
+  {
+    "id": "L-IZH",
+    "form": "ижь",
+    "root": "ижь",
+    "rootForm": "ижь",
+    "rootIds": [
+      "R-IZH"
+    ],
+    "meaning": "ижь",
+    "literalMeaning": "ижь",
+    "translations": {
+      "tr": "ижь",
+      "en": "ижь",
+      "ru": "ижь"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "ижь - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-IZH - ижь"
+  },
+  {
+    "id": "L-IBE",
+    "form": "ибэ",
+    "root": "ибэ",
+    "rootForm": "ибэ",
+    "rootIds": [
+      "R-IBE"
+    ],
+    "meaning": "ибэ",
+    "literalMeaning": "ибэ",
+    "translations": {
+      "tr": "ибэ",
+      "en": "ибэ",
+      "ru": "ибэ"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "ибэ - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-IBE - ибэ"
+  },
+  {
+    "id": "L-MESH",
+    "form": "мэш",
+    "root": "мэш",
+    "rootForm": "мэш",
+    "rootIds": [
+      "R-MESH"
+    ],
+    "meaning": "мэш",
+    "literalMeaning": "мэш",
+    "translations": {
+      "tr": "мэш",
+      "en": "мэш",
+      "ru": "мэш"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "мэш - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-MESH - мэш"
+  },
+  {
+    "id": "L-NYP",
+    "form": "нып",
+    "root": "нып",
+    "rootForm": "нып",
+    "rootIds": [
+      "R-NYP"
+    ],
+    "meaning": "нып",
+    "literalMeaning": "нып",
+    "translations": {
+      "tr": "нып",
+      "en": "нып",
+      "ru": "нып"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "нып - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-NYP - нып"
+  },
+  {
+    "id": "L-SYN",
+    "form": "сын",
+    "root": "сын",
+    "rootForm": "сын",
+    "rootIds": [
+      "R-SYN"
+    ],
+    "meaning": "сын",
+    "literalMeaning": "сын",
+    "translations": {
+      "tr": "сын",
+      "en": "сын",
+      "ru": "сын"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "сын - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-SYN - сын"
+  },
+  {
+    "id": "L-BO",
+    "form": "бо",
+    "root": "бо",
+    "rootForm": "бо",
+    "rootIds": [
+      "R-BO"
+    ],
+    "meaning": "бо",
+    "literalMeaning": "бо",
+    "translations": {
+      "tr": "бо",
+      "en": "бо",
+      "ru": "бо"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "бо - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-BO - бо"
+  },
+  {
+    "id": "L-BEZ",
+    "form": "без",
+    "root": "без",
+    "rootForm": "без",
+    "rootIds": [
+      "R-BEZ"
+    ],
+    "meaning": "без",
+    "literalMeaning": "без",
+    "translations": {
+      "tr": "без",
+      "en": "без",
+      "ru": "без"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "без - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-BEZ - без"
+  },
+  {
+    "id": "L-CHYL",
+    "form": "чыл",
+    "root": "чыл",
+    "rootForm": "чыл",
+    "rootIds": [
+      "R-CHYL"
+    ],
+    "meaning": "чыл",
+    "literalMeaning": "чыл",
+    "translations": {
+      "tr": "чыл",
+      "en": "чыл",
+      "ru": "чыл"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "чыл - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-CHYL - чыл"
+  },
+  {
+    "id": "L-KHEN_ORPHAN",
+    "form": "хэн",
+    "root": "хэн",
+    "rootForm": "хэн",
+    "rootIds": [
+      "R-KHEN"
+    ],
+    "meaning": "хэн",
+    "literalMeaning": "хэн",
+    "translations": {
+      "tr": "хэн",
+      "en": "хэн",
+      "ru": "хэн"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "хэн - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-KHEN - хэн"
+  },
+  {
+    "id": "L-UBE",
+    "form": "убэ",
+    "root": "убэ",
+    "rootForm": "убэ",
+    "rootIds": [
+      "R-UBE"
+    ],
+    "meaning": "убэ",
+    "literalMeaning": "убэ",
+    "translations": {
+      "tr": "убэ",
+      "en": "убэ",
+      "ru": "убэ"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "убэ - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-UBE - убэ"
+  },
+  {
+    "id": "L-SAY",
+    "form": "сай",
+    "root": "сай",
+    "rootForm": "сай",
+    "rootIds": [
+      "R-SAY"
+    ],
+    "meaning": "сай",
+    "literalMeaning": "сай",
+    "translations": {
+      "tr": "сай",
+      "en": "сай",
+      "ru": "сай"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "сай - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-SAY - сай"
+  },
+  {
+    "id": "L-NAMYS_ORPHAN",
+    "form": "намыс",
+    "root": "намыс",
+    "rootForm": "намыс",
+    "rootIds": [
+      "R-NAMYS"
+    ],
+    "meaning": "намыс",
+    "literalMeaning": "намыс",
+    "translations": {
+      "tr": "намыс",
+      "en": "намыс",
+      "ru": "намыс"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "намыс - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-NAMYS - намыс"
+  },
+  {
+    "id": "L-ASHCH",
+    "form": "ащ",
+    "root": "ащ",
+    "rootForm": "ащ",
+    "rootIds": [
+      "R-ASHCH"
+    ],
+    "meaning": "ащ",
+    "literalMeaning": "ащ",
+    "translations": {
+      "tr": "ащ",
+      "en": "ащ",
+      "ru": "ащ"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "ащ - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-ASHCH - ащ"
+  },
+  {
+    "id": "L-BE",
+    "form": "бэ",
+    "root": "бэ",
+    "rootForm": "бэ",
+    "rootIds": [
+      "R-BE"
+    ],
+    "meaning": "бэ",
+    "literalMeaning": "бэ",
+    "translations": {
+      "tr": "бэ",
+      "en": "бэ",
+      "ru": "бэ"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "бэ - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-BE - бэ"
+  },
+  {
+    "id": "L-IZ",
+    "form": "из",
+    "root": "из",
+    "rootForm": "из",
+    "rootIds": [
+      "R-IZ"
+    ],
+    "meaning": "из",
+    "literalMeaning": "из",
+    "translations": {
+      "tr": "из",
+      "en": "из",
+      "ru": "из"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "из - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-IZ - из"
+  },
+  {
+    "id": "L-ZEV",
+    "form": "зэв",
+    "root": "зэв",
+    "rootForm": "зэв",
+    "rootIds": [
+      "R-ZEV"
+    ],
+    "meaning": "зэв",
+    "literalMeaning": "зэв",
+    "translations": {
+      "tr": "зэв",
+      "en": "зэв",
+      "ru": "зэв"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "зэв - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-ZEV - зэв"
+  },
+  {
+    "id": "L-BEV",
+    "form": "бэв",
+    "root": "бэв",
+    "rootForm": "бэв",
+    "rootIds": [
+      "R-BEV"
+    ],
+    "meaning": "бэв",
+    "literalMeaning": "бэв",
+    "translations": {
+      "tr": "бэв",
+      "en": "бэв",
+      "ru": "бэв"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "бэв - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-BEV - бэв"
+  },
+  {
+    "id": "L-ZHYR",
+    "form": "жыр",
+    "root": "жыр",
+    "rootForm": "жыр",
+    "rootIds": [
+      "R-ZHYR"
+    ],
+    "meaning": "жыр",
+    "literalMeaning": "жыр",
+    "translations": {
+      "tr": "жыр",
+      "en": "жыр",
+      "ru": "жыр"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "жыр - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-ZHYR - жыр"
+  },
+  {
+    "id": "L-CHY",
+    "form": "чы",
+    "root": "чы",
+    "rootForm": "чы",
+    "rootIds": [
+      "R-CHY"
+    ],
+    "meaning": "чы",
+    "literalMeaning": "чы",
+    "translations": {
+      "tr": "чы",
+      "en": "чы",
+      "ru": "чы"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "чы - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-CHY - чы"
+  },
+  {
+    "id": "L-DEP",
+    "form": "дэп",
+    "root": "дэп",
+    "rootForm": "дэп",
+    "rootIds": [
+      "R-DEP"
+    ],
+    "meaning": "дэп",
+    "literalMeaning": "дэп",
+    "translations": {
+      "tr": "дэп",
+      "en": "дэп",
+      "ru": "дэп"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "дэп - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-DEP - дэп"
+  },
+  {
+    "id": "L-ZHEZ",
+    "form": "жэз",
+    "root": "жэз",
+    "rootForm": "жэз",
+    "rootIds": [
+      "R-ZHEZ"
+    ],
+    "meaning": "жэз",
+    "literalMeaning": "жэз",
+    "translations": {
+      "tr": "жэз",
+      "en": "жэз",
+      "ru": "жэз"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "жэз - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-ZHEZ - жэз"
+  },
+  {
+    "id": "L-ETA",
+    "form": "ета",
+    "root": "ета",
+    "rootForm": "ета",
+    "rootIds": [
+      "R-ETA"
+    ],
+    "meaning": "ета",
+    "literalMeaning": "ета",
+    "translations": {
+      "tr": "ета",
+      "en": "ета",
+      "ru": "ета"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "ета - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-ETA - ета"
+  },
+  {
+    "id": "L-EBZ",
+    "form": "ебз",
+    "root": "ебз",
+    "rootForm": "ебз",
+    "rootIds": [
+      "R-EBZ"
+    ],
+    "meaning": "ебз",
+    "literalMeaning": "ебз",
+    "translations": {
+      "tr": "ебз",
+      "en": "ебз",
+      "ru": "ебз"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "ебз - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-EBZ - ебз"
+  },
+  {
+    "id": "L-SHKHU",
+    "form": "шху",
+    "root": "шху",
+    "rootForm": "шху",
+    "rootIds": [
+      "R-SHKHU"
+    ],
+    "meaning": "шху",
+    "literalMeaning": "шху",
+    "translations": {
+      "tr": "шху",
+      "en": "шху",
+      "ru": "шху"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "шху - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-SHKHU - шху"
+  },
+  {
+    "id": "L-MAE",
+    "form": "мае",
+    "root": "мае",
+    "rootForm": "мае",
+    "rootIds": [
+      "R-MAE"
+    ],
+    "meaning": "мае",
+    "literalMeaning": "мае",
+    "translations": {
+      "tr": "мае",
+      "en": "мае",
+      "ru": "мае"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "мае - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-MAE - мае"
+  },
+  {
+    "id": "L-KHUE",
+    "form": "хуэ",
+    "root": "хуэ",
+    "rootForm": "хуэ",
+    "rootIds": [
+      "R-KHUE"
+    ],
+    "meaning": "хуэ",
+    "literalMeaning": "хуэ",
+    "translations": {
+      "tr": "хуэ",
+      "en": "хуэ",
+      "ru": "хуэ"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "хуэ - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-KHUE - хуэ"
+  },
+  {
+    "id": "L-UZY",
+    "form": "узы",
+    "root": "узы",
+    "rootForm": "узы",
+    "rootIds": [
+      "R-UZY"
+    ],
+    "meaning": "узы",
+    "literalMeaning": "узы",
+    "translations": {
+      "tr": "узы",
+      "en": "узы",
+      "ru": "узы"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "узы - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-UZY - узы"
+  },
+  {
+    "id": "L-UDY",
+    "form": "уды",
+    "root": "уды",
+    "rootForm": "уды",
+    "rootIds": [
+      "R-UDY"
+    ],
+    "meaning": "уды",
+    "literalMeaning": "уды",
+    "translations": {
+      "tr": "уды",
+      "en": "уды",
+      "ru": "уды"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "уды - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-UDY - уды"
+  },
+  {
+    "id": "L-MEY",
+    "form": "мей",
+    "root": "мей",
+    "rootForm": "мей",
+    "rootIds": [
+      "R-MEY"
+    ],
+    "meaning": "мей",
+    "literalMeaning": "мей",
+    "translations": {
+      "tr": "мей",
+      "en": "мей",
+      "ru": "мей"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "мей - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-MEY - мей"
+  },
+  {
+    "id": "L-GOR",
+    "form": "горэ",
+    "root": "горэ",
+    "rootForm": "горэ",
+    "rootIds": [
+      "R-GOR"
+    ],
+    "meaning": "горэ",
+    "literalMeaning": "горэ",
+    "translations": {
+      "tr": "горэ",
+      "en": "горэ",
+      "ru": "горэ"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "горэ - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-GOR - горэ"
+  },
+  {
+    "id": "L-ZEZ",
+    "form": "зэзэмызэ",
+    "root": "зэзэмызэ",
+    "rootForm": "зэзэмызэ",
+    "rootIds": [
+      "R-ZEZ"
+    ],
+    "meaning": "зэзэмызэ",
+    "literalMeaning": "зэзэмызэ",
+    "translations": {
+      "tr": "зэзэмызэ",
+      "en": "зэзэмызэ",
+      "ru": "зэзэмызэ"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "зэзэмызэ - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-ZEZ - зэзэмызэ"
+  },
+  {
+    "id": "L-IOF",
+    "form": "Ӏоф",
+    "root": "Ӏоф",
+    "rootForm": "Ӏоф",
+    "rootIds": [
+      "R-IOF"
+    ],
+    "meaning": "Ӏоф",
+    "literalMeaning": "Ӏоф",
+    "translations": {
+      "tr": "Ӏоф",
+      "en": "Ӏоф",
+      "ru": "Ӏоф"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "Ӏоф - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-IOF - Ӏоф"
+  },
+  {
+    "id": "L-ZESH_ORPHAN",
+    "form": "зэш",
+    "root": "зэш",
+    "rootForm": "зэш",
+    "rootIds": [
+      "R-ZESH"
+    ],
+    "meaning": "зэш",
+    "literalMeaning": "зэш",
+    "translations": {
+      "tr": "зэш",
+      "en": "зэш",
+      "ru": "зэш"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "зэш - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-ZESH - зэш"
+  },
+  {
+    "id": "L-NEY",
+    "form": "ней",
+    "root": "ней",
+    "rootForm": "ней",
+    "rootIds": [
+      "R-NEY"
+    ],
+    "meaning": "ней",
+    "literalMeaning": "ней",
+    "translations": {
+      "tr": "ней",
+      "en": "ней",
+      "ru": "ней"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "ней - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-NEY - ней"
+  },
+  {
+    "id": "L-SHKHO",
+    "form": "шхонч",
+    "root": "шхонч",
+    "rootForm": "шхонч",
+    "rootIds": [
+      "R-SHKHO"
+    ],
+    "meaning": "шхонч",
+    "literalMeaning": "шхонч",
+    "translations": {
+      "tr": "шхонч",
+      "en": "шхонч",
+      "ru": "шхонч"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "шхонч - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-SHKHO - шхонч"
+  },
+  {
+    "id": "L-USY",
+    "form": "усын",
+    "root": "усын",
+    "rootForm": "усын",
+    "rootIds": [
+      "R-USY"
+    ],
+    "meaning": "усын",
+    "literalMeaning": "усын",
+    "translations": {
+      "tr": "усын",
+      "en": "усын",
+      "ru": "усын"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "усын - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-USY - усын"
+  },
+  {
+    "id": "L-YATE",
+    "form": "ятэш",
+    "root": "ятэш",
+    "rootForm": "ятэш",
+    "rootIds": [
+      "R-YATE"
+    ],
+    "meaning": "ятэш",
+    "literalMeaning": "ятэш",
+    "translations": {
+      "tr": "ятэш",
+      "en": "ятэш",
+      "ru": "ятэш"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "ятэш - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-YATE - ятэш"
+  },
+  {
+    "id": "L-UZH",
+    "form": "ужь",
+    "root": "ужь",
+    "rootForm": "ужь",
+    "rootIds": [
+      "R-UZH"
+    ],
+    "meaning": "ужь",
+    "literalMeaning": "ужь",
+    "translations": {
+      "tr": "ужь",
+      "en": "ужь",
+      "ru": "ужь"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "ужь - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-UZH - ужь"
+  },
+  {
+    "id": "L-BASH",
+    "form": "баш",
+    "root": "баш",
+    "rootForm": "баш",
+    "rootIds": [
+      "R-BASH"
+    ],
+    "meaning": "баш",
+    "literalMeaning": "баш",
+    "translations": {
+      "tr": "баш",
+      "en": "баш",
+      "ru": "баш"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "баш - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-BASH - баш"
+  },
+  {
+    "id": "L-USE",
+    "form": "усэ",
+    "root": "усэ",
+    "rootForm": "усэ",
+    "rootIds": [
+      "R-USE"
+    ],
+    "meaning": "усэ",
+    "literalMeaning": "усэ",
+    "translations": {
+      "tr": "усэ",
+      "en": "усэ",
+      "ru": "усэ"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "усэ - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-USE - усэ"
+  },
+  {
+    "id": "L-LEN",
+    "form": "лэн",
+    "root": "лэн",
+    "rootForm": "лэн",
+    "rootIds": [
+      "R-LEN"
+    ],
+    "meaning": "лэн",
+    "literalMeaning": "лэн",
+    "translations": {
+      "tr": "лэн",
+      "en": "лэн",
+      "ru": "лэн"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "лэн - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-LEN - лэн"
+  },
+  {
+    "id": "L-IZY",
+    "form": "изы",
+    "root": "изы",
+    "rootForm": "изы",
+    "rootIds": [
+      "R-IZY"
+    ],
+    "meaning": "изы",
+    "literalMeaning": "изы",
+    "translations": {
+      "tr": "изы",
+      "en": "изы",
+      "ru": "изы"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "изы - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-IZY - изы"
+  },
+  {
+    "id": "L-ZHYP",
+    "form": "жып",
+    "root": "жып",
+    "rootForm": "жып",
+    "rootIds": [
+      "R-ZHYP"
+    ],
+    "meaning": "жып",
+    "literalMeaning": "жып",
+    "translations": {
+      "tr": "жып",
+      "en": "жып",
+      "ru": "жып"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "жып - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-ZHYP - жып"
+  },
+  {
+    "id": "L-ZHER",
+    "form": "жэр",
+    "root": "жэр",
+    "rootForm": "жэр",
+    "rootIds": [
+      "R-ZHER"
+    ],
+    "meaning": "жэр",
+    "literalMeaning": "жэр",
+    "translations": {
+      "tr": "жэр",
+      "en": "жэр",
+      "ru": "жэр"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "жэр - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-ZHER - жэр"
+  },
+  {
+    "id": "L-ODY",
+    "form": "оды",
+    "root": "оды",
+    "rootForm": "оды",
+    "rootIds": [
+      "R-ODY"
+    ],
+    "meaning": "оды",
+    "literalMeaning": "оды",
+    "translations": {
+      "tr": "оды",
+      "en": "оды",
+      "ru": "оды"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "оды - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-ODY - оды"
+  },
+  {
+    "id": "L-ERU",
+    "form": "еру",
+    "root": "еру",
+    "rootForm": "еру",
+    "rootIds": [
+      "R-ERU"
+    ],
+    "meaning": "еру",
+    "literalMeaning": "еру",
+    "translations": {
+      "tr": "еру",
+      "en": "еру",
+      "ru": "еру"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "еру - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-ERU - еру"
+  },
+  {
+    "id": "L-GYZ",
+    "form": "гыз",
+    "root": "гыз",
+    "rootForm": "гыз",
+    "rootIds": [
+      "R-GYZ"
+    ],
+    "meaning": "гыз",
+    "literalMeaning": "гыз",
+    "translations": {
+      "tr": "гыз",
+      "en": "гыз",
+      "ru": "гыз"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "гыз - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-GYZ - гыз"
+  },
+  {
+    "id": "L-ESHA",
+    "form": "еша",
+    "root": "еша",
+    "rootForm": "еша",
+    "rootIds": [
+      "R-ESHA"
+    ],
+    "meaning": "еша",
+    "literalMeaning": "еша",
+    "translations": {
+      "tr": "еша",
+      "en": "еша",
+      "ru": "еша"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "еша - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-ESHA - еша"
+  },
+  {
+    "id": "L-CHYGAY",
+    "form": "чъыгай",
+    "root": "чъыгай",
+    "rootForm": "чъыгай",
+    "rootIds": [
+      "R-CHYGAY"
+    ],
+    "meaning": "чъыгай",
+    "literalMeaning": "чъыгай",
+    "translations": {
+      "tr": "чъыгай",
+      "en": "чъыгай",
+      "ru": "чъыгай"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "чъыгай - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-CHYGAY - чъыгай"
+  },
+  {
+    "id": "L-MY_ORPHAN",
+    "form": "мы",
+    "root": "мы",
+    "rootForm": "мы",
+    "rootIds": [
+      "R-MY"
+    ],
+    "meaning": "мы",
+    "literalMeaning": "мы",
+    "translations": {
+      "tr": "мы",
+      "en": "мы",
+      "ru": "мы"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "мы - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-MY - мы"
+  },
+  {
+    "id": "L-KHUN",
+    "form": "хун",
+    "root": "хун",
+    "rootForm": "хун",
+    "rootIds": [
+      "R-KHUN"
+    ],
+    "meaning": "хун",
+    "literalMeaning": "хун",
+    "translations": {
+      "tr": "хун",
+      "en": "хун",
+      "ru": "хун"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "хун - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-KHUN - хун"
+  },
+  {
+    "id": "L-TYAT",
+    "form": "тят",
+    "root": "тят",
+    "rootForm": "тят",
+    "rootIds": [
+      "R-TYAT"
+    ],
+    "meaning": "тят",
+    "literalMeaning": "тят",
+    "translations": {
+      "tr": "тят",
+      "en": "тят",
+      "ru": "тят"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "тят - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-TYAT - тят"
+  },
+  {
+    "id": "L-TKHA",
+    "form": "тха",
+    "root": "тха",
+    "rootForm": "тха",
+    "rootIds": [
+      "R-TKHA"
+    ],
+    "meaning": "тха",
+    "literalMeaning": "тха",
+    "translations": {
+      "tr": "тха",
+      "en": "тха",
+      "ru": "тха"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "тха - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-TKHA - тха"
+  },
+  {
+    "id": "L-ZHYN",
+    "form": "жын",
+    "root": "жын",
+    "rootForm": "жын",
+    "rootIds": [
+      "R-ZHYN"
+    ],
+    "meaning": "жын",
+    "literalMeaning": "жын",
+    "translations": {
+      "tr": "жын",
+      "en": "жын",
+      "ru": "жын"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "жын - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-ZHYN - жын"
+  },
+  {
+    "id": "L-KHEY",
+    "form": "хей",
+    "root": "хей",
+    "rootForm": "хей",
+    "rootIds": [
+      "R-KHEY"
+    ],
+    "meaning": "хей",
+    "literalMeaning": "хей",
+    "translations": {
+      "tr": "хей",
+      "en": "хей",
+      "ru": "хей"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "хей - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-KHEY - хей"
+  },
+  {
+    "id": "L-PYI",
+    "form": "пыи",
+    "root": "пыи",
+    "rootForm": "пыи",
+    "rootIds": [
+      "R-PYI"
+    ],
+    "meaning": "пыи",
+    "literalMeaning": "пыи",
+    "translations": {
+      "tr": "пыи",
+      "en": "пыи",
+      "ru": "пыи"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "пыи - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-PYI - пыи"
+  },
+  {
+    "id": "L-NOS",
+    "form": "нос",
+    "root": "нос",
+    "rootForm": "нос",
+    "rootIds": [
+      "R-NOS"
+    ],
+    "meaning": "нос",
+    "literalMeaning": "нос",
+    "translations": {
+      "tr": "нос",
+      "en": "нос",
+      "ru": "нос"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "нос - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-NOS - нос"
+  },
+  {
+    "id": "L-AUZ",
+    "form": "ауз",
+    "root": "ауз",
+    "rootForm": "ауз",
+    "rootIds": [
+      "R-AUZ"
+    ],
+    "meaning": "ауз",
+    "literalMeaning": "ауз",
+    "translations": {
+      "tr": "ауз",
+      "en": "ауз",
+      "ru": "ауз"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "ауз - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-AUZ - ауз"
+  },
+  {
+    "id": "L-DEN",
+    "form": "дэн",
+    "root": "дэн",
+    "rootForm": "дэн",
+    "rootIds": [
+      "R-DEN"
+    ],
+    "meaning": "дэн",
+    "literalMeaning": "дэн",
+    "translations": {
+      "tr": "дэн",
+      "en": "дэн",
+      "ru": "дэн"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "дэн - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-DEN - дэн"
+  },
+  {
+    "id": "L-UD",
+    "form": "уд",
+    "root": "уд",
+    "rootForm": "уд",
+    "rootIds": [
+      "R-UD"
+    ],
+    "meaning": "уд",
+    "literalMeaning": "уд",
+    "translations": {
+      "tr": "уд",
+      "en": "уд",
+      "ru": "уд"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "уд - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-UD - уд"
+  },
+  {
+    "id": "L-DYN",
+    "form": "дын",
+    "root": "дын",
+    "rootForm": "дын",
+    "rootIds": [
+      "R-DYN"
+    ],
+    "meaning": "дын",
+    "literalMeaning": "дын",
+    "translations": {
+      "tr": "дын",
+      "en": "дын",
+      "ru": "дын"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "дын - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-DYN - дын"
+  },
+  {
+    "id": "L-ZYN",
+    "form": "зын",
+    "root": "зын",
+    "rootForm": "зын",
+    "rootIds": [
+      "R-ZYN"
+    ],
+    "meaning": "зын",
+    "literalMeaning": "зын",
+    "translations": {
+      "tr": "зын",
+      "en": "зын",
+      "ru": "зын"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "зын - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-ZYN - зын"
+  },
+  {
+    "id": "L-NYO",
+    "form": "ныо",
+    "root": "ныо",
+    "rootForm": "ныо",
+    "rootIds": [
+      "R-NYO"
+    ],
+    "meaning": "ныо",
+    "literalMeaning": "ныо",
+    "translations": {
+      "tr": "ныо",
+      "en": "ныо",
+      "ru": "ныо"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "ныо - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-NYO - ныо"
+  },
+  {
+    "id": "L-UED",
+    "form": "уэд",
+    "root": "уэд",
+    "rootForm": "уэд",
+    "rootIds": [
+      "R-UED"
+    ],
+    "meaning": "уэд",
+    "literalMeaning": "уэд",
+    "translations": {
+      "tr": "уэд",
+      "en": "уэд",
+      "ru": "уэд"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "уэд - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-UED - уэд"
+  },
+  {
+    "id": "L-SEN",
+    "form": "сэн",
+    "root": "сэн",
+    "rootForm": "сэн",
+    "rootIds": [
+      "R-SEN"
+    ],
+    "meaning": "сэн",
+    "literalMeaning": "сэн",
+    "translations": {
+      "tr": "сэн",
+      "en": "сэн",
+      "ru": "сэн"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "сэн - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-SEN - сэн"
+  },
+  {
+    "id": "L-OR",
+    "form": "ор",
+    "root": "ор",
+    "rootForm": "ор",
+    "rootIds": [
+      "R-OR"
+    ],
+    "meaning": "ор",
+    "literalMeaning": "ор",
+    "translations": {
+      "tr": "ор",
+      "en": "ор",
+      "ru": "ор"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "ор - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-OR - ор"
+  },
+  {
+    "id": "L-ARU",
+    "form": "ару",
+    "root": "ару",
+    "rootForm": "ару",
+    "rootIds": [
+      "R-ARU"
+    ],
+    "meaning": "ару",
+    "literalMeaning": "ару",
+    "translations": {
+      "tr": "ару",
+      "en": "ару",
+      "ru": "ару"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "ару - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-ARU - ару"
+  },
+  {
+    "id": "L-BYZH",
+    "form": "быж",
+    "root": "быж",
+    "rootForm": "быж",
+    "rootIds": [
+      "R-BYZH"
+    ],
+    "meaning": "быж",
+    "literalMeaning": "быж",
+    "translations": {
+      "tr": "быж",
+      "en": "быж",
+      "ru": "быж"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "быж - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-BYZH - быж"
+  },
+  {
+    "id": "L-CHIY",
+    "form": "чий",
+    "root": "чий",
+    "rootForm": "чий",
+    "rootIds": [
+      "R-CHIY"
+    ],
+    "meaning": "чий",
+    "literalMeaning": "чий",
+    "translations": {
+      "tr": "чий",
+      "en": "чий",
+      "ru": "чий"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "чий - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-CHIY - чий"
+  },
+  {
+    "id": "L-DIYA",
+    "form": "дия",
+    "root": "дия",
+    "rootForm": "дия",
+    "rootIds": [
+      "R-DIYA"
+    ],
+    "meaning": "дия",
+    "literalMeaning": "дия",
+    "translations": {
+      "tr": "дия",
+      "en": "дия",
+      "ru": "дия"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "дия - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-DIYA - дия"
+  },
+  {
+    "id": "L-DZHA",
+    "form": "джа",
+    "root": "джа",
+    "rootForm": "джа",
+    "rootIds": [
+      "R-DZHA"
+    ],
+    "meaning": "джа",
+    "literalMeaning": "джа",
+    "translations": {
+      "tr": "джа",
+      "en": "джа",
+      "ru": "джа"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "джа - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-DZHA - джа"
+  },
+  {
+    "id": "L-ELE",
+    "form": "елэ",
+    "root": "елэ",
+    "rootForm": "елэ",
+    "rootIds": [
+      "R-ELE"
+    ],
+    "meaning": "елэ",
+    "literalMeaning": "елэ",
+    "translations": {
+      "tr": "елэ",
+      "en": "елэ",
+      "ru": "елэ"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "елэ - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-ELE - елэ"
+  },
+  {
+    "id": "L-ES",
+    "form": "ес",
+    "root": "ес",
+    "rootForm": "ес",
+    "rootIds": [
+      "R-ES"
+    ],
+    "meaning": "ес",
+    "literalMeaning": "ес",
+    "translations": {
+      "tr": "ес",
+      "en": "ес",
+      "ru": "ес"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "ес - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-ES - ес"
+  },
+  {
+    "id": "L-ESH",
+    "form": "еш",
+    "root": "еш",
+    "rootForm": "еш",
+    "rootIds": [
+      "R-ESH"
+    ],
+    "meaning": "еш",
+    "literalMeaning": "еш",
+    "translations": {
+      "tr": "еш",
+      "en": "еш",
+      "ru": "еш"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "еш - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-ESH - еш"
+  },
+  {
+    "id": "L-GIE",
+    "form": "гие",
+    "root": "гие",
+    "rootForm": "гие",
+    "rootIds": [
+      "R-GIE"
+    ],
+    "meaning": "гие",
+    "literalMeaning": "гие",
+    "translations": {
+      "tr": "гие",
+      "en": "гие",
+      "ru": "гие"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "гие - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-GIE - гие"
+  },
+  {
+    "id": "L-GYE",
+    "form": "гые",
+    "root": "гые",
+    "rootForm": "гые",
+    "rootIds": [
+      "R-GYE"
+    ],
+    "meaning": "гые",
+    "literalMeaning": "гые",
+    "translations": {
+      "tr": "гые",
+      "en": "гые",
+      "ru": "гые"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "гые - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-GYE - гые"
+  },
+  {
+    "id": "L-IZU",
+    "form": "изу",
+    "root": "изу",
+    "rootForm": "изу",
+    "rootIds": [
+      "R-IZU"
+    ],
+    "meaning": "изу",
+    "literalMeaning": "изу",
+    "translations": {
+      "tr": "изу",
+      "en": "изу",
+      "ru": "изу"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "изу - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-IZU - изу"
+  },
+  {
+    "id": "L-NYSH",
+    "form": "ныш",
+    "root": "ныш",
+    "rootForm": "ныш",
+    "rootIds": [
+      "R-NYSH"
+    ],
+    "meaning": "ныш",
+    "literalMeaning": "ныш",
+    "translations": {
+      "tr": "ныш",
+      "en": "ныш",
+      "ru": "ныш"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "ныш - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-NYSH - ныш"
+  },
+  {
+    "id": "L-OD",
+    "form": "од",
+    "root": "од",
+    "rootForm": "од",
+    "rootIds": [
+      "R-OD"
+    ],
+    "meaning": "од",
+    "literalMeaning": "од",
+    "translations": {
+      "tr": "од",
+      "en": "од",
+      "ru": "од"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "од - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-OD - од"
+  },
+  {
+    "id": "L-SHCHIZ",
+    "form": "щиз",
+    "root": "щиз",
+    "rootForm": "щиз",
+    "rootIds": [
+      "R-SHCHIZ"
+    ],
+    "meaning": "щиз",
+    "literalMeaning": "щиз",
+    "translations": {
+      "tr": "щиз",
+      "en": "щиз",
+      "ru": "щиз"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "щиз - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-SHCHIZ - щиз"
+  },
+  {
+    "id": "L-TIY",
+    "form": "тӀы",
+    "root": "тӀы",
+    "rootForm": "тӀы",
+    "rootIds": [
+      "R-TIY"
+    ],
+    "meaning": "тӀы",
+    "literalMeaning": "тӀы",
+    "translations": {
+      "tr": "тӀы",
+      "en": "тӀы",
+      "ru": "тӀы"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "тӀы - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-TIY - тӀы"
+  },
+  {
+    "id": "L-TOSHCH",
+    "form": "тощ",
+    "root": "тощ",
+    "rootForm": "тощ",
+    "rootIds": [
+      "R-TOSHCH"
+    ],
+    "meaning": "тощ",
+    "literalMeaning": "тощ",
+    "translations": {
+      "tr": "тощ",
+      "en": "тощ",
+      "ru": "тощ"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "тощ - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-TOSHCH - тощ"
+  },
+  {
+    "id": "L-UAE",
+    "form": "уае",
+    "root": "уае",
+    "rootForm": "уае",
+    "rootIds": [
+      "R-UAE"
+    ],
+    "meaning": "уае",
+    "literalMeaning": "уае",
+    "translations": {
+      "tr": "уае",
+      "en": "уае",
+      "ru": "уае"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "уае - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-UAE - уае"
+  },
+  {
+    "id": "L-UEM",
+    "form": "уэм",
+    "root": "уэм",
+    "rootForm": "уэм",
+    "rootIds": [
+      "R-UEM"
+    ],
+    "meaning": "уэм",
+    "literalMeaning": "уэм",
+    "translations": {
+      "tr": "уэм",
+      "en": "уэм",
+      "ru": "уэм"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "уэм - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-UEM - уэм"
+  },
+  {
+    "id": "L-UFA",
+    "form": "уфа",
+    "root": "уфа",
+    "rootForm": "уфа",
+    "rootIds": [
+      "R-UFA"
+    ],
+    "meaning": "уфа",
+    "literalMeaning": "уфа",
+    "translations": {
+      "tr": "уфа",
+      "en": "уфа",
+      "ru": "уфа"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "уфа - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-UFA - уфа"
+  },
+  {
+    "id": "L-UKHA",
+    "form": "уха",
+    "root": "уха",
+    "rootForm": "уха",
+    "rootIds": [
+      "R-UKHA"
+    ],
+    "meaning": "уха",
+    "literalMeaning": "уха",
+    "translations": {
+      "tr": "уха",
+      "en": "уха",
+      "ru": "уха"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "уха - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-UKHA - уха"
+  },
+  {
+    "id": "L-USHCH",
+    "form": "ущ",
+    "root": "ущ",
+    "rootForm": "ущ",
+    "rootIds": [
+      "R-USHCH"
+    ],
+    "meaning": "ущ",
+    "literalMeaning": "ущ",
+    "translations": {
+      "tr": "ущ",
+      "en": "ущ",
+      "ru": "ущ"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "ущ - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-USHCH - ущ"
+  },
+  {
+    "id": "L-UTS",
+    "form": "уц",
+    "root": "уц",
+    "rootForm": "уц",
+    "rootIds": [
+      "R-UTS"
+    ],
+    "meaning": "уц",
+    "literalMeaning": "уц",
+    "translations": {
+      "tr": "уц",
+      "en": "уц",
+      "ru": "уц"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "уц - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-UTS - уц"
+  },
+  {
+    "id": "L-UZU",
+    "form": "узу",
+    "root": "узу",
+    "rootForm": "узу",
+    "rootIds": [
+      "R-UZU"
+    ],
+    "meaning": "узу",
+    "literalMeaning": "узу",
+    "translations": {
+      "tr": "узу",
+      "en": "узу",
+      "ru": "узу"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "узу - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-UZU - узу"
+  },
+  {
+    "id": "L-ZHEY",
+    "form": "жей",
+    "root": "жей",
+    "rootForm": "жей",
+    "rootIds": [
+      "R-ZHEY"
+    ],
+    "meaning": "жей",
+    "literalMeaning": "жей",
+    "translations": {
+      "tr": "жей",
+      "en": "жей",
+      "ru": "жей"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "жей - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-ZHEY - жей"
+  },
+  {
+    "id": "L-DZY",
+    "form": "дзын",
+    "root": "дзын",
+    "rootForm": "дзын",
+    "rootIds": [
+      "R-DZY"
+    ],
+    "meaning": "дзын",
+    "literalMeaning": "дзын",
+    "translations": {
+      "tr": "дзын",
+      "en": "дзын",
+      "ru": "дзын"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "дзын - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-DZY - дзын"
+  },
+  {
+    "id": "L-BLY_ORPHAN",
+    "form": "блы",
+    "root": "блы",
+    "rootForm": "блы",
+    "rootIds": [
+      "R-BLY"
+    ],
+    "meaning": "блы",
+    "literalMeaning": "блы",
+    "translations": {
+      "tr": "блы",
+      "en": "блы",
+      "ru": "блы"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "блы - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-BLY - блы"
+  },
+  {
+    "id": "L-PSO_ORPHAN",
+    "form": "псо",
+    "root": "псо",
+    "rootForm": "псо",
+    "rootIds": [
+      "R-PSO"
+    ],
+    "meaning": "псо",
+    "literalMeaning": "псо",
+    "translations": {
+      "tr": "псо",
+      "en": "псо",
+      "ru": "псо"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "псо - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-PSO - псо"
+  },
+  {
+    "id": "L-TSE",
+    "form": "цэ",
+    "root": "цэ",
+    "rootForm": "цэ",
+    "rootIds": [
+      "R-TSE"
+    ],
+    "meaning": "цэ",
+    "literalMeaning": "цэ",
+    "translations": {
+      "tr": "цэ",
+      "en": "цэ",
+      "ru": "цэ"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "цэ - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-TSE - цэ"
+  },
+  {
+    "id": "L-NY",
+    "form": "ны",
+    "root": "ны",
+    "rootForm": "ны",
+    "rootIds": [
+      "R-NY"
+    ],
+    "meaning": "ны",
+    "literalMeaning": "ны",
+    "translations": {
+      "tr": "ны",
+      "en": "ны",
+      "ru": "ны"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "ны - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-NY - ны"
+  },
+  {
+    "id": "L-TSU",
+    "form": "цу",
+    "root": "цу",
+    "rootForm": "цу",
+    "rootIds": [
+      "R-TSU"
+    ],
+    "meaning": "цу",
+    "literalMeaning": "цу",
+    "translations": {
+      "tr": "цу",
+      "en": "цу",
+      "ru": "цу"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "цу - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-TSU - цу"
+  },
+  {
+    "id": "L-LE",
+    "form": "лэ",
+    "root": "лэ",
+    "rootForm": "лэ",
+    "rootIds": [
+      "R-LE"
+    ],
+    "meaning": "лэ",
+    "literalMeaning": "лэ",
+    "translations": {
+      "tr": "лэ",
+      "en": "лэ",
+      "ru": "лэ"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "лэ - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-LE - лэ"
+  },
+  {
+    "id": "L-DU",
+    "form": "ду",
+    "root": "ду",
+    "rootForm": "ду",
+    "rootIds": [
+      "R-DU"
+    ],
+    "meaning": "ду",
+    "literalMeaning": "ду",
+    "translations": {
+      "tr": "ду",
+      "en": "ду",
+      "ru": "ду"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "ду - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-DU - ду"
+  },
+  {
+    "id": "L-UE_ORPHAN",
+    "form": "уэ",
+    "root": "уэ",
+    "rootForm": "уэ",
+    "rootIds": [
+      "R-UE"
+    ],
+    "meaning": "уэ",
+    "literalMeaning": "уэ",
+    "translations": {
+      "tr": "уэ",
+      "en": "уэ",
+      "ru": "уэ"
+    },
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "examples": [
+      "уэ - ornek cumle"
+    ],
+    "conceptId": "ORPHAN_P3",
+    "subConceptId": "P3_AUTO",
+    "taxonomyFamily": "P3 Orphan Cozumu",
+    "dialect": "common",
+    "etymologyType": "native",
+    "corpusFrequency": 0,
+    "notes": "P3 auto-generated from orphan root R-UE - уэ"
   }
 ]
