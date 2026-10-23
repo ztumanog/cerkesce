@@ -1,3 +1,4 @@
+// TASLAK: Bu sayfa deneme amacli olusturuldu, henuz tamamlanmadi.
 import Link from "next/link";
 
 export default function YonetimPage() {

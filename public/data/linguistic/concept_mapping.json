@@ -514,5 +514,62 @@
   "SURFACE": "01M44S1026STZT4G96ENK928X0",
   "TREE": "01M44S1026STZT4G96ENK928X1",
   "WALNUT": "01M44S1026STZT4G96ENK928X2",
-  "WEAPON": "01M44S1026STZT4G96ENK928X3"
+  "WEAPON": "01M44S1026STZT4G96ENK928X3",
+  "HAIL": {
+    "id": "HAIL",
+    "name": "Dolu (yağış)",
+    "nameTr": "Dolu (yağış)",
+    "category": "weather",
+    "notes": "уэ (dolu) — L-UE için. R-UE-HAIL köküne bağlı."
+  },
+  "HEY_OH": {
+    "id": "HEY_OH",
+    "name": "Ünlem (vay/ooo)",
+    "nameTr": "Ünlem (vay/ooo)",
+    "category": "interjection",
+    "notes": "уэ (ünlem) — L-UE-INTJ için. R-UE-INTJ köküne bağlı."
+  },
+  "PARTICLE_SEQ": {
+    "id": "PARTICLE_SEQ",
+    "name": "Partikül (ise/derken)",
+    "nameTr": "Partikül (ise/derken)",
+    "category": "grammar",
+    "notes": "уэ (partikül) — L-UE-PART için. R-UE-PART köküne bağlı."
+  },
+  "COMPANION": {
+    "id": "COMPANION",
+    "name": "Yoldaş",
+    "nameTr": "Yoldaş",
+    "category": "social"
+  },
+  "EAR": {
+    "id": "EAR",
+    "name": "Kulak",
+    "nameTr": "Kulak",
+    "category": "body"
+  },
+  "LONG": {
+    "id": "LONG",
+    "name": "Uzun",
+    "nameTr": "Uzun",
+    "category": "adjective"
+  },
+  "OLD": {
+    "id": "OLD",
+    "name": "Eski/Yaşlı",
+    "nameTr": "Eski/Yaşlı",
+    "category": "adjective"
+  },
+  "OX": {
+    "id": "OX",
+    "name": "Öküz",
+    "nameTr": "Öküz",
+    "category": "animal"
+  },
+  "THIEF": {
+    "id": "THIEF",
+    "name": "Hırsız",
+    "nameTr": "Hırsız",
+    "category": "social"
+  }
 }

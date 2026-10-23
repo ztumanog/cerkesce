@@ -1,3 +1,4 @@
+// TASLAK: Bu sayfa deneme amacli olusturuldu, henuz tamamlanmadi.
 'use client';
 
 import { useFavoriler } from '@/hooks/useFavoriler';

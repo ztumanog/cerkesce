@@ -1,0 +1,30 @@
+[
+  {
+    "id": "CAND-KUEPSY-01",
+    "form": "къуэпсы",
+    "ipa": "",
+    "literalMeaning": "fidan, sürgün (düzeltilecek; önceki 'damar' yanlıştı)",
+    "partOfSpeech": "noun",
+    "status": "PENDING_REVIEW",
+    "kaynaklar": [
+      "1.Ady-Ady_AP.json (Apaşev 2008)",
+      "8.Ady-Tur_Huvaj.json (Huvaj)",
+      "27.Tur-Ady_Abaze.json (Abaze)"
+    ],
+    "eski_kayit": "65d1b31: L-D0BAD18AD183 (ID çakışması)",
+    "not": "Madde metni ve sayfa bağlamı sonra doğrulanacak"
+  },
+  {
+    "id": "CAND-KUEKHEMYSHHE-01",
+    "form": "къуэкӀэмыщӀэ",
+    "ipa": "",
+    "literalMeaning": "doğu yönü (doğrulanacak)",
+    "partOfSpeech": "noun",
+    "status": "PENDING_REVIEW",
+    "kaynaklar": [
+      "1.Ady-Ady_AP.json (tek geçiş, bağlam kontrol edilecek)"
+    ],
+    "eski_kayit": "626f36d: L-D0BAD18AD183-7",
+    "not": "Tek kaynak; anlam ve madde metni doğrulanmadan kabul edilmeyecek"
+  }
+]
