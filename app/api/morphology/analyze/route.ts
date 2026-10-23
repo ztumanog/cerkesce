@@ -1,4 +1,4 @@
-﻿import { NextRequest, NextResponse } from 'next/server';
+import { NextRequest, NextResponse } from 'next/server';
 import fs from 'fs';
 import path from 'path';
 import { MorphologyAnalyzer, KnownRoot } from '@/domain/morphology/MorphologyAnalyzer';
@@ -12,7 +12,7 @@ let cachedData: {
 } | null = null;
 
 function loadData() {
-  if (cachedData) return cachedData;
+  if (process.env.NODE_ENV === 'production' && cachedData) return cachedData;
 
   const rootsPath = path.resolve('./public/data/linguistic/roots.json');
   const morphemesPath = path.resolve('./public/data/linguistic/morphemes.json');
@@ -76,6 +76,8 @@ export async function POST(req: NextRequest) {
         partOfSpeech: first.partOfSpeech,
         dialectVariants: first.dialectVariants,
         wordFamilyId: first.wordFamilyId,
+        rootIds: first.rootIds || [],
+        conceptId: first.conceptId || null,
         notes: first.notes,
       },
       wordFamily: [],
@@ -134,3 +136,7 @@ export async function POST(req: NextRequest) {
     allMeanings: [],
   });
 }
+
+
+
+
