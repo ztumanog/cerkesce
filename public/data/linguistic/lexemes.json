@@ -1330,7 +1330,9 @@
       "notes": "El ailesi (Ӏэ). Somatik kok. Corpus: 11.294 kullanim."
     },
     "etymologyType": "native",
-    "conceptIdGecersiz": "Anatomy / Body Part"
+    "conceptIdGecersiz": "Anatomy / Body Part",
+    "homonymGroupId": "HG-Ӏэгу",
+    "homonymIndex": 1
   },
   {
     "id": "L-1EPKYLEPK",
@@ -2329,7 +2331,9 @@
     "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8e/%D0%93%D1%83027%D0%B3%D1%83%D0%B0%D1%89%D1%8D.ogg",
     "root": null,
     "wordFamily": null,
-    "etymologyType": "native"
+    "etymologyType": "native",
+    "homonymGroupId": "HG-гуащэ",
+    "homonymIndex": 2
   },
   {
     "id": "L-SHHYEKHUIT",
@@ -8800,7 +8804,9 @@
       "notes": "Vadi/dere ailesi. къуэпс (damar) dahil."
     },
     "etymologyType": "native",
-    "senseNumber": 1
+    "senseNumber": 1,
+    "homonymGroupId": "HG-къуэ",
+    "homonymIndex": 1
   },
   {
     "id": "L-KUEPSE",
@@ -11372,7 +11378,7 @@
     "corpusFrequencyKbd": 23,
     "notes": "C-9.5. Slovar: 9 kaynak. | homonim (anlam 2)",
     "partOfSpeech": "noun",
-    "corpusFrequency": 68,
+    "corpusFrequency": 136,
     "conceptId": "HOPE",
     "ipa": "/gʷǝ'ʁɑ:pʹɐ/",
     "rootIds": [
@@ -11494,7 +11500,8 @@
     },
     "etymologyType": "native",
     "dialect": "ady",
-    "senseNumber": 2
+    "senseNumber": 2,
+    "examples": []
   },
   {
     "id": "L-1EMAL",
@@ -14925,7 +14932,7 @@
     },
     "notes": "C-11.2.1: soyadi. | homonim (anlam 2)",
     "partOfSpeech": "noun",
-    "corpusFrequency": 6,
+    "corpusFrequency": 12,
     "ipa": "/wǝ'nɐtʹsɐ/",
     "rootIds": [
       "R-WNA"
@@ -15171,7 +15178,7 @@
     },
     "notes": "C-11.2.1: usak, serf. | homonim (anlam 2)",
     "partOfSpeech": "noun",
-    "corpusFrequency": 152,
+    "corpusFrequency": 304,
     "ipa": "/wǝnɐ'ʔʷǝt/",
     "rootIds": [
       "R-WNA"
@@ -15368,7 +15375,9 @@
     },
     "root": "унэг",
     "etymologyType": "native",
-    "senseNumber": 2
+    "senseNumber": 2,
+    "homonymGroupId": "HG-унэтӀын",
+    "homonymIndex": 2
   },
   {
     "id": "L-UNESH1YN",
@@ -15722,7 +15731,9 @@
     "ipa": "/jatɐʃ/",
     "etymologyType": "native",
     "rootForm": "ятэш",
-    "dialect": "ady"
+    "dialect": "ady",
+    "homonymGroupId": "HG-ятэш",
+    "homonymIndex": 2
   },
   {
     "id": "L-MEZ",
@@ -17100,7 +17111,9 @@
     },
     "root": "кӀуэ",
     "etymologyType": "native",
-    "senseNumber": 2
+    "senseNumber": 2,
+    "homonymGroupId": "HG-кӀуэ",
+    "homonymIndex": 2
   },
   {
     "id": "L-K1UER",
@@ -18019,7 +18032,9 @@
     "examples": [
       "Аргуэру дунейр апхуэдизкӀэ щым хъуати, гъуэзымрэ хуабэмрэ, аргъуей ву макъым ещхьу, тхьэкӀумэм итт. Ӏуащхь."
     ],
-    "senseNumber": 2
+    "senseNumber": 2,
+    "homonymGroupId": "HG-щы",
+    "homonymIndex": 2
   },
   {
     "id": "L-TXU",
@@ -18098,7 +18113,9 @@
     "dictionaryEvidence": [
       "sukunov-1998"
     ],
-    "etymologyType": "native"
+    "etymologyType": "native",
+    "homonymGroupId": "HG-блы",
+    "homonymIndex": 1
   },
   {
     "id": "L-BGHWU",
@@ -19931,7 +19948,9 @@
       },
       "notes": "Bos aile - sonra doldurulacak"
     },
-    "etymologyType": "native"
+    "etymologyType": "native",
+    "homonymGroupId": "HG-бжьыхьэ",
+    "homonymIndex": 2
   },
   {
     "id": "L-SHCHYMAKHUE",
@@ -22731,7 +22750,9 @@
     "ipa": "/tʂǝgaj/",
     "etymologyType": "native",
     "isExempt": true,
-    "dialect": "ady"
+    "dialect": "ady",
+    "homonymGroupId": "HG-чъыгай",
+    "homonymIndex": 2
   },
   {
     "id": "L-CHYGAE",
@@ -22895,7 +22916,9 @@
       "! адыгэбзэ !! урысыбзэ/русский  !! инджылыбзэ/English",
       "|| Мейм мы пытщ.|| На дикой яблоне растут дикие яблоки.|| There are wild apples on the wild apple tree."
     ],
-    "etymologyType": "native"
+    "etymologyType": "native",
+    "homonymGroupId": "HG-мы",
+    "homonymIndex": 1
   },
   {
     "id": "L-SHCHYPTS1ESHCHYDE",
@@ -23701,7 +23724,9 @@
     },
     "etymologyType": "native",
     "rootForm": "уэ",
-    "senseNumber": 1
+    "senseNumber": 1,
+    "homonymGroupId": "HG-уэ",
+    "homonymIndex": 1
   },
   {
     "id": "L-GUALE",
@@ -27812,7 +27837,9 @@
     "literalMeaningSource": "translations.tr (yuksek)",
     "pos": "PRON",
     "etymologyType": "native",
-    "senseNumber": 1
+    "senseNumber": 1,
+    "homonymGroupId": "HG-дэ",
+    "homonymIndex": 1
   },
   {
     "id": "L-DE-CEVIZ",
@@ -27839,7 +27866,9 @@
     "source": "Manuel Split (Sprint R)",
     "etymologyType": "native",
     "senseNumber": 2,
-    "notes": "homonim (anlam 2)"
+    "notes": "homonim (anlam 2)",
+    "homonymGroupId": "HG-дэ",
+    "homonymIndex": 2
   },
   {
     "id": "L-SHCH1YN",
@@ -29021,7 +29050,9 @@
     },
     "conceptId": "BÜTÜN",
     "etymologyType": "native",
-    "status": "PENDING_REVIEW"
+    "status": "PENDING_REVIEW",
+    "homonymGroupId": "HG-псо",
+    "homonymIndex": 1
   },
   {
     "id": "L-DZHY",
@@ -29684,7 +29715,9 @@
     "dialect": "kbd",
     "dialectNote": "Kbd kaynakli",
     "frequency": 118,
-    "status": "PENDING_REVIEW"
+    "status": "PENDING_REVIEW",
+    "homonymGroupId": "HG-нэхъыжь",
+    "homonymIndex": 2
   },
   {
     "id": "L-GHUNEGHU",
@@ -29759,39 +29792,6 @@
     "root": "гущӀ",
     "etymologyType": "native",
     "status": "PENDING_REVIEW"
-  },
-  {
-    "id": "L-D183D0BDD18D",
-    "form": "унэцӀэ",
-    "ipa": "/wǝ'nɐtʹsɐ/",
-    "literalMeaning": "soyadı",
-    "partOfSpeech": "noun",
-    "notes": "homonim (anlam 1)",
-    "corpusFrequency": 6,
-    "rootIds": [
-      "R-WNA"
-    ],
-    "wordFamilyId": "WF-WNA",
-    "derivation": {
-      "rule": "root",
-      "components": [
-        "унэ"
-      ]
-    },
-    "examples": [
-      "Уэ хэт ухъуну уи цӀэ, уи унэцӀэкӀэ?"
-    ],
-    "isLemma": true,
-    "translations": {
-      "tr": "soyadı",
-      "en": "surname, last name, family name",
-      "ru": "фамилия",
-      "ar": "اسم العائلة"
-    },
-    "conceptId": "HOUSEWIFE",
-    "root": "унэг",
-    "etymologyType": "native",
-    "senseNumber": 1
   },
   {
     "id": "L-ZHAGHUEGHU",
@@ -31514,7 +31514,9 @@
     "root": "Ӏэ",
     "wordFamily": null,
     "etymologyType": "native",
-    "status": "PENDING_REVIEW"
+    "status": "PENDING_REVIEW",
+    "homonymGroupId": "HG-укӀын",
+    "homonymIndex": 1
   },
   {
     "id": "L-SHCH1EUEN",
@@ -34937,7 +34939,9 @@
       "tr": "Ar, namus, terbiye"
     },
     "etymologyType": "loanword",
-    "status": "PENDING_REVIEW"
+    "status": "PENDING_REVIEW",
+    "homonymGroupId": "HG-намыс",
+    "homonymIndex": 1
   },
   {
     "id": "L-ADYGAGHE",
@@ -36709,41 +36713,6 @@
     "status": "PENDING_REVIEW"
   },
   {
-    "id": "L-D183D0BDD18D-4",
-    "form": "унэӀут",
-    "ipa": "/wǝnɐ'ʔʷǝt/",
-    "literalMeaning": "ev hizmetçisi",
-    "partOfSpeech": "noun",
-    "notes": "homonim (anlam 1)",
-    "corpusFrequency": 152,
-    "conceptId": "HOUSE_SERVANT",
-    "rootIds": [
-      "R-WNA"
-    ],
-    "wordFamilyId": "WF-WNA",
-    "derivation": {
-      "rule": "root",
-      "components": [
-        "унэ"
-      ]
-    },
-    "examples": [
-      "Си анэжьыр зиусхьэнхэм унэӀуту къахуэнат."
-    ],
-    "isLemma": true,
-    "translations": {
-      "tr": "ev hizmetçisi",
-      "en": "lackey, serf, bondman, slave",
-      "ru": "холоп",
-      "ar": "البواب، الخادم/ العبد في الترتيب الاجتماعي الأدِغي"
-    },
-    "subConceptId": "DOMESTIC_WORKER",
-    "taxonomyFamily": "Toplum & Meslek",
-    "root": "унэг",
-    "etymologyType": "native",
-    "senseNumber": 1
-  },
-  {
     "id": "L-INYZH'",
     "form": "Иныжь",
     "ipa": "/jǝ’nǝʑ/",
@@ -36970,79 +36939,6 @@
     "root": "гущӀ",
     "etymologyType": "native",
     "status": "PENDING_REVIEW"
-  },
-  {
-    "id": "L-GUGHAP1E",
-    "form": "гугъапӀэ",
-    "ipa": "/gʷǝ'ʁɑ:pʹɐ/",
-    "literalMeaning": "umut kapısı",
-    "partOfSpeech": "noun",
-    "notes": "homonim (anlam 1)",
-    "corpusFrequency": 68,
-    "rootIds": [
-      "R-GU"
-    ],
-    "wordFamilyId": "WF-GU",
-    "derivation": {
-      "rule": "root",
-      "components": [
-        "гу"
-      ]
-    },
-    "examples": [
-      "Элизэ гугъапӀэу къыхуэнэжыр зыт — щӀэхыӀуэу щӀэпхъуэжынырт."
-    ],
-    "isLemma": true,
-    "translations": {
-      "tr": "hopelessness",
-      "en": "hope, dream",
-      "ru": "надежда, мечта",
-      "ar": "أمل/ موضع أمل، رجاء"
-    },
-    "conceptId": "HOPE",
-    "subConceptId": "EMOTION",
-    "taxonomyFamily": "Duygu & Zihin",
-    "rootForm": "гу",
-    "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5b/%D0%93%D1%83208%D0%B3%D1%83%D0%B3%D1%8A%D0%B0%D0%BF%D3%8F%D1%8D.ogg",
-    "root": "гу",
-    "wordFamily": {
-      "id": "WF-GU",
-      "lexemeIds": [
-        "L-GUF1E",
-        "L-GUGHE",
-        "L-GUBZHYGE",
-        "L-GUETYNEGHE",
-        "L-GUF1EN"
-      ],
-      "conceptIds": [
-        "ANGER",
-        "ANXIETY",
-        "HOPE",
-        "INTELLIGENCE",
-        "JOY",
-        "LOYALTY",
-        "SOUL_DEPTH",
-        "THOUGHT"
-      ],
-      "morphemeIds": [
-        "M-F1E",
-        "M-GHE",
-        "M-BZHYGE",
-        "M-F1EN"
-      ],
-      "productivity": {
-        "totalLexemes": 47,
-        "corpusFrequency": 22788,
-        "mostFrequentLexemeId": "L-GUF1E"
-      },
-      "notes": "En uretken somatik kok ailesi. 22 bilesik yapi korpusta dogrulandi."
-    },
-    "etymologyType": "native",
-    "meaning": "(гугъапӀэр, гугъапӀэхэр) 1. надежда АщкӀэ зи гугъапӀэ щыӀэп 2. возможно, вероятно Енэгуягъо Непэ къещхынкӀэ гугъапӀэ Ӏофыр кӀыхьэ-лыхьэ хъункӀэ гугъап",
-    "dialect": "ady",
-    "dialectNote": "Ady kaynakli",
-    "status": "PENDING_REVIEW",
-    "senseNumber": 1
   },
   {
     "id": "L-GUSHCH1EGHUNSHAGHE",
@@ -40133,7 +40029,9 @@
     "dictionaryEvidence": [
       "sukunov-1998"
     ],
-    "etymologyType": "native"
+    "etymologyType": "native",
+    "homonymGroupId": "HG-дзын",
+    "homonymIndex": 2
   },
   {
     "id": "L-ZYKHEDZEN",
@@ -41485,7 +41383,9 @@
       "ar": "حياة"
     },
     "root": "гущӀ",
-    "etymologyType": "native"
+    "etymologyType": "native",
+    "homonymGroupId": "HG-гъащӀэ",
+    "homonymIndex": 2
   },
   {
     "id": "L-KHABZE",
@@ -42441,7 +42341,9 @@
     "wordFamily": {
       "id": "WF-SHER"
     },
-    "etymologyType": "native"
+    "etymologyType": "native",
+    "homonymGroupId": "HG-шэрджэс",
+    "homonymIndex": 2
   },
   {
     "id": "L-SH1ENYGHE",
@@ -42986,7 +42888,9 @@
     "wordFamily": {
       "id": "WF-MUR"
     },
-    "etymologyType": "native"
+    "etymologyType": "native",
+    "homonymGroupId": "HG-мурад",
+    "homonymIndex": 2
   },
   {
     "id": "L-SHYNE",
@@ -43577,7 +43481,9 @@
       "notes": "Ogul ailesi. Adigece: къо. Homonym: къуэ (vadi). Korpus: 16385."
     },
     "etymologyType": "native",
-    "senseNumber": 1
+    "senseNumber": 1,
+    "homonymGroupId": "HG-кӀуэ",
+    "homonymIndex": 1
   },
   {
     "id": "L-TKHE2",
@@ -43724,7 +43630,9 @@
     "examples": [
       "Аргуэру дунейр апхуэдизкӀэ щым хъуати, гъуэзымрэ хуабэмрэ, аргъуей ву макъым ещхьу, тхьэкӀумэм итт. Ӏуащхь."
     ],
-    "senseNumber": 1
+    "senseNumber": 1,
+    "homonymGroupId": "HG-щы",
+    "homonymIndex": 1
   },
   {
     "id": "L-QUE",
@@ -43790,7 +43698,9 @@
       "notes": "Ogul ailesi. Adigece: къо. Homonym: къуэ (vadi). Korpus: 16385."
     },
     "etymologyType": "native",
-    "senseNumber": 2
+    "senseNumber": 2,
+    "homonymGroupId": "HG-къуэ",
+    "homonymIndex": 2
   },
   {
     "id": "L-DELKHU",
@@ -43938,7 +43848,9 @@
     },
     "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/4/41/%D0%90416%D0%B0%D1%89.ogg",
     "literalMeaningSource": "translations.ru->tr (orta)",
-    "etymologyType": "native"
+    "etymologyType": "native",
+    "homonymGroupId": "HG-ащ",
+    "homonymIndex": 2
   },
   {
     "id": "L-CORPUS-00001",
@@ -45006,7 +44918,9 @@
     "translations": {
       "tr": "Bir, herhangi bir, falan"
     },
-    "etymologyType": "native"
+    "etymologyType": "native",
+    "homonymGroupId": "HG-горэ",
+    "homonymIndex": 1
   },
   {
     "id": "L-CORPUS-00029",
@@ -47586,7 +47500,9 @@
       "rule": "root"
     },
     "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/5/54/%D0%91129%D0%B1%D1%8D.ogg",
-    "etymologyType": "native"
+    "etymologyType": "native",
+    "homonymGroupId": "HG-бэ",
+    "homonymIndex": 2
   },
   {
     "id": "L-CORPUS-00096",
@@ -49322,7 +49238,9 @@
       "morphemeIds": [],
       "rule": "root"
     },
-    "etymologyType": "native"
+    "etymologyType": "native",
+    "homonymGroupId": "HG-ужь",
+    "homonymIndex": 1
   },
   {
     "id": "L-CORPUS-00134",
@@ -49879,7 +49797,9 @@
     "etymologyType": "native",
     "examples": [
       "«Тревогэ» жыхуаIэ макъ псыгъуэм къреджэ  карабинер-робот зыбжанэ, Ахърэтым и гимныр къоуэ, «Ско- ророботхэр» «С» зытедза залым зэрохь."
-    ]
+    ],
+    "homonymGroupId": "HG-къо",
+    "homonymIndex": 1
   },
   {
     "id": "L-CORPUS-00149",
@@ -52619,7 +52539,9 @@
       "! адыгэбзэ !! урысыбзэ/русский  !! инджылыбзэ/English",
       "|| Ӏэминат жэуапхэр зэпэщу ет.|| Аминат хорошо отвечает.|| Aminat answers well."
     ],
-    "etymologyType": "native"
+    "etymologyType": "native",
+    "homonymGroupId": "HG-тын",
+    "homonymIndex": 1
   },
   {
     "id": "L-CORPUS-00211",
@@ -53452,7 +53374,9 @@
       "tr": "ZOKA",
       "ar": "قاس، متين، صلب/ ثابت، ذو مبدأ"
     },
-    "etymologyType": "native"
+    "etymologyType": "native",
+    "homonymGroupId": "HG-пытэ",
+    "homonymIndex": 1
   },
   {
     "id": "L-CORPUS-00232",
@@ -53519,7 +53443,9 @@
       "rule": "root"
     },
     "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b2/%D0%91852%D0%B1%D1%8B%D0%BD.ogg",
-    "etymologyType": "native"
+    "etymologyType": "native",
+    "homonymGroupId": "HG-бын",
+    "homonymIndex": 2
   },
   {
     "id": "L-CORPUS-00235",
@@ -60835,7 +60761,9 @@
     "translations": {
       "tr": "Dereotu, tereotu"
     },
-    "etymologyType": "native"
+    "etymologyType": "native",
+    "homonymGroupId": "HG-уц",
+    "homonymIndex": 1
   },
   {
     "id": "L-CORPUS-00407",
@@ -62910,7 +62838,9 @@
       "rule": "root"
     },
     "ipa": "/dɐn/",
-    "etymologyType": "native"
+    "etymologyType": "native",
+    "homonymGroupId": "HG-джа",
+    "homonymIndex": 1
   },
   {
     "id": "L-CORPUS-00457",
@@ -64089,7 +64019,9 @@
       "sukunov-1998"
     ],
     "literalMeaningSource": "translations.tr (yuksek)",
-    "etymologyType": "native"
+    "etymologyType": "native",
+    "homonymGroupId": "HG-из",
+    "homonymIndex": 1
   },
   {
     "id": "L-CORPUS-00485",
@@ -65049,7 +64981,9 @@
     },
     "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a3/%D0%91120%D0%B1%D0%B0%D1%88.ogg",
     "literalMeaningSource": "translations.tr (yuksek)",
-    "etymologyType": "native"
+    "etymologyType": "native",
+    "homonymGroupId": "HG-баш",
+    "homonymIndex": 2
   },
   {
     "id": "L-CORPUS-00511",
@@ -66770,7 +66704,9 @@
     "examples": [
       "*Усэ хьэлэмэт."
     ],
-    "etymologyType": "native"
+    "etymologyType": "native",
+    "homonymGroupId": "HG-усэ",
+    "homonymIndex": 1
   },
   {
     "id": "L-CORPUS-00559",
@@ -68503,7 +68439,9 @@
       "! !! !! нап. 99",
       "|| Ар пкӀэурэ мажэ.|| Он подпрыгивая бегает.|| It hops as it runs."
     ],
-    "etymologyType": "native"
+    "etymologyType": "native",
+    "homonymGroupId": "HG-жэн",
+    "homonymIndex": 1
   },
   {
     "id": "L-CORPUS-00602",
@@ -69267,7 +69205,9 @@
       "ar": "نادراً"
     },
     "literalMeaningSource": "translations.tr (yuksek)",
-    "etymologyType": "native"
+    "etymologyType": "native",
+    "homonymGroupId": "HG-зэзэмызэ",
+    "homonymIndex": 1
   },
   {
     "id": "L-CORPUS-00624",
@@ -72235,7 +72175,9 @@
       "morphemeIds": [],
       "rule": "root"
     },
-    "etymologyType": "native"
+    "etymologyType": "native",
+    "homonymGroupId": "HG-жей",
+    "homonymIndex": 1
   },
   {
     "id": "L-CORPUS-00695",
@@ -74734,7 +74676,9 @@
     "wordFamily": {
       "id": "WF-KUR"
     },
-    "etymologyType": "native"
+    "etymologyType": "native",
+    "homonymGroupId": "HG-курыт",
+    "homonymIndex": 1
   },
   {
     "id": "L-CORPUS-00752",
@@ -76301,7 +76245,9 @@
       "sukunov-1998"
     ],
     "literalMeaningSource": "translations.tr (yuksek)",
-    "etymologyType": "native"
+    "etymologyType": "native",
+    "homonymGroupId": "HG-сын",
+    "homonymIndex": 1
   },
   {
     "id": "L-CORPUS-00788",
@@ -77283,7 +77229,9 @@
     ],
     "conceptId": "SIKI",
     "literalMeaningSource": "translations.tr (yuksek)",
-    "etymologyType": "native"
+    "etymologyType": "native",
+    "homonymGroupId": "HG-зэв",
+    "homonymIndex": 1
   },
   {
     "id": "L-CORPUS-00815",
@@ -78038,7 +77986,9 @@
       "rule": "root"
     },
     "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c8/%D0%91130%D0%B1%D1%8D%D0%B2.ogg",
-    "etymologyType": "native"
+    "etymologyType": "native",
+    "homonymGroupId": "HG-бэв",
+    "homonymIndex": 2
   },
   {
     "id": "L-CORPUS-00833",
@@ -80405,7 +80355,9 @@
     "dictionaryEvidence": [
       "sukunov-1998"
     ],
-    "etymologyType": "native"
+    "etymologyType": "native",
+    "homonymGroupId": "HG-лэн",
+    "homonymIndex": 1
   },
   {
     "id": "L-CORPUS-00885",
@@ -82814,7 +82766,9 @@
     "dictionaryEvidence": [
       "sukunov-1998"
     ],
-    "etymologyType": "native"
+    "etymologyType": "native",
+    "homonymGroupId": "HG-вэн",
+    "homonymIndex": 1
   },
   {
     "id": "L-CORPUS-00940",
@@ -83209,7 +83163,9 @@
       "sukunov-1998"
     ],
     "conceptId": "AĞLAMAK",
-    "etymologyType": "native"
+    "etymologyType": "native",
+    "homonymGroupId": "HG-гъын",
+    "homonymIndex": 1
   },
   {
     "id": "L-CORPUS-00948",
@@ -83281,7 +83237,9 @@
       "morphemeIds": [],
       "rule": "root"
     },
-    "etymologyType": "native"
+    "etymologyType": "native",
+    "homonymGroupId": "HG-ижь",
+    "homonymIndex": 1
   },
   {
     "id": "L-CORPUS-00951",
@@ -84258,7 +84216,9 @@
     "examples": [
       "*Жыр лэныстэ."
     ],
-    "etymologyType": "native"
+    "etymologyType": "native",
+    "homonymGroupId": "HG-жыр",
+    "homonymIndex": 1
   },
   {
     "id": "L-CORPUS-00972",
@@ -86061,7 +86021,9 @@
       "*Бжыхь хун.",
       "*Матэ хун."
     ],
-    "etymologyType": "native"
+    "etymologyType": "native",
+    "homonymGroupId": "HG-хун",
+    "homonymIndex": 1
   },
   {
     "id": "L-CORPUS-01014",
@@ -86589,7 +86551,9 @@
       "tr": "BULGUR"
     },
     "literalMeaningSource": "translations.tr (yuksek)",
-    "etymologyType": "native"
+    "etymologyType": "native",
+    "homonymGroupId": "HG-коц",
+    "homonymIndex": 1
   },
   {
     "id": "L-CORPUS-01026",
@@ -88887,7 +88851,9 @@
       "morphemeIds": [],
       "rule": "root"
     },
-    "etymologyType": "native"
+    "etymologyType": "native",
+    "homonymGroupId": "HG-ней",
+    "homonymIndex": 1
   },
   {
     "id": "L-CORPUS-01079",
@@ -89219,7 +89185,9 @@
     },
     "ipaSource": "form-derived",
     "ipa": "/tjat/",
-    "etymologyType": "native"
+    "etymologyType": "native",
+    "homonymGroupId": "HG-тят",
+    "homonymIndex": 1
   },
   {
     "id": "L-CORPUS-01086",
@@ -90340,7 +90308,9 @@
     },
     "ipaSource": "form-derived",
     "ipa": "/tsɐ/",
-    "etymologyType": "native"
+    "etymologyType": "native",
+    "homonymGroupId": "HG-цэ",
+    "homonymIndex": 1
   },
   {
     "id": "L-CORPUS-01111",
@@ -91896,7 +91866,9 @@
     "dictionaryEvidence": [
       "sukunov-1998"
     ],
-    "etymologyType": "native"
+    "etymologyType": "native",
+    "homonymGroupId": "HG-чы",
+    "homonymIndex": 2
   },
   {
     "id": "L-CORPUS-01146",
@@ -92435,7 +92407,9 @@
     "dictionaryEvidence": [
       "sukunov-1998"
     ],
-    "etymologyType": "native"
+    "etymologyType": "native",
+    "homonymGroupId": "HG-уае",
+    "homonymIndex": 1
   },
   {
     "id": "L-CORPUS-01158",
@@ -93356,7 +93330,9 @@
       "tr": "ANI"
     },
     "literalMeaningSource": "translations.tr (yuksek)",
-    "etymologyType": "native"
+    "etymologyType": "native",
+    "homonymGroupId": "HG-зэу",
+    "homonymIndex": 1
   },
   {
     "id": "L-CORPUS-01179",
@@ -94643,7 +94619,9 @@
     "etymologyType": "native",
     "examples": [
       "Прозэрэ усэкIэ тха коме- дие цIыкIур еухыр Ажэгъафэм и уэрэдкIэ."
-    ]
+    ],
+    "homonymGroupId": "HG-тха",
+    "homonymIndex": 1
   },
   {
     "id": "L-CORPUS-01212",
@@ -96722,7 +96700,9 @@
     "examples": [
       "*Зы километр жын."
     ],
-    "etymologyType": "native"
+    "etymologyType": "native",
+    "homonymGroupId": "HG-жын",
+    "homonymIndex": 1
   },
   {
     "id": "L-CORPUS-01266",
@@ -97515,7 +97495,9 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "etymologyType": "native"
+    "etymologyType": "native",
+    "homonymGroupId": "HG-сэху",
+    "homonymIndex": 1
   },
   {
     "id": "L-CORPUS-01284",
@@ -97912,7 +97894,9 @@
       "tr": "DOLDURMAK"
     },
     "literalMeaningSource": "translations.tr (yuksek)",
-    "etymologyType": "native"
+    "etymologyType": "native",
+    "homonymGroupId": "HG-изы",
+    "homonymIndex": 1
   },
   {
     "id": "L-CORPUS-01294",
@@ -98226,7 +98210,9 @@
     "etymologyType": "native",
     "examples": [
       "Хамэш тесым и пхэ щIиудыркъым."
-    ]
+    ],
+    "homonymGroupId": "HG-тес",
+    "homonymIndex": 1
   },
   {
     "id": "L-CORPUS-01305",
@@ -98680,7 +98666,9 @@
     "dictionaryEvidence": [
       "sukunov-1998"
     ],
-    "etymologyType": "native"
+    "etymologyType": "native",
+    "homonymGroupId": "HG-нып",
+    "homonymIndex": 1
   },
   {
     "id": "L-CORPUS-01316",
@@ -99562,7 +99550,9 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "etymologyType": "native"
+    "etymologyType": "native",
+    "homonymGroupId": "HG-есэн",
+    "homonymIndex": 1
   },
   {
     "id": "L-CORPUS-01336",
@@ -108513,7 +108503,9 @@
       "{Лидэ:} - УзыгъэлӀэн гын уэстым фӀыуэ услъагъуу, уэзмытмэ узмылъагъуу ара? Акъ. З."
     ],
     "examplesSource": "1.Ady-Ady_AP.json (◊)",
-    "etymologyType": "native"
+    "etymologyType": "native",
+    "homonymGroupId": "HG-гын",
+    "homonymIndex": 1
   },
   {
     "id": "L-CORPUS-01551",
@@ -109615,7 +109607,9 @@
     "examples": [
       "*Гъуэншэдж жып."
     ],
-    "etymologyType": "native"
+    "etymologyType": "native",
+    "homonymGroupId": "HG-жып",
+    "homonymIndex": 1
   },
   {
     "id": "L-CORPUS-01573",
@@ -111633,7 +111627,9 @@
       "ar": "بريء"
     },
     "literalMeaningSource": "translations.tr (yuksek)",
-    "etymologyType": "native"
+    "etymologyType": "native",
+    "homonymGroupId": "HG-хей",
+    "homonymIndex": 1
   },
   {
     "id": "L-CORPUS-01621",
@@ -113982,7 +113978,9 @@
       "tr": "DÜŞMAN"
     },
     "literalMeaningSource": "translations.tr (yuksek)",
-    "etymologyType": "native"
+    "etymologyType": "native",
+    "homonymGroupId": "HG-пыи",
+    "homonymIndex": 1
   },
   {
     "id": "L-CORPUS-01672",
@@ -114677,7 +114675,9 @@
       "tr": "ULAŞMAK"
     },
     "literalMeaningSource": "translations.tr (yuksek)",
-    "etymologyType": "native"
+    "etymologyType": "native",
+    "homonymGroupId": "HG-нос",
+    "homonymIndex": 1
   },
   {
     "id": "L-CORPUS-01691",
@@ -114709,7 +114709,9 @@
     "etymologyType": "native",
     "examples": [
       "Комедие итхахэр адыгэ гушыIэрэ  ауанрэкIэ гъэнщIащ.\n\n123 IутIыж Борис  и  гушыIэ сурэтхэр,  шаржхэр, эпиграммэхэр  (эпиграммэм и сурэтхэм щыщ зыкъомыр  зыщIар КъуэщIысокъуэ В.)\n\n124\n\n125\n\n126\n\n127\n\n128\n\n129\n\n130 ТЕМЫРКЪАН   ЮРИЙ Узыншагъэр уи пкъым щызу,    Дэнэ щIыпIэ жыжьэ Гукъыдэжыр уигум изу               «Ущемыпсыхами», Зы гухэхъуэм зыр къыпыту,       Сыт хуэдэ лъэгапIэ Уи щIыхь лъагэ хъу зэпыту,       укъытемытами, ЦIыхуу щыIэм урагуапэу,          Мы ущалъхуа лъахэр уигурэ Уи цIэм лъэпкъыр                         Ди адыгэ лъэпкъыр уи псэу ИрилъапIэу,                                    Куэдрэ, куэдрэ Тхьэм Уардэ хэкухэр уи                            Утхуигъэпсэу, ЗекIуапIэу,                                      Iэгур щыпхуаIэту Дуней  Къалэ инхэр уи хэщIапIэу,        Псом!"
-    ]
+    ],
+    "homonymGroupId": "HG-изу",
+    "homonymIndex": 1
   },
   {
     "id": "L-CORPUS-01692",
@@ -116080,7 +116082,9 @@
       "! адыгэбзэ !! урысыбзэ/русский  !! инджылыбзэ/English",
       "| Жэщыр уэмщ. || Ночь душная. || The night is sultry."
     ],
-    "etymologyType": "native"
+    "etymologyType": "native",
+    "homonymGroupId": "HG-уэм",
+    "homonymIndex": 1
   },
   {
     "id": "L-CORPUS-01721",
@@ -123237,7 +123241,9 @@
     "wordFamily": {
       "id": "WF-SHCHAB"
     },
-    "etymologyType": "native"
+    "etymologyType": "native",
+    "homonymGroupId": "HG-щабагъэ",
+    "homonymIndex": 1
   },
   {
     "id": "L-CORPUS-01892",
@@ -124769,7 +124775,9 @@
     "etymologyType": "native",
     "examples": [
       "Уэсым хэсыр къанэри хьэжыгъэм хэсыр лIащ."
-    ]
+    ],
+    "homonymGroupId": "HG-хэс",
+    "homonymIndex": 1
   },
   {
     "id": "L-CORPUS-01926",
@@ -124849,7 +124857,9 @@
       "morphemeIds": [],
       "rule": "compound"
     },
-    "etymologyType": "native"
+    "etymologyType": "native",
+    "homonymGroupId": "HG-сысын",
+    "homonymIndex": 1
   },
   {
     "id": "L-CORPUS-01928",
@@ -128639,7 +128649,9 @@
     },
     "ipaSource": "form-derived",
     "ipa": "/gǝe/",
-    "etymologyType": "native"
+    "etymologyType": "native",
+    "homonymGroupId": "HG-гые",
+    "homonymIndex": 1
   },
   {
     "id": "L-CORPUS-02020",
@@ -128819,7 +128831,9 @@
       "morphemeIds": [],
       "rule": "root"
     },
-    "etymologyType": "native"
+    "etymologyType": "native",
+    "homonymGroupId": "HG-жэр",
+    "homonymIndex": 1
   },
   {
     "id": "L-CORPUS-02029",
@@ -129668,7 +129682,9 @@
       "rule": "root"
     },
     "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fd/%D0%90374%D0%B0%D1%83%D0%B7.ogg",
-    "etymologyType": "native"
+    "etymologyType": "native",
+    "homonymGroupId": "HG-ауз",
+    "homonymIndex": 2
   },
   {
     "id": "L-CORPUS-02055",
@@ -132347,7 +132363,9 @@
     "dialect": "ady",
     "dialectNote": "Ady kaynakli",
     "WF": null,
-    "kesisen": "KOK_DISI"
+    "kesisen": "KOK_DISI",
+    "homonymGroupId": "HG-ны",
+    "homonymIndex": 1
   },
   {
     "id": "L-CORPUS-02111",
@@ -133697,7 +133715,9 @@
       "morphemeIds": [],
       "rule": "root"
     },
-    "etymologyType": "native"
+    "etymologyType": "native",
+    "homonymGroupId": "HG-жэп",
+    "homonymIndex": 1
   },
   {
     "id": "L-CORPUS-02155",
@@ -133731,7 +133751,9 @@
       "trSource": "en->tr koprusu (orta)",
       "ar": "يَقْبل، يَرضَى/ يخيط"
     },
-    "etymologyType": "native"
+    "etymologyType": "native",
+    "homonymGroupId": "HG-дэн",
+    "homonymIndex": 1
   },
   {
     "id": "L-CORPUS-02156",
@@ -134697,7 +134719,9 @@
       "morphemeIds": [],
       "rule": "root"
     },
-    "etymologyType": "native"
+    "etymologyType": "native",
+    "homonymGroupId": "HG-мэш",
+    "homonymIndex": 1
   },
   {
     "id": "L-CORPUS-02177",
@@ -141478,7 +141502,9 @@
       "ru": "колдун, ведьма",
       "tr": "witch"
     },
-    "etymologyType": "native"
+    "etymologyType": "native",
+    "homonymGroupId": "HG-уд",
+    "homonymIndex": 1
   },
   {
     "id": "L-CORPUS-02337",
@@ -146109,7 +146135,9 @@
     },
     "literalMeaningSource": "translations.ru->tr (orta)",
     "tr_status": "fixed_manual",
-    "etymologyType": "native"
+    "etymologyType": "native",
+    "homonymGroupId": "HG-еш",
+    "homonymIndex": 1
   },
   {
     "id": "L-CORPUS-02455",
@@ -146615,7 +146643,9 @@
     "dictionaryEvidence": [
       "sukunov-1998"
     ],
-    "etymologyType": "native"
+    "etymologyType": "native",
+    "homonymGroupId": "HG-дын",
+    "homonymIndex": 1
   },
   {
     "id": "L-CORPUS-02466",
@@ -147380,7 +147410,9 @@
       "rule": "root"
     },
     "ipa": "/zǝn/",
-    "etymologyType": "native"
+    "etymologyType": "native",
+    "homonymGroupId": "HG-зын",
+    "homonymIndex": 1
   },
   {
     "id": "L-CORPUS-02481",
@@ -148357,7 +148389,9 @@
       "rule": "root"
     },
     "ipa": "/ˈnǝwɐ/",
-    "etymologyType": "native"
+    "etymologyType": "native",
+    "homonymGroupId": "HG-ныо",
+    "homonymIndex": 1
   },
   {
     "id": "L-CORPUS-02504",
@@ -148540,7 +148574,9 @@
     },
     "ipa": "/ʂxʷɐ/",
     "ipaSource": "root-derived",
-    "etymologyType": "native"
+    "etymologyType": "native",
+    "homonymGroupId": "HG-шхонч",
+    "homonymIndex": 1
   },
   {
     "id": "L-CORPUS-02511",
@@ -148951,7 +148987,9 @@
     "etymologyType": "native",
     "examples": [
       "Iэхъуэ къуэдзэ, -sığırçobanlığı yapmak : Iэхъуэн, -sığıreti :"
-    ]
+    ],
+    "homonymGroupId": "HG-цу",
+    "homonymIndex": 1
   },
   {
     "id": "L-CORPUS-02527",
@@ -156353,7 +156391,9 @@
       "tr": "Zayıf, arık",
       "ar": "نحيف"
     },
-    "etymologyType": "native"
+    "etymologyType": "native",
+    "homonymGroupId": "HG-оды",
+    "homonymIndex": 1
   },
   {
     "id": "L-CORPUS-02720",
@@ -157072,7 +157112,9 @@
       "tr": "ZAYIF"
     },
     "literalMeaningSource": "translations.tr (yuksek)",
-    "etymologyType": "native"
+    "etymologyType": "native",
+    "homonymGroupId": "HG-уэд",
+    "homonymIndex": 1
   },
   {
     "id": "L-CORPUS-02736",
@@ -160490,7 +160532,9 @@
     "examples": [
       "*Гум и пхэ."
     ],
-    "etymologyType": "native"
+    "etymologyType": "native",
+    "homonymGroupId": "HG-пхэ",
+    "homonymIndex": 1
   },
   {
     "id": "L-CORPUS-02812",
@@ -166044,7 +166088,9 @@
       "trSource": "en->tr koprusu (orta)",
       "ar": "جريء، صاحب مروءة ورجولة، كريم"
     },
-    "etymologyType": "native"
+    "etymologyType": "native",
+    "homonymGroupId": "HG-ес",
+    "homonymIndex": 1
   },
   {
     "id": "L-CORPUS-02956",
@@ -168892,7 +168938,9 @@
       "*Дуней уфа.",
       "*НапщӀэ уфа."
     ],
-    "etymologyType": "native"
+    "etymologyType": "native",
+    "homonymGroupId": "HG-уфа",
+    "homonymIndex": 1
   },
   {
     "id": "L-CORPUS-03021",
@@ -171233,7 +171281,9 @@
       "*Уэрэд усын.",
       "*Гъыбзэ усын."
     ],
-    "etymologyType": "native"
+    "etymologyType": "native",
+    "homonymGroupId": "HG-усын",
+    "homonymIndex": 1
   },
   {
     "id": "L-CORPUS-03077",
@@ -175176,7 +175226,9 @@
     "examples": [
       "*Хуэ быдэ."
     ],
-    "etymologyType": "native"
+    "etymologyType": "native",
+    "homonymGroupId": "HG-хуэ",
+    "homonymIndex": 1
   },
   {
     "id": "L-CORPUS-03190",
@@ -175611,7 +175663,9 @@
     "etymologyType": "native",
     "examples": [
       "ТхакIуэм и етIуанэ тхылъышхуэ «Бжьэр къэпщIащ»  жыхуиIэми итщ гушыIэ зыбжанэ: Нет; Ди зэхуэдэ щэхущ;  Хъыжьэ; Кэму; Тезыр; Сом; ЗэгурыIуащ; Къалэжь н.къ."
-    ]
+    ],
+    "homonymGroupId": "HG-тез",
+    "homonymIndex": 1
   },
   {
     "id": "L-CORPUS-03199",
@@ -177287,7 +177341,9 @@
       "morphemeIds": [],
       "rule": "root"
     },
-    "etymologyType": "native"
+    "etymologyType": "native",
+    "homonymGroupId": "HG-сэн",
+    "homonymIndex": 1
   },
   {
     "id": "L-CORPUS-03237",
@@ -182851,7 +182907,9 @@
     "etymologyType": "native",
     "examples": [
       "Жьы зыхэмыт щIыIэр щIыIэкъым, псчэ зыхэмыт узыр узкъым."
-    ]
+    ],
+    "homonymGroupId": "HG-узы",
+    "homonymIndex": 1
   },
   {
     "id": "L-CORPUS-03386",
@@ -183278,7 +183336,9 @@
       "rule": "root"
     },
     "ipa": "/wɐd/",
-    "etymologyType": "native"
+    "etymologyType": "native",
+    "homonymGroupId": "HG-од",
+    "homonymIndex": 1
   },
   {
     "id": "L-CORPUS-03399",
@@ -185877,7 +185937,9 @@
       "*Шху ефэн.",
       "*Шху гъэпцӀэн."
     ],
-    "etymologyType": "native"
+    "etymologyType": "native",
+    "homonymGroupId": "HG-шху",
+    "homonymIndex": 1
   },
   {
     "id": "L-CORPUS-03460",
@@ -192697,7 +192759,9 @@
     "etymologyType": "native",
     "examples": [
       "Фадэ зэхэдзэрэ удын зэхэдзэрэ."
-    ]
+    ],
+    "homonymGroupId": "HG-уды",
+    "homonymIndex": 1
   },
   {
     "id": "L-CORPUS-03610",
@@ -196988,7 +197052,9 @@
     "dictionaryEvidence": [
       "sukunov-1998"
     ],
-    "etymologyType": "native"
+    "etymologyType": "native",
+    "homonymGroupId": "HG-мей",
+    "homonymIndex": 1
   },
   {
     "id": "L-CORPUS-03747",
@@ -198178,7 +198244,9 @@
       "tr": "KOR"
     },
     "literalMeaningSource": "translations.tr (yuksek)",
-    "etymologyType": "native"
+    "etymologyType": "native",
+    "homonymGroupId": "HG-дэп",
+    "homonymIndex": 1
   },
   {
     "id": "L-CORPUS-03778",
@@ -199148,7 +199216,9 @@
       "morphemeIds": [],
       "rule": "root"
     },
-    "etymologyType": "native"
+    "etymologyType": "native",
+    "homonymGroupId": "HG-жэз",
+    "homonymIndex": 1
   },
   {
     "id": "L-CORPUS-03802",
@@ -200096,7 +200166,9 @@
     "dictionaryEvidence": [
       "sukunov-1998"
     ],
-    "etymologyType": "native"
+    "etymologyType": "native",
+    "homonymGroupId": "HG-ару",
+    "homonymIndex": 2
   },
   {
     "id": "L-CORPUS-03822",
@@ -211328,7 +211400,9 @@
     "wordFamily": {
       "id": "WF-LE"
     },
-    "etymologyType": "native"
+    "etymologyType": "native",
+    "homonymGroupId": "HG-лэ",
+    "homonymIndex": 1
   },
   {
     "id": "L-CORPUS-04133",
@@ -212334,7 +212408,9 @@
     "taxonomyFamily": "Tanrı & İnanç",
     "rootForm": "тхьэ-",
     "root": "тхьэ",
-    "etymologyType": "native"
+    "etymologyType": "native",
+    "homonymGroupId": "HG-тхьэшхуэ",
+    "homonymIndex": 1
   },
   {
     "id": "L-CORPUS-04156",
@@ -219154,7 +219230,9 @@
       "rule": "root"
     },
     "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/7/77/%D0%93041%D0%B3%D0%B8%D0%B5.ogg",
-    "etymologyType": "native"
+    "etymologyType": "native",
+    "homonymGroupId": "HG-гие",
+    "homonymIndex": 1
   },
   {
     "id": "L-CORPUS-04316",
@@ -219290,7 +219368,9 @@
       "sukunov-1998"
     ],
     "literalMeaningSource": "translations.tr (yuksek)",
-    "etymologyType": "native"
+    "etymologyType": "native",
+    "homonymGroupId": "HG-ета",
+    "homonymIndex": 1
   },
   {
     "id": "L-CORPUS-04319",
@@ -224012,7 +224092,9 @@
       "rule": "root"
     },
     "ipa": "/wɐr/",
-    "etymologyType": "native"
+    "etymologyType": "native",
+    "homonymGroupId": "HG-ор",
+    "homonymIndex": 1
   },
   {
     "id": "L-CORPUS-04459",
@@ -225404,7 +225486,9 @@
       "rule": "root"
     },
     "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0e/%D0%950027%D0%B5%D0%B1%D0%B7.ogg",
-    "etymologyType": "native"
+    "etymologyType": "native",
+    "homonymGroupId": "HG-ебз",
+    "homonymIndex": 1
   },
   {
     "id": "L-CORPUS-04507",
@@ -227614,7 +227698,9 @@
       "rule": "root"
     },
     "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/d/df/%D0%950427%D0%B5%D0%BB%D1%8D.ogg",
-    "etymologyType": "native"
+    "etymologyType": "native",
+    "homonymGroupId": "HG-елэ",
+    "homonymIndex": 1
   },
   {
     "id": "L-CORPUS-04561",
@@ -239812,7 +239898,9 @@
       "morphemeIds": [],
       "rule": "root"
     },
-    "etymologyType": "native"
+    "etymologyType": "native",
+    "homonymGroupId": "HG-ибэ",
+    "homonymIndex": 1
   },
   {
     "id": "L-CORPUS-04847",
@@ -245406,7 +245494,9 @@
     "translations": {
       "tr": "Havan"
     },
-    "etymologyType": "native"
+    "etymologyType": "native",
+    "homonymGroupId": "HG-Ӏоф",
+    "homonymIndex": 1
   },
   {
     "id": "L-CORPUS2-00045",
@@ -245822,7 +245912,10 @@
     "notes": "Corpus v1.0 batch-2 (freq: 383, lang: kbd, source: none) | homonim (anlam 2)",
     "ipa": "/tʹɐkʹʷ/",
     "examples": [
-      "Гъуэгуанэм щыщу къэнэжа тӀэкӀур икӀуу къуажэм дыхьэжыныр хуабжьу къехьэлъэкӀыу щытт лӀыжьыр."
+      "Гъуэгуанэм щыщу къэнэжа тӀэкӀур икӀуу къуажэм дыхьэжыныр хуабжьу къехьэлъэкӀыу щытт лӀыжьыр.",
+      "Гъуэгуанэм щыщу къэнэжа тӀэкӀур икӀуу къуажэм дыхьэжыныр хуабжьу къехьэлъэкӀыу щытт лӀыжьыр. Т. Хь.",
+      "Нэхущым тӀэкӀу зызыгъэсабыра уэшхым къыщӀидзэжауэ жьгъейуэ, Ӏуву, жьы щӀыӀэ щӀэту къешхырт. Къ. Хь. ТӀэкӀу щыжаӀэм тӀэкӀу щыщыӀэщ. (погов. )",
+      "ТӀэкӀу дэкӀри.. лӀы хэщӀыхьа гуэр кърашэлӀащ.. фэндырэм. Ж. Б."
     ],
     "literalMeaningAdy": "МащӀэ, мыхьэнэншэ, мыкуэд",
     "isLemma": true,
@@ -246583,7 +246676,9 @@
     },
     "literalMeaningSource": "translations.ru->tr (orta)",
     "etymologyType": "unknown",
-    "senseNumber": 2
+    "senseNumber": 2,
+    "homonymGroupId": "HG-занщӀэу",
+    "homonymIndex": 2
   },
   {
     "id": "L-CORPUS2-00300",
@@ -246640,7 +246735,10 @@
     "notes": "Corpus v1.0 batch-2 (freq: 184, lang: kbd, source: none) | homonim (anlam 2)",
     "ipa": "/tʹʂɐ/",
     "examples": [
-      "Блэр и кӀэмкӀэ тету къежьауэ щилъагъум, цыжьбанэм зызэригъапщхьэри гъуэлъащ."
+      "Блэр и кӀэмкӀэ тету къежьауэ щилъагъум, цыжьбанэм зызэригъапщхьэри гъуэлъащ.",
+      "Блэр и кӀэмкӀэ тету къежьауэ щилъагъум, цыжьбанэм зызэригъапщхьэри гъуэлъащ. фольк.",
+      "Псалъэм и пэр умыщӀэмэ, и кӀэри пщӀэркъым. (погов. )",
+      "Шухэр ешат, егъэзыхыгъуэм кӀэ имыӀэ хуэдэу. КӀ. А."
     ],
     "isLemma": true,
     "translations": {
@@ -247123,7 +247221,9 @@
       "sukunov-1998"
     ],
     "etymologyType": "native",
-    "senseNumber": 2
+    "senseNumber": 2,
+    "homonymGroupId": "HG-Ӏув",
+    "homonymIndex": 2
   },
   {
     "id": "L-CORPUS2-00392",
@@ -247219,7 +247319,11 @@
       "rule": "compound"
     },
     "etymologyType": "native",
-    "senseNumber": 2
+    "senseNumber": 2,
+    "examples": [
+      "*Чэсейр плъыжьу иӀэн.",
+      "*Щхьэцыр пкъынэкӀэ иӀэн."
+    ]
   },
   {
     "id": "L-CORPUS2-00435",
@@ -247416,7 +247520,9 @@
     "notes": "Corpus v1.0 batch-2 (freq: 139, lang: kbd, source: none) | homonim (anlam 2)",
     "ipa": "/ʔɐ'mǝɕʹɐ/",
     "examples": [
-      "Унэм сыкъэсыжу си ӀэмыщӀэр щызэтесхыжам си дыщэ тумэным псыр къыпыжырт, си Ӏэгур пщӀэнтӀауэ бахъэр кърихырт."
+      "Унэм сыкъэсыжу си ӀэмыщӀэр щызэтесхыжам си дыщэ тумэным псыр къыпыжырт, си Ӏэгур пщӀэнтӀауэ бахъэр кърихырт.",
+      "*Унэм сыкъэсыжу си ӀэмыщӀэр щызэтесхыжам си дыщэ тумэным псыр къыпыжырт, си Ӏэгур пщӀэнтӀауэ бахъэр кърихырт. {{автор|kbd|имяавтора=Н. З.}}",
+      "*Уи ӀэмыщӀэ имылъым ущымыгугъ. {{тхыгъэ|kbd|цӀэ=Псжь.}}"
     ],
     "literalMeaningAdy": "Ӏэгу зэтелъ, зэтекъуза, ӀэкӀуэцӀ",
     "isLemma": true,
@@ -247679,7 +247785,9 @@
       "notes": "ф koku — en yuksek frekansli (32.267). Muhtemelen islevsel morfem."
     },
     "etymologyType": "native",
-    "senseNumber": 2
+    "senseNumber": 2,
+    "homonymGroupId": "HG-фӀэхъус",
+    "homonymIndex": 2
   },
   {
     "id": "L-CORPUS2-00515",
@@ -248133,7 +248241,9 @@
     "root": "Ӏэ",
     "wordFamily": null,
     "etymologyType": "native",
-    "senseNumber": 2
+    "senseNumber": 2,
+    "homonymGroupId": "HG-лӀэщӀыгъуэ",
+    "homonymIndex": 2
   },
   {
     "id": "L-CORPUS2-00630",
@@ -248509,7 +248619,9 @@
       "ar": "الذهاب، يذهب"
     },
     "literalMeaningSource": "translations.ru->tr (orta)",
-    "etymologyType": "native"
+    "etymologyType": "native",
+    "homonymGroupId": "HG-кӀон",
+    "homonymIndex": 1
   },
   {
     "id": "L-CORPUS2-00704",
@@ -249018,7 +249130,9 @@
     "meaning": "1. броский, хорошо видимый, яркий / Нэм зэуэ къыфӀэнэ, нэм ӀупщӀу илъагъу, нэм къыщӀэджагуэ. ◊ {Инал:} - Гъатхэпэ мазэр.. къабзэмэ, наӀуэмэ, щхъуантӀа",
     "dialect": "kbd",
     "dialectNote": "Kbd kaynakli",
-    "senseNumber": 2
+    "senseNumber": 2,
+    "homonymGroupId": "HG-наӀуэ",
+    "homonymIndex": 2
   },
   {
     "id": "L-CORPUS2-00779",
@@ -249563,7 +249677,9 @@
       "id": "WF-IESHCH"
     },
     "etymologyType": "native",
-    "senseNumber": 2
+    "senseNumber": 2,
+    "homonymGroupId": "HG-Ӏэщэ",
+    "homonymIndex": 2
   },
   {
     "id": "L-CORPUS2-00856",
@@ -249702,7 +249818,10 @@
     "dialect": "kbd",
     "dialectNote": "Kbd kaynakli",
     "WF": "WF-NE-DIGER",
-    "senseNumber": 2
+    "senseNumber": 2,
+    "examples": [
+      "*ЩӀалэм жраӀар нэгъуэщӀу къыгурыӀуат."
+    ]
   },
   {
     "id": "L-CORPUS2-00885",
@@ -250251,7 +250370,9 @@
       "id": "WF-ZHYI"
     },
     "etymologyType": "native",
-    "senseNumber": 2
+    "senseNumber": 2,
+    "homonymGroupId": "HG-жыӀэ",
+    "homonymIndex": 2
   },
   {
     "id": "L-CORPUS2-01028",
@@ -252665,7 +252786,8 @@
     "notes": "Corpus v1.0 batch-2 (freq: 54, lang: kbd, source: none) | homonim (anlam 2)",
     "ipa": "/'tʹɑ:sɐ/",
     "examples": [
-      "Си Хьэмид, тӀасэ, цӀыхугъэ уиӀэмэ, пӀалъэр къэсащи, хыумыгъэтӀасэ."
+      "Си Хьэмид, тӀасэ, цӀыхугъэ уиӀэмэ, пӀалъэр къэсащи, хыумыгъэтӀасэ.",
+      "Си Хьэмид, тӀасэ, цӀыхугъэ уиӀэмэ, пӀалъэр къэсащи, хыумыгъэтӀасэ. Щ. А. Хэжае, си тӀасэ, псори мамыращ, усэрей бзу цӀыкӀухэри абгъуэм екӀуэжащ. фольк."
     ],
     "isLemma": true,
     "translations": {
@@ -252729,7 +252851,9 @@
       "notes": "Bos aile - sonra doldurulacak"
     },
     "etymologyType": "native",
-    "senseNumber": 2
+    "senseNumber": 2,
+    "homonymGroupId": "HG-зэӀущӀэ",
+    "homonymIndex": 2
   },
   {
     "id": "L-CORPUS2-01568",
@@ -253138,7 +253262,9 @@
     ],
     "root": "анэш",
     "etymologyType": "native",
-    "senseNumber": 2
+    "senseNumber": 2,
+    "homonymGroupId": "HG-Ӏуданэ",
+    "homonymIndex": 2
   },
   {
     "id": "L-CORPUS2-01646",
@@ -254038,7 +254164,9 @@
       "tr": "permission"
     },
     "etymologyType": "proper_noun",
-    "senseNumber": 2
+    "senseNumber": 2,
+    "homonymGroupId": "HG-Ӏизын",
+    "homonymIndex": 2
   },
   {
     "id": "L-CORPUS2-01989",
@@ -254105,7 +254233,9 @@
     "literalMeaningSource": "translations.ru->tr (orta)",
     "root": "щхьэ",
     "etymologyType": "native",
-    "senseNumber": 2
+    "senseNumber": 2,
+    "homonymGroupId": "HG-къыхэкӀын",
+    "homonymIndex": 2
   },
   {
     "id": "L-CORPUS2-02008",
@@ -254231,7 +254361,10 @@
     },
     "etymologyType": "native",
     "examples": [
-      "Пхъэбгъу дзакӀэ. Къуршым и къыр дзакӀэхэм пшэ укъухэр Ӏэрамэу къыдопщри аузым къыдогъуалъхьэ. Ш. А. Сымаджэм и лъакъуэр къутащ, къупщхьэ дзакӀэ жаным лыр къызэпиупщӀри и щӀыӀум къэкӀуащ. Хь. Хь."
+      "Пхъэбгъу дзакӀэ. Къуршым и къыр дзакӀэхэм пшэ укъухэр Ӏэрамэу къыдопщри аузым къыдогъуалъхьэ. Ш. А. Сымаджэм и лъакъуэр къутащ, къупщхьэ дзакӀэ жаным лыр къызэпиупщӀри и щӀыӀум къэкӀуащ. Хь. Хь.",
+      "*Шы соку Ӏэрамэ.",
+      "*Цы Ӏэрамэ.",
+      "*Пшэ Ӏэрамэхэр."
     ],
     "senseNumber": 2
   },
@@ -254565,7 +254698,9 @@
     "examples": [
       "Бадын Пэхужь Ӏушэр къыщӀишщ, уанэр трилъхьэри дэшэсыкӀащ. Нарт."
     ],
-    "senseNumber": 2
+    "senseNumber": 2,
+    "homonymGroupId": "HG-Ӏушэ",
+    "homonymIndex": 2
   },
   {
     "id": "L-CORPUS2-02083",
@@ -255058,7 +255193,9 @@
     },
     "tr_status": "fixed_manual",
     "etymologyType": "native",
-    "senseNumber": 2
+    "senseNumber": 2,
+    "homonymGroupId": "HG-щӀыкӀэу",
+    "homonymIndex": 2
   },
   {
     "id": "L-CORPUS2-02177",
@@ -255269,7 +255406,9 @@
     "wordFamily": {
       "id": "WF-UVY_1"
     },
-    "etymologyType": "native"
+    "etymologyType": "native",
+    "homonymGroupId": "HG-увыпӀэ",
+    "homonymIndex": 1
   },
   {
     "id": "L-CORPUS2-02227",
@@ -256088,7 +256227,9 @@
     ],
     "literalMeaningSource": "translations.tr (yuksek)",
     "etymologyType": "native",
-    "senseNumber": 2
+    "senseNumber": 2,
+    "homonymGroupId": "HG-икӀэ",
+    "homonymIndex": 2
   },
   {
     "id": "L-CORPUS2-02451",
@@ -256203,7 +256344,9 @@
     "meaning": "(пӀынэр) старинный женский головный убор Адыгэмэ заом къэрабгъэу къыщылъагъорэм пӀынэ щалъэти, лӀыгъэ зишӀэ-кӀэ, щахыжьыщтыгъ Еуи ипӀынэ къыщигъэзыгъ",
     "dialect": "ady",
     "dialectNote": "Ady kaynakli",
-    "senseNumber": 2
+    "senseNumber": 2,
+    "homonymGroupId": "HG-пӀын",
+    "homonymIndex": 2
   },
   {
     "id": "L-CORPUS2-02460",
@@ -256568,7 +256711,11 @@
     "meaning": "отвратительный, омерзительный / Гур зыбгъэдэмыхьэу, гум къимыщтэ. ЦӀыху гущыкӀыгъуэ. Ӏуэху гущыкӀыгъуэ.",
     "dialect": "kbd",
     "dialectNote": "Kbd kaynakli",
-    "senseNumber": 2
+    "senseNumber": 2,
+    "examples": [
+      "*ЦӀыху гущыкӀыгъуэ.",
+      "*Ӏуэху гущыкӀыгъуэ."
+    ]
   },
   {
     "id": "L-CORPUS2-02520",
@@ -257475,7 +257622,8 @@
     "notes": "Corpus v1.0 batch-2 (freq: 34, lang: kbd, source: none) | homonim (anlam 1)",
     "ipa": "/χǝbɐrje:'ʁɑ:ɕʹɐ/",
     "examples": [
-      "Шэджэмокъуэ Исмел зэрыщымыӀэжымкӀэ хъыбарегъащӀэу ягъэкӀуар шым пхэнжу епсыхащ, зэрыщыхьэкӀуэр абыкӀэ яригъащӀэу."
+      "Шэджэмокъуэ Исмел зэрыщымыӀэжымкӀэ хъыбарегъащӀэу ягъэкӀуар шым пхэнжу епсыхащ, зэрыщыхьэкӀуэр абыкӀэ яригъащӀэу.",
+      "Шэджэмокъуэ Исмел зэрыщымыӀэжымкӀэ хъыбарегъащӀэу ягъэкӀуар шым пхэнжу епсыхащ, зэрыщыхьэкӀуэр абыкӀэ яригъащӀэу. Т. Хь."
     ],
     "literalMeaningAdy": "ПсалъэкӀэ е тхыгъэкӀэ зыгуэр хэӀущӀыӀу зэращӀ, зэрыхагъаӀуэ",
     "isLemma": true,
@@ -257803,7 +257951,9 @@
     "meaning": "I 1. куцый / Зи кӀэр кӀэщӀ псэущхьэ. ◊ Жумэрэн кӀагуэр гупсысэну и гъуэм ихьэжащ. фольк. Хьэ кӀагуитӀыр и бгъуитӀым {Бэдынокъуэ} щоджэгу. Къэб. п. и а",
     "dialect": "kbd",
     "dialectNote": "Kbd kaynakli",
-    "senseNumber": 2
+    "senseNumber": 2,
+    "homonymGroupId": "HG-кӀагуэ",
+    "homonymIndex": 2
   },
   {
     "id": "L-CORPUS2-02820",
@@ -258589,7 +258739,8 @@
     },
     "etymologyType": "native",
     "examples": [
-      "СекӀуэталӀэри лӀыжьым и Ӏэр субыдащ. М. З. Гъунэгъуу Михаил Ивановичым екӀуэтэлӀауэ, абы жиӀэм Ӏэдэб дыдэу едаӀуэу Аслъэныкъуэ щыст. Т. Хь."
+      "СекӀуэталӀэри лӀыжьым и Ӏэр субыдащ. М. З. Гъунэгъуу Михаил Ивановичым екӀуэтэлӀауэ, абы жиӀэм Ӏэдэб дыдэу едаӀуэу Аслъэныкъуэ щыст. Т. Хь.",
+      "*ЩӀапэ Ӏэдэб."
     ],
     "senseNumber": 2
   },
@@ -258709,7 +258860,9 @@
       "id": "WF-SHCHIA_2"
     },
     "etymologyType": "native",
-    "senseNumber": 2
+    "senseNumber": 2,
+    "homonymGroupId": "HG-щӀалэгъуэ",
+    "homonymIndex": 2
   },
   {
     "id": "L-CORPUS2-03166",
@@ -258744,7 +258897,9 @@
       "id": "WF-SHCHIA_1"
     },
     "etymologyType": "native",
-    "senseNumber": 2
+    "senseNumber": 2,
+    "homonymGroupId": "HG-щӀасэ",
+    "homonymIndex": 2
   },
   {
     "id": "L-CORPUS2-03174",
@@ -259602,7 +259757,9 @@
       "notes": "Bos aile - sonra doldurulacak"
     },
     "etymologyType": "native",
-    "senseNumber": 2
+    "senseNumber": 2,
+    "homonymGroupId": "HG-хъуэпсапӀэ",
+    "homonymIndex": 2
   },
   {
     "id": "L-CORPUS2-03436",
@@ -259947,7 +260104,9 @@
       "notes": "Bos aile - sonra doldurulacak"
     },
     "etymologyType": "native",
-    "senseNumber": 2
+    "senseNumber": 2,
+    "homonymGroupId": "HG-тӀорысэ",
+    "homonymIndex": 2
   },
   {
     "id": "L-CORPUS2-03500",
@@ -260762,7 +260921,9 @@
     "literalMeaningSource": "translations.tr (yuksek)",
     "root": "гущӀ",
     "etymologyType": "native",
-    "senseNumber": 2
+    "senseNumber": 2,
+    "homonymGroupId": "HG-папцӀэ",
+    "homonymIndex": 2
   },
   {
     "id": "L-CORPUS2-03636",
@@ -261864,7 +262025,9 @@
       ]
     },
     "examples": [
-      "Зы гукъэкӀым адрейр имычэзууэ къытегуплӀэрти псори зэхэпшэхъуэжырт."
+      "Зы гукъэкӀым адрейр имычэзууэ къытегуплӀэрти псори зэхэпшэхъуэжырт.",
+      "Зы гукъэкӀым адрейр имычэзууэ къытегуплӀэрти псори зэхэпшэхъуэжырт. Ӏуащхь.",
+      "гукъэкӀ"
     ],
     "isLemma": true,
     "translations": {
@@ -261930,7 +262093,8 @@
     "notes": "Corpus v1.0 batch-2 (freq: 25, lang: kbd, source: none) | homonim (anlam 2)",
     "ipa": "/xe:'ja:ɕʹɐ/",
     "examples": [
-      "Фыз техрэ тӀэу хеящӀэрэ фымыщӀэ."
+      "Фыз техрэ тӀэу хеящӀэрэ фымыщӀэ.",
+      "фыз техрэ тӀэу хеящӀэрэ фымыщӀэ не отнимайте жен друг у друга и не вершите суд дважды (Ж. Казаноков )"
     ],
     "literalMeaningAdy": "СудыщӀэ",
     "isLemma": true,
@@ -262037,7 +262201,9 @@
       "sukunov-1998"
     ],
     "literalMeaningSource": "translations.tr (yuksek)",
-    "etymologyType": "native"
+    "etymologyType": "native",
+    "homonymGroupId": "HG-тӀы",
+    "homonymIndex": 1
   },
   {
     "id": "L-CORPUS2-04014",
@@ -262585,7 +262751,8 @@
     "notes": "Corpus v1.0 batch-2 (freq: 24, lang: kbd, source: none) | homonim (anlam 2)",
     "ipa": "/χʷǝʁʷɐˈfʹǝʁʷɐ/",
     "examples": [
-      "ХъугъуэфӀыгъуэу сиӀэр узот, ауэ си шыр сӀыумых, - жиӀащ Хъаныжьым."
+      "ХъугъуэфӀыгъуэу сиӀэр узот, ауэ си шыр сӀыумых, - жиӀащ Хъаныжьым.",
+      "ХъугъуэфӀыгъуэу сиӀэр узот, ауэ си шыр сӀыумых, - жиӀащ Хъаныжьым. фольк."
     ],
     "isLemma": true,
     "translations": {
@@ -262675,7 +262842,9 @@
       "id": "WF-UESHCH"
     },
     "etymologyType": "native",
-    "senseNumber": 2
+    "senseNumber": 2,
+    "homonymGroupId": "HG-кӀуапӀэ",
+    "homonymIndex": 2
   },
   {
     "id": "L-CORPUS2-04135",
@@ -263164,7 +263333,9 @@
       "notes": "Ogul ailesi. Adigece: къо. Homonym: къуэ (vadi). Korpus: 16385."
     },
     "etymologyType": "native",
-    "senseNumber": 2
+    "senseNumber": 2,
+    "homonymGroupId": "HG-зэкӀэлъыкӀуэ",
+    "homonymIndex": 2
   },
   {
     "id": "L-CORPUS2-04224",
@@ -263913,7 +264084,9 @@
       "notes": "Yer/toprak ailesi (щӀы). Doga koku. Corpus: 9.435 kullanim."
     },
     "etymologyType": "native",
-    "senseNumber": 2
+    "senseNumber": 2,
+    "homonymGroupId": "HG-щӀыгулъ",
+    "homonymIndex": 2
   },
   {
     "id": "L-CORPUS2-04434",
@@ -264000,7 +264173,9 @@
     "meaning": "(хеукӀэ) 1. вбивать, вбить что-л. во что-л. (в какую-л. твердую массу); 2. убивать, убить кого-л. в чем-л",
     "dialect": "kbd",
     "dialectNote": "Kbd kaynakli",
-    "senseNumber": 2
+    "senseNumber": 2,
+    "homonymGroupId": "HG-хэукӀэн",
+    "homonymIndex": 2
   },
   {
     "id": "L-CORPUS2-04438",
@@ -264056,7 +264231,9 @@
       "notes": "C-9.3 yeni aile. Korumak kok ailesi. Wiktionary kaniti."
     },
     "etymologyType": "native",
-    "senseNumber": 2
+    "senseNumber": 2,
+    "homonymGroupId": "HG-къэкӀын",
+    "homonymIndex": 2
   },
   {
     "id": "L-CORPUS2-04478",
@@ -264320,7 +264497,9 @@
     "literalMeaningSource": "translations.ru->tr (orta)",
     "root": "щхьэ",
     "etymologyType": "native",
-    "senseNumber": 2
+    "senseNumber": 2,
+    "homonymGroupId": "HG-къыщӀэкӀын",
+    "homonymIndex": 2
   },
   {
     "id": "L-CORPUS2-04603",
@@ -265504,7 +265683,11 @@
       "notes": "El ailesi (Ӏэ). Somatik kok. Corpus: 11.294 kullanim."
     },
     "etymologyType": "native",
-    "senseNumber": 2
+    "senseNumber": 2,
+    "examples": [
+      "*ЩӀалэ Ӏэсэ.",
+      "*Жэм Ӏэсэ."
+    ]
   },
   {
     "id": "L-CORPUS2-05092",
@@ -265678,7 +265861,9 @@
       "id": "WF-SHCHIA"
     },
     "etymologyType": "native",
-    "senseNumber": 2
+    "senseNumber": 2,
+    "homonymGroupId": "HG-щӀалэщӀэ",
+    "homonymIndex": 2
   },
   {
     "id": "L-CORPUS2-05136",
@@ -267161,7 +267346,9 @@
       "notes": "Burun/on ailesi (пэ). Somatik + mekan. Corpus: 7.184 kullanim."
     },
     "etymologyType": "native",
-    "senseNumber": 2
+    "senseNumber": 2,
+    "homonymGroupId": "HG-мыпӀащӀэу",
+    "homonymIndex": 2
   },
   {
     "id": "L-CORPUS2-05506",
@@ -270005,7 +270192,8 @@
     "notes": "Corpus v1.0 batch-2 (freq: 17, lang: kbd, source: none) | Kaynak: sukunov-1998 | homonim (anlam 2)",
     "ipa": "/'ʔɐtɐ/",
     "examples": [
-      "Ӏэтэ зэщӀэмыбгъэр бгъэн ящӀыж."
+      "Ӏэтэ зэщӀэмыбгъэр бгъэн ящӀыж.",
+      "Ӏэтэр Ӏэмбатэ щхьэкӀэ зыгъэфыжам нэхъей. (погов. )"
     ],
     "literalMeaningAdy": "Лъагэу, хъурейуэ Ӏуву зэтралъхьа мэкъу",
     "isLemma": true,
@@ -271495,7 +271683,9 @@
     },
     "tr_status": "fixed_manual",
     "etymologyType": "native",
-    "senseNumber": 2
+    "senseNumber": 2,
+    "homonymGroupId": "HG-Ӏэпэдэгъэлэл",
+    "homonymIndex": 2
   },
   {
     "id": "L-CORPUS2-06694",
@@ -273587,7 +273777,9 @@
     },
     "notes": "Corpus v1.0 batch-2 (freq: 15, lang: kbd, source: none) | homonim (anlam 2)",
     "examples": [
-      "Залым къыжьэдэлъэта жыӀэгъуэм нэхъри хегъахъуэ Мэзан и гурыщхъуэм."
+      "Залым къыжьэдэлъэта жыӀэгъуэм нэхъри хегъахъуэ Мэзан и гурыщхъуэм.",
+      "*Залым къыжьэдэлъэта жыӀэгъуэм нэхъри хегъахъуэ Мэзан и гурыщхъуэм.  {{тхыгъэ|kbd|цӀэ=Ӏуащхь.}}",
+      "*Хэт зымыщӀэжыр Хьэжбэчыр и жыӀэгъуэ дахэхэр!  {{автор|kbd|имяавтора=Щ. Ӏ.}}"
     ],
     "isLemma": true,
     "translations": {
@@ -273752,7 +273944,9 @@
       "id": "WF-PSA"
     },
     "etymologyType": "native",
-    "senseNumber": 2
+    "senseNumber": 2,
+    "homonymGroupId": "HG-кӀащхъэ",
+    "homonymIndex": 2
   },
   {
     "id": "L-CORPUS2-07170",
@@ -273974,7 +274168,9 @@
       "id": "WF-PSHCHY"
     },
     "etymologyType": "native",
-    "senseNumber": 2
+    "senseNumber": 2,
+    "homonymGroupId": "HG-щӀопщ",
+    "homonymIndex": 2
   },
   {
     "id": "L-CORPUS2-07272",
@@ -275561,7 +275757,8 @@
     "notes": "Corpus v1.0 batch-2 (freq: 14, lang: kbd, source: none) | Kaynak: sukunov-1998 | homonim (anlam 2)",
     "ipa": "/ʔɐ'dɑ:qʹɐ/",
     "examples": [
-      "Иныжьым зы мывэ къищтэри ӀэдакъэкӀэ ихьэжащ."
+      "Иныжьым зы мывэ къищтэри ӀэдакъэкӀэ ихьэжащ.",
+      "Иныжьым зы мывэ къищтэри ӀэдакъэкӀэ ихьэжащ. Нарт."
     ],
     "literalMeaningAdy": "Ӏэм и дакъэ, ӀэкӀуэцӀ лъэныкъуэмкӀэ Ӏэбэлагъым телъ лы Ӏув",
     "isLemma": true,
@@ -275713,7 +275910,9 @@
       "id": "WF-IN"
     },
     "etymologyType": "native",
-    "senseNumber": 2
+    "senseNumber": 2,
+    "homonymGroupId": "HG-пӀейтей",
+    "homonymIndex": 2
   },
   {
     "id": "L-CORPUS2-07731",
@@ -275812,7 +276011,9 @@
     "conceptId": "MAN",
     "root": "цӀых",
     "etymologyType": "native",
-    "senseNumber": 2
+    "senseNumber": 2,
+    "homonymGroupId": "HG-цӀырхъ",
+    "homonymIndex": 2
   },
   {
     "id": "L-CORPUS2-07767",
@@ -275935,7 +276136,9 @@
     },
     "literalMeaningSource": "translations.ru->tr (orta)",
     "etymologyType": "proper_noun",
-    "senseNumber": 2
+    "senseNumber": 2,
+    "homonymGroupId": "HG-Ӏузэ",
+    "homonymIndex": 2
   },
   {
     "id": "L-CORPUS2-07784",
@@ -275975,7 +276178,9 @@
       "id": "WF-DEI"
     },
     "etymologyType": "native",
-    "senseNumber": 2
+    "senseNumber": 2,
+    "homonymGroupId": "HG-дэӀуэн",
+    "homonymIndex": 2
   },
   {
     "id": "L-CORPUS2-07795",
@@ -276099,7 +276304,9 @@
     "conceptId": "YELLOW",
     "root": "гъуэ",
     "etymologyType": "native",
-    "senseNumber": 2
+    "senseNumber": 2,
+    "homonymGroupId": "HG-гъумэтӀымэн",
+    "homonymIndex": 2
   },
   {
     "id": "L-CORPUS2-07829",
@@ -277839,7 +278046,9 @@
       "notes": "Bos aile - sonra doldurulacak"
     },
     "etymologyType": "native",
-    "senseNumber": 2
+    "senseNumber": 2,
+    "homonymGroupId": "HG-щыщӀэныгъэ",
+    "homonymIndex": 2
   },
   {
     "id": "L-CORPUS2-08240",
@@ -277854,7 +278063,8 @@
     "notes": "Corpus v1.0 batch-2 (freq: 13, lang: kbd, source: none) | homonim (anlam 2)",
     "ipa": "/qʹe:kʹʷ/",
     "examples": [
-      "ЦӀыху къекӀу. Унэ къекӀу. 2. приличный, подходящий / Къезэгъ."
+      "ЦӀыху къекӀу. Унэ къекӀу. 2. приличный, подходящий / Къезэгъ.",
+      "ЦӀыху къекӀу. Унэ къекӀу."
     ],
     "isLemma": true,
     "translations": {
@@ -278218,7 +278428,9 @@
     "literalMeaningSource": "translations.tr (yuksek)",
     "root": "унэг",
     "etymologyType": "native",
-    "senseNumber": 2
+    "senseNumber": 2,
+    "homonymGroupId": "HG-Ӏунэ",
+    "homonymIndex": 2
   },
   {
     "id": "L-CORPUS2-08381",
@@ -281054,7 +281266,9 @@
     "taxonomyFamily": "Nitelik & Beceri",
     "rootForm": "Ӏэ-",
     "etymologyType": "native",
-    "senseNumber": 2
+    "senseNumber": 2,
+    "homonymGroupId": "HG-Ӏэчлъэч",
+    "homonymIndex": 2
   },
   {
     "id": "L-CORPUS2-09050",
@@ -281366,7 +281580,9 @@
     "literalMeaningSource": "translations.ru->tr (orta)",
     "root": "щхьэ",
     "etymologyType": "native",
-    "senseNumber": 2
+    "senseNumber": 2,
+    "homonymGroupId": "HG-Ӏэщхьэ",
+    "homonymIndex": 2
   },
   {
     "id": "L-CORPUS2-09109",
@@ -281874,7 +282090,8 @@
     },
     "etymologyType": "native",
     "examples": [
-      "*ЩӀалэм и Ӏэзагъэр шыгъэджэгум щигъэлъэгъуащ."
+      "*ЩӀалэм и Ӏэзагъэр шыгъэджэгум щигъэлъэгъуащ.",
+      "Ӏэзагъэ еджакӀуэ"
     ],
     "senseNumber": 2
   },
@@ -284326,7 +284543,9 @@
       "id": "WF-PSHCHI"
     },
     "etymologyType": "native",
-    "senseNumber": 2
+    "senseNumber": 2,
+    "homonymGroupId": "HG-пщӀэгъуалэ",
+    "homonymIndex": 2
   },
   {
     "id": "L-VERIFIED-00000",
@@ -298623,7 +298842,9 @@
       "trSource": "en->tr koprusu (orta)"
     },
     "literalMeaningSource": "translations.ru->tr (orta)",
-    "etymologyType": "native"
+    "etymologyType": "native",
+    "homonymGroupId": "HG-мае",
+    "homonymIndex": 2
   },
   {
     "id": "L-VERIFIED-00363",
@@ -301619,7 +301840,9 @@
       "morphemeIds": [],
       "rule": "root"
     },
-    "etymologyType": "native"
+    "etymologyType": "native",
+    "homonymGroupId": "HG-ду",
+    "homonymIndex": 2
   },
   {
     "id": "L-VERIFIED-00430",
@@ -312873,7 +313096,9 @@
       "tr": "Acı",
       "trSource": "en->tr koprusu (orta)"
     },
-    "etymologyType": "native"
+    "etymologyType": "native",
+    "homonymGroupId": "HG-еру",
+    "homonymIndex": 2
   },
   {
     "id": "L-VERIFIED-00728",
@@ -319907,7 +320132,9 @@
     },
     "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/d/da/%D0%91775%D0%B1%D0%BE.ogg",
     "literalMeaningSource": "translations.ru->tr (orta)",
-    "etymologyType": "native"
+    "etymologyType": "native",
+    "homonymGroupId": "HG-бо",
+    "homonymIndex": 2
   },
   {
     "id": "L-VERIFIED-00902",
@@ -327896,7 +328123,9 @@
       "trSource": "en->tr koprusu (orta)"
     },
     "literalMeaningSource": "translations.ru->tr (orta)",
-    "etymologyType": "native"
+    "etymologyType": "native",
+    "homonymGroupId": "HG-ущ",
+    "homonymIndex": 2
   },
   {
     "id": "L-VERIFIED-01087",
@@ -335308,7 +335537,9 @@
       "rule": "root"
     },
     "ipa": "/xɐn/",
-    "etymologyType": "native"
+    "etymologyType": "native",
+    "homonymGroupId": "HG-уха",
+    "homonymIndex": 2
   },
   {
     "id": "L-VERIFIED-01252",
@@ -338475,7 +338706,9 @@
     "translations": {
       "tr": "DOLU"
     },
-    "etymologyType": "native"
+    "etymologyType": "native",
+    "homonymGroupId": "HG-щиз",
+    "homonymIndex": 2
   },
   {
     "id": "L-VERIFIED-01330",
@@ -342002,7 +342235,9 @@
     },
     "ipaSource": "form-derived",
     "ipa": "/saj/",
-    "etymologyType": "native"
+    "etymologyType": "native",
+    "homonymGroupId": "HG-сай",
+    "homonymIndex": 2
   },
   {
     "id": "L-VERIFIED-01446",
@@ -349494,7 +349729,9 @@
       "morphemeIds": [],
       "rule": "root"
     },
-    "etymologyType": "native"
+    "etymologyType": "native",
+    "homonymGroupId": "HG-ныш",
+    "homonymIndex": 2
   },
   {
     "id": "L-VERIFIED-01643",
@@ -351315,7 +351552,9 @@
       "*Комбайнхэр махэ.",
       "*ИпэкӀэ гъубжэкӀэ хэрт."
     ],
-    "etymologyType": "native"
+    "etymologyType": "native",
+    "homonymGroupId": "HG-хэн",
+    "homonymIndex": 2
   },
   {
     "id": "L-VERIFIED-01681",
@@ -358066,7 +358305,9 @@
     "etymologyType": "native",
     "examples": [
       "Гуащэ- хэр йокIыжри, нысэхэм (Фаризэтрэ ХьэIишэтрэ) убэн чэзур  къалъосыр."
-    ]
+    ],
+    "homonymGroupId": "HG-убэ",
+    "homonymIndex": 2
   },
   {
     "id": "L-VERIFIED-01835",
@@ -360578,7 +360819,9 @@
       "rule": "root"
     },
     "ipa": "/wǝz/",
-    "etymologyType": "native"
+    "etymologyType": "native",
+    "homonymGroupId": "HG-узу",
+    "homonymIndex": 2
   },
   {
     "id": "L-VERIFIED-01887",
@@ -363975,7 +364218,9 @@
     "etymologyType": "native",
     "examples": [
       "Зи  цIэ къитIуа гушыIэ усищым хыболъагъуэ егъэлеиныгъэ, па- радокс Iэмалхэм нэмыщI зы хьэл зэрахэлъыр, драматург зэ- чийр и лирикэми зэрыхыхьэр."
-    ]
+    ],
+    "homonymGroupId": "HG-чий",
+    "homonymIndex": 2
   },
   {
     "id": "L-VERIFIED-01961",
@@ -365218,7 +365463,9 @@
       "id": "WF-KU_1"
     },
     "etymologyType": "native",
-    "senseNumber": 2
+    "senseNumber": 2,
+    "homonymGroupId": "HG-къуажэхь",
+    "homonymIndex": 2
   },
   {
     "id": "L-VERIFIED-01993",
@@ -372967,7 +373214,9 @@
       "tr": "PIHTI"
     },
     "literalMeaningSource": "translations.tr (yuksek)",
-    "etymologyType": "native"
+    "etymologyType": "native",
+    "homonymGroupId": "HG-дия",
+    "homonymIndex": 2
   },
   {
     "id": "L-VERIFIED-02182",
@@ -391238,7 +391487,9 @@
       "sukunov-1998"
     ],
     "literalMeaningSource": "translations.tr (yuksek)",
-    "etymologyType": "native"
+    "etymologyType": "native",
+    "homonymGroupId": "HG-чыл",
+    "homonymIndex": 2
   },
   {
     "id": "L-VERIFIED-02697",
@@ -392707,78 +392958,6 @@
     "etymologyType": "native"
   },
   {
-    "id": "L-PROMPT-00006",
-    "form": "гуауэ",
-    "literalMeaning": "keder",
-    "ipa": "/'gʷɑ:wɐ/",
-    "conceptId": "GRIEF",
-    "partOfSpeech": "noun",
-    "notes": "PROMPT entegrasyonu (genel) | homonim (anlam 2)",
-    "corpusFrequency": 0,
-    "rootIds": [
-      "R-GU"
-    ],
-    "wordFamilyId": "WF-GU",
-    "derivation": null,
-    "dialectVariants": {
-      "adyghe": "гуауэ",
-      "kabardian": "гуауэ"
-    },
-    "examples": [
-      "И гъунэгъум я унагъуэм къихъуа гуауэм Бэчмырзэ хуабжьу иринэщхъеящ."
-    ],
-    "isLemma": true,
-    "translations": {
-      "tr": "keder",
-      "en": "woe, grief, sorrow, misfortune, suffering, affliction",
-      "ru": "горе, скорбь",
-      "ar": "حزن"
-    },
-    "subConceptId": "EMOTION",
-    "taxonomyFamily": "Duygu & Zihin",
-    "rootForm": "гу",
-    "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9a/%D0%93%D1%83017%D0%B3%D1%83%D0%B0%D1%83%D1%8D.ogg",
-    "root": "гу",
-    "wordFamily": {
-      "id": "WF-GU",
-      "lexemeIds": [
-        "L-GUF1E",
-        "L-GUGHE",
-        "L-GUBZHYGE",
-        "L-GUETYNEGHE",
-        "L-GUF1EN"
-      ],
-      "conceptIds": [
-        "ANGER",
-        "ANXIETY",
-        "HOPE",
-        "INTELLIGENCE",
-        "JOY",
-        "LOYALTY",
-        "SOUL_DEPTH",
-        "THOUGHT"
-      ],
-      "morphemeIds": [
-        "M-F1E",
-        "M-GHE",
-        "M-BZHYGE",
-        "M-F1EN"
-      ],
-      "productivity": {
-        "totalLexemes": 47,
-        "corpusFrequency": 22788,
-        "mostFrequentLexemeId": "L-GUF1E"
-      },
-      "notes": "En uretken somatik kok ailesi. 22 bilesik yapi korpusta dogrulandi."
-    },
-    "etymologyType": "native",
-    "meaning": "горе, скорбь / Нэщхъеягъуэ, гущӀыхьэ. ◊ И гъунэгъум я унагъуэм къихъуа гуауэм Бэчмырзэ хуабжьу иринэщхъеящ. Т. Хь. Гуауэри гуапэри зэпылъщ. (погов. )",
-    "dialect": "kbd",
-    "dialectNote": "Kbd kaynakli",
-    "frequency": 55,
-    "senseNumber": 2
-  },
-  {
     "id": "L-PROMPT-00007",
     "form": "бампӀэ",
     "literalMeaning": "kasvet",
@@ -392819,76 +392998,6 @@
     "root": "Ӏэ",
     "wordFamily": null,
     "etymologyType": "native"
-  },
-  {
-    "id": "L-PROMPT-00008",
-    "form": "гуажэ",
-    "literalMeaning": "gücenme",
-    "ipa": "/ˈgʷɑ:ᶎɐ/",
-    "conceptId": "RESENTMENT",
-    "partOfSpeech": "noun",
-    "notes": "PROMPT entegrasyonu (genel) | homonim (anlam 2)",
-    "corpusFrequency": 0,
-    "rootIds": [
-      "R-GU"
-    ],
-    "wordFamilyId": "WF-GU",
-    "derivation": null,
-    "dialectVariants": {
-      "adyghe": "гуажэ",
-      "kabardian": "гуажэ"
-    },
-    "examples": [
-      "Хъыджэбзым жраӀа хъуэрыбзэр гуажэ щыхъури щӀэкӀыжащ."
-    ],
-    "isLemma": true,
-    "translations": {
-      "tr": "gücenme",
-      "en": "resentment, grudge, bitterness, insult, affront, offence",
-      "ru": "обида"
-    },
-    "subConceptId": "EMOTION",
-    "taxonomyFamily": "Duygu & Zihin",
-    "rootForm": "гу",
-    "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e6/%D0%93%D1%83002%D0%B3%D1%83%D0%B0%D0%B6%D1%8D.ogg",
-    "root": "гу",
-    "wordFamily": {
-      "id": "WF-GU",
-      "lexemeIds": [
-        "L-GUF1E",
-        "L-GUGHE",
-        "L-GUBZHYGE",
-        "L-GUETYNEGHE",
-        "L-GUF1EN"
-      ],
-      "conceptIds": [
-        "ANGER",
-        "ANXIETY",
-        "HOPE",
-        "INTELLIGENCE",
-        "JOY",
-        "LOYALTY",
-        "SOUL_DEPTH",
-        "THOUGHT"
-      ],
-      "morphemeIds": [
-        "M-F1E",
-        "M-GHE",
-        "M-BZHYGE",
-        "M-F1EN"
-      ],
-      "productivity": {
-        "totalLexemes": 47,
-        "corpusFrequency": 22788,
-        "mostFrequentLexemeId": "L-GUF1E"
-      },
-      "notes": "En uretken somatik kok ailesi. 22 bilesik yapi korpusta dogrulandi."
-    },
-    "etymologyType": "native",
-    "meaning": "обида / гуауэ, жагъуэ хъу. ◊ Хъыджэбзым жраӀа хъуэрыбзэр гуажэ щыхъури щӀэкӀыжащ. фольк. ТхьэӀухудыр гуажэм ихьу бгъуэнщӀагъым щӀэст. фольк. Гуажэ хуэ",
-    "dialect": "kbd",
-    "dialectNote": "Kbd kaynakli",
-    "senseNumber": 2
   },
   {
     "id": "L-PROMPT-00009",
@@ -393373,7 +393482,9 @@
     "dictionaryEvidence": [
       "sukunov-1998"
     ],
-    "etymologyType": "native"
+    "etymologyType": "native",
+    "homonymGroupId": "HG-зэш",
+    "homonymIndex": 1
   },
   {
     "id": "L-PROMPT-00018",
@@ -414923,7 +415034,9 @@
     "dictionaryEvidence": [
       "sukunov-1998"
     ],
-    "etymologyType": "native"
+    "etymologyType": "native",
+    "homonymGroupId": "HG-быж",
+    "homonymIndex": 2
   },
   {
     "id": "L-KBD-00452",
@@ -433969,7 +434082,9 @@
     },
     "ipa": "/ɣǝz/",
     "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/6/68/%D0%93105%D0%B3%D1%8B%D0%B7.ogg",
-    "etymologyType": "native"
+    "etymologyType": "native",
+    "homonymGroupId": "HG-гыз",
+    "homonymIndex": 2
   },
   {
     "id": "L-KBD-00847",
@@ -453568,7 +453683,9 @@
       "tr": "YORGUN"
     },
     "ipa": "/je:ˈʂɑ:/",
-    "etymologyType": "native"
+    "etymologyType": "native",
+    "homonymGroupId": "HG-еша",
+    "homonymIndex": 2
   },
   {
     "id": "L-KBD-01345",
@@ -555171,7 +555288,9 @@
     "wordFamily": {
       "id": "WF-PSHCHY_1"
     },
-    "etymologyType": "native"
+    "etymologyType": "native",
+    "homonymGroupId": "HG-пщыгъуэ",
+    "homonymIndex": 1
   },
   {
     "id": "L-KBD-03994",
@@ -570774,7 +570893,9 @@
       "ru": "жировое образование на груди индюка или гуся",
       "tr": "bilgi, bilim"
     },
-    "etymologyType": "native"
+    "etymologyType": "native",
+    "homonymGroupId": "HG-тощ",
+    "homonymIndex": 1
   },
   {
     "id": "L-KBD-04375",
@@ -573657,7 +573778,9 @@
       "tr": "DANS, ETMEK"
     },
     "ipa": "/wǝˈdᶎǝn/",
-    "etymologyType": "native"
+    "etymologyType": "native",
+    "homonymGroupId": "HG-уджын",
+    "homonymIndex": 1
   },
   {
     "id": "L-KBD-04453",
@@ -618761,7 +618884,9 @@
     "dictionaryEvidence": [
       "sukunov-1998"
     ],
-    "etymologyType": "native"
+    "etymologyType": "native",
+    "homonymGroupId": "HG-без",
+    "homonymIndex": 2
   },
   {
     "id": "L-KBD-05621",
@@ -623512,32 +623637,6 @@
     "etymologyType": "native"
   },
   {
-    "id": "LEX-ХЪЫБАРЕГЪА",
-    "form": "хъыбарегъащӀэ",
-    "partOfSpeech": "noun",
-    "translations": {
-      "tr": "HABERCİ",
-      "ar": "إعلان",
-      "en": "message, announcement; information",
-      "ru": "сообщение, объявление; информация"
-    },
-    "ipa": "/χǝbarеʁaɕʼɐ/",
-    "rootIds": [
-      "R-KHY_2"
-    ],
-    "conceptId": null,
-    "literalMeaning": "HABERCİ",
-    "literalMeaningSource": "translations.tr (yuksek)",
-    "examples": [
-      "Шэджэмокъуэ Исмел зэрыщымыӀэжымкӀэ хъыбарегъащӀэу ягъэкӀуар шым пхэнжу епсыхащ, зэрыщыхьэкӀуэр абыкӀэ яригъащӀэу. Т. Хь."
-    ],
-    "examplesSource": "1.Ady-Ady_AP.json (◊)",
-    "etymologyType": "native",
-    "wordFamilyId": "WF-KHY_2",
-    "senseNumber": 2,
-    "notes": "homonim (anlam 2)"
-  },
-  {
     "id": "LEX-ХЪЫБАРЫНШЭ",
     "form": "хъыбарыншэ",
     "partOfSpeech": "noun",
@@ -625923,7 +626022,9 @@
     "wordFamilyId": "WF-A",
     "etymologyType": "native",
     "senseNumber": 1,
-    "notes": "homonim (anlam 1)"
+    "notes": "homonim (anlam 1)",
+    "homonymGroupId": "HG-Ӏизын",
+    "homonymIndex": 1
   },
   {
     "id": "HUV2-IИЗЫНЫНШЭУ",
@@ -626285,7 +626386,9 @@
     ],
     "etymologyType": "proper_noun",
     "senseNumber": 1,
-    "notes": "homonim (anlam 1)"
+    "notes": "homonim (anlam 1)",
+    "homonymGroupId": "HG-Ӏув",
+    "homonymIndex": 1
   },
   {
     "id": "HUV2-IУГЪУЭНШЭ",
@@ -626331,7 +626434,9 @@
     "wordFamilyId": "WF-A",
     "etymologyType": "native",
     "senseNumber": 1,
-    "notes": "homonim (anlam 1)"
+    "notes": "homonim (anlam 1)",
+    "homonymGroupId": "HG-Ӏуданэ",
+    "homonymIndex": 1
   },
   {
     "id": "HUV2-IУДАНЭМАСТЭ",
@@ -626456,7 +626561,9 @@
     "wordFamilyId": "WF-A",
     "etymologyType": "native",
     "senseNumber": 1,
-    "notes": "homonim (anlam 1)"
+    "notes": "homonim (anlam 1)",
+    "homonymGroupId": "HG-Ӏузэ",
+    "homonymIndex": 1
   },
   {
     "id": "HUV2-IУМПIАФIАГЪ(Э)",
@@ -626627,7 +626734,9 @@
     "wordFamilyId": "WF-A",
     "etymologyType": "native",
     "senseNumber": 1,
-    "notes": "homonim (anlam 1)"
+    "notes": "homonim (anlam 1)",
+    "homonymGroupId": "HG-Ӏунэ",
+    "homonymIndex": 1
   },
   {
     "id": "HUV2-IУНЭУАЛЪЭ",
@@ -626976,110 +627085,6 @@
     "etymologyType": "native"
   },
   {
-    "id": "HUV3-IЭДАКЪЭ",
-    "form": "Ӏэдакъэ",
-    "partOfSpeech": "noun",
-    "conceptId": "VUCUT",
-    "translations": {
-      "tr": "el bileği",
-      "en": "Back of the hand",
-      "ru": "Верхняя часть ладони"
-    },
-    "ipa": "/ʔɐdaqɐ/",
-    "rootIds": [
-      "R-1E",
-      "R-A"
-    ],
-    "literalMeaning": "el bileği",
-    "literalMeaningSource": "translations.tr (yuksek)",
-    "examples": [
-      "Иныжьым зы мывэ къищтэри ӀэдакъэкӀэ ихьэжащ. Нарт."
-    ],
-    "examplesSource": "1.Ady-Ady_AP.json (◊)",
-    "root": "Ӏэ",
-    "wordFamilyId": "WF-1E",
-    "wordFamily": {
-      "id": "WF-1E",
-      "lexemeIds": [
-        "L-1E",
-        "L-1EPE",
-        "L-1EGU",
-        "L-1EPKYLEPK",
-        "L-1ERYSH1"
-      ],
-      "conceptIds": [
-        "ARTIFICIAL_INTELLIGENCE",
-        "BODY",
-        "FINGER",
-        "HAND",
-        "HANDMADE",
-        "PALM"
-      ],
-      "morphemeIds": [],
-      "productivity": {
-        "totalLexemes": 5,
-        "corpusFrequency": 11294,
-        "mostFrequentLexemeId": "L-1E"
-      },
-      "notes": "El ailesi (Ӏэ). Somatik kok. Corpus: 11.294 kullanim."
-    },
-    "etymologyType": "native",
-    "senseNumber": 1,
-    "notes": "homonim (anlam 1)"
-  },
-  {
-    "id": "HUV3-IЭДЭБ",
-    "form": "Ӏэдэб",
-    "partOfSpeech": "noun",
-    "conceptId": "UNKNOWN",
-    "translations": {
-      "tr": "decency",
-      "en": "calm, balanced; sedate",
-      "ru": "спокойный, уравновешенный; степенный",
-      "ar": "وقح"
-    },
-    "ipa": "/ʔɐdɐb/",
-    "rootIds": [
-      "R-1E",
-      "R-A"
-    ],
-    "literalMeaning": "edep, terbiye",
-    "literalMeaningSource": "translations.tr (yuksek)",
-    "examples": [
-      "*ЩӀапэ Ӏэдэб."
-    ],
-    "root": "Ӏэ",
-    "wordFamilyId": "WF-1E",
-    "wordFamily": {
-      "id": "WF-1E",
-      "lexemeIds": [
-        "L-1E",
-        "L-1EPE",
-        "L-1EGU",
-        "L-1EPKYLEPK",
-        "L-1ERYSH1"
-      ],
-      "conceptIds": [
-        "ARTIFICIAL_INTELLIGENCE",
-        "BODY",
-        "FINGER",
-        "HAND",
-        "HANDMADE",
-        "PALM"
-      ],
-      "morphemeIds": [],
-      "productivity": {
-        "totalLexemes": 5,
-        "corpusFrequency": 11294,
-        "mostFrequentLexemeId": "L-1E"
-      },
-      "notes": "El ailesi (Ӏэ). Somatik kok. Corpus: 11.294 kullanim."
-    },
-    "etymologyType": "native",
-    "senseNumber": 1,
-    "notes": "homonim (anlam 1)"
-  },
-  {
     "id": "HUV3-IЭДЭБЫНШАГЪЭ",
     "form": "Ӏэдэбыншагъэ",
     "partOfSpeech": "noun",
@@ -627125,59 +627130,6 @@
     "etymologyType": "native"
   },
   {
-    "id": "HUV3-IЭЗАГЪЭ",
-    "form": "Ӏэзагъэ",
-    "partOfSpeech": "noun",
-    "conceptId": "EL_SANATI",
-    "translations": {
-      "tr": "beceri, ustalık",
-      "ar": "حرفة",
-      "en": "ii witchcraft",
-      "ru": "ii знахарство"
-    },
-    "ipa": "/ʔɐzaʁɐ/",
-    "rootIds": [
-      "R-1E",
-      "R-A"
-    ],
-    "literalMeaning": "beceri, ustalık",
-    "literalMeaningSource": "translations.tr (yuksek)",
-    "examples": [
-      "*ЩӀалэм и Ӏэзагъэр шыгъэджэгум щигъэлъэгъуащ.",
-      "Ӏэзагъэ еджакӀуэ"
-    ],
-    "root": "Ӏэ",
-    "wordFamilyId": "WF-1E",
-    "wordFamily": {
-      "id": "WF-1E",
-      "lexemeIds": [
-        "L-1E",
-        "L-1EPE",
-        "L-1EGU",
-        "L-1EPKYLEPK",
-        "L-1ERYSH1"
-      ],
-      "conceptIds": [
-        "ARTIFICIAL_INTELLIGENCE",
-        "BODY",
-        "FINGER",
-        "HAND",
-        "HANDMADE",
-        "PALM"
-      ],
-      "morphemeIds": [],
-      "productivity": {
-        "totalLexemes": 5,
-        "corpusFrequency": 11294,
-        "mostFrequentLexemeId": "L-1E"
-      },
-      "notes": "El ailesi (Ӏэ). Somatik kok. Corpus: 11.294 kullanim."
-    },
-    "etymologyType": "native",
-    "senseNumber": 1,
-    "notes": "homonim (anlam 1)"
-  },
-  {
     "id": "HUV3-IЭЗЭНЫГЪЭ",
     "form": "Ӏэзэныгъэ",
     "partOfSpeech": "noun",
@@ -627220,105 +627172,6 @@
       "notes": "El ailesi (Ӏэ). Somatik kok. Corpus: 11.294 kullanim."
     },
     "etymologyType": "native"
-  },
-  {
-    "id": "HUV3-IЭМЫЩIЭ",
-    "form": "ӀэмыщӀэ",
-    "partOfSpeech": "noun",
-    "conceptId": "VUCUT",
-    "translations": {
-      "tr": "bir avuç",
-      "en": "a handful of; fist",
-      "ru": "горсть; кулак"
-    },
-    "ipa": "/ʔɐmǝɕʼɐ/",
-    "rootIds": [
-      "R-1E",
-      "R-A"
-    ],
-    "literalMeaning": "bir avuç",
-    "literalMeaningSource": "translations.tr (yuksek)",
-    "examples": [
-      "*Унэм сыкъэсыжу си ӀэмыщӀэр щызэтесхыжам си дыщэ тумэным псыр къыпыжырт, си Ӏэгур пщӀэнтӀауэ бахъэр кърихырт. {{автор|kbd|имяавтора=Н. З.}}",
-      "*Уи ӀэмыщӀэ имылъым ущымыгугъ. {{тхыгъэ|kbd|цӀэ=Псжь.}}"
-    ],
-    "root": "Ӏэ",
-    "wordFamilyId": "WF-1E",
-    "wordFamily": {
-      "id": "WF-1E",
-      "lexemeIds": [
-        "L-1E",
-        "L-1EPE",
-        "L-1EGU",
-        "L-1EPKYLEPK",
-        "L-1ERYSH1"
-      ],
-      "conceptIds": [
-        "ARTIFICIAL_INTELLIGENCE",
-        "BODY",
-        "FINGER",
-        "HAND",
-        "HANDMADE",
-        "PALM"
-      ],
-      "morphemeIds": [],
-      "productivity": {
-        "totalLexemes": 5,
-        "corpusFrequency": 11294,
-        "mostFrequentLexemeId": "L-1E"
-      },
-      "notes": "El ailesi (Ӏэ). Somatik kok. Corpus: 11.294 kullanim."
-    },
-    "etymologyType": "native",
-    "senseNumber": 1,
-    "notes": "homonim (anlam 1)"
-  },
-  {
-    "id": "HUV3-IЭПЫIЭГЪУ",
-    "form": "ӀэпыӀэгъу",
-    "partOfSpeech": "noun",
-    "conceptId": "MESLEK",
-    "translations": {
-      "tr": "ASİSTAN",
-      "en": "help; aid; assistance"
-    },
-    "ipa": "/ʔɐpǝʔɐʁʷ/",
-    "rootIds": [
-      "R-1E",
-      "R-A"
-    ],
-    "literalMeaning": "yardımcı",
-    "literalMeaningSource": "translations.tr (yuksek)",
-    "root": "Ӏэ",
-    "wordFamilyId": "WF-1E",
-    "wordFamily": {
-      "id": "WF-1E",
-      "lexemeIds": [
-        "L-1E",
-        "L-1EPE",
-        "L-1EGU",
-        "L-1EPKYLEPK",
-        "L-1ERYSH1"
-      ],
-      "conceptIds": [
-        "ARTIFICIAL_INTELLIGENCE",
-        "BODY",
-        "FINGER",
-        "HAND",
-        "HANDMADE",
-        "PALM"
-      ],
-      "morphemeIds": [],
-      "productivity": {
-        "totalLexemes": 5,
-        "corpusFrequency": 11294,
-        "mostFrequentLexemeId": "L-1E"
-      },
-      "notes": "El ailesi (Ӏэ). Somatik kok. Corpus: 11.294 kullanim."
-    },
-    "etymologyType": "native",
-    "senseNumber": 1,
-    "notes": "homonim (anlam 1)"
   },
   {
     "id": "HUV3-IЭПЭПIЭ",
@@ -627410,60 +627263,6 @@
     "etymologyType": "native"
   },
   {
-    "id": "HUV3-IЭРАМЭ",
-    "form": "Ӏэрамэ",
-    "partOfSpeech": "noun",
-    "conceptId": "UNKNOWN",
-    "translations": {
-      "tr": "demet, kucak",
-      "en": "Bundle, bunch",
-      "ru": "Пучок",
-      "ar": "مجموعة"
-    },
-    "ipa": "/ʔɐramɐ/",
-    "rootIds": [
-      "R-1E",
-      "R-A"
-    ],
-    "literalMeaning": "demet, kucak",
-    "literalMeaningSource": "translations.tr (yuksek)",
-    "examples": [
-      "*Шы соку Ӏэрамэ.",
-      "*Цы Ӏэрамэ.",
-      "*Пшэ Ӏэрамэхэр."
-    ],
-    "root": "Ӏэ",
-    "wordFamilyId": "WF-1E",
-    "wordFamily": {
-      "id": "WF-1E",
-      "lexemeIds": [
-        "L-1E",
-        "L-1EPE",
-        "L-1EGU",
-        "L-1EPKYLEPK",
-        "L-1ERYSH1"
-      ],
-      "conceptIds": [
-        "ARTIFICIAL_INTELLIGENCE",
-        "BODY",
-        "FINGER",
-        "HAND",
-        "HANDMADE",
-        "PALM"
-      ],
-      "morphemeIds": [],
-      "productivity": {
-        "totalLexemes": 5,
-        "corpusFrequency": 11294,
-        "mostFrequentLexemeId": "L-1E"
-      },
-      "notes": "El ailesi (Ӏэ). Somatik kok. Corpus: 11.294 kullanim."
-    },
-    "etymologyType": "native",
-    "senseNumber": 1,
-    "notes": "homonim (anlam 1)"
-  },
-  {
     "id": "HUV3-IЭРЫСЭ",
     "form": "Ӏэрысэ",
     "partOfSpeech": "noun",
@@ -627512,59 +627311,6 @@
       "notes": "El ailesi (Ӏэ). Somatik kok. Corpus: 11.294 kullanim."
     },
     "etymologyType": "native"
-  },
-  {
-    "id": "HUV3-IЭТЭ",
-    "form": "Ӏэтэ",
-    "partOfSpeech": "noun",
-    "conceptId": "YIĞIN",
-    "translations": {
-      "tr": "demet",
-      "en": "Shock, stook, stack",
-      "ru": "Одновозный стог",
-      "ar": "كومة"
-    },
-    "ipa": "/ʔɐtɐ/",
-    "rootIds": [
-      "R-1E",
-      "R-A"
-    ],
-    "literalMeaning": "demet",
-    "literalMeaningSource": "translations.tr (yuksek)",
-    "examples": [
-      "Ӏэтэр Ӏэмбатэ щхьэкӀэ зыгъэфыжам нэхъей. (погов. )"
-    ],
-    "examplesSource": "1.Ady-Ady_AP.json (◊)",
-    "root": "Ӏэ",
-    "wordFamilyId": "WF-1E",
-    "wordFamily": {
-      "id": "WF-1E",
-      "lexemeIds": [
-        "L-1E",
-        "L-1EPE",
-        "L-1EGU",
-        "L-1EPKYLEPK",
-        "L-1ERYSH1"
-      ],
-      "conceptIds": [
-        "ARTIFICIAL_INTELLIGENCE",
-        "BODY",
-        "FINGER",
-        "HAND",
-        "HANDMADE",
-        "PALM"
-      ],
-      "morphemeIds": [],
-      "productivity": {
-        "totalLexemes": 5,
-        "corpusFrequency": 11294,
-        "mostFrequentLexemeId": "L-1E"
-      },
-      "notes": "El ailesi (Ӏэ). Somatik kok. Corpus: 11.294 kullanim."
-    },
-    "etymologyType": "native",
-    "senseNumber": 1,
-    "notes": "homonim (anlam 1)"
   },
   {
     "id": "HUV3-IЭЩЭ",
@@ -627619,7 +627365,9 @@
     "wordFamilyId": "WF-1E",
     "etymologyType": "native",
     "senseNumber": 1,
-    "notes": "homonim (anlam 1)"
+    "notes": "homonim (anlam 1)",
+    "homonymGroupId": "HG-Ӏэщэ",
+    "homonymIndex": 1
   },
   {
     "id": "HUV3-IЭЩХЬЭ",
@@ -627671,7 +627419,9 @@
     },
     "etymologyType": "native",
     "senseNumber": 1,
-    "notes": "homonim (anlam 1)"
+    "notes": "homonim (anlam 1)",
+    "homonymGroupId": "HG-Ӏэщхьэ",
+    "homonymIndex": 1
   },
   {
     "id": "HUV4-КӀАПЭ",
@@ -635966,7 +635716,9 @@
     "meaning": "1. броский, хорошо видимый, яркий / Нэм зэуэ къыфӀэнэ, нэм ӀупщӀу илъагъу, нэм къыщӀэджагуэ. ◊ {Инал:} - Гъатхэпэ мазэр.. къабзэмэ, наӀуэмэ, щхъуантӀа",
     "dialect": "kbd",
     "dialectNote": "Kbd kaynakli",
-    "senseNumber": 1
+    "senseNumber": 1,
+    "homonymGroupId": "HG-наӀуэ",
+    "homonymIndex": 1
   },
   {
     "id": "KAV-ПЫУПЩӀЫН",
@@ -636155,96 +635907,6 @@
     "wordFamilyId": "WF-SHCH"
   },
   {
-    "id": "KAV-ГУЕМЫӀУ",
-    "form": "гуемыӀу",
-    "partOfSpeech": "noun",
-    "conceptId": "UNPLEASANT",
-    "translations": {
-      "ru": "неприятный",
-      "tr": "Tatsız, nahoş",
-      "en": "rude, expletive."
-    },
-    "ipa": "/gʷеmǝʔʷ/",
-    "rootIds": [
-      "R-GU"
-    ],
-    "notes": "Kaynak: 5.Ady-Rus_Qarden.json, 1.Ady-Ady_AP.json, 19.Kbd-Ru-2-Jonty.json | homonim (anlam 1)",
-    "examples": [
-      "Ерул гуемыӀу псалъэхэр къыжьэдэлъэлъу уэрамымкӀэ ехырт. КӀ. Т. ГуемыӀу епэсын нагрубить."
-    ],
-    "examplesSource": "1.Ady-Ady_AP.json (◊)",
-    "literalMeaning": "kötü",
-    "literalMeaningSource": "ru->tr (KAVRAM_ etiketi) (orta)",
-    "audioUrl": "гу244гуемыӏу.ogg",
-    "root": "гу",
-    "wordFamilyId": "WF-GU",
-    "wordFamily": {
-      "id": "WF-GU",
-      "lexemeIds": [
-        "L-GUF1E",
-        "L-GUGHE",
-        "L-GUBZHYGE",
-        "L-GUETYNEGHE",
-        "L-GUF1EN"
-      ],
-      "conceptIds": [
-        "ANGER",
-        "ANXIETY",
-        "HOPE",
-        "INTELLIGENCE",
-        "JOY",
-        "LOYALTY",
-        "SOUL_DEPTH",
-        "THOUGHT"
-      ],
-      "morphemeIds": [
-        "M-F1E",
-        "M-GHE",
-        "M-BZHYGE",
-        "M-F1EN"
-      ],
-      "productivity": {
-        "totalLexemes": 47,
-        "corpusFrequency": 22788,
-        "mostFrequentLexemeId": "L-GUF1E"
-      },
-      "notes": "En uretken somatik kok ailesi. 22 bilesik yapi korpusta dogrulandi."
-    },
-    "etymologyType": "native",
-    "conceptNorm": "QUALITY_ADJ",
-    "pos": "прил",
-    "meaning": "гуемыӀу псалъэ грубое, бранное слово. ◊ Ерул гуемыӀу псалъэхэр къыжьэдэлъэлъу уэрамымкӀэ ехырт. КӀ. Т. ГуемыӀу епэсын нагрубить.",
-    "dialect": "kbd",
-    "dialectNote": "Kbd kaynakli",
-    "senseNumber": 1
-  },
-  {
-    "id": "KAV-ТӀЭКӀУ",
-    "form": "тӀэкӀу",
-    "partOfSpeech": "noun",
-    "conceptId": "A_LITTLE",
-    "translations": {
-      "ru": "немного",
-      "tr": "biraz, azıcık",
-      "ar": "قليل، يسير",
-      "en": "i insignificant, small"
-    },
-    "ipa": "/tʼɐkʷʼ/",
-    "rootIds": [],
-    "notes": "Kaynak: 19.Kbd-Ru-2-Jonty.json, 5.Ady-Rus_Qarden.json, 20.Kbd-Ru-Jonty.json | homonim (anlam 1)",
-    "examples": [
-      "Гъуэгуанэм щыщу къэнэжа тӀэкӀур икӀуу къуажэм дыхьэжыныр хуабжьу къехьэлъэкӀыу щытт лӀыжьыр. Т. Хь.",
-      "Нэхущым тӀэкӀу зызыгъэсабыра уэшхым къыщӀидзэжауэ жьгъейуэ, Ӏуву, жьы щӀыӀэ щӀэту къешхырт. Къ. Хь. ТӀэкӀу щыжаӀэм тӀэкӀу щыщыӀэщ. (погов. )",
-      "ТӀэкӀу дэкӀри.. лӀы хэщӀыхьа гуэр кърашэлӀащ.. фэндырэм. Ж. Б."
-    ],
-    "examplesSource": "1.Ady-Ady_AP.json (◊)",
-    "literalMeaning": "azca, biraz",
-    "literalMeaningSource": "ru->tr (KAVRAM_ etiketi) (orta)",
-    "etymologyType": "unknown",
-    "conceptNorm": "QUANTITY_FEW",
-    "senseNumber": 1
-  },
-  {
     "id": "KAV-ЗАНЩӀЭУ",
     "form": "занщӀэу",
     "partOfSpeech": "noun",
@@ -636271,7 +635933,9 @@
     "wordFamilyId": "WF-PSY",
     "etymologyType": "native",
     "conceptNorm": "SPEED_FAST",
-    "senseNumber": 1
+    "senseNumber": 1,
+    "homonymGroupId": "HG-занщӀэу",
+    "homonymIndex": 1
   },
   {
     "id": "KAV-ДЭӀУЭН",
@@ -636295,7 +635959,9 @@
     "literalMeaningSource": "ru->tr (KAVRAM_ etiketi) (orta)",
     "etymologyType": "unknown",
     "conceptNorm": "GRAMMAR_SPATIAL",
-    "senseNumber": 1
+    "senseNumber": 1,
+    "homonymGroupId": "HG-дэӀуэн",
+    "homonymIndex": 1
   },
   {
     "id": "KAV-КЪЫГУРЫӀУЭН",
@@ -636445,7 +636111,9 @@
     ],
     "etymologyType": "unknown",
     "conceptNorm": "ACTION_VERB",
-    "senseNumber": 1
+    "senseNumber": 1,
+    "homonymGroupId": "HG-къэкӀын",
+    "homonymIndex": 1
   },
   {
     "id": "KAV-НЭЩӀ",
@@ -636570,7 +636238,9 @@
     "literalMeaningSource": "ru->tr (KAVRAM_ etiketi) (orta)",
     "etymologyType": "unknown",
     "conceptNorm": "QUALITY_ADJ",
-    "senseNumber": 1
+    "senseNumber": 1,
+    "homonymGroupId": "HG-пӀейтей",
+    "homonymIndex": 1
   },
   {
     "id": "KAV-КӀАГУЭ",
@@ -636599,7 +636269,9 @@
     "meaning": "I 1. куцый / Зи кӀэр кӀэщӀ псэущхьэ. ◊ Жумэрэн кӀагуэр гупсысэну и гъуэм ихьэжащ. фольк. Хьэ кӀагуитӀыр и бгъуитӀым {Бэдынокъуэ} щоджэгу. Къэб. п. и а",
     "dialect": "kbd",
     "dialectNote": "Kbd kaynakli",
-    "senseNumber": 1
+    "senseNumber": 1,
+    "homonymGroupId": "HG-кӀагуэ",
+    "homonymIndex": 1
   },
   {
     "id": "KAV-ГУРЭПКӀЫРЭ",
@@ -636840,59 +636512,6 @@
     "dialectNote": "Kbd kaynakli"
   },
   {
-    "id": "KAV-ӀЭСЭ",
-    "form": "Ӏэсэ",
-    "partOfSpeech": "noun",
-    "conceptId": "KAVRAM_СПОКОЙНЫЙ",
-    "translations": {
-      "ru": "спокойный",
-      "tr": "uslu, alışkın",
-      "en": "tranquil"
-    },
-    "ipa": "/ʔɐsɐ/",
-    "rootIds": [
-      "R-1E",
-      "R-A"
-    ],
-    "notes": "Kaynak: 5.Ady-Rus_Qarden.json, 1.Ady-Ady_AP.json, 19.Kbd-Ru-2-Jonty.json | homonim (anlam 1)",
-    "literalMeaning": "HUZURLU",
-    "literalMeaningSource": "ru->tr (KAVRAM_ etiketi) (orta)",
-    "examples": [
-      "*ЩӀалэ Ӏэсэ.",
-      "*Жэм Ӏэсэ."
-    ],
-    "root": "Ӏэ",
-    "wordFamily": {
-      "id": "WF-1E",
-      "lexemeIds": [
-        "L-1E",
-        "L-1EPE",
-        "L-1EGU",
-        "L-1EPKYLEPK",
-        "L-1ERYSH1"
-      ],
-      "conceptIds": [
-        "ARTIFICIAL_INTELLIGENCE",
-        "BODY",
-        "FINGER",
-        "HAND",
-        "HANDMADE",
-        "PALM"
-      ],
-      "morphemeIds": [],
-      "productivity": {
-        "totalLexemes": 5,
-        "corpusFrequency": 11294,
-        "mostFrequentLexemeId": "L-1E"
-      },
-      "notes": "El ailesi (Ӏэ). Somatik kok. Corpus: 11.294 kullanim."
-    },
-    "wordFamilyId": "WF-1E",
-    "etymologyType": "native",
-    "conceptNorm": "STATE_CALM",
-    "senseNumber": 1
-  },
-  {
     "id": "KAV-ТХЪУРЫМБЕЙ",
     "form": "тхъурымбей",
     "partOfSpeech": "noun",
@@ -636991,7 +636610,9 @@
     "literalMeaningSource": "ru->tr (KAVRAM_ etiketi) (orta)",
     "etymologyType": "unknown",
     "conceptNorm": "GRAMMAR_SPATIAL",
-    "senseNumber": 1
+    "senseNumber": 1,
+    "homonymGroupId": "HG-къыщӀэкӀын",
+    "homonymIndex": 1
   },
   {
     "id": "KAV-КЪЭУЦЭРЭФЫН",
@@ -637079,71 +636700,6 @@
     ],
     "etymologyType": "unknown",
     "conceptNorm": "QUALITY_ADJ"
-  },
-  {
-    "id": "KAV-ГУЩЫКӀЫГЪУЭ",
-    "form": "гущыкӀыгъуэ",
-    "partOfSpeech": "noun",
-    "conceptId": "DISGUSTING",
-    "translations": {
-      "ru": "отвратительный",
-      "tr": "hayal kırıklığı",
-      "ar": "خيبة أمل",
-      "en": "disgusting"
-    },
-    "ipa": "/gʷɕǝkʼǝʁʷɐ/",
-    "rootIds": [
-      "R-GU"
-    ],
-    "notes": "Kaynak: 1.Ady-Ady_AP.json, 5.Ady-Rus_Qarden.json, 19.Kbd-Ru-2-Jonty.json | homonim (anlam 1)",
-    "literalMeaning": "unpleasant, disgusting",
-    "literalMeaningSource": "ru->tr (KAVRAM_ etiketi) (orta)",
-    "audioUrl": "гу518гущыкӏыгъуэ.ogg",
-    "examples": [
-      "*ЦӀыху гущыкӀыгъуэ.",
-      "*Ӏуэху гущыкӀыгъуэ."
-    ],
-    "root": "гу",
-    "wordFamilyId": "WF-GU",
-    "wordFamily": {
-      "id": "WF-GU",
-      "lexemeIds": [
-        "L-GUF1E",
-        "L-GUGHE",
-        "L-GUBZHYGE",
-        "L-GUETYNEGHE",
-        "L-GUF1EN"
-      ],
-      "conceptIds": [
-        "ANGER",
-        "ANXIETY",
-        "HOPE",
-        "INTELLIGENCE",
-        "JOY",
-        "LOYALTY",
-        "SOUL_DEPTH",
-        "THOUGHT"
-      ],
-      "morphemeIds": [
-        "M-F1E",
-        "M-GHE",
-        "M-BZHYGE",
-        "M-F1EN"
-      ],
-      "productivity": {
-        "totalLexemes": 47,
-        "corpusFrequency": 22788,
-        "mostFrequentLexemeId": "L-GUF1E"
-      },
-      "notes": "En uretken somatik kok ailesi. 22 bilesik yapi korpusta dogrulandi."
-    },
-    "etymologyType": "native",
-    "conceptNorm": "QUALITY_ADJ",
-    "pos": "прил",
-    "meaning": "отвратительный, омерзительный / Гур зыбгъэдэмыхьэу, гум къимыщтэ. ЦӀыху гущыкӀыгъуэ. Ӏуэху гущыкӀыгъуэ.",
-    "dialect": "kbd",
-    "dialectNote": "Kbd kaynakli",
-    "senseNumber": 1
   },
   {
     "id": "KAV-ИГЪАЩӀЭКӀЭ",
@@ -637353,7 +636909,9 @@
     "wordFamilyId": "WF-SHHA",
     "etymologyType": "native",
     "conceptNorm": "QUALITY_ADJ",
-    "senseNumber": 1
+    "senseNumber": 1,
+    "homonymGroupId": "HG-Ӏушэ",
+    "homonymIndex": 1
   },
   {
     "id": "KAV-ӀЭГУБЖЬЭ",
@@ -637451,114 +637009,9 @@
     "etymologyType": "unknown",
     "conceptNorm": "ПРИЁМ",
     "wordFamilyId": "WF-LEZH",
-    "senseNumber": 1
-  },
-  {
-    "id": "KAV-НЭГЪУЭЩӀ",
-    "form": "нэгъуэщӀ",
-    "partOfSpeech": "noun",
-    "conceptId": "OTHER",
-    "translations": {
-      "ru": "другой",
-      "tr": "BAŞKA",
-      "ar": "آخر",
-      "en": "another, other"
-    },
-    "ipa": "/nɐʁʷɐɕʼ/",
-    "rootIds": [
-      "R-NE"
-    ],
-    "notes": "Kaynak: 1.Ady-Ady_AP.json, 19.Kbd-Ru-2-Jonty.json, 20.Kbd-Ru-Jonty.json | homonim (anlam 1)",
-    "examples": [
-      "{Долэт:} - Самыгъэпса-лъэми здэнт, нэгъуэщӀ мыхъуми, моуэ я щӀыбагъ сыдагъэувэтэмэ. КӀ. А. НэгъуэщӀ къинэмыщӀ и так далее."
-    ],
-    "examplesSource": "1.Ady-Ady_AP.json (◊)",
-    "literalMeaning": "BAŞKA",
-    "literalMeaningSource": "ru->tr (KAVRAM_ etiketi) (orta)",
-    "root": "нэ",
-    "wordFamilyId": "WF-NE-DIGER",
-    "wordFamily": {
-      "id": "WF-NE",
-      "lexemeIds": [
-        "L-KAV-???????",
-        "L-KAV-???????",
-        "L-KAV-??????????",
-        "L-NAPE",
-        "L-NAPS",
-        "L-NAT1E",
-        "L-NE",
-        "L-NE-BRIGHTNESS",
-        "L-NE-JOY",
-        "L-NE-LIGHT",
-        "L-NEBZHYTS",
-        "L-NEF1",
-        "L-NEGHABE",
-        "L-NEGU",
-        "L-NEK1U",
-        "L-NEMYS",
-        "L-NESYN2"
-      ],
-      "conceptIds": [
-        "BLIND",
-        "CHEEK",
-        "EVIL_EYE",
-        "EYEBROW",
-        "EYELASH",
-        "FACE",
-        "KINDHEARTED",
-        "KINDNESS",
-        "LIE",
-        "LIGHT",
-        "MASCARA",
-        "MY_FACE",
-        "ONE_EYED",
-        "SHARP_EYE",
-        "TEAR",
-        "TEARFUL",
-        "TEARS"
-      ],
-      "morphemeIds": [
-        "M-PSE",
-        "M-GU"
-      ],
-      "productivity": {
-        "totalLexemes": 25,
-        "corpusFrequency": 21883
-      },
-      "notes": "Duyu organi koku. нэ + гу = yuz, нэ + псэ = gozyasi"
-    },
-    "etymologyType": "native",
-    "conceptNorm": "QUALITY_ADJ",
-    "pos": "прил",
-    "meaning": "другой, иной / Армыра; нэмыщӀ. Мыр хъунукъым, нэгъуэщӀ къэхь. НэгъуэщӀ мыхъуми хотя бы. ◊ {Долэт:} - Самыгъэпса-лъэми здэнт, нэгъуэщӀ мыхъуми, моуэ я",
-    "dialect": "kbd",
-    "dialectNote": "Kbd kaynakli",
-    "WF": "WF-NE-DIGER",
-    "senseNumber": 1
-  },
-  {
-    "id": "KAV-КЪЕКӀУ",
-    "form": "къекӀу",
-    "partOfSpeech": "noun",
-    "conceptId": "STATELY",
-    "translations": {
-      "ru": "статный",
-      "tr": "ALIMLI",
-      "en": "beautiful, handsome",
-      "ar": "يأتي إلـى/ يناسب، يلائم"
-    },
-    "ipa": "/qеkʷʼ/",
-    "rootIds": [],
-    "notes": "Kaynak: 1.Ady-Ady_AP.json, 20.Kbd-Ru-Jonty.json, 19.Kbd-Ru-2-Jonty.json | homonim (anlam 1)",
-    "examples": [
-      "ЦӀыху къекӀу. Унэ къекӀу."
-    ],
-    "examplesSource": "1.Ady-Ady_AP.json (◊)",
-    "literalMeaning": "handsome, slim",
-    "literalMeaningSource": "ru->tr (KAVRAM_ etiketi) (orta)",
-    "etymologyType": "unknown",
-    "conceptNorm": "QUALITY_ADJ",
-    "senseNumber": 1
+    "senseNumber": 1,
+    "homonymGroupId": "HG-зэӀущӀэ",
+    "homonymIndex": 1
   },
   {
     "id": "KAV-ЗЭХЭЩӀЫКӀ",
@@ -637822,30 +637275,6 @@
     "conceptNorm": "ЦӀАМПӀЫРЭ ДЖЭГУН"
   },
   {
-    "id": "KAV-ИӀЭН",
-    "form": "иӀэн",
-    "partOfSpeech": "noun",
-    "conceptId": "KAVRAM_ЕСТЬ",
-    "translations": {
-      "ru": "есть",
-      "tr": "sahip olmak, var olmak",
-      "ar": "يملك، يمتلك، يقتني، يتمتع/ يصبغ، يدهن، يلون",
-      "en": "i  move. ch. paint, paint smth."
-    },
-    "ipa": "/iʔɐn/",
-    "rootIds": [],
-    "notes": "Kaynak: 19.Kbd-Ru-2-Jonty.json, 20.Kbd-Ru-Jonty.json, 5.Ady-Rus_Qarden.json | homonim (anlam 1)",
-    "literalMeaning": "yemek",
-    "literalMeaningSource": "ru->tr (KAVRAM_ etiketi) (orta)",
-    "examples": [
-      "*Чэсейр плъыжьу иӀэн.",
-      "*Щхьэцыр пкъынэкӀэ иӀэн."
-    ],
-    "etymologyType": "unknown",
-    "conceptNorm": "ACTION_VERB",
-    "senseNumber": 1
-  },
-  {
     "id": "KAV-ИКӀЭ",
     "form": "икӀэ",
     "partOfSpeech": "noun",
@@ -637872,7 +637301,9 @@
     "wordFamilyId": "WF-BZE",
     "etymologyType": "native",
     "conceptNorm": "QUALITY_BAD",
-    "senseNumber": 1
+    "senseNumber": 1,
+    "homonymGroupId": "HG-икӀэ",
+    "homonymIndex": 1
   },
   {
     "id": "KAV-БЭЯН",
@@ -638182,33 +637613,6 @@
     "meaning": "доходчивый, легко усваиваемый / ЗэхэщӀыкӀыгъуафӀэ. Бзэ гурыӀуэгъуафӀэ.",
     "dialect": "kbd",
     "dialectNote": "Kbd kaynakli"
-  },
-  {
-    "id": "KAV-ЖЫӀЭГЪУЭ",
-    "form": "жыӀэгъуэ",
-    "partOfSpeech": "noun",
-    "conceptId": "KAVRAM_ФРАЗА",
-    "translations": {
-      "ru": "фраза",
-      "tr": "sözcük grubu",
-      "ar": "عبارة",
-      "en": "i 1. terms; 2. aphorism."
-    },
-    "ipa": "/жǝʔɐʁʷɐ/",
-    "rootIds": [
-      "R-ZHYI"
-    ],
-    "notes": "Kaynak: 1.Ady-Ady_AP.json, 19.Kbd-Ru-2-Jonty.json, 5.Ady-Rus_Qarden.json | homonim (anlam 1)",
-    "literalMeaning": "saying, phrase",
-    "literalMeaningSource": "ru->tr (KAVRAM_ etiketi) (orta)",
-    "examples": [
-      "*Залым къыжьэдэлъэта жыӀэгъуэм нэхъри хегъахъуэ Мэзан и гурыщхъуэм.  {{тхыгъэ|kbd|цӀэ=Ӏуащхь.}}",
-      "*Хэт зымыщӀэжыр Хьэжбэчыр и жыӀэгъуэ дахэхэр!  {{автор|kbd|имяавтора=Щ. Ӏ.}}"
-    ],
-    "wordFamilyId": "WF-ZHYI",
-    "etymologyType": "native",
-    "conceptNorm": "ФРАЗА",
-    "senseNumber": 1
   },
   {
     "id": "KAV-ХЪЫӀУ",
@@ -638762,7 +638166,9 @@
     "literalMeaningSource": "ru->tr (KAVRAM_ etiketi) (orta)",
     "etymologyType": "unknown",
     "conceptNorm": "QUALITY_ADJ",
-    "senseNumber": 1
+    "senseNumber": 1,
+    "homonymGroupId": "HG-зэкӀэлъыкӀуэ",
+    "homonymIndex": 1
   },
   {
     "id": "KAV-ФАДЭРЫХЪЫЖЬЭ",
@@ -639108,7 +638514,9 @@
     "wordFamilyId": "WF-PE",
     "etymologyType": "native",
     "conceptNorm": "QUALITY_ADJ",
-    "senseNumber": 1
+    "senseNumber": 1,
+    "homonymGroupId": "HG-папцӀэ",
+    "homonymIndex": 1
   },
   {
     "id": "KAV-ЩӀЫБЫКЪУЭ",
@@ -639324,71 +638732,6 @@
     ],
     "etymologyType": "unknown",
     "conceptNorm": "GRAMMAR_SPATIAL"
-  },
-  {
-    "id": "KAV-ГУКЪЭКӀ",
-    "form": "гукъэкӀ",
-    "partOfSpeech": "noun",
-    "conceptId": "KAVRAM_ДЕЛО",
-    "translations": {
-      "ru": "дело",
-      "tr": "ESİN",
-      "ar": "خاطر، خاطرة",
-      "en": "thought, idea"
-    },
-    "ipa": "/gʷqɐkʼ/",
-    "rootIds": [
-      "R-GU"
-    ],
-    "notes": "Kaynak: 19.Kbd-Ru-2-Jonty.json, 1.Ady-Ady_AP.json | homonim (anlam 1)",
-    "examples": [
-      "Зы гукъэкӀым адрейр имычэзууэ къытегуплӀэрти псори зэхэпшэхъуэжырт. Ӏуащхь.",
-      "гукъэкӀ"
-    ],
-    "examplesSource": "1.Ady-Ady_AP.json (◊)",
-    "literalMeaning": "iş, mesele",
-    "literalMeaningSource": "ru->tr (KAVRAM_ etiketi) (orta)",
-    "audioUrl": "гу278гукъэкӏ.ogg",
-    "root": "гу",
-    "wordFamilyId": "WF-GU",
-    "wordFamily": {
-      "id": "WF-GU",
-      "lexemeIds": [
-        "L-GUF1E",
-        "L-GUGHE",
-        "L-GUBZHYGE",
-        "L-GUETYNEGHE",
-        "L-GUF1EN"
-      ],
-      "conceptIds": [
-        "ANGER",
-        "ANXIETY",
-        "HOPE",
-        "INTELLIGENCE",
-        "JOY",
-        "LOYALTY",
-        "SOUL_DEPTH",
-        "THOUGHT"
-      ],
-      "morphemeIds": [
-        "M-F1E",
-        "M-GHE",
-        "M-BZHYGE",
-        "M-F1EN"
-      ],
-      "productivity": {
-        "totalLexemes": 47,
-        "corpusFrequency": 22788,
-        "mostFrequentLexemeId": "L-GUF1E"
-      },
-      "notes": "En uretken somatik kok ailesi. 22 bilesik yapi korpusta dogrulandi."
-    },
-    "etymologyType": "native",
-    "conceptNorm": "ДЕЛО",
-    "meaning": "1. мысль, идея / Щхьэм къихьа гупсысэ. ◊ Зы гукъэкӀым адрейр имычэзууэ къытегуплӀэрти псори зэхэпшэхъуэжырт. Ӏуащхь. 2. внимание, забота / Гулъытэ. Гу",
-    "dialect": "kbd",
-    "dialectNote": "Kbd kaynakli",
-    "senseNumber": 1
   },
   {
     "id": "KAV-ЕМЫНЭРЫЛЪХУ",
@@ -641020,7 +640363,9 @@
     ],
     "etymologyType": "unknown",
     "conceptNorm": "ИЗЪЯН",
-    "senseNumber": 1
+    "senseNumber": 1,
+    "homonymGroupId": "HG-щыщӀэныгъэ",
+    "homonymIndex": 1
   },
   {
     "id": "KAV-КЪЫЗЭРЫГУЭКӀ",
@@ -641065,7 +640410,9 @@
     "literalMeaningSource": "ru->tr (KAVRAM_ etiketi) (orta)",
     "etymologyType": "unknown",
     "conceptNorm": "EARTH_LAND",
-    "senseNumber": 1
+    "senseNumber": 1,
+    "homonymGroupId": "HG-щӀыгулъ",
+    "homonymIndex": 1
   },
   {
     "id": "KAV-ХЪУЭПСКӀ",
@@ -641341,29 +640688,6 @@
     ],
     "etymologyType": "unknown",
     "conceptNorm": "СДЕРЖИВАТЬ СЕБЯ"
-  },
-  {
-    "id": "KAV-ТӀАСЭ",
-    "form": "тӀасэ",
-    "partOfSpeech": "noun",
-    "conceptId": "BELOVED",
-    "translations": {
-      "ru": "тӀасэ",
-      "en": "cute",
-      "tr": "DEĞERLİ, PAHALI"
-    },
-    "ipa": "/tʼasɐ/",
-    "rootIds": [],
-    "notes": "Kaynak: 5.Ady-Rus_Qarden.json, 1.Ady-Ady_AP.json | homonim (anlam 1)",
-    "examples": [
-      "Си Хьэмид, тӀасэ, цӀыхугъэ уиӀэмэ, пӀалъэр къэсащи, хыумыгъэтӀасэ. Щ. А. Хэжае, си тӀасэ, псори мамыращ, усэрей бзу цӀыкӀухэри абгъуэм екӀуэжащ. фольк."
-    ],
-    "examplesSource": "1.Ady-Ady_AP.json (◊)",
-    "literalMeaning": "Sevimli, tatlı",
-    "literalMeaningSource": "ayni form (translations.tr) (orta)",
-    "etymologyType": "unknown",
-    "conceptNorm": "ТӀАСЭ",
-    "senseNumber": 1
   },
   {
     "id": "KAV-КЪЫХЭБЕЛДЖЫЛЫКӀ",
@@ -641764,7 +641088,9 @@
     ],
     "etymologyType": "unknown",
     "conceptNorm": "ACTION_VERB",
-    "senseNumber": 1
+    "senseNumber": 1,
+    "homonymGroupId": "HG-унэтӀын",
+    "homonymIndex": 1
   },
   {
     "id": "KAV-ШЫЛЫЧ",
@@ -642182,7 +641508,9 @@
     "wordFamilyId": "WF-A",
     "etymologyType": "native",
     "conceptNorm": "GRAMMAR_SPATIAL",
-    "senseNumber": 1
+    "senseNumber": 1,
+    "homonymGroupId": "HG-хэукӀэн",
+    "homonymIndex": 1
   },
   {
     "id": "KAV-ПЛӀАШЭ",
@@ -643043,33 +642371,6 @@
     "conceptNorm": "ЩХЬЭЦ БАРИНЭ"
   },
   {
-    "id": "KAV-ХЪУГЪУЭФӀЫГЪУЭ",
-    "form": "хъугъуэфӀыгъуэ",
-    "partOfSpeech": "noun",
-    "conceptId": "WEALTH",
-    "translations": {
-      "ru": "богатство",
-      "tr": "kaynak",
-      "ar": "مورد",
-      "en": "wealth, good"
-    },
-    "ipa": "/χʷʁʷɐfʼǝʁʷɐ/",
-    "rootIds": [
-      "R-KHU"
-    ],
-    "notes": "Kaynak: 1.Ady-Ady_AP.json, 19.Kbd-Ru-2-Jonty.json | homonim (anlam 1)",
-    "examples": [
-      "ХъугъуэфӀыгъуэу сиӀэр узот, ауэ си шыр сӀыумых, - жиӀащ Хъаныжьым. фольк."
-    ],
-    "examplesSource": "1.Ady-Ady_AP.json (◊)",
-    "literalMeaning": "wealth",
-    "literalMeaningSource": "ru->tr (KAVRAM_ etiketi) (orta)",
-    "etymologyType": "native",
-    "wordFamilyId": "WF-KHU",
-    "conceptNorm": "БОГАТСТВО",
-    "senseNumber": 1
-  },
-  {
     "id": "KAV-ЕРЫПӀЫНЭ",
     "form": "ерыпӀынэ",
     "partOfSpeech": "noun",
@@ -643390,7 +642691,9 @@
     "literalMeaningSource": "ru->tr (KAVRAM_ etiketi) (orta)",
     "etymologyType": "unknown",
     "conceptNorm": "QUALITY_ADJ",
-    "senseNumber": 1
+    "senseNumber": 1,
+    "homonymGroupId": "HG-щӀасэ",
+    "homonymIndex": 1
   },
   {
     "id": "KAV-ГУРЭПКӀЫРАГЪЭ",
@@ -645287,7 +644590,9 @@
     "literalMeaningSource": "ru->tr (KAVRAM_ etiketi) (orta)",
     "etymologyType": "unknown",
     "conceptNorm": "QUALITY_ADJ",
-    "senseNumber": 1
+    "senseNumber": 1,
+    "homonymGroupId": "HG-пщӀэгъуалэ",
+    "homonymIndex": 1
   },
   {
     "id": "KAV-ГЪУРНАУН",
@@ -646996,7 +646301,9 @@
     "literalMeaningSource": "ru->tr (KAVRAM_ etiketi) (orta)",
     "etymologyType": "unknown",
     "conceptNorm": "QUALITY_ADJ",
-    "senseNumber": 1
+    "senseNumber": 1,
+    "homonymGroupId": "HG-тӀорысэ",
+    "homonymIndex": 1
   },
   {
     "id": "KAV-ЩӀАГЪЭЖЬ",
@@ -647998,87 +647305,6 @@
     "audioUrl": "а211англичан.ogg",
     "etymologyType": "unknown",
     "conceptNorm": "АГЛИЧАНХЭР АНГЛИЧАНИ"
-  },
-  {
-    "id": "KAV-НЭГЪУЭЩӀУ",
-    "form": "нэгъуэщӀу",
-    "partOfSpeech": "noun",
-    "conceptId": "KAVRAM_ИНАЧЕ",
-    "translations": {
-      "ru": "иначе",
-      "tr": "farklı",
-      "ar": "بشكل مختلف",
-      "en": "differently, in another way"
-    },
-    "ipa": "/nɐʁʷɐɕʼw/",
-    "rootIds": [
-      "R-NE"
-    ],
-    "notes": "Kaynak: 1.Ady-Ady_AP.json, 19.Kbd-Ru-2-Jonty.json | homonim (anlam 1)",
-    "literalMeaning": "YOKSA",
-    "literalMeaningSource": "ru->tr (KAVRAM_ etiketi) (orta)",
-    "examples": [
-      "*ЩӀалэм жраӀар нэгъуэщӀу къыгурыӀуат."
-    ],
-    "root": "нэ",
-    "wordFamilyId": null,
-    "wordFamily": {
-      "id": "WF-NE",
-      "lexemeIds": [
-        "L-KAV-???????",
-        "L-KAV-???????",
-        "L-KAV-??????????",
-        "L-NAPE",
-        "L-NAPS",
-        "L-NAT1E",
-        "L-NE",
-        "L-NE-BRIGHTNESS",
-        "L-NE-JOY",
-        "L-NE-LIGHT",
-        "L-NEBZHYTS",
-        "L-NEF1",
-        "L-NEGHABE",
-        "L-NEGU",
-        "L-NEK1U",
-        "L-NEMYS",
-        "L-NESYN2"
-      ],
-      "conceptIds": [
-        "BLIND",
-        "CHEEK",
-        "EVIL_EYE",
-        "EYEBROW",
-        "EYELASH",
-        "FACE",
-        "KINDHEARTED",
-        "KINDNESS",
-        "LIE",
-        "LIGHT",
-        "MASCARA",
-        "MY_FACE",
-        "ONE_EYED",
-        "SHARP_EYE",
-        "TEAR",
-        "TEARFUL",
-        "TEARS"
-      ],
-      "morphemeIds": [
-        "M-PSE",
-        "M-GU"
-      ],
-      "productivity": {
-        "totalLexemes": 25,
-        "corpusFrequency": 21883
-      },
-      "notes": "Duyu organi koku. нэ + гу = yuz, нэ + псэ = gozyasi"
-    },
-    "etymologyType": "native",
-    "conceptNorm": "ИНАЧЕ",
-    "pos": "нареч",
-    "meaning": "нареч. иначе, по-другому / Хуэмыдэу, емыщхьу. ЩӀалэм жраӀар нэгъуэщӀу къыгурыӀуат . НэгъуэщӀу жыпӀэмэ иначе говоря, другими словами.",
-    "dialect": "kbd",
-    "dialectNote": "Kbd kaynakli",
-    "senseNumber": 1
   },
   {
     "id": "KAV-УЩИЯКӀУЭ",
@@ -649224,7 +648450,9 @@
     "literalMeaningSource": "ru->tr (KAVRAM_ etiketi) (orta)",
     "etymologyType": "unknown",
     "conceptNorm": "GRAMMAR_SPATIAL",
-    "senseNumber": 1
+    "senseNumber": 1,
+    "homonymGroupId": "HG-къыхэкӀын",
+    "homonymIndex": 1
   },
   {
     "id": "KAV-ХЭГЪЭЗЫКӀЫН",
@@ -655490,7 +654718,9 @@
     "literalMeaningSource": "ru->tr (KAVRAM_ etiketi) (orta)",
     "etymologyType": "unknown",
     "conceptNorm": "ВОРЧАНИЕ",
-    "senseNumber": 1
+    "senseNumber": 1,
+    "homonymGroupId": "HG-гъумэтӀымэн",
+    "homonymIndex": 1
   },
   {
     "id": "KAV-ПХАЩӀЭ",
@@ -656222,7 +655452,9 @@
     "literalMeaningSource": "ru->tr (KAVRAM_ etiketi) (orta)",
     "etymologyType": "unknown",
     "conceptNorm": "ACTION_VERB",
-    "senseNumber": 1
+    "senseNumber": 1,
+    "homonymGroupId": "HG-щӀопщ",
+    "homonymIndex": 1
   },
   {
     "id": "KAV-ЗЫУБЫДЫН",
@@ -656854,7 +656086,9 @@
     "literalMeaningSource": "ru->tr (KAVRAM_ etiketi) (orta)",
     "etymologyType": "unknown",
     "conceptNorm": "МЕДЛЕННО",
-    "senseNumber": 1
+    "senseNumber": 1,
+    "homonymGroupId": "HG-мыпӀащӀэу",
+    "homonymIndex": 1
   },
   {
     "id": "KAV-ЖЬАКӀАЦЭ",
@@ -657092,7 +656326,9 @@
     "tr_status": "fixed_manual",
     "etymologyType": "unknown",
     "conceptNorm": "ACTION_VERB",
-    "senseNumber": 1
+    "senseNumber": 1,
+    "homonymGroupId": "HG-пӀын",
+    "homonymIndex": 1
   },
   {
     "id": "KAV-ХЭЛӀЭН",
@@ -660273,7 +659509,9 @@
     "etymologyType": "unknown",
     "conceptNorm": "МОЛОДОЙ ЧЕЛОВЕК",
     "wordFamilyId": "WF-NYBZHY",
-    "senseNumber": 1
+    "senseNumber": 1,
+    "homonymGroupId": "HG-щӀалэщӀэ",
+    "homonymIndex": 1
   },
   {
     "id": "KAV-НЫКЪУЭЖЬЭ",
@@ -663440,36 +662678,6 @@
     ],
     "etymologyType": "unknown",
     "conceptNorm": "ACTION_VERB"
-  },
-  {
-    "id": "KAV-ТЕГУШХУЭГЪУАФӀЭ",
-    "form": "тегушхуэгъуафӀэ",
-    "partOfSpeech": "noun",
-    "conceptId": "KAVRAM_СЛАБЫЙ",
-    "translations": {
-      "ru": "слабый",
-      "tr": "DAYANIKSIZ",
-      "en": "easy, affordable, feasible"
-    },
-    "ipa": "/tеgʷʃxwɐʁʷafʼɐ/",
-    "rootIds": [
-      "R-GU"
-    ],
-    "notes": "Kaynak: 1.Ady-Ady_AP.json | homonim (anlam 1)",
-    "examples": [
-      "Жыраслъэн ищӀэрт старшынэр къызэрыфӀэлӀыкӀри, тегушхуэгъуафӀэ ищӀауэ къеплъырт. КӀ. А."
-    ],
-    "examplesSource": "1.Ady-Ady_AP.json (◊)",
-    "literalMeaning": "cani olmayan",
-    "literalMeaningSource": "ru->tr (KAVRAM_ etiketi) (orta)",
-    "wordFamilyId": "WF-GU",
-    "etymologyType": "native",
-    "conceptNorm": "QUALITY_ADJ",
-    "pos": "прил",
-    "meaning": "1. лёгкий, доступный, посильный / Тыншу зи ужь уихьэ, екугъуафӀэ Ӏуэхугъуэ. Лэжьыгъэ тегушхуэгъуафӀэ. Ӏуэху тегушхуэгъуафӀэ. 2. беззащитный, слабый /",
-    "dialect": "kbd",
-    "dialectNote": "Kbd kaynakli",
-    "senseNumber": 1
   },
   {
     "id": "KAV-ӀЭПЩЭРЫБАНЭ",
@@ -667186,32 +666394,6 @@
     "notes": "Kaynak: 20.Kbd-Ru-Jonty.json, 19.Kbd-Ru-2-Jonty.json",
     "etymologyType": "unknown",
     "conceptNorm": "БОМБАРДИРОВЩИК"
-  },
-  {
-    "id": "KAV-КӀЭ",
-    "form": "кӀэ",
-    "partOfSpeech": "noun",
-    "conceptId": "KAVRAM_ЮБКА",
-    "translations": {
-      "ru": "юбка",
-      "tr": "PARÇA, KUYRUK",
-      "ar": "بذرة، بذار/ ذيل، ذنب/ جديد، حديث",
-      "en": "i tail"
-    },
-    "ipa": "/kʼɐ/",
-    "rootIds": [],
-    "notes": "Kaynak: 19.Kbd-Ru-2-Jonty.json, 1.Ady-Ady_AP.json | homonim (anlam 1)",
-    "examples": [
-      "Блэр и кӀэмкӀэ тету къежьауэ щилъагъум, цыжьбанэм зызэригъапщхьэри гъуэлъащ. фольк.",
-      "Псалъэм и пэр умыщӀэмэ, и кӀэри пщӀэркъым. (погов. )",
-      "Шухэр ешат, егъэзыхыгъуэм кӀэ имыӀэ хуэдэу. КӀ. А."
-    ],
-    "examplesSource": "1.Ady-Ady_AP.json (◊)",
-    "literalMeaning": "skirt",
-    "literalMeaningSource": "ru->tr (KAVRAM_ etiketi) (orta)",
-    "etymologyType": "unknown",
-    "conceptNorm": "ЮБКА",
-    "senseNumber": 1
   },
   {
     "id": "KAV-БРУКЪЭТХЪЫХЬ",
@@ -671403,7 +670585,9 @@
       "*Жылэдэсхэм я зэӀущӀэ."
     ],
     "etymologyType": "unknown",
-    "conceptNorm": "СЕЛЬЧАНЕ"
+    "conceptNorm": "СЕЛЬЧАНЕ",
+    "homonymGroupId": "HG-жылэдэс",
+    "homonymIndex": 1
   },
   {
     "id": "KAV-ЖЫЛЭКУ",
@@ -678398,7 +677582,9 @@
     "wordFamilyId": "WF-SHCHIA",
     "etymologyType": "native",
     "conceptNorm": "ACTION_VERB",
-    "senseNumber": 1
+    "senseNumber": 1,
+    "homonymGroupId": "HG-щӀалэгъуэ",
+    "homonymIndex": 1
   },
   {
     "id": "KAV-ПАРАД",
@@ -687805,7 +686991,9 @@
     },
     "etymologyType": "native",
     "conceptNorm": "QUALITY_ADJ",
-    "senseNumber": 1
+    "senseNumber": 1,
+    "homonymGroupId": "HG-Ӏэчлъэч",
+    "homonymIndex": 1
   },
   {
     "id": "KAV-ПӀАЩӀЭГЪУЭ",
@@ -689057,7 +688245,9 @@
     "literalMeaningSource": "ru->tr (KAVRAM_ etiketi) (orta)",
     "etymologyType": "unknown",
     "conceptNorm": "МЕЧТА",
-    "senseNumber": 1
+    "senseNumber": 1,
+    "homonymGroupId": "HG-хъуэпсапӀэ",
+    "homonymIndex": 1
   },
   {
     "id": "KAV-ЩХЬЭКЪУТЭ",
@@ -689134,7 +688324,9 @@
     },
     "etymologyType": "native",
     "conceptNorm": "QUALITY_ADJ",
-    "senseNumber": 1
+    "senseNumber": 1,
+    "homonymGroupId": "HG-Ӏэпэдэгъэлэл",
+    "homonymIndex": 1
   },
   {
     "id": "KAV-ГУГЪЭЖАН",
@@ -701798,7 +700990,9 @@
     "wordFamilyId": "WF-A",
     "etymologyType": "native",
     "conceptNorm": "QUALITY_ADJ",
-    "senseNumber": 1
+    "senseNumber": 1,
+    "homonymGroupId": "HG-кӀащхъэ",
+    "homonymIndex": 1
   },
   {
     "id": "KAV-ӀЭЩӀЭКӀУЭДЭН",
@@ -704581,7 +703775,9 @@
     ],
     "etymologyType": "unknown",
     "conceptNorm": "SPEECH_WORD",
-    "senseNumber": 1
+    "senseNumber": 1,
+    "homonymGroupId": "HG-жыӀэ",
+    "homonymIndex": 1
   },
   {
     "id": "KAV-ЩХЬЭБАПХЪЭ",
@@ -707120,7 +706316,9 @@
     "literalMeaningSource": "ru->tr (KAVRAM_ etiketi) (orta)",
     "etymologyType": "unknown",
     "conceptNorm": "ACTION_VERB",
-    "senseNumber": 1
+    "senseNumber": 1,
+    "homonymGroupId": "HG-кӀуапӀэ",
+    "homonymIndex": 1
   },
   {
     "id": "KAV-ГЪУЭГЫГЪУЭ",
@@ -707794,7 +706992,9 @@
     "tr_status": "fixed_manual",
     "etymologyType": "unknown",
     "conceptNorm": "КАК",
-    "senseNumber": 1
+    "senseNumber": 1,
+    "homonymGroupId": "HG-щӀыкӀэу",
+    "homonymIndex": 1
   },
   {
     "id": "KAV-ЩӀЭРАЩӀАГЪЭ",
@@ -719264,7 +718464,9 @@
     "literalMeaningSource": "ru->tr (KAVRAM_ etiketi) (orta)",
     "etymologyType": "native",
     "conceptNorm": "СТОЛЕТИЕ",
-    "senseNumber": 1
+    "senseNumber": 1,
+    "homonymGroupId": "HG-лӀэщӀыгъуэ",
+    "homonymIndex": 1
   },
   {
     "id": "KAV-ПЭРЫШЭ",
@@ -723458,68 +722660,6 @@
     "conceptNorm": "QUALITY_ADJ"
   },
   {
-    "id": "KAV-ПЭӀЭЩӀЭ",
-    "form": "пэӀэщӀэ",
-    "partOfSpeech": "noun",
-    "conceptId": "KAVRAM_ОТДАЛЁННЫЙ",
-    "translations": {
-      "ru": "отдалённый",
-      "tr": "UZAK",
-      "en": "remote"
-    },
-    "ipa": "/pɐʔɐɕʼɐ/",
-    "rootIds": [
-      "R-PE"
-    ],
-    "notes": "Kaynak: 1.Ady-Ady_AP.json | homonim (anlam 1)",
-    "examples": [
-      "- Уэ уи гугъэнкӀэ хъунщ, - адкӀэ къыпидзащ абы, - дэ лэжьыгъэ нэхъыфӀхэм пэӀэщӀэ утщӀу... КӀу. С."
-    ],
-    "examplesSource": "1.Ady-Ady_AP.json (◊)",
-    "literalMeaning": "DERE yatağı",
-    "literalMeaningSource": "ru->tr (KAVRAM_ etiketi) (orta)",
-    "root": "пэ",
-    "wordFamilyId": "WF-PE",
-    "wordFamily": {
-      "id": "WF-PE",
-      "lexemeIds": [
-        "L-PE",
-        "L-PEKUKU",
-        "L-PEKURSH",
-        "L-YAPEREY",
-        "L-PERYT",
-        "L-PEFYQ",
-        "L-PETINE",
-        "L-PETSURƏ",
-        "L-PEPLEN",
-        "L-KUAPE",
-        "L-KUAPELHAPE"
-      ],
-      "conceptIds": [
-        "DECEIT",
-        "FLAT_NOSED",
-        "HAWK_NOSED",
-        "LEADER",
-        "NASAL_SEPTUM",
-        "NOSE",
-        "NOSTRIL",
-        "POINTED_NOSED",
-        "SNUB_NOSED",
-        "WAIT"
-      ],
-      "morphemeIds": [],
-      "productivity": {
-        "totalLexemes": 11,
-        "corpusFrequency": 7184,
-        "mostFrequentLexemeId": "L-PE"
-      },
-      "notes": "Burun/on ailesi (пэ). Somatik + mekan. Corpus: 7.184 kullanim."
-    },
-    "etymologyType": "native",
-    "conceptNorm": "QUALITY_ADJ",
-    "senseNumber": 1
-  },
-  {
     "id": "KAV-ПЭГУНЫКЪУ",
     "form": "пэгуныкъу",
     "partOfSpeech": "noun",
@@ -724052,29 +723192,6 @@
     ],
     "etymologyType": "unknown",
     "conceptNorm": "СТАЖ"
-  },
-  {
-    "id": "KAV-ХЕЯЩӀЭ",
-    "form": "хеящӀэ",
-    "partOfSpeech": "noun",
-    "conceptId": "KAVRAM_СУД",
-    "translations": {
-      "ru": "суд",
-      "tr": "hakim",
-      "ar": "قاضي"
-    },
-    "ipa": "/xеяɕʼɐ/",
-    "rootIds": [],
-    "notes": "Kaynak: 1.Ady-Ady_AP.json | homonim (anlam 1)",
-    "examples": [
-      "фыз техрэ тӀэу хеящӀэрэ фымыщӀэ не отнимайте жен друг у друга и не вершите суд дважды (Ж. Казаноков )"
-    ],
-    "examplesSource": "1.Ady-Ady_AP.json (◊)",
-    "literalMeaning": "HAKLI",
-    "literalMeaningSource": "ru->tr (KAVRAM_ etiketi) (orta)",
-    "etymologyType": "unknown",
-    "conceptNorm": "СУД",
-    "senseNumber": 1
   },
   {
     "id": "KAV-СУРЭТЫНШАГЪЭ",
@@ -724962,7 +724079,9 @@
     "rootIds": [],
     "notes": "Kaynak: 5.Ady-Rus_Qarden.json",
     "etymologyType": "unknown",
-    "conceptNorm": "ХОЛОД"
+    "conceptNorm": "ХОЛОД",
+    "homonymGroupId": "HG-щӀыӀагъэ",
+    "homonymIndex": 1
   },
   {
     "id": "KAV-УАНЭПХЪАФЭ",
@@ -766095,7 +765214,9 @@
     ],
     "etymologyType": "unknown",
     "conceptNorm": "QUALITY_ADJ",
-    "senseNumber": 1
+    "senseNumber": 1,
+    "homonymGroupId": "HG-цӀырхъ",
+    "homonymIndex": 1
   },
   {
     "id": "KAV-ЗАМЕСТИТЕЛЬ",
@@ -801403,7 +800524,9 @@
     "literalMeaningSource": "ayni form (translations.tr) (orta)",
     "etymologyType": "unknown",
     "conceptNorm": "ПРИВЕТСТВИЕ",
-    "senseNumber": 1
+    "senseNumber": 1,
+    "homonymGroupId": "HG-фӀэхъус",
+    "homonymIndex": 1
   },
   {
     "id": "KAV-ЗАТВОР",
@@ -826641,7 +825764,9 @@
     "rootIds": [],
     "notes": "Kaynak: 5.Ady-Rus_Qarden.json",
     "etymologyType": "unknown",
-    "conceptNorm": "САД"
+    "conceptNorm": "САД",
+    "homonymGroupId": "HG-жыгхадэ",
+    "homonymIndex": 1
   },
   {
     "id": "KAV-ЖЫРХЭКӀ",
@@ -832930,7 +832055,9 @@
     "rootIds": [],
     "notes": "Kaynak: 5.Ady-Rus_Qarden.json",
     "etymologyType": "unknown",
-    "conceptNorm": "ДЛИНА"
+    "conceptNorm": "ДЛИНА",
+    "homonymGroupId": "HG-кӀыхьагъэ",
+    "homonymIndex": 1
   },
   {
     "id": "KAV-УЗЫЛЪЫӀЭСЫН",
@@ -873421,7 +872548,9 @@
     "rootIds": [],
     "notes": "Kaynak: 5.Ady-Rus_Qarden.json",
     "etymologyType": "unknown",
-    "conceptNorm": "ACTION_VERB"
+    "conceptNorm": "ACTION_VERB",
+    "homonymGroupId": "HG-мащӀагъэ",
+    "homonymIndex": 1
   },
   {
     "id": "KAV-МЕЛКОБУРЖУАЗНЭ",
@@ -924955,7 +924084,9 @@
       "Kardanov (1957)"
     ],
     "wordFamilyId": "WF-UE-PRON",
-    "senseNumber": 4
+    "senseNumber": 4,
+    "homonymGroupId": "HG-уэ",
+    "homonymIndex": 7
   },
   {
     "id": "L-UE-INTJ",
@@ -924972,7 +924103,9 @@
     "wordFamilyId": "WF-UE-INTJ",
     "status": "PENDING_REVIEW",
     "notes": "Sözlük IV междометие maddesi. | homonim (anlam 2)",
-    "senseNumber": 2
+    "senseNumber": 2,
+    "homonymGroupId": "HG-уэ",
+    "homonymIndex": 3
   },
   {
     "id": "L-UE-PART",
@@ -924989,7 +924122,9 @@
     "wordFamilyId": "WF-UE-PART",
     "status": "PENDING_REVIEW",
     "notes": "Sözlük V частица maddesi. | homonim (anlam 3)",
-    "senseNumber": 3
+    "senseNumber": 3,
+    "homonymGroupId": "HG-уэ",
+    "homonymIndex": 5
   },
   {
     "id": "L-KUEPSY-01",
@@ -925032,7 +924167,9 @@
     "translations": {
       "tr": "bilmece"
     },
-    "senseNumber": 1
+    "senseNumber": 1,
+    "homonymGroupId": "HG-къуажэхь",
+    "homonymIndex": 1
   },
   {
     "id": "L-GUASHCH_ORPHAN",
@@ -925060,7 +924197,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-GUASHCH - prenses; hanim; kayinvalide"
+    "notes": "P3 auto-generated from orphan root R-GUASHCH - prenses; hanim; kayinvalide",
+    "homonymGroupId": "HG-гуащэ",
+    "homonymIndex": 1
   },
   {
     "id": "L-SHER",
@@ -925088,7 +924227,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-SHER - Cerkes; Adige etnonim"
+    "notes": "P3 auto-generated from orphan root R-SHER - Cerkes; Adige etnonim",
+    "homonymGroupId": "HG-шэрджэс",
+    "homonymIndex": 1
   },
   {
     "id": "L-BZH",
@@ -925116,7 +924257,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-BZH - ari urunu; petek"
+    "notes": "P3 auto-generated from orphan root R-BZH - ari urunu; petek",
+    "homonymGroupId": "HG-бжьыхьэ",
+    "homonymIndex": 1
   },
   {
     "id": "L-GA_1",
@@ -925144,7 +924287,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-GA_1 - hayat; yasam; omur"
+    "notes": "P3 auto-generated from orphan root R-GA_1 - hayat; yasam; omur",
+    "homonymGroupId": "HG-гъащӀэ",
+    "homonymIndex": 1
   },
   {
     "id": "L-IEG",
@@ -925172,7 +924317,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-IEG - avuc ici"
+    "notes": "P3 auto-generated from orphan root R-IEG - avuc ici",
+    "homonymGroupId": "HG-Ӏэгу",
+    "homonymIndex": 2
   },
   {
     "id": "L-KUR",
@@ -925200,7 +924347,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-KUR - orta; merkez"
+    "notes": "P3 auto-generated from orphan root R-KUR - orta; merkez",
+    "homonymGroupId": "HG-курыт",
+    "homonymIndex": 2
   },
   {
     "id": "L-UVY_1",
@@ -925228,7 +924377,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-UVY_1 - cukur; oyuk; siginak"
+    "notes": "P3 auto-generated from orphan root R-UVY_1 - cukur; oyuk; siginak",
+    "homonymGroupId": "HG-увыпӀэ",
+    "homonymIndex": 2
   },
   {
     "id": "L-ZHYG_1",
@@ -925256,7 +924407,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-ZHYG_1 - agaclik; ormanlik"
+    "notes": "P3 auto-generated from orphan root R-ZHYG_1 - agaclik; ormanlik",
+    "homonymGroupId": "HG-жыгхадэ",
+    "homonymIndex": 2
   },
   {
     "id": "L-SHCHAB",
@@ -925284,7 +924437,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-SHCHAB - yumusaklik"
+    "notes": "P3 auto-generated from orphan root R-SHCHAB - yumusaklik",
+    "homonymGroupId": "HG-щабагъэ",
+    "homonymIndex": 2
   },
   {
     "id": "L-PSHCHY_1",
@@ -925312,7 +924467,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-PSHCHY_1 - ikindi vakti; aksamustu"
+    "notes": "P3 auto-generated from orphan root R-PSHCHY_1 - ikindi vakti; aksamustu",
+    "homonymGroupId": "HG-пщыгъуэ",
+    "homonymIndex": 2
   },
   {
     "id": "L-ZHYL_1",
@@ -925340,7 +924497,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-ZHYL_1 - yerlesik; koyde oturan"
+    "notes": "P3 auto-generated from orphan root R-ZHYL_1 - yerlesik; koyde oturan",
+    "homonymGroupId": "HG-жылэдэс",
+    "homonymIndex": 2
   },
   {
     "id": "L-SHCHIA_2",
@@ -925368,7 +924527,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-SHCHIA_2 - genclik; delikanlilik"
+    "notes": "P3 auto-generated from orphan root R-SHCHIA_2 - genclik; delikanlilik",
+    "homonymGroupId": "HG-щӀалэгъуэ",
+    "homonymIndex": 3
   },
   {
     "id": "L-NEKH_2",
@@ -925396,7 +924557,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-NEKH_2 - yaslilik; buyukluk"
+    "notes": "P3 auto-generated from orphan root R-NEKH_2 - yaslilik; buyukluk",
+    "homonymGroupId": "HG-нэхъыжь",
+    "homonymIndex": 1
   },
   {
     "id": "L-NEKH_3",
@@ -925452,7 +924615,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-TKH_2 - ulu tanri"
+    "notes": "P3 auto-generated from orphan root R-TKH_2 - ulu tanri",
+    "homonymGroupId": "HG-тхьэшхуэ",
+    "homonymIndex": 2
   },
   {
     "id": "L-SHCHIY_2",
@@ -925480,7 +924645,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-SHCHIY_2 - sogukluk"
+    "notes": "P3 auto-generated from orphan root R-SHCHIY_2 - sogukluk",
+    "homonymGroupId": "HG-щӀыӀагъэ",
+    "homonymIndex": 2
   },
   {
     "id": "L-MASHCH_1",
@@ -925508,7 +924675,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-MASHCH_1 - azlik; kitlik"
+    "notes": "P3 auto-generated from orphan root R-MASHCH_1 - azlik; kitlik",
+    "homonymGroupId": "HG-мащӀагъэ",
+    "homonymIndex": 2
   },
   {
     "id": "L-KIY",
@@ -925536,7 +924705,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-KIY - uzunluk"
+    "notes": "P3 auto-generated from orphan root R-KIY - uzunluk",
+    "homonymGroupId": "HG-кӀыхьагъэ",
+    "homonymIndex": 2
   },
   {
     "id": "L-FOSH",
@@ -925620,7 +924791,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-MUR - amac; niyet"
+    "notes": "P3 auto-generated from orphan root R-MUR - amac; niyet",
+    "homonymGroupId": "HG-мурад",
+    "homonymIndex": 1
   },
   {
     "id": "L-KHU_1",
@@ -925704,7 +924877,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-UE-PRON - уэ"
+    "notes": "P3 auto-generated from orphan root R-UE-PRON - уэ",
+    "homonymGroupId": "HG-уэ",
+    "homonymIndex": 8
   },
   {
     "id": "L-UE-AIR",
@@ -925732,7 +924907,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-UE-AIR - уэ"
+    "notes": "P3 auto-generated from orphan root R-UE-AIR - уэ",
+    "homonymGroupId": "HG-уэ",
+    "homonymIndex": 2
   },
   {
     "id": "L-UE-INTJ_ORPHAN",
@@ -925760,7 +924937,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-UE-INTJ - уэ"
+    "notes": "P3 auto-generated from orphan root R-UE-INTJ - уэ",
+    "homonymGroupId": "HG-уэ",
+    "homonymIndex": 4
   },
   {
     "id": "L-UE-PART_ORPHAN",
@@ -925788,7 +924967,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-UE-PART - уэ"
+    "notes": "P3 auto-generated from orphan root R-UE-PART - уэ",
+    "homonymGroupId": "HG-уэ",
+    "homonymIndex": 6
   },
   {
     "id": "L-KO",
@@ -925816,7 +924997,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-KO - къо"
+    "notes": "P3 auto-generated from orphan root R-KO - къо",
+    "homonymGroupId": "HG-къо",
+    "homonymIndex": 2
   },
   {
     "id": "L-ZEU",
@@ -925844,7 +925027,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-ZEU - зэу"
+    "notes": "P3 auto-generated from orphan root R-ZEU - зэу",
+    "homonymGroupId": "HG-зэу",
+    "homonymIndex": 2
   },
   {
     "id": "L-PYT",
@@ -925872,7 +925057,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-PYT - пытэ"
+    "notes": "P3 auto-generated from orphan root R-PYT - пытэ",
+    "homonymGroupId": "HG-пытэ",
+    "homonymIndex": 2
   },
   {
     "id": "L-TEZ",
@@ -925900,7 +925087,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-TEZ - тез"
+    "notes": "P3 auto-generated from orphan root R-TEZ - тез",
+    "homonymGroupId": "HG-тез",
+    "homonymIndex": 2
   },
   {
     "id": "L-KHES",
@@ -925928,7 +925117,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-KHES - хэс"
+    "notes": "P3 auto-generated from orphan root R-KHES - хэс",
+    "homonymGroupId": "HG-хэс",
+    "homonymIndex": 2
   },
   {
     "id": "L-PKHE",
@@ -925956,7 +925147,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-PKHE - пхэ"
+    "notes": "P3 auto-generated from orphan root R-PKHE - пхэ",
+    "homonymGroupId": "HG-пхэ",
+    "homonymIndex": 2
   },
   {
     "id": "L-TYN",
@@ -925984,7 +925177,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-TYN - тын"
+    "notes": "P3 auto-generated from orphan root R-TYN - тын",
+    "homonymGroupId": "HG-тын",
+    "homonymIndex": 2
   },
   {
     "id": "L-KIO",
@@ -926012,7 +925207,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-KIO - кӀон"
+    "notes": "P3 auto-generated from orphan root R-KIO - кӀон",
+    "homonymGroupId": "HG-кӀон",
+    "homonymIndex": 2
   },
   {
     "id": "L-BYN",
@@ -926040,7 +925237,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-BYN - бын"
+    "notes": "P3 auto-generated from orphan root R-BYN - бын",
+    "homonymGroupId": "HG-бын",
+    "homonymIndex": 1
   },
   {
     "id": "L-GYN",
@@ -926068,7 +925267,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-GYN - гын"
+    "notes": "P3 auto-generated from orphan root R-GYN - гын",
+    "homonymGroupId": "HG-гын",
+    "homonymIndex": 2
   },
   {
     "id": "L-SEKH",
@@ -926096,7 +925297,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-SEKH - сэху"
+    "notes": "P3 auto-generated from orphan root R-SEKH - сэху",
+    "homonymGroupId": "HG-сэху",
+    "homonymIndex": 2
   },
   {
     "id": "L-TES",
@@ -926124,7 +925327,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-TES - тес"
+    "notes": "P3 auto-generated from orphan root R-TES - тес",
+    "homonymGroupId": "HG-тес",
+    "homonymIndex": 2
   },
   {
     "id": "L-ESE",
@@ -926152,7 +925357,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-ESE - есэн"
+    "notes": "P3 auto-generated from orphan root R-ESE - есэн",
+    "homonymGroupId": "HG-есэн",
+    "homonymIndex": 2
   },
   {
     "id": "L-GY",
@@ -926180,7 +925387,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-GY - гъын"
+    "notes": "P3 auto-generated from orphan root R-GY - гъын",
+    "homonymGroupId": "HG-гъын",
+    "homonymIndex": 2
   },
   {
     "id": "L-SYS",
@@ -926208,7 +925417,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-SYS - сысын"
+    "notes": "P3 auto-generated from orphan root R-SYS - сысын",
+    "homonymGroupId": "HG-сысын",
+    "homonymIndex": 2
   },
   {
     "id": "L-ZHEP",
@@ -926236,7 +925447,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-ZHEP - жэп"
+    "notes": "P3 auto-generated from orphan root R-ZHEP - жэп",
+    "homonymGroupId": "HG-жэп",
+    "homonymIndex": 2
   },
   {
     "id": "L-VEN",
@@ -926264,7 +925477,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-VEN - вэн"
+    "notes": "P3 auto-generated from orphan root R-VEN - вэн",
+    "homonymGroupId": "HG-вэн",
+    "homonymIndex": 2
   },
   {
     "id": "L-UKI",
@@ -926292,7 +925507,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-UKI - укӀын"
+    "notes": "P3 auto-generated from orphan root R-UKI - укӀын",
+    "homonymGroupId": "HG-укӀын",
+    "homonymIndex": 2
   },
   {
     "id": "L-UDZH",
@@ -926320,7 +925537,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-UDZH - уджын"
+    "notes": "P3 auto-generated from orphan root R-UDZH - уджын",
+    "homonymGroupId": "HG-уджын",
+    "homonymIndex": 2
   },
   {
     "id": "L-KOTS",
@@ -926348,7 +925567,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-KOTS - коц"
+    "notes": "P3 auto-generated from orphan root R-KOTS - коц",
+    "homonymGroupId": "HG-коц",
+    "homonymIndex": 2
   },
   {
     "id": "L-ZHEN",
@@ -926376,7 +925597,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-ZHEN - жэн"
+    "notes": "P3 auto-generated from orphan root R-ZHEN - жэн",
+    "homonymGroupId": "HG-жэн",
+    "homonymIndex": 2
   },
   {
     "id": "L-IZH",
@@ -926404,7 +925627,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-IZH - ижь"
+    "notes": "P3 auto-generated from orphan root R-IZH - ижь",
+    "homonymGroupId": "HG-ижь",
+    "homonymIndex": 2
   },
   {
     "id": "L-IBE",
@@ -926432,7 +925657,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-IBE - ибэ"
+    "notes": "P3 auto-generated from orphan root R-IBE - ибэ",
+    "homonymGroupId": "HG-ибэ",
+    "homonymIndex": 2
   },
   {
     "id": "L-MESH",
@@ -926460,7 +925687,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-MESH - мэш"
+    "notes": "P3 auto-generated from orphan root R-MESH - мэш",
+    "homonymGroupId": "HG-мэш",
+    "homonymIndex": 2
   },
   {
     "id": "L-NYP",
@@ -926488,7 +925717,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-NYP - нып"
+    "notes": "P3 auto-generated from orphan root R-NYP - нып",
+    "homonymGroupId": "HG-нып",
+    "homonymIndex": 2
   },
   {
     "id": "L-SYN",
@@ -926516,7 +925747,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-SYN - сын"
+    "notes": "P3 auto-generated from orphan root R-SYN - сын",
+    "homonymGroupId": "HG-сын",
+    "homonymIndex": 2
   },
   {
     "id": "L-BO",
@@ -926544,7 +925777,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-BO - бо"
+    "notes": "P3 auto-generated from orphan root R-BO - бо",
+    "homonymGroupId": "HG-бо",
+    "homonymIndex": 1
   },
   {
     "id": "L-BEZ",
@@ -926572,7 +925807,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-BEZ - без"
+    "notes": "P3 auto-generated from orphan root R-BEZ - без",
+    "homonymGroupId": "HG-без",
+    "homonymIndex": 1
   },
   {
     "id": "L-CHYL",
@@ -926600,7 +925837,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-CHYL - чыл"
+    "notes": "P3 auto-generated from orphan root R-CHYL - чыл",
+    "homonymGroupId": "HG-чыл",
+    "homonymIndex": 1
   },
   {
     "id": "L-KHEN_ORPHAN",
@@ -926628,7 +925867,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-KHEN - хэн"
+    "notes": "P3 auto-generated from orphan root R-KHEN - хэн",
+    "homonymGroupId": "HG-хэн",
+    "homonymIndex": 1
   },
   {
     "id": "L-UBE",
@@ -926656,7 +925897,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-UBE - убэ"
+    "notes": "P3 auto-generated from orphan root R-UBE - убэ",
+    "homonymGroupId": "HG-убэ",
+    "homonymIndex": 1
   },
   {
     "id": "L-SAY",
@@ -926684,7 +925927,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-SAY - сай"
+    "notes": "P3 auto-generated from orphan root R-SAY - сай",
+    "homonymGroupId": "HG-сай",
+    "homonymIndex": 1
   },
   {
     "id": "L-NAMYS_ORPHAN",
@@ -926712,7 +925957,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-NAMYS - намыс"
+    "notes": "P3 auto-generated from orphan root R-NAMYS - намыс",
+    "homonymGroupId": "HG-намыс",
+    "homonymIndex": 2
   },
   {
     "id": "L-ASHCH",
@@ -926740,7 +925987,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-ASHCH - ащ"
+    "notes": "P3 auto-generated from orphan root R-ASHCH - ащ",
+    "homonymGroupId": "HG-ащ",
+    "homonymIndex": 1
   },
   {
     "id": "L-BE",
@@ -926768,7 +926017,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-BE - бэ"
+    "notes": "P3 auto-generated from orphan root R-BE - бэ",
+    "homonymGroupId": "HG-бэ",
+    "homonymIndex": 1
   },
   {
     "id": "L-IZ",
@@ -926796,7 +926047,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-IZ - из"
+    "notes": "P3 auto-generated from orphan root R-IZ - из",
+    "homonymGroupId": "HG-из",
+    "homonymIndex": 2
   },
   {
     "id": "L-ZEV",
@@ -926824,7 +926077,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-ZEV - зэв"
+    "notes": "P3 auto-generated from orphan root R-ZEV - зэв",
+    "homonymGroupId": "HG-зэв",
+    "homonymIndex": 2
   },
   {
     "id": "L-BEV",
@@ -926852,7 +926107,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-BEV - бэв"
+    "notes": "P3 auto-generated from orphan root R-BEV - бэв",
+    "homonymGroupId": "HG-бэв",
+    "homonymIndex": 1
   },
   {
     "id": "L-ZHYR",
@@ -926880,7 +926137,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-ZHYR - жыр"
+    "notes": "P3 auto-generated from orphan root R-ZHYR - жыр",
+    "homonymGroupId": "HG-жыр",
+    "homonymIndex": 2
   },
   {
     "id": "L-CHY",
@@ -926908,7 +926167,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-CHY - чы"
+    "notes": "P3 auto-generated from orphan root R-CHY - чы",
+    "homonymGroupId": "HG-чы",
+    "homonymIndex": 1
   },
   {
     "id": "L-DEP",
@@ -926936,7 +926197,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-DEP - дэп"
+    "notes": "P3 auto-generated from orphan root R-DEP - дэп",
+    "homonymGroupId": "HG-дэп",
+    "homonymIndex": 2
   },
   {
     "id": "L-ZHEZ",
@@ -926964,7 +926227,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-ZHEZ - жэз"
+    "notes": "P3 auto-generated from orphan root R-ZHEZ - жэз",
+    "homonymGroupId": "HG-жэз",
+    "homonymIndex": 2
   },
   {
     "id": "L-ETA",
@@ -926992,7 +926257,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-ETA - ета"
+    "notes": "P3 auto-generated from orphan root R-ETA - ета",
+    "homonymGroupId": "HG-ета",
+    "homonymIndex": 2
   },
   {
     "id": "L-EBZ",
@@ -927020,7 +926287,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-EBZ - ебз"
+    "notes": "P3 auto-generated from orphan root R-EBZ - ебз",
+    "homonymGroupId": "HG-ебз",
+    "homonymIndex": 2
   },
   {
     "id": "L-SHKHU",
@@ -927048,7 +926317,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-SHKHU - шху"
+    "notes": "P3 auto-generated from orphan root R-SHKHU - шху",
+    "homonymGroupId": "HG-шху",
+    "homonymIndex": 2
   },
   {
     "id": "L-MAE",
@@ -927076,7 +926347,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-MAE - мае"
+    "notes": "P3 auto-generated from orphan root R-MAE - мае",
+    "homonymGroupId": "HG-мае",
+    "homonymIndex": 1
   },
   {
     "id": "L-KHUE",
@@ -927104,7 +926377,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-KHUE - хуэ"
+    "notes": "P3 auto-generated from orphan root R-KHUE - хуэ",
+    "homonymGroupId": "HG-хуэ",
+    "homonymIndex": 2
   },
   {
     "id": "L-UZY",
@@ -927132,7 +926407,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-UZY - узы"
+    "notes": "P3 auto-generated from orphan root R-UZY - узы",
+    "homonymGroupId": "HG-узы",
+    "homonymIndex": 2
   },
   {
     "id": "L-UDY",
@@ -927160,7 +926437,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-UDY - уды"
+    "notes": "P3 auto-generated from orphan root R-UDY - уды",
+    "homonymGroupId": "HG-уды",
+    "homonymIndex": 2
   },
   {
     "id": "L-MEY",
@@ -927188,7 +926467,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-MEY - мей"
+    "notes": "P3 auto-generated from orphan root R-MEY - мей",
+    "homonymGroupId": "HG-мей",
+    "homonymIndex": 2
   },
   {
     "id": "L-GOR",
@@ -927216,7 +926497,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-GOR - горэ"
+    "notes": "P3 auto-generated from orphan root R-GOR - горэ",
+    "homonymGroupId": "HG-горэ",
+    "homonymIndex": 2
   },
   {
     "id": "L-ZEZ",
@@ -927244,7 +926527,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-ZEZ - зэзэмызэ"
+    "notes": "P3 auto-generated from orphan root R-ZEZ - зэзэмызэ",
+    "homonymGroupId": "HG-зэзэмызэ",
+    "homonymIndex": 2
   },
   {
     "id": "L-IOF",
@@ -927272,7 +926557,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-IOF - Ӏоф"
+    "notes": "P3 auto-generated from orphan root R-IOF - Ӏоф",
+    "homonymGroupId": "HG-Ӏоф",
+    "homonymIndex": 2
   },
   {
     "id": "L-ZESH_ORPHAN",
@@ -927300,7 +926587,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-ZESH - зэш"
+    "notes": "P3 auto-generated from orphan root R-ZESH - зэш",
+    "homonymGroupId": "HG-зэш",
+    "homonymIndex": 2
   },
   {
     "id": "L-NEY",
@@ -927328,7 +926617,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-NEY - ней"
+    "notes": "P3 auto-generated from orphan root R-NEY - ней",
+    "homonymGroupId": "HG-ней",
+    "homonymIndex": 2
   },
   {
     "id": "L-SHKHO",
@@ -927356,7 +926647,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-SHKHO - шхонч"
+    "notes": "P3 auto-generated from orphan root R-SHKHO - шхонч",
+    "homonymGroupId": "HG-шхонч",
+    "homonymIndex": 2
   },
   {
     "id": "L-USY",
@@ -927384,7 +926677,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-USY - усын"
+    "notes": "P3 auto-generated from orphan root R-USY - усын",
+    "homonymGroupId": "HG-усын",
+    "homonymIndex": 2
   },
   {
     "id": "L-YATE",
@@ -927412,7 +926707,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-YATE - ятэш"
+    "notes": "P3 auto-generated from orphan root R-YATE - ятэш",
+    "homonymGroupId": "HG-ятэш",
+    "homonymIndex": 1
   },
   {
     "id": "L-UZH",
@@ -927440,7 +926737,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-UZH - ужь"
+    "notes": "P3 auto-generated from orphan root R-UZH - ужь",
+    "homonymGroupId": "HG-ужь",
+    "homonymIndex": 2
   },
   {
     "id": "L-BASH",
@@ -927468,7 +926767,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-BASH - баш"
+    "notes": "P3 auto-generated from orphan root R-BASH - баш",
+    "homonymGroupId": "HG-баш",
+    "homonymIndex": 1
   },
   {
     "id": "L-USE",
@@ -927496,7 +926797,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-USE - усэ"
+    "notes": "P3 auto-generated from orphan root R-USE - усэ",
+    "homonymGroupId": "HG-усэ",
+    "homonymIndex": 2
   },
   {
     "id": "L-LEN",
@@ -927524,7 +926827,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-LEN - лэн"
+    "notes": "P3 auto-generated from orphan root R-LEN - лэн",
+    "homonymGroupId": "HG-лэн",
+    "homonymIndex": 2
   },
   {
     "id": "L-IZY",
@@ -927552,7 +926857,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-IZY - изы"
+    "notes": "P3 auto-generated from orphan root R-IZY - изы",
+    "homonymGroupId": "HG-изы",
+    "homonymIndex": 2
   },
   {
     "id": "L-ZHYP",
@@ -927580,7 +926887,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-ZHYP - жып"
+    "notes": "P3 auto-generated from orphan root R-ZHYP - жып",
+    "homonymGroupId": "HG-жып",
+    "homonymIndex": 2
   },
   {
     "id": "L-ZHER",
@@ -927608,7 +926917,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-ZHER - жэр"
+    "notes": "P3 auto-generated from orphan root R-ZHER - жэр",
+    "homonymGroupId": "HG-жэр",
+    "homonymIndex": 2
   },
   {
     "id": "L-ODY",
@@ -927636,7 +926947,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-ODY - оды"
+    "notes": "P3 auto-generated from orphan root R-ODY - оды",
+    "homonymGroupId": "HG-оды",
+    "homonymIndex": 2
   },
   {
     "id": "L-ERU",
@@ -927664,7 +926977,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-ERU - еру"
+    "notes": "P3 auto-generated from orphan root R-ERU - еру",
+    "homonymGroupId": "HG-еру",
+    "homonymIndex": 1
   },
   {
     "id": "L-GYZ",
@@ -927692,7 +927007,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-GYZ - гыз"
+    "notes": "P3 auto-generated from orphan root R-GYZ - гыз",
+    "homonymGroupId": "HG-гыз",
+    "homonymIndex": 1
   },
   {
     "id": "L-ESHA",
@@ -927720,7 +927037,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-ESHA - еша"
+    "notes": "P3 auto-generated from orphan root R-ESHA - еша",
+    "homonymGroupId": "HG-еша",
+    "homonymIndex": 1
   },
   {
     "id": "L-CHYGAY",
@@ -927748,7 +927067,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-CHYGAY - чъыгай"
+    "notes": "P3 auto-generated from orphan root R-CHYGAY - чъыгай",
+    "homonymGroupId": "HG-чъыгай",
+    "homonymIndex": 1
   },
   {
     "id": "L-MY_ORPHAN",
@@ -927776,7 +927097,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-MY - мы"
+    "notes": "P3 auto-generated from orphan root R-MY - мы",
+    "homonymGroupId": "HG-мы",
+    "homonymIndex": 2
   },
   {
     "id": "L-KHUN",
@@ -927804,7 +927127,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-KHUN - хун"
+    "notes": "P3 auto-generated from orphan root R-KHUN - хун",
+    "homonymGroupId": "HG-хун",
+    "homonymIndex": 2
   },
   {
     "id": "L-TYAT",
@@ -927832,7 +927157,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-TYAT - тят"
+    "notes": "P3 auto-generated from orphan root R-TYAT - тят",
+    "homonymGroupId": "HG-тят",
+    "homonymIndex": 2
   },
   {
     "id": "L-TKHA",
@@ -927860,7 +927187,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-TKHA - тха"
+    "notes": "P3 auto-generated from orphan root R-TKHA - тха",
+    "homonymGroupId": "HG-тха",
+    "homonymIndex": 2
   },
   {
     "id": "L-ZHYN",
@@ -927888,7 +927217,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-ZHYN - жын"
+    "notes": "P3 auto-generated from orphan root R-ZHYN - жын",
+    "homonymGroupId": "HG-жын",
+    "homonymIndex": 2
   },
   {
     "id": "L-KHEY",
@@ -927916,7 +927247,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-KHEY - хей"
+    "notes": "P3 auto-generated from orphan root R-KHEY - хей",
+    "homonymGroupId": "HG-хей",
+    "homonymIndex": 2
   },
   {
     "id": "L-PYI",
@@ -927944,7 +927277,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-PYI - пыи"
+    "notes": "P3 auto-generated from orphan root R-PYI - пыи",
+    "homonymGroupId": "HG-пыи",
+    "homonymIndex": 2
   },
   {
     "id": "L-NOS",
@@ -927972,7 +927307,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-NOS - нос"
+    "notes": "P3 auto-generated from orphan root R-NOS - нос",
+    "homonymGroupId": "HG-нос",
+    "homonymIndex": 2
   },
   {
     "id": "L-AUZ",
@@ -928000,7 +927337,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-AUZ - ауз"
+    "notes": "P3 auto-generated from orphan root R-AUZ - ауз",
+    "homonymGroupId": "HG-ауз",
+    "homonymIndex": 1
   },
   {
     "id": "L-DEN",
@@ -928028,7 +927367,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-DEN - дэн"
+    "notes": "P3 auto-generated from orphan root R-DEN - дэн",
+    "homonymGroupId": "HG-дэн",
+    "homonymIndex": 2
   },
   {
     "id": "L-UD",
@@ -928056,7 +927397,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-UD - уд"
+    "notes": "P3 auto-generated from orphan root R-UD - уд",
+    "homonymGroupId": "HG-уд",
+    "homonymIndex": 2
   },
   {
     "id": "L-DYN",
@@ -928084,7 +927427,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-DYN - дын"
+    "notes": "P3 auto-generated from orphan root R-DYN - дын",
+    "homonymGroupId": "HG-дын",
+    "homonymIndex": 2
   },
   {
     "id": "L-ZYN",
@@ -928112,7 +927457,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-ZYN - зын"
+    "notes": "P3 auto-generated from orphan root R-ZYN - зын",
+    "homonymGroupId": "HG-зын",
+    "homonymIndex": 2
   },
   {
     "id": "L-NYO",
@@ -928140,7 +927487,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-NYO - ныо"
+    "notes": "P3 auto-generated from orphan root R-NYO - ныо",
+    "homonymGroupId": "HG-ныо",
+    "homonymIndex": 2
   },
   {
     "id": "L-UED",
@@ -928168,7 +927517,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-UED - уэд"
+    "notes": "P3 auto-generated from orphan root R-UED - уэд",
+    "homonymGroupId": "HG-уэд",
+    "homonymIndex": 2
   },
   {
     "id": "L-SEN",
@@ -928196,7 +927547,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-SEN - сэн"
+    "notes": "P3 auto-generated from orphan root R-SEN - сэн",
+    "homonymGroupId": "HG-сэн",
+    "homonymIndex": 2
   },
   {
     "id": "L-OR",
@@ -928224,7 +927577,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-OR - ор"
+    "notes": "P3 auto-generated from orphan root R-OR - ор",
+    "homonymGroupId": "HG-ор",
+    "homonymIndex": 2
   },
   {
     "id": "L-ARU",
@@ -928252,7 +927607,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-ARU - ару"
+    "notes": "P3 auto-generated from orphan root R-ARU - ару",
+    "homonymGroupId": "HG-ару",
+    "homonymIndex": 1
   },
   {
     "id": "L-BYZH",
@@ -928280,7 +927637,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-BYZH - быж"
+    "notes": "P3 auto-generated from orphan root R-BYZH - быж",
+    "homonymGroupId": "HG-быж",
+    "homonymIndex": 1
   },
   {
     "id": "L-CHIY",
@@ -928308,7 +927667,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-CHIY - чий"
+    "notes": "P3 auto-generated from orphan root R-CHIY - чий",
+    "homonymGroupId": "HG-чий",
+    "homonymIndex": 1
   },
   {
     "id": "L-DIYA",
@@ -928336,7 +927697,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-DIYA - дия"
+    "notes": "P3 auto-generated from orphan root R-DIYA - дия",
+    "homonymGroupId": "HG-дия",
+    "homonymIndex": 1
   },
   {
     "id": "L-DZHA",
@@ -928364,7 +927727,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-DZHA - джа"
+    "notes": "P3 auto-generated from orphan root R-DZHA - джа",
+    "homonymGroupId": "HG-джа",
+    "homonymIndex": 2
   },
   {
     "id": "L-ELE",
@@ -928392,7 +927757,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-ELE - елэ"
+    "notes": "P3 auto-generated from orphan root R-ELE - елэ",
+    "homonymGroupId": "HG-елэ",
+    "homonymIndex": 2
   },
   {
     "id": "L-ES",
@@ -928420,7 +927787,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-ES - ес"
+    "notes": "P3 auto-generated from orphan root R-ES - ес",
+    "homonymGroupId": "HG-ес",
+    "homonymIndex": 2
   },
   {
     "id": "L-ESH",
@@ -928448,7 +927817,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-ESH - еш"
+    "notes": "P3 auto-generated from orphan root R-ESH - еш",
+    "homonymGroupId": "HG-еш",
+    "homonymIndex": 2
   },
   {
     "id": "L-GIE",
@@ -928476,7 +927847,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-GIE - гие"
+    "notes": "P3 auto-generated from orphan root R-GIE - гие",
+    "homonymGroupId": "HG-гие",
+    "homonymIndex": 2
   },
   {
     "id": "L-GYE",
@@ -928504,7 +927877,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-GYE - гые"
+    "notes": "P3 auto-generated from orphan root R-GYE - гые",
+    "homonymGroupId": "HG-гые",
+    "homonymIndex": 2
   },
   {
     "id": "L-IZU",
@@ -928532,7 +927907,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-IZU - изу"
+    "notes": "P3 auto-generated from orphan root R-IZU - изу",
+    "homonymGroupId": "HG-изу",
+    "homonymIndex": 2
   },
   {
     "id": "L-NYSH",
@@ -928560,7 +927937,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-NYSH - ныш"
+    "notes": "P3 auto-generated from orphan root R-NYSH - ныш",
+    "homonymGroupId": "HG-ныш",
+    "homonymIndex": 1
   },
   {
     "id": "L-OD",
@@ -928588,7 +927967,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-OD - од"
+    "notes": "P3 auto-generated from orphan root R-OD - од",
+    "homonymGroupId": "HG-од",
+    "homonymIndex": 2
   },
   {
     "id": "L-SHCHIZ",
@@ -928616,7 +927997,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-SHCHIZ - щиз"
+    "notes": "P3 auto-generated from orphan root R-SHCHIZ - щиз",
+    "homonymGroupId": "HG-щиз",
+    "homonymIndex": 1
   },
   {
     "id": "L-TIY",
@@ -928644,7 +928027,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-TIY - тӀы"
+    "notes": "P3 auto-generated from orphan root R-TIY - тӀы",
+    "homonymGroupId": "HG-тӀы",
+    "homonymIndex": 2
   },
   {
     "id": "L-TOSHCH",
@@ -928672,7 +928057,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-TOSHCH - тощ"
+    "notes": "P3 auto-generated from orphan root R-TOSHCH - тощ",
+    "homonymGroupId": "HG-тощ",
+    "homonymIndex": 2
   },
   {
     "id": "L-UAE",
@@ -928700,7 +928087,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-UAE - уае"
+    "notes": "P3 auto-generated from orphan root R-UAE - уае",
+    "homonymGroupId": "HG-уае",
+    "homonymIndex": 2
   },
   {
     "id": "L-UEM",
@@ -928728,7 +928117,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-UEM - уэм"
+    "notes": "P3 auto-generated from orphan root R-UEM - уэм",
+    "homonymGroupId": "HG-уэм",
+    "homonymIndex": 2
   },
   {
     "id": "L-UFA",
@@ -928756,7 +928147,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-UFA - уфа"
+    "notes": "P3 auto-generated from orphan root R-UFA - уфа",
+    "homonymGroupId": "HG-уфа",
+    "homonymIndex": 2
   },
   {
     "id": "L-UKHA",
@@ -928784,7 +928177,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-UKHA - уха"
+    "notes": "P3 auto-generated from orphan root R-UKHA - уха",
+    "homonymGroupId": "HG-уха",
+    "homonymIndex": 1
   },
   {
     "id": "L-USHCH",
@@ -928812,7 +928207,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-USHCH - ущ"
+    "notes": "P3 auto-generated from orphan root R-USHCH - ущ",
+    "homonymGroupId": "HG-ущ",
+    "homonymIndex": 1
   },
   {
     "id": "L-UTS",
@@ -928840,7 +928237,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-UTS - уц"
+    "notes": "P3 auto-generated from orphan root R-UTS - уц",
+    "homonymGroupId": "HG-уц",
+    "homonymIndex": 2
   },
   {
     "id": "L-UZU",
@@ -928868,7 +928267,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-UZU - узу"
+    "notes": "P3 auto-generated from orphan root R-UZU - узу",
+    "homonymGroupId": "HG-узу",
+    "homonymIndex": 1
   },
   {
     "id": "L-ZHEY",
@@ -928896,7 +928297,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-ZHEY - жей"
+    "notes": "P3 auto-generated from orphan root R-ZHEY - жей",
+    "homonymGroupId": "HG-жей",
+    "homonymIndex": 2
   },
   {
     "id": "L-DZY",
@@ -928924,7 +928327,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-DZY - дзын"
+    "notes": "P3 auto-generated from orphan root R-DZY - дзын",
+    "homonymGroupId": "HG-дзын",
+    "homonymIndex": 1
   },
   {
     "id": "L-BLY_ORPHAN",
@@ -928952,7 +928357,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-BLY - блы"
+    "notes": "P3 auto-generated from orphan root R-BLY - блы",
+    "homonymGroupId": "HG-блы",
+    "homonymIndex": 2
   },
   {
     "id": "L-PSO_ORPHAN",
@@ -928980,7 +928387,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-PSO - псо"
+    "notes": "P3 auto-generated from orphan root R-PSO - псо",
+    "homonymGroupId": "HG-псо",
+    "homonymIndex": 2
   },
   {
     "id": "L-TSE",
@@ -929008,7 +928417,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-TSE - цэ"
+    "notes": "P3 auto-generated from orphan root R-TSE - цэ",
+    "homonymGroupId": "HG-цэ",
+    "homonymIndex": 2
   },
   {
     "id": "L-NY",
@@ -929036,7 +928447,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-NY - ны"
+    "notes": "P3 auto-generated from orphan root R-NY - ны",
+    "homonymGroupId": "HG-ны",
+    "homonymIndex": 2
   },
   {
     "id": "L-TSU",
@@ -929064,7 +928477,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-TSU - цу"
+    "notes": "P3 auto-generated from orphan root R-TSU - цу",
+    "homonymGroupId": "HG-цу",
+    "homonymIndex": 2
   },
   {
     "id": "L-LE",
@@ -929092,7 +928507,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-LE - лэ"
+    "notes": "P3 auto-generated from orphan root R-LE - лэ",
+    "homonymGroupId": "HG-лэ",
+    "homonymIndex": 2
   },
   {
     "id": "L-DU",
@@ -929120,7 +928537,9 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-DU - ду"
+    "notes": "P3 auto-generated from orphan root R-DU - ду",
+    "homonymGroupId": "HG-ду",
+    "homonymIndex": 1
   },
   {
     "id": "L-UE_ORPHAN",
@@ -929148,6 +928567,8 @@
     "dialect": "common",
     "etymologyType": "native",
     "corpusFrequency": 0,
-    "notes": "P3 auto-generated from orphan root R-UE - уэ"
+    "notes": "P3 auto-generated from orphan root R-UE - уэ",
+    "homonymGroupId": "HG-уэ",
+    "homonymIndex": 9
   }
 ]
