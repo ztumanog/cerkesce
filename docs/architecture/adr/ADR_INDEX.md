@@ -163,3 +163,5 @@ Bu dosya, tum ADR katalogunun TEK RESMI KAYNAGIDIR.
 ## Politika Belgeleri
 
 - ADR_NUMBERING_POLICY.md — ADR numaralandırma politikası
+
+| ADR-LEX-002 | Concept Registry Freeze | KABUL EDILDI | 2026-10-24 | K1-K5; Lexeme = sahibi; registry read-only |

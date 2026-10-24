@@ -271,3 +271,7 @@ _scripts/tr_gold_batches/
 /exclude_gecmisi.txt
 /sprint-3.5-pipeline.py
 /vitest-result.json
+
+*.bak_*
+*.bak.
+_adrlex_*.bak*

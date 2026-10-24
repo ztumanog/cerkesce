@@ -12,12 +12,12 @@
  * Kurallar:
  * - null/undefined → false
  * - KAVRAM_ ile başlayan → false (Rusça gloss kaynaklı geçici kimlik)
- * - Sadece BÜYÜK_HARF_ve_ALTÇİZGİ → true
+ * - Sadece BÜYÜK_HARF (Türkçe harfler dahil: Ç Ğ İ Ö Ş Ü) ve ALTÇİZGİ → true
  */
 export function isDisplayableConceptId(id: string | null | undefined): id is string {
   if (!id) return false;
   if (id.startsWith('KAVRAM_')) return false; // Rusça gloss kaynaklı geçici kimlik
-  return /^[A-Z][A-Z0-9_]*$/.test(id);
+  return /^[A-ZÇĞİÖŞÜ][A-ZÇĞİÖŞÜ0-9_]*$/.test(id);
 }
 
 /**

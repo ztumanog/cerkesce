@@ -3,7 +3,7 @@
 import { useState, useCallback, useMemo, useRef } from 'react';
 import SearchBox from '@/components/dictionary/SearchBox';
 import KelimeKarti from '@/components/dictionary/KelimeKarti';
-import KelimeDetayDrawer from '@/components/ui/KelimeDetayDrawer';
+import KelimeDetayDrawer from '@/components/dictionary/KelimeDetayDrawer';
 import GununKelimesiKart from '@/components/dictionary/GununKelimesiKart';
 import DialectFilter, {
   type DialectFilterValue,
@@ -404,6 +404,7 @@ export default function SozlukEkrani() {
     </div>
   );
 }
+
 
 
 
