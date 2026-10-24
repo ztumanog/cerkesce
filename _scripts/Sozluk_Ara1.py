@@ -7,6 +7,7 @@ import unicodedata
 import os
 from pathlib import Path
 
+
 # Thonny için proje kökü
 PROJE_KOKU = Path("E:/projeler/Cerkesce")
 

@@ -1,0 +1,94 @@
+[
+  {
+    "id": "R-SHER",
+    "form": "шэрджэс",
+    "primaryMeaning": null,
+    "productivity": {
+      "corpusFrequency": 1850
+    },
+    "wordFamily": {
+      "id": "WF-SHER",
+      "lexemeIds": [
+        "L-SHERDJES"
+      ]
+    },
+    "anlam": "Cerkes; Adige etnonim",
+    "type": "loanword"
+  },
+  {
+    "id": "R-DEL",
+    "form": "деле",
+    "primaryMeaning": null,
+    "productivity": {
+      "corpusFrequency": 3800
+    },
+    "wordFamily": {
+      "id": "WF-DEL",
+      "lexemeIds": [
+        "L-KBD-00879"
+      ]
+    },
+    "anlam": "deli; aptal",
+    "type": "loanword"
+  },
+  {
+    "id": "R-MUR",
+    "form": "мурад",
+    "primaryMeaning": null,
+    "productivity": {
+      "corpusFrequency": 3000
+    },
+    "wordFamily": {
+      "id": "WF-MUR",
+      "lexemeIds": [
+        "L-MURAD"
+      ]
+    },
+    "anlam": "amac; niyet",
+    "type": "loanword"
+  },
+  {
+    "id": "R-NAMYS",
+    "form": "намыс",
+    "primaryMeaning": "onur",
+    "semanticDomains": [
+      "abstract"
+    ],
+    "source": "migration-v2",
+    "status": "PENDING_REVIEW",
+    "wordFamily": {
+      "id": "WF-NAMYS",
+      "lexemeIds": [],
+      "conceptIds": [],
+      "morphemeIds": [],
+      "productivity": {
+        "totalLexemes": 0,
+        "corpusFrequency": 0
+      },
+      "notes": "263 kok temizligi sirasinda eklendi"
+    },
+    "type": "loanword"
+  },
+  {
+    "id": "R-ZHYR",
+    "form": "жыр",
+    "primaryMeaning": "çelik",
+    "semanticDomains": [
+      "material"
+    ],
+    "source": "migration-v2",
+    "status": "PENDING_REVIEW",
+    "wordFamily": {
+      "id": "WF-ZHYR",
+      "lexemeIds": [],
+      "conceptIds": [],
+      "morphemeIds": [],
+      "productivity": {
+        "totalLexemes": 0,
+        "corpusFrequency": 0
+      },
+      "notes": "263 kok temizligi sirasinda eklendi"
+    },
+    "type": "loanword"
+  }
+]

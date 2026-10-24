@@ -1,0 +1,190 @@
+[
+  {
+    "id": "R-PRON-2SG",
+    "form": "уэ",
+    "ipa": "wɐ",
+    "primaryMeaning": "sen (2. tekil şahıs zamiri)",
+    "semanticDomains": [
+      "pronoun",
+      "grammar"
+    ],
+    "etymology": "[у] + -э",
+    "dialectVariants": {
+      "adyghe": "уэ",
+      "kabardian": "уэ"
+    },
+    "source": "Vikisozluk + Aparsev (2008)",
+    "wordFamily": {
+      "id": "WF-UE-PRON",
+      "lexemeIds": [
+        "L-UE-PRON"
+      ],
+      "conceptIds": [],
+      "morphemeIds": [],
+      "productivity": {
+        "totalLexemes": 0,
+        "corpusFrequency": 0
+      },
+      "notes": "уэ (sen) — Vikisözlük doğrulamalı"
+    },
+    "type": "grammar",
+    "originalId": "R-UE-PRON",
+    "notes": " | ID Ingilizce standarda cevrildi"
+  },
+  {
+    "id": "R-INTJ",
+    "form": "уэ",
+    "ipa": "wɐ",
+    "primaryMeaning": "ünlem (şaşkınlık, sevinç, üzüntü)",
+    "semanticDomains": [
+      "interjection",
+      "grammar"
+    ],
+    "etymology": "[у] + -э",
+    "dialectVariants": {
+      "adyghe": "уэ",
+      "kabardian": "уэ"
+    },
+    "source": "Vikisozluk",
+    "status": "PENDING_REVIEW",
+    "wordFamily": {
+      "id": "WF-UE-INTJ",
+      "lexemeIds": [
+        "L-UE-INTJ"
+      ],
+      "conceptIds": [],
+      "morphemeIds": [],
+      "productivity": {
+        "totalLexemes": 0,
+        "corpusFrequency": 0
+      },
+      "notes": "уэ (ünlem) — PENDING_REVIEW"
+    },
+    "type": "grammar",
+    "originalId": "R-UE-INTJ",
+    "notes": " | ID Ingilizce standarda cevrildi"
+  },
+  {
+    "id": "R-PART",
+    "form": "уэ",
+    "ipa": "wɐ",
+    "primaryMeaning": "ve, ise (bağlaç/edat)",
+    "semanticDomains": [
+      "particle",
+      "grammar"
+    ],
+    "etymology": "[у] + -э",
+    "dialectVariants": {
+      "adyghe": "уэ",
+      "kabardian": "уэ"
+    },
+    "source": "Vikisozluk",
+    "status": "PENDING_REVIEW",
+    "wordFamily": {
+      "id": "WF-UE-PART",
+      "lexemeIds": [
+        "L-UE-PART"
+      ],
+      "conceptIds": [],
+      "morphemeIds": [],
+      "productivity": {
+        "totalLexemes": 0,
+        "corpusFrequency": 0
+      },
+      "notes": "уэ (ve/ise) — PENDING_REVIEW"
+    },
+    "type": "grammar",
+    "originalId": "R-UE-PART",
+    "notes": " | ID Ingilizce standarda cevrildi"
+  },
+  {
+    "id": "R-ASHCH",
+    "form": "ащ",
+    "primaryMeaning": "çorba",
+    "semanticDomains": [
+      "food"
+    ],
+    "source": "migration-v2",
+    "status": "PENDING_REVIEW",
+    "wordFamily": {
+      "id": "WF-ASHCH",
+      "lexemeIds": [],
+      "conceptIds": [],
+      "morphemeIds": [],
+      "productivity": {
+        "totalLexemes": 0,
+        "corpusFrequency": 0
+      },
+      "notes": "263 kok temizligi sirasinda eklendi"
+    },
+    "type": "grammar"
+  },
+  {
+    "id": "R-EBZ",
+    "form": "ебз",
+    "primaryMeaning": "gübre",
+    "semanticDomains": [
+      "nature"
+    ],
+    "source": "migration-v2",
+    "status": "PENDING_REVIEW",
+    "wordFamily": {
+      "id": "WF-EBZ",
+      "lexemeIds": [],
+      "conceptIds": [],
+      "morphemeIds": [],
+      "productivity": {
+        "totalLexemes": 0,
+        "corpusFrequency": 0
+      },
+      "notes": "263 kok temizligi sirasinda eklendi"
+    },
+    "type": "grammar"
+  },
+  {
+    "id": "R-KHUE",
+    "form": "хуэ",
+    "primaryMeaning": "kiriş",
+    "semanticDomains": [
+      "body"
+    ],
+    "source": "migration-v2",
+    "status": "PENDING_REVIEW",
+    "wordFamily": {
+      "id": "WF-KHUE",
+      "lexemeIds": [],
+      "conceptIds": [],
+      "morphemeIds": [],
+      "productivity": {
+        "totalLexemes": 0,
+        "corpusFrequency": 0
+      },
+      "notes": "263 kok temizligi sirasinda eklendi"
+    },
+    "type": "grammar"
+  },
+  {
+    "id": "R-NUM-7",
+    "form": "блы",
+    "primaryMeaning": "yedi (7)",
+    "semanticDomains": [
+      "number"
+    ],
+    "source": "migration-v5",
+    "status": "PENDING_REVIEW",
+    "wordFamily": {
+      "id": "WF-BLY",
+      "lexemeIds": [],
+      "conceptIds": [],
+      "morphemeIds": [],
+      "productivity": {
+        "totalLexemes": 0,
+        "corpusFrequency": 0
+      },
+      "notes": "41 tanimsiz derivation temizligi"
+    },
+    "type": "grammar",
+    "originalId": "R-BLY",
+    "notes": " | ID Ingilizce standarda cevrildi"
+  }
+]

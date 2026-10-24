@@ -1,79 +1,61 @@
-// Sprint 2A.1 - Lexeme Curation: Salt-okunur listeleme (temiz surum)
-import Link from "next/link";
-import { getAllLexemes } from "@/lib/curation/lexemeStore";
-
-export const dynamic = "force-dynamic";
-
-export default async function CurationPage({
-  searchParams,
-}: {
-  searchParams: Promise<{ q?: string; debt?: string }>;
-}) {
-  const { q = "", debt } = await searchParams;
-  const all = getAllLexemes();
-
-  const query = q.trim().toLowerCase();
-  const filtered = all.filter((l) => {
-    const matchesQuery =
-      !query ||
-      l.form.toLowerCase().includes(query) ||
-      l.id.toLowerCase().includes(query);
-    const matchesDebt = debt === "1" ? !!l.technicalDebt : true;
-    return matchesQuery && matchesDebt;
-  });
-
-  const debtCount = all.filter((l) => l.technicalDebt).length;
-
+'use client';
+import { useState } from 'react';
+type Lexeme = { id: string; form: string; language: string; rootIds: string[]; wordFamilyId: string | null; conceptId: string | null; };
+export default function CurationPage() {
+  const [query, setQuery] = useState('');
+  const [results, setResults] = useState<Lexeme[]>([]);
+  const [selected, setSelected] = useState<Lexeme | null>(null);
+  const [draft, setDraft] = useState<Partial<Lexeme>>({});
+  const [preview, setPreview] = useState<any>(null);
+  const [status, setStatus] = useState('');
+  async function search() {
+    const res = await fetch(`/api/curation/lexemes?q=${encodeURIComponent(query)}`);
+    if (!res.ok) { setStatus(`API 404: ${res.status} - /api/curation/lexemes bulunamadi`); return; }
+    setResults(await res.json()); setStatus('');
+  }
+  async function open(l: Lexeme) { setSelected(l); setDraft({ rootIds: l.rootIds, wordFamilyId: l.wordFamilyId, conceptId: l.conceptId }); setStatus(''); }
+  async function save() {
+    const res = await fetch('/api/curation/lexemes/update', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ id: selected!.id, changes: draft, mode: 'dry-run' }) });
+    setPreview(await res.json());
+  }
+  async function apply() {
+    const res = await fetch('/api/curation/lexemes/update', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ id: selected!.id, changes: draft, mode: 'apply' }) });
+    if (res.ok) { setStatus('✅ Uygulandı, backup alındı, audit log yazıldı'); setPreview(null); }
+  }
   return (
-    <main className="mx-auto max-w-4xl p-6">
-      <h1 className="text-2xl font-bold">Lexeme Curation</h1>
-      <p className="mt-1 text-sm text-gray-500">
-        Toplam {all.length} lexeme - KAVRAM borcu: {debtCount}
-      </p>
-
-      <form className="mt-4 flex gap-2" action="/admin/curation">
-        <input
-          name="q"
-          defaultValue={q}
-          placeholder="Form veya ID ara... (orn. гуфӀэ)"
-          className="flex-1 rounded border px-3 py-2"
-        />
-        <label className="flex items-center gap-1 rounded border px-3 text-sm">
-          <input type="checkbox" name="debt" value="1"
-            defaultChecked={debt === "1"} />
-          Sadece borclu
-        </label>
-        <button className="rounded bg-blue-600 px-4 py-2 text-white">
-          Ara
-        </button>
-      </form>
-
-      <ul className="mt-4 divide-y rounded border">
-        {filtered.slice(0, 100).map((l) => (
-          <li key={l.id}>
-            <Link
-              href={`/admin/curation/${encodeURIComponent(l.id)}`}
-              className="flex items-center justify-between px-4 py-3 hover:bg-gray-50"
-            >
-              <span className="font-medium" dir="auto">{l.form}</span>
-              <span className="flex gap-2 text-xs text-gray-500">
-                {l.technicalDebt && (
-                  <span className="rounded bg-amber-100 px-2 py-0.5 text-amber-700">
-                    KAVRAM borcu
-                  </span>
-                )}
-                <span>{l.wordFamilyId}</span>
-                <span>{l.id}</span>
-              </span>
-            </Link>
+    <div className="p-6 space-y-4 max-w-4xl mx-auto">
+      <h1 className="text-xl font-bold">Lexeme Düzenleyici - /admin/curation</h1>
+      <div className="flex gap-2">
+        <input value={query} onChange={e => setQuery(e.target.value)} placeholder="Lexeme ara (VÜCUT, цӀыф, HUMAN...)" className="border px-3 py-2 rounded w-full" />
+        <button onClick={search} className="bg-blue-600 text-white px-4 rounded">Ara</button>
+      </div>
+      {status && <p className="text-sm p-2 bg-yellow-50 border rounded">{status}</p>}
+      <ul className="divide-y border rounded">
+        {results.map(l => (
+          <li key={l.id} onClick={() => open(l)} className="cursor-pointer px-3 py-2 hover:bg-gray-100">
+            <b>{l.form}</b> <span className="text-gray-500">[{l.language}]</span> → concept: {l.conceptId ?? '—'} | roots: {l.rootIds.join(',')}
           </li>
         ))}
       </ul>
-      {filtered.length > 100 && (
-        <p className="mt-2 text-sm text-gray-500">
-          Ilk 100 kayit gosteriliyor - aramayla daraltin.
-        </p>
+      {selected && (
+        <div className="border p-4 rounded space-y-3 bg-white">
+          <h2 className="font-semibold">{selected.form} ({selected.id})</h2>
+          <label className="block">rootIds:<input value={(draft.rootIds ?? []).join(', ')} onChange={e => setDraft(d => ({ ...d, rootIds: e.target.value.split(',').map(s => s.trim()).filter(Boolean) }))} className="border px-2 py-1 rounded w-full" /></label>
+          <label className="block">wordFamilyId:<input value={draft.wordFamilyId ?? ''} onChange={e => setDraft(d => ({ ...d, wordFamilyId: e.target.value || null }))} className="border px-2 py-1 rounded w-full" /></label>
+          <label className="block">conceptId:<input value={draft.conceptId ?? ''} onChange={e => setDraft(d => ({ ...d, conceptId: e.target.value || null }))} className="border px-2 py-1 rounded w-full" /></label>
+          <button onClick={save} className="bg-green-600 text-white px-4 py-2 rounded">Kaydet (dry-run)</button>
+        </div>
       )}
-    </main>
+      {preview && (
+        <div className="border-2 border-orange-400 p-4 rounded bg-orange-50">
+          <h3 className="font-bold">DRY-RUN ÖNİZLEME — emin misin?</h3>
+          <pre className="text-sm bg-white p-2 rounded overflow-auto max-h-64">{JSON.stringify(preview, null, 2)}</pre>
+          <div className="flex gap-2 mt-2">
+            <button onClick={apply} className="bg-red-600 text-white px-4 py-2 rounded">✅ Onayla & Apply</button>
+            <button onClick={() => setPreview(null)} className="border px-4 py-2 rounded bg-white">İptal</button>
+          </div>
+        </div>
+      )}
+    </div>
   );
 }
