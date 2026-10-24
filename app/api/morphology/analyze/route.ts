@@ -3,10 +3,27 @@ import fs from 'fs';
 import path from 'path';
 import { MorphologyAnalyzer, KnownRoot } from '@/domain/morphology/MorphologyAnalyzer';
 
+import { affixesFromRoot, fillDialectVariants, cleanWordFamily } from '@/domain/morphology/rootAffixes';
+
+const indexCache = new WeakMap<object, { lexById: Map<string, any>; rootById: Map<string, any> }>();
+function getIndexes(data: { lexemes: any[]; roots: any[] }) {
+  let idx = indexCache.get(data);
+  if (!idx) {
+    idx = {
+      lexById: new Map(data.lexemes.map((l: any) => [l.id, l])),
+      rootById: new Map(data.roots.map((r: any) => [r.id, r])),
+    };
+    indexCache.set(data, idx);
+  }
+  return idx;
+}
+
+
 let cachedData: {
   roots: any[];
   morphemes: any[];
   lexemes: any[];
+  wordFamilies: any[];
   freqKbd: Record<string, number>;
   freqAdy: Record<string, number>;
 } | null = null;
@@ -17,6 +34,7 @@ function loadData() {
   const rootsPath = path.resolve('./public/data/linguistic/roots.json');
   const morphemesPath = path.resolve('./public/data/linguistic/morphemes.json');
   const lexemesPath = path.resolve('./public/data/linguistic/lexemes.json');
+  const wordFamiliesPath = path.resolve('./public/data/linguistic/word_families.json');
   const freqKbdPath = path.resolve('./data/corpus/frequency/lexeme_freq_kbd.json');
   const freqAdyPath = path.resolve('./data/corpus/frequency/lexeme_freq_ady.json');
 
@@ -24,6 +42,7 @@ function loadData() {
     roots: fs.existsSync(rootsPath) ? JSON.parse(fs.readFileSync(rootsPath, 'utf-8')) : [],
     morphemes: fs.existsSync(morphemesPath) ? JSON.parse(fs.readFileSync(morphemesPath, 'utf-8')) : [],
     lexemes: fs.existsSync(lexemesPath) ? JSON.parse(fs.readFileSync(lexemesPath, 'utf-8')) : [],
+    wordFamilies: fs.existsSync(wordFamiliesPath) ? JSON.parse(fs.readFileSync(wordFamiliesPath, 'utf-8')) : [],
     freqKbd: fs.existsSync(freqKbdPath) ? JSON.parse(fs.readFileSync(freqKbdPath, 'utf-8')) : {},
     freqAdy: fs.existsSync(freqAdyPath) ? JSON.parse(fs.readFileSync(freqAdyPath, 'utf-8')) : {},
   };
@@ -51,7 +70,7 @@ export async function POST(req: NextRequest) {
     // Tum anlamlardan POS belirle
     const hasVerb = exactLexemes.some((l: any) => l.partOfSpeech === 'verb');
     const hasNoun = exactLexemes.some((l: any) => l.partOfSpeech === 'noun');
-    
+
     let lemmaPos: string;
     if (hasVerb && hasNoun) lemmaPos = 'VERB/NOUN';
     else if (hasVerb) lemmaPos = 'VERB';
@@ -59,11 +78,30 @@ export async function POST(req: NextRequest) {
     else lemmaPos = 'NOUN/LEMMA';
 
     const first = exactLexemes[0];
+    const { lexById, rootById } = getIndexes(data);
+
+    // Kok kaydi: rootIds icinden ilk bulunan
+    const root = (first.rootIds || []).map((rid: string) => rootById.get(rid)).find(Boolean);
+
+    // Ekler kokun etymology alanindan gelir (yalnizca kelime formu kok formuyla ayniysa)
+    const { prefixes, suffixes } = affixesFromRoot(first, root);
+
+    // Bos lehce alanlari yalnizca kok kaydindan doldurulur (tahmin uretilmez)
+    const dialectVariants = fillDialectVariants(first, root);
+
+    const familyRecord = data.wordFamilies?.find((w: any) => w.id === first.wordFamilyId);
+    const wordFamily = cleanWordFamily(
+      (familyRecord?.lexemeIds || []).map((lid: string) => {
+        const l = lexById.get(lid);
+        return { id: lid, form: l?.form, literalMeaning: l?.literalMeaning, partOfSpeech: l?.partOfSpeech };
+      })
+    );
+
     return NextResponse.json({
       word: normalized,
-      prefixes: [],
+      prefixes,
       root: first.form,
-      prefixCount: 0,
+      prefixCount: prefixes.length,
       method: 'dictionary',
       confidence: 1.0,
       source: first.literalMeaning,
@@ -74,19 +112,19 @@ export async function POST(req: NextRequest) {
         ipa: first.ipa,
         literalMeaning: first.literalMeaning,
         partOfSpeech: first.partOfSpeech,
-        dialectVariants: first.dialectVariants,
+        dialectVariants,
         wordFamilyId: first.wordFamilyId,
         rootIds: first.rootIds || [],
         conceptId: first.conceptId || null,
         notes: first.notes,
       },
-      wordFamily: [],
+      wordFamily,
       lemma: first.form,
       lemmaPos,
       lemmaConfidence: 1.0,
       personArguments: [],
-      lemmaPrefixes: [],
-      lemmaSuffixes: [],
+      lemmaPrefixes: prefixes,
+      lemmaSuffixes: suffixes,
       rootMatches: [],
       frequency: { kabardian: freqKbd, adyghe: freqAdy },
       allMeanings: exactLexemes.map((l: any) => ({
