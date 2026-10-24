@@ -14299,21 +14299,6 @@
     }
   },
   {
-    "id": "R-SHER",
-    "form": "шэрджэс",
-    "primaryMeaning": null,
-    "productivity": {
-      "corpusFrequency": 1850
-    },
-    "wordFamily": {
-      "id": "WF-SHER",
-      "lexemeIds": [
-        "L-SHERDJES"
-      ]
-    },
-    "anlam": "Cerkes; Adige etnonim"
-  },
-  {
     "id": "R-SHCHIA",
     "form": "щӀалэ",
     "primaryMeaning": null,
@@ -16808,21 +16793,6 @@
     "anlam": "tatli; sekerli"
   },
   {
-    "id": "R-DEL",
-    "form": "деле",
-    "primaryMeaning": null,
-    "productivity": {
-      "corpusFrequency": 3800
-    },
-    "wordFamily": {
-      "id": "WF-DEL",
-      "lexemeIds": [
-        "L-KBD-00879"
-      ]
-    },
-    "anlam": "deli; aptal"
-  },
-  {
     "id": "R-BESH",
     "form": "бэшэч",
     "primaryMeaning": null,
@@ -16899,21 +16869,6 @@
         "KAV-SHYNAGHENSHE"
       ]
     }
-  },
-  {
-    "id": "R-MUR",
-    "form": "мурад",
-    "primaryMeaning": null,
-    "productivity": {
-      "corpusFrequency": 3000
-    },
-    "wordFamily": {
-      "id": "WF-MUR",
-      "lexemeIds": [
-        "L-MURAD"
-      ]
-    },
-    "anlam": "amac; niyet"
   },
   {
     "id": "R-KHEK",
@@ -25006,35 +24961,6 @@
     }
   },
   {
-    "id": "R-UE-PRON",
-    "form": "уэ",
-    "ipa": "wɐ",
-    "primaryMeaning": "sen (2. tekil şahıs zamiri)",
-    "semanticDomains": [
-      "pronoun",
-      "grammar"
-    ],
-    "etymology": "[у] + -э",
-    "dialectVariants": {
-      "adyghe": "уэ",
-      "kabardian": "уэ"
-    },
-    "source": "Vikisozluk + Aparsev (2008)",
-    "wordFamily": {
-      "id": "WF-UE-PRON",
-      "lexemeIds": [
-        "L-UE-PRON"
-      ],
-      "conceptIds": [],
-      "morphemeIds": [],
-      "productivity": {
-        "totalLexemes": 0,
-        "corpusFrequency": 0
-      },
-      "notes": "уэ (sen) — Vikisözlük doğrulamalı"
-    }
-  },
-  {
     "id": "R-UE-AIR",
     "form": "уэ",
     "ipa": "wɐ",
@@ -25060,66 +24986,6 @@
         "corpusFrequency": 0
       },
       "notes": "уэ (hava) — PENDING_REVIEW"
-    }
-  },
-  {
-    "id": "R-UE-INTJ",
-    "form": "уэ",
-    "ipa": "wɐ",
-    "primaryMeaning": "ünlem (şaşkınlık, sevinç, üzüntü)",
-    "semanticDomains": [
-      "interjection",
-      "grammar"
-    ],
-    "etymology": "[у] + -э",
-    "dialectVariants": {
-      "adyghe": "уэ",
-      "kabardian": "уэ"
-    },
-    "source": "Vikisozluk",
-    "status": "PENDING_REVIEW",
-    "wordFamily": {
-      "id": "WF-UE-INTJ",
-      "lexemeIds": [
-        "L-UE-INTJ"
-      ],
-      "conceptIds": [],
-      "morphemeIds": [],
-      "productivity": {
-        "totalLexemes": 0,
-        "corpusFrequency": 0
-      },
-      "notes": "уэ (ünlem) — PENDING_REVIEW"
-    }
-  },
-  {
-    "id": "R-UE-PART",
-    "form": "уэ",
-    "ipa": "wɐ",
-    "primaryMeaning": "ve, ise (bağlaç/edat)",
-    "semanticDomains": [
-      "particle",
-      "grammar"
-    ],
-    "etymology": "[у] + -э",
-    "dialectVariants": {
-      "adyghe": "уэ",
-      "kabardian": "уэ"
-    },
-    "source": "Vikisozluk",
-    "status": "PENDING_REVIEW",
-    "wordFamily": {
-      "id": "WF-UE-PART",
-      "lexemeIds": [
-        "L-UE-PART"
-      ],
-      "conceptIds": [],
-      "morphemeIds": [],
-      "productivity": {
-        "totalLexemes": 0,
-        "corpusFrequency": 0
-      },
-      "notes": "уэ (ve/ise) — PENDING_REVIEW"
     }
   },
   {
@@ -26808,48 +26674,6 @@
     }
   },
   {
-    "id": "R-NAMYS",
-    "form": "намыс",
-    "primaryMeaning": "onur",
-    "semanticDomains": [
-      "abstract"
-    ],
-    "source": "migration-v2",
-    "status": "PENDING_REVIEW",
-    "wordFamily": {
-      "id": "WF-NAMYS",
-      "lexemeIds": [],
-      "conceptIds": [],
-      "morphemeIds": [],
-      "productivity": {
-        "totalLexemes": 0,
-        "corpusFrequency": 0
-      },
-      "notes": "263 kok temizligi sirasinda eklendi"
-    }
-  },
-  {
-    "id": "R-ASHCH",
-    "form": "ащ",
-    "primaryMeaning": "çorba",
-    "semanticDomains": [
-      "food"
-    ],
-    "source": "migration-v2",
-    "status": "PENDING_REVIEW",
-    "wordFamily": {
-      "id": "WF-ASHCH",
-      "lexemeIds": [],
-      "conceptIds": [],
-      "morphemeIds": [],
-      "productivity": {
-        "totalLexemes": 0,
-        "corpusFrequency": 0
-      },
-      "notes": "263 kok temizligi sirasinda eklendi"
-    }
-  },
-  {
     "id": "R-BE",
     "form": "бэ",
     "primaryMeaning": "çok",
@@ -26923,27 +26747,6 @@
     "status": "PENDING_REVIEW",
     "wordFamily": {
       "id": "WF-BEV",
-      "lexemeIds": [],
-      "conceptIds": [],
-      "morphemeIds": [],
-      "productivity": {
-        "totalLexemes": 0,
-        "corpusFrequency": 0
-      },
-      "notes": "263 kok temizligi sirasinda eklendi"
-    }
-  },
-  {
-    "id": "R-ZHYR",
-    "form": "жыр",
-    "primaryMeaning": "çelik",
-    "semanticDomains": [
-      "material"
-    ],
-    "source": "migration-v2",
-    "status": "PENDING_REVIEW",
-    "wordFamily": {
-      "id": "WF-ZHYR",
       "lexemeIds": [],
       "conceptIds": [],
       "morphemeIds": [],
@@ -27039,27 +26842,6 @@
     }
   },
   {
-    "id": "R-EBZ",
-    "form": "ебз",
-    "primaryMeaning": "gübre",
-    "semanticDomains": [
-      "nature"
-    ],
-    "source": "migration-v2",
-    "status": "PENDING_REVIEW",
-    "wordFamily": {
-      "id": "WF-EBZ",
-      "lexemeIds": [],
-      "conceptIds": [],
-      "morphemeIds": [],
-      "productivity": {
-        "totalLexemes": 0,
-        "corpusFrequency": 0
-      },
-      "notes": "263 kok temizligi sirasinda eklendi"
-    }
-  },
-  {
     "id": "R-SHKHU",
     "form": "шху",
     "primaryMeaning": "yoğurt",
@@ -27091,27 +26873,6 @@
     "status": "PENDING_REVIEW",
     "wordFamily": {
       "id": "WF-MAE",
-      "lexemeIds": [],
-      "conceptIds": [],
-      "morphemeIds": [],
-      "productivity": {
-        "totalLexemes": 0,
-        "corpusFrequency": 0
-      },
-      "notes": "263 kok temizligi sirasinda eklendi"
-    }
-  },
-  {
-    "id": "R-KHUE",
-    "form": "хуэ",
-    "primaryMeaning": "kiriş",
-    "semanticDomains": [
-      "body"
-    ],
-    "source": "migration-v2",
-    "status": "PENDING_REVIEW",
-    "wordFamily": {
-      "id": "WF-KHUE",
       "lexemeIds": [],
       "conceptIds": [],
       "morphemeIds": [],
@@ -28488,27 +28249,6 @@
     }
   },
   {
-    "id": "R-BLY",
-    "form": "блы",
-    "primaryMeaning": "yedi (7)",
-    "semanticDomains": [
-      "number"
-    ],
-    "source": "migration-v5",
-    "status": "PENDING_REVIEW",
-    "wordFamily": {
-      "id": "WF-BLY",
-      "lexemeIds": [],
-      "conceptIds": [],
-      "morphemeIds": [],
-      "productivity": {
-        "totalLexemes": 0,
-        "corpusFrequency": 0
-      },
-      "notes": "41 tanimsiz derivation temizligi"
-    }
-  },
-  {
     "id": "R-PSO",
     "form": "псо",
     "primaryMeaning": "butun, hepsi",
@@ -28654,5 +28394,71 @@
       },
       "notes": "41 tanimsiz derivation temizligi"
     }
+  },
+  {
+    "id": "R-ASHCH",
+    "form": "ащ",
+    "primaryMeaning": "çorba",
+    "semanticDomains": [
+      "food"
+    ],
+    "source": "migration-v2",
+    "status": "PENDING_REVIEW",
+    "wordFamily": {
+      "id": "WF-ASHCH",
+      "lexemeIds": [],
+      "conceptIds": [],
+      "morphemeIds": [],
+      "productivity": {
+        "totalLexemes": 0,
+        "corpusFrequency": 0
+      },
+      "notes": "263 kok temizligi sirasinda eklendi"
+    },
+    "type": "noun"
+  },
+  {
+    "id": "R-EBZ",
+    "form": "ебз",
+    "primaryMeaning": "gübre",
+    "semanticDomains": [
+      "nature"
+    ],
+    "source": "migration-v2",
+    "status": "PENDING_REVIEW",
+    "wordFamily": {
+      "id": "WF-EBZ",
+      "lexemeIds": [],
+      "conceptIds": [],
+      "morphemeIds": [],
+      "productivity": {
+        "totalLexemes": 0,
+        "corpusFrequency": 0
+      },
+      "notes": "263 kok temizligi sirasinda eklendi"
+    },
+    "type": "noun"
+  },
+  {
+    "id": "R-KHUE",
+    "form": "хуэ",
+    "primaryMeaning": "kiriş",
+    "semanticDomains": [
+      "body"
+    ],
+    "source": "migration-v2",
+    "status": "PENDING_REVIEW",
+    "wordFamily": {
+      "id": "WF-KHUE",
+      "lexemeIds": [],
+      "conceptIds": [],
+      "morphemeIds": [],
+      "productivity": {
+        "totalLexemes": 0,
+        "corpusFrequency": 0
+      },
+      "notes": "263 kok temizligi sirasinda eklendi"
+    },
+    "type": "verb_root"
   }
 ]
