@@ -28487,138 +28487,63 @@
     "status": "ACTIVE"
   },
   {
-    "id": "WF-K1E-ROOT",
-    "name": "кӀэ (kuyruk/uç)",
-    "conceptId": "OBJECT",
-    "description": "İsim kökü: kuyruk, uç, parça",
-    "rootId": "R-K1E-ROOT",
-    "lexemeIds": [],
-    "morphemeIds": [],
-    "productivity": {
-      "totalLexemes": 0,
-      "corpusFrequency": 0
-    },
-    "notes": "Faz 5 / Adım 5.3: kIэ ve къы morfem analizi",
-    "status": "ACTIVE"
+    "id": "WF-K1E",
+    "rootId": "R-K1E",
+    "notes": "кӀэ (el?) - 61 lexeme"
   },
   {
-    "id": "WF-K1E-SEED",
-    "name": "кӀэ (tohum)",
-    "conceptId": "PLANT",
-    "description": "İsim kökü: tohum, çekirdek",
-    "rootId": "R-K1E-SEED",
-    "lexemeIds": [],
-    "morphemeIds": [],
-    "productivity": {
-      "totalLexemes": 0,
-      "corpusFrequency": 0
-    },
-    "notes": "Faz 5 / Adım 5.3: kIэ ve къы morfem analizi",
-    "status": "ACTIVE"
+    "id": "WF-F1E",
+    "rootId": "R-F1E",
+    "notes": "фӀэ? - 13 lexeme"
   },
   {
-    "id": "WF-K1E-ADJ",
-    "name": "кӀэ (esnek)",
-    "conceptId": "PROPERTY",
-    "description": "Sıfat kökü: esnek, bükülgen",
-    "rootId": "R-K1E-ADJ",
-    "lexemeIds": [],
-    "morphemeIds": [],
-    "productivity": {
-      "totalLexemes": 0,
-      "corpusFrequency": 0
-    },
-    "notes": "Faz 5 / Adım 5.3: kIэ ve къы morfem analizi",
-    "status": "ACTIVE"
+    "id": "WF-SHHXHEL",
+    "rootId": "R-SHHXHEL",
+    "notes": "щхьэл? - 12 lexeme"
   },
   {
-    "id": "WF-K1E-VERB",
-    "name": "кӀэ- (cıvıldamak/dönmek)",
-    "conceptId": "ACTION",
-    "description": "Fiil kökü: cıvıldamak, dönmek",
-    "rootId": "R-K1E-VERB",
-    "lexemeIds": [],
-    "morphemeIds": [],
-    "productivity": {
-      "totalLexemes": 0,
-      "corpusFrequency": 0
-    },
-    "notes": "Faz 5 / Adım 5.3: kIэ ve къы morfem analizi",
-    "status": "ACTIVE"
+    "id": "WF-RE",
+    "rootId": "R-RE",
+    "notes": "-рэ eki - 7 lexeme"
   },
   {
-    "id": "WF-K1E-PREVERB",
-    "name": "кӀэ- (arkasında)",
-    "conceptId": "LOCATION",
-    "description": "Lokatif önek: arkasında",
-    "rootId": "R-K1E-PREVERB",
-    "lexemeIds": [],
-    "morphemeIds": [],
-    "productivity": {
-      "totalLexemes": 0,
-      "corpusFrequency": 0
-    },
-    "notes": "Faz 5 / Adım 5.3: kIэ ve къы morfem analizi",
-    "status": "ACTIVE"
+    "id": "WF-PRONOUN-",
+    "rootId": null,
+    "notes": "Zamir - 6 lexeme (ID eksik)"
   },
   {
-    "id": "WF-K1E-SUFFIX",
-    "name": "-кӀэ (ek)",
-    "conceptId": "RELATIONS",
-    "description": "İsim eki: tarz, -lık, vadi, doğru, -sa bile",
-    "rootId": "R-K1E-SUFFIX",
-    "lexemeIds": [],
-    "morphemeIds": [],
-    "productivity": {
-      "totalLexemes": 0,
-      "corpusFrequency": 0
-    },
-    "notes": "Faz 5 / Adım 5.3: kIэ ve къы morfem analizi",
-    "status": "ACTIVE"
+    "id": "WF-ADVERB-",
+    "rootId": null,
+    "notes": "Zarf - 5 lexeme (ID eksik)"
   },
   {
-    "id": "WF-KY-ROOT",
-    "name": "къы (yosun/erik)",
-    "conceptId": "PLANT",
-    "description": "İsim kökü: yosun, erik",
-    "rootId": "R-KY-ROOT",
-    "lexemeIds": [],
-    "morphemeIds": [],
-    "productivity": {
-      "totalLexemes": 0,
-      "corpusFrequency": 0
-    },
-    "notes": "Faz 5 / Adım 5.3: kIэ ve къы morfem analizi",
-    "status": "ACTIVE"
+    "id": "WF-ANIMAL-",
+    "rootId": null,
+    "notes": "Hayvan - 5 lexeme (ID eksik)"
   },
   {
-    "id": "WF-KY-VERB",
-    "name": "къы- (fiil kökü)",
-    "conceptId": "ACTION",
-    "description": "Fiil kökü: tıkamak, eğmek, açmak, aptal, inatçı",
-    "rootId": "R-KY-VERB",
-    "lexemeIds": [],
-    "morphemeIds": [],
-    "productivity": {
-      "totalLexemes": 0,
-      "corpusFrequency": 0
-    },
-    "notes": "Faz 5 / Adım 5.3: kIэ ve къы morfem analizi",
-    "status": "ACTIVE"
+    "id": "WF-FOOD-",
+    "rootId": null,
+    "notes": "Yiyecek - 3 lexeme (ID eksik)"
   },
   {
-    "id": "WF-KY-PREFIX",
-    "name": "къы- (yön)",
-    "conceptId": "ACTION",
-    "description": "Yön öneki: konuşana doğru",
-    "rootId": "R-KY-PREFIX",
-    "lexemeIds": [],
-    "morphemeIds": [],
-    "productivity": {
-      "totalLexemes": 0,
-      "corpusFrequency": 0
-    },
-    "notes": "Faz 5 / Adım 5.3: kIэ ve къы morfem analizi",
-    "status": "ACTIVE"
+    "id": "WF-PLANT-",
+    "rootId": null,
+    "notes": "Bitki - 2 lexeme (ID eksik)"
+  },
+  {
+    "id": "WF-LOCATION-",
+    "rootId": null,
+    "notes": "Yer - 2 lexeme (ID eksik)"
+  },
+  {
+    "id": "WF-POSTPOSITION-",
+    "rootId": null,
+    "notes": "Edat - 1 lexeme (ID eksik)"
+  },
+  {
+    "id": "WF-COLOR-",
+    "rootId": null,
+    "notes": "Renk - 1 lexeme (ID eksik)"
   }
 ]
