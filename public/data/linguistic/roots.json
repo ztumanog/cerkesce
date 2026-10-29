@@ -13072,7 +13072,8 @@
         "mostFrequentLexemeId": "L-KHUMEN"
       },
       "notes": "C-9.3 yeni aile. Korumak kok ailesi. Wiktionary kaniti."
-    }
+    },
+    "primaryMeaning": "korumak, muhafaza etmek"
   },
   {
     "id": "R-MEZ",
@@ -14061,7 +14062,7 @@
   {
     "id": "R-FIY",
     "form": "фӀы",
-    "primaryMeaning": null,
+    "primaryMeaning": "iyi, güzel (фӀы)",
     "productivity": {
       "corpusFrequency": 2750
     },
@@ -14119,7 +14120,7 @@
   {
     "id": "R-LIY",
     "form": "лӀы",
-    "primaryMeaning": null,
+    "primaryMeaning": "erkek, adam",
     "productivity": {
       "corpusFrequency": 2400
     },
@@ -14168,42 +14169,6 @@
     }
   },
   {
-    "id": "R-BZY",
-    "form": "бзылъфыгъэ",
-    "primaryMeaning": null,
-    "productivity": {
-      "corpusFrequency": 2250
-    },
-    "wordFamily": {
-      "id": "WF-BZY",
-      "lexemeIds": [
-        "L-BZYLKHUGHE",
-        "L-CORPUS-00156",
-        "L-CORPUS-00735",
-        "L-CORPUS-00907",
-        "L-CORPUS-01414",
-        "L-CORPUS-01848",
-        "L-CORPUS-02123",
-        "L-CORPUS-02249",
-        "L-CORPUS-03299",
-        "L-CORPUS-04229",
-        "L-CORPUS-04582",
-        "L-CORPUS2-07818",
-        "L-D093D183D0B1",
-        "L-VERIFIED-00065",
-        "L-VERIFIED-00215",
-        "L-VERIFIED-00430",
-        "L-VERIFIED-01176",
-        "L-VERIFIED-01517",
-        "L-VERIFIED-01727",
-        "L-VERIFIED-01733",
-        "L-VERIFIED-01736",
-        "L-VERIFIED-02091",
-        "L-VERIFIED-02645"
-      ]
-    }
-  },
-  {
     "id": "R-SAB",
     "form": "сабий",
     "primaryMeaning": null,
@@ -14220,7 +14185,7 @@
   {
     "id": "R-KHE",
     "form": "хьэблэ",
-    "primaryMeaning": null,
+    "primaryMeaning": "köpek (собака) — homonym: arpa (ячмень)",
     "productivity": {
       "corpusFrequency": 2050
     },
@@ -14361,7 +14326,7 @@
   {
     "id": "R-TKH",
     "form": "тхьэ",
-    "primaryMeaning": null,
+    "primaryMeaning": "tanrı (homonym: yıkamak)",
     "productivity": {
       "corpusFrequency": 1480
     },
@@ -14519,7 +14484,7 @@
   {
     "id": "R-SHCHECH",
     "form": "щэч",
-    "primaryMeaning": null,
+    "primaryMeaning": "şüphe, tartmak (щэч)",
     "productivity": {
       "corpusFrequency": 1350
     },
@@ -14556,7 +14521,7 @@
   {
     "id": "R-SHCHIY_1",
     "form": "щӀыӀэ",
-    "primaryMeaning": null,
+    "primaryMeaning": "soğuk (щIыIэ)",
     "productivity": {
       "corpusFrequency": 1260
     },
@@ -14609,7 +14574,7 @@
   {
     "id": "R-IN",
     "form": "ин",
-    "primaryMeaning": null,
+    "primaryMeaning": "büyük, dev",
     "productivity": {
       "corpusFrequency": 1150
     },
@@ -14877,7 +14842,7 @@
   {
     "id": "R-KIE",
     "form": "кӀэщӀ",
-    "primaryMeaning": null,
+    "primaryMeaning": "çok, aşırı",
     "productivity": {
       "corpusFrequency": 1060
     },
@@ -14947,7 +14912,7 @@
   {
     "id": "R-AK",
     "form": "акъыл",
-    "primaryMeaning": null,
+    "primaryMeaning": "akıl (акъыл) — LOAN_ARABIC",
     "productivity": {
       "corpusFrequency": 880
     },
@@ -14972,7 +14937,8 @@
         "L-VERIFIED-02220",
         "L-VERIFIED-02457"
       ]
-    }
+    },
+    "notes": " [LOAN]"
   },
   {
     "id": "R-GA_1",
@@ -15034,7 +15000,7 @@
   {
     "id": "R-PSHCHI",
     "form": "пщӀэ",
-    "primaryMeaning": null,
+    "primaryMeaning": "değer, kıymet (пщӀэ)",
     "productivity": {
       "corpusFrequency": 720
     },
@@ -15058,7 +15024,7 @@
   {
     "id": "R-SHY",
     "form": "шы",
-    "primaryMeaning": null,
+    "primaryMeaning": "at, beygir (horse)",
     "productivity": {
       "corpusFrequency": 710
     },
@@ -15354,7 +15320,7 @@
   {
     "id": "R-BZHE",
     "form": "бжэ",
-    "primaryMeaning": null,
+    "primaryMeaning": "kapı (бжэ)",
     "productivity": {
       "corpusFrequency": 690
     },
@@ -15440,7 +15406,7 @@
   {
     "id": "R-PSHCHY",
     "form": "пщы",
-    "primaryMeaning": null,
+    "primaryMeaning": "prens, bey, soylu",
     "productivity": {
       "corpusFrequency": 630
     },
@@ -15910,7 +15876,7 @@
   {
     "id": "R-KIU",
     "form": "кӀуэцӀ",
-    "primaryMeaning": null,
+    "primaryMeaning": "iç, içinden (кIуэцI)",
     "productivity": {
       "corpusFrequency": 200
     },
@@ -16237,7 +16203,7 @@
   {
     "id": "R-LA_1",
     "form": "лъагъу",
-    "primaryMeaning": null,
+    "primaryMeaning": "görmek (лъагъун)",
     "productivity": {
       "corpusFrequency": 18500
     },
@@ -16311,7 +16277,7 @@
   {
     "id": "R-PSA",
     "form": "псалъэ",
-    "primaryMeaning": null,
+    "primaryMeaning": "kelime, söz",
     "productivity": {
       "corpusFrequency": 15800
     },
@@ -16655,7 +16621,7 @@
   {
     "id": "R-ZAU",
     "form": "зауэ",
-    "primaryMeaning": null,
+    "primaryMeaning": "savaş (зауэ)",
     "productivity": {
       "corpusFrequency": 8900
     },
@@ -16949,21 +16915,6 @@
     }
   },
   {
-    "id": "R-TEU",
-    "form": "теухуа",
-    "primaryMeaning": null,
-    "productivity": {
-      "corpusFrequency": 1950
-    },
-    "wordFamily": {
-      "id": "WF-TEU",
-      "lexemeIds": [
-        "L-CORPUS-00097",
-        "L-CORPUS-00146"
-      ]
-    }
-  },
-  {
     "id": "R-KA_1",
     "form": "къалэ",
     "primaryMeaning": null,
@@ -16995,24 +16946,9 @@
     }
   },
   {
-    "id": "R-ZYSHCH",
-    "form": "зыщӀэ",
-    "primaryMeaning": null,
-    "productivity": {
-      "corpusFrequency": 1500
-    },
-    "wordFamily": {
-      "id": "WF-ZYSHCH",
-      "lexemeIds": [
-        "L-CORPUS2-01068",
-        "L-CORPUS2-09298"
-      ]
-    }
-  },
-  {
     "id": "R-NYK",
     "form": "ныкъуэ",
-    "primaryMeaning": null,
+    "primaryMeaning": "yarı (ныкъуэ)",
     "productivity": {
       "corpusFrequency": 1250
     },
@@ -17275,7 +17211,7 @@
   {
     "id": "R-DZA",
     "form": "дзажэ",
-    "primaryMeaning": null,
+    "primaryMeaning": "kaburga (дзажэ)",
     "productivity": {
       "corpusFrequency": 1300
     },
@@ -17404,46 +17340,6 @@
     }
   },
   {
-    "id": "R-SHKHA",
-    "form": "шхалъ",
-    "primaryMeaning": null,
-    "productivity": {
-      "corpusFrequency": 1100
-    },
-    "wordFamily": {
-      "id": "WF-SHKHA",
-      "lexemeIds": [
-        "L-CORPUS-00658",
-        "L-CORPUS-00790",
-        "L-CORPUS-00928",
-        "L-CORPUS-00951",
-        "L-CORPUS-01030",
-        "L-CORPUS-01120",
-        "L-CORPUS-01736",
-        "L-CORPUS-02373",
-        "L-CORPUS-02610",
-        "L-CORPUS-02761",
-        "L-CORPUS-03079",
-        "L-CORPUS-03294",
-        "L-CORPUS-03533",
-        "L-CORPUS-04010",
-        "L-CORPUS-04782",
-        "L-SHKHEN",
-        "L-VERIFIED-00147",
-        "L-VERIFIED-00871",
-        "L-VERIFIED-01140",
-        "L-VERIFIED-01267",
-        "L-VERIFIED-01349",
-        "L-VERIFIED-01888",
-        "L-VERIFIED-01933",
-        "L-VERIFIED-01999",
-        "L-VERIFIED-02085",
-        "L-VERIFIED-02175",
-        "L-VERIFIED-02202"
-      ]
-    }
-  },
-  {
     "id": "R-ZEI",
     "form": "зеинш",
     "primaryMeaning": null,
@@ -17526,7 +17422,7 @@
   {
     "id": "R-LY",
     "form": "лъыкъ",
-    "primaryMeaning": null,
+    "primaryMeaning": "kan (лъы) — DİKKAT: лы = et ayrı kök",
     "productivity": {
       "corpusFrequency": 700
     },
@@ -17621,7 +17517,7 @@
     "id": "R-A",
     "form": "Ӏэ",
     "ipa": null,
-    "primaryMeaning": null,
+    "primaryMeaning": "el (Ӏэ = рука)",
     "semanticDomains": [],
     "source": "latin-orphan-2026-10-12",
     "wordFamily": {
@@ -19196,7 +19092,7 @@
     "id": "R-BGHA",
     "form": "бгъэ",
     "ipa": null,
-    "primaryMeaning": null,
+    "primaryMeaning": "göğüs (бгъэ) — homonym: kartal, kısır",
     "semanticDomains": [],
     "source": "latin-orphan-2026-10-12",
     "wordFamily": {
@@ -19237,7 +19133,7 @@
     "id": "R-BGHW",
     "form": "бгъу",
     "ipa": null,
-    "primaryMeaning": null,
+    "primaryMeaning": "yan, taraf (бгъу) — homonym: dokuz",
     "semanticDomains": [],
     "source": "latin-orphan-2026-10-12",
     "wordFamily": {
@@ -19330,7 +19226,7 @@
     "id": "R-BZA",
     "form": "бзэ",
     "ipa": null,
-    "primaryMeaning": null,
+    "primaryMeaning": "dil (бзэ = язык)",
     "semanticDomains": [],
     "source": "latin-orphan-2026-10-12",
     "wordFamily": {
@@ -19480,50 +19376,6 @@
     }
   },
   {
-    "id": "R-BZHA",
-    "form": "пэбж",
-    "ipa": null,
-    "primaryMeaning": null,
-    "semanticDomains": [],
-    "source": "latin-orphan-2026-10-12",
-    "wordFamily": {
-      "lexemeIds": [
-        "L-BZHE",
-        "L-CORPUS-00221",
-        "L-CORPUS-00922",
-        "L-CORPUS-01408",
-        "L-CORPUS-02258",
-        "L-CORPUS-03241",
-        "L-CORPUS-03497",
-        "L-CORPUS-03984",
-        "L-CORPUS-04150",
-        "L-CORPUS-04719",
-        "L-CORPUS-04731",
-        "L-CORPUS-04736",
-        "L-CORPUS2-08457",
-        "L-KBD-01704",
-        "L-KBD-01706",
-        "L-KBD-03441",
-        "L-KBD-03442",
-        "L-NYBZHEGHU",
-        "L-VERIFIED-00043",
-        "L-VERIFIED-00228",
-        "L-VERIFIED-01105",
-        "L-VERIFIED-01748",
-        "L-VERIFIED-01777",
-        "L-VERIFIED-02056",
-        "L-VERIFIED-02095",
-        "L-VERIFIED-02096",
-        "L-VERIFIED-02353",
-        "L-VERIFIED-02477",
-        "L-ZANTKHE",
-        "L-ZENDALE",
-        "L-ZENYBZHEGHU"
-      ],
-      "id": "WF-BZHA"
-    }
-  },
-  {
     "id": "R-BZHEN",
     "form": "бжэн",
     "ipa": null,
@@ -19556,7 +19408,7 @@
     "id": "R-CHA",
     "form": "чэрэ",
     "ipa": null,
-    "primaryMeaning": null,
+    "primaryMeaning": "kiraz (чэрэ) — LOAN_RUSSIAN",
     "semanticDomains": [],
     "source": "latin-orphan-2026-10-12",
     "wordFamily": {
@@ -19592,7 +19444,8 @@
         "L-VERIFIED-02697"
       ],
       "id": "WF-CHA"
-    }
+    },
+    "notes": " [LOAN]"
   },
   {
     "id": "R-CHET",
@@ -19736,7 +19589,7 @@
     "id": "R-DJADU",
     "form": "джэш",
     "ipa": null,
-    "primaryMeaning": null,
+    "primaryMeaning": "fasulye (джэш)",
     "semanticDomains": [],
     "source": "latin-orphan-2026-10-12",
     "wordFamily": {
@@ -19887,7 +19740,7 @@
     "id": "R-FA",
     "form": "фэ",
     "ipa": null,
-    "primaryMeaning": null,
+    "primaryMeaning": "deri, renk, kabuk (фэ = кожа)",
     "semanticDomains": [],
     "source": "latin-orphan-2026-10-12",
     "wordFamily": {
@@ -20215,7 +20068,7 @@
     "id": "R-GHWALH",
     "form": "гъуэ",
     "ipa": null,
-    "primaryMeaning": null,
+    "primaryMeaning": "zaman, vakit (гъуэ) — homonym: oyuk, kızıl",
     "semanticDomains": [],
     "source": "latin-orphan-2026-10-12",
     "wordFamily": {
@@ -20301,7 +20154,7 @@
     "id": "R-GHWSCH",
     "form": "гъущ",
     "ipa": null,
-    "primaryMeaning": null,
+    "primaryMeaning": "demir (гъущӀ)",
     "semanticDomains": [],
     "source": "latin-orphan-2026-10-12",
     "wordFamily": {
@@ -20457,7 +20310,7 @@
     "id": "R-HAE",
     "form": "хьэ",
     "ipa": null,
-    "primaryMeaning": null,
+    "primaryMeaning": "köpek (хьэ = собака)",
     "semanticDomains": [],
     "source": "latin-orphan-2026-10-12",
     "wordFamily": {
@@ -20523,7 +20376,7 @@
     "id": "R-KHABZA",
     "form": "хабз",
     "ipa": null,
-    "primaryMeaning": null,
+    "primaryMeaning": "gelenek, kural (хабзэ)",
     "semanticDomains": [],
     "source": "latin-orphan-2026-10-12",
     "wordFamily": {
@@ -20564,7 +20417,7 @@
     "id": "R-KWA",
     "form": "кӀуэ",
     "ipa": null,
-    "primaryMeaning": null,
+    "primaryMeaning": "gitmek (кIуэн)",
     "semanticDomains": [],
     "source": "latin-orphan-2026-10-12",
     "wordFamily": {
@@ -20855,7 +20708,7 @@
     "id": "R-MYVA",
     "form": "мывэ",
     "ipa": null,
-    "primaryMeaning": null,
+    "primaryMeaning": "taş (мывэ)",
     "semanticDomains": [],
     "source": "latin-orphan-2026-10-12",
     "wordFamily": {
@@ -20996,7 +20849,7 @@
     "id": "R-PKHA",
     "form": "пхъэ",
     "ipa": null,
-    "primaryMeaning": null,
+    "primaryMeaning": "odun (пхъэ = дрова)",
     "semanticDomains": [],
     "source": "latin-orphan-2026-10-12",
     "wordFamily": {
@@ -21966,7 +21819,7 @@
     "id": "R-SCHKHWA",
     "form": "щхъу",
     "ipa": null,
-    "primaryMeaning": null,
+    "primaryMeaning": "mavi (щхъу)",
     "semanticDomains": [],
     "source": "latin-orphan-2026-10-12",
     "wordFamily": {
@@ -22020,7 +21873,7 @@
     "id": "R-SCHY",
     "form": "щӀы",
     "ipa": null,
-    "primaryMeaning": null,
+    "primaryMeaning": "toprak, yer (щӀы = земля)",
     "semanticDomains": [],
     "source": "latin-orphan-2026-10-12",
     "wordFamily": {
@@ -22221,7 +22074,7 @@
     "id": "R-SHA",
     "form": "шэ",
     "ipa": null,
-    "primaryMeaning": null,
+    "primaryMeaning": "süt (шэ = молоко)",
     "semanticDomains": [],
     "source": "latin-orphan-2026-10-12",
     "wordFamily": {
@@ -22723,7 +22576,7 @@
     "id": "R-SHHA",
     "form": "щхьэ",
     "ipa": null,
-    "primaryMeaning": null,
+    "primaryMeaning": "baş, kafa, tepe (щхьэ = голова)",
     "semanticDomains": [],
     "source": "latin-orphan-2026-10-12",
     "wordFamily": {
@@ -23541,7 +23394,7 @@
     "id": "R-SHYPKHW",
     "form": "шыпх",
     "ipa": null,
-    "primaryMeaning": null,
+    "primaryMeaning": "kız kardeş (шыпхъу)",
     "semanticDomains": [],
     "source": "latin-orphan-2026-10-12",
     "wordFamily": {
@@ -23825,7 +23678,7 @@
     "id": "R-TSY",
     "form": "цы",
     "ipa": null,
-    "primaryMeaning": null,
+    "primaryMeaning": "saç, tüy, yün (цы)",
     "semanticDomains": [],
     "source": "latin-orphan-2026-10-12",
     "wordFamily": {
@@ -23857,7 +23710,7 @@
     "id": "R-TSYKHU",
     "form": "цӀых",
     "ipa": null,
-    "primaryMeaning": null,
+    "primaryMeaning": "insan, kişi (цӀыху)",
     "semanticDomains": [],
     "source": "latin-orphan-2026-10-12",
     "wordFamily": {
@@ -24508,7 +24361,7 @@
     "id": "R-YN",
     "form": "ин",
     "ipa": null,
-    "primaryMeaning": null,
+    "primaryMeaning": "büyük (ин = большой)",
     "semanticDomains": [],
     "source": "latin-orphan-2026-10-12",
     "wordFamily": {
@@ -29348,5 +29201,53 @@
     "form": "-рэ",
     "primaryMeaning": "baglac/ek",
     "notes": "WF-RE icin - 7 lexeme"
+  },
+  {
+    "id": "R-LI",
+    "form": "лы",
+    "primaryMeaning": "et (лы) — DİKKAT: лъы = kan ayrı",
+    "notes": "Mimar: лы (yumuşak l) = et, лъы (sert лъ) = kan"
+  },
+  {
+    "id": "R-BZHYE",
+    "form": "бжьэ",
+    "primaryMeaning": "boynuz, kadeh (бжьэ)",
+    "notes": "R-BZHE (kapı) ile karışmamalı"
+  },
+  {
+    "id": "R-DJADU-CAT",
+    "form": "джэду",
+    "primaryMeaning": "kedi (джэду)",
+    "notes": "R-DJADU (fasulye) ile karışmamalı"
+  },
+  {
+    "id": "R-GHWSCHE-DRY",
+    "form": "гъущэ",
+    "primaryMeaning": "kuru (гъущэ)",
+    "notes": "R-GHWSCH (demir) ile karışmamalı"
+  },
+  {
+    "id": "R-SHKH",
+    "form": "шх",
+    "primaryMeaning": "yemek (шхын)",
+    "notes": "шхалъ = шх + -алъэ kap eki"
+  },
+  {
+    "id": "R-SH1Y-VERB",
+    "form": "щӀын",
+    "primaryMeaning": "yapmak (щӀын)",
+    "notes": "зыщӀэ = зы- + щӀын; R-SH1Y (toprak) ile karışmamalı"
+  },
+  {
+    "id": "R-XHW",
+    "form": "ху",
+    "primaryMeaning": "düşmek (хуэн)",
+    "notes": "теухуа = те- + хуэн + -а partisip"
+  },
+  {
+    "id": "R-BZY",
+    "form": "бзы",
+    "primaryMeaning": "dişi (бзы)",
+    "notes": "бзылъфыгъэ = бзы + лъфын + -гъэ"
   }
 ]
