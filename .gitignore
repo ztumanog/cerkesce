@@ -275,3 +275,7 @@ _scripts/tr_gold_batches/
 *.bak_*
 *.bak.
 _adrlex_*.bak*
+
+.env.test
+.env.ini
+
