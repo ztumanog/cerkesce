@@ -1,17 +1,16 @@
 # Morfoloji Katmanı İyileştirme Raporu
 
 **Tarih:** 2026-10-30
-**Durum:** Morfoloji katmanı tamamlandı; `wordFamilyId` ve `conceptId` doldurma **ertelendi**
+**Commit:** `a5d8200` + bu commit
 
 ## Özet
 
-Morfoloji katmanı %99,9 çözüme ulaştı. `dogrulanmamis_kok` 12.114 → 10. `wordFamilyId` toplu doldurma **dilbilimsel olarak yanlış** olduğu için **geri alındı**.
+Morfoloji katmanı %99,9 çözüme ulaştı. `wordFamilyId` toplu doldurma **geri alındı**. `ConceptRegistry` **AUTO_GENERATED** statüsünde oluşturuldu.
 
 ## Faz 9A — Concept Envanteri
 
 - `lexemes.json`'daki **2.507 concept** frekans dağılımı çıkarıldı.
 - İlk 5: `ACTION` (163), `MIND` (155), `SKIN` (125), `LOVE` (105), `EMOTION` (100).
-- `ConceptRegistry.ts` **AUTO_GENERATED** olarak oluşturuldu (2.507 concept).
 
 ## Faz 9B — Kategori Dağılımı
 
@@ -21,23 +20,21 @@ Morfoloji katmanı %99,9 çözüme ulaştı. `dogrulanmamis_kok` 12.114 → 10. 
 | Mapping'de var | 0 |
 | Hiçbirinde yok | 2.507 (%100) |
 
-**Sonuç:** `lexemes.json` **kanonik** kaynak. Registry **canlı veriyi temsil etmiyor**.
+**Sonuç:** `lexemes.json` **kanonik** kaynak.
 
-## WordFamily Audit (Kritik)
+## Faz 9C-1 — ConceptRegistry Normalizasyonu
 
-- `0dd9499` commit'inde `word_families.json` **13.281 aile** olarak commit'lenmiş.
-- `WF-LEX-*` ailelerinin **%90'ı tek lexeme** — otomatik teknik kayıt, gerçek aile değil.
-- **Karar:** `word_families.json` **`7065efc`**'den geri alındı (**1.018 aile**).
-- `wordFamilyId` doldurma **geri alındı** (14.606 dolu, 13.549 boş).
-- **Ders:** Toplu veri yazma operasyonları **önce audit** gerektirir.
+- `ConceptRegistry.ts` **2.507 concept** — `AUTO_GENERATED` statüsünde.
+- Her concept için **domain** ve **frequency** eklendi.
+- Domain dağılımı: EMOTION, ANATOMY, COGNITION, ACTION, PLANT, ANIMAL, COLOR, TIME, KINSHIP, DWELLING, FOOD, OTHER.
 
-## Faz 9C — `None` Concept
+## WordFamily Durumu (Düzeltildi)
 
-**Henüz başlanmadı.** Registry normalizasyonu sonrası.
+- `word_families.json` **1.018 aile** — `7065efc`'den geri alındı.
+- `lexemes.json` `wordFamilyId` **14.606 dolu** — orijinal.
+- `WF-LEX-*` aileleri **geri alındı**.
 
-## Sıradaki Adımlar
+## Sıradaki: Faz 9C-2 — concept_mapping.json
 
-1. `ConceptRegistry` normalizasyonu (2.507 concept)
-2. `concept_mapping.json` oluşturma
-3. `word_families.json` denetimi (1.018 aile)
-4. `None` concept doldurma (registry doğrulandıktan sonra)
+- `canonical`, `alias`, `deprecated`, `merge_target` alanları.
+- Kaynak: `_wiktionary/` sözlükleri.
