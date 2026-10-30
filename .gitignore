@@ -279,3 +279,5 @@ _adrlex_*.bak*
 .env.test
 .env.ini
 
+
+*.bak*
