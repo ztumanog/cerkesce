@@ -1,283 +1,44 @@
+# Node
 node_modules/
 .next/
-out/
 dist/
 build/
 
+# Environment
 .env
 .env.local
-.env.development.local
-.env.test.local
-.env.production.local
 
-*.log
-tsconfig.tsbuildinfo
-
-.vscode/
-.idea/
-.DS_Store
-Thumbs.db
-# Python
-__pycache__/
-*.py[cod]
-*.pyo
-
-# Geçici ve editör dosyaları
-*.wps
-
-# Yerel veri/analiz çıktıları
-
-
-archive/dictionary-tools/
-.venv/
-# Backup klasörleri
-.backup/
-_backup_*/
-# Backup dosyalari
-*.backup_*
-
-# Gecici script'ler
-temizlik.ps1
-
-# Screenshots
-public/icons/Screenshot-*.png
-# Keystore
-*.keystore
-*.jks
-
-
-# Next.js otomatik dosya
-next-env.d.ts
-
-# Yedek dosyalari
+# Yedek dosyalari (tum varyantlar)
 *.bak
 *.bak.*
-
-
-
-data/*.csv
-public/data/*.csv
-corpus_results.json
-*.csv
-# Buyuk veri dosyalari
-public/data/*.txt
-
-# Backup klasorleri
-*_backup_*
-public/data_backup_*
-
-# Debug dosyalari
-debug_*.py
-test-normalize.js
-
-# Arsiv
-_arsiv/
-
-# .bak dosyalari
-
-# Python scripts (gecici araclar)
-# _scripts/ (Faz C-9: takip ediliyor)
-scripts/
-
-*.bak_python*
-
-
-
-
-
-# Next.js.next/
-
-# Node modules
-
-# VSCode.vscode/
-
-# Build
-
-data/*.txt
-
-# Faz C-9 corpus (buyuk dosyalar - HF'den yeniden indirilebilir)
-data/corpus/raw/*.jsonl
-data/corpus/raw/*.jsonl.bak
-data/corpus/cleaned/*.txt
-data/corpus/tokenized/*.jsonl
-data/corpus/frequency/*.json
-!data/corpus/frequency/coverage_report.json
-data/corpus/.hf_cache/
-
-# C-9 coverage raporu takip edilsin (kucuk dosya)
-
-# C-9 coverage raporu takip edilsin
-
-# C-9 yerel yedekler
-*.bak_c8
-
-
-# Web corpus cache (HTML, buyuk)
-data/corpus/webcorpora/cache/
-
-public/data/linguistic/*.bak_*
-
-
-dtest*.txt
-
-_scripts/*.py
-
-
-_scripts/test_*.py
-
-_scripts/koduyaz.py
-
-c91_*.txt
-
-sonuc*.txt
-
-bozuk*.txt
-
-
-
-# Debug/gecici dosyalar
-c11_*.json
-dialect_*.json
-morph_*.json
-!c11_*.final.json
-
-!dialect_pairs.json
-# Telif hakki korumali PDF'ler (link ile referans verilir)
-public/data/*.pdf
-docs/**/*.pdf
-
-docs/morphology/sources/*.pdf
-
-# lexemes yedekleri
-public/data/linguistic/lexemes.json.bak-*
-
-# lexemes yedekleri
-public/data/linguistic/lexemes.json.bak-*
-
-public/data/linguistic/*.bak*
-public/data/linguistic/*.archived
 *.bak-*
-
-k2_liste.txt
-
-data/analysis/
-
-data/analysis/
-
-data/analysis/
-
-# Büyük dump dosyaları
-data/corpus/*.xml
-data/corpus/wiktionary-dumps/
-_scripts/*.txt
-_scripts/*.json
-_scripts/**/*.bak
-
-# Backups
-*.bak-*
-
-# Wiktionary dump ve ara dosyalar (buyuk dosyalar, git'te tutulmaz)
-_wiktionary/
-
-# Backup dosyalar
-*.bak-*
-
-# Gecici calisma dosyalari
-ipa_kalan_notebooklm.txt
-
-# Gecici calisma dosyalari (kok dizin)
-_*.py
-_scripts/*.py
-!ipa_kalan_notebooklm.txt
-
-# Sprint 3A
-data/sprint3a/
-tools/sprint3a/
-
-# Kavram indeksi (41 MB)
-_wiktionary/kbd_kavram_indeksi.json
-
-# Deneme scriptleri
-_scripts/hilmi_eslestir*.ts
-_scripts/test_converter.ts
-ipa_kalan_notebooklm.txt
-_en_tr_kopru.json
-_liste*.txt
-_ru_tr_kopru*.json
-_manuel/
-_manuel_virgul/
-_hatali_tr.json
-_supheli*.json
-_diger_yapi.py
-_nalchik_*.py
-_threevol_*.py
-_sukunov_*.py
-_abaze_*.py
-_hilmi_*.py
-_liste_*.py
-_64_*.json
-_gold_*.json
-_bulunamayan.json
-_roots_temiz.json
-_en_tr_kopru*.json
-_ts_parser*.json
-_ts_v3_sonuc.json
-_ts_v4_sonuc.json
-_ts_v5_sonuc.json
-.vercel
-
-# Gecici/analiz dosyalari
-_*.json
-_*.txt
-_backups/
-_raporlar/
-_yedek/
-backups/
-lexemes.json.bak_*
-*.broken_*
-*.snapshot_*
+*.bak_*
+*.yedek
+*.yedek.*
+*.corrupt
+*.corrupt.*
+*.before_restore
+*.before_restore.*
+*.backup_*
+*.backup-*
 *.working_*
 
-# Ek ignore
-_scripts/agents_degisiklik.patch
-_scripts/lexemes_HEAD_farki.patch
-_scripts/tr_ai_batches/
-_scripts/tr_gold_batches/
-public/data/linguistic/393-silinen.txt
-public/data/linguistic/590-kalan.txt
-public/data/linguistic/600-liste.txt
-public/data/linguistic/added-by-source.json
-public/data/linguistic/dialects.broken-backup.json
-public/data/linguistic/lexemes.before-*.json
-public/data/linguistic/lexemes.hatali_son.json
-public/data/linguistic/ornek-50.json
-public/data/linguistic/qc-*.json
-public/data/linguistic/review-en.json
-public/data/linguistic/taxonomy.json
-public/data/linguistic/word_families.before_A4.json
-public/data/linguistic/word_families_merged.json
-public/data/linguistic/yasakli-en.json
-mafe-sonuc.json
-old.json
-vitest-result.json
-sayfa201.png
+# Gecici diff ve raporlar
+*_diff.txt
+adim0_diff.txt
+*_diff_*.txt
 
-# Ek ignore (devam)
-_scripts/tr_ai_batches/
-_scripts/tr_gold_batches/
-/durum.py
-/grupla.py
-/check_*.py
-/exclude_gecmisi.txt
-/sprint-3.5-pipeline.py
-/vitest-result.json
+# Script ciktilari (spesifik)
+_scripts/out/
+_scripts/metrik_tabanlari/
 
-*.bak_*
-*.bak.
-_adrlex_*.bak*
+# Audit log (spesifik — yeni .jsonl veri dosyalarini etkilemez)
+public/data/linguistic/audit_log.jsonl
+audit_log.jsonl
 
-.env.test
-.env.ini
+# OS
+.DS_Store
+Thumbs.db
 
-
-*.bak*
+# TypeScript
+*.tsbuildinfo
