@@ -1,4 +1,4 @@
-﻿/**
+/**
  * VerbDecompiler - Fiil onek cozumleyici
  * ADR-0040: Morphological Root Taxonomy
  * P4-012 - Morphology Engine
@@ -52,16 +52,15 @@ export interface VerbResult {
 // ============================================
 
 const PREFIX_TABLE: Array<{ slot: PrefixSlot; forms: string[] }> = [
-  // Kisi onekleri: 1SG сы-, 2PL фы-, 2SG у-
-  // NOT: 'ды' (1PL) burada yok, comitative slotunda duruyor. Karar gerekli.
-  { slot: 'person',      forms: ['сы', 'фы', 'у'] },
-  { slot: 'reflexive',   forms: ['зы'] },
-  { slot: 'directional', forms: ['къы', 'къэ'] },
-  { slot: 'version',     forms: ['ху', 'зды', 'фIэ'] },
-  { slot: 'comitative',  forms: ['дэ', 'ды'] },
+  // Kisi onekleri: 1SG сы-, 2PL фы-, 2SG у-, 1PL ды-
+  { slot: 'person',      forms: ['сы', 'фы', 'ды', 'у'] },
+  { slot: 'reflexive',   forms: ['зы', 'зэ'] },
+  { slot: 'directional', forms: ['къы', 'къэ', 'нэ'] },
+  { slot: 'version',     forms: ['ху', 'хуэ', 'зды', 'фIэ', 'фI', 'уи', 'си', 'ди', 'фи', 'я'] },
+  { slot: 'comitative',  forms: ['дэ', 'ды', 'зэ'] },
   { slot: 'locative',    forms: ['кIэры', 'бгъэдэ', 'бгъуры', 'те', 'щIэ', 'хэ', 'дэ', 'и', 'блэ', 'пы', 'Iу', 'щы', 'бжьа', 'бжьы', 'кIэкъыдэ', 'кIэкъылэ', 'гуэ', 'тыр'] },
-  { slot: 'causative',   forms: ['гъэ', 'гъа'] },
-  { slot: 'factitive',   forms: ['уы', 'Iу'] },
+  { slot: 'causative',   forms: ['гъэ', 'гъа', 'гъ'] },
+  { slot: 'factitive',   forms: ['уы', 'Iу', 'и'] },
 ];
 
 // ============================================
@@ -69,6 +68,13 @@ const PREFIX_TABLE: Array<{ slot: PrefixSlot; forms: string[] }> = [
 // ============================================
 
 export class VerbDecompiler {
+  private knownRoots: Set<string>;
+  private strict: boolean;
+
+  constructor(knownRoots: Set<string> = new Set(), strict: boolean = false) {
+    this.knownRoots = knownRoots;
+    this.strict = strict;
+  }
   /**
    * Bir fiili cozumler.
    * Onek sirasini takip eder (slot 0'dan 7'ye).
@@ -98,6 +104,11 @@ export class VerbDecompiler {
           const stem = remaining.slice(prefixForm.length);
           // Kok bos kalmasin
           if (stem.length < 2) continue;
+
+          // strict modda: kalan parca gercek bir kok olmali
+          if (this.strict && this.knownRoots.size > 0 && !this.knownRoots.has(stem)) {
+            continue;
+          }
 
           prefixes.push({
             slot,

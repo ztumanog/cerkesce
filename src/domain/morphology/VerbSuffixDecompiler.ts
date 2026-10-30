@@ -1,4 +1,4 @@
-﻿/**
+/**
  * VerbSuffixDecompiler - Fiil zaman ekleri cozumleyici
  * LemmaBuilderV2'den bagimsiz, basit versiyon
  */
@@ -12,7 +12,6 @@ export interface SuffixResult {
   gloss: string;
 }
 
-// Lexeme set (kok kontrolu icin)
 let LEXEME_SET: Set<string> | null = null;
 function getLexemeSet(): Set<string> {
   if (LEXEME_SET) return LEXEME_SET;
@@ -47,10 +46,18 @@ const VERB_SUFFIXES: Array<{ pattern: RegExp; code: string; gloss: string }> = [
   { pattern: /мэ$/, code: 'CONDITIONAL', gloss: 'Sart' },
   { pattern: /м$/, code: 'CONDITIONAL_SHORT', gloss: 'Sart' },
   { pattern: /щ$/, code: 'INDICATIVE', gloss: 'Bildirme' },
+  { pattern: /гъ$/, code: 'ABSTRACT_NOUN', gloss: 'Soyut isim' },
+  { pattern: /агъ$/, code: 'ABSTRACT_NOUN_FULL', gloss: 'Soyut isim (tam)' },
+  { pattern: /ыгъ$/, code: 'ABSTRACT_NOUN_FULL2', gloss: 'Soyut isim' },
+  { pattern: /н$/, code: 'INFINITIVE', gloss: 'Mastar (-mak/-mek)' },
 ];
 
 export class VerbSuffixDecompiler {
-  static decompile(word: string): { stripped: string; suffixes: SuffixResult[] } {
+  static decompile(
+    word: string,
+    knownRoots?: Set<string>,
+    strict: boolean = false
+  ): { stripped: string; suffixes: SuffixResult[] } {
     let remaining = word.trim();
     const suffixes: SuffixResult[] = [];
     let changed = true;
@@ -65,8 +72,12 @@ export class VerbSuffixDecompiler {
         if (match) {
           const stripped = remaining.slice(0, -match[0].length);
           if (stripped.length >= 2) {
+            // strict modda: kesilen sonrasi kalan parca gercek bir kok olmali.
+            // Aksi halde "нэсын" -> "нэсы", "план" -> "пла" gibi yarim kokler uretiliyor.
+            if (strict && knownRoots && knownRoots.size > 0 && !knownRoots.has(stripped)) {
+              continue;
+            }
             let finalStripped = stripped;
-            // "у" ile biten koklerde "э" geri ekle (кIу -> кIуэ)
             if (stripped.endsWith('у') && (match[0] === 'ащ' || match[0] === 'а')) {
               const withE = stripped + 'э';
               if (getLexemeSet().has(withE)) {

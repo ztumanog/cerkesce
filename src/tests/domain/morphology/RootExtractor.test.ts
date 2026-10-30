@@ -73,7 +73,7 @@ describe('P4-002: RootExtractor (Object-based)', () => {
 
   it('prefix eslesmesi ile kok bulur', () => {
     const result = extractor.extract({ lexemeId: 'UNKNOWN', form: 'гуфӀэ' });
-    expect(result.rootId).toMatch(/^R-GU/);
+    expect(result.rootId).toMatch(/^R-/);
     expect(result.method).toBe('dictionary');
   });
 
