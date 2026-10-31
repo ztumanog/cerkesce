@@ -64,3 +64,29 @@ ve word_form_mapping kapsaminin olculmesi sonraki adimdir.
 **Imza:** Mimari Ekip
 **Tarih:** 2026-10-31
 
+
+---
+
+## 6. Verbose Dogrulama (2026-10-31)
+
+Asagidaki test ID'leri `npx vitest run --reporter=verbose` ile tek tek
+gozlemlendi. Her biri PASS dondu.
+
+| ID | Sure | Durum |
+|---|---|---|
+| IV-001 Cross-Lingual Discovery | 470ms | PASS |
+| IV-002 Knowledge Ranking | 4ms | PASS |
+| IV-003 Context Cluster | 1ms | PASS |
+| IV-004 DTO Stability | 1ms | PASS |
+| IV-005 Concurrent Request | 16ms | PASS |
+| DHC-001 Hard-Coded Yok | 460ms | PASS |
+| KE-001..005 Knowledge Explorer | 477ms-1ms | PASS |
+| DSR-001..002 Semantic Routing | 451ms-1ms | PASS |
+| CMD-001..003 Concept Matching | 4ms | PASS |
+
+**Ham log:** `docs/phases/phase-5/evidence/vitest-verbose-20261031.log`
+
+**Sonuc:** Yukaridaki tum ID'ler tek tek dogrulandi.
+Ancak API-001..006 (Phase6_1_ConceptNetworkAPI) ve API-001..003
+(Phase6_1_APIGateway) icin ayni sekilde tek tek dogrulama
+yapilmadi; bu, sonraki adimdir.
