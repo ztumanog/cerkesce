@@ -36,8 +36,8 @@ geçtigi ayrica dogrulanmadi; gecis yalnizca dosya bazinda dogrulandi.
 | DHC-001 | src/tests/domain/discovery/DiscoveryFacadeHardCoded.cert.test.ts |
 | KE-001..005 | src/tests/domain/discovery/KnowledgeExplorer.cert.test.ts |
 | IV-001..005 | src/tests/domain/discovery/Phase5_3_3_IntegrationValidation.cert.test.ts |
-| API-001..006 | src/tests/api/Phase6_1_ConceptNetworkAPI.cert.test.ts |
-| API-001..003 | src/tests/presentation/api/Phase6_1_APIGateway.cert.test.ts |
+| API-001..006 | src/tests/api/Phase6_1_ConceptNetworkAPI.cert.test.ts | DOGRULANMADI (bu koşuda çalıştırılmadı) |
+| API-001..005 | src/tests/presentation/api/Phase6_1_APIGateway.cert.test.ts | 5/5 geçti (ayrı koşu) |
 
 **Not:** API-001 ve API-002 ID'leri iki dosyada da kullaniliyor.
 Tekil referans icin dosya adi da yazilmali.
@@ -69,24 +69,18 @@ ve word_form_mapping kapsaminin olculmesi sonraki adimdir.
 
 ## 6. Verbose Dogrulama (2026-10-31)
 
-Asagidaki test ID'leri `npx vitest run --reporter=verbose` ile tek tek
-gozlemlendi. Her biri PASS dondu.
+Ham log: `docs/phases/phase-5/evidence/vitest-verbose-20261031.log` (`npx vitest run --reporter=verbose`, tam suite).
 
-| ID | Sure | Durum |
-|---|---|---|
-| IV-001 Cross-Lingual Discovery | 470ms | PASS |
-| IV-002 Knowledge Ranking | 4ms | PASS |
-| IV-003 Context Cluster | 1ms | PASS |
-| IV-004 DTO Stability | 1ms | PASS |
-| IV-005 Concurrent Request | 16ms | PASS |
-| DHC-001 Hard-Coded Yok | 460ms | PASS |
-| KE-001..005 Knowledge Explorer | 477ms-1ms | PASS |
-| DSR-001..002 Semantic Routing | 451ms-1ms | PASS |
-| CMD-001..003 Concept Matching | 4ms | PASS |
+Log'da `✓` ile PASS görülen ID'ler:
 
-**Ham log:** `docs/phases/phase-5/evidence/vitest-verbose-20261031.log`
+- IV-001, IV-002, IV-003, IV-004, IV-005
+- DHC-001
+- KE-001, KE-002, KE-003, KE-004, KE-005
+- DSR-001, DSR-002
+- CMD-001, CMD-002, CMD-003 (ayrı koşuda 3/3 ✓)
 
-**Sonuc:** Yukaridaki tum ID'ler tek tek dogrulandi.
-Ancak API-001..006 (Phase6_1_ConceptNetworkAPI) ve API-001..003
-(Phase6_1_APIGateway) icin ayni sekilde tek tek dogrulama
-yapilmadi; bu, sonraki adimdir.
+Ayrı koşu: `Phase6_1_APIGateway.cert.test.ts` içindeki API-001..005, 5/5 geçti.
+
+Doğrulanmayanlar:
+- API-001..006 (`Phase6_1_ConceptNetworkAPI.cert.test.ts`): bu dosyanın sonucu görülmedi.
+- Tam suite özeti dışında süre ve sıra kanıtı bu rapor için kullanılmadı.
