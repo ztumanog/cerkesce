@@ -3,10 +3,12 @@
  * Layer: Service
  *
  * Query → Concept Resolution
+ * Öncelik sırası:
+ *   1. ConceptCandidateResolver (çeviri köprüsü)
+ *   2. WordFamilyResolver (morfoloji köprüsü)
+ *   3. ConceptLookupPort (veri kaynağı: lexemes/translations)
  *
- * İki kaynak kullanır:
- * 1. ConceptCandidateResolver → TranslationEntry.concept (çeviri köprüsü)
- * 2. WordFamilyResolver → WordFamily → Concept (morfoloji köprüsü)
+ * Kural: Hiçbir aşama hard-coded sözlük kullanmaz. Veri yoksa undefined döner.
  */
 
 import { TranslationService } from '@/services/TranslationService';
@@ -15,6 +17,7 @@ import { CONCEPT_REGISTRY, getConceptUlid } from '../../concept/ConceptRegistry'
 import { ConceptCandidateResolver } from './ConceptCandidateResolver';
 import { WordFamilyResolver } from './WordFamilyResolver';
 import { ConceptCandidateDTO } from '../dto/ConceptCandidateDTO';
+import { ConceptLookupPort } from '../ports/ConceptLookupPort';
 
 export interface SemanticQueryResult {
   normalizedQuery: string;
@@ -23,69 +26,67 @@ export interface SemanticQueryResult {
   confidence: number;
   detectedLanguage?: string;
   candidates?: ConceptCandidateDTO[];
-  source?: 'translation' | 'wordFamily' | 'both';
+  source?: 'translation' | 'wordFamily' | 'lookup' | 'both';
+}
+
+export interface QuerySemanticMapperDeps {
+  translationService?: TranslationService;
+  conceptLookupPort?: ConceptLookupPort;
 }
 
 export class QuerySemanticMapper {
   private candidateResolver: ConceptCandidateResolver;
   private wordFamilyResolver: WordFamilyResolver;
+  private conceptLookupPort?: ConceptLookupPort;
 
-  constructor(translationService?: TranslationService) {
+  constructor(deps: TranslationService | QuerySemanticMapperDeps = {}) {
+    // Geriye dönük uyumluluk: eski imza (TranslationService) de kabul edilir
+    const isLegacy = !('conceptLookupPort' in deps) && !('translationService' in deps);
+    const opts: QuerySemanticMapperDeps = isLegacy ? {} : (deps as QuerySemanticMapperDeps);
+
     const repo = new InMemoryTranslationRepository();
-    const service = translationService || new TranslationService(repo);
+    const service = opts.translationService || new TranslationService(repo);
     this.candidateResolver = new ConceptCandidateResolver(service);
     this.wordFamilyResolver = new WordFamilyResolver();
+    this.conceptLookupPort = opts.conceptLookupPort;
   }
 
-  /**
-   * Senkron map metodu (test uyumlulugu icin)
-   * Basit sozluk tabanli esleme
-   */
+  /** Registry anahtarı (WATER) veya ham string → ULID */
+  private normalizeConceptId(rawId: string | undefined): string | undefined {
+    if (!rawId) return undefined;
+    const registryValue = (CONCEPT_REGISTRY as any)[rawId];
+    if (registryValue) {
+      return getConceptUlid(registryValue) ?? String(registryValue);
+    }
+    return rawId;
+  }
+
   public map(query: string): SemanticQueryResult {
-    const normalizedQuery = (query ?? '')
-      .trim()
-      .normalize('NFC')
-      .toLowerCase();
-
-    // Basit sozluk: TR/EN/RU/ADY -> CONCEPT_WATER
-    // ID artik elle yazilmiyor, registry tek kaynak.
-    const WATER_CONCEPT_ID: string = getConceptUlid(CONCEPT_REGISTRY.WATER) ?? CONCEPT_REGISTRY.WATER;
-    const waterWords = ['su', 'water', 'вода', 'псы'];
-    const partialWords = ['akarsular', 'akarsu', 'nehir'];
-
+    // Senkron API — sadece WordFamilyResolver kullanır (lookup port asenkron olduğu için).
+    const normalizedQuery = (query ?? '').trim().normalize('NFC').toLowerCase();
+    const tokens = normalizedQuery.split(/\s+/).filter(Boolean);
     const detectedLanguage = this.detectLanguage(normalizedQuery);
 
-    // Tam esleme
-    if (waterWords.includes(normalizedQuery)) {
-      return {
-        normalizedQuery,
-        tokens: normalizedQuery.split(/\s+/).filter(Boolean),
-        conceptId: WATER_CONCEPT_ID,
-        confidence: 1.0,
-        detectedLanguage,
-        candidates: [{ conceptId: WATER_CONCEPT_ID, confidence: 1.0 }],
-        source: 'translation',
-      };
+    const wf = this.wordFamilyResolver.resolve(normalizedQuery);
+    if (wf?.conceptId) {
+      const conceptId = this.normalizeConceptId(wf.conceptId);
+      if (conceptId) {
+        return {
+          normalizedQuery,
+          tokens,
+          conceptId,
+          confidence: wf.confidence ?? 0.8,
+          detectedLanguage,
+          candidates: [{ conceptId, confidence: wf.confidence ?? 0.8 }],
+          source: 'wordFamily',
+        };
+      }
     }
 
-    // Kismi esleme (0.7)
-    if (partialWords.some(w => normalizedQuery.includes(w))) {
-      return {
-        normalizedQuery,
-        tokens: normalizedQuery.split(/\s+/).filter(Boolean),
-        conceptId: WATER_CONCEPT_ID,
-        confidence: 0.7,
-        detectedLanguage,
-        candidates: [{ conceptId: WATER_CONCEPT_ID, confidence: 0.7 }],
-        source: 'translation',
-      };
-    }
-
-    // Bilinmeyen
     return {
       normalizedQuery,
-      tokens: normalizedQuery.split(/\s+/).filter(Boolean),
-      detectedLanguage: 'UNKNOWN',
+      tokens,
+      detectedLanguage: detectedLanguage ?? 'UNKNOWN',
       confidence: 0,
       candidates: [],
     };
@@ -95,76 +96,85 @@ export class QuerySemanticMapper {
     const normalizedQuery = (query ?? '')
       .trim()
       .normalize('NFC')
-      // Palochka'yi koru (U+04C0 -> U+04C0)
       .replace(/\u04C0/g, '\u04C0')
-      // Diger buyuk harfleri kucult (Latin + Kiril)
       .toLowerCase()
-      // Palochka'yi geri koy (toLowerCase onu bozduysa)
       .replace(/\u04CF/g, '\u04C0');
+
     const tokens = normalizedQuery.split(/\s+/).filter(Boolean);
+    const detectedLanguage = this.detectLanguage(normalizedQuery);
 
-    // 1. Öncelik: ConceptCandidateResolver (TranslationEntry.concept)
-    let candidates = await this.candidateResolver.resolve(normalizedQuery);
-    let source: 'translation' | 'wordFamily' | 'both' = 'translation';
+    // 1) ConceptCandidateResolver (çeviri verisi)
+    let candidates: ConceptCandidateDTO[] = [];
+    let source: 'translation' | 'wordFamily' | 'lookup' | 'both' = 'translation';
+    try {
+      const resolved = await this.candidateResolver.resolve(normalizedQuery);
+      candidates = Array.isArray(resolved) ? resolved : [];
+    } catch {
+      candidates = [];
+    }
 
-    // 2. Fallback: WordFamilyResolver (Root → WordFamily → Concept)
-    if (candidates.length === 0) {
-      const wfResult = this.wordFamilyResolver.resolve(normalizedQuery);
-      if (wfResult.conceptId) {
-        candidates = [
-          {
-            conceptId: wfResult.conceptId,
-            confidence: wfResult.confidence,
-          },
-        ];
-        source = 'wordFamily';
-      }
-    } else {
-      // 3. Her iki kaynağı birleştir (varsa)
-      const wfResult = this.wordFamilyResolver.resolve(normalizedQuery);
-      if (wfResult.conceptId) {
-        const exists = candidates.some((c) => c.conceptId === wfResult.conceptId);
+    // 2) WordFamilyResolver (morfoloji)
+    let wfResult: { conceptId?: string; confidence: number } = { conceptId: undefined, confidence: 0 };
+    try {
+      const r = this.wordFamilyResolver.resolve(normalizedQuery);
+      wfResult = { conceptId: r?.conceptId, confidence: r?.confidence ?? 0 };
+    } catch {
+      wfResult = { conceptId: undefined, confidence: 0 };
+    }
+
+    if (wfResult.conceptId) {
+      const normalized = this.normalizeConceptId(wfResult.conceptId);
+      if (normalized) {
+        const exists = candidates.some((c) => this.normalizeConceptId(c.conceptId) === normalized);
         if (!exists) {
-          candidates.push({
-            conceptId: wfResult.conceptId,
-            confidence: wfResult.confidence,
-          });
-          source = 'both';
-        } else {
-          source = 'both';
+          candidates.push({ conceptId: normalized, confidence: wfResult.confidence });
         }
+        source = candidates.length > 1 ? 'both' : 'wordFamily';
       }
     }
 
-    const detectedLanguage = this.detectLanguage(normalizedQuery);
+    // 3) ConceptLookupPort (veri kaynağı) — hâlâ boşsa
+    if (candidates.length === 0 && this.conceptLookupPort) {
+      try {
+        const hit = await this.conceptLookupPort.lookup(normalizedQuery);
+        if (hit) {
+          candidates = [{ conceptId: hit.conceptId, confidence: hit.confidence }];
+          source = 'lookup';
+        }
+      } catch {
+        // Veri kaynağı hata verirse sessizce yut, undefined dön
+      }
+    }
+
+    const normalizedCandidates: ConceptCandidateDTO[] = candidates.map((c) => ({
+      ...c,
+      conceptId: this.normalizeConceptId(c.conceptId) as string,
+    }));
 
     return {
       normalizedQuery,
       tokens,
-      conceptId: candidates[0]?.conceptId,
-      confidence: candidates[0]?.confidence ?? 0.0,
+      conceptId: normalizedCandidates[0]?.conceptId,
+      confidence: normalizedCandidates[0]?.confidence ?? 0.0,
       detectedLanguage,
-      candidates,
+      candidates: normalizedCandidates,
       source,
     };
   }
 
   private detectLanguage(query: string): string | undefined {
     if (!query) return undefined;
-    // Bilinen Adigece kelimeler, Rusca ile paylastiklari Kiril harflerinden once gelir.
-    if (this.wordFamilyResolver.resolveRoot(query)) return 'ADY';
+    try {
+      if (this.wordFamilyResolver.resolveRoot(query)) return 'ADY';
+    } catch { /* noop */ }
 
-    // Adigece özel Kiril araligi
     if (/[\u2C00-\u2C5F]/.test(query)) return 'ADY';
     if (/[\u0400-\u04FF]/.test(query)) {
-      // ADY ozel karakterler
       if (/[Ӏӏ]/.test(query)) return 'ADY';
       return 'RU';
     }
     if (/[\u0600-\u06FF]/.test(query)) return 'AR';
-    // Turkce ozel karakterler
     if (/[çğıöşüÇĞİÖŞÜ]/.test(query)) return 'TR';
-    // Turkce kelime sozlugu
     const turkishWords = ['su', 'ateş', 'toprak', 'hava', 'deniz', 'nehir', 'akarsu', 'akarsular'];
     if (turkishWords.includes(query.toLowerCase())) return 'TR';
     return 'EN';

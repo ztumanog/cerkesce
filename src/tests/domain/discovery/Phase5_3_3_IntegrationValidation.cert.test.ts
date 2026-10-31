@@ -1,4 +1,4 @@
-﻿import { describe, it, expect, beforeEach } from 'vitest';
+import { describe, it, expect, beforeEach } from 'vitest';
 import { DiscoveryFacade } from '../../../domain/discovery/services/DiscoveryFacade';
 
 describe('Phase 5.3.3 - Integration & Validation Certification (IV)', () => {
@@ -28,7 +28,7 @@ describe('Phase 5.3.3 - Integration & Validation Certification (IV)', () => {
   it('IV-001: Cross-Lingual Discovery - Farklı dillerdeki kelimeler aynı kök kavrama haritalanmalıdır', async () => {
     const resultEn = await facade.explore('water');
     const resultTr = await facade.explore('su');
-    const resultAdy = await facade.explore('psı');
+    const resultAdy = await facade.explore('псы');
 
     expect(resultEn.conceptId).toBe(WATER_ID);
     expect(resultTr.conceptId).toBe(WATER_ID);
@@ -83,3 +83,4 @@ describe('Phase 5.3.3 - Integration & Validation Certification (IV)', () => {
     expect(duration).toBeLessThan(1000);
   });
 });
+

@@ -1,3 +1,4 @@
+import { createLexemeLookupAdapter } from '../adapters/createLexemeLookupAdapter';
 import { QuerySemanticMapper } from './QuerySemanticMapper';
 import { GraphTraversalService } from './GraphTraversalService';
 import { KnowledgeRanker } from './KnowledgeRanker';
@@ -22,7 +23,12 @@ export class DiscoveryFacade {
     graphRepo: any,
     customMapper?: QuerySemanticMapper
   ) {
-    this.mapper = customMapper || new QuerySemanticMapper();
+    if (customMapper) {
+      this.mapper = customMapper;
+    } else {
+      const adapter = createLexemeLookupAdapter();
+      this.mapper = new QuerySemanticMapper({ conceptLookupPort: adapter });
+    }
     this.traversal = new GraphTraversalService(graphRepo);
     this.ranker = new KnowledgeRanker();
     this.clusterer = new ContextClusterer();
@@ -62,15 +68,14 @@ export class DiscoveryFacade {
       targetConceptId = mapped.conceptId;
     }
 
+    const startTime = Date.now();
     const traversalNodes = (await this.traversal.traverse(targetConceptId, options?.maxDepth || 2)) || [];
     const rawRanked = this.ranker.rank(traversalNodes) || [];
     const rawClusters = this.clusterer.cluster(rawRanked) || [];
-
-    const startTime = Date.now();
     const executionTimeMs = Date.now() - startTime;
 
     const assembledDTO: any = this.assembler.assemble(
-      targetConceptId,
+      queryOrConceptId,
       executionTimeMs,
       { conceptId: targetConceptId, traversalNodes, maxDepth: options?.maxDepth || 2 }
     ) || {};
@@ -116,12 +121,16 @@ export class DiscoveryFacade {
 
     return {
       ...assembledDTO,
+      query: queryOrConceptId,
       conceptId: targetConceptId,
       rootConceptId: targetConceptId,
       relatedConcepts: normalizedRelated,
       rankedRelatedConcepts: normalizedRelated,
       contextClusters: normalizedClusters,
-      traversalNodes: traversalNodes
+      traversalNodes: traversalNodes,
+      executionTimeMs
     } as DiscoveryResultDTO;
   }
 }
+
+

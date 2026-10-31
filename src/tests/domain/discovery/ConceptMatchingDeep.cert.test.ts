@@ -1,8 +1,11 @@
 import { describe, it, expect } from 'vitest';
-import { QuerySemanticMapper } from '../../../domain/discovery/services/QuerySemanticMapper';
+import { DiscoveryFacade } from '../../../domain/discovery/services/DiscoveryFacade';
 
 describe('Concept Matching Deep Dive', () => {
-  const mapper = new QuerySemanticMapper();
+  // Basit mock repo — Facade'in traversal için ihtiyaç duyduğu getNeighbors
+const mockRepo = { getNeighbors: () => [] };
+const facade = new DiscoveryFacade(mockRepo);
+const mapper = facade['mapper'];   // Facade içindeki mapper (port enjekte edilmiş)
 
   it('CMD-001: water, tree, horse farkli concept donmeli', async () => {
     const water = await mapper.mapQuery('water');
@@ -38,3 +41,7 @@ describe('Concept Matching Deep Dive', () => {
     expect(unknown.conceptId).toBeUndefined();
   });
 });
+
+
+
+
