@@ -88,3 +88,49 @@ public/data/linguistic/lexemes_before*
 public/data/linguistic/qc-*
 public/data/linguistic/reports/
 public/data_backup_css/
+
+# ===== Geçici dosyalar (2026-11-01 ek) =====
+# Kök dizindeki geçici JSON ve config
+c11_final.json
+morph_gercek.json
+morph_test.json
+pe_config.json
+old.json
+mafe-sonuc.json
+proxy.ts
+next-env.d.ts
+test-normalize.js
+BULUNAN_YOL
+
+# .env dosyaları
+.env
+.env.ini
+.env.test
+.env.local
+.env.*.local
+
+# .vercel / .vscode
+.vercel/
+.vscode/
+arayuz/.vscode/
+android/.idea/
+
+# Analiz çıktıları
+analiz-cikti.txt
+analiz-kontrol.ps1
+discovery-report.txt
+sonuc.csv
+
+# Geçici txt/csv/json (kök)
+*.txt.tmp
+*_rapor*.txt
+*_analiz*.txt
+
+# Android keystore
+android/cerkesce-release.keystore
+
+# Public ikonları (geçici screenshot)
+public/icons/Screenshot-1.png
+
+# Data backup
+data_backup_css/
