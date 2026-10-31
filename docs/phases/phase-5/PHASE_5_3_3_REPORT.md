@@ -1,107 +1,66 @@
-# Phase 5.3.3 — Integration & Validation Sertifikasyonu
+# Phase 5.3.3 — Integration & Validation: Dogrulama Notu
 
+**Durum:** Kismi dogrulama. Sertifikasyon onayi verilmedi.
 **Tarih:** 2026-10-31
-**Durum:** KARŞILANDI
-**Sertifikasyon:** TAMAMLANDI
 
 ---
 
-## 1. Sonuç Özeti
+## 1. Dogrulanan Komutlar
 
-| Metrik | Değer |
+| Kontrol | Sonuc |
 |---|---|
-| Test Files | 194 passed |
-| Tests | 1107 passed |
-| TypeScript | 0 hata (tsc exit: 0) |
-| Discovery modülü | 86/86 PASS |
-| Discovery + API | 27/27 PASS |
+| npx tsc --noEmit | exit 0 |
+| npx vitest run (tum suite) | 194 dosya, 1107 test gecti |
+| src/tests/domain/discovery | 26 dosya, 81 test gecti |
 
 ---
 
-## 2. Mimari
+## 2. Varligi Dogrulanan Dosyalar
 
-### 2.1 Yeni Bileşenler
+- src/domain/discovery/ports/ConceptLookupPort.ts
+- src/domain/discovery/adapters/LexemeConceptLookupAdapter.ts
+- src/domain/discovery/adapters/createLexemeLookupAdapter.ts
+- public/data/linguistic/word_form_mapping.json
 
-| Dosya | Görev |
+---
+
+## 3. Test ID'leri
+
+Asagidaki ID'ler test dosyalarinda tanimli. Her birinin tek tek
+geçtigi ayrica dogrulanmadi; gecis yalnizca dosya bazinda dogrulandi.
+
+| ID | Dosya |
 |---|---|
-| src/domain/discovery/ports/ConceptLookupPort.ts | Query → Concept çözümleme arayüzü |
-| src/domain/discovery/adapters/LexemeConceptLookupAdapter.ts | JSON tabanlı implementasyon |
-| src/domain/discovery/adapters/createLexemeLookupAdapter.ts | Fabrika (caching) |
-| public/data/linguistic/word_form_mapping.json | Form → Concept eşlemesi |
+| CMD-001..003 | src/tests/domain/discovery/ConceptMatchingDeep.cert.test.ts |
+| DSR-001..002 | src/tests/domain/discovery/DiscoveryFacadeRouting.cert.test.ts |
+| DHC-001 | src/tests/domain/discovery/DiscoveryFacadeHardCoded.cert.test.ts |
+| KE-001..005 | src/tests/domain/discovery/KnowledgeExplorer.cert.test.ts |
+| IV-001..005 | src/tests/domain/discovery/Phase5_3_3_IntegrationValidation.cert.test.ts |
+| API-001..006 | src/tests/api/Phase6_1_ConceptNetworkAPI.cert.test.ts |
+| API-001..003 | src/tests/presentation/api/Phase6_1_APIGateway.cert.test.ts |
 
-### 2.2 Değişen Dosyalar
-
-| Dosya | Değişiklik |
-|---|---|
-| QuerySemanticMapper.ts | Hard-coded DICTIONARY kaldırıldı, port enjekte edildi |
-| DiscoveryFacade.ts | Adapter fabrikası kullanılıyor |
-| ConceptMatchingDeep.cert.test.ts | Port enjeksiyonu eklendi |
-| Phase5_3_3_IntegrationValidation.cert.test.ts | psı → псы düzeltmesi |
-
-### 2.3 Kaldırılan
-
-- QuerySemanticMapper içindeki hard-coded DICTIONARY sabiti
-- Doğrulanmamış transliterasyonlar (chyg, ş̍ı, shi vb.)
-- Test-driven hard-coding
+**Not:** API-001 ve API-002 ID'leri iki dosyada da kullaniliyor.
+Tekil referans icin dosya adi da yazilmali.
 
 ---
 
-## 3. Test Kanıtları
+## 4. Bilinen Sinirlar
 
-### 3.1 Discovery Testleri
-
-| Test | Sonuç |
-|---|---|
-| CMD-001: water, tree, horse farklı concept | PASS |
-| CMD-002: su, water, псы aynı concept | PASS |
-| CMD-003: bilinmeyen kelime undefined | PASS |
-| DSR-001: Semantic routing farklı concept | PASS |
-| DSR-002: water = su | PASS |
-| DHC-001: explore() hep WATER dönmüyor | PASS |
-| KE-001..005: Knowledge Explorer API | PASS |
-| IV-001..005: Integration & Validation | PASS |
-| API-001..005: REST Gateway | PASS |
-
-### 3.2 Örnek Çıktı
-
-
-
-
-
-water → 01ARZ3NDEKTSV4RRFFQ69G5FAV
-tree → 01M44S1026STZT4G96ENK928X1
-horse → 01ARZ3NDEKTSV4RRFFQ69G5FB3
-su → 01ARZ3NDEKTSV4RRFFQ69G5FAV
-псы → 01ARZ3NDEKTSV4RRFFQ69G5FAV
-unknown_word → undefined
+- lexemes.json: 28.155 kayit, bunlardan 6.863'unde conceptId dolu (PowerShell ile sayildi).
+- word_form_mapping.json kapsami kucuk; ayrintili kapsam olculmedi.
+- Kalan lexeme'ler icin conceptId atamasi veri sahibi tarafindan yapilmali.
 
 ---
 
-## 4. Bilinen Sınırlamalar
+## 5. Sonuc
 
-- word_form_mapping.json şu an 10 form içeriyor (test minimum)
-- Geniş kapsam için lexemes.json tabanlı otomatik türetim gerekli
-- lexemes.json 28.155 kayıttan sadece 6.863'ünde conceptId dolu
-- Kalanlar için veri sahibi etiketlemesi gerekir
-
----
-
-## 5. Commit Referansları
-
-| Commit | Mesaj |
-|---|---|
-| ea1470d | refactor(discovery): hard-coded DICTIONARY -> ConceptLookupPort |
-| 889a011 | feat(collaboration): moderatorId zorunlu, rejectProposal ve PENDING/yazar kuralları |
+**Sertifikasyon onayi verilmedi.**
+Bu belge yalnizca dogrulanan komutlari ve varligi teyit edilen
+dosyalari kayit altina alir. Her test ID'sinin tekil dogrulamasi
+ve word_form_mapping kapsaminin olculmesi sonraki adimdir.
 
 ---
 
-## 6. Referanslar
-
-- Sonuç.txt (2026-10-31) — Seçenek B kararı
-- word_form_mapping.README.md — Veri katmanı notu
-- P5-001-CORPUS_AUDIT.md — Önceki faz
-
----
-
-**İmza:** Mimari Ekip
+**Imza:** Mimari Ekip
 **Tarih:** 2026-10-31
+

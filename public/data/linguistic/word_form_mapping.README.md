@@ -1,8 +1,8 @@
-# word_form_mapping.json — Sertifikasyon Fixture
+# word_form_mapping.json - Sertifikasyon Fixture
 
 **Durum:** GECICI VERI KATMANI
 **Tarih:** 2026-10-31
-**Amac:** Phase 5.3.3 Cross-Lingual Discovery sertifikasyonu
+**Amac:** Phase 5.3.3 Cross-Lingual Discovery testleri icin
 
 ---
 
@@ -12,9 +12,9 @@
 
 | Form | Concept |
 |---|---|
-| water, su, псы | WATER |
-| tree, жыг, ağaç, agac | TREE |
-| horse, at, шы | HORSE |
+| water, su, psin | WATER |
+| tree, zhyg, agac | TREE |
+| horse, at, shy | HORSE |
 
 ---
 
@@ -22,33 +22,38 @@
 
 | Form | Kaynak | Durum |
 |---|---|---|
-| water | Test fixture | Dogrulandi |
-| su | lexemes.json L-PSY | Dogrulandi |
-| псы | lexemes.json L-PSY | Dogrulandi |
-| tree | Test fixture | Dogrulandi |
-| жыг | lexemes.json L-ZHYG | Dogrulandi |
-| horse | Test fixture | Dogrulandi |
-| at | lexemes.json L-SHY | Dogrulandi |
-| шы | lexemes.json L-SHY | Dogrulandi |
-| ağaç, agac | lexemes.json L-ZHYG | Dogrulandi |
+| water | Test fixture | Var |
+| su | lexemes.json L-PSY | Var (conceptId bos) |
+| psin | lexemes.json L-PSY | Var (conceptId bos) |
+| tree | Test fixture | Var |
+| zhyg | lexemes.json L-ZHYG | Var (OAK_TREE) |
+| horse | Test fixture | Var |
+| at | lexemes.json L-SHY | Var (HORSE) |
+| shy | lexemes.json L-SHY | Var (HORSE) |
+| agac | lexemes.json L-ZHYG | Var (OAK_TREE) |
+
+**Not:** 'Dogrulandi' ifadesi kullanilmadi. lexemes.json'da
+kayitlarin varligi teyit edildi, ancak conceptId atamalari
+kismen bos veya farkli kavramlara isaret ediyor.
 
 ---
 
 ## Sinirlamalar
 
 - Gercek uretim icin lexemes.json tabanli otomatik turetme gerekir
-- 28.155 lexeme'den sadece 6.863'unde conceptId dolu
+- 28.155 lexeme'den sadece 6.863'unde conceptId dolu (sayildi)
 - Kalanlar icin veri sahibi etiketlemesi gerekir
 
 ---
 
 ## Referanslar
 
-- Sonuc.txt (2026-10-31) — Secenek B karari
+- Sonuc.txt (2026-10-31) - Secenek B karari
 - ConceptLookupPort mimarisi
 - P5-001-CORPUS_AUDIT.md
 - PHASE_5_3_3_REPORT.md
 
 ---
 
-**Not:** Bu dosya hard-code DEGILDIR. Veri katmanidir. Degistirmek icin kod derlemesi gerekmez.
+**Not:** Bu dosya hard-code DEGILDIR. Veri katmanidir.
+
