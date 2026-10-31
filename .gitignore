@@ -42,3 +42,49 @@ Thumbs.db
 
 # TypeScript
 *.tsbuildinfo
+# ===== Geçici analiz dosyaları (2026-11-01) =====
+_scripts/
+__pycache__/
+_manuel/
+_manuel_virgul/
+_raporlar/
+_arsiv/
+_archive/
+_backup/
+_backups/
+_yedek/
+_wiktionary/
+_*.json
+_*.txt
+_*.csv
+_*.py
+_orphans_*.txt
+_removed_review.csv
+_roots_*.json
+_ru_tr_kopru.json
+_en_tr_kopru.json
+_kalan_kokler.json
+_bozuk_*.json
+_bos_*.json
+_bati_*.json
+
+# Log ve dump dosyaları
+*.log
+*.tsbuildinfo
+
+# Veri dump'ları
+data/
+public/data/*.csv
+public/data/*.txt
+public/data/linguistic/*.csv
+public/data/linguistic/*.bak*
+public/data/linguistic/*.backup*
+public/data/linguistic/*.broken*
+public/data/linguistic/*.before*
+public/data/linguistic/*.snapshot*
+public/data/linguistic/*.yedek*
+public/data/linguistic/lexemes_backup*
+public/data/linguistic/lexemes_before*
+public/data/linguistic/qc-*
+public/data/linguistic/reports/
+public/data_backup_css/
