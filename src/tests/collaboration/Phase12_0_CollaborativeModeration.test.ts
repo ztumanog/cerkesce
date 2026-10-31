@@ -16,7 +16,9 @@ describe('Phase 12.0 - Collaborative Editing & Moderation Certification', () => 
 
     expect(proposal.status).toBe('PENDING');
 
-    const approved = CollaborativeModerationService.approveProposal('prop_001');
+    const approved = CollaborativeModerationService.approveProposal('prop_001', 'reviewer_001');
     expect(approved?.status).toBe('APPROVED');
   });
 });
+
+
