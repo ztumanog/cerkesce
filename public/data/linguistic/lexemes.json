@@ -47,7 +47,7 @@
     "root": "гу",
     "etymologyType": "native",
     "meaning": "радость / Гуапагъэ, нэжэгужагъэ, нэщхъыфӀагъэ гуэр щызэхищӀэм, щызэхихым деж, цӀыхум иӀэ хъу, ар къызэригъэлъагъуэ щытыкӀэ. ◊ Лацэ Къэмбот щыӀущӀэжым,",
-    "dialect": "kbd",
+    "dialect": "KBD",
     "dialectNote": "Kbd kaynakli",
     "wordFamily": {
       "id": "WF-GU",
@@ -1074,7 +1074,7 @@
     "ipa": "/nɐgʷ/",
     "literalMeaning": "yüz, sima",
     "conceptId": "FACE",
-    "notes": "Metonymy: nэ (göz) + гу (bölge) = gözün bölgesi → yüz. Kardanov (1957): 'область расположения глаз'. C-8'de yanlış 'göz içi' olarak kaydedilmişti. | conceptId aile mirasi oldugu icin temizlendi.",
+    "notes": "Metonymy: nэ (göz) + гу (bölge) = gözün bölgesi → yüz. Kardanov (1957): 'область расположения глаз'. C-8'de yanlış 'göz içi' olarak kaydedilmişti. | conceptId aile mirasi oldugu icin temizlendi. Türkçe bozuk kaytlar düzeltildi ",
     "corpusFrequencyAdy": 38,
     "corpusFrequencyKbd": 249,
     "dialectVariants": {
@@ -1099,7 +1099,7 @@
     ],
     "isLemma": true,
     "translations": {
-      "tr": "y?z, ?ehre, sima",
+      "tr": "yüz, çehre, sima",
       "en": "face, physiognomy",
       "ru": "лицо, физиономия"
     },
@@ -1826,7 +1826,7 @@
     "meaning": "beşik",
     "frequency": 39,
     "rootId": "R-GUSHE",
-    "audioFile": "https://kbd.wiktionary.org/wiki/Файл:гу500гущэ.ogg",
+    "audioFile": "https://upload.wikimedia.org/wikipedia/commons/a/a4/%D0%93%D1%83500%D0%B3%D1%83%D1%89%D1%8D.ogg",
     "audioStatus": "AVAILABLE",
     "alternateMeanings": [
       {
@@ -1845,12 +1845,12 @@
     "form": "ӏэ",
     "ipa": "/'ʔɐ/",
     "literalMeaning": "el",
-    "conceptId": "FACE",
+    "conceptId": "HAND",
     "dialectVariants": {
       "adyghe": "Ӏэ",
       "kabardian": "Ӏэ"
     },
-    "notes": "Yeni kok. Korpus: 90+ cumle. El. | conceptId aile mirasi oldugu icin temizlendi.",
+    "notes": "Yeni kok. Korpus: 90+ cumle. El. | conceptId aile mirasi oldugu icin temizlendi.\nNot kısmında belirtildiği gibi kök ailesinden hatalı olarak \"FACE\" (yüz) kavramı miras kaldığı için bu alanın HAND olarak düzeltilmesi gerekmektedir.   ",
     "corpusFrequencyAdy": 74,
     "corpusFrequencyKbd": 399,
     "partOfSpeech": "noun",
@@ -2474,7 +2474,8 @@
         "mostFrequentLexemeId": "L-1E"
       },
       "notes": "El ailesi (Ӏэ). Somatik kok. Corpus: 11.294 kullanim."
-    }
+    },
+    "dialect": "TUMU"
   },
   {
     "id": "L-1EPE",
@@ -3070,7 +3071,7 @@
     "form": "нэбжьыц",
     "ipa": "/nɐb'ʑǝts/",
     "literalMeaning": "kirpik",
-    "conceptId": null,
+    "conceptId": "Eyelash",
     "dialectVariants": {
       "adyghe": "нэбжьыц",
       "kabardian": "нэбжьыц"
@@ -3170,7 +3171,7 @@
     },
     "etymologyType": "native",
     "meaning": "ресница / НапӀэ нэзым тет цыхэр. ◊ Абы {Нэфисэт} и нэбжьыц фӀыцӀэ кӀыхьхэр мащӀэу мэтӀей, набдзэ къурашитӀыр пцӀащхъуэ дамэу шэщӀащ. КӀ. Т. {И} нэбжьы",
-    "dialect": "kbd",
+    "dialect": "tumu",
     "dialectNote": "Kbd kaynakli",
     "WF": "WF-NE-ANATOMY",
     "frequency": 8
@@ -6008,7 +6009,7 @@
     "form": "пэплъэн",
     "ipa": "/pɐ'pɬɐn/",
     "literalMeaning": "önüne bakmak",
-    "conceptId": null,
+    "conceptId": "L-WAIT",
     "dialectVariants": {
       "adyghe": "пэплъэн",
       "kabardian": "пэплъэн"
@@ -6100,7 +6101,8 @@
       "notes": "Burun/on ailesi (пэ). Somatik + mekan. Corpus: 7.184 kullanim."
     },
     "etymologyType": "native",
-    "meaning": "beklemek, gözlemek"
+    "meaning": "beklemek, gözlemek",
+    "dialect": "kbd"
   },
   {
     "id": "L-BZE",
@@ -14037,7 +14039,7 @@
     ],
     "isLemma": true,
     "translations": {
-      "tr": "care, yol",
+      "tr": "çare, yol",
       "en": "way, method, technique, trick",
       "ru": "способ, метод, приём",
       "ar": "إمكانية; فرصة; طريقة; احتمالات; إمكانية; فرصة"
@@ -14046,12 +14048,11 @@
     "taxonomyFamily": "Düşünce & Soyut",
     "rootForm": "Ӏэ-",
     "rootIds": [
-      "R-1E",
       "R-1E"
     ],
     "ipa": "/ʔɐ'mɑ:ɮ/",
     "root": "Ӏэ",
-    "wordFamilyId": "WF-1E",
+    "wordFamilyId": "WF-MEANS",
     "wordFamily": {
       "id": "WF-1E",
       "lexemeIds": [
@@ -34051,7 +34052,7 @@
     "status": "PENDING_REVIEW",
     "meaning": "bozkır, tarla",
     "ipa": "gʷǝbʁʷɐ",
-    "audioFile": "https://kbd.wiktionary.org/wiki/Файл:гу176губгъуэ.ogg",
+    "audioFile": "https://upload.wikimedia.org/wikipedia/commons/.../гу176губгъуэ.ogg",
     "audioStatus": "AVAILABLE",
     "examples": [
       {
@@ -42147,7 +42148,7 @@
       "en": "grief, woe, sorrow, misery, distress, pain, misfortune, heartbreak, mourning",
       "ru": "скорбь, горе, печаль"
     },
-    "conceptId": "PETROLEUM",
+    "conceptId": "GRIEF",
     "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2f/%D0%93%D1%83531%D0%B3%D1%83%D1%89%D3%8F%D1%8B%D1%85%D1%8C%D1%8D.ogg",
     "root": "щӀы",
     "etymologyType": "native",
@@ -45489,10 +45490,9 @@
     "notes": "Dogrulandi: temel kelime",
     "ipa": "/'ʔɐnɐ/",
     "rootIds": [
-      "R-1E",
       "R-1E"
     ],
-    "wordFamilyId": "WF-1E",
+    "wordFamilyId": "WF-1ENE",
     "derivation": {
       "rule": "compound",
       "components": [
@@ -45545,7 +45545,8 @@
       "notes": "El ailesi (Ӏэ). Somatik kok. Corpus: 11.294 kullanim."
     },
     "etymologyType": "native",
-    "meaning": "masa, sofra"
+    "meaning": "masa, sofra",
+    "dialect": "KBD"
   },
   {
     "id": "L-TX",
@@ -46699,8 +46700,7 @@
       "ar": "الاسم الأول; اسم"
     },
     "rootIds": [
-      "R-1E",
-      "R-1E"
+      "R-TS1E"
     ],
     "derivation": {
       "rootIds": [
@@ -146861,12 +146861,17 @@
     "translations": {
       "ru": "абазэхэр абазин, абазинка",
       "en": "Abazin, Abazinian, Abaza",
-      "tr": "ABAZA"
+      "tr": "Abaza"
     },
     "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b9/%D0%90002%D0%B0%D0%B1%D0%B0%D0%B7%D1%8D.ogg",
     "etymologyType": "unknown",
     "meaning": "ABAZA",
-    "conceptId": null
+    "conceptId": "L-ABZ",
+    "rootIds": [
+      "R-ABZ"
+    ],
+    "wordFamilyId": "WF-ABZ",
+    "dialect": "KBD"
   },
   {
     "id": "L-CORPUS-02286",
@@ -152111,7 +152116,7 @@
     "wordFamilyId": "WF-GUEREN",
     "rootId": "R-GUEREN",
     "ipa": "gʷɐ'rɐn",
-    "audioFile": "https://kbd.wiktionary.org/wiki/Файл:гу127гуэрэн.ogg",
+    "audioFile": "https://upload.wikimedia.org/wikipedia/commons/.../гу127гуэрэн.ogg",
     "audioStatus": "AVAILABLE",
     "examples": [
       {
@@ -161274,14 +161279,14 @@
       "kabardian": "бэгу"
     },
     "notes": "Corpus v1.0 (freq: 15, lang: kbd, source: 0.Ady-Ady_AIG) | Kaynak: sukunov-1998",
-    "ipa": "/bɐgʷ/",
+    "ipa": "[bɐgʷ]",
     "examples": [
       "БампӀэ зиӀэр псэлъалэщи, бэгу зиӀэр тӀэхъуалэщ."
     ],
     "literalMeaningAdy": "короста, чесотка Зэпахырэ кӀы",
     "isLemma": true,
     "rootIds": [
-      "R-GU"
+      "R-BEGU"
     ],
     "derivation": {
       "rootIds": [
@@ -161339,9 +161344,15 @@
     "dialect": "ady",
     "dialectNote": "Ady kaynakli",
     "rootId": "",
-    "wordFamilyId": "WF-GU",
+    "wordFamilyId": "WF-BEGU",
     "conceptId": "MANGE",
-    "literalMeaning": "uyuz (hastalık)"
+    "literalMeaning": "uyuz, koroza (scab)",
+    "audioFile": "https://upload.wikimedia.org/wikipedia/commons/1/1a/%D0%91139%D0%B1%D1%8D%D0%B3%D1%83.ogg",
+    "audioStatus": "AVAILABLE",
+    "audioSource": "kbd.wiktionary.org",
+    "audioDuration": "1.2s",
+    "audioLicense": "CC BY-SA 4.0",
+    "audioAuthor": "Rhdkabardian"
   },
   {
     "id": "L-CORPUS-02630",
@@ -262034,8 +262045,7 @@
     "literalMeaningAdy": "ЩӀыхьышхуэ зиӀэ, псоми яцӀыху",
     "isLemma": true,
     "rootIds": [
-      "R-1E",
-      "R-1E"
+      "R-TS1E"
     ],
     "derivation": {
       "rootIds": [
@@ -262743,7 +262753,6 @@
     "taxonomyFamily": "Kültür & Etkileşim",
     "rootForm": "Ӏэ-",
     "rootIds": [
-      "R-1E",
       "R-1E"
     ],
     "translations": {
@@ -262755,7 +262764,7 @@
     },
     "literalMeaningSource": "translations.ru->tr (orta)",
     "root": "Ӏэ",
-    "wordFamilyId": "WF-1E",
+    "wordFamilyId": "WF-NOISE",
     "wordFamily": {
       "id": "WF-1E",
       "lexemeIds": [
@@ -262782,7 +262791,8 @@
       "notes": "El ailesi (Ӏэ). Somatik kok. Corpus: 11.294 kullanim."
     },
     "etymologyType": "native",
-    "meaning": "büyük; buyuk"
+    "meaning": "büyük; buyuk",
+    "dialect": "KBD"
   },
   {
     "id": "L-CORPUS2-01366",
@@ -265043,7 +265053,7 @@
     "ipa": "/ʔɐn'kʷǝn/",
     "literalMeaningAdy": "Таучэлыншэ, темыгушхуэ ЩтэӀэщтаблэ, дзыхьмыщӀ, пӀейтей",
     "isLemma": true,
-    "conceptId": "ASTONISHED",
+    "conceptId": "ANXIOUS",
     "subConceptId": "STUNNED_STATE",
     "taxonomyFamily": "Nitelik & Zihin",
     "rootForm": "Ӏэ-",
@@ -265054,11 +265064,11 @@
     "translations": {
       "en": "indecisive, anxious, restless",
       "ru": "нерешительный, тревожный, беспокойный",
-      "tr": "discomfort"
+      "tr": "kararsız"
     },
     "literalMeaningSource": "translations.ru->tr (orta)",
     "root": "Ӏэ",
-    "wordFamilyId": "WF-1E",
+    "wordFamilyId": "WF-ANXIOUS",
     "wordFamily": {
       "id": "WF-1E",
       "lexemeIds": [
@@ -269843,7 +269853,7 @@
     },
     "literalMeaningSource": "translations.ru->tr (orta)",
     "root": "Ӏэ",
-    "wordFamilyId": "WF-1E",
+    "wordFamilyId": "WF-LOAN_ARABIC",
     "wordFamily": {
       "id": "WF-1E",
       "lexemeIds": [
@@ -276980,7 +276990,6 @@
     "taxonomyFamily": "Nitelik & Doğa",
     "rootForm": "Ӏэ-",
     "rootIds": [
-      "R-1E",
       "R-1E"
     ],
     "translations": {
@@ -276991,7 +277000,7 @@
     },
     "literalMeaningSource": "translations.ru->tr (orta)",
     "root": "Ӏэ",
-    "wordFamilyId": "WF-1E",
+    "wordFamilyId": "WF-TAME",
     "wordFamily": {
       "id": "WF-1E",
       "lexemeIds": [
@@ -278967,7 +278976,6 @@
     "taxonomyFamily": "Zaman & Çalışma",
     "rootForm": "Ӏэ-",
     "rootIds": [
-      "R-1E",
       "R-1E"
     ],
     "ipa": "/ʔɐ'χʷɐʁʷ/",
@@ -278977,7 +278985,7 @@
       "tr": "Sürü"
     },
     "root": "Ӏэ",
-    "wordFamilyId": "WF-1E",
+    "wordFamilyId": "WF-HERD",
     "wordFamily": {
       "id": "WF-1E",
       "lexemeIds": [
@@ -279004,7 +279012,8 @@
       "notes": "El ailesi (Ӏэ). Somatik kok. Corpus: 11.294 kullanim."
     },
     "etymologyType": "native",
-    "meaning": "Sürü"
+    "meaning": "Sürü",
+    "dialect": "ADY"
   },
   {
     "id": "L-CORPUS2-05608",
@@ -280833,7 +280842,6 @@
     "notes": "Corpus v1.0 batch-2 (freq: 18, lang: ady, source: none)",
     "isLemma": false,
     "rootIds": [
-      "R-1E",
       "R-1E"
     ],
     "derivation": {
@@ -302128,7 +302136,7 @@
     "meaning": "delayed",
     "rootId": "R-GUVE",
     "ipa": "gʷǝv",
-    "audioFile": "https://kbd.wiktionary.org/wiki/Файл:гу206гувэн.ogg",
+    "audioFile": "https://upload.wikimedia.org/wikipedia/commons/.../гу206гувэн.ogg",
     "audioStatus": "AVAILABLE"
   },
   {
@@ -342895,7 +342903,7 @@
     "meaning": "GECİKMEK",
     "rootId": "R-GUVE",
     "ipa": "gʷǝ'vɐn",
-    "audioFile": "https://kbd.wiktionary.org/wiki/Файл:гу206гувэн.ogg",
+    "audioFile": "https://upload.wikimedia.org/wikipedia/commons/.../гу206гувэн.ogg",
     "audioStatus": "AVAILABLE"
   },
   {
@@ -417186,7 +417194,6 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-1E",
       "R-1E"
     ],
     "wordFamilyId": "WF-1E",
@@ -418356,7 +418363,7 @@
       "R-1E",
       "R-1E"
     ],
-    "wordFamilyId": "WF-1E",
+    "wordFamilyId": "",
     "derivation": null,
     "dialectVariants": {
       "adyghe": "",
@@ -418416,7 +418423,7 @@
       "R-1E",
       "R-1E"
     ],
-    "wordFamilyId": "WF-1E",
+    "wordFamilyId": "",
     "derivation": null,
     "dialectVariants": {
       "adyghe": "",
@@ -418718,10 +418725,9 @@
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
     "rootIds": [
-      "R-1E",
       "R-1E"
     ],
-    "wordFamilyId": "WF-1E",
+    "wordFamilyId": "WF-MOVE",
     "derivation": null,
     "dialectVariants": {
       "adyghe": "",
@@ -418736,7 +418742,7 @@
       "trVerified": false,
       "en": "move back swh, move, resettle swh",
       "ru": "переселиться куда-л. обратно, переселиться",
-      "tr": "CANLANMAK"
+      "tr": "Geri taşınmak, yerinden göçmek"
     },
     "ipa": "/ʔɐpχʷɐ'ᶎǝn/",
     "root": "Ӏэ",
@@ -670645,7 +670651,7 @@
     ],
     "examplesSource": "1.Ady-Ady_AP.json (◊)",
     "root": "Ӏэ",
-    "wordFamilyId": "WF-1E",
+    "wordFamilyId": "",
     "wordFamily": {
       "id": "WF-1E",
       "lexemeIds": [
@@ -693458,7 +693464,7 @@
     "literalMeaning": "silence, silence",
     "literalMeaningSource": "ru->tr (KAVRAM_ etiketi) (orta)",
     "root": "Ӏэ",
-    "wordFamilyId": "WF-1E",
+    "wordFamilyId": "",
     "wordFamily": {
       "id": "WF-1E",
       "lexemeIds": [
@@ -759255,7 +759261,6 @@
     },
     "ipa": "/ʔɐnkʷnǝn/",
     "rootIds": [
-      "R-1E",
       "R-1E"
     ],
     "notes": "Kaynak: 5.Ady-Rus_Qarden.json",
@@ -938341,7 +938346,7 @@
       "R-1E",
       "R-1E"
     ],
-    "wordFamilyId": "WF-1E",
+    "wordFamilyId": "",
     "wordFamily": {
       "id": "WF-1E",
       "lexemeIds": [
