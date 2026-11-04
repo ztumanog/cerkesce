@@ -139,3 +139,18 @@ data_backup_css/
 storage/snapshots/
 storage/snapshots/*.json
 
+
+# Faz 16B: snapshot yedekleri
+storage/snapshots/
+
+
+# Faz 16A/16B: buyuk rapor dosyalari
+docs/reports/faz16a/*.txt
+docs/reports/faz16a/*.json
+docs/reports/faz16a/*.png
+
+
+# Faz 17B: ek backup yollari
+.backups/
+backups/
+
