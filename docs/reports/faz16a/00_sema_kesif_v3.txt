@@ -1,0 +1,95 @@
+ALAN ENVANTERI
+==============================================================================
+id                                28155  "L-GUF1E"
+form                              28155  "гуфӏэ"
+ipa                               28123  "/'gʷǝfʹɐ/"
+meaning                           28123  "радость / Гуапагъэ, нэжэгужагъэ, нэщхъыфӀагъэ гуэр щызэхищӀ
+translations                      28113  {"tr": "sevinç, mutluluk", "en": "joy, happiness, gladness, 
+etymologyType                     28107  "native"
+notes                             27328  "S2-005 T6 action test | conceptId aile mirasi oldugu icin t
+partOfSpeech                      26473  "noun"
+rootIds                           15902  ["R-GU"]
+examples                          15124  ["Лацэ Къамбот щыӀущӀэжым, гуфӀэр и гум щыз къэхъуащ.", "шык
+wordFamilyId                      14602  "WF-GU"
+literalMeaning                    14016  "sevgi, mutluluk"
+isLemma                           13371  true
+corpusFrequency                   13291  17
+dialectVariants                   12824  {"adyghe": "гушӀо", "kabardian": "гуфӀэ"}
+conceptNorm                       12671  "QUALITY_CLEAR"
+root                              12182  "гу"
+derivation                        10446  {"rule": "root", "components": ["гу"]}
+wordFamily                         8876  {"id": "WF-GU", "lexemeIds": ["KAV-ГУАВА", "KAV-ГУАГЪЭКӀА", 
+conceptId                          6993  "JOY"
+literalMeaningSource               3886  "translations.ru->tr (orta)"
+taxonomyFamily                     2276  "Duygu & Zihin"
+rootForm                           2271  "гу"
+subConceptId                       2244  "EMOTION"
+dialect                            2123  "KBD"
+literalMeaningAdy                  2114  "Именительнэ падежым иту ещанэ щхьэр къэзыгъэлъагъуэ цӀэпапщ
+pos                                2113  "прил"
+status                             1864  "rare"
+audioUrl                           1841  "https://upload.wikimedia.org/wikipedia/commons/8/8e/%D0%93%
+dialectNote                        1815  "Kbd kaynakli"
+ipaSource                          1640  "root-derived"
+synthetic_reason                   1447  "L-AUTO otomatik uretim, sozlukte yok, concept yok, POS yok"
+dictionaryEvidence                 1120  ["sukunov-1998"]
+oldFamily                           852  "WF-1E"
+frequency                           824  55
+rootId                              770  "R-GUSHE"
+examplesSource                      622  "1.Ady-Ady_AP.json (◊)"
+homonymGroupId                      363  "HG-Ӏэгу"
+homonymIndex                        363  1
+tr_status                           272  "fixed_manual"
+corpusFrequencyKbd                  164  17
+corpusFrequencyAdy                  163  12
+senseNumber                         127  2
+WF                                  112  "WF-NE-ANATOMY"
+kesisen                             112  "KOK_DISI"
+source                               52  "Manuel Split (Sprint R)"
+examples_arsiv                       47  ["лъэгу"]
+translationSource                    40  "literalMeaning-derived"
+tags                                 36  ["WF-SHHXHEL", "MILL", "noun"]
+aliases                              36  ["L-NARTYHU"]
+conceptIds                           29  ["UNDERSTAND", "AGREE"]
+corpusEvidence                       27  {"documents": 25, "forms": [{"form": "губж", "meaning": "ofk
+pos_status                           26  "PENDING"
+pos_reason                           26  "Sozlukte POS bulunamadi, manuel inceleme gerekli"
+etymology                            19  "[п] + -э- + [цӏур] + -э"
+_needs_translation                   19  true
+senses                               17  [{"senseId": 1, "gloss": "milk", "tr": "süt", "ru": "молоко"
+verified                             12  true
+kaynakSayisi                         12  23
+conceptIdGecersiz                     9  "Anatomy / Body Part"
+latinName                             9  "Cucurbita maxima Duch."
+entry_type                            8  "lemma"
+audioFile                             6  "https://upload.wikimedia.org/wikipedia/commons/a/a4/%D0%93%
+audioStatus                           6  "AVAILABLE"
+sources                               6  ["Jonty Yamisha", "Kardanov 1957"]
+language                              6  "ru"
+idioms                                5  ["ГущӀэм зигъэзэн → ruhunun derinligine kadar endiselenmek",
+isExempt                              5  true
+lemmaId                               4  "LEMMA-BZE"
+examplesCount                         3  10
+updatedAt                             2  "2026-10-25T00:02:40.874Z"
+lastEditor                            2  "admin"
+lastReason                            2  "küçürk harfe çevridi "
+alternateMeanings                     2  [{"pos": "particle", "meaning": "pekiştirme edatı", "meaning
+dialectVariantsSource                 2  {"adyghe": "", "kabardian": "1.Ady-Ady_AP.json (Apaşev 2008)
+layer                                 2  "PhraseLayer"
+variant                               1  "пэтӀей"
+synonyms                              1  ["мыбыдэ", "пцӀы", "шкӀумпӀ"]
+derivedWords                          1  [{"meaning": "çürüklük", "form": "фахуэ"}, {"meaning": "altt
+adygheEquivalent                      1  "шъугъэ"
+proverbs                              1  ["Гум и щӀасэр псэм и гуапэщ.", "Псэ зиӀэм ажал иӀэщ.", "Псэ
+compounds                             1  [{"form": "псэ быдэ", "meaning": "dayanikli, saglam"}, {"for
+idiomCount                            1  80
+derivedForms                          1  [{"form": "ухъумэн", "meaning": "esirgemek", "sources": 1}, 
+eastForm                              1  "дыгъуасэ"
+audioSource                           1  "kbd.wiktionary.org"
+audioDuration                         1  "1.2s"
+audioLicense                          1  "CC BY-SA 4.0"
+audioAuthor                           1  "Rhdkabardian"
+uncertain_reason                      1  "Sozlukte kesik metin, dolmen/anlam dogrulanamadi"
+
+CONCEPT ALANLARI: ['conceptId', 'subConceptId', 'conceptIdGecersiz', 'conceptIds', 'conceptNorm']
+MEANING ALANLARI: ['literalMeaning', 'translations', 'meaning', 'alternateMeanings', 'senses', 'senseNumber', 'literalMeaningAdy', 'literalMeaningSource', 'translationSource', '_needs_translation']

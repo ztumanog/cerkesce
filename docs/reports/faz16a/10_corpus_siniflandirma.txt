@@ -1,0 +1,312 @@
+==============================================================================
+CORPUS GERCEK SINIFLANDIRMA
+==============================================================================
+Toplam: 1586
+
+Sinif dagilimi:
+  BRIDGE-YOK                     894
+  ODUNC-?                        431
+  YERLI-FALLBACK                 154
+  YERLI-PARTIAL                  28
+  DIGER                          18
+  ODUNC-RUS                      12
+  ODUNC-ARAP                     11
+  DILBILGISI-ADVERB              11
+  DILBILGISI-PRONOUN             9
+  DILBILGISI-PARTICLE            8
+  ODUNC-BATI                     4
+  DILBILGISI-CONJUNCTION         2
+  YERLI-EXACT                    2
+  DILBILGISI-POSTPOSITION        1
+  ODUNC-TURK                     1
+
+=== DILBILGISI-PRONOUN (9) ===
+  L-CORPUS-00000  ащ  O / Ona / Onun (Ergatif)
+  L-CORPUS-00005  тэ  Nerede / Nereye?
+  L-CORPUS-00008  сыда  Niye, neden, niçin?
+  L-CORPUS-00018  сыд  Ne?
+  L-CORPUS-00027  горэ  Bir, herhangi bir, falan
+  L-CORPUS-00029  мыр  Bu, işte bu
+  L-CORPUS-01075  зей  Kızılcık
+  L-CORPUS-03481  сысей  MAYINLAMA
+  L-CORPUS-03760  ууей  SENİN
+
+=== DILBILGISI-CONJUNCTION (2) ===
+  L-CORPUS-00001  ау  Ama, fakat, lakin
+  L-CORPUS-00369  аби  hatta, bile, -de/da
+
+=== DILBILGISI-POSTPOSITION (1) ===
+  L-CORPUS-00003  пае  İçin
+
+=== DILBILGISI-PARTICLE (8) ===
+  L-CORPUS-00006  ары  Evet, öyledir
+  L-CORPUS-00034  дыдэ  HIZLI
+  L-CORPUS-00093  мис  İŞTE
+  L-CORPUS-00270  ари  DA, DE, DAHİ
+  L-CORPUS-00473  сымэ  ve diğerleri, -ler (parçacık)
+  L-CORPUS-00791  мес  orada
+  L-CORPUS-00797  еуэ  TEŞYI
+  L-CORPUS-00831  еуэри  derken, ardından
+
+=== BRIDGE-YOK (894) ===
+  L-CORPUS-00010  ежь  Nakarat / Vokal eşlik
+  L-CORPUS-00019  хуейщ  LAZIM
+  L-CORPUS-00021  мары  işte, burada, işte bu
+  L-CORPUS-00031  джыри  Son
+  L-CORPUS-00032  том  CİLT
+  L-CORPUS-00033  мафэм  gündüzün, günde, o günde
+  L-CORPUS-00039  псом  BAŞ
+  L-CORPUS-00040  мыщ  BUNCA
+  L-CORPUS-00044  аращ  ODUR
+  L-CORPUS-00058  хъыбар  HABER
+  L-CORPUS-00068  аращи  ODUR
+  L-CORPUS-00081  хуей  gerekli, lazım, istekli
+  L-CORPUS-00082  шыр  TIRIS
+  L-CORPUS-00089  дэд  BAMBAŞKA
+  L-CORPUS-00091  къин  CEFALI
+  L-CORPUS-00094  бэ  Oğul
+  L-CORPUS-00103  адрэ  ÖTEKİ
+  L-CORPUS-00104  хъу  CINSEL
+  L-CORPUS-00114  хэта  CEFAKEŞ
+  L-CORPUS-00119  ит  içinde duruyor, bulunuyor
+  L-CORPUS-00122  хуейуэ  conscious
+  L-CORPUS-00125  мафэ  gün
+  L-CORPUS-00133  ужь  art, arka, iz
+  L-CORPUS-00145  ти  our
+  L-CORPUS-00148  къо  bristle
+  L-CORPUS-00150  тет  kocanin babasi
+  L-CORPUS-00162  лей  FAZLA
+  L-CORPUS-00172  хьау  HAYIR
+  L-CORPUS-00191  дэдэ  HAYRAN
+  L-CORPUS-00195  къыщегъэжьагъэу  İTİBAREN
+  L-CORPUS-00202  ауж  izinde, peşinde, arkasında
+  L-CORPUS-00207  мо  HERHANGİ
+  L-CORPUS-00210  тын  ATIYYE
+  L-CORPUS-00213  ара  ACABA
+  L-CORPUS-00215  бэу  IÇKICI
+  L-CORPUS-00231  пытэ  ZOKA
+  L-CORPUS-00234  бын  evlat, nesil
+  L-CORPUS-00235  шу  atlı, süvari
+  L-CORPUS-00238  хьыкум  ADALET
+  L-CORPUS-00240  иуан  Yuhanna / İvan (özel isim)
+  L-CORPUS-00244  хуейр  GEREKEN
+  L-CORPUS-00248  бзаджэ  ADADIYOZ
+  L-CORPUS-00250  жин  ruh
+  L-CORPUS-00253  хэлъ  HUY
+  L-CORPUS-00254  ты  Baba, ata
+  L-CORPUS-00257  жылэ  tohum
+  L-CORPUS-00267  гори  HIÇBIRI
+  L-CORPUS-00290  инэу  DOLGUN
+  L-CORPUS-00307  джырэ  ÇAĞDIŞI
+  L-CORPUS-00309  дух  KOLONYA
+  ... +844
+
+=== ODUNC-? (431) ===
+  L-CORPUS-00011  псоми  BILHASSA
+  L-CORPUS-00049  арати  ODUR
+  L-CORPUS-00050  дыдэу  HIZLI
+  L-CORPUS-00074  арыти  ÖYLEKI
+  L-CORPUS-00092  зыгорэ  Buzdolabı, buzluk
+  L-CORPUS-00098  пащхьэ  ön, huzur
+  L-CORPUS-00106  адрей  BAŞKA
+  L-CORPUS-00127  мырэущтэу  böylece, şöyle, bu şekilde
+  L-CORPUS-00146  теухуа  AİT
+  L-CORPUS-00163  сыдэущтэу  NASIL
+  L-CORPUS-00193  жагъуэ  İğrenç, sevimsiz, antipatik
+  L-CORPUS-00211  хьалыгъу  ekmek
+  L-CORPUS-00222  чристэн  hristiyanlık
+  L-CORPUS-00241  сыдэу  nasıl, ne kadar
+  L-CORPUS-00243  тетыгъо  HEMHAL
+  L-CORPUS-00258  шыхьат  TANIK
+  L-CORPUS-00284  пытэу  KISTAK
+  L-CORPUS-00291  сабый  child
+  L-CORPUS-00293  зэгуэрым  bir zamanlar
+  L-CORPUS-00296  тэрэзэу  alçakgönüllü
+  L-CORPUS-00356  зыхэт  PIKAP
+  L-CORPUS-00370  бжыгъэ  sayı
+  L-CORPUS-00403  бэлыхь  zorluklar, cile
+  L-CORPUS-00407  тезыр  CEZALI
+  L-CORPUS-00421  сыхьат  Saat
+  L-CORPUS-00436  сыдигъуи  her zaman
+  L-CORPUS-00455  тэрэз  DOSDOĞRU
+  L-CORPUS-00458  мэртазэ  Murtaza (özel isim)
+  L-CORPUS-00462  адрэр  ÖBÜRKÜ
+  L-CORPUS-00464  бегъымбар  peygamber
+  L-CORPUS-00540  благъэ  akraba
+  L-CORPUS-00548  дохутыр  doktor
+  L-CORPUS-00566  гъунэ  TAHDIT
+  L-CORPUS-00569  шынагъэ  Yağmurlu, rutubetli, nemli
+  L-CORPUS-00571  хьазаб  MUAZZEP
+  L-CORPUS-00575  пщыхьэщхьэм  AKŞAM
+  L-CORPUS-00587  телъхьэ  like-minded person
+  L-CORPUS-00588  гъэсэныгъэ  bilgi, bilim
+  L-CORPUS-00611  адрейр  ÖFKE
+  L-CORPUS-00621  сыдрэ  HER ŞEY
+  L-CORPUS-00674  гъэунэхуныгъэ  experience
+  L-CORPUS-00679  ярэби  ey Rabbim, aman Allah'ım
+  L-CORPUS-00686  зэзэгъыныгъэ  SÖZLEŞMESIZ
+  L-CORPUS-00690  гъэбыдэн  KAPAMAK
+  L-CORPUS-00703  телъхьан  BUKAĞILAMAK
+  L-CORPUS-00742  псаоу  unscathed
+  L-CORPUS-00751  курыт  LİSE
+  L-CORPUS-00790  гъэшхэн  Yedirmek
+  L-CORPUS-00794  нобэрей  Vermek
+  L-CORPUS-00818  дэгъуэщ  PEKİ
+  ... +381
+
+=== ODUNC-ARAP (11) ===
+  L-CORPUS-00076  дин  din, inanç
+  L-CORPUS-00137  юсыф  YUSUF
+  L-CORPUS-00143  израил  ŞEKEL
+  L-CORPUS-00173  мысыр  kadin
+  L-CORPUS-00180  арэп  DEĞİL
+  L-CORPUS-00365  мусэ  MUSA
+  L-CORPUS-00373  исхьакъ  İshak (kişi adı)
+  L-CORPUS-00486  иордан  jordan
+  L-CORPUS-01074  мурид  MÜRIT
+  L-CORPUS-02547  алыхь-алыхь  1) expresses mockery;
+2) expresses delight.
+  L-CORPUS2-03543  идин  ARŞIBIŞOP
+
+=== YERLI-FALLBACK (154) ===
+  L-CORPUS-00140  арти  ODUR
+  L-CORPUS-00223  члисэ  kilise
+  L-CORPUS-00499  арэу  EĞER
+  L-CORPUS-00524  у  U-WU (U-WUI
+  L-CORPUS-00583  нухь  NUH
+  L-CORPUS-01324  н  N (
+  L-CORPUS-01340  юныс  YUNUS
+  L-CORPUS-01402  п  P (
+  L-CORPUS-01434  акацэ  AKASYA
+  L-CORPUS-01570  колхоз  KOLHOZ
+  L-CORPUS-01867  т  T (
+  L-CORPUS-01933  якъуб  ISRAIL
+  L-CORPUS-01997  кофе  kahve
+  L-CORPUS-02036  стол  sıra
+  L-CORPUS-02047  анзор  Anzor (özel isim)
+  L-CORPUS-02110  ны  Anne, ana
+  L-CORPUS-02148  асие  ASYA
+  L-CORPUS-02178  женевэ  Cenevre (şehir)
+  L-CORPUS-02274  бахъсэн  Baksan
+  L-CORPUS-02318  арэзыуэ  pleased
+  L-CORPUS-02335  ахьмакъ  APTALLAŞMAK
+  L-CORPUS-02344  отэр  Sürü
+  L-CORPUS-02360  с  S (
+  L-CORPUS-02478  лекцэ  ders
+  L-CORPUS-02479  япон  IKEBANA
+  L-CORPUS-02514  мыстхъу  Reçine
+  L-CORPUS-02565  монах  RAHIPLIK
+  L-CORPUS-02614  тахътэ  bench
+  L-CORPUS-02710  реты  vermek
+  L-CORPUS-02727  жакъэ  YAMUK
+  L-CORPUS-02739  етэн  Vermek
+  L-CORPUS-02773  офицер  memur
+  L-CORPUS-02778  сарыкъ  DALFES
+  L-CORPUS-02848  шакъэ  Mürekkep
+  L-CORPUS-02860  тэджын  Kalkmak
+  L-CORPUS-02879  тэджэпс  MAYALAMAK
+  L-CORPUS-02895  ливан  LÜBNAN
+  L-CORPUS-02896  такъикъ  dakika
+  L-CORPUS-02988  химие  KIMYACI
+  L-CORPUS-03033  еууей  NASIL
+  L-CORPUS-03081  хахъо  AVAIT
+  L-CORPUS-03095  быты  slouching
+  L-CORPUS-03107  стын  YANMAK
+  L-CORPUS-03126  зичэзыу  AKTÜEL
+  L-CORPUS-03280  алжир  cezair
+  L-CORPUS-03288  район  yan, taraf
+  L-CORPUS-03359  миллион  Milyon
+  L-CORPUS-03446  пу  Kaynayan, coşkulu
+  L-CORPUS-03473  ручкэ  tükenmez kalem
+  L-CORPUS-03503  авар  AVARYA
+  ... +104
+
+=== DILBILGISI-ADVERB (11) ===
+  L-CORPUS-00232  арат  ODUR
+  L-CORPUS-00441  куууэ  Derin
+  L-CORPUS-00623  зэзэмызэ  SEYREKÇE
+  L-CORPUS-00925  ауэрэ  DERKEN
+  L-CORPUS-02182  шэчыншэу  İLLE
+  L-CORPUS-02417  сэр-сэру  bizzat ben, tek başıma
+  L-CORPUS-02444  псалъэмакъыншэу  SESSİZ
+  L-CORPUS-02592  мэуэ  BURASI
+  L-CORPUS-02752  мыарэзыуэ  discontentedly
+  L-CORPUS-02966  чэфу  neşeyle, keyifle
+  L-CORPUS-03485  пуду  DÜŞÜRMEK
+
+=== ODUNC-BATI (4) ===
+  L-CORPUS-00469  истамбыл  Istanbul
+  L-CORPUS-01119  анкара  Ankara (şehir)
+  L-CORPUS-01235  париж  Paris (şehir)
+  L-CORPUS-04285  германие  mark
+
+=== ODUNC-RUS (12) ===
+  L-CORPUS-00958  завод  BÜYÜMEK
+  L-CORPUS-01135  план  plan
+  L-CORPUS-01239  школ  inceleme
+  L-CORPUS-01268  билет  BILETSIZ
+  L-CORPUS-01277  метр  METREKÜP
+  L-CORPUS-01308  кавказ  Kafkas Dağları
+  L-CORPUS-01352  светскэ  LAIK
+  L-CORPUS-01367  генерал  TÜMGENERAL
+  L-CORPUS-01507  километр  KİLOMETRE
+  L-CORPUS-02263  парт  PARTİ
+  L-CORPUS-02600  планетэ  gezegen
+  L-CORPUS-03751  революцэ  artistic
+
+=== ODUNC-TURK (1) ===
+  L-CORPUS-01263  картоф  KOLALI
+
+=== DIGER (18) ===
+  L-CORPUS-01397  штат  PRENSES
+  L-CORPUS-01535  тара  HANGI, HANGISI
+  L-CORPUS-01758  карт  FOTO
+  L-CORPUS-02206  пощт  posta
+  L-CORPUS-02926  тамэ  Omuz
+  L-CORPUS-03257  ихъу-ибжь  (ağrı, yanma) dinmek
+  L-CORPUS-03468  дерт  KUSUR
+  L-CORPUS-03872  зэса  geleneksel
+  L-CORPUS-04267  тумэ  MELEZ
+  L-CORPUS-04531  опыт  DENEMEK
+  L-CORPUS-04622  акъужь  kurumuş nehir yatağı
+  L-CORPUS-04657  уэим  ÖNEMLİ
+  L-CORPUS-04661  рифмэ  DIZEMLI
+  L-CORPUS-04673  идащ  RAZI
+  L-CORPUS-04695  биижь  ezeli düşman, amansız düşman
+  L-CORPUS-04921  крит  ada
+  L-CORPUS2-01869  хэӏэтыкӏа  yuksek
+  L-CORPUS2-04807  ӏисраф  israf, har vurup harman savurmak
+
+=== YERLI-EXACT (2) ===
+  L-CORPUS-01537  урам  sokak, cadde
+  L-CORPUS-01626  мамэ  nine
+
+=== YERLI-PARTIAL (28) ===
+  L-CORPUS-01778  урок  Kaligrafi
+  L-CORPUS-02758  пырхъуэ  EKLENTİ
+  L-CORPUS-03219  ижын  AKMAK
+  L-CORPUS-03399  итэкъон  SAÇMAK
+  L-CORPUS-03935  ижыхьын  BASMAK
+  L-CORPUS-03952  хэон  SAPLANMAK
+  L-CORPUS-03973  икон  AZIZ
+  L-CORPUS-04075  иуцон  DEVLETLEŞMEK
+  L-CORPUS-04238  пырхъ  HORUL
+  L-CORPUS-04840  ичэзууэ  in time
+  L-CORPUS-04994  пыеу  düşman
+  L-CORPUS2-01817  ибын  soyadi
+  L-CORPUS2-02451  хэӏущӏыӏу  yayılma, herkesçe bilinme; yaygın
+  L-CORPUS2-03531  иӏизын  permission
+  L-CORPUS2-03705  изиусхьан  BAY
+  L-CORPUS2-03896  уиӏэн  ÖFKELENDIRMEK
+  L-CORPUS2-04989  упкӏэтэн  DOĞRAMAK
+  L-CORPUS2-05024  иаужырэ  Son
+  L-CORPUS2-05041  уӏагъэ  CADILAŞMAK
+  L-CORPUS2-05497  ухуакӏуэ  insaatci
+  L-CORPUS2-06624  хуищӏэу  cokca
+  L-CORPUS2-08063  хэӏэн  tatmak
+  L-CORPUS2-08233  ункӏыфӏын  go out
+  L-CORPUS2-08262  хупыупщӏын  PATLATMAK
+  L-CORPUS2-08797  упкӏэ  Keçe
+  L-CORPUS2-08949  уцӏырхъын  büzüştürmek, kırıştırmak
+  L-CORPUS2-09482  уцупӏэ  ALAN
+  L-CORPUS2-09586  упкӏэн  BIÇMEK

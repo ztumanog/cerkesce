@@ -1,0 +1,619 @@
+{
+  "eslesen": [
+    {
+      "lexeme_id": "L-AUTO-00406",
+      "form": "арджэнудз",
+      "lex_en": "fypha latifolia",
+      "pdf_kbd": "Арджэнудз",
+      "pdf_rus": "Рогоз широколистный",
+      "pdf_lat": "Fypha latifolia L.",
+      "eslesme": "form"
+    },
+    {
+      "lexeme_id": "L-AUTO-00417",
+      "form": "банэжь",
+      "lex_en": "carduus nutans",
+      "pdf_kbd": "Банэжь",
+      "pdf_rus": "Чертополох поникший",
+      "pdf_lat": "Carduus nutans L.",
+      "eslesme": "form"
+    },
+    {
+      "lexeme_id": "L-AUTO-00420",
+      "form": "батыргъэнщэху",
+      "lex_en": "heracleum leskovii grossh",
+      "pdf_kbd": "Батыргъэнщэху (черк.)",
+      "pdf_rus": "Борщевик Лескова",
+      "pdf_lat": "Heracleum les",
+      "eslesme": "form"
+    },
+    {
+      "lexeme_id": "L-AUTO-00446",
+      "form": "блэаму",
+      "lex_en": "conium maculatum",
+      "pdf_kbd": "Блэаму (черк.)",
+      "pdf_rus": "Болиголов пятнистый",
+      "pdf_lat": "Conium maculatum L.",
+      "eslesme": "form"
+    },
+    {
+      "lexeme_id": "L-AUTO-00447",
+      "form": "блэгын",
+      "lex_en": "valeriana officinalis",
+      "pdf_kbd": "Блэгын (каб.)",
+      "pdf_rus": "Валериана лекарственная",
+      "pdf_lat": "Valeriana officina",
+      "eslesme": "form"
+    },
+    {
+      "lexeme_id": "L-AUTO-00449",
+      "form": "блэудз",
+      "lex_en": "veratrum lobelianum",
+      "pdf_kbd": "Сэджыдз",
+      "pdf_rus": "Чемерица — Лобеля",
+      "pdf_lat": "Veratrum lobelianum",
+      "eslesme": "latin"
+    },
+    {
+      "lexeme_id": "L-AUTO-00466",
+      "form": "выц",
+      "lex_en": "salvia verticillata",
+      "pdf_kbd": "Выц",
+      "pdf_rus": "Шалфей седоватый",
+      "pdf_lat": "Salvia canescens С. А. Меу.",
+      "eslesme": "form"
+    },
+    {
+      "lexeme_id": "L-AUTO-00467",
+      "form": "выщӏыб",
+      "lex_en": "melandrium album",
+      "pdf_kbd": "Выш!ыб",
+      "pdf_rus": "Дрема белая",
+      "pdf_lat": "Melandrium album Сагке.",
+      "eslesme": "latin"
+    },
+    {
+      "lexeme_id": "L-AUTO-00544",
+      "form": "дыкъуэнагъ",
+      "lex_en": "ulmus laevis",
+      "pdf_kbd": "Дыкъуэнагълэж",
+      "pdf_rus": "Вяз гладкий, ильм гладкий",
+      "pdf_lat": "Ulmus laevis",
+      "eslesme": "latin"
+    },
+    {
+      "lexeme_id": "L-AUTO-00737",
+      "form": "къазмакъей",
+      "lex_en": "",
+      "pdf_kbd": "Къазмакъей",
+      "pdf_rus": "Облепиха крушиновидная",
+      "pdf_lat": "Hippophae rhamnoi",
+      "eslesme": "form"
+    },
+    {
+      "lexeme_id": "L-AUTO-00770",
+      "form": "къущхьэмышхей",
+      "lex_en": "mespilus germanica",
+      "pdf_kbd": "Къущхьэмышхей",
+      "pdf_rus": "Мушмула германская",
+      "pdf_lat": "Mespilus germani",
+      "eslesme": "form"
+    },
+    {
+      "lexeme_id": "L-AUTO-00808",
+      "form": "къэббэгу",
+      "lex_en": "cucurbita maschata",
+      "pdf_kbd": "Къэббэгу",
+      "pdf_rus": "Тыква — мускатная",
+      "pdf_lat": "Cucurbita moschata",
+      "eslesme": "form"
+    },
+    {
+      "lexeme_id": "L-AUTO-00853",
+      "form": "матушкӏэбанэ",
+      "lex_en": "xanthium spinosum",
+      "pdf_kbd": "Банэху",
+      "pdf_rus": "Дурнишник колючий",
+      "pdf_lat": "Xanthium spinosum L.",
+      "eslesme": "latin"
+    },
+    {
+      "lexeme_id": "L-AUTO-00868",
+      "form": "мэзхъурсанэ",
+      "lex_en": "solanum nigrum",
+      "pdf_kbd": "Хъурсанэ (каб.)",
+      "pdf_rus": "Паслен черный",
+      "pdf_lat": "Solanum nigrum L.",
+      "eslesme": "latin"
+    },
+    {
+      "lexeme_id": "L-AUTO-00874",
+      "form": "набдзэтеху",
+      "lex_en": "dactylis glomerata",
+      "pdf_kbd": "Набдзэтеху (черк.)",
+      "pdf_rus": "Ежа сборная",
+      "pdf_lat": "Dactylis glomerata L.",
+      "eslesme": "form"
+    },
+    {
+      "lexeme_id": "L-AUTO-01020",
+      "form": "тобылэгъу",
+      "lex_en": "viburnum lantana",
+      "pdf_kbd": "Тобылыгъу",
+      "pdf_rus": "Гордовина обыкновенная",
+      "pdf_lat": "Viburnum lantana L.",
+      "eslesme": "latin"
+    },
+    {
+      "lexeme_id": "L-AUTO-01022",
+      "form": "тхушэдеяфэ",
+      "lex_en": "platanus orientalis",
+      "pdf_kbd": "Тхушэдеяфэ",
+      "pdf_rus": "Платан восточный",
+      "pdf_lat": "Platanus orientalis L.",
+      "eslesme": "form"
+    },
+    {
+      "lexeme_id": "L-AUTO-01054",
+      "form": "фӏарийтхьэмпэ",
+      "lex_en": "plantago major",
+      "pdf_kbd": "Хьэбзэгу",
+      "pdf_rus": "Подорожник большой",
+      "pdf_lat": "Plantago major L.",
+      "eslesme": "latin"
+    },
+    {
+      "lexeme_id": "L-AUTO-01061",
+      "form": "фафӏэгын",
+      "lex_en": "cichorium intybus",
+      "pdf_kbd": "Шыдыуэ (каб.)",
+      "pdf_rus": "Цикорий обыкновенный",
+      "pdf_lat": "Cichorium intybus L.",
+      "eslesme": "latin"
+    },
+    {
+      "lexeme_id": "L-AUTO-01063",
+      "form": "фищжыг",
+      "lex_en": "cerasus avium",
+      "pdf_kbd": "Мэзшэдыгъуей",
+      "pdf_rus": "Вишня птичья, черешня",
+      "pdf_lat": "Cerasus avium (L.)",
+      "eslesme": "latin"
+    },
+    {
+      "lexeme_id": "L-AUTO-01090",
+      "form": "хъуэдз",
+      "lex_en": "cicuta virosa",
+      "pdf_kbd": "Къамуыхъу (адыг.)",
+      "pdf_rus": "Вех ядовитый",
+      "pdf_lat": "Cicuta virosa L.",
+      "eslesme": "latin"
+    },
+    {
+      "lexeme_id": "L-AUTO-01098",
+      "form": "хьэгъэбэкъу",
+      "lex_en": "thlaspi arvense",
+      "pdf_kbd": "Хьэгъэбэкъу (каб.)",
+      "pdf_rus": "Ярутка полевая",
+      "pdf_lat": "Thlaspi arvense L.",
+      "eslesme": "form"
+    },
+    {
+      "lexeme_id": "L-AUTO-01161",
+      "form": "шейтӏанджэш",
+      "lex_en": "convolvulus arvensis",
+      "pdf_kbd": "Вэрокъуэудз",
+      "pdf_rus": "Вьюнок полевой",
+      "pdf_lat": "Convolvulus arvensis L.",
+      "eslesme": "latin"
+    },
+    {
+      "lexeme_id": "L-AUTO-01190",
+      "form": "шэрыгъавэудз",
+      "lex_en": "hyoscyamus niger",
+      "pdf_kbd": "Удзыбз (черк.)",
+      "pdf_rus": "Белена черная",
+      "pdf_lat": "Hyoscyamus niger L.",
+      "eslesme": "latin"
+    },
+    {
+      "lexeme_id": "L-AUTO-01193",
+      "form": "шэфталей",
+      "lex_en": "persica vulgaris",
+      "pdf_kbd": "Пхъыцэ",
+      "pdf_rus": "Персик обыкновенный",
+      "pdf_lat": "Persica vulgaris МИ.",
+      "eslesme": "latin"
+    }
+  ],
+  "eslesmeyen": [
+    {
+      "lexeme_id": "L-AUTO-00063",
+      "form": "щырыкъу",
+      "lex_en": ""
+    },
+    {
+      "lexeme_id": "L-AUTO-00401",
+      "form": "алмэстынщхьэц",
+      "lex_en": "cuscuta"
+    },
+    {
+      "lexeme_id": "L-AUTO-00403",
+      "form": "андзышбаринэ",
+      "lex_en": "verdascum laxum filar"
+    },
+    {
+      "lexeme_id": "L-AUTO-00404",
+      "form": "антӏырэ",
+      "lex_en": "lonicera xylosteum"
+    },
+    {
+      "lexeme_id": "L-AUTO-00418",
+      "form": "банэкӏэпхъ",
+      "lex_en": "lappula echinta"
+    },
+    {
+      "lexeme_id": "L-AUTO-00419",
+      "form": "батыргъэнкупсэ",
+      "lex_en": "heracleum roseum"
+    },
+    {
+      "lexeme_id": "L-AUTO-00432",
+      "form": "бжакӏэ",
+      "lex_en": "zerna variegata nevski"
+    },
+    {
+      "lexeme_id": "L-AUTO-00440",
+      "form": "бжьэхъунудз",
+      "lex_en": "colonilla coronata"
+    },
+    {
+      "lexeme_id": "L-AUTO-00441",
+      "form": "бжьэщӏэф",
+      "lex_en": "echium vulgare"
+    },
+    {
+      "lexeme_id": "L-AUTO-00442",
+      "form": "бжэнкъурэ",
+      "lex_en": "cephalaria gigantea"
+    },
+    {
+      "lexeme_id": "L-AUTO-00443",
+      "form": "бжэнтхьэху",
+      "lex_en": "centaurea"
+    },
+    {
+      "lexeme_id": "L-AUTO-00444",
+      "form": "бжэнудз",
+      "lex_en": "knautia montana"
+    },
+    {
+      "lexeme_id": "L-AUTO-00450",
+      "form": "блэщӏэф",
+      "lex_en": "symphytum"
+    },
+    {
+      "lexeme_id": "L-AUTO-00451",
+      "form": "брицэ",
+      "lex_en": "echinochloa crus-galli"
+    },
+    {
+      "lexeme_id": "L-AUTO-00452",
+      "form": "былымаму",
+      "lex_en": "chaerophylum caucasicum"
+    },
+    {
+      "lexeme_id": "L-AUTO-00455",
+      "form": "бэджкъиш",
+      "lex_en": "achillea"
+    },
+    {
+      "lexeme_id": "L-AUTO-00457",
+      "form": "бэлакъыжь",
+      "lex_en": "erigeron caucasicus"
+    },
+    {
+      "lexeme_id": "L-AUTO-00465",
+      "form": "выгуудз",
+      "lex_en": "trifolium repens"
+    },
+    {
+      "lexeme_id": "L-AUTO-00470",
+      "form": "вэныгъуэ",
+      "lex_en": "lidanotis transcaucasica"
+    },
+    {
+      "lexeme_id": "L-AUTO-00522",
+      "form": "дахэбаринэ",
+      "lex_en": "grifolium repens"
+    },
+    {
+      "lexeme_id": "L-AUTO-00530",
+      "form": "джэрджэм",
+      "lex_en": "zonicera"
+    },
+    {
+      "lexeme_id": "L-AUTO-00531",
+      "form": "джэрмэпэж",
+      "lex_en": "zotus"
+    },
+    {
+      "lexeme_id": "L-AUTO-00553",
+      "form": "дэжьейӏэрысэ",
+      "lex_en": "corylus pontica"
+    },
+    {
+      "lexeme_id": "L-AUTO-00735",
+      "form": "кхъуэныжьпапщӏэ",
+      "lex_en": "salvia nemorosa"
+    },
+    {
+      "lexeme_id": "L-AUTO-00736",
+      "form": "къадзыху",
+      "lex_en": "sonchus"
+    },
+    {
+      "lexeme_id": "L-AUTO-00739",
+      "form": "къалъ",
+      "lex_en": "astrogalus"
+    },
+    {
+      "lexeme_id": "L-AUTO-00740",
+      "form": "къалъкъулъ",
+      "lex_en": "melilotus officinalis"
+    },
+    {
+      "lexeme_id": "L-AUTO-00744",
+      "form": "къандзэлыкъу",
+      "lex_en": "rhododendron caucasicum"
+    },
+    {
+      "lexeme_id": "L-AUTO-00768",
+      "form": "кърымпкъынэ",
+      "lex_en": "amaranthus caudatis"
+    },
+    {
+      "lexeme_id": "L-AUTO-00794",
+      "form": "къырухугу",
+      "lex_en": "myosotic"
+    },
+    {
+      "lexeme_id": "L-AUTO-00811",
+      "form": "къэзмакънэпцӏ",
+      "lex_en": ""
+    },
+    {
+      "lexeme_id": "L-AUTO-00847",
+      "form": "лэнкӏ",
+      "lex_en": "ligustum vulgare"
+    },
+    {
+      "lexeme_id": "L-AUTO-00854",
+      "form": "матэкхъуеишхуэ",
+      "lex_en": "althaea"
+    },
+    {
+      "lexeme_id": "L-AUTO-00865",
+      "form": "мыщэхупщей",
+      "lex_en": "sorbus"
+    },
+    {
+      "lexeme_id": "L-AUTO-00869",
+      "form": "мэламу",
+      "lex_en": "chaerophyllum roseum bieib"
+    },
+    {
+      "lexeme_id": "L-AUTO-00871",
+      "form": "мэрчэн",
+      "lex_en": "cinnamomum aromaticum"
+    },
+    {
+      "lexeme_id": "L-AUTO-00877",
+      "form": "нартей",
+      "lex_en": "taxus"
+    },
+    {
+      "lexeme_id": "L-AUTO-00878",
+      "form": "нартыхухьэцыбанэ",
+      "lex_en": "lea mays everta"
+    },
+    {
+      "lexeme_id": "L-AUTO-00879",
+      "form": "нартыхушыдзэ",
+      "lex_en": "zea mays indentata"
+    },
+    {
+      "lexeme_id": "L-AUTO-00924",
+      "form": "пкъыналъэ",
+      "lex_en": "polygonum hydropiper"
+    },
+    {
+      "lexeme_id": "L-AUTO-00933",
+      "form": "псыхъуэсэрэш",
+      "lex_en": "juncus hufonius"
+    },
+    {
+      "lexeme_id": "L-AUTO-00934",
+      "form": "псыхъуэудз",
+      "lex_en": "capex"
+    },
+    {
+      "lexeme_id": "L-AUTO-00939",
+      "form": "пхъапцӏэ",
+      "lex_en": "frangula alnus mill"
+    },
+    {
+      "lexeme_id": "L-AUTO-00942",
+      "form": "пхъэдзых",
+      "lex_en": "aristida pennata trin"
+    },
+    {
+      "lexeme_id": "L-AUTO-00945",
+      "form": "пхъэмыфей",
+      "lex_en": "quercus suhep"
+    },
+    {
+      "lexeme_id": "L-AUTO-00951",
+      "form": "пшынэӏэпэ",
+      "lex_en": "llycurrhiza glabra"
+    },
+    {
+      "lexeme_id": "L-AUTO-00982",
+      "form": "саней",
+      "lex_en": "ribes"
+    },
+    {
+      "lexeme_id": "L-AUTO-00992",
+      "form": "сэрсэлам",
+      "lex_en": ""
+    },
+    {
+      "lexeme_id": "L-AUTO-00994",
+      "form": "сэрэбэгъуэ",
+      "lex_en": "tropaeolum majus"
+    },
+    {
+      "lexeme_id": "L-AUTO-00995",
+      "form": "сэрэш",
+      "lex_en": "juncus"
+    },
+    {
+      "lexeme_id": "L-AUTO-00996",
+      "form": "сэхурангъэгъу",
+      "lex_en": "orobanche"
+    },
+    {
+      "lexeme_id": "L-AUTO-00998",
+      "form": "тӏалыбэ",
+      "lex_en": "festuca"
+    },
+    {
+      "lexeme_id": "L-AUTO-01019",
+      "form": "техьэгъуэудз",
+      "lex_en": "matricaria"
+    },
+    {
+      "lexeme_id": "L-AUTO-01026",
+      "form": "тхьэкӏумэкӏыхьпащӏэ",
+      "lex_en": ""
+    },
+    {
+      "lexeme_id": "L-AUTO-01028",
+      "form": "тхьэрыкъуэфдэгу",
+      "lex_en": "tissilado farfara"
+    },
+    {
+      "lexeme_id": "L-AUTO-01032",
+      "form": "тэтэргъэн",
+      "lex_en": "alliun victorialis"
+    },
+    {
+      "lexeme_id": "L-AUTO-01040",
+      "form": "удзкъэс",
+      "lex_en": "stellaria"
+    },
+    {
+      "lexeme_id": "L-AUTO-01041",
+      "form": "удзхущхъуэ",
+      "lex_en": "salvia"
+    },
+    {
+      "lexeme_id": "L-AUTO-01042",
+      "form": "удзщхьэхужь",
+      "lex_en": "matricaria inodora"
+    },
+    {
+      "lexeme_id": "L-AUTO-01097",
+      "form": "хьэаму",
+      "lex_en": "chaerophyllum millefolium"
+    },
+    {
+      "lexeme_id": "L-AUTO-01099",
+      "form": "хьэгъэпщӏэу",
+      "lex_en": "cynoglossum officinale"
+    },
+    {
+      "lexeme_id": "L-AUTO-01103",
+      "form": "хьэкӏэзэрыхъэ",
+      "lex_en": "lapulla"
+    },
+    {
+      "lexeme_id": "L-AUTO-01157",
+      "form": "чыпцӏэщхьэпэ",
+      "lex_en": "padus avium"
+    },
+    {
+      "lexeme_id": "L-AUTO-01162",
+      "form": "шейтӏанышэ",
+      "lex_en": "see блэшэ"
+    },
+    {
+      "lexeme_id": "L-AUTO-01173",
+      "form": "шыгъэтӏей",
+      "lex_en": "veronica chamaedrus"
+    },
+    {
+      "lexeme_id": "L-AUTO-01177",
+      "form": "шыпсыранэдэгу",
+      "lex_en": "urtica urens"
+    },
+    {
+      "lexeme_id": "L-AUTO-01179",
+      "form": "шыпш",
+      "lex_en": ""
+    },
+    {
+      "lexeme_id": "L-AUTO-01183",
+      "form": "шыфтыхунэ",
+      "lex_en": "bromus"
+    },
+    {
+      "lexeme_id": "L-AUTO-01192",
+      "form": "шэфран",
+      "lex_en": "crocus"
+    },
+    {
+      "lexeme_id": "L-AUTO-01202",
+      "form": "щӏыбыху",
+      "lex_en": "lalium"
+    },
+    {
+      "lexeme_id": "L-AUTO-01203",
+      "form": "щӏыбыяу",
+      "lex_en": "lalium aparine"
+    },
+    {
+      "lexeme_id": "L-AUTO-01204",
+      "form": "щӏыжьудз",
+      "lex_en": "leonurus guinguelo batus cilib"
+    },
+    {
+      "lexeme_id": "L-AUTO-01205",
+      "form": "щӏыфашхэгын",
+      "lex_en": "rapistrum"
+    },
+    {
+      "lexeme_id": "L-AUTO-01216",
+      "form": "щихуфӏыцӏэ",
+      "lex_en": "populus nigra"
+    },
+    {
+      "lexeme_id": "L-AUTO-01218",
+      "form": "щхъуасэ",
+      "lex_en": "echium vulgare"
+    },
+    {
+      "lexeme_id": "L-AUTO-01221",
+      "form": "щхъуэмчжыг",
+      "lex_en": "castnea sativa"
+    },
+    {
+      "lexeme_id": "L-AUTO-01242",
+      "form": "яжьащхъуэжь",
+      "lex_en": "atriplex"
+    }
+  ],
+  "toplam_auto_anlamsiz": 102,
+  "eslesen_sayisi": 25,
+  "eslesmeyen_sayisi": 77
+}

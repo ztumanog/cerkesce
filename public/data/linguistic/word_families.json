@@ -2301,7 +2301,7 @@
   {
     "id": "WF-BLUEBERRY",
     "rootIds": [
-      "R-BLUEBERRY"
+      "R-PYRAMYZH"
     ],
     "conceptIds": [],
     "morphemeIds": [],
@@ -4523,7 +4523,7 @@
   {
     "id": "WF-EUE",
     "rootIds": [
-      "R-EUE"
+      "R-WA"
     ],
     "conceptIds": [],
     "morphemeIds": [],
@@ -5183,7 +5183,7 @@
   {
     "id": "WF-FORMERLY",
     "rootIds": [
-      "R-FORMERLY"
+      "R-PASE"
     ],
     "conceptIds": [],
     "morphemeIds": [],
@@ -5271,12 +5271,10 @@
   },
   {
     "id": "WF-GE",
-    "rootIds": [
-      "R-GE"
-    ],
+    "rootIds": [],
     "conceptIds": [],
     "morphemeIds": [],
-    "notes": "Otomatik onarıldı (lexemes.json referansı)",
+    "notes": "Otomatik onarıldı (lexemes.json referansı) | Faz 14: гъэ- ettirgen ön ek, kök değil. rootIds boşaltıldı.",
     "_source": "word_families.json",
     "lexemeIds": [
       "L-ILHES",
@@ -6312,7 +6310,7 @@
   {
     "id": "WF-GU-KALP",
     "rootIds": [
-      "R-GU-KALP"
+      "R-GU"
     ],
     "conceptIds": [],
     "morphemeIds": [],
@@ -7746,7 +7744,7 @@
   {
     "id": "WF-KHET",
     "rootIds": [
-      "R-KHET"
+      "R-TYS"
     ],
     "conceptIds": [],
     "morphemeIds": [],
@@ -9666,12 +9664,10 @@
   },
   {
     "id": "WF-LHA",
-    "rootIds": [
-      "R-LHA"
-    ],
+    "rootIds": [],
     "conceptIds": [],
     "morphemeIds": [],
-    "notes": "Otomatik onarıldı (lexemes.json referansı)",
+    "notes": "Otomatik onarıldı (lexemes.json referansı) | Faz 15B: 217 lexeme dogru koklere dagitildi, rootIds bosaltildi.",
     "_source": "word_families.json",
     "lexemeIds": [
       "L-MALHXE",
@@ -10850,7 +10846,7 @@
   {
     "id": "WF-MAPLE",
     "rootIds": [
-      "R-MAPLE"
+      "R-K1EY"
     ],
     "conceptIds": [],
     "morphemeIds": [],
@@ -11048,7 +11044,7 @@
   {
     "id": "WF-MER",
     "rootIds": [
-      "R-MER"
+      "R-MERAK1UE"
     ],
     "conceptIds": [],
     "morphemeIds": [],
@@ -12311,7 +12307,7 @@
   {
     "id": "WF-OAK",
     "rootIds": [
-      "R-OAK"
+      "R-BZHEY"
     ],
     "conceptIds": [],
     "morphemeIds": [],
@@ -12328,7 +12324,7 @@
   {
     "id": "WF-OAK_TREE",
     "rootIds": [
-      "R-OAK_TREE"
+      "R-CHYGAY"
     ],
     "conceptIds": [],
     "morphemeIds": [],
@@ -12380,7 +12376,7 @@
   {
     "id": "WF-OLD",
     "rootIds": [
-      "R-OLD"
+      "R-PASE"
     ],
     "conceptIds": [],
     "morphemeIds": [],
@@ -13628,12 +13624,10 @@
   },
   {
     "id": "WF-PRONOUN",
-    "rootIds": [
-      "R-PRONOUN"
-    ],
+    "rootIds": [],
     "conceptIds": [],
     "morphemeIds": [],
-    "notes": "Otomatik onarıldı (lexemes.json referansı)",
+    "notes": "Otomatik onarıldı (lexemes.json referansı) | Faz 14: pronomen çoklu kök ailesi, tek kök yok.",
     "_source": "word_families.json",
     "lexemeIds": [
       "L-FE",
@@ -15010,7 +15004,7 @@
   {
     "id": "WF-RASPBERRY",
     "rootIds": [
-      "R-RASPBERRY"
+      "R-MAMKUT"
     ],
     "conceptIds": [],
     "morphemeIds": [],
@@ -18643,7 +18637,7 @@
   {
     "id": "WF-SOUND",
     "rootIds": [
-      "R-SOUND"
+      "R-ZHGEY"
     ],
     "conceptIds": [],
     "morphemeIds": [],
@@ -19814,7 +19808,10 @@
     "productivity": {
       "totalLexemes": 1,
       "corpusFrequency": 0
-    }
+    },
+    "rootIds": [
+      "R-TYS"
+    ]
   },
   {
     "id": "WF-UA",
@@ -21179,7 +21176,10 @@
     "productivity": {
       "totalLexemes": 7,
       "corpusFrequency": 0
-    }
+    },
+    "rootIds": [
+      "R-WBYD"
+    ]
   },
   {
     "id": "WF-WBYN",
@@ -24689,7 +24689,7 @@
     "id": "WF-TKHEMYSHCHK1E",
     "_source": "faz4-i4-split",
     "rootIds": [
-      "R-TKHE"
+      "R-TKHEMYSHCHK1E"
     ],
     "conceptIds": [
       "POVERTY"
@@ -27849,5 +27849,131 @@
       "totalLexemes": 1,
       "corpusFrequency": 0
     }
+  },
+  {
+    "id": "WF-TKHEV",
+    "rootIds": [
+      "R-TKHEV"
+    ],
+    "lexemeIds": [],
+    "primaryMeaning": "hamur",
+    "notes": "Faz 13: R-TKHE* alt koku icin yeni aile.",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "WF-TKHEBZE",
+    "rootIds": [
+      "R-TKHEBZE"
+    ],
+    "lexemeIds": [],
+    "primaryMeaning": "damga",
+    "notes": "Faz 13: R-TKHE* alt koku icin yeni aile.",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "WF-TKHEGUSH",
+    "rootIds": [
+      "R-TKHEGUSH"
+    ],
+    "lexemeIds": [],
+    "primaryMeaning": "can",
+    "notes": "Faz 13: R-TKHE* alt koku icin yeni aile.",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "WF-TKHEQUN",
+    "rootIds": [
+      "R-TKHEQUN"
+    ],
+    "lexemeIds": [],
+    "primaryMeaning": "musadere",
+    "notes": "Faz 13: R-TKHE* alt koku icin yeni aile.",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "WF-TKHEMPISHCH",
+    "rootIds": [
+      "R-TKHEMPISHCH"
+    ],
+    "lexemeIds": [],
+    "primaryMeaning": "yonca",
+    "notes": "Faz 13: R-TKHE* alt koku icin yeni aile.",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "WF-TKHEPSCH",
+    "rootIds": [
+      "R-TKHEPSCH"
+    ],
+    "lexemeIds": [],
+    "primaryMeaning": "kac?",
+    "notes": "Faz 13: R-TKHE* alt koku icin yeni aile.",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "WF-GHEMAKHUE",
+    "rootIds": [
+      "R-GHEMAKHUE"
+    ],
+    "lexemeIds": [],
+    "primaryMeaning": "yaz mevsimi",
+    "notes": "Faz 13: R-TKHE* alt koku icin yeni aile.",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "WF-TKHEMPE",
+    "rootIds": [
+      "R-TKHEMPE"
+    ],
+    "lexemeIds": [],
+    "primaryMeaning": "yaprak, sayfa",
+    "notes": "Faz 13: yaprak ailesi. тхьэмпэ = yaprak, тхьапэ = sayfa",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "WF-TKHEMADE",
+    "rootIds": [],
+    "lexemeIds": [],
+    "primaryMeaning": "tkhemade",
+    "notes": "Faz 14",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "WF-MALHKHA",
+    "rootIds": [
+      "R-MALHKHA"
+    ],
+    "lexemeIds": [],
+    "primaryMeaning": "damat (малъхъэ)",
+    "notes": "Faz 15A",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "WF-KHIN",
+    "rootIds": [
+      "R-KHIN"
+    ],
+    "lexemeIds": [],
+    "primaryMeaning": "tasimak (хьын)",
+    "notes": "Faz 15A",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "WF-SHKH",
+    "rootIds": [
+      "R-SHKH"
+    ],
+    "lexemeIds": [],
+    "primaryMeaning": "yemek (шх)",
+    "notes": "Faz 15A",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "WF-RUSSIAN-LOAN",
+    "rootIds": [],
+    "lexemeIds": [],
+    "primaryMeaning": "Rusca odunc kelimeler",
+    "notes": "Faz 15B: WF-LHA'dan yanlislikla alinmis Rusca kelimeler",
+    "status": "ACTIVE"
   }
 ]

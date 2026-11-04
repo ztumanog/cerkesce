@@ -1,0 +1,1957 @@
+{
+  "toplam_pdf": 299,
+  "eslesen": 31,
+  "yeni_bitki": 268,
+  "tam_duplicate": 0,
+  "form_duplicate": 10,
+  "latin_duplicate": 3,
+  "temiz_yeni": 255,
+  "temiz_yeni_liste": [
+    {
+      "kabardeyce": "Адыгэжыхампхъэ (черк.)",
+      "rusca": "Спаржа аптечная",
+      "latince": "Asparagus offici",
+      "sayfa": 20,
+      "raw": "Адыгэжыхампхъэ (черк.) — Спаржа аптечная — Asparagus offici-"
+    },
+    {
+      "kabardeyce": "Адыгэкъуэн",
+      "rusca": "Кинза, кориандр посевной",
+      "latince": "Coriandrum sati",
+      "sayfa": 20,
+      "raw": "Адыгэкъуэн — Кинза, кориандр посевной — Coriandrum sati-"
+    },
+    {
+      "kabardeyce": "Айуэ (адыг.)",
+      "rusca": "Айва",
+      "latince": "Cydonia oblonga Mill.",
+      "sayfa": 22,
+      "raw": "Айуэ (адыг.) — Айва — Cydonia oblonga Mill."
+    },
+    {
+      "kabardeyce": "Акац (адыг.)",
+      "rusca": "Акация белая, робииия лжеакация",
+      "latince": "Robinia pse",
+      "sayfa": 22,
+      "raw": "Акац (адыг.) — Акация белая, робииия лжеакация — Robinia pse-"
+    },
+    {
+      "kabardeyce": "Акацэбанэшхуэ (бесл.)",
+      "rusca": "Гледичия колючая",
+      "latince": "Gleditsehia tria",
+      "sayfa": 22,
+      "raw": "Акацэбанэшхуэ (бесл.) — Гледичия колючая — Gleditsehia tria-"
+    },
+    {
+      "kabardeyce": "Акацэпэнэшхо (адыг.)",
+      "rusca": "Гледичия колючая",
+      "latince": "Gleditsechia tria",
+      "sayfa": 22,
+      "raw": "Акацэпэнэшхо (адыг.) — Гледичия колючая — Gleditsechia tria-"
+    },
+    {
+      "kabardeyce": "Аму",
+      "rusca": "Бутень клубненосный",
+      "latince": "Chaerophyllum bulbosum L.",
+      "sayfa": 22,
+      "raw": "Аму — Бутень клубненосный — Chaerophyllum bulbosum L."
+    },
+    {
+      "kabardeyce": "Андэгурэ",
+      "rusca": "Свербига восточная",
+      "latince": "Bunias orientalis L.",
+      "sayfa": 23,
+      "raw": "Андэгурэ — Свербига восточная — Bunias orientalis L."
+    },
+    {
+      "kabardeyce": "Андэгурэдэгу (черк.)",
+      "rusca": "Горчица черная",
+      "latince": "Sinapis nigra L.",
+      "sayfa": 24,
+      "raw": "Андэгурэдэгу (черк.) — Горчица черная — Sinapis nigra L."
+    },
+    {
+      "kabardeyce": "Амдэгурэ",
+      "rusca": "Свербига восточная",
+      "latince": "Bunias orientalis L.",
+      "sayfa": 24,
+      "raw": "Амдэгурэ — Свербига восточная — Bunias orientalis L."
+    },
+    {
+      "kabardeyce": "Ашэху",
+      "rusca": "Могар",
+      "latince": "Setaria moharium А!.",
+      "sayfa": 28,
+      "raw": "Ашэху — Могар — Setaria moharium А!."
+    },
+    {
+      "kabardeyce": "АТуудз",
+      "rusca": "Лилия однобратственная",
+      "latince": "Lilium monadelphum Bieb.",
+      "sayfa": 30,
+      "raw": "АТуудз — Лилия однобратственная — Lilium monadelphum Bieb."
+    },
+    {
+      "kabardeyce": "Бад (каб.)",
+      "rusca": "Ладанник крымский",
+      "latince": "Cistus tauricus (J. et C)",
+      "sayfa": 30,
+      "raw": "Бад (каб.) — Ладанник крымский — Cistus tauricus (J. et C)"
+    },
+    {
+      "kabardeyce": "Бадзэгъал!э",
+      "rusca": "Валериана лекарственная",
+      "latince": "Valeriana officina",
+      "sayfa": 30,
+      "raw": "Бадзэгъал!э — Валериана лекарственная — Valeriana officina-"
+    },
+    {
+      "kabardeyce": "Бажэк!э",
+      "rusca": "Мышей сизый, щетинник сизий",
+      "latince": "Setaria glauca (L.)",
+      "sayfa": 30,
+      "raw": "Бажэк!э — Мышей сизый, щетинник сизий — Setaria glauca (L.)"
+    },
+    {
+      "kabardeyce": "Балыджэхужь (черк.)",
+      "rusca": "Редиска, редис",
+      "latince": "Raphanus sativus уаг.",
+      "sayfa": 32,
+      "raw": "Балыджэхужь (черк.) — Редиска, редис — Raphanus sativus уаг."
+    },
+    {
+      "kabardeyce": "Балыджэхъу",
+      "rusca": "Редиска, редис",
+      "latince": "Raphanus sativus L.",
+      "sayfa": 32,
+      "raw": "Балыджэхъу — Редиска, редис — Raphanus sativus L."
+    },
+    {
+      "kabardeyce": "Балыджэф!ыц!э",
+      "rusca": "Редька",
+      "latince": "Raphanus sativus L.",
+      "sayfa": 32,
+      "raw": "Балыджэф!ыц!э — Редька — Raphanus sativus L."
+    },
+    {
+      "kabardeyce": "Балыджэшхуэ",
+      "rusca": "Редька",
+      "latince": "Raphanus sativus L.",
+      "sayfa": 33,
+      "raw": "Балыджэшхуэ — Редька — Raphanus sativus L."
+    },
+    {
+      "kabardeyce": "Банэдэгу",
+      "rusca": "Дурнишник зобовидный",
+      "latince": "Xanthium strumarium L.",
+      "sayfa": 33,
+      "raw": "Банэдэгу — Дурнишник зобовидный — Xanthium strumarium L."
+    },
+    {
+      "kabardeyce": "Банэшхуей (черк.)",
+      "rusca": "Гледичия колючая",
+      "latince": "Gleditschia triacant",
+      "sayfa": 35,
+      "raw": "Банэшхуей (черк.) — Гледичия колючая — Gleditschia triacant-"
+    },
+    {
+      "kabardeyce": "Бэджак!э",
+      "rusca": "Лисохвост JyroBoü",
+      "latince": "Alopecurus praten",
+      "sayfa": 36,
+      "raw": "Бэджак!э — (адыг.) — Лисохвост JyroBoü — Alopecurus praten-"
+    },
+    {
+      "kabardeyce": "Бэлыджэин (адыг.)",
+      "rusca": "Редька",
+      "latince": "Raphanus sativus L.",
+      "sayfa": 37,
+      "raw": "Бэлыджэин (адыг.) — Редька — Raphanus sativus L."
+    },
+    {
+      "kabardeyce": "Бэлыджэщ!ык!у",
+      "rusca": "Редиска, редис",
+      "latince": "Raphanus sativus",
+      "sayfa": 37,
+      "raw": "Бэлыджэщ!ык!у — (адыг.) — Редиска, редис — Raphanus sativus"
+    },
+    {
+      "kabardeyce": "Бэрэжьей",
+      "rusca": "Бузина черная",
+      "latince": "Sambucus nigra L.",
+      "sayfa": 37,
+      "raw": "Бэрэжьей — Бузина черная — Sambucus nigra L."
+    },
+    {
+      "kabardeyce": "Бэрэжьейт!уп (каб.)",
+      "rusca": "Бузина черная",
+      "latince": "Sambucus nigra L.",
+      "sayfa": 38,
+      "raw": "Бэрэжьейт!уп (каб.) — Бузина черная — Sambucus nigra L."
+    },
+    {
+      "kabardeyce": "Бгырыпхи!э (черк.)",
+      "rusca": "Жостер слабительный",
+      "latince": "Rhamnus cathar",
+      "sayfa": 38,
+      "raw": "Бгырыпхи!э (черк.) — Жостер слабительный — Rhamnus cathar-"
+    },
+    {
+      "kabardeyce": "Бгъэн (черк.)",
+      "rusca": "Тростник обыкновенный",
+      "latince": "Phragmites commu",
+      "sayfa": 38,
+      "raw": "Бгъэн (черк.) — Тростник обыкновенный — Phragmites commu-"
+    },
+    {
+      "kabardeyce": "Бжьалэ (адыг.)",
+      "rusca": "Ежевика сизая",
+      "latince": "Rubus caesius L.",
+      "sayfa": 40,
+      "raw": "Бжьалэ (адыг.) — Ежевика сизая — Rubus caesius L."
+    },
+    {
+      "kabardeyce": "Бжьалэ (шапс.)",
+      "rusca": "Хмель обыкновенный",
+      "latince": "Humulus lupulus L.",
+      "sayfa": 40,
+      "raw": "Бжьалэ (шапс.) — Хмель обыкновенный — Humulus lupulus L."
+    },
+    {
+      "kabardeyce": "ма",
+      "rusca": "",
+      "latince": "Phoenix dactylifera L.",
+      "sayfa": 41,
+      "raw": "ма — Phoenix dactylifera L."
+    },
+    {
+      "kabardeyce": "Бжей",
+      "rusca": "Бук восточный",
+      "latince": "Fagus orientalis Lipsky.",
+      "sayfa": 41,
+      "raw": "Бжей — Бук восточный — Fagus orientalis Lipsky."
+    },
+    {
+      "kabardeyce": "Бзамэ (адыг.)",
+      "rusca": "Свинорой пальчатый",
+      "latince": "Cynodon dactylorn (L.)",
+      "sayfa": 44,
+      "raw": "Бзамэ (адыг.) — Свинорой пальчатый — Cynodon dactylorn (L.)"
+    },
+    {
+      "kabardeyce": "Бланэуэкъу",
+      "rusca": "Козлятник восточный",
+      "latince": "Galega orientalis Lam.",
+      "sayfa": 45,
+      "raw": "Бланэуэкъу — Козлятник восточный — Galega orientalis Lam."
+    },
+    {
+      "kabardeyce": "Бланэукъ",
+      "rusca": "Козлятник восточный",
+      "latince": "Galega orierttalis Гат.",
+      "sayfa": 45,
+      "raw": "Бланэукъ — Козлятник восточный — Galega orierttalis Гат."
+    },
+    {
+      "kabardeyce": "шейки",
+      "rusca": "",
+      "latince": "Polygonum bistorta L.",
+      "sayfa": 46,
+      "raw": "шейки — Polygonum bistorta L."
+    },
+    {
+      "kabardeyce": "Быяу",
+      "rusca": "Скумпия обыкновенная",
+      "latince": "Cotinus coggygria 5сор.",
+      "sayfa": 51,
+      "raw": "Быяу — Скумпия обыкновенная — Cotinus coggygria 5сор."
+    },
+    {
+      "kabardeyce": "Вагъуэплъ (черк.)",
+      "rusca": "Сорт проса посевного",
+      "latince": "Panicum milia",
+      "sayfa": 51,
+      "raw": "Вагъуэплъ (черк.) — Сорт проса посевного — Panicum milia-"
+    },
+    {
+      "kabardeyce": "Вэндз",
+      "rusca": "Вех ядовитый",
+      "latince": "Cicuta virosa L.",
+      "sayfa": 51,
+      "raw": "Вэндз — Вех ядовитый — Cicuta virosa L."
+    },
+    {
+      "kabardeyce": "Вык!эбз",
+      "rusca": "Цикорий  обыкновенный",
+      "latince": "Cichorium  inty",
+      "sayfa": 52,
+      "raw": "Вык!эбз — (черк.) — Цикорий  обыкновенный — Cichorium  inty-"
+    },
+    {
+      "kabardeyce": "Вык!эжь (черк.)",
+      "rusca": "Ширица белая",
+      "latince": "Amaranthus albus L.",
+      "sayfa": 52,
+      "raw": "Вык!эжь (черк.) — Ширица белая — Amaranthus albus L."
+    },
+    {
+      "kabardeyce": "Вык!эхъу",
+      "rusca": "Щирица запрокинутая",
+      "latince": "Amaranthus retroflexus L.",
+      "sayfa": 52,
+      "raw": "Вык!эхъу — Щирица запрокинутая — Amaranthus retroflexus L."
+    },
+    {
+      "kabardeyce": "Вык!эщэху (черк.)",
+      "rusca": "Цикорий обыкновенный",
+      "latince": "Cichorium inty",
+      "sayfa": 52,
+      "raw": "Вык!эщэху (черк.) — Цикорий обыкновенный — Cichorium inty-"
+    },
+    {
+      "kabardeyce": "Гыныплъ (адыг.)",
+      "rusca": "Свекла обыкновенная",
+      "latince": "Beta vulgaris L",
+      "sayfa": 53,
+      "raw": "Гыныплъ (адыг.) — Свекла обыкновенная — Beta vulgaris L"
+    },
+    {
+      "kabardeyce": "Гыныплъилъыжь (адыг.)",
+      "rusca": "",
+      "latince": "Свекла столовая. Beta vulgaris L.",
+      "sayfa": 53,
+      "raw": "Гыныплъилъыжь (адыг.) — Свекла столовая. Beta vulgaris L."
+    },
+    {
+      "kabardeyce": "Губгъуэдыгъумэ (каб.)",
+      "rusca": "Мята полевая",
+      "latince": "Mentha arvensis L.",
+      "sayfa": 58,
+      "raw": "Губгъуэдыгъумэ (каб.) — Мята полевая — Mentha arvensis L."
+    },
+    {
+      "kabardeyce": "Губгъуэджэниш",
+      "rusca": "Чечевица лищевая",
+      "latince": "Lens culinaris Medic.",
+      "sayfa": 58,
+      "raw": "Губгъуэджэниш — Чечевица лищевая — Lens culinaris Medic."
+    },
+    {
+      "kabardeyce": "Гуузгъэзауэ (каб.)",
+      "rusca": "Дрема белая",
+      "latince": "Melandrium albium СагкКе.",
+      "sayfa": 61,
+      "raw": "Гуузгъэзауэ (каб.) — Дрема белая — Melandrium albium СагкКе."
+    },
+    {
+      "kabardeyce": "Гуузгын (черк.)",
+      "rusca": "Анис",
+      "latince": "Pimpinella anisum L.",
+      "sayfa": 61,
+      "raw": "Гуузгын (черк.) — Анис — Pimpinella anisum L."
+    },
+    {
+      "kabardeyce": "Гуузуц (адыг.)",
+      "rusca": "Валериана лекарственная",
+      "latince": "Valeriana officina",
+      "sayfa": 62,
+      "raw": "Гуузуц (адыг.) — Валериана лекарственная — Valeriana officina-"
+    },
+    {
+      "kabardeyce": "Гъажьо  (адыг., шапс.)",
+      "rusca": "Просо посевное",
+      "latince": "Panicum milia",
+      "sayfa": 62,
+      "raw": "Гъажьо  (адыг., шапс.) — Просо посевное — Panicum milia-"
+    },
+    {
+      "kabardeyce": "Гъэтэдж (черк.)",
+      "rusca": "Хмель обыкновенный",
+      "latince": "Humulus lupulus L.",
+      "sayfa": 63,
+      "raw": "Гъэтэдж (черк.) — Хмель обыкновенный — Humulus lupulus L."
+    },
+    {
+      "kabardeyce": "Гъэшудз  (черк.)",
+      "rusca": "Язвенник многолистный",
+      "latince": "Anthyllis polyp",
+      "sayfa": 63,
+      "raw": "Гъэшудз  (черк.) — Язвенник многолистный — Anthyllis polyp-"
+    },
+    {
+      "kabardeyce": "Гъуэ, гъо (шапс.)",
+      "rusca": "Омела белая",
+      "latince": "Viscum album L.",
+      "sayfa": 63,
+      "raw": "Гъуэ, гъо (шапс.) — Омела белая — Viscum album L."
+    },
+    {
+      "kabardeyce": "Гъуэгуанэкъашэ",
+      "rusca": "Буквица крупноцветковая",
+      "latince": "Betonica gran",
+      "sayfa": 63,
+      "raw": "Гъуэгуанэкъашэ — Буквица крупноцветковая — Betonica gran-"
+    },
+    {
+      "kabardeyce": "Гъуэжьытх (черк.)",
+      "rusca": "Дрок распростертый",
+      "latince": "Genista patula Bieb.",
+      "sayfa": 65,
+      "raw": "Гъуэжьытх (черк.) — Дрок распростертый — Genista patula Bieb."
+    },
+    {
+      "kabardeyce": "Дэжьей (черк.)",
+      "rusca": "Лещина обыкновенная",
+      "latince": "Corylus avellana L.",
+      "sayfa": 67,
+      "raw": "Дэжьей (черк.) — Лещина обыкновенная — Corylus avellana L."
+    },
+    {
+      "kabardeyce": "Джэдгъал!э",
+      "rusca": "Паслен сладкогорький",
+      "latince": "Solanum dulcamara L.",
+      "sayfa": 71,
+      "raw": "Джэдгъал!э — Паслен сладкогорький — Solanum dulcamara L."
+    },
+    {
+      "kabardeyce": "Джэдмышх",
+      "rusca": "ШЩавель альпийский",
+      "latince": "Rumex alpinus L.",
+      "sayfa": 72,
+      "raw": "Джэдмышх — ШЩавель альпийский — Rumex alpinus L."
+    },
+    {
+      "kabardeyce": "Джэдуук!э (каб.)",
+      "rusca": "Хвощ полевой",
+      "latince": "Eguisetum arvense L.",
+      "sayfa": 72,
+      "raw": "Джэдуук!э (каб.) — Хвощ полевой — Eguisetum arvense L."
+    },
+    {
+      "kabardeyce": "Джэдхъусанэ",
+      "rusca": "Паслен черный",
+      "latince": "Solanum nigrum L.",
+      "sayfa": 73,
+      "raw": "Джэдхъусанэ — Паслен черный — Solanum nigrum L."
+    },
+    {
+      "kabardeyce": "Джэдылъэ",
+      "rusca": "Герань лесная",
+      "latince": "Geraneum silvaticum L.",
+      "sayfa": 73,
+      "raw": "Джэдылъэ — Герань лесная — Geraneum silvaticum L."
+    },
+    {
+      "kabardeyce": "Джэнчфыжь (адыг.)",
+      "rusca": "Фасоль обыкновенная",
+      "latince": "Phaseolus vul",
+      "sayfa": 74,
+      "raw": "Джэнчфыжь (адыг.) — Фасоль обыкновенная — Phaseolus vul-"
+    },
+    {
+      "kabardeyce": "Джэнчийуц!э (адыг.)",
+      "rusca": "Фасоль обыкновенная",
+      "latince": "Phaseolus vul",
+      "sayfa": 74,
+      "raw": "Джэнчийуц!э (адыг.) — Фасоль обыкновенная — Phaseolus vul-"
+    },
+    {
+      "kabardeyce": "Джэнш",
+      "rusca": "Фасоль обыкновенная",
+      "latince": "Phaseolus vulgaris L.",
+      "sayfa": 74,
+      "raw": "Джэнш — Фасоль обыкновенная — Phaseolus vulgaris L."
+    },
+    {
+      "kabardeyce": "Джэншдэжей",
+      "rusca": "Фасоль многоцветковая",
+      "latince": "Phaseolus miltiflorus",
+      "sayfa": 74,
+      "raw": "Джэншдэжей — Фасоль многоцветковая — Phaseolus miltiflorus"
+    },
+    {
+      "kabardeyce": "Джэш",
+      "rusca": "Фасоль обыкновенная",
+      "latince": "Phaseolus vulgaris L.",
+      "sayfa": 74,
+      "raw": "Джэш — Фасоль обыкновенная — Phaseolus vulgaris L."
+    },
+    {
+      "kabardeyce": "Джэшдэжей",
+      "rusca": "Фасоль многоцветковая",
+      "latince": "Phaseolus miltiflorus",
+      "sayfa": 74,
+      "raw": "Джэшдэжей — Фасоль многоцветковая — Phaseolus miltiflorus"
+    },
+    {
+      "kabardeyce": "Джэщы",
+      "rusca": "Фасоль обыкновенная.",
+      "latince": "Rhaseolus vulga",
+      "sayfa": 75,
+      "raw": "Джэщы — (шапс.) — Фасоль обыкновенная.— Rhaseolus vulga-"
+    },
+    {
+      "kabardeyce": "Дзэлдэгу",
+      "rusca": "Ива ломкая",
+      "latince": "Salix fragilis L.",
+      "sayfa": 76,
+      "raw": "Дзэлдэгу — Ива ломкая — Salix fragilis L."
+    },
+    {
+      "kabardeyce": "венный",
+      "rusca": "",
+      "latince": "Gladiolus communis L.",
+      "sayfa": 76,
+      "raw": "венный — Gladiolus communis L."
+    },
+    {
+      "kabardeyce": "Дзэузхущхъуэ (каб.)",
+      "rusca": "Белена черная",
+      "latince": "Hyoscyamus niger L.",
+      "sayfa": 78,
+      "raw": "Дзэузхущхъуэ (каб.) — Белена черная — Hyoscyamus niger L."
+    },
+    {
+      "kabardeyce": "венный",
+      "rusca": "",
+      "latince": "Hypericum perforatum L.",
+      "sayfa": 79,
+      "raw": "венный — Hypericum perforatum L."
+    },
+    {
+      "kabardeyce": "щик многоветвистый",
+      "rusca": "",
+      "latince": "Tamarix ramosissima Ledeb).",
+      "sayfa": 81,
+      "raw": "щик многоветвистый — Tamarix ramosissima Ledeb)."
+    },
+    {
+      "kabardeyce": "Жэмбзэгу (каб.)",
+      "rusca": "Подорожник средний",
+      "latince": "Plantago media L.",
+      "sayfa": 82,
+      "raw": "Жэмбзэгу (каб.) — Подорожник средний — Plantago media L."
+    },
+    {
+      "kabardeyce": "Жэхампхъэ, жыхапхъэ",
+      "rusca": "Сорго веничное",
+      "latince": "Sorghum technicum",
+      "sayfa": 82,
+      "raw": "Жэхампхъэ, жыхапхъэ — Сорго веничное — Sorghum technicum"
+    },
+    {
+      "kabardeyce": "Жэхампхъэфо, жыхапхъэфо",
+      "rusca": "Сорго сахарное",
+      "latince": "Sorghum sacc",
+      "sayfa": 82,
+      "raw": "Жэхампхъэфо, жыхапхъэфо — Сорго сахарное — Sorghum sacc-"
+    },
+    {
+      "kabardeyce": "Жыгделэ",
+      "rusca": "Айлант высочайший",
+      "latince": "Ailanthus altissima (Mill.)",
+      "sayfa": 83,
+      "raw": "Жыгделэ — Айлант высочайший — Ailanthus altissima (Mill.)"
+    },
+    {
+      "kabardeyce": "Жыгкугъу",
+      "rusca": "Омела белая",
+      "latince": "Viscum album L.",
+      "sayfa": 84,
+      "raw": "Жыгкугъу — Омела белая — Viscum album L."
+    },
+    {
+      "kabardeyce": "Жызумей, жузымей",
+      "rusca": "Виноград культурный",
+      "latince": "Vitis vinifera L.",
+      "sayfa": 84,
+      "raw": "Жызумей, жузымей — Виноград культурный — Vitis vinifera L."
+    },
+    {
+      "kabardeyce": "Жьакъ и кхъужьей (черк.)",
+      "rusca": "Груша кавказская",
+      "latince": "Pyrus caucasi",
+      "sayfa": 85,
+      "raw": "Жьакъ и кхъужьей (черк.) — Груша кавказская — Pyrus caucasi-"
+    },
+    {
+      "kabardeyce": "Жьэныпэуц (шапс.)",
+      "rusca": "Якорцы стелющиеся",
+      "latince": "Tribulus terrest",
+      "sayfa": 85,
+      "raw": "Жьэныпэуц (шапс.) — Якорцы стелющиеся — Tribulus terrest-"
+    },
+    {
+      "kabardeyce": "обыкновенный",
+      "rusca": "",
+      "latince": "Grossularia reclinata (L.) МШ.",
+      "sayfa": 85,
+      "raw": "обыкновенный — Grossularia reclinata (L.) МШ."
+    },
+    {
+      "kabardeyce": "жовник обыкновенный",
+      "rusca": "",
+      "latince": "Grossularia reclinata (1..) МШ.",
+      "sayfa": 86,
+      "raw": "жовник обыкновенный — Grossularia reclinata (1..) МШ."
+    },
+    {
+      "kabardeyce": "Жьуджалэ",
+      "rusca": "Колючник обыкновенный",
+      "latince": "Carlina vulgaris L.",
+      "sayfa": 86,
+      "raw": "Жьуджалэ — Колючник обыкновенный — Carlina vulgaris L."
+    },
+    {
+      "kabardeyce": "Жьыузудз",
+      "rusca": "Мята длиннолистая",
+      "latince": "Mentha longifolia (1..) Huds.",
+      "sayfa": 87,
+      "raw": "Жьыузудз — Мята длиннолистая — Mentha longifolia (1..) Huds."
+    },
+    {
+      "kabardeyce": "Зэндал (шапс.)",
+      "rusca": "Абрикос обыкновенный",
+      "latince": "Artemisia vulgaris L.",
+      "sayfa": 87,
+      "raw": "Зэндал (шапс.) — Абрикос обыкновенный — Artemisia vulgaris L."
+    },
+    {
+      "kabardeyce": "Зэрыб (бесл.)",
+      "rusca": "Физалис обыкновенный",
+      "latince": "Physalis alkekengi L.",
+      "sayfa": 88,
+      "raw": "Зэрыб (бесл.) — Физалис обыкновенный — Physalis alkekengi L."
+    },
+    {
+      "kabardeyce": "Зэрджай (адыг.)",
+      "rusca": "Калина обыкновенная",
+      "latince": "Viburnum opulus L.",
+      "sayfa": 88,
+      "raw": "Зэрджай (адыг.) — Калина обыкновенная — Viburnum opulus L."
+    },
+    {
+      "kabardeyce": "Зэрыджей",
+      "rusca": "Калина обыкновенная",
+      "latince": "Viburnum opulus L.",
+      "sayfa": 88,
+      "raw": "Зэрыджей — Калина обыкновенная — Viburnum opulus L."
+    },
+    {
+      "kabardeyce": "гъуэ  (Свидина  кроваво",
+      "rusca": "красная",
+      "latince": "Thelyecrania sangvinea (L.)",
+      "sayfa": 90,
+      "raw": "гъуэ  (Свидина  кроваво-красная — Thelyecrania sangvinea (L.)"
+    },
+    {
+      "kabardeyce": "Кэртоф (адыг.)",
+      "rusca": "Картофель",
+      "latince": "Solanum tuberosum L.",
+      "sayfa": 90,
+      "raw": "Кэртоф (адыг.) — Картофель — Solanum tuberosum L."
+    },
+    {
+      "kabardeyce": "Кугъу",
+      "rusca": "Омела белая",
+      "latince": "Viscum album L.",
+      "sayfa": 90,
+      "raw": "Кугъу — Омела белая — Viscum album L."
+    },
+    {
+      "kabardeyce": "Кугъуэ (черк.)",
+      "rusca": "Омела белая",
+      "latince": "Viscum album L.",
+      "sayfa": 91,
+      "raw": "Кугъуэ (черк.) — Омела белая — Viscum album L."
+    },
+    {
+      "kabardeyce": "К!акътхьэпэ (м.",
+      "rusca": "каб.) — Дурман обыкновенный",
+      "latince": "Datura stra",
+      "sayfa": 91,
+      "raw": "К!акътхьэпэ (м.-каб.) — Дурман обыкновенный — Datura stra-"
+    },
+    {
+      "kabardeyce": "КТарц",
+      "rusca": "Акация белая, робиния лжеакация",
+      "latince": "Robinia pseudoa",
+      "sayfa": 91,
+      "raw": "КТарц — Акация белая, робиния лжеакация — Robinia pseudoa-"
+    },
+    {
+      "kabardeyce": "ция",
+      "rusca": "",
+      "latince": "Robinia pseudoacacia L.",
+      "sayfa": 92,
+      "raw": "ция — Robinia pseudoacacia L."
+    },
+    {
+      "kabardeyce": "К1энаф (каб.)",
+      "rusca": "Гибискус, кенаф",
+      "latince": "Hibiscus cannabinus L.",
+      "sayfa": 92,
+      "raw": "К1энаф (каб.) — Гибискус, кенаф — Hibiscus cannabinus L."
+    },
+    {
+      "kabardeyce": "К!энэф (каб.)",
+      "rusca": "Гибискус, кенаф",
+      "latince": "Hibiscus cannabinus L.",
+      "sayfa": 92,
+      "raw": "К!энэф (каб.) — Гибискус, кенаф — Hibiscus cannabinus L."
+    },
+    {
+      "kabardeyce": "КТэрынэ (черк.)",
+      "rusca": "Череда трехраздельная",
+      "latince": "Bidens tripartita L.",
+      "sayfa": 94,
+      "raw": "КТэрынэ (черк.) — Череда трехраздельная — Bidens tripartita L."
+    },
+    {
+      "kabardeyce": "Кюфий (каб.)",
+      "rusca": "Дрема белая",
+      "latince": "Melandrium albium Garke.",
+      "sayfa": 94,
+      "raw": "Кюфий (каб.) — Дрема белая — Melandrium albium Garke."
+    },
+    {
+      "kabardeyce": "Къазмакъбанэ",
+      "rusca": "Облепнха крушиновидная",
+      "latince": "Hippophae rhamnoi",
+      "sayfa": 95,
+      "raw": "Къазмакъбанэ — Облепнха крушиновидная — Hippophae rhamnoi-"
+    },
+    {
+      "kabardeyce": "Къакъий",
+      "rusca": "Нут рогообразный, HYT культурный",
+      "latince": "Cicer arieti",
+      "sayfa": 96,
+      "raw": "Къакъий — Нут рогообразный, HYT культурный — Cicer arieti-"
+    },
+    {
+      "kabardeyce": "Къамуыхъу (адыг.)",
+      "rusca": "Вех ядовитый",
+      "latince": "Cicuta virosa L.",
+      "sayfa": 97,
+      "raw": "Къамуыхъу (адыг.) — Вех ядовитый — Cicuta virosa L."
+    },
+    {
+      "kabardeyce": "Къамылыхъу (м. каб.)",
+      "rusca": "Рогоз широколистный",
+      "latince": "Typha latifolia L.",
+      "sayfa": 98,
+      "raw": "Къамылыхъу (м. каб.) — Рогоз широколистный — Typha latifolia L."
+    },
+    {
+      "kabardeyce": "Къанзидзэ (черк.)",
+      "rusca": "Ромашка аптечная",
+      "latince": "Matricaria chamomil",
+      "sayfa": 99,
+      "raw": "Къанзидзэ (черк.) — Ромашка аптечная — Matricaria chamomil-"
+    },
+    {
+      "kabardeyce": "Къанщ!ол",
+      "rusca": "Лох узколистный",
+      "latince": "Elaeagnus angustifo",
+      "sayfa": 99,
+      "raw": "Къанщ!ол — (черк.) — Лох узколистный — Elaeagnus angustifo-"
+    },
+    {
+      "kabardeyce": "Къэпраз",
+      "rusca": "Арбуз  обыкновенный",
+      "latince": "Citrullus vulgaris",
+      "sayfa": 99,
+      "raw": "Къэпраз — (шапс.) — Арбуз  обыкновенный — Citrullus vulgaris"
+    },
+    {
+      "kabardeyce": "Къарапыз (адыг., шапс.)",
+      "rusca": "Арбуз обыкновенный",
+      "latince": "Citrullus vulga",
+      "sayfa": 99,
+      "raw": "Къарапыз (адыг., шапс.) — Арбуз обыкновенный — Citrullus vulga-"
+    },
+    {
+      "kabardeyce": "Къаун (шапс.)",
+      "rusca": "Дыня посевная",
+      "latince": "Cucumis melo L.",
+      "sayfa": 99,
+      "raw": "Къаун (шапс.) — Дыня посевная — Cucumis melo L."
+    },
+    {
+      "kabardeyce": "ная",
+      "rusca": "",
+      "latince": "Brassica oleracea L.",
+      "sayfa": 100,
+      "raw": "ная — Brassica oleracea L."
+    },
+    {
+      "kabardeyce": "Къэлгъэн (черк.)",
+      "rusca": "Лапчатка прямостоячая",
+      "latince": "Potentilla erecta",
+      "sayfa": 104,
+      "raw": "Къэлгъэн (черк.) — Лапчатка прямостоячая — Potentilla erecta"
+    },
+    {
+      "kabardeyce": "Къэму (адыг.)",
+      "rusca": "Бутень клубненосный",
+      "latince": "Chaerophyllum bulbo",
+      "sayfa": 104,
+      "raw": "Къэму (адыг.) — Бутень клубненосный — Chaerophyllum bulbo-"
+    },
+    {
+      "kabardeyce": "Къэпраз",
+      "rusca": "Арбуз ` обыкновенный",
+      "latince": "Citrullus vulgaris",
+      "sayfa": 104,
+      "raw": "Къэпраз - (адыг.) — Арбуз ` обыкновенный — Citrullus vulgaris"
+    },
+    {
+      "kabardeyce": "Къэрэкъурэшей (черк.)",
+      "rusca": "Мята полевая",
+      "latince": "Mentha arvensis L.",
+      "sayfa": 106,
+      "raw": "Къэрэкъурэшей (черк.) — Мята полевая — Mentha arvensis L."
+    },
+    {
+      "kabardeyce": "Къэрмэн (каб.)",
+      "rusca": "Вяз эллиптический",
+      "latince": "Ulmus elliptica C. Koch.",
+      "sayfa": 106,
+      "raw": "Къэрмэн (каб.) — Вяз эллиптический — Ulmus elliptica C. Koch."
+    },
+    {
+      "kabardeyce": "филлус ароматный",
+      "rusca": "",
+      "latince": "Eugenia aromatica Bail!.",
+      "sayfa": 106,
+      "raw": "филлус ароматный — Eugenia aromatica Bail!."
+    },
+    {
+      "kabardeyce": "Къэртоп (адыг.)",
+      "rusca": "Картофель",
+      "latince": "Solanum tuberosum L.",
+      "sayfa": 107,
+      "raw": "Къэртоп (адыг.) — Картофель — Solanum tuberosum L."
+    },
+    {
+      "kabardeyce": "Кариоффиллус ароматный",
+      "rusca": "",
+      "latince": "Eugenia aromatica Ва!Н.",
+      "sayfa": 107,
+      "raw": "Кариоффиллус ароматный — Eugenia aromatica Ва!Н."
+    },
+    {
+      "kabardeyce": "Къэшхыхь (черк.)",
+      "rusca": "Дыня посевная",
+      "latince": "Melo sativus Sageret ех",
+      "sayfa": 108,
+      "raw": "Къэшхыхь (черк.) — Дыня посевная — Melo sativus Sageret ех"
+    },
+    {
+      "kabardeyce": "Къопанэ (адыг.)",
+      "rusca": "Дурнишник обыкновенный",
+      "latince": "Xanthium stru",
+      "sayfa": 108,
+      "raw": "Къопанэ (адыг.) — Дурнишник обыкновенный — Xanthium stru-"
+    },
+    {
+      "kabardeyce": "Кърымудз (черк.)",
+      "rusca": "Щирица белая",
+      "latince": "Amaranthus albus L.",
+      "sayfa": 109,
+      "raw": "Кърымудз (черк.) — Щирица белая — Amaranthus albus L."
+    },
+    {
+      "kabardeyce": "Кърым!эпэху (черк.)",
+      "rusca": "Ширица белая",
+      "latince": "Amaranthus albus L.",
+      "sayfa": 109,
+      "raw": "Кърым!эпэху (черк.) — Ширица белая — Amaranthus albus L."
+    },
+    {
+      "kabardeyce": "Къымщ!эчъыг (адыг.)",
+      "rusca": "Слива домашняя",
+      "latince": "Prunus domestica L.",
+      "sayfa": 109,
+      "raw": "Къымщ!эчъыг (адыг.) — Слива домашняя — Prunus domestica L."
+    },
+    {
+      "kabardeyce": "Къыфщ!эджыг (бел.)",
+      "rusca": "Слива домашняя",
+      "latince": "Prunus domestica L.",
+      "sayfa": 111,
+      "raw": "Къыфщ!эджыг (бел.) — Слива домашняя — Prunus domestica L."
+    },
+    {
+      "kabardeyce": "Къыцей (адыг.)",
+      "rusca": "Абрикос обыкновенный",
+      "latince": "ÂArmeniaca vulgaris",
+      "sayfa": 112,
+      "raw": "Къыцей (адыг.) — Абрикос обыкновенный — ÂArmeniaca vulgaris"
+    },
+    {
+      "kabardeyce": "Къыцэщхъуант!э (адыг.)",
+      "rusca": "Персик обыкновенный",
+      "latince": "Persica vul",
+      "sayfa": 112,
+      "raw": "Къыцэщхъуант!э (адыг.) — Персик обыкновенный — Persica vul-"
+    },
+    {
+      "kabardeyce": "Къуач (черк.)",
+      "rusca": "Дурман обыкновенный",
+      "latince": "Datura stramonium L.",
+      "sayfa": 112,
+      "raw": "Къуач (черк.) — Дурман обыкновенный — Datura stramonium L."
+    },
+    {
+      "kabardeyce": "укроп огородний",
+      "rusca": "",
+      "latince": "ÂAnethum graveolens L.",
+      "sayfa": 113,
+      "raw": "укроп огородний — ÂAnethum graveolens L."
+    },
+    {
+      "kabardeyce": "Къуэч (черк.)",
+      "rusca": "Дурман обыкновенный",
+      "latince": "Datura stramonium L.",
+      "sayfa": 114,
+      "raw": "Къуэч (черк.) — Дурман обыкновенный — Datura stramonium L."
+    },
+    {
+      "kabardeyce": "Къулътырджэн (бесл.)",
+      "rusca": "Шпинат огородный",
+      "latince": "Spinacia olera",
+      "sayfa": 114,
+      "raw": "Къулътырджэн (бесл.) — Шпинат огородный — Spinacia olera-"
+    },
+    {
+      "kabardeyce": "Къулътырджын (бесл.)",
+      "rusca": "Шпинат огородный",
+      "latince": "Spinacia olera",
+      "sayfa": 114,
+      "raw": "Къулътырджын (бесл.) — Шпинат огородный — Spinacia olera-"
+    },
+    {
+      "kabardeyce": "Къурэшей (черк.)",
+      "rusca": "Мята полевая",
+      "latince": "Mentha arvensis L.",
+      "sayfa": 115,
+      "raw": "Къурэшей (черк.) — Мята полевая — Mentha arvensis L."
+    },
+    {
+      "kabardeyce": "Къущхьэхъуару ` (каб.)",
+      "rusca": "Горец альпийский",
+      "latince": "Polygonum alpi",
+      "sayfa": 115,
+      "raw": "Къущхьэхъуару ` (каб.) — Горец альпийский — Polygonum alpi-"
+    },
+    {
+      "kabardeyce": "Кхъуэныжьыбз (черк.)",
+      "rusca": "Шалфей мутовчатый",
+      "latince": "Salvia verticil",
+      "sayfa": 117,
+      "raw": "Кхъуэныжьыбз (черк.) — Шалфей мутовчатый — Salvia verticil-"
+    },
+    {
+      "kabardeyce": "Кхъуэныжьыхъу (черк.)",
+      "rusca": "Шалфей эфиопский",
+      "latince": "Salvia aethio",
+      "sayfa": 117,
+      "raw": "Кхъуэныжьыхъу (черк.) — Шалфей эфиопский — Salvia aethio-"
+    },
+    {
+      "kabardeyce": "Кхъуэщ!ыдэ (черк.)",
+      "rusca": "Картофель",
+      "latince": "Solanum tuberosum L.",
+      "sayfa": 117,
+      "raw": "Кхъуэщ!ыдэ (черк.) — Картофель — Solanum tuberosum L."
+    },
+    {
+      "kabardeyce": "Кхъужьейкугъу",
+      "rusca": "Омела белая",
+      "latince": "Viscum album L.",
+      "sayfa": 118,
+      "raw": "Кхъужьейкугъу — Омела белая — Viscum album L."
+    },
+    {
+      "kabardeyce": "Лэнц! (каб.)",
+      "rusca": "Бирючина обыкновенная",
+      "latince": "Ligustrum vulgare L.",
+      "sayfa": 120,
+      "raw": "Лэнц! (каб.) — Бирючина обыкновенная — Ligustrum vulgare L."
+    },
+    {
+      "kabardeyce": "Лъэхъц (черк.)",
+      "rusca": "Вьюнок полевой",
+      "latince": "Convolvulus arvensis L.",
+      "sayfa": 121,
+      "raw": "Лъэхъц (черк.) — Вьюнок полевой — Convolvulus arvensis L."
+    },
+    {
+      "kabardeyce": "Мадзу и джэш",
+      "rusca": "Вьюнок полевой",
+      "latince": "Convolvulus arvensis L.",
+      "sayfa": 121,
+      "raw": "Мадзу и джэш — Вьюнок полевой — Convolvulus arvensis L."
+    },
+    {
+      "kabardeyce": "Маф1!асэ (каб.)",
+      "rusca": "Дурнишник зобовидный",
+      "latince": "Xanthium struma",
+      "sayfa": 124,
+      "raw": "Маф1!асэ (каб.) — Дурнишник зобовидный — Xanthium struma-"
+    },
+    {
+      "kabardeyce": "Ё\\эздэжъый (шапс.)",
+      "rusca": "Лещина обыкновенная",
+      "latince": "Corylus avella",
+      "sayfa": 124,
+      "raw": "Ё\\эздэжъый (шапс.) — Лещина обыкновенная — Corylus avella-"
+    },
+    {
+      "kabardeyce": "Мэздзэл (каб.)",
+      "rusca": "Ива прутевидная",
+      "latince": "Salix viminalis L.",
+      "sayfa": 125,
+      "raw": "Мэздзэл (каб.) — Ива прутевидная — Salix viminalis L."
+    },
+    {
+      "kabardeyce": "Мэзкхъужъчъыг (адыг.)",
+      "rusca": "Груша кавказская",
+      "latince": "Pyrus caucasica",
+      "sayfa": 125,
+      "raw": "Мэзкхъужъчъыг (адыг.) — Груша кавказская — Pyrus caucasica"
+    },
+    {
+      "kabardeyce": "МэзмэракТуей",
+      "rusca": "Костяника",
+      "latince": "Rubus saxatilis L.",
+      "sayfa": 125,
+      "raw": "МэзмэракТуей — Костяника — Rubus saxatilis L."
+    },
+    {
+      "kabardeyce": "Мэзмей",
+      "rusca": "Яблоня восточная",
+      "latince": "Malus orientalis Ugl.",
+      "sayfa": 126,
+      "raw": "Мэзмей — Яблоня восточная — Malus orientalis Ugl."
+    },
+    {
+      "kabardeyce": "Мэкъут (каб.)",
+      "rusca": "Тростник обыкновенный",
+      "latince": "Phragmites commu",
+      "sayfa": 127,
+      "raw": "Мэкъут (каб.) — Тростник обыкновенный — Phragmites commu-"
+    },
+    {
+      "kabardeyce": "Мэлудз",
+      "rusca": "Овсяница овечья",
+      "latince": "Festuca ovina L.",
+      "sayfa": 127,
+      "raw": "Мэлудз — Овсяница овечья — Festuca ovina L."
+    },
+    {
+      "kabardeyce": "Мэлудзщабэ (черк.)",
+      "rusca": "Овсяница овечья",
+      "latince": "Festuca ovina L.",
+      "sayfa": 127,
+      "raw": "Мэлудзщабэ (черк.) — Овсяница овечья — Festuca ovina L."
+    },
+    {
+      "kabardeyce": "Мэлыхъуэсабын",
+      "rusca": "Очиток испанский",
+      "latince": "Sedum hispanicum L.",
+      "sayfa": 127,
+      "raw": "Мэлыхъуэсабын — Очиток испанский — Sedum hispanicum L."
+    },
+    {
+      "kabardeyce": "Мэрак!уэГэрысэ",
+      "rusca": "Клубника",
+      "latince": "Fragaria ananassa Duch.",
+      "sayfa": 128,
+      "raw": "Мэрак!уэГэрысэ — Клубника — Fragaria ananassa Duch."
+    },
+    {
+      "kabardeyce": "дерево черное",
+      "rusca": "",
+      "latince": "Morus nigra L.",
+      "sayfa": 129,
+      "raw": "дерево черное — Morus nigra L."
+    },
+    {
+      "kabardeyce": "Мыехафэ (адыг.)",
+      "rusca": "Яблоня восточная",
+      "latince": "Malus orientalis Ugl.",
+      "sayfa": 130,
+      "raw": "Мыехафэ (адыг.) — Яблоня восточная — Malus orientalis Ugl."
+    },
+    {
+      "kabardeyce": "Мысхъы (шапс.)",
+      "rusca": "Вяз пробковый, карагач",
+      "latince": "Ulmus suberosa",
+      "sayfa": 130,
+      "raw": "Мысхъы (шапс.) — Вяз пробковый, карагач — Ulmus suberosa"
+    },
+    {
+      "kabardeyce": "Мышъхъ (шапс.)",
+      "rusca": "Яблоня восточная",
+      "latince": "Malus orientalis Ugl.",
+      "sayfa": 131,
+      "raw": "Мышъхъ (шапс.) — Яблоня восточная — Malus orientalis Ugl."
+    },
+    {
+      "kabardeyce": "Мы!эрысэчъыг (адыг.)",
+      "rusca": "Яблоня домашняя",
+      "latince": "Malus domestica",
+      "sayfa": 133,
+      "raw": "Мы!эрысэчъыг (адыг.) — Яблоня домашняя — Malus domestica"
+    },
+    {
+      "kabardeyce": "Напэлэ (черк.)",
+      "rusca": "Пион тонколистный",
+      "latince": "Paenia tenuifolia L.",
+      "sayfa": 134,
+      "raw": "Напэлэ (черк.) — Пион тонколистный— Paenia tenuifolia L."
+    },
+    {
+      "kabardeyce": "Напцэ (шапс.)",
+      "rusca": "Мушмула германская",
+      "latince": "Mespilus germanica L.",
+      "sayfa": 134,
+      "raw": "Напцэ (шапс.) — Мушмула германская — Mespilus germanica L."
+    },
+    {
+      "kabardeyce": "Нат!эгъауэ (черк.)",
+      "rusca": "Дурман обыкновенный",
+      "latince": "Datura stramo",
+      "sayfa": 136,
+      "raw": "Нат!эгъауэ (черк.) — Дурман обыкновенный — Datura stramo-"
+    },
+    {
+      "kabardeyce": "Нат!эфоч (м.",
+      "rusca": "каб.) — Дурман обыкновенный",
+      "latince": "Datura stramo",
+      "sayfa": 136,
+      "raw": "Нат!эфоч (м.-каб.) — Дурман обыкновенный — Datura stramo-"
+    },
+    {
+      "kabardeyce": "Нашэбэгу (адыг.)",
+      "rusca": "Огурец посевной",
+      "latince": "Cucumis sativus L.",
+      "sayfa": 136,
+      "raw": "Нашэбэгу (адыг.) — Огурец посевной — Cucumis sativus L."
+    },
+    {
+      "kabardeyce": "Ныбэузгын",
+      "rusca": "Папоротник мужской",
+      "latince": "Dryopteris filix",
+      "sayfa": 137,
+      "raw": "Ныбэузгын - (черк.) — Папоротник мужской — Dryopteris filix-"
+    },
+    {
+      "kabardeyce": "Ныхы (шапс.)",
+      "rusca": "Осина, тополь дрожащий",
+      "latince": "Populus tremula L.",
+      "sayfa": 138,
+      "raw": "Ныхы (шапс.) — Осина, тополь дрожащий— Populus tremula L."
+    },
+    {
+      "kabardeyce": "Пк!ие (адыг., шапс.)",
+      "rusca": "Бук восточный",
+      "latince": "Fagus orientalis Lipsky.",
+      "sayfa": 140,
+      "raw": "Пк!ие (адыг., шапс.) — Бук восточный — Fagus orientalis Lipsky."
+    },
+    {
+      "kabardeyce": "Пкъыуэгын",
+      "rusca": "Портулак огородный",
+      "latince": "Portulaca oleracea L.",
+      "sayfa": 140,
+      "raw": "Пкъыуэгын — Портулак огородный — Portulaca oleracea L."
+    },
+    {
+      "kabardeyce": "кавказская",
+      "rusca": "",
+      "latince": "ÂAbies nordman апа (Stev.) Spochv). Мы жыг",
+      "sayfa": 141,
+      "raw": "кавказская — ÂAbies nordman апа (Stev.) Spochv). Мы жыг"
+    },
+    {
+      "kabardeyce": "Псыпц!эсэрэш (каб.)",
+      "rusca": "Ситник растопыренный",
+      "latince": "Juncus effu",
+      "sayfa": 143,
+      "raw": "Псыпц!эсэрэш (каб.) — Ситник растопыренный — Juncus effu-"
+    },
+    {
+      "kabardeyce": "Пхъэгулъей",
+      "rusca": "Алыча, слива растопыренная",
+      "latince": "Prunus divaricata",
+      "sayfa": 144,
+      "raw": "Пхъэгулъей — Алыча, слива растопыренная — Prunus divaricata"
+    },
+    {
+      "kabardeyce": "Пхъэнк!ыпхъэ (адыг.)",
+      "rusca": "Сорго веничное",
+      "latince": "Sorghum technicum",
+      "sayfa": 146,
+      "raw": "Пхъэнк!ыпхъэ (адыг.) — Сорго веничное — Sorghum technicum"
+    },
+    {
+      "kabardeyce": "Пхъэщабэ",
+      "rusca": "Тополь дрожащий, осина",
+      "latince": "Populus tremula L.",
+      "sayfa": 147,
+      "raw": "Пхъэщабэ — Тополь дрожащий, осина — Populus tremula L."
+    },
+    {
+      "kabardeyce": "Пхъэщхьэмышхей",
+      "rusca": "Мушмула",
+      "latince": "Mespilus germani",
+      "sayfa": 147,
+      "raw": "Пхъэщхьэмышхей — (м.-каб.) — Мушмула — Mespilus germani-"
+    },
+    {
+      "kabardeyce": "Пыжьей",
+      "rusca": "Терн, слива колючая",
+      "latince": "Prunus spinosa L.",
+      "sayfa": 148,
+      "raw": "Пыжьей — Терн, слива колючая — Prunus spinosa L."
+    },
+    {
+      "kabardeyce": "Пырамыджы (шапс.)",
+      "rusca": "Бузина черная",
+      "latince": "Sambucus nigra L.",
+      "sayfa": 149,
+      "raw": "Пырамыджы (шапс.) — Бузина черная — Sambucus nigra L."
+    },
+    {
+      "kabardeyce": "Пш!ейжыг (черк.)",
+      "rusca": "Бук восточный",
+      "latince": "Fagus orientalis Lipsky,",
+      "sayfa": 149,
+      "raw": "Пш!ейжыг (черк.) — Бук восточный — Fagus orientalis Lipsky,"
+    },
+    {
+      "kabardeyce": "Пау (черк.)",
+      "rusca": "Дурман обыкновенный",
+      "latince": "Datura stramonium L.",
+      "sayfa": 149,
+      "raw": "Пау (черк.) — Дурман обыкновенный — Datura stramonium L."
+    },
+    {
+      "kabardeyce": "ГШит!ро (черк.)",
+      "rusca": "Ячмень заячий",
+      "latince": "Hordeum leporinum Lirk.",
+      "sayfa": 149,
+      "raw": "ГШит!ро (черк.) — Ячмень заячий — Hordeum leporinum Lirk."
+    },
+    {
+      "kabardeyce": "Сабийгын (черк.)",
+      "rusca": "Тамус обыкновенный",
+      "latince": "Tamus communis L.",
+      "sayfa": 150,
+      "raw": "Сабийгын (черк.) — Тамус обыкновенный— Tamus communis L."
+    },
+    {
+      "kabardeyce": "Сан (шапс.)",
+      "rusca": "Виноград культурный",
+      "latince": "Vitis vinifera L.",
+      "sayfa": 151,
+      "raw": "Сан (шапс.) — Виноград культурный — Vitis vinifera L."
+    },
+    {
+      "kabardeyce": "Санейплъыжь",
+      "rusca": "Смородина красная обыкновенная",
+      "latince": "Ribes vul",
+      "sayfa": 151,
+      "raw": "Санейплъыжь — Смородина красная обыкновенная — Ribes vul-"
+    },
+    {
+      "kabardeyce": "Санейф1ыц!э",
+      "rusca": "смородина черная",
+      "latince": "Ribes nigrum L.",
+      "sayfa": 151,
+      "raw": "Санейф1ыц!э — смородина черная — Ribes nigrum L."
+    },
+    {
+      "kabardeyce": "Сэрэшисыгъуэ  (каб.)",
+      "rusca": "Ситник  нитевидный",
+      "latince": "Juncus  filifor",
+      "sayfa": 153,
+      "raw": "Сэрэшисыгъуэ  (каб.) — Ситник  нитевидный — Juncus  filifor-"
+    },
+    {
+      "kabardeyce": "Сэнашъхьэ (адыг.)",
+      "rusca": "Виноград культурный",
+      "latince": "Vitis vinibera L.",
+      "sayfa": 153,
+      "raw": "Сэнашъхьэ (адыг.) — Виноград культурный — Vitis vinibera L."
+    },
+    {
+      "kabardeyce": "Суданмэкъу",
+      "rusca": "Суданская трава, суданка",
+      "latince": "Sorghum sudanense",
+      "sayfa": 155,
+      "raw": "Суданмэкъу — Суданская трава, суданка — Sorghum sudanense"
+    },
+    {
+      "kabardeyce": "Тэтэртхъуий",
+      "rusca": "Гречиха татарская",
+      "latince": "Fagopyrum tataricum (L.)",
+      "sayfa": 156,
+      "raw": "Тэтэртхъуий— Гречиха татарская — Fagopyrum tataricum (L.)"
+    },
+    {
+      "kabardeyce": "Тхьэгъэгурым",
+      "rusca": "Лопух войлочный",
+      "latince": "Arctium tomentosum Mill.",
+      "sayfa": 158,
+      "raw": "Тхьэгъэгурым — Лопух войлочный — Arctium tomentosum Mill."
+    },
+    {
+      "kabardeyce": "спорыш",
+      "rusca": "",
+      "latince": "Polygonum aviculare L.",
+      "sayfa": 161,
+      "raw": "спорыш — Polygonum aviculare L."
+    },
+    {
+      "kabardeyce": "ухо",
+      "rusca": "",
+      "latince": "Verbascum thapsus L.",
+      "sayfa": 161,
+      "raw": "ухо — Verbascum thapsus L."
+    },
+    {
+      "kabardeyce": "Т!уп",
+      "rusca": "Бузина черная",
+      "latince": "Sambucus nigra L.",
+      "sayfa": 163,
+      "raw": "Т!уп — Бузина черная — Sambucus nigra L."
+    },
+    {
+      "kabardeyce": "Удзбамэ (каб.)",
+      "rusca": "Ромашка аптечная",
+      "latince": "Matricaria chatotilla L.",
+      "sayfa": 164,
+      "raw": "Удзбамэ (каб.) — Ромашка аптечная—— Matricaria chatotilla L."
+    },
+    {
+      "kabardeyce": "Удзкъэдабэ (м.",
+      "rusca": "каб.) — Канатник",
+      "latince": "Abutilon theophrasti Medic.",
+      "sayfa": 165,
+      "raw": "Удзкъэдабэ (м.-каб.) — Канатник — Abutilon theophrasti Medic."
+    },
+    {
+      "kabardeyce": "Удзыбз (черк.)",
+      "rusca": "Белена черная",
+      "latince": "Hyoscyamus niger L.",
+      "sayfa": 166,
+      "raw": "Удзыбз (черк.) — Белена черная — Hyoscyamus niger L."
+    },
+    {
+      "kabardeyce": "Удздэху",
+      "rusca": "Мята  длиннолистная",
+      "latince": "Mentha longifolia",
+      "sayfa": 166,
+      "raw": "Удздэху - (черк.) — Мята  длиннолистная — Mentha longifolia"
+    },
+    {
+      "kabardeyce": "УкТуэл",
+      "rusca": "Куколь обыкновенный",
+      "latince": "ÂAgrostemma  githa",
+      "sayfa": 166,
+      "raw": "УкТуэл — (каб.) — Куколь обыкновенный — ÂAgrostemma  githa-"
+    },
+    {
+      "kabardeyce": "Фаф!этхьэпэ (черк.)",
+      "rusca": "Цикорий обыкновенный",
+      "latince": "Cichorium inty",
+      "sayfa": 167,
+      "raw": "Фаф!этхьэпэ (черк.) — Цикорий обыкновенный — Cichorium inty-"
+    },
+    {
+      "kabardeyce": "Фыгъо (шапс.)",
+      "rusca": "Просо посевное",
+      "latince": "Panicum miliaceum L.",
+      "sayfa": 168,
+      "raw": "Фыгъо (шапс.) — Просо посевное — Panicum miliaceum L."
+    },
+    {
+      "kabardeyce": "Фэраф!э (каб.)",
+      "rusca": "Калистегия заборная",
+      "latince": "Calystegia sepium",
+      "sayfa": 170,
+      "raw": "Фэраф!э (каб.) — Калистегия заборная — Calystegia sepium"
+    },
+    {
+      "kabardeyce": "Хьэ",
+      "rusca": "Ячмень обыкновенный",
+      "latince": "Hordeum vulgare L.",
+      "sayfa": 171,
+      "raw": "Хьэ — Ячмень обыкновенный — Hordeum vulgare L."
+    },
+    {
+      "kabardeyce": "ные",
+      "rusca": "",
+      "latince": "Faba vulgaris Моепсй. `",
+      "sayfa": 173,
+      "raw": "ные — Faba vulgaris Моепсй. `"
+    },
+    {
+      "kabardeyce": "Хьэжак!э (черк.)",
+      "rusca": "Ячмень фиолетовый",
+      "latince": "Hordeum violaceum",
+      "sayfa": 174,
+      "raw": "Хьэжак!э (черк.) — Ячмень фиолетовый — Hordeum violaceum"
+    },
+    {
+      "kabardeyce": "венная",
+      "rusca": "",
+      "latince": "Phaseolus vulgaris L.",
+      "sayfa": 174,
+      "raw": "венная — Phaseolus vulgaris L."
+    },
+    {
+      "kabardeyce": "Хьэзэрышх",
+      "rusca": "Клевер пузырчатый",
+      "latince": "Trifolium vesiculosum Savi.",
+      "sayfa": 175,
+      "raw": "Хьэзэрышх — Клевер пузырчатый — Trifolium vesiculosum Savi."
+    },
+    {
+      "kabardeyce": "Хьэиуэжыг (каб.)",
+      "rusca": "Айва",
+      "latince": "Cydonia oblonga М.",
+      "sayfa": 175,
+      "raw": "Хьэиуэжыг (каб.) — Айва — Cydonia oblonga М."
+    },
+    {
+      "kabardeyce": "Хъьэк1эзэпх",
+      "rusca": "Мышей зеленый, щетинник зеленый",
+      "latince": "Setaria viri",
+      "sayfa": 175,
+      "raw": "Хъьэк1эзэпх — Мышей зеленый, щетинник зеленый — Setaria viri-"
+    },
+    {
+      "kabardeyce": "ХьэкТэпхъ (черк.)",
+      "rusca": "Ячмень заячий",
+      "latince": "Hordeum leporinum Link.",
+      "sayfa": 176,
+      "raw": "ХьэкТэпхъ (черк.) — Ячмень заячий — Hordeum leporinum Link."
+    },
+    {
+      "kabardeyce": "Хьэкъырш",
+      "rusca": "Сурепа, горчица полевая",
+      "latince": "Sinapis arvensis L.",
+      "sayfa": 176,
+      "raw": "Хьэкъырш — Сурепа, горчица полевая — Sinapis arvensis L."
+    },
+    {
+      "kabardeyce": "вый",
+      "rusca": "",
+      "latince": "Crataegus kyrtostyla Fingerh.",
+      "sayfa": 178,
+      "raw": "вый — Crataegus kyrtostyla Fingerh."
+    },
+    {
+      "kabardeyce": "ХьэнтГроп!э (черк.)",
+      "rusca": "Дурман обыкновенный",
+      "latince": "Datura stramo",
+      "sayfa": 180,
+      "raw": "ХьэнтГроп!э (черк.) — Дурман обыкновенный — Datura stramo-"
+    },
+    {
+      "kabardeyce": "Хьэпщ!ий",
+      "rusca": "Рожь посевная",
+      "latince": "Secale cereale L.",
+      "sayfa": 180,
+      "raw": "Хьэпщ!ий — Рожь посевная — Secale cereale L."
+    },
+    {
+      "kabardeyce": "Хъурмыдж (черк.)",
+      "rusca": "Череда трехраздельная",
+      "latince": "Bidens triparti",
+      "sayfa": 185,
+      "raw": "Хъурмыдж (черк.) — Череда трехраздельная — Bidens triparti-"
+    },
+    {
+      "kabardeyce": "Хъурмыж (черк.)",
+      "rusca": "Череда трехраздельная",
+      "latince": "Bidens tripartita L.",
+      "sayfa": 186,
+      "raw": "Хъурмыж (черк.) — Череда трехраздельная— Bidens tripartita L."
+    },
+    {
+      "kabardeyce": "Хъурсанэ (каб.)",
+      "rusca": "Паслен черный",
+      "latince": "Solanum nigrum L.",
+      "sayfa": 186,
+      "raw": "Хъурсанэ (каб.) — Паслен черный — Solanum nigrum L."
+    },
+    {
+      "kabardeyce": "Цейдаду (черк.)",
+      "rusca": "Душица обыкновенная",
+      "latince": "Origanum vulga",
+      "sayfa": 186,
+      "raw": "Цейдаду (черк.) — Душица обыкновенная — Origanum vulga-"
+    },
+    {
+      "kabardeyce": "ЩШырамыщ (черк.)",
+      "rusca": "Чумиза, гоми",
+      "latince": "Setaria italica (L.) Веацу.",
+      "sayfa": 186,
+      "raw": "ЩШырамыщ (черк.) — Чумиза, гоми— Setaria italica (L.) Веацу."
+    },
+    {
+      "kabardeyce": "вая",
+      "rusca": "",
+      "latince": "Cerasus vulgaris М.",
+      "sayfa": 187,
+      "raw": "вая — Cerasus vulgaris М."
+    },
+    {
+      "kabardeyce": "Хатьма тюрингенская",
+      "rusca": "",
+      "latince": "Lavatera thuringiaca L), адрейр зы илъэсщ",
+      "sayfa": 187,
+      "raw": "Хатьма тюрингенская — Lavatera thuringiaca L), адрейр зы илъэсщ"
+    },
+    {
+      "kabardeyce": "къызэрыкТыр (Хатьма точечная",
+      "rusca": "",
+      "latince": "Lavatera punktata А!!.). Чэрдэщ1",
+      "sayfa": 187,
+      "raw": "къызэрыкТыр (Хатьма точечная — Lavatera punktata А!!.). Чэрдэщ1-"
+    },
+    {
+      "kabardeyce": "Чэтамышх (шапс.)",
+      "rusca": "Щавель альпийский",
+      "latince": "Rumex alpinus L.",
+      "sayfa": 187,
+      "raw": "Чэтамышх (шапс.) — Щавель альпийский — Rumex alpinus L."
+    },
+    {
+      "kabardeyce": "обыкновенный",
+      "rusca": "",
+      "latince": "Ashillea millefolium L.",
+      "sayfa": 187,
+      "raw": "обыкновенный— Ashillea millefolium L."
+    },
+    {
+      "kabardeyce": "Чыплъ (адыг.)",
+      "rusca": "Свекла обыкновенная",
+      "latince": "Beta vulgaris L.",
+      "sayfa": 188,
+      "raw": "Чыплъ (адыг.) — Свекла обыкновенная— Beta vulgaris L."
+    },
+    {
+      "kabardeyce": "ный",
+      "rusca": "",
+      "latince": "Phoenix dactulifera L.",
+      "sayfa": 189,
+      "raw": "ный — Phoenix dactulifera L."
+    },
+    {
+      "kabardeyce": "Шэфтыхунэ (м.",
+      "rusca": "каб. ) — Донник белый",
+      "latince": "Melilotus albus Desr.",
+      "sayfa": 193,
+      "raw": "Шэфтыхунэ (м.-каб. ) — Донник белый — Melilotus albus Desr."
+    },
+    {
+      "kabardeyce": "Шей, шай",
+      "rusca": "Чай",
+      "latince": "Thea sinensis L.",
+      "sayfa": 194,
+      "raw": "Шей, шай — Чай — Thea sinensis L."
+    },
+    {
+      "kabardeyce": "Шейт!анГущхьэ",
+      "rusca": "Чистотел большой",
+      "latince": "Chelidonium majus L.",
+      "sayfa": 196,
+      "raw": "Шейт!анГущхьэ — Чистотел большой — Chelidonium majus L."
+    },
+    {
+      "kabardeyce": "Шк!эмп!ылей (каб.)",
+      "rusca": "Дуб пробковый",
+      "latince": "Ouercus suber L.",
+      "sayfa": 196,
+      "raw": "Шк!эмп!ылей (каб.) — Дуб пробковый — Ouercus suber L."
+    },
+    {
+      "kabardeyce": "Шк!эплъ",
+      "rusca": "Румянка красная, синяк красный",
+      "latince": "Echium rubrum",
+      "sayfa": 196,
+      "raw": "Шк!эплъ — Румянка красная, синяк красный — Echium rubrum"
+    },
+    {
+      "kabardeyce": "Шхэгын (черк.)",
+      "rusca": "Шалфей эфиопский",
+      "latince": "Salvia aethiopis L.",
+      "sayfa": 196,
+      "raw": "Шхэгын (черк.) — Шалфей эфиопский — Salvia aethiopis L."
+    },
+    {
+      "kabardeyce": "Шыдыуэ (каб.)",
+      "rusca": "Цикорий обыкновенный",
+      "latince": "Cichorium intybus L.",
+      "sayfa": 198,
+      "raw": "Шыдыуэ (каб.) — Цикорий обыкновенный — Cichorium intybus L."
+    },
+    {
+      "kabardeyce": "ная",
+      "rusca": "",
+      "latince": "Urtica dioica L.",
+      "sayfa": 199,
+      "raw": "ная — Urtica dioica L."
+    },
+    {
+      "kabardeyce": "Шыч!ыбыуц _ (адыг.)",
+      "rusca": "Портулак огородный",
+      "latince": "Portulaca olera",
+      "sayfa": 200,
+      "raw": "Шыч!ыбыуц _ (адыг.) — Портулак огородный — Portulaca olera-"
+    },
+    {
+      "kabardeyce": "Шыш!ыбгын",
+      "rusca": "Портулак огородный",
+      "latince": "Portulaca olera",
+      "sayfa": 200,
+      "raw": "Шыш!ыбгын - (черк.) — Портулак огородный — Portulaca olera-"
+    },
+    {
+      "kabardeyce": "Шъоучъыг",
+      "rusca": "Гледичия — колючая",
+      "latince": "Gleditschia  tria",
+      "sayfa": 200,
+      "raw": "Шъоучъыг — (адыг.) — Гледичия — колючая — Gleditschia  tria-"
+    },
+    {
+      "kabardeyce": "ная)",
+      "rusca": "",
+      "latince": "Beta vulgaris L.",
+      "sayfa": 200,
+      "raw": "ная) — Beta vulgaris L."
+    },
+    {
+      "kabardeyce": "Щай, щэеуц (адыг.)",
+      "rusca": "Чай",
+      "latince": "Thea sinensis L.",
+      "sayfa": 201,
+      "raw": "Щай, щэеуц (адыг.) — Чай — Thea sinensis L."
+    },
+    {
+      "kabardeyce": "Щэгъэщ!о!у (адыг.)",
+      "rusca": "Щавель кислый",
+      "latince": "Rumex acetosa L.",
+      "sayfa": 201,
+      "raw": "Щэгъэщ!о!у (адыг.) — Щавель кислый — Rumex acetosa L."
+    },
+    {
+      "kabardeyce": "Щтамылэ (черк.).",
+      "rusca": "Трутовик",
+      "latince": "Polyporus fomentarius Fr.",
+      "sayfa": 201,
+      "raw": "Щтамылэ (черк.).— Трутовик — Polyporus fomentarius Fr."
+    },
+    {
+      "kabardeyce": "ный",
+      "rusca": "",
+      "latince": "Grossularia reclinata (1..) М.",
+      "sayfa": 202,
+      "raw": "ный — Grossularia reclinata (1..) М."
+    },
+    {
+      "kabardeyce": "Щ5я",
+      "rusca": "Конопля посевная",
+      "latince": "Cannabis sativa L.",
+      "sayfa": 204,
+      "raw": "Щ5я — Конопля посевная — Cannabis sativa L."
+    },
+    {
+      "kabardeyce": "Шэщей (черк.)",
+      "rusca": "Рябина глоговина, берека",
+      "latince": "Sorbus tormina",
+      "sayfa": 204,
+      "raw": "Шэщей (черк.) — Рябина глоговина, берека — Sorbus tormina-"
+    },
+    {
+      "kabardeyce": "Щиэрык!уэ",
+      "rusca": "Топинамбур, земляная груша",
+      "latince": "Heliathus tubero",
+      "sayfa": 205,
+      "raw": "Щиэрык!уэ — Топинамбур, земляная груша — Heliathus tubero-"
+    },
+    {
+      "kabardeyce": "Шыдэпэж (черк.)",
+      "rusca": "Арахис культурный",
+      "latince": "Arachis hypogaea L.",
+      "sayfa": 206,
+      "raw": "Шыдэпэж (черк.) — Арахис культурный —- Arachis hypogaea L."
+    },
+    {
+      "kabardeyce": "Шыпкъынэ (черк.)",
+      "rusca": "Портулак огородный",
+      "latince": "Portulaca olera",
+      "sayfa": 206,
+      "raw": "Шыпкъынэ (черк.) — Портулак огородный — Portulaca olera-"
+    },
+    {
+      "kabardeyce": "Вэрокъуэудз",
+      "rusca": "Вьюнок полевой",
+      "latince": "Convolvulus arvensis L.",
+      "sayfa": 211,
+      "raw": "Вэрокъуэудз — Вьюнок полевой — Convolvulus arvensis L."
+    },
+    {
+      "kabardeyce": "Джэшин",
+      "rusca": "Фасоль обыкновенная",
+      "latince": "Phaseolus vulgaris L.",
+      "sayfa": 212,
+      "raw": "Джэшин — Фасоль обыкновенная — Phaseolus vulgaris L."
+    },
+    {
+      "kabardeyce": "Джэшщык!у",
+      "rusca": "Чечевица пищевая",
+      "latince": "Lens culinaris Medic.",
+      "sayfa": 212,
+      "raw": "Джэшщык!у -— Чечевица пищевая — Lens culinaris Medic."
+    },
+    {
+      "kabardeyce": "Дыгъэпыгъазэ",
+      "rusca": "Подсолнечник",
+      "latince": "Helianthus annuus L.",
+      "sayfa": 212,
+      "raw": "Дыгъэпыгъазэ — Подсолнечник — Helianthus annuus L."
+    },
+    {
+      "kabardeyce": "Нащэкъуаншэ",
+      "rusca": "Огурец посевной",
+      "latince": "Cucumis sativus Г.",
+      "sayfa": 213,
+      "raw": "Нащэкъуаншэ -— Огурец посевной — Cucumis sativus Г."
+    },
+    {
+      "kabardeyce": "Пэнэдор",
+      "rusca": "Помидор, томат съедобный",
+      "latince": "Lycopersicon esculen",
+      "sayfa": 213,
+      "raw": "Пэнэдор — Помидор, томат съедобный -- Lycopersicon esculen-"
+    },
+    {
+      "kabardeyce": "Пхъыцэ",
+      "rusca": "Персик обыкновенный",
+      "latince": "Persica vulgaris МИ.",
+      "sayfa": 213,
+      "raw": "Пхъыцэ — Персик обыкновенный — Persica vulgaris МИ."
+    },
+    {
+      "kabardeyce": "Тэтэркуэн",
+      "rusca": "Солянка русская",
+      "latince": "Salsola rutenica İljin.",
+      "sayfa": 214,
+      "raw": "Тэтэркуэн — Солянка русская — Salsola rutenica İljin."
+    },
+    {
+      "kabardeyce": "Тэтэркуэн",
+      "rusca": "Колючник обыкновенный",
+      "latince": "Corlina vulgaris L.",
+      "sayfa": 214,
+      "raw": "Тэтэркуэн — Колючник обыкновенный — Corlina vulgaris L."
+    },
+    {
+      "kabardeyce": "Хьэмыт!кТуал!э",
+      "rusca": "Облепиха крушиновидная",
+      "latince": "Hippophae rham",
+      "sayfa": 214,
+      "raw": "Хьэмыт!кТуал!э — Облепиха крушиновидная — Hippophae rham-"
+    },
+    {
+      "kabardeyce": "Хьэнт!аркъуэщалъ",
+      "rusca": "Ряска малепькая",
+      "latince": "Lemna minor L.",
+      "sayfa": 214,
+      "raw": "Хьэнт!аркъуэщалъ — Ряска малепькая — Lemna minor L."
+    },
+    {
+      "kabardeyce": "ШТуэрей",
+      "rusca": "Щавель конский, щавель курчавый",
+      "latince": "Rumex cris",
+      "sayfa": 215,
+      "raw": "ШТуэрей — Щавель конский, щавель курчавый — Rumex cris-"
+    },
+    {
+      "kabardeyce": "Щугу",
+      "rusca": "Помидор, томат съедобный",
+      "latince": "Lycopersicon esculentum",
+      "sayfa": 215,
+      "raw": "Щугу — Помидор, томат съедобный — Lycopersicon esculentum"
+    }
+  ],
+  "tam_duplicate_detay": [],
+  "form_duplicate_detay": [
+    {
+      "pdf": {
+        "kabardeyce": "Бэлыдж",
+        "rusca": "Редиска, редис",
+        "latince": "Raphanus sativus var.",
+        "sayfa": 37,
+        "raw": "Бэлыдж — (адыг.) — Редиска, редис — Raphanus sativus var."
+      },
+      "lexeme_ids": [
+        "L-AUTO-00068"
+      ]
+    },
+    {
+      "pdf": {
+        "kabardeyce": "Гъашэ",
+        "rusca": "Полба, пшеница — полба",
+        "latince": "Triticum spelta L.",
+        "sayfa": 62,
+        "raw": "Гъашэ — Полба, пшеница — полба — Triticum spelta L."
+      },
+      "lexeme_ids": [
+        "L-CORPUS-04221"
+      ]
+    },
+    {
+      "pdf": {
+        "kabardeyce": "Джэнч (адыг.)",
+        "rusca": "Фасоль обыкновенная",
+        "latince": "Phaseolus vulgaris L.",
+        "sayfa": 74,
+        "raw": "Джэнч (адыг.) — Фасоль обыкновенная — Phaseolus vulgaris L."
+      },
+      "lexeme_ids": [
+        "L-CORPUS-02246"
+      ]
+    },
+    {
+      "pdf": {
+        "kabardeyce": "Къабзий (каб.)",
+        "rusca": "Рогоз широколистный",
+        "latince": "Typha latifolia L.",
+        "sayfa": 95,
+        "raw": "Къабзий (каб.) — Рогоз широколистный — Typha latifolia L."
+      },
+      "lexeme_ids": [
+        "L-CORPUS-01979"
+      ]
+    },
+    {
+      "pdf": {
+        "kabardeyce": "Къамыл",
+        "rusca": "Камыш озерный",
+        "latince": "Scirpus lacustris L.",
+        "sayfa": 97,
+        "raw": "Къамыл — Камыш озерный — Scirpus lacustris L."
+      },
+      "lexeme_ids": [
+        "L-CORPUS-01405"
+      ]
+    },
+    {
+      "pdf": {
+        "kabardeyce": "Къэлэрдэгу",
+        "rusca": "Ландыш майский",
+        "latince": "Convallaria majalis L.",
+        "sayfa": 103,
+        "raw": "Къэлэрдэгу — Ландыш майский — Convallaria majalis L."
+      },
+      "lexeme_ids": [
+        "L-AUTO-00073"
+      ]
+    },
+    {
+      "pdf": {
+        "kabardeyce": "Мэш",
+        "rusca": "Просо посевное",
+        "latince": "Panicum miliaceum L.",
+        "sayfa": 130,
+        "raw": "Мэш — Просо посевное — Panicum miliaceum L."
+      },
+      "lexeme_ids": [
+        "L-CORPUS-02175"
+      ]
+    },
+    {
+      "pdf": {
+        "kabardeyce": "Сэрымэ (каб.)",
+        "rusca": "Мята перечная",
+        "latince": "Mentha piperita L.",
+        "sayfa": 153,
+        "raw": "Сэрымэ (каб.) — Мята перечная —Mentha piperita L."
+      },
+      "lexeme_ids": [
+        "L-CORPUS-04962"
+      ]
+    },
+    {
+      "pdf": {
+        "kabardeyce": "Тхъуий",
+        "rusca": "Гречиха посевная",
+        "latince": "Fagopyrum sagttatum СШЬ.",
+        "sayfa": 161,
+        "raw": "Тхъуий — Гречиха посевная — Fagopyrum sagttatum СШЬ."
+      },
+      "lexeme_ids": [
+        "L-CORPUS-02972"
+      ]
+    },
+    {
+      "pdf": {
+        "kabardeyce": "Ху",
+        "rusca": "Просо посевное",
+        "latince": "Panicum miliceum L.",
+        "sayfa": 170,
+        "raw": "Ху — Просо посевное — Panicum miliceum L.—"
+      },
+      "lexeme_ids": [
+        "L-CORPUS-01065"
+      ]
+    }
+  ],
+  "latin_duplicate_detay": [
+    {
+      "pdf": {
+        "kabardeyce": "Гумей (м.",
+        "rusca": "каб.) — Сорго алепское, гумай",
+        "latince": "Sorghum halepense",
+        "sayfa": 61,
+        "raw": "Гумей (м. -каб.) — Сорго алепское, гумай — Sorghum halepense"
+      },
+      "lexeme_ids": [
+        "L-AUTO-00490"
+      ]
+    },
+    {
+      "pdf": {
+        "kabardeyce": "Хъырцэчъыг (адыг.)",
+        "rusca": "Персик обыкновенный",
+        "latince": "Persica vulgaris",
+        "sayfa": 183,
+        "raw": "Хъырцэчъыг (адыг.) — Персик обыкновенный — Persica vulgaris"
+      },
+      "lexeme_ids": [
+        "L-AUTO-01193"
+      ]
+    },
+    {
+      "pdf": {
+        "kabardeyce": "Шэфталбацэ (каб.)",
+        "rusca": "Персик обыкновенный",
+        "latince": "Persica vulgaris",
+        "sayfa": 193,
+        "raw": "Шэфталбацэ (каб.) — Персик обыкновенный — Persica vulgaris"
+      },
+      "lexeme_ids": [
+        "L-AUTO-01193"
+      ]
+    }
+  ]
+}

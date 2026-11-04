@@ -1,0 +1,24 @@
+==============================================================================
+MEANING TEMIZLIK RAPORU (Faz 16A-1b)
+==============================================================================
+Zaman: 2026-11-04T22:16:14
+Yedek: D:\projeler\Cerkesce\storage\snapshots\20261104_221613_faz16a1b-meaning-temizlik_lexemes.json
+Toplam lexeme: 28155
+
+------------------------------------------------------------------------------
+DEGISIKLIK SAYILARI
+------------------------------------------------------------------------------
+
+[meaning_latin_normalize] 3116
+    L-PSYXHUE: 'DERE' -> 'dere'
+    L-KHUABZHU: 'HIZLI' -> 'hizli'
+    L-ANESHYPHUE: 'TEYZE' -> 'teyze'
+    L-XUEDEU: 'AYNI' -> 'ayni'
+    L-XUEDE: 'AYNI' -> 'ayni'
+
+[meaning_arapca_sil] 34
+    L-CORPUS-00259: 'دوماً، دائماً، باستمرار' -> ''
+    L-CORPUS-01339: 'يفكر بـ وفي (م)' -> ''
+    L-CORPUS-01346: 'يضيف إلى، يزيد' -> ''
+    L-CORPUS-01484: 'عصير العنب' -> ''
+    L-CORPUS-01576: 'مهنة، حرفة، عمل، صنعة' -> ''

@@ -1,0 +1,153 @@
+==============================================================================
+FAZ 16A — EKSIK DETAY v2
+==============================================================================
+Zaman: 2026-11-04T21:02:30
+Toplam lexeme: 28155
+Concept EKSIK: 8848
+
+------------------------------------------------------------------------------
+ALT KUME DAGILIMI
+------------------------------------------------------------------------------
+  conceptNorm var, conceptId yok : 0
+  subConceptId var (norm yok)    : 0
+  Hicbiri yok (gercek eksik)     : 8848
+
+------------------------------------------------------------------------------
+VERI KALITESI SORUNLARI (anlam alaninda)
+------------------------------------------------------------------------------
+
+[BUYUK_HARF] 3390 adet
+    - L-PSYXHUE (псыхъуэ): tamami buyuk harf: DERE
+    - L-KKHUXY (кхъухь): tamami buyuk harf: GEMİ
+    - L-KHUABZHU (хуабжьу): tamami buyuk harf: HIZLI
+    - L-ANESHYPHUE (анэшыпхъу): tamami buyuk harf: TEYZE
+    - L-XUEDEU (хуэдэу): tamami buyuk harf: AYNI
+
+[INGILIZCE_GRAMER] 157 adet
+    - L-KBD-00427 (блэгъэкӏын): TR'de gramer terimi: causative to
+    - L-KBD-00735 (гъэдыкъын): TR'de gramer terimi: causative to
+    - L-KBD-00740 (гъэетэн): TR'de gramer terimi: causative to ii
+    - L-KBD-00751 (гъэкӏылын): TR'de gramer terimi: causative to
+    - L-KBD-00774 (гъэпӏэтӏэуэн): TR'de gramer terimi: causative to
+
+[COK_KISA] 8 adet
+    - L-CORPUS2-00093 (тӏэкӏу): anlam cok kisa: 'az'
+    - L-CORPUS2-07795 (хуэдищкӏэ): anlam cok kisa: 'Üç'
+    - L-CORPUS2-08211 (тӏэкӏунитӏэ): anlam cok kisa: 'az'
+    - L-CORPUS2-08381 (цӏыкӏуфэкӏу): anlam cok kisa: 'az'
+    - L-AUTO-00400 (алее): anlam cok kisa: 'iz'
+
+------------------------------------------------------------------------------
+CORPUS FREKANS BANTLARI (eksiklerde)
+------------------------------------------------------------------------------
+  100+        204
+  50-99       239
+  20-49       762
+  5-19       3233
+  1-4         114
+  0          4296
+
+------------------------------------------------------------------------------
+GERCEK ONCELIKLI (gercek eksik + kalite temiz + freq>=5): 2133
+------------------------------------------------------------------------------
+  freq  id             form                   tr_anlam                      
+ 10183  L-CORPUS-00000 ащ                     O / Ona / Onun (Ergatif)      
+  4768  L-PREF-SI      си                     Benim (1. t. şahıs iyelik)    
+  4320  L-PREF-UI      уи                     Senin (2. t. şahıs iyelik)    
+  3853  L-CORPUS-00001 ау                     Ama, fakat, lakin             
+  2978  L-AUE          ауэ                    Ama, lakin, aksi halde        
+  2873  L-CORPUS-00005 тэ                     Nerede / Nereye?              
+  2865  L-CORPUS-00006 ары                    Evet, öyledir                 
+  2666  L-PREF-ZI      зи                     Kendi / Kimin ki (İyelik)     
+  2484  L-KHUN-3       хъун                   olmak, gerçekleşmek           
+  2423  L-PREF-DI      ди                     bizim                         
+  2322  L-CORPUS-00008 сыда                   Niye, neden, niçin?           
+  1912  L-CORPUS2-00008 зэкӏэ                  dusty                         
+  1491  L-CORPUS-00010 ежь                    Nakarat / Vokal eşlik         
+  1414  L-PREF-FI      фи                     sizin (çoğul iyelik)          
+  1350  L-PSY          псы                    su, nehir                     
+  1018  L-CORPUS-00015 хъуащ                  oldu, gerçekleşti, tamamland  
+   927  L-CORPUS-00018 сыд                    Ne?                           
+   866  L-DZHY         джы                    Şimdi (Batı Adıgece)          
+   839  L-CORPUS-00020 макъ                   shooting                      
+   739  L-CORPUS2-00032 фӏэщ                   ciddi olarak (şakasız)        
+   734  L-CORPUS-00029 мыр                    Bu, işte bu                   
+   713  L-CORPUS-00031 джыри                  Son                           
+   713  L-CORPUS2-00035 ӏоф                    Havan                         
+   683  L-YAPE         япэ                    önce, ilk                     
+   627  L-CORPUS-00041 фае                    beyaz                         
+   617  L-ZE           зэ                     bir                           
+   591  L-CORPUS-00052 джащыгъум              o zaman                       
+   533  L-CORPUS-00062 анахь                  Tavan                         
+   510  L-CORPUS-00064 дэнэ                   tape                          
+   429  L-CORPUS-00075 хъуа                   ripe                          
+   379  L-LEZHYGHE     лэжьыгъэ               Tane                          
+   365  L-CORPUS-00094 бэ                     Oğul                          
+   340  L-CORPUS-00102 джаущтэу               öylece, o şekilde, aynen öyl  
+   334  L-CORPUS-00107 етын                   Vermek                        
+   332  L-CORPUS-00108 ащыгъум                o halde                       
+   326  L-CORPUS2-00129 ӏыхьэ                  parça, pay, hisse             
+   321  L-CORPUS-00113 зыпари                 Sıfır                         
+   307  L-CORPUS-00119 ит                     içinde duruyor, bulunuyor     
+   303  L-DZE          дзэ                    diş                           
+   289  L-CORPUS-00127 мырэущтэу              böylece, şöyle, bu şekilde    
+   284  L-CORPUS-00129 макъэ                  büyük; buyuk                  
+   267  L-CORPUS-00142 закъуэ                 tek, yalnız                   
+   259  L-CORPUS-00145 ти                     our                           
+   254  L-CORPUS-00150 тет                    kocanin babasi                
+   254  L-CORPUS-00151 зэхъум                 yaklaşırken, olduğu zaman     
+   250  L-CORPUS-00152 бэрэ                   fickle                        
+   249  L-LAZHE-N      лажьэ                  adalet, hakkaniyet            
+   249  L-CORPUS-00153 хъунукъым              olmaz, olmayacak, mümkün değ  
+   247  L-CORPUS-00157 хъущт                  diyet                         
+   230  L-ET1UANE      етӏуанэ                ikinci olarak                 
+   229  L-CORPUS-00168 зэгорэм                bir zamanlar                  
+   219  L-CORPUS2-00242 иӏэ                    onun var, sahip               
+   218  L-CORPUS-00173 мысыр                  kadin                         
+   198  L-CORPUS-00197 апэрэ                  ilk, birinci                  
+   192  L-CORPUS-00202 ауж                    izinde, peşinde, arkasında    
+   184  L-CORPUS-00214 мыхъун                 uğursuz, hayırsız             
+   184  L-CORPUS2-00311 кӏэ                    alın                          
+   181  L-CORPUS-00222 чристэн                hristiyanlık                  
+   180  L-CORPUS-00223 члисэ                  kilise                        
+   178  L-UXYN         ухын                   bitirmek                      
+   177  L-CORPUS-00230 пегъымбар              peygamber                     
+   173  L-CORPUS-00239 мыхьэнэшхуэ            tamamlanmış                   
+   172  L-CORPUS-00241 сыдэу                  nasıl, ne kadar               
+   168  L-CORPUS-00247 фаер                   isteyen, arzulayan            
+   168  L-CORPUS2-00349 щӏэн                   anlamak                       
+   165  L-CORPUS2-00360 дэнэкӏи                nerede                        
+   164  L-LEZHEN       лэжьэн                 Silinmek                      
+   164  L-CORPUS-00251 щэхуу                  sessizce                      
+   163  L-CORPUS2-00366 гъэщӏэгъуэн            wonder                        
+   163  L-CORPUS2-00367 пӏалъэ                 zaman                         
+   162  L-CORPUS-00254 ты                     Baba, ata                     
+   162  L-CORPUS2-00370 лъэкӏыныгъэ            güçlü, kuvvetli               
+   161  L-CORPUS-00255 ипэ                    önce, evvel                   
+   161  L-CORPUS-00259 ренэу                  sürekli, daima, biteviye      
+   159  L-CORPUS-00260 хъумэ                  muhtemelen                    
+   158  L-LEZHAK1UE    лэжьакӏуэ              isci                          
+   150  L-CORPUS-00275 хым                    Derinlik                      
+   150  L-CORPUS2-00407 иӏэн                   have                          
+   148  L-CORPUS-00277 ахъщэ                  finansman                     
+   147  L-CORPUS-00279 щытыгъ                 ayakta durmak                 
+   143  L-NYBZHY       ныбжь                  yas; yaş                      
+   141  L-UES          уэс                    kar                           
+   141  L-CORPUS-00292 апэ                    önde, önünde                  
+   141  L-CORPUS2-00440 къэкӏуэну              future                        
+   137  L-CORPUS-00300 къулыкъу               resmen                        
+   137  L-CORPUS2-00460 икӏэрыкӏэу             anew                          
+   136  L-CORPUS2-00464 иӏ                     cömert                        
+   132  L-CORPUS2-00481 ятӏонэрэ               İkinci                        
+   131  L-CORPUS-00310 жыжьэ                  hiç de, asla, uzaktan da      
+   130  L-KQEXQUN      къэхъун                olmak, doğmak, meydana gelme  
+   128  L-CORPUS-00319 куп                    grup                          
+   127  L-ZHYZH'EU     жыжьэу                 Uzakta                        
+   126  L-CORPUS-00324 жан                    keskin, sivri, çevik          
+   126  L-CORPUS2-00511 зекӏуэ                 trek                          
+   125  L-CORPUS2-00513 фӏэхъус                dikkat, ilgi                  
+   125  L-CORPUS2-00515 гъэзэщӏэн              yapmak                        
+   122  L-CORPUS2-00530 ӏо                     (anlamsız kısaltma)           
+   117  L-CORPUS-00353 хъуат                  ravine                        
+   114  L-CORPUS2-00585 икӏэм-икӏэжым          eventually                    
+   114  L-CORPUS2-00589 кӏо                    orada                         

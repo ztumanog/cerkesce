@@ -1,0 +1,360 @@
+==============================================================================
+CORPUS TEMIZ SINIFLANDIRMA
+==============================================================================
+Toplam: 1586
+
+Sinif dagilimi:
+  BRIDGE-YOK                   1227
+  YERLI-FALLBACK               213
+  DIGER                        37
+  YERLI-PARTIAL                33
+  DILBILGISI-ADVERB            19
+  ODUNC-RUS                    16
+  ODUNC-ARAP                   11
+  DILBILGISI-PRONOUN           10
+  DILBILGISI-PARTICLE          8
+  ODUNC-BATI                   5
+  DILBILGISI-CONJUNCTION       2
+  YERLI-EXACT                  2
+  DILBILGISI-POSTPOSITION      1
+  DILBILGISI-INTERJECTION      1
+  ODUNC-TURK                   1
+
+=== BRIDGE-YOK (1227) ===
+  L-CORPUS-00010  ежь  Nakarat / Vokal eşlik  method=-
+  L-CORPUS-00011  псоми  BILHASSA  method=-
+  L-CORPUS-00019  хуейщ  LAZIM  method=-
+  L-CORPUS-00021  мары  işte, burada, işte bu  method=-
+  L-CORPUS-00031  джыри  Son  method=-
+  L-CORPUS-00032  том  CİLT  method=-
+  L-CORPUS-00033  мафэм  gündüzün, günde, o günde  method=-
+  L-CORPUS-00039  псом  BAŞ  method=-
+  L-CORPUS-00040  мыщ  BUNCA  method=-
+  L-CORPUS-00044  аращ  ODUR  method=-
+  L-CORPUS-00050  дыдэу  HIZLI  method=-
+  L-CORPUS-00058  хъыбар  HABER  method=-
+  L-CORPUS-00068  аращи  ODUR  method=-
+  L-CORPUS-00074  арыти  ÖYLEKI  method=-
+  L-CORPUS-00081  хуей  gerekli, lazım, istekli  method=-
+  L-CORPUS-00082  шыр  TIRIS  method=-
+  L-CORPUS-00089  дэд  BAMBAŞKA  method=-
+  L-CORPUS-00091  къин  CEFALI  method=-
+  L-CORPUS-00092  зыгорэ  Buzdolabı, buzluk  method=-
+  L-CORPUS-00094  бэ  Oğul  method=-
+  L-CORPUS-00098  пащхьэ  ön, huzur  method=-
+  L-CORPUS-00103  адрэ  ÖTEKİ  method=-
+  L-CORPUS-00104  хъу  CINSEL  method=-
+  L-CORPUS-00106  адрей  BAŞKA  method=-
+  L-CORPUS-00114  хэта  CEFAKEŞ  method=-
+  L-CORPUS-00119  ит  içinde duruyor, bulunuyor  method=-
+  L-CORPUS-00122  хуейуэ  conscious  method=-
+  L-CORPUS-00125  мафэ  gün  method=-
+  L-CORPUS-00127  мырэущтэу  böylece, şöyle, bu şekilde  method=-
+  L-CORPUS-00133  ужь  art, arka, iz  method=-
+  L-CORPUS-00145  ти  our  method=-
+  L-CORPUS-00146  теухуа  AİT  method=-
+  L-CORPUS-00148  къо  bristle  method=-
+  L-CORPUS-00150  тет  kocanin babasi  method=-
+  L-CORPUS-00162  лей  FAZLA  method=-
+  L-CORPUS-00163  сыдэущтэу  NASIL  method=-
+  L-CORPUS-00172  хьау  HAYIR  method=-
+  L-CORPUS-00191  дэдэ  HAYRAN  method=-
+  L-CORPUS-00193  жагъуэ  İğrenç, sevimsiz, antipatik  method=-
+  L-CORPUS-00195  къыщегъэжьагъэу  İTİBAREN  method=-
+  L-CORPUS-00202  ауж  izinde, peşinde, arkasında  method=-
+  L-CORPUS-00207  мо  HERHANGİ  method=-
+  L-CORPUS-00210  тын  ATIYYE  method=-
+  L-CORPUS-00211  хьалыгъу  ekmek  method=-
+  L-CORPUS-00213  ара  ACABA  method=-
+  L-CORPUS-00215  бэу  IÇKICI  method=-
+  L-CORPUS-00231  пытэ  ZOKA  method=-
+  L-CORPUS-00234  бын  evlat, nesil  method=-
+  L-CORPUS-00235  шу  atlı, süvari  method=-
+  L-CORPUS-00238  хьыкум  ADALET  method=-
+  L-CORPUS-00240  иуан  Yuhanna / İvan (özel isim)  method=-
+  L-CORPUS-00241  сыдэу  nasıl, ne kadar  method=-
+  L-CORPUS-00243  тетыгъо  HEMHAL  method=-
+  L-CORPUS-00244  хуейр  GEREKEN  method=-
+  L-CORPUS-00248  бзаджэ  ADADIYOZ  method=-
+  L-CORPUS-00250  жин  ruh  method=-
+  L-CORPUS-00253  хэлъ  HUY  method=-
+  L-CORPUS-00254  ты  Baba, ata  method=-
+  L-CORPUS-00257  жылэ  tohum  method=-
+  L-CORPUS-00258  шыхьат  TANIK  method=-
+  L-CORPUS-00267  гори  HIÇBIRI  method=-
+  L-CORPUS-00284  пытэу  KISTAK  method=-
+  L-CORPUS-00290  инэу  DOLGUN  method=-
+  L-CORPUS-00291  сабый  child  method=-
+  L-CORPUS-00293  зэгуэрым  bir zamanlar  method=-
+  L-CORPUS-00296  тэрэзэу  alçakgönüllü  method=-
+  L-CORPUS-00307  джырэ  ÇAĞDIŞI  method=-
+  L-CORPUS-00309  дух  KOLONYA  method=-
+  L-CORPUS-00310  жыжьэ  hiç de, asla, uzaktan da  method=-
+  L-CORPUS-00312  сэры  BEN  method=-
+  L-CORPUS-00318  оры  SENBEN  method=-
+  L-CORPUS-00319  куп  grup  method=-
+  L-CORPUS-00320  уахътэ  vakit, zaman  method=-
+  L-CORPUS-00324  жан  keskin, sivri, çevik  method=-
+  L-CORPUS-00334  псалъэмакъ  KONUŞMA  method=-
+  L-CORPUS-00336  пай  AGREGA  method=-
+  L-CORPUS-00340  сэлам  greeting  method=-
+  L-CORPUS-00356  зыхэт  PIKAP  method=-
+  L-CORPUS-00370  бжыгъэ  sayı  method=-
+  L-CORPUS-00372  сэращ  BENİM  method=-
+  ... +1147
+
+=== YERLI-FALLBACK (213) ===
+  L-CORPUS-00140  арти  ODUR  method=fallback
+  L-CORPUS-00222  чристэн  hristiyanlık  method=fallback
+  L-CORPUS-00223  члисэ  kilise  method=fallback
+  L-CORPUS-00499  арэу  EĞER  method=fallback
+  L-CORPUS-00524  у  U-WU (U-WUI  method=fallback
+  L-CORPUS-00548  дохутыр  doktor  method=fallback
+  L-CORPUS-00583  нухь  NUH  method=fallback
+  L-CORPUS-00869  чыристан  hristiyan  method=fallback
+  L-CORPUS-01324  н  N (  method=fallback
+  L-CORPUS-01340  юныс  YUNUS  method=fallback
+  L-CORPUS-01402  п  P (  method=fallback
+  L-CORPUS-01434  акацэ  AKASYA  method=fallback
+  L-CORPUS-01542  глагол  fiil  method=fallback
+  L-CORPUS-01570  колхоз  KOLHOZ  method=fallback
+  L-CORPUS-01777  литературэ  edebi  method=fallback
+  L-CORPUS-01867  т  T (  method=fallback
+  L-CORPUS-01882  библие  i̇ncil  method=fallback
+  L-CORPUS-01933  якъуб  ISRAIL  method=fallback
+  L-CORPUS-01981  тифлис  tbilisi  method=fallback
+  L-CORPUS-01997  кофе  kahve  method=fallback
+  L-CORPUS-02047  анзор  Anzor (özel isim)  method=fallback
+  L-CORPUS-02110  ны  Anne, ana  method=fallback
+  L-CORPUS-02111  тамыгъ  ARTI IŞARETI  method=fallback
+  L-CORPUS-02148  асие  ASYA  method=fallback
+  L-CORPUS-02178  женевэ  Cenevre (şehir)  method=fallback
+  L-CORPUS-02274  бахъсэн  Baksan  method=fallback
+  L-CORPUS-02318  арэзыуэ  pleased  method=fallback
+  L-CORPUS-02335  ахьмакъ  APTALLAŞMAK  method=fallback
+  L-CORPUS-02342  спортсмен  SPORCU  method=fallback
+  L-CORPUS-02344  отэр  Sürü  method=fallback
+  L-CORPUS-02360  с  S (  method=fallback
+  L-CORPUS-02458  стэчан  Bardak  method=fallback
+  L-CORPUS-02478  лекцэ  ders  method=fallback
+  L-CORPUS-02479  япон  IKEBANA  method=fallback
+  L-CORPUS-02487  радио  radyo  method=fallback
+  L-CORPUS-02514  мыстхъу  Reçine  method=fallback
+  L-CORPUS-02543  тучан  DÜKKÂN  method=fallback
+  L-CORPUS-02565  монах  RAHIPLIK  method=fallback
+  L-CORPUS-02614  тахътэ  bench  method=fallback
+  L-CORPUS-02686  буквэ  HARF  method=fallback
+  L-CORPUS-02710  реты  vermek  method=fallback
+  L-CORPUS-02727  жакъэ  YAMUK  method=fallback
+  L-CORPUS-02739  етэн  Vermek  method=fallback
+  L-CORPUS-02755  трактор  TRAKTOR  method=fallback
+  L-CORPUS-02773  офицер  memur  method=fallback
+  L-CORPUS-02778  сарыкъ  DALFES  method=fallback
+  L-CORPUS-02782  ержыб  Eski (bir) tüfek türü  method=fallback
+  L-CORPUS-02848  шакъэ  Mürekkep  method=fallback
+  L-CORPUS-02860  тэджын  Kalkmak  method=fallback
+  L-CORPUS-02865  такси  taksi  method=fallback
+  L-CORPUS-02879  тэджэпс  MAYALAMAK  method=fallback
+  L-CORPUS-02895  ливан  LÜBNAN  method=fallback
+  L-CORPUS-02896  такъикъ  dakika  method=fallback
+  L-CORPUS-02903  быяун  SAKINLEŞMEK  method=fallback
+  L-CORPUS-02964  бетэмал  UĞURSUZ  method=fallback
+  L-CORPUS-02971  орден  takip etmek  method=fallback
+  L-CORPUS-02988  химие  KIMYACI  method=fallback
+  L-CORPUS-03023  бомбэ  bomba  method=fallback
+  L-CORPUS-03033  еууей  NASIL  method=fallback
+  L-CORPUS-03041  прагэ  Prag (şehir)  method=fallback
+  L-CORPUS-03081  хахъо  AVAIT  method=fallback
+  L-CORPUS-03095  быты  slouching  method=fallback
+  L-CORPUS-03107  стын  YANMAK  method=fallback
+  L-CORPUS-03126  зичэзыу  AKTÜEL  method=fallback
+  L-CORPUS-03201  мотор  MOTORLU  method=fallback
+  L-CORPUS-03216  копие  EŞLEM  method=fallback
+  L-CORPUS-03276  атлетикэ  athletics  method=fallback
+  L-CORPUS-03280  алжир  cezair  method=fallback
+  L-CORPUS-03282  операцэ  operasyon  method=fallback
+  L-CORPUS-03288  район  yan, taraf  method=fallback
+  L-CORPUS-03359  миллион  Milyon  method=fallback
+  L-CORPUS-03392  быбын  uçmak  method=fallback
+  L-CORPUS-03446  пу  Kaynayan, coşkulu  method=fallback
+  L-CORPUS-03473  ручкэ  tükenmez kalem  method=fallback
+  L-CORPUS-03503  авар  AVARYA  method=fallback
+  L-CORPUS-03539  станц  AYAK  method=fallback
+  L-CORPUS-03555  бэяу  ÇALMAK 2  method=fallback
+  L-CORPUS-03564  станок  TORLUK  method=fallback
+  L-CORPUS-03566  бытырбыху  Petersburg (şehir)  method=fallback
+  L-CORPUS-03571  кассэ  register  method=fallback
+  ... +133
+
+=== DIGER (37) ===
+  L-CORPUS-01446  предмет  Ölçü olarak kullanılan kumaş parçası  method=exact
+  L-CORPUS-01505  содом  Sodom (şehir)  method=exact
+  L-CORPUS-01535  тара  HANGI, HANGISI  method=exact
+  L-CORPUS-01545  талант  yetenekli  method=exact
+  L-CORPUS-01758  карт  FOTO  method=exact
+  L-CORPUS-01930  ибрахьим  İbrahim (özel isim)  method=exact
+  L-CORPUS-02062  мытэмэм  yanlış, hatalı, eksik  method=exact
+  L-CORPUS-02109  килограмм  ELLI  method=exact
+  L-CORPUS-02184  лагъым  Patlayıcı madde  method=exact
+  L-CORPUS-02206  пощт  posta  method=exact
+  L-CORPUS-02453  артист  AKRTİS  method=exact
+  L-CORPUS-02531  чырбыщ  TUĞLA  method=exact
+  L-CORPUS-02926  тамэ  Omuz  method=exact
+  L-CORPUS-03257  ихъу-ибжь  (ağrı, yanma) dinmek  method=exact
+  L-CORPUS-03291  спирт  ALKOLLÜ  method=exact
+  L-CORPUS-03297  отчет  PROTOKOL  method=exact
+  L-CORPUS-03308  спорт  şampiyonluk  method=exact
+  L-CORPUS-03339  диктант  dikte  method=exact
+  L-CORPUS-03468  дерт  KUSUR  method=exact
+  L-CORPUS-03699  системэ  SISTEMATIK  method=exact
+  L-CORPUS-03785  концерт  konser  method=exact
+  L-CORPUS-03822  диплом  DIPLOMALI  method=exact
+  L-CORPUS-03872  зэса  geleneksel  method=exact
+  L-CORPUS-04228  кандидат  AYAK  method=exact
+  L-CORPUS-04267  тумэ  MELEZ  method=exact
+  L-CORPUS-04531  опыт  DENEMEK  method=exact
+  L-CORPUS-04538  чертеж  DIYAGRAM  method=exact
+  L-CORPUS-04584  мысост  Misost (özel isim)  method=exact
+  L-CORPUS-04622  акъужь  kurumuş nehir yatağı  method=exact
+  L-CORPUS-04657  уэим  ÖNEMLİ  method=exact
+  L-CORPUS-04661  рифмэ  DIZEMLI  method=exact
+  L-CORPUS-04671  зачет  eğitim  method=exact
+  L-CORPUS-04673  идащ  RAZI  method=exact
+  L-CORPUS-04695  биижь  ezeli düşman, amansız düşman  method=exact
+  L-CORPUS-04921  крит  ada  method=exact
+  L-CORPUS2-01869  хэӏэтыкӏа  yuksek  method=exact
+  L-CORPUS2-04807  ӏисраф  israf, har vurup harman savurmak  method=exact
+
+=== YERLI-PARTIAL (33) ===
+  L-CORPUS-01899  театр  sahne  method=partial
+  L-CORPUS-02641  император  kral, hükümdar  method=partial
+  L-CORPUS-02758  пырхъуэ  EKLENTİ  method=partial
+  L-CORPUS-02912  илыягъэу  çift  method=partial
+  L-CORPUS-03219  ижын  AKMAK  method=partial
+  L-CORPUS-03286  уагъэ  TIĞ dantel ~ı  method=partial
+  L-CORPUS-03399  итэкъон  SAÇMAK  method=partial
+  L-CORPUS-03935  ижыхьын  BASMAK  method=partial
+  L-CORPUS-03952  хэон  SAPLANMAK  method=partial
+  L-CORPUS-03973  икон  AZIZ  method=partial
+  L-CORPUS-04075  иуцон  DEVLETLEŞMEK  method=partial
+  L-CORPUS-04238  пырхъ  HORUL  method=partial
+  L-CORPUS-04261  испан  ISPANYOL  method=partial
+  L-CORPUS-04840  ичэзууэ  in time  method=partial
+  L-CORPUS-04900  иблыс  IBLISANE  method=partial
+  L-CORPUS-04994  пыеу  düşman  method=partial
+  L-CORPUS2-01817  ибын  soyadi  method=partial
+  L-CORPUS2-02451  хэӏущӏыӏу  yayılma, herkesçe bilinme; yaygın  method=partial
+  L-CORPUS2-03531  иӏизын  permission  method=partial
+  L-CORPUS2-03705  изиусхьан  BAY  method=partial
+  L-CORPUS2-03896  уиӏэн  ÖFKELENDIRMEK  method=partial
+  L-CORPUS2-04989  упкӏэтэн  DOĞRAMAK  method=partial
+  L-CORPUS2-05024  иаужырэ  Son  method=partial
+  L-CORPUS2-05041  уӏагъэ  CADILAŞMAK  method=partial
+  L-CORPUS2-05497  ухуакӏуэ  insaatci  method=partial
+  L-CORPUS2-06624  хуищӏэу  cokca  method=partial
+  L-CORPUS2-08063  хэӏэн  tatmak  method=partial
+  L-CORPUS2-08233  ункӏыфӏын  go out  method=partial
+  L-CORPUS2-08262  хупыупщӏын  PATLATMAK  method=partial
+  L-CORPUS2-08797  упкӏэ  Keçe  method=partial
+  L-CORPUS2-08949  уцӏырхъын  büzüştürmek, kırıştırmak  method=partial
+  L-CORPUS2-09482  уцупӏэ  ALAN  method=partial
+  L-CORPUS2-09586  упкӏэн  BIÇMEK  method=partial
+
+=== DILBILGISI-ADVERB (19) ===
+  L-CORPUS-00232  арат  ODUR  method=-
+  L-CORPUS-00441  куууэ  Derin  method=-
+  L-CORPUS-00623  зэзэмызэ  SEYREKÇE  method=-
+  L-CORPUS-00925  ауэрэ  DERKEN  method=-
+  L-CORPUS-01820  гъэхуауэ  smoothly  method=-
+  L-CORPUS-02070  асыхьэту  PALANKA  method=fallback
+  L-CORPUS-02182  шэчыншэу  İLLE  method=-
+  L-CORPUS-02417  сэр-сэру  bizzat ben, tek başıma  method=-
+  L-CORPUS-02444  псалъэмакъыншэу  SESSİZ  method=-
+  L-CORPUS-02592  мэуэ  BURASI  method=-
+  L-CORPUS-02752  мыарэзыуэ  discontentedly  method=fallback
+  L-CORPUS-02966  чэфу  neşeyle, keyifle  method=-
+  L-CORPUS-02994  алъандэрэ  HÂLÂ  method=-
+  L-CORPUS-03184  бжыгъэншэу  sayısızca, hesapsızca  method=-
+  L-CORPUS-03433  ябгэу  AKURANE  method=fallback
+  L-CORPUS-03485  пуду  DÜŞÜRMEK  method=-
+  L-CORPUS-04630  хуимыту  KAÇINILMAZ  method=partial
+  L-CORPUS-04785  арыххэти  PALANKA  method=-
+  L-CORPUS-04816  зэпэщхьэхуэу  apart  method=-
+
+=== ODUNC-RUS (16) ===
+  L-CORPUS-00958  завод  BÜYÜMEK  method=fallback
+  L-CORPUS-01135  план  plan  method=fallback
+  L-CORPUS-01239  школ  inceleme  method=fallback
+  L-CORPUS-01268  билет  BILETSIZ  method=exact
+  L-CORPUS-01277  метр  METREKÜP  method=fallback
+  L-CORPUS-01308  кавказ  Kafkas Dağları  method=fallback
+  L-CORPUS-01352  светскэ  LAIK  method=fallback
+  L-CORPUS-01367  генерал  TÜMGENERAL  method=fallback
+  L-CORPUS-01397  штат  PRENSES  method=exact
+  L-CORPUS-01507  километр  KİLOMETRE  method=fallback
+  L-CORPUS-01778  урок  Kaligrafi  method=partial
+  L-CORPUS-01874  газет  NUMARALAMA  method=-
+  L-CORPUS-02036  стол  sıra  method=fallback
+  L-CORPUS-02263  парт  PARTİ  method=exact
+  L-CORPUS-02600  планетэ  gezegen  method=fallback
+  L-CORPUS-03751  революцэ  artistic  method=fallback
+
+=== ODUNC-ARAP (11) ===
+  L-CORPUS-00076  дин  din, inanç  method=-
+  L-CORPUS-00137  юсыф  YUSUF  method=exact
+  L-CORPUS-00143  израил  ŞEKEL  method=partial
+  L-CORPUS-00173  мысыр  kadin  method=fallback
+  L-CORPUS-00180  арэп  DEĞİL  method=fallback
+  L-CORPUS-00365  мусэ  MUSA  method=fallback
+  L-CORPUS-00373  исхьакъ  İshak (kişi adı)  method=partial
+  L-CORPUS-00486  иордан  jordan  method=partial
+  L-CORPUS-01074  мурид  MÜRIT  method=fallback
+  L-CORPUS-02547  алыхь-алыхь  1) expresses mockery;
+2) expresses delig  method=-
+  L-CORPUS2-03543  идин  ARŞIBIŞOP  method=-
+
+=== DILBILGISI-PRONOUN (10) ===
+  L-CORPUS-00000  ащ  O / Ona / Onun (Ergatif)  method=-
+  L-CORPUS-00005  тэ  Nerede / Nereye?  method=-
+  L-CORPUS-00008  сыда  Niye, neden, niçin?  method=-
+  L-CORPUS-00018  сыд  Ne?  method=-
+  L-CORPUS-00027  горэ  Bir, herhangi bir, falan  method=-
+  L-CORPUS-00029  мыр  Bu, işte bu  method=-
+  L-CORPUS-01075  зей  Kızılcık  method=-
+  L-CORPUS-03481  сысей  MAYINLAMA  method=-
+  L-CORPUS-03760  ууей  SENİN  method=partial
+  L-CORPUS-03827  мобдеж  orada  method=exact
+
+=== DILBILGISI-PARTICLE (8) ===
+  L-CORPUS-00006  ары  Evet, öyledir  method=-
+  L-CORPUS-00034  дыдэ  HIZLI  method=-
+  L-CORPUS-00093  мис  İŞTE  method=-
+  L-CORPUS-00270  ари  DA, DE, DAHİ  method=-
+  L-CORPUS-00473  сымэ  ve diğerleri, -ler (parçacık)  method=-
+  L-CORPUS-00791  мес  orada  method=-
+  L-CORPUS-00797  еуэ  TEŞYI  method=-
+  L-CORPUS-00831  еуэри  derken, ardından  method=-
+
+=== ODUNC-BATI (5) ===
+  L-CORPUS-00469  истамбыл  Istanbul  method=partial
+  L-CORPUS-01119  анкара  Ankara (şehir)  method=exact
+  L-CORPUS-01202  москва  başkent  method=-
+  L-CORPUS-01235  париж  Paris (şehir)  method=exact
+  L-CORPUS-04285  германие  mark  method=fallback
+
+=== DILBILGISI-CONJUNCTION (2) ===
+  L-CORPUS-00001  ау  Ama, fakat, lakin  method=-
+  L-CORPUS-00369  аби  hatta, bile, -de/da  method=-
+
+=== YERLI-EXACT (2) ===
+  L-CORPUS-01537  урам  sokak, cadde  method=exact
+  L-CORPUS-01626  мамэ  nine  method=exact
+
+=== DILBILGISI-POSTPOSITION (1) ===
+  L-CORPUS-00003  пае  İçin  method=-
+
+=== DILBILGISI-INTERJECTION (1) ===
+  L-CORPUS-00049  арати  ODUR  method=-
+
+=== ODUNC-TURK (1) ===
+  L-CORPUS-01263  картоф  KOLALI  method=exact

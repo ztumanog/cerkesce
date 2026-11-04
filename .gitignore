@@ -134,3 +134,8 @@ public/icons/Screenshot-1.png
 
 # Data backup
 data_backup_css/
+
+# Faz 16B: snapshot yedekleri
+storage/snapshots/
+storage/snapshots/*.json
+

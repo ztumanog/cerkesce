@@ -1,0 +1,252 @@
+==============================================================================
+AKILLI SCRIPT KESIFI
+==============================================================================
+Toplam .py         : 2567
+Isim filtresi      : 407
+Boyut filtresi     : 390
+
+------------------------------------------------------------------------------
+1) SEMA / VALIDASYON ADAYLARI (once bunlar okunmali)
+------------------------------------------------------------------------------
+  adr_validator_regex_fix.py                                  787 B  alan=0
+  f6_3_semantic_benchmark.py                                 3595 B  alan=1
+  faz10_invariant_analiz.py                                  1840 B  alan=2
+  faz_c8_asama6_semantic_relations.py                        7286 B  alan=0
+  invariant_kapisi.py                                        2150 B  alan=4
+  sema_analiz.py                                             2362 B  alan=3
+  sema_goster.py                                              699 B  alan=1
+  semantik_fark.py                                            794 B  alan=0
+  semantik_farki.py                                          1899 B  alan=0
+  semantik_son.py                                             573 B  alan=0
+  validate_lexemes_readonly.py                               5193 B  alan=3
+
+------------------------------------------------------------------------------
+2) CONCEPT ADAYLARI (concept ile ilgili scriptler)
+------------------------------------------------------------------------------
+  6_concept_ekle.py                                          1427 B  alan=0
+  _tmp_concept_normalize.py                                   609 B  alan=1
+  _tmp_kok_concept_v5.py                                      802 B  alan=3
+  _tmp_ne_concept.py                                          819 B  alan=2
+  asama9_concept.py                                           870 B  alan=2
+  auto_concept_dil.py                                         708 B  alan=1
+  cat_concept_ekle.py                                        9523 B  alan=2
+  concept_4_duzelt.py                                        1275 B  alan=1
+  concept_50_durum.py                                        2270 B  alan=4
+  concept_50_uygula.py                                       3521 B  alan=2
+  concept_50_uygula_2.py                                     3538 B  alan=2
+  concept_50_uygula_3.py                                     3642 B  alan=2
+  concept_50_uygula_4.py                                     3439 B  alan=2
+  concept_ata.py                                             2230 B  alan=4
+  concept_batch_olustur.py                                   1125 B  alan=3
+  concept_cerkesce.py                                         744 B  alan=1
+  concept_dagilim.py                                          532 B  alan=1
+  concept_dil.py                                              760 B  alan=3
+  concept_dil_kontrol.py                                     1080 B  alan=2
+  concept_dil_say.py                                         1507 B  alan=1
+  concept_display_ekle.py                                    1046 B  alan=0
+  concept_display_fix.py                                     1233 B  alan=0
+  concept_doldur.py                                          1352 B  alan=2
+  concept_doldur2.py                                         2356 B  alan=3
+  concept_durum_v2.py                                        1196 B  alan=1
+  concept_ekle.py                                            2397 B  alan=0
+  concept_eksik.py                                            600 B  alan=3
+  concept_eslestir.py                                        1303 B  alan=3
+  concept_fix.py                                             2898 B  alan=2
+  concept_full.py                                            2489 B  alan=0
+  concept_gercek.py                                           835 B  alan=1
+  concept_gloss.py                                           1695 B  alan=1
+  concept_hibrit.py                                          1874 B  alan=0
+  concept_kalite.py                                          1174 B  alan=1
+  concept_kanit_olustur.py                                   2130 B  alan=2
+  concept_kanit_olustur_v2.py                                2409 B  alan=2
+  concept_kategorize.py                                       754 B  alan=0
+  concept_kavram_kontrol.py                                   638 B  alan=1
+  concept_kontrol.py                                         1630 B  alan=4
+  concept_kontrol_v3.py                                       966 B  alan=1
+  concept_mapping_kontrol.py                                  502 B  alan=0
+  concept_miras_temizle.py                                   2052 B  alan=2
+  concept_norm_dil.py                                         817 B  alan=1
+  concept_norm_kontrol.py                                    1125 B  alan=2
+  concept_registry_uret.py                                   1133 B  alan=0
+  concept_son.py                                              663 B  alan=1
+  concept_string_guvenli.py                                  2229 B  alan=0
+  concept_temiz.py                                           1148 B  alan=3
+  concept_temizle.py                                         3424 B  alan=2
+  concept_tr_ekle.py                                         1419 B  alan=0
+  ... +25
+
+------------------------------------------------------------------------------
+3) ALAN ADI FREKANSI (en cok gecen)
+------------------------------------------------------------------------------
+
+  [form]  210 script
+      - 100_lexeme_gruplu.py
+      - 20_kelime_ekle.py
+      - 20_kelime_kontrol.py
+      - _126_kisa_duzelt.py
+      - _16_duzeltme.py
+      - _duzelt.py
+
+  [conceptId]  126 script
+      - 20_kelime_ekle.py
+      - 28_lexeme_duzelt.py
+      - _tmp_concept_normalize.py
+      - _tmp_kok_concept_v5.py
+      - _tmp_ne_concept.py
+      - agac_duzelt.py
+
+  [wordFamilyId]  71 script
+      - 100_lexeme_gruplu.py
+      - 20_kelime_ekle.py
+      - ady_kbd_duzelt.py
+      - agac_duzelt.py
+      - bagsiz_lexeme.py
+      - bze_duzelt.py
+
+  [rootIds]  59 script
+      - 20_kelime_ekle.py
+      - 26_duzeltme_son.py
+      - 36_lexeme_temizle.py
+      - _kok_kelime.py
+      - _tmp_kok_concept_v5.py
+      - _tmp_ne_concept.py
+
+  [translations]  31 script
+      - _126_kisa_duzelt.py
+      - _16_duzeltme.py
+      - _dict_duzelt.py
+      - _duzelt.py
+      - _duzelt2.py
+      - _duzeltme_ekle.py
+
+  [primaryMeaning]  10 script
+      - _kok_kelime.py
+      - faz11b_rtkhe_fix.py
+      - faz4_47kok_duzelt.py
+      - faz4_i6_fix.py
+      - faz4_kok5_duzelt.py
+      - faz4_kukhue_duzelt.py
+
+  [concept]  9 script
+      - concept_ata.py
+      - concept_dil.py
+      - concept_kontrol.py
+      - concept_tr_tum.py
+      - eksik_kelime_temiz.py
+      - fix_concepts.py
+
+  [lemma]  5 script
+      - fix_invalid_all.py
+      - Sozluk_Ara1.py
+      - Sozluk_Ara2.py
+      - Sozluk_Ara3.py
+      - Sozluk_Ara6.py
+
+  [Form]  4 script
+      - pos_duzelt.py
+      - sprint3q_concept_normalize_dryrun.py
+      - sprint_r2c_v17_suffix_rule.py
+      - sprint_r2c_v8_stem_suffix.py
+
+  [FORM]  3 script
+      - 100_lexeme_gruplu.py
+      - concept_ata.py
+      - veri_duzeltme_dryrun.py
+
+  [gloss]  1 script
+      - morph_duzelt.py
+
+  [CONCEPT]  1 script
+      - yeni_kelime.py
+
+------------------------------------------------------------------------------
+4) DOSYA YOLU FREKANSI
+------------------------------------------------------------------------------
+
+  [public/data/linguistic]  287 script
+      - 100_lexeme_gruplu.py
+      - 20_kelime_ekle.py
+      - 20_kelime_kontrol.py
+      - 26_duzeltme_son.py
+      - 28_lexeme_duzelt.py
+      - 36_lexeme_temizle.py
+
+  [lexemes.json]  272 script
+      - 100_lexeme_gruplu.py
+      - 20_kelime_ekle.py
+      - 20_kelime_kontrol.py
+      - 26_duzeltme_son.py
+      - 28_lexeme_duzelt.py
+      - 36_lexeme_temizle.py
+
+  [roots.json]  37 script
+      - 26_duzeltme_son.py
+      - 36_lexeme_temizle.py
+      - _kok_kelime.py
+      - conceptids_doldur.py
+      - eksik_kok_kelimeler.py
+      - faz10_invariant_analiz.py
+
+  [word_families.json]  19 script
+      - concept_miras_temizle.py
+      - faz10_invariant_analiz.py
+      - faz11b_lexeme_dagit.py
+      - faz4_47kok_duzelt.py
+      - faz4_grup4_fix2.py
+      - faz4_i10_duzelt.py
+
+  [public//data//linguistic]  12 script
+      - concept_50_uygula.py
+      - concept_50_uygula_2.py
+      - concept_50_uygula_3.py
+      - concept_50_uygula_4.py
+      - concept_wf.py
+      - gu_5_duzelt.py
+
+  [ROOTS.JSON]  1 script
+      - faz10_invariant_analiz.py
+
+  [public////data////linguistic]  1 script
+      - p4_turbopack_fix.py
+
+------------------------------------------------------------------------------
+5) FAZ GRUPLARI (en yeniden eskiye)
+------------------------------------------------------------------------------
+
+  FAZ 11b  (3 script)
+      - faz11b_lexeme_dagit.py  (3534B, alan=2)
+      - faz11b_rtkhe_fix.py  (1318B, alan=2)
+      - faz11b_8lex_fix.py  (1257B, alan=2)
+
+  FAZ 10  (3 script)
+      - faz10_invariant_analiz.py  (1840B, alan=2)
+      - faz10_i4_fix.py  (969B, alan=2)
+      - faz10_i9_fix.py  (946B, alan=1)
+
+  FAZ 8  (4 script)
+      - faz8_dr4_duzelt.py  (2973B, alan=2)
+      - faz8_dr3_duzelt.py  (1756B, alan=2)
+      - faz8_dining_room_duzelt.py  (1648B, alan=1)
+      - faz8_5lex_duzelt.py  (1218B, alan=2)
+
+  FAZ 7  (1 script)
+      - faz7_buyuk_duzelt.py  (2942B, alan=2)
+
+  FAZ 6  (2 script)
+      - faz6_i10_duzelt.py  (1191B, alan=1)
+      - faz6_i8_duzelt.py  (809B, alan=1)
+
+  FAZ 4  (18 script)
+      - faz4_47kok_duzelt.py  (3308B, alan=4)
+      - faz4_kukhue_duzelt.py  (3156B, alan=4)
+      - faz4_i6_fix.py  (3142B, alan=4)
+      - faz4_kue99_fix2.py  (2789B, alan=2)
+      - faz4_3kok_duzelt.py  (2221B, alan=2)
+      ... +13
+
+  FAZ 0  (5 script)
+      - faz0_birlesik_duzelt.py  (2949B, alan=1)
+      - faz0_dogu_sozluk.py  (2041B, alan=2)
+      - faz0_sozluk_listele.py  (1903B, alan=0)
+      - faz0_sozluk_kontrol.py  (1150B, alan=0)
+      - faz0_concept_kontrol.py  (589B, alan=2)

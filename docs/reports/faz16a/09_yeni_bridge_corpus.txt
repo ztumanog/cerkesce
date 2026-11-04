@@ -1,0 +1,45 @@
+==============================================================================
+YENI BRIDGE × CORPUS
+==============================================================================
+Bridge: morph_bridge_2026-11-03T19-39-55-611Z.json
+Toplam rows: 13553
+CORPUS concept'siz: 1586
+Eslesen: 319
+analyzerRoot dolu: 87
+
+Method dagilimi:
+  fallback: 232
+  exact: 47
+  partial: 40
+
+Ornekler:
+  L-CORPUS-00137  юсыф  analyzer=юсы  method=exact  flags=sozlukte_yok
+  L-CORPUS-00140  арти  analyzer=None  method=fallback  flags=fallback_tahmin
+  L-CORPUS-00143  израил  analyzer=зраил  method=partial  flags=sozlukte_yok
+  L-CORPUS-00173  мысыр  analyzer=None  method=fallback  flags=fallback_tahmin
+  L-CORPUS-00180  арэп  analyzer=None  method=fallback  flags=fallback_tahmin
+  L-CORPUS-00222  чристэн  analyzer=None  method=fallback  flags=fallback_tahmin,kok_yok
+  L-CORPUS-00223  члисэ  analyzer=None  method=fallback  flags=fallback_tahmin,kok_yok
+  L-CORPUS-00365  мусэ  analyzer=None  method=fallback  flags=fallback_tahmin,kok_yok
+  L-CORPUS-00373  исхьакъ  analyzer=схьакъ  method=partial  flags=sozlukte_yok
+  L-CORPUS-00469  истамбыл  analyzer=стамбыл  method=partial  flags=sozlukte_yok
+  L-CORPUS-00486  иордан  analyzer=ордан  method=partial  flags=sozlukte_yok
+  L-CORPUS-00499  арэу  analyzer=None  method=fallback  flags=fallback_tahmin
+  L-CORPUS-00524  у  analyzer=None  method=fallback  flags=fallback_tahmin,kok_yok
+  L-CORPUS-00548  дохутыр  analyzer=None  method=fallback  flags=fallback_tahmin,kok_yok
+  L-CORPUS-00583  нухь  analyzer=None  method=fallback  flags=fallback_tahmin,kok_yok
+  L-CORPUS-00869  чыристан  analyzer=None  method=fallback  flags=fallback_tahmin
+  L-CORPUS-00958  завод  analyzer=None  method=fallback  flags=fallback_tahmin,kok_yok
+  L-CORPUS-01074  мурид  analyzer=None  method=fallback  flags=fallback_tahmin,kok_yok
+  L-CORPUS-01119  анкара  analyzer=анкар  method=exact  flags=sozlukte_yok
+  L-CORPUS-01135  план  analyzer=None  method=fallback  flags=fallback_tahmin,kok_yok
+  L-CORPUS-01235  париж  analyzer=пари  method=exact  flags=sozlukte_yok
+  L-CORPUS-01239  школ  analyzer=None  method=fallback  flags=fallback_tahmin,kok_yok
+  L-CORPUS-01263  картоф  analyzer=карто  method=exact  flags=sozlukte_yok
+  L-CORPUS-01268  билет  analyzer=биле  method=exact  flags=sozlukte_yok
+  L-CORPUS-01277  метр  analyzer=None  method=fallback  flags=fallback_tahmin
+  L-CORPUS-01308  кавказ  analyzer=None  method=fallback  flags=fallback_tahmin,kok_yok
+  L-CORPUS-01324  н  analyzer=None  method=fallback  flags=fallback_tahmin,kok_yok
+  L-CORPUS-01340  юныс  analyzer=None  method=fallback  flags=fallback_tahmin,kok_yok
+  L-CORPUS-01352  светскэ  analyzer=None  method=fallback  flags=fallback_tahmin
+  L-CORPUS-01367  генерал  analyzer=None  method=fallback  flags=fallback_tahmin

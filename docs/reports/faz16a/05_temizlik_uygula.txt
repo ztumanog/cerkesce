@@ -1,0 +1,25 @@
+==============================================================================
+TEMIZLIK UYGULAMA RAPORU (Faz 16A-1a)
+==============================================================================
+Zaman: 2026-11-04T21:04:18
+Yedek: D:\projeler\Cerkesce\storage\snapshots\20261104_210417_faz16a1a-temizlik_lexemes.json
+Toplam lexeme: 28155
+
+------------------------------------------------------------------------------
+DEGISIKLIK SAYILARI
+------------------------------------------------------------------------------
+
+[translations.tr_normalize] 3385
+    L-PSYXHUE: 'DERE' -> 'dere'
+    L-KKHUXY: 'GEMİ' -> 'gemi̇'
+    L-KHUABZHU: 'HIZLI' -> 'hizli'
+
+[literalMeaning_normalize] 609
+    L-XUEDE: 'AYNI' -> 'ayni'
+    L-CORPUS-00006: 'EVET' -> 'evet'
+    L-CORPUS-00008: 'NIYE' -> 'niye'
+
+[literalMeaning_arapca_sil] 226
+    L-CORPUS-00031: 'وأيضاً، مرة أخرى' -> ''
+    L-CORPUS-00062: 'الأكثر، أكثر' -> ''
+    L-CORPUS-00126: 'اليوم، حالياً، الوقت الراهن' -> ''

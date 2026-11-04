@@ -1,0 +1,306 @@
+==============================================================================
+FAZ 16A — CONCEPTID EKSIK LEXEME ENVANTERI
+==============================================================================
+Zaman            : 2026-11-03T21:44:24
+Kaynak dosya     : D:\projeler\Cerkesce\public\data\linguistic\lexemes.json
+Kaynak secim     : canli
+Toplam lexeme    : 28155
+ConceptId eksik  : 21289
+ConceptId dolu   : 6866
+
+------------------------------------------------------------------------------
+ANLAM DAGILIMI (ilk 80 karakter)
+------------------------------------------------------------------------------
+ 21289  (anlamsiz)
+
+------------------------------------------------------------------------------
+KOK DAGILIMI (ilk 40)
+------------------------------------------------------------------------------
+ 11516  (root yok)
+  1892  R-1E
+   807  R-KHY
+   755  R-SHE2
+   563  R-NE
+   477  R-SHHYE
+   438  R-IN
+   398  R-PE
+   340  R-SH1E
+   320  R-GU
+   300  R-LHE
+   266  R-KHUMEN
+   264  R-SHE
+   261  R-SHY
+   235  R-HAE
+   176  R-ZHY
+   152  R-KHUE
+   138  R-PSY
+   126  R-BLE
+   125  R-F
+   118  R-FE
+   108  R-SHCH
+    92  R-SH1Y
+    80  R-PKHA
+    64  R-PSE
+    60  R-BZE
+    59  R-DZE
+    57  R-KUE
+    57  R-KIE_2
+    52  R-BGHA
+    50  R-LEZH
+    50  R-KIU
+    48  R-LHE1
+    47  R-BGHW
+    39  R-TKH
+    37  R-GHUSE
+    37  R-GHWALH
+    36  R-BG
+    33  R-MEZ
+    30  R-UES
+
+------------------------------------------------------------------------------
+AILE DAGILIMI (ilk 40)
+------------------------------------------------------------------------------
+ 12794  (aile yok)
+   448  WF-SHHA
+   403  WF-KHY
+   398  WF-PE
+   378  WF-SHA
+   299  WF-LHE
+   294  WF-1E
+   268  WF-KHUMEN
+   264  WF-SHE
+   260  WF-SHY
+   219  WF-IN
+   194  WF-LHA
+   165  WF-SH1E
+   159  WF-ZHY
+   158  WF-GE
+   148  WF-ZHA
+   138  WF-PSY
+   125  WF-F
+   108  WF-SHCH
+   107  WF-BLE
+   101  WF-A
+    96  WF-UNCLEAR
+    93  WF-P1E
+    85  WF-KY-
+    82  WF-PKHA
+    73  WF-BGHA
+    64  WF-PSE
+    64  WF-GUE-2
+    61  WF-PSALH
+    60  WF-BGHW
+    55  WF-FA
+    50  WF-K1E
+    48  WF-LEZH
+    43  WF-GHWALH
+    39  WF-NE
+    36  WF-GHUSE
+    34  WF-TS1E
+    34  WF-SHHYE
+    33  WF-KIE_2
+    33  WF-BG
+
+------------------------------------------------------------------------------
+ORNEKLER (ilk 200)
+------------------------------------------------------------------------------
+L-PE           пэ                     (anlamsiz)                               r=R-PE                   f=WF-PE
+L-PEKURSH      пэкъурш                (anlamsiz)                               r=R-PE                   f=WF-PE
+L-PERYT        пэрыт                  (anlamsiz)                               r=R-PE                   f=WF-PE
+L-PSYNE        псынэ                  (anlamsiz)                               r=R-PSY                  f=WF-PSY
+L-PSYXHUE      псыхъуэ                (anlamsiz)                               r=R-PSY                  f=WF-PSY
+L-PSYEJEH      псыежэх                (anlamsiz)                               r=R-PSY                  f=WF-PSY
+L-NE-LIGHT     нэф                    (anlamsiz)                               r=R-NE                   f=WF-NE
+L-NAPS         нэпсы                  (anlamsiz)                               r=R-NE                   f=WF-NE
+L-P1E          пӏэ                    (anlamsiz)                               r=R-P1E                  f=WF-P1E
+L-PETSURƏ      пэцӏурэ                (anlamsiz)                               r=R-PE                   f=WF-PE
+L-GHUSE        гъусэ                  (anlamsiz)                               r=R-GHUSE                f=WF-GHUSE
+L-BZE          бзэ                    (anlamsiz)                               r=R-BZE                  f=WF-BZE-LANGUAGE
+L-FYN          фын                    (anlamsiz)                               r=R-F                    f=WF-F
+L-FA           фа                     (anlamsiz)                               r=R-F                    f=WF-F
+L-SH1EFYQ1YN   щӏэфыкӏын              (anlamsiz)                               r=R-F                    f=WF-F
+L-1UFYQ1YN     ӏуфыкӏын               (anlamsiz)                               r=R-F                    f=WF-F
+L-FE           фэ                     (anlamsiz)                               r=R-FE                   f=WF-PRONOUN
+L-SH1YDAGHE    щӏыдагъэ               (anlamsiz)                               r=R-SH1Y                 f=WF-SH1Y
+L-TKHEK1UME    тхьэкӏумэ              (anlamsiz)                               r=R-TKHEK1UME            f=WF-TKHEK1UME
+L-K1YH         кӏыхь                  (anlamsiz)                               r=R-K1YH                 f=WF-K1YH
+L-DYGHU        дыгъу                  (anlamsiz)                               r=R-DYGHU                f=WF-DYGHU
+L-VY           вы                     (anlamsiz)                               r=R-VY                   f=WF-VY
+L-KHY          хы                     (anlamsiz)                               r=R-KHY                  f=WF-KHY
+L-KKHUHE       кхъуэ                  (anlamsiz)                               r=R-KKHUHE               f=WF-KKHUHE
+L-FO           фо                     (anlamsiz)                               r=R-FO                   f=WF-FO
+L-MAF1EGU      мафӏэгу                (anlamsiz)                               r=R-MAF1E                f=WF-MAF1E
+L-PSY          псы                    (anlamsiz)                               r=R-PSY                  f=WF-PSY
+L-PSE          псэ                    (anlamsiz)                               r=R-PSE                  f=WF-PSE
+L-PSEUN        псэун                  (anlamsiz)                               r=R-PSE                  f=WF-PSE
+L-PSEUSHHE     псэущхьэ               (anlamsiz)                               r=R-PSE                  f=WF-PSE
+L-PSENSHE      псэншэ                 (anlamsiz)                               r=R-PSE                  f=WF-PSE
+L-PSELHYQHU    псэлъыхъу              (anlamsiz)                               r=R-PSE                  f=WF-PSE
+L-PSEGHASHTE   псэгъащтэ              (anlamsiz)                               r=R-PSE                  f=WF-PSE
+L-BZEPSE       бзэпс                  (anlamsiz)                               r=R-BZE                  f=WF-BZE-STRING
+L-DZE          дзэ                    (anlamsiz)                               r=R-DZE                  f=WF-DZE
+L-PSYK1UY      псыкъуий               (anlamsiz)                               r=R-K1UY                 f=WF-K1UY
+L-PSYBABYSHCH  псыбабыщ               (anlamsiz)                               r=R-BABYSHCH             f=WF-BABYSHCH
+L-UES          уэс                    (anlamsiz)                               r=R-UES                  f=WF-UES
+L-BLE          блэ                    (anlamsiz)                               r=R-BLE                  f=WF-BLE
+L-K1UY         къуий                  (anlamsiz)                               r=R-K1UY                 f=WF-K1UY
+L-BZU          бзу                    (anlamsiz)                               r=R-BZU                  f=WF-BZU
+L-BABYSHCH     бабыщ                  (anlamsiz)                               r=R-BABYSHCH             f=WF-BABYSHCH
+L-DZHED        джэд                   (anlamsiz)                               r=R-DZHED                f=WF-DZHED
+L-PSY1UFE      псыӏуфэ                (anlamsiz)                               r=R-PSY                  f=WF-PSY
+L-PSYZHAPE     псыжапӏэ               (anlamsiz)                               r=R-PSY                  f=WF-PSY
+L-PSEXUN       псэхун                 (anlamsiz)                               r=R-PSE                  f=WF-PSE
+L-PSEUNYGHE    псэуныгъэ              (anlamsiz)                               r=R-PSE                  f=WF-PSE
+L-NESHXH       нэщхъ                  (anlamsiz)                               r=R-NE                   f=WF-NE
+L-NEPSEY       нэпсей                 (anlamsiz)                               r=R-NE                   f=WF-NE
+L-PSYZHY       Псыжь                  (anlamsiz)                               r=R-PSY                  f=WF-PSY
+L-KUEPSE       къуэпс                 (anlamsiz)                               r=R-KUE                  f=WF-KWE-VALLEY
+L-SHXUE        шхуэ                   (anlamsiz)                               r=R-SHXUE                f=WF-SHXUE
+L-BDZE         бдзэ                   (anlamsiz)                               r=R-BDZE                 f=WF-BDZE
+L-NYDZHE       ныджэ                  (anlamsiz)                               r=R-NYDZHE               f=WF-NYDZHE
+L-KKHUXY       кхъухь                 (anlamsiz)                               r=R-KKHUXY               f=WF-KKHUXY
+L-KHUABZHU     хуабжьу                (anlamsiz)                               r=R-KHUABZH              f=WF-KHUABZH
+L-KUEREDERE    къуэрэдэрэ             (anlamsiz)                               r=R-KUEREDERE            f=WF-KUEREDERE
+L-K1UESHYGHE   къуэшыгъэ              (anlamsiz)                               r=R-K1UASH               f=WF-K1UASH
+L-MAKHUESHHUE  махуэшхуэ              (anlamsiz)                               r=R-MAKHUE,R-SHXUE       f=WF-SHXUE
+L-SHYPHUE      шыпхъу                 (anlamsiz)                               r=R-SHYPHUE              f=WF-SHYPHUE
+L-ANESHYPHUE   анэшыпхъу              (anlamsiz)                               r=R-ANE,R-SHYPHUE        f=WF-ANE
+L-DADESHHUE    дадэшхуэ               (anlamsiz)                               r=R-DADE                 f=WF-DADE
+L-NE-BRIGHTNESS нэфынэ                 (anlamsiz)                               r=R-NE                   f=WF-NE
+L-NE-DAWN      нэхущ                  (anlamsiz)                               r=R-NE                   f=WF-NE
+L-NE-JOY       нэфӏэгуфӏэ             (anlamsiz)                               r=R-NE                   f=WF-NE
+L-GUGHAП1E     гугъапӏэ               (anlamsiz)                               r=R-GU                   f=WF-GUGH
+L-LHENYQO      лъэныкъо               (anlamsiz)                               r=R-LHE                  f=WF-LHE
+L-GUGHE        гугъэ                  (anlamsiz)                               r=R-GU                   f=WF-GUGH
+L-NEKHUE       нэху                   (anlamsiz)                               r=R-NE                   f=WF-NE
+L-PSEBYDE      псэбыдэ                (anlamsiz)                               r=R-PSE                  f=WF-PSE
+L-NEF1         нэфӏ                   (anlamsiz)                               r=R-NE                   f=-
+L-PSYK1ANT1E   псы кӏантӏэ            (anlamsiz)                               r=R-PSY                  f=WF-PSY
+L-ANEKUESHH    анэш                   (anlamsiz)                               r=R-ANE,R-K1UASH         f=WF-ANE
+L-KHUMEN       хъумэн                 (anlamsiz)                               r=R-KHUMEN               f=WF-KHUMEN
+L-KUEUKHUMEN   къэухъумэн             (anlamsiz)                               r=R-KHUMEN               f=WF-KHUMEN
+L-KUEKHUMEN    къэхъумэн              (anlamsiz)                               r=R-KHUMEN               f=WF-KHUMEN
+L-KKHEKHUME    кхъэхъумэ              (anlamsiz)                               r=R-KHUMEN               f=WF-KHUMEN
+L-NEK1U        нэкӏу                  (anlamsiz)                               r=R-NE                   f=WF-NE
+L-PQY          пкъы                   (anlamsiz)                               r=R-SHE2,R-SHE2          f=WF-SHA
+L-LHY          лъы                    (anlamsiz)                               r=R-LHE                  f=WF-LHE
+L-TSYDZHAN     цыджан                 (anlamsiz)                               r=R-TSY                  f=WF-TSY
+L-PQYGHUE      пкъыгъу                (anlamsiz)                               r=-                      f=WF-SHE2
+L-KHEZYRYPS    хьэзырыпс              (anlamsiz)                               r=R-HAE                  f=WF-HAE
+L-PSEKHUGHE    псэхугъуэ              (anlamsiz)                               r=R-PSE                  f=WF-PSE
+L-PSEKHUZHYN   псэхужын               (anlamsiz)                               r=R-PSE                  f=WF-PSE
+L-PSEKHUNYGHE  псэхуныгъэ             (anlamsiz)                               r=R-PSE                  f=WF-PSE
+L-PSEKHUP1E    псэхупӏэ               (anlamsiz)                               r=R-PSE                  f=WF-PSE
+L-MEZ          мэз                    (anlamsiz)                               r=R-MEZ                  f=WF-MEZ
+L-MEZYM        мэзым                  (anlamsiz)                               r=R-MEZ                  f=WF-MEZ
+L-MEZY         мэзы                   (anlamsiz)                               r=R-MEZ                  f=WF-MEZ
+L-LEZH         лэжь                   (anlamsiz)                               r=R-LEZH                 f=WF-LEZH
+L-LEZHEN       лэжьэн                 (anlamsiz)                               r=R-LEZH                 f=WF-LEZH
+L-LEZHYGHE     лэжьыгъэ               (anlamsiz)                               r=R-LEZH                 f=WF-LEZH
+L-LEZHAK1UE    лэжьакӏуэ              (anlamsiz)                               r=R-LEZH                 f=WF-LEZH
+L-LAZHE-N      лажьэ                  (anlamsiz)                               r=R-LAZH                 f=WF-LAZHE
+L-LAZHENSHE    лажьэншэ               (anlamsiz)                               r=R-LAZH                 f=WF-LAZHE
+L-LAZHEREY     лажьэрей               (anlamsiz)                               r=R-LAZH                 f=WF-LAZHE
+L-LAZHESHKHUE  лажьэшхуэ              (anlamsiz)                               r=R-LAZH                 f=WF-LAZHE
+L-SHHE         щэ                     (anlamsiz)                               r=R-SHE                  f=WF-SHE
+L-PSYUDZ       псыудз                 (anlamsiz)                               r=R-PSY                  f=WF-PSY
+L-MAKHUE       махуэ                  (anlamsiz)                               r=R-MAKHUE               f=WF-MAKHUE
+L-KUPXHE       къупщхьэ               (anlamsiz)                               r=R-SHHYE                f=WF-SHHA
+L-MERAK1UE     мэракӏуэ               (anlamsiz)                               r=R-MERAK1UE             f=WF-MER
+L-MELUAN       мелуан                 (anlamsiz)                               r=-                      f=WF-MEL
+L-DZA          дза                    (anlamsiz)                               r=R-DZA                  f=WF-DZA
+L-F1AMESHCH1   фӏамыщӏ                (anlamsiz)                               r=R-F                    f=WF-F
+L-MESHCHENE    мэщынэ                 (anlamsiz)                               r=R-NE                   f=WF-NE
+L-NA           на                     (anlamsiz)                               r=R-NE                   f=-
+L-NYBZHY       ныбжь                  (anlamsiz)                               r=R-NYBZHY               f=WF-NYBZHY
+L-PSHCHA       пща                    (anlamsiz)                               r=R-PSHCHY               f=WF-PSHCHY
+L-PSHYNE       пшынэ                  (anlamsiz)                               r=R-NE                   f=-
+L-KESHENEN     къэшынэн               (anlamsiz)                               r=R-NE                   f=WF-NE
+L-KUKHUE       къухьэ                 (anlamsiz)                               r=R-KUKHUE               f=WF-KUKHUE
+L-GHEPSHTEN    гъэпщтэн               (anlamsiz)                               r=-                      f=WF-GE
+L-GHESHENEN    гъэшынэн               (anlamsiz)                               r=R-NE                   f=WF-NE
+L-KHEKHEN      хэхэн                  (anlamsiz)                               r=R-KHY,R-KHY            f=WF-KHY
+L-ZHA          жьа                    (anlamsiz)                               r=R-ZHY                  f=WF-ZHY
+L-DEKHASHCHKHYN дэхьащхын              (anlamsiz)                               r=R-KHY,R-KHY            f=WF-KHY
+L-PREF-SI      си                     (anlamsiz)                               r=-                      f=WF-SI
+L-PREF-UI      уи                     (anlamsiz)                               r=-                      f=WF-UI
+L-AUE          ауэ                    (anlamsiz)                               r=-                      f=WF-AUE
+L-PREF-DI      ди                     (anlamsiz)                               r=R-DE                   f=WF-DE
+L-XUEDEU       хуэдэу                 (anlamsiz)                               r=R-SHE                  f=WF-SHE
+L-PREF-ZI      зи                     (anlamsiz)                               r=-                      f=WF-ZI
+L-PREF-FI      фи                     (anlamsiz)                               r=R-F                    f=WF-F
+L-1UEXU        ӏуэху                  (anlamsiz)                               r=R-1UEKHU               f=WF-1UEKHU
+L-XUEDE        хуэдэ                  (anlamsiz)                               r=R-SHE                  f=WF-SHE
+L-F1Y          фӏы                    (anlamsiz)                               r=R-FIY,R-FIY            f=WF-FIY
+L-DZHY         джы                    (anlamsiz)                               r=-                      f=WF-DZHY
+L-KQETEDZHYN   къэтэджын              (anlamsiz)                               r=R-KHUMEN               f=WF-KHUMEN
+L-T1YSYN       тӏысын                 (anlamsiz)                               r=R-TYS                  f=WF-TYS
+L-SHCHEXUN     щэхун                  (anlamsiz)                               r=R-SHE                  f=WF-SHE
+L-UXYN         ухын                   (anlamsiz)                               r=R-KHY,R-KHY            f=WF-KHY
+L-SYMADZHEXQUN сымаджэ хъун           (anlamsiz)                               r=R-SYM_1                f=WF-SYM_1
+L-PASHCHTYX'   пащтыхь                (anlamsiz)                               r=R-PASHCH               f=WF-PASHCH
+L-SYMADZHESHCH сымаджэщ               (anlamsiz)                               r=R-SYM_1                f=WF-SYM_1
+L-SYMADZHE     сымаджэ                (anlamsiz)                               r=R-SYM_1                f=WF-SYM_1
+L-SHENT        шэнт                   (anlamsiz)                               r=R-SHENT                f=WF-SHENT
+L-XUEM         хуэм                   (anlamsiz)                               r=R-SHE                  f=WF-SHE
+L-FY           фы                     (anlamsiz)                               r=R-F                    f=WF-F
+L-YAPE         япэ                    (anlamsiz)                               r=R-PE                   f=WF-PE
+L-ALYX'        алыхь                  (anlamsiz)                               r=R-LYG                  f=WF-LYG
+L-OREDZHY1EN   орэд жыӏэн             (anlamsiz)                               r=R-1E,R-1E              f=WF-ZHY1E
+L-GHEX'EZYRYN  гъэхьэзырын            (anlamsiz)                               r=-                      f=WF-GE
+L-KQYCHEN      къычэн                 (anlamsiz)                               r=R-SHHYE                f=WF-SHHA
+L-DETYN        дэтын                  (anlamsiz)                               r=R-NE                   f=-
+L-KQYZE1UXYN   къызэӏухын             (anlamsiz)                               r=R-KHY,R-KHY            f=WF-KHY
+L-GHESHXYN     гъэшхын                (anlamsiz)                               r=R-KHY,R-KHY            f=WF-KHY
+L-AKQYLYNSHE   акъылыншэ              (anlamsiz)                               r=R-AK_1                 f=WF-AK_1
+L-UGHURLY      угъурлы                (anlamsiz)                               r=R-UG                   f=WF-UG
+L-UGHURSYZ     угъурсыз               (anlamsiz)                               r=R-UG                   f=WF-UG
+L-KQULEY       къулей                 (anlamsiz)                               r=R-KU                   f=WF-KU
+L-KQULEYSYZ    къулейсыз              (anlamsiz)                               r=R-KU                   f=WF-KU
+L-ZHYZH'EU     жыжьэу                 (anlamsiz)                               r=-                      f=WF-ZHA
+L-KQUAE        къуае                  (anlamsiz)                               r=R-KUAYE                f=WF-ADYGE-DIALECT
+L-POMIDOR      помидор                (anlamsiz)                               r=-                      f=-
+L-SHEXU        шэху                   (anlamsiz)                               r=R-SHE2,R-SHE2          f=WF-SHA
+L-ABDZH        абдж                   (anlamsiz)                               r=R-ABD                  f=WF-ABD
+L-GHUEGUSHCHX'E гъуэгущхьэ             (anlamsiz)                               r=R-SHHYE                f=WF-SHHA
+L-BGYSHCHX'E   бгыщхьэ                (anlamsiz)                               r=R-SHHYE                f=WF-SHHA
+L-MEZLHAPE     мэз лъапэ              (anlamsiz)                               r=R-MEZ                  f=WF-MEZ
+L-PSHAGHUE     пшагъуэ                (anlamsiz)                               r=R-PE                   f=WF-PE
+L-PESHCHXQYN   пэщхъын                (anlamsiz)                               r=R-PE                   f=WF-PE
+L-GHUSHCH1     гъущӏ                  (anlamsiz)                               r=R-GHWSCH               f=WF-GHWSCH
+L-GHUSHCH1GHUEGU гъущӏгъуэгу            (anlamsiz)                               r=R-GHWSCH               f=WF-GHWSCH
+L-ZHESHCHYBG   жэщыбг                 (anlamsiz)                               r=R-SHCH                 f=WF-SHCH
+L-ET1UANE      етӏуанэ                (anlamsiz)                               r=R-NE                   f=WF-NE
+L-ESHCH1ANE    ещӏанэ                 (anlamsiz)                               r=R-NE                   f=WF-NE
+L-PSHYNALHE    пшыналъэ               (anlamsiz)                               r=R-PSHYNALHE            f=WF-LHA
+L-SHCHESHCH1   щэщӏ                   (anlamsiz)                               r=R-SHE                  f=WF-SHE
+L-SHCHENYKQUE  щэныкъуэ               (anlamsiz)                               r=R-SHE                  f=WF-SHE
+L-GHEPTS1YN    гъэпцӏын               (anlamsiz)                               r=R-P1C1                 f=WF-P1C1
+L-ZYLHEFYN     зылъэфын               (anlamsiz)                               r=R-LHEF                 f=WF-LHA
+L-KQEUVY1EN    къэувыӏэн              (anlamsiz)                               r=R-1E,R-1E              f=WF-1EN
+L-PSALHEETYN   псалъэ етын            (anlamsiz)                               r=R-PSA                  f=WF-PSA
+L-DEGUSHY1EN   дэгушыӏэн              (anlamsiz)                               r=R-GU                   f=WF-GUSHY1E
+L-ZYDEK1YN     зыдэкӏын               (anlamsiz)                               r=R-KHY,R-KHY            f=WF-KHY
+L-SHECHKQYTEX'EN шэч къытехьэн          (anlamsiz)                               r=R-SHE2,R-SHE2          f=WF-SHA
+L-PSYXQUEZH'   псыхъуэжь              (anlamsiz)                               r=R-PSY                  f=WF-PSY
+L-XYT1YGU      хытӏыгу                (anlamsiz)                               r=R-KHY,R-KHY            f=WF-KHY
+L-XADEXEK1     хадэхэкӏ               (anlamsiz)                               r=R-KHAD                 f=WF-KHAD
+L-KQEXQUN      къэхъун                (anlamsiz)                               r=R-KHUMEN               f=WF-KHUMEN
+L-SHY1EN       шыӏэн                  (anlamsiz)                               r=R-SHY                  f=WF-SHY
+L-NEF1EGUF1AGHE Нэфӏэгуфӏагъэ          (anlamsiz)                               r=R-GU                   f=WF-GUF1E
+L-D093D183D0B1 Губжь                  (anlamsiz)                               r=R-GU                   f=WF-GUBZH
+L-BAMP1E       Бампӏэ                 (anlamsiz)                               r=R-1E,R-1E              f=WF-P1E
+L-ZEGUEP       Зэгуэп                 (anlamsiz)                               r=R-GU                   f=WF-GUE-2
+L-EZESHYNYGHE  Езэшыныгъэ             (anlamsiz)                               r=R-SHY                  f=WF-SHY
+L-KQEGUF1EN    Къэгуфӏэн              (anlamsiz)                               r=R-GU                   f=WF-GUF1E
+L-KQENESHCHXQYF1EN Къэнэщхъыфӏэн          (anlamsiz)                               r=R-NE                   f=WF-NE
+L-KQENESHCHXQEIN Къэнэщхъеин            (anlamsiz)                               r=R-NE                   f=WF-NE
+L-NESHCHXQEIN  Нэщхъеин               (anlamsiz)                               r=R-IN,R-IN              f=WF-IN
+L-ZYGHEGUSEN   Зыгъэгусэн             (anlamsiz)                               r=R-GU                   f=WF-GUE-2
+L-KQETSYBYRYBYN Къэцыбырыбын           (anlamsiz)                               r=R-KHUMEN               f=WF-KHUMEN
+L-XUEZESHYN    Хуезэшын               (anlamsiz)                               r=R-SHY                  f=WF-SHY
+L-P1C1         пцӏ                    (anlamsiz)                               r=R-P1C1                 f=WF-P1C1
+L-ZE           зэ                     (anlamsiz)                               r=R-ZE                   f=WF-ZE
+L-KUANDZH      къандж                 (anlamsiz)                               r=R-KUANDZH              f=WF-KUANDZH
+L-KESHCHEN     къэшын                 (anlamsiz)                               r=R-SHY                  f=WF-SHY
+L-K1UE         кӏуэ                   (anlamsiz)                               r=R-KWA                  f=WF-KUE-GO

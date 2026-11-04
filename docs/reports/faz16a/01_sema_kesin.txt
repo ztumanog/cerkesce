@@ -1,0 +1,95 @@
+==============================================================================
+LEXEMES SEMA KESIN ANALIZ
+==============================================================================
+Toplam: 28155
+
+WF                        dolu=   112  bos=     0  null=   112  ornek="WF-NE-ANATOMY"
+_needs_translation        dolu=    19  bos=     0  null=     0  ornek=true
+adygheEquivalent          dolu=     1  bos=     0  null=     0  ornek="шъугъэ"
+aliases                   dolu=    36  bos=     0  null=     0  ornek=["L-NARTYHU"]
+alternateMeanings         dolu=     2  bos=     0  null=     0  ornek=[{"pos": "particle", "meaning": "pekiştirme edatı"
+audioAuthor               dolu=     1  bos=     0  null=     0  ornek="Rhdkabardian"
+audioDuration             dolu=     1  bos=     0  null=     0  ornek="1.2s"
+audioFile                 dolu=     6  bos=     0  null=     0  ornek="https://upload.wikimedia.org/wikipedia/commons/a/
+audioLicense              dolu=     1  bos=     0  null=     0  ornek="CC BY-SA 4.0"
+audioSource               dolu=     1  bos=     0  null=     0  ornek="kbd.wiktionary.org"
+audioStatus               dolu=     6  bos=     0  null=     0  ornek="AVAILABLE"
+audioUrl                  dolu=  1841  bos=     0  null=     0  ornek="https://upload.wikimedia.org/wikipedia/commons/8/
+compounds                 dolu=     1  bos=     0  null=     0  ornek=[{"form": "псэ быдэ", "meaning": "dayanikli, sagla
+conceptId                 dolu=  6866  bos=   536  null= 20753  ornek="JOY"
+conceptIdGecersiz         dolu=     9  bos=     0  null=     0  ornek="Anatomy / Body Part"
+conceptIds                dolu=    29  bos=     0  null=     6  ornek=["UNDERSTAND", "AGREE"]
+conceptNorm               dolu= 12671  bos=     0  null=     0  ornek="QUALITY_CLEAR"
+corpusEvidence            dolu=    27  bos=     0  null=     0  ornek={"documents": 25, "forms": [{"form": "губж", "mean
+corpusFrequency           dolu= 13291  bos=     0  null=     0  ornek=17
+corpusFrequencyAdy        dolu=   163  bos=     0  null=     0  ornek=12
+corpusFrequencyKbd        dolu=   164  bos=     0  null=     0  ornek=17
+derivation                dolu= 10446  bos=     0  null=  1529  ornek={"rule": "root", "components": ["гу"]}
+derivedForms              dolu=     1  bos=     0  null=     0  ornek=[{"form": "ухъумэн", "meaning": "esirgemek", "sour
+derivedWords              dolu=     1  bos=     0  null=     0  ornek=[{"meaning": "çürüklük", "form": "фахуэ"}, {"meani
+dialect                   dolu=  2055  bos=     0  null=    19  ornek="KBD"
+dialectNote               dolu=  1815  bos=     0  null=     0  ornek="Kbd kaynakli"
+dialectVariants           dolu= 12824  bos=     0  null=     6  ornek={"adyghe": "гушӀо", "kabardian": "гуфӀэ"}
+dialectVariantsSource     dolu=     2  bos=     0  null=     0  ornek={"adyghe": "", "kabardian": "1.Ady-Ady_AP.json (Ap
+dictionaryEvidence        dolu=  1120  bos=     0  null=     0  ornek=["sukunov-1998"]
+eastForm                  dolu=     1  bos=     0  null=     0  ornek="дыгъуасэ"
+entry_type                dolu=     8  bos=     0  null=     0  ornek="lemma"
+etymology                 dolu=    19  bos=     0  null=     0  ornek="[п] + -э- + [цӏур] + -э"
+etymologyType             dolu= 28107  bos=     0  null=     0  ornek="native"
+examples                  dolu= 15124  bos=    25  null=     0  ornek=["Лацэ Къамбот щыӀущӀэжым, гуфӀэр и гум щыз къэхъу
+examplesCount             dolu=     3  bos=     0  null=     0  ornek=10
+examplesSource            dolu=   622  bos=     0  null=     0  ornek="1.Ady-Ady_AP.json (◊)"
+examples_arsiv            dolu=    47  bos=     0  null=     0  ornek=["лъэгу"]
+form                      dolu= 28155  bos=     0  null=     0  ornek="гуфӏэ"
+frequency                 dolu=   824  bos=     0  null=     0  ornek=55
+homonymGroupId            dolu=   363  bos=     0  null=     0  ornek="HG-Ӏэгу"
+homonymIndex              dolu=   363  bos=     0  null=     0  ornek=1
+id                        dolu= 28155  bos=     0  null=     0  ornek="L-GUF1E"
+idiomCount                dolu=     1  bos=     0  null=     0  ornek=80
+idioms                    dolu=     5  bos=     0  null=     0  ornek=["ГущӀэм зигъэзэн → ruhunun derinligine kadar endi
+ipa                       dolu= 28123  bos=    24  null=     0  ornek="/'gʷǝfʹɐ/"
+ipaSource                 dolu=  1640  bos=     0  null=     1  ornek="root-derived"
+isExempt                  dolu=     5  bos=     0  null=     0  ornek=true
+isLemma                   dolu= 13371  bos=     0  null=     0  ornek=true
+kaynakSayisi              dolu=    12  bos=     0  null=     0  ornek=23
+kesisen                   dolu=   112  bos=     0  null=     0  ornek="KOK_DISI"
+language                  dolu=     6  bos=     0  null=     0  ornek="ru"
+lastEditor                dolu=     2  bos=     0  null=     0  ornek="admin"
+lastReason                dolu=     2  bos=     0  null=     0  ornek="küçürk harfe çevridi "
+latinName                 dolu=     9  bos=     0  null=     0  ornek="Cucurbita maxima Duch."
+layer                     dolu=     2  bos=     0  null=     0  ornek="PhraseLayer"
+lemmaId                   dolu=     4  bos=     0  null=     0  ornek="LEMMA-BZE"
+literalMeaning            dolu= 14016  bos=  1818  null=     0  ornek="sevgi, mutluluk"
+literalMeaningAdy         dolu=  2114  bos=     0  null=     0  ornek="Именительнэ падежым иту ещанэ щхьэр къэзыгъэлъагъ
+literalMeaningSource      dolu=  3886  bos=     0  null=     0  ornek="translations.ru->tr (orta)"
+meaning                   dolu= 28123  bos=     0  null=     0  ornek="радость / Гуапагъэ, нэжэгужагъэ, нэщхъыфӀагъэ гуэ
+notes                     dolu= 27327  bos=   176  null=     0  ornek="S2-005 T6 action test | conceptId aile mirasi old
+oldFamily                 dolu=   852  bos=     0  null=     0  ornek="WF-1E"
+partOfSpeech              dolu= 26473  bos=   297  null=     0  ornek="noun"
+pos                       dolu=  2113  bos=     0  null=     0  ornek="прил"
+pos_reason                dolu=    26  bos=     0  null=     0  ornek="Sozlukte POS bulunamadi, manuel inceleme gerekli"
+pos_status                dolu=    26  bos=     0  null=     0  ornek="PENDING"
+proverbs                  dolu=     1  bos=     0  null=     0  ornek=["Гум и щӀасэр псэм и гуапэщ.", "Псэ зиӀэм ажал иӀ
+root                      dolu= 12182  bos=     0  null=    36  ornek="гу"
+rootForm                  dolu=  2271  bos=     0  null=     0  ornek="гу"
+rootId                    dolu=   770  bos=   390  null=     0  ornek="R-GUSHE"
+rootIds                   dolu= 15902  bos= 10700  null=     0  ornek=["R-GU"]
+senseNumber               dolu=   127  bos=     0  null=     0  ornek=2
+senses                    dolu=    17  bos=     0  null=     0  ornek=[{"senseId": 1, "gloss": "milk", "tr": "süt", "ru"
+source                    dolu=    52  bos=     0  null=     0  ornek="Manuel Split (Sprint R)"
+sources                   dolu=     6  bos=     0  null=     0  ornek=["Jonty Yamisha", "Kardanov 1957"]
+status                    dolu=  1864  bos=     0  null=     0  ornek="rare"
+subConceptId              dolu=  2244  bos=   116  null=     0  ornek="EMOTION"
+synonyms                  dolu=     1  bos=     0  null=     0  ornek=["мыбыдэ", "пцӀы", "шкӀумпӀ"]
+synthetic_reason          dolu=  1447  bos=     0  null=     0  ornek="L-AUTO otomatik uretim, sozlukte yok, concept yok
+tags                      dolu=    36  bos=     0  null=     0  ornek=["WF-SHHXHEL", "MILL", "noun"]
+taxonomyFamily            dolu=  2276  bos=    93  null=     0  ornek="Duygu & Zihin"
+tr_status                 dolu=   272  bos=     0  null=     0  ornek="fixed_manual"
+translationSource         dolu=    40  bos=     0  null=     0  ornek="literalMeaning-derived"
+translations              dolu= 28113  bos=     0  null=     0  ornek={"tr": "sevinç, mutluluk", "en": "joy, happiness, 
+uncertain_reason          dolu=     1  bos=     0  null=     0  ornek="Sozlukte kesik metin, dolmen/anlam dogrulanamadi"
+updatedAt                 dolu=     2  bos=     0  null=     0  ornek="2026-10-25T00:02:40.874Z"
+variant                   dolu=     1  bos=     0  null=     0  ornek="пэтӀей"
+verified                  dolu=    12  bos=     0  null=     0  ornek=true
+wordFamily                dolu=  8876  bos=     0  null=   854  ornek={"id": "WF-GU", "lexemeIds": ["KAV-ГУАВА", "KAV-ГУ
+wordFamilyId              dolu= 14602  bos=     0  null=   890  ornek="WF-GU"

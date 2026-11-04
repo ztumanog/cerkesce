@@ -1,0 +1,61 @@
+BUYUK HARF KAYNAK ANALIZI
+==============================================================================
+
+[translations.tr] 3385 adet
+    L-PSYXHUE: DERE
+    L-KKHUXY: GEMİ
+    L-KHUABZHU: HIZLI
+    L-ANESHYPHUE: TEYZE
+    L-XUEDEU: AYNI
+    L-XUEDE: AYNI
+    L-CORPUS-00009: KALIN
+    L-CORPUS-00016: ITHAF
+    L-CORPUS-00032: CİLT
+    L-CORPUS-00035: ÂCİZ
+
+[meaning] 3150 adet
+    L-PSYXHUE: DERE
+    L-KHUABZHU: HIZLI
+    L-ANESHYPHUE: TEYZE
+    L-XUEDEU: AYNI
+    L-XUEDE: AYNI
+    L-CORPUS-00009: KALIN
+    L-CORPUS-00032: CİLT
+    L-CORPUS-00035: ÂCİZ
+    L-CORPUS-00040: BUNCA
+    L-CORPUS-00044: ODUR
+
+[literalMeaning] 835 adet
+    L-XUEDE: AYNI
+    L-CORPUS-00006: EVET
+    L-CORPUS-00008: NIYE
+    L-CORPUS-00009: AZINLIK
+    L-CORPUS-00031: وأيضاً، مرة أخرى
+    L-CORPUS-00044: ODUR
+    L-CORPUS-00062: الأكثر، أكثر
+    L-CORPUS-00074: ÖYLEKI
+    L-CORPUS-00084: ARASINDA
+    L-CORPUS-00089: BAMBAŞKA
+
+
+NOTES DAGILIMI
+   648  KBD sozluk: 1.Ady-Ady_AP.json
+   235  KBD sozluk: 1.Ady-Ady_AP.json | conceptId aile mirasi oldugu
+   117  Verified (freq: 5, 1.Ady-Ady_AP) [ANIMAL etiketinden cikaril
+   105  Verified (freq: 6, 1.Ady-Ady_AP) [ANIMAL etiketinden cikaril
+    74  Verified (freq: 7, 1.Ady-Ady_AP) [ANIMAL etiketinden cikaril
+    60  KBD sozluk: 1.Ady-Ady_AP.json | conceptId=EAT_UNDER miras ol
+    59  Verified (freq: 5, 0.Ady-Ady_AIG)
+    50  Corpus v1.0 (freq: 8, lang: kbd, source: 1.Ady-Ady_AP) [ANIM
+    49  Verified (freq: 6, 0.Ady-Ady_AIG)
+    44  Verified (freq: 7, 0.Ady-Ady_AIG)
+    44  KBD sozluk: 25.Rus-Ady_UASP.json
+    40  KBD sozluk: 1.Ady-Ady_AP.json | conceptId=THOUSAND miras old
+    39  Corpus v1.0 (freq: 9, lang: kbd, source: 1.Ady-Ady_AP) [ANIM
+    36  Corpus v1.0 (freq: 10, lang: kbd, source: 1.Ady-Ady_AP) [ANI
+    30  Corpus v1.0 (freq: 11, lang: kbd, source: 1.Ady-Ady_AP) [ANI
+    24  Corpus v1.0 (freq: 13, lang: kbd, source: 1.Ady-Ady_AP) [ANI
+    23  Corpus v1.0 (freq: 12, lang: kbd, source: 1.Ady-Ady_AP) [ANI
+    22  KBD sozluk: 1.Ady-Ady_AP.json | conceptId=CRADLE semantik co
+    19  Corpus v1.0 (freq: 14, lang: kbd, source: 1.Ady-Ady_AP) [ANI
+    19  Verified (freq: 6, 2.Ady-Ara)

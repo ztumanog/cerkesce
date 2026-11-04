@@ -1,0 +1,234 @@
+==============================================================================
+FAZ 16A — CONCEPT ENVANTERI v2
+==============================================================================
+Zaman                : 2026-11-05T00:02:47
+Toplam lexeme        : 28155
+Concept DOLU         : 19307  (68%)
+Concept EKSIK        : 8848  (31%)
+
+------------------------------------------------------------------------------
+EKSIKLERDE ANLAM DAGILIMI (ilk 50)
+------------------------------------------------------------------------------
+   211  (anlamsiz)
+    54  ahbab
+    44  ayak
+    43  bandirmak
+    29  Vurmak
+    26  başlık
+    24  vurmak, çalmak
+    24  gitmek
+    24  peki
+    23  bi̇rli̇kte
+    22  kısım
+    20  kadin
+    18  gözükmek
+    17  düşmek 1
+    16  gelmek
+    16  burasi
+    15  âdi̇l
+    15  (sadece gönderme)
+    15  Kırmak
+    14  akitmak
+    14  dikkat, ilgi
+    14  çeşit
+    14  tekrar
+    13  bardakeri̇ği̇
+    13  düzeltmek
+    13  götürebi̇lmek
+    13  Koşmak
+    13  küfretmek
+    12  çekmek, istemek
+    12  dağitmak
+    12  bağirmak
+    12  -siz
+    12  obsolete. cm.
+    12  yaşamak
+    11  ova
+    11  atlamak
+    11  eklemek
+    11  canlanmak
+    10  çekmek
+    10  aydi̇nlanmak 2
+    10  dönüşlü
+    10  kasmak
+    10  endişelenmek
+    10  büyücü
+    10  Oturmak
+     9  kuyu
+     9  nasil
+     9  Sağlam
+     9  araştirmak
+     9  donmak
+
+------------------------------------------------------------------------------
+EKSIKLERDE KOK DAGILIMI (ilk 30)
+------------------------------------------------------------------------------
+  2599  (root yok)
+  1177  R-1E
+   804  R-KHY
+   748  R-SHE2
+   428  R-IN
+   382  R-NE
+   277  R-PE
+   273  R-SHHYE
+   263  R-SHE
+   253  R-KHUMEN
+   248  R-GU
+   244  R-SHY
+   180  R-SH1E
+   154  R-LHE
+   148  R-ZHY
+   123  R-F
+   111  R-BLE
+   108  R-SHCH
+   108  R-FE
+    55  R-PSY
+    47  R-LHE1
+    34  R-LEZH
+    34  R-BG
+    33  R-GHUSE
+    32  R-KIE_2
+    30  R-HAE
+    29  R-KUE
+    28  R-DZE
+    24  R-ZAU
+    23  R-BZE
+
+------------------------------------------------------------------------------
+EKSIKLERDE AILE DAGILIMI (ilk 30)
+------------------------------------------------------------------------------
+  2551  (aile yok)
+   402  WF-KHY
+   374  WF-SHA
+   277  WF-PE
+   273  WF-SHHA
+   263  WF-SHE
+   253  WF-KHUMEN
+   243  WF-SHY
+   214  WF-IN
+   189  WF-LHA
+   162  WF-SH1E
+   158  WF-GE
+   154  WF-LHE
+   148  WF-ZHA
+   147  WF-ZHY
+   123  WF-F
+   108  WF-SHCH
+   106  WF-BLE
+    96  WF-UNCLEAR
+    91  WF-P1E
+    85  WF-KY-
+    55  WF-PSY
+    54  WF-GUE-2
+    54  WF-FA
+    50  WF-K1E
+    42  WF-1E
+    34  WF-TS1E
+    33  WF-GHUSE
+    33  WF-ZEK-
+    32  WF-LEZH
+
+------------------------------------------------------------------------------
+ONCELIKLI EKSIKLER (corpusFrequency'e gore ilk 100)
+------------------------------------------------------------------------------
+  freq  id             form                   tr_anlam                      
+ 10183  L-CORPUS-00000 ащ                     O / Ona / Onun (Ergatif)      
+  4768  L-PREF-SI      си                     Benim (1. t. şahıs iyelik)    
+  4320  L-PREF-UI      уи                     Senin (2. t. şahıs iyelik)    
+  3853  L-CORPUS-00001 ау                     Ama, fakat, lakin             
+  2978  L-AUE          ауэ                    Ama, lakin, aksi halde        
+  2873  L-CORPUS-00005 тэ                     Nerede / Nereye?              
+  2865  L-CORPUS-00006 ары                    Evet, öyledir                 
+  2666  L-PREF-ZI      зи                     Kendi / Kimin ki (İyelik)     
+  2484  L-KHUN-3       хъун                   olmak, gerçekleşmek           
+  2423  L-PREF-DI      ди                     bizim                         
+  2322  L-CORPUS-00008 сыда                   Niye, neden, niçin?           
+  2251  L-XUEDEU       хуэдэу                 ayni                          
+  1912  L-CORPUS2-00008 зэкӏэ                  dusty                         
+  1569  L-CORPUS-00009 нахь                   kalin                         
+  1491  L-CORPUS-00010 ежь                    Nakarat / Vokal eşlik         
+  1414  L-PREF-FI      фи                     sizin (çoğul iyelik)          
+  1350  L-PSY          псы                    su, nehir                     
+  1054  L-XUEDE        хуэдэ                  ayni                          
+  1018  L-CORPUS-00015 хъуащ                  oldu, gerçekleşti, tamamland  
+   994  L-CORPUS-00016 зыгуэрым               ithaf                         
+   927  L-CORPUS-00018 сыд                    Ne?                           
+   866  L-DZHY         джы                    Şimdi (Batı Adıgece)          
+   839  L-CORPUS-00020 макъ                   shooting                      
+   739  L-CORPUS2-00032 фӏэщ                   ciddi olarak (şakasız)        
+   734  L-CORPUS-00029 мыр                    Bu, işte bu                   
+   713  L-CORPUS-00031 джыри                  Son                           
+   713  L-CORPUS2-00035 ӏоф                    Havan                         
+   704  L-CORPUS-00032 том                    ci̇lt                         
+   685  L-CORPUS-00035 хъугъэ                 âci̇z                         
+   683  L-YAPE         япэ                    önce, ilk                     
+   639  L-CORPUS-00040 мыщ                    bunca                         
+   627  L-CORPUS-00041 фае                    beyaz                         
+   617  L-ZE           зэ                     bir                           
+   614  L-CORPUS-00044 аращ                   odur                          
+   597  L-CORPUS-00049 арати                  odur                          
+   591  L-CORPUS-00052 джащыгъум              o zaman                       
+   578  L-CORPUS2-00052 фӏэщхъуныгъэ           arşibişop                     
+   553  L-CORPUS-00060 джащ                   ayniyla                       
+   533  L-CORPUS-00062 анахь                  Tavan                         
+   510  L-CORPUS-00064 дэнэ                   tape                          
+   500  L-CORPUS-00068 аращи                  odur                          
+   496  L-KHUABZHU     хуабжьу                hizli                         
+   453  L-CORPUS-00073 къэс                   her ne                        
+   432  L-CORPUS-00074 арыти                  öyleki                        
+   429  L-CORPUS-00075 хъуа                   ripe                          
+   387  L-CORPUS-00084 ящыщ                   arasinda                      
+   383  L-CORPUS2-00093 тӏэкӏу                 az                            
+   380  L-CORPUS-00089 дэд                    bambaşka                      
+   379  L-LEZHYGHE     лэжьыгъэ               Tane                          
+   366  L-CORPUS-00093 мис                    i̇şte                         
+   365  L-CORPUS-00094 бэ                     Oğul                          
+   346  L-CORPUS-00101 хъунущ                 normal                        
+   340  L-CORPUS-00102 джаущтэу               öylece, o şekilde, aynen öyl  
+   338  L-CORPUS-00104 хъу                    cinsel                        
+   334  L-CORPUS-00107 етын                   Vermek                        
+   332  L-CORPUS-00108 ащыгъум                o halde                       
+   328  L-CORPUS-00109 дэтхэнэ                herhangi̇                     
+   326  L-CORPUS2-00129 ӏыхьэ                  parça, pay, hisse             
+   324  L-CORPUS-00111 нахьи                  babacil                       
+   322  L-CORPUS2-00133 жиӏэу                  diye                          
+   321  L-CORPUS-00113 зыпари                 Sıfır                         
+   320  L-CORPUS-00114 хэта                   cefakeş                       
+   307  L-CORPUS-00119 ит                     içinde duruyor, bulunuyor     
+   303  L-DZE          дзэ                    diş                           
+   293  L-CORPUS-00123 мыпхуэдэу              odur                          
+   290  L-CORPUS-00126 непэ                   bugün                         
+   289  L-CORPUS-00127 мырэущтэу              böylece, şöyle, bu şekilde    
+   284  L-CORPUS-00129 макъэ                  büyük; buyuk                  
+   271  L-CORPUS-00137 юсыф                   yusuf                         
+   270  L-CORPUS-00138 зэрыщыту               tamamen                       
+   268  L-CORPUS-00140 арти                   odur                          
+   267  L-CORPUS-00142 закъуэ                 tek, yalnız                   
+   266  L-CORPUS-00143 израил                 şekel                         
+   263  L-CORPUS2-00190 зэкӏэри                tüm                           
+   259  L-CORPUS-00145 ти                     our                           
+   254  L-CORPUS-00150 тет                    kocanin babasi                
+   254  L-CORPUS-00151 зэхъум                 yaklaşırken, olduğu zaman     
+   250  L-CORPUS-00152 бэрэ                   fickle                        
+   249  L-LAZHE-N      лажьэ                  adalet, hakkaniyet            
+   249  L-CORPUS-00153 хъунукъым              olmaz, olmayacak, mümkün değ  
+   249  L-CORPUS-00154 джары                  hah                           
+   247  L-CORPUS-00157 хъущт                  diyet                         
+   244  L-CORPUS-00159 фэд                    benzeş                        
+   239  L-CORPUS-00162 лей                    fazla                         
+   238  L-CORPUS-00163 сыдэущтэу              nasil                         
+   232  L-CORPUS2-00222 иӏэщ                   menfaat                       
+   230  L-ET1UANE      етӏуанэ                ikinci olarak                 
+   229  L-CORPUS-00168 зэгорэм                bir zamanlar                  
+   228  L-CORPUS-00169 уеблэмэ                düz                           
+   219  L-CORPUS2-00242 иӏэ                    onun var, sahip               
+   218  L-CORPUS-00173 мысыр                  kadin                         
+   215  L-CORPUS-00176 хымэ                   gurbet                        
+   212  L-CORPUS-00177 хуэдиз                 kadar                         
+   212  L-CORPUS-00178 хуэдэщ                 çarşaf                        
+   211  L-CORPUS-00180 арэп                   deği̇l                        
+   203  L-CORPUS2-00265 ехьылӏагъэу            arziye                        
+   201  L-CORPUS-00191 дэдэ                   hayran                        
+   201  L-CORPUS-00192 лъэш                   has                           
+   198  L-CORPUS-00197 апэрэ                  ilk, birinci                  
+   197  L-CORPUS-00198 къэбар                 öykü                          

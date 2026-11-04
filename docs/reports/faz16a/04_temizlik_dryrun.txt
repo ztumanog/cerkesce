@@ -1,0 +1,102 @@
+==============================================================================
+TEMIZLIK DRY-RUN RAPORU
+==============================================================================
+Toplam eksik: 8848
+Toplam degisiklik: 7370
+
+------------------------------------------------------------------------------
+DEGISIKLIK TIPLERI
+------------------------------------------------------------------------------
+
+[translations.tr_normalize] 3385 adet
+    L-PSYXHUE: 'DERE' -> 'dere'
+    L-KKHUXY: 'GEMİ' -> 'gemi̇'
+    L-KHUABZHU: 'HIZLI' -> 'hizli'
+    L-ANESHYPHUE: 'TEYZE' -> 'teyze'
+    L-XUEDEU: 'AYNI' -> 'ayni'
+
+[meaning_normalize] 3150 adet
+    L-PSYXHUE: 'DERE' -> 'dere'
+    L-KHUABZHU: 'HIZLI' -> 'hizli'
+    L-ANESHYPHUE: 'TEYZE' -> 'teyze'
+    L-XUEDEU: 'AYNI' -> 'ayni'
+    L-XUEDE: 'AYNI' -> 'ayni'
+
+[literalMeaning_normalize] 609 adet
+    L-XUEDE: 'AYNI' -> 'ayni'
+    L-CORPUS-00006: 'EVET' -> 'evet'
+    L-CORPUS-00008: 'NIYE' -> 'niye'
+    L-CORPUS-00009: 'AZINLIK' -> 'azinlik'
+    L-CORPUS-00044: 'ODUR' -> 'odur'
+
+[literalMeaning_arapca_sil] 226 adet
+    L-CORPUS-00031: 'وأيضاً، مرة أخرى'
+    L-CORPUS-00062: 'الأكثر، أكثر'
+    L-CORPUS-00126: 'اليوم، حالياً، الوقت الراهن'
+    L-CORPUS-00197: 'الأول، المقدم'
+    L-CORPUS-00259: 'دوماً، دائماً، باستمرار'
+
+------------------------------------------------------------------------------
+TUTARSIZLIK: tr vs literalMeaning farkli (4902)
+------------------------------------------------------------------------------
+  L-PSYXHUE
+    tr: DERE
+    lm: suyun oldugu yer
+  L-PSYEJEH
+    tr: nehir
+    lm: akan su
+  L-BZEPSE
+    tr: Armonikada subaplı delikler
+    lm: dil bagi
+  L-DZE
+    tr: diş
+    lm: ordu
+  L-PSYK1UY
+    tr: kuyu
+    lm: çağlayan, şelale
+  L-PSYBABYSHCH
+    tr: ordek
+    lm: su ordegi
+  L-BZU
+    tr: kuş
+    lm: kus
+  L-PSY1UFE
+    tr: nehir kiyisi
+    lm: su kenari
+  L-PSYZHAPE
+    tr: nehir yatagi
+    lm: suyun aktigi yer
+  L-KUEPSE
+    tr: damar
+    lm: vadi suyu
+  L-NYDZHE
+    tr: taşkın yatağı
+    lm: taskin yatagi
+  L-KHUABZHU
+    tr: HIZLI
+    lm: cok, asiri
+  L-ANESHYPHUE
+    tr: TEYZE
+    lm: anne kiz kardes
+  L-PSYK1ANT1E
+    tr: dere, cay
+    lm: kucuk su
+  L-ANEKUESHH
+    tr: Dayı (annenin erkek kardeşi)
+    lm: dayi ; dayi
+  L-KHUMEN
+    tr: esirgemek, korumak
+    lm: korumak
+  L-PQY
+    tr: çubuk
+    lm: kemik
+  L-PQYGHUE
+    tr: Mevsim, cisim, unsur/bileşen
+    lm: organ
+  L-LEZHEN
+    tr: Silinmek
+    lm: calismak
+  L-LEZHYGHE
+    tr: Tane
+    lm: is, emek
+  ... +4882 daha

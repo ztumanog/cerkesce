@@ -4,17 +4,58 @@ import { ArrowLeft, Languages, BookOpen, Quote, Network } from 'lucide-react';
 import fs from 'fs';
 import path from 'path';
 
+
+// Dinamik route: her kavram icin ayri sayfa uret (fs.readFileSync kullanildigi icin)
+export const dynamic = 'force-dynamic';
+// Ic kalite notlarini filtrele (kullaniciya gosterme)
+const INTERNAL_NOTE_PATTERNS = [
+  /S2-\d+/i,
+  /C-\d+\.\d+/i,
+  /conceptId aile/i,
+  /migration/i,
+  /aile mirasi/i,
+  /^Kontrol:/i,
+  /^Test:/i,
+  /^TODO/i,
+  /^FIXME/i,
+  /aile miras[ıi] oldugu icin temizlendi/i,
+];
+function isInternalNote(note: string): boolean {
+  if (!note) return false;
+  return INTERNAL_NOTE_PATTERNS.some(p => p.test(note));
+}
+function cleanNotes(note: string | undefined | null): string {
+  if (!note) return '';
+  return note
+    .split('|')
+    .map(s => s.trim())
+    .filter(s => s && !isInternalNote(s))
+    .filter(s => {
+      // "Corpus v1.0 (freq: 247, ...)" gibi korpus metadata'sini gosterme
+      if (/^Corpus v\d+\.\d+ \(freq:/.test(s)) return false;
+      // "X sozluk + Y korpus" gibi dogrulanmamis iddialari gosterme
+      if (/\d+\s*sozluk\s*\+\s*\d+\s*korpus/i.test(s)) return false;
+      // "Diyalekt: ..." gibi ic notlari gosterme
+      if (/^Diyalekt:\s/i.test(s)) return false;
+      return true;
+    })
+    .join(' | ');
+}
+
 // 1. Veriyi çeken fonksiyon
 async function getConceptData(conceptId: string) {
   const lexemesPath = path.resolve('./public/data/linguistic/lexemes.json');
   const relationsPath = path.resolve('./public/data/linguistic/semantic_relations.json');
   
-  const lexemes = JSON.parse(fs.readFileSync(lexemesPath, 'utf-8'));
-  let relations = [];
+  const lexemesRaw = JSON.parse(fs.readFileSync(lexemesPath, 'utf-8'));
+  const lexemes: any[] = Array.isArray(lexemesRaw) ? lexemesRaw
+    : (Array.isArray(lexemesRaw?.lexemes) ? lexemesRaw.lexemes : []);
+  let relations: any[] = [];
   try {
-    relations = JSON.parse(fs.readFileSync(relationsPath, 'utf-8'));
+    const relRaw = JSON.parse(fs.readFileSync(relationsPath, 'utf-8'));
+    relations = Array.isArray(relRaw) ? relRaw : [];
   } catch (e) {
-    console.warn("semantic_relations.json okunamadı.");
+    console.warn("semantic_relations.json okunamadi.");
   }
 
   const upperConceptId = conceptId.toUpperCase();
@@ -30,31 +71,16 @@ async function getConceptData(conceptId: string) {
     const form = l.form;
     if (!form) continue;
 
-    // Dil tespit kuralı (Kabardeyce'de "o" yoktur)
-    const hasO = /[oо]/i.test(form);
-    let mainDialect = hasO ? 'Adıgece (Batı)' : 'Kabardeyce (Doğu)';
+    // Ana lehce: SADECE l.dialect alanindan
+    let dialectLabel: string = 'Lehçe belirtilmemiş';
+    if (l.dialect === 'ady') dialectLabel = 'Adıgece (Batı)';
+    else if (l.dialect === 'kbd') dialectLabel = 'Kabardeyce (Doğu)';
 
-    // Varyantları otomatik üret
-    let adygheVariant = hasO ? form : form.replace(/уэ/gi, 'о');
-    let kabardianVariant = hasO ? form.replace(/[oо]/gi, 'уэ') : form;
-
-    // Veritabanında özel varyant varsa onu kullan
-    const ady = l.dialectVariants?.adyghe;
-    const kbd = l.dialectVariants?.kabardian;
-    
-    // "o" içeren kelimeler için otomatik dönüşümü zorla uygula
-    if (hasO) {
-        kabardianVariant = form.replace(/[oо]/gi, 'уэ');
-        if (ady) adygheVariant = ady;
-    } else {
-        if (ady) adygheVariant = ady;
-        if (kbd) kabardianVariant = kbd;
-    }
-
-    let dialectLabel = mainDialect;
-    if (ady && kbd) {
-      dialectLabel = 'Adıgece (Batı) & Kabardeyce (Doğu)';
-    }
+    // Kayitli varyantlar: SADECE veriden, bos olmayan
+    const ady = typeof l.dialectVariants?.adyghe === 'string' && l.dialectVariants.adyghe.trim()
+      ? l.dialectVariants.adyghe.trim() : '';
+    const kbd = typeof l.dialectVariants?.kabardian === 'string' && l.dialectVariants.kabardian.trim()
+      ? l.dialectVariants.kabardian.trim() : '';
 
     if (!conceptMap.has(form)) {
       conceptMap.set(form, {
@@ -63,15 +89,27 @@ async function getConceptData(conceptId: string) {
         ipa: l.ipa || '',
         dialect: dialectLabel,
         dialectVariants: {
-            adyghe: adygheVariant,
-            kabardian: kabardianVariant
+            adyghe: ady,
+            kabardian: kbd
         },
-        translations: Object.entries(l.translations || {}).map(([key, val]) => ({
-            lang: key === 'tr' ? 'Türkçe' : key === 'en' ? 'İngilizce' : key === 'ru' ? 'Rusça' : key === 'ar' ? 'Arapça' : key === 'ady' ? 'Adığce' : 'Kabardeyce',
-            text: val,
-            code: key.toUpperCase()
-        })),
-        description: l.notes || '',
+        translations: Object.entries(l.translations || {})
+            .filter(([key]) => ['tr', 'en', 'ru', 'ar', 'ady', 'kbd'].includes(key))
+            .map(([key, val]) => {
+                const langMap: Record<string, string> = {
+                    'tr': 'Türkçe',
+                    'en': 'İngilizce',
+                    'ru': 'Rusça',
+                    'ar': 'Arapça',
+                    'ady': 'Adığce (Batı)',
+                    'kbd': 'Kabardeyce (Doğu)'
+                };
+                return {
+                    lang: langMap[key] || key,
+                    text: val,
+                    code: key.toUpperCase()
+                };
+            }),
+        description: cleanNotes(l.notes),
         examples: l.examples || [],
         sources: new Set<string>(),
       });
@@ -79,8 +117,12 @@ async function getConceptData(conceptId: string) {
     
     const entry = conceptMap.get(form);
     if (l.examples) entry.examples = [...new Set([...entry.examples, ...l.examples])];
-    if (l.notes) entry.sources.add(l.notes);
-    if (l.sources) l.sources.forEach((s: string) => entry.sources.add(s));
+    // Kaynak toplama: SADECE l.sources (notes artik kaynak degil)
+    if (Array.isArray(l.sources)) {
+      l.sources.forEach((s: any) => {
+        if (typeof s === 'string' && s.trim()) entry.sources.add(s.trim());
+      });
+    }
   }
 
   const items = Array.from(conceptMap.values()).map((i) => ({ ...i, sources: Array.from(i.sources) }));
@@ -125,15 +167,15 @@ export default async function KavramPage({ params }: { params: Promise<{ concept
               <p className="text-xs font-semibold uppercase tracking-widest text-emerald-300">Kavram</p>
               <h1 className="mt-2 text-5xl font-extrabold tracking-tight">{data.conceptId}</h1>
               <p className="mt-3 text-sm text-slate-300">
-                {data.items.length} kelime kaydı · {data.sources.length} kaynak
+                {data.items.length} kelime kartı
               </p>
             </div>
             <div className="flex flex-wrap gap-2">
-              {Array.from(new Set(data.items.map((i: any) => i.dialect))).map((d: any) => (
-                <span key={d} className="rounded-full bg-white/10 px-3 py-1.5 text-xs font-medium text-white ring-1 ring-white/20 backdrop-blur">
-                  {d}
-                </span>
-              ))}
+        {/* KALDIRILDI: lehce rozetleri */}
+        {/* KALDIRILDI: lehce rozetleri */}
+        {/* KALDIRILDI: lehce rozetleri */}
+        {/* KALDIRILDI: lehce rozetleri */}
+        {/* KALDIRILDI: lehce rozetleri */}
             </div>
           </div>
         </div>
@@ -155,9 +197,10 @@ export default async function KavramPage({ params }: { params: Promise<{ concept
                 </span>
 
                 {/* Lehçe Karşılıkları */}
+                {/* DEBUG: item.dialectVariants = {JSON.stringify(item.dialectVariants)} */}
                 {(item.dialectVariants?.adyghe || item.dialectVariants?.kabardian) && (
                   <div className="mt-6 pt-6 border-t border-slate-200">
-                    <p className="text-xs font-semibold text-slate-500 uppercase tracking-wider mb-2">Lehçe Karşılıkları</p>
+                    <p className="text-xs font-semibold text-slate-500 uppercase tracking-wider mb-2">Veride kayıtlı lehçe biçimleri</p>
                     <ul className="space-y-1 text-sm">
                       {item.dialectVariants?.adyghe && (
                         <li><span className="font-bold text-emerald-700">Batı (Adığce):</span> {item.dialectVariants.adyghe}</li>
@@ -238,15 +281,26 @@ export default async function KavramPage({ params }: { params: Promise<{ concept
           <section className="rounded-2xl bg-white p-6 shadow-sm ring-1 ring-slate-200">
             <div className="mb-4 flex items-center gap-2">
               <BookOpen className="h-5 w-5 text-emerald-600" />
-              <h2 className="text-lg font-bold text-slate-900">Kaynaklar ({data.sources.length})</h2>
+              <h2 className="text-lg font-bold text-slate-900">Korpus Kaynaklari ({data.sources.length})</h2>
             </div>
             <ul className="space-y-2 text-sm text-slate-600">
-              {data.sources.map((s: string, i: number) => (
-                <li key={i} className="flex gap-2">
-                  <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-500" />
-                  {s}
-                </li>
-              ))}
+              {data.sources.map((s: string, i: number) => {
+                const m = s.match(/source:\s*([^,\)]+)/);
+                const lang = s.match(/lang:\s*(\w+)/);
+                const kod = m ? m[1].trim() : s;
+                const dil = lang
+                  ? (lang[1] === 'ady' ? 'Adigece'
+                    : lang[1] === 'kbd' ? 'Kabardeyce'
+                    : lang[1])
+                  : '';
+                return (
+                  <li key={i} className="flex gap-2">
+                    <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-500" />
+                    <span className="font-mono text-xs text-slate-600">{kod}</span>
+                    {dil && <span className="text-xs text-slate-400">({dil})</span>}
+                  </li>
+                );
+              })}
             </ul>
           </section>
         )}
