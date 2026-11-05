@@ -319,7 +319,7 @@ export default function RootsPage() {
             const cnt = lexemes.filter(l => (l.rootIds||[]).includes(r.id)).length;
             const active = selRoot === r.id;
             return (
-              <button key={r.id} disabled={busy} onClick={() => chooseRoot(r.id)} style={{ textAlign: "left", padding: 10, borderRadius: 10, border: active ? "2px solid #059669" : "1px solid #e2e8f0", background: active ? "#d1fae5" : "#fff" }}>
+              <button suppressHydrationWarning key={r.id} disabled={!!selectedRoot} onClick={() => chooseRoot(r.id)} style={{ textAlign: "left", padding: 10, borderRadius: 10, border: active ? "2px solid #059669" : "1px solid #e2e8f0", background: active ? "#d1fae5" : "#fff" }}>
                 <div style={{ fontWeight: 800, fontFamily: "monospace" }}>{r.id}</div>
                 <div style={{ fontSize: 12 }}>{r.form || ""} {r.ipa ? `/${r.ipa}/` : ""}</div>
                 <div style={{ fontSize: 11, color: "#64748b" }}>{cnt} lexeme</div>
@@ -341,8 +341,8 @@ export default function RootsPage() {
             return (
               <div key={f.id} style={{ padding: 12, borderRadius: 12, border: active ? "2px solid #2563eb" : "1px solid #e2e8f0", background: active ? "#dbeafe" : "#fff" }}>
                 <div style={{ display: "flex", justifyContent: "space-between" }}>
-                  <button disabled={busy} onClick={() => chooseFamily(f.id)} style={{ fontWeight: 800, fontFamily: "monospace", background: "none", border: "none", cursor: "pointer", textAlign: "left" }}>{f.id}</button>
-                  <button disabled={busy} onClick={() => removeFamilyFromRoot(f.id)} style={{ fontSize: 10, background: "#fee2e2", color: "#b91c1c", border: "1px solid #fecaca", borderRadius: 6, padding: "2px 6px", cursor: "pointer" }}>Kökten Çıkar</button>
+                  <button suppressHydrationWarning disabled={!!selectedRoot} onClick={() => chooseFamily(f.id)} style={{ fontWeight: 800, fontFamily: "monospace", background: "none", border: "none", cursor: "pointer", textAlign: "left" }}>{f.id}</button>
+                  <button suppressHydrationWarning disabled={!!selectedRoot} onClick={() => removeFamilyFromRoot(f.id)} style={{ fontSize: 10, background: "#fee2e2", color: "#b91c1c", border: "1px solid #fecaca", borderRadius: 6, padding: "2px 6px", cursor: "pointer" }}>Kökten Çıkar</button>
                 </div>
                 <div style={{ fontSize: 11, color: "#334155", marginTop: 4 }}>{f.notes || ""}</div>
                 <div style={{ fontSize: 11, color: "#64748b", marginTop: 4 }}>{lexCount} lexeme bu kökte • {(f.conceptIds||[]).length} kavram • {familyCounts.get(f.id) || 0} kaynakta bağlı kelime</div>
@@ -353,7 +353,7 @@ export default function RootsPage() {
           {familiesOfRoot.length === 0 && <div style={{ fontSize: 12, color: "#64748b", padding: 12 }}>Bu köke bağlı aile yok (lexemes içinde rootIds={selRoot} olan wordFamilyId bulunamadı)</div>}
         </div>
 
-        <button type="button" disabled={busy || !selRoot}
+        <button suppressHydrationWarning type="button" disabled={!!selectedRoot}
           onClick={exportRootFamilies}
           style={{ marginTop: 12, padding: 10, borderRadius: 10,
             background: "#ede9fe", color: "#6d28d9",
@@ -389,24 +389,24 @@ export default function RootsPage() {
                 <div style={{ fontSize: 11, color: "#b91c1c", marginTop: 4 }}>ID değiştirilemez (bağlı {(draftFam.lexemeIds||[]).length} lexeme kopar) • rootIds düzenlemesi lexeme üzerinden yapılır</div>
 
                 <label style={{ display: "block", marginTop: 16, fontSize: 12, fontWeight: 700 }}>Notlar / Açıklama (eksikse gir)</label>
-                <textarea disabled={busy} value={draftFam.notes||""} onChange={e => setDraftFam({ ...draftFam, notes: e.target.value })} rows={3} style={{ marginTop: 6, width: "100%", border: "2px solid #cbd5e1", borderRadius: 10, padding: "10px 12px" }} placeholder="El ailesi (Ӏэ). Somatik kök..." />
+                <textarea disabled={!!selectedRoot} value={draftFam.notes||""} onChange={e => setDraftFam({ ...draftFam, notes: e.target.value })} rows={3} style={{ marginTop: 6, width: "100%", border: "2px solid #cbd5e1", borderRadius: 10, padding: "10px 12px" }} placeholder="El ailesi (Ӏэ). Somatik kök..." />
 
                 <label style={{ display: "block", marginTop: 16, fontSize: 12, fontWeight: 700 }}>conceptIds (virgülle ayır, eksikse gir)</label>
-                <input disabled={busy} value={(draftFam.conceptIds||[]).join(", ")} onChange={e => setDraftFam({ ...draftFam, conceptIds: e.target.value.split(",").map(s=>s.trim()).filter(Boolean) })} style={{ marginTop: 6, width: "100%", border: "2px solid #cbd5e1", borderRadius: 10, padding: "10px 12px" }} placeholder="Kaynakta doğruladığın kavram kimlikleri" />
+                <input disabled={!!selectedRoot} value={(draftFam.conceptIds||[]).join(", ")} onChange={e => setDraftFam({ ...draftFam, conceptIds: e.target.value.split(",").map(s=>s.trim()).filter(Boolean) })} style={{ marginTop: 6, width: "100%", border: "2px solid #cbd5e1", borderRadius: 10, padding: "10px 12px" }} placeholder="Kaynakta doğruladığın kavram kimlikleri" />
 
                 <div style={{ marginTop: 12, fontSize: 11, color: "#64748b" }}>lexemeIds: {(draftFam.lexemeIds||[]).length} • _source: {draftFam._source||""} • Bu kökte {lexemes.filter(l=>l.wordFamilyId===draftFam.id && (l.rootIds||[]).includes(selRoot)).length} lexeme</div>
 
 
                 <div style={{ marginTop: 12, display: "flex",
                   gap: 8, flexWrap: "wrap" }}>
-                  <button type="button" disabled={busy}
+                  <button suppressHydrationWarning type="button" disabled={!!selectedRoot}
                     onClick={exportFamilyDraft}
                     style={{ background: "#ede9fe", color: "#6d28d9",
                       border: "1px solid #c4b5fd", borderRadius: 10,
                       padding: "10px 14px", cursor: "pointer" }}>
                     ↓ Taslağı JSON indir
                   </button>
-                  <button type="button" disabled={busy || !familyDirty}
+                  <button suppressHydrationWarning type="button" disabled={!!selectedRoot}
                     onClick={() => {
                       if (!canLeaveFamily()) return;
                       setDraftFam(selectedFamily ? { ...selectedFamily } : null);
@@ -422,8 +422,8 @@ export default function RootsPage() {
                   </span>
                 </div>
                 <div style={{ marginTop: 16, display: "flex", gap: 8 }}>
-                  <button disabled={busy || !familyDirty} onClick={saveFamily} style={{ background: "#16a34a", color: "#fff", fontWeight: 900, padding: "10px 18px", borderRadius: 10, border: "none", cursor: "pointer" }}>{busy ? "İşlem sürüyor..." : "✓ Aileyi Kaydet"}</button>
-                  <button disabled={busy} onClick={() => removeFamilyFromRoot(draftFam.id)} style={{ background: "#fee2e2", color: "#b91c1c", fontWeight: 700, padding: "10px 18px", borderRadius: 10, border: "1px solid #fecaca", cursor: "pointer" }}>Bu Kökten Çıkar</button>
+                  <button suppressHydrationWarning disabled={!!selectedRoot} onClick={saveFamily} style={{ background: "#16a34a", color: "#fff", fontWeight: 900, padding: "10px 18px", borderRadius: 10, border: "none", cursor: "pointer" }}>{busy ? "İşlem sürüyor..." : "✓ Aileyi Kaydet"}</button>
+                  <button suppressHydrationWarning disabled={!!selectedRoot} onClick={() => removeFamilyFromRoot(draftFam.id)} style={{ background: "#fee2e2", color: "#b91c1c", fontWeight: 700, padding: "10px 18px", borderRadius: 10, border: "1px solid #fecaca", cursor: "pointer" }}>Bu Kökten Çıkar</button>
                 </div>
               </div>
             ) : (
@@ -435,3 +435,4 @@ export default function RootsPage() {
     </div>
   );
 }
+

@@ -2,15 +2,25 @@
  * File: app/layout.tsx
  * Layer: UI
  */
+import "@radix-ui/themes/styles.css";
 import type { Metadata } from 'next';
+import "@radix-ui/themes/styles.css";
 import Link from 'next/link';
+import "@radix-ui/themes/styles.css";
 import Header from '@/components/layout/Header';
+import "@radix-ui/themes/styles.css";
 import { FooterWrapper } from '@/components/layout/FooterWrapper';
+import "@radix-ui/themes/styles.css";
 import { Toaster } from 'sonner';
+import "@radix-ui/themes/styles.css";
 import BildirimBaslatici from '@/components/features/BildirimBaslatici';
+import "@radix-ui/themes/styles.css";
 import SWRegister from './SWRegister';
+import "@radix-ui/themes/styles.css";
 import { TercihProvider } from '@/contexts/TercihContext';
+import "@radix-ui/themes/styles.css";
 import { TemaBaslatici } from '@/components/features/TemaBaslatici';
+import "@radix-ui/themes/styles.css";
 import './globals.css';
 
 export const metadata: Metadata = {
@@ -75,3 +85,4 @@ export default function RootLayout({
     </html>
   );
 }
+
