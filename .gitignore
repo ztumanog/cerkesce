@@ -154,3 +154,7 @@ docs/reports/faz16a/*.png
 .backups/
 backups/
 
+_yedekler/
+*.bozuk
+*.yedek_*
+*copy.tsx
