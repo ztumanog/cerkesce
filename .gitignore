@@ -158,3 +158,8 @@ _yedekler/
 *.bozuk
 *.yedek_*
 *copy.tsx
+
+# yedek ve cop dosyalari
+*.yedek-*
+*.bozuk*
+toplu-kurasyon*.csv

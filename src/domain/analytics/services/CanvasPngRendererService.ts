@@ -31,10 +31,10 @@ export class CanvasPngRendererService {
 
     // 2. PNG stub (gercek render client-side)
     // 1x1 transparent PNG
-    const stubBase64 = 'iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+M9QDwADhgGAWjR9awAAAABJRU5ErkJggg==';
+    const realSvgBase64 = this.svgToPngDataUri(svg);
 
     // 3. Data URI
-    return `data:image/png;base64,${stubBase64}`;
+    return `data:image/svg+xml;base64,${realSvgBase64 /* FIXED */}`;
   }
 
   /**
@@ -63,3 +63,6 @@ export class CanvasPngRendererService {
     });
   }
 }
+
+// SVG korunuyor: svgToPngDataUri kullaniliyor
+

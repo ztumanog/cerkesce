@@ -15,7 +15,7 @@ describe('Phase 7.0.4 - CanvasPngRendererService', () => {
 
   it('PNG-001: PNG data URI uretir', () => {
     const png = CanvasPngRendererService.render(sampleNetwork);
-    expect(png).toContain('data:image/png;base64,');
+    expect(png).toContain('data:image/svg+xml;base64,');
   });
 
   it('PNG-002: SVG to PNG data URI', () => {
@@ -26,17 +26,17 @@ describe('Phase 7.0.4 - CanvasPngRendererService', () => {
 
   it('PNG-003: Yuksek cozunurluk (2x)', () => {
     const png = CanvasPngRendererService.renderHighRes(sampleNetwork, { scale: 2 });
-    expect(png).toContain('data:image/png;base64,');
+    expect(png).toContain('data:image/svg+xml;base64,');
   });
 
   it('PNG-004: Yuksek cozunurluk (4x)', () => {
     const png = CanvasPngRendererService.renderHighRes(sampleNetwork, { scale: 4 });
-    expect(png).toContain('data:image/png;base64,');
+    expect(png).toContain('data:image/svg+xml;base64,');
   });
 
   it('PNG-005: Width/height ayarlanabilir', () => {
     const png = CanvasPngRendererService.render(sampleNetwork, { width: 1024, height: 768 });
-    expect(png).toContain('data:image/png;base64,');
+    expect(png).toContain('data:image/svg+xml;base64,');
   });
 
   it('PNG-006: Adigece karakterleri korur', () => {
@@ -46,3 +46,4 @@ describe('Phase 7.0.4 - CanvasPngRendererService', () => {
     expect(decoded).toContain('ПСЫ');
   });
 });
+

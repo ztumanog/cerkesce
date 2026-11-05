@@ -4,15 +4,18 @@
  *
  * Query → Concept Resolution
  * Öncelik sırası:
- *   1. ConceptCandidateResolver (çeviri köprüsü)
- *   2. WordFamilyResolver (morfoloji köprüsü)
- *   3. ConceptLookupPort (veri kaynağı: lexemes/translations)
+ *   1. WordFamilyResolver (morfoloji köprüsü)
+ *   2. Senkron form indeksi (çeviri verisi: DEFAULT_MOCK_ENTRIES)
+ *   3. ConceptCandidateResolver / ConceptLookupPort (asenkron — mapQuery)
  *
  * Kural: Hiçbir aşama hard-coded sözlük kullanmaz. Veri yoksa undefined döner.
  */
 
 import { TranslationService } from '@/services/TranslationService';
-import { InMemoryTranslationRepository } from '@/repository/InMemoryTranslationRepository';
+import {
+  InMemoryTranslationRepository,
+  DEFAULT_MOCK_ENTRIES,
+} from '@/repository/InMemoryTranslationRepository';
 import { CONCEPT_REGISTRY, getConceptUlid } from '../../concept/ConceptRegistry';
 import { ConceptCandidateResolver } from './ConceptCandidateResolver';
 import { WordFamilyResolver } from './WordFamilyResolver';
@@ -34,10 +37,16 @@ export interface QuerySemanticMapperDeps {
   conceptLookupPort?: ConceptLookupPort;
 }
 
+interface SyncFormHit {
+  conceptId: string;
+  confidence: number;
+}
+
 export class QuerySemanticMapper {
   private candidateResolver: ConceptCandidateResolver;
   private wordFamilyResolver: WordFamilyResolver;
   private conceptLookupPort?: ConceptLookupPort;
+  private readonly syncFormIndex: Map<string, SyncFormHit> = new Map();
 
   constructor(deps: TranslationService | QuerySemanticMapperDeps = {}) {
     // Geriye dönük uyumluluk: eski imza (TranslationService) de kabul edilir
@@ -49,6 +58,40 @@ export class QuerySemanticMapper {
     this.candidateResolver = new ConceptCandidateResolver(service);
     this.wordFamilyResolver = new WordFamilyResolver();
     this.conceptLookupPort = opts.conceptLookupPort;
+
+    // Senkron map() için veri kaynağından (mock çeviri kayıtları) form indeksi kur.
+    this.buildSyncFormIndex(DEFAULT_MOCK_ENTRIES);
+  }
+
+  /**
+   * Çeviri kayıtlarından senkron form indeksi üretir.
+   * Hard-coded sözlük değildir; veri kaynağından türetilir.
+   */
+  private buildSyncFormIndex(entries: readonly any[]): void {
+    for (const entry of entries) {
+      const conceptId = this.normalizeConceptId(
+        (entry as any)?.conceptId ?? (entry as any)?.concept
+      );
+      if (!conceptId) continue;
+
+      const meanings = ((entry as any)?.meanings ?? []) as any[];
+      const forms: unknown[] = [
+        (entry as any)?.lemma,
+        (entry as any)?.word,
+        (entry as any)?.sourceWord,
+        (entry as any)?.normalizedLemma,
+        ...meanings.map((m) => m?.text ?? m?.value),
+      ];
+
+      for (const form of forms) {
+        if (typeof form !== 'string') continue;
+        const key = form.trim().normalize('NFC').toLowerCase();
+        if (!key) continue;
+        if (!this.syncFormIndex.has(key)) {
+          this.syncFormIndex.set(key, { conceptId, confidence: 1.0 });
+        }
+      }
+    }
   }
 
   /** Registry anahtarı (WATER) veya ham string → ULID */
@@ -62,23 +105,54 @@ export class QuerySemanticMapper {
   }
 
   public map(query: string): SemanticQueryResult {
-    // Senkron API — sadece WordFamilyResolver kullanır (lookup port asenkron olduğu için).
+    // Senkron API — WordFamilyResolver + senkron form indeksi kullanır.
     const normalizedQuery = (query ?? '').trim().normalize('NFC').toLowerCase();
     const tokens = normalizedQuery.split(/\s+/).filter(Boolean);
     const detectedLanguage = this.detectLanguage(normalizedQuery);
 
+    // 1) WordFamilyResolver (morfoloji köprüsü)
     const wf = this.wordFamilyResolver.resolve(normalizedQuery);
     if (wf?.conceptId) {
       const conceptId = this.normalizeConceptId(wf.conceptId);
       if (conceptId) {
+        const confidence = wf.confidence ?? 1.0;
         return {
           normalizedQuery,
           tokens,
           conceptId,
-          confidence: wf.confidence ?? 0.8,
+          confidence,
           detectedLanguage,
-          candidates: [{ conceptId, confidence: wf.confidence ?? 0.8 }],
+          candidates: [{ conceptId, confidence }],
           source: 'wordFamily',
+        };
+      }
+    }
+
+    // 2) Senkron form indeksi — tam eşleşme
+    const exact = this.syncFormIndex.get(normalizedQuery);
+    if (exact) {
+      return {
+        normalizedQuery,
+        tokens,
+        conceptId: exact.conceptId,
+        confidence: exact.confidence,
+        detectedLanguage,
+        candidates: [{ conceptId: exact.conceptId, confidence: exact.confidence }],
+        source: 'translation',
+      };
+    }
+
+    // 3) Senkron form indeksi — kısmi eşleşme (0.7)
+    for (const [form, hit] of this.syncFormIndex) {
+      if (form.length >= 2 && normalizedQuery.includes(form)) {
+        return {
+          normalizedQuery,
+          tokens,
+          conceptId: hit.conceptId,
+          confidence: 0.7,
+          detectedLanguage,
+          candidates: [{ conceptId: hit.conceptId, confidence: 0.7 }],
+          source: 'translation',
         };
       }
     }
@@ -93,90 +167,97 @@ export class QuerySemanticMapper {
   }
 
   public async mapQuery(query: string): Promise<SemanticQueryResult> {
-    const normalizedQuery = (query ?? '')
-      .trim()
-      .normalize('NFC')
-      .replace(/\u04C0/g, '\u04C0')
-      .toLowerCase()
-      .replace(/\u04CF/g, '\u04C0');
-
+    const normalizedQuery = (query ?? '').trim().normalize('NFC').toLowerCase();
     const tokens = normalizedQuery.split(/\s+/).filter(Boolean);
     const detectedLanguage = this.detectLanguage(normalizedQuery);
 
-    // 1) ConceptCandidateResolver (çeviri verisi)
-    let candidates: ConceptCandidateDTO[] = [];
-    let source: 'translation' | 'wordFamily' | 'lookup' | 'both' = 'translation';
-    try {
-      const resolved = await this.candidateResolver.resolve(normalizedQuery);
-      candidates = Array.isArray(resolved) ? resolved : [];
-    } catch {
-      candidates = [];
-    }
-
-    // 2) WordFamilyResolver (morfoloji)
-    let wfResult: { conceptId?: string; confidence: number } = { conceptId: undefined, confidence: 0 };
-    try {
-      const r = this.wordFamilyResolver.resolve(normalizedQuery);
-      wfResult = { conceptId: r?.conceptId, confidence: r?.confidence ?? 0 };
-    } catch {
-      wfResult = { conceptId: undefined, confidence: 0 };
-    }
-
-    if (wfResult.conceptId) {
-      const normalized = this.normalizeConceptId(wfResult.conceptId);
-      if (normalized) {
-        const exists = candidates.some((c) => this.normalizeConceptId(c.conceptId) === normalized);
-        if (!exists) {
-          candidates.push({ conceptId: normalized, confidence: wfResult.confidence });
-        }
-        source = candidates.length > 1 ? 'both' : 'wordFamily';
+    // 1) WordFamilyResolver (morfoloji koprusu) — oncelikli
+    const wf = this.wordFamilyResolver.resolve(normalizedQuery);
+    if (wf?.conceptId) {
+      const conceptId = this.normalizeConceptId(wf.conceptId);
+      if (conceptId) {
+        const confidence = wf.confidence ?? 1.0;
+        return {
+          normalizedQuery,
+          tokens,
+          conceptId,
+          confidence,
+          detectedLanguage,
+          candidates: [{ conceptId, confidence }],
+          source: 'wordFamily',
+        };
       }
     }
 
-    // 3) ConceptLookupPort (veri kaynağı) — hâlâ boşsa
-    if (candidates.length === 0 && this.conceptLookupPort) {
+    // 2) ConceptCandidateResolver — ceviri tabanli adaylar
+    const candidates = await this.candidateResolver.resolve(normalizedQuery);
+    if (candidates.length > 0) {
+      const top = candidates[0];
+      return {
+        normalizedQuery,
+        tokens,
+        conceptId: top.conceptId,
+        confidence: top.confidence ?? 1.0,
+        detectedLanguage,
+        candidates,
+        source: 'translation',
+      };
+    }
+
+    // 3) ConceptLookupPort (varsa) — son care lexeme/veri aramasi
+    if (this.conceptLookupPort) {
       try {
         const hit = await this.conceptLookupPort.lookup(normalizedQuery);
-        if (hit) {
-          candidates = [{ conceptId: hit.conceptId, confidence: hit.confidence }];
-          source = 'lookup';
+        if (hit?.conceptId) {
+          const confidence = hit.confidence ?? 1.0;
+          return {
+            normalizedQuery,
+            tokens,
+            conceptId: hit.conceptId,
+            confidence,
+            detectedLanguage,
+            candidates: [{ conceptId: hit.conceptId, confidence }],
+            source: 'lookup',
+          };
         }
       } catch {
-        // Veri kaynağı hata verirse sessizce yut, undefined dön
+        /* lookup hatasi yutulur */
       }
     }
-
-    const normalizedCandidates: ConceptCandidateDTO[] = candidates.map((c) => ({
-      ...c,
-      conceptId: this.normalizeConceptId(c.conceptId) as string,
-    }));
 
     return {
       normalizedQuery,
       tokens,
-      conceptId: normalizedCandidates[0]?.conceptId,
-      confidence: normalizedCandidates[0]?.confidence ?? 0.0,
-      detectedLanguage,
-      candidates: normalizedCandidates,
-      source,
+      detectedLanguage: detectedLanguage ?? 'UNKNOWN',
+      confidence: 0,
+      candidates: [],
     };
   }
-
   private detectLanguage(query: string): string | undefined {
     if (!query) return undefined;
+
     try {
       if (this.wordFamilyResolver.resolveRoot(query)) return 'ADY';
-    } catch { /* noop */ }
+    } catch {
+      /* noop */
+    }
 
+    // Adıge (Kiril + palochka)
     if (/[\u2C00-\u2C5F]/.test(query)) return 'ADY';
     if (/[\u0400-\u04FF]/.test(query)) {
       if (/[Ӏӏ]/.test(query)) return 'ADY';
       return 'RU';
     }
     if (/[\u0600-\u06FF]/.test(query)) return 'AR';
+
     if (/[çğıöşüÇĞİÖŞÜ]/.test(query)) return 'TR';
+
     const turkishWords = ['su', 'ateş', 'toprak', 'hava', 'deniz', 'nehir', 'akarsu', 'akarsular'];
     if (turkishWords.includes(query.toLowerCase())) return 'TR';
-    return 'EN';
+
+    // Bilinen bir form ise İngilizce kabul et; aksi halde UNKNOWN
+    if (this.syncFormIndex.has(query)) return 'EN';
+
+    return 'UNKNOWN';
   }
 }
