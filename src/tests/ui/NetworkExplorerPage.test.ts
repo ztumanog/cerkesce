@@ -22,7 +22,6 @@ describe('Phase 7.1 - NetworkExplorerPage Integration Tests', () => {
     const mockSearchApi = vi.fn().mockResolvedValue(sampleNetwork);
     const pageElement = React.createElement(NetworkExplorerPage, {
       initialQuery: 'water',
-      onSearchApi: mockSearchApi
     });
 
     expect(mockSearchApi).not.toHaveBeenCalled();
@@ -58,3 +57,6 @@ describe('Phase 7.1 - NetworkExplorerPage Integration Tests', () => {
     expect(layout1.edges).toEqual(layout2.edges);
   });
 });
+
+
+

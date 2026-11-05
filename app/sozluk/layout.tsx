@@ -1,0 +1,1 @@
+export default function SozlukLayout({children}:{children:React.ReactNode}){return <>{children}</>;}

@@ -1,0 +1,550 @@
+====================================================================================================
+AILE KOK ENVANTERI
+====================================================================================================
+Toplam CORPUS concept'siz: 1578
+Aile sayisi: 339
+
+Aile                      Lex   Kok             Kok Anlam                                          Concepts
+----------------------------------------------------------------------------------------------------
+WF-SHY                    126                   -                                                  -
+WF-LHA                    109                   -                                                  -
+WF-IN                     95                    -                                                  -
+WF-SHHA                   92                    -                                                  -
+WF-GE                     80                    -                                                  -
+WF-ZHA                    58                    -                                                  -
+WF-KIE                    19                    -                                                  -
+WF-SHA                    17                    -                                                  -
+WF-FA                     17                    -                                                  -
+WF-ZAU                    16                    -                                                  -
+WF-KO                     12    R-KO            R-KO=domuz                                         -
+WF-QA                     10                    -                                                  -
+WF-IKI                    10    R-IKI           R-IKI=?                                            -
+WF-SYD                    9     R-SYD           R-SYD=?                                            -
+WF-DZHY                   9     R-DZHY          R-DZHY=?                                           -
+WF-ANA                    9                     -                                                  -
+WF-ARY                    8     R-ARY           R-ARY=?                                            -
+WF-DED                    8                     -                                                  -
+WF-PSHA                   8                     -                                                  -
+WF-WNA                    8                     -                                                  -
+WF-GHWALH                 8                     -                                                  -
+WF-PSA                    7                     -                                                  -
+WF-KUU                    7                     -                                                  -
+WF-ARA                    6     R-ARA           R-ARA=?                                            -
+WF-TET                    6                     -                                                  -
+WF-SER                    6     R-SER           R-SER=?                                            -
+WF-BZA                    6                     -                                                  -
+WF-DZA                    6                     -                                                  -
+WF-KIO                    6     R-KIO           R-KIO=gitmek                                       -
+WF-PSHCHI                 6                     -                                                  -
+WF-KHY_2                  5                     -                                                  -
+WF-BEU                    5     R-BEU           R-BEU=?                                            -
+WF-ZEZ                    5     R-ZEZ           R-ZEZ=seyrek                                       -
+WF-PSHCHY                 5                     -                                                  -
+WF-ZYR                    5     R-ZYR           R-ZYR=?                                            -
+WF-KHES                   5     R-KHES          R-KHES=dikmek/oturmak                              -
+WF-UESHCH                 4                     -                                                  -
+WF-PYT                    4     R-PYT           R-PYT=sağlam, sert                                 -
+WF-GUSCH                  4                     -                                                  -
+WF-PKHA                   4                     -                                                  -
+WF-ZEU                    4     R-ZEU           R-ZEU=savaş/mücadele                               -
+WF-DAGHA                  4                     -                                                  -
+WF-WA                     4                     -                                                  -
+WF-IOF                    4     R-IOF           R-IOF=iş, mesele                                   -
+WF-IIE                    4     R-IIE           R-IIE=?                                            -
+WF-GOR                    3     R-GOR           R-GOR=birisi/bir şey                               -
+WF-MYR                    3     R-MYR           R-MYR=?                                            -
+WF-PRONOUN-               3                     -                                                  -
+WF-LEY                    3     R-LEY           R-LEY=?                                            -
+WF-AUZH                   3     R-AUZH          R-AUZH=?                                           -
+WF-TYN                    3     R-TYN           R-TYN=vermek                                       -
+WF-UAKH                   3                     -                                                  -
+WF-KUP                    3     R-KUP           R-KUP=?                                            -
+WF-ZHAN                   3     R-ZHAN          R-ZHAN=?                                           -
+WF-BZHY                   3                     -                                                  -
+WF-KHEK                   3                     -                                                  -
+WF-SYM_1                  3                     -                                                  -
+WF-DES                    3     R-DES           R-DES=?                                            -
+WF-SHCHECH                3                     -                                                  -
+WF-KUM                    3     R-KUM           R-KUM=?                                            -
+WF-EUE                    3     R-WA            R-WA=vurmak, çarpmak, dövmek; çalmak (enstrüman)   -
+WF-SHTE                   3     R-SHTE          R-SHTE=?                                           -
+WF-UEN                    3     R-UEN           R-UEN=?                                            -
+WF-LYG                    3                     -                                                  -
+WF-TEO                    3     R-TEO           R-TEO=?                                            -
+WF-SEKH                   3     R-SEKH          R-SEKH=kireç                                       -
+WF-TES                    3     R-TES           R-TES=oturmak                                      -
+WF-GY                     3     R-GY            R-GY=ağlamak                                       -
+WF-SYS                    3     R-SYS           R-SYS=titremek                                     -
+WF-DE                     3                     -                                                  -
+WF-LA_1                   3                     -                                                  -
+WF-KE                     3                     -                                                  -
+WF-PKHW                   3                     -                                                  -
+WF-SHCHIA                 3                     -                                                  -
+WF-UVY                    3                     -                                                  -
+WF-PSY                    2                     -                                                  COOT, DEW, DIPPER, DUCK, FLOOD
+WF-KHU                    2                     -                                                  -
+WF-KHET                   2     R-TYS           R-TYS=?                                            -
+WF-UZH                    2     R-UZH           R-UZH=iz, peş                                      -
+WF-TEZ                    2     R-TEZ           R-TEZ=ceza                                         -
+WF-MER                    2     R-MERAK1UE      R-MERAK1UE=?                                       -
+WF-BEG                    2                     -                                                  -
+WF-UER                    2                     -                                                  -
+WF-CHAN                   2     R-CHAN          R-CHAN=?                                           -
+WF-BLANE                  2                     -                                                  -
+WF-DEY                    2                     -                                                  -
+WF-MOU                    2     R-MOU           R-MOU=?                                            -
+WF-KU                     2                     -                                                  -
+WF-SOM                    2     R-SOM           R-SOM=?                                            -
+WF-SYN                    2     R-SYN           R-SYN=mezar taşı                                   -
+WF-BAY                    2                     -                                                  -
+WF-LEN                    2     R-LEN           R-LEN=boyamak                                      -
+WF-IKU                    2     R-IKU           R-IKU=?                                            -
+WF-TSY                    2                     -                                                  -
+WF-PUD                    2     R-PUD           R-PUD=?                                            -
+WF-IZY                    2     R-IZY           R-IZY=doldurmak                                    -
+WF-CHEF                   2     R-CHEF          R-CHEF=?                                           -
+WF-GAZ                    2     R-GAZ           R-GAZ=?                                            -
+WF-MAXWA                  2                     -                                                  -
+WF-CHA                    2                     -                                                  -
+WF-ZHYP                   2     R-ZHYP          R-ZHYP=cep                                         -
+WF-UEKH                   2     R-UEKH          R-UEKH=?                                           -
+WF-RAM                    2     R-RAM           R-RAM=?                                            -
+WF-BZY                    2                     -                                                  -
+WF-UT                     2     R-UT            R-UT=?                                             -
+WF-ZHEP                   2     R-ZHEP          R-ZHEP=kırağı                                      -
+WF-BGHW                   2                     -                                                  -
+WF-ODY                    2     R-ODY           R-ODY=zayıf                                        -
+WF-CHET                   2                     -                                                  -
+WF-SHKHO                  2     R-SHKHO         R-SHKHO=tüfek                                      -
+WF-KHEZ                   2     R-KHEZ          R-KHEZ=?                                           -
+WF-MEU                    2     R-MEU           R-MEU=?                                            -
+WF-LY                     2                     -                                                  -
+WF-ESE                    2     R-ESE           R-ESE=alışmak                                      -
+WF-ZHGEY                  2                     -                                                  -
+WF-KHUE                   2     R-KHUE          R-KHUE=kiriş                                       -
+WF-SYR                    2     R-SYR           R-SYR=?                                            -
+WF-KUE_1                  2                     -                                                  -
+WF-EFA                    2     R-EFA           R-EFA=?                                            -
+WF-PKHE                   2     R-PKHE          R-PKHE=bağlamak                                    -
+WF-ION                    2     R-ION           R-ION=?                                            -
+WF-DEZ                    2     R-DEZ           R-DEZ=?                                            -
+WF-ZEO                    2     R-ZEO           R-ZEO=?                                            -
+WF-CHE                    2     R-CHE           R-CHE=?                                            -
+WF-SHCHTA                 2     R-SHCHTA        R-SHCHTA=?                                         -
+WF-GOU                    2     R-GOU           R-GOU=?                                            -
+WF-FIE                    2                     -                                                  -
+WF-LIA                    2     R-LIA           R-LIA=?                                            -
+WF-IAE                    2     R-IAE           R-IAE=?                                            -
+WF-UKI                    2     R-UKI           R-UKI=öldürmek                                     -
+WF-ASHCH                  1     R-ASHCH         R-ASHCH=çorba                                      -
+WF-AU                     1     R-AU            R-AU=?                                             -
+WF-PAE                    1     R-PAE           R-PAE=?                                            -
+WF-TE                     1     R-TE            R-TE=?                                             -
+WF-EZH                    1                     -                                                  -
+WF-TOM                    1     R-TOM           R-TOM=?                                            -
+WF-MYSHCH                 1     R-MYSHCH        R-MYSHCH=?                                         -
+WF-MIS                    1     R-MIS           R-MIS=?                                            -
+WF-BE                     1     R-BE            R-BE=çok                                           -
+WF-RE                     1                     -                                                  -
+WF-IT                     1     R-IT            R-IT=?                                             -
+WF-TI                     1     R-TI            R-TI=?                                             -
+WF-TEU                    1                     -                                                  -
+WF-MO                     1     R-MO            R-MO=?                                             -
+WF-BYN                    1     R-BYN           R-BYN=çocuklar/nesil                               -
+WF-TY                     1     R-TY            R-TY=?                                             -
+WF-ZHYL                   1                     -                                                  -
+WF-ARI                    1     R-ARI           R-ARI=?                                            -
+WF-SABIY                  1                     -                                                  -
+WF-ZEG                    1                     -                                                  -
+WF-DUKH                   1     R-DUKH          R-DUKH=?                                           -
+WF-ORY                    1     R-ORY           R-ORY=?                                            -
+WF-PAY                    1     R-PAY           R-PAY=?                                            -
+WF-SCHY                   1                     -                                                  -
+WF-ABI                    1     R-ABI           R-ABI=?                                            -
+WF-BEL                    1                     -                                                  -
+WF-UTS                    1     R-UTS           R-UTS=ot / çimen                                   -
+WF-DYGHA                  1                     -                                                  -
+WF-DZHA                   1     R-DZHA          R-DZHA=dik yamaç / bayır                           -
+WF-EY                     1                     -                                                  -
+WF-KA                     1                     -                                                  -
+WF-LYE                    1     R-LYE           R-LYE=?                                            -
+WF-IZ                     1     R-IZ            R-IZ=dolu                                          -
+WF-IS                     1     R-IS            R-IS=?                                             -
+WF-BASH                   1     R-BASH          R-BASH=değnek                                      -
+WF-YAKU                   1     R-YAKU          R-YAKU=?                                           -
+WF-EYSHCH                 1     R-EYSHCH        R-EYSHCH=?                                         -
+WF-UN                     1     R-UN            R-UN=?                                             -
+WF-DEI                    1                     -                                                  -
+WF-ZHEY                   1     R-ZHEY          R-ZHEY=uyku / uyumak                               -
+WF-KHEKH                  1                     -                                                  -
+WF-RIM                    1     R-RIM           R-RIM=?                                            -
+WF-KUR                    1                     -                                                  -
+WF-EON                    1     R-EON           R-EON=?                                            -
+WF-G                      1     R-G             R-G=?                                              -
+WF-TOP                    1     R-TOP           R-TOP=?                                            -
+WF-SHKHA                  1                     -                                                  -
+WF-MES                    1     R-MES           R-MES=?                                            -
+WF-UAZ                    1     R-UAZ           R-UAZ=?                                            -
+WF-ZEM                    1                     -                                                  -
+WF-UEY                    1     R-UEY           R-UEY=?                                            -
+WF-GA                     1                     -                                                  -
+WF-BEV                    1     R-BEV           R-BEV=bereketli                                    -
+WF-BA                     1     R-BA            R-BA=?                                             -
+WF-ETU                    1     R-ETU           R-ETU=?                                            -
+WF-AUE                    1     R-AUE           R-AUE=?                                            -
+WF-VEN                    1     R-VEN           R-VEN=saban sürmek                                 -
+WF-IZH                    1     R-IZH           R-IZH=sağ (taraf)                                  -
+WF-BESHCH                 1                     -                                                  -
+WF-BEY                    1     R-BEY           R-BEY=?                                            -
+WF-ZAO                    1     R-ZAO           R-ZAO=?                                            -
+WF-KHUN                   1     R-KHUN          R-KHUN=örmek                                       -
+WF-KOTS                   1     R-KOTS          R-KOTS=bulgur                                      -
+WF-SESH                   1                     -                                                  -
+WF-ZEY                    1     R-ZEY           R-ZEY=?                                            -
+WF-NEY                    1     R-NEY           R-NEY=öfke                                         -
+WF-SY                     1     R-SY            R-SY=?                                             -
+WF-ZHOR                   1     R-ZHOR          R-ZHOR=?                                           -
+WF-APCH                   1     R-APCH          R-APCH=?                                           -
+WF-CHY                    1     R-CHY           R-CHY=çubuk                                        -
+WF-MOR                    1     R-MOR           R-MOR=?                                            -
+WF-UAE                    1     R-UAE           R-UAE=fırtına / kötü hava                          -
+WF-SANA                   1                     -                                                  -
+WF-PYY                    1     R-PYY           R-PYY=?                                            -
+WF-NUR                    1     R-NUR           R-NUR=?                                            -
+WF-MOS                    1     R-MOS           R-MOS=?                                            -
+WF-ZHYN                   1     R-ZHYN          R-ZHYN=koşmak                                      -
+WF-ZHYD                   1                     -                                                  -
+WF-LECH                   1     R-LECH          R-LECH=?                                           -
+WF-NYP                    1     R-NYP           R-NYP=bayrak                                       -
+WF-UA                     1     R-UA            R-UA=?                                             -
+WF-LA                     1                     -                                                  -
+WF-YASHKH                 1     R-YASHKH        R-YASHKH=?                                         -
+WF-SHUM                   1     R-SHUM          R-SHUM=?                                           -
+WF-GYN                    1     R-GYN           R-GYN=barut                                        -
+WF-KHEY                   1     R-KHEY          R-KHEY=haklı                                       -
+WF-EM                     1     R-EM            R-EM=?                                             -
+WF-PASHCH                 1                     -                                                  -
+WF-PYI                    1     R-PYI           R-PYI=düşman                                       -
+WF-NOS                    1     R-NOS           R-NOS=ulaşmak                                      -
+WF-IZU                    1     R-IZU           R-IZU=dolu / dopdolu                               -
+WF-MYV                    1                     -                                                  -
+WF-BAZ                    1     R-BAZ           R-BAZ=?                                            -
+WF-UEM                    1     R-UEM           R-UEM=bunalımlı sıcak hava                         -
+WF-YAT                    1     R-YAT           R-YAT=?                                            -
+WF-BIY                    1     R-BIY           R-BIY=?                                            -
+WF-KHUR                   1     R-KHUR          R-KHUR=?                                           -
+WF-SHCHAB                 1                     -                                                  -
+WF-CHEY                   1     R-CHEY          R-CHEY=?                                           -
+WF-YAZ                    1     R-YAZ           R-YAZ=?                                            -
+WF-GYE                    1     R-GYE           R-GYE=alaca / benekli                              -
+WF-ON                     1     R-ON            R-ON=?                                             -
+WF-ZHER                   1     R-ZHER          R-ZHER=koşan                                       -
+WF-SHCHAY                 1     R-SHCHAY        R-SHCHAY=?                                         -
+WF-AUZ                    1     R-AUZ           R-AUZ=vadi                                         -
+WF-NIL                    1     R-NIL           R-NIL=?                                            -
+WF-ZHE                    1     R-ZHE           R-ZHE=?                                            -
+WF-PYL                    1     R-PYL           R-PYL=?                                            -
+WF-DEN                    1     R-DEN           R-DEN=dikmek                                       -
+WF-MESH                   1     R-MESH          R-MESH=darı                                        -
+WF-SEB                    1                     -                                                  -
+WF-BZHA                   1                     -                                                  -
+WF-AUI                    1     R-AUI           R-AUI=?                                            -
+WF-CHYN                   1     R-CHYN          R-CHYN=?                                           -
+WF-NAL                    1     R-NAL           R-NAL=?                                            -
+WF-UD                     1     R-UD            R-UD=büyü                                          -
+WF-AK                     1                     -                                                  -
+WF-BESH                   1                     -                                                  -
+WF-ESH                    1     R-ESH           R-ESH=yorulmak / bıkmak                            -
+WF-DYN                    1     R-DYN           R-DYN=dikmek                                       -
+WF-ZYN                    1     R-ZYN           R-ZYN=süzmek                                       -
+WF-RUSSIAN-LOAN           1                     -                                                  -
+WF-NYO                    1     R-NYO           R-NYO=yaşlı kadın                                  -
+WF-ISA                    1     R-ISA           R-ISA=?                                            -
+WF-YAY                    1     R-YAY           R-YAY=?                                            -
+WF-SAD                    1     R-SAD           R-SAD=?                                            -
+WF-UED                    1     R-UED           R-UED=zayıf                                        -
+WF-THA                    1                     -                                                  -
+WF-TSEKH                  1     R-TSEKH         R-TSEKH=?                                          -
+WF-DEKH                   1                     -                                                  -
+WF-BOU                    1     R-BOU           R-BOU=?                                            -
+WF-ES                     1     R-ES            R-ES=yüzmek / kar                                  -
+WF-UFA                    1     R-UFA           R-UFA=bükülmüş / sarılmış                          -
+WF-AK_1                   1                     -                                                  -
+WF-USY                    1     R-USY           R-USY=şiir yazmak                                  -
+WF-YANI                   1     R-YANI          R-YANI=?                                           -
+WF-LOCATION-              1                     -                                                  -
+WF-SEN                    1     R-SEN           R-SEN=ekmek                                        -
+WF-VAGHWA                 1                     -                                                  -
+WF-KE_2                   1                     -                                                  -
+WF-UZY                    1     R-UZY           R-UZY=hastalık                                     -
+WF-OD                     1     R-OD            R-OD=zayıf / çelimsiz                              -
+WF-ZU                     1     R-ZU            R-ZU=?                                             -
+WF-TOK                    1     R-TOK           R-TOK=?                                            -
+WF-BOB                    1     R-BOB           R-BOB=?                                            -
+WF-IEU                    1     R-IEU           R-IEU=?                                            -
+WF-UDY                    1     R-UDY           R-UDY=cadı                                         -
+WF-TIZ                    1     R-TIZ           R-TIZ=?                                            -
+WF-BYU                    1     R-BYU           R-BYU=?                                            -
+WF-PSALH                  1                     -                                                  -
+WF-MEY                    1     R-MEY           R-MEY=yabani elma                                  -
+WF-DEP                    1     R-DEP           R-DEP=kor                                          -
+WF-ZHEZ                   1     R-ZHEZ          R-ZHEZ=pirinç                                      -
+WF-MEKH                   1     R-MEKH          R-MEKH=?                                           -
+WF-ARU                    1     R-ARU           R-ARU=göreç otu / karabuğdaygiller                 -
+WF-TEN                    1     R-TEN           R-TEN=?                                            -
+WF-UEU                    1     R-UEU           R-UEU=?                                            -
+WF-NAN                    1     R-NAN           R-NAN=?                                            -
+WF-SHYPKHW                1                     -                                                  -
+WF-CHAR                   1     R-CHAR          R-CHAR=?                                           -
+WF-YAN                    1     R-YAN           R-YAN=?                                            -
+WF-URY                    1                     -                                                  -
+WF-MYL                    1                     -                                                  -
+WF-LHE                    1                     -                                                  BINDING, BLOOD, LEG, SOLE, STE
+WF-DYSHA                  1                     -                                                  -
+WF-BRU                    1     R-BRU           R-BRU=?                                            -
+WF-GIE                    1     R-GIE           R-GIE=sitem / kınama                               -
+WF-ETA                    1     R-ETA           R-ETA=iltihap                                      -
+WF-BZE-VANISH             1                     -                                                  -
+WF-ABD                    1                     -                                                  -
+WF-SHENT                  1                     -                                                  -
+WF-NAR                    1     R-NAR           R-NAR=?                                            -
+WF-OR                     1     R-OR            R-OR=dalga                                         -
+WF-PSHA2                  1                     -                                                  -
+WF-CHYY                   1     R-CHYY          R-CHYY=?                                           -
+WF-IUN                    1     R-IUN           R-IUN=?                                            -
+WF-CHAP                   1     R-CHAP          R-CHAP=?                                           -
+WF-EBZ                    1     R-EBZ           R-EBZ=gübre                                        -
+WF-KHUA_1                 1                     -                                                  -
+WF-ELE                    1     R-ELE           R-ELE=bereket kültü şarkısı                        -
+WF-UIY                    1     R-UIY           R-UIY=?                                            -
+WF-NUM                    1                     -                                                  -
+WF-AY                     1     R-AY            R-AY=?                                             -
+WF-BLE                    1                     -                                                  SNAKE
+WF-KHAD                   1                     -                                                  -
+WF-KUSH                   1     R-KUSH          R-KUSH=?                                           -
+WF-DZE                    1                     -                                                  TOOTH
+WF-REXHAT                 1                     -                                                  -
+WF-DAO                    1     R-DAO           R-DAO=?                                            -
+WF-II                     1     R-II            R-II=?                                             -
+WF-IO                     1     R-IO            R-IO=?                                             -
+WF-EI                     1                     -                                                  -
+WF-DA                     1     R-DA            R-DA=?                                             -
+WF-MASHCH                 1                     -                                                  -
+WF-AIO                    1     R-AIO           R-AIO=?                                            -
+WF-ZEI                    1                     -                                                  -
+WF-UVY_1                  1                     -                                                  -
+WF-AIE                    1     R-AIE           R-AIE=?                                            -
+WF-SHCHIA_2               1                     -                                                  -
+WF-SHCHIA_1               1                     -                                                  -
+WF-EIO                    1     R-EIO           R-EIO=?                                            -
+WF-KIE_2                  1                     -                                                  -
+WF-SH1E                   1                     -                                                  KNOW, NEW
+WF-IAY                    1     R-IAY           R-IAY=?                                            -
+WF-SHCHIY_1               1                     -                                                  -
+WF-SHXW                   1                     -                                                  -
+WF-VAQA                   1                     -                                                  -
+WF-PCHE                   1                     -                                                  -
+WF-WXW                    1                     -                                                  -
+
+
+=== AILE DETAYLARI (ilk 20) ===
+
+--- WF-SHY (126 lexeme) ---
+  roots: []
+  kok anlam: []
+  concepts: []
+  notes: 
+  ornek lexemeler:
+    L-CORPUS-00019  хуейщ                LAZIM
+    L-CORPUS-00081  хуей                 gerekli, lazım, istekli
+    L-CORPUS-00082  шыр                  TIRIS
+
+--- WF-LHA (109 lexeme) ---
+  roots: []
+  kok anlam: []
+  concepts: []
+  notes: Otomatik onarıldı (lexemes.json referansı) | Faz 15B: 217 lexeme dogru koklere dagitildi, rootIds bo
+  ornek lexemeler:
+    L-CORPUS-00238  хьыкум               ADALET
+    L-CORPUS-00253  хэлъ                 HUY
+    L-CORPUS-00340  сэлам                greeting
+
+--- WF-IN (95 lexeme) ---
+  roots: []
+  kok anlam: []
+  concepts: []
+  notes: 
+  ornek lexemeler:
+    L-CORPUS-00076  дин                  din, inanç
+    L-CORPUS-00091  къин                 CEFALI
+    L-CORPUS-00250  жин                  ruh
+
+--- WF-SHHA (92 lexeme) ---
+  roots: []
+  kok anlam: []
+  concepts: []
+  notes: 
+  ornek lexemeler:
+    L-CORPUS-00098  пащхьэ               ön, huzur
+    L-CORPUS-00195  къыщегъэжьагъэу      İTİBAREN
+    L-CORPUS-00575  пщыхьэщхьэм          AKŞAM
+
+--- WF-GE (80 lexeme) ---
+  roots: []
+  kok anlam: []
+  concepts: []
+  notes: Otomatik onarıldı (lexemes.json referansı) | Faz 14: гъэ- ettirgen ön ek, kök değil. rootIds boşaltı
+  ornek lexemeler:
+    L-CORPUS-00539  гъэр                 TUTSAK
+    L-CORPUS-00588  гъэсэныгъэ           bilgi, bilim
+    L-CORPUS-00690  гъэбыдэн             KAPAMAK
+
+--- WF-ZHA (58 lexeme) ---
+  roots: []
+  kok anlam: []
+  concepts: []
+  notes: İmla düzeltmesi için eklendi
+  ornek lexemeler:
+    L-CORPUS-00310  жыжьэ                hiç de, asla, uzaktan da
+    L-CORPUS-00491  къеджэн              okumak, çağırmak
+    L-CORPUS-00501  чыжьэу               miyop
+
+--- WF-KIE (19 lexeme) ---
+  roots: []
+  kok anlam: []
+  concepts: []
+  notes: 
+  ornek lexemeler:
+    L-CORPUS2-00311  кӏэ                  alın
+    L-CORPUS2-00966  кӏэщӏу               HIZLI
+    L-CORPUS2-01032  кӏэлэ                genc
+
+--- WF-SHA (17 lexeme) ---
+  roots: []
+  kok anlam: []
+  concepts: []
+  notes: 
+  ornek lexemeler:
+    L-CORPUS-00595  шэн                  Sürmek, gezdirmek
+    L-CORPUS-00926  шэджагъуэ            ÖĞLEN
+    L-CORPUS-00990  шэрхъ                Tekerlek
+
+--- WF-FA (17 lexeme) ---
+  roots: []
+  kok anlam: []
+  concepts: []
+  notes: фэ (deri, cilt). 'зэкуэфэуэн' (uyluk dövmek) buraya ait değil, temizlendi.
+  ornek lexemeler:
+    L-CORPUS-01708  фэбжь                yara
+    L-CORPUS-01929  фэягъэр              KASTOLUNMAK
+    L-CORPUS-02064  фэтэр                ÂDİL
+
+--- WF-ZAU (16 lexeme) ---
+  roots: []
+  kok anlam: []
+  concepts: []
+  notes: 
+  ornek lexemeler:
+    L-CORPUS-00383  заулэ                BIRAZ
+    L-CORPUS-01126  зауэр                DÖVÜŞEN
+    L-CORPUS-01485  заулэрэ              birkaç kez, bir süre
+
+--- WF-KO (12 lexeme) ---
+  roots: ['R-KO']
+  kok anlam: ['R-KO=domuz']
+  concepts: []
+  notes: Otomatik onarıldı (lexemes.json referansı)
+  ornek lexemeler:
+    L-CORPUS-00148  къо                  bristle
+    L-CORPUS-01218  къодый               SADECE
+    L-CORPUS-01303  къохъу               Yaban domuzu
+
+--- WF-QA (10 lexeme) ---
+  roots: []
+  kok anlam: []
+  concepts: []
+  notes: 
+  ornek lexemeler:
+    L-CORPUS-00374  къабзэу              BENZER
+    L-CORPUS-00954  темыр                Kuzey Batı
+    L-CORPUS-01405  къамыл               Çerkes flütü
+
+--- WF-IKI (10 lexeme) ---
+  roots: ['R-IKI']
+  kok anlam: ['R-IKI=?']
+  concepts: []
+  notes: Otomatik onarıldı (lexemes.json referansı)
+  ornek lexemeler:
+    L-CORPUS2-00460  икӏэрыкӏэу           anew
+    L-CORPUS2-00585  икӏэм-икӏэжым        eventually
+    L-CORPUS2-00912  икӏын                gitmek
+
+--- WF-SYD (9 lexeme) ---
+  roots: ['R-SYD']
+  kok anlam: ['R-SYD=?']
+  concepts: []
+  notes: Otomatik onarıldı (lexemes.json referansı)
+  ornek lexemeler:
+    L-CORPUS-00008  сыда                 Niye, neden, niçin?
+    L-CORPUS-00018  сыд                  Ne?
+    L-CORPUS-00163  сыдэущтэу            NASIL
+
+--- WF-DZHY (9 lexeme) ---
+  roots: ['R-DZHY']
+  kok anlam: ['R-DZHY=?']
+  concepts: []
+  notes: Otomatik onarıldı (lexemes.json referansı)
+  ornek lexemeler:
+    L-CORPUS-00031  джыри                Son
+    L-CORPUS-00307  джырэ                ÇAĞDIŞI
+    L-CORPUS-00698  джыдэдэм             HEMEN
+
+--- WF-ANA (9 lexeme) ---
+  roots: []
+  kok anlam: []
+  concepts: []
+  notes: 
+  ornek lexemeler:
+    L-CORPUS-00568  уанэ                 Eyer
+    L-CORPUS-00612  банэ                 DİKEN 1
+    L-CORPUS-01716  бэлацэ               TÜYLÜ
+
+--- WF-ARY (8 lexeme) ---
+  roots: ['R-ARY']
+  kok anlam: ['R-ARY=?']
+  concepts: []
+  notes: Otomatik onarıldı (lexemes.json referansı)
+  ornek lexemeler:
+    L-CORPUS-00006  ары                  Evet, öyledir
+    L-CORPUS-00074  арыти                ÖYLEKI
+    L-CORPUS-01262  арыгъэ               evet öyleydi
+
+--- WF-DED (8 lexeme) ---
+  roots: []
+  kok anlam: []
+  concepts: []
+  notes: 
+  ornek lexemeler:
+    L-CORPUS-00034  дыдэ                 HIZLI
+    L-CORPUS-00050  дыдэу                HIZLI
+    L-CORPUS-00089  дэд                  BAMBAŞKA
+
+--- WF-PSHA (8 lexeme) ---
+  roots: []
+  kok anlam: []
+  concepts: []
+  notes: 
+  ornek lexemeler:
+    L-CORPUS-00382  пщэдджыжьым          sabah
+    L-CORPUS-00794  нобэрей              Vermek
+    L-CORPUS-00946  пщэрылъ              GÖREV
+
+--- WF-WNA (8 lexeme) ---
+  roots: []
+  kok anlam: []
+  concepts: []
+  notes: 
+  ornek lexemeler:
+    L-CORPUS-00566  гъунэ                TAHDIT
+    L-CORPUS-00674  гъэунэхуныгъэ        experience
+    L-CORPUS-02375  гъэунэфын            DENEMEK, NİŞANLAMAK
