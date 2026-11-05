@@ -15,8 +15,6 @@ export default defineConfig({
       'src/tests/certification/**',
       'src/tests/ui/**',
       'src/tests/P5S5_02_GraphTraversal.test.ts',
-      'src/tests/domain/discovery/QuerySemanticMapper.cert.test.ts',
-      'src/tests/domain/discovery/Phase5_4_NetworkExplorer.cert.test.ts',
       'src/tests/certification/**',
       '**/node_modules/**',
       'src/tests/domain/DialectAnalytics.test.ts',
@@ -24,6 +22,8 @@ export default defineConfig({
     ],
   },
 });
+
+
 
 
 

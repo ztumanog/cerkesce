@@ -1,4 +1,4 @@
-﻿import { describe, it, expect } from 'vitest';
+import { describe, it, expect } from 'vitest';
 import { QuerySemanticMapper } from '../../../domain/discovery/services/QuerySemanticMapper';
 
 describe('Phase 5.3 - Query-Semantic Mapping Certification (QSM)', () => {
@@ -11,13 +11,13 @@ describe('Phase 5.3 - Query-Semantic Mapping Certification (QSM)', () => {
     const ruResult = mapper.map('вода');
     const adyResult = mapper.map('псы');
 
-    expect((trResult.candidates! as any)![0][0].conceptId).toBe(WATER_CONCEPT_ID);
-    expect((enResult.candidates! as any)![0][0].conceptId).toBe(WATER_CONCEPT_ID);
-    expect((ruResult.candidates! as any)![0][0].conceptId).toBe(WATER_CONCEPT_ID);
-    expect((adyResult.candidates! as any)![0][0].conceptId).toBe(WATER_CONCEPT_ID);
+    expect((trResult.candidates! as any)![0].conceptId).toBe(WATER_CONCEPT_ID);
+    expect((enResult.candidates! as any)![0].conceptId).toBe(WATER_CONCEPT_ID);
+    expect((ruResult.candidates! as any)![0].conceptId).toBe(WATER_CONCEPT_ID);
+    expect((adyResult.candidates! as any)![0].conceptId).toBe(WATER_CONCEPT_ID);
 
-    expect((trResult.candidates! as any)![0][0].confidence).toBe(1.0);
-    expect((enResult.candidates! as any)![0][0].confidence).toBe(1.0);
+    expect((trResult.candidates! as any)![0].confidence).toBe(1.0);
+    expect((enResult.candidates! as any)![0].confidence).toBe(1.0);
   });
 
   it('QSM-002: Diller dogru tespit edilmelidir (TR, EN, RU, ADY)', () => {
@@ -45,3 +45,4 @@ describe('Phase 5.3 - Query-Semantic Mapping Certification (QSM)', () => {
     expect(result.candidates![0]?.confidence).toBe(0.7);
   });
 });
+
