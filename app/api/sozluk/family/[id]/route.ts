@@ -15,14 +15,14 @@ function loadLexemes() {
 
 export async function GET(
   req: NextRequest,
-  { params }: { params: Promise<{ wordFamilyId: string }> }
+  { params }: { params: Promise<{ id: string }> }
 ) {
   try {
-    const { wordFamilyId } = await params;
+    const { id } = await params;
     const lexemes = loadLexemes();
 
     const familyMembers = lexemes
-      .filter((l: any) => l.wordFamilyId === wordFamilyId)
+      .filter((l: any) => l.id === id)
       .map((l: any) => ({
         id: l.id,
         form: l.form,
@@ -34,7 +34,7 @@ export async function GET(
       }));
 
     return NextResponse.json({
-      wordFamilyId,
+      id,
       members: familyMembers,
       count: familyMembers.length,
     });
