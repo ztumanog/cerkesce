@@ -1,6 +1,8 @@
 import fs from 'fs';
 import path from 'path';
 
+export const dynamic = 'force-dynamic';
+
 export default function FazKontrolPage() {
   const manifestPath = path.join(process.cwd(), 'data', 'faz-kontrol.json');
   if (!fs.existsSync(manifestPath)) {
@@ -41,7 +43,7 @@ export default function FazKontrolPage() {
             </div>
             <div style={{ background: '#f0fdf4', border: '2px solid #bbf7d0', padding: 16, borderRadius: 12 }}>
               <div style={{ fontSize: 12, color: '#166534' }}>Durum</div>
-              <div style={{ fontSize: 14, fontWeight: 700, color: '#15803d' }}>✓ 19 test gecti</div>
+              <div style={{ fontSize: 14, fontWeight: 700, color: '#15803d' }}>✓ {(findings.lastVerifiedTestCount ?? "?")} test gecti</div>
               <div style={{ fontSize: 11, color: '#16a34a' }}>{manifest.generatedAt?.slice(0,19)}</div>
             </div>
           </div>
