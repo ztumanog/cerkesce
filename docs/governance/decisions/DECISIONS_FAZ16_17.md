@@ -176,6 +176,63 @@
 
 **Sonuç:** Faz 18'de ele alınacak.
 
+
+
+## KARAR 12 — Faz 17B: Production vs Yerel Farkları (Kritik Bulgu)
+
+**Karar:** Production ile yerel arasındaki farklar **belgelenecek**, düzeltme **Faz 18'e** bırakılacak.
+
+### Bulgular
+
+**A) roots.json — Production vs Yerel:**
+- Production: 525 kayıt
+- Yerel: 918 kayıt
+- Yerelde var, prod'da YOK: **429** 🚨
+- Prod'da var, yerelde YOK: **36** 🚨
+
+**B) Kiril Kimlikler:**
+- `roots.id`: 1 Kiril (`R-ALTEС`)
+- `wf.lexemeIds`: **2522 Kiril** (`CEFR-AILE-АДЭ` gibi)
+
+**C) Referans Bütünlüğü:**
+- `wf.rootIds → roots.id`: **291 yetim** 🚨
+- `roots.wordFamily.id → wf.id`: **31 yetim**
+- `lexemes.rootIds → roots.id`: 0 yetim ✅
+- `lexemes.wordFamilyId → wf.id`: 0 yetim ✅
+
+**D) wf.lexemeIds Ön Ek:**
+- `L`: 11236
+- `KAV`: **2340** 🚨
+- Diğer: HUV6 (60), HUV2 (33), CEFR (23), HUV3 (20), LEX (8)
+
+**E) lexemes.json Alan Doluluk:**
+- `conceptId`: %25 (7249/28410)
+- `wordFamilyId`: %51
+- `rootIds`: %55
+- Diğer alanlar %90+
+
+### Risk
+
+| # | Bulgu | Risk |
+|---|-------|------|
+| 1 | Production'da 429 kök eksik | 🔴 Yüksek (deploy eksik) |
+| 2 | `wf.rootIds`'te 291 yetim | 🔴 Yüksek (bozuk referans) |
+| 3 | `KAV-` ön eki 2340 kez | 🟡 Orta (kavram ID'leri) |
+| 4 | `wf.lexemeIds`'te 2522 Kiril | 🟡 Orta (CEFR verisi) |
+| 5 | Production'da 36 fazla kök | 🟡 Orta (versiyon farkı) |
+
+### Karar
+
+- Bu bulgular **belgelendi**, düzeltme **Faz 18'e** bırakıldı.
+- `roots.json` production'a **deploy edilmeli** (429 eksik kök).
+- `wf.rootIds` yetimleri **temizlenmeli** (291 yetim).
+- `KAV-` ön ekli ID'ler **araştırılmalı** (2340 kayıt).
+- Kiril ID'ler **normalize edilmeli** (2522 + 1).
+
+**Hiçbir dosya değiştirilmedi. Salt okunur doğrulama.**
+
+---
+
 ---
 
 **Karar Tarihi:** 2026-11-05
