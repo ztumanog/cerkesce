@@ -178,7 +178,7 @@
 
 
 
-## KARAR 12 — Faz 17B: Production vs Yerel Farkları (Kritik Bulgu)
+## KARAR 11 — Faz 17B: Production vs Yerel Farkları (Kritik Bulgu)
 
 **Karar:** Production ile yerel arasındaki farklar **belgelenecek**, düzeltme **Faz 18'e** bırakılacak.
 
@@ -230,6 +230,224 @@
 - Kiril ID'ler **normalize edilmeli** (2522 + 1).
 
 **Hiçbir dosya değiştirilmedi. Salt okunur doğrulama.**
+
+---
+
+
+
+## KARAR 12 — Faz 17B: Adım 3 Sonuçları (Kritik Veri Bütünlüğü)
+
+**Karar:** Adım 3 bulguları belgelendi, düzeltme Faz 18'e bırakıldı. Salt okunur doğrulama tamamlandı.
+
+### Bulgular
+
+**1) Deploy Kaynağı Belirsiz:**
+- Production: 525 kök
+- Yerel: 918 kök
+- `.backups/reset-sonrasi`: 835 kök
+- **Hiçbiri production ile birebir eşleşmiyor**
+
+**2) 291 Yetim Kök:**
+- `wf.rootIds → roots.id`: 291 yetim
+- Hiçbir dosyada (production, yerel, .backups) bulunamadı
+- Örnek: `R-ABE`, `R-ABKHAZ`, `R-ACTION`, `R-AKT`
+
+**3) KAV-* Kavram Sızıntısı:**
+- Toplam 12.672 `KAV-*` ID
+- Örnek: `KAV--И` (form='-и', meaning='as well')
+- **Kavram ID'leri lexeme ID'si olarak kullanılmış**
+
+**4) Kiril ID'ler:**
+- 13.329 lexeme Kiril ID taşıyor (%47)
+- Örnek: `CEFR-AILE-АДЭ`, `CEFR-DOGA-ВАГЪУЭ`
+- URL slug ve alfabetik sıralama için sorun
+
+**5) Karşılıklılık Bozuk:**
+- 85 lexeme iki farklı aile gösteriyor
+- 967 lexeme aile gösteriyor, aile listelemiyor
+- Örnek: `WF-TKHA` → `L-CORPUS-03966` → `WF-TKHEMPE`
+
+**6) R-ALTEC Homoglyph:**
+- `R-ALTEC` (Latin C): 1 lexeme ref
+- `R-ALTEС` (Kiril С): 0 ref
+- İkisi de `faz15b_migration`'dan
+
+**7) `rootIds` Tekrarı:**
+- `CEFR-AILE-АДЭ`: `rootIds=['R-1E', 'R-1E']` (aynı kök iki kez)
+
+### Risk
+
+| # | Bulgu | Risk |
+|---|-------|------|
+| 1 | Production 525, deploy kaynağı belirsiz | 🔴 Yüksek |
+| 2 | 291 yetim kök | 🔴 Yüksek |
+| 3 | 12.672 KAV-* sızıntısı | 🔴 Yüksek |
+| 4 | 13.329 Kiril ID (%47) | 🔴 Yüksek |
+| 5 | 85 çift aile + 967 eksik listeleme | 🟡 Orta |
+| 6 | R-ALTEC homoglyph | 🟢 Düşük |
+
+### Karar
+
+- **Veri bütünlüğü bozuk.** Faz 18'de temizlik gerekli.
+- **Migration onaylanmadı.** Önce bu sorunlar çözülmeli.
+- **Arama-öncelikli UI** kurulabilir (form %100, meaning %97, translations %99).
+- **Aile/kök gezinmesi** güvenilmez (%51/%55, 291 yetim).
+- **Dialect Convert** verinin %45'i var — ana ekran yapılamaz.
+
+### Kapsama (UI İçin)
+
+| Alan | DOLU | UI Kullanımı |
+|------|------|--------------|
+| form | %100 | ✅ Arama |
+| translations | %99 | ✅ Arama |
+| meaning | %97 | ✅ Arama |
+| ipa | %98 | ✅ Detay |
+| partOfSpeech | %94 | ✅ Detay |
+| examples | %53 | 🟡 Detay (koşullu) |
+| rootIds | %55 | 🟡 Detay (koşullu) |
+| wordFamilyId | %51 | 🟡 Detay (koşullu) |
+| dialectVariants | %45 | 🟡 Detay (koşullu) |
+
+**Sonuç:** Arama-öncelikli sözlük + detay sayfasında koşullu bölümler.
+
+---
+
+
+
+## KARAR 13 — Faz 17B: Adım 4 Sonuçları (Kapsama Yanılgısı)
+
+**Karar:** Önceki "kapsama iyi" değerlendirmesi **çürütüldü**. Gerçek doluluk çok daha düşük. Düzeltme Faz 18'e bırakıldı.
+
+### Bulgular
+
+**A) partOfSpeech — %80 "noun" Sahte:**
+- `noun`: 22.837 (%80)
+- `verb`: 3.120 (%10)
+- `adjective`: **76** (%0) 🚨
+- `None`: 1.385 (%4)
+- KAV-* kayıtlarının %99'u "noun"
+
+**B) Placeholder Bombası:**
+- `wordFamilyId == 'WF-A'`: 184
+- `rootIds` içinde `'R-1E'`: 1.446
+- `rootIds` TAM OLARAK `['R-1E','R-1E']`: **1.409** 🚨
+- `rootIds` listesi kendi içinde tekrarlı: 3.102
+
+**C) word_families Kimlik Hijyeni:**
+- Tire/altçizgi ile biten wf.id: 23
+- Placeholder adlı: 3 (`WF-UNCLEAR` gibi)
+- Çok kısa wf.id (≤6): 397
+- lexemeIds'i boş aile: 41/1041
+- `primaryMeaning='?'` veya boş kök: **437/918** (%48) 🚨
+- Bu köklere yönelen lexeme ref: 2.729
+
+**D) Ön Ek Bazında Gerçek Doluluk:**
+| Ön Ek | n | rootIds | wfId | dialectVar | derivation | conceptId |
+|-------|---|---------|------|------------|------------|-----------|
+| L | 15113 | 79% | 80% | 82% | 69% | 40% |
+| KAV | 12672 | **28%** | **18%** | **0%** | **0%** | **4%** 🚨 |
+| HUV6 | 351 | 34% | 17% | 82% | 0% | 100% |
+
+**E) translations Dil Bazında:**
+- tr: 28.103 (%98)
+- ru: 24.252 (%85)
+- en: 23.225 (%81)
+- ar: 7.032 (%24)
+- **trVerified: 510 (%1)** 🚨
+
+**F) Arama İçin:**
+- Çoğul form: 477 (982 kayıt)
+- **meaning TAMAMEN BÜYÜK HARF: 6.696 (%23)** 🚨
+
+### Risk
+
+| # | Bulgu | Risk |
+|---|-------|------|
+| 1 | POS %80 "noun" | 🔴 Yüksek |
+| 2 | 1.409 kayıtta `rootIds=['R-1E','R-1E']` | 🔴 Yüksek |
+| 3 | 437/918 kök `primaryMeaning='?'` | 🔴 Yüksek |
+| 4 | KAV-* 12.672 kayıt, %99 noun | 🔴 Yüksek |
+| 5 | 6.696 kayıtta meaning büyük harf | 🟡 Orta |
+| 6 | trVerified sadece 510 (%1) | 🟡 Orta |
+| 7 | 3.102 kayıtta rootIds tekrarlı | 🟡 Orta |
+| 8 | 397 çok kısa wf.id | 🟡 Orta |
+
+### Karar
+
+- **Kapsama yanılgısı çürütüldü.** Önceki "form %100, meaning %97" ifadesi **anahtar varlığı** idi, **gerçek doluluk** değil.
+- **Gerçek doluluk:** form %100 ✅, POS %80 sahte 🚨, conceptId %25, dialectVariants %45.
+- **KAV-* 12.672 kayıt** gerçek lexeme değil (rootIds %28, wfId %18, conceptId %4).
+- **trVerified sadece 510** (%1) — çeviri güvenilirliği düşük.
+- **Faz 18'de veri temizliği zorunlu.**
+
+### UI Kararı
+
+- **Arama hâlâ güvenli** (form %100, meaning %97, translations %99).
+- **POS filtreleri güvenilmez** (%80 noun).
+- **Kök/aile gezinmesi güvenilmez** (437 boş kök, 291 yetim).
+- **Dialect Convert verinin %45'i var** — koşullu bölüm.
+- **trVerified %1** — "doğrulanmış" rozeti dikkatli kullanılmalı.
+
+---
+
+
+
+## KARAR 14 — Düzeltme — Alan Doluluk Oranları ve Deploy Uyarısı
+
+**Düzeltme tarihi:** 2026-11-05
+**Düzeltilen:** KARAR 12'deki iki hata
+
+### Hata 1 — "Diğer alanlar %90+" yanlış
+
+**Yanlış:** "conceptId %25, wordFamilyId %51, rootIds %55, diğer alanlar %90+"
+
+**Doğru:** Adım 4'te ölçüldü:
+- `partOfSpeech`: %80 "noun" (sahte)
+- `meaning`: %97 (ama 6.696 kayıtta büyük harf)
+- `translations.tr`: %98 (ama trVerified %1)
+- `ipa`: %98
+- `dialectVariants`: %45
+
+### Hata 2 — "roots.json production'a deploy edilmeli" yanlış
+
+**Yanlış:** "429 eksik kök var, deploy edilmeli"
+
+**Doğru:**
+| | Kayıt | Boyut | Bayt/kayıt |
+|---|---:|---:|---:|
+| `roots.json` (HEAD) | 918 | 675.513 B | 736 |
+| `roots.yedek-20261025-012613.json` | 525 | 700.276 B | **1.334** |
+
+**Daha az kayıt, daha büyük dosya.** Production'daki kökler kayıt başına 1.8 kat daha zengin. Deploy öncesi karşılaştırma gerekli.
+
+**Düzeltilmiş karar:** Production deploy **ertelendi**. Önce `roots.yedek-20261025-012613.json` ile HEAD karşılaştırılmalı, hangisi alan bazında zengin, sonra karar.
+
+---
+
+## KARAR 15 — Latin Arama Faz 1 Dışı (Faz 2'ye Ertelendi)
+
+**Karar:** Latin arama (`translit.ts`) Faz 1 dışında bırakılacak, Faz 2'ye ertelenecek.
+
+**Gerekçe:**
+- `form` alanı %100 Kiril
+- Latin biçim veride yok
+- Tek yetkili Kiril↔Latin fonksiyonu henüz üretilmedi
+- Faz 1'de Kiril arama ile başlanabilir
+
+**Faz 1 kapsamı:**
+- Sunucu tarafı API (`/api/search`)
+- Kiril `form` üzerinden arama
+- Koşullu detay sayfası (değeri olan alanlar)
+- POS rozeti YOK
+- Kaynak alanı YOK
+- Lehçe dönüştürücü YOK
+
+**Faz 2 kapsamı:**
+- `src/domain/translit.ts` — Kiril↔Latin tablosu
+- Latin arama endeksi
+- Dialect Convert ekranı
+
+**Not:** `concept_registry_audit.json` otorite olarak kullanılmaz (uniqueLexemeConcepts=1 anomalisi). Bugünkü ölçüm: 2.594 tekil conceptId, 525 registry, %86 eksik.
 
 ---
 
