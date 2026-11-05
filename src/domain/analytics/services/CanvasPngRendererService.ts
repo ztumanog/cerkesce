@@ -31,10 +31,7 @@ export class CanvasPngRendererService {
 
     // 2. PNG stub (gercek render client-side)
     // 1x1 transparent PNG
-    const realSvgBase64 = this.svgToPngDataUri(svg);
-
-    // 3. Data URI
-    return `data:image/svg+xml;base64,${realSvgBase64 /* FIXED */}`;
+    return this.svgToPngDataUri(svg);
   }
 
   /**
