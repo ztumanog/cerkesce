@@ -8,7 +8,7 @@ export default function FazKontrolPage() {
   if (!fs.existsSync(manifestPath)) {
     return <div style={{padding:40}}>manifest bulunamadi: {manifestPath}</div>;
   }
-  const raw = fs.readFileSync(manifestPath, 'utf-8');
+  const raw = fs.readFileSync(manifestPath, 'utf-8').replace(/^\uFEFF/, '').trim();
   const manifest = JSON.parse(raw);
   const uniq = new Set(manifest.edges.map((e:any) => `${e.from}->${e.to}`)).size;
   const dup = manifest.edges.length - uniq;
