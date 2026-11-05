@@ -76,6 +76,31 @@
 
 **Karar:** `concept_registry_uret.py` **çalıştırılmayacak**.
 
+
+
+### KARAR 5a — 9 Nesne Kaydının Şeması (Detay)
+
+9 nesne kaydının tam şeması:
+
+| Kavram | id | name | nameTr | category | notes |
+|--------|-----|------|--------|----------|-------|
+| HAIL | HAIL | Dolu (yağış) | Dolu (yağış) | weather | уэ (dolu) — L-UE için. R-UE-HAIL köküne bağlı. |
+| HEY_OH | HEY_OH | Ünlem (vay/ooo) | Ünlem (vay/ooo) | interjection | уэ (ünlem) — L-UE-INTJ için. R-UE-INTJ köküne bağlı. |
+| PARTICLE_SEQ | PARTICLE_SEQ | Partikül (ise/derken) | Partikül (ise/derken) | grammar | уэ (partikül) — L-UE-PART için. R-UE-PART köküne bağlı. |
+| COMPANION | COMPANION | Yoldaş | Yoldaş | social | — |
+| EAR | EAR | Kulak | Kulak | body | — |
+| LONG | LONG | Uzun | Uzun | adjective | — |
+| OLD | OLD | Eski/Yaşlı | Eski/Yaşlı | adjective | — |
+| OX | OX | Öküz | Öküz | animal | — |
+| THIEF | THIEF | Hırsız | Hırsız | social | — |
+
+**Kritik:**
+- `HAIL`, `HEY_OH`, `PARTICLE_SEQ` → `уэ` (UE) köküne ait, homonym
+- `notes` alanı kök bağlantısını gösteriyor ama doğrulanmadı
+- `concept_registry_uret.py` bu şemayı işlemiyor
+
+**Karar:** Bu 9 kayıt **korunacak**, şema değiştirilmeyecek.
+
 ---
 
 ## KARAR 6 — İki ConceptRegistry.ts (Faz 17A Bulgusu)
