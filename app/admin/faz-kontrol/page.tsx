@@ -6,11 +6,11 @@ export const dynamic = 'force-dynamic';
 export default function FazKontrolPage() {
   const manifestPath = path.join(process.cwd(), 'data', 'faz-kontrol.json');
   if (!fs.existsSync(manifestPath)) {
-    return <div style={{padding:40}}>manifest bulunamadi: {manifestPath}</div>;
+    return <div style={{ padding: 40 }}>manifest bulunamadi: {manifestPath}</div>;
   }
-  const raw = fs.readFileSync(manifestPath, 'utf-8').replace(/^\uFEFF/, '').trim();
+  const raw = fs.readFileSync(manifestPath, 'utf-8').replace(/^\uFEFF/, '').trim().replace(/^\uFEFF/, '').trim();
   const manifest = JSON.parse(raw);
-  const uniq = new Set(manifest.edges.map((e:any) => `${e.from}->${e.to}`)).size;
+  const uniq = new Set(manifest.edges.map((e: any) => `${e.from}->${e.to}`)).size;
   const dup = manifest.edges.length - uniq;
 
   const findings = manifest.findings;
@@ -44,7 +44,7 @@ export default function FazKontrolPage() {
             <div style={{ background: '#f0fdf4', border: '2px solid #bbf7d0', padding: 16, borderRadius: 12 }}>
               <div style={{ fontSize: 12, color: '#166534' }}>Durum</div>
               <div style={{ fontSize: 14, fontWeight: 700, color: '#15803d' }}>✓ {(findings.lastVerifiedTestCount ?? "?")} test gecti</div>
-              <div style={{ fontSize: 11, color: '#16a34a' }}>{manifest.generatedAt?.slice(0,19)}</div>
+              <div style={{ fontSize: 11, color: '#16a34a' }}>{manifest.generatedAt?.slice(0, 19)}</div>
             </div>
           </div>
         </div>
@@ -53,9 +53,8 @@ export default function FazKontrolPage() {
           <div style={{ background: 'white', borderRadius: 16, padding: 20, boxShadow: '0 4px 24px rgba(0,0,0,0.06)' }}>
             <h2 style={{ margin: '0 0 12px 0', fontSize: 16, fontWeight: 700 }}>🔍 Kanitlar (Findings)</h2>
             <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
-              <div style={{ display: 'flex', justifyContent: 'space-between', padding: '10px 12px', borderRadius: 8, background: findings.batchCallsExportEngine ? '#f0fdf4' : '#fef2f2', border: `1px solid ${findings.batchCallsExportEngine ? '#bbf7d0' : '#fecaca'}` }}>
-                <span style={{ fontSize: 13, fontWeight: 600 }}>batchCallsExportEngine</span>
-                <span style={{ fontSize: 12, fontWeight: 700, color: findings.batchCallsExportEngine ? '#15803d' : '#dc2626' }}>{findings.batchCallsExportEngine ? '✓ KANIT: BatchExport -> ExportEngine cagiriyor' : '✗ Yok'}</span>
+              <div className={!findings.batchCallsExportEngine ? 'bg-green-50 border-green-200' : 'bg-red-50 border-red-200'}>
+                <span>{!findings.batchCallsExportEngine ? '✓ OK' : '✗ Var'}</span>
               </div>
               <div style={{ display: 'flex', justifyContent: 'space-between', padding: '10px 12px', borderRadius: 8, background: findings.canvasDiscardsRealSvg ? '#fef2f2' : '#f0fdf4', border: `1px solid ${findings.canvasDiscardsRealSvg ? '#fecaca' : '#bbf7d0'}` }}>
                 <span style={{ fontSize: 13, fontWeight: 600 }}>canvasDiscardsRealSvg</span>
@@ -75,7 +74,7 @@ export default function FazKontrolPage() {
 
           <div style={{ background: 'white', borderRadius: 16, padding: 20, boxShadow: '0 4px 24px rgba(0,0,0,0.06)' }}>
             <h2 style={{ margin: '0 0 12px 0', fontSize: 16, fontWeight: 700 }}>🗺️ Export Pipeline - 2 Yol</h2>
-            
+
             <div style={{ borderLeft: '4px solid #f87171', paddingLeft: 12, marginBottom: 16, background: '#fef2f2', borderRadius: '0 8px 8px 0', paddingTop: 10, paddingBottom: 10 }}>
               <div style={{ fontWeight: 700, fontSize: 13, color: '#991b1b' }}>OLD: BatchExport → ExportEngine</div>
               <div style={{ fontSize: 12, color: '#7f1d1d', marginTop: 4 }}>• Math.random() x/y (satir 104-105) - non-deterministik</div>
