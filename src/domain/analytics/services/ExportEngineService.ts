@@ -7,6 +7,7 @@
  * - SVG: XML escaping
  * - PNG: data URI stub
  */
+import { SvgLayoutEngineService } from './SvgLayoutEngineService';
 
 export type ExportFormat = 'JSON' | 'SVG' | 'PNG';
 
@@ -80,45 +81,18 @@ export class ExportEngineService {
     };
   }
 
-  /**
-   * SVG export (XML escaping ile)
+    /**
+   * SVG export - TEK URETEC: SvgLayoutEngineService (motor birlestirme)
    */
   private static exportSVG(
     network: GenericConceptNetworkDTO,
     width: number,
     height: number
   ): ExportResult {
-    const escapeXML = (str: string): string => {
-      return str
-        .replace(/&/g, '&amp;')
-        .replace(/</g, '&lt;')
-        .replace(/>/g, '&gt;')
-        .replace(/"/g, '&quot;')
-        .replace(/'/g, '&apos;');
-    };
-
-    let svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}">`;
-
-    for (let index = 0; index < network.nodes.length; index++) {
-      const node = network.nodes[index];
-      const label = escapeXML(node.label || node.id);
-      const angle = (index * 2 * Math.PI) / network.nodes.length;
-      const x = Math.floor(width / 2 + (width / 2 - 40) * Math.cos(angle));
-      const y = Math.floor(height / 2 + (height / 2 - 40) * Math.sin(angle));
-      svg += `<circle id="node-${escapeXML(node.id)}" cx="${x}" cy="${y}" r="20" />`;
-      svg += `<text x="${x}" y="${y}">${label}</text>`;
-    }
-
-    svg += '</svg>';
-
-    return {
-      format: 'SVG',
-      mimeType: 'image/svg+xml',
-      content: svg,
-      nodeCount: network.nodes.length,
-      edgeCount: network.edges.length,
-    };
+    const content = SvgLayoutEngineService.render(network, { width, height });
+    return { format: 'SVG', mimeType: 'image/svg+xml', content, nodeCount: network.nodes.length, edgeCount: network.edges.length };
   }
+
 
   /**
    * PNG export (data URI stub)

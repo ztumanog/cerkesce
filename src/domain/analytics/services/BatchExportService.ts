@@ -5,7 +5,6 @@
  * Birden fazla network'u tek cagride export eder.
  */
 
-import { SvgLayoutEngineService } from './SvgLayoutEngineService';
 import { ExportEngineService, ExportFormat, ExportOptions, ExportResult } from './ExportEngineService';
 import type { GenericConceptNetworkDTO } from './ExportEngineService';
 
@@ -44,7 +43,7 @@ export class BatchExportService {
     const exports: Record<string, ExportResult> = {};
 
     for (const item of items) {
-      exports[item.id] = SvgLayoutEngineService.render(item.network, options) as unknown as ExportResult;
+      exports[item.id] = ExportEngineService.exportNetwork(item.network, options);
     }
 
     return {

@@ -36,7 +36,8 @@ describe('Phase 7.0 - Export Engine Certification Tests', () => {
     expect(result.format).toBe('SVG');
     expect(result.mimeType).toBe('image/svg+xml');
     expect(result.content).toContain('<svg xmlns="http://www.w3.org/2000/svg"');
-    expect(result.content).toContain('node-CONCEPT_WATER');
+    expect(result.content).toContain('viewBox="0 0 1024 768"');
+    expect(result.content).toContain('<line');
     // XML Escaping verification: & -> &amp;, < -> &lt;, > -> &gt;
     expect(result.content).toContain('ĞŸÑÑ‹ &amp; æ°´ &lt;Water&gt;');
   });
