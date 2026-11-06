@@ -451,6 +451,120 @@
 
 ---
 
+
+
+## KARAR 16 — WF-F Ailesi Anlam Bazlı Değil, Ses Bazlı (Kritik Bulgu)
+
+**Karar:** `WF-F` ailesi **bozuk** olarak işaretlenecek. Anlam bazlı değil, sadece "f" sesiyle başlayan kelimeleri toplamış.
+
+### Bulgular
+
+`WF-F` ailesi (R-F kökü):
+- Toplam: 140 kayıt
+- `conceptId` dolu: 23 (%16)
+- `conceptId` boş: 117 (%84)
+
+### 23 ConceptId — 18 Farklı Kavram
+
+| ConceptId | Sayı | Yorum |
+|-----------|------|-------|
+| WOMAN | 3 | ❌ Alakasız |
+| AGRICULTURE | 2 | ❌ |
+| MARITAL_STATUS | 2 | ❌ |
+| ANIMAL | 2 | ❌ |
+| **DECAY** | **1** | ✅ **L-FYN doğru** |
+| HORSE | 1 | ❌ |
+| BEVERAGE | 1 | ❌ |
+| KIYAFET | 1 | ❌ |
+| ICKI_ALISKANLIGI | 1 | ❌ |
+| MARRIAGE | 1 | ❌ |
+| ACTION | 1 | ❌ |
+| ANTONYM | 1 | ❌ |
+| PROFESSION | 1 | ❌ |
+| GOODNESS | 1 | ❌ |
+| MILL | 1 | ❌ |
+| UNKNOWN | 1 | ❌ |
+| FAMILY | 1 | ❌ |
+| RELATION | 1 | ❌ |
+
+### Kanıt — Sözlükten
+
+Çıktıda `фызыншэ` (karısı olmayan), `фызабэ` (dul kadın), `фызышэ` (düğün), `фадафэ` (içkici) gibi kelimeler var. Ama `фын` (L-FYN) sözlükte **yok** çünkü fiil.
+
+### L-FYN İçin Kanıt
+
+`KAV-ФЫНЫГЪЭ` (фыныгъэ) = **"decay"** — aynı kökten türemiş isim, "çürüme" anlamında. `L-FYN` → `DECAY` doğru.
+
+### Risk
+
+| # | Bulgu | Risk |
+|---|-------|------|
+| 1 | WF-F 140 kayıt, sadece 23 conceptId | 🔴 Yüksek |
+| 2 | 23 conceptId, 18 farklı kavram | 🔴 Yüksek |
+| 3 | R-F kökü ses bazlı, anlam bazlı değil | 🔴 Yüksek |
+| 4 | 117 kayıt conceptId boş | 🟡 Orta |
+| 5 | DECAY sadece 1 kayıtta (L-FYN) | ✅ Doğru |
+
+### Karar
+
+- `WF-F` ailesi **bozuk** olarak işaretlendi.
+- `L-FYN` → `DECAY` **doğru** (KARAR 2 uyumlu).
+- Diğer 22 conceptId **gözden geçirilmeli** (Faz 18'de).
+- `R-F` kökü **anlam bazlı yeniden düzenlenmeli** (Faz 18'de).
+
+---
+
+
+
+## KARAR 18 — Ailesiz Kökler İki Farklı Grup (Kritik Bulgu)
+
+**Karar:** 435 ailesiz kökün 258'i anlamlı ama ailesiz, 177'si anlamsız ve Latin harfli.
+
+### Bulgular
+
+| Grup | Sayı | Örnek | Sorun |
+|------|------|-------|-------|
+| primaryMeaning DOLU + ailesiz | **258** | `R-PASE` (erken), `R-ZY` (bir) | Aile eksik |
+| primaryMeaning BOŞ + ailesiz | **177** | `R-1URY`, `R-AKHMAQ` | Latin harf + anlam yok |
+
+### Grup 1 — Anlamlı Ama Ailesiz (258)
+
+Örnekler:
+- `R-PASE` (пасэ) = "erken, sabah erken, evvel, önce"
+- `R-ZY` (зы) = "bir (sayı)"
+- `R-UDZ` (удз) = "ot, çimen"
+- `R-UZ` (уз) = "ağrı, hastalık, maraz"
+- `R-GHE` (гъэ) = "yıl, yaz, sıcak mevsim"
+
+**Bu kökler gerçek, anlamlı, ama aile tanımlanmamış.**
+
+### Grup 2 — Anlamsız + Latin Harfli (177)
+
+Örnekler:
+- `R-1URY` (form: `1ury`) — Latin harf
+- `R-1USHE` (form: `1ushe`) — Latin harf
+- `R-AKHMAQ` (form: `akhmaq`) — Latin harf
+- `R-AKMY` (form: `akmy`) — Latin harf
+- `R-AKYL` (form: `akyl`) — Latin harf
+
+**Bu kökler Latin harfli, primaryMeaning boş. Muhtemelen `latin-orphan-2026-10-12` kaynaklı.**
+
+### Risk
+
+| # | Bulgu | Risk |
+|---|-------|------|
+| 1 | 258 anlamlı kök ailesiz | 🔴 Yüksek |
+| 2 | 177 Latin harfli kök ailesiz + anlamsız | 🔴 Yüksek |
+| 3 | İki grup farklı müdahale gerektiriyor | 🟡 Orta |
+
+### Karar
+
+- **Grup 1 (258):** Aile tanımlanmalı (Faz 18'de).
+- **Grup 2 (177):** Latin harfli, anlamsız — **silinmeli veya dönüştürülmeli** (Faz 18'de).
+- Bu iki grup **ayrı ayrı** ele alınmalı.
+
+---
+
 ---
 
 **Karar Tarihi:** 2026-11-05
