@@ -570,3 +570,155 @@
 **Karar Tarihi:** 2026-11-05
 **Onay:** Mimar
 **Sonraki Karar:** Faz 17B tamamlandığında
+
+### KARAR 15 (TASLAK - Henüz Uygulanmayacak)
+
+Tarih: 08.11.2026
+Konu: MVP-2 Latin Arama - Coklu Yazimi Kabul Et
+
+Latin arama icin Coklu yazimi kabul et yaklasimi benimsenebilir.
+
+Ornek:
+- s = sh = s
+- ch = ch = c
+- palochka = kesme = 1 = I
+- g = gh, g
+
+Ancak henuz uygulanmayacak.
+Once test tablosu olusturulacak.
+Ozellikle g, k, k, hy, h, i, palochka dugumlerindeki cakismalar netlestirilecek.
+
+Test tablosu hazirlanmadan kod yazilmayacak.
+Yeni route acilmayacak.
+Mevcut 4 scriptten biri dogrudan uretime alinmayacak.
+
+Durum: Taslak, test tablosu bekliyor.
+### 7. PALOCHKA - KARAR VERILDI
+
+Kabul: kesme, 1, I, i
+Red: l
+Kural: En uzun once.
+Durum: Mimar onayli.
+### 6. G - KARAR VERILDI
+Kabul: gh, g harfi, g kesme
+Kural: En uzun once. ghu once, sonra gh.
+Durum: Mimar onayli.
+
+### 5. K - KARAR VERILDI
+Kabul: q, kh, k harfi
+Not: kh cakismasi var, h ile test edilecek.
+Durum: Mimar onayli.
+
+### 3. HY - KARAR VERILDI
+Kabul: hy, h kesme
+Kural: En uzun once. hy once yakalanacak.
+Durum: Mimar onayli.
+
+### 2. H - KARAR VERILDI
+Kabul: h, xh, x
+Not: h tek basina h, hy ile karistirilmeyecek.
+Durum: Mimar onayli.
+
+### 1. I - KARAR VERILDI
+Kabul: i harfi, y
+Not: y hem i hem y olabilir, test ile netlesecek.
+Durum: Mimar onayli.
+
+
+## KARAR 15 - UYGULANDI (2026-11-08)
+- Uygulama: src/lib/latinNormalize.ts
+- Baglanti: app/api/search/route.ts - q = normalizePalochka(normalizeLatinToKiril(rawQ))
+- Yeni route yok. Mevcut /api/search korundu.
+- Testler gecti:
+    - gu -> гу (kalp, gonul)
+    - ghu -> гъу
+    - psi -> псы (psı ile)
+    - sh -> ш
+- Not: kucuk i -> и olarak uygulandi. Buyuk I / ' / 1 -> palochka.
+  Sebep: kucuk i palochka olursa tum i'li kelimeler bozuluyor.
+- Durum: MVP-2 cekirdek tamam.
+
+
+## KARAR 15 - PALOCHKA KESIN KARAR (2026-11-08)
+- Mimar onceligi: Palochka kapanmadan Dialect Filter baslamaz.
+- Sebep: Palochka arama motorunun kalbi, Dialect Filter sadece filtre.
+- Karar:
+    - ' -> I (palochka) KABUL
+    - 1 -> I (palochka) KABUL
+    - I (buyuk I) -> I (palochka) KABUL
+    - i (kucuk i) -> и RED (palochka degil)
+- Gerekce: kucuk i palochka olursa ki -> k + palochka olur, ama kullanici ki (ки) demek istemis olabilir. Tum i'li kelimeler bozulur.
+- Test:
+    - k'u -> кӀу
+    - k1u -> кӀу
+    - kIu -> кӀу
+    - ki -> ки (palochka degil)
+- Durum: Palochka kapatildi. Siradaki: гъ / къ kararlari.
+
+
+## KARAR 15 - GH KESIN KARAR (2026-11-08)
+- Karar:
+    - gh -> гъ KABUL
+    - g (Turkce) -> гъ KABUL
+    - g' -> гъ KABUL
+- Kural: ghu once yakalanir, sonra gh. Yoksa ghu bozulur.
+- Test:
+    - ghu -> гъу
+    - gh -> гъ
+    - gu -> гу (karismaz)
+- Durum: GH kapatildi. Siradaki: къ karari.
+
+
+## KARAR 15 - Q / KH KESIN KARAR (2026-11-08)
+- Karar:
+    - q -> къ KABUL
+    - kh -> къ KABUL
+    - k -> к (къ DEGIL)
+- Duzeltme: Eski notta k -> къ yaziyordu, yanlis. k tek basina к olur.
+- Kural: khu once yakalanir, sonra kh.
+- Test:
+    - q -> къ
+    - khu -> къу
+    - ku -> ку (karismaz)
+- Durum: къ kapatildi. Siradaki: кӀ / хь / хъ / ы toplu kapanis.
+
+
+## KARAR 15 - TOPLU KAPANIS (2026-11-08)
+### 4. кӀ
+- k' -> кӀ KABUL
+- k1 -> кӀ KABUL
+- kI -> кӀ KABUL
+- Test: k'u -> кӀу
+
+### 5. хь
+- hy -> хь KABUL
+- h' -> хь KABUL
+- Kural: hy once, sonra h
+- Test: hy -> хь
+
+### 6. хъ
+- xh -> хъ KABUL
+- x -> хъ KABUL
+- h -> х (хъ DEGIL)
+- Test: xh -> хъ, h -> х
+
+### 7. ы
+- ı -> ы KABUL
+- y -> й (ы DEGIL)
+- Gerekce: y hem ы hem й olursa bozulur. psı zaten ı ile calisiyor.
+- Test: psı -> псы, y -> й
+
+- Durum: Test tablosu kapatildi. KARAR 15 kesinlesmeye hazir.
+
+
+## KARAR 15 - KESINLESTI (2026-11-08)
+- Palochka, GH, Q/KH, Toplu Kapanis tamamlandi.
+- Kod: src/lib/latinNormalize.ts - Buyuk I palochka duzeltmesi dahil.
+- Testler gecti:
+    - kIu -> кӀу
+    - k'u -> кӀу
+    - k1u -> кӀу
+    - ki -> ки (palochka degil)
+    - gu -> гу, ghu -> гъу, psı -> псы, sh -> ш
+- Durum: KARAR 15 KESINLESTI.
+- Siradaki: MVP-2 snapshot guncelleme, sonra Dialect Filter (MVP-2 sonrasi).

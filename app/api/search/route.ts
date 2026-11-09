@@ -1,421 +1,85 @@
-﻿import { NextRequest, NextResponse } from 'next/server';
+﻿// app/api/search/route.ts - MVP-1 - Ürünün Ana Araması
+// Bu geçici değil, kalıcı. Lexeme tabanlı tek arama API'si.
+// NOT: Server cache var. Veri (lexemes.json) değişirse dev restart gerekir. Faz 1 için kabul edildi.
+
+import { NextRequest, NextResponse } from 'next/server';
+import { normalizeLatinToKiril } from "@/lib/latinNormalize";
 import fs from 'fs';
 import path from 'path';
-
-// D-1A: Lexeme loader
-let cachedLexemes: any[] = [];
-function loadLexemes() {
-  if (cachedLexemes.length > 0) return cachedLexemes;
-  const p = path.join(process.cwd(), 'public', 'data', 'linguistic', 'lexemes.json');
-  if (fs.existsSync(p)) {
-    cachedLexemes = JSON.parse(fs.readFileSync(p, 'utf-8'));
-  }
-  return cachedLexemes;
-}
-
-import { loadDictionaryData } from '@/lib/dictionaryLoader';
 import { normalizePalochka } from '@/domain/utils/normalizePalochka';
 import { buildLexemeIndex, normKey } from '@/lib/lexemeIndex';
 
-/** ADR-0027: Server-side HTML strip — tüm tag'leri kaldırır */
-function stripHtml(raw: string): string {
-  if (!raw) return '';
-  return raw
-    .replace(/&lt;/g, '<')
-    .replace(/&gt;/g, '>')
-    .replace(/&amp;/g, '&')
-    .replace(/&quot;/g, '"')
-    .replace(/&#39;/g, "'")
-    .replace(/<\/?(div|p|br|hr|ul|ol|li)[^>]*>/gi, '\n')
-    .replace(/<[^>]*>/g, ' ')
-    .replace(/\(western\)/gi, '')
-    .replace(/\(eastern\)/gi, '')
-    .replace(/[ \t]+/g, ' ')
-    .replace(/\n\s*\n/g, '\n')
-    .trim();
-}
+let cachedIndex: Map<string, any> | null = null;
+let cachedList: any[] = [];
 
-export interface DictionaryEntry {
-  kelime?: string;
-  word?: string;
-  spelling?: string;
-  headword?: string;
-  key?: string;
-  anlam?: string;
-  translation?: string;
-  definition?: string;
-  definitions?: { meaning?: string }[];
-  full_definition_in_html?: string;
-  dialect?: string;
-  sourceLanguage?: string;
-  targetLanguage?: string;
-  sourceFile?: string;
-  dictionaryName?: string;
-  [key: string]: unknown;
-}
-
-interface ParsedText {
-  raw: string;
-  mainTokens: string[];
-  parenTokens: string[];
-  exampleTokens: string[];
-}
-
-interface KaynakInfo {
-  kelime: string;
-  sözlük: string;
-  anlam: string;
-  author?: string;
-  year?: string | number;
-  dialect?: string;
-  sourceFile?: string;
-  sourceLanguage?: string;
-  targetLanguage?: string;
-}
-
-interface GroupedResult {
-  kelime: string;
-  anaKelime: string;
-  anlamlar: string[];
-  kaynaklar: KaynakInfo[];
-  dialect?: string;
-  score: number;
-  meaning?: string;
-
-  // D-1A: Dilbilimsel Bilgiler
-  rootIds?: string[];
-  wordFamilyId?: string | null;
-  conceptId?: string | null;
-  ipa?: string | null;
-  partOfSpeech?: string | null;
-  corpusFrequency?: number;
-  dialectVariants?: { adyghe?: string; kabardian?: string } | null;
-  literalMeaning?: string;
-  /** Türkçe karşılık — lexemes.json translations.tr */
-  ilkAnlam?: string;
-}
-
-function normalizeDialectParam(val: string): string {
-  const v = (val || '').toLowerCase();
-  if (v === 'eastern' || v === 'dogu' || v === 'doğu') return 'kbd';
-  if (v === 'western' || v === 'bati' || v === 'batı') return 'ady';
-  return v;
-}
-
-function inferLanguageFromFile(fileName: string, position: 0 | 1): string | undefined {
-  const code = fileName.replace(/\.json$/i, '').split('-')[position]?.toLowerCase();
-  if (!code) return undefined;
-
-  const temizCode = code.replace(/^\d+\./, '').trim();
-  if (!temizCode) return undefined;
-
-  if (temizCode.startsWith('tu') || temizCode.startsWith('tur')) return 'tr';
-  if (temizCode.startsWith('en')) return 'en';
-  if (temizCode.startsWith('kbd')) return 'kbd';
-  if (temizCode.startsWith('ady')) return 'ady';
-  if (temizCode.startsWith('rus') || temizCode.startsWith('ru')) return 'ru';
-  if (temizCode.startsWith('ar')) return 'ar';
-  return temizCode;
-}
-
-function decodeHTMLEntities(str: string): string {
-  return str
-    .replace(/&lt;/g, '<')
-    .replace(/&gt;/g, '>')
-    .replace(/&amp;/g, '&')
-    .replace(/&quot;/g, '"')
-    .replace(/&#39;/g, "'");
-}
-
-function parseDictionaryText(text: string): ParsedText {
-  if (!text) return { raw: '', mainTokens: [], parenTokens: [], exampleTokens: [] };
-
-  const decoded = decodeHTMLEntities(text).toLowerCase();
-
-  const normalizeArabic = (str: string): string => {
-    return str.replace(/^ال/, '').trim();
-  };
-
-  const parenRegex = /\((.*?)\)|\[(.*?)\]|&lt;.*?&gt;|<.*?>/g;
-  const parenMatches: string[] = [];
-  let m: RegExpExecArray | null;
-
-  while ((m = parenRegex.exec(decoded)) !== null) {
-    const content = m[1] || m[2] || '';
-    if (content) parenMatches.push(content);
-  }
-  const textWithoutParen = decoded.replace(parenRegex, ' ');
-
-  const tildeParts = textWithoutParen.split('~');
-  const mainSection = tildeParts[0];
-  const exampleSection = tildeParts.slice(1).join(' ');
-
-  const tokenize = (str: string) =>
-    str
-      .split(/[;,/\n|:=،]+/)
-      .map((s) => s.replace(/^[\d\.\)\s]+/, '').trim())
-      .filter(Boolean);
-
-  return {
-    raw: decoded,
-    mainTokens: tokenize(mainSection).map(normalizeArabic),
-    parenTokens: tokenize(parenMatches.join(' ')).map(normalizeArabic),
-    exampleTokens: tokenize(exampleSection).map(normalizeArabic),
-  };
+function getIndex() {
+  if (cachedIndex) return { index: cachedIndex, list: cachedList };
+  const p = path.join(process.cwd(), 'public', 'data', 'linguistic', 'lexemes.json');
+  const raw = JSON.parse(fs.readFileSync(p, 'utf-8'));
+  const list = Array.isArray(raw) ? raw : raw.lexemes ?? [];
+  const index = buildLexemeIndex(list);
+  cachedIndex = index;
+  cachedList = list;
+  return { index, list };
 }
 
 export async function GET(request: NextRequest) {
+  const start = Date.now();
   try {
     const { searchParams } = new URL(request.url);
     const rawQ = (searchParams.get('q') || '').trim();
-    const q = normalizePalochka(rawQ).toLowerCase();
-    const mode = searchParams.get('mode') || 'baslayan';
-    const dialect = normalizeDialectParam(searchParams.get('dialect') || 'tumu');
-    const targetLang = (searchParams.get('targetLang') || 'hepsi').toLowerCase();
-    const sourcesParam = (searchParams.get('dict') || searchParams.get('sources') || '').toLowerCase();
-
-    const page = Math.max(1, parseInt(searchParams.get('page') || '1', 10));
-    const limit = Math.max(1, parseInt(searchParams.get('limit') || '20', 10));
+    const q = normalizePalochka(normalizeLatinToKiril(rawQ)).toLowerCase();
+    const limit = Math.max(1, Math.min(50, parseInt(searchParams.get('limit') || '20', 10)));
 
     if (!q) {
-      return NextResponse.json({ success: true, results: [], data: [], total: 0, page, limit });
+      return NextResponse.json({ success: true, results: [], total: 0, ms: 0 });
     }
 
-    const dictionaryData = loadDictionaryData();
-    const entries: DictionaryEntry[] = dictionaryData?.entries || [];
+    const { index, list } = getIndex();
 
-    const isNoFilter = (val: string) => !val || val === 'tumu' || val === 'hepsi' || val === 'all';
+    // Tam eşleşme ilk sırada - Kriter 2
+    const exact = index.get(normKey(q));
 
-    const sourceList = sourcesParam
-      .split(',')
-      .map((s) => s.trim().toLowerCase().replace(/_/g, '-'))
-      .filter(Boolean);
-    const noSourceFilter = sourceList.length === 0 || sourceList.includes('all') || sourceList.includes('tumu');
-
-    const scoredEntries: { entry: DictionaryEntry; score: number }[] = [];
-
-    for (const item of entries) {
-      const rawW = String(item.kelime || item.word || item.spelling || item.headword || '');
-
-      const firstMeaning =
-        Array.isArray(item.definitions) && item.definitions.length > 0
-          ? item.definitions[0]?.meaning
-          : undefined;
-
-      const temizHtml = item.full_definition_in_html
-        ? String(item.full_definition_in_html).replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').trim()
-        : undefined;
-
-      const rawT = String(
-        item.anlam ??
-        item.translation ??
-        item.definition ??
-        firstMeaning ??
-        temizHtml ??
-        ''
-      );
-
-      const w = normalizePalochka(rawW.trim()).toLowerCase();
-      const t = normalizePalochka(rawT.trim()).toLowerCase();
-
-      if (!isNoFilter(dialect)) {
-        if (String(item.dialect || '').toLowerCase() !== dialect) continue;
-      }
-
-      if (!isNoFilter(targetLang)) {
-        const srcLang = String(item.sourceLanguage || '').toLowerCase();
-        const tgtLang = String(item.targetLanguage || '').toLowerCase();
-        if (srcLang !== targetLang && tgtLang !== targetLang) continue;
-      }
-
-      if (!noSourceFilter) {
-        const itemSrc = String(item.sourceFile || item.dictionaryName || '').toLowerCase().replace(/_/g, '-');
-        const matchesSource = sourceList.some((s) => {
-          const parts = s.split('-');
-          return itemSrc.includes(s) || s.includes(itemSrc) || parts.some((p) => p.length >= 4 && itemSrc.includes(p));
-        });
-        if (!matchesSource) continue;
-      }
-
-      const wParsed = parseDictionaryText(w);
-      const tParsed = parseDictionaryText(t);
-
-      let score = 0;
-
-      const matchesInParen = (parsed: ParsedText) =>
-        parsed.parenTokens.some((tok) => tok === q);
-
-      const matchesInExample = (parsed: ParsedText) =>
-        parsed.exampleTokens.some((tok) => tok === q);
-
-      if (mode === 'tam') {
-        if (w === q || t === q) {
-          score = 100;
-        } else if (wParsed.mainTokens.some((tok) => tok === q)) {
-          score = 80;
-        } else if (tParsed.mainTokens.some((tok) => tok === q)) {
-          score = 60;
-        } else if (matchesInParen(wParsed)) {
-          score = 30;
-        } else if (matchesInExample(wParsed)) {
-          score = 10;
-        }
-      } else if (mode === 'baslayan') {
-        if (w === q || t === q) {
-          score = 100;
-        } else if (
-          w.startsWith(q) ||
-          wParsed.mainTokens.some((tok) => tok.startsWith(q))
-        ) {
-          score = 80;
-        } else if (
-          t.startsWith(q) ||
-          tParsed.mainTokens.some((tok) => tok.startsWith(q))
-        ) {
-          score = 60;
-        } else if (wParsed.parenTokens.some((tok) => tok.startsWith(q))) {
-          score = 20;
-        } else if (wParsed.exampleTokens.some((tok) => tok.startsWith(q))) {
-          score = 10;
-        }
-      } else {
-        if (w === q || t === q) {
-          score = 100;
-        } else if (
-          w.includes(q) ||
-          wParsed.mainTokens.some((tok) => tok.includes(q))
-        ) {
-          score = 80;
-        } else if (
-          t.includes(q) ||
-          tParsed.mainTokens.some((tok) => tok.includes(q))
-        ) {
-          score = 60;
-        } else if (
-          wParsed.parenTokens.some((tok) => tok.includes(q)) ||
-          wParsed.exampleTokens.some((tok) => tok.includes(q))
-        ) {
-          score = 15;
-        }
-      }
-
-      if (score > 0) {
-        scoredEntries.push({ entry: item, score });
-      }
+    const starts: any[] = [];
+    for (const lex of list) {
+      if (starts.length >= limit) break;
+      const form = normalizePalochka(String(lex.form || lex.headword || '')).toLowerCase();
+      if (form.startsWith(q) && form !== q) starts.push(lex);
     }
 
-    scoredEntries.sort((a, b) => b.score - a.score);
+    const seen = new Set<string>();
+    const results: any[] = [];
 
-    // D-1A: Lexeme map
-    const lexemes = loadLexemes();
-    const lexemeIndex = buildLexemeIndex(lexemes);
-
-    const groupedMap = new Map<string, GroupedResult>();
-
-    for (const item of scoredEntries) {
-      const { entry, score } = item;
-      const rawWord = entry.kelime || entry.word || entry.spelling || entry.headword || entry.key || '';
-      const key = String(rawWord).toLowerCase().trim();
-      if (!key) continue;
-
-      const existing = groupedMap.get(key);
-      const sourceFile = String(entry.sourceFile || '');
-
-      const firstDefMeaning = Array.isArray(entry.definitions) && entry.definitions.length > 0
-        ? String(entry.definitions[0]?.meaning || '')
-        : '';
-
-      const rawMeaning = String(
-        entry.anlam ||
-        entry.translation ||
-        entry.definition ||
-        firstDefMeaning ||
-        entry.full_definition_in_html ||
-        ''
-      );
-
-      const cleanMeaning = stripHtml(rawMeaning);
-
-      const kaynak: KaynakInfo = {
-        kelime: String(rawWord),
-        sözlük: String(entry.dictionaryName || sourceFile || 'Bilinmeyen Sözlük'),
-        anlam: cleanMeaning,
-        author: entry.author ? String(entry.author) : undefined,
-        year: entry.year ? String(entry.year) : undefined,
-        dialect: entry.dialect ? String(entry.dialect) : undefined,
-        sourceFile,
-        sourceLanguage: entry.sourceLanguage ? String(entry.sourceLanguage) : inferLanguageFromFile(sourceFile, 0),
-        targetLanguage: entry.targetLanguage ? String(entry.targetLanguage) : inferLanguageFromFile(sourceFile, 1),
+    const pushLex = (lex: any) => {
+      if (!lex || seen.has(lex.id)) return;
+      seen.add(lex.id);
+      // Boş alan gönderme - Kriter 4
+      const item: any = {
+        id: lex.id, // L-GUKQEUE
+        form: lex.form,
+        ipa: lex.ipa ?? null,
+        partOfSpeech: lex.partOfSpeech ?? null,
       };
+      const tr = lex.translations?.tr;
+      if (typeof tr === 'string' && tr.trim()) item.tr = tr.trim();
+      if (lex.literalMeaning) item.literalMeaning = String(lex.literalMeaning);
+      // Etiket, link değil - Kriter 6
+      if (lex.rootIds?.length) item.rootIds = lex.rootIds;
+      if (lex.wordFamilyId) item.wordFamilyId = lex.wordFamilyId;
+      if (lex.conceptId) item.conceptId = lex.conceptId;
+      if (lex.dialectVariants) item.dialectVariants = lex.dialectVariants;
+      results.push(item);
+    };
 
-      if (existing) {
-        if (kaynak.anlam && !existing.anlamlar.includes(kaynak.anlam)) {
-          existing.anlamlar.push(kaynak.anlam);
-        }
+    if (exact) pushLex(exact);
+    for (const lex of starts) pushLex(lex);
 
-        const isDuplicate = existing.kaynaklar.some((k: KaynakInfo) => {
-          if (k.sourceFile && kaynak.sourceFile) {
-            return k.sourceFile === kaynak.sourceFile;
-          }
-          return k.sözlük === kaynak.sözlük && k.anlam === kaynak.anlam;
-        });
+    const ms = Date.now() - start;
+    if (ms > 500) console.warn(`[search] YAVAS: ${q} ${ms}ms`);
 
-        if (!isDuplicate) {
-          existing.kaynaklar.push(kaynak);
-        }
-      } else {
-        // Palochka (Ӏ U+04C0) toLowerCase() ile ӏ (U+04CF) olur; eşleşme kaçmasın
-        // diye üç yazımı sırayla dene.
-        const lexeme: any =
-          lexemeIndex.get(normKey(key)) ??
-          lexemeIndex.get(normKey(String(rawWord))) ??
-          lexemeIndex.get(normKey(normalizePalochka(String(rawWord))));
-
-        // Türkçe karşılık: yalnızca translations.tr
-        const trRaw = lexeme?.translations?.tr;
-        const turkceAnlam: string | undefined =
-          typeof trRaw === 'string' && trRaw.trim() ? trRaw.trim() : undefined;
-
-        // L-KBD-* kayıtlarında literalMeaning Türkçe değil (translations.tr hiçbirinde yok);
-        // bu kayıtlarda karta gönderme, kart temiz kaynak metnine düşsün.
-        const otomatikKbd =
-          typeof lexeme?.id === 'string' && lexeme.id.startsWith('L-KBD-');
-        const literalMeaning: string | undefined =
-          lexeme?.literalMeaning && (turkceAnlam || !otomatikKbd)
-            ? String(lexeme.literalMeaning)
-            : undefined;
-
-        groupedMap.set(key, {
-          kelime: String(rawWord),
-          anaKelime: String(rawWord),
-          anlamlar: kaynak.anlam ? [kaynak.anlam] : [],
-          meaning: kaynak.anlam || '',
-          kaynaklar: [kaynak],
-          dialect: entry.dialect ? String(entry.dialect) : undefined,
-          score,
-          // D-1A: Dilbilimsel Bilgiler
-          rootIds: lexeme?.rootIds ?? lexeme?.derivation?.rootIds ?? [],
-          wordFamilyId: lexeme?.wordFamilyId ?? null,
-          conceptId: lexeme?.conceptId ?? null,
-          ipa: lexeme?.ipa ?? null,
-          partOfSpeech: lexeme?.partOfSpeech ?? null,
-          corpusFrequency: lexeme?.corpusFrequency ?? 0,
-          dialectVariants: lexeme?.dialectVariants ?? null,
-          literalMeaning,
-          ilkAnlam: turkceAnlam,
-        });
-      }
-    }
-
-    const grouped = Array.from(groupedMap.values());
-    const total = grouped.length;
-    const startIndex = (page - 1) * limit;
-    const paginated = grouped.slice(startIndex, startIndex + limit);
-
-    return NextResponse.json({ success: true, results: paginated, total, page, limit });
-  } catch (error: unknown) {
-    const errorMessage = error instanceof Error ? error.message : 'Arama hatası';
-    console.error('[API /search] Hata:', error);
-    return NextResponse.json({ success: false, error: errorMessage }, { status: 500 });
+    return NextResponse.json({ success: true, results, total: results.length, ms });
+  } catch (e: any) {
+    console.error('[search] Hata:', e);
+    return NextResponse.json({ success: false, error: e.message }, { status: 500 });
   }
 }
