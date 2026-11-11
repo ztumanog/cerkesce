@@ -1,0 +1,40 @@
+name: Dialect Benchmark (ADR-GOV-014)
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'src/lib/dialectConverter.ts'
+      - 'src/lib/huvajLexicon.ts'
+      - 'src/tests/dialect*.test.ts'
+      - 'src/tests/domain/linguistic/DialectConverter*.test.ts'
+  pull_request:
+    branches: [main]
+    paths:
+      - 'src/lib/dialectConverter.ts'
+      - 'src/lib/huvajLexicon.ts'
+      - 'src/tests/dialect*.test.ts'
+      - 'src/tests/domain/linguistic/DialectConverter*.test.ts'
+  workflow_dispatch:
+
+jobs:
+  dialect-benchmark:
+    name: 5943-cift benchmark + REV-Lexicon celiski testi
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: npm
+      - run: npm ci
+      - name: Unit (dialectConverter cert)
+        run: npx vitest run src/tests/domain/linguistic/DialectConverter.cert.test.ts
+      - name: Benchmark 1'eN - ilk 1500 (Multi Accept)
+        run: npx vitest run src/tests/dialectHuvajMulti.test.ts
+      - name: Benchmark 1'eN - genelleme 1500-5943
+        run: npx vitest run src/tests/dialectHuvajGeneralization.test.ts
+      - name: REV-Lexicon celiski testi (ADR-GOV-014, required)
+        run: npx vitest run src/tests/dialectRevLexiconConflict.test.ts
+      - name: Lexicon tutarlilik (golgeleme yok)
+        run: npx vitest run src/tests/dialectLexiconConsistency.test.ts

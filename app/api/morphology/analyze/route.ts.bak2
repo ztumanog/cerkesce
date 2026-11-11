@@ -1,0 +1,55 @@
+// app/api/morphology/analyze/route.ts - TEMIZ API ROUTE (JSX yok)
+// POST { word } -> morfoloji analizi
+// Sozluk: DictionaryProvider + public/data dosyalari (fs ile, fetch DEGIL)
+import { NextRequest, NextResponse } from 'next/server';
+import fs from 'node:fs';
+import path from 'node:path';
+import { MorphologyAnalyzer } from '@/src/domain/morphology/MorphologyAnalyzer';
+import { DictionaryProvider, parseDictionaryFile, DICTIONARIES_META } from '@/src/domain/morphology/DictionaryProvider';
+
+export const runtime = 'nodejs';
+export const dynamic = 'force-dynamic';
+
+// Provider tek sefer kurulur, sozlukler lazy-load edilir
+const provider = new DictionaryProvider();
+const analyzer = new MorphologyAnalyzer(provider as any);
+
+/** public/data/<file> dosyasini fs ile okuyan fetcher */
+async function fsFetcher(file: string) {
+  const full = path.join(process.cwd(), 'public', 'data', file);
+  const text = await fs.promises.readFile(full, 'utf-8');
+  return JSON.parse(text);
+}
+
+export async function POST(req: NextRequest) {
+  try {
+    const body = await req.json().catch(() => ({}));
+    const word = String(body.word || body.text || '').trim();
+    const dictionaryFile = String(body.dictionaryFile || '');
+    if (!word) {
+      return NextResponse.json({ error: 'word gerekli' }, { status: 400 });
+    }
+    // Istenen sozluk dosyasi varsa yukle (orn: 28.Tur-Ady_Huvaj.json)
+    if (dictionaryFile) {
+      await provider.loadDictionary(dictionaryFile, fsFetcher);
+    }
+    const result = await (analyzer as any).analyze(word);
+    return NextResponse.json({
+      word,
+      dictionaryFile: dictionaryFile || null,
+      dictionarySize: provider.size(),
+      result,
+    });
+  } catch (err: any) {
+    console.error('[morphology/analyze]', err);
+    return NextResponse.json(
+      { error: err?.message || 'Analiz hatasi' },
+      { status: 500 }
+    );
+  }
+}
+
+export async function GET() {
+  // Katalog: hangi sozlukler var
+  return NextResponse.json({ dictionaries: DICTIONARIES_META });
+}

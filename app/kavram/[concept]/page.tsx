@@ -21,16 +21,14 @@ export default async function ConceptDetailPage({ params }: PageProps) {
   try {
     const rawAdapter = createLexemeLookupAdapter() as any;
 
-    // Senkron dizi döndüren GraphRepository sarmalayıcısı
     const safeGraphRepository = {
       ...rawAdapter,
-      getNeighbors: (nodeId: string) => {
+      getNeighbors: (nodeId: string): any[] => {
         if (typeof rawAdapter?.getNeighbors === 'function') {
           const result = rawAdapter.getNeighbors(nodeId);
           if (Array.isArray(result)) return result;
         }
 
-        // Demo Anlamsal Çizge Bağlantıları (Senkron Iterable Dizi)
         const demoGraph: Record<string, any[]> = {
           'Дуней': [
             { targetId: '1', targetConcept: 'Псэ', relationType: DiscoveryRelationType.ROOT, score: 0.98 },
@@ -48,18 +46,18 @@ export default async function ConceptDetailPage({ params }: PageProps) {
     };
 
     const facade = new DiscoveryFacade(safeGraphRepository);
-    const discoveryResult = await facade.explore(decodedConcept);
+    const discoveryResult: any = await facade.explore(decodedConcept);
 
-    const rawRelations = 
+    const rawRelations: any[] = 
       discoveryResult?.relations || 
       discoveryResult?.network?.relations || 
-      discoveryResult?.nodes || 
+      discoveryResult?.nodes ||
       (Array.isArray(discoveryResult) ? discoveryResult : []);
 
     if (rawRelations && rawRelations.length > 0) {
       realRelations = rawRelations.map((rel: any, idx: number) => ({
         targetId: rel.targetId || rel.id || String(idx),
-        targetConcept: rel.targetConcept || rel.conceptName || rel.target || rel.label || rel.concept,
+        targetConcept: rel.targetConcept || rel.conceptName || rel.target || rel.concept || rel.label || '',
         relationType: (rel.relationType as DiscoveryRelationType) || DiscoveryRelationType.RELATED,
         score: rel.score ?? rel.weight ?? 1,
       }));

@@ -1,6 +1,7 @@
 ﻿import { NextRequest, NextResponse } from 'next/server';
 import { DiscoveryFacade } from '@/domain/discovery/services/DiscoveryFacade';
 import { createLexemeLookupAdapter } from '@/domain/discovery/adapters/createLexemeLookupAdapter';
+import type { DiscoveryResultDTO } from '@/domain/discovery/dto/DiscoveryResultDTO';
 
 export async function GET(
   request: NextRequest,
@@ -13,9 +14,13 @@ export async function GET(
     const lookupAdapter = createLexemeLookupAdapter();
     const facade = new DiscoveryFacade(lookupAdapter);
 
-    const result = await facade.explore(decodedName);
+    const result: DiscoveryResultDTO = await facade.explore(decodedName);
 
-    return NextResponse.json({
+    return NextResponse.json<{
+      success: boolean;
+      concept: string;
+      data: DiscoveryResultDTO;
+    }>({
       success: true,
       concept: decodedName,
       data: result,

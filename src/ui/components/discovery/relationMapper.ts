@@ -66,6 +66,56 @@ export const RELATION_META_MAP: Partial<Record<DiscoveryRelationType, RelationMe
     borderColor: '#f87171',
     description: 'Karşıt anlama sahip kavram',
   },
+  // --- Yeni Eklenen Tüm Enum Türleri ---
+  [DiscoveryRelationType.STATE_OF]: {
+    label: 'Durum / Hal',
+    color: '#8b5cf6',
+    bgColor: '#f5f3ff',
+    borderColor: '#a78bfa',
+    description: 'Bir durumun, niteliğin veya halin bağı',
+  },
+  [DiscoveryRelationType.CATEGORY_OF]: {
+    label: 'Kategori',
+    color: '#059669',
+    bgColor: '#ecfdf5',
+    borderColor: '#34d399',
+    description: 'Kategori ve sınıflandırma ilişkisi',
+  },
+  [DiscoveryRelationType.LOCATION_OF]: {
+    label: 'Konum / Yer',
+    color: '#0d9488',
+    bgColor: '#ccfbf1',
+    borderColor: '#5eead4',
+    description: 'Coğrafi veya fiziksel konum ilişkisi',
+  },
+  [DiscoveryRelationType.DRINK_OF]: {
+    label: 'İçecek / Besin',
+    color: '#db2777',
+    bgColor: '#fce7f3',
+    borderColor: '#f472b6',
+    description: 'İçecek ve tüketim ilişkisi bağı',
+  },
+  [DiscoveryRelationType.DERIVED]: {
+    label: 'Türetilmiş',
+    color: '#2563eb',
+    bgColor: '#dbeafe',
+    borderColor: '#60a5fa',
+    description: 'Morfofonetik türetim bağı',
+  },
+  [DiscoveryRelationType.HOMONYM]: {
+    label: 'Eş Sesli',
+    color: '#475569',
+    bgColor: '#f1f5f9',
+    borderColor: '#94a3b8',
+    description: 'Yazılışı aynı, anlamı farklı (Sesteş)',
+  },
+  [DiscoveryRelationType.COMPOUND]: {
+    label: 'Bileşik Yapı',
+    color: '#9333ea',
+    bgColor: '#faf5ff',
+    borderColor: '#c084fc',
+    description: 'Birden fazla kökten oluşan birleşik sözcük',
+  },
 };
 
 export function getRelationMeta(type: DiscoveryRelationType): RelationMeta {
