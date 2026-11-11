@@ -5,6 +5,9 @@ import { ConceptRelationList, RelatedConceptItem } from '@/ui/components/discove
 import { RelationBadge } from '@/ui/components/discovery/RelationBadge';
 import { DiscoveryFacade } from '@/domain/discovery/services/DiscoveryFacade';
 import { createLexemeLookupAdapter } from '@/domain/discovery/adapters/createLexemeLookupAdapter';
+import { ConceptGraphAdapter } from '@/domain/discovery/adapters/ConceptGraphAdapter';
+import { CytoscapeProjectionAdapter } from '@/domain/discovery/adapters/CytoscapeProjectionAdapter';
+import { ConceptGraphCanvas, CytoscapeElementData } from '@/ui/components/discovery/ConceptGraphCanvas';
 
 interface PageProps {
   params: Promise<{ concept: string }>;
@@ -15,6 +18,7 @@ export default async function ConceptDetailPage({ params }: PageProps) {
   const decodedConcept = decodeURIComponent(concept);
 
   let realRelations: RelatedConceptItem[] = [];
+  let graphData: CytoscapeElementData | null = null;
   let fetchError: string | null = null;
   let isNotFound = false;
 
@@ -47,6 +51,20 @@ export default async function ConceptDetailPage({ params }: PageProps) {
 
     const facade = new DiscoveryFacade(safeGraphRepository);
     const discoveryResult: any = await facade.explore(decodedConcept);
+
+    const canonicalNetwork = ConceptGraphAdapter.toCanonicalNetwork({
+      rootConceptId: decodedConcept,
+      canonicalName: decodedConcept,
+      relatedConcepts: (discoveryResult?.relations || safeGraphRepository.getNeighbors(decodedConcept)).map((r: any) => ({
+        conceptId: r.targetConcept || r.targetId || r.concept,
+        label: r.targetConcept || r.targetId || r.concept,
+        parentConceptId: decodedConcept,
+        relationType: r.relationType,
+        score: r.score
+      }))
+    });
+
+    graphData = CytoscapeProjectionAdapter.toCytoscapeFormat(canonicalNetwork) as CytoscapeElementData;
 
     const rawRelations: any[] = 
       discoveryResult?.relations || 
@@ -90,6 +108,10 @@ export default async function ConceptDetailPage({ params }: PageProps) {
           Bu kavram Discovery Engine anlamsal ilişkiler haritasından canlı olarak sorgulanmaktadır.
         </p>
       </div>
+
+      {graphData && graphData.nodes.length > 0 && (
+        <ConceptGraphCanvas data={graphData} rootLabel={decodedConcept} />
+      )}
 
       {fetchError && (
         <div className="p-4 bg-amber-50 border border-amber-200 rounded-lg text-amber-900 text-sm">
