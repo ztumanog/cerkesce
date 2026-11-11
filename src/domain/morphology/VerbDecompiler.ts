@@ -1,4 +1,4 @@
-/**
+﻿/**
  * VerbDecompiler - Fiil onek cozumleyici
  * ADR-0040: Morphological Root Taxonomy
  * P4-012 - Morphology Engine
@@ -80,7 +80,7 @@ export class VerbDecompiler {
    * Onek sirasini takip eder (slot 0'dan 7'ye).
    */
   decompile(form: string): VerbResult {
-    const normalized = form.trim();
+    const normalized = (form || "").trim();
 
     if (!normalized) {
       return {

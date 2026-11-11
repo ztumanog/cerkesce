@@ -1,102 +1,106 @@
-/**
- * VerbSuffixDecompiler - Fiil zaman ekleri cozumleyici
- * LemmaBuilderV2'den bagimsiz, basit versiyon
+﻿/**
+ * VerbSuffixDecompiler - Fiil Çekim ve Zaman Ekleri Çözümleyici
+ * ADR-0040: Morphological Root Taxonomy
  */
 
-import fs from 'fs';
-import path from 'path';
-
-export interface SuffixResult {
+export interface VerbSuffix {
+  type: 'predicative' | 'tense' | 'future_tense' | 'negative' | 'modal' | 'unknown';
   morpheme: string;
-  code: string;
-  gloss: string;
+  glossTr: string;
 }
 
-let LEXEME_SET: Set<string> | null = null;
-function getLexemeSet(): Set<string> {
-  if (LEXEME_SET) return LEXEME_SET;
-  try {
-    const lexPath = path.resolve('./public/data/linguistic/lexemes.json');
-    const lex = JSON.parse(fs.readFileSync(lexPath, 'utf-8'));
-    LEXEME_SET = new Set(lex.map((l: any) => l.form));
-  } catch {
-    LEXEME_SET = new Set();
-  }
-  return LEXEME_SET;
+export interface VerbDecompileResult {
+  word: string;
+  stem: string;
+  suffixes: VerbSuffix[];
 }
-
-const VERB_SUFFIXES: Array<{ pattern: RegExp; code: string; gloss: string }> = [
-  { pattern: /щтэп$/, code: 'FUTURE_NEGATION', gloss: 'Olumsuz Gelecek' },
-  { pattern: /тэп$/, code: 'IMPERFECT_NEGATION', gloss: 'Olumsuz Genis/Gecmis' },
-  { pattern: /къым$/, code: 'FINITE_NEGATION', gloss: 'Olumsuzluk' },
-  { pattern: /ащ$/, code: 'PRETERITE_DECLARATIVE', gloss: 'Belirli Gecmis Bildirme' },
-  { pattern: /гъат$/, code: 'ANTERIOR_PLUPERFECT', gloss: 'Uzak Gecmis Anterior' },
-  { pattern: /гъа$/, code: 'PLUPERFECT', gloss: 'Uzak Gecmis' },
-  { pattern: /ат$/, code: 'PAST_ANTERIOR', gloss: 'Gecmis Anterior' },
-  { pattern: /а$/, code: 'PRETERITE', gloss: 'Belirli Gecmis' },
-  { pattern: /рт$/, code: 'IMPERFECT_DYN', gloss: 'Simdiki Hikaye' },
-  { pattern: /т$/, code: 'IMPERFECT', gloss: 'Gecmis Sureklilik' },
-  { pattern: /нущ$/, code: 'FACTUAL_FUTURE', gloss: 'Kesin Gelecek' },
-  { pattern: /ну$/, code: 'FUTURE_BASE', gloss: 'Gelecek Tabani' },
-  { pattern: /нщ$/, code: 'CATEGORICAL_FUTURE', gloss: 'Kategorik Gelecek' },
-  { pattern: /жь$/, code: 'REPETITIVE', gloss: 'Tekrar' },
-  { pattern: /ж$/, code: 'REPETITIVE', gloss: 'Tekrar' },
-  { pattern: /ф$/, code: 'POTENTIAL', gloss: 'Yeterlilik' },
-  { pattern: /пэ$/, code: 'TOTALITIVE', gloss: 'Tamamen' },
-  { pattern: /мэ$/, code: 'CONDITIONAL', gloss: 'Sart' },
-  { pattern: /м$/, code: 'CONDITIONAL_SHORT', gloss: 'Sart' },
-  { pattern: /щ$/, code: 'INDICATIVE', gloss: 'Bildirme' },
-  { pattern: /гъ$/, code: 'ABSTRACT_NOUN', gloss: 'Soyut isim' },
-  { pattern: /агъ$/, code: 'ABSTRACT_NOUN_FULL', gloss: 'Soyut isim (tam)' },
-  { pattern: /ыгъ$/, code: 'ABSTRACT_NOUN_FULL2', gloss: 'Soyut isim' },
-  { pattern: /н$/, code: 'INFINITIVE', gloss: 'Mastar (-mak/-mek)' },
-];
 
 export class VerbSuffixDecompiler {
-  static decompile(
-    word: string,
-    knownRoots?: Set<string>,
-    strict: boolean = false
-  ): { stripped: string; suffixes: SuffixResult[] } {
-    let remaining = word.trim();
-    const suffixes: SuffixResult[] = [];
-    let changed = true;
-    let iterations = 0;
+  /**
+   * MorphologyAnalyzer tarafından statik çağrılan kök söküm arayüzü
+   */
+  static decompile(word: string, rootFormSet?: Set<string>, ...args: any[]): VerbDecompileResult {
+    return new VerbSuffixDecompiler().parse(word);
+  }
 
-    while (changed && iterations < 5) {
-      changed = false;
-      iterations++;
+  static parse(verbWord: string): VerbDecompileResult {
+    return new VerbSuffixDecompiler().parse(verbWord);
+  }
 
-      for (const s of VERB_SUFFIXES) {
-        const match = remaining.match(s.pattern);
-        if (match) {
-          const stripped = remaining.slice(0, -match[0].length);
-          if (stripped.length >= 2) {
-            // strict modda: kesilen sonrasi kalan parca gercek bir kok olmali.
-            // Aksi halde "нэсын" -> "нэсы", "план" -> "пла" gibi yarim kokler uretiliyor.
-            if (strict && knownRoots && knownRoots.size > 0 && !knownRoots.has(stripped)) {
-              continue;
-            }
-            let finalStripped = stripped;
-            if (stripped.endsWith('у') && (match[0] === 'ащ' || match[0] === 'а')) {
-              const withE = stripped + 'э';
-              if (getLexemeSet().has(withE)) {
-                finalStripped = withE;
-              }
-            }
-            suffixes.unshift({
-              morpheme: match[0],
-              code: s.code,
-              gloss: s.gloss,
-            });
-            remaining = finalStripped;
-            changed = true;
-            break;
-          }
-        }
-      }
+  /**
+   * Birim testleri ve modüller tarafından kullanılan nesne metodu
+   */
+  parse(verbWord: string): VerbDecompileResult {
+    const input = verbWord ? verbWord.trim() : '';
+    if (!input) {
+      return { word: '', stem: '', suffixes: [] };
     }
 
-    return { stripped: remaining, suffixes };
+    let stem = input;
+    const suffixes: VerbSuffix[] = [];
+
+    // 1. Olumsuzluk Ekleri (-къым, -теп)
+    if (stem.endsWith('къым')) {
+      suffixes.unshift({
+        type: 'negative',
+        morpheme: 'къым',
+        glossTr: 'Olumsuzluk Eki',
+      });
+      stem = stem.slice(0, -4);
+    } else if (stem.endsWith('теп')) {
+      suffixes.unshift({
+        type: 'negative',
+        morpheme: 'теп',
+        glossTr: 'Geçmiş Zaman Olumsuzluk Eki',
+      });
+      stem = stem.slice(0, -3);
+    }
+
+    // 2. Gelecek Zaman Ekleri (-нущ, -нщ)
+    if (stem.endsWith('нущ')) {
+      suffixes.unshift({
+        type: 'future_tense',
+        morpheme: 'нущ',
+        glossTr: 'Gelecek Zaman Eki',
+      });
+      stem = stem.slice(0, -3);
+    } else if (stem.endsWith('нщ')) {
+      suffixes.unshift({
+        type: 'future_tense',
+        morpheme: 'нщ',
+        glossTr: 'Gelecek Zaman Eki',
+      });
+      stem = stem.slice(0, -2);
+    }
+
+    // 3. Geçmiş Zaman & Bildirme Ekleri (-гъащ, -ащ, -щ)
+    if (stem.endsWith('гъащ')) {
+      suffixes.unshift({
+        type: 'tense',
+        morpheme: 'гъащ',
+        glossTr: 'Uzak Geçmiş Zaman Eki',
+      });
+      stem = stem.slice(0, -4);
+    } else if (stem.endsWith('ащ')) {
+      suffixes.unshift({
+        type: 'tense',
+        morpheme: 'ащ',
+        glossTr: 'Geçmiş Zaman Eki',
+      });
+      stem = stem.slice(0, -2);
+    } else if (stem.endsWith('щ')) {
+      suffixes.unshift({
+        type: 'predicative',
+        morpheme: 'щ',
+        glossTr: 'Bildirme Eki',
+      });
+      stem = stem.slice(0, -1);
+    }
+
+    return {
+      word: input,
+      stem,
+      suffixes,
+    };
   }
 }

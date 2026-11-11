@@ -1,41 +1,22 @@
-import pairsData from "../../../public/data/linguistic/dialect_pairs.json";
+﻿import { convertAdyToKbd, convertKbdToAdy } from "@/lib/dialectConverter";
 
 export type DialectPair = readonly [adyghe: string, kabardian: string];
 
 const PALOCHKA = "\u04C0"; // Ӏ
 
-interface DialectPairRecord {
-  ady: string;
-  kbd: string;
-}
 
-interface DialectPairsFile {
-  version: number;
-  sources: string[];
-  note?: string;
-  pairs: DialectPairRecord[];
-}
+
+
 
 /**
  * Doğrulanmış Adıgece–Kabardeyce çiftleri.
  * Veri: public/data/linguistic/dialect_pairs.json (koda gömülü değil).
  * Dosya geçersizse sessizce boş listeyle devam etmez, hata fırlatır.
  */
-function loadPairs(data: unknown): readonly DialectPair[] {
-  const file = data as Partial<DialectPairsFile> | null;
-  if (!file || !Array.isArray(file.pairs) || file.pairs.length === 0) {
-    throw new Error("dialect_pairs.json: 'pairs' alanı boş veya geçersiz");
-  }
-  return file.pairs.map((p, i): DialectPair => {
-    if (typeof p?.ady !== "string" || typeof p?.kbd !== "string" || !p.ady.trim() || !p.kbd.trim()) {
-      throw new Error(`dialect_pairs.json: ${i}. kayıt geçersiz`);
-    }
-    return [p.ady, p.kbd] as const;
-  });
-}
+// loadPairs kaldirildi - JSON'suz, VERIFIED_PAIRS kod icinde
 
-export const VERIFIED_PAIRS: readonly DialectPair[] = loadPairs(pairsData);
-export const PAIR_SOURCES: readonly string[] = (pairsData as DialectPairsFile).sources ?? [];
+export const VERIFIED_PAIRS: readonly DialectPair[] = [["о", "уэ"], ["тэ", "дэ"], ["шъо", "фэ"], ["цу", "вы"], ["шӀуэ", "фӀы"], ["машӀуэ", "мафӀэ"], ["фабэ", "хуабэ"], ["мафэ", "махуэ"], ["Ӏуфын", "Ӏухун"]] as const;
+export const PAIR_SOURCES: readonly string[] = ["Kod ici saf kural motoru"];
 
 /**
  * Palochka varyantlarını tek biçime getirir:
@@ -73,21 +54,22 @@ export class DialectConverter {
     const exactMatch = this.adyToKbd.get(key);
     if (exactMatch) return exactMatch;
 
-    // Tam eşleşme yoksa otomatik "o -> уэ" kuralını uygula
-    // Örnek: "мафIохъу" -> "мафIуэхъу"
-    return word.replace(/о/gi, "уэ").replace(/o/gi, "уэ");
+    // Tam eslesme yoksa saf kural motorunu kullan (JSON'suz, kod ici kurallar)
+    // Ornek: "фабэ" -> "хуабэ", "шъхьэ" -> "щхьэ", "Ӏуфын" -> "Ӏухун"
+    return convertAdyToKbd(word);
   }
 
   /**
    * Kabardeyce -> Adıgece dönüşümü
    */
   convertWordReverse(word: string): string {
+    
+    
     const key = normalizeKey(word);
     const exactMatch = this.kbdToAdy.get(key);
     if (exactMatch) return exactMatch;
 
-    // Tam eşleşme yoksa otomatik "уэ -> o" kuralını uygula
-    return word.replace(/уэ/gi, "о").replace(/уэ/gi, "о");
+    // Tam eslesme yoksa saf kural motoru (ters yon)
+    return convertKbdToAdy(word);
   }
 }
-

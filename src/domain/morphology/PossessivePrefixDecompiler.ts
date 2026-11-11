@@ -1,27 +1,9 @@
 /**
  * PossessivePrefixDecompiler - Iyelik onekleri cozumleyici
  * ADR-0040: Morphological Root Taxonomy
- * P4-006 - Morphology Engine
- *
- * Kabardeyce iyelik onekleri:
- * - си-  (1sg) benim
- * - уи-  (2sg) senin
- * - и-   (3sg) onun
- * - ди-  (1pl) bizim
- * - фи-  (2pl) sizin
- * - я-   (3pl) onlarin
- *
- * Ornekler:
- * - си унэ  -> benim ev
- * - уи унэ  -> senin ev
- * - и унэ   -> onun ev
- *
- * ADR-ROOT-001: Sadece veri uretir, Runtime'a baglanmaz.
  */
 
-// ============================================
-// TIP TANIMLARI
-// ============================================
+import { norm } from './MorphemeParser';
 
 export type PossessivePerson =
   | '1sg'
@@ -47,32 +29,18 @@ export interface PossessiveResult {
   confidence: number;
 }
 
-// ============================================
-// IYELIK ONEKLERI
-// ============================================
-
 const POSSESSIVE_PREFIXES: PossessivePrefix[] = [
   { prefix: 'си', person: '1sg', meaningTr: 'benim' },
   { prefix: 'уи', person: '2sg', meaningTr: 'senin' },
   { prefix: 'и',  person: '3sg', meaningTr: 'onun' },
   { prefix: 'ди', person: '1pl', meaningTr: 'bizim' },
   { prefix: 'фи', person: '2pl', meaningTr: 'sizin' },
-  { prefix: 'я',  person: '3pl', meaningTr: 'onlarin' },
+  { prefix: 'я',  person: '3pl', meaningTr: 'onların' },
 ];
 
-// ============================================
-// DECOMPILER
-// ============================================
-
 export class PossessivePrefixDecompiler {
-  /**
-   * Iyelik onekini cozumler.
-   *
-   * "си унэ" -> prefix: си, person: 1sg, stem: унэ
-   * "сиунэ"  -> prefix: си, person: 1sg, stem: унэ
-   */
   decompile(form: string): PossessiveResult {
-    const normalized = form.trim();
+    const normalized = norm(form);
 
     if (!normalized) {
       return {
@@ -86,11 +54,11 @@ export class PossessivePrefixDecompiler {
       };
     }
 
-    // 1. Boslukla ayrilmis form: "си унэ"
+    // 1. Boşlukla ayrılmış form: "си унэ"
     const parts = normalized.split(/\s+/);
     if (parts.length === 2) {
       const [first, second] = parts;
-      const match = POSSESSIVE_PREFIXES.find(p => p.prefix === first);
+      const match = POSSESSIVE_PREFIXES.find(p => norm(p.prefix) === first);
       if (match) {
         return {
           input: normalized,
@@ -104,16 +72,16 @@ export class PossessivePrefixDecompiler {
       }
     }
 
-    // 2. Bitisik form: "сиунэ" — en uzun onek once
+    // 2. Bitişik form: "сиунэ"
     const sortedPrefixes = [...POSSESSIVE_PREFIXES].sort(
       (a, b) => b.prefix.length - a.prefix.length
     );
 
     for (const p of sortedPrefixes) {
-      if (normalized.startsWith(p.prefix)) {
-        const stem = normalized.slice(p.prefix.length);
-        // Tek karakterli "и" ve "я" onekleri icin stem kontrolu
-        if (p.prefix.length === 1 && stem.length < 2) {
+      const nPrefix = norm(p.prefix);
+      if (normalized.startsWith(nPrefix)) {
+        const stem = normalized.slice(nPrefix.length);
+        if (nPrefix.length === 1 && stem.length < 2) {
           continue;
         }
         if (stem.length > 0) {
@@ -130,7 +98,6 @@ export class PossessivePrefixDecompiler {
       }
     }
 
-    // 3. Bare form (onek yok) — INHERENT_DEFINITE_BARE
     return {
       input: normalized,
       prefix: null,
@@ -142,30 +109,18 @@ export class PossessivePrefixDecompiler {
     };
   }
 
-  /**
-   * Toplu cozumleme.
-   */
   decompileBatch(forms: string[]): PossessiveResult[] {
     return forms.map(f => this.decompile(f));
   }
 
-  /**
-   * Iyelik oneki var mi?
-   */
   hasPossessivePrefix(form: string): boolean {
     return this.decompile(form).prefix !== null;
   }
 
-  /**
-   * Bare form mu? (INHERENT_DEFINITE_BARE)
-   */
   isBare(form: string): boolean {
     return this.decompile(form).method === 'bare';
   }
 
-  /**
-   * Bilinen tum onekleri doner.
-   */
   getPrefixes(): PossessivePrefix[] {
     return [...POSSESSIVE_PREFIXES];
   }

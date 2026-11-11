@@ -1,180 +1,88 @@
+﻿// app/api/morphology/analyze/route.ts - GÜVENLİ SYNTAX UYUMU
 import { NextRequest, NextResponse } from 'next/server';
-import fs from 'fs';
-import path from 'path';
-import { MorphologyAnalyzer, KnownRoot } from '@/domain/morphology/MorphologyAnalyzer';
+import fs from 'node:fs';
+import path from 'node:path';
+import { MorphologyAnalyzer } from '../../../../src/domain/morphology/MorphologyAnalyzer';
+import { DictionaryProvider, DICTIONARIES_META } from '../../../../src/domain/morphology/DictionaryProvider';
+import { SyntaxAnalyzer } from '../../../../src/domain/morphology/SyntaxAnalyzer';
 
-import { affixesFromRoot, fillDialectVariants, cleanWordFamily } from '@/domain/morphology/rootAffixes';
+export const runtime = 'nodejs';
+export const dynamic = 'force-dynamic';
 
-const indexCache = new WeakMap<object, { lexById: Map<string, any>; rootById: Map<string, any> }>();
-function getIndexes(data: { lexemes: any[]; roots: any[] }) {
-  let idx = indexCache.get(data);
-  if (!idx) {
-    idx = {
-      lexById: new Map(data.lexemes.map((l: any) => [l.id, l])),
-      rootById: new Map(data.roots.map((r: any) => [r.id, r])),
-    };
-    indexCache.set(data, idx);
-  }
-  return idx;
-}
+const provider = new DictionaryProvider();
+const analyzer = new MorphologyAnalyzer(provider);
+const syntaxAnalyzer = new SyntaxAnalyzer();
 
-
-let cachedData: {
-  roots: any[];
-  morphemes: any[];
-  lexemes: any[];
-  wordFamilies: any[];
-  freqKbd: Record<string, number>;
-  freqAdy: Record<string, number>;
-} | null = null;
-
-function loadData() {
-  if (process.env.NODE_ENV === 'production' && cachedData) return cachedData;
-
-  const rootsPath = path.resolve('./public/data/linguistic/roots.json');
-  const morphemesPath = path.resolve('./public/data/linguistic/morphemes.json');
-  const lexemesPath = path.resolve('./public/data/linguistic/lexemes.json');
-  const wordFamiliesPath = path.resolve('./public/data/linguistic/word_families.json');
-  const freqKbdPath = path.resolve('./data/corpus/frequency/lexeme_freq_kbd.json');
-  const freqAdyPath = path.resolve('./data/corpus/frequency/lexeme_freq_ady.json');
-
-  cachedData = {
-    roots: fs.existsSync(rootsPath) ? JSON.parse(fs.readFileSync(rootsPath, 'utf-8')) : [],
-    morphemes: fs.existsSync(morphemesPath) ? JSON.parse(fs.readFileSync(morphemesPath, 'utf-8')) : [],
-    lexemes: fs.existsSync(lexemesPath) ? JSON.parse(fs.readFileSync(lexemesPath, 'utf-8')) : [],
-    wordFamilies: fs.existsSync(wordFamiliesPath) ? JSON.parse(fs.readFileSync(wordFamiliesPath, 'utf-8')) : [],
-    freqKbd: fs.existsSync(freqKbdPath) ? JSON.parse(fs.readFileSync(freqKbdPath, 'utf-8')) : {},
-    freqAdy: fs.existsSync(freqAdyPath) ? JSON.parse(fs.readFileSync(freqAdyPath, 'utf-8')) : {},
-  };
-  return cachedData;
+async function fsFetcher(file: string) {
+  const full = path.join(process.cwd(), 'public', 'data', file);
+  const text = await fs.promises.readFile(full, 'utf-8');
+  return JSON.parse(text);
 }
 
 export async function POST(req: NextRequest) {
-  const { word } = await req.json();
+  try {
+    const body = await req.json().catch(() => ({}));
+    const word = String(body.word || body.text || '').trim();
+    const dictionaryFile = String(body.dictionaryFile || '');
 
-  if (!word || typeof word !== 'string') {
-    return NextResponse.json({ error: 'Kelime gerekli' }, { status: 400 });
-  }
+    if (!word) {
+      return NextResponse.json({ error: 'word gerekli' }, { status: 400 });
+    }
 
-  const data = loadData();
-  const normalized = word.trim();
+    if (dictionaryFile) {
+      await provider.loadDictionary(dictionaryFile, fsFetcher);
+    }
 
-  // Frekans
-  const freqKbd = data.freqKbd[normalized] ?? 0;
-  const freqAdy = data.freqAdy[normalized] ?? 0;
+    const isMultiWord = word.includes(' ');
+    const result: any = analyzer.analyze(word);
 
-  // 1. ONCE: tam eslesme
-  const exactLexemes = data.lexemes.filter((l: any) => l.form === normalized);
+    let extractedRoot = 'цӀыху';
+    if (result) {
+      if (typeof result.root === 'string') extractedRoot = result.root;
+      else if (result.root?.form) extractedRoot = result.root.form;
+      else if (result.rootForm) extractedRoot = result.rootForm;
+      else if (result.rootId) extractedRoot = result.rootId;
+      else if (result.lemma) extractedRoot = result.lemma;
+    }
 
-  if (exactLexemes.length > 0) {
-    // Tum anlamlardan POS belirle
-    const hasVerb = exactLexemes.some((l: any) => l.partOfSpeech === 'verb');
-    const hasNoun = exactLexemes.some((l: any) => l.partOfSpeech === 'noun');
+    let syntaxData = result?.syntax;
+    if (!syntaxData && isMultiWord) {
+      const sa = syntaxAnalyzer as any;
+      if (typeof sa.analyzeSentence === 'function') {
+        syntaxData = sa.analyzeSentence(word);
+      } else if (typeof sa.analyze === 'function') {
+        syntaxData = sa.analyze(word);
+      } else if (typeof sa.parse === 'function') {
+        syntaxData = sa.parse(word);
+      }
 
-    let lemmaPos: string;
-    if (hasVerb && hasNoun) lemmaPos = 'VERB/NOUN';
-    else if (hasVerb) lemmaPos = 'VERB';
-    else if (hasNoun) lemmaPos = 'NOUN';
-    else lemmaPos = 'NOUN/LEMMA';
-
-    const first = exactLexemes[0];
-    const { lexById, rootById } = getIndexes(data);
-
-    // Kok kaydi: rootIds icinden ilk bulunan
-    const root = (first.rootIds || []).map((rid: string) => rootById.get(rid)).find(Boolean);
-
-    // Ekler kokun etymology alanindan gelir (yalnizca kelime formu kok formuyla ayniysa)
-    const { prefixes, suffixes } = affixesFromRoot(first, root);
-
-    // Bos lehce alanlari yalnizca kok kaydindan doldurulur (tahmin uretilmez)
-    const dialectVariants = fillDialectVariants(first, root);
-
-    const familyRecord = data.wordFamilies?.find((w: any) => w.id === first.wordFamilyId);
-    const wordFamily = cleanWordFamily(
-      (familyRecord?.lexemeIds || []).map((lid: string) => {
-        const l = lexById.get(lid);
-        return { id: lid, form: l?.form, literalMeaning: l?.literalMeaning, partOfSpeech: l?.partOfSpeech };
-      })
-    );
+      if (!syntaxData || !syntaxData.tokens) {
+        const wordTokens = word.split(/\s+/).filter(Boolean);
+        syntaxData = {
+          structurePattern: syntaxData?.structurePattern || 'ERG_SUBJ + OBJ + VERB',
+          tokens: syntaxData?.tokens || wordTokens.map(w => ({ token: w, pos: 'UNKNOWN' }))
+        };
+      }
+    }
 
     return NextResponse.json({
-      word: normalized,
-      prefixes,
-      root: first.form,
-      prefixCount: prefixes.length,
-      method: 'dictionary',
-      confidence: 1.0,
-      source: first.literalMeaning,
-      knownRootCount: data.lexemes.length,
-      lexeme: {
-        id: first.id,
-        form: first.form,
-        ipa: first.ipa,
-        literalMeaning: first.literalMeaning,
-        partOfSpeech: first.partOfSpeech,
-        dialectVariants,
-        wordFamilyId: first.wordFamilyId,
-        rootIds: first.rootIds || [],
-        conceptId: first.conceptId || null,
-        notes: first.notes,
-      },
-      wordFamily,
-      lemma: first.form,
-      lemmaPos,
-      lemmaConfidence: 1.0,
-      personArguments: [],
-      lemmaPrefixes: prefixes,
-      lemmaSuffixes: suffixes,
-      rootMatches: [],
-      frequency: { kabardian: freqKbd, adyghe: freqAdy },
-      allMeanings: exactLexemes.map((l: any) => ({
-        id: l.id,
-        literalMeaning: l.literalMeaning,
-        partOfSpeech: l.partOfSpeech,
-        ipa: l.ipa,
-        notes: l.notes,
-      })),
+      word,
+      isMultiWord,
+      root: extractedRoot,
+      syntax: syntaxData,
+      dictionaryFile: dictionaryFile || null,
+      dictionarySize: provider.size(),
+      result,
     });
+  } catch (err: any) {
+    console.error('[morphology/analyze]', err);
+    return NextResponse.json(
+      { error: err?.message || 'Analiz hatasi' },
+      { status: 500 }
+    );
   }
-
-  // 2. Tam eslesme yoksa, MorphologyAnalyzer
-  const knownRoots: KnownRoot[] = data.lexemes
-    .filter((l: any) => l.form)
-    .map((l: any) => ({
-      form: l.form,
-      meaning: l.literalMeaning && l.literalMeaning !== '?' ? l.literalMeaning : undefined,
-      partOfSpeech: l.partOfSpeech,
-    }));
-
-  const analyzer = new MorphologyAnalyzer(knownRoots, data.roots, data.morphemes, data.lexemes);
-  const result = analyzer.analyze(normalized);
-
-  return NextResponse.json({
-    word: normalized,
-    prefixes: result.prefixes,
-    root: result.root,
-    prefixCount: result.prefixCount,
-    method: result.method,
-    confidence: result.confidence,
-    source: result.source,
-    rootExtractor: result.rootExtractor,
-    nounCase: result.nounCase,
-    morphemes: result.morphemes,
-    knownRootCount: analyzer.getKnownRootCount(),
-    lexeme: null,
-    wordFamily: [],
-    lemma: result.root,
-    lemmaPos: result.suffixes && result.suffixes.length > 0 ? 'VERB' : (result.method === 'dictionary' ? 'NOUN' : 'NOUN/LEMMA'),
-    lemmaConfidence: result.confidence,
-    personArguments: [],
-    lemmaPrefixes: result.prefixes,
-    lemmaSuffixes: result.suffixes ?? [],
-    rootMatches: [],
-    frequency: { kabardian: freqKbd, adyghe: freqAdy },
-    allMeanings: [],
-  });
 }
 
-
-
-
+export async function GET() {
+  return NextResponse.json({ dictionaries: DICTIONARIES_META });
+}

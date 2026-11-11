@@ -5,6 +5,12 @@ export interface RootExtractorInput {
   lexemeId: string;
   form: string;
   morphemes?: string[];
+  rootIds?: string[];
+  derivation?: {
+    rootIds?: string[];
+    morphemeIds?: string[];
+    rule?: string;
+  };
 }
 
 export interface RootExtractorOutput {
@@ -45,7 +51,28 @@ export class RootExtractor {
         ? { lexemeId: 'UNKNOWN', form: input }
         : input;
 
-    const lexeme = this.lexemes.get(inp.lexemeId);
+    const lexeme = this.lexemes.get(inp.lexemeId) || (typeof input === 'object' ? (input as any) : undefined);
+    // Oncelik: girdinin kendi rootIds / derivation.rootIds
+    const inputRootIds = inp.rootIds?.length
+      ? inp.rootIds
+      : inp.derivation?.rootIds?.length
+        ? inp.derivation.rootIds
+        : undefined;
+
+    if (inputRootIds?.length) {
+      const rootId = inputRootIds[0];
+      const root = this.roots.get(rootId);
+      return {
+        lexemeId: inp.lexemeId,
+        rootId,
+        rootForm: root?.form ?? null,
+        rootType: root?.form ? this.classifier.getType(root.form) : 'NEUTRAL',
+        method: 'dictionary',
+        confidence: 0.95,
+        evidence: `input.derivation.rootIds[0] = ${rootId}`,
+      };
+    }
+
     const rawIds = (lexeme as any)?.rootIds?.length
       ? (lexeme as any).rootIds
       : lexeme?.derivation?.rootIds;

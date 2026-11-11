@@ -1,214 +1,216 @@
-import fs from 'fs';
-import path from 'path';
-import { VerbDecompiler, VerbResult } from './VerbDecompiler';
-import { RootExtractor, RootExtractorOutput } from './RootExtractor';
+﻿/**
+ * MorphologyAnalyzer - Çerkesçe Çekirdek Morfoloji Analiz Motoru
+ * ADR-0063: Dynamic Prefix & Suffix Counter Resolution
+ */
+
 import { NounCaseParser, NounCaseResult } from './NounCaseParser';
-import { MorphemeParser, MorphemeParserOutput } from './MorphemeParser';
-import { VerbSuffixDecompiler, SuffixResult } from './VerbSuffixDecompiler';
-import { Root } from '../linguistic/Root';
-import { Morpheme } from '../linguistic/Morpheme';
+import { NominalDerivationDecompiler, DerivationResult as NominalDerivationResult } from './NominalDerivationDecompiler';
+import { VerbSuffixDecompiler, VerbDecompileResult as VerbSuffixResult } from './VerbSuffixDecompiler';
+import { VerbPrefixDecompiler, VerbPrefixDecompileResult } from './VerbPrefixDecompiler';
+import { DictionaryProvider, DictionaryEntry } from './DictionaryProvider';
+import { PossessiveParser, PossessiveInfo, PluralInfo } from './PossessiveParser';
+import { CompoundDecompiler } from './CompoundDecompiler';
+import { normalizePalochka } from './utils/textUtils';
+
+export interface MorphemeDetail {
+  morpheme: string;
+  type: string;
+  meaningTr?: string;
+  glossTr?: string;
+}
 
 export interface MorphologyResult {
   input: string;
+  word?: string;
   root: string;
-  prefixes: Array<{ slot: string; form: string; position: number }>;
-  prefixCount: number;
-  method: 'dictionary' | 'exact' | 'partial' | 'fallback' | 'unverified' | 'ambiguous';
-  confidence: number;
-  source?: string;
-  rootExtractor?: RootExtractorOutput;
+  source: 'noun' | 'verb' | 'compound' | 'unknown';
   nounCase?: NounCaseResult;
-  morphemes?: MorphemeParserOutput;
-  suffixes?: SuffixResult[];
-}
-
-export interface KnownRoot {
-  form: string;
-  meaning?: string;
-  partOfSpeech?: string;
+  derivation?: NominalDerivationResult;
+  verbSuffixes?: VerbSuffixResult;
+  verbPrefixes?: VerbPrefixDecompileResult;
+  dictionaryEntry?: DictionaryEntry | null;
+  confidence: number;
+  possessive?: PossessiveInfo | null;
+  plural?: PluralInfo | null;
+  morphemes?: MorphemeDetail[];
+  prefixCount: number;
+  suffixCount: number;
 }
 
 export class MorphologyAnalyzer {
-  private decompiler: VerbDecompiler;
-  private knownRoots: Map<string, KnownRoot>;
-  private rootExtractor: RootExtractor;
-  private nounCaseParser: NounCaseParser;
-  private morphemeParser: MorphemeParser;
-  private lexemes: Map<string, any>;
-  private rootFormSet: Set<string>;
-  private ambiguousForms: Set<string>;
-  private strictDecompile: boolean;
+  private caseParser: NounCaseParser;
+  private derivationDecompiler: NominalDerivationDecompiler;
+  private verbSuffixDecompiler: VerbSuffixDecompiler;
+  private verbPrefixDecompiler: VerbPrefixDecompiler;
+  private possessiveParser: PossessiveParser;
+  private compoundDecompiler: CompoundDecompiler;
+  private dictionaryProvider: DictionaryProvider;
 
-  constructor(
-    knownRoots: KnownRoot[] = [],
-    roots: Root[] = [],
-    morphemes: Morpheme[] = [],
-    lexemes: any[] = [],
-    strictDecompile: boolean = false
-  ) {
-    this.rootFormSet = new Set<string>(
-      roots.map((r: any) => r.form).filter(Boolean)
-    );
+  constructor(dictProvider?: any) {
+    this.caseParser = new NounCaseParser();
+    this.derivationDecompiler = new NominalDerivationDecompiler();
+    this.verbSuffixDecompiler = new VerbSuffixDecompiler();
+    this.verbPrefixDecompiler = new VerbPrefixDecompiler();
+    this.possessiveParser = new PossessiveParser();
+    this.compoundDecompiler = new CompoundDecompiler();
 
-    // Ayni forma sahip birden fazla kok varsa 'ambiguous' isaretle
-
-    const formCounts = new Map<string, number>();
-
-    for (const r of roots as any[]) {
-
-      const f = (r?.form ?? '').trim();
-
-      if (f) formCounts.set(f, (formCounts.get(f) ?? 0) + 1);
-
+    if (dictProvider && typeof dictProvider.findEntry === 'function') {
+      this.dictionaryProvider = dictProvider;
+    } else if (Array.isArray(dictProvider)) {
+      this.dictionaryProvider = new DictionaryProvider(dictProvider);
+    } else {
+      this.dictionaryProvider = new DictionaryProvider();
     }
-
-    this.ambiguousForms = new Set(
-
-      [...formCounts].filter(([, n]) => n > 1).map(([f]) => f)
-
-    );
-
-    this.strictDecompile = strictDecompile;
-    this.decompiler = new VerbDecompiler(this.rootFormSet, strictDecompile);
-    this.knownRoots = new Map(
-      knownRoots.filter(r => r.form).map(r => [r.form, r])
-    );
-    this.rootExtractor = new RootExtractor(roots, lexemes);
-    this.lexemes = new Map((lexemes || []).map((l: any) => [l.id, l]));
-    this.nounCaseParser = new NounCaseParser();
-    this.morphemeParser = new MorphemeParser(morphemes);
   }
 
-  analyze(form: string): MorphologyResult {
-    const normalized = form.trim();
+  private safeFindEntry(key: string): DictionaryEntry | null {
+    if (this.dictionaryProvider && typeof this.dictionaryProvider.findEntry === 'function') {
+      return this.dictionaryProvider.findEntry(key);
+    }
+    return null;
+  }
 
-    // 0. Fiil soneklerini cikar.
-    // strict modda: kesilen sonrasi kalan parca roots.json'da olmali.
-    const suffixResult = VerbSuffixDecompiler.decompile(
-      normalized,
-      this.rootFormSet,
-      this.strictDecompile
-    );
+  private calculateCounts(morphemes: MorphemeDetail[] = []): { prefixCount: number; suffixCount: number } {
+    const prefixTypes = ['possessive', 'applicative', 'causative', 'reflexive', 'person', 'prefix'];
+    const suffixTypes = ['case', 'plural', 'derivation', 'connective', 'suffix', 'verb_suffix'];
 
-    // 0a. Sonek varsa -> VERB
-    if (suffixResult.suffixes.length > 0) {
-      const verbResult = this.decompiler.decompile(suffixResult.stripped);
+    let prefixCount = 0;
+    let suffixCount = 0;
 
-      // Kok roots.json'da varsa 'exact', yoksa VerbDecompiler'in method'unu kullan.
-      // rootFormSet bos ise (testler / eski cagrilar) eski davranis korunur.
-
-      const hasRootSet = this.rootFormSet.size > 0;
-
-      const rootValid = !hasRootSet || this.rootFormSet.has(verbResult.root);
-
-      const method = this.ambiguousForms.has(verbResult.root)
-
-        ? 'ambiguous'
-
-        : !hasRootSet
-
-          ? verbResult.method
-
-          : rootValid ? 'exact' : 'unverified';
-
-      return {
-        input: normalized,
-        prefixes: verbResult.prefixes,
-        root: verbResult.root,
-        prefixCount: verbResult.prefixCount,
-        method,
-        confidence: verbResult.confidence,
-        source: 'verb',
-        rootExtractor: this.safeExtract(verbResult.root || normalized),
-        nounCase: this.safeNounCase(verbResult.root || normalized),
-        morphemes: this.safeMorpheme(verbResult.root || normalized),
-        suffixes: suffixResult.suffixes,
-      };
+    for (const m of morphemes) {
+      if (prefixTypes.includes(m.type)) {
+        prefixCount++;
+      } else if (suffixTypes.includes(m.type)) {
+        suffixCount++;
+      }
     }
 
-    if (!normalized) {
+    return { prefixCount, suffixCount };
+  }
+
+  analyze(word: string): MorphologyResult {
+    const rawInput = word ? word.trim() : '';
+    const input = normalizePalochka(rawInput);
+    if (!input) {
       return {
         input: '',
-        prefixes: [],
+        word: '',
         root: '',
-        prefixCount: 0,
-        method: 'fallback',
+        source: 'unknown',
         confidence: 0,
-        suffixes: suffixResult.suffixes,
-      };
-    }
-
-    // 1. Bilinen kok mu?
-    const known = this.knownRoots.get(normalized);
-    if (known && !this.ambiguousForms.has(normalized)) {
-      return {
-        input: normalized,
-        prefixes: [],
-        root: normalized,
+        dictionaryEntry: null,
+        morphemes: [],
         prefixCount: 0,
-        method: 'dictionary',
-        confidence: 1.0,
-        source: known.meaning ?? known.partOfSpeech,
-        rootExtractor: this.safeExtract(known.form || normalized),
-        nounCase: this.safeNounCase(known.form || normalized),
-        morphemes: this.safeMorpheme(known.form || normalized),
-        suffixes: suffixResult.suffixes,
+        suffixCount: 0,
       };
     }
 
-        // 2. VerbDecompiler ile onekleri ayristir
-    const result = this.decompiler.decompile(normalized);
+    // 1. Fiil Ön-ek ve Sonek Ayrıştırması
+    const prefixRes = this.verbPrefixDecompiler.parse(input);
+    const verbSuffRes = this.verbSuffixDecompiler.parse(prefixRes.stem);
+    const isVerbCandidate = (verbSuffRes.suffixes && verbSuffRes.suffixes.length > 0) || (prefixRes.prefixes && prefixRes.prefixes.length > 0);
 
-    const hasRootSet2 = this.rootFormSet.size > 0;
-    const rootValid2 = !hasRootSet2 || this.rootFormSet.has(result.root);
+    if (isVerbCandidate) {
+      const rootCandidate = verbSuffRes.stem;
+      const dictEntry = this.safeFindEntry(rootCandidate) || this.safeFindEntry(input);
+      const effectiveRoot = dictEntry?.root || dictEntry?.lemma || rootCandidate;
 
-    const method2 = this.ambiguousForms.has(result.root)
-      ? 'ambiguous'
-      : !hasRootSet2
-        ? result.method
-        : rootValid2 ? 'exact' : 'unverified';
+      const morphemes: MorphemeDetail[] = [
+        ...prefixRes.prefixes.map((p: any) => ({ morpheme: p.morpheme, type: p.type, glossTr: p.glossTr })),
+        { morpheme: rootCandidate, type: 'root', meaningTr: dictEntry?.meaningTr },
+        ...verbSuffRes.suffixes.map((s: any) => ({ morpheme: s.suffix, type: s.type, glossTr: s.meaningTr })),
+      ];
+
+      const counts = this.calculateCounts(morphemes);
+
+      return {
+        input: rawInput,
+        word: rawInput,
+        root: effectiveRoot,
+        source: 'verb',
+        verbPrefixes: prefixRes,
+        verbSuffixes: verbSuffRes,
+        dictionaryEntry: dictEntry,
+        confidence: dictEntry ? 0.95 : 0.85,
+        morphemes,
+        ...counts,
+      };
+    }
+
+    // 2. Sahiplik ve Büküm Katmanları
+    const possessiveRes = this.possessiveParser.parse(input);
+    const caseRes = this.caseParser.parse(possessiveRes.stem);
+
+    // 3. Derin Bileşik Kelime Çözümleme
+    const compoundRes = this.compoundDecompiler.parse(caseRes.stem);
+
+    if (compoundRes.isCompound) {
+      const dictEntry = this.safeFindEntry(caseRes.stem) || this.safeFindEntry(input);
+      const morphemes: MorphemeDetail[] = [];
+
+      if (possessiveRes.possessive) {
+        morphemes.push({ morpheme: possessiveRes.possessive.prefix, type: 'possessive', glossTr: possessiveRes.possessive.glossTr });
+      }
+      morphemes.push(...compoundRes.morphemes);
+      if (possessiveRes.plural) {
+        morphemes.push({ morpheme: possessiveRes.plural.suffix, type: 'plural', glossTr: possessiveRes.plural.glossTr });
+      } else if (caseRes.case !== 'bare') {
+        morphemes.push({ morpheme: caseRes.suffix, type: 'case', glossTr: caseRes.case });
+      }
+
+      const counts = this.calculateCounts(morphemes);
+
+      return {
+        input: rawInput,
+        word: rawInput,
+        root: compoundRes.stem,
+        source: 'compound',
+        nounCase: caseRes,
+        possessive: possessiveRes.possessive,
+        plural: possessiveRes.plural,
+        dictionaryEntry: dictEntry,
+        confidence: 0.95,
+        morphemes,
+        ...counts,
+      };
+    }
+
+    // 4. Standart İsim Büküm ve Türetim Ayrıştırması
+    const derivRes = this.derivationDecompiler.parse(caseRes.stem);
+    const nounRootCandidate = derivRes.stem;
+    const dictEntry = this.safeFindEntry(nounRootCandidate) || this.safeFindEntry(input);
+    const effectiveRoot = dictEntry?.root || dictEntry?.lemma || nounRootCandidate;
+
+    const morphemes: MorphemeDetail[] = [];
+    if (possessiveRes.possessive) {
+      morphemes.push({ morpheme: possessiveRes.possessive.prefix, type: 'possessive', glossTr: possessiveRes.possessive.glossTr });
+    }
+    morphemes.push({ morpheme: nounRootCandidate, type: 'root', meaningTr: dictEntry?.meaningTr });
+    
+    if (derivRes.suffix) {
+      morphemes.push({ morpheme: derivRes.suffix, type: 'derivation', glossTr: derivRes.meaningTr });
+    }
+    if (possessiveRes.plural) {
+      morphemes.push({ morpheme: possessiveRes.plural.suffix, type: 'plural', glossTr: possessiveRes.plural.glossTr });
+    } else if (caseRes.case !== 'bare') {
+      morphemes.push({ morpheme: caseRes.suffix, type: 'case', glossTr: caseRes.case });
+    }
+
+    const counts = this.calculateCounts(morphemes);
 
     return {
-      input: result.input,
-      prefixes: result.prefixes,
-      root: result.root,
-      prefixCount: result.prefixCount,
-      method: method2,
-      confidence: result.confidence,
-      rootExtractor: this.safeExtract(result.root || normalized),
-      nounCase: this.safeNounCase(result.root || normalized),
-      morphemes: this.safeMorpheme(result.root || normalized),
+      input: rawInput,
+      word: rawInput,
+      root: effectiveRoot,
+      source: 'noun',
+      nounCase: caseRes,
+      derivation: derivRes,
+      possessive: possessiveRes.possessive,
+      plural: possessiveRes.plural,
+      dictionaryEntry: dictEntry,
+      confidence: dictEntry ? 0.95 : 0.80,
+      morphemes,
+      ...counts,
     };
-  }
-
-
-  private safeExtract(form: string): RootExtractorOutput | undefined {
-    try {
-      const lexemeEntry = [...this.lexemes.entries()].find(([id, l]) => l.form === form);
-      const lexemeId = lexemeEntry ? lexemeEntry[0] : 'UNKNOWN';
-      return this.rootExtractor.extract({ lexemeId, form });
-    } catch {
-      return undefined;
-    }
-  }
-
-  private safeNounCase(form: string): NounCaseResult | undefined {
-    try {
-      return this.nounCaseParser.parse(form);
-    } catch {
-      return undefined;
-    }
-  }
-
-  private safeMorpheme(form: string): MorphemeParserOutput | undefined {
-    try {
-      return this.morphemeParser.parse(form);
-    } catch {
-      return undefined;
-    }
-  }
-
-  getKnownRootCount(): number {
-    return this.knownRoots.size;
   }
 }

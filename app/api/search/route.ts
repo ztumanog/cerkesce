@@ -29,6 +29,10 @@ export async function GET(request: NextRequest) {
     const { searchParams } = new URL(request.url);
     const rawQ = (searchParams.get('q') || '').trim();
     const q = normalizePalochka(normalizeLatinToKiril(rawQ)).toLowerCase();
+    const qAlt = q.includes('е') ? q.replace(/е/g, 'э') : (q.includes('э') ? q.replace(/э/g, 'е') : null);
+    // Son palochkayi sil - ilk palochka lazim (щӀ), ikinci fazla olabilir (лӀ -> л)
+    // qAlt uzerinden: hem е->э hem son palochka silinmis hali
+    const qNoPal = qAlt ? qAlt.replace(/Ӏ(?!.*Ӏ)/, '') : (q.includes('Ӏ') ? q.replace(/Ӏ(?!.*Ӏ)/, '') : null);
     const limit = Math.max(1, Math.min(50, parseInt(searchParams.get('limit') || '20', 10)));
 
     if (!q) {
@@ -39,12 +43,30 @@ export async function GET(request: NextRequest) {
 
     // Tam eşleşme ilk sırada - Kriter 2
     const exact = index.get(normKey(q));
+    const exactAlt = qAlt ? index.get(normKey(qAlt)) : null;
+    const exactNoPal = qNoPal ? index.get(normKey(qNoPal)) : null;
 
     const starts: any[] = [];
     for (const lex of list) {
       if (starts.length >= limit) break;
       const form = normalizePalochka(String(lex.form || lex.headword || '')).toLowerCase();
       if (form.startsWith(q) && form !== q) starts.push(lex);
+    }
+
+    if (qAlt) {
+      for (const lex of list) {
+        if (starts.length >= limit) break;
+        const form = normalizePalochka(String(lex.form || lex.headword || '')).toLowerCase();
+        if (form.startsWith(qAlt) && form !== qAlt) starts.push(lex);
+      }
+    }
+
+    if (qNoPal) {
+      for (const lex of list) {
+        if (starts.length >= limit) break;
+        const form = normalizePalochka(String(lex.form || lex.headword || '')).toLowerCase();
+        if (form.startsWith(qNoPal) && form !== qNoPal) starts.push(lex);
+      }
     }
 
     const seen = new Set<string>();
@@ -72,6 +94,8 @@ export async function GET(request: NextRequest) {
     };
 
     if (exact) pushLex(exact);
+    if (exactAlt) pushLex(exactAlt);
+    if (exactNoPal) pushLex(exactNoPal);
     for (const lex of starts) pushLex(lex);
 
     const ms = Date.now() - start;

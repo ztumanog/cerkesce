@@ -1,29 +1,34 @@
-import { describe, it, expect } from 'vitest';
+﻿import { describe, it, expect } from 'vitest';
 import { MorphologyAnalyzer } from '../../../domain/morphology/MorphologyAnalyzer';
-import type { MorphologyResult } from '../../../domain/morphology/MorphologyAnalyzer';
 
-const roots = [{ form: 'сын' }, { form: 'ужь' }, { form: 'тын' }, { form: 'нэ' }];
+describe('MorphologyAnalyzer - Güncel Mimari Testleri', () => {
+    const analyzer = new MorphologyAnalyzer();
 
-describe('MorphologyAnalyzer: strict=false yolunda exact yalnizca dogrulanmis kokle', () => {
-  const analyzer = new MorphologyAnalyzer([], roots as any, [], [], false);
+    it('isim çözümlemesi yapar', () => {
+        const r = analyzer.analyze('план');
+        expect(r.source).toBe('noun');
+        expect(r.root).toBe('план');
+        expect(r.confidence).toBeGreaterThan(0);
+    });
 
-  it.each(['нэсын', 'план', 'юсыф'])('%s icin exact + yarim kok donmez', (word: string) => {
-    const r: MorphologyResult = analyzer.analyze(word);
-    expect(r.method === 'exact' && r.root === 'сы').toBe(false);
-    expect(r.method === 'exact' && r.root === 'пл').toBe(false);
-    expect(r.method === 'exact' && r.root === 'юсы').toBe(false);
-  });
+    it('türetilmiş isim çözümlemesi yapar', () => {
+        const r = analyzer.analyze('цӀыхуныгъэ');
+        expect(r.source).toBe('noun');
+        expect(r.derivation?.derivationType).toBe('abstract');
+    });
 
-  it.each(['нэсын', 'юсыф'])('%s icin exact donmez (kok dogrulanamaz)', (word: string) => {
-    const r: MorphologyResult = analyzer.analyze(word);
-    expect(r.method).not.toBe('exact');
-  });
+    it('bilinmeyen form için varsayılan nesne döner', () => {
+        const r = analyzer.analyze('xyzabc');
+        expect(r.input).toBe('xyzabc');
+        expect(r.confidence).toBeGreaterThan(0);
+        expect(Array.isArray(r.morphemes)).toBe(true);
+    });
 
-  it('bilinmeyen form unverified doner', () => {
-    const r: MorphologyResult = analyzer.analyze('сыгэ');
-    expect(r.method).toBe('unverified');
-    expect(r.method).not.toBe('exact');
-    const firstPrefix = r.prefixes.find(() => true);
-    expect(firstPrefix?.slot).toBe('person');
-  });
+    it('boş girdi için güvenli fallback döner', () => {
+        const r = analyzer.analyze('');
+        expect(r.source).toBe('unknown');
+        expect(r.confidence).toBe(0);
+        expect(r.prefixCount).toBe(0);
+        expect(r.suffixCount).toBe(0);
+    });
 });

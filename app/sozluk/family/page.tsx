@@ -1,4 +1,4 @@
-
+﻿
 import fs from 'fs';
 import path from 'path';
 import Client from './client';
@@ -11,8 +11,8 @@ function loadJson(name:string){
   ];
   for(const p of tries){
     try{
-      if(fs.existsSync(p)){
-        const raw=fs.readFileSync(p,'utf-8');
+      if(fs.existsSync(/*turbopackIgnore: true*/ p)){
+        const raw=fs.readFileSync(/*turbopackIgnore: true*/ p,'utf-8');
         const j=JSON.parse(raw);
         return Array.isArray(j)?j:(j.lexemes||Object.values(j));
       }

@@ -711,7 +711,7 @@ Durum: Mimar onayli.
 - Durum: Test tablosu kapatildi. KARAR 15 kesinlesmeye hazir.
 
 
-## KARAR 15 - KESINLESTI (2026-11-08)
+## KARAR 15 - UYGULANDI ve ilk surumu basariyla dogrulandi (2026-11-08)
 - Palochka, GH, Q/KH, Toplu Kapanis tamamlandi.
 - Kod: src/lib/latinNormalize.ts - Buyuk I palochka duzeltmesi dahil.
 - Testler gecti:
@@ -720,5 +720,31 @@ Durum: Mimar onayli.
     - k1u -> кӀу
     - ki -> ки (palochka degil)
     - gu -> гу, ghu -> гъу, psı -> псы, sh -> ш
-- Durum: KARAR 15 KESINLESTI.
+- Durum: KARAR 15 UYGULANDI ve ilk surumu basariyla dogrulandi. Mutlak son soz degil, kullanici verisi geldikce gozden gecirilebilir.
 - Siradaki: MVP-2 snapshot guncelleme, sonra Dialect Filter (MVP-2 sonrasi).
+
+
+## KARAR 15 - MIMAR ONAYI (2026-11-08)
+- KARAR 15 uygulanmis, dogrulanmis ve urun hattina alinmistir.
+- Latin arama mevcut /api/search akisina entegre edilmistir.
+- Yeni route veya paralel arama sistemi olusturulmadi.
+- MVP-2 tamamlanmis kabul edilir.
+- Sonraki oncelik Dialect Filter degil, once urun kullanimimin gozlemlenmesi ve MVP-2'nin kararli calistiginin dogrulanmasidir.
+- Mimari hat: Kullanici -> /api/search -> normalize -> arama -> sonuc -> detay (tek hat)
+
+
+## KARAR 15 - MIMAR SON ONAYI / GOZLEM FAZI (2026-11-08)
+- MVP-2 kapanmis kabul edildi.
+- Kanit: Kullanici beyani + testler.
+- Kritik karar onaylandi: i != Ӏ, k -> к (къ degil).
+- Mimari kazanim: Yeni route acilmadi, tek hat korundu.
+- Gozlem karari onaylandi: cerkesce-latin-sayac / cerkesce-kiril-sayac
+- Izlenecekler: Latin sorgu orani, en cok kullanilan Latin varyantlar, basarisiz aramalar, tam eslesme orani, Dialect Filter ihtiyaci.
+- Dialect Filter: Beklemeli. Once Latin arama gozlemlenecek.
+- Durum: MVP-1 OK, MVP-1.1 OK, MVP-2 OK, Gozlem BASLADI, Dialect BEKLIYOR, Morphology BEKLIYOR, Discovery BEKLIYOR.
+
+
+## KARAR 15 - EK: j -> ж (2026-11-10)
+- Gozlemden bulundu: bje -> бjе oluyordu, 0 sonuc.
+- Karar: j -> ж KABUL (Turkce j = ж)
+- Test: bje -> бжэ (kapi) - 21 sonuc, gecti.

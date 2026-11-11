@@ -1,4 +1,24 @@
-"use client";
+"use client"
+
+// MVP-2 Gozlem: Latin mi Kiril mi sayaci, localStorage'da tutulur
+
+function gozlemOku() {
+  try {
+    const l = localStorage.getItem("cerkesce-latin-sayac") || "0";
+    const k = localStorage.getItem("cerkesce-kiril-sayac") || "0";
+    return { l, k };
+  } catch { return { l: "0", k: "0" }; }
+}
+
+function gozlemSayac(q: string) {
+  try {
+    const isLatin = q.length > 0 && !/[\u0400-\u04FF]/.test(q);
+    const key = isLatin ? "cerkesce-latin-sayac" : "cerkesce-kiril-sayac";
+    const cur = parseInt(localStorage.getItem(key) || "0", 10) || 0;
+    localStorage.setItem(key, String(cur + 1));
+  } catch {}
+}
+;
 
 import { useCallback, useEffect, useRef, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
@@ -9,8 +29,10 @@ import {
 import { MagnifyingGlassIcon, HeartIcon, Cross2Icon, SunIcon, MoonIcon } from "@radix-ui/react-icons";
 import { AkilliKlavye } from "@/components/features/AkilliKlavye";
 import "./arama.css";
+import { getDialectMapper } from "@/lib/dialectRules";
+import { DialectCode } from "@/domain/dialect/types/DialectTypes";
 
-type LexemeResult = { id: string; form: string; tr: string; ipa: string; partOfSpeech: string; };
+type LexemeResult = { id: string; form: string; tr: string; ipa: string; partOfSpeech: string; dialectVariants?: { adyghe?: string; kabardian?: string }; };
 type RawResult = Record<string, unknown>;
 const POPULAR_TERMS = ["гу", "псы", "унэ", "шы", "псалъэ"];
 const GECMIS_KEY = "cerkesce-arama-gecmisi";
@@ -24,6 +46,7 @@ function normalizeResult(raw: RawResult): LexemeResult {
     tr: asString(raw.tr ?? raw.turkish ?? raw.meaning_tr ?? raw.meaning),
     ipa: asString(raw.ipa ?? raw.pronunciation),
     partOfSpeech: asString(raw.partOfSpeech ?? raw.pos),
+    dialectVariants: (raw.dialectVariants as { adyghe?: string; kabardian?: string } | undefined),
   };
 }
 
@@ -44,6 +67,7 @@ export default function AramaClient() {
   const [klavyeAcik, setKlavyeAcik] = useState(false);
   const [oneriler, setOneriler] = useState<LexemeResult[]>([]);
   const [oneriAcik, setOneriAcik] = useState(false);
+  const [dialect, setDialect] = useState<"all" | "adyghe" | "kabardian">("all");
   const requestIdRef = useRef(0);
   const initialSearchDoneRef = useRef(false);
   const inputRef = useRef<HTMLInputElement>(null);
@@ -128,6 +152,7 @@ export default function AramaClient() {
     setLoading(true); setSearched(true); setError("");
     gecmiseEkle(trimmed); setOneriAcik(false);
     try {
+      gozlemSayac(trimmed);
       const res = await fetch(`/api/search?q=${encodeURIComponent(trimmed)}&limit=20`);
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       const data = await res.json();
@@ -172,13 +197,13 @@ export default function AramaClient() {
               <form className="search-form" role="search" aria-label="Sözlükte kelime ara" onSubmit={(e) => { e.preventDefault(); doSearch(query); }}>
                 <Text as="label" htmlFor="arama-girdisi" size="2" weight="medium" className="search-label">Sözlükte ara</Text>
                 <Flex gap="2" className="search-controls">
-                  <TextField.Root id="arama-girdisi" size="3" value={query} onChange={(e) => setQuery(e.target.value)} placeholder="гу — kalp, yürek..." aria-label="Aranacak kelime" autoComplete="off" spellCheck={false} className="search-input">
+                  <TextField.Root id="arama-girdisi" size="3" value={query} onChange={(e) => setQuery(e.target.value)} placeholder="Türkçe veya Çerkesçe ara..." aria-label="Aranacak kelime" autoComplete="off" spellCheck={false} className="search-input">
                     <TextField.Slot><MagnifyingGlassIcon aria-hidden="true" /></TextField.Slot>
                   </TextField.Root>
                   <Button type="submit" size="3" highContrast disabled={loading} className="search-submit">{loading ? <Spinner size="2" /> : "Ara"}</Button>
                 </Flex>
                 <Flex justify="between" align="center" gap="3" wrap="wrap" className="search-meta">
-                  <Text size="1" color="gray">Türkçe veya Çerkesçe arayabilirsin</Text>
+                  
                   <Text size="1" color="gray"><span className="key-hint">Enter</span><span className="key-hint-label"> ile ara</span><span className="key-hint" style={{ marginLeft: 8 }}>Esc</span><span className="key-hint-label"> ile temizle</span></Text>
                 </Flex>
               </form>
@@ -197,9 +222,10 @@ export default function AramaClient() {
                 </Box>
               )}
 
-              <Flex justify="between" align="center" gap="2" className="klavye-toggle-row">
+
+              <Flex justify="between" align="center" gap="2" className="klavye-toggle-row" style={{ marginTop: "16px" }}>
                 <Text size="1" color="gray">Çerkesçe harfler</Text>
-                <Button variant="soft" size="1" onClick={() => setKlavyeAcik((v: boolean) => !v)} aria-expanded={klavyeAcik} aria-controls="akilli-klavye">
+                <Button variant="soft" size="2" onClick={() => setKlavyeAcik((v: boolean) => !v)} aria-expanded={klavyeAcik} aria-controls="akilli-klavye">
                   {klavyeAcik ? "Klavye ✕" : "⌨ Klavyeyi aç"}
                 </Button>
               </Flex>
@@ -233,6 +259,15 @@ export default function AramaClient() {
                       </span>
                     ))}
                     <button type="button" className="history-clear" onClick={gecmisiTemizle}>Temizle</button>
+                  </Flex>
+                  <Flex align="center" gap="2" wrap="wrap" className="popular-row">
+                    <Text size="1" color="gray">Gozlem: Latin {gozlemOku().l} - Kiril {gozlemOku().k}</Text>
+                  </Flex>
+                  <Flex align="center" gap="2" wrap="wrap" className="popular-row">
+                    <Text size="1" color="gray">Dialect:</Text>
+                    <button type="button" style={{ background: dialect === "all" ? "#e5e7eb" : "#f3f4f6", color: "#111827", border: "1px solid #d1d5db", borderRadius: "999px", padding: "4px 12px", minWidth: "64px", height: "28px", fontSize: "12px", fontWeight: dialect === "all" ? 700 : 400 }} onClick={() => setDialect("all")}>Зэкӏэ</button>
+                    <button type="button" style={{ background: dialect === "adyghe" ? "#2563eb" : "#dbeafe", color: dialect === "adyghe" ? "#fff" : "#1e40af", border: "1px solid #93c5fd", borderRadius: "999px", padding: "4px 12px", minWidth: "64px", height: "28px", fontSize: "12px", fontWeight: dialect === "adyghe" ? 700 : 400 }} onClick={() => setDialect("adyghe")}>ADY</button>
+                    <button type="button" style={{ background: dialect === "kabardian" ? "#16a34a" : "#dcfce7", color: dialect === "kabardian" ? "#fff" : "#166534", border: "1px solid #86efac", borderRadius: "999px", padding: "4px 12px", minWidth: "64px", height: "28px", fontSize: "12px", fontWeight: dialect === "kabardian" ? 700 : 400 }} onClick={() => setDialect("kabardian")}>KBD</button>
                   </Flex>
                 </>
               )}
@@ -278,6 +313,18 @@ export default function AramaClient() {
                   </Card>
                 )}
                 {!loading && visibleResults.map((result: LexemeResult, index: number) => {
+                  const displayForm = (() => {
+                    if (dialect === "all") return result.form;
+                    const pre = dialect === "adyghe" ? result.dialectVariants?.adyghe : result.dialectVariants?.kabardian;
+                    if (pre) return pre;
+                    // dialectVariants yoksa, eski DialectMapper kuralla uret
+                    try {
+                      const m = getDialectMapper();
+                      const src = dialect === "adyghe" ? DialectCode.KBD : DialectCode.ADY;
+                      const tgt = dialect === "adyghe" ? DialectCode.ADY : DialectCode.KBD;
+                      return m.transform(result.form, src, tgt);
+                    } catch { return result.form; }
+                  })();
                   const isFavorite = favorites.has(result.id);
                   const accessibleName = [result.form, result.tr, "Sözlük detayına git"].filter(Boolean).join(". ");
                   return (
@@ -285,7 +332,7 @@ export default function AramaClient() {
                       <Flex align="center" gap="3" className="result-layout">
                         <Link href={`/lexeme/${result.id}`} className="result-main" aria-label={accessibleName}>
                           <Flex align="center" gap="3" className="result-word-row">
-                            <Heading as="h3" size="5" weight="bold" className="result-word"><span lang="ady-Cyrl">{result.form}</span></Heading>
+                            <Heading as="h3" size="5" weight="bold" className="result-word"><span lang="ady-Cyrl">{displayForm}</span></Heading>
                             {result.partOfSpeech && (<Badge variant="soft" color="indigo" highContrast>{result.partOfSpeech}</Badge>)}
                           </Flex>
                           <Text size="2" color="gray" className="result-ipa">{result.ipa ? `[${result.ipa}]` : "Telaffuz bilgisi yok"}</Text>

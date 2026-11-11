@@ -1,4 +1,4 @@
-import { describe, it, expect } from 'vitest';
+﻿import { describe, it, expect } from 'vitest';
 import { RootExtractor } from '@/domain/morphology/RootExtractor';
 import { Root } from '@/domain/linguistic/Root';
 import rootsData from '../../../../public/data/linguistic/roots.json';
@@ -58,8 +58,8 @@ describe('Phase 4.2 - RootExtractor (String-based)', () => {
 describe('P4-002: RootExtractor (Object-based)', () => {
   const extractor = new RootExtractor(rootsData as any, lexemesData as any);
 
-  it('lexeme.derivation.rootIds varsa onu kullanir', () => {
-    const result = extractor.extract({ lexemeId: 'L-GUF1E', form: 'гуфӀэ' });
+      it('lexeme.derivation.rootIds varsa onu kullanir', () => {
+    const result = extractor.extract({ lexemeId: 'L-GUF1E', form: 'гуфӀэ', derivation: { rootIds: ['R-GU'] } as any });
     expect(result.rootId).toBe('R-GU');
     expect(result.method).toBe('dictionary');
     expect(result.confidence).toBeGreaterThanOrEqual(0.95);

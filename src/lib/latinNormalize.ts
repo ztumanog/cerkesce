@@ -3,6 +3,7 @@
 // Ilke: En uzun once. Coklu yazimi kabul et.
 
 const MAP: Array<[string, string]> = [
+  ["ş'", "щӀ"],
   ["ghu", "гъу"],
   ["khu", "къу"],
   ["shch", "щ"],
@@ -35,6 +36,7 @@ const MAP: Array<[string, string]> = [
   // tek harf latin -> kiril (en sonda, uzunlar once yakalandi)
   ["a", "а"],
   ["b", "б"],
+  ["j", "ж"],
   ["v", "в"],
   ["g", "г"],
   ["d", "д"],

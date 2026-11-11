@@ -1,175 +1,112 @@
-/**
- * SyntaxAnalyzer - Cumle yapisi cozumleyici
- * ADR-0040: Morphological Root Taxonomy
- * P4-019 - Morphology Engine
- *
- * Kaynak: Kumakhov, gl9.pdf (Cumle Yapisi)
- *
- * Desteklenen cumle tipleri:
- * - SOV       : Ozne-Nesne-Yuklem (Пшъашъэм тхылъыр ехы)
- * - OSV       : Nesne-Ozne-Yuklem (Л1ыр псым йытхъэлъэгъ)
- * - SV        : Ozne-Yuklem (Сабийм къ1ежых)
- * - OV        : Nesne-Yuklem (йыльэсыр йыуыхащь)
- * - ERGATIVE  : Ergatif yapi
- * - AFFECTIVE : Affektif yapi
- * - BARE      : Tek obek
- *
- * ADR-ROOT-001: Sadece veri uretir, Runtime'a baglanmaz.
+﻿/**
+ * SyntaxAnalyzer - Çerkesçe Sentaks ve Cümle Çözümleyici
+ * ADR-0049: Complete Pattern Recognition (Ergative, Nominative & Clauses)
  */
 
-// ============================================
-// TIP TANIMLARI
-// ============================================
+import { MorphologyAnalyzer, MorphologyResult } from './MorphologyAnalyzer';
 
-export type SentenceType =
-  | 'SOV'
-  | 'OSV'
-  | 'SV'
-  | 'OV'
-  | 'ERGATIVE'
-  | 'AFFECTIVE'
-  | 'BARE';
+export interface SyntacticToken {
+  word: string;
+  role: string;
+  analysis?: MorphologyResult;
+}
 
-export interface SentenceNode {
-  type: SentenceType;
-  subject: string | null;
-  object: string | null;
-  predicate: string;
-  isErgative: boolean;
+export interface SyntacticStructure {
+  sentence: string;
+  tokens: SyntacticToken[];
+  structurePattern: string;
   confidence: number;
 }
 
-// ============================================
-// YARDIMCI
-// ============================================
-
-// Ergatif ekler
-const ERGATIVE_SUFFIXES: string[] = ['м', 'хэм'];
-
-// Absolutive ekler
-const ABSOLUTIVE_SUFFIXES: string[] = ['р', 'хэр'];
-
-// Affektif fiil onekleri
-const AFFECTIVE_PREFIXES: string[] = ['йы1э', 'фэ', 'хуэ', 'ф1эф1'];
-
-// ============================================
-// SYNTAX ANALYZER
-// ============================================
-
 export class SyntaxAnalyzer {
-  /**
-   * Bir cumleyi cozumler.
-   */
-  analyze(phrases: string[]): SentenceNode {
-    const tokens = phrases.filter(t => t && t.length > 0);
+  private analyzer: MorphologyAnalyzer;
 
-    if (tokens.length === 0) {
+  constructor(analyzer?: any) {
+    if (analyzer && typeof analyzer.analyze === 'function') {
+      this.analyzer = analyzer;
+    } else {
+      this.analyzer = new MorphologyAnalyzer();
+    }
+  }
+
+  analyzeSentence(sentence: string): SyntacticStructure {
+    const trimmed = sentence ? sentence.trim() : '';
+    if (!trimmed) {
       return {
-        type: 'BARE',
-        subject: null,
-        object: null,
-        predicate: '',
-        isErgative: false,
+        sentence: '',
+        tokens: [],
+        structurePattern: 'EMPTY',
         confidence: 0,
       };
     }
 
-    if (tokens.length === 1) {
-      return {
-        type: 'BARE',
-        subject: null,
-        object: null,
-        predicate: tokens[0],
-        isErgative: false,
-        confidence: 0.5,
-      };
-    }
+    const words = trimmed.split(/\s+/);
+    const rawAnalyses = words.map(w => this.analyzer.analyze(w));
 
-    // Ergatif tespit: cumlede en az 3 kelime VE hem ergatif (-м) hem absolutive (-р) olmali
-    const hasErgative = tokens.some(t => this.hasErgativeSuffix(t));
-    const hasAbsolutive = tokens.some(t => this.hasAbsolutiveSuffix(t));
-    const isErgative = tokens.length >= 3 && hasErgative && hasAbsolutive;
+    const hasErgativeInSentence = words.some((word, idx) => {
+      const a = rawAnalyses[idx];
+      return a.nounCase?.case === 'ergative' || word.endsWith('м');
+    });
 
-    // Affektif tespit
-    const isAffective = tokens.some(t => this.hasAffectivePrefix(t));
+    const tokens: SyntacticToken[] = words.map((word, idx) => {
+      const analysis = rawAnalyses[idx];
+      let role = 'other';
 
-    // Fiil (son token genelde yuklem)
-    const predicate = tokens[tokens.length - 1];
-
-    // Ozne/nesne ayrimi
-    let subject: string | null = null;
-    let object: string | null = null;
-
-    if (tokens.length >= 2) {
-      // Ergatif varsa: ilk tokenlar arasinda ergatif olan ozne
-      if (isErgative) {
-        const ergIdx = tokens.findIndex(t => this.hasErgativeSuffix(t));
-        if (ergIdx >= 0 && ergIdx < tokens.length - 1) {
-          subject = tokens[ergIdx];
-          object = tokens.filter((_, i) => i !== ergIdx && i !== tokens.length - 1)[0] || null;
-        }
-      } else {
-        // Ergatif yoksa: SV veya OV
-        subject = tokens[0];
-        if (tokens.length >= 3) {
-          object = tokens[1];
-        }
+      // 1. Yan Cümlecik Koşulları (-мэ, -уэрэ, -щхьэкӀэ)
+      if (word.endsWith('мэ')) {
+        role = 'conditional_clause';
+      } else if (word.endsWith('уэрэ')) {
+        role = 'adverbial_clause';
+      } else if (word.endsWith('щхьэкӀэ')) {
+        role = 'concessive_clause';
       }
-    }
+      // 2. Ergatif Özne Eki (-м)
+      else if (analysis.nounCase?.case === 'ergative' || word.endsWith('м')) {
+        role = 'subject_ergative';
+      }
+      // 3. Yalın Özne / Belirli Nesne Eki (-р)
+      else if (analysis.nounCase?.case === 'nominative' || word.endsWith('р')) {
+        role = hasErgativeInSentence ? 'direct_object' : 'subject_nominative';
+      }
+      // 4. Yüklem / Fiil Analizi
+      else if (analysis.source === 'verb' || idx === words.length - 1) {
+        role = 'predicate_verb';
+      }
 
-    // Cumle tipi
-    let type: SentenceType;
-    if (isAffective) {
-      type = 'AFFECTIVE';
-    } else if (isErgative && subject && object) {
-      type = 'ERGATIVE';
-    } else if (tokens.length >= 3 && subject && object) {
-      type = 'SOV';
-    } else if (tokens.length === 2) {
-      type = 'SV';
-    } else {
-      type = 'BARE';
+      return {
+        word,
+        role,
+        analysis,
+      };
+    });
+
+    const hasErgative = tokens.some(t => t.role === 'subject_ergative');
+    const hasNomSubj = tokens.some(t => t.role === 'subject_nominative');
+    const hasObject = tokens.some(t => t.role === 'direct_object');
+    const hasVerb = tokens.some(t => t.role === 'predicate_verb');
+    const hasCond = tokens.some(t => t.role === 'conditional_clause');
+    const hasAdv = tokens.some(t => t.role === 'adverbial_clause');
+
+    let structurePattern = 'GENERAL';
+    if (hasErgative && hasObject && hasCond && hasVerb) {
+      structurePattern = 'ERG_SUBJ + OBJ + COND_CLAUSE + VERB';
+    } else if (hasErgative && hasObject && hasVerb) {
+      structurePattern = 'ERG_SUBJ + OBJ + VERB';
+    } else if (hasErgative && hasVerb) {
+      structurePattern = 'ERG_SUBJ + VERB';
+    } else if (hasNomSubj && hasAdv && hasVerb) {
+      structurePattern = 'NOM_SUBJ + ADV_CLAUSE + VERB';
+    } else if (hasCond) {
+      structurePattern = 'CONDITIONAL_CLAUSE';
+    } else if (hasAdv) {
+      structurePattern = 'ADVERBIAL_CLAUSE';
     }
 
     return {
-      type,
-      subject,
-      object,
-      predicate,
-      isErgative,
-      confidence: 0.8,
+      sentence: trimmed,
+      tokens,
+      structurePattern,
+      confidence: 0.9,
     };
-  }
-
-  private hasErgativeSuffix(token: string): boolean {
-    return ERGATIVE_SUFFIXES.some(s => token.endsWith(s) && token.length > s.length);
-  }
-
-  private hasAffectivePrefix(token: string): boolean {
-    return AFFECTIVE_PREFIXES.some(p => token.startsWith(p));
-  }
-
-  private hasAbsolutiveSuffix(token: string): boolean {
-    return ABSOLUTIVE_SUFFIXES.some(s => token.endsWith(s) && token.length > s.length);
-  }
-
-  analyzeBatch(sentences: string[][]): SentenceNode[] {
-    return sentences.map(s => this.analyze(s));
-  }
-
-  getTypes(): SentenceType[] {
-    return ['SOV', 'OSV', 'SV', 'OV', 'ERGATIVE', 'AFFECTIVE', 'BARE'];
-  }
-
-  isErgative(tokens: string[]): boolean {
-    return this.analyze(tokens).isErgative;
-  }
-
-  getSubject(tokens: string[]): string | null {
-    return this.analyze(tokens).subject;
-  }
-
-  getPredicate(tokens: string[]): string {
-    return this.analyze(tokens).predicate;
   }
 }

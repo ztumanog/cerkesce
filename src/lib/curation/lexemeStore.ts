@@ -71,7 +71,8 @@ export function getAllLexemes(): LexemeSummary[] {
   const stat = fs.statSync(LEXEMES_PATH);
   if (cache && stat.mtimeMs === cacheMtime) return cache;
 
-  const raw = fs.readFileSync(LEXEMES_PATH, "utf-8");
+  // .replace(/^\uFEFF/, '') eklenerek gizli BOM karakteri temizlenir:
+  const raw = fs.readFileSync(LEXEMES_PATH, "utf-8").replace(/^\uFEFF/, '');
   const data = JSON.parse(raw);
 
   // lexemes.json bir dizi VEYA { lexemes: [...] } olabilir - ikisini de destekle

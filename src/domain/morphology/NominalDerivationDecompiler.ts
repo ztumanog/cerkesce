@@ -1,153 +1,74 @@
 ﻿/**
- * NominalDerivationDecompiler - Isim turetme eki cozumleyici
+ * NominalDerivationDecompiler - İsim türetim ekleri çözümlileyici
  * ADR-0040: Morphological Root Taxonomy
- * P4-009 - Morphology Engine
- *
- * Kaynak: Kumakhov, gl1.pdf (Isim Morfolojisi, s.51-67)
- *
- * Desteklenen turetme ekleri:
- * - -гъэ  (abstract)  : лIыгъэ (cesaret)
- * - -кIуэ (agent)     : кIуэгъуэ (gitme zamani)
- * - -гъу  (companion) : ныбжьэгъу (arkadas)
- * - -пIэ  (place)     : тIысыпIэ (oturma yeri)
- * - -щ    (quality)   : лъэщ (guclu)
- *
- * ADR-ROOT-001: Sadece veri uretir, Runtime'a baglanmaz.
  */
 
-// ============================================
-// TIP TANIMLARI
-// ============================================
-
-export type DerivationType =
-  | 'abstract'
-  | 'agent'
-  | 'time'
-  | 'companion'
-  | 'place'
-  | 'quality'
-  | 'bare';
+import { norm } from './MorphemeParser';
 
 export interface DerivationResult {
+  meaningTr?: string;
   input: string;
-  type: DerivationType;
   stem: string;
-  suffix: string;
+  suffix: string | null;
+  derivationType: 'abstract' | 'magnificative' | 'diminutive' | 'nominalizer' | 'repetition' | 'bare';
+  gloss: string | null;
   confidence: number;
 }
 
 interface DerivationRule {
   suffix: string;
-  type: DerivationType;
+  type: 'abstract' | 'magnificative' | 'diminutive' | 'nominalizer' | 'repetition';
+  gloss: string;
 }
 
-// ============================================
-// TURETME EKI KURALLARI
-// ============================================
-// SIRA ONEMLI: En uzun ekten en kisaya dogru.
-
 const DERIVATION_RULES: DerivationRule[] = [
-  // Time (-гъуэ) — ONCE (cunku -гъу ile karisir)
-  { suffix: 'гъуэ', type: 'time' },
-  // Companion (-гъу)
-  { suffix: 'гъу', type: 'companion' },
-  // Agent (-кIуэ)
-  { suffix: 'кIуэ', type: 'agent' },
-  // Abstract (-гъэ)
-  { suffix: 'гъэ', type: 'abstract' },
-  // Place (-пIэ)
-  { suffix: 'пIэ', type: 'place' },
-  // Quality (-щ)
-  { suffix: 'щ', type: 'quality' },
+  { suffix: 'ныгъэ', type: 'abstract', gloss: 'Soyut İsim Eki (-ныгъэ)' },
+  { suffix: 'ышхуэ', type: 'magnificative', gloss: 'Büyüklük Eki (-ышхуэ)' },
+  { suffix: 'шхуэ', type: 'magnificative', gloss: 'Büyüklük Eki (-шхуэ)' },
+  { suffix: 'цӀыкӀу', type: 'diminutive', gloss: 'Küçültme Eki (-цӀыкӀу)' },
+  { suffix: 'гъэ', type: 'nominalizer', gloss: 'İsimleştirme Eki (-гъэ)' },
+  { suffix: 'щӀэ', type: 'repetition', gloss: 'Yenilik / İkincil Ek (-щӀэ)' },
 ];
 
-// ============================================
-// DECOMPILER
-// ============================================
-
 export class NominalDerivationDecompiler {
-  /**
-   * Bir isim turetme ekini cozumler.
-   */
-  decompile(form: string): DerivationResult {
-    const normalized = form.trim();
+  parse(form: string): DerivationResult {
+    const normalized = norm(form);
 
     if (!normalized) {
       return {
         input: '',
-        type: 'bare',
         stem: '',
-        suffix: '',
+        suffix: null,
+        derivationType: 'bare',
+        gloss: null,
         confidence: 0,
       };
     }
 
-    // Sira onemli: en uzun ekten en kisaya
     for (const rule of DERIVATION_RULES) {
-      if (normalized.endsWith(rule.suffix)) {
-        const stem = normalized.slice(0, normalized.length - rule.suffix.length);
-        // Kok bos kalmasin
-        if (stem.length === 0) continue;
-
-        return {
-          input: normalized,
-          type: rule.type,
-          stem,
-          suffix: rule.suffix,
-          confidence: 0.9,
-        };
+      const nSuf = norm(rule.suffix);
+      if (normalized.endsWith(nSuf)) {
+        const stem = normalized.slice(0, normalized.length - nSuf.length);
+        if (stem.length >= 1) {
+          return {
+            input: normalized,
+            stem,
+            suffix: rule.suffix,
+            derivationType: rule.type,
+            gloss: rule.gloss,
+            confidence: 0.9,
+          };
+        }
       }
     }
 
-    // Hicbir ek uymadi -> bare
     return {
       input: normalized,
-      type: 'bare',
       stem: normalized,
-      suffix: '',
+      suffix: null,
+      derivationType: 'bare',
+      gloss: null,
       confidence: 0.5,
     };
-  }
-
-  /**
-   * Toplu cozumleme.
-   */
-  decompileBatch(forms: string[]): DerivationResult[] {
-    return forms.map(f => this.decompile(f));
-  }
-
-  /**
-   * Bilinen tum turetme tipleri.
-   */
-  getTypes(): DerivationType[] {
-    return ['abstract', 'agent', 'time', 'companion', 'place', 'quality', 'bare'];
-  }
-
-  /**
-   * Soyut isim mi?
-   */
-  isAbstract(form: string): boolean {
-    return this.decompile(form).type === 'abstract';
-  }
-
-  /**
-   * Yer/araci mi?
-   */
-  isAgent(form: string): boolean {
-    return this.decompile(form).type === 'agent';
-  }
-
-  /**
-   * Zaman mi?
-   */
-  isTime(form: string): boolean {
-    return this.decompile(form).type === 'time';
-  }
-
-  /**
-   * Ortak mi?
-   */
-  isCompanion(form: string): boolean {
-    return this.decompile(form).type === 'companion';
   }
 }

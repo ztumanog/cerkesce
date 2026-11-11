@@ -1,4 +1,4 @@
-import { NextRequest, NextResponse } from "next/server";
+﻿import { NextRequest, NextResponse } from "next/server";
 import fs from "node:fs";
 import path from "node:path";
 import { createHash, randomUUID, timingSafeEqual } from "node:crypto";
@@ -65,7 +65,7 @@ function authorize(req: NextRequest): NextResponse | null {
 
 function read(kind: keyof typeof filenames) {
   const file = path.join(directory, filenames[kind]);
-  const raw = fs.readFileSync(file);
+  const raw = fs.readFileSync(/*turbopackIgnore: true*/ file);
   const document = JSON.parse(raw.toString("utf8").replace(/^\uFEFF/, ""));
 
   if (kind === "review") {
@@ -146,7 +146,7 @@ export async function POST(req: NextRequest) {
 
   try {
     fs.mkdirSync(backups, { recursive: true });
-    lockFd = fs.openSync(lock, "wx");
+    lockFd = fs.openSync(/*turbopackIgnore: true*/ lock, "wx");
     const current = read(kind);
 
     if (body.expectedHash.toLowerCase() !== current.hash) {
@@ -224,7 +224,7 @@ export async function POST(req: NextRequest) {
 
     // Geçici dosya public altında tutulmaz.
     temporary = path.join(backups, `${kind}-${token}.tmp`);
-    const fd = fs.openSync(temporary, "wx");
+    const fd = fs.openSync(/*turbopackIgnore: true*/ temporary, "wx");
     try {
       fs.writeFileSync(fd, JSON.stringify(current.document, null, 2) + "\n", "utf8");
       fs.fsyncSync(fd);
@@ -232,7 +232,7 @@ export async function POST(req: NextRequest) {
       fs.closeSync(fd);
     }
 
-    if (hash(fs.readFileSync(current.file)) !== current.hash) {
+    if (hash(fs.readFileSync(/*turbopackIgnore: true*/ current.file)) !== current.hash) {
       return reply({ success: false, error: "Dosya işlem sırasında değişti." }, 409);
     }
 

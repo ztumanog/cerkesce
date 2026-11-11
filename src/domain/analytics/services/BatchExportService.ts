@@ -44,7 +44,14 @@ export class BatchExportService {
     const exports: Record<string, ExportResult> = {};
 
     for (const item of items) {
-      exports[item.id] = SvgLayoutEngineService.render(item.network, options) as unknown as ExportResult;
+      const content = SvgLayoutEngineService.render(item.network, options);
+      exports[item.id] = {
+        format: options.format,
+        mimeType: 'image/svg+xml', // render() SVG string doner
+        content,
+        nodeCount: item.network?.nodes?.length ?? 0,
+        edgeCount: item.network?.edges?.length ?? 0,
+      };
     }
 
     return {
