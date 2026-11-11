@@ -10,14 +10,15 @@ export default function ExplorerPage() {
     DiscoveryRelationType.ROOT,
     DiscoveryRelationType.SYNONYM,
     DiscoveryRelationType.DIALECT_VARIANT,
+    DiscoveryRelationType.CHILD,
+    DiscoveryRelationType.RELATED,
   ]);
 
-  // Demo İlişkili Kavram Verileri
   const sampleItems: RelatedConceptItem[] = [
-    { targetId: '1', targetConcept: 'Псэ (Can / Ruh)', relationType: DiscoveryRelationType.ROOT, score: 0.98 },
-    { targetId: '2', targetConcept: 'Гьэ (Can - Diyalekt)', relationType: DiscoveryRelationType.DIALECT_VARIANT, score: 0.95 },
-    { targetId: '3', targetConcept: 'Псэу (Yaşayan)', relationType: DiscoveryRelationType.CHILD, score: 0.88 },
-    { targetId: '4', targetConcept: 'Дуней (Dünya)', relationType: DiscoveryRelationType.RELATED, score: 0.72 },
+    { targetId: '1', targetConcept: 'Псэ', relationType: DiscoveryRelationType.ROOT, score: 0.98 },
+    { targetId: '2', targetConcept: 'Гьэ', relationType: DiscoveryRelationType.DIALECT_VARIANT, score: 0.95 },
+    { targetId: '3', targetConcept: 'Псэу', relationType: DiscoveryRelationType.CHILD, score: 0.88 },
+    { targetId: '4', targetConcept: 'Дуней', relationType: DiscoveryRelationType.RELATED, score: 0.72 },
   ];
 
   const filteredItems = sampleItems.filter((item) => selectedTypes.includes(item.relationType));
@@ -31,10 +32,8 @@ export default function ExplorerPage() {
         </p>
       </div>
 
-      {/* İlişki Filtreleme Barı */}
       <RelationFilterBar selectedTypes={selectedTypes} onChange={setSelectedTypes} />
 
-      {/* Anlamsal Liste Bileşeni */}
       <ConceptRelationList items={filteredItems} title="Aktif Filtreye Göre İlişkili Kavramlar" />
     </div>
   );
