@@ -231,8 +231,7 @@ export function convertKbdToAdy(word: string): string {
   
   // Palochka birlestirme (U+04CF -> U+04C0)
   let c = w.replace(/\u04CF/g, "\u04C0");
-  c = c.replace(/къэу/g, "___MASK_QEU___");
-  c = c.replace(/ншэ$/g, "___MASK_NSHE___"); // къэу iki lehcede ayni, эу->ао bozmasin
+  c = c.replace(/къэу/g, "___MASK_QEU___"); // къэу iki lehcede ayni, эу->ао bozmasin
   c = c.replace(/эу/g, "ао");
   c = c.replace(/нд/g, "мд");
   c = c.replace(/уэ(?=[ндбгтпзсжк])/g, "о");
@@ -264,9 +263,7 @@ export function convertKbdToAdy(word: string): string {
   c = c.replace(/___MASK_QEU___/g, "къэу"); // maskeyi ac
   c = c.replace(/^фэ/g, "шъо");
   c = c.replace(/___MASK_HUI___/g, "хуи");
-  c = c.replace(/___MASK_NSHE___/g, "ншэ");
   c = c.replace(/___MASK_HUI___/g, "хуи");
-  c = c.replace(/___MASK_NSHE___/g, "ншэ");
   
   return c;
 }
