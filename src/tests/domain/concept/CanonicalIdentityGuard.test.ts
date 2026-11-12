@@ -90,7 +90,7 @@ describe('ADR-GOV-015: Canonical Concept Identity & Zero-ULID Residue Guard', ()
 
     expect(violations).toEqual([]);
   });
-it('hem ConceptId hem ConceptID büyük/küçük harfli hex-hash formatlarını çalışma zamanında reddetmeli ve üretim kodunda kabul deseni bulunmamalıdır', () => {
+  it('hem ConceptId hem ConceptID büyük/küçük harfli hex-hash formatlarını çalışma zamanında reddetmeli ve üretim kodunda kabul deseni bulunmamalıdır', () => {
     expect(() => ConceptId.create('A1B2C3D4E5F6A7B8')).toThrow();
     expect(() => ConceptId.create('a1b2c3d4e5f6a7b8')).toThrow();
     expect(() => ConceptID.create('A1B2C3D4E5F6A7B8')).toThrow();
