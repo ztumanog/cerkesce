@@ -14,6 +14,8 @@ import { normalizeToSourceContents } from '@/lib/normalizers/sourceContentNormal
 import { resolveSourceMetadata } from '@/lib/normalizers/sourceMetadataResolver';
 import { CorpusExplorerService } from '@/domain/discovery/services/CorpusExplorerService';
 import { CorpusExplorerResult } from '@/domain/discovery/dto/CorpusExplorerDTO';
+import { resolveDialectVariantDisplay } from '@/lib/linguistic/dialectVariantsHelper';
+import { generateNounDeclension } from '@/lib/linguistic/declensionGenerator';
 
 /* ═══════════════════ SABİTLER ═══════════════════ */
 
@@ -591,25 +593,81 @@ const cokDilliKarsiliklar = useMemo(() => {
             </div>
           </section>
 
-          {seciliKelime.dialectVariants && (seciliKelime.dialectVariants.adyghe || seciliKelime.dialectVariants.kabardian) && (
-            <section className="space-y-2">
-              <SectionHead icon={<Languages size={16} className="text-orange-500" />}>Lehçe Karşılıkları</SectionHead>
-              <div className="space-y-1.5 rounded-xl border border-sky-200 bg-sky-50/60 p-3 dark:border-sky-900/40 dark:bg-sky-950/20">
-                {seciliKelime.dialectVariants.adyghe && (
-                  <div className="flex items-baseline gap-3">
-                    <span className="w-12 shrink-0 rounded-md border border-sky-300 bg-sky-200 px-2 py-0.5 text-center text-xs font-bold text-sky-800 dark:border-sky-800 dark:bg-sky-900 dark:text-sky-200">ADY</span>
-                    <span className="text-sm font-medium text-slate-800 dark:text-slate-200">{seciliKelime.dialectVariants.adyghe}</span>
-                  </div>
+                    {(() => {
+            const targetWord = content.cerkesce || content.word;
+            const variantDisplay = resolveDialectVariantDisplay({
+              form: targetWord,
+              dialect: seciliKelime.dialect,
+              dialectVariants: seciliKelime.dialectVariants,
+            });
+            const posLower = String(seciliKelime.partOfSpeech || '').toLowerCase();
+            const isNoun = /[а-яА-ЯӀӏ]/.test(targetWord) && (!posLower || posLower.includes('noun') || posLower.includes('щыӀэцӀэ'));
+            const declension = isNoun ? generateNounDeclension(targetWord) : null;
+
+            return (
+              <>
+                {variantDisplay && variantDisplay.hasDifference && (
+                  <section className="space-y-2">
+                    <SectionHead
+                      icon={<Languages size={16} className="text-orange-500" />}
+                      extra={<span className="rounded-full bg-indigo-100 px-2 py-0.5 text-[10px] font-bold text-indigo-700 dark:bg-indigo-950 dark:text-indigo-300">Huvaj &amp; AIG</span>}
+                    >
+                      Diyalekt Karşılıkları
+                    </SectionHead>
+                    <div className="space-y-2 rounded-xl border border-sky-200 bg-sky-50/60 p-3 dark:border-sky-900/40 dark:bg-sky-950/20">
+                      <div className="flex flex-wrap items-center gap-2">
+                        <span className="w-12 shrink-0 rounded-md border border-amber-300 bg-amber-100 px-2 py-0.5 text-center text-xs font-bold text-amber-800 dark:border-amber-800 dark:bg-amber-900 dark:text-amber-200">ADY</span>
+                        <span className="text-sm font-bold text-slate-800 dark:text-slate-100">{variantDisplay.adyghePrimary}</span>
+                        {variantDisplay.adygheAlternatives.map((alt) => (
+                          <span key={alt.form} className="rounded-md bg-white/80 dark:bg-slate-800 px-2 py-0.5 text-xs text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-700">
+                            alt: <b>{alt.form}</b> ({alt.sourceLabel})
+                          </span>
+                        ))}
+                      </div>
+                      <div className="flex flex-wrap items-center gap-2">
+                        <span className="w-12 shrink-0 rounded-md border border-sky-300 bg-sky-200 px-2 py-0.5 text-center text-xs font-bold text-sky-800 dark:border-sky-800 dark:bg-sky-900 dark:text-sky-200">KBD</span>
+                        <span className="text-sm font-bold text-slate-800 dark:text-slate-100">{variantDisplay.kabardianPrimary}</span>
+                      </div>
+                    </div>
+                  </section>
                 )}
-                {seciliKelime.dialectVariants.kabardian && (
-                  <div className="flex items-baseline gap-3">
-                    <span className="w-12 shrink-0 rounded-md border border-sky-300 bg-sky-200 px-2 py-0.5 text-center text-xs font-bold text-sky-800 dark:border-sky-800 dark:bg-sky-900 dark:text-sky-200">KBD</span>
-                    <span className="text-sm font-medium text-slate-800 dark:text-slate-200">{seciliKelime.dialectVariants.kabardian}</span>
-                  </div>
+
+                {declension && (
+                  <section className="space-y-2">
+                    <SectionHead
+                      icon={<BookOpen size={16} className="text-emerald-500" />}
+                      extra={<span className="rounded-full bg-slate-200 px-2 py-0.5 text-[10px] font-bold text-slate-700 dark:bg-slate-800 dark:text-slate-300">Закъуэ / Куэд</span>}
+                    >
+                      Склоненэ (İsim Çekimi)
+                    </SectionHead>
+                    <div className="overflow-x-auto rounded-xl border border-slate-200 bg-white dark:border-slate-800 dark:bg-slate-800/70">
+                      <table className="w-full text-left text-xs">
+                        <thead className="border-b border-slate-200 bg-slate-50 text-[11px] text-slate-600 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-400">
+                          <tr>
+                            <th className="px-2.5 py-2">Hal</th>
+                            <th className="px-2.5 py-2">Tekil Belirtili</th>
+                            <th className="px-2.5 py-2">Çoğul Belirtili</th>
+                          </tr>
+                        </thead>
+                        <tbody className="divide-y divide-slate-100 dark:divide-slate-800">
+                          {declension.map((row) => (
+                            <tr key={row.caseNameCircassian}>
+                              <td className="px-2.5 py-1.5 font-semibold text-slate-700 dark:text-slate-200">
+                                {row.caseNameCircassian}
+                                <span className="block text-[10px] font-normal text-slate-400">{row.caseNameTr}</span>
+                              </td>
+                              <td className="px-2.5 py-1.5 font-medium text-slate-800 dark:text-slate-100">{row.singularDefinite}</td>
+                              <td className="px-2.5 py-1.5 font-medium text-slate-800 dark:text-slate-100">{row.pluralDefinite}</td>
+                            </tr>
+                          ))}
+                        </tbody>
+                      </table>
+                    </div>
+                  </section>
                 )}
-              </div>
-            </section>
-          )}
+              </>
+            );
+          })()}
 
           {(seciliKelime.rootIds?.length || seciliKelime.wordFamilyId || seciliKelime.conceptId) && (
             <section className="space-y-2">
