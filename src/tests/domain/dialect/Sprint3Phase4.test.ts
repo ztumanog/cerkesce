@@ -1,4 +1,4 @@
-﻿import { describe, it, expect, beforeEach } from 'vitest';
+import { describe, it, expect, beforeEach } from 'vitest';
 import { Dialect } from '../../../domain/dialect/Dialect';
 import { Variant } from '../../../domain/dialect/Variant';
 import { VariantId } from '../../../domain/dialect/value-objects/VariantId';
@@ -79,7 +79,7 @@ describe('Sprint 3 (Phase 4): Variant Mapping & Cross-Phase Bridges (PiloÅŸum 
 
       const mockConceptLinker: MeaningConceptLinkerInterface = {
         getMeaningsByConceptId: (cId: string) => {
-          if (cId === 'concept-water') return ['meaning-water-01'];
+          if (cId === 'CONCEPT_WATER') return ['meaning-water-01'];
           return [];
         }
       };
@@ -96,7 +96,7 @@ describe('Sprint 3 (Phase 4): Variant Mapping & Cross-Phase Bridges (PiloÅŸum 
 
       await resolver.indexVariant('meaning-water-01', v);
 
-      const result = await bridge.resolveVariantByConcept('concept-water', DialectCode.ABZAKH);
+      const result = await bridge.resolveVariantByConcept('CONCEPT_WATER', DialectCode.ABZAKH);
       expect(result).toHaveLength(1);
       expect(result[0].spelling).toBe('Ğ¿ÑÑ‹');
     });
@@ -111,14 +111,14 @@ describe('Sprint 3 (Phase 4): Variant Mapping & Cross-Phase Bridges (PiloÅŸum 
       await resolver.indexVariant('meaning-water-01', parentVariant);
 
       // Abzeh isteniyor ama sadece BatÄ± Standart var
-      const result = await bridge.resolveVariantByConcept('concept-water', DialectCode.ABZAKH);
+      const result = await bridge.resolveVariantByConcept('CONCEPT_WATER', DialectCode.ABZAKH);
       expect(result).toHaveLength(1);
       expect(result[0].spelling).toBe('Ğ¿ÑÑ‹ (Standart)');
       expect(result[0].dialectCode).toBe(DialectCode.ADY);
     });
 
     it('âœ… No Phase 2 / Phase 3 dependency leak & Unknown Concept handling', async () => {
-      const result = await bridge.resolveVariantByConcept('unknown-concept', DialectCode.ABZAKH);
+      const result = await bridge.resolveVariantByConcept('UNKNOWN_CONCEPT', DialectCode.ABZAKH);
       expect(result).toHaveLength(0);
     });
   });
