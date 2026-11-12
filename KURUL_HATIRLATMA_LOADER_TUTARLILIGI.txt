@@ -1,0 +1,28 @@
+KURUL HATIRLATMA — Loader Tutarlılığı
+
+Durum: AÇIK
+Öncelik: Düşük
+Tarih: 2026-11-12
+
+Bulgu:
+- app/sozluk/family/page.tsx → 3-path fallback
+- app/api/sozluk/family/[id] → tek-path
+
+Sınıf:
+Mimari tutarlılık borcu
+
+Risk:
+Düşük
+
+Prod riski:
+Yok
+
+Kanıt:
+BAT-002 incelemesi sırasında tespit edildi.
+Family sayfası build ve prod ortamında doğru çalışıyor.
+
+Karar:
+Gözlem fazı sonrasında değerlendirilecek.
+
+Aksiyon:
+Şimdilik değişiklik yapılmayacak.
