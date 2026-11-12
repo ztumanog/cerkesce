@@ -1,9 +1,6 @@
-// app/api/search/route.ts - MVP-1 - Ürünün Ana Araması
-// Bu geçici değil, kalıcı. Lexeme tabanlı tek arama API'si.
-// NOT: Server cache var. Veri (lexemes.json) değişirse dev restart gerekir. Faz 1 için kabul edildi.
-
+// app/api/search/route.ts - Lexeme tabanlı Çerkesçe (Kiril + Latin Converter) ve Çok Dilli (TR/EN/RU/AR) Arama API'si
 import { NextRequest, NextResponse } from 'next/server';
-import { normalizeLatinToKiril } from "@/lib/latinNormalize";
+import { normalizeLatinToKiril } from '@/lib/latinNormalize';
 import fs from 'fs';
 import path from 'path';
 import { normalizePalochka } from '@/domain/utils/normalizePalochka';
@@ -23,49 +20,122 @@ function getIndex() {
   return { index, list };
 }
 
+function toStringList(val: any): string[] {
+  if (!val) return [];
+  if (Array.isArray(val)) {
+    return val
+      .flatMap((v) => String(v || '').split(/[;,/]+/))
+      .map((s) => s.trim())
+      .filter(Boolean);
+  }
+  return String(val)
+    .split(/[;,/]+/)
+    .map((s) => s.trim())
+    .filter(Boolean);
+}
+
+function formatField(val: any): string {
+  if (!val) return '';
+  if (Array.isArray(val)) return val.filter(Boolean).join(', ');
+  return String(val).trim();
+}
+
 export async function GET(request: NextRequest) {
   const start = Date.now();
   try {
     const { searchParams } = new URL(request.url);
     const rawQ = (searchParams.get('q') || '').trim();
-    const q = normalizePalochka(normalizeLatinToKiril(rawQ)).toLowerCase();
-    const qAlt = q.includes('е') ? q.replace(/е/g, 'э') : (q.includes('э') ? q.replace(/э/g, 'е') : null);
-    // Son palochkayi sil - ilk palochka lazim (щӀ), ikinci fazla olabilir (лӀ -> л)
-    // qAlt uzerinden: hem е->э hem son palochka silinmis hali
-    const qNoPal = qAlt ? qAlt.replace(/Ӏ(?!.*Ӏ)/, '') : (q.includes('Ӏ') ? q.replace(/Ӏ(?!.*Ӏ)/, '') : null);
-    const limit = Math.max(1, Math.min(50, parseInt(searchParams.get('limit') || '20', 10)));
+    const mode = (searchParams.get('mode') || 'baslayan').toLowerCase();
+    const limit = Math.max(1, Math.min(100, parseInt(searchParams.get('limit') || '40', 10)));
 
-    if (!q) {
+    if (!rawQ) {
       return NextResponse.json({ success: true, results: [], total: 0, ms: 0 });
     }
 
+    // 1. Kol: Çerkesçe Kiril + Latin-Kiril Converter normalizasyonu
+    const q = normalizePalochka(normalizeLatinToKiril(rawQ)).toLowerCase();
+    const qAlt = q.includes('е')
+      ? q.replace(/е/g, 'э')
+      : q.includes('э')
+        ? q.replace(/э/g, 'е')
+        : null;
+    const qNoPal = qAlt
+      ? qAlt.replace(/Ӏ(?!.*Ӏ)/, '')
+      : q.includes('Ӏ')
+        ? q.replace(/Ӏ(?!.*Ӏ)/, '')
+        : null;
+
+    // 2. Kol: Ham Çok Dilli Anlam Sorgusu (TR, EN, RU, AR)
+    const rawLower = rawQ.toLocaleLowerCase('tr-TR');
+    const rawEnLower = rawQ.toLowerCase();
+
     const { index, list } = getIndex();
 
-    // Tam eşleşme ilk sırada - Kriter 2
     const exact = index.get(normKey(q));
     const exactAlt = qAlt ? index.get(normKey(qAlt)) : null;
     const exactNoPal = qNoPal ? index.get(normKey(qNoPal)) : null;
 
-    const starts: any[] = [];
+    const circassianStarts: any[] = [];
+    const circassianContains: any[] = [];
+    const translationExact: any[] = [];
+    const translationStarts: any[] = [];
+    const translationContains: any[] = [];
+
     for (const lex of list) {
-      if (starts.length >= limit) break;
       const form = normalizePalochka(String(lex.form || lex.headword || '')).toLowerCase();
-      if (form.startsWith(q) && form !== q) starts.push(lex);
-    }
 
-    if (qAlt) {
-      for (const lex of list) {
-        if (starts.length >= limit) break;
-        const form = normalizePalochka(String(lex.form || lex.headword || '')).toLowerCase();
-        if (form.startsWith(qAlt) && form !== qAlt) starts.push(lex);
+      // 1) Çerkesçe kelime başı (Kiril veya Latin Converter çıktısı)
+      if (form) {
+        if (form.startsWith(q) && form !== q) {
+          circassianStarts.push(lex);
+        } else if (qAlt && form.startsWith(qAlt) && form !== qAlt) {
+          circassianStarts.push(lex);
+        } else if (qNoPal && form.startsWith(qNoPal) && form !== qNoPal) {
+          circassianStarts.push(lex);
+        } else if (mode === 'iceren' && q.length >= 2 && form.includes(q)) {
+          circassianContains.push(lex);
+        }
       }
-    }
 
-    if (qNoPal) {
-      for (const lex of list) {
-        if (starts.length >= limit) break;
-        const form = normalizePalochka(String(lex.form || lex.headword || '')).toLowerCase();
-        if (form.startsWith(qNoPal) && form !== qNoPal) starts.push(lex);
+      // 2) Çok dilli anlam eşleşmesi (TR, EN, RU, AR + literalMeaning)
+      const trChunks = toStringList(lex.translations?.tr);
+      const otherChunks = [
+        ...toStringList(lex.translations?.en),
+        ...toStringList(lex.translations?.ru),
+        ...toStringList(lex.translations?.ar),
+        ...toStringList(lex.literalMeaning),
+      ];
+
+      let matchedRank = 0; // 3: tam anlam, 2: anlam başı, 1: anlam içi
+
+      for (const chunk of trChunks) {
+        const c = chunk.toLocaleLowerCase('tr-TR');
+        if (c === rawLower) {
+          matchedRank = Math.max(matchedRank, 3);
+        } else if (c.startsWith(rawLower) || c.split(/\s+/).some((w) => w.startsWith(rawLower))) {
+          matchedRank = Math.max(matchedRank, 2);
+        } else if (c.includes(rawLower)) {
+          matchedRank = Math.max(matchedRank, 1);
+        }
+      }
+
+      for (const chunk of otherChunks) {
+        const c = chunk.toLowerCase();
+        if (c === rawEnLower) {
+          matchedRank = Math.max(matchedRank, 3);
+        } else if (c.startsWith(rawEnLower) || c.split(/\s+/).some((w) => w.startsWith(rawEnLower))) {
+          matchedRank = Math.max(matchedRank, 2);
+        } else if (c.includes(rawEnLower)) {
+          matchedRank = Math.max(matchedRank, 1);
+        }
+      }
+
+      if (matchedRank === 3) {
+        translationExact.push(lex);
+      } else if (matchedRank === 2) {
+        translationStarts.push(lex);
+      } else if (matchedRank === 1 && (mode === 'iceren' || rawLower.length >= 3)) {
+        translationContains.push(lex);
       }
     }
 
@@ -73,48 +143,51 @@ export async function GET(request: NextRequest) {
     const results: any[] = [];
 
     const pushLex = (lex: any) => {
-      if (!lex || seen.has(lex.id)) return;
+      if (!lex || seen.has(lex.id) || results.length >= limit) return;
       seen.add(lex.id);
-      // Boş alan gönderme - Kriter 4
+
       const item: any = {
-        id: lex.id, // L-GUKQEUE
+        id: lex.id,
         form: lex.form,
         ipa: lex.ipa ?? null,
         partOfSpeech: lex.partOfSpeech ?? null,
+        translations: lex.translations || {},
       };
-      const rawTr = lex.translations?.tr;
-      const trText = Array.isArray(rawTr)
-        ? rawTr.filter(Boolean).join(', ')
-        : typeof rawTr === 'string'
-          ? rawTr
-          : '';
-      if (trText.trim()) item.tr = trText.trim();
 
-      const rawEn = lex.translations?.en;
-      const enText = Array.isArray(rawEn)
-        ? rawEn.filter(Boolean).join(', ')
-        : typeof rawEn === 'string'
-          ? rawEn
-          : '';
-      if (enText.trim()) item.en = enText.trim();
+      const trText = formatField(lex.translations?.tr);
+      if (trText) item.tr = trText;
+
+      const enText = formatField(lex.translations?.en);
+      if (enText) item.en = enText;
+
+      const ruText = formatField(lex.translations?.ru);
+      if (ruText) item.ru = ruText;
+
+      const arText = formatField(lex.translations?.ar);
+      if (arText) item.ar = arText;
 
       if (lex.literalMeaning) item.literalMeaning = String(lex.literalMeaning);
       if (lex.dialect) item.dialect = String(lex.dialect);
-      // Etiket, link değil - Kriter 6
       if (lex.rootIds?.length) item.rootIds = lex.rootIds;
       if (lex.wordFamilyId) item.wordFamilyId = lex.wordFamilyId;
       if (lex.conceptId) item.conceptId = lex.conceptId;
       if (lex.dialectVariants) item.dialectVariants = lex.dialectVariants;
+
       results.push(item);
     };
 
+    // Öncelik sırası: Çerkesçe tam -> Anlam tam -> Çerkesçe başlayan -> Anlam başlayan -> İçeren
     if (exact) pushLex(exact);
     if (exactAlt) pushLex(exactAlt);
     if (exactNoPal) pushLex(exactNoPal);
-    for (const lex of starts) pushLex(lex);
+    for (const lex of translationExact) pushLex(lex);
+    for (const lex of circassianStarts) pushLex(lex);
+    for (const lex of translationStarts) pushLex(lex);
+    for (const lex of circassianContains) pushLex(lex);
+    for (const lex of translationContains) pushLex(lex);
 
     const ms = Date.now() - start;
-    if (ms > 500) console.warn(`[search] YAVAS: ${q} ${ms}ms`);
+    if (ms > 500) console.warn(`[search] YAVAS: ${rawQ} ${ms}ms`);
 
     return NextResponse.json({ success: true, results, total: results.length, ms });
   } catch (e: any) {
