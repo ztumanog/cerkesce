@@ -13,6 +13,7 @@
 
 import { WORD_FAMILY_CONCEPT_MAP, WordFamilyConceptMap } from './WordFamilyConceptMap';
 import { normalizePalochka } from '@/domain/utils/normalizePalochka';
+import { ConceptId } from '@/domain/shared/value-objects/ConceptId';
 
 export interface WordFamilyResolution {
   word: string;
@@ -60,7 +61,7 @@ export class WordFamilyResolver {
     for (const [, derivatives] of Object.entries(this.conceptMap)) {
       const conceptId = derivatives[normalizedWord];
       if (conceptId) {
-        return conceptId;
+        return ConceptId.create(conceptId).value;
       }
     }
 

@@ -2,6 +2,7 @@ import { TraversalNode } from '../dto/TraversalNode';
 import { RelatedConceptDTO } from '../dto/RelatedConceptDTO';
 import { DiscoveryRelationType } from '../types/DiscoveryRelationType';
 import { getConceptDisplayName } from '@/domain/concept/ConceptRegistry';
+import { isValidCanonicalConceptId } from '@/domain/shared/value-objects/ConceptId';
 
 export interface CategorizedConcepts {
   synonyms: RelatedConceptDTO[];
@@ -18,7 +19,13 @@ export class RelatedConceptResolver {
     }
 
     return nodes
-      .filter(node => node && node.relationType !== DiscoveryRelationType.ROOT)
+      .filter(
+        node =>
+          node &&
+          node.relationType !== DiscoveryRelationType.ROOT &&
+          typeof node.conceptId === 'string' &&
+          isValidCanonicalConceptId(node.conceptId)
+      )
       .map(node => {
         const display = getConceptDisplayName(node.conceptId);
         const displayName = display?.kbd || display?.tr || node.conceptId;
