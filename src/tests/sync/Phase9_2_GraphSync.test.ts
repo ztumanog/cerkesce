@@ -18,4 +18,19 @@ describe('Phase 9.2 - Real-time Knowledge Graph Sync Certification', () => {
     expect(GraphMutationService.isCacheInvalidated('cache_concept_WATER_CONCEPT')).toBe(true);
     expect(GraphMutationService.isCacheInvalidated('cache_concept_FIRE_CONCEPT')).toBe(false);
   });
+
+  it('SYNC-002: Enforces canonical ConceptId validation on mutation events per ADR-GOV-015', () => {
+    const invalidIds = ['', 'water_concept', 'SU_KAVRAMI_Ş'];
+
+    for (const badId of invalidIds) {
+      expect(() =>
+        GraphMutationService.applyMutation({
+          mutationId: 'mut_invalid',
+          conceptId: badId,
+          type: 'NODE_UPDATED',
+          timestamp: Date.now()
+        })
+      ).toThrow();
+    }
+  });
 });
