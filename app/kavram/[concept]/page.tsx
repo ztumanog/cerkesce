@@ -129,19 +129,43 @@ export default async function ConceptDetailPage({ params }: PageProps) {
           .slice(0, 12)
       : [];
 
+  // Temel lemma, yüksek frekans ve kısa kök önceliği ile ana temsilci maddeyi başa al
+  allItems.sort((a: any, b: any) => {
+    const aCommon = String(a.dialect || '').toUpperCase() === 'COMMON' ? 1 : 0;
+    const bCommon = String(b.dialect || '').toUpperCase() === 'COMMON' ? 1 : 0;
+    const aLemma = a.isLemma ? 1 : 0;
+    const bLemma = b.isLemma ? 1 : 0;
+    if (bLemma !== aLemma) return bLemma - aLemma;
+    const aFreq = Number(a.corpusFrequency || 0);
+    const bFreq = Number(b.corpusFrequency || 0);
+    if (bFreq !== aFreq) return bFreq - aFreq;
+    if (bCommon !== aCommon) return bCommon - aCommon;
+    return String(a.form || '').length - String(b.form || '').length;
+  });
+
   const converter = new DialectConverter();
+  const primaryItem: any = allItems[0] || null;
   const primaryWord =
-    allItems[0]?.form ||
+    primaryItem?.form ||
     seedWords[0] ||
     (isCircassianScript(decodedConcept) ? decodedConcept : '');
+  const primaryDialect = String(primaryItem?.dialect || '').toUpperCase();
+
+  const adyFromPrimary =
+    primaryItem?.dialectVariants?.adyghe ||
+    (primaryDialect === 'COMMON' || primaryDialect.startsWith('ADY') ? primaryItem?.form : '');
+
+  const kbdFromPrimary =
+    primaryItem?.dialectVariants?.kabardian ||
+    (primaryDialect === 'COMMON' || primaryDialect.startsWith('KBD') ? primaryItem?.form : '');
 
   const explicitAdy =
+    adyFromPrimary ||
     allItems.find((l) => String(l.dialect || '').toLowerCase().startsWith('ady'))?.form ||
-    allItems[0]?.dialectVariants?.adyghe ||
     '';
   const explicitKbd =
+    kbdFromPrimary ||
     allItems.find((l) => String(l.dialect || '').toLowerCase().startsWith('kbd'))?.form ||
-    allItems[0]?.dialectVariants?.kabardian ||
     '';
 
   const adyEquivalent =
