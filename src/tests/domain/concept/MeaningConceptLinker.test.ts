@@ -33,4 +33,9 @@ describe('Sprint 3: CE-10 & CE-13 - MeaningConceptLinker Bridge', () => {
     const conceptIds = linker.getConceptsByMeaningId(meaningId);
     expect(conceptIds).toHaveLength(2);
   });
+
+  it('ADR-GOV-015: Kanonik olmayan Concept ID ile bağ kurulmasını reddetmelidir', () => {
+    expect(() => linker.link('meaning-300', 'invalid_concept')).toThrow();
+    expect(() => linker.link('meaning-300', 'SU_KAVRAMI_Ş')).toThrow();
+  });
 });

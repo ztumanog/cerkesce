@@ -1,3 +1,5 @@
+import { ConceptId } from '../../shared/value-objects/ConceptId';
+
 export interface MeaningConceptLinkProps {
   meaningId: string;
   conceptId: string;
@@ -12,7 +14,7 @@ export class MeaningConceptLink {
       throw new Error('MeaningConceptLink requires valid meaningId and conceptId');
     }
     this._meaningId = props.meaningId;
-    this._conceptId = props.conceptId;
+    this._conceptId = ConceptId.create(props.conceptId).value;
     Object.freeze(this);
   }
 
