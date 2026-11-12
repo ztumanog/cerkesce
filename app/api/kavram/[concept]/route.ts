@@ -2,16 +2,34 @@ import { NextResponse } from 'next/server';
 import fs from 'fs';
 import path from 'path';
 import { GraphMutationService } from '@/domain/sync/services/GraphMutationService';
+import { normalizePalochka } from '@/domain/utils/normalizePalochka';
 
 let cachedLexemes: any[] = [];
+let cachedConceptWords: Record<string, any> = {};
+let cachedConceptTr: Record<string, string> = {};
 
-function loadLexemes(forceReload = false) {
-  if (!forceReload && cachedLexemes.length > 0) return cachedLexemes;
-  const lexemesPath = path.resolve('./public/data/linguistic/lexemes.json');
-  if (fs.existsSync(lexemesPath)) {
-    cachedLexemes = JSON.parse(fs.readFileSync(lexemesPath, 'utf-8'));
+function loadAllData(forceReload = false) {
+  const baseDir = path.resolve('./public/data/linguistic');
+  if (forceReload || cachedLexemes.length === 0) {
+    const p = path.join(baseDir, 'lexemes.json');
+    if (fs.existsSync(p)) {
+      const raw = JSON.parse(fs.readFileSync(p, 'utf-8'));
+      cachedLexemes = Array.isArray(raw) ? raw : raw.lexemes ?? [];
+    }
   }
-  return cachedLexemes;
+  if (forceReload || Object.keys(cachedConceptWords).length === 0) {
+    const p = path.join(baseDir, 'concept-words.json');
+    if (fs.existsSync(p)) {
+      cachedConceptWords = JSON.parse(fs.readFileSync(p, 'utf-8'));
+    }
+  }
+  if (forceReload || Object.keys(cachedConceptTr).length === 0) {
+    const p = path.join(baseDir, 'concept-tr.json');
+    if (fs.existsSync(p)) {
+      cachedConceptTr = JSON.parse(fs.readFileSync(p, 'utf-8'));
+    }
+  }
+  return { lexemes: cachedLexemes, conceptWords: cachedConceptWords, conceptTr: cachedConceptTr };
 }
 
 export async function GET(
@@ -19,26 +37,42 @@ export async function GET(
   { params }: { params: Promise<{ concept: string }> }
 ) {
   const { concept } = await params;
-  const conceptId = concept.toUpperCase();
+  const decoded = decodeURIComponent(concept).trim();
+  const conceptId = decoded.toUpperCase();
   const isInvalidated = GraphMutationService.isCacheInvalidated(`cache_concept_${conceptId}`);
-  const lexemes = loadLexemes(isInvalidated);
+  const { lexemes, conceptWords, conceptTr } = loadAllData(isInvalidated);
+
+  const meta = conceptWords[conceptId] || conceptWords[decoded] || null;
+  const trTitle = meta?.tr || conceptTr[conceptId] || conceptTr[decoded] || '';
+  const enTitle = meta?.en || decoded;
+  const seedWords: string[] = Array.isArray(meta?.words) ? meta.words : [];
+  const normSeeds = new Set(seedWords.map((w) => normalizePalochka(w).toLowerCase()));
 
   const items = lexemes
-    .filter((l: any) => l.isLemma && l.conceptId === conceptId)
+    .filter((l: any) => {
+      const cMatch = String(l.conceptId || '').toUpperCase() === conceptId;
+      const formNorm = normalizePalochka(String(l.form || '')).toLowerCase();
+      return cMatch || normSeeds.has(formNorm);
+    })
     .map((l: any) => ({
       id: l.id,
       form: l.form,
-      ipa: l.ipa,
+      ipa: l.ipa ?? null,
+      dialect: l.dialect ?? null,
       translations: l.translations || {},
-      literalMeaning: l.literalMeaning,
-      partOfSpeech: l.partOfSpeech,
-      dialectVariants: l.dialectVariants,
+      literalMeaning: l.literalMeaning ?? null,
+      partOfSpeech: l.partOfSpeech ?? null,
+      dialectVariants: l.dialectVariants ?? null,
+      wordFamilyId: l.wordFamilyId ?? null,
+      rootIds: l.rootIds || [],
       sources: l.sources || [],
-      examples: l.examples || [],
     }));
 
   return NextResponse.json({
     conceptId,
+    tr: trTitle,
+    en: enTitle,
+    seedWords,
     count: items.length,
     items,
   });
