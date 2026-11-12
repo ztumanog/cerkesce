@@ -16,6 +16,7 @@ import { CorpusExplorerService } from '@/domain/discovery/services/CorpusExplore
 import { CorpusExplorerResult } from '@/domain/discovery/dto/CorpusExplorerDTO';
 import { resolveDialectVariantDisplay } from '@/lib/linguistic/dialectVariantsHelper';
 import { generateNounDeclension } from '@/lib/linguistic/declensionGenerator';
+import { generateVerbConjugation } from '@/lib/linguistic/verbConjugationGenerator';
 
 /* ═══════════════════ SABİTLER ═══════════════════ */
 
