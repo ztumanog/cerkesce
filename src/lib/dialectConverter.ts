@@ -261,6 +261,7 @@ export function convertKbdToAdy(word: string): string {
   c = c.replace(/___MASK_QEU___/g, "къэу"); // maskeyi ac
   c = c.replace(/^фэ/g, "шъо");
   c = c.replace(/___MASK_HUI___/g, "хуи");
+  c = c.replace(/___MASK_HUI___/g, "хуи");
   
   return c;
 }
