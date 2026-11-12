@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { resolveDialectVariantDisplay } from '@/lib/linguistic/dialectVariantsHelper';
 import { generateNounDeclension } from '@/lib/linguistic/declensionGenerator';
+import { generateVerbConjugation } from '@/lib/linguistic/verbConjugationGenerator';
 
 function loadLexemes() {
   const p = path.join(process.cwd(), 'public', 'data', 'linguistic', 'lexemes.json');
@@ -27,8 +28,10 @@ export default async function LexemePage({ params }: { params: Promise<{ id: str
   });
 
   const posLower = String(lex.partOfSpeech || '').toLowerCase();
-  const isNoun = !posLower || posLower.includes('noun') || posLower.includes('щыӀэцӀэ');
+  const isVerb = posLower.includes('verb') || posLower.includes('глагол') || (String(lex.form || '').endsWith('н') && String(lex.form || '').length >= 3 && !posLower.includes('noun'));
+  const isNoun = !isVerb && (!posLower || posLower.includes('noun') || posLower.includes('щыӀэцӀэ'));
   const declension = isNoun ? generateNounDeclension(lex.form) : null;
+  const verbConjugation = isVerb ? generateVerbConjugation(lex.form) : null;
 
   // Iliskili birlesik kelimeler ve ayni kok/aile uyeleri
   const relatedLexemes = list
@@ -130,6 +133,46 @@ export default async function LexemePage({ params }: { params: Promise<{ id: str
                 ))}
               </Box>
             </Flex>
+          </Flex>
+        </Card>
+      )}
+
+      {/* Fiil Cekim Tablosu (Глагол зэхъуэкӀыкӀэ) */}
+      {verbConjugation && (
+        <Card>
+          <Flex direction="column" gap="2">
+            <Flex align="center" justify="between" wrap="wrap" gap="2">
+              <Heading size="3">Глагол зэхъуэкӀыкӀэ (Fiil Çekim Tablosu)</Heading>
+              <Flex gap="2" align="center">
+                <Badge color="indigo" variant="soft">Kök: {verbConjugation.root}</Badge>
+                <Badge color="gray" variant="soft">Mastar: {verbConjugation.infinitive}</Badge>
+              </Flex>
+            </Flex>
+            <Table.Root size="1" variant="surface">
+              <Table.Header>
+                <Table.Row>
+                  <Table.ColumnHeaderCell>Şahıs</Table.ColumnHeaderCell>
+                  <Table.ColumnHeaderCell>Şimdiki Zaman</Table.ColumnHeaderCell>
+                  <Table.ColumnHeaderCell>Geçmiş Zaman</Table.ColumnHeaderCell>
+                  <Table.ColumnHeaderCell>Gelecek Zaman</Table.ColumnHeaderCell>
+                  <Table.ColumnHeaderCell>Olumsuz (-къым)</Table.ColumnHeaderCell>
+                </Table.Row>
+              </Table.Header>
+              <Table.Body>
+                {verbConjugation.rows.map((row) => (
+                  <Table.Row key={row.personCode}>
+                    <Table.RowHeaderCell>
+                      <Text weight="bold" size="2">{row.pronounCircassian}</Text>
+                      <Text as="div" size="1" color="gray">{row.personLabelTr}</Text>
+                    </Table.RowHeaderCell>
+                    <Table.Cell>{row.present}</Table.Cell>
+                    <Table.Cell><b>{row.past}</b></Table.Cell>
+                    <Table.Cell>{row.future}</Table.Cell>
+                    <Table.Cell><Text color="gray">{row.negative}</Text></Table.Cell>
+                  </Table.Row>
+                ))}
+              </Table.Body>
+            </Table.Root>
           </Flex>
         </Card>
       )}
