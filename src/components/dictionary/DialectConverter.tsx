@@ -1,11 +1,18 @@
 'use client';
 
-import { useState, useMemo, useRef } from 'react';
+import { useState, useMemo, useRef, useEffect } from 'react';
+import Link from 'next/link';
 import { convertAdyToKbd, convertKbdToAdy } from '@/lib/dialectConverter';
 import { VERIFIED_PAIRS } from '@/domain/linguistic/DialectConverter';
 import { resolveDialectVariantDisplay } from '@/lib/linguistic/dialectVariantsHelper';
 import { MorphologyAnalyzer } from '@/domain/morphology/MorphologyAnalyzer';
 import { AkilliKlavye } from '@/components/features/AkilliKlavye';
+
+interface LexemeMatchInfo {
+  id: string;
+  form: string;
+  meaningTr?: string;
+}
 
 const SAMPLE_PHRASES: ReadonlyArray<{ label: string; ady: string; kbd: string }> = [
   { label: 'Cümle (Gitmek)', ady: 'Тэ тыкӀуэщт мафэм', kbd: 'Дэ дыкӀуэнщ махуэм' },
@@ -78,6 +85,7 @@ export function DialectConverterComponent() {
   const [copied, setCopied] = useState(false);
   const [klavyeAcik, setKlavyeAcik] = useState(true);
   const [pairSearch, setPairSearch] = useState('');
+  const [lexemeMatches, setLexemeMatches] = useState<Record<string, LexemeMatchInfo>>({});
   const textareaRef = useRef<HTMLTextAreaElement>(null);
 
   const output = useMemo(() => {
@@ -95,8 +103,6 @@ export function DialectConverterComponent() {
         form: w,
         dialect: direction === 'W2E' ? 'western' : 'dogu',
       });
-      // Morfoloji motoru Doğu (Kabardeyce) standart ek kurallarıyla en zengin ayrıştırmayı yapar;
-      // girdi Batı (Adığece) ise dönüştürülmüş Doğu karşılığını da analiz ederek kök + ekleri çıkarır.
       const kbdCandidate = direction === 'W2E' ? convertAdyToKbd(w) : w;
       const rawAnalysis = morphologyAnalyzer.analyze(w);
       const kbdAnalysis = morphologyAnalyzer.analyze(kbdCandidate);
@@ -108,6 +114,54 @@ export function DialectConverterComponent() {
       return { token: w, display, morphology };
     });
   }, [input, direction, morphologyAnalyzer]);
+
+  // Cozumlenen kelimeler ve kokleri icin sozluk kayitlarini eslestir
+  useEffect(() => {
+    if (tokenBreakdown.length === 0) return;
+    let cancelled = false;
+
+    const timer = setTimeout(async () => {
+      const entriesToFetch = tokenBreakdown.filter((item) => !(item.token in lexemeMatches));
+      if (entriesToFetch.length === 0) return;
+
+      const resolved: Record<string, LexemeMatchInfo> = {};
+      await Promise.all(
+        entriesToFetch.map(async ({ token, morphology }) => {
+          const candidates = Array.from(
+            new Set([morphology.root, token].filter((c): c is string => Boolean(c && c.trim())))
+          );
+          for (const candidate of candidates) {
+            try {
+              const res = await fetch(`/api/search?q=${encodeURIComponent(candidate)}&mode=tam`);
+              if (!res.ok) continue;
+              const data = await res.json();
+              const list = Array.isArray(data) ? data : data.results || data.items || [];
+              const first = list[0];
+              if (first && first.id) {
+                resolved[token] = {
+                  id: String(first.id),
+                  form: String(first.word || first.form || candidate),
+                  meaningTr: first.meaningTr || first.meaning || first.translations?.tr?.[0],
+                };
+                break;
+              }
+            } catch {
+              // Sessiz gec
+            }
+          }
+        })
+      );
+
+      if (!cancelled && Object.keys(resolved).length > 0) {
+        setLexemeMatches((prev) => ({ ...prev, ...resolved }));
+      }
+    }, 300);
+
+    return () => {
+      cancelled = true;
+      clearTimeout(timer);
+    };
+  }, [tokenBreakdown, lexemeMatches]);
 
   const filteredPairs = useMemo(() => {
     const q = pairSearch.trim().toLowerCase();
@@ -251,60 +305,91 @@ export function DialectConverterComponent() {
               {tokenBreakdown.map(({ token, display, morphology }) => {
                 const posMeta = SOURCE_LABELS[morphology.source] || SOURCE_LABELS.unknown;
                 const morphemes = morphology.morphemes || [];
+                const effectiveRoot = morphology.root || token;
+                const matchedLexeme = lexemeMatches[token];
+                const searchTarget = effectiveRoot !== token ? effectiveRoot : token;
+
                 return (
                   <div
                     key={token}
-                    className="rounded-lg border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-900/60 p-3 text-xs space-y-2"
+                    className="rounded-lg border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-900/60 p-3 text-xs flex flex-col justify-between space-y-2.5"
                   >
-                    <div className="flex items-center justify-between gap-2">
-                      <span className="font-mono text-sm font-bold text-slate-800 dark:text-slate-100">
-                        {token}
-                      </span>
-                      <span className={`px-2 py-0.5 rounded-full text-[10px] font-semibold ${posMeta.badgeClass}`}>
-                        {posMeta.label}
-                      </span>
+                    <div className="space-y-2">
+                      <div className="flex items-center justify-between gap-2">
+                        <span className="font-mono text-sm font-bold text-slate-800 dark:text-slate-100">
+                          {token}
+                        </span>
+                        <span className={`px-2 py-0.5 rounded-full text-[10px] font-semibold ${posMeta.badgeClass}`}>
+                          {posMeta.label}
+                        </span>
+                      </div>
+
+                      {matchedLexeme?.meaningTr && (
+                        <p className="text-[11px] text-slate-600 dark:text-slate-300 line-clamp-2">
+                          <span className="font-semibold text-emerald-700 dark:text-emerald-400">{matchedLexeme.form}:</span>{' '}
+                          {matchedLexeme.meaningTr}
+                        </p>
+                      )}
+
+                      {display && (
+                        <div className="flex flex-wrap gap-1.5">
+                          <span className="px-1.5 py-0.5 rounded bg-amber-100 text-amber-800 dark:bg-amber-900/50 dark:text-amber-300 font-mono">
+                            ADY: {display.adyghePrimary}
+                          </span>
+                          <span className="px-1.5 py-0.5 rounded bg-sky-100 text-sky-800 dark:bg-sky-900/50 dark:text-sky-300 font-mono">
+                            KBD: {display.kabardianPrimary}
+                          </span>
+                        </div>
+                      )}
+
+                      {/* Kök & Morfem Dökümü */}
+                      <div className="pt-1.5 border-t border-slate-200/80 dark:border-slate-700/80 space-y-1">
+                        <div className="text-[11px] text-slate-500 dark:text-slate-400">
+                          Kök: <span className="font-mono font-bold text-slate-800 dark:text-slate-200">{effectiveRoot}</span>
+                        </div>
+                        {morphemes.length > 0 && (
+                          <div className="flex flex-wrap items-center gap-1 pt-0.5">
+                            {morphemes.map((m, idx) => {
+                              const isRoot = m.type === 'root';
+                              return (
+                                <span
+                                  key={`${m.morpheme}-${idx}`}
+                                  title={m.glossTr || m.meaningTr || m.type}
+                                  className={`inline-flex items-center gap-1 px-1.5 py-0.5 rounded font-mono text-[11px] ${
+                                    isRoot
+                                      ? 'bg-emerald-600 text-white font-bold'
+                                      : 'bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-300'
+                                  }`}
+                                >
+                                  <span>{m.morpheme}</span>
+                                  {(m.glossTr || m.meaningTr) && (
+                                    <span className={`text-[9px] font-sans ${isRoot ? 'text-emerald-100' : 'text-slate-400'}`}>
+                                      ({m.glossTr || m.meaningTr})
+                                    </span>
+                                  )}
+                                </span>
+                              );
+                            })}
+                          </div>
+                        )}
+                      </div>
                     </div>
 
-                    {display && (
-                      <div className="flex flex-wrap gap-1.5">
-                        <span className="px-1.5 py-0.5 rounded bg-amber-100 text-amber-800 dark:bg-amber-900/50 dark:text-amber-300 font-mono">
-                          ADY: {display.adyghePrimary}
-                        </span>
-                        <span className="px-1.5 py-0.5 rounded bg-sky-100 text-sky-800 dark:bg-sky-900/50 dark:text-sky-300 font-mono">
-                          KBD: {display.kabardianPrimary}
-                        </span>
-                      </div>
-                    )}
-
-                    {/* Kök & Morfem Dökümü */}
-                    <div className="pt-1.5 border-t border-slate-200/80 dark:border-slate-700/80 space-y-1">
-                      <div className="text-[11px] text-slate-500 dark:text-slate-400">
-                        Kök: <span className="font-mono font-bold text-slate-800 dark:text-slate-200">{morphology.root || token}</span>
-                      </div>
-                      {morphemes.length > 0 && (
-                        <div className="flex flex-wrap items-center gap-1 pt-0.5">
-                          {morphemes.map((m, idx) => {
-                            const isRoot = m.type === 'root';
-                            return (
-                              <span
-                                key={`${m.morpheme}-${idx}`}
-                                title={m.glossTr || m.meaningTr || m.type}
-                                className={`inline-flex items-center gap-1 px-1.5 py-0.5 rounded font-mono text-[11px] ${
-                                  isRoot
-                                    ? 'bg-emerald-600 text-white font-bold'
-                                    : 'bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-300'
-                                }`}
-                              >
-                                <span>{m.morpheme}</span>
-                                {(m.glossTr || m.meaningTr) && (
-                                  <span className={`text-[9px] font-sans ${isRoot ? 'text-emerald-100' : 'text-slate-400'}`}>
-                                    ({m.glossTr || m.meaningTr})
-                                  </span>
-                                )}
-                              </span>
-                            );
-                          })}
-                        </div>
+                    {/* Sözlük & Madde Detayı Bağlantıları */}
+                    <div className="pt-2 border-t border-slate-200/80 dark:border-slate-700/80 flex flex-wrap items-center justify-between gap-2 text-[11px]">
+                      <Link
+                        href={`/sozluk?q=${encodeURIComponent(searchTarget)}`}
+                        className="font-medium text-emerald-700 dark:text-emerald-400 hover:underline"
+                      >
+                        🔍 Sözlükte ara ({searchTarget})
+                      </Link>
+                      {matchedLexeme && (
+                        <Link
+                          href={`/lexeme/${encodeURIComponent(matchedLexeme.id)}`}
+                          className="px-2 py-0.5 rounded bg-indigo-100 text-indigo-800 dark:bg-indigo-950/70 dark:text-indigo-300 font-semibold hover:bg-indigo-200 dark:hover:bg-indigo-900/70 transition-colors"
+                        >
+                          Madde Detayı →
+                        </Link>
                       )}
                     </div>
                   </div>

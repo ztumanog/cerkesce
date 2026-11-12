@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useCallback, useMemo, useRef } from 'react';
+import { useState, useCallback, useMemo, useRef, useEffect } from 'react';
 import SearchBox from '@/components/dictionary/SearchBox';
 import KelimeKarti from '@/components/dictionary/KelimeKarti';
 import KelimeDetayDrawer from '@/components/dictionary/KelimeDetayDrawer';
@@ -54,6 +54,8 @@ export default function SozlukEkrani() {
     sil: gecmistenSil,
     temizle: gecmisiTemizle,
   } = useAramaGecmisi();
+
+  const initialQueryTriggeredRef = useRef(false);
 
   const handleSearch = useCallback(
     async (query: string, mode: string = 'baslayan') => {
