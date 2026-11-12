@@ -1,0 +1,161 @@
+# ConceptID Baseline Snapshot
+
+**Tarih:** 2026-11-12 16:28:04
+**Commit:** 57ab7de docs(governance): SSOT migration faz 0.5 - ConceptID baseline snapshot
+**Amac:** SSOT Migration Faz 0.5 - Olculebilir baslangic noktasi
+
+## 1. ConceptID (Buyuk ID) Kullanan Dosyalar
+
+**Sayi:** 17
+
+- D:\projeler\Cerkesce\src\domain\concept\repository\ConceptRepository.ts
+- D:\projeler\Cerkesce\src\domain\concept\value-objects\ConceptID.ts
+- D:\projeler\Cerkesce\src\domain\concept\Concept.ts
+- D:\projeler\Cerkesce\src\domain\discovery\services\WordFamilyResolver.ts
+- D:\projeler\Cerkesce\src\services\ConceptFacade.ts
+- D:\projeler\Cerkesce\src\tests\certification\Sprint5TrueE2E.test.ts
+- D:\projeler\Cerkesce\src\tests\domain\concept\CanonicalIdentityGuard.test.ts
+- D:\projeler\Cerkesce\src\tests\domain\concept\Concept.test.ts
+- D:\projeler\Cerkesce\src\tests\domain\concept\ConceptID.test.ts
+- D:\projeler\Cerkesce\src\tests\domain\concept\ConceptPerformance.test.ts
+- D:\projeler\Cerkesce\src\tests\domain\concept\MeaningGraph.test.ts
+- D:\projeler\Cerkesce\src\tests\domain\discovery\P5S5_03_RepositoryBackedE2E.test.ts
+- D:\projeler\Cerkesce\src\tests\domain\discovery\P5S5_04_05_PerformanceAndZeroMockCert.test.ts
+- D:\projeler\Cerkesce\src\tests\domain\discovery\Sprint4GraphAwareE2E.test.ts
+- D:\projeler\Cerkesce\src\tests\repository\InMemoryConceptRepository.test.ts
+- D:\projeler\Cerkesce\src\tests\services\ConceptFacade.test.ts
+- D:\projeler\Cerkesce\src\tests\P5S5_01_Triangulation.test.ts
+
+## 2. ConceptId (Kucuk Id) Kullanan Dosyalar
+
+**Sayi:** 65
+
+- D:\projeler\Cerkesce\src\domain\concept\bridge\MeaningConceptLink.ts
+- D:\projeler\Cerkesce\src\domain\concept\services\ConceptValidator.ts
+- D:\projeler\Cerkesce\src\domain\concept\services\MeaningConceptLinker.ts
+- D:\projeler\Cerkesce\src\domain\concept\services\MeaningGraph.ts
+- D:\projeler\Cerkesce\src\domain\concept\types\ConceptRelation.ts
+- D:\projeler\Cerkesce\src\domain\concept\value-objects\ConceptID.ts
+- D:\projeler\Cerkesce\src\domain\concept\Concept.ts
+- D:\projeler\Cerkesce\src\domain\concept\ConceptRegistry.optimize.ts
+- D:\projeler\Cerkesce\src\domain\concept\ConceptRegistry.ts
+- D:\projeler\Cerkesce\src\domain\dialect\services\ConceptVariantBridge.ts
+- D:\projeler\Cerkesce\src\domain\discovery\adapters\ConceptGraphAdapter.ts
+- D:\projeler\Cerkesce\src\domain\discovery\adapters\LexemeConceptLookupAdapter.ts
+- D:\projeler\Cerkesce\src\domain\discovery\dto\ConceptNetworkDTO.ts
+- D:\projeler\Cerkesce\src\domain\discovery\dto\DiscoveryResultDTO.ts
+- D:\projeler\Cerkesce\src\domain\discovery\dto\RankedRelatedConceptDTO.ts
+- D:\projeler\Cerkesce\src\domain\discovery\dto\RelatedConceptDTO.ts
+- D:\projeler\Cerkesce\src\domain\discovery\dto\TraversalNode.ts
+- D:\projeler\Cerkesce\src\domain\discovery\dto\TraversalRequest.ts
+- D:\projeler\Cerkesce\src\domain\discovery\ports\ConceptLookupPort.ts
+- D:\projeler\Cerkesce\src\domain\discovery\services\DiscoveryFacade.ts
+- D:\projeler\Cerkesce\src\domain\discovery\services\GraphTraversalService.ts
+- D:\projeler\Cerkesce\src\domain\discovery\services\IConceptGraphRepository.ts
+- D:\projeler\Cerkesce\src\domain\discovery\services\KnowledgeRanker.ts
+- D:\projeler\Cerkesce\src\domain\discovery\services\QuerySemanticMapper.ts
+- D:\projeler\Cerkesce\src\domain\discovery\services\RelatedConceptResolver.ts
+- D:\projeler\Cerkesce\src\domain\discovery\services\WordFamilyResolver.ts
+- D:\projeler\Cerkesce\src\domain\shared\value-objects\ConceptId.ts
+- D:\projeler\Cerkesce\src\domain\shared\value-objects\index.ts
+- D:\projeler\Cerkesce\src\domain\sync\services\GraphMutationService.ts
+- D:\projeler\Cerkesce\src\infrastructure\api\graphql\resolvers.ts
+- D:\projeler\Cerkesce\src\infrastructure\api\graphql\schema.ts
+- D:\projeler\Cerkesce\src\lib\curation\lexemeStore.ts
+- D:\projeler\Cerkesce\src\lib\conceptDisplay.ts
+- D:\projeler\Cerkesce\src\presentation\api\DiscoveryGatewayController.ts
+- D:\projeler\Cerkesce\src\presentation\components\NetworkExplorerPage.tsx
+- D:\projeler\Cerkesce\src\repository\InMemoryConceptGraphRepository.ts
+- D:\projeler\Cerkesce\src\services\ConceptFacade.ts
+- D:\projeler\Cerkesce\src\tests\domain\concept\CanonicalIdentityGuard.test.ts
+- D:\projeler\Cerkesce\src\tests\domain\concept\ConceptPerformance.test.ts
+- D:\projeler\Cerkesce\src\tests\domain\concept\ConceptRelation.test.ts
+- D:\projeler\Cerkesce\src\tests\domain\concept\ConceptValidator.test.ts
+- D:\projeler\Cerkesce\src\tests\domain\concept\MeaningConceptLinker.test.ts
+- D:\projeler\Cerkesce\src\tests\domain\concept\MeaningGraph.test.ts
+- D:\projeler\Cerkesce\src\tests\domain\dialect\Sprint3Phase4.test.ts
+- D:\projeler\Cerkesce\src\tests\domain\discovery\services\GraphTraversalService.test.ts
+- D:\projeler\Cerkesce\src\tests\domain\discovery\services\Phase5_1_Sprint2_E2E.test.ts
+- D:\projeler\Cerkesce\src\tests\domain\discovery\services\RelatedConceptResolver.test.ts
+- D:\projeler\Cerkesce\src\tests\domain\discovery\ContextClusterer.test.ts
+- D:\projeler\Cerkesce\src\tests\domain\discovery\DiscoveryFacadeRouting.cert.test.ts
+- D:\projeler\Cerkesce\src\tests\domain\discovery\DiscoveryResultDTO.contract.test.ts
+- D:\projeler\Cerkesce\src\tests\domain\discovery\KnowledgeExplorer.cert.test.ts
+- D:\projeler\Cerkesce\src\tests\domain\discovery\P5S5_02_GraphTraversalCert.test.ts
+- D:\projeler\Cerkesce\src\tests\domain\discovery\P5S5_03_RepositoryBackedE2E.test.ts
+- D:\projeler\Cerkesce\src\tests\domain\discovery\P5S5_04_05_PerformanceAndZeroMockCert.test.ts
+- D:\projeler\Cerkesce\src\tests\domain\discovery\Phase5_3_3_IntegrationValidation.cert.test.ts
+- D:\projeler\Cerkesce\src\tests\domain\discovery\Sprint4GraphAwareE2E.test.ts
+- D:\projeler\Cerkesce\src\tests\domain\shared\valueObjects.test.ts
+- D:\projeler\Cerkesce\src\tests\sync\Phase9_2_GraphSync.test.ts
+- D:\projeler\Cerkesce\src\tests\ui\CytoscapeAdapter.test.ts
+- D:\projeler\Cerkesce\src\tests\ui\GraphExpansion.cert.test.ts
+- D:\projeler\Cerkesce\src\tests\ui\NetworkExplorerUI.cert.test.ts
+- D:\projeler\Cerkesce\src\tests\P5S5_01_Triangulation.test.ts
+- D:\projeler\Cerkesce\app\admin\curation\family\page.tsx
+- D:\projeler\Cerkesce\app\api\curation\lexemes\route.ts
+- D:\projeler\Cerkesce\app\kavram\[concept]\page.tsx
+
+## 3. Ikisini Birden Kullanan Dosyalar
+
+**Sayi:** 11
+
+- D:\projeler\Cerkesce\src\domain\concept\value-objects\ConceptID.ts
+- D:\projeler\Cerkesce\src\domain\concept\Concept.ts
+- D:\projeler\Cerkesce\src\domain\discovery\services\WordFamilyResolver.ts
+- D:\projeler\Cerkesce\src\services\ConceptFacade.ts
+- D:\projeler\Cerkesce\src\tests\domain\concept\CanonicalIdentityGuard.test.ts
+- D:\projeler\Cerkesce\src\tests\domain\concept\ConceptPerformance.test.ts
+- D:\projeler\Cerkesce\src\tests\domain\concept\MeaningGraph.test.ts
+- D:\projeler\Cerkesce\src\tests\domain\discovery\P5S5_03_RepositoryBackedE2E.test.ts
+- D:\projeler\Cerkesce\src\tests\domain\discovery\P5S5_04_05_PerformanceAndZeroMockCert.test.ts
+- D:\projeler\Cerkesce\src\tests\domain\discovery\Sprint4GraphAwareE2E.test.ts
+- D:\projeler\Cerkesce\src\tests\P5S5_01_Triangulation.test.ts
+
+## 4. Baseline Kriterleri
+
+Bu snapshot, SSOT_CONCEPTID_MIGRATION_PLAN.md dosyasindaki Faz 0.5 geregi alinmistir.
+
+### Migration Sonrasi Beklenen
+
+| Metrik | Baseline | Hedef | Dogrulama |
+|---|---|---|---|
+| ConceptID (buyuk) tuketici | 17 | 0 | Grep = bos |
+| ConceptId (kucuk) tuketici | 65 | >= 65 | Ayni grep |
+| ConceptID.ts dosyasi | Var | Yok | Test-Path = False |
+| Test sayisi | 215/215, 1067/1067 | >= ayni | npx vitest run |
+
+### Faz Sonu Olcumleri
+
+| Faz | ConceptID (buyuk) beklenen |
+|---|---|
+| Baseline (0.5) | 17 |
+| Faz 1 (Testler) | 7 |
+| Faz 2 (Servis) | 6 |
+| Faz 3 (Repository) | 5 |
+| Faz 4 (Concept.ts) | 4 |
+| Faz 5 (Alias silme) | 0 |
+| Faz 6 (Guard) | 0 |
+
+## 5. Sistem Sagligi (Baseline Dogrulama)
+
+- TypeScript: tsc exit 0
+- Test: 215/215 dosya, 1067/1067 test
+- Build: yesil
+- Git status: temiz
+
+## 6. Kullanim
+
+Bu dosya migration tamamlandiginda referans olarak kullanilir:
+- Her fazdan sonra grep ciktisi bu baseline ile karsilastirilir
+- Migration sonunda ConceptID sayisi 0 olmali
+- Bu dosya silinmez, kurumsal kayit olarak kalir
+
+## Degisiklik Gecmisi
+
+- 2026-11-12 16:28:04 - Ilk olusturma (Faz 0.5 Baseline Snapshot)
+
+---
+
+**Kaynak Plan:** docs/governance/decisions/SSOT_CONCEPTID_MIGRATION_PLAN.md - Faz 0.5
+**Karar:** Bas Mimar - SSOT Migration READY (P1, planli ilerleme)
