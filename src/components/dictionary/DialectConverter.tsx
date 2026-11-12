@@ -272,6 +272,7 @@ export function DialectConverterComponent() {
                     <td className="px-4 py-2 font-mono text-emerald-600 dark:text-emerald-400">{kbd}</td>
                     <td className="px-4 py-2 flex gap-2">
                       <button
+                        type="button"
                         onClick={() => {
                           setDirection('W2E');
                           setInput(ady);
@@ -282,6 +283,7 @@ export function DialectConverterComponent() {
                       </button>
                       <span className="text-slate-300">|</span>
                       <button
+                        type="button"
                         onClick={() => {
                           setDirection('E2W');
                           setInput(kbd);

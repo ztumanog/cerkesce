@@ -9,7 +9,7 @@ import {
 } from "@/constants/alphabet";
 
 export interface AkilliKlavyeProps {
-  inputRef?: React.RefObject<HTMLInputElement | null>;
+  inputRef?: React.RefObject<HTMLInputElement | HTMLTextAreaElement | null>;
   sorgu?: string;
   setSorgu?: (yeniSorgu: string) => void;
   metinBoyutu?: number | string;
@@ -48,7 +48,7 @@ export const AkilliKlavye: React.FC<AkilliKlavyeProps> = ({
   };
 
   // ---- INPUT'A YAZ ----
-  const getInputElement = (): HTMLInputElement | null => {
+  const getInputElement = (): HTMLInputElement | HTMLTextAreaElement | null => {
     if (inputRef?.current) return inputRef.current;
     return document.querySelector(
       'form input, div[role="search"] input, .search-box input, input[type="search"], input[type="text"]'
