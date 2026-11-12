@@ -1,4 +1,4 @@
-﻿// app/api/search/route.ts - MVP-1 - Ürünün Ana Araması
+// app/api/search/route.ts - MVP-1 - Ürünün Ana Araması
 // Bu geçici değil, kalıcı. Lexeme tabanlı tek arama API'si.
 // NOT: Server cache var. Veri (lexemes.json) değişirse dev restart gerekir. Faz 1 için kabul edildi.
 
@@ -82,9 +82,24 @@ export async function GET(request: NextRequest) {
         ipa: lex.ipa ?? null,
         partOfSpeech: lex.partOfSpeech ?? null,
       };
-      const tr = lex.translations?.tr;
-      if (typeof tr === 'string' && tr.trim()) item.tr = tr.trim();
+      const rawTr = lex.translations?.tr;
+      const trText = Array.isArray(rawTr)
+        ? rawTr.filter(Boolean).join(', ')
+        : typeof rawTr === 'string'
+          ? rawTr
+          : '';
+      if (trText.trim()) item.tr = trText.trim();
+
+      const rawEn = lex.translations?.en;
+      const enText = Array.isArray(rawEn)
+        ? rawEn.filter(Boolean).join(', ')
+        : typeof rawEn === 'string'
+          ? rawEn
+          : '';
+      if (enText.trim()) item.en = enText.trim();
+
       if (lex.literalMeaning) item.literalMeaning = String(lex.literalMeaning);
+      if (lex.dialect) item.dialect = String(lex.dialect);
       // Etiket, link değil - Kriter 6
       if (lex.rootIds?.length) item.rootIds = lex.rootIds;
       if (lex.wordFamilyId) item.wordFamilyId = lex.wordFamilyId;

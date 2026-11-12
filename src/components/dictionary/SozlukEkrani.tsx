@@ -83,11 +83,14 @@ export default function SozlukEkrani() {
           const results: KelimeItem[] = data.results.map(
             (entry: any, idx: number) => {
               const word =
+                entry.form ||
                 entry.spelling ||
                 entry.word ||
                 entry.kelime ||
                 entry.headword ||
                 entry.lemma ||
+                entry.dialectVariants?.adyghe ||
+                entry.dialectVariants?.kabardian ||
                 '';
 
               // ANLAMLARI TOPLA
@@ -114,14 +117,29 @@ export default function SozlukEkrani() {
                 });
               }
 
+              const rawTrList = Array.isArray(entry.translations?.tr)
+                ? entry.translations.tr
+                : typeof entry.tr === 'string'
+                  ? [entry.tr]
+                  : [];
+              rawTrList.forEach((t: any) => {
+                if (typeof t === 'string' && t.trim()) anlamlarSet.add(t.trim());
+              });
+
               const tekilAnlam =
+                entry.tr ||
                 entry.anlam ||
                 entry.translation ||
                 entry.definition ||
                 entry.meaning ||
                 entry.tanim ||
+                entry.literalMeaning ||
+                entry.en ||
+                (Array.isArray(entry.translations?.en) ? entry.translations.en.join(', ') : entry.translations?.en) ||
                 '';
-              if (tekilAnlam.trim()) anlamlarSet.add(tekilAnlam.trim());
+              if (typeof tekilAnlam === 'string' && tekilAnlam.trim()) {
+                anlamlarSet.add(tekilAnlam.trim());
+              }
 
               const anlamlar = Array.from(anlamlarSet);
               const ilkAnlam = anlamlar[0] || '';
@@ -133,9 +151,11 @@ export default function SozlukEkrani() {
               return {
                 id: entry.id || `${query}-${idx}`,
                 kelime: word,
-                madde: entry.headword || word,
+                form: entry.form || word,
+                madde: entry.headword || entry.form || word,
                 anlam: ilkAnlam,
                 ilkAnlam,
+                literalMeaning: entry.literalMeaning || undefined,
                 anlamlar,
                 kaynaklar: entry.kaynaklar || [],
                 lehce: kaynakDialect || entry.dialect || entry.lehce || 'ADY',
