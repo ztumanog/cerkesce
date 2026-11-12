@@ -2,7 +2,9 @@ import { TraversalNode } from '../dto/TraversalNode';
 import { RelatedConceptDTO } from '../dto/RelatedConceptDTO';
 import { DiscoveryRelationType } from '../types/DiscoveryRelationType';
 import { getConceptDisplayName } from '@/domain/concept/ConceptRegistry';
-import { isValidCanonicalConceptId } from '@/domain/shared/value-objects/ConceptId';
+
+const LEGACY_ULID_REGEX = /^[0-9A-HJKMNP-TV-Z]{26}$/;
+const HEX_HASH_REGEX = /^[0-9a-fA-F]{16,}$/;
 
 export interface CategorizedConcepts {
   synonyms: RelatedConceptDTO[];
@@ -24,7 +26,9 @@ export class RelatedConceptResolver {
           node &&
           node.relationType !== DiscoveryRelationType.ROOT &&
           typeof node.conceptId === 'string' &&
-          isValidCanonicalConceptId(node.conceptId)
+          node.conceptId.trim().length > 0 &&
+          !LEGACY_ULID_REGEX.test(node.conceptId) &&
+          !HEX_HASH_REGEX.test(node.conceptId)
       )
       .map(node => {
         const display = getConceptDisplayName(node.conceptId);
