@@ -5,6 +5,7 @@ import React from 'react';
 import { ChevronRight, Star } from 'lucide-react';
 import Link from 'next/link';
 import { KaynakItem } from "@/types/dictionary";
+import { resolveDialectVariantDisplay } from "@/lib/linguistic/dialectVariantsHelper";
 
 /* ADR-0026 · Aşama 2 — POS Türkçe karşılıkları */
 const POS_TR: Record<string, string> = {
@@ -236,6 +237,7 @@ export const KelimeKarti: React.FC<KelimeKartiProps> = ({
   const kaynaklar = data.kaynaklar || [];
   const ilkKaynak = kaynaklar[0];
   const frekansRozeti = getFrekansRozeti(data.corpusFrequency);
+  const dialectDisplay = resolveDialectVariantDisplay({ form: data.kelime || data.form, dialect: data.dialect || data.lehce, dialectVariants: data.dialectVariants });
 
   const handleFavoriClick = (e: React.MouseEvent) => {
     e.stopPropagation();
@@ -287,6 +289,12 @@ export const KelimeKarti: React.FC<KelimeKartiProps> = ({
       <div className="text-sm text-gray-700 dark:text-gray-200 mb-2.5 leading-relaxed line-clamp-2">
         {ilkAnlamMetin}
       </div>
+      {dialectDisplay && dialectDisplay.hasDifference && (
+        <div className="flex flex-wrap items-center gap-1.5 mb-2.5 text-xs">
+          <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-md bg-amber-50 text-amber-800 border border-amber-200 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-800 font-medium"><span className="text-[10px] uppercase opacity-75">ADY:</span><span>{dialectDisplay.adyghePrimary}</span>{dialectDisplay.adygheAlternatives[0] && (<span className="text-[11px] opacity-80">({dialectDisplay.adygheAlternatives[0].form})</span>)}</span>
+          <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-md bg-sky-50 text-sky-800 border border-sky-200 dark:bg-sky-950/40 dark:text-sky-300 dark:border-sky-800 font-medium"><span className="text-[10px] uppercase opacity-75">KBD:</span><span>{dialectDisplay.kabardianPrimary}</span></span>
+        </div>
+      )}
 
       {/* Keşif Rozetleri — Kanıt → Önem → İlişki */}
       <div className="flex flex-wrap items-center gap-1.5 mb-2">
