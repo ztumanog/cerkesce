@@ -106,7 +106,8 @@ export function convertAdyToKbd(word: string): string {
     return w[0] === w[0].toUpperCase() ? v[0].toUpperCase() + v.slice(1) : v; 
   }
   
-  let c = w;
+  // Palochka birlestirme (U+04CF -> U+04C0)
+  let c = w.replace(/\u04CF/g, "\u04C0");
   
   // 1. KORUMALI MASKELER (Spesifik olanlar önce çalışmalı)
   c = c.replace(/ч[Ӏӏ]/g, "щӀ"); // чӏ -> щӏ (genel kural, kelime basi + ortasi)
@@ -125,6 +126,7 @@ export function convertAdyToKbd(word: string): string {
   // YENİ: шъу -> ф (Raw 'ф' bırakırsak ху olur, o yüzden maskeliyoruz)
   c = c.replace(/шъуызы$/, "___MASK_FYZ___"); // шъузы -> фыз
   c = c.replace(/шъуы/g, "___MASK_FY___");
+  c = c.replace(/шъук([Ӏӏ])/g, "___MASK_FY___к$1");
   c = c.replace(/шъу/g, "___MASK_F___");
 
   // шӀу -> фӀы vb.
@@ -154,7 +156,10 @@ export function convertAdyToKbd(word: string): string {
   c = c.replace(/-щт$/, "-нщ");
   c = c.replace(/щт$/, "нщ");
   
-  c = c.replace(/о(?=[ндбгтпзсжк])/g, "уэ"); 
+  c = c.replace(/къухьэ/g, "кхъухь");
+  c = c.replace(/къо/g, "къуэ");
+  c = c.replace(/о(?=[ндбгтпзсжкщш])/g, "уэ");
+  c = c.replace(/о$/g, "уэ"); 
   c = c.replace(/офы$/, "уэху");
 
   // 'ф' ezici kuralı. (Maskelediğimiz yeni 'ф'ler buraya takılmayacak ve korunacak)
@@ -222,7 +227,8 @@ export function convertKbdToAdy(word: string): string {
   // HIBRIT: once Huvaj lexicon (ters yon)
   if (HUVAJ_KBD_TO_ADY[w]) return HUVAJ_KBD_TO_ADY[w];
   
-  let c = w;
+  // Palochka birlestirme (U+04CF -> U+04C0)
+  let c = w.replace(/\u04CF/g, "\u04C0");
   c = c.replace(/къэу/g, "___MASK_QEU___"); // къэу iki lehcede ayni, эу->ао bozmasin
   c = c.replace(/эу/g, "ао");
   c = c.replace(/нд/g, "мд");
@@ -237,9 +243,9 @@ export function convertKbdToAdy(word: string): string {
   c = c.replace(/фыз/g, "шъуз");
   c = c.replace(/фы$/g, "шъуы");
 
-  c = c.replace(/щ[Ӏӏ]э/g, "чӏэ"); // HUVAJ-180: KBD щӏэ -> ADY чӏэ
-  c = c.replace(/щ[Ӏӏ]ы/g, "чӏы"); // HUVAJ-180: KBD щӏы -> ADY чӏы
-  c = c.replace(/щ[Ӏӏ]/g, "чӏ"); // HUVAJ-180: KBD щӏ -> ADY чӏ (щ->шъ kuralindan ONCE)
+  c = c.replace(/щ[Ӏӏ]э/g, "чӀэ"); // HUVAJ-180: KBD щӏэ -> ADY чӏэ
+  c = c.replace(/щ[Ӏӏ]ы/g, "чӀы"); // HUVAJ-180: KBD щӏы -> ADY чӏы
+  c = c.replace(/щ[Ӏӏ]/g, "чӀ"); // HUVAJ-180: KBD щӏ -> ADY чӏ (щ->шъ kuralindan ONCE)
   c = c.replace(/фӀы/g, "шӀуэ");
   // HUVAJ TERS: жын->чъын (7/0), жэхын->чъэхын (4), щы->шы (12). Hepsi щ->шъ'den ONCE.
   c = c.replace(/жэхын/g, "чъэхын");
@@ -254,6 +260,7 @@ export function convertKbdToAdy(word: string): string {
   c = c.replace(/^ды/g, "ты");
   c = c.replace(/___MASK_QEU___/g, "къэу"); // maskeyi ac
   c = c.replace(/^фэ/g, "шъо");
+  c = c.replace(/___MASK_HUI___/g, "хуи");
   
   return c;
 }
