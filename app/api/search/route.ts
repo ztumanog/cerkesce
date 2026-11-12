@@ -176,6 +176,20 @@ export async function GET(request: NextRequest) {
       results.push(item);
     };
 
+    const rankTranslationMatch = (a: any, b: any) => {
+      const aLemma = a.isLemma ? 1 : 0;
+      const bLemma = b.isLemma ? 1 : 0;
+      if (bLemma !== aLemma) return bLemma - aLemma;
+      const aFreq = Number(a.corpusFrequency || 0);
+      const bFreq = Number(b.corpusFrequency || 0);
+      if (bFreq !== aFreq) return bFreq - aFreq;
+      return String(a.form || '').length - String(b.form || '').length;
+    };
+
+    translationExact.sort(rankTranslationMatch);
+    translationStarts.sort(rankTranslationMatch);
+    translationContains.sort(rankTranslationMatch);
+
     // Öncelik sırası: Çerkesçe tam -> Anlam tam -> Çerkesçe başlayan -> Anlam başlayan -> İçeren
     if (exact) pushLex(exact);
     if (exactAlt) pushLex(exactAlt);
