@@ -1,11 +1,12 @@
 import { NextResponse } from 'next/server';
 import fs from 'fs';
 import path from 'path';
+import { GraphMutationService } from '@/domain/sync/services/GraphMutationService';
 
 let cachedLexemes: any[] = [];
 
-function loadLexemes() {
-  if (cachedLexemes.length > 0) return cachedLexemes;
+function loadLexemes(forceReload = false) {
+  if (!forceReload && cachedLexemes.length > 0) return cachedLexemes;
   const lexemesPath = path.resolve('./public/data/linguistic/lexemes.json');
   if (fs.existsSync(lexemesPath)) {
     cachedLexemes = JSON.parse(fs.readFileSync(lexemesPath, 'utf-8'));
@@ -18,8 +19,9 @@ export async function GET(
   { params }: { params: Promise<{ concept: string }> }
 ) {
   const { concept } = await params;
-  const lexemes = loadLexemes();
   const conceptId = concept.toUpperCase();
+  const isInvalidated = GraphMutationService.isCacheInvalidated(`cache_concept_${conceptId}`);
+  const lexemes = loadLexemes(isInvalidated);
 
   const items = lexemes
     .filter((l: any) => l.isLemma && l.conceptId === conceptId)

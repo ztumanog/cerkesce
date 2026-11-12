@@ -2,6 +2,8 @@ import { NextRequest, NextResponse } from 'next/server';
 import fs from 'fs';
 import path from 'path';
 import { createHash } from 'crypto';
+import { GraphMutationService } from '@/domain/sync/services/GraphMutationService';
+import { ConceptId, isValidCanonicalConceptId } from '@/domain/shared/value-objects/ConceptId';
 
 export const runtime = 'nodejs';
 export const dynamic = 'force-dynamic';
@@ -130,6 +132,22 @@ export async function PATCH(req: NextRequest) {
       );
     }
 
+    // conceptId kanonik format doğrulaması (ADR-GOV-015)
+    if ('conceptId' in cleanPatch && cleanPatch.conceptId !== null && cleanPatch.conceptId !== '') {
+      if (typeof cleanPatch.conceptId !== 'string') {
+        return NextResponse.json(
+          { error: 'conceptId metin olmalı.' }, { status: 400 }
+        );
+      }
+      try {
+        cleanPatch.conceptId = ConceptId.create(cleanPatch.conceptId.trim()).value;
+      } catch (err: any) {
+        return NextResponse.json(
+          { error: err?.message || 'Geçersiz conceptId formatı.' }, { status: 400 }
+        );
+      }
+    }
+
     // rootIds doğrulama (dizi, string, boşluklar temiz)
     if ('rootIds' in cleanPatch) {
       const v = cleanPatch.rootIds;
@@ -199,6 +217,23 @@ export async function PATCH(req: NextRequest) {
     fs.writeFileSync(file, serialized, 'utf8');
 
     const hash = sha256(serialized);
+
+    // Etkilenen kavram(lar) için bilgi grafiği önbelleğini geçersiz kıl
+    const affectedConceptIds = new Set<string>();
+    if (typeof current.conceptId === 'string' && isValidCanonicalConceptId(current.conceptId)) {
+      affectedConceptIds.add(current.conceptId);
+    }
+    if (typeof updated.conceptId === 'string' && isValidCanonicalConceptId(updated.conceptId)) {
+      affectedConceptIds.add(updated.conceptId);
+    }
+    for (const cid of affectedConceptIds) {
+      GraphMutationService.applyMutation({
+        mutationId: curation__,
+        conceptId: cid,
+        type: 'NODE_UPDATED',
+        timestamp: Date.now()
+      });
+    }
 
     return NextResponse.json(
       {
