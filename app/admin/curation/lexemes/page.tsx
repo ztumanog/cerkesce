@@ -287,7 +287,7 @@ export default function LexemeCurationListPage() {
 
   return (
     <Theme appearance={isDark ? "dark" : "light"} accentColor="blue" grayColor="slate" radius="large" scaling="100%">
-      <Box className="min-h-screen w-full bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 p-6 transition-colors">
+      <Box className={`min-h-screen w-full p-6 transition-colors ${isDark ? "bg-slate-950 text-slate-100" : "bg-slate-50 text-slate-900"}`}>
         <Box className="max-w-7xl mx-auto space-y-6">
           {/* Üst Başlık ve Hızlı Bağlantılar */}
           <Flex
@@ -295,7 +295,7 @@ export default function LexemeCurationListPage() {
             align="center"
             wrap="wrap"
             gap="4"
-            className="border-b border-slate-200 dark:border-slate-800 pb-5"
+            className={`border-b pb-5 ${isDark ? "border-slate-800" : "border-slate-200"}`}
           >
             <Box>
               <Flex align="center" gap="2">
@@ -311,7 +311,7 @@ export default function LexemeCurationListPage() {
               </Heading>
               <Text size="2" color="gray">
                 Toplam {stats.total.toLocaleString("tr-TR")} kayıttan{" "}
-                <strong className="text-slate-900 dark:text-slate-100">
+                <strong className={isDark ? "text-slate-100" : "text-slate-900"}>
                   {filteredLexemes.length.toLocaleString("tr-TR")}
                 </strong>{" "}
                 birim listeleniyor.
@@ -495,7 +495,7 @@ export default function LexemeCurationListPage() {
                       <Table.Row
                         key={lex.id}
                         align="center"
-                        className="hover:bg-slate-100/80 dark:hover:bg-slate-900/70 transition-colors"
+                        className={`transition-colors ${isDark ? "hover:bg-slate-900/70" : "hover:bg-slate-100/80"}`}
                       >
                         <Table.RowHeaderCell>
                           <Flex align="center" gap="1">
@@ -526,7 +526,7 @@ export default function LexemeCurationListPage() {
 
                         <Table.Cell>
                           <Flex direction="column">
-                            <Text weight="bold" size="3" className="text-blue-700 dark:text-blue-300">
+                            <Text weight="bold" size="3" className={isDark ? "text-blue-300" : "text-blue-700"}>
                               {lex.form}
                             </Text>
                             {lex.ipa && (
