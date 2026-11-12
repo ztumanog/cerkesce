@@ -228,7 +228,7 @@ export async function PATCH(req: NextRequest) {
     }
     for (const cid of affectedConceptIds) {
       GraphMutationService.applyMutation({
-        mutationId: curation__,
+        mutationId: `curation_${id}_${Date.now()}`,
         conceptId: cid,
         type: 'NODE_UPDATED',
         timestamp: Date.now()
