@@ -1,6 +1,34 @@
-﻿import { NextResponse } from 'next/server';
+import { NextResponse } from 'next/server';
 import fs from 'fs';
 import path from 'path';
+
+function getLexemesPath() {
+  return path.join(process.cwd(), 'public', 'data', 'linguistic', 'lexemes.json');
+}
+
+function getAuditLogPath() {
+  return path.join(process.cwd(), 'public', 'data', 'linguistic', 'audit_log.jsonl');
+}
+
+export async function GET() {
+  try {
+    const filePath = getLexemesPath();
+    if (!fs.existsSync(filePath)) {
+      return NextResponse.json({ error: 'lexemes.json dosyası bulunamadı.' }, { status: 404 });
+    }
+    const rawData = fs.readFileSync(filePath, 'utf-8');
+    const parsed = JSON.parse(rawData);
+    const lexemes = Array.isArray(parsed) ? parsed : parsed.lexemes ?? [];
+
+    return NextResponse.json({
+      success: true,
+      total: lexemes.length,
+      lexemes,
+    });
+  } catch (error: any) {
+    return NextResponse.json({ error: error.message || 'Sunucu hatası' }, { status: 500 });
+  }
+}
 
 export async function POST(req: Request) {
   try {
@@ -8,16 +36,19 @@ export async function POST(req: Request) {
     const { lexemeId, changes, confirm } = body;
 
     if (!lexemeId || !changes) {
-      return NextResponse.json({ error: 'Geçersiz parametreler (lexemeId ve changes zorunludur).' }, { status: 400 });
+      return NextResponse.json(
+        { error: 'Geçersiz parametreler (lexemeId ve changes zorunludur).' },
+        { status: 400 }
+      );
     }
 
-    const filePath = path.join(process.cwd(), 'public', 'data', 'linguistic', 'lexemes.json');
+    const filePath = getLexemesPath();
     if (!fs.existsSync(filePath)) {
       return NextResponse.json({ error: 'lexemes.json dosyası bulunamadı.' }, { status: 404 });
     }
 
     const rawData = fs.readFileSync(filePath, 'utf-8');
-    let lexemes = JSON.parse(rawData);
+    const lexemes = JSON.parse(rawData);
     const isArray = Array.isArray(lexemes);
     const list = isArray ? lexemes : lexemes.lexemes ?? [];
 
@@ -29,41 +60,59 @@ export async function POST(req: Request) {
     const currentItem = list[targetIndex];
     const diff: { field: string; oldValue: any; newValue: any }[] = [];
 
-    // 1. Word Family ID Değişimi
-    if (changes.wordFamilyId !== undefined && changes.wordFamilyId !== currentItem.wordFamilyId) {
-      diff.push({ field: 'wordFamilyId', oldValue: currentItem.wordFamilyId ?? '', newValue: changes.wordFamilyId });
-    }
+    const checkScalar = (field: string, oldVal: any, newVal: any) => {
+      if (newVal !== undefined && String(newVal ?? '') !== String(oldVal ?? '')) {
+        diff.push({ field, oldValue: oldVal ?? '', newValue: newVal });
+      }
+    };
 
-    // 2. IPA Değişimi
-    if (changes.ipa !== undefined && changes.ipa !== currentItem.ipa) {
-      diff.push({ field: 'ipa', oldValue: currentItem.ipa ?? '', newValue: changes.ipa });
-    }
+    checkScalar('form', currentItem.form, changes.form);
+    checkScalar('dialect', currentItem.dialect, changes.dialect);
+    checkScalar('wordFamilyId', currentItem.wordFamilyId, changes.wordFamilyId);
+    checkScalar('ipa', currentItem.ipa, changes.ipa);
+    checkScalar('partOfSpeech', currentItem.partOfSpeech, changes.partOfSpeech);
+    checkScalar('conceptId', currentItem.conceptId, changes.conceptId);
 
-    // 3. Part of Speech Değişimi
-    if (changes.partOfSpeech !== undefined && changes.partOfSpeech !== currentItem.partOfSpeech) {
-      diff.push({ field: 'partOfSpeech', oldValue: currentItem.partOfSpeech ?? '', newValue: changes.partOfSpeech });
-    }
+    const oldTr = Array.isArray(currentItem.translations?.tr)
+      ? currentItem.translations.tr.join(', ')
+      : currentItem.translations?.tr ?? '';
+    const oldEn = Array.isArray(currentItem.translations?.en)
+      ? currentItem.translations.en.join(', ')
+      : currentItem.translations?.en ?? '';
+    const oldRu = Array.isArray(currentItem.translations?.ru)
+      ? currentItem.translations.ru.join(', ')
+      : currentItem.translations?.ru ?? '';
+    const oldAr = Array.isArray(currentItem.translations?.ar)
+      ? currentItem.translations.ar.join(', ')
+      : currentItem.translations?.ar ?? '';
 
-    // 4. Concept ID Değişimi
-    if (changes.conceptId !== undefined && changes.conceptId !== currentItem.conceptId) {
-      diff.push({ field: 'conceptId', oldValue: currentItem.conceptId ?? '', newValue: changes.conceptId });
-    }
+    checkScalar('translations.tr', oldTr, changes.tr);
+    checkScalar('translations.en', oldEn, changes.en);
+    checkScalar('translations.ru', oldRu, changes.ru);
+    checkScalar('translations.ar', oldAr, changes.ar);
 
-    // 5. Root IDs Değişimi
+    let newRootsArray = currentItem.rootIds ?? [];
     if (changes.rootIds !== undefined) {
-      const newRootsArray = typeof changes.rootIds === 'string'
-        ? changes.rootIds.split(',').map((r: string) => r.trim()).filter(Boolean)
-        : changes.rootIds;
+      newRootsArray =
+        typeof changes.rootIds === 'string'
+          ? changes.rootIds
+              .split(',')
+              .map((r: string) => r.trim())
+              .filter(Boolean)
+          : Array.isArray(changes.rootIds)
+            ? changes.rootIds
+            : [];
 
-      const oldRootsStr = Array.isArray(currentItem.rootIds) ? currentItem.rootIds.join(', ') : (currentItem.rootId || '');
-      const newRootsStr = Array.isArray(newRootsArray) ? newRootsArray.join(', ') : '';
+      const oldRootsStr = Array.isArray(currentItem.rootIds)
+        ? currentItem.rootIds.join(', ')
+        : currentItem.rootId || '';
+      const newRootsStr = newRootsArray.join(', ');
 
       if (oldRootsStr !== newRootsStr) {
         diff.push({ field: 'rootIds', oldValue: oldRootsStr, newValue: newRootsStr });
       }
     }
 
-    // DRY-RUN modunda sadece farkları döndür
     if (!confirm) {
       return NextResponse.json({
         dryRun: true,
@@ -71,28 +120,46 @@ export async function POST(req: Request) {
       });
     }
 
-    // ONAYLANDIYSA (Confirm = true) dosyaya yaz
-    const updatedRoots = typeof changes.rootIds === 'string'
-      ? changes.rootIds.split(',').map((r: string) => r.trim()).filter(Boolean)
-      : currentItem.rootIds;
+    const updatedTranslations = {
+      ...(currentItem.translations || {}),
+      ...(changes.tr !== undefined ? { tr: changes.tr } : {}),
+      ...(changes.en !== undefined ? { en: changes.en } : {}),
+      ...(changes.ru !== undefined ? { ru: changes.ru } : {}),
+      ...(changes.ar !== undefined ? { ar: changes.ar } : {}),
+    };
 
     const updatedItem = {
       ...currentItem,
-      ...(changes.wordFamilyId !== undefined ? { wordFamilyId: changes.wordFamilyId } : {}),
-      ...(changes.ipa !== undefined ? { ipa: changes.ipa } : {}),
-      ...(changes.partOfSpeech !== undefined ? { partOfSpeech: changes.partOfSpeech } : {}),
-      ...(changes.conceptId !== undefined ? { conceptId: changes.conceptId } : {}),
-      ...(changes.rootIds !== undefined ? { rootIds: updatedRoots } : {}),
+      ...(changes.form !== undefined && changes.form.trim() ? { form: changes.form.trim() } : {}),
+      ...(changes.dialect !== undefined ? { dialect: changes.dialect || null } : {}),
+      ...(changes.wordFamilyId !== undefined ? { wordFamilyId: changes.wordFamilyId || null } : {}),
+      ...(changes.ipa !== undefined ? { ipa: changes.ipa || null } : {}),
+      ...(changes.partOfSpeech !== undefined ? { partOfSpeech: changes.partOfSpeech || null } : {}),
+      ...(changes.conceptId !== undefined ? { conceptId: changes.conceptId || null } : {}),
+      ...(changes.rootIds !== undefined ? { rootIds: newRootsArray } : {}),
+      translations: updatedTranslations,
     };
 
     list[targetIndex] = updatedItem;
     const finalData = isArray ? list : { ...lexemes, lexemes: list };
     fs.writeFileSync(filePath, JSON.stringify(finalData, null, 2), 'utf-8');
 
+    try {
+      const logEntry = JSON.stringify({
+        timestamp: new Date().toISOString(),
+        action: 'CURATION_LEXEME_UPDATE',
+        lexemeId,
+        form: updatedItem.form,
+        diff,
+      });
+      fs.appendFileSync(getAuditLogPath(), logEntry + '\n', 'utf-8');
+    } catch {}
+
     return NextResponse.json({
       applied: true,
       appliedFields: diff.map((d) => d.field),
-      message: 'Kayıt başarıyla güncellendi.',
+      lexeme: updatedItem,
+      message: 'Kayıt başarıyla güncellendi ve denetim günlüğüne işlendi.',
     });
   } catch (error: any) {
     return NextResponse.json({ error: error.message || 'Sunucu hatası' }, { status: 500 });
