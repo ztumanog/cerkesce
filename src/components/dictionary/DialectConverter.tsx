@@ -4,6 +4,7 @@ import { useState, useMemo, useRef } from 'react';
 import { convertAdyToKbd, convertKbdToAdy } from '@/lib/dialectConverter';
 import { VERIFIED_PAIRS } from '@/domain/linguistic/DialectConverter';
 import { resolveDialectVariantDisplay } from '@/lib/linguistic/dialectVariantsHelper';
+import { MorphologyAnalyzer } from '@/domain/morphology/MorphologyAnalyzer';
 import { AkilliKlavye } from '@/components/features/AkilliKlavye';
 
 const SAMPLE_PHRASES: ReadonlyArray<{ label: string; ady: string; kbd: string }> = [
@@ -15,6 +16,25 @@ const SAMPLE_PHRASES: ReadonlyArray<{ label: string; ady: string; kbd: string }>
   { label: 'Sıcak gün', ady: 'мафэ фабэ', kbd: 'махуэ хуабэ' },
   { label: 'At yarışı', ady: 'шыгъажэ', kbd: 'шыгъажэ' },
 ];
+
+const SOURCE_LABELS: Record<string, { label: string; badgeClass: string }> = {
+  verb: {
+    label: 'Fiil',
+    badgeClass: 'bg-indigo-100 text-indigo-800 dark:bg-indigo-950/60 dark:text-indigo-300',
+  },
+  noun: {
+    label: 'İsim',
+    badgeClass: 'bg-emerald-100 text-emerald-800 dark:bg-emerald-950/60 dark:text-emerald-300',
+  },
+  compound: {
+    label: 'Bileşik',
+    badgeClass: 'bg-purple-100 text-purple-800 dark:bg-purple-950/60 dark:text-purple-300',
+  },
+  unknown: {
+    label: 'Kök / Birim',
+    badgeClass: 'bg-slate-200 text-slate-700 dark:bg-slate-700 dark:text-slate-300',
+  },
+};
 
 function convertTextWithPreservedPunctuation(
   text: string,
@@ -52,6 +72,7 @@ function convertTextWithPreservedPunctuation(
 }
 
 export function DialectConverterComponent() {
+  const morphologyAnalyzer = useMemo(() => new MorphologyAnalyzer(), []);
   const [input, setInput] = useState('Тэ тыкӀуэщт мафэм');
   const [direction, setDirection] = useState<'W2E' | 'E2W'>('W2E');
   const [copied, setCopied] = useState(false);
@@ -74,9 +95,19 @@ export function DialectConverterComponent() {
         form: w,
         dialect: direction === 'W2E' ? 'western' : 'dogu',
       });
-      return { token: w, display };
+      // Morfoloji motoru Doğu (Kabardeyce) standart ek kurallarıyla en zengin ayrıştırmayı yapar;
+      // girdi Batı (Adığece) ise dönüştürülmüş Doğu karşılığını da analiz ederek kök + ekleri çıkarır.
+      const kbdCandidate = direction === 'W2E' ? convertAdyToKbd(w) : w;
+      const rawAnalysis = morphologyAnalyzer.analyze(w);
+      const kbdAnalysis = morphologyAnalyzer.analyze(kbdCandidate);
+      const morphology =
+        (rawAnalysis.morphemes?.length || 0) >= (kbdAnalysis.morphemes?.length || 0)
+          ? rawAnalysis
+          : kbdAnalysis;
+
+      return { token: w, display, morphology };
     });
-  }, [input, direction]);
+  }, [input, direction, morphologyAnalyzer]);
 
   const filteredPairs = useMemo(() => {
     const q = pairSearch.trim().toLowerCase();
@@ -108,7 +139,7 @@ export function DialectConverterComponent() {
           <div>
             <h1 className="text-lg font-bold">Lehçe Dönüştürücü</h1>
             <p className="text-xs text-slate-500 dark:text-slate-400">
-              Adıgece ↔ Kabardeyce • Huvaj &amp; 16 Akademik Sözlük Doğrulamalı Dönüşüm Motoru
+              Adıgece ↔ Kabardeyce • Huvaj &amp; 16 Akademik Sözlük + Morfolojik Çözümleme Motoru
             </p>
           </div>
           <div className="flex items-center gap-2">
@@ -209,32 +240,76 @@ export function DialectConverterComponent() {
           </div>
         )}
 
-        {/* Kelime Bazlı Diyalekt Analizi */}
+        {/* Kelime Bazlı Diyalekt ve Morfoloji Analizi */}
         {tokenBreakdown.length > 0 && (
           <div className="bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 p-4 space-y-3">
             <div className="flex items-center justify-between">
-              <h3 className="text-sm font-semibold">Kelime Bazlı Karşılaştırma</h3>
+              <h3 className="text-sm font-semibold">Kelime Bazlı Diyalekt &amp; Morfoloji Analizi</h3>
               <span className="text-xs text-slate-500 dark:text-slate-400">{tokenBreakdown.length} birim çözümlendi</span>
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2.5">
-              {tokenBreakdown.map(({ token, display }) => (
-                <div
-                  key={token}
-                  className="rounded-lg border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-900/60 p-2.5 text-xs space-y-1"
-                >
-                  <div className="font-mono font-bold text-slate-800 dark:text-slate-100">{token}</div>
-                  {display && (
-                    <div className="flex flex-wrap gap-1.5 pt-0.5">
-                      <span className="px-1.5 py-0.5 rounded bg-amber-100 text-amber-800 dark:bg-amber-900/50 dark:text-amber-300 font-mono">
-                        ADY: {display.adyghePrimary}
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+              {tokenBreakdown.map(({ token, display, morphology }) => {
+                const posMeta = SOURCE_LABELS[morphology.source] || SOURCE_LABELS.unknown;
+                const morphemes = morphology.morphemes || [];
+                return (
+                  <div
+                    key={token}
+                    className="rounded-lg border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-900/60 p-3 text-xs space-y-2"
+                  >
+                    <div className="flex items-center justify-between gap-2">
+                      <span className="font-mono text-sm font-bold text-slate-800 dark:text-slate-100">
+                        {token}
                       </span>
-                      <span className="px-1.5 py-0.5 rounded bg-sky-100 text-sky-800 dark:bg-sky-900/50 dark:text-sky-300 font-mono">
-                        KBD: {display.kabardianPrimary}
+                      <span className={`px-2 py-0.5 rounded-full text-[10px] font-semibold ${posMeta.badgeClass}`}>
+                        {posMeta.label}
                       </span>
                     </div>
-                  )}
-                </div>
-              ))}
+
+                    {display && (
+                      <div className="flex flex-wrap gap-1.5">
+                        <span className="px-1.5 py-0.5 rounded bg-amber-100 text-amber-800 dark:bg-amber-900/50 dark:text-amber-300 font-mono">
+                          ADY: {display.adyghePrimary}
+                        </span>
+                        <span className="px-1.5 py-0.5 rounded bg-sky-100 text-sky-800 dark:bg-sky-900/50 dark:text-sky-300 font-mono">
+                          KBD: {display.kabardianPrimary}
+                        </span>
+                      </div>
+                    )}
+
+                    {/* Kök & Morfem Dökümü */}
+                    <div className="pt-1.5 border-t border-slate-200/80 dark:border-slate-700/80 space-y-1">
+                      <div className="text-[11px] text-slate-500 dark:text-slate-400">
+                        Kök: <span className="font-mono font-bold text-slate-800 dark:text-slate-200">{morphology.root || token}</span>
+                      </div>
+                      {morphemes.length > 0 && (
+                        <div className="flex flex-wrap items-center gap-1 pt-0.5">
+                          {morphemes.map((m, idx) => {
+                            const isRoot = m.type === 'root';
+                            return (
+                              <span
+                                key={`${m.morpheme}-${idx}`}
+                                title={m.glossTr || m.meaningTr || m.type}
+                                className={`inline-flex items-center gap-1 px-1.5 py-0.5 rounded font-mono text-[11px] ${
+                                  isRoot
+                                    ? 'bg-emerald-600 text-white font-bold'
+                                    : 'bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-300'
+                                }`}
+                              >
+                                <span>{m.morpheme}</span>
+                                {(m.glossTr || m.meaningTr) && (
+                                  <span className={`text-[9px] font-sans ${isRoot ? 'text-emerald-100' : 'text-slate-400'}`}>
+                                    ({m.glossTr || m.meaningTr})
+                                  </span>
+                                )}
+                              </span>
+                            );
+                          })}
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                );
+              })}
             </div>
           </div>
         )}
