@@ -102,3 +102,9 @@ Her ADR ekleme/güncelleme sonrasi:
 
 **Imza:** Mimari Ekip
 **Tarih:** 2026-10-02
+
+---
+
+## 8. KANONIK NUMARA NOTU (2026-11-12)
+
+**Kanonik numara notu:** Fiziksel dosya adi `ADR-0009-CONCEPT_IDENTITY_STRATEGY.md` olan ADR'nin kanonik numarasi **ADR-0020**'dir (MIMAR_MESAJ_ADR_CATALOG_CLEANUP, 2026-09-26). Bu not, Bolum 5'teki 2026-10-02 cozumunden SONRA gelen bir netlestirmedir: politika metnindeki "ADR-0009 = Concept Identity" ifadesi fiziksel dosya adini kastedar; kanonik numara ADR-0020'dir. ADR_INDEX.md tek otoritedir.

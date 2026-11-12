@@ -118,4 +118,9 @@ it('hem ConceptId hem ConceptID büyük/küçük harfli hex-hash formatlarını 
     walk(path.resolve(process.cwd(), 'app'));
     expect(violations).toEqual([]);
   });
+
+  it("app/api/test altinda uretim test endpoint'i bulunmamalidir", () => {
+    const dir = path.resolve(process.cwd(), "app", "api", "test");
+    expect(fs.existsSync(dir)).toBe(false);
+  });
 });

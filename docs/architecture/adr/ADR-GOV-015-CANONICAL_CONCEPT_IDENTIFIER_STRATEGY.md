@@ -89,3 +89,7 @@ Kavram kimliği artık teknik bir kimlik değil, doğrudan **alan (domain) kimli
 
 **Karar Sahibi:** Mimari Kurul
 **Mimari Onay:** ✅ ACCEPTED (2026-11-12) — CI ULID Residue Guard aktif
+
+---
+
+> **SSOT NOTU (2026-11-12):** Iki ConceptID value object yasiyor: `src/domain/concept/value-objects/ConceptID.ts` (kavram motoru) ve `src/domain/shared/value-objects/ConceptId.ts` (curation/lexemeStore gecidi). Her ikisi de bu ADR'nin tek desenine uygundur. Tek sinifa indirme (SSOT birlestirme) MIMARI KURUL karari bekler; bu karar verilene kadar iki dosya da kabul edilebilir kabul edilir.
