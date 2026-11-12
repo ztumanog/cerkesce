@@ -91,6 +91,22 @@ function getDialectMeta(lex: LexemeSummary) {
 }
 
 export default function LexemeCurationListPage() {
+  const [isDark, setIsDark] = useState(false);
+
+  // Header'daki aydınlık / karanlık tema değişimini canlı dinle
+  useEffect(() => {
+    const syncTheme = () => {
+      setIsDark(document.documentElement.classList.contains("dark"));
+    };
+    syncTheme();
+    const observer = new MutationObserver(syncTheme);
+    observer.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ["class"],
+    });
+    return () => observer.disconnect();
+  }, []);
+
   const [lexemes, setLexemes] = useState<LexemeSummary[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -270,18 +286,24 @@ export default function LexemeCurationListPage() {
   };
 
   return (
-    <Theme appearance="dark" accentColor="blue" grayColor="slate" radius="large" scaling="100%">
-      <Box className="min-h-screen bg-slate-950 text-slate-100 p-6">
+    <Theme appearance={isDark ? "dark" : "light"} accentColor="blue" grayColor="slate" radius="large" scaling="100%">
+      <Box className="min-h-screen w-full bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 p-6 transition-colors">
         <Box className="max-w-7xl mx-auto space-y-6">
           {/* Üst Başlık ve Hızlı Bağlantılar */}
-          <Flex justify="between" align="center" wrap="wrap" gap="4" className="border-b border-slate-800 pb-5">
+          <Flex
+            justify="between"
+            align="center"
+            wrap="wrap"
+            gap="4"
+            className="border-b border-slate-200 dark:border-slate-800 pb-5"
+          >
             <Box>
               <Flex align="center" gap="2">
                 <Badge color="blue" variant="soft" size="2">
                   <Sparkles className="w-3.5 h-3.5" /> Morfolojik Korpus Yönetimi
                 </Badge>
                 <Badge color="gray" variant="outline" size="1">
-                  Radix UI Kürasyon Portalı
+                  {isDark ? "Karanlık Tema" : "Aydınlık Tema"}
                 </Badge>
               </Flex>
               <Heading size="7" className="mt-2 tracking-tight">
@@ -289,8 +311,10 @@ export default function LexemeCurationListPage() {
               </Heading>
               <Text size="2" color="gray">
                 Toplam {stats.total.toLocaleString("tr-TR")} kayıttan{" "}
-                <strong className="text-slate-200">{filteredLexemes.length.toLocaleString("tr-TR")}</strong> birim
-                listeleniyor.
+                <strong className="text-slate-900 dark:text-slate-100">
+                  {filteredLexemes.length.toLocaleString("tr-TR")}
+                </strong>{" "}
+                birim listeleniyor.
               </Text>
             </Box>
 
@@ -326,7 +350,7 @@ export default function LexemeCurationListPage() {
                 <Text size="2" color="gray">
                   Toplam Madde
                 </Text>
-                <BookOpen className="w-4 h-4 text-blue-400" />
+                <BookOpen className="w-4 h-4 text-blue-600 dark:text-blue-400" />
               </Flex>
               <Heading size="6" className="mt-1">
                 {stats.total.toLocaleString("tr-TR")}
@@ -341,9 +365,9 @@ export default function LexemeCurationListPage() {
                 <Text size="2" color="gray">
                   Köksüz Maddeler
                 </Text>
-                <GitBranch className="w-4 h-4 text-amber-400" />
+                <GitBranch className="w-4 h-4 text-amber-600 dark:text-amber-400" />
               </Flex>
-              <Heading size="6" className="mt-1 text-amber-300">
+              <Heading size="6" className="mt-1 text-amber-700 dark:text-amber-300">
                 {stats.missingRoots.toLocaleString("tr-TR")}
               </Heading>
             </Card>
@@ -356,9 +380,9 @@ export default function LexemeCurationListPage() {
                 <Text size="2" color="gray">
                   Kavramsız Maddeler
                 </Text>
-                <Tag className="w-4 h-4 text-purple-400" />
+                <Tag className="w-4 h-4 text-purple-600 dark:text-purple-400" />
               </Flex>
-              <Heading size="6" className="mt-1 text-purple-300">
+              <Heading size="6" className="mt-1 text-purple-700 dark:text-purple-300">
                 {stats.missingConcept.toLocaleString("tr-TR")}
               </Heading>
             </Card>
@@ -371,9 +395,9 @@ export default function LexemeCurationListPage() {
                 <Text size="2" color="gray">
                   Anlamı Eksik
                 </Text>
-                <AlertCircle className="w-4 h-4 text-rose-400" />
+                <AlertCircle className="w-4 h-4 text-rose-600 dark:text-rose-400" />
               </Flex>
-              <Heading size="6" className="mt-1 text-rose-300">
+              <Heading size="6" className="mt-1 text-rose-700 dark:text-rose-300">
                 {stats.missingMeaning.toLocaleString("tr-TR")}
               </Heading>
             </Card>
@@ -402,7 +426,7 @@ export default function LexemeCurationListPage() {
 
               <Flex align="center" justify="between" wrap="wrap" gap="3">
                 <Flex align="center" gap="2" wrap="wrap">
-                  <SlidersHorizontal className="w-4 h-4 text-slate-400" />
+                  <SlidersHorizontal className="w-4 h-4 text-slate-500" />
                   <SegmentedControl.Root
                     value={filter}
                     onValueChange={(v) => setFilter(v as FilterType)}
@@ -468,10 +492,14 @@ export default function LexemeCurationListPage() {
                     const dialectMeta = getDialectMeta(lex);
 
                     return (
-                      <Table.Row key={lex.id} align="center" className="hover:bg-slate-900/70">
+                      <Table.Row
+                        key={lex.id}
+                        align="center"
+                        className="hover:bg-slate-100/80 dark:hover:bg-slate-900/70 transition-colors"
+                      >
                         <Table.RowHeaderCell>
                           <Flex align="center" gap="1">
-                            <Text size="1" className="font-mono text-slate-400">
+                            <Text size="1" className="font-mono text-slate-500 dark:text-slate-400">
                               {lex.id}
                             </Text>
                             <IconButton
@@ -482,7 +510,7 @@ export default function LexemeCurationListPage() {
                               title="ID Kopyala"
                             >
                               {copiedId === lex.id ? (
-                                <Check className="w-3 h-3 text-emerald-400" />
+                                <Check className="w-3 h-3 text-emerald-500" />
                               ) : (
                                 <Copy className="w-3 h-3" />
                               )}
@@ -498,7 +526,7 @@ export default function LexemeCurationListPage() {
 
                         <Table.Cell>
                           <Flex direction="column">
-                            <Text weight="bold" size="3" className="text-blue-300">
+                            <Text weight="bold" size="3" className="text-blue-700 dark:text-blue-300">
                               {lex.form}
                             </Text>
                             {lex.ipa && (
@@ -560,22 +588,22 @@ export default function LexemeCurationListPage() {
                                 <DropdownMenu.Content
                                   sideOffset={6}
                                   align="end"
-                                  className="z-50 min-w-[190px] rounded-xl border border-slate-700 bg-slate-900 p-1.5 text-xs text-slate-200 shadow-xl"
+                                  className="z-50 min-w-[195px] rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-1.5 text-xs text-slate-800 dark:text-slate-200 shadow-xl"
                                 >
                                   <DropdownMenu.Item
                                     onSelect={() => openQuickEdit(lex)}
-                                    className="flex cursor-pointer items-center gap-2 rounded-lg px-2.5 py-2 outline-none hover:bg-slate-800"
+                                    className="flex cursor-pointer items-center gap-2 rounded-lg px-2.5 py-2 outline-none hover:bg-slate-100 dark:hover:bg-slate-800"
                                   >
-                                    <Pencil className="w-3.5 h-3.5 text-blue-400" />
+                                    <Pencil className="w-3.5 h-3.5 text-blue-600 dark:text-blue-400" />
                                     Modal ile Düzenle
                                   </DropdownMenu.Item>
 
                                   <DropdownMenu.Item asChild>
                                     <Link
                                       href={`/admin/curation/${lex.id}`}
-                                      className="flex cursor-pointer items-center gap-2 rounded-lg px-2.5 py-2 outline-none hover:bg-slate-800"
+                                      className="flex cursor-pointer items-center gap-2 rounded-lg px-2.5 py-2 outline-none hover:bg-slate-100 dark:hover:bg-slate-800"
                                     >
-                                      <ExternalLink className="w-3.5 h-3.5 text-teal-400" />
+                                      <ExternalLink className="w-3.5 h-3.5 text-teal-600 dark:text-teal-400" />
                                       Tam Sayfa Editörünü Aç
                                     </Link>
                                   </DropdownMenu.Item>
@@ -584,21 +612,21 @@ export default function LexemeCurationListPage() {
                                     <DropdownMenu.Item asChild>
                                       <Link
                                         href={`/kavram/${encodeURIComponent(lex.conceptId)}`}
-                                        className="flex cursor-pointer items-center gap-2 rounded-lg px-2.5 py-2 outline-none hover:bg-slate-800"
+                                        className="flex cursor-pointer items-center gap-2 rounded-lg px-2.5 py-2 outline-none hover:bg-slate-100 dark:hover:bg-slate-800"
                                       >
-                                        <Tag className="w-3.5 h-3.5 text-purple-400" />
+                                        <Tag className="w-3.5 h-3.5 text-purple-600 dark:text-purple-400" />
                                         Kavram Ağında Gör (#{lex.conceptId})
                                       </Link>
                                     </DropdownMenu.Item>
                                   )}
 
-                                  <DropdownMenu.Separator className="my-1 h-px bg-slate-800" />
+                                  <DropdownMenu.Separator className="my-1 h-px bg-slate-200 dark:bg-slate-800" />
 
                                   <DropdownMenu.Item
                                     onSelect={() => copyId(lex.id)}
-                                    className="flex cursor-pointer items-center gap-2 rounded-lg px-2.5 py-2 outline-none hover:bg-slate-800"
+                                    className="flex cursor-pointer items-center gap-2 rounded-lg px-2.5 py-2 outline-none hover:bg-slate-100 dark:hover:bg-slate-800"
                                   >
-                                    <Copy className="w-3.5 h-3.5 text-slate-400" />
+                                    <Copy className="w-3.5 h-3.5 text-slate-500" />
                                     Lexeme ID Kopyala
                                   </DropdownMenu.Item>
                                 </DropdownMenu.Content>
@@ -619,7 +647,7 @@ export default function LexemeCurationListPage() {
                   align="center"
                   px="4"
                   py="3"
-                  className="border-t border-slate-800 bg-slate-900/60"
+                  className="border-t border-slate-200 dark:border-slate-800 bg-slate-50/80 dark:bg-slate-900/60"
                 >
                   <Button
                     size="2"
@@ -632,7 +660,7 @@ export default function LexemeCurationListPage() {
                   </Button>
 
                   <Text size="2" color="gray">
-                    Sayfa <strong className="text-slate-200">{page}</strong> / {totalPages} (
+                    Sayfa <strong className="text-slate-900 dark:text-slate-100">{page}</strong> / {totalPages} (
                     {filteredLexemes.length.toLocaleString("tr-TR")} kayıt)
                   </Text>
 
@@ -654,17 +682,17 @@ export default function LexemeCurationListPage() {
         {/* Radix UI Dialog — Satır İçi Hızlı Kürasyon Modalı */}
         <Dialog.Root open={Boolean(editingLex)} onOpenChange={(open) => !open && setEditingLex(null)}>
           <Dialog.Portal>
-            <Dialog.Overlay className="fixed inset-0 z-50 bg-black/70 backdrop-blur-xs" />
-            <Dialog.Content className="fixed left-1/2 top-1/2 z-50 max-h-[90vh] w-[calc(100vw-2rem)] max-w-2xl -translate-x-1/2 -translate-y-1/2 overflow-y-auto rounded-2xl border border-slate-700 bg-slate-900 p-6 text-slate-100 shadow-2xl">
+            <Dialog.Overlay className="fixed inset-0 z-50 bg-black/50 dark:bg-black/70 backdrop-blur-xs" />
+            <Dialog.Content className="fixed left-1/2 top-1/2 z-50 max-h-[90vh] w-[calc(100vw-2rem)] max-w-2xl -translate-x-1/2 -translate-y-1/2 overflow-y-auto rounded-2xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-6 text-slate-900 dark:text-slate-100 shadow-2xl">
               <Flex justify="between" align="start" gap="3">
                 <Box>
                   <Badge color="blue" variant="soft" size="1" className="font-mono">
                     {editingLex?.id}
                   </Badge>
-                  <Dialog.Title className="mt-1.5 text-xl font-bold text-slate-100">
+                  <Dialog.Title className="mt-1.5 text-xl font-bold">
                     Lexeme Hızlı Kürasyon: {editingLex?.form}
                   </Dialog.Title>
-                  <Dialog.Description className="mt-1 text-xs text-slate-400">
+                  <Dialog.Description className="mt-1 text-xs text-slate-500 dark:text-slate-400">
                     Değişiklikleri önce Dry-Run ile önizleyebilir veya doğrudan lexemes.json ve audit_log.jsonl
                     dosyalarına işleyebilirsiniz.
                   </Dialog.Description>
@@ -675,7 +703,7 @@ export default function LexemeCurationListPage() {
                     <X className="w-4 h-4" />
                   </IconButton>
                 </Dialog.Close>
-              </Flex>
+</Flex>
 
               <Separator size="4" my="4" />
 
@@ -809,17 +837,21 @@ export default function LexemeCurationListPage() {
               </Grid>
 
               {diffPreview && diffPreview.length > 0 && (
-                <Box className="mt-4 rounded-xl border border-amber-700/60 bg-amber-950/30 p-3 text-xs">
+                <Box className="mt-4 rounded-xl border border-amber-400/70 dark:border-amber-700/60 bg-amber-50 dark:bg-amber-950/30 p-3 text-xs">
                   <Text weight="bold" color="amber" size="2">
                     Önizlenen Değişiklikler (Dry-Run Diff):
                   </Text>
                   <Box className="mt-2 space-y-1 font-mono">
                     {diffPreview.map((d) => (
                       <div key={d.field} className="flex flex-wrap gap-2">
-                        <span className="text-slate-300">{d.field}:</span>
-                        <span className="text-rose-400 line-through">{String(d.oldValue || "boş")}</span>
+                        <span className="text-slate-700 dark:text-slate-300">{d.field}:</span>
+                        <span className="text-rose-600 dark:text-rose-400 line-through">
+                          {String(d.oldValue || "boş")}
+                        </span>
                         <span>→</span>
-                        <span className="text-emerald-400">{String(d.newValue || "boş")}</span>
+                        <span className="text-emerald-700 dark:text-emerald-400">
+                          {String(d.newValue || "boş")}
+                        </span>
                       </div>
                     ))}
                   </Box>
@@ -843,7 +875,7 @@ export default function LexemeCurationListPage() {
                 </Callout.Root>
               )}
 
-              <Flex justify="between" align="center" mt="5" pt="4" className="border-t border-slate-800">
+              <Flex justify="between" align="center" mt="5" pt="4" className="border-t border-slate-200 dark:border-slate-800">
                 <Button asChild variant="ghost" color="gray" size="2">
                   <Link href={`/admin/curation/${editingLex?.id}`}>
                     <ExternalLink className="w-3.5 h-3.5" /> Tam Sayfa Editöre Git
