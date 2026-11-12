@@ -13,7 +13,7 @@ describe('P5S5-01: Cross-Lingual Concept Triangulation Sertifikasyonu', () => {
   let conceptRepo: InMemoryConceptRepository;
   let linker: MeaningConceptLinker;
 
-  const CONCEPT_WATER_ID_STR = '01ARZ3NDEKTSV4RRFFQ69G5FA1';
+  const CONCEPT_WATER_ID_STR = 'TEST_CONCEPT_1';
 
   beforeEach(async () => {
     translationRepo = new InMemoryTranslationRepository();

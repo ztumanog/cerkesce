@@ -3,7 +3,7 @@ import { DiscoveryGatewayController } from '../../../presentation/api/DiscoveryG
 
 describe('Phase 6.1 - REST / GraphQL Gateway Certification (API)', () => {
   const controller = new DiscoveryGatewayController();
-  const WATER_ID = '01ARZ3NDEKTSV4RRFFQ69G5FAV';
+  const WATER_ID = 'WATER';
 
   it('API-001: Search/Explore Endpoint - Sorgu parametresi ile kesif verisi donmelidir', async () => {
     const response = await controller.explore('water');

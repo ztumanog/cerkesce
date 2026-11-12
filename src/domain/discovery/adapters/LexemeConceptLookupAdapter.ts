@@ -15,7 +15,6 @@
  */
 
 import { ConceptLookupPort, ConceptLookupResult } from '../ports/ConceptLookupPort';
-import { getConceptUlid } from '../../concept/ConceptRegistry';
 
 interface LexemeRecord {
   id?: string;
@@ -107,9 +106,8 @@ export class LexemeConceptLookupAdapter implements ConceptLookupPort {
   }
 
   private resolveConceptId(raw: string): string | undefined {
-    if (!raw) return undefined;
-    if (/^01[A-Z0-9]{24}$/i.test(raw)) return raw;
-    return getConceptUlid(raw);
+    const trimmed = (raw ?? '').trim();
+    return trimmed || undefined;
   }
 
   public async lookup(normalizedQuery: string): Promise<ConceptLookupResult | null> {

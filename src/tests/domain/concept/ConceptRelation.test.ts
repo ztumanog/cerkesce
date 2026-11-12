@@ -9,7 +9,7 @@ describe('CE-04: ConceptRelation Model', () => {
   it('geçerli bir ilişki nesnesi oluşturabilmelidir', () => {
     const relation = ConceptRelation.create({
       id: 'rel-101',
-      targetConceptId: '01ARZ3NDEKTSV4RRFFQ69G5FAV',
+      targetConceptId: 'WATER',
       type: RelationType.SYNONYM,
       direction: RelationDirection.UNDIRECTED,
     });

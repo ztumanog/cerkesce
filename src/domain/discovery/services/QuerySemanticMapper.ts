@@ -16,7 +16,7 @@ import {
   InMemoryTranslationRepository,
   DEFAULT_MOCK_ENTRIES,
 } from '@/repository/InMemoryTranslationRepository';
-import { CONCEPT_REGISTRY, getConceptUlid } from '../../concept/ConceptRegistry';
+import { CONCEPT_REGISTRY } from '../../concept/ConceptRegistry';
 import { ConceptCandidateResolver } from './ConceptCandidateResolver';
 import { WordFamilyResolver } from './WordFamilyResolver';
 import { ConceptCandidateDTO } from '../dto/ConceptCandidateDTO';
@@ -98,10 +98,7 @@ export class QuerySemanticMapper {
   private normalizeConceptId(rawId: string | undefined): string | undefined {
     if (!rawId) return undefined;
     const registryValue = (CONCEPT_REGISTRY as any)[rawId];
-    if (registryValue) {
-      return getConceptUlid(registryValue) ?? String(registryValue);
-    }
-    return rawId;
+    return registryValue ? String(registryValue) : rawId;
   }
 
   public map(query: string): SemanticQueryResult {

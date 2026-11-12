@@ -3,7 +3,7 @@ import { QuerySemanticMapper } from '../../../domain/discovery/services/QuerySem
 
 describe('Phase 5.3 - Query-Semantic Mapping Certification (QSM)', () => {
   const mapper = new QuerySemanticMapper();
-  const WATER_CONCEPT_ID = '01ARZ3NDEKTSV4RRFFQ69G5FAV';
+  const WATER_CONCEPT_ID = 'WATER';
 
   it('QSM-001: TR, EN, RU ve ADY kelimeleri ayni CONCEPT_WATER id sine maplenmelidir', () => {
     const trResult = mapper.map('su');

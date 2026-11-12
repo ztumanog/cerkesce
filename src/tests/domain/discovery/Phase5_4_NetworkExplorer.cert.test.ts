@@ -4,9 +4,9 @@ import { CytoscapeProjectionAdapter } from '../../../domain/discovery/adapters/C
 import { DiscoveryResultDTO } from '../../../domain/discovery/dto/DiscoveryResultDTO';
 
 describe('Phase 5.4 - Interactive Concept Network Explorer Certification (NET)', () => {
-  const WATER_ID = '01ARZ3NDEKTSV4RRFFQ69G5FAV';
-  const ICE_ID = '01ARZ3NDEKTSV4RRFFQ69G5FB0';
-  const RIVER_ID = '01ARZ3NDEKTSV4RRFFQ69G5FB1';
+  const WATER_ID = 'WATER';
+  const ICE_ID = 'ICE';
+  const RIVER_ID = 'RIVER';
 
   const mockDiscoveryResult: DiscoveryResultDTO = {
     conceptId: WATER_ID,

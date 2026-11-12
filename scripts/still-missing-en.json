@@ -1,0 +1,994 @@
+[
+  {
+    "id": "L-CORPUS-01119",
+    "form": "анкара",
+    "dialect": "KBD",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "Ankara (şehir)",
+    "ru": "Анкара г"
+  },
+  {
+    "id": "L-CORPUS-01235",
+    "form": "париж",
+    "dialect": "KBD",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "Paris (şehir)",
+    "ru": "Париж г"
+  },
+  {
+    "id": "L-CORPUS-01505",
+    "form": "содом",
+    "dialect": "COMMON",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "Sodom (şehir)",
+    "ru": "м. разг. бырысыр, куо-хьау"
+  },
+  {
+    "id": "L-CORPUS-02178",
+    "form": "женевэ",
+    "dialect": "KBD",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "Cenevre (şehir)",
+    "ru": "Женева г"
+  },
+  {
+    "id": "L-CORPUS-02895",
+    "form": "ливан",
+    "dialect": "COMMON",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "lübnan",
+    "ru": "Ливан"
+  },
+  {
+    "id": "L-CORPUS-03041",
+    "form": "прагэ",
+    "dialect": "KBD",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "Prag (şehir)",
+    "ru": "Прага г"
+  },
+  {
+    "id": "L-CORPUS-03126",
+    "form": "зичэзыу",
+    "dialect": "ADY",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "aktüel",
+    "ru": "очередной; ух; зичэзыу; зичэзыу ӏофшӏэн очередная работа"
+  },
+  {
+    "id": "L-CORPUS-03566",
+    "form": "бытырбыху",
+    "dialect": "KBD",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "Petersburg (şehir)",
+    "ru": "см. Санкт-Петербург"
+  },
+  {
+    "id": "L-CORPUS-04020",
+    "form": "чъэр",
+    "dialect": "ADY",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "akkin",
+    "ru": "быстро бегающий, -ая"
+  },
+  {
+    "id": "L-CORPUS-04285",
+    "form": "германие",
+    "dialect": "KBD",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "mark",
+    "ru": "Германия"
+  },
+  {
+    "id": "L-CORPUS-04584",
+    "form": "мысост",
+    "dialect": "KBD",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "Misost (özel isim)",
+    "ru": "кон. Мисост"
+  },
+  {
+    "id": "L-CORPUS-04681",
+    "form": "кипр",
+    "dialect": "COMMON",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "kıbrıs",
+    "ru": "Кипр"
+  },
+  {
+    "id": "L-CORPUS-04698",
+    "form": "ботэщей",
+    "dialect": "KBD",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "Planovskoye (yer adı)",
+    "ru": "Плановское"
+  },
+  {
+    "id": "L-CORPUS-04820",
+    "form": "астемыр",
+    "dialect": "KBD",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "Astemir (özel isim)",
+    "ru": "кон. Астемир"
+  },
+  {
+    "id": "L-CORPUS2-03885",
+    "form": "Ӏаджи",
+    "dialect": "ADY",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "eselemek",
+    "ru": "много; бэ; цӏыф ӏаджи къызэӏукӏагъ"
+  },
+  {
+    "id": "L-VERIFIED-00261",
+    "form": "пулемет",
+    "dialect": "ADY",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "makineli tüfek",
+    "ru": "пулемет; щабэ зэрыкӏрэ автоматическэ ӏаш; тых; ӏэкӏэ зэрахьэрэ пулемёт"
+  },
+  {
+    "id": "L-VERIFIED-00553",
+    "form": "ауми",
+    "dialect": "ADY",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "öyle ise",
+    "ru": "гущыӏэгъус еплъ >; ауми. гущыӏэзэпх. а все-таки; зы автор горэми адрэм тыритхыкӏы-жьыгъэп; шъхьадж ежь иамал къызэрихьэу ытхыгъ"
+  },
+  {
+    "id": "L-VERIFIED-00628",
+    "form": "орзэ",
+    "dialect": "COMMON",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "hasir şapka",
+    "ru": null
+  },
+  {
+    "id": "L-VERIFIED-01418",
+    "form": "чыиф",
+    "dialect": "ADY",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "çubukla örülmüş",
+    "ru": "турлучный, -ая, -ое"
+  },
+  {
+    "id": "L-VERIFIED-01522",
+    "form": "алрэгъу",
+    "dialect": "ADY",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "halikilim",
+    "ru": "ковер; цым е нэмыкӏым хэшӏыкӏыгъэу; сурэтхэр; тхыпхъэхэр зэрышӏыхьагъэу"
+  },
+  {
+    "id": "L-VERIFIED-01619",
+    "form": "астероид",
+    "dialect": "ADY",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "asteroit",
+    "ru": "астероид; астероид. еплъ астероидых"
+  },
+  {
+    "id": "L-VERIFIED-02497",
+    "form": "чъэ",
+    "dialect": "ADY",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "yitirmek",
+    "ru": "чэ: селезёнка"
+  },
+  {
+    "id": "L-PLANT-004",
+    "form": "аІуудз",
+    "dialect": "COMMON",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "Zambak",
+    "ru": null
+  },
+  {
+    "id": "L-KBD-05652",
+    "form": "вилы",
+    "dialect": "KBD",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "Yaba, dirgen",
+    "ru": null
+  },
+  {
+    "id": "L-KBD-05789",
+    "form": "чёрт",
+    "dialect": "KBD",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "üzerinde",
+    "ru": "шейтӀан"
+  },
+  {
+    "id": "HUV4-ПӀАЩЭАГЪЭ",
+    "form": "ПӀащэагъэ",
+    "dialect": "COMMON",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "İrilik, kalınlık",
+    "ru": null
+  },
+  {
+    "id": "HUV4-ТӀЭКӀУ-ТӀЭКӀУУ",
+    "form": "ТӀэкӀу-тӀэкӀуу",
+    "dialect": "COMMON",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "Azar azar",
+    "ru": null
+  },
+  {
+    "id": "HUV4-ЦӀЫНЭАГЪЭ",
+    "form": "ЦӀынэагъэ",
+    "dialect": "COMMON",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "Islaklık, nem",
+    "ru": null
+  },
+  {
+    "id": "HUV4-ЦӀЫНЭ-ПСЫНЭ",
+    "form": "ЦӀынэ-псынэ",
+    "dialect": "COMMON",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "Sırılsıklam",
+    "ru": null
+  },
+  {
+    "id": "KAV-ИБЫБЫКӀЫН",
+    "form": "ибыбыкӀын",
+    "dialect": "KBD",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "uçarak çıkmak",
+    "ru": "вылететь"
+  },
+  {
+    "id": "KAV-ХУПЫЩӀЫХЬЫН",
+    "form": "хупыщӀыхьын",
+    "dialect": "KBD",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "YARGILAMAK",
+    "ru": "пристроить что-л"
+  },
+  {
+    "id": "KAV-КЪУРАМБЕЙ",
+    "form": "къурамбей",
+    "dialect": "KBD",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "lezzetli",
+    "ru": "гъуэмылэ"
+  },
+  {
+    "id": "KAV-ЗЭТЕУВЫӀЭПӀЭ",
+    "form": "зэтеувыӀэпӀэ",
+    "dialect": "KBD",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "ALAN",
+    "ru": "стоянка"
+  },
+  {
+    "id": "KAV-ЛЪЫТАГЪЭ",
+    "form": "лъытагъэ",
+    "dialect": "KBD",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "SEZIŞ",
+    "ru": "ахъшэ бжа"
+  },
+  {
+    "id": "KAV-ЗЭБГЫРЫХЫН",
+    "form": "зэбгырыхын",
+    "dialect": "KBD",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "AŞIRDAMAK",
+    "ru": "разнести что-л"
+  },
+  {
+    "id": "KAV-КХЪУАФЭЖЬЕИЩӀ",
+    "form": "кхъуафэжьеищӀ",
+    "dialect": "KBD",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "KAYIKÇI",
+    "ru": "лодочник"
+  },
+  {
+    "id": "KAV-ПЫРТӀЫКЪ",
+    "form": "пыртӀыкъ",
+    "dialect": "KBD",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "ÖBEK",
+    "ru": "кочка"
+  },
+  {
+    "id": "KAV-ЗЕМЛЯНИКЭ",
+    "form": "земляникэ",
+    "dialect": "KBD",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "Orman çileği",
+    "ru": "земляника"
+  },
+  {
+    "id": "KAV-ОКОП",
+    "form": "окоп",
+    "dialect": "KBD",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "siper",
+    "ru": "окоп"
+  },
+  {
+    "id": "KAV-АДМИНИСТРАЦИЕ",
+    "form": "администрацие",
+    "dialect": "KBD",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "ADMINISTRASYON",
+    "ru": "администрация"
+  },
+  {
+    "id": "KAV-ЕНДЖЫЛЫЗ",
+    "form": "енджылыз",
+    "dialect": "KBD",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "İNGİLTERE",
+    "ru": "англия"
+  },
+  {
+    "id": "KAV-ЦИВИЛИЗАЦИЕ",
+    "form": "цивилизацие",
+    "dialect": "KBD",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "MEDENIYET",
+    "ru": "цивилизация"
+  },
+  {
+    "id": "KAV-ОБЪЕКТИВНЭ",
+    "form": "объективнэ",
+    "dialect": "KBD",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "NESNEL",
+    "ru": "объективный"
+  },
+  {
+    "id": "KAV-АМАЗОНКЭ",
+    "form": "амазонкэ",
+    "dialect": "KBD",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "Amazon",
+    "ru": "амазонка р"
+  },
+  {
+    "id": "KAV-ЛЪЫНТХУЭШХУЭ",
+    "form": "лъынтхуэшхуэ",
+    "dialect": "KBD",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "ATARDAMAR",
+    "ru": "аорта"
+  },
+  {
+    "id": "KAV-АРМЕНИЕ",
+    "form": "армение",
+    "dialect": "KBD",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "ERMENICE",
+    "ru": "армения"
+  },
+  {
+    "id": "KAV-ЕРМЭЛЕЙ",
+    "form": "ермэлей",
+    "dialect": "KBD",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "ERMENICE",
+    "ru": "армения"
+  },
+  {
+    "id": "KAV-АРХЕОЛОГИЧЕСКЭ",
+    "form": "археологическэ",
+    "dialect": "KBD",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "ARAMAÇ",
+    "ru": "археологический"
+  },
+  {
+    "id": "KAV-ЩЭДЖЫБЛЭ",
+    "form": "щэджыблэ",
+    "dialect": "KBD",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "Kobra",
+    "ru": "кобра"
+  },
+  {
+    "id": "KAV-ВЕНГРИЕ",
+    "form": "венгрие",
+    "dialect": "KBD",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "MACARISTAN",
+    "ru": "венгрия"
+  },
+  {
+    "id": "KAV-МЭЖЭРЕЙ",
+    "form": "мэжэрей",
+    "dialect": "KBD",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "MACARISTAN",
+    "ru": "венгрия"
+  },
+  {
+    "id": "KAV-ГОЛЛАНДИЕ",
+    "form": "голландие",
+    "dialect": "KBD",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "HOLLANDA",
+    "ru": "голландия"
+  },
+  {
+    "id": "KAV-ГРУЗИЕ",
+    "form": "грузие",
+    "dialect": "KBD",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "GÜRCISTAN",
+    "ru": "грузия"
+  },
+  {
+    "id": "KAV-КУРЖЕЙ",
+    "form": "куржей",
+    "dialect": "KBD",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "GÜRCISTAN",
+    "ru": "грузия"
+  },
+  {
+    "id": "KAV-ДАРДАНЕЛЛ",
+    "form": "дарданелл",
+    "dialect": "KBD",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "Çanakkale boğazı",
+    "ru": "дарданеллы"
+  },
+  {
+    "id": "KAV-ЗЕМЛЕЧЕРПАЛКА",
+    "form": "землечерпалка",
+    "dialect": "KBD",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "BETONYER",
+    "ru": "землечерпалка"
+  },
+  {
+    "id": "KAV-ЗЕНИТНЭ",
+    "form": "зенитнэ",
+    "dialect": "KBD",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "UÇAKSAVAR",
+    "ru": "зенитный"
+  },
+  {
+    "id": "KAV-ИНТЕРНАЦИОНАЛИЗ",
+    "form": "интернационализм",
+    "dialect": "KBD",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "ENTERNASYONALIZM",
+    "ru": "интернационализм"
+  },
+  {
+    "id": "KAV-ИРАК",
+    "form": "ирак",
+    "dialect": "KBD",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "IRAK",
+    "ru": "ирак"
+  },
+  {
+    "id": "KAV-ИРЛАНДИЕ",
+    "form": "ирландие",
+    "dialect": "KBD",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "IRLANDA",
+    "ru": "ирландия"
+  },
+  {
+    "id": "KAV-ИСБУХЬЭН",
+    "form": "исбухьэн",
+    "dialect": "KBD",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "ISPANYA",
+    "ru": "испания"
+  },
+  {
+    "id": "KAV-ИСПАНИЕ",
+    "form": "испание",
+    "dialect": "KBD",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "ISPANYA",
+    "ru": "испания"
+  },
+  {
+    "id": "KAV-КОСМОПОЛИТ",
+    "form": "космополит",
+    "dialect": "KBD",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "KOZMOLOJI",
+    "ru": "космополит"
+  },
+  {
+    "id": "KAV-КЪУНДЭТЕЙ",
+    "form": "къундэтей",
+    "dialect": "KBD",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "Çegem",
+    "ru": "чегем"
+  },
+  {
+    "id": "KAV-ЛАТВИЕ",
+    "form": "латвие",
+    "dialect": "KBD",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "LETONYA",
+    "ru": "латвия"
+  },
+  {
+    "id": "KAV-МАДАГАСКАР",
+    "form": "мадагаскар",
+    "dialect": "KBD",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "MADAGASKAR",
+    "ru": "мадагаскар"
+  },
+  {
+    "id": "KAV-МИНЕРАЛОГИЕ",
+    "form": "минералогие",
+    "dialect": "KBD",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "MINERALOG",
+    "ru": "минералогия"
+  },
+  {
+    "id": "KAV-НОРВЕГИЕ",
+    "form": "норвегие",
+    "dialect": "KBD",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "NORVEÇ",
+    "ru": "норвегия"
+  },
+  {
+    "id": "KAV-ОППОРТУНИСТ",
+    "form": "оппортунист",
+    "dialect": "KBD",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "OPORTÜNIST",
+    "ru": "оппортунист"
+  },
+  {
+    "id": "KAV-ПАРАГВАЙ",
+    "form": "парагвай",
+    "dialect": "KBD",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "GUARANI",
+    "ru": "парагвай"
+  },
+  {
+    "id": "KAV-ПЕРУ",
+    "form": "перу",
+    "dialect": "KBD",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "PERULU",
+    "ru": "перу"
+  },
+  {
+    "id": "KAV-ПОЛЬШЭ",
+    "form": "польшэ",
+    "dialect": "KBD",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "POLONYA",
+    "ru": "польша"
+  },
+  {
+    "id": "KAV-ПСИХИАТРИЕ",
+    "form": "психиатрие",
+    "dialect": "KBD",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "PSIKIYATRI",
+    "ru": "психиатрия"
+  },
+  {
+    "id": "KAV-РУМЫНИЕ",
+    "form": "румыние",
+    "dialect": "KBD",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "ROMANYA",
+    "ru": "румыния"
+  },
+  {
+    "id": "KAV-СИММЕТРИЧНЭ",
+    "form": "симметричнэ",
+    "dialect": "KBD",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "BAKIŞIK",
+    "ru": "симметричный"
+  },
+  {
+    "id": "KAV-СУФЛЁР",
+    "form": "суфлёр",
+    "dialect": "KBD",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "SUFLÖR",
+    "ru": "суфлёр"
+  },
+  {
+    "id": "KAV-ТАДЖИКИСТАН",
+    "form": "таджикистан",
+    "dialect": "KBD",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "TACIKISTAN",
+    "ru": "таджикистан"
+  },
+  {
+    "id": "KAV-ТИТУЛЬНЭ",
+    "form": "титульнэ",
+    "dialect": "KBD",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "BAŞSAHIFE",
+    "ru": "титульный"
+  },
+  {
+    "id": "KAV-ШЭДГУАРЦЭ",
+    "form": "шэдгуарцэ",
+    "dialect": "KBD",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "turba",
+    "ru": "торф"
+  },
+  {
+    "id": "KAV-ТРАНСПОРТИР",
+    "form": "транспортир",
+    "dialect": "KBD",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "ALIDAT",
+    "ru": "транспортир"
+  },
+  {
+    "id": "KAV-ТУНИС",
+    "form": "тунис",
+    "dialect": "KBD",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "FAS",
+    "ru": "тунис"
+  },
+  {
+    "id": "KAV-ТУРКМЕНИСТАН",
+    "form": "туркменистан",
+    "dialect": "KBD",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "TÜRKMENISTAN",
+    "ru": "туркменистан"
+  },
+  {
+    "id": "KAV-УКРАИНЭ",
+    "form": "украинэ",
+    "dialect": "KBD",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "HOPAK",
+    "ru": "украина"
+  },
+  {
+    "id": "KAV-ХУАБАФЭ",
+    "form": "хуабафэ",
+    "dialect": "KBD",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "ILIKCA",
+    "ru": "тепловатый"
+  },
+  {
+    "id": "KAV-ХУАРЗЭН",
+    "form": "хуарзэн",
+    "dialect": "KBD",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "SÜZÜLMEK",
+    "ru": "реять"
+  },
+  {
+    "id": "KAV-ЧИЛИ",
+    "form": "чили",
+    "dialect": "KBD",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "ŞILI",
+    "ru": "чили"
+  },
+  {
+    "id": "KAV-ЧЫРЖЫНКӀЭДЭДЗЭ",
+    "form": "чыржынкӀэдэдзэ",
+    "dialect": "KBD",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "Küçük çörek",
+    "ru": "маленький чурек"
+  },
+  {
+    "id": "KAV-ЭЛЕКТРОМЕХАНИКЭ",
+    "form": "электромеханикэ",
+    "dialect": "KBD",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "ELEKTROMEKANIK",
+    "ru": "электромеханика"
+  },
+  {
+    "id": "KAV-ЭЛЕКТРОМОТОР",
+    "form": "электромотор",
+    "dialect": "KBD",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "ELEKTROMOTOR",
+    "ru": "электромотор"
+  },
+  {
+    "id": "KAV-ДЗАХУЭ",
+    "form": "дзахуэ",
+    "dialect": "KBD",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "?",
+    "ru": "джэд-къазхэм ирагъэшхт"
+  },
+  {
+    "id": "KAV-ЗЫХ",
+    "form": "зых",
+    "dialect": "KBD",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "biçer-döver",
+    "ru": "зихи"
+  },
+  {
+    "id": "KAV-КӀЕИБЛЭ",
+    "form": "кӀеиблэ",
+    "dialect": "KBD",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "yilan",
+    "ru": "древесная змея"
+  },
+  {
+    "id": "KAV-КӀЫСАПӀЭ",
+    "form": "кӀысапӀэ",
+    "dialect": "KBD",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "Yalak",
+    "ru": "пхъэдакъэ"
+  },
+  {
+    "id": "KAV-КЪЭПЛЪЫЖЬЫН",
+    "form": "къэплъыжьын",
+    "dialect": "KBD",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "ALLIK",
+    "ru": "покраснение"
+  },
+  {
+    "id": "KAV-СЭКЪАУ",
+    "form": "сэкъау",
+    "dialect": "KBD",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "DARMADAĞIN",
+    "ru": "мыт лошадей"
+  },
+  {
+    "id": "KAV-УРЫМХЭМ",
+    "form": "урымхэм",
+    "dialect": "KBD",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "AYAZMA",
+    "ru": "византийцы"
+  },
+  {
+    "id": "KAV-ФОЧЫНЭ",
+    "form": "фочынэ",
+    "dialect": "KBD",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "HARBI",
+    "ru": "дуло ружья"
+  },
+  {
+    "id": "KAV-ЛА-МАНШ",
+    "form": "ла-манш",
+    "dialect": "KBD",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "Manş denizi",
+    "ru": "ла-манш"
+  },
+  {
+    "id": "KAV-ЦӀЫР-ЦӀЫР",
+    "form": "цӀыр-цӀыр",
+    "dialect": "KBD",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "Ocak çekirgesi",
+    "ru": "сверчок"
+  },
+  {
+    "id": "L-AUTO-00012",
+    "form": "алэжьын",
+    "dialect": "COMMON",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "suç işlemek",
+    "ru": null
+  },
+  {
+    "id": "L-AUTO-00025",
+    "form": "гъуазэпсыхьын",
+    "dialect": "COMMON",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "bilinçlendirmek",
+    "ru": "гъуазэпсыхьын; гъозэпсахьын; еплъ >"
+  },
+  {
+    "id": "L-AUTO-00028",
+    "form": "гъуаргу",
+    "dialect": "ADY",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "tak tak (kapı sesi)",
+    "ru": "шум; межд. обозначает стук; унапчъэр гъуаргу ыӏоу фишӏыжьыгъ; пчъэ гъуаргу макъэ къэӏугъ"
+  },
+  {
+    "id": "L-AUTO-00033",
+    "form": "гъукӀагъэ",
+    "dialect": "ADY",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "demircilik yaptı",
+    "ru": "лъыӏ. работал кузнецом; ковал; ар бэрэ гъукӏагъэ; гъукӏагъэӏ лъыӏ. работал кузнецом"
+  },
+  {
+    "id": "L-AUTO-00034",
+    "form": "гъукӀагъэр",
+    "dialect": "ADY",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "demircilik yapan",
+    "ru": "аяся; зэм. прич. тот; который работал кузнецом; ковавший"
+  },
+  {
+    "id": "L-AUTO-00035",
+    "form": "гъукӀакӀэ",
+    "dialect": "ADY",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "demircilik gibi",
+    "ru": "икъулай; как кузнечить; узэрыгъукӏэщт шӏыкӏэр; гъукӏэным иамал"
+  },
+  {
+    "id": "L-AUTO-00036",
+    "form": "гъумтӀымыгъэ",
+    "dialect": "ADY",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "homurdanma",
+    "ru": "лъым. еплъ >"
+  },
+  {
+    "id": "L-AUTO-00037",
+    "form": "гъумыгъугъэ",
+    "dialect": "ADY",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "homurdandı",
+    "ru": "лъым. бурчал; ыӏорэр ыжэ къыдэмыкӏыпэу зыгорэ къыӏуагъ; унэм ихьэжьыгъ; гъумыгъугъэ лъым. бурчал"
+  },
+  {
+    "id": "L-AUTO-00039",
+    "form": "гъунджэшху",
+    "dialect": "ADY",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "büyük ayna",
+    "ru": "большое зеркало; трюмо; гъунджэшхо къыщэфыгъ; шхох"
+  },
+  {
+    "id": "L-AUTO-00050",
+    "form": "хэзэрыхын",
+    "dialect": "COMMON",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "toprağa karışmak",
+    "ru": null
+  },
+  {
+    "id": "L-AUTO-00077",
+    "form": "енэб",
+    "dialect": "COMMON",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "eğrelti otu",
+    "ru": "еплъ >; папоротник; мэзым енэбхэр хэтых; бых"
+  },
+  {
+    "id": "L-AUTO-00100",
+    "form": "абдзэ",
+    "dialect": "COMMON",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "Abzeh lehçesi",
+    "ru": null
+  },
+  {
+    "id": "L-AUTO-00107",
+    "form": "адрыщӀы",
+    "dialect": "COMMON",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "öbür taraf, karşı taraf",
+    "ru": null
+  },
+  {
+    "id": "L-AUTO-00167",
+    "form": "янэ-ятэ",
+    "dialect": "COMMON",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "ebeveynler, ana-baba",
+    "ru": null
+  },
+  {
+    "id": "L-AUTO-00187",
+    "form": "зэпырыкӀы",
+    "dialect": "COMMON",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "karşıdan karşıya geçmek",
+    "ru": null
+  },
+  {
+    "id": "L-AUTO-00216",
+    "form": "аукӀы",
+    "dialect": "COMMON",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "öldürülmek, katledilmek",
+    "ru": null
+  },
+  {
+    "id": "L-AUTO-00258",
+    "form": "гъэхъыбары",
+    "dialect": "COMMON",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "haber yaymak",
+    "ru": null
+  },
+  {
+    "id": "L-AUTO-00259",
+    "form": "гъэхыщӀэ",
+    "dialect": "COMMON",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "acı vermek",
+    "ru": null
+  },
+  {
+    "id": "L-AUTO-00290",
+    "form": "екъу",
+    "dialect": "ADY",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "hızla, koşarak",
+    "ru": "жвачка; былымым иныбашхъо илъ ныкъогъажъор ары; ведущий; тяга"
+  },
+  {
+    "id": "L-AUTO-00294",
+    "form": "елъэбышэуэ",
+    "dialect": "COMMON",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "topallamak",
+    "ru": null
+  },
+  {
+    "id": "L-AUTO-00302",
+    "form": "есыхы",
+    "dialect": "ADY",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "aşağı yüzmek",
+    "ru": "есыхы"
+  },
+  {
+    "id": "L-AUTO-00328",
+    "form": "жьэдэкӀэ",
+    "dialect": "COMMON",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "ağza dökmek",
+    "ru": null
+  },
+  {
+    "id": "L-AUTO-00357",
+    "form": "икӀыб",
+    "dialect": "COMMON",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "arkası, sırtı",
+    "ru": null
+  },
+  {
+    "id": "L-AUTO-00658",
+    "form": "зэмыущхьэсын",
+    "dialect": "COMMON",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "ümitlenmek",
+    "ru": "неперех. . не надеяться друг на друга; не надеяться друг на друга"
+  },
+  {
+    "id": "L-KUEKHEMYSHHE-01",
+    "form": "къуэкӀэмыщӀэ",
+    "dialect": "COMMON",
+    "conceptId": "UNCLASSIFIED",
+    "tr": "merhametsiz",
+    "ru": null
+  }
+]

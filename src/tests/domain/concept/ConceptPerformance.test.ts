@@ -19,8 +19,8 @@ describe('Sprint 5: CE-12 - Phase 3 Concept Engine Stress & Performance', () => 
     const count = 10000;
 
     for (let i = 0; i < count; i++) {
-      const idStr = '01ARZ3NDEKTSV4RRFFQ69' + String(i).padStart(5, '0');
-      const targetStr = '01ARZ3NDEKTSV4RRFFQ69' + String((i + 1) % count).padStart(5, '0');
+      const idStr = 'CONCEPT_' + String(i).padStart(5, '0');
+      const targetStr = 'CONCEPT_' + String((i + 1) % count).padStart(5, '0');
 
       const concept = new Concept({
         id: ConceptID.create(idStr),
@@ -41,12 +41,12 @@ describe('Sprint 5: CE-12 - Phase 3 Concept Engine Stress & Performance', () => 
   });
 
   it('2. 10.000 düğümlü graf üzerinde Depth=2 taraması 50ms altında yanıt vermelidir', async () => {
-    const rootIdStr = '01ARZ3NDEKTSV4RRFFQ6900000';
+    const rootIdStr = 'CONCEPT_00000';
     const rootId = ConceptID.create(rootIdStr);
 
     for (let i = 0; i < 50; i++) {
-      const currentIdStr = '01ARZ3NDEKTSV4RRFFQ69' + String(i).padStart(5, '0');
-      const nextIdStr = '01ARZ3NDEKTSV4RRFFQ69' + String(i + 1).padStart(5, '0');
+      const currentIdStr = 'CONCEPT_' + String(i).padStart(5, '0');
+      const nextIdStr = 'CONCEPT_' + String(i + 1).padStart(5, '0');
 
       const concept = new Concept({
         id: ConceptID.create(currentIdStr),

@@ -5,9 +5,9 @@ describe('Phase 5.3.2 - Knowledge Explorer API Certification (KE)', () => {
   let mockGraphRepo: any;
   let facade: DiscoveryFacade;
 
-  const WATER_ID = '01ARZ3NDEKTSV4RRFFQ69G5FAV';
-  const ICE_ID = '01ARZ3NDEKTSV4RRFFQ69G5FB0';
-  const RIVER_ID = '01ARZ3NDEKTSV4RRFFQ69G5FB1';
+  const WATER_ID = 'WATER';
+  const ICE_ID = 'ICE';
+  const RIVER_ID = 'RIVER';
 
   beforeEach(() => {
     mockGraphRepo = {

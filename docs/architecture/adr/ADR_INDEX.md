@@ -67,6 +67,7 @@
 | ADR-GOV-012 | API Hosting Strategy | `ADR-GOV-012-API_HOSTING_STRATEGY.md` | Proposed | 8.5 |
 | ADR-GOV-013 | Phase Program Closure Strategy | `ADR-GOV-013-PHASE_PROGRAM_CLOSURE.md` | Proposed | 15 |
 | ADR-GOV-014 | Dialect Engine Authority | `ADR-GOV-014-DIALECT_ENGINE_AUTHORITY.md` | Accepted | — |
+| ADR-GOV-015 | Canonical Concept Identifier Strategy | `ADR-GOV-015-CANONICAL_CONCEPT_IDENTIFIER_STRATEGY.md` | Accepted | 15 |
 | ADR-P9-001 | Platform Intelligence Layer | `ADR-P9-001-PLATFORM_INTELLIGENCE.md` | Accepted | 9 |
 | ADR-P10-001 | Platform Intelligence Automation | `ADR-P10-001-PLATFORM_INTELLIGENCE_AUTOMATION.md` | Proposed | 10 |
 | ADR-P11-001 | Governance Intelligence | `ADR-P11-001-GOVERNANCE_INTELLIGENCE.md` | Proposed | 11 |
@@ -165,4 +166,7 @@ Bu dosya, tum ADR katalogunun TEK RESMI KAYNAGIDIR.
 
 - ADR_NUMBERING_POLICY.md — ADR numaralandırma politikası
 
-| ADR-LEX-002 | Concept Registry Freeze | KABUL EDILDI | 2026-10-24 | K1-K5; Lexeme = sahibi; registry read-only |
+| ADR-LEX-002 | Concept Registry Freeze | `ADR-LEX-002-CONCEPT_REGISTRY_FREEZE.md` | Accepted | — |
+| ADR-ONERI-001 | Öneri Anlam Doğrulama | `ADR-ONERI-001-ONERI_ANLAM_DOGRULAMA.md` | Accepted | — |
+| ADR-ROOTS-001 | Dangling Root Cleanup | `ADR-ROOTS-001-DANGLING_ROOT_CLEANUP.md` | Accepted | — |
+| ADR-ROOTS-002 | Word Family Üyelik Semantiği | `ADR-ROOTS-002-WF_UYELIK_SEMANTIGI.md` | Accepted | — |

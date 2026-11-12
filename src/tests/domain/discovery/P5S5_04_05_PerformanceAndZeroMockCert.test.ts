@@ -16,7 +16,7 @@ class ProductionTranslationRepository {
 class ProductionMeaningConceptLinker {
   private links = new Map<string, { conceptId: string; canonicalName: string }>();
   constructor() {
-    this.links.set('m_tr_water', { conceptId: '01ARZ3NDEKTSV4RRFFQ69G5FAV', canonicalName: 'Water' });
+    this.links.set('m_tr_water', { conceptId: 'WATER', canonicalName: 'Water' });
   }
   async resolveConcept(meaningId: string) {
     const link = this.links.get(meaningId);
@@ -27,7 +27,7 @@ class ProductionMeaningConceptLinker {
 class ProductionDialectResolver {
   private variants = new Map<string, any[]>();
   constructor() {
-    this.variants.set('01ARZ3NDEKTSV4RRFFQ69G5FAV', [{ id: 'v_kbd_1', dialectCode: 'KBD', term: 'ĞŸÑÑ‹' }]);
+    this.variants.set('WATER', [{ id: 'v_kbd_1', dialectCode: 'KBD', term: 'ĞŸÑÑ‹' }]);
   }
   async resolveVariants(conceptId: string, dialect?: string) {
     const list = this.variants.get(conceptId) || [];
@@ -38,7 +38,7 @@ class ProductionDialectResolver {
 class ProductionConceptGraphRepository {
   private graph = new Map<string, Array<{ targetConceptId: string; relationType: DiscoveryRelationType }>>();
   constructor() {
-    const rootId = '01ARZ3NDEKTSV4RRFFQ69G5FAV';
+    const rootId = 'WATER';
     for (let i = 1; i <= 50; i++) {
       this.graph.set(rootId, [
         ...(this.graph.get(rootId) || []),
@@ -86,7 +86,7 @@ describe('P5S5-04 & P5S5-05: Performance & Zero-Mock Certification', () => {
 
     const result = await explorer.explore('su', { targetDialect: DialectCode.KBD });
 
-    expect(result.conceptId).toBe('01ARZ3NDEKTSV4RRFFQ69G5FAV');
+    expect(result.conceptId).toBe('WATER');
     expect(result.meanings).toHaveLength(1);
     expect(result.variants).toHaveLength(1);
     expect(result.relatedConcepts?.length).toBeGreaterThan(0);

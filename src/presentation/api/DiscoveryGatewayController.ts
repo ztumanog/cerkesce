@@ -11,8 +11,8 @@ export interface APIResponse<T> {
 
 const defaultMockGraphRepo = {
   getNeighbors: (conceptId: string) => [
-    { conceptId: '01ARZ3NDEKTSV4RRFFQ69G5FB0', relationType: 'STATE_OF', score: 1.0 },
-    { conceptId: '01ARZ3NDEKTSV4RRFFQ69G5FB1', relationType: 'LOCATION_OF', score: 0.8 }
+    { conceptId: 'ICE', relationType: 'STATE_OF', score: 1.0 },
+    { conceptId: 'RIVER', relationType: 'LOCATION_OF', score: 0.8 }
   ]
 };
 

@@ -16,11 +16,11 @@ describe('Phase 5.1 Sprint 4: Graph-Aware Discovery E2E Certification', () => {
     meaningGraph = new MeaningGraph();
 
     // Create valid ULID-based ConceptIDs
-    const waterID = ConceptID.create('01ARZ3NDEKTSV4RRFFQ69G5FAV');
-    const iceID = ConceptID.create('01ARZ3NDEKTSV4RRFFQ69G5FB0');
-    const riverID = ConceptID.create('01ARZ3NDEKTSV4RRFFQ69G5FB1');
-    const liquidID = ConceptID.create('01ARZ3NDEKTSV4RRFFQ69G5FB2');
-    const steamID = ConceptID.create('01ARZ3NDEKTSV4RRFFQ69G5FB3');
+    const waterID = ConceptID.create('WATER');
+    const iceID = ConceptID.create('ICE');
+    const riverID = ConceptID.create('RIVER');
+    const liquidID = ConceptID.create('TREE');
+    const steamID = ConceptID.create('HORSE');
 
     // 1. Concept Tanımları ve İlişkiler - USE PROPER CONSTRUCTOR
     const conceptWater = Concept.create(waterID, 'Water');
@@ -72,7 +72,7 @@ describe('Phase 5.1 Sprint 4: Graph-Aware Discovery E2E Certification', () => {
 
     const stubMeaningLinker = {
       resolveConcept: async (_meaningId: string) => ({
-        id: '01ARZ3NDEKTSV4RRFFQ69G5FAV',
+        id: 'WATER',
         canonicalName: 'Water'
       })
     };
@@ -96,7 +96,7 @@ describe('Phase 5.1 Sprint 4: Graph-Aware Discovery E2E Certification', () => {
 
     // ASSERT: Temel Özellikler
     expect(result.query).toBe('su');
-    expect(result.conceptId).toBe('01ARZ3NDEKTSV4RRFFQ69G5FAV');
+    expect(result.conceptId).toBe('WATER');
     expect(result.canonicalName).toBe('Water');
 
     // ASSERT: Gerçek Traversal
@@ -104,13 +104,13 @@ describe('Phase 5.1 Sprint 4: Graph-Aware Discovery E2E Certification', () => {
     const conceptIds = result.relatedConcepts!.map(c => c.conceptId);
 
     // Kök Filtreleme Check
-    expect(conceptIds).not.toContain('01ARZ3NDEKTSV4RRFFQ69G5FAV');
+    expect(conceptIds).not.toContain('WATER');
 
     // Derinlik 1 ve 2 Bağlantıları
-    expect(conceptIds).toContain('01ARZ3NDEKTSV4RRFFQ69G5FB0');
-    expect(conceptIds).toContain('01ARZ3NDEKTSV4RRFFQ69G5FB1');
-    expect(conceptIds).toContain('01ARZ3NDEKTSV4RRFFQ69G5FB2');
-    expect(conceptIds).toContain('01ARZ3NDEKTSV4RRFFQ69G5FB3');
+    expect(conceptIds).toContain('ICE');
+    expect(conceptIds).toContain('RIVER');
+    expect(conceptIds).toContain('TREE');
+    expect(conceptIds).toContain('HORSE');
 
     // ASSERT: Graph Metadata
     expect(result.graphMetadata?.maxDepth).toBe(2);

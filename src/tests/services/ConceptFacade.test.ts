@@ -20,7 +20,7 @@ describe('Phase 4: CE-15 - ConceptFacade & Cross-Lingual Search Pipeline', () =>
   });
 
   it('Meaning ID üzerinden çapraz anlamsal arama yapıp ilişkili düğümleri getirmelidir', async () => {
-    const conceptIdStr = '01ARZ3NDEKTSV4RRFFQ69G5FA1';
+    const conceptIdStr = 'TEST_CONCEPT_1';
     const conceptId = ConceptID.create(conceptIdStr);
 
     const concept = new Concept({ id: conceptId, relations: [] });

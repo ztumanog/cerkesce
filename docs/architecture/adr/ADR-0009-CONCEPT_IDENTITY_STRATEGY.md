@@ -3,7 +3,7 @@
 **Canonical ADR:** ADR-0020
 **Physical File:** `ADR-0009-CONCEPT_IDENTITY_STRATEGY.md`
 **Tarih:** 2026-09-01
-**Durum:** ✅ ACCEPTED
+**Durum:** ⚠️ SUPERSEDED BY [ADR-GOV-015](./ADR-GOV-015-CANONICAL_CONCEPT_IDENTIFIER_STRATEGY.md) (2026-11-12)
 **Kategori:** Concept Engine
 
 > ⚠️ **NOT:** Fiziksel dosya adı `ADR-0009-...` olarak kalmıştır (Git geçmişi için).

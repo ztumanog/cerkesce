@@ -25,7 +25,7 @@ class RealMeaningConceptLinker {
 
   constructor() {
     this.links.set('m_tr_water', {
-      conceptId: '01ARZ3NDEKTSV4RRFFQ69G5FAV',
+      conceptId: 'WATER',
       canonicalName: 'Water'
     });
   }
@@ -44,7 +44,7 @@ class RealDialectResolver {
   private variants = new Map<string, any[]>();
 
   constructor() {
-    this.variants.set('01ARZ3NDEKTSV4RRFFQ69G5FAV', [
+    this.variants.set('WATER', [
       { id: 'v_kbd_1', dialectCode: 'KBD', term: 'ĞŸÑÑ‹' }
     ]);
   }
@@ -60,9 +60,9 @@ class RealConceptGraphRepository {
   private graph = new Map<string, Array<{ targetConceptId: string; relationType: DiscoveryRelationType }>>();
 
   constructor() {
-    const rootId = '01ARZ3NDEKTSV4RRFFQ69G5FAV';
-    const iceId = '01ARZ3NDEKTSV4RRFFQ69G5FB0';
-    const riverId = '01ARZ3NDEKTSV4RRFFQ69G5FB1';
+    const rootId = 'WATER';
+    const iceId = 'ICE';
+    const riverId = 'RIVER';
 
     this.graph.set(rootId, [
       { targetConceptId: iceId, relationType: DiscoveryRelationType.STATE_OF },
@@ -108,7 +108,7 @@ describe('P5S5-03: Repository-Backed True E2E Certification', () => {
 
     // Output checks
     expect(result.query).toBe('su');
-    expect(result.conceptId).toBe('01ARZ3NDEKTSV4RRFFQ69G5FAV');
+    expect(result.conceptId).toBe('WATER');
     expect(result.canonicalName).toBe('Water');
     expect(result.meanings).toHaveLength(1);
     expect(result.variants!).toHaveLength(1);
@@ -117,8 +117,8 @@ describe('P5S5-03: Repository-Backed True E2E Certification', () => {
     // Graph checks
     expect(result.relatedConcepts!).toHaveLength(2);
     const relatedIds = result.relatedConcepts!?.map(r => r.conceptId);
-    expect(relatedIds).toContain('01ARZ3NDEKTSV4RRFFQ69G5FB0');
-    expect(relatedIds).toContain('01ARZ3NDEKTSV4RRFFQ69G5FB1');
+    expect(relatedIds).toContain('ICE');
+    expect(relatedIds).toContain('RIVER');
 
     // SLA check
     expect(duration).toBeLessThan(50);

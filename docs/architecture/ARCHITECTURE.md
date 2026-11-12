@@ -460,7 +460,9 @@ CERKESCE_KNOWLEDGE_ENGINE/
 - **ADR-0006:** Cross Dictionary Matching
 - **ADR-0007:** TranslationRepository Contract
 - **ADR-0008:** TranslationMeaning Representation
-- **ADR-0009:** Concept Identity Strategy
+- **ADR-0009:** Concept Identity Strategy *(Superseded by ADR-GOV-015)*
+- **ADR-GOV-014:** Dialect Engine Authority and Precedence
+- **ADR-GOV-015:** Canonical Concept Identifier Strategy (`UPPER_SNAKE_CASE` Domain Identity)
 
 ### Discovery Engine (ADR-0010 to ADR-0014)
 - **ADR-0010:** Concept Repository

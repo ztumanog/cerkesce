@@ -1,9 +1,16 @@
-// Sprint 2A.1 + 2A.3 + S2-005 - Lexeme veri erisim katmani
+// Sprint 2A.1 + 2A.3 + S2-005 + DDD Value Object Entegrasyonu
 // SSoT: public/data/linguistic/lexemes.json (ADR-LEX-001)
-// S2-005: Referans validasyonu + reason/editor zorunlulugu + backup + audit
+// S2-005: Referans + Value Object validasyonu + reason/editor zorunlulugu + backup + audit
 
 import fs from "fs";
 import path from "path";
+import {
+  ConceptId,
+  RootValue,
+  WordFamilyId,
+  LexemeIdentity,
+  type LexemeDialect,
+} from "@/domain/shared/value-objects";
 
 // ============================================================
 // TIPLER
@@ -12,6 +19,7 @@ import path from "path";
 export interface LexemeSummary {
   id: string;
   form: string;
+  dialect?: LexemeDialect;
   rootIds: string[];
   wordFamilyId: string;
   conceptId?: string;
@@ -21,6 +29,8 @@ export interface LexemeSummary {
 }
 
 export interface LexemePatch {
+  form?: string;
+  dialect?: LexemeDialect | string;
   rootIds?: string[];
   wordFamilyId?: string;
   conceptId?: string;
@@ -60,28 +70,35 @@ const FAMILIES_PATH = path.join(DATA_DIR, "word_families.json");
 const AUDIT_LOG_PATH = path.join(DATA_DIR, "audit_log.jsonl");
 
 // ============================================================
-// OKUMA KATMANI (2A.1 - degismedi)
+// OKUMA KATMANI (2A.1 + Value Object Normalizasyonu)
 // ============================================================
 
 let cache: LexemeSummary[] | null = null;
 let rawCache: any[] | null = null;
 let cacheMtime = 0;
 
+function safeDialect(raw: unknown): LexemeDialect | undefined {
+  if (!raw || typeof raw !== "string") return undefined;
+  try {
+    return LexemeIdentity.normalizeDialect(raw);
+  } catch {
+    return undefined;
+  }
+}
+
 export function getAllLexemes(): LexemeSummary[] {
   const stat = fs.statSync(LEXEMES_PATH);
   if (cache && stat.mtimeMs === cacheMtime) return cache;
 
-  // .replace(/^\uFEFF/, '') eklenerek gizli BOM karakteri temizlenir:
-  const raw = fs.readFileSync(LEXEMES_PATH, "utf-8").replace(/^\uFEFF/, '');
+  const raw = fs.readFileSync(LEXEMES_PATH, "utf-8").replace(/^\uFEFF/, "");
   const data = JSON.parse(raw);
-
-  // lexemes.json bir dizi VEYA { lexemes: [...] } olabilir - ikisini de destekle
   const list: any[] = Array.isArray(data) ? data : data.lexemes ?? [];
 
   rawCache = list;
   cache = list.map((l: any) => ({
     id: String(l.id ?? ""),
     form: String(l.form ?? ""),
+    dialect: safeDialect(l.dialect),
     rootIds: Array.isArray(l.rootIds) ? l.rootIds.map(String) : [],
     wordFamilyId: String(l.wordFamilyId ?? ""),
     conceptId: l.conceptId ? String(l.conceptId) : undefined,
@@ -98,15 +115,14 @@ export function getLexemeById(id: string): LexemeSummary | undefined {
 }
 
 export function getRawLexeme(id: string): any | undefined {
-  getAllLexemes(); // rawCache'in dolmasini garanti et (S2-005 fix)
+  getAllLexemes();
   return rawCache?.find((l: any) => l.id === id);
 }
 
 // ============================================================
-// REFERANS VALIDASYONU (S2-005 T1 & T2)
+// REFERANS & VALUE OBJECT VALIDASYONU (S2-005 + DDD)
 // ============================================================
 
-// Kucuk setler (525 root + 748 family) - mtime ile cache'lenir
 let rootIdSet: Set<string> | null = null;
 let rootMtime = 0;
 let familyIdSet: Set<string> | null = null;
@@ -115,7 +131,7 @@ let familyMtime = 0;
 function getRootIdSet(): Set<string> {
   const stat = fs.statSync(ROOTS_PATH);
   if (rootIdSet && stat.mtimeMs === rootMtime) return rootIdSet;
-  const data = JSON.parse(fs.readFileSync(ROOTS_PATH, "utf-8"));
+  const data = JSON.parse(fs.readFileSync(ROOTS_PATH, "utf-8").replace(/^\uFEFF/, ""));
   const list: any[] = Array.isArray(data) ? data : data.roots ?? [];
   rootIdSet = new Set(list.map((r: any) => String(r.id ?? r)));
   rootMtime = stat.mtimeMs;
@@ -125,7 +141,7 @@ function getRootIdSet(): Set<string> {
 function getFamilyIdSet(): Set<string> {
   const stat = fs.statSync(FAMILIES_PATH);
   if (familyIdSet && stat.mtimeMs === familyMtime) return familyIdSet;
-  const data = JSON.parse(fs.readFileSync(FAMILIES_PATH, "utf-8"));
+  const data = JSON.parse(fs.readFileSync(FAMILIES_PATH, "utf-8").replace(/^\uFEFF/, ""));
   const list: any[] = Array.isArray(data)
     ? data
     : data.families ?? data.wordFamilies ?? data.items ?? [];
@@ -137,34 +153,96 @@ function getFamilyIdSet(): Set<string> {
 export function validateReferences(patch: LexemePatch): ValidationResult {
   const errors: string[] = [];
 
+  if (patch.form !== undefined) {
+    const normalized = RootValue.normalizeCyrillic(String(patch.form));
+    if (!normalized) {
+      errors.push("form cannot be empty");
+    }
+  }
+
+  if (patch.dialect !== undefined) {
+    try {
+      LexemeIdentity.normalizeDialect(String(patch.dialect));
+    } catch (err: any) {
+      errors.push(err?.message ?? `Invalid dialect: ${patch.dialect}`);
+    }
+  }
+
+  if (patch.conceptId !== undefined) {
+    try {
+      ConceptId.create(String(patch.conceptId));
+    } catch (err: any) {
+      errors.push(err?.message ?? `Invalid conceptId: ${patch.conceptId}`);
+    }
+  }
+
   if (patch.rootIds !== undefined) {
     if (!Array.isArray(patch.rootIds)) {
       errors.push("rootIds must be an array");
     } else {
       const roots = getRootIdSet();
       for (const rid of patch.rootIds) {
-        if (!roots.has(String(rid))) errors.push(`Root not found: ${rid}`);
+        const cleanRid = String(rid).trim().toUpperCase();
+        if (!/^R-[A-Z0-9_-]+$/.test(cleanRid)) {
+          errors.push(`Invalid rootId format: ${rid}`);
+        } else if (!roots.has(cleanRid)) {
+          errors.push(`Root not found: ${rid}`);
+        }
       }
     }
   }
 
   if (patch.wordFamilyId !== undefined) {
-    const fams = getFamilyIdSet();
-    if (!fams.has(String(patch.wordFamilyId))) {
-      errors.push(`WordFamily not found: ${patch.wordFamilyId}`);
+    try {
+      const wf = WordFamilyId.create(String(patch.wordFamilyId));
+      const fams = getFamilyIdSet();
+      if (!fams.has(wf.value)) {
+        errors.push(`WordFamily not found: ${patch.wordFamilyId}`);
+      }
+    } catch (err: any) {
+      errors.push(err?.message ?? `Invalid wordFamilyId: ${patch.wordFamilyId}`);
     }
   }
 
   return { valid: errors.length === 0, errors };
 }
 
+function normalizePatchWithValueObjects(patch: LexemePatch): LexemePatch {
+  const normalized: LexemePatch = { ...patch };
+
+  if (normalized.form !== undefined) {
+    normalized.form = RootValue.normalizeCyrillic(normalized.form);
+  }
+  if (normalized.dialect !== undefined) {
+    normalized.dialect = LexemeIdentity.normalizeDialect(String(normalized.dialect));
+  }
+  if (normalized.conceptId !== undefined) {
+    normalized.conceptId = ConceptId.create(normalized.conceptId).value;
+  }
+  if (normalized.wordFamilyId !== undefined) {
+    normalized.wordFamilyId = WordFamilyId.create(normalized.wordFamilyId).value;
+  }
+  if (Array.isArray(normalized.rootIds)) {
+    normalized.rootIds = normalized.rootIds.map((r) => String(r).trim().toUpperCase());
+  }
+
+  return normalized;
+}
+
 // ============================================================
-// YAZMA KATMANI (2A.3 + S2-005 hardening)
-// Protokol: validasyon -> dry-run -> backup -> apply -> audit
+// YAZMA KATMANI (2A.3 + S2-005 hardening + Value Object Guard)
 // ============================================================
 
 const ALLOWED_FIELDS: (keyof LexemePatch)[] = [
-  "rootIds", "wordFamilyId", "conceptId", "partOfSpeech", "ipa", "technicalDebt", "notes",
+  "form",
+  "dialect",
+  "rootIds",
+  "wordFamilyId",
+  "conceptId",
+  "partOfSpeech",
+  "ipa",
+  "technicalDebt",
+  "notes",
 ];
 
 export function updateLexeme(
@@ -172,25 +250,16 @@ export function updateLexeme(
   patch: LexemePatch,
   options: ApplyOptions
 ): ApplyResult {
-  // --- S2-005 T4: Reason zorunlu ---
   const reason = options.reason?.trim();
   if (!reason) {
     return { success: false, error: "Reason is required" };
   }
 
-  // --- S2-005 T5: Editor zorunlu ---
   const editor = options.editor?.trim();
   if (!editor) {
     return { success: false, error: "Editor is required" };
   }
 
-  // --- S2-005 T1 & T2: Referans validasyonu (yazmadan ONCE) ---
-  const validation = validateReferences(patch);
-  if (!validation.valid) {
-    return { success: false, error: validation.errors.join("; ") };
-  }
-
-  // --- Bilinmeyen alan reddi ---
   const unknown = Object.keys(patch).filter(
     (k) => !ALLOWED_FIELDS.includes(k as keyof LexemePatch)
   );
@@ -198,17 +267,23 @@ export function updateLexeme(
     return { success: false, error: `Unknown fields: ${unknown.join(", ")}` };
   }
 
+  const validation = validateReferences(patch);
+  if (!validation.valid) {
+    return { success: false, error: validation.errors.join("; ") };
+  }
+
+  const canonicalPatch = normalizePatchWithValueObjects(patch);
+
   const lexeme = getRawLexeme(id);
   if (!lexeme) {
     return { success: false, error: `Lexeme not found: ${id}` };
   }
 
-  // --- Diff hesapla (dry-run ciktisi) ---
   const diff: { field: string; oldValue: any; newValue: any }[] = [];
   for (const field of ALLOWED_FIELDS) {
-    if (patch[field] !== undefined) {
+    if (canonicalPatch[field] !== undefined) {
       const oldValue = (lexeme as any)[field];
-      const newValue = patch[field];
+      const newValue = canonicalPatch[field];
       if (JSON.stringify(oldValue) !== JSON.stringify(newValue)) {
         diff.push({ field, oldValue, newValue });
       }
@@ -218,37 +293,32 @@ export function updateLexeme(
     return { success: true, dryRun: options.dryRun, diff: [], appliedFields: [] };
   }
 
-  // --- DRY-RUN: burada dur, yazma ---
   if (options.dryRun) {
     return { success: true, dryRun: true, diff };
   }
 
-  // --- BACKUP (S2-005 T3) ---
   const ts = new Date().toISOString().replace(/[^0-9]/g, "").slice(0, 14);
   const backupPath = `${LEXEMES_PATH}.bak_${ts}`;
   fs.copyFileSync(LEXEMES_PATH, backupPath);
 
-  // --- APPLY ---
   for (const d of diff) {
     (lexeme as any)[d.field] = d.newValue;
   }
   fs.writeFileSync(LEXEMES_PATH, JSON.stringify(rawCache, null, 2), "utf-8");
 
-  // Cache'i gecersiz kila (sonraki okuma tazelesin)
   cache = null;
   rawCache = null;
   cacheMtime = 0;
 
-  // --- AUDIT LOG (reason + editor zorunlu) ---
   const auditEntry = {
     timestamp: new Date().toISOString(),
     lexemeId: id,
     fields: diff.map((d) => d.field),
     changes: diff,
-    reason,       // S2-005 T4
-    editor,       // S2-005 T5
+    reason,
+    editor,
     source: "curation-ui",
-    action: "UPDATE", // S2-005 T6
+    action: "UPDATE",
   };
   fs.appendFileSync(AUDIT_LOG_PATH, JSON.stringify(auditEntry) + "\n", "utf-8");
 
@@ -257,6 +327,3 @@ export function updateLexeme(
     appliedFields: diff.map((d) => d.field),
   };
 }
-
-
-

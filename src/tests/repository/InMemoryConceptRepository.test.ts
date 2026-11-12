@@ -11,7 +11,7 @@ describe('Sprint 2: CE-03 & CE-09 - InMemoryConceptRepository', () => {
   });
 
   it('kavramı depoya kaydedebilmeli ve ID ile O(1) erişebilmelidir', async () => {
-    const conceptId = ConceptID.create();
+    const conceptId = ConceptID.create('WATER');
     const concept = new Concept({ id: conceptId, relations: [] });
 
     await repository.save(concept);
@@ -22,9 +22,9 @@ describe('Sprint 2: CE-03 & CE-09 - InMemoryConceptRepository', () => {
   });
 
   it('çoklu ID sorgusunda (findMany) eşleşen tüm kavramları getirmelidir', async () => {
-    const id1 = ConceptID.create('01ARZ3NDEKTSV4RRFFQ69G5FA1');
-    const id2 = ConceptID.create('01ARZ3NDEKTSV4RRFFQ69G5FA2');
-    const id3 = ConceptID.create('01ARZ3NDEKTSV4RRFFQ69G5FA3');
+    const id1 = ConceptID.create('TEST_CONCEPT_1');
+    const id2 = ConceptID.create('TEST_CONCEPT_2');
+    const id3 = ConceptID.create('TEST_CONCEPT_3');
 
     const c1 = new Concept({ id: id1, relations: [] });
     const c2 = new Concept({ id: id2, relations: [] });
@@ -40,14 +40,14 @@ describe('Sprint 2: CE-03 & CE-09 - InMemoryConceptRepository', () => {
   });
 
   it('olmayan kavram sorgulandığında null dönmelidir', async () => {
-    const conceptId = ConceptID.create();
+    const conceptId = ConceptID.create('NON_EXISTENT_CONCEPT');
     const found = await repository.findById(conceptId as unknown as string);
 
     expect(found).toBeNull();
   });
 
   it('kavram silme ve varlık kontrolü işlemlerini doğrulamalıdır', async () => {
-    const conceptId = ConceptID.create();
+    const conceptId = ConceptID.create('TEMP_CONCEPT');
     const concept = new Concept({ id: conceptId, relations: [] });
 
     await repository.save(concept);
