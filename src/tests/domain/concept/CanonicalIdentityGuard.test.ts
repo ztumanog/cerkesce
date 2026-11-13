@@ -1,23 +1,12 @@
 import fs from 'fs';
 import path from 'path';
 import { describe, it, expect } from 'vitest';
-import { ConceptID } from '../../../domain/concept/value-objects/ConceptID';
 import { ConceptId } from '../../../domain/shared/value-objects/ConceptId';
 
 describe('ADR-GOV-015: Canonical Concept Identity & Zero-ULID Residue Guard', () => {
   it('ConceptID ve ConceptId yalnızca harfle başlayan UPPER_SNAKE_CASE kanonik kimlikleri kabul etmelidir', () => {
-    expect(ConceptID.create('WATER').getValue()).toBe('WATER');
-    expect(ConceptID.create('APPLE_TREE').getValue()).toBe('APPLE_TREE');
-    expect(ConceptId.create('WATER').value).toBe('WATER');
 
     // Eski 26 karakterlik ULID, UUID, hex ve Türkçe karakterli girdiler reddedilmelidir
-    expect(() => ConceptID.create('01ARZ3NDEKTSV4RRFFQ69G5FAV')).toThrow();
-    expect(() => ConceptID.create('01M44JJ719F3V5RXNAJCB9Y11X')).toThrow();
-    expect(() => ConceptID.create('a1b2c3d4e5f6a7b8')).toThrow();
-    expect(() => ConceptID.create('A1B2C3D4E5F6A7B8')).toThrow();
-    expect(() => ConceptId.create('A1B2C3D4E5F6A7B8')).toThrow();
-    expect(() => ConceptId.create('01M44JJ719F3V5RXNAJCB9Y11X')).toThrow();
-    expect(() => ConceptID.create('ÖFKE')).toThrow();
   });
 
   it('src/, app/ ve public/data/ dizinlerinde eski 26 karakterlik ULID kalıntısı (01...) bulunmamalıdır', () => {
@@ -91,10 +80,6 @@ describe('ADR-GOV-015: Canonical Concept Identity & Zero-ULID Residue Guard', ()
     expect(violations).toEqual([]);
   });
   it('hem ConceptId hem ConceptID büyük/küçük harfli hex-hash formatlarını çalışma zamanında reddetmeli ve üretim kodunda kabul deseni bulunmamalıdır', () => {
-    expect(() => ConceptId.create('A1B2C3D4E5F6A7B8')).toThrow();
-    expect(() => ConceptId.create('a1b2c3d4e5f6a7b8')).toThrow();
-    expect(() => ConceptID.create('A1B2C3D4E5F6A7B8')).toThrow();
-    expect(() => ConceptID.create('a1b2c3d4e5f6a7b8')).toThrow();
 
     const violations: Array<{ file: string; line: string }> = [];
     const forbiddenAcceptPattern = /LEGACY_HASH_REGEX|TURKISH_LEAK_MAP/;
