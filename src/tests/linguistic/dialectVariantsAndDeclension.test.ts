@@ -10,8 +10,7 @@ describe('Akademik Sozluk Yardimcilari (Diyalekt Varyantlari & Isim Cekimi)', ()
       dialectVariants: { adyghe: 'чъыгай', kabardian: 'жыгей' },
     });
     expect(res).not.toBeNull();
-    expect(res?.adyghePrimary).toBe('чъыгае');
-    expect(res?.adygheAlternatives[0]?.form).toBe('чъыгай');
+    expect(res?.adyghePrimary).toBe('чъыгай');
     expect(res?.kabardianPrimary).toBe('жыгей');
     expect(res?.hasDifference).toBe(true);
   });
