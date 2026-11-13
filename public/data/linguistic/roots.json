@@ -6112,7 +6112,7 @@
       "kabardian": "псы"
     },
     "productivity": {
-      "lemmaCount": 249,
+      "lemmaCount": 250,
       "corpusFrequency": 6326,
       "adyFreq": 2420,
       "kbdFreq": 3906
@@ -6361,6 +6361,7 @@
         "L-AUTO-00932",
         "L-AUTO-00933",
         "L-AUTO-00934",
+        "L-AUTO-01309",
         "L-AUTO-01523",
         "L-AUTO-01524",
         "L-AUTO-01525",
@@ -16130,7 +16131,7 @@
       "kabardian": "щӀы"
     },
     "productivity": {
-      "lemmaCount": 635,
+      "lemmaCount": 636,
       "dictionarySources": 11,
       "corpusFrequency": 9435,
       "adyFreq": 1,
@@ -16635,6 +16636,7 @@
         "L-SHCH-YXUGHE",
         "L-SHCH-ENYGHENSHAGHE",
         "L-ZEXEGHESHCH-EN",
+        "L-ZESHCH-YGHU",
         "L-SHCH-YKHEY",
         "L-PASHCH-E",
         "L-DESHCH-EIN",
@@ -17049,7 +17051,7 @@
       "kabardian": "щӀэ"
     },
     "productivity": {
-      "lemmaCount": 387,
+      "lemmaCount": 388,
       "dictionarySources": 5,
       "corpusFrequency": 9383,
       "adyFreq": 2318,
@@ -17426,6 +17428,7 @@
         "L-SHCH-EUT-YPSHCHHEN",
         "L-SHCH-EUT-YPSHCHYK-YN",
         "L-SHCH-ET-ET-YN",
+        "L-KEESHCH-EREY",
         "L-SHCH-EBLEBLU",
         "L-SHCH-EGUEN",
         "L-SHCH-EGHENEGHUAF-E",
@@ -22522,7 +22525,7 @@
       "kabardian": "дзэ"
     },
     "productivity": {
-      "lemmaCount": 90,
+      "lemmaCount": 91,
       "corpusFrequency": 1301,
       "compoundCount": 2,
       "adyFreq": 506,
@@ -22593,6 +22596,7 @@
         "L-DZESHCHHEL",
         "L-DZEGYN",
         "L-DZEMYXE",
+        "L-ZERYDZE",
         "L-DZELYKUEEBGHE",
         "L-DZELYCH",
         "L-DZEKEAXUE",
@@ -23372,7 +23376,7 @@
       "kabardian": "цӀыкӀу"
     },
     "productivity": {
-      "lemmaCount": 14,
+      "lemmaCount": 19,
       "corpusFrequency": 2322,
       "compoundCount": 2,
       "adyFreq": 551,
@@ -23395,7 +23399,12 @@
         "L-LYTS-YK-ULYBZHE",
         "L-SHYNETS-YK-U",
         "L-GHETS-YK-UN",
-        "L-MYIN-MYTS-YK-U"
+        "L-MYIN-MYTS-YK-U",
+        "L-AUTO-01262",
+        "L-AUTO-01298",
+        "L-AUTO-01558",
+        "L-AUTO-01629",
+        "L-AUTO-01645"
       ],
       "conceptIds": [
         "COWARD",
@@ -24050,7 +24059,7 @@
       "kabardian": "ныбжь"
     },
     "productivity": {
-      "lemmaCount": 18,
+      "lemmaCount": 19,
       "dictionarySources": 18,
       "corpusFrequency": 1525,
       "adyFreq": 311,
@@ -24107,6 +24116,7 @@
         "L-NYBZHYSHCH-EXER",
         "L-NYBZHK-E",
         "L-NYBZHEGHU-ZHEREGHU",
+        "L-AUTO-01360",
         "L-AUTO-01474"
       ],
       "conceptIds": [
@@ -24419,7 +24429,7 @@
       "kabardian": "Ӏуэху"
     },
     "productivity": {
-      "lemmaCount": 27,
+      "lemmaCount": 29,
       "compoundCount": 4,
       "corpusFrequency": 5292,
       "adyFreq": 975,
@@ -24465,7 +24475,9 @@
         "L-UEXUNYKUEE",
         "L-UEXUNYKUEESHCH-E",
         "L-AUTO-01260",
-        "L-AUTO-01261"
+        "L-AUTO-01261",
+        "L-AUTO-01436",
+        "L-AUTO-01553"
       ],
       "conceptIds": [
         "WORK"
@@ -24527,7 +24539,7 @@
       "kabardian": "махуэ"
     },
     "productivity": {
-      "lemmaCount": 11,
+      "lemmaCount": 12,
       "compoundCount": 5,
       "corpusFrequency": 3783,
       "adyFreq": 1487,
@@ -24556,6 +24568,7 @@
         "L-MAXUERYTX",
         "L-AUTO-00855",
         "L-AUTO-00856",
+        "L-AUTO-01430",
         "L-AUTO-01458",
         "L-AUTO-01459"
       ],
@@ -25417,7 +25430,10 @@
       "L-PSYKHUME",
       "L-ZYSHCH-EKHUMEN",
       "L-SHCHHEKHUME"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 300
+    }
   },
   {
     "id": "R-MEZ",
@@ -25545,7 +25561,10 @@
       "L-AUTO-00867",
       "L-AUTO-00868",
       "L-BITKI-00144"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 46
+    }
   },
   {
     "id": "R-LEZH",
@@ -25633,6 +25652,7 @@
         "L-SYRYO",
         "L-KEELEZHYZHYN",
         "L-KEELEZHYPSHCH-E",
+        "L-KEELEZHEN",
         "L-LEZHAP-ENSHAGHE",
         "L-LEZHYGHENSHAGHE",
         "L-KEYXELEZHYHYN",
@@ -25732,7 +25752,10 @@
       "L-ELEZHYK-E",
       "L-LEZHEFYN",
       "L-XUELEZHYN"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 77
+    }
   },
   {
     "id": "R-LAZH",
@@ -25807,7 +25830,10 @@
       "L-ESHCH-AGHERYLAZHE",
       "L-SHCH-ENYGHERYLAZHE",
       "L-SHCHHELAZHE"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 18
+    }
   },
   {
     "id": "R-SHCH",
@@ -26761,7 +26787,8 @@
     "wordFamily": {
       "id": "WF-ZE",
       "lexemeIds": [
-        "L-ZE"
+        "L-ZE",
+        "L-AUTO-01354"
       ],
       "conceptIds": [
         "ONE"
@@ -26777,7 +26804,10 @@
     "notes": "Minimal root - WF-ZE icin olusturuldu",
     "lexemeIds": [
       "L-ZE"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 2
+    }
   },
   {
     "id": "R-TKHE",
@@ -26970,7 +27000,10 @@
     "notes": "Minimal root - WF-NAPE icin olusturuldu",
     "lexemeIds": [
       "L-NAPE"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-KUANDZH",
@@ -27006,7 +27039,10 @@
     "lexemeIds": [
       "L-KUANDZH",
       "L-KEANDZH"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 2
+    }
   },
   {
     "id": "R-GU_1",
@@ -27094,7 +27130,7 @@
     "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 3450,
-      "lemmaCount": 4
+      "lemmaCount": 5
     },
     "wordFamily": {
       "id": "WF-KHAD",
@@ -27102,7 +27138,8 @@
         "L-XADEXEK1",
         "L-XADE",
         "L-XADEZEHE",
-        "L-KHARBYZKUEEPS"
+        "L-KHARBYZKUEEPS",
+        "L-AUTO-00057"
       ]
     },
     "lexemeIds": [
@@ -27118,7 +27155,7 @@
     "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 3300,
-      "lemmaCount": 19
+      "lemmaCount": 20
     },
     "wordFamily": {
       "id": "WF-TKHY",
@@ -27138,6 +27175,7 @@
         "L-TXYLHDELHHE",
         "L-TXYLHTEDZEN",
         "L-TXYLHYMP-EXEK",
+        "L-AUTO-01369",
         "L-AUTO-01579",
         "L-AUTO-01580",
         "L-AUTO-01581",
@@ -27208,7 +27246,7 @@
     "primaryMeaning": "iyi, güzel (фӀы)",
     "productivity": {
       "corpusFrequency": 2750,
-      "lemmaCount": 198
+      "lemmaCount": 199
     },
     "wordFamily": {
       "id": "WF-FIY",
@@ -27301,6 +27339,7 @@
         "L-F-YTS-E",
         "L-GUF-EGHUE",
         "L-UMP-AF-AGH-E",
+        "L-F1Y-2",
         "L-SHCHHEZYF-EF",
         "L-SHCHENYF-E",
         "L-EF-EK-YN",
@@ -30565,7 +30604,7 @@
     "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 680,
-      "lemmaCount": 24
+      "lemmaCount": 26
     },
     "wordFamily": {
       "id": "WF-FIE",
@@ -30575,6 +30614,7 @@
         "L-KBD-04593",
         "L-KBD-04594",
         "L-KBD-04595",
+        "L-F1ESHCHNYGHE",
         "L-F-ESHCHKHUNYDZHE",
         "L-F-ESHCH-EN",
         "L-F-ESHCHYGHETS-E",
@@ -30593,6 +30633,7 @@
         "L-F-ESHCHKHUGHUEY",
         "L-F-ESHCHKHUNYDZHEU",
         "L-AUTO-00682",
+        "L-AUTO-01595",
         "L-AUTO-01608"
       ]
     },
@@ -31045,7 +31086,7 @@
     "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 600,
-      "lemmaCount": 11
+      "lemmaCount": 12
     },
     "wordFamily": {
       "id": "WF-SEB",
@@ -31058,6 +31099,7 @@
         "L-VERIFIED-02178",
         "L-KBD-04185",
         "L-ZESEBEUEN",
+        "L-KEESEBEPYN",
         "L-ESEBEUEN",
         "L-SEBEPYN",
         "L-AUTO-01566"
@@ -31083,7 +31125,7 @@
     "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 590,
-      "lemmaCount": 9
+      "lemmaCount": 10
     },
     "wordFamily": {
       "id": "WF-UEZ",
@@ -31096,7 +31138,8 @@
         "L-UEZDYGHEK-E",
         "L-ABAZHUR",
         "L-UEZDYGHEF-ELH",
-        "L-UEZDYGHASHCHHE"
+        "L-UEZDYGHASHCHHE",
+        "L-AUTO-01659"
       ]
     },
     "lexemeIds": [
@@ -31210,7 +31253,7 @@
     "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 520,
-      "lemmaCount": 16
+      "lemmaCount": 19
     },
     "wordFamily": {
       "id": "WF-BZHY",
@@ -31230,7 +31273,10 @@
         "L-KBD-00375",
         "L-BZHYGHERYLAZHE",
         "L-AUTO-00056",
-        "L-AUTO-01297"
+        "L-AUTO-01297",
+        "L-AUTO-01355",
+        "L-AUTO-01381",
+        "L-AUTO-01539"
       ]
     },
     "lexemeIds": [
@@ -31536,7 +31582,7 @@
     "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 250,
-      "lemmaCount": 35
+      "lemmaCount": 36
     },
     "wordFamily": {
       "id": "WF-UVY",
@@ -31574,6 +31620,7 @@
         "L-ZESHCH-EUVY-YK-YN",
         "L-KEYZYSHCH-EUVY-YK-YN",
         "L-TEUVY-EN",
+        "L-KEEUVY-E",
         "L-UVY-E-KBD",
         "L-AUTO-01035"
       ]
@@ -31641,7 +31688,7 @@
     "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 220,
-      "lemmaCount": 18
+      "lemmaCount": 19
     },
     "wordFamily": {
       "id": "WF-PL",
@@ -31663,6 +31710,7 @@
         "L-PL-ERYH",
         "L-PLHYZHF-YTS-AFE",
         "L-PLHYZHGHUEZHYFE",
+        "L-KEEPLHYZHYN",
         "L-PLHYZH-FYTS-AFE"
       ]
     },
@@ -33592,7 +33640,7 @@
     "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 6800,
-      "lemmaCount": 8
+      "lemmaCount": 9
     },
     "wordFamily": {
       "id": "WF-DUN",
@@ -33604,7 +33652,8 @@
         "L-DUNEYKUETEZH",
         "L-DUNEYEPLHYK-E",
         "L-MIROVOZZRENIE",
-        "L-AUTO-01336"
+        "L-AUTO-01336",
+        "L-AUTO-01338"
       ]
     },
     "lexemeIds": [
@@ -34041,7 +34090,7 @@
     "primaryMeaning": null,
     "productivity": {
       "corpusFrequency": 1700,
-      "lemmaCount": 10
+      "lemmaCount": 11
     },
     "wordFamily": {
       "id": "WF-KA_1",
@@ -34055,7 +34104,8 @@
         "L-KEALENYNSHE",
         "L-KEALEPSHCHYKUEE",
         "L-AUTO-01425",
-        "L-AUTO-01426"
+        "L-AUTO-01426",
+        "L-AUTO-01558"
       ]
     },
     "lexemeIds": [
@@ -35369,7 +35419,10 @@
       "L-ADEZHXER",
       "L-ADE-ANE",
       "L-VERIFIED-00750"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 8
+    }
   },
   {
     "id": "R-ADAQE",
@@ -35388,7 +35441,10 @@
     "lexemeIds": [
       "L-ADAKEE",
       "L-ADAKEEBGHURYS"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 2
+    }
   },
   {
     "id": "R-AMAL",
@@ -35415,7 +35471,10 @@
       "L-AMALYNSHE",
       "L-AMALSHY",
       "L-AMALSHYGHE"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 6
+    }
   },
   {
     "id": "R-ANA",
@@ -35600,7 +35659,10 @@
       "L-KBD-04506",
       "L-KBD-05560",
       "L-ANESHXUE-ADESHXUE"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 85
+    }
   },
   {
     "id": "R-ARBA",
@@ -35619,7 +35681,10 @@
     "lexemeIds": [
       "L-ARBA",
       "L-UEGUNE"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 2
+    }
   },
   {
     "id": "R-AREZY",
@@ -35648,7 +35713,10 @@
       "L-MYAREZYUE",
       "L-AREZYN",
       "L-ZEXUEAREZYNYGHE"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 7
+    }
   },
   {
     "id": "R-AWAN",
@@ -35667,7 +35735,10 @@
     "lexemeIds": [
       "L-AUAN",
       "L-AUANYSHCH"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 2
+    }
   },
   {
     "id": "R-BACE",
@@ -35688,7 +35759,10 @@
       "L-BATSE",
       "L-KBD-00321",
       "L-BATSESHCH-AGHYL"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 3
+    }
   },
   {
     "id": "R-BAXWE",
@@ -35715,7 +35789,10 @@
       "L-KBD-00320",
       "L-AUTO-00422",
       "L-AUTO-01294"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 6
+    }
   },
   {
     "id": "R-BAZHA",
@@ -35736,7 +35813,10 @@
       "L-BAZHE",
       "L-NYBAZHE",
       "L-BAZHEK-E"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 3
+    }
   },
   {
     "id": "R-BEZER",
@@ -35763,7 +35843,10 @@
       "L-BEZERYSHXUE",
       "L-BEZERYNEXEX",
       "L-AUTO-00456"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 6
+    }
   },
   {
     "id": "R-BGHA",
@@ -35944,7 +36027,10 @@
       "L-AUTO-00426",
       "L-AUTO-00427",
       "L-AUTO-01296"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 83
+    }
   },
   {
     "id": "R-BGHW",
@@ -36275,7 +36361,10 @@
       "L-AUTO-00424",
       "L-AUTO-00425",
       "L-AUTO-00952"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 158
+    }
   },
   {
     "id": "R-BLANE",
@@ -36314,7 +36403,10 @@
       "L-BLANK",
       "L-BLANAGH-E",
       "L-BITKI-00035"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 12
+    }
   },
   {
     "id": "R-BZHEN",
@@ -36357,7 +36449,10 @@
       "L-KBD-00396",
       "L-KBD-00397",
       "L-KBD-00398"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 14
+    }
   },
   {
     "id": "R-BZIY",
@@ -36390,7 +36485,10 @@
       "L-KBD-04389",
       "L-KBD-05103",
       "L-PASHCH-EBZIY"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 9
+    }
   },
   {
     "id": "R-CHA",
@@ -36476,7 +36574,10 @@
       "L-MYGHESHCH-EGHUEN",
       "L-KEYDEGHEK-YNYGHE",
       "L-GHESAK-E"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 35
+    }
   },
   {
     "id": "R-CHET",
@@ -36511,7 +36612,10 @@
       "L-VERIFIED-00190",
       "L-VERIFIED-00225",
       "L-VERIFIED-00694"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 10
+    }
   },
   {
     "id": "R-CHYCE",
@@ -36528,7 +36632,10 @@
     },
     "lexemeIds": [
       "L-CHYTSE"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-CHYRBISH",
@@ -36551,7 +36658,10 @@
       "L-CHYRBYSHCH",
       "L-CHYRBYSHGHEZH",
       "L-CHYRBYSHKUEPKHE"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 4
+    }
   },
   {
     "id": "R-DAGHA",
@@ -36596,7 +36706,10 @@
       "L-DAGHESHCH-EXU",
       "L-DAGHETEX",
       "L-AUTO-00517"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 15
+    }
   },
   {
     "id": "R-DARIY",
@@ -36617,7 +36730,10 @@
       "L-DARIY",
       "L-KBD-00868",
       "L-AUTO-00521"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 3
+    }
   },
   {
     "id": "R-DEGU",
@@ -36656,7 +36772,10 @@
       "L-AUTO-01177",
       "L-BITKI-00020",
       "L-BITKI-00070"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 12
+    }
   },
   {
     "id": "R-DERS",
@@ -36679,7 +36798,10 @@
       "L-ZEDERSEGHU",
       "L-DERSEGHU",
       "L-ZEKLASSEGHU"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 4
+    }
   },
   {
     "id": "R-DEX",
@@ -36700,7 +36822,10 @@
       "L-LEDEX",
       "L-VERIFIED-00201",
       "L-KEYXUEGHEDEXEN"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 3
+    }
   },
   {
     "id": "R-DEY",
@@ -36721,7 +36846,10 @@
       "L-DEY",
       "L-DEEU",
       "L-DEY-2"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 3
+    }
   },
   {
     "id": "R-DJADU",
@@ -36798,7 +36926,10 @@
       "L-KBD-04848",
       "L-AUTO-00482",
       "L-AUTO-01161"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 31
+    }
   },
   {
     "id": "R-DJANA",
@@ -36817,7 +36948,10 @@
     "lexemeIds": [
       "L-DZHANE",
       "L-VERIFIED-00475"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 2
+    }
   },
   {
     "id": "R-DYGHA",
@@ -36880,7 +37014,10 @@
       "L-KBD-00972",
       "L-KBD-00973",
       "L-DYGHE-2"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 24
+    }
   },
   {
     "id": "R-DYSHA",
@@ -36909,7 +37046,10 @@
       "L-KBD-00990",
       "L-DYSHCHEPLH",
       "L-DYSHCHEXU"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 7
+    }
   },
   {
     "id": "R-DYZHYN",
@@ -36938,7 +37078,10 @@
       "L-VERIFIED-02302",
       "L-DYZHYNYZH",
       "L-DYZHYN"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 7
+    }
   },
   {
     "id": "R-EI",
@@ -36959,7 +37102,10 @@
       "L-1EY",
       "L-EYUE-2",
       "L-KBD-01092"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 3
+    }
   },
   {
     "id": "R-EY",
@@ -36982,7 +37128,10 @@
       "L-EYUE",
       "L-ZYER",
       "L-VERIFIED-02328"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 4
+    }
   },
   {
     "id": "R-EZH",
@@ -37009,7 +37158,10 @@
       "L-KBD-01161",
       "L-KBD-01162",
       "L-AUTO-00287"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 6
+    }
   },
   {
     "id": "R-GHWALH",
@@ -37387,7 +37539,10 @@
       "L-GHUE-F-YTS-AFE",
       "L-AUTO-00030",
       "L-AUTO-00505"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 255
+    }
   },
   {
     "id": "R-GHWSCH",
@@ -37460,7 +37615,10 @@
       "L-GHEGHUSHCHYN",
       "L-KBD-04265",
       "L-XUEGHEGHUSHCHYN"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 29
+    }
   },
   {
     "id": "R-GUSCH",
@@ -37727,7 +37885,10 @@
       "L-HESHCH-E",
       "L-GUSHCH1EGHU",
       "L-KBD-01851"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 126
+    }
   },
   {
     "id": "R-HAE",
@@ -38268,7 +38429,10 @@
       "L-HEMBASH",
       "L-SHYK-URT-AKE",
       "L-HEK-EPYCHAGHE"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 263
+    }
   },
   {
     "id": "R-HE",
@@ -38295,7 +38459,10 @@
       "L-ZEHAN",
       "L-ZEHENYGHE",
       "L-ZEHENEY"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 6
+    }
   },
   {
     "id": "R-IGH",
@@ -38316,7 +38483,10 @@
       "L-L1YGHUABE",
       "L-L1YGHE",
       "L-L-YGHUE-FYZYGHUE"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 3
+    }
   },
   {
     "id": "R-KESCH",
@@ -38339,7 +38509,10 @@
       "L-K-ESHCHKHEN",
       "L-K-ESHCHKH",
       "L-K-ESHCH-USHCH"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 4
+    }
   },
   {
     "id": "R-KHABZA",
@@ -38408,7 +38581,10 @@
       "L-KHABZE-LAW",
       "L-KHABZE-HABIT",
       "L-KHABZE-POWER"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 27
+    }
   },
   {
     "id": "R-KHUZH",
@@ -38453,7 +38629,10 @@
       "L-AUTO-00806",
       "L-AUTO-01072",
       "L-XUZH"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 15
+    }
   },
   {
     "id": "R-KWA",
@@ -38687,6 +38866,7 @@
         "L-ZEK-UEK-EY",
         "L-ZEXEZEK-UE",
         "L-TRAFIK",
+        "L-ZEXUEK-UE",
         "L-ZEK-UN",
         "L-ZEK-UEL-EN",
         "L-ZEPLHEK-UEN",
@@ -38709,6 +38889,7 @@
         "L-DEGHEK-UEIN",
         "L-DEK-UENU",
         "L-ZEK-UNYGHE",
+        "L-ZEXUEK-UENYGHE",
         "L-K-UEDYZH",
         "L-K-UEDYZHA",
         "L-K-UEDYZHYGHUEN",
@@ -38734,7 +38915,8 @@
         "L-AUTO-00862",
         "L-AUTO-00943",
         "L-AUTO-00962",
-        "L-AUTO-01138"
+        "L-AUTO-01138",
+        "L-AUTO-01364"
       ],
       "id": "WF-KWA"
     },
@@ -38794,7 +38976,10 @@
       "L-K-UERYK-UEU",
       "L-K-UEK-UAL",
       "L-AUTO-00710"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 274
+    }
   },
   {
     "id": "R-KWD",
@@ -38813,7 +38998,10 @@
     "lexemeIds": [
       "L-KUDEN",
       "L-KUDE"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 2
+    }
   },
   {
     "id": "R-KWSE",
@@ -38830,7 +39018,10 @@
     },
     "lexemeIds": [
       "L-KUSE"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-KYHY",
@@ -38869,7 +39060,10 @@
       "L-KBD-02190",
       "L-KBD-02193",
       "L-KBD-02194"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 12
+    }
   },
   {
     "id": "R-LEQWM",
@@ -38886,7 +39080,10 @@
     },
     "lexemeIds": [
       "L-LEKUEM"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-LHAWU",
@@ -38941,7 +39138,10 @@
       "L-SHCH-ELHENYKUEE",
       "L-SHCH-ELELYN",
       "L-KBD-05299"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 20
+    }
   },
   {
     "id": "R-MAMYR",
@@ -38974,7 +39174,10 @@
       "L-KBD-03480",
       "L-MAMYSHCH",
       "L-GHEMAMYRYN"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 9
+    }
   },
   {
     "id": "R-MAXWA",
@@ -39063,7 +39266,10 @@
       "L-GHEMAXUEKU",
       "L-AUTO-00855",
       "L-AUTO-00856"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 37
+    }
   },
   {
     "id": "R-MEL",
@@ -39134,7 +39340,10 @@
       "L-BITKI-00149",
       "L-BITKI-00151",
       "L-MEL-2"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 28
+    }
   },
   {
     "id": "R-MYL",
@@ -39259,7 +39468,10 @@
       "L-MEKUEP-ENSHE",
       "L-MEKEAREKUEET",
       "L-AUTO-01468"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 55
+    }
   },
   {
     "id": "R-MYSHA",
@@ -39290,7 +39502,10 @@
       "L-MYSHCHEXUZH",
       "L-MYSHCHEBZ",
       "L-AUTO-00865"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 8
+    }
   },
   {
     "id": "R-NASYP",
@@ -39307,7 +39522,10 @@
     },
     "lexemeIds": [
       "L-NASYP"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-NUM",
@@ -39358,7 +39576,10 @@
       "L-IGHUEDZHE",
       "L-IGHASHCH-EM",
       "L-ZIK"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 18
+    }
   },
   {
     "id": "R-NYBA",
@@ -39389,7 +39610,10 @@
       "L-NYBERYKUE",
       "L-NYBEUZ",
       "L-AUTO-00884"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 8
+    }
   },
   {
     "id": "R-NYZHEBE",
@@ -39408,7 +39632,10 @@
     "lexemeIds": [
       "L-NYZHEBE",
       "L-KBD-03652"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 2
+    }
   },
   {
     "id": "R-PACHYH",
@@ -39429,7 +39656,10 @@
       "L-PACHYHE",
       "L-PACHYH",
       "L-PACHYHAGHU"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 3
+    }
   },
   {
     "id": "R-PCHE",
@@ -39448,7 +39678,10 @@
     "lexemeIds": [
       "L-PCHE",
       "L-PCHEGHATS"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 2
+    }
   },
   {
     "id": "R-PCHHAGHE",
@@ -39465,7 +39698,10 @@
     },
     "lexemeIds": [
       "L-PCHAGHEXER"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-PKHA",
@@ -39734,7 +39970,10 @@
       "L-AUTO-00948",
       "L-AUTO-01535",
       "L-PKHETS-YCH"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 127
+    }
   },
   {
     "id": "R-PKHW",
@@ -39847,7 +40086,10 @@
       "L-P-ET-RAVE",
       "L-AUTO-00912",
       "L-PKHURYLHXU"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 49
+    }
   },
   {
     "id": "R-PLHA",
@@ -39934,7 +40176,10 @@
       "L-VERIFIED-02180",
       "L-KBD-02093",
       "L-KBD-04322"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 36
+    }
   },
   {
     "id": "R-PLHYZH",
@@ -39993,7 +40238,10 @@
       "L-OBOZRENIE",
       "L-PLHYFETS-E",
       "L-PLHYFEBE"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 22
+    }
   },
   {
     "id": "R-PQY",
@@ -40010,7 +40258,10 @@
     },
     "lexemeIds": [
       "L-IPKE"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-PSALH",
@@ -40177,7 +40428,10 @@
       "L-SHCHA",
       "L-ZEPSELHEGHU",
       "L-SHCHAM"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 76
+    }
   },
   {
     "id": "R-PSEY",
@@ -40198,7 +40452,10 @@
       "L-PSEY-2",
       "L-AUTO-00926",
       "L-PSEY-3"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 3
+    }
   },
   {
     "id": "R-PSHA",
@@ -40401,7 +40658,10 @@
       "L-PSHCHEDYKEYUXUE",
       "L-PSHCHEDYKEYTS",
       "L-AUTO-00963"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 94
+    }
   },
   {
     "id": "R-PSHA2",
@@ -40448,7 +40708,10 @@
       "L-PSHERYGHUE",
       "L-MYPSHER",
       "L-SHCH-YGHEPSHER"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 16
+    }
   },
   {
     "id": "R-PSTEW",
@@ -40471,7 +40734,10 @@
       "L-PSTEURI",
       "L-PSTEUMK-I",
       "L-VERIFIED-01412"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 4
+    }
   },
   {
     "id": "R-QA",
@@ -40694,7 +40960,10 @@
       "L-AUTO-00741",
       "L-QALE",
       "L-KBD-03527"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 104
+    }
   },
   {
     "id": "R-RAZE",
@@ -40711,7 +40980,10 @@
     },
     "lexemeIds": [
       "L-RAZE"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-REXHAT",
@@ -40732,7 +41004,10 @@
       "L-REHATEU",
       "L-REHAT",
       "L-REHATYN"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 3
+    }
   },
   {
     "id": "R-SABIY",
@@ -40781,7 +41056,10 @@
       "L-SABIIBZE",
       "L-SABIINSHE",
       "L-SABIIP"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 17
+    }
   },
   {
     "id": "R-SAHAT",
@@ -40802,7 +41080,10 @@
       "L-ASYHETYM",
       "L-ASYHETU",
       "L-VERIFIED-00651"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 3
+    }
   },
   {
     "id": "R-SANA",
@@ -40825,7 +41106,10 @@
       "L-VERIFIED-00289",
       "L-VERIFIED-02281",
       "L-AUTO-00983"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 4
+    }
   },
   {
     "id": "R-SAUGHET",
@@ -40842,7 +41126,10 @@
     },
     "lexemeIds": [
       "L-SAUGHET"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-SAXWE",
@@ -40865,7 +41152,10 @@
       "L-SAXUALHE",
       "L-SAXUAFE",
       "L-TUTYNSAXUALHE"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 4
+    }
   },
   {
     "id": "R-SCHAKHWA",
@@ -40908,7 +41198,10 @@
       "L-AUTO-01198",
       "L-AUTO-01199",
       "L-SHCH-AK-UE-2"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 14
+    }
   },
   {
     "id": "R-SCHALA",
@@ -40975,7 +41268,10 @@
       "L-SHCH-ALESHCH-E-KBD",
       "L-SHCH-ALEGHUE-KBD",
       "L-SHCH-ALEGHUE-3"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 26
+    }
   },
   {
     "id": "R-SCHKHWA",
@@ -41178,7 +41474,10 @@
       "L-YAZHASHCHKHUE",
       "L-AUTO-01207",
       "L-AUTO-01242"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 94
+    }
   },
   {
     "id": "R-SCHYKH",
@@ -41211,7 +41510,10 @@
       "L-SHCHYHYKHU",
       "L-SHCHYHYTS",
       "L-AUTO-01678"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 9
+    }
   },
   {
     "id": "R-SEDAQE",
@@ -41228,7 +41530,10 @@
     },
     "lexemeIds": [
       "L-SEDAKEE"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-SETENEY",
@@ -41247,7 +41552,10 @@
     "lexemeIds": [
       "L-SETENEY",
       "L-SETENEY-2"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 2
+    }
   },
   {
     "id": "R-SETEY",
@@ -41264,7 +41572,10 @@
     },
     "lexemeIds": [
       "L-SETEY"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-SHABE",
@@ -41291,7 +41602,10 @@
       "L-SHCHABE",
       "L-SHCHABEU",
       "L-SHCHABEK-E"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 9
+    }
   },
   {
     "id": "R-SHATE",
@@ -41312,7 +41626,10 @@
     "lexemeIds": [
       "L-SHCHATE",
       "L-SHATE"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 4
+    }
   },
   {
     "id": "R-SHENT",
@@ -41339,7 +41656,10 @@
       "L-SHENTKHAR",
       "L-KBD-05113",
       "L-SHENT-2"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 6
+    }
   },
   {
     "id": "R-SHOGEN",
@@ -41358,7 +41678,10 @@
     "lexemeIds": [
       "L-SHCHODZHEN",
       "L-SHCHODZHENGHEKHU"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 2
+    }
   },
   {
     "id": "R-SHW",
@@ -41377,7 +41700,10 @@
     "lexemeIds": [
       "L-SHUHE",
       "L-AUTO-01165"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 2
+    }
   },
   {
     "id": "R-SHXW",
@@ -41398,7 +41724,10 @@
       "L-SHKHUHE",
       "L-SHKHUANT-E",
       "L-SHKHURAK-UE"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 3
+    }
   },
   {
     "id": "R-SHYGHW",
@@ -41429,7 +41758,10 @@
       "L-FOSHYGHUPS",
       "L-VERIFIED-00997",
       "L-VERIFIED-02136"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 8
+    }
   },
   {
     "id": "R-SHYME",
@@ -41446,7 +41778,10 @@
     },
     "lexemeIds": [
       "L-SHCHIME"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-SHYPKHW",
@@ -41513,7 +41848,10 @@
       "L-KBD-01593",
       "L-KBD-01594",
       "L-AUTO-01178"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 26
+    }
   },
   {
     "id": "R-SHYSH",
@@ -41542,7 +41880,10 @@
       "L-SHCHYSHYNYGHE",
       "L-SHCHYSHYNSHE",
       "L-SHCHYSH"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 7
+    }
   },
   {
     "id": "R-STY",
@@ -41563,7 +41904,10 @@
       "L-STYR",
       "L-VERIFIED-00656",
       "L-VERIFIED-02425"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 3
+    }
   },
   {
     "id": "R-TAMYGHE",
@@ -41582,7 +41926,10 @@
     "lexemeIds": [
       "L-TAMYGHE",
       "L-TAMYGH"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 2
+    }
   },
   {
     "id": "R-TAQYR",
@@ -41601,7 +41948,10 @@
     "lexemeIds": [
       "L-TAKEYR",
       "L-TAKEIKE"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 2
+    }
   },
   {
     "id": "R-TAWCHEL",
@@ -41618,7 +41968,10 @@
     },
     "lexemeIds": [
       "L-TAUCHEL"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-TOBE",
@@ -41636,7 +41989,10 @@
     },
     "lexemeIds": [
       "L-TOBE"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 2
+    }
   },
   {
     "id": "R-TOLQUN",
@@ -41655,7 +42011,10 @@
     "lexemeIds": [
       "L-TOLHKUEN",
       "L-AUTO-01573"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 2
+    }
   },
   {
     "id": "R-TSY",
@@ -41714,7 +42073,10 @@
       "L-KBD-04993",
       "L-KBD-04994",
       "L-KBD-04995"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 22
+    }
   },
   {
     "id": "R-TSYKHU",
@@ -41829,7 +42191,10 @@
       "L-AUTO-01651",
       "L-AUTO-01652",
       "L-AUTO-01653"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 50
+    }
   },
   {
     "id": "R-TSYKW",
@@ -41848,7 +42213,10 @@
     "lexemeIds": [
       "L-C1YK1U",
       "L-MYTS-YK-U"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 2
+    }
   },
   {
     "id": "R-TYH",
@@ -41867,7 +42235,10 @@
     "lexemeIds": [
       "L-TYH",
       "L-ZHEXET-YHYN"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 2
+    }
   },
   {
     "id": "R-TYS",
@@ -42044,7 +42415,10 @@
       "L-SHCHHERYGHET-YSHEN",
       "L-ZEBGHURYT-YSHEN",
       "L-AUTO-00612"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 81
+    }
   },
   {
     "id": "R-VAGHWA",
@@ -42087,7 +42461,10 @@
       "L-AUTO-00461",
       "L-AUTO-00462",
       "L-VAGHUE-2"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 14
+    }
   },
   {
     "id": "R-VAQA",
@@ -42126,7 +42503,10 @@
       "L-VAKEE-2",
       "L-LEGHUNVAKEE",
       "L-VAKEEZESHCH-EDE"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 12
+    }
   },
   {
     "id": "R-WA",
@@ -42337,7 +42717,10 @@
       "L-LAZHAK-UE",
       "L-KBD-01670",
       "L-KBD-01670-T"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 87
+    }
   },
   {
     "id": "R-WAS",
@@ -42366,7 +42749,10 @@
       "L-OSTYGH",
       "L-OSEPS",
       "L-VERIFIED-00689"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 7
+    }
   },
   {
     "id": "R-WBYD",
@@ -42377,6 +42763,7 @@
     "source": "latin-orphan-2026-10-12",
     "wordFamily": {
       "lexemeIds": [
+        "L-TEUBYTAGHE",
         "L-UBYDYN",
         "L-TEUBYDEN",
         "L-KERIUBYDEU",
@@ -42385,6 +42772,7 @@
         "L-ZERYGHEUBYDYN",
         "L-PEUBYDYN",
         "L-XUEUBYDYN",
+        "L-TEUBYTEN",
         "L-ZERYUBYDYN",
         "L-KUEEUBYDEN",
         "L-KEYXEUBYDYK-YN",
@@ -42421,9 +42809,7 @@
         "L-K-UETS-RYUBYDYK-YN",
         "L-DEUBYDENYGHE",
         "L-HEUBYD",
-        "L-AUTO-00828",
-        "L-TEUBYTAGHE",
-        "L-TEUBYTEN"
+        "L-AUTO-00828"
       ],
       "id": "WF-WBYD"
     },
@@ -42473,7 +42859,10 @@
       "L-K-UETS-RYUBYDYK-YN",
       "L-HEUBYD",
       "L-AUTO-00828"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 47
+    }
   },
   {
     "id": "R-WBYN",
@@ -42490,7 +42879,10 @@
     },
     "lexemeIds": [
       "L-UBYN"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-WE",
@@ -42507,7 +42899,10 @@
     },
     "lexemeIds": [
       "L-IUEN"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-WEGHW",
@@ -42524,7 +42919,10 @@
     },
     "lexemeIds": [
       "L-OGHU"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-WNA",
@@ -42681,7 +43079,10 @@
       "L-UNEGUNESHCH",
       "L-EMYFEEMYSHXE",
       "L-MYGHEUNEXUA"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 71
+    }
   },
   {
     "id": "R-WNE",
@@ -42700,7 +43101,10 @@
     "lexemeIds": [
       "L-UNEY",
       "L-AUTO-01598"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 2
+    }
   },
   {
     "id": "R-WNETH",
@@ -42717,7 +43121,10 @@
     },
     "lexemeIds": [
       "L-ONTEGHU"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-WTS",
@@ -42738,7 +43145,10 @@
       "L-GHEUTSUN",
       "L-UTSUN",
       "L-UTSUGHE"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 3
+    }
   },
   {
     "id": "R-WV",
@@ -42755,7 +43165,10 @@
     },
     "lexemeIds": [
       "L-IUVEN"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-WXW",
@@ -42788,7 +43201,10 @@
       "L-UXUENSHCH-YN",
       "L-UXUELEN",
       "L-UXUENSHCH-A"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 9
+    }
   },
   {
     "id": "R-WZJH",
@@ -42805,7 +43221,10 @@
     },
     "lexemeIds": [
       "L-YAUZH"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-XAME",
@@ -42827,7 +43246,10 @@
       "L-XAME",
       "L-XAMESHCH",
       "L-AUTO-01620"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 4
+    }
   },
   {
     "id": "R-XATE",
@@ -42844,7 +43266,10 @@
     },
     "lexemeIds": [
       "L-XATE"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-XAXWE",
@@ -42867,7 +43292,10 @@
       "L-XAXUEU",
       "L-XAXUAGHE",
       "L-DZHATERYXAXUE"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 4
+    }
   },
   {
     "id": "R-XWEM",
@@ -42884,7 +43312,10 @@
     },
     "lexemeIds": [
       "L-XUOMU"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-XWEN",
@@ -42909,7 +43340,10 @@
       "L-IXUN",
       "L-ZEXUENYGHE",
       "L-AUTO-01407"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 5
+    }
   },
   {
     "id": "R-XWIT",
@@ -42952,7 +43386,10 @@
       "L-AUTO-01625",
       "L-KBD-00207",
       "L-EXUITLHEXUITU"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 14
+    }
   },
   {
     "id": "R-XWV",
@@ -42969,7 +43406,10 @@
     },
     "lexemeIds": [
       "L-EREKHU"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-YABGE",
@@ -42988,7 +43428,10 @@
     "lexemeIds": [
       "L-YABGE",
       "L-YABGEU"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 2
+    }
   },
   {
     "id": "R-ZAGW",
@@ -43013,7 +43456,10 @@
       "L-ZAGHE",
       "L-AUTO-00616",
       "L-GUGHEZAGHE"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 5
+    }
   },
   {
     "id": "R-ZAQWE",
@@ -43030,7 +43476,10 @@
     },
     "lexemeIds": [
       "L-YAZAKEOU"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-ZHAM",
@@ -43087,7 +43536,10 @@
       "L-AUTO-00609",
       "L-BITKI-00075",
       "L-ZHEM-2"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 21
+    }
   },
   {
     "id": "R-ZHEGHE",
@@ -43106,7 +43558,10 @@
     "lexemeIds": [
       "L-UZIZHEGHUEN",
       "L-UZIZHEGHUENU"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 2
+    }
   },
   {
     "id": "R-ZHEUAP",
@@ -43133,7 +43588,10 @@
       "L-ZHEUAPLY",
       "L-ZHEUAPTAK-UE",
       "L-RESPONDENT"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 6
+    }
   },
   {
     "id": "R-ZHGEY",
@@ -43170,7 +43628,10 @@
       "L-ZHGHYRYB",
       "L-KBD-03693",
       "L-ZHGHYZHGHYZHGH"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 11
+    }
   },
   {
     "id": "R-ZHYE",
@@ -43193,7 +43654,10 @@
       "L-CHYE",
       "L-CHYEN",
       "L-VERIFIED-01360"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 4
+    }
   },
   {
     "id": "R-ZHYNDU",
@@ -43216,7 +43680,10 @@
       "L-ZHYNYP",
       "L-ZHYNSHE",
       "L-ZHYNSHAGHE"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 4
+    }
   },
   {
     "id": "R-ZHYZUM",
@@ -43239,7 +43706,10 @@
       "L-VERIFIED-01955",
       "L-ZHYZUMYPS",
       "L-AUTO-00595"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 4
+    }
   },
   {
     "id": "R-DESHXWE",
@@ -43306,7 +43776,10 @@
     },
     "lexemeIds": [
       "L-UE"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-UE-AIR",
@@ -43339,7 +43812,10 @@
     },
     "lexemeIds": [
       "L-UE-AIR"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-PASE",
@@ -43382,7 +43858,10 @@
       "L-PASEU",
       "L-PASEREY",
       "L-PASEM"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 4
+    }
   },
   {
     "id": "R-ZY",
@@ -43401,7 +43880,10 @@
     "lexemeIds": [
       "L-ZY",
       "L-ZY-2"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 2
+    }
   },
   {
     "id": "R-UDZ",
@@ -43488,7 +43970,10 @@
       "L-AUTO-01190",
       "L-AUTO-01204",
       "L-BITKI-00149"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 36
+    }
   },
   {
     "id": "R-UZ",
@@ -43683,7 +44168,10 @@
       "L-KBD-00831",
       "L-KBD-00841",
       "L-GHESHYP-E"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 30
+    }
   },
   {
     "id": "R-BZHEY",
@@ -43707,7 +44195,10 @@
     },
     "lexemeIds": [
       "L-BZHEY"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-DYGHUZH",
@@ -43757,7 +44248,10 @@
       "L-VERIFIED-01959",
       "L-VERIFIED-02079",
       "L-VERIFIED-02250"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 14
+    }
   },
   {
     "id": "R-GHWAZH",
@@ -43925,7 +44419,10 @@
       "L-KBD-00705",
       "L-KBD-00706",
       "L-KBD-00707"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 73
+    }
   },
   {
     "id": "R-GUASHCHE",
@@ -43949,7 +44446,10 @@
     },
     "lexemeIds": [
       "L-GUASHCH1E"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-GUEDZ",
@@ -43979,7 +44479,10 @@
       "L-GUEDZEN",
       "L-PSHEKHUASHXE",
       "L-ZERA-UE"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 4
+    }
   },
   {
     "id": "R-GUEL",
@@ -44005,7 +44508,10 @@
     "lexemeIds": [
       "L-GUALE",
       "L-AUTO-00501"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 2
+    }
   },
   {
     "id": "R-GUER",
@@ -44031,7 +44537,10 @@
     "lexemeIds": [
       "L-GUER",
       "L-GUEREN"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 2
+    }
   },
   {
     "id": "R-GUGHU",
@@ -44079,7 +44588,10 @@
       "L-GUGHUSYGHUU",
       "L-AUTO-00485",
       "L-AUTO-00649"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 13
+    }
   },
   {
     "id": "R-GUSHE",
@@ -44111,7 +44623,10 @@
       "L-SHXY-ENSHCH-EBZE",
       "L-NAPE-ELHESHCH",
       "L-UEZDYGHASHCHHE"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 5
+    }
   },
   {
     "id": "R-GUVE",
@@ -44139,7 +44654,10 @@
       "L-VERIFIED-00145",
       "L-VERIFIED-01117",
       "L-GUVE"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 3
+    }
   },
   {
     "id": "R-K1EY",
@@ -44163,7 +44681,10 @@
     },
     "lexemeIds": [
       "L-K1EY"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-KHIN",
@@ -44187,7 +44708,10 @@
     },
     "lexemeIds": [
       "L-HYN"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-LEZH_3",
@@ -44219,7 +44743,10 @@
       "L-KEYSHCH-EZYGHEK-YR",
       "L-KEELEZHAK-UE",
       "L-LEZHAK-UESHXUE"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 5
+    }
   },
   {
     "id": "R-MALHKHA",
@@ -44245,7 +44772,10 @@
     "lexemeIds": [
       "L-MALHXE",
       "L-MALHKHESHCH-E"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 2
+    }
   },
   {
     "id": "R-MAMKUT",
@@ -44271,7 +44801,10 @@
     "lexemeIds": [
       "L-MAMKUT",
       "L-MAMKUETEY"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 2
+    }
   },
   {
     "id": "R-ME",
@@ -44303,7 +44836,10 @@
       "L-VERIFIED-00543",
       "L-MEGHUE",
       "L-ME-KBD"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 5
+    }
   },
   {
     "id": "R-MERAK1UE",
@@ -44327,7 +44863,10 @@
     },
     "lexemeIds": [
       "L-MERAK1UE"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-PACHYHE",
@@ -44355,7 +44894,10 @@
       "L-PACHYHE",
       "L-PACHYH",
       "L-PACHYHAGHU"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 3
+    }
   },
   {
     "id": "R-PYRAMYZH",
@@ -44379,7 +44921,10 @@
     },
     "lexemeIds": [
       "L-PYRAMYZH"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-SCHE",
@@ -44637,7 +45182,10 @@
       "L-KBD-03756",
       "L-KBD-03791",
       "L-KBD-05571"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 118
+    }
   },
   {
     "id": "R-SE",
@@ -44663,7 +45211,10 @@
     "lexemeIds": [
       "L-SE",
       "L-SER"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 2
+    }
   },
   {
     "id": "R-SHCHABZE",
@@ -44687,7 +45238,10 @@
     },
     "lexemeIds": [
       "L-SHCHABZ"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-SHCHIKH",
@@ -44715,7 +45269,10 @@
       "L-NUM-600",
       "L-SHCHIKH",
       "L-SHCHIXU"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 3
+    }
   },
   {
     "id": "R-TSEY",
@@ -44747,7 +45304,10 @@
       "L-KBD-04980",
       "L-KBD-05612",
       "L-TSEISHCHE"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 5
+    }
   },
   {
     "id": "R-VAG",
@@ -44787,7 +45347,10 @@
       "L-VAGHUELEKUEM",
       "L-VAGHUEBEU",
       "L-VAGHUEZEBYN"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 9
+    }
   },
   {
     "id": "R-VAK",
@@ -44815,7 +45378,10 @@
       "L-KEATYRLHEPS",
       "L-VAKEELHEPS",
       "L-VAKEEZESHCH-EDE"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 3
+    }
   },
   {
     "id": "R-ZHA",
@@ -45027,7 +45593,10 @@
       "L-MYZHYZHE",
       "L-ZHAK-E-KBD",
       "L-ZHEREZHEN"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 95
+    }
   },
   {
     "id": "R-ZHESHCH",
@@ -45071,7 +45640,10 @@
       "L-AUTO-00612",
       "L-AUTO-00614",
       "L-AUTO-00615"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 11
+    }
   },
   {
     "id": "R-KO",
@@ -45137,7 +45709,10 @@
       "L-KEOMYKHUL-EN",
       "L-KEOEL",
       "L-KO"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 21
+    }
   },
   {
     "id": "R-ZEU",
@@ -45225,7 +45800,10 @@
       "L-KBD-02399",
       "L-KBD-02444",
       "L-KBD-03179"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 32
+    }
   },
   {
     "id": "R-PYT",
@@ -45285,7 +45863,10 @@
       "L-URYP-YT-EN",
       "L-P-YT-A-XUZA",
       "L-PYT"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 18
+    }
   },
   {
     "id": "R-TEZ",
@@ -45309,6 +45890,7 @@
         "L-KBD-04293",
         "L-TEZYGHEGUSHXUE",
         "L-TEZIS",
+        "L-ZETEZ",
         "L-TEZ"
       ],
       "conceptIds": [],
@@ -45331,7 +45913,10 @@
       "L-TEZYGHEGUSHXUE",
       "L-TEZIS",
       "L-TEZ"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 12
+    }
   },
   {
     "id": "R-KHES",
@@ -45379,7 +45964,10 @@
       "L-XESK-YK-YN",
       "L-XESABYREN",
       "L-KHES"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 12
+    }
   },
   {
     "id": "R-PKHE",
@@ -45431,7 +46019,10 @@
       "L-PXEGHUANE",
       "L-PXENEY",
       "L-PKHE"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 14
+    }
   },
   {
     "id": "R-TYN",
@@ -45453,6 +46044,7 @@
         "L-YATYN",
         "L-VERIFIED-02717",
         "L-AUTO-01586",
+        "L-AUTO-01654",
         "L-TYN"
       ],
       "conceptIds": [],
@@ -45473,7 +46065,10 @@
       "L-VERIFIED-02717",
       "L-AUTO-01586",
       "L-TYN"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 10
+    }
   },
   {
     "id": "R-KIO",
@@ -45511,7 +46106,10 @@
       "L-K-ODYN",
       "L-K-ODYP-E",
       "L-KIO"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 7
+    }
   },
   {
     "id": "R-BYN",
@@ -45573,7 +46171,10 @@
       "L-KBD-00455",
       "L-KBD-00458",
       "L-DZHEBYN"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 19
+    }
   },
   {
     "id": "R-GYN",
@@ -45653,7 +46254,10 @@
       "L-BITKI-00049",
       "L-BITKI-00166",
       "L-BITKI-00227"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 28
+    }
   },
   {
     "id": "R-SEKH",
@@ -45707,7 +46311,10 @@
       "L-AUTO-00996",
       "L-SEKH",
       "L-KBD-03528"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 15
+    }
   },
   {
     "id": "R-TES",
@@ -45751,7 +46358,10 @@
       "L-TESABYREN",
       "L-TESTIROVANE",
       "L-TES"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 10
+    }
   },
   {
     "id": "R-ESE",
@@ -45787,7 +46397,10 @@
       "L-VERIFIED-00282",
       "L-KBD-01251",
       "L-ESE"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 6
+    }
   },
   {
     "id": "R-GY",
@@ -45811,6 +46424,7 @@
         "L-GHYZH",
         "L-GHYNENERILE",
         "L-GHYNE-U",
+        "L-ZEGHYN",
         "L-GHYK-E",
         "L-GHYN-BZHEN",
         "L-GY"
@@ -45837,7 +46451,10 @@
       "L-GHYK-E",
       "L-GHYN-BZHEN",
       "L-GY"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 14
+    }
   },
   {
     "id": "R-SYS",
@@ -45881,7 +46498,10 @@
       "L-ISYSYHYN",
       "L-ZESHCH-ESYSEN",
       "L-SYS"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 10
+    }
   },
   {
     "id": "R-ZHEP",
@@ -45915,7 +46535,10 @@
       "L-ZHEPKHYN",
       "L-VERIFIED-01021",
       "L-ZHEP"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 5
+    }
   },
   {
     "id": "R-VEN",
@@ -45953,7 +46576,10 @@
       "L-AUTO-00469",
       "L-AUTO-00470",
       "L-VEN"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 7
+    }
   },
   {
     "id": "R-UKI",
@@ -45987,7 +46613,10 @@
       "L-UK-YNYGHE",
       "L-MYUK-YTEX",
       "L-UKI"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 5
+    }
   },
   {
     "id": "R-UDZH",
@@ -46019,7 +46648,10 @@
       "L-KBD-04450",
       "L-KBD-04451",
       "L-UDZH"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 4
+    }
   },
   {
     "id": "R-KOTS",
@@ -46049,7 +46681,10 @@
       "L-KOTS-2",
       "L-VERIFIED-01542",
       "L-KOTS"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 3
+    }
   },
   {
     "id": "R-ZHEN",
@@ -46095,7 +46730,10 @@
       "L-DEZHEN",
       "L-ZHEN",
       "L-ZEGUEGHEZHEN"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 11
+    }
   },
   {
     "id": "R-IZH",
@@ -46139,7 +46777,10 @@
       "L-IZHYSHCH-YK-YN",
       "L-IZH",
       "L-IZHYRABGHU"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 10
+    }
   },
   {
     "id": "R-IBE",
@@ -46173,7 +46814,10 @@
       "L-IBEMP-YHYN",
       "L-IBETYK-YN",
       "L-IBE"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 5
+    }
   },
   {
     "id": "R-MESH",
@@ -46213,7 +46857,10 @@
       "L-MESH",
       "L-MEKUEMESH",
       "L-MEKUEMESHYSHCH-E"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 8
+    }
   },
   {
     "id": "R-NYP",
@@ -46245,7 +46892,10 @@
       "L-NYPYKUE",
       "L-NYPZEHE",
       "L-NYP"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 4
+    }
   },
   {
     "id": "R-SYN",
@@ -46279,7 +46929,10 @@
       "L-KHEMASHCHE",
       "L-SYN",
       "L-HEKESYN"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 5
+    }
   },
   {
     "id": "R-BO",
@@ -46311,7 +46964,10 @@
       "L-VERIFIED-00901",
       "L-KBD-05631",
       "L-BO"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 4
+    }
   },
   {
     "id": "R-BEZ",
@@ -46341,7 +46997,10 @@
       "L-KBD-05620",
       "L-BEZ",
       "L-KBD-00362"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 3
+    }
   },
   {
     "id": "R-CHYL",
@@ -46373,7 +47032,10 @@
       "L-CHYLHAKHSTEN",
       "L-AUTO-01156",
       "L-CHYL"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 4
+    }
   },
   {
     "id": "R-KHEN",
@@ -46409,7 +47071,10 @@
       "L-XENA",
       "L-XENYN",
       "L-AUTO-00053"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 6
+    }
   },
   {
     "id": "R-UBE",
@@ -46461,7 +47126,10 @@
       "L-UBEZHYBE",
       "L-UBELETSA",
       "L-UBE"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 24
+    }
   },
   {
     "id": "R-SAY",
@@ -46489,7 +47157,10 @@
     "lexemeIds": [
       "L-VERIFIED-01445",
       "L-SAY"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 2
+    }
   },
   {
     "id": "R-BE",
@@ -46521,7 +47192,10 @@
       "L-BEU",
       "L-BEME",
       "L-BE"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 4
+    }
   },
   {
     "id": "R-IZ",
@@ -46551,7 +47225,10 @@
       "L-IZ-2",
       "L-IZ",
       "L-UBYGHUEIZ"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 3
+    }
   },
   {
     "id": "R-ZEV",
@@ -46593,7 +47270,10 @@
       "L-KBD-02443",
       "L-KBD-04257",
       "L-EZEVLHEZEV"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 9
+    }
   },
   {
     "id": "R-BEV",
@@ -46631,7 +47311,10 @@
       "L-BEV",
       "L-VERIFIED-00993",
       "L-MESHBEV"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 7
+    }
   },
   {
     "id": "R-CHY",
@@ -46665,7 +47348,10 @@
       "L-VERIFIED-00911",
       "L-VERIFIED-02532",
       "L-CHY"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 5
+    }
   },
   {
     "id": "R-DEP",
@@ -46705,7 +47391,10 @@
       "L-DEP-YT-YHYN",
       "L-DEP-YT-EN",
       "L-DEP"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 8
+    }
   },
   {
     "id": "R-ZHEZ",
@@ -46735,7 +47424,10 @@
       "L-ZHEZ-2",
       "L-ZHEZNECH",
       "L-ZHEZ"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 3
+    }
   },
   {
     "id": "R-ETA",
@@ -46763,7 +47455,10 @@
     "lexemeIds": [
       "L-ETA-2",
       "L-ETA"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 2
+    }
   },
   {
     "id": "R-SHKHU",
@@ -46873,7 +47568,10 @@
       "L-SHXUE-UZH",
       "L-AUTO-01167",
       "L-BITKI-00019"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 43
+    }
   },
   {
     "id": "R-MAE",
@@ -46901,7 +47599,10 @@
     "lexemeIds": [
       "L-VERIFIED-00362",
       "L-MAE"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 2
+    }
   },
   {
     "id": "R-UZY",
@@ -46983,7 +47684,10 @@
       "L-AUTO-01593",
       "L-UZY",
       "L-UZYNSHEU-UPSEU"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 29
+    }
   },
   {
     "id": "R-UDY",
@@ -47015,7 +47719,10 @@
       "L-UDYK-EXU",
       "L-UDYGHUAUE",
       "L-UDY"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 4
+    }
   },
   {
     "id": "R-MEY",
@@ -47045,7 +47752,10 @@
       "L-MEY-2",
       "L-MEY",
       "L-KBD-03513"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 3
+    }
   },
   {
     "id": "R-GOR",
@@ -47079,7 +47789,10 @@
       "L-GOR-ADY",
       "L-KBD-05663",
       "L-GOR"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 5
+    }
   },
   {
     "id": "R-ZEZ",
@@ -47121,7 +47834,10 @@
       "L-VERIFIED-00327",
       "L-VERIFIED-01532",
       "L-ZEZ"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 9
+    }
   },
   {
     "id": "R-IOF",
@@ -47155,7 +47871,10 @@
       "L-OFYGHU",
       "L-OFY",
       "L-IOF"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 5
+    }
   },
   {
     "id": "R-ZESH",
@@ -47237,7 +47956,10 @@
       "L-VERIFIED-01194",
       "L-KBD-00748",
       "L-KBD-05277"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 29
+    }
   },
   {
     "id": "R-NEY",
@@ -47275,7 +47997,10 @@
       "L-NEYTRALITET",
       "L-NEYTRON",
       "L-NEY"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 7
+    }
   },
   {
     "id": "R-SHKHO",
@@ -47309,7 +48034,10 @@
       "L-VERIFIED-01364",
       "L-KBD-05037",
       "L-SHKHO"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 5
+    }
   },
   {
     "id": "R-USY",
@@ -47341,7 +48069,10 @@
       "L-VERIFIED-02272",
       "L-KBD-05776",
       "L-USY"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 4
+    }
   },
   {
     "id": "R-YATE",
@@ -47371,7 +48102,10 @@
       "L-YATESH",
       "L-YATE-ADY",
       "L-YATE"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 3
+    }
   },
   {
     "id": "R-UZH",
@@ -47479,7 +48213,10 @@
       "L-SYMADZHEUZHYPKEE",
       "L-PKEOUZHE",
       "L-AUTO-00823"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 42
+    }
   },
   {
     "id": "R-BASH",
@@ -47515,7 +48252,10 @@
       "L-BASH",
       "L-VAGHUEBASH",
       "L-BASHTEKUEZEK-E"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 6
+    }
   },
   {
     "id": "R-USE",
@@ -47565,7 +48305,10 @@
       "L-USEK-YH",
       "L-AUTO-01047",
       "L-USE"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 20
+    }
   },
   {
     "id": "R-LEN",
@@ -47603,7 +48346,10 @@
       "L-AUTO-00847",
       "L-AUTO-00848",
       "L-LEN"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 7
+    }
   },
   {
     "id": "R-IZY",
@@ -47635,7 +48381,10 @@
       "L-IZYN",
       "L-AUTO-01397",
       "L-IZY"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 4
+    }
   },
   {
     "id": "R-ZHYP",
@@ -47679,7 +48428,10 @@
       "L-AUTO-00599",
       "L-AUTO-00600",
       "L-ZHYP"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 10
+    }
   },
   {
     "id": "R-ZHER",
@@ -47735,7 +48487,10 @@
       "L-AUTO-00610",
       "L-ZHER",
       "L-NYBZHEGHU-ZHEREGHU"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 16
+    }
   },
   {
     "id": "R-ODY",
@@ -47765,7 +48520,10 @@
       "L-ODYDZHYN",
       "L-ODY-ADY",
       "L-ODY"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 3
+    }
   },
   {
     "id": "R-ERU",
@@ -47799,7 +48557,10 @@
       "L-ERUUGHE",
       "L-ERUUN",
       "L-ERU"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 5
+    }
   },
   {
     "id": "R-GYZ",
@@ -47831,7 +48592,10 @@
       "L-KBD-00846",
       "L-KBD-00847",
       "L-GYZ"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 4
+    }
   },
   {
     "id": "R-ESHA",
@@ -47861,7 +48625,10 @@
       "L-KBD-01344",
       "L-KBD-01345",
       "L-ESHA"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 3
+    }
   },
   {
     "id": "R-CHYGAY",
@@ -47889,7 +48656,10 @@
     "lexemeIds": [
       "L-CHYGEY",
       "L-CHYGAY"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 2
+    }
   },
   {
     "id": "R-MY",
@@ -47923,7 +48693,10 @@
       "L-MYSHCH",
       "L-VERIFIED-00478",
       "L-MY-ERYSE"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 5
+    }
   },
   {
     "id": "R-KHUN",
@@ -47965,7 +48738,10 @@
       "L-KHUN",
       "L-AUTO-01183",
       "L-EXUEK-YN"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 9
+    }
   },
   {
     "id": "R-TYAT",
@@ -47993,7 +48769,10 @@
     "lexemeIds": [
       "L-TYAT-ADY",
       "L-TYAT"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 2
+    }
   },
   {
     "id": "R-TKHA",
@@ -48025,7 +48804,10 @@
       "L-TXAK1UE-2",
       "L-TXALHE",
       "L-TKHA"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 4
+    }
   },
   {
     "id": "R-ZHYN",
@@ -48057,7 +48839,10 @@
       "L-ZHYNZH",
       "L-ZHYNDYRGHE",
       "L-ZHYN"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 4
+    }
   },
   {
     "id": "R-KHEY",
@@ -48093,7 +48878,10 @@
       "L-XEIN",
       "L-XEYSHCH-AP-E",
       "L-KHEY"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 6
+    }
   },
   {
     "id": "R-PYI",
@@ -48121,7 +48909,10 @@
     "lexemeIds": [
       "L-PYI-ADY",
       "L-PYI"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 2
+    }
   },
   {
     "id": "R-NOS",
@@ -48153,7 +48944,10 @@
       "L-NOSTALGIE",
       "L-NOSTALGICHESKE",
       "L-NOS"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 4
+    }
   },
   {
     "id": "R-AUZ",
@@ -48181,7 +48975,10 @@
     "lexemeIds": [
       "L-AUZ-2",
       "L-AUZ"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 2
+    }
   },
   {
     "id": "R-DEN",
@@ -48235,7 +49032,10 @@
       "L-DENEK-I",
       "L-DENEK-E",
       "L-VERIFIED-01709"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 15
+    }
   },
   {
     "id": "R-UD",
@@ -48385,7 +49185,10 @@
       "L-BZEUDE",
       "L-UDYK-EXU",
       "L-K-UETS-RYUDYN"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 63
+    }
   },
   {
     "id": "R-DYN",
@@ -48415,7 +49218,10 @@
       "L-DYN-2",
       "L-DYNK-EXEU",
       "L-DYN"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 3
+    }
   },
   {
     "id": "R-ZYN",
@@ -48443,7 +49249,10 @@
     "lexemeIds": [
       "L-ZYN-2",
       "L-ZYN"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 2
+    }
   },
   {
     "id": "R-NYO",
@@ -48471,7 +49280,10 @@
     "lexemeIds": [
       "L-NYO-ADY",
       "L-NYO"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 2
+    }
   },
   {
     "id": "R-UED",
@@ -48507,7 +49319,10 @@
       "L-UEDYBE",
       "L-UED",
       "L-UEDYKUEA"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 6
+    }
   },
   {
     "id": "R-SEN",
@@ -48551,7 +49366,10 @@
       "L-SENDVICH",
       "L-SEN",
       "L-EUESEN"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 10
+    }
   },
   {
     "id": "R-OR",
@@ -48579,7 +49397,10 @@
     "lexemeIds": [
       "L-OR-ADY",
       "L-OR"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 2
+    }
   },
   {
     "id": "R-ARU",
@@ -48607,7 +49428,10 @@
     "lexemeIds": [
       "L-ARU-2",
       "L-ARU"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 2
+    }
   },
   {
     "id": "R-BYZH",
@@ -48637,7 +49461,10 @@
       "L-KBD-00451",
       "L-BYZH",
       "L-EZHBYZH"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 3
+    }
   },
   {
     "id": "R-CHIY",
@@ -48669,7 +49496,10 @@
       "L-CHIYLHERYK-UE",
       "L-CHIY",
       "L-KBD-00658"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 4
+    }
   },
   {
     "id": "R-DIYA",
@@ -48699,7 +49529,10 @@
       "L-VERIFIED-02181",
       "L-DIYAUE",
       "L-DIYA"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 3
+    }
   },
   {
     "id": "R-DZHA",
@@ -48763,7 +49596,10 @@
       "L-AUTO-00527",
       "L-DZHA",
       "L-EDZ"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 20
+    }
   },
   {
     "id": "R-ELE",
@@ -48795,7 +49631,10 @@
       "L-ELEZHYK-E",
       "L-ELERKEYSH",
       "L-ELE"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 4
+    }
   },
   {
     "id": "R-ES",
@@ -48835,7 +49674,10 @@
       "L-KEEGHE-ESEN",
       "L-AUTO-00672",
       "L-ES"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 8
+    }
   },
   {
     "id": "R-ESH",
@@ -48863,7 +49705,10 @@
     "lexemeIds": [
       "L-ESH-2",
       "L-ESH"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 2
+    }
   },
   {
     "id": "R-GIE",
@@ -48895,7 +49740,10 @@
       "L-GIEN",
       "L-GIENE",
       "L-GIE"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 4
+    }
   },
   {
     "id": "R-GYE",
@@ -48923,7 +49771,10 @@
     "lexemeIds": [
       "L-GYE-ADY",
       "L-GYE"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 2
+    }
   },
   {
     "id": "R-IZU",
@@ -48951,7 +49802,10 @@
     "lexemeIds": [
       "L-IZU-2",
       "L-IZU"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 2
+    }
   },
   {
     "id": "R-NYSH",
@@ -48983,7 +49837,10 @@
       "L-NYSH",
       "L-KBD-04932",
       "L-KUEENYSH"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 4
+    }
   },
   {
     "id": "R-OD",
@@ -49011,7 +49868,10 @@
     "lexemeIds": [
       "L-OD-ADY",
       "L-OD"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 2
+    }
   },
   {
     "id": "R-SHCHIZ",
@@ -49039,7 +49899,10 @@
     "lexemeIds": [
       "L-VERIFIED-01327",
       "L-SHCHIZ"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 2
+    }
   },
   {
     "id": "R-TIY",
@@ -49193,7 +50056,10 @@
       "L-T-YMYZH",
       "L-AUTO-01000",
       "L-TIY"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 117
+    }
   },
   {
     "id": "R-TOSHCH",
@@ -49223,7 +50089,10 @@
       "L-KBD-04374",
       "L-KBD-04375",
       "L-TOSHCH"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 3
+    }
   },
   {
     "id": "R-UAE",
@@ -49251,7 +50120,10 @@
     "lexemeIds": [
       "L-UAE-2",
       "L-UAE"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 2
+    }
   },
   {
     "id": "R-UEM",
@@ -49279,7 +50151,10 @@
     "lexemeIds": [
       "L-UEM-2",
       "L-UEM"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 2
+    }
   },
   {
     "id": "R-UFA",
@@ -49307,7 +50182,10 @@
     "lexemeIds": [
       "L-UFA-2",
       "L-UFA"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 2
+    }
   },
   {
     "id": "R-UKHA",
@@ -49337,7 +50215,10 @@
       "L-VERIFIED-01251",
       "L-UXAPE",
       "L-UKHA"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 3
+    }
   },
   {
     "id": "R-USHCH",
@@ -49403,7 +50284,10 @@
       "L-LHEKHULHEUSHCH",
       "L-LHEKHULHEUSHCHU",
       "L-PKHEPSEUSHCH"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 21
+    }
   },
   {
     "id": "R-UTS",
@@ -49431,7 +50315,10 @@
     "lexemeIds": [
       "L-UTS-ADY",
       "L-UTS"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 2
+    }
   },
   {
     "id": "R-UZU",
@@ -49461,7 +50348,10 @@
       "L-VERIFIED-01885",
       "L-UZURPATSIE",
       "L-UZU"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 3
+    }
   },
   {
     "id": "R-ZHEY",
@@ -49541,7 +50431,10 @@
       "L-XUEZHEIN",
       "L-VAKEENZHEY",
       "L-AUTO-00611"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 28
+    }
   },
   {
     "id": "R-DZY",
@@ -49567,7 +50460,10 @@
     },
     "lexemeIds": [
       "L-DZY"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-PSO",
@@ -49621,7 +50517,10 @@
       "L-AUTO-01522",
       "L-PSO",
       "L-DUNEYPSO"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 15
+    }
   },
   {
     "id": "R-TSE",
@@ -49647,7 +50546,10 @@
     },
     "lexemeIds": [
       "L-TSE"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-NY",
@@ -49673,7 +50575,10 @@
     },
     "lexemeIds": [
       "L-NY"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-TSU",
@@ -49701,7 +50606,10 @@
     "lexemeIds": [
       "L-TS-UUE",
       "L-TSU"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 2
+    }
   },
   {
     "id": "R-LE",
@@ -49729,7 +50637,10 @@
     "lexemeIds": [
       "L-GHELEN",
       "L-LE"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 2
+    }
   },
   {
     "id": "R-DU",
@@ -49759,7 +50670,10 @@
       "L-DU",
       "L-VERIFIED-00429",
       "L-DAMEDU"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 3
+    }
   },
   {
     "id": "R-ASHCH",
@@ -49788,7 +50702,10 @@
     "lexemeIds": [
       "L-ASHCH-2",
       "L-ASHCH"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 2
+    }
   },
   {
     "id": "R-EBZ",
@@ -49823,7 +50740,10 @@
       "L-EBZEIN",
       "L-EBZYL-EN",
       "L-EBZ"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 5
+    }
   },
   {
     "id": "R-KHUE",
@@ -50162,7 +51082,10 @@
       "L-AUTO-01626",
       "L-AUTO-01627",
       "L-KHUE"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 157
+    }
   },
   {
     "id": "R-1URY",
@@ -50177,7 +51100,10 @@
     },
     "lexemeIds": [
       "L-URYBZHE"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-1USHE",
@@ -50192,7 +51118,10 @@
     },
     "lexemeIds": [
       "L-USHE-KBD"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-AKHMAQ",
@@ -50207,7 +51136,10 @@
     },
     "lexemeIds": [
       "L-AHMAKEYGHE"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-AKMY",
@@ -50222,7 +51154,10 @@
     },
     "lexemeIds": [
       "L-AKEMYKEYGHE"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-AKYL",
@@ -50237,7 +51172,10 @@
     },
     "lexemeIds": [
       "L-AKEYLPSYNSHCH-E"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-BAN",
@@ -50270,7 +51208,10 @@
       "L-AUTO-00417",
       "L-AUTO-00418",
       "L-BITKI-00020"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 10
+    }
   },
   {
     "id": "R-BAQUE",
@@ -50293,7 +51234,10 @@
       "L-VERIFIED-01698",
       "L-KBD-01001",
       "L-KBD-02373"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 5
+    }
   },
   {
     "id": "R-BEK1E",
@@ -50308,7 +51252,10 @@
     },
     "lexemeIds": [
       "L-BEK-E"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-BEK1YN",
@@ -50323,7 +51270,10 @@
     },
     "lexemeIds": [
       "L-KBD-01103"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-BEKXH",
@@ -50338,7 +51288,10 @@
     },
     "lexemeIds": [
       "L-VERIFIED-00127"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-BYFE",
@@ -50353,7 +51306,10 @@
     },
     "lexemeIds": [
       "L-VERIFIED-00931"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-BYR",
@@ -50380,7 +51336,10 @@
       "L-KBD-00463",
       "L-KBD-00464",
       "L-KBD-00465"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 7
+    }
   },
   {
     "id": "R-DAME",
@@ -50395,7 +51354,10 @@
     },
     "lexemeIds": [
       "L-KBD-00857"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-DE1EPYQUN",
@@ -50412,7 +51374,10 @@
     "lexemeIds": [
       "L-DE-EPYKUEEGHU",
       "L-DE-EPYKUEEGHUU"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 2
+    }
   },
   {
     "id": "R-DEBYBEN",
@@ -50427,7 +51392,10 @@
     },
     "lexemeIds": [
       "L-VERIFIED-00056"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-DEQUEN",
@@ -50444,7 +51412,10 @@
     "lexemeIds": [
       "L-KEYZHEDEKUEEN",
       "L-KBD-01041"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 2
+    }
   },
   {
     "id": "R-DETKHENE",
@@ -50461,7 +51432,10 @@
     "lexemeIds": [
       "L-DETXENEMI",
       "L-DETXENERI"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 2
+    }
   },
   {
     "id": "R-DYQUAQUA",
@@ -50476,7 +51450,10 @@
     },
     "lexemeIds": [
       "L-DYKUEAKUEE"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-DYQYN",
@@ -50491,7 +51468,10 @@
     },
     "lexemeIds": [
       "L-DYKEYN"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-DYRQUE",
@@ -50506,7 +51486,10 @@
     },
     "lexemeIds": [
       "L-DYRKUEE"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-DZELYQUE",
@@ -50521,7 +51504,10 @@
     },
     "lexemeIds": [
       "L-VERIFIED-01752"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-EBAUN",
@@ -50536,7 +51522,10 @@
     },
     "lexemeIds": [
       "L-VERIFIED-01491"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-EBEN",
@@ -50551,7 +51540,10 @@
     },
     "lexemeIds": [
       "L-EBEN"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-ETHNONYM-CIRCASSIAN",
@@ -50568,7 +51560,10 @@
     "lexemeIds": [
       "L-SHERDJES",
       "L-SHER"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 2
+    }
   },
   {
     "id": "R-EUWEL",
@@ -50583,7 +51578,10 @@
     },
     "lexemeIds": [
       "L-EUEL-AP-E"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-EUZHY",
@@ -50598,7 +51596,10 @@
     },
     "lexemeIds": [
       "L-EUZHYGUXYN"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-F1ET1YS",
@@ -50613,7 +51614,10 @@
     },
     "lexemeIds": [
       "L-F-ET-YSHEN"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-FOCHY",
@@ -50628,7 +51632,10 @@
     },
     "lexemeIds": [
       "L-FOCHYKUU"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-GHATXE",
@@ -50657,7 +51664,10 @@
       "L-VERIFIED-01749",
       "L-KBD-00630",
       "L-KBD-00631"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 8
+    }
   },
   {
     "id": "R-GHAZE",
@@ -50672,7 +51682,10 @@
     },
     "lexemeIds": [
       "L-GHAZE"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-GHU",
@@ -50805,7 +51818,10 @@
       "L-GHUK-EXUEVE",
       "L-AUTO-00502",
       "L-AUTO-00562"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 60
+    }
   },
   {
     "id": "R-GHUESHEN",
@@ -50820,7 +51836,10 @@
     },
     "lexemeIds": [
       "L-GHUESHCHENYGHE"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-GUSE",
@@ -50835,7 +51854,10 @@
     },
     "lexemeIds": [
       "L-ZYGHEGUSE"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-HANDYRQUA",
@@ -50850,7 +51872,10 @@
     },
     "lexemeIds": [
       "L-HENDYRKUEAKUEE"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-IKUE",
@@ -50883,7 +51908,10 @@
       "L-VERIFIED-00930",
       "L-VERIFIED-02157",
       "L-KBD-02082"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 10
+    }
   },
   {
     "id": "R-K1EDZH",
@@ -50898,7 +51926,10 @@
     },
     "lexemeIds": [
       "L-K-EDZH"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-K1ERY",
@@ -50913,7 +51944,10 @@
     },
     "lexemeIds": [
       "L-K-ERYUT-YPSHCH"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-K1UED",
@@ -50930,7 +51964,10 @@
     "lexemeIds": [
       "L-DEK-UEDYK-YN",
       "L-SHCH-EK-UEDYK-YN"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 2
+    }
   },
   {
     "id": "R-K1YRY",
@@ -50945,7 +51982,10 @@
     },
     "lexemeIds": [
       "L-K-YRIT-EMERIT-E"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-KHQUEY",
@@ -50960,7 +52000,10 @@
     },
     "lexemeIds": [
       "L-KBD-02314"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-KHUEK1E",
@@ -50975,7 +52018,10 @@
     },
     "lexemeIds": [
       "L-XUEK-E-BZHEK-E"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-KHUEMYKHU",
@@ -50990,7 +52036,10 @@
     },
     "lexemeIds": [
       "L-XUEMYXUGHE"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-KHUEZAN",
@@ -51005,7 +52054,10 @@
     },
     "lexemeIds": [
       "L-XUEZANSHCH-EU"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-KHUTE",
@@ -51020,7 +52072,10 @@
     },
     "lexemeIds": [
       "L-KEYPERYXUTEN"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-KHUTEN",
@@ -51035,7 +52090,10 @@
     },
     "lexemeIds": [
       "L-VERIFIED-00733"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-KUALE",
@@ -51050,7 +52108,10 @@
     },
     "lexemeIds": [
       "L-KBD-02591"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-KUALH",
@@ -51065,7 +52126,10 @@
     },
     "lexemeIds": [
       "L-VERIFIED-00617"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-KUANCHE",
@@ -51080,7 +52144,10 @@
     },
     "lexemeIds": [
       "L-VERIFIED-02389"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-KUANSHA",
@@ -51095,7 +52162,10 @@
     },
     "lexemeIds": [
       "L-KUEANSHAGHE"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-KUARDE",
@@ -51110,7 +52180,10 @@
     },
     "lexemeIds": [
       "L-KBD-02596"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-KUARG",
@@ -51125,7 +52198,10 @@
     },
     "lexemeIds": [
       "L-KUEARGH"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-KUATSE",
@@ -51140,7 +52216,10 @@
     },
     "lexemeIds": [
       "L-KUEATSE"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-KUAYE",
@@ -51155,7 +52234,10 @@
     },
     "lexemeIds": [
       "L-KQUAE"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-KUDE",
@@ -51170,7 +52252,10 @@
     },
     "lexemeIds": [
       "L-KBD-02601"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-KUDEY",
@@ -51189,7 +52274,10 @@
       "L-KUEDEYSHCH",
       "L-KUEDEYUE",
       "L-KUEDEY"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 3
+    }
   },
   {
     "id": "R-KUEBZE",
@@ -51204,7 +52292,10 @@
     },
     "lexemeIds": [
       "L-KUEBZEPS"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-KUKHUE",
@@ -51223,7 +52314,10 @@
       "L-KUKHUE",
       "L-VERIFIED-00845",
       "L-VERIFIED-01217"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 3
+    }
   },
   {
     "id": "R-KUL",
@@ -51248,7 +52342,10 @@
       "L-VERIFIED-00695",
       "L-VERIFIED-00919",
       "L-VERIFIED-01556"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 6
+    }
   },
   {
     "id": "R-KULASH",
@@ -51263,7 +52360,10 @@
     },
     "lexemeIds": [
       "L-KBD-02604"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-KULKESH",
@@ -51280,7 +52380,10 @@
     "lexemeIds": [
       "L-KBD-02606",
       "L-KBD-02607"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 2
+    }
   },
   {
     "id": "R-KULKUIJ",
@@ -51295,7 +52398,10 @@
     },
     "lexemeIds": [
       "L-VERIFIED-01782"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-KULSHE",
@@ -51310,7 +52416,10 @@
     },
     "lexemeIds": [
       "L-KUELHSHEUAP-E"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-KUM",
@@ -51325,7 +52434,10 @@
     },
     "lexemeIds": [
       "L-KUEM"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-KUMBYL",
@@ -51340,7 +52452,10 @@
     },
     "lexemeIds": [
       "L-KUMBYL"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-KUSH",
@@ -51357,7 +52472,10 @@
     "lexemeIds": [
       "L-KUSH",
       "L-VERIFIED-00748"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 2
+    }
   },
   {
     "id": "R-KUT",
@@ -51406,7 +52524,10 @@
       "L-ZETEK-UTEN",
       "L-KEYZETEK-UTEN",
       "L-AUTO-00754"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 18
+    }
   },
   {
     "id": "R-KUTAM",
@@ -51425,7 +52546,10 @@
       "L-KUEDAME",
       "L-VERIFIED-00104",
       "L-VERIFIED-00636"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 3
+    }
   },
   {
     "id": "R-KUZGUN",
@@ -51440,7 +52564,10 @@
     },
     "lexemeIds": [
       "L-KUEZGHUN"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-KUZIN",
@@ -51455,7 +52582,10 @@
     },
     "lexemeIds": [
       "L-KUEZYN"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-KYQWE",
@@ -51480,7 +52610,10 @@
       "L-VERIFIED-01874",
       "L-VERIFIED-02055",
       "L-VERIFIED-02102"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 6
+    }
   },
   {
     "id": "R-L1AQUE",
@@ -51495,7 +52628,10 @@
     },
     "lexemeIds": [
       "L-KBD-03290"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-LHAPE",
@@ -51510,7 +52646,10 @@
     },
     "lexemeIds": [
       "L-LHAPEDEGHEZEIGHUE"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-LHEN",
@@ -51525,7 +52664,10 @@
     },
     "lexemeIds": [
       "L-ZY-ESHCH-ELHHEN"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-LHXANCHA",
@@ -51540,7 +52682,10 @@
     },
     "lexemeIds": [
       "L-VERIFIED-01317"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-LOAN-ARABIC",
@@ -51559,7 +52704,10 @@
       "L-ELBETEU",
       "L-YAZYRER",
       "L-KBD-02081"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 3
+    }
   },
   {
     "id": "R-LOAN-DELEGATION",
@@ -51578,7 +52726,10 @@
       "L-KBD-00879",
       "L-DELEGAT",
       "L-DEL"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 3
+    }
   },
   {
     "id": "R-LOAN-GOAL",
@@ -51601,7 +52752,10 @@
       "L-MURADYF",
       "L-MURADYNSHE",
       "L-MUR"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 5
+    }
   },
   {
     "id": "R-LOAN-HONOR",
@@ -51616,7 +52770,10 @@
     },
     "lexemeIds": [
       "L-NAMYS"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-LOAN-RUS",
@@ -51637,7 +52794,10 @@
       "L-ZAKAZ",
       "L-KLADOVE",
       "L-VOSTOK"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 4
+    }
   },
   {
     "id": "R-LOAN-RUSSIAN",
@@ -51674,7 +52834,10 @@
       "L-SHPILKE",
       "L-PARIK",
       "L-SHTOPOR"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 12
+    }
   },
   {
     "id": "R-LOAN-STEEL",
@@ -51703,7 +52866,10 @@
       "L-ZHYRXEK",
       "L-ZHYRYKE",
       "L-ZHYR"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 8
+    }
   },
   {
     "id": "R-LOAN-TURK",
@@ -51720,7 +52886,10 @@
     "lexemeIds": [
       "L-KUEMYKUE",
       "L-BYRAKE"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 2
+    }
   },
   {
     "id": "R-MATE",
@@ -51735,7 +52904,10 @@
     },
     "lexemeIds": [
       "L-MATE"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-MAZHE",
@@ -51750,7 +52922,10 @@
     },
     "lexemeIds": [
       "L-MAZHEKUEANSHE"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-MEQU",
@@ -51765,7 +52940,10 @@
     },
     "lexemeIds": [
       "L-KBD-03575"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-NAK1UE",
@@ -51780,7 +52958,10 @@
     },
     "lexemeIds": [
       "L-NAK-UEPAK-UEU"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-NART",
@@ -51811,7 +52992,10 @@
       "L-AUTO-00877",
       "L-AUTO-00878",
       "L-AUTO-00879"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 9
+    }
   },
   {
     "id": "R-NEHEK1E",
@@ -51826,7 +53010,10 @@
     },
     "lexemeIds": [
       "L-NEHEK-KEEHEK-YNSHE"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-NUM-7",
@@ -51845,7 +53032,10 @@
       "L-BLYNEUBGHU",
       "L-BLYNE-UL",
       "L-BLYSHCHHE"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 3
+    }
   },
   {
     "id": "R-PAGUA",
@@ -51860,7 +53050,10 @@
     },
     "lexemeIds": [
       "L-PAGUAGHE"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-PSHALHE",
@@ -51875,7 +53068,10 @@
     },
     "lexemeIds": [
       "L-PSHCHALHE-2"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-PSHYNE",
@@ -51890,7 +53086,10 @@
     },
     "lexemeIds": [
       "L-VERIFIED-00907"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-PXHE",
@@ -51907,7 +53106,10 @@
     "lexemeIds": [
       "L-KBD-03921",
       "L-KBD-03948"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 2
+    }
   },
   {
     "id": "R-QAMYLQUE",
@@ -51922,7 +53124,10 @@
     },
     "lexemeIds": [
       "L-VERIFIED-01956"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-QUANSH",
@@ -51941,7 +53146,10 @@
       "L-UKUEENSHYN",
       "L-GHEKUEENSHEN",
       "L-GHEKUEENSHENYGHE"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 3
+    }
   },
   {
     "id": "R-QUBAS",
@@ -51956,7 +53164,10 @@
     },
     "lexemeIds": [
       "L-KBD-02599"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-QUDAN",
@@ -51971,7 +53182,10 @@
     },
     "lexemeIds": [
       "L-KBD-02600"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-QUELHEN",
@@ -51988,7 +53202,10 @@
     "lexemeIds": [
       "L-KEEKUEELHEN",
       "L-KEEGHEKUEELHEN"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 2
+    }
   },
   {
     "id": "R-QUENTHQ",
@@ -52003,7 +53220,10 @@
     },
     "lexemeIds": [
       "L-KUEENTKH"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-QUESH1IY",
@@ -52018,7 +53238,10 @@
     },
     "lexemeIds": [
       "L-KUEESHCH-IY"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-QUESHYN",
@@ -52033,7 +53256,10 @@
     },
     "lexemeIds": [
       "L-KUEESHCHYN"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-QUEYSHTHE",
@@ -52048,7 +53274,10 @@
     },
     "lexemeIds": [
       "L-KBD-02602"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-QUMAL",
@@ -52063,7 +53292,10 @@
     },
     "lexemeIds": [
       "L-KUEMAL"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-QUNAN",
@@ -52078,7 +53310,10 @@
     },
     "lexemeIds": [
       "L-VERIFIED-00618"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-QUNTH",
@@ -52093,7 +53328,10 @@
     },
     "lexemeIds": [
       "L-VERIFIED-02224"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-QURAT",
@@ -52108,7 +53346,10 @@
     },
     "lexemeIds": [
       "L-KBD-02614"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-QURGHAQ",
@@ -52123,7 +53364,10 @@
     },
     "lexemeIds": [
       "L-KBD-02616"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-QURT",
@@ -52138,7 +53382,10 @@
     },
     "lexemeIds": [
       "L-VERIFIED-01101"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-QW",
@@ -52171,7 +53418,10 @@
       "L-KBD-02618",
       "L-KBD-02619",
       "L-KBD-02621"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 10
+    }
   },
   {
     "id": "R-QWASH-BROTHER",
@@ -52216,7 +53466,10 @@
       "L-KBD-01676",
       "L-KBD-01677",
       "L-KBD-01678"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 16
+    }
   },
   {
     "id": "R-SEBEP",
@@ -52231,7 +53484,10 @@
     },
     "lexemeIds": [
       "L-SEBEPYNAGHE"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-SH1ALAGHE",
@@ -52246,7 +53502,10 @@
     },
     "lexemeIds": [
       "L-SHCH-ALAGH-E"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-SH1UMP1E",
@@ -52261,7 +53520,10 @@
     },
     "lexemeIds": [
       "L-SHY-UMP-E"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-SHCH1AQUE",
@@ -52276,7 +53538,10 @@
     },
     "lexemeIds": [
       "L-SHCH-AKUEE"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-SHCH1E",
@@ -52361,7 +53626,10 @@
       "L-SHCH1EZHYN-2",
       "L-PHRASE-LY-SHCH1EZHYN",
       "L-PHRASE-SHCH1E-BOTTOM"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 36
+    }
   },
   {
     "id": "R-SHCH1EQUEN",
@@ -52376,7 +53644,10 @@
     },
     "lexemeIds": [
       "L-ZESHCH-EKUEEN"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-SHCHINE",
@@ -52391,7 +53662,10 @@
     },
     "lexemeIds": [
       "L-SHCHINEZHYN"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-SHCHY",
@@ -52410,7 +53684,10 @@
       "L-SHCHY",
       "L-ZYGHESHCH-Y-ETY-EN",
       "L-KEEGHESHCH-Y-ETY-EN"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 3
+    }
   },
   {
     "id": "R-SHCHYE",
@@ -52427,7 +53704,10 @@
     "lexemeIds": [
       "L-SHCHYE-SELL-1",
       "L-SHCHYE-LEAD-1"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 2
+    }
   },
   {
     "id": "R-SHCHYE-HUNDRED",
@@ -52442,7 +53722,10 @@
     },
     "lexemeIds": [
       "L-SHCHYE-HUNDRED-1"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-SHXEQUE",
@@ -52457,7 +53740,10 @@
     },
     "lexemeIds": [
       "L-KBD-00836"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-SURET",
@@ -52486,7 +53772,10 @@
       "L-SURETYNSHE",
       "L-SURETYNSHAGHE",
       "L-SURETYLHE"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 8
+    }
   },
   {
     "id": "R-T1AQUE",
@@ -52501,7 +53790,10 @@
     },
     "lexemeIds": [
       "L-KBD-04201"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-THARYQUE",
@@ -52518,7 +53810,10 @@
     "lexemeIds": [
       "L-THERYKUEE",
       "L-THERYKUEEF"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 2
+    }
   },
   {
     "id": "R-TKHEMADE",
@@ -52539,7 +53834,10 @@
       "L-TKHEMADE-LEADER",
       "L-TKHEMADE-TAMADA",
       "L-TKHEMADE-FATHER-IN-LAW"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 4
+    }
   },
   {
     "id": "R-TS1AQUE",
@@ -52554,7 +53852,10 @@
     },
     "lexemeIds": [
       "L-KBD-04951"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-TSAK1E",
@@ -52569,7 +53870,10 @@
     },
     "lexemeIds": [
       "L-TS-AK-E"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-UK1URIEY",
@@ -52586,7 +53890,10 @@
     "lexemeIds": [
       "L-XEUK-URIEN",
       "L-KEEUK-URIEXYN"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 2
+    }
   },
   {
     "id": "R-UKUEYA",
@@ -52601,7 +53908,10 @@
     },
     "lexemeIds": [
       "L-KBD-04465"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-UP1E",
@@ -52616,7 +53926,10 @@
     },
     "lexemeIds": [
       "L-XEUP-EN"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-UQWADIY",
@@ -52637,7 +53950,10 @@
       "L-ZYUKUEEDIIN",
       "L-UKUEEDIYA",
       "L-VERIFIED-01941"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 4
+    }
   },
   {
     "id": "R-UQWENTS1EN",
@@ -52652,7 +53968,10 @@
     },
     "lexemeIds": [
       "L-SHCH-EUKUEENTS-EN"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-UQYN",
@@ -52669,7 +53988,10 @@
     "lexemeIds": [
       "L-UKEON",
       "L-VERIFIED-00780"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 2
+    }
   },
   {
     "id": "R-UT",
@@ -52702,7 +54024,10 @@
       "L-IUTYK-YN",
       "L-UT-E",
       "L-UTU"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 10
+    }
   },
   {
     "id": "R-ZADE",
@@ -52717,7 +54042,10 @@
     },
     "lexemeIds": [
       "L-ZADEU"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-ZAQUE",
@@ -52746,7 +54074,10 @@
       "L-VERIFIED-01757",
       "L-KBD-01416",
       "L-ZAKUEAGHE"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 8
+    }
   },
   {
     "id": "R-ZEK1",
@@ -52789,7 +54120,10 @@
       "L-KBD-01609",
       "L-KBD-01611",
       "L-KBD-01613"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 15
+    }
   },
   {
     "id": "R-ZEKUE",
@@ -52804,7 +54138,10 @@
     },
     "lexemeIds": [
       "L-KBD-01897"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-ZEKUN",
@@ -52819,7 +54156,10 @@
     },
     "lexemeIds": [
       "L-KBD-01669"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-ZERYZEKUE",
@@ -52834,7 +54174,10 @@
     },
     "lexemeIds": [
       "L-KBD-01896"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-ZHAK1E",
@@ -52853,7 +54196,10 @@
       "L-ZAK-E",
       "L-ZAK",
       "L-ZHAK-EUPS"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 3
+    }
   },
   {
     "id": "R-ZHEQUE",
@@ -52868,7 +54214,10 @@
     },
     "lexemeIds": [
       "L-KBD-00743"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-ZHURT",
@@ -52883,7 +54232,10 @@
     },
     "lexemeIds": [
       "L-ZHURT"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-ZYK1",
@@ -52898,7 +54250,10 @@
     },
     "lexemeIds": [
       "L-XEGHEZYK-YN"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-K1E",
@@ -53111,8 +54466,16 @@
         "L-K-EPXYN",
         "L-KEYK-ERYHEN",
         "L-KEYK-ERYLELYN",
-        "L-KEEDABAFE"
+        "L-KEYTEK-ENYGHE",
+        "L-K-ENSHE",
+        "L-KEEDABAFE",
+        "L-AUTO-00173",
+        "L-AUTO-00227",
+        "L-AUTO-01410"
       ]
+    },
+    "productivity": {
+      "lemmaCount": 106
     }
   },
   {
@@ -53160,6 +54523,9 @@
         "L-SHCHHELUADE",
         "L-SHCHHELYNE"
       ]
+    },
+    "productivity": {
+      "lemmaCount": 17
     }
   },
   {
@@ -53175,6 +54541,9 @@
       "lexemeIds": [
         "L-VERIFIED-01375"
       ]
+    },
+    "productivity": {
+      "lemmaCount": 1
     }
   },
   {
@@ -53190,6 +54559,9 @@
       "lexemeIds": [
         "L-AUTO-00536"
       ]
+    },
+    "productivity": {
+      "lemmaCount": 1
     }
   },
   {
@@ -53365,7 +54737,10 @@
       "L-KBD-03441",
       "L-KBD-03442",
       "L-ZEPEBZHEUEN"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 131
+    }
   },
   {
     "id": "R-GHWSCHE-DRY",
@@ -53376,6 +54751,9 @@
     "wordFamily": {
       "id": "WF-GHWSCHE-DRY",
       "lexemeIds": []
+    },
+    "productivity": {
+      "lemmaCount": 0
     }
   },
   {
@@ -53543,7 +54921,10 @@
       "L-VERIFIED-02175",
       "L-VERIFIED-02202",
       "L-SHXALHEUZ"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 125
+    }
   },
   {
     "id": "R-SH1Y-VERB",
@@ -53580,7 +54961,16 @@
         "L-ZYSHCH-EKUEEN",
         "L-ZYSHCH-EFYN",
         "L-ZYSHCH-EGUPSYSYN",
-        "L-ZYSHCH-EPXEN"
+        "L-ZYSHCH-EPXEN",
+        "L-AUTO-01290",
+        "L-AUTO-01335",
+        "L-AUTO-01396",
+        "L-AUTO-01453",
+        "L-AUTO-01556",
+        "L-AUTO-01571",
+        "L-AUTO-01589",
+        "L-AUTO-01607",
+        "L-AUTO-01641"
       ]
     },
     "lexemeIds": [
@@ -53612,7 +55002,10 @@
       "L-ZYSHCH-EFYN",
       "L-ZYSHCH-EGUPSYSYN",
       "L-ZYSHCH-EPXEN"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 37
+    }
   },
   {
     "id": "R-XHW",
@@ -53624,14 +55017,19 @@
       "lexemeIds": [
         "L-PSEKHUZHYN",
         "L-IXUN",
+        "L-GHEXUAUE",
+        "L-XUR",
+        "L-GHEXUA",
         "L-KEYPYXUN",
         "L-KEYTEXUN",
+        "L-KEYZHEDEXUN",
         "L-VERIFIED-00910",
         "L-VERIFIED-01144",
         "L-VERIFIED-01615",
         "L-VERIFIED-01910",
         "L-VERIFIED-02279",
         "L-KBD-00234",
+        "L-KBD-01048",
         "L-KBD-01632",
         "L-KBD-02268",
         "L-KBD-02269",
@@ -53642,33 +55040,21 @@
         "L-KBD-05458",
         "L-KBD-05551",
         "L-SHCH-EGHEXUN",
+        "L-KEYZETEXUN",
         "L-KEY-UXUN",
         "L-ZEGHEXUEXYN",
         "L-ZYKEYK-ERYGHEXUN",
-        "L-ZIGHEXUEN",
-        "L-ZY-ESHCH-EGHEXUN",
-        "L-K-UETS-YXUN",
-        "L-KEY-ESHCH-EXUN",
-        "L-ZYKEYPYGHEXUN",
-        "L-KEYZEXEXUN",
-        "L-ZYDEGHEXUEN",
-        "L-K-ELHYSHCH-EXUEN",
-        "L-KEYK-UETS-RYXUN",
-        "L-KEYSHCHHERYXUN",
-        "L-GHEXUAUE",
-        "L-XUR",
-        "L-GHEXUA",
-        "L-KEYZHEDEXUN",
-        "L-KBD-01048",
-        "L-KEYZETEXUN",
         "L-KEYK-ERYXUNYGHE",
         "L-KEYSHCH-EXUZHYN",
+        "L-ZIGHEXUEN",
+        "L-ZY-ESHCH-EGHEXUN",
         "L-ZYK-ERYGHEXUN",
         "L-ZYKEYSHCH-EGHEXUEN",
         "L-KEYZEXUEXUSYN",
         "L-ZE-YXUN",
         "L-ZEGUEXUN",
         "L-KEYZERY-UXUN",
+        "L-K-UETS-YXUN",
         "L-ZYXEGHEXUEN",
         "L-ZY-ESHCH-EGHEXUEN",
         "L-ZYKEYTEGHEXUEN",
@@ -53677,18 +55063,25 @@
         "L-ZEK-ERYXUZEK-ERYSHCHU",
         "L-ZESHCH-EXUN",
         "L-ZEREXUZHEN",
+        "L-KEY-ESHCH-EXUN",
         "L-KEYZERYDEXUEN",
         "L-KEYSHCH-EXUEN",
         "L-KEYZYZHEDEGHEXUN",
         "L-UEGHEXUN",
+        "L-ZYKEYPYGHEXUN",
+        "L-KEYZEXEXUN",
         "L-GHEXU",
         "L-ZERIXUEN",
         "L-DEXUXYN",
+        "L-ZYDEGHEXUEN",
         "L-ZYK-ESHCH-EGHEXUN",
+        "L-K-ELHYSHCH-EXUEN",
         "L-K-ERYXUK-ERYSHCH",
         "L-KEYDEGHEXUENYGHE",
         "L-KEYZERYDEXUN",
+        "L-KEYK-UETS-RYXUN",
         "L-KEYTEXUE",
+        "L-KEYSHCHHERYXUN",
         "L-KEYSHCH-EXUN",
         "L-ZERYDEXUEN",
         "L-ZETEMYXUEN",
@@ -53696,13 +55089,13 @@
         "L-K-ERYXU",
         "L-KEYK-ERYXUA-NYK-ERYXUA",
         "L-K-ERYXU-BZHERYXU",
+        "L-PYXU-SYXU",
         "L-AUTO-00367",
         "L-AUTO-00655",
         "L-AUTO-00668",
         "L-AUTO-00723",
         "L-AUTO-00724",
-        "L-AUTO-00786",
-        "L-PYXU-SYXU"
+        "L-AUTO-00786"
       ]
     },
     "lexemeIds": [
@@ -53730,7 +55123,10 @@
       "L-KBD-04344",
       "L-KBD-04347",
       "L-TEUT-YPSHCHHAUE"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 81
+    }
   },
   {
     "id": "R-BZY",
@@ -53785,7 +55181,10 @@
       "L-VERIFIED-01736",
       "L-VERIFIED-02091",
       "L-VERIFIED-02645"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 21
+    }
   },
   {
     "id": "R-T1U",
@@ -53801,7 +55200,7 @@
     ],
     "kategori": "numeral_root",
     "productivity": {
-      "lemmaCount": 18
+      "lemmaCount": 22
     },
     "notes": "Tek heceli öz sayı kökü (2). Sevgi anlamı ikincil.",
     "lexemeIds": [
@@ -53844,7 +55243,11 @@
         "L-ZHEMIT-USHK-E",
         "L-T-USHCH",
         "L-T-UUE",
-        "L-T-UALE"
+        "L-T-UALE",
+        "L-AUTO-01504",
+        "L-AUTO-01577",
+        "L-AUTO-01681",
+        "L-AUTO-01686"
       ]
     }
   },
@@ -53986,7 +55389,10 @@
       "L-SAGHEBEGU",
       "L-NASHCHEBEGU",
       "L-AUTO-00808"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 4
+    }
   },
   {
     "id": "R-ABZ",
@@ -54001,7 +55407,10 @@
     },
     "lexemeIds": [
       "L-ABAZE"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-1ENE",
@@ -54012,6 +55421,9 @@
     "wordFamily": {
       "id": "WF-1ENE",
       "lexemeIds": []
+    },
+    "productivity": {
+      "lemmaCount": 0
     }
   },
   {
@@ -54150,7 +55562,10 @@
       "L-BZHEU",
       "L-BZHEF",
       "L-BZHEMATE"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 78
+    }
   },
   {
     "id": "R-TKHEMPE",
@@ -54183,7 +55598,8 @@
         "L-VERIFIED-00787",
         "L-KBD-03423",
         "L-ETHEMPE",
-        "L-AUTO-01054"
+        "L-AUTO-01054",
+        "L-AUTO-01551"
       ]
     },
     "lexemeIds": [
@@ -54637,6 +56053,7 @@
         "L-EPYLHETYN",
         "L-DELHETEN",
         "L-KEYPXYLHETYN",
+        "L-KEELHETYN",
         "L-K-ERYLHETYN",
         "L-KUEELHETYN",
         "L-KEYDELHETEIN",
@@ -56582,7 +57999,10 @@
     },
     "lexemeIds": [
       "L-SHCHAFYKYN-TRANS"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 1
+    }
   },
   {
     "id": "R-IWO",
@@ -56914,7 +58334,10 @@
       "L-AUTO-01171",
       "L-TKHE-REU-GOD",
       "L-TKHE-REU-OATH"
-    ]
+    ],
+    "productivity": {
+      "lemmaCount": 160
+    }
   },
   {
     "id": "R-GUGH",
@@ -57154,7 +58577,7 @@
     "productivity": {
       "lexemeCount": 12,
       "conceptCount": 7,
-      "lemmaCount": 21
+      "lemmaCount": 24
     },
     "_source": "lexemes-sync-2026",
     "wordFamily": {
@@ -57168,6 +58591,7 @@
         "L-PSHCHYK-UTXU",
         "L-VERIFIED-00210",
         "L-VERIFIED-02269",
+        "L-TXUSHCH1RE-TXU",
         "L-TXUASHCH-E",
         "L-EPSHCHYK-UTXUANE",
         "L-ETXUANEREY",
@@ -57180,7 +58604,9 @@
         "L-AUTO-00639",
         "L-AUTO-00953",
         "L-AUTO-01023",
-        "L-AUTO-01024"
+        "L-AUTO-01024",
+        "L-AUTO-01505",
+        "L-AUTO-01687"
       ]
     }
   },
@@ -57202,7 +58628,7 @@
     "productivity": {
       "lexemeCount": 2,
       "conceptCount": 2,
-      "lemmaCount": 3
+      "lemmaCount": 5
     },
     "_source": "lexemes-sync-2026",
     "wordFamily": {
@@ -57210,7 +58636,9 @@
       "lexemeIds": [
         "L-ILHES",
         "L-ILHESISHCHE",
-        "L-ILHESYSHCH-E"
+        "L-ILHESYSHCH-E",
+        "L-AUTO-01399",
+        "L-AUTO-01400"
       ]
     }
   },
@@ -58562,7 +59990,7 @@
     "productivity": {
       "lexemeCount": 7,
       "conceptCount": 7,
-      "lemmaCount": 12
+      "lemmaCount": 13
     },
     "_source": "lexemes-sync-2026",
     "wordFamily": {
@@ -58579,6 +60007,7 @@
         "L-ZHYZHAPLHEU",
         "L-ZHYZHERYUE",
         "L-ZHYZHAPLHE",
+        "L-ZHYZHAGHE",
         "L-AUTO-01349"
       ]
     }
@@ -58623,13 +60052,14 @@
     "productivity": {
       "lexemeCount": 1,
       "conceptCount": 1,
-      "lemmaCount": 1
+      "lemmaCount": 2
     },
     "_source": "lexemes-sync-2026",
     "wordFamily": {
       "id": "WF-ISHCH",
       "lexemeIds": [
-        "L-ISHCH1"
+        "L-ISHCH1",
+        "L-AUTO-01408"
       ]
     }
   },
@@ -58800,7 +60230,7 @@
     "productivity": {
       "lexemeCount": 1,
       "conceptCount": 1,
-      "lemmaCount": 6
+      "lemmaCount": 8
     },
     "_source": "lexemes-sync-2026",
     "wordFamily": {
@@ -58811,7 +60241,9 @@
         "L-SYTMI",
         "L-SYTRI",
         "L-SYTI",
-        "L-SYTK-E"
+        "L-SYTK-E",
+        "L-AUTO-01563",
+        "L-AUTO-01564"
       ]
     }
   },
@@ -58833,7 +60265,7 @@
     "productivity": {
       "lexemeCount": 4,
       "conceptCount": 1,
-      "lemmaCount": 4
+      "lemmaCount": 6
     },
     "_source": "lexemes-sync-2026",
     "wordFamily": {
@@ -58842,7 +60274,9 @@
         "L-KHET",
         "L-XETI",
         "L-XETU",
-        "L-XETMI"
+        "L-XETMI",
+        "L-AUTO-01413",
+        "L-AUTO-01642"
       ]
     }
   },
@@ -59787,13 +61221,14 @@
     "productivity": {
       "lexemeCount": 1,
       "conceptCount": 1,
-      "lemmaCount": 1
+      "lemmaCount": 2
     },
     "_source": "lexemes-sync-2026",
     "wordFamily": {
       "id": "WF-REP",
       "lexemeIds": [
-        "L-AREP"
+        "L-AREP",
+        "L-REP"
       ]
     }
   },
@@ -60263,11 +61698,13 @@
         "L-TEGHEUEN",
         "L-GHEUEN",
         "L-ZYTEGHEUEN",
+        "L-TEUENYGHE",
         "L-SHERYUE",
         "L-TEUEN",
         "L-EGUEUEN",
         "L-UESHXYSHXUE",
         "L-ZEPYMYU",
+        "L-TEUTSON",
         "L-TEGHEUN",
         "L-FOCHAUE",
         "L-IUEN",
@@ -60289,6 +61726,7 @@
         "L-ZEPRYUUE",
         "L-ZYTEGHEUN",
         "L-ZEPYU",
+        "L-TEUTYN",
         "L-ZEPEUE",
         "L-MEZAUE",
         "L-XEGHEUEN",
@@ -60312,6 +61750,7 @@
         "L-SHCH-EGHEUEN",
         "L-EGUAUE",
         "L-ZEPESHCH-EUE",
+        "L-VERIFIED-00046",
         "L-VERIFIED-00160",
         "L-VERIFIED-00288",
         "L-VERIFIED-00370",
@@ -60430,6 +61869,7 @@
         "L-KBD-04185",
         "L-KBD-04191",
         "L-KBD-04335",
+        "L-KBD-04339",
         "L-KBD-04344",
         "L-KBD-04345",
         "L-KBD-04347",
@@ -60594,12 +62034,7 @@
         "L-UE-AIR",
         "L-UAE",
         "L-BITKI-00166",
-        "L-KBD-03774",
-        "L-TEUENYGHE",
-        "L-TEUTSON",
-        "L-TEUTYN",
-        "L-VERIFIED-00046",
-        "L-KBD-04339"
+        "L-KBD-03774"
       ]
     }
   },
@@ -60874,7 +62309,7 @@
     "productivity": {
       "lexemeCount": 6,
       "conceptCount": 6,
-      "lemmaCount": 6
+      "lemmaCount": 7
     },
     "_source": "lexemes-sync-2026",
     "wordFamily": {
@@ -60885,7 +62320,8 @@
         "L-SHEIBZHE",
         "L-SHEYAFE",
         "L-SHEYEFAP-E",
-        "L-SHEYUDZ"
+        "L-SHEYUDZ",
+        "L-AUTO-01655"
       ]
     }
   },
@@ -63226,7 +64662,7 @@
     "productivity": {
       "lexemeCount": 14,
       "conceptCount": 13,
-      "lemmaCount": 16
+      "lemmaCount": 19
     },
     "_source": "lexemes-sync-2026",
     "wordFamily": {
@@ -63247,7 +64683,10 @@
         "L-F-E-EIN",
         "L-ZESHCHY-EIN",
         "L-EIN-KBD",
-        "L-GHE-EIN"
+        "L-GHE-EIN",
+        "L-AUTO-01255",
+        "L-AUTO-01256",
+        "L-AUTO-01540"
       ]
     }
   },
@@ -64745,7 +66184,7 @@
     "productivity": {
       "lexemeCount": 1,
       "conceptCount": 1,
-      "lemmaCount": 3
+      "lemmaCount": 4
     },
     "_source": "lexemes-sync-2026",
     "wordFamily": {
@@ -64753,7 +66192,8 @@
       "lexemeIds": [
         "L-TOP",
         "L-TOPYSHE",
-        "L-VERIFIED-02109"
+        "L-VERIFIED-02109",
+        "L-AUTO-01611"
       ]
     }
   },
@@ -65080,14 +66520,15 @@
     "productivity": {
       "lexemeCount": 1,
       "conceptCount": 1,
-      "lemmaCount": 2
+      "lemmaCount": 3
     },
     "_source": "lexemes-sync-2026",
     "wordFamily": {
       "id": "WF-SUD",
       "lexemeIds": [
         "L-SUD",
-        "L-KBD-04171"
+        "L-KBD-04171",
+        "L-AUTO-01559"
       ]
     }
   },
@@ -65927,7 +67368,7 @@
     "productivity": {
       "lexemeCount": 32,
       "conceptCount": 22,
-      "lemmaCount": 212
+      "lemmaCount": 213
     },
     "_source": "lexemes-sync-2026",
     "wordFamily": {
@@ -66120,6 +67561,7 @@
         "L-TSYPLH",
         "L-ZYK-ELHYGHEPLHYN",
         "L-ZYK-ELHYPLHYZHYN",
+        "L-ZEPLHEN",
         "L-K-ESHCH-EPLHEN",
         "L-PLHYZHF-YTS-AFE",
         "L-PLHYFETS-E",
@@ -66938,13 +68380,14 @@
     "productivity": {
       "lexemeCount": 1,
       "conceptCount": 1,
-      "lemmaCount": 1
+      "lemmaCount": 2
     },
     "_source": "lexemes-sync-2026",
     "wordFamily": {
       "id": "WF-POLITIK",
       "lexemeIds": [
-        "L-POLITIKE"
+        "L-POLITIKE",
+        "L-POLITIK"
       ]
     }
   },
@@ -67180,7 +68623,7 @@
     "productivity": {
       "lexemeCount": 4,
       "conceptCount": 4,
-      "lemmaCount": 4
+      "lemmaCount": 5
     },
     "_source": "lexemes-sync-2026",
     "wordFamily": {
@@ -67189,7 +68632,8 @@
         "L-MYSE",
         "L-MYSAGHE",
         "L-VERIFIED-00586",
-        "L-ZYGHEMYSEN"
+        "L-ZYGHEMYSEN",
+        "L-MYS"
       ]
     }
   },
@@ -67797,13 +69241,15 @@
     "productivity": {
       "lexemeCount": 1,
       "conceptCount": 1,
-      "lemmaCount": 1
+      "lemmaCount": 3
     },
     "_source": "lexemes-sync-2026",
     "wordFamily": {
       "id": "WF-GAZ",
       "lexemeIds": [
-        "L-GAZ"
+        "L-GAZ",
+        "L-AUTO-01308",
+        "L-AUTO-01309"
       ]
     }
   },
@@ -67876,7 +69322,7 @@
     "productivity": {
       "lexemeCount": 3,
       "conceptCount": 3,
-      "lemmaCount": 3
+      "lemmaCount": 4
     },
     "_source": "lexemes-sync-2026",
     "wordFamily": {
@@ -67884,6 +69330,7 @@
       "lexemeIds": [
         "L-UENDEGHU",
         "L-KBD-04507",
+        "L-TEUENDEGHUEN",
         "L-AUTO-01048"
       ]
     }
@@ -69777,14 +71224,15 @@
     "productivity": {
       "lexemeCount": 2,
       "conceptCount": 2,
-      "lemmaCount": 2
+      "lemmaCount": 3
     },
     "_source": "lexemes-sync-2026",
     "wordFamily": {
       "id": "WF-KLASS",
       "lexemeIds": [
         "L-KLASS",
-        "L-KBD-02292"
+        "L-KBD-02292",
+        "L-AUTO-01412"
       ]
     }
   },
@@ -70726,13 +72174,14 @@
     "productivity": {
       "lexemeCount": 1,
       "conceptCount": 1,
-      "lemmaCount": 1
+      "lemmaCount": 2
     },
     "_source": "lexemes-sync-2026",
     "wordFamily": {
       "id": "WF-STUDYENT",
       "lexemeIds": [
-        "L-STUDENT"
+        "L-STUDENT",
+        "L-AUTO-01558"
       ]
     }
   },
@@ -74467,14 +75916,15 @@
     "productivity": {
       "lexemeCount": 2,
       "conceptCount": 2,
-      "lemmaCount": 2
+      "lemmaCount": 3
     },
     "_source": "lexemes-sync-2026",
     "wordFamily": {
       "id": "WF-PU",
       "lexemeIds": [
         "L-PU",
-        "L-P-UN"
+        "L-P-UN",
+        "L-P-UNYGHE"
       ]
     }
   },
@@ -75650,7 +77100,7 @@
     "productivity": {
       "lexemeCount": 3,
       "conceptCount": 3,
-      "lemmaCount": 7
+      "lemmaCount": 8
     },
     "_source": "lexemes-sync-2026",
     "wordFamily": {
@@ -75661,6 +77111,7 @@
         "L-XEZYGHEGHUAZE",
         "L-KBD-00156",
         "L-KBD-00572",
+        "L-GHUAZ",
         "L-GHUAZE-2",
         "L-SHCHYZYGHEGHUAZE"
       ]
@@ -77838,13 +79289,14 @@
     "productivity": {
       "lexemeCount": 1,
       "conceptCount": 1,
-      "lemmaCount": 1
+      "lemmaCount": 2
     },
     "_source": "lexemes-sync-2026",
     "wordFamily": {
       "id": "WF-BYDENYGHE",
       "lexemeIds": [
-        "L-GHEBYDENYGHE"
+        "L-GHEBYDENYGHE",
+        "L-BYDENYGHE"
       ]
     }
   },
@@ -78483,13 +79935,14 @@
     "productivity": {
       "lexemeCount": 1,
       "conceptCount": 1,
-      "lemmaCount": 1
+      "lemmaCount": 2
     },
     "_source": "lexemes-sync-2026",
     "wordFamily": {
       "id": "WF-OPYT",
       "lexemeIds": [
-        "L-OPYT"
+        "L-OPYT",
+        "L-AUTO-01498"
       ]
     }
   },
@@ -78558,13 +80011,15 @@
     "productivity": {
       "lexemeCount": 1,
       "conceptCount": 1,
-      "lemmaCount": 1
+      "lemmaCount": 3
     },
     "_source": "lexemes-sync-2026",
     "wordFamily": {
       "id": "WF-SHCHTA",
       "lexemeIds": [
-        "L-SHCHTAUE"
+        "L-SHCHTAUE",
+        "L-KEESHCHTA",
+        "L-GHESHCHTA"
       ]
     }
   },
@@ -79117,7 +80572,7 @@
     "productivity": {
       "lexemeCount": 11,
       "conceptCount": 8,
-      "lemmaCount": 17
+      "lemmaCount": 18
     },
     "_source": "lexemes-sync-2026",
     "wordFamily": {
@@ -79139,7 +80594,8 @@
         "L-ZEGHEDZHELEN",
         "L-ZERYGHEDZHELEN",
         "L-XEGHEDZHELYN",
-        "L-XEDZHELYN"
+        "L-XEDZHELYN",
+        "L-KEYXEDZHELYN"
       ]
     }
   },
@@ -79431,13 +80887,14 @@
     "productivity": {
       "lexemeCount": 1,
       "conceptCount": 1,
-      "lemmaCount": 1
+      "lemmaCount": 2
     },
     "_source": "lexemes-sync-2026",
     "wordFamily": {
       "id": "WF-LAL",
       "lexemeIds": [
-        "L-LALE"
+        "L-LALE",
+        "L-LAL"
       ]
     }
   },
@@ -79829,13 +81286,15 @@
     "productivity": {
       "lexemeCount": 1,
       "conceptCount": 1,
-      "lemmaCount": 1
+      "lemmaCount": 3
     },
     "_source": "lexemes-sync-2026",
     "wordFamily": {
       "id": "WF-BIIGHE",
       "lexemeIds": [
-        "L-BIIGHE"
+        "L-BIIGHE",
+        "L-AUTO-01300",
+        "L-AUTO-01301"
       ]
     }
   },
@@ -80496,7 +81955,7 @@
     "productivity": {
       "lexemeCount": 2,
       "conceptCount": 2,
-      "lemmaCount": 4
+      "lemmaCount": 5
     },
     "_source": "lexemes-sync-2026",
     "wordFamily": {
@@ -80505,6 +81964,7 @@
         "L-GHEZESHCH-EN",
         "L-KBD-01123",
         "L-KBD-04704",
+        "L-GHEZESHCH1EN",
         "L-GHEZESHCH-A"
       ]
     }
@@ -81098,13 +82558,14 @@
     "productivity": {
       "lexemeCount": 1,
       "conceptCount": 1,
-      "lemmaCount": 1
+      "lemmaCount": 2
     },
     "_source": "lexemes-sync-2026",
     "wordFamily": {
       "id": "WF-XEUSHCHYU",
       "lexemeIds": [
-        "L-XE-USHCH-Y-U"
+        "L-XE-USHCH-Y-U",
+        "L-AUTO-01641"
       ]
     }
   },
@@ -82515,7 +83976,7 @@
     "productivity": {
       "lexemeCount": 21,
       "conceptCount": 11,
-      "lemmaCount": 43
+      "lemmaCount": 44
     },
     "_source": "lexemes-sync-2026",
     "wordFamily": {
@@ -82557,6 +84018,7 @@
         "L-PYUPSHCH-YP-E",
         "L-EUPSHCH-ETEXYN",
         "L-KEEUPSHCH-YHYN",
+        "L-KEYTEUPSHCH-EN",
         "L-UPSHCH-AK-UE",
         "L-ZYZESHCH-EUPSHCH-EN",
         "L-UPSHCH-APKHE",
@@ -84808,7 +86270,7 @@
     "productivity": {
       "lexemeCount": 2,
       "conceptCount": 2,
-      "lemmaCount": 6
+      "lemmaCount": 8
     },
     "_source": "lexemes-sync-2026",
     "wordFamily": {
@@ -84818,8 +86280,10 @@
         "L-TEMEM",
         "L-VERIFIED-00346",
         "L-KBD-04422",
+        "L-TEMEMAGHE",
         "L-XUEGHETEMEMYN",
-        "L-AUTO-01031"
+        "L-AUTO-01031",
+        "L-AUTO-01588"
       ]
     }
   },
@@ -86675,7 +88139,7 @@
     "productivity": {
       "lexemeCount": 4,
       "conceptCount": 4,
-      "lemmaCount": 5
+      "lemmaCount": 6
     },
     "_source": "lexemes-sync-2026",
     "wordFamily": {
@@ -86683,6 +88147,7 @@
       "lexemeIds": [
         "L-VERIFIED-00875",
         "L-KBD-03989",
+        "L-PSHCHTYRYN",
         "L-KEEGHEPSHCHTYRYZHYN",
         "L-KEEPSHCHTYRYN",
         "L-AUTO-00960"
@@ -88396,7 +89861,7 @@
     "productivity": {
       "lexemeCount": 7,
       "conceptCount": 6,
-      "lemmaCount": 22
+      "lemmaCount": 23
     },
     "_source": "lexemes-sync-2026",
     "wordFamily": {
@@ -88419,6 +89884,7 @@
         "L-SHCH-EBENYN",
         "L-DEBENEN",
         "L-BENEK-E",
+        "L-ZEBEN",
         "L-ZEGHEBENYN",
         "L-ZETEBENEN",
         "L-AUTO-00561",
@@ -89692,13 +91158,14 @@
     "productivity": {
       "lexemeCount": 1,
       "conceptCount": 1,
-      "lemmaCount": 1
+      "lemmaCount": 2
     },
     "_source": "lexemes-sync-2026",
     "wordFamily": {
       "id": "WF-YELYRQHESH",
       "lexemeIds": [
-        "L-VERIFIED-01905"
+        "L-VERIFIED-01905",
+        "L-AUTO-01634"
       ]
     }
   },
@@ -89902,7 +91369,7 @@
     "productivity": {
       "lexemeCount": 2,
       "conceptCount": 2,
-      "lemmaCount": 4
+      "lemmaCount": 5
     },
     "_source": "lexemes-sync-2026",
     "wordFamily": {
@@ -89911,6 +91378,7 @@
         "L-VERIFIED-01989",
         "L-KBD-00480",
         "L-KBD-00481",
+        "L-BELERYGH",
         "L-ZERYGHEBELERYGHYN"
       ]
     }
@@ -90749,13 +92217,14 @@
     "productivity": {
       "lexemeCount": 1,
       "conceptCount": 1,
-      "lemmaCount": 1
+      "lemmaCount": 2
     },
     "_source": "lexemes-sync-2026",
     "wordFamily": {
       "id": "WF-APTYEK",
       "lexemeIds": [
-        "L-VERIFIED-02262"
+        "L-VERIFIED-02262",
+        "L-APTEK"
       ]
     }
   },
@@ -90974,13 +92443,14 @@
     "productivity": {
       "lexemeCount": 1,
       "conceptCount": 1,
-      "lemmaCount": 1
+      "lemmaCount": 2
     },
     "_source": "lexemes-sync-2026",
     "wordFamily": {
       "id": "WF-VENYGHE",
       "lexemeIds": [
-        "L-VERIFIED-02351"
+        "L-VERIFIED-02351",
+        "L-KEEVENYGHE"
       ]
     }
   },
@@ -93547,7 +95017,7 @@
     "productivity": {
       "lexemeCount": 4,
       "conceptCount": 4,
-      "lemmaCount": 4
+      "lemmaCount": 5
     },
     "_source": "lexemes-sync-2026",
     "wordFamily": {
@@ -93556,7 +95026,8 @@
         "L-KBD-00745",
         "L-KBD-01029",
         "L-ZDZHYZDZHYN",
-        "L-ZESHCH-EZDZHYZDZHEN"
+        "L-ZESHCH-EZDZHYZDZHEN",
+        "L-ZDZHYZDZH"
       ]
     }
   },
@@ -93576,14 +95047,16 @@
     "productivity": {
       "lexemeCount": 1,
       "conceptCount": 1,
-      "lemmaCount": 2
+      "lemmaCount": 4
     },
     "_source": "lexemes-sync-2026",
     "wordFamily": {
       "id": "WF-ZEKU",
       "lexemeIds": [
         "L-KBD-00746",
-        "L-KBD-04292"
+        "L-KBD-04292",
+        "L-ZERYZEK-U",
+        "L-ZEK-U"
       ]
     }
   },
@@ -93641,14 +95114,15 @@
     "productivity": {
       "lexemeCount": 2,
       "conceptCount": 2,
-      "lemmaCount": 2
+      "lemmaCount": 3
     },
     "_source": "lexemes-sync-2026",
     "wordFamily": {
       "id": "WF-KYL",
       "lexemeIds": [
         "L-KBD-00751",
-        "L-K-YLYN"
+        "L-K-YLYN",
+        "L-K-YL"
       ]
     }
   },
@@ -96210,13 +97684,15 @@
     "productivity": {
       "lexemeCount": 1,
       "conceptCount": 1,
-      "lemmaCount": 1
+      "lemmaCount": 3
     },
     "_source": "lexemes-sync-2026",
     "wordFamily": {
       "id": "WF-POSHCHT",
       "lexemeIds": [
-        "L-KBD-03858"
+        "L-KBD-03858",
+        "L-AUTO-01508",
+        "L-AUTO-01690"
       ]
     }
   },
@@ -97230,7 +98706,7 @@
     "productivity": {
       "lexemeCount": 3,
       "conceptCount": 2,
-      "lemmaCount": 5
+      "lemmaCount": 6
     },
     "_source": "lexemes-sync-2026",
     "wordFamily": {
@@ -97240,7 +98716,8 @@
         "L-KBD-03052",
         "L-KBD-04959",
         "L-ZESHCH-ETS-UUEN",
-        "L-TETS-UUK-YN"
+        "L-TETS-UUK-YN",
+        "L-TS-UUNYGHE"
       ]
     }
   },
@@ -104332,7 +105809,7 @@
     "productivity": {
       "lexemeCount": 1,
       "conceptCount": 1,
-      "lemmaCount": 3
+      "lemmaCount": 4
     },
     "_source": "lexemes-sync-2026",
     "wordFamily": {
@@ -104340,7 +105817,8 @@
       "lexemeIds": [
         "L-KHUEKHUBZHE",
         "L-KBD-01552",
-        "L-KHUEKHU-2"
+        "L-KHUEKHU-2",
+        "L-XEKHUEKHUEN"
       ]
     }
   },
@@ -104452,7 +105930,7 @@
     "productivity": {
       "lexemeCount": 5,
       "conceptCount": 3,
-      "lemmaCount": 28
+      "lemmaCount": 30
     },
     "_source": "lexemes-sync-2026",
     "wordFamily": {
@@ -104485,7 +105963,9 @@
         "L-ZERYGHETS-YXUN",
         "L-ZEGHETS-YXUN",
         "L-KEETS-YXUZHYN",
-        "L-TS-YXUSHX"
+        "L-TS-YXUSHX",
+        "L-AUTO-01433",
+        "L-AUTO-01677"
       ]
     }
   },
@@ -104504,13 +105984,14 @@
     "productivity": {
       "lexemeCount": 1,
       "conceptCount": 1,
-      "lemmaCount": 1
+      "lemmaCount": 2
     },
     "_source": "lexemes-sync-2026",
     "wordFamily": {
       "id": "WF-TEFETYEL",
       "lexemeIds": [
-        "L-TEFETELE"
+        "L-TEFETELE",
+        "L-TEFETELAGHE"
       ]
     }
   },
@@ -104622,7 +106103,7 @@
     "productivity": {
       "lexemeCount": 4,
       "conceptCount": 3,
-      "lemmaCount": 7
+      "lemmaCount": 8
     },
     "_source": "lexemes-sync-2026",
     "wordFamily": {
@@ -104630,6 +106111,7 @@
       "lexemeIds": [
         "L-MYKHEYUE",
         "L-KBD-02858",
+        "L-KHEYNYGHE",
         "L-ZYGHEKHEIN",
         "L-KEEKHEIZHYN",
         "L-KEYZESHCH-EKHEEN",
@@ -104969,7 +106451,7 @@
     "productivity": {
       "lexemeCount": 4,
       "conceptCount": 3,
-      "lemmaCount": 5
+      "lemmaCount": 6
     },
     "_source": "lexemes-sync-2026",
     "wordFamily": {
@@ -104979,7 +106461,8 @@
         "L-PYUTS-EP-YK-YN",
         "L-ZYUTS-EP-YZHYN",
         "L-PYUTS-EP-YHYN",
-        "L-ZYUTS-EP-YN"
+        "L-ZYUTS-EP-YN",
+        "L-TEUTS-EP-EN"
       ]
     }
   },
@@ -106204,7 +107687,7 @@
     "productivity": {
       "lexemeCount": 14,
       "conceptCount": 4,
-      "lemmaCount": 17
+      "lemmaCount": 18
     },
     "_source": "lexemes-sync-2026",
     "wordFamily": {
@@ -106223,6 +107706,7 @@
         "L-FYSHCH-EN",
         "L-PYFYSHCH-YK-YN",
         "L-ZEFYSHCH-EUEN",
+        "L-ZERYFYSHCH",
         "L-EGHEFYSHCH-YN",
         "L-KEEFYSHCH-YN",
         "L-TEFYSHCH-YHYN",
@@ -106341,7 +107825,7 @@
     "productivity": {
       "lexemeCount": 1,
       "conceptCount": 0,
-      "lemmaCount": 23
+      "lemmaCount": 24
     },
     "_source": "lexemes-sync-2026",
     "wordFamily": {
@@ -106352,6 +107836,7 @@
         "L-KBD-00163",
         "L-KBD-04166",
         "L-F-YTS-E",
+        "L-F1YTS1AGHE",
         "L-F-YTS-AFE",
         "L-GHEUF-YTS-YN",
         "L-KEAZHYKESHCHHEF-YTS-E",
@@ -109549,7 +111034,7 @@
     "productivity": {
       "lexemeCount": 21,
       "conceptCount": 10,
-      "lemmaCount": 45
+      "lemmaCount": 46
     },
     "_source": "lexemes-sync-2026",
     "wordFamily": {
@@ -109599,6 +111084,7 @@
         "L-PYK-UETYN",
         "L-XUEGHEK-UETEN",
         "L-SHCHHESHCHYK-UETYN",
+        "L-GHEK-UETYN",
         "L-KEYTEK-UETYN"
       ]
     }
@@ -110087,7 +111573,7 @@
     "productivity": {
       "lexemeCount": 8,
       "conceptCount": 7,
-      "lemmaCount": 33
+      "lemmaCount": 34
     },
     "_source": "lexemes-sync-2026",
     "wordFamily": {
@@ -110108,6 +111594,7 @@
         "L-KBD-04705",
         "L-KBD-04942",
         "L-KBD-04946",
+        "L-GHEK1UED",
         "L-K-UEDA",
         "L-ZETEGHEK-UEDEN",
         "L-SHCH-EK-UEDEN",
@@ -111823,13 +113310,15 @@
     "productivity": {
       "lexemeCount": 1,
       "conceptCount": 1,
-      "lemmaCount": 1
+      "lemmaCount": 3
     },
     "_source": "lexemes-sync-2026",
     "wordFamily": {
       "id": "WF-SATU",
       "lexemeIds": [
-        "L-SATUUSHCH-E"
+        "L-SATUUSHCH-E",
+        "L-AUTO-01553",
+        "L-AUTO-01554"
       ]
     }
   },
@@ -111850,14 +113339,15 @@
     "productivity": {
       "lexemeCount": 2,
       "conceptCount": 2,
-      "lemmaCount": 2
+      "lemmaCount": 3
     },
     "_source": "lexemes-sync-2026",
     "wordFamily": {
       "id": "WF-STOL",
       "lexemeIds": [
         "L-ST-OL",
-        "L-ST-OLTEPKHUE"
+        "L-ST-OLTEPKHUE",
+        "L-AUTO-01557"
       ]
     }
   },
@@ -112035,7 +113525,7 @@
     "productivity": {
       "lexemeCount": 17,
       "conceptCount": 4,
-      "lemmaCount": 35
+      "lemmaCount": 36
     },
     "_source": "lexemes-sync-2026",
     "wordFamily": {
@@ -112061,6 +113551,7 @@
         "L-SHCH-ELHESHCH-YK-YN",
         "L-ZYLHESHCH-YN",
         "L-KEILHESHCH-YK-YN",
+        "L-KEYTELHESHCH-EN",
         "L-KEYTELHESHCH-YK-YN",
         "L-XUELHESHCH-YN",
         "L-ZYK-ERYLHESHCH-YK-YN",
@@ -112169,13 +113660,14 @@
     "productivity": {
       "lexemeCount": 1,
       "conceptCount": 1,
-      "lemmaCount": 1
+      "lemmaCount": 2
     },
     "_source": "lexemes-sync-2026",
     "wordFamily": {
       "id": "WF-SHCHEGHUE",
       "lexemeIds": [
-        "L-GHESHCH-EGHUENU"
+        "L-GHESHCH-EGHUENU",
+        "L-GHESHCH-EGHUENYGHE"
       ]
     }
   },
@@ -112690,7 +114182,7 @@
     "productivity": {
       "lexemeCount": 1,
       "conceptCount": 1,
-      "lemmaCount": 12
+      "lemmaCount": 15
     },
     "_source": "lexemes-sync-2026",
     "wordFamily": {
@@ -112707,7 +114199,10 @@
         "L-KBD-03475",
         "L-KBD-03476",
         "L-MAKEYKHU",
-        "L-K-AKEMAKE"
+        "L-K-AKEMAKE",
+        "L-AUTO-01451",
+        "L-AUTO-01452",
+        "L-AUTO-01453"
       ]
     }
   },
@@ -113108,7 +114603,7 @@
     "productivity": {
       "lexemeCount": 5,
       "conceptCount": 3,
-      "lemmaCount": 8
+      "lemmaCount": 9
     },
     "_source": "lexemes-sync-2026",
     "wordFamily": {
@@ -113119,6 +114614,7 @@
         "L-KBD-04092",
         "L-ZESHCH-EPSHCH-YPSHCH-EN",
         "L-ZEXEPSHCH-YPSHCH-YK-YN",
+        "L-PSHCH-YPSHCH",
         "L-AUTO-00620",
         "L-AUTO-01016",
         "L-AUTO-01017"
@@ -113246,7 +114742,7 @@
     "productivity": {
       "lexemeCount": 2,
       "conceptCount": 2,
-      "lemmaCount": 5
+      "lemmaCount": 6
     },
     "_source": "lexemes-sync-2026",
     "wordFamily": {
@@ -113256,7 +114752,8 @@
         "L-CHENDZHESHCHEGHU",
         "L-VERIFIED-00759",
         "L-CHENDZHESHCHAK-UE",
-        "L-AUTO-01146"
+        "L-AUTO-01146",
+        "L-AUTO-01654"
       ]
     }
   },
@@ -113678,13 +115175,14 @@
     "productivity": {
       "lexemeCount": 1,
       "conceptCount": 1,
-      "lemmaCount": 1
+      "lemmaCount": 2
     },
     "_source": "lexemes-sync-2026",
     "wordFamily": {
       "id": "WF-UMEM",
       "lexemeIds": [
-        "L-UMEMEN"
+        "L-UMEMEN",
+        "L-GHEUMEMEN"
       ]
     }
   },
@@ -114855,7 +116353,7 @@
     "productivity": {
       "lexemeCount": 10,
       "conceptCount": 10,
-      "lemmaCount": 23
+      "lemmaCount": 24
     },
     "_source": "lexemes-sync-2026",
     "wordFamily": {
@@ -114883,7 +116381,8 @@
         "L-L-YGHUE-FYZYGHUE",
         "L-L-YZH-FYZYZH",
         "L-FYZABEKUEE-FYZABEPKHU",
-        "L-AUTO-00633"
+        "L-AUTO-00633",
+        "L-AUTO-01612"
       ]
     }
   },
@@ -114988,7 +116487,7 @@
     "productivity": {
       "lexemeCount": 2,
       "conceptCount": 2,
-      "lemmaCount": 6
+      "lemmaCount": 7
     },
     "_source": "lexemes-sync-2026",
     "wordFamily": {
@@ -114999,7 +116498,8 @@
         "L-KBD-04824",
         "L-KBD-04825",
         "L-KHYDZHEBZYGHE",
-        "L-KHYDZHEBZYGHUE"
+        "L-KHYDZHEBZYGHUE",
+        "L-AUTO-01629"
       ]
     }
   },
@@ -115167,7 +116667,7 @@
     "productivity": {
       "lexemeCount": 3,
       "conceptCount": 3,
-      "lemmaCount": 6
+      "lemmaCount": 8
     },
     "_source": "lexemes-sync-2026",
     "wordFamily": {
@@ -115178,7 +116678,9 @@
         "L-SHECHAK-UE",
         "L-AUTO-00764",
         "L-AUTO-01101",
-        "L-AUTO-01195"
+        "L-AUTO-01195",
+        "L-AUTO-01660",
+        "L-AUTO-01661"
       ]
     }
   },
@@ -117000,13 +118502,14 @@
     "productivity": {
       "lexemeCount": 1,
       "conceptCount": 1,
-      "lemmaCount": 1
+      "lemmaCount": 2
     },
     "_source": "lexemes-sync-2026",
     "wordFamily": {
       "id": "WF-ZAL",
       "lexemeIds": [
-        "L-ZAL"
+        "L-ZAL",
+        "L-AUTO-01560"
       ]
     }
   },
@@ -117596,7 +119099,7 @@
     "productivity": {
       "lexemeCount": 20,
       "conceptCount": 15,
-      "lemmaCount": 23
+      "lemmaCount": 24
     },
     "_source": "lexemes-sync-2026",
     "wordFamily": {
@@ -117608,6 +119111,7 @@
         "L-KEYK-ERYT-ET-YN",
         "L-KEET-ET-EN",
         "L-ZEBGRYT-ET-YN",
+        "L-XET-ET-YN",
         "L-ZEPKERYT-ET-YN",
         "L-ZE-YT-ET-YN",
         "L-K-ERYT-ET-YN",
@@ -117651,7 +119155,7 @@
     "productivity": {
       "lexemeCount": 3,
       "conceptCount": 3,
-      "lemmaCount": 7
+      "lemmaCount": 8
     },
     "_source": "lexemes-sync-2026",
     "wordFamily": {
@@ -117661,6 +119165,7 @@
         "L-KBD-05286",
         "L-KBD-05287",
         "L-KBD-05288",
+        "L-K-EZYZ",
         "L-K-EZYZYN",
         "L-KEEK-EZYZYN",
         "L-ZESHCH-EK-EZYZEN"
@@ -118124,12 +119629,13 @@
     "productivity": {
       "lexemeCount": 1,
       "conceptCount": 1,
-      "lemmaCount": 1
+      "lemmaCount": 2
     },
     "_source": "lexemes-sync-2026",
     "wordFamily": {
       "id": "WF-KHYNKEL",
       "lexemeIds": [
+        "L-KHYNK1EL",
         "L-KHYNK-EL"
       ]
     }
@@ -120129,13 +121635,14 @@
     "productivity": {
       "lexemeCount": 1,
       "conceptCount": 1,
-      "lemmaCount": 1
+      "lemmaCount": 2
     },
     "_source": "lexemes-sync-2026",
     "wordFamily": {
       "id": "WF-KHESEP",
       "lexemeIds": [
-        "L-KHESEPYL"
+        "L-KHESEPYL",
+        "L-KHESEP"
       ]
     }
   },
@@ -120885,7 +122392,7 @@
     "productivity": {
       "lexemeCount": 2,
       "conceptCount": 2,
-      "lemmaCount": 4
+      "lemmaCount": 5
     },
     "_source": "lexemes-sync-2026",
     "wordFamily": {
@@ -120894,6 +122401,7 @@
         "L-VERIFIED-02065",
         "L-KBD-02445",
         "L-KEEKEEIN",
+        "L-KEEKEEY",
         "L-DEKEEIN"
       ]
     }
@@ -120920,7 +122428,7 @@
     "productivity": {
       "lexemeCount": 3,
       "conceptCount": 2,
-      "lemmaCount": 7
+      "lemmaCount": 8
     },
     "_source": "lexemes-sync-2026",
     "wordFamily": {
@@ -120928,6 +122436,7 @@
       "lexemeIds": [
         "L-KBD-04788",
         "L-KBD-04789",
+        "L-KHUNSHCH1YN",
         "L-KHUNSHCH-EN",
         "L-KEEKHUNSHCH-EN",
         "L-KHUNSHCH-EPSYNSHCH-EU",
@@ -121756,7 +123265,7 @@
     "productivity": {
       "lexemeCount": 4,
       "conceptCount": 2,
-      "lemmaCount": 11
+      "lemmaCount": 12
     },
     "_source": "lexemes-sync-2026",
     "wordFamily": {
@@ -121768,6 +123277,7 @@
         "L-KBD-00388",
         "L-KBD-02003",
         "L-SHCH-EUBGHUEN",
+        "L-UBGHUEN",
         "L-ZYK-ERYUBGHUEN",
         "L-ZYUBGHUAUE",
         "L-XUEUBGHUN",
@@ -122088,12 +123598,13 @@
     "productivity": {
       "lexemeCount": 1,
       "conceptCount": 1,
-      "lemmaCount": 1
+      "lemmaCount": 2
     },
     "_source": "lexemes-sync-2026",
     "wordFamily": {
       "id": "WF-GHEPSHCHKUA",
       "lexemeIds": [
+        "L-GHEPSHCHK-UA",
         "L-GHEPSHCHK-UAUE"
       ]
     }
@@ -122911,7 +124422,7 @@
     "productivity": {
       "lexemeCount": 1,
       "conceptCount": 1,
-      "lemmaCount": 5
+      "lemmaCount": 6
     },
     "_source": "lexemes-sync-2026",
     "wordFamily": {
@@ -122921,7 +124432,8 @@
         "L-UZIZHEGHUEN",
         "L-UZIZHEGHUENU",
         "L-ZHEGHURNAU",
-        "L-SHCHHEZHEGHUEN-KBD"
+        "L-SHCHHEZHEGHUEN-KBD",
+        "L-ZHEGHU-ADY"
       ]
     }
   },
@@ -123613,12 +125125,13 @@
     "productivity": {
       "lexemeCount": 1,
       "conceptCount": 1,
-      "lemmaCount": 1
+      "lemmaCount": 2
     },
     "_source": "lexemes-sync-2026",
     "wordFamily": {
       "id": "WF-QHIQH",
       "lexemeIds": [
+        "L-KEIKE",
         "L-KEIKEYU"
       ]
     }
@@ -124335,12 +125848,13 @@
     "productivity": {
       "lexemeCount": 1,
       "conceptCount": 1,
-      "lemmaCount": 1
+      "lemmaCount": 2
     },
     "_source": "lexemes-sync-2026",
     "wordFamily": {
       "id": "WF-GHYEYSHYEY",
       "lexemeIds": [
+        "L-GHEYSHEY",
         "L-GHEYSHEIN"
       ]
     }
@@ -124576,7 +126090,7 @@
     "productivity": {
       "lexemeCount": 1,
       "conceptCount": 1,
-      "lemmaCount": 8
+      "lemmaCount": 9
     },
     "_source": "lexemes-sync-2026",
     "wordFamily": {
@@ -124589,7 +126103,8 @@
         "L-DZYHMYSHCH",
         "L-DZYHMYSHCH-YNYGHE",
         "L-DZEUEKUEEDZYH",
-        "L-DZYHSHCH-YGHUEDZHAGH-E"
+        "L-DZYHSHCH-YGHUEDZHAGH-E",
+        "L-AUTO-01329"
       ]
     }
   },
@@ -125047,13 +126562,14 @@
     "productivity": {
       "lexemeCount": 1,
       "conceptCount": 1,
-      "lemmaCount": 1
+      "lemmaCount": 2
     },
     "_source": "lexemes-sync-2026",
     "wordFamily": {
       "id": "WF-UZESHCH",
       "lexemeIds": [
-        "L-UZESHCH-AK-UE"
+        "L-UZESHCH-AK-UE",
+        "L-UZESHCH-YN"
       ]
     }
   },
@@ -125382,7 +126898,7 @@
     "productivity": {
       "lexemeCount": 4,
       "conceptCount": 2,
-      "lemmaCount": 17
+      "lemmaCount": 19
     },
     "_source": "lexemes-sync-2026",
     "wordFamily": {
@@ -125401,8 +126917,10 @@
         "L-KBD-01803",
         "L-KBD-04083",
         "L-KBD-04304",
+        "L-LHYT",
         "L-ZEGHELHYTEN",
         "L-ZERYLHYTEN",
+        "L-LHYTAGHE",
         "L-ZEXELHYTEN",
         "L-ZELHYTYN"
       ]
@@ -125479,12 +126997,13 @@
     "productivity": {
       "lexemeCount": 1,
       "conceptCount": 1,
-      "lemmaCount": 1
+      "lemmaCount": 2
     },
     "_source": "lexemes-sync-2026",
     "wordFamily": {
       "id": "WF-YHSHYH",
       "lexemeIds": [
+        "L-YHSHYHYN",
         "L-ZYGHE-YHSHYHYN"
       ]
     }
@@ -125652,7 +127171,7 @@
     "productivity": {
       "lexemeCount": 1,
       "conceptCount": 1,
-      "lemmaCount": 8
+      "lemmaCount": 9
     },
     "_source": "lexemes-sync-2026",
     "wordFamily": {
@@ -125665,7 +127184,8 @@
         "L-VERIFIED-02194",
         "L-KBD-03223",
         "L-KBD-05320",
-        "L-ZYZEPSHCHYTYN"
+        "L-ZYZEPSHCHYTYN",
+        "L-KEEPSHCHYT"
       ]
     }
   },
@@ -125984,13 +127504,14 @@
     "productivity": {
       "lexemeCount": 1,
       "conceptCount": 1,
-      "lemmaCount": 1
+      "lemmaCount": 2
     },
     "_source": "lexemes-sync-2026",
     "wordFamily": {
       "id": "WF-NYBZHEGHU",
       "lexemeIds": [
-        "L-ZERYGHENYBZHEGHUN"
+        "L-ZERYGHENYBZHEGHUN",
+        "L-AUTO-01413"
       ]
     }
   },
@@ -127229,7 +128750,7 @@
     "productivity": {
       "lexemeCount": 2,
       "conceptCount": 1,
-      "lemmaCount": 9
+      "lemmaCount": 10
     },
     "_source": "lexemes-sync-2026",
     "wordFamily": {
@@ -127243,6 +128764,7 @@
         "L-VERIFIED-00874",
         "L-KEABZABZE",
         "L-KEABZENYGHE",
+        "L-GHEKEABZEN",
         "L-KEABZAGH-E"
       ]
     }
@@ -128704,13 +130226,14 @@
     "productivity": {
       "lexemeCount": 1,
       "conceptCount": 1,
-      "lemmaCount": 1
+      "lemmaCount": 2
     },
     "_source": "lexemes-sync-2026",
     "wordFamily": {
       "id": "WF-SALAT",
       "lexemeIds": [
-        "L-SALAT"
+        "L-SALAT",
+        "L-AUTO-01551"
       ]
     }
   },
@@ -129534,7 +131057,7 @@
     "productivity": {
       "lexemeCount": 2,
       "conceptCount": 2,
-      "lemmaCount": 5
+      "lemmaCount": 6
     },
     "_source": "lexemes-sync-2026",
     "wordFamily": {
@@ -129544,7 +131067,8 @@
         "L-KBD-00958",
         "L-DINYNSHAGHE",
         "L-AUTO-00536",
-        "L-AUTO-00537"
+        "L-AUTO-00537",
+        "L-AUTO-01333"
       ]
     }
   },
@@ -130212,13 +131736,14 @@
     "productivity": {
       "lexemeCount": 1,
       "conceptCount": 1,
-      "lemmaCount": 1
+      "lemmaCount": 2
     },
     "_source": "lexemes-sync-2026",
     "wordFamily": {
       "id": "WF-EPOPYEY",
       "lexemeIds": [
-        "L-EPOPEE"
+        "L-EPOPEE",
+        "L-EPOPEY"
       ]
     }
   },
@@ -131685,13 +133210,14 @@
     "productivity": {
       "lexemeCount": 1,
       "conceptCount": 1,
-      "lemmaCount": 1
+      "lemmaCount": 2
     },
     "_source": "lexemes-sync-2026",
     "wordFamily": {
       "id": "WF-AGROTYEXNIK",
       "lexemeIds": [
-        "L-AGROTEXNIKE"
+        "L-AGROTEXNIKE",
+        "L-AGROTEXNIK"
       ]
     }
   },
@@ -133099,13 +134625,14 @@
     "productivity": {
       "lexemeCount": 1,
       "conceptCount": 1,
-      "lemmaCount": 1
+      "lemmaCount": 2
     },
     "_source": "lexemes-sync-2026",
     "wordFamily": {
       "id": "WF-BANKROT",
       "lexemeIds": [
-        "L-BANKROT"
+        "L-BANKROT",
+        "L-AUTO-01293"
       ]
     }
   },
@@ -133224,13 +134751,14 @@
     "productivity": {
       "lexemeCount": 1,
       "conceptCount": 1,
-      "lemmaCount": 1
+      "lemmaCount": 2
     },
     "_source": "lexemes-sync-2026",
     "wordFamily": {
       "id": "WF-BATARYEY",
       "lexemeIds": [
-        "L-BATAREE"
+        "L-BATAREE",
+        "L-BATAREY"
       ]
     }
   },
@@ -135935,14 +137463,15 @@
     "productivity": {
       "lexemeCount": 1,
       "conceptCount": 1,
-      "lemmaCount": 2
+      "lemmaCount": 3
     },
     "_source": "lexemes-sync-2026",
     "wordFamily": {
       "id": "WF-JYJ",
       "lexemeIds": [
         "L-NEDZHYDZH",
-        "L-DZHYDZHYN"
+        "L-DZHYDZHYN",
+        "L-DZHYDZHEN"
       ]
     }
   },
@@ -137568,12 +139097,13 @@
     "productivity": {
       "lexemeCount": 1,
       "conceptCount": 1,
-      "lemmaCount": 1
+      "lemmaCount": 2
     },
     "_source": "lexemes-sync-2026",
     "wordFamily": {
       "id": "WF-ZASHCHE",
       "lexemeIds": [
+        "L-GHEZASHCH1E",
         "L-ZYGHEZASHCH-E"
       ]
     }
@@ -137958,12 +139488,13 @@
     "productivity": {
       "lexemeCount": 2,
       "conceptCount": 1,
-      "lemmaCount": 2
+      "lemmaCount": 3
     },
     "_source": "lexemes-sync-2026",
     "wordFamily": {
       "id": "WF-SHESHCH",
       "lexemeIds": [
+        "L-KEESHESHCH-YN",
         "L-ZYZETESHESHCH-EN",
         "L-ZYSHESHCH-YN"
       ]
@@ -141801,13 +143332,14 @@
     "productivity": {
       "lexemeCount": 1,
       "conceptCount": 1,
-      "lemmaCount": 1
+      "lemmaCount": 2
     },
     "_source": "lexemes-sync-2026",
     "wordFamily": {
       "id": "WF-MATYEMATIK",
       "lexemeIds": [
-        "L-MATEMATIKE"
+        "L-MATEMATIKE",
+        "L-MATEMATIK"
       ]
     }
   },
@@ -143199,12 +144731,13 @@
     "productivity": {
       "lexemeCount": 1,
       "conceptCount": 1,
-      "lemmaCount": 1
+      "lemmaCount": 2
     },
     "_source": "lexemes-sync-2026",
     "wordFamily": {
       "id": "WF-ORBIT",
       "lexemeIds": [
+        "L-ORBIT",
         "L-ORBITE"
       ]
     }
@@ -146507,7 +148040,7 @@
     "productivity": {
       "lexemeCount": 1,
       "conceptCount": 1,
-      "lemmaCount": 4
+      "lemmaCount": 5
     },
     "_source": "lexemes-sync-2026",
     "wordFamily": {
@@ -146516,7 +148049,8 @@
         "L-TUTYN",
         "L-VERIFIED-01084",
         "L-VERIFIED-01973",
-        "L-TUTYNSAXUALHE"
+        "L-TUTYNSAXUALHE",
+        "L-AUTO-01575"
       ]
     }
   },
@@ -147487,12 +149021,13 @@
     "productivity": {
       "lexemeCount": 1,
       "conceptCount": 1,
-      "lemmaCount": 1
+      "lemmaCount": 2
     },
     "_source": "lexemes-sync-2026",
     "wordFamily": {
       "id": "WF-KHUASK",
       "lexemeIds": [
+        "L-KHUASK",
         "L-KHUASK-E"
       ]
     }
@@ -147806,7 +149341,7 @@
     "productivity": {
       "lexemeCount": 2,
       "conceptCount": 2,
-      "lemmaCount": 10
+      "lemmaCount": 11
     },
     "_source": "lexemes-sync-2026",
     "wordFamily": {
@@ -147821,7 +149356,8 @@
         "L-SHCH-ETS-YVEN",
         "L-TS-YVHEPAT-E",
         "L-SHCH-EGHETS-YVEN",
-        "L-AUTO-01152"
+        "L-AUTO-01152",
+        "L-AUTO-01645"
       ]
     }
   },
@@ -148492,7 +150028,7 @@
     "productivity": {
       "lexemeCount": 3,
       "conceptCount": 3,
-      "lemmaCount": 3
+      "lemmaCount": 4
     },
     "_source": "lexemes-sync-2026",
     "wordFamily": {
@@ -148500,7 +150036,8 @@
       "lexemeIds": [
         "L-SHEXUDE",
         "L-SHEXUFE",
-        "L-AUTO-01194"
+        "L-AUTO-01194",
+        "L-AUTO-01659"
       ]
     }
   },
@@ -148974,13 +150511,14 @@
     "productivity": {
       "lexemeCount": 1,
       "conceptCount": 1,
-      "lemmaCount": 1
+      "lemmaCount": 2
     },
     "_source": "lexemes-sync-2026",
     "wordFamily": {
       "id": "WF-ELYEKTRON",
       "lexemeIds": [
-        "L-ELEKTRON"
+        "L-ELEKTRON",
+        "L-AUTO-01690"
       ]
     }
   },
@@ -149830,12 +151368,13 @@
     "productivity": {
       "lexemeCount": 1,
       "conceptCount": 1,
-      "lemmaCount": 1
+      "lemmaCount": 2
     },
     "_source": "lexemes-sync-2026",
     "wordFamily": {
       "id": "WF-FEMYUEXUNYGHE",
       "lexemeIds": [
+        "L-F-EMY-UEXUNYGHE",
         "L-KEYF-EMY-UEXUNYGHE"
       ]
     }
@@ -150846,13 +152385,14 @@
     "productivity": {
       "lexemeCount": 2,
       "conceptCount": 2,
-      "lemmaCount": 2
+      "lemmaCount": 3
     },
     "_source": "lexemes-sync-2026",
     "wordFamily": {
       "id": "WF-SHCHYK",
       "lexemeIds": [
         "L-KEYXESHCH-YK-A",
+        "L-XESHCH-YK",
         "L-AUTO-01149"
       ]
     }
@@ -152501,7 +154041,7 @@
     "productivity": {
       "lexemeCount": 1,
       "conceptCount": 1,
-      "lemmaCount": 4
+      "lemmaCount": 5
     },
     "_source": "lexemes-sync-2026",
     "wordFamily": {
@@ -152510,6 +154050,7 @@
         "L-XUEY",
         "L-ZERYXUEYUE",
         "L-KBD-01926",
+        "L-XUEYYN",
         "L-ZYXUEY-ZYXUEF"
       ]
     }
@@ -155176,7 +156717,7 @@
     "productivity": {
       "lexemeCount": 1,
       "conceptCount": 1,
-      "lemmaCount": 3
+      "lemmaCount": 4
     },
     "_source": "lexemes-sync-2026",
     "wordFamily": {
@@ -155184,6 +156725,7 @@
       "lexemeIds": [
         "L-EPKHASHELHEPKHASHE",
         "L-EPKHASHELHEPKHASHEU",
+        "L-PKHASHAGHE",
         "L-AUTO-00940"
       ]
     }
@@ -156665,12 +158207,13 @@
     "productivity": {
       "lexemeCount": 1,
       "conceptCount": 1,
-      "lemmaCount": 1
+      "lemmaCount": 2
     },
     "_source": "lexemes-sync-2026",
     "wordFamily": {
       "id": "WF-FYTSE",
       "lexemeIds": [
+        "L-F1YTS1E",
         "L-EF-YTS-EK-YN"
       ]
     }
@@ -158682,7 +160225,7 @@
       "kabardian": "нэхъ"
     },
     "productivity": {
-      "lemmaCount": 27,
+      "lemmaCount": 28,
       "corpusFrequency": 0,
       "compoundCount": 0
     },
@@ -158715,6 +160258,7 @@
         "L-AUTO-00900",
         "L-AUTO-00901",
         "L-AUTO-00902",
+        "L-AUTO-01691",
         "L-NEKHYZH-2",
         "L-NEKHYSHCH-E"
       ]
@@ -158867,7 +160411,7 @@
       "kabardian": "жыг"
     },
     "productivity": {
-      "lemmaCount": 21,
+      "lemmaCount": 22,
       "corpusFrequency": 0,
       "compoundCount": 0
     },
@@ -158890,6 +160434,7 @@
         "L-ZHYGKEESHCH",
         "L-ZHYGYU-U",
         "L-ZHYGYSHCHHERYS",
+        "L-AUTO-00057",
         "L-AUTO-00593",
         "L-AUTO-00594",
         "L-AUTO-01063",
@@ -159154,7 +160699,7 @@
       "kabardian": "гугъу"
     },
     "productivity": {
-      "lemmaCount": 15,
+      "lemmaCount": 16,
       "corpusFrequency": 0,
       "compoundCount": 0
     },
@@ -159175,6 +160720,7 @@
         "L-GUGHUEHYNSHE",
         "L-GUGHUEHYPSHCH-E",
         "L-SHCHHEEMYGUGHU",
+        "L-ZEGUGHU",
         "L-AUTO-00485",
         "L-AUTO-00649"
       ]
@@ -159942,7 +161488,7 @@
       "kabardian": "Ӏущ"
     },
     "productivity": {
-      "lemmaCount": 11,
+      "lemmaCount": 12,
       "corpusFrequency": 0,
       "compoundCount": 0
     },
@@ -159958,6 +161504,7 @@
         "L-KBD-04700",
         "L-K-ESHCH-USHCH",
         "L-GHE-USHCHYN",
+        "L-USHCHAGHE",
         "L-USHCHYZH",
         "L-AUTO-00684",
         "L-AUTO-01259"
@@ -160334,7 +161881,7 @@
       "kabardian": "хъун"
     },
     "productivity": {
-      "lemmaCount": 9,
+      "lemmaCount": 11,
       "corpusFrequency": 0,
       "compoundCount": 0
     },
@@ -160350,7 +161897,9 @@
         "L-KHUNK-E",
         "L-KHUNGHAL-E",
         "L-AUTO-00440",
-        "L-AUTO-00684"
+        "L-AUTO-00684",
+        "L-AUTO-01282",
+        "L-AUTO-01293"
       ]
     }
   },
@@ -160999,7 +162548,7 @@
       "kabardian": "сурэт"
     },
     "productivity": {
-      "lemmaCount": 6,
+      "lemmaCount": 7,
       "corpusFrequency": 0,
       "compoundCount": 0
     },
@@ -161012,7 +162561,8 @@
         "L-KBD-04174",
         "L-SURETYNSHE",
         "L-SURETYNSHAGHE",
-        "L-SURETYLHE"
+        "L-SURETYLHE",
+        "L-AUTO-01561"
       ]
     }
   },
@@ -162190,7 +163740,7 @@
       "kabardian": "гушыӀ"
     },
     "productivity": {
-      "lemmaCount": 4,
+      "lemmaCount": 5,
       "corpusFrequency": 4,
       "compoundCount": 3,
       "adyFreq": 0,
@@ -162203,7 +163753,8 @@
         "L-DEGUSHY1EN",
         "L-KBD-00601",
         "L-KBD-04262",
-        "L-KEYDEGUSHY-EN"
+        "L-KEYDEGUSHY-EN",
+        "L-GHEGUSHY-EN"
       ]
     }
   },
@@ -162814,7 +164365,7 @@
       "kabardian": "хьэулей"
     },
     "productivity": {
-      "lemmaCount": 4,
+      "lemmaCount": 5,
       "corpusFrequency": 17,
       "compoundCount": 3,
       "adyFreq": 0,
@@ -162826,6 +164377,7 @@
       "lexemeIds": [
         "L-HEULEY",
         "L-KBD-04921",
+        "L-GHEHEULEY",
         "L-K-ELHYHEULEIN",
         "L-EHEULEIL-EN"
       ]
@@ -164009,7 +165561,7 @@
       "kabardian": "гуп"
     },
     "productivity": {
-      "lemmaCount": 3,
+      "lemmaCount": 4,
       "corpusFrequency": 329,
       "compoundCount": 1,
       "adyFreq": 0,
@@ -164021,7 +165573,8 @@
       "lexemeIds": [
         "L-GUP",
         "L-GUPE",
-        "L-AUTO-00650"
+        "L-AUTO-00650",
+        "L-AUTO-01628"
       ]
     }
   },
@@ -164133,7 +165686,7 @@
       "kabardian": "ерыщ"
     },
     "productivity": {
-      "lemmaCount": 3,
+      "lemmaCount": 4,
       "corpusFrequency": 144,
       "compoundCount": 1,
       "adyFreq": 0,
@@ -164145,7 +165698,8 @@
       "lexemeIds": [
         "L-ERYSHCHU",
         "L-ERYSHCH",
-        "L-ERYSHCHYGHE"
+        "L-ERYSHCHYGHE",
+        "L-ERYSHCHYN"
       ]
     }
   },
@@ -164226,7 +165780,7 @@
       "kabardian": "бжьамий"
     },
     "productivity": {
-      "lemmaCount": 3,
+      "lemmaCount": 4,
       "corpusFrequency": 43,
       "compoundCount": 2,
       "adyFreq": 0,
@@ -164238,7 +165792,8 @@
       "lexemeIds": [
         "L-BZHAMIY",
         "L-KBD-00379",
-        "L-UDZBZHAMIY"
+        "L-UDZBZHAMIY",
+        "L-AUTO-01298"
       ]
     }
   },
@@ -165152,7 +166707,7 @@
       "kabardian": "барин"
     },
     "productivity": {
-      "lemmaCount": 3,
+      "lemmaCount": 4,
       "corpusFrequency": 9,
       "compoundCount": 2,
       "adyFreq": 0,
@@ -165163,6 +166718,7 @@
       "id": "WF-BARIN",
       "lexemeIds": [
         "L-BARINE",
+        "L-BARIN",
         "L-AUTO-00403",
         "L-AUTO-00522"
       ]
