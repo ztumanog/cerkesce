@@ -1,11 +1,11 @@
-﻿import { describe, it, expect, beforeEach } from 'vitest';
+import { describe, it, expect, beforeEach } from 'vitest';
 import { DialectCode } from '@/domain/dialect/types/DialectTypes';
 import { MultilingualExplorer } from '../../domain/discovery/services/MultilingualExplorer';
 import { GraphTraversalService } from '../../domain/discovery/services/GraphTraversalService';
 import { DiscoveryAssembler } from '../../domain/discovery/services/DiscoveryAssembler';
 import { MeaningGraph } from '../../domain/concept/services/MeaningGraph';
 import { Concept } from '../../domain/concept/Concept';
-import { ConceptID } from '../../domain/concept/value-objects/ConceptID';
+import { ConceptId } from '../../domain/shared/value-objects/ConceptId';
 import { InMemoryTranslationRepository } from '../../repository/InMemoryTranslationRepository';
 import { InMemoryConceptRepository } from '../../repository/InMemoryConceptRepository';
 import { TranslationService } from '../../services/TranslationService';
@@ -33,11 +33,11 @@ describe('Phase 5.1 Sprint 5: True Domain Construction E2E Certification', () =>
     } as any);
 
     // 2. Domain Concept Nesneleri
-    const conceptWater = new Concept({ id: ConceptID.create('CONCEPT_WATER') as any, preferredLabel: 'Water' });
-    const conceptIce = new Concept({ id: ConceptID.create('CONCEPT_ICE') as any, preferredLabel: 'Ice' });
-    const conceptRiver = new Concept({ id: ConceptID.create('CONCEPT_RIVER') as any, preferredLabel: 'River' });
-    const conceptLiquid = new Concept({ id: ConceptID.create('CONCEPT_LIQUID') as any, preferredLabel: 'Liquid' });
-    const conceptSteam = new Concept({ id: ConceptID.create('CONCEPT_STEAM') as any, preferredLabel: 'Steam' });
+    const conceptWater = new Concept({ id: ConceptId.create('CONCEPT_WATER') as any, preferredLabel: 'Water' });
+    const conceptIce = new Concept({ id: ConceptId.create('CONCEPT_ICE') as any, preferredLabel: 'Ice' });
+    const conceptRiver = new Concept({ id: ConceptId.create('CONCEPT_RIVER') as any, preferredLabel: 'River' });
+    const conceptLiquid = new Concept({ id: ConceptId.create('CONCEPT_LIQUID') as any, preferredLabel: 'Liquid' });
+    const conceptSteam = new Concept({ id: ConceptId.create('CONCEPT_STEAM') as any, preferredLabel: 'Steam' });
 
     conceptRepo.save(conceptWater);
     conceptRepo.save(conceptIce);

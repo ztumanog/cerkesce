@@ -1,16 +1,15 @@
-import { ConceptID } from '@/domain/concept/value-objects/ConceptID';
 import { ConceptId } from '@/domain/shared/value-objects/ConceptId';
 import { ConceptRelation } from '@/domain/concept/types/ConceptRelation';
 
 export interface ConceptProps {
-  id: ConceptID | ConceptId | string;
+  id: ConceptId | string;
   preferredLabel?: string;
   description?: string;
   relations?: ConceptRelation[];
 }
 
 export class Concept {
-  readonly id: ConceptID;
+  readonly id: ConceptId;
   readonly preferredLabel: string;
   readonly description: string;
   readonly relations: ConceptRelation[];
@@ -19,19 +18,16 @@ export class Concept {
     const rawId =
       typeof props.id === 'string'
         ? props.id
-        : props.id instanceof ConceptID
-          ? props.id.getValue()
-          : props.id?.value;
+        : props.id.value;
 
-    const canonical = ConceptId.create(rawId);
-    this.id = props.id instanceof ConceptID ? props.id : ConceptID.create(canonical.value);
+    this.id = ConceptId.create(rawId);
     this.preferredLabel = props.preferredLabel ?? '';
     this.description = props.description ?? '';
     this.relations = props.relations ?? [];
   }
 
   public static create(
-    id: ConceptID | ConceptId | string,
+    id: ConceptId | string,
     preferredLabel: string,
     description: string = ''
   ): Concept {

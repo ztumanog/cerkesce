@@ -8,7 +8,7 @@
 import { InMemoryConceptRepository } from '../repository/InMemoryConceptRepository';
 import { MeaningConceptLinker } from '../domain/concept/services/MeaningConceptLinker';
 import { MeaningGraph } from '../domain/concept/services/MeaningGraph';
-import { ConceptID } from '../domain/concept/value-objects/ConceptID';
+import { ConceptId } from '../domain/shared/value-objects/ConceptId';
 import { Concept } from '../domain/concept/Concept';
 
 /**
@@ -59,7 +59,7 @@ export class ConceptFacade {
    * @returns Bulunan Concept veya null
    */
   async findConceptById(id: string): Promise<Concept | null> {
-    const conceptId = ConceptID.create(id);
+    const conceptId = ConceptId.create(id);
     return this.repo.findById(conceptId.getValue()) as any;
   }
 }

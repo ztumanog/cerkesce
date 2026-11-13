@@ -1,8 +1,8 @@
-﻿import { describe, it, expect } from 'vitest';
+import { describe, it, expect } from 'vitest';
 import { DialectCode } from '@/domain/dialect/types/DialectTypes';
 import { MultilingualExplorer } from '../../../domain/discovery/services/MultilingualExplorer';
 import { GraphTraversalService } from '../../../domain/discovery/services/GraphTraversalService';
-import { ConceptID } from '../../../domain/concept/value-objects/ConceptID';
+import { ConceptId } from '../../../domain/shared/value-objects/ConceptId';
 import { DiscoveryRelationType } from '../../../domain/discovery/types/DiscoveryRelationType';
 
 class ProductionTranslationRepository {
@@ -20,7 +20,7 @@ class ProductionMeaningConceptLinker {
   }
   async resolveConcept(meaningId: string) {
     const link = this.links.get(meaningId);
-    return link ? { id: ConceptID.create(link.conceptId), canonicalName: link.canonicalName } : null;
+    return link ? { id: ConceptId.create(link.conceptId), canonicalName: link.canonicalName } : null;
   }
 }
 

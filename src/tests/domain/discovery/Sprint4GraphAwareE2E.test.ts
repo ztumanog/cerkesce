@@ -1,11 +1,11 @@
-﻿import { describe, it, expect, beforeEach } from 'vitest';
+import { describe, it, expect, beforeEach } from 'vitest';
 import { DialectCode } from '@/domain/dialect/types/DialectTypes';
 import { MultilingualExplorer } from '../../../domain/discovery/services/MultilingualExplorer';
 import { GraphTraversalService } from '../../../domain/discovery/services/GraphTraversalService';
 import { DiscoveryAssembler } from '../../../domain/discovery/services/DiscoveryAssembler';
 import { MeaningGraph } from '../../../domain/concept/services/MeaningGraph';
 import { Concept } from '../../../domain/concept/Concept';
-import { ConceptID } from '../../../domain/concept/value-objects/ConceptID';
+import { ConceptId } from '../../../domain/shared/value-objects/ConceptId';
 
 describe('Phase 5.1 Sprint 4: Graph-Aware Discovery E2E Certification', () => {
   let meaningGraph: MeaningGraph;
@@ -16,11 +16,11 @@ describe('Phase 5.1 Sprint 4: Graph-Aware Discovery E2E Certification', () => {
     meaningGraph = new MeaningGraph();
 
     // Create valid ULID-based ConceptIDs
-    const waterID = ConceptID.create('WATER');
-    const iceID = ConceptID.create('ICE');
-    const riverID = ConceptID.create('RIVER');
-    const liquidID = ConceptID.create('TREE');
-    const steamID = ConceptID.create('HORSE');
+    const waterID = ConceptId.create('WATER');
+    const iceID = ConceptId.create('ICE');
+    const riverID = ConceptId.create('RIVER');
+    const liquidID = ConceptId.create('TREE');
+    const steamID = ConceptId.create('HORSE');
 
     // 1. Concept Tanımları ve İlişkiler - USE PROPER CONSTRUCTOR
     const conceptWater = Concept.create(waterID, 'Water');

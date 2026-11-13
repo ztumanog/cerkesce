@@ -4,7 +4,7 @@ import { InMemoryConceptRepository } from '../../repository/InMemoryConceptRepos
 import { MeaningConceptLinker } from '../../domain/concept/services/MeaningConceptLinker';
 import { MeaningGraph } from '../../domain/concept/services/MeaningGraph';
 import { Concept } from '../../domain/concept/Concept';
-import { ConceptID } from '../../domain/concept/value-objects/ConceptID';
+import { ConceptId } from '../../domain/shared/value-objects/ConceptId';
 
 describe('Phase 4: CE-15 - ConceptFacade & Cross-Lingual Search Pipeline', () => {
   let repo: InMemoryConceptRepository;
@@ -21,7 +21,7 @@ describe('Phase 4: CE-15 - ConceptFacade & Cross-Lingual Search Pipeline', () =>
 
   it('Meaning ID üzerinden çapraz anlamsal arama yapıp ilişkili düğümleri getirmelidir', async () => {
     const conceptIdStr = 'TEST_CONCEPT_1';
-    const conceptId = ConceptID.create(conceptIdStr);
+    const conceptId = ConceptId.create(conceptIdStr);
 
     const concept = new Concept({ id: conceptId, relations: [] });
     await repo.save(concept);

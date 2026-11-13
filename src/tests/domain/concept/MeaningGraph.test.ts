@@ -1,8 +1,8 @@
-﻿import { describe, it, expect, beforeEach } from 'vitest';
+import { describe, it, expect, beforeEach } from 'vitest';
 import { MeaningGraph } from '../../../domain/concept/services/MeaningGraph';
 import { InMemoryConceptRepository } from '../../../repository/InMemoryConceptRepository';
 import { Concept } from '../../../domain/concept/Concept';
-import { ConceptID } from '../../../domain/concept/value-objects/ConceptID';
+import { ConceptId } from '../../../domain/shared/value-objects/ConceptId';
 import { RelationDirection, RelationType } from '../../../domain/concept/types/ConceptRelation';
 
 describe('Sprint 4: CE-05 to CE-08 & CE-11 - MeaningGraph Engine', () => {
@@ -15,9 +15,9 @@ describe('Sprint 4: CE-05 to CE-08 & CE-11 - MeaningGraph Engine', () => {
   });
 
   it('CE-11: Anayasal Depth=2 sÄ±nÄ±rÄ±nda iliÅŸki aÄŸÄ±nÄ± doÄŸru taramalÄ±dÄ±r', async () => {
-    const idA = ConceptID.create('TEST_CONCEPT_1');
-    const idB = ConceptID.create('TEST_CONCEPT_2');
-    const idC = ConceptID.create('TEST_CONCEPT_3');
+    const idA = ConceptId.create('TEST_CONCEPT_1');
+    const idB = ConceptId.create('TEST_CONCEPT_2');
+    const idC = ConceptId.create('TEST_CONCEPT_3');
 
     // A -> B (Depth 1)
     const conceptA = new Concept({
@@ -45,9 +45,9 @@ describe('Sprint 4: CE-05 to CE-08 & CE-11 - MeaningGraph Engine', () => {
   });
 
   it('CE-05 & CE-06: EÅŸ ve ZÄ±t anlamlÄ± iliÅŸkileri filtreleyebilmelidir', async () => {
-    const idMain = ConceptID.create('TEST_CONCEPT_1');
-    const idSyn = ConceptID.create('TEST_CONCEPT_2');
-    const idAnt = ConceptID.create('TEST_CONCEPT_3');
+    const idMain = ConceptId.create('TEST_CONCEPT_1');
+    const idSyn = ConceptId.create('TEST_CONCEPT_2');
+    const idAnt = ConceptId.create('TEST_CONCEPT_3');
 
     const mainConcept = new Concept({
       id: idMain,

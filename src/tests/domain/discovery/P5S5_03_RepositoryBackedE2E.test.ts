@@ -1,8 +1,8 @@
-﻿import { describe, it, expect } from 'vitest';
+import { describe, it, expect } from 'vitest';
 import { DialectCode } from '@/domain/dialect/types/DialectTypes';
 import { MultilingualExplorer } from '../../../domain/discovery/services/MultilingualExplorer';
 import { Concept } from '../../../domain/concept/Concept';
-import { ConceptID } from '../../../domain/concept/value-objects/ConceptID';
+import { ConceptId } from '../../../domain/shared/value-objects/ConceptId';
 import { DiscoveryRelationType } from '../../../domain/discovery/types/DiscoveryRelationType';
 
 // Real In-Memory Repository Adapters for P5S5-03
@@ -34,7 +34,7 @@ class RealMeaningConceptLinker {
     const link = this.links.get(meaningId);
     if (!link) return null;
     return {
-      id: ConceptID.create(link.conceptId),
+      id: ConceptId.create(link.conceptId),
       canonicalName: link.canonicalName
     };
   }

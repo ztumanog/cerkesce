@@ -2,7 +2,7 @@ import { describe, it, expect, beforeEach } from 'vitest';
 import { InMemoryConceptRepository } from '../../../repository/InMemoryConceptRepository';
 import { MeaningGraph } from '../../../domain/concept/services/MeaningGraph';
 import { Concept } from '../../../domain/concept/Concept';
-import { ConceptID } from '../../../domain/concept/value-objects/ConceptID';
+import { ConceptId } from '../../../domain/shared/value-objects/ConceptId';
 import { RelationDirection, RelationType } from '../../../domain/concept/types/ConceptRelation';
 
 describe('Sprint 5: CE-12 - Phase 3 Concept Engine Stress & Performance', () => {
@@ -23,7 +23,7 @@ describe('Sprint 5: CE-12 - Phase 3 Concept Engine Stress & Performance', () => 
       const targetStr = 'CONCEPT_' + String((i + 1) % count).padStart(5, '0');
 
       const concept = new Concept({
-        id: ConceptID.create(idStr),
+        id: ConceptId.create(idStr),
         relations: [
           {
             id: 'rel-' + i,
@@ -42,14 +42,14 @@ describe('Sprint 5: CE-12 - Phase 3 Concept Engine Stress & Performance', () => 
 
   it('2. 10.000 düğümlü graf üzerinde Depth=2 taraması 50ms altında yanıt vermelidir', async () => {
     const rootIdStr = 'CONCEPT_00000';
-    const rootId = ConceptID.create(rootIdStr);
+    const rootId = ConceptId.create(rootIdStr);
 
     for (let i = 0; i < 50; i++) {
       const currentIdStr = 'CONCEPT_' + String(i).padStart(5, '0');
       const nextIdStr = 'CONCEPT_' + String(i + 1).padStart(5, '0');
 
       const concept = new Concept({
-        id: ConceptID.create(currentIdStr),
+        id: ConceptId.create(currentIdStr),
         relations: [
           {
             id: 'rel-' + i,
