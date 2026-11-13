@@ -126,7 +126,8 @@ export function convertAdyToKbd(word: string): string {
   
   // YENİ: шъу -> ф (Raw 'ф' bırakırsak ху olur, o yüzden maskeliyoruz)
   c = c.replace(/шъуызы$/, "___MASK_FYZ___"); // шъузы -> фыз
-  c = c.replace(/шъуы/g, "___MASK_FY___");
+  c = c.replace(/оин/g, "уеин");
+   c = c.replace(/шъуы/g, "___MASK_FY___");
   c = c.replace(/шъук([Ӏӏ])/g, "___MASK_FY___к$1");
   c = c.replace(/шъу/g, "___MASK_F___");
 
@@ -149,6 +150,7 @@ export function convertAdyToKbd(word: string): string {
 
   // 2. STANDART DÖNÜŞÜMLER
   c = c.replace(/фын$/, "хун");
+   c = c.replace(/ыхьан$/g, "ыхьэн");
   c = c.replace(/агъ$/, "ащ");
   c = c.replace(/жъуэ/g, "вэ");
   c = c.replace(/жъу/g, "в");
@@ -191,6 +193,7 @@ export function convertAdyToKbd(word: string): string {
   c = c.replace(/___MASK_TY___/g, "ды");
 
   c = c.replace(/хуы(?=[нмзстдкпбг]|$)/g, "ху");
+   c = c.replace(/уы/g, "у");
 
   return c;
 }
@@ -239,11 +242,13 @@ export function convertKbdToAdy(word: string): string {
   c = c.replace(/хуабэ/g, "фабэ");
   c = c.replace(/махуэ/g, "мафэ");
   c = c.replace(/хун$/g, "фын");
+   c = c.replace(/ыхьэн$/g, "ыхьан");
 
   // YENİ: Ters yönde desteklenmeyen senaryolar onarıldı
   c = c.replace(/фӀэ/g, "шӀо"); // Kbd: фӀэ -> Ady: шӀо
   c = c.replace(/фыз/g, "шъуз");
-  c = c.replace(/фы$/g, "шъуы");
+  c = c.replace(/уеин/g, "оин");
+   c = c.replace(/фы$/g, "шъуы");
 
   c = c.replace(/щ[Ӏӏ]э/g, "чӀэ"); // HUVAJ-180: KBD щӏэ -> ADY чӏэ
   c = c.replace(/щ[Ӏӏ]ы/g, "чӀы"); // HUVAJ-180: KBD щӏы -> ADY чӏы

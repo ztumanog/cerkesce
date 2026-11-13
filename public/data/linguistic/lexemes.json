@@ -3376,7 +3376,7 @@
     "literalMeaning": "es olmayan",
     "conceptId": "SINGLE",
     "dialectVariants": {
-      "adyghe": "шъхьэгъусэншэ",
+      "adyghe": "шъхьэгъусэнчъ",
       "kabardian": "щхьэгъусэншэ"
     },
     "dictionaryEvidence": {
@@ -6441,8 +6441,8 @@
     "literalMeaning": "çürümüş",
     "conceptId": "ROTTEN",
     "dialectVariants": {
-      "adyghe": "шъуа",
-      "kabardian": "фа"
+      "adyghe": "шъо",
+      "kabardian": "фэ"
     },
     "dictionaryEvidence": {
       "sourceCount": 7,
@@ -8704,7 +8704,7 @@
       "PASSION"
     ],
     "dialectVariants": {
-      "adyghe": "машӀу",
+      "adyghe": "машӀо",
       "kabardian": "мафӀэ"
     },
     "dictionaryEvidence": {
@@ -12155,7 +12155,7 @@
     "literalMeaning": "gemi suren",
     "conceptId": "CAPTAIN",
     "dialectVariants": {
-      "adyghe": "къухьэзехуэ",
+      "adyghe": "къухьэзефэ",
       "kabardian": "кхъухьзехуэ"
     },
     "dictionaryEvidence": {
@@ -13141,7 +13141,7 @@
     "conceptId": "FAMILY",
     "dialectVariants": {
       "adyghe": "ятэш",
-      "kabardian": "адэ къуэш"
+      "kabardian": "адэкъуэш"
     },
     "dictionaryEvidence": {
       "sourceCount": 3,
@@ -13217,7 +13217,7 @@
     "literalMeaning": "baba kiz kardes",
     "conceptId": "FAMILY",
     "dialectVariants": {
-      "adyghe": "атэшыпхъу",
+      "adyghe": "тышыпхъу",
       "kabardian": "адэшыпхъу"
     },
     "dictionaryEvidence": {
@@ -14487,7 +14487,7 @@
     "form": "Ӏэзэгъу",
     "literalMeaning": "ilac, tedavi",
     "dialectVariants": {
-      "adyghe": "Ӏэзэгъу",
+      "adyghe": "фышхъо",
       "kabardian": "хущхъуэ"
     },
     "corpusFrequencyAdy": 51,
@@ -16843,7 +16843,7 @@
     "literalMeaning": "cerkeska",
     "conceptId": "CHERKESKA",
     "dialectVariants": {
-      "adyghe": "цый",
+      "adyghe": "цые",
       "kabardian": "цей"
     },
     "notes": "C-11.2.1: cerkeska. Geleneksel giysi.",
@@ -16988,7 +16988,7 @@
     "form": "пкъыгъу",
     "literalMeaning": "organ",
     "dialectVariants": {
-      "adyghe": "пкъыгъу",
+      "adyghe": "пкъыгъо",
       "kabardian": "пкъыгъуэ"
     },
     "notes": "C-11.2.1: organ. пкъы + гъу.",
@@ -17172,7 +17172,7 @@
     "literalMeaning": "endise",
     "conceptId": "CONDOLENCE",
     "dialectVariants": {
-      "adyghe": "гузэвакӀуэ",
+      "adyghe": "гузэжъогъу",
       "kabardian": "гузэвэгъуэ"
     },
     "notes": "C-11.2.2: endise",
@@ -18910,7 +18910,7 @@
     "conceptId": "UNCLE_PATERNAL",
     "dialectVariants": {
       "adyghe": "ятэш",
-      "kabardian": "адэ къуэш"
+      "kabardian": "адэкъуэш"
     },
     "notes": "Adigece kelime (ятэш = dede). Kabardeyce kökü yok, rootIds boşaltıldı.",
     "partOfSpeech": "noun",
@@ -27612,7 +27612,7 @@
     "status": "rare",
     "dialectVariants": {
       "kabardian": "жыгей",
-      "adyghe": "чъыгае"
+      "adyghe": "чъыгай"
     },
     "corpusFrequency": 0,
     "isLemma": true,
@@ -39274,7 +39274,7 @@
     "root": "джэш",
     "dialectVariants": {
       "kabardian": "джэду",
-      "adyghe": "кӀэтыу"
+      "adyghe": "чэтыу"
     },
     "etymologyType": "native",
     "dialect": "KBD",

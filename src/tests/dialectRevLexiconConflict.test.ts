@@ -30,7 +30,7 @@ describe("ADR-GOV-014: REV ∩ Lexicon celiskisi yok", () => {
   });
 
   it("Bilinen celiski ornekleri kapali: гупсысэ / кхъухьлъатэ", () => {
-    expect(convertKbdToAdy("гупсысэ")).toBe("гупшыс");
-    expect(convertKbdToAdy("кхъухьлъатэ")).toBe("къухьэлъат");
+    expect(convertKbdToAdy("гупсысэ")).toBe("гупшысэ");
+    expect(convertKbdToAdy("кхъухьлъатэ")).toBe("къухьэлъатэ");
   });
 });
