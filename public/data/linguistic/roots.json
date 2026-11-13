@@ -161861,5 +161861,4738 @@
         "L-PKHETS-YCHAUE"
       ]
     }
+  },
+  {
+    "id": "R-QWEAP",
+    "form": "къуап",
+    "ipa": "/qʷaːp/",
+    "primaryMeaning": "vadinin ucu",
+    "secondaryMeanings": [
+      "Eyer uç kısmı",
+      "köşe kenarları, köşe bucak",
+      "dizginleri eyer kaşına bağlamak"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "къуап",
+      "kabardian": "къуап"
+    },
+    "productivity": {
+      "lemmaCount": 4,
+      "corpusFrequency": 47,
+      "compoundCount": 3,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (4 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-QWEAP",
+      "lexemeIds": [
+        "L-KUAPE",
+        "L-KUAPELHAPE",
+        "L-UANEKUEAPE",
+        "L-KBD-04436"
+      ]
+    }
+  },
+  {
+    "id": "R-SHCHYQWE",
+    "form": "щыкъу",
+    "ipa": "/ɕəqʷ/",
+    "primaryMeaning": "es tarafi",
+    "secondaryMeanings": [
+      "Havlu",
+      "Temiz",
+      "pürüz-lü"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "щыкъу",
+      "kabardian": "щыкъу"
+    },
+    "productivity": {
+      "lemmaCount": 4,
+      "corpusFrequency": 42,
+      "compoundCount": 3,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (4 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-SHCHYQWE",
+      "lexemeIds": [
+        "L-SHYQHU",
+        "L-BYRKUEESHYRKUEE",
+        "L-KBD-05500",
+        "L-CHESHCHEYSHCHYKUE"
+      ]
+    }
+  },
+  {
+    "id": "R-THHEMAD",
+    "form": "тхьэмад",
+    "ipa": "/tħamaːd/",
+    "primaryMeaning": "kocanin babasi",
+    "secondaryMeanings": [],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "тхьэмад",
+      "kabardian": "тхьэмад"
+    },
+    "productivity": {
+      "lemmaCount": 4,
+      "corpusFrequency": 75,
+      "compoundCount": 0,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (4 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-THHEMAD",
+      "lexemeIds": [
+        "L-TKHEMADE",
+        "L-TKHEMADE-LEADER",
+        "L-TKHEMADE-TAMADA",
+        "L-TKHEMADE-FATHER-IN-LAW"
+      ]
+    }
+  },
+  {
+    "id": "R-ZHAU",
+    "form": "жьау",
+    "ipa": "/ʒьaːw/",
+    "primaryMeaning": "şemsiye",
+    "secondaryMeanings": [
+      "gölgelik alan, kuytu yer",
+      "elini güneşe siper etme",
+      "kuşkonmaz"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "жьау",
+      "kabardian": "жьау"
+    },
+    "productivity": {
+      "lemmaCount": 4,
+      "corpusFrequency": 43,
+      "compoundCount": 3,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (4 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-ZHAU",
+      "lexemeIds": [
+        "L-ZHAUE",
+        "L-KBD-00147",
+        "L-KBD-01369",
+        "L-GUBGHUEZHAUE"
+      ]
+    }
+  },
+  {
+    "id": "R-DEGHWE",
+    "form": "дэгъу",
+    "ipa": "/daʁʷ/",
+    "primaryMeaning": "PEKİ iyi, uygun",
+    "secondaryMeanings": [
+      "kuyu",
+      "tıkamak, yamamak, kapatmak",
+      "yakışıklı, güzel"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "дэгъу",
+      "kabardian": "дэгъу"
+    },
+    "productivity": {
+      "lemmaCount": 4,
+      "corpusFrequency": 86,
+      "compoundCount": 1,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (4 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-DEGHWE",
+      "lexemeIds": [
+        "L-DEGHUE",
+        "L-DEGHUEZH",
+        "L-DEGHUEU",
+        "L-DEGHUEN"
+      ]
+    }
+  },
+  {
+    "id": "R-QWEELEN",
+    "form": "къуэлэн",
+    "ipa": "/qʷalan/",
+    "primaryMeaning": "renkli",
+    "secondaryMeanings": [
+      "Zebra",
+      "Alaca; rengarenk"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "къуэлэн",
+      "kabardian": "къуэлэн"
+    },
+    "productivity": {
+      "lemmaCount": 4,
+      "corpusFrequency": 35,
+      "compoundCount": 3,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (4 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-QWEELEN",
+      "lexemeIds": [
+        "L-KQUELEN",
+        "L-KUEELENPSHCH-ELEN",
+        "L-KEAREKUEELEN",
+        "L-KUEELEN-PSHCH-ELEN"
+      ]
+    }
+  },
+  {
+    "id": "R-BLYN",
+    "form": "блын",
+    "ipa": "/blən/",
+    "primaryMeaning": "duvar",
+    "secondaryMeanings": [
+      "APLIK",
+      "Halı, kilim"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "блын",
+      "kabardian": "блын"
+    },
+    "productivity": {
+      "lemmaCount": 4,
+      "corpusFrequency": 49,
+      "compoundCount": 3,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (4 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-BLYN",
+      "lexemeIds": [
+        "L-BLYN",
+        "L-KBD-00421",
+        "L-BLYNEUBGHU",
+        "L-BLYNE-UL"
+      ]
+    }
+  },
+  {
+    "id": "R-LHENKӀAPӀ",
+    "form": "лъэнкӀапӀ",
+    "ipa": "/ɬankӏaːpӏ/",
+    "primaryMeaning": "ayak bileği, aşil tendon bölgesi",
+    "secondaryMeanings": [
+      "yamuk",
+      "Baldır kası",
+      "İncik"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "лъэнкӀапӀ",
+      "kabardian": "лъэнкӀапӀ"
+    },
+    "productivity": {
+      "lemmaCount": 4,
+      "corpusFrequency": 6,
+      "compoundCount": 3,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (4 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-LHENKӀAPӀ",
+      "lexemeIds": [
+        "L-LHENK1AP1E",
+        "L-LHENK-AP-ENEGEGHU",
+        "L-LHENK-AP-ASHCHHE",
+        "L-LHENK-AP-ASHE"
+      ]
+    }
+  },
+  {
+    "id": "R-GWSHYӀ",
+    "form": "гушыӀ",
+    "ipa": "/gʷʃəӏ/",
+    "primaryMeaning": "oynamak",
+    "secondaryMeanings": [
+      "şakalaşmak"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "гушыӀ",
+      "kabardian": "гушыӀ"
+    },
+    "productivity": {
+      "lemmaCount": 4,
+      "corpusFrequency": 4,
+      "compoundCount": 3,
+      "adyFreq": 0,
+      "kbdFreq": 4
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (4 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-GWSHYӀ",
+      "lexemeIds": [
+        "L-DEGUSHY1EN",
+        "L-KBD-00601",
+        "L-KBD-04262",
+        "L-KEYDEGUSHY-EN"
+      ]
+    }
+  },
+  {
+    "id": "R-SHCHӀAQXWE",
+    "form": "щӀакхъу",
+    "ipa": "/ɕӏaːqχʷ/",
+    "primaryMeaning": "ekmek",
+    "secondaryMeanings": [
+      "pastry",
+      "fırıncı",
+      "Maya"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "щӀакхъу",
+      "kabardian": "щӀакхъу"
+    },
+    "productivity": {
+      "lemmaCount": 4,
+      "corpusFrequency": 0,
+      "compoundCount": 3,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (4 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-SHCHӀAQXWE",
+      "lexemeIds": [
+        "L-SH1AKHQUE",
+        "L-SHCH-AKHUEGHAZHE",
+        "L-SHCH-AKHUEXEK",
+        "L-SHCH-AKHUEGHETEDZH"
+      ]
+    }
+  },
+  {
+    "id": "R-PET_2",
+    "form": "пэт",
+    "ipa": "/pat/",
+    "primaryMeaning": "even",
+    "secondaryMeanings": [
+      "sonra, ardından",
+      "ölen",
+      "devam etti"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "пэт",
+      "kabardian": "пэт"
+    },
+    "productivity": {
+      "lemmaCount": 4,
+      "corpusFrequency": 354,
+      "compoundCount": 0,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (4 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-PET_2",
+      "lexemeIds": [
+        "L-PETMI",
+        "L-PET",
+        "L-PETRE",
+        "L-PETASHCH"
+      ]
+    }
+  },
+  {
+    "id": "R-HHEPSHYP",
+    "form": "хьэпшып",
+    "ipa": "/ħapʃəp/",
+    "primaryMeaning": "EŞYA",
+    "secondaryMeanings": [
+      "delivery truck",
+      "VITRIN",
+      "iltica"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "хьэпшып",
+      "kabardian": "хьэпшып"
+    },
+    "productivity": {
+      "lemmaCount": 4,
+      "corpusFrequency": 169,
+      "compoundCount": 3,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (4 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-HHEPSHYP",
+      "lexemeIds": [
+        "L-HEPSHYP",
+        "L-HEPSHYPZESHE",
+        "L-HEPSHYPSHCHAP-E",
+        "L-HEPSHYPYLHE"
+      ]
+    }
+  },
+  {
+    "id": "R-MAMYR_2",
+    "form": "мамыр",
+    "ipa": "/maːmər/",
+    "primaryMeaning": "HUZURLU",
+    "secondaryMeanings": [
+      "FERAH",
+      "durmak 2",
+      "SAKINLEŞTIRMEK"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "мамыр",
+      "kabardian": "мамыр"
+    },
+    "productivity": {
+      "lemmaCount": 4,
+      "corpusFrequency": 149,
+      "compoundCount": 3,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (4 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-MAMYR_2",
+      "lexemeIds": [
+        "L-MAMYR",
+        "L-MAMYRYGHE",
+        "L-KBD-03480",
+        "L-GHEMAMYRYN"
+      ]
+    }
+  },
+  {
+    "id": "R-QWEDAM",
+    "form": "къудам",
+    "ipa": "/qʷdaːm/",
+    "primaryMeaning": "Dal",
+    "secondaryMeanings": [
+      "teardrop",
+      "kısım"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "къудам",
+      "kabardian": "къудам"
+    },
+    "productivity": {
+      "lemmaCount": 4,
+      "corpusFrequency": 80,
+      "compoundCount": 3,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (4 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-QWEDAM",
+      "lexemeIds": [
+        "L-KUEDAME",
+        "L-VERIFIED-00104",
+        "L-KBD-03712",
+        "L-AUTO-00833"
+      ]
+    }
+  },
+  {
+    "id": "R-FASHCH",
+    "form": "фащ",
+    "ipa": "/faːɕ/",
+    "primaryMeaning": "ELBİSE",
+    "secondaryMeanings": [
+      "birine haksız yere hakaret etmek",
+      "Gümüş bezek",
+      "gerektiği gibi, layığıyla"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "фащ",
+      "kabardian": "фащ"
+    },
+    "productivity": {
+      "lemmaCount": 4,
+      "corpusFrequency": 82,
+      "compoundCount": 3,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (4 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-FASHCH",
+      "lexemeIds": [
+        "L-FASHCHE",
+        "L-XUEMYFASHCHE",
+        "L-KBD-00238",
+        "L-KBD-01929"
+      ]
+    }
+  },
+  {
+    "id": "R-ZHYZUM_2",
+    "form": "жызум",
+    "ipa": "/ʒəzwm/",
+    "primaryMeaning": "ÜZÜM",
+    "secondaryMeanings": [
+      "Asma, üzüm asması",
+      "must",
+      "bağci"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "жызум",
+      "kabardian": "жызум"
+    },
+    "productivity": {
+      "lemmaCount": 4,
+      "corpusFrequency": 56,
+      "compoundCount": 2,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (4 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-ZHYZUM_2",
+      "lexemeIds": [
+        "L-ZHYZUM",
+        "L-VERIFIED-01955",
+        "L-ZHYZUMYPS",
+        "L-AUTO-00595"
+      ]
+    }
+  },
+  {
+    "id": "R-DZHEDYGW",
+    "form": "джэдыгу",
+    "ipa": "/dʒadəgʷ/",
+    "primaryMeaning": "KÜRK",
+    "secondaryMeanings": [
+      "KÜRK KABAN",
+      "Demirci körüğü",
+      "bez"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "джэдыгу",
+      "kabardian": "джэдыгу"
+    },
+    "productivity": {
+      "lemmaCount": 4,
+      "corpusFrequency": 47,
+      "compoundCount": 2,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (4 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-DZHEDYGW",
+      "lexemeIds": [
+        "L-DZHEDYGU",
+        "L-DZHEDYGU-2",
+        "L-DZHEDYGUPKHE",
+        "L-DZHEDYGUTEBZE"
+      ]
+    }
+  },
+  {
+    "id": "R-GHWEM",
+    "form": "гъум",
+    "ipa": "/ʁʷm/",
+    "primaryMeaning": "Kalın",
+    "secondaryMeanings": [
+      "buyuk",
+      "having a large head; macrocephalic",
+      "İri"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "гъум",
+      "kabardian": "гъум"
+    },
+    "productivity": {
+      "lemmaCount": 4,
+      "corpusFrequency": 45,
+      "compoundCount": 3,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (4 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-GHWEM",
+      "lexemeIds": [
+        "L-GHUM",
+        "L-KBD-00651",
+        "L-EGHUMLHEGHUM",
+        "L-SHCHHEGHUM"
+      ]
+    }
+  },
+  {
+    "id": "R-HHEQ",
+    "form": "хьэкъ",
+    "ipa": "/ħaq/",
+    "primaryMeaning": "dogru, gercek",
+    "secondaryMeanings": [
+      "birini bir şeye ikna etmek",
+      "Mezar taşı",
+      "peki"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "хьэкъ",
+      "kabardian": "хьэкъ"
+    },
+    "productivity": {
+      "lemmaCount": 4,
+      "corpusFrequency": 76,
+      "compoundCount": 2,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (4 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-HHEQ",
+      "lexemeIds": [
+        "L-HEKE",
+        "L-HEKEYU",
+        "L-HEKESYN",
+        "L-AUTO-01105"
+      ]
+    }
+  },
+  {
+    "id": "R-HHIL",
+    "form": "хьил",
+    "ipa": "/ħjəl/",
+    "primaryMeaning": "hileli",
+    "secondaryMeanings": [
+      "suç",
+      "hilesizce",
+      "SUÇ"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "хьил",
+      "kabardian": "хьил"
+    },
+    "productivity": {
+      "lemmaCount": 4,
+      "corpusFrequency": 72,
+      "compoundCount": 3,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (4 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-HHIL",
+      "lexemeIds": [
+        "L-HILAGHE",
+        "L-HILESHY",
+        "L-HILE",
+        "L-HILAGH-E"
+      ]
+    }
+  },
+  {
+    "id": "R-NEMEZ",
+    "form": "нэмэз",
+    "ipa": "/namaz/",
+    "primaryMeaning": "din. prayer",
+    "secondaryMeanings": [
+      "one who prays",
+      "NAMAZLIK"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "нэмэз",
+      "kabardian": "нэмэз"
+    },
+    "productivity": {
+      "lemmaCount": 4,
+      "corpusFrequency": 40,
+      "compoundCount": 3,
+      "adyFreq": 0,
+      "kbdFreq": 40
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (4 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-NEMEZ",
+      "lexemeIds": [
+        "L-NEMEZ",
+        "L-KBD-03709",
+        "L-KBD-03710",
+        "L-NEMEZLYKE"
+      ]
+    }
+  },
+  {
+    "id": "R-QXWEESHCHYN",
+    "form": "кхъуэщын",
+    "ipa": "/qχʷaɕən/",
+    "primaryMeaning": "Testi",
+    "secondaryMeanings": [
+      "kahverengi",
+      "TESTICI",
+      "Bacak"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "кхъуэщын",
+      "kabardian": "кхъуэщын"
+    },
+    "productivity": {
+      "lemmaCount": 4,
+      "corpusFrequency": 34,
+      "compoundCount": 3,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (4 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-QXWEESHCHYN",
+      "lexemeIds": [
+        "L-KHUESHCHYN",
+        "L-KHUESHCHYNYFE",
+        "L-K-EBDZKHUESHCHYN",
+        "L-KHUESHCHYNGHEZH"
+      ]
+    }
+  },
+  {
+    "id": "R-GHWEDZH",
+    "form": "гъудж",
+    "ipa": "/ʁʷdʒ/",
+    "primaryMeaning": "Ayna",
+    "secondaryMeanings": [
+      "GÖZLÜK",
+      "ayna falı",
+      "TAT"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "гъудж",
+      "kabardian": "гъудж"
+    },
+    "productivity": {
+      "lemmaCount": 4,
+      "corpusFrequency": 60,
+      "compoundCount": 3,
+      "adyFreq": 0,
+      "kbdFreq": 28
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (4 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-GHWEDZH",
+      "lexemeIds": [
+        "L-NEGHUDZHE",
+        "L-GHUDZHE",
+        "L-VERIFIED-01897",
+        "L-KBD-00645"
+      ]
+    }
+  },
+  {
+    "id": "R-AZH",
+    "form": "аж",
+    "ipa": "/aːʒ/",
+    "primaryMeaning": "keçi",
+    "secondaryMeanings": [
+      "Katı, sağlam, sert",
+      "two-year-goat",
+      "ozan"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "аж",
+      "kabardian": "аж"
+    },
+    "productivity": {
+      "lemmaCount": 4,
+      "corpusFrequency": 42,
+      "compoundCount": 3,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (4 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-AZH",
+      "lexemeIds": [
+        "L-AZHE",
+        "L-AZHEGHAFE",
+        "L-KBD-01020",
+        "L-AZHEZH"
+      ]
+    }
+  },
+  {
+    "id": "R-QAYGH",
+    "form": "къайгъ",
+    "ipa": "/qaːjʁ/",
+    "primaryMeaning": "aksi",
+    "secondaryMeanings": [
+      "brawler",
+      "HUZURLU",
+      "Dertsizce"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "къайгъ",
+      "kabardian": "къайгъ"
+    },
+    "productivity": {
+      "lemmaCount": 4,
+      "corpusFrequency": 42,
+      "compoundCount": 3,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (4 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-QAYGH",
+      "lexemeIds": [
+        "L-KEAYGHE",
+        "L-KEAYGHESHY",
+        "L-VERIFIED-00083",
+        "L-VERIFIED-01791"
+      ]
+    }
+  },
+  {
+    "id": "R-HHEUAZ",
+    "form": "хьэуаз",
+    "ipa": "/ħawaːz/",
+    "primaryMeaning": "SAMAN",
+    "secondaryMeanings": [
+      "sarı",
+      "thatched bed",
+      "Saman"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "хьэуаз",
+      "kabardian": "хьэуаз"
+    },
+    "productivity": {
+      "lemmaCount": 4,
+      "corpusFrequency": 18,
+      "compoundCount": 3,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (4 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-HHEUAZ",
+      "lexemeIds": [
+        "L-HEUAZE",
+        "L-KBD-04919",
+        "L-HEUAZASHCHHE",
+        "L-HEUAZAFE"
+      ]
+    }
+  },
+  {
+    "id": "R-XWPSHCH",
+    "form": "хупщ",
+    "ipa": "/xʷpɕ/",
+    "primaryMeaning": "Üvez",
+    "secondaryMeanings": [
+      "SÜRÜNGEN",
+      "Bir bitki türü"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "хупщ",
+      "kabardian": "хупщ"
+    },
+    "productivity": {
+      "lemmaCount": 4,
+      "corpusFrequency": 18,
+      "compoundCount": 4,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (4 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-XWPSHCH",
+      "lexemeIds": [
+        "L-HEPSHCHXUPSHCH",
+        "L-MYSHCHEXUPSHCH",
+        "L-PSHCHEXUPSHCHEY",
+        "L-AUTO-00865"
+      ]
+    }
+  },
+  {
+    "id": "R-HHEULEY",
+    "form": "хьэулей",
+    "ipa": "/ħawljaj/",
+    "primaryMeaning": "ABES",
+    "secondaryMeanings": [
+      "idleness",
+      "boşa zaman harcamak",
+      "harcamak"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "хьэулей",
+      "kabardian": "хьэулей"
+    },
+    "productivity": {
+      "lemmaCount": 4,
+      "corpusFrequency": 17,
+      "compoundCount": 3,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (4 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-HHEULEY",
+      "lexemeIds": [
+        "L-HEULEY",
+        "L-KBD-04921",
+        "L-K-ELHYHEULEIN",
+        "L-EHEULEIL-EN"
+      ]
+    }
+  },
+  {
+    "id": "R-HHERYCHET",
+    "form": "хьэрычэт",
+    "ipa": "/ħarətʃat/",
+    "primaryMeaning": "ticaret, iş, çaba",
+    "secondaryMeanings": [
+      "PISIRIK",
+      "ticaretsizlik",
+      "kapamak"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "хьэрычэт",
+      "kabardian": "хьэрычэт"
+    },
+    "productivity": {
+      "lemmaCount": 4,
+      "corpusFrequency": 31,
+      "compoundCount": 3,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (4 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-HHERYCHET",
+      "lexemeIds": [
+        "L-HERYCHET",
+        "L-VERIFIED-00178",
+        "L-VERIFIED-00190",
+        "L-KBD-03159"
+      ]
+    }
+  },
+  {
+    "id": "R-PXENZH",
+    "form": "пхэнж",
+    "ipa": "/pxanʒ/",
+    "primaryMeaning": "aksi̇",
+    "secondaryMeanings": [
+      "aksine",
+      "AKSILENMEK",
+      "dizginleri eyer kaşına bağlamak"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "пхэнж",
+      "kabardian": "пхэнж"
+    },
+    "productivity": {
+      "lemmaCount": 4,
+      "corpusFrequency": 16,
+      "compoundCount": 2,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (4 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-PXENZH",
+      "lexemeIds": [
+        "L-PXENZH",
+        "L-VERIFIED-01860",
+        "L-PXENZHYGHE",
+        "L-KBD-04436"
+      ]
+    }
+  },
+  {
+    "id": "R-UNEXW",
+    "form": "унэху",
+    "ipa": "/wnaxʷ/",
+    "primaryMeaning": "GÖZÜKMEK",
+    "secondaryMeanings": [
+      "öğrenmek",
+      "yıldız doğuşu; yeni ay",
+      "ni̇şanlanmak"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "унэху",
+      "kabardian": "унэху"
+    },
+    "productivity": {
+      "lemmaCount": 4,
+      "corpusFrequency": 10,
+      "compoundCount": 4,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (4 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-UNEXW",
+      "lexemeIds": [
+        "L-KEEUNEXUN",
+        "L-KBD-01878",
+        "L-KBD-03156",
+        "L-KBD-05580"
+      ]
+    }
+  },
+  {
+    "id": "R-DEX_2",
+    "form": "дэх",
+    "ipa": "/dax/",
+    "primaryMeaning": "SÜSLEMEK",
+    "secondaryMeanings": [
+      "tatmak",
+      "hazirlamak",
+      "KALKINMAK"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "дэх",
+      "kabardian": "дэх"
+    },
+    "productivity": {
+      "lemmaCount": 4,
+      "corpusFrequency": 17,
+      "compoundCount": 4,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (4 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-DEX_2",
+      "lexemeIds": [
+        "L-XUEGHEDEXEN",
+        "L-VERIFIED-00201",
+        "L-KBD-04556",
+        "L-KEYXUEGHEDEXEN"
+      ]
+    }
+  },
+  {
+    "id": "R-ӀUV",
+    "form": "Ӏув",
+    "ipa": "/ӏwv/",
+    "primaryMeaning": "Kalın",
+    "secondaryMeanings": [
+      "Yoğun, sık, gür"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "Ӏув",
+      "kabardian": "Ӏув"
+    },
+    "productivity": {
+      "lemmaCount": 4,
+      "corpusFrequency": 194,
+      "compoundCount": 1,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (4 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-ӀUV",
+      "lexemeIds": [
+        "L-UV",
+        "L-UVU",
+        "L-UV-2",
+        "L-AUTO-01257"
+      ]
+    }
+  },
+  {
+    "id": "R-ӀEMYSHCHӀ",
+    "form": "ӀэмыщӀ",
+    "ipa": "/ӏaməɕӏ/",
+    "primaryMeaning": "fist",
+    "secondaryMeanings": [
+      "Avuç",
+      "elinde tutulan; güçsüz",
+      "ANİ-DEN"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "ӀэмыщӀ",
+      "kabardian": "ӀэмыщӀ"
+    },
+    "productivity": {
+      "lemmaCount": 4,
+      "corpusFrequency": 139,
+      "compoundCount": 3,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (4 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-ӀEMYSHCHӀ",
+      "lexemeIds": [
+        "L-EMYSHCH-E",
+        "L-KBD-03706",
+        "L-EMYSHCH-ESHCHYZ",
+        "L-AUTO-00375"
+      ]
+    }
+  },
+  {
+    "id": "R-ӀEDEB",
+    "form": "Ӏэдэб",
+    "ipa": "/ӏadab/",
+    "primaryMeaning": "yavaş",
+    "secondaryMeanings": [
+      "TEEDDÜP",
+      "kaba",
+      "patience"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "Ӏэдэб",
+      "kabardian": "Ӏэдэб"
+    },
+    "productivity": {
+      "lemmaCount": 4,
+      "corpusFrequency": 31,
+      "compoundCount": 2,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (4 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-ӀEDEB",
+      "lexemeIds": [
+        "L-EDEB",
+        "L-KBD-00151",
+        "L-EDEBYNSHE",
+        "L-EDEBYGHE"
+      ]
+    }
+  },
+  {
+    "id": "R-KӀAN",
+    "form": "кӀан",
+    "ipa": "/kӏaːn/",
+    "primaryMeaning": "Parça",
+    "secondaryMeanings": [
+      "skein",
+      "buggy",
+      "Kıkırdak"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "кӀан",
+      "kabardian": "кӀан"
+    },
+    "productivity": {
+      "lemmaCount": 4,
+      "corpusFrequency": 21,
+      "compoundCount": 3,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (4 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-KӀAN",
+      "lexemeIds": [
+        "L-K-ANE",
+        "L-KBD-04780",
+        "L-KBD-04812",
+        "L-BGHE-UK-ANE"
+      ]
+    }
+  },
+  {
+    "id": "R-PTSӀIY",
+    "form": "пцӀий",
+    "ipa": "/ptsӏjəj/",
+    "primaryMeaning": "Çavdar",
+    "secondaryMeanings": [
+      "Parmak ucu",
+      "tezgah",
+      "tiptoes"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "пцӀий",
+      "kabardian": "пцӀий"
+    },
+    "productivity": {
+      "lemmaCount": 4,
+      "corpusFrequency": 17,
+      "compoundCount": 4,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (4 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-PTSӀIY",
+      "lexemeIds": [
+        "L-HEPTS-IY",
+        "L-KBD-03347",
+        "L-KBD-03348",
+        "L-EPEPTS-IY"
+      ]
+    }
+  },
+  {
+    "id": "R-ӀUZ",
+    "form": "Ӏуз",
+    "ipa": "/ӏwz/",
+    "primaryMeaning": "Dar, ensiz",
+    "secondaryMeanings": [
+      "Dar",
+      "narrow-shouldered",
+      "Darlık"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "Ӏуз",
+      "kabardian": "Ӏуз"
+    },
+    "productivity": {
+      "lemmaCount": 4,
+      "corpusFrequency": 14,
+      "compoundCount": 2,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (4 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-ӀUZ",
+      "lexemeIds": [
+        "L-UZE",
+        "L-KBD-03843",
+        "L-UZAGH-E",
+        "L-UZE-2"
+      ]
+    }
+  },
+  {
+    "id": "R-HHETS",
+    "form": "хьэц",
+    "ipa": "/ħats/",
+    "primaryMeaning": "Diken",
+    "secondaryMeanings": [
+      "Tahıllar",
+      "alıç",
+      "Mısır"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "хьэц",
+      "kabardian": "хьэц"
+    },
+    "productivity": {
+      "lemmaCount": 4,
+      "corpusFrequency": 18,
+      "compoundCount": 4,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (4 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-HHETS",
+      "lexemeIds": [
+        "L-VERIFIED-00294",
+        "L-VERIFIED-01178",
+        "L-VERIFIED-01996",
+        "L-HETSEPETSEXEK"
+      ]
+    }
+  },
+  {
+    "id": "R-HHEDZ",
+    "form": "хьэдз",
+    "ipa": "/ħadz/",
+    "primaryMeaning": "zhy kind of antique saber",
+    "secondaryMeanings": [
+      "Tahıllar",
+      "ARI",
+      "kus"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "хьэдз",
+      "kabardian": "хьэдз"
+    },
+    "productivity": {
+      "lemmaCount": 4,
+      "corpusFrequency": 7,
+      "compoundCount": 4,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (4 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-HHEDZ",
+      "lexemeIds": [
+        "L-VERIFIED-00309",
+        "L-KBD-04849",
+        "L-HEDZEXEK",
+        "L-HEDZYGHUANEXUELHE"
+      ]
+    }
+  },
+  {
+    "id": "R-QWERT",
+    "form": "къурт",
+    "ipa": "/qʷrt/",
+    "primaryMeaning": "gurk",
+    "secondaryMeanings": [
+      "sitter",
+      "ordek",
+      "kahverengi"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "къурт",
+      "kabardian": "къурт"
+    },
+    "productivity": {
+      "lemmaCount": 4,
+      "corpusFrequency": 6,
+      "compoundCount": 3,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (4 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-QWERT",
+      "lexemeIds": [
+        "L-VERIFIED-01101",
+        "L-KBD-00913",
+        "L-BABYSHCHKUERT",
+        "L-HEKUERTYFE"
+      ]
+    }
+  },
+  {
+    "id": "R-GWU",
+    "form": "гуу",
+    "ipa": "/gʷw/",
+    "primaryMeaning": "Boğa",
+    "secondaryMeanings": [
+      "bat",
+      "Arpacık"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "гуу",
+      "kabardian": "гуу"
+    },
+    "productivity": {
+      "lemmaCount": 4,
+      "corpusFrequency": 6,
+      "compoundCount": 3,
+      "adyFreq": 0,
+      "kbdFreq": 6
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (4 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-GWU",
+      "lexemeIds": [
+        "L-VERIFIED-01113",
+        "L-KUEAZHEGUU",
+        "L-NAK-EGUU",
+        "L-AUTO-00593"
+      ]
+    }
+  },
+  {
+    "id": "R-ZHEZH_2",
+    "form": "жэжь",
+    "ipa": "/ʒaʒь/",
+    "primaryMeaning": "ani̇-den",
+    "secondaryMeanings": [
+      "causative to",
+      "каузатив к (causative to)",
+      "KAÇIŞ"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "жэжь",
+      "kabardian": "жэжь"
+    },
+    "productivity": {
+      "lemmaCount": 4,
+      "corpusFrequency": 5,
+      "compoundCount": 4,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (4 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-ZHEZH_2",
+      "lexemeIds": [
+        "L-VERIFIED-01609",
+        "L-KBD-01127",
+        "L-KBD-02395",
+        "L-K-ELHEZHEZHEN"
+      ]
+    }
+  },
+  {
+    "id": "R-XWER",
+    "form": "хуэр",
+    "ipa": "/xʷar/",
+    "primaryMeaning": "IDDIACI",
+    "secondaryMeanings": [
+      "IDDIALI",
+      "rakip",
+      "münakaşa"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "хуэр",
+      "kabardian": "хуэр"
+    },
+    "productivity": {
+      "lemmaCount": 4,
+      "corpusFrequency": 5,
+      "compoundCount": 4,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (4 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-XWER",
+      "lexemeIds": [
+        "L-VERIFIED-01816",
+        "L-HERXUER",
+        "L-HERXUERYN",
+        "L-AUTO-01116"
+      ]
+    }
+  },
+  {
+    "id": "R-ӀUL",
+    "form": "Ӏул",
+    "ipa": "/ӏwl/",
+    "primaryMeaning": "ağız lekesi, kir",
+    "secondaryMeanings": [
+      "otorite",
+      "aptallaştırmak",
+      "ALDATMAK"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "Ӏул",
+      "kabardian": "Ӏул"
+    },
+    "productivity": {
+      "lemmaCount": 4,
+      "corpusFrequency": 0,
+      "compoundCount": 3,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (4 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-ӀUL",
+      "lexemeIds": [
+        "L-KBD-00046",
+        "L-KBD-00712",
+        "L-KEEGHE-ULEN",
+        "L-AUTO-00363"
+      ]
+    }
+  },
+  {
+    "id": "R-ӀEMPӀ",
+    "form": "ӀэмпӀ",
+    "ipa": "/ӏampӏ/",
+    "primaryMeaning": "AYAK",
+    "secondaryMeanings": [
+      "a set of forging tools",
+      "Kısa",
+      "kitchenware"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "ӀэмпӀ",
+      "kabardian": "ӀэмпӀ"
+    },
+    "productivity": {
+      "lemmaCount": 4,
+      "corpusFrequency": 0,
+      "compoundCount": 3,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (4 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-ӀEMPӀ",
+      "lexemeIds": [
+        "L-KBD-00167",
+        "L-KBD-03356",
+        "L-KBD-03462",
+        "L-EMP-EK-ESHCH"
+      ]
+    }
+  },
+  {
+    "id": "R-ӀEXHWE",
+    "form": "Ӏэхъу",
+    "ipa": "/ӏaχʷ/",
+    "primaryMeaning": "ÇOBANLIK",
+    "secondaryMeanings": [
+      "KAYTABAN",
+      "büyütmek, beslemek, gütmek",
+      "herds boy, herdsman's assistant"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "Ӏэхъу",
+      "kabardian": "Ӏэхъу"
+    },
+    "productivity": {
+      "lemmaCount": 4,
+      "corpusFrequency": 0,
+      "compoundCount": 3,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (4 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-ӀEXHWE",
+      "lexemeIds": [
+        "L-KBD-00211",
+        "L-KBD-00212",
+        "L-KBD-00718",
+        "L-EKHUEKUEEDZE"
+      ]
+    }
+  },
+  {
+    "id": "R-GWO",
+    "form": "гуо",
+    "ipa": "/gʷaw/",
+    "primaryMeaning": "dikkat, ilgi",
+    "secondaryMeanings": [
+      "okumak",
+      "BAĞIRMAK",
+      "büyük; buyuk"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "гуо",
+      "kabardian": "гуо"
+    },
+    "productivity": {
+      "lemmaCount": 4,
+      "corpusFrequency": 0,
+      "compoundCount": 3,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (4 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-GWO",
+      "lexemeIds": [
+        "L-KBD-00555",
+        "L-KBD-01105",
+        "L-KBD-02051",
+        "L-KBD-02136"
+      ]
+    }
+  },
+  {
+    "id": "R-MBRYU",
+    "form": "мбрыу",
+    "ipa": "/mbrəw/",
+    "primaryMeaning": "BATMA",
+    "secondaryMeanings": [
+      "batırmak",
+      "dalmak",
+      "düzeltmek"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "мбрыу",
+      "kabardian": "мбрыу"
+    },
+    "productivity": {
+      "lemmaCount": 4,
+      "corpusFrequency": 0,
+      "compoundCount": 4,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (4 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-MBRYU",
+      "lexemeIds": [
+        "L-KBD-03087",
+        "L-KBD-05244",
+        "L-SHCH-EMBRYUEN",
+        "L-ZYSHCH-EGHEMBRYUEN"
+      ]
+    }
+  },
+  {
+    "id": "R-TSӀU",
+    "form": "цӀу",
+    "ipa": "/tsӏw/",
+    "primaryMeaning": "with lustre/gloss/brilliance",
+    "secondaryMeanings": [
+      "IŞILDAMAK",
+      "işildamak",
+      "bright"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "цӀу",
+      "kabardian": "цӀу"
+    },
+    "productivity": {
+      "lemmaCount": 4,
+      "corpusFrequency": 0,
+      "compoundCount": 3,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (4 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-TSӀU",
+      "lexemeIds": [
+        "L-KBD-03274",
+        "L-KBD-04124",
+        "L-KBD-04957",
+        "L-TS-UUE"
+      ]
+    }
+  },
+  {
+    "id": "R-GWӀ",
+    "form": "гуӀ",
+    "ipa": "/gʷӏ/",
+    "primaryMeaning": "yas tutmak",
+    "secondaryMeanings": [
+      "TAZİYE VERMEK taziyede bulunmak",
+      "AHBAB"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "гуӀ",
+      "kabardian": "гуӀ"
+    },
+    "productivity": {
+      "lemmaCount": 4,
+      "corpusFrequency": 0,
+      "compoundCount": 4,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (4 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-GWӀ",
+      "lexemeIds": [
+        "L-KBD-04692",
+        "L-KBD-05219",
+        "L-ZEXUEGU-EN",
+        "L-AUTO-01008"
+      ]
+    }
+  },
+  {
+    "id": "R-SYZ",
+    "form": "сыз",
+    "ipa": "/səz/",
+    "primaryMeaning": "unprofitable",
+    "secondaryMeanings": [
+      "İmansız, dinsiz",
+      "mutsuz, şanssız",
+      "need"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "сыз",
+      "kabardian": "сыз"
+    },
+    "productivity": {
+      "lemmaCount": 4,
+      "corpusFrequency": 0,
+      "compoundCount": 4,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (4 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-SYZ",
+      "lexemeIds": [
+        "L-KBD-04729",
+        "L-KBD-04765",
+        "L-IMANSYZ",
+        "L-XUEKUELEYSYZYN"
+      ]
+    }
+  },
+  {
+    "id": "R-XHWEMPӀ",
+    "form": "хъумпӀ",
+    "ipa": "/χʷmpӏ/",
+    "primaryMeaning": "kind of ant",
+    "secondaryMeanings": [
+      "ant",
+      "Sebze ekimi için ayrılan yer",
+      "anthill"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "хъумпӀ",
+      "kabardian": "хъумпӀ"
+    },
+    "productivity": {
+      "lemmaCount": 4,
+      "corpusFrequency": 0,
+      "compoundCount": 3,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (4 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-XHWEMPӀ",
+      "lexemeIds": [
+        "L-KBD-04785",
+        "L-KBD-04786",
+        "L-KBD-04787",
+        "L-KHUMP-ETS-EDZHYLHE"
+      ]
+    }
+  },
+  {
+    "id": "R-MPӀ",
+    "form": "мпӀ",
+    "ipa": "/mpӏ/",
+    "primaryMeaning": "Tahta kın",
+    "secondaryMeanings": [
+      "bencileyin",
+      "collar"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "мпӀ",
+      "kabardian": "мпӀ"
+    },
+    "productivity": {
+      "lemmaCount": 4,
+      "corpusFrequency": 0,
+      "compoundCount": 4,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (4 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-MPӀ",
+      "lexemeIds": [
+        "L-PSHCHAMP-ESHCH-ELH",
+        "L-PSHCHAMP-ESHCH-EDE",
+        "L-PKHAMP-E",
+        "L-AUTO-00946"
+      ]
+    }
+  },
+  {
+    "id": "R-XHWEAMB",
+    "form": "хъуамб",
+    "ipa": "/χʷaːmb/",
+    "primaryMeaning": "ayak parmağı",
+    "secondaryMeanings": [
+      "Ayağın şehadet parmağı",
+      "Ayak başparmağı",
+      "Küçük ayak parmağı"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "хъуамб",
+      "kabardian": "хъуамб"
+    },
+    "productivity": {
+      "lemmaCount": 4,
+      "corpusFrequency": 0,
+      "compoundCount": 4,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (4 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-XHWEAMB",
+      "lexemeIds": [
+        "L-LHEKHUAMBE",
+        "L-LHEKHUAMBESHXUE",
+        "L-LHEKHUAMBAPSHCHE",
+        "L-LHEKHUAMBEZHAK-E"
+      ]
+    }
+  },
+  {
+    "id": "R-BYSYM",
+    "form": "бысым",
+    "ipa": "/bəsəm/",
+    "primaryMeaning": "ev sahibi",
+    "secondaryMeanings": [
+      "ev sahibesi",
+      "ev sahibi değiştirme"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "бысым",
+      "kabardian": "бысым"
+    },
+    "productivity": {
+      "lemmaCount": 3,
+      "corpusFrequency": 36,
+      "compoundCount": 2,
+      "adyFreq": 35,
+      "kbdFreq": 1
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (3 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-BYSYM",
+      "lexemeIds": [
+        "L-BYSYMGUASHE",
+        "L-BYSYM",
+        "L-KBD-00466"
+      ]
+    }
+  },
+  {
+    "id": "R-GHWEABZH",
+    "form": "гъуабж",
+    "ipa": "/ʁʷaːbʒ/",
+    "primaryMeaning": "gri",
+    "secondaryMeanings": [
+      "Kahverengi",
+      "faded"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "гъуабж",
+      "kabardian": "гъуабж"
+    },
+    "productivity": {
+      "lemmaCount": 3,
+      "corpusFrequency": 32,
+      "compoundCount": 2,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (3 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-GHWEABZH",
+      "lexemeIds": [
+        "L-GHUABZHE",
+        "L-VERIFIED-01965",
+        "L-KBD-00639"
+      ]
+    }
+  },
+  {
+    "id": "R-QWEPSHCHHH",
+    "form": "къупщхь",
+    "ipa": "/qʷpɕħ/",
+    "primaryMeaning": "kemik",
+    "secondaryMeanings": [
+      "Katı, sağlam, sert",
+      "Kemikler"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "къупщхь",
+      "kabardian": "къупщхь"
+    },
+    "productivity": {
+      "lemmaCount": 3,
+      "corpusFrequency": 72,
+      "compoundCount": 2,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (3 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-QWEPSHCHHH",
+      "lexemeIds": [
+        "L-KUPXHE",
+        "L-KBD-02611",
+        "L-SHCH-YKUEPSHCHHE"
+      ]
+    }
+  },
+  {
+    "id": "R-PASHCHTYHH",
+    "form": "пащтыхь",
+    "ipa": "/paːɕtəħ/",
+    "primaryMeaning": "kral, hükümdar",
+    "secondaryMeanings": [
+      "reign",
+      "ÇİN CUMHURİYETİ"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "пащтыхь",
+      "kabardian": "пащтыхь"
+    },
+    "productivity": {
+      "lemmaCount": 3,
+      "corpusFrequency": 210,
+      "compoundCount": 2,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (3 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-PASHCHTYHH",
+      "lexemeIds": [
+        "L-PASHCHTYH",
+        "L-PASHCHTYHYGHUE",
+        "L-KBD-03801"
+      ]
+    }
+  },
+  {
+    "id": "R-DZHEDU",
+    "form": "джэду",
+    "ipa": "/dʒadw/",
+    "primaryMeaning": "kedi",
+    "secondaryMeanings": [
+      "Binyaprak, civanperçemi"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "джэду",
+      "kabardian": "джэду"
+    },
+    "productivity": {
+      "lemmaCount": 3,
+      "corpusFrequency": 70,
+      "compoundCount": 1,
+      "adyFreq": 0,
+      "kbdFreq": 70
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (3 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-DZHEDU",
+      "lexemeIds": [
+        "L-DZHEDU",
+        "L-KBD-00916",
+        "L-DZHEDU-2"
+      ]
+    }
+  },
+  {
+    "id": "R-ZAXW",
+    "form": "заху",
+    "ipa": "/zaːxʷ/",
+    "primaryMeaning": "âdi̇l",
+    "secondaryMeanings": [
+      "adalet, hakkaniyet"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "заху",
+      "kabardian": "заху"
+    },
+    "productivity": {
+      "lemmaCount": 3,
+      "corpusFrequency": 128,
+      "compoundCount": 2,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (3 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-ZAXW",
+      "lexemeIds": [
+        "L-ZAKHUAGHE",
+        "L-ZAXUE",
+        "L-KBD-01424"
+      ]
+    }
+  },
+  {
+    "id": "R-ZHEUAP_2",
+    "form": "жэуап",
+    "ipa": "/ʒawaːp/",
+    "primaryMeaning": "cevap",
+    "secondaryMeanings": [
+      "lacking an answer, having no response; unreciprocated",
+      "davalı"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "жэуап",
+      "kabardian": "жэуап"
+    },
+    "productivity": {
+      "lemmaCount": 3,
+      "corpusFrequency": 558,
+      "compoundCount": 2,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (3 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-ZHEUAP_2",
+      "lexemeIds": [
+        "L-ZHEUAP",
+        "L-ZHEUAPTAK-UE",
+        "L-ZHEUAPYNSHE"
+      ]
+    }
+  },
+  {
+    "id": "R-SHCHYSHCH_2",
+    "form": "щыщ",
+    "ipa": "/ɕəɕ/",
+    "primaryMeaning": "ait, parçası",
+    "secondaryMeanings": [
+      "at kişnemesi",
+      "bağirmak"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "щыщ",
+      "kabardian": "щыщ"
+    },
+    "productivity": {
+      "lemmaCount": 3,
+      "corpusFrequency": 554,
+      "compoundCount": 2,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (3 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-SHCHYSHCH_2",
+      "lexemeIds": [
+        "L-SHCHYSHCH",
+        "L-KBD-04805",
+        "L-KBD-04803"
+      ]
+    }
+  },
+  {
+    "id": "R-GWENYHH",
+    "form": "гуэныхь",
+    "ipa": "/gʷanəħ/",
+    "primaryMeaning": "günah",
+    "secondaryMeanings": [
+      "günahkâr, kabahatli",
+      "kusursuz, masum"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "гуэныхь",
+      "kabardian": "гуэныхь"
+    },
+    "productivity": {
+      "lemmaCount": 3,
+      "corpusFrequency": 369,
+      "compoundCount": 1,
+      "adyFreq": 0,
+      "kbdFreq": 16
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (3 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-GWENYHH",
+      "lexemeIds": [
+        "L-GUENYH",
+        "L-GUENYHLY",
+        "L-VERIFIED-00738"
+      ]
+    }
+  },
+  {
+    "id": "R-GWP",
+    "form": "гуп",
+    "ipa": "/gʷp/",
+    "primaryMeaning": "grup, topluluk",
+    "secondaryMeanings": [
+      "Önünde",
+      "içermek"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "гуп",
+      "kabardian": "гуп"
+    },
+    "productivity": {
+      "lemmaCount": 3,
+      "corpusFrequency": 329,
+      "compoundCount": 1,
+      "adyFreq": 0,
+      "kbdFreq": 39
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (3 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-GWP",
+      "lexemeIds": [
+        "L-GUP",
+        "L-GUPE",
+        "L-AUTO-00650"
+      ]
+    }
+  },
+  {
+    "id": "R-MYHHEN",
+    "form": "мыхьэн",
+    "ipa": "/məħan/",
+    "primaryMeaning": "önem",
+    "secondaryMeanings": [
+      "anlamsız, önemsiz",
+      "nonsense"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "мыхьэн",
+      "kabardian": "мыхьэн"
+    },
+    "productivity": {
+      "lemmaCount": 3,
+      "corpusFrequency": 358,
+      "compoundCount": 2,
+      "adyFreq": 0,
+      "kbdFreq": 358
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (3 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-MYHHEN",
+      "lexemeIds": [
+        "L-MYHENE",
+        "L-MYHENENSHE",
+        "L-MYHENENSHAGHE"
+      ]
+    }
+  },
+  {
+    "id": "R-HHERF",
+    "form": "хьэрф",
+    "ipa": "/ħarf/",
+    "primaryMeaning": "harf",
+    "secondaryMeanings": [
+      "Harf",
+      "büyük harf"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "хьэрф",
+      "kabardian": "хьэрф"
+    },
+    "productivity": {
+      "lemmaCount": 3,
+      "corpusFrequency": 154,
+      "compoundCount": 2,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (3 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-HHERF",
+      "lexemeIds": [
+        "L-HERF",
+        "L-HERFYSHXUE",
+        "L-HERFZESHE"
+      ]
+    }
+  },
+  {
+    "id": "R-MYGHWE",
+    "form": "мыгъу",
+    "ipa": "/məʁʷ/",
+    "primaryMeaning": "hayirsiz",
+    "secondaryMeanings": [
+      "trajedi",
+      "Örmek"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "мыгъу",
+      "kabardian": "мыгъу"
+    },
+    "productivity": {
+      "lemmaCount": 3,
+      "corpusFrequency": 94,
+      "compoundCount": 2,
+      "adyFreq": 0,
+      "kbdFreq": 94
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (3 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-MYGHWE",
+      "lexemeIds": [
+        "L-MYGHUE",
+        "L-KBD-03533",
+        "L-AUTO-00991"
+      ]
+    }
+  },
+  {
+    "id": "R-ERYSHCH",
+    "form": "ерыщ",
+    "ipa": "/jarəɕ/",
+    "primaryMeaning": "aksi̇",
+    "secondaryMeanings": [
+      "persistently",
+      "aksi̇li̇k 1"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "ерыщ",
+      "kabardian": "ерыщ"
+    },
+    "productivity": {
+      "lemmaCount": 3,
+      "corpusFrequency": 144,
+      "compoundCount": 1,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (3 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-ERYSHCH",
+      "lexemeIds": [
+        "L-ERYSHCHU",
+        "L-ERYSHCH",
+        "L-ERYSHCHYGHE"
+      ]
+    }
+  },
+  {
+    "id": "R-SHCHYM",
+    "form": "щым",
+    "ipa": "/ɕəm/",
+    "primaryMeaning": "sessiz",
+    "secondaryMeanings": [
+      "SESSİZ",
+      "SESSİZLEŞMEK"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "щым",
+      "kabardian": "щым"
+    },
+    "productivity": {
+      "lemmaCount": 3,
+      "corpusFrequency": 95,
+      "compoundCount": 0,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (3 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-SHCHYM",
+      "lexemeIds": [
+        "L-SHCHYM",
+        "L-SHCHYMU",
+        "L-VERIFIED-01033"
+      ]
+    }
+  },
+  {
+    "id": "R-HHEDRYX",
+    "form": "хьэдрых",
+    "ipa": "/ħadrəx/",
+    "primaryMeaning": "Ahiret",
+    "secondaryMeanings": [
+      "BALIK",
+      "sansli ev"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "хьэдрых",
+      "kabardian": "хьэдрых"
+    },
+    "productivity": {
+      "lemmaCount": 3,
+      "corpusFrequency": 49,
+      "compoundCount": 2,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (3 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-HHEDRYX",
+      "lexemeIds": [
+        "L-HEDRYXE",
+        "L-KBD-04851",
+        "L-HEDRYXESHCH"
+      ]
+    }
+  },
+  {
+    "id": "R-BZHAMIY",
+    "form": "бжьамий",
+    "ipa": "/bʒьaːmjəj/",
+    "primaryMeaning": "Flüt",
+    "secondaryMeanings": [
+      "musician playing bzhami",
+      "KUZGUNKILICI"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "бжьамий",
+      "kabardian": "бжьамий"
+    },
+    "productivity": {
+      "lemmaCount": 3,
+      "corpusFrequency": 43,
+      "compoundCount": 2,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (3 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-BZHAMIY",
+      "lexemeIds": [
+        "L-BZHAMIY",
+        "L-KBD-00379",
+        "L-UDZBZHAMIY"
+      ]
+    }
+  },
+  {
+    "id": "R-SHEDZHAGHWE",
+    "form": "шэджагъу",
+    "ipa": "/ʃadʒaːʁʷ/",
+    "primaryMeaning": "afternoon snack",
+    "secondaryMeanings": [
+      "zenith",
+      "yemek"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "шэджагъу",
+      "kabardian": "шэджагъу"
+    },
+    "productivity": {
+      "lemmaCount": 3,
+      "corpusFrequency": 43,
+      "compoundCount": 3,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (3 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-SHEDZHAGHWE",
+      "lexemeIds": [
+        "L-SHEDZHAGHUASHXE",
+        "L-KBD-05106",
+        "L-KBD-05107"
+      ]
+    }
+  },
+  {
+    "id": "R-PISMO",
+    "form": "письмо",
+    "ipa": "/pjəsьmaw/",
+    "primaryMeaning": "Yırtılmak",
+    "secondaryMeanings": [
+      "mektup zarfı",
+      "postman"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "письмо",
+      "kabardian": "письмо"
+    },
+    "productivity": {
+      "lemmaCount": 3,
+      "corpusFrequency": 41,
+      "compoundCount": 2,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (3 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-PISMO",
+      "lexemeIds": [
+        "L-PISMO",
+        "L-KBD-03816",
+        "L-KBD-03817"
+      ]
+    }
+  },
+  {
+    "id": "R-NYZHEB",
+    "form": "ныжэб",
+    "ipa": "/nəʒab/",
+    "primaryMeaning": "tonight",
+    "secondaryMeanings": [
+      "only tonight",
+      "hızlıca"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "ныжэб",
+      "kabardian": "ныжэб"
+    },
+    "productivity": {
+      "lemmaCount": 3,
+      "corpusFrequency": 37,
+      "compoundCount": 2,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (3 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-NYZHEB",
+      "lexemeIds": [
+        "L-NYZHEBE",
+        "L-KBD-03635",
+        "L-KBD-03652"
+      ]
+    }
+  },
+  {
+    "id": "R-MASHCH_2",
+    "form": "мащ",
+    "ipa": "/maːɕ/",
+    "primaryMeaning": "KUYU",
+    "secondaryMeanings": [
+      "büyücü",
+      "balik"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "мащ",
+      "kabardian": "мащ"
+    },
+    "productivity": {
+      "lemmaCount": 3,
+      "corpusFrequency": 41,
+      "compoundCount": 2,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (3 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-MASHCH_2",
+      "lexemeIds": [
+        "L-MASHCHE",
+        "L-VERIFIED-01852",
+        "L-KBD-03510"
+      ]
+    }
+  },
+  {
+    "id": "R-QWEAL",
+    "form": "къуал",
+    "ipa": "/qʷaːl/",
+    "primaryMeaning": "Ekin kargası",
+    "secondaryMeanings": [
+      "kuş",
+      "hemorrhea"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "къуал",
+      "kabardian": "къуал"
+    },
+    "productivity": {
+      "lemmaCount": 3,
+      "corpusFrequency": 28,
+      "compoundCount": 2,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (3 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-QWEAL",
+      "lexemeIds": [
+        "L-KUEALEBZU",
+        "L-KBD-02591",
+        "L-KBD-03364"
+      ]
+    }
+  },
+  {
+    "id": "R-TAN",
+    "form": "тан",
+    "ipa": "/taːn/",
+    "primaryMeaning": "Dana",
+    "secondaryMeanings": [
+      "ergen"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "тан",
+      "kabardian": "тан"
+    },
+    "productivity": {
+      "lemmaCount": 3,
+      "corpusFrequency": 27,
+      "compoundCount": 2,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (3 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-TAN",
+      "lexemeIds": [
+        "L-TANE",
+        "L-SHCH-ALETANE",
+        "L-SHCH-ALE-TANE"
+      ]
+    }
+  },
+  {
+    "id": "R-HHETYR",
+    "form": "хьэтыр",
+    "ipa": "/ħatər/",
+    "primaryMeaning": "hatır, saygı",
+    "secondaryMeanings": [
+      "uğurlu, hayırlı",
+      "gönülsüzlük"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "хьэтыр",
+      "kabardian": "хьэтыр"
+    },
+    "productivity": {
+      "lemmaCount": 3,
+      "corpusFrequency": 26,
+      "compoundCount": 2,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (3 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-HHETYR",
+      "lexemeIds": [
+        "L-HETYR",
+        "L-KBD-04918",
+        "L-AUTO-01119"
+      ]
+    }
+  },
+  {
+    "id": "R-XHWER",
+    "form": "хъур",
+    "ipa": "/χʷr/",
+    "primaryMeaning": "POST doğmamış veya yeni doğmuş kuzu postu",
+    "secondaryMeanings": [
+      "curly; curly-headed",
+      "ITÜZÜMÜ"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "хъур",
+      "kabardian": "хъур"
+    },
+    "productivity": {
+      "lemmaCount": 3,
+      "corpusFrequency": 26,
+      "compoundCount": 3,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (3 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-XHWER",
+      "lexemeIds": [
+        "L-KHURYFE",
+        "L-SHCHHEKHURYFE",
+        "L-DZHEDKHURSANE"
+      ]
+    }
+  },
+  {
+    "id": "R-HHELYV",
+    "form": "хьэлыв",
+    "ipa": "/ħaləv/",
+    "primaryMeaning": "İçli börek",
+    "secondaryMeanings": [
+      "hamur",
+      "içli börek"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "хьэлыв",
+      "kabardian": "хьэлыв"
+    },
+    "productivity": {
+      "lemmaCount": 3,
+      "corpusFrequency": 23,
+      "compoundCount": 2,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (3 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-HHELYV",
+      "lexemeIds": [
+        "L-HELYVE",
+        "L-KBD-04881",
+        "L-AUTO-01109"
+      ]
+    }
+  },
+  {
+    "id": "R-HHERGH",
+    "form": "хьэргъ",
+    "ipa": "/ħarʁ/",
+    "primaryMeaning": "büyük; buyuk",
+    "secondaryMeanings": [
+      "brawler",
+      "DÜRÜST, KABADAYI"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "хьэргъ",
+      "kabardian": "хьэргъ"
+    },
+    "productivity": {
+      "lemmaCount": 3,
+      "corpusFrequency": 22,
+      "compoundCount": 3,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (3 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-HHERGH",
+      "lexemeIds": [
+        "L-HERGHESHYRGHE",
+        "L-KBD-04903",
+        "L-HERGHESHYRGHENSHE"
+      ]
+    }
+  },
+  {
+    "id": "R-SHYRGH",
+    "form": "шыргъ",
+    "ipa": "/ʃərʁ/",
+    "primaryMeaning": "büyük; buyuk",
+    "secondaryMeanings": [
+      "brawler",
+      "DÜRÜST, KABADAYI"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "шыргъ",
+      "kabardian": "шыргъ"
+    },
+    "productivity": {
+      "lemmaCount": 3,
+      "corpusFrequency": 22,
+      "compoundCount": 3,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (3 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-SHYRGH",
+      "lexemeIds": [
+        "L-HERGHESHYRGHE",
+        "L-KBD-04903",
+        "L-HERGHESHYRGHENSHE"
+      ]
+    }
+  },
+  {
+    "id": "R-QEHHP",
+    "form": "къэхьп",
+    "ipa": "/qaħp/",
+    "primaryMeaning": "fuhuş",
+    "secondaryMeanings": [
+      "ev",
+      "prostitution."
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "къэхьп",
+      "kabardian": "къэхьп"
+    },
+    "productivity": {
+      "lemmaCount": 3,
+      "corpusFrequency": 30,
+      "compoundCount": 1,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (3 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-QEHHP",
+      "lexemeIds": [
+        "L-KEEHPE",
+        "L-KEEHPAGHE",
+        "L-KEEHPESHCH"
+      ]
+    }
+  },
+  {
+    "id": "R-GWEGWSH",
+    "form": "гуэгуш",
+    "ipa": "/gʷagʷʃ/",
+    "primaryMeaning": "hindi",
+    "secondaryMeanings": [
+      "HINDI",
+      "bot Muscari"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "гуэгуш",
+      "kabardian": "гуэгуш"
+    },
+    "productivity": {
+      "lemmaCount": 3,
+      "corpusFrequency": 17,
+      "compoundCount": 2,
+      "adyFreq": 0,
+      "kbdFreq": 17
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (3 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-GWEGWSH",
+      "lexemeIds": [
+        "L-GUEGUSH",
+        "L-KBD-00617",
+        "L-GUEGUSHYKHU"
+      ]
+    }
+  },
+  {
+    "id": "R-XHWEAN",
+    "form": "хъуан",
+    "ipa": "/χʷaːn/",
+    "primaryMeaning": "swearing",
+    "secondaryMeanings": [
+      "Şubat",
+      "ribald, foul-mouthed man"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "хъуан",
+      "kabardian": "хъуан"
+    },
+    "productivity": {
+      "lemmaCount": 3,
+      "corpusFrequency": 16,
+      "compoundCount": 2,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (3 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-XHWEAN",
+      "lexemeIds": [
+        "L-KHUANE",
+        "L-KBD-04772",
+        "L-MAZEKHUANE"
+      ]
+    }
+  },
+  {
+    "id": "R-SHYNAQ",
+    "form": "шынакъ",
+    "ipa": "/ʃənaːq/",
+    "primaryMeaning": "fincan",
+    "secondaryMeanings": [
+      "İribaş",
+      "Kepçe"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "шынакъ",
+      "kabardian": "шынакъ"
+    },
+    "productivity": {
+      "lemmaCount": 3,
+      "corpusFrequency": 22,
+      "compoundCount": 2,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (3 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-SHYNAQ",
+      "lexemeIds": [
+        "L-SHYNAKE",
+        "L-VERIFIED-00958",
+        "L-KBD-05078"
+      ]
+    }
+  },
+  {
+    "id": "R-GWAP",
+    "form": "гуап",
+    "ipa": "/gʷaːp/",
+    "primaryMeaning": "DERECE 1",
+    "secondaryMeanings": [
+      "Gelincik",
+      "MÜDAHENECI"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "гуап",
+      "kabardian": "гуап"
+    },
+    "productivity": {
+      "lemmaCount": 3,
+      "corpusFrequency": 14,
+      "compoundCount": 3,
+      "adyFreq": 0,
+      "kbdFreq": 14
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (3 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-GWAP",
+      "lexemeIds": [
+        "L-GUAPAGHE",
+        "L-KBD-04541",
+        "L-GUAPAGH-E"
+      ]
+    }
+  },
+  {
+    "id": "R-GWZEV",
+    "form": "гузэв",
+    "ipa": "/gʷzav/",
+    "primaryMeaning": "telaşlandirmak",
+    "secondaryMeanings": [
+      "TAZİYE VERMEK taziyede bulunmak",
+      "heyecan"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "гузэв",
+      "kabardian": "гузэв"
+    },
+    "productivity": {
+      "lemmaCount": 3,
+      "corpusFrequency": 19,
+      "compoundCount": 3,
+      "adyFreq": 0,
+      "kbdFreq": 19
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (3 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-GWZEV",
+      "lexemeIds": [
+        "L-GHEGUZEVEN",
+        "L-VERIFIED-02164",
+        "L-KBD-03137"
+      ]
+    }
+  },
+  {
+    "id": "R-ZHERDEM",
+    "form": "жэрдэм",
+    "ipa": "/ʒardam/",
+    "primaryMeaning": "girişkenlik",
+    "secondaryMeanings": [
+      "PISIRIK",
+      "initiator, driving force"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "жэрдэм",
+      "kabardian": "жэрдэм"
+    },
+    "productivity": {
+      "lemmaCount": 3,
+      "corpusFrequency": 14,
+      "compoundCount": 2,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (3 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-ZHERDEM",
+      "lexemeIds": [
+        "L-ZHERDEM",
+        "L-ZHERDEMYNSHE",
+        "L-ZHERDEMSHCH-AK-UE"
+      ]
+    }
+  },
+  {
+    "id": "R-QASHYRGH",
+    "form": "къашыргъ",
+    "ipa": "/qaːʃərʁ/",
+    "primaryMeaning": "Atmaca cinsi",
+    "secondaryMeanings": [
+      "hook-nosed, having aquiline nose, having roman nose.",
+      "Atmaca"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "къашыргъ",
+      "kabardian": "къашыргъ"
+    },
+    "productivity": {
+      "lemmaCount": 3,
+      "corpusFrequency": 13,
+      "compoundCount": 2,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (3 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-QASHYRGH",
+      "lexemeIds": [
+        "L-KEASHYRGHE",
+        "L-KBD-02351",
+        "L-KBD-02352"
+      ]
+    }
+  },
+  {
+    "id": "R-ZERYGW",
+    "form": "зэрыгу",
+    "ipa": "/zarəgʷ/",
+    "primaryMeaning": "SALDIRMAK",
+    "secondaryMeanings": [
+      "birlikte koşuşmak",
+      "BURASI"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "зэрыгу",
+      "kabardian": "зэрыгу"
+    },
+    "productivity": {
+      "lemmaCount": 3,
+      "corpusFrequency": 18,
+      "compoundCount": 3,
+      "adyFreq": 0,
+      "kbdFreq": 18
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (3 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-ZERYGW",
+      "lexemeIds": [
+        "L-TEZERYGUEN",
+        "L-VERIFIED-00992",
+        "L-KBD-02545"
+      ]
+    }
+  },
+  {
+    "id": "R-LYB",
+    "form": "лыб",
+    "ipa": "/ləb/",
+    "primaryMeaning": "HIRÇINLAŞMAK",
+    "secondaryMeanings": [
+      "Pişirmek, havlamak",
+      "hirçinlaşmak"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "лыб",
+      "kabardian": "лыб"
+    },
+    "productivity": {
+      "lemmaCount": 3,
+      "corpusFrequency": 12,
+      "compoundCount": 2,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (3 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-LYB",
+      "lexemeIds": [
+        "L-KEELYBYN",
+        "L-KBD-02860",
+        "L-KBD-03442"
+      ]
+    }
+  },
+  {
+    "id": "R-SER_2",
+    "form": "сэр",
+    "ipa": "/sar/",
+    "primaryMeaning": "KENDİ KENDİNE kendiliğinden",
+    "secondaryMeanings": [
+      "kahin, bilge kişi, ermiş",
+      "arkadas"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "сэр",
+      "kabardian": "сэр"
+    },
+    "productivity": {
+      "lemmaCount": 3,
+      "corpusFrequency": 16,
+      "compoundCount": 3,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (3 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-SER_2",
+      "lexemeIds": [
+        "L-UERSERYZH",
+        "L-VERIFIED-01806",
+        "L-KBD-04510"
+      ]
+    }
+  },
+  {
+    "id": "R-SHCHXW",
+    "form": "щху",
+    "ipa": "/ɕxʷ/",
+    "primaryMeaning": "Yoğurt",
+    "secondaryMeanings": [
+      "шху"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "щху",
+      "kabardian": "щху"
+    },
+    "productivity": {
+      "lemmaCount": 3,
+      "corpusFrequency": 16,
+      "compoundCount": 0,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (3 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-SHCHXW",
+      "lexemeIds": [
+        "L-SHXU",
+        "L-VERIFIED-02520",
+        "L-SHKHU"
+      ]
+    }
+  },
+  {
+    "id": "R-GWEN",
+    "form": "гуэн",
+    "ipa": "/gʷan/",
+    "primaryMeaning": "Sundurma, hangar",
+    "secondaryMeanings": [
+      "DEPO"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "гуэн",
+      "kabardian": "гуэн"
+    },
+    "productivity": {
+      "lemmaCount": 3,
+      "corpusFrequency": 11,
+      "compoundCount": 1,
+      "adyFreq": 0,
+      "kbdFreq": 11
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (3 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-GWEN",
+      "lexemeIds": [
+        "L-GUEN",
+        "L-KBD-00624",
+        "L-KBD-03931"
+      ]
+    }
+  },
+  {
+    "id": "R-SHYHH",
+    "form": "шыхь",
+    "ipa": "/ʃəħ/",
+    "primaryMeaning": "sarmak",
+    "secondaryMeanings": [
+      "Keyifsizlik, rahatsızlık",
+      "ÇÖREK"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "шыхь",
+      "kabardian": "шыхь"
+    },
+    "productivity": {
+      "lemmaCount": 3,
+      "corpusFrequency": 11,
+      "compoundCount": 2,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (3 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-SHYHH",
+      "lexemeIds": [
+        "L-SHYHYN",
+        "L-KBD-00124",
+        "L-HELUSHYH"
+      ]
+    }
+  },
+  {
+    "id": "R-QWER",
+    "form": "къур",
+    "ipa": "/qʷr/",
+    "primaryMeaning": "pürüz-lü",
+    "secondaryMeanings": [
+      "kaş",
+      "acımık"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "къур",
+      "kabardian": "къур"
+    },
+    "productivity": {
+      "lemmaCount": 3,
+      "corpusFrequency": 10,
+      "compoundCount": 2,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (3 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-QWER",
+      "lexemeIds": [
+        "L-KUERE",
+        "L-KBD-02615",
+        "L-AUTO-00442"
+      ]
+    }
+  },
+  {
+    "id": "R-FEYTSEY",
+    "form": "фейцей",
+    "ipa": "/fjajtsjaj/",
+    "primaryMeaning": "fakir, yoksul",
+    "secondaryMeanings": [
+      "ova",
+      "miserliness"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "фейцей",
+      "kabardian": "фейцей"
+    },
+    "productivity": {
+      "lemmaCount": 3,
+      "corpusFrequency": 10,
+      "compoundCount": 1,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (3 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-FEYTSEY",
+      "lexemeIds": [
+        "L-FEYTSEY",
+        "L-KBD-04609",
+        "L-KBD-04610"
+      ]
+    }
+  },
+  {
+    "id": "R-DYU",
+    "form": "дыу",
+    "ipa": "/dəw/",
+    "primaryMeaning": "Sülük",
+    "secondaryMeanings": [
+      "sansli ev"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "дыу",
+      "kabardian": "дыу"
+    },
+    "productivity": {
+      "lemmaCount": 3,
+      "corpusFrequency": 15,
+      "compoundCount": 2,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (3 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-DYU",
+      "lexemeIds": [
+        "L-DYUE",
+        "L-VERIFIED-01712",
+        "L-KBD-00983"
+      ]
+    }
+  },
+  {
+    "id": "R-TERMESH",
+    "form": "тэрмэш",
+    "ipa": "/tarmaʃ/",
+    "primaryMeaning": "tercüman",
+    "secondaryMeanings": [
+      "sign language",
+      "tercümanlık ettirmek"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "тэрмэш",
+      "kabardian": "тэрмэш"
+    },
+    "productivity": {
+      "lemmaCount": 3,
+      "corpusFrequency": 9,
+      "compoundCount": 2,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (3 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-TERMESH",
+      "lexemeIds": [
+        "L-TERMESH",
+        "L-KBD-00195",
+        "L-KBD-00801"
+      ]
+    }
+  },
+  {
+    "id": "R-BARIN",
+    "form": "барин",
+    "ipa": "/baːrjən/",
+    "primaryMeaning": "kıvırcık",
+    "secondaryMeanings": [
+      "бот. клевер позучий (grifolium repens ) (bot. pozuchy clover (grifolium repens))",
+      "sığırkuyruğu"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "барин",
+      "kabardian": "барин"
+    },
+    "productivity": {
+      "lemmaCount": 3,
+      "corpusFrequency": 9,
+      "compoundCount": 2,
+      "adyFreq": 0,
+      "kbdFreq": 9
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (3 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-BARIN",
+      "lexemeIds": [
+        "L-BARINE",
+        "L-AUTO-00403",
+        "L-AUTO-00522"
+      ]
+    }
+  },
+  {
+    "id": "R-SHXWZH",
+    "form": "шхужь",
+    "ipa": "/ʃxʷʒь/",
+    "primaryMeaning": "Leğen",
+    "secondaryMeanings": [
+      "SAKAT",
+      "köşe"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "шхужь",
+      "kabardian": "шхужь"
+    },
+    "productivity": {
+      "lemmaCount": 3,
+      "corpusFrequency": 9,
+      "compoundCount": 2,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (3 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-SHXWZH",
+      "lexemeIds": [
+        "L-SHXUZH",
+        "L-KBD-05039",
+        "L-AUTO-01166"
+      ]
+    }
+  },
+  {
+    "id": "R-HHENTS",
+    "form": "хьэнц",
+    "ipa": "/ħants/",
+    "primaryMeaning": "Kürek",
+    "secondaryMeanings": [
+      "gemek",
+      "BOSTAN"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "хьэнц",
+      "kabardian": "хьэнц"
+    },
+    "productivity": {
+      "lemmaCount": 3,
+      "corpusFrequency": 9,
+      "compoundCount": 2,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (3 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-HHENTS",
+      "lexemeIds": [
+        "L-HENTSE",
+        "L-KBD-02320",
+        "L-HENTSEGUASHCHE"
+      ]
+    }
+  },
+  {
+    "id": "R-GIY",
+    "form": "гий",
+    "ipa": "/ɡjəj/",
+    "primaryMeaning": "si̇tem",
+    "secondaryMeanings": [
+      "гие",
+      "SIRTLAN"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "гий",
+      "kabardian": "гий"
+    },
+    "productivity": {
+      "lemmaCount": 3,
+      "corpusFrequency": 9,
+      "compoundCount": 0,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (3 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-GIY",
+      "lexemeIds": [
+        "L-GIE-2",
+        "L-GIEN",
+        "L-GIE"
+      ]
+    }
+  },
+  {
+    "id": "R-UNEXHWE",
+    "form": "унэхъу",
+    "ipa": "/wnaχʷ/",
+    "primaryMeaning": "bozulmak",
+    "secondaryMeanings": [
+      "mahvetmek",
+      "ahbab"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "унэхъу",
+      "kabardian": "унэхъу"
+    },
+    "productivity": {
+      "lemmaCount": 3,
+      "corpusFrequency": 8,
+      "compoundCount": 3,
+      "adyFreq": 0,
+      "kbdFreq": 8
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (3 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-UNEXHWE",
+      "lexemeIds": [
+        "L-XEUNEKHUEN",
+        "L-KBD-00811",
+        "L-KBD-01879"
+      ]
+    }
+  },
+  {
+    "id": "R-BASHCHXHWE",
+    "form": "бащхъу",
+    "ipa": "/baːɕχʷ/",
+    "primaryMeaning": "uykulu uykulu, mahmurlukla",
+    "secondaryMeanings": [
+      "uyku sersemi",
+      "Uykulu"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "бащхъу",
+      "kabardian": "бащхъу"
+    },
+    "productivity": {
+      "lemmaCount": 3,
+      "corpusFrequency": 14,
+      "compoundCount": 3,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (3 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-BASHCHXHWE",
+      "lexemeIds": [
+        "L-ZHEYBASHCHKHUE",
+        "L-VERIFIED-01222",
+        "L-ZHEYBASHCHKHUENE-U"
+      ]
+    }
+  },
+  {
+    "id": "R-DZHAF",
+    "form": "джаф",
+    "ipa": "/dʒaːf/",
+    "primaryMeaning": "TAZI",
+    "secondaryMeanings": [
+      "fakir",
+      "eli boş ve eli bomboş bir şekilde"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "джаф",
+      "kabardian": "джаф"
+    },
+    "productivity": {
+      "lemmaCount": 3,
+      "corpusFrequency": 8,
+      "compoundCount": 3,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (3 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-DZHAF",
+      "lexemeIds": [
+        "L-HEDZHAFE",
+        "L-ESHCH-EDZHAFE",
+        "L-EGUNESHCH-EGUDZHAFEU"
+      ]
+    }
+  },
+  {
+    "id": "R-ӀENKWN",
+    "form": "Ӏэнкун",
+    "ipa": "/ӏankʷn/",
+    "primaryMeaning": "kararsız",
+    "secondaryMeanings": [
+      "AFALLAMAK",
+      "suphe, tereddut"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "Ӏэнкун",
+      "kabardian": "Ӏэнкун"
+    },
+    "productivity": {
+      "lemmaCount": 3,
+      "corpusFrequency": 45,
+      "compoundCount": 1,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (3 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-ӀENKWN",
+      "lexemeIds": [
+        "L-ENKUN",
+        "L-KBD-00715",
+        "L-ENKUNYN"
+      ]
+    }
+  },
+  {
+    "id": "R-SHCHӀEP",
+    "form": "щӀэп",
+    "ipa": "/ɕӏap/",
+    "primaryMeaning": "Kendir, kenevir",
+    "secondaryMeanings": [
+      "hemp peeling",
+      "yağlamak"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "щӀэп",
+      "kabardian": "щӀэп"
+    },
+    "productivity": {
+      "lemmaCount": 3,
+      "corpusFrequency": 27,
+      "compoundCount": 2,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (3 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-SHCHӀEP",
+      "lexemeIds": [
+        "L-SHCH-EP",
+        "L-KBD-05322",
+        "L-AUTO-01210"
+      ]
+    }
+  },
+  {
+    "id": "R-PTSӀAN",
+    "form": "пцӀан",
+    "ipa": "/ptsӏaːn/",
+    "primaryMeaning": "au naturel",
+    "secondaryMeanings": [
+      "yalincak",
+      "Entari"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "пцӀан",
+      "kabardian": "пцӀан"
+    },
+    "productivity": {
+      "lemmaCount": 3,
+      "corpusFrequency": 17,
+      "compoundCount": 2,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (3 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-PTSӀAN",
+      "lexemeIds": [
+        "L-PTS-ANEU",
+        "L-KBD-00890",
+        "L-ESHCHHEPTS-ANE"
+      ]
+    }
+  },
+  {
+    "id": "R-SHCHӀAQWE",
+    "form": "щӀакъу",
+    "ipa": "/ɕӏaːqʷ/",
+    "primaryMeaning": "sakat",
+    "secondaryMeanings": [
+      "nazikçe",
+      "TOPALLIK"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "щӀакъу",
+      "kabardian": "щӀакъу"
+    },
+    "productivity": {
+      "lemmaCount": 3,
+      "corpusFrequency": 17,
+      "compoundCount": 2,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (3 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-SHCHӀAQWE",
+      "lexemeIds": [
+        "L-SHCH-AKUEE",
+        "L-XUESHCH-AKUEE",
+        "L-SHCH-AKUEAGHE"
+      ]
+    }
+  },
+  {
+    "id": "R-PSHCHӀEGHWE",
+    "form": "пщӀэгъу",
+    "ipa": "/pɕӏaʁʷ/",
+    "primaryMeaning": "mavi",
+    "secondaryMeanings": [
+      "DEMIRKIRI",
+      "ENTIPÜFTEN"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "пщӀэгъу",
+      "kabardian": "пщӀэгъу"
+    },
+    "productivity": {
+      "lemmaCount": 3,
+      "corpusFrequency": 11,
+      "compoundCount": 3,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (3 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-PSHCHӀEGHWE",
+      "lexemeIds": [
+        "L-PSHCH-EGHUALE",
+        "L-PSHCH-EGHUALE-KBD",
+        "L-PSHCH-EGHUALEKEYM"
+      ]
+    }
+  },
+  {
+    "id": "R-UQ",
+    "form": "укъ",
+    "ipa": "/wq/",
+    "primaryMeaning": "ova",
+    "secondaryMeanings": [
+      "bükülmek, eğrilmek",
+      "keçi sedefi"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "укъ",
+      "kabardian": "укъ"
+    },
+    "productivity": {
+      "lemmaCount": 3,
+      "corpusFrequency": 6,
+      "compoundCount": 2,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (3 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-UQ",
+      "lexemeIds": [
+        "L-VERIFIED-00780",
+        "L-XUEUKEYN",
+        "L-BITKI-00035"
+      ]
+    }
+  },
+  {
+    "id": "R-GHWEEY",
+    "form": "гъуей",
+    "ipa": "/ʁʷjaj/",
+    "primaryMeaning": "ÇALI",
+    "secondaryMeanings": [
+      "İğrenç, sevimsiz, antipatik",
+      "ANLAMSIZ"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "гъуей",
+      "kabardian": "гъуей"
+    },
+    "productivity": {
+      "lemmaCount": 3,
+      "corpusFrequency": 16,
+      "compoundCount": 2,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (3 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-GHWEEY",
+      "lexemeIds": [
+        "L-VERIFIED-00898",
+        "L-VERIFIED-01685",
+        "L-VERIFIED-01991"
+      ]
+    }
+  },
+  {
+    "id": "R-UZHYGW",
+    "form": "ужьыгу",
+    "ipa": "/wʒьəgʷ/",
+    "primaryMeaning": "Kırmak",
+    "secondaryMeanings": [
+      "ACIZLIK",
+      "AHBAB"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "ужьыгу",
+      "kabardian": "ужьыгу"
+    },
+    "productivity": {
+      "lemmaCount": 3,
+      "corpusFrequency": 6,
+      "compoundCount": 2,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (3 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-UZHYGW",
+      "lexemeIds": [
+        "L-VERIFIED-00908",
+        "L-KBD-01876",
+        "L-EUZHYGUXYN"
+      ]
+    }
+  },
+  {
+    "id": "R-UZH_2",
+    "form": "уж",
+    "ipa": "/wʒ/",
+    "primaryMeaning": "HABERCİ",
+    "secondaryMeanings": [
+      "ÇIKMAK",
+      "inmek"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "уж",
+      "kabardian": "уж"
+    },
+    "productivity": {
+      "lemmaCount": 3,
+      "corpusFrequency": 6,
+      "compoundCount": 3,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (3 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-UZH_2",
+      "lexemeIds": [
+        "L-VERIFIED-01012",
+        "L-KBD-00626",
+        "L-KBD-05349"
+      ]
+    }
+  },
+  {
+    "id": "R-UAD",
+    "form": "уад",
+    "ipa": "/waːd/",
+    "primaryMeaning": "hammer",
+    "secondaryMeanings": [
+      "balyoz",
+      "TAKIM"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "уад",
+      "kabardian": "уад"
+    },
+    "productivity": {
+      "lemmaCount": 3,
+      "corpusFrequency": 6,
+      "compoundCount": 3,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (3 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-UAD",
+      "lexemeIds": [
+        "L-VERIFIED-01135",
+        "L-KBD-00155",
+        "L-KBD-04431"
+      ]
+    }
+  },
+  {
+    "id": "R-BYNZH",
+    "form": "бынж",
+    "ipa": "/bənʒ/",
+    "primaryMeaning": "Göbek",
+    "secondaryMeanings": [
+      "aile ocağı",
+      "PARÇA"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "бынж",
+      "kabardian": "бынж"
+    },
+    "productivity": {
+      "lemmaCount": 3,
+      "corpusFrequency": 5,
+      "compoundCount": 2,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (3 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-BYNZH",
+      "lexemeIds": [
+        "L-VERIFIED-01577",
+        "L-KBD-00453",
+        "L-BYNZHEPYUPSHCH"
+      ]
+    }
+  },
+  {
+    "id": "R-TABU",
+    "form": "табу",
+    "ipa": "/taːbw/",
+    "primaryMeaning": "sen",
+    "secondaryMeanings": [
+      "sansli ev"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "табу",
+      "kabardian": "табу"
+    },
+    "productivity": {
+      "lemmaCount": 3,
+      "corpusFrequency": 5,
+      "compoundCount": 2,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (3 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-TABU",
+      "lexemeIds": [
+        "L-VERIFIED-01682",
+        "L-KBD-04223",
+        "L-KBD-04224"
+      ]
+    }
+  },
+  {
+    "id": "R-SYRIN",
+    "form": "сырин",
+    "ipa": "/sərjən/",
+    "primaryMeaning": "Düdük",
+    "secondaryMeanings": [
+      "burun",
+      "zurnist"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "сырин",
+      "kabardian": "сырин"
+    },
+    "productivity": {
+      "lemmaCount": 3,
+      "corpusFrequency": 5,
+      "compoundCount": 2,
+      "adyFreq": 0,
+      "kbdFreq": 5
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (3 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-SYRIN",
+      "lexemeIds": [
+        "L-VERIFIED-01871",
+        "L-KBD-04179",
+        "L-PESYRINE"
+      ]
+    }
+  },
+  {
+    "id": "R-TEXHWEAN",
+    "form": "тэхъуан",
+    "ipa": "/taχʷaːn/",
+    "primaryMeaning": "zhy hut",
+    "secondaryMeanings": [
+      "KÖYEVI",
+      "Tavan"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "тэхъуан",
+      "kabardian": "тэхъуан"
+    },
+    "productivity": {
+      "lemmaCount": 3,
+      "corpusFrequency": 5,
+      "compoundCount": 2,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (3 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-TEXHWEAN",
+      "lexemeIds": [
+        "L-VERIFIED-01984",
+        "L-KBD-04426",
+        "L-KBD-04427"
+      ]
+    }
+  },
+  {
+    "id": "R-ZHAKӀ",
+    "form": "жьакӀ",
+    "ipa": "/ʒьaːkӏ/",
+    "primaryMeaning": "serçe parmak",
+    "secondaryMeanings": [
+      "Küçük ayak parmağı",
+      "Küçük parmak"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "жьакӀ",
+      "kabardian": "жьакӀ"
+    },
+    "productivity": {
+      "lemmaCount": 3,
+      "corpusFrequency": 0,
+      "compoundCount": 3,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (3 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-ZHAKӀ",
+      "lexemeIds": [
+        "L-KBD-00179",
+        "L-LHEPKHUAMBEZHAK-E",
+        "L-LHEKHUAMBEZHAK-E"
+      ]
+    }
+  },
+  {
+    "id": "R-LEGWSHCHT",
+    "form": "лэгущт",
+    "ipa": "/lagʷɕt/",
+    "primaryMeaning": "endişeyle, huzursuzca",
+    "secondaryMeanings": [
+      "TELAŞ"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "лэгущт",
+      "kabardian": "лэгущт"
+    },
+    "productivity": {
+      "lemmaCount": 3,
+      "corpusFrequency": 0,
+      "compoundCount": 3,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (3 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-LEGWSHCHT",
+      "lexemeIds": [
+        "L-KBD-00546",
+        "L-KBD-00547",
+        "L-GULEGUSHCHTE"
+      ]
+    }
+  },
+  {
+    "id": "R-GWXHWE",
+    "form": "гухъу",
+    "ipa": "/gʷχʷ/",
+    "primaryMeaning": "DİBEK",
+    "secondaryMeanings": [
+      "Dibek deliği",
+      "DIBEK-TOKMAĞI"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "гухъу",
+      "kabardian": "гухъу"
+    },
+    "productivity": {
+      "lemmaCount": 3,
+      "corpusFrequency": 0,
+      "compoundCount": 1,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (3 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-GWXHWE",
+      "lexemeIds": [
+        "L-KBD-00594",
+        "L-GUKHU",
+        "L-GUKHUSHCHHE"
+      ]
+    }
+  },
+  {
+    "id": "R-GHWER",
+    "form": "гъур",
+    "ipa": "/ʁʷr/",
+    "primaryMeaning": "thickets of small shrubs",
+    "secondaryMeanings": [
+      "sansli ev",
+      "Zayıf, arık"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "гъур",
+      "kabardian": "гъур"
+    },
+    "productivity": {
+      "lemmaCount": 3,
+      "corpusFrequency": 0,
+      "compoundCount": 2,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (3 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-GHWER",
+      "lexemeIds": [
+        "L-KBD-00660",
+        "L-KBD-01109",
+        "L-EGHURLHEGHUR"
+      ]
+    }
+  },
+  {
+    "id": "R-SHCHXHWEENTӀ",
+    "form": "щхъуэнтӀ",
+    "ipa": "/ɕχʷantӏ/",
+    "primaryMeaning": "yeşillenme",
+    "secondaryMeanings": [
+      "duckweed",
+      "gövermek"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "щхъуэнтӀ",
+      "kabardian": "щхъуэнтӀ"
+    },
+    "productivity": {
+      "lemmaCount": 3,
+      "corpusFrequency": 0,
+      "compoundCount": 2,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (3 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-SHCHXHWEENTӀ",
+      "lexemeIds": [
+        "L-KBD-00841",
+        "L-KBD-03284",
+        "L-KBD-05406"
+      ]
+    }
+  },
+  {
+    "id": "R-DUMP",
+    "form": "думп",
+    "ipa": "/dwmp/",
+    "primaryMeaning": "sansli ev",
+    "secondaryMeanings": [
+      "PALANKA",
+      "palanka"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "думп",
+      "kabardian": "думп"
+    },
+    "productivity": {
+      "lemmaCount": 3,
+      "corpusFrequency": 0,
+      "compoundCount": 1,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (3 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-DUMP",
+      "lexemeIds": [
+        "L-KBD-00967",
+        "L-KBD-00968",
+        "L-KBD-00969"
+      ]
+    }
+  },
+  {
+    "id": "R-IZH_2",
+    "form": "иж",
+    "ipa": "/jəʒ/",
+    "primaryMeaning": "ahbab",
+    "secondaryMeanings": [
+      "envier",
+      "düşman"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "иж",
+      "kabardian": "иж"
+    },
+    "productivity": {
+      "lemmaCount": 3,
+      "corpusFrequency": 0,
+      "compoundCount": 3,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (3 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-IZH_2",
+      "lexemeIds": [
+        "L-KBD-01606",
+        "L-KBD-01607",
+        "L-KBD-02067"
+      ]
+    }
+  },
+  {
+    "id": "R-NEKӀ",
+    "form": "нэкӀ",
+    "ipa": "/nakӏ/",
+    "primaryMeaning": "alay etmek",
+    "secondaryMeanings": [
+      "tahmi̇n"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "нэкӀ",
+      "kabardian": "нэкӀ"
+    },
+    "productivity": {
+      "lemmaCount": 3,
+      "corpusFrequency": 0,
+      "compoundCount": 3,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (3 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-NEKӀ",
+      "lexemeIds": [
+        "L-KBD-03003",
+        "L-KBD-04708",
+        "L-SHCH-ENEK-EN"
+      ]
+    }
+  },
+  {
+    "id": "R-FT",
+    "form": "фт",
+    "ipa": "/ft/",
+    "primaryMeaning": "gitmek",
+    "secondaryMeanings": [
+      "бот. костёр мягкий (bromus ) (bot. soft bark (bromus))",
+      "sinek"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "фт",
+      "kabardian": "фт"
+    },
+    "productivity": {
+      "lemmaCount": 3,
+      "corpusFrequency": 0,
+      "compoundCount": 3,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (3 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-FT",
+      "lexemeIds": [
+        "L-KBD-03045",
+        "L-KBD-05444",
+        "L-AUTO-01183"
+      ]
+    }
+  },
+  {
+    "id": "R-LASKӀ",
+    "form": "ласкӀ",
+    "ipa": "/laːskӏ/",
+    "primaryMeaning": "Kıymık",
+    "secondaryMeanings": [
+      "KIYMIK",
+      "TIRNAK"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "ласкӀ",
+      "kabardian": "ласкӀ"
+    },
+    "productivity": {
+      "lemmaCount": 3,
+      "corpusFrequency": 0,
+      "compoundCount": 2,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (3 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-LASKӀ",
+      "lexemeIds": [
+        "L-KBD-03321",
+        "L-EBZHANELASK-E",
+        "L-PKHELASK-E"
+      ]
+    }
+  },
+  {
+    "id": "R-SAGHYNDAQ",
+    "form": "сагъындакъ",
+    "ipa": "/saːʁəndaːq/",
+    "primaryMeaning": "obsolete. cm.",
+    "secondaryMeanings": [
+      "arrow"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "сагъындакъ",
+      "kabardian": "сагъындакъ"
+    },
+    "productivity": {
+      "lemmaCount": 3,
+      "corpusFrequency": 0,
+      "compoundCount": 3,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (3 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-SAGHYNDAQ",
+      "lexemeIds": [
+        "L-KBD-04149",
+        "L-KBD-04150",
+        "L-KBD-04151"
+      ]
+    }
+  },
+  {
+    "id": "R-SEB_2",
+    "form": "сэб",
+    "ipa": "/sab/",
+    "primaryMeaning": "toz",
+    "secondaryMeanings": [
+      "TOZ",
+      "causative to"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "сэб",
+      "kabardian": "сэб"
+    },
+    "productivity": {
+      "lemmaCount": 3,
+      "corpusFrequency": 0,
+      "compoundCount": 3,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (3 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-SEB_2",
+      "lexemeIds": [
+        "L-KBD-04185",
+        "L-ZESEBEUEN",
+        "L-ESEBEUEN"
+      ]
+    }
+  },
+  {
+    "id": "R-TӀYGW",
+    "form": "тӀыгу",
+    "ipa": "/tӏəgʷ/",
+    "primaryMeaning": "alın",
+    "secondaryMeanings": [
+      "CAHIL",
+      "nape"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "тӀыгу",
+      "kabardian": "тӀыгу"
+    },
+    "productivity": {
+      "lemmaCount": 3,
+      "corpusFrequency": 0,
+      "compoundCount": 2,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (3 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-TӀYGW",
+      "lexemeIds": [
+        "L-KBD-04209",
+        "L-KBD-05446",
+        "L-T-YGURYVE"
+      ]
+    }
+  },
+  {
+    "id": "R-TSӀEDZH",
+    "form": "цӀэдж",
+    "ipa": "/tsӏadʒ/",
+    "primaryMeaning": "ant",
+    "secondaryMeanings": [
+      "Sebze ekimi için ayrılan yer",
+      "anthill"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "цӀэдж",
+      "kabardian": "цӀэдж"
+    },
+    "productivity": {
+      "lemmaCount": 3,
+      "corpusFrequency": 0,
+      "compoundCount": 3,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (3 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-TSӀEDZH",
+      "lexemeIds": [
+        "L-KBD-04786",
+        "L-KBD-04787",
+        "L-KHUMP-ETS-EDZHYLHE"
+      ]
+    }
+  },
+  {
+    "id": "R-KWRIY",
+    "form": "курий",
+    "ipa": "/kʷrjəj/",
+    "primaryMeaning": "HORTUM",
+    "secondaryMeanings": [
+      "confusion"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "курий",
+      "kabardian": "курий"
+    },
+    "productivity": {
+      "lemmaCount": 3,
+      "corpusFrequency": 0,
+      "compoundCount": 3,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (3 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-KWRIY",
+      "lexemeIds": [
+        "L-KBD-04860",
+        "L-KBD-04904",
+        "L-HEZHKURIY"
+      ]
+    }
+  },
+  {
+    "id": "R-HHELӀAM",
+    "form": "хьэлӀам",
+    "ipa": "/ħalӏaːm/",
+    "primaryMeaning": "Mısır unundan iri manti",
+    "secondaryMeanings": [
+      "Değirmen suyu",
+      "yağlı tatlı çörek"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "хьэлӀам",
+      "kabardian": "хьэлӀам"
+    },
+    "productivity": {
+      "lemmaCount": 3,
+      "corpusFrequency": 0,
+      "compoundCount": 2,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (3 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-HHELӀAM",
+      "lexemeIds": [
+        "L-KBD-04878",
+        "L-HEL-AME",
+        "L-HEL-AMEPS"
+      ]
+    }
+  },
+  {
+    "id": "R-HHEMFӀAN",
+    "form": "хьэмфӀан",
+    "ipa": "/ħamfӏaːn/",
+    "primaryMeaning": "TIRMIK",
+    "secondaryMeanings": [
+      "Çapa sapı",
+      "Çapanın işler parçası"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "хьэмфӀан",
+      "kabardian": "хьэмфӀан"
+    },
+    "productivity": {
+      "lemmaCount": 3,
+      "corpusFrequency": 0,
+      "compoundCount": 2,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (3 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-HHEMFӀAN",
+      "lexemeIds": [
+        "L-KBD-04893",
+        "L-HEMF-ANEK",
+        "L-HEMF-ANASHCHHE"
+      ]
+    }
+  },
+  {
+    "id": "R-TӀES",
+    "form": "тӀэс",
+    "ipa": "/tӏas/",
+    "primaryMeaning": "kronik",
+    "secondaryMeanings": [
+      "oturmak",
+      "kariştirmak"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "тӀэс",
+      "kabardian": "тӀэс"
+    },
+    "productivity": {
+      "lemmaCount": 3,
+      "corpusFrequency": 0,
+      "compoundCount": 3,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (3 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-TӀES",
+      "lexemeIds": [
+        "L-KBD-04943",
+        "L-XET-ESA",
+        "L-SHCH-ET-ESEN"
+      ]
+    }
+  },
+  {
+    "id": "R-SHEDYBZH",
+    "form": "шэдыбжь",
+    "ipa": "/ʃadəbʒь/",
+    "primaryMeaning": "Demirci körüğü",
+    "secondaryMeanings": [
+      "assistant smith",
+      "blacksmith's handle"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "шэдыбжь",
+      "kabardian": "шэдыбжь"
+    },
+    "productivity": {
+      "lemmaCount": 3,
+      "corpusFrequency": 0,
+      "compoundCount": 2,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (3 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-SHEDYBZH",
+      "lexemeIds": [
+        "L-KBD-05108",
+        "L-KBD-05109",
+        "L-SHEDYBZH"
+      ]
+    }
+  },
+  {
+    "id": "R-HHEUEZHYU",
+    "form": "хьэуэжьыу",
+    "ipa": "/ħawaʒьəw/",
+    "primaryMeaning": "neşeli",
+    "secondaryMeanings": [
+      "eğlenmek",
+      "NEŞELILIK"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "хьэуэжьыу",
+      "kabardian": "хьэуэжьыу"
+    },
+    "productivity": {
+      "lemmaCount": 3,
+      "corpusFrequency": 0,
+      "compoundCount": 1,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (3 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-HHEUEZHYU",
+      "lexemeIds": [
+        "L-HEUEZHYUE",
+        "L-HEUEZHYUAGHE",
+        "L-HEUEZHYUEN"
+      ]
+    }
+  },
+  {
+    "id": "R-ӀEMAL",
+    "form": "Ӏэмал",
+    "ipa": "/ӏamaːl/",
+    "primaryMeaning": "ENGEL",
+    "secondaryMeanings": [
+      "ille",
+      "ZARURET"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "Ӏэмал",
+      "kabardian": "Ӏэмал"
+    },
+    "productivity": {
+      "lemmaCount": 3,
+      "corpusFrequency": 0,
+      "compoundCount": 3,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (3 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-ӀEMAL",
+      "lexemeIds": [
+        "L-EMALYNSHE",
+        "L-EMALYNSHAGHE",
+        "L-EMALYNSHEU"
+      ]
+    }
+  },
+  {
+    "id": "R-HHEMTSӀ",
+    "form": "хьэмцӀ",
+    "ipa": "/ħamtsӏ/",
+    "primaryMeaning": "Marya",
+    "secondaryMeanings": [
+      "Görge balığı",
+      "SIĞIL"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "хьэмцӀ",
+      "kabardian": "хьэмцӀ"
+    },
+    "productivity": {
+      "lemmaCount": 3,
+      "corpusFrequency": 0,
+      "compoundCount": 3,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (3 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-HHEMTSӀ",
+      "lexemeIds": [
+        "L-HEMTS-AZHE",
+        "L-HEMTS-EZHEY",
+        "L-HEMTS-YRAK-E"
+      ]
+    }
+  },
+  {
+    "id": "R-UGHWERL",
+    "form": "угъурл",
+    "ipa": "/wʁʷrl/",
+    "primaryMeaning": "uğurlu",
+    "secondaryMeanings": [
+      "avatif",
+      "mutluluk"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "угъурл",
+      "kabardian": "угъурл"
+    },
+    "productivity": {
+      "lemmaCount": 3,
+      "corpusFrequency": 0,
+      "compoundCount": 2,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (3 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-UGHWERL",
+      "lexemeIds": [
+        "L-UGHURLYN",
+        "L-XUEUGHURLYN",
+        "L-AUTO-01037"
+      ]
+    }
+  },
+  {
+    "id": "R-HHECH",
+    "form": "хьэч",
+    "ipa": "/ħatʃ/",
+    "primaryMeaning": "hiçkirmak",
+    "secondaryMeanings": [
+      "zorlukla",
+      "saçma sapan, ivir zıvır"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "хьэч",
+      "kabardian": "хьэч"
+    },
+    "productivity": {
+      "lemmaCount": 3,
+      "corpusFrequency": 0,
+      "compoundCount": 2,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (3 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-HHECH",
+      "lexemeIds": [
+        "L-HECHEHEPSEU",
+        "L-HECHEN",
+        "L-HECHE-HEPSEU"
+      ]
+    }
+  },
+  {
+    "id": "R-ӀEDZH",
+    "form": "Ӏэдж",
+    "ipa": "/ӏadʒ/",
+    "primaryMeaning": "BECERIKSIZ",
+    "secondaryMeanings": [
+      "many times",
+      "çokça, hayli, epey"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "Ӏэдж",
+      "kabardian": "Ӏэдж"
+    },
+    "productivity": {
+      "lemmaCount": 3,
+      "corpusFrequency": 0,
+      "compoundCount": 2,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (3 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-ӀEDZH",
+      "lexemeIds": [
+        "L-EDZHE",
+        "L-EDZHERE",
+        "L-EDZHEK-E"
+      ]
+    }
+  },
+  {
+    "id": "R-LHEGW",
+    "form": "лъэгу",
+    "ipa": "/ɬagʷ/",
+    "primaryMeaning": "İnce",
+    "secondaryMeanings": [
+      "EYER AKSESUARLARI",
+      "DÖŞEME"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "лъэгу",
+      "kabardian": "лъэгу"
+    },
+    "productivity": {
+      "lemmaCount": 3,
+      "corpusFrequency": 0,
+      "compoundCount": 3,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (3 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-LHEGW",
+      "lexemeIds": [
+        "L-PKHEBGHULHEGU",
+        "L-UANELHEGU",
+        "L-UESLHEGU"
+      ]
+    }
+  },
+  {
+    "id": "R-LHAXH",
+    "form": "лъахъ",
+    "ipa": "/ɬaːχ/",
+    "primaryMeaning": "Yaş dal",
+    "secondaryMeanings": [
+      "Bir kuş türü",
+      "Pranga"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "лъахъ",
+      "kabardian": "лъахъ"
+    },
+    "productivity": {
+      "lemmaCount": 3,
+      "corpusFrequency": 0,
+      "compoundCount": 3,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (3 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-LHAXH",
+      "lexemeIds": [
+        "L-KEANZHELHAKHE",
+        "L-BZULHAKHE",
+        "L-HEMK-ELHAKHE"
+      ]
+    }
+  },
+  {
+    "id": "R-ZHEZH_3",
+    "form": "жэж",
+    "ipa": "/ʒaʒ/",
+    "primaryMeaning": "KIZAN",
+    "secondaryMeanings": [
+      "Emeklemek, sürünmek",
+      "gitme zamani"
+    ],
+    "semanticDomains": [],
+    "dialectVariants": {
+      "adyghe": "жэж",
+      "kabardian": "жэж"
+    },
+    "productivity": {
+      "lemmaCount": 3,
+      "corpusFrequency": 0,
+      "compoundCount": 2,
+      "adyFreq": 0,
+      "kbdFreq": 0
+    },
+    "notes": "Paket A terfisi: legacyRootForms havuzundan (3 uye) kanoniklestirildi.",
+    "wordFamily": {
+      "id": "WF-ZHEZH_3",
+      "lexemeIds": [
+        "L-ZHEZHYGHUE",
+        "L-ZHEZHYN",
+        "L-UZHEZHEN"
+      ]
+    }
   }
 ]
