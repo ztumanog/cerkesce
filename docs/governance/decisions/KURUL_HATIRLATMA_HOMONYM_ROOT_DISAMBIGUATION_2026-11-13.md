@@ -121,3 +121,11 @@ Bu kayit **6ab9f43 oncesi veri** uzerinde uretilmistir.
 6ab9f43 sonrasinda roots.json uzerinde dogrulanmis duplicate-root merge islemleri uygulanmistir.
 Guncel homonym metrikleri **yeniden olculmemistir**.
 
+
+---
+
+## Uygulanan Düzeltme (2026-11-13)
+
+- public/data/linguistic/roots.json içinde _source: "lexemes-sync-2026" aktarımı sırasında yüzey formu (orm) yanlışlıkla 'гу' (15 kayıt) ve 'Ӏэ' (14 kayıt) olarak kopyalanan **29 farklı kök/preverb** gerçek Kiril karşılıklarıyla güncellendi (R-GU ve R-1E kanonik kökleri korundu).
+- Kalan 11 eşsesli kök grubu (нэ, лъэ, тхьэ, гъащӀэ, дыд, уэ, ху, къуз, абазэ, лъэлъ, Ӏ) gerçek anlamsal/diyalekt ayrımını yansıttığı için korundu.
+- Doğrulama: 218/218 test dosyası (1085/1085 test) yeşil.
