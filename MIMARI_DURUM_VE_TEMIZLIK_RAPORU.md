@@ -85,3 +85,13 @@ Tüm yönetim ve kürasyon uçları `src/lib/security/curationGuard.ts` içindek
 ## Eşsesli (Homonym) Köklerin Anlam Bazlı Ayrıştırılması
 - 12 eşsesli kök grubundaki **2.059** referans; Türkçe çeviri/anlam ipuçları ve birincil kanonik kök eşlemeleriyle doğru `R-*` hedeflerine ayrıştırıldı (`R-LHE`: 511, `R-SH1Y`: 471, `R-XHW`: 322, `R-1E`: 298, `R-FIY`: 164, `R-GU`: 139, `R-SHKH`: 66, `R-SH1E`: 21, `R-LHELHE`: 16, `R-SHCH`: 15, `R-QUZ`: 13, `R-LA_1`: 13, `R-LHE1`: 10).
 - Başlangıçtaki **7.823** tarihsel kök referansının **5.687'si (%72,7)** kanonik `roots.json` ↔ `lexemes.json` çift yönlü grafına kazandırıldı; kalan **2.136** nadir (`1–4` geçişli) referans veri kaybı olmadan `legacyRootForms` altında korundu.
+
+## Final Mimari & Veri Grafı Kapanış Özeti (`origin/main`)
+
+| # | Doğrulama & Mimari Alan | Durum | Kanıt & Uygulanan Çözüm |
+| :--- | :--- | :---: | :--- |
+| 1 | **Üretim Smoke Testi (Canlı Uçlar)** | 🟢 5/5 Geçti | `/api/admin/curation` → **401**; `/api/sozluk/root/R-LHE` → **200**; `/api/sozluk/root/R-SHX` → **200** (`R-SHKH` kanonik alias); `/api/sozluk/root/R-XHU` → **404**; `/api/sozluk/root/R-NONEXISTENT-999` → **404**. |
+| 2 | **Test Paketi & Üretim Derlemesi** | 🟢 Yeşil | **218/218 test dosyası, 1.074/1.074 test geçti** (`root-api-404.test.ts` dahil); `next build` ile **56/56** sayfa hatasız derlendi. |
+| 3 | **Kök API & Morfoloji Katmanı** | 🟢 Sertleştirildi | `app/api/sozluk/root/[id]/route.ts` bilinmeyen ID'lerde `404` ve birleştirilen kökler için `ROOT_ALIASES` dönüşümü uygular; `RootExtractor` fonksiyonel önekleri (`хуэ-`, `къэ-`, `гъэ-`, `зэ-` vb.) soyarak önek artığı çakışmalarını önler. |
+| 4 | **Kanonik Kök & Kelime Ailesi Grafı** | 🟢 Simetrik | Doğrulanmış duplicate kökler (`R-SHX → R-SHKH`, `R-F1E → R-FIY`, `R-LHEGHE → R-LA_1`) birleştirildi; `R-XHW` ve `R-XU` içindeki önek artıkları temizlendi; `roots.json` ↔ `lexemes.json` ve `wordFamily` sayaçları çift yönlü eşitlendi. |
+| 5 | **Git & Depo Durumu** | 🟢 Temiz | `## main...origin/main` — sıfır kirli dosya, sıfır geçici betik kalıntısı (`Everything up-to-date`). |
