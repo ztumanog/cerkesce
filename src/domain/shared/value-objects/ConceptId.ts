@@ -50,6 +50,10 @@ export class ConceptId extends ValueObject<ConceptIdProps> {
     return this.props.value;
   }
 
+  public getValue(): string {
+    return this.props.value;
+  }
+
   public toString(): string {
     return this.props.value;
   }
