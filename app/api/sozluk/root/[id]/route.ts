@@ -44,6 +44,7 @@ export async function GET(
         translations: l.translations || {},
         partOfSpeech: l.partOfSpeech || null,
         dialect: l.dialect || null,
+        dialectVariants: l.dialectVariants || null,
         ipa: l.ipa || null,
         wordFamilyId: l.wordFamilyId || null,
         conceptId: l.conceptId || null,
