@@ -37,11 +37,19 @@ export async function GET(
         translations: l.translations || {},
         partOfSpeech: l.partOfSpeech || null,
         dialect: l.dialect || null,
+        dialectVariants: l.dialectVariants || null,
         ipa: l.ipa || null,
         conceptId: l.conceptId || null,
         rootIds: Array.isArray(l.rootIds) ? l.rootIds : [],
         corpusFrequency: l.corpusFrequency ?? 0,
       }));
+
+    if (!familyMeta && members.length === 0) {
+      return NextResponse.json(
+        { error: 'Kelime ailesi bulunamadı.', id, familyId: id },
+        { status: 404 }
+      );
+    }
 
     // Bağlı Kökler (Root)
     const rootIdSet = new Set<string>();
@@ -73,9 +81,27 @@ export async function GET(
       }
     }
 
+    const headword =
+      familyMeta?.headword ||
+      familyMeta?.form ||
+      familyMeta?.title ||
+      members[0]?.form ||
+      id;
+
+    const glossTr =
+      familyMeta?.glossTr ||
+      familyMeta?.meaning ||
+      familyMeta?.translations?.tr ||
+      members[0]?.translations?.tr ||
+      '';
+
     return NextResponse.json({
       id,
+      familyId: familyMeta?.familyId || familyMeta?.id || id,
+      headword,
+      glossTr,
       family: familyMeta,
+      root: roots[0] || null,
       roots,
       concepts: Array.from(conceptMap.values()).sort((a, b) => b.count - a.count),
       members,
