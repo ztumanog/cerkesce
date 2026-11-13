@@ -117,14 +117,18 @@ export default function KavramlarPage() {
 
   const groups: ConceptTranslationGroup[] = [];
   for (const bucket of groupMap.values()) {
-    const trList = Array.from(bucket.trSet);
+    const trList = Array.from(bucket.trSet).filter((t) => !/\d/.test(t));
+    const fallbackTrList = Array.from(bucket.trSet);
     const enList = Array.from(bucket.enSet);
     const ruList = Array.from(bucket.ruSet);
-    const titleTr = trList.slice(0, 3).join(', ') || enList.slice(0, 2).join(', ') || humanizeConceptId(bucket.conceptId);
+
+    const cleanTr = trList.length > 0 ? trList : fallbackTrList;
+    const titleTr = cleanTr.slice(0, 3).join(', ') || enList.slice(0, 2).join(', ') || humanizeConceptId(bucket.conceptId);
     const subtitleEn = enList.slice(0, 3).join(', ');
     const subtitleRu = ruList.slice(0, 3).join(', ');
     const totalCount = bucket.adyLexemes.length + bucket.kbdLexemes.length + bucket.commonLexemes.length;
     const hasBothDialects = (bucket.adyLexemes.length > 0 && bucket.kbdLexemes.length > 0) || bucket.commonLexemes.length > 0;
+    const isBroadBucket = totalCount > 25;
     const allForms = [...bucket.adyLexemes, ...bucket.kbdLexemes, ...bucket.commonLexemes].map((l) => l.form);
 
     groups.push({
@@ -137,7 +141,8 @@ export default function KavramlarPage() {
       commonLexemes: bucket.commonLexemes,
       totalCount,
       hasBothDialects,
-      searchBlob: [bucket.conceptId, ...trList, ...enList, ...ruList, ...allForms].join(' ').toLowerCase(),
+      isBroadBucket,
+      searchBlob: [bucket.conceptId, ...fallbackTrList, ...enList, ...ruList, ...allForms].join(' ').toLowerCase(),
     });
   }
 
