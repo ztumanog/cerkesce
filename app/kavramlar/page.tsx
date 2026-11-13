@@ -22,12 +22,7 @@ interface RawLexeme {
   conceptId?: string;
   wordFamilyId?: string;
   rootIds?: string[];
-  translations?: {
-    tr?: string | string[];
-    en?: string | string[];
-    ru?: string | string[];
-    ar?: string | string[];
-  };
+  translations?: { tr?: string | string[]; en?: string | string[]; ru?: string | string[]; ar?: string | string[] };
   dialectVariants?: { adyghe?: string; kabardian?: string };
 }
 
@@ -117,32 +112,29 @@ export default function KavramlarPage() {
 
   const groups: ConceptTranslationGroup[] = [];
   for (const bucket of groupMap.values()) {
-    const trList = Array.from(bucket.trSet).filter((t) => !/\d/.test(t));
-    const fallbackTrList = Array.from(bucket.trSet);
+    const cleanTr = Array.from(bucket.trSet).filter((t) => !/\d/.test(t));
+    const fallbackTr = Array.from(bucket.trSet);
     const enList = Array.from(bucket.enSet);
     const ruList = Array.from(bucket.ruSet);
-
-    const cleanTr = trList.length > 0 ? trList : fallbackTrList;
-    const titleTr = cleanTr.slice(0, 3).join(', ') || enList.slice(0, 2).join(', ') || humanizeConceptId(bucket.conceptId);
-    const subtitleEn = enList.slice(0, 3).join(', ');
-    const subtitleRu = ruList.slice(0, 3).join(', ');
+    const titleTr = (cleanTr.length > 0 ? cleanTr : fallbackTr).slice(0, 3).join(', ')
+      || enList.slice(0, 2).join(', ')
+      || humanizeConceptId(bucket.conceptId);
     const totalCount = bucket.adyLexemes.length + bucket.kbdLexemes.length + bucket.commonLexemes.length;
     const hasBothDialects = (bucket.adyLexemes.length > 0 && bucket.kbdLexemes.length > 0) || bucket.commonLexemes.length > 0;
-    const isBroadBucket = totalCount > 25;
     const allForms = [...bucket.adyLexemes, ...bucket.kbdLexemes, ...bucket.commonLexemes].map((l) => l.form);
 
     groups.push({
       conceptId: bucket.conceptId,
       titleTr,
-      subtitleEn,
-      subtitleRu,
+      subtitleEn: enList.slice(0, 3).join(', '),
+      subtitleRu: ruList.slice(0, 3).join(', '),
       adyLexemes: bucket.adyLexemes,
       kbdLexemes: bucket.kbdLexemes,
       commonLexemes: bucket.commonLexemes,
       totalCount,
       hasBothDialects,
-      isBroadBucket,
-      searchBlob: [bucket.conceptId, ...fallbackTrList, ...enList, ...ruList, ...allForms].join(' ').toLowerCase(),
+      isBroadBucket: totalCount > 25,
+      searchBlob: [bucket.conceptId, ...fallbackTr, ...enList, ...ruList, ...allForms].join(' ').toLowerCase(),
     });
   }
 
