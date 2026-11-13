@@ -266,7 +266,7 @@ export const KelimeKarti: React.FC<KelimeKartiProps> = ({
         </h3>
         {data.ipa && (
           <span className="text-sm font-mono text-slate-500 dark:text-slate-400">
-            /{data.ipa}/
+            /{data.ipa.replace(/^\/+|\/+$/g, '')}/
           </span>
         )}
       </div>

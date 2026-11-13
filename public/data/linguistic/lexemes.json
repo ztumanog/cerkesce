@@ -11140,9 +11140,7 @@
     "conceptId": "REST",
     "partOfSpeech": "VERB",
     "dialect": "COMMON",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-PSEUNYGHE",
@@ -12215,9 +12213,7 @@
     "meaning": "kaptan",
     "frequency": 3,
     "rootId": "R-KKHUXY",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KKHUXYTET",
@@ -14034,7 +14030,7 @@
     "etymologyType": "native",
     "meaning": "zor, zahmetli",
     "rootId": "R-GUGHU",
-    "ipa": "gʷǝʁʷ",
+    "ipa": "/gʷǝʁʷ/",
     "alternateMeanings": [
       {
         "pos": "noun",
@@ -15084,9 +15080,7 @@
     "meaning": "yay",
     "frequency": 163,
     "rootId": "R-SHCHH",
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-SHHYEKYSYSHYEZHYN",
@@ -17759,9 +17753,7 @@
     "rootId": "R-PS",
     "conceptId": "REST",
     "dialect": "COMMON",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-PSEKHUP1E",
@@ -20190,9 +20182,7 @@
     "rootId": "R-SHE",
     "partOfSpeech": "VERB",
     "dialect": "COMMON",
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-UNESHHXHE",
@@ -21461,9 +21451,7 @@
     "rootId": "R-SHCHY",
     "conceptId": "THREE",
     "dialect": "COMMON",
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-TXU",
@@ -21788,9 +21776,7 @@
     "meaning": "beyaz",
     "rootId": "R-KHUZH",
     "dialect": "COMMON",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-SHHXHUE",
@@ -27034,9 +27020,7 @@
     "meaning": "Ihlamur ağacı",
     "rootId": "R-BZHYXHU",
     "dialect": "COMMON",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-BALYDZHE",
@@ -27367,9 +27351,7 @@
     "meaning": "sarımsak",
     "rootId": "R-ZHY",
     "dialect": "COMMON",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-NAKHE",
@@ -27526,9 +27508,7 @@
     "notes": "Amaltus Kategori 5. ху + [гу] = darı. AP/Qarden/Huvaj: пшено/DARİ. Faz 3 GU audit.",
     "conceptId": "CEREAL",
     "rootId": "R-GU",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KHE",
@@ -29639,9 +29619,7 @@
     "meaning": "balikci",
     "rootId": "R-BDZ",
     "dialect": "COMMON",
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-SHEZAQUEURYUE",
@@ -35818,7 +35796,7 @@
     "etymologyType": "native",
     "status": "PENDING_REVIEW",
     "meaning": "bozkır, tarla",
-    "ipa": "gʷǝbʁʷɐ",
+    "ipa": "/gʷǝbʁʷɐ/",
     "audioFile": "https://upload.wikimedia.org/wikipedia/commons/.../гу176губгъуэ.ogg",
     "audioStatus": "AVAILABLE",
     "examples": [
@@ -36070,9 +36048,7 @@
     "meaning": "nacak, balta",
     "rootId": "R-U",
     "dialect": "COMMON",
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-SHYGHU",
@@ -41755,9 +41731,7 @@
     "rootId": "R-SHE",
     "conceptId": "MILK",
     "dialect": "COMMON",
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-PL1Y",
@@ -42097,9 +42071,7 @@
     "meaning": "altmış",
     "rootId": "R-PSHCHY",
     "dialect": "COMMON",
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-SHCHENYKQUE",
@@ -49850,7 +49822,7 @@
       "en": "щитӀ: two hundred (200)",
       "ru": "щитӀ: двести (200)"
     },
-    "ipa": "ɕi:tʹ",
+    "ipa": "/ɕi:tʹ/",
     "dictionaryEvidence": [
       "sukunov-1998"
     ],
@@ -49894,7 +49866,7 @@
       "morphemeIds": [],
       "rule": "root"
     },
-    "ipa": "ɕi:ɕ",
+    "ipa": "/ɕi:ɕ/",
     "dictionaryEvidence": [
       "sukunov-1998"
     ],
@@ -49922,7 +49894,7 @@
       "en": "щиплӀ: four hundred (400)",
       "ru": "щиплӀ: четыреста (400)"
     },
-    "ipa": "ɕi:pʹɬʹ",
+    "ipa": "/ɕi:pʹɬʹ/",
     "dictionaryEvidence": [
       "sukunov-1998"
     ],
@@ -49946,7 +49918,7 @@
     "partOfSpeech": "numeral",
     "notes": "Toplu içe aktarma ile eklendi (500)",
     "corpusFrequency": 14,
-    "ipa": "ɕi:txʷ",
+    "ipa": "/ɕi:txʷ/",
     "isLemma": true,
     "translations": {
       "tr": [
@@ -50009,7 +49981,7 @@
       "morphemeIds": [],
       "rule": "root"
     },
-    "ipa": "ɕi:x",
+    "ipa": "/ɕi:x/",
     "dictionaryEvidence": [
       "sukunov-1998"
     ],
@@ -50058,9 +50030,7 @@
     "rootId": "R-BL",
     "conceptId": "SEVEN",
     "dialect": "COMMON",
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-NUM-900",
@@ -50070,7 +50040,7 @@
     "partOfSpeech": "numeral",
     "notes": "Toplu içe aktarma ile eklendi (900)",
     "corpusFrequency": 6,
-    "ipa": "ɕi:bʁʷ",
+    "ipa": "/ɕi:bʁʷ/",
     "rootIds": [
       "R-BGHW",
       "R-SHCH"
@@ -56216,9 +56186,7 @@
     "legacyIds": [
       "L-CORPUS-00097"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-PASHCHHE",
@@ -58725,9 +58693,7 @@
     "legacyIds": [
       "L-CORPUS-00146"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-ADEZH",
@@ -73445,7 +73411,9 @@
       "tr": "kararsızlık, tereddüt",
       "en": "irade; istikrar; istikrarli; i̇sti̇krar"
     },
-    "rootIds": [],
+    "rootIds": [
+      "R-WBYD"
+    ],
     "wordFamilyId": "WF-TEU",
     "derivation": {
       "rootIds": [
@@ -73489,9 +73457,7 @@
     "legacyIds": [
       "L-CORPUS-00446"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-IKEOU",
@@ -75854,9 +75820,7 @@
     "legacyIds": [
       "L-CORPUS-00496"
     ],
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-IS",
@@ -76257,9 +76221,7 @@
     "legacyIds": [
       "L-CORPUS-00505"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-XEGHEKHUEN",
@@ -77548,9 +77510,7 @@
     "legacyIds": [
       "L-CORPUS-00533"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-EYSHCH",
@@ -77880,9 +77840,7 @@
     "legacyIds": [
       "L-CORPUS-00541"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-UBYDYN",
@@ -84439,9 +84397,7 @@
     "legacyIds": [
       "L-CORPUS-00682"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-CHEF",
@@ -84951,9 +84907,7 @@
     "legacyIds": [
       "L-CORPUS-00693"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-ZHEY-2",
@@ -91338,9 +91292,7 @@
     "legacyIds": [
       "L-CORPUS-00823"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-ZYKEOM",
@@ -95245,9 +95197,7 @@
     "legacyIds": [
       "L-CORPUS-00899"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-UZYNSHEU",
@@ -97079,9 +97029,7 @@
     "legacyIds": [
       "L-CORPUS-00935"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-ZEZYHE",
@@ -101042,9 +100990,7 @@
     "legacyIds": [
       "L-CORPUS-01013"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-IGHUEU",
@@ -103700,9 +103646,7 @@
     "legacyIds": [
       "L-CORPUS-01066"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-ZEXUEHESYN",
@@ -108704,9 +108648,7 @@
     "legacyIds": [
       "L-CORPUS-01161"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-SAUGHET",
@@ -114388,9 +114330,7 @@
     "legacyIds": [
       "L-CORPUS-01282"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-SEXU",
@@ -116363,9 +116303,7 @@
     "legacyIds": [
       "L-CORPUS-01327"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-GHEGHUN",
@@ -118059,9 +117997,7 @@
     "legacyIds": [
       "L-CORPUS-01357"
     ],
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-NYSHCHHEBE",
@@ -124680,9 +124616,7 @@
     "legacyIds": [
       "L-CORPUS-01496"
     ],
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-MATE",
@@ -126375,9 +126309,7 @@
     "legacyIds": [
       "L-CORPUS-01528"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-ZEPKERYXYN",
@@ -127687,9 +127619,7 @@
     "legacyIds": [
       "L-CORPUS-01557"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-ZYRYZU",
@@ -135761,9 +135691,7 @@
     "legacyIds": [
       "L-CORPUS-01714"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-PKHEXUEY",
@@ -135809,9 +135737,7 @@
     "legacyIds": [
       "L-CORPUS-01715"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-BELATSE",
@@ -136271,9 +136197,7 @@
     "legacyIds": [
       "L-CORPUS-01724"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-GHUN",
@@ -139127,9 +139051,7 @@
     "legacyIds": [
       "L-CORPUS-01782"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-YAMYLEYUE",
@@ -141078,7 +141000,9 @@
       "en": "harmoniously, smoothly; clearly, correctly, distinctly, precisely, impeccably",
       "tr": "smoothly"
     },
-    "rootIds": [],
+    "rootIds": [
+      "R-XHW"
+    ],
     "wordFamilyId": "WF-GE",
     "derivation": {
       "rootIds": [],
@@ -141100,9 +141024,7 @@
     "legacyIds": [
       "L-CORPUS-01820"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-LHXUEN",
@@ -142843,9 +142765,7 @@
     "legacyIds": [
       "L-CORPUS-01860"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-AREZYNYGHE",
@@ -143146,9 +143066,7 @@
     "legacyIds": [
       "L-CORPUS-01866"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-T",
@@ -143460,7 +143378,9 @@
     "conceptId": "WRITE",
     "literalMeaningAdy": "act. of теуэн; 2. assault, attack; aggression; теуэныгъэм щӀэкъу: aggressive,…",
     "isLemma": true,
-    "rootIds": [],
+    "rootIds": [
+      "R-U"
+    ],
     "wordFamilyId": "WF-TEU",
     "derivation": {
       "rootIds": [
@@ -143509,9 +143429,7 @@
     "legacyIds": [
       "L-CORPUS-01873"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-GAZET",
@@ -143829,7 +143747,9 @@
     "notes": "Corpus v1.0 (freq: 21, lang: kbd, source: 1.Ady-Ady_AP)",
     "literalMeaningAdy": "устар. гурия / Муслъымэн диным зэрыжиӀэмкӀэ, зи щ",
     "isLemma": true,
-    "rootIds": [],
+    "rootIds": [
+      "R-XHW"
+    ],
     "wordFamilyId": "WF-KHUR",
     "derivation": {
       "rootIds": [],
@@ -143855,9 +143775,7 @@
     "legacyIds": [
       "L-CORPUS-01879"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KEIXUN",
@@ -149759,9 +149677,7 @@
     "legacyIds": [
       "L-CORPUS-01996"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KOFE",
@@ -149894,9 +149810,7 @@
     "legacyIds": [
       "L-CORPUS-01999"
     ],
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KEYXESHCHYN",
@@ -149954,9 +149868,7 @@
     "legacyIds": [
       "L-CORPUS-02000"
     ],
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-ZYSHCHYKHUMEN",
@@ -157206,9 +157118,7 @@
     "legacyIds": [
       "L-CORPUS-02165"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-SHCHYLH",
@@ -157958,9 +157868,7 @@
     "legacyIds": [
       "L-CORPUS-02181"
     ],
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-SHECHYNSHEU",
@@ -160864,7 +160772,9 @@
       "ar": "يقف على",
       "en": "stand on; step on; basmak; ayak basmak"
     },
-    "rootIds": [],
+    "rootIds": [
+      "R-U"
+    ],
     "wordFamilyId": "WF-TEU",
     "derivation": {
       "rootIds": [
@@ -160909,9 +160819,7 @@
     "legacyIds": [
       "L-CORPUS-02242"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-ZYLHEGHURER",
@@ -162459,9 +162367,7 @@
     "legacyIds": [
       "L-CORPUS-02277"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-GUEGUSH",
@@ -166104,9 +166010,7 @@
     "legacyIds": [
       "L-CORPUS-02347"
     ],
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-PCHAGHERE",
@@ -168794,7 +168698,7 @@
     "meaning": "Çalı, ağaççık",
     "wordFamilyId": "WF-GUEREN",
     "rootId": "R-GUER",
-    "ipa": "gʷɐ'rɐn",
+    "ipa": "/gʷɐ'rɐn/",
     "audioFile": "https://upload.wikimedia.org/wikipedia/commons/.../гу127гуэрэн.ogg",
     "audioStatus": "AVAILABLE",
     "examples": [
@@ -169041,9 +168945,7 @@
     "legacyIds": [
       "L-CORPUS-02415"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-XEKUHYN",
@@ -170793,9 +170695,7 @@
     "legacyIds": [
       "L-CORPUS-02448"
     ],
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-ZHAPSHCHE",
@@ -171724,9 +171624,7 @@
     "legacyIds": [
       "L-CORPUS-02466"
     ],
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-ZEPYGHEUN",
@@ -176015,9 +175913,7 @@
     "legacyIds": [
       "L-CORPUS-02561"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-TETER",
@@ -177045,9 +176941,7 @@
     "legacyIds": [
       "L-CORPUS-02584"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-XUESHIIN",
@@ -178087,7 +177981,9 @@
       "tr": "âdi̇l",
       "trSource": "en->tr koprusu (orta)"
     },
-    "rootIds": [],
+    "rootIds": [
+      "R-XHW"
+    ],
     "wordFamilyId": "WF-GE",
     "derivation": {
       "rootIds": [],
@@ -178104,9 +178000,7 @@
     "legacyIds": [
       "L-CORPUS-02608"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-TUTNAKE",
@@ -179201,7 +179095,7 @@
       "kabardian": "бэгу"
     },
     "notes": "Corpus v1.0 (freq: 15, lang: kbd, source: 0.Ady-Ady_AIG) | Kaynak: sukunov-1998",
-    "ipa": "[bɐgʷ]",
+    "ipa": "/[bɐgʷ]/",
     "examples": [
       "БампӀэ зиӀэр псэлъалэщи, бэгу зиӀэр тӀэхъуалэщ."
     ],
@@ -182228,9 +182122,7 @@
     "legacyIds": [
       "L-CORPUS-02697"
     ],
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-GHESEPETXYDE",
@@ -185390,9 +185282,7 @@
     "legacyIds": [
       "L-CORPUS-02763"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-DOKTOR",
@@ -185883,9 +185773,7 @@
     "legacyIds": [
       "L-CORPUS-02772"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-OFITSER",
@@ -186249,9 +186137,7 @@
     "legacyIds": [
       "L-CORPUS-02780"
     ],
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-DAPXUEDIZRE",
@@ -187045,9 +186931,7 @@
     "legacyIds": [
       "L-CORPUS-02795"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-XEXES",
@@ -188394,9 +188278,7 @@
     "legacyIds": [
       "L-CORPUS-02820"
     ],
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KEEUKHUREIHYN",
@@ -190997,9 +190879,7 @@
     "legacyIds": [
       "L-CORPUS-02868"
     ],
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-LHEGHU",
@@ -194631,9 +194511,7 @@
     "legacyIds": [
       "L-CORPUS-02958"
     ],
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-ESEP",
@@ -197489,9 +197367,7 @@
     "legacyIds": [
       "L-CORPUS-03016"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-EZESHYN",
@@ -200810,9 +200686,7 @@
     "legacyIds": [
       "L-CORPUS-03083"
     ],
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-GHENEFEN",
@@ -201053,9 +200927,7 @@
     "legacyIds": [
       "L-CORPUS-03089"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-GHEFEBEN",
@@ -203429,9 +203301,7 @@
     "legacyIds": [
       "L-CORPUS-03158"
     ],
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-UZIZHEGHUEN",
@@ -204921,9 +204791,7 @@
     "legacyIds": [
       "L-CORPUS-03187"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-GULHYTENSHE",
@@ -205055,9 +204923,7 @@
     "legacyIds": [
       "L-CORPUS-03189"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-MADE",
@@ -206060,9 +205926,7 @@
     "legacyIds": [
       "L-CORPUS-03206"
     ],
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-HELE",
@@ -208182,9 +208046,7 @@
     "legacyIds": [
       "L-CORPUS-03250"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-LEYZEHE",
@@ -209653,9 +209515,7 @@
     "legacyIds": [
       "L-CORPUS-03279"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-ALZHIR",
@@ -215933,9 +215793,7 @@
     "legacyIds": [
       "L-CORPUS-03425"
     ],
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-SHYUGHE",
@@ -216376,9 +216234,7 @@
     "legacyIds": [
       "L-CORPUS-03436"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-ZEDZYN-2",
@@ -218396,9 +218252,7 @@
     "legacyIds": [
       "L-CORPUS-03475"
     ],
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KEIDZYN",
@@ -226139,7 +225993,9 @@
     },
     "notes": "Corpus v1.0 (freq: 11, lang: ady, source: 2.Ady-Ara)",
     "isLemma": true,
-    "rootIds": [],
+    "rootIds": [
+      "R-WBYD"
+    ],
     "wordFamilyId": "WF-TEU",
     "derivation": {
       "rootIds": [
@@ -226189,9 +226045,7 @@
     "legacyIds": [
       "L-CORPUS-03627"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-MEZAXEM",
@@ -229114,9 +228968,7 @@
     "legacyIds": [
       "L-CORPUS-03712"
     ],
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-DYGHERYZHE",
@@ -229209,9 +229061,7 @@
     "legacyIds": [
       "L-CORPUS-03714"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-SHCHHEUKUEEN",
@@ -230042,9 +229892,7 @@
     "legacyIds": [
       "L-CORPUS-03731"
     ],
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-ZHEMYSH",
@@ -231763,9 +231611,7 @@
     "legacyIds": [
       "L-CORPUS-03771"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-EDZHEZHYN",
@@ -232783,9 +232629,7 @@
     "legacyIds": [
       "L-CORPUS-03791"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-LENYSTE",
@@ -234483,10 +234327,7 @@
     "legacyIds": [
       "L-CORPUS-03826"
     ],
-    "legacyRootForms": [
-      "щ",
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-MOBDEZH",
@@ -234733,9 +234574,7 @@
     "legacyIds": [
       "L-CORPUS-03831"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KHARZYNESHCH",
@@ -235748,9 +235587,7 @@
     "legacyIds": [
       "L-CORPUS-03850"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-TEGHELHYN",
@@ -236924,9 +236761,7 @@
     "legacyIds": [
       "L-CORPUS-03870"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-ZEGHEPESHCHA",
@@ -237636,9 +237471,7 @@
     "legacyIds": [
       "L-CORPUS-03884"
     ],
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KEET",
@@ -242545,7 +242378,9 @@
     },
     "notes": "Corpus v1.0 (freq: 10, lang: ady, source: 2.Ady-Ara)",
     "isLemma": true,
-    "rootIds": [],
+    "rootIds": [
+      "R-U"
+    ],
     "wordFamilyId": "WF-TEU",
     "derivation": {
       "rootIds": [
@@ -242596,9 +242431,7 @@
     "legacyIds": [
       "L-CORPUS-03999"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-DEFEN",
@@ -247272,9 +247105,7 @@
     "legacyIds": [
       "L-CORPUS-04126"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KEEGUBZHAUE",
@@ -250115,9 +249946,7 @@
     "legacyIds": [
       "L-CORPUS-04185"
     ],
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-SHCHAUEGHU",
@@ -250884,9 +250713,7 @@
     "legacyIds": [
       "L-CORPUS-04198"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-ZEXEPSHCHEN",
@@ -251326,9 +251153,7 @@
     "legacyIds": [
       "L-CORPUS-04206"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-DYSHCHAFE",
@@ -266948,9 +266773,7 @@
     "legacyIds": [
       "L-CORPUS-04564"
     ],
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-ZEGUETKHYN",
@@ -269118,7 +268941,9 @@
     },
     "notes": "Corpus v1.0 (freq: 8, lang: kbd, source: 1.Ady-Ady_AP)",
     "ipa": "/qʹǝʑɐdɐ'xʷǝn/",
-    "rootIds": [],
+    "rootIds": [
+      "R-XHW"
+    ],
     "wordFamilyId": "WF-ZHA",
     "derivation": {
       "rule": "root",
@@ -269147,9 +268972,7 @@
     "legacyIds": [
       "L-CORPUS-04608"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-UIY",
@@ -270193,9 +270016,7 @@
     "legacyIds": [
       "L-CORPUS-04631"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-SHEFTAL",
@@ -271378,9 +271199,7 @@
     "legacyIds": [
       "L-CORPUS-04654"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-TYRKUMEN",
@@ -271648,9 +271467,7 @@
     "legacyIds": [
       "L-CORPUS-04662"
     ],
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-XUEDZYZHYN",
@@ -273681,9 +273498,7 @@
     "legacyIds": [
       "L-CORPUS-04703"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KUEEKHUHYN",
@@ -278876,9 +278691,7 @@
     "legacyIds": [
       "L-CORPUS-04801"
     ],
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-LHXUGHE",
@@ -282693,9 +282506,7 @@
     "legacyIds": [
       "L-CORPUS-04874"
     ],
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-DEGHEZHEXYN",
@@ -284634,9 +284445,7 @@
     "legacyIds": [
       "L-CORPUS-04929"
     ],
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-REHATYN",
@@ -297037,9 +296846,7 @@
     "legacyIds": [
       "L-CORPUS2-01654"
     ],
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-L-YKHUZH",
@@ -317218,9 +317025,7 @@
     "legacyIds": [
       "L-CORPUS2-06244"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-F-E-UN",
@@ -320158,9 +319963,7 @@
     "legacyIds": [
       "L-CORPUS2-06923"
     ],
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-ZEKHOK-YN",
@@ -323480,9 +323283,7 @@
     "legacyIds": [
       "L-CORPUS2-07650"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-THE-UXUD",
@@ -324193,9 +323994,7 @@
     "legacyIds": [
       "L-CORPUS2-07795"
     ],
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-L-YSHCH-E",
@@ -335646,7 +335445,9 @@
       "trSource": "en->tr koprusu (orta)",
       "ar": "يغطي، يمد على/ يغشي"
     },
-    "rootIds": [],
+    "rootIds": [
+      "R-U"
+    ],
     "wordFamilyId": "WF-TEU",
     "derivation": {
       "rootIds": [
@@ -335687,9 +335488,7 @@
     "rootId": "R-XHW",
     "partOfSpeech": "VERB",
     "dialect": "ADY",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-VERIFIED-00047",
@@ -340229,7 +340028,7 @@
     ],
     "meaning": "delayed",
     "rootId": "R-GUVE",
-    "ipa": "gʷǝv",
+    "ipa": "/gʷǝv/",
     "audioFile": "https://upload.wikimedia.org/wikipedia/commons/.../гу206гувэн.ogg",
     "audioStatus": "AVAILABLE",
     "dialect": "COMMON"
@@ -345196,9 +344995,7 @@
     "root": "ч",
     "rootForm": "ч",
     "dialect": "COMMON",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-VERIFIED-00258",
@@ -347224,9 +347021,7 @@
     "conceptId": "CROWN_OF_HEAD",
     "partOfSpeech": "VERB",
     "dialect": "COMMON",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-VERIFIED-00305",
@@ -350444,9 +350239,7 @@
     "meaning": "DARBE",
     "rootId": "R-U",
     "dialect": "COMMON",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-VERIFIED-00371",
@@ -366289,9 +366082,7 @@
     "rootId": "R-F",
     "conceptId": "BALD",
     "dialect": "COMMON",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-VERIFIED-00736",
@@ -366804,9 +366595,7 @@
     "conceptId": "COME",
     "partOfSpeech": "VERB",
     "dialect": "COMMON",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-VERIFIED-00747",
@@ -367725,9 +367514,7 @@
     "meaning": "KIRKMA",
     "rootId": "R-TS",
     "dialect": "COMMON",
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-VERIFIED-00767",
@@ -368753,9 +368540,7 @@
     "meaning": "Sarılıgan yonca",
     "rootId": "R-TKHEMPISHCH",
     "dialect": "COMMON",
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-VERIFIED-00789",
@@ -371978,9 +371763,7 @@
     "rootId": "R-SHHYE",
     "partOfSpeech": "VERB",
     "dialect": "COMMON",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-VERIFIED-00862",
@@ -372513,9 +372296,7 @@
     "meaning": "İlaç",
     "rootId": "R-SCHKHWA",
     "dialect": "COMMON",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-VERIFIED-00874",
@@ -374198,9 +373979,7 @@
     "root": "чы",
     "rootForm": "чы",
     "dialect": "COMMON",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-VERIFIED-00912",
@@ -377945,9 +377724,7 @@
     "rootId": "R-SHE2",
     "conceptId": "PLANT_JUICE",
     "dialect": "COMMON",
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-VERIFIED-00990",
@@ -378334,9 +378111,7 @@
     "meaning": "Arka avlu",
     "rootId": "R-SHYGHW",
     "dialect": "COMMON",
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-VERIFIED-00998",
@@ -378990,9 +378765,7 @@
     "rootId": "R-XHW",
     "partOfSpeech": "VERB",
     "dialect": "COMMON",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-VERIFIED-01013",
@@ -379186,9 +378959,7 @@
     "meaning": "Üçüncü",
     "rootId": "R-ANA",
     "dialect": "COMMON",
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-VERIFIED-01017",
@@ -380772,9 +380543,7 @@
     "rootId": "R-GUSCH",
     "partOfSpeech": "VERB",
     "dialect": "COMMON",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-VERIFIED-01049",
@@ -380853,9 +380622,7 @@
     "literalMeaning": "Katlanılmaz, çekilmez",
     "pos": "adjective",
     "rootId": "R-GU",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-VERIFIED-01050",
@@ -384118,9 +383885,7 @@
     "rootId": "R-SHHYE",
     "partOfSpeech": "VERB",
     "dialect": "COMMON",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-VERIFIED-01115",
@@ -384242,9 +384007,7 @@
     "conceptId": "HERD",
     "partOfSpeech": "VERB",
     "dialect": "COMMON",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-VERIFIED-01117",
@@ -384321,7 +384084,7 @@
     "etymologyType": "native",
     "meaning": "GECİKMEK",
     "rootId": "R-GUVE",
-    "ipa": "gʷǝ'vɐn",
+    "ipa": "/gʷǝ'vɐn/",
     "audioFile": "https://upload.wikimedia.org/wikipedia/commons/.../гу206гувэн.ogg",
     "audioStatus": "AVAILABLE",
     "partOfSpeech": "VERB",
@@ -384678,9 +384441,7 @@
     "rootId": "R-PSHA",
     "partOfSpeech": "VERB",
     "dialect": "COMMON",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-VERIFIED-01128",
@@ -384872,10 +384633,7 @@
     "meaning": "AZAT",
     "rootId": "R-SHCHH",
     "dialect": "COMMON",
-    "legacyRootForms": [
-      "щ",
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-VERIFIED-01132",
@@ -386789,9 +386547,7 @@
     "meaning": "AYAK",
     "rootId": "R-SCHKHWA",
     "dialect": "COMMON",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-VERIFIED-01171",
@@ -388429,9 +388185,7 @@
     "conceptId": "WISH",
     "literalMeaning": "gizli arzu, dilek",
     "rootId": "R-GU",
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-VERIFIED-01204",
@@ -390493,9 +390247,7 @@
     "meaning": "bald",
     "rootId": "R-SHCHH",
     "dialect": "COMMON",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-VERIFIED-01246",
@@ -392175,9 +391927,7 @@
     "conceptId": "FALL",
     "partOfSpeech": "VERB",
     "dialect": "COMMON",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-VERIFIED-01282",
@@ -403909,9 +403659,7 @@
     "WF": "WF-NE-EXPRESSION",
     "frequency": 5,
     "rootId": "R-TH",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-VERIFIED-01583",
@@ -406805,9 +406553,7 @@
     "conceptId": "BODY_PART",
     "partOfSpeech": "VERB",
     "dialect": "COMMON",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-VERIFIED-01645",
@@ -409294,9 +409040,7 @@
     "frequency": 5,
     "rootId": "R-S",
     "partOfSpeech": "VERB",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-VERIFIED-01693",
@@ -412661,9 +412405,7 @@
     "root": "ху",
     "rootForm": "ху",
     "dialect": "COMMON",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-VERIFIED-01761",
@@ -412811,9 +412553,7 @@
     "meaning": "BEYAZLIK",
     "rootId": "R-KHUZH",
     "dialect": "COMMON",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-VERIFIED-01765",
@@ -415101,9 +414841,7 @@
     "conceptId": "VEGETABLE",
     "rootId": "R-GYN",
     "dialect": "COMMON",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-VERIFIED-01815",
@@ -415779,9 +415517,7 @@
     "rootId": "R-SHCHH",
     "conceptId": "HEAD",
     "dialect": "COMMON",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-VERIFIED-01828",
@@ -416524,9 +416260,7 @@
     "meaning": "TAMAMEN",
     "rootId": "R-Z",
     "dialect": "COMMON",
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-VERIFIED-01842",
@@ -416932,9 +416666,7 @@
     "meaning": "serbest çalışan, girişimci",
     "rootId": "R-SHCHH",
     "dialect": "COMMON",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-VERIFIED-01849",
@@ -419089,9 +418821,7 @@
     "rootId": "R-KHY",
     "conceptId": "SEA",
     "dialect": "COMMON",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-VERIFIED-01891",
@@ -420335,9 +420065,7 @@
     "meaning": "akdari",
     "rootId": "R-SHE2",
     "dialect": "COMMON",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-VERIFIED-01913",
@@ -420399,9 +420127,7 @@
     "conceptId": "HERD",
     "partOfSpeech": "VERB",
     "dialect": "COMMON",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-VERIFIED-01914",
@@ -425141,9 +424867,7 @@
     "meaning": "ŞÖLEN",
     "rootId": "R-F",
     "dialect": "COMMON",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-VERIFIED-02015",
@@ -425572,9 +425296,7 @@
     "rootId": "R-SHCH",
     "partOfSpeech": "VERB",
     "dialect": "COMMON",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-VERIFIED-02028",
@@ -432530,9 +432252,7 @@
     "rootId": "R-LHE",
     "partOfSpeech": "VERB",
     "dialect": "COMMON",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-VERIFIED-02178",
@@ -434893,9 +434613,7 @@
     "rootId": "R-KKHUXY",
     "conceptId": "VESSEL",
     "dialect": "COMMON",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-VERIFIED-02229",
@@ -437529,9 +437247,7 @@
     "rootId": "R-UX",
     "partOfSpeech": "VERB",
     "dialect": "COMMON",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-VERIFIED-02289",
@@ -438086,9 +437802,7 @@
     "wordFamilyId": "WF-KHUMEN",
     "rootId": "R-1E",
     "dialect": "COMMON",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-VERIFIED-02301",
@@ -438339,9 +438053,7 @@
     "conceptId": "MONEY",
     "partOfSpeech": "VERB",
     "dialect": "COMMON",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-VERIFIED-02306",
@@ -438506,9 +438218,7 @@
     "dialectNote": "Kbd kaynakli",
     "frequency": 5,
     "rootId": "R-GU",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-VERIFIED-02309",
@@ -454006,9 +453716,7 @@
     "rootId": "R-PSHCHY",
     "conceptId": "BOW_MUSIC",
     "dialect": "COMMON",
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-NUM-SEVENTEEN",
@@ -455722,9 +455430,7 @@
     "meaning": "sürücü",
     "rootId": "R-SHY",
     "dialect": "COMMON",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-PROMPT-00034",
@@ -458489,9 +458195,7 @@
     "wordFamilyId": "WF-1U-",
     "rootId": "R-GU",
     "partOfSpeech": "VERB",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-00023",
@@ -461618,9 +461322,7 @@
     "rootId": "R-URY",
     "partOfSpeech": "VERB",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-00089",
@@ -462459,9 +462161,7 @@
     "rootId": "R-SHE",
     "partOfSpeech": "VERB",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-00108",
@@ -466798,9 +466498,7 @@
     "rootId": "R-1E",
     "partOfSpeech": "VERB",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-00190",
@@ -467246,9 +466944,7 @@
     "rootId": "R-1E",
     "tr": "Ӏэрыхуэ / Ӏарыфэгъу еплъ &lt;&lt;ӀэшӀэх&gt;&gt; KOLAY",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-00198",
@@ -467888,9 +467584,7 @@
     "meaning": "name of an ancient weapon",
     "rootId": "R-K",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-00209",
@@ -469344,9 +469038,7 @@
     "rootId": "R-1E",
     "partOfSpeech": "VERB",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-00233",
@@ -469411,9 +469103,7 @@
     "partOfSpeech": "VERB",
     "tr": "ӀэщӀэхун еплъ &lt;&lt;Ӏапызын&gt;&gt; DÜŞMEK 2 (elinden ~)",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-00234",
@@ -472518,8 +472208,7 @@
     "rootId": "R-FE",
     "dialect": "KBD",
     "legacyRootForms": [
-      "аф",
-      "ху"
+      "аф"
     ]
   },
   {
@@ -491659,9 +491348,7 @@
     "meaning": "Kuyruklu Yıldız",
     "rootId": "R-BZHE",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-00669",
@@ -492177,9 +491864,7 @@
     "rootId": "R-SHE",
     "conceptId": "MILK",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-00684",
@@ -492676,9 +492361,7 @@
     "meaning": "obur",
     "rootId": "R-GHWALH",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-00697",
@@ -493714,9 +493397,7 @@
     "conceptId": "FOR",
     "partOfSpeech": "VERB",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-00717",
@@ -496295,9 +495976,7 @@
     "rootId": "R-LHE",
     "conceptId": "THREE",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-00768",
@@ -500844,8 +500523,7 @@
     "conceptId": "SILK_FABRIC",
     "dialect": "KBD",
     "legacyRootForms": [
-      "дарий",
-      "ху"
+      "дарий"
     ]
   },
   {
@@ -503903,9 +503581,7 @@
     "meaning": "Lacivert taşı",
     "rootId": "R-J",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-00931",
@@ -504966,9 +504642,7 @@
     "meaning": "sansli ev",
     "rootId": "R-PS",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-00953",
@@ -509164,7 +508838,9 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-XHW"
+    ],
     "derivation": null,
     "dialectVariants": {
       "adyghe": "",
@@ -509186,9 +508862,7 @@
     "root": "ху",
     "rootForm": "ху",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-01049",
@@ -515112,9 +514786,7 @@
     "rootId": "R-1E",
     "partOfSpeech": "VERB",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-01187",
@@ -516108,9 +515780,7 @@
     "rootId": "R-IWO",
     "conceptId": "SPEAK",
     "partOfSpeech": "VERB",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-01214",
@@ -520783,9 +520453,7 @@
     "conceptId": "BACK",
     "partOfSpeech": "VERB",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-01323",
@@ -522484,9 +522152,7 @@
     "rootId": "R-1E",
     "conceptId": "WHITEBEARDED",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-01366",
@@ -523522,9 +523188,7 @@
     "conceptId": "MOUTH",
     "partOfSpeech": "VERB",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-01396",
@@ -524194,9 +523858,7 @@
     "conceptId": "CLOSE",
     "partOfSpeech": "VERB",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-01416",
@@ -528472,9 +528134,7 @@
     "rootId": "R-GU",
     "conceptId": "JOY",
     "partOfSpeech": "VERB",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-01510",
@@ -534090,9 +533750,7 @@
     "rootId": "R-KIU",
     "partOfSpeech": "VERB",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-01628",
@@ -535034,9 +534692,7 @@
     "conceptId": "OTHER",
     "partOfSpeech": "VERB",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-01654",
@@ -535543,9 +535199,7 @@
     "conceptId": "SCATTER",
     "partOfSpeech": "VERB",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-01666",
@@ -535590,9 +535244,7 @@
     "conceptId": "SCATTER",
     "partOfSpeech": "VERB",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-01668",
@@ -540777,9 +540429,7 @@
     "conceptId": "SOME",
     "partOfSpeech": "VERB",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-01786",
@@ -542446,9 +542096,7 @@
     "conceptId": "ENCOUNTER",
     "partOfSpeech": "VERB",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-01821",
@@ -543109,9 +542757,7 @@
     "conceptId": "OTHER",
     "partOfSpeech": "VERB",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-01837",
@@ -543520,9 +543166,7 @@
     "rootId": "R-GUSCH",
     "partOfSpeech": "VERB",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-01847",
@@ -546097,9 +545741,7 @@
     "rootId": "R-Z",
     "partOfSpeech": "VERB",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-01900",
@@ -548107,9 +547749,7 @@
     "conceptId": "JUMP",
     "partOfSpeech": "VERB",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-01943",
@@ -549145,9 +548785,7 @@
     "rootId": "R-SHHYE",
     "partOfSpeech": "VERB",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-01964",
@@ -549498,9 +549136,7 @@
     "rootId": "R-QHUT",
     "conceptId": "SEA",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-01970",
@@ -557682,9 +557318,7 @@
     "rootId": "R-KIU",
     "partOfSpeech": "VERB",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-02167",
@@ -559337,9 +558971,7 @@
     "conceptId": "HERD",
     "partOfSpeech": "VERB",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-02214",
@@ -561075,8 +560707,7 @@
     "conceptId": "WASTE",
     "dialect": "KBD",
     "legacyRootForms": [
-      "хубжь",
-      "ху"
+      "хубжь"
     ]
   },
   {
@@ -562476,8 +562107,7 @@
     "rootId": "R-UESHCH",
     "dialect": "KBD",
     "legacyRootForms": [
-      "куэщэн",
-      "щ"
+      "куэщэн"
     ]
   },
   {
@@ -567021,9 +566651,7 @@
     "conceptId": "MOUTH",
     "partOfSpeech": "VERB",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-02420",
@@ -569544,9 +569172,7 @@
     "conceptId": "CLOSE",
     "partOfSpeech": "VERB",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-02520",
@@ -570116,9 +569742,7 @@
     "conceptId": "CATCH",
     "partOfSpeech": "VERB",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-02539",
@@ -575712,9 +575336,7 @@
     "conceptId": "CROWN_OF_HEAD",
     "partOfSpeech": "VERB",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-02684",
@@ -577219,9 +576841,7 @@
     "rootId": "R-SHHYE",
     "conceptId": "FREE",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-02725",
@@ -577262,9 +576882,7 @@
     "conceptId": "HERD",
     "partOfSpeech": "VERB",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-02726",
@@ -577306,9 +576924,7 @@
     "conceptId": "HERD",
     "partOfSpeech": "VERB",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-02728",
@@ -577638,9 +577254,7 @@
     "conceptId": "COMPASSION",
     "partOfSpeech": "VERB",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-02736",
@@ -577765,9 +577379,7 @@
     "conceptId": "RELEASE",
     "partOfSpeech": "VERB",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-02739",
@@ -578103,9 +577715,7 @@
     "conceptId": "HERD",
     "partOfSpeech": "VERB",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-02761",
@@ -579709,9 +579319,7 @@
     "conceptId": "ABOUT",
     "partOfSpeech": "VERB",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-02806",
@@ -580244,9 +579852,7 @@
     "conceptId": "OTHER",
     "partOfSpeech": "VERB",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-02816",
@@ -580286,9 +579892,7 @@
     "conceptId": "RUN",
     "partOfSpeech": "VERB",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-02817",
@@ -580369,9 +579973,7 @@
     "conceptId": "EXPEL",
     "partOfSpeech": "VERB",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-02819",
@@ -580774,9 +580376,7 @@
     "conceptId": "RUN",
     "partOfSpeech": "VERB",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-02828",
@@ -580820,9 +580420,7 @@
     "conceptId": "RUN",
     "partOfSpeech": "VERB",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-02829",
@@ -581742,9 +581340,7 @@
     "conceptId": "HERD",
     "partOfSpeech": "VERB",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-02846",
@@ -583559,9 +583155,7 @@
     "conceptId": "SOME",
     "partOfSpeech": "VERB",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-02890",
@@ -584328,9 +583922,7 @@
     "conceptId": "ABOUT",
     "partOfSpeech": "VERB",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-02914",
@@ -584810,9 +584402,7 @@
     "conceptId": "ONE",
     "partOfSpeech": "VERB",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-02928",
@@ -585610,9 +585200,7 @@
     "conceptId": "FALL",
     "partOfSpeech": "VERB",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-02945",
@@ -587067,9 +586655,7 @@
     "conceptId": "CROWN_OF_HEAD",
     "partOfSpeech": "VERB",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-02989",
@@ -587248,9 +586834,7 @@
     "conceptId": "HAPPEN",
     "partOfSpeech": "VERB",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-02998",
@@ -588752,9 +588336,7 @@
     "conceptId": "FALL",
     "partOfSpeech": "VERB",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-03049",
@@ -589250,9 +588832,7 @@
     "conceptId": "COME",
     "partOfSpeech": "VERB",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-03061",
@@ -590582,9 +590162,7 @@
     "conceptId": "CURL",
     "partOfSpeech": "VERB",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-03104",
@@ -590841,9 +590419,7 @@
     "rootId": "R-SHHYE",
     "partOfSpeech": "VERB",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-03111",
@@ -594563,9 +594139,7 @@
     "conceptId": "FOR",
     "partOfSpeech": "VERB",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-03196",
@@ -598021,9 +597595,7 @@
     "conceptId": "FOR",
     "partOfSpeech": "VERB",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-03266",
@@ -601146,9 +600718,7 @@
     "meaning": "seki",
     "rootId": "R-LHE",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-03343",
@@ -601756,9 +601326,7 @@
     "meaning": "avcı",
     "rootId": "R-P",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-03354",
@@ -603345,9 +602913,7 @@
     "meaning": "Bağ, kiriş",
     "rootId": "R-LHE",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-03383",
@@ -605851,9 +605417,7 @@
     "meaning": "akilli",
     "rootId": "R-LHE",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-03439",
@@ -607236,9 +606800,7 @@
     "root": "маӀу",
     "rootForm": "маӀу",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-03471",
@@ -609855,9 +609417,7 @@
     "rootId": "R-MYV",
     "conceptId": "STONE",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-03531",
@@ -611467,9 +611027,7 @@
     "root": "мэӀу",
     "rootForm": "мэӀу",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-03565",
@@ -611873,9 +611431,7 @@
     "rootId": "R-1E",
     "conceptId": "GRASS",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-03575",
@@ -611941,9 +611497,7 @@
     "meaning": "hayloft",
     "rootId": "R-MEQU",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-03576",
@@ -613685,9 +613239,7 @@
     "rootId": "R-N",
     "conceptId": "FACE",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-03615",
@@ -613756,9 +613308,7 @@
     ],
     "rootId": "R-PQH",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-03616",
@@ -614674,9 +614224,7 @@
     "rootId": "R-SHE",
     "conceptId": "MILK",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-03645",
@@ -617953,9 +617501,7 @@
     "dialect": "KBD",
     "dialectNote": "Kbd kaynakli",
     "rootId": "R-N",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-03699",
@@ -620539,9 +620085,7 @@
     "pos_status": "PENDING",
     "pos_reason": "Sozlukte POS bulunamadi, manuel inceleme gerekli",
     "rootId": "R-NEXU",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-03729",
@@ -624448,9 +623992,7 @@
     "root": "ху",
     "rootForm": "ху",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-03813",
@@ -626823,9 +626365,7 @@
     "meaning": "Şelale",
     "rootId": "R-PSY",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-03875",
@@ -628045,9 +627585,7 @@
     "meaning": "odun, tahta",
     "rootId": "R-PSY",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-03893",
@@ -629740,9 +629278,7 @@
     "rootId": "R-1E",
     "conceptId": "PLANT_KINGDOM",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-03928",
@@ -630448,9 +629984,7 @@
     "meaning": "Odun talaşı",
     "rootId": "R-PKHW",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-03943",
@@ -632079,9 +631613,7 @@
     "rootId": "R-1E",
     "conceptId": "DAWN",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-03977",
@@ -632137,9 +631669,7 @@
     "rootId": "R-SHE2",
     "conceptId": "PLANT_JUICE",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-03978",
@@ -633423,9 +632953,7 @@
     "rootId": "R-PSHCHE",
     "conceptId": "DAY",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-04005",
@@ -635274,9 +634802,7 @@
     "rootId": "R-KHY",
     "conceptId": "SEA",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-04045",
@@ -639329,9 +638855,7 @@
     "meaning": "beyaz burun",
     "rootId": "R-P",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-04122",
@@ -640209,9 +639733,7 @@
     "rootId": "R-PE",
     "partOfSpeech": "VERB",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-04137",
@@ -641379,9 +640901,7 @@
     "rootId": "R-SAN",
     "conceptId": "CONE",
     "tr": "сэнэф / САНЭ ху еплъ &lt;&lt;САНЭ&gt;&gt; ŞARAP (beyaz ~)",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-04158",
@@ -643871,9 +643391,7 @@
     "wordFamilyId": "WF-KHUMEN",
     "rootId": "R-1E",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-04221",
@@ -644029,9 +643547,7 @@
     "meaning": "sansli ev",
     "rootId": "R-SHCHH",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-04224",
@@ -644099,9 +643615,7 @@
     "meaning": "sansli ev",
     "rootId": "R-SHCHH",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-04225",
@@ -648200,9 +647714,7 @@
     "rootId": "R-UJ",
     "partOfSpeech": "VERB",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-04330",
@@ -648266,9 +647778,7 @@
     "rootId": "R-UKURIY",
     "partOfSpeech": "VERB",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-04332",
@@ -648332,9 +647842,7 @@
     "rootId": "R-UKYT",
     "partOfSpeech": "VERB",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-04333",
@@ -648443,9 +647951,7 @@
     "rootId": "R-U",
     "partOfSpeech": "VERB",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-04337",
@@ -648502,7 +648008,9 @@
     ],
     "notes": "KBD sozluk: 1.Ady-Ady_AP.json",
     "corpusFrequency": 0,
-    "rootIds": [],
+    "rootIds": [
+      "R-U"
+    ],
     "wordFamilyId": "WF-TEU",
     "derivation": {
       "rootIds": [
@@ -648552,8 +648060,7 @@
     "rootId": "R-XHW",
     "dialect": "KBD",
     "legacyRootForms": [
-      "теурэз",
-      "ху"
+      "теурэз"
     ]
   },
   {
@@ -648826,9 +648333,7 @@
     "rootId": "R-U",
     "partOfSpeech": "VERB",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-04345",
@@ -648936,9 +648441,7 @@
     "meaning": "space on which one can take an incessant drive",
     "rootId": "R-U",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-04348",
@@ -651761,9 +651264,7 @@
     "meaning": "PEKİ iyi, uygun",
     "rootId": "R-TH",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-04414",
@@ -654505,9 +654006,7 @@
     "rootId": "R-UPS",
     "tr": "упсахуэ / упсаф еплъ &lt;&lt;ПХЪЭӀукӀэн&gt;&gt; YONGA (iri ~), TALAŞ",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-04483",
@@ -657393,9 +656892,7 @@
     "conceptId": "DECAY",
     "partOfSpeech": "VERB",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-04554",
@@ -658786,9 +658283,7 @@
     "rootId": "R-FIE",
     "conceptId": "NAME",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-04595",
@@ -659406,9 +658901,7 @@
     "conceptId": "ROT",
     "tr": "ТУТЫН шъуаф / фахуэ ТУТЫН ныкъошъу / ныкъуэф İZMARİT",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-04607",
@@ -661377,9 +660870,7 @@
     "frequency": 1,
     "wordFamilyId": "WF-GU",
     "rootId": "R-GU",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-04650",
@@ -665853,9 +665344,7 @@
     "meaning": "hunting",
     "rootId": "R-UESHCH",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-04772",
@@ -668095,9 +667584,7 @@
     "rootId": "R-SHE",
     "conceptId": "FOX",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-04816",
@@ -669727,9 +669214,7 @@
     "meaning": "Yem, hayvan yemi",
     "rootId": "R-LHE",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-04843",
@@ -669893,9 +669378,7 @@
     "meaning": "cunning",
     "rootId": "R-LHE",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-04845",
@@ -671004,9 +670487,7 @@
     "meaning": "avcı",
     "rootId": "R-SHE",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-04865",
@@ -671263,9 +670744,7 @@
     "meaning": "hizmetçi",
     "rootId": "R-H",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-04870",
@@ -671525,9 +671004,7 @@
     "wordFamilyId": "WF-K1E",
     "rootId": "R-K",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-04875",
@@ -677159,9 +676636,7 @@
     "frequency": 1,
     "rootId": "R-J",
     "conceptId": "ABOUT",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-04983",
@@ -685261,9 +684736,7 @@
     "meaning": "Kireçli toprak",
     "rootId": "R-SH1Y",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-05185",
@@ -685576,9 +685049,7 @@
     "meaning": "AYAK",
     "rootId": "R-SH1Y",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-05191",
@@ -693170,9 +692641,7 @@
     "conceptId": "CUT",
     "partOfSpeech": "VERB",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-05384",
@@ -693238,8 +692707,7 @@
     "conceptId": "SOLE",
     "dialect": "KBD",
     "legacyRootForms": [
-      "гурыщ",
-      "щ"
+      "гурыщ"
     ]
   },
   {
@@ -693328,9 +692796,7 @@
     "rootId": "R-1E",
     "conceptId": "THREE",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-05390",
@@ -697306,9 +696772,7 @@
     "meaning": "KENDİ KENDİNE kendiliğinden",
     "rootId": "R-SHCHH",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-05471",
@@ -699663,9 +699127,7 @@
     "meaning": "YALI",
     "rootId": "R-SHCH",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-05528",
@@ -699827,9 +699289,7 @@
     "rootId": "R-SHCH",
     "tr": "щыщӀэ / щыкӀ(э) еплъ &lt;&lt;нэцӀэкӀ&gt;&gt; NOKSAN",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-05533",
@@ -700094,9 +699554,7 @@
     "conceptId": "MILK",
     "partOfSpeech": "VERB",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-05538",
@@ -700640,9 +700098,7 @@
     "wordFamilyId": "WF-MYV",
     "rootId": "R-1E",
     "dialect": "KBD",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KBD-05549",
@@ -709393,9 +708849,7 @@
     "legacyIds": [
       "CEFR-ZAMAN-ЩЫ"
     ],
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-BLYSHCHHE",
@@ -709517,9 +708971,7 @@
     "legacyIds": [
       "CEFR-RENKLER-ХУЖЬ"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-F-YTS-E",
@@ -712652,9 +712104,7 @@
     "legacyIds": [
       "HUV2-IУДЖЭIУЩЭ"
     ],
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-UDYR",
@@ -712930,9 +712380,7 @@
     "legacyIds": [
       "HUV2-IУНКIАХУЭ"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-UNK-YBZE-UX",
@@ -729585,9 +729033,7 @@
     "legacyIds": [
       "KAV-КЪЫКӀЭРЫХУН"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-GHEPSYNSHCH-EN",
@@ -730793,7 +730239,9 @@
       "tr": "AÇILMAK"
     },
     "ipa": "/qǝzɐtеxwn/",
-    "rootIds": [],
+    "rootIds": [
+      "R-XHW"
+    ],
     "notes": "Kaynak: 5.Ady-Rus_Qarden.json, 1.Ady-Ady_AP.json",
     "examples": [
       "*Тхылъыр къызэтехуащ.",
@@ -730812,9 +730260,7 @@
     "legacyIds": [
       "KAV-КЪЫЗЭТЕХУН"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-ZEXESYN",
@@ -734242,9 +733688,7 @@
     "legacyIds": [
       "KAV-НЭХУЖЬЫБЭ"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-YAPESHCH-YK-E",
@@ -734708,9 +734152,7 @@
     "legacyIds": [
       "KAV-ЩХЬЭХУЭФӀ"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-UHEUT",
@@ -735595,9 +735037,7 @@
     "legacyIds": [
       "KAV-ЩАПӀЭ"
     ],
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-SHCHHETSE",
@@ -738104,10 +737544,7 @@
     "legacyIds": [
       "KAV-ЩХЬЭХУЕЩАГЪЭ"
     ],
-    "legacyRootForms": [
-      "щ",
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-BZIT-SHCHHIT-YGHE",
@@ -739245,9 +738682,7 @@
     "legacyIds": [
       "KAV-ЗЭЩЫЩ"
     ],
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-IGHEPK-EZHYN",
@@ -739399,9 +738834,7 @@
     "legacyIds": [
       "KAV-КЪИГЪЭЩЫН"
     ],
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KEIYAKE",
@@ -740309,9 +739742,7 @@
     "legacyIds": [
       "KAV-ЦЕИЩЭ"
     ],
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-CHEZEP",
@@ -740513,9 +739944,7 @@
     "legacyIds": [
       "KAV-ЩАПХЪАДЖАГЪЭ"
     ],
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-UPLHEGHUEY",
@@ -740643,9 +740072,7 @@
     "legacyIds": [
       "KAV-КЪЭТХЪУНЩӀАХУЭ"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-HEGHUEFYGHUE",
@@ -742031,9 +741458,7 @@
     "legacyIds": [
       "KAV-ЧЭТХЪАХУЭ"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-BZHAME",
@@ -745342,9 +744767,7 @@
     "legacyIds": [
       "KAV-ЗЭКЪУЭХУН"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-SHCH-EXULYK-YN",
@@ -746483,9 +745906,7 @@
     "legacyIds": [
       "KAV-КЪЫПЫУДАХУЭ"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KEYTELHEFYN",
@@ -747480,9 +746901,7 @@
     "legacyIds": [
       "KAV-ПХЪАЩЭ"
     ],
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-PKHEZEGUEX",
@@ -748207,9 +747626,7 @@
     "legacyIds": [
       "KAV-ФӀЭЩЫГЪЭЦӀЭ"
     ],
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-SHCH-YXUE",
@@ -748843,9 +748260,7 @@
     "legacyIds": [
       "KAV-ШЭЩӀЭХУ"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-K-EZYZ",
@@ -749754,7 +749169,6 @@
       "KAV-ПХЪЭӀЭЩЭНЭКӀУ"
     ],
     "legacyRootForms": [
-      "щ",
       "нэкӀу"
     ]
   },
@@ -751736,10 +751150,7 @@
     "legacyIds": [
       "KAV-ЩХЬЭЩЭХУЖЫПЩӀЭ"
     ],
-    "legacyRootForms": [
-      "щ",
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-CHO",
@@ -752996,9 +752407,7 @@
     "legacyIds": [
       "KAV-ГУЭХУН"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-GHUAT-E",
@@ -756264,9 +755673,7 @@
     "legacyIds": [
       "KAV-ЩАПХЪАДЖЭ"
     ],
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-ZEGHEZEGHYN",
@@ -758828,7 +758235,9 @@
       "tr": "lateness"
     },
     "ipa": "/qǝkʼɐrǝxwnǝʁɐ/",
-    "rootIds": [],
+    "rootIds": [
+      "R-XHW"
+    ],
     "notes": "Kaynak: 1.Ady-Ady_AP.json, 19.Kbd-Ru-2-Jonty.json",
     "etymologyType": "native",
     "conceptNorm": "ACTION_VERB",
@@ -758842,9 +758251,7 @@
     "legacyIds": [
       "KAV-КЪЫКӀЭРЫХУНЫГЪЭ"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KEYSHCH-EXUZHYN",
@@ -758856,7 +758263,9 @@
       "en": "kyschiehuzh"
     },
     "ipa": "/qǝɕʼɐxwжǝn/",
-    "rootIds": [],
+    "rootIds": [
+      "R-XHW"
+    ],
     "notes": "Kaynak: 1.Ady-Ady_AP.json, 20.Kbd-Ru-Jonty.json",
     "literalMeaning": "hatırlamak",
     "literalMeaningSource": "ru->tr (KAVRAM_ etiketi) (orta)",
@@ -758876,9 +758285,7 @@
     "legacyIds": [
       "KAV-КЪЫЩӀЭХУЖЫН"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-SHCH-ETKHUN",
@@ -760073,9 +759480,7 @@
     "legacyIds": [
       "KAV-МАШИНЭЗЕХУЭ"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-MENYU",
@@ -761461,9 +760866,7 @@
     "legacyIds": [
       "KAV-ПХЪЭӀЭЩЭПХЭ"
     ],
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-PKHETS-YCH-KBD",
@@ -762407,9 +761810,7 @@
     "legacyIds": [
       "KAV-ФӀЭЩЫН"
     ],
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KEEZYMYSHA",
@@ -763651,9 +763052,7 @@
     "legacyIds": [
       "KAV-ЩАКӀУЕЙ"
     ],
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-SHCHTAMYLE",
@@ -771549,9 +770948,7 @@
     "legacyIds": [
       "KAV-ГУИМЫХУЖ"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-NESHCHKHEINYGHE",
@@ -772293,9 +771690,7 @@
     "legacyIds": [
       "KAV-ГУЩЫХУЭ"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-NYKUEEBEKH",
@@ -776822,9 +776217,7 @@
     "legacyIds": [
       "KAV-ЗЫТӀУЩ"
     ],
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-ZYGHEBZHYF-EN",
@@ -777192,9 +776585,7 @@
     "legacyIds": [
       "KAV-КӀУЭЦӀЫХУЭН"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-TEGHESHCHESHCHEN",
@@ -777355,7 +776746,9 @@
       "tr": "disposal"
     },
     "ipa": "/zǝkʼɐrǝʁɐxwn/",
-    "rootIds": [],
+    "rootIds": [
+      "R-XHW"
+    ],
     "notes": "Kaynak: 1.Ady-Ady_AP.json, 19.Kbd-Ru-2-Jonty.json",
     "examples": [
       "*Бэлътоку зыкӀэрыгъэхун.",
@@ -777376,9 +776769,7 @@
     "legacyIds": [
       "KAV-ЗЫКӀЭРЫГЪЭХУН"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-ZYKEEDZYXYN",
@@ -777546,7 +776937,9 @@
       "tr": "gecikmek"
     },
     "ipa": "/zǝqǝɕʼɐʁɐxwɐn/",
-    "rootIds": [],
+    "rootIds": [
+      "R-XHW"
+    ],
     "notes": "Kaynak: 1.Ady-Ady_AP.json, 5.Ady-Rus_Qarden.json",
     "examples": [
       "*ЛэжьыгъэкӀэ зыкъыщӀэгъэхуэн.",
@@ -777565,9 +776958,7 @@
     "legacyIds": [
       "KAV-ЗЫКЪЫЩӀЭГЪЭХУЭН"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-ZEGHEZEK-YN",
@@ -778692,9 +778083,7 @@
     "legacyIds": [
       "KAV-ЗЭХЬЭЗЭХУЭН"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-PXYDZEKEYK-YN",
@@ -782052,9 +781441,7 @@
     "legacyIds": [
       "KAV-КЪУЭХУ"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KEY-USHXEN",
@@ -782394,7 +781781,9 @@
       "tr": "BURASI"
     },
     "ipa": "/qǝzɐxwɐxwsǝn/",
-    "rootIds": [],
+    "rootIds": [
+      "R-XHW"
+    ],
     "notes": "Kaynak: 1.Ady-Ady_AP.json, 5.Ady-Rus_Qarden.json",
     "examples": [
       "*Къазхэр къызэхуахусащ."
@@ -782412,9 +781801,7 @@
     "legacyIds": [
       "KAV-КЪЫЗЭХУЭХУСЫН"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-TETS-UUK-YN",
@@ -783900,9 +783287,7 @@
     "legacyIds": [
       "KAV-ЛЪАПЦӀЭРЫЩЭУ"
     ],
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-LHAKHSHAP-E",
@@ -784869,9 +784254,7 @@
     "legacyIds": [
       "KAV-МАФӀЭГУЗЕХУЭ"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-MAF-EDZ",
@@ -785174,9 +784557,7 @@
     "legacyIds": [
       "KAV-ТЕУТӀЫПЩХЬАУЭ"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-MYKHUMYSHXE",
@@ -786053,9 +785434,7 @@
     "legacyIds": [
       "KAV-НЭЩӀАЩЭ"
     ],
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-NESHCHKHEU",
@@ -787012,9 +786391,7 @@
     "legacyIds": [
       "KAV-ПХЪЭӀЭЩЭЛӀ"
     ],
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-PKHELHEF",
@@ -787247,9 +786624,7 @@
     "legacyIds": [
       "KAV-ПЩӀЭХЭХУН"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-PSHCHAMP-ESHCH-EDE",
@@ -789966,8 +789341,7 @@
       "KAV-ХУЖЬГЪЭ"
     ],
     "legacyRootForms": [
-      "((у)жьгъ",
-      "ху"
+      "((у)жьгъ"
     ]
   },
   {
@@ -790304,9 +789678,7 @@
     "legacyIds": [
       "KAV-ХЬЭКӀЭКХЪУЭКӀАЩ"
     ],
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KHURSANE",
@@ -790656,9 +790028,7 @@
     "legacyIds": [
       "KAV-ХЬЭЗЕХУЭ"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-HEKUTEGHELHADE",
@@ -791537,9 +790907,7 @@
     "legacyIds": [
       "KAV-ЩӀЕГЪЭЩЭН"
     ],
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-CHYSE",
@@ -792585,9 +791953,7 @@
     "legacyIds": [
       "KAV-ЩХЬЭХУЖЬ"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-SHCHHEXUEF-YNYGHE",
@@ -797595,9 +796961,7 @@
     "legacyIds": [
       "KAV-ӀУАХУЭ"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-XEK-UEDEZHYN",
@@ -797818,9 +797182,7 @@
     "legacyIds": [
       "KAV-НАРТЫХУХЭКӀ"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-TKHUNSHCH-AXUE",
@@ -797853,9 +797215,7 @@
     "legacyIds": [
       "KAV-ТХЪУНЩӀАХУЭ"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-SHAMTS-IKHAR",
@@ -800919,9 +800279,7 @@
     "legacyIds": [
       "KAV-ЩЫХУПӀЭ"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-XEDYK",
@@ -801165,9 +800523,7 @@
     "legacyIds": [
       "KAV-ВАГЪУЭКӀЭХУ"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-MESHYPKEE",
@@ -802756,9 +802112,7 @@
     "legacyIds": [
       "KAV-ЦЫХУ"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-ISHCHTHEN",
@@ -805569,7 +804923,9 @@
       "tr": "Balçık, çamur"
     },
     "ipa": "/zɐʔǝxwn/",
-    "rootIds": [],
+    "rootIds": [
+      "R-XHW"
+    ],
     "notes": "Kaynak: 1.Ady-Ady_AP.json",
     "examples": [
       "*ЯтӀэр зэӀыхун.",
@@ -805588,9 +804944,7 @@
     "legacyIds": [
       "KAV-ЗЭӀЫХУН"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-ZEBLELHETYN",
@@ -805686,7 +805040,9 @@
       "tr": "Sürü"
     },
     "ipa": "/zɐgʷɐxwn/",
-    "rootIds": [],
+    "rootIds": [
+      "R-XHW"
+    ],
     "notes": "Kaynak: 1.Ady-Ady_AP.json",
     "examples": [
       "*Гуартэр зэгуэхун.",
@@ -805705,9 +805061,7 @@
     "legacyIds": [
       "KAV-ЗЭГУЭХУН"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KEY-ESHCH-EKUETEN",
@@ -811023,9 +810377,7 @@
     "legacyIds": [
       "KAV-ЩХЬЭХУЭГЪЭЩХЪ"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-ZEF-ELHHEN",
@@ -811088,9 +810440,7 @@
     "legacyIds": [
       "KAV-ЩЭРЫКӀУЭГЪУЭ"
     ],
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-EFIR",
@@ -814410,7 +813760,9 @@
       "en": "nepereh. ch. drive away from each other, l., l on something."
     },
     "ipa": "/qǝzɐrǝʔʷxwn/",
-    "rootIds": [],
+    "rootIds": [
+      "R-XHW"
+    ],
     "notes": "Kaynak: 1.Ady-Ady_AP.json",
     "examples": [
       "*БжэӀупэм къызэрыӀухун."
@@ -814428,9 +813780,7 @@
     "legacyIds": [
       "KAV-КЪЫЗЭРЫӀУХУН"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-K-UETS-YXUN",
@@ -818868,9 +818218,7 @@
     "legacyIds": [
       "KAV-ӀЭРЫХУН"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-XUEKUELAYSYZ",
@@ -821341,9 +820689,7 @@
     "legacyIds": [
       "KAV-БГЪУНЖЫРЫЩЭ"
     ],
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-DEXENAL",
@@ -822887,9 +822233,7 @@
     "legacyIds": [
       "KAV-ТХЪУВЭЖАХУЭ"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-SHCH-EGHENEGHUE",
@@ -824304,9 +823648,7 @@
     "legacyIds": [
       "KAV-ГУЗЕХУЭ"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-MURADYNSHEU",
@@ -826126,9 +825468,7 @@
     "legacyIds": [
       "KAV-ДЗЭКЪАХУЭ"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-GHUASHCHHE",
@@ -827204,9 +826544,7 @@
     "legacyIds": [
       "KAV-ЩӀЭТӀЫСЫКӀАХУЭ"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KHELHAGHE",
@@ -830424,9 +829762,7 @@
     "legacyIds": [
       "KAV-ЩАПХЪЭНШЭ"
     ],
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-XUENEKHUEINSHEN",
@@ -831093,7 +830429,9 @@
       "en": "move. ch. fall somewhere l."
     },
     "ipa": "/zǝxɐʁɐxwɐn/",
-    "rootIds": [],
+    "rootIds": [
+      "R-XHW"
+    ],
     "notes": "Kaynak: 1.Ady-Ady_AP.json",
     "examples": [
       "*Мэкъум зыхэгъэхуэн.",
@@ -831113,9 +830451,7 @@
     "legacyIds": [
       "KAV-ЗЫХЭГЪЭХУЭН"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KEYPYHEN",
@@ -832886,7 +832222,9 @@
       "tr": "Yakalamak, avlamak"
     },
     "ipa": "/zǝʔɐɕʼɐʁɐxwɐn/",
-    "rootIds": [],
+    "rootIds": [
+      "R-XHW"
+    ],
     "notes": "Kaynak: 1.Ady-Ady_AP.json",
     "examples": [
       "*Бийм зыӀэщӀэгъэхуэн."
@@ -832904,9 +832242,7 @@
     "legacyIds": [
       "KAV-ЗЫӀЭЩӀЭГЪЭХУЭН"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-NEGHEBLEGHEN",
@@ -834076,7 +833412,9 @@
       "tr": "HASTALIK"
     },
     "ipa": "/zǝqǝtеʁɐxwɐn/",
-    "rootIds": [],
+    "rootIds": [
+      "R-XHW"
+    ],
     "notes": "Kaynak: 1.Ady-Ady_AP.json",
     "examples": [
       "*[ФӀыцӀэ:] - НэпцӀу лӀа бэджу зыкъытумыгъахуэт.  {{автор|kbd|имяавтора=Т. Хь.}}"
@@ -834094,9 +833432,7 @@
     "legacyIds": [
       "KAV-ЗЫКЪЫТЕГЪЭХУЭН"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-ZYKEYTECHYZHYN",
@@ -834374,7 +833710,9 @@
       "tr": "kaçınmak"
     },
     "ipa": "/zǝpɐɕʼɐmǝʁɐxwɐn/",
-    "rootIds": [],
+    "rootIds": [
+      "R-XHW"
+    ],
     "notes": "Kaynak: 1.Ady-Ady_AP.json",
     "examples": [
       "*Бийм зыпэщӀэмыгъэхуэн."
@@ -834392,9 +833730,7 @@
     "legacyIds": [
       "KAV-ЗЫПЭЩӀЭМЫГЪЭХУЭ"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-ZEK-ERYSHCHETYN",
@@ -835504,9 +834840,7 @@
     "legacyIds": [
       "KAV-ЗЭБГЪУРЫХУЭН"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-ZEBLELHEFYN",
@@ -835973,7 +835307,9 @@
       "en": "nepereh. ch. open up, turn around, unpack"
     },
     "ipa": "/qǝzɐkʷʼɐtsʼǝxwn/",
-    "rootIds": [],
+    "rootIds": [
+      "R-XHW"
+    ],
     "notes": "Kaynak: 1.Ady-Ady_AP.json",
     "examples": [
       "*Фызым иӀыгъа зэкӀуэцӀышыхьар къызэкӀуэцӀыхуащ."
@@ -835991,9 +835327,7 @@
     "legacyIds": [
       "KAV-КЪЫЗЭКӀУЭЦӀЫХУН"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-ZEK-ERYLEL",
@@ -836116,7 +835450,9 @@
       "en": "heap weight"
     },
     "ipa": "/zɐkʼɐrǝxwzɐkʼɐrǝɕw/",
-    "rootIds": [],
+    "rootIds": [
+      "R-XHW"
+    ],
     "notes": "Kaynak: 1.Ady-Ady_AP.json",
     "examples": [
       "*Хьэпшыпхэр зэкӀэрыхузэкӀэрыщу унэм къыщӀахат."
@@ -836133,10 +835469,7 @@
     "legacyIds": [
       "KAV-ЗЭКӀЭРЫХУЗЭКӀЭР"
     ],
-    "legacyRootForms": [
-      "щ",
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-UTS-YRKHA",
@@ -836963,7 +836296,9 @@
       "tr": "AŞINMAK"
     },
     "ipa": "/zɐɕʼɐxwn/",
-    "rootIds": [],
+    "rootIds": [
+      "R-XHW"
+    ],
     "notes": "Kaynak: 1.Ady-Ady_AP.json",
     "examples": [
       "*Вакъэр зэщӀэхуащ."
@@ -836981,9 +836316,7 @@
     "legacyIds": [
       "KAV-ЗЭЩӀЭХУН"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-ZEPEGHUANIBL",
@@ -837081,7 +836414,9 @@
       "tr": "BİRLİKTE"
     },
     "ipa": "/zɐrеxwʑɐn/",
-    "rootIds": [],
+    "rootIds": [
+      "R-XHW"
+    ],
     "notes": "Kaynak: 1.Ady-Ady_AP.json",
     "examples": [
       "*Хьэхэр зэрехужьащ."
@@ -837099,9 +836434,7 @@
     "legacyIds": [
       "KAV-ЗЭРЕХУЖЬЭН"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-ZERISHYN",
@@ -839673,9 +839006,7 @@
     "legacyIds": [
       "KAV-ЛЪЭСАХУЭ"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-K-ARZINK-E",
@@ -841651,9 +840982,7 @@
     "legacyIds": [
       "KAV-ПХЫХУПӀЭ"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KUPKE",
@@ -843185,7 +842514,9 @@
       "en": "nepereh. ch. write vernacular, ran somewhere l."
     },
     "ipa": "/qǝzɐrǝdɐxwɐn/",
-    "rootIds": [],
+    "rootIds": [
+      "R-XHW"
+    ],
     "notes": "Kaynak: 1.Ady-Ady_AP.json",
     "examples": [
       "*ПщӀантӀэм къызэрыдэхуэн."
@@ -843203,9 +842534,7 @@
     "legacyIds": [
       "KAV-КЪЫЗЭРЫДЭХУЭН"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KEYSHCH-ELHEDEZHYN",
@@ -844051,7 +843380,9 @@
       "tr": "BURASI"
     },
     "ipa": "/qǝɕʼɐxwɐn/",
-    "rootIds": [],
+    "rootIds": [
+      "R-XHW"
+    ],
     "notes": "Kaynak: 1.Ady-Ady_AP.json",
     "examples": [
       "*Унэм къыщӀохуэ.",
@@ -844070,9 +843401,7 @@
     "legacyIds": [
       "KAV-КЪЫЩӀЭХУЭН"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-XEDYHESHXYK-YN",
@@ -845270,9 +844599,7 @@
     "legacyIds": [
       "KAV-ЛЪАПЦӀЭРЫЩЭ"
     ],
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-LHAPTS-EU",
@@ -846417,9 +845744,7 @@
     "legacyIds": [
       "KAV-ЛЫЩЭ"
     ],
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-LEGHUNVAKEE",
@@ -847568,9 +846893,7 @@
     "legacyIds": [
       "KAV-НЕХЬЭКЪЕХУЭ"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-NYBASHCH-E",
@@ -848013,9 +847336,7 @@
     "legacyIds": [
       "KAV-НЭХУЩВАГЪУЭ"
     ],
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-NESHK-UL",
@@ -849870,9 +849191,7 @@
     "legacyIds": [
       "KAV-ПХЪЭӀЭЩЭКӀ"
     ],
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-PKHEBGHULHEGU",
@@ -850149,9 +849468,7 @@
     "legacyIds": [
       "KAV-КӀЭХУ"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-PSHCH-ASHCHE",
@@ -850568,9 +849885,7 @@
     "legacyIds": [
       "KAV-ПЫХАХУЭ"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-FORYPSHCH",
@@ -851591,9 +850906,7 @@
     "legacyIds": [
       "KAV-СЫРЫХУФЭ"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-UTKHUTS",
@@ -852456,9 +851769,7 @@
     "legacyIds": [
       "KAV-ДАГЪЭЩӀЭХУ"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-TXYNYXU",
@@ -852487,9 +851798,7 @@
     "legacyIds": [
       "KAV-ТХЫНЫХУ"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-CHYTAPAPLHE",
@@ -853173,9 +852482,7 @@
     "legacyIds": [
       "KAV-УХЪУЭНЩӀАХУЭ"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-UTS-YPLHYN",
@@ -853634,9 +852941,7 @@
     "legacyIds": [
       "KAV-ЩХЬЭРЫХУЭН"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-F-EF-U",
@@ -854390,9 +853695,7 @@
     "legacyIds": [
       "KAV-ХУПЦӀЫНЭ"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-XUSHCH-YHEGHUE",
@@ -854684,9 +853987,7 @@
     "legacyIds": [
       "KAV-ХУЭМЫХУГЪЭ"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-F-EMYF-U",
@@ -855188,9 +854489,7 @@
     "legacyIds": [
       "KAV-ХЬЭПШЫПЩАПӀЭ"
     ],
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-HERISKHUERIS",
@@ -857295,9 +856594,7 @@
     "legacyIds": [
       "KAV-ЩӀЭХУА"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KEYDECHYZHYN",
@@ -857807,9 +857104,7 @@
     "legacyIds": [
       "KAV-ЩХЬЭЦХЬЭХУ"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-ZEXEGHEZHYN",
@@ -861771,7 +861066,9 @@
       "tr": "icmek"
     },
     "ipa": "/qǝzǝʑɐdеʁɐxwn/",
-    "rootIds": [],
+    "rootIds": [
+      "R-XHW"
+    ],
     "notes": "Kaynak: 5.Ady-Rus_Qarden.json",
     "examples": [
       "*Бахъэ къызыжьэдегъэхун."
@@ -861789,9 +861086,7 @@
     "legacyIds": [
       "KAV-КЪЫЗЫЖЬЭДЕГЪЭХУ"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-NEBGHUZ",
@@ -868486,9 +867781,7 @@
     "legacyIds": [
       "KAV-ЖАГЪЫЩЭ"
     ],
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-TEGHEHEGHUEY",
@@ -870662,7 +869955,9 @@
       "en": "Ӏуегъэхун: causative for Ӏухун I: 1. have, make or let sb chase or drive sb or sth away from sb or sth 2. have, make or let sb dismiss or fire sb from their job; Жэмхэр Ӏуегъэхуэн: have sb chase or drive away the cows away from sth"
     },
     "ipa": "/ʔʷеʁɐxwn/",
-    "rootIds": [],
+    "rootIds": [
+      "R-XHW"
+    ],
     "notes": "Kaynak: 1.Ady-Ady_AP.json",
     "examples": [
       "*Жэмхэр Ӏуегъэхуэн."
@@ -870680,9 +869975,7 @@
     "legacyIds": [
       "KAV-ӀУЕГЪЭХУН"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-UEGHEXYN",
@@ -871417,9 +870710,7 @@
     "legacyIds": [
       "KAV-УКӀЭПЩӀАХУЭ"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-XUNTXU",
@@ -872739,9 +872030,7 @@
     "legacyIds": [
       "KAV-ӀУЩӀАХУЭ"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-USHCHTYK-YN",
@@ -873444,9 +872733,7 @@
     "legacyIds": [
       "KAV-ЩХЬЭХУЭМЫГЪУЭ"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-SHCHHEXUEPSALHE",
@@ -873477,9 +872764,7 @@
     "legacyIds": [
       "KAV-ЩХЬЭХУЭПСАЛЪЭ"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-SHCHHEXUEP",
@@ -875673,9 +874958,7 @@
     "legacyIds": [
       "KAV-ӀЭРЫХУАГЪЭ"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-EPE-ESE",
@@ -878290,9 +877573,7 @@
     "legacyIds": [
       "KAV-ӀЭРЫХУЭН"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-ERYXYN",
@@ -878568,9 +877849,7 @@
     "legacyIds": [
       "KAV-ЗЭУНЭКЪУЭЩ"
     ],
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-ZE-YHLY",
@@ -878794,9 +878073,7 @@
     "legacyIds": [
       "KAV-ӀЭХУЛЪЭХУ"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-LHAPSHCHEKHU",
@@ -880319,7 +879596,6 @@
       "KAV-ПӀЭРЭПӀЭЩЭЖ"
     ],
     "legacyRootForms": [
-      "щ",
       "пӀэрэпӀ"
     ]
   },
@@ -883186,9 +882462,7 @@
     "legacyIds": [
       "KAV-ШХЫНЭЩ"
     ],
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-SHCH-ELHHEP-E",
@@ -884915,9 +884189,7 @@
     "legacyIds": [
       "KAV-БДЗАХУЭ"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-PKHEUADE",
@@ -885626,9 +884898,7 @@
     "legacyIds": [
       "KAV-БЖЬЫНЫХУХЪУ"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-BZHYNYSHCHKHUE",
@@ -886054,9 +885324,7 @@
     "legacyIds": [
       "KAV-БЗИХУ"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-GUBGHUEBZU",
@@ -892057,9 +891325,7 @@
     "legacyIds": [
       "KAV-ГУБГЪУЭБЖЬЫНЫХУ"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-GUBGHUEMERAK-UE",
@@ -896721,9 +895987,7 @@
     "legacyIds": [
       "KAV-ГЪУХУ"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-GHUSHCH-YZH",
@@ -898032,7 +897296,9 @@
       "tr": "see i 2."
     },
     "ipa": "/ʁɐxw/",
-    "rootIds": [],
+    "rootIds": [
+      "R-XHW"
+    ],
     "notes": "Kaynak: 1.Ady-Ady_AP.json",
     "etymologyType": "native",
     "conceptNorm": "ВИД ПРОСА",
@@ -898046,9 +897312,7 @@
     "legacyIds": [
       "KAV-ГЪЭХУ"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-GHECHEN-KBD",
@@ -899848,9 +899112,7 @@
     "legacyIds": [
       "KAV-ДЗЭЛХУЖЬ"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-DZELYPTS-E",
@@ -901816,9 +901078,7 @@
     "legacyIds": [
       "KAV-ДЫЩЭХУ"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-ZELHESHCH-YSYN",
@@ -903016,7 +902276,9 @@
       "tr": "AHBAB"
     },
     "ipa": "/zɐrixwɐn/",
-    "rootIds": [],
+    "rootIds": [
+      "R-XHW"
+    ],
     "notes": "Kaynak: 1.Ady-Ady_AP.json",
     "etymologyType": "native",
     "conceptNorm": "ВОЙТИ КУДА-Л",
@@ -903031,9 +902293,7 @@
     "legacyIds": [
       "KAV-ЗЭРИХУЭН"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-GUAGHEK-A",
@@ -904595,7 +903855,9 @@
       "en": "move. ch. drive away smb. where l."
     },
     "ipa": "/dɐxwxǝn/",
-    "rootIds": [],
+    "rootIds": [
+      "R-XHW"
+    ],
     "notes": "Kaynak: 1.Ady-Ady_AP.json",
     "examples": [
       "*Машинэ къажэм шыгур дихухащ."
@@ -904613,9 +903875,7 @@
     "legacyIds": [
       "KAV-ДЭХУХЫН"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-DETSYMEIN",
@@ -904760,9 +904020,7 @@
     "legacyIds": [
       "KAV-ДЭЩЕИН"
     ],
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-E-UBEXYN",
@@ -909296,9 +908554,7 @@
     "legacyIds": [
       "KAV-ЖЫГКЪЭЩ"
     ],
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-ZHYGU-U",
@@ -910282,9 +909538,7 @@
     "legacyIds": [
       "KAV-ЖЬЭӀУРЫХУ"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-ZHEGHUBYDZ",
@@ -913678,9 +912932,7 @@
     "legacyIds": [
       "KAV-ЗЫБГЪЭДЭГЪЭХУЭН"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-ZYPL-YTXU",
@@ -913744,9 +912996,7 @@
     "legacyIds": [
       "KAV-ТӀУЩ"
     ],
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-ZYGURYGHE-UEN",
@@ -915199,9 +914449,7 @@
     "legacyIds": [
       "KAV-ЗЫЗЭКӀЭЩӀИХУЖЫН"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-ZYZEBLEKHUN",
@@ -915720,7 +914968,9 @@
       "tr": "bilerek"
     },
     "ipa": "/zǝkʼɐɕʼɐʁɐxwn/",
-    "rootIds": [],
+    "rootIds": [
+      "R-XHW"
+    ],
     "notes": "Kaynak: 1.Ady-Ady_AP.json",
     "examples": [
       "*Хъуэжэ зэкӀуэцӀылъ гуэр зыкӀэщӀигъэхуащ, и бохъшэр кӀэрыхуа яфӀигъэщӀу цӀыхухэр къигъэпцӀэну.  {{тхыгъэ|kbd|цӀэ=ӀуэрыӀу.}}"
@@ -915738,9 +914988,7 @@
     "legacyIds": [
       "KAV-ЗЫКӀЭЩӀЭГЪЭХУН"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-ZYKEEGHEGHEPTS-EN",
@@ -917663,9 +916911,7 @@
     "legacyIds": [
       "KAV-ЗЫЩӀЭГЪЭХУЭН"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-ZYSHCH-ET-ETYK-YN",
@@ -919323,9 +918569,7 @@
     "legacyIds": [
       "KAV-ЗЭГУЭЩЭН"
     ],
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-ZEGHUELHYL-EN",
@@ -921796,9 +921040,7 @@
     "legacyIds": [
       "KAV-ЗЭПЫГЪЭЩЭН"
     ],
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-DZHYDZHEN",
@@ -925548,9 +924790,7 @@
     "legacyIds": [
       "KAV-ЗЭХЭХУАПӀЭ"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-ZEXEKHUK-YN",
@@ -929644,7 +928884,9 @@
       "en": "кӀэрыхукӀэрыщ: waste, refuse, trash, garbage"
     },
     "ipa": "/kʼɐrǝxwkʼɐrǝɕ/",
-    "rootIds": [],
+    "rootIds": [
+      "R-XHW"
+    ],
     "notes": "Kaynak: 1.Ady-Ady_AP.json",
     "etymologyType": "native",
     "conceptNorm": "КӀЭРЫХУБЖЬЭРЫХУ",
@@ -929658,10 +928900,7 @@
     "legacyIds": [
       "KAV-КӀЭРЫХУКӀЭРЫЩ"
     ],
-    "legacyRootForms": [
-      "щ",
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-XEK-UEDYK-YNSHE",
@@ -933858,9 +933097,7 @@
     "legacyIds": [
       "KAV-КЪАРГЪЭЖЬЭГЪУХУ"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-L-YMYKHU",
@@ -937286,7 +936523,9 @@
       "tr": "tasarruf etme, tutumluluk"
     },
     "ipa": "/qǝdɐʁɐxwɐnǝʁɐ/",
-    "rootIds": [],
+    "rootIds": [
+      "R-XHW"
+    ],
     "notes": "Kaynak: 1.Ady-Ady_AP.json",
     "etymologyType": "native",
     "conceptNorm": "ЭКОНОМИЯ",
@@ -937300,9 +936539,7 @@
     "legacyIds": [
       "KAV-КЪЫДЭГЪЭХУЭНЫГЪ"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KEYDEZHEIZHYN",
@@ -938273,7 +937510,9 @@
       "tr": "AHBAB"
     },
     "ipa": "/qǝzɐrǝdɐxwn/",
-    "rootIds": [],
+    "rootIds": [
+      "R-XHW"
+    ],
     "notes": "Kaynak: 1.Ady-Ady_AP.json",
     "examples": [
       "*Къуажэм къызэрыдэхун.",
@@ -938292,9 +937531,7 @@
     "legacyIds": [
       "KAV-КЪЫЗЭРЫДЭХУН"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KEYZERYDESHEN",
@@ -939247,9 +938484,7 @@
     "legacyIds": [
       "KAV-КЪЫКЪУЭХУН"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KEYKUEEXYZHYN",
@@ -939554,9 +938789,7 @@
     "legacyIds": [
       "KAV-КЪЫПЫТХЪАХУЭ"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-ZEF-ESHYN",
@@ -940013,7 +939246,9 @@
       "en": "epilepsy, epilepsy"
     },
     "ipa": "/qǝtеxwɐ/",
-    "rootIds": [],
+    "rootIds": [
+      "R-XHW"
+    ],
     "notes": "Kaynak: 1.Ady-Ady_AP.json",
     "etymologyType": "native",
     "conceptNorm": "ПАДУЧАЯ БОЛЕЗНЬ",
@@ -940027,9 +939262,7 @@
     "legacyIds": [
       "KAV-КЪЫТЕХУЭ"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-KEYF-EMY-UEXUN",
@@ -944020,9 +943253,7 @@
     "legacyIds": [
       "KAV-ЛЪЭКӀЭНЫЩ"
     ],
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-LHEKUEEUEN",
@@ -945075,9 +944306,7 @@
     "legacyIds": [
       "KAV-ЛЪЭЩИМЭ"
     ],
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-LHESHCHYDZHAGHE",
@@ -945217,9 +944446,7 @@
     "legacyIds": [
       "KAV-ЛЫБЖЬАХУЭ"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-LYBZHEKUU",
@@ -945283,9 +944510,7 @@
     "legacyIds": [
       "KAV-ЩӀЫӀУХУ"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-LYGHUZELEPS",
@@ -945454,9 +944679,7 @@
     "legacyIds": [
       "KAV-ЛЫХУЛЫПЦӀЭ"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-GUSHCH-EGHUYNSHE",
@@ -948215,9 +947438,7 @@
     "legacyIds": [
       "KAV-МЫВАЩХЬЭКЪЭЩ"
     ],
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-MYVEK-ERAKHUE",
@@ -949010,9 +948231,7 @@
     "legacyIds": [
       "KAV-ТЭХУЛЪЭХУ"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-MYSHCHEXUPSHCH",
@@ -949594,9 +948813,7 @@
     "legacyIds": [
       "KAV-НАГЪЫХУ"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-NAK-EBYDZ",
@@ -949837,9 +949054,7 @@
     "legacyIds": [
       "KAV-НАПЩӀЭХУ"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-NAPE-ELHESHCH",
@@ -950080,9 +949295,7 @@
     "legacyIds": [
       "KAV-НАТӀЭХУ"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-NAXUAP-E",
@@ -950117,9 +949330,7 @@
     "legacyIds": [
       "KAV-НАХУАПӀЭ"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-NAKHUTE",
@@ -953741,9 +952952,7 @@
     "legacyIds": [
       "KAV-ПӀЭИГЪЭЩ"
     ],
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-P-EREP-EREN",
@@ -956626,9 +955835,7 @@
     "legacyIds": [
       "KAV-ПСЫКӀЭДЭХУЭ"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-PSYKEEXUEX",
@@ -956914,9 +956121,7 @@
     "legacyIds": [
       "KAV-ПСЫПЫХУ"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-TUALET",
@@ -957410,9 +956615,7 @@
     "legacyIds": [
       "KAV-ПХЪАЩЭКЪЕДЗЫХ"
     ],
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-PKHUANTESHXUE",
@@ -958701,9 +957904,7 @@
     "legacyIds": [
       "KAV-ПШЭПЛЪХУЭУСЭ"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-ABDZHLHESHCH",
@@ -964041,9 +963242,7 @@
     "legacyIds": [
       "KAV-ЩАЛЭ"
     ],
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-SHCHYSYP-E",
@@ -966926,9 +966125,7 @@
     "legacyIds": [
       "KAV-УДЫКӀЭХУ"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-TEU-UENYGHE",
@@ -968667,9 +967864,7 @@
     "legacyIds": [
       "KAV-ФӀЭЩЭН"
     ],
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-FADZHEN",
@@ -971154,9 +970349,7 @@
     "legacyIds": [
       "KAV-ХУПХЪЭ"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-SHATERYPSHCH",
@@ -971821,8 +971014,7 @@
       "KAV-ХУЭНЩӀАХУЭ"
     ],
     "legacyRootForms": [
-      "хуэнщӀ",
-      "ху"
+      "хуэнщӀ"
     ]
   },
   {
@@ -974944,9 +974136,7 @@
     "legacyIds": [
       "KAV-ЩАКӀУЭХЬЭ"
     ],
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-HERKHUP",
@@ -976035,7 +975225,9 @@
       "tr": "kick out"
     },
     "ipa": "/qǝɕʼɐxwn/",
-    "rootIds": [],
+    "rootIds": [
+      "R-XHW"
+    ],
     "notes": "Kaynak: 19.Kbd-Ru-2-Jonty.json",
     "examples": [
       "ПщыӀэм къыщӀэхун. Астемыр и къуэ Елъбахъсит лэжьапӀэм къыщӀаху. Сов. Къэб. ифольк.",
@@ -976055,9 +975247,7 @@
     "legacyIds": [
       "KAV-КЪЫЩӀЭХУН"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-XEDYGHUK-YN",
@@ -978134,9 +977324,7 @@
     "legacyIds": [
       "KAV-ЧЭСЕЙФЭХУ"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-ZHUNYGU",
@@ -981360,9 +980548,7 @@
     "legacyIds": [
       "KAV-ЩӀЭГЪЭХУЭН"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-SHCH-EGHEHEN",
@@ -983462,9 +982648,7 @@
     "legacyIds": [
       "KAV-ЩХЬЭХУ"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-SHCHHEXUITYNSHE",
@@ -983548,9 +982732,7 @@
     "legacyIds": [
       "KAV-ЩХЬЭХУЭН"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-SHCHHEXUERYSHXE",
@@ -983579,9 +982761,7 @@
     "legacyIds": [
       "KAV-ЩХЬЭХУЭРЫШХЭ"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-SHCHHEKHUME",
@@ -984055,9 +983235,7 @@
     "legacyIds": [
       "KAV-ЩЫГУХУ"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-SHCHYGHESHCH-E",
@@ -984658,9 +983836,7 @@
     "legacyIds": [
       "KAV-ЩЭРЫЩЭ"
     ],
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-UDYGHUAUE",
@@ -984716,9 +983892,7 @@
     "legacyIds": [
       "KAV-ЩЭЩӀАНЭ"
     ],
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-EVAKUATSIE",
@@ -990969,9 +990143,7 @@
     "legacyIds": [
       "KAV-БЛЭХУН"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-BLEK",
@@ -1005456,7 +1004628,9 @@
       "tr": "break"
     },
     "ipa": "/zɐrǝdɐxwɐn/",
-    "rootIds": [],
+    "rootIds": [
+      "R-XHW"
+    ],
     "notes": "Kaynak: 19.Kbd-Ru-2-Jonty.json",
     "examples": [
       "*Зэрызехьэурэ Ӏэхъушэр псыхъуэм зэрыдэхуэрт.  {{тхыгъэ|kbd|цӀэ=Япэу лъ. з.}}"
@@ -1005474,9 +1004648,7 @@
     "legacyIds": [
       "KAV-ЗЭРЫДЭХУЭН"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-ZERYZAKHUMEZH",
@@ -1006064,7 +1005236,9 @@
       "en": "nepereh. ch. do not coincide with each other, contradict each other"
     },
     "ipa": "/zɐtеmǝxwɐn/",
-    "rootIds": [],
+    "rootIds": [
+      "R-XHW"
+    ],
     "notes": "Kaynak: 19.Kbd-Ru-2-Jonty.json",
     "etymologyType": "native",
     "conceptNorm": "ACTION_VERB",
@@ -1006079,9 +1005253,7 @@
     "legacyIds": [
       "KAV-ЗЭТЕМЫХУЭН"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-ZYTEUVEZHYNYGHE",
@@ -1039963,7 +1039135,9 @@
       "tr": "hurl"
     },
     "ipa": "/xǝfʼɐxwɐn/",
-    "rootIds": [],
+    "rootIds": [
+      "R-XHW"
+    ],
     "notes": "Kaynak: 19.Kbd-Ru-2-Jonty.json",
     "examples": [
       "*..ЛӀитӀым Къэбардыр щӀихуэу хыфӀахуэри яшхэр здэщытымкӀэ езыхэм ягъэзэжащ.  {{автор|kbd|имяавтора=Т. Хь.}}"
@@ -1039981,9 +1039155,7 @@
     "legacyIds": [
       "KAV-ХЫФӀЭХУЭН"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-SHCHUKE",
@@ -1042395,9 +1041567,7 @@
     "legacyIds": [
       "KAV-ЩӀЫГЫНЫХУ"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-SHCH-YZHDZYDZE",
@@ -1058195,9 +1057365,7 @@
     "legacyIds": [
       "KAV-ЗЫБГЪЭДЭХУН"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-ZYBGHEDEXYN",
@@ -1058885,9 +1058053,7 @@
     "legacyIds": [
       "KAV-ЗЫФӀЭЩЫН"
     ],
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-ZYSHCH-EGUPSYSYN",
@@ -1060233,9 +1059399,7 @@
     "legacyIds": [
       "KAV-ЗЭХЭЩЫХЬЫН"
     ],
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-ZESHCH-EVESHCH-EN",
@@ -1061623,9 +1060787,7 @@
     "legacyIds": [
       "KAV-КӀУЭЦӀЫГЪЭХУЭН"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-K-YHU",
@@ -1061867,7 +1061029,9 @@
       "ar": "نفايات"
     },
     "ipa": "/kʼɐrǝxw/",
-    "rootIds": [],
+    "rootIds": [
+      "R-XHW"
+    ],
     "notes": "Kaynak: 5.Ady-Rus_Qarden.json",
     "etymologyType": "native",
     "conceptNorm": "ПАДЁЖ",
@@ -1061881,9 +1061045,7 @@
     "legacyIds": [
       "KAV-КӀЭРЫХУ"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-K-ET-IYGHUM",
@@ -1067015,9 +1066177,7 @@
     "legacyIds": [
       "KAV-ЛЪЭХУ"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-LYGHEGHUA",
@@ -1079416,9 +1078576,7 @@
     "legacyIds": [
       "KAV-ТЕЩЫКӀЫН"
     ],
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-TIGR",
@@ -1083428,9 +1082586,7 @@
     "legacyIds": [
       "KAV-ХЬЭБЖЬЫНЫХУ"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-HEBYVE",
@@ -1086320,9 +1085476,7 @@
     "legacyIds": [
       "KAV-ЩАГЪЭПХЪЭБГЪУ"
     ],
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-SHCHAK-UAP-E",
@@ -1091196,9 +1090350,7 @@
     "legacyIds": [
       "KAV-ЛЪЭРЫХУ"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-LHEUZHYRYPSHYNE",
@@ -1091618,9 +1090770,7 @@
     "legacyIds": [
       "KAV-НЭЩӀЭЩ"
     ],
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-P-ASTELHYKHU",
@@ -1092001,9 +1091151,7 @@
     "legacyIds": [
       "KAV-ПЩАХУЭ"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-PSHCHEGHUM",
@@ -1092470,9 +1091618,7 @@
     "legacyIds": [
       "KAV-УАФЭРЫХУ"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-UOGHU",
@@ -1093564,8 +1092710,10 @@
       "en": "residues, trash, and rubbish smth.",
       "tr": "remains, leavings, leftovers, waste matter, waste, scrap, waste pro­ducts."
     },
-    "ipa": "qʹǝtʹʂɐrǝxʷɐnǝtʹʂɐrǝ'xʷɑ:",
-    "rootIds": [],
+    "ipa": "/qʹǝtʹʂɐrǝxʷɐnǝtʹʂɐrǝ'xʷɑ:/",
+    "rootIds": [
+      "R-XHW"
+    ],
     "notes": "Kaynak: 1.Ady-Ady_AP.json, 5.Ady-Rus_Qarden.json | öncelik: 10 | kavram: 6 | POS otomatik (doğrulanmalı)",
     "literalMeaning": "waste dregs",
     "literalMeaningSource": "translations.ru->tr (orta)",
@@ -1093585,9 +1092733,7 @@
     "legacyIds": [
       "KAV-КЪЫКӀЭРЫХУА-НЫКӀЭРЫХУА-2"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-PE-KBD",
@@ -1093661,7 +1092807,7 @@
       "en": "nedelovity, passive",
       "tr": "PISIRIK"
     },
-    "ipa": "mǝɕtɐfmǝˈwɐf",
+    "ipa": "/mǝɕtɐfmǝˈwɐf/",
     "rootIds": [
       "R-SHCHT",
       "R-U"
@@ -1093691,7 +1092837,7 @@
       "tr": "korku ve ürkeklikle, çekinerek",
       "en": "fearful"
     },
-    "ipa": "gʷǝɕtɐ'gʷǝɮɐ",
+    "ipa": "/gʷǝɕtɐ'gʷǝɮɐ/",
     "rootIds": [
       "R-L",
       "R-SHCHT",
@@ -1093756,7 +1092902,7 @@
       "en": "sometime in the future",
       "tr": "SEYREKÇE"
     },
-    "ipa": "zɐmˈzɐm",
+    "ipa": "/zɐmˈzɐm/",
     "rootIds": [
       "R-Z"
     ],
@@ -1093788,7 +1092934,7 @@
       "en": "gradual",
       "tr": "gradual"
     },
-    "ipa": "mɐɕʹɐ'mɑ:ɕʹɐwǝrɐ",
+    "ipa": "/mɐɕʹɐ'mɑ:ɕʹɐwǝrɐ/",
     "rootIds": [
       "R-MASHCH"
     ],
@@ -1093813,7 +1092959,7 @@
       "tr": "Doğru; düz",
       "en": "direct, candid, truthful"
     },
-    "ipa": "ne:ħɐtʹʂqʹe:ħɐ'tʹʂǝnʂɐ",
+    "ipa": "/ne:ħɐtʹʂqʹe:ħɐ'tʹʂǝnʂɐ/",
     "rootIds": [
       "R-K",
       "R-H",
@@ -1093846,7 +1092992,7 @@
       "tr": "DIKEY",
       "en": "directly, openly, honestly, without equivocation"
     },
-    "ipa": "ne:ħɐtʹʂqʹe:ħɐ'tʹʂǝnʂɐw",
+    "ipa": "/ne:ħɐtʹʂqʹe:ħɐ'tʹʂǝnʂɐw/",
     "rootIds": [
       "R-H",
       "R-K"
@@ -1093902,7 +1093048,7 @@
       "tr": "Esnemeler",
       "en": "adverb. yawning, then sighing"
     },
-    "ipa": "xʷǝɕħɐ'ɕɑ:tɐw",
+    "ipa": "/xʷǝɕħɐ'ɕɑ:tɐw/",
     "rootIds": [
       "R-XUSHCHH",
       "R-SHATE"
@@ -1093966,7 +1093112,7 @@
       "tr": "SALDIRGAN",
       "en": "robber, extortionist"
     },
-    "ipa": "je:rǝħje:'rǝʂx",
+    "ipa": "/je:rǝħje:'rǝʂx/",
     "rootIds": [
       "R-YERYH"
     ],
@@ -1093999,7 +1093145,7 @@
       "en": "zhy feast in the family, circle of friends",
       "tr": "ŞÖLEN"
     },
-    "ipa": "zɐʂzɐ'xʷe:fɐ",
+    "ipa": "/zɐʂzɐ'xʷe:fɐ/",
     "rootIds": [
       "R-F",
       "R-SH",
@@ -1094029,7 +1093175,7 @@
       "en": "wrong time, out of place",
       "tr": "for no reason at all; neither here nor there"
     },
-    "ipa": "jǝmǝkʷǝrɐi:mǝˈbɣu:",
+    "ipa": "/jǝmǝkʷǝrɐi:mǝˈbɣu:/",
     "rootIds": [
       "R-KU",
       "R-KU_2",
@@ -1094094,7 +1093240,7 @@
       "en": "kubano-zelenychuk troubles, unhappiness",
       "tr": "cubano-zelenchukskie see."
     },
-    "ipa": "χɐ'tɐʔ",
+    "ipa": "/χɐ'tɐʔ/",
     "rootIds": [
       "R-KHATE"
     ],
@@ -1094204,7 +1093350,7 @@
       "en": "vernacular incessant noise, the hubbub",
       "tr": "colloq. ceaseless chatter, patter"
     },
-    "ipa": "pʹɐrɐ'pʹɑ:rɐ",
+    "ipa": "/pʹɐrɐ'pʹɑ:rɐ/",
     "rootIds": [
       "R-PAR"
     ],
@@ -1094237,7 +1093383,7 @@
       "tr": "Zayıf, arık",
       "en": "homely, skinny, skinny"
     },
-    "ipa": "fɐnʂɐˈɮǝnʂɐ",
+    "ipa": "/fɐnʂɐˈɮǝnʂɐ/",
     "rootIds": [
       "R-F",
       "R-L"
@@ -1094302,7 +1093448,7 @@
       "tr": "Kiriş-lif",
       "en": "Tendon, sinew chord"
     },
-    "ipa": "xʷɐtʹʂɐ'bʑɐtʹʂɐ",
+    "ipa": "/xʷɐtʹʂɐ'bʑɐtʹʂɐ/",
     "rootIds": [
       "R-KHUEK1E",
       "R-BZHYE"
@@ -1094322,9 +1093468,7 @@
     "legacyIds": [
       "KAV-ХУЭКӀЭ-БЖЬЭКӀЭ-2"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-XUESAKEYU-RE",
@@ -1094392,7 +1093536,7 @@
       "en": "with pleasure; eagerly",
       "tr": "with pleasure; eagerly"
     },
-    "ipa": "ɕʹɐɕǝʁʷɐɕʹɐɕǝ'ʁʷɐwǝrɐ",
+    "ipa": "/ɕʹɐɕǝʁʷɐɕʹɐɕǝ'ʁʷɐwǝrɐ/",
     "rootIds": [
       "R-SH1E",
       "R-SHCHYGHU"
@@ -1094893,7 +1094037,7 @@
       "tr": "DALKAVUK",
       "en": "sycophant, 'man, unscrupulous man"
     },
-    "ipa": "tʹʂɐɕʹɐɬɑ:dɐtʹʂɐɕʹɐ'ᶎǝᶎ",
+    "ipa": "/tʹʂɐɕʹɐɬɑ:dɐtʹʂɐɕʹɐ'ᶎǝᶎ/",
     "rootIds": [
       "R-KIE",
       "R-ZHE",
@@ -1094993,7 +1094137,7 @@
       "tr": "utangaç",
       "en": "shy, timid, indecisive"
     },
-    "ipa": "pʹǝtʹɐxʷǝ'zɑ:",
+    "ipa": "/pʹǝtʹɐxʷǝ'zɑ:/",
     "rootIds": [
       "R-PYT",
       "R-Z",
@@ -1095024,7 +1094168,7 @@
       "tr": "mistrustful",
       "en": "unsociable, uncommunicative; incredulous."
     },
-    "ipa": "xɐmɐgʷǝxɐˈmɑ:ɕħɐ",
+    "ipa": "/xɐmɐgʷǝxɐˈmɑ:ɕħɐ/",
     "rootIds": [
       "R-SHCHH",
       "R-GU",
@@ -1095091,7 +1094235,7 @@
       "tr": "Kaynayan, coşkulu",
       "en": "colloquial. chatterbox, babbler, spieler."
     },
-    "ipa": "xɐʔʷǝxɐ'vǝħ",
+    "ipa": "/xɐʔʷǝxɐ'vǝħ/",
     "rootIds": [
       "R-LHE",
       "R-V",
@@ -1095123,7 +1094267,7 @@
       "tr": "TÜNEK",
       "en": "bustling, hectic; frivolous."
     },
-    "ipa": "xɐʔɐ'xɐpχʷɐ",
+    "ipa": "/xɐʔɐ'xɐpχʷɐ/",
     "rootIds": [
       "R-PKHU",
       "R-1E"
@@ -1095187,7 +1094331,7 @@
       "en": "erbial",
       "ar": "عادة; بشكل متكرر"
     },
-    "ipa": "ɕʹɐx'ɕʹɐxu:",
+    "ipa": "/ɕʹɐx'ɕʹɐxu:/",
     "rootIds": [
       "R-PSY",
       "R-SHCH1EX"
@@ -1095347,7 +1094491,7 @@
       "tr": "DALKAVUK",
       "en": "аӀужыж-мыӀужыж: toady, flunkey, lickspittle, bootlicker, creep, sycophant"
     },
-    "ipa": "ɐʔʷǝᶎǝᶎmǝʔʷǝ'ᶎǝᶎ",
+    "ipa": "/ɐʔʷǝᶎǝᶎmǝʔʷǝ'ᶎǝᶎ/",
     "rootIds": [
       "R-AUZHYZH"
     ],
@@ -1095553,9 +1094697,7 @@
     "legacyIds": [
       "KAV-ГУРЫХУАГЪ(Э)-2"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-GHUNEGHU-ZHEREGHU",
@@ -1095566,7 +1094708,7 @@
       "en": "neighbors around",
       "tr": "one's neighbour, one's friends, one's people"
     },
-    "ipa": "ʁʷǝnɐʁʷǝᶎɐ'rɐʁʷ",
+    "ipa": "/ʁʷǝnɐʁʷǝᶎɐ'rɐʁʷ/",
     "rootIds": [
       "R-GHUN"
     ],
@@ -1095719,7 +1094861,7 @@
       "tr": "Ağacın alt kısmı",
       "en": "perrin, the villages ."
     },
-    "ipa": "ᶎǝɮɐᶎǝ'ɮɐtʹʂɐrɐ",
+    "ipa": "/ᶎǝɮɐᶎǝ'ɮɐtʹʂɐrɐ/",
     "rootIds": [
       "R-ZHYL"
     ],
@@ -1095779,7 +1094921,7 @@
       "tr": "PISIRIK",
       "en": "passive, lazy people"
     },
-    "ipa": "ʑɐrǝxʷǝʔɐ'rǝxʷ",
+    "ipa": "/ʑɐrǝxʷǝʔɐ'rǝxʷ/",
     "rootIds": [
       "R-ZH",
       "R-1E"
@@ -1095799,9 +1094941,7 @@
     "legacyIds": [
       "KAV-ЖЬЭРЫХУ-ӀЭРЫХУ-2"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-ZHEXE",
@@ -1095838,7 +1094978,7 @@
       "en": "someday",
       "tr": "Kara, siyah"
     },
-    "ipa": "zǝmɐxʷɐǝ'mɑ:xʷɐtʹʂɐ",
+    "ipa": "/zǝmɐxʷɐǝ'mɑ:xʷɐtʹʂɐ/",
     "rootIds": [
       "R-MAXWA",
       "R-Z"
@@ -1095894,7 +1095034,7 @@
       "tr": "büyük; buyuk",
       "en": "noise, din"
     },
-    "ipa": "zɐɕʹɐvɐzɐ'ɕʹɐʑɐ",
+    "ipa": "/zɐɕʹɐvɐzɐ'ɕʹɐʑɐ/",
     "rootIds": [
       "R-V",
       "R-ZH"
@@ -1095927,7 +1095067,7 @@
       "en": "too, cherezvuchayno",
       "tr": "DOLUDİZGİN"
     },
-    "ipa": "jǝqʹʷǝji:'qʹʷǝᶎtʹʂɐ",
+    "ipa": "/jǝqʹʷǝji:'qʹʷǝᶎtʹʂɐ/",
     "rootIds": [
       "R-QHU"
     ],
@@ -1095982,7 +1095122,7 @@
       "tr": "beauty",
       "en": "purity"
     },
-    "ipa": "qʹɑ:bzɑ:ʁ*ɐ*",
+    "ipa": "/qʹɑ:bzɑ:ʁ*ɐ*/",
     "rootIds": [
       "R-QHABZ"
     ],
@@ -1096070,7 +1095210,7 @@
       "tr": "relatives",
       "en": "relatives, relatives"
     },
-    "ipa": "qʹʷɐpχʷǝ'ʂǝpχʷ",
+    "ipa": "/qʹʷɐpχʷǝ'ʂǝpχʷ/",
     "rootIds": [
       "R-PKHU",
       "R-KUE",
@@ -1096103,7 +1095243,7 @@
       "tr": "relatives",
       "en": "relatives, kin"
     },
-    "ipa": "qʹʷɐʂi:'ʂǝɬʹi:",
+    "ipa": "/qʹʷɐʂi:'ʂǝɬʹi:/",
     "rootIds": [
       "R-K1UASH",
       "R-QHU",
@@ -1096136,7 +1095276,7 @@
       "en": "portable slight, non-significant",
       "tr": "AZICIK"
     },
-    "ipa": "qʹǝpǝᶎnǝ'pǝᶎ",
+    "ipa": "/qʹǝpǝᶎnǝ'pǝᶎ/",
     "rootIds": [
       "R-ZH",
       "R-ZHE"
@@ -1096244,7 +1095384,7 @@
       "tr": "BOL",
       "en": "infinite, boundless"
     },
-    "ipa": "tʹʂɐnʂɐ'pɐnʂɐ",
+    "ipa": "/tʹʂɐnʂɐ'pɐnʂɐ/",
     "rootIds": [
       "R-KENSH"
     ],
@@ -1096281,7 +1095421,9 @@
       "ar": "نفايات"
     },
     "ipa": "/kʼɐrǝxw-bʑɐrǝxw/",
-    "rootIds": [],
+    "rootIds": [
+      "R-XHW"
+    ],
     "notes": "Kaynak: 5.Ady-Rus_Qarden.json | öncelik: 4 | kavram: 2 | POS otomatik (doğrulanmalı)",
     "literalMeaning": "waste dregs",
     "literalMeaningSource": "ru->tr (KAVRAM_ etiketi) (orta)",
@@ -1096296,8 +1095438,7 @@
       "KAV-КӀЭРЫХУ-БЖЬЭРЫХУ-2"
     ],
     "legacyRootForms": [
-      "хубжь",
-      "ху"
+      "хубжь"
     ]
   },
   {
@@ -1096337,7 +1095478,7 @@
       "tr": "wealth",
       "en": "wealth, good"
     },
-    "ipa": "mɐχɐˈχe:r",
+    "ipa": "/mɐχɐˈχe:r/",
     "rootIds": [
       "R-MAKH",
       "R-KHYER"
@@ -1096370,7 +1095511,7 @@
       "tr": "ZAVALLI",
       "en": "frail, sick"
     },
-    "ipa": "mǝɬʹɐmǝˈpsɐw",
+    "ipa": "/mǝɬʹɐmǝˈpsɐw/",
     "rootIds": [
       "R-L",
       "R-LIY",
@@ -1096401,7 +1095542,7 @@
       "en": "friends and comrades, pals",
       "tr": "AVANE"
     },
-    "ipa": "nǝbʑɐʁʷǝᶎɐˈrɐʁʷ",
+    "ipa": "/nǝbʑɐʁʷǝᶎɐˈrɐʁʷ/",
     "rootIds": [
       "R-NYBZHY",
       "R-ZHER"
@@ -1096646,7 +1095787,7 @@
       "tr": "BİRAZ, KISMEN",
       "en": "adverb. little, little by little"
     },
-    "ipa": "tʹɐkʹʷǝ'tʹɐkʹʷ",
+    "ipa": "/tʹɐkʹʷǝ'tʹɐkʹʷ/",
     "rootIds": [
       "R-TEKU"
     ],
@@ -1096677,7 +1095818,7 @@
       "en": "parasites of animals, as well as diseases caused by them",
       "tr": "TUFEYLÎ"
     },
-    "ipa": "fɐʂxˈɮǝʂx",
+    "ipa": "/fɐʂxˈɮǝʂx/",
     "rootIds": [
       "R-F",
       "R-L",
@@ -1096787,7 +1095928,7 @@
       "tr": "kararlılık",
       "en": "fidelity, courage, bravery of a rider"
     },
-    "ipa": "ʂǝʁɐ'ɬʹǝʁɐ",
+    "ipa": "/ʂǝʁɐ'ɬʹǝʁɐ/",
     "rootIds": [
       "R-SH",
       "R-NE",
@@ -1096820,7 +1095961,7 @@
       "tr": "Soluk yeşil",
       "en": "pale green"
     },
-    "ipa": "ɕχʷɐntʹɐsǝ'rǝxʷ",
+    "ipa": "/ɕχʷɐntʹɐsǝ'rǝxʷ/",
     "rootIds": [
       "R-SCHKHWA",
       "R-SYRYXU",
@@ -1096851,7 +1095992,7 @@
       "tr": "Petrol yeşili",
       "en": "grayish-green"
     },
-    "ipa": "ɕχʷɐntʹɐsǝrǝ'xʷǝfɐ",
+    "ipa": "/ɕχʷɐntʹɐsǝrǝ'xʷǝfɐ/",
     "rootIds": [
       "R-F",
       "R-SCHKHWA",
@@ -1096879,7 +1096020,7 @@
       "tr": "Koyu yeşil",
       "en": "dark green"
     },
-    "ipa": "ɕχʷɐntʹɐfʹǝ'tʹsɑ:fɐ",
+    "ipa": "/ɕχʷɐntʹɐfʹǝ'tʹsɑ:fɐ/",
     "rootIds": [
       "R-FYTS",
       "R-F",
@@ -1097093,7 +1096234,7 @@
       "tr": "unscathed",
       "en": "unharmed"
     },
-    "ipa": "ʔɐpsɐwǝɬɐ'psɐw",
+    "ipa": "/ʔɐpsɐwǝɬɐ'psɐw/",
     "rootIds": [
       "R-PS",
       "R-1E",
@@ -1097151,7 +1096292,7 @@
       "tr": "Çamurlu; pis",
       "en": "dirty, untidy"
     },
-    "ipa": "ʔɐfʹe:jɬɐ'fʹe:j",
+    "ipa": "/ʔɐfʹe:jɬɐ'fʹe:j/",
     "rootIds": [
       "R-FYEY",
       "R-1E",
@@ -1097209,7 +1096350,7 @@
       "tr": "fakir",
       "en": "poor, untenable"
     },
-    "ipa": "ʔɐɕʹʔɐ'dᶎɑ:fɐ",
+    "ipa": "/ʔɐɕʹʔɐ'dᶎɑ:fɐ/",
     "rootIds": [
       "R-1E",
       "R-SH1Y",
@@ -1097419,7 +1096560,7 @@
       "en": "without delay, without gimp.",
       "tr": "Sırma için tahta"
     },
-    "ipa": "ɐdɐ'mo:dɐ",
+    "ipa": "/ɐdɐ'mo:dɐ/",
     "rootIds": [
       "R-A",
       "R-MO",
@@ -1097451,7 +1096592,7 @@
       "tr": "CAHIL",
       "en": "boorish"
     },
-    "ipa": "ɐdɐmǝwǝɕi:jɐnɐmǝwǝ'ɕi:j",
+    "ipa": "/ɐdɐmǝwǝɕi:jɐnɐmǝwǝ'ɕi:j/",
     "rootIds": [
       "R-AD",
       "R-USHCHIY",
@@ -1097702,7 +1096843,7 @@
       "tr": "TANGIR",
       "en": "int. boom"
     },
-    "ipa": "bǝmˈsǝm",
+    "ipa": "/bǝmˈsǝm/",
     "rootIds": [
       "R-BYM"
     ],
@@ -1097855,7 +1096996,7 @@
       "tr": "BILIRKIŞI",
       "en": "int. cry, which scared off turkeys"
     },
-    "ipa": "gʷǝr'gʷǝr",
+    "ipa": "/gʷǝr'gʷǝr/",
     "rootIds": [
       "R-GU"
     ],
@@ -1097921,7 +1097062,7 @@
       "tr": "BILIRKIŞI",
       "en": "int. cry, which szyvayut turkeys for feeding"
     },
-    "ipa": "gʷǝrɐ'gʷǝrɐ",
+    "ipa": "/gʷǝrɐ'gʷǝrɐ/",
     "rootIds": [
       "R-GU"
     ],
@@ -1098132,7 +1097273,7 @@
       "tr": "Koyu sarı",
       "en": "auburn"
     },
-    "ipa": "ʁʷɐ'qʹɑ:rɐ",
+    "ipa": "/ʁʷɐ'qʹɑ:rɐ/",
     "rootIds": [
       "R-QHAR",
       "R-GHWALH"
@@ -1098161,7 +1097302,7 @@
       "tr": "Koyu sarı",
       "en": "auburn"
     },
-    "ipa": "ʁʷɐ*fʹǝ'tʹsɑ:fɐ",
+    "ipa": "/ʁʷɐ*fʹǝ'tʹsɑ:fɐ/",
     "rootIds": [
       "R-FYTS",
       "R-GHWALH",
@@ -1098192,7 +1097333,7 @@
       "en": "dirty-yellow",
       "tr": "sarı"
     },
-    "ipa": "ʁʷɐʑsǝrǝ'xʷǝfɐ",
+    "ipa": "/ʁʷɐʑsǝrǝ'xʷǝfɐ/",
     "rootIds": [
       "R-GU_3",
       "R-ZH",
@@ -1098220,7 +1097361,7 @@
       "tr": "BAĞIRMAK",
       "en": "is not very good. ch. cry"
     },
-    "ipa": "ʁǝn'bᶎɐn",
+    "ipa": "/ʁǝn'bᶎɐn/",
     "rootIds": [
       "R-GY",
       "R-GH",
@@ -1098248,7 +1097389,7 @@
       "tr": "Terzi",
       "en": "дакӀуэ-бзакӀуэ: tailor, dressmaker"
     },
-    "ipa": "dɐkʹʷɐ'bzɑ:kʹʷɐ",
+    "ipa": "/dɐkʹʷɐ'bzɑ:kʹʷɐ/",
     "rootIds": [
       "R-D",
       "R-BZ"
@@ -1098519,7 +1097660,7 @@
       "en": "{man} does neither evil nor good",
       "tr": "neither for, nor against; neither here, nor there; neither fish, nor fowl; neither fish, flesh, nor good red herring"
     },
-    "ipa": "je:mǝɕʹɐfʹǝ'mǝɕʹɐ",
+    "ipa": "/je:mǝɕʹɐfʹǝ'mǝɕʹɐ/",
     "rootIds": [
       "R-YE",
       "R-FIY",
@@ -1098626,7 +1097767,7 @@
       "en": "the need, the need for someone smth.",
       "tr": "collect. necessities, requirements, needs"
     },
-    "ipa": "zǝxʷe:jzǝ'xʷɐfʹ",
+    "ipa": "/zǝxʷe:jzǝ'xʷɐfʹ/",
     "rootIds": [
       "R-XUYEY",
       "R-FIY"
@@ -1098765,7 +1097906,7 @@
       "en": "cubano-zelenchukskie cousins, daughters of brothers",
       "tr": "kuzen"
     },
-    "ipa": "zɐʂzɐ'ʂǝpχʷ",
+    "ipa": "/zɐʂzɐ'ʂǝpχʷ/",
     "rootIds": [
       "R-PKHU",
       "R-SH",
@@ -1098822,7 +1097963,7 @@
       "tr": "Büyük; geniş",
       "en": "large"
     },
-    "ipa": "jǝn'jǝnu:",
+    "ipa": "/jǝn'jǝnu:/",
     "rootIds": [
       "R-IN"
     ],
@@ -1099117,7 +1098258,7 @@
       "en": "conference hall",
       "tr": "SALON"
     },
-    "ipa": "kənfʲɪˌrʲend͡z ˈzaɫ",
+    "ipa": "/kənfʲɪˌrʲend͡z ˈzaɫ/",
     "rootIds": [
       "R-KONFYERYENTS-ZAL"
     ],
@@ -1099174,7 +1098315,7 @@
       "tr": "oynamak",
       "en": "nepereh. ch. totter, swing"
     },
-    "ipa": "qʹe:bɐnne:'bɐn",
+    "ipa": "/qʹe:bɐnne:'bɐn/",
     "rootIds": [
       "R-B"
     ],
@@ -1099207,7 +1098348,7 @@
       "en": "precipitation",
       "tr": "precipitation"
     },
-    "ipa": "qʹe:ʂx'qʹe:s",
+    "ipa": "/qʹe:ʂx'qʹe:s/",
     "rootIds": [
       "R-SHKH",
       "R-S"
@@ -1099238,7 +1098379,7 @@
       "tr": "Kalın",
       "en": "thickets"
     },
-    "ipa": "qʹʷɐtsɐˈtʂǝtsɐ",
+    "ipa": "/qʹʷɐtsɐˈtʂǝtsɐ/",
     "rootIds": [],
     "notes": "Kaynak: 1.Ady-Ady_AP.json | öncelik: 3 | kavram: 1 | POS otomatik (doğrulanmalı)",
     "examples": [
@@ -1099320,7 +1098461,7 @@
       "tr": "Çarpmak, vurmak",
       "en": "overmeasure"
     },
-    "ipa": "qʹǝgʷɐɬħɐnǝgʷɐ'ɬħɐ",
+    "ipa": "/qʹǝgʷɐɬħɐnǝgʷɐ'ɬħɐ/",
     "rootIds": [
       "R-LHH"
     ],
@@ -1099350,7 +1098491,7 @@
       "tr": "neglected. sl. coarse",
       "en": "moody"
     },
-    "ipa": "qʹǝntʹɐ'qʹǝntʹɐ",
+    "ipa": "/qʹǝntʹɐ'qʹǝntʹɐ/",
     "rootIds": [
       "R-QHYNT"
     ],
@@ -1099408,7 +1098549,7 @@
       "en": "cubano-zelenchukskie quietly, without noise.",
       "tr": "ÖZÜMLENMEK"
     },
-    "ipa": "qʹɐɕʹi:'nɐɕʹi:",
+    "ipa": "/qʹɐɕʹi:'nɐɕʹi:/",
     "rootIds": [
       "R-SHCH",
       "R-SH1Y"
@@ -1099560,7 +1098701,7 @@
       "tr": "Kızıl kuyruk",
       "en": "redstart"
     },
-    "ipa": "tʹʂɐpɬ'ɕħɐxʷ",
+    "ipa": "/tʹʂɐpɬ'ɕħɐxʷ/",
     "rootIds": [
       "R-K",
       "R-SHCHH",
@@ -1099582,9 +1098723,7 @@
     "legacyIds": [
       "KAV-КӀЭПЛЪ-ЩХЬЭХУ"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-K-ERY",
@@ -1099695,7 +1098834,7 @@
       "en": "movement in the dance of ''islam''",
       "tr": "hareket"
     },
-    "ipa": "ɬɐpɐɬɐ'dɑ:qʹɐ",
+    "ipa": "/ɬɐpɐɬɐ'dɑ:qʹɐ/",
     "rootIds": [
       "R-LHE",
       "R-P",
@@ -1099781,7 +1098920,7 @@
       "tr": "vernacular elderly",
       "en": "old"
     },
-    "ipa": "ɬʹǝʑfǝˈzǝʑ",
+    "ipa": "/ɬʹǝʑfǝˈzǝʑ/",
     "rootIds": [
       "R-LIY",
       "R-ZH",
@@ -1099889,7 +1099028,7 @@
       "en": "tan",
       "tr": "kahverengi"
     },
-    "ipa": "mo:rɐʁʷɐˈʑǝfɐ",
+    "ipa": "/mo:rɐʁʷɐˈʑǝfɐ/",
     "rootIds": [
       "R-MOR",
       "R-F",
@@ -1099922,7 +1099061,7 @@
       "en": "dark korichney",
       "tr": "Kırmızı"
     },
-    "ipa": "mo:rɐfʹǝˈtʹsɑ:fɐ",
+    "ipa": "/mo:rɐfʹǝˈtʹsɑ:fɐ/",
     "rootIds": [
       "R-MOR",
       "R-FYTS",
@@ -1099981,7 +1099120,7 @@
       "en": "indeterminate age",
       "tr": "İhtiyar, koca, eski"
     },
-    "ipa": "mǝʑˈmǝɕʹɐ",
+    "ipa": "/mǝʑˈmǝɕʹɐ/",
     "rootIds": [
       "R-ZH",
       "R-SH1Y"
@@ -1100037,7 +1099176,7 @@
       "en": "small and not small, medium",
       "tr": "neither big nor small."
     },
-    "ipa": "mǝi:nmǝˈtʹsǝkʹʷ",
+    "ipa": "/mǝi:nmǝˈtʹsǝkʹʷ/",
     "rootIds": [
       "R-IN",
       "R-C1YQ1U"
@@ -1100068,7 +1099207,7 @@
       "tr": "serseri",
       "en": "loafer"
     },
-    "ipa": "mǝɮɐʑɐmǝˈpʹɕʹɑ:ntʹɐ",
+    "ipa": "/mǝɮɐʑɐmǝˈpʹɕʹɑ:ntʹɐ/",
     "rootIds": [
       "R-LAZH",
       "R-PSHCHANT",
@@ -1100124,7 +1099263,7 @@
       "tr": "orta dereceli",
       "en": "moderate ."
     },
-    "ipa": "mǝɕʹǝʔɐmǝˈxʷɑ:bɐ",
+    "ipa": "/mǝɕʹǝʔɐmǝˈxʷɑ:bɐ/",
     "rootIds": [
       "R-SHCHIY_1",
       "R-XUAB"
@@ -1100179,7 +1099318,7 @@
       "tr": "orta dereceli",
       "en": "moderate"
     },
-    "ipa": "mǝʔɐfʹmǝˈdǝdᶎ",
+    "ipa": "/mǝʔɐfʹmǝˈdǝdᶎ/",
     "rootIds": [
       "R-EF",
       "R-DYDZH"
@@ -1100207,7 +1099346,7 @@
       "tr": "Kuyu",
       "en": "let's go; well, we set off"
     },
-    "ipa": "nɐkʹʷɐ'sǝkʹʷɐ",
+    "ipa": "/nɐkʹʷɐ'sǝkʹʷɐ/",
     "rootIds": [
       "R-KU",
       "R-KWA"
@@ -1100262,7 +1099401,7 @@
       "tr": "açıkça",
       "en": "bluntly, openly, bluntly. neheki-keheki hemylu iuehur zytetr zhyien."
     },
-    "ipa": "ne:ħɐtʹʂ'qʹe:ħɐtʹʂ",
+    "ipa": "/ne:ħɐtʹʂ'qʹe:ħɐtʹʂ/",
     "rootIds": [
       "R-H",
       "R-K"
@@ -1100292,7 +1099431,7 @@
       "en": "bias against someone smth.",
       "tr": "önyargı"
     },
-    "ipa": "nɐfʹ'ne:j",
+    "ipa": "/nɐfʹ'ne:j/",
     "rootIds": [
       "R-N",
       "R-NE",
@@ -1100377,7 +1099516,7 @@
       "en": "seniority by age, according to the principle of respect for seniority",
       "tr": "sıra"
     },
-    "ipa": "nɐχǝʑnɐ'χǝɕʹɐtʹʂɐ",
+    "ipa": "/nɐχǝʑnɐ'χǝɕʹɐtʹʂɐ/",
     "rootIds": [
       "R-NE",
       "R-ZH",
@@ -1100461,7 +1099600,7 @@
       "en": "grustnovato",
       "tr": "gloomily, darkly, sombrely"
     },
-    "ipa": "nɐɕχe:jnɐɕ'χe:jwɐ",
+    "ipa": "/nɐɕχe:jnɐɕ'χe:jwɐ/",
     "rootIds": [
       "R-NESHCHKHYEY",
       "R-NE"
@@ -1100707,7 +1099846,7 @@
       "en": "prime minister",
       "tr": "prime minister"
     },
-    "ipa": "prʲɪˌmʲjer mʲɪˈnʲistr",
+    "ipa": "/prʲɪˌmʲjer mʲɪˈnʲistr/",
     "rootIds": [
       "R-PRIMYER-MINISTR"
     ],
@@ -1100734,7 +1099873,7 @@
       "en": "press conference",
       "tr": "congress"
     },
-    "ipa": "ˌprʲes kənfʲɪˈrʲent͡s",
+    "ipa": "/ˌprʲes kənfʲɪˈrʲent͡s/",
     "rootIds": [
       "R-PRYESS-KONFYERYENTS"
     ],
@@ -1101185,7 +1100324,7 @@
       "en": "fatherlessness",
       "tr": "dul kadının çoluk çocuğu"
     },
-    "ipa": "fǝzɐbɐqʹʷɐfǝzɑ:ˈbɐpχʷ",
+    "ipa": "/fǝzɐbɐqʹʷɐfǝzɑ:ˈbɐpχʷ/",
     "rootIds": [
       "R-FYZ",
       "R-PKHU",
@@ -1101326,9 +1100465,7 @@
     "legacyIds": [
       "KAV-ХУЭ-"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-XUEMU-RE",
@@ -1101388,7 +1100525,7 @@
       "tr": "BILIRKIŞI",
       "en": "exclamation"
     },
-    "ipa": "χʷǝɕtˈχʷǝɕt",
+    "ipa": "/χʷǝɕtˈχʷǝɕt/",
     "rootIds": [
       "R-GU"
     ],
@@ -1101420,7 +1100557,7 @@
       "tr": "SPEKÜLÂSYON",
       "en": "speculation"
     },
-    "ipa": "χʷɐᶎˈɕɐᶎ",
+    "ipa": "/χʷɐᶎˈɕɐᶎ/",
     "rootIds": [
       "R-KHUE"
     ],
@@ -1101441,8 +1100578,7 @@
       "KAV-ХЪУЭЖ-ЩЭЖ"
     ],
     "legacyRootForms": [
-      "хъуэ",
-      "щ"
+      "хъуэ"
     ]
   },
   {
@@ -1101547,9 +1100683,7 @@
     "legacyIds": [
       "KAV-ХЬЭГЪУЭ-ХУГЪУЭ"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-XEPSHCH-YK-KUEDEYUE",
@@ -1101607,7 +1100741,7 @@
       "en": "beanbag",
       "tr": "rattle"
     },
-    "ipa": "tʹsǝrʁɐ'tʹsǝrʁɐ",
+    "ipa": "/tʹsǝrʁɐ'tʹsǝrʁɐ/",
     "rootIds": [
       "R-TSYRGH"
     ],
@@ -1101634,7 +1100768,7 @@
       "tr": "Kızböceği",
       "en": "dragon-fly"
     },
-    "ipa": "tʹsǝrɐ'tʹsǝrɐ",
+    "ipa": "/tʹsǝrɐ'tʹsǝrɐ/",
     "rootIds": [
       "R-TSYR"
     ],
@@ -1101787,7 +1100921,7 @@
       "tr": "Papatya",
       "en": "bot. chamomile"
     },
-    "ipa": "ʂǝnɐ'ʂǝnɐ",
+    "ipa": "/ʂǝnɐ'ʂǝnɐ/",
     "rootIds": [
       "R-SHYN",
       "R-SHYN_2"
@@ -1101814,7 +1100948,7 @@
       "en": "uchi-uchi",
       "tr": "BILIRKIŞI"
     },
-    "ipa": "ʂǝrɐ'ʂǝrɐ",
+    "ipa": "/ʂǝrɐ'ʂǝrɐ/",
     "rootIds": [
       "R-SHYR"
     ],
@@ -1101874,7 +1101008,7 @@
       "tr": "Boz",
       "en": "dark grey"
     },
-    "ipa": "ɕχʷɐfʹǝ'tʹsɑ:fɐ",
+    "ipa": "/ɕχʷɐfʹǝ'tʹsɑ:fɐ/",
     "rootIds": [
       "R-FYTS",
       "R-F",
@@ -1101976,9 +1101110,7 @@
     "legacyIds": [
       "KAV-ЩЫ-"
     ],
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-SHCHEXU-SHCHEXUU",
@@ -1101989,7 +1101121,7 @@
       "en": "нареч. см. (adverb. cm.)",
       "tr": "BOŞBOĞAZ"
     },
-    "ipa": "ɕɐxʷǝ'ɕɐxʷu:",
+    "ipa": "/ɕɐxʷǝ'ɕɐxʷu:/",
     "rootIds": [
       "R-SHCHEXU"
     ],
@@ -1102045,7 +1101177,7 @@
       "en": "homeland.",
       "tr": "Anne, ana"
     },
-    "ipa": "ɕʹǝɬɐ'ɐnɐ",
+    "ipa": "/ɕʹǝɬɐ'ɐnɐ/",
     "rootIds": [
       "R-SH1Y",
       "R-AN"
@@ -1102073,7 +1101205,7 @@
       "en": "reddish blue",
       "tr": "lacivert"
     },
-    "ipa": "ɕʹǝxʷǝpɬǝ'ʑǝfɐ",
+    "ipa": "/ɕʹǝxʷǝpɬǝ'ʑǝfɐ/",
     "rootIds": [
       "R-SH1Y",
       "R-F",
@@ -1102101,7 +1101233,7 @@
       "en": "light blue",
       "tr": "lacivert"
     },
-    "ipa": "ɕʹǝxʷǝsǝrǝ'xʷǝfɐ",
+    "ipa": "/ɕʹǝxʷǝsǝrǝ'xʷǝfɐ/",
     "rootIds": [
       "R-SH1Y",
       "R-F",
@@ -1102132,7 +1101264,7 @@
       "tr": "Koyu mavi",
       "en": "dark blue"
     },
-    "ipa": "ɕʹǝxʷǝfʹǝ'tʹsɑ:fɐ",
+    "ipa": "/ɕʹǝxʷǝfʹǝ'tʹsɑ:fɐ/",
     "rootIds": [
       "R-FYTS",
       "R-SH1Y",
@@ -1102369,7 +1101501,7 @@
       "en": "нареч. см. . (adverb. cm. .)",
       "tr": "eli boş ve eli bomboş bir şekilde"
     },
-    "ipa": "ʔɐgʷǝnɐɕʹʔɐgʷǝ'dᶎɑ:fɐw",
+    "ipa": "/ʔɐgʷǝnɐɕʹʔɐgʷǝ'dᶎɑ:fɐw/",
     "rootIds": [
       "R-1E",
       "R-NESHCH1",
@@ -1102427,7 +1101559,7 @@
       "tr": "eğilimi olmak",
       "en": "do not find an approach to smb., can not persuade smb."
     },
-    "ipa": "ʔɐʁʷɐrɐ'ʁʷɐgʷǝrɐ",
+    "ipa": "/ʔɐʁʷɐrɐ'ʁʷɐgʷǝrɐ/",
     "rootIds": [
       "R-GU_1",
       "R-1E",
@@ -1105672,9 +1104804,7 @@
     "root": "Ӏу",
     "rootForm": "Ӏу",
     "dialect": "COMMON",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "form": "Ӏурылъэфын",
@@ -1105721,13 +1104851,13 @@
     "rootId": "R-XU",
     "conceptId": "UNCLASSIFIED",
     "partOfSpeech": "VERB",
-    "rootIds": [],
+    "rootIds": [
+      "R-XHW"
+    ],
     "root": "ху",
     "rootForm": "ху",
     "dialect": "COMMON",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "form": "Ӏэ-лъэ",
@@ -1108250,9 +1107380,7 @@
     "root": "бжьын",
     "rootForm": "бжьын",
     "dialect": "COMMON",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "form": "бжьэкъуэуэн",
@@ -1108415,9 +1107543,7 @@
     "rootId": "R-TH",
     "conceptId": "GOAT",
     "dialect": "COMMON",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "form": "бжэнудз",
@@ -1109588,9 +1108714,7 @@
     "conceptId": "INSECT",
     "literalMeaning": "yabani arı",
     "ipa": "/[File:гу177губгъуэбжьэхуц.ogg/",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "form": "губгъуэгъашэ",
@@ -1112954,9 +1112078,7 @@
     "root": "хь",
     "rootForm": "хь",
     "dialect": "COMMON",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "form": "ещэкӀуэн",
@@ -1113061,9 +1112183,7 @@
     "root": "ж",
     "rootForm": "ж",
     "dialect": "COMMON",
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "form": "жажэ",
@@ -1114561,9 +1113681,7 @@
     "root": "з",
     "rootForm": "з",
     "dialect": "COMMON",
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "form": "зэӀэбэкӀыжын",
@@ -1114823,13 +1113941,13 @@
     "rootId": "R-XU",
     "conceptId": "CATCH",
     "partOfSpeech": "VERB",
-    "rootIds": [],
+    "rootIds": [
+      "R-XHW"
+    ],
     "root": "ху",
     "rootForm": "ху",
     "dialect": "COMMON",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "form": "зэкӀэщӀэуӀуэн",
@@ -1115152,13 +1114270,13 @@
     "rootId": "R-XU",
     "conceptId": "GO",
     "partOfSpeech": "VERB",
-    "rootIds": [],
+    "rootIds": [
+      "R-XHW"
+    ],
     "root": "ху",
     "rootForm": "ху",
     "dialect": "COMMON",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "form": "зэрешэкӀын",
@@ -1116243,9 +1115361,7 @@
     "root": "кӀ",
     "rootForm": "кӀ",
     "dialect": "COMMON",
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "form": "кӀэбдзыщхьэ",
@@ -1116400,9 +1115516,7 @@
     "conceptId": "CATCH",
     "partOfSpeech": "VERB",
     "dialect": "COMMON",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "form": "кӀэнтхъ",
@@ -1116552,13 +1115666,13 @@
     "wordFamilyId": "WF-XU",
     "rootId": "R-XU",
     "conceptId": "ADV_LOSSLESS",
-    "rootIds": [],
+    "rootIds": [
+      "R-XHW"
+    ],
     "root": "ху",
     "rootForm": "ху",
     "dialect": "COMMON",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "form": "кӀэрыхуныгъэ",
@@ -1116578,13 +1115692,13 @@
     "wordFamilyId": "WF-XU",
     "rootId": "R-XU",
     "conceptId": "LOSS",
-    "rootIds": [],
+    "rootIds": [
+      "R-XHW"
+    ],
     "root": "ху",
     "rootForm": "ху",
     "dialect": "COMMON",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "form": "кӀэщӀэпщӀыкӀын",
@@ -1117540,9 +1116654,7 @@
     "root": "щ",
     "rootForm": "щ",
     "dialect": "COMMON",
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "form": "къибзын",
@@ -1117910,9 +1117022,7 @@
     "root": "щ",
     "rootForm": "щ",
     "dialect": "COMMON",
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "form": "къыгуэвыкӀын",
@@ -1118191,13 +1117301,13 @@
     "rootId": "R-XU",
     "conceptId": "BLOW_FROM_BEHIND_STH",
     "partOfSpeech": "VERB",
-    "rootIds": [],
+    "rootIds": [
+      "R-XHW"
+    ],
     "root": "ху",
     "rootForm": "ху",
     "dialect": "COMMON",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "form": "къыкъуэпсын",
@@ -1118328,9 +1117438,7 @@
     "root": "щ",
     "rootForm": "щ",
     "dialect": "COMMON",
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "form": "къыпыжыпӀэ",
@@ -1118411,9 +1117519,7 @@
     "root": "къыру",
     "rootForm": "къыру",
     "dialect": "COMMON",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "form": "къырымщокъал",
@@ -1120661,9 +1119767,7 @@
     "root": "н",
     "rootForm": "н",
     "dialect": "COMMON",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "form": "напэлъагъу",
@@ -1120775,9 +1119879,7 @@
     "root": "нарт",
     "rootForm": "нарт",
     "dialect": "COMMON",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "form": "нартыхушыдзэ",
@@ -1120806,9 +1119908,7 @@
     "root": "нарт",
     "rootForm": "нарт",
     "dialect": "COMMON",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "form": "натӀащхьэ",
@@ -1121621,9 +1120721,7 @@
     "ipa": "/гу/",
     "rootId": "R-NE-VISION",
     "conceptId": "EYE",
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "form": "нэхуагъ",
@@ -1123675,9 +1122773,7 @@
     "rootId": "R-X",
     "conceptId": "HONOR",
     "dialect": "COMMON",
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "form": "пхъэдзых",
@@ -1126367,9 +1125463,7 @@
     "root": "уас",
     "rootForm": "уас",
     "dialect": "COMMON",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "form": "уафэпшэ",
@@ -1126598,9 +1125692,7 @@
     "root": "удз",
     "rootForm": "удз",
     "dialect": "COMMON",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "form": "удостоверенэ",
@@ -1127343,9 +1126435,7 @@
     "rootId": "R-KHUZH",
     "conceptId": "DEGREE",
     "dialect": "COMMON",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "form": "хуфӀэгъэжын",
@@ -1128165,9 +1127255,7 @@
     "rootId": "R-HAE",
     "conceptId": "CARTRIDGE",
     "dialect": "COMMON",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "form": "хьэкъкӀэ",
@@ -1130554,9 +1129642,7 @@
     "root": "щ",
     "rootForm": "щ",
     "dialect": "COMMON",
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "form": "щӀ",
@@ -1130711,9 +1129797,7 @@
     "rootId": "R-SH1Y",
     "conceptId": "TEN",
     "dialect": "COMMON",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "form": "щӀыбыяу",
@@ -1130969,9 +1130053,7 @@
     "conceptId": "KNOW",
     "partOfSpeech": "VERB",
     "dialect": "COMMON",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "form": "щӀэщӀауэ",
@@ -1131049,9 +1130131,7 @@
     "root": "щ",
     "rootForm": "щ",
     "dialect": "COMMON",
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "form": "щихуфӀыцӀэ",
@@ -1145276,9 +1144356,7 @@
     "legacyIds": [
       "L-VERIFIED-ехуэкӀын"
     ],
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-EKHUEK-YN",
@@ -1145388,9 +1144466,7 @@
     "legacyIds": [
       "L-VERIFIED-ещэжын"
     ],
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-EHELEK-YN",
@@ -1146173,7 +1145249,7 @@
   {
     "id": "L-UE-PRON",
     "form": "уэ",
-    "ipa": "wɐ",
+    "ipa": "/wɐ/",
     "literalMeaning": "sen (2. tekil şahıs zamiri)",
     "partOfSpeech": "pronoun",
     "translations": {
@@ -1148582,9 +1147658,7 @@
     "ipa": "/ху/",
     "wordFamilyId": "WF-KHUE",
     "rootId": "R-KHUE",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-UZY",
@@ -1149355,9 +1148429,7 @@
     "wordFamilyId": "WF-KHUN",
     "rootId": "R-KHUN",
     "partOfSpeech": "VERB",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-TYAT",
@@ -1151007,9 +1150079,7 @@
     "dialect": "KBD",
     "etymologyType": "native",
     "rootId": "R-SHCHYE",
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-SHCHYE-LEAD-1",
@@ -1151038,9 +1150108,7 @@
     "dialect": "KBD",
     "etymologyType": "native",
     "rootId": "R-SHCHYE",
-    "legacyRootForms": [
-      "щ"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-SHCHYE-HUNDRED-1",
@@ -1151762,7 +1150830,7 @@
     "partOfSpeech": "pronoun",
     "notes": "Soru zamiri. щхьэ (baş) ismiyle eşsesli; ayrı kök. Bkz. Adıgece щхьэ 'neden'.",
     "corpusFrequency": 0,
-    "ipa": "ɕħɐ",
+    "ipa": "/ɕħɐ/",
     "rootIds": [
       "R-SHHYE",
       "R-SHCHH"
@@ -1152610,7 +1151678,7 @@
     "partOfSpeech": "noun",
     "notes": "Bileşik: щхьэ (baş) + лъакъуэ (ayak). Vücut bütünü.",
     "corpusFrequency": 0,
-    "ipa": "ɕħɐ'ɬɑ:qʹʷɐ",
+    "ipa": "/ɕħɐ'ɬɑ:qʹʷɐ/",
     "rootIds": [
       "R-SHHYE",
       "R-SHCHH",
@@ -1152952,7 +1152020,7 @@
     "rootId": "R-AMU",
     "root": "аму",
     "rootForm": "аму",
-    "ipa": "ɐ'mu:",
+    "ipa": "/ɐ'mu:/",
     "dialect": "COMMON"
   },
   {
@@ -1152987,7 +1152055,7 @@
     "rootId": "R-ANDEGUR",
     "root": "андэгур",
     "rootForm": "андэгур",
-    "ipa": "ɐndɐ'gʷǝrɐ",
+    "ipa": "/ɐndɐ'gʷǝrɐ/",
     "dialect": "COMMON"
   },
   {
@@ -1153088,12 +1152156,10 @@
     "rootId": "R-ASH",
     "root": "аш",
     "rootForm": "аш",
-    "ipa": "ɐ'ʂɐχʷ",
+    "ipa": "/ɐ'ʂɐχʷ/",
     "dialect": "COMMON",
     "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2f/%D0%90413%D0%B0%D1%88%D1%8D%D1%85%D1%83.ogg",
-    "legacyRootForms": [
-      "ху"
-    ]
+    "legacyRootForms": []
   },
   {
     "id": "L-BITKI-00012",
@@ -1153160,7 +1152226,7 @@
     "rootId": "R-BAD",
     "root": "бад",
     "rootForm": "бад",
-    "ipa": "bɑ:d",
+    "ipa": "/bɑ:d/",
     "dialect": "COMMON"
   },
   {
@@ -1153295,7 +1152361,7 @@
     "rootId": "R-BALYJ",
     "root": "балыдж",
     "rootForm": "балыдж",
-    "ipa": "bɐɮǝˈdᶎɐχʷ",
+    "ipa": "/bɐɮǝˈdᶎɐχʷ/",
     "dialect": "COMMON"
   },
   {
@@ -1153364,7 +1152430,7 @@
     "rootId": "R-BALYJ",
     "root": "балыдж",
     "rootForm": "балыдж",
-    "ipa": "bɐɮǝˈdᶎɐʂxʷɐ",
+    "ipa": "/bɐɮǝˈdᶎɐʂxʷɐ/",
     "dialect": "COMMON"
   },
   {
@@ -1153401,7 +1152467,7 @@
     "rootId": "R-BAN",
     "root": "бан",
     "rootForm": "бан",
-    "ipa": "bɐnɐˈdɐgʷ",
+    "ipa": "/bɐnɐˈdɐgʷ/",
     "dialect": "COMMON"
   },
   {
@@ -1153568,7 +1152634,7 @@
     "rootId": "R-BEREZHYEY",
     "root": "бэрэжьей",
     "rootForm": "бэрэжьей",
-    "ipa": "bɐrɐ'ʑe:j",
+    "ipa": "/bɐrɐ'ʑe:j/",
     "dialect": "COMMON",
     "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9c/%D0%91201%D0%B1%D1%8D%D1%80%D1%8D%D0%B6%D1%8C%D0%B5%D0%B9.ogg"
   },
@@ -1153670,7 +1152736,7 @@
     "partOfSpeech": "VERB",
     "root": "бгъ",
     "rootForm": "бгъ",
-    "ipa": "bʁɐn",
+    "ipa": "/bʁɐn/",
     "dialect": "COMMON",
     "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4d/%D0%91350%D0%B1%D0%B3%D1%8A%D1%8D%D0%BD.ogg"
   },
@@ -1153808,7 +1152874,7 @@
     "rootId": "R-BZH",
     "root": "бж",
     "rootForm": "бж",
-    "ipa": "bᶎe:j",
+    "ipa": "/bᶎe:j/",
     "dialect": "COMMON",
     "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/2/22/%D0%91526%D0%B1%D0%B6%D0%B5%D0%B9.ogg"
   },
@@ -1153911,7 +1152977,7 @@
     "rootId": "R-BLANE",
     "root": "блан",
     "rootForm": "блан",
-    "ipa": "bɮɐnɐˈwǝqʹ",
+    "ipa": "/bɮɐnɐˈwǝqʹ/",
     "dialect": "COMMON",
     "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/7/76/%D0%91698%D0%B1%D0%BB%D0%B0%D0%BD%D1%8D%D1%83%D0%BA%D1%8A.ogg",
     "legacyRootForms": []
@@ -1153981,7 +1153047,7 @@
     "rootId": "R-BYYAU",
     "root": "быяу",
     "rootForm": "быяу",
-    "ipa": "bǝˈja:w",
+    "ipa": "/bǝˈja:w/",
     "dialect": "COMMON"
   },
   {
@@ -1154017,7 +1153083,7 @@
     "rootId": "R-VAGHU",
     "root": "вагъу",
     "rootForm": "вагъу",
-    "ipa": "vɐˈʁʷɐpɬ",
+    "ipa": "/vɐˈʁʷɐpɬ/",
     "dialect": "COMMON"
   },
   {
@@ -1154386,7 +1153452,7 @@
     "partOfSpeech": "VERB",
     "root": "гу",
     "rootForm": "гу",
-    "ipa": "gʷu:wǝz'ɣǝn",
+    "ipa": "/gʷu:wǝz'ɣǝn/",
     "dialect": "COMMON"
   },
   {
@@ -1154590,7 +1153656,7 @@
     "rootId": "R-GU_1",
     "root": "гъуэгу",
     "rootForm": "гъуэгу",
-    "ipa": "ʁʷɐgʷɐnɐ'qʹɑ:ʂɐ",
+    "ipa": "/ʁʷɐgʷɐnɐ'qʹɑ:ʂɐ/",
     "dialect": "COMMON"
   },
   {
@@ -1154661,7 +1153727,7 @@
     "rootId": "R-D",
     "root": "д",
     "rootForm": "д",
-    "ipa": "dɐ'ʑe:j",
+    "ipa": "/dɐ'ʑe:j/",
     "dialect": "COMMON"
   },
   {
@@ -1154828,7 +1153894,7 @@
     "rootId": "R-DZHED",
     "root": "джэд",
     "rootForm": "джэд",
-    "ipa": "dᶎɐ'dǝɬɐ",
+    "ipa": "/dᶎɐ'dǝɬɐ/",
     "dialect": "COMMON"
   },
   {
@@ -1154995,7 +1154061,7 @@
     "rootId": "R-DJADU",
     "root": "джэш",
     "rootForm": "джэш",
-    "ipa": "dᶎɐʂ",
+    "ipa": "/dᶎɐʂ/",
     "dialect": "COMMON"
   },
   {
@@ -1155031,7 +1154097,7 @@
     "rootId": "R-DJADU",
     "root": "джэш",
     "rootForm": "джэш",
-    "ipa": "dᶎɐʂdɐ'ᶎe:j",
+    "ipa": "/dᶎɐʂdɐ'ᶎe:j/",
     "dialect": "COMMON"
   },
   {
@@ -1155100,7 +1154166,7 @@
     "rootId": "R-DZEL",
     "root": "дзэл",
     "rootForm": "дзэл",
-    "ipa": "dzɐɮ'dɐgʷ",
+    "ipa": "/dzɐɮ'dɐgʷ/",
     "dialect": "COMMON"
   },
   {
@@ -1155269,7 +1154335,7 @@
     "rootId": "R-ZHAM",
     "root": "жэм",
     "rootForm": "жэм",
-    "ipa": "ᶎɐm'bzɐgʷ",
+    "ipa": "/ᶎɐm'bzɐgʷ/",
     "dialect": "COMMON"
   },
   {
@@ -1155372,7 +1154438,7 @@
     "rootId": "R-ZHYG",
     "root": "жыг",
     "rootForm": "жыг",
-    "ipa": "ᶎǝɣ'de:ɮɐ",
+    "ipa": "/ᶎǝɣ'de:ɮɐ/",
     "dialect": "COMMON"
   },
   {
@@ -1155409,7 +1154475,7 @@
     "rootId": "R-ZHYG",
     "root": "жыг",
     "rootForm": "жыг",
-    "ipa": "ᶎǝɣ'kʷǝʁʷ",
+    "ipa": "/ᶎǝɣ'kʷǝʁʷ/",
     "dialect": "COMMON"
   },
   {
@@ -1155609,7 +1154675,7 @@
     "rootId": "R-ZHUJAL",
     "root": "жьуджал",
     "rootForm": "жьуджал",
-    "ipa": "ʑu:'dᶎɑ:ɮɐ",
+    "ipa": "/ʑu:'dᶎɑ:ɮɐ/",
     "dialect": "COMMON"
   },
   {
@@ -1155710,7 +1154776,7 @@
     "rootId": "R-ZERYB",
     "root": "зэрыб",
     "rootForm": "зэрыб",
-    "ipa": "zɐ'rǝb",
+    "ipa": "/zɐ'rǝb/",
     "dialect": "COMMON"
   },
   {
@@ -1155778,7 +1154844,7 @@
     "rootId": "R-ZERYJYEY",
     "root": "зэрыджей",
     "rootForm": "зэрыджей",
-    "ipa": "zɐrǝ'dᶎe:j",
+    "ipa": "/zɐrǝ'dᶎe:j/",
     "dialect": "COMMON"
   },
   {
@@ -1155914,7 +1154980,7 @@
     "rootId": "R-KU",
     "root": "ку",
     "rootForm": "ку",
-    "ipa": "'kʷǝʁʷɐ",
+    "ipa": "/'kʷǝʁʷɐ/",
     "dialect": "COMMON"
   },
   {
@@ -1156214,7 +1155280,7 @@
     "tr": "КЪАКЪИЙ КЪАКӀИЙ еплъ &lt;&lt;джэнчхъу­рай&gt;&gt; NOHUT",
     "root": "къакъий",
     "rootForm": "къакъий",
-    "ipa": "qʹɐ'qʹi:j",
+    "ipa": "/qʹɐ'qʹi:j/",
     "dialect": "COMMON"
   },
   {
@@ -1156283,7 +1155349,7 @@
     "rootId": "R-QHAMYL",
     "root": "къамыл",
     "rootForm": "къамыл",
-    "ipa": "qʹɐmǝ'ɮǝχʷ",
+    "ipa": "/qʹɐmǝ'ɮǝχʷ/",
     "dialect": "COMMON"
   },
   {
@@ -1156318,7 +1155384,7 @@
     "rootId": "R-QHANZIDZ",
     "root": "къанзидз",
     "rootForm": "къанзидз",
-    "ipa": "qʹɐ'zi:dzɐ",
+    "ipa": "/qʹɐ'zi:dzɐ/",
     "dialect": "COMMON"
   },
   {
@@ -1156650,7 +1155716,7 @@
     "partOfSpeech": "VERB",
     "root": "къэрмэн",
     "rootForm": "къэрмэн",
-    "ipa": "qʹɐ'rmɐn",
+    "ipa": "/qʹɐ'rmɐn/",
     "dialect": "COMMON"
   },
   {
@@ -1156784,7 +1155850,7 @@
     "rootId": "R-SHX",
     "root": "шх",
     "rootForm": "шх",
-    "ipa": "qʹɐ'ʂxǝħ",
+    "ipa": "/qʹɐ'ʂxǝħ/",
     "dialect": "COMMON"
   },
   {
@@ -1157317,7 +1156383,7 @@
     "rootId": "R-KQHU",
     "root": "кхъу",
     "rootForm": "кхъу",
-    "ipa": "qʹχʷɐnǝ'ʑ'ǝχʷ",
+    "ipa": "/qʹχʷɐnǝ'ʑ'ǝχʷ/",
     "dialect": "KBD"
   },
   {
@@ -1157584,7 +1156650,7 @@
     "rootId": "R-MEZ",
     "root": "мэз",
     "rootForm": "мэз",
-    "ipa": "mɐzˈdzɐɮ",
+    "ipa": "/mɐzˈdzɐɮ/",
     "dialect": "COMMON"
   },
   {
@@ -1157719,7 +1156785,7 @@
     "rootId": "R-MEQHU",
     "root": "мэкъу",
     "rootForm": "мэкъу",
-    "ipa": "mɐˈqʹʷǝt",
+    "ipa": "/mɐˈqʹʷǝt/",
     "dialect": "COMMON"
   },
   {
@@ -1157756,7 +1156822,7 @@
     "rootId": "R-MEL",
     "root": "мэл",
     "rootForm": "мэл",
-    "ipa": "mɐɮˈwǝdz",
+    "ipa": "/mɐɮˈwǝdz/",
     "dialect": "COMMON"
   },
   {
@@ -1157827,7 +1156893,7 @@
     "partOfSpeech": "VERB",
     "root": "мэл",
     "rootForm": "мэл",
-    "ipa": "mɐɮǝχʷɐsɐˈbǝn",
+    "ipa": "/mɐɮǝχʷɐsɐˈbǝn/",
     "dialect": "COMMON"
   },
   {
@@ -1158062,7 +1157128,7 @@
     "rootId": "R-N",
     "root": "н",
     "rootForm": "н",
-    "ipa": "nɐ'pɐɮɐ",
+    "ipa": "/nɐ'pɐɮɐ/",
     "dialect": "COMMON"
   },
   {
@@ -1158330,7 +1157396,7 @@
     "partOfSpeech": "VERB",
     "root": "пкъ",
     "rootForm": "пкъ",
-    "ipa": "pʹqʹǝwɐ'ɣǝn",
+    "ipa": "/pʹqʹǝwɐ'ɣǝn/",
     "dialect": "COMMON"
   },
   {
@@ -1158431,7 +1157497,7 @@
     "rootId": "R-PKHEGULH",
     "root": "пхъэгулъ",
     "rootForm": "пхъэгулъ",
-    "ipa": "pχɐgʷǝ'ɬe:j",
+    "ipa": "/pχɐgʷǝ'ɬe:j/",
     "dialect": "COMMON"
   },
   {
@@ -1158500,7 +1157566,7 @@
     "rootId": "R-PKH",
     "root": "пхъ",
     "rootForm": "пхъ",
-    "ipa": "pχɐ'ɕɑ:bɐ",
+    "ipa": "/pχɐ'ɕɑ:bɐ/",
     "dialect": "COMMON"
   },
   {
@@ -1158568,7 +1157634,7 @@
     "rootId": "R-PYZH",
     "root": "пыжь",
     "rootForm": "пыжь",
-    "ipa": "pǝ'ʑe:j",
+    "ipa": "/pǝ'ʑe:j/",
     "dialect": "COMMON"
   },
   {
@@ -1159002,7 +1158068,7 @@
     "rootId": "R-TH",
     "root": "тхь",
     "rootForm": "тхь",
-    "ipa": "tħɐʁɐgʷǝˈrǝm",
+    "ipa": "/tħɐʁɐgʷǝˈrǝm/",
     "dialect": "COMMON"
   },
   {
@@ -1159140,7 +1158206,7 @@
     "rootId": "R-UDZ",
     "root": "удз",
     "rootForm": "удз",
-    "ipa": "wǝdzˈbɑ:mɐ",
+    "ipa": "/wǝdzˈbɑ:mɐ/",
     "dialect": "COMMON"
   },
   {
@@ -1159406,7 +1158472,7 @@
     "rootId": "R-H",
     "root": "хь",
     "rootForm": "хь",
-    "ipa": "ħɐ",
+    "ipa": "/ħɐ/",
     "dialect": "COMMON"
   },
   {
@@ -1159672,7 +1158738,7 @@
     "rootId": "R-H",
     "root": "хь",
     "rootForm": "хь",
-    "ipa": "ħɐ'qʹǝrʂ",
+    "ipa": "/ħɐ'qʹǝrʂ/",
     "dialect": "COMMON",
     "legacyRootForms": [
       "къырш"
@@ -1159842,7 +1158908,7 @@
     "rootId": "R-KHURMYZH",
     "root": "хъурмыж",
     "rootForm": "хъурмыж",
-    "ipa": "χʷǝrˈmǝᶎ",
+    "ipa": "/χʷǝrˈmǝᶎ/",
     "dialect": "COMMON"
   },
   {
@@ -1159877,7 +1158943,7 @@
     "rootId": "R-KHURSAN",
     "root": "хъурсан",
     "rootForm": "хъурсан",
-    "ipa": "χʷǝrˈsɑ:nɐ",
+    "ipa": "/χʷǝrˈsɑ:nɐ/",
     "dialect": "COMMON"
   },
   {
@@ -1160375,7 +1159441,7 @@
     "partOfSpeech": "VERB",
     "root": "шх",
     "rootForm": "шх",
-    "ipa": "ʂxɐ'ɣǝn",
+    "ipa": "/ʂxɐ'ɣǝn/",
     "dialect": "COMMON"
   },
   {
@@ -1161864,7 +1160930,7 @@
   {
     "id": "L-IWORYBZHEW",
     "form": "Ӏурыбжэу",
-    "ipa": "[ʔʷǝ'rǝbᶎɐw]",
+    "ipa": "/[ʔʷǝ'rǝbᶎɐw]/",
     "literalMeaning": "ağızdan sayarak",
     "meaning": "ezbere, ezberden, bakmadan",
     "partOfSpeech": "adverb",
