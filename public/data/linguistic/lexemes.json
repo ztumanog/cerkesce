@@ -133491,13 +133491,17 @@
     "corpusFrequency": 24,
     "dialectVariants": {
       "adyghe": "угъоин",
-      "kabardian": ""
+      "kabardian": "угъуэин"
     },
     "notes": "Corpus v1.0 (freq: 24, lang: ady, source: 0.Ady-Ady_AIG)",
     "isLemma": true,
     "translations": {
       "ru": "имасд. собра",
-      "tr": "derlemek",
+      "tr": [
+        "derlemek",
+        "toplamak",
+        "biriktirmek"
+      ],
       "ar": "يجمع، يلم، يلملم",
       "en": "collect; gather; accumulate; toplamak"
     },
@@ -1161047,7 +1161051,8 @@
         "yararsız",
         "beyhude"
       ]
-    }
+    },
+    "conceptId": "VAIN_USELESS"
   },
   {
     "id": "L-ZYUSHCHYHAN",
@@ -1161064,7 +1161069,8 @@
         "bulaşmak",
         "yanaşmak"
       ]
-    }
+    },
+    "conceptId": "CONTAMINATE_APPROACH"
   },
   {
     "id": "L-ZYUSHCHYHEN",
@@ -1161081,7 +1161087,8 @@
         "bulaşmak",
         "yanaşmak"
       ]
-    }
+    },
+    "conceptId": "CONTAMINATE_APPROACH"
   },
   {
     "id": "L-PYSHEN",
@@ -1161098,7 +1161105,8 @@
         "bağlamak",
         "iliştirmek"
       ]
-    }
+    },
+    "conceptId": "TIE_ATTACH"
   },
   {
     "id": "L-PYSHCHEN",
@@ -1161115,7 +1161123,8 @@
         "bağlamak",
         "iliştirmek"
       ]
-    }
+    },
+    "conceptId": "TIE_ATTACH"
   },
   {
     "id": "L-SHYPKQENYGH",
@@ -1161132,7 +1161141,8 @@
         "ciddiyet",
         "doğruluk"
       ]
-    }
+    },
+    "conceptId": "SERIOUSNESS_TRUTH"
   },
   {
     "id": "L-SHCHYPKQENYGHE",
@@ -1161149,7 +1161159,8 @@
         "ciddiyet",
         "doğruluk"
       ]
-    }
+    },
+    "conceptId": "SERIOUSNESS_TRUTH"
   },
   {
     "id": "L-CHEGHEON",
@@ -1161166,6 +1161177,100 @@
         "tütsülemek",
         "altına sokmak"
       ]
-    }
+    },
+    "conceptId": "FUMIGATE_IMMERSE"
+  },
+  {
+    "id": "L-UGHUEIN",
+    "form": "угъуэин",
+    "dialect": "KBD",
+    "partOfSpeech": "verb",
+    "isLemma": true,
+    "dialectVariants": {
+      "adyghe": "угъоин",
+      "kabardian": "угъуэин"
+    },
+    "translations": {
+      "tr": [
+        "derlemek",
+        "toplamak",
+        "biriktirmek"
+      ]
+    },
+    "conceptId": "GATHER_COLLECT"
+  },
+  {
+    "id": "L-ZEFEHYSYN",
+    "form": "зэфэхьысын",
+    "dialect": "ADY",
+    "partOfSpeech": "verb",
+    "isLemma": true,
+    "dialectVariants": {
+      "adyghe": "зэфэхьысын",
+      "kabardian": "зэхуэхьысын"
+    },
+    "translations": {
+      "tr": [
+        "derlemek",
+        "toplamak",
+        "bir araya getirmek"
+      ]
+    },
+    "conceptId": "GATHER_COLLECT"
+  },
+  {
+    "id": "L-ZEHUEHYSYN",
+    "form": "зэхуэхьысын",
+    "dialect": "KBD",
+    "partOfSpeech": "verb",
+    "isLemma": true,
+    "dialectVariants": {
+      "adyghe": "зэфэхьысын",
+      "kabardian": "зэхуэхьысын"
+    },
+    "translations": {
+      "tr": [
+        "derlemek",
+        "toplamak",
+        "bir araya getirmek"
+      ]
+    },
+    "conceptId": "GATHER_COLLECT"
+  },
+  {
+    "id": "L-FEGUSAGH",
+    "form": "фэгусагъ",
+    "dialect": "ADY",
+    "partOfSpeech": "adj",
+    "isLemma": true,
+    "dialectVariants": {
+      "adyghe": "фэгусагъ",
+      "kabardian": "хуэгуса"
+    },
+    "translations": {
+      "tr": [
+        "dargın",
+        "gücenmiş"
+      ]
+    },
+    "conceptId": "OFFENDED_SULKING"
+  },
+  {
+    "id": "L-HUEGUSA",
+    "form": "хуэгуса",
+    "dialect": "KBD",
+    "partOfSpeech": "adj",
+    "isLemma": true,
+    "dialectVariants": {
+      "adyghe": "фэгусагъ",
+      "kabardian": "хуэгуса"
+    },
+    "translations": {
+      "tr": [
+        "dargın",
+        "gücenmiş"
+      ]
+    },
+    "conceptId": "OFFENDED_SULKING"
   }
 ]
