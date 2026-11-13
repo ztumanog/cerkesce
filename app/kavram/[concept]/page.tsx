@@ -498,7 +498,7 @@ export default async function ConceptDetailPage({ params }: PageProps) {
       )}
 
       {graphData && graphData.nodes.length > 0 && (
-        <ConceptGraphCanvas data={graphData} rootLabel={rootNodeTitle} />
+        <ConceptGraphCanvas data={graphData} rootLabel={rootNodeTitle} conceptId={conceptKey} />
       )}
 
       {neighborConcepts.length > 0 && (

@@ -59,6 +59,7 @@ export default function RootLayout({
               </Link>
               <Link href="/sozluk" className="hover:text-emerald-400 transition-colors">Sözlük</Link>
               <Link href="/kavramlar" className="hover:text-emerald-400 transition-colors">Kavramlar</Link>
+              <Link href="/kavram-agi" className="hover:text-emerald-400 transition-colors">Kavram Ağı</Link>
               <Link href="/sozluk/morphology" className="hover:text-emerald-400 transition-colors">Morfoloji</Link>
               <Link href="/sozluk/converter" className="hover:text-emerald-400 transition-colors">Converter</Link>
               <Link href="/sozluk/favoriler" className="hover:text-emerald-400 transition-colors">Favoriler</Link>
