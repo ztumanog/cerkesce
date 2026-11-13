@@ -1,8 +1,12 @@
 import { NextResponse } from 'next/server';
 import fs from 'fs';
 import path from 'path';
+import { verifyCurationAccess } from '@/lib/security/curationGuard';
 
 export async function POST(req: Request) {
+  const denied = verifyCurationAccess(req);
+  if (denied) return denied;
+
   try {
     const { lexemeIds, targetFamilyId, targetRootId } = await req.json();
 
@@ -19,6 +23,13 @@ export async function POST(req: Request) {
     }
 
     const rawData = fs.readFileSync(filePath, 'utf-8');
+
+    // Yazma öncesi otomatik yedek
+    const backupDir = path.join(process.cwd(), 'public', 'data', 'linguistic', '_backups');
+    fs.mkdirSync(backupDir, { recursive: true });
+    const stamp = new Date().toISOString().replace(/[:.]/g, '-');
+    fs.writeFileSync(path.join(backupDir, `lexemes_batch_${stamp}.json`), rawData, 'utf-8');
+
     let lexemes = JSON.parse(rawData);
     const isArray = Array.isArray(lexemes);
     const list = isArray ? lexemes : lexemes.lexemes ?? [];
@@ -32,7 +43,7 @@ export async function POST(req: Request) {
         return {
           ...item,
           wordFamilyId: targetFamilyId,
-          ...(targetRootId ? { rootId: targetRootId } : {}),
+          ...(targetRootId ? { rootIds: [targetRootId], rootId: targetRootId } : {}),
         };
       }
       return item;

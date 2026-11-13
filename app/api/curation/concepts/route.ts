@@ -1,9 +1,13 @@
+import { verifyCurationAccess } from '@/lib/security/curationGuard';
 // app/api/curation/concepts/route.ts
 import { NextResponse } from 'next/server';
 import fs from 'fs';
 import path from 'path';
 
-export async function GET() {
+export async function GET(req: Request) {
+  const denied = verifyCurationAccess(req);
+  if (denied) return denied;
+
   try {
     const lexPath = path.join(
       process.cwd(),

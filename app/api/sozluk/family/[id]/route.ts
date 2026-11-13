@@ -2,44 +2,87 @@ import { NextRequest, NextResponse } from 'next/server';
 import fs from 'fs';
 import path from 'path';
 
-let cachedLexemes: any[] = [];
-
-function loadLexemes() {
-  if (cachedLexemes.length > 0) return cachedLexemes;
-  const p = path.join(process.cwd(), 'public', 'data', 'linguistic', 'lexemes.json');
-  if (fs.existsSync(p)) {
-    cachedLexemes = JSON.parse(fs.readFileSync(p, 'utf-8'));
-  }
-  return cachedLexemes;
+function readJsonSafe(filePath: string) {
+  if (!fs.existsSync(filePath)) return null;
+  return JSON.parse(fs.readFileSync(filePath, 'utf-8'));
 }
 
 export async function GET(
-  req: NextRequest,
+  _req: NextRequest,
   { params }: { params: Promise<{ id: string }> }
 ) {
   try {
-    const { id } = await params;
-    const lexemes = loadLexemes();
+    const rawParams = await params;
+    const id = decodeURIComponent(rawParams.id || '').trim();
+    const dataDir = path.join(process.cwd(), 'public', 'data', 'linguistic');
 
-    const familyMembers = lexemes
-      .filter((l: any) => l.id === id)
+    const lexRaw = readJsonSafe(path.join(dataDir, 'lexemes.json'));
+    const lexemes: any[] = Array.isArray(lexRaw) ? lexRaw : lexRaw?.lexemes ?? [];
+
+    const wfRaw = readJsonSafe(path.join(dataDir, 'word_families.json'));
+    const families: any[] = Array.isArray(wfRaw) ? wfRaw : wfRaw?.families ?? wfRaw?.wordFamilies ?? [];
+    const familyMeta = families.find((f: any) => f.id === id || f.familyId === id) || null;
+
+    const rootsRaw = readJsonSafe(path.join(dataDir, 'roots.json'));
+    const rootsList: any[] = Array.isArray(rootsRaw) ? rootsRaw : rootsRaw?.roots ?? [];
+
+    const conceptTrRaw = readJsonSafe(path.join(dataDir, 'concept-tr.json')) || {};
+
+    const members = lexemes
+      .filter((l: any) => l.wordFamilyId === id)
       .map((l: any) => ({
         id: l.id,
-        form: l.form,
-        literalMeaning: l.literalMeaning,
-        partOfSpeech: l.partOfSpeech,
-        ipa: l.ipa,
-        conceptId: l.conceptId,
+        form: l.form || l.text || '',
+        literalMeaning: l.literalMeaning || '',
+        translations: l.translations || {},
+        partOfSpeech: l.partOfSpeech || null,
+        dialect: l.dialect || null,
+        ipa: l.ipa || null,
+        conceptId: l.conceptId || null,
+        rootIds: Array.isArray(l.rootIds) ? l.rootIds : [],
         corpusFrequency: l.corpusFrequency ?? 0,
       }));
 
+    // Bağlı Kökler (Root)
+    const rootIdSet = new Set<string>();
+    if (familyMeta?.rootId) rootIdSet.add(familyMeta.rootId);
+    if (Array.isArray(familyMeta?.rootIds)) familyMeta.rootIds.forEach((r: string) => rootIdSet.add(r));
+    members.forEach((m) => m.rootIds.forEach((r: string) => rootIdSet.add(r)));
+
+    const roots = Array.from(rootIdSet).map((rId) => {
+      const found = rootsList.find((r: any) => r.id === rId || r.rootId === rId);
+      return {
+        id: rId,
+        form: found?.form || found?.root || found?.headword || rId,
+        meaning: found?.meaning || found?.gloss || found?.translations?.tr || '',
+      };
+    });
+
+    // Bağlı Kavramlar (Concept)
+    const conceptMap = new Map<string, { id: string; labelTr: string; count: number }>();
+    for (const m of members) {
+      if (!m.conceptId) continue;
+      const cid = String(m.conceptId);
+      const existing = conceptMap.get(cid);
+      if (existing) {
+        existing.count += 1;
+      } else {
+        const trEntry = conceptTrRaw[cid] || conceptTrRaw[cid.toLowerCase()];
+        const labelTr = typeof trEntry === 'string' ? trEntry : trEntry?.tr || trEntry?.label || '';
+        conceptMap.set(cid, { id: cid, labelTr, count: 1 });
+      }
+    }
+
     return NextResponse.json({
       id,
-      members: familyMembers,
-      count: familyMembers.length,
+      family: familyMeta,
+      roots,
+      concepts: Array.from(conceptMap.values()).sort((a, b) => b.count - a.count),
+      members,
+      count: members.length,
     });
   } catch (error) {
-    console.error(error);
+    console.error('Family API hatası:', error);
     return NextResponse.json({ error: 'Sunucu hatası' }, { status: 500 });
   }
 }

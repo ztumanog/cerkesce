@@ -1,340 +1,181 @@
 'use client';
-import { useEffect, useState, useMemo } from 'react';
-import { useParams, useRouter } from 'next/navigation';
 
-const ITEMS_PER_PAGE = 50;
+import React, { useState, useEffect } from 'react';
+import { useParams } from 'next/navigation';
+import Link from 'next/link';
 
-export default function FamilyDetail() {
+export default function FamilyDetailPage() {
   const params = useParams();
-  const router = useRouter();
-  const id = params?.id as string;
-
-  const [lexemes, setLexemes] = useState<any[]>([]);
-  const [loading, setLoading] = useState<boolean>(true);
-  const [searchQuery, setSearchQuery] = useState<string>('');
-  const [currentPage, setCurrentPage] = useState<number>(1);
-
-  // Kürasyon Seçim Durumu
-  const [selectedIds, setSelectedIds] = useState<string[]>([]);
-  const [targetFamilyInput, setTargetFamilyInput] = useState<string>('');
-  const [saving, setSaving] = useState<boolean>(false);
-  const [notification, setNotification] = useState<string | null>(null);
-
-  const fetchLexemes = () => {
-    setLoading(true);
-    fetch('/data/linguistic/lexemes.json')
-      .then((r) => r.json())
-      .then((raw) => {
-        const lex = Array.isArray(raw) ? raw : raw.lexemes ?? [];
-        const filt = lex.filter((l: any) => l.wordFamilyId === id);
-        setLexemes(filt);
-      })
-      .catch((err) => console.error('Lexeme yükleme hatası:', err))
-      .finally(() => setLoading(false));
-  };
+  const id = decodeURIComponent(params.id as string);
+  const [data, setData] = useState<any>(null);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetchLexemes();
-    setSelectedIds([]);
+    setLoading(true);
+    fetch(`/api/sozluk/family/${encodeURIComponent(id)}`)
+      .then((res) => res.json())
+      .then((d) => setData(d))
+      .catch((err) => console.error('Aile verisi yüklenemedi:', err))
+      .finally(() => setLoading(false));
   }, [id]);
 
-  // Arama filtresi
-  const filteredLexemes = useMemo(() => {
-    if (!searchQuery.trim()) return lexemes;
-    const q = searchQuery.toLowerCase().trim();
-    return lexemes.filter((m: any) => {
-      const form = (m.form || m.text || '').toLowerCase();
-      const tr = (m.translations?.tr || '').toLowerCase();
-      const lexId = (m.id || '').toLowerCase();
-      return form.includes(q) || tr.includes(q) || lexId.includes(q);
-    });
-  }, [lexemes, searchQuery]);
-
-  useEffect(() => {
-    setCurrentPage(1);
-  }, [searchQuery]);
-
-  const totalPages = Math.ceil(filteredLexemes.length / ITEMS_PER_PAGE) || 1;
-  const paginatedLexemes = useMemo(() => {
-    const start = (currentPage - 1) * ITEMS_PER_PAGE;
-    return filteredLexemes.slice(start, start + ITEMS_PER_PAGE);
-  }, [filteredLexemes, currentPage]);
-
-  // Seçim Yöneticisi
-  const toggleSelectAllPage = () => {
-    const pageIds = paginatedLexemes.map((l) => l.id);
-    const allSelected = pageIds.every((id) => selectedIds.includes(id));
-    if (allSelected) {
-      setSelectedIds((prev) => prev.filter((id) => !pageIds.includes(id)));
-    } else {
-      setSelectedIds((prev) => Array.from(new Set([...prev, ...pageIds])));
-    }
-  };
-
-  const toggleSelectOne = (lexId: string) => {
-    setSelectedIds((prev) =>
-      prev.includes(lexId) ? prev.filter((i) => i !== lexId) : [...prev, lexId]
+  if (loading) {
+    return (
+      <div className="max-w-5xl mx-auto p-10 text-center text-slate-500">
+        Kelime ailesi yükleniyor...
+      </div>
     );
-  };
+  }
 
-  // Toplu Aileye Taşıma
-  const handleBatchAssign = async () => {
-    if (!targetFamilyInput.trim()) {
-      alert('Lütfen hedef Aile ID (ör. WF-NESYN, WF-DELHYN) girin.');
-      return;
-    }
-    if (selectedIds.length === 0) {
-      alert('Lütfen taşınacak en az 1 kelime seçin.');
-      return;
-    }
+  if (!data || data.error) {
+    return (
+      <div className="max-w-5xl mx-auto p-10 text-center">
+        <p className="text-red-500 font-semibold mb-4">
+          {data?.error || 'Kelime ailesi bulunamadı.'}
+        </p>
+        <Link href="/sozluk" className="text-emerald-600 underline text-sm">
+          ← Sözlüğe Dön
+        </Link>
+      </div>
+    );
+  }
 
-    setSaving(true);
-    try {
-      const res = await fetch('/api/curation/batch-update', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          lexemeIds: selectedIds,
-          targetFamilyId: targetFamilyInput.trim().toUpperCase(),
-        }),
-      });
-
-      const data = await res.json();
-      if (res.ok && data.success) {
-        setNotification(data.message);
-        setSelectedIds([]);
-        setTargetFamilyInput('');
-        fetchLexemes();
-      } else {
-        alert(`Hata: ${data.error || 'İşlem başarısız'}`);
-      }
-    } catch (err: any) {
-      alert(`Sunucu Bağlantı Hatası: ${err.message}`);
-    } finally {
-      setSaving(false);
-      setTimeout(() => setNotification(null), 4000);
-    }
-  };
-
-  const isUnclearFamily = id === 'WF-UNCLEAR';
+  const root = data.root || null;
+  const members = data.members || [];
+  const concepts = Array.from(
+    new Set(members.map((m: any) => m.conceptId).filter(Boolean))
+  ) as string[];
 
   return (
-    <div style={{ padding: '20px', maxWidth: '1000px', margin: '0 auto', fontFamily: 'system-ui, sans-serif' }}>
-      {/* Üst Navigasyon */}
-      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '16px' }}>
-        <button
-          onClick={() => router.back()}
-          style={{
-            padding: '8px 16px',
-            borderRadius: '8px',
-            border: '1px solid #cbd5e1',
-            background: '#ffffff',
-            cursor: 'pointer',
-            fontWeight: '600',
-            fontSize: '14px',
-          }}
-        >
-          ← Geri
-        </button>
-        <span style={{ fontSize: '12px', color: '#64748b' }}>Kaynak: lexemes.json</span>
-      </div>
-
-      {/* Başlık ve Durum */}
-      <div style={{ display: 'flex', alignItems: 'baseline', gap: '12px', flexWrap: 'wrap' }}>
-        <h1 style={{ fontSize: '28px', fontWeight: '900', margin: 0, color: '#0f172a' }}>{id}</h1>
-        <span style={{ fontSize: '15px', color: '#64748b', fontWeight: '500' }}>
-          · Toplam {lexemes.length.toLocaleString('tr-TR')} lexeme
-        </span>
-      </div>
-
-      {/* Bildirim Paneli */}
-      {notification && (
-        <div
-          style={{
-            marginTop: '12px',
-            padding: '12px 16px',
-            background: '#dcfce7',
-            color: '#15803d',
-            borderRadius: '10px',
-            fontWeight: '600',
-            border: '1px solid #bbf7d0',
-          }}
-        >
-          ✓ {notification}
-        </div>
-      )}
-
-      {/* Toplu Kürasyon Modülü Barı */}
-      <div
-        style={{
-          marginTop: '16px',
-          padding: '14px 18px',
-          background: selectedIds.length > 0 ? '#eff6ff' : '#f8fafc',
-          borderRadius: '12px',
-          border: selectedIds.length > 0 ? '1.5px solid #3b82f6' : '1px solid #e2e8f0',
-          display: 'flex',
-          gap: '12px',
-          alignItems: 'center',
-          flexWrap: 'wrap',
-          transition: 'all 0.2s ease',
-        }}
-      >
-        <button
-          onClick={toggleSelectAllPage}
-          style={{
-            padding: '8px 12px',
-            borderRadius: '8px',
-            border: '1px solid #cbd5e1',
-            background: '#ffffff',
-            cursor: 'pointer',
-            fontSize: '13px',
-            fontWeight: '600',
-          }}
-        >
-          {paginatedLexemes.every((l) => selectedIds.includes(l.id)) ? 'Sayfa Seçimini Kaldır' : 'Sayfayı Tümünü Seç'}
-        </button>
-
-        <span style={{ fontSize: '13px', fontWeight: 'bold', color: '#1e40af' }}>
-          Seçilen: {selectedIds.length} kelime
-        </span>
-
-        <div style={{ display: 'flex', gap: '8px', marginLeft: 'auto', flex: '1', maxWidth: '400px' }}>
-          <input
-            type="text"
-            placeholder="Hedef Aile ID (Ör: WF-NESYN)..."
-            value={targetFamilyInput}
-            onChange={(e) => setTargetFamilyInput(e.target.value)}
-            style={{
-              flex: 1,
-              padding: '8px 12px',
-              borderRadius: '8px',
-              border: '1px solid #cbd5e1',
-              fontSize: '13px',
-              outline: 'none',
-            }}
-          />
-          <button
-            onClick={handleBatchAssign}
-            disabled={saving || selectedIds.length === 0}
-            style={{
-              padding: '8px 16px',
-              borderRadius: '8px',
-              border: 'none',
-              background: saving || selectedIds.length === 0 ? '#94a3b8' : '#2563eb',
-              color: '#ffffff',
-              cursor: saving || selectedIds.length === 0 ? 'not-allowed' : 'pointer',
-              fontWeight: '600',
-              fontSize: '13px',
-            }}
-          >
-            {saving ? 'Aktarılıyor...' : 'Taşı'}
-          </button>
-        </div>
-      </div>
-
-      {/* Arama Çubuğu */}
-      <div style={{ marginTop: '16px', display: 'flex', gap: '12px' }}>
-        <input
-          type="text"
-          placeholder="Kelime, Türkçe karşılık veya ID ile ara..."
-          value={searchQuery}
-          onChange={(e) => setSearchQuery(e.target.value)}
-          style={{
-            flex: 1,
-            padding: '10px 14px',
-            borderRadius: '10px',
-            border: '1px solid #cbd5e1',
-            fontSize: '14px',
-          }}
-        />
-      </div>
-
-      {/* Kelime Listesi */}
-      <div style={{ marginTop: '16px', display: 'flex', flexDirection: 'column', gap: '8px' }}>
-        {paginatedLexemes.map((m: any) => {
-          const isSelected = selectedIds.includes(m.id);
-          const hasConcept = !!m.conceptId;
-          return (
-            <div
-              key={m.id}
-              style={{
-                display: 'grid',
-                gridTemplateColumns: '40px 1.2fr 1fr 1fr 0.8fr 70px',
-                gap: '8px',
-                padding: '10px 14px',
-                borderRadius: '12px',
-                background: isSelected ? '#dbeafe' : hasConcept ? '#f0fdf4' : '#fffbe5',
-                borderLeft: `6px solid ${isSelected ? '#2563eb' : hasConcept ? '#22c55e' : '#facc15'}`,
-                borderTop: '1px solid #e2e8f0',
-                borderRight: '1px solid #e2e8f0',
-                borderBottom: '1px solid #e2e8f0',
-                alignItems: 'center',
-              }}
+    <div className="max-w-5xl mx-auto p-6 space-y-6">
+      {/* Hiyerarşik Gezinme Çubuğu: Sözlük › Kök › Kelime Ailesi */}
+      <nav className="flex flex-wrap items-center gap-2 text-xs font-medium text-slate-500 dark:text-slate-400">
+        <Link href="/sozluk" className="hover:text-emerald-600 transition">
+          Sözlük
+        </Link>
+        <span>›</span>
+        {root ? (
+          <>
+            <Link
+              href={`/sozluk/root/${encodeURIComponent(root.id)}`}
+              className="px-2 py-0.5 rounded bg-teal-50 dark:bg-teal-900/30 text-teal-700 dark:text-teal-300 hover:bg-teal-100 transition"
             >
-              <input
-                type="checkbox"
-                checked={isSelected}
-                onChange={() => toggleSelectOne(m.id)}
-                style={{ width: '18px', height: '18px', cursor: 'pointer' }}
-              />
-              <span style={{ fontWeight: 'bold', color: '#0f172a', fontSize: '15px' }}>{m.form || m.text}</span>
-              <span style={{ color: '#334155', fontSize: '14px' }}>{m.translations?.tr || ''}</span>
-              <span style={{ fontSize: '12px', color: hasConcept ? '#15803d' : '#854d0e' }}>
-                {m.conceptId || 'Kavramsız'}
-              </span>
-              <span style={{ fontFamily: 'monospace', fontSize: '11px', color: '#64748b' }}>{m.id}</span>
-              <button
-                onClick={() => router.push(`/admin/curation/${m.id}`)}
-                style={{
-                  padding: '4px 8px',
-                  borderRadius: '6px',
-                  border: '1px solid #cbd5e1',
-                  background: '#ffffff',
-                  cursor: 'pointer',
-                  fontSize: '11px',
-                }}
-              >
-                Düzenle
-              </button>
-            </div>
-          );
-        })}
+              🌱 Kök: {root.form || root.id}
+            </Link>
+            <span>›</span>
+          </>
+        ) : (
+          <>
+            <span className="text-slate-400">Kök Bağlantısı Yok</span>
+            <span>›</span>
+          </>
+        )}
+        <span className="px-2 py-0.5 rounded bg-indigo-50 dark:bg-indigo-900/30 text-indigo-700 dark:text-indigo-300 font-semibold">
+          🌿 Aile: {data.familyId}
+        </span>
+      </nav>
+
+      {/* Başlık Kartı */}
+      <div className="bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-2xl p-6 shadow-sm flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+        <div>
+          <div className="text-xs font-semibold uppercase tracking-wider text-indigo-600 dark:text-indigo-400 mb-1">
+            Kelime Ailesi (Word Family)
+          </div>
+          <h1 className="text-3xl font-bold text-slate-900 dark:text-white flex items-center gap-3">
+            <span>{data.headword || data.familyId}</span>
+            <span className="text-xs font-mono px-2.5 py-1 rounded-full bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300">
+              {data.familyId}
+            </span>
+          </h1>
+          {data.glossTr && (
+            <p className="text-sm text-slate-600 dark:text-slate-300 mt-1">
+              Temel Anlam: <strong>{data.glossTr}</strong>
+            </p>
+          )}
+          <p className="text-xs text-slate-500 dark:text-slate-400 mt-1">
+            Bu ailede toplam <strong>{members.length}</strong> türev madde kayıtlı.
+          </p>
+        </div>
+
+        <Link
+          href="/sozluk"
+          className="px-3 py-1.5 rounded-lg bg-slate-100 hover:bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-200 text-xs font-medium transition"
+        >
+          ← Sözlüğe Dön
+        </Link>
       </div>
 
-      {/* Sayfalama Kontrolleri */}
-      {!loading && totalPages > 1 && (
-        <div style={{ marginTop: '24px', display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '12px' }}>
-          <button
-            disabled={currentPage === 1}
-            onClick={() => setCurrentPage((p) => Math.max(p - 1, 1))}
-            style={{
-              padding: '8px 14px',
-              borderRadius: '8px',
-              border: '1px solid #cbd5e1',
-              background: currentPage === 1 ? '#f1f5f9' : '#ffffff',
-              cursor: currentPage === 1 ? 'not-allowed' : 'pointer',
-            }}
-          >
-            ← Önceki
-          </button>
-          <span style={{ fontSize: '13px' }}>
-            Sayfa <strong>{currentPage}</strong> / {totalPages}
+      {/* Bağlı Kavramlar */}
+      {concepts.length > 0 && (
+        <div className="bg-slate-50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 rounded-xl p-4 flex flex-wrap items-center gap-2">
+          <span className="text-xs font-semibold text-slate-600 dark:text-slate-300 mr-1">
+            🏷️ İlişkili Kavramlar:
           </span>
-          <button
-            disabled={currentPage === totalPages}
-            onClick={() => setCurrentPage((p) => Math.min(p + 1, totalPages))}
-            style={{
-              padding: '8px 14px',
-              borderRadius: '8px',
-              border: '1px solid #cbd5e1',
-              background: currentPage === totalPages ? '#f1f5f9' : '#ffffff',
-              cursor: currentPage === totalPages ? 'not-allowed' : 'pointer',
-            }}
-          >
-            Sonraki →
-          </button>
+          {concepts.map((c) => (
+            <Link
+              key={c}
+              href={`/kavram/${c.toLowerCase()}`}
+              className="text-xs px-2.5 py-1 rounded-full bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-600 text-slate-700 dark:text-slate-200 hover:border-emerald-500 hover:text-emerald-600 transition"
+            >
+              {c}
+            </Link>
+          ))}
         </div>
       )}
+
+      {/* Aile Üyeleri (Salt-Okunur Sözlük Görünümü) */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        {members.map((m: any) => (
+          <div
+            key={m.id}
+            className="p-4 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 hover:border-indigo-400 transition-all"
+          >
+            <div className="flex justify-between items-start gap-2">
+              <Link
+                href={`/lexeme/${encodeURIComponent(m.id)}`}
+                className="font-bold text-lg text-slate-900 dark:text-white hover:text-indigo-600 transition"
+              >
+                {m.form}
+              </Link>
+              {m.dialect && (
+                <span className="text-[11px] font-bold px-2 py-0.5 rounded bg-amber-100 text-amber-800 dark:bg-amber-900/40 dark:text-amber-300">
+                  {m.dialect}
+                </span>
+              )}
+            </div>
+
+            {m.ipa && (
+              <div className="text-xs text-slate-400 font-mono mt-0.5">
+                /{m.ipa}/
+              </div>
+            )}
+
+            <p className="text-sm text-slate-700 dark:text-slate-300 mt-2 line-clamp-2">
+              {m.translations?.tr || m.translations?.en || '—'}
+            </p>
+
+            <div className="mt-3 pt-2 border-t border-slate-100 dark:border-slate-700/60 flex items-center justify-between text-[11px]">
+              {m.conceptId ? (
+                <Link
+                  href={`/kavram/${m.conceptId.toLowerCase()}`}
+                  className="text-emerald-700 dark:text-emerald-400 hover:underline font-medium"
+                >
+                  🏷️ {m.conceptId}
+                </Link>
+              ) : (
+                <span className="text-slate-400">Kavram atanmamış</span>
+              )}
+
+              <Link
+                href={`/lexeme/${encodeURIComponent(m.id)}`}
+                className="text-slate-500 hover:text-slate-800 dark:hover:text-white"
+              >
+                Detay →
+              </Link>
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }

@@ -1,3 +1,4 @@
+import { verifyCurationAccess } from '@/lib/security/curationGuard';
 import { NextRequest, NextResponse } from 'next/server';
 import fs from 'fs';
 import path from 'path';
@@ -34,6 +35,9 @@ function project(row: any) {
 }
 
 export async function POST(req: NextRequest) {
+  const denied = verifyCurationAccess(req);
+  if (denied) return denied;
+
   const url = new URL(req.url);
   // Üretimde kullanıcı doğrulaması kurulmadan yazma açılmaz.
   if (process.env.NODE_ENV === 'production') {

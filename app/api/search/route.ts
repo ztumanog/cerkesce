@@ -287,7 +287,8 @@ export async function GET(request: NextRequest) {
 
       if (lex.literalMeaning) item.literalMeaning = String(lex.literalMeaning);
       if (lex.dialect) item.dialect = String(lex.dialect);
-      if (lex.rootIds?.length) item.rootIds = lex.rootIds;
+      const mergedRoots = Array.isArray(lex.rootIds) && lex.rootIds.length ? lex.rootIds : (lex.rootId ? [lex.rootId] : []);
+      if (mergedRoots.length) item.rootIds = mergedRoots;
       if (lex.wordFamilyId) item.wordFamilyId = lex.wordFamilyId;
       if (lex.conceptId) item.conceptId = lex.conceptId;
       if (lex.dialectVariants) item.dialectVariants = lex.dialectVariants;

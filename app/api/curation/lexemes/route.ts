@@ -1,3 +1,4 @@
+import { verifyCurationAccess } from '@/lib/security/curationGuard';
 import { NextRequest, NextResponse } from 'next/server';
 import fs from 'fs';
 import path from 'path';
@@ -83,6 +84,9 @@ function sameJson(a: unknown, b: unknown): boolean {
 }
 
 export async function PATCH(req: NextRequest) {
+  const denied = verifyCurationAccess(req);
+  if (denied) return denied;
+
   try {
     let body: any;
     try {
