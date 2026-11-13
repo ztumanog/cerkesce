@@ -71,3 +71,8 @@ Tüm yönetim ve kürasyon uçları `src/lib/security/curationGuard.ts` içindek
 * **Salt-Okunur / Admin Yetki Ayrımı:** `/sozluk/family/[id]` sayfası ve API rotası salt-okunur sözlük görünümüne çekildi; toplu düzenleme araçları yalnızca `/admin/curation` altında yetkilendirildi.
 * **Canlı Arama & Keşif:** `/explorer`, `/api/discovery/search` ve `/api/search` uçları sahte verilerden arındırılarak canlı `lexemes.json` ve `concept-tr.json` dosyalarına bağlandı.
 * **Erişilebilirlik (A11y):** `KelimeKarti.tsx` üzerinde `role="button"`, `tabIndex={0}` ve `onKeyDown` klavye etkileşimleri korundu.
+
+## Word Family (WF) Çift Yönlü Uzlaştırma ve Substring Temizliği
+- `lexemes.json` (`wordFamilyId`) ile `word_families.json` (`lexemeIds`) arasındaki **212** çapraz/çoklu aile çakışması daha spesifik kelime ailesi lehine çözümlendi (`WF-GU`: 1.399 → 1.310).
+- Kök kimliği uyuşmayan **6** hatalı üyelik ve `L-GUAVA` gibi saf substring yanlış pozitifleri temizlendi.
+- **493** kelime ailesinin `productivity.totalLexemes` sayacı gerçek üye sayılarıyla eşitlenerek **%100 çift yönlü simetri (0 uyumsuzluk)** sağlandı.
