@@ -114,3 +114,10 @@ O zamana kadar: **gözlem altında, aksiyon yok.**
 ## Değişiklik Geçmişi
 
 - 2026-11-13: İlk oluşturma. Homonym analizi sırasında tespit edildi. Gözlem kaydı olarak açıldı, iş emri değil.
+
+## Guncel Durum Notu (2026-11-13 - Faz 1 oncesi)
+
+Bu kayit **6ab9f43 oncesi veri** uzerinde uretilmistir.
+6ab9f43 sonrasinda roots.json uzerinde dogrulanmis duplicate-root merge islemleri uygulanmistir.
+Guncel homonym metrikleri **yeniden olculmemistir**.
+
