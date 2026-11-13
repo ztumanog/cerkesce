@@ -53,6 +53,15 @@ function formatTranslation(val?: string | string[]): string {
   return String(val).trim();
 }
 
+function normalizeGlossLabel(raw: string): string {
+  const clean = String(raw || "").trim();
+  if (!clean) return "";
+  if (clean === clean.toUpperCase() && /[A-ZÇĞİÖŞÜ]/.test(clean)) {
+    return clean.toLocaleLowerCase("tr-TR");
+  }
+  return clean;
+}
+
 function isCircassianScript(text: string): boolean {
   return /[\u0400-\u04FF]/.test(text);
 }
@@ -180,23 +189,32 @@ export default async function ConceptDetailPage({ params }: PageProps) {
     relationType: DiscoveryRelationType;
     score: number;
   }> = [];
+  const seenGraphIds = new Set<string>([conceptKey]);
 
   allItems.slice(0, 20).forEach((item) => {
-    const trHint = formatTranslation(item.translations?.tr);
+    const nodeId = String(item.form || "").trim();
+    if (!nodeId || seenGraphIds.has(nodeId)) return;
+    seenGraphIds.add(nodeId);
+    const trRaw = formatTranslation(item.translations?.tr).split(",")[0]?.trim() || "";
+    const trHint = normalizeGlossLabel(trRaw);
     graphRelated.push({
-      conceptId: item.form,
-      label: trHint ? `${item.form} (${trHint.split(',')[0].trim()})` : item.form,
-      parentConceptId: trLabel || decodedConcept,
+      conceptId: nodeId,
+      label: trHint ? `${nodeId} (${trHint})` : nodeId,
+      parentConceptId: conceptKey,
       relationType: DiscoveryRelationType.CHILD,
       score: 0.98,
     });
   });
 
   relatedLexemes.slice(0, 8).forEach((rel) => {
+    const nodeId = String(rel.form || "").trim();
+    if (!nodeId || seenGraphIds.has(nodeId)) return;
+    seenGraphIds.add(nodeId);
+    const relTr = normalizeGlossLabel(formatTranslation(rel.translations?.tr).split(",")[0]?.trim() || "");
     graphRelated.push({
-      conceptId: rel.form,
-      label: rel.form,
-      parentConceptId: trLabel || decodedConcept,
+      conceptId: nodeId,
+      label: relTr ? `${nodeId} (${relTr})` : nodeId,
+      parentConceptId: conceptKey,
       relationType: DiscoveryRelationType.ROOT,
       score: 0.82,
     });
@@ -212,7 +230,7 @@ export default async function ConceptDetailPage({ params }: PageProps) {
   if (trTokens.length > 0) {
     for (const [cKey, cVal] of Object.entries(conceptWords)) {
       if (cKey === conceptKey) continue;
-      const cTr = String(cVal?.tr || '').toLowerCase();
+      const cTr = String(cVal?.tr || "").toLowerCase();
       if (trTokens.some((tok) => cTr.includes(tok))) {
         neighborConcepts.push({
           targetId: cKey,
@@ -226,18 +244,21 @@ export default async function ConceptDetailPage({ params }: PageProps) {
   }
 
   neighborConcepts.forEach((nc) => {
-    const ncTr = conceptWords[nc.targetConcept]?.tr;
+    if (seenGraphIds.has(nc.targetConcept)) return;
+    seenGraphIds.add(nc.targetConcept);
+    const ncTr = normalizeGlossLabel(String(conceptWords[nc.targetConcept]?.tr || ""));
     graphRelated.push({
       conceptId: nc.targetConcept,
       label: ncTr ? `${ncTr} [${nc.targetConcept}]` : nc.targetConcept,
-      parentConceptId: trLabel || decodedConcept,
+      parentConceptId: conceptKey,
       relationType: DiscoveryRelationType.RELATED,
       score: 0.8,
     });
   });
 
-  const rootNodeTitle = trLabel
-    ? `${trLabel}${enLabel && enLabel.toLowerCase() !== trLabel.toLowerCase() ? ` (${enLabel})` : ''}`
+  const cleanRootTr = normalizeGlossLabel(trLabel);
+  const rootNodeTitle = cleanRootTr
+    ? `${cleanRootTr}${enLabel && enLabel.toLowerCase() !== cleanRootTr.toLowerCase() ? ` (${enLabel.toLowerCase()})` : ""}`
     : decodedConcept;
 
   const canonicalNetwork = ConceptGraphAdapter.toCanonicalNetwork({
