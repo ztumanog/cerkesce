@@ -26919,7 +26919,13 @@
       "notes": "C-10.3 yeni aile. Yazmak kok ailesi."
     },
     "notes": "Faz 11B: form 'тхэ'->'тхьэ', anlam 'Yazmak'->'tanrı'. Sözlük doğrulaması: тхьэ = tanrı (20+ kaynak).",
-    "productivity": "high",
+    "productivity": {
+      "0": "h",
+      "1": "i",
+      "2": "g",
+      "3": "h",
+      "lemmaCount": 63
+    },
     "status": "ACTIVE",
     "source": "faz11b_migration",
     "lexemeIds": [
@@ -55658,7 +55664,13 @@
       "plant",
       "object"
     ],
-    "productivity": "high",
+    "productivity": {
+      "0": "h",
+      "1": "i",
+      "2": "g",
+      "3": "h",
+      "lemmaCount": 11
+    },
     "notes": "Faz 11B: R-THAKWUMA'dan ayrıştırıldı. тхьэмпэ = yaprak.",
     "status": "ACTIVE",
     "source": "faz11b_migration",
@@ -55702,7 +55714,13 @@
     "semanticDomains": [
       "time"
     ],
-    "productivity": "high",
+    "productivity": {
+      "0": "h",
+      "1": "i",
+      "2": "g",
+      "3": "h",
+      "lemmaCount": 0
+    },
     "notes": "Faz 11B: R-THAKWUMA'dan ayrıştırıldı. тхьэмахуэ = pazar/hafta.",
     "status": "ACTIVE",
     "source": "faz11b_migration",
@@ -55726,7 +55744,15 @@
     "semanticDomains": [
       "action"
     ],
-    "productivity": "medium",
+    "productivity": {
+      "0": "m",
+      "1": "e",
+      "2": "d",
+      "3": "i",
+      "4": "u",
+      "5": "m",
+      "lemmaCount": 0
+    },
     "notes": "Faz 11B: R-THAKWUMA'dan ayrıştırıldı. тхьэщӀын = yıkamak.",
     "status": "ACTIVE",
     "source": "faz11b_migration",
@@ -55752,7 +55778,15 @@
       "action",
       "emotion"
     ],
-    "productivity": "medium",
+    "productivity": {
+      "0": "m",
+      "1": "e",
+      "2": "d",
+      "3": "i",
+      "4": "u",
+      "5": "m",
+      "lemmaCount": 1
+    },
     "notes": "Faz 11B: R-THAKWUMA'dan ayrıştırıldı. тхьэусыхэн = şikayet.",
     "status": "ACTIVE",
     "source": "faz11b_migration",
@@ -55782,7 +55816,15 @@
       "quality",
       "social_status"
     ],
-    "productivity": "medium",
+    "productivity": {
+      "0": "m",
+      "1": "e",
+      "2": "d",
+      "3": "i",
+      "4": "u",
+      "5": "m",
+      "lemmaCount": 5
+    },
     "notes": "Faz 11B: R-THAKWUMA'dan ayrıştırıldı. тхьэмыщкӀэ = fakir.",
     "status": "ACTIVE",
     "source": "faz11b_migration",
@@ -55820,7 +55862,15 @@
       "object",
       "jewelry"
     ],
-    "productivity": "medium",
+    "productivity": {
+      "0": "m",
+      "1": "e",
+      "2": "d",
+      "3": "i",
+      "4": "u",
+      "5": "m",
+      "lemmaCount": 1
+    },
     "notes": "Faz 11B: R-THAKWUMA'dan ayrıştırıldı. тхьэгъу = küpe.",
     "status": "ACTIVE",
     "source": "faz11b_migration",
@@ -55841,7 +55891,15 @@
     "primaryMeaning": "hamur. Sozluk dogrulamali (9 sozluk).",
     "secondaryMeanings": [],
     "semanticDomains": [],
-    "productivity": "medium",
+    "productivity": {
+      "0": "m",
+      "1": "e",
+      "2": "d",
+      "3": "i",
+      "4": "u",
+      "5": "m",
+      "lemmaCount": 3
+    },
     "notes": "Faz 12: R-THAKWUMA sonrasi kalan alt kok. 9 sozluk.",
     "status": "ACTIVE",
     "source": "faz12_migration",
@@ -55866,7 +55924,15 @@
     "primaryMeaning": "damga (hayvan kulagi). Sozluk dogrulamali (4 sozluk).",
     "secondaryMeanings": [],
     "semanticDomains": [],
-    "productivity": "medium",
+    "productivity": {
+      "0": "m",
+      "1": "e",
+      "2": "d",
+      "3": "i",
+      "4": "u",
+      "5": "m",
+      "lemmaCount": 4
+    },
     "notes": "Faz 12: R-THAKWUMA sonrasi kalan alt kok. 4 sozluk.",
     "status": "ACTIVE",
     "source": "faz12_migration",
@@ -55893,7 +55959,15 @@
     "primaryMeaning": "can. Sozluk dogrulamali (6 sozluk).",
     "secondaryMeanings": [],
     "semanticDomains": [],
-    "productivity": "medium",
+    "productivity": {
+      "0": "m",
+      "1": "e",
+      "2": "d",
+      "3": "i",
+      "4": "u",
+      "5": "m",
+      "lemmaCount": 2
+    },
     "notes": "Faz 12: R-THAKWUMA sonrasi kalan alt kok. 6 sozluk.",
     "status": "ACTIVE",
     "source": "faz12_migration",
@@ -55916,7 +55990,15 @@
     "primaryMeaning": "musadere etmek. Sozluk dogrulamali (7 sozluk).",
     "secondaryMeanings": [],
     "semanticDomains": [],
-    "productivity": "medium",
+    "productivity": {
+      "0": "m",
+      "1": "e",
+      "2": "d",
+      "3": "i",
+      "4": "u",
+      "5": "m",
+      "lemmaCount": 1
+    },
     "notes": "Faz 12: R-THAKWUMA sonrasi kalan alt kok. 7 sozluk.",
     "status": "ACTIVE",
     "source": "faz12_migration",
@@ -55937,7 +56019,15 @@
     "primaryMeaning": "bogmak. Sozluk dogrulamali (8 sozluk).",
     "secondaryMeanings": [],
     "semanticDomains": [],
-    "productivity": "medium",
+    "productivity": {
+      "0": "m",
+      "1": "e",
+      "2": "d",
+      "3": "i",
+      "4": "u",
+      "5": "m",
+      "lemmaCount": 2
+    },
     "notes": "Faz 12: R-THAKWUMA sonrasi kalan alt kok. 8 sozluk.",
     "status": "ACTIVE",
     "source": "faz12_migration",
@@ -55959,7 +56049,15 @@
     "primaryMeaning": "akciger. Sozluk dogrulamali (11 sozluk).",
     "secondaryMeanings": [],
     "semanticDomains": [],
-    "productivity": "medium",
+    "productivity": {
+      "0": "m",
+      "1": "e",
+      "2": "d",
+      "3": "i",
+      "4": "u",
+      "5": "m",
+      "lemmaCount": 6
+    },
     "notes": "Faz 12: R-THAKWUMA sonrasi kalan alt kok. 11 sozluk.",
     "status": "ACTIVE",
     "source": "faz12_migration",
@@ -55990,7 +56088,15 @@
     "primaryMeaning": "yonca. Sozluk dogrulamali (3 sozluk).",
     "secondaryMeanings": [],
     "semanticDomains": [],
-    "productivity": "medium",
+    "productivity": {
+      "0": "m",
+      "1": "e",
+      "2": "d",
+      "3": "i",
+      "4": "u",
+      "5": "m",
+      "lemmaCount": 1
+    },
     "notes": "Faz 12: R-THAKWUMA sonrasi kalan alt kok. 3 sozluk.",
     "status": "ACTIVE",
     "source": "faz12_migration",
@@ -56011,7 +56117,15 @@
     "primaryMeaning": "kac?. Sozluk dogrulamali (5 sozluk).",
     "secondaryMeanings": [],
     "semanticDomains": [],
-    "productivity": "medium",
+    "productivity": {
+      "0": "m",
+      "1": "e",
+      "2": "d",
+      "3": "i",
+      "4": "u",
+      "5": "m",
+      "lemmaCount": 1
+    },
     "notes": "Faz 12: R-THAKWUMA sonrasi kalan alt kok. 5 sozluk.",
     "status": "ACTIVE",
     "source": "faz12_migration",
@@ -56032,7 +56146,15 @@
     "primaryMeaning": "yaz (mevsim). Sozluk dogrulamali (12 sozluk).",
     "secondaryMeanings": [],
     "semanticDomains": [],
-    "productivity": "medium",
+    "productivity": {
+      "0": "m",
+      "1": "e",
+      "2": "d",
+      "3": "i",
+      "4": "u",
+      "5": "m",
+      "lemmaCount": 6
+    },
     "notes": "Faz 12: R-THAKWUMA sonrasi kalan alt kok. 12 sozluk.",
     "status": "ACTIVE",
     "source": "faz12_migration",
@@ -56063,7 +56185,15 @@
     "primaryMeaning": "ucmak (лъэт)",
     "secondaryMeanings": [],
     "semanticDomains": [],
-    "productivity": "medium",
+    "productivity": {
+      "0": "m",
+      "1": "e",
+      "2": "d",
+      "3": "i",
+      "4": "u",
+      "5": "m",
+      "lemmaCount": 70
+    },
     "notes": "Faz 15B: WF-LHA'dan ayrilan kok",
     "status": "ACTIVE",
     "source": "faz15b_migration",
@@ -56219,7 +56349,15 @@
     "primaryMeaning": "suruklemek (лъэф)",
     "secondaryMeanings": [],
     "semanticDomains": [],
-    "productivity": "medium",
+    "productivity": {
+      "0": "m",
+      "1": "e",
+      "2": "d",
+      "3": "i",
+      "4": "u",
+      "5": "m",
+      "lemmaCount": 70
+    },
     "notes": "Faz 15B: WF-LHA'dan ayrilan kok",
     "status": "ACTIVE",
     "source": "faz15b_migration",
@@ -56376,7 +56514,15 @@
     "primaryMeaning": "dokulmak (лъэлъ)",
     "secondaryMeanings": [],
     "semanticDomains": [],
-    "productivity": "medium",
+    "productivity": {
+      "0": "m",
+      "1": "e",
+      "2": "d",
+      "3": "i",
+      "4": "u",
+      "5": "m",
+      "lemmaCount": 22
+    },
     "notes": "Faz 15B: WF-LHA'dan ayrilan kok",
     "status": "ACTIVE",
     "source": "faz15b_migration",
@@ -56423,7 +56569,15 @@
     "primaryMeaning": "akmak/kosmek (лъэд)",
     "secondaryMeanings": [],
     "semanticDomains": [],
-    "productivity": "medium",
+    "productivity": {
+      "0": "m",
+      "1": "e",
+      "2": "d",
+      "3": "i",
+      "4": "u",
+      "5": "m",
+      "lemmaCount": 36
+    },
     "notes": "Faz 15B: WF-LHA'dan ayrilan kok",
     "status": "ACTIVE",
     "source": "faz15b_migration",
@@ -56514,7 +56668,15 @@
     "primaryMeaning": "yikamak (лъэс)",
     "secondaryMeanings": [],
     "semanticDomains": [],
-    "productivity": "medium",
+    "productivity": {
+      "0": "m",
+      "1": "e",
+      "2": "d",
+      "3": "i",
+      "4": "u",
+      "5": "m",
+      "lemmaCount": 20
+    },
     "notes": "Faz 15B: WF-LHA'dan ayrilan kok",
     "status": "ACTIVE",
     "source": "faz15b_migration",
@@ -56573,7 +56735,15 @@
     "primaryMeaning": "guclu (лъэш)",
     "secondaryMeanings": [],
     "semanticDomains": [],
-    "productivity": "medium",
+    "productivity": {
+      "0": "m",
+      "1": "e",
+      "2": "d",
+      "3": "i",
+      "4": "u",
+      "5": "m",
+      "lemmaCount": 1
+    },
     "notes": "Faz 15B: WF-LHA'dan ayrilan kok",
     "status": "ACTIVE",
     "source": "faz15b_migration",
@@ -56594,7 +56764,15 @@
     "primaryMeaning": "takilmak (лъэп)",
     "secondaryMeanings": [],
     "semanticDomains": [],
-    "productivity": "medium",
+    "productivity": {
+      "0": "m",
+      "1": "e",
+      "2": "d",
+      "3": "i",
+      "4": "u",
+      "5": "m",
+      "lemmaCount": 4
+    },
     "notes": "Faz 15B: WF-LHA'dan ayrilan kok",
     "status": "ACTIVE",
     "source": "faz15b_migration",
@@ -56621,7 +56799,15 @@
     "primaryMeaning": "yatmak (лъэ) - ayak degil",
     "secondaryMeanings": [],
     "semanticDomains": [],
-    "productivity": "medium",
+    "productivity": {
+      "0": "m",
+      "1": "e",
+      "2": "d",
+      "3": "i",
+      "4": "u",
+      "5": "m",
+      "lemmaCount": 70
+    },
     "notes": "Faz 15B: WF-LHA'dan ayrilan kok",
     "status": "ACTIVE",
     "source": "faz15b_migration",
@@ -56770,7 +56956,15 @@
     "primaryMeaning": "aslan (Farsça odunc)",
     "secondaryMeanings": [],
     "semanticDomains": [],
-    "productivity": "medium",
+    "productivity": {
+      "0": "m",
+      "1": "e",
+      "2": "d",
+      "3": "i",
+      "4": "u",
+      "5": "m",
+      "lemmaCount": 3
+    },
     "notes": "Faz 15B: WF-LHA'dan ayrilan kok",
     "status": "ACTIVE",
     "source": "faz15b_migration",
@@ -56795,7 +56989,15 @@
     "primaryMeaning": "islam (Arapça odunc)",
     "secondaryMeanings": [],
     "semanticDomains": [],
-    "productivity": "medium",
+    "productivity": {
+      "0": "m",
+      "1": "e",
+      "2": "d",
+      "3": "i",
+      "4": "u",
+      "5": "m",
+      "lemmaCount": 1
+    },
     "notes": "Faz 15B: WF-LHA'dan ayrilan kok",
     "status": "ACTIVE",
     "source": "faz15b_migration",
@@ -56816,7 +57018,15 @@
     "primaryMeaning": "kale (Arapça odunc)",
     "secondaryMeanings": [],
     "semanticDomains": [],
-    "productivity": "medium",
+    "productivity": {
+      "0": "m",
+      "1": "e",
+      "2": "d",
+      "3": "i",
+      "4": "u",
+      "5": "m",
+      "lemmaCount": 0
+    },
     "notes": "Faz 15B: WF-LHA'dan ayrilan kok",
     "status": "ACTIVE",
     "source": "faz15b_migration",
@@ -56833,7 +57043,15 @@
     "primaryMeaning": "tas/bardak",
     "secondaryMeanings": [],
     "semanticDomains": [],
-    "productivity": "medium",
+    "productivity": {
+      "0": "m",
+      "1": "e",
+      "2": "d",
+      "3": "i",
+      "4": "u",
+      "5": "m",
+      "lemmaCount": 2
+    },
     "notes": "Faz 15B: WF-LHA'dan ayrilan kok",
     "status": "ACTIVE",
     "source": "faz15b_migration",
@@ -56855,7 +57073,15 @@
     "primaryMeaning": "sadak/okluk",
     "secondaryMeanings": [],
     "semanticDomains": [],
-    "productivity": "medium",
+    "productivity": {
+      "0": "m",
+      "1": "e",
+      "2": "d",
+      "3": "i",
+      "4": "u",
+      "5": "m",
+      "lemmaCount": 2
+    },
     "notes": "Faz 15B: WF-LHA'dan ayrilan kok",
     "status": "ACTIVE",
     "source": "faz15b_migration",
@@ -56878,7 +57104,15 @@
     "primaryMeaning": "olcu",
     "secondaryMeanings": [],
     "semanticDomains": [],
-    "productivity": "medium",
+    "productivity": {
+      "0": "m",
+      "1": "e",
+      "2": "d",
+      "3": "i",
+      "4": "u",
+      "5": "m",
+      "lemmaCount": 1
+    },
     "notes": "Faz 15B: WF-LHA'dan ayrilan kok",
     "status": "ACTIVE",
     "source": "faz15b_migration",
@@ -56899,7 +57133,15 @@
     "primaryMeaning": "nokta (dilbilgisi)",
     "secondaryMeanings": [],
     "semanticDomains": [],
-    "productivity": "medium",
+    "productivity": {
+      "0": "m",
+      "1": "e",
+      "2": "d",
+      "3": "i",
+      "4": "u",
+      "5": "m",
+      "lemmaCount": 2
+    },
     "notes": "Faz 15B: WF-LHA'dan ayrilan kok",
     "status": "ACTIVE",
     "source": "faz15b_migration",
@@ -56922,7 +57164,15 @@
     "primaryMeaning": "ustune koymak/ettirgen (тегъэ-)",
     "secondaryMeanings": [],
     "semanticDomains": [],
-    "productivity": "medium",
+    "productivity": {
+      "0": "m",
+      "1": "e",
+      "2": "d",
+      "3": "i",
+      "4": "u",
+      "5": "m",
+      "lemmaCount": 23
+    },
     "notes": "Faz 15B: ettirgen тегъэ- fiilleri",
     "status": "ACTIVE",
     "source": "faz15b_migration",
@@ -56987,7 +57237,12 @@
     "primaryMeaning": "onlar (zamir)",
     "secondaryMeanings": [],
     "semanticDomains": [],
-    "productivity": "low",
+    "productivity": {
+      "0": "l",
+      "1": "o",
+      "2": "w",
+      "lemmaCount": 1
+    },
     "notes": "Faz 15B",
     "status": "ACTIVE",
     "source": "faz15b_migration",
@@ -57008,7 +57263,12 @@
     "primaryMeaning": "selam (Arapça)",
     "secondaryMeanings": [],
     "semanticDomains": [],
-    "productivity": "low",
+    "productivity": {
+      "0": "l",
+      "1": "o",
+      "2": "w",
+      "lemmaCount": 3
+    },
     "notes": "Faz 15B",
     "status": "ACTIVE",
     "source": "faz15b_migration",
@@ -57033,7 +57293,12 @@
     "primaryMeaning": "asker (Arapça)",
     "secondaryMeanings": [],
     "semanticDomains": [],
-    "productivity": "low",
+    "productivity": {
+      "0": "l",
+      "1": "o",
+      "2": "w",
+      "lemmaCount": 1
+    },
     "notes": "Faz 15B",
     "status": "ACTIVE",
     "source": "faz15b_migration",
@@ -57054,7 +57319,12 @@
     "primaryMeaning": "zalim (Arapça)",
     "secondaryMeanings": [],
     "semanticDomains": [],
-    "productivity": "low",
+    "productivity": {
+      "0": "l",
+      "1": "o",
+      "2": "w",
+      "lemmaCount": 3
+    },
     "notes": "Faz 15B",
     "status": "ACTIVE",
     "source": "faz15b_migration",
@@ -57079,7 +57349,12 @@
     "primaryMeaning": "sag/saglikli",
     "secondaryMeanings": [],
     "semanticDomains": [],
-    "productivity": "low",
+    "productivity": {
+      "0": "l",
+      "1": "o",
+      "2": "w",
+      "lemmaCount": 2
+    },
     "notes": "Faz 15B",
     "status": "ACTIVE",
     "source": "faz15b_migration",
@@ -57102,7 +57377,12 @@
     "primaryMeaning": "zor (психик)",
     "secondaryMeanings": [],
     "semanticDomains": [],
-    "productivity": "low",
+    "productivity": {
+      "0": "l",
+      "1": "o",
+      "2": "w",
+      "lemmaCount": 2
+    },
     "notes": "Faz 15B",
     "status": "ACTIVE",
     "source": "faz15b_migration",
@@ -57125,7 +57405,12 @@
     "primaryMeaning": "birim",
     "secondaryMeanings": [],
     "semanticDomains": [],
-    "productivity": "low",
+    "productivity": {
+      "0": "l",
+      "1": "o",
+      "2": "w",
+      "lemmaCount": 3
+    },
     "notes": "Faz 15B",
     "status": "ACTIVE",
     "source": "faz15b_migration",
@@ -57148,7 +57433,12 @@
     "primaryMeaning": "agit/destan",
     "secondaryMeanings": [],
     "semanticDomains": [],
-    "productivity": "low",
+    "productivity": {
+      "0": "l",
+      "1": "o",
+      "2": "w",
+      "lemmaCount": 1
+    },
     "notes": "Faz 15B",
     "status": "ACTIVE",
     "source": "faz15b_migration",
@@ -57169,7 +57459,12 @@
     "primaryMeaning": "terlik (Arapça)",
     "secondaryMeanings": [],
     "semanticDomains": [],
-    "productivity": "low",
+    "productivity": {
+      "0": "l",
+      "1": "o",
+      "2": "w",
+      "lemmaCount": 1
+    },
     "notes": "Faz 15B",
     "status": "ACTIVE",
     "source": "faz15b_migration",
@@ -57190,7 +57485,12 @@
     "primaryMeaning": "?",
     "secondaryMeanings": [],
     "semanticDomains": [],
-    "productivity": "low",
+    "productivity": {
+      "0": "l",
+      "1": "o",
+      "2": "w",
+      "lemmaCount": 0
+    },
     "notes": "Faz 15B",
     "status": "ACTIVE",
     "source": "faz15b_migration",
@@ -57207,7 +57507,12 @@
     "primaryMeaning": "?",
     "secondaryMeanings": [],
     "semanticDomains": [],
-    "productivity": "low",
+    "productivity": {
+      "0": "l",
+      "1": "o",
+      "2": "w",
+      "lemmaCount": 3
+    },
     "notes": "Faz 15B",
     "status": "ACTIVE",
     "source": "faz15b_migration",
@@ -57231,7 +57536,12 @@
     "primaryMeaning": "?",
     "secondaryMeanings": [],
     "semanticDomains": [],
-    "productivity": "low",
+    "productivity": {
+      "0": "l",
+      "1": "o",
+      "2": "w",
+      "lemmaCount": 1
+    },
     "notes": "Faz 15B",
     "status": "ACTIVE",
     "source": "faz15b_migration",
@@ -57252,7 +57562,12 @@
     "primaryMeaning": "hüküm (Arapça)",
     "secondaryMeanings": [],
     "semanticDomains": [],
-    "productivity": "low",
+    "productivity": {
+      "0": "l",
+      "1": "o",
+      "2": "w",
+      "lemmaCount": 1
+    },
     "notes": "Faz 15B",
     "status": "ACTIVE",
     "source": "faz15b_migration",
@@ -57273,7 +57588,12 @@
     "primaryMeaning": "tutan (fiil türevi)",
     "secondaryMeanings": [],
     "semanticDomains": [],
-    "productivity": "low",
+    "productivity": {
+      "0": "l",
+      "1": "o",
+      "2": "w",
+      "lemmaCount": 1
+    },
     "notes": "Faz 15B",
     "status": "ACTIVE",
     "source": "faz15b_migration",
@@ -57294,7 +57614,12 @@
     "primaryMeaning": "duran (fiil türevi)",
     "secondaryMeanings": [],
     "semanticDomains": [],
-    "productivity": "low",
+    "productivity": {
+      "0": "l",
+      "1": "o",
+      "2": "w",
+      "lemmaCount": 1
+    },
     "notes": "Faz 15B",
     "status": "ACTIVE",
     "source": "faz15b_migration",
@@ -57315,7 +57640,12 @@
     "primaryMeaning": "o zamandan beri (zarf)",
     "secondaryMeanings": [],
     "semanticDomains": [],
-    "productivity": "low",
+    "productivity": {
+      "0": "l",
+      "1": "o",
+      "2": "w",
+      "lemmaCount": 1
+    },
     "notes": "Faz 15B kalan",
     "status": "ACTIVE",
     "source": "faz15b_migration",
@@ -57336,7 +57666,12 @@
     "primaryMeaning": "sinir (anatomi)",
     "secondaryMeanings": [],
     "semanticDomains": [],
-    "productivity": "low",
+    "productivity": {
+      "0": "l",
+      "1": "o",
+      "2": "w",
+      "lemmaCount": 1
+    },
     "notes": "Faz 15B kalan",
     "status": "ACTIVE",
     "source": "faz15b_migration",
@@ -57357,7 +57692,12 @@
     "primaryMeaning": "atlamak (лъэ turevi)",
     "secondaryMeanings": [],
     "semanticDomains": [],
-    "productivity": "low",
+    "productivity": {
+      "0": "l",
+      "1": "o",
+      "2": "w",
+      "lemmaCount": 1
+    },
     "notes": "Faz 15B kalan",
     "status": "ACTIVE",
     "source": "faz15b_migration",
@@ -57378,7 +57718,12 @@
     "primaryMeaning": "tasima (isim)",
     "secondaryMeanings": [],
     "semanticDomains": [],
-    "productivity": "low",
+    "productivity": {
+      "0": "l",
+      "1": "o",
+      "2": "w",
+      "lemmaCount": 1
+    },
     "notes": "Faz 15B kalan",
     "status": "ACTIVE",
     "source": "faz15b_migration",
@@ -57399,7 +57744,12 @@
     "primaryMeaning": "col",
     "secondaryMeanings": [],
     "semanticDomains": [],
-    "productivity": "low",
+    "productivity": {
+      "0": "l",
+      "1": "o",
+      "2": "w",
+      "lemmaCount": 1
+    },
     "notes": "Faz 15B kalan",
     "status": "ACTIVE",
     "source": "faz15b_migration",
@@ -57420,7 +57770,12 @@
     "primaryMeaning": "tasli",
     "secondaryMeanings": [],
     "semanticDomains": [],
-    "productivity": "low",
+    "productivity": {
+      "0": "l",
+      "1": "o",
+      "2": "w",
+      "lemmaCount": 1
+    },
     "notes": "Faz 15B kalan",
     "status": "ACTIVE",
     "source": "faz15b_migration",
@@ -57441,7 +57796,12 @@
     "primaryMeaning": "suslenmek/boyanmak",
     "secondaryMeanings": [],
     "semanticDomains": [],
-    "productivity": "low",
+    "productivity": {
+      "0": "l",
+      "1": "o",
+      "2": "w",
+      "lemmaCount": 1
+    },
     "notes": "Faz 15B kalan",
     "status": "ACTIVE",
     "source": "faz15b_migration",
@@ -57462,7 +57822,12 @@
     "primaryMeaning": "ayak altina almak",
     "secondaryMeanings": [],
     "semanticDomains": [],
-    "productivity": "low",
+    "productivity": {
+      "0": "l",
+      "1": "o",
+      "2": "w",
+      "lemmaCount": 1
+    },
     "notes": "Faz 15B kalan",
     "status": "ACTIVE",
     "source": "faz15b_migration",
@@ -57483,7 +57848,12 @@
     "primaryMeaning": "?",
     "secondaryMeanings": [],
     "semanticDomains": [],
-    "productivity": "low",
+    "productivity": {
+      "0": "l",
+      "1": "o",
+      "2": "w",
+      "lemmaCount": 2
+    },
     "notes": "Faz 15B kalan",
     "status": "ACTIVE",
     "source": "faz15b_migration",
@@ -57505,7 +57875,12 @@
     "primaryMeaning": "son/bitis",
     "secondaryMeanings": [],
     "semanticDomains": [],
-    "productivity": "low",
+    "productivity": {
+      "0": "l",
+      "1": "o",
+      "2": "w",
+      "lemmaCount": 1
+    },
     "notes": "Faz 15B kalan",
     "status": "ACTIVE",
     "source": "faz15b_migration",
@@ -57526,7 +57901,12 @@
     "primaryMeaning": "?",
     "secondaryMeanings": [],
     "semanticDomains": [],
-    "productivity": "low",
+    "productivity": {
+      "0": "l",
+      "1": "o",
+      "2": "w",
+      "lemmaCount": 1
+    },
     "notes": "Faz 15B kalan",
     "status": "ACTIVE",
     "source": "faz15b_migration",
@@ -57547,7 +57927,12 @@
     "primaryMeaning": "Besian",
     "secondaryMeanings": [],
     "semanticDomains": [],
-    "productivity": "low",
+    "productivity": {
+      "0": "l",
+      "1": "o",
+      "2": "w",
+      "lemmaCount": 1
+    },
     "notes": "Faz 15B kalan",
     "status": "ACTIVE",
     "source": "faz15b_migration",
@@ -57568,7 +57953,12 @@
     "primaryMeaning": "miknatis",
     "secondaryMeanings": [],
     "semanticDomains": [],
-    "productivity": "low",
+    "productivity": {
+      "0": "l",
+      "1": "o",
+      "2": "w",
+      "lemmaCount": 1
+    },
     "notes": "Faz 15B kalan",
     "status": "ACTIVE",
     "source": "faz15b_migration",
@@ -57589,7 +57979,12 @@
     "primaryMeaning": "masal ati",
     "secondaryMeanings": [],
     "semanticDomains": [],
-    "productivity": "low",
+    "productivity": {
+      "0": "l",
+      "1": "o",
+      "2": "w",
+      "lemmaCount": 2
+    },
     "notes": "Faz 15B kalan",
     "status": "ACTIVE",
     "source": "faz15b_migration",
@@ -57612,7 +58007,12 @@
     "primaryMeaning": "lor",
     "secondaryMeanings": [],
     "semanticDomains": [],
-    "productivity": "low",
+    "productivity": {
+      "0": "l",
+      "1": "o",
+      "2": "w",
+      "lemmaCount": 1
+    },
     "notes": "Faz 15B kalan",
     "status": "ACTIVE",
     "source": "faz15b_migration",
@@ -57633,7 +58033,12 @@
     "primaryMeaning": "?",
     "secondaryMeanings": [],
     "semanticDomains": [],
-    "productivity": "low",
+    "productivity": {
+      "0": "l",
+      "1": "o",
+      "2": "w",
+      "lemmaCount": 1
+    },
     "notes": "Faz 15B kalan",
     "status": "ACTIVE",
     "source": "faz15b_migration",
@@ -57654,7 +58059,12 @@
     "primaryMeaning": "?",
     "secondaryMeanings": [],
     "semanticDomains": [],
-    "productivity": "low",
+    "productivity": {
+      "0": "l",
+      "1": "o",
+      "2": "w",
+      "lemmaCount": 1
+    },
     "notes": "Faz 15B kalan",
     "status": "ACTIVE",
     "source": "faz15b_migration",
@@ -57675,7 +58085,12 @@
     "primaryMeaning": "yuklemek",
     "secondaryMeanings": [],
     "semanticDomains": [],
-    "productivity": "low",
+    "productivity": {
+      "0": "l",
+      "1": "o",
+      "2": "w",
+      "lemmaCount": 1
+    },
     "notes": "Faz 15B kalan",
     "status": "ACTIVE",
     "source": "faz15b_migration",
@@ -57696,7 +58111,12 @@
     "primaryMeaning": "ziplamak",
     "secondaryMeanings": [],
     "semanticDomains": [],
-    "productivity": "low",
+    "productivity": {
+      "0": "l",
+      "1": "o",
+      "2": "w",
+      "lemmaCount": 1
+    },
     "notes": "Faz 15B kalan",
     "status": "ACTIVE",
     "source": "faz15b_migration",
@@ -57717,7 +58137,12 @@
     "primaryMeaning": "tahil deposu",
     "secondaryMeanings": [],
     "semanticDomains": [],
-    "productivity": "low",
+    "productivity": {
+      "0": "l",
+      "1": "o",
+      "2": "w",
+      "lemmaCount": 1
+    },
     "notes": "Faz 15B kalan",
     "status": "ACTIVE",
     "source": "faz15b_migration",
@@ -57738,7 +58163,12 @@
     "primaryMeaning": "geri tasimak",
     "secondaryMeanings": [],
     "semanticDomains": [],
-    "productivity": "low",
+    "productivity": {
+      "0": "l",
+      "1": "o",
+      "2": "w",
+      "lemmaCount": 1
+    },
     "notes": "Faz 15B kalan",
     "status": "ACTIVE",
     "source": "faz15b_migration",
@@ -57759,7 +58189,12 @@
     "primaryMeaning": "portatif sigara",
     "secondaryMeanings": [],
     "semanticDomains": [],
-    "productivity": "low",
+    "productivity": {
+      "0": "l",
+      "1": "o",
+      "2": "w",
+      "lemmaCount": 1
+    },
     "notes": "Faz 15B kalan",
     "status": "ACTIVE",
     "source": "faz15b_migration",
@@ -57780,7 +58215,12 @@
     "primaryMeaning": "telgraf (Rusça)",
     "secondaryMeanings": [],
     "semanticDomains": [],
-    "productivity": "low",
+    "productivity": {
+      "0": "l",
+      "1": "o",
+      "2": "w",
+      "lemmaCount": 1
+    },
     "notes": "Faz 15B kalan",
     "status": "ACTIVE",
     "source": "faz15b_migration",
@@ -57801,7 +58241,12 @@
     "primaryMeaning": "Besleney",
     "secondaryMeanings": [],
     "semanticDomains": [],
-    "productivity": "low",
+    "productivity": {
+      "0": "l",
+      "1": "o",
+      "2": "w",
+      "lemmaCount": 1
+    },
     "notes": "Faz 15B kalan",
     "status": "ACTIVE",
     "source": "faz15b_migration",
@@ -57822,7 +58267,12 @@
     "primaryMeaning": "?",
     "secondaryMeanings": [],
     "semanticDomains": [],
-    "productivity": "low",
+    "productivity": {
+      "0": "l",
+      "1": "o",
+      "2": "w",
+      "lemmaCount": 1
+    },
     "notes": "Faz 15B kalan",
     "status": "ACTIVE",
     "source": "faz15b_migration",
@@ -57843,7 +58293,12 @@
     "primaryMeaning": "burusmak",
     "secondaryMeanings": [],
     "semanticDomains": [],
-    "productivity": "low",
+    "productivity": {
+      "0": "l",
+      "1": "o",
+      "2": "w",
+      "lemmaCount": 1
+    },
     "notes": "Faz 15B kalan",
     "status": "ACTIVE",
     "source": "faz15b_migration",
@@ -57864,7 +58319,12 @@
     "primaryMeaning": "dikici",
     "secondaryMeanings": [],
     "semanticDomains": [],
-    "productivity": "low",
+    "productivity": {
+      "0": "l",
+      "1": "o",
+      "2": "w",
+      "lemmaCount": 1
+    },
     "notes": "Faz 15B kalan",
     "status": "ACTIVE",
     "source": "faz15b_migration",
@@ -57885,7 +58345,12 @@
     "primaryMeaning": "sarkmak",
     "secondaryMeanings": [],
     "semanticDomains": [],
-    "productivity": "low",
+    "productivity": {
+      "0": "l",
+      "1": "o",
+      "2": "w",
+      "lemmaCount": 1
+    },
     "notes": "Faz 15B kalan",
     "status": "ACTIVE",
     "source": "faz15b_migration",
@@ -57906,7 +58371,12 @@
     "primaryMeaning": "selamsiz",
     "secondaryMeanings": [],
     "semanticDomains": [],
-    "productivity": "low",
+    "productivity": {
+      "0": "l",
+      "1": "o",
+      "2": "w",
+      "lemmaCount": 1
+    },
     "notes": "Faz 15B kalan",
     "status": "ACTIVE",
     "source": "faz15b_migration",
@@ -57927,7 +58397,12 @@
     "primaryMeaning": "kuruyup kalmak",
     "secondaryMeanings": [],
     "semanticDomains": [],
-    "productivity": "low",
+    "productivity": {
+      "0": "l",
+      "1": "o",
+      "2": "w",
+      "lemmaCount": 1
+    },
     "notes": "Faz 15B kalan",
     "status": "ACTIVE",
     "source": "faz15b_migration",
@@ -57948,7 +58423,12 @@
     "primaryMeaning": "gurlemek",
     "secondaryMeanings": [],
     "semanticDomains": [],
-    "productivity": "low",
+    "productivity": {
+      "0": "l",
+      "1": "o",
+      "2": "w",
+      "lemmaCount": 1
+    },
     "notes": "Faz 15B kalan",
     "status": "ACTIVE",
     "source": "faz15b_migration",
@@ -57969,7 +58449,12 @@
     "primaryMeaning": "parlamak",
     "secondaryMeanings": [],
     "semanticDomains": [],
-    "productivity": "low",
+    "productivity": {
+      "0": "l",
+      "1": "o",
+      "2": "w",
+      "lemmaCount": 1
+    },
     "notes": "Faz 15B kalan",
     "status": "ACTIVE",
     "source": "faz15b_migration",
@@ -57990,7 +58475,12 @@
     "primaryMeaning": "alcak",
     "secondaryMeanings": [],
     "semanticDomains": [],
-    "productivity": "low",
+    "productivity": {
+      "0": "l",
+      "1": "o",
+      "2": "w",
+      "lemmaCount": 1
+    },
     "notes": "Faz 15B kalan",
     "status": "ACTIVE",
     "source": "faz15b_migration",
@@ -58011,7 +58501,12 @@
     "primaryMeaning": "boa yilani",
     "secondaryMeanings": [],
     "semanticDomains": [],
-    "productivity": "low",
+    "productivity": {
+      "0": "l",
+      "1": "o",
+      "2": "w",
+      "lemmaCount": 3
+    },
     "notes": "Faz 15B kalan",
     "status": "ACTIVE",
     "source": "faz15b_migration",
@@ -58034,7 +58529,12 @@
     "primaryMeaning": "sikirti",
     "secondaryMeanings": [],
     "semanticDomains": [],
-    "productivity": "low",
+    "productivity": {
+      "0": "l",
+      "1": "o",
+      "2": "w",
+      "lemmaCount": 1
+    },
     "notes": "Faz 15B kalan",
     "status": "ACTIVE",
     "source": "faz15b_migration",
@@ -58055,7 +58555,12 @@
     "primaryMeaning": "?",
     "secondaryMeanings": [],
     "semanticDomains": [],
-    "productivity": "low",
+    "productivity": {
+      "0": "l",
+      "1": "o",
+      "2": "w",
+      "lemmaCount": 1
+    },
     "notes": "Faz 15B",
     "status": "ACTIVE",
     "source": "faz15b_migration",
@@ -168585,5 +169090,205 @@
       ],
       "totalMembers": 3
     }
+  },
+  {
+    "id": "R-0001",
+    "form": "пщӀантӀэпс",
+    "dialect": "COMMON",
+    "meaning": {
+      "tr": "ter"
+    },
+    "wordFamily": {
+      "lexemeIds": [
+        "L-PSHCH1ANT1EPS",
+        "L-PSHCH-ANT-EPS"
+      ]
+    },
+    "productivity": {
+      "lemmaCount": 2
+    },
+    "verified": true
+  },
+  {
+    "id": "R-0002",
+    "form": "пщӀэншэ",
+    "dialect": "COMMON",
+    "meaning": {
+      "tr": "boşuna, bedava"
+    },
+    "wordFamily": {
+      "lexemeIds": [
+        "L-PSHCH1ENSHEU",
+        "L-PSHCH1ENSHEUE"
+      ]
+    },
+    "productivity": {
+      "lemmaCount": 2
+    },
+    "verified": true
+  },
+  {
+    "id": "R-0003",
+    "form": "фӀыкӀей",
+    "dialect": "COMMON",
+    "meaning": {
+      "tr": "hayli, epey"
+    },
+    "wordFamily": {
+      "lexemeIds": [
+        "L-F1YK1EY",
+        "L-F1YK1EYUE"
+      ]
+    },
+    "productivity": {
+      "lemmaCount": 2
+    },
+    "verified": true
+  },
+  {
+    "id": "R-0004",
+    "form": "фӀэлӀыкӀ",
+    "dialect": "KBD",
+    "meaning": {
+      "tr": "çekinmek, perva"
+    },
+    "wordFamily": {
+      "lexemeIds": [
+        "L-F1EL1YK1",
+        "L-F1EL1YK1YN",
+        "L-F1EL1YK1YNSHAGHE",
+        "L-F1EL1YK1YNSHE"
+      ]
+    },
+    "productivity": {
+      "lemmaCount": 4
+    },
+    "verified": true
+  },
+  {
+    "id": "R-0005",
+    "form": "фӀэщӀ",
+    "dialect": "COMMON",
+    "meaning": {
+      "tr": "zannetmek, algılamak"
+    },
+    "wordFamily": {
+      "lexemeIds": [
+        "L-F1ESHCH1YN",
+        "L-KEYF-ESHCH"
+      ]
+    },
+    "productivity": {
+      "lemmaCount": 2
+    },
+    "verified": true
+  },
+  {
+    "id": "R-0006",
+    "form": "лъэхъшэ",
+    "dialect": "KBD",
+    "meaning": {
+      "tr": "alçak, rezil etmek"
+    },
+    "wordFamily": {
+      "lexemeIds": [
+        "L-GHELHEKHSHENYGHE",
+        "L-ZYGHELHEKHSHENYGHE"
+      ]
+    },
+    "productivity": {
+      "lemmaCount": 2
+    },
+    "verified": true
+  },
+  {
+    "id": "R-0007",
+    "form": "ещхьыркъэпс",
+    "dialect": "KBD",
+    "meaning": {
+      "tr": "isabetli, tam"
+    },
+    "wordFamily": {
+      "lexemeIds": [
+        "L-ESHCHHYRKEEPSU",
+        "L-ESHCHHYRKEEPS"
+      ]
+    },
+    "productivity": {
+      "lemmaCount": 2
+    },
+    "verified": true
+  },
+  {
+    "id": "R-0008",
+    "form": "жалгъ",
+    "dialect": "KBD",
+    "meaning": {
+      "tr": "ılgın ağacı"
+    },
+    "wordFamily": {
+      "lexemeIds": [
+        "L-ZHALGHEN",
+        "L-ZHALGHYN"
+      ]
+    },
+    "productivity": {
+      "lemmaCount": 2
+    },
+    "verified": true
+  },
+  {
+    "id": "R-0009",
+    "form": "пуды",
+    "dialect": "KBD",
+    "meaning": {
+      "tr": "rezil etmek"
+    },
+    "wordFamily": {
+      "lexemeIds": [
+        "L-GHEPUDYNYGHE",
+        "L-ZYGHEPUDYNYGHE"
+      ]
+    },
+    "productivity": {
+      "lemmaCount": 2
+    },
+    "verified": true
+  },
+  {
+    "id": "R-0010",
+    "form": "къэгъуэт",
+    "dialect": "KBD",
+    "meaning": {
+      "tr": "bulmak, bulunmak"
+    },
+    "wordFamily": {
+      "lexemeIds": [
+        "L-KEAGHUETA",
+        "L-KEEGHUATA"
+      ]
+    },
+    "productivity": {
+      "lemmaCount": 2
+    },
+    "verified": true
+  },
+  {
+    "id": "R-0011",
+    "form": "гъэфӀакӀуэ",
+    "dialect": "KBD",
+    "meaning": {
+      "tr": "gelişmek, geliştirmek"
+    },
+    "wordFamily": {
+      "lexemeIds": [
+        "L-EGHEF-EK-UENYGHE",
+        "L-EGHEF-EK-UA"
+      ]
+    },
+    "productivity": {
+      "lemmaCount": 2
+    },
+    "verified": true
   }
 ]

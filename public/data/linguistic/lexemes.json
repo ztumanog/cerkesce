@@ -720255,7 +720255,9 @@
       "en": "court"
     },
     "ipa": "/pɕіantіɐps/",
-    "rootIds": [],
+    "rootIds": [
+      "R-0001"
+    ],
     "dialectVariants": [
       "пкІантІ, пкІэнтІэпс"
     ],
@@ -720264,11 +720266,12 @@
     "etymologyType": "native",
     "meaning": "TER",
     "wordFamilyId": "WF-UNCLEAR",
-    "rootId": null,
+    "rootId": "R-0001",
     "dialect": "COMMON",
     "legacyIds": [
       "HUV6-ПЩІАНТІЭПС"
-    ]
+    ],
+    "rootForm": "пщӀантӀэпс"
   },
   {
     "id": "L-PSHCH1Y",
@@ -720385,7 +720388,9 @@
       "en": "bosuna"
     },
     "ipa": "/pɕіɐnʃɐw/",
-    "rootIds": [],
+    "rootIds": [
+      "R-0002"
+    ],
     "dialectVariants": [
       "нэкІэу, пкІэнчъэу, хьаолий, хьаолиеу"
     ],
@@ -720398,11 +720403,12 @@
     "etymologyType": "native",
     "meaning": "BOŞUNA",
     "wordFamilyId": "WF-UNCLEAR",
-    "rootId": null,
+    "rootId": "R-0002",
     "dialect": "COMMON",
     "legacyIds": [
       "HUV6-ПЩІЭНШЭУ"
-    ]
+    ],
+    "rootForm": "пщӀэншэ"
   },
   {
     "id": "L-PSHCH1ENSHEUE",
@@ -720414,7 +720420,9 @@
       "en": "bedava"
     },
     "ipa": "/pɕіɐnʃɐwɐ/",
-    "rootIds": [],
+    "rootIds": [
+      "R-0002"
+    ],
     "dialectVariants": [
       "пкІэнычъ, пкІэнчъэу, осэнчъ, осэнчъэу"
     ],
@@ -720423,11 +720431,12 @@
     "etymologyType": "native",
     "meaning": "BEDAVA",
     "wordFamilyId": "WF-UNCLEAR",
-    "rootId": null,
+    "rootId": "R-0002",
     "dialect": "KBD",
     "legacyIds": [
       "HUV6-ПЩІЭНШЭУЭ"
-    ]
+    ],
+    "rootForm": "пщӀэншэ"
   },
   {
     "id": "L-PSHCH1ETELHHE",
@@ -721648,7 +721657,9 @@
       "en": "hayli"
     },
     "ipa": "/fіǝkіеj/",
-    "rootIds": [],
+    "rootIds": [
+      "R-0003"
+    ],
     "dialectVariants": [
       "шІукІае"
     ],
@@ -721657,11 +721668,12 @@
     "etymologyType": "native",
     "meaning": "HAYLİ",
     "wordFamilyId": "WF-UNCLEAR",
-    "rootId": null,
+    "rootId": "R-0003",
     "dialect": "COMMON",
     "legacyIds": [
       "HUV6-ФІЫКІЕЙ"
-    ]
+    ],
+    "rootForm": "фӀыкӀей"
   },
   {
     "id": "L-F1YK1EYUE",
@@ -721674,7 +721686,9 @@
       "ru": "отменно, очень хорошо"
     },
     "ipa": "/fіǝkіеjwɐ/",
-    "rootIds": [],
+    "rootIds": [
+      "R-0003"
+    ],
     "dialectVariants": [
       "зыкъаум, бэкІаеу, шІукІаеу"
     ],
@@ -721687,11 +721701,12 @@
     "etymologyType": "native",
     "meaning": "EPEY HAYLİ",
     "wordFamilyId": "WF-UNCLEAR",
-    "rootId": null,
+    "rootId": "R-0003",
     "dialect": "KBD",
     "legacyIds": [
       "HUV6-ФІЫКІЕЙУЭ"
-    ]
+    ],
+    "rootForm": "фӀыкӀей"
   },
   {
     "id": "L-F1YLHAGHU",
@@ -722078,7 +722093,9 @@
       "en": "perva"
     },
     "ipa": "/fіɐlіǝkі/",
-    "rootIds": [],
+    "rootIds": [
+      "R-0004"
+    ],
     "dialectVariants": [
       "нэхаш, щынэ, шІолІыкІ"
     ],
@@ -722087,11 +722104,12 @@
     "etymologyType": "native",
     "meaning": "PERVA",
     "wordFamilyId": "WF-UNCLEAR",
-    "rootId": null,
+    "rootId": "R-0004",
     "dialect": "KBD",
     "legacyIds": [
       "HUV6-ФІЭЛІЫКІ"
-    ]
+    ],
+    "rootForm": "фӀэлӀыкӀ"
   },
   {
     "id": "L-F1EL1YK1YN",
@@ -722103,7 +722121,9 @@
       "ru": "неперех. гл. считаться с кем-л. is not a single one. ch. reckon with smb. )"
     },
     "ipa": "/fіɐlіǝkіǝn/",
-    "rootIds": [],
+    "rootIds": [
+      "R-0004"
+    ],
     "dialectVariants": [
       "шІолІыкІын"
     ],
@@ -722116,12 +722136,13 @@
     "etymologyType": "native",
     "meaning": "ÇEKİNMEK",
     "wordFamilyId": "WF-UNCLEAR",
-    "rootId": null,
+    "rootId": "R-0004",
     "partOfSpeech": "VERB",
     "dialect": "KBD",
     "legacyIds": [
       "HUV6-ФІЭЛІЫКІЫН"
-    ]
+    ],
+    "rootForm": "фӀэлӀыкӀ"
   },
   {
     "id": "L-F1EL1YK1YNSHAGHE",
@@ -722133,7 +722154,9 @@
       "en": "anarsi"
     },
     "ipa": "/fіɐlіǝkіǝnʃaʁɐ/",
-    "rootIds": [],
+    "rootIds": [
+      "R-0004"
+    ],
     "dialectVariants": [
       "шІолІыкІынчъагъ, хэбзэмыдагъэ"
     ],
@@ -722142,11 +722165,12 @@
     "etymologyType": "native",
     "meaning": "ANARŞİ",
     "wordFamilyId": "WF-UNCLEAR",
-    "rootId": null,
+    "rootId": "R-0004",
     "dialect": "COMMON",
     "legacyIds": [
       "HUV6-ФІЭЛІЫКІЫНШАГЪЭ"
-    ]
+    ],
+    "rootForm": "фӀэлӀыкӀ"
   },
   {
     "id": "L-F1EL1YK1YNSHE",
@@ -722158,7 +722182,9 @@
       "en": "derbeder"
     },
     "ipa": "/fіɐlіǝkіǝnʃɐ/",
-    "rootIds": [],
+    "rootIds": [
+      "R-0004"
+    ],
     "dialectVariants": [
       "зэхэулал, зэкІэулал, гугъуемылІ, шІомылІыкІ"
     ],
@@ -722167,11 +722193,12 @@
     "etymologyType": "native",
     "meaning": "DERBEDER",
     "wordFamilyId": "WF-UNCLEAR",
-    "rootId": null,
+    "rootId": "R-0004",
     "dialect": "COMMON",
     "legacyIds": [
       "HUV6-ФІЭЛІЫКІЫНШЭ"
-    ]
+    ],
+    "rootForm": "фӀэлӀыкӀ"
   },
   {
     "id": "L-F1EMYL1YK1",
@@ -722467,7 +722494,9 @@
       "ru": "i неперех. гл. казаться is not perfect. ch. seem)"
     },
     "ipa": "/fіɐɕіǝn/",
-    "rootIds": [],
+    "rootIds": [
+      "R-0005"
+    ],
     "dialectVariants": [
       "шІошІын"
     ],
@@ -722480,12 +722509,13 @@
     "etymologyType": "native",
     "meaning": "ZANNETMEK",
     "wordFamilyId": "WF-UNCLEAR",
-    "rootId": null,
+    "rootId": "R-0005",
     "partOfSpeech": "VERB",
     "dialect": "COMMON",
     "legacyIds": [
       "HUV6-ФІЭЩІЫН"
-    ]
+    ],
+    "rootForm": "фӀэщӀ"
   },
   {
     "id": "L-F1E1UN",
@@ -772761,18 +772791,21 @@
       "tr": "lowering"
     },
     "ipa": "/ʁɐɬɐχʃɐnǝʁɐ/",
-    "rootIds": [],
+    "rootIds": [
+      "R-0006"
+    ],
     "notes": "Kaynak: 5.Ady-Rus_Qarden.json, 19.Kbd-Ru-2-Jonty.json",
     "etymologyType": "native",
     "conceptNorm": "СНИЖЕНИЕ",
     "meaning": "lowering",
     "wordFamilyId": "WF-UNCLEAR",
-    "rootId": null,
+    "rootId": "R-0006",
     "conceptId": "LOWERING",
     "dialect": "KBD",
     "legacyIds": [
       "KAV-ГЪЭЛЪЭХЪШЭНЫГЪЭ"
-    ]
+    ],
+    "rootForm": "лъэхъшэ"
   },
   {
     "id": "L-ZHAL",
@@ -791676,18 +791709,21 @@
       "en": "perceived"
     },
     "ipa": "/qǝfʼɐɕʼ/",
-    "rootIds": [],
+    "rootIds": [
+      "R-0005"
+    ],
     "notes": "Kaynak: 20.Kbd-Ru-Jonty.json, 19.Kbd-Ru-2-Jonty.json",
     "etymologyType": "native",
     "conceptNorm": "QUALITY_ADJ",
     "meaning": "algılanan",
     "wordFamilyId": "WF-UNCLEAR",
-    "rootId": null,
+    "rootId": "R-0005",
     "conceptId": "PERCEIVED",
     "dialect": "KBD",
     "legacyIds": [
       "KAV-КЪЫФӀЭЩӀ"
-    ]
+    ],
+    "rootForm": "фӀэщӀ"
   },
   {
     "id": "L-IK-UETS-K-E",
@@ -792010,18 +792046,21 @@
       "en": "found"
     },
     "ipa": "/qaʁʷɐta/",
-    "rootIds": [],
+    "rootIds": [
+      "R-0010"
+    ],
     "notes": "Kaynak: 19.Kbd-Ru-2-Jonty.json, 20.Kbd-Ru-Jonty.json",
     "etymologyType": "native",
     "conceptNorm": "QUALITY_ADJ",
     "meaning": "bulunmak",
     "wordFamilyId": "WF-UNCLEAR",
-    "rootId": null,
+    "rootId": "R-0010",
     "conceptId": "FOUND",
     "dialect": "KBD",
     "legacyIds": [
       "KAV-КЪАГЪУЭТА"
-    ]
+    ],
+    "rootForm": "къэгъуэт"
   },
   {
     "id": "L-KEILHHEN",
@@ -792951,7 +792990,7 @@
     "ipa": "/sеkswalnɐ/",
     "rootIds": [],
     "notes": "Kaynak: 19.Kbd-Ru-2-Jonty.json, 20.Kbd-Ru-Jonty.json",
-    "etymologyType": "native",
+    "etymologyType": "loanword",
     "conceptNorm": "QUALITY_ADJ",
     "meaning": "cinsel",
     "wordFamilyId": "WF-UNCLEAR",
@@ -793229,7 +793268,7 @@
     "ipa": "/finans/",
     "rootIds": [],
     "notes": "Kaynak: 19.Kbd-Ru-2-Jonty.json, 5.Ady-Rus_Qarden.json",
-    "etymologyType": "native",
+    "etymologyType": "loanword",
     "conceptNorm": "QUALITY_ADJ",
     "meaning": "finansal",
     "wordFamilyId": "WF-UNCLEAR",
@@ -819359,7 +819398,9 @@
       "en": "accurately"
     },
     "ipa": "/еɕħǝrqɐpsw/",
-    "rootIds": [],
+    "rootIds": [
+      "R-0007"
+    ],
     "notes": "Kaynak: 19.Kbd-Ru-2-Jonty.json",
     "etymologyType": "native",
     "conceptNorm": "ТОЧНО",
@@ -819368,12 +819409,13 @@
     ],
     "meaning": "isabetli",
     "wordFamilyId": "WF-UNCLEAR",
-    "rootId": null,
+    "rootId": "R-0007",
     "conceptId": "ACCURATELY",
     "dialect": "KBD",
     "legacyIds": [
       "KAV-ЕЩХЬЫРКЪЭПСУ"
-    ]
+    ],
+    "rootForm": "ещхьыркъэпс"
   },
   {
     "id": "L-BZEUDEKUE",
@@ -828456,18 +828498,21 @@
       "en": "act. improvement"
     },
     "ipa": "/еʁɐfʼɐkʷʼɐnǝʁɐ/",
-    "rootIds": [],
+    "rootIds": [
+      "R-0011"
+    ],
     "notes": "Kaynak: 19.Kbd-Ru-2-Jonty.json",
     "etymologyType": "native",
     "conceptNorm": "УЛУЧШЕНИЕ",
     "meaning": "gelişme",
     "wordFamilyId": "WF-UNCLEAR",
-    "rootId": null,
+    "rootId": "R-0011",
     "conceptId": "ACT_IMPROVEMENT",
     "dialect": "KBD",
     "legacyIds": [
       "KAV-ЕГЪЭФӀЭКӀУЭНЫГЪ"
-    ]
+    ],
+    "rootForm": "гъэфӀакӀуэ"
   },
   {
     "id": "L-EF-EK-UENYGHE",
@@ -828594,19 +828639,22 @@
       "tr": "bot. tamarisk; Tamarix"
     },
     "ipa": "/жalʁɐn/",
-    "rootIds": [],
+    "rootIds": [
+      "R-0008"
+    ],
     "notes": "Kaynak: 1.Ady-Ady_AP.json",
     "etymologyType": "native",
     "conceptNorm": "ГРЕБЕНЩИК",
     "meaning": "bot. tamarisk; Tamarix",
     "wordFamilyId": "WF-UNCLEAR",
-    "rootId": null,
+    "rootId": "R-0008",
     "conceptId": "BOT",
     "partOfSpeech": "VERB",
     "dialect": "KBD",
     "legacyIds": [
       "KAV-ЖАЛГЪЭН"
-    ]
+    ],
+    "rootForm": "жалгъ"
   },
   {
     "id": "L-ZHANYGHUE",
@@ -847405,7 +847453,9 @@
       "en": "saying"
     },
     "ipa": "/pɕʼantʼɐps/",
-    "rootIds": [],
+    "rootIds": [
+      "R-0001"
+    ],
     "notes": "Kaynak: 5.Ady-Rus_Qarden.json",
     "literalMeaning": "TER",
     "literalMeaningSource": "ayni form (translations.tr) (orta)",
@@ -847413,12 +847463,13 @@
     "conceptNorm": "ПОТ",
     "meaning": "ter",
     "wordFamilyId": "WF-UNCLEAR",
-    "rootId": null,
+    "rootId": "R-0001",
     "conceptId": "SAYING",
     "dialect": "KBD",
     "legacyIds": [
       "KAV-ПЩӀАНТӀЭПС"
-    ]
+    ],
+    "rootForm": "пщӀантӀэпс"
   },
   {
     "id": "L-PSHCHAGUE",
@@ -856338,7 +856389,9 @@
       "en": "advanced"
     },
     "ipa": "/еʁɐfʼɐkʷʼa/",
-    "rootIds": [],
+    "rootIds": [
+      "R-0011"
+    ],
     "notes": "Kaynak: 19.Kbd-Ru-2-Jonty.json",
     "literalMeaning": "onde duran",
     "literalMeaningSource": "ru->tr (KAVRAM_ etiketi) (orta)",
@@ -856346,12 +856399,13 @@
     "conceptNorm": "QUALITY_ADJ",
     "meaning": "gelişmiş",
     "wordFamilyId": "WF-UNCLEAR",
-    "rootId": null,
+    "rootId": "R-0011",
     "conceptId": "ADVANCED",
     "dialect": "KBD",
     "legacyIds": [
       "KAV-ЕГЪЭФӀЭКӀУА"
-    ]
+    ],
+    "rootForm": "гъэфӀакӀуэ"
   },
   {
     "id": "L-EL-AL-EU",
@@ -857322,18 +857376,21 @@
       "en": "pereh. ch. spread out smth. in smth., under smth."
     },
     "ipa": "/qɐʁʷata/",
-    "rootIds": [],
+    "rootIds": [
+      "R-0010"
+    ],
     "notes": "Kaynak: 5.Ady-Rus_Qarden.json",
     "etymologyType": "native",
     "conceptNorm": "QUALITY_ADJ",
     "meaning": "bulunmak",
     "wordFamilyId": "WF-UNCLEAR",
-    "rootId": null,
+    "rootId": "R-0010",
     "conceptId": "SIT_UNDER",
     "dialect": "KBD",
     "legacyIds": [
       "KAV-КЪЭГЪУАТА"
-    ]
+    ],
+    "rootForm": "къэгъуэт"
   },
   {
     "id": "L-KEALHXUN",
@@ -858610,7 +858667,7 @@
     "ipa": "/tеxnologiе/",
     "rootIds": [],
     "notes": "Kaynak: 19.Kbd-Ru-2-Jonty.json",
-    "etymologyType": "native",
+    "etymologyType": "loanword",
     "conceptNorm": "ТЕХНОЛОГИИ",
     "meaning": "FEN",
     "wordFamilyId": "WF-UNCLEAR",
@@ -905497,19 +905554,22 @@
       "en": "see жалгъэн"
     },
     "ipa": "/жalʁǝn/",
-    "rootIds": [],
+    "rootIds": [
+      "R-0008"
+    ],
     "notes": "Kaynak: 1.Ady-Ady_AP.json",
     "etymologyType": "native",
     "conceptNorm": "ЖАЛГЪЭН",
     "meaning": "ILGIN",
     "wordFamilyId": "WF-UNCLEAR",
-    "rootId": null,
+    "rootId": "R-0008",
     "conceptId": "SEE",
     "partOfSpeech": "VERB",
     "dialect": "KBD",
     "legacyIds": [
       "KAV-ЖАЛГЪЫН"
-    ]
+    ],
+    "rootForm": "жалгъ"
   },
   {
     "id": "L-ZHALYUZI",
@@ -954316,18 +954376,21 @@
       "en": "humiliation"
     },
     "ipa": "/ʁɐpwdǝnǝʁɐ/",
-    "rootIds": [],
+    "rootIds": [
+      "R-0009"
+    ],
     "notes": "Kaynak: 19.Kbd-Ru-2-Jonty.json",
     "etymologyType": "native",
     "conceptNorm": "УНИЖЕНИЕ",
     "meaning": "REZİL",
     "wordFamilyId": "WF-UNCLEAR",
-    "rootId": null,
+    "rootId": "R-0009",
     "conceptId": "HUMILIATION",
     "dialect": "KBD",
     "legacyIds": [
       "KAV-ГЪЭПУДЫНЫГЪЭ"
-    ]
+    ],
+    "rootForm": "пуды"
   },
   {
     "id": "L-ZYXUEGHESHCHKHYNYGHE",
@@ -986597,7 +986660,7 @@
     "ipa": "/finansirovaniе/",
     "rootIds": [],
     "notes": "Kaynak: 19.Kbd-Ru-2-Jonty.json",
-    "etymologyType": "native",
+    "etymologyType": "loanword",
     "conceptNorm": "ФИНАНСИРОВАНИЕ",
     "meaning": "finansman",
     "wordFamilyId": "WF-UNCLEAR",
@@ -997752,18 +997815,21 @@
       "ar": "بدقة"
     },
     "ipa": "/еɕħǝrqɐps/",
-    "rootIds": [],
+    "rootIds": [
+      "R-0007"
+    ],
     "notes": "Kaynak: 19.Kbd-Ru-2-Jonty.json",
     "etymologyType": "native",
     "conceptNorm": "ХАРАКТЕРНО",
     "meaning": "karakteristik olarak",
     "wordFamilyId": "WF-UNCLEAR",
-    "rootId": null,
+    "rootId": "R-0007",
     "conceptId": "CHARACTERISTICALLY",
     "dialect": "KBD",
     "legacyIds": [
       "KAV-ЕЩХЬЫРКЪЭПС"
-    ]
+    ],
+    "rootForm": "ещхьыркъэпс"
   },
   {
     "id": "L-ESHCHESHCH-ANE",
@@ -1028639,7 +1028705,7 @@
     "ipa": "/sеkswalnɐw/",
     "rootIds": [],
     "notes": "Kaynak: 19.Kbd-Ru-2-Jonty.json",
-    "etymologyType": "native",
+    "etymologyType": "loanword",
     "conceptNorm": "СЕКСУАЛЬНО",
     "meaning": "cinsel açıdan",
     "wordFamilyId": "WF-UNCLEAR",
@@ -1032105,7 +1032171,7 @@
     "ipa": "/tеxnologiеxɐr/",
     "rootIds": [],
     "notes": "Kaynak: 19.Kbd-Ru-2-Jonty.json",
-    "etymologyType": "native",
+    "etymologyType": "loanword",
     "conceptNorm": "ТЕХНОЛОГИИ",
     "meaning": "teknoloji",
     "wordFamilyId": "WF-UNCLEAR",
@@ -1032129,7 +1032195,7 @@
     "ipa": "/tеxnologiеɕʼɐxɐr/",
     "rootIds": [],
     "notes": "Kaynak: 19.Kbd-Ru-2-Jonty.json",
-    "etymologyType": "native",
+    "etymologyType": "loanword",
     "conceptNorm": "QUALITY_ADJ",
     "meaning": "yüksek teknoloji",
     "wordFamilyId": "WF-UNCLEAR",
@@ -1032152,7 +1032218,7 @@
     "ipa": "/tеxnologitʃеskʷ/",
     "rootIds": [],
     "notes": "Kaynak: 19.Kbd-Ru-2-Jonty.json",
-    "etymologyType": "native",
+    "etymologyType": "loanword",
     "conceptNorm": "ТЕХНОЛОГИЧЕСКИ",
     "meaning": "technologically",
     "wordFamilyId": "WF-UNCLEAR",
@@ -1035974,7 +1036040,7 @@
     "ipa": "/finansxɐr/",
     "rootIds": [],
     "notes": "Kaynak: 19.Kbd-Ru-2-Jonty.json",
-    "etymologyType": "native",
+    "etymologyType": "loanword",
     "conceptNorm": "ФИНАНСЫ",
     "meaning": "finans",
     "wordFamilyId": "WF-UNCLEAR",
@@ -1056745,18 +1056811,21 @@
       "en": "Magpie"
     },
     "ipa": "/zǝʁɐɬɐχʃɐnǝʁɐ/",
-    "rootIds": [],
+    "rootIds": [
+      "R-0006"
+    ],
     "notes": "Kaynak: 5.Ady-Rus_Qarden.json",
     "etymologyType": "native",
     "conceptNorm": "ACTION_VERB",
     "meaning": "REZİL",
     "wordFamilyId": "WF-UNCLEAR",
-    "rootId": null,
+    "rootId": "R-0006",
     "conceptId": "WOBBLY",
     "dialect": "KBD",
     "legacyIds": [
       "KAV-ЗЫГЪЭЛЪЭХЪШЭНЫГ"
-    ]
+    ],
+    "rootForm": "лъэхъшэ"
   },
   {
     "id": "L-ZYGHEMYSEN",
@@ -1056849,18 +1056918,21 @@
       "en": "Magpie"
     },
     "ipa": "/zǝʁɐpwdǝnǝʁɐ/",
-    "rootIds": [],
+    "rootIds": [
+      "R-0009"
+    ],
     "notes": "Kaynak: 5.Ady-Rus_Qarden.json",
     "etymologyType": "native",
     "conceptNorm": "САМОУНИЧИЖЕНИЕ",
     "meaning": "REZİL",
     "wordFamilyId": "WF-UNCLEAR",
-    "rootId": null,
+    "rootId": "R-0009",
     "conceptId": "WOBBLY",
     "dialect": "KBD",
     "legacyIds": [
       "KAV-ЗЫГЪЭПУДЫНЫГЪЭ"
-    ]
+    ],
+    "rootForm": "пуды"
   },
   {
     "id": "L-ZYGHESABYRYN",
@@ -1140071,7 +1140143,7 @@
     },
     "pos": "UNKNOWN",
     "notes": "[Jonty]",
-    "etymologyType": "native",
+    "etymologyType": "loanword",
     "id": "L-AUTO-01555",
     "status": "SYNTHETIC",
     "synthetic_reason": "L-AUTO otomatik uretim, sozlukte yok, concept yok, POS yok",
