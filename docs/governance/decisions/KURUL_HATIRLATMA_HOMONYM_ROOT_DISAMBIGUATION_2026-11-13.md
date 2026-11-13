@@ -129,3 +129,8 @@ Guncel homonym metrikleri **yeniden olculmemistir**.
 - public/data/linguistic/roots.json içinde _source: "lexemes-sync-2026" aktarımı sırasında yüzey formu (orm) yanlışlıkla 'гу' (15 kayıt) ve 'Ӏэ' (14 kayıt) olarak kopyalanan **29 farklı kök/preverb** gerçek Kiril karşılıklarıyla güncellendi (R-GU ve R-1E kanonik kökleri korundu).
 - Kalan 11 eşsesli kök grubu (нэ, лъэ, тхьэ, гъащӀэ, дыд, уэ, ху, къуз, абазэ, лъэлъ, Ӏ) gerçek anlamsal/diyalekt ayrımını yansıttığı için korundu.
 - Doğrulama: 218/218 test dosyası (1085/1085 test) yeşil.
+
+## Ek Temizlik ve ADR-GOV-014 Teyidi (2026-11-13)
+
+- Yüzey formu ayrıştırması sonrası tespit edilen **5 boş/mükerrer kök** (R-GUBZH_2, R-GWEN, R-GWENYHH, R-GUESH_2, R-ZHY1E) kanonik karşılıklarıyla (R-GUBZH, R-GUEN, R-GUENYH, R-GUESH, R-ZHYI) birleştirilerek oots.json toplamı **4.034** kanonik köke indirildi; lexemes.json içindeki 36 referans güncellendi (rokenRootRefs: 0, lexWithLegacyRef: 0).
+- dialectBulk.test.ts çıktısındaki 25 farkın huvajLexicon.ts (ADR-GOV-014 tek doğruluk kaynağı) ile uyumlu olduğu, dolayısıyla dialectConverter.ts içinde Huvaj sözlüğünü gölgeleyecek override eklenmemesi gerektiği teyit edildi.
