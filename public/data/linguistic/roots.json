@@ -53701,7 +53701,8 @@
         "L-AUTO-00668",
         "L-AUTO-00723",
         "L-AUTO-00724",
-        "L-AUTO-00786"
+        "L-AUTO-00786",
+        "L-PYXU-SYXU"
       ]
     },
     "lexemeIds": [
@@ -61642,13 +61643,14 @@
     "productivity": {
       "lexemeCount": 1,
       "conceptCount": 1,
-      "lemmaCount": 1
+      "lemmaCount": 2
     },
     "_source": "lexemes-sync-2026",
     "wordFamily": {
       "id": "WF-BI",
       "lexemeIds": [
-        "L-ABI"
+        "L-ABI",
+        "L-AUTO-01244"
       ]
     }
   },
