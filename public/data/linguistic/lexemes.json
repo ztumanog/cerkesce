@@ -1161052,7 +1161052,8 @@
         "beyhude"
       ]
     },
-    "conceptId": "VAIN_USELESS"
+    "conceptId": "VAIN_USELESS",
+    "wordFamilyId": "WF-HAOLIY"
   },
   {
     "id": "L-ZYUSHCHYHAN",
@@ -1161070,7 +1161071,8 @@
         "yanaşmak"
       ]
     },
-    "conceptId": "CONTAMINATE_APPROACH"
+    "conceptId": "CONTAMINATE_APPROACH",
+    "wordFamilyId": "WF-ZYUSHCHYHAN"
   },
   {
     "id": "L-ZYUSHCHYHEN",
@@ -1161088,7 +1161090,8 @@
         "yanaşmak"
       ]
     },
-    "conceptId": "CONTAMINATE_APPROACH"
+    "conceptId": "CONTAMINATE_APPROACH",
+    "wordFamilyId": "WF-ZYUSHCHYHEN"
   },
   {
     "id": "L-PYSHEN",
@@ -1161106,7 +1161109,8 @@
         "iliştirmek"
       ]
     },
-    "conceptId": "TIE_ATTACH"
+    "conceptId": "TIE_ATTACH",
+    "wordFamilyId": "WF-PYSHEN"
   },
   {
     "id": "L-PYSHCHEN",
@@ -1161124,7 +1161128,8 @@
         "iliştirmek"
       ]
     },
-    "conceptId": "TIE_ATTACH"
+    "conceptId": "TIE_ATTACH",
+    "wordFamilyId": "WF-PYSHCHEN"
   },
   {
     "id": "L-SHYPKQENYGH",
@@ -1161142,7 +1161147,8 @@
         "doğruluk"
       ]
     },
-    "conceptId": "SERIOUSNESS_TRUTH"
+    "conceptId": "SERIOUSNESS_TRUTH",
+    "wordFamilyId": "WF-SHYPKQENYGH"
   },
   {
     "id": "L-SHCHYPKQENYGHE",
@@ -1161160,7 +1161166,8 @@
         "doğruluk"
       ]
     },
-    "conceptId": "SERIOUSNESS_TRUTH"
+    "conceptId": "SERIOUSNESS_TRUTH",
+    "wordFamilyId": "WF-SHCHYPKQENYGHE"
   },
   {
     "id": "L-CHEGHEON",
@@ -1161178,7 +1161185,8 @@
         "altına sokmak"
       ]
     },
-    "conceptId": "FUMIGATE_IMMERSE"
+    "conceptId": "FUMIGATE_IMMERSE",
+    "wordFamilyId": "WF-CHEGHEON"
   },
   {
     "id": "L-UGHUEIN",
@@ -1161197,7 +1161205,8 @@
         "biriktirmek"
       ]
     },
-    "conceptId": "GATHER_COLLECT"
+    "conceptId": "GATHER_COLLECT",
+    "wordFamilyId": "WF-UGHUEIN"
   },
   {
     "id": "L-ZEFEHYSYN",
@@ -1161216,7 +1161225,8 @@
         "bir araya getirmek"
       ]
     },
-    "conceptId": "GATHER_COLLECT"
+    "conceptId": "GATHER_COLLECT",
+    "wordFamilyId": "WF-ZEFEHYSYN"
   },
   {
     "id": "L-ZEHUEHYSYN",
@@ -1161235,7 +1161245,8 @@
         "bir araya getirmek"
       ]
     },
-    "conceptId": "GATHER_COLLECT"
+    "conceptId": "GATHER_COLLECT",
+    "wordFamilyId": "WF-ZEHUEHYSYN"
   },
   {
     "id": "L-FEGUSAGH",
@@ -1161253,7 +1161264,8 @@
         "gücenmiş"
       ]
     },
-    "conceptId": "OFFENDED_SULKING"
+    "conceptId": "OFFENDED_SULKING",
+    "wordFamilyId": "WF-FEGUSAGH"
   },
   {
     "id": "L-HUEGUSA",
@@ -1161271,6 +1161283,7 @@
         "gücenmiş"
       ]
     },
-    "conceptId": "OFFENDED_SULKING"
+    "conceptId": "OFFENDED_SULKING",
+    "wordFamilyId": "WF-HUEGUSA"
   }
 ]
