@@ -123,3 +123,33 @@ Bu bloker, asagidaki adimlarla cozuldu:
 
 KAPALI - M.2 + Faz 1 ile cozuldu.
 
+
+## BLOKER KAPANDI — MIGRATION TAMAMLANDI (2026-11-13)
+
+Bu bloker kaydi, SSOT ConceptId migration tamamlandigi icin KAPATILMISTIR.
+
+### Kapanis Kaniti
+
+| Kontrol | Sonuc |
+|---|---|
+| ConceptID import | 0 |
+| ConceptId import | 21 |
+| ConceptID.ts dosyasi | Silindi |
+| Tum testler | 218/218 dosya, 1085/1085 test |
+| tsc --noEmit | exit 0 |
+| git status | Temiz |
+
+### Cozum Adimlari (tumu tamamlandi)
+
+1. API parity: ConceptId.getValue() eklendi (7fda7f5)
+2. Bridge cozumu: Concept.ts'ten ConceptID kaldirildi (ef1edf3)
+3. Test katmani: 10 test dosyasi ConceptId'ye gecti (ef1edf3)
+4. Servis katmani: ConceptFacade donusturuldu (ef1edf3)
+5. Repository: ConceptRepository interface (df8360c)
+6. Guard testi: CanonicalIdentityGuard guncellendi (b59670a)
+7. Alias silme: ConceptID.ts silindi (03b221b)
+8. Test kapsami: ConceptId.test.ts eklendi (1b49efa, a03691f)
+
+### Sonuc
+
+BLOKER KAPALI. Migration tamamlandi.
