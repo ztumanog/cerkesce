@@ -713379,7 +713379,8 @@
     "dialect": "COMMON",
     "legacyIds": [
       "HUV4-ЦӀЫНЭ-ПСЫНЭ"
-    ]
+    ],
+    "isExempt": true
   },
   {
     "id": "L-TS-YXUPSE",
@@ -714352,7 +714353,8 @@
     "dialect": "COMMON",
     "legacyIds": [
       "HUV6-ГЪЭГУГЪЭ-ГЪЭПЦІ"
-    ]
+    ],
+    "isExempt": true
   },
   {
     "id": "L-GHEGHU",
@@ -717832,7 +717834,8 @@
     "dialect": "ADY",
     "legacyIds": [
       "HUV6-КХЪ-КХЪУ"
-    ]
+    ],
+    "isExempt": true
   },
   {
     "id": "L-KHAP1E",
@@ -719966,7 +719969,8 @@
     "dialect": "COMMON",
     "legacyIds": [
       "HUV6-ПЩЭ-ІУПХЭ"
-    ]
+    ],
+    "isExempt": true
   },
   {
     "id": "L-PSHCHEPX",
@@ -720859,7 +720863,8 @@
     "dialect": "ADY",
     "legacyIds": [
       "HUV6-ТХЫПХЪЭ-КІЫПХЪЭ"
-    ]
+    ],
+    "isExempt": true
   },
   {
     "id": "L-TXYPE",
@@ -723121,7 +723126,8 @@
     "dialect": "ADY",
     "legacyIds": [
       "HUV6-ХЪУ-БЗЫГЪЭ"
-    ]
+    ],
+    "isExempt": true
   },
   {
     "id": "L-KHUAPSASHE",
@@ -1092579,7 +1092585,8 @@
     "dialect": "KBD",
     "legacyIds": [
       "KAV-ПХЫ--2"
-    ]
+    ],
+    "isExempt": true
   },
   {
     "id": "L-XUSHCHHE-SHCHATEU",
@@ -1092879,7 +1092886,8 @@
     "dialect": "KBD",
     "legacyIds": [
       "KAV-ПЫКӀ-ПЫХЬЭ-2"
-    ]
+    ],
+    "isExempt": true
   },
   {
     "id": "L-P-ARE-P-ARE",
@@ -1093063,7 +1093071,8 @@
     "dialect": "KBD",
     "legacyIds": [
       "KAV-ХЪУНКӀЭРИ-ХЪУН-2"
-    ]
+    ],
+    "isExempt": true
   },
   {
     "id": "L-SHCH-ESHCHYGHUE-SHCH-ESHCHYGHUEURE",
@@ -1093456,7 +1093465,8 @@
     "dialect": "KBD",
     "legacyIds": [
       "KAV-ЗЫФЭ-ЗЫЛЭ-2"
-    ]
+    ],
+    "isExempt": true
   },
   {
     "id": "L-ZERYH-ZERIY",
@@ -1093534,7 +1093544,8 @@
     "dialect": "KBD",
     "legacyIds": [
       "KAV-ЗЭХЪУН-ЗЭӀУЩЭ-2"
-    ]
+    ],
+    "isExempt": true
   },
   {
     "id": "L-KEE-KBD",
@@ -1093933,7 +1093944,8 @@
     "dialect": "KBD",
     "legacyIds": [
       "KAV-АЛЫХЬ-БИЛЫХЬ-2"
-    ]
+    ],
+    "isExempt": true
   },
   {
     "id": "L-ANESHXUE-ADESHXUE",
@@ -1094016,7 +1094028,8 @@
     "dialect": "KBD",
     "legacyIds": [
       "KAV-АХЭР-ЕЗЫХЭР-2"
-    ]
+    ],
+    "isExempt": true
   },
   {
     "id": "L-A-UZHYZH-MY-UZHYZH",
@@ -1094641,7 +1094654,8 @@
     "dialect": "KBD",
     "legacyIds": [
       "KAV-КОКА-КОЛА-2"
-    ]
+    ],
+    "isExempt": true
   },
   {
     "id": "L-KEABZAGH-E",
@@ -1094698,7 +1094712,8 @@
     "dialect": "KBD",
     "legacyIds": [
       "KAV-КЪУАБЭ-БЖЬАБЭ-2"
-    ]
+    ],
+    "isExempt": true
   },
   {
     "id": "L-KUEANSHAGH-E",
@@ -1095301,7 +1095316,8 @@
     "dialect": "KBD",
     "legacyIds": [
       "KAV-ТР--2"
-    ]
+    ],
+    "isExempt": true
   },
   {
     "id": "L-T-EK-U-T-EK-U",
@@ -1095385,7 +1095401,8 @@
     "dialect": "KBD",
     "legacyIds": [
       "KAV-ФӀЭ--2"
-    ]
+    ],
+    "isExempt": true
   },
   {
     "id": "L-HECHE-HEPSEU",
@@ -1096022,7 +1096039,8 @@
     "dialect": "KBD",
     "legacyIds": [
       "KAV--РИ"
-    ]
+    ],
+    "isExempt": true
   },
   {
     "id": "L-TEME",
@@ -1096045,7 +1096063,8 @@
     "dialect": "KBD",
     "legacyIds": [
       "KAV--ТЭМЭ"
-    ]
+    ],
+    "isExempt": true
   },
   {
     "id": "L-T-E",
@@ -1096354,7 +1096373,8 @@
     "dialect": "KBD",
     "legacyIds": [
       "KAV-БУРЖУАЗНО-ДЕМОКРАТИЧЕСКЭ"
-    ]
+    ],
+    "isExempt": true
   },
   {
     "id": "L-BYM-SYM",
@@ -1096412,7 +1096432,8 @@
     "dialect": "KBD",
     "legacyIds": [
       "KAV-ВЕБ-КАМЕРА"
-    ]
+    ],
+    "isExempt": true
   },
   {
     "id": "L-VEB-SAYT",
@@ -1096436,7 +1096457,8 @@
     "dialect": "KBD",
     "legacyIds": [
       "KAV-ВЕБ-САЙТ"
-    ]
+    ],
+    "isExempt": true
   },
   {
     "id": "L-VEST-INDIE",
@@ -1096459,7 +1096481,8 @@
     "dialect": "KBD",
     "legacyIds": [
       "KAV-ВЕСТ-ИНДИЕ"
-    ]
+    ],
+    "isExempt": true
   },
   {
     "id": "L-VITSE-PREZIDENT",
@@ -1096482,7 +1096505,8 @@
     "dialect": "KBD",
     "legacyIds": [
       "KAV-ВИЦЕ-ПРЕЗИДЕНТ"
-    ]
+    ],
+    "isExempt": true
   },
   {
     "id": "L-VOENNO-MORSKOY",
@@ -1096505,7 +1096529,8 @@
     "dialect": "KBD",
     "legacyIds": [
       "KAV-ВОЕННО-МОРСКОЙ"
-    ]
+    ],
+    "isExempt": true
   },
   {
     "id": "L-GUR-GUR",
@@ -1096778,7 +1096803,8 @@
     "dialect": "KBD",
     "legacyIds": [
       "KAV-ГЪУАБЖЭ-ФӀЫЦӀАФЭ"
-    ]
+    ],
+    "isExempt": true
   },
   {
     "id": "L-GHUE-KEARE",
@@ -1097115,7 +1097141,8 @@
     "dialect": "KBD",
     "legacyIds": [
       "KAV-ДИ-ВИ-ДИ"
-    ]
+    ],
+    "isExempt": true
   },
   {
     "id": "L-E",
@@ -1097330,7 +1097357,8 @@
     "dialect": "KBD",
     "legacyIds": [
       "KAV-ЗЭБЫН-ЗЭУНЭ"
-    ]
+    ],
+    "isExempt": true
   },
   {
     "id": "L-ZEK-E-KBD",
@@ -1097522,7 +1097550,8 @@
     "dialect": "KBD",
     "legacyIds": [
       "KAV-ИПЩЭ-КХЪУХЬЭПӀЭ"
-    ]
+    ],
+    "isExempt": true
   },
   {
     "id": "L-IPSHCHE-KUEHEP-E",
@@ -1097596,7 +1097625,8 @@
     "dialect": "KBD",
     "legacyIds": [
       "KAV-ИРЕ-"
-    ]
+    ],
+    "isExempt": true
   },
   {
     "id": "L-IRI",
@@ -1097619,7 +1097649,8 @@
     "dialect": "KBD",
     "legacyIds": [
       "KAV-ИРИ-"
-    ]
+    ],
+    "isExempt": true
   },
   {
     "id": "L-ISHCHKHERE-KHUHEP-E",
@@ -1097643,7 +1097674,8 @@
     "dialect": "KBD",
     "legacyIds": [
       "KAV-ИЩХЪЭРЭ-КХЪУХЬЭПӀЭ"
-    ]
+    ],
+    "isExempt": true
   },
   {
     "id": "L-ISHCHKHERE-KUEHEP-E",
@@ -1097717,7 +1097749,8 @@
     "dialect": "KBD",
     "legacyIds": [
       "KAV-ЙО-ЙО"
-    ]
+    ],
+    "isExempt": true
   },
   {
     "id": "L-KASHTAN-TAU",
@@ -1097740,7 +1097773,8 @@
     "dialect": "KBD",
     "legacyIds": [
       "KAV-КАШТАН-ТАУ"
-    ]
+    ],
+    "isExempt": true
   },
   {
     "id": "L-KOK-SAGYZ",
@@ -1097763,7 +1097797,8 @@
     "dialect": "KBD",
     "legacyIds": [
       "KAV-КОК-САГЫЗ"
-    ]
+    ],
+    "isExempt": true
   },
   {
     "id": "L-KONFERENTS-ZAL",
@@ -1097910,7 +1097945,8 @@
     "dialect": "KBD",
     "legacyIds": [
       "KAV-КЪУАЦЭ-ЧЫЦЭ"
-    ]
+    ],
+    "isExempt": true
   },
   {
     "id": "L-KUEELEN-PSHCH-ELEN",
@@ -1098103,7 +1098139,8 @@
     "dialect": "KBD",
     "legacyIds": [
       "KAV-КЫС-КЫС-КЫС"
-    ]
+    ],
+    "isExempt": true
   },
   {
     "id": "L-K-ATE-LHATEU",
@@ -1098126,7 +1098163,8 @@
     "dialect": "KBD",
     "legacyIds": [
       "KAV-КӀАТЭ-ЛЪАТЭУ"
-    ]
+    ],
+    "isExempt": true
   },
   {
     "id": "L-K-UAP-E-ZHAP-ENSHEU",
@@ -1098149,7 +1098187,8 @@
     "dialect": "KBD",
     "legacyIds": [
       "KAV-КӀУАПӀЭ-ЖАПӀЭНШЭУ"
-    ]
+    ],
+    "isExempt": true
   },
   {
     "id": "L-K-YGH-SYGH",
@@ -1098310,7 +1098349,8 @@
     "dialect": "KBD",
     "legacyIds": [
       "KAV-ЛА-МАНШ"
-    ]
+    ],
+    "isExempt": true
   },
   {
     "id": "L-LANT-AGH-E",
@@ -1098506,7 +1098546,8 @@
     "dialect": "KBD",
     "legacyIds": [
       "KAV-МАРКСИЗМ-ЛЕНИНИЗМ"
-    ]
+    ],
+    "isExempt": true
   },
   {
     "id": "L-MASHCH-I-KUEDA-I",
@@ -1098529,7 +1098570,8 @@
     "dialect": "KBD",
     "legacyIds": [
       "KAV-МАЩӀИ-КУЭДА(И)"
-    ]
+    ],
+    "isExempt": true
   },
   {
     "id": "L-MORE-GHUEZHYFE",
@@ -1098677,7 +1098719,8 @@
     "dialect": "KBD",
     "legacyIds": [
       "KAV-МЫЗЭ-МЫТӀЭ"
-    ]
+    ],
+    "isExempt": true
   },
   {
     "id": "L-MYIN-MYTS-YK-U",
@@ -1098902,7 +1098945,8 @@
     "dialect": "KBD",
     "legacyIds": [
       "KAV-НАРОДНО-ДЕМОКРАТИЧЕСКЭ"
-    ]
+    ],
+    "isExempt": true
   },
   {
     "id": "L-NEHEK-KEEHEK",
@@ -1099203,7 +1099247,8 @@
     "dialect": "KBD",
     "legacyIds": [
       "KAV-ПА-ДЕ-КАЛЕ"
-    ]
+    ],
+    "isExempt": true
   },
   {
     "id": "L-PK-E-UNE",
@@ -1099252,7 +1099297,8 @@
     "dialect": "KBD",
     "legacyIds": [
       "KAV-ПКӀЭН-ЛЪЭН"
-    ]
+    ],
+    "isExempt": true
   },
   {
     "id": "L-PLASH-PALATKE",
@@ -1099275,7 +1099321,8 @@
     "dialect": "KBD",
     "legacyIds": [
       "KAV-ПЛАШ-ПАЛАТКЭ"
-    ]
+    ],
+    "isExempt": true
   },
   {
     "id": "L-PLEY-OFF",
@@ -1099299,7 +1099346,8 @@
     "dialect": "KBD",
     "legacyIds": [
       "KAV-ПЛЕЙ-ОФФ"
-    ]
+    ],
+    "isExempt": true
   },
   {
     "id": "L-PLHYZH-FYTS-AFE",
@@ -1099347,7 +1099395,8 @@
     "dialect": "KBD",
     "legacyIds": [
       "KAV-ПОЛИЦАЙ-ЦӀЫХУБЗ"
-    ]
+    ],
+    "isExempt": true
   },
   {
     "id": "L-PREMER-MINISTR",
@@ -1099428,7 +1099477,8 @@
     "dialect": "KBD",
     "legacyIds": [
       "KAV-ПРЕСС-КОНФЕРЕНЦИЕ"
-    ]
+    ],
+    "isExempt": true
   },
   {
     "id": "L-PSYGHUAGH-E",
@@ -1099517,7 +1099567,8 @@
     "dialect": "KBD",
     "legacyIds": [
       "KAV-ПЫРЫ-"
-    ]
+    ],
+    "isExempt": true
   },
   {
     "id": "L-PYXU-SYXU",
@@ -1099567,7 +1099618,8 @@
     "dialect": "KBD",
     "legacyIds": [
       "KAV-СЕВЕРО-ВОСТОК"
-    ]
+    ],
+    "isExempt": true
   },
   {
     "id": "L-SEVERO-ZAPAD",
@@ -1099590,7 +1099642,8 @@
     "dialect": "KBD",
     "legacyIds": [
       "KAV-СЕВЕРО-ЗАПАД"
-    ]
+    ],
+    "isExempt": true
   },
   {
     "id": "L-SEVERO-ZAPADNE",
@@ -1099613,7 +1099666,8 @@
     "dialect": "KBD",
     "legacyIds": [
       "KAV-СЕВЕРО-ЗАПАДНЭ"
-    ]
+    ],
+    "isExempt": true
   },
   {
     "id": "L-SOTSIAL-DEMOKRAT",
@@ -1099636,7 +1099690,8 @@
     "dialect": "KBD",
     "legacyIds": [
       "KAV-СОЦИАЛ-ДЕМОКРАТ"
-    ]
+    ],
+    "isExempt": true
   },
   {
     "id": "L-SOTSIAL-DEMOKRATIE",
@@ -1099659,7 +1099714,8 @@
     "dialect": "KBD",
     "legacyIds": [
       "KAV-СОЦИАЛ-ДЕМОКРАТИЕ"
-    ]
+    ],
+    "isExempt": true
   },
   {
     "id": "L-SOTSIAL-DEMOKRATICHESKE",
@@ -1099682,7 +1099738,8 @@
     "dialect": "KBD",
     "legacyIds": [
       "KAV-СОЦИАЛ-ДЕМОКРАТИЧЕСКЭ"
-    ]
+    ],
+    "isExempt": true
   },
   {
     "id": "L-SYR-DARYA",
@@ -1099730,7 +1099787,8 @@
     "dialect": "KBD",
     "legacyIds": [
       "KAV-ТОК-ШОУ"
-    ]
+    ],
+    "isExempt": true
   },
   {
     "id": "L-TYRKUE-TYRKU",
@@ -1099801,7 +1099859,8 @@
     "dialect": "KBD",
     "legacyIds": [
       "KAV-УПСЭУ-АПЩИ"
-    ]
+    ],
+    "isExempt": true
   },
   {
     "id": "L-FINAL-NYKUEE",
@@ -1099824,7 +1099883,8 @@
     "dialect": "KBD",
     "legacyIds": [
       "KAV-ФИНАЛ-НЫКЪУЭ"
-    ]
+    ],
+    "isExempt": true
   },
   {
     "id": "L-FYZABEKUEE-FYZABEPKHU",
@@ -1099879,7 +1099939,8 @@
     "dialect": "KBD",
     "legacyIds": [
       "KAV-ХАЙ-ТЕК"
-    ]
+    ],
+    "isExempt": true
   },
   {
     "id": "L-XIP-XOP",
@@ -1099902,7 +1099963,8 @@
     "dialect": "KBD",
     "legacyIds": [
       "KAV-ХИП-ХОП"
-    ]
+    ],
+    "isExempt": true
   },
   {
     "id": "L-XOT-DOG",
@@ -1099925,7 +1099987,8 @@
     "dialect": "KBD",
     "legacyIds": [
       "KAV-ХОТ-ДОГ"
-    ]
+    ],
+    "isExempt": true
   },
   {
     "id": "L-XUZH-THEMBYLYFE",
@@ -1100109,7 +1100172,8 @@
     "dialect": "KBD",
     "legacyIds": [
       "KAV-ХЫБЖ-ДЖАБЭХУ"
-    ]
+    ],
+    "isExempt": true
   },
   {
     "id": "L-XYBZH-PSYUTX",
@@ -1100132,7 +1100196,8 @@
     "dialect": "KBD",
     "legacyIds": [
       "KAV-ХЫБЖ-ПСЫУТХ"
-    ]
+    ],
+    "isExempt": true
   },
   {
     "id": "L-HILAGH-E",
@@ -1100213,7 +1100278,8 @@
     "dialect": "KBD",
     "legacyIds": [
       "KAV-ХЭПЩӀЫКӀ-КЪУДЕЙУЭ"
-    ]
+    ],
+    "isExempt": true
   },
   {
     "id": "L-TS-YR-TS-YR",
@@ -1100393,7 +1100459,8 @@
     "dialect": "KBD",
     "legacyIds": [
       "KAV-ШТРИХ-КОД"
-    ]
+    ],
+    "isExempt": true
   },
   {
     "id": "L-SHXOSHX-APSHCHI",
@@ -1100416,7 +1100483,8 @@
     "dialect": "KBD",
     "legacyIds": [
       "KAV-ШХОШХ-АПЩИ"
-    ]
+    ],
+    "isExempt": true
   },
   {
     "id": "L-SHYNE-SHYNE",
@@ -1100865,7 +1100933,8 @@
     "dialect": "KBD",
     "legacyIds": [
       "KAV-ЮГО-ВОСТОК"
-    ]
+    ],
+    "isExempt": true
   },
   {
     "id": "L-YUGO-ZAPAD",
@@ -1100888,7 +1100957,8 @@
     "dialect": "KBD",
     "legacyIds": [
       "KAV-ЮГО-ЗАПАД"
-    ]
+    ],
+    "isExempt": true
   },
   {
     "id": "L-U-KBD",
@@ -1102991,7 +1103061,8 @@
     "rootId": null,
     "conceptId": "JUSTICE",
     "dialect": "ADY",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "ипэу",
@@ -1103365,7 +1103436,8 @@
     "rootId": null,
     "conceptId": "UNCLASSIFIED",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "текӀэ",
@@ -1103723,7 +1103795,8 @@
     "rootId": null,
     "conceptId": "HOWEVER",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "дэгъэчъы",
@@ -1104152,7 +1104225,8 @@
     "rootId": null,
     "conceptId": "VERY_WELL",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "икӀыб",
@@ -1114384,7 +1114458,8 @@
     "rootId": null,
     "conceptId": "GROOM",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "зэщыхуэпыкӀын",
@@ -1125862,7 +1125937,8 @@
     "rootId": null,
     "conceptId": "ADVERB",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "хужьагъ",
@@ -1130657,7 +1130733,8 @@
     "rootId": null,
     "conceptId": "CORRUPT",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "Ӏущагъ",
@@ -1131335,7 +1131412,8 @@
     "rootId": null,
     "conceptId": "DVD",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "абы емылъытауэ",
@@ -1131357,7 +1131435,8 @@
     "rootId": null,
     "conceptId": "NONETHELESS",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "абы и",
@@ -1131379,7 +1131458,8 @@
     "rootId": null,
     "conceptId": "HIS",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "абы къыдэкӀуэу",
@@ -1131401,7 +1131481,8 @@
     "rootId": null,
     "conceptId": "MEANWHILE",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "абы къыхэкӀу",
@@ -1131423,7 +1131504,8 @@
     "rootId": null,
     "conceptId": "THEREBY",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "абы щхьэкӀэ къэмынэу",
@@ -1131445,7 +1131527,8 @@
     "rootId": null,
     "conceptId": "NEVERTHELESS",
     "dialect": "KBD",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "абы щыгъуи",
@@ -1131467,7 +1131550,8 @@
     "rootId": null,
     "conceptId": "WHEREAS",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "аварие хъун",
@@ -1131536,7 +1131620,8 @@
     "rootId": null,
     "conceptId": "PARTICULAR",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "адрейхэм емыщхьу",
@@ -1131558,7 +1131643,8 @@
     "rootId": null,
     "conceptId": "PARTICULARLY",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "акъылым и зэфӀэкӀ",
@@ -1131604,7 +1131690,8 @@
     "rootId": null,
     "conceptId": "ALLERGIC",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "апхуэдэ къабзэу",
@@ -1131626,7 +1131713,8 @@
     "rootId": null,
     "conceptId": "SIMILARLY",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "ар дыдэ",
@@ -1131648,7 +1131736,8 @@
     "rootId": null,
     "conceptId": "SAME",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "аразы щӀын",
@@ -1131695,7 +1131784,8 @@
     "rootId": null,
     "conceptId": "SPONSOR",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "ба хуэщӀын",
@@ -1131718,7 +1131808,8 @@
     "conceptId": "KISS",
     "partOfSpeech": "VERB",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "банкрот хъун",
@@ -1131961,7 +1132052,8 @@
     "rootId": null,
     "conceptId": "STABLE",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "бэджэнду къэщтэн",
@@ -1131984,7 +1132076,8 @@
     "conceptId": "RENT",
     "partOfSpeech": "VERB",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "бэлыхь хэгъэтын",
@@ -1132056,7 +1132149,8 @@
     "conceptId": "VETO",
     "partOfSpeech": "VERB",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "входные данные",
@@ -1132078,7 +1132172,8 @@
     "rootId": null,
     "conceptId": "INPUT",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "газ зыхэт",
@@ -1132149,7 +1132244,8 @@
     "rootId": null,
     "conceptId": "GRILLED",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "гугъапӀэшхуэ зиӀэ",
@@ -1132669,7 +1132765,8 @@
     "rootId": null,
     "conceptId": "SEASON",
     "dialect": "KBD",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "гъэмахуэ вакъэ",
@@ -1132739,7 +1132836,8 @@
     "rootId": null,
     "conceptId": "ANYWAY",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "дахэ дыдэ",
@@ -1132761,7 +1132859,8 @@
     "rootId": null,
     "conceptId": "LOVELY",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "делэ хъуа",
@@ -1132783,7 +1132882,8 @@
     "rootId": null,
     "conceptId": "MAD",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "дзыхь хуэщӀын",
@@ -1132879,7 +1132979,8 @@
     "rootId": null,
     "conceptId": "UNFORTUNATELY",
     "dialect": "KBD",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "дин ӀуэхущӀапӀэ",
@@ -1132925,7 +1133026,8 @@
     "rootId": null,
     "conceptId": "GRADUATION",
     "dialect": "KBD",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "доклад щӀын",
@@ -1133044,7 +1133146,8 @@
     "rootId": null,
     "conceptId": "AMBULANCE",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "еджапӀэр къэзыух",
@@ -1133066,7 +1133169,8 @@
     "rootId": null,
     "conceptId": "GRADUATE",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "екӀуэлӀапӀэ зиӀэ",
@@ -1133088,7 +1133192,8 @@
     "rootId": null,
     "conceptId": "AVAILABLE",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "етӀуанэ шхыныгъуэ",
@@ -1133110,7 +1133215,8 @@
     "rootId": null,
     "conceptId": "MAIN_COURSE",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "ехъулӀэныгъэ зиӀэ",
@@ -1133132,7 +1133238,8 @@
     "rootId": null,
     "conceptId": "SUCCESSFUL",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "ехъулӀэныгъэ иӀэу",
@@ -1133154,7 +1133261,8 @@
     "rootId": null,
     "conceptId": "SUCCESSFULLY",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "жаӀэр гъэзэщӀэн",
@@ -1133177,7 +1133285,8 @@
     "conceptId": "COMPLY",
     "partOfSpeech": "VERB",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "жей кӀэщӀ",
@@ -1133223,7 +1133332,8 @@
     "rootId": null,
     "conceptId": "SYNAGOGUE",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "жыгыку быдэ",
@@ -1133245,7 +1133355,8 @@
     "rootId": null,
     "conceptId": "TIMBER",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "жыжьагъ",
@@ -1133293,7 +1133404,8 @@
     "rootId": null,
     "conceptId": "INSIGHT",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "жыжьэу щыӀэ",
@@ -1133315,7 +1133427,8 @@
     "rootId": null,
     "conceptId": "REMOTE",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "жылэ цӀыху",
@@ -1133433,7 +1133546,8 @@
     "rootId": null,
     "conceptId": "VIOLENT",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "занщӀэу дэкӀуей",
@@ -1133455,7 +1133569,8 @@
     "rootId": null,
     "conceptId": "VERTICAL",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "здэщыӀэ щӀыпӀэ",
@@ -1133477,7 +1133592,8 @@
     "rootId": null,
     "conceptId": "LOCATION",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "зи гурэ зи щхьэрэ зытелъ",
@@ -1133499,7 +1133615,8 @@
     "rootId": null,
     "conceptId": "CONFIDENT",
     "dialect": "KBD",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "зи ныбжь хэкӀуэта",
@@ -1133545,7 +1133662,8 @@
     "rootId": null,
     "conceptId": "DIVORCED",
     "dialect": "KBD",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "зи фӀэщӀыгъэцӀэ",
@@ -1133567,7 +1133685,8 @@
     "rootId": null,
     "conceptId": "SOCALLED",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "зы лъэныкъуэкӀэ",
@@ -1133589,7 +1133708,8 @@
     "rootId": null,
     "conceptId": "SOMEWHAT",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "зы лъэныкъуэм кӀуэ",
@@ -1133636,7 +1133756,8 @@
     "conceptId": "AFFECT",
     "partOfSpeech": "VERB",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "зыгуэр хэщӀыхьыныгъэ",
@@ -1133658,7 +1133779,8 @@
     "rootId": null,
     "conceptId": "IMPACT",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "зыгъэпсэхугъуэ махуэхэр",
@@ -1133680,7 +1133802,8 @@
     "rootId": null,
     "conceptId": "WEEKEND",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "зыми дэмыщӀ",
@@ -1133702,7 +1133825,8 @@
     "rootId": null,
     "conceptId": "NEUTRAL",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "зыплъыхьакӀуэр хэзыгъэгъуазэ тхылъ",
@@ -1133748,7 +1133872,8 @@
     "rootId": null,
     "conceptId": "SURPRISE",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "зыуэ щытын",
@@ -1133771,7 +1133896,8 @@
     "conceptId": "INTEGRITY",
     "partOfSpeech": "VERB",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "зыхуей хуэгъэзэн",
@@ -1133794,7 +1133920,8 @@
     "conceptId": "CATER",
     "partOfSpeech": "VERB",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "зыхуэдэ щымыӀэ",
@@ -1133816,7 +1133943,8 @@
     "rootId": null,
     "conceptId": "UNIQUE",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "зыхъумэжыным епха",
@@ -1133838,7 +1133966,8 @@
     "rootId": null,
     "conceptId": "DEFENSIVE",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "зэ закъуэ",
@@ -1133860,7 +1133989,8 @@
     "rootId": null,
     "conceptId": "ONCE",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "зэбгъурылъ итхъа",
@@ -1133907,7 +1134037,8 @@
     "conceptId": "PARTNERSHIP",
     "partOfSpeech": "VERB",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "зэдауэ къэзышэ",
@@ -1133929,7 +1134060,8 @@
     "rootId": null,
     "conceptId": "MAMA",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "зэикӀ щымыӀа",
@@ -1133951,7 +1134083,8 @@
     "rootId": null,
     "conceptId": "EXCLUSIVE",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "зэпсэлъэныгъэ игъэкӀуэкӀын",
@@ -1133974,7 +1134107,8 @@
     "conceptId": "NEGOTIATE",
     "partOfSpeech": "VERB",
     "dialect": "KBD",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "зэрыхъу бжыгъэ",
@@ -1134021,7 +1134155,8 @@
     "conceptId": "MINIMIZE",
     "partOfSpeech": "VERB",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "зэрыщыт дыдэу",
@@ -1134043,7 +1134178,8 @@
     "rootId": null,
     "conceptId": "LITERAL",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "зэхъуэкӀыныгъэ ин",
@@ -1134066,7 +1134202,8 @@
     "conceptId": "COUP",
     "partOfSpeech": "VERB",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "зэшыпхъухэм я бын",
@@ -1134113,7 +1134250,8 @@
     "rootId": null,
     "conceptId": "PHYSICALLY",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "и гум щӀыхьэн",
@@ -1134136,7 +1134274,8 @@
     "conceptId": "IMPRESS",
     "partOfSpeech": "VERB",
     "dialect": "KBD",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "и кӀыхьагъкӀэ",
@@ -1134158,7 +1134297,8 @@
     "rootId": null,
     "conceptId": "THROUGHOUT",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "и кум ит",
@@ -1134180,7 +1134320,8 @@
     "rootId": null,
     "conceptId": "CENTRAL",
     "dialect": "KBD",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "и насыпти",
@@ -1134202,7 +1134343,8 @@
     "rootId": null,
     "conceptId": "FORTUNATELY",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "и цӀэр къиӀуэн",
@@ -1134225,7 +1134367,8 @@
     "conceptId": "MENTION",
     "partOfSpeech": "VERB",
     "dialect": "KBD",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "и щӀагъымкӀэ",
@@ -1134247,7 +1134390,8 @@
     "rootId": null,
     "conceptId": "BELOW",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "и щыгум",
@@ -1134269,7 +1134413,8 @@
     "rootId": null,
     "conceptId": "ATOP",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "игу щыкӀа",
@@ -1134291,7 +1134436,8 @@
     "rootId": null,
     "conceptId": "DISAPPOINTED",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "иджыри къэс",
@@ -1134313,7 +1134459,8 @@
     "rootId": null,
     "conceptId": "STILL",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "из щӀын",
@@ -1134385,7 +1134532,8 @@
     "rootId": null,
     "conceptId": "ULTIMATE",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "илъэс къэс",
@@ -1134456,7 +1134604,8 @@
     "conceptId": "INSPECT",
     "partOfSpeech": "VERB",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "ип ита",
@@ -1134478,7 +1134627,8 @@
     "rootId": null,
     "conceptId": "PREVIOUS",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "ипэ иту къэщэхун",
@@ -1134501,7 +1134651,8 @@
     "conceptId": "RESERVE",
     "partOfSpeech": "VERB",
     "dialect": "KBD",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "ипэ кӀуэтэн",
@@ -1134524,7 +1134675,8 @@
     "conceptId": "ADVANCE",
     "partOfSpeech": "VERB",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "ипэ узэӀэбэкӀыжмэ",
@@ -1134546,7 +1134698,8 @@
     "rootId": null,
     "conceptId": "AGO",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "иужьрей дыдэ",
@@ -1134568,7 +1134721,8 @@
     "rootId": null,
     "conceptId": "LATEST",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "ихуэр зыхуэдизыр",
@@ -1134757,7 +1134911,8 @@
     "rootId": null,
     "conceptId": "COMMERCIAL",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "коммунальнэ Ӏуэхутхьэбзэхэр",
@@ -1134779,7 +1134934,8 @@
     "rootId": null,
     "conceptId": "UTILITY",
     "dialect": "KBD",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "коробкэ передач",
@@ -1134801,7 +1134957,8 @@
     "rootId": null,
     "conceptId": "TRANSMISSION",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "крем",
@@ -1134993,7 +1135150,8 @@
     "rootId": null,
     "conceptId": "ATTENDANCE",
     "dialect": "KBD",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "къалэм пэгъунэгъу жылэ",
@@ -1135087,7 +1135245,8 @@
     "wordFamilyId": "WF-UNCLEAR",
     "rootId": null,
     "conceptId": "GRANDCHILDREN",
-    "dialect": "COMMON"
+    "dialect": "COMMON",
+    "isExempt": true
   },
   {
     "form": "къыгуэхупӀэ зимыӀэ",
@@ -1135109,7 +1135268,8 @@
     "rootId": null,
     "conceptId": "INHERENT",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "къызэрыгуэкӀ махуэ",
@@ -1135155,7 +1135315,8 @@
     "rootId": null,
     "conceptId": "FREQUENCY",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "къэгъэцэбэпын",
@@ -1135223,7 +1135384,8 @@
     "rootId": null,
     "conceptId": "ALMOST",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "къэралым епцӀыжыныгъэ",
@@ -1135294,7 +1135456,8 @@
     "conceptId": "PREDICT",
     "partOfSpeech": "VERB",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "лантӀагъ",
@@ -1135342,7 +1135505,8 @@
     "rootId": null,
     "conceptId": "FUNDAMENTAL",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "лъагагъ",
@@ -1135421,7 +1135585,8 @@
     "conceptId": "BLEED",
     "partOfSpeech": "VERB",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "лъэӀу тхылъ",
@@ -1135983,7 +1136148,8 @@
     "rootId": null,
     "conceptId": "PARKING",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "машынэ гъэувыпӀэ",
@@ -1136005,7 +1136171,8 @@
     "rootId": null,
     "conceptId": "PARKING_LOT",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "минрэ зы",
@@ -1136027,7 +1136194,8 @@
     "rootId": null,
     "conceptId": "ONE",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "модэм икӀа",
@@ -1136049,7 +1136217,8 @@
     "rootId": null,
     "conceptId": "OLD",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "мывэ лъапӀэ",
@@ -1136095,7 +1136264,8 @@
     "rootId": null,
     "conceptId": "OWNERSHIP",
     "dialect": "KBD",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "мэ къыпихьын",
@@ -1136118,7 +1136288,8 @@
     "conceptId": "SMELL",
     "partOfSpeech": "VERB",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "мэкъумэш хозяйствэ",
@@ -1136164,7 +1136335,8 @@
     "rootId": null,
     "conceptId": "STRAWBERRY",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "напӀэхэр гъэупӀэрэпӀэн",
@@ -1136187,7 +1136359,8 @@
     "conceptId": "BLINK",
     "partOfSpeech": "VERB",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "насыпыфӀэу псэун",
@@ -1136234,7 +1136407,8 @@
     "rootId": null,
     "conceptId": "FATE",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "номер ныхъыфӀ дыдэ",
@@ -1136256,7 +1136430,8 @@
     "rootId": null,
     "conceptId": "SUITE",
     "dialect": "KBD",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "ныбжьэгъугъэ зыхэлъ",
@@ -1138136,7 +1138311,8 @@
     "rootId": null,
     "conceptId": "RETIRED",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "плӀыщӀрэ зы",
@@ -1138158,7 +1138334,8 @@
     "rootId": null,
     "conceptId": "FORTY",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "плӀыщӀрэ тӀу",
@@ -1138228,7 +1138405,8 @@
     "rootId": null,
     "conceptId": "PLASTIC",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "полицэ участок",
@@ -1138250,7 +1138428,8 @@
     "rootId": null,
     "conceptId": "POLICE_STATION",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "пощт къудамэ",
@@ -1138296,7 +1138475,8 @@
     "rootId": null,
     "conceptId": "PRESIDENCY",
     "dialect": "KBD",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "псалъэ бжыгъэ",
@@ -1139232,7 +1139412,8 @@
     "rootId": null,
     "conceptId": "SALE",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "пхъурылъху / къуэрылъху",
@@ -1139254,7 +1139435,8 @@
     "rootId": null,
     "conceptId": "SON",
     "dialect": "KBD",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "пхъэнкӀий зэрадзэ пэгун",
@@ -1139325,7 +1139507,8 @@
     "rootId": null,
     "conceptId": "FOGGY",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "пшэ телъу",
@@ -1139347,7 +1139530,8 @@
     "rootId": null,
     "conceptId": "CLOUDY",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "пщӀы бжыгъэ",
@@ -1139729,7 +1139913,8 @@
     "rootId": null,
     "conceptId": "POPE",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "сабий джэгупӀэ",
@@ -1139824,7 +1140009,8 @@
     "rootId": null,
     "conceptId": "DRESSING",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "сату Ӏуэху",
@@ -1140137,7 +1140323,8 @@
     "rootId": null,
     "conceptId": "UNIVERSAL",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "сэбэп хъууэ",
@@ -1140183,7 +1140370,8 @@
     "rootId": null,
     "conceptId": "ONE",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "тӀощӀрэ тӀурэ",
@@ -1140253,7 +1140441,8 @@
     "rootId": null,
     "conceptId": "EITHER",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "тегъэщӀапӀэ щӀын",
@@ -1140300,7 +1140489,8 @@
     "rootId": null,
     "conceptId": "THEORETICAL",
     "dialect": "KBD",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "толъкъун къэукъубея",
@@ -1140346,7 +1140536,8 @@
     "rootId": null,
     "conceptId": "INMATE",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "тутын ефэныр",
@@ -1140392,7 +1140583,8 @@
     "rootId": null,
     "conceptId": "ONE",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "тхущӀрэ тӀу",
@@ -1140438,7 +1140630,8 @@
     "rootId": null,
     "conceptId": "HISTORIC",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "тхылъ зыдалъхьэ",
@@ -1140729,7 +1140922,8 @@
     "conceptId": "PAY",
     "partOfSpeech": "VERB",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "уафэ гъуагъуэ",
@@ -1140825,7 +1141019,8 @@
     "rootId": null,
     "conceptId": "SPECTACULAR",
     "dialect": "KBD",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "уи фӀэщ зыщӀ",
@@ -1140872,7 +1141067,8 @@
     "conceptId": "GOVERN",
     "partOfSpeech": "VERB",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "унащхьэ щӀэӀулӀа",
@@ -1140894,7 +1141090,8 @@
     "rootId": null,
     "conceptId": "CEILING",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "уней мылъку",
@@ -1140988,7 +1141185,8 @@
     "rootId": null,
     "conceptId": "YOURSELF",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "уэс къос",
@@ -1141182,7 +1141380,8 @@
     "rootId": null,
     "conceptId": "NONALCOHOLIC",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "форум",
@@ -1141276,7 +1141475,8 @@
     "conceptId": "SHELL",
     "partOfSpeech": "VERB",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "хабзэм къезэгъ",
@@ -1141516,7 +1141716,8 @@
     "rootId": null,
     "conceptId": "FICTION",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "хуитыныгъэ зиӀэ",
@@ -1141706,7 +1141907,8 @@
     "conceptId": "WEIGH",
     "partOfSpeech": "VERB",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "хъэлъэ илъхьэн",
@@ -1141729,7 +1141931,8 @@
     "conceptId": "LOAD",
     "partOfSpeech": "VERB",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "хъэрф щхьэхуэу жыӀэн",
@@ -1141752,7 +1141955,8 @@
     "conceptId": "SPELL",
     "partOfSpeech": "VERB",
     "dialect": "KBD",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "хы елыркъэш",
@@ -1141798,7 +1142002,8 @@
     "rootId": null,
     "conceptId": "PIRATE",
     "dialect": "KBD",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "хьэкъупӀэ къозыт",
@@ -1141990,7 +1142195,8 @@
     "rootId": null,
     "conceptId": "ANYBODY",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "хэту щымытми",
@@ -1142012,7 +1142218,8 @@
     "rootId": null,
     "conceptId": "WHOEVER",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "цӀыв цӀыкӀу",
@@ -1142301,7 +1142508,8 @@
     "rootId": null,
     "conceptId": "DELICACY",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "шынагъуэ зыпылъ",
@@ -1142788,7 +1142996,8 @@
     "rootId": null,
     "conceptId": "EXCEPTION",
     "dialect": "KBD",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "щыпсэу цӀыху",
@@ -1142859,7 +1143068,8 @@
     "rootId": null,
     "conceptId": "ONE",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "щэрэ пщыкӀуз",
@@ -1142881,7 +1143091,8 @@
     "rootId": null,
     "conceptId": "ONE",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "щэрэ тӀу",
@@ -1142927,7 +1143138,8 @@
     "rootId": null,
     "conceptId": "ONE",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "щэхуакӀуэ кӀуэн",
@@ -1142950,7 +1143162,8 @@
     "conceptId": "SHOPPING",
     "partOfSpeech": "VERB",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "щэхуу жеӀэн",
@@ -1142973,7 +1143186,8 @@
     "conceptId": "CLUE",
     "partOfSpeech": "VERB",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "щэщӀрэ зы",
@@ -1142995,7 +1143209,8 @@
     "rootId": null,
     "conceptId": "ONE",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "щэщӀрэ тӀу",
@@ -1143066,7 +1143281,8 @@
     "conceptId": "EVOLVE",
     "partOfSpeech": "VERB",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "экспертым и оценкэ",
@@ -1143088,7 +1143304,8 @@
     "rootId": null,
     "conceptId": "EXPERTISE",
     "dialect": "KBD",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "электрон пощт",
@@ -1143159,7 +1143376,8 @@
     "rootId": null,
     "conceptId": "ORIGINALLY",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "гузэв",
@@ -1143468,7 +1143686,8 @@
     "rootId": null,
     "conceptId": "DOWN",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [],
+    "isExempt": true
   },
   {
     "form": "лъэгун",
