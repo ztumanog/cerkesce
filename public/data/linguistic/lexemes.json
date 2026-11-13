@@ -66996,7 +66996,7 @@
     "partOfSpeech": "noun",
     "corpusFrequency": 127,
     "dialectVariants": {
-      "adyghe": "",
+      "adyghe": "зэпымыоу",
       "kabardian": "зэпымыууэ"
     },
     "notes": "Corpus v1.0 (freq: 127, lang: kbd, source: 13.Kbd-Ar-Jonty)",
@@ -67022,7 +67022,11 @@
     "translations": {
       "en": "constantly, continuously, continually, incessantly, unceasingly, permanently, ceaselessly uninterruptedly",
       "ru": "непрерывно",
-      "tr": "ARALIKSIZ",
+      "tr": [
+        "daima",
+        "kesintisiz",
+        "aralıksız"
+      ],
       "ar": "بِاستمرار"
     },
     "literalMeaningSource": "translations.tr (yuksek)",
@@ -76761,7 +76765,7 @@
     "corpusFrequency": 79,
     "dialectVariants": {
       "adyghe": "зэпымыоу",
-      "kabardian": ""
+      "kabardian": "зэпымыууэ"
     },
     "notes": "Corpus v1.0 (freq: 79, lang: ady, source: 3.Ady-En)",
     "isLemma": false,
@@ -76779,7 +76783,11 @@
     "ipa": "/jɐpɐ're:j/",
     "ipaSource": "root-derived",
     "translations": {
-      "tr": "durmadan",
+      "tr": [
+        "daima",
+        "kesintisiz",
+        "aralıksız"
+      ],
       "en": "continuously; boyunca; daima; durmadan",
       "ru": "регулярно; сплошь; запоем; непрестанно"
     },
@@ -85104,7 +85112,7 @@
     "partOfSpeech": "noun",
     "corpusFrequency": 58,
     "dialectVariants": {
-      "adyghe": "",
+      "adyghe": "нэпэнчъ",
       "kabardian": "напэншэ"
     },
     "notes": "Corpus v1.0 (freq: 58, lang: kbd, source: 1.Ady-Ady_AP)",
@@ -85131,7 +85139,11 @@
     "translations": {
       "en": "shameless, impudent, insolent",
       "ru": "бессовестный, наглый",
-      "tr": "AHLAKSIZ",
+      "tr": [
+        "densiz",
+        "yüzsüz",
+        "utanmaz"
+      ],
       "ar": "مفرغ"
     },
     "literalMeaningSource": "translations.tr (yuksek)",
@@ -161691,7 +161703,7 @@
     "partOfSpeech": "noun",
     "corpusFrequency": 17,
     "dialectVariants": {
-      "adyghe": "",
+      "adyghe": "хьаолый",
       "kabardian": "хьэулей"
     },
     "notes": "Corpus v1.0 (freq: 17, lang: kbd, source: 1.Ady-Ady_AP)",
@@ -161720,7 +161732,11 @@
     "translations": {
       "en": "loafer, idler, lazybones",
       "ru": "бездельник, праздношатающийся",
-      "tr": "ABES"
+      "tr": [
+        "boşuna",
+        "yararsız",
+        "beyhude"
+      ]
     },
     "literalMeaningSource": "translations.tr (yuksek)",
     "root": "лъэ",
@@ -211721,7 +211737,7 @@
     "corpusFrequency": 12,
     "dialectVariants": {
       "adyghe": "нэпэнчъ",
-      "kabardian": ""
+      "kabardian": "напэншэ"
     },
     "notes": "Corpus v1.0 (freq: 12, lang: ady, source: 3.Ady-En)",
     "rootIds": [
@@ -211742,7 +211758,11 @@
     "ipaSource": "root-derived",
     "ipa": "/nɐpɐntʂ/",
     "translations": {
-      "tr": "AHLAKSIZ",
+      "tr": [
+        "densiz",
+        "yüzsüz",
+        "utanmaz"
+      ],
       "ar": "عار، شنار (صفة)، جالب العار",
       "en": "ar; ahlaksiz; falseness",
       "ru": "подлец; подлый; фальшь; наглец"
@@ -293957,8 +293977,8 @@
     "partOfSpeech": "noun",
     "corpusFrequency": 65,
     "dialectVariants": {
-      "adyghe": "",
-      "kabardian": "пщӀэншэу"
+      "adyghe": "пкӏэнчъэу",
+      "kabardian": "пщӏэншэу"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 65, lang: kbd, source: none)",
     "ipa": "/'pʹɕʹɐnʂɐw/",
@@ -293973,7 +293993,10 @@
     "translations": {
       "en": "In vain, futilely, uselessly, free, without charge",
       "ru": "напрасно, зря, бесплатно",
-      "tr": "bağimsiz",
+      "tr": [
+        "boşuna",
+        "beyhude yere"
+      ],
       "trSource": "en->tr koprusu (orta)",
       "ar": "مجاني"
     },
@@ -300547,8 +300570,8 @@
     "partOfSpeech": "noun",
     "corpusFrequency": 35,
     "dialectVariants": {
-      "adyghe": "",
-      "kabardian": "пщӀэншэ"
+      "adyghe": "пкӏэнчъ",
+      "kabardian": "пщӏэншэ"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 35, lang: kbd, source: none)",
     "ipa": "/'pʹɕʹɐnʂɐ/",
@@ -300559,7 +300582,11 @@
     "translations": {
       "ru": "Сэбэпагъ къэзымышэ",
       "en": "in vain, futile, useless, free, complementary",
-      "tr": "bağimsiz",
+      "tr": [
+        "boş",
+        "beyhude",
+        "yararsız"
+      ],
       "trSource": "en->tr koprusu (orta)"
     },
     "rootIds": [
@@ -300877,8 +300904,8 @@
     "partOfSpeech": "noun",
     "corpusFrequency": 35,
     "dialectVariants": {
-      "adyghe": "пкӀэнчъэу",
-      "kabardian": ""
+      "adyghe": "пкӏэнчъэу",
+      "kabardian": "пщӏэншэу"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 35, lang: ady, source: none)",
     "isLemma": false,
@@ -300895,7 +300922,10 @@
     },
     "ipa": "/pʹtʹʂɐn/",
     "translations": {
-      "tr": "boşta",
+      "tr": [
+        "boşuna",
+        "beyhude yere"
+      ],
       "en": "in vain; vainly; bedava; meccanen",
       "ru": "напрасно; впустую; задаром; понапрасну"
     },
@@ -311504,8 +311534,8 @@
     "partOfSpeech": "noun",
     "corpusFrequency": 20,
     "dialectVariants": {
-      "adyghe": "пкӀэнчъ",
-      "kabardian": ""
+      "adyghe": "пкӏэнчъ",
+      "kabardian": "пщӏэншэ"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 20, lang: ady, source: none)",
     "isLemma": false,
@@ -311522,7 +311552,11 @@
     },
     "ipa": "/pʹtʹʂɐn/",
     "translations": {
-      "tr": "faydasiz",
+      "tr": [
+        "boş",
+        "beyhude",
+        "yararsız"
+      ],
       "ar": "مجاناً/ عديم النفع، تافه",
       "en": "idle; meaningless; nonsense; useless",
       "ru": "ая; ерунда; пкӀэнчъ; напрасный"
@@ -322364,8 +322398,8 @@
     "literalMeaning": "",
     "corpusFrequency": 14,
     "dialectVariants": {
-      "adyghe": "",
-      "kabardian": "щӀэгъэуэн"
+      "adyghe": "чӏэгъэон",
+      "kabardian": "щӏэгъэуэн"
     },
     "notes": "Corpus v1.0 batch-2 (freq: 14, lang: kbd, source: none) | conceptId=EAT_UNDER miras oldugu icin temizlendi (WF=WF-SH1E).",
     "ipa": "/ɕʹɐʁɐ'wɐn/",
@@ -322381,7 +322415,10 @@
     "translations": {
       "en": "inhalation",
       "ru": "ингаляция",
-      "tr": "tütsülemek"
+      "tr": [
+        "tütsülemek",
+        "altına sokmak"
+      ]
     },
     "root": "щӀэ",
     "wordFamilyId": "WF-SH1E",
@@ -1160993,5 +1161030,142 @@
     ],
     "legacyRootForms": [],
     "etymologyType": "native"
+  },
+  {
+    "id": "L-HAOLIY",
+    "form": "хьаолый",
+    "dialect": "ADY",
+    "partOfSpeech": "adj",
+    "isLemma": true,
+    "dialectVariants": {
+      "adyghe": "хьаолый",
+      "kabardian": "хьэулей"
+    },
+    "translations": {
+      "tr": [
+        "boşuna",
+        "yararsız",
+        "beyhude"
+      ]
+    }
+  },
+  {
+    "id": "L-ZYUSHCHYHAN",
+    "form": "зыӀушӀыхьан",
+    "dialect": "ADY",
+    "partOfSpeech": "verb",
+    "isLemma": true,
+    "dialectVariants": {
+      "adyghe": "зыӏушӏыхьан",
+      "kabardian": "зыӏущӏыхьэн"
+    },
+    "translations": {
+      "tr": [
+        "bulaşmak",
+        "yanaşmak"
+      ]
+    }
+  },
+  {
+    "id": "L-ZYUSHCHYHEN",
+    "form": "зыӀущӀыхьэн",
+    "dialect": "KBD",
+    "partOfSpeech": "verb",
+    "isLemma": true,
+    "dialectVariants": {
+      "adyghe": "зыӏушӏыхьан",
+      "kabardian": "зыӏущӏыхьэн"
+    },
+    "translations": {
+      "tr": [
+        "bulaşmak",
+        "yanaşmak"
+      ]
+    }
+  },
+  {
+    "id": "L-PYSHEN",
+    "form": "пышӀэн",
+    "dialect": "ADY",
+    "partOfSpeech": "verb",
+    "isLemma": true,
+    "dialectVariants": {
+      "adyghe": "пышӏэн",
+      "kabardian": "пыщӏэн"
+    },
+    "translations": {
+      "tr": [
+        "bağlamak",
+        "iliştirmek"
+      ]
+    }
+  },
+  {
+    "id": "L-PYSHCHEN",
+    "form": "пыщӀэн",
+    "dialect": "KBD",
+    "partOfSpeech": "verb",
+    "isLemma": true,
+    "dialectVariants": {
+      "adyghe": "пышӏэн",
+      "kabardian": "пыщӏэн"
+    },
+    "translations": {
+      "tr": [
+        "bağlamak",
+        "iliştirmek"
+      ]
+    }
+  },
+  {
+    "id": "L-SHYPKQENYGH",
+    "form": "шъыпкъэныгъ",
+    "dialect": "ADY",
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "dialectVariants": {
+      "adyghe": "шъыпкъэныгъ",
+      "kabardian": "щыпкъэныгъэ"
+    },
+    "translations": {
+      "tr": [
+        "ciddiyet",
+        "doğruluk"
+      ]
+    }
+  },
+  {
+    "id": "L-SHCHYPKQENYGHE",
+    "form": "щыпкъэныгъэ",
+    "dialect": "KBD",
+    "partOfSpeech": "noun",
+    "isLemma": true,
+    "dialectVariants": {
+      "adyghe": "шъыпкъэныгъ",
+      "kabardian": "щыпкъэныгъэ"
+    },
+    "translations": {
+      "tr": [
+        "ciddiyet",
+        "doğruluk"
+      ]
+    }
+  },
+  {
+    "id": "L-CHEGHEON",
+    "form": "чӀэгъэон",
+    "dialect": "ADY",
+    "partOfSpeech": "verb",
+    "isLemma": true,
+    "dialectVariants": {
+      "adyghe": "чӏэгъэон",
+      "kabardian": "щӏэгъэуэн"
+    },
+    "translations": {
+      "tr": [
+        "tütsülemek",
+        "altına sokmak"
+      ]
+    }
   }
 ]

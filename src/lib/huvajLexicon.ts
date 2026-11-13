@@ -9563,3 +9563,5 @@ export const HUVAJ_KBD_TO_ADY: Readonly<Record<string, string>> = {
   "жьэгухьэку": "джэгухьаку",
   "мынэпсеин": "мынэпсэин",
 };
+
+

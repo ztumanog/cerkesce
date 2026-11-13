@@ -24,6 +24,33 @@ let cachedList: any[] = [];
 let cachedSourcesByHeadword: Map<string, KaynakInfo[]> | null = null;
 let cachedLegacyEntries: { key: string; headword: string; meaning: string; kaynak: KaynakInfo }[] | null = null;
 
+function isTurkishSource(k: KaynakInfo): boolean {
+  const tl = String(k.targetLanguage || '').toLowerCase();
+  const sf = String(k.sourceFile || '').toLowerCase();
+  const sn = String(k.sözlük || '').toLowerCase();
+  return tl === 'tr' || tl === 'tur' || sf.includes('-tur') || sf.includes('-tu') || sn.includes('türkçe');
+}
+
+function cleanMeaningSummary(raw: string): string {
+  if (!raw) return '';
+  let text = String(raw)
+    .replace(/<[^>]+>/g, ' ')
+    .replace(/&nbsp;/gi, ' ')
+    .replace(/&amp;/gi, '&')
+    .replace(/&lt;/gi, '<')
+    .replace(/&gt;/gi, '>')
+    .replace(/&quot;/gi, '"')
+    .replace(/&#39;/gi, "'")
+    .replace(/\s+/g, ' ')
+    .trim();
+  text = text.replace(/^(I+|1\)|1\.|[а-яА-ЯӀӏ\s/]+–)\s*/u, '').trim();
+  if (text.length > 140) {
+    const cut = text.split(/[;·•]/)[0].trim();
+    text = cut.length > 140 ? cut.slice(0, 137) + '...' : cut;
+  }
+  return text;
+}
+
 function extractLegacyMeaning(item: any): string {
   const firstDef =
     Array.isArray(item.definitions) && item.definitions.length > 0
@@ -33,13 +60,7 @@ function extractLegacyMeaning(item: any): string {
     ? String(item.full_definition_in_html).replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').trim()
     : '';
   return String(
-    item.anlam ??
-      item.translation ??
-      item.definition ??
-      item.meaning ??
-      firstDef ??
-      rawHtml ??
-      ''
+    item.anlam ?? item.translation ?? item.definition ?? item.meaning ?? firstDef ?? rawHtml ?? ''
   ).trim();
 }
 
@@ -47,7 +68,6 @@ function getLegacySources() {
   if (cachedSourcesByHeadword && cachedLegacyEntries) {
     return { sourcesMap: cachedSourcesByHeadword, legacyList: cachedLegacyEntries };
   }
-
   const { entries } = loadDictionaryData();
   const sourcesMap = new Map<string, KaynakInfo[]>();
   const legacyList: { key: string; headword: string; meaning: string; kaynak: KaynakInfo }[] = [];
@@ -57,7 +77,6 @@ function getLegacySources() {
     const headword = String(item.kelime || item.word || item.spelling || item.headword || '').trim();
     const meaning = extractLegacyMeaning(item);
     if (!headword || !meaning) continue;
-
     const k = normKey(normalizePalochka(headword).toLowerCase());
     if (!k) continue;
 
@@ -78,11 +97,8 @@ function getLegacySources() {
     dedup.add(sig);
 
     const arr = sourcesMap.get(k);
-    if (arr) {
-      arr.push(kaynak);
-    } else {
-      sourcesMap.set(k, [kaynak]);
-    }
+    if (arr) arr.push(kaynak);
+    else sourcesMap.set(k, [kaynak]);
 
     legacyList.push({ key: k, headword, meaning, kaynak });
   }
@@ -106,15 +122,9 @@ function getIndex() {
 function toStringList(val: any): string[] {
   if (!val) return [];
   if (Array.isArray(val)) {
-    return val
-      .flatMap((v) => String(v || '').split(/[;,/]+/))
-      .map((s) => s.trim())
-      .filter(Boolean);
+    return val.flatMap((v) => String(v || '').split(/[;,/]+/)).map((s) => s.trim()).filter(Boolean);
   }
-  return String(val)
-    .split(/[;,/]+/)
-    .map((s) => s.trim())
-    .filter(Boolean);
+  return String(val).split(/[;,/]+/).map((s) => s.trim()).filter(Boolean);
 }
 
 function formatField(val: any): string {
@@ -141,7 +151,6 @@ function collectSourcesForLex(lex: any, sourcesMap: Map<string, KaynakInfo[]>): 
     const k = normKey(normalizePalochka(f).toLowerCase());
     if (k) forms.add(k);
   };
-
   addForm(lex.form);
   addForm(lex.headword);
   addForm(lex.dialectVariants?.adyghe);
@@ -149,7 +158,6 @@ function collectSourcesForLex(lex: any, sourcesMap: Map<string, KaynakInfo[]>): 
 
   const collected: KaynakInfo[] = [];
   const seenSrc = new Set<string>();
-
   for (const fk of forms) {
     const list = sourcesMap.get(fk);
     if (!list) continue;
@@ -160,9 +168,9 @@ function collectSourcesForLex(lex: any, sourcesMap: Map<string, KaynakInfo[]>): 
       collected.push(s);
     }
   }
+  collected.sort((a, b) => (isTurkishSource(b) ? 1 : 0) - (isTurkishSource(a) ? 1 : 0));
   return collected;
 }
-
 export async function GET(request: NextRequest) {
   const start = Date.now();
   try {
@@ -171,21 +179,11 @@ export async function GET(request: NextRequest) {
     const mode = (searchParams.get('mode') || 'baslayan').toLowerCase();
     const limit = Math.max(1, Math.min(100, parseInt(searchParams.get('limit') || '40', 10)));
 
-    if (!rawQ) {
-      return NextResponse.json({ success: true, results: [], total: 0, ms: 0 });
-    }
+    if (!rawQ) return NextResponse.json({ success: true, results: [], total: 0, ms: 0 });
 
     const q = normalizePalochka(normalizeLatinToKiril(rawQ)).toLowerCase();
-    const qAlt = q.includes('е')
-      ? q.replace(/е/g, 'э')
-      : q.includes('э')
-        ? q.replace(/э/g, 'е')
-        : null;
-    const qNoPal = qAlt
-      ? qAlt.replace(/Ӏ(?!.*Ӏ)/, '')
-      : q.includes('Ӏ')
-        ? q.replace(/Ӏ(?!.*Ӏ)/, '')
-        : null;
+    const qAlt = q.includes('е') ? q.replace(/е/g, 'э') : q.includes('э') ? q.replace(/э/g, 'е') : null;
+    const qNoPal = qAlt ? qAlt.replace(/Ӏ(?!.*Ӏ)/, '') : q.includes('Ӏ') ? q.replace(/Ӏ(?!.*Ӏ)/, '') : null;
 
     const rawLower = rawQ.toLocaleLowerCase('tr-TR');
     const rawEnLower = rawQ.toLowerCase();
@@ -207,15 +205,10 @@ export async function GET(request: NextRequest) {
       const form = normalizePalochka(String(lex.form || lex.headword || '')).toLowerCase();
 
       if (form && mode !== 'tam') {
-        if (form.startsWith(q) && form !== q) {
-          circassianStarts.push(lex);
-        } else if (qAlt && form.startsWith(qAlt) && form !== qAlt) {
-          circassianStarts.push(lex);
-        } else if (qNoPal && form.startsWith(qNoPal) && form !== qNoPal) {
-          circassianStarts.push(lex);
-        } else if (mode === 'iceren' && q.length >= 2 && form.includes(q)) {
-          circassianContains.push(lex);
-        }
+        if (form.startsWith(q) && form !== q) circassianStarts.push(lex);
+        else if (qAlt && form.startsWith(qAlt) && form !== qAlt) circassianStarts.push(lex);
+        else if (qNoPal && form.startsWith(qNoPal) && form !== qNoPal) circassianStarts.push(lex);
+        else if (mode === 'iceren' && q.length >= 2 && form.includes(q)) circassianContains.push(lex);
       }
 
       const trChunks = toStringList(lex.translations?.tr);
@@ -227,36 +220,22 @@ export async function GET(request: NextRequest) {
       ];
 
       let matchedRank = 0;
-
       for (const chunk of trChunks) {
         const c = chunk.toLocaleLowerCase('tr-TR');
-        if (c === rawLower) {
-          matchedRank = Math.max(matchedRank, 3);
-        } else if (mode !== 'tam' && (c.startsWith(rawLower) || c.split(/\s+/).some((w) => w.startsWith(rawLower)))) {
-          matchedRank = Math.max(matchedRank, 2);
-        } else if (mode !== 'tam' && c.includes(rawLower)) {
-          matchedRank = Math.max(matchedRank, 1);
-        }
+        if (c === rawLower) matchedRank = Math.max(matchedRank, 3);
+        else if (mode !== 'tam' && (c.startsWith(rawLower) || c.split(/\s+/).some((w) => w.startsWith(rawLower)))) matchedRank = Math.max(matchedRank, 2);
+        else if (mode !== 'tam' && c.includes(rawLower)) matchedRank = Math.max(matchedRank, 1);
       }
-
       for (const chunk of otherChunks) {
         const c = chunk.toLowerCase();
-        if (c === rawEnLower) {
-          matchedRank = Math.max(matchedRank, 3);
-        } else if (mode !== 'tam' && (c.startsWith(rawEnLower) || c.split(/\s+/).some((w) => w.startsWith(rawEnLower)))) {
-          matchedRank = Math.max(matchedRank, 2);
-        } else if (mode !== 'tam' && c.includes(rawEnLower)) {
-          matchedRank = Math.max(matchedRank, 1);
-        }
+        if (c === rawEnLower) matchedRank = Math.max(matchedRank, 3);
+        else if (mode !== 'tam' && (c.startsWith(rawEnLower) || c.split(/\s+/).some((w) => w.startsWith(rawEnLower)))) matchedRank = Math.max(matchedRank, 2);
+        else if (mode !== 'tam' && c.includes(rawEnLower)) matchedRank = Math.max(matchedRank, 1);
       }
 
-      if (matchedRank === 3) {
-        translationExact.push(lex);
-      } else if (matchedRank === 2) {
-        translationStarts.push(lex);
-      } else if (matchedRank === 1 && (mode === 'iceren' || rawLower.length >= 3)) {
-        translationContains.push(lex);
-      }
+      if (matchedRank === 3) translationExact.push(lex);
+      else if (matchedRank === 2) translationStarts.push(lex);
+      else if (matchedRank === 1 && (mode === 'iceren' || rawLower.length >= 3)) translationContains.push(lex);
     }
 
     const seen = new Set<string>();
@@ -272,6 +251,19 @@ export async function GET(request: NextRequest) {
       const kaynaklar = collectSourcesForLex(lex, sourcesMap);
       const resolvedDialect = resolveDialect(lex, kaynaklar);
 
+      const translations = { ...(lex.translations || {}) };
+      let trText = formatField(translations.tr);
+      if (!trText) {
+        const trSrc = kaynaklar.find(isTurkishSource);
+        if (trSrc) {
+          const cleanedTr = cleanMeaningSummary(trSrc.anlam);
+          if (cleanedTr) {
+            trText = cleanedTr;
+            translations.tr = [cleanedTr];
+          }
+        }
+      }
+
       const item: any = {
         id: lex.id,
         form: lex.form,
@@ -279,22 +271,17 @@ export async function GET(request: NextRequest) {
         partOfSpeech: lex.partOfSpeech ?? null,
         dialect: resolvedDialect,
         lehce: resolvedDialect,
-        translations: lex.translations || {},
+        translations,
         kaynaklar,
       };
 
-      const trText = formatField(lex.translations?.tr);
       if (trText) item.tr = trText;
-
-      const enText = formatField(lex.translations?.en);
+      const enText = formatField(translations.en);
       if (enText) item.en = enText;
-
-      const ruText = formatField(lex.translations?.ru);
+      const ruText = formatField(translations.ru);
       if (ruText) item.ru = ruText;
-
-      const arText = formatField(lex.translations?.ar);
+      const arText = formatField(translations.ar);
       if (arText) item.ar = arText;
-
       if (lex.literalMeaning) item.literalMeaning = String(lex.literalMeaning);
       if (lex.rootIds?.length) item.rootIds = lex.rootIds;
       if (lex.wordFamilyId) item.wordFamilyId = lex.wordFamilyId;
@@ -336,41 +323,33 @@ export async function GET(request: NextRequest) {
         const mEn = leg.meaning.toLowerCase();
 
         const isCircMatch =
-          hwNorm === q ||
-          (qAlt && hwNorm === qAlt) ||
-          (mode !== 'tam' &&
-            (hwNorm.startsWith(q) ||
-              (qAlt && hwNorm.startsWith(qAlt)) ||
-              (mode === 'iceren' && q.length >= 2 && hwNorm.includes(q))));
+          hwNorm === q || (qAlt && hwNorm === qAlt) ||
+          (mode !== 'tam' && (hwNorm.startsWith(q) || (qAlt && hwNorm.startsWith(qAlt)) || (mode === 'iceren' && q.length >= 2 && hwNorm.includes(q))));
 
         const isMeaningMatch =
-          mTr === rawLower ||
-          mEn === rawEnLower ||
-          (mode !== 'tam' &&
-            (mTr.startsWith(rawLower) ||
-              mEn.startsWith(rawEnLower) ||
-              ((mode === 'iceren' || rawLower.length >= 3) &&
-                (mTr.includes(rawLower) || mEn.includes(rawEnLower)))));
+          mTr === rawLower || mEn === rawEnLower ||
+          (mode !== 'tam' && (mTr.startsWith(rawLower) || mEn.startsWith(rawEnLower) || ((mode === 'iceren' || rawLower.length >= 3) && (mTr.includes(rawLower) || mEn.includes(rawEnLower)))));
 
         if (!isCircMatch && !isMeaningMatch) continue;
 
         const grp = groupedLegacy.get(leg.key);
-        if (grp) {
-          grp.kaynaklar.push(leg.kaynak);
-        } else {
-          groupedLegacy.set(leg.key, { headword: leg.headword, kaynaklar: [leg.kaynak] });
-        }
+        if (grp) grp.kaynaklar.push(leg.kaynak);
+        else groupedLegacy.set(leg.key, { headword: leg.headword, kaynaklar: [leg.kaynak] });
       }
 
       for (const [k, grp] of groupedLegacy.entries()) {
         if (results.length >= limit) break;
         seenForms.add(k);
+        grp.kaynaklar.sort((a, b) => (isTurkishSource(b) ? 1 : 0) - (isTurkishSource(a) ? 1 : 0));
         const first = grp.kaynaklar[0];
         const d = first?.dialect || 'COMMON';
+        const trSrc = grp.kaynaklar.find(isTurkishSource);
+        const trSummary = trSrc ? cleanMeaningSummary(trSrc.anlam) : '';
         results.push({
           id: `DICT-${k}`,
           form: grp.headword,
-          anlam: first?.anlam || '',
+          tr: trSummary || undefined,
+          anlam: trSummary || first?.anlam || '',
           dialect: d,
           lehce: d,
           kaynaklar: grp.kaynaklar,
@@ -380,7 +359,6 @@ export async function GET(request: NextRequest) {
 
     const ms = Date.now() - start;
     if (ms > 500) console.warn(`[search] YAVAS: ${rawQ} ${ms}ms`);
-
     return NextResponse.json({ success: true, results, total: results.length, ms });
   } catch (e: any) {
     console.error('[search] Hata:', e);
