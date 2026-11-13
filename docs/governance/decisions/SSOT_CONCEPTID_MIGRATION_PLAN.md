@@ -152,3 +152,45 @@ Baseline kaymasıFaz 0.5 snapshot'ı referans alınır
     Alias kapatma
 
 Bu yasaklar kurul "SSOT Migration'ı başlatın" kararı gelene kadar geçerlidir.
+
+## Uygulama Durumu (2026-11-13)
+
+### Tamamlanan Adimlar
+
+| # | Adim | Durum | Commit |
+|---|---|---|---|
+| 0.5 | Baseline Snapshot | TAMAM | 657d179 |
+| L | src/types/concept.ts silindi (olu kopya) | TAMAM | 0fd7f4f |
+| M.1 | ConceptId.getValue() eklendi (API parity) | TAMAM | 7fda7f5 |
+| M.2 | Concept.ts bridge kaldirildi | TAMAM | ef1edf3 |
+| 1 | Test katmani (10 dosya) ConceptId'ye gecti | TAMAM | ef1edf3 |
+| 2 | Servis katmani (ConceptFacade) gecti | TAMAM | ef1edf3 |
+
+### Kalan Adimlar
+
+| # | Adim | Onkosul | Durum |
+|---|---|---|---|
+| 3 | Repository (ConceptRepository.ts) | - | BEKLIYOR |
+| 5 | Alias silme (ConceptID.ts) | Faz 3 tamam + ConceptID import = 0 | BEKLIYOR |
+| 6 | Guard testi (CanonicalIdentityGuard.test.ts) | Faz 5 tamam | BEKLIYOR |
+
+### Guncel Metrik
+
+| Metrik | Faz 0.5 (baseline) | Su an | Kalan |
+|---|---|---|---|
+| ConceptID import | 14 | 3 | 3 |
+| ConceptId import | 11 | 21 | - |
+
+### Kalan 3 ConceptID Import
+
+1. src/domain/concept/value-objects/ConceptID.ts (kendisi - Faz 5'te silinecek)
+2. src/domain/concept/repository/ConceptRepository.ts (Faz 3)
+3. src/tests/domain/concept/CanonicalIdentityGuard.test.ts (Faz 6)
+
+### Revize Edilen Notlar
+
+- API parity (getValue ekleme) ve bridge cozumu (Concept.id tipi) Faz 1'in onkosuluydu
+- Faz 0.75 yerine M.1 + M.2 olarak adlandirildi (yeni faz degil, ara adim)
+- Test dosyasi sayisi: 10 (ConceptID.test.ts haric tutuldu, Faz 5'te ele alinacak)
+- Concept.test.ts pilot olarak once donusturuldu, sonra digerleri
+

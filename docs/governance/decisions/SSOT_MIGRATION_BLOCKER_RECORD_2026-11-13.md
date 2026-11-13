@@ -93,3 +93,33 @@ Bu tamamlaninca: Plan revizyonu gerekip gerekmedigi kesinlesir.
 ## Degisiklik Gecmisi
 
 - 2026-11-13: Ilk olusturma. Faz 1 bloker kaydi.
+
+## Cozum (2026-11-13)
+
+Bu bloker, asagidaki adimlarla cozuldu:
+
+| # | Adim | Commit |
+|---|---|---|
+| M.1 | ConceptId.getValue() eklendi (API parity) | 7fda7f5 |
+| M.2 | Concept.ts bridge kaldirildi (id: ConceptId) | ef1edf3 |
+| Faz 1 | 10 test dosyasi ConceptId SSOT'a gecti | ef1edf3 |
+| Faz 2 | ConceptFacade donusturuldu | ef1edf3 |
+
+### Sonuc
+
+- tsc --noEmit: YESIL
+- vitest run: 218/218 dosya, 1074/1074 test
+- ConceptID import: 14 -> 3
+- ConceptId import: 11 -> 21
+
+### Kalan
+
+3 ConceptID import (Faz 3, 5, 6 icin):
+1. ConceptID.ts (alias, Faz 5'te silinecek)
+2. ConceptRepository.ts (Faz 3)
+3. CanonicalIdentityGuard.test.ts (Faz 6)
+
+### Bloker Durumu
+
+KAPALI - M.2 + Faz 1 ile cozuldu.
+
