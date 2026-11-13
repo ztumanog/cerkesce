@@ -84144,5 +84144,21 @@
       "totalLexemes": 1
     },
     "_source": "lexemes-sync-2026"
+  },
+  {
+    "id": "WF-GUAVA",
+    "conceptIds": [
+      "FRUIT"
+    ],
+    "morphemeIds": [],
+    "notes": "гуава alıntı/tekil kelime ailesi",
+    "_source": "reconcile_wf",
+    "lexemeIds": [
+      "L-GUAVA"
+    ],
+    "productivity": {
+      "totalLexemes": 1,
+      "corpusFrequency": 0
+    }
   }
 ]
