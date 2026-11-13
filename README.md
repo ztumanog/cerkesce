@@ -52,3 +52,11 @@ Geliştirme ortamını yerelde başlatmak için aşağıdaki adımları izleyin:
    ```bash
    git clone [https://github.com/kullanici-adi/cerkesce-sozluk.git](https://github.com/kullanici-adi/cerkesce-sozluk.git)
    cd cerkesce-sozluk
+
+## Dilbilimsel Veri Seti Metrikleri (Linguistic Dataset)
+
+- **Toplam Sözcük Birimi (`lexemes.json`):** `28.414` (%100 `etymologyType` sınıflandırması tamamlanmış, `0` kırık referans)
+- **Kanonik Kök (`roots.json`):** `4.039` (`1.789` çok üyeli kelime ailesi)
+- **Kök Bağlantı Oranı:** **%85.30** (`24.238` lexeme doğrudan kanonik köke bağlı)
+- **Köken Dağılımı:** Yerli (`native`): `25.719` (%90.52), Ödünç (`loanword`): `2.123` (%7.47), Özel İsim (`proper_noun`): `559` (%1.97), Diğer (`noise` / `phrase` / `loan_compound`): `13`
+- **Diyalekt Dağılımı:** `KBD` (Kabardey): `18.471`, `COMMON` (Ortak): `7.648`, `ADY` (Adige): `2.295`
