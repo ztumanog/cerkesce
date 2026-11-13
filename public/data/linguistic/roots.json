@@ -55262,7 +55262,7 @@
     ],
     "kategori": "verb_root",
     "productivity": {
-      "lemmaCount": 13
+      "lemmaCount": 16
     },
     "notes": "къузын fiilinin kökü. уз (hastalık) ile KARIŞTIRILMAMALI.",
     "lexemeIds": [],
@@ -55279,8 +55279,11 @@
         "L-KBD-01620",
         "L-KBD-01672",
         "L-KBD-01902",
+        "L-KUEZA",
         "L-PYKUEZYK-YN",
         "L-BASHTEKUEZEK-E",
+        "L-KUEZAUE",
+        "L-XEKUEZA",
         "L-AUTO-00360"
       ]
     }
@@ -70332,7 +70335,7 @@
     "productivity": {
       "lexemeCount": 114,
       "conceptCount": 85,
-      "lemmaCount": 477
+      "lemmaCount": 484
     },
     "_source": "lexemes-sync-2026",
     "wordFamily": {
@@ -70593,6 +70596,7 @@
         "L-PXYK-YK-YN",
         "L-K-EDEDZE",
         "L-HEK-EUPS",
+        "L-K-Y",
         "L-ERYGHEK",
         "L-BGHEDEK-YZHYN",
         "L-K-ABLASHCHHE",
@@ -70670,6 +70674,7 @@
         "L-KEYDEGHEK-YZHYN",
         "L-KUEEK-YN",
         "L-ZE-EPYSHCH-EK-YN",
+        "L-ZEGUEK-YP-E",
         "L-ZEPXRYK-YN",
         "L-ZYSHCH-EGHEK-YN",
         "L-KEYGUEGHEK-YN",
@@ -70692,6 +70697,7 @@
         "L-SHCHHETSGHEK",
         "L-XUXEK-EN",
         "L-ZEPYK-YZHYN",
+        "L-DEK-YP-ENSHE",
         "L-HEK-EZEPX",
         "L-K-EMASTE",
         "L-HEK-ESU",
@@ -70757,6 +70763,7 @@
         "L-PSYK-EDEXUE",
         "L-PKHEK-EBZHEK-E",
         "L-UDYK-EXU",
+        "L-ZEXEK-YP-E",
         "L-HEK-E",
         "L-HEK-EMEL",
         "L-HEK-EN",
@@ -70768,9 +70775,11 @@
         "L-TSYK-UEK-YK",
         "L-SHCH-YMAXUEK-E",
         "L-SHCHHEPRYK-YP-E",
+        "L-IK-YNYGHE",
         "L-ZESHCHHESHCHYK-YN",
         "L-K-APE-KBD",
         "L-K-UETS-YK",
+        "L-KEEK-YU",
         "L-KEYDEK-A",
         "L-BAZHEK-E",
         "L-VYK-E",
@@ -70792,6 +70801,7 @@
         "L-K-EPLH-SHCHHEXU",
         "L-K-ERY",
         "L-NEHEK-KEEHEK",
+        "L-AUTO-00206",
         "L-AUTO-00369",
         "L-AUTO-00411",
         "L-AUTO-00418",
@@ -72256,7 +72266,7 @@
     "productivity": {
       "lexemeCount": 1,
       "conceptCount": 1,
-      "lemmaCount": 4
+      "lemmaCount": 7
     },
     "_source": "lexemes-sync-2026",
     "wordFamily": {
@@ -72265,7 +72275,10 @@
         "L-GHEUTKHUEN",
         "L-VERIFIED-00320",
         "L-VERIFIED-00853",
-        "L-VERIFIED-01855"
+        "L-VERIFIED-01855",
+        "L-ZEXEUTKHUA",
+        "L-UTKHUAUE",
+        "L-KEEUTKHUA"
       ]
     }
   },
@@ -107290,7 +107303,7 @@
     "productivity": {
       "lexemeCount": 29,
       "conceptCount": 11,
-      "lemmaCount": 56
+      "lemmaCount": 59
     },
     "_source": "lexemes-sync-2026",
     "wordFamily": {
@@ -107327,6 +107340,7 @@
         "L-SHAUK",
         "L-ZYZESHCH-EUK-EZHYN",
         "L-IUK-YHYN",
+        "L-ZEXEUK-A",
         "L-UUK-YHYN",
         "L-ZERYUK",
         "L-XESHCHHERYUK-YN",
@@ -107348,6 +107362,8 @@
         "L-ESHCH-EUK-EN",
         "L-SHCH-EUK-YN",
         "L-SHCHHEPRYUK-YN",
+        "L-ZEXEUK-AUE",
+        "L-KEEUK-A",
         "L-SHCH-EUK-EZHYN",
         "L-SHCH-EUK-EN",
         "L-AUTO-01045",
@@ -111573,7 +111589,7 @@
     "productivity": {
       "lexemeCount": 8,
       "conceptCount": 7,
-      "lemmaCount": 34
+      "lemmaCount": 37
     },
     "_source": "lexemes-sync-2026",
     "wordFamily": {
@@ -111609,6 +111625,9 @@
         "L-SHCH-EK-UEDYK-YN",
         "L-K-UETS-YK-UEDEN",
         "L-XEK-UEDYK",
+        "L-XEK-UEDA",
+        "L-GHEK-UEDAUE",
+        "L-TEK-UEDA",
         "L-AUTO-00598",
         "L-AUTO-00830",
         "L-AUTO-01058",
@@ -152862,13 +152881,16 @@
     "productivity": {
       "lexemeCount": 1,
       "conceptCount": 1,
-      "lemmaCount": 1
+      "lemmaCount": 4
     },
     "_source": "lexemes-sync-2026",
     "wordFamily": {
       "id": "WF-KHUEZH",
       "lexemeIds": [
-        "L-ZEKHUEZHYN"
+        "L-KEEKHUEZHY",
+        "L-EKHUEZHYNYGHE",
+        "L-ZEKHUEZHYN",
+        "L-AUTO-00318"
       ]
     }
   },
@@ -159743,7 +159765,7 @@
       "kabardian": "тхъ"
     },
     "productivity": {
-      "lemmaCount": 65,
+      "lemmaCount": 68,
       "corpusFrequency": 0,
       "compoundCount": 0
     },
@@ -159796,6 +159818,7 @@
         "L-PXYTKHYP-E",
         "L-TKHAP-E",
         "L-ZESHCHYTKHYN",
+        "L-TKHAN",
         "L-ZYLHYTKHYN",
         "L-ITKHYHYN",
         "L-ERYTKHYN",
@@ -159811,6 +159834,8 @@
         "L-XETKHYN",
         "L-SHCH-ETKH",
         "L-ZEK-ESHCH-ETKHYN",
+        "L-XETKHA",
+        "L-KEYXETKHA",
         "L-KEYDETKHYN",
         "L-KEYSHCH-ITKHYN",
         "L-AUTO-00919",
@@ -168205,6 +168230,28 @@
         "L-ZHEZHYN",
         "L-UZHEZHEN"
       ]
+    }
+  },
+  {
+    "id": "R-GHUV",
+    "form": "гъув",
+    "ipa": "/ʁʷəv/",
+    "primaryMeaning": "düzenlemek, durulmak",
+    "secondaryMeanings": [
+      "oturmak",
+      "yerleşmek"
+    ],
+    "productivity": {
+      "lemmaCount": 3
+    },
+    "wordFamily": {
+      "rootId": "R-GHUV",
+      "lexemeIds": [
+        "L-GHUVYN",
+        "L-TEGHUVEN",
+        "L-ZETEGHUVEN"
+      ],
+      "totalMembers": 3
     }
   }
 ]
