@@ -76,3 +76,8 @@ Tüm yönetim ve kürasyon uçları `src/lib/security/curationGuard.ts` içindek
 - `lexemes.json` (`wordFamilyId`) ile `word_families.json` (`lexemeIds`) arasındaki **212** çapraz/çoklu aile çakışması daha spesifik kelime ailesi lehine çözümlendi (`WF-GU`: 1.399 → 1.310).
 - Kök kimliği uyuşmayan **6** hatalı üyelik ve `L-GUAVA` gibi saf substring yanlış pozitifleri temizlendi.
 - **493** kelime ailesinin `productivity.totalLexemes` sayacı gerçek üye sayılarıyla eşitlenerek **%100 çift yönlü simetri (0 uyumsuzluk)** sağlandı.
+
+## Legacy Root Forms Kanonik Kök Terfisi
+- `legacyRootForms` havuzundaki **71** tek anlamlı kök formu mevcut kanonik köklere (`R-P1E`, `R-KWA`, `R-UNE`, `R-TS1E`, `R-XHW`, `R-GU`, `R-SHKH` vb.) çift yönlü simetrik olarak bağlandı.
+- `roots.json` içinde karşılığı bulunmayan ve `5+` kelimede geçen **109** yüksek frekanslı kök (`хъу`, `ей`, `тхъ`, `ку`, `псэлъ`, `псэу`, `бг`, `плӀ`, `шын`, `нэхъ`, `хьэж`, `бан`, `мэл`, `жыг` vb.) üretilerek toplam kanonik kök envanteri **3.880** köke çıkarıldı (**3.628** referans kanonik `rootIds` bağına terfi ettirildi).
+- Eşsesli ayrım gerektiren ve düşük frekanslı (`1-4` geçişli) **4.195** referans (`3.852` kelime) veri kaybı olmadan `legacyRootForms` altında korundu.
