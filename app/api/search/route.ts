@@ -123,6 +123,17 @@ function formatField(val: any): string {
   return String(val).trim();
 }
 
+function resolveDialect(lex: any, kaynaklar: KaynakInfo[]): string {
+  if (typeof lex.dialect === 'string' && lex.dialect.trim()) return lex.dialect.trim();
+  const id = String(lex.id || '');
+  if (id.includes('KBD')) return 'KBD';
+  if (id.includes('ADY')) return 'ADY';
+  if (kaynaklar[0]?.dialect) return kaynaklar[0].dialect;
+  if (lex.dialectVariants?.kabardian && !lex.dialectVariants?.adyghe) return 'KBD';
+  if (lex.dialectVariants?.adyghe && !lex.dialectVariants?.kabardian) return 'ADY';
+  return 'COMMON';
+}
+
 function collectSourcesForLex(lex: any, sourcesMap: Map<string, KaynakInfo[]>): KaynakInfo[] {
   const forms = new Set<string>();
   const addForm = (f: any) => {
@@ -164,7 +175,6 @@ export async function GET(request: NextRequest) {
       return NextResponse.json({ success: true, results: [], total: 0, ms: 0 });
     }
 
-    // 1. Kol: Çerkesçe Kiril + Latin-Kiril Converter normalizasyonu
     const q = normalizePalochka(normalizeLatinToKiril(rawQ)).toLowerCase();
     const qAlt = q.includes('е')
       ? q.replace(/е/g, 'э')
@@ -177,7 +187,6 @@ export async function GET(request: NextRequest) {
         ? q.replace(/Ӏ(?!.*Ӏ)/, '')
         : null;
 
-    // 2. Kol: Ham Çok Dilli Anlam Sorgusu (TR, EN, RU, AR)
     const rawLower = rawQ.toLocaleLowerCase('tr-TR');
     const rawEnLower = rawQ.toLowerCase();
 
@@ -197,8 +206,7 @@ export async function GET(request: NextRequest) {
     for (const lex of list) {
       const form = normalizePalochka(String(lex.form || lex.headword || '')).toLowerCase();
 
-      // 1) Çerkesçe kelime başı (Kiril veya Latin Converter çıktısı)
-      if (form) {
+      if (form && mode !== 'tam') {
         if (form.startsWith(q) && form !== q) {
           circassianStarts.push(lex);
         } else if (qAlt && form.startsWith(qAlt) && form !== qAlt) {
@@ -210,7 +218,6 @@ export async function GET(request: NextRequest) {
         }
       }
 
-      // 2) Çok dilli anlam eşleşmesi (TR, EN, RU, AR + literalMeaning + 35 sözlük kaynak anlamları)
       const trChunks = toStringList(lex.translations?.tr);
       const otherChunks = [
         ...toStringList(lex.translations?.en),
@@ -219,15 +226,15 @@ export async function GET(request: NextRequest) {
         ...toStringList(lex.literalMeaning),
       ];
 
-      let matchedRank = 0; // 3: tam anlam, 2: anlam başı, 1: anlam içi
+      let matchedRank = 0;
 
       for (const chunk of trChunks) {
         const c = chunk.toLocaleLowerCase('tr-TR');
         if (c === rawLower) {
           matchedRank = Math.max(matchedRank, 3);
-        } else if (c.startsWith(rawLower) || c.split(/\s+/).some((w) => w.startsWith(rawLower))) {
+        } else if (mode !== 'tam' && (c.startsWith(rawLower) || c.split(/\s+/).some((w) => w.startsWith(rawLower)))) {
           matchedRank = Math.max(matchedRank, 2);
-        } else if (c.includes(rawLower)) {
+        } else if (mode !== 'tam' && c.includes(rawLower)) {
           matchedRank = Math.max(matchedRank, 1);
         }
       }
@@ -236,9 +243,9 @@ export async function GET(request: NextRequest) {
         const c = chunk.toLowerCase();
         if (c === rawEnLower) {
           matchedRank = Math.max(matchedRank, 3);
-        } else if (c.startsWith(rawEnLower) || c.split(/\s+/).some((w) => w.startsWith(rawEnLower))) {
+        } else if (mode !== 'tam' && (c.startsWith(rawEnLower) || c.split(/\s+/).some((w) => w.startsWith(rawEnLower)))) {
           matchedRank = Math.max(matchedRank, 2);
-        } else if (c.includes(rawEnLower)) {
+        } else if (mode !== 'tam' && c.includes(rawEnLower)) {
           matchedRank = Math.max(matchedRank, 1);
         }
       }
@@ -263,12 +270,15 @@ export async function GET(request: NextRequest) {
       if (fk) seenForms.add(fk);
 
       const kaynaklar = collectSourcesForLex(lex, sourcesMap);
+      const resolvedDialect = resolveDialect(lex, kaynaklar);
 
       const item: any = {
         id: lex.id,
         form: lex.form,
         ipa: lex.ipa ?? null,
         partOfSpeech: lex.partOfSpeech ?? null,
+        dialect: resolvedDialect,
+        lehce: resolvedDialect,
         translations: lex.translations || {},
         kaynaklar,
       };
@@ -286,9 +296,7 @@ export async function GET(request: NextRequest) {
       if (arText) item.ar = arText;
 
       if (lex.literalMeaning) item.literalMeaning = String(lex.literalMeaning);
-      if (lex.dialect) item.dialect = String(lex.dialect);
-      const mergedRoots = Array.isArray(lex.rootIds) && lex.rootIds.length ? lex.rootIds : (lex.rootId ? [lex.rootId] : []);
-      if (mergedRoots.length) item.rootIds = mergedRoots;
+      if (lex.rootIds?.length) item.rootIds = lex.rootIds;
       if (lex.wordFamilyId) item.wordFamilyId = lex.wordFamilyId;
       if (lex.conceptId) item.conceptId = lex.conceptId;
       if (lex.dialectVariants) item.dialectVariants = lex.dialectVariants;
@@ -310,7 +318,6 @@ export async function GET(request: NextRequest) {
     translationStarts.sort(rankTranslationMatch);
     translationContains.sort(rankTranslationMatch);
 
-    // Öncelik sırası: Çerkesçe tam -> Anlam tam -> Çerkesçe başlayan -> Anlam başlayan -> İçeren
     if (exact) pushLex(exact);
     if (exactAlt) pushLex(exactAlt);
     if (exactNoPal) pushLex(exactNoPal);
@@ -320,7 +327,6 @@ export async function GET(request: NextRequest) {
     for (const lex of circassianContains) pushLex(lex);
     for (const lex of translationContains) pushLex(lex);
 
-    // 3) Sadece 35 klasik sözlükte bulunup lexemes.json'da olmayan ek eşleşmeleri de tamamla
     if (results.length < limit) {
       const groupedLegacy = new Map<string, { headword: string; kaynaklar: KaynakInfo[] }>();
       for (const leg of legacyList) {
@@ -331,16 +337,20 @@ export async function GET(request: NextRequest) {
 
         const isCircMatch =
           hwNorm === q ||
-          hwNorm.startsWith(q) ||
-          (qAlt && (hwNorm === qAlt || hwNorm.startsWith(qAlt))) ||
-          (mode === 'iceren' && q.length >= 2 && hwNorm.includes(q));
+          (qAlt && hwNorm === qAlt) ||
+          (mode !== 'tam' &&
+            (hwNorm.startsWith(q) ||
+              (qAlt && hwNorm.startsWith(qAlt)) ||
+              (mode === 'iceren' && q.length >= 2 && hwNorm.includes(q))));
 
         const isMeaningMatch =
           mTr === rawLower ||
-          mTr.startsWith(rawLower) ||
           mEn === rawEnLower ||
-          mEn.startsWith(rawEnLower) ||
-          ((mode === 'iceren' || rawLower.length >= 3) && (mTr.includes(rawLower) || mEn.includes(rawEnLower)));
+          (mode !== 'tam' &&
+            (mTr.startsWith(rawLower) ||
+              mEn.startsWith(rawEnLower) ||
+              ((mode === 'iceren' || rawLower.length >= 3) &&
+                (mTr.includes(rawLower) || mEn.includes(rawEnLower)))));
 
         if (!isCircMatch && !isMeaningMatch) continue;
 
@@ -356,11 +366,13 @@ export async function GET(request: NextRequest) {
         if (results.length >= limit) break;
         seenForms.add(k);
         const first = grp.kaynaklar[0];
+        const d = first?.dialect || 'COMMON';
         results.push({
           id: `DICT-${k}`,
           form: grp.headword,
           anlam: first?.anlam || '',
-          dialect: first?.dialect || 'COMMON',
+          dialect: d,
+          lehce: d,
           kaynaklar: grp.kaynaklar,
         });
       }

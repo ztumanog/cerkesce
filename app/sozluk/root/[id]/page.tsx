@@ -1,7 +1,30 @@
 'use client';
+
 import { useEffect, useState, useMemo } from 'react';
 import { useParams, useRouter } from 'next/navigation';
 import Link from 'next/link';
+import {
+  Container,
+  Box,
+  Flex,
+  Grid,
+  Card,
+  Badge,
+  Button,
+  Text,
+  Heading,
+  TextField,
+  SegmentedControl,
+  Separator,
+  Callout,
+  Skeleton,
+} from '@radix-ui/themes';
+import {
+  ArrowLeftIcon,
+  MagnifyingGlassIcon,
+  ExclamationTriangleIcon,
+  InfoCircledIcon,
+} from '@radix-ui/react-icons';
 
 export default function RootDetailPage() {
   const params = useParams();
@@ -11,6 +34,7 @@ export default function RootDetailPage() {
   const [data, setData] = useState<any>(null);
   const [loading, setLoading] = useState(true);
   const [searchQuery, setSearchQuery] = useState('');
+  const [dialectFilter, setDialectFilter] = useState<'all' | 'paired' | 'adyghe' | 'kabardian'>('all');
 
   useEffect(() => {
     if (!id) return;
@@ -24,163 +48,296 @@ export default function RootDetailPage() {
 
   const filteredMembers = useMemo(() => {
     const list = data?.members || [];
-    if (!searchQuery.trim()) return list;
     const q = searchQuery.toLowerCase().trim();
-    return list.filter((m: any) =>
-      (m.form || '').toLowerCase().includes(q) ||
-      (m.translations?.tr || m.literalMeaning || '').toLowerCase().includes(q) ||
-      (m.id || '').toLowerCase().includes(q)
+    return list.filter((m: any) => {
+      if (dialectFilter === 'paired') {
+        const ady = m.dialectVariants?.adyghe;
+        const kbd = m.dialectVariants?.kabardian;
+        if (!ady || !kbd || ady === kbd) return false;
+      } else if (dialectFilter === 'adyghe') {
+        if (m.dialect !== 'ADY' && !m.dialectVariants?.adyghe) return false;
+      } else if (dialectFilter === 'kabardian') {
+        if (m.dialect !== 'KBD' && !m.dialectVariants?.kabardian) return false;
+      }
+
+      if (!q) return true;
+      return (
+        (m.form || '').toLowerCase().includes(q) ||
+        (m.dialectVariants?.adyghe || '').toLowerCase().includes(q) ||
+        (m.dialectVariants?.kabardian || '').toLowerCase().includes(q) ||
+        (m.translations?.tr || m.literalMeaning || '').toLowerCase().includes(q) ||
+        (m.id || '').toLowerCase().includes(q)
+      );
+    });
+  }, [data, searchQuery, dialectFilter]);
+
+  if (!loading && (!data || data.error)) {
+    return (
+      <Container size="3" p={{ initial: '4', md: '6' }}>
+        <Flex direction="column" gap="4" align="start">
+          <Callout.Root color="red" variant="surface" role="alert">
+            <Callout.Icon>
+              <ExclamationTriangleIcon aria-hidden="true" />
+            </Callout.Icon>
+            <Callout.Text>
+              {data?.error || 'Kök kaydı bulunamadı.'}
+            </Callout.Text>
+          </Callout.Root>
+          <Button asChild variant="soft" color="indigo" size="3" highContrast>
+            <Link href="/sozluk">
+              <ArrowLeftIcon aria-hidden="true" /> Sözlüğe Dön
+            </Link>
+          </Button>
+        </Flex>
+      </Container>
     );
-  }, [data, searchQuery]);
+  }
+
+  const canonicalId = data?.id || id;
 
   return (
-    <div className="max-w-5xl mx-auto p-5 space-y-6">
-      {/* Üst Geri ve Kaynak */}
-      <div className="flex items-center justify-between">
-        <button
-          onClick={() => router.back()}
-          className="px-4 py-2 rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 text-sm font-semibold hover:bg-slate-50 dark:hover:bg-slate-700 transition"
-        >
-          ← Geri
-        </button>
-        <span className="text-xs text-slate-500">API: /api/sozluk/root/{id}</span>
-      </div>
+    <Container size="4" p={{ initial: '4', md: '6' }}>
+      <Flex direction="column" gap="5">
+        {/* Üst Gezinme */}
+        <Flex align="center" justify="between" wrap="wrap" gap="2">
+          <Button
+            type="button"
+            variant="surface"
+            color="gray"
+            size="2"
+            highContrast
+            onClick={() => router.back()}
+          >
+            <ArrowLeftIcon aria-hidden="true" /> Geri
+          </Button>
+          <Badge variant="soft" color="gray" size="1">
+            API: /api/sozluk/root/{canonicalId}
+          </Badge>
+        </Flex>
 
-      {/* Hiyerarşi Şeridi: ROOT > FAMILY > CONCEPT */}
-      <div className="p-4 rounded-xl border border-emerald-200 dark:border-emerald-800 bg-emerald-50/70 dark:bg-emerald-950/30">
-        <div className="flex flex-wrap items-center gap-2 text-xs font-semibold text-slate-600 dark:text-slate-300">
-          <span className="px-2.5 py-1 rounded-md bg-emerald-600 text-white">🌱 ROOT: {id}</span>
-          <span>›</span>
-          <span className="px-2.5 py-1 rounded-md bg-indigo-100 text-indigo-800 dark:bg-indigo-900/60 dark:text-indigo-200">
-            🌿 {data?.families?.length ?? 0} Kelime Ailesi (Family)
-          </span>
-          <span>›</span>
-          <span className="px-2.5 py-1 rounded-md bg-amber-100 text-amber-800 dark:bg-amber-900/60 dark:text-amber-200">
-            🏷️ {data?.concepts?.length ?? 0} Kavram (Concept)
-          </span>
-        </div>
+        {/* Hiyerarşi ve Kök Başlık Kartı */}
+        <Card size="3" variant="surface">
+          <Flex direction="column" gap="3">
+            <nav aria-label="Kök hiyerarşisi">
+              <Flex align="center" gap="2" wrap="wrap">
+                <Badge variant="solid" color="jade" size="2" highContrast aria-current="page">
+                  🌱 ROOT: {canonicalId}
+                </Badge>
+                <Text size="2" color="gray" aria-hidden="true">›</Text>
+                <Badge variant="soft" color="indigo" size="2" highContrast>
+                  🌿 {data?.families?.length ?? 0} Kelime Ailesi
+                </Badge>
+                <Text size="2" color="gray" aria-hidden="true">›</Text>
+                <Badge variant="soft" color="amber" size="2" highContrast>
+                  🏷️ {data?.concepts?.length ?? 0} Kavram
+                </Badge>
+              </Flex>
+            </nav>
 
-        <div className="mt-3 flex flex-wrap items-baseline gap-3">
-          <h1 className="text-2xl font-black text-slate-900 dark:text-white">
-            {data?.root?.form || data?.root?.headword || id}
-          </h1>
-          <span className="text-xs font-mono px-2 py-0.5 rounded bg-white/80 dark:bg-slate-800 text-slate-600 dark:text-slate-300">
-            {id}
-          </span>
-          {data?.root?.meaning && (
-            <span className="text-sm text-slate-700 dark:text-slate-300">— {data.root.meaning}</span>
-          )}
-          <span className="text-sm text-slate-500">· {data?.count ?? 0} türev kelime</span>
-        </div>
-      </div>
+            <Flex align="baseline" gap="3" wrap="wrap">
+              <Heading as="h1" size="8" weight="bold">
+                {data?.root?.form || data?.root?.headword || canonicalId}
+              </Heading>
+              <Badge variant="outline" color="gray" size="2" highContrast>
+                {canonicalId}
+              </Badge>
+              {data?.root?.meaning && (
+                <Text size="3">— {data.root.meaning}</Text>
+              )}
+              <Text size="2" color="gray" role="status" aria-live="polite">
+                · {data?.count ?? 0} türev kelime
+              </Text>
+            </Flex>
+          </Flex>
+        </Card>
 
-      {loading ? (
-        <div className="py-12 text-center text-slate-500">Kök ağacı yükleniyor...</div>
-      ) : (
-        <>
-          {/* 2. Katman: Bu Kökten Türeyen Kelime Aileleri (Family) */}
-          {data?.families?.length > 0 && (
-            <section className="space-y-2.5">
-              <h2 className="text-sm font-bold uppercase tracking-wider text-indigo-700 dark:text-indigo-300">
-                🌿 Türeyen Kelime Aileleri (Family)
-              </h2>
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
-                {data.families.map((fam: any) => (
-                  <Link
-                    key={fam.id}
-                    href={`/sozluk/family/${encodeURIComponent(fam.id)}`}
-                    className="p-3.5 rounded-xl border border-indigo-200 dark:border-indigo-800 bg-white dark:bg-slate-800 hover:border-indigo-500 transition shadow-sm"
-                  >
-                    <div className="flex items-center justify-between">
-                      <span className="font-bold text-sm text-indigo-700 dark:text-indigo-300">{fam.id}</span>
-                      <span className="text-xs px-2 py-0.5 rounded-full bg-indigo-50 dark:bg-indigo-900/50 text-indigo-700 dark:text-indigo-200">
-                        {fam.count} üye
-                      </span>
-                    </div>
-                    {fam.sampleForms?.length > 0 && (
-                      <div className="mt-1.5 text-xs text-slate-600 dark:text-slate-300 truncate">
-                        {fam.sampleForms.join(', ')}
-                      </div>
-                    )}
-                  </Link>
-                ))}
-              </div>
-            </section>
-          )}
-
-          {/* 3. Katman: Bağlı Kavramlar (Concept) */}
-          {data?.concepts?.length > 0 && (
-            <section className="space-y-2.5">
-              <h2 className="text-sm font-bold uppercase tracking-wider text-amber-700 dark:text-amber-300">
-                🏷️ Bağlı Kavramlar (Concept)
-              </h2>
-              <div className="flex flex-wrap gap-2">
-                {data.concepts.map((c: any) => (
-                  <Link
-                    key={c.id}
-                    href={`/kavram/${c.id.toLowerCase()}`}
-                    className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 hover:border-amber-500 text-xs font-semibold transition"
-                  >
-                    <span>🏷️ {c.id}</span>
-                    {c.labelTr && <span className="text-slate-500">({c.labelTr})</span>}
-                    <span className="px-1.5 py-0.2 rounded bg-slate-100 dark:bg-slate-700 text-[11px]">{c.count}</span>
-                  </Link>
-                ))}
-              </div>
-            </section>
-          )}
-
-          {/* 4. Katman: Köke Bağlı Tüm Kelimeler */}
-          <section className="space-y-3">
-            <div className="flex items-center justify-between gap-3 flex-wrap">
-              <h2 className="text-sm font-bold uppercase tracking-wider text-slate-700 dark:text-slate-300">
-                📖 Köke Bağlı Kelimeler ({filteredMembers.length})
-              </h2>
-              <input
-                type="text"
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                placeholder="Köke bağlı kelimelerde ara..."
-                className="px-3 py-1.5 rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 text-sm w-64"
-              />
-            </div>
-
-            <div className="divide-y divide-slate-200 dark:divide-slate-700 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 overflow-hidden">
-              {filteredMembers.map((m: any) => (
-                <div key={m.id} className="p-3.5 flex flex-wrap items-center justify-between gap-3 hover:bg-slate-50 dark:hover:bg-slate-700/40">
-                  <div>
-                    <Link href={`/lexeme/${encodeURIComponent(m.id)}`} className="font-bold text-base text-slate-900 dark:text-white hover:text-emerald-600">
-                      {m.form}
-                    </Link>
-                    {m.ipa && <span className="ml-2 text-xs font-mono text-slate-400">/{m.ipa}/</span>}
-                    <div className="text-sm text-slate-600 dark:text-slate-300">
-                      {m.translations?.tr || m.literalMeaning || '—'}
-                    </div>
-                  </div>
-                  <div className="flex flex-wrap items-center gap-1.5">
-                    {m.wordFamilyId && (
-                      <Link
-                        href={`/sozluk/family/${encodeURIComponent(m.wordFamilyId)}`}
-                        className="text-[11px] px-2 py-0.5 rounded bg-indigo-100 text-indigo-800 dark:bg-indigo-900 dark:text-indigo-200 font-medium"
-                      >
-                        🌿 {m.wordFamilyId}
+        {loading ? (
+          <Flex direction="column" gap="4" role="status" aria-live="polite" aria-label="Kök ağacı yükleniyor">
+            <Skeleton height="110px" />
+            <Skeleton height="240px" />
+          </Flex>
+        ) : (
+          <>
+            {/* 2. Katman: Türeyen Kelime Aileleri */}
+            {data?.families?.length > 0 && (
+              <section aria-labelledby="root-families-heading">
+                <Heading id="root-families-heading" as="h2" size="3" mb="3" color="indigo">
+                  🌿 Türeyen Kelime Aileleri (Family)
+                </Heading>
+                <Grid columns={{ initial: '1', sm: '2', md: '3' }} gap="3">
+                  {data.families.map((fam: any) => (
+                    <Card key={fam.id} asChild size="2" variant="surface" className="hover:border-[var(--indigo-8)] transition-colors">
+                      <Link href={`/sozluk/family/${encodeURIComponent(fam.id)}`}>
+                        <Flex direction="column" gap="1">
+                          <Flex align="center" justify="between">
+                            <Text size="3" weight="bold" color="indigo">
+                              {fam.id}
+                            </Text>
+                            <Badge variant="soft" color="indigo" highContrast>
+                              {fam.count} üye
+                            </Badge>
+                          </Flex>
+                          {fam.sampleForms?.length > 0 && (
+                            <Text as="p" size="2" color="gray" truncate>
+                              {fam.sampleForms.join(', ')}
+                            </Text>
+                          )}
+                        </Flex>
                       </Link>
-                    )}
-                    {m.conceptId && (
-                      <Link
-                        href={`/kavram/${m.conceptId.toLowerCase()}`}
-                        className="text-[11px] px-2 py-0.5 rounded bg-slate-100 text-slate-700 dark:bg-slate-700 dark:text-slate-200 font-medium"
-                      >
-                        🏷️ {m.conceptId}
+                    </Card>
+                  ))}
+                </Grid>
+              </section>
+            )}
+
+            {/* 3. Katman: Bağlı Kavramlar */}
+            {data?.concepts?.length > 0 && (
+              <section aria-labelledby="root-concepts-heading">
+                <Heading id="root-concepts-heading" as="h2" size="3" mb="3" color="amber">
+                  🏷️ Bağlı Kavramlar (Concept)
+                </Heading>
+                <Flex gap="2" wrap="wrap">
+                  {data.concepts.map((c: any) => (
+                    <Button key={c.id} asChild variant="surface" color="amber" size="2" highContrast>
+                      <Link href={`/kavram/${c.id.toLowerCase()}`}>
+                        <span>🏷️ {c.id}</span>
+                        {c.labelTr && <Text size="1" color="gray">({c.labelTr})</Text>}
+                        <Badge variant="soft" color="amber" highContrast>
+                          {c.count}
+                        </Badge>
                       </Link>
-                    )}
-                  </div>
-                </div>
-              ))}
-            </div>
-          </section>
-        </>
-      )}
-    </div>
+                    </Button>
+                  ))}
+                </Flex>
+              </section>
+            )}
+
+            {/* 4. Katman: Köke Bağlı Tüm Kelimeler */}
+            <section aria-labelledby="root-members-heading">
+              <Flex direction="column" gap="3">
+                <Flex align={{ md: 'center' }} justify="between" gap="3" wrap="wrap">
+                  <Heading id="root-members-heading" as="h2" size="3">
+                    📖 Köke Bağlı Kelimeler ({filteredMembers.length})
+                  </Heading>
+
+                  <Flex align="center" gap="3" wrap="wrap">
+                    <SegmentedControl.Root
+                      size="2"
+                      value={dialectFilter}
+                      onValueChange={(v) => setDialectFilter(v as typeof dialectFilter)}
+                      aria-label="Kök üyeleri lehçe filtresi"
+                    >
+                      <SegmentedControl.Item value="all">Tümü</SegmentedControl.Item>
+                      <SegmentedControl.Item value="paired">ADY ↔ KBD</SegmentedControl.Item>
+                      <SegmentedControl.Item value="adyghe">Adıgece</SegmentedControl.Item>
+                      <SegmentedControl.Item value="kabardian">Kabardeyce</SegmentedControl.Item>
+                    </SegmentedControl.Root>
+
+                    <Box className="w-full sm:w-64">
+                      <label htmlFor="root-member-search" className="sr-only">
+                        Köke bağlı kelimelerde ara
+                      </label>
+                      <TextField.Root
+                        id="root-member-search"
+                        size="2"
+                        value={searchQuery}
+                        onChange={(e) => setSearchQuery(e.target.value)}
+                        placeholder="Köke bağlı kelimelerde ara..."
+                        aria-label="Köke bağlı kelimelerde ara"
+                      >
+                        <TextField.Slot>
+                          <MagnifyingGlassIcon height="15" width="15" aria-hidden="true" />
+                        </TextField.Slot>
+                      </TextField.Root>
+                    </Box>
+                  </Flex>
+                </Flex>
+
+                {filteredMembers.length === 0 ? (
+                  <Callout.Root color="amber" variant="surface">
+                    <Callout.Icon>
+                      <InfoCircledIcon aria-hidden="true" />
+                    </Callout.Icon>
+                    <Callout.Text>
+                      Arama veya lehçe filtresine uygun türev kelime bulunamadı.
+                    </Callout.Text>
+                  </Callout.Root>
+                ) : (
+                  <Card size="2" variant="surface">
+                    <Flex direction="column">
+                      {filteredMembers.map((m: any, idx: number) => {
+                        const ady = m.dialectVariants?.adyghe;
+                        const kbd = m.dialectVariants?.kabardian;
+                        const showPair = ady && kbd && ady !== kbd;
+
+                        return (
+                          <Box key={m.id}>
+                            {idx > 0 && <Separator size="4" my="3" />}
+                            <Flex
+                              align={{ sm: 'center' }}
+                              justify="between"
+                              direction={{ initial: 'column', sm: 'row' }}
+                              gap="2"
+                            >
+                              <Box>
+                                <Flex align="center" gap="2" wrap="wrap">
+                                  <Link
+                                    href={`/lexeme/${encodeURIComponent(m.id)}`}
+                                    className="font-bold text-base hover:underline focus-visible:outline-2 focus-visible:outline-offset-2"
+                                  >
+                                    {m.form}
+                                  </Link>
+                                  {m.ipa && (
+                                    <Text size="1" color="gray" className="font-mono" aria-label={`Fonetik: ${m.ipa}`}>
+                                      /{m.ipa}/
+                                    </Text>
+                                  )}
+                                  {showPair && (
+                                    <Flex align="center" gap="1" wrap="wrap" aria-label="Lehçe karşılıkları">
+                                      <Badge variant="soft" color="sky" highContrast size="1">
+                                        ADY: {ady}
+                                      </Badge>
+                                      <Text size="1" color="gray" aria-hidden="true">↔</Text>
+                                      <Badge variant="soft" color="purple" highContrast size="1">
+                                        KBD: {kbd}
+                                      </Badge>
+                                    </Flex>
+                                  )}
+                                </Flex>
+                                <Text as="p" size="2" color="gray" mt="1">
+                                  {m.translations?.tr || m.literalMeaning || '—'}
+                                </Text>
+                              </Box>
+
+                              <Flex align="center" gap="2" wrap="wrap">
+                                {m.wordFamilyId && (
+                                  <Badge asChild variant="soft" color="indigo" size="2" highContrast>
+                                    <Link href={`/sozluk/family/${encodeURIComponent(m.wordFamilyId)}`}>
+                                      🌿 {m.wordFamilyId}
+                                    </Link>
+                                  </Badge>
+                                )}
+                                {m.conceptId && (
+                                  <Badge asChild variant="soft" color="gray" size="2" highContrast>
+                                    <Link href={`/kavram/${m.conceptId.toLowerCase()}`}>
+                                      🏷️ {m.conceptId}
+                                    </Link>
+                                  </Badge>
+                                )}
+                              </Flex>
+                            </Flex>
+                          </Box>
+                        );
+                      })}
+                    </Flex>
+                  </Card>
+                )}
+              </Flex>
+            </section>
+          </>
+        )}
+      </Flex>
+    </Container>
   );
 }
+

@@ -1,16 +1,42 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import { useParams } from 'next/navigation';
 import Link from 'next/link';
+import {
+  Container,
+  Box,
+  Flex,
+  Grid,
+  Card,
+  Badge,
+  Button,
+  Text,
+  Heading,
+  TextField,
+  SegmentedControl,
+  Separator,
+  Callout,
+  Skeleton,
+} from '@radix-ui/themes';
+import {
+  ArrowLeftIcon,
+  ArrowRightIcon,
+  MagnifyingGlassIcon,
+  ExclamationTriangleIcon,
+  InfoCircledIcon,
+} from '@radix-ui/react-icons';
 
 export default function FamilyDetailPage() {
   const params = useParams();
-  const id = decodeURIComponent(params.id as string);
+  const id = decodeURIComponent((params?.id as string) || '');
   const [data, setData] = useState<any>(null);
   const [loading, setLoading] = useState(true);
+  const [memberQuery, setMemberQuery] = useState('');
+  const [dialectMode, setDialectMode] = useState<'all' | 'paired' | 'adyghe' | 'kabardian'>('all');
 
   useEffect(() => {
+    if (!id) return;
     setLoading(true);
     fetch(`/api/sozluk/family/${encodeURIComponent(id)}`)
       .then((res) => res.json())
@@ -19,29 +45,71 @@ export default function FamilyDetailPage() {
       .finally(() => setLoading(false));
   }, [id]);
 
+  const members = useMemo(() => data?.members || [], [data]);
+
+  const filteredMembers = useMemo(() => {
+    const q = memberQuery.toLowerCase().trim();
+    return members.filter((m: any) => {
+      if (dialectMode === 'paired') {
+        const ady = m.dialectVariants?.adyghe;
+        const kbd = m.dialectVariants?.kabardian;
+        if (!ady || !kbd || ady === kbd) return false;
+      } else if (dialectMode === 'adyghe') {
+        if (m.dialect !== 'ADY' && !m.dialectVariants?.adyghe) return false;
+      } else if (dialectMode === 'kabardian') {
+        if (m.dialect !== 'KBD' && !m.dialectVariants?.kabardian) return false;
+      }
+
+      if (!q) return true;
+      return (
+        (m.form || '').toLowerCase().includes(q) ||
+        (m.dialectVariants?.adyghe || '').toLowerCase().includes(q) ||
+        (m.dialectVariants?.kabardian || '').toLowerCase().includes(q) ||
+        (m.translations?.tr || m.translations?.en || '').toLowerCase().includes(q) ||
+        (m.ipa || '').toLowerCase().includes(q)
+      );
+    });
+  }, [members, memberQuery, dialectMode]);
+
   if (loading) {
     return (
-      <div className="max-w-5xl mx-auto p-10 text-center text-slate-500">
-        Kelime ailesi yükleniyor...
-      </div>
+      <Container size="4" p={{ initial: '4', md: '6' }}>
+        <Flex direction="column" gap="4" role="status" aria-live="polite" aria-label="Kelime ailesi yükleniyor">
+          <Skeleton height="32px" width="240px" />
+          <Skeleton height="140px" />
+          <Grid columns={{ initial: '1', md: '3' }} gap="4">
+            <Skeleton height="150px" />
+            <Skeleton height="150px" />
+            <Skeleton height="150px" />
+          </Grid>
+        </Flex>
+      </Container>
     );
   }
 
   if (!data || data.error) {
     return (
-      <div className="max-w-5xl mx-auto p-10 text-center">
-        <p className="text-red-500 font-semibold mb-4">
-          {data?.error || 'Kelime ailesi bulunamadı.'}
-        </p>
-        <Link href="/sozluk" className="text-emerald-600 underline text-sm">
-          ← Sözlüğe Dön
-        </Link>
-      </div>
+      <Container size="3" p={{ initial: '4', md: '6' }}>
+        <Flex direction="column" gap="4" align="start">
+          <Callout.Root color="red" variant="surface" role="alert">
+            <Callout.Icon>
+              <ExclamationTriangleIcon aria-hidden="true" />
+            </Callout.Icon>
+            <Callout.Text>
+              {data?.error || 'Kelime ailesi bulunamadı.'}
+            </Callout.Text>
+          </Callout.Root>
+          <Button asChild variant="soft" color="indigo" size="3" highContrast>
+            <Link href="/sozluk">
+              <ArrowLeftIcon aria-hidden="true" /> Sözlüğe Dön
+            </Link>
+          </Button>
+        </Flex>
+      </Container>
     );
   }
 
   const root = data.root || (Array.isArray(data.roots) ? data.roots[0] : null);
-  const members = data.members || [];
   const concepts: { id: string; labelTr?: string; count?: number }[] =
     Array.isArray(data.concepts) && data.concepts.length > 0
       ? data.concepts
@@ -50,153 +118,224 @@ export default function FamilyDetailPage() {
         );
 
   return (
-    <div className="max-w-5xl mx-auto p-6 space-y-6">
-      {/* Hiyerarşik Gezinme Çubuğu: Sözlük › Kök › Kelime Ailesi */}
-      <nav className="flex flex-wrap items-center gap-2 text-xs font-medium text-slate-500 dark:text-slate-400">
-        <Link href="/sozluk" className="hover:text-emerald-600 transition">
-          Sözlük
-        </Link>
-        <span>›</span>
-        {root ? (
-          <>
-            <Link
-              href={`/sozluk/root/${encodeURIComponent(root.id)}`}
-              className="px-2 py-0.5 rounded bg-teal-50 dark:bg-teal-900/30 text-teal-700 dark:text-teal-300 hover:bg-teal-100 transition"
-            >
-              🌱 Kök: {root.form || root.id}
-            </Link>
-            <span>›</span>
-          </>
-        ) : (
-          <>
-            <span className="text-slate-400">Kök Bağlantısı Yok</span>
-            <span>›</span>
-          </>
-        )}
-        <span className="px-2 py-0.5 rounded bg-indigo-50 dark:bg-indigo-900/30 text-indigo-700 dark:text-indigo-300 font-semibold">
-          🌿 Aile: {data.familyId || data.id}
-        </span>
-      </nav>
-
-      {/* Başlık Kartı */}
-      <div className="bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-2xl p-6 shadow-sm flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
-        <div>
-          <div className="text-xs font-semibold uppercase tracking-wider text-indigo-600 dark:text-indigo-400 mb-1">
-            Kelime Ailesi (Word Family)
-          </div>
-          <h1 className="text-3xl font-bold text-slate-900 dark:text-white flex items-center gap-3">
-            <span>{data.headword || data.familyId || data.id}</span>
-            <span className="text-xs font-mono px-2.5 py-1 rounded-full bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300">
-              {data.familyId || data.id}
-            </span>
-          </h1>
-          {data.glossTr && (
-            <p className="text-sm text-slate-600 dark:text-slate-300 mt-1">
-              Temel Anlam: <strong>{data.glossTr}</strong>
-            </p>
-          )}
-          <p className="text-xs text-slate-500 dark:text-slate-400 mt-1">
-            Bu ailede toplam <strong>{members.length}</strong> türev madde kayıtlı.
-          </p>
-        </div>
-
-        <Link
-          href="/sozluk"
-          className="px-3 py-1.5 rounded-lg bg-slate-100 hover:bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-200 text-xs font-medium transition"
-        >
-          ← Sözlüğe Dön
-        </Link>
-      </div>
-
-      {/* Bağlı Kavramlar */}
-      {concepts.length > 0 && (
-        <div className="bg-slate-50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 rounded-xl p-4 flex flex-wrap items-center gap-2">
-          <span className="text-xs font-semibold text-slate-600 dark:text-slate-300 mr-1">
-            🏷️ İlişkili Kavramlar:
-          </span>
-          {concepts.map((c) => (
-            <Link
-              key={c.id}
-              href={`/kavram/${c.id.toLowerCase()}`}
-              className="text-xs px-2.5 py-1 rounded-full bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-600 text-slate-700 dark:text-slate-200 hover:border-emerald-500 hover:text-emerald-600 transition"
-            >
-              {c.labelTr ? `${c.labelTr} (${c.id})` : c.id}
-            </Link>
-          ))}
-        </div>
-      )}
-
-      {/* Aile Üyeleri (Salt-Okunur Sözlük Görünümü) */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        {members.map((m: any) => {
-          const ady = m.dialectVariants?.adyghe;
-          const kbd = m.dialectVariants?.kabardian;
-          const showDialectPair = ady && kbd && ady !== kbd;
-
-          return (
-            <div
-              key={m.id}
-              className="p-4 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 hover:border-indigo-400 transition-all"
-            >
-              <div className="flex justify-between items-start gap-2">
-                <Link
-                  href={`/lexeme/${encodeURIComponent(m.id)}`}
-                  className="font-bold text-lg text-slate-900 dark:text-white hover:text-indigo-600 transition"
-                >
-                  {m.form}
-                </Link>
-                {m.dialect && (
-                  <span className="text-[11px] font-bold px-2 py-0.5 rounded bg-amber-100 text-amber-800 dark:bg-amber-900/40 dark:text-amber-300">
-                    {m.dialect}
-                  </span>
-                )}
-              </div>
-
-              {showDialectPair && (
-                <div className="mt-1 flex flex-wrap items-center gap-1.5 text-[11px]">
-                  <span className="px-1.5 py-0.5 rounded bg-sky-50 dark:bg-sky-900/30 text-sky-700 dark:text-sky-300 font-medium">
-                    ADY: {ady}
-                  </span>
-                  <span className="text-slate-400">↔</span>
-                  <span className="px-1.5 py-0.5 rounded bg-purple-50 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 font-medium">
-                    KBD: {kbd}
-                  </span>
-                </div>
-              )}
-
-              {m.ipa && (
-                <div className="text-xs text-slate-400 font-mono mt-0.5">
-                  /{m.ipa}/
-                </div>
-              )}
-
-              <p className="text-sm text-slate-700 dark:text-slate-300 mt-2 line-clamp-2">
-                {m.translations?.tr || m.translations?.en || '—'}
-              </p>
-
-              <div className="mt-3 pt-2 border-t border-slate-100 dark:border-slate-700/60 flex items-center justify-between text-[11px]">
-                {m.conceptId ? (
-                  <Link
-                    href={`/kavram/${m.conceptId.toLowerCase()}`}
-                    className="text-emerald-700 dark:text-emerald-400 hover:underline font-medium"
-                  >
-                    🏷️ {m.conceptId}
+    <Container size="4" p={{ initial: '4', md: '6' }}>
+      <Flex direction="column" gap="5">
+        {/* WCAG 2.0 Semantik Breadcrumb */}
+        <nav aria-label="Hiyerarşik konum">
+          <Flex align="center" gap="2" wrap="wrap">
+            <Button asChild variant="ghost" size="2" highContrast>
+              <Link href="/sozluk">Sözlük</Link>
+            </Button>
+            <Text size="2" color="gray" aria-hidden="true">›</Text>
+            <Button asChild variant="ghost" size="2" highContrast>
+              <Link href="/sozluk/family">Aileler</Link>
+            </Button>
+            <Text size="2" color="gray" aria-hidden="true">›</Text>
+            {root ? (
+              <>
+                <Badge asChild variant="soft" color="teal" size="2" highContrast>
+                  <Link href={`/sozluk/root/${encodeURIComponent(root.id)}`}>
+                    🌱 Kök: {root.form || root.id}
                   </Link>
-                ) : (
-                  <span className="text-slate-400">Kavram atanmamış</span>
-                )}
+                </Badge>
+                <Text size="2" color="gray" aria-hidden="true">›</Text>
+              </>
+            ) : (
+              <>
+                <Badge variant="surface" color="gray" size="2">
+                  Kök Bağlantısı Yok
+                </Badge>
+                <Text size="2" color="gray" aria-hidden="true">›</Text>
+              </>
+            )}
+            <Badge variant="solid" color="indigo" size="2" highContrast aria-current="page">
+              🌿 Aile: {data.familyId || data.id}
+            </Badge>
+          </Flex>
+        </nav>
 
-                <Link
-                  href={`/lexeme/${encodeURIComponent(m.id)}`}
-                  className="text-slate-500 hover:text-slate-800 dark:hover:text-white"
-                >
-                  Detay →
-                </Link>
-              </div>
-            </div>
-          );
-        })}
-      </div>
-    </div>
+        {/* Başlık Kartı */}
+        <Card size="3" variant="surface">
+          <Flex direction={{ initial: 'column', md: 'row' }} justify="between" align={{ md: 'center' }} gap="4">
+            <Box>
+              <Text as="div" size="1" weight="bold" color="indigo" className="uppercase tracking-wider">
+                Kelime Ailesi (Word Family)
+              </Text>
+              <Flex align="center" gap="3" wrap="wrap" mt="1">
+                <Heading as="h1" size="8" weight="bold">
+                  {data.headword || data.familyId || data.id}
+                </Heading>
+                <Badge variant="outline" color="gray" size="2" highContrast>
+                  {data.familyId || data.id}
+                </Badge>
+              </Flex>
+              {data.glossTr && (
+                <Text as="p" size="3" mt="2">
+                  Temel Anlam: <strong>{data.glossTr}</strong>
+                </Text>
+              )}
+              <Text as="p" size="2" color="gray" mt="1" role="status" aria-live="polite">
+                Bu ailede toplam <strong>{members.length}</strong> türev madde kayıtlı.
+              </Text>
+            </Box>
+
+            <Button asChild variant="soft" color="gray" size="3" highContrast>
+              <Link href="/sozluk/family">
+                <ArrowLeftIcon aria-hidden="true" /> Tüm Aileler
+              </Link>
+            </Button>
+          </Flex>
+        </Card>
+
+        {/* Bağlı Kavramlar */}
+        {concepts.length > 0 && (
+          <Card size="2" variant="surface" asChild>
+            <section aria-labelledby="family-concepts-heading">
+              <Flex align="center" gap="2" wrap="wrap">
+                <Heading id="family-concepts-heading" as="h2" size="2" weight="bold">
+                  🏷️ İlişkili Kavramlar:
+                </Heading>
+                {concepts.map((c) => (
+                  <Badge key={c.id} asChild variant="soft" color="amber" size="2" highContrast>
+                    <Link href={`/kavram/${c.id.toLowerCase()}`}>
+                      {c.labelTr ? `${c.labelTr} (${c.id})` : c.id}
+                    </Link>
+                  </Badge>
+                ))}
+              </Flex>
+            </section>
+          </Card>
+        )}
+
+        {/* UDL Filtreleme & Arama Çubuğu */}
+        <Card size="2" variant="surface">
+          <Flex direction={{ initial: 'column', md: 'row' }} align={{ md: 'center' }} justify="between" gap="3">
+            <Box className="w-full md:w-80">
+              <label htmlFor="family-member-filter" className="sr-only">
+                Aile üyeleri içinde ara
+              </label>
+              <TextField.Root
+                id="family-member-filter"
+                size="2"
+                value={memberQuery}
+                onChange={(e) => setMemberQuery(e.target.value)}
+                placeholder="Form, IPA veya Türkçe anlam filtrele..."
+                aria-label="Aile üyeleri içinde ara"
+              >
+                <TextField.Slot>
+                  <MagnifyingGlassIcon height="15" width="15" aria-hidden="true" />
+                </TextField.Slot>
+              </TextField.Root>
+            </Box>
+
+            <SegmentedControl.Root
+              size="2"
+              value={dialectMode}
+              onValueChange={(v) => setDialectMode(v as typeof dialectMode)}
+              aria-label="Lehçe gösterim modu"
+            >
+              <SegmentedControl.Item value="all">Tümü ({members.length})</SegmentedControl.Item>
+              <SegmentedControl.Item value="paired">ADY ↔ KBD</SegmentedControl.Item>
+              <SegmentedControl.Item value="adyghe">Adıgece</SegmentedControl.Item>
+              <SegmentedControl.Item value="kabardian">Kabardeyce</SegmentedControl.Item>
+            </SegmentedControl.Root>
+          </Flex>
+        </Card>
+
+        {/* Aile Üyeleri */}
+        <section aria-labelledby="family-members-heading">
+          <Heading id="family-members-heading" as="h2" size="3" mb="3" color="gray">
+            Türev Maddeler ({filteredMembers.length})
+          </Heading>
+
+          {filteredMembers.length === 0 ? (
+            <Callout.Root color="amber" variant="surface">
+              <Callout.Icon>
+                <InfoCircledIcon aria-hidden="true" />
+              </Callout.Icon>
+              <Callout.Text>
+                Arama veya lehçe filtresine eşleşen aile üyesi bulunamadı.
+              </Callout.Text>
+            </Callout.Root>
+          ) : (
+            <Grid columns={{ initial: '1', sm: '2', lg: '3' }} gap="4">
+              {filteredMembers.map((m: any) => {
+                const ady = m.dialectVariants?.adyghe;
+                const kbd = m.dialectVariants?.kabardian;
+                const showDialectPair = ady && kbd && ady !== kbd;
+
+                return (
+                  <Card key={m.id} size="2" variant="surface" className="hover:border-[var(--indigo-8)] transition-colors">
+                    <Flex direction="column" justify="between" gap="3" height="100%">
+                      <Box>
+                        <Flex justify="between" align="start" gap="2">
+                          <Link
+                            href={`/lexeme/${encodeURIComponent(m.id)}`}
+                            className="font-bold text-lg hover:underline focus-visible:outline-2 focus-visible:outline-offset-2"
+                          >
+                            {m.form}
+                          </Link>
+                          {m.dialect && (
+                            <Badge variant="soft" color="amber" highContrast size="1">
+                              {m.dialect}
+                            </Badge>
+                          )}
+                        </Flex>
+
+                        {m.ipa && (
+                          <Text as="div" size="1" color="gray" className="font-mono mt-0.5" aria-label={`Fonetik okunuş: ${m.ipa}`}>
+                            /{m.ipa}/
+                          </Text>
+                        )}
+
+                        {showDialectPair && (
+                          <Flex align="center" gap="1" wrap="wrap" mt="2" aria-label="Lehçe çifti">
+                            <Badge variant="soft" color="sky" highContrast size="1">
+                              ADY: {ady}
+                            </Badge>
+                            <Text size="1" color="gray" aria-hidden="true">↔</Text>
+                            <Badge variant="soft" color="purple" highContrast size="1">
+                              KBD: {kbd}
+                            </Badge>
+                          </Flex>
+                        )}
+
+                        <Text as="p" size="2" mt="2" className="line-clamp-2">
+                          {m.translations?.tr || m.translations?.en || '—'}
+                        </Text>
+                      </Box>
+
+                      <Box>
+                        <Separator size="4" mb="2" />
+                        <Flex align="center" justify="between" gap="2">
+                          {m.conceptId ? (
+                            <Badge asChild variant="soft" color="jade" size="1" highContrast>
+                              <Link href={`/kavram/${m.conceptId.toLowerCase()}`}>
+                                🏷️ {m.conceptId}
+                              </Link>
+                            </Badge>
+                          ) : (
+                            <Text size="1" color="gray">
+                              Kavram atanmamış
+                            </Text>
+                          )}
+
+                          <Button asChild variant="ghost" size="1" highContrast>
+                            <Link href={`/lexeme/${encodeURIComponent(m.id)}`}>
+                              Detay <ArrowRightIcon aria-hidden="true" />
+                            </Link>
+                          </Button>
+                        </Flex>
+                      </Box>
+                    </Flex>
+                  </Card>
+                );
+              })}
+            </Grid>
+          )}
+        </section>
+      </Flex>
+    </Container>
   );
 }
+

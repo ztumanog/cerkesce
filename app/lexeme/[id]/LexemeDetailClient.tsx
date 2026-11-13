@@ -2,7 +2,20 @@
 
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
-import { Theme, Badge, Card, Button, Table, Separator } from "@radix-ui/themes";
+import {
+  Container,
+  Box,
+  Flex,
+  Grid,
+  Card,
+  Badge,
+  Button,
+  Table,
+  Separator,
+  Text,
+  Heading,
+  Callout,
+} from "@radix-ui/themes";
 import {
   ArrowLeft,
   BookOpen,
@@ -67,11 +80,11 @@ export interface LexemeDetailProps {
 
 function getDialectHeaderLabel(dialect?: string, id?: string) {
   const d = String(dialect || "").toUpperCase();
-  if (d === "COMMON") return { label: "Ортак (COMMON)", color: "indigo" as const };
+  if (d === "COMMON") return { label: "Ortak (COMMON)", color: "indigo" as const };
   if (d === "WESTERN" || d === "ADY" || String(id || "").includes("ADY")) {
-    return { label: "Баты (Адыгабзэ)", color: "teal" as const };
+    return { label: "Batı Çerkesçesi (Адыгабзэ)", color: "jade" as const };
   }
-  return { label: "Догу (Къэбэрдей-Шэрджэсыбзэ)", color: "cyan" as const };
+  return { label: "Doğu Çerkesçesi (Къэбэрдей-Шэрджэсыбзэ)", color: "cyan" as const };
 }
 
 export default function LexemeDetailClient({
@@ -81,17 +94,8 @@ export default function LexemeDetailClient({
   declension,
   relatedLexemes,
 }: LexemeDetailProps) {
-  const [isDark, setIsDark] = useState(false);
   const [isFav, setIsFav] = useState(false);
   const [copied, setCopied] = useState(false);
-
-  useEffect(() => {
-    const syncTheme = () => setIsDark(document.documentElement.classList.contains("dark"));
-    syncTheme();
-    const observer = new MutationObserver(syncTheme);
-    observer.observe(document.documentElement, { attributes: true, attributeFilter: ["class"] });
-    return () => observer.disconnect();
-  }, []);
 
   useEffect(() => {
     try {
@@ -125,210 +129,276 @@ export default function LexemeDetailClient({
   const translations = lex.translations || {};
 
   return (
-    <Theme appearance={isDark ? "dark" : "light"} accentColor="indigo" grayColor="slate" radius="large">
-      <div
-        className={`min-h-screen w-full py-6 px-4 sm:px-6 transition-colors ${
-          isDark ? "bg-slate-950 text-slate-100" : "bg-slate-50/70 text-slate-900"
-        }`}
-      >
-        <div className="max-w-3xl mx-auto space-y-5">
-          <div className="flex flex-wrap items-center justify-between gap-3">
-            <Link
-              href="/sozluk"
-              className={`inline-flex items-center gap-1.5 text-sm font-medium transition-colors ${
-                isDark ? "text-indigo-400 hover:text-indigo-300" : "text-indigo-600 hover:text-indigo-800"
-              }`}
-            >
-              <ArrowLeft className="w-4 h-4" />
-              Sözlüğe dön
-            </Link>
+    <Container size="3" px={{ initial: "4", sm: "6" }} py="6">
+      <Flex direction="column" gap="5">
+        {/* WCAG 2.0 Üst Gezinme Çubuğu */}
+        <nav aria-label="Madde üst gezinme">
+          <Flex wrap="wrap" align="center" justify="between" gap="3">
+            <Button asChild variant="ghost" color="indigo" size="2" highContrast>
+              <Link href="/sozluk">
+                <ArrowLeft className="w-4 h-4" aria-hidden="true" />
+                Sözlüğe dön
+              </Link>
+            </Button>
 
-            <div className="flex items-center gap-2">
-              <Badge color={dialectBadge.color} variant="soft" size="2">
+            <Flex align="center" gap="2">
+              <Badge color={dialectBadge.color} variant="soft" size="2" highContrast>
                 {dialectBadge.label}
               </Badge>
-              <Button size="1" variant="ghost" color="gray" onClick={handleShare} title="Bağlantıyı kopyala">
-                {copied ? <Check className="w-3.5 h-3.5 text-emerald-500" /> : <Share2 className="w-3.5 h-3.5" />}
+              <Button
+                type="button"
+                size="2"
+                variant="soft"
+                color={copied ? "jade" : "gray"}
+                highContrast
+                onClick={handleShare}
+                aria-label={copied ? "Bağlantı kopyalandı" : "Madde bağlantısını kopyala"}
+              >
+                {copied ? (
+                  <>
+                    <Check className="w-3.5 h-3.5" aria-hidden="true" />
+                    <Text size="1">Kopyalandı</Text>
+                  </>
+                ) : (
+                  <Share2 className="w-3.5 h-3.5" aria-hidden="true" />
+                )}
               </Button>
-            </div>
-          </div>
+            </Flex>
+          </Flex>
+        </nav>
 
-          <Card size="3">
-            <div className="space-y-3">
-              <div className="flex flex-wrap items-baseline justify-between gap-3">
-                <div className="flex flex-wrap items-baseline gap-3">
-                  <h1 className="text-3xl sm:text-4xl font-extrabold tracking-tight">{lex.form}</h1>
+        {/* Ana Madde Başlığı ve Çok Dilli Anlam Kartı */}
+        <Card size="3" variant="surface" asChild>
+          <section aria-labelledby="lexeme-main-heading">
+            <Flex direction="column" gap="3">
+              <Flex wrap="wrap" align="baseline" justify="between" gap="3">
+                <Flex wrap="wrap" align="baseline" gap="3">
+                  <Heading id="lexeme-main-heading" as="h1" size="8" weight="bold">
+                    {lex.form}
+                  </Heading>
                   {lex.ipa && (
-                    <span
-                      className={`inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-md font-mono text-sm ${
-                        isDark ? "bg-slate-800 text-slate-300" : "bg-slate-100 text-slate-600"
-                      }`}
+                    <Badge
+                      variant="soft"
+                      color="gray"
+                      size="2"
+                      highContrast
+                      className="font-mono"
+                      aria-label={`Fonetik okunuş: ${lex.ipa}`}
                     >
-                      <Volume2 className="w-3.5 h-3.5 opacity-70" />
+                      <Volume2 className="w-3.5 h-3.5" aria-hidden="true" />
                       [{lex.ipa}]
-                    </span>
+                    </Badge>
                   )}
-                </div>
+                </Flex>
 
                 <Button
+                  type="button"
                   size="2"
                   variant={isFav ? "solid" : "soft"}
                   color={isFav ? "crimson" : "gray"}
+                  highContrast
+                  aria-pressed={isFav}
                   onClick={toggleFavorite}
                 >
-                  <Heart className={`w-4 h-4 ${isFav ? "fill-current" : ""}`} />
+                  <Heart className={`w-4 h-4 ${isFav ? "fill-current" : ""}`} aria-hidden="true" />
                   {isFav ? "Favorilerde" : "Favorilere ekle"}
                 </Button>
-              </div>
+              </Flex>
 
-              <div className="flex flex-wrap items-center gap-2 pt-1">
+              {/* Yapısal Etiketler (Kök, Aile, Kavram, Sözcük Türü) */}
+              <Flex wrap="wrap" align="center" gap="2" pt="1">
                 {lex.partOfSpeech && (
-                  <Badge color="crimson" variant="surface" size="2">
+                  <Badge color="crimson" variant="surface" size="2" highContrast>
                     {lex.partOfSpeech}
                   </Badge>
                 )}
 
                 {lex.rootIds?.map((r) => (
-                  <Badge key={r} color="violet" variant="soft" size="2" className="font-mono">
-                    <GitBranch className="w-3 h-3 mr-1" />
-                    {r}
+                  <Badge key={r} asChild color="violet" variant="soft" size="2" highContrast className="font-mono">
+                    <Link href={`/sozluk/root/${encodeURIComponent(r)}`} aria-label={`Kök sayfasına git: ${r}`}>
+                      <GitBranch className="w-3 h-3" aria-hidden="true" />
+                      {r}
+                    </Link>
                   </Badge>
                 ))}
 
                 {lex.wordFamilyId && (
-                  <Link href={`/sozluk/family/${encodeURIComponent(lex.wordFamilyId)}`} className="no-underline">
-                    <Badge color="green" variant="soft" size="2" className="font-mono cursor-pointer">
-                      <Layers className="w-3 h-3 mr-1" />
+                  <Badge asChild color="jade" variant="soft" size="2" highContrast className="font-mono">
+                    <Link
+                      href={`/sozluk/family/${encodeURIComponent(lex.wordFamilyId)}`}
+                      aria-label={`Kelime ailesine git: ${lex.wordFamilyId}`}
+                    >
+                      <Layers className="w-3 h-3" aria-hidden="true" />
                       {lex.wordFamilyId}
-                    </Badge>
-                  </Link>
+                    </Link>
+                  </Badge>
                 )}
 
                 {lex.conceptId && (
-                  <Link href={`/kavram/${encodeURIComponent(String(lex.conceptId).toLowerCase())}`} className="no-underline">
-                    <Badge color="amber" variant="soft" size="2" className="cursor-pointer">
-                      <Tag className="w-3 h-3 mr-1" />
+                  <Badge asChild color="amber" variant="soft" size="2" highContrast>
+                    <Link
+                      href={`/kavram/${encodeURIComponent(String(lex.conceptId).toLowerCase())}`}
+                      aria-label={`Kavram sayfasına git: ${lex.conceptId}`}
+                    >
+                      <Tag className="w-3 h-3" aria-hidden="true" />
                       {lex.conceptId}
-                    </Badge>
-                  </Link>
+                    </Link>
+                  </Badge>
                 )}
-              </div>
+              </Flex>
 
               <Separator size="4" my="2" />
 
-              <div className="grid grid-cols-1 gap-2.5 text-sm sm:text-base">
+              {/* Çok Dilli Çeviriler ve Morfolojik Ayrıştırma */}
+              <Flex direction="column" gap="2">
                 {lex.derivation?.components && lex.derivation.components.length > 0 && (
-                  <div className="flex flex-wrap items-center gap-2">
-                    <span className="font-semibold text-xs uppercase tracking-wider opacity-75">
+                  <Flex wrap="wrap" align="center" gap="2">
+                    <Text size="1" weight="bold" color="gray" className="uppercase tracking-wider">
                       ПСАЛЪЭ ЛЪАБЖЬЭ (Kök &amp; Ekler):
-                    </span>
-                    <span
-                      className={`px-2.5 py-0.5 rounded font-mono text-sm ${
-                        isDark ? "bg-indigo-950/70 text-indigo-300" : "bg-indigo-50 text-indigo-800"
-                      }`}
-                    >
+                    </Text>
+                    <Badge variant="soft" color="indigo" size="2" highContrast className="font-mono">
                       {lex.derivation.components.join(" + ")}
-                    </span>
-                  </div>
+                    </Badge>
+                  </Flex>
                 )}
 
                 {translations.tr && (
-                  <div>
-                    <span className="font-bold text-xs uppercase tracking-wider opacity-75 mr-2">TÜRKÇE (МЫХЬЭНЭ):</span>
-                    <span className="font-medium">{translations.tr}</span>
-                  </div>
+                  <Box>
+                    <Text size="1" weight="bold" color="gray" className="uppercase tracking-wider mr-2">
+                      TÜRKÇE (МЫХЬЭНЭ):
+                    </Text>
+                    <Text size="3" weight="medium">{translations.tr}</Text>
+                  </Box>
                 )}
                 {translations.en && (
-                  <div>
-                    <span className="font-bold text-xs uppercase tracking-wider opacity-75 mr-2">İNGİLİZCE (ИНДЖЫЛЫБЗЭ):</span>
-                    <span>{translations.en}</span>
-                  </div>
+                  <Box>
+                    <Text size="1" weight="bold" color="gray" className="uppercase tracking-wider mr-2">
+                      İNGİLİZCE (ИНДЖЫЛЫБЗЭ):
+                    </Text>
+                    <Text size="3">{translations.en}</Text>
+                  </Box>
                 )}
                 {translations.ru && (
-                  <div>
-                    <span className="font-bold text-xs uppercase tracking-wider opacity-75 mr-2">RUSÇA (УРЫСЫБЗЭ):</span>
-                    <span>{translations.ru}</span>
-                  </div>
+                  <Box>
+                    <Text size="1" weight="bold" color="gray" className="uppercase tracking-wider mr-2">
+                      RUSÇA (УРЫСЫБЗЭ):
+                    </Text>
+                    <Text size="3">{translations.ru}</Text>
+                  </Box>
                 )}
                 {translations.ar && (
-                  <div>
-                    <span className="font-bold text-xs uppercase tracking-wider opacity-75 mr-2">ARAPÇA (ХЬЭРЫПЫБЗЭ):</span>
-                    <span dir="rtl">{translations.ar}</span>
-                  </div>
+                  <Box>
+                    <Text size="1" weight="bold" color="gray" className="uppercase tracking-wider mr-2">
+                      ARAPÇA (ХЬЭРЫПЫБЗЭ):
+                    </Text>
+                    <Text size="3" dir="rtl">{translations.ar}</Text>
+                  </Box>
                 )}
                 {lex.literalMeaning && (
-                  <div>
-                    <span className="font-bold text-xs uppercase tracking-wider opacity-75 mr-2">KELİME ANLAMI (LITERAL):</span>
-                    <span className="italic opacity-90">{lex.literalMeaning}</span>
-                  </div>
+                  <Box>
+                    <Text size="1" weight="bold" color="gray" className="uppercase tracking-wider mr-2">
+                      KELİME ANLAMI (LITERAL):
+                    </Text>
+                    <Text size="3" className="italic">{lex.literalMeaning}</Text>
+                  </Box>
                 )}
-              </div>
-            </div>
-          </Card>
+              </Flex>
+            </Flex>
+          </section>
+        </Card>
 
-          {variants && (
-            <Card size="3">
-              <div className="space-y-3">
-                <div className="flex flex-wrap items-center justify-between gap-2">
-                  <h2 className="text-base font-bold flex items-center gap-2">
-                    <Sparkles className="w-4 h-4 text-indigo-500" />
-                    Diyalekt Karşılıkları &amp; Sözlük Varyantları
-                  </h2>
-                  <Badge color="indigo" variant="soft" size="1">
-                    <CheckCircle2 className="w-3 h-3 mr-1" />
+        {/* UDL Lehçe Karşılaştırma Kartı (Adıgece ↔ Kabardeyce) */}
+        {variants && (
+          <Card size="3" variant="surface" asChild>
+            <section aria-labelledby="dialect-variants-heading">
+              <Flex direction="column" gap="3">
+                <Flex wrap="wrap" align="center" justify="between" gap="2">
+                  <Heading id="dialect-variants-heading" as="h2" size="4" weight="bold">
+                    <Flex align="center" gap="2">
+                      <Sparkles className="w-4 h-4 text-[var(--indigo-9)]" aria-hidden="true" />
+                      Diyalekt Karşılıkları &amp; Sözlük Varyantları
+                    </Flex>
+                  </Heading>
+                  <Badge color="indigo" variant="soft" size="1" highContrast>
+                    <CheckCircle2 className="w-3 h-3" aria-hidden="true" />
                     Huvaj &amp; AIG Doğrulamalı
                   </Badge>
-                </div>
+                </Flex>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                  <div className={`p-3.5 rounded-xl border ${isDark ? "bg-amber-950/25 border-amber-800/50" : "bg-amber-50/90 border-amber-200/80"}`}>
-                    <div className="text-[11px] font-bold tracking-wider uppercase text-amber-600 dark:text-amber-400">
-                      BATI ÇERKESÇESİ (ADÎĞECE)
-                    </div>
-                    <div className="mt-1.5 flex flex-wrap items-center gap-2">
-                      <span className="text-xl font-bold">{variants.adyghePrimary}</span>
-                      <Badge size="1" color="amber" variant="surface">Huvaj / Akademik</Badge>
-                    </div>
-                    {variants.adygheAlternatives.map((alt) => (
-                      <div key={alt.form} className="mt-1.5 flex flex-wrap items-center gap-2 text-xs">
-                        <span className="opacity-75">Alternatif: <b>{alt.form}</b></span>
-                        <Badge size="1" color="gray" variant="soft">{alt.sourceLabel}</Badge>
-                      </div>
-                    ))}
-                  </div>
+                <Grid columns={{ initial: "1", sm: "2" }} gap="3">
+                  <Card size="2" variant="surface">
+                    <Flex direction="column" gap="2">
+                      <Text size="1" weight="bold" color="amber" highContrast className="uppercase tracking-wider">
+                        BATI ÇERKESÇESİ (ADÎĞECE)
+                      </Text>
+                      <Flex wrap="wrap" align="center" gap="2">
+                        <Text size="5" weight="bold">{variants.adyghePrimary}</Text>
+                        <Badge size="1" color="amber" variant="soft" highContrast>
+                          Huvaj / Akademik
+                        </Badge>
+                      </Flex>
+                      {variants.adygheAlternatives.map((alt) => (
+                        <Flex key={alt.form} wrap="wrap" align="center" gap="2">
+                          <Text size="1" color="gray">
+                            Alternatif: <strong>{alt.form}</strong>
+                          </Text>
+                          <Badge size="1" color="gray" variant="soft">
+                            {alt.sourceLabel}
+                          </Badge>
+                        </Flex>
+                      ))}
+                    </Flex>
+                  </Card>
 
-                  <div className={`p-3.5 rounded-xl border ${isDark ? "bg-sky-950/25 border-sky-800/50" : "bg-sky-50/90 border-sky-200/80"}`}>
-                    <div className="text-[11px] font-bold tracking-wider uppercase text-sky-600 dark:text-sky-400">
-                      DOĞU ÇERKESÇESİ (KABARDEYCE)
-                    </div>
-                    <div className="mt-1.5 flex flex-wrap items-center gap-2">
-                      <span className="text-xl font-bold">{variants.kabardianPrimary}</span>
-                      <Badge size="1" color="blue" variant="surface">Standart</Badge>
-                    </div>
-                    {variants.kabardianAlternatives.map((alt) => (
-                      <div key={alt.form} className="mt-1.5 flex flex-wrap items-center gap-2 text-xs">
-                        <span className="opacity-75">Alternatif: <b>{alt.form}</b></span>
-                        <Badge size="1" color="gray" variant="soft">{alt.sourceLabel}</Badge>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            </Card>
-          )}
+                  <Card size="2" variant="surface">
+                    <Flex direction="column" gap="2">
+                      <Text size="1" weight="bold" color="sky" highContrast className="uppercase tracking-wider">
+                        DOĞU ÇERKESÇESİ (KABARDEYCE)
+                      </Text>
+                      <Flex wrap="wrap" align="center" gap="2">
+                        <Text size="5" weight="bold">{variants.kabardianPrimary}</Text>
+                        <Badge size="1" color="sky" variant="soft" highContrast>
+                          Standart
+                        </Badge>
+                      </Flex>
+                      {variants.kabardianAlternatives.map((alt) => (
+                        <Flex key={alt.form} wrap="wrap" align="center" gap="2">
+                          <Text size="1" color="gray">
+                            Alternatif: <strong>{alt.form}</strong>
+                          </Text>
+                          <Badge size="1" color="gray" variant="soft">
+                            {alt.sourceLabel}
+                          </Badge>
+                        </Flex>
+                      ))}
+                    </Flex>
+                  </Card>
+                </Grid>
+              </Flex>
+            </section>
+          </Card>
+        )}
 
-          {verbConjugation && (
-            <Card size="3">
-              <div className="space-y-3">
-                <div className="flex flex-wrap items-center justify-between gap-2">
-                  <h2 className="text-base font-bold">Глагол зэхъуэкӀыкӀэ (Fiil Çekim Tablosu)</h2>
-                  <div className="flex flex-wrap items-center gap-2">
-                    <Badge color="indigo" variant="soft" size="2">Kök: {verbConjugation.root}</Badge>
-                    <Badge color="gray" variant="soft" size="2">Mastar: {verbConjugation.infinitive}</Badge>
-                  </div>
-                </div>
+        {/* Fiil Çekim Tablosu */}
+        {verbConjugation && (
+          <Card size="3" variant="surface" asChild>
+            <section aria-labelledby="verb-conjugation-heading">
+              <Flex direction="column" gap="3">
+                <Flex wrap="wrap" align="center" justify="between" gap="2">
+                  <Heading id="verb-conjugation-heading" as="h2" size="4" weight="bold">
+                    Глагол зэхъуэкӀыкӀэ (Fiil Çekim Tablosu)
+                  </Heading>
+                  <Flex wrap="wrap" align="center" gap="2">
+                    <Badge color="indigo" variant="soft" size="2" highContrast>
+                      Kök: {verbConjugation.root}
+                    </Badge>
+                    <Badge color="gray" variant="soft" size="2" highContrast>
+                      Mastar: {verbConjugation.infinitive}
+                    </Badge>
+                  </Flex>
+                </Flex>
 
-                <div className="overflow-x-auto">
+                <Box className="overflow-x-auto">
                   <Table.Root size="2" variant="surface">
                     <Table.Header>
                       <Table.Row>
@@ -343,31 +413,38 @@ export default function LexemeDetailClient({
                       {verbConjugation.rows.map((row) => (
                         <Table.Row key={row.personCode}>
                           <Table.RowHeaderCell>
-                            <div className="font-bold">{row.pronounCircassian}</div>
-                            <div className="text-xs opacity-65">{row.personLabelTr}</div>
+                            <Text as="div" weight="bold">{row.pronounCircassian}</Text>
+                            <Text as="div" size="1" color="gray">{row.personLabelTr}</Text>
                           </Table.RowHeaderCell>
                           <Table.Cell>{row.present}</Table.Cell>
-                          <Table.Cell><b>{row.past}</b></Table.Cell>
+                          <Table.Cell><strong>{row.past}</strong></Table.Cell>
                           <Table.Cell>{row.future}</Table.Cell>
-                          <Table.Cell className="opacity-75">{row.negative}</Table.Cell>
+                          <Table.Cell>{row.negative}</Table.Cell>
                         </Table.Row>
                       ))}
                     </Table.Body>
                   </Table.Root>
-                </div>
-              </div>
-            </Card>
-          )}
+                </Box>
+              </Flex>
+            </section>
+          </Card>
+        )}
 
-          {declension && (
-            <Card size="3">
-              <div className="space-y-3">
-                <div className="flex flex-wrap items-center justify-between gap-2">
-                  <h2 className="text-base font-bold">Склоненэ (İsim Çekim Tablosu)</h2>
-                  <Badge color="gray" variant="soft" size="1">Закъуэ / Куэд Бжыгъэ</Badge>
-                </div>
+        {/* İsim Çekim Tablosu */}
+        {declension && (
+          <Card size="3" variant="surface" asChild>
+            <section aria-labelledby="noun-declension-heading">
+              <Flex direction="column" gap="3">
+                <Flex wrap="wrap" align="center" justify="between" gap="2">
+                  <Heading id="noun-declension-heading" as="h2" size="4" weight="bold">
+                    Склоненэ (İsim Çekim Tablosu)
+                  </Heading>
+                  <Badge color="gray" variant="soft" size="1" highContrast>
+                    Закъуэ / Куэд Бжыгъэ
+                  </Badge>
+                </Flex>
 
-                <div className="overflow-x-auto">
+                <Box className="overflow-x-auto">
                   <Table.Root size="2" variant="surface">
                     <Table.Header>
                       <Table.Row>
@@ -382,70 +459,76 @@ export default function LexemeDetailClient({
                       {declension.map((row) => (
                         <Table.Row key={row.caseNameCircassian}>
                           <Table.RowHeaderCell>
-                            <div className="font-bold">{row.caseNameCircassian}</div>
-                            <div className="text-xs opacity-65">{row.caseNameTr}</div>
+                            <Text as="div" weight="bold">{row.caseNameCircassian}</Text>
+                            <Text as="div" size="1" color="gray">{row.caseNameTr}</Text>
                           </Table.RowHeaderCell>
                           <Table.Cell>{row.singularIndefinite}</Table.Cell>
-                          <Table.Cell><b>{row.singularDefinite}</b></Table.Cell>
+                          <Table.Cell><strong>{row.singularDefinite}</strong></Table.Cell>
                           <Table.Cell>{row.pluralIndefinite}</Table.Cell>
-                          <Table.Cell><b>{row.pluralDefinite}</b></Table.Cell>
+                          <Table.Cell><strong>{row.pluralDefinite}</strong></Table.Cell>
                         </Table.Row>
                       ))}
                     </Table.Body>
                   </Table.Root>
-                </div>
-              </div>
-            </Card>
-          )}
+                </Box>
+              </Flex>
+            </section>
+          </Card>
+        )}
 
-          {lex.examples && lex.examples.length > 0 && (
-            <Card size="3">
-              <div className="space-y-2.5">
-                <h2 className="text-base font-bold flex items-center gap-2">
-                  <BookOpen className="w-4 h-4 text-emerald-500" />
-                  Щапхъэхэр (Örnek Cümleler)
-                </h2>
-                <ul className="space-y-1.5 text-sm sm:text-base pl-1">
-                  {lex.examples.map((ex, i) => (
-                    <li key={i} className="flex items-start gap-2">
-                      <span className="text-indigo-500 font-bold">•</span>
-                      <span>{typeof ex === "string" ? ex : ex.text || ""}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </Card>
-          )}
+        {/* Örnek Cümleler */}
+        {lex.examples && lex.examples.length > 0 && (
+          <Card size="3" variant="surface" asChild>
+            <section aria-labelledby="examples-heading">
+              <Flex direction="column" gap="2">
+                <Heading id="examples-heading" as="h2" size="4" weight="bold">
+                  <Flex align="center" gap="2">
+                    <BookOpen className="w-4 h-4 text-[var(--jade-9)]" aria-hidden="true" />
+                    Щапхъэхэр (Örnek Cümleler)
+                  </Flex>
+                </Heading>
+                <Flex asChild direction="column" gap="2" pl="1">
+                  <ul>
+                    {lex.examples.map((ex, i) => (
+                      <li key={i} className="flex items-start gap-2">
+                        <Text color="indigo" weight="bold" aria-hidden="true">•</Text>
+                        <Text size="3">{typeof ex === "string" ? ex : ex.text || ""}</Text>
+                      </li>
+                    ))}
+                  </ul>
+                </Flex>
+              </Flex>
+            </section>
+          </Card>
+        )}
 
-          {relatedLexemes.length > 0 && (
-            <Card size="3">
-              <div className="space-y-3">
-                <h2 className="text-base font-bold flex items-center gap-2">
-                  <Layers className="w-4 h-4 text-purple-500" />
-                  Псалъафэ зэпыщӀахэр (İlişkili Kelimeler &amp; Aile Üyeleri)
-                </h2>
+        {/* İlişkili Kelimeler */}
+        {relatedLexemes.length > 0 && (
+          <Card size="3" variant="surface" asChild>
+            <section aria-labelledby="related-lexemes-heading">
+              <Flex direction="column" gap="3">
+                <Heading id="related-lexemes-heading" as="h2" size="4" weight="bold">
+                  <Flex align="center" gap="2">
+                    <Layers className="w-4 h-4 text-[var(--purple-9)]" aria-hidden="true" />
+                    Псалъафэ зэпыщӀахэр (İlişkili Kelimeler &amp; Aile Üyeleri)
+                  </Flex>
+                </Heading>
 
-                <div className="flex flex-wrap gap-2.5">
+                <Flex wrap="wrap" gap="2">
                   {relatedLexemes.map((rel) => (
-                    <Link
-                      key={rel.id}
-                      href={`/lexeme/${encodeURIComponent(rel.id)}`}
-                      className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs sm:text-sm font-medium border transition-all ${
-                        isDark
-                          ? "bg-purple-950/40 border-purple-800/60 text-purple-200 hover:bg-purple-900/60 hover:border-purple-600"
-                          : "bg-purple-50 border-purple-200 text-purple-900 hover:bg-purple-100 hover:border-purple-300"
-                      }`}
-                    >
-                      <span className="font-bold">{rel.form}</span>
-                      {rel.tr && <span className="opacity-75">— {rel.tr}</span>}
-                    </Link>
+                    <Button key={rel.id} asChild variant="soft" color="purple" size="2" highContrast>
+                      <Link href={`/lexeme/${encodeURIComponent(rel.id)}`}>
+                        <strong>{rel.form}</strong>
+                        {rel.tr && <Text size="1">— {rel.tr}</Text>}
+                      </Link>
+                    </Button>
                   ))}
-                </div>
-              </div>
-            </Card>
-          )}
-        </div>
-      </div>
-    </Theme>
+                </Flex>
+              </Flex>
+            </section>
+          </Card>
+        )}
+      </Flex>
+    </Container>
   );
 }

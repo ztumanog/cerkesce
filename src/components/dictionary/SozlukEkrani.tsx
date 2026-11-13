@@ -1,14 +1,26 @@
 'use client';
 
-import { useState, useCallback, useMemo, useRef, useEffect } from 'react';
+import { useState, useCallback, useMemo, useRef } from 'react';
+import {
+  Container,
+  Box,
+  Flex,
+  Card,
+  Button,
+  Text,
+  Heading,
+  Callout,
+  Spinner,
+} from '@radix-ui/themes';
+import { MagnifyingGlassIcon, InfoCircledIcon } from '@radix-ui/react-icons';
 import SearchBox from '@/components/dictionary/SearchBox';
 import KelimeKarti from '@/components/dictionary/KelimeKarti';
 import KelimeDetayDrawer from '@/components/dictionary/KelimeDetayDrawer';
 import GununKelimesiKart from '@/components/dictionary/GununKelimesiKart';
-import DialectFilter, {
+import {
   type DialectFilterValue,
 } from '@/components/dictionary/DialectFilter';
-import LanguageFilter, {
+import {
   type LanguageFilterValue,
 } from '@/components/dictionary/LanguageFilter';
 import FilterDropdown from '@/components/dictionary/FilterDropdown';
@@ -25,7 +37,6 @@ import type { DictionaryEntry } from '@/types/dictionary';
 export default function SozlukEkrani() {
   const [sonuclar, setSonuclar] = useState<KelimeItem[]>([]);
   const [yukleniyor, setYukleniyor] = useState<boolean>(false);
-  const [toplam, setToplam] = useState<number>(0);
   const [seciliKelime, setSeciliKelime] = useState<DictionaryEntry | null>(null);
   const [drawerAcik, setDrawerAcik] = useState<boolean>(false);
   const [aramaMetni, setAramaMetni] = useState<string>('');
@@ -33,15 +44,11 @@ export default function SozlukEkrani() {
   const [klavyeAcik, setKlavyeAcik] = useState<boolean>(false);
   const aramaInputRef = useRef<HTMLInputElement>(null);
 
-  const [dialectFilter, setDialectFilter] = useState<DialectFilterValue>('ALL');  const [languageFilter, setLanguageFilter] = useState<LanguageFilterValue>('ALL');
-  
+  const [dialectFilter, setDialectFilter] = useState<DialectFilterValue>('ALL');
+  const [languageFilter, setLanguageFilter] = useState<LanguageFilterValue>('ALL');
 
-  // ⭐ Favoriler
-    // ⭐ Favoriler
   const { favoriMi, favoriToggle } = useFavoriler();
 
-  // ⭐ Klavye Kısayolları
-   // ⭐ Klavye Kısayolları
   useKlavyeKisayollari({
     onEscape: () => {
       setDrawerAcik(false);
@@ -54,8 +61,6 @@ export default function SozlukEkrani() {
     sil: gecmistenSil,
     temizle: gecmisiTemizle,
   } = useAramaGecmisi();
-
-  const initialQueryTriggeredRef = useRef(false);
 
   const handleSearch = useCallback(
     async (query: string, mode: string = 'baslayan') => {
@@ -93,7 +98,6 @@ export default function SozlukEkrani() {
                 entry.dialectVariants?.kabardian ||
                 '';
 
-              // ANLAMLARI TOPLA
               const anlamlarSet = new Set<string>();
 
               if (Array.isArray(entry.meanings)) {
@@ -126,20 +130,32 @@ export default function SozlukEkrani() {
                 if (typeof t === 'string' && t.trim()) anlamlarSet.add(t.trim());
               });
 
-              const tekilAnlam =
-                entry.tr ||
-                entry.anlam ||
-                entry.translation ||
-                entry.definition ||
-                entry.meaning ||
-                entry.tanim ||
-                entry.literalMeaning ||
-                entry.en ||
-                (Array.isArray(entry.translations?.en) ? entry.translations.en.join(', ') : entry.translations?.en) ||
-                '';
-              if (typeof tekilAnlam === 'string' && tekilAnlam.trim()) {
-                anlamlarSet.add(tekilAnlam.trim());
-              }
+              const multiLangCandidates = [
+                entry.tr,
+                entry.anlam,
+                entry.translation,
+                entry.definition,
+                entry.meaning,
+                entry.tanim,
+                entry.literalMeaning,
+                entry.en,
+                Array.isArray(entry.translations?.en)
+                  ? entry.translations.en.join(', ')
+                  : entry.translations?.en,
+                entry.ru,
+                Array.isArray(entry.translations?.ru)
+                  ? entry.translations.ru.join(', ')
+                  : entry.translations?.ru,
+                entry.ar,
+                Array.isArray(entry.translations?.ar)
+                  ? entry.translations.ar.join(', ')
+                  : entry.translations?.ar,
+              ];
+              multiLangCandidates.forEach((cand) => {
+                if (typeof cand === 'string' && cand.trim()) {
+                  anlamlarSet.add(cand.trim());
+                }
+              });
 
               const anlamlar = Array.from(anlamlarSet);
               const ilkAnlam = anlamlar[0] || '';
@@ -172,15 +188,12 @@ export default function SozlukEkrani() {
           );
 
           setSonuclar(results);
-          setToplam(results.length);
         } else {
           setSonuclar([]);
-          setToplam(0);
         }
       } catch (error) {
         console.error('Arama hatası:', error);
         setSonuclar([]);
-        setToplam(0);
       } finally {
         setYukleniyor(false);
       }
@@ -188,7 +201,7 @@ export default function SozlukEkrani() {
     [gecmiseEkle]
   );
 
-    const handleKelimeSec = (kelime: KelimeItem) => {
+  const handleKelimeSec = (kelime: KelimeItem) => {
     const dictionaryEntry: DictionaryEntry = {
       id: kelime.id,
       word: kelime.kelime,
@@ -197,8 +210,7 @@ export default function SozlukEkrani() {
       definition: kelime.anlam || kelime.ilkAnlam || '',
       tanim: kelime.anlam || kelime.ilkAnlam || '',
       definitions:
-        kelime.anlamlar?.map((anlam) => ({ meaning: anlam, tanim: anlam })) ||
-        [],
+        kelime.anlamlar?.map((anlam) => ({ meaning: anlam, tanim: anlam })) || [],
       kaynaklar: kelime.kaynaklar || [],
       lehce: kelime.lehce || 'ADY',
       dialect: kelime.lehce || 'ADY',
@@ -287,32 +299,34 @@ export default function SozlukEkrani() {
     filtrelenmisSonuclar.length > 3 && !tumunuGoster;
 
   return (
-    <div className="w-full flex-1 bg-[#fbf8ef] dark:bg-slate-950 text-slate-800 dark:text-slate-100 transition-colors duration-200">
-      <div className="max-w-4xl mx-auto px-3 py-3 space-y-3">
-        <div className="bg-white dark:bg-slate-900 border border-amber-200 dark:border-slate-700 rounded-2xl shadow-md ring-1 ring-amber-100/80 dark:ring-amber-500/10 p-3 sm:p-5">
-          <SearchBox
-            onSearch={handleSearch}
-            inputRef={aramaInputRef}
-            klavyeAcik={klavyeAcik}
-            setKlavyeAcik={setKlavyeAcik}
-            filterSlot={
-              sonuclar.length > 1 ? (
-                <FilterDropdown
-                  activeCount={
-                    (dialectFilter !== 'ALL' ? 1 : 0) +
-                    (languageFilter !== 'ALL' ? 1 : 0)
-                  }
-                  dialectFilter={dialectFilter}
-                  onDialectChange={setDialectFilter}
-                  dialectCounts={dialectCounts}
-                  languageFilter={languageFilter}
-                  onLanguageChange={setLanguageFilter}
-                  languageCounts={languageCounts}
-                />
-              ) : null
-            }
-          />
-        </div>
+    <Container size="3" px={{ initial: '3', sm: '4' }} py="4">
+      <Flex direction="column" gap="3">
+        <Card size="3" variant="surface" asChild>
+          <section aria-label="Sözlük arama alanı">
+            <SearchBox
+              onSearch={handleSearch}
+              inputRef={aramaInputRef}
+              klavyeAcik={klavyeAcik}
+              setKlavyeAcik={setKlavyeAcik}
+              filterSlot={
+                sonuclar.length > 1 ? (
+                  <FilterDropdown
+                    activeCount={
+                      (dialectFilter !== 'ALL' ? 1 : 0) +
+                      (languageFilter !== 'ALL' ? 1 : 0)
+                    }
+                    dialectFilter={dialectFilter}
+                    onDialectChange={setDialectFilter}
+                    dialectCounts={dialectCounts}
+                    languageFilter={languageFilter}
+                    onLanguageChange={setLanguageFilter}
+                    languageCounts={languageCounts}
+                  />
+                ) : null
+              }
+            />
+          </section>
+        </Card>
 
         {gecmis.length > 0 && !aramaMetni && (
           <AramaGecmisi
@@ -326,38 +340,42 @@ export default function SozlukEkrani() {
         )}
 
         {bosArama && (
-          <div className="animate-in fade-in duration-300">
+          <Box>
             <GununKelimesiKart />
-          </div>
+          </Box>
         )}
 
         {yukleniyor && (
-          <div className="flex justify-center items-center py-6">
-            <div className="flex flex-col items-center gap-2">
-              <div className="relative w-8 h-8">
-                <div className="absolute inset-0 bg-gradient-to-r from-emerald-500 to-teal-600 rounded-full animate-spin" />
-                <div className="absolute inset-1 bg-[#fbf8ef] dark:bg-slate-950 rounded-full" />
-              </div>
-              <p className="text-xs text-stone-600 dark:text-slate-400 font-medium">
-                Aranıyor...
-              </p>
-            </div>
-          </div>
+          <Flex
+            direction="column"
+            align="center"
+            justify="center"
+            gap="2"
+            py="6"
+            role="status"
+            aria-live="polite"
+          >
+            <Spinner size="3" />
+            <Text size="2" color="gray" weight="medium">
+              Sözlükte aranıyor...
+            </Text>
+          </Flex>
         )}
 
         {sonuclar.length > 0 && (
-          <div className="flex items-center justify-between px-1">
-            <h2 className="text-xs sm:text-sm font-bold text-stone-800 dark:text-slate-200">
+          <Flex align="center" justify="between" px="1">
+            <Heading as="h2" size="3" weight="bold" role="status" aria-live="polite">
               Sonuçlar ({filtrelenmisSonuclar.length}
               {(dialectFilter !== 'ALL' || languageFilter !== 'ALL') &&
-                ` / ${sonuclar.length}`})
-            </h2>
-          </div>
+                ` / ${sonuclar.length}`}
+              )
+            </Heading>
+          </Flex>
         )}
 
-        <div className="space-y-2">
+        <Flex direction="column" gap="2" role="region" aria-label="Arama sonuçları">
           {goruntulenenSonuclar.map((kelime, index) => (
-                        <KelimeKarti
+            <KelimeKarti
               key={kelime.id ?? `kelime-${index}`}
               data={kelime}
               onClick={() => handleKelimeSec(kelime)}
@@ -373,63 +391,59 @@ export default function SozlukEkrani() {
               }
             />
           ))}
-        </div>
+        </Flex>
 
         {!yukleniyor &&
           aramaMetni &&
           sonuclar.length > 0 &&
           filtrelenmisSonuclar.length === 0 && (
-            <div className="text-center py-6 bg-white/50 dark:bg-slate-900/50 rounded-xl border border-stone-200/60 dark:border-slate-800">
-              <div className="text-2xl mb-2">🌐</div>
-              <h3 className="text-sm font-semibold text-stone-800 dark:text-slate-200 mb-1">
-                Bu filtrelerde sonuç yok
-              </h3>
-              <p className="text-xs text-stone-500 dark:text-slate-400">
-                Farklı bir lehçe veya dil seçmeyi deneyin.
-              </p>
-            </div>
+            <Callout.Root color="amber" variant="surface" role="status">
+              <Callout.Icon>
+                <InfoCircledIcon aria-hidden="true" />
+              </Callout.Icon>
+              <Callout.Text>
+                Bu lehçe veya dil filtresinde eşleşen sonuç bulunamadı. Farklı bir filtre seçmeyi deneyin.
+              </Callout.Text>
+            </Callout.Root>
           )}
 
         {dahaFazlaSonucVarmi && (
-          <div className="flex justify-center pt-1">
-            <button
+          <Flex justify="center" pt="1">
+            <Button
+              type="button"
+              variant="solid"
+              color="jade"
+              size="2"
+              highContrast
               onClick={() => setTumunuGoster(true)}
-              className="px-4 py-2 text-xs bg-emerald-700 hover:bg-emerald-800 dark:bg-emerald-600 dark:hover:bg-emerald-700 text-white font-medium rounded-lg transition-colors shadow-sm cursor-pointer"
             >
-              📂 Tüm Sonuçları Göster ({filtrelenmisSonuclar.length - 3} daha)
-            </button>
-          </div>
+              Tüm Sonuçları Göster ({filtrelenmisSonuclar.length - 3} daha)
+            </Button>
+          </Flex>
         )}
 
         {!yukleniyor && aramaMetni && sonuclar.length === 0 && (
-          <div className="text-center py-8 bg-white/50 dark:bg-slate-900/50 rounded-xl border border-stone-200/60 dark:border-slate-800">
-            <div className="text-3xl mb-2">🔍</div>
-            <h3 className="text-sm font-semibold text-stone-800 dark:text-slate-200 mb-1">
-              Sonuç bulunamadı
-            </h3>
-            <p className="text-xs text-stone-500 dark:text-slate-400">
-              Lütfen arama terimini kontrol edin ve tekrar deneyin.
-            </p>
-          </div>
+          <Callout.Root color="gray" variant="surface" role="status">
+            <Callout.Icon>
+              <MagnifyingGlassIcon aria-hidden="true" />
+            </Callout.Icon>
+            <Callout.Text>
+              <strong>&ldquo;{aramaMetni}&rdquo;</strong> için sonuç bulunamadı. Yazımı veya klavye düzenini kontrol edip tekrar deneyin.
+            </Callout.Text>
+          </Callout.Root>
         )}
 
         <KelimeDetayDrawer
-            isOpen={drawerAcik}
-            onClose={() => setDrawerAcik(false)}
-            seciliKelime={seciliKelime}
-            onConceptClick={(word) => {
-              setDrawerAcik(false);
-              handleSearch(word, 'tam');
-            }}
-          />
-      </div>
-    </div>
+          isOpen={drawerAcik}
+          onClose={() => setDrawerAcik(false)}
+          seciliKelime={seciliKelime}
+          onConceptClick={(word) => {
+            setDrawerAcik(false);
+            handleSearch(word, 'tam');
+          }}
+        />
+      </Flex>
+    </Container>
   );
 }
-
-
-
-
-
-
 
