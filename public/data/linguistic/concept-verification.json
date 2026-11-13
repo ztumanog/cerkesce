@@ -1,0 +1,1277 @@
+{
+  "updatedAt": "2026-11-01T17:04:55.3666918+03:00",
+  "entries": [
+    {
+      "kavram": "ABUNDANCE",
+      "kelime": "бэгъон",
+      "durum": "emin",
+      "not": "toplu: kısmen uyumlu",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "ACTION",
+      "kelime": "егъэгъэзэщӏэн",
+      "durum": "dogru",
+      "not": "",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "ACTION",
+      "kelime": "зэгъэкӏэкӏын",
+      "durum": "dogru",
+      "not": "",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "ACTION",
+      "kelime": "къыргу",
+      "durum": "",
+      "not": "",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "ACUTE_ANGLE",
+      "kelime": "гъэхьэкъуэн",
+      "durum": "yanlis",
+      "not": "toplu: ettirgen",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "ACUTE_ANGLE",
+      "kelime": "гъэшхэкъуэн",
+      "durum": "yanlis",
+      "not": "toplu: ettirgen",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "ACUTE_ANGLE",
+      "kelime": "пхъэщакъуэ",
+      "durum": "yanlis",
+      "not": "toplu: anlam uyumsuz",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "AGE",
+      "kelime": "лӏыпӏэ",
+      "durum": "emin",
+      "not": "toplu: olgunluk",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "ALONE",
+      "kelime": "закъо",
+      "durum": "emin",
+      "not": "",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "ANATOMY",
+      "kelime": "гууэ",
+      "durum": "yanlis",
+      "not": "toplu: anlam uyumsuz",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "ATTRACT_NOTICE",
+      "kelime": "лъегъэтэн",
+      "durum": "emin",
+      "not": "toplu: çapraz referans",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "A_LITTLE",
+      "kelime": "зымащӏэрэ",
+      "durum": "dogru",
+      "not": "toplu: немного",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "BACK",
+      "kelime": "гъэтхьэусыхэн",
+      "durum": "yanlis",
+      "not": "toplu: ettirgen",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "BARLEY_SOUP",
+      "kelime": "хьэӏупс",
+      "durum": "dogru",
+      "not": "",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "BIG_WORK",
+      "kelime": "егъэгъотын",
+      "durum": "emin",
+      "not": "toplu: anlam boş",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "BIG_WORK",
+      "kelime": "егъурэгъузэу",
+      "durum": "yanlis",
+      "not": "toplu: anlam uyumsuz",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "BIG_WORK",
+      "kelime": "егъэӏуэтэжын",
+      "durum": "yanlis",
+      "not": "toplu: ettirgen",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "BIG_WORK",
+      "kelime": "егъэӏуэтэн",
+      "durum": "yanlis",
+      "not": "toplu: ettirgen",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "BIG_WORK",
+      "kelime": "егъэӏыгъын",
+      "durum": "yanlis",
+      "not": "toplu: ettirgen",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "BIG_WORK",
+      "kelime": "егъэбжын",
+      "durum": "yanlis",
+      "not": "toplu: ettirgen",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "BIG_WORK",
+      "kelime": "егъэгъэбыдэн",
+      "durum": "yanlis",
+      "not": "toplu: ettirgen",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "BIG_WORK",
+      "kelime": "егъэгъэзэн",
+      "durum": "yanlis",
+      "not": "toplu: ettirgen",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "BIG_WORK",
+      "kelime": "егъэлеекӏын",
+      "durum": "yanlis",
+      "not": "toplu: ettirgen",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "BIG_WORK",
+      "kelime": "егъэпӏын",
+      "durum": "yanlis",
+      "not": "toplu: ettirgen",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "BIG_WORK",
+      "kelime": "егъэтӏысэкӏын",
+      "durum": "yanlis",
+      "not": "toplu: ettirgen",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "BIG_WORK",
+      "kelime": "егъэцӏывэжьэн",
+      "durum": "yanlis",
+      "not": "toplu: ettirgen",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "BINDING",
+      "kelime": "ӏэпхлъэпх",
+      "durum": "dogru",
+      "not": "",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "BIRLESTIRMEK",
+      "kelime": "зэгуэгъэхьэн",
+      "durum": "yanlis",
+      "not": "",
+      "yeniKavram": "",
+      "uygulandi": true
+    },
+    {
+      "kavram": "BLACK",
+      "kelime": "фӏыщӏэкӏэ",
+      "durum": "yanlis",
+      "not": "toplu: anlam uyumsuz",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "BLUE",
+      "kelime": "щхъухь",
+      "durum": "emin",
+      "not": "",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "BLUE",
+      "kelime": "тхъо",
+      "durum": "yanlis",
+      "not": "toplu: at rengi",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "BOWSTRING",
+      "kelime": "гъэубзэн",
+      "durum": "yanlis",
+      "not": "toplu: ettirgen",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "BOWSTRING",
+      "kelime": "дэгъэбзэхыкӏын",
+      "durum": "yanlis",
+      "not": "toplu: ettirgen",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "BOW_MUSIC",
+      "kelime": "пщыхьэщхьэхуегъэзэкӏ",
+      "durum": "",
+      "not": "",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "CLENCH_TEETH_SACRIFICE",
+      "kelime": "ӏугъэлӏыкӏын",
+      "durum": "",
+      "not": "",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "CLOUD",
+      "kelime": "гъэпшэрын",
+      "durum": "yanlis",
+      "not": "toplu: anlam uyumsuz",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "CLUTTER",
+      "kelime": "ӏумпӏэ-пщампӏэ",
+      "durum": "yanlis",
+      "not": "toplu: anlam uyumsuz",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "COLOR",
+      "kelime": "огу",
+      "durum": "emin",
+      "not": "toplu: gri / gök",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "COMPASSION",
+      "kelime": "щыхъукӏи",
+      "durum": "yanlis",
+      "not": "toplu: anlam uyumsuz",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "CONFUSE",
+      "kelime": "щыгъэон",
+      "durum": "dogru",
+      "not": "toplu: сбивать с толку",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "CONTENTED",
+      "kelime": "пэщыху",
+      "durum": "emin",
+      "not": "toplu: gönül rahatlığı",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "DENSE",
+      "kelime": "гъэувын",
+      "durum": "yanlis",
+      "not": "toplu: ettirgen",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "DISGUST",
+      "kelime": "гущыкӏ",
+      "durum": "dogru",
+      "not": "toplu: отвращение",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "DISGUSTING",
+      "kelime": "гущыкӏыгъо",
+      "durum": "emin",
+      "not": "toplu: anlam boş",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "DISORDER",
+      "kelime": "хьэжьэражьэ",
+      "durum": "emin",
+      "not": "toplu: deyim",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "DROUGHT",
+      "kelime": "огъу",
+      "durum": "dogru",
+      "not": "toplu: засуха",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "EKSIMEK",
+      "kelime": "фІэІун",
+      "durum": "",
+      "not": "",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "EMOTION",
+      "kelime": "гуиихпсэих",
+      "durum": "emin",
+      "not": "toplu: çapraz referans",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "EPEY_HAYLI",
+      "kelime": "фІыкІейуэ",
+      "durum": "",
+      "not": "",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "ERROR",
+      "kelime": "щыон",
+      "durum": "emin",
+      "not": "toplu: ошибиться",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "ERROR",
+      "kelime": "гъощагъэ",
+      "durum": "emin",
+      "not": "toplu: заблудиться",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "ETHICS",
+      "kelime": "нэӏэ",
+      "durum": "yanlis",
+      "not": "toplu: anlam uyumsuz",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "EXIT",
+      "kelime": "бжыщхьэзэрынэ",
+      "durum": "yanlis",
+      "not": "toplu: anlam uyumsuz",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "EXIT",
+      "kelime": "табущхьэщу",
+      "durum": "yanlis",
+      "not": "toplu: anlam uyumsuz",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "EYEBROW",
+      "kelime": "зыхэдзэжын",
+      "durum": "yanlis",
+      "not": "toplu: anlam uyumsuz",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "EYEBROW",
+      "kelime": "хегъэдзэн",
+      "durum": "yanlis",
+      "not": "toplu: anlam uyumsuz",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "EYEBROW",
+      "kelime": "щӏегъэгъуэжын",
+      "durum": "yanlis",
+      "not": "toplu: ettirgen",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "FIND",
+      "kelime": "гъотын",
+      "durum": "dogru",
+      "not": "toplu: найти",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "FOUR",
+      "kelime": "игъэлӏыкӏын",
+      "durum": "yanlis",
+      "not": "toplu: ettirgen",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "GAS",
+      "kelime": "гъоз",
+      "durum": "emin",
+      "not": "toplu: buhar / duman",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "GENISLETMEK",
+      "kelime": "хэгъэхъуэн",
+      "durum": "dogru",
+      "not": "toplu: увеличивать",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "GLOVE_PART",
+      "kelime": "ӏэлъэдакъэнэ",
+      "durum": "yanlis",
+      "not": "toplu: anlam uyumsuz",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "GO",
+      "kelime": "дэкон",
+      "durum": "emin",
+      "not": "toplu: anlam kısa",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "GOATHERD",
+      "kelime": "тегъэбжэн",
+      "durum": "yanlis",
+      "not": "toplu: ettirgen",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "GUEST",
+      "kelime": "хьэщӏагъэ",
+      "durum": "yanlis",
+      "not": "toplu: anlam uyumsuz",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "HANDLE",
+      "kelime": "ӏурыӏэбапӏэ",
+      "durum": "yanlis",
+      "not": "toplu: anlam uyumsuz",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "HERDING_TIME",
+      "kelime": "ӏэхъогъу",
+      "durum": "emin",
+      "not": "toplu: sürü",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "HOST",
+      "kelime": "бысымхъуэж",
+      "durum": "yanlis",
+      "not": "toplu: anlam uyumsuz",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "HUNCHBACKED",
+      "kelime": "плӏэӏушэ",
+      "durum": "emin",
+      "not": "toplu: kambur",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "INFORM",
+      "kelime": "щыгъэщӏэн",
+      "durum": "yanlis",
+      "not": "toplu: ettirgen",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "KALMYK",
+      "kelime": "къабыл",
+      "durum": "yanlis",
+      "not": "toplu: anlam uyumsuz",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "KALMYK",
+      "kelime": "темыхуэн",
+      "durum": "yanlis",
+      "not": "toplu: anlam uyumsuz",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "KALMYK",
+      "kelime": "темыхуэжын",
+      "durum": "yanlis",
+      "not": "toplu: anlam uyumsuz",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "KICK",
+      "kelime": "лъэкъоон",
+      "durum": "dogru",
+      "not": "toplu: лягать",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "LAY_DOWN",
+      "kelime": "гъолъын",
+      "durum": "dogru",
+      "not": "toplu: лежать",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "LEGEN",
+      "kelime": "тас",
+      "durum": "",
+      "not": "",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "LEG_FOOT",
+      "kelime": "илъыгъуэ",
+      "durum": "yanlis",
+      "not": "toplu: anlam uyumsuz",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "LEG_FOOT",
+      "kelime": "лъакъо",
+      "durum": "dogru",
+      "not": "toplu: нога",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "LEG_FOOT",
+      "kelime": "лъэбакъуэхъу",
+      "durum": "yanlis",
+      "not": "toplu: anlam uyumsuz",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "LEG_FOOT",
+      "kelime": "лъэгъэӏэсын",
+      "durum": "yanlis",
+      "not": "toplu: ettirgen",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "LEG_FOOT",
+      "kelime": "лъэданэ",
+      "durum": "emin",
+      "not": "toplu: deyim",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "LEG_FOOT",
+      "kelime": "лъэзэхэпхъэ",
+      "durum": "emin",
+      "not": "toplu: deyim",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "LIFE_PARTNER",
+      "kelime": "кӏащхъэ",
+      "durum": "yanlis",
+      "not": "toplu: anlam uyumsuz",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "LIFE_PARTNER",
+      "kelime": "хъохъу",
+      "durum": "yanlis",
+      "not": "toplu: anlam uyumsuz",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "LIFE_PARTNER",
+      "kelime": "ехъопсэн",
+      "durum": "yanlis",
+      "not": "toplu: anlam uyumsuz",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "LIGHT",
+      "kelime": "нэхукӏэ",
+      "durum": "emin",
+      "not": "toplu: ışık",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "LIGHT",
+      "kelime": "нэхулъэфӏ",
+      "durum": "yanlis",
+      "not": "toplu: anlam uyumsuz",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "LIGHTEN",
+      "kelime": "гъэпсынщӏэн",
+      "durum": "dogru",
+      "not": "toplu: облегчить",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "LIMPING_WALK",
+      "kelime": "лъапэрыкъакъ",
+      "durum": "emin",
+      "not": "toplu: çapraz referans",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "LOCATION",
+      "kelime": "гъогу",
+      "durum": "yanlis",
+      "not": "toplu: anlam uyumsuz",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "LONG_LEGGED",
+      "kelime": "лъабэдий",
+      "durum": "yanlis",
+      "not": "toplu: anlam uyumsuz",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "LOOSE_FINGERS",
+      "kelime": "ӏэпэдэгъэлэл",
+      "durum": "emin",
+      "not": "toplu: deyim",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "LOVE",
+      "kelime": "упщӏэн",
+      "durum": "yanlis",
+      "not": "sorak, soru sormak ",
+      "yeniKavram": "",
+      "uygulandi": true
+    },
+    {
+      "kavram": "LOVE",
+      "kelime": "зэраӏуатэ",
+      "durum": "yanlis",
+      "not": "",
+      "yeniKavram": "",
+      "uygulandi": true
+    },
+    {
+      "kavram": "LOVE",
+      "kelime": "зэрыгъэӏуэтын",
+      "durum": "yanlis",
+      "not": "",
+      "yeniKavram": "",
+      "uygulandi": true
+    },
+    {
+      "kavram": "LOVE",
+      "kelime": "зэрыгъэукӏын",
+      "durum": "yanlis",
+      "not": "",
+      "yeniKavram": "",
+      "uygulandi": true
+    },
+    {
+      "kavram": "LUCKY_HOUSE",
+      "kelime": "унэкӏафӏэ",
+      "durum": "",
+      "not": "",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "MEETING_TIME",
+      "kelime": "ӏурыхьэгъуэ",
+      "durum": "yanlis",
+      "not": "toplu: anlam uyumsuz",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "MESSENGER",
+      "kelime": "лӏыкӏо",
+      "durum": "dogru",
+      "not": "toplu: посредник",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "MIND",
+      "kelime": "псыхъо",
+      "durum": "emin",
+      "not": "toplu: kaynaksız",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "MIND",
+      "kelime": "гурыгъэӏон",
+      "durum": "emin",
+      "not": "toplu: açıklama",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "MIND",
+      "kelime": "гурыӏон",
+      "durum": "emin",
+      "not": "toplu: anlama",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "MIND",
+      "kelime": "псымей",
+      "durum": "",
+      "not": "",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "MOO",
+      "kelime": "бу",
+      "durum": "dogru",
+      "not": "toplu: мычание",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "MORNING",
+      "kelime": "дэгъоу",
+      "durum": "yanlis",
+      "not": "toplu: anlam uyumsuz",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "MORNING",
+      "kelime": "пщэхын",
+      "durum": "yanlis",
+      "not": "toplu: anlam uyumsuz",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "MORNING",
+      "kelime": "дэгъэкӏыжын",
+      "durum": "yanlis",
+      "not": "toplu: ettirgen",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "MOVE_AWAY",
+      "kelime": "ӏугъэкӏотын",
+      "durum": "emin",
+      "not": "toplu: anlam boş",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "MUSIC",
+      "kelime": "орэд",
+      "durum": "emin",
+      "not": "toplu: şarkı",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "NATURE",
+      "kelime": "губгъуэ",
+      "durum": "emin",
+      "not": "toplu: ova / tarla",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "NAVY_BLUE",
+      "kelime": "щӏыкъ-сыкъ",
+      "durum": "yanlis",
+      "not": "toplu: anlam uyumsuz",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "NINE",
+      "kelime": "абгъуауэ",
+      "durum": "yanlis",
+      "not": "toplu: anlam uyumsuz",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "NINE",
+      "kelime": "бгъурыгъазэ",
+      "durum": "yanlis",
+      "not": "toplu: anlam uyumsuz",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "OAK_TREE",
+      "kelime": "ос",
+      "durum": "emin",
+      "not": "toplu: anlam boş",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "OAK_TREE",
+      "kelime": "осэпс",
+      "durum": "yanlis",
+      "not": "toplu: anlam uyumsuz",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "OATH",
+      "kelime": "тхьэрыӏо",
+      "durum": "emin",
+      "not": "toplu: anlam boş",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "ONERMEK",
+      "kelime": "къыхэлъхьэн",
+      "durum": "yanlis",
+      "not": "toplu: anlam uyumsuz",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "OVER_CAUSE",
+      "kelime": "щхьэпрыгъэун",
+      "durum": "yanlis",
+      "not": "toplu: ettirgen",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "OVER_THROW",
+      "kelime": "щхьэпрегъэдзын",
+      "durum": "yanlis",
+      "not": "toplu: ettirgen",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "PASSIVE",
+      "kelime": "зэфӏэкӏыншэ",
+      "durum": "emin",
+      "not": "toplu: anlam kısa",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "PERCEPTION",
+      "kelime": "гупэрыдзэ",
+      "durum": "yanlis",
+      "not": "toplu: anlam uyumsuz",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "PERSONALITY",
+      "kelime": "гъаблэгу",
+      "durum": "yanlis",
+      "not": "toplu: anlam uyumsuz",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "PERSONALITY",
+      "kelime": "гуемыӏу",
+      "durum": "yanlis",
+      "not": "toplu: anlam uyumsuz",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "PETROLEUM",
+      "kelime": "епщӏыхьын",
+      "durum": "yanlis",
+      "not": "toplu: anlam uyumsuz",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "PETROLEUM",
+      "kelime": "кърегъэщӏын",
+      "durum": "yanlis",
+      "not": "toplu: ettirgen",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "PETROLEUM",
+      "kelime": "къыщыгъэщӏын",
+      "durum": "yanlis",
+      "not": "toplu: ettirgen",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "REACH_PLACE",
+      "kelime": "пэрыӏэбапӏэ",
+      "durum": "yanlis",
+      "not": "toplu: anlam uyumsuz",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "RELIGION",
+      "kelime": "хьэдрыхэегъу",
+      "durum": "yanlis",
+      "not": "toplu: anlam uyumsuz",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "REVOLVE_AWAY",
+      "kelime": "ӏуджэрэзыхьын",
+      "durum": "emin",
+      "not": "toplu: etrafında dönmek",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "ROAR",
+      "kelime": "гъогъон",
+      "durum": "dogru",
+      "not": "toplu: греметь",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "ROTATE",
+      "kelime": "къегъэджэрэзэкӏын",
+      "durum": "emin",
+      "not": "toplu: ettirgen olabilir",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "RUB",
+      "kelime": "щыхъон",
+      "durum": "dogru",
+      "not": "toplu: тереть",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "SEE_LOVE",
+      "kelime": "зэрылъагъун",
+      "durum": "yanlis",
+      "not": "",
+      "yeniKavram": "",
+      "uygulandi": true
+    },
+    {
+      "kavram": "SEE_LOVE",
+      "kelime": "телъагъукӏын",
+      "durum": "yanlis",
+      "not": "",
+      "yeniKavram": "",
+      "uygulandi": true
+    },
+    {
+      "kavram": "SET_IN_FRONT",
+      "kelime": "пэрыгъэсхьэн",
+      "durum": "yanlis",
+      "not": "toplu: ettirgen",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "SIN",
+      "kelime": "псэкӏод",
+      "durum": "emin",
+      "not": "toplu: Arapça glos",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "SISTER",
+      "kelime": "зэдэон",
+      "durum": "emin",
+      "not": "toplu: anlam boş",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "SITTING_AT_FEET",
+      "kelime": "лъапэрисэ",
+      "durum": "yanlis",
+      "not": "toplu: anlam uyumsuz",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "SKIN",
+      "kelime": "зэхэуфэн",
+      "durum": "yanlis",
+      "not": "toplu: anlam uyumsuz",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "SKIN",
+      "kelime": "дэгъэфэн",
+      "durum": "yanlis",
+      "not": "toplu: anlam uyumsuz",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "SKIN",
+      "kelime": "къыдэгъэфэн",
+      "durum": "yanlis",
+      "not": "toplu: ettirgen",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "SOUND",
+      "kelime": "гъогын",
+      "durum": "yanlis",
+      "not": "toplu: anlam uyumsuz",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "STAND_IN_FRONT",
+      "kelime": "пэрыгъэтын",
+      "durum": "yanlis",
+      "not": "toplu: ettirgen",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "START_TALKING",
+      "kelime": "псэлъэкъуэн",
+      "durum": "emin",
+      "not": "toplu: çok konuşmak",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "STATE_FAMOUS",
+      "kelime": "цӏэрыӏо",
+      "durum": "emin",
+      "not": "toplu: anlam boş",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "STATE_SHAPE",
+      "kelime": "ебэетӏэ",
+      "durum": "yanlis",
+      "not": "toplu: anlam uyumsuz",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "SUITOR",
+      "kelime": "зытетыр",
+      "durum": "yanlis",
+      "not": "toplu: anlam uyumsuz",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "SUITOR",
+      "kelime": "зытегъэон",
+      "durum": "yanlis",
+      "not": "toplu: anlam uyumsuz",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "SWING",
+      "kelime": "гъэщкъыщкъын",
+      "durum": "yanlis",
+      "not": "toplu: ettirgen",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "TASTE",
+      "kelime": "хэгъон",
+      "durum": "yanlis",
+      "not": "toplu: anlam uyumsuz",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "UNKNOWN",
+      "kelime": "ӏагъу",
+      "durum": "yanlis",
+      "not": "toplu: anlam uyumsuz",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "UNSEEMLY",
+      "kelime": "жыпӏэнущи",
+      "durum": "yanlis",
+      "not": "toplu: anlam uyumsuz",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "VISIBILITY",
+      "kelime": "нэплъапӏэ",
+      "durum": "yanlis",
+      "not": "toplu: anlam uyumsuz",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "VUCUT",
+      "kelime": "Лъакъуэ",
+      "durum": "yanlis",
+      "not": "toplu: kavram LEG_FOOT olmalı",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "WORKER",
+      "kelime": "лажьи-хъати",
+      "durum": "yanlis",
+      "not": "toplu: anlam uyumsuz",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "WRITE",
+      "kelime": "гъазэ",
+      "durum": "yanlis",
+      "not": "toplu: anlam uyumsuz",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "WRITE",
+      "kelime": "теубгъон",
+      "durum": "yanlis",
+      "not": "toplu: anlam uyumsuz",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "WRITE",
+      "kelime": "гъагъын",
+      "durum": "yanlis",
+      "not": "toplu: ettirgen",
+      "yeniKavram": "",
+      "uygulandi": false
+    },
+    {
+      "kavram": "YELLOW",
+      "kelime": "гъуахъуэ",
+      "durum": "yanlis",
+      "not": "toplu: anlam uyumsuz",
+      "yeniKavram": "",
+      "uygulandi": false
+    }
+  ]
+}

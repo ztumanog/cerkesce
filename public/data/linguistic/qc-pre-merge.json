@@ -1,0 +1,11 @@
+{
+  "timestamp": "2026-10-17T01:30:19.340155",
+  "toplam_lexeme": 30424,
+  "mevcut_en": 20076,
+  "en_eksik": 10348,
+  "auto_candidates": 4627,
+  "review_candidates": 308,
+  "rejected_candidates": 467,
+  "beklenen_sonra": 24703,
+  "beklenen_coverage": 81.2
+}

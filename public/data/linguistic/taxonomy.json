@@ -1,0 +1,145 @@
+{
+  "LIVING": {
+    "PERSON": [
+      {
+        "conceptNorm": "PERSON_IDLER",
+        "count": 8
+      },
+      {
+        "conceptNorm": "PERSON",
+        "count": 29
+      }
+    ],
+    "ANIMAL": [
+      {
+        "conceptNorm": "ANIMAL",
+        "count": 3
+      },
+      {
+        "conceptNorm": "FISH",
+        "count": 10
+      }
+    ],
+    "PLANT": [],
+    "BODY_PART": [
+      {
+        "conceptNorm": "BODY_HAND",
+        "count": 1
+      },
+      {
+        "conceptNorm": "BODY_HEAD",
+        "count": 1
+      },
+      {
+        "conceptNorm": "BODY_HEART",
+        "count": 1
+      }
+    ],
+    "KINSHIP": [],
+    "PEOPLE_GROUP": []
+  },
+  "NON_LIVING": {
+    "OBJECT": [],
+    "TOOL": [],
+    "WEAPON": [],
+    "CLOTHING": [],
+    "FOOD": [],
+    "BUILDING": [],
+    "VEHICLE": [],
+    "PLACE": [
+      {
+        "conceptNorm": "LOCATION",
+        "count": 35
+      }
+    ],
+    "MATERIAL": [],
+    "NATURE": [
+      {
+        "conceptNorm": "EARTH_LAND",
+        "count": 2
+      },
+      {
+        "conceptNorm": "WATER",
+        "count": 5
+      }
+    ]
+  },
+  "ABSTRACT": {
+    "ACTION_VERB": [
+      {
+        "conceptNorm": "ACTION_DISAPPEAR",
+        "count": 7
+      },
+      {
+        "conceptNorm": "ACTION_VERB",
+        "count": 1771
+      },
+      {
+        "conceptNorm": "ACTION_DISPERSE",
+        "count": 9
+      },
+      {
+        "conceptNorm": "ACTION_CLOSE",
+        "count": 7
+      },
+      {
+        "conceptNorm": "ACTION_SEPARATE",
+        "count": 9
+      },
+      {
+        "conceptNorm": "ACTION_SPARKLE",
+        "count": 8
+      }
+    ],
+    "QUALITY_ADJ": [
+      {
+        "conceptNorm": "QUALITY_CLEAR",
+        "count": 8
+      },
+      {
+        "conceptNorm": "QUALITY_ADJ",
+        "count": 1993
+      },
+      {
+        "conceptNorm": "QUALITY_BAD",
+        "count": 7
+      },
+      {
+        "conceptNorm": "QUALITY_GOOD",
+        "count": 7
+      },
+      {
+        "conceptNorm": "QUALITY_UNSKILLED",
+        "count": 9
+      }
+    ],
+    "EMOTION": [],
+    "STATE": [
+      {
+        "conceptNorm": "STATE_CALM",
+        "count": 9
+      }
+    ],
+    "TIME": [
+      {
+        "conceptNorm": "TIME",
+        "count": 2
+      }
+    ],
+    "NUMBER": [],
+    "RELIGION": [],
+    "LANGUAGE": [],
+    "LAW": [],
+    "EDUCATION": [],
+    "GRAMMAR_SPATIAL": [
+      {
+        "conceptNorm": "GRAMMAR_SPATIAL",
+        "count": 758
+      },
+      {
+        "conceptNorm": "GRAMMAR_PREFIX",
+        "count": 25
+      }
+    ]
+  }
+}

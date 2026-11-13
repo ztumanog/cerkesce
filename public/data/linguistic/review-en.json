@@ -1,0 +1,3082 @@
+[
+  {
+    "id": "L-SHTENYGHE",
+    "form": "щтэныгъэ",
+    "tr": "endise",
+    "en_ham": "act of щтэн",
+    "en_temiz": "act of щтэн",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.556,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-D0B7D18BD189",
+    "form": "зыщӀыпӀи",
+    "tr": "hiçbir yerde",
+    "en_ham": "nowhere; anywhere; ар ~ щызгъуэтакъым: I couldn't find him anywhere",
+    "en_temiz": "nowhere; anywhere; ар ~ щызгъуэтакъым: I couldn't find him anywhere",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.717,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-PSORI",
+    "form": "псори",
+    "tr": "GENEL",
+    "en_ham": "1. (as a) whole; wholly; entirely;\n2. as adj. universal, general; for all; ~ еджапӀэм щегъэджэныгъэ: general school education.",
+    "en_temiz": "1. (as a) whole; wholly; entirely; 2. as adj. universal, general; for all; ~ еджапӀэм щегъэджэныгъэ: general school education.",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.78,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-ISTAMBYL",
+    "form": "истамбыл",
+    "tr": "Istanbul",
+    "en_ham": "Istanbul; Constantinople; Byzantium; * ~ губгъуафэ изоплъ жызыӀам нэхъей: divination by coffee-grounds",
+    "en_temiz": "Istanbul; Constantinople; Byzantium; * ~ губгъуафэ изоплъ жызыӀам нэхъей: divination by coffee-grounds",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.675,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-PYT-2",
+    "form": "пыт",
+    "tr": "Oturma odası",
+    "en_ham": "пытаи пымытаи: as if it had never existed.",
+    "en_temiz": "пытаи пымытаи: as if it had never existed.",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.636,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-SHCHKHUH",
+    "form": "щхъухь",
+    "tr": "BÜYÜ",
+    "en_ham": "1) отравиться 2) потерять контроль над собой. (1) poison 2) lose control of yourself.)",
+    "en_temiz": "1) отравиться 2) потерять контроль над собой. (1) poison 2) lose control of yourself.)",
+    "source": "18.Kbd-Ru&En.json",
+    "english_ratio": 0.443,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-MYDEN",
+    "form": "мыдэн",
+    "tr": "ETMEK, İTİRAZ",
+    "en_ham": "n.f. дэн I.",
+    "en_temiz": "n.f. дэн I.",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.5,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-KEEGHEGUBZHYN",
+    "form": "къэгъэгубжьын",
+    "tr": "SİNİRLENDİRMEK",
+    "en_ham": "1. c.f. къэгубжьын;\n2. to make angry, enrage, anger, infuriate (smb.).",
+    "en_temiz": "1. c.f. къэгубжьын; 2. to make angry, enrage, anger, infuriate (smb.).",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.783,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-EGUGHU",
+    "form": "егугъу",
+    "tr": "GAYRET",
+    "en_ham": "diligent, assiduous; ар лэжьакӀуэ егугъущ: he is an industrious worker",
+    "en_temiz": "diligent, assiduous; ар лэжьакӀуэ егугъущ: he is an industrious worker",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.702,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-ISHCHHE",
+    "form": "ищхьэ",
+    "tr": "superior",
+    "en_ham": "1. superior; фӀагъ ~ зиӀэ товар: goods of the highest quality;\n2. : еджапӀэ ~: higher institutes of education; the Higher School; II adv above; * ~ течауэ: adv openly, frankly, candidly",
+    "en_temiz": "1. superior; фӀагъ ~ зиӀэ товар: goods of the highest quality; 2. : еджапӀэ ~: higher institutes of education; the Higher School; II adv above; * ~ течауэ: adv openly, frankly, candidly",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.818,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-TEUENYGHE",
+    "form": "теуэныгъэ",
+    "tr": "SALDIRI",
+    "en_ham": "1. act. of теуэн;\n2.  assault, attack; aggression; теуэныгъэм щӀэкъу: aggressive, belligerent",
+    "en_temiz": "1. act. of теуэн; 2. assault, attack; aggression; теуэныгъэм щӀэкъу: aggressive, belligerent",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.71,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-NY-ADY",
+    "form": "ны",
+    "tr": "Anne, ana",
+    "en_ham": "~ see нэ~",
+    "en_temiz": "~ see нэ~",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.6,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-ZHE-2",
+    "form": "жэ",
+    "tr": "ağız",
+    "en_ham": "1. running;\n2. run, running; * жэкӀэ жэн: to hurry, fly",
+    "en_temiz": "1. running; 2. run, running; * жэкӀэ жэн: to hurry, fly",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.794,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-SHCHHEZAKUEE",
+    "form": "щхьэзакъуэ",
+    "tr": "solitary, lonely",
+    "en_ham": "1. solitary, lonely; lone;\n2. private; ~ мылъку: private property",
+    "en_temiz": "1. solitary, lonely; lone; 2. private; ~ мылъку: private property",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.87,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-ILHESITXU",
+    "form": "илъэситху",
+    "tr": "five years",
+    "en_ham": "1.  five years;\n2. attr of five years; five-year; ~ план: five-year plan",
+    "en_temiz": "1. five years; 2. attr of five years; five-year; ~ план: five-year plan",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.917,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-STECHAN",
+    "form": "стэчан",
+    "tr": "Bardak",
+    "en_ham": "see стэкан",
+    "en_temiz": "see стэкан",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.333,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-ISHCHYN",
+    "form": "ищын",
+    "tr": "sansli ev",
+    "en_ham": "япэ ~: to outrun, outstrip, outdistance; to pass ahead of, take the lead over; мы сыхьэтып япэ йощ: this watch is fast",
+    "en_temiz": "япэ ~: to outrun, outstrip, outdistance; to pass ahead of, take the lead over; мы сыхьэтып япэ йощ: this watch is fast",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.787,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-EHYN",
+    "form": "ехьын",
+    "tr": "dikkat, ilgi",
+    "en_ham": "щхъуэ ~: to poison (smb.)",
+    "en_temiz": "щхъуэ ~: to poison (smb.)",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.688,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-ISA",
+    "form": "иса",
+    "tr": "PİŞİK",
+    "en_ham": "of исэн",
+    "en_temiz": "of исэн",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.333,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-ISHCHHEM",
+    "form": "ищхьэм",
+    "tr": "üstünde",
+    "en_ham": "above; upstairs; ар ~ щопэу: he lives upstairs",
+    "en_temiz": "above; upstairs; ар ~ щопэу: he lives upstairs",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.8,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-TKHUA",
+    "form": "тхъуа",
+    "tr": "KIR 2",
+    "en_ham": "1.  of тхъун;\n2. adj grey, grizzled, greying; жьакӀэ ~: grey beard",
+    "en_temiz": "1. of тхъун; 2. adj grey, grizzled, greying; жьакӀэ ~: grey beard",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.767,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-GHABLEGU",
+    "form": "гъаблэгу",
+    "tr": "dikkat, ilgi",
+    "en_ham": "1) стать ненасытным, прожорливым 2) переносное стать алчным, жадным.  1) утолить голод. гъавэр къаӀэрыхьэри, цӀыхухэм я гъаблэгур икӀащ. 2) переносное быть удовлетворенным чем-л. (1) become insatiable, gluttonous 2) portable to become greedy, greedy. 1) to satisfy hunger. gavar kaaerihyeri, tiukhuham i gableblur ikiash. 2) portable to be satisfied with smth.)",
+    "en_temiz": "1) стать ненасытным, прожорливым 2) переносное стать алчным, жадным. 1) утолить голод. гъавэр къаӀэрыхьэри, цӀыхухэм я гъаблэгур икӀащ. 2) переносное быть удовлетворенным чем-л. (1) become insatiable, gluttonous 2) portable to become greedy, greedy. 1) to satisfy hunger. gavar kaaerihyeri, tiukhuham i gableblur ikiash. 2) portable to be satisfied with smth.)",
+    "source": "18.Kbd-Ru&En.json",
+    "english_ratio": 0.505,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-EGHELEINYGHE",
+    "form": "егъэлеиныгъэ",
+    "tr": "suistimal",
+    "en_ham": "act. of егъэлеин",
+    "en_temiz": "act. of егъэлеин",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.385,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-KOPIE",
+    "form": "копие",
+    "tr": "EŞLEM",
+    "en_ham": "копия (copy)",
+    "en_temiz": "копия (copy)",
+    "source": "18.Kbd-Ru&En.json",
+    "english_ratio": 0.444,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-ATLETIKE",
+    "form": "атлетикэ",
+    "tr": "athletics",
+    "en_ham": "athletics; ~ псынщӀэ: track and field athletics; ~ хъэлъэ:  weight-lifting.",
+    "en_temiz": "athletics; ~ псынщӀэ: track and field athletics; ~ хъэлъэ: weight-lifting.",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.786,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-UBGHUA",
+    "form": "убгъуа",
+    "tr": "geniş",
+    "en_ham": "1. of убгъун;\n2. as adj detailed, comprehensive; * псалъуха ~: gram. extended sentence",
+    "en_temiz": "1. of убгъун; 2. as adj detailed, comprehensive; * псалъуха ~: gram. extended sentence",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.774,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-MYBYDE",
+    "form": "мыбыдэ",
+    "tr": "not strong/solid/durable",
+    "en_ham": "not strong/solid/durable; fragile; precarious, insecure; unstable; псэуалъэ ~: flimsily- constructed building; jerry– built house; щытыкӀэ ~: precarious state.",
+    "en_temiz": "not strong/solid/durable; fragile; precarious, insecure; unstable; псэуалъэ ~: flimsily- constructed building; jerry– built house; щытыкӀэ ~: precarious state.",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.888,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-XESENYGHE",
+    "form": "хэсэныгъэ",
+    "tr": "iniş",
+    "en_ham": "1. act. plating; кӀэртӀоф ~: potato planting;\n2. n seedlings",
+    "en_temiz": "1. act. plating; кӀэртӀоф ~: potato planting; 2. n seedlings",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.85,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-KEYXEXYNYGHE",
+    "form": "къыхэхыныгъэ",
+    "tr": "seçim",
+    "en_ham": "act. of къыхэхын.",
+    "en_temiz": "act. of къыхэхын.",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.385,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-CORPUS-03662",
+    "form": "мыдэн",
+    "tr": "YABANILEŞMEK",
+    "en_ham": "n.f. дэн I.",
+    "en_temiz": "n.f. дэн I.",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.5,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-PYXUN",
+    "form": "пыхун",
+    "tr": "KOPMAK",
+    "en_ham": "i (пеху) перех. гл.  отогнать кого-что-л. от чего-л. спереди или сзади (i (pehu) move. ch. ward off someone's l. smth. front or rear)",
+    "en_temiz": "i (пеху) отогнать кого-что-л. от чего-л. спереди или сзади (i (pehu) move. ch. ward off someone's l. smth. front or rear)",
+    "source": "18.Kbd-Ru&En.json",
+    "english_ratio": 0.506,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-ZEXES",
+    "form": "зэхэс",
+    "tr": "CELSE",
+    "en_ham": "1. sitting in one group;\n2. living together; II evening-party; ~ щӀын: to organize an evening-party",
+    "en_temiz": "1. sitting in one group; 2. living together; II evening-party; ~ щӀын: to organize an evening-party",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.958,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-ZESA",
+    "form": "зэса",
+    "tr": "geleneksel",
+    "en_ham": "habit; * ~ сэгъейщ: prov. habit is second nature",
+    "en_temiz": "habit; * ~ сэгъейщ: prov. habit is second nature",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.8,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-SHCHTA",
+    "form": "щта",
+    "tr": "frozen",
+    "en_ham": "of щтын",
+    "en_temiz": "of щтын",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.333,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-XETYNYGHE",
+    "form": "хэтыныгъэ",
+    "tr": "katılım",
+    "en_ham": "act. of хэтын",
+    "en_temiz": "act. of хэтын",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.5,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-MYKUU",
+    "form": "мыкуу",
+    "tr": "SIĞ",
+    "en_ham": "not deep, rather shallow; псы ~: shallow river.",
+    "en_temiz": "not deep, rather shallow; псы ~: shallow river.",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.914,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-GUBZHYNYGHE",
+    "form": "губжьыныгъэ",
+    "tr": "NEFİS 1",
+    "en_ham": "act of губжьын",
+    "en_temiz": "act of губжьын",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.417,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-ZEPYTRE",
+    "form": "зэпытрэ",
+    "tr": "DEVAMLI",
+    "en_ham": "~ зэкӀэсу укӀуэ!: colloq. good riddance!, nobody is stopping you",
+    "en_temiz": "~ зэкӀэсу укӀуэ!: colloq. good riddance!, nobody is stopping you",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.787,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-ZABASTOVKE",
+    "form": "забастовкэ",
+    "tr": "strike",
+    "en_ham": "1. strike; ~ къэӀэтын: to strike, to go on strike; to come/walk out; ~ щӀын: to declare a strike;\n2. attr strike",
+    "en_temiz": "1. strike; ~ къэӀэтын: to strike, to go on strike; to come/walk out; ~ щӀын: to declare a strike; 2. attr strike",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.867,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-SHOKUE",
+    "form": "шокъу",
+    "tr": "dikkat, ilgi",
+    "en_ham": "1) вдруг, неожиданно. (1) suddenly, unexpectedly.)",
+    "en_temiz": "1) вдруг, неожиданно. (1) suddenly, unexpectedly.)",
+    "source": "18.Kbd-Ru&En.json",
+    "english_ratio": 0.571,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-BAUE",
+    "form": "бауэ",
+    "tr": "breathing, respiration",
+    "en_ham": "breathing, respiration; breath; ~ хьэлъэ: heavy breath",
+    "en_temiz": "breathing, respiration; breath; ~ хьэлъэ: heavy breath",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.86,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-ANGLIYSKE",
+    "form": "английскэ",
+    "tr": "English",
+    "en_ham": "English; British; ~ шыгъу: Epsom salts.",
+    "en_temiz": "English; British; ~ шыгъу: Epsom salts.",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.828,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-ILHABZHEM",
+    "form": "илъабжьэм",
+    "tr": "below, downstairs",
+    "en_ham": "below, downstairs; ~ си ныбжьэгъур щопсэу: my friend lives downstairs",
+    "en_temiz": "below, downstairs; ~ си ныбжьэгъур щопсэу: my friend lives downstairs",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.679,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-GHAZE",
+    "form": "гъазэ",
+    "tr": "dikkat, ilgi",
+    "en_ham": "1) не иметь возврата к чему-л. (1) not to have a return to smth.)",
+    "en_temiz": "1) не иметь возврата к чему-л. (1) not to have a return to smth.)",
+    "source": "18.Kbd-Ru&En.json",
+    "english_ratio": 0.512,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-PRUZHINE",
+    "form": "пружинэ",
+    "tr": "spring",
+    "en_ham": "spring; сыхьэт ~: mainspring, spring of clock/watch; ~ зэрылъ уэншэку: spring-mattress.",
+    "en_temiz": "spring; сыхьэт ~: mainspring, spring of clock/watch; ~ зэрылъ уэншэку: spring-mattress.",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.716,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-VERIFIED-00035",
+    "form": "член",
+    "tr": "member",
+    "en_ham": "member; профсоюзым и ~: member of trade union",
+    "en_temiz": "member; профсоюзым и ~: member of trade union",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.686,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-VERIFIED-00052",
+    "form": "товар",
+    "tr": "MASRAF",
+    "en_ham": "econ. goods, commodity; see also хьэпшып",
+    "en_temiz": "econ. goods, commodity; see also хьэпшып",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.781,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-VERIFIED-00134",
+    "form": "лажьи-хъати",
+    "tr": "sansli ev",
+    "en_ham": "1) быть абсолютно невредимым, абсолютно непострадавшим. (1) to be completely unharmed, completely uninjured.)",
+    "en_temiz": "1) быть абсолютно невредимым, абсолютно непострадавшим. (1) to be completely unharmed, completely uninjured.)",
+    "source": "18.Kbd-Ru&En.json",
+    "english_ratio": 0.471,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-VERIFIED-00299",
+    "form": "мыжэ",
+    "tr": "stagnant",
+    "en_ham": "stagnant; псы ~: stagnant water.",
+    "en_temiz": "stagnant; псы ~: stagnant water.",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.875,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-VERIFIED-00336",
+    "form": "научнэ",
+    "tr": "hipotez",
+    "en_ham": "scientific; ~ лэжьакӀуэ: research scientist; scholar",
+    "en_temiz": "scientific; ~ лэжьакӀуэ: research scientist; scholar",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.81,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-VERIFIED-00401",
+    "form": "утхъуа",
+    "tr": "BULANIK",
+    "en_ham": "1. of утхъуэн;\n2. as adj turbid, muddy, cloudy; псы ~: turbid water",
+    "en_temiz": "1. of утхъуэн; 2. as adj turbid, muddy, cloudy; псы ~: turbid water",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.778,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-VERIFIED-00445",
+    "form": "щхьэмыжыбэ",
+    "tr": "BOLLUK",
+    "en_ham": "eared, full of ears; branchy; гуэдз ~: wheat full of ears",
+    "en_temiz": "eared, full of ears; branchy; гуэдз ~: wheat full of ears",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.881,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-VERIFIED-00448",
+    "form": "мынэрылъагъу",
+    "tr": "SOYUT",
+    "en_ham": "see мынаӀуэ.",
+    "en_temiz": "see мынаӀуэ.",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.333,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-VERIFIED-00503",
+    "form": "сыс",
+    "tr": "unsteady, shaky",
+    "en_ham": "unsteady, shaky; лъэмыж ~: unsteady bridge",
+    "en_temiz": "unsteady, shaky; лъэмыж ~: unsteady bridge",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.818,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-VERIFIED-00745",
+    "form": "зэрыбауэ",
+    "tr": "respiratory",
+    "en_ham": "respiratory; ~ гъуэгухэр: respiratory tract",
+    "en_temiz": "respiratory; ~ гъуэгухэр: respiratory tract",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.75,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-VERIFIED-00888",
+    "form": "шахтэ",
+    "tr": "mine/pit",
+    "en_ham": "mine/pit; мывэ фӀамыщӀ къыщыщӀах ~: coal mine",
+    "en_temiz": "mine/pit; мывэ фӀамыщӀ къыщыщӀах ~: coal mine",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.469,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-VERIFIED-00971",
+    "form": "кремль",
+    "tr": "citadel",
+    "en_ham": "citadel; Московскэ Кремль: the Kremlin",
+    "en_temiz": "citadel; Московскэ Кремль: the Kremlin",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.531,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-VERIFIED-01006",
+    "form": "бу",
+    "tr": "dikkat, ilgi",
+    "en_ham": "мычание (moo)",
+    "en_temiz": "мычание (moo)",
+    "source": "18.Kbd-Ru&En.json",
+    "english_ratio": 0.3,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-VERIFIED-01074",
+    "form": "быхъуу",
+    "tr": "wide, widely",
+    "en_ham": "wide, widely; ~ зэтеха нэхэр: wide-open eyes",
+    "en_temiz": "wide, widely; ~ зэтеха нэхэр: wide-open eyes",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.667,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-VERIFIED-01138",
+    "form": "бжьыпэ",
+    "tr": "dikkat, ilgi",
+    "en_ham": "1) победить, добиться успеха 2) главенствовать над кем-чем-л.  1) соперничать друг с другом 2) не поделить власть. (1) to win, succeed 2) prevail over someone smth. 1) compete with each other 2) does not share power.)",
+    "en_temiz": "1) победить, добиться успеха 2) главенствовать над кем-чем-л. 1) соперничать друг с другом 2) не поделить власть. (1) to win, succeed 2) prevail over someone smth. 1) compete with each other 2) does not share power.)",
+    "source": "18.Kbd-Ru&En.json",
+    "english_ratio": 0.458,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-VERIFIED-01154",
+    "form": "зэрытхэ",
+    "tr": "writing",
+    "en_ham": "writing; ~ машинкэ: typewriter",
+    "en_temiz": "writing; ~ машинкэ: typewriter",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.708,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-VERIFIED-01164",
+    "form": "механизм",
+    "tr": "MEKANIZMA",
+    "en_ham": "mechanism; gear(ing); сыхьэт ~: clockwork.",
+    "en_temiz": "mechanism; gear(ing); сыхьэт ~: clockwork.",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.806,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-VERIFIED-01287",
+    "form": "ущииныгъэ",
+    "tr": "NASİHAT",
+    "en_ham": "act. of ущиин",
+    "en_temiz": "act. of ущиин",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.5,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-VERIFIED-01428",
+    "form": "зэхын",
+    "tr": "sansli ev",
+    "en_ham": "сэлам ~:  to greet one another",
+    "en_temiz": "сэлам ~: to greet one another",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.773,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-VERIFIED-01554",
+    "form": "факт",
+    "tr": "gerçek",
+    "en_ham": "fact; case; факткэр зэнуэкьэсын: to gather/collect facts; see also Ӏуэнугъуэ 4",
+    "en_temiz": "fact; case; факткэр зэнуэкьэсын: to gather/collect facts; see also Ӏуэнугъуэ 4",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.574,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-VERIFIED-01614",
+    "form": "щхьэхь-псэхь",
+    "tr": "panic, scare",
+    "en_ham": "1.  panic, scare; alarm, anxiety, uneasiness;\n2. attr panic; alarm; ~ хъун: to become panic-stricken, to give way to panic",
+    "en_temiz": "1. panic, scare; alarm, anxiety, uneasiness; 2. attr panic; alarm; ~ хъун: to become panic-stricken, to give way to panic",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.954,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-VERIFIED-01633",
+    "form": "щыхах",
+    "tr": "electoral",
+    "en_ham": "electoral; election; ~ пункт: election centre",
+    "en_temiz": "electoral; election; ~ пункт: election centre",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.861,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-VERIFIED-01702",
+    "form": "мэзкусэ",
+    "tr": "forest belt",
+    "en_ham": "forest belt; woodland belt; губгъуэхъумэ ~: field- protecting forest belt, shelter-belt; ~ хэсэныгъэ: afforestation, planting forests; зыхъумэ ~: forest shelter-belts.",
+    "en_temiz": "forest belt; woodland belt; губгъуэхъумэ ~: field- protecting forest belt, shelter-belt; ~ хэсэныгъэ: afforestation, planting forests; зыхъумэ ~: forest shelter-belts.",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.788,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-VERIFIED-01729",
+    "form": "условнэ",
+    "tr": "conditional",
+    "en_ham": "1. conditional;\n2. conventional; ~ дамыгъэхэр: conventional signs; * ~ наклонение: gram. conditional mood",
+    "en_temiz": "1. conditional; 2. conventional; ~ дамыгъэхэр: conventional signs; * ~ наклонение: gram. conditional mood",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.747,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-VERIFIED-01730",
+    "form": "финик",
+    "tr": "KEÇI BOYNUZU",
+    "en_ham": "1.  date;\n2. attr of 1; ~ пальмэ: date, date-palm",
+    "en_temiz": "1. date; 2. attr of 1; ~ пальмэ: date, date-palm",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.786,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-VERIFIED-01775",
+    "form": "кредит",
+    "tr": "credit",
+    "en_ham": "credit; кредиту къеӀыхын: to obtain/get on credit",
+    "en_temiz": "credit; кредиту къеӀыхын: to obtain/get on credit",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.641,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-VERIFIED-01888",
+    "form": "жьэгъуашхэ",
+    "tr": "GEVIŞ",
+    "en_ham": "1.  cud;\n2. attr ruminant; Ӏэщ жьэгъуашхэхэр: ruminants, ruminant animals",
+    "en_temiz": "1. cud; 2. attr ruminant; Ӏэщ жьэгъуашхэхэр: ruminants, ruminant animals",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.722,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-VERIFIED-01980",
+    "form": "ухуэна",
+    "tr": "ÖRÜLMÜŞ",
+    "en_ham": "adj braided, plaited; щхьэц ~: braided/plaited hair",
+    "en_temiz": "adj braided, plaited; щхьэц ~: braided/plaited hair",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.875,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-VERIFIED-02074",
+    "form": "щыгъуэзэныгъэ",
+    "tr": "iptila",
+    "en_ham": "1. act of щыгъуэзэн 1;\n2. knowledge, possession of information",
+    "en_temiz": "1. act of щыгъуэзэн 1; 2. knowledge, possession of information",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.804,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-VERIFIED-02077",
+    "form": "торф",
+    "tr": "BATAKLIKKÖMÜRÜ",
+    "en_ham": "1.  peat;\n2. attr peat; ~ сэбсэтӀ: peatbog",
+    "en_temiz": "1. peat; 2. attr peat; ~ сэбсэтӀ: peatbog",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.76,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-VERIFIED-02144",
+    "form": "рапорт",
+    "tr": "RAPOR",
+    "en_ham": "report; ~ етын: to report",
+    "en_temiz": "report; ~ етын: to report",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.778,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-VERIFIED-02188",
+    "form": "сабынгъавэ",
+    "tr": "soap-boiler",
+    "en_ham": "1.  soap-boiler;\n2. attr: ~ завод: soap-works, soap factory",
+    "en_temiz": "1. soap-boiler; 2. attr: ~ завод: soap-works, soap factory",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.872,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-VERIFIED-02242",
+    "form": "факт",
+    "tr": "TUTANAK",
+    "en_ham": "fact; case; факткэр зэнуэкьэсын: to gather/collect facts; see also Ӏуэнугъуэ 4",
+    "en_temiz": "fact; case; факткэр зэнуэкьэсын: to gather/collect facts; see also Ӏуэнугъуэ 4",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.574,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-VERIFIED-02263",
+    "form": "фарфор",
+    "tr": "china, porcelain",
+    "en_ham": "1.  china, porcelain;\n2. china(ware); II attr china; porcelain; ~ шейныч: china/porcelain teapot",
+    "en_temiz": "1. china, porcelain; 2. china(ware); II attr china; porcelain; ~ шейныч: china/porcelain teapot",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.913,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-VERIFIED-02280",
+    "form": "къэча",
+    "tr": "çatlak",
+    "en_ham": "crack, split, cleft, fissure; мылым ~ иӀэщ: there is a crack in the ice.",
+    "en_temiz": "crack, split, cleft, fissure; мылым ~ иӀэщ: there is a crack in the ice.",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.843,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-VERIFIED-02284",
+    "form": "ещэ",
+    "tr": "PUSU",
+    "en_ham": "of ещэн II",
+    "en_temiz": "of ещэн II",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.5,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-VERIFIED-02507",
+    "form": "народнэ",
+    "tr": "sözlü",
+    "en_ham": "people's; national; ~ суд: People's Court; ~ республикэ: People's Republic",
+    "en_temiz": "people's; national; ~ суд: People's Court; ~ республикэ: People's Republic",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.764,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-VERIFIED-02536",
+    "form": "костюм",
+    "tr": "BAĞLAMAK",
+    "en_ham": "costume, dress; suit; compare with кӀэстум",
+    "en_temiz": "costume, dress; suit; compare with кӀэстум",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.818,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-VERIFIED-02663",
+    "form": "электрическэ",
+    "tr": "Ütü",
+    "en_ham": "electric(al); ~ ету: electric iron",
+    "en_temiz": "electric(al); ~ ету: electric iron",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.88,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-KBD-00846",
+    "form": "гыз",
+    "tr": "SARSINTI",
+    "en_ham": "стон (moan)",
+    "en_temiz": "стон (moan)",
+    "source": "18.Kbd-Ru&En.json",
+    "english_ratio": 0.5,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-KBD-03385",
+    "form": "лъэданэ",
+    "tr": "sansli ev",
+    "en_ham": "1) не смочь, не захотеть сдвинуться с места. (1) not to be able to not want to budge.)",
+    "en_temiz": "1) не смочь, не захотеть сдвинуться с места. (1) not to be able to not want to budge.)",
+    "source": "18.Kbd-Ru&En.json",
+    "english_ratio": 0.45,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-KBD-04788",
+    "form": "хъунщӀэ",
+    "tr": "rob.",
+    "en_ham": "грабить. (rob.)",
+    "en_temiz": "грабить. (rob.)",
+    "source": "18.Kbd-Ru&En.json",
+    "english_ratio": 0.3,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-KBD-05556",
+    "form": "акъуш",
+    "tr": "dikkat, ilgi",
+    "en_ham": "мыщэ ~: bear-cub.",
+    "en_temiz": "мыщэ ~: bear-cub.",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.636,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-KBD-05574",
+    "form": "къимыдэкӀэ",
+    "tr": "dikkat, ilgi",
+    "en_ham": "абы ~: besides (that), in addition, furthermore.",
+    "en_temiz": "абы ~: besides (that), in addition, furthermore.",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.914,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-KBD-05580",
+    "form": "къэунэхугъуэ",
+    "tr": "sansli ev",
+    "en_ham": "1. time of appearance of stars in the sky;\n2. star rise; * мазэ ~: new moon.",
+    "en_temiz": "1. time of appearance of stars in the sky; 2. star rise; * мазэ ~: new moon.",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.92,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-KBD-05584",
+    "form": "мыгу",
+    "tr": "PIYAZ",
+    "en_ham": "ху ~ : unground millet, whole millet.",
+    "en_temiz": "ху ~ : unground millet, whole millet.",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.926,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-KBD-05585",
+    "form": "мыхь",
+    "tr": "sansli ev",
+    "en_ham": "1) ругать, поносить. (1) berate, and diarrhea.)",
+    "en_temiz": "1) ругать, поносить. (1) berate, and diarrhea.)",
+    "source": "18.Kbd-Ru&En.json",
+    "english_ratio": 0.548,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-KBD-05605",
+    "form": "тепщэхэн",
+    "tr": "sansli ev",
+    "en_ham": "гур ~: to content oneself with vengeance",
+    "en_temiz": "гур ~: to content oneself with vengeance",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.906,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-KBD-05608",
+    "form": "химическэ",
+    "tr": "KIMYASAL",
+    "en_ham": "chemical; ~ реакцие: chemical reaction; ~ къэрэндащ: indelible/ink pencil",
+    "en_temiz": "chemical; ~ реакцие: chemical reaction; ~ къэрэндащ: indelible/ink pencil",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.724,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-KBD-05615",
+    "form": "экономие",
+    "tr": "IKTISAT",
+    "en_ham": "политическэ: political economy",
+    "en_temiz": "политическэ: political economy",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.593,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-KBD-05655",
+    "form": "воля",
+    "tr": "eğilim",
+    "en_ham": "will; volition; волям и къару: will-power",
+    "en_temiz": "will; volition; волям и къару: will-power",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.656,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-KBD-05682",
+    "form": "круг",
+    "tr": "KAFKASKEÇISI",
+    "en_ham": "circle; ~ щӀын: to draw a circle",
+    "en_temiz": "circle; ~ щӀын: to draw a circle",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.864,
+    "has_cyrillic": true
+  },
+  {
+    "id": "KAV-ЕБГЪЭРЫКӀУЭНЫГЪ",
+    "form": "ебгъэрыкӀуэныгъэ",
+    "tr": "saldırgan",
+    "en_ham": "act. of ебгъэрыкӀуэн",
+    "en_temiz": "act. of ебгъэрыкӀуэн",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.312,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-KEEGHESHA",
+    "form": "къэгъэша",
+    "tr": "HELEZON",
+    "en_ham": "bent, curved; bowed; баш къэгъэша: curved stick.",
+    "en_temiz": "bent, curved; bowed; баш къэгъэша: curved stick.",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.703,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-FONAR",
+    "form": "фонарь",
+    "tr": "FENER",
+    "en_ham": "lantern; lamp, ~ зыфӀадзэ пкъо: lamp-post",
+    "en_temiz": "lantern; lamp, ~ зыфӀадзэ пкъо: lamp-post",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.633,
+    "has_cyrillic": true
+  },
+  {
+    "id": "KAV-ӀУЭХУЕПЛЪЫКӀЭ",
+    "form": "ӀуэхуеплъыкӀэ",
+    "tr": "inanç",
+    "en_ham": "view, point of view; абы и ӀуэкуеплъыкӀэр  пэжкъым: his point of view is erroneous.",
+    "en_temiz": "view, point of view; абы и ӀуэкуеплъыкӀэр пэжкъым: his point of view is erroneous.",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.635,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-EBZHYGU",
+    "form": "Ӏэбжьыгу",
+    "tr": "Avuç",
+    "en_ham": "see Ӏэбжьыб",
+    "en_temiz": "see Ӏэбжьыб",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.333,
+    "has_cyrillic": true
+  },
+  {
+    "id": "KAV-ӀЭНКУН",
+    "form": "Ӏэнкун",
+    "tr": "ŞAŞKIN",
+    "en_ham": "1. irresolute, indecisive, hesitant;\n2. anxious,  uneasy, troubled, perturbed, worried; ~ хъун: to hesitate, vacillate; to lose one's head",
+    "en_temiz": "1. irresolute, indecisive, hesitant; 2. anxious, uneasy, troubled, perturbed, worried; ~ хъун: to hesitate, vacillate; to lose one's head",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.961,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-F-ESHCHYN",
+    "form": "фӀэщын",
+    "tr": "Vermek",
+    "en_ham": "(фӀещ) перех. гл. дать кому-чему-л. название, имя, прозвище ((фӀещ) перех. ch. give smb. something name, name, nickname)",
+    "en_temiz": "(фӀещ) дать кому-чему-л. название, имя, прозвище ((фӀещ) ch. give smb. something name, name, nickname)",
+    "source": "18.Kbd-Ru&En.json",
+    "english_ratio": 0.472,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-TEK-UA",
+    "form": "текӀуа",
+    "tr": "kazanan",
+    "en_ham": "1. of текӀуэн;\n2. conqueror, victor, winner",
+    "en_temiz": "1. of текӀуэн; 2. conqueror, victor, winner",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.793,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-KEETKHYXA",
+    "form": "къетхъыха",
+    "tr": "YIRTILMAK",
+    "en_ham": "1. of къетхъыхын I;\n2. ragamuffin, ragged fellow/creature, tatterdemalion.",
+    "en_temiz": "1. of къетхъыхын I; 2. ragamuffin, ragged fellow/creature, tatterdemalion.",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.825,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-DIAGONAL",
+    "form": "диагональ",
+    "tr": "DIYAGNOZ",
+    "en_ham": "diagonal; диагоналымкӀэ: diagonally",
+    "en_temiz": "diagonal; диагоналымкӀэ: diagonally",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.6,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-PARTIE",
+    "form": "партие",
+    "tr": "PARTİ",
+    "en_ham": "pol. party; партием хыхьэн: to join the party; партием хэтын: to be a member of the party; партием хэт: member of the party; партием хэмыт: non-Party-man; non-Party woman; партием и кӀуэцӀкӀэ щыӀэ: inner-Party.",
+    "en_temiz": "pol. party; партием хыхьэн: to join the party; партием хэтын: to be a member of the party; партием хэт: member of the party; партием хэмыт: non-Party-man; non-Party woman; партием и кӀуэцӀкӀэ щыӀэ: inner-Party.",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.592,
+    "has_cyrillic": true
+  },
+  {
+    "id": "KAV-КЪЭКӀУХЬЫНЫГЪЭ",
+    "form": "къэкӀухьыныгъэ",
+    "tr": "gezi",
+    "en_ham": "act. of къэкӀухьын.",
+    "en_temiz": "act. of къэкӀухьын.",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.357,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-SHXAFEGU",
+    "form": "шхафэгу",
+    "tr": "Döşeme; taban, zemin",
+    "en_ham": "vacant/unoccupied part of floor; * ар ди ~ къытеньакъым: he did not cross our threshold",
+    "en_temiz": "vacant/unoccupied part of floor; * ар ди ~ къытеньакъым: he did not cross our threshold",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.765,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-INDUSTRIE",
+    "form": "индустрие",
+    "tr": "sanayi",
+    "en_ham": "industry; ~ хьэлъэ: heavy industry.",
+    "en_temiz": "industry; ~ хьэлъэ: heavy industry.",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.778,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-OTCHYOTNOST",
+    "form": "отчётность",
+    "tr": "raporlama",
+    "en_ham": "accounts; ~ къэпщытэн: to audit",
+    "en_temiz": "accounts; ~ къэпщытэн: to audit",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.625,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-KHURSANE",
+    "form": "хъурсанэ",
+    "tr": "YASEMINSIYAH",
+    "en_ham": "bot. see джэдхъурсанэ",
+    "en_temiz": "bot. see джэдхъурсанэ",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.333,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-MEXA",
+    "form": "мэха",
+    "tr": "BAYGIN",
+    "en_ham": "1.  of мэхын 1;\n2. person in a fainting fit.",
+    "en_temiz": "1. of мэхын 1; 2. person in a fainting fit.",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.815,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-UGOLOVNE",
+    "form": "уголовнэ",
+    "tr": "cezai",
+    "en_ham": "criminal; penal; ~ Ӏуэху: criminal case",
+    "en_temiz": "criminal; penal; ~ Ӏуэху: criminal case",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.862,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-TUT",
+    "form": "тут",
+    "tr": "BURASI",
+    "en_ham": "see тутей",
+    "en_temiz": "see тутей",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.375,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-NEDZHYL",
+    "form": "нэджыл",
+    "tr": "GÖZBEBEĞI",
+    "en_ham": "1.  easily irritated eye;\n2. fig shame; абы ~ иӀэкъым: he is shameless",
+    "en_temiz": "1. easily irritated eye; 2. fig shame; абы ~ иӀэкъым: he is shameless",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.812,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-K-ESHCHKH",
+    "form": "кӀэщхъ",
+    "tr": "KÜÇÜK",
+    "en_ham": "1.  small; мывэ ~: small stones; pebbles;\n2. n abatement; subsidence",
+    "en_temiz": "1. small; мывэ ~: small stones; pebbles; 2. n abatement; subsidence",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.915,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-P-ASHCH-EGHUE",
+    "form": "пӀащӀэгъуэ",
+    "tr": "ACİL, ACELE",
+    "en_ham": "hurry, haste; ~ телъу: in a hurry, hastily, in haste, hurriedly; * ар пӀащӀэгъуэкъым: there’s no hurry",
+    "en_temiz": "hurry, haste; ~ телъу: in a hurry, hastily, in haste, hurriedly; * ар пӀащӀэгъуэкъым: there’s no hurry",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.74,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-EPEDEGHELEL-KBD",
+    "form": "Ӏэпэдэгъэлэл",
+    "tr": "BAŞTANSAVMA",
+    "en_ham": "1) смотреть на что-л. сквозь пальцы 2) небрежно относиться к выполнению чего-л. (1) look at smth. through fingers 2) carelessly take care of doing smth.)",
+    "en_temiz": "1) смотреть на что-л. сквозь пальцы 2) небрежно относиться к выполнению чего-л. (1) look at smth. through fingers 2) carelessly take care of doing smth.)",
+    "source": "18.Kbd-Ru&En.json",
+    "english_ratio": 0.469,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-KEIT-YK-A",
+    "form": "къитӀыкӀа",
+    "tr": "kanal",
+    "en_ham": "1. of къитӀыкӀын;\n2. pit, hole, ditch, trench.",
+    "en_temiz": "1. of къитӀыкӀын; 2. pit, hole, ditch, trench.",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.714,
+    "has_cyrillic": true
+  },
+  {
+    "id": "KAV-ГУКӀЭ",
+    "form": "гукӀэ",
+    "tr": "karşılıklı",
+    "en_ham": "1. mentally;\n2. by heart, by rote; усэм ~ къеджэн: to recite the poem; ~ зэгъэщӀэн: to learn by heart",
+    "en_temiz": "1. mentally; 2. by heart, by rote; усэм ~ къеджэн: to recite the poem; ~ зэгъэщӀэн: to learn by heart",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.725,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-K-UESEZHA",
+    "form": "кӀуэсэжа",
+    "tr": "KAÇMA",
+    "en_ham": "1. of кӀуэсэжын 1;\n2. fugitive, runaway",
+    "en_temiz": "1. of кӀуэсэжын 1; 2. fugitive, runaway",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.68,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-DEREGHU",
+    "form": "дэрэгъу",
+    "tr": "AHBAP",
+    "en_ham": "friend, pal; buddy; ~ къэщӀын: to make (smb.) one's ally",
+    "en_temiz": "friend, pal; buddy; ~ къэщӀын: to make (smb.) one's ally",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.838,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-ZEPYRYDZ",
+    "form": "зэпырыдз",
+    "tr": "VOLEYBOL",
+    "en_ham": "checked; щэкӀ ~: checked fabric",
+    "en_temiz": "checked; щэкӀ ~: checked fabric",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.87,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-UBYTKE",
+    "form": "убыткэ",
+    "tr": "açık",
+    "en_ham": "loss; ~ щӀын: to incur a loss",
+    "en_temiz": "loss; ~ щӀын: to incur a loss",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.842,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-PSALHAP-E",
+    "form": "псалъапӀэ",
+    "tr": "KÜRSÜ",
+    "en_ham": "platform, rostrum; псалъапӀэм къыщыпсэлъэн: to speak from the rostrum.",
+    "en_temiz": "platform, rostrum; псалъапӀэм къыщыпсэлъэн: to speak from the rostrum.",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.632,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-L-YKHUZHU",
+    "form": "лӀыхъужьу",
+    "tr": "YIĞITÇE",
+    "en_ham": "heroically; courageously, bravely, valiantly; ~ зэуэн: to fight bravely/valiantly",
+    "en_temiz": "heroically; courageously, bravely, valiantly; ~ зэуэн: to fight bravely/valiantly",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.924,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-F-EMYF-U",
+    "form": "фӀэмыфӀу",
+    "tr": "GÖNÜLSÜZ",
+    "en_ham": "against one's will, against one's desires, wishes; ар абы ~ ещӀэ: he is doing it against his will.",
+    "en_temiz": "against one's will, against one's desires, wishes; ар абы ~ ещӀэ: he is doing it against his will.",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.889,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-VYVOD",
+    "form": "вывод",
+    "tr": "sonuç",
+    "en_ham": "conclusion, inference; deduction; выводхэр къыхэгъэкӀын (щӀын): to draw conclusions",
+    "en_temiz": "conclusion, inference; deduction; выводхэр къыхэгъэкӀын (щӀын): to draw conclusions",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.672,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-IK-A",
+    "form": "икӀа",
+    "tr": "ÇIKIK",
+    "en_ham": "1. of икӀын II;\n2. adj hoarse, husky, raucous; макъ ~: husky voice",
+    "en_temiz": "1. of икӀын II; 2. adj hoarse, husky, raucous; макъ ~: husky voice",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.814,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-DETA",
+    "form": "дэта",
+    "tr": "CILK",
+    "en_ham": "1. of дэтэн;\n2. as adj rotten, bad",
+    "en_temiz": "1. of дэтэн; 2. as adj rotten, bad",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.762,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-IDA",
+    "form": "ида",
+    "tr": "BAŞKAN",
+    "en_ham": "of идэн; дыщэ ~: embroidered in gold",
+    "en_temiz": "of идэн; дыщэ ~: embroidered in gold",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.704,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-KEIUPSHCH-YK-A",
+    "form": "къиупщӀыкӀа",
+    "tr": "Ağızlık imalinde kullanılan ağaç türü",
+    "en_ham": "of къиупщӀыкӀын; жыг ~: felled tree.",
+    "en_temiz": "of къиупщӀыкӀын; жыг ~: felled tree.",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.48,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-UF-YTS-A",
+    "form": "уфӀыцӀа",
+    "tr": "EZIK",
+    "en_ham": "1. of уфӀыцӀын;\n2. bruise",
+    "en_temiz": "1. of уфӀыцӀын; 2. bruise",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.571,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-ERYLHHEU",
+    "form": "Ӏэрылъхьэу",
+    "tr": "NAKDEN",
+    "en_ham": "in cash, in ready money; ~ тын: to pay  in cash, to pay in ready money",
+    "en_temiz": "in cash, in ready money; ~ тын: to pay in cash, to pay in ready money",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.939,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-INSTRUKTAZH",
+    "form": "инструктаж",
+    "tr": "eğitmek",
+    "en_ham": "instructing; briefing; ~ щӀын: to instruct, brief; to give instructions (to)",
+    "en_temiz": "instructing; briefing; ~ щӀын: to instruct, brief; to give instructions (to)",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.947,
+    "has_cyrillic": true
+  },
+  {
+    "id": "KAV-КЪЭЩӀЭНЫГЪЭ",
+    "form": "къэщӀэныгъэ",
+    "tr": "reference",
+    "en_ham": "act. of къэщӀэн\n2.",
+    "en_temiz": "act. of къэщӀэн 2.",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.455,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-SHXAK-UE",
+    "form": "шхакӀуэ",
+    "tr": "YIYICI",
+    "en_ham": "at dinner-time; ~ унэм кӀуэжын: to go home at dinner-time; II\n1. n big eater;\n2. fig grabber; avaricious person",
+    "en_temiz": "at dinner-time; ~ унэм кӀуэжын: to go home at dinner-time; II 1. n big eater; 2. fig grabber; avaricious person",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.873,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-PLOTINE",
+    "form": "плотинэ",
+    "tr": "VİTES",
+    "en_ham": "weir, dam; dike, dyke; ~ ухуэн: to build/construct a dam; see also псыӀущӀэ.",
+    "en_temiz": "weir, dam; dike, dyke; ~ ухуэн: to build/construct a dam; see also псыӀущӀэ.",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.792,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-SPOSOB",
+    "form": "способ",
+    "tr": "Arı öldürücü ilaç",
+    "en_ham": "way, mode; method; see also щӀыкӀэ",
+    "en_temiz": "way, mode; method; see also щӀыкӀэ",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.833,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-KEYXEK-YP-ENSHE",
+    "form": "къыхэкӀыпӀэншэ",
+    "tr": "ENGEL",
+    "en_ham": "hopeless, desperate; щытыкӀэ ~: hopeless/desparate situation/condition.",
+    "en_temiz": "hopeless, desperate; щытыкӀэ ~: hopeless/desparate situation/condition.",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.897,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-AVIATSIE",
+    "form": "авиацие",
+    "tr": "ucak",
+    "en_ham": "aviation; гражданскэ ~: civil aviation.",
+    "en_temiz": "aviation; гражданскэ ~: civil aviation.",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.677,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-SABIINSHE",
+    "form": "сабииншэ",
+    "tr": "childless",
+    "en_ham": "childless; ~ унагъуэ: childless family",
+    "en_temiz": "childless; ~ унагъуэ: childless family",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.774,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-NAROD",
+    "form": "народ",
+    "tr": "yazar",
+    "en_ham": "1.  people, nation;\n2. attr people's; popular; folk; national; ~ уэрэд: popular folk song",
+    "en_temiz": "1. people, nation; 2. attr people's; popular; folk; national; ~ уэрэд: popular folk song",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.919,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-VARENE-KBD",
+    "form": "варенье",
+    "tr": "REÇEL",
+    "en_ham": "preserve(s), jam; зэ ~ :cornel jam",
+    "en_temiz": "preserve(s), jam; зэ ~ :cornel jam",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.913,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-KEELYBYGHUAF-E",
+    "form": "къэлыбыгъуафӀэ",
+    "tr": "ateş",
+    "en_ham": "hot-tempered, irascible; цӀыху ~: irascible person.",
+    "en_temiz": "hot-tempered, irascible; цӀыху ~: irascible person.",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.897,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-GRANITSE",
+    "form": "границэ",
+    "tr": "TAHDIT",
+    "en_ham": "see гъунэ",
+    "en_temiz": "see гъунэ",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.375,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-DZEUZGYN",
+    "form": "дзэузгын",
+    "tr": "Cynoglossum officinale",
+    "en_ham": "see дзэгын",
+    "en_temiz": "see дзэгын",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.333,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-DEZINFEKTSIE",
+    "form": "дезинфекцие",
+    "tr": "BUĞUEVI",
+    "en_ham": "disinfection; ~ щӀын: to disinfect",
+    "en_temiz": "disinfection; ~ щӀын: to disinfect",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.885,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-EGHELHAGHUNYGHE",
+    "form": "егъэлъагъуныгъэ",
+    "tr": "DIREKTIF",
+    "en_ham": "act. of егъэлъагъун",
+    "en_temiz": "act. of егъэлъагъун",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.312,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-SHKOLNIK",
+    "form": "школьник",
+    "tr": "ogrenci",
+    "en_ham": "schoolboy; compare also еджакӀуэ",
+    "en_temiz": "schoolboy; compare also еджакӀуэ",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.741,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-EZESHYGHUE",
+    "form": "езэшыгъуэ",
+    "tr": "BIKKINLIK",
+    "en_ham": "1. tiresome, tiring, wearing, wearisome, fatiguing, exhausting;\n2. dull, boring; пщыхьэщхьэ ~: dull evening",
+    "en_temiz": "1. tiresome, tiring, wearing, wearisome, fatiguing, exhausting; 2. dull, boring; пщыхьэщхьэ ~: dull evening",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.875,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-ERAGHPSERAGHYU",
+    "form": "ерагъпсэрагъыу",
+    "tr": "UCU UCUNA",
+    "en_ham": "see ерагъкӀэ; with great difficulty",
+    "en_temiz": "see ерагъкӀэ; with great difficulty",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.759,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-ET-UANEREY",
+    "form": "етӀуанэрей",
+    "tr": "İkinci",
+    "en_ham": "see етӀуанэ",
+    "en_temiz": "see етӀуанэ",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.333,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-ETXUANEREY",
+    "form": "етхуанэрей",
+    "tr": "Beşinci",
+    "en_ham": "see етхуанэ",
+    "en_temiz": "see етхуанэ",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.3,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-ZHEYNED",
+    "form": "жейнэд",
+    "tr": "UYKUCU",
+    "en_ham": "see жеирей",
+    "en_temiz": "see жеирей",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.333,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-ZHGHYRYB",
+    "form": "жьгъырыб",
+    "tr": "BEKTAŞIÜZÜMBITKISI",
+    "en_ham": "see щхъырыб",
+    "en_temiz": "see щхъырыб",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.3,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-OTVETSTVENNE",
+    "form": "ответственнэ",
+    "tr": "sorumlu",
+    "en_ham": "responsible; ~ редактор: editor-in-chief; ~ лэжьакӀуэ: execu­tive, senior official",
+    "en_temiz": "responsible; ~ редактор: editor-in-chief; ~ лэжьакӀуэ: execu­tive, senior official",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.746,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-ZYUIK",
+    "form": "зыуикӀ",
+    "tr": "HİÇ",
+    "en_ham": "see зыуи",
+    "en_temiz": "see зыуи",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.429,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-KEYXEGHESHCH-EN",
+    "form": "къыхэгъэщӀэн",
+    "tr": "ÇAKMAK",
+    "en_ham": "1. to bend down to the ground;\n2. to beat, overcome (smb.); ныкъуэкъуэгъур ~: to beat/overcome one's rival.",
+    "en_temiz": "1. to bend down to the ground; 2. to beat, overcome (smb.); ныкъуэкъуэгъур ~: to beat/overcome one's rival.",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.813,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-K-UETS-BZHETS",
+    "form": "кӀуэцӀбжьэцӀ",
+    "tr": "İşkembe",
+    "en_ham": "see кӀуэцӀ I",
+    "en_temiz": "see кӀуэцӀ I",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.5,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-KOMISSIE",
+    "form": "комиссие",
+    "tr": "AHDETMEK",
+    "en_ham": "commission, committee; къэзыщтэ ~: selection committee; хэхыныгъэ ~: election committee",
+    "en_temiz": "commission, committee; къэзыщтэ ~: selection committee; хэхыныгъэ ~: election committee",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.761,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-KONFERENTSIE",
+    "form": "конференцие",
+    "tr": "congress",
+    "en_ham": "conference; тхылъ еджэхэм я ~: readers conference",
+    "en_temiz": "conference; тхылъ еджэхэм я ~: readers conference",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.675,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-STOLITSE",
+    "form": "столицэ",
+    "tr": "başkent",
+    "en_ham": "capital, metropolis; Налшык Къэбэрдей Республикэм и столицэщ: Nalchik is the capital of the Republic of Kabarda",
+    "en_temiz": "capital, metropolis; Налшык Къэбэрдей Республикэм и столицэщ: Nalchik is the capital of the Republic of Kabarda",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.624,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-KUELAY",
+    "form": "къулай",
+    "tr": "KOLAYLAMAK",
+    "en_ham": "1.  rich man; rich woman;\n2. attr rich, wealthy; ~ хъун: to grow rich",
+    "en_temiz": "1. rich man; rich woman; 2. attr rich, wealthy; ~ хъун: to grow rich",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.911,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-MARSHYNE",
+    "form": "маршынэ",
+    "tr": "BETONYER",
+    "en_ham": "see машинэ.",
+    "en_temiz": "see машинэ.",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.333,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-POEZD",
+    "form": "поезд",
+    "tr": "banliyö",
+    "en_ham": "train; see also мафӀэгу.",
+    "en_temiz": "train; see also мафӀэгу.",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.667,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-MAXUENYKUEE",
+    "form": "махуэныкъуэ",
+    "tr": "öğle vakti",
+    "en_ham": "noon, midday; махуэныкъуэм: at noon.",
+    "en_temiz": "noon, midday; махуэныкъуэм: at noon.",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.571,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-MEXANIZATSIE",
+    "form": "механизацие",
+    "tr": "MEKANIZASYON",
+    "en_ham": "mechanization; меканизацие щӀын: to mechanize.",
+    "en_temiz": "mechanization; меканизацие щӀын: to mechanize.",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.632,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-SHTIK",
+    "form": "штик",
+    "tr": "Süngü, kasatura",
+    "en_ham": "bayonet; see also мыжурэ, фочпэбж",
+    "en_temiz": "bayonet; see also мыжурэ, фочпэбж",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.519,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-SHK-AMP-YL",
+    "form": "шкӀампӀыл",
+    "tr": "Mantar, tıpa",
+    "en_ham": "cork; plug; cork-stopper; see also пхъэмыф",
+    "en_temiz": "cork; plug; cork-stopper; see also пхъэмыф",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.788,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-VLAST",
+    "form": "власть",
+    "tr": "DESPOTİZM",
+    "en_ham": "power, authority; rule; щӀыпӀэ властхэр: local authorities",
+    "en_temiz": "power, authority; rule; щӀыпӀэ властхэр: local authorities",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.739,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-USLOVIE",
+    "form": "условие",
+    "tr": "MEŞRUT",
+    "en_ham": "condition; see also щытыкӀэ",
+    "en_temiz": "condition; see also щытыкӀэ",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.727,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-REPETITSIE",
+    "form": "репетицие",
+    "tr": "PROVA",
+    "en_ham": "rehearsal; ~ егъэкӀуэкӀын: to rehears",
+    "en_temiz": "rehearsal; ~ егъэкӀуэкӀын: to rehears",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.643,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-ZHUZ",
+    "form": "жуз",
+    "tr": "CÜZ",
+    "en_ham": "ряд сур (глав) корана; къурӀэныр жуз щэщӀу зэхэлъщ коран состоит из 30 жузов. (sur number (s) of the koran; kurienyr horde scheschiu zehelsch quran consists of 30 zhuzes.)",
+    "en_temiz": "ряд сур (глав) корана; къурӀэныр жуз щэщӀу зэхэлъщ коран состоит из 30 жузов. (sur number (s) of the koran; kurienyr horde scheschiu zehelsch quran consists of 30 zhuzes.)",
+    "source": "18.Kbd-Ru&En.json",
+    "english_ratio": 0.555,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-FOTOGRAF",
+    "form": "фотограф",
+    "tr": "FOTOCU",
+    "en_ham": "photographer; see also сурэттех",
+    "en_temiz": "photographer; see also сурэттех",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.704,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-SENVAR",
+    "form": "сэнвар",
+    "tr": "SEMAVER",
+    "en_ham": "1.  samovar;\n2. attr samovar; ~ уэнжакъ: samovar pipe",
+    "en_temiz": "1. samovar; 2. attr samovar; ~ уэнжакъ: samovar pipe",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.806,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-NAKAZANIE",
+    "form": "наказание",
+    "tr": "CEZALI",
+    "en_ham": "punishment; penalty; see тазыр",
+    "en_temiz": "punishment; penalty; see тазыр",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.8,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-PISATEL",
+    "form": "писатель",
+    "tr": "yazar",
+    "en_ham": "writer, author; see тхакӀуэ.",
+    "en_temiz": "writer, author; see тхакӀуэ.",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.714,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-TXYSHE",
+    "form": "тхышэ",
+    "tr": "OMURGASI, EĞRİ",
+    "en_ham": "see тхыбыӀу",
+    "en_temiz": "see тхыбыӀу",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.333,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-ANGINE",
+    "form": "ангинэ",
+    "tr": "Anjin; bademcik",
+    "en_ham": "med. quinsy, tonsillitis; see also тэмакъыдзэ.",
+    "en_temiz": "med. quinsy, tonsillitis; see also тэмакъыдзэ.",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.73,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-PEREVODCHIK",
+    "form": "переводчик",
+    "tr": "TERCÜMAN",
+    "en_ham": "male translator; interpreter; see also зэзыдзэкӀ, тэрмэш.",
+    "en_temiz": "male translator; interpreter; see also зэзыдзэкӀ, тэрмэш.",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.696,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-UGHURLYGHE",
+    "form": "угъурлыгъэ",
+    "tr": "uğurlu, hayırlı",
+    "en_ham": "see угъурлы",
+    "en_temiz": "see угъурлы",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.3,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-STIXOTVORENIE",
+    "form": "стихотворение",
+    "tr": "PARAGRAF",
+    "en_ham": "poem; rhyme; see also усэ",
+    "en_temiz": "poem; rhyme; see also усэ",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.842,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-STRELOK",
+    "form": "стрелок",
+    "tr": "ATICI",
+    "en_ham": "shot; rifleman; av. gunner; see also фочауэ",
+    "en_temiz": "shot; rifleman; av. gunner; see also фочауэ",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.818,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-FYGHUENYGHE",
+    "form": "фыгъуэныгъэ",
+    "tr": "ÇEKEMEMEZLİK",
+    "en_ham": "act. of фыгъуэн",
+    "en_temiz": "act. of фыгъуэн",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.417,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-INFORMATSIE",
+    "form": "информацие",
+    "tr": "ENFORMASYON",
+    "en_ham": "information; ~ къеӀыхын: to obtain information.",
+    "en_temiz": "information; ~ къеӀыхын: to obtain information.",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.811,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-TS-ANTKHUERYGHUE",
+    "form": "цӀантхъуэрыгъуэ",
+    "tr": "slippery",
+    "en_ham": "slippery; гъуэгу ~: slippery road; мыл ~: slippery ice.",
+    "en_temiz": "slippery; гъуэгу ~: slippery road; мыл ~: slippery ice.",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.775,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-SHCH-Y-UGU",
+    "form": "щӀыӀугу",
+    "tr": "Köstebek",
+    "en_ham": "see щӀыӀуб",
+    "en_temiz": "see щӀыӀуб",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.429,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-TYL",
+    "form": "тыл",
+    "tr": "omurga",
+    "en_ham": "rear; бийм и тылым: at the rear of the enemy; see also щӀыб",
+    "en_temiz": "rear; бийм и тылым: at the rear of the enemy; see also щӀыб",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.698,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-OBRAZOVANIE",
+    "form": "образование",
+    "tr": "bilgi, bilim",
+    "en_ham": "education; ику ит ~: secondary education; ~ нэхъыщхьэ: higher edu­cation; university education",
+    "en_temiz": "education; ику ит ~: secondary education; ~ нэхъыщхьэ: higher edu­cation; university education",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.813,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-VOPROS",
+    "form": "вопрос",
+    "tr": "soru",
+    "en_ham": "see упщӀэ",
+    "en_temiz": "see упщӀэ",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.429,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-ADMINISTRATIVNE",
+    "form": "административнэ",
+    "tr": "idari",
+    "en_ham": "administrative; managerial; ~ унафэ: managerial decision.",
+    "en_temiz": "administrative; managerial; ~ унафэ: managerial decision.",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.894,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-AKTSENT",
+    "form": "акцент",
+    "tr": "aksan",
+    "en_ham": "accent; абы ~ иӀэу мэпсалъэ: he speaks with an accent.",
+    "en_temiz": "accent; абы ~ иӀэу мэпсалъэ: he speaks with an accent.",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.65,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-ANTRAKT",
+    "form": "антракт",
+    "tr": "ANTRAKT",
+    "en_ham": "entr’acte, interval, interlude; see also зэпыугъуэ.",
+    "en_temiz": "entr’acte, interval, interlude; see also зэпыугъуэ.",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.78,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-AUKTSION",
+    "form": "аукцион",
+    "tr": "açık artırma",
+    "en_ham": "auction; аукционкӀэ щэн: to sell by auction.",
+    "en_temiz": "auction; аукционкӀэ щэн: to sell by auction.",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.647,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-ZEK-UETS-YPXA",
+    "form": "зэкӀуэцӀыпха",
+    "tr": "PAKET",
+    "en_ham": "bundle; тхылъ ~: a bundle of books",
+    "en_temiz": "bundle; тхылъ ~: a bundle of books",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.8,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-RUDNIK",
+    "form": "рудник",
+    "tr": "GRIZU",
+    "en_ham": "mine, pit; гъуаплъэ рудникхэр: copper mines",
+    "en_temiz": "mine, pit; гъуаплъэ рудникхэр: copper mines",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.514,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-REZERV",
+    "form": "резерв",
+    "tr": "REDIF",
+    "en_ham": "reserve(s); * гуащӀэдэкӀ резервнэр: industrial trainees",
+    "en_temiz": "reserve(s); * гуащӀэдэкӀ резервнэр: industrial trainees",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.605,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-DIVERSIE",
+    "form": "диверсие",
+    "tr": "yıkım",
+    "en_ham": "1.  sabotage, subversive activity; ~ щӀын: to sabotage;\n2. mil. diversion; ~ щӀын: to make a diversion",
+    "en_temiz": "1. sabotage, subversive activity; ~ щӀын: to sabotage; 2. mil. diversion; ~ щӀын: to make a diversion",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.914,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-ZHESHCHNYKUEE",
+    "form": "жэщныкъуэ",
+    "tr": "GECEYARISI",
+    "en_ham": "midnight; жэщныкъуэм: at midnight; жэщныкъуэм куэдкӀэ фӀэкӀауэ: in the small hours",
+    "en_temiz": "midnight; жэщныкъуэм: at midnight; жэщныкъуэм куэдкӀэ фӀэкӀауэ: in the small hours",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.508,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-MASSHTAB",
+    "form": "масштаб",
+    "tr": "MIKYAS",
+    "en_ham": "scale; зы сантиметрым километрищэ хуэзэу арщ масштабыр: scale of 1 cm to 100 km.",
+    "en_temiz": "scale; зы сантиметрым километрищэ хуэзэу арщ масштабыр: scale of 1 cm to 100 km.",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.3,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-INSTRUKTSIE",
+    "form": "инструкцие",
+    "tr": "TALIMAT",
+    "en_ham": "directions; instructions; инструкциемкӀэ оэжьэн: to work in accordance with the instructions",
+    "en_temiz": "directions; instructions; инструкциемкӀэ оэжьэн: to work in accordance with the instructions",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.756,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-YUG",
+    "form": "юг",
+    "tr": "Güney",
+    "en_ham": "see ипщэ",
+    "en_temiz": "see ипщэ",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.429,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-SEVER",
+    "form": "север",
+    "tr": "Kuzey",
+    "en_ham": "north; see also ищхъэрэ",
+    "en_temiz": "north; see also ищхъэрэ",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.632,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-SEVERNE",
+    "form": "севернэ",
+    "tr": "Kuzey",
+    "en_ham": "north; northern; northerly; see also ищхъэрэ",
+    "en_temiz": "north; northern; northerly; see also ищхъэрэ",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.806,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-KAMPANIE",
+    "form": "кампание",
+    "tr": "kampanya",
+    "en_ham": "campaign, drive; хэхыныгъэ ~: election campaign; вэн-сэн ~: sowing campaign",
+    "en_temiz": "campaign, drive; хэхыныгъэ ~: election campaign; вэн-сэн ~: sowing campaign",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.741,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-KARERE",
+    "form": "карьерэ",
+    "tr": "kariyer",
+    "en_ham": "career; ~ щӀын: to make one's career; to make one's way up",
+    "en_temiz": "career; ~ щӀын: to make one's career; to make one's way up",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.925,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-KOKOS",
+    "form": "кокос",
+    "tr": "KUKA",
+    "en_ham": "1.  coconut;\n2. attr coconut; * ~ пальмэ: coconut palm",
+    "en_temiz": "1. coconut; 2. attr coconut; * ~ пальмэ: coconut palm",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.829,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-KONTRREVOLYUTSIE",
+    "form": "контрреволюцие",
+    "tr": "KARŞIDEVRIM",
+    "en_ham": "counter-revolution; контрреволюциер зэхэкъутэм: to crush the counter- revolution",
+    "en_temiz": "counter-revolution; контрреволюциер зэхэкъутэм: to crush the counter- revolution",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.638,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-KRATER",
+    "form": "кратер",
+    "tr": "KRATER",
+    "en_ham": "crater; вулканым и ~: crater of the volcano",
+    "en_temiz": "crater; вулканым и ~: crater of the volcano",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.727,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-GOSUDARSTVENNE",
+    "form": "государственнэ",
+    "tr": "RESMİ",
+    "en_ham": "see къэрал",
+    "en_temiz": "see къэрал",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.333,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-OSNOVE",
+    "form": "основэ",
+    "tr": "Temel",
+    "en_ham": "1.  base; basis; foundation;\n2. gram. stem; псалъэм и ~: stem of the word",
+    "en_temiz": "1. base; basis; foundation; 2. gram. stem; псалъэм и ~: stem of the word",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.833,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-MYSHTSE",
+    "form": "мышцэ",
+    "tr": "kas",
+    "en_ham": "muscle; гум и ~: heart muscle.",
+    "en_temiz": "muscle; гум и ~: heart muscle.",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.81,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-MORALNE-KBD",
+    "form": "моральнэ",
+    "tr": "ahlaki",
+    "en_ham": "moral, ethical; ~ щытыкӀэ: moral make-up.",
+    "en_temiz": "moral, ethical; ~ щытыкӀэ: moral make-up.",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.793,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-MUZYKALNE",
+    "form": "музыкальнэ",
+    "tr": "opera",
+    "en_ham": "musical; ~ еджапӀэ: music-school.",
+    "en_temiz": "musical; ~ еджапӀэ: music-school.",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.75,
+    "has_cyrillic": true
+  },
+  {
+    "id": "KAV-МЫКӀУЭДЫЖ",
+    "form": "мыкӀуэдыж",
+    "tr": "kalici",
+    "en_ham": "see мыкӀуэд.",
+    "en_temiz": "see мыкӀуэд.",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.333,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-PATENT",
+    "form": "патент",
+    "tr": "patent",
+    "en_ham": "patent; изобретением папщӀэ ~ къеӀыхын: to take out a patent for the invention.",
+    "en_temiz": "patent; изобретением папщӀэ ~ къеӀыхын: to take out a patent for the invention.",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.607,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-AKKORDEON",
+    "form": "аккордеон",
+    "tr": "ARMONIK",
+    "en_ham": "accordion; see also пшынэ.",
+    "en_temiz": "accordion; see also пшынэ.",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.762,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-PRIZ",
+    "form": "приз",
+    "tr": "ÖDÜL",
+    "en_ham": "prize; япэ ~: first prize.",
+    "en_temiz": "prize; япэ ~: first prize.",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.833,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-SSYLKE",
+    "form": "ссылкэ",
+    "tr": "referans",
+    "en_ham": "banishment, exile; ~ гъэкӀуэн: to send on exile",
+    "en_temiz": "banishment, exile; ~ гъэкӀуэн: to send on exile",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.8,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-KOMOD",
+    "form": "комод",
+    "tr": "DOLAP",
+    "en_ham": "chest of drawers; compare with сырэ 1 1, 2",
+    "en_temiz": "chest of drawers; compare with сырэ 1 1, 2",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.862,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-TARIF",
+    "form": "тариф",
+    "tr": "TARIFE",
+    "en_ham": "econ. tariff; лэжьапщӀэ тарифхэр: wages/pay tariffs",
+    "en_temiz": "econ. tariff; лэжьапщӀэ тарифхэр: wages/pay tariffs",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.61,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-MORSKOY",
+    "form": "морской",
+    "tr": "deniz kuvvetlerine ait",
+    "en_ham": "sea; marine, nautical; maritime; ~ флот: marine; navy; fleet.",
+    "en_temiz": "sea; marine, nautical; maritime; ~ флот: marine; navy; fleet.",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.909,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-TEORETICHESKE",
+    "form": "теоретическэ",
+    "tr": "ITIBARI",
+    "en_ham": "theoretical; ~ механикэ: theoretical mechanics",
+    "en_temiz": "theoretical; ~ механикэ: theoretical mechanics",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.795,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-TROPICHESKE",
+    "form": "тропическэ",
+    "tr": "tropik",
+    "en_ham": "tropical; ~ къэкӀыгъэ: tropical plant",
+    "en_temiz": "tropical; ~ къэкӀыгъэ: tropical plant",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.724,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-SERNE",
+    "form": "сернэ",
+    "tr": "SIRKE",
+    "en_ham": "sulphuric, sulphurous, sulphury; ~ баннэ: sulphur baths; ~ кислота: sulphuric acid",
+    "en_temiz": "sulphuric, sulphurous, sulphury; ~ баннэ: sulphur baths; ~ кислота: sulphuric acid",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.812,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-KUPOL",
+    "form": "купол",
+    "tr": "KUBBE",
+    "en_ham": "cupola, dome; чылисэм и ~: dome of the church",
+    "en_temiz": "cupola, dome; чылисэм и ~: dome of the church",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.758,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-DUEL",
+    "form": "дуэль",
+    "tr": "DÜELLO",
+    "en_ham": "duel; see щӀакӀуэкӀапэ",
+    "en_temiz": "duel; see щӀакӀуэкӀапэ",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.438,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-FAKTOR",
+    "form": "фактор",
+    "tr": "faktör",
+    "en_ham": "factor; see also Ӏуэкугъуэ 3",
+    "en_temiz": "factor; see also Ӏуэкугъуэ 3",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.619,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-FINANSOVE",
+    "form": "финансовэ",
+    "tr": "finansal",
+    "en_ham": "financial; ~ отчёт: financial account",
+    "en_temiz": "financial; ~ отчёт: financial account",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.833,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-FORMULE",
+    "form": "формулэ",
+    "tr": "formül",
+    "en_ham": "formula; формулэр къыхэгъэкӀын: to deduce the formula",
+    "en_temiz": "formula; формулэр къыхэгъэкӀын: to deduce the formula",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.568,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-SHCHYSHYNYGHE",
+    "form": "щысхьыныгъэ",
+    "tr": "IHTIYAT",
+    "en_ham": "see щысхь",
+    "en_temiz": "see щысхь",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.375,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-SHCHUKE",
+    "form": "щукэ",
+    "tr": "Turna balığı",
+    "en_ham": "pike (fish); see also хьэбдзэжьей",
+    "en_temiz": "pike (fish); see also хьэбдзэжьей",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.577,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-TOBYLYGHU",
+    "form": "тобылыгъу",
+    "tr": "Bambu",
+    "en_ham": "1. bot. viburnum; Viburnum lantana;\n2.  of 1; ~ баш: viburnum stick",
+    "en_temiz": "1. bot. viburnum; Viburnum lantana; 2. of 1; ~ баш: viburnum stick",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.932,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-SHAXMATNE",
+    "form": "шахматнэ",
+    "tr": "TURNUVA",
+    "en_ham": "(of) chess; ~ турнир: chess tournament",
+    "en_temiz": "(of) chess; ~ турнир: chess tournament",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.786,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-YANVAR",
+    "form": "январь",
+    "tr": "Ocak",
+    "en_ham": "1. January;\n2. attr of 1; январь къэхъу щӀыӀэхэр: the frosts of January",
+    "en_temiz": "1. January; 2. attr of 1; январь къэхъу щӀыӀэхэр: the frosts of January",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.633,
+    "has_cyrillic": true
+  },
+  {
+    "id": "KAV-ЩЫМЫӀЭНЫГЪЭ",
+    "form": "щымыӀэныгъэ",
+    "tr": "MAHRUMİYET",
+    "en_ham": "see щымыӀэн",
+    "en_temiz": "see щымыӀэн",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.333,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-KULTURNE",
+    "form": "культурнэ",
+    "tr": "SOSYOKÜLTÜREL",
+    "en_ham": "1. cultural;\n2. cultured; cultivated; educated; цӀыху ~: a cultured person, a man of culture",
+    "en_temiz": "1. cultural; 2. cultured; cultivated; educated; цӀыху ~: a cultured person, a man of culture",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.939,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-ESTETICHESKE",
+    "form": "эстетическэ",
+    "tr": "estetik",
+    "en_ham": "aesthetic; ~ ӀуэхуеплъыкӀэхэр: aesthetic views/opinions.",
+    "en_temiz": "aesthetic; ~ ӀуэхуеплъыкӀэхэр: aesthetic views/opinions.",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.689,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-ERE-KBD",
+    "form": "эрэ",
+    "tr": "IŞIKÖLÇER",
+    "en_ham": "era; ди эрэм япэкӀэ лӀэщӀыгъуэ ещанэм: third century B.C.",
+    "en_temiz": "era; ди эрэм япэкӀэ лӀэщӀыгъуэ ещанэм: third century B.C.",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.405,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-MATERIALNE",
+    "form": "материальнэ",
+    "tr": "SÜBJEKTIVIZM",
+    "en_ham": "philos. material; ~ дунейр: material world, world of matter.",
+    "en_temiz": "philos. material; ~ дунейр: material world, world of matter.",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.87,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-MINERALNE",
+    "form": "минеральнэ",
+    "tr": "ÜSTÜBEÇ",
+    "en_ham": "mineral; ~ удобрениезэр: mineral fertilizers; ~ псы: mineral water.",
+    "en_temiz": "mineral; ~ удобрениезэр: mineral fertilizers; ~ псы: mineral water.",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.712,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-GHEUBENDZHA",
+    "form": "гъэубэнджа",
+    "tr": "EKŞITILMIŞ",
+    "en_ham": "1. of гъэубэнджын;\n2. curds, cottage cheese",
+    "en_temiz": "1. of гъэубэнджын; 2. curds, cottage cheese",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.645,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-KEICHA",
+    "form": "къича",
+    "tr": "KOPMUŞ",
+    "en_ham": "1. of къичын;\n2. scratch.",
+    "en_temiz": "1. of къичын; 2. scratch.",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.6,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-UT-EREZA",
+    "form": "утӀэрэза",
+    "tr": "kıvırmak",
+    "en_ham": "1. of утӀэрэзын;\n2. as adj curly",
+    "en_temiz": "1. of утӀэрэзын; 2. as adj curly",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.6,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-SHCHA",
+    "form": "ща",
+    "tr": "Tahta",
+    "en_ham": "1. cul. stewed;\n2. decomposed, rotted, putrefied, decayed; пхъэбгъу ~: decayed board",
+    "en_temiz": "1. cul. stewed; 2. decomposed, rotted, putrefied, decayed; пхъэбгъу ~: decayed board",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.869,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-ALIMENT",
+    "form": "алимент",
+    "tr": "nafaka",
+    "en_ham": "alimony, maintenance; allowance due to children from father on separation/divorce/desertion; ~ тын: to pay alimony; зыгуэрым ~ къеӀыхын: to receive alimony from smb. ",
+    "en_temiz": "alimony, maintenance; allowance due to children from father on separation/divorce/desertion; ~ тын: to pay alimony; зыгуэрым ~ къеӀыхын: to receive alimony from smb.",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.863,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-BAKALEY",
+    "form": "бакалей",
+    "tr": "BAKKAL",
+    "en_ham": "1. grocery, groceries;\n2.  of 1; ~ тыкуэн: grocer’s (shop)",
+    "en_temiz": "1. grocery, groceries; 2. of 1; ~ тыкуэн: grocer’s (shop)",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.829,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-BARGH",
+    "form": "баргъ",
+    "tr": "PALDIR-KÜLDÜR",
+    "en_ham": "onomatopoeia of gun-fire; bang; ~ жиӀэу топыр уащ: the gun thundered",
+    "en_temiz": "onomatopoeia of gun-fire; bang; ~ жиӀэу топыр уащ: the gun thundered",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.769,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-BARS",
+    "form": "барс",
+    "tr": "PARS",
+    "en_ham": "1. zool. ounce, snow leopard;\n2.  of 1; барсыфэ: skin of snow leopard",
+    "en_temiz": "1. zool. ounce, snow leopard; 2. of 1; барсыфэ: skin of snow leopard",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.848,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-VAUEL",
+    "form": "вауэлӀ",
+    "tr": "Öküz sürücüsü",
+    "en_ham": "see вауэ",
+    "en_temiz": "see вауэ",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.429,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-VODORODNE",
+    "form": "водороднэ",
+    "tr": "HIDROJEN",
+    "en_ham": "hydrogenous; hydrogen; ~ бомбэ: hydrogen bomb, H-bomb",
+    "en_temiz": "hydrogenous; hydrogen; ~ бомбэ: hydrogen bomb, H-bomb",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.878,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-KHESEP",
+    "form": "хъэсэп",
+    "tr": "hayvan",
+    "en_ham": "obs\n1. animal killed by an adherent of a different faith;\n2. see хъэсэпыл",
+    "en_temiz": "obs 1. animal killed by an adherent of a different faith; 2. see хъэсэпыл",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.855,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-DEKU",
+    "form": "дэку",
+    "tr": "TIKAÇ",
+    "en_ham": "kernel of nut; * дэкум хуэдэу къэгъэпцӀэн: to swindle, dupe (smb.); to humbug (smb.)",
+    "en_temiz": "kernel of nut; * дэкум хуэдэу къэгъэпцӀэн: to swindle, dupe (smb.); to humbug (smb.)",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.644,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-ILHETYN",
+    "form": "илъэтын",
+    "tr": "ÇIKMAK, FIRLAMAK",
+    "en_ham": "to fly (out); бзур унэм илъэтащ: the sparrow flew out of the house",
+    "en_temiz": "to fly (out); бзур унэм илъэтащ: the sparrow flew out of the house",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.7,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-ZERYLE",
+    "form": "зэрылэ",
+    "tr": "HOMOJEN",
+    "en_ham": "dyed; * дыщэ ~: gilding, gilt",
+    "en_temiz": "dyed; * дыщэ ~: gilding, gilt",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.789,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-INTELLIGENTNE",
+    "form": "интеллигентнэ",
+    "tr": "MÜNEVVER",
+    "en_ham": "cultured; educated; intellectual; цӀыху ~: cultured/educated person; intellectual",
+    "en_temiz": "cultured; educated; intellectual; цӀыху ~: cultured/educated person; intellectual",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.939,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-KAPITULYATSIE",
+    "form": "капитуляцие",
+    "tr": "IMTIYAZAT",
+    "en_ham": "capitulation; surrender; псалъэмакъыншэ ~: unconditional surrender",
+    "en_temiz": "capitulation; surrender; псалъэмакъыншэ ~: unconditional surrender",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.754,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-KONTURNE",
+    "form": "контурнэ",
+    "tr": "ÇEVREM",
+    "en_ham": "contour, outline; * ~ картэ: skeleton/outline map",
+    "en_temiz": "contour, outline; * ~ картэ: skeleton/outline map",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.865,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-KEEGUVENYGHE",
+    "form": "къэгувэныгъэ",
+    "tr": "TEHIR",
+    "en_ham": "act. of къэгувэн.",
+    "en_temiz": "act. of къэгувэн.",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.385,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-KEEUTKHUA",
+    "form": "къэутхъуа",
+    "tr": "BULANMIŞ",
+    "en_ham": "turbid, muddy; псы ~: turbid water.",
+    "en_temiz": "turbid, muddy; псы ~: turbid water.",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.88,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-MATRIARXALNE",
+    "form": "матриархальнэ",
+    "tr": "anaerkil",
+    "en_ham": "matriarchal; ~ строй: matriarchal system.",
+    "en_temiz": "matriarchal; ~ строй: matriarchal system.",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.848,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-METEOROLOGICHESKE",
+    "form": "метеорологическэ",
+    "tr": "GÖZLEMEVI",
+    "en_ham": "meteorological; ~ станцие: meteorological station.",
+    "en_temiz": "meteorological; ~ станцие: meteorological station.",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.833,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-MOLEKULYARNE",
+    "form": "молекулярнэ",
+    "tr": "MOLEKÜLER",
+    "en_ham": "molecular; ~ хьэлъагъ: molecular weight.",
+    "en_temiz": "molecular; ~ хьэлъагъ: molecular weight.",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.75,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-NATSIONALIZATSIE",
+    "form": "национализацие",
+    "tr": "milli",
+    "en_ham": "nationalization; национализацие щӀын: to nationalize",
+    "en_temiz": "nationalization; национализацие щӀын: to nationalize",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.622,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-P-ASTELHALHE",
+    "form": "пӀастэлъалъэ",
+    "tr": "Dardan yapılan çerkes yemeği",
+    "en_ham": "see пӀастэ",
+    "en_temiz": "see пӀастэ",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.375,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-PONTON",
+    "form": "понтон",
+    "tr": "PONTON",
+    "en_ham": "1. pantoon; pontoon;\n2.  pontoon; ~ лъэмыж: pontoon-bridge.",
+    "en_temiz": "1. pantoon; pontoon; 2. pontoon; ~ лъэмыж: pontoon-bridge.",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.85,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-PRISTAVKE",
+    "form": "приставкэ",
+    "tr": "OLUMSUZLUK",
+    "en_ham": "gram. prefix; ~ зиӀэ: prefixed, having a prefix.",
+    "en_temiz": "gram. prefix; ~ зиӀэ: prefixed, having a prefix.",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.912,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-PSIXIATRICHESKE",
+    "form": "психиатрическэ",
+    "tr": "TIMARHANE",
+    "en_ham": "psychiatric(al); ~ сымаджэщ: mental hospital.",
+    "en_temiz": "psychiatric(al); ~ сымаджэщ: mental hospital.",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.771,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-PSHCH-ENT-A",
+    "form": "пщӀэнтӀа",
+    "tr": "TERLI",
+    "en_ham": "covered in sweat, damp with perspiration, sweaty; шы ~: sweaty horse.",
+    "en_temiz": "covered in sweat, damp with perspiration, sweaty; шы ~: sweaty horse.",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.962,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-SOSTRECH-KBD",
+    "form": "сострэч",
+    "tr": "Ak kavak",
+    "en_ham": "see состреч",
+    "en_temiz": "see состреч",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.3,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-TEMBR",
+    "form": "тембр",
+    "tr": "TINI",
+    "en_ham": "timbre; макъым и ~ гуапэ: pleasant timbre of the voice",
+    "en_temiz": "timbre; макъым и ~ гуапэ: pleasant timbre of the voice",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.714,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-TERMICHESKE",
+    "form": "термическэ",
+    "tr": "TERMIK",
+    "en_ham": "phys., tech. thermal, thermic; термическэкӀэ металлхэр зэхэгъэткӀуэныгъэ: thermal/heat treatment of metals",
+    "en_temiz": "phys., tech. thermal, thermic; термическэкӀэ металлхэр зэхэгъэткӀуэныгъэ: thermal/heat treatment of metals",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.575,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-TRIKOTAZH",
+    "form": "трикотаж",
+    "tr": "TRIKOTAJ",
+    "en_ham": "1.  stockinet, knitted-fabric; jersey;\n2. collect. knitted wear; knitted garments; ~ зыщащӀ фабрикэ: knitted-goods factory",
+    "en_temiz": "1. stockinet, knitted-fabric; jersey; 2. collect. knitted wear; knitted garments; ~ зыщащӀ фабрикэ: knitted-goods factory",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.87,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-USHCHEXUA",
+    "form": "ущэхуа",
+    "tr": "GIZLEMEK",
+    "en_ham": "muffled; макъ ~: muffled voice",
+    "en_temiz": "muffled; макъ ~: muffled voice",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.826,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-F-EYALHE",
+    "form": "фӀеялъэ",
+    "tr": "MEZBELE",
+    "en_ham": "easily soiled; щэкӀ ~: easily soiled fabric",
+    "en_temiz": "easily soiled; щэкӀ ~: easily soiled fabric",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.909,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-FEODALNE",
+    "form": "феодальнэ",
+    "tr": "FEODAL",
+    "en_ham": "feudal; ~ строй: feudal order/system",
+    "en_temiz": "feudal; ~ строй: feudal order/system",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.821,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-FLOTILIE",
+    "form": "флотилие",
+    "tr": "FILOTILLA",
+    "en_ham": "flotilla, small fleet; джейкъэукӀ ~: whaling flottila",
+    "en_temiz": "flotilla, small fleet; джейкъэукӀ ~: whaling flottila",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.786,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-XIRURGICHESKE",
+    "form": "хирургическэ",
+    "tr": "CERRAHÎ",
+    "en_ham": "surgical; ~ клиникэ: surgical clinic",
+    "en_temiz": "surgical; ~ клиникэ: surgical clinic",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.759,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-KHUSHCHA",
+    "form": "хъуща",
+    "tr": "OLGUN",
+    "en_ham": "overripe; хъарбыз ~: overripe water-melon",
+    "en_temiz": "overripe; хъарбыз ~: overripe water-melon",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.788,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-SHIFON",
+    "form": "шифон",
+    "tr": "ŞIFON",
+    "en_ham": "1.  chiffon;\n2. attr of 1; ~ бостеиплӀэ: chiffon blouse",
+    "en_temiz": "1. chiffon; 2. attr of 1; ~ бостеиплӀэ: chiffon blouse",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.743,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-ETIMOLOGICHESKE",
+    "form": "этимологическэ",
+    "tr": "ETIMOLOJIK",
+    "en_ham": "ling. etymological; ~ словарь: etymological dictionary",
+    "en_temiz": "ling. etymological; ~ словарь: etymological dictionary",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.844,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-ME-KBD",
+    "form": "-мэ",
+    "tr": "EĞER",
+    "en_ham": "~мэ conditional suffix.",
+    "en_temiz": "~мэ conditional suffix.",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.895,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-SEVERO-VOSTOK",
+    "form": "северо-восток",
+    "tr": "Kuzey Doğu",
+    "en_ham": "north-east; see also ищхъэрэ-къуэкӀыпӀэ",
+    "en_temiz": "north-east; see also ищхъэрэ-къуэкӀыпӀэ",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.516,
+    "has_cyrillic": true
+  },
+  {
+    "id": "L-SEVERO-ZAPAD",
+    "form": "северо-запад",
+    "tr": "Kuzey Batı",
+    "en_ham": "north-west; see also ищхъэрэ-къухьэпӀэ",
+    "en_temiz": "north-west; see also ищхъэрэ-къухьэпӀэ",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.516,
+    "has_cyrillic": true
+  },
+  {
+    "id": "",
+    "form": "батэкъутэ",
+    "tr": "yorma",
+    "en_ham": "see батэ",
+    "en_temiz": "see батэ",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.429,
+    "has_cyrillic": true
+  },
+  {
+    "id": "",
+    "form": "губгъуэжыхапхъэ",
+    "tr": "bot",
+    "en_ham": "аmbrosia artemisiifolia",
+    "en_temiz": "аmbrosia artemisiifolia",
+    "source": "18.Kbd-Ru&En.json",
+    "english_ratio": 0.955,
+    "has_cyrillic": true
+  },
+  {
+    "id": "",
+    "form": "духовкэ",
+    "tr": "fırın",
+    "en_ham": "духовка (oven)",
+    "en_temiz": "духовка (oven)",
+    "source": "18.Kbd-Ru&En.json",
+    "english_ratio": 0.364,
+    "has_cyrillic": true
+  },
+  {
+    "id": "",
+    "form": "ерсын",
+    "tr": "yüzmek",
+    "en_ham": "(йорс) неперех. гл. см. ((yors) nepereh. ch. cm.)",
+    "en_temiz": "(йорс) не ((yors) nepereh. ch. cm.)",
+    "source": "18.Kbd-Ru&En.json",
+    "english_ratio": 0.714,
+    "has_cyrillic": true
+  },
+  {
+    "id": "",
+    "form": "жыпӀэнщи",
+    "tr": "birlik",
+    "en_ham": "союз что касается, если сказать; мэкъуауэ гъакӀуэ жыпӀэнущи, шэмэдж ӀыгъыкӀэ ищӀэркъым сказать, чтоб послать на сенокос, (он) не умеет держать косу. (union with regard to when to say; mekuaue gakiue zhypienuschi, shemedzh iygykie ischierkym told to send to the hay, (he) does not know how to keep the braid.)",
+    "en_temiz": "союз что касается, если сказать; мэкъуауэ гъакӀуэ жыпӀэнущи, шэмэдж ӀыгъыкӀэ ищӀэркъым сказать, чтоб послать на сенокос, (он) не умеет держать косу. (union with regard to when to say; mekuaue gakiue zhypienuschi, shemedzh iygykie ischierkym told to send to the hay, (he) does not know how to keep the braid.)",
+    "source": "18.Kbd-Ru&En.json",
+    "english_ratio": 0.519,
+    "has_cyrillic": true
+  },
+  {
+    "id": "",
+    "form": "зыӀэн",
+    "tr": "mücadele",
+    "en_ham": "(зоӀэ) см.  Ӏуэгум узэрыдэкӀыу зыӀэн нэхъ Ӏуэху уиӀэкъым, зофыщӀыжри укъысхуокӀуэж. лъэб. ((zoie) cm. iuegum uzerydekiyu zyien neh iuehu uiiekym, zofyschiyzhri ukyskhuokiuezh. leb.)",
+    "en_temiz": "(зоӀэ) Ӏуэгум узэрыдэкӀыу зыӀэн нэхъ Ӏуэху уиӀэкъым, зофыщӀыжри укъысхуокӀуэж. лъэб. ((zoie) cm. iuegum uzerydekiyu zyien neh iuehu uiiekym, zofyschiyzhri ukyskhuokiuezh. leb.)",
+    "source": "18.Kbd-Ru&En.json",
+    "english_ratio": 0.541,
+    "has_cyrillic": true
+  },
+  {
+    "id": "",
+    "form": "зыгъэпсэхукӀэ",
+    "tr": "çeşit",
+    "en_ham": "вид отдыха (kind)",
+    "en_temiz": "вид отдыха (kind)",
+    "source": "18.Kbd-Ru&En.json",
+    "english_ratio": 0.308,
+    "has_cyrillic": true
+  },
+  {
+    "id": "",
+    "form": "кӀий",
+    "tr": "yaygara",
+    "en_ham": "крик. (cry.)",
+    "en_temiz": "крик. (cry.)",
+    "source": "18.Kbd-Ru&En.json",
+    "english_ratio": 0.429,
+    "has_cyrillic": true
+  },
+  {
+    "id": "",
+    "form": "къазмакъей",
+    "tr": "bot",
+    "en_ham": "pippоhae rhamnoides ",
+    "en_temiz": "pippоhae rhamnoides",
+    "source": "18.Kbd-Ru&En.json",
+    "english_ratio": 0.944,
+    "has_cyrillic": true
+  },
+  {
+    "id": "",
+    "form": "къэзмакънэпцӀ",
+    "tr": "bot",
+    "en_ham": "elaeаgnus augustifolia ",
+    "en_temiz": "elaeаgnus augustifolia",
+    "source": "18.Kbd-Ru&En.json",
+    "english_ratio": 0.952,
+    "has_cyrillic": true
+  },
+  {
+    "id": "",
+    "form": "обой",
+    "tr": "halvet",
+    "en_ham": "обой (oboj)",
+    "en_temiz": "обой (oboj)",
+    "source": "18.Kbd-Ru&En.json",
+    "english_ratio": 0.5,
+    "has_cyrillic": true
+  },
+  {
+    "id": "",
+    "form": "пут",
+    "tr": "ucuz",
+    "en_ham": "пуд (pood)",
+    "en_temiz": "пуд (pood)",
+    "source": "18.Kbd-Ru&En.json",
+    "english_ratio": 0.571,
+    "has_cyrillic": true
+  },
+  {
+    "id": "",
+    "form": "сэрсэлам",
+    "tr": "bot",
+    "en_ham": "бот. мятлик (poa ) (bot. kentucky bluegrass (poa))",
+    "en_temiz": "бот. мятлик (poa ) (bot. kentucky bluegrass (poa))",
+    "source": "18.Kbd-Ru&En.json",
+    "english_ratio": 0.743,
+    "has_cyrillic": true
+  },
+  {
+    "id": "",
+    "form": "усэрэж",
+    "tr": "olmak",
+    "en_ham": "провидец (seer)",
+    "en_temiz": "провидец (seer)",
+    "source": "18.Kbd-Ru&En.json",
+    "english_ratio": 0.333,
+    "has_cyrillic": true
+  },
+  {
+    "id": "",
+    "form": "цӀынэу",
+    "tr": "yemek",
+    "en_ham": "1) есть в сыром, свежем виде. лыр цӀынэу шхын. 2) поедом есть кого-л. (1) eat raw, fresh. lyr tsiynaeu shhyn. 2) i have a go at having smb.)",
+    "en_temiz": "1) есть в сыром, свежем виде. лыр цӀынэу шхын. 2) поедом есть кого-л. (1) eat raw, fresh. lyr tsiynaeu shhyn. 2) i have a go at having smb.)",
+    "source": "18.Kbd-Ru&En.json",
+    "english_ratio": 0.495,
+    "has_cyrillic": true
+  },
+  {
+    "id": "",
+    "form": "ӀэкӀуэлъакӀуагъ",
+    "tr": "{'meaning': 'beceri', 'examples': []}",
+    "en_ham": "(э)  ability, skill, craftsmanship,  workmanship; adroitness, dexterity, deftness",
+    "en_temiz": "(э) ability, skill, craftsmanship, workmanship; adroitness, dexterity, deftness",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.984,
+    "has_cyrillic": true
+  },
+  {
+    "id": "",
+    "form": "жыжьагъ",
+    "tr": "{'meaning': 'mesafe', 'examples': []}",
+    "en_ham": "(э)  distance; range; топышэр зыдынэлъэтысым и ~: range of the gun-shell",
+    "en_temiz": "(э) distance; range; топышэр зыдынэлъэтысым и ~: range of the gun-shell",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.574,
+    "has_cyrillic": true
+  },
+  {
+    "id": "",
+    "form": "ищӀагъ",
+    "tr": "{'meaning': 'altında', 'examples': []}",
+    "en_ham": "1.  lower; ~ къыт: ground floor;\n2. adv below; underneath; downstairs; * ищӀагъым къыщыщӀэдзауэ ищӀыӀум нэс: from top to bottom",
+    "en_temiz": "1. lower; ~ къыт: ground floor; 2. adv below; underneath; downstairs; * ищӀагъым къыщыщӀэдзауэ ищӀыӀум нэс: from top to bottom",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.656,
+    "has_cyrillic": true
+  },
+  {
+    "id": "",
+    "form": "лантӀагъ",
+    "tr": "{'meaning': 'esneklik', 'examples': []}",
+    "en_ham": "(э)  suppleness; flexibility; pliability, pliancy",
+    "en_temiz": "(э) suppleness; flexibility; pliability, pliancy",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.974,
+    "has_cyrillic": true
+  },
+  {
+    "id": "",
+    "form": "пагагъ",
+    "tr": "{'meaning': 'gurur', 'examples': []}",
+    "en_ham": "(э) pride; haughtiness, arrogance, superciliousness.",
+    "en_temiz": "(э) pride; haughtiness, arrogance, superciliousness.",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.976,
+    "has_cyrillic": true
+  },
+  {
+    "id": "",
+    "form": "тыншагъ",
+    "tr": "{'meaning': 'kolaylık', 'examples': []}",
+    "en_ham": "1. easy, comfortable, cosy;\n2. easy, light; лэжьыгъэ ~: easy/light/simple work",
+    "en_temiz": "1. easy, comfortable, cosy; 2. easy, light; лэжьыгъэ ~: easy/light/simple work",
+    "source": "17.Kbd-En_Amjad.json",
+    "english_ratio": 0.855,
+    "has_cyrillic": true
+  }
+]

@@ -1,0 +1,142 @@
+[
+  {
+    "rootId": "R-MY",
+    "rootForm": "мы",
+    "lexemes": [
+      {
+        "id": "L-MY",
+        "form": "мы",
+        "tr": "Bu (işaret) / Olumsuzluk",
+        "currentRoots": []
+      }
+    ]
+  },
+  {
+    "rootId": "R-SHHXHEL",
+    "rootForm": "щхьэл",
+    "lexemes": [
+      {
+        "id": "L-SHHXHEL",
+        "form": "щхьэл",
+        "tr": "degirmen",
+        "currentRoots": []
+      }
+    ]
+  },
+  {
+    "rootId": "R-LI",
+    "rootForm": "лы",
+    "lexemes": [
+      {
+        "id": "L-LY",
+        "form": "лы",
+        "tr": "et",
+        "currentRoots": [
+          "R-LY"
+        ]
+      }
+    ]
+  },
+  {
+    "rootId": "R-GHWSCHE-DRY",
+    "rootForm": "гъущэ",
+    "lexemes": [
+      {
+        "id": "L-GHUSHCHE",
+        "form": "гъущэ",
+        "tr": "kuru",
+        "currentRoots": [
+          "R-SHE"
+        ]
+      }
+    ]
+  },
+  {
+    "rootId": "R-GHAVE",
+    "rootForm": "гъавэ",
+    "lexemes": [
+      {
+        "id": "L-GHAVE",
+        "form": "гъавэ",
+        "tr": "hububat",
+        "currentRoots": [
+          "R-GHATXE"
+        ]
+      }
+    ]
+  },
+  {
+    "rootId": "R-1ENE",
+    "rootForm": "ӏэнэ",
+    "lexemes": [
+      {
+        "id": "L-1ENE",
+        "form": "ӏэнэ",
+        "tr": "masa, sofra",
+        "currentRoots": [
+          "R-1E"
+        ]
+      }
+    ]
+  },
+  {
+    "rootId": "R-TKHEMAKHUE",
+    "rootForm": "тхьэмахуэ",
+    "lexemes": [
+      {
+        "id": "L-TKHEMAKHUE",
+        "form": "тхьэмахуэ",
+        "tr": "hafta",
+        "currentRoots": [
+          "R-MAXWA"
+        ]
+      },
+      {
+        "id": "L-TKHEMAKHUE-SUNDAY",
+        "form": "тхьэмахуэ",
+        "tr": "hafta",
+        "currentRoots": [
+          "R-TKHE",
+          "R-MAXWA"
+        ]
+      },
+      {
+        "id": "L-TKHEMAKHUE-WEEK",
+        "form": "тхьэмахуэ",
+        "tr": "hafta",
+        "currentRoots": [
+          "R-TKHE",
+          "R-MAXWA"
+        ]
+      }
+    ]
+  },
+  {
+    "rootId": "R-TKHEGHE",
+    "rootForm": "тхьэгъу",
+    "lexemes": [
+      {
+        "id": "L-THEGHU",
+        "form": "тхьэгъу",
+        "tr": "KÜPE",
+        "currentRoots": [
+          "R-TKHE"
+        ]
+      }
+    ]
+  },
+  {
+    "rootId": "R-ALTEС",
+    "rootForm": "алътес",
+    "lexemes": [
+      {
+        "id": "L-VERIFIED-00729",
+        "form": "алътес",
+        "tr": "1. satin;\n2.  satin.",
+        "currentRoots": [
+          "R-ALTEC"
+        ]
+      }
+    ]
+  }
+]

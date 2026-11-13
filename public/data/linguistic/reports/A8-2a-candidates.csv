@@ -1,0 +1,86 @@
+﻿Grup,ID,Form,POS,Concept,Frek,Kanıt,Öneri,Gerekçe
+WF-KHUN,L-KHUN-3,хъун,noun,,2484,A - Açık,APPROVE,kök form
+WF-KHUN,L-VERIFIED-00006,хъурае,noun,,8,B - Bileşik Şüphesi,REVIEW,bileşik olabilir
+WF-KHUN,L-VERIFIED-00384,хъурджауэ,noun,,7,B - Belirsiz,REVIEW,kanıt yetersiz
+WF-KHUN,L-VERIFIED-00469,хъудыр,noun,,7,B - Bileşik Şüphesi,REVIEW,bileşik olabilir
+WF-KHUN,L-VERIFIED-00989,хъуагъэщагъэ,noun,,6,A - Açık,APPROVE,türev eki
+WF-KHUN,L-VERIFIED-01044,хъункъэ,noun,,6,B - Belirsiz,REVIEW,kanıt yetersiz
+WF-KHUN,L-VERIFIED-01175,хъужу,noun,,6,B - Belirsiz,REVIEW,kanıt yetersiz
+WF-KHUN,L-VERIFIED-01293,хъужыныгъэ,noun,,6,A - Açık,APPROVE,türev eki
+WF-KHUN,L-VERIFIED-01338,хъунба,noun,,6,B - Belirsiz,REVIEW,kanıt yetersiz
+WF-KHUN,L-VERIFIED-01548,хъулъфыгъ,noun,,6,B - Bileşik Şüphesi,REVIEW,bileşik olabilir
+WF-KHUN,L-VERIFIED-01560,хъупкъэ,noun,,6,B - Belirsiz,REVIEW,kanıt yetersiz
+WF-KHUN,L-VERIFIED-01596,хъуахуэ,noun,,5,B - Belirsiz,REVIEW,kanıt yetersiz
+WF-KHUN,L-VERIFIED-01907,хъуреягъ,adverb,,5,B - Belirsiz,REVIEW,kanıt yetersiz
+WF-KHUN,L-VERIFIED-02063,хъугъуей,noun,,5,B - Belirsiz,REVIEW,kanıt yetersiz
+WF-KHUN,L-KBD-04768,хъуа-щӏа,noun,,0,B - Belirsiz,REVIEW,kanıt yetersiz
+WF-KHUN,L-KBD-04769,хъуакӏуэ,noun,,0,B - Belirsiz,REVIEW,kanıt yetersiz
+WF-KHUN,L-KBD-04770,хъуакӏуэш,noun,,0,B - Belirsiz,REVIEW,kanıt yetersiz
+WF-KHUN,L-KBD-04773,хъуапсагъэ,noun,,0,A - Açık,APPROVE,türev eki
+WF-KHUN,L-KBD-04775,хъубжапхъэ,,,0,B - Bileşik Şüphesi,REVIEW,bileşik olabilir
+WF-KHUN,L-KBD-04777,хъудз,noun,,0,B - Belirsiz,REVIEW,kanıt yetersiz
+WF-KHUN,L-KBD-04778,хъудырыпс,noun,,0,B - Bileşik Şüphesi,REVIEW,bileşik olabilir
+WF-KHUN,L-KBD-04779,хъужэн,verb,,0,B - Belirsiz,REVIEW,kanıt yetersiz
+WF-KHUN,L-KBD-04794,хъуп,noun,,0,B - Belirsiz,REVIEW,kanıt yetersiz
+WF-KHUN,L-KBD-04796,хъурмей,noun,,0,B - Belirsiz,REVIEW,kanıt yetersiz
+WF-KHUN,L-KBD-04797,хъурмэт,noun,,0,B - Belirsiz,REVIEW,kanıt yetersiz
+WF-KHUN,L-KBD-04798,хъуромэ,noun,,0,B - Belirsiz,REVIEW,kanıt yetersiz
+WF-KHUN,L-KBD-04799,хъурц,interjection,,0,B - Belirsiz,REVIEW,kanıt yetersiz
+WF-KHUN,L-KBD-04801,хъурывэ,noun,,0,B - Belirsiz,REVIEW,kanıt yetersiz
+WF-KHUN,L-KBD-04806,хъуцацэ,noun,,0,B - Belirsiz,REVIEW,kanıt yetersiz
+WF-KHUN,L-KBD-04818,хъуэхъуакӏуэ,noun,,0,B - Belirsiz,REVIEW,kanıt yetersiz
+WF-ZEKHE,L-ZEKHUDENYGHE,зэхуэдэныгъэ,noun,EQUALITY,16,B - Belirsiz,REVIEW,kanıt yetersiz
+WF-ZEKHE,L-VERIFIED-00041,зэхэтэкъон,noun,,8,B - Belirsiz,REVIEW,kanıt yetersiz
+WF-ZEKHE,L-VERIFIED-00305,зэхэкъута,noun,,7,B - Bileşik Şüphesi,REVIEW,bileşik olabilir
+WF-ZEKHE,L-VERIFIED-00452,зэхъурджэуэн,verb,,7,B - Belirsiz,REVIEW,kanıt yetersiz
+WF-ZEKHE,L-VERIFIED-00516,зэхэфыгъэ,noun,,7,B - Belirsiz,REVIEW,kanıt yetersiz
+WF-ZEKHE,L-VERIFIED-00526,зэхэон,noun,,7,B - Belirsiz,REVIEW,kanıt yetersiz
+WF-ZEKHE,L-VERIFIED-00613,зэхэфын,noun,,7,B - Belirsiz,REVIEW,kanıt yetersiz
+WF-ZEKHE,L-VERIFIED-00660,зэхэгъэхьан,noun,,7,B - Belirsiz,REVIEW,kanıt yetersiz
+WF-ZEKHE,L-VERIFIED-00765,зэхуэхьэса,noun,,6,B - Belirsiz,REVIEW,kanıt yetersiz
+WF-ZEKHE,L-VERIFIED-00902,зэхэмыбз,noun,,6,B - Belirsiz,REVIEW,kanıt yetersiz
+WF-ZEKHE,L-VERIFIED-00905,зэхэбзеен,noun,,6,B - Belirsiz,REVIEW,kanıt yetersiz
+WF-ZEKHE,L-VERIFIED-00940,зэхуэдэн,verb,,6,B - Belirsiz,REVIEW,kanıt yetersiz
+WF-ZEKHE,L-VERIFIED-01365,зэхэщагъэ,noun,,6,B - Belirsiz,REVIEW,kanıt yetersiz
+WF-ZEKHE,L-VERIFIED-01461,зэхэцунтхъэн,noun,,6,B - Belirsiz,REVIEW,kanıt yetersiz
+WF-ZEKHE,L-VERIFIED-01666,зэхуэдзысын,verb,,5,B - Belirsiz,REVIEW,kanıt yetersiz
+WF-ZEKHE,L-VERIFIED-02134,зэхэзежэн,verb,,5,B - Belirsiz,REVIEW,kanıt yetersiz
+WF-ZEKHE,L-VERIFIED-02313,зэхэзэрыхьын,verb,,5,B - Belirsiz,REVIEW,kanıt yetersiz
+WF-ZEKHE,L-VERIFIED-02337,зэхуэмыдиз,noun,,5,B - Belirsiz,REVIEW,kanıt yetersiz
+WF-ZEKHE,L-VERIFIED-02511,зэхэугъоен,noun,,5,B - Belirsiz,REVIEW,kanıt yetersiz
+WF-ZEKHE,L-VERIFIED-02672,зэхэтэкъун,noun,,5,B - Bileşik Şüphesi,REVIEW,bileşik olabilir
+WF-ZEKHE,L-PLANT-009,зэхьфиран,noun,,0,B - Belirsiz,REVIEW,kanıt yetersiz
+DIGER,L-PQY,пкъы,noun,,95,B - Belirsiz,REVIEW,kanıt yetersiz
+DIGER,L-NYSE,нысэ,noun,BRIDE,57,B - Belirsiz,REVIEW,kanıt yetersiz
+DIGER,L-UZYNSHAGHE,узыншагъэ,noun,SAGLIK,15,B - Belirsiz,REVIEW,kanıt yetersiz
+DIGER,L-LYUZ,Лыуз,noun,COMPASSION_PAIN,8,B - Belirsiz,REVIEW,kanıt yetersiz
+DIGER,L-VERIFIED-00427,узыгъуэ,noun,,7,B - Belirsiz,REVIEW,kanıt yetersiz
+DIGER,L-VERIFIED-00444,нысэгъу,noun,SISTER_IN_LAW,7,B - Belirsiz,REVIEW,kanıt yetersiz
+DIGER,L-VERIFIED-00776,иран,noun,,6,B - Belirsiz,REVIEW,kanıt yetersiz
+DIGER,L-VERIFIED-00885,сумкэ,noun,CANTA,6,B - Belirsiz,REVIEW,kanıt yetersiz
+DIGER,L-VERIFIED-01379,узыгъэл,noun,,6,B - Belirsiz,REVIEW,kanıt yetersiz
+DIGER,L-VERIFIED-01479,пцэкъэнтф,noun,,6,B - Belirsiz,REVIEW,kanıt yetersiz
+DIGER,L-VERIFIED-01623,пкърыгъэхьэн,noun,,5,B - Belirsiz,REVIEW,kanıt yetersiz
+DIGER,L-VERIFIED-01732,ягъэбагъуэ,noun,,5,B - Belirsiz,REVIEW,kanıt yetersiz
+DIGER,L-VERIFIED-01744,мастер,noun,,5,B - Belirsiz,REVIEW,kanıt yetersiz
+DIGER,L-VERIFIED-01758,бохъу,noun,,5,B - Belirsiz,REVIEW,kanıt yetersiz
+DIGER,L-VERIFIED-01774,макъей,noun,,5,B - Belirsiz,REVIEW,kanıt yetersiz
+DIGER,L-VERIFIED-02093,масил,noun,,5,B - Belirsiz,REVIEW,kanıt yetersiz
+DIGER,L-VERIFIED-02256,ахъуэ,noun,,5,B - Belirsiz,REVIEW,kanıt yetersiz
+DIGER,L-VERIFIED-02334,ахъо,noun,,5,B - Belirsiz,REVIEW,kanıt yetersiz
+DIGER,L-PROMPT-00016,лыуз,noun,COMPASSION,0,B - Belirsiz,REVIEW,kanıt yetersiz
+DIGER,L-KBD-00303,ахъи-быхъи,noun,,0,B - Belirsiz,REVIEW,kanıt yetersiz
+DIGER,L-KBD-00304,ахъий,noun,,0,B - Belirsiz,REVIEW,kanıt yetersiz
+DIGER,L-KBD-03474,макӏуэ-мэлъей,noun,,0,B - Bileşik Şüphesi,REVIEW,bileşik olabilir
+DIGER,L-KBD-03475,макъыжь,noun,,0,B - Belirsiz,REVIEW,kanıt yetersiz
+DIGER,L-KBD-03666,нысапхъэ,noun,,0,B - Bileşik Şüphesi,REVIEW,bileşik olabilir
+DIGER,L-KBD-03668,нысэлъыхъу,noun,MARRIAGE,0,B - Bileşik Şüphesi,REVIEW,bileşik olabilir
+DIGER,L-KBD-03825,пкъожьей,noun,,0,B - Belirsiz,REVIEW,kanıt yetersiz
+DIGER,L-KBD-03826,пкърызэгъэн,verb,,0,B - Belirsiz,REVIEW,kanıt yetersiz
+DIGER,L-KBD-03827,пкърыкӏын,verb,,0,B - Belirsiz,REVIEW,kanıt yetersiz
+DIGER,L-KBD-03831,пкърыхуэн,verb,,0,B - Belirsiz,REVIEW,kanıt yetersiz
+DIGER,L-KBD-03835,пкъырыпкъ,noun,,0,B - Belirsiz,REVIEW,kanıt yetersiz
+DIGER,L-KBD-03838,пкъыхэ,noun,,0,B - Belirsiz,REVIEW,kanıt yetersiz
+DIGER,L-KBD-04457,узыхь,noun,,0,B - Belirsiz,REVIEW,kanıt yetersiz
+DIGER,L-KBD-05688,макушка,,,0,B - Belirsiz,REVIEW,kanıt yetersiz
+DIGER,KAV-ХЬЭРИКЪ,хьэрикъ,noun,CROOKEDLY,0,B - Belirsiz,REVIEW,kanıt yetersiz

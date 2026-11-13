@@ -1,0 +1,2256 @@
+[
+    {
+        "ID":  "L-KUANDZH",
+        "Form":  "къандж",
+        "Anlam":  "Saksağan",
+        "POS":  "noun",
+        "Notlar":  "Aig (2006); Tharkaho (1991); Lash (2013); Enstitusu (2011)"
+    },
+    {
+        "ID":  "L-AU",
+        "Form":  "ау",
+        "Anlam":  "Ama, fakat, lakin",
+        "POS":  "conjunction",
+        "Notlar":  "Corpus v1.0 (freq: 3853, lang: ady, source: 0.Ady-Ady_AIG) Bağlaç Batı Adıgece bağlacı (Kabardeyce karşılığı: ауэ)"
+    },
+    {
+        "ID":  "L-TE",
+        "Form":  "тэ",
+        "Anlam":  "Nerede / Nereye?",
+        "POS":  "ADVERB",
+        "Notlar":  "Corpus v1.0 (freq: 2873, lang: ady, source: 0.Ady-Ady_AIG) Batı Adıgecesi soru zamiri Batı Adıgece soru zamiri (Kabardeyce karşılığı: дэнэ)"
+    },
+    {
+        "ID":  "L-MYR",
+        "Form":  "мыр",
+        "Anlam":  "Bu, işte bu",
+        "POS":  "pronoun",
+        "Notlar":  "Corpus v1.0 (freq: 734, lang: kbd, source: 0.Ady-Ady_AIG) Yalın durum zamiri"
+    },
+    {
+        "ID":  "L-MYSHCH",
+        "Form":  "мыщ",
+        "Anlam":  "bunca",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 (freq: 639, lang: ady, source: 0.Ady-Ady_AIG)"
+    },
+    {
+        "ID":  "L-IT",
+        "Form":  "ит",
+        "Anlam":  "içinde duruyor, bulunuyor",
+        "POS":  "POSTPOSITION",
+        "Notlar":  "Corpus v1.0 (freq: 307, lang: ady, source: 17.Kbd-En_Amjad)"
+    },
+    {
+        "ID":  "L-TI",
+        "Form":  "ти",
+        "Anlam":  "our",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 (freq: 259, lang: ady, source: 0.Ady-Ady_AIG)"
+    },
+    {
+        "ID":  "L-AUZH",
+        "Form":  "ауж",
+        "Anlam":  "izinde, peşinde, arkasında",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 (freq: 192, lang: ady, source: 4.Ady-En_Adam)"
+    },
+    {
+        "ID":  "L-TY",
+        "Form":  "ты",
+        "Anlam":  "Baba, ata",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 (freq: 162, lang: ady, source: 0.Ady-Ady_AIG)"
+    },
+    {
+        "ID":  "L-ARI",
+        "Form":  "ари",
+        "Anlam":  "da, de, dahi̇",
+        "POS":  "particle",
+        "Notlar":  "Corpus v1.0 (freq: 152, lang: kbd, source: 1.Ady-Ady_AP)"
+    },
+    {
+        "ID":  "L-ORY",
+        "Form":  "оры",
+        "Anlam":  "senben",
+        "POS":  "PRONOUN",
+        "Notlar":  "Corpus v1.0 (freq: 128, lang: ady, source: 2.Ady-Ara)"
+    },
+    {
+        "ID":  "L-PAY",
+        "Form":  "пай",
+        "Anlam":  "agrega",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 (freq: 122, lang: ady, source: 0.Ady-Ady_AIG)"
+    },
+    {
+        "ID":  "L-UTS-ADY",
+        "Form":  "уц",
+        "Anlam":  "Dereotu, tereotu",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 (freq: 101, lang: ady, source: 4.Ady-En_Adam)"
+    },
+    {
+        "ID":  "L-KUUUE",
+        "Form":  "куууэ",
+        "Anlam":  "Derin",
+        "POS":  "adverb",
+        "Notlar":  "Corpus v1.0 (freq: 92, lang: kbd, source: 1.Ady-Ady_AP)"
+    },
+    {
+        "ID":  "L-LYE",
+        "Form":  "лые",
+        "Anlam":  "fazlalık",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 (freq: 87, lang: ady, source: 0.Ady-Ady_AIG)"
+    },
+    {
+        "ID":  "L-KUU",
+        "Form":  "куу",
+        "Anlam":  "Derin",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 (freq: 86, lang: kbd, source: 0.Ady-Ady_AIG) | Kaynak: sukunov-1998 | Kavram \u0027UNKNOWN\u0027 geçersiz (sayı/gün/ay/belirsiz) olduğu için boşaltıldı."
+    },
+    {
+        "ID":  "L-IS",
+        "Form":  "ис",
+        "Anlam":  "içinde",
+        "POS":  "POSTPOSITION",
+        "Notlar":  "Corpus v1.0 (freq: 83, lang: ady, source: 30.Ady-Rus_ThreeVolumes)"
+    },
+    {
+        "ID":  "L-CHAN",
+        "Form":  "чан",
+        "Anlam":  "keskin, sivri, çevik",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 (freq: 80, lang: ady, source: 0.Ady-Ady_AIG)"
+    },
+    {
+        "ID":  "L-ZHURT",
+        "Form":  "журт",
+        "Anlam":  "yahudi",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 (freq: 78, lang: kbd, source: 1.Ady-Ady_AP)"
+    },
+    {
+        "ID":  "L-EYSHCH",
+        "Form":  "ейщ",
+        "Anlam":  "ai̇t",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 (freq: 77, lang: kbd, source: 8.Ady-Tur_Huvaj)"
+    },
+    {
+        "ID":  "L-SHCHECH",
+        "Form":  "щэч",
+        "Anlam":  "gerçekli",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 (freq: 74, lang: ady, source: 0.Ady-Ady_AIG)"
+    },
+    {
+        "ID":  "L-AUZHYPKEEM",
+        "Form":  "аужыпкъэм",
+        "Anlam":  "ni̇hayet",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 (freq: 70, lang: ady, source: 3.Ady-En)"
+    },
+    {
+        "ID":  "L-AUZHYRE",
+        "Form":  "аужырэ",
+        "Anlam":  "Son",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 (freq: 69, lang: ady, source: 3.Ady-En)"
+    },
+    {
+        "ID":  "L-MOU",
+        "Form":  "моу",
+        "Anlam":  "burasi",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 (freq: 65, lang: ady, source: 4.Ady-En_Adam)"
+    },
+    {
+        "ID":  "L-UN",
+        "Form":  "ун",
+        "Anlam":  "yatak odası",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 (freq: 63, lang: ady, source: 2.Ady-Ara)"
+    },
+    {
+        "ID":  "L-RIM",
+        "Form":  "рим",
+        "Anlam":  "Roma (özel isim)",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 (freq: 56, lang: ady, source: 14.Kbd-En-2-Jonty)"
+    },
+    {
+        "ID":  "L-SOM",
+        "Form":  "сом",
+        "Anlam":  "ruble",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 (freq: 53, lang: kbd, source: 0.Ady-Ady_AIG)"
+    },
+    {
+        "ID":  "L-EON",
+        "Form":  "еон",
+        "Anlam":  "Vurmak",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 (freq: 53, lang: ady, source: 2.Ady-Ara)"
+    },
+    {
+        "ID":  "L-TOP",
+        "Form":  "топ",
+        "Anlam":  "top (oyun topu); yumak",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 (freq: 50, lang: kbd, source: 0.Ady-Ady_AIG) | Kaynak: sukunov-1998 | Kavram \u0027UNKNOWN\u0027 geçersiz (sayı/gün/ay/belirsiz) olduğu için boşaltıldı."
+    },
+    {
+        "ID":  "L-UAZ",
+        "Form":  "уаз",
+        "Anlam":  "hutbe",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 (freq: 49, lang: kbd, source: 0.Ady-Ady_AIG)"
+    },
+    {
+        "ID":  "L-UEY",
+        "Form":  "уей",
+        "Anlam":  "firtina",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 (freq: 48, lang: kbd, source: 1.Ady-Ady_AP)"
+    },
+    {
+        "ID":  "L-BA",
+        "Form":  "ба",
+        "Anlam":  "buse",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 (freq: 47, lang: kbd, source: 1.Ady-Ady_AP)"
+    },
+    {
+        "ID":  "L-MYRY",
+        "Form":  "мыры",
+        "Anlam":  "BU",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 (freq: 45, lang: ady, source: 0.Ady-Ady_AIG)"
+    },
+    {
+        "ID":  "L-SHTEN-ADY",
+        "Form":  "штэн",
+        "Anlam":  "alim",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 (freq: 44, lang: ady, source: 2.Ady-Ara)"
+    },
+    {
+        "ID":  "L-SHCHECHYN",
+        "Form":  "щэчын",
+        "Anlam":  "aciklanmak",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 (freq: 41, lang: ady, source: 0.Ady-Ady_AIG)"
+    },
+    {
+        "ID":  "L-ZAO",
+        "Form":  "зао",
+        "Anlam":  "hengame",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 (freq: 40, lang: ady, source: 0.Ady-Ady_AIG)"
+    },
+    {
+        "ID":  "L-KOTS-2",
+        "Form":  "коц",
+        "Anlam":  "bulgur",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 (freq: 39, lang: ady, source: 4.Ady-En_Adam)"
+    },
+    {
+        "ID":  "L-IKU",
+        "Form":  "ику",
+        "Anlam":  "Orta",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 (freq: 37, lang: kbd, source: 13.Kbd-Ar-Jonty) | Kaynak: sukunov-1998 | Kavram \u0027UNKNOWN\u0027 geçersiz (sayı/gün/ay/belirsiz) olduğu için boşaltıldı."
+    },
+    {
+        "ID":  "L-SY",
+        "Form":  "сы",
+        "Anlam":  "bu nedir ?",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 (freq: 36, lang: kbd, source: 33.Ady-Rus-1960)"
+    },
+    {
+        "ID":  "L-ZHOR",
+        "Form":  "жор",
+        "Anlam":  "istavroz",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 (freq: 35, lang: kbd, source: 1.Ady-Ady_AP)"
+    },
+    {
+        "ID":  "L-KUOU",
+        "Form":  "куоу",
+        "Anlam":  "derinleşmek",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 (freq: 35, lang: ady, source: 3.Ady-En)"
+    },
+    {
+        "ID":  "L-APCH",
+        "Form":  "апч",
+        "Anlam":  "Kap, şişe",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 (freq: 35, lang: ady, source: 0.Ady-Ady_AIG)"
+    },
+    {
+        "ID":  "L-PUD",
+        "Form":  "пуд",
+        "Anlam":  "değersi̇z",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 (freq: 34, lang: kbd, source: 0.Ady-Ady_AIG)"
+    },
+    {
+        "ID":  "L-MOUE",
+        "Form":  "моуэ",
+        "Anlam":  "şöyle",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 (freq: 34, lang: kbd, source: 1.Ady-Ady_AP)"
+    },
+    {
+        "ID":  "L-MOR",
+        "Form":  "мор",
+        "Anlam":  "Filo",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 (freq: 34, lang: kbd, source: 0.Ady-Ady_AIG)"
+    },
+    {
+        "ID":  "L-PYY",
+        "Form":  "пый",
+        "Anlam":  "antagonist",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 (freq: 34, lang: ady, source: 0.Ady-Ady_AIG)"
+    },
+    {
+        "ID":  "L-NUR",
+        "Form":  "нур",
+        "Anlam":  "nurlu",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 (freq: 33, lang: kbd, source: 0.Ady-Ady_AIG)"
+    },
+    {
+        "ID":  "L-MOSKVA",
+        "Form":  "москва",
+        "Anlam":  "başkent",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 (freq: 33, lang: kbd, source: 5.Ady-Rus_Qarden)"
+    },
+    {
+        "ID":  "L-TEON",
+        "Form":  "теон",
+        "Anlam":  "saldirmak",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 (freq: 33, lang: ady, source: 0.Ady-Ady_AIG)"
+    },
+    {
+        "ID":  "L-LECH",
+        "Form":  "лэч",
+        "Anlam":  "çalmak 2",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 (freq: 31, lang: kbd, source: 1.Ady-Ady_AP)"
+    },
+    {
+        "ID":  "L-IZY-ADY",
+        "Form":  "изы",
+        "Anlam":  "doldurmak",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 (freq: 31, lang: ady, source: 4.Ady-En_Adam)"
+    },
+    {
+        "ID":  "L-LA",
+        "Form":  "ла",
+        "Anlam":  "painted",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 (freq: 29, lang: kbd, source: 14.Kbd-En-2-Jonty)"
+    },
+    {
+        "ID":  "L-SHUM",
+        "Form":  "шум",
+        "Anlam":  "şölen",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 (freq: 26, lang: kbd, source: 22.Ru-Kbd-Jonty)"
+    },
+    {
+        "ID":  "L-PYI-ADY",
+        "Form":  "пыи",
+        "Anlam":  "düşman",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 (freq: 24, lang: ady, source: 3.Ady-En)"
+    },
+    {
+        "ID":  "L-NOS-KBD",
+        "Form":  "нос",
+        "Anlam":  "ulaşmak",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 (freq: 23, lang: kbd, source: 22.Ru-Kbd-Jonty)"
+    },
+    {
+        "ID":  "L-BAZ",
+        "Form":  "баз",
+        "Anlam":  "bahis",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 (freq: 23, lang: kbd, source: 0.Ady-Ady_AIG)"
+    },
+    {
+        "ID":  "L-YAT",
+        "Form":  "ят",
+        "Anlam":  "fitre",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 (freq: 22, lang: ady, source: 0.Ady-Ady_AIG)"
+    },
+    {
+        "ID":  "L-CHEY",
+        "Form":  "чей",
+        "Anlam":  "fiçi",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 (freq: 21, lang: kbd, source: 1.Ady-Ady_AP)"
+    },
+    {
+        "ID":  "L-GYE-ADY",
+        "Form":  "гые",
+        "Anlam":  "sitem",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 (freq: 20, lang: ady, source: 0.Ady-Ady_AIG)"
+    },
+    {
+        "ID":  "L-ON",
+        "Form":  "он",
+        "Anlam":  "kapatmak, kapamak",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 (freq: 20, lang: ady, source: 2.Ady-Ara)"
+    },
+    {
+        "ID":  "L-SHCHAY",
+        "Form":  "щай",
+        "Anlam":  "çay",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 (freq: 20, lang: ady, source: 0.Ady-Ady_AIG)"
+    },
+    {
+        "ID":  "L-PCHAGHEXER",
+        "Form":  "пчъагъэхэр",
+        "Anlam":  "SAYILAR",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 (freq: 19, lang: ady, source: 3.Ady-En) | Kavram \u0027NUMBERS\u0027 geçersiz (sayı/gün/ay/belirsiz) olduğu için boşaltıldı."
+    },
+    {
+        "ID":  "L-CHANYGH",
+        "Form":  "чаныгъ",
+        "Anlam":  "kararlılık",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 (freq: 19, lang: ady, source: 0.Ady-Ady_AIG)"
+    },
+    {
+        "ID":  "L-ODYDZHYN",
+        "Form":  "одыджын",
+        "Anlam":  "Çançiçeği",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 (freq: 18, lang: ady, source: 0.Ady-Ady_AIG)"
+    },
+    {
+        "ID":  "L-AUI",
+        "Form":  "ауи",
+        "Anlam":  "düz",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 (freq: 17, lang: kbd, source: 0.Ady-Ady_AIG)"
+    },
+    {
+        "ID":  "L-UD-2",
+        "Form":  "уд",
+        "Anlam":  "witch",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 (freq: 17, lang: kbd, source: 1.Ady-Ady_AP)"
+    },
+    {
+        "ID":  "L-KUEI",
+        "Form":  "къуи",
+        "Anlam":  "kel",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 (freq: 17, lang: ady, source: 2.Ady-Ara)"
+    },
+    {
+        "ID":  "L-ZYN-2",
+        "Form":  "зын",
+        "Anlam":  "süzmek",
+        "POS":  "verb",
+        "Notlar":  "Corpus v1.0 (freq: 16, lang: kbd, source: 1.Ady-Ady_AP)"
+    },
+    {
+        "ID":  "L-TELEVIZOR",
+        "Form":  "телевизор",
+        "Anlam":  "televizyon",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 (freq: 16, lang: kbd, source: 1.Ady-Ady_AP)"
+    },
+    {
+        "ID":  "L-NYO-ADY",
+        "Form":  "ныо",
+        "Anlam":  "yaşli, kadi̇n",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 (freq: 16, lang: ady, source: 0.Ady-Ady_AIG)"
+    },
+    {
+        "ID":  "L-SHXONCH",
+        "Form":  "шхонч",
+        "Anlam":  "Tüfek",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 (freq: 16, lang: ady, source: 0.Ady-Ady_AIG)"
+    },
+    {
+        "ID":  "L-ISA",
+        "Form":  "иса",
+        "Anlam":  "pi̇şi̇k",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 (freq: 15, lang: kbd, source: 15.Kbd-En-Jonty)"
+    },
+    {
+        "ID":  "L-YAY",
+        "Form":  "яй",
+        "Anlam":  "onların",
+        "POS":  "PRONOUN",
+        "Notlar":  "Corpus v1.0 (freq: 15, lang: ady, source: 1.Ady-Ady_AP)"
+    },
+    {
+        "ID":  "L-SAD",
+        "Form":  "сад",
+        "Anlam":  "bahçe",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 (freq: 15, lang: ady, source: 0.Ady-Ady_AIG)"
+    },
+    {
+        "ID":  "L-ODY-ADY",
+        "Form":  "оды",
+        "Anlam":  "Zayıf, arık",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 (freq: 15, lang: ady, source: 2.Ady-Ara)"
+    },
+    {
+        "ID":  "L-DYRKUEE",
+        "Form":  "дыркъуэ",
+        "Anlam":  "bere 2",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 (freq: 14, lang: kbd, source: 1.Ady-Ady_AP)"
+    },
+    {
+        "ID":  "L-TSEX",
+        "Form":  "цех",
+        "Anlam":  "dükkanci",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 (freq: 14, lang: kbd, source: 1.Ady-Ady_AP)"
+    },
+    {
+        "ID":  "L-KUEENTKH",
+        "Form":  "къуентхъ",
+        "Anlam":  "çapul",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 (freq: 14, lang: kbd, source: 1.Ady-Ady_AP)"
+    },
+    {
+        "ID":  "L-BOU",
+        "Form":  "боу",
+        "Anlam":  "ekrem",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 (freq: 14, lang: ady, source: 0.Ady-Ady_AIG)"
+    },
+    {
+        "ID":  "L-SHTE",
+        "Form":  "штэ",
+        "Anlam":  "çarpi",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 (freq: 14, lang: ady, source: 4.Ady-En_Adam)"
+    },
+    {
+        "ID":  "L-SHTENYR",
+        "Form":  "штэныр",
+        "Anlam":  "randevu",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 (freq: 14, lang: ady, source: 2.Ady-Ara)"
+    },
+    {
+        "ID":  "L-KUEATSE",
+        "Form":  "къуацэ",
+        "Anlam":  "çalikuşu",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 (freq: 13, lang: kbd, source: 0.Ady-Ady_AIG)"
+    },
+    {
+        "ID":  "L-YANI",
+        "Form":  "яни",
+        "Anlam":  "yani (açıklama edatı)",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 (freq: 13, lang: ady, source: 4.Ady-En_Adam)"
+    },
+    {
+        "ID":  "L-TEORIE",
+        "Form":  "теорие",
+        "Anlam":  "theory",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 (freq: 12, lang: kbd, source: 13.Kbd-Ar-Jonty)"
+    },
+    {
+        "ID":  "L-EBEN",
+        "Form":  "ебэн",
+        "Anlam":  "tip spearhead spear",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 (freq: 12, lang: kbd, source: 0.Ady-Ady_AIG)"
+    },
+    {
+        "ID":  "L-IZYN",
+        "Form":  "изын",
+        "Anlam":  "mezuniyetsiz",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 (freq: 12, lang: ady, source: 2.Ady-Ara)"
+    },
+    {
+        "ID":  "L-OD-ADY",
+        "Form":  "од",
+        "Anlam":  "zayif",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 (freq: 12, lang: ady, source: 0.Ady-Ady_AIG)"
+    },
+    {
+        "ID":  "L-ZU",
+        "Form":  "зу",
+        "Anlam":  "Çember",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 (freq: 11, lang: kbd, source: 1.Ady-Ady_AP)"
+    },
+    {
+        "ID":  "L-TOK",
+        "Form":  "ток",
+        "Anlam":  "Harman",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 (freq: 11, lang: kbd, source: 1.Ady-Ady_AP)"
+    },
+    {
+        "ID":  "L-KUEZGHUN",
+        "Form":  "къузгъун",
+        "Anlam":  "çeti̇n",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 (freq: 11, lang: kbd, source: 1.Ady-Ady_AP)"
+    },
+    {
+        "ID":  "L-PUDU",
+        "Form":  "пуду",
+        "Anlam":  "düşürmek",
+        "POS":  "adverb",
+        "Notlar":  "Corpus v1.0 (freq: 11, lang: kbd, source: 1.Ady-Ady_AP)"
+    },
+    {
+        "ID":  "L-BOB",
+        "Form":  "боб",
+        "Anlam":  "yerfasulyesi",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 (freq: 11, lang: kbd, source: 22.Ru-Kbd-Jonty)"
+    },
+    {
+        "ID":  "L-IEU",
+        "Form":  "иеу",
+        "Anlam":  "devletleştirmek",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 (freq: 11, lang: ady, source: 8.Ady-Tur_Huvaj)"
+    },
+    {
+        "ID":  "L-UDY-ADY",
+        "Form":  "уды",
+        "Anlam":  "afsuncu",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 (freq: 11, lang: ady, source: 0.Ady-Ady_AIG)"
+    },
+    {
+        "ID":  "L-TIZ",
+        "Form":  "тиз",
+        "Anlam":  "üzeri dolmak",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 (freq: 11, lang: ady, source: 2.Ady-Ara)"
+    },
+    {
+        "ID":  "L-ION",
+        "Form":  "ион",
+        "Anlam":  "vurmak, çalmak",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 (freq: 11, lang: ady, source: 0.Ady-Ady_AIG)"
+    },
+    {
+        "ID":  "L-BYUN",
+        "Form":  "быун",
+        "Anlam":  "bağirmak",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 (freq: 11, lang: ady, source: 0.Ady-Ady_AIG)"
+    },
+    {
+        "ID":  "L-SHXO",
+        "Form":  "шхо",
+        "Anlam":  "Gem (kayış) dizgin takımı",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 (freq: 11, lang: ady, source: 0.Ady-Ady_AIG)"
+    },
+    {
+        "ID":  "L-KUO-HAU",
+        "Form":  "куо-хьау",
+        "Anlam":  "büyük; buyuk",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 (freq: 11, lang: ady, source: 7.Ady-Rus_Tharkaho)"
+    },
+    {
+        "ID":  "L-EGHESHCHECHYN",
+        "Form":  "егъэщэчын",
+        "Anlam":  "inletmek",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 (freq: 11, lang: ady, source: 8.Ady-Tur_Huvaj)"
+    },
+    {
+        "ID":  "L-ZHEZ-2",
+        "Form":  "жэз",
+        "Anlam":  "bronz",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 (freq: 10, lang: kbd, source: 1.Ady-Ady_AP)"
+    },
+    {
+        "ID":  "L-MEX",
+        "Form":  "мэх",
+        "Anlam":  "Nöbet",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 (freq: 10, lang: kbd, source: 1.Ady-Ady_AP)"
+    },
+    {
+        "ID":  "L-UEU",
+        "Form":  "уэу",
+        "Anlam":  "Barut",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 (freq: 10, lang: kbd, source: 1.Ady-Ady_AP)"
+    },
+    {
+        "ID":  "L-TEO",
+        "Form":  "тео",
+        "Anlam":  "takirti",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 (freq: 10, lang: ady, source: 2.Ady-Ara)"
+    },
+    {
+        "ID":  "L-ZEON",
+        "Form":  "зэон",
+        "Anlam":  "savaşmak",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 (freq: 10, lang: ady, source: 0.Ady-Ady_AIG)"
+    },
+    {
+        "ID":  "L-NAN",
+        "Form":  "нан",
+        "Anlam":  "anne",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 (freq: 10, lang: ady, source: 0.Ady-Ady_AIG)"
+    },
+    {
+        "ID":  "L-CHER",
+        "Form":  "чъэр",
+        "Anlam":  "akkin",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 (freq: 10, lang: ady, source: 0.Ady-Ady_AIG)"
+    },
+    {
+        "ID":  "L-KUON",
+        "Form":  "куон",
+        "Anlam":  "bağirmak",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 (freq: 10, lang: ady, source: 0.Ady-Ady_AIG)"
+    },
+    {
+        "ID":  "L-YAN",
+        "Form":  "ян",
+        "Anlam":  "baba anne",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 (freq: 9, lang: kbd, source: 0.Ady-Ady_AIG)"
+    },
+    {
+        "ID":  "L-GIE-2",
+        "Form":  "гие",
+        "Anlam":  "si̇tem",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 (freq: 9, lang: kbd, source: 1.Ady-Ady_AP)"
+    },
+    {
+        "ID":  "L-ETA-2",
+        "Form":  "ета",
+        "Anlam":  "Yangı, iltihap",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 (freq: 9, lang: kbd, source: 14.Kbd-En-2-Jonty) | Kaynak: sukunov-1998 | Kavram \u0027UNKNOWN\u0027 geçersiz (sayı/gün/ay/belirsiz) olduğu için boşaltıldı."
+    },
+    {
+        "ID":  "L-BZEXYN",
+        "Form":  "бзэхын",
+        "Anlam":  "kaçmak",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 (freq: 9, lang: kbd, source: 0.Ady-Ady_AIG)"
+    },
+    {
+        "ID":  "L-MYKUU",
+        "Form":  "мыкуу",
+        "Anlam":  "siğ",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 (freq: 9, lang: kbd, source: 17.Kbd-En_Amjad)"
+    },
+    {
+        "ID":  "L-GOUTSON",
+        "Form":  "гоуцон",
+        "Anlam":  "yanında durmak",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 (freq: 9, lang: ady, source: 0.Ady-Ady_AIG)"
+    },
+    {
+        "ID":  "L-OR-ADY",
+        "Form":  "ор",
+        "Anlam":  "gür",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 (freq: 9, lang: ady, source: 0.Ady-Ady_AIG)"
+    },
+    {
+        "ID":  "L-CHYY",
+        "Form":  "чый",
+        "Anlam":  "Öksürük",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 (freq: 9, lang: ady, source: 0.Ady-Ady_AIG)"
+    },
+    {
+        "ID":  "L-CHAPYCH",
+        "Form":  "чапыч",
+        "Anlam":  "kapik",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 (freq: 9, lang: ady, source: 0.Ady-Ady_AIG)"
+    },
+    {
+        "ID":  "L-KUER",
+        "Form":  "къур",
+        "Anlam":  "Boğaz, gırtlak",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 (freq: 8, lang: kbd, source: 33.Ady-Rus-1960)"
+    },
+    {
+        "ID":  "L-KUEGHYN",
+        "Form":  "къугъын",
+        "Anlam":  "ulumak",
+        "POS":  "verb",
+        "Notlar":  "Corpus v1.0 (freq: 8, lang: kbd, source: 1.Ady-Ady_AP)"
+    },
+    {
+        "ID":  "L-KUEMAL",
+        "Form":  "къумал",
+        "Anlam":  "hai̇n",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 (freq: 8, lang: ady, source: 0.Ady-Ady_AIG)"
+    },
+    {
+        "ID":  "L-GOU",
+        "Form":  "гоу",
+        "Anlam":  "yaygara",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 (freq: 8, lang: ady, source: 30.Ady-Rus_ThreeVolumes)"
+    },
+    {
+        "ID":  "L-DAO",
+        "Form":  "дао",
+        "Anlam":  "dava",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 (freq: 8, lang: ady, source: 0.Ady-Ady_AIG)"
+    },
+    {
+        "ID":  "L-CHEPKHYN",
+        "Form":  "чъэпхъын",
+        "Anlam":  "Kuru, kurumuş",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 (freq: 8, lang: ady, source: 2.Ady-Ara)"
+    },
+    {
+        "ID":  "L-OF",
+        "Form":  "ӏоф",
+        "Anlam":  "Havan",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 batch-2 (freq: 713, lang: ady, source: none)"
+    },
+    {
+        "ID":  "L-I",
+        "Form":  "иӏ",
+        "Anlam":  "cömert",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 batch-2 (freq: 136, lang: ady, source: none)"
+    },
+    {
+        "ID":  "L-O",
+        "Form":  "ӏо",
+        "Anlam":  "(anlamsız kısaltma)",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 batch-2 (freq: 122, lang: ady, source: none)"
+    },
+    {
+        "ID":  "L-K-O",
+        "Form":  "кӏо",
+        "Anlam":  "orada",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 batch-2 (freq: 114, lang: ady, source: none)"
+    },
+    {
+        "ID":  "L-L-AGHE",
+        "Form":  "лӏагъэ",
+        "Anlam":  "adamcağiz",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 batch-2 (freq: 73, lang: ady, source: none)"
+    },
+    {
+        "ID":  "L-A-OZE",
+        "Form":  "аӏозэ",
+        "Anlam":  "asiye",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 batch-2 (freq: 66, lang: ady, source: none)"
+    },
+    {
+        "ID":  "L-AE",
+        "Form":  "ӏае",
+        "Anlam":  "ağirlaşmak",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 batch-2 (freq: 61, lang: ady, source: none)"
+    },
+    {
+        "ID":  "L-K-OTS",
+        "Form":  "кӏоцӏ",
+        "Anlam":  "İç organlar",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 batch-2 (freq: 55, lang: ady, source: none)"
+    },
+    {
+        "ID":  "L-L-A",
+        "Form":  "лӏа",
+        "Anlam":  "ölü",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 batch-2 (freq: 52, lang: kbd, source: none) [Kaynak: Jonty Kbd-Tu]"
+    },
+    {
+        "ID":  "L-A-E",
+        "Form":  "аӏэ",
+        "Anlam":  "aldirişsiz",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 batch-2 (freq: 41, lang: ady, source: none)"
+    },
+    {
+        "ID":  "L-BEK-E",
+        "Form":  "бэкӏэ",
+        "Anlam":  "baliksürüsü",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 batch-2 (freq: 40, lang: ady, source: none)"
+    },
+    {
+        "ID":  "L-OFYGHO",
+        "Form":  "ӏофыгъо",
+        "Anlam":  "öneri",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 batch-2 (freq: 40, lang: ady, source: none)"
+    },
+    {
+        "ID":  "L-K-OTS-YM",
+        "Form":  "кӏоцӏым",
+        "Anlam":  "içinde",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 batch-2 (freq: 36, lang: ady, source: none)"
+    },
+    {
+        "ID":  "L-K-ODYN",
+        "Form":  "кӏодын",
+        "Anlam":  "kaçmak",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 batch-2 (freq: 35, lang: ady, source: none)"
+    },
+    {
+        "ID":  "L-OFYGHU",
+        "Form":  "ӏофыгъу",
+        "Anlam":  "husus",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 batch-2 (freq: 30, lang: ady, source: none)"
+    },
+    {
+        "ID":  "L-AEU",
+        "Form":  "ӏаеу",
+        "Anlam":  "apişik",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 batch-2 (freq: 27, lang: ady, source: none)"
+    },
+    {
+        "ID":  "L-E-ON",
+        "Form":  "еӏон",
+        "Anlam":  "müjdelemek",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 batch-2 (freq: 26, lang: ady, source: none)"
+    },
+    {
+        "ID":  "L-DYK-YGHOU",
+        "Form":  "дыкӏыгъоу",
+        "Anlam":  "refakat",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 batch-2 (freq: 24, lang: ady, source: none)"
+    },
+    {
+        "ID":  "L-AY-ADY",
+        "Form":  "ӏай",
+        "Anlam":  "bayiltici",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 batch-2 (freq: 21, lang: ady, source: none)"
+    },
+    {
+        "ID":  "L-OFY",
+        "Form":  "ӏофы",
+        "Anlam":  "esi̇n",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 batch-2 (freq: 19, lang: ady, source: none)"
+    },
+    {
+        "ID":  "L-IKUUP-E",
+        "Form":  "икуупӏэ",
+        "Anlam":  "deep",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 batch-2 (freq: 15, lang: ady, source: none)"
+    },
+    {
+        "ID":  "L-KUER-AN",
+        "Form":  "къурӏан",
+        "Anlam":  "Kur\u0027an",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 batch-2 (freq: 13, lang: ady, source: none)"
+    },
+    {
+        "ID":  "L-K-ODYP-E",
+        "Form":  "кӏодыпӏэ",
+        "Anlam":  "kaybolma yeri",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 batch-2 (freq: 13, lang: ady, source: none)"
+    },
+    {
+        "ID":  "L-ONT-AGHE",
+        "Form":  "ӏонтӏагъэ",
+        "Anlam":  "Eğri; çarpık, çalık",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 batch-2 (freq: 13, lang: ady, source: none)"
+    },
+    {
+        "ID":  "L-SHCH-EUKUEENTS-EN",
+        "Form":  "щӏэукъуэнцӏэн",
+        "Anlam":  "(sadece gönderme)",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 batch-2 (freq: 12, lang: kbd, source: none)"
+    },
+    {
+        "ID":  "L-ZEOL",
+        "Form":  "зэолӏ",
+        "Anlam":  "militer",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 batch-2 (freq: 12, lang: ady, source: none)"
+    },
+    {
+        "ID":  "L-VERIFIED-00019",
+        "Form":  "хиз",
+        "Anlam":  "meşbu",
+        "POS":  "noun",
+        "Notlar":  "Verified (freq: 8, 2.Ady-Ara)"
+    },
+    {
+        "ID":  "L-VERIFIED-00050",
+        "Form":  "дысы",
+        "Anlam":  "aksi̇",
+        "POS":  "noun",
+        "Notlar":  "Verified (freq: 8, 0.Ady-Ady_AIG)"
+    },
+    {
+        "ID":  "L-VERIFIED-00063",
+        "Form":  "чаныгъэ",
+        "Anlam":  "aktifleşmek",
+        "POS":  "noun",
+        "Notlar":  "Verified (freq: 8, 0.Ady-Ady_AIG)"
+    },
+    {
+        "ID":  "L-VERIFIED-00125",
+        "Form":  "пудрэ",
+        "Anlam":  "Barut",
+        "POS":  "noun",
+        "Notlar":  "Verified (freq: 7, 1.Ady-Ady_AP)"
+    },
+    {
+        "ID":  "L-VERIFIED-00237",
+        "Form":  "ужэгъун",
+        "Anlam":  "bikmak",
+        "POS":  "verb",
+        "Notlar":  "Verified (freq: 7, 1.Ady-Ady_AP)"
+    },
+    {
+        "ID":  "L-VERIFIED-00238",
+        "Form":  "икудэн",
+        "Anlam":  "tikamak",
+        "POS":  "noun",
+        "Notlar":  "Verified (freq: 7, 15.Kbd-En-Jonty)"
+    },
+    {
+        "ID":  "L-VERIFIED-00600",
+        "Form":  "тай",
+        "Anlam":  "Yığın",
+        "POS":  "noun",
+        "Notlar":  "Verified (freq: 7, 0.Ady-Ady_AIG)"
+    },
+    {
+        "ID":  "L-VERIFIED-00602",
+        "Form":  "быу",
+        "Anlam":  "böğürtü",
+        "POS":  "noun",
+        "Notlar":  "Verified (freq: 7, 0.Ady-Ady_AIG)"
+    },
+    {
+        "ID":  "L-VERIFIED-00617",
+        "Form":  "къуалъхьэ",
+        "Anlam":  "lokma",
+        "POS":  "noun",
+        "Notlar":  "Verified (freq: 7, 0.Ady-Ady_AIG)"
+    },
+    {
+        "ID":  "L-VERIFIED-00644",
+        "Form":  "ма",
+        "Anlam":  "here",
+        "POS":  "noun",
+        "Notlar":  "Verified (freq: 7, 0.Ady-Ady_AIG)"
+    },
+    {
+        "ID":  "L-VERIFIED-00647",
+        "Form":  "чап",
+        "Anlam":  "bayir",
+        "POS":  "noun",
+        "Notlar":  "Verified (freq: 7, 0.Ady-Ady_AIG)"
+    },
+    {
+        "ID":  "L-VERIFIED-00703",
+        "Form":  "еоныр",
+        "Anlam":  "fiske",
+        "POS":  "noun",
+        "Notlar":  "Verified (freq: 7, 3.Ady-En)"
+    },
+    {
+        "ID":  "L-VERIFIED-01024",
+        "Form":  "къугъ",
+        "Anlam":  "uluma",
+        "POS":  "noun",
+        "Notlar":  "Verified (freq: 6, 1.Ady-Ady_AP)"
+    },
+    {
+        "ID":  "L-VERIFIED-01242",
+        "Form":  "топгъауэ",
+        "Anlam":  "gunner",
+        "POS":  "noun",
+        "Notlar":  "Verified (freq: 6, 17.Kbd-En_Amjad)"
+    },
+    {
+        "ID":  "L-VERIFIED-01251",
+        "Form":  "уха",
+        "Anlam":  "ended, finished",
+        "POS":  "noun",
+        "Notlar":  "Verified (freq: 6, 14.Kbd-En-2-Jonty)"
+    },
+    {
+        "ID":  "L-VERIFIED-01292",
+        "Form":  "токио",
+        "Anlam":  "tokyo",
+        "POS":  "noun",
+        "Notlar":  "Verified (freq: 6, 5.Ady-Rus_Qarden)"
+    },
+    {
+        "ID":  "L-VERIFIED-01327",
+        "Form":  "щиз",
+        "Anlam":  "dolu",
+        "POS":  "noun",
+        "Notlar":  "Verified (freq: 6, 0.Ady-Ady_AIG)"
+    },
+    {
+        "ID":  "L-VERIFIED-01347",
+        "Form":  "бы",
+        "Anlam":  "-ebilirdi",
+        "POS":  "noun",
+        "Notlar":  "Verified (freq: 6, 0.Ady-Ady_AIG)"
+    },
+    {
+        "ID":  "L-VERIFIED-01354",
+        "Form":  "гот",
+        "Anlam":  "taraftar",
+        "POS":  "noun",
+        "Notlar":  "Verified (freq: 6, 30.Ady-Rus_ThreeVolumes)"
+    },
+    {
+        "ID":  "L-VERIFIED-01401",
+        "Form":  "гоутын",
+        "Anlam":  "yarmak",
+        "POS":  "noun",
+        "Notlar":  "Verified (freq: 6, 0.Ady-Ady_AIG)"
+    },
+    {
+        "ID":  "L-VERIFIED-01445",
+        "Form":  "сай",
+        "Anlam":  "batak",
+        "POS":  "noun",
+        "Notlar":  "Verified (freq: 6, 0.Ady-Ady_AIG)"
+    },
+    {
+        "ID":  "L-VERIFIED-01485",
+        "Form":  "бэн",
+        "Anlam":  "anitkabir",
+        "POS":  "noun",
+        "Notlar":  "Verified (freq: 6, 1.Ady-Ady_AP)"
+    },
+    {
+        "ID":  "L-VERIFIED-01527",
+        "Form":  "щайуц",
+        "Anlam":  "güveyk",
+        "POS":  "noun",
+        "Notlar":  "Verified (freq: 6, 0.Ady-Ady_AIG)"
+    },
+    {
+        "ID":  "L-VERIFIED-01542",
+        "Form":  "коцы",
+        "Anlam":  "Buğday",
+        "POS":  "noun",
+        "Notlar":  "Verified (freq: 6, 0.Ady-Ady_AIG)"
+    },
+    {
+        "ID":  "L-VERIFIED-01630",
+        "Form":  "ур",
+        "Anlam":  "ŞU",
+        "POS":  "noun",
+        "Notlar":  "Verified (freq: 5, 1.Ady-Ady_AP)"
+    },
+    {
+        "ID":  "L-VERIFIED-01680",
+        "Form":  "хэн",
+        "Anlam":  "Tahıllar",
+        "POS":  "noun",
+        "Notlar":  "Verified (freq: 5, 1.Ady-Ady_AP)"
+    },
+    {
+        "ID":  "L-VERIFIED-01752",
+        "Form":  "дзэлыкъуэ",
+        "Anlam":  "palalik",
+        "POS":  "noun",
+        "Notlar":  "Verified (freq: 5, 5.Ady-Rus_Qarden)"
+    },
+    {
+        "ID":  "L-VERIFIED-01885",
+        "Form":  "узу",
+        "Anlam":  "painful",
+        "POS":  "noun",
+        "Notlar":  "Verified (freq: 5, 15.Kbd-En-Jonty)"
+    },
+    {
+        "ID":  "L-VERIFIED-01956",
+        "Form":  "къамылыкъуэ",
+        "Anlam":  "palalik",
+        "POS":  "noun",
+        "Notlar":  "Verified (freq: 5, 5.Ady-Rus_Qarden)"
+    },
+    {
+        "ID":  "L-VERIFIED-01960",
+        "Form":  "чий",
+        "Anlam":  "çit",
+        "POS":  "noun",
+        "Notlar":  "Verified (freq: 5, 1.Ady-Ady_AP)"
+    },
+    {
+        "ID":  "L-VERIFIED-02122",
+        "Form":  "шоткэ",
+        "Anlam":  "diş fırçası",
+        "POS":  "noun",
+        "Notlar":  "Verified (freq: 5, 1.Ady-Ady_AP)"
+    },
+    {
+        "ID":  "L-VERIFIED-02137",
+        "Form":  "мат",
+        "Anlam":  "Sayı",
+        "POS":  "noun",
+        "Notlar":  "Verified (freq: 5, 0.Ady-Ady_AIG)"
+    },
+    {
+        "ID":  "L-VERIFIED-02161",
+        "Form":  "елъ",
+        "Anlam":  "bilemek",
+        "POS":  "noun",
+        "Notlar":  "Verified (freq: 5, 1.Ady-Ady_AP)"
+    },
+    {
+        "ID":  "L-VERIFIED-02172",
+        "Form":  "базэ",
+        "Anlam":  "Temel, baz",
+        "POS":  "noun",
+        "Notlar":  "Verified (freq: 5, 1.Ady-Ady_AP)"
+    },
+    {
+        "ID":  "L-VERIFIED-02181",
+        "Form":  "дия",
+        "Anlam":  "pihti",
+        "POS":  "noun",
+        "Notlar":  "Verified (freq: 5, 14.Kbd-En-2-Jonty)"
+    },
+    {
+        "ID":  "L-VERIFIED-02183",
+        "Form":  "силос",
+        "Anlam":  "silaj",
+        "POS":  "noun",
+        "Notlar":  "Verified (freq: 5, 1.Ady-Ady_AP)"
+    },
+    {
+        "ID":  "L-VERIFIED-02224",
+        "Form":  "къунтх",
+        "Anlam":  "olta",
+        "POS":  "noun",
+        "Notlar":  "Verified (freq: 5, 1.Ady-Ady_AP)"
+    },
+    {
+        "ID":  "L-VERIFIED-02336",
+        "Form":  "зэт",
+        "Anlam":  "ada",
+        "POS":  "noun",
+        "Notlar":  "Verified (freq: 5, 1.Ady-Ady_AP)"
+    },
+    {
+        "ID":  "L-VERIFIED-02389",
+        "Form":  "къуанчэ",
+        "Anlam":  "eğri",
+        "POS":  "noun",
+        "Notlar":  "Verified (freq: 5, 0.Ady-Ady_AIG)"
+    },
+    {
+        "ID":  "L-VERIFIED-02405",
+        "Form":  "шао",
+        "Anlam":  "Arabacı",
+        "POS":  "noun",
+        "Notlar":  "Verified (freq: 5, 0.Ady-Ady_AIG)"
+    },
+    {
+        "ID":  "L-VERIFIED-02497",
+        "Form":  "чъэ",
+        "Anlam":  "yitirmek",
+        "POS":  "noun",
+        "Notlar":  "Verified (freq: 5, 2.Ady-Ara)"
+    },
+    {
+        "ID":  "L-VERIFIED-02509",
+        "Form":  "мощтэу",
+        "Anlam":  "şöyle",
+        "POS":  "noun",
+        "Notlar":  "Verified (freq: 5, 0.Ady-Ady_AIG)"
+    },
+    {
+        "ID":  "L-VERIFIED-02545",
+        "Form":  "чъэп",
+        "Anlam":  "kiraği",
+        "POS":  "noun",
+        "Notlar":  "Verified (freq: 5, 0.Ady-Ady_AIG)"
+    },
+    {
+        "ID":  "L-VERIFIED-02578",
+        "Form":  "дэчъэен",
+        "Anlam":  "pirlamak",
+        "POS":  "noun",
+        "Notlar":  "Verified (freq: 5, 2.Ady-Ara)"
+    },
+    {
+        "ID":  "L-VERIFIED-02660",
+        "Form":  "мырэзэныгъ",
+        "Anlam":  "hoşnutsuzluk",
+        "POS":  "noun",
+        "Notlar":  "Verified (freq: 5, 7.Ady-Rus_Tharkaho)"
+    },
+    {
+        "ID":  "L-VERIFIED-02694",
+        "Form":  "теоныгъ",
+        "Anlam":  "akin",
+        "POS":  "noun",
+        "Notlar":  "Verified (freq: 5, 3.Ady-En)"
+    },
+    {
+        "ID":  "L-KBD-00435",
+        "Form":  "бод",
+        "Anlam":  "incense",
+        "POS":  "noun",
+        "Notlar":  "KBD sozluk: 1.Ady-Ady_AP.json"
+    },
+    {
+        "ID":  "L-KBD-00436",
+        "Form":  "бодрэт",
+        "Anlam":  "ihtifal",
+        "POS":  "noun",
+        "Notlar":  "KBD sozluk: 1.Ady-Ady_AP.json"
+    },
+    {
+        "ID":  "L-KBD-00440",
+        "Form":  "боф",
+        "Anlam":  "int. bang!",
+        "POS":  "interjection",
+        "Notlar":  "KBD sozluk: 1.Ady-Ady_AP.json"
+    },
+    {
+        "ID":  "L-KBD-00452",
+        "Form":  "бым",
+        "Anlam":  "tangir",
+        "POS":  "interjection",
+        "Notlar":  "KBD sozluk: 1.Ady-Ady_AP.json"
+    },
+    {
+        "ID":  "L-KBD-00846",
+        "Form":  "гыз",
+        "Anlam":  "sarsinti",
+        "POS":  "noun",
+        "Notlar":  "KBD sozluk: 1.Ady-Ady_AP.json"
+    },
+    {
+        "ID":  "L-KBD-00847",
+        "Form":  "гызын",
+        "Anlam":  "sarsilmak",
+        "POS":  "verb",
+        "Notlar":  "KBD sozluk: 1.Ady-Ady_AP.json"
+    },
+    {
+        "ID":  "L-KBD-00989",
+        "Form":  "дыщ",
+        "Anlam":  "ağacalik",
+        "POS":  "noun",
+        "Notlar":  "KBD sozluk: 1.Ady-Ady_AP.json"
+    },
+    {
+        "ID":  "L-KBD-02596",
+        "Form":  "къуардэ-шардэ",
+        "Anlam":  "şölen",
+        "POS":  "noun",
+        "Notlar":  "KBD sozluk: 1.Ady-Ady_AP.json"
+    },
+    {
+        "ID":  "L-KBD-02599",
+        "Form":  "къубас",
+        "Anlam":  "syromyat",
+        "POS":  "noun",
+        "Notlar":  "KBD sozluk: 1.Ady-Ady_AP.json"
+    },
+    {
+        "ID":  "L-KBD-02602",
+        "Form":  "къуейщӏеигъэ",
+        "Anlam":  "naughtiness",
+        "POS":  "noun",
+        "Notlar":  "KBD sozluk: 1.Ady-Ady_AP.json"
+    },
+    {
+        "ID":  "L-KBD-02614",
+        "Form":  "къураты",
+        "Anlam":  "horse breed",
+        "POS":  "noun",
+        "Notlar":  "KBD sozluk: 1.Ady-Ady_AP.json"
+    },
+    {
+        "ID":  "L-KBD-03319",
+        "Form":  "лагъэ",
+        "Anlam":  "Tabak, tepsi, sahan",
+        "POS":  "noun",
+        "Notlar":  "KBD sozluk: 1.Ady-Ady_AP.json"
+    },
+    {
+        "ID":  "L-KBD-03330",
+        "Form":  "лом",
+        "Anlam":  "küskü",
+        "POS":  "noun",
+        "Notlar":  "KBD sozluk: 1.Ady-Ady_AP.json"
+    },
+    {
+        "ID":  "L-KBD-03517",
+        "Form":  "миф",
+        "Anlam":  "myth. mermaid",
+        "POS":  "noun",
+        "Notlar":  "KBD sozluk: 1.Ady-Ady_AP.json"
+    },
+    {
+        "ID":  "L-KBD-03519",
+        "Form":  "молибден",
+        "Anlam":  "molibden",
+        "POS":  "noun",
+        "Notlar":  "KBD sozluk: 1.Ady-Ady_AP.json"
+    },
+    {
+        "ID":  "L-KBD-03552",
+        "Form":  "мырамысэ",
+        "Anlam":  "hominy",
+        "POS":  "noun",
+        "Notlar":  "KBD sozluk: 1.Ady-Ady_AP.json"
+    },
+    {
+        "ID":  "L-KBD-03638",
+        "Form":  "нурыбэ",
+        "Anlam":  "enver",
+        "POS":  "noun",
+        "Notlar":  "KBD sozluk: 1.Ady-Ady_AP.json"
+    },
+    {
+        "ID":  "L-KBD-03857",
+        "Form":  "поп",
+        "Anlam":  "papaz",
+        "POS":  "noun",
+        "Notlar":  "KBD sozluk: 1.Ady-Ady_AP.json"
+    },
+    {
+        "ID":  "L-KBD-03917",
+        "Form":  "пудыныгъэ",
+        "Anlam":  "rezi̇l",
+        "POS":  "",
+        "Notlar":  "KBD sozluk: 1.Ady-Ady_AP.json"
+    },
+    {
+        "ID":  "L-KBD-03993",
+        "Form":  "пщыгъуэ",
+        "Anlam":  "hükmetmek",
+        "POS":  "noun",
+        "Notlar":  "KBD sozluk: 1.Ady-Ady_AP.json"
+    },
+    {
+        "ID":  "L-KBD-04232",
+        "Form":  "таучэлыншагъэ",
+        "Anlam":  "indecision",
+        "POS":  "noun",
+        "Notlar":  "KBD sozluk: 1.Ady-Ady_AP.json"
+    },
+    {
+        "ID":  "L-KBD-04371",
+        "Form":  "токарь",
+        "Anlam":  "torna ustası, tornacı",
+        "POS":  "noun",
+        "Notlar":  "KBD sozluk: 1.Ady-Ady_AP.json"
+    },
+    {
+        "ID":  "L-KBD-04378",
+        "Form":  "тсс",
+        "Anlam":  "interdom. shhh!",
+        "POS":  "interjection",
+        "Notlar":  "KBD sozluk: 1.Ady-Ady_AP.json"
+    },
+    {
+        "ID":  "L-KBD-04384",
+        "Form":  "туф",
+        "Anlam":  "tuff",
+        "POS":  "noun",
+        "Notlar":  "KBD sozluk: 1.Ady-Ady_AP.json"
+    },
+    {
+        "ID":  "L-KBD-04516",
+        "Form":  "уэт",
+        "Anlam":  "rezi̇l",
+        "POS":  "",
+        "Notlar":  "KBD sozluk: 1.Ady-Ady_AP.json"
+    },
+    {
+        "ID":  "L-KBD-05025",
+        "Form":  "шот",
+        "Anlam":  "to deny",
+        "POS":  "noun",
+        "Notlar":  "KBD sozluk: 1.Ady-Ady_AP.json"
+    },
+    {
+        "ID":  "L-KBD-05037",
+        "Form":  "шхошх",
+        "Anlam":  "бог в помощь (приветствие ). (god help (greeting).)",
+        "POS":  "noun",
+        "Notlar":  "KBD sozluk: 1.Ady-Ady_AP.json [18.Kbd-Ru\u0026En: бог в помощь (приветствие ). (god help (greeting).)] [TR-KAYNAK: 18.Kbd-Ru\u0026En (Rusça)]"
+    },
+    {
+        "ID":  "L-KBD-05624",
+        "Form":  "бессознательный",
+        "Anlam":  "poz, duruş",
+        "POS":  "",
+        "Notlar":  "KBD sozluk: 25.Rus-Ady_UASP.json"
+    },
+    {
+        "ID":  "L-KBD-05640",
+        "Form":  "век",
+        "Anlam":  "male life expectancy",
+        "POS":  "",
+        "Notlar":  "KBD sozluk: 25.Rus-Ady_UASP.json"
+    },
+    {
+        "ID":  "L-KBD-05643",
+        "Form":  "вес",
+        "Anlam":  "zorluklar, cile",
+        "POS":  "",
+        "Notlar":  "KBD sozluk: 25.Rus-Ady_UASP.json"
+    },
+    {
+        "ID":  "L-KBD-05644",
+        "Form":  "весть",
+        "Anlam":  "haber",
+        "POS":  "",
+        "Notlar":  "KBD sozluk: 25.Rus-Ady_UASP.json"
+    },
+    {
+        "ID":  "L-KBD-05645",
+        "Form":  "весь",
+        "Anlam":  "her ne",
+        "POS":  "",
+        "Notlar":  "KBD sozluk: 25.Rus-Ady_UASP.json"
+    },
+    {
+        "ID":  "L-KBD-05650",
+        "Form":  "вид",
+        "Anlam":  "form",
+        "POS":  "",
+        "Notlar":  "KBD sozluk: 25.Rus-Ady_UASP.json"
+    },
+    {
+        "ID":  "L-KBD-05651",
+        "Form":  "видеть",
+        "Anlam":  "tatmak",
+        "POS":  "",
+        "Notlar":  "KBD sozluk: 25.Rus-Ady_UASP.json"
+    },
+    {
+        "ID":  "L-KBD-05670",
+        "Form":  "заложить",
+        "Anlam":  "sıra",
+        "POS":  "",
+        "Notlar":  "KBD sozluk: 25.Rus-Ady_UASP.json"
+    },
+    {
+        "ID":  "L-KBD-05689",
+        "Form":  "мало",
+        "Anlam":  "bi̇raz, kismen",
+        "POS":  "",
+        "Notlar":  "KBD sozluk: 25.Rus-Ady_UASP.json"
+    },
+    {
+        "ID":  "L-KBD-05690",
+        "Form":  "меч",
+        "Anlam":  "kilic",
+        "POS":  "",
+        "Notlar":  "KBD sozluk: 25.Rus-Ady_UASP.json"
+    },
+    {
+        "ID":  "L-KBD-05772",
+        "Form":  "ум",
+        "Anlam":  "büyücü",
+        "POS":  "",
+        "Notlar":  "KBD sozluk: 25.Rus-Ady_UASP.json"
+    },
+    {
+        "ID":  "L-KBD-05778",
+        "Form":  "ход",
+        "Anlam":  "süreç",
+        "POS":  "",
+        "Notlar":  "KBD sozluk: 25.Rus-Ady_UASP.json"
+    },
+    {
+        "ID":  "L-KBD-05792",
+        "Form":  "шея",
+        "Anlam":  "boyun",
+        "POS":  "",
+        "Notlar":  "KBD sozluk: 25.Rus-Ady_UASP.json"
+    },
+    {
+        "ID":  "L-KBD-05794",
+        "Form":  "шуметь",
+        "Anlam":  "bağirmak",
+        "POS":  "",
+        "Notlar":  "KBD sozluk: 25.Rus-Ady_UASP.json"
+    },
+    {
+        "ID":  "L-BZESHCH-ENYGHE",
+        "Form":  "бзэщӏэныгъэ",
+        "Anlam":  "dil bilim",
+        "POS":  "noun",
+        "Notlar":  "Kaynak: 1.Ady-Ady_AP.json, 5.Ady-Rus_Qarden.json"
+    },
+    {
+        "ID":  "L-ZADEU",
+        "Form":  "задэу",
+        "Anlam":  "DIKEY",
+        "POS":  "noun",
+        "Notlar":  "Kaynak: 1.Ady-Ady_AP.json, 20.Kbd-Ru-Jonty.json"
+    },
+    {
+        "ID":  "L-KUEEGHUSHCH-YGHU",
+        "Form":  "къуэгъущӏыгъу",
+        "Anlam":  "OLACAK",
+        "POS":  "noun",
+        "Notlar":  "Kaynak: 19.Kbd-Ru-2-Jonty.json, 20.Kbd-Ru-Jonty.json"
+    },
+    {
+        "ID":  "L-CHIYLHERYK-UE",
+        "Form":  "чийлъэрыкӏуэ",
+        "Anlam":  "Çit",
+        "POS":  "noun",
+        "Notlar":  "Kaynak: 5.Ady-Rus_Qarden.json, 1.Ady-Ady_AP.json"
+    },
+    {
+        "ID":  "L-GIEN",
+        "Form":  "гиен",
+        "Anlam":  "SIRTLAN",
+        "POS":  "noun",
+        "Notlar":  "Kaynak: 1.Ady-Ady_AP.json, 5.Ady-Rus_Qarden.json"
+    },
+    {
+        "ID":  "L-ZY-URAMYLHHEZH",
+        "Form":  "зыӏурамылъхьэж",
+        "Anlam":  "PISIRIK",
+        "POS":  "noun",
+        "Notlar":  "Kaynak: 1.Ady-Ady_AP.json"
+    },
+    {
+        "ID":  "L-ZHYLEDES",
+        "Form":  "жылэдэс",
+        "Anlam":  "[AUTO] freq=60",
+        "POS":  "noun",
+        "Notlar":  "Kaynak: 1.Ady-Ady_AP.json, 5.Ady-Rus_Qarden.json"
+    },
+    {
+        "ID":  "L-ZHEZNECH",
+        "Form":  "жэзнэч",
+        "Anlam":  "simge",
+        "POS":  "noun",
+        "Notlar":  "Kaynak: 1.Ady-Ady_AP.json"
+    },
+    {
+        "ID":  "L-TAUCHELMYSHCH",
+        "Form":  "таучэлмыщӏ",
+        "Anlam":  "KARARSIZ",
+        "POS":  "noun",
+        "Notlar":  "Kaynak: 1.Ady-Ady_AP.json"
+    },
+    {
+        "ID":  "L-EXYGHUE",
+        "Form":  "ехыгъуэ",
+        "Anlam":  "YOKUŞ",
+        "POS":  "noun",
+        "Notlar":  "Kaynak: 1.Ady-Ady_AP.json"
+    },
+    {
+        "ID":  "L-XENEV",
+        "Form":  "хэнэв",
+        "Anlam":  "KIZARMAK",
+        "POS":  "noun",
+        "Notlar":  "Kaynak: 1.Ady-Ady_AP.json"
+    },
+    {
+        "ID":  "L-ZHEUAP-E",
+        "Form":  "жьэуапӏэ",
+        "Anlam":  "Sundurma, hangar",
+        "POS":  "noun",
+        "Notlar":  "Kaynak: 19.Kbd-Ru-2-Jonty.json"
+    },
+    {
+        "ID":  "L-NAK-UEPAK-UEU",
+        "Form":  "накӏуэпакӏуэу",
+        "Anlam":  "DIKEY",
+        "POS":  "noun",
+        "Notlar":  "Kaynak: 5.Ady-Rus_Qarden.json"
+    },
+    {
+        "ID":  "L-XENLHYHYNSHEU",
+        "Form":  "хэнлъыхьыншэу",
+        "Anlam":  "hiç kesintiye uğramadan",
+        "POS":  "noun",
+        "Notlar":  "Kaynak: 5.Ady-Rus_Qarden.json"
+    },
+    {
+        "ID":  "L-SHCH-Y-AGHE",
+        "Form":  "щӏыӏагъэ",
+        "Anlam":  "BUZ",
+        "POS":  "noun",
+        "Notlar":  "Kaynak: 5.Ady-Rus_Qarden.json"
+    },
+    {
+        "ID":  "L-XUEMYXUGHE",
+        "Form":  "хуэмыхугъэ",
+        "Anlam":  "TEMBELLIK",
+        "POS":  "noun",
+        "Notlar":  "Kaynak: 1.Ady-Ady_AP.json"
+    },
+    {
+        "ID":  "L-USHCH-AXUE",
+        "Form":  "ӏущӏахуэ",
+        "Anlam":  "YONGA, TALAŞ",
+        "POS":  "noun",
+        "Notlar":  "Kaynak: 1.Ady-Ady_AP.json"
+    },
+    {
+        "ID":  "L-AKEMYKEYGHE",
+        "Form":  "акъмыкъыгъэ",
+        "Anlam":  "AHMAKÇA",
+        "POS":  "noun",
+        "Notlar":  "Kaynak: 1.Ady-Ady_AP.json"
+    },
+    {
+        "ID":  "L-PAGUAGHE",
+        "Form":  "пагуагъэ",
+        "Anlam":  "AHMAKÇA",
+        "POS":  "noun",
+        "Notlar":  "Kaynak: 5.Ady-Rus_Qarden.json"
+    },
+    {
+        "ID":  "L-AHMAKEYGHE",
+        "Form":  "ахьмакъыгъэ",
+        "Anlam":  "BAŞSIZLIK",
+        "POS":  "noun",
+        "Notlar":  "Kaynak: 1.Ady-Ady_AP.json"
+    },
+    {
+        "ID":  "L-BZERABZE",
+        "Form":  "бзэрабзэ",
+        "Anlam":  "cıvıldamak",
+        "POS":  "noun",
+        "Notlar":  "Kaynak: 19.Kbd-Ru-2-Jonty.json"
+    },
+    {
+        "ID":  "L-KUEESHCHYN",
+        "Form":  "къуэщын",
+        "Anlam":  "KÜNK",
+        "POS":  "noun",
+        "Notlar":  "Kaynak: 20.Kbd-Ru-Jonty.json"
+    },
+    {
+        "ID":  "L-LHAPEDEGHEZEIGHUE",
+        "Form":  "лъапэдэгъэзеигъуэ",
+        "Anlam":  "Ağır",
+        "POS":  "noun",
+        "Notlar":  "Kaynak: 1.Ady-Ady_AP.json"
+    },
+    {
+        "ID":  "L-NYUESHCH",
+        "Form":  "ныуэщ",
+        "Anlam":  "Sundurma, hangar",
+        "POS":  "noun",
+        "Notlar":  "Kaynak: 6.Ady-Rus_Sherdjes.json"
+    },
+    {
+        "ID":  "L-FOCHYKUU",
+        "Form":  "фочыкуу",
+        "Anlam":  "DIKEY",
+        "POS":  "noun",
+        "Notlar":  "Kaynak: 5.Ady-Rus_Qarden.json"
+    },
+    {
+        "ID":  "L-ZEXYGHE",
+        "Form":  "зэхыгъэ",
+        "Anlam":  "MEL\u0027UN",
+        "POS":  "noun",
+        "Notlar":  "Kaynak: 1.Ady-Ady_AP.json"
+    },
+    {
+        "ID":  "L-UXAPE",
+        "Form":  "ухапъэ",
+        "Anlam":  "Son, bitim",
+        "POS":  "noun",
+        "Notlar":  "Kaynak: 20.Kbd-Ru-Jonty.json"
+    },
+    {
+        "ID":  "L-KEYDEUN",
+        "Form":  "къыдэун",
+        "Anlam":  "AÇIKTAN",
+        "POS":  "noun",
+        "Notlar":  "Kaynak: 1.Ady-Ady_AP.json"
+    },
+    {
+        "ID":  "L-SEBEPYNAGHE",
+        "Form":  "сэбэпынагъэ",
+        "Anlam":  "FAYDALILIK",
+        "POS":  "noun",
+        "Notlar":  "Kaynak: 20.Kbd-Ru-Jonty.json"
+    },
+    {
+        "ID":  "L-UDYK-EXU",
+        "Form":  "удыкӏэху",
+        "Anlam":  "kus",
+        "POS":  "noun",
+        "Notlar":  "Kaynak: 1.Ady-Ady_AP.json"
+    },
+    {
+        "ID":  "L-TS-AK-E",
+        "Form":  "цӏакӏэ",
+        "Anlam":  "Sirke",
+        "POS":  "noun",
+        "Notlar":  "Kaynak: 1.Ady-Ady_AP.json"
+    },
+    {
+        "ID":  "L-UDYGHUAUE",
+        "Form":  "удыгъуауэ",
+        "Anlam":  "furtively",
+        "POS":  "noun",
+        "Notlar":  "Kaynak: 19.Kbd-Ru-2-Jonty.json"
+    },
+    {
+        "ID":  "L-BAR",
+        "Form":  "бар",
+        "Anlam":  "bar",
+        "POS":  "noun",
+        "Notlar":  "Kaynak: 19.Kbd-Ru-2-Jonty.json"
+    },
+    {
+        "ID":  "L-GIENE",
+        "Form":  "гиенэ",
+        "Anlam":  "hyena",
+        "POS":  "noun",
+        "Notlar":  "Kaynak: 19.Kbd-Ru-2-Jonty.json"
+    },
+    {
+        "ID":  "L-DIYAUE",
+        "Form":  "дияуэ",
+        "Anlam":  "Eğri ceset",
+        "POS":  "noun",
+        "Notlar":  "Kaynak: 19.Kbd-Ru-2-Jonty.json"
+    },
+    {
+        "ID":  "L-K-YHAGHE",
+        "Form":  "кӏыхьагъэ",
+        "Anlam":  "UZUNLUK",
+        "POS":  "noun",
+        "Notlar":  "Kaynak: 5.Ady-Rus_Qarden.json"
+    },
+    {
+        "ID":  "L-NOSTALGIE",
+        "Form":  "ностальгие",
+        "Anlam":  "nostalgia",
+        "POS":  "noun",
+        "Notlar":  "Kaynak: 19.Kbd-Ru-2-Jonty.json"
+    },
+    {
+        "ID":  "L-NOSTALGICHESKE",
+        "Form":  "ностальгическэ",
+        "Anlam":  "nostalgic",
+        "POS":  "noun",
+        "Notlar":  "Kaynak: 19.Kbd-Ru-2-Jonty.json"
+    },
+    {
+        "ID":  "L-PSORIAZ",
+        "Form":  "псориаз",
+        "Anlam":  "psoriasis",
+        "POS":  "noun",
+        "Notlar":  "Kaynak: 19.Kbd-Ru-2-Jonty.json"
+    },
+    {
+        "ID":  "L-UZURPATSIE",
+        "Form":  "узурпацие",
+        "Anlam":  "usurpation",
+        "POS":  "noun",
+        "Notlar":  "Kaynak: 5.Ady-Rus_Qarden.json"
+    },
+    {
+        "ID":  "L-XENYN",
+        "Form":  "хэнын",
+        "Anlam":  "MAHRUM",
+        "POS":  "noun",
+        "Notlar":  "Kaynak: 5.Ady-Rus_Qarden.json"
+    },
+    {
+        "ID":  "L-P-YT-A-XUZA",
+        "Form":  "пӏытӏа-хуза",
+        "Anlam":  "utangaç",
+        "POS":  "noun",
+        "Notlar":  "Kaynak: 1.Ady-Ady_AP.json | öncelik: 5 | kavram: 3 | POS otomatik (doğrulanmalı)"
+    },
+    {
+        "ID":  "L-AUTO-00020",
+        "Form":  "бащ",
+        "Anlam":  "söğüt",
+        "POS":  null,
+        "Notlar":  "[MANUEL] 200 kelimelik liste"
+    },
+    {
+        "ID":  "L-AUTO-00721",
+        "Form":  "кӏэрыутӏыпщу",
+        "Anlam":  "-siz",
+        "POS":  null,
+        "Notlar":  "[1.AP]"
+    },
+    {
+        "ID":  "L-AUTO-00731",
+        "Form":  "кууагъ",
+        "Anlam":  "derinlik",
+        "POS":  null,
+        "Notlar":  "[1.AP] | Kavram \u0027UNKNOWN\u0027 geçersiz (sayı/gün/ay/belirsiz) olduğu için boşaltıldı."
+    },
+    {
+        "ID":  "L-AUTO-00732",
+        "Form":  "куутӏ",
+        "Anlam":  "mesken",
+        "POS":  null,
+        "Notlar":  "[1.AP]"
+    },
+    {
+        "ID":  "L-AUTO-01397",
+        "Form":  "изыщэ щӏын",
+        "Anlam":  "{\u0027meaning\u0027: \u0027kaplamak\u0027, \u0027examples\u0027: []}",
+        "POS":  null,
+        "Notlar":  "[Jonty]"
+    },
+    {
+        "ID":  "L-AUTO-01511",
+        "Form":  "псом нэхъыбэу",
+        "Anlam":  "{\u0027meaning\u0027: \u0027esasen\u0027, \u0027examples\u0027: []}",
+        "POS":  null,
+        "Notlar":  "[Jonty]"
+    },
+    {
+        "ID":  "L-AUTO-01512",
+        "Form":  "псом хуэмыдэу",
+        "Anlam":  "{\u0027meaning\u0027: \u0027özellikle\u0027, \u0027examples\u0027: []}",
+        "POS":  null,
+        "Notlar":  "[Jonty]"
+    },
+    {
+        "ID":  "L-AUTO-01513",
+        "Form":  "псом яй",
+        "Anlam":  "{\u0027meaning\u0027: \u0027ortak\u0027, \u0027examples\u0027: []}",
+        "POS":  null,
+        "Notlar":  "[Jonty]"
+    },
+    {
+        "ID":  "L-AUTO-01514",
+        "Form":  "псоми зэдай",
+        "Anlam":  "{\u0027meaning\u0027: \u0027toplam\u0027, \u0027examples\u0027: []}",
+        "POS":  null,
+        "Notlar":  "[Jonty]"
+    },
+    {
+        "ID":  "L-AUTO-01515",
+        "Form":  "псоми зэхаху",
+        "Anlam":  "{\u0027meaning\u0027: \u0027resmen\u0027, \u0027examples\u0027: []}",
+        "POS":  null,
+        "Notlar":  "[Jonty]"
+    },
+    {
+        "ID":  "L-AUTO-01516",
+        "Form":  "псоми къыпычауэ",
+        "Anlam":  "{\u0027meaning\u0027: \u0027ıssız\u0027, \u0027examples\u0027: []}",
+        "POS":  null,
+        "Notlar":  "[Jonty]"
+    },
+    {
+        "ID":  "L-AUTO-01517",
+        "Form":  "псоми пыупщӏауэ",
+        "Anlam":  "{\u0027meaning\u0027: \u0027izolasyon\u0027, \u0027examples\u0027: []}",
+        "POS":  null,
+        "Notlar":  "[Jonty]"
+    },
+    {
+        "ID":  "L-AUTO-01518",
+        "Form":  "псоми хуэгъэза",
+        "Anlam":  "{\u0027meaning\u0027: \u0027genel\u0027, \u0027examples\u0027: []}",
+        "POS":  null,
+        "Notlar":  "[Jonty]"
+    },
+    {
+        "ID":  "L-AUTO-01519",
+        "Form":  "псори зыфӏэгъэщӏэгъуэн",
+        "Anlam":  "{\u0027meaning\u0027: \u0027merak\u0027, \u0027examples\u0027: []}",
+        "POS":  null,
+        "Notlar":  "[Jonty]"
+    },
+    {
+        "ID":  "L-AUTO-01520",
+        "Form":  "псори зыхэту",
+        "Anlam":  "{\u0027meaning\u0027: \u0027tümüyle\u0027, \u0027examples\u0027: []}",
+        "POS":  null,
+        "Notlar":  "[Jonty]"
+    },
+    {
+        "ID":  "L-AUTO-01521",
+        "Form":  "псори зэпэлъытауэ",
+        "Anlam":  "{\u0027meaning\u0027: \u0027dengeli\u0027, \u0027examples\u0027: []}",
+        "POS":  null,
+        "Notlar":  "[Jonty]"
+    },
+    {
+        "ID":  "L-AUTO-01522",
+        "Form":  "псори къызэщӏэзубыдэ",
+        "Anlam":  "{\u0027meaning\u0027: \u0027kapsamlı\u0027, \u0027examples\u0027: []}",
+        "POS":  null,
+        "Notlar":  "[Jonty]"
+    },
+    {
+        "ID":  "L-ZHYL_1",
+        "Form":  "жылэдэс",
+        "Anlam":  "yerlesik; koyde oturan",
+        "POS":  "noun",
+        "Notlar":  "P3 auto-generated from orphan root R-ZHYL_1 - yerlesik; koyde oturan"
+    },
+    {
+        "ID":  "L-NEKH_3",
+        "Form":  "нэхъыщӏэ",
+        "Anlam":  "genclik; yenilik",
+        "POS":  "noun",
+        "Notlar":  "P3 auto-generated from orphan root R-NEKH_3 - genclik; yenilik"
+    },
+    {
+        "ID":  "L-SHCHIY_2",
+        "Form":  "щӏыӏагъэ",
+        "Anlam":  "sogukluk",
+        "POS":  "noun",
+        "Notlar":  "P3 auto-generated from orphan root R-SHCHIY_2 - sogukluk"
+    },
+    {
+        "ID":  "L-KIY",
+        "Form":  "кӏыхьагъэ",
+        "Anlam":  "uzunluk",
+        "POS":  "noun",
+        "Notlar":  "P3 auto-generated from orphan root R-KIY - uzunluk"
+    },
+    {
+        "ID":  "L-KIO",
+        "Form":  "кӏон",
+        "Anlam":  "кӀон",
+        "POS":  "noun",
+        "Notlar":  "P3 auto-generated from orphan root R-KIO - кӏон"
+    },
+    {
+        "ID":  "L-KOTS",
+        "Form":  "коц",
+        "Anlam":  "коц",
+        "POS":  "noun",
+        "Notlar":  "P3 auto-generated from orphan root R-KOTS - коц"
+    },
+    {
+        "ID":  "L-SAY",
+        "Form":  "сай",
+        "Anlam":  "сай",
+        "POS":  "noun",
+        "Notlar":  "P3 auto-generated from orphan root R-SAY - сай"
+    },
+    {
+        "ID":  "L-ZHEZ",
+        "Form":  "жэз",
+        "Anlam":  "жэз",
+        "POS":  "noun",
+        "Notlar":  "P3 auto-generated from orphan root R-ZHEZ - жэз"
+    },
+    {
+        "ID":  "L-ETA",
+        "Form":  "ета",
+        "Anlam":  "ета",
+        "POS":  "noun",
+        "Notlar":  "P3 auto-generated from orphan root R-ETA - ета | Kavram \u0027UNKNOWN\u0027 geçersiz (sayı/gün/ay/belirsiz) olduğu için boşaltıldı."
+    },
+    {
+        "ID":  "L-UDY",
+        "Form":  "уды",
+        "Anlam":  "уды",
+        "POS":  "noun",
+        "Notlar":  "P3 auto-generated from orphan root R-UDY - уды"
+    },
+    {
+        "ID":  "L-IOF",
+        "Form":  "ӏоф",
+        "Anlam":  "Ӏоф",
+        "POS":  "noun",
+        "Notlar":  "P3 auto-generated from orphan root R-IOF - ӏоф"
+    },
+    {
+        "ID":  "L-SHKHO",
+        "Form":  "шхонч",
+        "Anlam":  "шхонч",
+        "POS":  "noun",
+        "Notlar":  "P3 auto-generated from orphan root R-SHKHO - шхонч"
+    },
+    {
+        "ID":  "L-IZY",
+        "Form":  "изы",
+        "Anlam":  "изы",
+        "POS":  "noun",
+        "Notlar":  "P3 auto-generated from orphan root R-IZY - изы"
+    },
+    {
+        "ID":  "L-ODY",
+        "Form":  "оды",
+        "Anlam":  "оды",
+        "POS":  "noun",
+        "Notlar":  "P3 auto-generated from orphan root R-ODY - оды"
+    },
+    {
+        "ID":  "L-GYZ",
+        "Form":  "гыз",
+        "Anlam":  "гыз",
+        "POS":  "noun",
+        "Notlar":  "P3 auto-generated from orphan root R-GYZ - гыз"
+    },
+    {
+        "ID":  "L-PYI",
+        "Form":  "пыи",
+        "Anlam":  "пыи",
+        "POS":  "noun",
+        "Notlar":  "P3 auto-generated from orphan root R-PYI - пыи"
+    },
+    {
+        "ID":  "L-NOS",
+        "Form":  "нос",
+        "Anlam":  "нос",
+        "POS":  "noun",
+        "Notlar":  "P3 auto-generated from orphan root R-NOS - нос"
+    },
+    {
+        "ID":  "L-ZYN",
+        "Form":  "зын",
+        "Anlam":  "зын",
+        "POS":  "noun",
+        "Notlar":  "P3 auto-generated from orphan root R-ZYN - зын"
+    },
+    {
+        "ID":  "L-NYO",
+        "Form":  "ныо",
+        "Anlam":  "ныо",
+        "POS":  "noun",
+        "Notlar":  "P3 auto-generated from orphan root R-NYO - ныо"
+    },
+    {
+        "ID":  "L-CHIY",
+        "Form":  "чий",
+        "Anlam":  "чий",
+        "POS":  "noun",
+        "Notlar":  "P3 auto-generated from orphan root R-CHIY - чий"
+    },
+    {
+        "ID":  "L-DIYA",
+        "Form":  "дия",
+        "Anlam":  "дия",
+        "POS":  "noun",
+        "Notlar":  "P3 auto-generated from orphan root R-DIYA - дия"
+    },
+    {
+        "ID":  "L-GIE",
+        "Form":  "гие",
+        "Anlam":  "гие",
+        "POS":  "noun",
+        "Notlar":  "P3 auto-generated from orphan root R-GIE - гие"
+    },
+    {
+        "ID":  "L-GYE",
+        "Form":  "гые",
+        "Anlam":  "гые",
+        "POS":  "noun",
+        "Notlar":  "P3 auto-generated from orphan root R-GYE - гые"
+    },
+    {
+        "ID":  "L-SHCHIZ",
+        "Form":  "щиз",
+        "Anlam":  "щиз",
+        "POS":  "noun",
+        "Notlar":  "P3 auto-generated from orphan root R-SHCHIZ - щиз"
+    },
+    {
+        "ID":  "L-UKHA",
+        "Form":  "уха",
+        "Anlam":  "уха",
+        "POS":  "noun",
+        "Notlar":  "P3 auto-generated from orphan root R-UKHA - уха"
+    },
+    {
+        "ID":  "L-UZU",
+        "Form":  "узу",
+        "Anlam":  "узу",
+        "POS":  "noun",
+        "Notlar":  "P3 auto-generated from orphan root R-UZU - узу"
+    },
+    {
+        "ID":  "L-PU-2",
+        "Form":  "пу",
+        "Anlam":  "Kaynayan, coşkulu",
+        "POS":  "noun",
+        "Notlar":  "Corpus v1.0 (freq: 11, lang: kbd, source: 1.Ady-Ady_AP) [ANIMAL etiketinden cikarildi] | unlem \u0027pu\u0027 - yanlis burun koku baglantisi temizlendi | unlem \u0027pu\u0027 - yanlis burun koku baglantisi temizlendi"
+    }
+]
