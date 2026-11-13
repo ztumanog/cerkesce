@@ -1352,8 +1352,8 @@
       "L-TKHEN",
       "L-GHATXE",
       "L-GHATKHEPE",
-      "L-CORPUS-00109",
-      "L-CORPUS-00218"
+      "L-DETXENE",
+      "L-DETXENEMI"
     ],
     "notes": "derivation.components taramasindan uretildi; kaynak: lexeme.translations.tr; 80 lexeme'de bilesen"
   },
@@ -1391,10 +1391,10 @@
     "gloss": "göğüs",
     "type": "lexical",
     "exampleLexemeIds": [
-      "L-CORPUS-00771",
-      "L-CORPUS-01522",
-      "L-CORPUS-01776",
-      "L-CORPUS-01906"
+      "L-ZHYBGHE",
+      "L-BGHEDYHEN",
+      "L-GUBGHEN",
+      "L-BGHEDESYN"
     ],
     "notes": "derivation.components taramasindan uretildi; kaynak: lexeme.literalMeaning; 77 lexeme'de bilesen"
   },
@@ -1483,11 +1483,11 @@
     "type": "lexical",
     "dialect": "kabardian",
     "exampleLexemeIds": [
-      "L-CORPUS-00201",
-      "L-CORPUS-00681",
-      "L-CORPUS-00896",
-      "L-CORPUS-01405",
-      "L-CORPUS-01610"
+      "L-MYLHKU",
+      "L-MYL",
+      "L-EMYLHYTAUE",
+      "L-KEAMYL",
+      "L-GHUEMYLE"
     ],
     "notes": "derivation.components taramasindan uretildi; kaynak: lexeme.translations.tr; 61 lexeme'de bilesen"
   },
@@ -1534,10 +1534,10 @@
     "dialect": "adyghe",
     "exampleLexemeIds": [
       "L-CHEREZ",
-      "L-CORPUS-00363",
-      "L-CORPUS-00467",
-      "L-CORPUS-00560",
-      "L-CORPUS-00627"
+      "L-CHESHCHYM",
+      "L-CHESHCH",
+      "L-CHENDZHESHCH",
+      "L-CHETEN"
     ],
     "notes": "derivation.components taramasindan uretildi; kaynak: lexeme.literalMeaning; 51 lexeme'de bilesen"
   },
@@ -1550,10 +1550,10 @@
     "dialect": "adyghe",
     "exampleLexemeIds": [
       "L-SHKHEN",
-      "L-CORPUS-00790",
-      "L-CORPUS-00928",
-      "L-CORPUS-01030",
-      "L-CORPUS-01120"
+      "L-GHESHXEN",
+      "L-SHEDZHAGHUASHXE",
+      "L-MASHXE",
+      "L-DYHESHXEN"
     ],
     "notes": "derivation.components taramasindan uretildi; kaynak: lexeme.literalMeaning; 45 lexeme'de bilesen"
   },
@@ -1580,7 +1580,7 @@
       "L-MELHXEGHU",
       "L-MEL",
       "L-MELYL",
-      "L-CORPUS-00796"
+      "L-MELAZHE"
     ],
     "notes": "derivation.components taramasindan uretildi; kaynak: lexeme.literalMeaning; 37 lexeme'de bilesen"
   },
@@ -1591,9 +1591,9 @@
     "exampleLexemeIds": [
       "L-PSELHYQHU",
       "L-PSELHEN",
-      "L-CORPUS-00564",
-      "L-CORPUS-00972",
-      "L-CORPUS-01520"
+      "L-TEPSELHYHYN",
+      "L-EPSELHEN",
+      "L-KEEPSELHEN"
     ],
     "notes": "derivation.components taramasindan uretildi; ANLAM KANITI YOK (gloss bos); 36 lexeme'de bilesen"
   },
@@ -1605,10 +1605,10 @@
     "type": "lexical",
     "exampleLexemeIds": [
       "L-IN",
-      "L-CORPUS-00182",
-      "L-CORPUS-00290",
-      "L-CORPUS-00549",
-      "L-CORPUS-01686"
+      "L-INU",
+      "L-INEU",
+      "L-INY",
+      "L-INYSHXUE"
     ],
     "notes": "derivation.components taramasindan uretildi; kaynak: lexeme.literalMeaning; 35 lexeme'de bilesen"
   },
@@ -1640,8 +1640,8 @@
     "type": "lexical",
     "exampleLexemeIds": [
       "L-BGY",
-      "L-CORPUS-00086",
-      "L-CORPUS-01372"
+      "L-NEBGYRE",
+      "L-BGYRYPX"
     ],
     "notes": "derivation.components taramasindan uretildi; kaynak: lexeme.literalMeaning; 34 lexeme'de bilesen"
   },
@@ -1655,7 +1655,7 @@
       "L-SHHYEGUBZHE",
       "L-UNEBZHE",
       "L-GHUABZHE",
-      "L-D0B1D0B6D18D"
+      "L-BZHE-2"
     ],
     "notes": "derivation.components taramasindan uretildi; kaynak: lexeme.literalMeaning; 29 lexeme'de bilesen"
   },
@@ -1702,10 +1702,10 @@
     "type": "lexical",
     "exampleLexemeIds": [
       "L-KHABZE",
-      "L-CORPUS-01016",
-      "L-CORPUS-01602",
-      "L-CORPUS-02204",
-      "L-CORPUS-02273"
+      "L-XABZENSHAGHE",
+      "L-SHCHENXABZE",
+      "L-XABZEZH",
+      "L-XABZENSHE"
     ],
     "notes": "derivation.components taramasindan uretildi; kaynak: lexeme.literalMeaning; 27 lexeme'de bilesen"
   },
@@ -1765,9 +1765,9 @@
     "type": "lexical",
     "exampleLexemeIds": [
       "L-ZHEM",
-      "L-CORPUS-01786",
-      "L-CORPUS-03130",
-      "L-CORPUS-03732"
+      "L-BZHEMYSHX",
+      "L-DZHEMYSHX",
+      "L-ZHEMYSH"
     ],
     "notes": "derivation.components taramasindan uretildi; kaynak: lexeme.literalMeaning; 23 lexeme'de bilesen"
   },
@@ -1780,9 +1780,9 @@
     "exampleLexemeIds": [
       "L-MAKHUESHHUE",
       "L-UESHX",
-      "L-CORPUS-02199",
-      "L-CORPUS-02951",
-      "L-CORPUS-04677"
+      "L-UESHXYSHXUE",
+      "L-XUESHXEN",
+      "L-ZAUESHXUE"
     ],
     "notes": "derivation.components taramasindan uretildi; kaynak: lexeme.literalMeaning; 22 lexeme'de bilesen"
   },
@@ -1794,11 +1794,11 @@
     "type": "lexical",
     "dialect": "kabardian",
     "exampleLexemeIds": [
-      "L-CORPUS-00401",
-      "L-CORPUS-00604",
-      "L-CORPUS-02153",
-      "L-CORPUS-03035",
-      "L-CORPUS-04461"
+      "L-PSHER",
+      "L-PSHE",
+      "L-PSHEPLH",
+      "L-KHARPSHER",
+      "L-PSHEN"
     ],
     "notes": "derivation.components taramasindan uretildi; kaynak: lexeme.literalMeaning; 21 lexeme'de bilesen"
   },
@@ -1816,8 +1816,8 @@
     "exampleLexemeIds": [
       "L-SHHXHUE",
       "L-KASHCHXHUE",
-      "L-CORPUS-00483",
-      "L-CORPUS-00505"
+      "L-GURYSHCHKHUE",
+      "L-XUSHCHKHUE"
     ],
     "notes": "derivation.components taramasindan uretildi; kaynak: lexeme.literalMeaning; 19 lexeme'de bilesen"
   },
@@ -1830,7 +1830,7 @@
     "exampleLexemeIds": [
       "L-DYGHEGHEZ",
       "L-DYGHE",
-      "L-CORPUS-00507"
+      "L-UEZDYGHE"
     ],
     "notes": "derivation.components taramasindan uretildi; kaynak: lexeme.literalMeaning; 19 lexeme'de bilesen"
   },
@@ -1848,7 +1848,7 @@
     "exampleLexemeIds": [
       "L-FO",
       "L-FOSHYGHU",
-      "L-CORPUS-00589"
+      "L-FOCH"
     ],
     "notes": "derivation.components taramasindan uretildi; kaynak: root.primaryMeaning; 18 lexeme'de bilesen"
   },
@@ -1860,8 +1860,8 @@
     "type": "lexical",
     "exampleLexemeIds": [
       "L-LY",
-      "L-CORPUS-01249",
-      "L-CORPUS-02265"
+      "L-LYD",
+      "L-LYGHE"
     ],
     "notes": "derivation.components taramasindan uretildi; kaynak: lexeme.literalMeaning; 18 lexeme'de bilesen"
   },
@@ -1874,10 +1874,10 @@
     "dialect": "adyghe",
     "exampleLexemeIds": [
       "L-MEZCHET",
-      "L-CORPUS-00627",
-      "L-CORPUS-02311",
-      "L-CORPUS-02459",
-      "L-CORPUS-02886"
+      "L-CHETEN",
+      "L-HERYCHET",
+      "L-BERYCHET",
+      "L-CHET"
     ],
     "notes": "derivation.components taramasindan uretildi; kaynak: lexeme.literalMeaning; 18 lexeme'de bilesen"
   },
@@ -1890,10 +1890,10 @@
     "dialect": "adyghe",
     "exampleLexemeIds": [
       "L-PSEY",
-      "L-CORPUS-00891",
-      "L-CORPUS-01300",
-      "L-CORPUS-02350",
-      "L-CORPUS-03138"
+      "L-OSTYGHE",
+      "L-OS",
+      "L-OSYET",
+      "L-OSTYGH"
     ],
     "notes": "derivation.components taramasindan uretildi; kaynak: 8.Ady-Tur_Huvaj.json (sozluk); 15 lexeme'de bilesen"
   },
@@ -1911,7 +1911,7 @@
     "exampleLexemeIds": [
       "L-BZU",
       "L-PSYBZU",
-      "L-CORPUS-01410"
+      "L-KUEALEBZU"
     ],
     "notes": "derivation.components taramasindan uretildi; kaynak: root.primaryMeaning; 11 lexeme'de bilesen"
   },
@@ -1928,8 +1928,8 @@
     },
     "exampleLexemeIds": [
       "L-PLHYZH",
-      "L-CORPUS-01190",
-      "L-CORPUS-03920"
+      "L-PLHYZHY",
+      "L-PLHYZHYFE"
     ],
     "notes": "derivation.components taramasindan uretildi; kaynak: lexeme.literalMeaning; 11 lexeme'de bilesen"
   },
@@ -1941,7 +1941,7 @@
     "type": "lexical",
     "exampleLexemeIds": [
       "L-FOSHYGHU",
-      "L-CORPUS-01723"
+      "L-ZESHYGHUE"
     ],
     "notes": "derivation.components taramasindan uretildi; kaynak: lexeme.literalMeaning; 10 lexeme'de bilesen"
   },
@@ -1958,7 +1958,7 @@
     },
     "exampleLexemeIds": [
       "L-MAZE",
-      "L-CORPUS-03702"
+      "L-MAZEGHUE"
     ],
     "notes": "derivation.components taramasindan uretildi; kaynak: lexeme.literalMeaning; 10 lexeme'de bilesen"
   },
@@ -1975,10 +1975,10 @@
     },
     "exampleLexemeIds": [
       "L-KHUZH",
-      "L-CORPUS-01866",
-      "L-CORPUS-03464",
-      "L-CORPUS-04126",
-      "L-CORPUS-04211"
+      "L-XUZHU",
+      "L-EXUZHEN",
+      "L-XUZHYFE",
+      "L-SHXUZH"
     ],
     "notes": "derivation.components taramasindan uretildi; kaynak: lexeme.literalMeaning; 9 lexeme'de bilesen"
   },
@@ -1990,8 +1990,8 @@
     "type": "lexical",
     "exampleLexemeIds": [
       "L-MYVE",
-      "L-CORPUS-03867",
-      "L-CORPUS-04674"
+      "L-ABREMYVE",
+      "L-MYKHEMYVE"
     ],
     "notes": "derivation.components taramasindan uretildi; kaynak: lexeme.literalMeaning; 9 lexeme'de bilesen"
   },
@@ -2008,7 +2008,7 @@
     },
     "exampleLexemeIds": [
       "L-VAGHUE",
-      "L-CORPUS-03204"
+      "L-VAGHUEIZH"
     ],
     "notes": "derivation.components taramasindan uretildi; kaynak: lexeme.literalMeaning; 9 lexeme'de bilesen"
   },
@@ -2026,8 +2026,8 @@
     "exampleLexemeIds": [
       "L-DAGHE",
       "L-SH1YDAGHE",
-      "L-CORPUS-00906",
-      "L-CORPUS-01152"
+      "L-DAGHER",
+      "L-BYDAGHE"
     ],
     "notes": "derivation.components taramasindan uretildi; kaynak: root.primaryMeaning; 8 lexeme'de bilesen"
   },
@@ -2037,7 +2037,7 @@
     "gloss": "",
     "exampleLexemeIds": [
       "L-GHUELHYN",
-      "L-CORPUS-04175",
+      "L-IGHUELHHEN",
       "L-VERIFIED-00251"
     ],
     "notes": "derivation.components taramasindan uretildi; ANLAM KANITI YOK (gloss bos); 8 lexeme'de bilesen"
@@ -2050,7 +2050,7 @@
     "type": "lexical",
     "exampleLexemeIds": [
       "L-SABIY",
-      "L-CORPUS-00206"
+      "L-SABIYXER"
     ],
     "notes": "derivation.components taramasindan uretildi; kaynak: lexeme.literalMeaning; 7 lexeme'de bilesen"
   },
@@ -2073,8 +2073,8 @@
     "type": "lexical",
     "exampleLexemeIds": [
       "L-DYSHE",
-      "L-CORPUS-01091",
-      "L-CORPUS-04184"
+      "L-KUEDYSHCHE",
+      "L-DYSHCHEPS"
     ],
     "notes": "derivation.components taramasindan uretildi; kaynak: lexeme.literalMeaning; 7 lexeme'de bilesen"
   },
@@ -2083,7 +2083,7 @@
     "form": "тэт",
     "gloss": "",
     "exampleLexemeIds": [
-      "L-CORPUS-02563",
+      "L-TETER",
       "L-VERIFIED-01652"
     ],
     "notes": "derivation.components taramasindan uretildi; ANLAM KANITI YOK (gloss bos); 6 lexeme'de bilesen"
@@ -2115,8 +2115,8 @@
     "exampleLexemeIds": [
       "L-GHUEZHY",
       "L-DEGHUEZH",
-      "L-CORPUS-03756",
-      "L-CORPUS-04744",
+      "L-GHUEZHKUIY",
+      "L-GHUEZHYFE",
       "L-VERIFIED-01308"
     ],
     "notes": "derivation.components taramasindan uretildi; kaynak: lexeme.literalMeaning; 6 lexeme'de bilesen"
@@ -2144,7 +2144,7 @@
     "type": "lexical",
     "dialect": "kabardian",
     "exampleLexemeIds": [
-      "L-CORPUS-01174",
+      "L-SANE",
       "L-VERIFIED-00289"
     ],
     "notes": "derivation.components taramasindan uretildi; kaynak: lexeme.translations.tr; 6 lexeme'de bilesen"
@@ -2156,7 +2156,7 @@
     "gloss": "sandalye",
     "type": "lexical",
     "exampleLexemeIds": [
-      "L-CORPUS-04359"
+      "L-SHENTIUE"
     ],
     "notes": "derivation.components taramasindan uretildi; kaynak: lexeme.literalMeaning; 5 lexeme'de bilesen"
   },
@@ -2167,7 +2167,7 @@
     "gloss": "gümüş",
     "type": "lexical",
     "exampleLexemeIds": [
-      "L-CORPUS2-00321",
+      "L-MYK-ODYZHYN",
       "L-VERIFIED-02278",
       "L-VERIFIED-02302"
     ],
@@ -2181,7 +2181,7 @@
     "type": "lexical",
     "dialect": "kabardian",
     "exampleLexemeIds": [
-      "L-CORPUS-00584",
+      "L-DZHANE",
       "L-VERIFIED-00475"
     ],
     "notes": "derivation.components taramasindan uretildi; kaynak: lexeme.literalMeaning; 5 lexeme'de bilesen"
@@ -2199,7 +2199,7 @@
     },
     "exampleLexemeIds": [
       "L-VY",
-      "L-CORPUS-03500"
+      "L-VYND"
     ],
     "notes": "derivation.components taramasindan uretildi; kaynak: root.primaryMeaning; 4 lexeme'de bilesen"
   },
@@ -2232,7 +2232,7 @@
     "gloss": "keçi",
     "type": "lexical",
     "exampleLexemeIds": [
-      "L-CORPUS-03541"
+      "L-BZHENDEKHU"
     ],
     "notes": "derivation.components taramasindan uretildi; kaynak: lexeme.literalMeaning; 4 lexeme'de bilesen"
   },
@@ -2244,8 +2244,8 @@
     "type": "lexical",
     "dialect": "kabardian",
     "exampleLexemeIds": [
-      "L-CORPUS-01061",
-      "L-CORPUS-04800"
+      "L-BAZHE",
+      "L-NYBAZHE"
     ],
     "notes": "derivation.components taramasindan uretildi; kaynak: lexeme.literalMeaning; 4 lexeme'de bilesen"
   },
@@ -2312,7 +2312,7 @@
     "type": "lexical",
     "dialect": "kabardian",
     "exampleLexemeIds": [
-      "L-CORPUS-00271"
+      "L-BDZEZHEY"
     ],
     "notes": "derivation.components taramasindan uretildi; kaynak: lexeme.literalMeaning; 3 lexeme'de bilesen"
   },
@@ -2328,7 +2328,7 @@
       "kabardian": "вакъэ"
     },
     "exampleLexemeIds": [
-      "L-CORPUS-00349"
+      "L-VAKEE"
     ],
     "notes": "derivation.components taramasindan uretildi; kaynak: lexeme.literalMeaning; 3 lexeme'de bilesen"
   },
@@ -2396,7 +2396,7 @@
     "type": "lexical",
     "exampleLexemeIds": [
       "L-KHHE",
-      "L-CORPUS-01956"
+      "L-HEPSHYR"
     ],
     "notes": "derivation.components taramasindan uretildi; kaynak: lexeme.literalMeaning; 2 lexeme'de bilesen"
   },

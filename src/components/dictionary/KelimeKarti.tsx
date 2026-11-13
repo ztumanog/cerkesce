@@ -319,7 +319,7 @@ export const KelimeKarti: React.FC<KelimeKartiProps> = ({
         {data.conceptId && (
           <Link
             href={`/kavram/${data.conceptId.toLowerCase()}`}
-            onClick={(e) => e.stopPropagation()}
+            onMouseDown={(e) => e.stopPropagation()} onClick={(e) => e.stopPropagation()}
             className="text-[11px] px-2 py-0.5 rounded-md bg-slate-100 text-slate-700 hover:bg-slate-200 dark:bg-slate-800 dark:text-slate-300 dark:hover:bg-slate-700 font-medium transition-colors"
           >
             🏷️ {data.conceptId}
