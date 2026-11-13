@@ -727181,7 +727181,11 @@
     "conceptId": "FREEZE",
     "translations": {
       "ru": "озябнуть",
-      "tr": "DONMAK",
+      "tr": [
+        "buz kesmek",
+        "çok üşümek",
+        "donmak"
+      ],
       "en": "nepereh. ch. to freeze, to feel cold"
     },
     "ipa": "/pʼǝɕʼɐn/",
@@ -727203,7 +727207,11 @@
     "dialect": "KBD",
     "legacyIds": [
       "KAV-ПӀЫЩӀЭН"
-    ]
+    ],
+    "dialectVariants": {
+      "adyghe": "пӀыкӀэн",
+      "kabardian": "пӀыщӀэн"
+    }
   },
   {
     "id": "L-DYHEGH",
@@ -1161285,5 +1161293,218 @@
     },
     "conceptId": "OFFENDED_SULKING",
     "wordFamilyId": "WF-HUEGUSA"
+  },
+  {
+    "id": "L-PK-ENYCH",
+    "form": "пкӀэнычъ",
+    "dialect": "ADY",
+    "partOfSpeech": "adj",
+    "isLemma": true,
+    "conceptId": "VAIN_USELESS",
+    "wordFamilyId": "WF-PK-ENYCH",
+    "dialectVariants": {
+      "adyghe": "пкӀэнычъ",
+      "kabardian": "пщӀэншэ"
+    },
+    "translations": {
+      "tr": [
+        "boş",
+        "beyhude",
+        "yararsız"
+      ]
+    }
+  },
+  {
+    "id": "L-PSHCH-ENSHEUE",
+    "form": "пщӀэншэуэ",
+    "dialect": "KBD",
+    "partOfSpeech": "adv",
+    "isLemma": true,
+    "conceptId": "VAIN_USELESS",
+    "wordFamilyId": "WF-PSHCH-ENSHEUE",
+    "dialectVariants": {
+      "adyghe": "пкӀэнчъэу",
+      "kabardian": "пщӀэншэуэ"
+    },
+    "translations": {
+      "tr": [
+        "boşuna",
+        "beyhude yere"
+      ]
+    }
+  },
+  {
+    "id": "L-HAOLIY-VAR",
+    "form": "хьаолий",
+    "dialect": "ADY",
+    "partOfSpeech": "adj",
+    "isLemma": true,
+    "conceptId": "VAIN_USELESS",
+    "wordFamilyId": "WF-HAOLIY-VAR",
+    "dialectVariants": {
+      "adyghe": "хьаолий",
+      "kabardian": "хьэулей"
+    },
+    "translations": {
+      "tr": [
+        "boşuna",
+        "yararsız",
+        "beyhude"
+      ]
+    }
+  },
+  {
+    "id": "L-ZYUYSHCHYHYN",
+    "form": "зыӀуыщӀыхьын",
+    "dialect": "KBD",
+    "partOfSpeech": "verb",
+    "isLemma": true,
+    "conceptId": "CONTAMINATE_APPROACH",
+    "wordFamilyId": "WF-ZYUYSHCHYHYN",
+    "dialectVariants": {
+      "adyghe": "зыӀушӀыхьан",
+      "kabardian": "зыӀуыщӀыхьын"
+    },
+    "translations": {
+      "tr": [
+        "bulaşmak",
+        "yanaşmak"
+      ]
+    }
+  },
+  {
+    "id": "L-SHCH-EGHEMBYRYUEN",
+    "form": "щӀэгъэмбырыуэн",
+    "dialect": "KBD",
+    "partOfSpeech": "verb",
+    "isLemma": true,
+    "conceptId": "FUMIGATE_IMMERSE",
+    "wordFamilyId": "WF-SHCH-EGHEMBYRYUEN",
+    "dialectVariants": {
+      "adyghe": "чӀэгъэон",
+      "kabardian": "щӀэгъэмбырыуэн"
+    },
+    "translations": {
+      "tr": [
+        "tütsülemek",
+        "altına sokmak"
+      ]
+    }
+  },
+  {
+    "id": "L-FEGUBZHYGH",
+    "form": "фэгубжыгъ",
+    "dialect": "ADY",
+    "partOfSpeech": "adj",
+    "isLemma": true,
+    "conceptId": "OFFENDED_SULKING",
+    "wordFamilyId": "WF-FEGUBZHYGH",
+    "dialectVariants": {
+      "adyghe": "фэгубжыгъ",
+      "kabardian": "хуэгубжьа"
+    },
+    "translations": {
+      "tr": [
+        "dargın",
+        "kızgın",
+        "gücenmiş"
+      ]
+    }
+  },
+  {
+    "id": "L-HUEGUBZHA",
+    "form": "хуэгубжьа",
+    "dialect": "KBD",
+    "partOfSpeech": "adj",
+    "isLemma": true,
+    "conceptId": "OFFENDED_SULKING",
+    "wordFamilyId": "WF-HUEGUBZHA",
+    "dialectVariants": {
+      "adyghe": "фэгубжыгъ",
+      "kabardian": "хуэгубжьа"
+    },
+    "translations": {
+      "tr": [
+        "dargın",
+        "kızgın",
+        "gücenmiş"
+      ]
+    }
+  },
+  {
+    "id": "L-CHEGHEQON",
+    "form": "чӀэгъэкъон",
+    "dialect": "ADY",
+    "partOfSpeech": "verb",
+    "isLemma": true,
+    "conceptId": "LEAN_SUPPORT",
+    "wordFamilyId": "WF-CHEGHEQON",
+    "dialectVariants": {
+      "adyghe": "чӀэгъэкъон",
+      "kabardian": "щӀэгъэкъуэн"
+    },
+    "translations": {
+      "tr": [
+        "dayamak",
+        "desteklemek"
+      ]
+    }
+  },
+  {
+    "id": "L-SHCH-EGHEQUEN",
+    "form": "щӀэгъэкъуэн",
+    "dialect": "KBD",
+    "partOfSpeech": "verb",
+    "isLemma": true,
+    "conceptId": "LEAN_SUPPORT",
+    "wordFamilyId": "WF-SHCH-EGHEQUEN",
+    "dialectVariants": {
+      "adyghe": "чӀэгъэкъон",
+      "kabardian": "щӀэгъэкъуэн"
+    },
+    "translations": {
+      "tr": [
+        "dayamak",
+        "desteklemek"
+      ]
+    }
+  },
+  {
+    "id": "L-YEGHEK-YL-EN",
+    "form": "егъэкӀылӀэн",
+    "dialect": "ADY",
+    "partOfSpeech": "verb",
+    "isLemma": true,
+    "conceptId": "LEAN_SUPPORT",
+    "wordFamilyId": "WF-YEGHEK-YL-EN",
+    "dialectVariants": {
+      "adyghe": "егъэкӀылӀэн",
+      "kabardian": "егъэщӀылӀэн"
+    },
+    "translations": {
+      "tr": [
+        "dayamak",
+        "yaklaştırmak"
+      ]
+    }
+  },
+  {
+    "id": "L-YEGHESHCH-YL-EN",
+    "form": "егъэщӀылӀэн",
+    "dialect": "KBD",
+    "partOfSpeech": "verb",
+    "isLemma": true,
+    "conceptId": "LEAN_SUPPORT",
+    "wordFamilyId": "WF-YEGHESHCH-YL-EN",
+    "dialectVariants": {
+      "adyghe": "егъэкӀылӀэн",
+      "kabardian": "егъэщӀылӀэн"
+    },
+    "translations": {
+      "tr": [
+        "dayamak",
+        "yaklaştırmak"
+      ]
+    }
   }
 ]
