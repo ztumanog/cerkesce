@@ -30720,10 +30720,11 @@
   {
     "id": "R-ZHYI",
     "form": "жыӀэ",
-    "primaryMeaning": null,
+    "primaryMeaning": "şarkı söylemek",
     "productivity": {
       "corpusFrequency": 640,
-      "lemmaCount": 19
+      "lemmaCount": 19,
+      "lexemeCount": 21
     },
     "wordFamily": {
       "id": "WF-ZHYI",
@@ -30746,7 +30747,9 @@
         "L-ZHY-EGHUAF-E",
         "L-ZHY-ESHCH-EN",
         "L-ZHY-EDA-UEU",
-        "L-KEYZHY-EN"
+        "L-KEYZHY-EN",
+        "L-OREDZHY1EN",
+        "L-KBD-04651"
       ]
     },
     "lexemeIds": [
@@ -30768,7 +30771,9 @@
       "L-ZHY-EGHUAF-E",
       "L-ZHY-ESHCH-EN",
       "L-ZHY-EDA-UEU",
-      "L-KEYZHY-EN"
+      "L-KEYZHY-EN",
+      "L-OREDZHY1EN",
+      "L-KBD-04651"
     ]
   },
   {
@@ -60471,34 +60476,6 @@
         "L-AUTO-00585",
         "L-AUTO-00961",
         "L-AUTO-01215"
-      ]
-    }
-  },
-  {
-    "id": "R-ZHY1E",
-    "form": "жыӀэ",
-    "ipa": "",
-    "primaryMeaning": "şarkı söylemek",
-    "secondaryMeanings": [],
-    "semanticDomains": [
-      "SING",
-      "SAY"
-    ],
-    "lexemeIds": [
-      "L-OREDZHY1EN",
-      "L-KBD-04651"
-    ],
-    "productivity": {
-      "lexemeCount": 2,
-      "conceptCount": 2,
-      "lemmaCount": 2
-    },
-    "_source": "lexemes-sync-2026",
-    "wordFamily": {
-      "id": "WF-ZHY1E",
-      "lexemeIds": [
-        "L-OREDZHY1EN",
-        "L-KBD-04651"
       ]
     }
   },
@@ -161371,46 +161348,6 @@
     }
   },
   {
-    "id": "R-GUESH_2",
-    "form": "гуэш",
-    "ipa": "",
-    "primaryMeaning": "гуэш (legacy kök havuzundan terfi)",
-    "secondaryMeanings": [],
-    "semanticDomains": [],
-    "dialectVariants": {
-      "adyghe": "гуэш",
-      "kabardian": "гуэш"
-    },
-    "productivity": {
-      "lemmaCount": 17,
-      "corpusFrequency": 0,
-      "compoundCount": 0
-    },
-    "notes": "legacyRootForms havuzundan otomatik terfi (17 kelime kaydı).",
-    "wordFamily": {
-      "id": "WF-GUESH_2",
-      "lexemeIds": [
-        "L-GUESHYN",
-        "L-XUEGUESHYN",
-        "L-DEGUESHEN",
-        "L-ZYGUESHYN",
-        "L-VERIFIED-00404",
-        "L-VERIFIED-00723",
-        "L-VERIFIED-01842",
-        "L-KBD-00629",
-        "L-KBD-01574",
-        "L-KBD-02052",
-        "L-KBD-05570",
-        "L-GUESHEN",
-        "L-MYGUESH",
-        "L-UGUESHEN",
-        "L-SHCH-EGUESHEN",
-        "L-ZEDEGUESHEN",
-        "L-ZEBGRYGUESHYK-YN"
-      ]
-    }
-  },
-  {
     "id": "R-P1YT1",
     "form": "пӀытӀ",
     "ipa": "",
@@ -162184,40 +162121,6 @@
         "L-NESHCH-YBZE",
         "L-NESHCH-ESHCH",
         "L-EGUNESHCH-EGUDZHAFEU"
-      ]
-    }
-  },
-  {
-    "id": "R-GUBZH_2",
-    "form": "губжь",
-    "ipa": "",
-    "primaryMeaning": "губжь (legacy kök havuzundan terfi)",
-    "secondaryMeanings": [],
-    "semanticDomains": [],
-    "dialectVariants": {
-      "adyghe": "губжь",
-      "kabardian": "губжь"
-    },
-    "productivity": {
-      "lemmaCount": 11,
-      "corpusFrequency": 0,
-      "compoundCount": 0
-    },
-    "notes": "legacyRootForms havuzundan otomatik terfi (11 kelime kaydı).",
-    "wordFamily": {
-      "id": "WF-GUBZH_2",
-      "lexemeIds": [
-        "L-GUBZH-KBD",
-        "L-GUBZH-2",
-        "L-KEEGUBZHYN",
-        "L-GUBZHYN",
-        "L-VERIFIED-00419",
-        "L-VERIFIED-01741",
-        "L-VERIFIED-02357",
-        "L-KBD-01409",
-        "L-KBD-05220",
-        "L-KEEGUBZHYREY",
-        "L-KEEGUBZHYGHUAF-E"
       ]
     }
   },
@@ -166373,37 +166276,6 @@
     }
   },
   {
-    "id": "R-GWENYHH",
-    "form": "гуэныхь",
-    "ipa": "/gʷanəħ/",
-    "primaryMeaning": "günah",
-    "secondaryMeanings": [
-      "günahkâr, kabahatli",
-      "kusursuz, masum"
-    ],
-    "semanticDomains": [],
-    "dialectVariants": {
-      "adyghe": "гуэныхь",
-      "kabardian": "гуэныхь"
-    },
-    "productivity": {
-      "lemmaCount": 3,
-      "corpusFrequency": 369,
-      "compoundCount": 1,
-      "adyFreq": 0,
-      "kbdFreq": 16
-    },
-    "notes": "Paket A terfisi: legacyRootForms havuzundan (3 uye) kanoniklestirildi.",
-    "wordFamily": {
-      "id": "WF-GWENYHH",
-      "lexemeIds": [
-        "L-GUENYH",
-        "L-GUENYHLY",
-        "L-VERIFIED-00738"
-      ]
-    }
-  },
-  {
     "id": "R-GWP",
     "form": "гуп",
     "ipa": "/gʷp/",
@@ -167363,36 +167235,6 @@
         "L-SHXU",
         "L-VERIFIED-02520",
         "L-SHKHU"
-      ]
-    }
-  },
-  {
-    "id": "R-GWEN",
-    "form": "гуэн",
-    "ipa": "/gʷan/",
-    "primaryMeaning": "Sundurma, hangar",
-    "secondaryMeanings": [
-      "DEPO"
-    ],
-    "semanticDomains": [],
-    "dialectVariants": {
-      "adyghe": "гуэн",
-      "kabardian": "гуэн"
-    },
-    "productivity": {
-      "lemmaCount": 3,
-      "corpusFrequency": 11,
-      "compoundCount": 1,
-      "adyFreq": 0,
-      "kbdFreq": 11
-    },
-    "notes": "Paket A terfisi: legacyRootForms havuzundan (3 uye) kanoniklestirildi.",
-    "wordFamily": {
-      "id": "WF-GWEN",
-      "lexemeIds": [
-        "L-GUEN",
-        "L-KBD-00624",
-        "L-KBD-03931"
       ]
     }
   },

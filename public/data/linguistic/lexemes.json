@@ -33748,8 +33748,7 @@
     "corpusFrequency": 54,
     "rootIds": [
       "R-GU",
-      "R-GUBZH",
-      "R-GUBZH_2"
+      "R-GUBZH"
     ],
     "derivation": {
       "rule": "root",
@@ -36752,7 +36751,7 @@
       "en": "sing"
     },
     "rootIds": [
-      "R-ZHY1E",
+      "R-ZHYI",
       "R-1E"
     ],
     "derivation": {
@@ -36771,7 +36770,7 @@
     "conceptId": "SING",
     "oldFamily": "WF-1E",
     "wordFamilyId": "WF-ZHY1E",
-    "rootId": "R-ZHY1E",
+    "rootId": "R-ZHYI",
     "partOfSpeech": "VERB",
     "dialect": "COMMON"
   },
@@ -44038,8 +44037,7 @@
     "taxonomyFamily": "Duygu & Zihin",
     "rootIds": [
       "R-GU",
-      "R-GUBZH",
-      "R-GUBZH_2"
+      "R-GUBZH"
     ],
     "derivation": {
       "rootIds": [
@@ -56144,7 +56142,7 @@
     "ipa": "/gʷɐ'nǝħ/",
     "rootIds": [
       "R-GU",
-      "R-GWENYHH"
+      "R-GUENYH"
     ],
     "wordFamilyId": "WF-GUENYH",
     "derivation": {
@@ -86655,8 +86653,7 @@
     "conceptId": "ACTION",
     "rootIds": [
       "R-GU",
-      "R-GUESH",
-      "R-GUESH_2"
+      "R-GUESH"
     ],
     "derivation": {
       "rule": "root",
@@ -122960,7 +122957,7 @@
     "ipa": "/qʹɐgʷǝ'bʑǝn/",
     "rootIds": [
       "R-ZHY",
-      "R-GUBZH_2"
+      "R-GUBZH"
     ],
     "wordFamilyId": "WF-ZHY",
     "derivation": {
@@ -145475,8 +145472,7 @@
     "ipa": "/gʷǝb'ʑǝn/",
     "rootIds": [
       "R-GU",
-      "R-GUBZH",
-      "R-GUBZH_2"
+      "R-GUBZH"
     ],
     "derivation": {
       "rule": "compound",
@@ -218312,8 +218308,7 @@
     "conceptId": "CONTAINER",
     "rootIds": [
       "R-GU",
-      "R-GUEN",
-      "R-GWEN"
+      "R-GUEN"
     ],
     "derivation": {
       "rule": "root",
@@ -228033,8 +228028,7 @@
     "ipa": "/gʷɐnǝħ'ɮǝ/",
     "rootIds": [
       "R-GU",
-      "R-GUENYH",
-      "R-GWENYHH"
+      "R-GUENYH"
     ],
     "derivation": {
       "rule": "root",
@@ -228170,7 +228164,7 @@
     },
     "rootIds": [
       "R-GU",
-      "R-GUESH_2"
+      "R-GUESH"
     ],
     "derivation": {
       "rootIds": [
@@ -231946,7 +231940,7 @@
     "ipa": "/dɐgʷɐ'ʂɐn/",
     "rootIds": [
       "R-GU",
-      "R-GUESH_2"
+      "R-GUESH"
     ],
     "derivation": {
       "rule": "root",
@@ -282904,7 +282898,7 @@
     },
     "rootIds": [
       "R-GU",
-      "R-GUESH_2"
+      "R-GUESH"
     ],
     "derivation": {
       "rootIds": [
@@ -351026,7 +351020,7 @@
     },
     "rootIds": [
       "R-GU",
-      "R-GUESH_2"
+      "R-GUESH"
     ],
     "derivation": {
       "rootIds": [
@@ -351736,7 +351730,7 @@
     "ipa": "/ʁɐgʷǝb'ʑǝn/",
     "rootIds": [
       "R-ZHY",
-      "R-GUBZH_2"
+      "R-GUBZH"
     ],
     "wordFamilyId": "WF-ZHY",
     "derivation": {
@@ -364690,7 +364684,7 @@
     "isLemma": true,
     "rootIds": [
       "R-GU",
-      "R-GUESH_2"
+      "R-GUESH"
     ],
     "derivation": {
       "rootIds": [
@@ -365350,8 +365344,7 @@
     "ipa": "/gʷɐnǝ'ħǝnʂɐ/",
     "rootIds": [
       "R-GU",
-      "R-GUENYH",
-      "R-GWENYHH"
+      "R-GUENYH"
     ],
     "derivation": {
       "rule": "root",
@@ -410563,7 +410556,7 @@
     "ipa": "/xʷɐgʷǝb'ʑǝn/",
     "rootIds": [
       "R-ZHY",
-      "R-GUBZH_2"
+      "R-GUBZH"
     ],
     "wordFamilyId": "WF-ZHY",
     "derivation": {
@@ -415308,7 +415301,7 @@
     "ipa": "/dɐgʷɐ'ʂǝn/",
     "rootIds": [
       "R-GU",
-      "R-GUESH_2"
+      "R-GUESH"
     ],
     "derivation": {
       "rule": "root",
@@ -439593,8 +439586,7 @@
     "rootIds": [
       "R-X",
       "R-GU",
-      "R-GUBZH",
-      "R-GUBZH_2"
+      "R-GUBZH"
     ],
     "derivation": {
       "rule": "compound",
@@ -487502,8 +487494,7 @@
     "corpusFrequency": 0,
     "rootIds": [
       "R-GU",
-      "R-GUEN",
-      "R-GWEN"
+      "R-GUEN"
     ],
     "derivation": null,
     "dialectVariants": {
@@ -487884,7 +487875,6 @@
     "rootIds": [
       "R-GU",
       "R-GUESH",
-      "R-GUESH_2",
       "R-GHWALH"
     ],
     "derivation": null,
@@ -522196,7 +522186,7 @@
     "corpusFrequency": 0,
     "rootIds": [
       "R-GU",
-      "R-GUBZH_2"
+      "R-GUBZH"
     ],
     "derivation": {
       "rootIds": [
@@ -530345,7 +530335,7 @@
     "corpusFrequency": 0,
     "rootIds": [
       "R-GU",
-      "R-GUESH_2"
+      "R-GUESH"
     ],
     "derivation": {
       "rootIds": [
@@ -551053,7 +551043,7 @@
     "corpusFrequency": 0,
     "rootIds": [
       "R-GU",
-      "R-GUESH_2"
+      "R-GUESH"
     ],
     "derivation": {
       "rootIds": [
@@ -627715,7 +627705,7 @@
     "rootIds": [
       "R-GU",
       "R-PKH",
-      "R-GWEN"
+      "R-GUEN"
     ],
     "derivation": {
       "rootIds": [
@@ -659038,7 +659028,7 @@
     "corpusFrequency": 0,
     "rootIds": [
       "R-1E",
-      "R-ZHY1E"
+      "R-ZHYI"
     ],
     "derivation": {
       "rootIds": [
@@ -684107,7 +684097,7 @@
     "corpusFrequency": 0,
     "rootIds": [
       "R-SH1E",
-      "R-GUBZH_2"
+      "R-GUBZH"
     ],
     "wordFamilyId": "WF-SH1E",
     "derivation": null,
@@ -698566,7 +698556,7 @@
     "corpusFrequency": 0,
     "rootIds": [
       "R-GU",
-      "R-GUESH_2"
+      "R-GUESH"
     ],
     "derivation": {
       "rootIds": [
@@ -739145,8 +739135,7 @@
     },
     "ipa": "/qɐgʷbʑǝrеj/",
     "rootIds": [
-      "R-GUBZH",
-      "R-GUBZH_2"
+      "R-GUBZH"
     ],
     "notes": "Kaynak: 1.Ady-Ady_AP.json, 5.Ady-Rus_Qarden.json",
     "etymologyType": "native",
@@ -764404,8 +764393,7 @@
     "ipa": "/gʷɐʃɐn/",
     "rootIds": [
       "R-GU",
-      "R-GUESH",
-      "R-GUESH_2"
+      "R-GUESH"
     ],
     "notes": "Kaynak: 20.Kbd-Ru-Jonty.json, 1.Ady-Ady_AP.json",
     "literalMeaning": "i part, piece, share",
@@ -768399,7 +768387,6 @@
     "ipa": "/qɐgʷbʑǝʁʷafʼɐ/",
     "rootIds": [
       "R-GUBZH",
-      "R-GUBZH_2",
       "R-FIY"
     ],
     "notes": "Kaynak: 19.Kbd-Ru-2-Jonty.json, 1.Ady-Ady_AP.json",
@@ -792467,8 +792454,7 @@
     },
     "ipa": "/mǝgʷɐʃ/",
     "rootIds": [
-      "R-GUESH",
-      "R-GUESH_2"
+      "R-GUESH"
     ],
     "notes": "Kaynak: 19.Kbd-Ru-2-Jonty.json, 5.Ady-Rus_Qarden.json",
     "etymologyType": "native",
@@ -810681,8 +810667,7 @@
     },
     "ipa": "/ʔʷgʷɐʃɐn/",
     "rootIds": [
-      "R-GUESH",
-      "R-GUESH_2"
+      "R-GUESH"
     ],
     "notes": "Kaynak: 1.Ady-Ady_AP.json",
     "examples": [
@@ -811431,7 +811416,7 @@
     "ipa": "/ɕʼɐgʷɐʃɐn/",
     "rootIds": [
       "R-SH1E",
-      "R-GUESH_2"
+      "R-GUESH"
     ],
     "notes": "Kaynak: 1.Ady-Ady_AP.json",
     "examples": [
@@ -833059,7 +833044,7 @@
     "ipa": "/zɐdɐgʷɐʃɐn/",
     "rootIds": [
       "R-DEGU",
-      "R-GUESH_2"
+      "R-GUESH"
     ],
     "notes": "Kaynak: 1.Ady-Ady_AP.json",
     "examples": [
@@ -1144655,7 +1144640,7 @@
     "partOfSpeech": "VERB",
     "rootIds": [
       "R-GUESHYN",
-      "R-GUESH_2"
+      "R-GUESH"
     ],
     "legacyIds": [
       "L-VERIFIED-зэбгрыгуэшыкӀын"
