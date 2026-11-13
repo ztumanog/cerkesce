@@ -3,8 +3,11 @@
 import React, { useRef, useEffect, useState, useCallback, useMemo } from 'react';
 import {
   BookOpen, Check, Copy, Share2, X, Volume2, ChevronRight, ChevronDown,
-  Languages, Zap, Users, Globe, Star, Info, Quote, Sparkles,
+  Languages, Zap, Users, Globe, Star, Quote, Sparkles,
 } from 'lucide-react';
+import {
+  Card, Flex, Grid, Box, Text, Heading, Badge, Button, IconButton, Table, Separator, Callout,
+} from '@radix-ui/themes';
 import type { DialectFilterValue } from '@/components/dictionary/DialectFilter';
 import type { LanguageFilterValue } from '@/components/dictionary/LanguageFilter';
 import type { DictionaryEntry, SourceContent, SourceSection } from '@/types/dictionary';
@@ -16,9 +19,6 @@ import { CorpusExplorerService } from '@/domain/discovery/services/CorpusExplore
 import { CorpusExplorerResult } from '@/domain/discovery/dto/CorpusExplorerDTO';
 import { resolveDialectVariantDisplay } from '@/lib/linguistic/dialectVariantsHelper';
 import { generateNounDeclension } from '@/lib/linguistic/declensionGenerator';
-import { generateVerbConjugation } from '@/lib/linguistic/verbConjugationGenerator';
-
-/* ═══════════════════ SABİTLER ═══════════════════ */
 
 const FEATURED_PRIORITY = ['yamışa', 'yamisha', 'yamısha', 'şıgaje', 'abaze', 'aşemez', 'huvaj'];
 
@@ -29,37 +29,23 @@ const FEATURED_BY_LANG: Record<string, string[]> = {
   ady: ['aig', 'apaşev'],
   kbd: ['yamisha', 'kardanov'],
   ru: ['Tharkaho', 'kokov', 'yamisha', 'kardanov'],
-
 };
 
-const FEATURED_LANG_ORDER = ['tr', 'ru', 'en', 'ar', 'ady', 'kbd'];   
-
-/* ═══════════════════ YARDIMCILAR ═══════════════════ */
+const FEATURED_LANG_ORDER = ['tr', 'ru', 'en', 'ar', 'ady', 'kbd'];
 
 function cleanHtml(html: string): string {
-	if (!html) return '';
-
-  let text = String(html);
-
-  // 1. ÖNCE encoded HTML entity'lerini sil (&lt;...&gt;)
-  text = text.replace(/&lt;.*?&gt;/gi, ' ');
-
-  // 2. Sonra normal HTML tag'lerini sil
-  text = text.replace(/<[^>]+>/g, ' ');
-
-  // 3. Entity'leri çöz
-  text = text
+  if (!html) return '';
+  return String(html)
+    .replace(/&lt;.*?&gt;/gi, ' ')
+    .replace(/<[^>]+>/g, ' ')
     .replace(/&nbsp;/gi, ' ')
     .replace(/&amp;/gi, '&')
     .replace(/&lt;/gi, '<')
     .replace(/&gt;/gi, '>')
     .replace(/&quot;/gi, '"')
-    .replace(/&#39;/gi, "'");
-
-  // 4. Fazla boşlukları temizle
-  text = text.replace(/\s+/g, ' ').trim();
-
-  return text;
+    .replace(/&#39;/gi, "'")
+    .replace(/\s+/g, ' ')
+    .trim();
 }
 
 interface KelimeDetayDrawerProps {
@@ -114,33 +100,22 @@ function meaningCountOf(source: SourceContent): number {
 
 function pickFeatured(sources: SourceContent[]): SourceContent | null {
   if (!sources.length) return null;
-
   for (const lang of FEATURED_LANG_ORDER) {
-    const langSources = sources.filter(
-      (s) => trgLangOf(s) === lang || srcLangOf(s) === lang
-    );
+    const langSources = sources.filter((s) => trgLangOf(s) === lang || srcLangOf(s) === lang);
     if (!langSources.length) continue;
-
     const priorities = FEATURED_BY_LANG[lang] || [];
     for (const p of priorities) {
-      const found = langSources.find((s) => {
-        const haystack = (displayNameOf(s) + ' ' + authorOf(s)).toLowerCase();
-        return haystack.includes(p);
-      });
+      const found = langSources.find((s) =>
+        (displayNameOf(s) + ' ' + authorOf(s)).toLowerCase().includes(p.toLowerCase())
+      );
       if (found) return found;
     }
-
     return [...langSources].sort((a, b) => meaningCountOf(a) - meaningCountOf(b))[0] ?? null;
   }
-
   for (const p of FEATURED_PRIORITY) {
-    const found = sources.find((s) => {
-      const haystack = (displayNameOf(s) + ' ' + authorOf(s)).toLowerCase();
-      return haystack.includes(p);
-    });
+    const found = sources.find((s) => (displayNameOf(s) + ' ' + authorOf(s)).toLowerCase().includes(p));
     if (found) return found;
   }
-
   return [...sources].sort((a, b) => meaningCountOf(a) - meaningCountOf(b))[0] ?? null;
 }
 
@@ -192,50 +167,17 @@ function extractExample(source: SourceContent): string | null {
   };
   const fromSections = walk(source.sections);
   if (fromSections) return fromSections;
-  const marked = (source.meanings ?? []).map(cleanHtml).find((m) => m.includes('◊') || m.includes('—'));
-  return marked ?? null;
+  return (source.meanings ?? []).map(cleanHtml).find((m) => m.includes('◊') || m.includes('—')) ?? null;
 }
 
-function matchesDialect(source: SourceContent, target: DialectFilterValue): boolean {
-  if (target === 'ALL') return true;
-  const meta = metaOf(source);
-  if (meta) {
-    const metaDialect = meta.dialect?.toUpperCase();
-    const sl = String(meta.sourceLanguage || '').toLowerCase();
-    if (target === 'KBD') return metaDialect === 'DOGU' || metaDialect === 'KBD' || sl === 'kbd';
-    if (target === 'ADY') return metaDialect === 'BATI' || metaDialect === 'ADY' || sl === 'ady';
-  }
-  if (source.dialect) {
-    const d = source.dialect.toUpperCase();
-    if (target === 'KBD' && (d.includes('DOGU') || d.includes('KBD'))) return true;
-    if (target === 'ADY' && (d.includes('BATI') || d.includes('ADY'))) return true;
-  }
-  return false;
-}
-
-function matchesLanguage(source: SourceContent, target: LanguageFilterValue): boolean {
-  if (target === 'ALL') return true;
-  const meta = metaOf(source);
-  if (!meta) return false;
-  const s = String(meta.sourceLanguage || '').toLowerCase();
-  const t = String(meta.targetLanguage || '').toLowerCase();
-  const isCirc = (l: string) => l === 'ady' || l === 'kbd';
-  if (target === 'MULTI') return meta.file === '18.Kbd-Ru&En.json';
-  if (target === 'CIRC') return isCirc(s) && isCirc(t);
-  const other = !isCirc(s) ? s : t;
-  return other === String(target).toLowerCase();
-}
-
-function SectionHead({
-  icon, children, extra,
-}: { icon: React.ReactNode; children: React.ReactNode; extra?: React.ReactNode }) {
+function SectionHead({ icon, children, extra }: { icon: React.ReactNode; children: React.ReactNode; extra?: React.ReactNode }) {
   return (
-    <div className="flex items-center justify-between">
-      <h3 className="flex items-center gap-2 text-sm font-bold text-slate-800 dark:text-slate-200">
-        {icon}{children}
-      </h3>
+    <Flex align="center" justify="between" gap="2">
+      <Heading as="h3" size="3" weight="bold">
+        <Flex align="center" gap="2">{icon}{children}</Flex>
+      </Heading>
       {extra}
-    </div>
+    </Flex>
   );
 }
 
@@ -246,72 +188,60 @@ function OneCikanAciklama({ source }: { source: SourceContent }) {
   const sl = srcLangOf(source).toUpperCase();
   const tl = trgLangOf(source).toUpperCase();
   const mono = sl === tl;
-
   if (!meanings.length) return null;
 
   return (
-    <section className="space-y-2">
+    <section className="space-y-2" aria-label="Öne çıkan açıklama">
       <SectionHead
-        icon={<Sparkles size={16} className="text-emerald-500" />}
-        extra={
-          <span className="rounded-full bg-emerald-100 px-2 py-0.5 text-xs font-bold text-emerald-700 dark:bg-emerald-950 dark:text-emerald-300">
-            öncelikli kaynak
-          </span>
-        }
+        icon={<Sparkles size={16} className="text-[var(--jade-9)]" aria-hidden="true" />}
+        extra={<Badge size="1" color="jade" variant="soft" highContrast>Öncelikli kaynak</Badge>}
       >
         Öne Çıkan Açıklama
       </SectionHead>
-
-      <div className="overflow-hidden rounded-xl border-2 border-emerald-300 bg-white shadow-sm dark:border-emerald-800 dark:bg-slate-800">
-        <div className="space-y-1.5 p-3.5">
+      <Card size="2" variant="surface">
+        <Flex direction="column" gap="2">
           {meanings.map((m, i) => (
-            <p key={i} className="flex gap-2 text-sm">
-              <span className="shrink-0 font-bold text-emerald-600 dark:text-emerald-400">{i + 1}.</span>
-              <span className="font-medium text-slate-800 dark:text-slate-100">{m}</span>
-            </p>
+            <Flex key={i} gap="2" align="start">
+              <Text size="2" weight="bold" color="jade" highContrast>{i + 1}.</Text>
+              <Text size="2" weight="medium">{m}</Text>
+            </Flex>
           ))}
-
           {totalMeanings > meanings.length && (
-            <p className="pt-0.5 text-xs font-semibold text-emerald-600 dark:text-emerald-400">
-              +{totalMeanings - meanings.length} anlam daha (aşağıda)
-            </p>
+            <Text size="1" weight="bold" color="jade" highContrast>+{totalMeanings - meanings.length} anlam daha (aşağıda)</Text>
           )}
-
           {example && (
-            <p className="mt-2 flex items-start gap-1.5 border-l-2 border-emerald-300 pl-2 text-xs italic text-slate-600 dark:border-emerald-700 dark:text-slate-400">
-              <Quote size={10} className="mt-0.5 shrink-0" />{example}
-            </p>
+            <Callout.Root size="1" color="gray" variant="soft">
+              <Callout.Icon><Quote size={12} aria-hidden="true" /></Callout.Icon>
+              <Callout.Text className="italic">{example}</Callout.Text>
+            </Callout.Root>
           )}
-        </div>
-
-        <div className="flex items-center gap-2 border-t border-emerald-200 bg-emerald-50 px-3.5 py-2 dark:border-emerald-900 dark:bg-emerald-950">
-          <BookOpen size={11} className="shrink-0 text-emerald-600 dark:text-emerald-400" />
-          <span className="min-w-0 flex-1 truncate text-xs font-semibold text-emerald-800 dark:text-emerald-300">
-            {authorOf(source) && authorOf(source) + ' '}
-            {yearOf(source) && '(' + yearOf(source) + ') · '}
-            {displayNameOf(source)}
-          </span>
-          {sl && (
-            <span className="shrink-0 rounded bg-emerald-200 px-1.5 py-0.5 font-mono text-xs text-emerald-800 dark:bg-emerald-900 dark:text-emerald-200">
-              {mono ? sl : sl + '→' + tl}
-            </span>
-          )}
-        </div>
-      </div>
+          <Separator size="4" />
+          <Flex align="center" justify="between" gap="2">
+            <Flex align="center" gap="2" className="min-w-0 flex-1">
+              <BookOpen size={12} className="shrink-0 text-[var(--jade-11)]" aria-hidden="true" />
+              <Text size="1" weight="medium" className="truncate">
+                {authorOf(source) ? `${authorOf(source)} ` : ''}
+                {yearOf(source) ? `(${yearOf(source)}) · ` : ''}
+                {displayNameOf(source)}
+              </Text>
+            </Flex>
+            {sl && (
+              <Badge size="1" color="jade" variant="soft" highContrast className="font-mono shrink-0">
+                {mono ? sl : `${sl}→${tl}`}
+              </Badge>
+            )}
+          </Flex>
+        </Flex>
+      </Card>
     </section>
   );
 }
-
-/* ═══════════════════ ANA BİLEŞEN ═══════════════════ */
-
 export default function KelimeDetayDrawer({
   seciliKelime,
   isOpen,
   open,
   onClose,
   metinBoyutu = 16,
-  dialectFilter = 'ALL',
-  languageFilter = 'ALL',
   onConceptClick,
 }: KelimeDetayDrawerProps) {
   const [corpusData, setCorpusData] = useState<CorpusExplorerResult | null>(null);
@@ -385,138 +315,42 @@ export default function KelimeDetayDrawer({
     if (isDrawerOpen) {
       window.addEventListener('keydown', handleKeyDown);
       const timer = setTimeout(() => kapatBtnRef.current?.focus(), 50);
-      return () => {
-        clearTimeout(timer);
-        window.removeEventListener('keydown', handleKeyDown);
-      };
+      return () => { clearTimeout(timer); window.removeEventListener('keydown', handleKeyDown); };
     }
   }, [isDrawerOpen, onClose]);
 
-  const content = useMemo(
-    () => (seciliKelime ? normalizeDrawerContent(seciliKelime) : null),
-    [seciliKelime]
-  );
+  const content = useMemo(() => (seciliKelime ? normalizeDrawerContent(seciliKelime) : null), [seciliKelime]);
+  const sourceContents = useMemo(() => (seciliKelime ? normalizeToSourceContents(seciliKelime) : []), [seciliKelime]);
 
-  const sourceContents = useMemo(
-    () => (seciliKelime ? normalizeToSourceContents(seciliKelime) : []),
-    [seciliKelime]
-  );
-
- function extractShortMeaning(text: string): string | null {
-  const t = cleanHtml(text);
-
-  if (!t) return null;
-
-  // Çok uzun sözlük tanımlarını ele
-  if (t.length > 120) return null;
-
-  // Açıklama/paragraf gibi görünenleri ele
-  if (
-    t.includes('букв.') ||
-    t.includes('посл.') ||
-    t.includes('перен.') ||
-    t.includes('погов.') ||
-    t.includes('нар.') ||
-    t.includes('◊') ||
-    t.includes('△')
-  ) {
-    return null;
+  function extractShortMeaning(text: string): string | null {
+    const t = cleanHtml(text);
+    if (!t || t.length > 120) return null;
+    if (t.includes('букв.') || t.includes('посл.') || t.includes('перен.') || t.includes('погов.') || t.includes('нар.') || t.includes('◊') || t.includes('△')) return null;
+    const first = t.split(/[;,/·•]/)[0].trim();
+    if (!first || first.length < 2 || first.length > 60) return null;
+    return first;
   }
 
-  // İlk anlamı çek
-  const first = t
-    .split(/[;,/·•]/)[0]
-    .trim();
-
-  if (!first) return null;
-  if (first.length < 2) return null;
-
-  // Çok uzun cümleleri ele
-  if (first.length > 60) return null;
-
-  return first;
-}
-
-const cokDilliKarsiliklar = useMemo(() => {
-  const byLang: Record<
-    string,
-    {
-      meanings: string[];
-      sources: SourceContent[];
-    }
-  > = {};
-
-  sourceContents.forEach((source) => {
-    const meta = metaOf(source);
-    const tgt = (
-      meta?.targetLanguage ||
-      source.targetLanguage ||
-      ''
-    ).toLowerCase();
-
-    if (!tgt) return;
-
-    if (!byLang[tgt]) {
-      byLang[tgt] = {
-        meanings: [],
-        sources: [],
-      };
-    }
-
-    byLang[tgt].sources.push(source);
-
-    const extracted =
-      extractMeanings(source, 5)
-        .map(extractShortMeaning)
-        .filter(Boolean) as string[];
-
-    for (const m of extracted) {
-      byLang[tgt].meanings.push(m);
-    }
-  });
-
-  // tekrar temizleme
-  Object.keys(byLang).forEach((lang) => {
-    byLang[lang].meanings = [
-      ...new Set(
-        byLang[lang].meanings
-          .map((m) => m.trim())
-          .filter(Boolean)
-      ),
-    ].slice(0, 10);
-  });
-
-  const order = [
-    'tr',
-    'en',
-    'ru',
-    'ar',
-    'ady',
-    'kbd',
-  ];
-
-  const sorted: Record<
-    string,
-    {
-      meanings: string[];
-      sources: SourceContent[];
-    }
-  > = {};
-
-  order.forEach((lang) => {
-    if (byLang[lang]) {
-      sorted[lang] = byLang[lang];
-    }
-  });
-
-  Object.keys(byLang).forEach((lang) => {
-    if (!sorted[lang]) {
-      sorted[lang] = byLang[lang];
-    }
-  });
-
-  return sorted;
-}, [sourceContents]);
+  const cokDilliKarsiliklar = useMemo(() => {
+    const byLang: Record<string, { meanings: string[]; sources: SourceContent[] }> = {};
+    sourceContents.forEach((source) => {
+      const meta = metaOf(source);
+      const tgt = (meta?.targetLanguage || source.targetLanguage || '').toLowerCase();
+      if (!tgt) return;
+      if (!byLang[tgt]) byLang[tgt] = { meanings: [], sources: [] };
+      byLang[tgt].sources.push(source);
+      const extracted = extractMeanings(source, 5).map(extractShortMeaning).filter(Boolean) as string[];
+      for (const m of extracted) byLang[tgt].meanings.push(m);
+    });
+    Object.keys(byLang).forEach((lang) => {
+      byLang[lang].meanings = [...new Set(byLang[lang].meanings.map((m) => m.trim()).filter(Boolean))].slice(0, 10);
+    });
+    const order = ['tr', 'en', 'ru', 'ar', 'ady', 'kbd'];
+    const sorted: Record<string, { meanings: string[]; sources: SourceContent[] }> = {};
+    order.forEach((lang) => { if (byLang[lang]) sorted[lang] = byLang[lang]; });
+    Object.keys(byLang).forEach((lang) => { if (!sorted[lang]) sorted[lang] = byLang[lang]; });
+    return sorted;
+  }, [sourceContents]);
 
   const featured = useMemo(() => pickFeatured(sourceContents), [sourceContents]);
 
@@ -527,10 +361,7 @@ const cokDilliKarsiliklar = useMemo(() => {
       content.cerkesce ? 'Çerkesçe: ' + content.cerkesce : '',
       featured ? 'Öne çıkan: ' + extractMeanings(featured, 3).join('; ') + ' — ' + displayNameOf(featured) : '',
       'Sözlük Kaynak Sayısı: ' + sourceContents.length,
-      ...sourceContents.map((s) => {
-        const name = displayNameOf(s);
-        return '• ' + name + ': ' + (s.meanings ?? []).map(cleanHtml).join(', ');
-      }),
+      ...sourceContents.map((s) => '• ' + displayNameOf(s) + ': ' + (s.meanings ?? []).map(cleanHtml).join(', ')),
     ].filter(Boolean).join('\n');
   }, [content, featured, sourceContents]);
 
@@ -557,245 +388,260 @@ const cokDilliKarsiliklar = useMemo(() => {
 
   if (!isDrawerOpen || !seciliKelime || !content) return null;
 
-  return (
-    <div role="dialog" aria-modal="true" aria-labelledby="drawer-title" className="fixed inset-0 z-[9999] flex justify-end transition-opacity duration-300">
-      <div onClick={onClose} aria-hidden="true" className="fixed inset-0 bg-black/60 backdrop-blur-sm transition-opacity cursor-pointer active:opacity-80" />
-      <div ref={drawerRef} style={{ fontSize: metinBoyutu + 'px' }} className="relative z-10 w-full max-w-[540px] h-full bg-slate-100 dark:bg-slate-900 text-slate-900 dark:text-slate-100 shadow-2xl flex flex-col border-l border-slate-300 dark:border-slate-800 overscroll-contain touch-pan-y">
+  const targetWord = content.cerkesce || content.word;
+  const variantDisplay = resolveDialectVariantDisplay({
+    form: targetWord,
+    dialect: seciliKelime.dialect,
+    dialectVariants: seciliKelime.dialectVariants,
+  });
+  const posLower = String(seciliKelime.partOfSpeech || '').toLowerCase();
+  const isNoun = /[а-яА-ЯӀӏ]/.test(targetWord) && (!posLower || posLower.includes('noun') || posLower.includes('щыӀэцӀэ'));
+  const declension = isNoun ? generateNounDeclension(targetWord) : null;
 
-        <div className="flex items-center justify-between p-4 sm:p-6 pb-4 border-b border-slate-300 dark:border-slate-800 shrink-0 bg-white dark:bg-slate-900 sticky top-0 z-20">
-          <h2 id="drawer-title" className="text-xl sm:text-2xl font-bold text-orange-500 truncate">{content.word}</h2>
-          <button ref={kapatBtnRef} onClick={onClose} aria-label="Kapat" className="p-2 rounded-lg text-slate-400 hover:text-slate-700 dark:hover:text-slate-200 hover:bg-slate-200 dark:hover:bg-slate-800 transition-colors shrink-0"><X size={20} /></button>
-        </div>
+  return (
+    <div role="dialog" aria-modal="true" aria-labelledby="drawer-title" className="fixed inset-0 z-[9999] flex justify-end">
+      <div onClick={onClose} aria-hidden="true" className="fixed inset-0 bg-black/60 backdrop-blur-sm cursor-pointer" />
+      <Box
+        ref={drawerRef}
+        style={{ fontSize: `${metinBoyutu}px`, backgroundColor: 'var(--color-background)' }}
+        className="relative z-10 w-full max-w-[540px] h-full shadow-2xl flex flex-col border-l border-[var(--gray-6)]"
+      >
+        <Flex align="center" justify="between" p="4" className="border-b border-[var(--gray-6)] shrink-0 sticky top-0 z-20" style={{ backgroundColor: 'var(--color-panel-solid)' }}>
+          <Heading id="drawer-title" as="h2" size="6" weight="bold" color="orange" highContrast className="truncate">{content.word}</Heading>
+          <IconButton ref={kapatBtnRef} type="button" variant="ghost" color="gray" size="2" onClick={onClose} aria-label="Detay çekmecesini kapat">
+            <X size={20} aria-hidden="true" />
+          </IconButton>
+        </Flex>
 
         {corpusData && corpusData.totalDictionaries > 0 && (
-          <div className="flex items-center gap-4 px-4 py-2 bg-amber-50 dark:bg-amber-950/20 border-b border-amber-200 dark:border-amber-800 text-xs text-slate-600 dark:text-slate-400 shrink-0">
-            <span>📖 {corpusData.meaningCount} anlam</span>
-            <span>🌍 {corpusData.languages.length} dil</span>
-            <span>📚 {corpusData.totalDictionaries} sözlük</span>
-          </div>
+          <Flex align="center" gap="4" px="4" py="2" className="border-b border-[var(--amber-6)] shrink-0" style={{ backgroundColor: 'var(--amber-2)' }}>
+            <Text size="1" weight="medium">{corpusData.meaningCount} anlam</Text>
+            <Text size="1" weight="medium">{corpusData.languages.length} dil</Text>
+            <Text size="1" weight="medium">{corpusData.totalDictionaries} sözlük</Text>
+          </Flex>
         )}
 
-        <div className="flex-1 overflow-y-auto p-4 sm:p-5 pb-28 space-y-5 scroll-smooth">
+        <Box className="flex-1 overflow-y-auto p-4 sm:p-5 pb-28 space-y-5">
+          <Flex wrap="wrap" gap="2">
+            {seciliKelime.dialect && seciliKelime.dialect !== 'western' && seciliKelime.dialect !== 'eastern' && (
+              <Badge size="1" color="indigo" variant="soft" highContrast>{seciliKelime.dialect}</Badge>
+            )}
+            {seciliKelime.partOfSpeech && (
+              <Badge size="1" color="gray" variant="surface" highContrast>{seciliKelime.partOfSpeech.toUpperCase()}</Badge>
+            )}
+            {seciliKelime.ipa && (
+              <Badge size="1" color="cyan" variant="soft" highContrast className="font-mono">[{seciliKelime.ipa}]</Badge>
+            )}
+            {seciliKelime.corpusFrequency ? (
+              <Badge size="1" color="amber" variant="soft" highContrast>{seciliKelime.corpusFrequency} kullanım</Badge>
+            ) : null}
+          </Flex>
 
-          <section className="space-y-2">
-            <div className="flex flex-wrap gap-1.5">
-              {seciliKelime.dialect && seciliKelime.dialect !== 'western' && seciliKelime.dialect !== 'eastern' && (
-                <span className="text-[10px] font-bold px-2 py-0.5 rounded-md border bg-blue-100 dark:bg-blue-950 text-blue-800 dark:text-blue-300 border-blue-300 dark:border-blue-800">{seciliKelime.dialect}</span>
-              )}
-              {seciliKelime.partOfSpeech && (
-                <span className="text-[10px] font-bold px-2 py-0.5 rounded-md border bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border-slate-300 dark:border-slate-700">{seciliKelime.partOfSpeech.toUpperCase()}</span>
-              )}
-              {seciliKelime.ipa && (
-                <span className="text-[10px] font-bold px-2 py-0.5 rounded-md border bg-cyan-100 dark:bg-cyan-950 text-cyan-800 dark:text-cyan-300 border-cyan-300 dark:border-cyan-800 font-mono">{seciliKelime.ipa}</span>
-              )}
-              {seciliKelime.corpusFrequency ? (
-                <span className="text-[10px] font-bold px-2 py-0.5 rounded-md border bg-amber-100 dark:bg-amber-950 text-amber-800 dark:text-amber-300 border-amber-300 dark:border-amber-800">{seciliKelime.corpusFrequency} kullanım</span>
-              ) : null}
-            </div>
-          </section>
+          {variantDisplay && variantDisplay.hasDifference && (
+            <section className="space-y-2" aria-label="Diyalekt karşılıkları">
+              <SectionHead icon={<Languages size={16} className="text-[var(--orange-9)]" aria-hidden="true" />} extra={<Badge size="1" color="indigo" variant="soft" highContrast>Huvaj &amp; AIG</Badge>}>
+                Diyalekt Karşılıkları
+              </SectionHead>
+              <Card size="2" variant="surface">
+                <Flex direction="column" gap="2">
+                  <Flex wrap="wrap" align="center" gap="2">
+                    <Badge size="1" color="amber" variant="solid" highContrast>ADY</Badge>
+                    <Text size="3" weight="bold">{variantDisplay.adyghePrimary}</Text>
+                    {variantDisplay.adygheAlternatives.map((alt) => (
+                      <Badge key={alt.form} size="1" color="gray" variant="soft">alt: <strong>{alt.form}</strong> ({alt.sourceLabel})</Badge>
+                    ))}
+                  </Flex>
+                  <Flex wrap="wrap" align="center" gap="2">
+                    <Badge size="1" color="sky" variant="solid" highContrast>KBD</Badge>
+                    <Text size="3" weight="bold">{variantDisplay.kabardianPrimary}</Text>
+                  </Flex>
+                </Flex>
+              </Card>
+            </section>
+          )}
 
-                    {(() => {
-            const targetWord = content.cerkesce || content.word;
-            const variantDisplay = resolveDialectVariantDisplay({
-              form: targetWord,
-              dialect: seciliKelime.dialect,
-              dialectVariants: seciliKelime.dialectVariants,
-            });
-            const posLower = String(seciliKelime.partOfSpeech || '').toLowerCase();
-            const isNoun = /[а-яА-ЯӀӏ]/.test(targetWord) && (!posLower || posLower.includes('noun') || posLower.includes('щыӀэцӀэ'));
-            const declension = isNoun ? generateNounDeclension(targetWord) : null;
-
-            return (
-              <>
-                {variantDisplay && variantDisplay.hasDifference && (
-                  <section className="space-y-2">
-                    <SectionHead
-                      icon={<Languages size={16} className="text-orange-500" />}
-                      extra={<span className="rounded-full bg-indigo-100 px-2 py-0.5 text-[10px] font-bold text-indigo-700 dark:bg-indigo-950 dark:text-indigo-300">Huvaj &amp; AIG</span>}
-                    >
-                      Diyalekt Karşılıkları
-                    </SectionHead>
-                    <div className="space-y-2 rounded-xl border border-sky-200 bg-sky-50/60 p-3 dark:border-sky-900/40 dark:bg-sky-950/20">
-                      <div className="flex flex-wrap items-center gap-2">
-                        <span className="w-12 shrink-0 rounded-md border border-amber-300 bg-amber-100 px-2 py-0.5 text-center text-xs font-bold text-amber-800 dark:border-amber-800 dark:bg-amber-900 dark:text-amber-200">ADY</span>
-                        <span className="text-sm font-bold text-slate-800 dark:text-slate-100">{variantDisplay.adyghePrimary}</span>
-                        {variantDisplay.adygheAlternatives.map((alt) => (
-                          <span key={alt.form} className="rounded-md bg-white/80 dark:bg-slate-800 px-2 py-0.5 text-xs text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-700">
-                            alt: <b>{alt.form}</b> ({alt.sourceLabel})
-                          </span>
-                        ))}
-                      </div>
-                      <div className="flex flex-wrap items-center gap-2">
-                        <span className="w-12 shrink-0 rounded-md border border-sky-300 bg-sky-200 px-2 py-0.5 text-center text-xs font-bold text-sky-800 dark:border-sky-800 dark:bg-sky-900 dark:text-sky-200">KBD</span>
-                        <span className="text-sm font-bold text-slate-800 dark:text-slate-100">{variantDisplay.kabardianPrimary}</span>
-                      </div>
-                    </div>
-                  </section>
-                )}
-
-                {declension && (
-                  <section className="space-y-2">
-                    <SectionHead
-                      icon={<BookOpen size={16} className="text-emerald-500" />}
-                      extra={<span className="rounded-full bg-slate-200 px-2 py-0.5 text-[10px] font-bold text-slate-700 dark:bg-slate-800 dark:text-slate-300">Закъуэ / Куэд</span>}
-                    >
-                      Склоненэ (İsim Çekimi)
-                    </SectionHead>
-                    <div className="overflow-x-auto rounded-xl border border-slate-200 bg-white dark:border-slate-800 dark:bg-slate-800/70">
-                      <table className="w-full text-left text-xs">
-                        <thead className="border-b border-slate-200 bg-slate-50 text-[11px] text-slate-600 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-400">
-                          <tr>
-                            <th className="px-2.5 py-2">Hal</th>
-                            <th className="px-2.5 py-2">Tekil Belirtili</th>
-                            <th className="px-2.5 py-2">Çoğul Belirtili</th>
-                          </tr>
-                        </thead>
-                        <tbody className="divide-y divide-slate-100 dark:divide-slate-800">
-                          {declension.map((row) => (
-                            <tr key={row.caseNameCircassian}>
-                              <td className="px-2.5 py-1.5 font-semibold text-slate-700 dark:text-slate-200">
-                                {row.caseNameCircassian}
-                                <span className="block text-[10px] font-normal text-slate-400">{row.caseNameTr}</span>
-                              </td>
-                              <td className="px-2.5 py-1.5 font-medium text-slate-800 dark:text-slate-100">{row.singularDefinite}</td>
-                              <td className="px-2.5 py-1.5 font-medium text-slate-800 dark:text-slate-100">{row.pluralDefinite}</td>
-                            </tr>
-                          ))}
-                        </tbody>
-                      </table>
-                    </div>
-                  </section>
-                )}
-              </>
-            );
-          })()}
+          {declension && (
+            <section className="space-y-2" aria-label="İsim çekim tablosu">
+              <SectionHead icon={<BookOpen size={16} className="text-[var(--jade-9)]" aria-hidden="true" />} extra={<Badge size="1" color="gray" variant="soft" highContrast>Закъуэ / Куэд</Badge>}>
+                Склоненэ (İsim Çekimi)
+              </SectionHead>
+              <Table.Root size="1" variant="surface">
+                <Table.Header>
+                  <Table.Row>
+                    <Table.ColumnHeaderCell>Hal</Table.ColumnHeaderCell>
+                    <Table.ColumnHeaderCell>Tekil Belirtili</Table.ColumnHeaderCell>
+                    <Table.ColumnHeaderCell>Çoğul Belirtili</Table.ColumnHeaderCell>
+                  </Table.Row>
+                </Table.Header>
+                <Table.Body>
+                  {declension.map((row) => (
+                    <Table.Row key={row.caseNameCircassian}>
+                      <Table.RowHeaderCell>
+                        <Text as="div" weight="bold" size="1">{row.caseNameCircassian}</Text>
+                        <Text as="div" size="1" color="gray">{row.caseNameTr}</Text>
+                      </Table.RowHeaderCell>
+                      <Table.Cell>{row.singularDefinite}</Table.Cell>
+                      <Table.Cell>{row.pluralDefinite}</Table.Cell>
+                    </Table.Row>
+                  ))}
+                </Table.Body>
+              </Table.Root>
+            </section>
+          )}
 
           {(seciliKelime.rootIds?.length || seciliKelime.wordFamilyId || seciliKelime.conceptId) && (
-            <section className="space-y-2">
-              <SectionHead icon={<Zap size={16} className="text-orange-500" />}>Morfolojik Pasaport</SectionHead>
-              <div className="grid grid-cols-3 gap-2">
-                <div className="rounded-xl border border-emerald-200 bg-emerald-50/80 p-3 dark:border-emerald-900/40 dark:bg-emerald-950/20">
-                  <span className="text-[10px] font-bold text-emerald-700 dark:text-emerald-400 uppercase block mb-1">Kök</span>
-                  <span className="text-xs font-mono text-emerald-900 dark:text-emerald-100">{seciliKelime.rootIds?.join(', ') || '—'}</span>
-                </div>
-                <div className="rounded-xl border border-purple-200 bg-purple-50/80 p-3 dark:border-purple-900/40 dark:bg-purple-950/20">
-                  <span className="text-[10px] font-bold text-purple-700 dark:text-purple-400 uppercase block mb-1">Aile</span>
-                  <span className="text-xs font-mono text-purple-900 dark:text-purple-100">{seciliKelime.wordFamilyId || '—'}</span>
-                </div>
-                <div className="rounded-xl border border-orange-200 bg-orange-50/80 p-3 dark:border-orange-900/40 dark:bg-orange-950/20">
-                  <span className="text-[10px] font-bold text-orange-700 dark:text-orange-400 uppercase block mb-1">Kavram</span>
-                  <span className="text-xs font-mono text-orange-900 dark:text-orange-100">{seciliKelime.conceptId || '—'}</span>
-                </div>
-              </div>
+            <section className="space-y-2" aria-label="Morfolojik pasaport">
+              <SectionHead icon={<Zap size={16} className="text-[var(--orange-9)]" aria-hidden="true" />}>Morfolojik Pasaport</SectionHead>
+              <Grid columns="3" gap="2">
+                <Card size="1" variant="surface">
+                  <Text as="div" size="1" weight="bold" color="jade" highContrast className="uppercase">Kök</Text>
+                  <Text size="1" className="font-mono">{seciliKelime.rootIds?.join(', ') || '—'}</Text>
+                </Card>
+                <Card size="1" variant="surface">
+                  <Text as="div" size="1" weight="bold" color="purple" highContrast className="uppercase">Aile</Text>
+                  <Text size="1" className="font-mono">{seciliKelime.wordFamilyId || '—'}</Text>
+                </Card>
+                <Card size="1" variant="surface">
+                  <Text as="div" size="1" weight="bold" color="orange" highContrast className="uppercase">Kavram</Text>
+                  <Text size="1" className="font-mono">{seciliKelime.conceptId || '—'}</Text>
+                </Card>
+              </Grid>
             </section>
           )}
 
           {seciliKelime.wordFamilyId && familyMembers.length > 0 && (
-            <section className="space-y-2">
-              <SectionHead icon={<Users size={16} className="text-purple-500" />}>Aynı Aileden Kelimeler ({familyMembers.length})</SectionHead>
-              <div className="rounded-xl border border-purple-200 bg-purple-50/60 p-3 dark:border-purple-900/40 dark:bg-purple-950/20">
-                <div className="flex flex-wrap gap-1.5">
+            <section className="space-y-2" aria-label="Aynı aileden kelimeler">
+              <SectionHead icon={<Users size={16} className="text-[var(--purple-9)]" aria-hidden="true" />}>
+                Aynı Aileden Kelimeler ({familyMembers.length})
+              </SectionHead>
+              <Card size="2" variant="surface">
+                <Flex wrap="wrap" gap="2">
                   {familyMembers.slice(0, 12).map((m: any) => (
-                    <span key={m.id} className="text-xs px-2 py-1 rounded-md bg-white dark:bg-slate-800 border border-purple-200 dark:border-purple-800 text-purple-800 dark:text-purple-200 font-medium cursor-pointer hover:bg-purple-100 dark:hover:bg-purple-900 transition-colors" title={m.literalMeaning} onClick={() => { if (m.form && onConceptClick) onConceptClick(m.form); }}>
-                      {m.form}
-                      {m.literalMeaning && (<span className="ml-1 text-[10px] text-purple-500 dark:text-purple-400 font-normal">({m.literalMeaning})</span>)}
-                    </span>
+                    <Button key={m.id} type="button" size="1" variant="soft" color="purple" highContrast title={m.literalMeaning} onClick={() => { if (m.form && onConceptClick) onConceptClick(m.form); }}>
+                      {m.form}{m.literalMeaning ? ` (${m.literalMeaning})` : ''}
+                    </Button>
                   ))}
-                </div>
-                {familyMembers.length > 12 && (<p className="text-[11px] text-purple-600 dark:text-purple-400 mt-2 font-semibold">+{familyMembers.length - 12} kelime daha</p>)}
-              </div>
+                </Flex>
+                {familyMembers.length > 12 && (
+                  <Text as="p" size="1" weight="bold" color="purple" mt="2">+{familyMembers.length - 12} kelime daha</Text>
+                )}
+              </Card>
             </section>
           )}
 
           {featured && <OneCikanAciklama source={featured} />}
 
           {Object.keys(cokDilliKarsiliklar).length > 0 && (
-            <section className="space-y-2">
-              <SectionHead icon={<Globe size={16} className="text-orange-500" />} extra={<span className="flex items-center gap-1 rounded-full bg-orange-100 px-2 py-0.5 text-xs font-bold text-orange-700 dark:bg-orange-950 dark:text-orange-300"><BookOpen size={10} />{sourceContents.length} sözlük</span>}>
+            <section className="space-y-2" aria-label="Çok dilli karşılıklar ve sözlük kaynakları">
+              <SectionHead
+                icon={<Globe size={16} className="text-[var(--orange-9)]" aria-hidden="true" />}
+                extra={<Badge size="1" color="orange" variant="soft" highContrast><BookOpen size={10} aria-hidden="true" />{sourceContents.length} sözlük</Badge>}
+              >
                 Çok Dilli Karşılıklar
               </SectionHead>
-              <div className="overflow-hidden rounded-xl border border-sky-200 bg-white shadow-sm dark:border-sky-900 dark:bg-slate-800">
-                {Object.entries(cokDilliKarsiliklar).map(([langKey, data], idx) => {
-                  const isNative = langKey === 'ady' || langKey === 'kbd';
-                  const isOpen = openLang === langKey;
-                  const langLabel = isNative ? 'ÇRK' : langKey.toUpperCase();
-                  return (
-                    <div key={langKey} className={isNative ? 'border-b last:border-b-0 border-amber-200 dark:border-amber-900' : 'border-b last:border-b-0 border-sky-100 dark:border-slate-700'}>
-                      <div className={isOpen ? 'flex items-center gap-2 px-3 py-2.5 transition-colors bg-orange-50 dark:bg-slate-900' : isNative ? 'flex items-center gap-2 px-3 py-2.5 transition-colors bg-amber-50 dark:bg-amber-950' : idx % 2 === 1 ? 'flex items-center gap-2 px-3 py-2.5 transition-colors bg-sky-50 dark:bg-slate-900' : 'flex items-center gap-2 px-3 py-2.5 transition-colors'}>
-                        <span className="w-5 shrink-0 text-center text-sm">{isNative ? <Star size={13} className="fill-amber-500 text-amber-500" /> : (langKey === 'tr' ? '🇹🇷' : langKey === 'en' ? '🇬🇧' : langKey === 'ru' ? '🇷🇺' : langKey === 'ar' ? '🇸🇦' : '🏳️')}</span>
-                        <span className={isOpen ? 'w-8 shrink-0 text-xs font-bold uppercase text-orange-600 dark:text-orange-400' : isNative ? 'w-8 shrink-0 text-xs font-bold uppercase text-amber-700 dark:text-amber-400' : 'w-8 shrink-0 text-xs font-bold uppercase text-sky-700 dark:text-sky-300'}>{langLabel}</span>
-                        <div className="min-w-0 flex-1">
-                          <span className={isNative ? 'block break-words text-sm font-bold text-amber-950 dark:text-amber-100' : 'block break-words text-sm font-medium text-slate-800 dark:text-slate-200'}>
-                            {data.meanings.slice(0, 3).map(cleanHtml).join(' · ')}
-                            {data.meanings.length > 3 && <span className="text-slate-400"> +{data.meanings.length - 3}</span>}
+
+              <Card size="1" variant="surface">
+                <Flex direction="column">
+                  {Object.entries(cokDilliKarsiliklar).map(([langKey, data], idx) => {
+                    const isNative = langKey === 'ady' || langKey === 'kbd';
+                    const isLangOpen = openLang === langKey;
+                    const langLabel = isNative ? 'ÇRK' : langKey.toUpperCase();
+                    return (
+                      <Box key={langKey}>
+                        {idx > 0 && <Separator size="4" />}
+                        <Flex align="center" gap="2" px="2" py="2">
+                          <span className="w-5 shrink-0 text-center text-sm" aria-hidden="true">
+                            {isNative ? <Star size={13} className="fill-amber-500 text-amber-500 inline" /> : langKey === 'tr' ? '🇹🇷' : langKey === 'en' ? '🇬🇧' : langKey === 'ru' ? '🇷🇺' : langKey === 'ar' ? '🇸🇦' : '🏳️'}
                           </span>
-                        </div>
-                        <button onClick={() => { navigator.clipboard.writeText(data.meanings.join(', ')); }} aria-label={langLabel + ' kopyala'} className={isNative ? 'shrink-0 rounded-md p-1 text-amber-500 hover:bg-amber-200 dark:hover:bg-amber-900' : 'shrink-0 rounded-md p-1 text-slate-400 hover:bg-sky-100 hover:text-sky-600 dark:hover:bg-slate-700'}><Copy size={12} /></button>
-                        <button onClick={() => { setOpenLang(isOpen ? null : langKey); setOpenSrc(null); }} aria-expanded={isOpen} className={isOpen ? 'flex shrink-0 items-center gap-0.5 rounded-md border px-1.5 py-0.5 text-xs font-bold transition-colors border-orange-400 bg-orange-500 text-white' : isNative ? 'flex shrink-0 items-center gap-0.5 rounded-md border px-1.5 py-0.5 text-xs font-bold transition-colors border-amber-300 bg-amber-100 text-amber-700 hover:border-amber-400 dark:border-amber-800 dark:bg-amber-900 dark:text-amber-200' : 'flex shrink-0 items-center gap-0.5 rounded-md border px-1.5 py-0.5 text-xs font-bold transition-colors border-slate-200 bg-slate-100 text-slate-500 hover:border-orange-300 hover:text-orange-600 dark:border-slate-600 dark:bg-slate-700 dark:text-slate-300'}><BookOpen size={10} />{data.sources.length}<ChevronRight size={11} className={isOpen ? 'transition-transform rotate-90' : 'transition-transform'} /></button>
-                      </div>
-                      {isOpen && (
-                        <div className="bg-slate-50 dark:bg-slate-900">
-                          {data.sources.map((s) => {
-                            const meta = metaOf(s);
-                            const sOpen = openSrc === (s.sourceId || s.sourceName);
-                            const src = meta?.sourceLanguage?.toUpperCase() || '??';
-                            const trg = meta?.targetLanguage?.toUpperCase() || '??';
-                            const isMono = src === trg;
-                            const author = meta?.author || s.sourceName || s.title || 'Bilinmeyen';
-                            const year = meta?.year || '';
-                            return (
-                              <div key={s.sourceId || s.sourceName} className="border-t border-slate-200 dark:border-slate-800">
-                                <button onClick={() => setOpenSrc(sOpen ? null : (s.sourceId || s.sourceName))} className="flex w-full items-start gap-2 py-2 pl-7 pr-3 text-left hover:bg-white dark:hover:bg-slate-800">
-                                  <ChevronDown size={11} className={sOpen ? 'mt-1 shrink-0 text-slate-400 transition-transform' : 'mt-1 shrink-0 text-slate-400 transition-transform -rotate-90'} />
-                                  <div className="min-w-0 flex-1">
-                                    <span className="block truncate text-xs font-bold text-slate-700 dark:text-slate-300">{author} <span className="font-normal text-slate-400">({year})</span></span>
-                                    <span className="block truncate text-xs text-slate-500 dark:text-slate-400">{meta?.displayName || s.title || s.sourceName}</span>
-                                  </div>
-                                  <span className={isMono ? 'mt-0.5 shrink-0 rounded px-1 py-0.5 font-mono text-xs bg-amber-200 text-amber-800 dark:bg-amber-900 dark:text-amber-200' : 'mt-0.5 shrink-0 rounded px-1 py-0.5 font-mono text-xs bg-slate-200 text-slate-600 dark:bg-slate-700 dark:text-slate-300'}>{isMono ? src : src + '→' + trg}</span>
-                                </button>
-                                {sOpen && (<div className="space-y-1 bg-white py-2 pl-12 pr-3 dark:bg-slate-800">{(s.meanings || []).slice(0, 8).map((m, mIdx) => (<p key={mIdx} className="border-l-2 border-orange-300 pl-2 text-xs font-medium text-slate-700 dark:border-orange-700 dark:text-slate-200">{mIdx + 1}. {cleanHtml(m)}</p>))}</div>)}
-                              </div>
-                            );
-                          })}
-                        </div>
-                      )}
-                    </div>
-                  );
-                })}
-              </div>
-              <p className="text-center text-xs text-slate-400">📚 sayısına tıkla → o dilin sözlüklerini gör</p>
+                          <Badge size="1" color={isLangOpen ? 'orange' : isNative ? 'amber' : 'sky'} variant="soft" highContrast className="w-10 justify-center shrink-0 font-mono">
+                            {langLabel}
+                          </Badge>
+                          <Box className="min-w-0 flex-1">
+                            <Text size="2" weight={isNative ? 'bold' : 'medium'} className="block break-words">
+                              {data.meanings.slice(0, 3).map(cleanHtml).join(' · ')}
+                              {data.meanings.length > 3 && ` +${data.meanings.length - 3}`}
+                            </Text>
+                          </Box>
+                          <IconButton type="button" size="1" variant="ghost" color="gray" onClick={() => navigator.clipboard.writeText(data.meanings.join(', '))} aria-label={`${langLabel} karşılıklarını kopyala`}>
+                            <Copy size={12} aria-hidden="true" />
+                          </IconButton>
+                          <Button type="button" size="1" variant={isLangOpen ? 'solid' : 'soft'} color={isLangOpen ? 'orange' : isNative ? 'amber' : 'gray'} highContrast aria-expanded={isLangOpen} onClick={() => { setOpenLang(isLangOpen ? null : langKey); setOpenSrc(null); }}>
+                            <BookOpen size={10} aria-hidden="true" />
+                            {data.sources.length}
+                            <ChevronRight size={11} className={`transition-transform ${isLangOpen ? 'rotate-90' : ''}`} aria-hidden="true" />
+                          </Button>
+                        </Flex>
+
+                        {isLangOpen && (
+                          <Box pl="5" pr="2" pb="2" className="space-y-1">
+                            {data.sources.map((s) => {
+                              const meta = metaOf(s);
+                              const srcKey = s.sourceId || s.sourceName;
+                              const sOpen = openSrc === srcKey;
+                              const src = meta?.sourceLanguage?.toUpperCase() || '??';
+                              const trg = meta?.targetLanguage?.toUpperCase() || '??';
+                              const isMono = src === trg;
+                              const author = meta?.author || s.sourceName || s.title || 'Bilinmeyen';
+                              const year = meta?.year || '';
+                              return (
+                                <Box key={srcKey} className="border-t border-[var(--gray-5)] pt-1">
+                                  <button type="button" onClick={() => setOpenSrc(sOpen ? null : srcKey)} aria-expanded={sOpen} className="flex w-full items-start gap-2 py-1.5 px-2 rounded text-left hover:bg-[var(--gray-3)] focus-visible:outline-2 focus-visible:outline-[var(--accent-8)]">
+                                    <ChevronDown size={12} className={`mt-1 shrink-0 transition-transform ${sOpen ? '' : '-rotate-90'}`} aria-hidden="true" />
+                                    <Box className="min-w-0 flex-1">
+                                      <Text as="div" size="1" weight="bold" className="truncate">{author} {year ? `(${year})` : ''}</Text>
+                                      <Text as="div" size="1" color="gray" className="truncate">{meta?.displayName || s.title || s.sourceName}</Text>
+                                    </Box>
+                                    <Badge size="1" color={isMono ? 'amber' : 'gray'} variant="soft" className="font-mono shrink-0">{isMono ? src : `${src}→${trg}`}</Badge>
+                                  </button>
+                                  {sOpen && (
+                                    <Box pl="5" py="1" className="space-y-1">
+                                      {(s.meanings || []).slice(0, 8).map((m, mIdx) => (
+                                        <Text key={mIdx} as="p" size="1" className="border-l-2 border-[var(--orange-8)] pl-2">{mIdx + 1}. {cleanHtml(m)}</Text>
+                                      ))}
+                                    </Box>
+                                  )}
+                                </Box>
+                              );
+                            })}
+                          </Box>
+                        )}
+                      </Box>
+                    );
+                  })}
+                </Flex>
+              </Card>
             </section>
           )}
+        </Box>
 
-        </div>
+        <PaylasimGorseliModal
+          isOpen={paylasimAcik}
+          onClose={() => setPaylasimAcik(false)}
+          kelime={{
+            kelime: content.cerkesce || content.word,
+            anlam: content.cerkesce ? content.word : sourceContents[0]?.meanings?.[0] || '',
+            cerkesce: content.cerkesce || '',
+            kaynaklar: sourceContents.map((s) => displayNameOf(s)),
+            tarih: new Date().toLocaleDateString('tr-TR'),
+            ornekler: sourceContents.flatMap((s) => (s.meanings || []).filter((m) => m.includes('◊') || m.includes('-') || m.includes(':'))).slice(0, 5),
+          }}
+        />
 
-<PaylasimGorseliModal 
-  isOpen={paylasimAcik} 
-  onClose={() => setPaylasimAcik(false)} 
-  kelime={{ 
-    kelime: content.cerkesce || content.word, 
-    anlam: content.cerkesce ? content.word : (sourceContents[0]?.meanings?.[0] || ''), 
-    cerkesce: content.cerkesce || '', 
-    kaynaklar: sourceContents.map((s) => displayNameOf(s)), 
-    tarih: new Date().toLocaleDateString('tr-TR'), 
-    ornekler: sourceContents.flatMap((s) => (s.meanings || []).filter((m) => m.includes('◊') || m.includes('-') || m.includes(':'))).slice(0, 5) 
-  }} 
-/>
-        <div className="absolute inset-x-0 bottom-0 z-20 flex gap-2 border-t border-slate-300 bg-white/95 p-3.5 backdrop-blur dark:border-slate-800 dark:bg-slate-900/95">
-          <button type="button" onClick={panoyaKopyala} className="flex min-h-11 flex-1 items-center justify-center gap-2 rounded-xl border border-slate-300 bg-slate-50 px-3 text-xs sm:text-sm font-semibold text-slate-700 transition-colors active:scale-95 dark:border-slate-700 dark:bg-slate-800 dark:text-slate-200">
-            {kopyalandi ? <Check size={16} /> : <Copy size={16} />}
+        <Flex gap="2" p="3" className="absolute inset-x-0 bottom-0 z-20 border-t border-[var(--gray-6)]" style={{ backgroundColor: 'var(--color-panel-solid)' }}>
+          <Button type="button" size="2" variant="soft" color="gray" highContrast onClick={panoyaKopyala} className="flex-1">
+            {kopyalandi ? <Check size={16} aria-hidden="true" /> : <Copy size={16} aria-hidden="true" />}
             {kopyalandi ? 'Kopyalandı' : 'Kopyala'}
-          </button>
-          <button type="button" onClick={dinle} disabled={!hasSpeechSupport} className={`flex min-h-11 flex-1 items-center justify-center gap-2 rounded-xl border border-slate-300 bg-slate-50 px-3 text-xs sm:text-sm font-semibold transition-colors active:scale-95 dark:border-slate-700 dark:bg-slate-800 ${hasSpeechSupport ? 'text-slate-700 dark:text-slate-200' : 'text-slate-400 opacity-50 cursor-not-allowed'}`}>
-            <Volume2 size={16} />Dinle
-          </button>
-          <button type="button" onClick={paylas} className="flex min-h-11 flex-1 items-center justify-center gap-2 rounded-xl bg-orange-500 px-3 text-xs sm:text-sm font-semibold text-white transition-colors active:scale-95 hover:bg-orange-600">
-            <Share2 size={16} />Paylaş
-          </button>
-        </div>
-      </div>
+          </Button>
+          <Button type="button" size="2" variant="soft" color="indigo" highContrast onClick={dinle} disabled={!hasSpeechSupport} className="flex-1">
+            <Volume2 size={16} aria-hidden="true" />
+            Dinle
+          </Button>
+          <Button type="button" size="2" variant="solid" color="orange" highContrast onClick={paylas} className="flex-1">
+            <Share2 size={16} aria-hidden="true" />
+            Paylaş
+          </Button>
+        </Flex>
+      </Box>
     </div>
   );
 }
-
-

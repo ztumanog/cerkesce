@@ -8,7 +8,8 @@ function loadLexemes() {
   if (cachedLexemes.length > 0) return cachedLexemes;
   const lexemesPath = path.resolve('./public/data/linguistic/lexemes.json');
   if (fs.existsSync(lexemesPath)) {
-    cachedLexemes = JSON.parse(fs.readFileSync(lexemesPath, 'utf-8'));
+    const raw = JSON.parse(fs.readFileSync(lexemesPath, 'utf-8'));
+    cachedLexemes = Array.isArray(raw) ? raw : raw?.lexemes ?? [];
   }
   return cachedLexemes;
 }
@@ -25,11 +26,12 @@ export async function POST(req: NextRequest) {
     const searchTerm = query.toLowerCase().trim();
 
     const results = lexemes
-      // 1. SADECE LEMMALAR (sözlük maddeleri)
       .filter((l: any) => l.isLemma === true)
-      // 2. Arama filtresi
       .filter((l: any) =>
         l.form?.toLowerCase().includes(searchTerm) ||
+        l.dialectVariants?.adyghe?.toLowerCase().includes(searchTerm) ||
+        l.dialectVariants?.kabardian?.toLowerCase().includes(searchTerm) ||
+        l.translations?.tr?.toLowerCase().includes(searchTerm) ||
         l.literalMeaning?.toLowerCase().includes(searchTerm)
       )
       .slice(0, 20)
@@ -40,6 +42,7 @@ export async function POST(req: NextRequest) {
           ipa: l.ipa,
           literalMeaning: l.literalMeaning,
           literalMeaningAdy: l.literalMeaningAdy ?? null,
+          translations: l.translations ?? {},
           partOfSpeech: l.partOfSpeech,
           dialectVariants: l.dialectVariants,
           wordFamilyId: l.wordFamilyId,

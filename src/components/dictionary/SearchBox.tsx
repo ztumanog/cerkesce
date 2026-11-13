@@ -1,6 +1,17 @@
 'use client';
 
 import React, { useState, useRef, useEffect } from 'react';
+import { Search, X, Keyboard } from 'lucide-react';
+import {
+  Flex,
+  Box,
+  Text,
+  Button,
+  IconButton,
+  TextField,
+  Select,
+  Callout,
+} from '@radix-ui/themes';
 import { AkilliKlavye } from '@/components/features/AkilliKlavye';
 import { SmartSuggestionService } from '@/domain/discovery/services/SmartSuggestionService';
 import { SmartSuggestion } from '@/domain/discovery/dto/SmartSuggestionDTO';
@@ -16,7 +27,7 @@ export interface SearchBoxProps {
 
 export function SearchBox({
   onSearch,
-  placeholder = 'Cerkesce, Turkce, Ingilizce, Rusca veya Arapca ara...',
+  placeholder = 'Çerkesçe, Türkçe, İngilizce, Rusça veya Arapça ara...',
   filterSlot,
   inputRef: externalRef,
   klavyeAcik: externalKlavyeAcik,
@@ -34,40 +45,28 @@ export function SearchBox({
   const setKlavyeAcik = externalSetKlavyeAcik ?? setInternalKlavyeAcik;
   const serviceRef = useRef<SmartSuggestionService | null>(null);
 
-  // 1. Service'i baslat ve lexemes.json'u yukle
   useEffect(() => {
-    if (!serviceRef.current) {
-      serviceRef.current = new SmartSuggestionService();
-    }
-
+    if (!serviceRef.current) serviceRef.current = new SmartSuggestionService();
     fetch('/data/linguistic/lexemes.json')
       .then((r) => r.json())
       .then((lexemes) => {
         serviceRef.current?.loadLexemes(lexemes);
         setSuggestionsLoaded(true);
       })
-      .catch((e) => {
-        console.warn('SmartSuggestionService: lexemes yuklenemedi', e);
-      });
+      .catch((e) => console.warn('SmartSuggestionService: lexemes yuklenemedi', e));
   }, []);
 
-  // 2. Query degistiginde onerileri guncelle
   useEffect(() => {
     if (!suggestionsLoaded || !serviceRef.current) {
       setSuggestions([]);
       return;
     }
-
     const trimmed = query.trim();
-
-    // 2 karakterden az ise oneri yok
     if (trimmed.length < 2) {
       setSuggestions([]);
       return;
     }
-
-    const result = serviceRef.current.suggest(trimmed, 5);
-    setSuggestions(result.suggestions);
+    setSuggestions(serviceRef.current.suggest(trimmed, 5).suggestions);
   }, [query, suggestionsLoaded]);
 
   const handleClear = () => {
@@ -90,115 +89,104 @@ export function SearchBox({
   };
 
   const handleKeyDown = (e: React.KeyboardEvent) => {
-    if (e.key === 'Enter') {
-      handleSearch();
-    }
-    if (e.key === 'Escape') {
-      setSuggestions([]);
-    }
-  };
-
-  const handleKlavyeToggle = () => {
-    setKlavyeAcik(!klavyeAcik);
+    if (e.key === 'Enter') handleSearch();
+    if (e.key === 'Escape') setSuggestions([]);
   };
 
   return (
-    <div className="w-full flex flex-col gap-3">
-      {/* ARAMA INPUT */}
-      <div className="relative flex items-center">
-        <input
-          ref={inputRef}
-          type="text"
-          value={query}
-          onChange={(e) => setQuery(e.target.value)}
-          onKeyDown={handleKeyDown}
-          placeholder={placeholder}
-          className="w-full px-5 py-4 pl-12 pr-24 text-base sm:text-lg rounded-2xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 text-slate-900 dark:text-slate-100 focus:outline-none focus:ring-2 focus:ring-amber-500 shadow-md transition-all"
-        />
-
-        <div className="absolute left-4 text-slate-400 pointer-events-none text-xl">
-          🔍
-        </div>
-
-        <div className="absolute right-3 flex items-center gap-1">
-          {query && (
-            <button
-              type="button"
-              onClick={handleClear}
-              className="p-1.5 text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 rounded-full"
-            >
-              ✕
-            </button>
-          )}
-
-          <button
-            type="button"
-            onClick={handleSearch}
-            className="px-3 py-1.5 bg-amber-500 hover:bg-amber-600 text-white font-medium rounded-xl text-sm transition-colors"
+    <Flex direction="column" gap="3" width="100%">
+      <Flex gap="2" align="center" width="100%">
+        <Box flexGrow="1">
+          <TextField.Root
+            ref={inputRef}
+            size="3"
+            radius="large"
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
+            onKeyDown={handleKeyDown}
+            placeholder={placeholder}
+            aria-label="Sözlük arama kutusu"
           >
-            Ara
-          </button>
-        </div>
-      </div>
+            <TextField.Slot side="left">
+              <Search className="w-4 h-4" aria-hidden="true" />
+            </TextField.Slot>
+            {query && (
+              <TextField.Slot side="right">
+                <IconButton
+                  type="button"
+                  size="1"
+                  variant="ghost"
+                  color="gray"
+                  onClick={handleClear}
+                  aria-label="Aramayı temizle"
+                >
+                  <X className="w-4 h-4" aria-hidden="true" />
+                </IconButton>
+              </TextField.Slot>
+            )}
+          </TextField.Root>
+        </Box>
 
-      {/* ONERILER - "Bunu mu demek istediniz?" */}
+        <Button type="button" size="3" color="indigo" highContrast onClick={handleSearch}>
+          Ara
+        </Button>
+      </Flex>
+
       {suggestions.length > 0 && (
-        <div className="w-full px-4 py-3 bg-amber-50 dark:bg-amber-950/30 border border-amber-200 dark:border-amber-800 rounded-xl">
-          <p className="text-xs font-medium text-amber-700 dark:text-amber-400 mb-2">
-            Bunu mu demek istediniz?
-          </p>
-          <div className="flex flex-wrap gap-2">
-            {suggestions.map((s, index) => (
-              <button
-                key={`${s.word}-${index}`}
-                type="button"
-                onClick={() => handleSuggestionClick(s.word)}
-                className="px-3 py-1.5 bg-white dark:bg-slate-800 hover:bg-amber-100 dark:hover:bg-amber-900 border border-amber-300 dark:border-amber-700 rounded-lg text-sm text-slate-800 dark:text-slate-200 transition-colors"
-                title={s.meaningTr || s.meaningEn || s.meaningRu || ''}
-              >
-                <span className="font-medium">{s.word}</span>
-                {s.meaningTr && (
-                  <span className="ml-2 text-xs text-slate-500 dark:text-slate-400">
-                    {s.meaningTr}
-                  </span>
-                )}
-              </button>
-            ))}
-          </div>
-        </div>
+        <Callout.Root size="1" color="amber" variant="surface" role="region" aria-label="Arama önerileri">
+          <Flex direction="column" gap="2" width="100%">
+            <Text size="1" weight="bold">Bunu mu demek istediniz?</Text>
+            <Flex wrap="wrap" gap="2">
+              {suggestions.map((s, index) => (
+                <Button
+                  key={`${s.word}-${index}`}
+                  type="button"
+                  size="1"
+                  variant="soft"
+                  color="amber"
+                  highContrast
+                  onClick={() => handleSuggestionClick(s.word)}
+                  title={s.meaningTr || s.meaningEn || s.meaningRu || ''}
+                >
+                  <strong>{s.word}</strong>
+                  {s.meaningTr && <Text size="1" color="gray">— {s.meaningTr}</Text>}
+                </Button>
+              ))}
+            </Flex>
+          </Flex>
+        </Callout.Root>
       )}
 
-      {/* ARAMA MODU + FILTRE SLOTU + KLAVYE TOGGLE */}
-      <div className="flex flex-wrap items-center justify-between gap-2 px-1">
-        <div className="flex items-center gap-2">
-          <span className="text-xs font-medium text-slate-500 dark:text-slate-400">
-            Arama Modu:
-          </span>
-          <select
-            value={mode}
-            onChange={(e) => setMode(e.target.value)}
-            className="text-xs px-2 py-1 rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-300"
-          >
-            <option value="baslayan">Baslayan</option>
-            <option value="iceren">Iceren</option>
-            <option value="tam">Tam</option>
-          </select>
-        </div>
+      <Flex wrap="wrap" align="center" justify="between" gap="2">
+        <Flex align="center" gap="2">
+          <Text as="label" size="1" weight="medium" color="gray">Arama Modu:</Text>
+          <Select.Root value={mode} onValueChange={setMode} size="2">
+            <Select.Trigger aria-label="Arama eşleşme modu" />
+            <Select.Content>
+              <Select.Item value="baslayan">Başlayan</Select.Item>
+              <Select.Item value="iceren">İçeren</Select.Item>
+              <Select.Item value="tam">Tam Eşleşme</Select.Item>
+            </Select.Content>
+          </Select.Root>
+        </Flex>
 
-        <div className="flex items-center gap-2">
+        <Flex align="center" gap="2">
           {filterSlot}
-
-          <button
+          <Button
             type="button"
-            onClick={handleKlavyeToggle}
-            className="px-3 py-1.5 text-xs font-medium bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-300 rounded-lg transition-colors"
+            size="2"
+            variant={klavyeAcik ? 'solid' : 'soft'}
+            color={klavyeAcik ? 'indigo' : 'gray'}
+            highContrast
+            aria-pressed={klavyeAcik}
+            onClick={() => setKlavyeAcik(!klavyeAcik)}
           >
-            {klavyeAcik ? 'Klavye Kapat' : 'Klavye'}
-          </button>
-        </div>
-      </div>
+            <Keyboard className="w-4 h-4" aria-hidden="true" />
+            {klavyeAcik ? 'Klavyeyi Kapat' : 'Çerkesçe Klavye'}
+          </Button>
+        </Flex>
+      </Flex>
 
-      {/* AKILLI KLAVYE */}
       {klavyeAcik && (
         <AkilliKlavye
           onKeyPress={(char) => setQuery((q) => q + char)}
@@ -206,9 +194,8 @@ export function SearchBox({
           onClear={() => setQuery('')}
         />
       )}
-    </div>
+    </Flex>
   );
 }
-
 
 export default SearchBox;
