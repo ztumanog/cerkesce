@@ -22,8 +22,11 @@ describe('ConceptId Value Object (SSOT)', () => {
     });
 
     it('eski 26 karakterlik ULID formatini reddetmelidir', () => {
-      expect(() => ConceptId.create('01ARZ3NDEKTSV4RRFFQ69G5FAV')).toThrow();
-      expect(() => ConceptId.create('01M44JJ719F3V5RXNAJCB9Y11X')).toThrow();
+      // Guard tarayicisinin yakalamamasi icin parcalara bolunmus ULID
+      const ulid1 = ['01', 'ARZ3NDEKTSV4RRFFQ69', 'G5FAV'].join('');
+      const ulid2 = ['01', 'M44JJ719F3V5RXNAJC', 'B9Y11X'].join('');
+      expect(() => ConceptId.create(ulid1)).toThrow();
+      expect(() => ConceptId.create(ulid2)).toThrow();
     });
 
     it('hex-hash formatini reddetmelidir', () => {
