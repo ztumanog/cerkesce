@@ -1,13 +1,10 @@
 import React from 'react';
 import fs from 'fs';
 import path from 'path';
-import Link from 'next/link';
 import type { Metadata } from 'next';
-import { ArrowLeft, List, BookOpen } from 'lucide-react';
 import {
   ConceptGraphCanvas,
   CytoscapeElementData,
-  ConceptOption,
 } from '@/ui/components/discovery/ConceptGraphCanvas';
 import { ConceptGraphAdapter } from '@/domain/discovery/adapters/ConceptGraphAdapter';
 import { CytoscapeProjectionAdapter } from '@/domain/discovery/adapters/CytoscapeProjectionAdapter';
@@ -18,8 +15,8 @@ interface PageProps {
 }
 
 export const metadata: Metadata = {
-  title: 'Kavram İlişki Ağı | Çerkesçe Sözlük',
-  description: 'Çerkesçe Sözlük kavramlar, eşanlamlı kelimeler ve ortak kök aileleri arasındaki görsel ilişki ağı.',
+  title: 'Concept Relation Network | Adyghe & Kabardian Lexicon',
+  description: 'Interactive Circassian concept network, cognates, and lexical families.',
 };
 
 function readJsonSafe<T>(filePath: string, fallback: T): T {
@@ -37,15 +34,6 @@ function formatTranslation(val?: string | string[]): string {
   return String(val).trim();
 }
 
-function normalizeGloss(raw: string): string {
-  const clean = String(raw || '').trim();
-  if (!clean) return '';
-  if (clean === clean.toUpperCase() && /[A-ZÇĞİÖŞÜ]/.test(clean)) {
-    return clean.toLocaleLowerCase('tr-TR');
-  }
-  return clean;
-}
-
 export default async function ConceptGraphPage({ params }: PageProps) {
   const { concept } = await params;
   const decodedConcept = decodeURIComponent(concept).trim();
@@ -56,7 +44,6 @@ export default async function ConceptGraphPage({ params }: PageProps) {
     path.join(baseDir, 'concept-words.json'),
     {},
   );
-  const conceptTr = readJsonSafe<Record<string, string>>(path.join(baseDir, 'concept-tr.json'), {});
   const rawLexemes = readJsonSafe<any>(path.join(baseDir, 'lexemes.json'), []);
   const lexemes: any[] = Array.isArray(rawLexemes) ? rawLexemes : rawLexemes.lexemes ?? [];
 
@@ -71,15 +58,13 @@ export default async function ConceptGraphPage({ params }: PageProps) {
     return (lexConcept && lexConcept === conceptKey) || normSeeds.has(formNorm) || formNorm === normQuery;
   });
 
-  const inferredTr = formatTranslation(matchedLexemes.find((l) => formatTranslation(l.translations?.tr))?.translations?.tr);
   const inferredEn = formatTranslation(matchedLexemes.find((l) => formatTranslation(l.translations?.en))?.translations?.en);
-  const trLabel = meta?.tr || conceptTr[conceptKey] || conceptTr[decodedConcept] || inferredTr || '';
-  const enLabel = meta?.en || inferredEn || decodedConcept;
+  const enLabel = String(meta?.en || inferredEn || decodedConcept).trim();
 
   const existingForms = new Set(matchedLexemes.map((l) => normalizePalochka(String(l.form || '')).toLowerCase()));
   const synthetic = seedWords
     .filter((w) => !existingForms.has(normalizePalochka(w).toLowerCase()))
-    .map((w, i) => ({ id: `SEED-${conceptKey}-${i}`, form: w, dialect: 'COMMON', translations: { tr: trLabel } }));
+    .map((w, i) => ({ id: `SEED-${conceptKey}-${i}`, form: w, dialect: 'COMMON' }));
 
   const allItems = [...matchedLexemes, ...synthetic];
   const familyIds = new Set(allItems.map((l) => l.wordFamilyId).filter(Boolean));
@@ -100,13 +85,13 @@ export default async function ConceptGraphPage({ params }: PageProps) {
     const nodeId = String(item.form || '').trim();
     if (!nodeId || seenIds.has(nodeId)) return;
     seenIds.add(nodeId);
-    const trHint = normalizeGloss(formatTranslation(item.translations?.tr).split(',')[0]?.trim() || '');
+    const dialect = String(item.dialect || 'COMMON').toUpperCase();
     graphRelated.push({
       conceptId: nodeId,
-      label: trHint ? `${nodeId} (${trHint})` : nodeId,
+      label: dialect !== 'COMMON' ? `${nodeId} (${dialect})` : nodeId,
       parentConceptId: conceptKey,
       relationType: 'CHILD',
-      dialect: String(item.dialect || 'COMMON').toUpperCase(),
+      dialect,
       score: 0.98,
     });
   });
@@ -115,29 +100,33 @@ export default async function ConceptGraphPage({ params }: PageProps) {
     const nodeId = String(rel.form || '').trim();
     if (!nodeId || seenIds.has(nodeId)) return;
     seenIds.add(nodeId);
-    const relTr = normalizeGloss(formatTranslation(rel.translations?.tr).split(',')[0]?.trim() || '');
+    const dialect = String(rel.dialect || 'COMMON').toUpperCase();
     graphRelated.push({
       conceptId: nodeId,
-      label: relTr ? `${nodeId} (${relTr})` : nodeId,
+      label: dialect !== 'COMMON' ? `${nodeId} (${dialect})` : nodeId,
       parentConceptId: conceptKey,
       relationType: 'ROOT',
-      dialect: String(rel.dialect || 'COMMON').toUpperCase(),
+      dialect,
       score: 0.82,
     });
   });
 
-  const trTokens = trLabel.toLowerCase().split(/[,;/\s]+/).map((t) => t.trim()).filter((t) => t.length >= 3);
-  if (trTokens.length > 0) {
+  const enTokens = enLabel
+    .toLowerCase()
+    .split(/[^a-z]+/)
+    .filter((t) => t.length >= 4 && !['with', 'from', 'that', 'this', 'into'].includes(t));
+
+  if (enTokens.length > 0) {
     let added = 0;
     for (const [cKey, cVal] of Object.entries(conceptWords)) {
       if (cKey === conceptKey || seenIds.has(cKey)) continue;
-      const cTr = String(cVal?.tr || '').toLowerCase();
-      if (trTokens.some((tok) => cTr.includes(tok))) {
+      const cEnWords = String(cVal?.en || '').toLowerCase().split(/[^a-z]+/);
+      if (enTokens.some((tok) => cEnWords.includes(tok))) {
         seenIds.add(cKey);
-        const ncTr = normalizeGloss(String(cVal?.tr || ''));
+        const targetEn = String(cVal?.en || cKey).trim();
         graphRelated.push({
           conceptId: cKey,
-          label: ncTr ? `${ncTr} [${cKey}]` : cKey,
+          label: `${targetEn} [${cKey}]`,
           parentConceptId: conceptKey,
           relationType: 'RELATED',
           score: 0.85,
@@ -147,10 +136,7 @@ export default async function ConceptGraphPage({ params }: PageProps) {
     }
   }
 
-  const cleanRootTr = normalizeGloss(trLabel);
-  const rootNodeTitle = cleanRootTr
-    ? `${cleanRootTr}${enLabel && enLabel.toLowerCase() !== cleanRootTr.toLowerCase() ? ` (${enLabel.toLowerCase()})` : ''}`
-    : decodedConcept;
+  const rootNodeTitle = `${enLabel} [${conceptKey}]`;
 
   const canonicalNetwork = ConceptGraphAdapter.toCanonicalNetwork({
     rootConceptId: conceptKey,
@@ -159,55 +145,10 @@ export default async function ConceptGraphPage({ params }: PageProps) {
   });
   const graphData = CytoscapeProjectionAdapter.toCytoscapeFormat(canonicalNetwork) as CytoscapeElementData;
 
-  const availableConcepts: ConceptOption[] = Object.entries(conceptWords)
-    .map(([id, val]) => ({
-      id,
-      labelTr: normalizeGloss(String(val?.tr || conceptTr[id] || id)),
-    }))
-    .filter((c) => c.labelTr);
-
   return (
-    <main className="min-h-[calc(100vh-64px)] bg-slate-50 px-4 py-6 sm:px-6 lg:px-8">
-      <div className="mx-auto max-w-7xl space-y-4">
-        {/* Çerkesçe Sözlük Üst Gezinti Şeridi */}
-        <div className="flex flex-wrap items-center justify-between gap-3 rounded-xl border border-slate-200 bg-white px-4 py-2.5 shadow-2xs">
-          <nav aria-label="Sayfa yolu" className="flex items-center gap-2 text-xs text-slate-500">
-            <Link href="/" className="inline-flex items-center gap-1.5 font-bold text-slate-900 hover:text-indigo-600">
-              <BookOpen className="h-3.5 w-3.5 text-indigo-600" />
-              Çerkesçe Sözlük
-            </Link>
-            <span>/</span>
-            <Link href="/kavramlar" className="font-medium hover:text-indigo-600">
-              Kavramlar
-            </Link>
-            <span>/</span>
-            <span className="font-semibold text-slate-900 capitalize">{cleanRootTr || decodedConcept}</span>
-          </nav>
-
-          <div className="flex items-center gap-2">
-            <Link
-              href="/kavramlar"
-              className="inline-flex items-center gap-1.5 rounded-lg border border-slate-200 bg-slate-50 px-3 py-1.5 text-xs font-semibold text-slate-700 hover:bg-slate-100"
-            >
-              <ArrowLeft className="h-3.5 w-3.5" />
-              Tüm Kavramlar
-            </Link>
-            <Link
-              href={`/kavram/${encodeURIComponent(conceptKey)}/liste`}
-              className="inline-flex items-center gap-1.5 rounded-lg border border-slate-200 bg-slate-50 px-3 py-1.5 text-xs font-semibold text-slate-700 hover:bg-slate-100"
-            >
-              <List className="h-3.5 w-3.5" />
-              Kelime Listesi Görünümü
-            </Link>
-          </div>
-        </div>
-
-        <ConceptGraphCanvas
-          data={graphData}
-          rootLabel={rootNodeTitle}
-          conceptId={conceptKey}
-          availableConcepts={availableConcepts}
-        />
+    <main className="min-h-[calc(100vh-64px)] bg-slate-950 px-4 py-6 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl">
+        <ConceptGraphCanvas data={graphData} rootLabel={rootNodeTitle} />
       </div>
     </main>
   );
