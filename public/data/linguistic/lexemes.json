@@ -714281,7 +714281,9 @@
       "ru": "гъэбатэ; егъэлые; егъэлей"
     },
     "ipa": "/ʁɐbatɐ/",
-    "rootIds": [],
+    "rootIds": [
+      "R-BAT"
+    ],
     "dialectVariants": [
       "егъэлые"
     ],
@@ -714984,7 +714986,9 @@
       "en": "etken"
     },
     "ipa": "/ʁɐіwrǝɕіɐ/",
-    "rootIds": [],
+    "rootIds": [
+      "R-URYSHCH"
+    ],
     "dialectVariants": [
       "фэзыгъэбл, езыгъэгушІу, зыунэтІ, гъэІорышІ"
     ],
@@ -716947,7 +716951,9 @@
       "en": "sakal"
     },
     "ipa": "/ʑakіɐ/",
-    "rootIds": [],
+    "rootIds": [
+      "R-ZHAKӀ"
+    ],
     "dialectVariants": [
       "жакІэ"
     ],
@@ -717003,7 +717009,9 @@
       "ru": "жанта )"
     },
     "ipa": "/ʑantіɐ/",
-    "rootIds": [],
+    "rootIds": [
+      "R-ZHANT"
+    ],
     "dialectVariants": [
       "джэгу, жантІэ, джэныкъу"
     ],
@@ -720184,7 +720192,9 @@
       "ru": "двор"
     },
     "ipa": "/pɕіantіɐ/",
-    "rootIds": [],
+    "rootIds": [
+      "R-PSHCHANT"
+    ],
     "dialectVariants": [
       "пкІантІ, пкІэнтІэпс"
     ],
@@ -721410,7 +721420,9 @@
       "ru": "Тяпка, мотыга"
     },
     "ipa": "/fіanɐ/",
-    "rootIds": [],
+    "rootIds": [
+      "R-FAN"
+    ],
     "dialectVariants": [
       "шІуанэ"
     ],
@@ -722444,7 +722456,9 @@
       "en": "eksimek"
     },
     "ipa": "/fіɐіwn/",
-    "rootIds": [],
+    "rootIds": [
+      "R-FEU"
+    ],
     "dialectVariants": [
       "шІоІун"
     ],
@@ -746349,7 +746363,9 @@
       "tr": "woven"
     },
     "ipa": "/zɐʔʷɕa/",
-    "rootIds": [],
+    "rootIds": [
+      "R-1USHCH"
+    ],
     "notes": "Kaynak: 19.Kbd-Ru-2-Jonty.json, 5.Ady-Rus_Qarden.json",
     "etymologyType": "native",
     "conceptNorm": "QUALITY_ADJ",
@@ -750549,7 +750565,9 @@
       "en": "as adj."
     },
     "ipa": "/qǝzɐʔǝħa/",
-    "rootIds": [],
+    "rootIds": [
+      "R-YH"
+    ],
     "notes": "Kaynak: 5.Ady-Rus_Qarden.json, 20.Kbd-Ru-Jonty.json",
     "literalMeaning": "spoiled, ill-bred",
     "literalMeaningSource": "ru->tr (KAVRAM_ etiketi) (orta)",
@@ -760239,7 +760257,9 @@
       "en": "reduce"
     },
     "ipa": "/ʁɐmaɕʼɐn/",
-    "rootIds": [],
+    "rootIds": [
+      "R-MASHCH"
+    ],
     "notes": "Kaynak: 20.Kbd-Ru-Jonty.json, 19.Kbd-Ru-2-Jonty.json",
     "etymologyType": "native",
     "conceptNorm": "ACTION_VERB",
@@ -761358,7 +761378,9 @@
       "en": "1. swollen; 2. swelling; tumour."
     },
     "ipa": "/qɐbɐga/",
-    "rootIds": [],
+    "rootIds": [
+      "R-BEG_2"
+    ],
     "notes": "Kaynak: 5.Ady-Rus_Qarden.json, 6.Ady-Rus_Sherdjes.json",
     "etymologyType": "native",
     "conceptNorm": "QUALITY_ADJ",
@@ -761614,7 +761636,9 @@
       "en": "frightened, scared, startled"
     },
     "ipa": "/ʃǝna/",
-    "rootIds": [],
+    "rootIds": [
+      "R-SHYN_2"
+    ],
     "notes": "Kaynak: 19.Kbd-Ru-2-Jonty.json, 5.Ady-Rus_Qarden.json",
     "etymologyType": "native",
     "conceptNorm": "QUALITY_ADJ",
@@ -761641,7 +761665,9 @@
       "en": "winner; conqueror; текӀуа type: noun definitions: 1. winner; of текӀуэн"
     },
     "ipa": "/tеkʷʼa/",
-    "rootIds": [],
+    "rootIds": [
+      "R-KWA"
+    ],
     "notes": "Kaynak: 19.Kbd-Ru-2-Jonty.json, 5.Ady-Rus_Qarden.json",
     "etymologyType": "native",
     "conceptNorm": "ПОБЕДИТЕЛЬ",
@@ -766170,7 +766196,9 @@
       "en": "attack, pounce, fall or throw yourself on sb"
     },
     "ipa": "/еkʷʼɐ/",
-    "rootIds": [],
+    "rootIds": [
+      "R-KWA"
+    ],
     "notes": "Kaynak: 6.Ady-Rus_Sherdjes.json",
     "etymologyType": "native",
     "conceptNorm": "АТАКА",
@@ -767187,7 +767215,9 @@
       "en": "rumour"
     },
     "ipa": "/еʔʷatɐ/",
-    "rootIds": [],
+    "rootIds": [
+      "R-1UAT"
+    ],
     "notes": "Kaynak: 6.Ady-Rus_Sherdjes.json",
     "etymologyType": "native",
     "conceptNorm": "БЗЭГУЗЕХЬЭ",
@@ -773832,7 +773862,9 @@
       "tr": "undue"
     },
     "ipa": "/imǝtʃɐzw/",
-    "rootIds": [],
+    "rootIds": [
+      "R-CHEZU"
+    ],
     "notes": "Kaynak: 19.Kbd-Ru-2-Jonty.json, 20.Kbd-Ru-Jonty.json",
     "etymologyType": "native",
     "conceptNorm": "QUALITY_ADJ",
@@ -775787,7 +775819,9 @@
       "tr": "stretch"
     },
     "ipa": "/zɐxɐʃǝn/",
-    "rootIds": [],
+    "rootIds": [
+      "R-SHYN_2"
+    ],
     "notes": "Kaynak: 5.Ady-Rus_Qarden.json, 19.Kbd-Ru-2-Jonty.json",
     "etymologyType": "native",
     "conceptNorm": "GRAMMAR_SPATIAL",
@@ -777161,7 +777195,9 @@
       "tr": "play"
     },
     "ipa": "/еʔʷяɕʼɐn/",
-    "rootIds": [],
+    "rootIds": [
+      "R-UYASHCH"
+    ],
     "notes": "Kaynak: 19.Kbd-Ru-2-Jonty.json, 5.Ady-Rus_Qarden.json",
     "etymologyType": "native",
     "conceptNorm": "ACTION_VERB",
@@ -782126,7 +782162,9 @@
       "en": "1. disobedient, refractory; naughty; 2. disobedient/refractory person; naughty child."
     },
     "ipa": "/mǝdaʔʷɐ/",
-    "rootIds": [],
+    "rootIds": [
+      "R-DAU"
+    ],
     "notes": "Kaynak: 1.Ady-Ady_AP.json, 5.Ady-Rus_Qarden.json",
     "etymologyType": "native",
     "conceptNorm": "ЖЫӀЭМЫДАӀУЭ",
@@ -790184,7 +790222,9 @@
       "en": "1. crushed, run over, squeezed, pressed down, weighed down; 2. fig oppressed, repressed, suppressed, put down"
     },
     "ipa": "/wɕǝgʷa/",
-    "rootIds": [],
+    "rootIds": [
+      "R-USHCHYGU"
+    ],
     "notes": "Kaynak: 5.Ady-Rus_Qarden.json",
     "literalMeaning": "depressed",
     "literalMeaningSource": "ru->tr (KAVRAM_ etiketi) (orta)",
@@ -790729,7 +790769,9 @@
       "en": "cooked; of гъэхьэзырын"
     },
     "ipa": "/ʁɐħɐzǝra/",
-    "rootIds": [],
+    "rootIds": [
+      "R-XEZYR"
+    ],
     "notes": "Kaynak: 19.Kbd-Ru-2-Jonty.json, 5.Ady-Rus_Qarden.json",
     "etymologyType": "native",
     "conceptNorm": "QUALITY_ADJ",
@@ -791822,7 +791864,9 @@
       "en": "classic"
     },
     "ipa": "/klassikɐ/",
-    "rootIds": [],
+    "rootIds": [
+      "R-KLASSIK"
+    ],
     "notes": "Kaynak: 19.Kbd-Ru-2-Jonty.json, 20.Kbd-Ru-Jonty.json",
     "etymologyType": "loanword",
     "conceptNorm": "КЛАССИКА",
@@ -792134,7 +792178,9 @@
       "en": "unconscious; exhausted; of мэхын; person in a fainting fit"
     },
     "ipa": "/mɐxa/",
-    "rootIds": [],
+    "rootIds": [
+      "R-MEX"
+    ],
     "notes": "Kaynak: 20.Kbd-Ru-Jonty.json, 19.Kbd-Ru-2-Jonty.json",
     "etymologyType": "native",
     "conceptNorm": "БЕЗ СОЗНАНИЯ",
@@ -793602,7 +793648,9 @@
       "en": "nepereh. ch. scratch that-l."
     },
     "ipa": "/еtʼɐχʷn/",
-    "rootIds": [],
+    "rootIds": [
+      "R-TEKHU"
+    ],
     "notes": "Kaynak: 20.Kbd-Ru-Jonty.json, 5.Ady-Rus_Qarden.json",
     "examples": [
       "*ЩӀыбым етӀэхъун."
@@ -800707,7 +800755,9 @@
       "en": "brilliant; unusual; exceptional"
     },
     "ipa": "/qǝzɐrǝmǝkʷʼɐ/",
-    "rootIds": [],
+    "rootIds": [
+      "R-KWA"
+    ],
     "notes": "Kaynak: 19.Kbd-Ru-2-Jonty.json",
     "etymologyType": "native",
     "conceptNorm": "QUALITY_ADJ",
@@ -808210,7 +808260,9 @@
       "tr": "1. inflated, swollen; 2. as adj pudgy, plump"
     },
     "ipa": "/wdʒɐrɐdʒa/",
-    "rootIds": [],
+    "rootIds": [
+      "R-UJEREJ"
+    ],
     "notes": "Kaynak: 5.Ady-Rus_Qarden.json",
     "etymologyType": "native",
     "conceptNorm": "QUALITY_ADJ",
@@ -808233,7 +808285,9 @@
       "en": "environment, surroundings, milieu, social surroundings, situation."
     },
     "ipa": "/qɐzǝwħ/",
-    "rootIds": [],
+    "rootIds": [
+      "R-UH"
+    ],
     "notes": "Kaynak: 5.Ady-Rus_Qarden.json",
     "etymologyType": "native",
     "conceptNorm": "СРЕДА",
@@ -809113,7 +809167,9 @@
       "en": "1. to pass through smth.; 2. to flow/run through smth."
     },
     "ipa": "/pxǝrǝkʼǝn/",
-    "rootIds": [],
+    "rootIds": [
+      "R-KYN"
+    ],
     "notes": "Kaynak: 5.Ady-Rus_Qarden.json",
     "etymologyType": "native",
     "conceptNorm": "СКВОЗЬ ЧТО-ЛИБО",
@@ -809136,7 +809192,9 @@
       "en": "oneself"
     },
     "ipa": "/pxǝrǝpɕǝn/",
-    "rootIds": [],
+    "rootIds": [
+      "R-PSHCHY"
+    ],
     "notes": "Kaynak: 5.Ady-Rus_Qarden.json",
     "etymologyType": "native",
     "conceptNorm": "СКВОЗЬ ЧТО-ЛИБО",
@@ -809588,7 +809646,9 @@
       "en": "teker"
     },
     "ipa": "/dambǝrɐ/",
-    "rootIds": [],
+    "rootIds": [
+      "R-DAMBYR"
+    ],
     "notes": "Kaynak: 6.Ady-Rus_Sherdjes.json",
     "etymologyType": "native",
     "conceptNorm": "ХУДЭПХЪЕИН",
@@ -817647,7 +817707,9 @@
       "en": "attack, pounce, fall or throw yourself on sb"
     },
     "ipa": "/ataka/",
-    "rootIds": [],
+    "rootIds": [
+      "R-ATAK"
+    ],
     "notes": "Kaynak: 5.Ady-Rus_Qarden.json",
     "etymologyType": "loanword",
     "conceptNorm": "АТАКА",
@@ -819603,7 +819665,9 @@
       "en": "durable, lasting; unbreakable."
     },
     "ipa": "/mǝqʷtɐ/",
-    "rootIds": [],
+    "rootIds": [
+      "R-QHUT"
+    ],
     "notes": "Kaynak: 5.Ady-Rus_Qarden.json",
     "etymologyType": "native",
     "conceptNorm": "QUALITY_ADJ",
@@ -819709,7 +819773,9 @@
       "en": "firmly"
     },
     "ipa": "/bǝdw/",
-    "rootIds": [],
+    "rootIds": [
+      "R-BYD"
+    ],
     "notes": "Kaynak: 19.Kbd-Ru-2-Jonty.json",
     "literalMeaning": "sıkıca",
     "literalMeaningSource": "ru->tr (KAVRAM_ etiketi) (orta)",
@@ -823739,7 +823805,9 @@
       "en": "straight"
     },
     "ipa": "/zanɕʼw/",
-    "rootIds": [],
+    "rootIds": [
+      "R-ZANSHCH"
+    ],
     "notes": "Kaynak: 19.Kbd-Ru-2-Jonty.json",
     "literalMeaning": "PALANKA",
     "literalMeaningSource": "ru->tr (KAVRAM_ etiketi) (orta)",
@@ -833173,7 +833241,9 @@
       "tr": "NASIL"
     },
     "ipa": "/wtsʼǝrχa/",
-    "rootIds": [],
+    "rootIds": [
+      "R-UTSYRKH"
+    ],
     "notes": "Kaynak: 5.Ady-Rus_Qarden.json",
     "etymologyType": "native",
     "conceptNorm": "КОЕ-КАК",
@@ -833507,7 +833577,9 @@
       "en": "here"
     },
     "ipa": "/zɐpǝrǝdzǝn/",
-    "rootIds": [],
+    "rootIds": [
+      "R-DZY"
+    ],
     "notes": "Kaynak: 5.Ady-Rus_Qarden.json",
     "etymologyType": "native",
     "conceptNorm": "ACTION_VERB",
@@ -833622,7 +833694,9 @@
       "en": "move. ch. cm."
     },
     "ipa": "/zɐpxǝrǝɬɐfǝn/",
-    "rootIds": [],
+    "rootIds": [
+      "R-LHEF"
+    ],
     "notes": "Kaynak: 5.Ady-Rus_Qarden.json",
     "etymologyType": "native",
     "conceptNorm": "GRAMMAR_SPATIAL",
@@ -833645,7 +833719,9 @@
       "en": "move. ch. cm."
     },
     "ipa": "/zɐpǝrǝdʒɐdǝn/",
-    "rootIds": [],
+    "rootIds": [
+      "R-DZHED"
+    ],
     "notes": "Kaynak: 5.Ady-Rus_Qarden.json",
     "etymologyType": "native",
     "conceptNorm": "GRAMMAR_SPATIAL",
@@ -833691,7 +833767,9 @@
       "en": "move. ch. cm."
     },
     "ipa": "/zɐpǝrǝpɕǝn/",
-    "rootIds": [],
+    "rootIds": [
+      "R-PSHCHY"
+    ],
     "notes": "Kaynak: 5.Ady-Rus_Qarden.json",
     "etymologyType": "native",
     "conceptNorm": "GRAMMAR_SPATIAL",
@@ -833715,7 +833793,9 @@
       "en": "move. ch. cm."
     },
     "ipa": "/zɐpǝrǝsǝkʼǝn/",
-    "rootIds": [],
+    "rootIds": [
+      "R-SYK"
+    ],
     "notes": "Kaynak: 5.Ady-Rus_Qarden.json",
     "etymologyType": "native",
     "conceptNorm": "GRAMMAR_SPATIAL",
@@ -836577,7 +836657,9 @@
       "en": "1. upper; 2. adv above; upstairs"
     },
     "ipa": "/iɕʼǝʔʷ/",
-    "rootIds": [],
+    "rootIds": [
+      "R-SHCHYU"
+    ],
     "notes": "Kaynak: 5.Ady-Rus_Qarden.json",
     "etymologyType": "native",
     "conceptNorm": "НАВЕРХУ",
@@ -841249,7 +841331,9 @@
       "en": "untouched"
     },
     "ipa": "/zɐmǝʔɐba/",
-    "rootIds": [],
+    "rootIds": [
+      "R-EB"
+    ],
     "notes": "Kaynak: 5.Ady-Rus_Qarden.json",
     "etymologyType": "native",
     "conceptNorm": "QUALITY_ADJ",
@@ -846283,7 +846367,9 @@
       "tr": "NEMLENMIŞ"
     },
     "ipa": "/wtsʼǝna/",
-    "rootIds": [],
+    "rootIds": [
+      "R-UTSYN"
+    ],
     "notes": "Kaynak: 5.Ady-Rus_Qarden.json",
     "etymologyType": "native",
     "conceptNorm": "QUALITY_ADJ",
@@ -855236,7 +855322,9 @@
       "en": "usually of mouth, jaws"
     },
     "ipa": "/wqa/",
-    "rootIds": [],
+    "rootIds": [
+      "R-UQ"
+    ],
     "notes": "Kaynak: 5.Ady-Rus_Qarden.json",
     "etymologyType": "native",
     "conceptNorm": "QUALITY_ADJ",
@@ -855723,7 +855811,9 @@
       "en": "amazed"
     },
     "ipa": "/ʁɐɕʼɐʁʷa/",
-    "rootIds": [],
+    "rootIds": [
+      "R-SHCHEGHU"
+    ],
     "notes": "Kaynak: 20.Kbd-Ru-Jonty.json",
     "etymologyType": "native",
     "conceptNorm": "QUALITY_ADJ",
@@ -856035,7 +856125,9 @@
       "en": "of дыкъын"
     },
     "ipa": "/dǝqa/",
-    "rootIds": [],
+    "rootIds": [
+      "R-DYQH"
+    ],
     "notes": "Kaynak: 5.Ady-Rus_Qarden.json",
     "etymologyType": "native",
     "conceptNorm": "QUALITY_ADJ",
@@ -856801,7 +856893,9 @@
       "ar": "يحضر محلولاً/ يحل، يقترف، يُحدِث"
     },
     "ipa": "/zɐxɐɕʼǝħa/",
-    "rootIds": [],
+    "rootIds": [
+      "R-SHCHYH"
+    ],
     "notes": "Kaynak: 5.Ady-Rus_Qarden.json",
     "etymologyType": "native",
     "conceptNorm": "QUALITY_ADJ",
@@ -858117,7 +858211,9 @@
       "en": "certain"
     },
     "ipa": "/tеgʷʃxwa/",
-    "rootIds": [],
+    "rootIds": [
+      "R-GUSHXU"
+    ],
     "notes": "Kaynak: 20.Kbd-Ru-Jonty.json",
     "literalMeaning": "belirli, belli",
     "literalMeaningSource": "ru->tr (KAVRAM_ etiketi) (orta)",
@@ -859308,7 +859404,9 @@
       "tr": "toprak"
     },
     "ipa": "/qɐʔɐta/",
-    "rootIds": [],
+    "rootIds": [
+      "R-ET"
+    ],
     "notes": "Kaynak: 20.Kbd-Ru-Jonty.json",
     "etymologyType": "native",
     "conceptNorm": "QUALITY_ADJ",
@@ -859331,7 +859429,9 @@
       "tr": "Tuz"
     },
     "ipa": "/wɕɐba/",
-    "rootIds": [],
+    "rootIds": [
+      "R-USHCHEB"
+    ],
     "notes": "Kaynak: 5.Ady-Rus_Qarden.json",
     "etymologyType": "native",
     "conceptNorm": "QUALITY_ADJ",
@@ -861183,7 +861283,9 @@
       "en": "nepereh. be innocent, right."
     },
     "ipa": "/zǝwmɐzɐxǝn/",
-    "rootIds": [],
+    "rootIds": [
+      "R-UMEZEX"
+    ],
     "notes": "Kaynak: 5.Ady-Rus_Qarden.json",
     "etymologyType": "native",
     "conceptNorm": "ACTION_VERB",
@@ -861371,7 +861473,9 @@
       "en": "1. to fly through smth.; 2. to give way suddenly, to be broken through suddenly."
     },
     "ipa": "/pxǝrǝɬɐtǝn/",
-    "rootIds": [],
+    "rootIds": [
+      "R-LHET"
+    ],
     "notes": "Kaynak: 5.Ady-Rus_Qarden.json",
     "etymologyType": "native",
     "conceptNorm": "СКВОЗЬ ЧТО-ЛИБО",
@@ -861395,7 +861499,9 @@
       "en": "ex.: slot"
     },
     "ipa": "/pxǝrǝpɬǝn/",
-    "rootIds": [],
+    "rootIds": [
+      "R-PLH"
+    ],
     "notes": "Kaynak: 5.Ady-Rus_Qarden.json",
     "etymologyType": "native",
     "conceptNorm": "СКВОЗЬ ЧТО-ЛИБО",
@@ -861418,7 +861524,9 @@
       "en": "to shine, be visible, show through smth.; to be seen through smth."
     },
     "ipa": "/pxǝrǝpsǝn/",
-    "rootIds": [],
+    "rootIds": [
+      "R-PSY"
+    ],
     "notes": "Kaynak: 5.Ady-Rus_Qarden.json",
     "etymologyType": "native",
     "conceptNorm": "СКВОЗЬ ЧТО-ЛИБО",
@@ -861981,7 +862089,9 @@
       "tr": "animated, inspired."
     },
     "ipa": "/qɐgʷʃxwa/",
-    "rootIds": [],
+    "rootIds": [
+      "R-GUSHXU"
+    ],
     "notes": "Kaynak: 5.Ady-Rus_Qarden.json",
     "etymologyType": "native",
     "conceptNorm": "QUALITY_ADJ",
@@ -862228,7 +862338,9 @@
       "en": "turbid, muddy."
     },
     "ipa": "/qɐʁɐwtχʷa/",
-    "rootIds": [],
+    "rootIds": [
+      "R-UTKHU"
+    ],
     "notes": "Kaynak: 5.Ady-Rus_Qarden.json",
     "etymologyType": "native",
     "conceptNorm": "QUALITY_ADJ",
@@ -862661,7 +862773,9 @@
       "tr": "unborn, not born."
     },
     "ipa": "/mǝɬxwa/",
-    "rootIds": [],
+    "rootIds": [
+      "R-LHXU"
+    ],
     "notes": "Kaynak: 5.Ady-Rus_Qarden.json",
     "etymologyType": "native",
     "conceptNorm": "QUALITY_ADJ",
@@ -862710,7 +862824,9 @@
       "tr": "Su yılanı"
     },
     "ipa": "/mǝwblɐ/",
-    "rootIds": [],
+    "rootIds": [
+      "R-UBL"
+    ],
     "notes": "Kaynak: 5.Ady-Rus_Qarden.json",
     "etymologyType": "native",
     "conceptNorm": "QUALITY_ADJ",
@@ -862966,7 +863082,9 @@
       "en": "crushed, squashed, flattened (out)"
     },
     "ipa": "/pʼǝtʼa/",
-    "rootIds": [],
+    "rootIds": [
+      "R-P1YT1"
+    ],
     "notes": "Kaynak: 5.Ady-Rus_Qarden.json",
     "etymologyType": "native",
     "conceptNorm": "QUALITY_ADJ",
@@ -863552,7 +863670,9 @@
       "en": "castrated, gelded, emasculated"
     },
     "ipa": "/sɐkʼa/",
-    "rootIds": [],
+    "rootIds": [
+      "R-SEK"
+    ],
     "notes": "Kaynak: 5.Ady-Rus_Qarden.json",
     "etymologyType": "native",
     "conceptNorm": "QUALITY_ADJ",
@@ -863687,7 +863807,9 @@
       "tr": "ölmüş"
     },
     "ipa": "/wzdʒǝnta/",
-    "rootIds": [],
+    "rootIds": [
+      "R-UZJYNT"
+    ],
     "notes": "Kaynak: 5.Ady-Rus_Qarden.json",
     "etymologyType": "native",
     "conceptNorm": "СКОНЧАВШИЙСЯ",
@@ -863738,7 +863860,9 @@
       "tr": "peeled, shelled, husked; hulled, shelled, podded"
     },
     "ipa": "/wqɐbza/",
-    "rootIds": [],
+    "rootIds": [
+      "R-UQHEBZ"
+    ],
     "notes": "Kaynak: 5.Ady-Rus_Qarden.json",
     "etymologyType": "native",
     "conceptNorm": "QUALITY_ADJ",
@@ -871908,7 +872032,9 @@
       "en": "nepereh. ch. calm down, calm down"
     },
     "ipa": "/zɐtеwbǝda/",
-    "rootIds": [],
+    "rootIds": [
+      "R-WBYD"
+    ],
     "notes": "Kaynak: 5.Ady-Rus_Qarden.json",
     "literalMeaning": "HUZURLU",
     "literalMeaningSource": "ru->tr (KAVRAM_ etiketi) (orta)",
@@ -877691,7 +877817,9 @@
       "en": "agricultural engineering"
     },
     "ipa": "/agrotеxnika/",
-    "rootIds": [],
+    "rootIds": [
+      "R-AGROTYEXNIK"
+    ],
     "notes": "Kaynak: 5.Ady-Rus_Qarden.json",
     "etymologyType": "loanword",
     "conceptNorm": "АГРОТЕХНИКА",
@@ -878168,7 +878296,9 @@
       "en": "algebra"
     },
     "ipa": "/algеbra/",
-    "rootIds": [],
+    "rootIds": [
+      "R-ALGYEBR"
+    ],
     "notes": "Kaynak: 20.Kbd-Ru-Jonty.json",
     "etymologyType": "native",
     "conceptNorm": "АЛГЕБРА",
@@ -880166,7 +880296,9 @@
       "en": "ballet"
     },
     "ipa": "/balеrina/",
-    "rootIds": [],
+    "rootIds": [
+      "R-BALYERIN"
+    ],
     "notes": "Kaynak: 5.Ady-Rus_Qarden.json",
     "etymologyType": "native",
     "conceptNorm": "БАЛЕРИНА",
@@ -885094,7 +885226,9 @@
       "ar": "معطف"
     },
     "ipa": "/tsakʷɐ/",
-    "rootIds": [],
+    "rootIds": [
+      "R-TSAKU"
+    ],
     "notes": "Kaynak: 20.Kbd-Ru-Jonty.json",
     "etymologyType": "native",
     "conceptNorm": "ПАЛЬТО",
@@ -887230,7 +887364,9 @@
       "en": "genetics"
     },
     "ipa": "/gеnеtika/",
-    "rootIds": [],
+    "rootIds": [
+      "R-GYENYETIK"
+    ],
     "notes": "Kaynak: 19.Kbd-Ru-2-Jonty.json",
     "etymologyType": "loanword",
     "conceptNorm": "ГЕНЕТИКА",
@@ -888135,7 +888271,9 @@
       "en": "graphics"
     },
     "ipa": "/grafika/",
-    "rootIds": [],
+    "rootIds": [
+      "R-GRAFIK"
+    ],
     "notes": "Kaynak: 19.Kbd-Ru-2-Jonty.json",
     "etymologyType": "loanword",
     "conceptNorm": "ГРАФИКА",
@@ -889255,7 +889393,9 @@
       "en": "1. to linger; to be detained; 2. to wait"
     },
     "ipa": "/zǝʔɐʑɐn/",
-    "rootIds": [],
+    "rootIds": [
+      "R-1EZH"
+    ],
     "notes": "Kaynak: 5.Ady-Rus_Qarden.json",
     "literalMeaning": "GECİKMEK",
     "literalMeaningSource": "ru->tr (KAVRAM_ etiketi) (orta)",
@@ -894657,7 +894797,9 @@
       "en": "way/method of teaching/training; way/method of bringing up, rearing"
     },
     "ipa": "/ʁɐsɐkʼɐ/",
-    "rootIds": [],
+    "rootIds": [
+      "R-SEK"
+    ],
     "notes": "Kaynak: 20.Kbd-Ru-Jonty.json",
     "etymologyType": "native",
     "conceptNorm": "ВОСПИТАНИЕ",
@@ -896081,7 +896223,9 @@
       "en": "act. 1. creation; 2. research, investigation, exploration, discovery; 3. initiation, pioneering."
     },
     "ipa": "/qɐʁɐwnɐxwnǝʁɐ/",
-    "rootIds": [],
+    "rootIds": [
+      "R-UNEXW"
+    ],
     "notes": "Kaynak: 5.Ady-Rus_Qarden.json",
     "etymologyType": "native",
     "conceptNorm": "ИССЛЕДОВАНИЕ",
@@ -896877,7 +897021,9 @@
       "en": "diagram"
     },
     "ipa": "/diagramma/",
-    "rootIds": [],
+    "rootIds": [
+      "R-DIAGRAMM"
+    ],
     "notes": "Kaynak: 1.Ady-Ady_AP.json",
     "etymologyType": "native",
     "conceptNorm": "ДИАГРАММА",
@@ -897369,7 +897515,9 @@
       "en": "directive; act. of егъэлъагъун"
     },
     "ipa": "/еʁɐɬaʁʷnǝʁɐ/",
-    "rootIds": [],
+    "rootIds": [
+      "R-LA_1"
+    ],
     "notes": "Kaynak: 19.Kbd-Ru-2-Jonty.json",
     "etymologyType": "native",
     "conceptNorm": "ДИРЕКТИВА",
@@ -899452,7 +899600,9 @@
       "en": "down, up"
     },
     "ipa": "/dɐʁɐsħɐn/",
-    "rootIds": [],
+    "rootIds": [
+      "R-SX"
+    ],
     "notes": "Kaynak: 5.Ady-Rus_Qarden.json",
     "etymologyType": "native",
     "conceptNorm": "GRAMMAR_SPATIAL",
@@ -903356,7 +903506,9 @@
       "en": "traitor"
     },
     "ipa": "/еptsʼǝжa/",
-    "rootIds": [],
+    "rootIds": [
+      "R-PTSYZH"
+    ],
     "notes": "Kaynak: 20.Kbd-Ru-Jonty.json",
     "etymologyType": "native",
     "conceptNorm": "ИЗМЕННИК",
@@ -903576,7 +903728,9 @@
       "en": "bloom"
     },
     "ipa": "/ʁaʁa/",
-    "rootIds": [],
+    "rootIds": [
+      "R-GHAGH"
+    ],
     "notes": "Kaynak: 19.Kbd-Ru-2-Jonty.json",
     "literalMeaning": "mayis",
     "literalMeaningSource": "ru->tr (KAVRAM_ etiketi) (orta)",
@@ -904795,7 +904949,9 @@
       "en": "tired"
     },
     "ipa": "/еzɐʃa/",
-    "rootIds": [],
+    "rootIds": [
+      "R-ZESH"
+    ],
     "notes": "Kaynak: 20.Kbd-Ru-Jonty.json",
     "literalMeaning": "tired, weary",
     "literalMeaningSource": "ru->tr (KAVRAM_ etiketi) (orta)",
@@ -908339,7 +908495,9 @@
       "en": "indefinite"
     },
     "ipa": "/zǝtɐlaj/",
-    "rootIds": [],
+    "rootIds": [
+      "R-TELAY"
+    ],
     "notes": "Kaynak: 5.Ady-Rus_Qarden.json",
     "etymologyType": "native",
     "conceptNorm": "НЕКОТОРОЕ ВРЕМЯ",
@@ -911307,7 +911465,9 @@
       "en": "vacation"
     },
     "ipa": "/zɐʁɐpsɐxwʁʷɐ/",
-    "rootIds": [],
+    "rootIds": [
+      "R-PSEXU"
+    ],
     "notes": "Kaynak: 19.Kbd-Ru-2-Jonty.json",
     "literalMeaning": "tatil, izin",
     "literalMeaningSource": "ru->tr (KAVRAM_ etiketi) (orta)",
@@ -916202,7 +916362,9 @@
       "en": "laundry"
     },
     "ipa": "/zɐʁɐptsʼǝжǝn/",
-    "rootIds": [],
+    "rootIds": [
+      "R-PTSYZH"
+    ],
     "notes": "Kaynak: 5.Ady-Rus_Qarden.json",
     "etymologyType": "native",
     "conceptNorm": "НЕПРОЧНО",
@@ -921128,7 +921290,9 @@
       "tr": "purify"
     },
     "ipa": "/qɐʁɐbzɐn/",
-    "rootIds": [],
+    "rootIds": [
+      "R-BZE"
+    ],
     "notes": "Kaynak: 19.Kbd-Ru-2-Jonty.json",
     "etymologyType": "native",
     "conceptNorm": "ACTION_VERB",
@@ -921882,7 +922046,9 @@
       "tr": "BİRLİKTE"
     },
     "ipa": "/zɐxɐʁɐʁʷɐɬħɐn/",
-    "rootIds": [],
+    "rootIds": [
+      "R-GHUELHH"
+    ],
     "notes": "Kaynak: 1.Ady-Ady_AP.json",
     "etymologyType": "native",
     "conceptNorm": "МЭЖАЛЪЭХЭУ",
@@ -929913,7 +930079,9 @@
       "tr": "muddle"
     },
     "ipa": "/zɐxɐdʒa/",
-    "rootIds": [],
+    "rootIds": [
+      "R-DZHA"
+    ],
     "notes": "Kaynak: 19.Kbd-Ru-2-Jonty.json",
     "etymologyType": "native",
     "conceptNorm": "ПУТАНИЦА",
@@ -932090,7 +932258,9 @@
       "tr": "ayak adimi"
     },
     "ipa": "/qɐbɐqʷn/",
-    "rootIds": [],
+    "rootIds": [
+      "R-BEQHU"
+    ],
     "notes": "Kaynak: 5.Ady-Rus_Qarden.json",
     "etymologyType": "native",
     "conceptNorm": "ACTION_VERB",
@@ -937934,7 +938104,9 @@
       "en": "unspoiled"
     },
     "ipa": "/zɐmǝʔʷsa/",
-    "rootIds": [],
+    "rootIds": [
+      "R-US"
+    ],
     "notes": "Kaynak: 19.Kbd-Ru-2-Jonty.json",
     "etymologyType": "native",
     "conceptNorm": "QUALITY_ADJ",
@@ -942099,7 +942271,9 @@
       "en": "shiny; shining, bright; polished; clear"
     },
     "ipa": "/dʒǝdʒɐ/",
-    "rootIds": [],
+    "rootIds": [
+      "R-JYJ"
+    ],
     "notes": "Kaynak: 5.Ady-Rus_Qarden.json",
     "etymologyType": "native",
     "conceptNorm": "QUALITY_ADJ",
@@ -951679,7 +951853,9 @@
       "ar": "بَنّاء"
     },
     "ipa": "/wxwa/",
-    "rootIds": [],
+    "rootIds": [
+      "R-UXU"
+    ],
     "notes": "Kaynak: 19.Kbd-Ru-2-Jonty.json",
     "literalMeaning": "hunchbacked; stoop",
     "literalMeaningSource": "ru->tr (KAVRAM_ etiketi) (orta)",
@@ -951823,7 +951999,9 @@
       "en": "plastic"
     },
     "ipa": "/plastmassɐ/",
-    "rootIds": [],
+    "rootIds": [
+      "R-PLASTMASS"
+    ],
     "notes": "Kaynak: 5.Ady-Rus_Qarden.json",
     "etymologyType": "loanword",
     "conceptNorm": "ПЛАСТМАССА",
@@ -955241,7 +955419,9 @@
       "tr": "undressed"
     },
     "ipa": "/tʼɐɕʼa/",
-    "rootIds": [],
+    "rootIds": [
+      "R-TESHCH"
+    ],
     "notes": "Kaynak: 19.Kbd-Ru-2-Jonty.json",
     "etymologyType": "native",
     "conceptNorm": "QUALITY_ADJ",
@@ -958038,7 +958218,9 @@
       "tr": "race"
     },
     "ipa": "/rasa/",
-    "rootIds": [],
+    "rootIds": [
+      "R-RAS"
+    ],
     "notes": "Kaynak: 19.Kbd-Ru-2-Jonty.json",
     "etymologyType": "native",
     "conceptNorm": "РАСА",
@@ -959726,7 +959908,9 @@
       "en": "sound"
     },
     "ipa": "/spravka/",
-    "rootIds": [],
+    "rootIds": [
+      "R-SPRAVK"
+    ],
     "notes": "Kaynak: 5.Ady-Rus_Qarden.json",
     "literalMeaning": "reference",
     "literalMeaningSource": "ru->tr (KAVRAM_ etiketi) (orta)",
@@ -961751,7 +961935,9 @@
       "tr": "eğlence, meclis, topluluk"
     },
     "ipa": "/zɐxɐpɬɐnǝʁɐ/",
-    "rootIds": [],
+    "rootIds": [
+      "R-PLHE"
+    ],
     "notes": "Kaynak: 5.Ady-Rus_Qarden.json",
     "literalMeaning": "holiday, fun",
     "literalMeaningSource": "ru->tr (KAVRAM_ etiketi) (orta)",
@@ -966902,7 +967088,9 @@
       "en": "economy."
     },
     "ipa": "/xozяjstva/",
-    "rootIds": [],
+    "rootIds": [
+      "R-XOZYAYSTVE"
+    ],
     "notes": "Kaynak: 1.Ady-Ady_AP.json",
     "etymologyType": "native",
     "conceptNorm": "ХОЗЯЙСТВО",
@@ -974149,7 +974337,9 @@
       "en": "quotation; цитата type: noun definitions: 1. цитата"
     },
     "ipa": "/tsitata/",
-    "rootIds": [],
+    "rootIds": [
+      "R-TSITAT"
+    ],
     "notes": "Kaynak: 19.Kbd-Ru-2-Jonty.json",
     "etymologyType": "native",
     "conceptNorm": "ЦИТАТА",
@@ -975560,7 +975750,9 @@
       "tr": "sticky"
     },
     "ipa": "/zǝkʼɐrǝpɕʼɐ/",
-    "rootIds": [],
+    "rootIds": [
+      "R-KERYPSHCHE"
+    ],
     "notes": "Kaynak: 19.Kbd-Ru-2-Jonty.json",
     "literalMeaning": "etli çorba, çorbadaki et",
     "literalMeaningSource": "ru->tr (KAVRAM_ etiketi) (orta)",
@@ -982172,7 +982364,9 @@
       "en": "ethic"
     },
     "ipa": "/ɐtika/",
-    "rootIds": [],
+    "rootIds": [
+      "R-ETIK"
+    ],
     "notes": "Kaynak: 19.Kbd-Ru-2-Jonty.json",
     "etymologyType": "loanword",
     "conceptNorm": "ЭТИКА",
@@ -982501,7 +982695,9 @@
       "tr": "ect. 1. elimination, wiping (off), rubbing out, erasing; 2. discharge, dismissal, firing"
     },
     "ipa": "/tеʁɐkʼǝnǝʁɐ/",
-    "rootIds": [],
+    "rootIds": [
+      "R-KYNYGHE"
+    ],
     "notes": "Kaynak: 5.Ady-Rus_Qarden.json",
     "etymologyType": "native",
     "conceptNorm": "УВОЛЬНЕНИЕ",
@@ -987327,7 +987523,9 @@
       "tr": "hostilely"
     },
     "ipa": "/еbijwɐ/",
-    "rootIds": [],
+    "rootIds": [
+      "R-BIY"
+    ],
     "notes": "Kaynak: 19.Kbd-Ru-2-Jonty.json",
     "etymologyType": "native",
     "conceptNorm": "ВРАЖДЕБНО",
@@ -993038,7 +993236,9 @@
       "tr": "present"
     },
     "ipa": "/ʁɐɬɐʁʷn/",
-    "rootIds": [],
+    "rootIds": [
+      "R-LHEGHU"
+    ],
     "notes": "Kaynak: 19.Kbd-Ru-2-Jonty.json",
     "etymologyType": "native",
     "conceptNorm": "ACTION_VERB",
@@ -993132,7 +993332,9 @@
       "en": "equipped"
     },
     "ipa": "/ʁɐnɐxwa/",
-    "rootIds": [],
+    "rootIds": [
+      "R-NEXU"
+    ],
     "notes": "Kaynak: 19.Kbd-Ru-2-Jonty.json",
     "etymologyType": "native",
     "conceptNorm": "QUALITY_ADJ",
@@ -993156,7 +993358,9 @@
       "en": "cereal"
     },
     "ipa": "/ʁɐpʼɐnkʼa/",
-    "rootIds": [],
+    "rootIds": [
+      "R-PENK"
+    ],
     "notes": "Kaynak: 19.Kbd-Ru-2-Jonty.json",
     "etymologyType": "native",
     "conceptNorm": "ХЛОПЬЯ",
@@ -993356,7 +993560,9 @@
       "en": "off"
     },
     "ipa": "/ʁɐwnkʼǝfʼa/",
-    "rootIds": [],
+    "rootIds": [
+      "R-UNKYF"
+    ],
     "notes": "Kaynak: 19.Kbd-Ru-2-Jonty.json",
     "etymologyType": "native",
     "conceptNorm": "ВЫКЛЮЧЕН",
@@ -993402,7 +993608,9 @@
       "tr": "proven"
     },
     "ipa": "/qɐpɕǝta/",
-    "rootIds": [],
+    "rootIds": [
+      "R-PSHCHYT"
+    ],
     "notes": "Kaynak: 19.Kbd-Ru-2-Jonty.json",
     "etymologyType": "native",
     "conceptNorm": "QUALITY_ADJ",
@@ -993424,7 +993632,9 @@
       "tr": "cool"
     },
     "ipa": "/ʁɐɕʼǝʔɐn/",
-    "rootIds": [],
+    "rootIds": [
+      "R-SHCHIY_1"
+    ],
     "notes": "Kaynak: 20.Kbd-Ru-Jonty.json",
     "etymologyType": "native",
     "conceptNorm": "ACTION_VERB",
@@ -993471,7 +993681,9 @@
       "tr": "canned"
     },
     "ipa": "/ʁɐfʼɐʔʷa/",
-    "rootIds": [],
+    "rootIds": [
+      "R-FEU"
+    ],
     "notes": "Kaynak: 19.Kbd-Ru-2-Jonty.json",
     "etymologyType": "native",
     "conceptNorm": "QUALITY_ADJ",
@@ -994292,7 +994504,9 @@
       "tr": "seriously"
     },
     "ipa": "/ifʼɐɕw/",
-    "rootIds": [],
+    "rootIds": [
+      "R-FIE"
+    ],
     "notes": "Kaynak: 19.Kbd-Ru-2-Jonty.json",
     "etymologyType": "native",
     "conceptNorm": "ВСЕРЬЁЗ",
@@ -995785,7 +995999,9 @@
       "tr": "erect"
     },
     "ipa": "/dɐɕʼеjn/",
-    "rootIds": [],
+    "rootIds": [
+      "R-SHCHYEY"
+    ],
     "notes": "Kaynak: 19.Kbd-Ru-2-Jonty.json",
     "etymologyType": "native",
     "conceptNorm": "ACTION_VERB",
@@ -996193,7 +996409,9 @@
       "tr": "içinde"
     },
     "ipa": "/xɐʁɐbǝdɐn/",
-    "rootIds": [],
+    "rootIds": [
+      "R-BYD"
+    ],
     "notes": "Kaynak: 5.Ady-Rus_Qarden.json",
     "etymologyType": "native",
     "conceptNorm": "ACTION_VERB",
@@ -996563,7 +996781,9 @@
       "tr": "withdrawal"
     },
     "ipa": "/еqʷtɐ/",
-    "rootIds": [],
+    "rootIds": [
+      "R-QHUT"
+    ],
     "notes": "Kaynak: 19.Kbd-Ru-2-Jonty.json",
     "etymologyType": "native",
     "conceptNorm": "ЛОМКА",
@@ -996699,7 +996919,9 @@
       "tr": "disobey"
     },
     "ipa": "/еmǝdɐʔʷɐn/",
-    "rootIds": [],
+    "rootIds": [
+      "R-DEI"
+    ],
     "notes": "Kaynak: 19.Kbd-Ru-2-Jonty.json",
     "etymologyType": "native",
     "conceptNorm": "ACTION_VERB",
@@ -997189,7 +997411,9 @@
       "en": "gill"
     },
     "ipa": "/жalɐ/",
-    "rootIds": [],
+    "rootIds": [
+      "R-ZHAL"
+    ],
     "notes": "Kaynak: 19.Kbd-Ru-2-Jonty.json",
     "etymologyType": "native",
     "conceptNorm": "ЖАБРА",
@@ -998389,7 +998613,9 @@
       "en": "disorder"
     },
     "ipa": "/zǝʔǝħa/",
-    "rootIds": [],
+    "rootIds": [
+      "R-YH"
+    ],
     "notes": "Kaynak: 19.Kbd-Ru-2-Jonty.json",
     "etymologyType": "native",
     "conceptNorm": "РАССТРОЙСТВО",
@@ -998651,7 +998877,9 @@
       "en": "rest"
     },
     "ipa": "/zɐʁɐpsɐxwn/",
-    "rootIds": [],
+    "rootIds": [
+      "R-PSEXU"
+    ],
     "notes": "Kaynak: 20.Kbd-Ru-Jonty.json",
     "literalMeaning": "canini dinlendirmek",
     "literalMeaningSource": "ru->tr (KAVRAM_ etiketi) (orta)",
@@ -999659,7 +999887,9 @@
       "tr": "bloom"
     },
     "ipa": "/qɐʁɐʁɐnǝʁɐ/",
-    "rootIds": [],
+    "rootIds": [
+      "R-GHE"
+    ],
     "notes": "Kaynak: 19.Kbd-Ru-2-Jonty.json",
     "etymologyType": "native",
     "conceptNorm": "РАСЦВЕТ",
@@ -1000701,7 +1000931,9 @@
       "en": "unite"
     },
     "ipa": "/zɐgʷɐħɐn/",
-    "rootIds": [],
+    "rootIds": [
+      "R-HAE"
+    ],
     "notes": "Kaynak: 19.Kbd-Ru-2-Jonty.json",
     "etymologyType": "native",
     "conceptNorm": "ACTION_VERB",
@@ -1000917,7 +1001149,9 @@
       "tr": "combined"
     },
     "ipa": "/zɐʁɐwʔʷa/",
-    "rootIds": [],
+    "rootIds": [
+      "R-UU"
+    ],
     "notes": "Kaynak: 19.Kbd-Ru-2-Jonty.json",
     "etymologyType": "native",
     "conceptNorm": "QUALITY_ADJ",
@@ -1000940,7 +1001174,9 @@
       "tr": "set"
     },
     "ipa": "/zɐʁɐwʔʷnǝʁɐ/",
-    "rootIds": [],
+    "rootIds": [
+      "R-UU"
+    ],
     "notes": "Kaynak: 19.Kbd-Ru-2-Jonty.json",
     "etymologyType": "native",
     "conceptNorm": "СВОД",
@@ -1001039,7 +1001275,9 @@
       "tr": "harmonic"
     },
     "ipa": "/zɐkʷʼw/",
-    "rootIds": [],
+    "rootIds": [
+      "R-KWA"
+    ],
     "notes": "Kaynak: 19.Kbd-Ru-2-Jonty.json",
     "etymologyType": "native",
     "conceptNorm": "QUALITY_ADJ",
@@ -1001180,7 +1001418,9 @@
       "tr": "wrinkled"
     },
     "ipa": "/wʃkʷʼmpʼa/",
-    "rootIds": [],
+    "rootIds": [
+      "R-USHKUMP"
+    ],
     "notes": "Kaynak: 19.Kbd-Ru-2-Jonty.json",
     "etymologyType": "native",
     "conceptNorm": "QUALITY_ADJ",
@@ -1001322,7 +1001562,9 @@
       "tr": "incompatible"
     },
     "ipa": "/zɐmǝzɐʁ/",
-    "rootIds": [],
+    "rootIds": [
+      "R-ZEGH"
+    ],
     "notes": "Kaynak: 19.Kbd-Ru-2-Jonty.json",
     "etymologyType": "native",
     "conceptNorm": "QUALITY_ADJ",
@@ -1001369,7 +1001611,9 @@
       "tr": "incompatible"
     },
     "ipa": "/zɐxɐmǝzaʁɐ/",
-    "rootIds": [],
+    "rootIds": [
+      "R-ZAGW"
+    ],
     "notes": "Kaynak: 19.Kbd-Ru-2-Jonty.json",
     "etymologyType": "native",
     "conceptNorm": "QUALITY_ADJ",
@@ -1001392,7 +1001636,9 @@
       "tr": "unaccustomed"
     },
     "ipa": "/zɐmǝsa/",
-    "rootIds": [],
+    "rootIds": [
+      "R-MYS"
+    ],
     "notes": "Kaynak: 19.Kbd-Ru-2-Jonty.json",
     "etymologyType": "native",
     "conceptNorm": "QUALITY_ADJ",
@@ -1001653,7 +1001899,9 @@
       "tr": "stock market"
     },
     "ipa": "/zɐpǝrǝʃǝn/",
-    "rootIds": [],
+    "rootIds": [
+      "R-SHYN_2"
+    ],
     "notes": "Kaynak: 19.Kbd-Ru-2-Jonty.json",
     "etymologyType": "native",
     "conceptNorm": "ФОНДОВЫЙ РЫНОК",
@@ -1002003,7 +1002251,9 @@
       "tr": "paperclip"
     },
     "ipa": "/zɐrǝʔʷɬʼɐ/",
-    "rootIds": [],
+    "rootIds": [
+      "R-UL"
+    ],
     "notes": "Kaynak: 19.Kbd-Ru-2-Jonty.json",
     "etymologyType": "native",
     "conceptNorm": "СКРЕПКА",
@@ -1002026,7 +1002276,9 @@
       "tr": "tentacle"
     },
     "ipa": "/zɐrǝʔɐbɐ/",
-    "rootIds": [],
+    "rootIds": [
+      "R-EB"
+    ],
     "notes": "Kaynak: 19.Kbd-Ru-2-Jonty.json",
     "etymologyType": "native",
     "conceptNorm": "ЩУПАЛЬЦЕ",
@@ -1002049,7 +1002301,9 @@
       "tr": "healing"
     },
     "ipa": "/zɐrǝʔɐzɐ/",
-    "rootIds": [],
+    "rootIds": [
+      "R-EZ"
+    ],
     "notes": "Kaynak: 19.Kbd-Ru-2-Jonty.json",
     "etymologyType": "native",
     "conceptNorm": "QUALITY_ADJ",
@@ -1003541,7 +1003795,9 @@
       "en": "perceived"
     },
     "ipa": "/zɐxɐpɕʼɐ/",
-    "rootIds": [],
+    "rootIds": [
+      "R-PSHCHI"
+    ],
     "notes": "Kaynak: 19.Kbd-Ru-2-Jonty.json",
     "etymologyType": "native",
     "conceptNorm": "QUALITY_ADJ",
@@ -1003934,7 +1004190,9 @@
       "en": "accompany; refakat; refakat etmek"
     },
     "ipa": "/iʁʷsɐn/",
-    "rootIds": [],
+    "rootIds": [
+      "R-GHUSE"
+    ],
     "notes": "Kaynak: 19.Kbd-Ru-2-Jonty.json",
     "etymologyType": "native",
     "conceptNorm": "ACTION_VERB",
@@ -1005945,7 +1006203,9 @@
       "tr": "choke"
     },
     "ipa": "/itħɐlɐn/",
-    "rootIds": [],
+    "rootIds": [
+      "R-TKHELAN"
+    ],
     "notes": "Kaynak: 19.Kbd-Ru-2-Jonty.json",
     "etymologyType": "native",
     "conceptNorm": "ACTION_VERB",
@@ -1006532,7 +1006792,9 @@
       "tr": "trembling"
     },
     "ipa": "/kʼɐzǝzw/",
-    "rootIds": [],
+    "rootIds": [
+      "R-KEZYZ"
+    ],
     "notes": "Kaynak: 19.Kbd-Ru-2-Jonty.json",
     "etymologyType": "native",
     "conceptNorm": "QUALITY_ADJ",
@@ -1011243,7 +1011505,9 @@
       "tr": "issue"
     },
     "ipa": "/qǝdɐʁɐkʼǝʁʷɐ/",
-    "rootIds": [],
+    "rootIds": [
+      "R-KYGH"
+    ],
     "notes": "Kaynak: 19.Kbd-Ru-2-Jonty.json",
     "etymologyType": "native",
     "conceptNorm": "ВЫПУСК",
@@ -1011699,7 +1011963,9 @@
       "tr": "created"
     },
     "ipa": "/qǝzɐʁɐɕawɐ/",
-    "rootIds": [],
+    "rootIds": [
+      "R-SHCHAU"
+    ],
     "notes": "Kaynak: 19.Kbd-Ru-2-Jonty.json",
     "etymologyType": "native",
     "conceptNorm": "QUALITY_ADJ",
@@ -1012311,7 +1012577,9 @@
       "en": "coming"
     },
     "ipa": "/qɐblaʁɐ/",
-    "rootIds": [],
+    "rootIds": [
+      "R-BLAGH"
+    ],
     "notes": "Kaynak: 19.Kbd-Ru-2-Jonty.json",
     "etymologyType": "native",
     "conceptNorm": "QUALITY_ADJ",
@@ -1012447,7 +1012715,9 @@
       "tr": "persuasion"
     },
     "ipa": "/qǝtеʁɐħɐnǝʁɐ/",
-    "rootIds": [],
+    "rootIds": [
+      "R-HAE"
+    ],
     "notes": "Kaynak: 19.Kbd-Ru-2-Jonty.json",
     "etymologyType": "native",
     "conceptNorm": "УГОВОР",
@@ -1013224,7 +1013494,9 @@
       "tr": "use"
     },
     "ipa": "/qɐʁɐsɐbǝn/",
-    "rootIds": [],
+    "rootIds": [
+      "R-SEB_2"
+    ],
     "notes": "Kaynak: 19.Kbd-Ru-2-Jonty.json",
     "etymologyType": "native",
     "conceptNorm": "ПОЛЬЗОВАНИЕ",
@@ -1013294,7 +1013566,9 @@
       "en": "creator"
     },
     "ipa": "/qɐʁɐɕʼakʷʼɐ/",
-    "rootIds": [],
+    "rootIds": [
+      "R-SHCH1AK1U"
+    ],
     "notes": "Kaynak: 19.Kbd-Ru-2-Jonty.json",
     "literalMeaning": "author",
     "literalMeaningSource": "ru->tr (KAVRAM_ etiketi) (orta)",
@@ -1013581,7 +1013855,9 @@
       "en": "conquered"
     },
     "ipa": "/qɐzɐwa/",
-    "rootIds": [],
+    "rootIds": [
+      "R-ZEU"
+    ],
     "notes": "Kaynak: 19.Kbd-Ru-2-Jonty.json",
     "etymologyType": "native",
     "conceptNorm": "QUALITY_ADJ",
@@ -1013676,7 +1013952,9 @@
       "en": "vulg."
     },
     "ipa": "/qɐq͡χwn/",
-    "rootIds": [],
+    "rootIds": [
+      "R-KQHU"
+    ],
     "notes": "Kaynak: 19.Kbd-Ru-2-Jonty.json",
     "etymologyType": "native",
     "conceptNorm": "ACTION_VERB",
@@ -1014142,7 +1014420,9 @@
       "en": "outline"
     },
     "ipa": "/qɐtχǝħa/",
-    "rootIds": [],
+    "rootIds": [
+      "R-TKHYH"
+    ],
     "notes": "Kaynak: 19.Kbd-Ru-2-Jonty.json",
     "etymologyType": "native",
     "conceptNorm": "ОЧЕРТАНИЕ",
@@ -1014166,7 +1014446,9 @@
       "en": "blast"
     },
     "ipa": "/qɐwa/",
-    "rootIds": [],
+    "rootIds": [
+      "R-QHEU"
+    ],
     "notes": "Kaynak: 19.Kbd-Ru-2-Jonty.json",
     "etymologyType": "native",
     "conceptNorm": "ВЗРЫВ",
@@ -1016147,7 +1016429,9 @@
       "en": "mommy"
     },
     "ipa": "/mama/",
-    "rootIds": [],
+    "rootIds": [
+      "R-MAM"
+    ],
     "notes": "Kaynak: 19.Kbd-Ru-2-Jonty.json",
     "etymologyType": "native",
     "conceptNorm": "МАМОЧКА",
@@ -1016728,7 +1017012,9 @@
       "en": "lightly"
     },
     "ipa": "/maɕʼw/",
-    "rootIds": [],
+    "rootIds": [
+      "R-MASHCH"
+    ],
     "notes": "Kaynak: 19.Kbd-Ru-2-Jonty.json",
     "etymologyType": "native",
     "conceptNorm": "СЛЕГКА",
@@ -1017339,7 +1017625,9 @@
       "ar": "ميكانيك، آلي"
     },
     "ipa": "/mеxanikɐ/",
-    "rootIds": [],
+    "rootIds": [
+      "R-MYEXANIK"
+    ],
     "notes": "Kaynak: 19.Kbd-Ru-2-Jonty.json",
     "etymologyType": "loanword",
     "conceptNorm": "МЕХАНИКА",
@@ -1018610,7 +1018898,9 @@
       "tr": "wait"
     },
     "ipa": "/mǝpʼɐɕʼɐn/",
-    "rootIds": [],
+    "rootIds": [
+      "R-PIE"
+    ],
     "notes": "Kaynak: 19.Kbd-Ru-2-Jonty.json",
     "etymologyType": "native",
     "conceptNorm": "ACTION_VERB",
@@ -1018855,7 +1019145,9 @@
       "en": "matt"
     },
     "ipa": "/mǝtsʼw/",
-    "rootIds": [],
+    "rootIds": [
+      "R-TSӀU"
+    ],
     "notes": "Kaynak: 19.Kbd-Ru-2-Jonty.json",
     "etymologyType": "native",
     "conceptNorm": "QUALITY_ADJ",
@@ -1020223,7 +1020515,9 @@
       "en": "expansion"
     },
     "ipa": "/zǝwbʁʷnǝʁɐ/",
-    "rootIds": [],
+    "rootIds": [
+      "R-UBGHU"
+    ],
     "notes": "Kaynak: 20.Kbd-Ru-Jonty.json",
     "etymologyType": "native",
     "conceptNorm": "РАСШИРЕНИЕ",
@@ -1020371,7 +1020665,9 @@
       "ar": "مهمل، مهجور، متروك"
     },
     "ipa": "/bgǝna/",
-    "rootIds": [],
+    "rootIds": [
+      "R-BGYN"
+    ],
     "notes": "Kaynak: 20.Kbd-Ru-Jonty.json",
     "literalMeaning": "desolate, sparsely populated, deaf, deserted",
     "literalMeaningSource": "ru->tr (KAVRAM_ etiketi) (orta)",
@@ -1024583,7 +1024879,9 @@
       "tr": "soaked"
     },
     "ipa": "/wfɐnɕʼa/",
-    "rootIds": [],
+    "rootIds": [
+      "R-UFENSHCH"
+    ],
     "notes": "Kaynak: 19.Kbd-Ru-2-Jonty.json",
     "etymologyType": "native",
     "conceptNorm": "QUALITY_ADJ",
@@ -1025132,7 +1025430,9 @@
       "tr": "Çatal"
     },
     "ipa": "/pxǝrǝwdǝn/",
-    "rootIds": [],
+    "rootIds": [
+      "R-UDYN"
+    ],
     "notes": "Kaynak: 5.Ady-Rus_Qarden.json",
     "etymologyType": "native",
     "conceptNorm": "ACTION_VERB",
@@ -1030530,7 +1030830,9 @@
       "ar": "يضع على/ يسقف المنزل/ يُحمِّل، يَتَهم/ يسرج/ يُدين"
     },
     "ipa": "/tеɬħa/",
-    "rootIds": [],
+    "rootIds": [
+      "R-LHH"
+    ],
     "notes": "Kaynak: 19.Kbd-Ru-2-Jonty.json",
     "etymologyType": "native",
     "conceptNorm": "QUALITY_ADJ",
@@ -1030673,7 +1030975,9 @@
       "en": "browse"
     },
     "ipa": "/zɐʁɐɬɐʁʷn/",
-    "rootIds": [],
+    "rootIds": [
+      "R-LHEGHU"
+    ],
     "notes": "Kaynak: 20.Kbd-Ru-Jonty.json",
     "etymologyType": "native",
     "conceptNorm": "ACTION_VERB",
@@ -1033222,7 +1033526,9 @@
       "en": "embarrassed; of укӀытэн"
     },
     "ipa": "/wkʼǝta/",
-    "rootIds": [],
+    "rootIds": [
+      "R-UKYT"
+    ],
     "notes": "Kaynak: 19.Kbd-Ru-2-Jonty.json",
     "etymologyType": "native",
     "conceptNorm": "QUALITY_ADJ",
@@ -1033478,7 +1033784,9 @@
       "tr": "naked"
     },
     "ipa": "/wptsʼɐna/",
-    "rootIds": [],
+    "rootIds": [
+      "R-UPTSEN"
+    ],
     "notes": "Kaynak: 19.Kbd-Ru-2-Jonty.json",
     "etymologyType": "native",
     "conceptNorm": "QUALITY_ADJ",
@@ -1033525,7 +1033833,9 @@
       "en": "astron. Uranus"
     },
     "ipa": "/wran/",
-    "rootIds": [],
+    "rootIds": [
+      "R-URA"
+    ],
     "notes": "Kaynak: 19.Kbd-Ru-2-Jonty.json",
     "etymologyType": "native",
     "conceptNorm": "УРАН",
@@ -1034073,7 +1034383,9 @@
       "en": "competence"
     },
     "ipa": "/xɐʁʷazɐ/",
-    "rootIds": [],
+    "rootIds": [
+      "R-GHUAZ"
+    ],
     "notes": "Kaynak: 19.Kbd-Ru-2-Jonty.json",
     "etymologyType": "native",
     "conceptNorm": "ACTION_VERB",
@@ -1036369,7 +1036681,9 @@
       "en": "congratulation"
     },
     "ipa": "/еχʷɐχʷnǝʁɐ/",
-    "rootIds": [],
+    "rootIds": [
+      "R-KHUEKHU"
+    ],
     "notes": "Kaynak: 20.Kbd-Ru-Jonty.json",
     "etymologyType": "native",
     "conceptNorm": "ПОЗДРАВЛЕНИЕ",
@@ -1036966,7 +1037280,9 @@
       "en": "instruct"
     },
     "ipa": "/xɐʁɐʁʷazɐn/",
-    "rootIds": [],
+    "rootIds": [
+      "R-GHUAZ"
+    ],
     "notes": "Kaynak: 19.Kbd-Ru-2-Jonty.json",
     "etymologyType": "native",
     "conceptNorm": "ACTION_VERB",
@@ -1039253,7 +1039569,9 @@
       "tr": "AHBAB"
     },
     "ipa": "/zɐxwɐfaɕɐ/",
-    "rootIds": [],
+    "rootIds": [
+      "R-FASHCH"
+    ],
     "notes": "Kaynak: 20.Kbd-Ru-Jonty.json",
     "etymologyType": "native",
     "conceptNorm": "QUALITY_ADJ",
@@ -1039276,7 +1039594,9 @@
       "tr": "entrance"
     },
     "ipa": "/zɐrǝɕʼǝħɐ/",
-    "rootIds": [],
+    "rootIds": [
+      "R-SHCHYH"
+    ],
     "notes": "Kaynak: 20.Kbd-Ru-Jonty.json",
     "etymologyType": "native",
     "conceptNorm": "QUALITY_ADJ",
@@ -1041316,7 +1041636,9 @@
       "en": "affirmative"
     },
     "ipa": "/яdɐw/",
-    "rootIds": [],
+    "rootIds": [
+      "R-YADE"
+    ],
     "notes": "Kaynak: 19.Kbd-Ru-2-Jonty.json",
     "etymologyType": "native",
     "conceptNorm": "QUALITY_ADJ",
@@ -1042240,7 +1042562,9 @@
       "ar": "يطرق"
     },
     "ipa": "/tеwʔʷɐ/",
-    "rootIds": [],
+    "rootIds": [
+      "R-UU"
+    ],
     "notes": "Kaynak: 20.Kbd-Ru-Jonty.json",
     "etymologyType": "native",
     "conceptNorm": "QUALITY_ADJ",
@@ -1042467,7 +1042791,9 @@
       "tr": "AHBAB"
     },
     "ipa": "/zɐgʷɐkʷʼa/",
-    "rootIds": [],
+    "rootIds": [
+      "R-KWA"
+    ],
     "notes": "Kaynak: 20.Kbd-Ru-Jonty.json",
     "etymologyType": "native",
     "conceptNorm": "QUALITY_ADJ",
@@ -1042637,7 +1042963,9 @@
       "en": "burn"
     },
     "ipa": "/iʁɐsǝn/",
-    "rootIds": [],
+    "rootIds": [
+      "R-SYN"
+    ],
     "notes": "Kaynak: 20.Kbd-Ru-Jonty.json",
     "etymologyType": "native",
     "conceptNorm": "ACTION_VERB",
@@ -1042781,7 +1043109,9 @@
       "en": "sprained"
     },
     "ipa": "/iʃɐɕʼa/",
-    "rootIds": [],
+    "rootIds": [
+      "R-SHESHCHA"
+    ],
     "notes": "Kaynak: 20.Kbd-Ru-Jonty.json",
     "etymologyType": "native",
     "conceptNorm": "РАСТЯНУЛ",
@@ -1044542,7 +1044872,9 @@
       "tr": "turned over, overturned"
     },
     "ipa": "/ʔʷba/",
-    "rootIds": [],
+    "rootIds": [
+      "R-UB"
+    ],
     "notes": "Kaynak: 5.Ady-Rus_Qarden.json",
     "etymologyType": "proper_noun",
     "conceptNorm": "QUALITY_ADJ",
@@ -1045507,7 +1045839,9 @@
       "en": "1. declared, announced, promulgated, proclaimed; 2. divulged, disclosed"
     },
     "ipa": "/ʔʷɐta/",
-    "rootIds": [],
+    "rootIds": [
+      "R-UET"
+    ],
     "notes": "Kaynak: 5.Ady-Rus_Qarden.json",
     "etymologyType": "proper_noun",
     "conceptNorm": "QUALITY_ADJ",
@@ -1051293,7 +1051627,9 @@
       "tr": "sharpened, ground"
     },
     "ipa": "/ʁɐжana/",
-    "rootIds": [],
+    "rootIds": [
+      "R-ZHAN"
+    ],
     "notes": "Kaynak: 5.Ady-Rus_Qarden.json",
     "etymologyType": "native",
     "conceptNorm": "QUALITY_ADJ",
@@ -1053521,7 +1053857,9 @@
       "en": "to fly"
     },
     "ipa": "/iɬɐtǝn/",
-    "rootIds": [],
+    "rootIds": [
+      "R-LHET"
+    ],
     "notes": "Kaynak: 5.Ady-Rus_Qarden.json",
     "etymologyType": "native",
     "conceptNorm": "GRAMMAR_SPATIAL",
@@ -1054016,7 +1054354,9 @@
       "en": "of a horse"
     },
     "ipa": "/еmǝlǝdʒǝn/",
-    "rootIds": [],
+    "rootIds": [
+      "R-LYD"
+    ],
     "notes": "Kaynak: 5.Ady-Rus_Qarden.json",
     "etymologyType": "native",
     "conceptNorm": "ACTION_VERB",
@@ -1054237,7 +1054577,9 @@
       "en": "1. to fall down from above; 2. to shoot/fire (at) from above"
     },
     "ipa": "/еwɐxǝn/",
-    "rootIds": [],
+    "rootIds": [
+      "R-UEX"
+    ],
     "notes": "Kaynak: 5.Ady-Rus_Qarden.json",
     "etymologyType": "native",
     "conceptNorm": "СТРЕЛЯТЬ СВЕРХУ",
@@ -1055861,7 +1056203,9 @@
       "en": "other, and others, except, besides"
     },
     "ipa": "/zɐʁɐtsǝrχǝn/",
-    "rootIds": [],
+    "rootIds": [
+      "R-TSYRKH"
+    ],
     "notes": "Kaynak: 5.Ady-Rus_Qarden.json",
     "etymologyType": "native",
     "conceptNorm": "GRAMMAR_SPATIAL",
@@ -1056047,7 +1056391,9 @@
       "en": "quiver, shake or tremble (about the lower part of sth)"
     },
     "ipa": "/zɐpǝrǝpɬǝn/",
-    "rootIds": [],
+    "rootIds": [
+      "R-PLH"
+    ],
     "notes": "Kaynak: 5.Ady-Rus_Qarden.json",
     "etymologyType": "native",
     "conceptNorm": "СКВОЗЬ ЧТО-ЛИБО",
@@ -1056070,7 +1056416,9 @@
       "en": "smb., smth."
     },
     "ipa": "/pxǝrǝɬɐfǝn/",
-    "rootIds": [],
+    "rootIds": [
+      "R-LHEF"
+    ],
     "notes": "Kaynak: 5.Ady-Rus_Qarden.json",
     "etymologyType": "native",
     "conceptNorm": "СКВОЗЬ ЧТО-ЛИБО",
@@ -1056093,7 +1056441,9 @@
       "en": "smth."
     },
     "ipa": "/pxǝrǝʔʷn/",
-    "rootIds": [],
+    "rootIds": [
+      "R-UN"
+    ],
     "notes": "Kaynak: 5.Ady-Rus_Qarden.json",
     "etymologyType": "native",
     "conceptNorm": "СКВОЗЬ ЧТО-ЛИБО",
@@ -1056412,7 +1056762,9 @@
       "en": "laundry"
     },
     "ipa": "/zɐtеʔʷɬʼa/",
-    "rootIds": [],
+    "rootIds": [
+      "R-UL"
+    ],
     "notes": "Kaynak: 5.Ady-Rus_Qarden.json",
     "etymologyType": "native",
     "conceptNorm": "QUALITY_ADJ",
@@ -1057950,7 +1058302,9 @@
       "tr": "IRAK"
     },
     "ipa": "/irak/",
-    "rootIds": [],
+    "rootIds": [
+      "R-RAK"
+    ],
     "notes": "Kaynak: 5.Ady-Rus_Qarden.json",
     "etymologyType": "native",
     "conceptNorm": "ИРАК",
@@ -1058111,7 +1058465,9 @@
       "tr": "vurmak, çalmak"
     },
     "ipa": "/iwkʼǝn/",
-    "rootIds": [],
+    "rootIds": [
+      "R-UKI"
+    ],
     "notes": "Kaynak: 5.Ady-Rus_Qarden.json",
     "etymologyType": "native",
     "conceptNorm": "GRAMMAR_SPATIAL",
@@ -1063138,7 +1063494,9 @@
       "tr": "cut, clipped."
     },
     "ipa": "/qɐɕǝħa/",
-    "rootIds": [],
+    "rootIds": [
+      "R-SCHYKH"
+    ],
     "notes": "Kaynak: 5.Ady-Rus_Qarden.json",
     "etymologyType": "native",
     "conceptNorm": "QUALITY_ADJ",
@@ -1065337,7 +1065695,9 @@
       "ar": "يظلم"
     },
     "ipa": "/mǝzɐxwɐn/",
-    "rootIds": [],
+    "rootIds": [
+      "R-ZEXU"
+    ],
     "notes": "Kaynak: 5.Ady-Rus_Qarden.json",
     "etymologyType": "native",
     "conceptNorm": "НЕЧЕСТНЫМ",
@@ -1065753,7 +1066113,9 @@
       "tr": "Çelik"
     },
     "ipa": "/mǝwɬij/",
-    "rootIds": [],
+    "rootIds": [
+      "R-ULHIY"
+    ],
     "notes": "Kaynak: 5.Ady-Rus_Qarden.json",
     "etymologyType": "native",
     "conceptNorm": "QUALITY_ADJ",
@@ -1072060,7 +1072422,9 @@
       "tr": "yürütmek"
     },
     "ipa": "/pxǝrǝʃǝn/",
-    "rootIds": [],
+    "rootIds": [
+      "R-SHYN_2"
+    ],
     "notes": "Kaynak: 5.Ady-Rus_Qarden.json",
     "etymologyType": "native",
     "conceptNorm": "GRAMMAR_SPATIAL",
@@ -1075403,7 +1075767,9 @@
       "en": "ripped, unstitched, unpicked, undone"
     },
     "ipa": "/tʼɐpʼa/",
-    "rootIds": [],
+    "rootIds": [
+      "R-TEP"
+    ],
     "notes": "Kaynak: 5.Ady-Rus_Qarden.json",
     "etymologyType": "native",
     "conceptNorm": "QUALITY_ADJ",
@@ -1076766,7 +1077132,9 @@
       "tr": "ekmek"
     },
     "ipa": "/wbzǝta/",
-    "rootIds": [],
+    "rootIds": [
+      "R-UBZYT"
+    ],
     "notes": "Kaynak: 5.Ady-Rus_Qarden.json",
     "etymologyType": "native",
     "conceptNorm": "QUALITY_ADJ",
@@ -1077074,7 +1077442,9 @@
       "en": "of source of light, heat"
     },
     "ipa": "/wnkʼǝfʼa/",
-    "rootIds": [],
+    "rootIds": [
+      "R-UNKYF"
+    ],
     "notes": "Kaynak: 5.Ady-Rus_Qarden.json",
     "etymologyType": "native",
     "conceptNorm": "QUALITY_ADJ",
@@ -1081120,7 +1081490,9 @@
       "en": "Muslim sacred building at Mecca, containing the black stone; place where Muslims go for pilgrimage"
     },
     "ipa": "/tʃɐbɐ/",
-    "rootIds": [],
+    "rootIds": [
+      "R-CHEB"
+    ],
     "notes": "Kaynak: 5.Ady-Rus_Qarden.json",
     "etymologyType": "loanword",
     "conceptNorm": "КААБА",
@@ -1082236,7 +1082608,9 @@
       "tr": "adj curled, waved"
     },
     "ipa": "/ʃɐrɐza/",
-    "rootIds": [],
+    "rootIds": [
+      "R-SHEREZ"
+    ],
     "notes": "Kaynak: 5.Ady-Rus_Qarden.json",
     "etymologyType": "native",
     "conceptNorm": "QUALITY_ADJ",
@@ -1086713,7 +1087087,9 @@
       "en": "work for sb."
     },
     "ipa": "/zǝwnɐtʼ/",
-    "rootIds": [],
+    "rootIds": [
+      "R-UNET1"
+    ],
     "notes": "Kaynak: 6.Ady-Rus_Sherdjes.json",
     "etymologyType": "native",
     "conceptNorm": "QUALITY_ADJ",
@@ -1089181,7 +1089557,9 @@
       "en": "axle, the bridge on which the wheels are fixed"
     },
     "ipa": "/wɐbɐ/",
-    "rootIds": [],
+    "rootIds": [
+      "R-UEB"
+    ],
     "notes": "Kaynak: 6.Ady-Rus_Sherdjes.json",
     "etymologyType": "native",
     "conceptNorm": "ГУЛЪЭГУ",
@@ -1101581,7 +1101959,9 @@
     "rootId": null,
     "conceptId": "SPREAD",
     "dialect": "ADY",
-    "rootIds": []
+    "rootIds": [
+      "R-TYSH"
+    ]
   },
   {
     "form": "къытекӀэ",
@@ -1101842,7 +1102222,9 @@
     "rootId": null,
     "conceptId": "UNCLASSIFIED",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [
+      "R-XYSHCH"
+    ]
   },
   {
     "form": "гъэхьэбэуэ",
@@ -1101947,7 +1102329,9 @@
     "rootId": null,
     "conceptId": "UNCLASSIFIED",
     "dialect": "ADY",
-    "rootIds": []
+    "rootIds": [
+      "R-QHU"
+    ]
   },
   {
     "form": "елъэбышэуэ",
@@ -1102007,7 +1102391,9 @@
     "rootId": null,
     "conceptId": "SWING",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [
+      "R-PKE"
+    ]
   },
   {
     "form": "есыхы",
@@ -1112421,7 +1112807,9 @@
     "rootId": null,
     "conceptId": "NAME",
     "dialect": "COMMON",
-    "rootIds": []
+    "rootIds": [
+      "R-QHE"
+    ]
   },
   {
     "form": "инагъ",
