@@ -81,3 +81,7 @@ Tüm yönetim ve kürasyon uçları `src/lib/security/curationGuard.ts` içindek
 - `legacyRootForms` havuzundaki **71** tek anlamlı kök formu mevcut kanonik köklere (`R-P1E`, `R-KWA`, `R-UNE`, `R-TS1E`, `R-XHW`, `R-GU`, `R-SHKH` vb.) çift yönlü simetrik olarak bağlandı.
 - `roots.json` içinde karşılığı bulunmayan ve `5+` kelimede geçen **109** yüksek frekanslı kök (`хъу`, `ей`, `тхъ`, `ку`, `псэлъ`, `псэу`, `бг`, `плӀ`, `шын`, `нэхъ`, `хьэж`, `бан`, `мэл`, `жыг` vb.) üretilerek toplam kanonik kök envanteri **3.880** köke çıkarıldı (**3.628** referans kanonik `rootIds` bağına terfi ettirildi).
 - Eşsesli ayrım gerektiren ve düşük frekanslı (`1-4` geçişli) **4.195** referans (`3.852` kelime) veri kaybı olmadan `legacyRootForms` altında korundu.
+
+## Eşsesli (Homonym) Köklerin Anlam Bazlı Ayrıştırılması
+- 12 eşsesli kök grubundaki **2.059** referans; Türkçe çeviri/anlam ipuçları ve birincil kanonik kök eşlemeleriyle doğru `R-*` hedeflerine ayrıştırıldı (`R-LHE`: 511, `R-SH1Y`: 471, `R-XHW`: 322, `R-1E`: 298, `R-FIY`: 164, `R-GU`: 139, `R-SHKH`: 66, `R-SH1E`: 21, `R-LHELHE`: 16, `R-SHCH`: 15, `R-QUZ`: 13, `R-LA_1`: 13, `R-LHE1`: 10).
+- Başlangıçtaki **7.823** tarihsel kök referansının **5.687'si (%72,7)** kanonik `roots.json` ↔ `lexemes.json` çift yönlü grafına kazandırıldı; kalan **2.136** nadir (`1–4` geçişli) referans veri kaybı olmadan `legacyRootForms` altında korundu.
