@@ -34,6 +34,21 @@ interface LexemeLike {
   rootIds?: string[];
 }
 
+const INFLECTIONAL_PREFIXES = [
+  'къыхуэ', 'къэгъэ', 'зэхуэ', 'зэгъэ', 'хуэгъэ',
+  'хуэ', 'ху', 'къэ', 'гъэ', 'зэ', 'те', 'дэ', 'хэ', 'щы', 'Ӏу', 'пы',
+];
+
+function stripFunctionalPrefix(form: string): { stem: string; prefix: string } | null {
+  const lower = form.toLowerCase();
+  for (const pfx of INFLECTIONAL_PREFIXES) {
+    if (lower.startsWith(pfx) && lower.length - pfx.length >= 2) {
+      return { stem: lower.slice(pfx.length), prefix: pfx };
+    }
+  }
+  return null;
+}
+
 export class RootExtractor {
   private roots: Map<string, Root>;
   private lexemes: Map<string, LexemeLike>;
@@ -52,7 +67,6 @@ export class RootExtractor {
         : input;
 
     const lexeme = this.lexemes.get(inp.lexemeId) || (typeof input === 'object' ? (input as any) : undefined);
-    // Oncelik: girdinin kendi rootIds / derivation.rootIds
     const inputRootIds = inp.rootIds?.length
       ? inp.rootIds
       : inp.derivation?.rootIds?.length
@@ -119,6 +133,24 @@ export class RootExtractor {
           confidence: 0.90,
           method: 'dictionary',
           evidence: `roots.json exact match: ${root.id}`,
+        };
+      }
+    }
+
+    const stripped = stripFunctionalPrefix(inp.form);
+    if (stripped) {
+      const stemExact = [...this.roots.values()].find(
+        r => r.form.toLowerCase() === stripped.stem || stripped.stem.startsWith(r.form.toLowerCase())
+      );
+      if (stemExact && stemExact.form.length >= 2) {
+        return {
+          lexemeId: inp.lexemeId,
+          rootId: stemExact.id,
+          rootForm: stemExact.form,
+          rootType: this.classifier.getType(stemExact.form),
+          confidence: 0.80,
+          method: 'morpheme',
+          evidence: `prefix stripped (${stripped.prefix}-) -> root: ${stemExact.form}`,
         };
       }
     }

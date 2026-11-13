@@ -7,13 +7,25 @@ function readJsonSafe(filePath: string) {
   return JSON.parse(fs.readFileSync(filePath, 'utf-8'));
 }
 
+const ROOT_ALIASES: Record<string, string> = {
+  'R-SHX': 'R-SHKH',
+  'R-F1E': 'R-FIY',
+  'R-LHEGHE': 'R-LA_1',
+};
+
 export async function GET(
   _req: NextRequest,
   { params }: { params: Promise<{ id: string }> }
 ) {
   try {
     const rawParams = await params;
-    const id = decodeURIComponent(rawParams.id || '').trim();
+    const rawId = decodeURIComponent(rawParams.id || '').trim();
+    const id = ROOT_ALIASES[rawId] || rawId;
+
+    if (!id) {
+      return NextResponse.json({ error: 'Geçersiz kök kimliği' }, { status: 400 });
+    }
+
     const dataDir = path.join(process.cwd(), 'public', 'data', 'linguistic');
 
     const lexRaw = readJsonSafe(path.join(dataDir, 'lexemes.json'));
@@ -22,8 +34,6 @@ export async function GET(
     const rootsRaw = readJsonSafe(path.join(dataDir, 'roots.json'));
     const rootsList: any[] = Array.isArray(rootsRaw) ? rootsRaw : rootsRaw?.roots ?? [];
     const rootMeta = rootsList.find((r: any) => r.id === id || r.rootId === id) || null;
-
-    const conceptTrRaw = readJsonSafe(path.join(dataDir, 'concept-tr.json')) || {};
 
     const members = lexemes
       .filter((l: any) => Array.isArray(l.rootIds) && l.rootIds.includes(id))
@@ -40,7 +50,15 @@ export async function GET(
         corpusFrequency: l.corpusFrequency ?? 0,
       }));
 
-    // Bu kökten türeyen Kelime Aileleri (Family)
+    if (!rootMeta && members.length === 0) {
+      return NextResponse.json(
+        { error: `Kanonik kök bulunamadı: ${rawId}`, id: rawId },
+        { status: 404 }
+      );
+    }
+
+    const conceptTrRaw = readJsonSafe(path.join(dataDir, 'concept-tr.json')) || {};
+
     const familyMap = new Map<string, { id: string; count: number; sampleForms: string[] }>();
     for (const m of members) {
       if (!m.wordFamilyId) continue;
@@ -56,7 +74,6 @@ export async function GET(
       }
     }
 
-    // Bu köke bağlı Kavramlar (Concept)
     const conceptMap = new Map<string, { id: string; labelTr: string; count: number }>();
     for (const m of members) {
       if (!m.conceptId) continue;
@@ -73,6 +90,7 @@ export async function GET(
 
     return NextResponse.json({
       id,
+      ...(rawId !== id ? { requestedId: rawId } : {}),
       root: rootMeta,
       families: Array.from(familyMap.values()).sort((a, b) => b.count - a.count),
       concepts: Array.from(conceptMap.values()).sort((a, b) => b.count - a.count),
