@@ -5,10 +5,8 @@ import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import {
   ZoomIn, ZoomOut, RotateCcw, Network, ArrowUpRight, Search,
-  GitBranch, X, Sparkles, Layers, Link2, BookOpen, Info, ArrowLeft, List,
+  GitBranch, X, Sparkles, Layers, Link2, BookOpen, Info,
 } from 'lucide-react';
-
-/* ─── Types ──────────────────────────────────────────────────────────── */
 
 export interface CytoscapeElementData {
   nodes: Array<{
@@ -38,16 +36,13 @@ export interface ConceptOption {
 }
 
 interface ConceptGraphCanvasProps {
-  data?: CytoscapeElementData;
+  data: CytoscapeElementData;
   rootLabel?: string;
   conceptId?: string;
-  standalone?: boolean;
   availableConcepts?: ConceptOption[];
 }
 
 type RelationFilter = 'ALL' | 'CHILD' | 'ROOT' | 'RELATED';
-
-/* ─── Helpers ────────────────────────────────────────────────────────── */
 
 function parseNodeLabel(rawLabel: string, fallbackId: string) {
   const text = String(rawLabel || fallbackId || '').trim();
@@ -121,13 +116,10 @@ function getRelTheme(rel?: string) {
   return REL_META[String(rel || 'CHILD').toUpperCase()] ?? REL_META.CHILD;
 }
 
-/* ─── Component ──────────────────────────────────────────────────────── */
-
 export function ConceptGraphCanvas({
   data,
   rootLabel,
   conceptId,
-  standalone = true,
   availableConcepts = [],
 }: ConceptGraphCanvasProps) {
   const router = useRouter();
@@ -142,8 +134,6 @@ export function ConceptGraphCanvas({
 
   const nodes = data?.nodes ?? [];
   const edges = data?.edges ?? [];
-
-  /* Tüm hook'lar koşulsuz — erken return hook'lardan SONRA */
 
   const rootNode = useMemo(
     () => nodes.find((n) => n.data.nodeType === 'ROOT') || nodes[0],
@@ -184,21 +174,21 @@ export function ConceptGraphCanvas({
   }, [nodes, rootNode, edgeMap, relFilter, q]);
 
   const layout = useMemo(() => {
-    const width = 1120, height = 740, cx = width / 2, cy = height / 2;
+    const width = 1040, height = 680, cx = width / 2, cy = height / 2;
     const pos = new Map<string, { x: number; y: number; w: number; h: number }>();
-    if (rootNode) pos.set(rootNode.data.id, { x: cx, y: cy, w: 224, h: 66 });
+    if (rootNode) pos.set(rootNode.data.id, { x: cx, y: cy, w: 208, h: 60 });
 
     const rings: Array<[number, number | undefined, number, number]> = [
-      [0, 10, 250, 185],
-      [10, 26, 445, 305],
-      [26, undefined, 585, 385],
+      [0, 9, 215, 150],
+      [9, 24, 370, 248],
+      [24, undefined, 430, 290],
     ];
 
     for (const [start, end, rx, ry] of rings) {
       const slice = satellites.slice(start, end);
       slice.forEach((n, i) => {
         const a = (i / Math.max(1, slice.length)) * 2 * Math.PI - Math.PI / 2;
-        pos.set(n.data.id, { x: cx + rx * Math.cos(a), y: cy + ry * Math.sin(a), w: 168, h: 50 });
+        pos.set(n.data.id, { x: cx + rx * Math.cos(a), y: cy + ry * Math.sin(a), w: 156, h: 46 });
       });
     }
     return { width, height, cx, cy, pos };
@@ -241,7 +231,7 @@ export function ConceptGraphCanvas({
   const onUp = useCallback(() => { dragRef.current.active = false; }, []);
 
   const onWheel = useCallback((e: React.WheelEvent<SVGSVGElement>) => {
-    setZoom((z) => Math.min(2, Math.max(0.6, Number((z - Math.sign(e.deltaY) * 0.1).toFixed(2)))));
+    setZoom((z) => Math.min(2, Math.max(0.65, Number((z - Math.sign(e.deltaY) * 0.1).toFixed(2)))));
   }, []);
 
   if (!rootNode) return null;
@@ -250,58 +240,52 @@ export function ConceptGraphCanvas({
 
   return (
     <section
-      aria-label="Kavram İlişki Ağı"
-      className={
-        standalone
-          ? 'flex min-h-[calc(100vh-110px)] flex-col bg-white text-slate-900'
-          : 'overflow-hidden rounded-2xl border border-slate-200 bg-white text-slate-900 shadow-sm'
-      }
+      aria-label="Çerkesçe Sözlük — Kavram İlişki Ağı"
+      style={{ fontFamily: "'Plus Jakarta Sans', system-ui, sans-serif" }}
+      className="overflow-hidden rounded-2xl border border-slate-200 bg-white text-slate-900 shadow-sm"
     >
       <style>{`
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
         @keyframes cgFade { from { opacity: 0; } to { opacity: 1; } }
         .cg-node { animation: cgFade .45s ease-out both; }
       `}</style>
 
-      {/* ═══ Üst Araç Çubuğu ═══ */}
-      <header className="border-b border-slate-200 bg-white px-5 py-3.5">
+      {/* ═══ Header ═══ */}
+      <div className="border-b border-slate-200 bg-white px-5 py-4">
         <div className="flex flex-wrap items-center justify-between gap-3">
           <div className="flex items-center gap-3">
-            <Link
-              href="/kavramlar"
-              className="inline-flex items-center gap-1.5 rounded-xl border border-slate-200 bg-slate-50 px-3 py-1.5 text-xs font-semibold text-slate-700 transition-colors hover:bg-slate-100"
-            >
-              <ArrowLeft className="h-3.5 w-3.5" />
-              Kavramlar
-            </Link>
-            <div className="flex h-9 w-9 items-center justify-center rounded-xl border border-indigo-200 bg-indigo-50 text-indigo-600">
-              <Network className="h-4 w-4" />
+            <div className="flex h-10 w-10 items-center justify-center rounded-xl border border-indigo-200 bg-indigo-50 text-indigo-600">
+              <Network className="h-5 w-5" />
             </div>
             <div>
               <div className="flex items-center gap-2">
-                <h1 className="text-base font-bold tracking-tight text-slate-900 capitalize">
+                <h1 className="text-base font-extrabold tracking-tight text-slate-900 capitalize">
                   {rootParsed.primary}
                 </h1>
-                <span className="rounded bg-slate-100 px-2 py-0.5 font-mono text-[11px] font-semibold text-slate-600">
+                <span
+                  className="rounded-md border border-slate-200 bg-slate-100 px-2 py-0.5 text-[11px] font-semibold text-slate-600"
+                  style={{ fontFamily: "'IBM Plex Mono', monospace" }}
+                >
                   {activeConceptId}
                 </span>
               </div>
-              <p className="font-mono text-xs text-slate-500">
-                {satellites.length + 1} düğüm · {satellites.length} bağlantı
+              <p className="mt-0.5 text-xs text-slate-500" style={{ fontFamily: "'IBM Plex Mono', monospace" }}>
+                Çerkesçe Sözlük · {satellites.length + 1} düğüm · {satellites.length} bağlantı
               </p>
             </div>
           </div>
 
           <div className="flex flex-wrap items-center gap-2">
-            {/* Başka Kavrama Geçiş */}
+            {/* Başka Kavrama Geç */}
             {availableConcepts.length > 0 && (
-              <div className="relative w-56">
+              <div className="relative w-52">
                 <GitBranch className="pointer-events-none absolute left-2.5 top-1/2 h-3.5 w-3.5 -translate-y-1/2 text-indigo-500" />
                 <input
                   type="text"
                   value={conceptJump}
                   onChange={(e) => setConceptJump(e.target.value)}
                   placeholder="Başka kavrama geç…"
-                  className="h-9 w-full rounded-xl border border-slate-300 bg-slate-50 pl-8 pr-7 text-xs font-medium text-slate-900 placeholder:text-slate-400 focus:border-indigo-500 focus:bg-white focus:outline-none"
+                  className="h-9 w-full rounded-xl border border-slate-200 bg-slate-50 pl-8 pr-7 text-xs font-medium text-slate-900 placeholder:text-slate-400 focus:border-indigo-500 focus:bg-white focus:outline-none"
                 />
                 {conceptJump && (
                   <button
@@ -325,7 +309,9 @@ export function ConceptGraphCanvas({
                         className="flex w-full items-center justify-between px-3 py-1.5 text-left text-xs hover:bg-indigo-50"
                       >
                         <span className="font-semibold text-slate-900 capitalize">{c.labelTr}</span>
-                        <span className="font-mono text-[10px] text-slate-400">{c.id}</span>
+                        <span className="text-[10px] text-slate-400" style={{ fontFamily: "'IBM Plex Mono', monospace" }}>
+                          {c.id}
+                        </span>
                       </button>
                     ))}
                   </div>
@@ -333,7 +319,7 @@ export function ConceptGraphCanvas({
               </div>
             )}
 
-            {/* Ağ İçi Düğüm Arama */}
+            {/* Ağ İçi Arama */}
             <div className="relative w-44">
               <Search className="pointer-events-none absolute left-2.5 top-1/2 h-3.5 w-3.5 -translate-y-1/2 text-slate-400" />
               <input
@@ -354,9 +340,9 @@ export function ConceptGraphCanvas({
               )}
             </div>
 
-            {/* İlişki Seçici */}
+            {/* İlişki Filtresi */}
             <select
-              aria-label="İlişki türü filtresi"
+              aria-label="İlişki türü"
               value={relFilter}
               onChange={(e) => setRelFilter(e.target.value as RelationFilter)}
               className="h-9 rounded-xl border border-slate-200 bg-slate-50 px-3 text-xs font-semibold text-slate-700 focus:border-indigo-500 focus:bg-white focus:outline-none"
@@ -367,17 +353,22 @@ export function ConceptGraphCanvas({
               {counts.RELATED > 0 && <option value="RELATED">İlişkili ({counts.RELATED})</option>}
             </select>
 
-            {/* Zoom Kontrolleri */}
+            <div className="hidden h-6 w-px bg-slate-200 sm:block" />
+
+            {/* Zoom */}
             <div className="flex items-center gap-0.5 rounded-xl border border-slate-200 bg-slate-50 p-1">
               <button
                 type="button"
                 title="Uzaklaştır"
-                onClick={() => setZoom((z) => Math.max(0.6, Number((z - 0.15).toFixed(2))))}
+                onClick={() => setZoom((z) => Math.max(0.65, Number((z - 0.15).toFixed(2))))}
                 className="flex h-7 w-7 items-center justify-center rounded-lg text-slate-600 hover:bg-white hover:text-slate-900"
               >
                 <ZoomOut className="h-3.5 w-3.5" />
               </button>
-              <span className="min-w-11 text-center font-mono text-xs font-semibold text-slate-700">
+              <span
+                className="min-w-11 text-center text-xs font-semibold text-slate-700"
+                style={{ fontFamily: "'IBM Plex Mono', monospace" }}
+              >
                 {Math.round(zoom * 100)}%
               </span>
               <button
@@ -397,27 +388,21 @@ export function ConceptGraphCanvas({
                 <RotateCcw className="h-3.5 w-3.5" />
               </button>
             </div>
-
-            {/* Eski Kalabalık Liste Sayfasına Geçiş */}
-            <Link
-              href={`/kavram/${encodeURIComponent(activeConceptId)}/liste`}
-              className="inline-flex items-center gap-1.5 rounded-xl border border-slate-200 bg-slate-50 px-3 py-2 text-xs font-semibold text-slate-700 transition-colors hover:bg-slate-100"
-            >
-              <List className="h-3.5 w-3.5" />
-              Liste Görünümü
-            </Link>
           </div>
         </div>
-      </header>
+      </div>
 
-      {/* ═══ Gövde ═══ */}
-      <div className="grid flex-1 grid-cols-1 lg:grid-cols-12">
-        {/* ── Aydınlık SVG Tuval ── */}
-        <div className="relative bg-slate-50 lg:col-span-9">
+      {/* ═══ Body ═══ */}
+      <div className="grid grid-cols-1 lg:grid-cols-12">
+        {/* ── Canvas ── */}
+        <div
+          className="relative lg:col-span-8"
+          style={{ background: 'radial-gradient(circle at 50% 50%, rgba(99,102,241,0.05) 0%, #f8fafc 75%)' }}
+        >
           <div
             className="pointer-events-none absolute inset-0"
             style={{
-              backgroundImage: 'radial-gradient(circle, #cbd5e1 1.1px, transparent 1.1px)',
+              backgroundImage: 'radial-gradient(circle, #cbd5e1 1px, transparent 1px)',
               backgroundSize: '22px 22px',
             }}
           />
@@ -431,7 +416,8 @@ export function ConceptGraphCanvas({
             onMouseUp={onUp}
             onMouseLeave={onUp}
             onWheel={onWheel}
-            className="relative z-10 h-[620px] w-full cursor-grab select-none active:cursor-grabbing lg:h-full lg:min-h-[620px]"
+            className="relative z-10 w-full cursor-grab select-none active:cursor-grabbing"
+            style={{ height: 560 }}
           >
             <defs>
               {Object.entries(REL_META).map(([key, meta]) => (
@@ -441,34 +427,34 @@ export function ConceptGraphCanvas({
                   viewBox="0 0 10 10"
                   refX="9"
                   refY="5"
-                  markerWidth="6"
-                  markerHeight="6"
+                  markerWidth="5.5"
+                  markerHeight="5.5"
                   orient="auto"
                 >
-                  <path d="M0 1L10 5L0 9z" fill={meta.color} />
+                  <path d="M0 1L10 5L0 9z" fill={meta.color} opacity="0.85" />
                 </marker>
               ))}
               <filter id="cg-card-shadow" x="-10%" y="-10%" width="120%" height="125%">
-                <feDropShadow dx="0" dy="2" stdDeviation="3" floodColor="#0f172a" floodOpacity="0.08" />
+                <feDropShadow dx="0" dy="2" stdDeviation="2.5" floodColor="#0f172a" floodOpacity="0.07" />
               </filter>
               <linearGradient id="cg-root-grad" x1="0" y1="0" x2="1" y2="1">
-                <stop offset="0%" stopColor="#2563eb" />
-                <stop offset="100%" stopColor="#4f46e5" />
+                <stop offset="0%" stopColor="#4f46e5" />
+                <stop offset="100%" stopColor="#6366f1" />
               </linearGradient>
             </defs>
 
             <g transform={`translate(${layout.cx + pan.x},${layout.cy + pan.y}) scale(${zoom}) translate(${-layout.cx},${-layout.cy})`}>
-              {/* Dönen kesikli rehber halkalar */}
-              {[250, 445, 585].map((r, i) => (
+              {/* Dönen kesikli yörünge halkaları */}
+              {[215, 370].map((r, i) => (
                 <g key={r}>
                   <ellipse
                     cx={layout.cx}
                     cy={layout.cy}
                     rx={r}
-                    ry={r * 0.72}
+                    ry={r * 0.69}
                     fill="none"
                     stroke="#cbd5e1"
-                    strokeWidth="1.1"
+                    strokeWidth="1"
                     strokeDasharray="4,8"
                   />
                   <animateTransform
@@ -482,7 +468,7 @@ export function ConceptGraphCanvas({
                 </g>
               ))}
 
-              {/* Kavisli yönlü bağlantı okları */}
+              {/* Kavisli kenarlar */}
               {satellites.map((node) => {
                 const tp = layout.pos.get(node.data.id);
                 const rp = layout.pos.get(rootNode.data.id);
@@ -492,9 +478,9 @@ export function ConceptGraphCanvas({
                 const dx = tp.x - rp.x, dy = tp.y - rp.y;
                 const dist = Math.hypot(dx, dy) || 1;
                 const ux = dx / dist, uy = dy / dist;
-                const sx = rp.x + ux * 106, sy = rp.y + uy * 31;
-                const tx = tp.x - ux * 84, ty = tp.y - uy * 25;
-                const mx = (sx + tx) / 2 - uy * 15, my = (sy + ty) / 2 + ux * 15;
+                const sx = rp.x + ux * 98, sy = rp.y + uy * 28;
+                const tx = tp.x - ux * 78, ty = tp.y - uy * 23;
+                const mx = (sx + tx) / 2 - uy * 14, my = (sy + ty) / 2 + ux * 14;
                 const hi = focusId === node.data.id;
                 const dim = Boolean(focusId && focusId !== rootNode.data.id && !hi);
                 return (
@@ -503,8 +489,8 @@ export function ConceptGraphCanvas({
                     d={`M${sx} ${sy} Q${mx} ${my} ${tx} ${ty}`}
                     fill="none"
                     stroke={theme.color}
-                    strokeWidth={hi ? 2.8 : 1.7}
-                    strokeOpacity={dim ? 0.25 : hi ? 1 : 0.72}
+                    strokeWidth={hi ? 2.5 : 1.5}
+                    strokeOpacity={dim ? 0.22 : hi ? 1 : 0.68}
                     strokeDasharray={theme.dash}
                     markerEnd={`url(#arr-${rel.toLowerCase()})`}
                     style={{ transition: 'stroke-opacity .2s, stroke-width .2s' }}
@@ -512,7 +498,7 @@ export function ConceptGraphCanvas({
                 );
               })}
 
-              {/* Yüksek kontrastlı uydu düğümleri */}
+              {/* Uydu düğümleri */}
               {satellites.map((node, i) => {
                 const p = layout.pos.get(node.data.id);
                 if (!p) return null;
@@ -546,12 +532,12 @@ export function ConceptGraphCanvas({
                       width={p.w}
                       height={p.h}
                       rx={13}
-                      fill={isSel ? '#eff6ff' : theme.fill}
-                      stroke={isSel || isHov ? '#1d4ed8' : theme.border}
-                      strokeWidth={isSel ? 2.4 : 1.6}
+                      fill={isSel ? '#eef2ff' : theme.fill}
+                      stroke={isSel || isHov ? '#4f46e5' : theme.border}
+                      strokeWidth={isSel ? 2.2 : 1.4}
                     />
-                    <circle cx={-p.w / 2 + 14} cy={parsed.secondary ? -5 : 0} r={4.2} fill={theme.dot} />
-                    <text x={-p.w / 2 + 25} y={parsed.secondary ? -1 : 4} fontSize="13" fontWeight="700" textAnchor="start">
+                    <circle cx={-p.w / 2 + 13} cy={parsed.secondary ? -5 : 0} r={3.8} fill={theme.dot} />
+                    <text x={-p.w / 2 + 23} y={parsed.secondary ? -1 : 4} fontSize="12.5" fontWeight="700" textAnchor="start">
                       {splitHighlight(clip(parsed.primary, 15), q).map((part, j) => (
                         <tspan key={j} fill={part.m ? '#b45309' : '#0f172a'} fontWeight={part.m ? 800 : 700}>
                           {part.t}
@@ -559,7 +545,7 @@ export function ConceptGraphCanvas({
                       ))}
                     </text>
                     {parsed.secondary && (
-                      <text x={-p.w / 2 + 25} y={14} fill="#475569" fontSize="11" fontWeight="500" textAnchor="start">
+                      <text x={-p.w / 2 + 23} y={13} fill="#475569" fontSize="10.5" fontWeight="500" textAnchor="start">
                         {clip(parsed.secondary, 18)}
                       </text>
                     )}
@@ -577,31 +563,31 @@ export function ConceptGraphCanvas({
               >
                 <title>{rootNode.data.label || rootNode.data.id}</title>
                 <rect
-                  x={-112}
-                  y={-33}
-                  width={224}
-                  height={66}
-                  rx={18}
+                  x={-104}
+                  y={-30}
+                  width={208}
+                  height={60}
+                  rx={16}
                   fill="url(#cg-root-grad)"
-                  stroke="#1e40af"
-                  strokeWidth="2"
+                  stroke="#3730a3"
+                  strokeWidth="1.8"
                 />
-                <text x={0} y={rootParsed.secondary ? -5 : 5} fill="#ffffff" fontSize="15" fontWeight="800" textAnchor="middle" className="capitalize">
-                  {clip(rootParsed.primary, 20)}
+                <text x={0} y={rootParsed.secondary ? -4 : 5} fill="#ffffff" fontSize="14.5" fontWeight="800" textAnchor="middle" className="capitalize">
+                  {clip(rootParsed.primary, 19)}
                 </text>
                 {rootParsed.secondary && (
-                  <text x={0} y={15} fill="#dbeafe" fontSize="11.5" fontWeight="500" textAnchor="middle">
-                    {clip(rootParsed.secondary, 24)}
+                  <text x={0} y={14} fill="#e0e7ff" fontSize="11" fontWeight="500" textAnchor="middle">
+                    {clip(rootParsed.secondary, 23)}
                   </text>
                 )}
               </g>
             </g>
           </svg>
 
-          {/* Boş arama durumu */}
+          {/* Boş durum */}
           {satellites.length === 0 && (
-            <div className="absolute inset-0 z-20 flex items-center justify-center bg-white/60 backdrop-blur-xs">
-              <div className="rounded-xl border border-slate-200 bg-white px-6 py-4 text-center shadow-md">
+            <div className="absolute inset-0 z-20 flex items-center justify-center bg-white/70 backdrop-blur-xs">
+              <div className="rounded-xl border border-slate-200 bg-white px-6 py-4 text-center shadow-sm">
                 <Search className="mx-auto mb-2 h-6 w-6 text-slate-400" />
                 <p className="text-sm font-semibold text-slate-900">Eşleşen düğüm yok</p>
                 <p className="mt-1 text-xs text-slate-500">Aramayı temizleyin veya filtreyi değiştirin.</p>
@@ -609,8 +595,8 @@ export function ConceptGraphCanvas({
             </div>
           )}
 
-          {/* Sol alt tıklanabilir gösterge (Legend) */}
-          <div className="absolute bottom-4 left-4 z-20 flex flex-wrap items-center gap-1.5 rounded-xl border border-slate-200 bg-white/95 p-1.5 shadow-sm backdrop-blur-md">
+          {/* Sol alt tıklanabilir legend */}
+          <div className="absolute bottom-3.5 left-3.5 z-20 flex flex-wrap items-center gap-1 rounded-xl border border-slate-200 bg-white/95 p-1 shadow-xs backdrop-blur-md">
             <button
               type="button"
               onClick={() => setRelFilter('ALL')}
@@ -618,47 +604,50 @@ export function ConceptGraphCanvas({
                 relFilter === 'ALL' ? 'bg-indigo-600 text-white' : 'text-slate-600 hover:bg-slate-100'
               }`}
             >
-              Tümü ({counts.ALL})
+              Tümü
             </button>
             {Object.entries(REL_META).map(([key, m]) => (
               <button
                 key={key}
                 type="button"
                 onClick={() => setRelFilter(key as RelationFilter)}
-                className={`flex items-center gap-1.5 rounded-lg px-2.5 py-1 text-xs font-semibold transition-colors ${
-                  relFilter === key ? 'bg-slate-100 text-slate-900 ring-1 ring-slate-300' : 'text-slate-600 hover:bg-slate-50'
+                className={`flex items-center gap-1.5 rounded-lg px-2.5 py-1 text-xs font-medium transition-colors ${
+                  relFilter === key ? 'bg-slate-100 font-semibold text-slate-900 ring-1 ring-slate-300' : 'text-slate-600 hover:bg-slate-50'
                 }`}
               >
-                <span className="h-2.5 w-2.5 rounded-full" style={{ background: m.dot }} />
-                {m.label} ({counts[key as RelationFilter] ?? 0})
+                <span className="h-2 w-2 rounded-full" style={{ background: m.dot }} />
+                {m.label}
               </button>
             ))}
           </div>
         </div>
 
-        {/* ── Sağ İnceleme Paneli (Inspector) ── */}
-        <aside className="border-t border-slate-200 bg-white p-5 lg:col-span-3 lg:border-l lg:border-t-0">
+        {/* ── Inspector ── */}
+        <aside className="border-t border-slate-200 bg-white p-5 lg:col-span-4 lg:border-l lg:border-t-0">
           {selectedDetail ? (
             <div className="space-y-5">
               <div className="flex items-center justify-between gap-2">
-                <span className={`inline-flex items-center rounded-md border px-2.5 py-1 text-xs font-semibold ${getRelTheme(selectedDetail.rel).badgeClass}`}>
+                <span className={`inline-flex items-center rounded-lg border px-2.5 py-1 text-xs font-semibold ${getRelTheme(selectedDetail.rel).badgeClass}`}>
                   <Sparkles className="mr-1.5 h-3 w-3" />
                   {getRelTheme(selectedDetail.rel).label}
                 </span>
                 {selectedDetail.dialect && (
-                  <span className="rounded bg-slate-100 px-2 py-0.5 font-mono text-xs font-semibold text-slate-700">
+                  <span
+                    className="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-semibold text-slate-700"
+                    style={{ fontFamily: "'IBM Plex Mono', monospace" }}
+                  >
                     {selectedDetail.dialect}
                   </span>
                 )}
               </div>
 
               <div
-                className="rounded-xl border border-slate-200 border-l-4 bg-slate-50 py-3 pl-4 pr-3"
+                className="rounded-xl border border-slate-200 border-l-4 bg-slate-50/70 py-3 pl-4 pr-3"
                 style={{ borderLeftColor: getRelTheme(selectedDetail.rel).color }}
               >
                 <h2 className="text-2xl font-extrabold tracking-tight text-slate-900">{selectedDetail.parsed.primary}</h2>
                 {selectedDetail.parsed.secondary && (
-                  <p className="mt-1 text-sm font-medium text-slate-600">{selectedDetail.parsed.secondary}</p>
+                  <p className="mt-1 text-sm text-slate-600">{selectedDetail.parsed.secondary}</p>
                 )}
               </div>
 
@@ -669,14 +658,19 @@ export function ConceptGraphCanvas({
                 </div>
                 <div className="flex justify-between">
                   <span>Düğüm ID:</span>
-                  <code className="rounded bg-white px-1.5 py-0.5 font-mono text-xs text-indigo-700 border border-slate-200">
+                  <code
+                    className="rounded border border-slate-200 bg-white px-1.5 py-0.5 text-xs text-indigo-700"
+                    style={{ fontFamily: "'IBM Plex Mono', monospace" }}
+                  >
                     {selectedDetail.id}
                   </code>
                 </div>
                 {selectedDetail.depth !== null && (
                   <div className="flex justify-between">
                     <span>Derinlik:</span>
-                    <span className="font-mono font-semibold text-slate-800">{selectedDetail.depth}</span>
+                    <span className="font-semibold text-slate-800" style={{ fontFamily: "'IBM Plex Mono', monospace" }}>
+                      {selectedDetail.depth}
+                    </span>
                   </div>
                 )}
               </div>
@@ -697,7 +691,7 @@ export function ConceptGraphCanvas({
                     className="inline-flex w-full items-center gap-2 rounded-xl bg-indigo-600 px-4 py-2.5 text-xs font-bold text-white transition-colors hover:bg-indigo-700"
                   >
                     <Search className="h-4 w-4" />
-                    35 Sözlükte Ara ({selectedDetail.id})
+                    35 Sözlükte Ara
                     <ArrowUpRight className="ml-auto h-3.5 w-3.5 opacity-80" />
                   </Link>
                 )}
@@ -705,8 +699,10 @@ export function ConceptGraphCanvas({
             </div>
           ) : (
             <div className="space-y-5">
-              <div className="rounded-xl border border-indigo-100 bg-indigo-50/70 p-4">
-                <p className="text-xs font-bold uppercase tracking-widest text-indigo-700">Merkez Kavram</p>
+              <div className="rounded-xl border border-indigo-200/80 bg-gradient-to-br from-indigo-50 to-violet-50/70 p-4">
+                <p className="text-xs font-bold uppercase tracking-widest text-indigo-700">
+                  Merkez Kavram
+                </p>
                 <h2 className="mt-1 text-xl font-extrabold text-slate-900 capitalize">{rootParsed.primary}</h2>
                 {rootParsed.secondary && <p className="mt-0.5 text-xs text-slate-600">{rootParsed.secondary}</p>}
               </div>
@@ -714,7 +710,7 @@ export function ConceptGraphCanvas({
               <div className="flex gap-2 rounded-xl border border-slate-200 bg-slate-50 p-3 text-xs leading-relaxed text-slate-600">
                 <Info className="mt-0.5 h-3.5 w-3.5 shrink-0 text-indigo-600" />
                 <p>
-                  Kapsüllere tıklayarak Türkçe karşılık, lehçe ve sözlük bağlantısını görüntüleyin.
+                  Kapsüllere tıklayarak karşılık, lehçe ve sözlük bağlantısını görüntüleyin.
                   Fare tekerleğiyle yakınlaştırıp boş alandan sürükleyerek kaydırabilirsiniz.
                 </p>
               </div>
@@ -725,17 +721,20 @@ export function ConceptGraphCanvas({
                     key={key}
                     type="button"
                     onClick={() => setRelFilter(key as RelationFilter)}
-                    className={`flex w-full items-center justify-between rounded-lg border px-3 py-2 text-left transition-colors ${
+                    className={`flex w-full items-center justify-between rounded-xl border px-3 py-2.5 text-left transition-colors ${
                       relFilter === key
                         ? 'border-indigo-300 bg-indigo-50/60'
                         : 'border-slate-200 bg-white hover:bg-slate-50'
                     }`}
                   >
-                    <span className="flex items-center gap-2 text-xs font-medium text-slate-700">
+                    <span className="flex items-center gap-2 text-xs font-semibold text-slate-700">
                       <span className="h-2.5 w-2.5 rounded-full" style={{ background: m.dot }} />
                       {m.label}
                     </span>
-                    <span className="rounded bg-slate-100 px-2 py-0.5 font-mono text-xs font-semibold text-slate-700">
+                    <span
+                      className="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-semibold text-slate-700"
+                      style={{ fontFamily: "'IBM Plex Mono', monospace" }}
+                    >
                       {counts[key as RelationFilter] ?? 0}
                     </span>
                   </button>

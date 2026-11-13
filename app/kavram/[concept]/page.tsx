@@ -1,7 +1,9 @@
 import React from 'react';
 import fs from 'fs';
 import path from 'path';
+import Link from 'next/link';
 import type { Metadata } from 'next';
+import { ArrowLeft, List, BookOpen } from 'lucide-react';
 import {
   ConceptGraphCanvas,
   CytoscapeElementData,
@@ -17,7 +19,7 @@ interface PageProps {
 
 export const metadata: Metadata = {
   title: 'Kavram İlişki Ağı | Çerkesçe Sözlük',
-  description: 'Çerkesçe kavramlar, eşanlamlı kelimeler ve ortak kök aileleri arasındaki görsel ilişki ağı.',
+  description: 'Çerkesçe Sözlük kavramlar, eşanlamlı kelimeler ve ortak kök aileleri arasındaki görsel ilişki ağı.',
 };
 
 function readJsonSafe<T>(filePath: string, fallback: T): T {
@@ -165,14 +167,48 @@ export default async function ConceptGraphPage({ params }: PageProps) {
     .filter((c) => c.labelTr);
 
   return (
-    <main className="w-full bg-slate-50">
-      <ConceptGraphCanvas
-        data={graphData}
-        rootLabel={rootNodeTitle}
-        conceptId={conceptKey}
-        standalone
-        availableConcepts={availableConcepts}
-      />
+    <main className="min-h-[calc(100vh-64px)] bg-slate-50 px-4 py-6 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl space-y-4">
+        {/* Çerkesçe Sözlük Üst Gezinti Şeridi */}
+        <div className="flex flex-wrap items-center justify-between gap-3 rounded-xl border border-slate-200 bg-white px-4 py-2.5 shadow-2xs">
+          <nav aria-label="Sayfa yolu" className="flex items-center gap-2 text-xs text-slate-500">
+            <Link href="/" className="inline-flex items-center gap-1.5 font-bold text-slate-900 hover:text-indigo-600">
+              <BookOpen className="h-3.5 w-3.5 text-indigo-600" />
+              Çerkesçe Sözlük
+            </Link>
+            <span>/</span>
+            <Link href="/kavramlar" className="font-medium hover:text-indigo-600">
+              Kavramlar
+            </Link>
+            <span>/</span>
+            <span className="font-semibold text-slate-900 capitalize">{cleanRootTr || decodedConcept}</span>
+          </nav>
+
+          <div className="flex items-center gap-2">
+            <Link
+              href="/kavramlar"
+              className="inline-flex items-center gap-1.5 rounded-lg border border-slate-200 bg-slate-50 px-3 py-1.5 text-xs font-semibold text-slate-700 hover:bg-slate-100"
+            >
+              <ArrowLeft className="h-3.5 w-3.5" />
+              Tüm Kavramlar
+            </Link>
+            <Link
+              href={`/kavram/${encodeURIComponent(conceptKey)}/liste`}
+              className="inline-flex items-center gap-1.5 rounded-lg border border-slate-200 bg-slate-50 px-3 py-1.5 text-xs font-semibold text-slate-700 hover:bg-slate-100"
+            >
+              <List className="h-3.5 w-3.5" />
+              Kelime Listesi Görünümü
+            </Link>
+          </div>
+        </div>
+
+        <ConceptGraphCanvas
+          data={graphData}
+          rootLabel={rootNodeTitle}
+          conceptId={conceptKey}
+          availableConcepts={availableConcepts}
+        />
+      </div>
     </main>
   );
 }
