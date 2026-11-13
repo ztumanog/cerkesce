@@ -4,12 +4,12 @@
  * Layer: Repository
  */
 import { Concept } from '../Concept';
-import { ConceptID } from '../value-objects/ConceptID';
+import { ConceptId } from '../../shared/value-objects/ConceptId';
 
 export interface ConceptRepository {
-  findById(id: ConceptID): Promise<Concept | null>;
-  findMany(ids: readonly ConceptID[]): Promise<Concept[]>;
+  findById(id: ConceptId): Promise<Concept | null>;
+  findMany(ids: readonly ConceptId[]): Promise<Concept[]>;
   save(concept: Concept): Promise<void>;
-  delete(id: ConceptID): Promise<boolean>;
-  exists(id: ConceptID): Promise<boolean>;
+  delete(id: ConceptId): Promise<boolean>;
+  exists(id: ConceptId): Promise<boolean>;
 }
