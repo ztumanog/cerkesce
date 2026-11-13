@@ -869,7 +869,6 @@
       "L-KBD-05406",
       "L-KBD-05549",
       "L-KBD-05685",
-      "HUV3-IЭПЭПӀЭ",
       "L-P-EYTEYUE",
       "L-SHCHAUEBZHE",
       "L-KEY-ESHCH-EKUETEN",
@@ -968,20 +967,20 @@
       "L-KBD-00092",
       "L-KBD-00101",
       "L-KBD-00103",
-      "CEFR-AILE-АДЭ",
-      "CEFR-AILE-АНЭ",
-      "CEFR-AILE-КЪУЭ",
-      "CEFR-AILE-ПХЪУ",
-      "CEFR-AILE-ШЫПХЪУ",
-      "CEFR-EV-УНЭ",
-      "CEFR-EV-ПХЪУАНТЭ",
-      "CEFR-EV-ШЭНТ",
-      "CEFR-GIYIM-ДЖАНЭ",
-      "CEFR-GIYIM-ГЪУЭНШЭДЖ",
-      "CEFR-GIYIM-БГЫРЫПХ",
-      "CEFR-GIYIM-ВАКЪЭ",
-      "CEFR-VUCUT-ПЭ",
-      "CEFR-VUCUT-ЛЪАКЪУЭ",
+      "L-ADE-2",
+      "L-ANE-2",
+      "L-KUEE",
+      "L-PKHU-2",
+      "L-SHYPKHU",
+      "L-UNE-2",
+      "L-PKHUANTE-2",
+      "L-SHENT-2",
+      "L-DZHANE-2",
+      "L-GHUENSHEDZH-2",
+      "L-BGYRYPX-2",
+      "L-VAKEE-2",
+      "L-PE-2",
+      "L-LHAKUEE",
       "L-AGHU",
       "L-AU-2",
       "L-EIGHUE",
@@ -1121,19 +1120,7 @@
       "L-MYLAZHE-MYPSHCH-ANT-E",
       "L-ARTI",
       "L-KBD-00255",
-      "HUV2-IЕЯЩӀЭ",
-      "HUV2-IУБЗЭХЫКӀЫН",
-      "HUV2-IУДЖЭӀУЩЭ",
-      "HUV2-IУМПӀАФӀАГЪ(Э)",
-      "HUV2-IУМПӀЭ",
-      "HUV2-IУНКӀЫБЗЭӀУХ",
-      "HUV2-IУНКӀЫБЗЭКЪЭБ",
-      "HUV2-IУНЭЩӀ",
       "L-ADE-ADY",
-      "HUV3-IАПЛӀ",
-      "HUV3-IАПЛӀЭН",
-      "HUV3-IАПЭКӀЭ",
-      "HUV3-IАПЭПӀЭ",
       "L-APSHCH-ONDEXU",
       "L-KEY-USHCH-YK-YN",
       "L-KEYDE-UN",
@@ -1347,15 +1334,15 @@
     "notes": "Otomatik onarıldı (lexemes.json referansı)",
     "_source": "word_families.json",
     "lexemeIds": [
-      "L-VERIFIED-ефэжын",
-      "L-VERIFIED-ехъуэкӀын",
-      "L-VERIFIED-ехъурэхъуэкӀын",
-      "L-VERIFIED-жьэхэӀунщӀэн",
-      "L-VERIFIED-жьэхэгъэкъуэн",
-      "L-VERIFIED-зэбгрыгуэшыкӀын",
-      "L-VERIFIED-зэбэдзэуэн",
-      "L-VERIFIED-зэгъэӀусэн",
-      "L-VERIFIED-зэдэгъуэтын"
+      "L-EFEZHYN",
+      "L-EKHUEK-YN",
+      "L-EKHUREKHUEK-YN",
+      "L-ZHEXE-UNSHCH-EN",
+      "L-ZHEXEGHEKUEEN",
+      "L-ZEBGRYGUESHYK-YN",
+      "L-ZEBEDZEUEN",
+      "L-ZEGHE-USEN",
+      "L-ZEDEGHUETYN"
     ],
     "productivity": {
       "totalLexemes": 9,
@@ -2033,7 +2020,7 @@
     "notes": "Otomatik onarıldı (lexemes.json referansı)",
     "_source": "word_families.json",
     "lexemeIds": [
-      "L-VERIFIED-зусыгъуэджэн"
+      "L-ZUSYGHUEDZHEN"
     ],
     "productivity": {
       "totalLexemes": 1,
@@ -2507,9 +2494,9 @@
     "notes": "Otomatik onarıldı (lexemes.json referansı)",
     "_source": "word_families.json",
     "lexemeIds": [
-      "L-VERIFIED-ещэжын",
-      "L-VERIFIED-ехьелэкӀын",
-      "L-VERIFIED-еуэсэн"
+      "L-ESHCHEZHYN",
+      "L-EHELEK-YN",
+      "L-EUESEN"
     ],
     "productivity": {
       "totalLexemes": 3,
@@ -2782,7 +2769,7 @@
       "L-KBD-02678",
       "L-KBD-03331",
       "L-KBD-03617",
-      "L-MORPHO-ХЬЭНДРАБГЪ",
+      "L-HENDRABGHUE",
       "L-BGHUESHCH-ESYBZHE",
       "L-KEEBGHUEZH",
       "L-BGYNT-E",
@@ -4242,7 +4229,7 @@
       "L-KBD-03459",
       "L-KBD-04962",
       "L-KBD-04963",
-      "L-MORPHO-БЗЫУЦӀЫКӀУ",
+      "L-BZYUTS-YK-U",
       "L-TS-YK-U",
       "L-TS-YK-UAGHE",
       "L-TS-YK-U-TS-YK-UU",
@@ -4630,8 +4617,8 @@
     "notes": "Otomatik onarıldı (lexemes.json referansı)",
     "_source": "word_families.json",
     "lexemeIds": [
-      "L-VERIFIED-зэгуэбдзэн",
-      "L-VERIFIED-зэгуэгъэжьэн"
+      "L-ZEGUEBDZEN",
+      "L-ZEGUEGHEZHEN"
     ],
     "productivity": {
       "totalLexemes": 2,
@@ -4650,7 +4637,7 @@
     "notes": "Otomatik onarıldı (lexemes.json referansı)",
     "_source": "word_families.json",
     "lexemeIds": [
-      "L-VERIFIED-зэбгъэдэщӀыхьын"
+      "L-ZEBGHEDESHCH-YHYN"
     ],
     "productivity": {
       "totalLexemes": 1,
@@ -5132,7 +5119,7 @@
     "_source": "roots.json",
     "lexemeIds": [
       "L-DEZH",
-      "L-DEZH'",
+      "L-DEZH-ADY",
       "L-YADEZH",
       "L-DEZHUUN",
       "L-DEZHYN",
@@ -5335,7 +5322,7 @@
       "L-DYGHENEXU",
       "L-DYGHEF",
       "L-DYGHEBZIY",
-      "CEFR-DOGA-ДЫГЪЭ",
+      "L-DYGHE-2",
       "L-UGHUENSHE",
       "L-OGHU-ADY",
       "L-AUTO-01337"
@@ -5533,7 +5520,7 @@
     "id": "WF-DYZHYN",
     "_source": "roots.json",
     "lexemeIds": [
-      "L-DYZH'YN",
+      "L-DYZHYN",
       "L-DYZHYN-2",
       "L-MYK-ODYZHYN",
       "L-VERIFIED-01768",
@@ -5957,7 +5944,7 @@
       "L-DZHEDUUKHU",
       "L-DZHEDKHURSANE",
       "L-DZHEDESHCHYBZHE",
-      "CEFR-HAYVANLAR-ДЖЭДУ",
+      "L-DZHEDU-2",
       "L-DZHEDANE",
       "L-DZHEDZ",
       "L-DZHEDSHYPS",
@@ -6242,7 +6229,7 @@
     "notes": "Otomatik onarıldı (lexemes.json referansı)",
     "_source": "word_families.json",
     "lexemeIds": [
-      "L-VERIFIED-жьэрэжьэн"
+      "L-ZHEREZHEN"
     ],
     "productivity": {
       "totalLexemes": 1,
@@ -6503,7 +6490,7 @@
     "notes": "Otomatik onarıldı (lexemes.json referansı)",
     "_source": "word_families.json",
     "lexemeIds": [
-      "L-VERIFIED-зэбгрылъэсыкӀын"
+      "L-ZEBGRYLHESYK-YN"
     ],
     "productivity": {
       "totalLexemes": 1,
@@ -7210,7 +7197,7 @@
     "notes": "фэ (deri, cilt, kabuk; siz). 'зэкуэфэуэн' (uyluk dövmek) buraya ait değil, temizlendi.",
     "_source": "roots.json",
     "lexemeIds": [
-      "L-UDZ GHEGHE",
+      "L-UDZ-GHEGHA",
       "L-SYKHET",
       "L-PSHCHTEN",
       "L-MARY",
@@ -7306,7 +7293,6 @@
       "L-F-EF-YNYGHE",
       "L-ZE-UZEPESHCH",
       "L-BE-UT-E-UNSHE",
-      "CEFR-RENKLER-ФӀЫЦӀЭ",
       "L-F-YTS-AFE",
       "L-F-YSHCH-E",
       "L-ZE-UZEPESHCHU",
@@ -7519,7 +7505,7 @@
       "L-KBD-00635",
       "L-AUTO-01317",
       "L-AUTO-01318",
-      "L-GA_1"
+      "L-GHASHCH-E"
     ],
     "productivity": {
       "totalLexemes": 1,
@@ -7602,7 +7588,7 @@
       "L-GHE",
       "L-GHESHCHTEN",
       "L-GHEPSHTEN",
-      "L-GHEX'EZYRYN",
+      "L-GHEHEZYRYN",
       "L-GHER",
       "L-GHESENYGHE",
       "L-GHEBYDEN",
@@ -9150,7 +9136,7 @@
       "L-GUSHCH1EGHU",
       "L-GUSHCH1EGHUGHE",
       "L-GUSHCH1EGHUNSHAGHE",
-      "L-GUSHCH1YX'E",
+      "L-GUSHCH-YHE",
       "L-GUSHCHYE",
       "L-GUSHHUE",
       "L-GUUZ",
@@ -9158,7 +9144,7 @@
       "L-GUXEXQUE",
       "L-GUZEVAK1UE",
       "L-GUZEVEN",
-      "L-GUZH'EIN",
+      "L-GUZHEIN",
       "L-GUZHEY",
       "L-KBD-00009",
       "L-KBD-00010",
@@ -9558,7 +9544,6 @@
       "L-WEGU",
       "L-ZEGUEP",
       "L-ZYGHEGUSEN",
-      "L-GUGHAПӀE",
       "L-APXUEDIZU",
       "L-ORED",
       "L-ERAGHEU",
@@ -9584,8 +9569,6 @@
       "L-KBD-04911",
       "L-KBD-04933",
       "L-KBD-05021",
-      "CEFR-DUYGULAR-ГУФӀЭГЪУЭ",
-      "CEFR-DUYGULAR-МЭЖАЛӀЭ",
       "L-EGUL-YN",
       "L-SHEREZYN",
       "L-UT-EREZYN",
@@ -10010,7 +9993,7 @@
     "lexemeIds": [
       "L-KHEZYRYLHE",
       "L-KHEZYRYPS",
-      "L-X'ELHE",
+      "L-HELHE",
       "L-KHHE",
       "L-HELHEU",
       "L-HELHEZESHE",
@@ -10029,19 +10012,16 @@
       "L-HEGHE",
       "L-HELABGHUE",
       "L-ZEHEL-EGHUE",
-      "CEFR-HAYVANLAR-ХЬЭ",
-      "CEFR-XABZE-НЭМЫС",
-      "CEFR-XABZE-ХЬЭЩӀЭ",
-      "CEFR-ELSANATLARI-ЦЕЙ",
-      "CEFR-ELSANATLARI-КЪЭРМАКЪ",
-      "CEFR-ELSANATLARI-ДАНЭ",
-      "CEFR-ELSANATLARI-ХЬЭЗЫР",
-      "CEFR-ELSANATLARI-БАЩЛЪЫКЪ",
-      "CEFR-RITUELLER-ХЬЭДАГЪЭ",
-      "CEFR-KADIM-КӀАПЦӀЭ",
-      "CEFR-KADIM-ХЬЭМБАШ",
-      "CEFR-KADIM-ШЫКӀУРТӀАК",
-      "CEFR-KADIM-ХЫКХЪУЭ",
+      "L-HE",
+      "L-NEMYS-KBD",
+      "L-TSEY-2",
+      "L-KEERMAKE",
+      "L-DANE-2",
+      "L-HEZYR",
+      "L-BASHCHLHYKE-2",
+      "L-HEDAGHE-2",
+      "L-HEMBASH",
+      "L-XYKHUE",
       "L-ZYGHEHEZYRYN",
       "L-HELHE-ET",
       "L-HEP-ATS-EBGHUNZH",
@@ -10383,8 +10363,8 @@
     "notes": "Otomatik onarıldı (lexemes.json referansı)",
     "_source": "word_families.json",
     "lexemeIds": [
-      "L-VERIFIED-зэбзэгуэгъу",
-      "L-VERIFIED-зэгуэшэгъу"
+      "L-ZEBZEGUEGHU",
+      "L-ZEGUESHEGHU"
     ],
     "productivity": {
       "totalLexemes": 2,
@@ -10638,7 +10618,7 @@
     "lexemeIds": [
       "L-MIN",
       "L-IN",
-      "L-INYZH'",
+      "L-INYZH",
       "L-NESHCHXQEIN",
       "L-ULHYIN",
       "L-DIN",
@@ -11526,7 +11506,7 @@
     "lexemeIds": [
       "L-K1ERT1OF",
       "L-IKQUK1E",
-      "L-IUZH'",
+      "L-IUZH-2",
       "L-KUEDK1E",
       "L-IUZHREY",
       "L-KUEZYR",
@@ -11652,7 +11632,7 @@
     "id": "WF-KE_2",
     "_source": "roots.json",
     "lexemeIds": [
-      "L-KQEX'YN",
+      "L-KEEHYN",
       "L-KEEHPE",
       "L-KEEHYZHYN",
       "L-KEEHPAGHE",
@@ -11766,7 +11746,7 @@
       "L-ZEXEKUEGHU",
       "L-AUTO-01739",
       "L-AUTO-01740",
-      "CEFR-SOYUT-ХЭКУ",
+      "L-XEKU-2",
       "L-XEKUEN",
       "L-XEKUPSE",
       "L-KEYXEKUHYN",
@@ -12779,7 +12759,7 @@
       "L-KBD-04785",
       "L-KBD-04786",
       "L-KBD-04787",
-      "L-MORPHO-МЫХЪУМЫБЗ",
+      "L-MYKHUMYBZ",
       "L-KHUMP1EDZEDZH",
       "L-KHUMP1ETS1EDZH",
       "L-KHUMP-ETS-EDZHYLHE",
@@ -12985,8 +12965,8 @@
       "L-XUZHBARANE",
       "L-XUZHYBZE",
       "L-XUZHBARINE",
-      "CEFR-RENKLER-ХУЖЬ",
-      "CEFR-RENKLER-УДЗЫФЭ",
+      "L-XUZH",
+      "L-UDZYFE-2",
       "L-XUZH-THEMBYLYFE",
       "L-AUTO-00806",
       "L-AUTO-01072"
@@ -13011,7 +12991,7 @@
     "_source": "roots.json",
     "lexemeIds": [
       "L-KBD-04817",
-      "L-KHU_1"
+      "L-KHUERE"
     ],
     "productivity": {
       "totalLexemes": 1,
@@ -13671,7 +13651,7 @@
       "L-KBD-04820",
       "L-KBD-04821",
       "L-KBD-04822",
-      "LEX-ХЪЫБАРЫНШЭ",
+      "L-KHYBARYNSHE",
       "L-KHYBAR-2"
     ],
     "productivity": {
@@ -15745,7 +15725,7 @@
       "L-LHETEN",
       "L-LHENK1AP1E",
       "L-LHEGUDYGHUE",
-      "L-X'EZAB",
+      "L-HEZAB",
       "L-LHE",
       "L-LHEPQU",
       "L-LHESHEU",
@@ -16164,7 +16144,7 @@
       "L-KBD-05001",
       "L-KBD-05003",
       "L-KBD-05384",
-      "CEFR-XABZE-ЛЪЭПКЪ",
+      "L-LHEPKE",
       "L-GHEUVY1ELHE",
       "L-GHUEBZH",
       "L-LHE-2",
@@ -16350,9 +16330,9 @@
       "L-KBD-04889",
       "L-KBD-04902",
       "L-KBD-04932",
-      "CEFR-RITUELLER-ЛЪЭТЕУВЭ",
-      "CEFR-RITUELLER-ГУЩЭХЭПХЭ",
-      "CEFR-MITOLOJI-ЛЪЭПЩ",
+      "L-LHETEUVE",
+      "L-GUSHCHEXEPXE",
+      "L-LHEPSHCH-2",
       "L-U-2",
       "L-LHY-2",
       "L-LHEBAKUE-ADY",
@@ -16661,7 +16641,7 @@
     "lexemeIds": [
       "L-LY",
       "L-LYGHEVA",
-      "L-LYGHEZH'A",
+      "L-LYGHEZHA",
       "L-LYD",
       "L-LYGHE",
       "L-LYDYN",
@@ -16724,7 +16704,7 @@
     "id": "WF-LYG",
     "_source": "roots.json",
     "lexemeIds": [
-      "L-ALYX'",
+      "L-ALYH",
       "L-ALYY",
       "L-ALYH-ALYH",
       "L-ALYDZH",
@@ -17023,7 +17003,7 @@
       "L-MAZEK",
       "L-MAZENYKUEE",
       "L-MYMAZEGHUENEXU",
-      "CEFR-DOGA-МАЗЭ",
+      "L-MAZE-2",
       "L-MAZAGHUE",
       "L-MAZEPE",
       "L-MAZENSHE",
@@ -17503,7 +17483,7 @@
     "notes": "Otomatik onarıldı (lexemes.json referansı)",
     "_source": "word_families.json",
     "lexemeIds": [
-      "L-VERIFIED-ехуэкӀын"
+      "L-EXUEK-YN"
     ],
     "productivity": {
       "totalLexemes": 1,
@@ -17526,7 +17506,7 @@
     "lexemeIds": [
       "L-MY",
       "L-VERIFIED-00478",
-      "L-МЫӀЭРЫСЭ-4408"
+      "L-MY-ERYSE"
     ],
     "productivity": {
       "totalLexemes": 1,
@@ -18065,9 +18045,9 @@
       "L-YAT-ONERE",
       "L-NE-E",
       "L-KBD-03702",
-      "CEFR-VUCUT-НАПЭ",
-      "CEFR-VUCUT-НЭ",
-      "CEFR-DUYGULAR-НЭЩХЪЕЙ",
+      "L-NAPE-ADY",
+      "L-NE-ADY",
+      "L-NESHCHKHEY",
       "L-NESHCHKHEIN",
       "L-NEF1",
       "L-NEGHABE",
@@ -19829,7 +19809,7 @@
       "L-BAMP1E",
       "L-NAP-EZYP-EM",
       "L-P-EK-OR",
-      "L-DELHX'EP1E",
+      "L-DELHHEP-E",
       "L-EDZ",
       "L-KBD-00002",
       "L-KBD-00052",
@@ -19928,7 +19908,7 @@
       "L-KBD-04929",
       "L-KBD-05142",
       "L-KBD-05394",
-      "L-KQUX'EP1E",
+      "L-KUEHEP-E",
       "L-NAP1E",
       "L-P1E",
       "L-PROMPT-00007",
@@ -20008,7 +19988,7 @@
     "id": "WF-PASHCH",
     "_source": "roots.json",
     "lexemeIds": [
-      "L-PASHCHTYX'",
+      "L-PASHCHTYH",
       "L-PASHCH",
       "L-PASHCHTYHYGHUE",
       "L-KBD-03801",
@@ -20859,7 +20839,7 @@
       "L-PESH",
       "L-PESHCHXQYN",
       "L-PETINE",
-      "L-PETSURƏ",
+      "L-PETS-URE",
       "L-PEZH",
       "L-PEZHAGHE",
       "L-PSHAGHUE",
@@ -21011,7 +20991,7 @@
     "notes": "Otomatik onarıldı (lexemes.json referansı)",
     "_source": "word_families.json",
     "lexemeIds": [
-      "L-VERIFIED-зэдэӀуэкӀын"
+      "L-ZEDE-UEK-YN"
     ],
     "productivity": {
       "totalLexemes": 1,
@@ -21210,10 +21190,8 @@
       "L-ZHYNDYRGHE",
       "L-MUZYKE",
       "L-KBD-03927",
-      "CEFR-MUZIK-ШЫКӀЭПШЫНЭ",
-      "CEFR-MUZIK-ПХЪЭЦӀЫЧ",
-      "CEFR-MUZIK-ПШЫНЭ",
-      "CEFR-MUZIK-КЪАМЫЛ",
+      "L-PSHYNE-2",
+      "L-KEAMYL-2",
       "L-TKHUSE",
       "L-PKHEKU",
       "L-AUTO-00941",
@@ -21310,7 +21288,7 @@
     "_source": "roots.json",
     "lexemeIds": [
       "L-P1ETEPXHUE",
-      "L-PKHURY LHXU",
+      "L-PKHURYLHXU",
       "L-PKHU",
       "L-PSHCHYPHU",
       "L-PKHUZH",
@@ -21389,7 +21367,7 @@
       "L-PLHYZHF-YTS-AFE",
       "L-PLHYZHGHUEZHYFE",
       "L-PLHYZH-FYTS-AFE",
-      "CEFR-RENKLER-ПЛЪЫЖЬ",
+      "L-PLHYZH-2",
       "L-PL-EPS",
       "L-EPL-YSHCH-ANE",
       "L-PL-ABGHUE",
@@ -21636,11 +21614,11 @@
     "notes": "Otomatik onarıldı (lexemes.json referansı)",
     "_source": "word_families.json",
     "lexemeIds": [
-      "L-VERIFIED-ефӀыцӀэкӀын",
-      "L-VERIFIED-ефэгъуэкӀын",
-      "L-VERIFIED-ещэбэкӀын",
-      "L-VERIFIED-зэгуэбэтын",
-      "L-VERIFIED-зэгуэкӀыкӀын"
+      "L-EF-YTS-EK-YN",
+      "L-EFEGHUEK-YN",
+      "L-ESHCHEBEK-YN",
+      "L-ZEGUEBETYN",
+      "L-ZEGUEK-YK-YN"
     ],
     "productivity": {
       "totalLexemes": 5,
@@ -21764,12 +21742,12 @@
       "L-VERIFIED-02653",
       "L-ZYGHEPSEKHUGHE",
       "L-ZYGHEPSEXUN",
-      "LEX-ПСАЛЪЭ-ЗЭТ",
-      "LEX-ПСАЛЪЭГЪУ",
-      "LEX-ПСАЛЪЭГЪУЕ",
-      "LEX-ПСАЛЪЭКӀЭЩ",
-      "LEX-ПСАЛЪЭРИЛЭ",
-      "LEX-ПСАЛЪЭПЭ",
+      "L-PSALHE-ZETYN",
+      "L-PSALHEGHU",
+      "L-PSALHEGHUEY",
+      "L-PSALHEK-ESHCH",
+      "L-PSALHERILE",
+      "L-PSALHEPE",
       "L-AUTO-00631",
       "L-AUTO-01510"
     ],
@@ -22135,11 +22113,11 @@
     "_source": "roots.json",
     "lexemeIds": [
       "L-PSEY-2",
-      "CEFR-KAFKASYA-КЪУРШ",
-      "CEFR-KAFKASYA-ЖЫГЕЙ",
-      "CEFR-KAFKASYA-ПСЕЙ",
-      "CEFR-KAFKASYA-БАЛИЕЙ",
-      "CEFR-KAFKASYA-ДЭШХУЕЙ",
+      "L-KUERSH-2",
+      "L-ZHYGEY-2",
+      "L-PSEY-3",
+      "L-BALIEY",
+      "L-DESHXUEY-2",
       "L-AUTO-00926"
     ],
     "productivity": {
@@ -22492,7 +22470,7 @@
       "L-AUTO-00962",
       "L-AUTO-01568",
       "L-AUTO-01569",
-      "plant-0036"
+      "L-PSHCHYZHY"
     ],
     "productivity": {
       "totalLexemes": 75,
@@ -22523,7 +22501,7 @@
     "_source": "roots.json",
     "lexemeIds": [
       "L-KBD-03993",
-      "L-PSHCHY_1"
+      "L-PSHCHYGHUE"
     ],
     "productivity": {
       "totalLexemes": 1,
@@ -22835,7 +22813,7 @@
       "L-PSYNK1E",
       "L-PSYUDZ",
       "L-PSYXHUE",
-      "L-PSYXQUEZH'",
+      "L-PSYKHUEZH",
       "L-PSYZHAPE",
       "L-PSYZHY",
       "L-VERIFIED-00191",
@@ -22864,12 +22842,9 @@
       "L-VERIFIED-02691",
       "L-PSH1ANTE",
       "L-SHCHHELYKUEE",
-      "CEFR-YONLER-ИЩХЪЭРЭ",
-      "CEFR-YONLER-ИПЩЭ",
-      "CEFR-YONLER-КЪУЭКӀЫПӀЭ",
-      "CEFR-YONLER-КЪУХЬЭПӀЭ",
-      "CEFR-YONLER-ПСЫ",
-      "CEFR-DUYGULAR-ПСЫХУЭЛӀЭ",
+      "L-ISHCHKHERE-2",
+      "L-IPSHCHE-2",
+      "L-PSY-2",
       "L-PK-ELHEY",
       "L-KEYDEPSYN",
       "L-SHYNDEBZIY",
@@ -23665,7 +23640,6 @@
       "L-DADEBASH",
       "L-SHCH-AKUEEBASH",
       "L-SHCH-AKHUEGHEZHAP-E",
-      "CEFR-ELSANATLARI-ЩӀАКӀУЭ",
       "L-SHCH-AK-UEDAME",
       "L-SHCH-AKUEAGHE",
       "L-AUTO-01198",
@@ -23777,7 +23751,6 @@
       "L-SHCHKHUANT-E-F-YTS-AFE",
       "L-SHCHKHUE-F-YTS-AFE",
       "L-COLOR-BLUE",
-      "CEFR-RENKLER-ЩХЪУАНТӀЭ",
       "L-DETKHUN",
       "L-KEYDETKHUEN",
       "L-ZEXEZESHCHKHUEN",
@@ -24307,7 +24280,7 @@
     "_source": "roots.json",
     "lexemeIds": [
       "L-SETENEY",
-      "CEFR-MITOLOJI-СЭТЭНЕЙ"
+      "L-SETENEY-2"
     ],
     "productivity": {
       "totalLexemes": 1,
@@ -24886,7 +24859,7 @@
       "L-ZEKHHESHAN",
       "L-SHEXU",
       "L-UZYNSHAGHE",
-      "L-SHECHKQYTEX'EN",
+      "L-SHECH-KEYTEHEN",
       "L-LYUZ",
       "L-AKHSHE",
       "L-SHECH",
@@ -26376,7 +26349,7 @@
     "lexemeIds": [
       "L-SHCH-ALEGHUE",
       "L-SHCH-ALEGHUE-2",
-      "L-SHCHIA_2"
+      "L-SHCH-ALEGHUE-3"
     ],
     "productivity": {
       "totalLexemes": 1,
@@ -27008,7 +26981,7 @@
     "id": "WF-SHHA",
     "_source": "roots.json",
     "lexemeIds": [
-      "CEFR-VUCUT-ЩХЬЭЦ",
+      "L-SHCHHETS",
       "L-SHCHHE",
       "L-SHCHHEBAPKHE",
       "L-SHCHHEBGHU",
@@ -27185,9 +27158,9 @@
       "L-AUTO-01673",
       "L-AUTO-01674",
       "L-AUTO-01675",
-      "L-BGYSHCHX'E",
+      "L-BGYSHCHHE",
       "L-BLYSHCHE",
-      "L-BZH'YNYSHCHX'E",
+      "L-BZHYNYSHCHHE",
       "L-PASHCHHE",
       "L-KEYSHCHEGHEZHAGHEU",
       "L-DAMYGHE",
@@ -27345,7 +27318,7 @@
       "L-DAME",
       "L-EXTRA-00007",
       "L-GHUABZHE",
-      "L-GHUEGUSHCHX'E",
+      "L-GHUEGUSHCHHE",
       "L-KBD-00003",
       "L-KBD-00004",
       "L-KBD-00067",
@@ -27578,11 +27551,11 @@
       "L-KQYCHEN",
       "L-KUPXHE",
       "L-KYTS1E",
-      "L-NAP1ASHCHX'E",
-      "L-NASHCHX'E",
+      "L-NAP-ASHCHHE",
+      "L-NASHCHHE",
       "L-PSHCHYKHESHCH",
-      "L-SHCHX'EUZ",
-      "L-SHCHX'EZHEGHUEN",
+      "L-SHCHHEUZ",
+      "L-SHCHHEZHEGHUEN",
       "L-SHHXHE-BARINE",
       "L-SHHXHE-BZHYGHE",
       "L-SHHXHE-GHUM",
@@ -27729,7 +27702,7 @@
       "L-VERIFIED-02668",
       "L-WERAM",
       "L-ZHEGU",
-      "CEFR-ELSANATLARI-ЩХЬЭТЕПХЪУ",
+      "L-SHCHHETEPKHUE-2",
       "L-ZEXE-EZEXEPKHUE",
       "L-KEYGUEK-YN",
       "L-XUSHCHHEN",
@@ -28962,7 +28935,7 @@
     "id": "WF-SHYSH",
     "_source": "roots.json",
     "lexemeIds": [
-      "L-SHCHYSX'",
+      "L-SHCHYSH",
       "L-SHCHYSHYRABGHU",
       "L-SHCHYSHYNYGHENSHE",
       "L-SHCHYSH-KBD",
@@ -29032,10 +29005,10 @@
     "notes": "Otomatik onarıldı (lexemes.json referansı)",
     "_source": "word_families.json",
     "lexemeIds": [
-      "L-VERIFIED-жьэгъуэшхэн",
-      "L-VERIFIED-жьэдэлъын",
-      "L-VERIFIED-жьэдэплъыхьын",
-      "L-VERIFIED-жьэдэпхэн"
+      "L-ZHEGHUESHXEN",
+      "L-ZHEDELHYN",
+      "L-ZHEDEPLHYHYN",
+      "L-ZHEDEPXEN"
     ],
     "productivity": {
       "totalLexemes": 4,
@@ -29073,7 +29046,7 @@
     "notes": "Otomatik onarıldı (lexemes.json referansı)",
     "_source": "word_families.json",
     "lexemeIds": [
-      "L-VERIFIED-жьгъыжьгъыжьгъ"
+      "L-ZHGHYZHGHYZHGH"
     ],
     "productivity": {
       "totalLexemes": 1,
@@ -29808,7 +29781,7 @@
     "notes": "Otomatik onarıldı (lexemes.json referansı)",
     "_source": "word_families.json",
     "lexemeIds": [
-      "L-VERIFIED-зэдегупсысын"
+      "L-ZEDEGUPSYSYN"
     ],
     "productivity": {
       "totalLexemes": 1,
@@ -29846,7 +29819,7 @@
     "notes": "Otomatik onarıldı (lexemes.json referansı)",
     "_source": "word_families.json",
     "lexemeIds": [
-      "L-VERIFIED-ехьэулеилӀэн"
+      "L-EHEULEIL-EN"
     ],
     "productivity": {
       "totalLexemes": 1,
@@ -30151,11 +30124,9 @@
       "L-TXYLHDELHHE",
       "L-TXYLHTEDZEN",
       "L-TXYLHYMP-EXEK",
-      "CEFR-OKUL-ТХЫЛЪ",
-      "CEFR-OKUL-ТЕТРАД",
-      "CEFR-OKUL-КЪЭРЭНДАЩ",
-      "CEFR-OKUL-ЕГЪЭДЖАКӀУ",
-      "CEFR-OKUL-ЕДЖАКӀУЭ",
+      "L-TXYLH",
+      "L-TETRAD-2",
+      "L-KEERENDASHCH-2",
       "L-TXYLHE",
       "L-AUTO-01579",
       "L-AUTO-01580",
@@ -31203,12 +31174,12 @@
       "L-UEREDZHY-AK-UE",
       "L-VERIFIED-01099",
       "L-KBD-04746",
-      "LEX-УЭРЭДЫЖЬ",
-      "LEX-УЭРЭДЖЫӀЭГ",
+      "L-UEREDYZH",
+      "L-UEREDZHY-EGUP",
       "L-UEREDZHY-EK-UE",
-      "LEX-УЭРЭДБЗУ",
-      "LEX-УЭРЭДУС",
-      "LEX-УЭРЭДЫПКЪ"
+      "L-UEREDBZU",
+      "L-UEREDUS",
+      "L-UEREDYPKE"
     ],
     "productivity": {
       "totalLexemes": 7,
@@ -31272,7 +31243,7 @@
       "L-KBD-04514",
       "L-KBD-04515",
       "L-KBD-04748",
-      "CEFR-DOGA-УЭС",
+      "L-UES-2",
       "L-UESUDE",
       "L-UESKURIY",
       "L-UELBANALE",
@@ -31300,7 +31271,7 @@
       "L-UESHXYSHXUE",
       "L-XUESHXEN",
       "L-KBD-02436",
-      "CEFR-DOGA-УЭШХ",
+      "L-UESHX-2",
       "L-UESHXYPS",
       "L-AUTO-01051"
     ],
@@ -31642,7 +31613,6 @@
     "_source": "word_families.json",
     "lexemeIds": [
       "L-UN",
-      "HUV2-IУНКӀАХУЭ",
       "L-GHEUNEN",
       "L-ZERYGHEUNEN",
       "L-KEYDEUN"
@@ -31984,7 +31954,7 @@
     "_source": "roots.json",
     "lexemeIds": [
       "L-UVYP-E",
-      "L-UVY_1"
+      "L-UVYP-E-2"
     ],
     "productivity": {
       "totalLexemes": 1,
@@ -32140,9 +32110,9 @@
     "_source": "word_families.json",
     "lexemeIds": [
       "L-UZY-ADY",
-      "CEFR-SELAMLASMA-КЪЕБЛАГЪЭ",
-      "CEFR-SELAMLASMA-УЗЫНШЭУ-УП",
-      "CEFR-SELAMLASMA-УПСЭУ",
+      "L-KEEBLAGHE-KBD",
+      "L-UZYNSHEU-UPSEU",
+      "L-UPSEU-2",
       "L-UZYSHXUE",
       "L-UZYLHEMY-ESYN",
       "L-UZYXUIMYT",
@@ -32214,7 +32184,7 @@
       "L-KBD-00489",
       "L-VAGHEDETKHU",
       "L-HE-UPEZETEDZE",
-      "CEFR-DOGA-ВАГЪУЭ",
+      "L-VAGHUE-2",
       "L-VAGHUESOKUERE",
       "L-AUTO-00461",
       "L-AUTO-00462"
@@ -32460,7 +32430,7 @@
       "L-YEDZHE",
       "L-TXAK1UE",
       "L-USAK1UE",
-      "L-LAZH'AK1UE",
+      "L-LAZHAK-UE",
       "L-EUEN",
       "L-EGHELEYAUE",
       "L-EGHELEYA",
@@ -33762,7 +33732,7 @@
     "_source": "roots.json",
     "lexemeIds": [
       "L-ZHE",
-      "L-ZHYZH'EU",
+      "L-ZHYZHEU",
       "L-ZHYZHE",
       "L-KEEDZHEN",
       "L-CHYZHEU",
@@ -33935,9 +33905,9 @@
       "L-ZHEMYSH",
       "L-VERIFIED-00731",
       "L-PROMPT-00048",
-      "CEFR-HAYVANLAR-ШЫ",
-      "CEFR-HAYVANLAR-МЭЛ",
-      "CEFR-HAYVANLAR-ЖЭМ",
+      "L-SHY-2",
+      "L-MEL-2",
+      "L-ZHEM-2",
       "L-ZHEMESHCH",
       "L-ZHEMYSHCH-E",
       "L-ZHEMYZHYGU",
@@ -34425,12 +34395,12 @@
     "_source": "roots.json",
     "lexemeIds": [
       "L-ZHY",
-      "L-BZHYH'E",
+      "L-BZHYHE",
       "L-BZHYN",
       "L-BZHYNYXHU",
       "L-ZHA",
       "L-ZHAUE",
-      "L-GHEZH'YN",
+      "L-GHEZHYN",
       "L-ETYN",
       "L-PCHEDYZHYM",
       "L-TYZHYN",
@@ -34956,10 +34926,9 @@
     "_source": "word_families.json",
     "lexemeIds": [
       "L-ZY",
-      "CEFR-ZAMAN-ЗЫ",
-      "CEFR-ZAMAN-ТӀУ",
-      "CEFR-ZAMAN-ГЪУБЖ",
-      "CEFR-ZAMAN-БЭРЭЖЬЕЙ",
+      "L-ZY-2",
+      "L-GHUBZH",
+      "L-BEREZHEY-2",
       "L-ZYGHE"
     ],
     "productivity": {
@@ -35226,7 +35195,7 @@
     "morphemeIds": [],
     "notes": "щы (üç/3) sayı sıfatı ailesi. R-SHCHY audit. FINAL. ДЫГЭБЗЭ БЖЫГЪЭЦӀЭ.",
     "lexemeIds": [
-      "CEFR-ZAMAN-ЩЫ"
+      "L-SHCHY-2"
     ],
     "productivity": {
       "totalLexemes": 1,
@@ -35553,7 +35522,7 @@
     "morphemeIds": [],
     "notes": "къуэ oğul/erkek kardeş ailesi. R-KWE.",
     "lexemeIds": [
-      "CEFR-AILE-КЪУЭШ",
+      "L-KUEESH",
       "L-KUEEPKHU-SHYPKHU",
       "L-QUE-SON",
       "L-QUE",
@@ -37650,7 +37619,7 @@
     "morphemeIds": [],
     "notes": "блы = yedi (7)",
     "lexemeIds": [
-      "CEFR-ZAMAN-БЛЫЩХЬЭ",
+      "L-BLYSHCHHE",
       "L-BLYNEUBGHU",
       "L-BLYNE-UL"
     ],
@@ -40968,7 +40937,7 @@
       "R-KHIN"
     ],
     "lexemeIds": [
-      "L-X'YN",
+      "L-HYN",
       "L-DEHYN"
     ],
     "primaryMeaning": "tasimak (хьын)",
@@ -41203,7 +41172,7 @@
       "L-SHCH1EXYN",
       "L-SHCH1EYN",
       "L-KQESHCH1EN",
-      "L-X'ESHCH1E",
+      "L-HESHCH-E",
       "L-SHCH1EBLE",
       "L-MASHCH1E",
       "L-SHCH1EX",
@@ -41343,10 +41312,10 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-NEXQYZH'",
+      "L-NEKHYZH",
       "L-NEKHYZHXER",
       "L-NEKHYZHDYDDE",
-      "L-NEKH_2"
+      "L-NEKHYZH-2"
     ],
     "notes": "null ailesi (нэхъыжь).",
     "productivity": {
@@ -44453,8 +44422,8 @@
       "L-VERIFIED-00949",
       "L-KBD-03440",
       "L-KBD-03467",
-      "CEFR-YEMEK-ЛЫБЖЬЭ",
-      "CEFR-YEMEK-ЛЭПС",
+      "L-LYBZHE",
+      "L-LEPS-2",
       "L-GHELYN",
       "L-XEL-EN",
       "L-GHEL-EN",
@@ -50842,7 +50811,7 @@
       "L-KBD-00687",
       "L-KBD-00688",
       "L-KBD-03645",
-      "CEFR-RENKLER-ГЪУЭЖЬ",
+      "L-GHUEZH",
       "L-GHUEZHUZ",
       "L-GHUEZHYFEU",
       "L-GHUEZHYBZE",
@@ -60895,7 +60864,7 @@
     "morphemeIds": [],
     "lexemeIds": [
       "L-ZHYLEDES",
-      "L-ZHYL_1"
+      "L-ZHYLEDES-2"
     ],
     "notes": "null ailesi (жылэдэс).",
     "productivity": {
@@ -67876,7 +67845,7 @@
     "morphemeIds": [],
     "lexemeIds": [
       "L-SHCH-Y-AGHE",
-      "L-SHCHIY_2"
+      "L-SHCH-Y-AGHE-2"
     ],
     "notes": "null ailesi (щӀыӀагъэ).",
     "productivity": {
@@ -80095,7 +80064,7 @@
     "morphemeIds": [],
     "lexemeIds": [
       "L-ZHYGXADE",
-      "L-ZHYG_1"
+      "L-ZHYGXADE-2"
     ],
     "notes": "null ailesi (жыгхадэ).",
     "productivity": {
@@ -81050,7 +81019,7 @@
     "morphemeIds": [],
     "lexemeIds": [
       "L-MASHCH-AGHE",
-      "L-MASHCH_1"
+      "L-MASHCH-AGHE-2"
     ],
     "notes": "null ailesi (мащӀагъэ).",
     "productivity": {
@@ -84109,7 +84078,7 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "plant-0048"
+      "L-SHHAFIT"
     ],
     "notes": "Yabani armut ailesi (шъхьафи).",
     "productivity": {
@@ -84155,7 +84124,7 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-NEKH_3"
+      "L-NEKHYSHCH-E"
     ],
     "notes": "null ailesi (нэхъыщӀэ).",
     "productivity": {
@@ -84251,7 +84220,7 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-КЪАНДЖ-3063"
+      "L-KEANDZH"
     ],
     "notes": "saksagan ailesi (къандж).",
     "productivity": {

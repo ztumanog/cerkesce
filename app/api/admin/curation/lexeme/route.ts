@@ -1,3 +1,4 @@
+import { verifyCurationAccess } from '@/lib/security/curationGuard';
 import { NextResponse } from 'next/server';
 import fs from 'fs';
 import path from 'path';
@@ -10,7 +11,10 @@ function getAuditLogPath() {
   return path.join(process.cwd(), 'public', 'data', 'linguistic', 'audit_log.jsonl');
 }
 
-export async function GET() {
+export async function GET(req: Request) {
+  const denied = verifyCurationAccess(req);
+  if (denied) return denied;
+
   try {
     const filePath = getLexemesPath();
     if (!fs.existsSync(filePath)) {
@@ -31,6 +35,9 @@ export async function GET() {
 }
 
 export async function POST(req: Request) {
+  const denied = verifyCurationAccess(req);
+  if (denied) return denied;
+
   try {
     const body = await req.json();
     const { lexemeId, changes, confirm } = body;
@@ -165,3 +172,4 @@ export async function POST(req: Request) {
     return NextResponse.json({ error: error.message || 'Sunucu hatası' }, { status: 500 });
   }
 }
+

@@ -1,8 +1,12 @@
+import { verifyCurationAccess } from '@/lib/security/curationGuard';
 import { NextResponse } from 'next/server';
 import fs from 'fs';
 import path from 'path';
 
 export async function POST(req: Request) {
+  const denied = verifyCurationAccess(req);
+  if (denied) return denied;
+
   try {
     const body = await req.json();
     const { form, ipa, partOfSpeech, conceptId, wordFamilyId, rootIds, notes } = body;

@@ -1,4 +1,5 @@
-﻿import { NextRequest, NextResponse } from "next/server";
+import { verifyCurationAccess } from '@/lib/security/curationGuard';
+import { NextRequest, NextResponse } from "next/server";
 import fs from "node:fs";
 import path from "node:path";
 import { createHash, randomUUID, timingSafeEqual } from "node:crypto";
@@ -90,6 +91,9 @@ function read(kind: keyof typeof filenames) {
 }
 
 export async function GET(req: NextRequest) {
+  const guardDenied = verifyCurationAccess(req);
+  if (guardDenied) return guardDenied;
+
   const denied = authorize(req);
   if (denied) return denied;
 
@@ -113,6 +117,9 @@ export async function GET(req: NextRequest) {
 }
 
 export async function POST(req: NextRequest) {
+  const guardDenied = verifyCurationAccess(req);
+  if (guardDenied) return guardDenied;
+
   const denied = authorize(req);
   if (denied) return denied;
 

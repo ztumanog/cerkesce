@@ -1,3 +1,4 @@
+import { verifyCurationAccess } from '@/lib/security/curationGuard';
 import { NextRequest, NextResponse } from "next/server";
 import fs from "fs";
 import path from "path";
@@ -18,6 +19,9 @@ const editable = new Set([
 ]);
 
 export async function POST(req: NextRequest) {
+  const denied = verifyCurationAccess(req);
+  if (denied) return denied;
+
   const origin = req.headers.get("origin");
   if (origin && origin !== req.nextUrl.origin) {
     return NextResponse.json({ success: false, error: "Farkli kaynaktan kayit engellendi." }, { status: 403 });
