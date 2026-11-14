@@ -1,19 +1,12 @@
 /**
  * DictionaryProvider - Sozluk Veri Tabani & Meta Indeks Entegrasyonu
  * ADR-0056: Public Data Directory Path Binding (public/data/dictionaries.json)
- *
- * GERCEK YAPI (tespit edildi 2026-11-10):
- * - public/data/dictionaries.json = 35 metadata listesi, KAYIT DEGIL.
- *   [{ file, title, dialect, sourceLanguage, targetLanguage, total_words }]
- * - Her sozluk dosyasi: { title, id, words, fromLang, toLang, format }
- * - words: LISTE DEGIL, anahtari kelimenin kendisi olan DICT:
- *     words: { "abanmak": { spelling, definitions, full_definition_in_html, ... } }
- * - Her kayit: { spelling, definitions: [{ meaning, examples }], full_definition_in_html,
- *     cognates, redirect, derivation, type, synonyms }
- * - ISTISNA: 34.Kbd-Ru&En&Tr_Sukunov.json liste yapisinda, dict degil.
+ * ADR-ROOT-001: Canonical Lexeme & POS Resolution
  */
 import dictionariesMeta from '../../../public/data/dictionaries.json';
 import { normalizePalochka } from './utils/textUtils';
+import { normalizePartOfSpeech } from '../grammar';
+import { Lexeme, resolveLexemeTurkishMeaning } from '../linguistic/Lexeme';
 
 export interface DictionaryEntry {
   lemma: string;
@@ -24,6 +17,9 @@ export interface DictionaryEntry {
   sourceFile?: string;
   sourceTitle?: string;
   dialect?: string;
+  lexemeId?: string;
+  wordFamilyId?: string;
+  rootIds?: string[];
   /** Ham kaydin definitions dizisi */
   definitions?: { meaning: string; examples?: string[] }[];
   /** HTML tanim (definitions bos ise anlam buradan alinir) */
@@ -67,14 +63,9 @@ function stripHtml(html: string): string {
 
 /**
  * Ham kaydi DictionaryEntry'ye cevirir.
- * @param key  words dict'indeki anahtar (= kelimenin kendisi, yedek lemma)
- * @param raw  { spelling, definitions, full_definition_in_html, type, ... }
  */
 export function normalizeWordEntry(raw: any, key?: string, meta?: DictionaryMeta): DictionaryEntry | null {
   if (!raw || typeof raw !== 'object') return null;
-  // OZEL SEMA - Sukunov (34.Kbd-Ru&En&Tr_Sukunov.json):
-  // { kabardeyce, rusca, ingilizce, turkce, concept, concept_raw }
-  // spelling / definitions yok, lemma = kabardeyce
   if (raw.kabardeyce) {
     const lemmaS = String(raw.kabardeyce).trim();
     const anlamParcalari = [
@@ -107,7 +98,6 @@ export function normalizeWordEntry(raw: any, key?: string, meta?: DictionaryMeta
         .filter((d: { meaning: string }) => d.meaning.trim() !== '')
     : [];
 
-  // Anlam: once definitions, bos ise HTML'den sokulmus metin
   const meaningTr =
     defs.map((d) => d.meaning).join('; ') ||
     stripHtml(raw.full_definition_in_html || '');
@@ -129,7 +119,6 @@ export function normalizeWordEntry(raw: any, key?: string, meta?: DictionaryMeta
 /** Bir sozluk dosyasinin ham JSON'unu DictionaryEntry[]'ye cevirir. */
 export function parseDictionaryFile(data: any, meta?: DictionaryMeta): DictionaryEntry[] {
   if (!data) return [];
-  // Istisna: Sukunov gibi liste yapisindaki dosyalar
   if (Array.isArray(data)) {
     const out: DictionaryEntry[] = [];
     for (const raw of data) {
@@ -138,7 +127,6 @@ export function parseDictionaryFile(data: any, meta?: DictionaryMeta): Dictionar
     }
     return out;
   }
-  // Normal durum: data.words = { "kelime": { ... } } dict'i
   const words = data.words;
   if (!words || typeof words !== 'object') return [];
   const out: DictionaryEntry[] = [];
@@ -151,6 +139,7 @@ export function parseDictionaryFile(data: any, meta?: DictionaryMeta): Dictionar
 
 export class DictionaryProvider {
   private dictionary: DictionaryEntry[];
+  private lexemeIndex = new Map<string, DictionaryEntry>();
   private loadedFiles = new Set<string>();
 
   constructor(customDictionary?: DictionaryEntry[]) {
@@ -166,7 +155,41 @@ export class DictionaryProvider {
   }
 
   size(): number {
-    return this.dictionary.length;
+    return this.dictionary.length + this.lexemeIndex.size;
+  }
+
+  /**
+   * ADR-ROOT-001 uyumlu lexemes.json kayitlarini (translations.tr ve kanonik partOfSpeech)
+   * O(1) arama indeksine yukler.
+   */
+  loadLexemes(lexemes: Partial<Lexeme>[]): number {
+    let added = 0;
+    for (const item of lexemes) {
+      if (!item || !item.form) continue;
+      const normalizedForm = normalizePalochka(item.form).toLowerCase();
+      if (!normalizedForm) continue;
+
+      const meaningTr = resolveLexemeTurkishMeaning(item);
+      const canonicalPos = normalizePartOfSpeech(item.partOfSpeech);
+      const entry: DictionaryEntry = {
+        lemma: item.form,
+        root: item.form,
+        pos: canonicalPos,
+        meaningTr,
+        dialect: (item as any).dialect || (item as any).dialects?.[0],
+        lexemeId: item.id,
+        wordFamilyId: item.wordFamilyId,
+        rootIds: item.rootIds,
+        sourceFile: 'linguistic/lexemes.json',
+      };
+
+      const existing = this.lexemeIndex.get(normalizedForm);
+      if (!existing || (!existing.meaningTr && meaningTr)) {
+        this.lexemeIndex.set(normalizedForm, entry);
+        added++;
+      }
+    }
+    return added;
   }
 
   async loadDictionary(
@@ -206,10 +229,14 @@ export class DictionaryProvider {
         normalizePalochka(e.lemma || '').toLowerCase() === normalized
     );
     if (exactMatch) return exactMatch;
+
     const variationMatch = this.dictionary.find(
       (e) => e.variations && e.variations.some((v) => normalizePalochka(v).toLowerCase() === normalized)
     );
     if (variationMatch) return variationMatch;
-    return null;
+
+    return this.lexemeIndex.get(normalized) || null;
   }
 }
+
+

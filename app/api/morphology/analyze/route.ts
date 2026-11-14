@@ -1,15 +1,18 @@
-﻿// app/api/morphology/analyze/route.ts - GÜVENLİ SYNTAX UYUMU
 import { NextRequest, NextResponse } from 'next/server';
 import fs from 'node:fs';
 import path from 'node:path';
 import { MorphologyAnalyzer } from '../../../../src/domain/morphology/MorphologyAnalyzer';
 import { DictionaryProvider, DICTIONARIES_META } from '../../../../src/domain/morphology/DictionaryProvider';
 import { SyntaxAnalyzer } from '../../../../src/domain/morphology/SyntaxAnalyzer';
+import { Lexeme } from '../../../../src/domain/linguistic/Lexeme';
+import lexemesData from '../../../../public/data/linguistic/lexemes.json';
 
 export const runtime = 'nodejs';
 export const dynamic = 'force-dynamic';
 
 const provider = new DictionaryProvider();
+provider.loadLexemes(lexemesData as Partial<Lexeme>[]);
+
 const analyzer = new MorphologyAnalyzer(provider);
 const syntaxAnalyzer = new SyntaxAnalyzer();
 
@@ -60,7 +63,7 @@ export async function POST(req: NextRequest) {
         const wordTokens = word.split(/\s+/).filter(Boolean);
         syntaxData = {
           structurePattern: syntaxData?.structurePattern || 'ERG_SUBJ + OBJ + VERB',
-          tokens: syntaxData?.tokens || wordTokens.map(w => ({ token: w, pos: 'UNKNOWN' }))
+          tokens: syntaxData?.tokens || wordTokens.map((w) => ({ token: w, pos: 'UNKNOWN' })),
         };
       }
     }
@@ -69,8 +72,14 @@ export async function POST(req: NextRequest) {
       word,
       isMultiWord,
       root: extractedRoot,
+      morphemes: result?.morphemes || [],
+      prefixCount: result?.prefixCount ?? 0,
+      suffixCount: result?.suffixCount ?? 0,
+      lemmaPos: result?.source ? result.source.toUpperCase() : 'NOUN/LEMMA',
+      confidence: result?.confidence ?? 0.95,
+      dictionaryEntry: result?.dictionaryEntry ?? null,
       syntax: syntaxData,
-      dictionaryFile: dictionaryFile || null,
+      dictionaryFile: dictionaryFile || 'public/data/linguistic/lexemes.json',
       dictionarySize: provider.size(),
       result,
     });

@@ -1,4 +1,4 @@
-﻿/**
+/**
  * MorphologyAnalyzer - Çerkesçe Çekirdek Morfoloji Analiz Motoru
  * ADR-0063: Dynamic Prefix & Suffix Counter Resolution
  */
@@ -71,8 +71,32 @@ export class MorphologyAnalyzer {
   }
 
   private calculateCounts(morphemes: MorphemeDetail[] = []): { prefixCount: number; suffixCount: number } {
-    const prefixTypes = ['possessive', 'applicative', 'causative', 'reflexive', 'person', 'prefix'];
-    const suffixTypes = ['case', 'plural', 'derivation', 'connective', 'suffix', 'verb_suffix'];
+    const prefixTypes = [
+      'possessive',
+      'applicative',
+      'causative',
+      'reflexive',
+      'reciprocal',
+      'person',
+      'locative',
+      'directional',
+      'prefix',
+    ];
+    const suffixTypes = [
+      'case',
+      'plural',
+      'derivation',
+      'connective',
+      'suffix',
+      'verb_suffix',
+      'infinitive',
+      'thematic',
+      'tense',
+      'future_tense',
+      'negative',
+      'predicative',
+      'modal',
+    ];
 
     let prefixCount = 0;
     let suffixCount = 0;
@@ -108,17 +132,52 @@ export class MorphologyAnalyzer {
     // 1. Fiil Ön-ek ve Sonek Ayrıştırması
     const prefixRes = this.verbPrefixDecompiler.parse(input);
     const verbSuffRes = this.verbSuffixDecompiler.parse(prefixRes.stem);
-    const isVerbCandidate = (verbSuffRes.suffixes && verbSuffRes.suffixes.length > 0) || (prefixRes.prefixes && prefixRes.prefixes.length > 0);
+    const fullDictEntry = this.safeFindEntry(input);
+    const isKnownVerbInDict = fullDictEntry?.pos?.toLowerCase() === 'verb';
+    const isVerbCandidate =
+      isKnownVerbInDict ||
+      (verbSuffRes.suffixes && verbSuffRes.suffixes.length > 0) ||
+      (prefixRes.prefixes && prefixRes.prefixes.length > 0);
 
     if (isVerbCandidate) {
-      const rootCandidate = verbSuffRes.stem;
-      const dictEntry = this.safeFindEntry(rootCandidate) || this.safeFindEntry(input);
-      const effectiveRoot = dictEntry?.root || dictEntry?.lemma || rootCandidate;
+      const stemCandidate = verbSuffRes.stem;
+      const stemDictEntry = this.safeFindEntry(stemCandidate);
+      const dictEntry = stemDictEntry || fullDictEntry;
+
+      // Mastar (-н) durumlarında tema ünlüsünü (-э / -ы) kök ünsüzünden ayır (örn: тепӀэн -> те- + пӀ + -э + -н)
+      const hasInfinitive = verbSuffRes.suffixes.some((s) => s.type === 'infinitive');
+      let rootMorpheme = stemCandidate;
+      let thematicSuffix: MorphemeDetail | null = null;
+
+      if (hasInfinitive && (stemCandidate.endsWith('э') || stemCandidate.endsWith('ы')) && stemCandidate.length >= 2) {
+        const vowel = stemCandidate.slice(-1);
+        rootMorpheme = stemCandidate.slice(0, -1);
+        thematicSuffix = {
+          morpheme: vowel,
+          type: 'thematic',
+          glossTr: vowel === 'э' ? 'Geçişli / Tema Ünlüsü (-э)' : 'Geçişsiz / Tema Ünlüsü (-ы)',
+        };
+      }
+
+      const effectiveRoot = stemDictEntry?.root || (prefixRes.prefixes.length > 0 ? rootMorpheme : stemCandidate);
 
       const morphemes: MorphemeDetail[] = [
-        ...prefixRes.prefixes.map((p: any) => ({ morpheme: p.morpheme, type: p.type, glossTr: p.glossTr })),
-        { morpheme: rootCandidate, type: 'root', meaningTr: dictEntry?.meaningTr },
-        ...verbSuffRes.suffixes.map((s: any) => ({ morpheme: s.suffix, type: s.type, glossTr: s.meaningTr })),
+        ...prefixRes.prefixes.map((p: any) => ({
+          morpheme: p.morpheme,
+          type: p.type,
+          glossTr: p.glossTr,
+        })),
+        {
+          morpheme: rootMorpheme,
+          type: 'root',
+          meaningTr: dictEntry?.meaningTr || fullDictEntry?.meaningTr,
+        },
+        ...(thematicSuffix ? [thematicSuffix] : []),
+        ...verbSuffRes.suffixes.map((s: any) => ({
+          morpheme: s.morpheme || s.suffix,
+          type: s.type,
+          glossTr: s.glossTr || s.meaningTr,
+        })),
       ];
 
       const counts = this.calculateCounts(morphemes);
@@ -145,15 +204,23 @@ export class MorphologyAnalyzer {
     const compoundRes = this.compoundDecompiler.parse(caseRes.stem);
 
     if (compoundRes.isCompound) {
-      const dictEntry = this.safeFindEntry(caseRes.stem) || this.safeFindEntry(input);
+      const dictEntry = this.safeFindEntry(caseRes.stem) || fullDictEntry;
       const morphemes: MorphemeDetail[] = [];
 
       if (possessiveRes.possessive) {
-        morphemes.push({ morpheme: possessiveRes.possessive.prefix, type: 'possessive', glossTr: possessiveRes.possessive.glossTr });
+        morphemes.push({
+          morpheme: possessiveRes.possessive.prefix,
+          type: 'possessive',
+          glossTr: possessiveRes.possessive.glossTr,
+        });
       }
       morphemes.push(...compoundRes.morphemes);
       if (possessiveRes.plural) {
-        morphemes.push({ morpheme: possessiveRes.plural.suffix, type: 'plural', glossTr: possessiveRes.plural.glossTr });
+        morphemes.push({
+          morpheme: possessiveRes.plural.suffix,
+          type: 'plural',
+          glossTr: possessiveRes.plural.glossTr,
+        });
       } else if (caseRes.case !== 'bare') {
         morphemes.push({ morpheme: caseRes.suffix, type: 'case', glossTr: caseRes.case });
       }
@@ -178,20 +245,28 @@ export class MorphologyAnalyzer {
     // 4. Standart İsim Büküm ve Türetim Ayrıştırması
     const derivRes = this.derivationDecompiler.parse(caseRes.stem);
     const nounRootCandidate = derivRes.stem;
-    const dictEntry = this.safeFindEntry(nounRootCandidate) || this.safeFindEntry(input);
+    const dictEntry = this.safeFindEntry(nounRootCandidate) || fullDictEntry;
     const effectiveRoot = dictEntry?.root || dictEntry?.lemma || nounRootCandidate;
 
     const morphemes: MorphemeDetail[] = [];
     if (possessiveRes.possessive) {
-      morphemes.push({ morpheme: possessiveRes.possessive.prefix, type: 'possessive', glossTr: possessiveRes.possessive.glossTr });
+      morphemes.push({
+        morpheme: possessiveRes.possessive.prefix,
+        type: 'possessive',
+        glossTr: possessiveRes.possessive.glossTr,
+      });
     }
     morphemes.push({ morpheme: nounRootCandidate, type: 'root', meaningTr: dictEntry?.meaningTr });
-    
+
     if (derivRes.suffix) {
       morphemes.push({ morpheme: derivRes.suffix, type: 'derivation', glossTr: derivRes.meaningTr });
     }
     if (possessiveRes.plural) {
-      morphemes.push({ morpheme: possessiveRes.plural.suffix, type: 'plural', glossTr: possessiveRes.plural.glossTr });
+      morphemes.push({
+        morpheme: possessiveRes.plural.suffix,
+        type: 'plural',
+        glossTr: possessiveRes.plural.glossTr,
+      });
     } else if (caseRes.case !== 'bare') {
       morphemes.push({ morpheme: caseRes.suffix, type: 'case', glossTr: caseRes.case });
     }
@@ -214,3 +289,5 @@ export class MorphologyAnalyzer {
     };
   }
 }
+
+

@@ -1,8 +1,14 @@
-﻿import { NextResponse } from 'next/server';
+import { NextResponse } from 'next/server';
 import { MorphologyAnalyzer } from '@/domain/morphology/MorphologyAnalyzer';
 import { PhraseAnalyzer } from '@/domain/morphology/PhraseAnalyzer';
+import { DictionaryProvider } from '@/domain/morphology/DictionaryProvider';
+import { Lexeme } from '@/domain/linguistic/Lexeme';
+import lexemesData from '../../../../../public/data/linguistic/lexemes.json';
 
-const analyzer = new MorphologyAnalyzer();
+const dictionaryProvider = new DictionaryProvider();
+dictionaryProvider.loadLexemes(lexemesData as Partial<Lexeme>[]);
+
+const analyzer = new MorphologyAnalyzer(dictionaryProvider);
 const phraseAnalyzer = new PhraseAnalyzer(analyzer);
 
 export async function POST(request: Request) {

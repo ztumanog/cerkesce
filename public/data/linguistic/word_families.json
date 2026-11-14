@@ -880,10 +880,18 @@
       "L-AUTO-01271",
       "L-AUTO-01272",
       "L-AUTO-01273",
-      "L-AUTO-01717"
+      "L-AUTO-01717",
+      "L-I-ET",
+      "L-PY-EGHUENSHE",
+      "L-PY-EGHUEY",
+      "L-ZIGHE-EN",
+      "L-SHCHY-EIN",
+      "L-AUTO-00052",
+      "L-AUTO-00626",
+      "L-AUTO-01124"
     ],
     "productivity": {
-      "totalLexemes": 587,
+      "totalLexemes": 595,
       "corpusFrequency": 0
     }
   },
@@ -935,10 +943,11 @@
       "L-UEXUNYKUEE",
       "L-UEXUNYKUEESHCH-E",
       "L-AUTO-01260",
-      "L-AUTO-01261"
+      "L-AUTO-01261",
+      "L-AUTO-01436"
     ],
     "productivity": {
-      "totalLexemes": 23,
+      "totalLexemes": 24,
       "corpusFrequency": 0
     }
   },
@@ -1144,10 +1153,11 @@
       "L-BELEM-BESHEM",
       "L-MYLAZHE-MYPSHCH-ANT-E",
       "L-AUTO-00405",
-      "L-AUTO-01153"
+      "L-AUTO-01153",
+      "L-AF-EK-A-KBD"
     ],
     "productivity": {
-      "totalLexemes": 199,
+      "totalLexemes": 200,
       "corpusFrequency": 0
     },
     "conceptIds": [
@@ -2051,10 +2061,11 @@
     "notes": "Otomatik onarıldı (lexemes.json referansı)",
     "_source": "word_families.json",
     "lexemeIds": [
-      "L-AU"
+      "L-AU",
+      "L-AU-UEY"
     ],
     "productivity": {
-      "totalLexemes": 1,
+      "totalLexemes": 2,
       "corpusFrequency": 0
     }
   },
@@ -2587,10 +2598,11 @@
       "L-BENEK-E",
       "L-ZEGHEBENYN",
       "L-ZETEBENEN",
-      "L-AUTO-00561"
+      "L-AUTO-00561",
+      "L-ZEBEN"
     ],
     "productivity": {
-      "totalLexemes": 5,
+      "totalLexemes": 6,
       "corpusFrequency": 0
     }
   },
@@ -3165,10 +3177,11 @@
     "lexemeIds": [
       "L-BIY",
       "L-BIYUE",
-      "L-BIIZH"
+      "L-BIIZH",
+      "L-EBIYUE"
     ],
     "productivity": {
-      "totalLexemes": 3,
+      "totalLexemes": 4,
       "corpusFrequency": 0
     }
   },
@@ -3886,10 +3899,11 @@
       "L-LINGVISTIKE",
       "L-DEUSHEN",
       "L-ALYUMIN",
-      "L-BDZEXU"
+      "L-BDZEXU",
+      "L-KEEGHEBZEN"
     ],
     "productivity": {
-      "totalLexemes": 8,
+      "totalLexemes": 9,
       "corpusFrequency": 0
     }
   },
@@ -3995,10 +4009,13 @@
       "L-KBD-01706",
       "L-KBD-03441",
       "L-KBD-03442",
-      "L-ZEPEBZHEUEN"
+      "L-ZEPEBZHEUEN",
+      "L-ZY-EZYBZHEM",
+      "L-BZHEUBZ",
+      "L-BZHELEY"
     ],
     "productivity": {
-      "totalLexemes": 31,
+      "totalLexemes": 34,
       "corpusFrequency": 0
     },
     "conceptIds": [
@@ -4112,10 +4129,13 @@
       "L-KBD-00375",
       "L-BZHYGHERYLAZHE",
       "L-AUTO-00056",
-      "L-AUTO-01297"
+      "L-AUTO-01297",
+      "L-AUTO-01355",
+      "L-AUTO-01381",
+      "L-AUTO-01539"
     ],
     "productivity": {
-      "totalLexemes": 16,
+      "totalLexemes": 19,
       "corpusFrequency": 0
     },
     "conceptIds": [
@@ -4245,10 +4265,12 @@
       "L-TS-YK-U",
       "L-TS-YK-UAGHE",
       "L-TS-YK-U-TS-YK-UU",
-      "L-GHETS-YK-UN"
+      "L-GHETS-YK-UN",
+      "L-AUTO-01262",
+      "L-AUTO-01298"
     ],
     "productivity": {
-      "totalLexemes": 9,
+      "totalLexemes": 11,
       "corpusFrequency": 0
     }
   },
@@ -4915,10 +4937,11 @@
       "L-DE-UN",
       "L-ZESHCH-EGHEDE-UEN",
       "L-TEDE-UK-YN",
-      "L-GHEDE-UENYGHE"
+      "L-GHEDE-UENYGHE",
+      "L-EMYDE-UEN"
     ],
     "productivity": {
-      "totalLexemes": 22,
+      "totalLexemes": 23,
       "corpusFrequency": 0
     },
     "conceptIds": [
@@ -5285,10 +5308,11 @@
       "L-DUNEYKUETEZH",
       "L-DUNEYEPLHYK-E",
       "L-MIROVOZZRENIE",
-      "L-AUTO-01336"
+      "L-AUTO-01336",
+      "L-AUTO-01338"
     ],
     "productivity": {
-      "totalLexemes": 7,
+      "totalLexemes": 8,
       "corpusFrequency": 0
     },
     "conceptIds": [
@@ -5801,10 +5825,11 @@
       "L-AUTO-00534",
       "L-AUTO-00535",
       "L-AUTO-01330",
-      "L-AUTO-01331"
+      "L-AUTO-01331",
+      "L-ZERYDZE"
     ],
     "productivity": {
-      "totalLexemes": 92,
+      "totalLexemes": 93,
       "corpusFrequency": 0
     }
   },
@@ -5844,10 +5869,11 @@
       "L-DZHABERYTELH",
       "L-DZHATE-BDZEZHEY",
       "L-AUTO-00527",
-      "L-DZHA"
+      "L-DZHA",
+      "L-ZEXEDZHA"
     ],
     "productivity": {
-      "totalLexemes": 18,
+      "totalLexemes": 19,
       "corpusFrequency": 0
     }
   },
@@ -5978,10 +6004,11 @@
       "L-DZHEDESHCHYBZHE",
       "L-DZHEDYK-AUE",
       "L-AUTO-00528",
-      "L-AUTO-00529"
+      "L-AUTO-00529",
+      "L-ZEPYRYDZHEDYN"
     ],
     "productivity": {
-      "totalLexemes": 57,
+      "totalLexemes": 58,
       "corpusFrequency": 0
     }
   },
@@ -6199,10 +6226,11 @@
     "lexemeIds": [
       "L-VERIFIED-02161",
       "L-KEE-ELYN",
-      "L-KEEGHE-ELYN"
+      "L-KEEGHE-ELYN",
+      "L-AUTO-00064"
     ],
     "productivity": {
-      "totalLexemes": 3,
+      "totalLexemes": 4,
       "corpusFrequency": 0
     }
   },
@@ -6874,10 +6902,12 @@
       "L-AUTO-01061",
       "L-AUTO-01066",
       "L-AUTO-01067",
-      "L-SHCHAFYKYN-INTRANS"
+      "L-SHCHAFYKYN-INTRANS",
+      "L-MOREGHUEZHYFE",
+      "L-AUTO-01062"
     ],
     "productivity": {
-      "totalLexemes": 187,
+      "totalLexemes": 189,
       "corpusFrequency": 0
     }
   },
@@ -7260,10 +7290,14 @@
       "L-F-ESHCHKHUGHUEY",
       "L-F-ESHCHKHUNYDZHEU",
       "L-AUTO-00682",
-      "L-AUTO-01608"
+      "L-AUTO-01608",
+      "L-F1ESHCHNYGHE",
+      "L-F1ESHCHKHUNYGHE",
+      "L-IF-ESHCHU",
+      "L-AUTO-01595"
     ],
     "productivity": {
-      "totalLexemes": 29,
+      "totalLexemes": 33,
       "corpusFrequency": 0
     },
     "conceptIds": [
@@ -7332,10 +7366,11 @@
       "L-AUTO-01603",
       "L-AUTO-01604",
       "L-AUTO-01605",
-      "L-AUTO-01606"
+      "L-AUTO-01606",
+      "L-F1Y-2"
     ],
     "productivity": {
-      "totalLexemes": 53,
+      "totalLexemes": 54,
       "corpusFrequency": 0
     },
     "conceptIds": [
@@ -7504,10 +7539,12 @@
     "lexemeIds": [
       "L-GAZ",
       "L-GAZET",
-      "L-KBD-05562"
+      "L-KBD-05562",
+      "L-AUTO-01308",
+      "L-AUTO-01309"
     ],
     "productivity": {
-      "totalLexemes": 3,
+      "totalLexemes": 5,
       "corpusFrequency": 0
     }
   },
@@ -7833,10 +7870,11 @@
       "L-KBD-02059",
       "L-GHUSEMYSHCH",
       "L-GHUSEN",
-      "L-MYGHUSENSHE"
+      "L-MYGHUSENSHE",
+      "L-IGHUSEN"
     ],
     "productivity": {
-      "totalLexemes": 38,
+      "totalLexemes": 39,
       "corpusFrequency": 0
     }
   },
@@ -7960,10 +7998,11 @@
       "L-GHUE-KEARE",
       "L-GHUE-F-YTS-AFE",
       "L-AUTO-00030",
-      "L-AUTO-00505"
+      "L-AUTO-00505",
+      "L-SHCH-IGHU-K-E"
     ],
     "productivity": {
-      "totalLexemes": 117,
+      "totalLexemes": 118,
       "corpusFrequency": 0
     },
     "conceptIds": [
@@ -9834,10 +9873,11 @@
       "L-GHYNE-U",
       "L-GHYK-E",
       "L-GHYN-BZHEN",
-      "L-GY"
+      "L-GY",
+      "L-ZEGHYN"
     ],
     "productivity": {
-      "totalLexemes": 13,
+      "totalLexemes": 14,
       "corpusFrequency": 0
     }
   },
@@ -10176,10 +10216,12 @@
       "L-AUTO-01637",
       "L-AUTO-01638",
       "L-AUTO-01639",
-      "L-AUTO-01640"
+      "L-AUTO-01640",
+      "L-ZEGUEHEN",
+      "L-KEYTEGHEHENYGHE"
     ],
     "productivity": {
-      "totalLexemes": 262,
+      "totalLexemes": 264,
       "corpusFrequency": 0
     },
     "conceptIds": [
@@ -11342,10 +11384,19 @@
       "L-AUTO-00711",
       "L-AUTO-00712",
       "L-AUTO-00714",
-      "L-AUTO-00715"
+      "L-AUTO-00715",
+      "L-K-Y",
+      "L-ZEGUEK-YP-E",
+      "L-DEK-YP-ENSHE",
+      "L-ZEXEK-YP-E",
+      "L-IK-YNYGHE",
+      "L-KEEK-YU",
+      "L-F-EK-A",
+      "L-K-ERY",
+      "L-AUTO-00206"
     ],
     "productivity": {
-      "totalLexemes": 80,
+      "totalLexemes": 89,
       "corpusFrequency": 0
     }
   },
@@ -11629,10 +11680,11 @@
       "L-KEESHXYH",
       "L-KHARBYZYFE",
       "L-SHCHKHYRYB",
-      "L-KHARBYZKUEEPS"
+      "L-KHARBYZKUEEPS",
+      "L-AUTO-00057"
     ],
     "productivity": {
-      "totalLexemes": 10,
+      "totalLexemes": 11,
       "corpusFrequency": 0
     },
     "conceptIds": [
@@ -11770,10 +11822,11 @@
       "L-XESK-YK-YN",
       "L-XESABYREN",
       "L-AUTO-00805",
-      "L-KHES"
+      "L-KHES",
+      "L-AUTO-00613"
     ],
     "productivity": {
-      "totalLexemes": 16,
+      "totalLexemes": 17,
       "corpusFrequency": 0
     }
   },
@@ -14457,10 +14510,25 @@
       "L-DEK-UEZHYN",
       "L-K-UERYK-UEU",
       "L-K-UEK-UAL",
-      "L-AUTO-00710"
+      "L-AUTO-00710",
+      "L-TEK-UA",
+      "L-EK-UE",
+      "L-KEYZERYMYK-UE",
+      "L-ZEXUEK-UE",
+      "L-ZEK-UU",
+      "L-ZEXUEK-UENYGHE",
+      "L-ZEGUEK-UA",
+      "L-AUTO-01290",
+      "L-AUTO-01335",
+      "L-AUTO-01364",
+      "L-AUTO-01396",
+      "L-AUTO-01556",
+      "L-AUTO-01571",
+      "L-AUTO-01589",
+      "L-AUTO-01607"
     ],
     "productivity": {
-      "totalLexemes": 60,
+      "totalLexemes": 75,
       "corpusFrequency": 0
     },
     "conceptIds": [
@@ -14641,10 +14709,11 @@
       "L-ZERYGHELHAGHUN",
       "L-LHAGHUGHEF-AGHE",
       "L-XARIZMA",
-      "L-AUTO-00827"
+      "L-AUTO-00827",
+      "L-EGHELHAGHUNYGHE"
     ],
     "productivity": {
-      "totalLexemes": 56,
+      "totalLexemes": 57,
       "corpusFrequency": 0
     },
     "conceptIds": [
@@ -14872,10 +14941,11 @@
       "L-F-ELEZHYN",
       "L-AUTO-00779",
       "L-AUTO-01448",
-      "L-AUTO-01449"
+      "L-AUTO-01449",
+      "L-KEELEZHEN"
     ],
     "productivity": {
-      "totalLexemes": 65,
+      "totalLexemes": 66,
       "corpusFrequency": 0
     }
   },
@@ -15233,10 +15303,16 @@
       "L-KEYPYLELYN",
       "L-KEYXELHHENYGHE",
       "L-MYTELHYDZHE",
-      "L-AUTO-00799"
+      "L-AUTO-00799",
+      "L-ZEPXYRYLHEFYN",
+      "L-PXYRYLHETYN",
+      "L-ZYTELAY",
+      "L-KEELHETYN",
+      "L-ILHETYN",
+      "L-PXYRYLHEFYN"
     ],
     "productivity": {
-      "totalLexemes": 220,
+      "totalLexemes": 226,
       "corpusFrequency": 0
     }
   },
@@ -16479,10 +16555,11 @@
       "L-L-YKHUZHYN",
       "L-MYL-YZH",
       "L-L-YZH-FYZYZH",
-      "L-AUTO-00820"
+      "L-AUTO-00820",
+      "L-MY-E-MYL-E"
     ],
     "productivity": {
-      "totalLexemes": 65,
+      "totalLexemes": 66,
       "corpusFrequency": 0
     },
     "conceptIds": [
@@ -16816,10 +16893,12 @@
       "L-MASHCH-EGHUE",
       "L-YAGHEMASHCH-E",
       "L-MASHCH-EFASHCH-E",
-      "L-MASHCH-E-MASHCH-EURE"
+      "L-MASHCH-E-MASHCH-EURE",
+      "L-GHEMASHCH-EN",
+      "L-MASHCH-U"
     ],
     "productivity": {
-      "totalLexemes": 6,
+      "totalLexemes": 8,
       "corpusFrequency": 0
     },
     "conceptIds": [
@@ -16881,10 +16960,11 @@
       "L-MAXUENYKUEE",
       "L-SHCH-YMAXUEK-E",
       "L-MAXUAK-UE",
-      "L-ZYMAXUE-ZYMAXUEK-E"
+      "L-ZYMAXUE-ZYMAXUEK-E",
+      "L-AUTO-01430"
     ],
     "productivity": {
-      "totalLexemes": 25,
+      "totalLexemes": 26,
       "corpusFrequency": 0
     },
     "conceptIds": [
@@ -17729,10 +17809,11 @@
     "_source": "roots.json",
     "lexemeIds": [
       "L-NAPE",
-      "L-DEUN"
+      "L-DEUN",
+      "L-NAPEKHUREY"
     ],
     "productivity": {
-      "totalLexemes": 2,
+      "totalLexemes": 3,
       "corpusFrequency": 0
     }
   },
@@ -19250,10 +19331,11 @@
       "L-NYBZHYSHCH-EXER",
       "L-NYBZHK-E",
       "L-NYBZHEGHU-ZHEREGHU",
-      "L-AUTO-01474"
+      "L-AUTO-01474",
+      "L-AUTO-01360"
     ],
     "productivity": {
-      "totalLexemes": 11,
+      "totalLexemes": 12,
       "corpusFrequency": 0
     }
   },
@@ -19348,10 +19430,11 @@
       "L-NYKUEENEXU",
       "L-NYKUEET-ESHCH",
       "L-NYKUEEUX",
-      "L-AUTO-00885"
+      "L-AUTO-00885",
+      "L-ZHESHCHNYKUEE"
     ],
     "productivity": {
-      "totalLexemes": 70,
+      "totalLexemes": 71,
       "corpusFrequency": 0
     },
     "conceptIds": [
@@ -19868,10 +19951,11 @@
       "L-P-ESK-UP-E",
       "L-AUTO-00913",
       "L-AUTO-00914",
-      "L-KBD-03774"
+      "L-KBD-03774",
+      "L-KHUP1E"
     ],
     "productivity": {
-      "totalLexemes": 136,
+      "totalLexemes": 137,
       "corpusFrequency": 0
     }
   },
@@ -20931,10 +21015,11 @@
     "lexemeIds": [
       "L-KBD-03779",
       "L-P-ESHCH-EGHUE",
-      "L-MYP-ESHCH-EGHUE"
+      "L-MYP-ESHCH-EGHUE",
+      "L-MYP-ESHCH-EN"
     ],
     "productivity": {
-      "totalLexemes": 3,
+      "totalLexemes": 4,
       "corpusFrequency": 0
     },
     "conceptIds": [
@@ -21302,10 +21387,11 @@
       "L-PL-ERYH",
       "L-PLHYZHF-YTS-AFE",
       "L-PLHYZHGHUEZHYFE",
-      "L-PLHYZH-FYTS-AFE"
+      "L-PLHYZH-FYTS-AFE",
+      "L-KEEPLHYZHYN"
     ],
     "productivity": {
-      "totalLexemes": 12,
+      "totalLexemes": 13,
       "corpusFrequency": 0
     },
     "conceptIds": [
@@ -21424,10 +21510,11 @@
       "L-KBD-05569",
       "L-KEEPLHENEF",
       "L-ZEPLHEK-UEN",
-      "L-KEAPLHENYBZ"
+      "L-KEAPLHENYBZ",
+      "L-ZEXEPLHENYGHE"
     ],
     "productivity": {
-      "totalLexemes": 29,
+      "totalLexemes": 30,
       "corpusFrequency": 0
     }
   },
@@ -22280,10 +22367,12 @@
       "L-AUTO-00956",
       "L-AUTO-01541",
       "L-AUTO-01542",
-      "L-AUTO-01543"
+      "L-AUTO-01543",
+      "L-PSHCH1ELEY",
+      "L-ZEXEPSHCH-E"
     ],
     "productivity": {
-      "totalLexemes": 25,
+      "totalLexemes": 27,
       "corpusFrequency": 0
     },
     "conceptIds": [
@@ -22399,10 +22488,12 @@
       "L-AUTO-00962",
       "L-AUTO-01568",
       "L-AUTO-01569",
-      "L-PSHCHYZHY"
+      "L-PSHCHYZHY",
+      "L-PXYRYPSHCHYN",
+      "L-ZEPYRYPSHCHYN"
     ],
     "productivity": {
-      "totalLexemes": 99,
+      "totalLexemes": 101,
       "corpusFrequency": 0
     },
     "conceptIds": [
@@ -22789,10 +22880,11 @@
       "L-AUTO-01529",
       "L-AUTO-01530",
       "L-AUTO-01531",
-      "L-BO"
+      "L-BO",
+      "L-PXYRYPSYN"
     ],
     "productivity": {
-      "totalLexemes": 259,
+      "totalLexemes": 260,
       "corpusFrequency": 0
     }
   },
@@ -23990,10 +24082,11 @@
       "L-SHCHYHYL",
       "L-SHCHYHYKHU",
       "L-SHCHYHYTS",
-      "L-AUTO-01678"
+      "L-AUTO-01678",
+      "L-KEESHCHYHA"
     ],
     "productivity": {
-      "totalLexemes": 9,
+      "totalLexemes": 10,
       "corpusFrequency": 0
     },
     "conceptIds": [
@@ -24033,10 +24126,11 @@
       "L-ZESEBEUEN",
       "L-ESEBEUEN",
       "L-SEBEPYN",
-      "L-AUTO-01566"
+      "L-AUTO-01566",
+      "L-KEESEBEPYN"
     ],
     "productivity": {
-      "totalLexemes": 11,
+      "totalLexemes": 12,
       "corpusFrequency": 0
     },
     "conceptIds": [
@@ -24726,10 +24820,12 @@
       "L-AUTO-01212",
       "L-AUTO-01213",
       "L-AUTO-01671",
-      "L-AUTO-01672"
+      "L-AUTO-01672",
+      "L-KHUSHCH-ENYGHE",
+      "L-KEESHCH-EREY"
     ],
     "productivity": {
-      "totalLexemes": 387,
+      "totalLexemes": 389,
       "corpusFrequency": 0
     }
   },
@@ -24774,10 +24870,12 @@
       "L-ZYSHCH-EKUEEN",
       "L-ZYSHCH-EFYN",
       "L-ZYSHCH-EGUPSYSYN",
-      "L-ZYSHCH-EPXEN"
+      "L-ZYSHCH-EPXEN",
+      "L-ZESHCH-YGHU",
+      "L-KEEKHUN-KEESHCH-EN"
     ],
     "productivity": {
-      "totalLexemes": 28,
+      "totalLexemes": 30,
       "corpusFrequency": 0
     }
   },
@@ -26344,10 +26442,11 @@
       "L-SHCH-Y-EP-E",
       "L-SHCH-Y-EUZ",
       "L-MYSHCH-Y-E-MYXUABE",
-      "L-MY-EF-MYDYDZH"
+      "L-MY-EF-MYDYDZH",
+      "L-GHESHCH-Y-EN"
     ],
     "productivity": {
-      "totalLexemes": 15,
+      "totalLexemes": 16,
       "corpusFrequency": 0
     },
     "conceptIds": [
@@ -26392,10 +26491,12 @@
     "lexemeIds": [
       "L-SHCHTA",
       "L-SHCHTAUE",
-      "L-VERIFIED-02174"
+      "L-VERIFIED-02174",
+      "L-KEESHCHTA",
+      "L-GHESHCHTA"
     ],
     "productivity": {
-      "totalLexemes": 3,
+      "totalLexemes": 5,
       "corpusFrequency": 0
     }
   },
@@ -29030,10 +29131,11 @@
     "_source": "word_families.json",
     "lexemeIds": [
       "L-SUD",
-      "L-KBD-04172"
+      "L-KBD-04172",
+      "L-AUTO-01559"
     ],
     "productivity": {
-      "totalLexemes": 2,
+      "totalLexemes": 3,
       "corpusFrequency": 0
     }
   },
@@ -29133,10 +29235,11 @@
       "L-KBD-02612",
       "L-KHEMASHCHE",
       "L-TEGHEPSK-YK",
-      "L-SYN"
+      "L-SYN",
+      "L-IGHESYN"
     ],
     "productivity": {
-      "totalLexemes": 6,
+      "totalLexemes": 7,
       "corpusFrequency": 0
     }
   },
@@ -29217,10 +29320,12 @@
     "notes": "Otomatik onarıldı (lexemes.json referansı)",
     "_source": "word_families.json",
     "lexemeIds": [
-      "L-SYT"
+      "L-SYT",
+      "L-AUTO-01563",
+      "L-AUTO-01564"
     ],
     "productivity": {
-      "totalLexemes": 1,
+      "totalLexemes": 3,
       "corpusFrequency": 0
     }
   },
@@ -29557,10 +29662,11 @@
       "L-T-ET-EN",
       "L-AUTO-00790",
       "L-AUTO-00801",
-      "L-AUTO-01032"
+      "L-AUTO-01032",
+      "L-XET-ET-YN"
     ],
     "productivity": {
-      "totalLexemes": 36,
+      "totalLexemes": 37,
       "corpusFrequency": 0
     },
     "conceptIds": [
@@ -29618,10 +29724,12 @@
       "L-KBD-04347",
       "L-TEUT-YPSHCHHAUE",
       "L-ENT-E-UN",
-      "L-KEYTEUVEN"
+      "L-KEYTEUVEN",
+      "L-K-ERYXU-BZHERYXU",
+      "L-PYXU-SYXU"
     ],
     "productivity": {
-      "totalLexemes": 26,
+      "totalLexemes": 28,
       "corpusFrequency": 0
     },
     "conceptIds": [
@@ -29657,10 +29765,11 @@
       "L-KBD-04293",
       "L-TEZYGHEGUSHXUE",
       "L-TEZIS",
-      "L-TEZ"
+      "L-TEZ",
+      "L-ZETEZ"
     ],
     "productivity": {
-      "totalLexemes": 11,
+      "totalLexemes": 12,
       "corpusFrequency": 0
     }
   },
@@ -30067,10 +30176,11 @@
       "L-AUTO-01579",
       "L-AUTO-01580",
       "L-AUTO-01581",
-      "L-AUTO-01582"
+      "L-AUTO-01582",
+      "L-AUTO-01369"
     ],
     "productivity": {
-      "totalLexemes": 20,
+      "totalLexemes": 21,
       "corpusFrequency": 0
     },
     "conceptIds": [
@@ -30179,10 +30289,11 @@
     "_source": "word_families.json",
     "lexemeIds": [
       "L-TOP",
-      "L-VERIFIED-01242"
+      "L-VERIFIED-01242",
+      "L-AUTO-01611"
     ],
     "productivity": {
-      "totalLexemes": 2,
+      "totalLexemes": 3,
       "corpusFrequency": 0
     }
   },
@@ -30452,10 +30563,11 @@
       "L-KBD-04380",
       "L-KBD-04381",
       "L-KBD-04382",
-      "L-KBD-04383"
+      "L-KBD-04383",
+      "L-TURAGENT"
     ],
     "productivity": {
-      "totalLexemes": 5,
+      "totalLexemes": 6,
       "corpusFrequency": 0
     }
   },
@@ -30880,10 +30992,11 @@
       "L-UDZYPTS-E",
       "L-AUTO-01040",
       "L-AUTO-01041",
-      "L-AUTO-01042"
+      "L-AUTO-01042",
+      "L-ZHESHCHUDZ"
     ],
     "productivity": {
-      "totalLexemes": 5,
+      "totalLexemes": 6,
       "corpusFrequency": 0
     }
   },
@@ -31303,10 +31416,11 @@
       "L-KEE-UETEZHYN",
       "L-ZERY-UETYN",
       "L-ZEXUE-UETEN",
-      "L-ZE-UETEL-EN"
+      "L-ZE-UETEL-EN",
+      "L-UETA"
     ],
     "productivity": {
-      "totalLexemes": 6,
+      "totalLexemes": 7,
       "corpusFrequency": 0
     }
   },
@@ -31507,10 +31621,11 @@
       "L-UK-YTEX",
       "L-UK-YNYGHE",
       "L-MYUK-YTEX",
-      "L-UKI"
+      "L-UKI",
+      "L-IUK-YN"
     ],
     "productivity": {
-      "totalLexemes": 5,
+      "totalLexemes": 6,
       "corpusFrequency": 0
     }
   },
@@ -31552,10 +31667,12 @@
       "L-UNK-AXUE",
       "L-GHEUNEN",
       "L-ZERYGHEUNEN",
-      "L-KEYDEUN"
+      "L-KEYDEUN",
+      "L-UNK-EN",
+      "L-PXYRY-UN"
     ],
     "productivity": {
-      "totalLexemes": 5,
+      "totalLexemes": 7,
       "corpusFrequency": 0
     }
   },
@@ -31631,10 +31748,11 @@
       "L-AUTO-00084",
       "L-AUTO-00085",
       "L-AUTO-01599",
-      "L-AUTO-01600"
+      "L-AUTO-01600",
+      "L-PK-E-UNE"
     ],
     "productivity": {
-      "totalLexemes": 20,
+      "totalLexemes": 21,
       "corpusFrequency": 0
     }
   },
@@ -31871,10 +31989,11 @@
       "L-KEYZYSHCH-EUVY-YK-YN",
       "L-TEUVY-EN",
       "L-UVY-E-KBD",
-      "L-AUTO-01035"
+      "L-AUTO-01035",
+      "L-KEEUVY-E"
     ],
     "productivity": {
-      "totalLexemes": 17,
+      "totalLexemes": 18,
       "corpusFrequency": 0
     },
     "conceptIds": [
@@ -32518,10 +32637,11 @@
       "L-ZEZHEXEUBYDEN",
       "L-ZEPEUBYDA",
       "L-KEEUBYDAK-UE",
-      "L-DEUBYDENYGHE"
+      "L-DEUBYDENYGHE",
+      "L-ZETEUBYDA"
     ],
     "productivity": {
-      "totalLexemes": 19,
+      "totalLexemes": 20,
       "corpusFrequency": 0
     },
     "rootIds": [
@@ -33156,10 +33276,11 @@
       "L-ZAGHORE",
       "L-ZAGHAP-E",
       "L-ZAGHE",
-      "L-AUTO-00616"
+      "L-AUTO-00616",
+      "L-ZEXEMYZAGHE"
     ],
     "productivity": {
-      "totalLexemes": 4,
+      "totalLexemes": 5,
       "corpusFrequency": 0
     },
     "conceptIds": [
@@ -33268,10 +33389,15 @@
     "notes": "C-10.3 yeni aile. Agiz/konusma kok ailesi.",
     "_source": "roots.json",
     "lexemeIds": [
-      "L-ZE"
+      "L-ZE",
+      "L-ZHENYKUEE",
+      "L-ZHESER",
+      "L-ZHEBGHU",
+      "L-ZHEZHENYGHE",
+      "L-AUTO-01354"
     ],
     "productivity": {
-      "totalLexemes": 1,
+      "totalLexemes": 6,
       "corpusFrequency": 0
     }
   },
@@ -33439,10 +33565,11 @@
       "L-AUTO-00554",
       "L-AUTO-00572",
       "L-AUTO-00689",
-      "L-AUTO-01385"
+      "L-AUTO-01385",
+      "L-EZESHA"
     ],
     "productivity": {
-      "totalLexemes": 19,
+      "totalLexemes": 20,
       "corpusFrequency": 0
     }
   },
@@ -33508,10 +33635,11 @@
       "L-ZEUXYL-AUE",
       "L-ZEUEZEPSU",
       "L-AUTO-00681",
-      "L-ZEU"
+      "L-ZEU",
+      "L-KEEZEUA"
     ],
     "productivity": {
-      "totalLexemes": 24,
+      "totalLexemes": 25,
       "corpusFrequency": 0
     }
   },
@@ -33902,10 +34030,11 @@
       "L-ZHANR",
       "L-MYZHAN",
       "L-AUTO-00590",
-      "L-AUTO-01132"
+      "L-AUTO-01132",
+      "L-GHEZHANA"
     ],
     "productivity": {
-      "totalLexemes": 9,
+      "totalLexemes": 10,
       "corpusFrequency": 0
     }
   },
@@ -34786,10 +34915,11 @@
       "L-ZHYPZEHE",
       "L-AUTO-00599",
       "L-AUTO-00600",
-      "L-ZHYP"
+      "L-ZHYP",
+      "L-KHUZHYPEN"
     ],
     "productivity": {
-      "totalLexemes": 10,
+      "totalLexemes": 11,
       "corpusFrequency": 0
     }
   },
@@ -35365,10 +35495,11 @@
     "lexemeIds": [
       "L-THELEN",
       "L-VERIFIED-00920",
-      "L-KBD-01914"
+      "L-KBD-01914",
+      "L-ITHELEN"
     ],
     "productivity": {
-      "totalLexemes": 3,
+      "totalLexemes": 4,
       "corpusFrequency": 0
     }
   },
@@ -36688,10 +36819,11 @@
       "L-VERIFIED-01495",
       "L-KBD-00632",
       "L-KBD-00633",
-      "L-KBD-00634"
+      "L-KBD-00634",
+      "L-KEEGHEGHENYGHE"
     ],
     "productivity": {
-      "totalLexemes": 4,
+      "totalLexemes": 5,
       "corpusFrequency": 0
     }
   },
@@ -39448,11 +39580,14 @@
       "L-BADZAPTS-E",
       "L-BZHEU",
       "L-BZHEF",
-      "L-BZHEMATE"
+      "L-BZHEMATE",
+      "L-TS-ELEY",
+      "L-SHCHY-ETS-E",
+      "L-TS-EGYN"
     ],
     "morphemeIds": [],
     "productivity": {
-      "totalLexemes": 47,
+      "totalLexemes": 50,
       "corpusFrequency": 0
     },
     "notes": "Faz 5 / Adım 5.3: WF-1E temizliği",
@@ -40192,7 +40327,13 @@
       "L-KBD-05574",
       "L-KEYK-ERYHEN",
       "L-KEYK-ERYLELYN",
-      "L-KEEDABAFE"
+      "L-KEEDABAFE",
+      "L-K-ET-YGU",
+      "L-KEYTEK-ENYGHE",
+      "L-K-ENSHE",
+      "L-AUTO-00173",
+      "L-AUTO-00227",
+      "L-AUTO-01410"
     ],
     "conceptIds": [
       "PRESS",
@@ -40254,7 +40395,7 @@
       "RISE"
     ],
     "productivity": {
-      "totalLexemes": 65,
+      "totalLexemes": 71,
       "corpusFrequency": 0
     }
   },
@@ -41000,13 +41141,15 @@
   {
     "id": "WF-IWO",
     "lexemeIds": [
-      "L-IWO"
+      "L-IWO",
+      "L-EMY-USE-TSYSNE-U",
+      "L-UK-EY-SHCH-YK-EY"
     ],
     "conceptIds": [
       "MOUTH"
     ],
     "productivity": {
-      "totalLexemes": 1,
+      "totalLexemes": 3,
       "corpusFrequency": 0
     }
   },
@@ -41555,11 +41698,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-AREP"
+      "L-AREP",
+      "L-REP"
     ],
     "notes": "deği̇l ailesi (рэп).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 2
     },
     "_source": "lexemes-sync-2026"
   },
@@ -41741,11 +41885,13 @@
       "L-ZEGUEUN",
       "L-ZEF-EUN",
       "L-U-EGHEK",
-      "L-AUTO-00782"
+      "L-AUTO-00782",
+      "L-ZE-EDEKEEUEN",
+      "L-SHERYUAGH-E"
     ],
     "notes": "içeri su vurmak ailesi (у).",
     "productivity": {
-      "totalLexemes": 32
+      "totalLexemes": 34
     },
     "_source": "lexemes-sync-2026"
   },
@@ -41947,11 +42093,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-POLITIKE"
+      "L-POLITIKE",
+      "L-POLITIK"
     ],
     "notes": "политика Къэралыгъом, партием, общ ailesi (политик).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 2
     },
     "_source": "lexemes-sync-2026"
   },
@@ -42206,11 +42353,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-KOLXOZ"
+      "L-KOLXOZ",
+      "L-KOLXOZXET"
     ],
     "notes": "колхоз Социалистическэ ш ailesi (колхоз).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 2
     },
     "_source": "lexemes-sync-2026"
   },
@@ -42256,11 +42404,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-MAME"
+      "L-MAME",
+      "L-MAMA"
     ],
     "notes": "мама / Анэ ailesi (мам).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 2
     },
     "_source": "lexemes-sync-2026"
   },
@@ -42429,11 +42578,12 @@
     "morphemeIds": [],
     "lexemeIds": [
       "L-KLASS",
-      "L-KBD-02292"
+      "L-KBD-02292",
+      "L-AUTO-01412"
     ],
     "notes": "класс <div style='margin ailesi (класс).",
     "productivity": {
-      "totalLexemes": 2
+      "totalLexemes": 3
     },
     "_source": "lexemes-sync-2026"
   },
@@ -42509,11 +42659,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-KOFE"
+      "L-KOFE",
+      "L-KOFEGHAVE"
     ],
     "notes": "kahve ailesi (кофе).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 2
     },
     "_source": "lexemes-sync-2026"
   },
@@ -42651,11 +42802,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-STUDENT"
+      "L-STUDENT",
+      "L-AUTO-01558"
     ],
     "notes": "öğrenci ailesi (студент).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 2
     },
     "_source": "lexemes-sync-2026"
   },
@@ -42703,11 +42855,14 @@
     "morphemeIds": [],
     "lexemeIds": [
       "L-PART",
-      "L-VERIFIED-00942"
+      "L-VERIFIED-00942",
+      "L-PARTBILET",
+      "L-PARTBYURO",
+      "L-PARTSEZD"
     ],
     "notes": "parti̇ ailesi (парт).",
     "productivity": {
-      "totalLexemes": 2
+      "totalLexemes": 5
     },
     "_source": "lexemes-sync-2026"
   },
@@ -42867,11 +43022,13 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-RADIO"
+      "L-RADIO",
+      "L-RADIOPSALHENYGHE",
+      "L-RADIOSTANTS"
     ],
     "notes": "радио 1 ailesi (радио).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 3
     },
     "_source": "lexemes-sync-2026"
   },
@@ -42995,11 +43152,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-RETY"
+      "L-RETY",
+      "L-ETYZHYNYGHE"
     ],
     "notes": "vermek ailesi (еты).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 2
     },
     "_source": "lexemes-sync-2026"
   },
@@ -43451,11 +43609,13 @@
       "L-AUTO-00752",
       "L-AUTO-00792",
       "L-AUTO-00918",
-      "L-AUTO-01073"
+      "L-AUTO-01073",
+      "L-ZHAK-UAGH-E",
+      "L-ZHEXE"
     ],
     "notes": "ALDANMAK, KANMAK ailesi (жь).",
     "productivity": {
-      "totalLexemes": 75
+      "totalLexemes": 77
     },
     "_source": "lexemes-sync-2026"
   },
@@ -43563,11 +43723,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-SPORT"
+      "L-SPORT",
+      "L-SPORTZAL"
     ],
     "notes": "aut ailesi (спорт).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 2
     },
     "_source": "lexemes-sync-2026"
   },
@@ -43665,11 +43826,12 @@
     "morphemeIds": [],
     "lexemeIds": [
       "L-PU",
-      "L-P-UN"
+      "L-P-UN",
+      "L-P-UNYGHE"
     ],
     "notes": "междом ailesi (пӀу).",
     "productivity": {
-      "totalLexemes": 2
+      "totalLexemes": 3
     },
     "_source": "lexemes-sync-2026"
   },
@@ -43983,11 +44145,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-TSITATE"
+      "L-TSITATE",
+      "L-TSITATA"
     ],
     "notes": "alıntılamak ailesi (цитат).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 2
     },
     "_source": "lexemes-sync-2026"
   },
@@ -44009,11 +44172,14 @@
       "L-KBD-00000",
       "L-F-E-EIN",
       "L-ZESHCHY-EIN",
-      "L-GHE-EIN"
+      "L-GHE-EIN",
+      "L-AUTO-01255",
+      "L-AUTO-01256",
+      "L-AUTO-01540"
     ],
     "notes": "ий / ейщ AİT ailesi (Ӏей).",
     "productivity": {
-      "totalLexemes": 6
+      "totalLexemes": 9
     },
     "_source": "lexemes-sync-2026"
   },
@@ -44262,11 +44428,13 @@
     "morphemeIds": [],
     "lexemeIds": [
       "L-MYSAGHE",
-      "L-ZYGHEMYSEN"
+      "L-ZYGHEMYSEN",
+      "L-ZEMYSA",
+      "L-MYS"
     ],
     "notes": "виновный, -ая, -ое</div ailesi (мыс).",
     "productivity": {
-      "totalLexemes": 2
+      "totalLexemes": 4
     },
     "_source": "lexemes-sync-2026"
   },
@@ -44808,11 +44976,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-OPYT"
+      "L-OPYT",
+      "L-AUTO-01498"
     ],
     "notes": "опыт <div style='margin-left:3 ailesi (опыт).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 2
     },
     "_source": "lexemes-sync-2026"
   },
@@ -44886,11 +45055,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-XOZYAYSTVE"
+      "L-XOZYAYSTVE",
+      "L-XOZYAYSTVA"
     ],
     "notes": "economy ailesi (хозяйствэ).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 2
     },
     "_source": "lexemes-sync-2026"
   },
@@ -45204,11 +45374,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-LALE"
+      "L-LALE",
+      "L-LAL"
     ],
     "notes": "сабыибз мясо <div style ailesi (лал).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 2
     },
     "_source": "lexemes-sync-2026"
   },
@@ -45282,11 +45453,13 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-ICHEZUUE"
+      "L-ICHEZUUE",
+      "L-IMYCHEZU",
+      "L-CHEZU-CHEZUK-E-RE"
     ],
     "notes": "in time ailesi (чэзу).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 3
     },
     "_source": "lexemes-sync-2026"
   },
@@ -45330,11 +45503,13 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-BIIGHE"
+      "L-BIIGHE",
+      "L-AUTO-01300",
+      "L-AUTO-01301"
     ],
     "notes": "DÜŞMANLIK ailesi (биигъэ).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 3
     },
     "_source": "lexemes-sync-2026"
   },
@@ -45453,11 +45628,12 @@
       "L-T-EK-U-2",
       "L-ZYT-EK-UK-E",
       "L-T-EK-URE",
-      "L-T-EK-U-T-EK-U"
+      "L-T-EK-U-T-EK-U",
+      "L-T-EK-U-T-EK-UU"
     ],
     "notes": "az ailesi (тӀэкӀу).",
     "productivity": {
-      "totalLexemes": 8
+      "totalLexemes": 9
     },
     "_source": "lexemes-sync-2026"
   },
@@ -45487,11 +45663,12 @@
     "morphemeIds": [],
     "lexemeIds": [
       "L-ZANSHCH-EU",
-      "L-ZANSHCH-E"
+      "L-ZANSHCH-E",
+      "L-ZANSHCH-U"
     ],
     "notes": "adverb. cm. ailesi (занщӀ).",
     "productivity": {
-      "totalLexemes": 2
+      "totalLexemes": 3
     },
     "_source": "lexemes-sync-2026"
   },
@@ -45878,11 +46055,12 @@
       "L-ZYZESHCH-E-ETEN",
       "L-ZYKEYZEDE-ETYN",
       "L-ZYKEYZESHCH-E-ETEN",
-      "L-KEEGHE-ETYN"
+      "L-KEEGHE-ETYN",
+      "L-KEE-ETA"
     ],
     "notes": "kalkmak ailesi (Ӏэт).",
     "productivity": {
-      "totalLexemes": 11
+      "totalLexemes": 12
     },
     "_source": "lexemes-sync-2026"
   },
@@ -45945,11 +46123,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-XE-USHCH-Y-U"
+      "L-XE-USHCH-Y-U",
+      "L-AUTO-01641"
     ],
     "notes": "Еплъ &quot ailesi (хэӀущӀыӀу).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 2
     },
     "_source": "lexemes-sync-2026"
   },
@@ -46039,11 +46218,13 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-EPTS-YZHYN"
+      "L-EPTS-YZHYN",
+      "L-EPTS-YZHA",
+      "L-ZEGHEPTS-YZHYN"
     ],
     "notes": "Зыгуэр мыгъэпэжын ailesi (пцӀыж).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 3
     },
     "_source": "lexemes-sync-2026"
   },
@@ -46257,11 +46438,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-UXUAK-UE"
+      "L-UXUAK-UE",
+      "L-UXUA"
     ],
     "notes": "insaatci ailesi (уху).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 2
     },
     "_source": "lexemes-sync-2026"
   },
@@ -46479,11 +46661,13 @@
     "morphemeIds": [],
     "lexemeIds": [
       "L-UNK-YF-YN",
-      "L-KEYTEUNK-YF-EN"
+      "L-KEYTEUNK-YF-EN",
+      "L-GHEUNK-YF-A",
+      "L-UNK-YF-A"
     ],
     "notes": "Мыблэж, мысыж хъун ailesi (ункӀыфӀ).",
     "productivity": {
-      "totalLexemes": 2
+      "totalLexemes": 4
     },
     "_source": "lexemes-sync-2026"
   },
@@ -46519,11 +46703,12 @@
       "L-ZYZESHCH-EUPSHCH-EN",
       "L-UPSHCH-EZHEGHU",
       "L-XE-UPSHCH-YK-YN",
-      "L-AUTO-00863"
+      "L-AUTO-00863",
+      "L-KEYTEUPSHCH-EN"
     ],
     "notes": "Kesmek ailesi (упщӀ).",
     "productivity": {
-      "totalLexemes": 18
+      "totalLexemes": 19
     },
     "_source": "lexemes-sync-2026"
   },
@@ -46569,11 +46754,14 @@
     "morphemeIds": [],
     "lexemeIds": [
       "L-UPK-E",
-      "L-UPK-EN"
+      "L-UPK-EN",
+      "L-PK-EUESHCH",
+      "L-PK-ESHCHEKHU",
+      "L-AUTO-00299"
     ],
     "notes": "Keçe ailesi (пкӀэ).",
     "productivity": {
-      "totalLexemes": 2
+      "totalLexemes": 5
     },
     "_source": "lexemes-sync-2026"
   },
@@ -46587,11 +46775,12 @@
     "morphemeIds": [],
     "lexemeIds": [
       "L-UTS-YRKHYN",
-      "L-ZEXEUTS-YRKHEN"
+      "L-ZEXEUTS-YRKHEN",
+      "L-UTS-YRKHA"
     ],
     "notes": "Kapatmak, örtmek ailesi (уцӀырхъ).",
     "productivity": {
-      "totalLexemes": 2
+      "totalLexemes": 3
     },
     "_source": "lexemes-sync-2026"
   },
@@ -47073,11 +47262,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-VERIFIED-00442"
+      "L-VERIFIED-00442",
+      "L-KLASSIKE"
     ],
     "notes": "klasi̇k ailesi (классик).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 2
     },
     "_source": "lexemes-sync-2026"
   },
@@ -48763,11 +48953,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-VERIFIED-01775"
+      "L-VERIFIED-01775",
+      "L-KREDITOR"
     ],
     "notes": "credit ailesi (креди).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 2
     },
     "_source": "lexemes-sync-2026"
   },
@@ -48908,11 +49099,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-VERIFIED-01905"
+      "L-VERIFIED-01905",
+      "L-AUTO-01634"
     ],
     "notes": "kanser ailesi (елыркъэш).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 2
     },
     "_source": "lexemes-sync-2026"
   },
@@ -49047,11 +49239,12 @@
       "L-AUTO-00468",
       "L-AUTO-00509",
       "L-AUTO-00548",
-      "L-AUTO-00719"
+      "L-AUTO-00719",
+      "L-ZEXEVE-ZEXEZHE"
     ],
     "notes": "haşlanmak ailesi (в).",
     "productivity": {
-      "totalLexemes": 29
+      "totalLexemes": 30
     },
     "_source": "lexemes-sync-2026"
   },
@@ -49236,11 +49429,12 @@
     "morphemeIds": [],
     "lexemeIds": [
       "L-VERIFIED-02038",
-      "L-TS-YRKH-KBD"
+      "L-TS-YRKH-KBD",
+      "L-ZEGHETSYRKHYN"
     ],
     "notes": "притронуться, прикоснуться к кому-чему-л ailesi (цырхъ).",
     "productivity": {
-      "totalLexemes": 2
+      "totalLexemes": 3
     },
     "_source": "lexemes-sync-2026"
   },
@@ -49284,11 +49478,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-VERIFIED-02054"
+      "L-VERIFIED-02054",
+      "L-ESAK-UE"
     ],
     "notes": "alişkin ailesi (еса).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 2
     },
     "_source": "lexemes-sync-2026"
   },
@@ -49540,11 +49735,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-VERIFIED-02262"
+      "L-VERIFIED-02262",
+      "L-APTEK"
     ],
     "notes": "eczane ailesi (аптек).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 2
     },
     "_source": "lexemes-sync-2026"
   },
@@ -49716,11 +49912,12 @@
       "L-AUTO-00793",
       "L-AUTO-01014",
       "L-AUTO-01019",
-      "L-AUTO-01093"
+      "L-AUTO-01093",
+      "L-ZERYH-ZERIY"
     ],
     "notes": "yıkmak ailesi (хь).",
     "productivity": {
-      "totalLexemes": 39
+      "totalLexemes": 40
     },
     "_source": "lexemes-sync-2026"
   },
@@ -49782,11 +49979,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-VERIFIED-02431"
+      "L-VERIFIED-02431",
+      "L-DZHYP1E"
     ],
     "notes": "sahi̇l ailesi (джы).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 2
     },
     "_source": "lexemes-sync-2026"
   },
@@ -49878,11 +50076,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-VERIFIED-02525"
+      "L-VERIFIED-02525",
+      "L-TSAKUE"
     ],
     "notes": "беззубый ныо цаку беззубая старуха <font color='darkblue ailesi (цаку).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 2
     },
     "_source": "lexemes-sync-2026"
   },
@@ -50748,11 +50947,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-KBD-00850"
+      "L-KBD-00850",
+      "L-MYDA-UE"
     ],
     "notes": "riayetkar ailesi (даӀу).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 2
     },
     "_source": "lexemes-sync-2026"
   },
@@ -51154,11 +51354,14 @@
       "L-U-UN",
       "L-U-UEN",
       "L-KEEU-UN",
-      "L-AUTO-00656"
+      "L-AUTO-00656",
+      "L-ZEGHEU-UA",
+      "L-ZEGHEU-UNYGHE",
+      "L-TEU-UE"
     ],
     "notes": "(йоуӀу) неперех. гл.  клевать, стучать клювом ((youiu) nepereh. ch. peck, beak banging) ailesi (уӀу).",
     "productivity": {
-      "totalLexemes": 10
+      "totalLexemes": 13
     },
     "_source": "lexemes-sync-2026"
   },
@@ -51170,11 +51373,13 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-KBD-01376"
+      "L-KBD-01376",
+      "L-DZHERSHZHEY",
+      "L-FENZHEY-KBD"
     ],
     "notes": "sharp-tongued ailesi (жьей).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 3
     },
     "_source": "lexemes-sync-2026"
   },
@@ -51620,11 +51825,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-KBD-03858"
+      "L-KBD-03858",
+      "L-AUTO-01508"
     ],
     "notes": "postman ailesi (пощт).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 2
     },
     "_source": "lexemes-sync-2026"
   },
@@ -51794,11 +52000,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-KBD-04170"
+      "L-KBD-04170",
+      "L-SPRAVKA"
     ],
     "notes": "reference ailesi (справк).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 2
     },
     "_source": "lexemes-sync-2026"
   },
@@ -51872,11 +52079,12 @@
       "L-KEYTEUBEN",
       "L-ZEXEUBEN",
       "L-I-UBEN",
-      "L-AUTO-00702"
+      "L-AUTO-00702",
+      "L-UBA"
     ],
     "notes": "AŞIRMAK ailesi (Ӏуб).",
     "productivity": {
-      "totalLexemes": 11
+      "totalLexemes": 12
     },
     "_source": "lexemes-sync-2026"
   },
@@ -51888,11 +52096,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-KBD-04455"
+      "L-KBD-04455",
+      "L-UZDZHYNTA"
     ],
     "notes": "(мэузджынт) неперех. гл. жьы преставиться, умереть ((meuzdzhynt) is not very good. ch. to die, die) ailesi (узджынт).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 2
     },
     "_source": "lexemes-sync-2026"
   },
@@ -51949,11 +52158,13 @@
       "L-KEE-UL-YHYN",
       "L-XUK-ERY-UL-EN",
       "L-ZEK-ERY-UL-EN",
-      "L-AUTO-00363"
+      "L-AUTO-00363",
+      "L-ZERY-UL-E",
+      "L-ZETE-UL-A"
     ],
     "notes": "ÇAKMAK ailesi (ӀулӀ).",
     "productivity": {
-      "totalLexemes": 9
+      "totalLexemes": 11
     },
     "_source": "lexemes-sync-2026"
   },
@@ -52175,11 +52386,12 @@
       "L-AUTO-01186",
       "L-AUTO-01190",
       "L-AUTO-01191",
-      "L-AUTO-01254"
+      "L-AUTO-01254",
+      "L-DZAK-UE-DZASHE"
     ],
     "notes": "Kurşun ailesi (ш).",
     "productivity": {
-      "totalLexemes": 88
+      "totalLexemes": 89
     },
     "_source": "lexemes-sync-2026"
   },
@@ -54400,11 +54612,12 @@
     "lexemeIds": [
       "L-P-ALHE-2",
       "L-P-ALHENSHE",
-      "L-P-ALHEK-ERE"
+      "L-P-ALHEK-ERE",
+      "L-P-ALHEP-ALHEK-ERE"
     ],
     "notes": "Süre, mühlet ailesi (пӀалъ).",
     "productivity": {
-      "totalLexemes": 3
+      "totalLexemes": 4
     },
     "_source": "lexemes-sync-2026"
   },
@@ -54442,11 +54655,15 @@
     "lexemeIds": [
       "L-T-UASHCH-E-2",
       "L-T-UUE",
-      "L-T-UALE"
+      "L-T-UALE",
+      "L-AUTO-01504",
+      "L-AUTO-01577",
+      "L-AUTO-01681",
+      "L-AUTO-01686"
     ],
     "notes": "iki (sayı) ailesi (тӀу).",
     "productivity": {
-      "totalLexemes": 3
+      "totalLexemes": 7
     },
     "_source": "lexemes-sync-2026"
   },
@@ -54591,11 +54808,12 @@
       "L-GHE-KBD",
       "L-AUTO-00047",
       "L-AUTO-00506",
-      "L-AUTO-01233"
+      "L-AUTO-01233",
+      "L-GHERYKHU-SHCH-YRYKHU"
     ],
     "notes": "седьмая буква ардино-ского алфавита / э алфавитым и ебланэ хьэрф ailesi (гъ).",
     "productivity": {
-      "totalLexemes": 13
+      "totalLexemes": 14
     },
     "_source": "lexemes-sync-2026"
   },
@@ -54625,11 +54843,14 @@
     "morphemeIds": [],
     "lexemeIds": [
       "L-GHUAZE-2",
-      "L-SHCHYZYGHEGHUAZE"
+      "L-SHCHYZYGHEGHUAZE",
+      "L-GHUAZ",
+      "L-XEGHUAZE",
+      "L-XEGHEGHUAZEN"
     ],
     "notes": "книжн. введение, вступление; ◊ <font color='sl ailesi (гъуаз).",
     "productivity": {
-      "totalLexemes": 2
+      "totalLexemes": 5
     },
     "_source": "lexemes-sync-2026"
   },
@@ -54790,11 +55011,14 @@
     "morphemeIds": [],
     "lexemeIds": [
       "L-KHUEYZHAPKHE",
-      "L-KHUEYHEL"
+      "L-KHUEYHEL",
+      "L-KHUEYPLHYZH",
+      "L-KHUEYPLHYZH-2",
+      "L-KHUEYSHCHABE"
     ],
     "notes": "kaymakta yumurtalı ailesi (кхъуей).",
     "productivity": {
-      "totalLexemes": 2
+      "totalLexemes": 5
     },
     "_source": "lexemes-sync-2026"
   },
@@ -54894,11 +55118,13 @@
       "L-ILHXUHYN",
       "L-AUTO-00765",
       "L-AUTO-00777",
-      "L-AUTO-00835"
+      "L-AUTO-00835",
+      "L-LHXUADE",
+      "L-MYLHXUA"
     ],
     "notes": "doğmak ailesi (лъху).",
     "productivity": {
-      "totalLexemes": 12
+      "totalLexemes": 14
     },
     "_source": "lexemes-sync-2026"
   },
@@ -55207,11 +55433,13 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-KHUEKHU-2"
+      "L-KHUEKHU-2",
+      "L-XEKHUEKHUEN",
+      "L-EKHUEKHUNYGHE"
     ],
     "notes": "TEBRİK ailesi (хъуэхъу).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 3
     },
     "_source": "lexemes-sync-2026"
   },
@@ -55261,11 +55489,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-TEFETELE"
+      "L-TEFETELE",
+      "L-TEFETELAGHE"
     ],
     "notes": "crank, eccentric (man); oddity; queer fish ailesi (тэфэтел).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 2
     },
     "_source": "lexemes-sync-2026"
   },
@@ -55285,11 +55514,12 @@
       "L-SHCHENYF-EU",
       "L-SHCHENYBE",
       "L-ZYGHESHCHENYF-EN",
-      "L-SHCHENK-ESHCH"
+      "L-SHCHENK-ESHCH",
+      "L-SHCHENAUE"
     ],
     "notes": "alçakgönüllü ailesi (щэн).",
     "productivity": {
-      "totalLexemes": 5
+      "totalLexemes": 6
     },
     "_source": "lexemes-sync-2026"
   },
@@ -55322,11 +55552,12 @@
       "L-ZYGHEKHEIN",
       "L-KEEKHEIZHYN",
       "L-KEYZESHCH-EKHEEN",
-      "L-ZYKEEGHEKHEIN"
+      "L-ZYKEEGHEKHEIN",
+      "L-KHEYNYGHE"
     ],
     "notes": "KIPIRDAMAK ailesi (хъей).",
     "productivity": {
-      "totalLexemes": 4
+      "totalLexemes": 5
     },
     "_source": "lexemes-sync-2026"
   },
@@ -55361,11 +55592,13 @@
       "L-F-E-UGHE",
       "L-GHEF-E-UN",
       "L-F-E-U",
-      "L-ZEXEF-E-UHYN"
+      "L-ZEXEF-E-UHYN",
+      "L-F1E1UN",
+      "L-GHEF-E-UA"
     ],
     "notes": "KONSERVE ailesi (фӀэӀу).",
     "productivity": {
-      "totalLexemes": 4
+      "totalLexemes": 6
     },
     "_source": "lexemes-sync-2026"
   },
@@ -55551,11 +55784,12 @@
       "L-PYLYDYK-YN",
       "L-ZEPEGHELYDYN",
       "L-KEYXELYDYK-YN",
-      "L-AUTO-00511"
+      "L-AUTO-00511",
+      "L-EMYLYDZHYN"
     ],
     "notes": "parlamak ailesi (лыд).",
     "productivity": {
-      "totalLexemes": 7
+      "totalLexemes": 8
     },
     "_source": "lexemes-sync-2026"
   },
@@ -55572,11 +55806,12 @@
       "L-KEEUTS-EP-YN",
       "L-ZYUTS-EP-YZHYN",
       "L-PYUTS-EP-YHYN",
-      "L-ZYUTS-EP-YN"
+      "L-ZYUTS-EP-YN",
+      "L-TEUTS-EP-EN"
     ],
     "notes": "BULANMAK ailesi (уцӀэпӀ).",
     "productivity": {
-      "totalLexemes": 4
+      "totalLexemes": 5
     },
     "_source": "lexemes-sync-2026"
   },
@@ -55686,11 +55921,12 @@
     "lexemeIds": [
       "L-T-EKHUFEKHU",
       "L-ZET-EKHUN",
-      "L-T-EKHUEN"
+      "L-T-EKHUEN",
+      "L-ET-EKHUN"
     ],
     "notes": "Uyuz ailesi (тӀэхъу).",
     "productivity": {
-      "totalLexemes": 3
+      "totalLexemes": 4
     },
     "_source": "lexemes-sync-2026"
   },
@@ -55900,11 +56136,14 @@
       "L-AUTO-00756",
       "L-AUTO-01012",
       "L-AUTO-01135",
-      "L-AUTO-01136"
+      "L-AUTO-01136",
+      "L-PXYRYPLHYN",
+      "L-ZEPLHEN",
+      "L-ZEPYRYPLHYN"
     ],
     "notes": "Bakmak ailesi (плъ).",
     "productivity": {
-      "totalLexemes": 25
+      "totalLexemes": 28
     },
     "_source": "lexemes-sync-2026"
   },
@@ -55950,11 +56189,12 @@
       "L-ZYGHEUK-YTEXYN",
       "L-UK-YTAP-E",
       "L-ZESHCHYUK-YTEN",
-      "L-UK-YTEXYGHE"
+      "L-UK-YTEXYGHE",
+      "L-UK-YTA"
     ],
     "notes": "AHLAKSIZLIK ailesi (укӀыт).",
     "productivity": {
-      "totalLexemes": 5
+      "totalLexemes": 6
     },
     "_source": "lexemes-sync-2026"
   },
@@ -56063,11 +56303,12 @@
       "L-ZEFYSHCH-EUEN",
       "L-EGHEFYSHCH-YN",
       "L-KEEFYSHCH-YN",
-      "L-TEFYSHCH-YHYN"
+      "L-TEFYSHCH-YHYN",
+      "L-ZERYFYSHCH"
     ],
     "notes": "Süpürüp çıkarmak ailesi (фыщӀ).",
     "productivity": {
-      "totalLexemes": 13
+      "totalLexemes": 14
     },
     "_source": "lexemes-sync-2026"
   },
@@ -56105,11 +56346,14 @@
       "L-EUBYDEXYN",
       "L-ZEK-UETS-YGHEBYDEN",
       "L-KEEGHEBYDYHYN",
-      "L-ZEGHEBYDYL-EN"
+      "L-ZEGHEBYDYL-EN",
+      "L-BYDU",
+      "L-XEGHEBYDEN",
+      "L-BYDAGH-E"
     ],
     "notes": "BARDAKERİĞİ ailesi (быд).",
     "productivity": {
-      "totalLexemes": 8
+      "totalLexemes": 11
     },
     "_source": "lexemes-sync-2026"
   },
@@ -56150,11 +56394,13 @@
     "conceptIds": [],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-GHEUF-YTS-YN"
+      "L-GHEUF-YTS-YN",
+      "L-F1YTS1AGHE",
+      "L-MOREF-YTS-AFE"
     ],
     "notes": "karartmak ailesi (фӀыцӀ).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 3
     },
     "_source": "lexemes-sync-2026"
   },
@@ -56216,11 +56462,14 @@
       "L-EGHEUK-YN",
       "L-ZEGUEUK-EN",
       "L-ZESHCHYZEUK-YN",
-      "L-AUTO-01045"
+      "L-AUTO-01045",
+      "L-ZEXEUK-A",
+      "L-ZEXEUK-AUE",
+      "L-KEEUK-A"
     ],
     "notes": "öldürmek ailesi (укӀ).",
     "productivity": {
-      "totalLexemes": 25
+      "totalLexemes": 28
     },
     "_source": "lexemes-sync-2026"
   },
@@ -56234,11 +56483,13 @@
     "morphemeIds": [],
     "lexemeIds": [
       "L-SEK-YN",
-      "L-AUTO-00988"
+      "L-AUTO-00988",
+      "L-SEK-A",
+      "L-GHESEK-E"
     ],
     "notes": "KISIRLAŞTIRMAK ailesi (сэкӀ).",
     "productivity": {
-      "totalLexemes": 2
+      "totalLexemes": 4
     },
     "_source": "lexemes-sync-2026"
   },
@@ -56346,11 +56597,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-UEBEUFE"
+      "L-UEBEUFE",
+      "L-UEBE"
     ],
     "notes": "Kır ailesi (уэб).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 2
     },
     "_source": "lexemes-sync-2026"
   },
@@ -56362,11 +56614,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-UDZHEREDZHYN"
+      "L-UDZHEREDZHYN",
+      "L-UDZHEREDZHA"
     ],
     "notes": "KABARMAK ailesi (уджэрэдж).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 2
     },
     "_source": "lexemes-sync-2026"
   },
@@ -56384,11 +56637,12 @@
       "L-XEGHET-YSHEN",
       "L-TET-YSHEP-E",
       "L-ZHEDET-YSHEN",
-      "L-AUTO-00607"
+      "L-AUTO-00607",
+      "L-AUTO-00226"
     ],
     "notes": "Fide ekmek, dikmek ailesi (тӀысхь).",
     "productivity": {
-      "totalLexemes": 4
+      "totalLexemes": 5
     },
     "_source": "lexemes-sync-2026"
   },
@@ -56470,11 +56724,12 @@
       "L-AUTO-00762",
       "L-AUTO-01005",
       "L-AUTO-01010",
-      "L-AUTO-01125"
+      "L-AUTO-01125",
+      "L-AUTO-00685"
     ],
     "notes": "oymak ailesi (бз).",
     "productivity": {
-      "totalLexemes": 14
+      "totalLexemes": 15
     },
     "_source": "lexemes-sync-2026"
   },
@@ -56592,11 +56847,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-ZHALYDZH"
+      "L-ZHALYDZH",
+      "L-ZHALE"
     ],
     "notes": "Tulum ailesi (жал).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 2
     },
     "_source": "lexemes-sync-2026"
   },
@@ -56740,11 +56996,13 @@
     "morphemeIds": [],
     "lexemeIds": [
       "L-UPTS-ENYN",
-      "L-ZYUPTS-ENYN"
+      "L-ZYUPTS-ENYN",
+      "L-UPTS-ENAUE",
+      "L-UPTS-ENA"
     ],
     "notes": "SOYMAK ailesi (упцӀэн).",
     "productivity": {
-      "totalLexemes": 2
+      "totalLexemes": 4
     },
     "_source": "lexemes-sync-2026"
   },
@@ -56828,11 +57086,12 @@
     "morphemeIds": [],
     "lexemeIds": [
       "L-KUEANSHAP-E",
-      "L-KUEANSHEAREF"
+      "L-KUEANSHEAREF",
+      "L-KUEANSHAGH-E"
     ],
     "notes": "YANLIŞLIK ailesi (къуанш).",
     "productivity": {
-      "totalLexemes": 2
+      "totalLexemes": 3
     },
     "_source": "lexemes-sync-2026"
   },
@@ -57127,11 +57386,12 @@
     "morphemeIds": [],
     "lexemeIds": [
       "L-GHUANEPSHCH-ANE",
-      "L-ZEPEGHUANIBL"
+      "L-ZEPEGHUANIBL",
+      "L-GHUANTK1U"
     ],
     "notes": "holey ailesi (гъуан).",
     "productivity": {
-      "totalLexemes": 2
+      "totalLexemes": 3
     },
     "_source": "lexemes-sync-2026"
   },
@@ -57204,11 +57464,12 @@
       "L-KEYZETEK-UETYN",
       "L-KEIK-UETYZHYN",
       "L-KEYDEK-UETYN",
-      "L-PYK-UETYN"
+      "L-PYK-UETYN",
+      "L-GHEK-UETYN"
     ],
     "notes": "ARALAŞMAK ailesi (кӀуэт).",
     "productivity": {
-      "totalLexemes": 20
+      "totalLexemes": 21
     },
     "_source": "lexemes-sync-2026"
   },
@@ -57299,11 +57560,12 @@
     "lexemeIds": [
       "L-ZEXEUBLAK-UE",
       "L-KEEUBLAK-UE",
-      "L-UBLAK-UE"
+      "L-UBLAK-UE",
+      "L-MYUBLE"
     ],
     "notes": "instigator, ringleader ailesi (убл).",
     "productivity": {
-      "totalLexemes": 3
+      "totalLexemes": 4
     },
     "_source": "lexemes-sync-2026"
   },
@@ -57433,11 +57695,12 @@
       "L-XUZETELHHEN",
       "L-XELHHEGHU",
       "L-ZESHCH-ELHHEN",
-      "L-KEYGUELHHE-NYGUELHHE"
+      "L-KEYGUELHHE-NYGUELHHE",
+      "L-TELHHA"
     ],
     "notes": "Toplamak ailesi (лъхь).",
     "productivity": {
-      "totalLexemes": 18
+      "totalLexemes": 19
     },
     "_source": "lexemes-sync-2026"
   },
@@ -57455,11 +57718,15 @@
       "L-ZETEGHEK-UEDEN",
       "L-ZETEK-UEDEN",
       "L-XEK-UEDYK-YN",
-      "L-AUTO-01134"
+      "L-AUTO-01134",
+      "L-GHEK1UED",
+      "L-XEK-UEDA",
+      "L-GHEK-UEDAUE",
+      "L-TEK-UEDA"
     ],
     "notes": "KAÇMAK ailesi (кӀуэд).",
     "productivity": {
-      "totalLexemes": 4
+      "totalLexemes": 8
     },
     "_source": "lexemes-sync-2026"
   },
@@ -57567,11 +57834,12 @@
       "L-KEIT-ESHCH-YK-YN",
       "L-T-ESHCH-YN",
       "L-IT-ESHCH-YHYN",
-      "L-KEET-ESHCH-YN"
+      "L-KEET-ESHCH-YN",
+      "L-T-ESHCH-A"
     ],
     "notes": "BOŞALTMAK ailesi (тӀэщӀ).",
     "productivity": {
-      "totalLexemes": 4
+      "totalLexemes": 5
     },
     "_source": "lexemes-sync-2026"
   },
@@ -57640,11 +57908,12 @@
       "L-GHESHCH-EIN",
       "L-ZIGHESHCH-EIK-YN",
       "L-KEEGHESHCH-EIN",
-      "L-KEEGHESHCH-EIZHYN"
+      "L-KEEGHESHCH-EIZHYN",
+      "L-DESHCH-EYN"
     ],
     "notes": "DEVRILMEK ailesi (щӀей).",
     "productivity": {
-      "totalLexemes": 5
+      "totalLexemes": 6
     },
     "_source": "lexemes-sync-2026"
   },
@@ -57859,11 +58128,13 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-SATUUSHCH-E"
+      "L-SATUUSHCH-E",
+      "L-AUTO-01553",
+      "L-AUTO-01554"
     ],
     "notes": "perakendeci ailesi (сату).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 3
     },
     "_source": "lexemes-sync-2026"
   },
@@ -57877,11 +58148,12 @@
     "morphemeIds": [],
     "lexemeIds": [
       "L-ST-OL",
-      "L-ST-OLTEPKHUE"
+      "L-ST-OLTEPKHUE",
+      "L-AUTO-01557"
     ],
     "notes": "sıra ailesi (стӀол).",
     "productivity": {
-      "totalLexemes": 2
+      "totalLexemes": 3
     },
     "_source": "lexemes-sync-2026"
   },
@@ -57962,11 +58234,12 @@
       "L-ZYTELHESHCH-YHYN",
       "L-KEELHESHCH-YHYN",
       "L-XUTELHESHCH-YHYN",
-      "L-URYLHESHCH-YK-YN"
+      "L-URYLHESHCH-YK-YN",
+      "L-KEYTELHESHCH-EN"
     ],
     "notes": "Silmek ailesi (лъэщӀ).",
     "productivity": {
-      "totalLexemes": 16
+      "totalLexemes": 17
     },
     "_source": "lexemes-sync-2026"
   },
@@ -58305,11 +58578,14 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-MAKEYKHU"
+      "L-MAKEYKHU",
+      "L-AUTO-01451",
+      "L-AUTO-01452",
+      "L-AUTO-01453"
     ],
     "notes": "bas ailesi (макъ).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 4
     },
     "_source": "lexemes-sync-2026"
   },
@@ -58511,11 +58787,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-ERYSKEYPKHE"
+      "L-ERYSKEYPKHE",
+      "L-ERYSKEYPKHEU"
     ],
     "notes": "provisions ailesi (ерыскъы).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 2
     },
     "_source": "lexemes-sync-2026"
   },
@@ -58595,11 +58872,13 @@
       "L-EKUEP-E",
       "L-ZESHCH-EGHEKUEEN",
       "L-XUEKUEN",
-      "L-IKUE-IKUEZHK-E"
+      "L-IKUE-IKUEZHK-E",
+      "L-DE-EPYKUEEGHUNSHE",
+      "L-AUTO-00290"
     ],
     "notes": "быть достаточным для кого-чего-л ailesi (къу).",
     "productivity": {
-      "totalLexemes": 9
+      "totalLexemes": 11
     },
     "_source": "lexemes-sync-2026"
   },
@@ -58617,11 +58896,12 @@
       "L-ZEXEPSHCH-YPSHCH-YK-YN",
       "L-AUTO-00620",
       "L-AUTO-01016",
-      "L-AUTO-01017"
+      "L-AUTO-01017",
+      "L-PSHCH-YPSHCH"
     ],
     "notes": "parlamak ailesi (пщӀыпщӀ).",
     "productivity": {
-      "totalLexemes": 5
+      "totalLexemes": 6
     },
     "_source": "lexemes-sync-2026"
   },
@@ -58645,11 +58925,13 @@
       "L-GHE-EBEN",
       "L-F-E-EBYN",
       "L-AUTO-00646",
-      "L-AUTO-00654"
+      "L-AUTO-00654",
+      "L-ZEMY-EBA",
+      "L-ZERY-EBE"
     ],
     "notes": "kemik ailesi (Ӏэб).",
     "productivity": {
-      "totalLexemes": 8
+      "totalLexemes": 10
     },
     "_source": "lexemes-sync-2026"
   },
@@ -58681,11 +58963,12 @@
     "morphemeIds": [],
     "lexemeIds": [
       "L-CHENDZHESHCHAK-UE",
-      "L-AUTO-01146"
+      "L-AUTO-01146",
+      "L-AUTO-01654"
     ],
     "notes": "öğretmen ailesi (чэнджэщ).",
     "productivity": {
-      "totalLexemes": 2
+      "totalLexemes": 3
     },
     "_source": "lexemes-sync-2026"
   },
@@ -58782,11 +59065,12 @@
     "morphemeIds": [],
     "lexemeIds": [
       "L-ZDZHYZDZHYN",
-      "L-ZESHCH-EZDZHYZDZHEN"
+      "L-ZESHCH-EZDZHYZDZHEN",
+      "L-ZDZHYZDZH"
     ],
     "notes": "zangır zangır titretmek ailesi (зджыздж).",
     "productivity": {
-      "totalLexemes": 2
+      "totalLexemes": 3
     },
     "_source": "lexemes-sync-2026"
   },
@@ -58828,11 +59112,13 @@
       "L-ZEGHEDZHELEN",
       "L-ZERYGHEDZHELEN",
       "L-XEGHEDZHELYN",
-      "L-XEDZHELYN"
+      "L-XEDZHELYN",
+      "L-DZHE-LEN",
+      "L-KEYXEDZHELYN"
     ],
     "notes": "DÜŞMEK 3 ailesi (джэл).",
     "productivity": {
-      "totalLexemes": 9
+      "totalLexemes": 11
     },
     "_source": "lexemes-sync-2026"
   },
@@ -58977,11 +59263,12 @@
       "L-ZEGUEZEGHEN",
       "L-ZERYSHCH-EMYZEGHEN",
       "L-UZEGHEN",
-      "L-AUTO-00661"
+      "L-AUTO-00661",
+      "L-ZEMYZEGH"
     ],
     "notes": "удержаться <font color='slategray' ailesi (зэгъ).",
     "productivity": {
-      "totalLexemes": 7
+      "totalLexemes": 8
     },
     "_source": "lexemes-sync-2026"
   },
@@ -59012,11 +59299,12 @@
     "lexemeIds": [
       "L-ZESHCH-EULHIEN",
       "L-IULHIIHYN",
-      "L-ZERYULHIIHYN"
+      "L-ZERYULHIIHYN",
+      "L-MYULHIY"
     ],
     "notes": "BÜSBÜTÜN ailesi (улъий).",
     "productivity": {
-      "totalLexemes": 3
+      "totalLexemes": 4
     },
     "_source": "lexemes-sync-2026"
   },
@@ -59028,11 +59316,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-UMEMEN"
+      "L-UMEMEN",
+      "L-GHEUMEMEN"
     ],
     "notes": "pazarlık etmek / sallanmak, salınmak ailesi (умэм).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 2
     },
     "_source": "lexemes-sync-2026"
   },
@@ -59088,11 +59377,12 @@
     "morphemeIds": [],
     "lexemeIds": [
       "L-ZEXEUTS-YNYHYN",
-      "L-UTS-YNYN"
+      "L-UTS-YNYN",
+      "L-UTS-YNA"
     ],
     "notes": "BÜSBÜTÜN ailesi (уцӀын).",
     "productivity": {
-      "totalLexemes": 2
+      "totalLexemes": 3
     },
     "_source": "lexemes-sync-2026"
   },
@@ -59172,11 +59462,13 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-K-YGH"
+      "L-K-YGH",
+      "L-KEYDEGHEK-YGHUE",
+      "L-K-YGH-SYGH"
     ],
     "notes": "çikik ailesi (кӀыгъ).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 3
     },
     "_source": "lexemes-sync-2026"
   },
@@ -59663,11 +59955,12 @@
     "morphemeIds": [],
     "lexemeIds": [
       "L-F-ANASHCHHE",
-      "L-F-ANEK"
+      "L-F-ANEK",
+      "L-F1ANE"
     ],
     "notes": "Kürek kemiği ailesi (фӀан).",
     "productivity": {
-      "totalLexemes": 2
+      "totalLexemes": 3
     },
     "_source": "lexemes-sync-2026"
   },
@@ -59697,11 +59990,12 @@
       "L-FYZYFE",
       "L-FYZYSHEEFE",
       "L-FYZABEKUEE-FYZABEPKHU",
-      "L-AUTO-00633"
+      "L-AUTO-00633",
+      "L-AUTO-01612"
     ],
     "notes": "BEKÂR erkek ailesi (фыз).",
     "productivity": {
-      "totalLexemes": 10
+      "totalLexemes": 11
     },
     "_source": "lexemes-sync-2026"
   },
@@ -59747,11 +60041,15 @@
     "morphemeIds": [],
     "lexemeIds": [
       "L-KHYDZHEBZYGHE",
-      "L-KHYDZHEBZYGHUE"
+      "L-KHYDZHEBZYGHUE",
+      "L-KHYDZHEBZLHYKHU",
+      "L-KHYDZHEBZTS1YK1U",
+      "L-KHYDZHEBZTS-YK-U",
+      "L-AUTO-01629"
     ],
     "notes": "virginity, chastity ailesi (хъыджэбз).",
     "productivity": {
-      "totalLexemes": 2
+      "totalLexemes": 6
     },
     "_source": "lexemes-sync-2026"
   },
@@ -59809,11 +60107,13 @@
     "lexemeIds": [
       "L-SHECHAK-UE",
       "L-AUTO-00764",
-      "L-AUTO-01195"
+      "L-AUTO-01195",
+      "L-AUTO-01660",
+      "L-AUTO-01661"
     ],
     "notes": "weigher ailesi (шэч).",
     "productivity": {
-      "totalLexemes": 3
+      "totalLexemes": 5
     },
     "_source": "lexemes-sync-2026"
   },
@@ -59900,11 +60200,13 @@
       "L-ZEPXRYKUETYK-YN",
       "L-KEEKUETEZHYN",
       "L-TEKUETYHYN",
-      "L-XEKUETEN"
+      "L-XEKUETEN",
+      "L-MYKUETE",
+      "L-EKUETE"
     ],
     "notes": "Kırmak ailesi (къут).",
     "productivity": {
-      "totalLexemes": 7
+      "totalLexemes": 9
     },
     "_source": "lexemes-sync-2026"
   },
@@ -59956,11 +60258,13 @@
     "lexemeIds": [
       "L-YHSYH",
       "L-ZE-YHEGHU",
-      "L-AUTO-01237"
+      "L-AUTO-01237",
+      "L-KEYZE-YHA",
+      "L-ZY-YHA"
     ],
     "notes": "Ağacın alt kısmı ailesi (Ӏыхь).",
     "productivity": {
-      "totalLexemes": 3
+      "totalLexemes": 5
     },
     "_source": "lexemes-sync-2026"
   },
@@ -60442,11 +60746,13 @@
       "L-ZYGHEGUSHXUEN",
       "L-ZYTEGHEGUSHXUEN",
       "L-ZERYTEGHEGUSHXUEN",
-      "L-KEYZERYGHEGUSHXUEZHYN"
+      "L-KEYZERYGHEGUSHXUEZHYN",
+      "L-TEGUSHXUA",
+      "L-KEEGUSHXUA"
     ],
     "notes": "AHBAB ailesi (гушху).",
     "productivity": {
-      "totalLexemes": 4
+      "totalLexemes": 6
     },
     "_source": "lexemes-sync-2026"
   },
@@ -60458,11 +60764,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-GHUDEGYN"
+      "L-GHUDEGYN",
+      "L-GHUDE-BADZE"
     ],
     "notes": "İlaç ailesi (гъуд).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 2
     },
     "_source": "lexemes-sync-2026"
   },
@@ -60535,11 +60842,12 @@
     "lexemeIds": [
       "L-KEEGHEPSHCHTYRYZHYN",
       "L-KEEPSHCHTYRYN",
-      "L-AUTO-00960"
+      "L-AUTO-00960",
+      "L-PSHCHTYRYN"
     ],
     "notes": "нагреть, подогреть что-л ailesi (пщтыр).",
     "productivity": {
-      "totalLexemes": 3
+      "totalLexemes": 4
     },
     "_source": "lexemes-sync-2026"
   },
@@ -60567,11 +60875,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-KHERLY"
+      "L-KHERLY",
+      "L-KHERK1E"
     ],
     "notes": "uğurlu, hayırlı ailesi (хъер).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 2
     },
     "_source": "lexemes-sync-2026"
   },
@@ -60681,11 +60990,12 @@
     "morphemeIds": [],
     "lexemeIds": [
       "L-E-UYASHCH-E",
-      "L-E-UYASHCH-AGHE"
+      "L-E-UYASHCH-AGHE",
+      "L-E-UYASHCH-EN"
     ],
     "notes": "mischief ailesi (ӀуящӀ).",
     "productivity": {
-      "totalLexemes": 2
+      "totalLexemes": 3
     },
     "_source": "lexemes-sync-2026"
   },
@@ -60797,11 +61107,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-ZHANT-EDES"
+      "L-ZHANT-EDES",
+      "L-ZHANT1E"
     ],
     "notes": "BAŞKÖŞE ailesi (жьантӀ).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 2
     },
     "_source": "lexemes-sync-2026"
   },
@@ -60837,11 +61148,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-ZAL"
+      "L-ZAL",
+      "L-AUTO-01560"
     ],
     "notes": "SALON ailesi (зал).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 2
     },
     "_source": "lexemes-sync-2026"
   },
@@ -61108,11 +61420,12 @@
       "L-KEET-EP-YN",
       "L-ZESHCH-ET-EP-YK-YN",
       "L-KEYSHCH-ET-EP-YK-YZHYN",
-      "L-ZEPYT-EP-YK-YN"
+      "L-ZEPYT-EP-YK-YN",
+      "L-T-EP-A"
     ],
     "notes": "TOMURCUKLANMAK ailesi (тӀэпӀ).",
     "productivity": {
-      "totalLexemes": 6
+      "totalLexemes": 7
     },
     "_source": "lexemes-sync-2026"
   },
@@ -61128,11 +61441,13 @@
     "lexemeIds": [
       "L-K-EZYZYN",
       "L-KEEK-EZYZYN",
-      "L-ZESHCH-EK-EZYZEN"
+      "L-ZESHCH-EK-EZYZEN",
+      "L-K-EZYZ",
+      "L-K-EZYZU"
     ],
     "notes": "TIRILDEMEK ailesi (кӀэзыз).",
     "productivity": {
-      "totalLexemes": 3
+      "totalLexemes": 5
     },
     "_source": "lexemes-sync-2026"
   },
@@ -61162,11 +61477,12 @@
     "morphemeIds": [],
     "lexemeIds": [
       "L-ZESHCH-ETS-UUEN",
-      "L-TETS-UUK-YN"
+      "L-TETS-UUK-YN",
+      "L-TS-UUNYGHE"
     ],
     "notes": "i (мэцӀу) неперех. гл. блестеть, сверкать (i (ne). ch. shine) ailesi (цӀуу).",
     "productivity": {
-      "totalLexemes": 2
+      "totalLexemes": 3
     },
     "_source": "lexemes-sync-2026"
   },
@@ -61178,11 +61494,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-K-YLYN"
+      "L-K-YLYN",
+      "L-K-YL"
     ],
     "notes": "gidiklamak ailesi (кӀыл).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 2
     },
     "_source": "lexemes-sync-2026"
   },
@@ -61212,11 +61529,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-K-ERYPSHCH-EN"
+      "L-K-ERYPSHCH-EN",
+      "L-ZYK-ERYPSHCH-E"
     ],
     "notes": "SARKINTILIK ailesi (кӀэрыпщӀэ).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 2
     },
     "_source": "lexemes-sync-2026"
   },
@@ -61441,11 +61759,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-KHYNK-EL"
+      "L-KHYNK-EL",
+      "L-KHYNK1EL"
     ],
     "notes": "MANTI ailesi (хъынкӀэл).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 2
     },
     "_source": "lexemes-sync-2026"
   },
@@ -61647,11 +61966,12 @@
     "morphemeIds": [],
     "lexemeIds": [
       "L-XEP-ENK-YK-YN",
-      "L-GHEP-ENK-YN"
+      "L-GHEP-ENK-YN",
+      "L-GHEP-ENK-A"
     ],
     "notes": "TEBARÜZ ailesi (пӀэнкӀ).",
     "productivity": {
-      "totalLexemes": 2
+      "totalLexemes": 3
     },
     "_source": "lexemes-sync-2026"
   },
@@ -61682,11 +62002,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-KEEUTS"
+      "L-KEEUTS",
+      "L-KEEUA"
     ],
     "notes": "Yastık ailesi (къэу).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 2
     },
     "_source": "lexemes-sync-2026"
   },
@@ -62099,11 +62420,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-PYUHYN"
+      "L-PYUHYN",
+      "L-KEEZYUH"
     ],
     "notes": "tartaklamak ailesi (ухь).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 2
     },
     "_source": "lexemes-sync-2026"
   },
@@ -62163,11 +62485,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-T-O"
+      "L-T-O",
+      "L-T-ONEY"
     ],
     "notes": "bacaksız ailesi (тӀо).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 2
     },
     "_source": "lexemes-sync-2026"
   },
@@ -62216,11 +62539,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-TKHYH"
+      "L-TKHYH",
+      "L-KEETKHYHA"
     ],
     "notes": "OYMA ailesi (тхъыхь).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 2
     },
     "_source": "lexemes-sync-2026"
   },
@@ -62330,11 +62654,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-KHARBYZYKU"
+      "L-KHARBYZYKU",
+      "L-KHARBYZXADE"
     ],
     "notes": "Kas eti, kırmızı et ailesi (хъарбыз).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 2
     },
     "_source": "lexemes-sync-2026"
   },
@@ -62394,11 +62719,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-KHESEPYL"
+      "L-KHESEPYL",
+      "L-KHESEP"
     ],
     "notes": "hayvan ailesi (хъэсэп).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 2
     },
     "_source": "lexemes-sync-2026"
   },
@@ -62480,11 +62806,13 @@
       "L-SHEIBZHE",
       "L-SHEYAFE",
       "L-SHEYEFAP-E",
-      "L-SHEYUDZ"
+      "L-SHEYUDZ",
+      "L-SHEYBZHE",
+      "L-AUTO-01655"
     ],
     "notes": "бот. чай ( Fhea s ailesi (шей).",
     "productivity": {
-      "totalLexemes": 4
+      "totalLexemes": 6
     },
     "_source": "lexemes-sync-2026"
   },
@@ -62584,11 +62912,12 @@
       "L-SHCHAUAP-E",
       "L-SHCHAUEKUEET",
       "L-SHCHAUE-YGH",
-      "L-SHCHAUEKUEEDZE"
+      "L-SHCHAUEKUEEDZE",
+      "L-KEYZEGHESHCHAUE"
     ],
     "notes": "iltica ailesi (щау).",
     "productivity": {
-      "totalLexemes": 4
+      "totalLexemes": 5
     },
     "_source": "lexemes-sync-2026"
   },
@@ -62602,11 +62931,12 @@
     "morphemeIds": [],
     "lexemeIds": [
       "L-SHCHYGHUPSHCHENYGHE",
-      "L-AUTO-01232"
+      "L-AUTO-01232",
+      "L-GHUPSHCHSHXIY"
     ],
     "notes": "oblivion ailesi (гъупщ).",
     "productivity": {
-      "totalLexemes": 2
+      "totalLexemes": 3
     },
     "_source": "lexemes-sync-2026"
   },
@@ -62706,11 +63036,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-ETIKE"
+      "L-ETIKE",
+      "L-ETIKA"
     ],
     "notes": "ahlaki ailesi (этик).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 2
     },
     "_source": "lexemes-sync-2026"
   },
@@ -62796,11 +63127,13 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-ILHESYSHCH-E"
+      "L-ILHESYSHCH-E",
+      "L-AUTO-01399",
+      "L-AUTO-01400"
     ],
     "notes": "yil ailesi (илъэс).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 3
     },
     "_source": "lexemes-sync-2026"
   },
@@ -62814,11 +63147,12 @@
     "morphemeIds": [],
     "lexemeIds": [
       "L-KEEKEEIN",
-      "L-DEKEEIN"
+      "L-DEKEEIN",
+      "L-KEEKEEY"
     ],
     "notes": "geğirmek ailesi (къей).",
     "productivity": {
-      "totalLexemes": 2
+      "totalLexemes": 3
     },
     "_source": "lexemes-sync-2026"
   },
@@ -62833,11 +63167,12 @@
     "lexemeIds": [
       "L-KEEKHUNSHCH-EN",
       "L-ZYKHUNSHCH-EN",
-      "L-AUTO-01089"
+      "L-AUTO-01089",
+      "L-KHUNSHCH1YN"
     ],
     "notes": "robbery ailesi (хъунщӀ).",
     "productivity": {
-      "totalLexemes": 3
+      "totalLexemes": 4
     },
     "_source": "lexemes-sync-2026"
   },
@@ -63179,11 +63514,12 @@
       "L-DEUT-YPSHCHHEIN",
       "L-IUT-YPSHCHHEN",
       "L-DEUT-YPSHCHHEN",
-      "L-AUTO-01143"
+      "L-AUTO-01143",
+      "L-K-ERUT-YPSHCHHEN"
     ],
     "notes": "KARIŞTIRMAK ailesi (утӀыпщхь).",
     "productivity": {
-      "totalLexemes": 4
+      "totalLexemes": 5
     },
     "_source": "lexemes-sync-2026"
   },
@@ -63285,11 +63621,13 @@
       "L-ZYK-ERYUBGHUEN",
       "L-ZYUBGHUAUE",
       "L-ZETEUBGHUEN",
-      "L-KEEUBGHUN"
+      "L-KEEUBGHUN",
+      "L-UBGHUEN",
+      "L-ZYUBGHUNYGHE"
     ],
     "notes": "genişlemek ailesi (убгъу).",
     "productivity": {
-      "totalLexemes": 4
+      "totalLexemes": 6
     },
     "_source": "lexemes-sync-2026"
   },
@@ -63379,11 +63717,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-ISHCH-Y-UK-E"
+      "L-ISHCH-Y-UK-E",
+      "L-ISHCH-Y-U"
     ],
     "notes": "ÜSTÜNE ailesi (щӀыӀу).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 2
     },
     "_source": "lexemes-sync-2026"
   },
@@ -63478,11 +63817,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-GHEPSHCHK-UAUE"
+      "L-GHEPSHCHK-UAUE",
+      "L-GHEPSHCHK-UA"
     ],
     "notes": "secretly ailesi (гъэпщкӀуа).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 2
     },
     "_source": "lexemes-sync-2026"
   },
@@ -63694,11 +64034,14 @@
       "L-TXUANE",
       "L-TXUE",
       "L-AUTO-01023",
-      "L-AUTO-01024"
+      "L-AUTO-01024",
+      "L-TXUSHCH1RE-TXU",
+      "L-AUTO-01505",
+      "L-AUTO-01687"
     ],
     "notes": "beş ailesi (тху).",
     "productivity": {
-      "totalLexemes": 6
+      "totalLexemes": 9
     },
     "_source": "lexemes-sync-2026"
   },
@@ -63796,11 +64139,12 @@
     "morphemeIds": [],
     "lexemeIds": [
       "L-CHEBAK-UE",
-      "L-CHEBEKHARZH"
+      "L-CHEBEKHARZH",
+      "L-CHEBE"
     ],
     "notes": "kabe ailesi (чэб).",
     "productivity": {
-      "totalLexemes": 2
+      "totalLexemes": 3
     },
     "_source": "lexemes-sync-2026"
   },
@@ -63924,11 +64268,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-ZESHCH-EDYKEEN"
+      "L-ZESHCH-EDYKEEN",
+      "L-DYKEA"
     ],
     "notes": "dondurmak ailesi (дыкъ).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 2
     },
     "_source": "lexemes-sync-2026"
   },
@@ -63940,11 +64285,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-ZHEGHURNAU"
+      "L-ZHEGHURNAU",
+      "L-ZHEGHU-ADY"
     ],
     "notes": "BİÇİMSİZ ailesi (жэгъу).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 2
     },
     "_source": "lexemes-sync-2026"
   },
@@ -64288,11 +64634,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-KEIKEYU"
+      "L-KEIKEYU",
+      "L-KEIKE"
     ],
     "notes": "slantwise, obliquely, aslant, askew, asquint. ailesi (къикъ).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 2
     },
     "_source": "lexemes-sync-2026"
   },
@@ -64512,11 +64859,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-GENETIKE"
+      "L-GENETIKE",
+      "L-GENETIKA"
     ],
     "notes": "GENETIK ailesi (генетик).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 2
     },
     "_source": "lexemes-sync-2026"
   },
@@ -64624,11 +64972,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-GRAFIKE"
+      "L-GRAFIKE",
+      "L-GRAFIKA"
     ],
     "notes": "GRAFI ailesi (график).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 2
     },
     "_source": "lexemes-sync-2026"
   },
@@ -64704,11 +65053,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-GHEYSHEIN"
+      "L-GHEYSHEIN",
+      "L-GHEYSHEY"
     ],
     "notes": "Hasta ailesi (гъейшей).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 2
     },
     "_source": "lexemes-sync-2026"
   },
@@ -64720,11 +65070,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-EMY-USETSYSNE-U"
+      "L-EMY-USETSYSNE-U",
+      "L-ZEMY-USA"
     ],
     "notes": "dokunmak ailesi (Ӏус).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 2
     },
     "_source": "lexemes-sync-2026"
   },
@@ -64852,11 +65203,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-DZYHMYSHCH-YNYGHE"
+      "L-DZYHMYSHCH-YNYGHE",
+      "L-AUTO-01329"
     ],
     "notes": "indecision ailesi (дзыхь).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 2
     },
     "_source": "lexemes-sync-2026"
   },
@@ -65078,11 +65430,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-UZESHCH-AK-UE"
+      "L-UZESHCH-AK-UE",
+      "L-UZESHCH-YN"
     ],
     "notes": "öğretmen ailesi (узэщӀ).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 2
     },
     "_source": "lexemes-sync-2026"
   },
@@ -65116,11 +65469,12 @@
       "L-EBEKUEEXYN",
       "L-UBEKUEK-YN",
       "L-ZEDEBEKUEEN",
-      "L-KEYDEBEKUEK-YN"
+      "L-KEYDEBEKUEK-YN",
+      "L-KEEBEKUEN"
     ],
     "notes": "İnmek ailesi (бэкъу).",
     "productivity": {
-      "totalLexemes": 4
+      "totalLexemes": 5
     },
     "_source": "lexemes-sync-2026"
   },
@@ -65186,11 +65540,12 @@
       "L-ZHYZHAPLHEU",
       "L-ZHYZHERYUE",
       "L-ZHYZHAPLHE",
-      "L-AUTO-01349"
+      "L-AUTO-01349",
+      "L-ZHYZHAGHE"
     ],
     "notes": "uzakta ailesi (жыжь).",
     "productivity": {
-      "totalLexemes": 4
+      "totalLexemes": 5
     },
     "_source": "lexemes-sync-2026"
   },
@@ -65328,11 +65683,13 @@
       "L-ZEGHELHYTEN",
       "L-ZERYLHYTEN",
       "L-ZEXELHYTEN",
-      "L-ZELHYTYN"
+      "L-ZELHYTYN",
+      "L-LHYT",
+      "L-LHYTAGHE"
     ],
     "notes": "SAYDIRMAK ailesi (лъыт).",
     "productivity": {
-      "totalLexemes": 4
+      "totalLexemes": 6
     },
     "_source": "lexemes-sync-2026"
   },
@@ -65397,11 +65754,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-ZYGHE-YHSHYHYN"
+      "L-ZYGHE-YHSHYHYN",
+      "L-YHSHYHYN"
     ],
     "notes": "Keyifsizlik, rahatsızlık ailesi (Ӏыхьшыхь).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 2
     },
     "_source": "lexemes-sync-2026"
   },
@@ -65517,11 +65875,13 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-ZYZEPSHCHYTYN"
+      "L-ZYZEPSHCHYTYN",
+      "L-KEEPSHCHYT",
+      "L-KEEPSHCHYTA"
     ],
     "notes": "AHBAB ailesi (пщыт).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 3
     },
     "_source": "lexemes-sync-2026"
   },
@@ -65601,11 +65961,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-XEUMEZEXEN"
+      "L-XEUMEZEXEN",
+      "L-ZYUMEZEXYN"
     ],
     "notes": "Deri ailesi (умэзэх).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 2
     },
     "_source": "lexemes-sync-2026"
   },
@@ -65721,11 +66082,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-ZERYGHENYBZHEGHUN"
+      "L-ZERYGHENYBZHEGHUN",
+      "L-AUTO-01413"
     ],
     "notes": "ilişkiler ailesi (ныбжьэгъу).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 2
     },
     "_source": "lexemes-sync-2026"
   },
@@ -66424,11 +66786,13 @@
     "morphemeIds": [],
     "lexemeIds": [
       "L-KEABZABZE",
-      "L-KEABZENYGHE"
+      "L-KEABZENYGHE",
+      "L-GHEKEABZEN",
+      "L-KEABZAGH-E"
     ],
     "notes": "TERTEMIZ ailesi (къабз).",
     "productivity": {
-      "totalLexemes": 2
+      "totalLexemes": 4
     },
     "_source": "lexemes-sync-2026"
   },
@@ -66480,11 +66844,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-XEUSHCHEBYHYN"
+      "L-XEUSHCHEBYHYN",
+      "L-USHCHEBA"
     ],
     "notes": "pudra ailesi (ущэб).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 2
     },
     "_source": "lexemes-sync-2026"
   },
@@ -66516,11 +66881,12 @@
     "morphemeIds": [],
     "lexemeIds": [
       "L-KEILHEIK-YN",
-      "L-ULHEIK-YN"
+      "L-ULHEIK-YN",
+      "L-LHEYSHYRYKUE"
     ],
     "notes": "içinden düşmek ailesi (лъей).",
     "productivity": {
-      "totalLexemes": 2
+      "totalLexemes": 3
     },
     "_source": "lexemes-sync-2026"
   },
@@ -66673,11 +67039,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-KEEUDYNYHYN"
+      "L-KEEUDYNYHYN",
+      "L-PXYRYUDYN"
     ],
     "notes": "Yonga ailesi (удын).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 2
     },
     "_source": "lexemes-sync-2026"
   },
@@ -67355,11 +67722,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-SALAT"
+      "L-SALAT",
+      "L-AUTO-01551"
     ],
     "notes": "salata ailesi (салат).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 2
     },
     "_source": "lexemes-sync-2026"
   },
@@ -67812,11 +68180,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-UFENSHCH-YN"
+      "L-UFENSHCH-YN",
+      "L-UFENSHCH-A"
     ],
     "notes": "Top ailesi (уфэнщӀ).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 2
     },
     "_source": "lexemes-sync-2026"
   },
@@ -67868,11 +68237,13 @@
     "morphemeIds": [],
     "lexemeIds": [
       "L-DINYNSHAGHE",
-      "L-AUTO-00536"
+      "L-AUTO-00536",
+      "L-AUTO-00537",
+      "L-AUTO-01333"
     ],
     "notes": "DINSIZLIK ailesi (дин).",
     "productivity": {
-      "totalLexemes": 2
+      "totalLexemes": 4
     },
     "_source": "lexemes-sync-2026"
   },
@@ -67966,11 +68337,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-GHEK-ESHCHKHEN"
+      "L-GHEK-ESHCHKHEN",
+      "L-KHUSHCHKHUE"
     ],
     "notes": "наклонить, нагнуть, склонить что-л ailesi (щхъ).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 2
     },
     "_source": "lexemes-sync-2026"
   },
@@ -67986,11 +68358,13 @@
       "L-XETS-YXUK-YN",
       "L-ZERYGHETS-YXUN",
       "L-ZEGHETS-YXUN",
-      "L-KEETS-YXUZHYN"
+      "L-KEETS-YXUZHYN",
+      "L-AUTO-01433",
+      "L-AUTO-01677"
     ],
     "notes": "bilinmeyen ailesi (цӀыху).",
     "productivity": {
-      "totalLexemes": 4
+      "totalLexemes": 6
     },
     "_source": "lexemes-sync-2026"
   },
@@ -68258,11 +68632,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-EPOPEE"
+      "L-EPOPEE",
+      "L-EPOPEY"
     ],
     "notes": "EPOPE ailesi (эпопей).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 2
     },
     "_source": "lexemes-sync-2026"
   },
@@ -68523,11 +68898,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-ZYGHEMEXYN"
+      "L-ZYGHEMEXYN",
+      "L-MEXA"
     ],
     "notes": "Nöbet ailesi (мэх).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 2
     },
     "_source": "lexemes-sync-2026"
   },
@@ -68751,11 +69127,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-ZEXEUSHK-UMP-EN"
+      "L-ZEXEUSHK-UMP-EN",
+      "L-USHK-UMP-A"
     ],
     "notes": "ovmak ailesi (ушкӀумпӀ).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 2
     },
     "_source": "lexemes-sync-2026"
   },
@@ -68991,11 +69368,13 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-AGROTEXNIKE"
+      "L-AGROTEXNIKE",
+      "L-AGROTEXNIKA",
+      "L-AGROTEXNIK"
     ],
     "notes": "AĞROTEKNIK ailesi (агротехник).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 3
     },
     "_source": "lexemes-sync-2026"
   },
@@ -69089,11 +69468,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-ALGEBRE"
+      "L-ALGEBRE",
+      "L-ALGEBRA"
     ],
     "notes": "CEBIR ailesi (алгебр).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 2
     },
     "_source": "lexemes-sync-2026"
   },
@@ -69442,11 +69822,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-ATAKE"
+      "L-ATAKE",
+      "L-ATAKA"
     ],
     "notes": "saldırgan ailesi (атак).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 2
     },
     "_source": "lexemes-sync-2026"
   },
@@ -69682,11 +70063,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-BALERINE"
+      "L-BALERINE",
+      "L-BALERINA"
     ],
     "notes": "ballerina ailesi (балерин).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 2
     },
     "_source": "lexemes-sync-2026"
   },
@@ -69846,11 +70228,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-BANKROT"
+      "L-BANKROT",
+      "L-AUTO-01293"
     ],
     "notes": "iflas ailesi (банкрот).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 2
     },
     "_source": "lexemes-sync-2026"
   },
@@ -69926,11 +70309,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-BATAREE"
+      "L-BATAREE",
+      "L-BATAREY"
     ],
     "notes": "pil ailesi (батарей).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 2
     },
     "_source": "lexemes-sync-2026"
   },
@@ -71266,11 +71650,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-ZERYGHEBELERYGHYN"
+      "L-ZERYGHEBELERYGHYN",
+      "L-BELERYGH"
     ],
     "notes": "каузатив к бэлэрыгъын / Бэлэрыгъын псалъэм и каузатив ailesi (бэлэрыгъ).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 2
     },
     "_source": "lexemes-sync-2026"
   },
@@ -71483,11 +71868,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-DAMBYRU"
+      "L-DAMBYRU",
+      "L-DAMBYRE"
     ],
     "notes": "işitme ailesi (дамбыр).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 2
     },
     "_source": "lexemes-sync-2026"
   },
@@ -71597,11 +71983,13 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-DZHYDZHYN"
+      "L-DZHYDZHYN",
+      "L-DZHYDZHEN",
+      "L-DZHYDZHE"
     ],
     "notes": "parlamak ailesi (джыдж).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 3
     },
     "_source": "lexemes-sync-2026"
   },
@@ -71613,11 +72001,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-ZESHCHYSYK-YN"
+      "L-ZESHCHYSYK-YN",
+      "L-ZEPYRYSYK-YN"
     ],
     "notes": "parlamak ailesi (сыкӀ).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 2
     },
     "_source": "lexemes-sync-2026"
   },
@@ -71695,11 +72084,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-DIAGRAMME"
+      "L-DIAGRAMME",
+      "L-DIAGRAMMA"
     ],
     "notes": "diyagram ailesi (диаграмм).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 2
     },
     "_source": "lexemes-sync-2026"
   },
@@ -71871,11 +72261,13 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-DESHCH-YHYN"
+      "L-DESHCH-YHYN",
+      "L-ZEXESHCH-YHA",
+      "L-ZERYSHCH-YHE"
     ],
     "notes": "ÇAKMAK ailesi (щӀыхь).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 3
     },
     "_source": "lexemes-sync-2026"
   },
@@ -71983,11 +72375,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-NAP-EZYP-EU"
+      "L-NAP-EZYP-EU",
+      "L-NAP-EZYP-EK-E"
     ],
     "notes": "PALANKA ailesi (напӀэзыпӀэ).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 2
     },
     "_source": "lexemes-sync-2026"
   },
@@ -72139,11 +72532,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-KEEBGYNEN"
+      "L-KEEBGYNEN",
+      "L-BGYNA"
     ],
     "notes": "unutmak ailesi (бгын).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 2
     },
     "_source": "lexemes-sync-2026"
   },
@@ -72341,11 +72735,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-ERAGHPSERAGHYU"
+      "L-ERAGHPSERAGHYU",
+      "L-ERAGH-MYGHUEYUE"
     ],
     "notes": "UCU UCUNA ailesi (ерагъ).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 2
     },
     "_source": "lexemes-sync-2026"
   },
@@ -72519,11 +72914,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-ZYGHEZASHCH-E"
+      "L-ZYGHEZASHCH-E",
+      "L-GHEZASHCH1E"
     ],
     "notes": "sanatçı ailesi (защӀэ).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 2
     },
     "_source": "lexemes-sync-2026"
   },
@@ -72632,11 +73028,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-ZEGHEUSHCHYGUN"
+      "L-ZEGHEUSHCHYGUN",
+      "L-USHCHYGUA"
     ],
     "notes": "POZ, DURUŞ ailesi (ущыгу).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 2
     },
     "_source": "lexemes-sync-2026"
   },
@@ -72698,11 +73095,12 @@
     "morphemeIds": [],
     "lexemeIds": [
       "L-ZYGHEZEXUEN",
-      "L-AUTO-00571"
+      "L-AUTO-00571",
+      "L-MYZEXUEN"
     ],
     "notes": "e.g. ch. to justify smb. ailesi (зэху).",
     "productivity": {
-      "totalLexemes": 2
+      "totalLexemes": 3
     },
     "_source": "lexemes-sync-2026"
   },
@@ -72780,11 +73178,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-ZYGHESHCH-EGHUEN"
+      "L-ZYGHESHCH-EGHUEN",
+      "L-GHESHCH-EGHUA"
     ],
     "notes": "Зыгуэр хьэлэмэт къыпщыхъун ailesi (щӀэгъу).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 2
     },
     "_source": "lexemes-sync-2026"
   },
@@ -72797,11 +73196,12 @@
     "morphemeIds": [],
     "lexemeIds": [
       "L-ZYZETESHESHCH-EN",
-      "L-ZYSHESHCH-YN"
+      "L-ZYSHESHCH-YN",
+      "L-KEESHESHCH-YN"
     ],
     "notes": "AHBAB ailesi (шэщӀ).",
     "productivity": {
-      "totalLexemes": 2
+      "totalLexemes": 3
     },
     "_source": "lexemes-sync-2026"
   },
@@ -72845,11 +73245,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-ZYUKEEBZYZHYN"
+      "L-ZYUKEEBZYZHYN",
+      "L-UKEEBZA"
     ],
     "notes": "AYDINLANMAK 1 ailesi (укъэбз).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 2
     },
     "_source": "lexemes-sync-2026"
   },
@@ -72897,11 +73298,12 @@
     "morphemeIds": [],
     "lexemeIds": [
       "L-ZYSHCHYGHAGHYN",
-      "L-AUTO-00635"
+      "L-AUTO-00635",
+      "L-GHAGHA"
     ],
     "notes": "Taşımak, götürmek ailesi (гъагъ).",
     "productivity": {
-      "totalLexemes": 2
+      "totalLexemes": 3
     },
     "_source": "lexemes-sync-2026"
   },
@@ -72983,11 +73385,13 @@
       "L-KEEPKHUX",
       "L-KEYK-ELHYPKHUEN",
       "L-PKHURYLHXUEGHU",
-      "L-PYPKHUESHCH"
+      "L-PYPKHUESHCH",
+      "L-XE-E-XEPKHUE",
+      "L-ZEXE-E-ZEXEPKHUE"
     ],
     "notes": "kuzen ailesi (пхъу).",
     "productivity": {
-      "totalLexemes": 5
+      "totalLexemes": 7
     },
     "_source": "lexemes-sync-2026"
   },
@@ -74789,11 +75193,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-KUERSHYSHCHHE"
+      "L-KUERSHYSHCHHE",
+      "L-KUERSHBZHEN"
     ],
     "notes": "Dağlar ailesi (къурш).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 2
     },
     "_source": "lexemes-sync-2026"
   },
@@ -74824,11 +75229,12 @@
     "lexemeIds": [
       "L-KEEBZHYLAFE",
       "L-KEEBYSHCHHE",
-      "L-AUTO-00808"
+      "L-AUTO-00808",
+      "L-KEEBDEGU"
     ],
     "notes": "sarı ailesi (къэб).",
     "productivity": {
-      "totalLexemes": 3
+      "totalLexemes": 4
     },
     "_source": "lexemes-sync-2026"
   },
@@ -74972,11 +75378,12 @@
     "morphemeIds": [],
     "lexemeIds": [
       "L-LANT-AGHE",
-      "L-AUTO-01438"
+      "L-AUTO-01438",
+      "L-LANT-AGH-E"
     ],
     "notes": "esneklik ailesi (лантӀ).",
     "productivity": {
-      "totalLexemes": 2
+      "totalLexemes": 3
     },
     "_source": "lexemes-sync-2026"
   },
@@ -75199,11 +75606,12 @@
     "lexemeIds": [
       "L-MARSHYNE",
       "L-MARSHYNESHERKH",
-      "L-AUTO-00852"
+      "L-AUTO-00852",
+      "L-MARSHYNERYLAZHE"
     ],
     "notes": "BETONYER ailesi (маршын).",
     "productivity": {
-      "totalLexemes": 3
+      "totalLexemes": 4
     },
     "_source": "lexemes-sync-2026"
   },
@@ -75251,11 +75659,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-MATEMATIKE"
+      "L-MATEMATIKE",
+      "L-MATEMATIK"
     ],
     "notes": "MATEMATİK ailesi (математик).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 2
     },
     "_source": "lexemes-sync-2026"
   },
@@ -75379,11 +75788,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-MEXANIK"
+      "L-MEXANIK",
+      "L-MEXANIKE"
     ],
     "notes": "tamirci ailesi (механик).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 2
     },
     "_source": "lexemes-sync-2026"
   },
@@ -76101,11 +76511,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-ORBITE"
+      "L-ORBITE",
+      "L-ORBIT"
     ],
     "notes": "yörünge ailesi (орбит).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 2
     },
     "_source": "lexemes-sync-2026"
   },
@@ -76487,11 +76898,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-PLASTMASS"
+      "L-PLASTMASS",
+      "L-PLASTMASSE"
     ],
     "notes": "POŞET ailesi (пластмасс).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 2
     },
     "_source": "lexemes-sync-2026"
   },
@@ -77001,11 +77413,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-RAK"
+      "L-RAK",
+      "L-IRAK"
     ],
     "notes": "Kerevit ailesi (рак).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 2
     },
     "_source": "lexemes-sync-2026"
   },
@@ -77065,11 +77478,13 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-RASE"
+      "L-RASE",
+      "L-RASA",
+      "L-RASPISKE"
     ],
     "notes": "ırksal ailesi (рас).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 3
     },
     "_source": "lexemes-sync-2026"
   },
@@ -77561,11 +77976,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-SOYUZ"
+      "L-SOYUZ",
+      "L-SOYUZPSO"
     ],
     "notes": "AYIP ailesi (союз).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 2
     },
     "_source": "lexemes-sync-2026"
   },
@@ -77933,11 +78349,13 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-TELHEGHUEN"
+      "L-TELHEGHUEN",
+      "L-GHELHEGHUN",
+      "L-ZEGHELHEGHUN"
     ],
     "notes": "Görmek ailesi (лъэгъу).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 3
     },
     "_source": "lexemes-sync-2026"
   },
@@ -78703,11 +79121,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-KHUASK-E"
+      "L-KHUASK-E",
+      "L-KHUASK"
     ],
     "notes": "ÇAKIM ailesi (хъуаскӀ).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 2
     },
     "_source": "lexemes-sync-2026"
   },
@@ -78883,11 +79302,12 @@
     "morphemeIds": [],
     "lexemeIds": [
       "L-TS-YVHEPAT-E",
-      "L-AUTO-01152"
+      "L-AUTO-01152",
+      "L-AUTO-01645"
     ],
     "notes": "Kurtçuk, larva ailesi (цӀыв).",
     "productivity": {
-      "totalLexemes": 2
+      "totalLexemes": 3
     },
     "_source": "lexemes-sync-2026"
   },
@@ -79208,11 +79628,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-SHYUANLHAKUEE"
+      "L-SHYUANLHAKUEE",
+      "L-SHYUANTS-YK-U"
     ],
     "notes": "Nihale, sacayağı ailesi (шыуан).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 2
     },
     "_source": "lexemes-sync-2026"
   },
@@ -79260,11 +79681,12 @@
     "lexemeIds": [
       "L-SHEXUDE",
       "L-SHEXUFE",
-      "L-AUTO-01194"
+      "L-AUTO-01194",
+      "L-AUTO-01659"
     ],
     "notes": "MUŞAMBA ailesi (шэху).",
     "productivity": {
-      "totalLexemes": 3
+      "totalLexemes": 4
     },
     "_source": "lexemes-sync-2026"
   },
@@ -79564,11 +79986,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-ELEKTRON"
+      "L-ELEKTRON",
+      "L-AUTO-01690"
     ],
     "notes": "ELEKTRON ailesi (электрон).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 2
     },
     "_source": "lexemes-sync-2026"
   },
@@ -80075,11 +80498,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-KEYF-EMY-UEXUNYGHE"
+      "L-KEYF-EMY-UEXUNYGHE",
+      "L-F-EMY-UEXUNYGHE"
     ],
     "notes": "negligence ailesi (фӀэмыӀуэхуныгъэ).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 2
     },
     "_source": "lexemes-sync-2026"
   },
@@ -80091,11 +80515,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-KEEGHENEXUEN"
+      "L-KEEGHENEXUEN",
+      "L-GHENEXUA"
     ],
     "notes": "misinterpretation ailesi (нэху).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 2
     },
     "_source": "lexemes-sync-2026"
   },
@@ -80123,11 +80548,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-URA"
+      "L-URA",
+      "L-URAN"
     ],
     "notes": "HURRA ailesi (ура).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 2
     },
     "_source": "lexemes-sync-2026"
   },
@@ -80531,11 +80957,13 @@
     "morphemeIds": [],
     "lexemeIds": [
       "L-TS-YRTS-YR",
-      "L-TS-YRE-TS-YRE"
+      "L-TS-YRE-TS-YRE",
+      "L-TS-YRAMYSHCH",
+      "L-TS-YR-TS-YR"
     ],
     "notes": "kriket ailesi (цӀыр).",
     "productivity": {
-      "totalLexemes": 2
+      "totalLexemes": 4
     },
     "_source": "lexemes-sync-2026"
   },
@@ -80579,11 +81007,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-SHESHCH-AUE"
+      "L-SHESHCH-AUE",
+      "L-ISHESHCH-A"
     ],
     "notes": "globally ailesi (шэщӀа).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 2
     },
     "_source": "lexemes-sync-2026"
   },
@@ -80773,11 +81202,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-GHEZESHCH-A"
+      "L-GHEZESHCH-A",
+      "L-GHEZESHCH1EN"
     ],
     "notes": "rol ailesi (зэщӀ).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 2
     },
     "_source": "lexemes-sync-2026"
   },
@@ -80871,11 +81301,14 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-ZEKHUEZHYN"
+      "L-ZEKHUEZHYN",
+      "L-KEEKHUEZHY",
+      "L-EKHUEZHYNYGHE",
+      "L-AUTO-00318"
     ],
     "notes": "DEĞIŞTIRMEK ailesi (хъуэж).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 4
     },
     "_source": "lexemes-sync-2026"
   },
@@ -81404,11 +81837,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-SHCHEK-EUAP-E"
+      "L-SHCHEK-EUAP-E",
+      "L-SHCHEK-TAY"
     ],
     "notes": "Yan, taraf, yön ailesi (щэкӀ).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 2
     },
     "_source": "lexemes-sync-2026"
   },
@@ -81486,11 +81920,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-KEE-KBD"
+      "L-KEE-KBD",
+      "L-AUTO-00696"
     ],
     "notes": "hareket ailesi (къэ).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 2
     },
     "_source": "lexemes-sync-2026"
   },
@@ -81534,11 +81969,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-ZYXUEY-ZYXUEF"
+      "L-ZYXUEY-ZYXUEF",
+      "L-XUEYYN"
     ],
     "notes": "obsolete. poverty, poverty ailesi (хуей).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 2
     },
     "_source": "lexemes-sync-2026"
   },
@@ -81566,11 +82002,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-KEYNT-E-KEYNT-E"
+      "L-KEYNT-E-KEYNT-E",
+      "L-KEYNT-EKEYNT-E"
     ],
     "notes": "neglected. sl. coarse ailesi (къынтӀ).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 2
     },
     "_source": "lexemes-sync-2026"
   },
@@ -81710,11 +82147,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-AUTO-00401"
+      "L-AUTO-00401",
+      "L-ALMESTY-N"
     ],
     "notes": "бот. повилика (cuscuta ) (bot. dodder (cuscuta)) ailesi (алмэстын).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 2
     },
     "_source": "lexemes-sync-2026"
   },
@@ -81855,11 +82293,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-AUTO-00421"
+      "L-AUTO-00421",
+      "L-GHEBATE"
     ],
     "notes": "yorma ailesi (бат).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 2
     },
     "_source": "lexemes-sync-2026"
   },
@@ -82079,11 +82518,13 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-AUTO-00522"
+      "L-AUTO-00522",
+      "L-DAXEDAXEU",
+      "L-DAXAGH-E"
     ],
     "notes": "Cynoglossum officinale ailesi (дах).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 3
     },
     "_source": "lexemes-sync-2026"
   },
@@ -82367,11 +82808,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-AUTO-00588"
+      "L-AUTO-00588",
+      "L-AUTO-00601"
     ],
     "notes": "koni ailesi (жьажь).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 2
     },
     "_source": "lexemes-sync-2026"
   },
@@ -82623,11 +83065,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-AUTO-00734"
+      "L-AUTO-00734",
+      "L-KEEKHUN"
     ],
     "notes": "ic, ic taraf ailesi (кхъу).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 2
     },
     "_source": "lexemes-sync-2026"
   },
@@ -82865,11 +83308,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-AUTO-00837"
+      "L-AUTO-00837",
+      "L-LHYSTYTK-U"
     ],
     "notes": "sabun ailesi (лъысты).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 2
     },
     "_source": "lexemes-sync-2026"
   },
@@ -83105,11 +83549,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-AUTO-00940"
+      "L-AUTO-00940",
+      "L-PKHASHAGHE"
     ],
     "notes": "çeşit ailesi (пхъаш).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 2
     },
     "_source": "lexemes-sync-2026"
   },
@@ -83393,11 +83838,13 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-AUTO-01031"
+      "L-AUTO-01031",
+      "L-TEMEMAGHE",
+      "L-AUTO-01588"
     ],
     "notes": "упорядочить ailesi (тэмэм).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 3
     },
     "_source": "lexemes-sync-2026"
   },
@@ -83457,11 +83904,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-AUTO-01048"
+      "L-AUTO-01048",
+      "L-TEUENDEGHUEN"
     ],
     "notes": "тяжелый ( напр ailesi (уэндэгъу).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 2
     },
     "_source": "lexemes-sync-2026"
   },
@@ -83489,11 +83937,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-AUTO-01050"
+      "L-AUTO-01050",
+      "L-EUEXYN"
     ],
     "notes": "ova ailesi (уэх).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 2
     },
     "_source": "lexemes-sync-2026"
   },
@@ -83601,11 +84050,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-AUTO-01127"
+      "L-AUTO-01127",
+      "L-ZEXEGHEGHUELHHEN"
     ],
     "notes": "yatmak ailesi (гъуэлъхь).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 2
     },
     "_source": "lexemes-sync-2026"
   },
@@ -83617,11 +84067,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-AUTO-01141"
+      "L-AUTO-01141",
+      "L-UBZYTA"
     ],
     "notes": "doğramak ailesi (убзыт).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 2
     },
     "_source": "lexemes-sync-2026"
   },
@@ -83633,11 +84084,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-AUTO-01149"
+      "L-AUTO-01149",
+      "L-XESHCH-YK"
     ],
     "notes": "DIMI ailesi (щӀыкӀ).",
     "productivity": {
-      "totalLexemes": 1
+      "totalLexemes": 2
     },
     "_source": "lexemes-sync-2026"
   },

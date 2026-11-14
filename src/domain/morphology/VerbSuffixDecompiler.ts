@@ -1,10 +1,10 @@
-﻿/**
+/**
  * VerbSuffixDecompiler - Fiil Çekim ve Zaman Ekleri Çözümleyici
  * ADR-0040: Morphological Root Taxonomy
  */
 
 export interface VerbSuffix {
-  type: 'predicative' | 'tense' | 'future_tense' | 'negative' | 'modal' | 'unknown';
+  type: 'predicative' | 'tense' | 'future_tense' | 'negative' | 'modal' | 'infinitive' | 'thematic' | 'unknown';
   morpheme: string;
   glossTr: string;
 }
@@ -16,9 +16,6 @@ export interface VerbDecompileResult {
 }
 
 export class VerbSuffixDecompiler {
-  /**
-   * MorphologyAnalyzer tarafından statik çağrılan kök söküm arayüzü
-   */
   static decompile(word: string, rootFormSet?: Set<string>, ...args: any[]): VerbDecompileResult {
     return new VerbSuffixDecompiler().parse(word);
   }
@@ -27,9 +24,6 @@ export class VerbSuffixDecompiler {
     return new VerbSuffixDecompiler().parse(verbWord);
   }
 
-  /**
-   * Birim testleri ve modüller tarafından kullanılan nesne metodu
-   */
   parse(verbWord: string): VerbDecompileResult {
     const input = verbWord ? verbWord.trim() : '';
     if (!input) {
@@ -93,6 +87,22 @@ export class VerbSuffixDecompiler {
         type: 'predicative',
         morpheme: 'щ',
         glossTr: 'Bildirme Eki',
+      });
+      stem = stem.slice(0, -1);
+    }
+
+    // 4. Mastar Eki (-н): Yalnızca Çerkesçe mastar ünlüleriyle (-эн, -ын, -ун, -он) biten fiillerde
+    // (-ан ile biten план, экран vb. alıntı isimleri dışlar; tema ünlüsünü gövdede korur: кӀуэн -> кӀуэ)
+    if (
+      suffixes.length === 0 &&
+      stem.endsWith('н') &&
+      stem.length >= 3 &&
+      /[эыуо]$/.test(stem.slice(0, -1))
+    ) {
+      suffixes.unshift({
+        type: 'infinitive',
+        morpheme: 'н',
+        glossTr: 'Mastar Eki',
       });
       stem = stem.slice(0, -1);
     }
