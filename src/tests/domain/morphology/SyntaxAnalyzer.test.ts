@@ -1,4 +1,4 @@
-﻿import { SyntaxAnalyzer } from '../../../domain/morphology/SyntaxAnalyzer';
+import { SyntaxAnalyzer } from '../../../domain/morphology/SyntaxAnalyzer';
 
 describe('SyntaxAnalyzer', () => {
     let analyzer: SyntaxAnalyzer;
@@ -31,4 +31,11 @@ describe('SyntaxAnalyzer', () => {
         expect(result.tokens[0].role).toBe('conditional_clause');
         expect(result.structurePattern).toBe('CONDITIONAL_CLAUSE');
     });
+
+  it('1./2. şahıs zamirleriyle kurulan geçişli cümlelerde (сэ унэшхуэр сылащ) ERG_SUBJ + OBJ + VERB dizilimini çözer', () => {
+    const sa = new SyntaxAnalyzer();
+    const res = sa.analyzeSentence('сэ унэшхуэр сылащ');
+    expect(res.structurePattern).toBe('ERG_SUBJ + OBJ + VERB');
+    expect(res.tokens.map((t) => t.role)).toEqual(['subject_ergative', 'direct_object', 'predicate_verb']);
+  });
 });
