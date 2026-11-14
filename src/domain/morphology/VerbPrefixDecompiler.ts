@@ -1,6 +1,6 @@
 /**
  * VerbPrefixDecompiler - Fiil Önek Çözümleyici
- * ADR-0042: Verbal Prefix Unstacking (Causative, Reflexive, Reciprocal, Locative, 3SG Person)
+ * ADR-0042: Verbal Prefix Unstacking (Directional, Person, Applicative, Locative, Causative)
  */
 
 export interface VerbPrefix {
@@ -25,8 +25,32 @@ export class VerbPrefixDecompiler {
     let stem = input;
     const prefixes: VerbPrefix[] = [];
 
-    // 1. Şahıs Önekleri (сы-, у-, и-, т-, ф-) - preverb'lerle çakışma korumalı
-    if (stem.startsWith('сы') && stem.length > 3) {
+    // 1. En Dış Yönelim Öneki (къы-) veya Başlangıç Şahıs Önekleri (сы-, у-, и-, т-, ф-)
+    if (stem.startsWith('къы') && stem.length > 3) {
+      prefixes.push({ type: 'directional', morpheme: 'къы', glossTr: 'Yönelim Öneki (Buraya / Bize)' });
+      stem = stem.slice(3);
+
+      // къы- hemen ardından gelen dolaylı nesne şahıs önekleri (с-, у-, т-, ф-)
+      if (stem.startsWith('с') && stem.length > 3 && !stem.startsWith('сы')) {
+        prefixes.push({ type: 'person', morpheme: 'с', glossTr: '1. Tekil Şahıs (Bana / Benim)' });
+        stem = stem.slice(1);
+      } else if (stem.startsWith('у') && stem.length > 3 && !stem.startsWith('ун')) {
+        prefixes.push({ type: 'person', morpheme: 'у', glossTr: '2. Tekil Şahıs (Sana / Senin)' });
+        stem = stem.slice(1);
+      } else if (
+        stem.startsWith('т') &&
+        stem.length > 3 &&
+        (!stem.startsWith('тх') || stem.startsWith('тху')) &&
+        !stem.startsWith('те') &&
+        !stem.startsWith('ты')
+      ) {
+        prefixes.push({ type: 'person', morpheme: 'т', glossTr: '1. Çoğul Şahıs (Bize / Bizim)' });
+        stem = stem.slice(1);
+      } else if (stem.startsWith('ф') && stem.length > 3 && !stem.startsWith('фэ') && !stem.startsWith('ху')) {
+        prefixes.push({ type: 'person', morpheme: 'ф', glossTr: '2. Çoğul Şahıs (Size / Sizin)' });
+        stem = stem.slice(1);
+      }
+    } else if (stem.startsWith('сы') && stem.length > 3) {
       prefixes.push({ type: 'person', morpheme: 'сы', glossTr: '1. Tekil Şahıs (Ben)' });
       stem = stem.slice(2);
     } else if (stem.startsWith('у') && stem.length > 2 && !stem.startsWith('ун')) {
@@ -38,7 +62,7 @@ export class VerbPrefixDecompiler {
     } else if (
       stem.startsWith('т') &&
       stem.length > 2 &&
-      !stem.startsWith('тх') &&
+      (!stem.startsWith('тх') || stem.startsWith('тху')) &&
       !stem.startsWith('те') &&
       !stem.startsWith('ты')
     ) {
@@ -49,15 +73,21 @@ export class VerbPrefixDecompiler {
       stem = stem.slice(1);
     }
 
-    // 2. Yönelim / Versiyon Önekleri (къы-, хуэ-, фэ-)
-    if (stem.startsWith('къы') && stem.length > 3) {
-      prefixes.push({ type: 'directional', morpheme: 'къы', glossTr: 'Yönelim Öneki (Buraya / Bize)' });
-      stem = stem.slice(3);
-    } else if (stem.startsWith('хуэ') && stem.length > 3) {
+    // 2. Yarar / Yönelme & Enstrümental Önekleri (хуэ-, хуи-, хуа-, фэ-, ри-)
+    if (stem.startsWith('хуэ') && stem.length > 3) {
       prefixes.push({ type: 'applicative', morpheme: 'хуэ', glossTr: 'Yarar / Yönelme Öneki (İçin / Ona)' });
+      stem = stem.slice(3);
+    } else if (stem.startsWith('хуи') && stem.length > 3) {
+      prefixes.push({ type: 'applicative', morpheme: 'хуи', glossTr: 'Yarar + 3. Tekil Ergatif (Onun İçin)' });
+      stem = stem.slice(3);
+    } else if (stem.startsWith('хуа') && stem.length > 3) {
+      prefixes.push({ type: 'applicative', morpheme: 'хуа', glossTr: 'Yarar + 3. Çoğul Ergatif (Onlar İçin)' });
       stem = stem.slice(3);
     } else if (stem.startsWith('фэ') && stem.length > 2) {
       prefixes.push({ type: 'applicative', morpheme: 'фэ', glossTr: 'Yarar / Yönelme Öneki (İçin / Ona)' });
+      stem = stem.slice(2);
+    } else if (stem.startsWith('ри') && stem.length > 3) {
+      prefixes.push({ type: 'applicative', morpheme: 'ри', glossTr: 'Dolaylı / Araç Öneki (Onunla / Ona)' });
       stem = stem.slice(2);
     }
 
@@ -105,3 +135,4 @@ export class VerbPrefixDecompiler {
     return new VerbPrefixDecompiler().parse(word);
   }
 }
+

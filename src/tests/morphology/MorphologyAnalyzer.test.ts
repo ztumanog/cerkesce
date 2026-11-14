@@ -51,4 +51,24 @@ describe('MorphologyAnalyzer Çekirdek & Sözlük Entegrasyon Testleri', () => {
     expect(multiPreverb.prefixCount).toBe(2);
     expect(multiPreverb.suffixCount).toBe(2);
   });
+
+  it('çok ekli polisentetik fiil zincirlerini (къысхуигъэщӀащ, къытхуагъэтхащ, иригъэщӀэнущ) katmanlı ayrıştırır', () => {
+    const r1 = analyzer.analyze('къысхуигъэщӀащ');
+    expect(r1.source).toBe('verb');
+    expect(r1.morphemes?.map((m) => m.morpheme)).toEqual(['къы', 'с', 'хуи', 'гъэ', 'щӀ', 'ащ']);
+    expect(r1.prefixCount).toBe(4);
+    expect(r1.suffixCount).toBe(1);
+
+    const r2 = analyzer.analyze('къытхуагъэтхащ');
+    expect(r2.source).toBe('verb');
+    expect(r2.morphemes?.map((m) => m.morpheme)).toEqual(['къы', 'т', 'хуа', 'гъэ', 'тх', 'ащ']);
+    expect(r2.prefixCount).toBe(4);
+    expect(r2.suffixCount).toBe(1);
+
+    const r3 = analyzer.analyze('иригъэщӀэнущ');
+    expect(r3.source).toBe('verb');
+    expect(r3.morphemes?.map((m) => m.morpheme)).toEqual(['и', 'ри', 'гъэ', 'щӀэ', 'нущ']);
+    expect(r3.prefixCount).toBe(3);
+    expect(r3.suffixCount).toBe(1);
+  });
 });
