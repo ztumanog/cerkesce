@@ -38,4 +38,17 @@ describe('SyntaxAnalyzer', () => {
     expect(res.structurePattern).toBe('ERG_SUBJ + OBJ + VERB');
     expect(res.tokens.map((t) => t.role)).toEqual(['subject_ergative', 'direct_object', 'predicate_verb']);
   });
+
+  it('bağlaçlı şahıs zamiri (сэри) ve koşul yan cümleciği (-мэ) içeren cümleyi NOM_SUBJ + COND_CLAUSE + VERB olarak çözer', () => {
+    const sa = new SyntaxAnalyzer();
+    const res = sa.analyzeSentence('уэ укӀуэмэ сэри сыкӀуэнущ');
+    expect(res.structurePattern).toBe('NOM_SUBJ + COND_CLAUSE + VERB');
+    expect(res.tokens.map((t) => t.role)).toEqual([
+      'subject_nominative',
+      'conditional_clause',
+      'subject_nominative',
+      'predicate_verb',
+    ]);
+    expect(res.tokens.map((t) => t.analysis?.root)).toEqual(['уэ', 'кӀуэ', 'сэ', 'кӀуэ']);
+  });
 });

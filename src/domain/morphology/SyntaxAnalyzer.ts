@@ -20,6 +20,7 @@ export interface SyntacticStructure {
 }
 
 const ERGATIVE_CAPABLE_PRONOUNS = new Set(['сэ', 'уэ', 'дэ', 'фэ']);
+const ADDITIVE_PRONOUNS = new Set(['сэри', 'уэри', 'дэри', 'фэри']);
 const ERGATIVE_3RD_PRONOUNS = new Set(['абы', 'абыхэм', 'мыбы', 'мыбыхэм', 'мобы', 'мобыхэм']);
 
 export class SyntaxAnalyzer {
@@ -59,40 +60,55 @@ export class SyntaxAnalyzer {
 
     const hasAbsolutiveObject = words.some((word, idx) => {
       const lower = word.toLowerCase();
-      if (ERGATIVE_CAPABLE_PRONOUNS.has(lower)) return false;
+      if (ERGATIVE_CAPABLE_PRONOUNS.has(lower) || ADDITIVE_PRONOUNS.has(lower)) return false;
       const a = rawAnalyses[idx];
       return a.nounCase?.case === 'nominative' || word.endsWith('р');
     });
 
     const hasErgativeInSentence =
       hasExplicitErgative ||
-      (words.some((w) => ERGATIVE_CAPABLE_PRONOUNS.has(w.toLowerCase())) && hasAbsolutiveObject);
+      (words.some(
+        (w) =>
+          ERGATIVE_CAPABLE_PRONOUNS.has(w.toLowerCase()) ||
+          ADDITIVE_PRONOUNS.has(w.toLowerCase())
+      ) &&
+        hasAbsolutiveObject);
 
     const tokens: SyntacticToken[] = words.map((word, idx) => {
       const lower = word.toLowerCase();
-      const analysis = rawAnalyses[idx];
+      let analysis = rawAnalyses[idx];
       let role = 'other';
       let roleTr = 'Diğer Öğe';
 
       // 1. Yan Cümlecik Koşulları (-мэ, -уэрэ, -щхьэкӀэ)
       if (word.endsWith('мэ')) {
         role = 'conditional_clause';
-        roleTr = 'Koşul Yan Cümleciği';
+        roleTr = 'Koşul Yan Cümleciği (-мэ)';
+        if (analysis.root.endsWith('мэ') && analysis.root.length > 3) {
+          analysis = { ...analysis, root: analysis.root.slice(0, -2) };
+        }
       } else if (word.endsWith('уэрэ')) {
         role = 'adverbial_clause';
-        roleTr = 'Zarf Yan Cümleciği';
+        roleTr = 'Zarf Yan Cümleciği (-уэрэ)';
+        if (analysis.root.endsWith('уэрэ') && analysis.root.length > 5) {
+          analysis = { ...analysis, root: analysis.root.slice(0, -4) };
+        }
       } else if (word.endsWith('щхьэкӀэ')) {
         role = 'concessive_clause';
         roleTr = 'Karşıtlık Yan Cümleciği';
       }
-      // 2. 1./2. Şahıs Zamirleri (сэ, уэ, дэ, фэ — ek almaz, nesne varsa Ergatif Özne olur)
-      else if (ERGATIVE_CAPABLE_PRONOUNS.has(lower)) {
+      // 2. 1./2. Şahıs Zamirleri (сэ, уэ, дэ, фэ ve -ри bağlaçlı сэри, уэри, дэри, фэри)
+      else if (ERGATIVE_CAPABLE_PRONOUNS.has(lower) || ADDITIVE_PRONOUNS.has(lower)) {
+        if (ADDITIVE_PRONOUNS.has(lower)) {
+          analysis = { ...analysis, root: lower.slice(0, -2) };
+        }
+        const suffixNote = ADDITIVE_PRONOUNS.has(lower) ? ' + -ри' : '';
         if (hasAbsolutiveObject) {
           role = 'subject_ergative';
-          roleTr = 'Ergatif Özne (Şahıs Zamiri)';
+          roleTr = `Ergatif Özne (Şahıs Zamiri${suffixNote})`;
         } else {
           role = 'subject_nominative';
-          roleTr = 'Yalın Özne (Şahıs Zamiri)';
+          roleTr = `Yalın Özne (Şahıs Zamiri${suffixNote})`;
         }
       }
       // 3. Ergatif Özne Eki (-м) veya 3. Şahıs Ergatif Zamirler
@@ -142,6 +158,8 @@ export class SyntaxAnalyzer {
       structurePattern = 'ERG_SUBJ + OBJ + VERB';
     } else if (hasErgative && hasVerb) {
       structurePattern = 'ERG_SUBJ + VERB';
+    } else if (hasNomSubj && hasCond && hasVerb) {
+      structurePattern = 'NOM_SUBJ + COND_CLAUSE + VERB';
     } else if (hasNomSubj && hasAdv && hasVerb) {
       structurePattern = 'NOM_SUBJ + ADV_CLAUSE + VERB';
     } else if (hasNomSubj && hasVerb) {
