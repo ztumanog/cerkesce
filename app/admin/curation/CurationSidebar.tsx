@@ -105,7 +105,7 @@ export default function CurationSidebar() {
         >
           <span>💡 Kavramlar</span>
           <span style={{ background: '#8b5cf6', color: 'white', padding: '2px 8px', borderRadius: '999px', fontSize: '11px' }}>
-            500
+            7387
           </span>
         </Link>
 
@@ -177,7 +177,7 @@ export default function CurationSidebar() {
             }}
           >
             <span>· Tekli</span>
-            <span style={{ background: '#8b5cf6', color: 'white', padding: '2px 6px', borderRadius: '999px', fontSize: '10px' }}>500</span>
+            <span style={{ background: '#8b5cf6', color: 'white', padding: '2px 6px', borderRadius: '999px', fontSize: '10px' }}>28437</span>
           </Link>
           <Link
             href="/admin/curation/bulk"

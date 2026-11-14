@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState, useEffect, useMemo } from 'react';
-import { useParams } from 'next/navigation';
+import { useParams, useRouter } from "next/navigation";
 import Link from 'next/link';
 import {
   Container,
@@ -30,6 +30,8 @@ import {
 export default function FamilyDetailPage() {
   const params = useParams();
   const id = decodeURIComponent((params?.id as string) || '');
+  const router = useRouter();
+  useEffect(() => { if (id === "WF-UNCLEAR") router.replace("/admin/curation/wf-unclear"); }, [id, router]);
   const [data, setData] = useState<any>(null);
   const [loading, setLoading] = useState(true);
   const [memberQuery, setMemberQuery] = useState('');
@@ -264,6 +266,8 @@ export default function FamilyDetailPage() {
                 const kbd = m.dialectVariants?.kabardian;
                 const showDialectPair = ady && kbd && ady !== kbd;
 
+                if (id === "WF-UNCLEAR") return null; // hook'ların altında olmalı
+
                 return (
                   <Card key={m.id} size="2" variant="surface" className="hover:border-[var(--indigo-8)] transition-colors">
                     <Flex direction="column" justify="between" gap="3" height="100%">
@@ -338,4 +342,3 @@ export default function FamilyDetailPage() {
     </Container>
   );
 }
-

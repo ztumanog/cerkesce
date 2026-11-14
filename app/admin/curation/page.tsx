@@ -135,16 +135,13 @@ export default function CurationIndexPage() {
 
         <Grid columns={{ initial: "1", lg: "2" }} gap="4">
           <Card>
-            <Heading size="4">Kürasyon Araçları</Heading>
+            <Heading size="4">Kürasyon Araçları — Araçlar sol panelde</Heading>
             <Flex direction="column" gap="3" mt="4">
               <Button size="2" variant="solid" color="amber" asChild>
-                <Link href="/sozluk/family/WF-UNCLEAR" style={{ textDecoration: "none" }}>⚠ Toplu WF-UNCLEAR Kürasyon Modülü</Link>
               </Button>
               <Button size="2" variant="soft" asChild>
-                <Link href="/admin/curation/csv" style={{ textDecoration: "none" }}>📄 CSV Export / Import</Link>
               </Button>
               <Button size="2" variant="soft" asChild>
-                <Link href="/admin/curation/bulk" style={{ textDecoration: "none" }}>⚡ Bulk (Toplu) Düzenle</Link>
               </Button>
             </Flex>
           </Card>

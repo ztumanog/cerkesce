@@ -83,13 +83,29 @@ export default function CSVPage(){
           ].map(x=><div key={x.l} style={{borderRadius:12,border:`2px solid ${x.b}`,background:x.c,padding:12,textAlign:"center",fontWeight:800}}>{x.l}<br/><span style={{fontSize:10}}>✓ Düzenlenebilir</span></div>)}
         </div>
 
-        <textarea value={csv} onChange={e=>setCsv(e.target.value)} placeholder="CSV buraya yapıştır veya Export sonrası burada gör..." style={{marginTop:20,width:"100%",minHeight:400,borderRadius:12,border:"2px solid #cbd5e1",padding:12,fontFamily:"monospace",fontSize:12}}/>
+        
+      {/* CSV dosya yükleme - yapıştır ikincil */}
+      <div style={{border:"1px dashed #cbd5e1", borderRadius:12, padding:12, marginBottom:12}}>
+        <label style={{fontWeight:700}}>CSV dosyası seç</label>
+        <input type="file" accept=".csv,text/csv" style={{display:"block", marginTop:8}}
+          onChange={(e) => {
+            const f = e.target.files?.[0]; if(!f) return;
+            const r = new FileReader();
+            r.onload = () => { setCsv(String(r.result ?? "")); };
+            r.readAsText(f, "utf-8");
+          }}
+        />
+        <div style={{fontSize:13, opacity:0.8, marginTop:6}}>Önce dosyayı seç, önizlemeyi kontrol et, sonra Import & Save yap. Yapıştır alanı aynı lexemes alanını kullanır.</div>
+      </div>
+    
+      <textarea value={csv} onChange={e=>setCsv(e.target.value)} placeholder="CSV buraya yapıştır veya Export sonrası burada gör..." style={{marginTop:20,width:"100%",minHeight:400,borderRadius:12,border:"2px solid #cbd5e1",padding:12,fontFamily:"monospace",fontSize:12}}/>
+      <p style={{fontSize:13, opacity:0.85, marginTop:8}}>CSV sütunları: id, form, ipa, tr, en, ru, ar, ady, literalMeaning, conceptId, wordFamilyId, rootIds (| ile), dialect, notes</p>
 
         <div style={{marginTop:12,display:"grid",gridTemplateColumns:"repeat(4,1fr)",gap:8}}>
-          <div style={{border:"2px solid #64748b",borderRadius:12,padding:10,fontSize:12}}>KÖK: R-GU • virgülle</div>
-          <div style={{border:"2px solid #64748b",borderRadius:12,padding:10,fontSize:12}}>AİLE: WF-GU</div>
-          <div style={{border:"2px solid #64748b",borderRadius:12,padding:10,fontSize:12}}>KAVRAM: concept_*</div>
-          <div style={{border:"2px solid #64748b",borderRadius:12,padding:10,fontSize:12}}>LEHÇE: adige</div>
+          <div style={{border:"2px solid #64748b",borderRadius:12,padding:10,fontSize:12}}></div>
+          <div style={{border:"2px solid #64748b",borderRadius:12,padding:10,fontSize:12}}></div>
+          <div style={{border:"2px solid #64748b",borderRadius:12,padding:10,fontSize:12}}></div>
+          <div style={{border:"2px solid #64748b",borderRadius:12,padding:10,fontSize:12}}></div>
         </div>
       </div>
     </div>
