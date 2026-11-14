@@ -2,6 +2,7 @@ import { Request, Response } from 'express';
 import { DiscoveryFacade } from '../../../domain/discovery/services/DiscoveryFacade';
 import { ConceptGraphAdapter } from '../../../domain/discovery/adapters/ConceptGraphAdapter';
 import { InMemoryConceptGraphRepository } from '../../../repository/InMemoryConceptGraphRepository';
+import { parseNodeLabel, clip, splitHighlight } from '@/utils/text';
 
 export class ConceptNetworkController {
   private discoveryFacade: DiscoveryFacade;

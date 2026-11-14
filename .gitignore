@@ -163,3 +163,5 @@ _yedekler/
 *.yedek-*
 *.bozuk*
 toplu-kurasyon*.csv
+
+tmp/

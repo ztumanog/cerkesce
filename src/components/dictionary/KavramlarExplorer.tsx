@@ -115,7 +115,7 @@ export default function KavramlarExplorer({ groups, totalLexemeCount }: Kavramla
           conceptId: group.conceptId,
         } as DictionaryEntry);
       }
-    } catch {}
+    } catch { }
   }, []);
 
   return (
@@ -327,11 +327,13 @@ export default function KavramlarExplorer({ groups, totalLexemeCount }: Kavramla
                       </button>
                     )}
                   </div>
-                  <Link href={`/kavram/${encodeURIComponent(group.conceptId)}`}
-                    className="inline-flex items-center gap-1 font-semibold text-indigo-600 dark:text-indigo-400 hover:underline">
-                    <GitBranch className="h-3.5 w-3.5" aria-hidden="true" />
-                    Kavram Grafiği →
-                  </Link>
+ <Link 
+  href={`/kavram-agi/${group.conceptId}`}
+  className="inline-flex items-center gap-1 font-semibold text-indigo-600 dark:text-indigo-400 hover:underline"
+>
+  <GitBranch className="h-3.5 w-3.5" aria-hidden="true" />
+  Kavram Grafiği →
+</Link>
                 </div>
               </article>
             );
