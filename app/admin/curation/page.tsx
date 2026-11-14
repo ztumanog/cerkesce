@@ -36,7 +36,7 @@ export default function CurationIndexPage() {
 
   return (
     <Box className="min-h-screen bg-[var(--gray-2)] p-6">
-      <Box className="max-w- mx-auto">
+      <Box className="max-w-7xl mx-auto">
         <Card size="3" mb="6">
           <Flex justify="between" align="center" wrap="wrap" gap="4">
             <Box>
@@ -52,26 +52,10 @@ export default function CurationIndexPage() {
               <Button color="gray" variant="soft" size="2" asChild>
                 <Link href="/yonetim" style={{ textDecoration: "none" }}>← Yönetim Sayfası</Link>
               </Button>
-              <Button color="amber" variant="solid" size="2" asChild>
-                <Link href="/sozluk/family/WF-UNCLEAR" style={{ textDecoration: "none" }}>⚠ WF-UNCLEAR Kürasyon</Link>
-              </Button>
             </Flex>
           </Flex>
         </Card>
 
-        <Card mb="6" style={{ background: "#fffbe5", borderColor: "#f59e0b" }}>
-          <Flex justify="between" align="center" wrap="wrap" gap="3">
-            <Flex gap="3" align="center" wrap="wrap">
-              <Badge color="amber" size="3" variant="solid">⚠ Sahipsiz Kelimeler</Badge>
-              <Text size="2" weight="bold" style={{ color: "#78350f" }}>
-                WF-UNCLEAR ailesindeki kelimeleri süzün ve arayüz üzerinden toplu olarak hedef ailelere aktarın.
-              </Text>
-            </Flex>
-            <Button size="2" color="amber" variant="solid" asChild>
-              <Link href="/sozluk/family/WF-UNCLEAR" style={{ textDecoration: "none" }}>Hızlı Kürasyon Modülünü Aç →</Link>
-            </Button>
-          </Flex>
-        </Card>
 
         <Flex align="center" gap="2" mb="4">
           <Heading size="6">📚 Modüller</Heading>
@@ -132,29 +116,34 @@ export default function CurationIndexPage() {
         </Grid>
 
         <Separator size="4" my="6" />
-
         <Grid columns={{ initial: "1", lg: "2" }} gap="4">
+
           <Card>
-            <Heading size="4">Kürasyon Araçları — Araçlar sol panelde</Heading>
-            <Flex direction="column" gap="3" mt="4">
-              <Button size="2" variant="solid" color="amber" asChild>
-              </Button>
-              <Button size="2" variant="soft" asChild>
-              </Button>
-              <Button size="2" variant="soft" asChild>
-              </Button>
-            </Flex>
+            <Heading size="4">Sözlük Özeti</Heading>
+            <Heading size="8" mt="3" style={{ color: "#059669" }}>{counts.lexemes || "—"}</Heading>
+            <Text size="2" weight="bold" mt="1">Sözlük Girdisi</Text>
+            <Box mt="3" style={{ fontSize: 13, lineHeight: 1.9 }}>
+              <Flex justify="between"><Text>Dil</Text><Badge variant="soft">4 dil</Badge></Flex>
+              <Flex justify="between"><Text>Lehçe</Text><Badge variant="soft">2 lehçe</Badge></Flex>
+              <Text size="1" color="gray">Adige • Kabardey</Text>
+              <Flex justify="between"><Text>Kavram</Text><Badge variant="soft">{counts.concepts} kavram</Badge></Flex>
+              <Flex justify="between"><Text>Kök</Text><Badge variant="soft">{counts.roots} kök</Badge></Flex>
+            </Box>
           </Card>
+
           <Card>
             <Heading size="4">Veri Özet Bilgisi</Heading>
             <Box mt="3" style={{ fontSize: 13, lineHeight: 1.9 }}>
               <Flex justify="between"><Text>roots.json</Text><Badge variant="soft">{counts.roots} kök</Badge></Flex>
               <Flex justify="between"><Text>word_families.json</Text><Badge variant="soft">{counts.families} aile</Badge></Flex>
-              <Flex justify="between"><Text>concepts (lexemes&apos;den türetildi)</Text><Badge variant="soft">{counts.concepts} kavram</Badge></Flex>
+              <Flex justify="between"><Text>concepts</Text><Badge variant="soft">{counts.concepts} kavram</Badge></Flex>
               <Flex justify="between"><Text>lexemes.json</Text><Badge variant="soft">{counts.lexemes} kelime</Badge></Flex>
               {msg && <Text size="1" color="red" mt="2">{msg}</Text>}
             </Box>
           </Card>
+
+
+
         </Grid>
 
         <Text size="1" color="gray" as="div" mt="5" align="center">ÇERKESÇE SÖZLÜK • /admin/curation</Text>
