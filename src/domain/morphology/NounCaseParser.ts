@@ -1,4 +1,4 @@
-﻿/**
+/**
  * NounCaseParser - Isim durum eki cozumleyici
  * ADR-0040: Morphological Root Taxonomy
  */
@@ -43,9 +43,11 @@ const CASE_RULES: CaseRule[] = [
   { suffix: 'мчӀэ', case: 'definite_instrumental', isPlural: false, isDefinite: true },
   { suffix: 'кӀэ', case: 'instrumental', isPlural: false, isDefinite: false },
   { suffix: 'чӀэ', case: 'instrumental', isPlural: false, isDefinite: false },
+  { suffix: 'рауэ', case: 'adverbial', isPlural: false, isDefinite: true },
   { suffix: 'уэ', case: 'adverbial', isPlural: false, isDefinite: false },
   { suffix: 'м', case: 'ergative', isPlural: false, isDefinite: true },
   { suffix: 'р', case: 'nominative', isPlural: false, isDefinite: true },
+  { suffix: 'у', case: 'adverbial', isPlural: false, isDefinite: false },
 ];
 
 const DERIVATIONAL_ENDINGS = ['шхуэ', 'ышхуэ', 'цӀыкӀу', 'ныгъэ', 'гъэ', 'щӀэ'];

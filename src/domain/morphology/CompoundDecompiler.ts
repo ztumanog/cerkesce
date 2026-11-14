@@ -1,4 +1,4 @@
-﻿/**
+/**
  * CompoundDecompiler - Derin Bileşik Sözcük ve Aplikatif Ayrıştırıcı
  * ADR-0062: Deep Morphemic Decomposition for Compound Words & Prefixes
  */
@@ -11,6 +11,20 @@ export interface CompoundDecompileResult {
   stem: string;
   morphemes: MorphemeDetail[];
 }
+
+const LANGUAGE_COMPOUNDS: Record<string, { root: string; meaningTr: string; connective?: string }> = {
+  'адыгэ': { root: 'адыг', meaningTr: 'Çerkes / Adıge', connective: 'э' },
+  'урысы': { root: 'урыс', meaningTr: 'Rus', connective: 'ы' },
+  'тырку': { root: 'тырку', meaningTr: 'Türk' },
+  'инджылы': { root: 'инджыл', meaningTr: 'İngiliz', connective: 'ы' },
+  'хьэрыпы': { root: 'хьэрып', meaningTr: 'Arap', connective: 'ы' },
+  'францызы': { root: 'францыз', meaningTr: 'Fransız', connective: 'ы' },
+  'нэмыцы': { root: 'нэмыц', meaningTr: 'Alman', connective: 'ы' },
+  'куржы': { root: 'куржы', meaningTr: 'Gürcü' },
+  'абазэ': { root: 'абаз', meaningTr: 'Abaza', connective: 'э' },
+  'къэбэрдей': { root: 'къэбэрдей', meaningTr: 'Kabardey' },
+  'шэрджэсы': { root: 'шэрджэс', meaningTr: 'Çerkes (Şerdces)', connective: 'ы' },
+};
 
 export class CompoundDecompiler {
   parse(word: string): CompoundDecompileResult {
@@ -58,6 +72,46 @@ export class CompoundDecompiler {
       }
 
       return { isCompound: true, stem: 'псэлъ', morphemes };
+    }
+
+    // 3. -бзэ (Dil) Bileşik İsim Ailesi: адыгэбзэ -> [адыг] + -э + [бз] + -э
+    if (input.endsWith('бзэ') && input.length > 4) {
+      const prefixPart = input.slice(0, -3);
+      const langMeta = LANGUAGE_COMPOUNDS[prefixPart];
+      const morphemes: MorphemeDetail[] = [];
+
+      if (langMeta) {
+        morphemes.push({
+          morpheme: langMeta.root,
+          type: 'root',
+          meaningTr: langMeta.meaningTr,
+          glossTr: `Kök 1: ${langMeta.meaningTr}`,
+        });
+        if (langMeta.connective) {
+          morphemes.push({
+            morpheme: langMeta.connective,
+            type: 'connective',
+            glossTr: 'Bağlayıcı Ünlü',
+          });
+        }
+      } else {
+        morphemes.push({
+          morpheme: prefixPart,
+          type: 'root',
+          glossTr: 'Kök 1: Tamlayan',
+        });
+      }
+
+      morphemes.push(
+        { morpheme: 'бз', type: 'root', meaningTr: 'Dil (бзэ)', glossTr: 'Kök 2: Dil' },
+        { morpheme: 'э', type: 'derivation', glossTr: 'İsim Gövde Ünlüsü' }
+      );
+
+      return {
+        isCompound: true,
+        stem: input,
+        morphemes,
+      };
     }
 
     return {

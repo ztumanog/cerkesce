@@ -34,7 +34,7 @@ export class VerbPrefixDecompiler {
       if (stem.startsWith('с') && stem.length > 3 && !stem.startsWith('сы')) {
         prefixes.push({ type: 'person', morpheme: 'с', glossTr: '1. Tekil Şahıs (Bana / Benim)' });
         stem = stem.slice(1);
-      } else if (stem.startsWith('у') && stem.length > 3 && !stem.startsWith('ун')) {
+      } else if (stem.startsWith('у') && stem.length > 3 && !stem.startsWith('ун') && !stem.startsWith('ур')) {
         prefixes.push({ type: 'person', morpheme: 'у', glossTr: '2. Tekil Şahıs (Sana / Senin)' });
         stem = stem.slice(1);
       } else if (
@@ -53,7 +53,7 @@ export class VerbPrefixDecompiler {
     } else if (stem.startsWith('сы') && stem.length > 3) {
       prefixes.push({ type: 'person', morpheme: 'сы', glossTr: '1. Tekil Şahıs (Ben)' });
       stem = stem.slice(2);
-    } else if (stem.startsWith('у') && stem.length > 2 && !stem.startsWith('ун')) {
+    } else if (stem.startsWith('у') && stem.length > 2 && !stem.startsWith('ун') && !stem.startsWith('ур')) {
       prefixes.push({ type: 'person', morpheme: 'у', glossTr: '2. Tekil Şahıs (Sen)' });
       stem = stem.slice(1);
     } else if (stem.startsWith('и') && stem.length > 2) {
@@ -135,4 +135,5 @@ export class VerbPrefixDecompiler {
     return new VerbPrefixDecompiler().parse(word);
   }
 }
+
 
