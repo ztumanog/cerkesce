@@ -71,4 +71,22 @@ describe('MorphologyAnalyzer Çekirdek & Sözlük Entegrasyon Testleri', () => {
     expect(r3.prefixCount).toBe(3);
     expect(r3.suffixCount).toBe(1);
   });
+
+  it('-бзэ (dil) birleşik isim ailesini (адыгэбзэ, адыгэбзэмкӀэ, урысыбзэ, адыгэбзэу) iki köklü ayrıştırır', () => {
+    const r1 = analyzer.analyze('адыгэбзэ');
+    expect(r1.source).toBe('compound');
+    expect(r1.morphemes?.map((m) => m.morpheme)).toEqual(['адыг', 'э', 'бз', 'э']);
+
+    const r2 = analyzer.analyze('адыгэбзэмкӀэ');
+    expect(r2.source).toBe('compound');
+    expect(r2.morphemes?.map((m) => m.morpheme)).toEqual(['адыг', 'э', 'бз', 'э', 'мкӀэ']);
+
+    const r3 = analyzer.analyze('урысыбзэ');
+    expect(r3.source).toBe('compound');
+    expect(r3.morphemes?.map((m) => m.morpheme)).toEqual(['урыс', 'ы', 'бз', 'э']);
+
+    const r4 = analyzer.analyze('адыгэбзэу');
+    expect(r4.source).toBe('compound');
+    expect(r4.morphemes?.map((m) => m.morpheme)).toEqual(['адыг', 'э', 'бз', 'э', 'у']);
+  });
 });
