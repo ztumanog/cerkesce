@@ -30,7 +30,7 @@ import { normalizeLanguage } from '@/lib/normalizers/languageNormalizer';
 import { resolveSourceMetadata } from '@/lib/normalizers/sourceMetadataResolver';
 import { useAramaGecmisi } from '@/hooks/useAramaGecmisi';
 import type { KelimeItem } from '@/components/dictionary/KelimeKarti';
-import { useFavoriler } from '@/hooks/useFavoriler';
+import { useKaydedilenler } from '@/hooks/useKaydedilenler';
 import { useKlavyeKisayollari } from '@/hooks/useKlavyeKisayollari';
 import type { DictionaryEntry } from '@/types/dictionary';
 
@@ -47,7 +47,7 @@ export default function SozlukEkrani() {
   const [dialectFilter, setDialectFilter] = useState<DialectFilterValue>('ALL');
   const [languageFilter, setLanguageFilter] = useState<LanguageFilterValue>('ALL');
 
-  const { favoriMi, favoriToggle } = useFavoriler();
+  const { kayitliMi, kayitToggle } = useKaydedilenler();
 
   useKlavyeKisayollari({
     onEscape: () => {
@@ -379,9 +379,9 @@ export default function SozlukEkrani() {
               key={kelime.id ?? `kelime-${index}`}
               data={kelime}
               onClick={() => handleKelimeSec(kelime)}
-              favoriMi={favoriMi(kelime.id)}
+              favoriMi={kayitliMi(kelime.id)}
               onFavoriToggle={() =>
-                favoriToggle({
+                kayitToggle({
                   id: kelime.id,
                   kelime: kelime.kelime,
                   anlam: kelime.anlam || kelime.ilkAnlam || '',

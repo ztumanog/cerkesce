@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Header() {
   const [theme, setTheme] = useState<'dark' | 'light'>('dark');
@@ -150,6 +151,8 @@ export default function Header() {
               +A
             </button>
           </div>
+
+          <Link href="/kaydedilenler" className="flex items-center justify-center px-2 py-1.5 text-amber-500 hover:bg-amber-500/10 rounded-lg transition-colors text-sm" title="Kaydedilen Kelimeler" aria-label="Kaydedilen Kelimeler">★</Link>
 
           {/* TEMA TOGGLE */}
           <button

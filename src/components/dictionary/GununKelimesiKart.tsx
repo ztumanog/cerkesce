@@ -14,6 +14,7 @@ import {
 import { cleanHtml } from '@/lib/paylasimGorseli';
 import PaylasimGorseliModal from '@/components/dictionary/PaylasimGorseliModal';
 import BildirimAyar from '@/components/dictionary/BildirimAyar';
+import { useKaydedilenler } from '@/hooks/useKaydedilenler';
 import type { GununKelimesi } from '@/types/dictionary';
 import type { RawDictionaryEntry } from '@/utils/dailyWordEngine';
 
@@ -22,7 +23,6 @@ interface GununKelimesiKartProps {
   className?: string;
 }
 
-const KAYIT_KEY = 'acikmektep_kayitli_kelimeler';
 
 const KELIMELER_VERITABANI: RawDictionaryEntry[] = [
   {
@@ -182,7 +182,8 @@ export default function GununKelimesiKart({
   const [digerKelimeler, setDigerKelimeler] = useState<GununKelimesi[]>([]);
   const [acikKelimeId, setAcikKelimeId] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);
-  const [saved, setSaved] = useState(false);
+  const { kayitliMi, kayitToggle } = useKaydedilenler();
+  const saved = bugunKelimesi ? kayitliMi(bugunKelimesi.id) : false;
   const [shareLoading, setShareLoading] = useState(false);
   const [gorselModalAcik, setGorselModalAcik] = useState(false);
 
@@ -230,23 +231,6 @@ export default function GununKelimesiKart({
     };
   }, [veri]);
 
-  const isSavedInStorage = useCallback((kelimeId: string): boolean => {
-    if (typeof window === 'undefined') return false;
-    try {
-      const raw = localStorage.getItem(KAYIT_KEY);
-      if (!raw) return false;
-      const list = JSON.parse(raw);
-      return Array.isArray(list) && list.some((k: any) => k.id === kelimeId);
-    } catch {
-      return false;
-    }
-  }, []);
-
-  useEffect(() => {
-    if (bugunKelimesi) {
-      setSaved(isSavedInStorage(bugunKelimesi.id));
-    }
-  }, [bugunKelimesi, isSavedInStorage]);
 
   const handleShare = useCallback(async () => {
     if (!bugunKelimesi) return;
@@ -310,36 +294,17 @@ export default function GununKelimesiKart({
 
   const handleSave = useCallback(() => {
     if (!bugunKelimesi) return;
-
-    try {
-      const raw = localStorage.getItem(KAYIT_KEY);
-      const list: any[] = raw ? JSON.parse(raw) : [];
-
-      if (saved) {
-        const yeniListe = list.filter((k: any) => k.id !== bugunKelimesi.id);
-        localStorage.setItem(KAYIT_KEY, JSON.stringify(yeniListe));
-        setSaved(false);
-        toast.success('Kayıttan çıkarıldı');
-      } else {
-        const yeniKayit = {
-          id: bugunKelimesi.id,
-          kelime: bugunKelimesi.kelime,
-          anlam: bugunKelimesi.anlam,
-          ornekler: bugunKelimesi.ornekler || [],
-          ornek: bugunKelimesi.meta?.notlar || '',
-          tarih: bugunKelimesi.tarih,
-          kaydedilmeTarihi: new Date().toISOString(),
-        };
-        list.push(yeniKayit);
-        localStorage.setItem(KAYIT_KEY, JSON.stringify(list));
-        setSaved(true);
-        toast.success('Kelime kaydedildi');
-      }
-    } catch (err) {
-      console.error('Kaydetme hatası:', err);
-      toast.error('Kaydedilemedi');
-    }
-  }, [bugunKelimesi, saved]);
+    const eklendi = kayitToggle({
+      id: bugunKelimesi.id,
+      kelime: bugunKelimesi.kelime,
+      anlam: bugunKelimesi.anlam,
+      lehce: bugunKelimesi.lehce,
+      ornekler: bugunKelimesi.ornekler || [],
+      ornek: bugunKelimesi.meta?.notlar || '',
+      tarih: bugunKelimesi.tarih,
+    });
+    toast.success(eklendi ? 'Kelime kaydedildi' : 'Kayıttan çıkarıldı');
+  }, [bugunKelimesi, kayitToggle]);
 
   if (loading || !bugunKelimesi) {
     return (

@@ -1,13 +1,13 @@
 // TASLAK: Bu sayfa deneme amacli olusturuldu, henuz tamamlanmadi.
 'use client';
 
-import { useFavoriler } from '@/hooks/useFavoriler';
+import { useKaydedilenler } from '@/hooks/useKaydedilenler';
 import KelimeKarti from '@/components/dictionary/KelimeKarti';
 import { Star, ArrowLeft } from 'lucide-react';
 import Link from 'next/link';
 
 export default function FavorilerPage() {
-  const { favoriler, loading, favoriCikar } = useFavoriler();
+  const { kayitlilar: favoriler, loading, sil: favoriCikar } = useKaydedilenler();
 
   if (loading) {
     return (
