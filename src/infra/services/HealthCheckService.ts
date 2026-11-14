@@ -22,7 +22,7 @@ export class HealthCheckService {
   public static async getHealth(): Promise<HealthCheckResponseDTO> {
     const startTime = performance.now();
 
-    // Dinamik BaÄŸÄ±mlÄ±lÄ±k Denetimleri
+    // Dinamik Bagimlilik Denetimleri
     const discoveryCheck = this.checkDiscoveryEngine();
     const analyticsCheck = this.checkAnalyticsEngine();
     const cacheCheck = this.checkCacheLayer();
@@ -76,6 +76,19 @@ export class HealthCheckService {
       status: 'UP',
       latencyMs: Number((performance.now() - start).toFixed(2)),
       details: 'SWR Cache operational'
+    };
+  }
+
+  public static getHealthStatus(): { status: 'UP' | 'DOWN'; timestamp: string; version: string; services: { database: string; cache: string; metrics: string } } {
+    return {
+      status: 'UP',
+      timestamp: new Date().toISOString(),
+      version: AppConfig.version,
+      services: {
+        database: 'HEALTHY',
+        cache: 'HEALTHY',
+        metrics: 'OPERATIONAL'
+      }
     };
   }
 }

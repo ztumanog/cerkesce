@@ -1,4 +1,4 @@
-import { HealthCheckService } from '../http/HealthCheckService';
+import { HealthCheckService } from '../services/HealthCheckService';
 import { MetricsService } from './MetricsService';
 import { AlertService } from './AlertService';
 

@@ -1,6 +1,6 @@
 import { OperationalIntelligenceService } from '../operations/OperationalIntelligenceService';
 import { PredictiveAlertDashboardService } from '../operations/PredictiveAlertDashboardService';
-import { HealthCheckService } from '../http/HealthCheckService';
+import { HealthCheckService } from '../services/HealthCheckService';
 
 export interface OperationsWidget {
   id: string;
