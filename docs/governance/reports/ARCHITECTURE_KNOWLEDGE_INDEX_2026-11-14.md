@@ -232,9 +232,113 @@ Kurul kararı bekleniyor. Tetikleyiciler:
 
 
 
-\*\*İndeks:\*\* 2026-11-14
+\---
 
-\*\*Kapsam:\*\* 21 doküman (6 rapor + 15 karar)
 
-\*\*Durum:\*\* Aktif
+
+\## 10. Rapor Detayları (2026-11-14 Güncelleme)
+
+
+
+\### 10.1. MIMARA\_RAPOR\_20261110.md — Tarihsel
+
+
+
+\*\*Tarih:\*\* 10.11.2026
+
+\*\*Dönem:\*\* MVP-2 kapanışı
+
+\*\*Durum:\*\* 🟡 Tarihsel (kapandı)
+
+
+
+\*\*İçerik:\*\*
+
+\- Latin Arama: `j → ж`, `bje → бжэ` (21 sonuç)
+
+\- Lehçe Dönüştürücü: JSON'suz saf kural motoruna geçiş
+
+\- Vitest: 31/31 geçti
+
+\- \*\*Açık:\*\* DialectResolver vs kural motoru kararı henüz verilmemiş
+
+
+
+\*\*Şimdiki Durum:\*\*
+
+\- Latin arama: ✅ Yapıldı
+
+\- Lehçe dönüştürücü: ✅ Kural motoruna geçti
+
+\- DialectResolver kararı: ✅ ADR-GOV-014 ile verildi (kabul edildi)
+
+\- MVP-2: ✅ Kapandı
+
+
+
+\*\*Neden Tarihsel:\*\* Bu rapor MVP-2 dönemine ait. Tüm işler tamamlandı, kararlar verildi. Yeni mühendis için referans değeri var, ama \*\*aktif iş değil.\*\*
+
+
+
+\### 10.2. MVP2\_AUDIT\_RAPORU\_20261108.md — Tarihsel
+
+
+
+\*\*Tarih:\*\* 08.11.2026
+
+\*\*Dönem:\*\* MVP-2 başlangıcı
+
+\*\*Durum:\*\* 🟡 Tarihsel (audit tamamlandı, kod başladı ve bitti)
+
+
+
+\*\*İçerik:\*\*
+
+\- MVP-2 Latin Arama audit raporu
+
+\- \*\*"Audit tamamlandı / Kod başlamadı"\*\* (08.11.2026 itibarıyla)
+
+
+
+\*\*Şimdiki Durum:\*\*
+
+\- MVP-2 kodu: ✅ Başladı ve bitti
+
+\- Latin arama: ✅ Çalışıyor
+
+\- Audit: ✅ Tamamlandı
+
+
+
+\*\*Neden Tarihsel:\*\* Bu rapor MVP-2 başlangıç dönemine ait. Audit tamamlandı, kod yazıldı, MVP kapandı. Yeni mühendis için referans değeri var, ama \*\*aktif iş değil.\*\*
+
+
+
+\### 10.3. Diğer Raporların Detayları
+
+
+
+| Rapor | Tarih | Konu | Durum |
+
+|---|---|---|---|
+
+| DIALECT\_BENCHMARK\_ACIKLAMASI | 12.11.2026 | Dialect benchmark açıklaması | ✅ Referans |
+
+| LOADER\_TUTARLILIGI\_TEKNIK\_INCELEME | 13.11.2026 | Loader tutarlılığı analizi | ✅ Analiz (P1/P2 açık) |
+
+| ROOT\_FAMILY\_QUALITY\_REVIEW | 13.11.2026 | Root family kalite analizi | ✅ Analiz (mimar kararı bekliyor) |
+
+| SSOT\_MIGRATION\_FINAL\_REPORT | 13.11.2026 | SSOT migration kapanış | ✅ Tamamlandı |
+
+| ARCHITECTURE\_KNOWLEDGE\_INDEX | 14.11.2026 | Bu indeks | ✅ Aktif |
+
+
+
+\---
+
+
+
+\*\*Son Güncelleme:\*\* 2026-11-14
+
+\*\*Güncelleyen:\*\* Operatör (EMİR-OPS-003 güncellemesi)
 
