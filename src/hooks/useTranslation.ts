@@ -1,4 +1,4 @@
-﻿// src/hooks/useTranslation.ts
+// src/hooks/useTranslation.ts
 'use client';
 import { useState, useEffect } from 'react';
 import { TranslationEntry } from '@/domain/translation';
@@ -15,36 +15,48 @@ export function useTranslation(query: string): UseTranslationResult {
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    if (!query.trim()) {
+    const trimmed = query.trim();
+    if (!trimmed) {
       setResults([]);
+      setLoading(false);
       setError(null);
       return;
     }
 
+    const controller = new AbortController();
     setLoading(true);
     setError(null);
 
-    fetch(`/api/translation?q=${encodeURIComponent(query)}`)
-      .then((res) => {
-        if (!res.ok) throw new Error(`HTTP ${res.status}`);
-        return res.json();
-      })
-      .then((data) => {
-        if (data.success) {
-          setResults(data.data || []);
-          setError(null);
-        } else {
-          setError(data.error || 'Unknown error');
+    const timer = setTimeout(() => {
+      fetch(`/api/translation?q=${encodeURIComponent(trimmed)}`, { signal: controller.signal })
+        .then((res) => {
+          if (!res.ok) throw new Error(`HTTP ${res.status}`);
+          return res.json();
+        })
+        .then((data) => {
+          if (data.success) {
+            setResults(data.data || []);
+            setError(null);
+          } else {
+            setError(data.error || 'Unknown error');
+            setResults([]);
+          }
+        })
+        .catch((err) => {
+          if (err instanceof Error && err.name === 'AbortError') return;
+          setError(err instanceof Error ? err.message : String(err));
           setResults([]);
-        }
-      })
-      .catch((err) => {
-        setError(err instanceof Error ? err.message : String(err));
-        setResults([]);
-      })
-      .finally(() => setLoading(false));
+        })
+        .finally(() => {
+          if (!controller.signal.aborted) setLoading(false);
+        });
+    }, 250);
+
+    return () => {
+      clearTimeout(timer);
+      controller.abort();
+    };
   }, [query]);
 
   return { results, loading, error };
 }
-
