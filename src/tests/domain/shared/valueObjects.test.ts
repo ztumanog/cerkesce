@@ -38,7 +38,7 @@ describe("DDD Value Objects & LexemeStore Entegrasyonu", () => {
     expect(root.dialect).toBe("COMMON");
   });
 
-  it("lexemes.json üzerindeki 28.414 kaydın tamamı Value Object kurallarına uyar", () => {
+  it("lexemes.json üzerindeki 28438 kaydın tamamı Value Object kurallarına uyar", () => {
     const all = getAllLexemes();
     expect(all.length).toBe(28438);
 
