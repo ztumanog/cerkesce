@@ -43,7 +43,7 @@ export default function MorphologyPage() {
       : (result?.prefixCount ?? innerResult?.prefixCount ?? 0);
   const suffixCount =
     rootIndex >= 0
-      ? morphemes.length - 1 - rootIndex
+      ? morphemes.slice(rootIndex + 1).filter((m: any) => m.type !== 'root').length
       : (result?.suffixCount ?? innerResult?.suffixCount ?? 0);
   const wordPos =
     result?.lemmaPos ||
@@ -226,3 +226,4 @@ export default function MorphologyPage() {
     </div>
   );
 }
+
