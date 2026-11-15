@@ -12,7 +12,7 @@ type Family = {
 };
 type Status = "incelenmemis" | "bekliyor" | "onaylandi" | "reddedildi";
 type Review = { status: Status; note: string };
-type Filter = "tumu" | "eksik" | Status;
+type Filter = "tumu" | "yetim" | "eksik" | Status;
 
 const statusNames: Record<Status, string> = {
   incelenmemis: "İncelenmemiş",
@@ -22,6 +22,7 @@ const statusNames: Record<Status, string> = {
 };
 const filters: { key: Filter; label: string }[] = [
   { key: "tumu", label: "Tümü" },
+  { key: "yetim", label: "Yetim / WF-UNCLEAR" },
   { key: "eksik", label: "Eksik alanlı" },
   { key: "incelenmemis", label: "İncelenmemiş" },
   { key: "bekliyor", label: "Onay bekleyen" },
@@ -69,6 +70,13 @@ export default function FamilyPage() {
   const [error, setError] = useState("");
   const [query, setQuery] = useState("");
   const [filter, setFilter] = useState<Filter>("tumu");
+  const [canonicalFamilyIds, setCanonicalFamilyIds] = useState<Set<string> | null>(null);
+
+  useEffect(() => {
+    if (typeof window !== "undefined" && new URLSearchParams(window.location.search).get("filter") === "yetim") {
+      setFilter("yetim");
+    }
+  }, []);
   const [selected, setSelected] = useState("");
   const [reviews, setReviews] = useState<Record<string, Review>>({});
   const [message, setMessage] = useState("");
@@ -93,10 +101,16 @@ export default function FamilyPage() {
     const controller = new AbortController();
     async function load() {
       try {
-        const response = await fetch("/data/linguistic/lexemes.json", {
-          cache: "no-store",
-          signal: controller.signal,
-        });
+        const [response, famResponse] = await Promise.all([
+          fetch("/data/linguistic/lexemes.json", {
+            cache: "no-store",
+            signal: controller.signal,
+          }),
+          fetch("/data/linguistic/word_families.json", {
+            cache: "no-store",
+            signal: controller.signal,
+          }).catch(() => null),
+        ]);
         if (!response.ok) throw new Error(`Kaynak okunamadı (${response.status}).`);
         const raw: unknown = await response.json();
         const list = Array.isArray(raw) ? raw : object(raw) ? raw.lexemes : undefined;
@@ -110,7 +124,22 @@ export default function FamilyPage() {
           }
           ids.add(row.id);
         }
-        if (!controller.signal.aborted) setRows(list as Row[]);
+        let parsedFamIds: Set<string> | null = null;
+        if (famResponse && famResponse.ok) {
+          const famRaw: unknown = await famResponse.json().catch(() => null);
+          const famList = Array.isArray(famRaw) ? famRaw : object(famRaw) ? famRaw.families : undefined;
+          if (Array.isArray(famList)) {
+            parsedFamIds = new Set(
+              famList
+                .map(item => (object(item) ? text(item.id).trim() : ""))
+                .filter(Boolean),
+            );
+          }
+        }
+        if (!controller.signal.aborted) {
+          setCanonicalFamilyIds(parsedFamIds);
+          setRows(list as Row[]);
+        }
       } catch (cause) {
         if (!controller.signal.aborted) {
           setError(cause instanceof Error ? cause.message : "Yükleme hatası.");
@@ -146,8 +175,16 @@ export default function FamilyPage() {
   const current = families.find(family => family.id === selected);
   const currentReview = reviews[selected] ?? { status: "incelenmemis", note: "" };
 
+  const isOrphanOrUnclear = (familyId: string) =>
+    familyId === "WF-UNCLEAR" || (canonicalFamilyIds !== null && !canonicalFamilyIds.has(familyId));
+  const wfUnclearCount = rows.filter(row => familyIds(row).includes("WF-UNCLEAR")).length;
+  const orphanFamilyCount = canonicalFamilyIds
+    ? families.filter(f => f.id !== "WF-UNCLEAR" && !canonicalFamilyIds.has(f.id)).length
+    : 0;
+
   function matches(family: Family, value: Filter): boolean {
     if (value === "tumu") return true;
+    if (value === "yetim") return isOrphanOrUnclear(family.id);
     if (value === "eksik") return family.missing.length > 0;
     return (reviews[family.id]?.status ?? "incelenmemis") === value;
   }
@@ -247,7 +284,7 @@ export default function FamilyPage() {
       <p className="mt-2 text-xs text-slate-600">
         “Eksik alanlı”: bağlı kelimelerden en az birinde yazım, IPA, Türkçe,
         conceptId veya rootIds boş. Eksik alan, kaydın yanlış olduğunu kanıtlamaz.
-        Aile bağlantısı olmayan kelime: {unlinked} · Farklı aile alanları çelişen kelime: {conflicts}
+        Aile bağlantısı olmayan kelime: {unlinked} · Farklı aile alanları çelişen kelime: {conflicts} · WF-UNCLEAR: {wfUnclearCount === 0 ? "0 (Temiz ✓)" : wfUnclearCount} · Aile dosyasında olmayan (yetim): {orphanFamilyCount}
       </p>
 
       <div className="mt-4 flex flex-col gap-4 lg:flex-row">

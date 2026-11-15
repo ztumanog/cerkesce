@@ -148,22 +148,6 @@ export default function CurationSidebar() {
             ➕ Yeni Kelime
           </Link>
           <Link
-            href="/sozluk/family/WF-UNCLEAR"
-            style={{
-              display: 'flex',
-              padding: '6px 12px',
-              borderRadius: '8px',
-              textDecoration: 'none',
-              fontSize: '13px',
-              color: '#d97706',
-              fontWeight: '600',
-              gap: '6px',
-              background: isActive('/sozluk/family/WF-UNCLEAR') ? '#fffbe5' : 'transparent',
-            }}
-          >
-            ⚠️ WF-UNCLEAR
-          </Link>
-          <Link
             href="/admin/curation/single"
             style={{
               display: 'flex',
