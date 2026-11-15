@@ -88810,7 +88810,7 @@
     "rootForm": "Ӏуат"
   },
   {
-    "id": "WF-GWSHYӀ",
+    "id": "WF-GWSHY1",
     "conceptIds": [
       "AMUSE"
     ],
@@ -88878,7 +88878,7 @@
     "rootForm": "унэху"
   },
   {
-    "id": "WF-TSӀU",
+    "id": "WF-TS1U",
     "conceptIds": [
       "MATT"
     ],
@@ -88963,7 +88963,7 @@
     "rootForm": "укъ"
   },
   {
-    "id": "WF-ZHAKӀ",
+    "id": "WF-ZHAK1",
     "conceptIds": [
       "SAKAL"
     ],
@@ -146732,5 +146732,149 @@
       "lemmaCount": 2
     },
     "rootForm": "Ӏууэ"
+  },
+  {
+    "id": "WF-PXY",
+    "rootIds": [],
+    "conceptIds": [
+      "MOVEMENT"
+    ],
+    "morphemeIds": [],
+    "notes": "Tekil aile (yetim affix, _236)",
+    "_source": "word_families.json",
+    "lexemeIds": [
+      "L-PXY"
+    ],
+    "productivity": {
+      "totalLexemes": 1,
+      "corpusFrequency": 0
+    },
+    "rootForm": "пхы-"
+  },
+  {
+    "id": "WF-TR",
+    "rootIds": [],
+    "conceptIds": [
+      "VERB"
+    ],
+    "morphemeIds": [],
+    "notes": "Tekil aile (yetim affix, _236)",
+    "_source": "word_families.json",
+    "lexemeIds": [
+      "L-TR"
+    ],
+    "productivity": {
+      "totalLexemes": 1,
+      "corpusFrequency": 0
+    },
+    "rootForm": "тр-"
+  },
+  {
+    "id": "WF-F-E-KBD",
+    "rootIds": [],
+    "conceptIds": [
+      "VERB"
+    ],
+    "morphemeIds": [],
+    "notes": "Tekil aile (yetim affix, _236)",
+    "_source": "word_families.json",
+    "lexemeIds": [
+      "L-F-E-KBD"
+    ],
+    "productivity": {
+      "totalLexemes": 1,
+      "corpusFrequency": 0
+    },
+    "rootForm": "фӀэ-"
+  },
+  {
+    "id": "WF-RI",
+    "rootIds": [],
+    "conceptIds": [
+      "HOWEVER"
+    ],
+    "morphemeIds": [],
+    "notes": "Tekil aile (yetim affix, _236)",
+    "_source": "word_families.json",
+    "lexemeIds": [
+      "L-RI"
+    ],
+    "productivity": {
+      "totalLexemes": 1,
+      "corpusFrequency": 0
+    },
+    "rootForm": "-ри"
+  },
+  {
+    "id": "WF-TEME",
+    "rootIds": [],
+    "conceptIds": [
+      "IF"
+    ],
+    "morphemeIds": [],
+    "notes": "Tekil aile (yetim affix, _236)",
+    "_source": "word_families.json",
+    "lexemeIds": [
+      "L-TEME"
+    ],
+    "productivity": {
+      "totalLexemes": 1,
+      "corpusFrequency": 0
+    },
+    "rootForm": "-тэмэ"
+  },
+  {
+    "id": "WF-IRE",
+    "rootIds": [],
+    "conceptIds": [
+      "LET"
+    ],
+    "morphemeIds": [],
+    "notes": "Tekil aile (yetim affix, _236)",
+    "_source": "word_families.json",
+    "lexemeIds": [
+      "L-IRE"
+    ],
+    "productivity": {
+      "totalLexemes": 1,
+      "corpusFrequency": 0
+    },
+    "rootForm": "ире-"
+  },
+  {
+    "id": "WF-IRI",
+    "rootIds": [],
+    "conceptIds": [
+      "TYPE_PREPOSITION_DEFINITIONS_1_ALONG"
+    ],
+    "morphemeIds": [],
+    "notes": "Tekil aile (yetim affix, _236)",
+    "_source": "word_families.json",
+    "lexemeIds": [
+      "L-IRI"
+    ],
+    "productivity": {
+      "totalLexemes": 1,
+      "corpusFrequency": 0
+    },
+    "rootForm": "ири-"
+  },
+  {
+    "id": "WF-PYRY",
+    "rootIds": [],
+    "conceptIds": [
+      "OBJECT"
+    ],
+    "morphemeIds": [],
+    "notes": "Tekil aile (yetim affix, _236)",
+    "_source": "word_families.json",
+    "lexemeIds": [
+      "L-PYRY"
+    ],
+    "productivity": {
+      "totalLexemes": 1,
+      "corpusFrequency": 0
+    },
+    "rootForm": "пыры-"
   }
 ]

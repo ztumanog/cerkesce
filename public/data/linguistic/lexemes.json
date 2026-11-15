@@ -716531,7 +716531,7 @@
     "legacyIds": [
       "HUV6-ЖЬАКІЭ"
     ],
-    "wordFamilyId": "WF-ZHAKӀ"
+    "wordFamilyId": "WF-ZHAK1"
   },
   {
     "id": "L-ZHAK1EUPS",
@@ -993007,7 +993007,7 @@
     "legacyIds": [
       "KAV-ГЪЭГУШЫӀЭН"
     ],
-    "wordFamilyId": "WF-GWSHYӀ"
+    "wordFamilyId": "WF-GWSHY1"
   },
   {
     "id": "L-GHEGHELHEGHUEN",
@@ -1019375,7 +1019375,7 @@
     "legacyIds": [
       "KAV-МЫЦӀУ"
     ],
-    "wordFamilyId": "WF-TSӀU"
+    "wordFamilyId": "WF-TS1U"
   },
   {
     "id": "L-TEMYTS-UUK",
@@ -1092205,7 +1092205,7 @@
       "KAV-ПХЫ--2"
     ],
     "isExempt": true,
-    "wordFamilyId": null
+    "wordFamilyId": "WF-PXY"
   },
   {
     "id": "L-XUSHCHHE-SHCHATEU",
@@ -1094935,7 +1094935,7 @@
       "KAV-ТР--2"
     ],
     "isExempt": true,
-    "wordFamilyId": null
+    "wordFamilyId": "WF-TR"
   },
   {
     "id": "L-T-EK-U-T-EK-U",
@@ -1095020,7 +1095020,7 @@
       "KAV-ФӀЭ--2"
     ],
     "isExempt": true,
-    "wordFamilyId": null
+    "wordFamilyId": "WF-F-E-KBD"
   },
   {
     "id": "L-HECHE-HEPSEU",
@@ -1095658,7 +1095658,7 @@
       "KAV--РИ"
     ],
     "isExempt": true,
-    "wordFamilyId": null
+    "wordFamilyId": "WF-RI"
   },
   {
     "id": "L-TEME",
@@ -1095682,7 +1095682,7 @@
       "KAV--ТЭМЭ"
     ],
     "isExempt": true,
-    "wordFamilyId": null
+    "wordFamilyId": "WF-TEME"
   },
   {
     "id": "L-T-E",
@@ -1097244,7 +1097244,7 @@
       "KAV-ИРЕ-"
     ],
     "isExempt": true,
-    "wordFamilyId": null
+    "wordFamilyId": "WF-IRE"
   },
   {
     "id": "L-IRI",
@@ -1097268,7 +1097268,7 @@
       "KAV-ИРИ-"
     ],
     "isExempt": true,
-    "wordFamilyId": null
+    "wordFamilyId": "WF-IRI"
   },
   {
     "id": "L-ISHCHKHERE-KHUHEP-E",
@@ -1099186,7 +1099186,7 @@
       "KAV-ПЫРЫ-"
     ],
     "isExempt": true,
-    "wordFamilyId": null
+    "wordFamilyId": "WF-PYRY"
   },
   {
     "id": "L-PYXU-SYXU",
@@ -1135306,12 +1135306,12 @@
     "wordFamilyId": "WF-PHRASE"
   },
   {
-    "form": "коммунальнэ Ӏуэхутхьэбзэхэр",
+    "form": "Ӏуэхутхьэбзэ",
     "translations": {
-      "tr": "-",
+      "tr": "hizmet",
       "en": "utility",
       "ar": "المرافق العامة",
-      "ru": "коммунальные услуги"
+      "ru": "услуга"
     },
     "pos": "UNKNOWN",
     "notes": "[Jonty]",
@@ -1135320,14 +1135320,19 @@
     "status": "SYNTHETIC",
     "synthetic_reason": "L-AUTO otomatik uretim, sozlukte yok, concept yok, POS yok",
     "meaning": "{'meaning': '-', 'examples': []}",
-    "ipa": "/kommwnalnɐ ʔʷɐxwtħɐbzɐxɐr/",
+    "ipa": "/ʔʷɐxʷǝ'tħɐbzɐ/",
     "rootId": null,
     "conceptId": "UTILITY",
     "dialect": "KBD",
     "rootIds": [],
     "isExempt": true,
     "partOfSpeech": "unknown",
-    "wordFamilyId": "WF-PHRASE"
+    "wordFamilyId": "WF-PHRASE",
+    "lastEdit": {
+      "editor": "zt",
+      "reason": "ÇİFT ANLAM DÜZELTİLDİ",
+      "timestamp": "20261116_005603"
+    }
   },
   {
     "form": "коробкэ передач",
