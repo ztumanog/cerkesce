@@ -320,6 +320,9 @@ export default function KelimeDetayDrawer({
   const [corpusData, setCorpusData] = useState<CorpusExplorerResult | null>(null);
   const [familyInfo, setFamilyInfo] = useState<WordFamilyInfo | null>(null);
   const [showAllFamily, setShowAllFamily] = useState(false);
+  const [declensionOpen, setDeclensionOpen] = useState(false);
+  const [familyOpen, setFamilyOpen] = useState(false);
+  const [familyFilter, setFamilyFilter] = useState('');
   const [kopyalandi, setKopyalandi] = useState(false);
   const [paylasimAcik, setPaylasimAcik] = useState(false);
   const [hasSpeechSupport, setHasSpeechSupport] = useState(false);
@@ -388,7 +391,13 @@ export default function KelimeDetayDrawer({
   const isDrawerOpen = open ?? isOpen ?? false;
 
   useEffect(() => {
-    if (isDrawerOpen) { setOpenLang(null); setOpenSrc(null); }
+    if (isDrawerOpen) {
+      setOpenLang(null);
+      setOpenSrc(null);
+      setDeclensionOpen(false);
+      setFamilyOpen(false);
+      setFamilyFilter('');
+    }
   }, [isDrawerOpen, seciliKelime]);
 
   useEffect(() => {
@@ -413,64 +422,161 @@ export default function KelimeDetayDrawer({
   }
 
   const cokDilliKarsiliklar = useMemo(() => {
-    const byLang: Record<string, { meanings: string[]; sources: SourceContent[] }> = {};
-    sourceContents.forEach((source) => {
-      const meta = metaOf(source);
-      const tgt = (meta?.targetLanguage || source.targetLanguage || '').toLowerCase();
-      if (!tgt) return;
-      if (!byLang[tgt]) byLang[tgt] = { meanings: [], sources: [] };
-      byLang[tgt].sources.push(source);
-      const extracted = extractMeanings(source, 5).map(extractShortMeaning).filter(Boolean) as string[];
-      for (const m of extracted) byLang[tgt].meanings.push(m);
-    });
-    Object.keys(byLang).forEach((lang) => {
-      byLang[lang].meanings = [...new Set(byLang[lang].meanings.map((m) => m.trim()).filter(Boolean))].slice(0, 10);
-    });
-    const order = ['tr', 'en', 'ru', 'ar', 'ady', 'kbd'];
-    const sorted: Record<string, { meanings: string[]; sources: SourceContent[] }> = {};
-    order.forEach((lang) => { if (byLang[lang]) sorted[lang] = byLang[lang]; });
-    Object.keys(byLang).forEach((lang) => { if (!sorted[lang]) sorted[lang] = byLang[lang]; });
-    return sorted;
-  }, [sourceContents]);
+    const map: Record<string, { meanings: string[]; sources: SourceContent[] }> = {};
+    for (const src of sourceContents) {
+      const tl = trgLangOf(src) || srcLangOf(src) || 'other';
+      const ms = extractMeanings(src, 6);
+      if (!ms.length) continue;
+      if (!map[tl]) map[tl] = { meanings: [], sources: [] };
+      for (const m of ms) {
+        if (!map[tl].meanings.includes(m)) map[tl].meanings.push(m);
+      }
+      map[tl].sources.push(src);
+    }
 
-  const featured = useMemo(() => pickFeatured(sourceContents), [sourceContents]);
+    // Lexeme uzerindeki dogrudan Turkce / Ingilizce / Rusca / Arapca karsiliklari da dahil et
+    const injectDirect = (langKey: string, rawVal: unknown, label: string) => {
+      if (!rawVal) return;
+      const parts = (Array.isArray(rawVal) ? rawVal : String(rawVal).split(/[;]+/))
+        .map((s) => cleanHtml(String(s || '')))
+        .filter(Boolean);
+      if (!parts.length) return;
+      if (!map[langKey]) map[langKey] = { meanings: [], sources: [] };
+      for (const p of parts) {
+        if (!map[langKey].meanings.some((ex) => ex.toLowerCase() === p.toLowerCase())) {
+          map[langKey].meanings.unshift(p);
+        }
+      }
+      if (!map[langKey].sources.length) {
+        map[langKey].sources.push({
+          sourceId: `lexeme-${langKey}`,
+          sourceName: label,
+          title: label,
+          sourceLanguage: 'kbd',
+          targetLanguage: langKey,
+          meanings: parts,
+        });
+      }
+    };
 
-  const paylasimMetni = useMemo(() => {
-    if (!content) return '';
+    const trDirect =
+      (seciliKelime as any)?.tr ||
+      (seciliKelime as any)?.translations?.tr ||
+      (seciliKelime as any)?.literalMeaning;
+    injectDirect('tr', trDirect, 'Çerkesçe–Türkçe Temel Sözlük');
+
+    const enDirect = (seciliKelime as any)?.en || (seciliKelime as any)?.translations?.en;
+    if (!map['en']) injectDirect('en', enDirect, 'Çerkesçe–İngilizce Temel Sözlük');
+
+    const ruDirect = (seciliKelime as any)?.ru || (seciliKelime as any)?.translations?.ru;
+    if (!map['ru']) injectDirect('ru', ruDirect, 'Çerkesçe–Rusça Temel Sözlük');
+
+    const arDirect = (seciliKelime as any)?.ar || (seciliKelime as any)?.translations?.ar;
+    if (!map['ar']) injectDirect('ar', arDirect, 'Çerkesçe–Arapça Temel Sözlük');
+
+    const ORDER = ['tr', 'en', 'ru', 'ar', 'ady', 'kbd'];
+    const ordered: Record<string, { meanings: string[]; sources: SourceContent[] }> = {};
+    for (const k of ORDER) {
+      if (map[k]) ordered[k] = map[k];
+    }
+    for (const k of Object.keys(map)) {
+      if (!ordered[k]) ordered[k] = map[k];
+    }
+    return ordered;
+  }, [sourceContents, seciliKelime]);
+
+  const lexemeLangCards = useMemo(() => {
+    const cleanFirst = (raw: unknown): string => {
+      if (!raw) return '';
+      const arr = Array.isArray(raw) ? raw : [raw];
+      for (const item of arr) {
+        const s = cleanHtml(String(item || '')).trim();
+        if (s) return s;
+      }
+      return '';
+    };
+
+    const trVal =
+      cleanFirst((seciliKelime as any)?.tr) ||
+      cleanFirst((seciliKelime as any)?.translations?.tr) ||
+      cleanFirst((seciliKelime as any)?.literalMeaning) ||
+      cleanFirst(cokDilliKarsiliklar['tr']?.meanings);
+
+    const enVal =
+      cleanFirst((seciliKelime as any)?.en) ||
+      cleanFirst((seciliKelime as any)?.translations?.en) ||
+      cleanFirst(cokDilliKarsiliklar['en']?.meanings);
+
+    const ruVal =
+      cleanFirst((seciliKelime as any)?.ru) ||
+      cleanFirst((seciliKelime as any)?.translations?.ru) ||
+      cleanFirst(cokDilliKarsiliklar['ru']?.meanings);
+
+    const arVal =
+      cleanFirst((seciliKelime as any)?.ar) ||
+      cleanFirst((seciliKelime as any)?.translations?.ar) ||
+      cleanFirst(cokDilliKarsiliklar['ar']?.meanings);
+
     return [
-      'Kelime: ' + content.word,
-      content.cerkesce ? 'Çerkesçe: ' + content.cerkesce : '',
-      featured ? 'Öne çıkan: ' + extractMeanings(featured, 3).join('; ') + ' — ' + displayNameOf(featured) : '',
-      'Sözlük Kaynak Sayısı: ' + sourceContents.length,
-      ...sourceContents.map((s) => '• ' + displayNameOf(s) + ': ' + (s.meanings ?? []).map(cleanHtml).join(', ')),
-    ].filter(Boolean).join('\n');
-  }, [content, featured, sourceContents]);
-
-  const panoyaKopyala = useCallback(async () => {
-    try {
-      await navigator.clipboard.writeText(paylasimMetni);
-      setKopyalandi(true);
-      setTimeout(() => setKopyalandi(false), 1800);
-    } catch (error) {
-      console.error('Kopyalama hatası:', error);
-    }
-  }, [paylasimMetni]);
-
-  const paylas = useCallback(() => setPaylasimAcik(true), []);
-
-  const dinle = useCallback(() => {
-    if (hasSpeechSupport && content) {
-      window.speechSynthesis.cancel();
-      const utterance = new SpeechSynthesisUtterance(content.word);
-      utterance.lang = 'tr-TR';
-      window.speechSynthesis.speak(utterance);
-    }
-  }, [hasSpeechSupport, content]);
-
+      {
+        key: 'tr',
+        tag: 'TR · TÜRKÇE',
+        value: trVal,
+        boxClass: 'border-sky-200 bg-sky-50/70 dark:border-sky-800/60 dark:bg-sky-950/30',
+        tagClass: 'text-sky-700 dark:text-sky-300',
+        dir: 'ltr' as const,
+      },
+      {
+        key: 'en',
+        tag: 'EN · ENGLISH',
+        value: enVal,
+        boxClass: 'border-indigo-200 bg-indigo-50/70 dark:border-indigo-800/60 dark:bg-indigo-950/30',
+        tagClass: 'text-indigo-700 dark:text-indigo-300',
+        dir: 'ltr' as const,
+      },
+      {
+        key: 'ru',
+        tag: 'RU · РУССКИЙ',
+        value: ruVal,
+        boxClass: 'border-rose-200 bg-rose-50/70 dark:border-rose-800/60 dark:bg-rose-950/30',
+        tagClass: 'text-rose-700 dark:text-rose-300',
+        dir: 'ltr' as const,
+      },
+      {
+        key: 'ar',
+        tag: 'AR · العربية',
+        value: arVal,
+        boxClass: 'border-amber-200 bg-amber-50/70 dark:border-amber-800/60 dark:bg-amber-950/30',
+        tagClass: 'text-amber-700 dark:text-amber-300',
+        dir: 'rtl' as const,
+      },
+    ].filter((c) => Boolean(c.value));
+  }, [seciliKelime, cokDilliKarsiliklar]);
   if (!isDrawerOpen || !seciliKelime || !content) return null;
 
   const targetWord = content.cerkesce || content.word;
-  const variantDisplay = resolveDialectVariantDisplay({
+  const dinle = () => {
+    if (typeof window === 'undefined' || !('speechSynthesis' in window)) return;
+    window.speechSynthesis.cancel();
+    const u = new SpeechSynthesisUtterance(targetWord);
+    u.lang = 'ru-RU';
+    u.rate = 0.85;
+    window.speechSynthesis.speak(u);
+  };
+
+  const paylas = () => {
+    setPaylasimAcik(true);
+  };
+
+  const panoyaKopyala = () => {
+    const firstLang = Object.values(cokDilliKarsiliklar)[0];
+    const anlam = firstLang?.meanings?.[0] || (seciliKelime as any)?.tr || '';
+    const metin = anlam ? `${targetWord} — ${anlam}` : targetWord;
+    navigator.clipboard.writeText(metin);
+    setKopyalandi(true);
+    setTimeout(() => setKopyalandi(false), 2000);
+  };
+const variantDisplay = resolveDialectVariantDisplay({
     form: targetWord,
     dialect: seciliKelime.dialect,
     dialectVariants: seciliKelime.dialectVariants,
@@ -551,147 +657,24 @@ export default function KelimeDetayDrawer({
             </section>
           )}
 
-          {declension && (
-            <section className="space-y-2" aria-label="İsim çekim tablosu">
-              <SectionHead icon={<BookOpen size={16} className="text-[var(--jade-9)]" aria-hidden="true" />} extra={<Badge size="1" color="gray" variant="soft" highContrast>Закъуэ / Куэд</Badge>}>
-                Склоненэ (İsim Çekimi)
-              </SectionHead>
-              <Table.Root size="1" variant="surface">
-                <Table.Header>
-                  <Table.Row>
-                    <Table.ColumnHeaderCell>Hal</Table.ColumnHeaderCell>
-                    <Table.ColumnHeaderCell>Tekil Belirtili</Table.ColumnHeaderCell>
-                    <Table.ColumnHeaderCell>Çoğul Belirtili</Table.ColumnHeaderCell>
-                  </Table.Row>
-                </Table.Header>
-                <Table.Body>
-                  {declension.map((row) => (
-                    <Table.Row key={row.caseNameCircassian}>
-                      <Table.RowHeaderCell>
-                        <Text as="div" weight="bold" size="1">{row.caseNameCircassian}</Text>
-                        <Text as="div" size="1" color="gray">{row.caseNameTr}</Text>
-                      </Table.RowHeaderCell>
-                      <Table.Cell>{row.singularDefinite}</Table.Cell>
-                      <Table.Cell>{row.pluralDefinite}</Table.Cell>
-                    </Table.Row>
-                  ))}
-                </Table.Body>
-              </Table.Root>
+          {lexemeLangCards.length > 0 && (
+            <section className="grid grid-cols-1 sm:grid-cols-2 gap-2.5" aria-label="Temel dil karşılıkları">
+              {lexemeLangCards.map((card) => (
+                <div
+                  key={card.key}
+                  dir={card.dir}
+                  className={`rounded-xl border px-3.5 py-2.5 transition-colors ${card.boxClass}`}
+                >
+                  <div className={`text-[11px] font-bold tracking-wider uppercase ${card.tagClass}`}>
+                    {card.tag}
+                  </div>
+                  <div className="mt-1 text-sm font-bold leading-snug text-[var(--gray-12)] break-words">
+                    {card.value}
+                  </div>
+                </div>
+              ))}
             </section>
           )}
-
-          {(seciliKelime.rootIds?.length || seciliKelime.wordFamilyId || seciliKelime.conceptId) && (
-            <section className="space-y-2" aria-label="Morfolojik pasaport">
-              <SectionHead icon={<Zap size={16} className="text-[var(--orange-9)]" aria-hidden="true" />}>Morfolojik Pasaport</SectionHead>
-              <Grid columns="3" gap="2">
-                <Card size="1" variant="surface">
-                  <Text as="div" size="1" weight="bold" color="jade" highContrast className="uppercase">Kök</Text>
-                  <Text size="1" className="font-mono">{seciliKelime.rootIds?.join(', ') || '—'}</Text>
-                </Card>
-                <Card size="1" variant="surface">
-                  <Text as="div" size="1" weight="bold" color="purple" highContrast className="uppercase">Aile</Text>
-                  <Text size="1" className="font-mono">{seciliKelime.wordFamilyId || '—'}</Text>
-                </Card>
-                <Card size="1" variant="surface">
-                  <Text as="div" size="1" weight="bold" color="orange" highContrast className="uppercase">Kavram</Text>
-                  <Text size="1" className="font-mono">{seciliKelime.conceptId || '—'}</Text>
-                </Card>
-              </Grid>
-            </section>
-          )}
-
-          {seciliKelime.wordFamilyId && familyInfo && familyInfo.members.length > 0 && (
-            <section className="space-y-2" aria-label="Kök ve türev ailesi">
-              <SectionHead
-                icon={<Users size={16} className="text-[var(--purple-9)]" aria-hidden="true" />}
-                extra={
-                  <Badge size="1" color="purple" variant="soft" highContrast>
-                    {familyInfo.members.length} üye
-                  </Badge>
-                }
-              >
-                Kök–Türev Ailesi
-              </SectionHead>
-              <Card size="2" variant="surface">
-                <Flex direction="column" gap="3">
-                  <Flex align="center" justify="between" gap="2" wrap="wrap" className="pb-2 border-b border-[var(--gray-5)]">
-                    <Flex align="center" gap="2">
-                      <Badge size="1" color="jade" variant="solid" highContrast>KÖK</Badge>
-                      <Text size="3" weight="bold">{familyInfo.rootForm || '—'}</Text>
-                      <Text size="1" color="gray" className="font-mono">({familyInfo.id})</Text>
-                    </Flex>
-                    {familyInfo.etymologyType && ETYM_LABELS[familyInfo.etymologyType.toLowerCase()] && (
-                      <Badge
-                        size="1"
-                        color={ETYM_LABELS[familyInfo.etymologyType.toLowerCase()].color}
-                        variant="soft"
-                        highContrast
-                      >
-                        {ETYM_LABELS[familyInfo.etymologyType.toLowerCase()].label}
-                      </Badge>
-                    )}
-                  </Flex>
-
-                  <Flex direction="column" gap="1.5" className="pl-3 border-l-2 border-[var(--purple-7)]">
-                    {(showAllFamily ? familyInfo.members : familyInfo.members.slice(0, 10)).map((m) => {
-                      const isCurrent = m.form === targetWord || m.id === seciliKelime.id;
-                      const isRoot = familyInfo.rootForm && m.form.toLowerCase() === familyInfo.rootForm.toLowerCase();
-                      return (
-                        <button
-                          key={m.id}
-                          type="button"
-                          onClick={() => {
-                            if (!isCurrent && m.form && onConceptClick) onConceptClick(m.form);
-                          }}
-                          className={`flex items-center justify-between gap-2 px-2.5 py-1.5 rounded-lg text-left transition-colors ${
-                            isCurrent
-                              ? 'bg-[var(--purple-4)] border border-[var(--purple-7)] cursor-default'
-                              : 'hover:bg-[var(--gray-3)] cursor-pointer'
-                          }`}
-                        >
-                          <Flex align="center" gap="2" className="min-w-0 flex-1">
-                            <Text size="2" weight={isCurrent || isRoot ? 'bold' : 'medium'} className="truncate">
-                              {m.form}
-                            </Text>
-                            {isRoot && (
-                              <Badge size="1" color="jade" variant="soft">kök</Badge>
-                            )}
-                            {isCurrent && (
-                              <Badge size="1" color="purple" variant="solid">seçili</Badge>
-                            )}
-                            {m.literalMeaning && (
-                              <Text size="1" color="gray" className="truncate">
-                                — {m.literalMeaning}
-                              </Text>
-                            )}
-                          </Flex>
-                          {!isCurrent && (
-                            <ChevronRight size={14} className="shrink-0 text-[var(--gray-9)]" aria-hidden="true" />
-                          )}
-                        </button>
-                      );
-                    })}
-                  </Flex>
-
-                  {familyInfo.members.length > 10 && (
-                    <Button
-                      type="button"
-                      size="1"
-                      variant="ghost"
-                      color="purple"
-                      onClick={() => setShowAllFamily((v) => !v)}
-                    >
-                      {showAllFamily
-                        ? 'Daha az göster'
-                        : `Tüm türevleri göster (+${familyInfo.members.length - 10} kelime daha)`}
-                    </Button>
-                  )}
-                </Flex>
-              </Card>
-            </section>
-          )}
-
-          {featured && <OneCikanAciklama source={featured} />}
 
           {Object.keys(cokDilliKarsiliklar).length > 0 && (
             <section className="space-y-2" aria-label="Çok dilli karşılıklar ve sözlük kaynakları">
@@ -699,7 +682,7 @@ export default function KelimeDetayDrawer({
                 icon={<Globe size={16} className="text-[var(--orange-9)]" aria-hidden="true" />}
                 extra={<Badge size="1" color="orange" variant="soft" highContrast><BookOpen size={10} aria-hidden="true" />{sourceContents.length} sözlük</Badge>}
               >
-                Çok Dilli Karşılıklar
+                Sözlük Kaynakları
               </SectionHead>
 
               <Card size="1" variant="surface">
@@ -773,6 +756,167 @@ export default function KelimeDetayDrawer({
                 </Flex>
               </Card>
             </section>
+          )}
+
+          {declension && (
+            <Card size="1" variant="surface">
+              <button
+                type="button"
+                onClick={() => setDeclensionOpen((v) => !v)}
+                aria-expanded={declensionOpen}
+                className="flex w-full items-center justify-between gap-2 py-1 px-1 text-left"
+              >
+                <Flex align="center" gap="2">
+                  <BookOpen size={15} className="text-[var(--jade-9)]" aria-hidden="true" />
+                  <Text size="2" weight="bold">Склоненэ (İsim Çekimi)</Text>
+                  <Badge size="1" color="gray" variant="soft">Закъуэ / Куэд</Badge>
+                </Flex>
+                <ChevronDown
+                  size={15}
+                  className={`text-[var(--gray-10)] transition-transform ${declensionOpen ? '' : '-rotate-90'}`}
+                  aria-hidden="true"
+                />
+              </button>
+              {declensionOpen && (
+                <Box pt="2">
+                  <Table.Root size="1" variant="ghost">
+                    <Table.Header>
+                      <Table.Row>
+                        <Table.ColumnHeaderCell>Hal</Table.ColumnHeaderCell>
+                        <Table.ColumnHeaderCell>Tekil Belirtili</Table.ColumnHeaderCell>
+                        <Table.ColumnHeaderCell>Çoğul Belirtili</Table.ColumnHeaderCell>
+                      </Table.Row>
+                    </Table.Header>
+                    <Table.Body>
+                      {declension.map((row) => (
+                        <Table.Row key={row.caseNameCircassian}>
+                          <Table.RowHeaderCell>
+                            <Text as="div" weight="bold" size="1">{row.caseNameCircassian}</Text>
+                            <Text as="div" size="1" color="gray">{row.caseNameTr}</Text>
+                          </Table.RowHeaderCell>
+                          <Table.Cell>{row.singularDefinite}</Table.Cell>
+                          <Table.Cell>{row.pluralDefinite}</Table.Cell>
+                        </Table.Row>
+                      ))}
+                    </Table.Body>
+                  </Table.Root>
+                </Box>
+              )}
+            </Card>
+          )}
+
+          {(seciliKelime.rootIds?.length || seciliKelime.wordFamilyId || seciliKelime.conceptId) && (
+            <Card size="1" variant="surface">
+              <button
+                type="button"
+                onClick={() => setFamilyOpen((v) => !v)}
+                aria-expanded={familyOpen}
+                className="flex w-full items-center justify-between gap-2 py-1 px-1 text-left"
+              >
+                <Flex align="center" gap="2" wrap="wrap">
+                  <Users size={15} className="text-[var(--purple-9)]" aria-hidden="true" />
+                  <Text size="2" weight="bold">Kök &amp; Türev Ailesi</Text>
+                  {familyInfo?.rootForm && (
+                    <Badge size="1" color="jade" variant="soft" highContrast>
+                      Kök: {familyInfo.rootForm}
+                    </Badge>
+                  )}
+                  {familyInfo && familyInfo.members.length > 0 && (
+                    <Badge size="1" color="purple" variant="soft" highContrast>
+                      {familyInfo.members.length} üye
+                    </Badge>
+                  )}
+                </Flex>
+                <ChevronDown
+                  size={15}
+                  className={`shrink-0 text-[var(--gray-10)] transition-transform ${familyOpen ? '' : '-rotate-90'}`}
+                  aria-hidden="true"
+                />
+              </button>
+
+              {familyOpen && (
+                <Flex direction="column" gap="2.5" pt="3">
+                  <Flex wrap="wrap" gap="2" className="pb-2 border-b border-[var(--gray-5)]">
+                    {seciliKelime.rootIds?.length ? (
+                      <Badge size="1" color="jade" variant="outline" className="font-mono">
+                        Kök ID: {seciliKelime.rootIds.join(', ')}
+                      </Badge>
+                    ) : null}
+                    {seciliKelime.wordFamilyId ? (
+                      <Badge size="1" color="purple" variant="outline" className="font-mono">
+                        Aile: {seciliKelime.wordFamilyId}
+                      </Badge>
+                    ) : null}
+                    {seciliKelime.conceptId ? (
+                      <Badge size="1" color="orange" variant="outline" className="font-mono">
+                        Kavram: {seciliKelime.conceptId}
+                      </Badge>
+                    ) : null}
+                  </Flex>
+
+                  {familyInfo && familyInfo.members.length > 0 && (() => {
+                    const qf = familyFilter.trim().toLowerCase();
+                    const filteredMembers = qf
+                      ? familyInfo.members.filter(
+                          (m) =>
+                            m.form.toLowerCase().includes(qf) ||
+                            (m.literalMeaning || '').toLowerCase().includes(qf)
+                        )
+                      : familyInfo.members;
+                    const visibleMembers = showAllFamily || qf ? filteredMembers : filteredMembers.slice(0, 14);
+return (
+                      <>
+                        {familyInfo.members.length > 8 && (
+                          <input
+                            type="text"
+                            value={familyFilter}
+                            onChange={(e) => setFamilyFilter(e.target.value)}
+                            placeholder={`${familyInfo.members.length} türev içinde ara...`}
+                            className="w-full rounded-md border border-[var(--gray-6)] bg-[var(--color-background)] px-2.5 py-1 text-xs outline-none focus:border-[var(--purple-8)]"
+                          />
+                        )}
+                        <Flex wrap="wrap" gap="1.5">
+                          {visibleMembers.map((m) => {
+                            const isCurrent = m.form === targetWord || m.id === seciliKelime.id;
+                            const isRoot = familyInfo.rootForm && m.form.toLowerCase() === familyInfo.rootForm.toLowerCase();
+                            return (
+                              <Button
+                                key={m.id}
+                                type="button"
+                                size="1"
+                                variant={isCurrent ? 'solid' : isRoot ? 'surface' : 'soft'}
+                                color={isCurrent ? 'purple' : isRoot ? 'jade' : 'gray'}
+                                highContrast
+                                title={m.literalMeaning || m.form}
+                                onClick={() => {
+                                  if (!isCurrent && m.form && onConceptClick) onConceptClick(m.form);
+                                }}
+                              >
+                                {m.form}
+                                {m.literalMeaning ? ` · ${m.literalMeaning.slice(0, 22)}` : ''}
+                              </Button>
+                            );
+                          })}
+                        </Flex>
+                        {!qf && filteredMembers.length > 14 && (
+                          <Button
+                            type="button"
+                            size="1"
+                            variant="ghost"
+                            color="purple"
+                            onClick={() => setShowAllFamily((v) => !v)}
+                          >
+                            {showAllFamily
+                              ? 'Daralt'
+                              : `Tümünü göster (+${filteredMembers.length - 14} türev)`}
+                          </Button>
+                        )}
+                      </>
+                    );
+                  })()}
+                </Flex>
+              )}
+            </Card>
           )}
         </Box>
 
