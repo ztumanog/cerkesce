@@ -65,6 +65,7 @@ export interface KelimeItem {
   hedefDilCanonical?: string;
   rootIds?: string[];
   wordFamilyId?: string | null;
+  etymologyType?: string | null;
   conceptId?: string | null;
   ipa?: string | null;
   partOfSpeech?: string | null;
@@ -144,6 +145,18 @@ const formatKaynakDetayi = (kaynakItem: unknown): string => {
   return 'Bilinmeyen Kaynak';
 };
 
+const getEtimolojiRozeti = (
+  etym?: string | null
+): { label: string; color: 'jade' | 'plum' | 'sky' | 'amber' } | null => {
+  if (!etym) return null;
+  const k = etym.toLowerCase();
+  if (k === 'native') return { label: 'Öz Çerkesçe', color: 'jade' };
+  if (k === 'loanword' || k === 'loan_compound') return { label: 'Alıntı', color: 'plum' };
+  if (k === 'proper_noun') return { label: 'Özel İsim', color: 'sky' };
+  if (k === 'affix') return { label: 'Ek', color: 'amber' };
+  return null;
+};
+
 const getFrekansRozeti = (freq?: number): { label: string; color: 'amber' | 'orange' | 'indigo' } | null => {
   if (!freq || freq < 50) return null;
   if (freq >= 1000) return { label: 'Çekirdek Kelime', color: 'amber' };
@@ -163,6 +176,7 @@ export const KelimeKarti: React.FC<KelimeKartiProps> = ({
   const kaynaklar = data.kaynaklar || [];
   const ilkKaynak = kaynaklar[0];
   const frekansRozeti = getFrekansRozeti(data.corpusFrequency);
+  const etimolojiRozeti = getEtimolojiRozeti(data.etymologyType);
   const dialectDisplay = resolveDialectVariantDisplay({
     form: data.kelime || data.form,
     dialect: data.dialect || data.lehce,
@@ -246,6 +260,12 @@ export const KelimeKarti: React.FC<KelimeKartiProps> = ({
             {frekansRozeti && (
               <Badge size="1" color={frekansRozeti.color} variant="soft" highContrast>
                 {frekansRozeti.label}
+              </Badge>
+            )}
+
+            {etimolojiRozeti && (
+              <Badge size="1" color={etimolojiRozeti.color} variant="soft" highContrast>
+                {etimolojiRozeti.label}
               </Badge>
             )}
 

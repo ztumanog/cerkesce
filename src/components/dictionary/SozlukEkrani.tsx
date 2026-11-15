@@ -23,6 +23,9 @@ import {
 import {
   type LanguageFilterValue,
 } from '@/components/dictionary/LanguageFilter';
+import {
+  type EtymologyFilterValue,
+} from '@/components/dictionary/EtymologyFilter';
 import FilterDropdown from '@/components/dictionary/FilterDropdown';
 import AramaGecmisi from '@/components/dictionary/AramaGecmisi';
 import { normalizeDialect } from '@/lib/normalizers/dialectNormalizer';
@@ -46,6 +49,7 @@ export default function SozlukEkrani() {
 
   const [dialectFilter, setDialectFilter] = useState<DialectFilterValue>('ALL');
   const [languageFilter, setLanguageFilter] = useState<LanguageFilterValue>('ALL');
+  const [etymologyFilter, setEtymologyFilter] = useState<EtymologyFilterValue>('ALL');
 
   const { kayitliMi, kayitToggle } = useKaydedilenler();
 
@@ -75,12 +79,14 @@ export default function SozlukEkrani() {
       setTumunuGoster(false);
       setDialectFilter('ALL');
       setLanguageFilter('ALL');
+      setEtymologyFilter('ALL');
 
       gecmiseEkle(query);
 
       try {
+        const cleanQuery = query.trim();
         const response = await fetch(
-          `/api/search?q=${encodeURIComponent(query)}&mode=${mode}`
+          `/api/search?q=${encodeURIComponent(cleanQuery)}&mode=${mode}`
         );
         const data = await response.json();
 
@@ -178,6 +184,7 @@ export default function SozlukEkrani() {
                 dialect: kaynakDialect || entry.dialect || entry.lehce || 'ADY',
                 rootIds: entry.rootIds || [],
                 wordFamilyId: entry.wordFamilyId || null,
+                etymologyType: entry.etymologyType || null,
                 conceptId: entry.conceptId || null,
                 ipa: entry.ipa || null,
                 partOfSpeech: entry.partOfSpeech || null,
@@ -217,6 +224,7 @@ export default function SozlukEkrani() {
       group: kelime.kaynaklar?.[0] as any,
       rootIds: kelime.rootIds || [],
       wordFamilyId: kelime.wordFamilyId || null,
+      etymologyType: kelime.etymologyType || null,
       conceptId: kelime.conceptId || null,
       ipa: kelime.ipa || null,
       partOfSpeech: kelime.partOfSpeech || null,
@@ -235,6 +243,12 @@ export default function SozlukEkrani() {
         if (canonical !== dialectFilter) return false;
       }
 
+      if (etymologyFilter !== 'ALL') {
+        const rawEtym = (kelime.etymologyType || '').toLowerCase();
+        const canonicalEtym = rawEtym === 'loan_compound' ? 'loanword' : rawEtym;
+        if (canonicalEtym !== etymologyFilter) return false;
+      }
+
       if (languageFilter !== 'ALL') {
         const ilkKaynak = kelime.kaynaklar?.[0];
         const targetLang = ilkKaynak?.sourceFile
@@ -246,7 +260,27 @@ export default function SozlukEkrani() {
 
       return true;
     });
-  }, [sonuclar, dialectFilter, languageFilter]);
+  }, [sonuclar, dialectFilter, languageFilter, etymologyFilter]);
+
+  const etymologyCounts = useMemo(() => {
+    const counts: Record<EtymologyFilterValue, number> = {
+      ALL: sonuclar.length,
+      native: 0,
+      loanword: 0,
+      proper_noun: 0,
+      affix: 0,
+    };
+
+    sonuclar.forEach((kelime) => {
+      const k = (kelime.etymologyType || '').toLowerCase();
+      if (k === 'native') counts.native++;
+      else if (k === 'loanword' || k === 'loan_compound') counts.loanword++;
+      else if (k === 'proper_noun') counts.proper_noun++;
+      else if (k === 'affix') counts.affix++;
+    });
+
+    return counts;
+  }, [sonuclar]);
 
   const dialectCounts = useMemo(() => {
     const counts: Record<DialectFilterValue, number> = {
@@ -366,7 +400,7 @@ export default function SozlukEkrani() {
           <Flex align="center" justify="between" px="1">
             <Heading as="h2" size="3" weight="bold" role="status" aria-live="polite">
               Sonuçlar ({filtrelenmisSonuclar.length}
-              {(dialectFilter !== 'ALL' || languageFilter !== 'ALL') &&
+              {(dialectFilter !== 'ALL' || languageFilter !== 'ALL' || etymologyFilter !== 'ALL') &&
                 ` / ${sonuclar.length}`}
               )
             </Heading>

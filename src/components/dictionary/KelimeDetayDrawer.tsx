@@ -170,6 +170,79 @@ function extractExample(source: SourceContent): string | null {
   return (source.meanings ?? []).map(cleanHtml).find((m) => m.includes('◊') || m.includes('—')) ?? null;
 }
 
+interface FamilyLexemeMember {
+  id: string;
+  form: string;
+  literalMeaning?: string;
+  partOfSpeech?: string;
+  etymologyType?: string;
+  corpusFrequency?: number;
+}
+
+interface WordFamilyInfo {
+  id: string;
+  rootForm?: string;
+  etymologyType?: string;
+  members: FamilyLexemeMember[];
+}
+
+type WordFamilyRecord = Record<string, WordFamilyInfo>;
+let cachedFamilyPromise: Promise<WordFamilyRecord> | null = null;
+
+function loadWordFamilyMap(): Promise<WordFamilyRecord> {
+  if (cachedFamilyPromise) return cachedFamilyPromise;
+  cachedFamilyPromise = Promise.all([
+    fetch('/data/linguistic/word_families.json').then((r) => r.json()).catch(() => []),
+    fetch('/data/linguistic/lexemes.json').then((r) => r.json()).catch(() => []),
+  ]).then(([familiesRaw, lexemesRaw]) => {
+    const families = Array.isArray(familiesRaw) ? familiesRaw : familiesRaw?.wordFamilies || [];
+    const lexemes = Array.isArray(lexemesRaw) ? lexemesRaw : lexemesRaw?.lexemes || [];
+
+    const byFamily: Record<string, FamilyLexemeMember[]> = {};
+    for (const lx of lexemes) {
+      const wfId = lx?.wordFamilyId;
+      if (!wfId || !lx?.form) continue;
+      if (!byFamily[wfId]) byFamily[wfId] = [];
+      byFamily[wfId].push({
+        id: lx.id,
+        form: lx.form,
+        literalMeaning: lx.literalMeaning || lx.dictionaryEvidence?.meanings?.tr || '',
+        partOfSpeech: lx.partOfSpeech,
+        etymologyType: lx.etymologyType,
+        corpusFrequency: lx.corpusFrequency || 0,
+      });
+    }
+
+    const result: WordFamilyRecord = {};
+    for (const fam of families) {
+      if (!fam?.id) continue;
+      const members = (byFamily[fam.id] || []).sort((a, b) => {
+        const rf = (fam.rootForm || '').toLowerCase();
+        const aIsRoot = a.form.toLowerCase() === rf ? 1 : 0;
+        const bIsRoot = b.form.toLowerCase() === rf ? 1 : 0;
+        if (aIsRoot !== bIsRoot) return bIsRoot - aIsRoot;
+        return (b.corpusFrequency || 0) - (a.corpusFrequency || 0);
+      });
+      result[fam.id] = {
+        id: fam.id,
+        rootForm: fam.rootForm || fam.root || members[0]?.form,
+        etymologyType: fam.etymologyType,
+        members,
+      };
+    }
+    return result;
+  });
+  return cachedFamilyPromise;
+}
+
+const ETYM_LABELS: Record<string, { label: string; color: 'jade' | 'plum' | 'sky' | 'amber' }> = {
+  native: { label: 'Öz Çerkesçe', color: 'jade' },
+  loanword: { label: 'Alıntı', color: 'plum' },
+  loan_compound: { label: 'Alıntı', color: 'plum' },
+  proper_noun: { label: 'Özel İsim', color: 'sky' },
+  affix: { label: 'Ek', color: 'amber' },
+};
+
 function SectionHead({ icon, children, extra }: { icon: React.ReactNode; children: React.ReactNode; extra?: React.ReactNode }) {
   return (
     <Flex align="center" justify="between" gap="2">
@@ -245,7 +318,8 @@ export default function KelimeDetayDrawer({
   onConceptClick,
 }: KelimeDetayDrawerProps) {
   const [corpusData, setCorpusData] = useState<CorpusExplorerResult | null>(null);
-  const [familyMembers, setFamilyMembers] = useState<any[]>([]);
+  const [familyInfo, setFamilyInfo] = useState<WordFamilyInfo | null>(null);
+  const [showAllFamily, setShowAllFamily] = useState(false);
   const [kopyalandi, setKopyalandi] = useState(false);
   const [paylasimAcik, setPaylasimAcik] = useState(false);
   const [hasSpeechSupport, setHasSpeechSupport] = useState(false);
@@ -297,11 +371,18 @@ export default function KelimeDetayDrawer({
   }, [seciliKelime]);
 
   useEffect(() => {
-    if (!seciliKelime?.wordFamilyId) { setFamilyMembers([]); return; }
-    fetch('/api/sozluk/family/' + seciliKelime.wordFamilyId)
-      .then((r) => r.json())
-      .then((data) => setFamilyMembers(data.members || []))
-      .catch(() => setFamilyMembers([]));
+    setShowAllFamily(false);
+    const wfId = seciliKelime?.wordFamilyId;
+    if (!wfId) { setFamilyInfo(null); return; }
+    let cancelled = false;
+    loadWordFamilyMap()
+      .then((map) => {
+        if (!cancelled) setFamilyInfo(map[wfId] || null);
+      })
+      .catch(() => {
+        if (!cancelled) setFamilyInfo(null);
+      });
+    return () => { cancelled = true; };
   }, [seciliKelime?.wordFamilyId]);
 
   const isDrawerOpen = open ?? isOpen ?? false;
@@ -432,6 +513,16 @@ export default function KelimeDetayDrawer({
             {seciliKelime.ipa && (
               <Badge size="1" color="cyan" variant="soft" highContrast className="font-mono">[{seciliKelime.ipa}]</Badge>
             )}
+            {seciliKelime.etymologyType && ETYM_LABELS[String(seciliKelime.etymologyType).toLowerCase()] && (
+              <Badge
+                size="1"
+                color={ETYM_LABELS[String(seciliKelime.etymologyType).toLowerCase()].color}
+                variant="soft"
+                highContrast
+              >
+                {ETYM_LABELS[String(seciliKelime.etymologyType).toLowerCase()].label}
+              </Badge>
+            )}
             {seciliKelime.corpusFrequency ? (
               <Badge size="1" color="amber" variant="soft" highContrast>{seciliKelime.corpusFrequency} kullanım</Badge>
             ) : null}
@@ -509,22 +600,93 @@ export default function KelimeDetayDrawer({
             </section>
           )}
 
-          {seciliKelime.wordFamilyId && familyMembers.length > 0 && (
-            <section className="space-y-2" aria-label="Aynı aileden kelimeler">
-              <SectionHead icon={<Users size={16} className="text-[var(--purple-9)]" aria-hidden="true" />}>
-                Aynı Aileden Kelimeler ({familyMembers.length})
+          {seciliKelime.wordFamilyId && familyInfo && familyInfo.members.length > 0 && (
+            <section className="space-y-2" aria-label="Kök ve türev ailesi">
+              <SectionHead
+                icon={<Users size={16} className="text-[var(--purple-9)]" aria-hidden="true" />}
+                extra={
+                  <Badge size="1" color="purple" variant="soft" highContrast>
+                    {familyInfo.members.length} üye
+                  </Badge>
+                }
+              >
+                Kök–Türev Ailesi
               </SectionHead>
               <Card size="2" variant="surface">
-                <Flex wrap="wrap" gap="2">
-                  {familyMembers.slice(0, 12).map((m: any) => (
-                    <Button key={m.id} type="button" size="1" variant="soft" color="purple" highContrast title={m.literalMeaning} onClick={() => { if (m.form && onConceptClick) onConceptClick(m.form); }}>
-                      {m.form}{m.literalMeaning ? ` (${m.literalMeaning})` : ''}
+                <Flex direction="column" gap="3">
+                  <Flex align="center" justify="between" gap="2" wrap="wrap" className="pb-2 border-b border-[var(--gray-5)]">
+                    <Flex align="center" gap="2">
+                      <Badge size="1" color="jade" variant="solid" highContrast>KÖK</Badge>
+                      <Text size="3" weight="bold">{familyInfo.rootForm || '—'}</Text>
+                      <Text size="1" color="gray" className="font-mono">({familyInfo.id})</Text>
+                    </Flex>
+                    {familyInfo.etymologyType && ETYM_LABELS[familyInfo.etymologyType.toLowerCase()] && (
+                      <Badge
+                        size="1"
+                        color={ETYM_LABELS[familyInfo.etymologyType.toLowerCase()].color}
+                        variant="soft"
+                        highContrast
+                      >
+                        {ETYM_LABELS[familyInfo.etymologyType.toLowerCase()].label}
+                      </Badge>
+                    )}
+                  </Flex>
+
+                  <Flex direction="column" gap="1.5" className="pl-3 border-l-2 border-[var(--purple-7)]">
+                    {(showAllFamily ? familyInfo.members : familyInfo.members.slice(0, 10)).map((m) => {
+                      const isCurrent = m.form === targetWord || m.id === seciliKelime.id;
+                      const isRoot = familyInfo.rootForm && m.form.toLowerCase() === familyInfo.rootForm.toLowerCase();
+                      return (
+                        <button
+                          key={m.id}
+                          type="button"
+                          onClick={() => {
+                            if (!isCurrent && m.form && onConceptClick) onConceptClick(m.form);
+                          }}
+                          className={`flex items-center justify-between gap-2 px-2.5 py-1.5 rounded-lg text-left transition-colors ${
+                            isCurrent
+                              ? 'bg-[var(--purple-4)] border border-[var(--purple-7)] cursor-default'
+                              : 'hover:bg-[var(--gray-3)] cursor-pointer'
+                          }`}
+                        >
+                          <Flex align="center" gap="2" className="min-w-0 flex-1">
+                            <Text size="2" weight={isCurrent || isRoot ? 'bold' : 'medium'} className="truncate">
+                              {m.form}
+                            </Text>
+                            {isRoot && (
+                              <Badge size="1" color="jade" variant="soft">kök</Badge>
+                            )}
+                            {isCurrent && (
+                              <Badge size="1" color="purple" variant="solid">seçili</Badge>
+                            )}
+                            {m.literalMeaning && (
+                              <Text size="1" color="gray" className="truncate">
+                                — {m.literalMeaning}
+                              </Text>
+                            )}
+                          </Flex>
+                          {!isCurrent && (
+                            <ChevronRight size={14} className="shrink-0 text-[var(--gray-9)]" aria-hidden="true" />
+                          )}
+                        </button>
+                      );
+                    })}
+                  </Flex>
+
+                  {familyInfo.members.length > 10 && (
+                    <Button
+                      type="button"
+                      size="1"
+                      variant="ghost"
+                      color="purple"
+                      onClick={() => setShowAllFamily((v) => !v)}
+                    >
+                      {showAllFamily
+                        ? 'Daha az göster'
+                        : `Tüm türevleri göster (+${familyInfo.members.length - 10} kelime daha)`}
                     </Button>
-                  ))}
+                  )}
                 </Flex>
-                {familyMembers.length > 12 && (
-                  <Text as="p" size="1" weight="bold" color="purple" mt="2">+{familyMembers.length - 12} kelime daha</Text>
-                )}
               </Card>
             </section>
           )}

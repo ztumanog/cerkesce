@@ -2,20 +2,17 @@
  * File: src/domain/discovery/services/SmartSuggestionService.ts
  * Layer: Service
  *
- * P5-003: Smart Suggestions
- *
- * Yazim toleransi, yakin eslesme, oneri sistemi.
- *
- * Ornek: пси -> псы (Kastettiginiz bu olabilir mi?)
- *
- * Kural: Faz 5'te AI/LLM YOK. Basit Levenshtein mesafesi kullanilir.
+ * P5-003: Smart Suggestions (Ortografi Toleransli Kiril Araması)
  */
 
 import { SmartSuggestion, SmartSuggestionResult } from '../dto/SmartSuggestionDTO';
+import { normalizePalochka } from '@/domain/utils/normalizePalochka';
+import { normalizeLatinToKiril } from '@/lib/latinNormalize';
 
 interface LexemeData {
   id: string;
   form: string;
+  etymologyType?: string;
   literalMeaning?: string;
   wordFamilyId?: string;
   conceptId?: string;
@@ -37,17 +34,10 @@ export class SmartSuggestionService {
     this.lexemes = lexemes || [];
   }
 
-  /**
-   * Lexeme listesini yukler (runtime'da).
-   * Test icin de kullanilabilir.
-   */
   public loadLexemes(lexemes: LexemeData[]): void {
     this.lexemes = lexemes;
   }
 
-  /**
-   * Kullanicinin yazdigi kelimeye yakin onerileri doner.
-   */
   public suggest(
     query: string,
     maxSuggestions: number = SmartSuggestionService.MAX_SUGGESTIONS
@@ -59,21 +49,25 @@ export class SmartSuggestionService {
     }
 
     const suggestions: SmartSuggestion[] = [];
+    const qLen = normalizedQuery.length;
 
     for (const lex of this.lexemes) {
+      if (!lex.form) continue;
       const normalizedForm = this.normalize(lex.form);
-      const distance = this.levenshtein(normalizedQuery, normalizedForm);
+      if (Math.abs(normalizedForm.length - qLen) > SmartSuggestionService.MAX_DISTANCE) {
+        continue;
+      }
 
+      const distance = this.levenshtein(normalizedQuery, normalizedForm);
       if (distance > SmartSuggestionService.MAX_DISTANCE) continue;
-      // Tam eslesme -> oneri degil, direkt sonuc
       if (distance === 0) continue;
 
-      const maxLen = Math.max(normalizedQuery.length, normalizedForm.length);
+      const maxLen = Math.max(qLen, normalizedForm.length);
       const confidence = maxLen > 0 ? 1 - distance / maxLen : 0;
 
       suggestions.push({
         word: lex.form,
-        meaningTr: lex.dictionaryEvidence?.meanings?.tr,
+        meaningTr: lex.dictionaryEvidence?.meanings?.tr || lex.literalMeaning,
         meaningEn: lex.dictionaryEvidence?.meanings?.en,
         meaningRu: lex.dictionaryEvidence?.meanings?.ru,
         distance,
@@ -82,7 +76,6 @@ export class SmartSuggestionService {
       });
     }
 
-    // Sirala: once mesafe, sonra confidence
     suggestions.sort((a, b) => {
       if (a.distance !== b.distance) return a.distance - b.distance;
       return b.confidence - a.confidence;
@@ -98,34 +91,27 @@ export class SmartSuggestionService {
   }
 
   /**
-   * Kelimeyi normalize eder (Palochka korunur).
+   * Ortografi toleransli normalizasyon:
+   * - Palochka varyantlarini (1, I, İ, ı, І, ӏ -> Ӏ) birlestirir
+   * - NFC + kucuk harf standardizasyonu uygular
    */
   private normalize(word: string): string {
     if (!word) return '';
-    return word
-      .trim()
-      .normalize('NFC')
-      .replace(/\u04C0/g, '\u04C0')
-      .toLowerCase()
-      .replace(/\u04CF/g, '\u04C0');
+    const trimmed = word.trim().normalize('NFC');
+    const converted = /[\u0400-\u04FF]/.test(trimmed)
+      ? trimmed
+      : normalizeLatinToKiril(trimmed);
+    return normalizePalochka(converted).toLowerCase();
   }
 
-  /**
-   * Levenshtein mesafesi (klasik DP).
-   */
   private levenshtein(a: string, b: string): number {
     if (a === b) return 0;
     if (a.length === 0) return b.length;
     if (b.length === 0) return a.length;
 
     const matrix: number[][] = [];
-
-    for (let i = 0; i <= b.length; i++) {
-      matrix[i] = [i];
-    }
-    for (let j = 0; j <= a.length; j++) {
-      matrix[0][j] = j;
-    }
+    for (let i = 0; i <= b.length; i++) matrix[i] = [i];
+    for (let j = 0; j <= a.length; j++) matrix[0][j] = j;
 
     for (let i = 1; i <= b.length; i++) {
       for (let j = 1; j <= a.length; j++) {
@@ -140,7 +126,6 @@ export class SmartSuggestionService {
         }
       }
     }
-
     return matrix[b.length][a.length];
   }
 }

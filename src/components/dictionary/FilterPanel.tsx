@@ -7,6 +7,9 @@ import DialectFilter, {
 import LanguageFilter, {
   type LanguageFilterValue,
 } from '@/components/dictionary/LanguageFilter';
+import EtymologyFilter, {
+  type EtymologyFilterValue,
+} from '@/components/dictionary/EtymologyFilter';
 
 export interface FilterPanelProps {
   dialectFilter: DialectFilterValue;
@@ -16,6 +19,10 @@ export interface FilterPanelProps {
   languageFilter: LanguageFilterValue;
   onLanguageChange: (v: LanguageFilterValue) => void;
   languageCounts?: Record<LanguageFilterValue, number>;
+
+  etymologyFilter?: EtymologyFilterValue;
+  onEtymologyChange?: (v: EtymologyFilterValue) => void;
+  etymologyCounts?: Partial<Record<EtymologyFilterValue, number>>;
 }
 
 export function FilterPanel({
@@ -25,6 +32,9 @@ export function FilterPanel({
   languageFilter,
   onLanguageChange,
   languageCounts,
+  etymologyFilter = 'ALL',
+  onEtymologyChange,
+  etymologyCounts,
 }: FilterPanelProps) {
   return (
     <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl px-3 py-3 shadow-lg space-y-3">
@@ -38,6 +48,17 @@ export function FilterPanel({
           counts={dialectCounts}
         />
       </div>
+
+      {onEtymologyChange && (
+        <>
+          <div className="border-t border-slate-200/60 dark:border-slate-800/60" />
+          <EtymologyFilter
+            value={etymologyFilter}
+            onChange={onEtymologyChange}
+            counts={etymologyCounts}
+          />
+        </>
+      )}
 
       <div className="border-t border-slate-200/60 dark:border-slate-800/60" />
 

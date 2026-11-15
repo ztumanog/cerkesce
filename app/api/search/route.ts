@@ -181,7 +181,10 @@ export async function GET(request: NextRequest) {
 
     if (!rawQ) return NextResponse.json({ success: true, results: [], total: 0, ms: 0 });
 
-    const q = normalizePalochka(normalizeLatinToKiril(rawQ)).toLowerCase();
+    const hasCyrillic = /[\u0400-\u04FF]/.test(rawQ);
+     const q = hasCyrillic
+       ? normalizePalochka(rawQ).toLowerCase()
+       : normalizePalochka(normalizeLatinToKiril(rawQ)).toLowerCase();
     const qAlt = q.includes('е') ? q.replace(/е/g, 'э') : q.includes('э') ? q.replace(/э/g, 'е') : null;
     const qNoPal = qAlt ? qAlt.replace(/Ӏ(?!.*Ӏ)/, '') : q.includes('Ӏ') ? q.replace(/Ӏ(?!.*Ӏ)/, '') : null;
 
@@ -285,6 +288,7 @@ export async function GET(request: NextRequest) {
       if (lex.literalMeaning) item.literalMeaning = String(lex.literalMeaning);
       if (lex.rootIds?.length) item.rootIds = lex.rootIds;
       if (lex.wordFamilyId) item.wordFamilyId = lex.wordFamilyId;
+       if (lex.etymologyType) item.etymologyType = lex.etymologyType;
       if (lex.conceptId) item.conceptId = lex.conceptId;
       if (lex.dialectVariants) item.dialectVariants = lex.dialectVariants;
 
