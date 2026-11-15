@@ -8,6 +8,7 @@ const sozlukKartlari: Kart[] = [
   { href: '/admin/curation/roots', baslik: 'Kökler', aciklama: 'Kök (root) listesi ve detayları' },
   { href: '/sozluk/family', baslik: 'Kelime Aileleri', aciklama: 'Semantik kelime aileleri' },
   { href: '/kavram', baslik: 'Kavramlar', aciklama: 'Kavram portalı (kavram/[concept])' },
+  { href: '/explorer', baslik: 'Keşfet (Ağ)', aciklama: 'Etkileşimli kavram ve kelime ağı' },
   { href: '/sozluk/favoriler', baslik: 'Favoriler', aciklama: 'Favori kelimeler' },
   { href: '/sozluk/morphology', baslik: 'Morfoloji', aciklama: 'Kök, ek ve çekim analizi' },
   { href: '/sozluk/converter', baslik: 'Alfabe dönüştürücü', aciklama: 'Kiril ↔ Latin' },

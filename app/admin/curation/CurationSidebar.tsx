@@ -251,23 +251,6 @@ export default function CurationSidebar() {
             <span style={{ background: '#059669', color: 'white', padding: '2px 8px', borderRadius: '999px', fontSize: '10px' }}>4 Yeşil</span>
           </Link>
           <Link
-            href="/explorer"
-            style={{
-              display: 'flex',
-              justifyContent: 'space-between',
-              padding: '8px 12px',
-              borderRadius: '10px',
-              textDecoration: 'none',
-              color: '#2563eb',
-              fontSize: '13px',
-              fontWeight: '600',
-              background: '#eff6ff',
-            }}
-          >
-            <span>🕸️ Explorer</span>
-            <span style={{ background: '#2563eb', color: 'white', padding: '2px 8px', borderRadius: '999px', fontSize: '10px' }}>Canlı</span>
-          </Link>
-          <Link
             href="/yonetim"
             style={{
               display: 'flex',
