@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { ChevronRight, Star, BookOpen, Tag, Sprout } from 'lucide-react';
+import { ChevronRight, Star, BookOpen, Tag, Sprout, GitBranch } from 'lucide-react';
 import Link from 'next/link';
 import { Card, Flex, Box, Text, Heading, Badge, IconButton } from '@radix-ui/themes';
 import { KaynakItem } from '@/types/dictionary';
@@ -64,6 +64,7 @@ export interface KelimeItem {
   hedefDillerSet?: string[];
   hedefDilCanonical?: string;
   rootIds?: string[];
+  rootForm?: string | null;
   wordFamilyId?: string | null;
   etymologyType?: string | null;
   conceptId?: string | null;
@@ -257,7 +258,7 @@ export const KelimeKarti: React.FC<KelimeKartiProps> = ({
               </Badge>
             )}
 
-            {frekansRozeti && (
+              {frekansRozeti && (
               <Badge size="1" color={frekansRozeti.color} variant="soft" highContrast>
                 {frekansRozeti.label}
               </Badge>
@@ -269,12 +270,33 @@ export const KelimeKarti: React.FC<KelimeKartiProps> = ({
               </Badge>
             )}
 
+              {data.rootIds && data.rootIds.length > 0 && (
+                <Badge asChild size="1" color="amber" variant="soft" highContrast>
+                  <Link
+                    href={`/sozluk/root/${encodeURIComponent(data.rootIds[0])}`}
+                    onMouseDown={(e) => e.stopPropagation()}
+                    onClick={(e) => e.stopPropagation()}
+                    aria-label={`Kök sayfasına git: ${data.rootForm || data.rootIds[0]}`}
+                  >
+                    <GitBranch className="w-3 h-3" aria-hidden="true" />
+                    Kök: {data.rootForm || data.rootIds[0]}
+                  </Link>
+                </Badge>
+              )}
+
             {data.wordFamilyId && (
-              <Badge size="1" color="indigo" variant="soft" highContrast>
-                <Sprout className="w-3 h-3" aria-hidden="true" />
-                Aile Üyesi
-              </Badge>
-            )}
+                <Badge asChild size="1" color="indigo" variant="soft" highContrast>
+                  <Link
+                    href={`/sozluk/family/${encodeURIComponent(data.wordFamilyId)}`}
+                    onMouseDown={(e) => e.stopPropagation()}
+                    onClick={(e) => e.stopPropagation()}
+                    aria-label={`Kelime ailesi sayfasına git: ${data.wordFamilyId}`}
+                  >
+                    <Sprout className="w-3 h-3" aria-hidden="true" />
+                    Aile Üyesi
+                  </Link>
+                </Badge>
+              )}
 
             {data.conceptId && (
               <Badge asChild size="1" color="gray" variant="soft" highContrast>

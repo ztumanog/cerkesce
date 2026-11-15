@@ -22,6 +22,7 @@ export interface ConceptMemberLexeme {
 
 export interface ConceptTranslationGroup {
   conceptId: string;
+  titleCircassian: string;
   titleTr: string;
   subtitleEn: string;
   subtitleRu: string;
@@ -237,12 +238,15 @@ export default function KavramlarExplorer({ groups, totalLexemeCount }: Kavramla
                 <div>
                   <div className="flex items-start justify-between gap-3">
                     <div className="min-w-0 flex-1">
-                      <h2 className="text-lg font-bold leading-snug text-slate-900 dark:text-white capitalize">{group.titleTr}</h2>
-                      {(group.subtitleEn || group.subtitleRu) && (
-                        <p className="mt-0.5 text-xs text-slate-500 dark:text-slate-400">
-                          {[group.subtitleEn, group.subtitleRu].filter(Boolean).join(' • ')}
+                      <h2 className="text-xl font-bold leading-snug text-slate-900 dark:text-white">{group.titleCircassian}</h2>
+                        <p className="mt-0.5 text-xs font-medium text-slate-600 dark:text-slate-300">
+                          {group.titleTr}
                         </p>
-                      )}
+                        {(group.subtitleEn || group.subtitleRu) && (
+                          <p className="mt-0.5 text-[11px] text-slate-400 dark:text-slate-500">
+                            {[group.subtitleEn, group.subtitleRu].filter(Boolean).join(' • ')}
+                          </p>
+                        )}
                     </div>
                     <div className="flex shrink-0 flex-wrap items-center justify-end gap-1.5">
                       {group.hasBothDialects && (
@@ -328,7 +332,7 @@ export default function KavramlarExplorer({ groups, totalLexemeCount }: Kavramla
                     )}
                   </div>
  <Link 
-  href={`/kavram-agi/${group.conceptId}`}
+  href={`/kavram/${encodeURIComponent(group.conceptId.toLowerCase())}`}
   className="inline-flex items-center gap-1 font-semibold text-indigo-600 dark:text-indigo-400 hover:underline"
 >
   <GitBranch className="h-3.5 w-3.5" aria-hidden="true" />

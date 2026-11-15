@@ -171,6 +171,26 @@ function collectSourcesForLex(lex: any, sourcesMap: Map<string, KaynakInfo[]>): 
   collected.sort((a, b) => (isTurkishSource(b) ? 1 : 0) - (isTurkishSource(a) ? 1 : 0));
   return collected;
 }
+let cachedRootFormMap: Map<string, string> | null = null;
+function getRootFormMap(): Map<string, string> {
+  if (cachedRootFormMap) return cachedRootFormMap;
+  const map = new Map<string, string>();
+  try {
+    const rootsPath = path.join(process.cwd(), 'public', 'data', 'linguistic', 'roots.json');
+    if (fs.existsSync(rootsPath)) {
+      const raw = JSON.parse(fs.readFileSync(rootsPath, 'utf-8'));
+      const arr = Array.isArray(raw) ? raw : raw?.roots ?? [];
+      for (const r of arr) {
+        const rid = r?.id || r?.rootId;
+        const rform = r?.form || r?.rootForm || r?.headword || r?.root;
+        if (rid && rform) map.set(String(rid), String(rform));
+      }
+    }
+  } catch (e) { console.error('roots.json okunamadi:', e); }
+  cachedRootFormMap = map;
+  return map;
+}
+
 export async function GET(request: NextRequest) {
   const start = Date.now();
   try {
@@ -286,7 +306,11 @@ export async function GET(request: NextRequest) {
       const arText = formatField(translations.ar);
       if (arText) item.ar = arText;
       if (lex.literalMeaning) item.literalMeaning = String(lex.literalMeaning);
-      if (lex.rootIds?.length) item.rootIds = lex.rootIds;
+      if (lex.rootIds?.length) {
+          item.rootIds = lex.rootIds;
+          const rf = getRootFormMap().get(String(lex.rootIds[0]));
+          if (rf) item.rootForm = rf;
+        }
       if (lex.wordFamilyId) item.wordFamilyId = lex.wordFamilyId;
        if (lex.etymologyType) item.etymologyType = lex.etymologyType;
       if (lex.conceptId) item.conceptId = lex.conceptId;

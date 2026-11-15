@@ -37,6 +37,14 @@ function humanizeConceptId(conceptId: string): string {
 }
 
 export default function KavramlarPage() {
+  const conceptWordsPath = path.join(process.cwd(), 'public', 'data', 'linguistic', 'concept-words.json');
+  let conceptWordsMap: Record<string, { words?: string[] }> = {};
+  try {
+    if (fs.existsSync(conceptWordsPath)) {
+      conceptWordsMap = JSON.parse(fs.readFileSync(conceptWordsPath, 'utf-8').replace(/^\uFEFF/, ''));
+    }
+  } catch { conceptWordsMap = {}; }
+
   const lexPath = path.join(process.cwd(), 'public', 'data', 'linguistic', 'lexemes.json');
   let rawList: RawLexeme[] = [];
   try {
@@ -123,9 +131,17 @@ export default function KavramlarPage() {
     const hasBothDialects = (bucket.adyLexemes.length > 0 && bucket.kbdLexemes.length > 0) || bucket.commonLexemes.length > 0;
     const allForms = [...bucket.adyLexemes, ...bucket.kbdLexemes, ...bucket.commonLexemes].map((l) => l.form);
 
-    groups.push({
+          const curatedWords = Array.isArray(conceptWordsMap[bucket.conceptId]?.words)
+        ? conceptWordsMap[bucket.conceptId].words!.map((w) => normalizePalochka(String(w).trim())).filter(Boolean)
+        : [];
+      const fallbackCirc = Array.from(new Set(allForms)).slice(0, 3);
+      const titleCircassian = (curatedWords.length > 0 ? curatedWords : fallbackCirc).slice(0, 3).join(' • ')
+        || humanizeConceptId(bucket.conceptId);
+
+groups.push({
       conceptId: bucket.conceptId,
       titleTr,
+      titleCircassian,
       subtitleEn: enList.slice(0, 3).join(', '),
       subtitleRu: ruList.slice(0, 3).join(', '),
       adyLexemes: bucket.adyLexemes,
