@@ -5,8 +5,8 @@
 import "@radix-ui/themes/styles.css";
 import { Theme } from '@radix-ui/themes';
 import type { Metadata } from 'next';
-import Link from 'next/link';
 import Header from '@/components/layout/Header';
+import { Navbar } from '@/components/Navbar';
 import { FooterWrapper } from '@/components/layout/FooterWrapper';
 import { Toaster } from 'sonner';
 import BildirimBaslatici from '@/components/features/BildirimBaslatici';
@@ -55,20 +55,7 @@ export default function RootLayout({
           <TemaBaslatici />
           <TercihProvider>
             {/* Yeni Üst Menü */}
-            <nav className="bg-gray-900 text-white p-4">
-              <div className="container mx-auto flex flex-wrap gap-6 items-center text-sm font-medium">
-                <Link href="/sozluk" className="font-bold text-lg hover:text-emerald-400 transition-colors mr-4">
-                  Çerkesçe Sözlük
-                </Link>
-                <Link href="/sozluk" className="hover:text-emerald-400 transition-colors">Sözlük</Link>
-                <Link href="/kavramlar" className="hover:text-emerald-400 transition-colors">Kavramlar</Link>
-<Link href="/explorer" className="hover:text-emerald-400 transition-colors">Keşfet</Link>
-                <Link href="/sozluk/morphology" className="hover:text-emerald-400 transition-colors">Morfoloji</Link>
-                <Link href="/sozluk/converter" className="hover:text-emerald-400 transition-colors">Converter</Link>
-                <Link href="/sozluk/favoriler" className="hover:text-emerald-400 transition-colors">Favoriler</Link>
-                <Link href="/yonetim" className="hover:text-emerald-400 transition-colors">Yönetim</Link>
-              </div>
-            </nav>
+            <Navbar />
             
             <SWRegister />
             <BildirimBaslatici />

@@ -14,7 +14,7 @@ export default function YonetimPage() {
           <h2 className="text-xl font-semibold">Favoriler</h2>
           <p className="text-sm text-slate-500 mt-2">Favori kelimeler</p>
         </Link>
-        <Link href="/sozluk/kaydedilenler" className="p-6 bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 hover:border-emerald-500 transition-colors">
+        <Link href="/kaydedilenler" className="p-6 bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 hover:border-emerald-500 transition-colors">
           <h2 className="text-xl font-semibold">Kaydedilenler</h2>
           <p className="text-sm text-slate-500 mt-2">Kaydedilmiş kelimeler</p>
         </Link>
