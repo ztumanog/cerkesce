@@ -79,6 +79,8 @@ export async function POST(req: Request) {
     checkScalar('ipa', currentItem.ipa, changes.ipa);
     checkScalar('partOfSpeech', currentItem.partOfSpeech, changes.partOfSpeech);
     checkScalar('conceptId', currentItem.conceptId, changes.conceptId);
+    checkScalar('literalMeaning', currentItem.literalMeaning, changes.literalMeaning);
+    checkScalar('notes', currentItem.notes, changes.notes);
 
     const oldTr = Array.isArray(currentItem.translations?.tr)
       ? currentItem.translations.tr.join(', ')
@@ -93,10 +95,14 @@ export async function POST(req: Request) {
       ? currentItem.translations.ar.join(', ')
       : currentItem.translations?.ar ?? '';
 
-    checkScalar('translations.tr', oldTr, changes.tr);
-    checkScalar('translations.en', oldEn, changes.en);
-    checkScalar('translations.ru', oldRu, changes.ru);
-    checkScalar('translations.ar', oldAr, changes.ar);
+    const trVal = changes.tr ?? changes.translations?.tr;
+    const enVal = changes.en ?? changes.translations?.en;
+    const ruVal = changes.ru ?? changes.translations?.ru;
+    const arVal = changes.ar ?? changes.translations?.ar;
+    checkScalar('translations.tr', oldTr, trVal);
+    checkScalar('translations.en', oldEn, enVal);
+    checkScalar('translations.ru', oldRu, ruVal);
+    checkScalar('translations.ar', oldAr, arVal);
 
     let newRootsArray = currentItem.rootIds ?? [];
     if (changes.rootIds !== undefined) {
@@ -129,10 +135,10 @@ export async function POST(req: Request) {
 
     const updatedTranslations = {
       ...(currentItem.translations || {}),
-      ...(changes.tr !== undefined ? { tr: changes.tr } : {}),
-      ...(changes.en !== undefined ? { en: changes.en } : {}),
-      ...(changes.ru !== undefined ? { ru: changes.ru } : {}),
-      ...(changes.ar !== undefined ? { ar: changes.ar } : {}),
+      ...(trVal !== undefined ? { tr: trVal } : {}),
+      ...(enVal !== undefined ? { en: enVal } : {}),
+      ...(ruVal !== undefined ? { ru: ruVal } : {}),
+      ...(arVal !== undefined ? { ar: arVal } : {}),
     };
 
     const updatedItem = {
@@ -143,11 +149,32 @@ export async function POST(req: Request) {
       ...(changes.ipa !== undefined ? { ipa: changes.ipa || null } : {}),
       ...(changes.partOfSpeech !== undefined ? { partOfSpeech: changes.partOfSpeech || null } : {}),
       ...(changes.conceptId !== undefined ? { conceptId: changes.conceptId || null } : {}),
+      ...(changes.literalMeaning !== undefined ? { literalMeaning: changes.literalMeaning || null } : {}),
+      ...(changes.notes !== undefined ? { notes: changes.notes } : {}),
       ...(changes.rootIds !== undefined ? { rootIds: newRootsArray } : {}),
       translations: updatedTranslations,
     };
 
     list[targetIndex] = updatedItem;
+    // Aile senkronu - wordFamilyId degistiyse aile dosyasini guncelle
+    try {
+      const newFam = changes.wordFamilyId;
+      const oldFam = currentItem.wordFamilyId;
+      if (typeof newFam === "string" && newFam && newFam !== oldFam) {
+        const famPath = path.join(process.cwd(), "public/data/linguistic/word_families.json");
+        if (fs.existsSync(famPath)) {
+          const famRaw = fs.readFileSync(famPath, "utf-8");
+          const famData = JSON.parse(famRaw);
+          const famList = Array.isArray(famData) ? famData : (famData.families ?? famData.wordFamilies ?? []);
+          const famById = new Map(famList.map((f: any) => [String(f.id), f]));
+          let famChanged = false;
+          if (oldFam && famById.has(String(oldFam))) { const of: any = famById.get(String(oldFam)); if (Array.isArray(of.lexemeIds)) { const ix = of.lexemeIds.indexOf(lexemeId); if (ix !== -1) { of.lexemeIds.splice(ix, 1); famChanged = true; } } }
+          if (famById.has(newFam)) { const nf: any = famById.get(newFam); if (!Array.isArray(nf.lexemeIds)) nf.lexemeIds = []; if (!nf.lexemeIds.includes(lexemeId)) { nf.lexemeIds.push(lexemeId); famChanged = true; } }
+          if (famChanged) { const famStamp = new Date().toISOString().replace(/[:.]/g, "-"); fs.copyFileSync(famPath, famPath + ".bak-" + famStamp); const famOut = Array.isArray(famData) ? famList : { ...famData, families: famList }; fs.writeFileSync(famPath, JSON.stringify(famOut, null, 2), "utf-8"); }
+        }
+      }
+    } catch {}
+
     const finalData = isArray ? list : { ...lexemes, lexemes: list };
     fs.writeFileSync(filePath, JSON.stringify(finalData, null, 2), 'utf-8');
 

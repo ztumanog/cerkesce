@@ -51,3 +51,24 @@ export function temizleHtml(html: string): string {
 
   return text;
 }
+
+/**
+ * Veri temizliği için: HTML etiketlerini SİLER, iç metni bırakır.
+ * temizleHtml'den farklı: o render için etiketi KORUR, bu veri için SİLER.
+ * <<...>> çapraz göndermelere dokunmaz, boş kalırsa "" döner.
+ */
+export function stripHtmlTags(html: string): string {
+  if (!html || typeof html !== "string") return "";
+  // <<...>> koruması: geçici yer tutucu
+  const placeholders: string[] = [];
+  let text = html.replace(/<<[^>]+>>/g, (m) => {
+    placeholders.push(m);
+    return `__CROSSREF_${placeholders.length - 1}__`;
+  });
+  // Gerçek HTML etiketleri: <div, </div, <font ..., yarım </d, <b vb.
+  text = text.replace(/<\s*\/?\s*(div|font|span|i|b|br|p|a|u)(?:\s[^<>]*)?\/?>?|<\/\s*(d|di|div|fon|font|sp|spa|span)\s*$/gi, "");
+  placeholders.forEach((orig, i) => {
+    text = text.replace(`__CROSSREF_${i}__`, orig);
+  });
+  return text.replace(/[ \t]+/g, " ").trim();
+}
