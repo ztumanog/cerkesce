@@ -1,5 +1,5 @@
 import { verifyCurationAccess } from '@/lib/security/curationGuard';
-import { syncWordFamiliesFromLexemes } from "@/lib/curation/syncWordFamilies";
+import { syncWordFamiliesFromLexemes } from "../../../../../src/lib/curation/syncWordFamilies";
 import { NextResponse } from 'next/server';
 import fs from 'fs';
 import path from 'path';
