@@ -1,4 +1,5 @@
 import { verifyCurationAccess } from '@/lib/security/curationGuard';
+import { syncWordFamiliesFromLexemes } from "@/lib/curation/syncWordFamilies";
 import { NextResponse } from 'next/server';
 import fs from 'fs';
 import path from 'path';
@@ -177,6 +178,7 @@ export async function POST(req: Request) {
 
     const finalData = isArray ? list : { ...lexemes, lexemes: list };
     fs.writeFileSync(filePath, JSON.stringify(finalData, null, 2), 'utf-8');
+    syncWordFamiliesFromLexemes(list, [currentItem.wordFamilyId, updatedItem.wordFamilyId].filter(Boolean));
 
     try {
       const logEntry = JSON.stringify({
@@ -199,4 +201,3 @@ export async function POST(req: Request) {
     return NextResponse.json({ error: error.message || 'Sunucu hatası' }, { status: 500 });
   }
 }
-

@@ -1,4 +1,5 @@
 import { verifyCurationAccess } from '@/lib/security/curationGuard';
+import { syncWordFamiliesFromLexemes } from "@/lib/curation/syncWordFamilies";
 import { NextRequest, NextResponse } from "next/server";
 import fs from "fs";
 import path from "path";
@@ -65,6 +66,7 @@ export async function POST(req: NextRequest) {
 
   const newArr = Array.from(map.values());
   fs.writeFileSync(filePath, JSON.stringify(newArr, null, 2), "utf-8");
+  syncWordFamiliesFromLexemes(newArr);
 
   // audit
   try {
