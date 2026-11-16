@@ -738,27 +738,27 @@ export default function RootsPage() {
             return (
               <div
                 key={f.id}
+                role="button"
+                tabIndex={0}
+                onClick={() => {
+                  if (!busy) chooseFamily(f.id);
+                }}
+                onKeyDown={(e) => {
+                  if (!busy && (e.key === "Enter" || e.key === " ")) {
+                    e.preventDefault();
+                    chooseFamily(f.id);
+                  }
+                }}
                 style={{
                   padding: 12,
                   borderRadius: 12,
                   border: active ? "2px solid #2563eb" : "1px solid #e2e8f0",
                   background: active ? "#dbeafe" : "#fff",
+                  cursor: busy ? "wait" : "pointer",
                 }}
               >
                 <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", gap: 8 }}>
-                  <button
-                    suppressHydrationWarning
-                    disabled={!!busy}
-                    onClick={() => chooseFamily(f.id)}
-                    style={{
-                      background: "none",
-                      border: "none",
-                      padding: 0,
-                      cursor: busy ? "wait" : "pointer",
-                      textAlign: "left",
-                      flex: 1,
-                    }}
-                  >
+                  <div style={{ textAlign: "left", flex: 1 }}>
                     <div style={{ fontWeight: 900, fontSize: 15, color: "#0f172a" }}>
                       {circWords.length > 0 ? circWords.slice(0, 4).join(", ") : f.id}
                     </div>
@@ -766,11 +766,14 @@ export default function RootsPage() {
                       {f.id}
                       {trWords.length > 0 ? ` • TR: ${trWords.slice(0, 3).join(", ")}` : ""}
                     </div>
-                  </button>
+                  </div>
                   <button
                     suppressHydrationWarning
                     disabled={!!busy}
-                    onClick={() => removeFamilyFromRoot(f.id)}
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      removeFamilyFromRoot(f.id);
+                    }}
                     style={{
                       fontSize: 10,
                       background: "#fee2e2",
