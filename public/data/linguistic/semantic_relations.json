@@ -575,7 +575,7 @@
   {
     "id": "SR-NOSE-ANTONYM-SNUB-POINTED",
     "source": "L-PETINE",
-    "target": "L-PETSURƏ",
+    "target": "L-PETS-URE",
     "type": "antonym",
     "evidence": "пэтӀинэ ↔ пэцӀурэ",
     "confidence": 1.0,
@@ -585,7 +585,7 @@
   {
     "id": "SR-NOSE-ANTONYM-FLAT-POINTED",
     "source": "L-PEFYQ",
-    "target": "L-PETSURƏ",
+    "target": "L-PETS-URE",
     "type": "antonym",
     "evidence": "пэфыкъ ↔ пэцӀурэ",
     "confidence": 1.0,
@@ -738,16 +738,6 @@
     "evidenceSource": "dictionary"
   },
   {
-    "id": "SR-PSY-1AGHE",
-    "source": "R-PSY",
-    "target": "L-PSY1AGHE",
-    "type": "derivational",
-    "evidence": "псыӀагъэ",
-    "confidence": 1.0,
-    "evidenceSource": "dictionary",
-    "reference": "Kardanov (1957)"
-  },
-  {
     "id": "SR-PSY-BLE",
     "source": "R-PSY",
     "target": "L-PSYBLE",
@@ -766,16 +756,6 @@
     "confidence": 1.0,
     "evidenceSource": "dictionary",
     "reference": "Wiktionary (2023), Yamisha (2018)"
-  },
-  {
-    "id": "SR-PSY-XHEL",
-    "source": "R-PSY",
-    "target": "L-PSYXHEL",
-    "type": "compound",
-    "evidence": "псыхьэл",
-    "confidence": 1.0,
-    "evidenceSource": "dictionary",
-    "reference": "Wiktionary (2023), Hasan (1991)"
   },
   {
     "id": "SR-NE-PS-NAPS",
@@ -827,15 +807,6 @@
     "evidenceSource": "academic"
   },
   {
-    "id": "SR-PSE-PATIENT",
-    "source": "R-PSE",
-    "target": "L-PSE1UV",
-    "type": "derivational",
-    "evidence": "псэIув",
-    "confidence": 1.0,
-    "evidenceSource": "academic"
-  },
-  {
     "id": "SR-PSE-LIFELESS",
     "source": "R-PSE",
     "target": "L-PSENSHE",
@@ -854,33 +825,6 @@
     "evidenceSource": "dictionary"
   },
   {
-    "id": "SR-PSE-PEACEFUL",
-    "source": "R-PSE",
-    "target": "L-PSEXU",
-    "type": "compound",
-    "evidence": "псэху",
-    "confidence": 1.0,
-    "evidenceSource": "academic"
-  },
-  {
-    "id": "SR-PSE-COMPASSION",
-    "source": "R-PSE",
-    "target": "L-PSEK1UED",
-    "type": "compound",
-    "evidence": "псэкIуэд",
-    "confidence": 1.0,
-    "evidenceSource": "academic"
-  },
-  {
-    "id": "SR-PSE-TERROR",
-    "source": "R-PSE",
-    "target": "L-PSE1UX",
-    "type": "compound",
-    "evidence": "псэIух",
-    "confidence": 1.0,
-    "evidenceSource": "academic"
-  },
-  {
     "id": "SR-NE-FACE",
     "source": "R-NE",
     "target": "L-NEGU",
@@ -888,16 +832,6 @@
     "evidence": "нэгу",
     "confidence": 1.0,
     "evidenceSource": "dictionary"
-  },
-  {
-    "id": "SR-NE-BLIND",
-    "source": "R-NE",
-    "target": "L-NEF",
-    "type": "derivational",
-    "evidence": "нэф",
-    "confidence": 0.8,
-    "evidenceSource": "academic",
-    "reference": "Sentez Raporu (2026)"
   },
   {
     "id": "SR-NE-LIE",
@@ -937,33 +871,6 @@
     "reference": "Sentez Raporu (2026)"
   },
   {
-    "id": "SR-BZE-INSULT",
-    "source": "R-BZE",
-    "target": "L-BZEDYDHU",
-    "type": "compound",
-    "evidence": "бзэдыд",
-    "confidence": 0.8,
-    "evidenceSource": "academic"
-  },
-  {
-    "id": "SR-PE-DECEIT",
-    "source": "R-PE",
-    "target": "L-PEPC1Y",
-    "type": "compound",
-    "evidence": "пэпцӀ",
-    "confidence": 0.8,
-    "evidenceSource": "academic"
-  },
-  {
-    "id": "SR-DZE-RECRUITER",
-    "source": "R-DZE",
-    "target": "L-DZELHYQHU",
-    "type": "compound",
-    "evidence": "дзэлъыхъу",
-    "confidence": 0.8,
-    "evidenceSource": "academic"
-  },
-  {
     "id": "SR-PSY-PSE-RELATED",
     "source": "R-PSY",
     "target": "R-PSE",
@@ -972,15 +879,6 @@
     "confidence": 0.9,
     "evidenceSource": "academic",
     "reference": "Sentez Raporu (2026)"
-  },
-  {
-    "id": "SR-PSY-SHXUE",
-    "source": "R-PSY",
-    "target": "L-PSYSHXUE",
-    "type": "compound",
-    "evidence": "псышхуэ",
-    "confidence": 1.0,
-    "evidenceSource": "dictionary"
   },
   {
     "id": "SR-PSY-SNAKE",
@@ -1154,24 +1052,6 @@
     "evidenceSource": "dictionary"
   },
   {
-    "id": "SR-PSY-STEEPBANK",
-    "source": "R-PSY",
-    "target": "L-PSYNEPQ",
-    "type": "compound",
-    "evidence": "псы нэпкъ",
-    "confidence": 1.0,
-    "evidenceSource": "dictionary"
-  },
-  {
-    "id": "SR-PSY-FLOODPLAIN",
-    "source": "R-PSY",
-    "target": "L-PSYNYDZHE",
-    "type": "compound",
-    "evidence": "псы ныджэ",
-    "confidence": 1.0,
-    "evidenceSource": "dictionary"
-  },
-  {
     "id": "SR-PSE-REST",
     "source": "R-PSE",
     "target": "L-PSEXUN",
@@ -1192,33 +1072,6 @@
     "reference": "Tokmakova (2017), Bizheva (2000)"
   },
   {
-    "id": "SR-PSE-COURTSHIP",
-    "source": "R-PSE",
-    "target": "L-PSELHYQHUE",
-    "type": "compound",
-    "evidence": "псэлъыхъуэ",
-    "confidence": 1.0,
-    "evidenceSource": "dictionary"
-  },
-  {
-    "id": "SR-PSE-REFRESH",
-    "source": "R-PSE",
-    "target": "L-PSEGHEPSK1",
-    "type": "compound",
-    "evidence": "псэгъэпскӀ",
-    "confidence": 1.0,
-    "evidenceSource": "academic"
-  },
-  {
-    "id": "SR-PSE-BOREDOM",
-    "source": "R-PSE",
-    "target": "L-PSETEXHUE",
-    "type": "compound",
-    "evidence": "псэтехъуэн",
-    "confidence": 1.0,
-    "evidenceSource": "academic"
-  },
-  {
     "id": "SR-NE-TEARS",
     "source": "R-NE",
     "target": "L-NESHXH",
@@ -1229,38 +1082,11 @@
     "reference": "Wiktionary (2023), Apashev (2008)"
   },
   {
-    "id": "SR-NE-KINDHEARTED",
-    "source": "R-NE",
-    "target": "L-NEF1EGU",
-    "type": "compound",
-    "evidence": "нэфӀэгу",
-    "confidence": 1.0,
-    "evidenceSource": "dictionary"
-  },
-  {
     "id": "SR-NE-TEARFUL",
     "source": "R-NE",
     "target": "L-NEPSEY",
     "type": "compound",
     "evidence": "нэпсей",
-    "confidence": 1.0,
-    "evidenceSource": "dictionary"
-  },
-  {
-    "id": "SR-NE-MYFACE",
-    "source": "R-NE",
-    "target": "L-NEGUM",
-    "type": "derivational",
-    "evidence": "нэгум",
-    "confidence": 1.0,
-    "evidenceSource": "dictionary"
-  },
-  {
-    "id": "SR-NE-LIAR",
-    "source": "R-NE",
-    "target": "L-NEPC1YSHCH",
-    "type": "derivational",
-    "evidence": "нэпцӀыщ",
     "confidence": 1.0,
     "evidenceSource": "dictionary"
   },
@@ -1293,18 +1119,9 @@
     "evidenceSource": "dictionary"
   },
   {
-    "id": "SR-SHXUE-WATERBIG",
-    "source": "R-SHXUE",
-    "target": "L-PSYSHXUE",
-    "type": "compound",
-    "evidence": "псышхуэ",
-    "confidence": 1.0,
-    "evidenceSource": "dictionary"
-  },
-  {
     "id": "SR-C1YQ1U-SMALL",
     "source": "R-C1YQ1U",
-    "target": "L-C1YQ1U",
+    "target": "L-C1YK1U",
     "type": "derivational",
     "evidence": "цӀыкӀу",
     "confidence": 1.0,
@@ -1323,7 +1140,7 @@
   {
     "id": "SR-BDZE-WATERSTURGEON",
     "source": "R-BDZE",
-    "target": "L-PSYBDZE",
+    "target": "L-BDZE",
     "type": "compound",
     "evidence": "псыбдзэ",
     "confidence": 1.0,
@@ -1379,16 +1196,6 @@
     "reference": "Apashev (2008), Kardanov (1957)"
   },
   {
-    "id": "SR-KKHUXY-OAR",
-    "source": "R-KKHUXY",
-    "target": "L-KKHUXYBELAGHE",
-    "type": "compound",
-    "evidence": "кхъухьбэлагъ",
-    "confidence": 1.0,
-    "evidenceSource": "dictionary",
-    "reference": "Apashev (2008), Sherdjes Aliy (1994)"
-  },
-  {
     "id": "SR-KKHUXY-CAPTAIN2",
     "source": "R-KKHUXY",
     "target": "L-KKHUXYTET",
@@ -1439,36 +1246,6 @@
     "reference": "Huvaj (2007)"
   },
   {
-    "id": "SR-KUE-ACUTEANGLE",
-    "source": "R-KUE",
-    "target": "L-KUAPEZEV",
-    "type": "compound",
-    "evidence": "къуапэзэв",
-    "confidence": 1.0,
-    "evidenceSource": "dictionary",
-    "reference": "Huvaj (2007)"
-  },
-  {
-    "id": "SR-KUE-ACUTEANGLE2",
-    "source": "R-KUE",
-    "target": "L-KUAPEPAPC1E",
-    "type": "compound",
-    "evidence": "къуапэпапцӀэ",
-    "confidence": 1.0,
-    "evidenceSource": "dictionary",
-    "reference": "Abaze (2005)"
-  },
-  {
-    "id": "SR-KUE-OBTUSEANGLE",
-    "source": "R-KUE",
-    "target": "L-KUAPEPAGUE",
-    "type": "compound",
-    "evidence": "къуапэпагуэ",
-    "confidence": 1.0,
-    "evidenceSource": "dictionary",
-    "reference": "Abaze (2005)"
-  },
-  {
     "id": "SR-K1UE-SON",
     "source": "R-K1UE",
     "target": "L-K1UE",
@@ -1477,46 +1254,6 @@
     "confidence": 1.0,
     "evidenceSource": "dictionary",
     "reference": "Apashev (2008), Kardanov (1957)"
-  },
-  {
-    "id": "SR-K1UE-HISSON",
-    "source": "R-K1UE",
-    "target": "L-YK1UE",
-    "type": "derivational",
-    "evidence": "икъуэ",
-    "confidence": 1.0,
-    "evidenceSource": "dictionary",
-    "reference": "Wiktionary (2023)"
-  },
-  {
-    "id": "SR-K1UE-MYSON",
-    "source": "R-K1UE",
-    "target": "L-SYK1UE",
-    "type": "derivational",
-    "evidence": "сикъуэ",
-    "confidence": 1.0,
-    "evidenceSource": "dictionary",
-    "reference": "Wiktionary (2023)"
-  },
-  {
-    "id": "SR-K1UE-TWOSONS",
-    "source": "R-K1UE",
-    "target": "L-K1UIT1U",
-    "type": "compound",
-    "evidence": "къуитӀу",
-    "confidence": 1.0,
-    "evidenceSource": "corpus",
-    "reference": "Korpus (adyghe.web-corpora.net)"
-  },
-  {
-    "id": "SR-K1UE-SEVENSONS",
-    "source": "R-K1UE",
-    "target": "L-K1UIBLY",
-    "type": "compound",
-    "evidence": "къуиблы",
-    "confidence": 1.0,
-    "evidenceSource": "corpus",
-    "reference": "Korpus (adyghe.web-corpora.net)"
   },
   {
     "id": "SR-KHUABZH-VERY",

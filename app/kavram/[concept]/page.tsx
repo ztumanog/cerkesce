@@ -93,7 +93,7 @@ export default async function ConceptDetailPage({ params }: PageProps) {
     const lexConcept = String((l as any).conceptId || '').toUpperCase();
     const formNorm = normalizePalochka(String(l.form || '')).toLowerCase();
     if (lexConcept && lexConcept === conceptKey) return true;
-    if (normSeeds.has(formNorm)) return true;
+    if ((!lexConcept || lexConcept === 'UNCLASSIFIED') && normSeeds.has(formNorm)) return true;
     if (isCircassianScript(decodedConcept) && formNorm === normQuery) return true;
     return false;
   });
@@ -277,7 +277,7 @@ export default async function ConceptDetailPage({ params }: PageProps) {
     <div className="max-w-4xl mx-auto p-6 space-y-6">
       <div className="flex items-center justify-between gap-3 flex-wrap">
         <Link
-          href={`/kavram/${encodeURIComponent(conceptKey)}`} 
+          href={`/kavram-agi/${encodeURIComponent(conceptKey)}`} 
           className="text-sm font-medium text-blue-600 hover:text-blue-800 flex items-center gap-1"
         >
           ← Kavram Grafiğine Dön

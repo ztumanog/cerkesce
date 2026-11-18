@@ -145,6 +145,7 @@ export async function PATCH(req: NextRequest) {
       }
       try {
         cleanPatch.conceptId = ConceptId.create(cleanPatch.conceptId.trim()).value;
+        cleanPatch.concept = cleanPatch.conceptId;
       } catch (err: any) {
         return NextResponse.json(
           { error: err?.message || 'Geçersiz conceptId formatı.' }, { status: 400 }

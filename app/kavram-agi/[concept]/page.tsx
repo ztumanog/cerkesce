@@ -57,7 +57,7 @@ export default async function ConceptGraphPage({ params }: PageProps) {
   const matchedLexemes = lexemes.filter((l) => {
     const lexConcept = String(l.conceptId || '').toUpperCase();
     const formNorm = normalizePalochka(String(l.form || '')).toLowerCase();
-    return (lexConcept && lexConcept === conceptKey) || normSeeds.has(formNorm) || formNorm === normQuery;
+    return (lexConcept && lexConcept === conceptKey) || ((!lexConcept || lexConcept === 'UNCLASSIFIED') && normSeeds.has(formNorm)) || formNorm === normQuery;
   });
 
   const inferredEn = formatTranslation(matchedLexemes.find((l) => formatTranslation(l.translations?.en))?.translations?.en);

@@ -231,6 +231,8 @@ export default function KavramlarExplorer({ groups, totalLexemeCount }: Kavramla
             const kbdShown = isExpanded ? group.kbdLexemes : group.kbdLexemes.slice(0, MAX_CHIPS);
             const adyHidden = group.adyLexemes.length - adyShown.length;
             const kbdHidden = group.kbdLexemes.length - kbdShown.length;
+            const commonShown = isExpanded ? group.commonLexemes : group.commonLexemes.slice(0, MAX_CHIPS);
+            const commonHidden = group.commonLexemes.length - commonShown.length;
 
             return (
               <article key={group.conceptId}
@@ -260,7 +262,7 @@ export default function KavramlarExplorer({ groups, totalLexemeCount }: Kavramla
                     </div>
                   </div>
 
-                  <div className="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-2">
+                  <div className="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3 lg:grid-cols-3 lg:grid-cols-3">
                     <div className="rounded-xl border border-sky-100 dark:border-sky-900/50 bg-sky-50/50 dark:bg-sky-950/20 p-3">
                       <div className="mb-2 flex items-center justify-between">
                         <span className="text-[11px] font-bold tracking-wider text-sky-700 dark:text-sky-300 uppercase">Adıgece (Batı)</span>
@@ -318,6 +320,36 @@ export default function KavramlarExplorer({ groups, totalLexemeCount }: Kavramla
                         </div>
                       )}
                     </div>
+
+                    <div className="rounded-xl border border-emerald-100 dark:border-emerald-900/50 bg-emerald-50/50 dark:bg-emerald-950/20 p-3">
+                      <div className="mb-2 flex items-center justify-between">
+                        <span className="text- font-bold tracking-wider text-emerald-700 dark:text-emerald-300 uppercase">Ortak (Common)</span>
+                        <span className="rounded-full bg-emerald-100 dark:bg-emerald-900/70 px-2 py-0.5 text- font-semibold text-emerald-700 dark:text-emerald-300">
+                          {group.commonLexemes.length}
+                        </span>
+                      </div>
+                      {commonShown.length === 0 ? <p className="text-xs italic text-slate-400">Kayıt bulunmuyor</p> : (
+                        <div className="flex flex-wrap gap-1.5">
+                          {commonShown.map((lex) => {
+                            const pos = POS_TR[lex.partOfSpeech.toLowerCase()] || lex.partOfSpeech;
+                            return (
+                              <button key={lex.id} type="button" onClick={() => handleOpenLexeme(lex, group)}
+                                className="inline-flex items-baseline gap-1.5 rounded-lg border border-emerald-200 dark:border-emerald-800 bg-white dark:bg-slate-900 px-2.5 py-1 text-sm font-semibold text-emerald-950 dark:text-emerald-100 shadow-2xs hover:bg-emerald-600 hover:text-white hover:border-emerald-600 transition-colors cursor-pointer">
+                                <span>{lex.form}</span>
+                                {pos && <span className="text- font-normal opacity-70">{pos}</span>}
+                              </button>
+                            );
+                          })}
+                          {commonHidden > 0 && (
+                            <button type="button" onClick={() => setExpandedCards((p) => ({ ...p, [group.conceptId]: true }))}
+                              className="rounded-lg border border-dashed border-emerald-300 dark:border-emerald-700 px-2.5 py-1 text-xs font-medium text-emerald-700 dark:text-emerald-300 hover:bg-emerald-100/70">
+                              +{commonHidden} daha
+                            </button>
+                          )}
+                        </div>
+                      )}
+                    </div>
+
                   </div>
                 </div>
 
@@ -332,7 +364,7 @@ export default function KavramlarExplorer({ groups, totalLexemeCount }: Kavramla
                     )}
                   </div>
  <Link 
-  href={`/kavram/${encodeURIComponent(group.conceptId.toLowerCase())}`}
+  href={`/kavram-agi/${encodeURIComponent(group.conceptId.toLowerCase())}`}
   className="inline-flex items-center gap-1 font-semibold text-indigo-600 dark:text-indigo-400 hover:underline"
 >
   <GitBranch className="h-3.5 w-3.5" aria-hidden="true" />

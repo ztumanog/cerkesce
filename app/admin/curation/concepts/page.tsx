@@ -2,6 +2,7 @@
 
 import { useEffect, useState, useMemo } from "react";
 import * as DropdownMenu from "@radix-ui/react-dropdown-menu";
+import ConceptGraph from "../../../kavramlar/ConceptGraph";
 
 type Lexeme = { id: string; _revision: string; [key: string]: any };
 
@@ -190,6 +191,14 @@ const allKeys = Object.keys(groups).sort((a,b)=> a.localeCompare(b));
 
                 <div style={{ marginTop:16, border:'1px solid #e2e8f0', borderRadius:14, padding:14, background:'#f8fafc' }}>
                   <div style={{ fontWeight:900, marginBottom:8 }}>Aile Grafı — {current} • {selected.length} gerçek form</div>
+
+      {/* YENI — Duzgun grafik: Merkez -> Kok -> Kelime */}
+      {current && <ConceptGraph
+        conceptId={current}
+        lemma={selected[0]?.form ?? current}
+        lexemes={selected.map((l: any) => ({ id: l.id, form: l.form ?? l.word ?? l.lemma ?? '', rootIds: l.rootIds, conceptId: l.conceptId, translations: l.translations }))}
+      />}
+
                   <div style={{ display:'flex', gap:12, flexWrap:'wrap', alignItems:'center' }}>
                     {selected.slice(0,12).map((lex) => {
                       const dl = dialectLabel(lex.dialect);

@@ -30,11 +30,19 @@ export async function POST(req: Request) {
       const litCand = (patch as any).literalMeaning; if (typeof litCand === "string" && String(litCand).replace(/<<[^>]+>>/g, "").includes("<")) { errors.push({ id: String(u.id), error: "literalMeaning icinde HTML var" }); continue; }
       for (const [k, v] of Object.entries(patch)) {
         if (k === "translations" && v && typeof v === "object") {
-  (rec as Record<string, unknown>).translations = {
-    ...(((rec as Record<string, unknown>).translations as Record<string, unknown>) || {}),
-    ...(v as Record<string, unknown>)
-  };
-}
+          (rec as Record<string, unknown>).translations = {
+            ...(((rec as Record<string, unknown>).translations as Record<string, unknown>) || {}),
+            ...(v as Record<string, unknown>)
+          };
+        } else if (k === "dialectVariants" && v && typeof v === "object" && !Array.isArray(v)) {
+          const curDv = (((rec as Record<string, unknown>).dialectVariants && typeof (rec as Record<string, unknown>).dialectVariants === "object" && !Array.isArray((rec as Record<string, unknown>).dialectVariants))
+            ? (rec as Record<string, unknown>).dialectVariants
+            : {}) as Record<string, unknown>;
+          (rec as Record<string, unknown>).dialectVariants = {
+            ...curDv,
+            ...(v as Record<string, unknown>),
+          };
+        }
 else if (k === "tr" && typeof v === "string") { (rec as Record<string, unknown>).translations = { ...(((rec as Record<string, unknown>).translations as Record<string, unknown>) || {}), tr: v }; } else (rec as any)[k] = v;
       }
       ok.push(String(u.id));

@@ -7,6 +7,7 @@ import KavramlarExplorer, {
   ConceptMemberLexeme,
 } from '@/components/dictionary/KavramlarExplorer';
 import { normalizePalochka } from '@/domain/utils/normalizePalochka';
+import { convertAdyToKbd, convertKbdToAdy } from '@/lib/dialectConverter';
 
 export const metadata: Metadata = {
   title: 'Kavram ve Çeviri Grupları | Çerkesçe Sözlük',
@@ -96,26 +97,68 @@ export default function KavramlarPage() {
     ruArr.forEach((t) => bucket!.ruSet.add(t));
 
     const rawDialect = String(item.dialect || 'COMMON').toUpperCase();
-    const dialect: 'ADY' | 'KBD' | 'COMMON' = rawDialect === 'ADY' ? 'ADY' : rawDialect === 'KBD' ? 'KBD' : 'COMMON';
-    const dedupeKey = `${dialect}:${form}`;
-    if (bucket.seenForms.has(dedupeKey)) continue;
-    bucket.seenForms.add(dedupeKey);
+    const baseDialect: 'ADY' | 'KBD' | 'COMMON' = rawDialect === 'ADY' ? 'ADY' : rawDialect === 'KBD' ? 'KBD' : 'COMMON';
 
-    const member: ConceptMemberLexeme = {
-      id: item.id,
-      form,
-      dialect,
-      partOfSpeech: String(item.partOfSpeech || '').trim(),
-      ipa: item.ipa,
-      wordFamilyId: item.wordFamilyId,
-      rootIds: item.rootIds,
-      translations: { tr: trArr, en: enArr, ru: ruArr, ar: arArr },
-      dialectVariants: item.dialectVariants,
+    const dbAdy = normalizePalochka(String(item.dialectVariants?.adyghe || '').trim());
+    const dbKbd = normalizePalochka(String(item.dialectVariants?.kabardian || '').trim());
+
+    const adyForm = dbAdy
+      || (baseDialect === 'ADY' || baseDialect === 'COMMON' ? form : '')
+      || normalizePalochka(convertKbdToAdy(dbKbd || form).trim());
+
+    const kbdForm = dbKbd
+      || (baseDialect === 'KBD' || baseDialect === 'COMMON' ? form : '')
+      || normalizePalochka(convertAdyToKbd(dbAdy || form).trim());
+
+    const resolvedVariants = {
+      adyghe: adyForm || undefined,
+      kabardian: kbdForm || undefined,
     };
 
-    if (dialect === 'ADY') bucket.adyLexemes.push(member);
-    else if (dialect === 'KBD') bucket.kbdLexemes.push(member);
-    else bucket.commonLexemes.push(member);
+    if (adyForm && !bucket.seenForms.has(`ADY:${adyForm}`)) {
+      bucket.seenForms.add(`ADY:${adyForm}`);
+      bucket.adyLexemes.push({
+        id: baseDialect === 'ADY' ? item.id : `${item.id}-ady`,
+        form: adyForm,
+        dialect: 'ADY',
+        partOfSpeech: String(item.partOfSpeech || '').trim(),
+        ipa: item.ipa,
+        wordFamilyId: item.wordFamilyId,
+        rootIds: item.rootIds,
+        translations: { tr: trArr, en: enArr, ru: ruArr, ar: arArr },
+        dialectVariants: resolvedVariants,
+      });
+    }
+
+    if (kbdForm && !bucket.seenForms.has(`KBD:${kbdForm}`)) {
+      bucket.seenForms.add(`KBD:${kbdForm}`);
+      bucket.kbdLexemes.push({
+        id: baseDialect === 'KBD' ? item.id : `${item.id}-kbd`,
+        form: kbdForm,
+        dialect: 'KBD',
+        partOfSpeech: String(item.partOfSpeech || '').trim(),
+        ipa: item.ipa,
+        wordFamilyId: item.wordFamilyId,
+        rootIds: item.rootIds,
+        translations: { tr: trArr, en: enArr, ru: ruArr, ar: arArr },
+        dialectVariants: resolvedVariants,
+      });
+    }
+
+    if (baseDialect === 'COMMON' && !bucket.seenForms.has(`COMMON:${form}`)) {
+      bucket.seenForms.add(`COMMON:${form}`);
+      bucket.commonLexemes.push({
+        id: item.id,
+        form,
+        dialect: 'COMMON',
+        partOfSpeech: String(item.partOfSpeech || '').trim(),
+        ipa: item.ipa,
+        wordFamilyId: item.wordFamilyId,
+        rootIds: item.rootIds,
+        translations: { tr: trArr, en: enArr, ru: ruArr, ar: arArr },
+        dialectVariants: resolvedVariants,
+      });
+    }
   }
 
   const groups: ConceptTranslationGroup[] = [];
@@ -127,18 +170,18 @@ export default function KavramlarPage() {
     const titleTr = (cleanTr.length > 0 ? cleanTr : fallbackTr).slice(0, 3).join(', ')
       || enList.slice(0, 2).join(', ')
       || humanizeConceptId(bucket.conceptId);
-    const totalCount = bucket.adyLexemes.length + bucket.kbdLexemes.length + bucket.commonLexemes.length;
-    const hasBothDialects = (bucket.adyLexemes.length > 0 && bucket.kbdLexemes.length > 0) || bucket.commonLexemes.length > 0;
+    const totalCount = bucket.adyLexemes.length + bucket.kbdLexemes.length;
+    const hasBothDialects = bucket.adyLexemes.length > 0 && bucket.kbdLexemes.length > 0;
     const allForms = [...bucket.adyLexemes, ...bucket.kbdLexemes, ...bucket.commonLexemes].map((l) => l.form);
 
-          const curatedWords = Array.isArray(conceptWordsMap[bucket.conceptId]?.words)
-        ? conceptWordsMap[bucket.conceptId].words!.map((w) => normalizePalochka(String(w).trim())).filter(Boolean)
-        : [];
-      const fallbackCirc = Array.from(new Set(allForms)).slice(0, 3);
-      const titleCircassian = (curatedWords.length > 0 ? curatedWords : fallbackCirc).slice(0, 3).join(' • ')
-        || humanizeConceptId(bucket.conceptId);
+    const curatedWords = Array.isArray(conceptWordsMap[bucket.conceptId]?.words)
+      ? conceptWordsMap[bucket.conceptId].words!.map((w) => normalizePalochka(String(w).trim())).filter(Boolean)
+      : [];
+    const fallbackCirc = Array.from(new Set(allForms)).slice(0, 3);
+    const titleCircassian = (curatedWords.length > 0 ? curatedWords : fallbackCirc).slice(0, 3).join(' • ')
+      || humanizeConceptId(bucket.conceptId);
 
-groups.push({
+    groups.push({
       conceptId: bucket.conceptId,
       titleTr,
       titleCircassian,
@@ -149,7 +192,7 @@ groups.push({
       commonLexemes: bucket.commonLexemes,
       totalCount,
       hasBothDialects,
-      isBroadBucket: totalCount > 25,
+      isBroadBucket: totalCount > 50,
       searchBlob: [bucket.conceptId, ...fallbackTr, ...enList, ...ruList, ...allForms].join(' ').toLowerCase(),
     });
   }

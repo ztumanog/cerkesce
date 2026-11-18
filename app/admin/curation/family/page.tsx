@@ -1,12 +1,14 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
+import { convertAdyToKbd, convertKbdToAdy } from "@/lib/dialectConverter";
 
 type Row = Record<string, unknown> & { id: string };
 type Family = {
   id: string;
   members: Row[];
   roots: string[];
+  rootCounts: [string, number][];
   concepts: string[];
   missing: string[];
 };
@@ -45,7 +47,25 @@ function strings(value: unknown): string[] {
     : [];
 }
 function translation(row: Row, language: string): string {
-  return object(row.translations) ? text(row.translations[language]) : "";
+  const trVal = object(row.translations) ? text(row.translations[language]).trim() : "";
+  if (language === "ady" || language === "kbd") {
+    const dv = object(row.dialectVariants) ? row.dialectVariants : {};
+    const d = text(row.dialect || row.lehce).toUpperCase();
+    const form = text(row.form).trim();
+    const dbAdy = (text(dv.adyghe) || text(dv.ady) || trVal || (d === "ADY" || d === "COMMON" ? form : "")).trim();
+    const dbKbd = (text(dv.kabardian) || text(dv.kbd) || trVal || (d === "KBD" || d === "COMMON" ? form : "")).trim();
+    if (language === "ady") {
+      if (dbAdy) return dbAdy;
+      const conv = (dbKbd || form) ? convertKbdToAdy(dbKbd || form).trim() : "";
+      return conv ? `${conv} (oto-converter)` : "";
+    }
+    if (language === "kbd") {
+      if (dbKbd) return dbKbd;
+      const conv = (dbAdy || form) ? convertAdyToKbd(dbAdy || form).trim() : "";
+      return conv ? `${conv} (oto-converter)` : "";
+    }
+  }
+  return trVal;
 }
 function familyIds(row: Row): string[] {
   return [...new Set([
@@ -161,13 +181,25 @@ export default function FamilyPage() {
         groups.set(id, members);
       }
     }
-    return [...groups.entries()].map(([id, members]): Family => ({
-      id,
-      members,
-      roots: [...new Set(members.flatMap(row => strings(row.rootIds)))],
-      concepts: [...new Set(members.flatMap(row => strings(row.conceptId)))],
-      missing: [...new Set(members.flatMap(missingFields))],
-    })).sort((a, b) => a.id.localeCompare(b.id));
+    return [...groups.entries()].map(([id, members]): Family => {
+      const counts = new Map<string, number>();
+      for (const row of members) {
+        for (const r of strings(row.rootIds)) {
+          counts.set(r, (counts.get(r) ?? 0) + 1);
+        }
+      }
+      const rootCounts = [...counts.entries()].sort(
+        (a, b) => b[1] - a[1] || a[0].localeCompare(b[0])
+      );
+      return {
+        id,
+        members,
+        roots: rootCounts.map(([r]) => r),
+        rootCounts,
+        concepts: [...new Set(members.flatMap(row => strings(row.conceptId)))],
+        missing: [...new Set(members.flatMap(missingFields))],
+      };
+    }).sort((a, b) => a.id.localeCompare(b.id));
   }, [rows]);
 
   const unlinked = rows.filter(row => !familyIds(row).length).length;
@@ -332,7 +364,40 @@ export default function FamilyPage() {
               <div className="mt-4 grid gap-3 md:grid-cols-3">
                 <div className="rounded-2xl border-2 border-green-400 bg-green-50 p-4">
                   <h3 className="font-black">🌱 KAYNAKTAKİ KÖK BAĞLANTILARI</h3>
-                  <p className="mt-2 break-all">{current.roots.join(", ") || "rootIds bağlantısı yok"}</p>
+                  {current.rootCounts.length === 0 ? (
+                    <p className="mt-2">rootIds bağlantısı yok</p>
+                  ) : (
+                    <>
+                      <div className="mt-2 flex flex-wrap gap-1.5">
+                        {current.rootCounts.slice(0, 12).map(([r, c]) => (
+                          <span
+                            key={r}
+                            title={`${r} — ${c} kelimede`}
+                            className="rounded-full bg-white px-2.5 py-1 text-xs ring-1 ring-green-300"
+                          >
+                            {r} × {c}
+                          </span>
+                        ))}
+                      </div>
+                      <p className="mt-2 text-xs">
+                        {current.rootCounts.length} farklı kök • en sık: {current.rootCounts[0][0]} ({current.rootCounts[0][1]} kelime)
+                      </p>
+                      {current.rootCounts.length > 12 && (
+                        <details className="mt-2">
+                          <summary className="cursor-pointer text-sm text-blue-700 hover:underline">
+                            Kalan {current.rootCounts.length - 12} kökü göster
+                          </summary>
+                          <div className="mt-2 flex flex-wrap gap-1.5">
+                            {current.rootCounts.slice(12).map(([r, c]) => (
+                              <span key={r} className="rounded-full bg-white/70 px-2 py-0.5 text-xs text-slate-600">
+                                {r} × {c}
+                              </span>
+                            ))}
+                          </div>
+                        </details>
+                      )}
+                    </>
+                  )}
                   <p className="mt-2 text-xs">Lexemelerden gözlenen kimlikler; kök varlığı ayrıca doğrulanmalı.</p>
                 </div>
                 <div className="rounded-2xl border-2 border-blue-400 bg-blue-50 p-4">
