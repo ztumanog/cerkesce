@@ -112,7 +112,7 @@ function getIndex() {
   if (cachedIndex) return { index: cachedIndex, list: cachedList };
   const p = path.join(process.cwd(), 'public', 'data', 'linguistic', 'lexemes.json');
   const raw = JSON.parse(fs.readFileSync(p, 'utf-8'));
-  const list = Array.isArray(raw) ? raw : raw.lexemes ?? [];
+  const list = (Array.isArray(raw) ? raw : raw.lexemes ?? []).filter((l: any) => l?.status !== 'uncertain');
   const index = buildLexemeIndex(list);
   cachedIndex = index;
   cachedList = list;

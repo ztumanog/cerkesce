@@ -47,7 +47,7 @@ export default async function ConceptGraphPage({ params }: PageProps) {
     {}
   );
   const rawLexemes = readJsonSafe<any>(path.join(baseDir, 'lexemes.json'), []);
-  const lexemes: any[] = Array.isArray(rawLexemes) ? rawLexemes : rawLexemes.lexemes ?? [];
+  const lexemes: any[] = (Array.isArray(rawLexemes) ? rawLexemes : rawLexemes.lexemes ?? []).filter((l: any) => l?.status !== 'uncertain');
 
   const meta = conceptWords[conceptKey] || conceptWords[decodedConcept] || null;
   const seedWords = Array.isArray(meta?.words) ? meta.words : [];

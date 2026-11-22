@@ -14,7 +14,7 @@ function loadAllData(forceReload = false) {
     const p = path.join(baseDir, 'lexemes.json');
     if (fs.existsSync(p)) {
       const raw = JSON.parse(fs.readFileSync(p, 'utf-8'));
-      cachedLexemes = Array.isArray(raw) ? raw : raw.lexemes ?? [];
+      cachedLexemes = (Array.isArray(raw) ? raw : raw.lexemes ?? []).filter((l: any) => l?.status !== 'uncertain');
     }
   }
   if (forceReload || Object.keys(cachedConceptWords).length === 0) {

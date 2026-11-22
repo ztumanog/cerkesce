@@ -9,7 +9,7 @@ function loadLexemes() {
   const lexemesPath = path.resolve('./public/data/linguistic/lexemes.json');
   if (fs.existsSync(lexemesPath)) {
     const raw = JSON.parse(fs.readFileSync(lexemesPath, 'utf-8'));
-    cachedLexemes = Array.isArray(raw) ? raw : raw?.lexemes ?? [];
+    cachedLexemes = (Array.isArray(raw) ? raw : raw?.lexemes ?? []).filter((l: any) => l?.status !== 'uncertain');
   }
   return cachedLexemes;
 }

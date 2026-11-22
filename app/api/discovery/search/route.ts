@@ -43,7 +43,7 @@ function loadDiscoveryData() {
     const p = path.join(dataDir, 'lexemes.json');
     if (fs.existsSync(p)) {
       const raw = JSON.parse(fs.readFileSync(p, 'utf-8'));
-      cachedLexemes = Array.isArray(raw) ? raw : raw?.lexemes ?? [];
+      cachedLexemes = (Array.isArray(raw) ? raw : raw?.lexemes ?? []).filter((l: any) => l?.status !== 'uncertain');
     }
   }
   if (Object.keys(cachedConceptTr).length === 0) {

@@ -223,10 +223,51 @@ function normalizePatchWithValueObjects(patch: LexemePatch): LexemePatch {
     normalized.wordFamilyId = WordFamilyId.create(normalized.wordFamilyId).value;
   }
   if (Array.isArray(normalized.rootIds)) {
-    normalized.rootIds = normalized.rootIds.map((r) => String(r).trim().toUpperCase());
+    normalized.rootIds = Array.from(new Set(normalized.rootIds.map((r) => String(r).trim().toUpperCase()).filter(Boolean)));
   }
 
   return normalized;
+}
+
+// ============================================================
+// CIFT KAYIT (DEDUPLICATION) KORUMA KATMANI
+// ============================================================
+
+export function buildLexemeDedupKey(
+  form: string,
+  dialect?: unknown,
+  partOfSpeech?: string
+): string {
+  const normForm = RootValue.normalizeCyrillic(String(form ?? ""));
+  const normDialect = safeDialect(dialect) ?? "COMMON";
+  const normPos = String(partOfSpeech ?? "").trim().toLowerCase();
+  return `${normDialect}:${normForm}:${normPos}`;
+}
+
+export function findDuplicateLexeme(
+  form: string,
+  dialect?: unknown,
+  partOfSpeech?: string,
+  excludeId?: string
+): LexemeSummary | undefined {
+  const targetKey = buildLexemeDedupKey(form, dialect, partOfSpeech);
+  if (targetKey.endsWith("::")) return undefined;
+  return getAllLexemes().find(
+    (item) =>
+      item.id !== excludeId &&
+      buildLexemeDedupKey(item.form, item.dialect, item.partOfSpeech) === targetKey
+  );
+}
+
+export interface UpsertLexemeInput extends LexemePatch {
+  id?: string;
+  form: string;
+  translations?: { tr?: string; en?: string; ru?: string };
+  status?: string;
+}
+
+export interface UpsertOptions extends ApplyOptions {
+  rejectOnDuplicate?: boolean;
 }
 
 // ============================================================
@@ -279,6 +320,17 @@ export function updateLexeme(
     return { success: false, error: `Lexeme not found: ${id}` };
   }
 
+  const nextForm = canonicalPatch.form ?? lexeme.form;
+  const nextDialect = canonicalPatch.dialect ?? lexeme.dialect;
+  const nextPos = canonicalPatch.partOfSpeech ?? lexeme.partOfSpeech;
+  const conflict = findDuplicateLexeme(nextForm, nextDialect, nextPos, id);
+  if (conflict) {
+    return {
+      success: false,
+      error: `Duplicate lexeme conflict with ${conflict.id} (${conflict.form}, ${conflict.partOfSpeech ?? "no-pos"})`,
+    };
+  }
+
   const diff: { field: string; oldValue: any; newValue: any }[] = [];
   for (const field of ALLOWED_FIELDS) {
     if (canonicalPatch[field] !== undefined) {
@@ -326,4 +378,95 @@ export function updateLexeme(
     success: true,
     appliedFields: diff.map((d) => d.field),
   };
+}
+
+export function upsertLexeme(
+  input: UpsertLexemeInput,
+  options: UpsertOptions
+): ApplyResult & { id?: string; action?: "CREATED" | "MERGED" } {
+  const reason = options.reason?.trim();
+  if (!reason) return { success: false, error: "Reason is required" };
+  const editor = options.editor?.trim();
+  if (!editor) return { success: false, error: "Editor is required" };
+
+  const normalizedForm = RootValue.normalizeCyrillic(String(input.form ?? ""));
+  if (!normalizedForm) return { success: false, error: "form cannot be empty" };
+
+  const existing = findDuplicateLexeme(normalizedForm, input.dialect, input.partOfSpeech);
+  if (existing) {
+    if (options.rejectOnDuplicate) {
+      return {
+        success: false,
+        error: `Duplicate lexeme already exists: ${existing.id} (${existing.form})`,
+      };
+    }
+    const { id: _id, translations: _tr, status: _st, ...patchFields } = input;
+    const mergedRootIds = Array.from(
+      new Set([...(existing.rootIds ?? []), ...(patchFields.rootIds ?? [])])
+    );
+    const res = updateLexeme(
+      existing.id,
+      { ...patchFields, ...(mergedRootIds.length > 0 ? { rootIds: mergedRootIds } : {}) },
+      options
+    );
+    return { ...res, id: existing.id, action: "MERGED" };
+  }
+
+  const { id, translations, status, ...patchOnly } = input;
+  const validation = validateReferences(patchOnly);
+  if (!validation.valid) {
+    return { success: false, error: validation.errors.join("; ") };
+  }
+  const canonical = normalizePatchWithValueObjects(patchOnly);
+  getAllLexemes();
+  const newId =
+    (id && id.trim()) ||
+    `L-CURATED-${Date.now().toString(36).toUpperCase()}`;
+
+  if (rawCache?.some((item: any) => item.id === newId)) {
+    return { success: false, error: `Lexeme ID already exists: ${newId}` };
+  }
+
+  const newRecord: any = {
+    id: newId,
+    form: normalizedForm,
+    dialect: canonical.dialect ?? "KBD",
+    rootIds: canonical.rootIds ?? [],
+    ...(canonical.wordFamilyId ? { wordFamilyId: canonical.wordFamilyId } : {}),
+    ...(canonical.conceptId ? { conceptId: canonical.conceptId } : {}),
+    ...(canonical.partOfSpeech ? { partOfSpeech: canonical.partOfSpeech } : {}),
+    ...(canonical.ipa ? { ipa: canonical.ipa } : {}),
+    ...(translations ? { translations } : {}),
+    ...(canonical.notes ? { notes: canonical.notes } : {}),
+    status: status ?? "VERIFIED",
+  };
+
+  if (options.dryRun) {
+    return { success: true, dryRun: true, id: newId, action: "CREATED" };
+  }
+
+  const ts = new Date().toISOString().replace(/[^0-9]/g, "").slice(0, 14);
+  fs.copyFileSync(LEXEMES_PATH, `${LEXEMES_PATH}.bak_${ts}`);
+
+  rawCache!.push(newRecord);
+  fs.writeFileSync(LEXEMES_PATH, JSON.stringify(rawCache, null, 2), "utf-8");
+
+  cache = null;
+  rawCache = null;
+  cacheMtime = 0;
+
+  fs.appendFileSync(
+    AUDIT_LOG_PATH,
+    JSON.stringify({
+      timestamp: new Date().toISOString(),
+      lexemeId: newId,
+      reason,
+      editor,
+      source: "curation-ui",
+      action: "CREATE",
+    }) + "\n",
+    "utf-8"
+  );
+
+  return { success: true, id: newId, action: "CREATED" };
 }

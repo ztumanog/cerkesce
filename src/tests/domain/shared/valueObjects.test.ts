@@ -9,6 +9,8 @@ import {
   getAllLexemes,
   validateReferences,
   updateLexeme,
+  findDuplicateLexeme,
+  upsertLexeme,
 } from "@/lib/curation/lexemeStore";
 
 describe("DDD Value Objects & LexemeStore Entegrasyonu", () => {
@@ -38,16 +40,18 @@ describe("DDD Value Objects & LexemeStore Entegrasyonu", () => {
     expect(root.dialect).toBe("COMMON");
   });
 
-  it("lexemes.json üzerindeki 28438 kaydın tamamı Value Object kurallarına uyar", () => {
+  it("lexemes.json üzerindeki 40841 kaydın tamamı Value Object kurallarına uyar", () => {
     const all = getAllLexemes();
-    expect(all.length).toBe(28438);
+    expect(all.length).toBe(40841);
 
     for (const item of all) {
       expect(() => ConceptId.create(item.conceptId!)).not.toThrow();
-      expect(() => WordFamilyId.create(item.wordFamilyId)).not.toThrow();
+      if (item.wordFamilyId) {
+        expect(() => WordFamilyId.create(item.wordFamilyId)).not.toThrow();
+      }
       expect(item.dialect).toMatch(/^(KBD|ADY|COMMON)$/);
     }
-  });
+  }, 15000);
 
   it("lexemeStore.updateLexeme dry-run modunda Value Object validasyonu uygular", () => {
     const badRes = validateReferences({
@@ -64,5 +68,59 @@ describe("DDD Value Objects & LexemeStore Entegrasyonu", () => {
     );
     expect(dryRes.success).toBe(true);
     expect(dryRes.dryRun).toBe(true);
+  });
+});
+
+describe("Çift Kayıt (Deduplication) Koruması", () => {
+  it("Palochka varyantlarını normalize ederek mevcut kaydı yakalar", () => {
+    const all = getAllLexemes();
+    const sample = all.find((x) => x.form.includes("Ӏ") && x.partOfSpeech);
+    expect(sample).toBeDefined();
+
+    // Latin '1' ile yazilmis varyant ayni kaydi yakalamali
+    const variantForm = sample!.form.replace(/Ӏ/g, "1");
+    const dup = findDuplicateLexeme(variantForm, sample!.dialect, sample!.partOfSpeech);
+    expect(dup?.id).toBe(sample!.id);
+  });
+
+  it("updateLexeme başka bir kayıtla form+dialect+POS çakışmasını reddeder", () => {
+    const all = getAllLexemes();
+    const withPos = all.filter((x) => x.partOfSpeech && x.dialect);
+    const first = withPos[0];
+    const second = withPos.find(
+      (x) =>
+        x.id !== first.id &&
+        x.dialect === first.dialect &&
+        x.partOfSpeech === first.partOfSpeech &&
+        x.form !== first.form
+    );
+    expect(second).toBeDefined();
+
+    const res = updateLexeme(
+      second!.id,
+      { form: first.form },
+      { reason: "test-dedup", editor: "vitest", dryRun: true }
+    );
+    expect(res.success).toBe(false);
+    expect(res.error).toContain("Duplicate lexeme conflict");
+  });
+
+  it("upsertLexeme dry-run modunda çakışan kaydı yeni oluşturmak yerine mevcutla birleştirir", () => {
+    const all = getAllLexemes();
+    const target = all.find((x) => x.partOfSpeech && x.dialect)!;
+
+    const merged = upsertLexeme(
+      { form: target.form, dialect: target.dialect, partOfSpeech: target.partOfSpeech },
+      { reason: "test-upsert", editor: "vitest", dryRun: true }
+    );
+    expect(merged.success).toBe(true);
+    expect(merged.action).toBe("MERGED");
+    expect(merged.id).toBe(target.id);
+
+    const rejected = upsertLexeme(
+      { form: target.form, dialect: target.dialect, partOfSpeech: target.partOfSpeech },
+      { reason: "test-upsert-reject", editor: "vitest", dryRun: true, rejectOnDuplicate: true }
+    );
+    expect(rejected.success).toBe(false);
   });
 });

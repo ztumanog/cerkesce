@@ -1,7 +1,8 @@
 import { describe, it, expect } from "vitest";
 import { convertAdyToKbd, convertKbdToAdy } from "@/lib/dialectConverter";
-import lexemes from "../../public/data/linguistic/lexemes.json";
-
+import { readFileSync } from "node:fs";
+import { fileURLToPath } from "node:url";
+const lexemes = JSON.parse(readFileSync(fileURLToPath(new URL("../../public/data/linguistic/lexemes.json", import.meta.url)), "utf-8"));
 describe("Toplu Test - Gercek Motor", () => {
   it("68 farkli cifti olcer", () => {
     const ciftler = (lexemes as any[]).filter(l => l.dialectVariants?.adyghe && l.dialectVariants?.kabardian && l.dialectVariants.adyghe !== l.dialectVariants.kabardian);

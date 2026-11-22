@@ -196,7 +196,7 @@ function loadWordFamilyMap(): Promise<WordFamilyRecord> {
     fetch('/data/linguistic/lexemes.json').then((r) => r.json()).catch(() => []),
   ]).then(([familiesRaw, lexemesRaw]) => {
     const families = Array.isArray(familiesRaw) ? familiesRaw : familiesRaw?.wordFamilies || [];
-    const lexemes = Array.isArray(lexemesRaw) ? lexemesRaw : lexemesRaw?.lexemes || [];
+    const lexemes = (Array.isArray(lexemesRaw) ? lexemesRaw : lexemesRaw?.lexemes || []).filter((l: any) => l?.status !== 'uncertain');
 
     const byFamily: Record<string, FamilyLexemeMember[]> = {};
     for (const lx of lexemes) {

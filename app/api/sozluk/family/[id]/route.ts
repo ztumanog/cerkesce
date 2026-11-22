@@ -17,7 +17,7 @@ export async function GET(
     const dataDir = path.join(process.cwd(), 'public', 'data', 'linguistic');
 
     const lexRaw = readJsonSafe(path.join(dataDir, 'lexemes.json'));
-    const lexemes: any[] = Array.isArray(lexRaw) ? lexRaw : lexRaw?.lexemes ?? [];
+    const lexemes: any[] = (Array.isArray(lexRaw) ? lexRaw : lexRaw?.lexemes ?? []).filter((l: any) => l?.status !== 'uncertain');
 
     const wfRaw = readJsonSafe(path.join(dataDir, 'word_families.json'));
     const families: any[] = Array.isArray(wfRaw) ? wfRaw : wfRaw?.families ?? wfRaw?.wordFamilies ?? [];

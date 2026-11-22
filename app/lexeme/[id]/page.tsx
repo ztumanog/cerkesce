@@ -44,7 +44,7 @@ export default async function LexemePage({ params }: { params: Promise<{ id: str
 
   const relatedLexemes = list
     .filter((item: any) => {
-      if (item.id === lex.id || !item.form) return false;
+      if (item.id === lex.id || !item.form || item.status === 'uncertain') return false;
       if (lex.wordFamilyId && item.wordFamilyId === lex.wordFamilyId) return true;
       if (Array.isArray(lex.rootIds) && lex.rootIds.length > 0 && Array.isArray(item.rootIds)) {
         return item.rootIds.some((r: string) => lex.rootIds.includes(r));
@@ -70,12 +70,22 @@ export default async function LexemePage({ params }: { params: Promise<{ id: str
   };
 
   return (
-    <LexemeDetailClient
-      lex={normalizedLex}
-      variants={variants}
-      verbConjugation={verbConjugation}
-      declension={declension}
-      relatedLexemes={relatedLexemes}
-    />
+    <>
+      {lex.status === 'uncertain' && (
+        <div className="mx-auto max-w-4xl px-4 pt-4">
+          <div className="rounded-xl border border-amber-300 bg-amber-50 px-4 py-3 text-sm text-amber-900">
+            <strong>Doğrulama Bekliyor:</strong>{' '}
+            {lex.uncertain_reason || 'Bu kayıt kaynak doğrulaması beklediği için genel arama listelerinden gizlenmiştir.'}
+          </div>
+        </div>
+      )}
+      <LexemeDetailClient
+        lex={normalizedLex}
+        variants={variants}
+        verbConjugation={verbConjugation}
+        declension={declension}
+        relatedLexemes={relatedLexemes}
+      />
+    </>
   );
 }

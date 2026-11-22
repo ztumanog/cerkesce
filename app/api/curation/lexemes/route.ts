@@ -51,13 +51,6 @@ export async function GET(req: NextRequest) {
   }
 }
 
-// ─────────────────────────────────────────────────────────────
-// PATCH /api/curation/lexemes
-// Gövde: { id, expected, patch }
-// - expected: istemcinin gördüğü son kayıt (optimistic concurrency)
-// - patch:    yalnız izinli alanlar; rootIds dahil
-// Dönen: { ok: true, record, backup, sha256 }
-// ─────────────────────────────────────────────────────────────
 const PATCHABLE = new Set([
   'form', 'ipa', 'literalMeaning', 'meaning', 'partOfSpeech',
   'conceptId', 'dialect', 'notes', 'translations', 'rootIds',
@@ -66,6 +59,14 @@ const PATCHABLE = new Set([
 
 function dataFile(): string {
   return path.join(process.cwd(), 'public', 'data', 'linguistic', 'lexemes.json');
+}
+
+function rootsFile(): string {
+  return path.join(process.cwd(), 'public', 'data', 'linguistic', 'roots.json');
+}
+
+function familiesFile(): string {
+  return path.join(process.cwd(), 'public', 'data', 'linguistic', 'word_families.json');
 }
 
 function readRows(): any[] {
@@ -81,6 +82,33 @@ function sha256(text: string): string {
 
 function sameJson(a: unknown, b: unknown): boolean {
   return JSON.stringify(a) === JSON.stringify(b);
+}
+
+// roots.json / word_families.json hem dizi hem { roots: [] } / { wordFamilies: [] } olabilir.
+// Hangi şekildeyse o şekilde geri yaz.
+function readArrayFile(file: string, keys: string[]): { rows: any[]; containerKey: string | null; data: any } {
+  if (!fs.existsSync(file)) return { rows: [], containerKey: null, data: [] };
+  const raw = fs.readFileSync(file, 'utf8').replace(/^\uFEFF/, '');
+  if (!raw.trim()) return { rows: [], containerKey: null, data: [] };
+  const parsed = JSON.parse(raw);
+  if (Array.isArray(parsed)) return { rows: parsed, containerKey: null, data: parsed };
+  if (parsed && typeof parsed === 'object') {
+    for (const k of keys) {
+      if (Array.isArray((parsed as any)[k])) {
+        return { rows: (parsed as any)[k], containerKey: k, data: parsed };
+      }
+    }
+  }
+  return { rows: [], containerKey: keys[0], data: parsed };
+}
+
+function writeArrayFile(file: string, data: any, containerKey: string | null, rows: any[]) {
+  const stamp = new Date().toISOString().replace(/[:.]/g, '-');
+  if (fs.existsSync(file)) {
+    fs.copyFileSync(file, `${file}.bak-${stamp}`);
+  }
+  const out = containerKey ? { ...data, [containerKey]: rows } : rows;
+  fs.writeFileSync(file, JSON.stringify(out, null, 2) + '\n', 'utf8');
 }
 
 export async function PATCH(req: NextRequest) {
@@ -120,7 +148,6 @@ export async function PATCH(req: NextRequest) {
       );
     }
 
-    // Yalnız izinli anahtarlar
     const cleanPatch: Record<string, unknown> = {};
     for (const key of Object.keys(patch)) {
       if (!PATCHABLE.has(key)) {
@@ -136,7 +163,6 @@ export async function PATCH(req: NextRequest) {
       );
     }
 
-    // conceptId kanonik format doğrulaması (ADR-GOV-015)
     if ('conceptId' in cleanPatch && cleanPatch.conceptId !== null && cleanPatch.conceptId !== '') {
       if (typeof cleanPatch.conceptId !== 'string') {
         return NextResponse.json(
@@ -153,7 +179,6 @@ export async function PATCH(req: NextRequest) {
       }
     }
 
-    // rootIds doğrulama (dizi, string, boşluklar temiz)
     if ('rootIds' in cleanPatch) {
       const v = cleanPatch.rootIds;
       if (!Array.isArray(v)) {
@@ -185,9 +210,6 @@ export async function PATCH(req: NextRequest) {
 
     const current = rows[idx];
 
-    // expected ile güncel kaydı karşılaştır (optimistic concurrency)
-    // Sadece expected'te bulunan alanları kontrol et; _revision, __proto__ gibi
-    // meta alanları yoksay.
     for (const key of Object.keys(expected)) {
       if (key === '_revision' || key.startsWith('__')) continue;
       if (!(key in current)) continue;
@@ -204,18 +226,15 @@ export async function PATCH(req: NextRequest) {
       }
     }
 
-    // Uygula
     const updated: Record<string, any> = { ...current };
     for (const key of Object.keys(cleanPatch)) {
       updated[key] = cleanPatch[key];
     }
 
-    // Yedek
     const stamp = new Date().toISOString().replace(/[:.]/g, '-');
     const backupPath = `${file}.bak-${stamp}`;
     fs.copyFileSync(file, backupPath);
 
-    // Yaz
     const nextRows = rows.slice();
     nextRows[idx] = updated;
     const serialized = JSON.stringify(nextRows, null, 2) + '\n';
@@ -223,7 +242,80 @@ export async function PATCH(req: NextRequest) {
 
     const hash = sha256(serialized);
 
-    // Etkilenen kavram(lar) için bilgi grafiği önbelleğini geçersiz kıl
+    // --- YENİ: lexeme'in işaret ettiği kök + aile yoksa roots.json / word_families.json'a oluştur ---
+    const createdRoots: string[] = [];
+    const createdFamilies: string[] = [];
+    try {
+      const rootIds = Array.isArray(updated.rootIds) ? updated.rootIds.filter((x: any) => typeof x === 'string' && x.trim()) : [];
+      const familyId = typeof updated.wordFamilyId === 'string' && updated.wordFamilyId.trim() ? updated.wordFamilyId.trim() : null;
+      const trText = typeof updated.translations?.tr === 'string' && updated.translations.tr.trim()
+        ? updated.translations.tr.trim()
+        : (typeof updated.meaning === 'string' && updated.meaning ? updated.meaning : (updated.form || ''));
+
+      if (rootIds.length > 0) {
+        const rf = rootsFile();
+        const { rows: rootRows, containerKey: rootKey, data: rootData } = readArrayFile(rf, ['roots', 'data', 'items']);
+        let rootsChanged = false;
+        for (const rid of rootIds) {
+          const existing = rootRows.find((r: any) => r && r.id === rid);
+          if (!existing) {
+            rootRows.push({
+              id: rid,
+              form: updated.form || rid.replace(/^R-/, ''),
+              primaryMeaning: trText,
+              meaning: trText,
+              translations: updated.translations || { tr: trText },
+              conceptId: updated.conceptId || null,
+              concept: updated.conceptId || null,
+              wordFamilyId: familyId,
+              source: `Dil Kurasyonu / ${updated.id}`,
+              createdFrom: updated.id,
+            });
+            createdRoots.push(rid);
+            rootsChanged = true;
+          } else {
+            if (!existing.wordFamilyId && familyId) { existing.wordFamilyId = familyId; rootsChanged = true; }
+            if (!existing.conceptId && updated.conceptId) { existing.conceptId = updated.conceptId; existing.concept = updated.conceptId; rootsChanged = true; }
+          }
+        }
+        if (rootsChanged) writeArrayFile(rf, rootData, rootKey, rootRows);
+      }
+
+      if (familyId) {
+        const ff = familiesFile();
+        const { rows: famRows, containerKey: famKey, data: famData } = readArrayFile(ff, ['wordFamilies', 'word_families', 'families', 'data', 'items']);
+        let famChanged = false;
+        const existingFam = famRows.find((r: any) => r && (r.id === familyId || r.wordFamilyId === familyId));
+        if (!existingFam) {
+          famRows.push({
+            id: familyId,
+            wordFamilyId: familyId,
+            conceptId: updated.conceptId || null,
+            concept: updated.conceptId || null,
+            rootIds: rootIds,
+            lexemeIds: [updated.id],
+            source: `Dil Kurasyonu / ${updated.id}`,
+          });
+          createdFamilies.push(familyId);
+          famChanged = true;
+        } else {
+          if (!Array.isArray(existingFam.rootIds)) existingFam.rootIds = [];
+          if (!Array.isArray(existingFam.lexemeIds)) existingFam.lexemeIds = [];
+          for (const rid of rootIds) {
+            if (!existingFam.rootIds.includes(rid)) { existingFam.rootIds.push(rid); famChanged = true; }
+          }
+          if (!existingFam.lexemeIds.includes(updated.id)) { existingFam.lexemeIds.push(updated.id); famChanged = true; }
+        }
+        if (famChanged) writeArrayFile(ff, famData, famKey, famRows);
+      }
+    } catch (e: any) {
+      // lexemes.json yazıldı ama kök/aile yazılamadıysa bunu gizleme
+      return NextResponse.json(
+        { error: `Lexeme yazıldı ama kök/aile yazılamadı: ${e?.message || e}`, createdRoots, createdFamilies },
+        { status: 500 }
+      );
+    }
+
     const affectedConceptIds = new Set<string>();
     if (typeof current.conceptId === 'string' && isValidCanonicalConceptId(current.conceptId)) {
       affectedConceptIds.add(current.conceptId);
@@ -246,6 +338,8 @@ export async function PATCH(req: NextRequest) {
         record: updated,
         backup: path.basename(backupPath),
         sha256: hash,
+        createdRoots,
+        createdFamilies,
       },
       { headers: { 'Cache-Control': 'no-store' } }
     );

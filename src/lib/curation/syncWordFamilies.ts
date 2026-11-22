@@ -42,7 +42,7 @@ export function syncWordFamiliesFromLexemes(lexemes: any[], targetFamilyIds?: It
       if (!fid) continue;
       if (filterSet && !filterSet.has(fid)) continue;
       const members = membersByFam.get(fid) || [];
-      const nextLexIds = members.map((m) => m.id).filter(Boolean);
+      const nextLexIds = Array.from(new Set(members.map((m) => String(m.id || "")).filter(Boolean)));
       const prevLexIds = Array.isArray(f.lexemeIds) ? f.lexemeIds : [];
       if (prevLexIds.length !== nextLexIds.length || prevLexIds.some((id: string, i: number) => id !== nextLexIds[i])) {
         f.lexemeIds = nextLexIds; changed = true;

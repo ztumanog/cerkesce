@@ -49,7 +49,8 @@ export function SearchBox({
     if (!serviceRef.current) serviceRef.current = new SmartSuggestionService();
     fetch('/data/linguistic/lexemes.json')
       .then((r) => r.json())
-      .then((lexemes) => {
+      .then((raw) => {
+        const lexemes = (Array.isArray(raw) ? raw : raw?.lexemes ?? []).filter((l: any) => l?.status !== 'uncertain');
         serviceRef.current?.loadLexemes(lexemes);
         setSuggestionsLoaded(true);
       })

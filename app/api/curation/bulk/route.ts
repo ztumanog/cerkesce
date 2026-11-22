@@ -2,6 +2,8 @@ import { NextResponse } from "next/server";
 import fs from "fs";
 import path from "path";
 const LEX_PATH = path.join(process.cwd(), "public/data/linguistic/lexemes.json");
+const ROOTS_PATH = path.join(process.cwd(), "public/data/linguistic/roots.json");
+const FAM_PATH = path.join(process.cwd(), "public/data/linguistic/word_families.json");
 const s = (v: unknown) => (typeof v === "string" ? v : v == null ? "" : String(v));
 export async function POST(req: Request) {
   try {
@@ -43,14 +45,15 @@ export async function POST(req: Request) {
             ...(v as Record<string, unknown>),
           };
         }
-else if (k === "tr" && typeof v === "string") { (rec as Record<string, unknown>).translations = { ...(((rec as Record<string, unknown>).translations as Record<string, unknown>) || {}), tr: v }; } else (rec as any)[k] = v;
+        else if (k === "tr" && typeof v === "string") { (rec as Record<string, unknown>).translations = { ...(((rec as Record<string, unknown>).translations as Record<string, unknown>) || {}), tr: v }; } else (rec as any)[k] = v;
       }
       ok.push(String(u.id));
     }
     if (!ok.length) return NextResponse.json({ ok: false, errors }, { status: 400 });
+
     // Aile senkronu - wordFamilyId degisen lexemeyi eski aileden cikar, yenisine ekle
     try {
-      const famPath = path.join(process.cwd(), "public/data/linguistic/word_families.json");
+      const famPath = FAM_PATH;
       if (fs.existsSync(famPath)) {
         const famRaw = fs.readFileSync(famPath, "utf-8");
         const famData = JSON.parse(famRaw);
@@ -68,14 +71,87 @@ else if (k === "tr" && typeof v === "string") { (rec as Record<string, unknown>)
         if (famChanged) { const famStamp = new Date().toISOString().replace(/[:.]/g, "-"); fs.copyFileSync(famPath, famPath + ".bak-" + famStamp); const famOut = Array.isArray(famData) ? famList : { ...famData, families: famList }; fs.writeFileSync(famPath, JSON.stringify(famOut, null, 2), "utf-8"); }
       }
     } catch {}
+
+    // AILE YARATMA - WF yoksa yarat
+    let createdFams: string[] = [];
+    try {
+      if (fs.existsSync(FAM_PATH)) {
+        const famRaw2 = fs.readFileSync(FAM_PATH, "utf-8");
+        const famData2 = JSON.parse(famRaw2);
+        const famList2 = Array.isArray(famData2) ? famData2 : (famData2.families ?? famData2.wordFamilies ?? []);
+        const hasFam = new Set(famList2.map((f: any) => String(f.id)));
+        let famChanged2 = false;
+        for (const u of updates) {
+          const rec: any = byId.get(String(u.id));
+          if (!rec) continue;
+          const fid = s(rec.wordFamilyId || "").trim();
+          if (!fid || hasFam.has(fid)) continue;
+          famList2.push({ id: fid, lexemeIds: [String(u.id)], conceptId: s(rec.conceptId || ""), source: "Dil Kurasyonu / " + String(u.id) });
+          hasFam.add(fid);
+          createdFams.push(fid);
+          famChanged2 = true;
+        }
+        if (famChanged2) {
+          fs.copyFileSync(FAM_PATH, FAM_PATH + ".bak-" + new Date().toISOString().replace(/[:.]/g, "-"));
+          fs.writeFileSync(FAM_PATH, JSON.stringify(Array.isArray(famData2) ? famList2 : { ...famData2, families: famList2 }, null, 2), "utf-8");
+        }
+      }
+    } catch {}
+
+    // KOK SENKRONU - TEK BLOK, son hale bak, patch'e degil
+    let createdRoots: string[] = [];
+    let bakRoot: string | null = null;
+    try {
+      if (fs.existsSync(ROOTS_PATH)) {
+        const rootsRaw = fs.readFileSync(ROOTS_PATH, "utf-8");
+        const rootsData = JSON.parse(rootsRaw);
+        const rootsList = Array.isArray(rootsData) ? rootsData : (rootsData.roots ?? []);
+        const hasRoot = new Set(rootsList.map((r: any) => String(r.id)));
+        let rootsChanged = false;
+        for (const u of updates) {
+          const rec: any = byId.get(String(u.id));
+          if (!rec || !Array.isArray(rec.rootIds)) continue;
+          const form = s(rec.form || rec.dialectVariants?.adyghe || rec.dialectVariants?.kabardian || "").trim();
+          const trFull = s(rec.translations?.tr || rec.tr || "");
+          const primary = trFull.split(",")[0].trim() || s(rec.literalMeaning || "");
+          for (const ridRaw of rec.rootIds) {
+            const rid = s(ridRaw).trim();
+            if (!rid) continue;
+            if (hasRoot.has(rid)) continue;
+            if (!form) continue;
+            rootsList.push({
+              id: rid,
+              form,
+              primaryMeaning: primary,
+              meaning: primary,
+              translations: { tr: trFull, en: s(rec.translations?.en || ""), ru: s(rec.translations?.ru || "") },
+              conceptId: s(rec.conceptId || ""),
+              wordFamilyId: s(rec.wordFamilyId || ""),
+              source: "Dil Kurasyonu / " + String(u.id),
+              note: "Dil Kurasyonu Kaydet ile otomatik senkron.",
+            });
+            hasRoot.add(rid);
+            createdRoots.push(rid);
+            rootsChanged = true;
+          }
+        }
+        if (rootsChanged) {
+          const rootsStamp = new Date().toISOString().replace(/[:.]/g, "-");
+          bakRoot = ROOTS_PATH + ".bak-" + rootsStamp;
+          fs.copyFileSync(ROOTS_PATH, bakRoot);
+          const rootsOut = Array.isArray(rootsData) ? rootsList : { ...rootsData, roots: rootsList };
+          fs.writeFileSync(ROOTS_PATH, JSON.stringify(rootsOut, null, 2), "utf-8");
+        }
+      }
+    } catch {}
+
     const stamp = new Date().toISOString().replace(/[:.]/g, "-");
     const bak = LEX_PATH + ".bak-" + stamp;
     fs.copyFileSync(LEX_PATH, bak);
     const out = Array.isArray(data) ? list : { ...(data as any), lexemes: list };
     fs.writeFileSync(LEX_PATH, JSON.stringify(out, null, 2), "utf-8");
-    return NextResponse.json({ ok: true, applied: ok.length, failed: errors.length, errors, backup: bak, note: "commit terminalden" });
+    return NextResponse.json({ ok: true, applied: ok.length, failed: errors.length, errors, backup: bak, backupRoots: bakRoot, createdRoots, createdFams, note: "commit terminalden" });
   } catch (e: any) {
     return NextResponse.json({ ok: false, error: e?.message ?? "hata" }, { status: 500 });
   }
 }
-

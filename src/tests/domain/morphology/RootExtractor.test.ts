@@ -2,8 +2,9 @@
 import { RootExtractor } from '@/domain/morphology/RootExtractor';
 import { Root } from '@/domain/linguistic/Root';
 import rootsData from '../../../../public/data/linguistic/roots.json';
-import lexemesData from '../../../../public/data/linguistic/lexemes.json';
-
+import { readFileSync } from "node:fs";
+import { fileURLToPath } from "node:url";
+const lexemesData = JSON.parse(readFileSync(fileURLToPath(new URL("../../../../public/data/linguistic/lexemes.json", import.meta.url)), "utf-8"));
 // ============================================
 // STRING-BASED TESTLER (morphology'den)
 // ============================================

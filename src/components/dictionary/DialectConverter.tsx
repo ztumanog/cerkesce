@@ -15,10 +15,10 @@ interface LexemeMatchInfo {
 }
 
 const SAMPLE_PHRASES: ReadonlyArray<{ label: string; ady: string; kbd: string }> = [
-  { label: 'Cümle (Gitmek)', ady: 'Тэ тыкӀуэщт мафэм', kbd: 'Дэ дыкӀуэнщ махуэм' },
+  { label: 'Cümle (Gitmek)', ady: 'Тэ тыкӏуэщт мафэм', kbd: 'Дэ дыкӏуэнщ махуэм' },
   { label: 'Özgürlük', ady: 'шъхьэхуитыныгъэ', kbd: 'щхьэхуитыныгъэ' },
   { label: 'Gözyaşı', ady: 'нэпсы', kbd: 'нэпс' },
-  { label: 'Tren', ady: 'машӀокушъо', kbd: 'мафӀэгу' },
+  { label: 'Tren', ady: 'машӏокушъо', kbd: 'мафӏэгу' },
   { label: 'Uçak', ady: 'къухьэлъат', kbd: 'кхъухьлъатэ' },
   { label: 'Sıcak gün', ady: 'мафэ фабэ', kbd: 'махуэ хуабэ' },
   { label: 'At yarışı', ady: 'шыгъажэ', kbd: 'шыгъажэ' },
@@ -43,20 +43,52 @@ const SOURCE_LABELS: Record<string, { label: string; badgeClass: string }> = {
   },
 };
 
+function normalizePalochka(text: string): string {
+  return text
+    .replace(/[\u04C0\u0406\u0456]/g, 'ӏ')
+    .replace(/(?<=[а-яёА-ЯЁӏ])[1Il|]|[1Il|](?=[а-яёА-ЯЁӏ])/g, 'ӏ');
+}
+
+function safeConvert(token: string, direction: 'W2E' | 'E2W'): string {
+  try {
+    return direction === 'W2E' ? convertAdyToKbd(token) : convertKbdToAdy(token);
+  } catch {
+    return token;
+  }
+}
+
+function applyCasePattern(sourceToken: string, converted: string): string {
+  if (!converted) return converted;
+  const isAllUpper =
+    sourceToken.length > 1 &&
+    sourceToken === sourceToken.toUpperCase() &&
+    sourceToken !== sourceToken.toLowerCase();
+  if (isAllUpper) return converted.toUpperCase();
+
+  const isCapitalized =
+    sourceToken[0] === sourceToken[0].toUpperCase() &&
+    sourceToken[0] !== sourceToken[0].toLowerCase();
+  if (isCapitalized) {
+    return converted[0].toUpperCase() + converted.slice(1);
+  }
+  return converted;
+}
+
 function convertTextWithPreservedPunctuation(
-  text: string,
+  rawText: string,
   direction: 'W2E' | 'E2W'
 ): string {
+  const text = normalizePalochka(rawText);
+  const leading = text.match(/^\s*/)?.[0] ?? '';
+  const trailing = text.match(/\s*$/)?.[0] ?? '';
   const trimmed = text.trim();
-  if (!trimmed) return '';
+  if (!trimmed) return text;
 
-  if (!trimmed.includes('\n') && trimmed.split(/\s+/).length <= 2) {
-    const direct =
-      direction === 'W2E'
-        ? convertAdyToKbd(trimmed)
-        : convertKbdToAdy(trimmed);
+  const hasPunctuation = /[.,!?;:"()«»—–-]/.test(trimmed);
+  if (!hasPunctuation && !trimmed.includes('\n') && trimmed.split(/\s+/).length <= 2) {
+    const direct = safeConvert(trimmed, direction);
     if (direct.toLowerCase() !== trimmed.toLowerCase()) {
-      return direct;
+      return leading + applyCasePattern(trimmed, direct) + trailing;
     }
   }
 
@@ -64,36 +96,30 @@ function convertTextWithPreservedPunctuation(
     .split(/(\s+|[.,!?;:"()«»—–-]+)/)
     .map((token) => {
       if (!token || /^(\s+|[.,!?;:"()«»—–-]+)$/.test(token)) return token;
-      const converted =
-        direction === 'W2E'
-          ? convertAdyToKbd(token)
-          : convertKbdToAdy(token);
-      const isCapitalized =
-        token[0] === token[0].toUpperCase() && token[0] !== token[0].toLowerCase();
-      if (isCapitalized && converted.length > 0) {
-        return converted[0].toUpperCase() + converted.slice(1);
-      }
-      return converted;
+      const converted = safeConvert(token, direction);
+      return applyCasePattern(token, converted);
     })
     .join('');
 }
 
 export function DialectConverterComponent() {
   const morphologyAnalyzer = useMemo(() => new MorphologyAnalyzer(), []);
-  const [input, setInput] = useState('Тэ тыкӀуэщт мафэм');
+  const [input, setInput] = useState('Тэ тыкӏуэщт мафэм');
   const [direction, setDirection] = useState<'W2E' | 'E2W'>('W2E');
   const [copied, setCopied] = useState(false);
   const [klavyeAcik, setKlavyeAcik] = useState(true);
   const [pairSearch, setPairSearch] = useState('');
-  const [lexemeMatches, setLexemeMatches] = useState<Record<string, LexemeMatchInfo>>({});
+  const [lexemeMatches, setLexemeMatches] = useState<Record<string, LexemeMatchInfo | null>>({});
   const textareaRef = useRef<HTMLTextAreaElement>(null);
 
+  const normalizedInput = useMemo(() => normalizePalochka(input), [input]);
+
   const output = useMemo(() => {
-    return convertTextWithPreservedPunctuation(input, direction);
-  }, [input, direction]);
+    return convertTextWithPreservedPunctuation(normalizedInput, direction);
+  }, [normalizedInput, direction]);
 
   const tokenBreakdown = useMemo(() => {
-    const words = input
+    const words = normalizedInput
       .split(/[\s.,!?;:"()«»—–-]+/)
       .map((w) => w.trim())
       .filter(Boolean);
@@ -101,9 +127,9 @@ export function DialectConverterComponent() {
     return uniqueWords.map((w) => {
       const display = resolveDialectVariantDisplay({
         form: w,
-        dialect: direction === 'W2E' ? 'western' : 'dogu',
+        dialect: direction === 'W2E' ? 'western' : 'eastern',
       });
-      const kbdCandidate = direction === 'W2E' ? convertAdyToKbd(w) : w;
+      const kbdCandidate = direction === 'W2E' ? safeConvert(w, 'W2E') : w;
       const rawAnalysis = morphologyAnalyzer.analyze(w);
       const kbdAnalysis = morphologyAnalyzer.analyze(kbdCandidate);
       const morphology =
@@ -113,23 +139,27 @@ export function DialectConverterComponent() {
 
       return { token: w, display, morphology };
     });
-  }, [input, direction, morphologyAnalyzer]);
+  }, [normalizedInput, direction, morphologyAnalyzer]);
 
-  // Cozumlenen kelimeler ve kokleri icin sozluk kayitlarini eslestir
   useEffect(() => {
-    if (tokenBreakdown.length === 0) return;
+    const entriesToFetch = tokenBreakdown.filter((item) => !(item.token in lexemeMatches));
+    if (entriesToFetch.length === 0) return;
+
     let cancelled = false;
-
     const timer = setTimeout(async () => {
-      const entriesToFetch = tokenBreakdown.filter((item) => !(item.token in lexemeMatches));
-      if (entriesToFetch.length === 0) return;
-
-      const resolved: Record<string, LexemeMatchInfo> = {};
+      const resolved: Record<string, LexemeMatchInfo | null> = {};
       await Promise.all(
         entriesToFetch.map(async ({ token, morphology }) => {
+          const kbdForm = direction === 'W2E' ? safeConvert(token, 'W2E') : token;
           const candidates = Array.from(
-            new Set([morphology.root, token].filter((c): c is string => Boolean(c && c.trim())))
+            new Set(
+              [morphology.root, token, kbdForm]
+                .filter((c): c is string => Boolean(c && c.trim()))
+                .map((c) => normalizePalochka(c.trim()))
+            )
           );
+
+          let found: LexemeMatchInfo | null = null;
           for (const candidate of candidates) {
             try {
               const res = await fetch(`/api/search?q=${encodeURIComponent(candidate)}&mode=tam`);
@@ -138,7 +168,7 @@ export function DialectConverterComponent() {
               const list = Array.isArray(data) ? data : data.results || data.items || [];
               const first = list[0];
               if (first && first.id) {
-                resolved[token] = {
+                found = {
                   id: String(first.id),
                   form: String(first.word || first.form || candidate),
                   meaningTr: first.meaningTr || first.meaning || first.translations?.tr?.[0],
@@ -149,6 +179,7 @@ export function DialectConverterComponent() {
               // Sessiz gec
             }
           }
+          resolved[token] = found;
         })
       );
 
@@ -161,13 +192,15 @@ export function DialectConverterComponent() {
       cancelled = true;
       clearTimeout(timer);
     };
-  }, [tokenBreakdown, lexemeMatches]);
+  }, [tokenBreakdown, lexemeMatches, direction]);
 
   const filteredPairs = useMemo(() => {
-    const q = pairSearch.trim().toLowerCase();
+    const q = normalizePalochka(pairSearch.trim().toLowerCase());
     if (!q) return VERIFIED_PAIRS;
     return VERIFIED_PAIRS.filter(
-      ([ady, kbd]) => ady.toLowerCase().includes(q) || kbd.toLowerCase().includes(q)
+      ([ady, kbd]) =>
+        normalizePalochka(ady.toLowerCase()).includes(q) ||
+        normalizePalochka(kbd.toLowerCase()).includes(q)
     );
   }, [pairSearch]);
 
@@ -220,7 +253,6 @@ export function DialectConverterComponent() {
       </header>
 
       <main className="mx-auto max-w-5xl px-4 py-6 space-y-6">
-        {/* Hızlı Örnekler */}
         <div className="flex flex-wrap items-center gap-2">
           <span className="text-xs font-semibold text-slate-500 dark:text-slate-400">Hızlı Örnekler:</span>
           {SAMPLE_PHRASES.map((sample) => (
@@ -239,7 +271,6 @@ export function DialectConverterComponent() {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-          {/* Girdi */}
           <div className="bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 p-4">
             <label className="text-xs font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400">
               {sourceLabel}
@@ -248,13 +279,12 @@ export function DialectConverterComponent() {
               ref={textareaRef}
               value={input}
               onChange={(e) => setInput(e.target.value)}
-              placeholder={direction === 'W2E' ? 'Адыгэ псалъэ е гущыӀэухыгъэ...' : 'Къэбэрдей псалъэ е псалъэуха...'}
+              placeholder={direction === 'W2E' ? 'Адыгэ псалъэ е гущыӏэухыгъэ...' : 'Къэбэрдей псалъэ е псалъэуха...'}
               className="mt-2 w-full h-40 bg-slate-50 dark:bg-slate-900 border border-slate-300 dark:border-slate-600 rounded-lg p-3 text-xl font-mono focus:outline-none focus:ring-2 focus:ring-emerald-500"
               spellCheck={false}
             />
           </div>
 
-          {/* Çıktı */}
           <div className="bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 p-4">
             <label className="text-xs font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400">
               {targetLabel}
@@ -281,7 +311,6 @@ export function DialectConverterComponent() {
           </div>
         </div>
 
-        {/* Mevcut AkilliKlavye Bileşeni */}
         {klavyeAcik && (
           <div className="bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 p-3">
             <AkilliKlavye
@@ -294,7 +323,6 @@ export function DialectConverterComponent() {
           </div>
         )}
 
-        {/* Kelime Bazlı Diyalekt ve Morfoloji Analizi */}
         {tokenBreakdown.length > 0 && (
           <div className="bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 p-4 space-y-3">
             <div className="flex items-center justify-between">
@@ -306,7 +334,7 @@ export function DialectConverterComponent() {
                 const posMeta = SOURCE_LABELS[morphology.source] || SOURCE_LABELS.unknown;
                 const morphemes = morphology.morphemes || [];
                 const effectiveRoot = morphology.root || token;
-                const matchedLexeme = lexemeMatches[token];
+                const matchedLexeme = lexemeMatches[token] ?? undefined;
                 const searchTarget = effectiveRoot !== token ? effectiveRoot : token;
 
                 return (
@@ -342,7 +370,6 @@ export function DialectConverterComponent() {
                         </div>
                       )}
 
-                      {/* Kök & Morfem Dökümü */}
                       <div className="pt-1.5 border-t border-slate-200/80 dark:border-slate-700/80 space-y-1">
                         <div className="text-[11px] text-slate-500 dark:text-slate-400">
                           Kök: <span className="font-mono font-bold text-slate-800 dark:text-slate-200">{effectiveRoot}</span>
@@ -375,7 +402,6 @@ export function DialectConverterComponent() {
                       </div>
                     </div>
 
-                    {/* Sözlük & Madde Detayı Bağlantıları */}
                     <div className="pt-2 border-t border-slate-200/80 dark:border-slate-700/80 flex flex-wrap items-center justify-between gap-2 text-[11px]">
                       <Link
                         href={`/sozluk?q=${encodeURIComponent(searchTarget)}`}
@@ -399,7 +425,6 @@ export function DialectConverterComponent() {
           </div>
         )}
 
-        {/* Doğrulanmış Çiftler */}
         <div className="bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 overflow-hidden">
           <div className="px-4 py-3 border-b border-slate-200 dark:border-slate-700 flex flex-wrap items-center justify-between gap-2">
             <div>

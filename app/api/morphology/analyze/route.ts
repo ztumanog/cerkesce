@@ -4,8 +4,8 @@ import path from 'node:path';
 import { MorphologyAnalyzer } from '../../../../src/domain/morphology/MorphologyAnalyzer';
 import { DictionaryProvider, DICTIONARIES_META } from '../../../../src/domain/morphology/DictionaryProvider';
 import { SyntaxAnalyzer } from '../../../../src/domain/morphology/SyntaxAnalyzer';
-import { Lexeme } from '../../../../src/domain/linguistic/Lexeme';
-import lexemesData from '../../../../public/data/linguistic/lexemes.json';
+import type { Lexeme } from '../../../../src/domain/linguistic/Lexeme';
+const lexemesData = JSON.parse(fs.readFileSync(path.join(process.cwd(), 'public', 'data', 'linguistic', 'lexemes.json'), 'utf-8'));
 
 export const runtime = 'nodejs';
 export const dynamic = 'force-dynamic';

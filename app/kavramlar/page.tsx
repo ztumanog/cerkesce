@@ -51,7 +51,7 @@ export default function KavramlarPage() {
   try {
     if (fs.existsSync(lexPath)) {
       const parsed = JSON.parse(fs.readFileSync(lexPath, 'utf-8').replace(/^\uFEFF/, ''));
-      rawList = Array.isArray(parsed) ? parsed : Array.isArray(parsed?.lexemes) ? parsed.lexemes : [];
+      rawList = (Array.isArray(parsed) ? parsed : Array.isArray(parsed?.lexemes) ? parsed.lexemes : []).filter((l: any) => l?.status !== 'uncertain');
     }
   } catch {
     rawList = [];

@@ -29,7 +29,7 @@ export async function GET(
     const dataDir = path.join(process.cwd(), 'public', 'data', 'linguistic');
 
     const lexRaw = readJsonSafe(path.join(dataDir, 'lexemes.json'));
-    const lexemes: any[] = Array.isArray(lexRaw) ? lexRaw : lexRaw?.lexemes ?? [];
+    const lexemes: any[] = (Array.isArray(lexRaw) ? lexRaw : lexRaw?.lexemes ?? []).filter((l: any) => l?.status !== 'uncertain');
 
     const rootsRaw = readJsonSafe(path.join(dataDir, 'roots.json'));
     const rootsList: any[] = Array.isArray(rootsRaw) ? rootsRaw : rootsRaw?.roots ?? [];

@@ -19,7 +19,7 @@ function readLinguisticArray(fileName: string, arrayKey: string): any[] {
 
 export default function Page() {
   const rawFamilies = readLinguisticArray('word_families.json', 'wordFamilies');
-  const rawLexemes = readLinguisticArray('lexemes.json', 'lexemes');
+  const rawLexemes = readLinguisticArray('lexemes.json', 'lexemes').filter((l: any) => l?.status !== 'uncertain');
 
   const families = rawFamilies.map((f: any) => ({
     id: f.id || f.familyId,

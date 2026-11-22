@@ -3,8 +3,9 @@ import fs from 'fs';
 import { describe, it, expect } from 'vitest';
 import { MorphemeParser } from '@/domain/morphology/MorphemeParser';
 import morphemesData from '../../../../public/data/linguistic/morphemes.json';
-import lexemesData from '../../../../public/data/linguistic/lexemes.json';
-
+import { readFileSync } from "node:fs";
+import { fileURLToPath } from "node:url";
+const lexemesData = JSON.parse(readFileSync(fileURLToPath(new URL("../../../../public/data/linguistic/lexemes.json", import.meta.url)), "utf-8"));
 describe('MorphemeParser Gercek Kelimeler', () => {
   const parser = new MorphemeParser(morphemesData as any);
 
