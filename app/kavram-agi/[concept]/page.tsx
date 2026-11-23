@@ -8,9 +8,11 @@ import {
   ConceptGraphCanvas,
   CytoscapeElementData,
 } from '@/ui/components/discovery/ConceptGraphCanvas';
+import { GraphExportButtons } from '@/ui/components/discovery/GraphExport';
 import { ConceptGraphAdapter } from '@/domain/discovery/adapters/ConceptGraphAdapter';
 import { CytoscapeProjectionAdapter } from '@/domain/discovery/adapters/CytoscapeProjectionAdapter';
 import { normalizePalochka } from '@/domain/utils/normalizePalochka';
+import { FederatedGraphService } from '@/domain/federation/services/FederatedGraphService';
 
 interface PageProps {
   params: Promise<{ concept: string }>; // veya Next 13/14'e göre senkron alıyorsan düzeltilebilir
@@ -138,12 +140,27 @@ export default async function ConceptGraphPage({ params }: PageProps) {
     }
   }
 
-  const rootNodeTitle = `${enLabel} [${conceptKey}]`;
+  // Federasyon: Doğu Kabarday + Batı Adige düğümlerini id ile tekilleştir
+const kabardianNodes = graphRelated
+  .filter((n) => String(n.dialect || '').toUpperCase() === 'EASTERN_KABARDIAN')
+  .map((n) => ({ id: String(n.conceptId), dialect: 'EASTERN_KABARDIAN' as const, label: String(n.label) }));
+const adygheNodes = graphRelated
+  .filter((n) => String(n.dialect || '').toUpperCase() === 'WESTERN_ADYGHE')
+  .map((n) => ({ id: String(n.conceptId), dialect: 'WESTERN_ADYGHE' as const, label: String(n.label) }));
+const mergedFederated = FederatedGraphService.mergeSources([kabardianNodes, adygheNodes]);
+const mergedIds = new Set(mergedFederated.map((n) => n.id));
+const federatedGraphRelated = graphRelated.filter((n) => {
+  const d = String(n.dialect || '').toUpperCase();
+  if (d !== 'EASTERN_KABARDIAN' && d !== 'WESTERN_ADYGHE') return true;
+  return mergedIds.has(String(n.conceptId));
+});
+
+const rootNodeTitle = `${enLabel} [${conceptKey}]`;
 
   const canonicalNetwork = ConceptGraphAdapter.toCanonicalNetwork({
     rootConceptId: conceptKey,
     canonicalName: rootNodeTitle,
-    relatedConcepts: graphRelated,
+    relatedConcepts: federatedGraphRelated,
   });
   const graphData = CytoscapeProjectionAdapter.toCytoscapeFormat(canonicalNetwork) as CytoscapeElementData;
 
@@ -158,6 +175,11 @@ export default async function ConceptGraphPage({ params }: PageProps) {
         >
           &larr; Çevirilere Dön
         </Link>
+      </div>
+
+      {/* AĞI İNDİR - ExportEngineService ilk kez UI'a bağlandı (backend/UI kesişim taraması) */}
+      <div className="mb-3">
+        <GraphExportButtons data={graphData} conceptKey={conceptKey} />
       </div>
 
       <ConceptGraphCanvas data={graphData} rootLabel={rootNodeTitle} />

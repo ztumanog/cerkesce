@@ -9,16 +9,16 @@
 
 | Olcut | Deger |
 |---|---|
-| Ana Test Files | 194 |
-| Ana Tests | 1039 |
-| Ana PASS | 1039 |
+| Ana Test Files | 195 |
+| Ana Tests | 1044 |
+| Ana PASS | 1044 |
 | Cert Test Files | 26 |
 | Cert Tests | 102 |
 | Cert PASS | 102 |
 | FAIL | 0 |
 
 **Komut:** `npm test` + `npm run test:cert`
-**Tarih:** 2026-11-23 15:17 (ana) / 02:33 (cert)
+**Tarih:** 2026-11-23 17:41 (ana) / 02:33 (cert)
 
 ---
 
