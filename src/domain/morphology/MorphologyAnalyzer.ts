@@ -232,6 +232,28 @@ export class MorphologyAnalyzer {
     else if (caseRes.case !== 'bare') morphemes.push({ morpheme: caseRes.suffix, type: 'case', glossTr: caseRes.case });
     const counts = this.calculateCounts(morphemes);
 
+// MORPH-04A: Yalın zarflar — eki yok, sözlükte NOUN diye geçebilir
+// Sadece tam eşleşmede gate açılır
+const BARE_ADVERBS = new Set([
+  'пIалъэ', // zaman / o zaman
+  'нэгъуэщ', // başka zaman — listede varsa ekle
+  'иджы', // şimdi — listede varsa ekle
+]);
+
+const normalizedInput = input.trim().toLowerCase();
+if ([...BARE_ADVERBS].some(w => normalizePalochka(w).toLowerCase() === normalizedInput)) {
+  const extra = this.enrichWithLemmaAndRoot(input, normalizedInput, dictEntry);
+  return {
+    input: rawInput, word: rawInput,
+    root: normalizedInput, lemma: extra.lemma,
+    rootId: extra.rootId, rootType: extra.rootType,
+    source: 'adverb',
+adverb: { input: rawInput, stem: normalizedInput, suffix: '', type: 'bare', confidence: 0.95 },    dictionaryEntry: dictEntry, confidence: 0.95,
+    morphemes: [{ morpheme: normalizedInput, type: 'root' }],
+    prefixCount: 0, suffixCount: 0,
+  };
+}
+
     // 6. ZARF / ORTAC - sadece isim guveni dusukse fallback (isim yolunu bozmaz)
     const nounConfidence = dictEntry ? 0.95 : 0.80;
     if (!dictEntry && !derivRes.suffix && caseRes.case === 'bare' && !possessiveRes.possessive && !possessiveRes.plural) {
@@ -255,5 +277,7 @@ export class MorphologyAnalyzer {
     return { input: rawInput, word: rawInput, root: effectiveRoot, lemma: extra.lemma, rootId: extra.rootId, rootType: extra.rootType, source: 'noun', nounCase: caseRes, derivation: derivRes, possessive: possessiveRes.possessive, plural: possessiveRes.plural, dictionaryEntry: dictEntry, confidence: nounConfidence, morphemes, ...counts };
   }
 }
+
+
 
 

@@ -1,4 +1,4 @@
-﻿import { describe, it, expect } from 'vitest';
+import { describe, it, expect } from 'vitest';
 import { MorphologyAnalyzer } from '../../../domain/morphology/MorphologyAnalyzer';
 
 describe('MorphologyAnalyzer - Güncel Mimari Testleri', () => {
@@ -32,3 +32,19 @@ describe('MorphologyAnalyzer - Güncel Mimari Testleri', () => {
         expect(r.suffixCount).toBe(0);
     });
 });
+describe('MORPH-04A Adverb Gate', () => {
+    const analyzer = new MorphologyAnalyzer();
+
+    it('пIалъэ → ADVERB olmalı, NOUN değil', () => {
+        const r = analyzer.analyze('пIалъэ');
+        expect(r.source).toBe('adverb');
+        expect(r.source).toBe('adverb');
+    });
+
+    it('sözlükteki NOUN, adverb listesinde yoksa NOUN kalmalı', () => {
+        const r = analyzer.analyze('гуфӀэ');
+        expect(r.source).toBe('noun');
+    });
+});
+
+
