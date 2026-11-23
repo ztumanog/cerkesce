@@ -8,6 +8,7 @@
 
 import { describe, it, expect } from "vitest";
 import { toExportNetwork } from "../../ui/components/discovery/GraphExport";
+import { optimizeGraphDataForViewport } from "../../ui/components/discovery/graphExportUtils";
 import { ExportEngineService } from "../../domain/analytics/services/ExportEngineService";
 import type { CytoscapeElementData } from "../../ui/components/discovery/ConceptGraphCanvas";
 
@@ -62,5 +63,41 @@ describe("ExportEngineService uçtan uca (GraphExport kullanım senaryosu)", () 
     const parsed = JSON.parse(r.content);
     expect(parsed.schemaVersion).toBe("1.0");
     expect(parsed.network.nodes).toHaveLength(3);
+  });
+});
+
+describe("optimizeGraphDataForViewport - LargeGraphOptimizerService bağlantısı", () => {
+  const bigGraph: CytoscapeElementData = {
+    nodes: Array.from({ length: 80 }, (_, i) => ({
+      data: { id: `N${i}`, label: `Düğüm ${i}`, nodeType: i === 0 ? "ROOT" : "CHILD" },
+    })),
+    edges: Array.from({ length: 79 }, (_, i) => ({
+      // Yıldız topolojisi: N0 merkez, diğerleri onunla bağlı (yüksek derece)
+      data: { source: "N0", target: `N${i + 1}`, relationType: "CHILD" },
+    })),
+  };
+
+  it("eşik altında: veri dokunulmaz, pruned null", () => {
+    const small: CytoscapeElementData = {
+      nodes: [{ data: { id: "A" } }, { data: { id: "B" } }],
+      edges: [{ data: { source: "A", target: "B" } }],
+    };
+    const r = optimizeGraphDataForViewport(small, 60);
+    expect(r.data).toBe(small);
+    expect(r.pruned).toBeNull();
+  });
+
+  it("eşik üstünde: en yüksek dereceli düğümler kalır, zengin veri korunur", () => {
+    const r = optimizeGraphDataForViewport(bigGraph, 10);
+    expect(r.pruned).toEqual({ visible: 10, total: 80 });
+    expect(r.data.nodes).toHaveLength(10);
+    // Merkez düğüm (N0, 79 bağ) asla atılmamalı
+    expect(r.data.nodes.some((n) => String(n.data.id) === "N0")).toBe(true);
+    // nodeType gibi zengin alanlar korunmalı
+    const root = r.data.nodes.find((n) => String(n.data.id) === "N0");
+    expect(root?.data.nodeType).toBe("ROOT");
+    // Kenarlar yalnızca görünür düğümler arasında
+    const ids = new Set(r.data.nodes.map((n) => String(n.data.id)));
+    expect(r.data.edges.every((e) => ids.has(String(e.data.source)) && ids.has(String(e.data.target)))).toBe(true);
   });
 });

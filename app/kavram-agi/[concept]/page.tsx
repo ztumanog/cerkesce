@@ -15,6 +15,8 @@ import { normalizePalochka } from '@/domain/utils/normalizePalochka';
 import { FederatedGraphService } from '@/domain/federation/services/FederatedGraphService';
 import { DiscoveryFacade } from '@/domain/discovery/services/DiscoveryFacade';
 import { FileBasedConceptGraphRepository } from '@/repository/FileBasedConceptGraphRepository';
+import { NetworkAnalyticsService } from '@/domain/analytics/services/NetworkAnalyticsService';
+import { toExportNetwork, optimizeGraphDataForViewport } from '@/ui/components/discovery/graphExportUtils';
 
 interface PageProps {
   params: Promise<{ concept: string }>; // veya Next 13/14'e göre senkron alıyorsan düzeltilebilir
@@ -206,7 +208,20 @@ const rootNodeTitle = `${enLabel} [${conceptKey}]`;
     canonicalName: rootNodeTitle,
     relatedConcepts: federatedGraphRelated,
   });
-  const graphData = CytoscapeProjectionAdapter.toCytoscapeFormat(canonicalNetwork) as CytoscapeElementData;
+  const fullGraphData = CytoscapeProjectionAdapter.toCytoscapeFormat(canonicalNetwork) as CytoscapeElementData;
+
+  // LargeGraphOptimizerService: graf 60 düğümü aşarsa viewport için budanır
+  // (karar otoritesi servis — derece sıralaması; zengin düğüm verisi korunur).
+  const { data: graphData, pruned } = optimizeGraphDataForViewport(fullGraphData, 60);
+
+  // NetworkAnalyticsService: görünen ağın metrikleri (düğüm/kenar, yoğunluk, merkez kavram).
+  const networkMetrics = NetworkAnalyticsService.analyzeNetwork(toExportNetwork(graphData));
+  const degreeCentrality: Record<string, number> = networkMetrics.degreeCentrality || {};
+  const hubEntry = Object.entries(degreeCentrality).sort((a, b) => b[1] - a[1])[0];
+  const hubNode = hubEntry
+    ? graphData.nodes.find((n) => String(n.data.id) === hubEntry[0])
+    : undefined;
+  const hubLabel = hubNode?.data.label || hubEntry?.[0] || '';
 
   return (
   <main className="min-h-[calc(100vh-64px)] bg-slate-950 px-4 pt-24 pb-6 sm:px-6 lg:px-8">
@@ -224,6 +239,29 @@ const rootNodeTitle = `${enLabel} [${conceptKey}]`;
       {/* AĞI İNDİR - ExportEngineService ilk kez UI'a bağlandı (backend/UI kesişim taraması) */}
       <div className="mb-3">
         <GraphExportButtons data={graphData} conceptKey={conceptKey} />
+      </div>
+
+      {/* AĞ METRİKLERİ - NetworkAnalyticsService + LargeGraphOptimizerService (kesişim taraması) */}
+      <div className="mb-3 flex flex-wrap items-center gap-x-4 gap-y-1 rounded-lg border border-slate-700/60 bg-slate-900/60 px-3 py-2 text-xs text-slate-400">
+        <span className="font-semibold text-slate-300">Ağ Metrikleri</span>
+        <span>{networkMetrics.nodeCount} düğüm</span>
+        <span>{networkMetrics.edgeCount} bağ</span>
+        <span>yoğunluk {(networkMetrics.density ?? 0).toFixed(3)}</span>
+        {hubEntry && hubEntry[1] > 0 && (
+          <span>
+            merkez:{' '}
+            <span className="font-semibold text-slate-300">{hubLabel}</span>{' '}
+            ({hubEntry[1]} bağ)
+          </span>
+        )}
+        {networkMetrics.isolatedNodes.length > 0 && (
+          <span>{networkMetrics.isolatedNodes.length} izole düğüm</span>
+        )}
+        {pruned && (
+          <span className="text-amber-400" title="LargeGraphOptimizerService: düşük dereceli düğümler görünürlük için budandı">
+            ⚡ {pruned.total - pruned.visible} düğüm performans için budandı (görünen: {pruned.visible}/{pruned.total})
+          </span>
+        )}
       </div>
 
       <ConceptGraphCanvas data={graphData} rootLabel={rootNodeTitle} />

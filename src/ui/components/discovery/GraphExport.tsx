@@ -17,25 +17,13 @@
 
 import React, { useState } from 'react';
 import { Download, FileJson, FileCode2 } from 'lucide-react';
-import { ExportEngineService, GenericConceptNetworkDTO, ExportFormat } from '@/domain/analytics/services/ExportEngineService';
+import { ExportEngineService, ExportFormat } from '@/domain/analytics/services/ExportEngineService';
 import type { CytoscapeElementData } from './ConceptGraphCanvas';
+import { toExportNetwork } from './graphExportUtils';
 
-/** Cytoscape elemanlarını ExportEngine'in beklediği genel ağ DTO'suna çevirir (saf, test edilebilir). */
-export function toExportNetwork(data: CytoscapeElementData): GenericConceptNetworkDTO {
-  return {
-    nodes: (data?.nodes || []).map((n) => ({
-      id: String(n.data.id),
-      label: n.data.label !== undefined && n.data.label !== null ? String(n.data.label) : String(n.data.id),
-      nodeType: n.data.nodeType,
-      dialect: n.data.dialect,
-    })),
-    edges: (data?.edges || []).map((e) => ({
-      source: String(e.data.source),
-      target: String(e.data.target),
-      relationType: e.data.relationType,
-    })),
-  };
-}
+// toExportNetwork graphExportUtils.ts'e taşındı ('use client' export'ları server
+// component'ten çağrılamadığı için). Geriye dönük uyumluluk için yeniden export:
+export { toExportNetwork };
 
 function safeFileName(conceptKey: string): string {
   return `kavram-agi-${String(conceptKey || 'ag').replace(/[^a-zA-Z0-9_-]/g, '_')}`;
