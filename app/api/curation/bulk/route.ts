@@ -79,6 +79,10 @@ export async function POST(req: Request) {
     }
     if (!ok.length) return NextResponse.json({ ok: false, errors, warnings }, { status: 400 });
 
+    // AUDIT-01: Yan etkiler (aile/kok senkronu) YALNIZCA basariyla uygulanan kayitlar icin calisir.
+    // curationValidate'in reddettigi kayitlar lexemes.json'a yazilmaz; yan etki de uretmez.
+    const appliedIds = new Set(ok);
+
     // Aile senkronu - wordFamilyId degisen lexemeyi eski aileden cikar, yenisine ekle
     try {
       const famPath = FAM_PATH;
@@ -89,6 +93,7 @@ export async function POST(req: Request) {
         const famById = new Map(famList.map((f: any) => [String(f.id), f]));
         let famChanged = false;
         for (const u of updates) {
+          if (!appliedIds.has(String(u.id))) continue;
           const nid = String(u.id);
           const newFam = String((u.patch as any)?.wordFamilyId || "");
           const oldFam = oldFamById.get(nid) || "";
@@ -110,6 +115,7 @@ export async function POST(req: Request) {
         const hasFam = new Set(famList2.map((f: any) => String(f.id)));
         let famChanged2 = false;
         for (const u of updates) {
+          if (!appliedIds.has(String(u.id))) continue;
           const rec: any = byId.get(String(u.id));
           if (!rec) continue;
           const fid = s(rec.wordFamilyId || "").trim();
@@ -137,6 +143,7 @@ export async function POST(req: Request) {
         const hasRoot = new Set(rootsList.map((r: any) => String(r.id)));
         let rootsChanged = false;
         for (const u of updates) {
+          if (!appliedIds.has(String(u.id))) continue;
           const rec: any = byId.get(String(u.id));
           if (!rec || !Array.isArray(rec.rootIds)) continue;
           const form = s(rec.form || rec.dialectVariants?.adyghe || rec.dialectVariants?.kabardian || "").trim();
