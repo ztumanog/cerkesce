@@ -14,7 +14,7 @@ import { CytoscapeProjectionAdapter } from '@/domain/discovery/adapters/Cytoscap
 import { normalizePalochka } from '@/domain/utils/normalizePalochka';
 import { FederatedGraphService } from '@/domain/federation/services/FederatedGraphService';
 import { DiscoveryFacade } from '@/domain/discovery/services/DiscoveryFacade';
-import { InMemoryConceptGraphRepository } from '@/repository/InMemoryConceptGraphRepository';
+import { FileBasedConceptGraphRepository } from '@/repository/FileBasedConceptGraphRepository';
 
 interface PageProps {
   params: Promise<{ concept: string }>; // veya Next 13/14'e göre senkron alıyorsan düzeltilebilir
@@ -68,11 +68,12 @@ export default async function ConceptGraphPage({ params }: PageProps) {
   const enLabel = String(meta?.en || inferredEn || decodedConcept).trim();
 
   // --- Görev 1: Kavram keşif zinciri (DiscoveryFacade) ---
-  // Not: InMemoryConceptGraphRepository ~57 kavramlık tohumlanmış graf içerir; kavram orada
-  // yoksa veya mapper eşleyemezse boş döner ve sayfa mevcut mantıkla devam eder (fallback).
+  // Not: FileBasedConceptGraphRepository komşuları kürasyon katmanı (~57 tohum kavram) +
+  // lexemes.json veri katmanından (ortak aile/kök) türetir. Mapper eşleyemezse boş döner ve
+  // sayfa mevcut mantıkla devam eder (fallback).
   let discoveryRelated: Array<{ conceptId: string; score: number }> = [];
   try {
-    const discoveryFacade = new DiscoveryFacade(new InMemoryConceptGraphRepository());
+    const discoveryFacade = new DiscoveryFacade(new FileBasedConceptGraphRepository());
     const discovery = await discoveryFacade.explore(conceptKey, {
       maxDepth: 2,
       hints: [decodedConcept, String(meta?.tr || ''), enLabel, ...seedWords.slice(0, 3)].filter(Boolean),

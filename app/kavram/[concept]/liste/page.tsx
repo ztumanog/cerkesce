@@ -11,7 +11,7 @@ import { ConceptGraphCanvas, CytoscapeElementData } from '@/ui/components/discov
 import { DialectConverter } from '@/domain/linguistic/DialectConverter';
 import { normalizePalochka } from '@/domain/utils/normalizePalochka';
 import { DiscoveryFacade } from '@/domain/discovery/services/DiscoveryFacade';
-import { InMemoryConceptGraphRepository } from '@/repository/InMemoryConceptGraphRepository';
+import { FileBasedConceptGraphRepository } from '@/repository/FileBasedConceptGraphRepository';
 
 interface PageProps {
   params: Promise<{ concept: string }>;
@@ -129,11 +129,12 @@ export default async function ConceptDetailPage({ params }: PageProps) {
   const itemIds = new Set(allItems.map((l) => l.id));
 
   // --- Görev 1: Kavram keşif zinciri (DiscoveryFacade) ---
-  // Not: InMemoryConceptGraphRepository ~57 kavramlık tohumlanmış graf içerir; kavram orada
-  // yoksa veya mapper eşleyemezse boş döner ve sayfa mevcut mantıkla devam eder (fallback).
+  // Not: FileBasedConceptGraphRepository komşuları kürasyon katmanı (~57 tohum kavram) +
+  // lexemes.json veri katmanından (ortak aile/kök) türetir. Mapper eşleyemezse boş döner ve
+  // sayfa mevcut mantıkla devam eder (fallback).
   let discoveryRelated: Array<{ conceptId: string; score: number; relationType?: string }> = [];
   try {
-    const discoveryFacade = new DiscoveryFacade(new InMemoryConceptGraphRepository());
+    const discoveryFacade = new DiscoveryFacade(new FileBasedConceptGraphRepository());
     const discovery = await discoveryFacade.explore(conceptKey, {
       maxDepth: 2,
       hints: [decodedConcept, trLabel, ...seedWords.slice(0, 3)].filter(Boolean),

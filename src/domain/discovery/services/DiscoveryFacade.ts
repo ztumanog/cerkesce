@@ -18,6 +18,7 @@ export class DiscoveryFacade {
   private ranker: KnowledgeRanker;
   private clusterer: ContextClusterer;
   private assembler: DiscoveryAssembler;
+  private graphRepo: any;
 
   constructor(
     graphRepo: any,
@@ -29,6 +30,7 @@ export class DiscoveryFacade {
       const adapter = createLexemeLookupAdapter();
       this.mapper = new QuerySemanticMapper({ conceptLookupPort: adapter });
     }
+    this.graphRepo = graphRepo;
     this.traversal = new GraphTraversalService(graphRepo);
     this.ranker = new KnowledgeRanker();
     this.clusterer = new ContextClusterer();
@@ -38,9 +40,17 @@ export class DiscoveryFacade {
   public async explore(queryOrConceptId: string, options?: ExplorationOptions): Promise<DiscoveryResultDTO> {
     const isConceptDirect = queryOrConceptId.startsWith('01A') || queryOrConceptId.startsWith('CONCEPT_');
 
+    // Gorev 1b: sorgu zaten graf dugumuyse (komsusu varsa) mapper'a gitme.
+    // Sorgu-first esleme hem yanlis eslemelere (ABUNDANCE -> LIFE_PARTNER gibi) hem de
+    // kavram anahtarinin mapper'ta kaybolmasina neden oluyordu. Dugum ise dogrudan kullan.
+    const upperQuery = String(queryOrConceptId || '').trim().toUpperCase();
+    const isGraphNode = !isConceptDirect
+      && typeof this.graphRepo?.getNeighbors === 'function'
+      && this.graphRepo.getNeighbors(upperQuery).length > 0;
+
     let targetConceptId = queryOrConceptId;
 
-    if (!isConceptDirect) {
+    if (!isConceptDirect && !isGraphNode) {
       // Once query'yi dene, sonra hints'leri dene
       const queriesToTry = [queryOrConceptId, ...(options?.hints || [])].filter(Boolean);
       let mapped: any = { conceptId: undefined };
@@ -63,6 +73,8 @@ export class DiscoveryFacade {
         } as DiscoveryResultDTO;
       }
       targetConceptId = mapped.conceptId;
+    } else if (isGraphNode) {
+      targetConceptId = upperQuery;
     }
 
     const startTime = Date.now();
