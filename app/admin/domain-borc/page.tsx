@@ -150,7 +150,7 @@ export default function DomainBorcPage() {
   const progress = Math.round((totalIntegrated / totalFiles) * 100);
 
   return (
-    <Theme appearance="dark" accentColor="violet" grayColor="slate" scaling="100%">
+    <Theme accentColor="violet" grayColor="slate" scaling="100%">
       {toast && (
         <Box
           style={{

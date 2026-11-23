@@ -3,10 +3,9 @@
  * Layer: UI
  */
 import "@radix-ui/themes/styles.css";
-import { Theme } from '@radix-ui/themes';
 import type { Metadata } from 'next';
-import Header from '@/components/layout/Header';
-import { Navbar } from '@/components/Navbar';
+import UnifiedHeader from '@/components/layout/UnifiedHeader';
+import { ThemeSync } from '@/components/ThemeSync';
 import { FooterWrapper } from '@/components/layout/FooterWrapper';
 import { Toaster } from 'sonner';
 import BildirimBaslatici from '@/components/features/BildirimBaslatici';
@@ -50,21 +49,19 @@ export default function RootLayout({
         suppressHydrationWarning
         className="flex flex-col min-h-screen bg-white dark:bg-slate-950 text-slate-900 dark:text-slate-50 transition-colors duration-200 antialiased"
       >
-        {/* RADIX THEME SARMALAYICISI BURADA BAŞLIYOR */}
-        <Theme accentColor="indigo" grayColor="slate" radius="large">
+        {/* RADIX THEME SARMALAYICISI BURADA BAŞLIYOR (Parti 3-B: ThemeSync, html.dark'ı izler) */}
+        <ThemeSync>
           <TemaBaslatici />
           <TercihProvider>
-            {/* Yeni Üst Menü */}
-            <Navbar />
-            
             <SWRegister />
             <BildirimBaslatici />
-            <Header />
+            {/* Birleşik üst çubuk (Parti 2-C): menü + erişilebilirlik tek bileşende */}
+            <UnifiedHeader />
             <main className="flex-1 w-full">{children}</main>
             <FooterWrapper />
             <Toaster richColors position="bottom-right" />
           </TercihProvider>
-        </Theme>
+        </ThemeSync>
         {/* RADIX THEME SARMALAYICISI BURADA BİTİYOR */}
       </body>
     </html>

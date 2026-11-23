@@ -26,7 +26,7 @@ import Link from "next/link";
 import {
   Theme, Container, Flex, Box, Text, Heading, TextField, Button, Card, Badge, Separator, IconButton, Tooltip, SegmentedControl, Spinner,
 } from "@radix-ui/themes";
-import { MagnifyingGlassIcon, HeartIcon, Cross2Icon, SunIcon, MoonIcon } from "@radix-ui/react-icons";
+import { MagnifyingGlassIcon, HeartIcon, Cross2Icon } from "@radix-ui/react-icons";
 import { AkilliKlavye } from "@/components/features/AkilliKlavye";
 import "./arama.css";
 import { getDialectMapper } from "@/lib/dialectRules";
@@ -59,7 +59,6 @@ export default function AramaClient() {
   const [searched, setSearched] = useState(false);
   const [error, setError] = useState("");
   const [ms, setMs] = useState(0);
-  const [appearance, setAppearance] = useState<"light" | "dark">("light");
   const [favorites, setFavorites] = useState<Set<string>>(() => new Set());
   const [showFavorites, setShowFavorites] = useState(false);
   const [favoritesLoaded, setFavoritesLoaded] = useState(false);
@@ -71,10 +70,6 @@ export default function AramaClient() {
   const requestIdRef = useRef(0);
   const initialSearchDoneRef = useRef(false);
   const inputRef = useRef<HTMLInputElement>(null);
-
-  useEffect(() => {
-    try { setAppearance(window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"); } catch {}
-  }, []);
 
   useEffect(() => {
     try {
@@ -179,18 +174,13 @@ export default function AramaClient() {
   const toggleFavorite = (id: string) => {
     setFavorites((p: Set<string>) => { const n = new Set(p); if (n.has(id)) n.delete(id); else n.add(id); return n; });
   };
-  const toggleAppearance = () => setAppearance((c: "light" | "dark") => (c === "dark" ? "light" : "dark"));
-
   return (
-    <Theme accentColor="indigo" grayColor="slate" radius="large" scaling="110%" appearance={appearance} hasBackground>
+    <Theme accentColor="indigo" grayColor="slate" radius="large" scaling="110%" hasBackground>
       <Box className="arama-shell">
         <a className="skip-link" href="#icerik">İçeriğe geç</a>
         <Container size="3" className="arama-container">
           <Flex justify="end" align="center" gap="2" className="topbar-mini">
             <Badge variant="soft" color="indigo" highContrast>MVP-1</Badge>
-            <Button variant="soft" size="2" onClick={toggleAppearance} aria-pressed={appearance === "dark"} aria-label={appearance === "dark" ? "Açık temaya geç" : "Koyu temaya geç"}>
-              {appearance === "dark" ? (<><SunIcon aria-hidden="true" /> Açık tema</>) : (<><MoonIcon aria-hidden="true" /> Koyu tema</>)}
-            </Button>
           </Flex>
           <main id="icerik">
             <Card variant="surface" className="search-panel">

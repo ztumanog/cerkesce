@@ -58,7 +58,7 @@ export default function ModerasyonPage() {
   };
 
   return (
-    <Theme accentColor="violet" radius="large" appearance="light">
+    <Theme accentColor="violet" radius="large">
       <div className="min-h-screen bg-gray-50 p-6">
         {/* Header */}
         <div className="flex justify-between items-center mb-6 bg-white p-4 rounded-xl shadow-sm border">
