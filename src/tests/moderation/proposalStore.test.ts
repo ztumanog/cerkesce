@@ -34,7 +34,14 @@ function installFsMocks(files: Record<string, string>) {
   vi.spyOn(fs, "copyFileSync").mockImplementation(((from: any, to: any) => {
     writes[String(to)] = String(files[String(from)] ?? "");
   }) as any);
-  vi.spyOn(fs, "existsSync").mockImplementation(((p: any) => String(p) in files || realExists(p)) as any);
+  vi.spyOn(fs, "existsSync").mockImplementation(((p: any) => {
+    const key = String(p);
+    // PROPOSALS_PATH gercek dosyasi ASLA okunmamali - test izolasyonu.
+    // (Uretimde dosya gercekten varsa - or. arayuzden gonderilmis oneri -
+    // mock donusu olmasa yukleme gercek dosyadan yapilir ve test kirilir.)
+    if (key === PROPOSALS_PATH) return key in files;
+    return key in files || realExists(p);
+  }) as any);
   vi.spyOn(fs, "statSync").mockImplementation(((p: any, ...rest: any[]) => {
     const key = String(p);
     if (key in files) return { mtimeMs: key.length + files[key].length };
