@@ -140,18 +140,23 @@ export default async function ConceptGraphPage({ params }: PageProps) {
     }
   }
 
-  // Federasyon: Doğu Kabarday + Batı Adige düğümlerini id ile tekilleştir
+  // Federasyon: Doğu Kabarday (KBD) + Batı Adige (ADY) düğümlerini id ile tekilleştir.
+  // Not: LexemeDialect kanonik değerleri 'KBD' | 'ADY' | 'COMMON' (LexemeIdentity.normalizeDialect);
+  // FederatedGraphService ise 'EASTERN_KABARDIAN' | 'WESTERN_ADYGHE' bekler — eşleme burada yapılır.
+  // UYARI: graphRelated yukarıda seenIds ile zaten tekilleştirildiği için mergeSources pratikte
+  // ayrık kümeleri birleştirir (no-op). Gerçek federasyon değeri, ayrı kaynak sözlükler
+  // eklendiğinde ortaya çıkar; bağlantı o hazırlık içindir.
 const kabardianNodes = graphRelated
-  .filter((n) => String(n.dialect || '').toUpperCase() === 'EASTERN_KABARDIAN')
+  .filter((n) => String(n.dialect || '').toUpperCase() === 'KBD')
   .map((n) => ({ id: String(n.conceptId), dialect: 'EASTERN_KABARDIAN' as const, label: String(n.label) }));
 const adygheNodes = graphRelated
-  .filter((n) => String(n.dialect || '').toUpperCase() === 'WESTERN_ADYGHE')
+  .filter((n) => String(n.dialect || '').toUpperCase() === 'ADY')
   .map((n) => ({ id: String(n.conceptId), dialect: 'WESTERN_ADYGHE' as const, label: String(n.label) }));
 const mergedFederated = FederatedGraphService.mergeSources([kabardianNodes, adygheNodes]);
 const mergedIds = new Set(mergedFederated.map((n) => n.id));
 const federatedGraphRelated = graphRelated.filter((n) => {
   const d = String(n.dialect || '').toUpperCase();
-  if (d !== 'EASTERN_KABARDIAN' && d !== 'WESTERN_ADYGHE') return true;
+  if (d !== 'KBD' && d !== 'ADY') return true;
   return mergedIds.has(String(n.conceptId));
 });
 
