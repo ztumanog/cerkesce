@@ -53,9 +53,9 @@ describe("curationValidate - Boş Concept", () => {
   it("undefined denetlenmez - tasarım gereği: yalnızca girilen alan denetlenir", () => {
     expect(hasNoError({})).toBe(true);
   });
-  it("BULGU: null String(null) = 'null' oluyor - P2-FIX-PLAN kararı bekliyor", () => {
+  it("DÜZELTİLDİ: null artık boş sayılıyor", () => {
     const issues = validateCuration({ conceptId: null as unknown as string });
-    expect(issues.filter((i) => i.field === "conceptId")).toHaveLength(0);
+    expect(issues.filter((i) => i.field === "conceptId")).toHaveLength(1);
   });
 });
 
@@ -91,3 +91,4 @@ describe("isCurationValid", () => {
     expect(isCurationValid({ tr: "a?g?z" })).toBe(false);
   });
 });
+

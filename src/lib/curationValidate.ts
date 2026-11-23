@@ -35,18 +35,18 @@ function stripCrossRefs(s: string): string {
 export function validateCuration(input: CurationInput): CurationIssue[] {
   const issues: CurationIssue[] = [];
 
-  if (input.root !== undefined && !String(input.root).trim()) {
+  if (input.root !== undefined && !String(input.root ?? "").trim()) {
     issues.push({ field: "root", message: "Kok bos olamaz", severity: "error" });
   }
-  if (input.family !== undefined && !String(input.family).trim()) {
+  if (input.family !== undefined && !String(input.family ?? "").trim()) {
     issues.push({ field: "family", message: "Aile bos olamaz", severity: "error" });
   }
-  if (input.concept !== undefined && !String(input.concept).trim()) {
+  if (input.concept !== undefined && !String(input.concept ?? "").trim()) {
     issues.push({ field: "concept", message: "Kavram bos olamaz", severity: "error" });
   }
 
   if (input.tr !== undefined) {
-    const tr = String(input.tr);
+    const tr = String(input.tr ?? "");
     if (MID_WORD_Q.test(tr)) {
       issues.push({ field: "tr", message: "tr'de kelime ortasinda ? var (a?g?z gibi). Sondaki soru (Ne?, Kim?) serbest.", severity: "error" });
     }
@@ -54,14 +54,14 @@ export function validateCuration(input: CurationInput): CurationIssue[] {
 
   for (const field of ["literalMeaning", "notes"] as const) {
     if (input[field] === undefined) continue;
-    const cleaned = stripCrossRefs(String(input[field]));
+    const cleaned = stripCrossRefs(String(input[field] ?? ""));
     if (HTML_TAG.test(cleaned)) {
       issues.push({ field, message: `${field} icinde gercek / yarim HTML var (<<...>> sayilmaz)`, severity: "error" });
     }
   }
 
   if (input.conceptId !== undefined) {
-    const cid = String(input.conceptId).trim();
+    const cid = input.conceptId == null ? "" : String(input.conceptId).trim();
     if (!cid) {
       issues.push({ field: "conceptId", message: "conceptId bos olamaz", severity: "error" });
     } else if (input.allowedConcepts && input.allowedConcepts.length > 0 && !input.allowedConcepts.includes(cid)) {
@@ -75,3 +75,4 @@ export function validateCuration(input: CurationInput): CurationIssue[] {
 export function isCurationValid(input: CurationInput): boolean {
   return validateCuration(input).every((i) => i.severity !== "error");
 }
+

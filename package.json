@@ -15,7 +15,7 @@
     "test:all": "npm test && npm run test:cert",
     "ts-node": "ts-node",
     "lint": "eslint",
-    "check:unused": "bash scripts/check-unused-modules.sh"
+    "check:unused": "node scripts/check-unused-modules.mjs"
   },
   "dependencies": {
     "@capacitor/android": "^8.5.0",
@@ -74,3 +74,4 @@
     "unrs-resolver@1.12.2": true
   }
 }
+

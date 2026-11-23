@@ -1,4 +1,4 @@
-﻿# Guncel Test Baseline
+# Guncel Test Baseline
 
 **Tarih:** 2026-11-23
 **Durum:** KANONIK (SSOT)
@@ -9,16 +9,16 @@
 
 | Olcut | Deger |
 |---|---|
-| Ana Test Files | 193 |
-| Ana Tests | 1006 |
-| Ana PASS | 1006 |
+| Ana Test Files | 194 |
+| Ana Tests | 1039 |
+| Ana PASS | 1039 |
 | Cert Test Files | 26 |
 | Cert Tests | 102 |
 | Cert PASS | 102 |
 | FAIL | 0 |
 
 **Komut:** `npm test` + `npm run test:cert`
-**Tarih:** 2026-11-23 02:21 (ana) / 02:33 (cert)
+**Tarih:** 2026-11-23 15:17 (ana) / 02:33 (cert)
 
 ---
 
@@ -47,9 +47,11 @@
 | 2026-11-11 | 1048 (+6 latinNormalize) | +20 | MVP-2: latinNormalize testleri (MVP-2-KAPANIS.md) |
 | 2026-11-13 | 1085 | +11 | SSOT ConceptId migration (SSOT_MIGRATION_FINAL_REPORT_2026-11-13.md) |
 | **2026-11-23** | **1006 (+102 cert)** | **-79** | Budanan altyapı servisleriyle ilişiksiz testler silindi (commit 3bf3f96, 26 yetim test) + sonraki test düzenlemeleri |
+| 2026-11-23 (öğleden sonra) | 1040 | +34 | curationValidate birim testleri (+32), bulk-route AUDIT-02 senaryoları, gün içindeki test düzenlemeleri |
+| **2026-11-23 15:17** | **1039 (+102 cert)** | **-1** | Yetim Hotfix001_DataLoading.test.ts silindi (dictionaryService modülüyle birlikte — check-unused-modules temizliği) |
 
 > **Not (2026-11-23):** Ana suit `npm test` (vitest run), sertifika suiti `npm run test:cert`
-> (vitest.cert.config.ts) ayrı çalışır. Toplam = 1006 + 102 = 1108.
+> (vitest.cert.config.ts) ayrı çalışır. Toplam = 1039 + 102 = 1141.
 
 ---
 
@@ -72,4 +74,5 @@ Asagidaki belgeler tarihsel test sayilari icerir, degistirilmez:
 ---
 
 *Bu belge SSOT'dur. Guncelleme: yeni test sonucu alindiginda.*
+
 

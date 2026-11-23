@@ -100,7 +100,7 @@ kullanılmıyor (kullanılmayan export — bkz. Bölüm 5 CI önerisi kapsamı).
 
 ## 5. Öneri — Bağlanmamış Modül CI Kontrolü
 
-**Araç:** `scripts/check-unused-modules.sh` (bu audit ile birlikte eklendi, `npm run check:unused`).
+**Araç:** `scripts/check-unused-modules.mjs` (bu audit ile birlikte eklendi, `npm run check:unused`).
 
 **Nasıl çalışır:**
 
