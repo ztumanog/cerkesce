@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import fs from "fs";
 import path from "path";
+import { validateCuration } from "../../../../src/lib/curationValidate";
 const LEX_PATH = path.join(process.cwd(), "public/data/linguistic/lexemes.json");
 const ROOTS_PATH = path.join(process.cwd(), "public/data/linguistic/roots.json");
 const FAM_PATH = path.join(process.cwd(), "public/data/linguistic/word_families.json");
@@ -14,12 +15,15 @@ export async function POST(req: Request) {
     const data = JSON.parse(raw) as any[];
     const list = Array.isArray(data) ? data : (data as any).lexemes ?? [];
     const byId = new Map(list.map((x: any) => [String(x.id), x]));
+    // KARAR-16: conceptId turetilmis kavram listesinde olmali - liste mevcut kayitlardan turetilir.
+    const allowedConcepts: string[] = Array.from(new Set(list.map((x: any): string => String(x.conceptId || "").trim()).filter(Boolean)));
     const STRUCT = ["conceptId", "wordFamilyId", "rootIds"];
     const hasStructural = updates.some(u => Object.keys(u.patch || {}).some(k => STRUCT.includes(k)));
     if (hasStructural && !body.confirmStructural) {
       return NextResponse.json({ ok: false, error: "STRUCTURAL_CONFIRM_REQUIRED", detail: "conceptId / wordFamilyId / rootIds toplu degisimi icin ikinci onay gerekli." }, { status: 400 });
     }
     const errors: Array<{ id: string; error: string }> = [];
+    const warnings: Array<{ id: string; warning: string }> = [];
     const oldFamById = new Map<string, string>();
     for (const u of updates) { const r0 = byId.get(String(u.id)); if (r0) oldFamById.set(String(u.id), String((r0 as any).wordFamilyId || "")); }
     const ok: string[] = [];
@@ -27,9 +31,33 @@ export async function POST(req: Request) {
       const rec = byId.get(String(u.id));
       if (!rec) { errors.push({ id: String(u.id), error: "ID bulunamadi" }); continue; }
       const patch = u.patch || {};
-      const trCand = (patch as any).tr ?? (patch as any).translations?.tr;
-      if (typeof trCand === "string" && /[A-Za-zçğıöşüÇĞİÖŞÜ]\?[A-Za-zçğıöşüÇĞİÖŞÜ]/.test(trCand)) { errors.push({ id: String(u.id), error: "tr icinde kodlama ? var" }); continue; }
-      const litCand = (patch as any).literalMeaning; if (typeof litCand === "string" && String(litCand).replace(/<<[^>]+>>/g, "").includes("<")) { errors.push({ id: String(u.id), error: "literalMeaning icinde HTML var" }); continue; }
+      // KARAR-16 dogrulama - tek otorite: src/lib/curationValidate.ts
+      // Birlestirilmis (yazma sonrasi) deger uzerinden denetlenir.
+      const patchKeys = new Set(Object.keys(patch));
+      const patchTr = patchKeys.has("tr") ? s((patch as any).tr)
+        : (patchKeys.has("translations") && (patch as any).translations && typeof (patch as any).translations.tr === "string") ? (patch as any).translations.tr
+        : undefined;
+      const merged = {
+        tr: patchTr !== undefined ? patchTr : s((rec as any).translations?.tr ?? (rec as any).tr),
+        literalMeaning: patchKeys.has("literalMeaning") ? s((patch as any).literalMeaning) : s((rec as any).literalMeaning),
+        notes: patchKeys.has("notes") ? s((patch as any).notes) : s((rec as any).notes),
+        conceptId: patchKeys.has("conceptId") ? s((patch as any).conceptId) : s((rec as any).conceptId),
+        allowedConcepts,
+      };
+      const issues = validateCuration(merged).filter(i => i.severity === "error");
+      if (issues.length) {
+        // Yazilan alanlar katidir (bloklar); yazilmayan eski kirli degerler yalnizca uyaridir (bloklamaz).
+        const trPatched = patchTr !== undefined;
+        const blocking = issues.filter(i =>
+          i.field === "conceptId" ||
+          (i.field === "tr" && trPatched) ||
+          (i.field === "literalMeaning" && patchKeys.has("literalMeaning")) ||
+          (i.field === "notes" && patchKeys.has("notes"))
+        );
+        const soft = issues.filter(i => !blocking.includes(i));
+        if (soft.length) warnings.push({ id: String(u.id), warning: "Eski kayitta kural disi deger var (yazilan alan degil): " + soft.map(i => i.message).join("; ") });
+        if (blocking.length) { errors.push({ id: String(u.id), error: blocking.map(i => i.message).join("; ") }); continue; }
+      }
       for (const [k, v] of Object.entries(patch)) {
         if (k === "translations" && v && typeof v === "object") {
           (rec as Record<string, unknown>).translations = {
@@ -49,7 +77,7 @@ export async function POST(req: Request) {
       }
       ok.push(String(u.id));
     }
-    if (!ok.length) return NextResponse.json({ ok: false, errors }, { status: 400 });
+    if (!ok.length) return NextResponse.json({ ok: false, errors, warnings }, { status: 400 });
 
     // Aile senkronu - wordFamilyId degisen lexemeyi eski aileden cikar, yenisine ekle
     try {
@@ -150,7 +178,7 @@ export async function POST(req: Request) {
     fs.copyFileSync(LEX_PATH, bak);
     const out = Array.isArray(data) ? list : { ...(data as any), lexemes: list };
     fs.writeFileSync(LEX_PATH, JSON.stringify(out, null, 2), "utf-8");
-    return NextResponse.json({ ok: true, applied: ok.length, failed: errors.length, errors, backup: bak, backupRoots: bakRoot, createdRoots, createdFams, note: "commit terminalden" });
+    return NextResponse.json({ ok: true, applied: ok.length, failed: errors.length, errors, warnings, backup: bak, backupRoots: bakRoot, createdRoots, createdFams, note: "commit terminalden" });
   } catch (e: any) {
     return NextResponse.json({ ok: false, error: e?.message ?? "hata" }, { status: 500 });
   }

@@ -2,6 +2,7 @@
 import ImportExport from "./ImportExport";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { convertAdyToKbd, convertKbdToAdy } from "@/lib/dialectConverter";
+import { validateCuration } from "@/lib/curationValidate";
 
 type Lexeme = { id: string; [key: string]: unknown };
 type Language = { key: string; label: string; icon: string; badge: string; border: string; background: string; accent: string };
@@ -118,6 +119,8 @@ export default function SinglePage() {
   const values = translations(draft);
   const resolved = resolveDialects(draft);
   const sorunluCount = useMemo(() => lexemes.filter(isSorunlu).length, [lexemes]);
+  // KARAR-16: turetilmis kavram listesi - mevcut kayitlarin conceptId'lerinden
+  const allowedConcepts = useMemo(() => Array.from(new Set(lexemes.map(r => text(r.conceptId).trim()).filter(Boolean))), [lexemes]);
 
   const liveAdyFromKbd = useMemo(() => (resolved.kabardian ? convertKbdToAdy(resolved.kabardian) : ""), [resolved.kabardian]);
   const liveKbdFromAdy = useMemo(() => (resolved.adyghe ? convertAdyToKbd(resolved.adyghe) : ""), [resolved.adyghe]);
@@ -189,6 +192,18 @@ export default function SinglePage() {
 
   async function saveOne() {
     if (!draft || !dirty) return;
+    // KARAR-16 dogrulama - sunucuyla ayni modul (src/lib/curationValidate.ts)
+    const issues = validateCuration({
+      tr: text(values.tr),
+      literalMeaning: text(draft.literalMeaning),
+      notes: text(draft.notes),
+      conceptId: text(draft.conceptId),
+      allowedConcepts,
+    }).filter(i => i.severity === "error");
+    if (issues.length) {
+      setError("Dogrulama hatasi - " + issues.map(i => `${i.field}: ${i.message}`).join(" | "));
+      return;
+    }
     if (!window.confirm("Bu kayit lexemes.jsona yazilacak. Once yedek alinacak. Onayliyor musun?")) return;
     setSaving(true); setError(""); setMessage("");
     try {

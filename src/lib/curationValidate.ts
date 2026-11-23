@@ -1,8 +1,12 @@
-// Curation dogrulama - dictionarySchema'dan ayri, kok -> aile -> kavram tutarliligi icin
-// Kurallar:
-// - root / family / concept bos olamaz
-// - tr'de ? sadece kelime ortasinda yasak: a?g?z -> hata, Ne? / Kim? / aday? -> serbest
-// - literalMeaning'de <<...>> capraz referanslar yok sayilir, gercek / yarim HTML (<div, <span, </fon) hata
+// Curation dogrulama - KARAR-16 kurallarinin TEK OTORITESI.
+// Hem istemci (admin/curation/single) hem sunucu (api/curation/bulk) bu modulu kullanir;
+// kural tekrarlari (inline regex) yazilmaz.
+//
+// Kurallar (yalnizca giriste belirtilen alanlar icin calisir - undefined alan denetlenmez):
+// - root / family / concept (form baglami): bos olamaz
+// - tr: kelime ortasinda ? yasak: a?g?z -> hata; sondaki soru (Ne? / Kim? / aday?) serbest
+// - literalMeaning / notes: <<...>> capraz referanslari yok sayilir, gercek / yarim HTML hata
+// - conceptId: bos olamaz; allowedConcepts verildiyse turetilmis kavram listesinde olmalidir
 
 export type CurationIssue = {
   field: string;
@@ -17,6 +21,8 @@ export type CurationInput = {
   tr?: string;
   literalMeaning?: string;
   notes?: string;
+  conceptId?: string;
+  allowedConcepts?: readonly string[];
 };
 
 const MID_WORD_Q = /[A-Za-zÇĞİÖŞÜçğıöşü]\?[A-Za-zÇĞİÖŞÜçğıöşü]/;
@@ -28,26 +34,41 @@ function stripCrossRefs(s: string): string {
 
 export function validateCuration(input: CurationInput): CurationIssue[] {
   const issues: CurationIssue[] = [];
-  if (!String(input.root || "").trim()) {
+
+  if (input.root !== undefined && !String(input.root).trim()) {
     issues.push({ field: "root", message: "Kok bos olamaz", severity: "error" });
   }
-  if (!String(input.family || "").trim()) {
+  if (input.family !== undefined && !String(input.family).trim()) {
     issues.push({ field: "family", message: "Aile bos olamaz", severity: "error" });
   }
-  if (!String(input.concept || "").trim()) {
+  if (input.concept !== undefined && !String(input.concept).trim()) {
     issues.push({ field: "concept", message: "Kavram bos olamaz", severity: "error" });
   }
-  const tr = String(input.tr || "");
-  if (MID_WORD_Q.test(tr)) {
-    issues.push({ field: "tr", message: "trde kelime ortasinda ? var (a?g?z gibi). Sondaki soru (Ne?, Kim?) serbest.", severity: "error" });
+
+  if (input.tr !== undefined) {
+    const tr = String(input.tr);
+    if (MID_WORD_Q.test(tr)) {
+      issues.push({ field: "tr", message: "tr'de kelime ortasinda ? var (a?g?z gibi). Sondaki soru (Ne?, Kim?) serbest.", severity: "error" });
+    }
   }
+
   for (const field of ["literalMeaning", "notes"] as const) {
-    const val = String(input[field] || "");
-    const cleaned = stripCrossRefs(val);
+    if (input[field] === undefined) continue;
+    const cleaned = stripCrossRefs(String(input[field]));
     if (HTML_TAG.test(cleaned)) {
       issues.push({ field, message: `${field} icinde gercek / yarim HTML var (<<...>> sayilmaz)`, severity: "error" });
     }
   }
+
+  if (input.conceptId !== undefined) {
+    const cid = String(input.conceptId).trim();
+    if (!cid) {
+      issues.push({ field: "conceptId", message: "conceptId bos olamaz", severity: "error" });
+    } else if (input.allowedConcepts && input.allowedConcepts.length > 0 && !input.allowedConcepts.includes(cid)) {
+      issues.push({ field: "conceptId", message: `conceptId turetilmis kavram listesinde yok: ${cid}`, severity: "error" });
+    }
+  }
+
   return issues;
 }
 
