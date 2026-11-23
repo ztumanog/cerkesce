@@ -66,7 +66,7 @@ export default function FazKontrolPage() {
               </div>
               <div style={{ display: 'flex', justifyContent: 'space-between', padding: '10px 12px', borderRadius: 8, background: findings.appHasNetworkExplorer ? '#f0fdf4' : '#fef2f2', border: '1px solid #e2e8f0' }}>
                 <span style={{ fontSize: 13, fontWeight: 600 }}>appHasNetworkExplorer</span>
-                <span style={{ fontSize: 12, fontWeight: 700, color: findings.appHasNetworkExplorer ? '#15803d' : '#d97706' }}>{findings.appHasNetworkExplorer ? '✓ app/explorer canli' : '✗ ONCE false idi, simdi true'}</span>
+                <span style={{ fontSize: 12, fontWeight: 700, color: findings.appHasNetworkExplorer ? '#15803d' : '#d97706' }}>{findings.appHasNetworkExplorer ? '✓ app/explorer → NetworkExplorerPage bağlı' : '✗ app/explorer kendi yerel UIını kullanıyor (NetworkExplorerPage değil)'}</span>
               </div>
             </div>
             <pre style={{ marginTop: 16, background: '#0f172a', color: '#38bdf8', padding: 12, borderRadius: 8, fontSize: 11, overflow: 'auto' }}>{JSON.stringify(findings, null, 2)}</pre>
@@ -94,7 +94,7 @@ export default function FazKontrolPage() {
             <div style={{ background: '#eef2ff', borderRadius: 8, padding: 12 }}>
               <div style={{ fontSize: 12, fontWeight: 700, color: '#4338ca' }}>📊 651 ham → {uniq} tekil</div>
               <div style={{ fontSize: 11, color: '#6366f1', marginTop: 4 }}>2 kopya: BatchExport→ExportEngine 2x, errorTracker 2x</div>
-              <div style={{ fontSize: 11, color: '#6366f1', marginTop: 8 }}>app/explorer/page.tsx:2 → ui/pages/NetworkExplorerPage → CANLI ✓</div>
+              <div style={{ fontSize: 11, color: '#6366f1', marginTop: 8 }}>app/explorer/page.tsx kendi yerel UIını ve /api/discovery/searchü kullanır (NetworkExplorerPage değil — 2026-11-23 taraması)</div>
               <div style={{ fontSize: 11, color: '#6366f1' }}>SvgLayoutEngineService.ts:13 sadece DTO → GenericConceptNetworkDTO</div>
             </div>
 
