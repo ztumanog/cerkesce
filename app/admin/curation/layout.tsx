@@ -13,8 +13,7 @@ export default function CurationLayout({children}:{children:React.ReactNode}){
       <div className="mt-6 pt-6 border-t border-gray-200">
         <div className="px-3 mb-2 text- font-black tracking-widest text-gray-400">SİSTEM</div>
         <Link href="/admin/moderasyon" className="flex items-center justify-between px-3 py-2.5 rounded-xl hover:bg-violet-50 transition group">
-          <span className="text-sm font-medium group-hover:text-violet-700">🛡️ Moderasyon</span>
-          <span className="text- bg-violet-100 text-violet-700 px-2 py-0.5 rounded-full font-bold">Faz 12</span>
+          <span className="text-sm font-medium group-hover:text-violet-700">💡 Kelime Önerileri</span>
         </Link>
         <Link href="/admin/faz-kontrol" className="flex items-center justify-between px-3 py-2.5 rounded-xl hover:bg-green-50 transition group">
           <span className="text-sm font-medium group-hover:text-green-700">✅ Faz Kontrol</span>

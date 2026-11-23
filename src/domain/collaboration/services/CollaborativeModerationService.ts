@@ -4,6 +4,8 @@ export interface ConceptProposal {
   proposalId: string;
   conceptId: string;
   proposedLabel: string;
+  /** Önerilen kelimenin Türkçe karşılığı (isteğe bağlı; Kelime Öner formundan gelir) */
+  meaning?: string;
   author: string;
   status: ProposalStatus;
 }
@@ -39,6 +41,27 @@ export class CollaborativeModerationService {
   public static getProposal(proposalId: string): ConceptProposal | undefined {
     const proposal = CollaborativeModerationService.proposals.get(proposalId);
     return proposal ? { ...proposal } : undefined;
+  }
+
+  /**
+   * Tüm önerilerin kopyasını döndürür (kalıcılık katmanı ve liste uçları için).
+   * Görev: moderasyon kalıcılığı — bellek-içi Map'ten dosyaya senkronizasyon.
+   */
+  public static listProposals(): ConceptProposal[] {
+    return Array.from(CollaborativeModerationService.proposals.values()).map((p) => ({ ...p }));
+  }
+
+  /**
+   * Kalıcı depodan yüklenen durumu hizmete geri yükler (dosya → bellek).
+   * Yalnızca proposalId'si geçerli kayıtlar kabul edilir; iş kuralları değişmez.
+   */
+  public static restoreState(proposals: ConceptProposal[]): void {
+    CollaborativeModerationService.proposals.clear();
+    for (const p of proposals) {
+      if (p && typeof p.proposalId === 'string' && p.proposalId) {
+        CollaborativeModerationService.proposals.set(p.proposalId, { ...p });
+      }
+    }
   }
 
   public static clear(): void {

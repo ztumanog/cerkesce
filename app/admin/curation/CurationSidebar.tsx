@@ -214,8 +214,7 @@ export default function CurationSidebar() {
               background: '#f5f3ff',
             }}
           >
-            <span>🛡️ Moderasyon</span>
-            <span style={{ background: '#7c3aed', color: 'white', padding: '2px 8px', borderRadius: '999px', fontSize: '10px' }}>Faz 12</span>
+            <span>💡 Kelime Önerileri</span>
           </Link>
           <Link
             href="/admin/faz-kontrol"

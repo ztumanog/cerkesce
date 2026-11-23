@@ -1,151 +1,195 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useEffect, useCallback } from "react";
 import * as Dialog from "@radix-ui/react-dialog";
-import { Theme, Card, Badge, Button, TextField, Callout, Table, Flex, Text, Heading, Box } from "@radix-ui/themes";
-import "@radix-ui/themes/styles.css";
-import { CollaborativeModerationService, ConceptProposal } from "@/domain/collaboration/services/CollaborativeModerationService";
+import { Check, X, ClipboardList, AlertTriangle } from "lucide-react";
+import { ConceptProposal } from "@/domain/collaboration/services/CollaborativeModerationService";
 
-export default function ModerasyonPage() {
+/**
+ * KELİME ÖNERİLERİ İNCELEME (/admin/moderasyon) — moderatör yüzü.
+ *
+ * Vatandaş yüzü /sozluk/oneri'de (yalnız öneri + durum takibi); onay/red
+ * eylemleri yalnızca bu sayfada. Kalıcılık: /api/moderasyon → dosya.
+ *
+ * Bilinen sınırlar: uygulamada kimlik doğrulama sistemi yok — bu sayfa ve
+ * PATCH ucu teknik olarak herkesin erişimine açık. Yetkilendirme ayrı iş
+ * (öneri: en azından admin gizli anahtarı / basit auth).
+ */
+
+const STATUS_LABEL: Record<string, { text: string; className: string }> = {
+  PENDING: { text: "Bekliyor", className: "bg-amber-100 text-amber-800 border-amber-200" },
+  APPROVED: { text: "Onaylandı", className: "bg-emerald-100 text-emerald-800 border-emerald-200" },
+  REJECTED: { text: "Reddedildi", className: "bg-rose-100 text-rose-800 border-rose-200" },
+};
+
+export default function ModerasyonIncelePage() {
   const [proposals, setProposals] = useState<ConceptProposal[]>([]);
-  const [form, setForm] = useState({ proposalId: "", conceptId: "", proposedLabel: "", author: "" });
-  const [moderatorId, setModeratorId] = useState("mod-1");
+  const [reviewer, setReviewer] = useState("");
   const [error, setError] = useState("");
   const [toast, setToast] = useState("");
-  const [confirm, setConfirm] = useState<{ id: string; action: "APPROVED" | "REJECTED" } | null>(null);
+  const [confirm, setConfirm] = useState<{ id: string; action: "APPROVED" | "REJECTED"; word: string } | null>(null);
 
-  const stats = useMemo(() => ({
-    total: proposals.length,
-    pending: proposals.filter(p => p.status === "PENDING").length,
-    approved: proposals.filter(p => p.status === "APPROVED").length,
-    rejected: proposals.filter(p => p.status === "REJECTED").length,
-  }), [proposals]);
+  const load = useCallback(async () => {
+    try {
+      const res = await fetch("/api/moderasyon", { cache: "no-store" });
+      const j = await res.json();
+      if (res.ok && Array.isArray(j.proposals)) setProposals(j.proposals);
+    } catch {
+      // sessiz: işlem sırasında hata görünür olur
+    }
+  }, []);
+
+  useEffect(() => { load(); }, [load]);
 
   const showToast = (msg: string) => {
     setToast(msg);
-    setTimeout(() => setToast(""), 3000);
+    setTimeout(() => setToast(""), 3500);
   };
 
-  const submit = () => {
-    setError("");
-    if (!form.proposalId || !form.conceptId || !form.proposedLabel || !form.author) {
-      setError("Tüm alanlar gerekli");
+  const handleTransition = async () => {
+    if (!confirm) return;
+    const target = confirm;
+    setConfirm(null);
+    if (!reviewer.trim()) {
+      setError("İnceleyen kişi adını önce yazmalısınız.");
       return;
     }
     try {
-      const created = CollaborativeModerationService.submitProposal(form);
-      setProposals([...proposals, created]);
-      setForm({ proposalId: "", conceptId: "", proposedLabel: "", author: "" });
-      showToast(`Oluşturuldu: ${created.proposalId}`);
+      const res = await fetch("/api/moderasyon", {
+        method: "PATCH",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ proposalId: target.id, action: target.action, moderatorId: reviewer.trim() }),
+      });
+      const j = await res.json();
+      if (!res.ok) throw new Error(j.error || "İşlem uygulanamadı.");
+      setProposals(prev => prev.map(p => p.proposalId === target.id ? j.proposal : p));
+      showToast(`"${target.word}" önerisi ${target.action === "APPROVED" ? "onaylandı" : "reddedildi"}.`);
     } catch (e: any) {
       setError(e.message);
     }
   };
 
-  const handleTransition = () => {
-    if (!confirm) return;
-    try {
-      const fn = confirm.action === "APPROVED" ? CollaborativeModerationService.approveProposal : CollaborativeModerationService.rejectProposal;
-      const updated = fn(confirm.id, moderatorId);
-      if (updated) {
-        setProposals(proposals.map(p => p.proposalId === confirm.id ? updated : p));
-        showToast(`${confirm.id} -> ${confirm.action}`);
-      }
-    } catch (e: any) {
-      setError(e.message);
-    }
-    setConfirm(null);
-  };
+  const pending = proposals.filter(p => p.status === "PENDING").length;
+  const inputCls = "w-full max-w-xs rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm text-slate-900 placeholder:text-slate-400 outline-none transition focus:border-violet-500 focus:ring-2 focus:ring-violet-200";
 
   return (
-    <Theme accentColor="violet" radius="large">
-      <div className="min-h-screen bg-gray-50 p-6">
-        {/* Header */}
-        <div className="flex justify-between items-center mb-6 bg-white p-4 rounded-xl shadow-sm border">
-          <div>
-            <h1 className="text-2xl font-bold">Moderasyon Paneli</h1>
-            <p className="text-sm text-gray-500">Çerkesçe Sözlük - Faz 12 · Topluluk Önerileri</p>
-          </div>
-          <div className="flex gap-3 items-center">
-            <Badge color="violet" variant="soft">Canlı</Badge>
-            <div className="w-36"><TextField.Root placeholder="mod-1" value={moderatorId} onChange={e => setModeratorId(e.target.value)} /></div>
-          </div>
-        </div>
+    <div className="min-h-[calc(100vh-64px)] bg-slate-100 dark:bg-slate-950 px-4 pt-24 pb-10 sm:px-6">
+      <div className="mx-auto max-w-5xl space-y-6">
 
-        {/* Stats */}
-        <div className="grid grid-cols-4 gap-4 mb-6">
-          <Card><Flex justify="between" align="center"><Box><Text size="2" color="gray">Toplam</Text><Heading size="6">{stats.total}</Heading></Box><Badge color="violet" size="2">{stats.total}</Badge></Flex></Card>
-          <Card><Flex justify="between" align="center"><Box><Text size="2" color="gray">Bekleyen</Text><Heading size="6">{stats.pending}</Heading></Box><Badge color="yellow" size="2">{stats.pending}</Badge></Flex></Card>
-          <Card><Flex justify="between" align="center"><Box><Text size="2" color="gray">Onaylanan</Text><Heading size="6">{stats.approved}</Heading></Box><Badge color="green" size="2">{stats.approved}</Badge></Flex></Card>
-          <Card><Flex justify="between" align="center"><Box><Text size="2" color="gray">Reddedilen</Text><Heading size="6">{stats.rejected}</Heading></Box><Badge color="red" size="2">{stats.rejected}</Badge></Flex></Card>
-        </div>
-
-        <div className="grid grid-cols-12 gap-6">
-          <div className="col-span-4">
-            <Card>
-              <Heading size="4" mb="4">Yeni Öneri</Heading>
-              <Flex direction="column" gap="3">
-                <TextField.Root placeholder="proposalId (örn: prop-001)" value={form.proposalId} onChange={e => setForm({ ...form, proposalId: e.target.value })} />
-                <TextField.Root placeholder="conceptId (örn: concept-ev)" value={form.conceptId} onChange={e => setForm({ ...form, conceptId: e.target.value })} />
-                <TextField.Root placeholder="proposedLabel (örn: унэ)" value={form.proposedLabel} onChange={e => setForm({ ...form, proposedLabel: e.target.value })} />
-                <TextField.Root placeholder="author (örn: zeki)" value={form.author} onChange={e => setForm({ ...form, author: e.target.value })} />
-                {error && <Callout.Root color="red"><Callout.Text>{error}</Callout.Text></Callout.Root>}
-                <Button onClick={submit} size="3" className="w-full">Öneri Gönder</Button>
-              </Flex>
-            </Card>
-            {toast && <div className="mt-3"><Callout.Root color="green"><Callout.Text>{toast}</Callout.Text></Callout.Root></div>}
+        <div className="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-6 shadow-sm">
+          <div className="flex flex-wrap items-start justify-between gap-3">
+            <div>
+              <h1 className="text-2xl font-bold text-slate-900 dark:text-slate-100">Kelime Önerileri — İnceleme</h1>
+              <p className="mt-1 text-sm text-slate-600 dark:text-slate-400">
+                Vatandaşların <span className="font-semibold">Kelime Öner</span> sayfasından gönderdiği önerileri
+                onaylayın ya da reddedin. Onaylanan öneriler sözlüğe işlenmek üzere kaydedilir.
+              </p>
+            </div>
+            <span className="rounded-full border border-amber-200 bg-amber-50 px-3 py-1 text-xs font-bold text-amber-700">
+              {pending} öneri bekliyor
+            </span>
           </div>
-
-          <div className="col-span-8">
-            <Card>
-              <Flex justify="between" align="center" mb="4">
-                <Heading size="4">Öneriler ({proposals.length})</Heading>
-                <Badge variant="soft">{proposals.length} kayıt</Badge>
-              </Flex>
-              {proposals.length === 0 ? (
-                <div className="py-16 text-center bg-gray-50 rounded-lg border border-dashed">
-                  <Text color="gray">Henüz öneri yok. Soldan yeni öneri oluştur.</Text>
-                </div>
-              ) : (
-                <Table.Root variant="surface">
-                  <Table.Header><Table.Row><Table.ColumnHeaderCell>ID</Table.ColumnHeaderCell><Table.ColumnHeaderCell>Concept</Table.ColumnHeaderCell><Table.ColumnHeaderCell>Label</Table.ColumnHeaderCell><Table.ColumnHeaderCell>Author</Table.ColumnHeaderCell><Table.ColumnHeaderCell>Status</Table.ColumnHeaderCell><Table.ColumnHeaderCell>İşlem</Table.ColumnHeaderCell></Table.Row></Table.Header>
-                  <Table.Body>
-                    {proposals.map(p => (
-                      <Table.Row key={p.proposalId}>
-                        <Table.Cell><Text weight="bold">{p.proposalId}</Text></Table.Cell>
-                        <Table.Cell>{p.conceptId}</Table.Cell>
-                        <Table.Cell><Badge variant="soft">{p.proposedLabel}</Badge></Table.Cell>
-                        <Table.Cell>{p.author}</Table.Cell>
-                        <Table.Cell><Badge color={p.status === "PENDING" ? "yellow" : p.status === "APPROVED" ? "green" : "red"}>{p.status}</Badge></Table.Cell>
-                        <Table.Cell>
-                          <Flex gap="2">
-                            <Button size="1" color="green" variant="soft" disabled={p.status !== "PENDING"} onClick={() => setConfirm({ id: p.proposalId, action: "APPROVED" })}>Onayla</Button>
-                            <Button size="1" color="red" variant="soft" disabled={p.status !== "PENDING"} onClick={() => setConfirm({ id: p.proposalId, action: "REJECTED" })}>Reddet</Button>
-                          </Flex>
-                        </Table.Cell>
-                      </Table.Row>
-                    ))}
-                  </Table.Body>
-                </Table.Root>
-              )}
-            </Card>
+          <div className="mt-4">
+            <label htmlFor="mod-reviewer" className="mb-1 block text-xs font-semibold text-slate-600 dark:text-slate-300">
+              İnceleyen kişi (adınız) <span className="text-rose-500">*</span>
+            </label>
+            <input id="mod-reviewer" className={inputCls} placeholder="örn: Zeki" value={reviewer}
+              onChange={e => setReviewer(e.target.value)} />
+            <p className="mt-1 text-[11px] text-slate-400">Not: öneriyi gönderen kişi kendi önerisini onaylayamaz.</p>
           </div>
         </div>
 
-        <Dialog.Root open={!!confirm} onOpenChange={(o) => !o && setConfirm(null)}>
+        {error && (
+          <div role="alert" className="flex items-start gap-2 rounded-lg border border-rose-200 bg-rose-50 px-3 py-2 text-sm text-rose-700">
+            <AlertTriangle className="mt-0.5 h-4 w-4 shrink-0" aria-hidden /> {error}
+          </div>
+        )}
+        {toast && (
+          <div role="status" className="rounded-lg border border-emerald-200 bg-emerald-50 px-3 py-2 text-sm text-emerald-700">{toast}</div>
+        )}
+
+        <div className="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-6 shadow-sm">
+          <h2 className="mb-3 text-lg font-bold text-slate-900 dark:text-slate-100 flex items-center gap-2">
+            <ClipboardList className="h-4 w-4 text-violet-600" aria-hidden /> Öneriler ({proposals.length})
+          </h2>
+          {proposals.length === 0 ? (
+            <div className="rounded-xl border border-dashed border-slate-300 dark:border-slate-700 py-14 text-center text-sm text-slate-400">
+              Henüz öneri yok.
+            </div>
+          ) : (
+            <div className="overflow-x-auto">
+              <table className="w-full text-sm">
+                <thead>
+                  <tr className="border-b border-slate-200 text-left text-xs uppercase tracking-wide text-slate-500 dark:border-slate-700">
+                    <th className="py-2 pr-3 font-semibold">Kelime</th>
+                    <th className="py-2 pr-3 font-semibold">Anlamı</th>
+                    <th className="py-2 pr-3 font-semibold">Kavram</th>
+                    <th className="py-2 pr-3 font-semibold">Gönderen</th>
+                    <th className="py-2 pr-3 font-semibold">Durum</th>
+                    <th className="py-2 font-semibold">İşlem</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {proposals.map(p => {
+                    const st = STATUS_LABEL[p.status] || STATUS_LABEL.PENDING;
+                    return (
+                      <tr key={p.proposalId} className="border-b border-slate-100 dark:border-slate-800">
+                        <td className="py-2.5 pr-3 font-bold text-slate-900 dark:text-slate-100">{p.proposedLabel}</td>
+                        <td className="py-2.5 pr-3 text-slate-600 dark:text-slate-300">{p.meaning || "—"}</td>
+                        <td className="py-2.5 pr-3 text-slate-600 dark:text-slate-300">{p.conceptId === "UNCLASSIFIED" ? "—" : p.conceptId}</td>
+                        <td className="py-2.5 pr-3 text-slate-600 dark:text-slate-300">{p.author}</td>
+                        <td className="py-2.5 pr-3">
+                          <span className={`rounded-full border px-2 py-0.5 text-[11px] font-bold ${st.className}`}>{st.text}</span>
+                        </td>
+                        <td className="py-2.5">
+                          {p.status === "PENDING" ? (
+                            <span className="flex gap-1.5">
+                              <button type="button" onClick={() => setConfirm({ id: p.proposalId, action: "APPROVED", word: p.proposedLabel })}
+                                className="inline-flex cursor-pointer items-center gap-1 rounded-md border border-emerald-200 bg-emerald-50 px-2 py-1 text-xs font-semibold text-emerald-700 transition hover:bg-emerald-100">
+                                <Check className="h-3 w-3" aria-hidden /> Onayla
+                              </button>
+                              <button type="button" onClick={() => setConfirm({ id: p.proposalId, action: "REJECTED", word: p.proposedLabel })}
+                                className="inline-flex cursor-pointer items-center gap-1 rounded-md border border-rose-200 bg-rose-50 px-2 py-1 text-xs font-semibold text-rose-700 transition hover:bg-rose-100">
+                                <X className="h-3 w-3" aria-hidden /> Reddet
+                              </button>
+                            </span>
+                          ) : (
+                            <span className="text-xs text-slate-400">—</span>
+                          )}
+                        </td>
+                      </tr>
+                    );
+                  })}
+                </tbody>
+              </table>
+            </div>
+          )}
+        </div>
+
+        <Dialog.Root open={!!confirm} onOpenChange={o => !o && setConfirm(null)}>
           <Dialog.Portal>
-            <Dialog.Overlay className="fixed inset-0 bg-black/40 z-50" />
-            <Dialog.Content className="fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-white rounded-xl p-6 w-[420px] shadow-2xl z-50">
-              <Heading size="4">{confirm?.action === "APPROVED" ? "Onaylıyor musun?" : "Reddediyor musun?"}</Heading>
-              <Text as="div" mt="3" size="2" color="gray">{confirm?.id} önerisini {confirm?.action === "APPROVED" ? "onaylamak" : "reddetmek"} üzeresin. Moderatör: {moderatorId}</Text>
-              <Flex gap="3" mt="5" justify="end">
-                <Dialog.Close asChild><Button variant="soft" color="gray">İptal</Button></Dialog.Close>
-                <Button color={confirm?.action === "APPROVED" ? "green" : "red"} onClick={handleTransition}>{confirm?.action === "APPROVED" ? "Onayla" : "Reddet"}</Button>
-              </Flex>
+            <Dialog.Overlay className="fixed inset-0 z-50 bg-black/40" />
+            <Dialog.Content className="fixed left-1/2 top-1/2 z-50 w-[400px] max-w-[90vw] -translate-x-1/2 -translate-y-1/2 rounded-2xl border border-slate-200 bg-white p-6 shadow-2xl dark:border-slate-700 dark:bg-slate-900">
+              <Dialog.Title className="text-lg font-bold text-slate-900 dark:text-slate-100">
+                {confirm?.action === "APPROVED" ? "Öneriyi onaylıyor musun?" : "Öneriyi reddediyor musun?"}
+              </Dialog.Title>
+              <Dialog.Description className="mt-2 text-sm text-slate-600 dark:text-slate-400">
+                <strong className="text-slate-800 dark:text-slate-200">{confirm?.word}</strong> önerisi{" "}
+                {confirm?.action === "APPROVED" ? "onaylanacak" : "reddedilecek"}. İşlem dosyaya kaydedilir.
+              </Dialog.Description>
+              <div className="mt-5 flex justify-end gap-2">
+                <Dialog.Close asChild>
+                  <button type="button" className="cursor-pointer rounded-lg border border-slate-200 px-4 py-2 text-sm font-semibold text-slate-600 transition hover:bg-slate-50 dark:border-slate-700 dark:text-slate-300 dark:hover:bg-slate-800">Vazgeç</button>
+                </Dialog.Close>
+                <button type="button" onClick={handleTransition}
+                  className={`cursor-pointer rounded-lg px-4 py-2 text-sm font-semibold text-white transition ${confirm?.action === "APPROVED" ? "bg-emerald-600 hover:bg-emerald-700" : "bg-rose-600 hover:bg-rose-700"}`}>
+                  {confirm?.action === "APPROVED" ? "Onayla" : "Reddet"}
+                </button>
+              </div>
             </Dialog.Content>
           </Dialog.Portal>
         </Dialog.Root>
       </div>
-    </Theme>
+    </div>
   );
 }

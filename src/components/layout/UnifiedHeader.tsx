@@ -186,6 +186,11 @@ export default function UnifiedHeader() {
                       Favoriler
                     </Link>
                   </DropdownMenu.Item>
+                  <DropdownMenu.Item asChild onSelect={() => setOpen(false)}>
+                    <Link href="/sozluk/oneri" className={itemCls}>
+                      Kelime Öner
+                    </Link>
+                  </DropdownMenu.Item>
                 </DropdownMenu.Content>
               </DropdownMenu.Portal>
             </DropdownMenu.Root>
