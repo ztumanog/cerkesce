@@ -428,3 +428,46 @@ Test sayisi politikasi olusturuldu ve uygulandi.
 - AGENTS.md: FAZ 5 -> FAZ DURUMU, 231 -> 1028 (tarihli)
 - Yedek: E:\projeler\Cerkesce\backups\DOCS_KANONIK_KARARI-2026-10-18_042504.md
 
+---
+
+## 2026-11-23 - Celiski Giderme Oturumu (MVP donemi hizalama)
+
+**Mod:** UYGULANDI
+**Kapsam:** 2026-10-16 temizliginden sonraki (Kasim) gelismelerin kanonik belgelere islenmesi + mukerrer belgelerin arsivlenmesi
+
+### Dogrulanan gercek durum
+- Ana test: 193 dosya / 1006/1006 PASS (`npm test`, 2026-11-23 02:21)
+- Cert test: 26 dosya / 102/102 PASS (`npm run test:cert`, 2026-11-23 02:33)
+- MVP-1 / MVP-1.1 CLOSED (KARAR-13/14, 2026-11-08), MVP-2 CLOSED (KARAR-15, 2026-11-11)
+- KARAR-16 kuration yazma yeri (2026-11-14), SSOT ConceptId migration TAMAMLANDI (2026-11-13)
+- Test sayisi dususunun nedeni: budanan altyapi servislerinin 26 yetim testi (commit 3bf3f96)
+
+### Degistirilen dosyalar (9)
+| Dosya | Degisiklik |
+|---|---|
+| governance/status/CURRENT_TEST_BASELINE.md | SSOT guncellendi: 1028 (2026-10-16) -> 1006 ana + 102 cert (2026-11-23); degisim gecmisi ve tarihsel kayitlar eklendi |
+| governance/status/PHASES.md | MVP Donemi bolumu + Faz Kronolojisi (tum kusaklar) eklendi; tarih 2026-11-23 |
+| governance/status/PROJECT_STATUS.md | MVP Donemi bolumu eklendi; tarih 2026-11-23 |
+| governance/status/ROADMAP.md | MVP Donemi bolumu; Capability Track listesi tarihsel plan olarak isaretlendi |
+| governance/README.md | Dogrulama durumu (1006+102) + MVP notu; tarih 2026-11-23 |
+| AGENTS.md (kok) | FAZ DURUMU: MVP kapanislari + guncel test sayilari |
+| governance/DOCS_KANONIK_KARARI.md | Tekrar eden 'Test Sayisi Politikasi' bolumu kaldirildi; E:\ yollari D:\ olarak guncellendi; yazim duzeltmesi |
+| governance/constitution/CONSTITUTION.md | PHASE_TIMELINE_RECONCILIATION referansi -> status/ yolu |
+| architecture/adr/ADR-GOV-006-PHASE_2_CLOSURE_DECISION.md | Ayni referans duzeltmesi |
+| PROJECT_ROADMAP.md (docs) | Ayni referans duzeltmesi |
+
+### Arsivlenen dosyalar (2, silinmedi)
+| Dosya | Neden | Yeni konum |
+|---|---|---|
+| docs/FUTURE_CAPABILITIES.md | Mukerrer; kanonik kopya governance/status/ altinda; 'Track B/C BACKLOG' iddiasi kanonik 'Tamamlandi' ile celisiyordu | docs/archive/2026-11-mukerrer/FUTURE_CAPABILITIES.md (TARIHSEL notu eklendi) |
+| governance/PHASE_TIMELINE_RECONCILIATION.md | Mukerrer; kanonik kopya governance/status/ altinda; 'Phase 8 ACTIVE' iddiasi kanonik 'COMPLETED' ile celisiyordu | docs/archive/2026-11-mukerrer/governance__PHASE_TIMELINE_RECONCILIATION.md (TARIHSEL notu eklendi) |
+
+### Tespit edilen ama dokunulmayan (bilgi notu)
+- linguistics/ klasorunde 002 ve 003 numaralari ikişer kez kullaniliyor (farkli konular, ayni numara)
+- docs/adr klasoru yalnizca _archive iceriyor
+- reports/UI_TRACK_COMPLETION_REPORT.md ile V2'si yan yana duruyor (V1 arsiv adayi)
+- CURATION_AND_NAVIGATION_UPDATE_2026-11-15.md'de gecen 'Faz 2 calismalari' ifadesinin kapsami belgelerde net tanimlanmamis
+
+### Yedek
+- E:\projeler\Cerkesce\backups\docs-celiski-20261123-024247.tar.gz (duzenleme oncesi docs/ tamami, 9.2 MB)
+

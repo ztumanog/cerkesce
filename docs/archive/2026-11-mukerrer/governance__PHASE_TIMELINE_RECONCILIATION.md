@@ -1,3 +1,5 @@
+> **TARİHSEL KAYIT (2026-11-23):** Bu belge kanonik kopyanın mükerreriydi; kanonik kopya `governance/status/PHASE_TIMELINE_RECONCILIATION.md`'dir. Bu kopya, Phase 8 'ACTIVE' gösteren eski (2026-10-02 tarihli) sürümdür ve kanonik sürümle (Faz 1-15 COMPLETED) çelişiyordu. Çelişki giderme çalışması kapsamında arşive taşındı.
+
 # PHASE_TIMELINE_RECONCILIATION.md
 
 **Tarih:** 2026-10-02

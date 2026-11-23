@@ -3,7 +3,7 @@
 ## Faz Özeti (Tek Gerçek)
 
 > Bu tablo, PHASES.md ve ROADMAP.md ile birebir uyumludur.
-> Son güncelleme: 2026-10-03
+> Son güncelleme: 2026-11-23
 
 | Faz | Ad | Durum |
 |-----|-----|-------|
@@ -133,6 +133,27 @@ Bundan sonraki tüm geliştirmeler Capability Track modeliyle yürütülür.
 | Track D — Research | Araştırma |
 
 **Referans:** PHASE_PROGRAM_CLOSURE.md, FUTURE_CAPABILITIES.md
+
+---
+
+## MVP Dönemi (2026-11)
+
+Capability Track modelinin yerini MVP modeli aldı (KARAR-13 / KARAR-14).
+P1 servisleri donduruldu (QuerySemanticMapper, KnowledgeRanker, DiscoveryFacade,
+WordFamilyResolver, RelatedConceptResolver, MultilingualExplorer, ContextClusterer),
+analytics/services/* grubu arşiv adayı (KARAR-14).
+
+| MVP | Kapsam | Durum | Karar / Tarih |
+|---|---|---|---|
+| MVP-1 | Arama → Sonuç Listesi → Kelime Detayı | CLOSED | KARAR-13 + KARAR-14 (2026-11-08) |
+| MVP-1.1 | Öneriler (/api/search yan ürünü) | CLOSED | KARAR-14 (2026-11-08) |
+| MVP-2 | Latin Arama (normalize katmanı, KARAR-15 test tablosu) | CLOSED | KARAR-15 + Mimar onayı (2026-11-11) |
+
+**İlke (KARAR-14):** Yeni özellikler mevcut MVP-1 akışına eklenir; yeni paralel sistem kurulmaz.
+**Kürasyon yazma yeri:** doğrudan `lexemes.json` (KARAR-16, 2026-11-14).
+**SSOT ConceptId migration:** TAMAMLANDI (2026-11-13).
+**Güncel test:** Ana 1006/1006 + Cert 102/102 PASS (2026-11-23)
+— kanonik kaynak: CURRENT_TEST_BASELINE.md
 
 
 

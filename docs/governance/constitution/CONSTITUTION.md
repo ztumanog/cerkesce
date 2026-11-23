@@ -74,7 +74,7 @@ Diğer belgeler bu anayasaya tabidir ve ondan türetilir.
 | Embedding Research | GATE_COMPLETED |
 
 > **Detay:** `docs/governance/status/PHASES.md`
-> **Faz geçmişi:** `docs/governance/PHASE_TIMELINE_RECONCILIATION.md`
+> **Faz geçmişi:** `docs/governance/status/PHASE_TIMELINE_RECONCILIATION.md`
 
 ---
 

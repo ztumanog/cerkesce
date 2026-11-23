@@ -9,12 +9,12 @@
 
 ## 1. Karar
 
-E:\projeler\Cerkesce\docs klasoru, projenin tek kanonik dokumantasyon kokudur.
+D:\projeler\Cerkesce\docs klasoru, projenin tek kanonik dokumantasyon kokudur.
 
 Gecersiz kokler (referans verilmez):
-- E:\home\ProjeDoc_FINAL
-- E:\home\ProjeDoc
-- E:\projeler\Cerkesce\ (kok) - yalnizca docs/ disi dosyalar icin
+- E:\home\ProjeDoc_FINAL (eski konum)
+- E:\home\ProjeDoc (eski konum)
+- E:\projeler\Cerkesce\ (eski konum) - yalnizca docs/ disi dosyalar icin
 
 ---
 
@@ -57,7 +57,7 @@ Her is icin: 1 Karar + 1 Uygulama Kaydi + 1 Kanonik Kaynak
 
 - Tarihsel belgeler -> docs/archive/<yil-ay>-<konu>/
 - Silinmez, tasinir
-- Basi na TARİHSEL notu eklenir
+- Başına TARİHSEL notu eklenir
 
 ---
 
@@ -193,37 +193,5 @@ Bu oturumda **yapilmayan:**
 
 ---
 
-*Son guncelleme: 2026-10-16*
-
----
-
-## 9. Test Sayisi Politikasi
-
-### Kural
-
-Test sayilari belgelerde rastgele yazilmaz. Her belge turu kendi kuralina tabidir:
-
-| Belge turu | Test sayisi | Ornek |
-|---|---|---|
-| Sertifikasyon | Tarihsel sabit - dokunulmaz | CERTIFICATION_*, PHASE_*_COMPLETION |
-| Faz raporu | Faz bazli sabit - dokunulmaz | ADR-0015, PROJECT_ROADMAP |
-| Durum belgesi | Tarihli - guncellenir | AGENTS.md, README.md, PROJECT_STATUS.md |
-| Kanonik baseline | Guncel SSOT | governance/status/CURRENT_TEST_BASELINE.md |
-
-### Toplu Replace Yasagi
-
-193 -> 1028, 231 -> 1028 gibi toplu degistirme yapilmaz.
-Cunku 193/193 bir donemin dogru sonucudur -> tarihsel kayittir.
-
-### Durum Belgesi Formati
-
-Durum belgelerinde test sayisi tarihli yazilir:
-
-**Test:** 1028/1028 PASS (2026-10-16)
-
-> Kanonik kaynak: governance/status/CURRENT_TEST_BASELINE.md
-
----
-
-*Son guncelleme: 2026-10-16*
+*Son guncelleme: 2026-11-23 (tekrar eden "Test Sayisi Politikasi" bölümü kaldırıldı, yol referansları güncellendi)*
 

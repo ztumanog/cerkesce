@@ -19,7 +19,7 @@ Phase 2 = CLOSED.
 - `docs/certification/PHASE_2_CLOSURE_REVIEW_REPORT.md`
 - `docs/governance/status/PHASES.md`
 - `docs/governance/status/ROADMAP.md`
-- `docs/governance/PHASE_TIMELINE_RECONCILIATION.md`
+- `docs/governance/status/PHASE_TIMELINE_RECONCILIATION.md`
 
 **Exit Criteria:**
 - ✅ TranslationEntry

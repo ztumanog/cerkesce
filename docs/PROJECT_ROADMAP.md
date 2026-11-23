@@ -145,7 +145,7 @@
 
 | # | Belge | Konum |
 |---|-------|-------|
-| 1 | PHASE_TIMELINE_RECONCILIATION.md | docs/governance/ |
+| 1 | PHASE_TIMELINE_RECONCILIATION.md | docs/governance/status/ |
 | 2 | MORPHOLOGY_SCOPE.md | docs/morphology/ |
 | 3 | MORPHOLOGY_SCOPE_FREEZE.md | docs/morphology/ |
 | 4 | MORPHOLOGY_ENGINE_CHARTER.md | docs/morphology/ |

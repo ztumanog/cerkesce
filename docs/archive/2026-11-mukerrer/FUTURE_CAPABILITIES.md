@@ -1,3 +1,5 @@
+> **TARİHSEL KAYIT (2026-11-23):** Bu belge kanonik kopyanın mükerreriydi; kanonik kopya `governance/status/FUTURE_CAPABILITIES.md`'dir. Bu kopya, Track B/C durumlarını 'BACKLOG' gösteren eski (2026-10-03 tarihli) sürümdür ve kanonik sürümle çelişiyordu. Çelişki giderme çalışması kapsamında arşive taşındı.
+
 # FUTURE_CAPABILITIES
 
 **Tarih:** 2026-10-03
