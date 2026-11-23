@@ -6,6 +6,7 @@ import { DictionaryProvider, DICTIONARIES_META } from '../../../../src/domain/mo
 import { SyntaxAnalyzer } from '../../../../src/domain/morphology/SyntaxAnalyzer';
 import type { Lexeme } from '../../../../src/domain/linguistic/Lexeme';
 const lexemesData = JSON.parse(fs.readFileSync(path.join(process.cwd(), 'public', 'data', 'linguistic', 'lexemes.json'), 'utf-8'));
+const rootsData = JSON.parse(fs.readFileSync(path.join(process.cwd(), 'public', 'data', 'linguistic', 'roots.json'), 'utf-8'));
 
 export const runtime = 'nodejs';
 export const dynamic = 'force-dynamic';
@@ -13,7 +14,7 @@ export const dynamic = 'force-dynamic';
 const provider = new DictionaryProvider();
 provider.loadLexemes(lexemesData as Partial<Lexeme>[]);
 
-const analyzer = new MorphologyAnalyzer(provider);
+const analyzer = new MorphologyAnalyzer(provider, rootsData, lexemesData);
 const syntaxAnalyzer = new SyntaxAnalyzer();
 
 async function fsFetcher(file: string) {
@@ -76,6 +77,9 @@ export async function POST(req: NextRequest) {
       prefixCount: result?.prefixCount ?? 0,
       suffixCount: result?.suffixCount ?? 0,
       lemmaPos: result?.source ? result.source.toUpperCase() : 'NOUN/LEMMA',
+      lemma: result?.lemma ?? null,
+      rootId: result?.rootId ?? null,
+      rootType: result?.rootType ?? null,
       confidence: result?.confidence ?? 0.95,
       dictionaryEntry: result?.dictionaryEntry ?? null,
       syntax: syntaxData,
@@ -95,3 +99,4 @@ export async function POST(req: NextRequest) {
 export async function GET() {
   return NextResponse.json({ dictionaries: DICTIONARIES_META });
 }
+
