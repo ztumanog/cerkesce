@@ -5,10 +5,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "dev:api": "tsx src/server.ts",
     "build": "next build",
     "start": "next start",
-    "start:api": "tsx src/server.ts",
     "test": "vitest run",
     "test:watch": "vitest",
     "test:cert": "vitest run --config vitest.cert.config.ts",
