@@ -12,6 +12,7 @@ import { DialectConverter } from '@/domain/linguistic/DialectConverter';
 import { normalizePalochka } from '@/domain/utils/normalizePalochka';
 import { DiscoveryFacade } from '@/domain/discovery/services/DiscoveryFacade';
 import { FileBasedConceptGraphRepository } from '@/repository/FileBasedConceptGraphRepository';
+import { DialectAnalyticsService } from '@/domain/analytics/services/DialectAnalyticsService';
 
 interface PageProps {
   params: Promise<{ concept: string }>;
@@ -206,6 +207,31 @@ export default async function ConceptDetailPage({ params }: PageProps) {
   const kbdEquivalent =
     explicitKbd || (primaryWord ? converter.convertWord(primaryWord) : '—');
 
+  // Lehçe dağılım analizi — DialectAnalyticsService ilk kez UI'a bağlanıyor
+  // (backend/UI kesişim taraması, liste kalemi 3). Servis kbd/ady ayrımı yapar;
+  // COMMON sayısını ayrıca gösteriyoruz (servis kapsamı dışı, sadece görünüm).
+  const dialectAnalysis = DialectAnalyticsService.analyzeConceptDialects(
+    conceptKey,
+    trLabel || enLabel || decodedConcept,
+    allItems.map((item) => ({
+      dialectCode: String(item.dialect || '').toUpperCase(),
+      form: String(item.form || ''),
+    }))
+  );
+  const commonCount = allItems.filter(
+    (i) => String(i.dialect || '').toUpperCase() === 'COMMON'
+  ).length;
+  const maxDialectCount = Math.max(
+    dialectAnalysis.eastDialect.length,
+    dialectAnalysis.westDialect.length,
+    commonCount,
+    1
+  );
+  const discrepancyTr: Record<string, string> = {
+    'Missing East Kabardian representation': 'Doğu (Kabardeyce) temsili eksik',
+    'Missing West Adyghe representation': 'Batı (Adıgece) temsili eksik',
+  };
+
   const graphRelated: Array<{
     conceptId: string;
     label: string;
@@ -399,6 +425,48 @@ export default async function ConceptDetailPage({ params }: PageProps) {
             </p>
           </div>
         </div>
+
+        {/* Lehçe Dağılımı — DialectAnalyticsService (backend/UI kesişim taraması) */}
+        {allItems.length > 0 && (
+          <div className="rounded-lg border border-violet-200 bg-violet-50/60 px-4 py-3 space-y-2.5">
+            <div className="flex items-center justify-between gap-2 flex-wrap">
+              <span className="text-[11px] font-semibold uppercase tracking-wider text-violet-700">
+                Lehçe Dağılımı
+              </span>
+              {dialectAnalysis.isPerfectMatch ? (
+                <span className="rounded-full bg-emerald-100 px-2.5 py-0.5 text-[10px] font-bold text-emerald-700">
+                  ✓ Her iki lehçe temsil ediliyor
+                </span>
+              ) : (
+                <span className="rounded-full bg-amber-100 px-2.5 py-0.5 text-[10px] font-bold text-amber-700">
+                  {dialectAnalysis.discrepancies
+                    .map((d: string) => discrepancyTr[d] || d)
+                    .join(' · ')}
+                </span>
+              )}
+            </div>
+            <div className="space-y-1.5">
+              {[
+                { label: 'KBD · Kabardeyce (Doğu)', count: dialectAnalysis.eastDialect.length, bar: 'bg-emerald-500' },
+                { label: 'ADY · Adıgece (Batı)', count: dialectAnalysis.westDialect.length, bar: 'bg-sky-500' },
+                { label: 'COMMON · Ortak', count: commonCount, bar: 'bg-slate-400' },
+              ].map((row) => (
+                <div key={row.label} className="flex items-center gap-2 text-xs">
+                  <span className="w-40 shrink-0 font-semibold text-slate-600 dark:text-slate-300">{row.label}</span>
+                  <div className="h-2 flex-1 overflow-hidden rounded-full bg-slate-200/70 dark:bg-slate-700">
+                    <div
+                      className={`h-full rounded-full ${row.bar}`}
+                      style={{ width: `${Math.round((row.count / maxDialectCount) * 100)}%` }}
+                    />
+                  </div>
+                  <span className="w-16 shrink-0 text-right font-mono text-slate-600 dark:text-slate-300">
+                    {row.count} madde
+                  </span>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
 
         <p className="text-gray-600 dark:text-slate-400 text-sm leading-relaxed">
           Bu kavram için sözlük veritabanında{' '}
