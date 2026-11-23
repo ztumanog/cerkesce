@@ -190,11 +190,23 @@ export class MorphologyAnalyzer {
         rootMorpheme = stemCandidate.slice(0, -1);
         thematicSuffix = { morpheme: vowel, type: 'thematic', glossTr: vowel === 'э' ? 'Geçişli / Tema Ünlüsü (-э)' : 'Geçişsiz / Tema Ünlüsü (-ы)' };
       }
-      const effectiveRoot = stemDictEntry?.root || (prefixRes.prefixes.length > 0 ? rootMorpheme : stemCandidate);
+
+      // MORPH-04B: -р ortaç eki kökün parçası değil
+// кIуэр → кIуэ + р, sadece -р'siz hali sözlükte fiil ise
+let participleSuffix: MorphemeDetail | null = null;
+if (stemCandidate.endsWith('р') && stemCandidate.length >= 3) {
+  const bareStem = normalizePalochka(stemCandidate.slice(0, -1));
+  const bareEntry = this.safeFindEntry(bareStem);
+  if (bareEntry?.pos?.toLowerCase() === 'verb') {
+    rootMorpheme = bareStem;
+    participleSuffix = { morpheme: 'р', type: 'suffix', glossTr: 'Ortaç: -р (giden / -en)' };
+  }
+}
+      const effectiveRoot = participleSuffix ? rootMorpheme : (stemDictEntry?.root || (prefixRes.prefixes.length > 0 ? rootMorpheme : stemCandidate));
       const morphemes: MorphemeDetail[] = [
         ...prefixRes.prefixes.map((p: any) => ({ morpheme: p.morpheme, type: p.type, glossTr: p.glossTr })),
         { morpheme: rootMorpheme, type: 'root', meaningTr: dictEntry?.meaningTr || fullDictEntry?.meaningTr },
-        ...(thematicSuffix ? [thematicSuffix] : []),
+        ...(thematicSuffix ? [thematicSuffix] : []), ...(participleSuffix ? [participleSuffix] : []),
         ...verbSuffRes.suffixes.map((s: any) => ({ morpheme: s.morpheme || s.suffix, type: s.type, glossTr: s.glossTr || s.meaningTr })),
       ];
       const counts = this.calculateCounts(morphemes);
@@ -223,8 +235,7 @@ export class MorphologyAnalyzer {
     const derivRes = this.derivationDecompiler.parse(caseRes.stem);
     const nounRootCandidate = derivRes.stem;
     const dictEntry = this.safeFindEntry(nounRootCandidate) || fullDictEntry;
-    const effectiveRoot = dictEntry?.root || dictEntry?.lemma || nounRootCandidate;
-    const morphemes: MorphemeDetail[] = [];
+const effectiveRoot = dictEntry?.root || dictEntry?.lemma || nounRootCandidate;    const morphemes: MorphemeDetail[] = [];
     if (possessiveRes.possessive) morphemes.push({ morpheme: possessiveRes.possessive.prefix, type: 'possessive', glossTr: possessiveRes.possessive.glossTr });
     morphemes.push({ morpheme: nounRootCandidate, type: 'root', meaningTr: dictEntry?.meaningTr });
     if (derivRes.suffix) morphemes.push({ morpheme: derivRes.suffix, type: 'derivation', glossTr: derivRes.meaningTr });
@@ -277,6 +288,7 @@ adverb: { input: rawInput, stem: normalizedInput, suffix: '', type: 'bare', conf
     return { input: rawInput, word: rawInput, root: effectiveRoot, lemma: extra.lemma, rootId: extra.rootId, rootType: extra.rootType, source: 'noun', nounCase: caseRes, derivation: derivRes, possessive: possessiveRes.possessive, plural: possessiveRes.plural, dictionaryEntry: dictEntry, confidence: nounConfidence, morphemes, ...counts };
   }
 }
+
 
 
 

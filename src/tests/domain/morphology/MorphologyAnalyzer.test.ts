@@ -48,3 +48,15 @@ describe('MORPH-04A Adverb Gate', () => {
 });
 
 
+
+describe('MORPH-04B Participle Root', () => {
+    const analyzer = new MorphologyAnalyzer();
+
+    it('кIуэр → kök кIуэ olmalı, кIуэр değil', () => {
+        const r = analyzer.analyze('кIуэр');
+        expect(r.root).toBe('кӀуэ');
+        // bos analyzer'da source noun olur, API'de verb - sadece kok test ediliyor
+    });
+});
+
+
