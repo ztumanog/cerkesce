@@ -10,6 +10,8 @@ import { CytoscapeProjectionAdapter } from '@/domain/discovery/adapters/Cytoscap
 import { ConceptGraphCanvas, CytoscapeElementData } from '@/ui/components/discovery/ConceptGraphCanvas';
 import { DialectConverter } from '@/domain/linguistic/DialectConverter';
 import { normalizePalochka } from '@/domain/utils/normalizePalochka';
+import { DiscoveryFacade } from '@/domain/discovery/services/DiscoveryFacade';
+import { InMemoryConceptGraphRepository } from '@/repository/InMemoryConceptGraphRepository';
 
 interface PageProps {
   params: Promise<{ concept: string }>;
@@ -125,6 +127,27 @@ export default async function ConceptDetailPage({ params }: PageProps) {
   const familyIds = new Set(allItems.map((l) => l.wordFamilyId).filter(Boolean));
   const rootIds = new Set(allItems.flatMap((l) => l.rootIds || []).filter(Boolean));
   const itemIds = new Set(allItems.map((l) => l.id));
+
+  // --- Görev 1: Kavram keşif zinciri (DiscoveryFacade) ---
+  // Not: InMemoryConceptGraphRepository ~57 kavramlık tohumlanmış graf içerir; kavram orada
+  // yoksa veya mapper eşleyemezse boş döner ve sayfa mevcut mantıkla devam eder (fallback).
+  let discoveryRelated: Array<{ conceptId: string; score: number; relationType?: string }> = [];
+  try {
+    const discoveryFacade = new DiscoveryFacade(new InMemoryConceptGraphRepository());
+    const discovery = await discoveryFacade.explore(conceptKey, {
+      maxDepth: 2,
+      hints: [decodedConcept, trLabel, ...seedWords.slice(0, 3)].filter(Boolean),
+    });
+    discoveryRelated = (discovery.rankedRelatedConcepts || [])
+      .filter((r: any) => r?.conceptId && String(r.conceptId).toUpperCase() !== conceptKey)
+      .map((r: any) => ({
+        conceptId: String(r.conceptId),
+        score: typeof r.score === 'number' ? r.score : 0.5,
+        relationType: r.relationType,
+      }));
+  } catch {
+    discoveryRelated = []; // keşif başarısızsa sayfa eski davranışla devam eder
+  }
 
   const relatedLexemes =
     familyIds.size > 0 || rootIds.size > 0
@@ -253,6 +276,27 @@ export default async function ConceptDetailPage({ params }: PageProps) {
       parentConceptId: conceptKey,
       relationType: DiscoveryRelationType.RELATED,
       score: 0.8,
+    });
+  });
+
+  // --- Görev 1: DiscoveryFacade sonuçlarını grafa ve ilişki listesine birleştir ---
+  discoveryRelated.forEach((dr) => {
+    const nodeId = String(dr.conceptId || '').trim();
+    if (!nodeId || seenGraphIds.has(nodeId)) return;
+    seenGraphIds.add(nodeId);
+    const drTr = normalizeGlossLabel(String(conceptTr[nodeId.toUpperCase()] || conceptWords[nodeId.toUpperCase()]?.tr || ""));
+    graphRelated.push({
+      conceptId: nodeId,
+      label: drTr ? `${drTr} [${nodeId}]` : nodeId,
+      parentConceptId: conceptKey,
+      relationType: DiscoveryRelationType.RELATED,
+      score: Math.min(0.95, Math.max(0.5, dr.score)),
+    });
+    neighborConcepts.push({
+      targetId: nodeId,
+      targetConcept: nodeId,
+      relationType: DiscoveryRelationType.RELATED,
+      score: dr.score,
     });
   });
 

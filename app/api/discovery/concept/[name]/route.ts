@@ -1,6 +1,6 @@
 ﻿import { NextRequest, NextResponse } from 'next/server';
 import { DiscoveryFacade } from '@/domain/discovery/services/DiscoveryFacade';
-import { createLexemeLookupAdapter } from '@/domain/discovery/adapters/createLexemeLookupAdapter';
+import { InMemoryConceptGraphRepository } from '@/repository/InMemoryConceptGraphRepository';
 import type { DiscoveryResultDTO } from '@/domain/discovery/dto/DiscoveryResultDTO';
 
 export async function GET(
@@ -11,8 +11,12 @@ export async function GET(
     const { name } = await params;
     const decodedName = decodeURIComponent(name);
 
-    const lookupAdapter = createLexemeLookupAdapter();
-    const facade = new DiscoveryFacade(lookupAdapter);
+    // DUZELTME (Gorev 1): GraphTraversalService.traverse() IConceptGraphRepository.getNeighbors()
+    // cagirir (GraphTraversalService.ts:60); LexemeConceptLookupAdapter yalnizca ConceptLookupPort
+    // implement eder, getNeighbors yoktu — rota cagrilsaydi traversal'de hata uretirdi.
+    // Dogru kurulum: InMemoryConceptGraphRepository (testlerin ve Express controller'in deseni).
+    // QuerySemanticMapper'i facade kendi icinde createLexemeLookupAdapter ile kurar.
+    const facade = new DiscoveryFacade(new InMemoryConceptGraphRepository());
 
     const result: DiscoveryResultDTO = await facade.explore(decodedName);
 

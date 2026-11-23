@@ -13,6 +13,8 @@ import { ConceptGraphAdapter } from '@/domain/discovery/adapters/ConceptGraphAda
 import { CytoscapeProjectionAdapter } from '@/domain/discovery/adapters/CytoscapeProjectionAdapter';
 import { normalizePalochka } from '@/domain/utils/normalizePalochka';
 import { FederatedGraphService } from '@/domain/federation/services/FederatedGraphService';
+import { DiscoveryFacade } from '@/domain/discovery/services/DiscoveryFacade';
+import { InMemoryConceptGraphRepository } from '@/repository/InMemoryConceptGraphRepository';
 
 interface PageProps {
   params: Promise<{ concept: string }>; // veya Next 13/14'e göre senkron alıyorsan düzeltilebilir
@@ -64,6 +66,26 @@ export default async function ConceptGraphPage({ params }: PageProps) {
 
   const inferredEn = formatTranslation(matchedLexemes.find((l) => formatTranslation(l.translations?.en))?.translations?.en);
   const enLabel = String(meta?.en || inferredEn || decodedConcept).trim();
+
+  // --- Görev 1: Kavram keşif zinciri (DiscoveryFacade) ---
+  // Not: InMemoryConceptGraphRepository ~57 kavramlık tohumlanmış graf içerir; kavram orada
+  // yoksa veya mapper eşleyemezse boş döner ve sayfa mevcut mantıkla devam eder (fallback).
+  let discoveryRelated: Array<{ conceptId: string; score: number }> = [];
+  try {
+    const discoveryFacade = new DiscoveryFacade(new InMemoryConceptGraphRepository());
+    const discovery = await discoveryFacade.explore(conceptKey, {
+      maxDepth: 2,
+      hints: [decodedConcept, String(meta?.tr || ''), enLabel, ...seedWords.slice(0, 3)].filter(Boolean),
+    });
+    discoveryRelated = (discovery.rankedRelatedConcepts || [])
+      .filter((r: any) => r?.conceptId && String(r.conceptId).toUpperCase() !== conceptKey)
+      .map((r: any) => ({
+        conceptId: String(r.conceptId),
+        score: typeof r.score === 'number' ? r.score : 0.5,
+      }));
+  } catch {
+    discoveryRelated = []; // keşif başarısızsa sayfa eski davranışla devam eder
+  }
 
   const existingForms = new Set(matchedLexemes.map((l) => normalizePalochka(String(l.form || '')).toLowerCase()));
   const synthetic = seedWords
@@ -139,6 +161,22 @@ export default async function ConceptGraphPage({ params }: PageProps) {
       }
     }
   }
+
+  // --- Görev 1: DiscoveryFacade sonuçlarını grafa birleştir ---
+  // Not: bu sayada relationType string-literal ('RELATED'), enum değil; seenIds tekilleştirme kümesi.
+  discoveryRelated.forEach((dr) => {
+    const nodeId = String(dr.conceptId || '').trim();
+    if (!nodeId || seenIds.has(nodeId)) return;
+    seenIds.add(nodeId);
+    const drTr = String(conceptWords[nodeId.toUpperCase()]?.tr || '').trim();
+    graphRelated.push({
+      conceptId: nodeId,
+      label: drTr ? `${drTr} [${nodeId}]` : nodeId,
+      parentConceptId: conceptKey,
+      relationType: 'RELATED',
+      score: Math.min(0.95, Math.max(0.5, dr.score)),
+    });
+  });
 
   // Federasyon: Doğu Kabarday (KBD) + Batı Adige (ADY) düğümlerini id ile tekilleştir.
   // Not: LexemeDialect kanonik değerleri 'KBD' | 'ADY' | 'COMMON' (LexemeIdentity.normalizeDialect);

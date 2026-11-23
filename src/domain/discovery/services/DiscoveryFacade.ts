@@ -36,9 +36,6 @@ export class DiscoveryFacade {
   }
 
   public async explore(queryOrConceptId: string, options?: ExplorationOptions): Promise<DiscoveryResultDTO> {
-    console.log('=== DiscoveryFacade.explore ===');
-    console.log('queryOrConceptId:', queryOrConceptId);
-    console.log('options:', options);
     const isConceptDirect = queryOrConceptId.startsWith('01A') || queryOrConceptId.startsWith('CONCEPT_');
 
     let targetConceptId = queryOrConceptId;
