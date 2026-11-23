@@ -14,7 +14,8 @@
     "test:cert": "vitest run --config vitest.cert.config.ts",
     "test:all": "npm test && npm run test:cert",
     "ts-node": "ts-node",
-    "lint": "eslint"
+    "lint": "eslint",
+    "check:unused": "bash scripts/check-unused-modules.sh"
   },
   "dependencies": {
     "@capacitor/android": "^8.5.0",

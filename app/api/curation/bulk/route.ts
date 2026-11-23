@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import fs from "fs";
 import path from "path";
 import { validateCuration } from "../../../../src/lib/curationValidate";
+import { appendAudit, type AuditDiffEntry, type AuditEntry } from "../../../../src/lib/curation/auditLog";
 const LEX_PATH = path.join(process.cwd(), "public/data/linguistic/lexemes.json");
 const ROOTS_PATH = path.join(process.cwd(), "public/data/linguistic/roots.json");
 const FAM_PATH = path.join(process.cwd(), "public/data/linguistic/word_families.json");
@@ -27,6 +28,7 @@ export async function POST(req: Request) {
     const oldFamById = new Map<string, string>();
     for (const u of updates) { const r0 = byId.get(String(u.id)); if (r0) oldFamById.set(String(u.id), String((r0 as any).wordFamilyId || "")); }
     const ok: string[] = [];
+    const auditEntries: AuditEntry[] = [];
     for (const u of updates) {
       const rec = byId.get(String(u.id));
       if (!rec) { errors.push({ id: String(u.id), error: "ID bulunamadi" }); continue; }
@@ -58,6 +60,19 @@ export async function POST(req: Request) {
         if (soft.length) warnings.push({ id: String(u.id), warning: "Eski kayitta kural disi deger var (yazilan alan degil): " + soft.map(i => i.message).join("; ") });
         if (blocking.length) { errors.push({ id: String(u.id), error: blocking.map(i => i.message).join("; ") }); continue; }
       }
+      // AUDIT-02: degisim onceki degerleri yakala (alan bazli diff icin).
+      // translations/dialectVariants nesne yamalari alt alanlara acilir; "tr" -> translations.tr.
+      const before: Record<string, unknown> = {};
+      for (const k of Object.keys(patch)) {
+        const v = (patch as Record<string, unknown>)[k];
+        if ((k === "translations" || k === "dialectVariants") && v && typeof v === "object" && !Array.isArray(v)) {
+          for (const sk of Object.keys(v as object)) before[`${k}.${sk}`] = (rec as any)?.[k]?.[sk];
+        } else if (k === "tr") {
+          before["translations.tr"] = (rec as any)?.translations?.tr;
+        } else {
+          before[k] = (rec as any)[k];
+        }
+      }
       for (const [k, v] of Object.entries(patch)) {
         if (k === "translations" && v && typeof v === "object") {
           (rec as Record<string, unknown>).translations = {
@@ -74,6 +89,26 @@ export async function POST(req: Request) {
           };
         }
         else if (k === "tr" && typeof v === "string") { (rec as Record<string, unknown>).translations = { ...(((rec as Record<string, unknown>).translations as Record<string, unknown>) || {}), tr: v }; } else (rec as any)[k] = v;
+      }
+      // AUDIT-02: degisim sonrasi diff hesapla - yalnizca gercekten degisen alanlar.
+      const auditDiff: AuditDiffEntry[] = [];
+      for (const [f, oldV] of Object.entries(before)) {
+        const newV = f.includes(".")
+          ? f.split(".").reduce((o: any, key) => (o == null ? undefined : o[key]), rec)
+          : (rec as any)[f];
+        if (JSON.stringify(oldV ?? null) !== JSON.stringify(newV ?? null)) {
+          auditDiff.push({ field: f, oldValue: oldV ?? "", newValue: newV ?? "" });
+        }
+      }
+      if (auditDiff.length) {
+        auditEntries.push({
+          timestamp: new Date().toISOString(),
+          action: "CURATION_BULK_UPDATE",
+          lexemeId: String(u.id),
+          form: s((rec as any).form || ""),
+          diff: auditDiff,
+          source: "curation-bulk",
+        });
       }
       ok.push(String(u.id));
     }
@@ -185,6 +220,11 @@ export async function POST(req: Request) {
     fs.copyFileSync(LEX_PATH, bak);
     const out = Array.isArray(data) ? list : { ...(data as any), lexemes: list };
     fs.writeFileSync(LEX_PATH, JSON.stringify(out, null, 2), "utf-8");
+    try {
+      appendAudit(auditEntries);
+    } catch {
+      warnings.push({ id: "AUDIT", warning: "Audit log yazilamadi, ana veri yazildi." });
+    }
     return NextResponse.json({ ok: true, applied: ok.length, failed: errors.length, errors, warnings, backup: bak, backupRoots: bakRoot, createdRoots, createdFams, note: "commit terminalden" });
   } catch (e: any) {
     return NextResponse.json({ ok: false, error: e?.message ?? "hata" }, { status: 500 });

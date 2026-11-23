@@ -11,6 +11,10 @@
  * 2. Kismi basari (1 gecerli + 1 reddedilen) -> 200 kismi, ama reddedilen kayit
  *    yan etki uretmemeli. Bu senaryo duzeltme oncesi BASARISIZDI: aile senkronu
  *    ve kok senkronu 'updates' listesinin tamamini dolasiyordu.
+ *
+ * AUDIT-02: uygulanan kayitlar audit_log.jsonl'a yazilir (alan bazli diff ile),
+ * reddedilen kayitlar audit entry uretmez. Audit yazimi src/lib/curation/auditLog.ts
+ * modulunden yapilir (tek format otoritesi).
  */
 
 import { describe, it, expect, vi, beforeEach } from "vitest";
@@ -20,6 +24,7 @@ import path from "path";
 const LEX_PATH = path.join(process.cwd(), "public/data/linguistic/lexemes.json");
 const ROOTS_PATH = path.join(process.cwd(), "public/data/linguistic/roots.json");
 const FAM_PATH = path.join(process.cwd(), "public/data/linguistic/word_families.json");
+const AUDIT_PATH = path.join(process.cwd(), "public/data/linguistic/audit_log.jsonl");
 
 // Fixtures: L-OK gecerli bir yamaya acik; L-BAD reddi tetikleyecek (conceptId: "")
 // ve reddedilirse yan etki doguracak veriler tasiyor (WF-2'ye tasinma + yetim kok).
@@ -69,6 +74,12 @@ function installFsMocks() {
   vi.spyOn(fs, "writeFileSync").mockImplementation(((p: any, content: any) => {
     writes[String(p)] = String(content);
   }) as any);
+  // AUDIT-02: appendFileSync mock'u OLMADAN testler GERCEK audit_log.jsonl'a yazar.
+  // Append semantigi: ayni dosyaya yazilar birikir.
+  vi.spyOn(fs, "appendFileSync").mockImplementation(((p: any, content: any) => {
+    const key = String(p);
+    writes[key] = (writes[key] || "") + String(content);
+  }) as any);
   vi.spyOn(fs, "copyFileSync").mockImplementation((() => {}) as any);
   vi.spyOn(fs, "existsSync").mockImplementation(((p: any) => String(p) in files || realExists(p)) as any);
 }
@@ -102,6 +113,8 @@ describe("AUDIT-01: bulk route yan etkileri yalnizca basarili kayitlar icin", ()
     expect(writes[LEX_PATH]).toBeUndefined();
     expect(writes[FAM_PATH]).toBeUndefined();
     expect(writes[ROOTS_PATH]).toBeUndefined();
+    // AUDIT-02: hicbir kayit uygulanmadigi icin audit log'a da yazilmaz
+    expect(writes[AUDIT_PATH]).toBeUndefined();
   });
 
   it("kismi basari: reddedilen kayit aile/kok yan etkisi uretmez, gecerli kayit uygulanir", async () => {
@@ -136,5 +149,17 @@ describe("AUDIT-01: bulk route yan etkileri yalnizca basarili kayitlar icin", ()
     // AUDIT-01: reddedilen kayit yuzunden kok dosyasi yazilmamali
     // (duzeltme oncesi: L-BAD'in mevcut R-BAD-ORPHAN koku roots.json'a ekleniyordu)
     expect(writes[ROOTS_PATH]).toBeUndefined();
+
+    // AUDIT-02: yalnizca uygulanan kayit icin audit entry yazilir (alan bazli diff ile)
+    expect(writes[AUDIT_PATH]).toBeDefined();
+    const auditLines = String(writes[AUDIT_PATH]).trim().split("\n").filter(Boolean);
+    expect(auditLines).toHaveLength(1);
+    const auditEntry = JSON.parse(auditLines[0]);
+    expect(auditEntry.lexemeId).toBe("L-OK");
+    expect(auditEntry.action).toBe("CURATION_BULK_UPDATE");
+    expect(auditEntry.diff).toHaveLength(1);
+    expect(auditEntry.diff[0].field).toBe("translations.tr");
+    expect(auditEntry.diff[0].oldValue).toBe("gecerli kayit");
+    expect(auditEntry.diff[0].newValue).toBe("yeni ceviri");
   });
 });
