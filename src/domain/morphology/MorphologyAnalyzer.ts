@@ -234,7 +234,7 @@ export class MorphologyAnalyzer {
 
     // 6. ZARF / ORTAC - sadece isim guveni dusukse fallback (isim yolunu bozmaz)
     const nounConfidence = dictEntry ? 0.95 : 0.80;
-    if (!dictEntry) {
+    if (!dictEntry && !derivRes.suffix && caseRes.case === 'bare' && !possessiveRes.possessive && !possessiveRes.plural) {
       try {
         const ar = this.adverbDecompiler.decompile(input);
         if (ar && ar.type !== 'bare' && ar.stem && ar.stem.length >= 2) {
@@ -255,4 +255,5 @@ export class MorphologyAnalyzer {
     return { input: rawInput, word: rawInput, root: effectiveRoot, lemma: extra.lemma, rootId: extra.rootId, rootType: extra.rootType, source: 'noun', nounCase: caseRes, derivation: derivRes, possessive: possessiveRes.possessive, plural: possessiveRes.plural, dictionaryEntry: dictEntry, confidence: nounConfidence, morphemes, ...counts };
   }
 }
+
 
