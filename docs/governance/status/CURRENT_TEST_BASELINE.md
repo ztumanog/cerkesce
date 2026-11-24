@@ -1,6 +1,6 @@
 # Guncel Test Baseline
 
-**Tarih:** 2026-11-23
+**Tarih:** 2026-11-24
 **Durum:** KANONIK (SSOT)
 
 ---
@@ -9,16 +9,16 @@
 
 | Olcut | Deger |
 |---|---|
-| Ana Test Files | 195 |
-| Ana Tests | 1044 |
-| Ana PASS | 1044 |
+| Ana Test Files | 199 |
+| Ana Tests | 1075 |
+| Ana PASS | 1075 |
 | Cert Test Files | 26 |
 | Cert Tests | 102 |
 | Cert PASS | 102 |
 | FAIL | 0 |
 
 **Komut:** `npm test` + `npm run test:cert`
-**Tarih:** 2026-11-23 17:41 (ana) / 02:33 (cert)
+**Tarih:** 2026-11-24 13:31 (ana) / 13:32 (cert)
 
 ---
 
@@ -49,9 +49,11 @@
 | **2026-11-23** | **1006 (+102 cert)** | **-79** | Budanan altyapı servisleriyle ilişiksiz testler silindi (commit 3bf3f96, 26 yetim test) + sonraki test düzenlemeleri |
 | 2026-11-23 (öğleden sonra) | 1040 | +34 | curationValidate birim testleri (+32), bulk-route AUDIT-02 senaryoları, gün içindeki test düzenlemeleri |
 | **2026-11-23 15:17** | **1039 (+102 cert)** | **-1** | Yetim Hotfix001_DataLoading.test.ts silindi (dictionaryService modülüyle birlikte — check-unused-modules temizliği) |
+| 2026-11-23 17:41 | 1044 | +5 | Moderasyon test izolasyonu, gün içi düzenlemeler (commit fd66580: taban 1044) |
+| **2026-11-24 13:31** | **1075 (+102 cert)** | **+31** | Morfoloji inflect bağlantı testleri (InflectionWiring, +10), moderasyon/kavram-agi gün içi testleri, yonetim merkezleştirme ve P4-C export commitleriyle doğrulandı (tsc 0 hata) |
 
-> **Not (2026-11-23):** Ana suit `npm test` (vitest run), sertifika suiti `npm run test:cert`
-> (vitest.cert.config.ts) ayrı çalışır. Toplam = 1039 + 102 = 1141.
+> **Not (2026-11-24):** Ana suit `npm test` (vitest run), sertifika suiti `npm run test:cert`
+> (vitest.cert.config.ts) ayrı çalışır. Toplam = 1075 + 102 = 1177.
 
 ---
 
