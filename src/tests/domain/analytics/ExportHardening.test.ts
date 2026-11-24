@@ -1,7 +1,18 @@
 import { describe, it, expect } from 'vitest';
-import { ZipExporterService } from '../../../domain/analytics/services/ZipExporterService';
 import { CsvExporterService } from '../../../domain/analytics/services/CsvExporterService';
+import { CanvasPngRendererService } from '../../../domain/analytics/services/CanvasPngRendererService';
 import { GenericConceptNetworkDTO } from '../../../domain/analytics/services/ExportEngineService';
+
+/**
+ * P4-C: ZipExporterService silindi — gerçek ZIP üretmiyordu (stub: manifest +
+ * base64; kendi dokümantasyonu "gerçek ZIP için archiver/jszip gerekir" diyordu)
+ * ve yaptığının tamamı BatchExportService tarafından kapsanıyordu. ZIP-00x
+ * testleri bu nedenle kaldırıldı.
+ *
+ * CsvExporter P4-C ile GraphExport'a ("CSV indir" butonu) bağlandı;
+ * CanvasPngRendererService P4-C ile PNG akışına bağlandı (tarayıcı-güvenli
+ * svgToPngDataUri düzeltmesiyle).
+ */
 
 describe('Phase 7.3 - Export Hardening', () => {
   const sampleNetwork: GenericConceptNetworkDTO = {
@@ -13,39 +24,6 @@ describe('Phase 7.3 - Export Hardening', () => {
       { id: 'E1', source: 'WATER', target: 'ICE', relationType: 'STATE_OF' }
     ]
   };
-
-  const sampleItems = [
-    { id: 'NET_WATER', network: sampleNetwork },
-    { id: 'NET_ICE', network: sampleNetwork }
-  ];
-
-  it('ZIP-001: ZIP export uretir', () => {
-    const result = ZipExporterService.exportZip(sampleItems);
-    expect(result.filename).toContain('.zip');
-    expect(result.mimeType).toBe('application/zip');
-    expect(result.itemCount).toBe(2);
-  });
-
-  it('ZIP-002: ZIP base64 dondurur', () => {
-    const result = ZipExporterService.exportZip(sampleItems);
-    expect(result.base64.length).toBeGreaterThan(0);
-  });
-
-  it('ZIP-003: ZIP manifest dondurur', () => {
-    const manifest = ZipExporterService.getManifest(sampleItems);
-    const parsed = JSON.parse(manifest);
-    expect(parsed.itemCount).toBe(2);
-    expect(parsed.version).toBe('1.0.0');
-  });
-
-  it('ZIP-004: Bos ZIP', () => {
-    const result = ZipExporterService.exportZip([]);
-    expect(result.itemCount).toBe(0);
-  });
-
-  it('ZIP-005: Gecersiz input hata verir', () => {
-    expect(() => ZipExporterService.exportZip(null as any)).toThrow();
-  });
 
   it('TSV-001: TSV export uretir', () => {
     const tsv = CsvExporterService.exportNetworkTsv(sampleNetwork);
@@ -59,9 +37,30 @@ describe('Phase 7.3 - Export Hardening', () => {
     expect(pipe).toContain('node|WATER');
   });
 
+  it('CSV-001: exportNetwork düğüm + kenar satırları üretir (GraphExport butonu)', () => {
+    const csv = CsvExporterService.exportNetwork(sampleNetwork);
+    expect(csv).toContain('type,id,source,target,label,relationType');
+    expect(csv).toContain('node,WATER,,,ПСЫ,');
+    expect(csv).toContain('edge,,WATER,ICE,,STATE_OF');
+  });
+
   it('HARD-001: Adigece karakterler korunur', () => {
     const tsv = CsvExporterService.exportNetworkTsv(sampleNetwork);
     expect(tsv).toContain('ПСЫ');
     expect(tsv).toContain('МЫЛ');
+  });
+
+  it('PNG-001: CanvasPngRenderer SVG data URI döndürür (rasterizasyon tarayıcıda)', () => {
+    const uri = CanvasPngRendererService.render(sampleNetwork, { width: 800, height: 600 });
+    expect(uri.startsWith('data:image/svg+xml;base64,')).toBe(true);
+    expect(uri.length).toBeGreaterThan(100);
+  });
+
+  it('PNG-002: renderHighRes ölçeklenmiş boyut üretir', () => {
+    const uri = CanvasPngRendererService.renderHighRes(sampleNetwork, { width: 800, height: 600, scale: 2 });
+    expect(uri.startsWith('data:image/svg+xml;base64,')).toBe(true);
+    // SVG içinde ölçeklenmiş boyut görünmeli
+    const decoded = atob(uri.split(',')[1]);
+    expect(decoded).toContain('width="1600"');
   });
 });

@@ -35,10 +35,26 @@ export class CanvasPngRendererService {
   }
 
   /**
-   * SVG'yi PNG data URI'ye cevirir (client-side icin).
+   * SVG'yi data URI'ye cevirir (client-side icin).
+   *
+   * P4-B5/P4-C düzeltmesi: Buffer yalnızca Node'da vardir; tarayicida
+   * TextEncoder + btoa fallback'u kullanilir (SvgLayoutEngineService._toBase64
+   * deseni). Önceki hali client'ta ReferenceError üretiyordu.
+   *
+   * NOT: Bu metodun döndürdügü URI SVG içeriklidir (image/svg+xml) — gercek
+   * PNG rasterizasyonu tarayicida canvas ile yapilir (GraphExport bileşenindeki
+   * rasterizeSvgToPng). Servis SVG üretim ve kodlama katmanidir.
    */
   static svgToPngDataUri(svg: string): string {
-    const base64 = Buffer.from(svg).toString('base64');
+    let base64: string;
+    if (typeof Buffer !== 'undefined') {
+      base64 = Buffer.from(svg, 'utf-8').toString('base64');
+    } else {
+      const bytes = new TextEncoder().encode(svg);
+      let binary = '';
+      for (let i = 0; i < bytes.length; i++) binary += String.fromCharCode(bytes[i]);
+      base64 = btoa(binary);
+    }
     return `data:image/svg+xml;base64,${base64}`;
   }
 
