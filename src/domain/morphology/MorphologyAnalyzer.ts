@@ -22,6 +22,27 @@ import { AdverbDecompiler, AdverbResult } from './AdverbDecompiler';
 import { ParticipleDecompiler, ParticipleResult } from './ParticipleDecompiler';
 import { RootExtractor } from './RootExtractor';
 import type { Root } from '../linguistic/Root';
+import { InflectionHandler, Inflection, InflectionResult } from './InflectionHandler';
+
+/**
+ * P4-B5: Genel çekim tablosu — NounCaseParser sonek envanteriyle hizalı.
+ * Yalnızca hiçbir özel çözümleyici tutmadığında (yalın + sözlükte yok)
+ * fallback tahmin için kullanılır; tanınmış yolları asla ezmez.
+ */
+const GENERIC_INFLECTIONS: Inflection[] = [
+  { type: 'case', suffix: 'хэмкӀэ', meaning: 'çoğul + belirtili işletme (birlikte)' },
+  { type: 'case', suffix: 'хэм', meaning: 'çoğul + ergatif (belirtili)' },
+  { type: 'case', suffix: 'хэр', meaning: 'çoğul + belirtili yalın' },
+  { type: 'case', suffix: 'хэу', meaning: 'çoğul + zarf durumu' },
+  { type: 'case', suffix: 'мкӀэ', meaning: 'belirtili işletme (birlikte)' },
+  { type: 'case', suffix: 'мчӀэ', meaning: 'belirtili işletme (birlikte)' },
+  { type: 'case', suffix: 'кӀэ', meaning: 'işletme (birlikte)' },
+  { type: 'case', suffix: 'чӀэ', meaning: 'işletme (birlikte)' },
+  { type: 'case', suffix: 'рауэ', meaning: 'zarf durumu (gibi)' },
+  { type: 'case', suffix: 'м', meaning: 'ergatif (belirtili)' },
+  { type: 'case', suffix: 'р', meaning: 'belirtili yalın' },
+  { type: 'case', suffix: 'у', meaning: 'zarf durumu' },
+];
 
 export interface MorphemeDetail {
   morpheme: string;
@@ -53,6 +74,12 @@ export interface MorphologyResult {
   morphemes?: MorphemeDetail[];
   prefixCount: number;
   suffixCount: number;
+  /**
+   * Genel çekim analizi (P4-B5): özel çözümleyicilerin hiçbiri tutmadığında
+   * (yalın + sözlükte yok) morphology/InflectionHandler ile sonek tahmini.
+   * base + tanınan eklerin anlamları.
+   */
+  genericInflection?: InflectionResult;
 }
 
 export class MorphologyAnalyzer {
@@ -68,6 +95,7 @@ export class MorphologyAnalyzer {
   private adverbDecompiler: AdverbDecompiler;
   private participleDecompiler: ParticipleDecompiler;
   private rootExtractor: RootExtractor | null = null;
+  private genericInflectionHandler: InflectionHandler;
 
   constructor(dictProvider?: any, roots?: Root[], lexemesForRoot?: any[]) {
     this.caseParser = new NounCaseParser();
@@ -80,6 +108,7 @@ export class MorphologyAnalyzer {
     this.numeralDecompiler = new NumeralDecompiler();
     this.adverbDecompiler = new AdverbDecompiler();
     this.participleDecompiler = new ParticipleDecompiler();
+    this.genericInflectionHandler = new InflectionHandler(GENERIC_INFLECTIONS);
 
     if (Array.isArray(roots) && roots.length > 0) {
       try { this.rootExtractor = new RootExtractor(roots, lexemesForRoot || []); } catch { this.rootExtractor = null; }
@@ -285,7 +314,31 @@ adverb: { input: rawInput, stem: normalizedInput, suffix: '', type: 'bare', conf
     }
 
     const extra = this.enrichWithLemmaAndRoot(input, effectiveRoot, dictEntry);
-    return { input: rawInput, word: rawInput, root: effectiveRoot, lemma: extra.lemma, rootId: extra.rootId, rootType: extra.rootType, source: 'noun', nounCase: caseRes, derivation: derivRes, possessive: possessiveRes.possessive, plural: possessiveRes.plural, dictionaryEntry: dictEntry, confidence: nounConfidence, morphemes, ...counts };
+
+    // P4-B5: kelime "otoritesiz" ise (sözlükte yok + türetme yok + sahiplik yok)
+    // genel çekim analiziyle taban + sonek hipotezi ekle — morphology/InflectionHandler
+    // ilk kez üretim akışına bağlandı. Tanınmış yolları ezmez, yalnızca zenginleştirir.
+    let genericInflection: InflectionResult | undefined;
+    const noAuthority =
+      !dictEntry && !derivRes.suffix && !possessiveRes.possessive && !possessiveRes.plural;
+    if (noAuthority) {
+      const generic = this.genericInflectionHandler.analyze(input);
+      if (generic.matched) {
+        genericInflection = generic;
+        // Morpheme listesini yalnızca başka hiçbir katman sonek morpheme'i
+        // eklemediyse doldur (çift sayımı önle).
+        const hasSuffixMorphemes = morphemes.some((m) => m.type === 'suffix' || m.type === 'case');
+        if (!hasSuffixMorphemes) {
+          morphemes.push({ morpheme: generic.base, type: 'root' });
+          for (const infl of generic.inflections) {
+            morphemes.push({ morpheme: infl.suffix, type: 'suffix', glossTr: infl.meaning });
+          }
+        }
+      }
+    }
+    const finalCounts = this.calculateCounts(morphemes);
+
+    return { input: rawInput, word: rawInput, root: effectiveRoot, lemma: extra.lemma, rootId: extra.rootId, rootType: extra.rootType, source: 'noun', nounCase: caseRes, derivation: derivRes, possessive: possessiveRes.possessive, plural: possessiveRes.plural, dictionaryEntry: dictEntry, confidence: nounConfidence, morphemes, ...finalCounts, genericInflection };
   }
 }
 

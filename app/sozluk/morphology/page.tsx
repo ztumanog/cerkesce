@@ -1,13 +1,54 @@
 'use client';
 
 import React, { useState } from 'react';
-import { Search, Layers, BookOpen } from 'lucide-react';
+import { Search, Layers, BookOpen, Sparkles } from 'lucide-react';
 import { SyntaxTree } from '@/components/morphology/SyntaxTree';
 
 export default function MorphologyPage() {
   const [word, setWord] = useState('');
   const [loading, setLoading] = useState(false);
   const [result, setResult] = useState<any>(null);
+
+  // --- Fiil Çekimi Üret (P4-B5: linguistic/InflectionHandler üretim akışına bağlandı) ---
+  const [verb, setVerb] = useState('');
+  const [tense, setTense] = useState('present');
+  const [dialect, setDialect] = useState('kabardian');
+  const [negative, setNegative] = useState(false);
+  const [causative, setCausative] = useState(false);
+  const [inflectResult, setInflectResult] = useState<any>(null);
+  const [inflectLoading, setInflectLoading] = useState(false);
+  const [inflectError, setInflectError] = useState('');
+
+  const TENSE_LABELS: Record<string, string> = {
+    infinitive: 'Mastar (-mak/-mek)',
+    present: 'Şimdiki zaman',
+    past: 'Geçmiş zaman',
+    future: 'Gelecek zaman',
+    imperative: 'Emir',
+    conditional: 'Koşul',
+    gerund: 'Zarf-fiil (-arak/-erek)',
+  };
+
+  const handleInflect = async () => {
+    if (!verb.trim()) return;
+    setInflectLoading(true);
+    setInflectError('');
+    try {
+      const res = await fetch('/api/morphology/inflect', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ verb: verb.trim(), tenseOrMood: tense, dialect, negative, causative }),
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || 'Çekim üretilemedi');
+      setInflectResult(data);
+    } catch (err: any) {
+      setInflectError(err.message);
+      setInflectResult(null);
+    } finally {
+      setInflectLoading(false);
+    }
+  };
 
   const handleAnalyze = async (targetWord?: string) => {
     const query = targetWord || word;
@@ -92,6 +133,99 @@ export default function MorphologyPage() {
           >
             {loading ? 'Çözümleniyor...' : 'Çözümle'}
           </button>
+        </div>
+
+        {/* Fiil Çekimi Üret — linguistic/InflectionHandler (üretici) ilk kez UI'a bağlandı (P4-B5) */}
+        <div className="bg-slate-900/50 border border-slate-800 rounded-2xl p-6 space-y-4">
+          <div className="flex items-center gap-2">
+            <Sparkles className="w-4 h-4 text-amber-400" />
+            <h3 className="text-sm font-bold text-slate-200">Fiil Çekimi Üret</h3>
+          </div>
+          <p className="text-xs text-slate-400">
+            Bir fiil yazın (mastar ya da gövde, örn: <span className="font-mono text-slate-300">кӀуэн</span>), zaman/kip ve lehçeyi seçin — çekimli biçimi üretilir.
+          </p>
+          <div className="flex flex-wrap items-end gap-3">
+            <div className="flex-1 min-w-[180px]">
+              <label htmlFor="inflect-verb" className="block text-[11px] font-semibold text-slate-400 mb-1">Fiil</label>
+              <input
+                id="inflect-verb"
+                type="text"
+                value={verb}
+                onChange={(e) => setVerb(e.target.value)}
+                onKeyDown={(e) => e.key === 'Enter' && handleInflect()}
+                placeholder="örn: кӀуэн (gitmek)"
+                className="w-full bg-slate-950/70 border border-slate-700 rounded-xl px-3 py-2 text-white placeholder-slate-500 focus:outline-none focus:border-amber-500/60"
+              />
+            </div>
+            <div>
+              <label htmlFor="inflect-tense" className="block text-[11px] font-semibold text-slate-400 mb-1">Zaman / Kip</label>
+              <select
+                id="inflect-tense"
+                value={tense}
+                onChange={(e) => setTense(e.target.value)}
+                className="bg-slate-950/70 border border-slate-700 rounded-xl px-3 py-2 text-white focus:outline-none focus:border-amber-500/60"
+              >
+                {Object.entries(TENSE_LABELS).map(([val, label]) => (
+                  <option key={val} value={val}>{label}</option>
+                ))}
+              </select>
+            </div>
+            <div>
+              <label htmlFor="inflect-dialect" className="block text-[11px] font-semibold text-slate-400 mb-1">Lehçe</label>
+              <select
+                id="inflect-dialect"
+                value={dialect}
+                onChange={(e) => setDialect(e.target.value)}
+                className="bg-slate-950/70 border border-slate-700 rounded-xl px-3 py-2 text-white focus:outline-none focus:border-amber-500/60"
+              >
+                <option value="kabardian">Kabardeyce (Doğu)</option>
+                <option value="adyghe">Adıgece (Batı)</option>
+              </select>
+            </div>
+            <label className="flex items-center gap-1.5 text-xs text-slate-300 cursor-pointer select-none pb-2.5">
+              <input type="checkbox" checked={negative} onChange={(e) => setNegative(e.target.checked)} className="accent-amber-500" />
+              Olumsuz
+            </label>
+            <label className="flex items-center gap-1.5 text-xs text-slate-300 cursor-pointer select-none pb-2.5">
+              <input type="checkbox" checked={causative} onChange={(e) => setCausative(e.target.checked)} className="accent-amber-500" />
+              Ettirgen (yaptırmak)
+            </label>
+            <button
+              onClick={handleInflect}
+              disabled={inflectLoading || !verb.trim()}
+              className="bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold px-5 py-2.5 rounded-xl transition-all shadow-lg shadow-amber-500/20 disabled:opacity-50"
+            >
+              {inflectLoading ? 'Üretiliyor...' : 'Çek'}
+            </button>
+          </div>
+
+          {inflectError && (
+            <div className="text-sm text-rose-300 bg-rose-950/40 border border-rose-800/50 rounded-lg px-3 py-2">{inflectError}</div>
+          )}
+
+          {inflectResult && (
+            <div className="bg-slate-950/60 border border-slate-800/80 rounded-xl p-4 space-y-2">
+              <div className="text-2xl font-black text-white tracking-wide">{inflectResult.form}</div>
+              <div className="flex flex-wrap items-center gap-2 text-xs">
+                {inflectResult.components?.map((c: string, i: number) => (
+                  <React.Fragment key={i}>
+                    <span className="px-2 py-1 rounded-lg font-mono bg-amber-950 text-amber-300 border border-amber-500/40">{c}</span>
+                    {i < inflectResult.components.length - 1 && <span className="text-slate-600 font-bold">+</span>}
+                  </React.Fragment>
+                ))}
+                <span className="text-slate-400 ml-2">
+                  {TENSE_LABELS[inflectResult.tenseOrMood] || inflectResult.tenseOrMood}
+                  {inflectResult.negative ? ' · olumsuz' : ''} · {inflectResult.dialect === 'adyghe' ? 'Adıgece' : 'Kabardeyce'}
+                </span>
+              </div>
+              {inflectResult.causative && (
+                <div className="text-sm text-emerald-300 border-t border-slate-800 pt-2">
+                  Ettirgen biçim: <strong className="text-white">{inflectResult.causative.form}</strong>
+                  <span className="text-slate-500 text-xs ml-2">({inflectResult.causative.components?.join(' + ')})</span>
+                </div>
+              )}
+            </div>
+          )}
         </div>
 
         {result && (
