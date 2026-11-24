@@ -38,7 +38,11 @@ export async function POST(req: NextRequest) {
       typeof body.proposalId === 'string' && body.proposalId.trim()
         ? body.proposalId.trim()
         : `prop-${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 6)}`;
-    const created = CollaborativeModerationService.submitProposal({ ...body, proposalId });
+    const created = CollaborativeModerationService.submitProposal({
+      ...body,
+      proposalId,
+      createdAt: new Date().toISOString(),
+    });
     const backup = saveProposals(CollaborativeModerationService.listProposals());
     return NextResponse.json({ proposal: created, backup }, { status: 201 });
   } catch (e: any) {

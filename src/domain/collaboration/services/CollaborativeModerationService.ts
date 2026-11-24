@@ -6,6 +6,8 @@ export interface ConceptProposal {
   proposedLabel: string;
   /** Önerilen kelimenin Türkçe karşılığı (isteğe bağlı; Kelime Öner formundan gelir) */
   meaning?: string;
+  /** Gönderim zamanı (ISO) — Günlük Özet'in "bugün gelen öneri" sayımı için */
+  createdAt?: string;
   author: string;
   status: ProposalStatus;
 }
