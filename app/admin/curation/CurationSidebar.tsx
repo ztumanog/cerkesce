@@ -216,24 +216,62 @@ export default function CurationSidebar() {
           >
             <span>💡 Kelime Önerileri</span>
           </Link>
-          <Link
-            href="/yonetim"
+          {/* YÖNETİM — tek giriş, altında 4 pano açılır liste */}
+          <details
             style={{
-              display: 'flex',
-              justifyContent: 'space-between',
               padding: '8px 12px',
               borderRadius: '10px',
-              textDecoration: 'none',
-              color: '#0f172a',
-              fontSize: '13px',
-              fontWeight: '600',
               background: '#f8fafc',
               border: '1px solid #e2e8f0',
             }}
           >
-            <span>📊 Yönetim</span>
-            <span style={{ background: '#0f172a', color: 'white', padding: '2px 8px', borderRadius: '999px', fontSize: '10px' }}>/yonetim</span>
-          </Link>
+            <summary
+              style={{
+                display: 'flex',
+                justifyContent: 'space-between',
+                cursor: 'pointer',
+                fontSize: '13px',
+                fontWeight: '600',
+                color: '#0f172a',
+                listStyle: 'none',
+              }}
+            >
+              <span>📊 Yönetim</span>
+              <span style={{ background: '#0f172a', color: 'white', padding: '2px 8px', borderRadius: '999px', fontSize: '10px' }}>4 pano</span>
+            </summary>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '4px', marginTop: '8px' }}>
+              <Link
+                href="/admin/yonetim"
+                style={{ padding: '6px 10px', borderRadius: '8px', textDecoration: 'none', color: '#0f172a', fontSize: '12px', fontWeight: '600', background: '#eef2ff' }}
+              >
+                🏠 Yönetim Merkezi
+              </Link>
+              <Link
+                href="/admin/yonetim/executive"
+                style={{ padding: '6px 10px', borderRadius: '8px', textDecoration: 'none', color: '#6d28d9', fontSize: '12px', fontWeight: '500' }}
+              >
+                📋 Günlük Özet
+              </Link>
+              <Link
+                href="/admin/yonetim/governance"
+                style={{ padding: '6px 10px', borderRadius: '8px', textDecoration: 'none', color: '#2563eb', fontSize: '12px', fontWeight: '500' }}
+              >
+                ⚖️ Kararlar ve İşler
+              </Link>
+              <Link
+                href="/admin/yonetim/intelligence"
+                style={{ padding: '6px 10px', borderRadius: '8px', textDecoration: 'none', color: '#b45309', fontSize: '12px', fontWeight: '500' }}
+              >
+                💡 Öneriler
+              </Link>
+              <Link
+                href="/admin/yonetim/operations"
+                style={{ padding: '6px 10px', borderRadius: '8px', textDecoration: 'none', color: '#059669', fontSize: '12px', fontWeight: '500' }}
+              >
+                ❤️ Sistem Sağlığı
+              </Link>
+            </div>
+          </details>
           <div style={{ height: '1px', background: '#f3f4f6', margin: '8px 12px' }} />
           <div style={{ padding: '6px 12px', fontSize: '12px', opacity: 0.6 }}>🗄 _meta · v0.3</div>
           <div style={{ padding: '6px 12px', fontSize: '12px', opacity: 0.6 }}>🕒 Audit Log</div>

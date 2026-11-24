@@ -208,8 +208,8 @@ export default function UnifiedHeader() {
             Converter
           </Link>
           <Link
-            href="/yonetim"
-            className={`${topLink} ${pathname?.startsWith('/yonetim') || pathname?.startsWith('/admin') ? activeLink : ''}`}
+            href="/admin/yonetim"
+            className={`${topLink} ${pathname?.startsWith('/admin') ? activeLink : ''}`}
           >
             Yönetim
           </Link>
