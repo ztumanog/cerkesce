@@ -217,23 +217,6 @@ export default function CurationSidebar() {
             <span>💡 Kelime Önerileri</span>
           </Link>
           <Link
-            href="/admin/faz-kontrol"
-            style={{
-              display: 'flex',
-              justifyContent: 'space-between',
-              padding: '8px 12px',
-              borderRadius: '10px',
-              textDecoration: 'none',
-              color: '#059669',
-              fontSize: '13px',
-              fontWeight: '600',
-              background: '#ecfdf5',
-            }}
-          >
-            <span>✅ Faz Kontrol</span>
-            <span style={{ background: '#059669', color: 'white', padding: '2px 8px', borderRadius: '999px', fontSize: '10px' }}>4 Yeşil</span>
-          </Link>
-          <Link
             href="/yonetim"
             style={{
               display: 'flex',

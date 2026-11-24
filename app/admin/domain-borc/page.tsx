@@ -112,8 +112,8 @@ const domains: Domain[] = [
     size: "23KB",
     biggest: "CsvExporter.ts 2.7KB",
     color: "amber",
-    target: "/admin/faz-kontrol + /yonetim",
-    routeHref: "/admin/faz-kontrol",
+    target: "/yonetim",
+    routeHref: "/yonetim",
     icon: "📊",
     details: [
       "CsvExporter.ts 2783b",
@@ -129,7 +129,7 @@ const roadmap = [
   { domain: "linguistic", label: "Faz 4 • Heavy", desc: "Huvaj 4.865 kayıt + sesbilimsel kural motoru /sozluk/converter UI'a bağlandı" },
   { domain: "morphology", label: "Faz 3 • Builder", desc: "Morfoloji çözümleyici /sozluk/morphology sayfasında aktif" },
   { domain: "discovery", label: "Faz 2 • Search", desc: "DiscoveryFacade ve Cytoscape grafı /explorer üzerinde çalışıyor" },
-  { domain: "analytics", label: "Faz 1 • Quick Win", desc: "Rapor ve faz kontrol metrikleri /admin/faz-kontrol panosunda" },
+  { domain: "analytics", label: "Faz 1 • Quick Win", desc: "Rapor metrikleri /yonetim panosunda (faz-kontrol panosu emekliye ayrıldı, 2026-11-24)" },
 ];
 
 export default function DomainBorcPage() {

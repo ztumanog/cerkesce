@@ -15,10 +15,6 @@ export default function CurationLayout({children}:{children:React.ReactNode}){
         <Link href="/admin/moderasyon" className="flex items-center justify-between px-3 py-2.5 rounded-xl hover:bg-violet-50 transition group">
           <span className="text-sm font-medium group-hover:text-violet-700">💡 Kelime Önerileri</span>
         </Link>
-        <Link href="/admin/faz-kontrol" className="flex items-center justify-between px-3 py-2.5 rounded-xl hover:bg-green-50 transition group">
-          <span className="text-sm font-medium group-hover:text-green-700">✅ Faz Kontrol</span>
-          <span className="text- bg-green-100 text-green-700 px-2 py-0.5 rounded-full font-bold">4 Yeşil</span>
-        </Link>
         <Link href="/explorer" className="flex items-center justify-between px-3 py-2.5 rounded-xl hover:bg-blue-50 transition group">
           <span className="text-sm font-medium group-hover:text-blue-700">🕸️ Explorer</span>
           <span className="text- bg-blue-100 text-blue-700 px-2 py-0.5 rounded-full font-bold">Canlı</span>
