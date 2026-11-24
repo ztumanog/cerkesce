@@ -17,7 +17,7 @@
 | MVP-2 — Latin Arama | CLOSED (KARAR-15, 2026-11-11) |
 | Kürasyon | lexemes.json'a doğrudan yazım (KARAR-16, 2026-11-14) |
 
-**Test:** Ana 1075/1075 + Cert 102/102 PASS (2026-11-24)
+**Test:** Ana 1078/1078 + Cert 102/102 PASS (2026-11-24)
 
 > Kanonik kaynak: docs/governance/status/CURRENT_TEST_BASELINE.md
 **Kritik Teknik Borc:** 0

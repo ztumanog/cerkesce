@@ -8,6 +8,8 @@
  * - CsvExporterService.exportNetwork (CSV) — P4-C ile bağlandı
  * - CanvasPngRendererService.render (SVG data URI üretimi) + tarayıcıda
  *   canvas rasterizasyonu → gerçek PNG — P4-C ile bağlandı
+ * - ReportGeneratorService.generateNetworkReport + toMarkdown → Rapor İndir
+ *   (.md) — REPORT-001 ile bağlandı
  * - SVG üretimi tek üreteç: SvgLayoutEngineService.render (d3 yok, deterministik)
  *
  * PNG akışı: CanvasPngRendererService.render SVG data URI döndürür (servis
@@ -19,10 +21,11 @@
  */
 
 import React, { useState } from 'react';
-import { Download, FileJson, FileCode2, FileSpreadsheet, Image as ImageIcon } from 'lucide-react';
+import { Download, FileJson, FileCode2, FileSpreadsheet, FileText, Image as ImageIcon } from 'lucide-react';
 import { ExportEngineService, ExportFormat } from '@/domain/analytics/services/ExportEngineService';
 import { CsvExporterService } from '@/domain/analytics/services/CsvExporterService';
 import { CanvasPngRendererService } from '@/domain/analytics/services/CanvasPngRendererService';
+import { ReportGeneratorService } from '@/domain/analytics/services/ReportGeneratorService';
 import type { CytoscapeElementData } from './ConceptGraphCanvas';
 import { toExportNetwork } from './graphExportUtils';
 
@@ -127,6 +130,23 @@ export function GraphExportButtons({ data, conceptKey }: { data: CytoscapeElemen
     }
   };
 
+  // Rapor İndir — ReportGeneratorService (REPORT-001)
+  // Rapor ekranda GÖRÜLEN ağ üzerinden üretilir: data prop'u kavram-agi
+  // sayfasında LargeGraphOptimizer budaması sonrası görünümden gelir.
+  const handleReport = () => {
+    setError(null);
+    try {
+      const report = ReportGeneratorService.generateNetworkReport(toExportNetwork(data), {
+        concept: conceptKey || undefined,
+      });
+      const md = ReportGeneratorService.toMarkdown(report);
+      if (!md) throw new Error('Bos rapor');
+      downloadBlob(md, 'text/markdown', `${safeFileName(conceptKey || '')}.md`);
+    } catch (e: unknown) {
+      setError(e instanceof Error ? e.message : 'Rapor uretilemedi');
+    }
+  };
+
   const nodeCount = (data?.nodes || []).length;
   if (nodeCount === 0) return null;
 
@@ -171,6 +191,15 @@ export function GraphExportButtons({ data, conceptKey }: { data: CytoscapeElemen
       >
         <ImageIcon className="h-3.5 w-3.5" aria-hidden />
         {pngLoading ? 'PNG üretiliyor...' : 'PNG indir'}
+      </button>
+      <button
+        type="button"
+        onClick={handleReport}
+        className={btnCls}
+        title="Ağ özetini Markdown raporu olarak indir (ekranda görünen ağ üzerinden)"
+      >
+        <FileText className="h-3.5 w-3.5" aria-hidden />
+        Rapor indir
       </button>
       {error && <span className="text-xs text-red-400" role="alert">{error}</span>}
       <span className="ml-auto hidden items-center gap-1 text-xs text-slate-500 sm:inline-flex">

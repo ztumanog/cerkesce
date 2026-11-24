@@ -10,15 +10,15 @@
 | Olcut | Deger |
 |---|---|
 | Ana Test Files | 199 |
-| Ana Tests | 1075 |
-| Ana PASS | 1075 |
+| Ana Tests | 1078 |
+| Ana PASS | 1078 |
 | Cert Test Files | 26 |
 | Cert Tests | 102 |
 | Cert PASS | 102 |
 | FAIL | 0 |
 
 **Komut:** `npm test` + `npm run test:cert`
-**Tarih:** 2026-11-24 13:31 (ana) / 13:32 (cert)
+**Tarih:** 2026-11-24 22:08 (ana) / 22:59 (cert)
 
 ---
 
@@ -51,9 +51,10 @@
 | **2026-11-23 15:17** | **1039 (+102 cert)** | **-1** | Yetim Hotfix001_DataLoading.test.ts silindi (dictionaryService modülüyle birlikte — check-unused-modules temizliği) |
 | 2026-11-23 17:41 | 1044 | +5 | Moderasyon test izolasyonu, gün içi düzenlemeler (commit fd66580: taban 1044) |
 | **2026-11-24 13:31** | **1075 (+102 cert)** | **+31** | Morfoloji inflect bağlantı testleri (InflectionWiring, +10), moderasyon/kavram-agi gün içi testleri, yonetim merkezleştirme ve P4-C export commitleriyle doğrulandı (tsc 0 hata) |
+| **2026-11-24 22:08** | **1078 (+102 cert)** | **+3** | REPORT-001: ReportGeneratorService ürünleştirildi — Rapor İndir (Markdown) butonu kavram-agi'ye bağlandı, REP-007/008/009 testleri (tsc 0 hata, build PASS) |
 
 > **Not (2026-11-24):** Ana suit `npm test` (vitest run), sertifika suiti `npm run test:cert`
-> (vitest.cert.config.ts) ayrı çalışır. Toplam = 1075 + 102 = 1177.
+> (vitest.cert.config.ts) ayrı çalışır. Toplam = 1078 + 102 = 1180.
 
 ---
 
