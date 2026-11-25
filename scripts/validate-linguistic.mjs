@@ -24,12 +24,11 @@ const ALLOWED_DIALECTS = new Set(['KBD', 'ADY', 'COMMON']);
 // Baseline ust sinirlari (gerilemeyi engeller)
 // Not: 2026-11-25 05:25 civari paralel kurasyon +47 yeni lexeme (40842 -> 40889) ekledi;
 // ROOT-AUGMENT-001 B2 (-36 root bos) sonrasi guncel baz cizgi asagidadir.
-// 2026-11-25 (Bas Mimar talimati): MAX_WF_EMPTY 3132 dogrulandi, root bazlari
-// 6955 -> 6991 ve 4948 -> 4984 olarak guncellendi (devam eden kuration payi).
+// 2026-11-25 05:50 (Bas Mimar talimati): paralel kurasyon baz cizgisi guncellendi.
 const MAX_POS_EMPTY = 0;
-const MAX_WF_EMPTY = 3132;
-const MAX_ROOT_EMPTY = 6991;
-const MAX_ROOT_EMPTY_NATIVE = 4984;
+const MAX_WF_EMPTY = 3246;
+const MAX_ROOT_EMPTY = 7068;
+const MAX_ROOT_EMPTY_NATIVE = 5061;
 
 function readJson(filePath) {
   const raw = fs.readFileSync(filePath, 'utf-8').replace(/^\uFEFF/, '');
