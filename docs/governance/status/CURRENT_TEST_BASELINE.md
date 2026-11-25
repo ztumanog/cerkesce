@@ -9,9 +9,9 @@
 
 | Olcut | Deger |
 |---|---|
-| Ana Test Files | 203 |
-| Ana Tests | 1103 |
-| Ana PASS | 1102 (1 harici veri başarısızlığı — bkz. not) |
+| Ana Test Files | 202 |
+| Ana Tests | 1099 |
+| Ana PASS | 1098 (1 harici veri başarısızlığı — bkz. not) |
 | Cert Test Files | 23 |
 | Cert Tests | 93 |
 | Cert PASS | 93 |
@@ -60,6 +60,7 @@
 | **2026-11-25 01:43** | **1101 (+102 cert)** | **+23** | AUTH-001: admin rol modeli + oturum guard'ı — 23 auth testi (session 6, guard 11, credentials 6); 12 senaryoluk canlı duman testi + build PASS |
 | **2026-11-25 03:19** | **1103 (+95 cert)** | **+2 ana / −7 cert** | A5-UI-DEMO-001: ölü demo sayfaları silindi (5 dosya, −417 satır) + 7 cert testi; NEP-003/005 canlı LayoutEngineService kapsamı yeni test dosyasına taşındı (LE-001/002) |
 | **2026-11-25 (2. paket)** | **1103 (+93 cert)** | **−2 cert** | A5 devamı: ölü explorer bileşenleri silindi (ConceptDetailDrawer stub + NetworkExplorerToolbar mojibake) + NetworkExplorerPhase7_1.test.ts (UI-001/002 — yalnız isValidElement, korunacak kapsam yok) |
+| **2026-11-25 (3. paket)** | **1099 (+93 cert)** | **−4 ana** | B1 başlangıcı: kök dialect.ts tip dökümü + DialectRule alt-zinciri silindi (kural depoları: 2×IDialectRuleRepository, DialectRuleRepository, DialectRule + self-contained test — hiçbiri gerçek kodu test etmiyordu). İzlenmeyen yetim kopya Dialect.ts diskten temizlendi. Alt-zincir B (Variant/DialectResolver/Bridge) incelemede |
 
 > **Not (2026-11-25):** Ana suit `npm test` (vitest run), sertifika suiti `npm run test:cert`
 > (vitest.cert.config.ts) ayrı çalışır. Toplam = 1103 + 95 = 1198.
