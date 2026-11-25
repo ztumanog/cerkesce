@@ -155901,5 +155901,20 @@
     "lexemeIds": [
       "L-SHCHY-EIN"
     ]
+  },
+  {
+    "id": "кхъуей",
+    "form": "кхъуей",
+    "primaryMeaning": "Peynir",
+    "meaning": "Peynir",
+    "translations": {
+      "tr": "Peynir",
+      "en": "ravine, gully, gorge, hollow",
+      "ru": "яр, овраг"
+    },
+    "conceptId": "CHEESE",
+    "wordFamilyId": "WF-КОU",
+    "source": "Dil Kurasyonu / L-KQUAE",
+    "note": "Dil Kurasyonu Kaydet ile otomatik senkron."
   }
 ]

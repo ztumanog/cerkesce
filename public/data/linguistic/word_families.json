@@ -7619,7 +7619,9 @@
       "L-DELAGHE",
       "L-MAFEXER",
       "L-DELEN-KBD",
-      "L-MYDELE"
+      "L-MYDELE",
+      "L-KBDNEW-41042",
+      "L-HEADSTRONG-9133"
     ],
     "productivity": {
       "totalLexemes": 13,
@@ -170856,5 +170858,16 @@
     },
     "rootForm": "щыӀэ",
     "rootId": "R-SHCHY1E"
+  },
+  {
+    "id": "WF-КОU",
+    "wordFamilyId": "WF-КОU",
+    "conceptId": "CHEESE",
+    "concept": "CHEESE",
+    "rootIds": [],
+    "lexemeIds": [
+      "L-KQUAE"
+    ],
+    "source": "Dil Kurasyonu / L-KQUAE"
   }
 ]
