@@ -213,6 +213,9 @@ export default function KavramlarExplorer({ groups, totalLexemeCount }: Kavramla
             <strong className="font-semibold text-slate-700 dark:text-slate-200">{filteredGroups.length.toLocaleString('tr-TR')}</strong> kavram grubu
           </span>
         </div>
+        <p className="mt-2.5 text-[11px] text-slate-500 dark:text-slate-400">
+          Not: ADY/KBD sayımları kesişimlidir; Ortak (Common) kayıtlar her iki lehçe listesinde de yer alır, Toplam = ADY + KBD (Ortak ayrıca toplanmaz).
+        </p>
       </div>
 
       {visibleGroups.length === 0 ? (
@@ -355,7 +358,9 @@ export default function KavramlarExplorer({ groups, totalLexemeCount }: Kavramla
 
                 <div className="mt-4 flex items-center justify-between border-t border-slate-100 dark:border-slate-800 pt-3 text-xs text-slate-500 dark:text-slate-400">
                   <div className="flex items-center gap-3">
-                    <span>Toplam {group.totalCount} kayıt</span>
+                    <span title="ADY ve KBD sayımları kesişimlidir; Ortak (Common) kayıtlar her iki lehçede de yer alır, Toplam = ADY + KBD.">
+                      Toplam {group.totalCount} kayıt{group.commonLexemes.length > 0 ? ' (ADY+KBD; Ortak kesişimli)' : ''}
+                    </span>
                     {isExpanded && (
                       <button type="button" onClick={() => setExpandedCards((p) => ({ ...p, [group.conceptId]: false }))}
                         className="font-medium text-slate-600 dark:text-slate-300 hover:underline">
