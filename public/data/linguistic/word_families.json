@@ -5083,7 +5083,8 @@
       "L-ZESHCH-EGHEDE-UEN",
       "L-TEDE-UK-YN",
       "L-GHEDE-UENYGHE",
-      "L-EMYDE-UEN"
+      "L-EMYDE-UEN",
+      "L-WIKT-KBD-35835"
     ],
     "productivity": {
       "totalLexemes": 22,
@@ -9324,7 +9325,9 @@
       "L-ZEXUEGU-EN",
       "L-ZYGHEGUKEYDEMYZHYN",
       "L-ZYGHEGUSEREY",
-      "L-ZYKHEGUEUEN"
+      "L-ZYKHEGUEUEN",
+      "L-WIKT-KBD-29500",
+      "L-WIKT-KBD-33193"
     ],
     "productivity": {
       "totalLexemes": 548,
@@ -12306,7 +12309,8 @@
       "L-WIKT-KBD-33315",
       "L-WIKT-KBD-33322",
       "L-WIKT-KBD-37367",
-      "L-KHUETYNSH"
+      "L-KHUETYNSH",
+      "L-WIKT-KBD-33216"
     ],
     "productivity": {
       "totalLexemes": 157,
@@ -16454,7 +16458,8 @@
       "L-ZYLHYPY-UN",
       "L-ZYPSHCH-EXEGHELHYN",
       "L-ZYXE-UN",
-      "L-ZYZEGHELHEN"
+      "L-ZYZEGHELHEN",
+      "L-WIKT-KBD-29142"
     ],
     "productivity": {
       "totalLexemes": 741,
@@ -18365,7 +18370,8 @@
       "L-YATFENERE",
       "L-YAXENERE",
       "L-ZDYNESYR",
-      "L-NE-BLIND-KBD"
+      "L-NE-BLIND-KBD",
+      "L-KBDNEW-40976"
     ],
     "productivity": {
       "totalLexemes": 244,
@@ -21270,7 +21276,9 @@
       "L-ZYPARI",
       "L-ZYPEMYPLHA",
       "L-ZYPLHYHYN",
-      "L-ZYXUEPEN"
+      "L-ZYXUEPEN",
+      "L-WIKT-KBD-29364",
+      "L-WIKT-KBD-33851"
     ],
     "productivity": {
       "totalLexemes": 649,
@@ -28477,7 +28485,8 @@
       "L-ZYZYKHUEZH",
       "L-ZYZYKHUEZHREY",
       "L-ZYZYMYKHUEZH",
-      "L-ZYZYSHCH"
+      "L-ZYZYSHCH",
+      "L-WIKT-KBD-36961"
     ],
     "productivity": {
       "totalLexemes": 734,
@@ -32577,7 +32586,8 @@
       "L-ZERY-UETYN",
       "L-ZEXE-UETEN",
       "L-ZEXUE-UETEN",
-      "L-ZI-UETYHYN"
+      "L-ZI-UETYHYN",
+      "L-WIKT-KBD-34875"
     ],
     "productivity": {
       "lemmaCount": 9,
@@ -33993,7 +34003,8 @@
       "L-UNEGUNESHCH",
       "L-ZIGHEBZEXEN",
       "L-EMYFEEMYSHXE",
-      "L-MYGHEUNEXUA"
+      "L-MYGHEUNEXUA",
+      "L-WIKT-KBD-31727"
     ],
     "productivity": {
       "totalLexemes": 73,
@@ -34743,7 +34754,16 @@
       "L-ZEIK",
       "L-KBD-01606",
       "L-KBD-01607",
-      "L-ZEINSHAGHE"
+      "L-ZEINSHAGHE",
+      "L-WIKT-KBD-28386",
+      "L-WIKT-KBD-29026",
+      "L-WIKT-KBD-29226",
+      "L-WIKT-KBD-29227",
+      "L-WIKT-KBD-29281",
+      "L-WIKT-KBD-29685",
+      "L-WIKT-KBD-30180",
+      "L-WIKT-KBD-30588",
+      "L-WIKT-KBD-34878"
     ],
     "productivity": {
       "totalLexemes": 6,
@@ -38271,7 +38291,11 @@
       "L-KBD-04397",
       "L-KBD-04398",
       "L-KBD-04399",
-      "L-KBD-04411"
+      "L-KBD-04411",
+      "L-WIKT-KBD-28262",
+      "L-WIKT-KBD-30149",
+      "L-WIKT-KBD-30767",
+      "L-WIKT-KBD-33762"
     ],
     "productivity": {
       "totalLexemes": 5,
@@ -39549,7 +39573,10 @@
     "lexemeIds": [
       "L-SHCHY",
       "L-ZYGHESHCH-Y-ETY-EN",
-      "L-KEEGHESHCH-Y-ETY-EN"
+      "L-KEEGHESHCH-Y-ETY-EN",
+      "L-WIKT-KBD-28933",
+      "L-WIKT-KBD-35904",
+      "L-WIKT-KBD-36254"
     ],
     "productivity": {
       "totalLexemes": 3,
@@ -42423,7 +42450,8 @@
       "L-KBD-02044",
       "L-KBD-02045",
       "L-KEYZEF-EGHEUVEN",
-      "L-KBD-02021"
+      "L-KBD-02021",
+      "L-WIKT-KBD-34709"
     ],
     "morphemeIds": [],
     "productivity": {
@@ -44069,7 +44097,8 @@
       "L-ZYKQESHCH1ENYGHE",
       "L-ZYKQUZYN",
       "L-ZYKUETE",
-      "L-ZYSHCH1EZHYN"
+      "L-ZYSHCH1EZHYN",
+      "L-WIKT-KBD-28752"
     ],
     "notes": "null ailesi (гущӀ).",
     "productivity": {
@@ -49919,7 +49948,8 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-AT-EMI"
+      "L-AT-EMI",
+      "L-ATE-COMMON"
     ],
     "notes": "sonra ailesi (атӀэ).",
     "productivity": {
@@ -83747,7 +83777,8 @@
       "L-WIKT-KBD-30497",
       "L-ZELEPAG",
       "L-ZELHEPKEEGHU",
-      "L-ZERYGHELHEP-EN"
+      "L-ZERYGHELHEP-EN",
+      "L-WIKT-KBD-34258"
     ],
     "notes": "takilmak (лъэп) ailesi (лъэп).",
     "productivity": {
