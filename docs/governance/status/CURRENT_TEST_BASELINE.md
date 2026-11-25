@@ -12,9 +12,9 @@
 | Ana Test Files | 203 |
 | Ana Tests | 1103 |
 | Ana PASS | 1102 (1 harici veri başarısızlığı — bkz. not) |
-| Cert Test Files | 24 |
-| Cert Tests | 95 |
-| Cert PASS | 95 |
+| Cert Test Files | 23 |
+| Cert Tests | 93 |
+| Cert PASS | 93 |
 | FAIL | 0 |
 
 **Komut:** `npm test` + `npm run test:cert`
@@ -59,6 +59,7 @@
 | **2026-11-24 22:08** | **1078 (+102 cert)** | **+3** | REPORT-001: ReportGeneratorService ürünleştirildi — Rapor İndir (Markdown) butonu kavram-agi'ye bağlandı, REP-007/008/009 testleri (tsc 0 hata, build PASS) |
 | **2026-11-25 01:43** | **1101 (+102 cert)** | **+23** | AUTH-001: admin rol modeli + oturum guard'ı — 23 auth testi (session 6, guard 11, credentials 6); 12 senaryoluk canlı duman testi + build PASS |
 | **2026-11-25 03:19** | **1103 (+95 cert)** | **+2 ana / −7 cert** | A5-UI-DEMO-001: ölü demo sayfaları silindi (5 dosya, −417 satır) + 7 cert testi; NEP-003/005 canlı LayoutEngineService kapsamı yeni test dosyasına taşındı (LE-001/002) |
+| **2026-11-25 (2. paket)** | **1103 (+93 cert)** | **−2 cert** | A5 devamı: ölü explorer bileşenleri silindi (ConceptDetailDrawer stub + NetworkExplorerToolbar mojibake) + NetworkExplorerPhase7_1.test.ts (UI-001/002 — yalnız isValidElement, korunacak kapsam yok) |
 
 > **Not (2026-11-25):** Ana suit `npm test` (vitest run), sertifika suiti `npm run test:cert`
 > (vitest.cert.config.ts) ayrı çalışır. Toplam = 1103 + 95 = 1198.
