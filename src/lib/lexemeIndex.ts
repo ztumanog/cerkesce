@@ -6,6 +6,7 @@ export interface Lexeme {
   literalMeaning?: string;
   conceptId?: string;
   conceptIds?: string[];
+  pos?: string;
   partOfSpeech?: string;
   ipa?: string;
   corpusFrequency?: number;

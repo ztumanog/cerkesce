@@ -10,7 +10,8 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "test:cert": "vitest run --config vitest.cert.config.ts",
-    "test:all": "npm test && npm run test:cert",
+    "validate:data": "node scripts/validate-linguistic.mjs",
+    "test:all": "npm run validate:data && npm test && npm run test:cert",
     "ts-node": "ts-node",
     "lint": "eslint",
     "check:unused": "node scripts/check-unused-modules.mjs"

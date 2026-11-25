@@ -18,6 +18,7 @@ interface RawLexeme {
   id: string;
   form: string;
   dialect?: string;
+  pos?: string;
   partOfSpeech?: string;
   ipa?: string;
   conceptId?: string;
@@ -121,7 +122,7 @@ export default function KavramlarPage() {
         id: baseDialect === 'ADY' ? item.id : `${item.id}-ady`,
         form: adyForm,
         dialect: 'ADY',
-        partOfSpeech: String(item.partOfSpeech || '').trim(),
+        partOfSpeech: String(item.pos || item.partOfSpeech || '').trim(),
         ipa: item.ipa,
         wordFamilyId: item.wordFamilyId,
         rootIds: item.rootIds,
@@ -136,7 +137,7 @@ export default function KavramlarPage() {
         id: baseDialect === 'KBD' ? item.id : `${item.id}-kbd`,
         form: kbdForm,
         dialect: 'KBD',
-        partOfSpeech: String(item.partOfSpeech || '').trim(),
+        partOfSpeech: String(item.pos || item.partOfSpeech || '').trim(),
         ipa: item.ipa,
         wordFamilyId: item.wordFamilyId,
         rootIds: item.rootIds,
@@ -151,7 +152,7 @@ export default function KavramlarPage() {
         id: item.id,
         form,
         dialect: 'COMMON',
-        partOfSpeech: String(item.partOfSpeech || '').trim(),
+        partOfSpeech: String(item.pos || item.partOfSpeech || '').trim(),
         ipa: item.ipa,
         wordFamilyId: item.wordFamilyId,
         rootIds: item.rootIds,

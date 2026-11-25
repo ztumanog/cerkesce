@@ -30,6 +30,9 @@ jobs:
       - name: TypeScript check
         run: npx tsc --noEmit
 
+      - name: Linguistic data validation
+        run: npm run validate:data
+
       - name: Main tests
         run: npm test
 

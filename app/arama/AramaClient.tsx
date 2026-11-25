@@ -45,7 +45,7 @@ function normalizeResult(raw: RawResult): LexemeResult {
     form: asString(raw.form ?? raw.headword ?? raw.lexeme),
     tr: asString(raw.tr ?? raw.turkish ?? raw.meaning_tr ?? raw.meaning),
     ipa: asString(raw.ipa ?? raw.pronunciation),
-    partOfSpeech: asString(raw.partOfSpeech ?? raw.pos),
+    partOfSpeech: asString(raw.pos ?? raw.partOfSpeech),
     dialectVariants: (raw.dialectVariants as { adyghe?: string; kabardian?: string } | undefined),
   };
 }
