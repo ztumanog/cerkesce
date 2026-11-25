@@ -1382,7 +1382,11 @@
       "L-XYVBANE",
       "L-ANESHXUE-ADESHXUE",
       "L-AUTO-00417",
-      "L-TURBAN"
+      "L-TURBAN",
+      "L-HAKUNOV-PLANT-056",
+      "L-HAKUNOV-PLANT-066",
+      "L-HAKUNOV-PLANT-071",
+      "L-HAKUNOV-PLANT-095"
     ],
     "productivity": {
       "totalLexemes": 92,
@@ -5320,7 +5324,8 @@
     "lexemeIds": [
       "L-DEY",
       "L-DEEU",
-      "L-DEY-2"
+      "L-DEY-2",
+      "L-HAKUNOV-PLANT-019"
     ],
     "productivity": {
       "totalLexemes": 3,
@@ -5445,7 +5450,13 @@
       "L-WIKT-KBD-29721",
       "L-WIKT-KBD-29722",
       "L-WIKT-KBD-29723",
-      "L-WIKT-KBD-30401"
+      "L-WIKT-KBD-30401",
+      "L-HAKUNOV-PLANT-008",
+      "L-HAKUNOV-PLANT-013",
+      "L-HAKUNOV-PLANT-014",
+      "L-HAKUNOV-PLANT-021",
+      "L-HAKUNOV-PLANT-074",
+      "L-HAKUNOV-PLANT-089"
     ],
     "productivity": {
       "totalLexemes": 29,
@@ -9767,7 +9778,13 @@
       "L-KHESHCHE",
       "L-EKH-EKHK1E",
       "L-KEDEKH",
-      "L-KHEKHYGUE-37725"
+      "L-KHEKHYGUE-37725",
+      "L-HAKUNOV-PLANT-047",
+      "L-HAKUNOV-PLANT-048",
+      "L-HAKUNOV-PLANT-055",
+      "L-HAKUNOV-PLANT-057",
+      "L-HAKUNOV-PLANT-087",
+      "L-HAKUNOV-PLANT-088"
     ],
     "productivity": {
       "totalLexemes": 270,
@@ -12753,7 +12770,9 @@
       "L-ZYKHUMEZHYNYGHEU",
       "L-ZYKHUMEZHYNYNYGHE",
       "L-ZYSHCHYKHUMEN",
-      "L-ZYSHCHYUKHUMEN"
+      "L-ZYSHCHYUKHUMEN",
+      "L-HAKUNOV-PLANT-033",
+      "L-HAKUNOV-PLANT-035"
     ],
     "productivity": {
       "totalLexemes": 403,
@@ -13967,7 +13986,10 @@
       "L-PLANT-013",
       "L-UKHUEN",
       "L-VERIFIED-01779",
-      "L-VERIFIED-02135"
+      "L-VERIFIED-02135",
+      "L-HAKUNOV-PLANT-001",
+      "L-HAKUNOV-PLANT-002",
+      "L-HAKUNOV-PLANT-038"
     ],
     "productivity": {
       "totalLexemes": 31,
@@ -18998,7 +19020,9 @@
       "L-ZEXEGHENEN",
       "L-ZHENET",
       "L-ZINE",
-      "L-ZYGHENESHCHKHEIN"
+      "L-ZYGHENESHCHKHEIN",
+      "L-HAKUNOV-PLANT-006",
+      "L-HAKUNOV-PLANT-058"
     ],
     "productivity": {
       "totalLexemes": 472,
@@ -21541,7 +21565,11 @@
       "L-ZHYPKHE",
       "L-ZHYPKHEKHER",
       "L-ZHYXAPKHE",
-      "L-ZYPKHEXYN"
+      "L-ZYPKHEXYN",
+      "L-HAKUNOV-PLANT-023",
+      "L-HAKUNOV-PLANT-024",
+      "L-HAKUNOV-PLANT-044",
+      "L-HAKUNOV-PLANT-054"
     ],
     "productivity": {
       "totalLexemes": 147,
@@ -24278,7 +24306,8 @@
       "L-ZHEYBASHCHKHUAGE",
       "L-ZHEYBASHCHKHUE",
       "L-KMOKSY-BIRD-032",
-      "L-KMOKSY-BIRD-035"
+      "L-KMOKSY-BIRD-035",
+      "L-HAKUNOV-PLANT-025"
     ],
     "productivity": {
       "totalLexemes": 69,
@@ -26080,7 +26109,9 @@
       "L-ZEXUESHESYN",
       "L-ZEXUETKHUSYN",
       "L-ZYXUEGHESHECHYN",
-      "L-ZYZYKHUESHEN"
+      "L-ZYZYKHUESHEN",
+      "L-HAKUNOV-PLANT-011",
+      "L-HAKUNOV-PLANT-037"
     ],
     "productivity": {
       "totalLexemes": 466,
@@ -27688,7 +27719,10 @@
       "L-SHCHEGUAF1E",
       "L-SHCHENSHEN",
       "L-KHEKHYGUE-37754",
-      "L-ZEXESHCHEN-WEAVE-KBD"
+      "L-ZEXESHCHEN-WEAVE-KBD",
+      "L-HAKUNOV-PLANT-041",
+      "L-HAKUNOV-PLANT-061",
+      "L-HAKUNOV-PLANT-062"
     ],
     "productivity": {
       "totalLexemes": 314,
@@ -29591,7 +29625,9 @@
       "L-ZESHYGHE",
       "L-ZETESHYN",
       "L-ZYGHESHYN",
-      "L-ZYSHYHYN"
+      "L-ZYSHYHYN",
+      "L-HAKUNOV-PLANT-093",
+      "L-HAKUNOV-PLANT-094"
     ],
     "productivity": {
       "totalLexemes": 303,
@@ -32193,7 +32229,17 @@
       "L-WIKT-KBD-29569",
       "L-WIKT-KBD-29990",
       "L-WIKT-KBD-30705",
-      "L-ZHESHCHUDZ"
+      "L-ZHESHCHUDZ",
+      "L-HAKUNOV-PLANT-016",
+      "L-HAKUNOV-PLANT-022",
+      "L-HAKUNOV-PLANT-026",
+      "L-HAKUNOV-PLANT-032",
+      "L-HAKUNOV-PLANT-050",
+      "L-HAKUNOV-PLANT-051",
+      "L-HAKUNOV-PLANT-063",
+      "L-HAKUNOV-PLANT-065",
+      "L-HAKUNOV-PLANT-083",
+      "L-HAKUNOV-PLANT-086"
     ],
     "productivity": {
       "totalLexemes": 8,
@@ -36264,7 +36310,9 @@
       "L-ZYUMYSYZHYN",
       "L-ZYUXUEN",
       "L-ZYUZHYN",
-      "L-ZYUZHYNYGHE"
+      "L-ZYUZHYNYGHE",
+      "L-HAKUNOV-PLANT-004",
+      "L-HAKUNOV-PLANT-005"
     ],
     "productivity": {
       "totalLexemes": 225,
@@ -37491,7 +37539,8 @@
     "notes": "Faz 3 / Adım 4.1c-5: Gemini 54 kaynak sınıflandırması",
     "status": "ACTIVE",
     "lexemeIds": [
-      "L-DEGHUNDE"
+      "L-DEGHUNDE",
+      "L-HAKUNOV-PLANT-053"
     ],
     "productivity": {
       "totalLexemes": 1,
@@ -38109,7 +38158,16 @@
       "L-WIKT-KBD-30948",
       "L-ABAZE-P4-017",
       "L-ABAZE-P5-007",
-      "L-ABAZE-P5-009"
+      "L-ABAZE-P5-009",
+      "L-HAKUNOV-PLANT-003",
+      "L-HAKUNOV-PLANT-064",
+      "L-HAKUNOV-PLANT-072",
+      "L-HAKUNOV-PLANT-073",
+      "L-HAKUNOV-PLANT-077",
+      "L-HAKUNOV-PLANT-078",
+      "L-HAKUNOV-PLANT-079",
+      "L-HAKUNOV-PLANT-080",
+      "L-HAKUNOV-PLANT-082"
     ],
     "productivity": {
       "totalLexemes": 403,
@@ -41145,7 +41203,9 @@
       "L-THERYKUEEF",
       "L-TKHERYKUER",
       "L-KMOKSY-BIRD-008",
-      "L-KMOKSY-BIRD-009"
+      "L-KMOKSY-BIRD-009",
+      "L-HAKUNOV-PLANT-036",
+      "L-HAKUNOV-PLANT-084"
     ],
     "_source": "kue99-2a",
     "productivity": {
@@ -43574,7 +43634,8 @@
       "L-THAPSHA",
       "L-THEMPE",
       "L-THEMPEXER",
-      "L-TKHEMPENSHE"
+      "L-TKHEMPENSHE",
+      "L-HAKUNOV-PLANT-052"
     ],
     "primaryMeaning": "yaprak, sayfa",
     "notes": "Faz 13: yaprak ailesi. тхьэмпэ = yaprak, тхьапэ = sayfa",
@@ -44215,7 +44276,10 @@
       "L-GUBGHUE-KHINEN",
       "L-WIKT-KBD-28061",
       "L-ABAZE-P4-003",
-      "L-KHEKHYGUE-37689"
+      "L-KHEKHYGUE-37689",
+      "L-HAKUNOV-PLANT-009",
+      "L-HAKUNOV-PLANT-010",
+      "L-HAKUNOV-PLANT-012"
     ],
     "notes": "tarla, ova ailesi (гу).",
     "productivity": {
@@ -61895,7 +61959,8 @@
       "L-WIKT-KBD-35789",
       "L-WIKT-KBD-36532",
       "L-WIKT-KBD-37327",
-      "L-ZESHCH-EGHEGHEN"
+      "L-ZESHCH-EGHEGHEN",
+      "L-HAKUNOV-PLANT-015"
     ],
     "notes": "bot. flower ailesi (гъэгъ).",
     "productivity": {
@@ -87052,7 +87117,9 @@
       "L-MERAK-UE-ERYSE",
       "L-MERAK1UE",
       "L-WIKT-KBD-29558",
-      "L-WIKT-KBD-29875"
+      "L-WIKT-KBD-29875",
+      "L-HAKUNOV-PLANT-067",
+      "L-HAKUNOV-PLANT-068"
     ],
     "notes": "picking, strawberry picking ailesi (мэракӀу).",
     "productivity": {
@@ -170638,7 +170705,8 @@
     "lexemeIds": [
       "L-WIKT-KBD-29736",
       "L-WIKT-KBD-30405",
-      "L-TYGHE-SUN-ADY"
+      "L-TYGHE-SUN-ADY",
+      "L-HAKUNOV-PLANT-075"
     ],
     "notes": "WF-REBUILD-001 senkronizasyonu (güneş)",
     "_source": "wf_rebuild_001"
