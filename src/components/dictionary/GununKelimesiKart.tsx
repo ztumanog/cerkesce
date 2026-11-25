@@ -11,6 +11,7 @@ import {
   selectMultipleDailyWords,
   getTodayDateString,
 } from '@/utils/dailyWordEngine';
+import { gununKelimesiHavuzuYukle } from '@/lib/gununKelimesi/kaynak';
 import { cleanHtml } from '@/lib/paylasimGorseli';
 import PaylasimGorseliModal from '@/components/dictionary/PaylasimGorseliModal';
 import BildirimAyar from '@/components/dictionary/BildirimAyar';
@@ -24,155 +25,6 @@ interface GununKelimesiKartProps {
 }
 
 
-const KELIMELER_VERITABANI: RawDictionaryEntry[] = [
-  {
-    id: '1',
-    lemma: 'СиIэшIу',
-    translation: 'Tatlım, canım',
-    dialect: 'Adigece',
-    examples: [{ text: 'СиIэшIу, уэ дахэ?', translation: 'Tatlım, nasılsın?' }],
-    etymology: 'Adıgece kökenli',
-  },
-  {
-    id: '2',
-    lemma: 'адыгэ',
-    translation: 'Çerkes, Adıgeli',
-    dialect: 'Adigece',
-    examples: [{ text: 'Адыгэ адыгабзэ ихьэу.', translation: 'Çerkesçe konuşuyorum.' }],
-    etymology: 'Proto-Kafkas kökünden',
-  },
-  {
-    id: '3',
-    lemma: 'адыгабзэ',
-    translation: 'Adıgece dili',
-    dialect: 'Adigece',
-    examples: [{ text: 'Адыгабзэ щIалэ.', translation: 'Adıgece güzeldir.' }],
-    etymology: 'Adıgece + dil anlamında',
-  },
-];
-
-const ABAZE_SOZLUK_DOSYASI = '/data/27.Tur-Ady_Abaze.json';
-
-function htmlMetniniCikar(value: unknown): string {
-  if (!value) return '';
-
-  let text = String(value);
-
-  // İKİ GEÇİŞ: çift encoded HTML için
-  for (let i = 0; i < 2; i++) {
-    // 1. ÖNCE encoded HTML entity'lerini sil (&lt;...&gt;)
-    text = text.replace(/&lt;.*?&gt;/gi, ' ');
-
-    // 2. Sonra normal HTML tag'lerini sil
-    text = text.replace(/<[^>]+>/g, ' ');
-
-    // 3. Entity'leri çöz
-    text = text
-      .replace(/&nbsp;/gi, ' ')
-      .replace(/&amp;/gi, '&')
-      .replace(/&lt;/gi, '<')
-      .replace(/&gt;/gi, '>')
-      .replace(/&quot;/gi, '"')
-      .replace(/&#39;/gi, "'");
-  }
-
-  // 4. Fazla boşlukları temizle
-  text = text.replace(/\s+/g, ' ').trim();
-
-  return text;
-}
-
-/* Kiril alfabesi içeriyor mu? (Adigece/Kabardeyce ya da Rusça) */
-const KIRIL_RE = /[\u0400-\u04FF]/;
-const kirilMi = (text: string): boolean => KIRIL_RE.test(text);
-
-/**
- * Çok anlamlı (homonim) tanımdan ilk anlamı alır ve baştaki/sondaki
- * işaretleri temizler.
- *   "I гу. II нэпцӀ."  →  "гу"
- *   "фӀагъэ зегъэкӀын." →  "фӀагъэ зегъэкӀын"
- *
- * Not: Adigece yazımda palochka yerine Latin "I" kullanılabiliyor (СиIэшIу),
- * bu yüzden Roma rakamı yalnızca boşlukla ayrılmış tek başına bir token
- * olduğunda sayılır.
- */
-function ilkAnlamiAl(metin: string): string {
-  let t = metin.replace(/\s+/g, ' ').trim();
-
-  // Baştaki Roma rakamı: "I гу. ..." → "гу. ..."
-  t = t.replace(/^(?:I{1,3}|IV|V|VI)\.?\s+/, '');
-  // Sonraki Roma rakamında kes: "гу. II нэпцӀ." → "гу."
-  t = t.split(/\s+(?:II|III|IV|V|VI)\.?\s+/)[0];
-
-  // Arap rakamlı anlamlar: "1. ... 2. ..." → ilki
-  t = t.replace(/^\d+[.)]\s*/, '');
-  t = t.split(/\s+\d+[.)]\s+/)[0];
-
-  // Sondaki noktalama
-  return t.replace(/[\s,;:.]+$/, '').trim();
-}
-
-async function abazeSozlugunuYukle(): Promise<RawDictionaryEntry[]> {
-  const response = await fetch(ABAZE_SOZLUK_DOSYASI);
-  if (!response.ok) throw new Error(`Abaze sözlüğü yüklenemedi: ${response.status}`);
-
-  const data = await response.json();
-  const words = data?.words;
-  if (!words || typeof words !== 'object') return [];
-
-  const sonuc: RawDictionaryEntry[] = [];
-
-  for (const [id, value] of Object.entries(words)) {
-    const item = value as { spelling?: string; full_definition_in_html?: string };
-    const ham = htmlMetniniCikar(item.full_definition_in_html);
-
-    const parcalar = ham.split('◊');
-    const anlam = parcalar[0].trim().replace(/[,;]\s*$/, '');
-    const ornekler = parcalar
-      .slice(1)
-      .map((p) => p.trim().replace(/^[-–—]\s*/, ''))
-      .filter((p) => p.length > 0)
-      .filter((p) => p.length < 80)
-      .filter((p) => !/^\d+\./.test(p))
-      .filter((p) => !/^[IVX]+\./.test(p));
-
-    const spelling = (item.spelling || id).trim();
-    const spellingCirc = kirilMi(spelling);
-    const definitionCirc = kirilMi(anlam);
-
-    let lemma: string;
-    let translation: string;
-
-    if (!spellingCirc && definitionCirc) {
-      // Türkçe madde başı → Adigece karşılık (asıl durum: Tur-Ady sözlüğü)
-      lemma = ilkAnlamiAl(anlam);
-      translation = spelling;
-    } else if (spellingCirc && !definitionCirc) {
-      // Adigece madde başı → Türkçe tanım
-      lemma = spelling;
-      translation = anlam;
-    } else if (spellingCirc && definitionCirc) {
-      // İkisi de Kiril: tanım büyük ihtimalle Rusça. Türkçe kartta
-      // Rusça anlam göstermemek için bu kayıtları atla.
-      continue;
-    } else {
-      lemma = spelling;
-      translation = anlam;
-    }
-
-    if (!lemma || !translation) continue;
-
-    sonuc.push({
-      id,
-      lemma,
-      translation,
-      ornekler: ornekler.length > 0 ? ornekler : undefined,
-      dialect: 'Adigece',
-    });
-  }
-
-  return sonuc;
-}
 
 export default function GununKelimesiKart({
   veri,
@@ -199,12 +51,21 @@ export default function GununKelimesiKart({
     }
 
     const load = async () => {
-      let kelimeler = KELIMELER_VERITABANI;
+      let kelimeler: RawDictionaryEntry[] = [];
       try {
-        const abazeKelimeleri = await abazeSozlugunuYukle();
-        if (abazeKelimeleri.length > 0) kelimeler = abazeKelimeleri;
+        // Gunun-Kelimesi-001: build-time havuz (SSOT + Abaze İbrahim)
+        kelimeler = await gununKelimesiHavuzuYukle();
       } catch (error) {
-        console.warn('Abaze sözlüğü yüklenemedi, fallback liste kullanılacak:', error);
+        console.warn('Günün kelimesi havuzu yüklenemedi, yedek liste kullanılacak:', error);
+      }
+
+      // Son çare: havuz dosyası hiç yoksa bile kart boş kalmasın
+      if (kelimeler.length === 0) {
+        kelimeler = [
+          { id: 'y1', lemma: 'СиIэшIу', translation: 'Tatlım, canım', dialect: 'Adigece', ornekler: ['СиIэшIу, уэ дахэ?'] },
+          { id: 'y2', lemma: 'адыгэ', translation: 'Çerkes, Adıgeli', dialect: 'Adigece', ornekler: ['Адыгэ адыгабзэ ихьэу.'] },
+          { id: 'y3', lemma: 'адыгабзэ', translation: 'Adıgece dili', dialect: 'Adigece', ornekler: ['Адыгабзэ щIалэ.'] },
+        ];
       }
 
       if (cancelled) return;
@@ -236,14 +97,24 @@ export default function GununKelimesiKart({
     if (!bugunKelimesi) return;
     setShareLoading(true);
 
+    const ornekMetni =
+      bugunKelimesi.ornekCiftleri && bugunKelimesi.ornekCiftleri.length > 0
+        ? bugunKelimesi.ornekCiftleri
+            .map(
+              (c) =>
+                `  • ${cleanHtml(c.metin)}${c.ceviri ? `\n    (${cleanHtml(c.ceviri)})` : ''}`
+            )
+            .join('\n')
+        : bugunKelimesi.ornekler && bugunKelimesi.ornekler.length > 0
+          ? bugunKelimesi.ornekler.map((o) => `  • ${cleanHtml(o)}`).join('\n')
+          : '';
+
     const metin = [
       '🎓 Açık Mektep Çerkesçe Sözlük — Günün Kelimesi',
       '',
       `📖 Kelime: ${cleanHtml(bugunKelimesi.kelime)}`,
       `🇹🇷 Anlam: ${cleanHtml(bugunKelimesi.anlam || '—')}`,
-      bugunKelimesi.ornekler && bugunKelimesi.ornekler.length > 0
-        ? `💬 Örnek:\n${bugunKelimesi.ornekler.map((o) => `  • ${cleanHtml(o)}`).join('\n')}`
-        : '',
+      ornekMetni ? `💬 Örnek:\n${ornekMetni}` : '',
     ]
       .filter(Boolean)
       .join('\n');
@@ -315,7 +186,7 @@ export default function GununKelimesiKart({
     );
   }
 
-  const { kelime, anlam, lehce, meta, ornekler } = bugunKelimesi;
+  const { kelime, anlam, lehce, meta, ornekler, ornekCiftleri } = bugunKelimesi;
 
   return (
     <>
@@ -343,8 +214,28 @@ export default function GununKelimesiKart({
         </summary>
 
         <div className="px-4 pb-4 sm:px-6 sm:pb-6">
-          {/* ÖRNEK KULLANIM */}
-          {ornekler && ornekler.length > 0 && (
+          {/* ÖRNEK KULLANIM — Gunun-Kelimesi-001: çevirili iki katmanlı gösterim */}
+          {ornekCiftleri && ornekCiftleri.length > 0 ? (
+            <div className="mt-2 sm:mt-4 pt-3 sm:pt-4 border-t border-indigo-200 dark:border-indigo-800">
+              <div className="text-xs font-bold uppercase tracking-wider text-indigo-600 dark:text-indigo-300 mb-2">
+                💬 Örnek Kullanım
+              </div>
+              <ul className="space-y-2">
+                {ornekCiftleri.map((cift, idx) => (
+                  <li key={idx} className="pl-3 border-l-2 border-indigo-300 dark:border-indigo-700">
+                    <p className="text-sm font-medium text-slate-800 dark:text-slate-200 leading-relaxed">
+                      {cift.metin}
+                    </p>
+                    {cift.ceviri && (
+                      <p className="text-xs italic text-slate-500 dark:text-slate-400 leading-snug mt-0.5">
+                        {cift.ceviri}
+                      </p>
+                    )}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ) : ornekler && ornekler.length > 0 ? (
             <div className="mt-2 sm:mt-4 pt-3 sm:pt-4 border-t border-indigo-200 dark:border-indigo-800">
               <div className="text-xs font-bold uppercase tracking-wider text-indigo-600 dark:text-indigo-300 mb-2">
                 💬 Örnek Kullanım
@@ -360,7 +251,7 @@ export default function GununKelimesiKart({
                 ))}
               </ul>
             </div>
-          )}
+          ) : null}
 
           {/* Yedek: meta.notlar */}
           {(!ornekler || ornekler.length === 0) && meta?.notlar && (
@@ -451,7 +342,30 @@ export default function GununKelimesiKart({
 
                     {acikKelimeId === kelimeItem.id && (
                       <div className="px-3 pb-3 space-y-2 border-t border-indigo-100 dark:border-indigo-900/50 pt-2">
-                        {kelimeItem.ornekler && kelimeItem.ornekler.length > 0 ? (
+                        {kelimeItem.ornekCiftleri && kelimeItem.ornekCiftleri.length > 0 ? (
+                          <div>
+                            <div className="text-[10px] font-bold uppercase tracking-wider text-indigo-500 dark:text-indigo-400 mb-1">
+                              💬 Örnek
+                            </div>
+                            <ul className="space-y-1.5">
+                              {kelimeItem.ornekCiftleri.map((cift, idx) => (
+                                <li
+                                  key={idx}
+                                  className="pl-2 border-l-2 border-indigo-300 dark:border-indigo-700"
+                                >
+                                  <p className="text-xs font-medium text-slate-700 dark:text-slate-300">
+                                    {cift.metin}
+                                  </p>
+                                  {cift.ceviri && (
+                                    <p className="text-[10px] italic text-slate-500 dark:text-slate-400">
+                                      {cift.ceviri}
+                                    </p>
+                                  )}
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
+                        ) : kelimeItem.ornekler && kelimeItem.ornekler.length > 0 ? (
                           <div>
                             <div className="text-[10px] font-bold uppercase tracking-wider text-indigo-500 dark:text-indigo-400 mb-1">
                               💬 Örnek

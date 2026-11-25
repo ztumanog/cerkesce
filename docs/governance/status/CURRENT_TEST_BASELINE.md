@@ -9,9 +9,9 @@
 
 | Olcut | Deger |
 |---|---|
-| Ana Test Files | 192 |
-| Ana Tests | 1072 |
-| Ana PASS | 1071 (1 harici veri başarısızlığı — bkz. not) |
+| Ana Test Files | 193 |
+| Ana Tests | 1080 |
+| Ana PASS | 1079 (1 harici veri başarısızlığı — bkz. not) |
 | Cert Test Files | 22 |
 | Cert Tests | 92 |
 | Cert PASS | 92 |
@@ -62,6 +62,7 @@
 | **2026-11-25 (2. paket)** | **1103 (+93 cert)** | **−2 cert** | A5 devamı: ölü explorer bileşenleri silindi (ConceptDetailDrawer stub + NetworkExplorerToolbar mojibake) + NetworkExplorerPhase7_1.test.ts (UI-001/002 — yalnız isValidElement, korunacak kapsam yok) |
 | **2026-11-25 (3. paket)** | **1099 (+93 cert)** | **−4 ana** | B1 başlangıcı: kök dialect.ts tip dökümü + DialectRule alt-zinciri silindi (kural depoları: 2×IDialectRuleRepository, DialectRuleRepository, DialectRule + self-contained test — hiçbiri gerçek kodu test etmiyordu). İzlenmeyen yetim kopya Dialect.ts diskten temizlendi. Alt-zincir B (Variant/DialectResolver/Bridge) incelemede |
 | **2026-11-25 (MULTILINGUAL-RETIRE-001)** | **1072 (+92 cert)** | **−27 ana / −1 cert** | MultilingualExplorer alt sistemi tam emeklilik: 10 kod dosyası (~380 satır) + 11 test dosyası (28 test). Üretim tüketicisi sıfırdı; canlı servis kapsamı kaybı yok (GraphTraversal/Assembler/ConceptId/DTO testleri bağımsız duruyor). Dialect.ts ve DialectTypes.ts KORU kararı. Kod referansı ripgrep ile sıfır doğrulandı, tsc+build PASS |
+| **2026-11-26 (Gunun-Kelimesi-001)** | **1080 (+92 cert)** | **+8 ana** | Günün Kelimesi yeniden yapılandırıldı: build-time havuz (SSOT senses.examples + Abaze İbrahim, 292 KB), örnekli aday önceliklendirme, çevirili iki katmanlı örnek gösterimi; GK-001..008 testleri |
 
 > **Not (2026-11-25):** Ana suit `npm test` (vitest run), sertifika suiti `npm run test:cert`
 > (vitest.cert.config.ts) ayrı çalışır. Toplam = 1103 + 95 = 1198.

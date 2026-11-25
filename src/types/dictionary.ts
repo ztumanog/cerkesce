@@ -131,6 +131,8 @@ export interface GununKelimesi {
   tarih?: string;
   date?: string;
   ornekler?: string[];   // ⭐ YENİ
+  /** Çevirili örnek çiftleri (SSOT senses.examples — metin + Türkçe çevirisi) */
+  ornekCiftleri?: Array<{ metin: string; ceviri?: string | null }>;
   meta?: {
     seviye?: string;
     kategori?: string;
