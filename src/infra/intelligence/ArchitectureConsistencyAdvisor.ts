@@ -69,9 +69,9 @@ export class ArchitectureConsistencyAdvisor {
     const adrIndexFile = path.join(adrDir, 'ADR_INDEX.md');
     if (fs.existsSync(adrIndexFile) && fs.existsSync(adrDir)) {
       const indexContent = fs.readFileSync(adrIndexFile, 'utf-8');
-      const physicalFiles = fs.readdirSync(adrDir).filter(f => f.startsWith('ADR-'));
+      const physicalFiles = fs.readdirSync(adrDir).filter(f => /^ADR[-_].*\.md$/i.test(f) && !/^ADR[-_](INDEX|ENVANTER|DECISIONS|NUMBERING|DASHBOARD)/i.test(f));
 
-      const indexed = (indexContent.match(/ADR-[A-Z0-9-]+/g) || []).length;
+      const indexed = (indexContent.match(/^\|\s*ADR[-_][A-Za-z0-9_-]+\s*\|/gm) || []).length;
 
       if (indexed > physicalFiles.length * 1.5) {
         issues.push({

@@ -31,7 +31,7 @@
 | — | [02-BICIM-BULGULARI.md](./edit-audit/02-BICIM-BULGULARI.md) | 329 biçim bulgusu, tür bazında toplam ve dosya listesi |
 | — | [03-TERMINOLOJI-VE-DIL.md](./edit-audit/03-TERMINOLOJI-VE-DIL.md) | Terim envanteri, çakışan terim çiftleri, diakritik/yazım bulguları |
 | — | [04-MUKERRER-VE-ORGANIZASYON.md](./edit-audit/04-MUKERRER-VE-ORGANIZASYON.md) | Mükerrer kümeler, belge içi tekrar blokları, adlandırma anomalileri |
-| — | [05-IÇERIK-CELISKILERI.md](./edit-audit/05-IÇERIK-CELISKILERI.md) | Faz durumu iddiaları, test sayıları, güncelleme tarihleri |
+| — | [05-ICERIK-CELISKILERI.md](./edit-audit/05-ICERIK-CELISKILERI.md) | Faz durumu iddiaları, test sayıları, güncelleme tarihleri |
 | — | [06-BAGLANTILAR.md](./edit-audit/06-BAGLANTILAR.md) | Göreli bağlantılar, kırık bağlantı, çapraz referans durumu |
 | — | `raw/` | Ham kanıt: `inventory.csv`, `issues.csv`, `naming.csv`, `headings.csv`, `links.csv`, `status-claims.csv`, `term-variants.csv`, `duplicate-exact.txt`, `duplicate-near.txt`, `adr-index-check.txt` |
 | — | `tools/` | Denetimi yeniden üreten betikler: `DocsAudit.ps1`, `DocsDigest.ps1` |
