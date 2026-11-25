@@ -12594,7 +12594,6 @@
       "L-KEZHER",
       "L-KHAXE",
       "L-KHE-2",
-      "L-KHEKHYGUE-37868",
       "L-KHEZH",
       "L-KHUEY",
       "L-KHUEYSHYPS",
@@ -30809,7 +30808,6 @@
       "L-KBD-01428",
       "L-KBD-03623",
       "L-KEYGUET-YK-YN",
-      "L-KHEKHYGUE-37798",
       "L-NUM-200",
       "L-T-Y",
       "L-T-YBZHE",
@@ -59018,7 +59016,6 @@
       "L-KBD-00900",
       "L-KBD-00902",
       "L-KEDZHAK1UE",
-      "L-KHEKHYGUE-37727",
       "L-MYDZHEMYPTS-E",
       "L-NEDZH",
       "L-UDZHE-USHCHE",
@@ -61462,7 +61459,6 @@
       "L-AUTO-00226",
       "L-AUTO-00607",
       "L-GHET-YSHEN",
-      "L-KHEKHYGUE-38038",
       "L-TET-YSHEP-E",
       "L-WIKT-KBD-30901",
       "L-WIKT-KBD-30989",
@@ -65977,8 +65973,7 @@
     "morphemeIds": [],
     "lexemeIds": [
       "L-K-APTS-E",
-      "L-KHEKHYGUE-37603",
-      "L-KHEKHYGUE-37815"
+      "L-KHEKHYGUE-37603"
     ],
     "notes": "Mide ailesi (кӀапцӀ).",
     "productivity": {
@@ -70803,13 +70798,6 @@
       "L-AUTO-01400",
       "L-ILESYSHCHKHE",
       "L-ILHESYSHCH-E",
-      "L-KHEKHYGUE-37835",
-      "L-KHEKHYGUE-37837",
-      "L-KHEKHYGUE-37838",
-      "L-KHEKHYGUE-37839",
-      "L-KHEKHYGUE-37840",
-      "L-KHEKHYGUE-37841",
-      "L-KHEKHYGUE-37842",
       "L-WIKT-KBD-30439",
       "L-WIKT-KBD-31821"
     ],
@@ -75665,7 +75653,6 @@
       "L-KABZEDYDE",
       "L-KEABZABZE",
       "L-KEABZENYGHE",
-      "L-KHEKHYGUE-38079",
       "L-WIKT-KBD-29470",
       "L-WIKT-KBD-29795",
       "L-WIKT-KBD-30280",
@@ -97556,8 +97543,6 @@
     "_source": "orphan-root-sync-2026",
     "lexemeIds": [
       "L-AUTO-01691",
-      "L-KHEKHYGUE-37915",
-      "L-KHEKHYGUE-37917",
       "L-KHEKHYGUE-38095",
       "L-WIKT-KBD-29113",
       "L-WIKT-KBD-29217",
@@ -170447,9 +170432,7 @@
     "rootId": "R-DYZHYN_2",
     "headword": "дыжьын",
     "gloss": "",
-    "lexemeIds": [
-      "L-KHEKHYGUE-37900"
-    ]
+    "lexemeIds": []
   },
   {
     "id": "WF-QWEDAM",
