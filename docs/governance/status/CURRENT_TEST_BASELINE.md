@@ -9,16 +9,21 @@
 
 | Olcut | Deger |
 |---|---|
-| Ana Test Files | 202 |
-| Ana Tests | 1101 |
-| Ana PASS | 1101 |
-| Cert Test Files | 26 |
-| Cert Tests | 102 |
-| Cert PASS | 102 |
+| Ana Test Files | 203 |
+| Ana Tests | 1103 |
+| Ana PASS | 1102 (1 harici veri başarısızlığı — bkz. not) |
+| Cert Test Files | 24 |
+| Cert Tests | 95 |
+| Cert PASS | 95 |
 | FAIL | 0 |
 
 **Komut:** `npm test` + `npm run test:cert`
-**Tarih:** 2026-11-25 01:43 (ana) / 01:44 (cert)
+**Tarih:** 2026-11-25 03:19 (ana) / 03:19 (cert)
+
+> **Not (2026-11-25 03:19):** `valueObjects.test.ts` içindeki "40841 kayıt"
+> doğrulaması, paralel kürasyon oturumunun lexemes.json'a eklediği 40842. kayıt
+> nedeniyle başarısız — kod regresyonu değil, sabit sayı gömülü kırılgan test.
+> Kürasyon oturumu kapanınca güncellenmeli.
 
 ---
 
@@ -53,9 +58,10 @@
 | **2026-11-24 13:31** | **1075 (+102 cert)** | **+31** | Morfoloji inflect bağlantı testleri (InflectionWiring, +10), moderasyon/kavram-agi gün içi testleri, yonetim merkezleştirme ve P4-C export commitleriyle doğrulandı (tsc 0 hata) |
 | **2026-11-24 22:08** | **1078 (+102 cert)** | **+3** | REPORT-001: ReportGeneratorService ürünleştirildi — Rapor İndir (Markdown) butonu kavram-agi'ye bağlandı, REP-007/008/009 testleri (tsc 0 hata, build PASS) |
 | **2026-11-25 01:43** | **1101 (+102 cert)** | **+23** | AUTH-001: admin rol modeli + oturum guard'ı — 23 auth testi (session 6, guard 11, credentials 6); 12 senaryoluk canlı duman testi + build PASS |
+| **2026-11-25 03:19** | **1103 (+95 cert)** | **+2 ana / −7 cert** | A5-UI-DEMO-001: ölü demo sayfaları silindi (5 dosya, −417 satır) + 7 cert testi; NEP-003/005 canlı LayoutEngineService kapsamı yeni test dosyasına taşındı (LE-001/002) |
 
 > **Not (2026-11-25):** Ana suit `npm test` (vitest run), sertifika suiti `npm run test:cert`
-> (vitest.cert.config.ts) ayrı çalışır. Toplam = 1101 + 102 = 1203.
+> (vitest.cert.config.ts) ayrı çalışır. Toplam = 1103 + 95 = 1198.
 
 ---
 
