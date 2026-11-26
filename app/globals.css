@@ -1,5 +1,60 @@
 @import "tailwindcss";
 
+/*
+ * Radix Colors — Gunun-Kelimesi-001 restyle (WCAG adım sistemi)
+ * Adım sözleşmesi: 1-2 zemin, 3-5 bileşen, 6-8 kenarlık/halka, 9-10 dolgu,
+ * 11-12 metin. 9. adım beyaz metinle AA; 11-12 adım 1-3 zeminle AAA.
+ * Dark ölçekler .dark sınıfına kapsamlıdır (projenin darkMode: 'class' uyumu).
+ */
+@import "@radix-ui/colors/indigo.css";
+@import "@radix-ui/colors/indigo-dark.css";
+@import "@radix-ui/colors/slate.css";
+@import "@radix-ui/colors/slate-dark.css";
+@import "@radix-ui/colors/grass.css";
+@import "@radix-ui/colors/grass-dark.css";
+
+/* Radix adımlarını Tailwind v4 token'larına eşle: bg-indigo2, text-slate11, ... */
+@theme {
+  --color-indigo1: var(--indigo-1);
+  --color-indigo2: var(--indigo-2);
+  --color-indigo3: var(--indigo-3);
+  --color-indigo4: var(--indigo-4);
+  --color-indigo5: var(--indigo-5);
+  --color-indigo6: var(--indigo-6);
+  --color-indigo7: var(--indigo-7);
+  --color-indigo8: var(--indigo-8);
+  --color-indigo9: var(--indigo-9);
+  --color-indigo10: var(--indigo-10);
+  --color-indigo11: var(--indigo-11);
+  --color-indigo12: var(--indigo-12);
+
+  --color-slate1: var(--slate-1);
+  --color-slate2: var(--slate-2);
+  --color-slate3: var(--slate-3);
+  --color-slate4: var(--slate-4);
+  --color-slate5: var(--slate-5);
+  --color-slate6: var(--slate-6);
+  --color-slate7: var(--slate-7);
+  --color-slate8: var(--slate-8);
+  --color-slate9: var(--slate-9);
+  --color-slate10: var(--slate-10);
+  --color-slate11: var(--slate-11);
+  --color-slate12: var(--slate-12);
+
+  --color-grass1: var(--grass-1);
+  --color-grass2: var(--grass-2);
+  --color-grass3: var(--grass-3);
+  --color-grass4: var(--grass-4);
+  --color-grass5: var(--grass-5);
+  --color-grass6: var(--grass-6);
+  --color-grass7: var(--grass-7);
+  --color-grass8: var(--grass-8);
+  --color-grass9: var(--grass-9);
+  --color-grass10: var(--grass-10);
+  --color-grass11: var(--grass-11);
+  --color-grass12: var(--grass-12);
+}
+
 @variant dark (&:where(.dark, .dark *));
 
 @layer base {
