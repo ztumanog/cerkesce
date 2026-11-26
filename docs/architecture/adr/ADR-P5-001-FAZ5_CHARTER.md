@@ -1,7 +1,7 @@
 # ADR-P5-001: Faz 5 Charter - Corpus Analytics & Search Intelligence
 
 **Tarih:** 2026-09-24
-**Durum:** PROPOSED
+**Durum:** ACCEPTED (HISTORICAL — Faz 5 CLOSED)
 **Faz:** 5
 **On Kosul:** Faz 2 CLOSED, Faz 4 Sprintler Tamamlandı
 **Karar Sahibi:** Mimar

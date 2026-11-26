@@ -1,6 +1,6 @@
 # ADR-P10-001: Platform Intelligence Automation
 
-**Durum:** PROPOSED
+**Durum:** ACCEPTED (HISTORICAL — Faz 10 CLOSED)
 **Tarih:** 2026-10-03
 **Kategori:** Platform
 **Faz:** 10

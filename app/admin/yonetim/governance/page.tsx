@@ -36,6 +36,32 @@ interface AdrCard {
   preview: string;
 }
 
+/** ADR içeriğinden durum metnini çıkarır (`Durum:`, `Status:`, `## Durum`, `Status\n...`). */
+function extractAdrStatus(content: string): string {
+  const inlineMatch =
+    content.match(/^(?:[-*]\s*)?\*{0,2}(?:Durum|Status)\*{0,2}:\*{0,2}\s*(.+)$/im);
+  if (inlineMatch) return inlineMatch[1].trim().slice(0, 80);
+
+  const headingMatch = content.match(/^#{1,4}\s+(?:Durum|Status)\s*\r?\n+([^\n#]+)/im)
+    || content.match(/^(?:Durum|Status)\s*\r?\n+\r?\n?([^\n#]+)/im);
+  if (headingMatch) return headingMatch[1].trim().slice(0, 80);
+
+  return '—';
+}
+
+/** Kart özeti için önizleme metni çıkarır (`---` sonrası veya ilk içerik bölümü). */
+function extractAdrPreview(content: string): string {
+  const afterHr = content.split(/\r?\n---\r?\n/)[1];
+  const source = afterHr
+    || content.replace(/^#\s+.+$/m, '').replace(/\r?\n/g, '\n');
+  return source
+    .replace(/^#{1,6}\s+.*$/gm, '')
+    .replace(/[*>`]/g, '')
+    .replace(/\s+/g, ' ')
+    .trim()
+    .slice(0, 300);
+}
+
 /** Karar Defteri'ni dizinden okur: başlık + durum + ilk paragraf önizlemesi. */
 function loadAdrCards(): AdrCard[] {
   const dir = path.join(process.cwd(), 'docs/architecture/adr');
@@ -43,8 +69,7 @@ function loadAdrCards(): AdrCard[] {
     const files = fs.readdirSync(dir)
       .filter((f) => f.startsWith('ADR-') && f.endsWith('.md'))
       .sort()
-      .reverse()
-      .slice(0, 30);
+      .reverse();
     return files.map((file) => {
       let title = file.replace('.md', '');
       let status = '—';
@@ -53,13 +78,8 @@ function loadAdrCards(): AdrCard[] {
         const content = fs.readFileSync(path.join(dir, file), 'utf-8');
         const titleMatch = content.match(/^#\s+(.+)$/m);
         if (titleMatch) title = titleMatch[1].trim();
-        const statusMatch = content.match(/\*\*Durum:?\*\*\s*(.+)/i) || content.match(/Durum:\s*(.+)/i);
-        if (statusMatch) status = statusMatch[1].trim().slice(0, 60);
-        preview = content
-          .split(/\n---\n/)[1] // başlık bloğundan sonraki ilk bölüm
-          ?.replace(/[#*>`]/g, '')
-          .trim()
-          .slice(0, 300) || '';
+        status = extractAdrStatus(content);
+        preview = extractAdrPreview(content);
       } catch { /* okunamayan dosya: yalnız dosya adı gösterilir */ }
       return { file, title, status, preview };
     });
@@ -150,7 +170,7 @@ export default function KararlarPage() {
 
         {/* Karar Defteri — dizinden okunur, satır içi genişler (404 yok) */}
         <div className="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-6 shadow-sm space-y-3">
-          <h2 className="text-lg font-bold text-slate-900 dark:text-slate-100">Karar Defteri</h2>
+          <h2 className="text-lg font-bold text-slate-900 dark:text-slate-100">Karar Defteri ({adrs.length})</h2>
           <p className="text-xs text-slate-400">Alınan mimari kararlar. Karta tıklayınca özeti açılır.</p>
           {adrs.length === 0 ? (
             <div className="rounded-xl border border-dashed border-slate-300 dark:border-slate-700 py-10 text-center text-sm text-slate-400">

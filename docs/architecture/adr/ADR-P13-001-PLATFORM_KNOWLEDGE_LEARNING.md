@@ -1,6 +1,6 @@
 # ADR-P13-001: Platform Knowledge & Learning
 
-**Durum:** PROPOSED
+**Durum:** ACCEPTED (HISTORICAL — Faz 13 CLOSED)
 **Tarih:** 2026-10-03
 **Kategori:** Platform
 **Faz:** 13

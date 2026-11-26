@@ -1,7 +1,7 @@
 # ADR-P5-001
 
 **Tarih:** 2026-09-24
-**Durum:** PROPOSED
+**Durum:** SUPERSEDED by ADR-P5-001-FAZ5_CHARTER (HISTORICAL)
 **Faz:** 5 (LOCKED)
 **Baslik:** Phase 5 Charter - Corpus Analytics & Discovery
 **Karar Sahibi:** Mimar

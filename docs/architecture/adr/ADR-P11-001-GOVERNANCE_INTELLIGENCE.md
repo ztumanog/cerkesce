@@ -1,6 +1,6 @@
 # ADR-P11-001: Governance Intelligence
 
-**Durum:** PROPOSED
+**Durum:** ACCEPTED (HISTORICAL — Faz 11 CLOSED)
 **Tarih:** 2026-10-03
 **Kategori:** Governance
 **Faz:** 11

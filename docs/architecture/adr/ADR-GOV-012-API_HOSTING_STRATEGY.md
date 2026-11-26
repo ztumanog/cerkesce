@@ -1,7 +1,7 @@
 # ADR-GOV-012: API Hosting Strategy
 
 **Tarih:** 2026-10-03
-**Durum:** PROPOSED
+**Durum:** SUPERSEDED by ADR-EXPRESS-001 (Next.js App Router API aktif)
 **Kategori:** Governance
 **Faz:** 8.5
 **Etkilenen:** Express API, Redis, Vercel

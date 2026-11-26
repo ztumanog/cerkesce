@@ -1,6 +1,6 @@
 # ADR-P15-001: Platform Reliability Engineering
 
-**Durum:** PROPOSED
+**Durum:** ACCEPTED (HISTORICAL — Faz 15 CLOSED)
 **Tarih:** 2026-10-03
 **Kategori:** Platform
 **Faz:** 15

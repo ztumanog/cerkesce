@@ -1,7 +1,7 @@
 # ADR-P5-000: Phase 5 Unlock Approval
 
 **Tarih:** 2026-09-24
-**Durum:** PROPOSED
+**Durum:** ACCEPTED (HISTORICAL — Faz 5 CLOSED)
 **Faz:** 5
 **Karar Sahibi:** Mimar
 

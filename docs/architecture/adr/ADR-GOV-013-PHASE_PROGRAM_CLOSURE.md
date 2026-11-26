@@ -1,6 +1,6 @@
 # ADR-GOV-013: Phase Program Closure Strategy
 
-**Durum:** PROPOSED
+**Durum:** ACCEPTED (Faz 1–15 CLOSED)
 **Tarih:** 2026-10-03
 **Kategori:** Governance
 

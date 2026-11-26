@@ -1,6 +1,6 @@
 # ADR-P12-001: Autonomous Governance Support
 
-**Durum:** PROPOSED
+**Durum:** ACCEPTED (HISTORICAL — Faz 12 CLOSED)
 **Tarih:** 2026-10-03
 **Kategori:** Governance
 **Faz:** 12

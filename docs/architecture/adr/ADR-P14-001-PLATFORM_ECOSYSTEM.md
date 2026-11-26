@@ -1,6 +1,6 @@
 # ADR-P14-001: Platform Ecosystem
 
-**Durum:** PROPOSED
+**Durum:** ACCEPTED (HISTORICAL — Faz 14 CLOSED)
 **Tarih:** 2026-10-03
 **Kategori:** Platform
 **Faz:** 14
