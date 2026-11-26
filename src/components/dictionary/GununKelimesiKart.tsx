@@ -5,6 +5,8 @@ import Link from 'next/link';
 import { toast } from 'sonner';
 import { Share } from '@capacitor/share';
 import { Capacitor } from '@capacitor/core';
+import { Badge, Button, Flex, Heading, Text } from '@radix-ui/themes';
+import { Share2, BookmarkPlus, BookmarkCheck, Library } from 'lucide-react';
 
 import {
   selectDailyWord,
@@ -194,22 +196,22 @@ export default function GununKelimesiKart({
         className={`group rounded-2xl bg-indigo2 border border-indigo6 shadow-sm transition-all hover:shadow-md ${className}`}
       >
         <summary className="list-none cursor-pointer p-4 sm:p-6 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo8 focus-visible:ring-inset">
-          <header className="flex justify-between items-center mb-2 sm:mb-4">
-            <span className="text-xs font-semibold uppercase tracking-wider text-indigo12 bg-indigo4 px-3 py-1 rounded-full border border-indigo6">
+          <Flex justify="between" align="center" wrap="wrap" gap="2" className="mb-2 sm:mb-4">
+            <Badge color="indigo" variant="soft" size="2" highContrast>
               ✨ Günün Kelimesi
-            </span>
-            <span className="text-xs font-medium text-slate11 bg-slate3 px-2.5 py-1 rounded-md">
+            </Badge>
+            <Badge color="gray" variant="soft" size="1" highContrast>
               {lehce || 'Bilinmeyen'}
-            </span>
-          </header>
+            </Badge>
+          </Flex>
 
           <div className="space-y-1 sm:space-y-2">
-            <h3 className="text-2xl sm:text-3xl font-bold text-indigo12">
+            <Heading as="h3" size="7" className="text-indigo12">
               {kelime}
-            </h3>
-            <p className="text-base text-slate12 leading-relaxed">
+            </Heading>
+            <Text as="p" size="3" className="text-slate12 leading-relaxed">
               {anlam}
-            </p>
+            </Text>
           </div>
         </summary>
 
@@ -223,13 +225,13 @@ export default function GununKelimesiKart({
               <ul className="space-y-2">
                 {ornekCiftleri.map((cift, idx) => (
                   <li key={idx} className="pl-3 border-l-2 border-indigo8">
-                    <p className="text-sm font-medium text-slate12 leading-relaxed">
+                    <Text as="p" size="2" weight="medium" className="text-slate12 leading-relaxed">
                       {cift.metin}
-                    </p>
+                    </Text>
                     {cift.ceviri && (
-                      <p className="text-xs italic text-slate11 leading-snug mt-0.5">
+                      <Text as="p" size="1" className="italic text-slate11 leading-snug mt-0.5">
                         {cift.ceviri}
-                      </p>
+                      </Text>
                     )}
                   </li>
                 ))}
@@ -262,39 +264,35 @@ export default function GununKelimesiKart({
             </figure>
           )}
 
-          {/* BUTONLAR */}
-          <div className="mt-4 pt-3 border-t border-indigo6 flex flex-wrap items-center gap-2">
-            <button
-              type="button"
+          {/* BUTONLAR — Radix Theme (odak halkaları ve kontrast yerleşik) */}
+          <Flex gap="2" wrap="wrap" align="center" className="mt-4 pt-3 border-t border-indigo6">
+            <Button
+              variant="soft"
+              size="2"
               onClick={() => setGorselModalAcik(true)}
               aria-label="Günün kelimesini paylaş"
-              className="flex items-center gap-1.5 px-3.5 py-2.5 rounded-lg text-xs font-semibold bg-slate1 text-slate11 border border-slate7 hover:border-indigo8 hover:text-indigo11 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo8 disabled:opacity-50 disabled:cursor-not-allowed"
             >
-              <span>📤</span>
-              <span>Paylaş</span>
-            </button>
+              <Share2 size={14} aria-hidden />
+              Paylaş
+            </Button>
 
-            <button
-              type="button"
+            <Button
+              variant={saved ? 'soft' : 'surface'}
+              color={saved ? 'grass' : 'gray'}
+              size="2"
               onClick={handleSave}
-              className={`flex items-center gap-1.5 px-3.5 py-2.5 rounded-lg text-xs font-semibold transition-colors border focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo8 ${
-                saved
-                  ? 'bg-grass3 text-grass12 border-grass6 hover:bg-grass4'
-                  : 'bg-slate1 text-slate11 border-slate7 hover:border-grass8 hover:text-grass11'
-              }`}
             >
-              <span>{saved ? '✅' : '💾'}</span>
-              <span>{saved ? 'Kaydedildi' : 'Kaydet'}</span>
-            </button>
+              {saved ? <BookmarkCheck size={14} aria-hidden /> : <BookmarkPlus size={14} aria-hidden />}
+              {saved ? 'Kaydedildi' : 'Kaydet'}
+            </Button>
 
-            <Link
-              href="/kaydedilenler"
-              className="flex items-center gap-1.5 px-3.5 py-2.5 rounded-lg text-xs font-semibold bg-indigo9 text-white border border-indigo9 hover:bg-indigo10 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo8 ml-auto"
-            >
-              <span>📚</span>
-              <span>Kaydedilenler</span>
-            </Link>
-          </div>
+            <Button asChild variant="solid" size="2" className="ml-auto">
+              <Link href="/kaydedilenler">
+                <Library size={14} aria-hidden />
+                Kaydedilenler
+              </Link>
+            </Button>
+          </Flex>
 
           {/* DİĞER KELİMELER */}
           {digerKelimeler.length > 0 && (
@@ -318,19 +316,19 @@ export default function GununKelimesiKart({
                       className="w-full text-left p-3 flex items-center justify-between gap-2 hover:bg-indigo3 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-indigo8 min-h-[44px]"
                     >
                       <div className="flex-1 min-w-0">
-                        <div className="flex items-center gap-2">
-                          <span className="font-bold text-sm text-indigo12 truncate">
+                        <Flex align="center" gap="2">
+                          <Text size="2" weight="bold" className="text-indigo12 truncate">
                             {kelimeItem.kelime}
-                          </span>
+                          </Text>
                           {kelimeItem.lehce && (
-                            <span className="text-[10px] px-1.5 py-0.5 rounded bg-indigo4 text-indigo11 shrink-0">
+                            <Badge color="indigo" variant="soft" size="1" highContrast className="shrink-0">
                               {kelimeItem.lehce}
-                            </span>
+                            </Badge>
                           )}
-                        </div>
-                        <p className="text-xs text-slate11 truncate mt-0.5">
+                        </Flex>
+                        <Text as="p" size="1" className="text-slate11 truncate mt-0.5">
                           {kelimeItem.anlam}
-                        </p>
+                        </Text>
                       </div>
                       <span
                         className={`text-[10px] text-indigo9 transition-transform ${
@@ -355,13 +353,13 @@ export default function GununKelimesiKart({
                                   key={idx}
                                   className="pl-2 border-l-2 border-indigo8"
                                 >
-                                  <p className="text-xs font-medium text-slate12">
+                                  <Text as="p" size="1" weight="medium" className="text-slate12">
                                     {cift.metin}
-                                  </p>
+                                  </Text>
                                   {cift.ceviri && (
-                                    <p className="text-[10px] italic text-slate11">
+                                    <Text as="p" size="1" className="italic text-slate11">
                                       {cift.ceviri}
-                                    </p>
+                                    </Text>
                                   )}
                                 </li>
                               ))}
