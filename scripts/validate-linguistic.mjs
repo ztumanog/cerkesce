@@ -48,6 +48,7 @@ let posMismatch = 0;
 let posEmpty = 0;
 let rootIdMissingWhenRids = 0;
 let rootIdMismatch = 0;
+let conceptIdMismatch = 0;
 let brokenRootRef = 0;
 let wfEmpty = 0;
 let rootEmpty = 0;
@@ -91,6 +92,11 @@ for (const x of lexemes) {
     brokenRootRef += 1;
   }
 
+  const cids = Array.isArray(x.conceptIds) ? x.conceptIds : [];
+  if (cids.length > 0 && x.conceptId !== cids[0]) {
+    conceptIdMismatch += 1;
+  }
+
   if (!rid && rids.length === 0) {
     rootEmpty += 1;
     if (x.etymologyType !== 'loanword') {
@@ -111,6 +117,7 @@ const checks = [
   ['POS catismasi (pos != partOfSpeech)', posMismatch, 0],
   ['rootId bos ama rootIds dolu', rootIdMissingWhenRids, 0],
   ['rootId != rootIds[0]', rootIdMismatch, 0],
+  ['conceptId != conceptIds[0] (conceptIds varsa)', conceptIdMismatch, 0],
   ['Kirik rootId/rootIds referansi', brokenRootRef, 0],
   [`Bos POS (baseline <= ${MAX_POS_EMPTY})`, posEmpty, MAX_POS_EMPTY],
   [`Bos wordFamilyId (baseline <= ${MAX_WF_EMPTY})`, wfEmpty, MAX_WF_EMPTY],
