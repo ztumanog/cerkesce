@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { Card, Badge, Heading, Text, Flex, Box, Grid, Separator } from '@radix-ui/themes';
 import {
   ClipboardList, Scale, Lightbulb, HeartPulse, BookOpenCheck, Database,
+  ShieldCheck, GitBranch, Network, Languages,
 } from 'lucide-react';
 
 /**
@@ -53,6 +54,37 @@ const panolar = [
     desc: 'Veri dosyaları, sistem göstergeleri, son kayıt — sorun varsa ne yapılacağı',
     icon: HeartPulse,
     bg: '#ecfdf5', border: '#10b981', color: '#059669',
+  },
+];
+
+const yonetisimKartlari = [
+  {
+    href: '/admin/yonetim/veri-sagligi',
+    title: 'Veri Sağlığı',
+    desc: 'Doluluk ve bütünlük göstergeleri — JSON raporundan (ADR-GOV-016)',
+    icon: ShieldCheck,
+    bg: '#ecfdf5', border: '#10b981', color: '#059669',
+  },
+  {
+    href: '/admin/yonetim/kok-denetimi',
+    title: 'Kök Denetimi',
+    desc: 'rootId boş lexeme, üyesiz kök, kırık referans — JSON raporundan',
+    icon: GitBranch,
+    bg: '#fffbeb', border: '#f59e0b', color: '#b45309',
+  },
+  {
+    href: '/admin/yonetim/kavram-denetimi',
+    title: 'Kavram Denetimi',
+    desc: 'conceptId açıkları, legacy diziler, WF asılı referanslar',
+    icon: Network,
+    bg: '#f5f3ff', border: '#8b5cf6', color: '#7c3aed',
+  },
+  {
+    href: '/admin/yonetim/ceviri-denetimi',
+    title: 'Çeviri Denetimi',
+    desc: 'Dil alanlarına sızan yabancı metinler, TR==EN, eksik çeviriler (v2)',
+    icon: Languages,
+    bg: '#fef2f2', border: '#f43f5e', color: '#e11d48',
   },
 ];
 
@@ -185,6 +217,29 @@ export default function YonetimPage() {
                 <Flex justify="between" align="center">
                   <p.icon className="h-6 w-6" style={{ color: p.color }} aria-hidden />
                   <Text size="1" color="gray">Pano</Text>
+                </Flex>
+                <Heading size="4" mt="3" style={{ color: p.color }}>{p.title}</Heading>
+                <Text size="1" color="gray" mt="2" as="div" style={{ lineHeight: 1.5 }}>{p.desc}</Text>
+                <Text size="1" weight="bold" mt="3" as="div">→ Aç</Text>
+              </Card>
+            </Link>
+          ))}
+        </Grid>
+
+        <Separator size="4" my="6" />
+
+        {/* VERİ YÖNETİŞİMİ — ADR-GOV-016 (JSON raporu tüketen denetim ekranları) */}
+        <Flex align="center" gap="2" mb="4">
+          <Heading size="6">🛡️ Veri Yönetişimi</Heading>
+          <Badge variant="soft">ADR-GOV-016 · JSON raporundan okur</Badge>
+        </Flex>
+        <Grid columns={{ initial: '1', sm: '2', lg: '4' }} gap="4" mb="6">
+          {yonetisimKartlari.map((p) => (
+            <Link key={p.href} href={p.href} style={{ textDecoration: 'none' }}>
+              <Card className="hover:shadow-lg transition-all hover:-translate-y-1 cursor-pointer" style={{ background: p.bg, borderColor: p.border }}>
+                <Flex justify="between" align="center">
+                  <p.icon className="h-6 w-6" style={{ color: p.color }} aria-hidden />
+                  <Text size="1" color="gray">Salt okunur</Text>
                 </Flex>
                 <Heading size="4" mt="3" style={{ color: p.color }}>{p.title}</Heading>
                 <Text size="1" color="gray" mt="2" as="div" style={{ lineHeight: 1.5 }}>{p.desc}</Text>
