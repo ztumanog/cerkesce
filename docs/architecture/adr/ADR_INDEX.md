@@ -169,6 +169,6 @@ Bu dosya, tum ADR katalogunun TEK RESMI KAYNAGIDIR.
 | ADR-LEX-002 | Concept Registry Freeze | `ADR-LEX-002-CONCEPT_REGISTRY_FREEZE.md` | Accepted | — |
 | ADR-ONERI-001 | Öneri Anlam Doğrulama | `ADR-ONERI-001-ONERI_ANLAM_DOGRULAMA.md` | Accepted | — |
 | ADR-ROOTS-001 | Dangling Root Cleanup | `ADR-ROOTS-001-DANGLING_ROOT_CLEANUP.md` | Accepted | — |
-| ADR-ROOTS-002 | Word Family Üyelik Semantiği | `ADR-ROOTS-002-WF_UYELIK_SEMANTIGI.md` | Accepted | — |
+| ADR-ROOTS-002 | Word Family Üyelik Semantiği | `ADR-ROOTS-002-WF_UYELIK_SEMANTIGI.md` | Superseded | — |
 | ADR-EXPRESS-001 | Express Bootstrap Emekliliği | `ADR-EXPRESS-001-EXPRESS_BOOTSTRAP_EMERLILIGI.md` | Accepted | — |
 | ADR-AUTH-001 | Admin Rol Modeli ve Yetkilendirme | `ADR-AUTH-001-ADMIN-ROL-MODELI.md` | Accepted | — |

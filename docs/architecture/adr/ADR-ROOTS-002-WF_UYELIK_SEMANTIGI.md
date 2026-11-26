@@ -1,7 +1,7 @@
 # ADR-ROOTS-002: Word Family Uyelik Semantigi
 
 ## Durum
-Taslak. 22 Ekim 2026.
+Karşılandı (Superseded). 22 Ekim 2026 taslağı — 26 Kasım 2026'da kapatıldı.
 
 ## Bulgu
 roots.json icinde 476 root, her biri wordFamily alani ile lexemeIds listesi tutuyor.
@@ -39,3 +39,20 @@ Bu ADR, 5 referansin ID degisikligini kapsamaz. Sadece durum tespiti ve sonraki 
 ## Ilgili
 - ADR-ONERI-001 (oneri anlam dogrulama)
 - ADR-ROOTS-001 (126 dangling root temizligi)
+
+## Kapanis (2026-11-26)
+Planlanan ADR-ROOTS-003 yazilmadan, bu ADR'in actigi uc soru 2026-11-25
+hardening sprinti (faz0-11) + WF-AUGMENT-001 + WF-ROOT-MATRIX-001 tarafindan
+fiilen cozuldu ve koda/data islendi:
+
+1. **WF uyeligi lexeme-ID temelli** — KAV- eski ID'ler tamamen temizlendi
+   (roots.json ve word_families.json'da 0 adet kaldi); WF listeleri artik
+   L-* lexeme ID'leriyle kuruluyor.
+2. **Turev formlar WF'ye dahil** — ornek: WF-NE 261 uye (isim/fiil/deyim
+   karisik), WF-1E 546 uye; -у/-агъэ turevleri aile icinde.
+3. **Karma veri duzeltmesi** — faz9_build_families.py ile kanonik
+   families.json (7.186 aile) kuruldu: gercek kelime aileleri (root-family,
+   <=10 kok) ile semsiye kategorileri (umbrella, >10 kok) acikca ayrildi.
+
+Bu ADR'in 5 referanslik bulgusu veri yeniden insasiyla gecersizlesti;
+"referanslar degismeZ" karari moot. Durumu "Karşilandi" olarak kapatildi.
