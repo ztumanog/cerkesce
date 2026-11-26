@@ -181,9 +181,9 @@ export default function GununKelimesiKart({
 
   if (loading || !bugunKelimesi) {
     return (
-      <div className="p-6 rounded-2xl bg-indigo2 border border-indigo6 motion-safe:animate-pulse">
-        <div className="h-8 bg-indigo4 rounded w-1/3 mb-4" />
-        <div className="h-6 bg-indigo3 rounded w-2/3" />
+      <div className="p-6 rounded-2xl bg-gradient-to-br from-indigo1 to-indigo2 border border-indigo5 motion-safe:animate-pulse">
+        <div className="h-8 bg-indigo3 rounded w-1/3 mb-4" />
+        <div className="h-6 bg-indigo2 rounded w-2/3" />
       </div>
     );
   }
@@ -193,7 +193,7 @@ export default function GununKelimesiKart({
   return (
     <>
       <details
-        className={`group rounded-2xl bg-indigo2 border border-indigo6 shadow-sm transition-all hover:shadow-md ${className}`}
+        className={`group rounded-2xl bg-gradient-to-br from-indigo1 to-indigo2 border border-indigo5 shadow-sm transition-all hover:shadow-md ${className}`}
       >
         <summary className="list-none cursor-pointer p-4 sm:p-6 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo8 focus-visible:ring-inset">
           <Flex justify="between" align="center" wrap="wrap" gap="2" className="mb-2 sm:mb-4">
@@ -206,7 +206,7 @@ export default function GununKelimesiKart({
           </Flex>
 
           <div className="space-y-1 sm:space-y-2">
-            <Heading as="h3" size="7" className="text-indigo12">
+            <Heading as="h3" size="7" className="text-indigo11">
               {kelime}
             </Heading>
             <Text as="p" size="3" className="text-slate12 leading-relaxed">
@@ -218,13 +218,13 @@ export default function GununKelimesiKart({
         <div className="px-4 pb-4 sm:px-6 sm:pb-6">
           {/* ÖRNEK KULLANIM — Gunun-Kelimesi-001: çevirili iki katmanlı gösterim */}
           {ornekCiftleri && ornekCiftleri.length > 0 ? (
-            <div className="mt-2 sm:mt-4 pt-3 sm:pt-4 border-t border-indigo6">
+            <div className="mt-2 sm:mt-4 pt-3 sm:pt-4 border-t border-indigo5">
               <div className="text-xs font-bold uppercase tracking-wider text-indigo11 mb-2">
                 💬 Örnek Kullanım
               </div>
               <ul className="space-y-2">
                 {ornekCiftleri.map((cift, idx) => (
-                  <li key={idx} className="pl-3 border-l-2 border-indigo8">
+                  <li key={idx} className="pl-3 border-l-2 border-indigo6">
                     <Text as="p" size="2" weight="medium" className="text-slate12 leading-relaxed">
                       {cift.metin}
                     </Text>
@@ -238,7 +238,7 @@ export default function GununKelimesiKart({
               </ul>
             </div>
           ) : ornekler && ornekler.length > 0 ? (
-            <div className="mt-2 sm:mt-4 pt-3 sm:pt-4 border-t border-indigo6">
+            <div className="mt-2 sm:mt-4 pt-3 sm:pt-4 border-t border-indigo5">
               <div className="text-xs font-bold uppercase tracking-wider text-indigo11 mb-2">
                 💬 Örnek Kullanım
               </div>
@@ -246,7 +246,7 @@ export default function GununKelimesiKart({
                 {ornekler.map((ornek, idx) => (
                   <li
                     key={idx}
-                    className="text-sm text-slate12 leading-relaxed pl-3 border-l-2 border-indigo8"
+                    className="text-sm text-slate12 leading-relaxed pl-3 border-l-2 border-indigo6"
                   >
                     {ornek}
                   </li>
@@ -257,7 +257,7 @@ export default function GununKelimesiKart({
 
           {/* Yedek: meta.notlar */}
           {(!ornekler || ornekler.length === 0) && meta?.notlar && (
-            <figure className="mt-2 sm:mt-4 pt-3 sm:pt-4 border-t border-indigo6 bg-indigo1 p-3 rounded-xl">
+            <figure className="mt-2 sm:mt-4 pt-3 sm:pt-4 border-t border-indigo5 bg-indigo1 p-3 rounded-xl">
               <blockquote className="text-sm font-medium text-slate12 italic">
                 &ldquo;{meta.notlar}&rdquo;
               </blockquote>
@@ -265,7 +265,7 @@ export default function GununKelimesiKart({
           )}
 
           {/* BUTONLAR — Radix Theme (odak halkaları ve kontrast yerleşik) */}
-          <Flex gap="2" wrap="wrap" align="center" className="mt-4 pt-3 border-t border-indigo6">
+          <Flex gap="2" wrap="wrap" align="center" className="mt-4 pt-3 border-t border-indigo5">
             <Button
               variant="soft"
               size="2"
@@ -286,7 +286,7 @@ export default function GununKelimesiKart({
               {saved ? 'Kaydedildi' : 'Kaydet'}
             </Button>
 
-            <Button asChild variant="solid" size="2" className="ml-auto">
+            <Button asChild variant="soft" color="indigo" size="2" className="ml-auto">
               <Link href="/kaydedilenler">
                 <Library size={14} aria-hidden />
                 Kaydedilenler
@@ -296,7 +296,7 @@ export default function GununKelimesiKart({
 
           {/* DİĞER KELİMELER */}
           {digerKelimeler.length > 0 && (
-            <div className="mt-4 pt-4 border-t border-indigo6">
+            <div className="mt-4 pt-4 border-t border-indigo5">
               <div className="text-xs font-bold uppercase tracking-wider text-indigo11 mb-3">
                 🌟 Diğer Kelimeler
               </div>
@@ -304,7 +304,7 @@ export default function GununKelimesiKart({
                 {digerKelimeler.map((kelimeItem) => (
                   <div
                     key={kelimeItem.id}
-                    className="rounded-lg border border-indigo6 bg-indigo1 overflow-hidden transition-all hover:shadow-sm"
+                    className="rounded-lg border border-indigo5 bg-indigo1 overflow-hidden transition-all hover:shadow-sm"
                   >
                     <button
                       type="button"
@@ -313,7 +313,7 @@ export default function GununKelimesiKart({
                           acikKelimeId === kelimeItem.id ? null : kelimeItem.id
                         )
                       }
-                      className="w-full text-left p-3 flex items-center justify-between gap-2 hover:bg-indigo3 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-indigo8 min-h-[44px]"
+                      className="w-full text-left p-3 flex items-center justify-between gap-2 hover:bg-indigo2 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-indigo8 min-h-[44px]"
                     >
                       <div className="flex-1 min-w-0">
                         <Flex align="center" gap="2">
@@ -341,7 +341,7 @@ export default function GununKelimesiKart({
                     </button>
 
                     {acikKelimeId === kelimeItem.id && (
-                      <div className="px-3 pb-3 space-y-2 border-t border-indigo6 pt-2">
+                      <div className="px-3 pb-3 space-y-2 border-t border-indigo5 pt-2">
                         {kelimeItem.ornekCiftleri && kelimeItem.ornekCiftleri.length > 0 ? (
                           <div>
                             <div className="text-[10px] font-bold uppercase tracking-wider text-indigo11 mb-1">
@@ -351,7 +351,7 @@ export default function GununKelimesiKart({
                               {kelimeItem.ornekCiftleri.map((cift, idx) => (
                                 <li
                                   key={idx}
-                                  className="pl-2 border-l-2 border-indigo8"
+                                  className="pl-2 border-l-2 border-indigo6"
                                 >
                                   <Text as="p" size="1" weight="medium" className="text-slate12">
                                     {cift.metin}
@@ -374,7 +374,7 @@ export default function GununKelimesiKart({
                               {kelimeItem.ornekler.map((ornekItem, idx) => (
                                 <li
                                   key={idx}
-                                  className="text-xs text-slate12 pl-2 border-l-2 border-indigo8"
+                                  className="text-xs text-slate12 pl-2 border-l-2 border-indigo6"
                                 >
                                   {ornekItem}
                                 </li>
@@ -395,7 +395,7 @@ export default function GununKelimesiKart({
           )}
 
           {/* BİLDİRİM AYARI */}
-          <div className="mt-4 pt-4 border-t border-indigo6">
+          <div className="mt-4 pt-4 border-t border-indigo5">
             <BildirimAyar
               gununKelimesi={{
                 kelime: bugunKelimesi.kelime || '',
