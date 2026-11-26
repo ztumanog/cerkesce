@@ -1,7 +1,7 @@
 # ADR-ONERI-001: oneriler_literal_meaning Anlamsal Dogrulama
 
 ## Durum
-Taslak. 22 Ekim 2026.
+ACCEPTED (CLOSED / ARCHIVED — 2026-11-26; 2.940/2.940 eşleşen kayıtta TR dolu, 0 eksik TR)
 
 ## Bulgu
 oneriler_literal_meaning.json icinde 7.499 oneri var. guven alani "orta" olan kayitlar anlamsal olarak dogrulanmamis.
@@ -33,3 +33,11 @@ Yapisal ID referanslari (oneriler/6164 dahil) bu ADR'de degil. Uzman onayi olmad
 
 ## Ilgili
 - ADR-ROOTS-002 (WF uyelik semantigi)
+
+## Kapanis Dogrulamasi (2026-11-26)
+- Arşivlenen `_archive/public_data_eski/linguistic/oneriler_literal_meaning.json` (`7.499` öneri) üretim kodunda kullanılmıyor (`app/` ve `src/` içinde `0` referans).
+- `public/data/linguistic/lexemes.json` (`41.462` kayıt) ile eşleşen `2.940` kaydın tamamında (`2.940/2.940`) Türkçe anlam zaten dolu (`0` eksik TR). Kalan `4.559` öneri ID'si güncel korpusta artık yok.
+- `2.940` eşleşen kaydın dağılımı (`quarantine/adr-oneri-001-fark-raporu.md`):
+  - `exact_match`: `377` (`orta: 368`, `dusuk: 9`)
+  - `partial_overlap`: `163` (`orta: 156`, `dusuk: 7`)
+  - `divergent`: `2.400` (`orta: 1.397`, `dusuk: 1.003`) — bu öneriler kürasyon/TR-PAKET-C2 sürecinde daha doğru karşılıklarla değiştirildiği için arşiv önerileri geri yazılmayacak.

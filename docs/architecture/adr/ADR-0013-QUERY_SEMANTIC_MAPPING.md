@@ -1,7 +1,7 @@
 # ADR-0013: Deterministic Query Semantic Mapping Layer
 
 **Date:** 2026-09-02\
-**Status:** PROPOSED\
+**Status:** REJECTED / OBSOLETE (Canlı arama app/api/search + MVP-1/1.1/2 üzerinden çalışıyor)\
 **Context:** Phase 5.3 - Query-Semantic Mapping\
 **Deciders:** Architecture Team
 

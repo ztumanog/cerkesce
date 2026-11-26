@@ -1,7 +1,7 @@
 # ADR-0041: Besleney Veri Kaynağı
 
 ## Durum
-Proposed
+ACCEPTED (BACKLOG / LEHÇE FAZI — otomatik aktarım kapalı)
 
 ## Kaynak
 `data_oral_besleney_corpus.csv`

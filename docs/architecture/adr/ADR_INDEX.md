@@ -42,12 +42,13 @@
 | ADR-0025 | Dialect Naming | `ADR-0025-DIALECT_NAMING_STANDARD.md` | Accepted | 4 |
 | ADR-0026 | Search Response Contract & Lexeme Join | `ADR-0026-SEARCH_RESPONSE_CONTRACT.md` | Accepted | 4 |
 | ADR-0030 | Discovery | `ADR-0012-REAL_KNOWLEDGE_DISCOVERY_ASSEMBLY.md` | Accepted | 5 |
-| ADR-0031 | Query Semantic | `ADR-0013-QUERY_SEMANTIC_MAPPING.md` | Proposed | 5 |
+| ADR-0031 | Query Semantic | `ADR-0013-QUERY_SEMANTIC_MAPPING.md` | Rejected | 5 |
 | ADR-0032 | Network Projection | `ADR-0014-CONCEPT_NETWORK_PROJECTION.md` | Accepted | 5 |
 | ADR-0040 | Morphological Root Taxonomy | `ADR-0040.md` | Accepted | 4 |
-| ADR-0041 | Besleney Veri Kaynağı | `ADR-0041-BESLENEY_VERI_KAYNAGI.md` | Proposed | — |
+| ADR-0041 | Besleney Veri Kaynağı | `ADR-0041-BESLENEY_VERI_KAYNAGI.md` | Accepted (Backlog) | — |
+| ADR-ONERI-001 | oneriler_literal_meaning Anlamsal Doğrulama | `ADR-ONERI-001-ONERI_ANLAM_DOGRULAMA.md` | Accepted | Linguistic |
 | ADR-ROOT-001 | Root Taxonomy | `ADR-ROOT-001.md` | Accepted | 4 |
-| ADR-ROOT-002 | Root WordFamily Unification | `ADR-ROOT-002-ROOT-WORDFAMILY-UNIFICATION.md` | Accepted | 4 |
+| ADR-ROOT-002 | Root WordFamily Unification | `ADR-ROOT-002-ROOT-WORDFAMILY-UNIFICATION.md` | Deferred | 4 |
 | ADR-P4-001 | Phase 4 Activation | `ADR-P4-001-PHASE4_ACTIVATION.md` | Accepted | 4 |
 | ADR-P5-000 | Phase 5 Unlock Approval | `ADR-P5-000-UNLOCK_APPROVAL.md` | Accepted | 5 |
 | ADR-P5-001 | Phase 5 Charter | `ADR-P5-001-FAZ5_CHARTER.md` | Accepted | 5 |
