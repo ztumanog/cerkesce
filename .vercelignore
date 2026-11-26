@@ -16,3 +16,17 @@ public/data/linguistic/*yedek*
 public/data/linguistic/*backup*
 public/data/linguistic/*pre-*
 public/data/linguistic/*.bak*
+_archive
+storage
+public/data/linguistic/*.bak*
+**/*.bak*
+**/*.bak_*
+public/data/governance/*.bak_*
+_inceleme
+_backups
+_yedek
+_yedekler
+data
+**/*yedek*
+**/*backup*
+**/*before_*
