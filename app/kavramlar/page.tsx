@@ -9,6 +9,9 @@ import KavramlarExplorer, {
 import { normalizePalochka } from '@/domain/utils/normalizePalochka';
 import { convertAdyToKbd, convertKbdToAdy } from '@/lib/dialectConverter';
 
+export const dynamic = 'force-dynamic';
+export const revalidate = 0;
+
 export const metadata: Metadata = {
   title: 'Kavram ve Çeviri Grupları | Çerkesçe Sözlük',
   description: 'Adıgece ve Kabardeyce kelimeleri ortak Türkçe ve çok dilli kavram çekirdekleri altında karşılaştırın.',
