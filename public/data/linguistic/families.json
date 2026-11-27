@@ -149849,5 +149849,21 @@
       "L-GU-LETTER",
       "L-E-LETTER"
     ]
+  },
+  {
+    "id": "WF-DU-1",
+    "rootId": "R-DU",
+    "form": "ду",
+    "meaning": "mısır ambarı, sepet ambar",
+    "dialect": "COMMON",
+    "note": "ду I, isim, morf 176 verimsiz."
+  },
+  {
+    "id": "WF-DU-2",
+    "rootId": "R-DU",
+    "form": "ду",
+    "meaning": "ünlem, 'du, su' sesi",
+    "dialect": "COMMON",
+    "note": "ду II, ünlem."
   }
 ]
