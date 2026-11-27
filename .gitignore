@@ -164,3 +164,6 @@ _yedekler/
 toplu-kurasyon*.csv
 
 tmp/
+
+.vercel
+.env*
