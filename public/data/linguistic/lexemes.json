@@ -2994,8 +2994,8 @@
     "ipa": "/nɐf/",
     "literalMeaning": "ışık; gozu yok",
     "dialectVariants": {
-      "adyghe": "нэф",
-      "kabardian": "нэху"
+      "adyghe": "нэшъу",
+      "kabardian": "нэф"
     },
     "dictionaryEvidence": {
       "sourceCount": 11,
@@ -3045,9 +3045,9 @@
     ],
     "isLemma": true,
     "translations": {
-      "tr": "isik, aydinlik",
-      "en": "light, brightness",
-      "ru": "свет, освещение",
+      "tr": "kör, görmeyen",
+      "en": "blind",
+      "ru": "слепой",
       "ar": "أعمى"
     },
     "subConceptId": "LIGHT",
@@ -3056,8 +3056,8 @@
     "root": "нэ",
     "etymologyType": "loanword",
     "meaning": "isik, aydinlik",
-    "dialect": "ADY",
-    "dialectNote": "Ady kaynakli",
+    "dialect": "KBD",
+    "dialectNote": "KBD: нэф = kör. ADY: нэшъу = kör. DİKKAT: ADY нэф = ışık (нэху) ile karıştırma.",
     "rootId": "R-NE",
     "concept": "FACE",
     "conceptId": "FACE",
@@ -4526,10 +4526,10 @@
     ],
     "isLemma": true,
     "translations": {
-      "ru": "молоко",
-      "en": "milk",
       "tr": "süt",
-      "ar": "دهن (الدواجن والحيوانات)/ دَسَم"
+      "en": "milk",
+      "ru": "молоко",
+      "ar": "حليب"
     },
     "subConceptId": "DAIRY_PRODUCT",
     "taxonomyFamily": "Doğa & Besin",
@@ -4540,7 +4540,8 @@
     "rootId": "R-SHE",
     "concept": "MILK",
     "conceptId": "MILK",
-    "pos": "noun"
+    "pos": "noun",
+    "dialectNote": "KBD esas: шэ /ʂɐ/ = süt. ADY lehçe: шэ. 2. anlam mermi/kurşun ayrı sense olarak eklenecek. DİKKAT: щэ /ɕɐ/ = yağ ile karıştırma."
   },
   {
     "id": "L-TKHEK1UME",
@@ -9131,10 +9132,10 @@
     ],
     "isLemma": true,
     "translations": {
-      "tr": "buyuk anne",
-      "en": "grandmother, granny, gran, grandma",
+      "tr": "büyükanne, anneanne / babaanne",
+      "en": "grandmother",
       "ru": "бабушка, бабка",
-      "ar": "جدّة"
+      "ar": "جدة"
     },
     "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5c/%D0%90209%D0%B0%D0%BD%D1%8D%D1%88%D1%85%D1%83%D1%8D.ogg",
     "dictionaryEvidence": [
@@ -9144,7 +9145,7 @@
     "etymologyType": "native",
     "meaning": "buyuk anne",
     "rootId": "R-ANE",
-    "dialect": "COMMON",
+    "dialect": "KBD",
     "concept": "GRANDMOTHER",
     "conceptId": "GRANDMOTHER",
     "pos": "noun",
@@ -9155,7 +9156,8 @@
         "ru": "бабушка, бабка",
         "ar": "جدّة"
       }
-    ]
+    ],
+    "dialectNote": "KBD esas: анэшхуэ = büyükanne. ADY lehçe: анэшхуэ. DİKKAT: анэш = anne tarafı, karıştırma."
   },
   {
     "id": "L-MAKHUESHHUE",
@@ -11217,7 +11219,7 @@
     "ipa": "/nɐxʷ/",
     "literalMeaning": "gozun beyazligi",
     "dialectVariants": {
-      "adyghe": "нэху",
+      "adyghe": "нэф",
       "kabardian": "нэху"
     },
     "dictionaryEvidence": {
@@ -11267,7 +11269,7 @@
     ],
     "isLemma": true,
     "translations": {
-      "tr": "isik, aydinlik",
+      "tr": "ışık, aydınlık",
       "en": "light, brightness",
       "ru": "свет, освещение",
       "ar": "ضوء"
@@ -11278,8 +11280,8 @@
     "root": "нэ",
     "etymologyType": "native",
     "meaning": "isik, aydinlik",
-    "dialect": "KBD",
-    "dialectNote": "Kbd kaynakli",
+    "dialect": "COMMON",
+    "dialectNote": "KBD: нэху = ışık. ADY: нэф = ışık. DİKKAT: KBD нэф = kör (нэшъу) ile karıştırma.",
     "frequency": 345,
     "rootId": "R-NEXU",
     "concept": "FACE",
@@ -11759,7 +11761,7 @@
     "literalMeaning": "dayi ; dayi",
     "dialectVariants": {
       "adyghe": "анэш",
-      "kabardian": "анэ къуэш"
+      "kabardian": "анэш"
     },
     "dictionaryEvidence": {
       "sourceCount": 2,
@@ -11795,17 +11797,17 @@
       "Анэш шы хъуркъым",
       "Хъуэжэ и анэшым бэджынэ хуащӀри кърагъэшхат."
     ],
-    "isLemma": true,
+    "isLemma": false,
     "translations": {
-      "ru": "дядя (по матери)",
-      "en": "maternal uncle",
-      "tr": "dayı (annenin erkek kardeşi)",
-      "ar": "خال (أخ الأم)"
+      "tr": "anne tarafı, annenin evi, anne akrabaları; dayı (annenin erkek kardeşi)",
+      "en": "one's mother's family or home; one's mother's relatives; maternal uncle",
+      "ru": "семья, дом матери; родственники матери; дядя (по матери)",
+      "ar": "عائلة الأم، بيت الأم؛ أقارب الأم؛ خال (أخ الأم)"
     },
     "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1e/%D0%90208%D0%B0%D0%BD%D1%8D%D1%88.ogg",
     "root": "анэ",
     "etymologyType": "native",
-    "dialect": "ADY",
+    "dialect": "COMMON",
     "conceptIdGecersiz": "Kinship / Family",
     "meaning": "dayı (annenin erkek kardeşi)",
     "rootId": "R-ANE",
@@ -11819,7 +11821,8 @@
         "ru": "ADY: дядя по матери | KBD: семья, дом матери; родственники матери",
         "ar": "خال (أخ الأم)"
       }
-    ]
+    ],
+    "dialectNote": "COMMON kayda bağlandı: L-ANESH-MATERNAL-KBD. Silinmedi, mükerrer. Dialect de COMMON yapıldı, denetimde tekrar çıkmasın diye."
   },
   {
     "id": "L-KHUMEN",
@@ -15985,10 +15988,10 @@
     ],
     "isLemma": true,
     "translations": {
+      "tr": "yağ, iç yağı",
       "en": "fat, grease",
       "ru": "жир, сало",
-      "tr": "yüz",
-      "ar": "الحليب/ الطلقة، السهم، القذيفة/ القنبلة/ ثلاث مرات"
+      "ar": "دهن"
     },
     "subConceptId": "ANIMAL_FAT",
     "taxonomyFamily": "Doğa & Besin",
@@ -16009,7 +16012,7 @@
     "etymologyType": "native",
     "meaning": "yüz",
     "rootId": "R-SHE",
-    "dialect": "COMMON",
+    "dialect": "KBD",
     "dialectVariants": {
       "adyghe": "щэ",
       "kabardian": "щэ"
@@ -16017,7 +16020,8 @@
     "concept": "KITCHEN",
     "conceptId": "HUNDRED",
     "pos": "noun",
-    "category": "NUMBER"
+    "category": "NUMBER",
+    "dialectNote": "KBD esas: щэ /ɕɐ/ = yağ. ADY lehçe: щэ. DİKKAT: 100 / üç kere / soru edatı ayrı maddeler, buraya karıştırma. DİKKAT: шэ /ʂɐ/ = süt ile karıştırma."
   },
   {
     "id": "L-SHCHEN",
@@ -32111,7 +32115,8 @@
         "ru": "стоять, находиться в вертикальном положении (о ком-л.), быть поставленным, расположенным, находиться где-л. (о чем-л.), стоять на месте, быть, находиться в каком-л. положении, состоянии",
         "ar": "يقف منتصباً، يظل واقفاً"
       }
-    ]
+    ],
+    "dialectNote": "NOT: ты- burada ön ek (preverb), kök değil. Kök: R-T / R-SHCH. R-TY (vermek) ile karıştırma."
   },
   {
     "id": "L-IN",
@@ -35350,7 +35355,7 @@
     "etymologyType": "native",
     "meaning": "içinde bulunmak",
     "dialect": "COMMON",
-    "dialectNote": "Ady kaynakli",
+    "dialectNote": "Ady kaynakli | NOT: ты- burada ön ek (preverb), kök değil. Kök: R-T / R-SHCH. R-TY (vermek) ile karıştırma.",
     "kesisen": "KOK_DISI",
     "status": "VERIFIED",
     "rootId": "R-T",
@@ -46633,8 +46638,8 @@
     "isLemma": true,
     "translations": {
       "tr": "güneş",
-      "en": "i sun",
-      "ru": "i солнце sun )",
+      "en": "sun",
+      "ru": "солнце",
       "ar": "شمس"
     },
     "subConceptId": "SUN_STAR",
@@ -46644,9 +46649,9 @@
     "tr_status": "fixed_manual",
     "etymologyType": "native",
     "meaning": "güneş",
-    "dialect": "COMMON",
+    "dialect": "KBD",
     "dialectVariants": {
-      "adyghe": "дыгъэ",
+      "adyghe": "тыгъэ",
       "kabardian": "дыгъэ"
     },
     "concept": "SUN",
@@ -46663,7 +46668,8 @@
     "rootId": "R-DYGHE",
     "rootIds": [
       "R-DYGHE"
-    ]
+    ],
+    "dialectNote": "KBD esas: дыгъэ = güneş. ADY lehçe: тыгъэ = güneş. DİKKAT: KBD тыгъэ = hediye, ayrı madde."
   },
   {
     "id": "L-KHHE",
@@ -73868,7 +73874,7 @@
     "partOfSpeech": "noun",
     "corpusFrequency": 87,
     "dialectVariants": {
-      "adyghe": "тыгъэ",
+      "adyghe": null,
       "kabardian": "тыгъэ"
     },
     "notes": "Corpus v1.0 (freq: 87, lang: kbd, source: 0.Ady-Ady_AIG)",
@@ -73880,11 +73886,10 @@
       "tr": "hediye, armağan",
       "en": "gift, present",
       "ru": "дар, подарок",
-      "ar": "الشمس"
+      "ar": "هدية"
     },
     "rootIds": [
-      "R-GU",
-      "R-T"
+      "R-TY"
     ],
     "derivation": {
       "rootIds": [
@@ -73898,10 +73903,10 @@
     "etymologyType": "native",
     "meaning": "hediye, armağan",
     "dialect": "KBD",
-    "dialectNote": "Ady kaynakli",
-    "wordFamilyId": "WF-BORROWING",
+    "dialectNote": "KBD esas: тыгъэ = hediye. Kök: ты- (vermek, 1. aile). Mastar: тын -> тыгъэ = verilen şey. DİKKAT: ADY тыгъэ = güneş, ayrı madde. DİKKAT: ты- (durmak / üstünde) ayrı aileler.",
+    "wordFamilyId": "WF-TY",
     "literalMeaning": "güneş",
-    "rootId": "R-GU",
+    "rootId": "R-TY",
     "legacyIds": [
       "L-CORPUS-00472"
     ],
@@ -88350,7 +88355,8 @@
         "ru": "имасд. находиться",
         "ar": "يقف على، يوجد على"
       }
-    ]
+    ],
+    "dialectNote": "NOT: ты- burada üstünde anlamında ön ek, kök değil. R-TY (vermek) ile karıştırma."
   },
   {
     "id": "L-SHCHASHCHE",
@@ -103440,10 +103446,10 @@
       "rule": "root"
     },
     "translations": {
-      "en": "forty-third letter of the Kabardino-Cherkess (Circassian) alphabet",
-      "ru": "сорок третья буква кабардино-черкесского алфавита",
       "tr": "darı",
-      "ar": "الحرف الحادي والثلاثون من الألفباء الشركسية ويعني (الأبيض)"
+      "en": "millet (grain)",
+      "ru": "просо",
+      "ar": "دخن"
     },
     "dictionaryEvidence": [
       "sukunov-1998"
@@ -103470,7 +103476,8 @@
     ],
     "posConflict": "fallback-noun",
     "posConflictRule": "fallback-noun",
-    "posConflictConfidence": "high"
+    "posConflictConfidence": "high",
+    "dialectNote": "KBD esas: ху = darı. NOT: ху aynı zamanda alfabe harfi adıdır, ayrı sense. Beyaz anlamı хужь'dedir, buraya karıştırma."
   },
   {
     "id": "L-TEUBYDEN",
@@ -134981,7 +134988,8 @@
         "ru": "задерживаться",
         "ar": "إرسال إذاعي وخلافه، البث/ يغيب/ إعطاء، دفع"
       }
-    ]
+    ],
+    "dialectNote": "NOT: ты- burada ön ek (preverb), kök değil. Kök: R-T / R-SHCH. R-TY (vermek) ile karıştırma."
   },
   {
     "id": "L-BZAGUE",
@@ -144266,7 +144274,8 @@
         "ru": "каузатив к щытын / Щытын псалъэм",
         "ar": "يتوقف عن، يَكف عن/ يدعه يقف"
       }
-    ]
+    ],
+    "dialectNote": "NOT: ты- burada ön ek (preverb), kök değil. Kök: R-T / R-SHCH. R-TY (vermek) ile karıştırma."
   },
   {
     "id": "L-SHAXMAT",
@@ -632155,7 +632164,8 @@
         "ru": "возиться с чем-л.; заниматься чем-л.",
         "ar": "يحرس، حراسة/ يستغرق/ يحمي"
       }
-    ]
+    ],
+    "dialectNote": "NOT: ты- burada ön ek (preverb), kök değil. Kök: R-T / R-SHCH. R-TY (vermek) ile karıştırma."
   },
   {
     "id": "L-KBD-04118",
@@ -760177,10 +760187,10 @@
     "id": "L-SHCHEXUEN",
     "form": "щэхуэн",
     "translations": {
-      "ru": "покупкой чего-л",
-      "tr": "dükkan",
-      "ar": "يتسوق",
-      "en": "is not a good one. ch. to buy, buy something"
+      "tr": "satın almak",
+      "en": "to buy, buy something",
+      "ru": "покупать",
+      "ar": "شراء"
     },
     "ipa": "/ɕɐxwɐn/",
     "rootIds": [
@@ -760218,7 +760228,8 @@
     ],
     "sources": [
       "Wiktionary (2023)"
-    ]
+    ],
+    "dialectNote": "KBD esas: щэхуэн = satın almak. Kök: щэ- (satmak) + -ху- (sonek). DİKKAT: dükkan değil, fiil."
   },
   {
     "id": "L-EKSPRESS",
@@ -1814254,7 +1814265,8 @@
     "etymologyType": "native",
     "isLemma": true,
     "source": "Adyghe core lexicon (Batı Çerkesçesi)",
-    "note": "KBD тыгъэ (hediye, armağan) ile sesteş; ADY güneş kaydı."
+    "note": "KBD тыгъэ (hediye, armağan) ile sesteş; ADY güneş kaydı.",
+    "dialectNote": "ADY lehçe: тыгъэ = güneş. KBD esas: дыгъэ. DİKKAT: KBD тыгъэ = hediye, ayrı madde."
   },
   {
     "id": "L-ZEXESHCHEN-WEAVE-KBD",
@@ -1814289,14 +1814301,15 @@
   {
     "id": "L-ANESH-MATERNAL-KBD",
     "form": "анэш",
-    "dialect": "KBD",
+    "dialect": "COMMON",
     "pos": "noun",
     "partOfSpeech": "noun",
     "meaning": "anne tarafı, annenin baba ocağı ve ailesi",
     "translations": {
-      "tr": "anne tarafı, annenin baba ocağı ve ailesi",
-      "en": "mother's family and household, maternal relatives",
-      "ru": "семья, дом матери; родственники матери"
+      "tr": "anne tarafı, annenin evi, anne akrabaları; dayı (annenin erkek kardeşi)",
+      "en": "one's mother's family or home; one's mother's relatives; maternal uncle",
+      "ru": "семья, дом матери; родственники матери; дядя (по матери)",
+      "ar": "عائلة الأم، بيت الأم؛ أقارب الأم؛ خال (أخ الأم)"
     },
     "senses": [
       {
@@ -1814314,7 +1814327,12 @@
     "etymologyType": "native",
     "isLemma": true,
     "source": "Apazhev-Kokov 2008 (KBD)",
-    "note": "ADY анэш (dayı) ile lehçe anlam ayrımı; ayrı KBD kaydı."
+    "note": "ADY анэш (dayı) ile lehçe anlam ayrımı; ayrı KBD kaydı.",
+    "dialectVariants": {
+      "adyghe": "анэш",
+      "kabardian": "анэш"
+    },
+    "dialectNote": "COMMON: анэш = 1) anne tarafı, 2) dayı. Her iki lehçede de aynı form, aynı anlam, aynı IPA. KBD'de dayı için анэ къуэш de kullanılır, eşanlamlı. DİKKAT: анэшхуэ = büyükanne, ayrı madde."
   },
   {
     "id": "L-SHE-FAT-ADY",
@@ -1814342,9 +1814360,10 @@
     ],
     "wordFamilyId": "WF-SHE2",
     "etymologyType": "native",
-    "isLemma": true,
+    "isLemma": false,
     "source": "Adyghe core lexicon (Batı Çerkesçesi)",
-    "note": "KBD шэ (süt) ile sesteş; ayrı ADY kaydı."
+    "note": "KBD шэ (süt) ile sesteş; ayrı ADY kaydı.",
+    "dialectNote": "ADY lehçe kaydı, ana madde değil. Yağ anlamı -> L-SHHE (щэ), Kurşun/mermi anlamı -> L-SHE (шэ). KBD esas kuralı."
   },
   {
     "id": "L-KMOKSY-BIRD-001",
