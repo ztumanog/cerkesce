@@ -87,7 +87,6 @@ export async function POST(req: Request) {
       'notes',
       'status',
       'etymologyType',
-      'root',
       'source',
       'etymology',
       'dialectNote',
@@ -153,6 +152,24 @@ export async function POST(req: Request) {
     let newRootsArray = currentItem.rootIds ?? [];
     if (changes.rootIds !== undefined) {
       newRootsArray = parseCsvOrArray(changes.rootIds);
+      if (newRootsArray.length > 0) {
+        const rootsPath = path.join(process.cwd(), 'public', 'data', 'linguistic', 'roots.json');
+        if (!fs.existsSync(rootsPath)) {
+          return NextResponse.json({ error: 'roots.json dosyası bulunamadı.' }, { status: 500 });
+        }
+        const rootsRaw = fs.readFileSync(rootsPath, 'utf-8').replace(/^\uFEFF/, '');
+        const rootsList = JSON.parse(rootsRaw);
+        const validRootIds = new Set(
+          Array.isArray(rootsList) ? rootsList.map((r: any) => String(r?.id || '')).filter(Boolean) : []
+        );
+        const invalidRootIds = newRootsArray.filter((rid: string) => !validRootIds.has(rid));
+        if (invalidRootIds.length > 0) {
+          return NextResponse.json(
+            { error: `Geçersiz rootId (roots.json içinde bulunamadı): ${invalidRootIds.join(', ')}` },
+            { status: 400 }
+          );
+        }
+      }
       const oldRootsStr = Array.isArray(currentItem.rootIds)
         ? currentItem.rootIds.join(', ')
         : currentItem.rootId || '';
@@ -228,7 +245,6 @@ export async function POST(req: Request) {
       ...(changes.notes !== undefined ? { notes: changes.notes } : {}),
       ...(changes.status !== undefined ? { status: changes.status || null } : {}),
       ...(changes.etymologyType !== undefined ? { etymologyType: changes.etymologyType || null } : {}),
-      ...(changes.root !== undefined ? { root: changes.root || null } : {}),
       ...(changes.source !== undefined ? { source: changes.source || null } : {}),
       ...(changes.etymology !== undefined ? { etymology: changes.etymology || null } : {}),
       ...(changes.dialectNote !== undefined ? { dialectNote: changes.dialectNote || null } : {}),

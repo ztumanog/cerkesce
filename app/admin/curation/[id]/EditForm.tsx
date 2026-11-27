@@ -141,7 +141,6 @@ export default function EditForm({
   const [wordFamilyId, setWordFamilyId] = useState(initial.wordFamilyId);
   const [conceptId, setConceptId] = useState(initial.conceptId);
   const [rootIds, setRootIds] = useState(initial.rootIds);
-  const [root, setRoot] = useState(initial.root);
   const [adygheVariant, setAdygheVariant] = useState(initial.dialectVariants.adyghe);
   const [kabardianVariant, setKabardianVariant] = useState(initial.dialectVariants.kabardian);
   const [derivRule, setDerivRule] = useState(initial.derivation.rule);
@@ -305,7 +304,6 @@ export default function EditForm({
       wordFamilyId,
       conceptId,
       rootIds,
-      root,
       notes,
       dialectNote,
       etymology,
@@ -773,23 +771,20 @@ export default function EditForm({
             </div>
             <div>
               <label style={labelStyle}>
-                KÖK FORMU (`root`)
-                {!root.trim() && initial.resolvedRootForm && (
+                KÖK FORMU (`roots.json`)
+                {initial.resolvedRootForm && (
                   <span style={{ marginLeft: 6, fontWeight: 700, color: "#7c3aed", background: "#f5f3ff", padding: "1px 6px", borderRadius: 6, fontSize: 10.5 }}>
-                    roots.json: {initial.resolvedRootForm}
+                    rootId lookup
                   </span>
                 )}
               </label>
               <input
-                value={root}
-                onChange={(e) => setRoot(e.target.value)}
-                placeholder={initial.resolvedRootForm || "увы"}
-                style={fieldStyle}
+                value={initial.resolvedRootForm || initial.root || "—"}
+                readOnly
+                style={{ ...fieldStyle, background: "#f1f5f9", color: "#334155", cursor: "default" }}
                 dir="auto"
               />
-              {!root.trim() && initial.resolvedRootForm && (
-                <div style={hintStyle}>Kayıtlı `root` boş; kanonik `roots.json` karşılığı: <b>{initial.resolvedRootForm}</b></div>
-              )}
+              <div style={hintStyle}>Kanonik kaynak: `rootId → roots.json` (`lexemes.json`'a yazılmaz)</div>
             </div>
           </div>
 
