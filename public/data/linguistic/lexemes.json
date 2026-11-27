@@ -1829593,8 +1829593,10 @@
       "en": "to sprawl carelessly, to flop down",
       "ru": "небрежно развалиться где-л."
     },
-    "rootIds": [],
-    "wordFamilyId": null,
+    "rootIds": [
+      "R-UUTS1"
+    ],
+    "wordFamilyId": "WF-UUTS1",
     "derivation": {
       "rootIds": [
         "R-SHY"
@@ -1829609,7 +1829611,7 @@
       "НахуапӀэ хъумэ ар, итӀанэ ЩӀэн хуейр мыращ: постамент пӀий Мо Дизыкъуажэ Мыст къигъанэу НэщӀ хъуам тырет мы Нурхьэлий.\n\n153 КЪЭРМОКЪУЭ  МУХЬЭМЭД ЦӀыхубэр нобэми мэхъуапсэ ИритхъунщӀэхыу гущхьэлъапсэр ФӀылъагъуныгъэм теухуауэ Зы тхыгъэжьыфӀ къеджэну."
     ],
     "meaning": "yayılıp yatmak, özensizce uzanmak",
-    "rootId": null,
+    "rootId": "R-UUTS1",
     "dialect": "COMMON",
     "legacyIds": [
       "L-CORPUS-00244"
@@ -1829693,8 +1829695,10 @@
       "en": "to wipe oneself dry, to dry oneself off",
       "ru": "вытереться (напр. после плача, умывания)"
     },
-    "rootIds": [],
-    "wordFamilyId": null,
+    "rootIds": [
+      "R-PYL1E"
+    ],
+    "wordFamilyId": "WF-PYL1E",
     "derivation": {
       "rootIds": [
         "R-SHY"
@@ -1829709,7 +1829713,7 @@
       "НахуапӀэ хъумэ ар, итӀанэ ЩӀэн хуейр мыращ: постамент пӀий Мо Дизыкъуажэ Мыст къигъанэу НэщӀ хъуам тырет мы Нурхьэлий.\n\n153 КЪЭРМОКЪУЭ  МУХЬЭМЭД ЦӀыхубэр нобэми мэхъуапсэ ИритхъунщӀэхыу гущхьэлъапсэр ФӀылъагъуныгъэм теухуауэ Зы тхыгъэжьыфӀ къеджэну."
     ],
     "meaning": "silinmek, kurulanmak (ağladıktan/yıkandıktan sonra)",
-    "rootId": null,
+    "rootId": "R-PYL1E",
     "dialect": "COMMON",
     "legacyIds": [
       "L-CORPUS-00244"
