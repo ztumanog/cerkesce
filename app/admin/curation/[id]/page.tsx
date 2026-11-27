@@ -28,6 +28,28 @@ function resolveRootFormFromRoots(rootId: string): string {
   }
 }
 
+function resolveFamilyFromWordFamilies(wordFamilyId: string) {
+  if (!wordFamilyId) return undefined;
+  try {
+    const p = path.join(process.cwd(), "public", "data", "linguistic", "word_families.json");
+    const raw = fs.readFileSync(p, "utf-8").replace(/^\uFEFF/, "");
+    const parsed = JSON.parse(raw);
+    const list = Array.isArray(parsed) ? parsed : (parsed.families ?? parsed.wordFamilies ?? []);
+    if (!Array.isArray(list)) return undefined;
+    const match = list.find((f: any) => f?.id === wordFamilyId);
+    if (!match) return undefined;
+    return {
+      id: String(match.id),
+      rootForm: typeof match.rootForm === "string" ? match.rootForm : "",
+      rootId: typeof match.rootId === "string" ? match.rootId : "",
+      name: typeof match.name === "string" ? match.name : "",
+      memberCount: Array.isArray(match.lexemeIds) ? match.lexemeIds.length : 0,
+    };
+  } catch {
+    return undefined;
+  }
+}
+
 export default async function LexemeDetailPage({
   params,
 }: {
@@ -71,6 +93,7 @@ export default async function LexemeDetailPage({
     senses: Array.isArray(raw.senses) ? raw.senses : [],
     examples: Array.isArray(raw.examples) ? raw.examples : [],
     wordFamilyId: toStr(raw.wordFamilyId ?? lexeme.wordFamilyId),
+    resolvedFamily: resolveFamilyFromWordFamilies(toStr(raw.wordFamilyId ?? lexeme.wordFamilyId)),
     conceptId: toStr(raw.conceptId ?? lexeme.conceptId),
     rootIds: Array.isArray(raw.rootIds)
       ? raw.rootIds.join(", ")

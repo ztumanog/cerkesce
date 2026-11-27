@@ -149,6 +149,26 @@ export async function POST(req: Request) {
       return [];
     };
 
+    if (changes.wordFamilyId !== undefined && String(changes.wordFamilyId ?? '').trim()) {
+      const wfIdVal = String(changes.wordFamilyId).trim();
+      const wfPath = path.join(process.cwd(), 'public', 'data', 'linguistic', 'word_families.json');
+      if (!fs.existsSync(wfPath)) {
+        return NextResponse.json({ error: 'word_families.json dosyası bulunamadı.' }, { status: 500 });
+      }
+      const wfRaw = fs.readFileSync(wfPath, 'utf-8').replace(/^\uFEFF/, '');
+      const wfParsed = JSON.parse(wfRaw);
+      const wfList = Array.isArray(wfParsed) ? wfParsed : (wfParsed.families ?? wfParsed.wordFamilies ?? []);
+      const validWfIds = new Set(
+        Array.isArray(wfList) ? wfList.map((f: any) => String(f?.id || '')).filter(Boolean) : []
+      );
+      if (!validWfIds.has(wfIdVal)) {
+        return NextResponse.json(
+          { error: `Geçersiz wordFamilyId (word_families.json içinde bulunamadı): ${wfIdVal}` },
+          { status: 400 }
+        );
+      }
+    }
+
     let newRootsArray = currentItem.rootIds ?? [];
     if (changes.rootIds !== undefined) {
       newRootsArray = parseCsvOrArray(changes.rootIds);

@@ -42,6 +42,13 @@ export interface LexemeEditInitial {
   senses: SenseItem[];
   examples: any[];
   wordFamilyId: string;
+  resolvedFamily?: {
+    id: string;
+    rootForm: string;
+    rootId: string;
+    name: string;
+    memberCount: number;
+  };
   conceptId: string;
   rootIds: string;
   root: string;
@@ -739,19 +746,48 @@ export default function EditForm({
         {/* 5. KÖK, AİLE, KAVRAM & TÜRETİM */}
         <div style={sectionStyle}>
           <div style={sectionTitleStyle}>5. Kök, Aile, Kavram, Lehçe Varyantları & Türetim</div>
-          <div style={{ background: "#f5f3ff", border: "1px solid #ddd6fe", borderRadius: 10, padding: 12 }}>
-            <label style={labelStyle}>🏠 WORD FAMILY ID <span style={{ color: "#7c3aed" }}>• Aile</span></label>
-            <input
-              value={wordFamilyId}
-              onChange={(e) => {
-                setWordFamilyId(e.target.value);
-                checkFamily(e.target.value);
-              }}
-              placeholder="örn: WF-GU"
-              style={{ ...fieldStyle, fontFamily: "monospace", textTransform: "uppercase", borderColor: "#c4b5fd" }}
-            />
-            <div style={hintStyle}>
-              Aile yoksa kaydetmede uyarı verir. {familyStatus && <span style={{ color: "#7c3aed", fontWeight: 700 }}>{familyStatus}</span>}
+          <div style={{ background: "#f5f3ff", border: "1px solid #ddd6fe", borderRadius: 10, padding: 12, display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12 }}>
+            <div>
+              <label style={labelStyle}>🏠 WORD FAMILY ID <span style={{ color: "#7c3aed" }}>• Aile ID</span></label>
+              <input
+                value={wordFamilyId}
+                onChange={(e) => {
+                  setWordFamilyId(e.target.value);
+                  checkFamily(e.target.value);
+                }}
+                placeholder="örn: WF-GU"
+                style={{ ...fieldStyle, fontFamily: "monospace", textTransform: "uppercase", borderColor: "#c4b5fd" }}
+              />
+              <div style={hintStyle}>
+                `word_families.json` içinde doğrulanır (yoksa 400). {familyStatus && <span style={{ color: "#7c3aed", fontWeight: 700 }}>{familyStatus}</span>}
+              </div>
+            </div>
+            <div>
+              <label style={labelStyle}>
+                AİLE (`word_families.json`)
+                {initial.resolvedFamily && (
+                  <span style={{ marginLeft: 6, fontWeight: 700, color: "#7c3aed", background: "#ede9fe", padding: "1px 6px", borderRadius: 6, fontSize: 10.5 }}>
+                    wordFamilyId lookup
+                  </span>
+                )}
+              </label>
+              <input
+                value={
+                  initial.resolvedFamily
+                    ? [
+                        initial.resolvedFamily.name || initial.resolvedFamily.rootForm || initial.resolvedFamily.id,
+                        initial.resolvedFamily.rootId ? `kök: ${initial.resolvedFamily.rootId}` : "",
+                        `${initial.resolvedFamily.memberCount} üye`,
+                      ]
+                        .filter(Boolean)
+                        .join(" · ")
+                    : "—"
+                }
+                readOnly
+                style={{ ...fieldStyle, background: "#f1f5f9", color: "#334155", cursor: "default" }}
+                dir="auto"
+              />
+              <div style={hintStyle}>Kanonik kaynak: `wordFamilyId → word_families.json` (`lexemes.json`'a aile adı/üye/kök yazılmaz)</div>
             </div>
           </div>
 
