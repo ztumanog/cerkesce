@@ -3057,7 +3057,7 @@
     "etymologyType": "loanword",
     "meaning": "isik, aydinlik",
     "dialect": "KBD",
-    "dialectNote": "KBD: нэф = kör. ADY: нэшъу = kör. DİKKAT: ADY нэф = ışık (нэху) ile karıştırma.",
+    "dialectNote": "KBD: нэф = kör. ADY: нэшъу = kör. DİKKAT: ADY нэф = ışık (нэху) ile karıştırma. Birleştirildi: L-NE-BLIND-KBD aynı kayıt, non-lemma yapıldı, silinmedi.",
     "rootId": "R-NE",
     "concept": "FACE",
     "conceptId": "FACE",
@@ -1814208,7 +1814208,10 @@
     "rootForm": "нэ",
     "wordFamilyId": "WF-NE",
     "etymologyType": "native",
-    "isLemma": true
+    "isLemma": false,
+    "status": "merged",
+    "mergedInto": "L-NE-LIGHT",
+    "dialectNote": "Tekrar kayıt, birleştirildi -> L-NE-LIGHT, kör diye. Silinmedi."
   },
   {
     "id": "L-PK1E-ATTIC-KBD",
