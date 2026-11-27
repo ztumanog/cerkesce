@@ -1829488,8 +1829488,10 @@
       "en": "to rot away, to decay completely",
       "ru": "сгнить, разложиться"
     },
-    "rootIds": [],
-    "wordFamilyId": null,
+    "rootIds": [
+      "R-FYKH"
+    ],
+    "wordFamilyId": "WF-FYKH",
     "derivation": {
       "rootIds": [
         "R-SHY"
@@ -1829504,7 +1829506,7 @@
       "НахуапӀэ хъумэ ар, итӀанэ ЩӀэн хуейр мыращ: постамент пӀий Мо Дизыкъуажэ Мыст къигъанэу НэщӀ хъуам тырет мы Нурхьэлий.\n\n153 КЪЭРМОКЪУЭ  МУХЬЭМЭД ЦӀыхубэр нобэми мэхъуапсэ ИритхъунщӀэхыу гущхьэлъапсэр ФӀылъагъуныгъэм теухуауэ Зы тхыгъэжьыфӀ къеджэну."
     ],
     "meaning": "çürüyüp dağılmak, fazla çürümek",
-    "rootId": null,
+    "rootId": "R-FYKH",
     "dialect": "COMMON",
     "legacyIds": [
       "L-CORPUS-00244"
