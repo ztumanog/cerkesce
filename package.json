@@ -11,6 +11,7 @@
     "test:watch": "vitest",
     "test:cert": "vitest run --config vitest.cert.config.ts",
     "validate:data": "node scripts/validate-linguistic.mjs",
+    "report:governance": "node scripts/report-governance.mjs",
     "test:all": "npm run validate:data && npm test && npm run test:cert",
     "ts-node": "ts-node",
     "lint": "eslint",
@@ -46,6 +47,7 @@
     "sonner": "^2.0.8",
     "sql.js": "^1.14.2",
     "tailwind-merge": "^3.6.0",
+    "validator": "^13.15.35",
     "zod": "^4.4.3"
   },
   "devDependencies": {
@@ -73,4 +75,3 @@
     "unrs-resolver@1.12.2": true
   }
 }
-

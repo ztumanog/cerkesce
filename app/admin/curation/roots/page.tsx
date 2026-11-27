@@ -128,13 +128,23 @@ export default function RootsPage() {
 
   useEffect(() => {
     async function load() {
+      // Derin bağlantı (ADR-GOV-016): ?root=<id> / ?family=<id> ile yönetişim
+      // ekranlarından doğrudan ilgili köke/aileye gelinir.
+      let deepRoot = "";
+      let deepFamily = "";
+      if (typeof window !== "undefined") {
+        const params = new URLSearchParams(window.location.search);
+        deepRoot = params.get("root") || "";
+        deepFamily = params.get("family") || "";
+      }
       try {
         const r = await fetch("/data/linguistic/roots.json");
         if (r.ok) {
           const raw = await r.json();
           const arr = Array.isArray(raw) ? raw : raw.roots || [];
           setRoots(arr);
-          if (arr[0]) setSelRoot(arr[0].id);
+          if (deepRoot) setSelRoot(deepRoot);
+          else if (arr[0]) setSelRoot(arr[0].id);
         }
       } catch {}
       try {
@@ -144,6 +154,10 @@ export default function RootsPage() {
           setFamilies(Array.isArray(raw) ? raw : raw.families || []);
         }
       } catch {}
+      if (deepFamily) {
+        setSelFamily(deepFamily);
+        setQFam(deepFamily);
+      }
       try {
         const rl = await fetch("/data/linguistic/lexemes.json");
         if (rl.ok) {

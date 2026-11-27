@@ -1,6 +1,6 @@
 # ADR-GOV-016: Linguistic Governance Center
 
-**Durum:** ACCEPTED (v1 ilk çalışır sürüm — 2026-11-26)
+**Durum:** IMPLEMENTED / OPERATIONAL (v1 + v2 + v3 CLOSED — Baş Mimar onayı, 2026-11-27)
 **Tarih:** 2026-11-26
 **Kategori:** Governance / Data Quality
 **Onay:** Baş Mimar (2026-11-26)
@@ -35,8 +35,8 @@ Bunların çözümü bugüne kadar komut satırı döngüsüyle yürüdü: *scri
    ├─ Kök Denetimi          (v1 — /admin/yonetim/kok-denetimi)
    ├─ Kavram Denetimi       (v1 — /admin/yonetim/kavram-denetimi)
    ├─ Çeviri Denetimi       (v2 — /admin/yonetim/ceviri-denetimi)
-   ├─ POS Denetimi          (v3)
-   ├─ Lehçe Denetimi        (v3)
+   ├─ POS Denetimi          (v3 — /admin/yonetim/pos-denetimi)
+   ├─ Lehçe Denetimi        (v3 — /admin/yonetim/lehce-denetimi)
    ├─ Örnek Denetimi        (v4)
    ├─ Aile Denetimi         (v4)
    └─ ADR Raporları         (backlog — mevcut Karar Defteri entegrasyonu)
@@ -90,6 +90,14 @@ concepts-audit.json  → { emptyConceptIds, legacyConceptIdRecords,
 translations-audit.json → { trCyrillic, trArabic, enCyrillic, enArabic,
                             ruLatinWords, trEnglishSuspect, trEqualsEn,
                             trEmpty, enEmpty, arEmpty, ruEmpty, samples }
+
+pos-audit.json       → { posDistribution, posEmpty, invalidPos, posMismatch,
+                         formDuplicateGroups, formDuplicateRecords,
+                         duplicateGroups[] }
+
+dialect-audit.json   → { dialectDistribution, invalidDialect, apazhevMarked,
+                         apazhevAdy, multiDialectForms, crossDialectPairs,
+                         örnek listeler }
 ```
 
 ## Metrik Sözlüğü
@@ -116,8 +124,20 @@ translations-audit.json → { trCyrillic, trArabic, enCyrillic, enArabic,
 | `trEnglishSuspect` | TR karşılığında sabit İngilizce fonksiyon kelimesi listesinden biri geçen kayıt (şüpheli; liste script'te sürümlüdür, Türkçe homograflar — "her" gibi — hariçtir) |
 | `trEqualsEn` | TR ve EN karşılıkları büyük/küçük harf duyarsız birebir aynı olan kayıt (özel adlarda meşru olabilir) |
 | `trEmpty` / `enEmpty` / `arEmpty` / `ruEmpty` | İlgili dil karşılığı boş kayıt |
+| `formDuplicateGroups` | Aynı `form` değerini taşıyan birden fazla kaydın oluşturduğu grup sayısı (POS fark etmeksizin) — 2026-11-27&apos;de Baş Mimar oturumundaki historik &quot;14 form&quot; değeriyle birebir doğrulandı |
+| `formDuplicateRecords` | Duplikasyon gruplarındaki toplam kayıt (historik &quot;29 kayıt&quot; ile birebir) |
+| `invalidPos` | İzinli POS listesi dışı etiket taşıyan kayıt (validator kuralıyla aynı liste) |
+| `posDistribution` | POS etiketlerine göre kayıt dağılımı |
+| `apazhevMarked` | `id`/`notes` içinde "apazhev" geçen kayıt |
+| `apazhevAdy` | Apazhev işaretli olup `ADY` (Batı) lehçesi etiketi taşıyan kayıt |
+| `multiDialectForms` | Aynı formun birden fazla dialect kaydında geçtiği form sayısı (COMMON birleştirme adayı görünümü — şüpheli) |
+| `invalidDialect` | KBD/ADY/COMMON dışı dialect değeri taşıyan kayıt |
 
 > **Tanım notu (2026-11-26):** Baş Mimar oturum raporundaki "WF legacy concept 176" ve "concept uyuşmazlığı 2" değerlerinin üretim tanımı repo dışındaki `_scripts/durum_tek.py`'de olduğundan yeniden üretilemedi. Bu sözlükteki tanımlarla güncel değerler: `wfDanglingConceptRefs` **341** / `wfDanglingConceptValues` **365**; `conceptIdMismatch` **0**; `conceptFieldMismatch` **550**. Sözlükteki tanımlar otoriterdir (RULE-02/RULE-06).
+
+### RULE-07 Başarı Vakası (2026-11-27)
+
+Baş Mimar oturumundaki historik **"14 form / 29 kayıt" duplikasyon** metriği, form-bazlı tanımla (aynı `form`, POS fark etmeksizin) canlı veride birebir yeniden üretildi. Dört kabul şartı (tanım · üretici · JSON alanı · tekrar üretilebilir) sağlandığından metrik **Historical Metric → Governance Metric** terfisi aldı ve POS Denetimi ekranına girdi. Bu, RULE-07'nin amacının çalışan kanıtıdır: tanımı bulunan historik değer ekrana alınır; tanımı bulunmayan (176, 2) ADR notu olarak kalır.
 
 ### Historical Metrics (ekrana kapalı — RULE-07 gereği)
 
@@ -138,7 +158,13 @@ Tanımı netleşirse (hangi sorgu, hangi snapshot): sözlüğe tanımı eklenir,
 2. **Kök Denetimi** — `rootId != rootIds[0]`, kırık root referansı, `rootIdMissing`, `rootIdsMissing`, üyesiz root (tam liste), üyesiz wordFamily (tam liste) — tümü sözlük etiketleriyle (RULE-06)
 3. **Kavram Denetimi** — `emptyConceptIds`, legacy kayıtlar, alan uyuşmazlıkları, WF asılı referansları
 
-**Dalgalar:** v2 Çeviri Denetimi (**uygulandı — 2026-11-27**) · v3 POS + Lehçe Denetimi · v4 Örnek + Aile Denetimi · backlog ADR Raporları.
+**Dalgalar:** v2 Çeviri Denetimi (**CLOSED — 2026-11-27**) · v3 POS + Lehçe Denetimi (**CLOSED — 2026-11-27**) · v4 Örnek + Aile Denetimi (**ertelendi** — Baş Mimar 2026-11-27: yeni ekran yerine mevcut denetimlerin ürettiği kuyrukların temizlenmesi önceliklidir) · backlog ADR Raporları.
+
+### v3 — POS + Lehçe Denetimi (2026-11-27)
+
+**POS Denetimi** (`/admin/yonetim/pos-denetimi`): POS dağılımı, etiket tutarlılığı (boş/geçersiz/çakışan) ve form bazlı duplikasyon grupları. Duplikasyon tanımı (aynı `form`, POS fark etmeksizin) 2026-11-27&apos;de canlı veride **14 form / 29 kayıt** üretti — Baş Mimar oturumundaki historik değerle birebir örtüşerek RULE-07&apos;nin dört şartını sağladı ve ekrana alındı. Örnek kayıtlar derin bağlantıyla kürasyona açılır.
+
+**Lehçe Denetimi** (`/admin/yonetim/lehce-denetimi`): DIALECT-AUDIT-001&apos;in kalıcılaşmış hali — dialect dağılımı, geçersiz dialect, Apazhev işaretleri (Apazhev olup ADY olanlar) ve çoklu-lehçe formlar (COMMON birleştirme adayı görünümü; şüpheli, hüküm insan kararı).
 
 ### v2 — Çeviri Denetimi (2026-11-27)
 
@@ -157,7 +183,7 @@ Dil alanlarına sızan yabancı metinler ve eksik çeviriler. Tüm göstergeler 
 | Hub girişi | `/admin/yonetim` → "Veri Yönetişimi" bölümü |
 | Derin bağlantı | Kök/Kavram/Çeviri Denetimi örnek listeleri → `/admin/curation/{id}`; kök → `?root=`, WF → `?family=` (roots sayfası derin bağlantı parametreleri) |
 | v2 Çeviri ekranı | `/admin/yonetim/ceviri-denetimi` + `translations-audit.json` |
-| Birim testi | `src/tests/governance/reportGovernance.test.ts` (8 test) |
+| Birim testi | `src/tests/governance/reportGovernance.test.ts` (11 test) |
 
 **İlk rapor değerleri** (2026-11-26 ~17:49 UTC): lexemes **41.472**\* · roots **3.670** · WF **7.187** · WF boş **3.240** · `rootIdMissing` **7.063** · `rootIdsMissing` **7.063** (aynı küme — `rootId` boş olup `rootIds` dolu kayıt yok) · üyesiz kök **5** (`R-SHCH1YP1E`, `R-UPCH1E`, `R-PSHCH1AMP1E`, `R-TXYP`, `кхъуей`) · üyesiz wordFamily **5** · AR boş **9.050** · conceptId boş **15** · legacy kayıt **29** (80 değer) · mükerrer ID / kırık kök / kırık WF referansı **0**. `report:governance` terminal özeti bu değerleri ekranla aynı kaynaktan basar (POC başarı kriteri).
 
@@ -165,8 +191,12 @@ Dil alanlarına sızan yabancı metinler ve eksik çeviriler. Tüm göstergeler 
 
 **v2 ilk değerleri** (2026-11-27): TR&apos;de Kiril **79** · TR&apos;de Arapça **23** · TR İngilizce şüpheli **305** · TR == EN **382** · RU&apos;da Latin kelime **221** · EN&apos;de Kiril **45** · EN&apos;de Arapça **0** · TR/EN/RU boş **0** · AR boş **9.050**.
 
+**v3 ilk değerleri** (2026-11-27): form duplikasyon **14 form / 29 kayıt** (historik değerle birebir) · POS boş/geçersiz/çakışan **0** · POS dağılımı noun **19.237** · verb **15.959** · adj **2.632** · phrase **870** · adv **1.697** · propn **441** (+ diğer) · dialect dağılımı KBD **30.595** · COMMON **7.430** · ADY **3.447** · geçersiz dialect **0** · Apazhev işaretli **279** (ADY olan **0**) · çoklu-lehçe form **8** (ADY+KBD 6 · COMMON+KBD 2).
+
 ## Sonuçlar
 
+- **Kapanış (Baş Mimar, 2026-11-27):** ADR-GOV-016 v1/v2/v3 CLOSED → **IMPLEMENTED / OPERATIONAL**. İlk fazda planlanan 6 yönetişim ekranı (Veri Sağlığı · Kök · Kavram · Çeviri · POS · Lehçe) tamamlandı; *denetim → rapor → dashboard → derin bağlantı → kürasyon* zinciri kuruldu. Governance Center artık veri üretim hattının parçasıdır.
+- **Sonraki odak (Baş Mimar yönlendirmesi):** yeni ekran değil, mevcut denetimlerin ürettiği kuyrukların temizlenmesi — AR boş kayıtlar (9.050), form duplikasyon adayları (14 grup), çeviri şüphelileri (TR İngilizce 305, TR==EN 382…), çoklu-lehçe form adayları (8).
 - Kalite denetimi komut satırı bağımlılığından kurtulur; sprint çıktıları kalıcı ürüne dönüşür.
 - Anlamsal yönetişim katmanı ölçülebilir ve izlenebilir hale gelir (ADR-ROOTS-007/008 kuyruğunun çalışma ortamını hazırlar).
 - `validate:data` mevcut işlevini korur; Governance Center bunun üzerine anlamsal/kalite katmanını ekler (yerine geçmez).

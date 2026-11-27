@@ -114,6 +114,44 @@ export interface TranslationsAuditReport {
   };
 }
 
+export interface PosDuplicateGroup {
+  form: string;
+  ids: string[];
+}
+
+export interface PosAuditReport {
+  generatedAt: string;
+  posDistribution: Record<string, number>;
+  posEmpty: number;
+  invalidPos: number;
+  posMismatch: number;
+  formDuplicateGroups: number;
+  formDuplicateRecords: number;
+  duplicateGroups: PosDuplicateGroup[];
+}
+
+export interface ApazhevSample {
+  id: string;
+  form: string;
+}
+
+export interface MultiDialectSample {
+  form: string;
+  dialects: string[];
+}
+
+export interface DialectAuditReport {
+  generatedAt: string;
+  dialectDistribution: Record<string, number>;
+  invalidDialect: number;
+  apazhevMarked: number;
+  apazhevAdy: number;
+  apazhevSamples: ApazhevSample[];
+  multiDialectForms: number;
+  crossDialectPairs: Record<string, number>;
+  multiDialectSamples: MultiDialectSample[];
+}
+
 /** Rapor dosyasını okur; yoksa/hatalıysa null döner. */
 export function loadGovReport<T>(name: string): T | null {
   try {

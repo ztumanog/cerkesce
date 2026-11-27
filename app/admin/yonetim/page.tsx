@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { Card, Badge, Heading, Text, Flex, Box, Grid, Separator } from '@radix-ui/themes';
 import {
   ClipboardList, Scale, Lightbulb, HeartPulse, BookOpenCheck, Database,
-  ShieldCheck, GitBranch, Network, Languages,
+  ShieldCheck, GitBranch, Network, Languages, Tag, Map,
 } from 'lucide-react';
 
 /**
@@ -85,6 +85,20 @@ const yonetisimKartlari = [
     desc: 'Dil alanlarına sızan yabancı metinler, TR==EN, eksik çeviriler (v2)',
     icon: Languages,
     bg: '#fef2f2', border: '#f43f5e', color: '#e11d48',
+  },
+  {
+    href: '/admin/yonetim/pos-denetimi',
+    title: 'POS Denetimi',
+    desc: 'POS dağılımı, etiket tutarlılığı, form duplikasyon grupları (v3)',
+    icon: Tag,
+    bg: '#f0fdfa', border: '#14b8a6', color: '#0d9488',
+  },
+  {
+    href: '/admin/yonetim/lehce-denetimi',
+    title: 'Lehçe Denetimi',
+    desc: 'Dialect dağılımı, Apazhev işaretleri, çoklu-lehçe formlar (v3)',
+    icon: Map,
+    bg: '#eff6ff', border: '#0ea5e9', color: '#0284c7',
   },
 ];
 
@@ -233,7 +247,7 @@ export default function YonetimPage() {
           <Heading size="6">🛡️ Veri Yönetişimi</Heading>
           <Badge variant="soft">ADR-GOV-016 · JSON raporundan okur</Badge>
         </Flex>
-        <Grid columns={{ initial: '1', sm: '2', lg: '4' }} gap="4" mb="6">
+        <Grid columns={{ initial: '1', sm: '2', lg: '3' }} gap="4" mb="6">
           {yonetisimKartlari.map((p) => (
             <Link key={p.href} href={p.href} style={{ textDecoration: 'none' }}>
               <Card className="hover:shadow-lg transition-all hover:-translate-y-1 cursor-pointer" style={{ background: p.bg, borderColor: p.border }}>

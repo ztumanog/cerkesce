@@ -9,6 +9,8 @@
  *   public/admin-reports/roots-audit.json  — Kök Denetimi
  *   public/admin-reports/concepts-audit.json — Kavram Denetimi
  *   public/admin-reports/translations-audit.json — Çeviri Denetimi (v2)
+ *   public/admin-reports/pos-audit.json    — POS Denetimi (v3)
+ *   public/admin-reports/dialect-audit.json — Lehçe Denetimi (v3)
  *
  * Kurallar (ADR-GOV-016):
  * - RULE-01: Script JSON üretir, UI yalnızca okur; iş kuralları UI'ya taşınmaz.
@@ -320,6 +322,128 @@ export function computeTranslationsAudit(lexemes) {
   };
 }
 // ---------------------------------------------------------------------------
+// pos-audit.json — POS Denetimi (v3)
+// ---------------------------------------------------------------------------
+const ALLOWED_POS_SET = new Set([
+  'noun', 'verb', 'adj', 'adv', 'phrase', 'propn', 'interj',
+  'num', 'part', 'pron', 'prefix', 'adp', 'symbol', 'conj',
+]);
+
+export function computePosAudit(lexemes) {
+  const posDistribution = {};
+  let posEmpty = 0;
+  let invalidPos = 0;
+  let posMismatch = 0;
+
+  // Form bazlı duplikasyon grubu (metrik sözlüğü): aynı `form` değerini taşıyan
+  // birden fazla kayıt — POS'u farklı olsa bile. (2026-11-27'de bu tanım,
+  // Baş Mimar oturumundaki historik "14 form / 29 kayıt" değeriyle birebir
+  // örtüşecek şekilde doğrulandı; RULE-07 dört şartı da sağlanır.)
+  const byForm = new Map();
+  for (const x of lexemes) {
+    const p = x.pos || x.partOfSpeech || '';
+    if (!x.pos && !x.partOfSpeech) posEmpty += 1;
+    else {
+      if (p && !ALLOWED_POS_SET.has(p)) invalidPos += 1;
+      if (x.pos !== x.partOfSpeech) posMismatch += 1;
+    }
+    posDistribution[p || '(boş)'] = (posDistribution[p || '(boş)'] || 0) + 1;
+
+    const form = x.form || '';
+    if (form) {
+      const arr = byForm.get(form) ?? [];
+      arr.push(x.id);
+      byForm.set(form, arr);
+    }
+  }
+
+  const duplicateGroups = [];
+  let formDuplicateRecords = 0;
+  for (const [form, ids] of byForm) {
+    if (ids.length > 1) {
+      formDuplicateRecords += ids.length;
+      if (duplicateGroups.length < SAMPLE_LIMIT) {
+        duplicateGroups.push({ form, ids });
+      }
+    }
+  }
+
+  return {
+    posDistribution,
+    posEmpty,
+    invalidPos,
+    posMismatch,
+    formDuplicateGroups: [...byForm.values()].filter((ids) => ids.length > 1).length,
+    formDuplicateRecords,
+    duplicateGroups,
+  };
+}
+
+// ---------------------------------------------------------------------------
+// dialect-audit.json — Lehçe Denetimi (v3)
+// ---------------------------------------------------------------------------
+// Metrik sözlüğü (ADR-GOV-016): DIALECT-AUDIT-001'in kalıcılaşmış hali.
+// - Apazhev işareti: id veya notes içinde "apazhev" geçen kayıt.
+// - Çoklu-lehçe form: aynı form değerinin birden fazla dialect kaydında
+//   geçmesi (COMMON birleştirme adayı görünümü — şüpheli, hüküm insan kararı).
+export function computeDialectAudit(lexemes) {
+  const ALLOWED_DIALECTS_SET = new Set(['KBD', 'ADY', 'COMMON']);
+  const dialectDistribution = {};
+  let invalidDialect = 0;
+  let apazhevMarked = 0;
+  let apazhevAdy = 0;
+
+  const byForm = new Map();
+  const apazhevSamples = [];
+
+  for (const x of lexemes) {
+    const d = x.dialect || '(boş)';
+    dialectDistribution[d] = (dialectDistribution[d] || 0) + 1;
+    if (!ALLOWED_DIALECTS_SET.has(x.dialect)) invalidDialect += 1;
+
+    const isApazhev = /apazhev/i.test(x.id || '') || /apazhev/i.test(String(x.notes || ''));
+    if (isApazhev) {
+      apazhevMarked += 1;
+      if (x.dialect === 'ADY') {
+        apazhevAdy += 1;
+        if (apazhevSamples.length < SAMPLE_LIMIT) apazhevSamples.push({ id: x.id, form: x.form });
+      }
+    }
+
+    const form = x.form || '';
+    if (form) {
+      const set = byForm.get(form) ?? new Set();
+      set.add(x.dialect || '(boş)');
+      byForm.set(form, set);
+    }
+  }
+
+  let multiDialectForms = 0;
+  const crossDialectPairs = {};
+  const multiDialectSamples = [];
+  for (const [form, dialects] of byForm) {
+    if (dialects.size > 1) {
+      multiDialectForms += 1;
+      const combo = [...dialects].sort().join('+');
+      crossDialectPairs[combo] = (crossDialectPairs[combo] || 0) + 1;
+      if (multiDialectSamples.length < SAMPLE_LIMIT) {
+        multiDialectSamples.push({ form, dialects: [...dialects].sort() });
+      }
+    }
+  }
+
+  return {
+    dialectDistribution,
+    invalidDialect,
+    apazhevMarked,
+    apazhevAdy,
+    apazhevSamples,
+    multiDialectForms,
+    crossDialectPairs,
+    multiDialectSamples,
+  };
+}
+// ---------------------------------------------------------------------------
 // CLI
 // ---------------------------------------------------------------------------
 function readJson(filePath) {
@@ -345,14 +469,18 @@ function main() {
   const rootsData = computeRootsAudit(lexemes, roots, wordFamilies);
   const conceptsData = computeConceptsAudit(lexemes, wordFamilies);
   const translationsData = computeTranslationsAudit(lexemes);
+  const posData = computePosAudit(lexemes);
+  const dialectData = computeDialectAudit(lexemes);
 
   const health = writeReport('health.json', healthData);
   const rootsAudit = writeReport('roots-audit.json', rootsData);
   const conceptsAudit = writeReport('concepts-audit.json', conceptsData);
   const translationsAudit = writeReport('translations-audit.json', translationsData);
+  const posAudit = writeReport('pos-audit.json', posData);
+  const dialectAudit = writeReport('dialect-audit.json', dialectData);
 
   console.log('ADR-GOV-016 raporlari yazildi:');
-  for (const p of [health, rootsAudit, conceptsAudit, translationsAudit]) {
+  for (const p of [health, rootsAudit, conceptsAudit, translationsAudit, posAudit, dialectAudit]) {
     console.log('  -', path.relative(ROOT_DIR, p));
   }
 
@@ -377,6 +505,14 @@ function main() {
   console.log(`  TR'de Kiril: ${tr(translationsData.trCyrillic)} | TR'de Arapça: ${tr(translationsData.trArabic)} | TR İngilizce şüpheli: ${tr(translationsData.trEnglishSuspect)}`);
   console.log(`  EN'de Kiril: ${tr(translationsData.enCyrillic)} | EN'de Arapça: ${translationsData.enArabic} | RU'da Latin kelime: ${tr(translationsData.ruLatinWords)}`);
   console.log(`  TR == EN: ${tr(translationsData.trEqualsEn)} | TR boş: ${translationsData.trEmpty} | EN boş: ${translationsData.enEmpty} | AR boş: ${tr(translationsData.arEmpty)} | RU boş: ${translationsData.ruEmpty}`);
+  console.log('=== POS DENETIMI (pos-audit.json) ===');
+  console.log(`  Form duplikasyon grubu: ${posData.formDuplicateGroups} form / ${posData.formDuplicateRecords} kayıt`);
+  console.log(`  POS boş: ${posData.posEmpty} | Geçersiz POS: ${posData.invalidPos} | POS çakışması: ${posData.posMismatch}`);
+  console.log(`  POS dağılımı: ${JSON.stringify(posData.posDistribution)}`);
+  console.log('=== LEHCE DENETIMI (dialect-audit.json) ===');
+  console.log(`  Dağılım: ${JSON.stringify(dialectData.dialectDistribution)} | Geçersiz dialect: ${dialectData.invalidDialect}`);
+  console.log(`  Apazhev işaretli: ${dialectData.apazhevMarked} | Apazhev olup ADY olan: ${dialectData.apazhevAdy}`);
+  console.log(`  Çoklu-lehçe form: ${dialectData.multiDialectForms} | Kesişim: ${JSON.stringify(dialectData.crossDialectPairs)}`);
 }
 
 const isMain =

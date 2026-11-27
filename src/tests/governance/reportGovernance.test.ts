@@ -4,6 +4,8 @@ import {
   computeRootsAudit,
   computeConceptsAudit,
   computeTranslationsAudit,
+  computePosAudit,
+  computeDialectAudit,
 } from '../../../scripts/report-governance.mjs';
 
 /**
@@ -162,5 +164,60 @@ describe('computeTranslationsAudit', () => {
     ]);
     expect(t.trEnglishSuspect).toBe(0); // "her" Türkçedir, listede yok
     expect(t.trEqualsEn).toBe(0);
+  });
+});
+
+describe('computePosAudit', () => {
+  it('dağılım, tutarlılık ve form duplikasyon metriklerini doğru hesaplar', () => {
+    const p = computePosAudit([
+      { id: 'L-1', form: 'нэф', pos: 'adj', partOfSpeech: 'adj' },
+      { id: 'L-2', form: 'нэф', pos: 'noun', partOfSpeech: 'noun' },
+      { id: 'L-3', form: 'шэ', pos: 'noun', partOfSpeech: 'noun' },
+      { id: 'L-4', form: 'шэ', pos: 'noun', partOfSpeech: 'noun' },
+      { id: 'L-5', form: 'уникаль', pos: 'verb', partOfSpeech: 'verb' },
+    ]);
+    expect(p.formDuplicateGroups).toBe(2);      // нэф + шэ
+    expect(p.formDuplicateRecords).toBe(4);     // L-1..L-4
+    expect(p.duplicateGroups).toEqual([
+      { form: 'нэф', ids: ['L-1', 'L-2'] },
+      { form: 'шэ', ids: ['L-3', 'L-4'] },
+    ]);
+    expect(p.posEmpty).toBe(0);
+    expect(p.invalidPos).toBe(0);
+    expect(p.posMismatch).toBe(0);
+    expect(p.posDistribution['noun']).toBe(3);
+  });
+
+  it('boş ve geçersiz POS ile çakışmayı sayar', () => {
+    const p = computePosAudit([
+      { id: 'L-1', form: 'а' },
+      { id: 'L-2', form: 'б', pos: 'yanlis', partOfSpeech: 'yanlis' },
+      { id: 'L-3', form: 'в', pos: 'noun', partOfSpeech: 'verb' },
+    ]);
+    expect(p.posEmpty).toBe(1);
+    expect(p.invalidPos).toBe(1);
+    expect(p.posMismatch).toBe(1);
+  });
+});
+
+describe('computeDialectAudit', () => {
+  it('dağılım, Apazhev ve çoklu-lehçe metriklerini doğru hesaplar', () => {
+    const d = computeDialectAudit([
+      { id: 'L-1', form: 'а', dialect: 'KBD' },
+      { id: 'L-2', form: 'а', dialect: 'COMMON' },
+      { id: 'L-3', form: 'б', dialect: 'ADY' },
+      { id: 'L-APAZHEV-1', form: 'в', dialect: 'KBD', notes: 'Apazhev kaynağı' },
+      { id: 'L-APAZHEV-2', form: 'г', dialect: 'ADY' },
+      { id: 'L-BAD', form: 'д', dialect: 'YANLIS' },
+    ]);
+    expect(d.dialectDistribution['KBD']).toBe(2);
+    expect(d.dialectDistribution['COMMON']).toBe(1);
+    expect(d.dialectDistribution['ADY']).toBe(2);
+    expect(d.invalidDialect).toBe(1);
+    expect(d.apazhevMarked).toBe(2);
+    expect(d.apazhevAdy).toBe(1);
+    expect(d.apazhevSamples).toEqual([{ id: 'L-APAZHEV-2', form: 'г' }]);
+    expect(d.multiDialectForms).toBe(1); // 'а' KBD+COMMON
+    expect(d.crossDialectPairs['COMMON+KBD']).toBe(1);
   });
 });

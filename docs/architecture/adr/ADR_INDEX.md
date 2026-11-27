@@ -69,7 +69,7 @@
 | ADR-GOV-013 | Phase Program Closure Strategy | `ADR-GOV-013-PHASE_PROGRAM_CLOSURE.md` | Accepted | 15 |
 | ADR-GOV-014 | Dialect Engine Authority | `ADR-GOV-014-DIALECT_ENGINE_AUTHORITY.md` | Accepted | — |
 | ADR-GOV-015 | Canonical Concept Identifier Strategy | `ADR-GOV-015-CANONICAL_CONCEPT_IDENTIFIER_STRATEGY.md` | Accepted | 15 |
-| ADR-GOV-016 | Linguistic Governance Center | `ADR-GOV-016-LINGUISTIC_GOVERNANCE_CENTER.md` | Accepted | Linguistic |
+| ADR-GOV-016 | Linguistic Governance Center | `ADR-GOV-016-LINGUISTIC_GOVERNANCE_CENTER.md` | Implemented | Linguistic |
 | ADR-ROOTS-006 | Wiki Kalıntısı Temizliği (Faz A + Faz B) | `ADR-ROOTS-006-WIKI_KALINTISI_TEMIZLIGI.md` | Accepted (Closed) | Linguistic |
 | ADR-P9-001 | Platform Intelligence Layer | `ADR-P9-001-PLATFORM_INTELLIGENCE.md` | Accepted | 9 |
 | ADR-P10-001 | Platform Intelligence Automation | `ADR-P10-001-PLATFORM_INTELLIGENCE_AUTOMATION.md` | Accepted | 10 |

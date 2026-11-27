@@ -33,3 +33,27 @@ Risk ayrımı gereği temizlik iki fazda, otomatik anlam üretimi olmadan uygula
 - **Toplam Temizlenen Benzersiz Kayıt:** `571` (`554` `examples` + `17` `translations`/`senses`)
 - **Temizlik Sonrası Artık Taraması (`41.462` lexeme):** `wikitab = 0`, `{{`/`}} = 0`, `[[`/`]] = 0`, `'' = 0`
 - **Validator (`npm run validate:data`):** `15/15 PASS` (`41462 lexeme, 3670 root`)
+
+---
+
+## Kapanış Notu (Baş Mimar, 2026-11-26)
+
+| Alan | Değer |
+|---|---|
+| **Amaç** | Wiki kaynaklı markup kalıntılarının lexeme veri katmanından temizlenmesi |
+| **Sonuç** | `571` lexeme temizlendi (Faz A: 554 · Faz B-A: 16 · Faz B-B: 1) |
+| **Kalan** | `0` |
+| **Validator** | `15/15 PASS` |
+| **Durum** | **CLOSED** — aktif backlog'dan çıkarıldı |
+
+**Kanıt etiketi:** Kullanıcı beyanı (Baş Mimar kapanış kararı).
+
+**Korunan yönetişim ilkesi:** Wiki markup temizliği, anlam üretiminden ayrı tutuldu. Sprint boyunca *markup temizliği → otomatik*, *anlam değişikliği → insan kararı* ayrımı korundu; bu ayrım gelecekteki veri hijyeni çalışmaları için emsal oluşturur.
+
+**Kapanış sonrası açık mimari kuyruk (Baş Mimar, 2026-11-26):**
+
+- ADR-ROOTS-007 — Legacy conceptIds yaşam döngüsü
+- ADR-ROOTS-008 — `472` wordFamily'siz root denetimi
+- Apazhev eksik yönlendirmeler
+- Hakunov botanik
+- KMOKSY kuş adları
