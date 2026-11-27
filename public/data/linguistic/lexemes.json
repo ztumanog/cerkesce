@@ -1829528,7 +1829528,7 @@
   {
     "id": "L-APAZHEV-G3-06",
     "form": "зигъэукӀриикӀын",
-    "literalMeaning": "хуейр / фаер İSTEYEN",
+    "literalMeaning": "dışarı düşmek, yuvarlanıp çıkmak",
     "partOfSpeech": "verb",
     "corpusFrequency": 169,
     "dialectVariants": {
@@ -1829543,9 +1829543,9 @@
       "ru": "вывалиться из чего-л."
     },
     "rootIds": [
-      "R-SHY"
+      "R-UK1YN"
     ],
-    "wordFamilyId": "WF-SHY",
+    "wordFamilyId": "WF-UKI",
     "derivation": {
       "rootIds": [
         "R-SHY"
@@ -1829554,13 +1829554,13 @@
       "rule": "compound"
     },
     "ipa": "/xʷe:j/",
-    "root": "шы",
+    "root": null,
     "etymologyType": "native",
     "examples": [
       "НахуапӀэ хъумэ ар, итӀанэ ЩӀэн хуейр мыращ: постамент пӀий Мо Дизыкъуажэ Мыст къигъанэу НэщӀ хъуам тырет мы Нурхьэлий.\n\n153 КЪЭРМОКЪУЭ  МУХЬЭМЭД ЦӀыхубэр нобэми мэхъуапсэ ИритхъунщӀэхыу гущхьэлъапсэр ФӀылъагъуныгъэм теухуауэ Зы тхыгъэжьыфӀ къеджэну."
     ],
-    "meaning": "gereken",
-    "rootId": "R-SHY",
+    "meaning": "dışarı düşmek, yuvarlanıp çıkmak",
+    "rootId": "R-UK1YN",
     "dialect": "COMMON",
     "legacyIds": [
       "L-CORPUS-00244"
@@ -1829579,7 +1829579,7 @@
   {
     "id": "L-APAZHEV-G3-07",
     "form": "зиууцӀэн",
-    "literalMeaning": "хуейр / фаер İSTEYEN",
+    "literalMeaning": "yayılıp yatmak, özensizce uzanmak",
     "partOfSpeech": "verb",
     "corpusFrequency": 169,
     "dialectVariants": {
@@ -1829591,12 +1829591,10 @@
     "translations": {
       "tr": "yayılıp yatmak, özensizce uzanmak",
       "en": "to sprawl carelessly, to flop down",
-      "ru": "небрежно развалиться"
+      "ru": "небрежно развалиться где-л."
     },
-    "rootIds": [
-      "R-SHY"
-    ],
-    "wordFamilyId": "WF-SHY",
+    "rootIds": [],
+    "wordFamilyId": null,
     "derivation": {
       "rootIds": [
         "R-SHY"
@@ -1829605,13 +1829603,13 @@
       "rule": "compound"
     },
     "ipa": "/xʷe:j/",
-    "root": "шы",
+    "root": null,
     "etymologyType": "native",
     "examples": [
       "НахуапӀэ хъумэ ар, итӀанэ ЩӀэн хуейр мыращ: постамент пӀий Мо Дизыкъуажэ Мыст къигъанэу НэщӀ хъуам тырет мы Нурхьэлий.\n\n153 КЪЭРМОКЪУЭ  МУХЬЭМЭД ЦӀыхубэр нобэми мэхъуапсэ ИритхъунщӀэхыу гущхьэлъапсэр ФӀылъагъуныгъэм теухуауэ Зы тхыгъэжьыфӀ къеджэну."
     ],
-    "meaning": "gereken",
-    "rootId": "R-SHY",
+    "meaning": "yayılıp yatmak, özensizce uzanmak",
+    "rootId": null,
     "dialect": "COMMON",
     "legacyIds": [
       "L-CORPUS-00244"
@@ -1829623,14 +1829621,14 @@
       {
         "tr": "yayılıp yatmak, özensizce uzanmak",
         "en": "to sprawl carelessly, to flop down",
-        "ru": "небрежно развалиться"
+        "ru": "небрежно развалиться где-л."
       }
     ]
   },
   {
     "id": "L-APAZHEV-G3-08",
     "form": "зыгъэдэгъэкӀуэтэн",
-    "literalMeaning": "хуейр / фаер İSTEYEN",
+    "literalMeaning": "kendine yaklaştırmak, kendine doğru çekmek",
     "partOfSpeech": "verb",
     "corpusFrequency": 169,
     "dialectVariants": {
@@ -1829642,12 +1829640,12 @@
     "translations": {
       "tr": "kendine yaklaştırmak, kendine doğru çekmek",
       "en": "to bring closer to oneself, to draw toward oneself",
-      "ru": "приблизить, пододвинуть к себе"
+      "ru": "приблизить, пододвинуть кого-что-л. к себе"
     },
     "rootIds": [
-      "R-SHY"
+      "R-KWA"
     ],
-    "wordFamilyId": "WF-SHY",
+    "wordFamilyId": "WF-KWA",
     "derivation": {
       "rootIds": [
         "R-SHY"
@@ -1829656,13 +1829654,13 @@
       "rule": "compound"
     },
     "ipa": "/xʷe:j/",
-    "root": "шы",
+    "root": null,
     "etymologyType": "native",
     "examples": [
       "НахуапӀэ хъумэ ар, итӀанэ ЩӀэн хуейр мыращ: постамент пӀий Мо Дизыкъуажэ Мыст къигъанэу НэщӀ хъуам тырет мы Нурхьэлий.\n\n153 КЪЭРМОКЪУЭ  МУХЬЭМЭД ЦӀыхубэр нобэми мэхъуапсэ ИритхъунщӀэхыу гущхьэлъапсэр ФӀылъагъуныгъэм теухуауэ Зы тхыгъэжьыфӀ къеджэну."
     ],
-    "meaning": "gereken",
-    "rootId": "R-SHY",
+    "meaning": "kendine yaklaştırmak, kendine doğru çekmek",
+    "rootId": "R-KWA",
     "dialect": "COMMON",
     "legacyIds": [
       "L-CORPUS-00244"
@@ -1829674,14 +1829672,14 @@
       {
         "tr": "kendine yaklaştırmak, kendine doğru çekmek",
         "en": "to bring closer to oneself, to draw toward oneself",
-        "ru": "приблизить, пододвинуть к себе"
+        "ru": "приблизить, пододвинуть кого-что-л. к себе"
       }
     ]
   },
   {
     "id": "L-APAZHEV-G3-09",
     "form": "зызэпылӀэщӀыхьыжын",
-    "literalMeaning": "хуейр / фаер İSTEYEN",
+    "literalMeaning": "silinmek, kurulanmak (ağladıktan/yıkandıktan sonra)",
     "partOfSpeech": "verb",
     "corpusFrequency": 169,
     "dialectVariants": {
@@ -1829693,12 +1829691,10 @@
     "translations": {
       "tr": "silinmek, kurulanmak (ağladıktan/yıkandıktan sonra)",
       "en": "to wipe oneself dry, to dry oneself off",
-      "ru": "вытереться"
+      "ru": "вытереться (напр. после плача, умывания)"
     },
-    "rootIds": [
-      "R-SHY"
-    ],
-    "wordFamilyId": "WF-SHY",
+    "rootIds": [],
+    "wordFamilyId": null,
     "derivation": {
       "rootIds": [
         "R-SHY"
@@ -1829707,13 +1829703,13 @@
       "rule": "compound"
     },
     "ipa": "/xʷe:j/",
-    "root": "шы",
+    "root": null,
     "etymologyType": "native",
     "examples": [
       "НахуапӀэ хъумэ ар, итӀанэ ЩӀэн хуейр мыращ: постамент пӀий Мо Дизыкъуажэ Мыст къигъанэу НэщӀ хъуам тырет мы Нурхьэлий.\n\n153 КЪЭРМОКЪУЭ  МУХЬЭМЭД ЦӀыхубэр нобэми мэхъуапсэ ИритхъунщӀэхыу гущхьэлъапсэр ФӀылъагъуныгъэм теухуауэ Зы тхыгъэжьыфӀ къеджэну."
     ],
-    "meaning": "gereken",
-    "rootId": "R-SHY",
+    "meaning": "silinmek, kurulanmak (ağladıktan/yıkandıktan sonra)",
+    "rootId": null,
     "dialect": "COMMON",
     "legacyIds": [
       "L-CORPUS-00244"
@@ -1829725,14 +1829721,14 @@
       {
         "tr": "silinmek, kurulanmak (ağladıktan/yıkandıktan sonra)",
         "en": "to wipe oneself dry, to dry oneself off",
-        "ru": "вытереться"
+        "ru": "вытереться (напр. после плача, умывания)"
       }
     ]
   },
   {
     "id": "L-APAZHEV-G3-10",
     "form": "зызэщӀиузэдэн",
-    "literalMeaning": "хуейр / фаер İSTEYEN",
+    "literalMeaning": "silahlanmak, kuşanmak",
     "partOfSpeech": "verb",
     "corpusFrequency": 169,
     "dialectVariants": {
@@ -1829744,12 +1829740,12 @@
     "translations": {
       "tr": "silahlanmak, kuşanmak",
       "en": "to arm oneself, to equip oneself with weapons",
-      "ru": "вооружиться"
+      "ru": "вооружиться (всем необходимым, оружием)"
     },
     "rootIds": [
-      "R-SHY"
+      "R-UZED"
     ],
-    "wordFamilyId": "WF-SHY",
+    "wordFamilyId": "WF-UZED",
     "derivation": {
       "rootIds": [
         "R-SHY"
@@ -1829758,13 +1829754,13 @@
       "rule": "compound"
     },
     "ipa": "/xʷe:j/",
-    "root": "шы",
+    "root": null,
     "etymologyType": "native",
     "examples": [
       "НахуапӀэ хъумэ ар, итӀанэ ЩӀэн хуейр мыращ: постамент пӀий Мо Дизыкъуажэ Мыст къигъанэу НэщӀ хъуам тырет мы Нурхьэлий.\n\n153 КЪЭРМОКЪУЭ  МУХЬЭМЭД ЦӀыхубэр нобэми мэхъуапсэ ИритхъунщӀэхыу гущхьэлъапсэр ФӀылъагъуныгъэм теухуауэ Зы тхыгъэжьыфӀ къеджэну."
     ],
-    "meaning": "gereken",
-    "rootId": "R-SHY",
+    "meaning": "silahlanmak, kuşanmak",
+    "rootId": "R-UZED",
     "dialect": "COMMON",
     "legacyIds": [
       "L-CORPUS-00244"
@@ -1829776,7 +1829772,7 @@
       {
         "tr": "silahlanmak, kuşanmak",
         "en": "to arm oneself, to equip oneself with weapons",
-        "ru": "вооружиться"
+        "ru": "вооружиться (всем необходимым, оружием)"
       }
     ]
   },
