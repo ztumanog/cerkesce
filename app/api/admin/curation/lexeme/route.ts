@@ -1,5 +1,6 @@
 import { verifyCurationAccess } from '@/lib/security/curationGuard';
 import { syncWordFamiliesFromLexemes } from "../../../../../src/lib/curation/syncWordFamilies";
+import { scheduleReportRefresh } from "@/infra/governance/reportRefresh";
 import { NextResponse } from 'next/server';
 import fs from 'fs';
 import path from 'path';
@@ -74,14 +75,52 @@ export async function POST(req: Request) {
       }
     };
 
-    checkScalar('form', currentItem.form, changes.form);
-    checkScalar('dialect', currentItem.dialect, changes.dialect);
-    checkScalar('wordFamilyId', currentItem.wordFamilyId, changes.wordFamilyId);
-    checkScalar('ipa', currentItem.ipa, changes.ipa);
-    checkScalar('partOfSpeech', currentItem.partOfSpeech, changes.partOfSpeech);
-    checkScalar('conceptId', currentItem.conceptId, changes.conceptId);
-    checkScalar('literalMeaning', currentItem.literalMeaning, changes.literalMeaning);
-    checkScalar('notes', currentItem.notes, changes.notes);
+    const scalarFields = [
+      'form',
+      'dialect',
+      'wordFamilyId',
+      'ipa',
+      'partOfSpeech',
+      'conceptId',
+      'meaning',
+      'literalMeaning',
+      'notes',
+      'status',
+      'etymologyType',
+      'root',
+      'source',
+      'etymology',
+      'dialectNote',
+      'audioUrl',
+      'scientificName',
+    ] as const;
+
+    for (const field of scalarFields) {
+      checkScalar(field, currentItem[field], changes[field]);
+    }
+
+    if (changes.isLemma !== undefined) {
+      const oldVal = Boolean(currentItem.isLemma);
+      const newVal = Boolean(changes.isLemma);
+      if (oldVal !== newVal) {
+        diff.push({ field: 'isLemma', oldValue: oldVal, newValue: newVal });
+      }
+    }
+
+    let parsedFreq: number | null | undefined = undefined;
+    if (changes.corpusFrequency !== undefined) {
+      const rawFreq = changes.corpusFrequency;
+      parsedFreq =
+        rawFreq === '' || rawFreq === null
+          ? null
+          : Number.isFinite(Number(rawFreq))
+            ? Number(rawFreq)
+            : (currentItem.corpusFrequency ?? null);
+      const oldFreq = currentItem.corpusFrequency ?? null;
+      if (oldFreq !== parsedFreq) {
+        diff.push({ field: 'corpusFrequency', oldValue: oldFreq ?? '', newValue: parsedFreq ?? '' });
+      }
+    }
 
     const oldTr = Array.isArray(currentItem.translations?.tr)
       ? currentItem.translations.tr.join(', ')
@@ -105,26 +144,43 @@ export async function POST(req: Request) {
     checkScalar('translations.ru', oldRu, ruVal);
     checkScalar('translations.ar', oldAr, arVal);
 
+    const parseCsvOrArray = (val: any): string[] => {
+      if (Array.isArray(val)) return val.map((r) => String(r).trim()).filter(Boolean);
+      if (typeof val === 'string') return val.split(',').map((r) => r.trim()).filter(Boolean);
+      return [];
+    };
+
     let newRootsArray = currentItem.rootIds ?? [];
     if (changes.rootIds !== undefined) {
-      newRootsArray =
-        typeof changes.rootIds === 'string'
-          ? changes.rootIds
-              .split(',')
-              .map((r: string) => r.trim())
-              .filter(Boolean)
-          : Array.isArray(changes.rootIds)
-            ? changes.rootIds
-            : [];
-
+      newRootsArray = parseCsvOrArray(changes.rootIds);
       const oldRootsStr = Array.isArray(currentItem.rootIds)
         ? currentItem.rootIds.join(', ')
         : currentItem.rootId || '';
       const newRootsStr = newRootsArray.join(', ');
-
       if (oldRootsStr !== newRootsStr) {
         diff.push({ field: 'rootIds', oldValue: oldRootsStr, newValue: newRootsStr });
       }
+    }
+
+    const checkJsonField = (field: string, oldVal: any, newVal: any, fallbackOld: any) => {
+      if (newVal === undefined) return;
+      const beforeNorm = JSON.stringify(oldVal ?? fallbackOld);
+      const afterNorm = JSON.stringify(newVal);
+      if (beforeNorm !== afterNorm) {
+        diff.push({ field, oldValue: oldVal ?? fallbackOld, newValue: newVal });
+      }
+    };
+
+    checkJsonField('senses', currentItem.senses, changes.senses, []);
+    checkJsonField('examples', currentItem.examples, changes.examples, []);
+    checkJsonField('dialectVariants', currentItem.dialectVariants, changes.dialectVariants, {});
+    checkJsonField('derivation', currentItem.derivation, changes.derivation, {});
+    checkJsonField('sources', currentItem.sources, changes.sources, []);
+
+    let newTagsArray: string[] | undefined = undefined;
+    if (changes.tags !== undefined) {
+      newTagsArray = parseCsvOrArray(changes.tags);
+      checkJsonField('tags', currentItem.tags, newTagsArray, []);
     }
 
     if (!confirm) {
@@ -142,17 +198,51 @@ export async function POST(req: Request) {
       ...(arVal !== undefined ? { ar: arVal } : {}),
     };
 
+    const nextPartOfSpeech = changes.partOfSpeech !== undefined ? changes.partOfSpeech || null : undefined;
+    const nextConceptId = changes.conceptId !== undefined ? changes.conceptId || null : undefined;
+
+    let syncedConceptIds: any = undefined;
+    if (
+      nextConceptId !== undefined &&
+      nextConceptId &&
+      Array.isArray(currentItem.conceptIds) &&
+      currentItem.conceptIds.length > 0
+    ) {
+      syncedConceptIds = [
+        nextConceptId,
+        ...currentItem.conceptIds.filter((c: any) => c !== nextConceptId),
+      ];
+    }
+
     const updatedItem = {
       ...currentItem,
-      ...(changes.form !== undefined && changes.form.trim() ? { form: changes.form.trim() } : {}),
+      ...(changes.form !== undefined && String(changes.form).trim() ? { form: String(changes.form).trim() } : {}),
       ...(changes.dialect !== undefined ? { dialect: changes.dialect || null } : {}),
       ...(changes.wordFamilyId !== undefined ? { wordFamilyId: changes.wordFamilyId || null } : {}),
       ...(changes.ipa !== undefined ? { ipa: changes.ipa || null } : {}),
-      ...(changes.partOfSpeech !== undefined ? { partOfSpeech: changes.partOfSpeech || null } : {}),
-      ...(changes.conceptId !== undefined ? { conceptId: changes.conceptId || null } : {}),
+      ...(nextPartOfSpeech !== undefined ? { partOfSpeech: nextPartOfSpeech, pos: nextPartOfSpeech } : {}),
+      ...(nextConceptId !== undefined ? { conceptId: nextConceptId } : {}),
+      ...(syncedConceptIds !== undefined ? { conceptIds: syncedConceptIds } : {}),
+      ...(changes.meaning !== undefined ? { meaning: changes.meaning } : {}),
       ...(changes.literalMeaning !== undefined ? { literalMeaning: changes.literalMeaning || null } : {}),
       ...(changes.notes !== undefined ? { notes: changes.notes } : {}),
-      ...(changes.rootIds !== undefined ? { rootIds: newRootsArray } : {}),
+      ...(changes.status !== undefined ? { status: changes.status || null } : {}),
+      ...(changes.etymologyType !== undefined ? { etymologyType: changes.etymologyType || null } : {}),
+      ...(changes.root !== undefined ? { root: changes.root || null } : {}),
+      ...(changes.source !== undefined ? { source: changes.source || null } : {}),
+      ...(changes.etymology !== undefined ? { etymology: changes.etymology || null } : {}),
+      ...(changes.dialectNote !== undefined ? { dialectNote: changes.dialectNote || null } : {}),
+      ...(changes.audioUrl !== undefined ? { audioUrl: changes.audioUrl || null } : {}),
+      ...(changes.scientificName !== undefined ? { scientificName: changes.scientificName || null } : {}),
+      ...(changes.isLemma !== undefined ? { isLemma: Boolean(changes.isLemma) } : {}),
+      ...(parsedFreq !== undefined ? { corpusFrequency: parsedFreq } : {}),
+      ...(changes.rootIds !== undefined ? { rootIds: newRootsArray, rootId: newRootsArray[0] ?? null } : {}),
+      ...(changes.senses !== undefined ? { senses: changes.senses } : {}),
+      ...(changes.examples !== undefined ? { examples: changes.examples } : {}),
+      ...(changes.dialectVariants !== undefined ? { dialectVariants: changes.dialectVariants } : {}),
+      ...(changes.derivation !== undefined ? { derivation: changes.derivation } : {}),
+      ...(changes.sources !== undefined ? { sources: changes.sources } : {}),
+      ...(newTagsArray !== undefined ? { tags: newTagsArray } : {}),
       translations: updatedTranslations,
     };
 
@@ -179,6 +269,9 @@ export async function POST(req: Request) {
     const finalData = isArray ? list : { ...lexemes, lexemes: list };
     fs.writeFileSync(filePath, JSON.stringify(finalData, null, 2), 'utf-8');
     syncWordFamiliesFromLexemes(list, [currentItem.wordFamilyId, updatedItem.wordFamilyId].filter(Boolean));
+
+    // ADR-GOV-016 Seçenek C: veri değişti — governance raporları arka planda yenilenir
+    scheduleReportRefresh();
 
     try {
       const logEntry = JSON.stringify({
