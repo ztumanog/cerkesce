@@ -1,0 +1,483 @@
+{
+  "generatedAt": "2026-11-27T14:15:05.986Z",
+  "emptyConceptIds": 15,
+  "legacyConceptIdRecords": 29,
+  "legacyConceptIdValues": 80,
+  "conceptIdMismatch": 0,
+  "conceptFieldMismatch": 550,
+  "wfDanglingConceptRefs": 341,
+  "wfDanglingConceptValues": 365,
+  "emptyConceptSamples": [
+    "L-KBDNEW-40975",
+    "L-KBDNEW-41042",
+    "L-GU-LETTER",
+    "L-E-LETTER",
+    "L-ATE-CONJ",
+    "L-BGHUE-ADV",
+    "L-BGHUE-RAM",
+    "L-ZHAGHYN-ADJ",
+    "L-UEY-INTERJ",
+    "L-APAZHEV-YON-001",
+    "L-APAZHEV-YON-002",
+    "L-APAZHEV-YON-003",
+    "L-APAZHEV-YON-004",
+    "L-APAZHEV-YON-005",
+    "L-APAZHEV-YON-006"
+  ],
+  "legacyRecordSamples": [
+    {
+      "id": "L-GURYYUEN",
+      "conceptId": "UNDERSTAND",
+      "conceptIds": [
+        "UNDERSTAND",
+        "AGREE"
+      ]
+    },
+    {
+      "id": "L-GUSHCHYE",
+      "conceptId": "WORD",
+      "conceptIds": [
+        "WORD",
+        "SPEECH",
+        "PROMISE"
+      ]
+    },
+    {
+      "id": "L-GURYYUEZHYN",
+      "conceptId": "REALIZE",
+      "conceptIds": [
+        "REALIZE",
+        "RECONCILE"
+      ]
+    },
+    {
+      "id": "L-GUASHE",
+      "conceptId": "PRINCESS",
+      "conceptIds": [
+        "PRINCESS",
+        "MOTHER_IN_LAW",
+        "DOLL",
+        "LADY"
+      ]
+    },
+    {
+      "id": "L-YAPEREY",
+      "conceptId": "FIRST",
+      "conceptIds": [
+        "FIRST",
+        "PREVIOUS"
+      ]
+    },
+    {
+      "id": "L-P1E",
+      "conceptId": "PLACE",
+      "conceptIds": [
+        "PLACE",
+        "BED"
+      ]
+    },
+    {
+      "id": "L-GHUSE",
+      "conceptId": "COMPANION",
+      "conceptIds": [
+        "COMPANION",
+        "PARTNER",
+        "SPOUSE"
+      ]
+    },
+    {
+      "id": "L-BZE",
+      "conceptId": "LANGUAGE",
+      "conceptIds": [
+        "LANGUAGE",
+        "SPEECH",
+        "BOWSTRING",
+        "LOCK",
+        "BLADE"
+      ]
+    },
+    {
+      "id": "L-FE",
+      "conceptId": "SKIN",
+      "conceptIds": [
+        "SKIN",
+        "HIDE",
+        "BARK",
+        "YOU_PLURAL",
+        "APPEARANCE"
+      ]
+    },
+    {
+      "id": "L-SH1Y",
+      "conceptId": "EARTH",
+      "conceptIds": [
+        "EARTH",
+        "LAND",
+        "SOIL",
+        "COUNTRY",
+        "WINTER"
+      ]
+    },
+    {
+      "id": "L-DAGHE",
+      "conceptId": "OIL",
+      "conceptIds": [
+        "OIL",
+        "FAT",
+        "FUEL",
+        "GREASE"
+      ]
+    },
+    {
+      "id": "L-SHE",
+      "conceptId": "MILK",
+      "conceptIds": [
+        "MILK",
+        "BULLET",
+        "FAT"
+      ]
+    },
+    {
+      "id": "L-TKHEK1UME",
+      "conceptId": "EAR",
+      "conceptIds": [
+        "EAR",
+        "HEARING"
+      ]
+    },
+    {
+      "id": "L-K1YH",
+      "conceptId": "LONG",
+      "conceptIds": [
+        "LONG",
+        "TALL",
+        "DISTANT"
+      ]
+    },
+    {
+      "id": "L-DYGHU",
+      "conceptId": "THIEF",
+      "conceptIds": [
+        "THIEF",
+        "STEAL"
+      ]
+    },
+    {
+      "id": "L-ZHY",
+      "conceptId": "WIND",
+      "conceptIds": [
+        "WIND",
+        "OLD",
+        "AGED",
+        "AIR",
+        "EARLY"
+      ]
+    },
+    {
+      "id": "L-VY",
+      "conceptId": "OX",
+      "conceptIds": [
+        "OX",
+        "PLOW"
+      ]
+    },
+    {
+      "id": "L-KHY",
+      "conceptId": "SEA",
+      "conceptIds": [
+        "SEA",
+        "OCEAN"
+      ]
+    },
+    {
+      "id": "L-KKHUHE",
+      "conceptId": "PIG",
+      "conceptIds": [
+        "PIG",
+        "SWINE"
+      ]
+    },
+    {
+      "id": "L-FO",
+      "conceptId": "HONEY",
+      "conceptIds": [
+        "HONEY",
+        "SWEET"
+      ]
+    },
+    {
+      "id": "L-MAF1E",
+      "conceptId": "FIRE",
+      "conceptIds": [
+        "FIRE",
+        "FLAME",
+        "PASSION"
+      ]
+    },
+    {
+      "id": "L-MAF1EGU",
+      "conceptId": "TRAIN",
+      "conceptIds": [
+        "TRAIN"
+      ]
+    },
+    {
+      "id": "L-GUKHELH",
+      "conceptId": "HOPE",
+      "conceptIds": [
+        "HOPE",
+        "THOUGHT",
+        "PLAN"
+      ]
+    },
+    {
+      "id": "L-LHAGHUN",
+      "conceptId": "SEE",
+      "conceptIds": [
+        "SEE",
+        "LOVE"
+      ]
+    },
+    {
+      "id": "L-SHHE",
+      "conceptId": "HUNDRED",
+      "conceptIds": [
+        "HUNDRED",
+        "FAT",
+        "THREE_TIMES"
+      ]
+    },
+    {
+      "id": "L-SHCHY",
+      "conceptId": "THREE",
+      "conceptIds": [
+        "THREE",
+        "EDGE"
+      ]
+    },
+    {
+      "id": "L-SHYBLE",
+      "conceptId": "LIGHTNING",
+      "conceptIds": [
+        "LIGHTNING",
+        "DEITY"
+      ]
+    },
+    {
+      "id": "L-BGHE",
+      "conceptId": "EAGLE",
+      "conceptIds": [
+        "EAGLE",
+        "CHEST"
+      ]
+    },
+    {
+      "id": "L-VERIFIED-01561",
+      "conceptId": "SILK",
+      "conceptIds": [
+        "SILK",
+        "JANUARY"
+      ]
+    }
+  ],
+  "wfDanglingSamples": [
+    {
+      "wfId": "WF-ADAQE",
+      "dangling": [
+        "POULTRY"
+      ]
+    },
+    {
+      "wfId": "WF-ADE",
+      "dangling": [
+        "ABOUT",
+        "AILE"
+      ]
+    },
+    {
+      "wfId": "WF-ANA",
+      "dangling": [
+        "ABOUT"
+      ]
+    },
+    {
+      "wfId": "WF-AU",
+      "dangling": [
+        "TYPE_EXCLAMATION_DEFINITIONS_1_ALAS"
+      ]
+    },
+    {
+      "wfId": "WF-BEG",
+      "dangling": [
+        "ABOUT"
+      ]
+    },
+    {
+      "wfId": "WF-BEV",
+      "dangling": [
+        "ABOUT"
+      ]
+    },
+    {
+      "wfId": "WF-BG",
+      "dangling": [
+        "GIYIM"
+      ]
+    },
+    {
+      "wfId": "WF-BGHA",
+      "dangling": [
+        "ABOUT"
+      ]
+    },
+    {
+      "wfId": "WF-BLE",
+      "dangling": [
+        "ABOUT"
+      ]
+    },
+    {
+      "wfId": "WF-BZA",
+      "dangling": [
+        "MEETING_TIME"
+      ]
+    },
+    {
+      "wfId": "WF-BZH",
+      "dangling": [
+        "NEPEREH_CH_EXPERIENCE_A_BURNING_SENSATION",
+        "NEPEREH_CH_REL_CONJURE_SOMEONE_SMTH",
+        "NEPEREH_CH_ZAGOVARIVAT"
+      ]
+    },
+    {
+      "wfId": "WF-BZU",
+      "dangling": [
+        "BIRD_TYPE"
+      ]
+    },
+    {
+      "wfId": "WF-CHA",
+      "dangling": [
+        "ABOUT"
+      ]
+    },
+    {
+      "wfId": "WF-DEI",
+      "dangling": [
+        "FORCE_TO_STRAIN_EARS_TO_LISTEN_FORCE",
+        "NEPEREH_CH_LISTEN_TO_SMTH_INATTENTIVE"
+      ]
+    },
+    {
+      "wfId": "WF-DZHE",
+      "dangling": [
+        "CEVAP"
+      ]
+    },
+    {
+      "wfId": "WF-DZHE_1",
+      "dangling": [
+        "OYUNCAK"
+      ]
+    },
+    {
+      "wfId": "WF-ES",
+      "dangling": [
+        "ABOUT"
+      ]
+    },
+    {
+      "wfId": "WF-F",
+      "dangling": [
+        "ABOUT",
+        "C_ROTTEN_FROM_BELOW"
+      ]
+    },
+    {
+      "wfId": "WF-FIY",
+      "dangling": [
+        "RENKLER"
+      ]
+    },
+    {
+      "wfId": "WF-FO",
+      "dangling": [
+        "TYPE_OF_SKIN_DISEASE"
+      ]
+    },
+    {
+      "wfId": "WF-GHWALH",
+      "dangling": [
+        "ABOUT"
+      ]
+    },
+    {
+      "wfId": "WF-GU",
+      "dangling": [
+        "ABOUT",
+        "INTENT",
+        "MEMORY"
+      ]
+    },
+    {
+      "wfId": "WF-GYE",
+      "dangling": [
+        "ABOUT"
+      ]
+    },
+    {
+      "wfId": "WF-HAE",
+      "dangling": [
+        "HAYVANLAR",
+        "RITUELLER",
+        "XABZE"
+      ]
+    },
+    {
+      "wfId": "WF-IN",
+      "dangling": [
+        "ABOUT"
+      ]
+    },
+    {
+      "wfId": "WF-K",
+      "dangling": [
+        "NEPEREH_CH_ADHERE_TO_THE_SMTH",
+        "NEPEREH_CH_DIVORCE",
+        "NEPEREH_CH_EXFOLIATE",
+        "NEPEREH_CH_FISHERY_PRODUCTS",
+        "NEPEREH_CH_GROW",
+        "NEPEREH_CH_PIERCE",
+        "NEPEREH_CH_TURN_AROUND",
+        "NEPEREH_CH_WHICH_GROW_ALONGL",
+        "NEPEREH_GROW",
+        "PEREH_CH_POUR_IN_IN_SMTH_TO_SMB"
+      ]
+    },
+    {
+      "wfId": "WF-KHEK",
+      "dangling": [
+        "SOYUT"
+      ]
+    },
+    {
+      "wfId": "WF-KHU",
+      "dangling": [
+        "VADI"
+      ]
+    },
+    {
+      "wfId": "WF-KHUMEN",
+      "dangling": [
+        "ABOUT"
+      ]
+    },
+    {
+      "wfId": "WF-KHUZH",
+      "dangling": [
+        "RENKLER"
+      ]
+    }
+  ]
+}

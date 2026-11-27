@@ -1,0 +1,23 @@
+{
+  "generatedAt": "2026-11-27T14:15:05.985Z",
+  "lexemes": 41472,
+  "roots": 3670,
+  "wordFamilies": 7187,
+  "duplicateIds": 0,
+  "brokenRootRefs": 0,
+  "brokenWordFamilyRefs": 0,
+  "posEmpty": 0,
+  "fill": {
+    "wordFamilyEmpty": 3240,
+    "wordFamilyFillPct": 92.19,
+    "rootEmpty": 7063,
+    "rootFillPct": 82.97,
+    "arabicEmpty": 9049,
+    "arabicFillPct": 78.18,
+    "ipaEmpty": 829,
+    "conceptEmpty": 15,
+    "conceptFillPct": 99.96,
+    "withExamples": 30947,
+    "exampleCoveragePct": 74.62
+  }
+}

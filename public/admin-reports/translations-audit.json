@@ -1,0 +1,1101 @@
+{
+  "generatedAt": "2026-11-27T14:15:05.987Z",
+  "trCyrillic": 79,
+  "trArabic": 23,
+  "enCyrillic": 45,
+  "enArabic": 0,
+  "ruLatinWords": 220,
+  "trEnglishSuspect": 305,
+  "trEqualsEn": 382,
+  "trEmpty": 0,
+  "enEmpty": 0,
+  "arEmpty": 9049,
+  "ruEmpty": 0,
+  "samples": {
+    "trCyrillic": [
+      {
+        "id": "L-GUSHCHTE",
+        "value": "ürkek, korkak (гущтэ щӀын: ürkmek)"
+      },
+      {
+        "id": "L-KBD-05037",
+        "value": "kolay gelsin!, Allah kolaylık versin! (шхошх апщий)"
+      },
+      {
+        "id": "L-AUTO-00822",
+        "value": "ölümüne, bilincini kaybedene dek, kendinden geçercesine (лӀэрыӀулъэфу дэуэн: kendinden geçene kadar tartışmak; лӀэрыӀулъ"
+      },
+      {
+        "id": "L-BEUESHCHIE",
+        "value": "taziye, başsağlığı (бэуэщие кӀуэн: taziyeye gitmek)"
+      },
+      {
+        "id": "L-DZYGUEKHER",
+        "value": "sıçanlar ve fareler (мэцӀу: ciyaklar)"
+      },
+      {
+        "id": "L-KHEKHYGUE-38009",
+        "value": "çekirgegiller (мэцӀыр: cırlar, öter)"
+      },
+      {
+        "id": "L-KBDNEW-40976",
+        "value": "gözetim, ilgi, bakım (нэӀэ тедзэн: göz kulak olmak)"
+      },
+      {
+        "id": "L-APAZHEV-P1-004",
+        "value": "dağda bulunan, dağlık (бгырылъ мыл: buzul)"
+      },
+      {
+        "id": "L-APAZHEV-P1-005",
+        "value": "çıt, tık (быхъ жымыӀэн: çıt çıkarmamak, susmak)"
+      },
+      {
+        "id": "L-APAZHEV-P1-006",
+        "value": "bereketli olsun! (yün kırkıcılarına selam: бэвыщэ апщий!)"
+      },
+      {
+        "id": "L-APAZHEV-P1-007",
+        "value": "uzun ömürlü (бэгъащӀэ ухъу!: ömrün uzun olsun!)"
+      },
+      {
+        "id": "L-APAZHEV-P1-008",
+        "value": "iki öküz, çift öküz (витӀ аужь: ikişerli koşum)"
+      },
+      {
+        "id": "L-APAZHEV-P1-009",
+        "value": "gıcırdayan, ürpertici (гугъэкӀыщтэ макъ: gıcırtılı ses)"
+      },
+      {
+        "id": "L-APAZHEV-P1-016",
+        "value": "bereketli, mutlu, güneşli (дыгъэщыгъэ бын: mutlu kalabalık aile)"
+      },
+      {
+        "id": "L-APAZHEV-P1-017",
+        "value": "içeri koşturmak, tekrar içeri sokmak (дэлъэдэн ettirgeni)"
+      },
+      {
+        "id": "L-APAZHEV-P1-022",
+        "value": "büyütmek, yetiştirmek; yakıştırmak (екӀын ettirgeni)"
+      },
+      {
+        "id": "L-APAZHEV-P1-029",
+        "value": "bir varmış bir yokmuş (masal tekerlemesi: еуэрэ-еуэрэт)"
+      },
+      {
+        "id": "L-APAZHEV-P1-044",
+        "value": "kendine doğru çevirtmek (зыкъыпыгъэзэн ettirgeni)"
+      },
+      {
+        "id": "L-APAZHEV-P1-053",
+        "value": "altına/gölgeye sığındırmak (зыщӀэдзэн I ettirgeni)"
+      },
+      {
+        "id": "L-APAZHEV-P1-056",
+        "value": "çarpıştırmak, vurdurtmak (зэуэкӀын ettirgeni)"
+      },
+      {
+        "id": "L-APAZHEV-P1-058",
+        "value": "arka arkaya indirtmek (зэкӀэлъехын ettirgeni)"
+      },
+      {
+        "id": "L-APAZHEV-P1-067",
+        "value": "birbirinden ayırıp toplattırmak (зэлъыӀутхъун ettirgeni)"
+      },
+      {
+        "id": "L-APAZHEV-P2-001",
+        "value": "parçaları birbirine iyice oturtmak/uydurmak (зэпкърызэгъэн ettirgeni)"
+      },
+      {
+        "id": "L-APAZHEV-P2-006",
+        "value": "karşılaştırmak, denk getirmek (зэтехьэн ettirgeni)"
+      },
+      {
+        "id": "L-APAZHEV-P2-016",
+        "value": "buluşturmak, toplamak (зэӀущӀэн ettirgeni)"
+      },
+      {
+        "id": "L-APAZHEV-P2-020",
+        "value": "kama namlusunun ortasındaki oluk (къамэку жуд)"
+      },
+      {
+        "id": "L-APAZHEV-P2-021",
+        "value": "göstermek, görmesini sağlamak (къэлъагъун ettirgeni)"
+      },
+      {
+        "id": "L-APAZHEV-P2-022",
+        "value": "tekrar baktırmak (къеплъыжын ettirgeni)"
+      },
+      {
+        "id": "L-APAZHEV-P2-023",
+        "value": "baktırmak (къеплъын ettirgeni)"
+      },
+      {
+        "id": "L-APAZHEV-P2-024",
+        "value": "yanaştırmak, yaklaştırmak (къеуэлӀэн ettirgeni)"
+      },
+      {
+        "id": "L-APAZHEV-P2-025",
+        "value": "düşürmek, içinden düşürtmek (къихун II ettirgeni)"
+      },
+      {
+        "id": "L-APAZHEV-P2-027",
+        "value": "arkasından/köşeden baktırmak (къуэплъын ettirgeni)"
+      },
+      {
+        "id": "L-APAZHEV-P2-039",
+        "value": "ateşin hayırlı olsun! (ocak başında oturan kişiye selam: мафӀохъу апщий!)"
+      },
+      {
+        "id": "L-APAZHEV-P2-040",
+        "value": "çocuk tekerlemesinde geçen ünlem (мимэ щӀын: ağır ağır sürünmek)"
+      },
+      {
+        "id": "L-APAZHEV-P2-045",
+        "value": "içinden geçirtip yedirmek/kemirtmek (пхрышхыкӀын ettirgeni)"
+      },
+      {
+        "id": "L-APAZHEV-P2-051",
+        "value": "boynuna/üzerine attırmak (пщӀэхэдзэн ettirgeni)"
+      },
+      {
+        "id": "L-APAZHEV-P2-057",
+        "value": "gıcır gıcır, gıcırtı (скъыскъ макъ)"
+      },
+      {
+        "id": "L-APAZHEV-P2-068",
+        "value": "fes, kalpak (esk. başlık: фӀэс пыӀэ)"
+      },
+      {
+        "id": "L-APAZHEV-P3-015",
+        "value": "çatırtı, çıtırtı (dal, buz vb. kırılma sesi: цӀыч макъ)"
+      },
+      {
+        "id": "L-APAZHEV-P3-020",
+        "value": "sağım sırasında buzağıyı inekten uzaklaştırmak için kullanılan sopa (шкӀауэ баш)"
+      },
+      {
+        "id": "L-APAZHEV-P3-021",
+        "value": "görmezden gelme, dışlama (шугъунэ щӀын: hiçe saymak, önemsememek — esk.)"
+      },
+      {
+        "id": "L-APAZHEV-P3-022",
+        "value": "tek atlı (шызакъуэ Ӏэжьэ: tek atlı kızak)"
+      },
+      {
+        "id": "L-APAZHEV-P3-023",
+        "value": "çok kısa (шэмыгъапцӀэ жэщ: kısa yaz gecesi)"
+      },
+      {
+        "id": "L-APAZHEV-P3-026",
+        "value": "giysi ilik dikiminde kullanılan kemik veya boynuz biz (щхьэкъуэ дыд — esk.)"
+      },
+      {
+        "id": "L-APAZHEV-P3-029",
+        "value": "altından ısıtmak (щӀэхуэбэн ettirgeni)"
+      },
+      {
+        "id": "L-APAZHEV-P3-032",
+        "value": "hayır, yok (olumsuz cevap edatı = хьэуэ)"
+      },
+      {
+        "id": "L-APAZHEV-P3-035",
+        "value": "el üstü tutma çocuk oyunu (ӀэбэцӀыуэ щӀын)"
+      },
+      {
+        "id": "L-APAZHEV-P3-036",
+        "value": "beştaş / el üstü taş kapma oyunu (Kuban-Zelençuk: ӀэгуӀэщӀ джэгун)"
+      },
+      {
+        "id": "L-APAZHEV-P3-039",
+        "value": "el ile çalıştırılan (Ӏэрыгъадэ машинэ: el dikiş makinesi)"
+      },
+      {
+        "id": "L-APAZHEV-P3-043",
+        "value": "zorla, dayak zoruyla yaptırma (баштекъузэ щӀын)"
+      }
+    ],
+    "trArabic": [
+      {
+        "id": "L-KHEGHUEN",
+        "value": "ييبس في"
+      },
+      {
+        "id": "L-AZYFAGU",
+        "value": "بَيْن، بَيْن شيئين اثنين"
+      },
+      {
+        "id": "L-NEUZH-ADY",
+        "value": "بَعْد، فيما بعد"
+      },
+      {
+        "id": "L-GUPSHYSE",
+        "value": "فكرة، رأي"
+      },
+      {
+        "id": "L-NEPENCHE",
+        "value": "عار، شنار (صفة)، جالب العار"
+      },
+      {
+        "id": "L-GUADZ",
+        "value": "إضافة، ثانوي، ملحق، نائب، مساعد، وزير"
+      },
+      {
+        "id": "L-NEKEOKEOGHU",
+        "value": "منافس"
+      },
+      {
+        "id": "L-GHEGUBZHYN",
+        "value": "يُغضب"
+      },
+      {
+        "id": "L-NEUTX",
+        "value": "سريع الإدراك والبديهة، حاد الذهن/ الرحيق (عسل الزهور)"
+      },
+      {
+        "id": "L-MEGHY",
+        "value": "يبكي"
+      },
+      {
+        "id": "L-GUGHEUZ",
+        "value": "مؤلم، مفجع، محزن جداً، تراجيديا"
+      },
+      {
+        "id": "L-GHOLHYN",
+        "value": "يستلقي، يضطجع، يرقد"
+      },
+      {
+        "id": "L-NEPTS-Y",
+        "value": "مزيف، كاذب، مغشوش/ غير أصلي"
+      },
+      {
+        "id": "L-GURYGHE-ON",
+        "value": "يُفَّهِم، يشرح له، يُقَّرب من إدراكه، يفسر لـ"
+      },
+      {
+        "id": "L-GUSHCHY-AK",
+        "value": "كلمة محدثة، تعبير حديث"
+      },
+      {
+        "id": "L-VERIFIED-01359",
+        "value": "كآبة، كَمَد، حزن/ تشاؤم"
+      },
+      {
+        "id": "L-VERIFIED-01403",
+        "value": "يعثر على، يجد/ يُرزق بمولود"
+      },
+      {
+        "id": "L-VERIFIED-01404",
+        "value": "اهتمام، حماس، غيرة، تركيز"
+      },
+      {
+        "id": "L-VERIFIED-02493",
+        "value": "مسيء، جالب العار/ مهين، مشين"
+      },
+      {
+        "id": "L-VERIFIED-02521",
+        "value": "غضبان، زعلان"
+      },
+      {
+        "id": "L-KBD-05584",
+        "value": "صحيح/ غير مدقوق أو مجروش (للحبوب عادة)"
+      },
+      {
+        "id": "L-GUPYK",
+        "value": "كرم، سخاء، جود"
+      },
+      {
+        "id": "L-AUTO-01720",
+        "value": "صفاء القلب، نقاء السريرة"
+      }
+    ],
+    "enCyrillic": [
+      {
+        "id": "L-KBD-05037",
+        "value": "may God help you! (greeting: шхошх апщий)"
+      },
+      {
+        "id": "L-BEUESHCHIE",
+        "value": "condolence, sympathy (бэуэщие кӀуэн: to offer condolences)"
+      },
+      {
+        "id": "L-APAZHEV-P1-004",
+        "value": "mountain-lying (бгырылъ мыл: glacier)"
+      },
+      {
+        "id": "L-APAZHEV-P1-005",
+        "value": "not a peep (быхъ жымыӀэн: not utter a sound)"
+      },
+      {
+        "id": "L-APAZHEV-P1-006",
+        "value": "greeting to sheep shearers (бэвыщэ апщий!)"
+      },
+      {
+        "id": "L-APAZHEV-P1-007",
+        "value": "long-lived (бэгъащӀэ ухъу!: long life to you!)"
+      },
+      {
+        "id": "L-APAZHEV-P1-008",
+        "value": "pair of oxen (витӀ аужь: tandem ox-team)"
+      },
+      {
+        "id": "L-APAZHEV-P1-016",
+        "value": "blessed, happy (дыгъэщыгъэ бын: happy large family)"
+      },
+      {
+        "id": "L-APAZHEV-P1-017",
+        "value": "to make run in again (causative of дэлъэдэн)"
+      },
+      {
+        "id": "L-APAZHEV-P1-022",
+        "value": "causative of екӀын"
+      },
+      {
+        "id": "L-APAZHEV-P1-029",
+        "value": "once upon a time (folktale opening: еуэрэ-еуэрэт)"
+      },
+      {
+        "id": "L-APAZHEV-P1-044",
+        "value": "causative of зыкъыпыгъэзэн"
+      },
+      {
+        "id": "L-APAZHEV-P1-053",
+        "value": "causative of зыщӀэдзэн I"
+      },
+      {
+        "id": "L-APAZHEV-P1-056",
+        "value": "causative of зэуэкӀын"
+      },
+      {
+        "id": "L-APAZHEV-P1-058",
+        "value": "causative of зэкӀэлъехын"
+      },
+      {
+        "id": "L-APAZHEV-P1-067",
+        "value": "causative of зэлъыӀутхъун"
+      },
+      {
+        "id": "L-APAZHEV-P2-016",
+        "value": "to assemble, bring together (causative of зэӀущӀэн)"
+      },
+      {
+        "id": "L-APAZHEV-P2-021",
+        "value": "to show, make visible (causative of къэлъагъун)"
+      },
+      {
+        "id": "L-APAZHEV-P2-023",
+        "value": "to make look at (causative of къеплъын)"
+      },
+      {
+        "id": "L-APAZHEV-P2-040",
+        "value": "exclamation in a children's song (мимэ щӀын: to drag along)"
+      },
+      {
+        "id": "L-APAZHEV-P2-045",
+        "value": "causative of пхрышхыкӀын"
+      },
+      {
+        "id": "L-APAZHEV-P2-051",
+        "value": "causative of пщӀэхэдзэн"
+      },
+      {
+        "id": "L-APAZHEV-P2-057",
+        "value": "creak, squeak (скъыскъ макъ)"
+      },
+      {
+        "id": "L-APAZHEV-P2-068",
+        "value": "fez, cap (arch. headgear: фӀэс пыӀэ)"
+      },
+      {
+        "id": "L-APAZHEV-P3-021",
+        "value": "disregard, neglect (шугъунэ щӀын: to ignore, slight — arch.)"
+      },
+      {
+        "id": "L-APAZHEV-P3-022",
+        "value": "single-horse (шызакъуэ Ӏэжьэ: one-horse sleigh)"
+      },
+      {
+        "id": "L-APAZHEV-P3-023",
+        "value": "very short (шэмыгъапцӀэ жэщ: short summer night)"
+      },
+      {
+        "id": "L-APAZHEV-P3-029",
+        "value": "to warm from underneath (causative of щӀэхуэбэн)"
+      },
+      {
+        "id": "L-APAZHEV-P3-039",
+        "value": "hand-operated (Ӏэрыгъадэ машинэ: hand sewing machine)"
+      },
+      {
+        "id": "L-APAZHEV-P3-043",
+        "value": "coercion (баштекъузэ щӀын: force under duress)"
+      },
+      {
+        "id": "L-APAZHEV-P3-044",
+        "value": "sheaf-binding work (бганэщӀэдз кӀуэн)"
+      },
+      {
+        "id": "L-APAZHEV-P3-048",
+        "value": "male sparrow (бзуухъу кӀагуэ: plucked sparrow)"
+      },
+      {
+        "id": "L-APAZHEV-P3-050",
+        "value": "guest's greeting to the host (бысымфӀэхъу апщий!)"
+      },
+      {
+        "id": "L-APAZHEV-P3-051",
+        "value": "peace, respite, rest (бэяупӀэ емытын: give no rest)"
+      },
+      {
+        "id": "L-APAZHEV-P3-057",
+        "value": "pent-up anger, spite (гушыкъур гъэтӀысын: vent anger)"
+      },
+      {
+        "id": "L-APAZHEV-P3-066",
+        "value": "age of naivety/childhood (зи делэгъуэ: naive, immature)"
+      },
+      {
+        "id": "L-APAZHEV-P4-005",
+        "value": "as said by you (уи жыӀауэ)"
+      },
+      {
+        "id": "L-APAZHEV-P4-006",
+        "value": "to smithereens, to shatters (жьгъыб щӀын)"
+      },
+      {
+        "id": "L-APAZHEV-P4-019",
+        "value": "soporific, sleep-inducing (зыгъэжей хущхъуэ: sleeping pill)"
+      },
+      {
+        "id": "L-APAZHEV-P4-021",
+        "value": "upside down, in complete disorder (зыкӀзыщхьэ щӀын)"
+      },
+      {
+        "id": "L-APAZHEV-P4-026",
+        "value": "a single peep/sound (зыцӀутӀ жымыӀэн: keep mum)"
+      },
+      {
+        "id": "L-APAZHEV-P4-033",
+        "value": "cardinal (grammar: зэрабж бжыгъэцӀэ = cardinal numeral)"
+      },
+      {
+        "id": "L-APAZHEV-P4-034",
+        "value": "auditory, hearing (зэрыдаӀуэ аппарат: hearing aid)"
+      },
+      {
+        "id": "L-APAZHEV-P4-036",
+        "value": "reconciled, on good terms (зэфӀ хъужын: make up)"
+      },
+      {
+        "id": "L-APAZHEV-P4-039",
+        "value": "exceedingly, bursting (зэщыпкӀыу пшэр: very fat)"
+      }
+    ],
+    "enArabic": [],
+    "ruLatinWords": [
+      {
+        "id": "L-BZHEY",
+        "value": "бук восточный (Fadus orientalis Lipsky)"
+      },
+      {
+        "id": "L-ZY",
+        "value": "one, one (as a substantive); Один"
+      },
+      {
+        "id": "L-DESHXUEY",
+        "value": "дерево грецкого ореха (adyghe)"
+      },
+      {
+        "id": "L-GHASH1E",
+        "value": "жизнь, жизнь, период существования кого-л., образ, способ существования (людей); hayat; yasam; omur"
+      },
+      {
+        "id": "L-DUNEY",
+        "value": "world, universe, Earth, life, weather, ever, for goodness’ sake, on earth, in the world (as a particle reinforcing a sta"
+      },
+      {
+        "id": "L-ZYGUERYM",
+        "value": "зыгуэрым Type: pronoun Definitions:"
+      },
+      {
+        "id": "L-MAXUEM",
+        "value": "махуэм Type: adverb Definitions:"
+      },
+      {
+        "id": "L-XUEYUE",
+        "value": "хуейуэ Type: adjective Definitions: 1. сознательный это был сознательный выбор."
+      },
+      {
+        "id": "L-YUSYF",
+        "value": "ЮСЫФ YUSUF"
+      },
+      {
+        "id": "L-TEUXUA",
+        "value": "теухуа Type: preposition Definitions:"
+      },
+      {
+        "id": "L-NER",
+        "value": "нэр Type: noun Definitions:"
+      },
+      {
+        "id": "L-KHUNYGHE",
+        "value": "хъуныгъэ Type: noun Definitions:"
+      },
+      {
+        "id": "L-SHEY",
+        "value": "бот. чай ( Fhea s"
+      },
+      {
+        "id": "L-ZYFAER",
+        "value": "зыхуейр / зыфаер GEREKEN"
+      },
+      {
+        "id": "L-ZYXUEYR",
+        "value": "зыхуейр / зыфаер GEREKEN"
+      },
+      {
+        "id": "L-IREKHU",
+        "value": "~ апхуэдэу: all right, very well"
+      },
+      {
+        "id": "L-PSHCHEDDZHYZHYM",
+        "value": "пщэдджыжьым Type: phrase Definitions:"
+      },
+      {
+        "id": "L-MAXUEXER",
+        "value": "махуэхэр Type: noun Definitions:"
+      },
+      {
+        "id": "L-KUM",
+        "value": "кум Type: adverb Definitions:"
+      },
+      {
+        "id": "L-GHEUNEXUNYGHE",
+        "value": "гъэунэхуныгъэ Type: noun Definitions:"
+      },
+      {
+        "id": "L-UTYKUM",
+        "value": "утыкум Type: adverb Definitions:"
+      },
+      {
+        "id": "L-XEMYTU",
+        "value": "хэмытэу / хэмыту AYRICA"
+      },
+      {
+        "id": "L-NEGHESA",
+        "value": "нэгъэса Type: adjective Definitions:"
+      },
+      {
+        "id": "L-GHUNAPKEE",
+        "value": "граница; грань ; край; межа ; territory; boundary)"
+      },
+      {
+        "id": "L-TYAT-ADY",
+        "value": "тят / дядэ ты / адэ PEDER, BABA-MIZ"
+      },
+      {
+        "id": "L-KUEDYSHCHE",
+        "value": "куэдыщэ / бащэ FAZLA 3"
+      },
+      {
+        "id": "L-XUEPEZHU",
+        "value": "хуэпэжу Type: adverb Definitions: 1. верно"
+      },
+      {
+        "id": "L-SHCHYPSEUXER",
+        "value": "щыпсэухэр Type: adjective Definitions: 1. коренной"
+      },
+      {
+        "id": "L-YUNYS",
+        "value": "ЮНЫС YUNUS"
+      },
+      {
+        "id": "L-ZYXUEFASHCHE",
+        "value": "зыхуэфащэ Type: adjective Definitions:"
+      },
+      {
+        "id": "L-FAEME",
+        "value": "хуеймэ / фаемэ GEREK"
+      },
+      {
+        "id": "L-KEEMYKHUA",
+        "value": "къэмыхъуа Type: adjective Definitions:"
+      },
+      {
+        "id": "L-XUEYME",
+        "value": "хуеймэ / фаемэ GEREK"
+      },
+      {
+        "id": "L-KHYM",
+        "value": "хъым Type: interjection Definitions: 1. хм"
+      },
+      {
+        "id": "L-SHCHYGUGH",
+        "value": "щыгугъ Type: adjective Definitions:"
+      },
+      {
+        "id": "L-SHCHHEMYGHAZEU",
+        "value": "щхьэмыгъазэу Type: adverb Definitions: 1. смело"
+      },
+      {
+        "id": "L-GUZAVEU",
+        "value": "гузавэу Type: adverb Definitions: 1. тревожно"
+      },
+      {
+        "id": "L-APXUEDESHCH",
+        "value": "апхуэдэщ Type: pronoun Definitions:"
+      },
+      {
+        "id": "L-KEEGHEGUBZHYN",
+        "value": "c.f. къэгубжьын; 2. to make angry, enrage, anger, infuriate"
+      },
+      {
+        "id": "L-IZU-2",
+        "value": "изу Type: adverb Definitions:"
+      },
+      {
+        "id": "L-FEDER",
+        "value": "фэдэр / хуэдэр ехьщырыр / ещхьыр BEN"
+      },
+      {
+        "id": "L-EGUGHU",
+        "value": "егугъу Type: adjective Definitions:"
+      },
+      {
+        "id": "L-KHARBYZ",
+        "value": "бот. арбуз обыкновенный ( Citrulus vulgaris Schrad"
+      },
+      {
+        "id": "L-ZEGHEPESHCHYZHYNYGHE",
+        "value": "зэгъэпэщыжыныгъэ Type: adjective Definitions:"
+      },
+      {
+        "id": "L-LINE",
+        "value": "линэ Type: noun Definitions:"
+      },
+      {
+        "id": "L-EUENYGHE",
+        "value": "act. of еуэн"
+      },
+      {
+        "id": "L-GUPEM",
+        "value": "гупэм Type: preposition Definitions: 1. впереди"
+      },
+      {
+        "id": "L-SHCHYLH",
+        "value": "щылъ Type: noun Definitions:"
+      },
+      {
+        "id": "L-ZEMYGUPSYSA",
+        "value": "зэмыгупсыса Type: adjective Definitions:"
+      },
+      {
+        "id": "L-ZEXEZEXUEN",
+        "value": "зэхэзехуэн Type: noun Definitions:"
+      }
+    ],
+    "trEnglishSuspect": [
+      {
+        "id": "L-GHEUVYN",
+        "value": "inşa etmek, kurmak; sağlam dikmek, dikey koymak; noktalama işareti / not koymak; oyun sahnelemek; deney yapmak, düzenlem"
+      },
+      {
+        "id": "L-LHESH",
+        "value": "has"
+      },
+      {
+        "id": "L-PET",
+        "value": "even"
+      },
+      {
+        "id": "L-TELHHE",
+        "value": "like-minded person"
+      },
+      {
+        "id": "L-IGUGHU",
+        "value": "about"
+      },
+      {
+        "id": "L-ZYKEOMRE",
+        "value": "a long time."
+      },
+      {
+        "id": "L-PSYHE",
+        "value": "1. water-carrier; 2. on water, over water."
+      },
+      {
+        "id": "L-GOR-ADY",
+        "value": "indefinite someone"
+      },
+      {
+        "id": "L-MOBY",
+        "value": "that"
+      },
+      {
+        "id": "L-ZEGHELHEN",
+        "value": "to pleat"
+      },
+      {
+        "id": "L-ZERYSHCHYTAUE",
+        "value": "as before"
+      },
+      {
+        "id": "L-KEEUDYXYN",
+        "value": "to bring/knock down"
+      },
+      {
+        "id": "L-INYKUEEM",
+        "value": "indefinite someone"
+      },
+      {
+        "id": "L-MYBYDE",
+        "value": "not strong/solid/durable"
+      },
+      {
+        "id": "L-MOXER",
+        "value": "those"
+      },
+      {
+        "id": "L-BELDZHYLYUE",
+        "value": "clearly, lucidly; definitely; certainly, with certainty"
+      },
+      {
+        "id": "L-SHOFER",
+        "value": "şoför"
+      },
+      {
+        "id": "L-GHEUZH",
+        "value": "agric. after-grass, aftermath"
+      },
+      {
+        "id": "L-LEYMYGHEGHU",
+        "value": "vengeful (person)- person who does not forgive injustices"
+      },
+      {
+        "id": "L-KEYTEPKHUEN",
+        "value": "to spread"
+      },
+      {
+        "id": "L-PERYUENSHEU",
+        "value": "without hindrance, freely, without impediment."
+      },
+      {
+        "id": "L-ICHEZUUE",
+        "value": "in time"
+      },
+      {
+        "id": "L-I-EN",
+        "value": "have"
+      },
+      {
+        "id": "L-ISHCHHEK-E",
+        "value": "over"
+      },
+      {
+        "id": "L-GUVA-SHCH-EXAMI",
+        "value": "sooner or later, early or late, some time or other"
+      },
+      {
+        "id": "L-VERIFIED-00075",
+        "value": "collect. feed for bird"
+      },
+      {
+        "id": "L-VERIFIED-00378",
+        "value": "Hasır"
+      },
+      {
+        "id": "L-VERIFIED-00429",
+        "value": "large wattled depository for corn-cobs; grain storehouse"
+      },
+      {
+        "id": "L-VERIFIED-00453",
+        "value": "like-minded person"
+      },
+      {
+        "id": "L-VERIFIED-01038",
+        "value": "Hasır"
+      },
+      {
+        "id": "L-VERIFIED-01237",
+        "value": "to live together"
+      },
+      {
+        "id": "L-VERIFIED-01376",
+        "value": "hasırotu"
+      },
+      {
+        "id": "L-VERIFIED-01598",
+        "value": "building materials, timber for construction."
+      },
+      {
+        "id": "L-VERIFIED-01797",
+        "value": "to smoke"
+      },
+      {
+        "id": "L-KBD-00112",
+        "value": "yemin, and"
+      },
+      {
+        "id": "L-KBD-00148",
+        "value": "round stone for throwing"
+      },
+      {
+        "id": "L-KBD-00208",
+        "value": "name of an ancient weapon"
+      },
+      {
+        "id": "L-KBD-00289",
+        "value": "hasır çit ustası"
+      },
+      {
+        "id": "L-KBD-00290",
+        "value": "chastitse even"
+      },
+      {
+        "id": "L-KBD-00387",
+        "value": "dressing for bees"
+      },
+      {
+        "id": "L-KBD-00455",
+        "value": "dreams of children"
+      },
+      {
+        "id": "L-KBD-00458",
+        "value": "mother of many children"
+      },
+      {
+        "id": "L-KBD-00462",
+        "value": "fuss was about."
+      },
+      {
+        "id": "L-KBD-00491",
+        "value": "access to plowing"
+      },
+      {
+        "id": "L-KBD-00606",
+        "value": "a bed for a cradle"
+      },
+      {
+        "id": "L-KBD-00637",
+        "value": "to be jealous."
+      },
+      {
+        "id": "L-KBD-00665",
+        "value": "dry place"
+      },
+      {
+        "id": "L-KBD-00786",
+        "value": "confinement place"
+      },
+      {
+        "id": "L-KBD-00800",
+        "value": "causative to"
+      },
+      {
+        "id": "L-KBD-00804",
+        "value": "causative to"
+      }
+    ],
+    "trEqualsEn": [
+      {
+        "id": "L-PSYXUABE",
+        "value": "Pyatigorsk"
+      },
+      {
+        "id": "L-LAZHESHKHUE",
+        "value": "bela"
+      },
+      {
+        "id": "L-BGYUE",
+        "value": "heyelan"
+      },
+      {
+        "id": "L-ZYXUEYR",
+        "value": "gereken"
+      },
+      {
+        "id": "L-IORDAN",
+        "value": "jordan"
+      },
+      {
+        "id": "L-AMIN",
+        "value": "amen!"
+      },
+      {
+        "id": "L-THEMATE",
+        "value": "kodaman"
+      },
+      {
+        "id": "L-TERCH",
+        "value": "Terek"
+      },
+      {
+        "id": "L-ZESHCHH",
+        "value": "alike, similar"
+      },
+      {
+        "id": "L-GHEGHUN",
+        "value": "pardon"
+      },
+      {
+        "id": "L-GHERY",
+        "value": "tutsak"
+      },
+      {
+        "id": "L-REFORME",
+        "value": "reform"
+      },
+      {
+        "id": "L-DZHENCH",
+        "value": "Fasulye"
+      },
+      {
+        "id": "L-BAKHSEN",
+        "value": "Baksan"
+      },
+      {
+        "id": "L-BUKVE",
+        "value": "harf"
+      },
+      {
+        "id": "L-RETY",
+        "value": "vermek"
+      },
+      {
+        "id": "L-EVROPE",
+        "value": "Europe"
+      },
+      {
+        "id": "L-INDYL",
+        "value": "Volga"
+      },
+      {
+        "id": "L-TEORIE",
+        "value": "theory"
+      },
+      {
+        "id": "L-BALHKE",
+        "value": "Malka"
+      },
+      {
+        "id": "L-ZYXUENYKUEER",
+        "value": "gereken"
+      },
+      {
+        "id": "L-MYSHCHYU",
+        "value": "tuzsuz"
+      },
+      {
+        "id": "L-YAUBYDYN",
+        "value": "tutuklanmak"
+      },
+      {
+        "id": "L-ZEXAXYN",
+        "value": "duyulmak"
+      },
+      {
+        "id": "L-NEMYTS",
+        "value": "alman"
+      },
+      {
+        "id": "L-KEYZETEGHEUTSON",
+        "value": "duraklatmak"
+      },
+      {
+        "id": "L-IDEZHYN",
+        "value": "Yama"
+      },
+      {
+        "id": "L-IDASHCH",
+        "value": "razi"
+      },
+      {
+        "id": "L-ATOM",
+        "value": "atom"
+      },
+      {
+        "id": "L-KEEGHEKHU",
+        "value": "otlatmak"
+      },
+      {
+        "id": "L-ZEKEOSH",
+        "value": "ihvan"
+      },
+      {
+        "id": "L-DEGHUBA",
+        "value": "pek ala"
+      },
+      {
+        "id": "L-APSHCHI",
+        "value": "aman aman"
+      },
+      {
+        "id": "L-ZEK-UE",
+        "value": "trek"
+      },
+      {
+        "id": "L-EK-E",
+        "value": "manual"
+      },
+      {
+        "id": "L-MYK-ODYZH",
+        "value": "kalici"
+      },
+      {
+        "id": "L-ANE-ADY",
+        "value": "table"
+      },
+      {
+        "id": "L-THARY-O",
+        "value": "vow"
+      },
+      {
+        "id": "L-ZYK-EKHURER",
+        "value": "neden"
+      },
+      {
+        "id": "L-PSYFAL-E",
+        "value": "susamak"
+      },
+      {
+        "id": "L-AZE",
+        "value": "doctor"
+      },
+      {
+        "id": "L-DE-UEN",
+        "value": "listen"
+      },
+      {
+        "id": "L-UETEZH",
+        "value": "hikaye"
+      },
+      {
+        "id": "L-VERIFIED-00616",
+        "value": "akitmak"
+      },
+      {
+        "id": "L-VERIFIED-00817",
+        "value": "park"
+      },
+      {
+        "id": "L-VERIFIED-00835",
+        "value": "baron"
+      },
+      {
+        "id": "L-VERIFIED-00836",
+        "value": "osman-li"
+      },
+      {
+        "id": "L-VERIFIED-00883",
+        "value": "forgotten"
+      },
+      {
+        "id": "L-VERIFIED-00926",
+        "value": "talim etmek"
+      },
+      {
+        "id": "L-VERIFIED-00996",
+        "value": "Lena"
+      }
+    ]
+  }
+}

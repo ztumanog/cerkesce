@@ -1,0 +1,111 @@
+{
+  "generatedAt": "2026-11-27T14:15:05.986Z",
+  "rootIdMissing": 7063,
+  "rootIdsMissing": 7063,
+  "rootIdMissingWhenRootIdsPresent": 0,
+  "rootIdMismatch": 0,
+  "brokenRootRefs": 0,
+  "unusedRoots": 5,
+  "orphanRoots": [
+    {
+      "id": "R-SHCH1YP1E",
+      "form": "щӀыпӀэ",
+      "primaryMeaning": "yer, mekan, bölge"
+    },
+    {
+      "id": "R-UPCH1E",
+      "form": "упчӀэ",
+      "primaryMeaning": "soru"
+    },
+    {
+      "id": "R-PSHCH1AMP1",
+      "form": "пщіампіэ",
+      "primaryMeaning": "yaka"
+    },
+    {
+      "id": "R-TXYP",
+      "form": "тхып",
+      "primaryMeaning": "zirve"
+    },
+    {
+      "id": "кхъуей",
+      "form": "кхъуей",
+      "primaryMeaning": "Peynir"
+    }
+  ],
+  "unusedWordFamilies": 5,
+  "orphanWordFamilies": [
+    {
+      "id": "WF-DYZHYN_2",
+      "rootForm": null
+    },
+    {
+      "id": "WF-MURAD",
+      "rootForm": "мурад"
+    },
+    {
+      "id": "WF-SHCH1YP1E",
+      "rootForm": "щӀыпӀэ"
+    },
+    {
+      "id": "WF-UPCH1E",
+      "rootForm": "упчӀэ"
+    },
+    {
+      "id": "WF-КОU",
+      "rootForm": null
+    }
+  ],
+  "rootIdMissingSamples": [
+    "L-SHCHABZ",
+    "L-KALMYK",
+    "L-BLANE",
+    "L-CHYGAE",
+    "L-KUMBYL",
+    "L-MAMKUT",
+    "L-PYRAMYZH",
+    "L-XUOMU",
+    "L-T1YSYN",
+    "L-NAMYS",
+    "L-SHERDJES",
+    "L-ZEI",
+    "L-PACHYHE",
+    "L-SYDEU",
+    "L-VAKEE",
+    "L-MEREM",
+    "L-ZHURT",
+    "L-SETENEY",
+    "L-CHETEN",
+    "L-RAZE",
+    "L-KEAYMET",
+    "L-MAKEAME",
+    "L-SETEY",
+    "L-ZHGHEY",
+    "L-ZAGHORE",
+    "L-SEDAKEE",
+    "L-SHCHODZHEN",
+    "L-CHYE",
+    "L-ZEZYHE",
+    "L-TEMYR",
+    "L-BLAGHEU",
+    "L-REHATEU",
+    "L-KEARYUNCHE",
+    "L-CHYRBYSH",
+    "L-KEABYL",
+    "L-TOLHKUEN",
+    "L-IKUEN",
+    "L-SHCHIKH",
+    "L-SAUGHET",
+    "L-ZEHAN",
+    "L-BAKHE",
+    "L-YAZAKEOU",
+    "L-KEALHXUA",
+    "L-ARBA",
+    "L-PACHYH",
+    "L-ONTEGHU",
+    "L-MAXE",
+    "L-PCHE",
+    "L-REHAT",
+    "L-KEASHCHTA"
+  ]
+}

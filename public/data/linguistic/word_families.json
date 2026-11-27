@@ -29505,7 +29505,8 @@
       "corpusFrequency": 159
     },
     "rootForm": "шхуэ",
-    "rootId": "R-SHXUE"
+    "rootId": "R-SHXUE",
+    "note": "TEK KOK R-SHKHU, 4 AILE: Aile 1 uzda, Aile 2 büyük ev (bu aile), Aile 3 dede/nine, Aile 4 koskocaman. Aileler sonek, ayrı kök değil."
   },
   {
     "id": "WF-SHXW",
@@ -31935,7 +31936,7 @@
       "TURK"
     ],
     "morphemeIds": [],
-    "notes": "Otomatik onarıldı (lexemes.json referansı)",
+    "notes": "Aile 1: vermek (ты- vermek kökü). 2. ve 3. aile (durmak / üstünde) bu ailenin altında değil, ты- ön ekinin göründüğü başka kökler (R-T, R-SHCH, R-TETE). Karıştırma.",
     "_source": "word_families.json",
     "lexemeIds": [
       "L-TY",
@@ -171340,6 +171341,6 @@
       "corpusFrequency": 0
     },
     "rootForm": "",
-    "rootId": ""
+    "rootId": null
   }
 ]

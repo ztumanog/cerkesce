@@ -8103,10 +8103,10 @@
     ],
     "isLemma": true,
     "translations": {
-      "tr": "buyuk",
+      "tr": "büyük",
       "en": "big, large",
       "ru": "большой",
-      "ar": "كبير، ضخم، عظيم"
+      "ar": "كبير"
     },
     "rootIds": [
       "R-SHKHU",
@@ -8128,7 +8128,8 @@
         "ru": "большой",
         "ar": "كبير، ضخم، عظيم"
       }
-    ]
+    ],
+    "dialectNote": "KBD esas: шхуэ = büyük. TEK KOK 4 AILE: (1) uzda, (2) унэшхуэ = büyük ev, (3) адэ-шхуэ = dede, анэ-шхуэ = nine, (4) ины-шхуэ = koskocaman. Sonekler aile, ayrı kök değil."
   },
   {
     "id": "L-BDZE",
@@ -96811,9 +96812,9 @@
     ],
     "isLemma": true,
     "translations": {
-      "ru": "мужественный, храбрый",
-      "en": "courageous, brave, valiant, bold",
-      "tr": "haşin",
+      "tr": "cesur",
+      "en": "brave",
+      "ru": "храбрый",
       "ar": "شجاع"
     },
     "rootIds": [
@@ -96849,7 +96850,8 @@
     ],
     "posConflict": "fallback-noun",
     "posConflictRule": "fallback-noun",
-    "posConflictConfidence": "high"
+    "posConflictConfidence": "high",
+    "dialectNote": "YENI: хахуэ = cesur. TEK KOK TEK AILE: sıfat kökü, verimsiz, храбрый (s.728). NOT: ху 15 aileye girmez, ayrı kök. Haşin değil, cesur."
   },
   {
     "id": "L-ZEZYHE",
@@ -103477,7 +103479,7 @@
     "posConflict": "fallback-noun",
     "posConflictRule": "fallback-noun",
     "posConflictConfidence": "high",
-    "dialectNote": "KBD esas: ху = darı. NOT: ху aynı zamanda alfabe harfi adıdır, ayrı sense. Beyaz anlamı хужь'dedir, buraya karıştırma."
+    "dialectNote": "KBD esas: ху = darı. TEK KOK 15 AILE: (1) darı, (2) sürüngenler, (3) beyaz/gün/ışık, (4) sürmek/örmek/araştırmak, (5) yıkamak (saç), (6) versiyon -> хуэ-, (7) potansiyel -> хуэ-, (8) isim soneki -> -хуэ, (9) emanet/kredi/satın almak, (10-11) sonek -> -хуэ, (12) satın almak, (13) dinlenmek, (14) bağlaç -e kadar/her seferinde, (15) -ху-кIэ -> -ху. Kaynak: Morfem Sözlüğü, ху 1-15."
   },
   {
     "id": "L-TEUBYDEN",
@@ -204701,10 +204703,10 @@
       "rule": "root"
     },
     "translations": {
+      "tr": "Bağ, kiriş",
       "en": "tendon, sinew, ligament",
       "ru": "сухожилие",
-      "tr": "Bağ, kiriş",
-      "ar": "وتر (في الجسم)، عصب، رباط"
+      "ar": "وتر"
     },
     "dictionaryEvidence": [
       "sukunov-1998"
@@ -204732,7 +204734,8 @@
         "ru": "сухожилие",
         "ar": "وتر (في الجسم)، عصب، رباط"
       }
-    ]
+    ],
+    "dialectNote": "KBD esas: хуэ = kiriş/tendon. TEK KOK 18 AILE: (1) kiriş, (2) huş türü, (3) hızlı/yavaş, (4) solmak, (5) elemek/kepek, (6) sığmak/düşmek, (7) yapmak, (8) sürmek, (9) solmak/nemlenmek, (10) kalmak, (11) eğmek, (12) eşleşmek, (13) becerikli, (14) versiyon ön eki için/-e doğru, (15) potansiyel -ebilmek, (16) isim soneki artık/parça, (17) emanet/kredi, (18) ayrı/ayrılık. Kaynak: Morfem Sözlüğü, хуэ maddesi."
   },
   {
     "id": "L-MADE",
@@ -217318,7 +217321,8 @@
         "ru": "кислое молоко",
         "ar": "زبادي"
       }
-    ]
+    ],
+    "dialectNote": "KBD esas: шху = yoğurt. NOT: шхуэ (büyük) ile aynı kök değil, karıştırma."
   },
   {
     "id": "L-KUEEDZE",
@@ -218804,7 +218808,8 @@
         "ru": "судорога",
         "ar": "يقود"
       }
-    ]
+    ],
+    "dialectNote": "KBD esas: хуэш = kramp / kasılma. TEK KOK TEK AILE: судорога (s.463). NOT: ху / хуэ ailesine karıştırma."
   },
   {
     "id": "L-PEUBYDYN",
@@ -420403,7 +420408,8 @@
         "ru": "метелка проса / Ху щхьэмыж",
         "ar": "عُذق الدخن، سنبلة الدخن"
       }
-    ]
+    ],
+    "dialectNote": "KBD esas: хущхьэ- = esnemek / esneme. Kaynak: Morfem Sözlüğü, хущхьэ maddesi. Önceki yawn çevirisi doğru."
   },
   {
     "id": "L-VERIFIED-01828",
@@ -880044,7 +880050,8 @@
     ],
     "sources": [
       "Wiktionary (2023)"
-    ]
+    ],
+    "dialectNote": "KBD esas: ныху = koyunun düz bağırsağı / rektumu. Kaynak: Morfem Sözlüğü, ныху maddesi s.344. Önceki Rektom çevirisi doğru, değiştirme."
   },
   {
     "id": "L-NE-URYTYGHE",

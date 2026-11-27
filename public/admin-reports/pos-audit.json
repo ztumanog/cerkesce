@@ -1,0 +1,125 @@
+{
+  "generatedAt": "2026-11-27T14:15:05.988Z",
+  "posDistribution": {
+    "noun": 19237,
+    "verb": 15959,
+    "adj": 2632,
+    "num": 120,
+    "part": 91,
+    "propn": 441,
+    "pron": 71,
+    "adv": 1697,
+    "interj": 212,
+    "conj": 31,
+    "prefix": 40,
+    "adp": 39,
+    "symbol": 32,
+    "phrase": 870
+  },
+  "posEmpty": 0,
+  "invalidPos": 0,
+  "posMismatch": 0,
+  "formDuplicateGroups": 14,
+  "formDuplicateRecords": 29,
+  "duplicateGroups": [
+    {
+      "form": "нэф",
+      "ids": [
+        "L-NE-LIGHT",
+        "L-NE-BLIND-KBD"
+      ]
+    },
+    {
+      "form": "шэ",
+      "ids": [
+        "L-SHE",
+        "L-SHE-FAT-ADY"
+      ]
+    },
+    {
+      "form": "анэш",
+      "ids": [
+        "L-ANEKUESHH",
+        "L-ANESH-MATERNAL-KBD"
+      ]
+    },
+    {
+      "form": "бгъуэ",
+      "ids": [
+        "L-BGHUE",
+        "L-BGHUE-ADV",
+        "L-BGHUE-RAM"
+      ]
+    },
+    {
+      "form": "гу",
+      "ids": [
+        "L-GU",
+        "L-GU-LETTER"
+      ]
+    },
+    {
+      "form": "тыгъэ",
+      "ids": [
+        "L-TYGHE",
+        "L-TYGHE-SUN-ADY"
+      ]
+    },
+    {
+      "form": "уей",
+      "ids": [
+        "L-UEY",
+        "L-UEY-INTERJ"
+      ]
+    },
+    {
+      "form": "зэхэщэн",
+      "ids": [
+        "L-ZEXESHCHEN",
+        "L-ZEXESHCHEN-WEAVE-KBD"
+      ]
+    },
+    {
+      "form": "зэпыу",
+      "ids": [
+        "L-ZEPYU",
+        "L-ZEPU"
+      ]
+    },
+    {
+      "form": "нэӀэ",
+      "ids": [
+        "L-NE-E",
+        "L-KBDNEW-40976"
+      ]
+    },
+    {
+      "form": "жагъын",
+      "ids": [
+        "L-VERIFIED-01651",
+        "L-ZHAGHYN-ADJ"
+      ]
+    },
+    {
+      "form": "пкӀэ",
+      "ids": [
+        "L-ADY-PCHE",
+        "L-PK1E-ATTIC-KBD"
+      ]
+    },
+    {
+      "form": "э",
+      "ids": [
+        "L-E-2",
+        "L-E-LETTER"
+      ]
+    },
+    {
+      "form": "атӀэ",
+      "ids": [
+        "L-ATE-COMMON",
+        "L-ATE-CONJ"
+      ]
+    }
+  ]
+}

@@ -42387,7 +42387,8 @@
     ],
     "productivity": {
       "lemmaCount": 43
-    }
+    },
+    "note": "TEK KOK 4 AILE: шхуэ = büyük. Aile 1: isim kökü verimsiz, шхуэ = uzda/dizgin. Aile 2: sıfat kökü verimli, унэшхуэ = büyük ev. Aile 3: isim soneki verimli, адэ-шхуэ = dede, анэ-шхуэ = nine. Aile 4: biçim soneki büyütme, ины-шхуэ = koskocaman. Kaynak: Rusca morfoloji s.544, 621, 272."
   },
   {
     "id": "R-MAE",
@@ -54019,8 +54020,12 @@
     "id": "R-TY",
     "form": "ты",
     "ipa": "",
-    "primaryMeaning": "личный аффикс",
-    "secondaryMeanings": [],
+    "primaryMeaning": "vermek",
+    "secondaryMeanings": [
+      "hediye (mastar: verilen şey)",
+      "durmak (yer belirteci)",
+      "üstünde (yer belirteci)"
+    ],
     "semanticDomains": [
       "WOBBLY",
       "NOT",
@@ -54034,7 +54039,8 @@
       "L-PYTYP-E",
       "L-WIKT-KBD-32029",
       "L-WIKT-KBD-33287",
-      "L-WIKT-KBD-34561"
+      "L-WIKT-KBD-34561",
+      "L-TYGHE"
     ],
     "productivity": {
       "lexemeCount": 3,
