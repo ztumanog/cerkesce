@@ -11417,10 +11417,12 @@
       "L-KMOKSY-BIRD-018",
       "L-BRATOV-BIRD-047",
       "L-APAZHEV-G10-03",
-      "L-APAZHEV-XAB-29"
+      "L-APAZHEV-XAB-29",
+      "L-PERYK-YN",
+      "L-PERYK-EN"
     ],
     "productivity": {
-      "totalLexemes": 267,
+      "totalLexemes": 269,
       "corpusFrequency": 67
     },
     "rootForm": "кӀ",
@@ -14812,10 +14814,12 @@
       "L-APAZHEV-G8-07",
       "L-APAZHEV-G8-08",
       "L-APAZHEV-XAB-15",
-      "L-PEK-UEN"
+      "L-PEK-UEN",
+      "L-KHEKHYGUE-38019",
+      "L-PERYK-UE"
     ],
     "productivity": {
-      "totalLexemes": 185,
+      "totalLexemes": 187,
       "corpusFrequency": 950
     },
     "conceptIds": [
@@ -16708,10 +16712,11 @@
       "L-APAZHEV-G15-10",
       "L-APAZHEV-XAB-23",
       "L-APAZHEV-XAB-30",
-      "L-PEDELEZH"
+      "L-PEDELEZH",
+      "L-PERYGHELHYN"
     ],
     "productivity": {
-      "totalLexemes": 921,
+      "totalLexemes": 922,
       "corpusFrequency": 15255
     },
     "rootForm": "лъэ",
@@ -20949,8 +20954,6 @@
       "L-AUTO-00969",
       "L-AUTO-00971",
       "L-AUTO-00972",
-      "L-AUTO-00973",
-      "L-AUTO-00974",
       "L-AUTO-00975",
       "L-AUTO-00976",
       "L-AUTO-00977",
@@ -21118,7 +21121,6 @@
       "L-KBD-04097",
       "L-KBD-04098",
       "L-KBD-04100",
-      "L-KBD-04101",
       "L-KBD-04102",
       "L-KBD-04103",
       "L-KBD-04104",
@@ -21292,28 +21294,18 @@
       "L-PERY-EMBE",
       "L-PERY-YGHEN",
       "L-PERYDZEN",
-      "L-PERYDZYN",
-      "L-PERYGHELHYN",
       "L-PERYGHEUVEN",
       "L-PERYHEN",
-      "L-PERYK-EN",
-      "L-PERYK-UE",
-      "L-PERYK-YN",
       "L-PERYMBE",
       "L-PERYOKHU",
-      "L-PERYPSHCHHEN",
       "L-PERYSHCHETEN",
       "L-PERYSHE",
       "L-PERYSHYN",
       "L-PERYT",
-      "L-PERYT-YSHEN",
-      "L-PERYTEDZHYK-YN",
       "L-PERYTS-EFTYN",
-      "L-PERYTX",
       "L-PERYTYN",
       "L-PERYUEN",
       "L-PERYUENSHEU",
-      "L-PERYUEU",
       "L-PERYUVEN",
       "L-PERYXUEN",
       "L-PESERE",
@@ -21568,10 +21560,14 @@
       "L-HAKUNOV-PLANT-081",
       "L-HAKUNOV-PLANT-043",
       "L-PEMPEKHUL",
-      "L-PEPTS1ABZE"
+      "L-PEPTS1ABZE",
+      "L-WIKT-KBD-33782",
+      "L-PERYVE",
+      "L-PERYTEDZHAP1E",
+      "L-PERYTKHUPS"
     ],
     "productivity": {
-      "totalLexemes": 637,
+      "totalLexemes": 628,
       "corpusFrequency": 22250
     },
     "rootForm": "пэ",
@@ -31626,10 +31622,11 @@
       "L-TXYLHYMP-EDELH",
       "L-TXYLHYMP-EPS",
       "L-TXYLHYMP-EXEK",
-      "L-TXYLHYMP1EXER"
+      "L-TXYLHYMP1EXER",
+      "L-PERYTKHYLE"
     ],
     "productivity": {
-      "totalLexemes": 17,
+      "totalLexemes": 27,
       "corpusFrequency": 0
     },
     "conceptIds": [
@@ -45336,11 +45333,12 @@
       "L-APAZHEV-P2-024",
       "L-APAZHEV-P4-041",
       "L-APAZHEV-G10-13",
-      "L-APAZHEV-G11-06"
+      "L-APAZHEV-G11-06",
+      "L-PERYUEU"
     ],
     "notes": "içeri su vurmak ailesi (у).",
     "productivity": {
-      "totalLexemes": 142,
+      "totalLexemes": 143,
       "corpusFrequency": 124
     },
     "_source": "lexemes-sync-2026",
@@ -46079,11 +46077,12 @@
       "L-APAZHEV-G11-01",
       "L-APAZHEV-G11-03",
       "L-APAZHEV-G11-04",
-      "L-APAZHEV-G11-05"
+      "L-APAZHEV-G11-05",
+      "L-AUTO-00973"
     ],
     "notes": "KAZIMAK ailesi (т).",
     "productivity": {
-      "totalLexemes": 114,
+      "totalLexemes": 115,
       "corpusFrequency": 62
     },
     "_source": "lexemes-sync-2026",
@@ -50010,11 +50009,14 @@
       "L-ZYPESHCH-ESEN",
       "L-ZYXUEGHESEN",
       "L-ZYZEPESHCH-ESEN",
-      "L-MYGESA"
+      "L-MYGESA",
+      "L-WIKT-KBD-33802",
+      "L-KBD-04101",
+      "L-PERYT-YSHEN"
     ],
     "notes": "Oturmak ailesi (с).",
     "productivity": {
-      "totalLexemes": 53,
+      "totalLexemes": 150,
       "corpusFrequency": 121
     },
     "_source": "lexemes-sync-2026",
@@ -54839,11 +54841,12 @@
       "L-ZYSHCHYDZEIN",
       "L-ZYSHCHYDZYN",
       "L-ZYTEDZE",
-      "L-ZYZHEDEDZEN"
+      "L-ZYZHEDEDZEN",
+      "L-PERYDZYN"
     ],
     "notes": "ATMAK, ATMAK ailesi (дз).",
     "productivity": {
-      "totalLexemes": 229,
+      "totalLexemes": 230,
       "corpusFrequency": 38
     },
     "_source": "lexemes-sync-2026",
@@ -60107,11 +60110,12 @@
       "L-ZERYGHEPSHCHYN",
       "L-ZYGHEPSHCHYN",
       "L-ZYPSHCH",
-      "L-APAZHEV-G13-01"
+      "L-APAZHEV-G13-01",
+      "L-PERYPSHCHHEN"
     ],
     "notes": "ÇAKMAK ailesi (пщ).",
     "productivity": {
-      "totalLexemes": 105,
+      "totalLexemes": 106,
       "corpusFrequency": 0
     },
     "_source": "lexemes-sync-2026",
@@ -60194,11 +60198,12 @@
       "L-ZEXETXYK-YN",
       "L-ZEXUETXEN",
       "L-ZYKHUETKHEN",
-      "L-ZYXEGHETXEN"
+      "L-ZYXEGHETXEN",
+      "L-PERYTX"
     ],
     "notes": "Yazmak ailesi (тх).",
     "productivity": {
-      "totalLexemes": 24,
+      "totalLexemes": 58,
       "corpusFrequency": 0
     },
     "_source": "lexemes-sync-2026",
@@ -63597,11 +63602,12 @@
       "L-WIKT-KBD-35820",
       "L-WIKT-KBD-36346",
       "L-WIKT-KBD-36347",
-      "L-ZESHCH-ETEDZHEN"
+      "L-ZESHCH-ETEDZHEN",
+      "L-PERYTEDZHYK-YN"
     ],
     "notes": "AYAKLANMAK ailesi (тэдж).",
     "productivity": {
-      "totalLexemes": 7,
+      "totalLexemes": 13,
       "corpusFrequency": 11
     },
     "_source": "lexemes-sync-2026",
@@ -75099,11 +75105,13 @@
     "lexemeIds": [
       "L-ZYUZEDYN",
       "L-ZESHCH-EUZEDEN",
-      "L-WIKT-KBD-35341"
+      "L-WIKT-KBD-35341",
+      "L-PERUZED",
+      "L-AUTO-00974"
     ],
     "notes": "SILAHLANMAK ailesi (узэд).",
     "productivity": {
-      "totalLexemes": 2,
+      "totalLexemes": 5,
       "corpusFrequency": 0
     },
     "_source": "lexemes-sync-2026",
@@ -168948,7 +168956,8 @@
       "L-WIKT-KBD-37128",
       "L-YAKHEPSELYKHYN",
       "L-YAKHUEPSELEN",
-      "L-PEPSELHENYGHE"
+      "L-PEPSELHENYGHE",
+      "L-PERYPSALE"
     ]
   },
   {
