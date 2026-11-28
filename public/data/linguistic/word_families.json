@@ -11380,10 +11380,11 @@
       "L-KMOKSY-BIRD-016",
       "L-KMOKSY-BIRD-017",
       "L-KMOKSY-BIRD-018",
-      "L-BRATOV-BIRD-047"
+      "L-BRATOV-BIRD-047",
+      "L-APAZHEV-G10-03"
     ],
     "productivity": {
-      "totalLexemes": 99,
+      "totalLexemes": 266,
       "corpusFrequency": 67
     },
     "rootForm": "кӀ",
@@ -16955,10 +16956,11 @@
       "L-MYLYD",
       "L-LHYKUEEN",
       "L-WIKT-KBD-35475",
-      "L-APAZHEV-G8-19"
+      "L-APAZHEV-G8-19",
+      "L-APAZHEV-G10-14"
     ],
     "productivity": {
-      "totalLexemes": 25,
+      "totalLexemes": 26,
       "corpusFrequency": 232
     },
     "conceptIds": [
@@ -19192,10 +19194,11 @@
       "L-HAKUNOV-PLANT-006",
       "L-HAKUNOV-PLANT-058",
       "L-APAZHEV-P4-024",
-      "L-APAZHEV-G9-19"
+      "L-APAZHEV-G9-19",
+      "L-APAZHEV-G10-05"
     ],
     "productivity": {
-      "totalLexemes": 473,
+      "totalLexemes": 474,
       "corpusFrequency": 8019
     },
     "conceptIds": [
@@ -20463,10 +20466,13 @@
       "L-XEK-YP-ENSHE",
       "L-XEK-YP-ENSHEU",
       "L-ZYT-ESHCH-YP-E",
-      "L-APAZHEV-P2-055"
+      "L-APAZHEV-P2-055",
+      "L-APAZHEV-G10-09",
+      "L-APAZHEV-G10-10",
+      "L-APAZHEV-G10-11"
     ],
     "productivity": {
-      "totalLexemes": 137,
+      "totalLexemes": 184,
       "corpusFrequency": 6345
     },
     "rootForm": "пӀэ",
@@ -21505,10 +21511,13 @@
       "L-APAZHEV-P2-053",
       "L-APAZHEV-P3-047",
       "L-APAZHEV-G6-03",
-      "L-APAZHEV-G8-04"
+      "L-APAZHEV-G8-04",
+      "L-APAZHEV-G10-01",
+      "L-APAZHEV-G10-07",
+      "L-APAZHEV-G10-08"
     ],
     "productivity": {
-      "totalLexemes": 644,
+      "totalLexemes": 647,
       "corpusFrequency": 22250
     },
     "rootForm": "пэ",
@@ -23129,10 +23138,11 @@
       "L-KEGEPSHCHA",
       "L-PSHCHYNYN",
       "L-YAMYPSHCHYNA",
-      "L-KHEKHYGUE-37952"
+      "L-KHEKHYGUE-37952",
+      "L-APAZHEV-G10-02"
     ],
     "productivity": {
-      "totalLexemes": 96,
+      "totalLexemes": 115,
       "corpusFrequency": 1002
     },
     "conceptIds": [
@@ -23665,10 +23675,11 @@
       "L-KEYGUEP-YT-YK-YN",
       "L-URYP-YT-EN",
       "L-P-YT-A-XUZA",
-      "L-KYPYT"
+      "L-KYPYT",
+      "L-APAZHEV-G10-04"
     ],
     "productivity": {
-      "totalLexemes": 17,
+      "totalLexemes": 20,
       "corpusFrequency": 419
     },
     "rootForm": "пытэ",
@@ -41824,11 +41835,13 @@
     "id": "WF-T1AQUE",
     "notes": "t1aque - iki ailesi",
     "lexemeIds": [
-      "L-KBD-04201"
+      "L-KBD-04201",
+      "L-APAZHEV-G10-16",
+      "L-APAZHEV-G10-17"
     ],
     "_source": "grup-h-3a",
     "productivity": {
-      "totalLexemes": 1,
+      "totalLexemes": 3,
       "corpusFrequency": 0
     },
     "conceptIds": [
@@ -43024,11 +43037,12 @@
       "L-KBD-01816",
       "L-KBD-01819",
       "L-KBD-01820",
-      "L-KBD-01821"
+      "L-KBD-01821",
+      "L-APAZHEV-G10-06"
     ],
     "morphemeIds": [],
     "productivity": {
-      "totalLexemes": 10,
+      "totalLexemes": 11,
       "corpusFrequency": 0
     },
     "notes": "Faz 5 / Adım 5.3: önek ailesi",
@@ -45212,11 +45226,12 @@
       "L-APAZHEV-P1-056",
       "L-KBDNEW-40901",
       "L-APAZHEV-P2-024",
-      "L-APAZHEV-P4-041"
+      "L-APAZHEV-P4-041",
+      "L-APAZHEV-G10-13"
     ],
     "notes": "içeri su vurmak ailesi (у).",
     "productivity": {
-      "totalLexemes": 52,
+      "totalLexemes": 141,
       "corpusFrequency": 124
     },
     "_source": "lexemes-sync-2026",
@@ -71542,11 +71557,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-ASSYMYGHUE"
+      "L-ASSYMYGHUE",
+      "L-APAZHEV-G10-12"
     ],
     "notes": "elbette ailesi (ассымыгъу).",
     "productivity": {
-      "totalLexemes": 1,
+      "totalLexemes": 2,
       "corpusFrequency": 0
     },
     "_source": "lexemes-sync-2026",
@@ -168077,10 +168093,11 @@
     "notes": "турыхь koku ailesi.",
     "_source": "roots.json",
     "lexemeIds": [
-      "L-KBD-04383"
+      "L-KBD-04383",
+      "L-APAZHEV-G10-15"
     ],
     "productivity": {
-      "totalLexemes": 1,
+      "totalLexemes": 2,
       "corpusFrequency": 0
     },
     "rootForm": "турыхь",
