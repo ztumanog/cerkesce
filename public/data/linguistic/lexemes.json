@@ -1829878,5 +1829878,158 @@
       }
     },
     "notes": "Birleştirildi: L-ANEKUESHH (UNCLE/dayı) + L-ANESH-MATERNAL-KBD (FAMILY/anne tarafı) -> tek COMMON L-ANESH. Baş Mimar onayı 2026-11-28."
+  },
+  {
+    "id": "L-APAZHEV-G4-01",
+    "form": "зыпылдъэжын",
+    "literalMeaning": "хуейр / фаер İSTEYEN",
+    "partOfSpeech": "verb",
+    "corpusFrequency": 169,
+    "dialectVariants": {
+      "adyghe": "хуейр",
+      "kabardian": "хуейр"
+    },
+    "notes": "Corpus v1.0 (freq: 169, lang: kbd, source: 8.Ady-Tur_Huvaj)",
+    "isLemma": true,
+    "translations": {
+      "tr": "kendini asmak, asılmak",
+      "en": "to hang oneself",
+      "ru": "повеситься"
+    },
+    "rootIds": [
+      "R-SHY"
+    ],
+    "wordFamilyId": "WF-SHY",
+    "derivation": {
+      "rootIds": [
+        "R-SHY"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "ipa": "/xʷe:j/",
+    "root": "шы",
+    "etymologyType": "native",
+    "examples": [
+      "НахуапӀэ хъумэ ар, итӀанэ ЩӀэн хуейр мыращ: постамент пӀий Мо Дизыкъуажэ Мыст къигъанэу НэщӀ хъуам тырет мы Нурхьэлий.\n\n153 КЪЭРМОКЪУЭ  МУХЬЭМЭД ЦӀыхубэр нобэми мэхъуапсэ ИритхъунщӀэхыу гущхьэлъапсэр ФӀылъагъуныгъэм теухуауэ Зы тхыгъэжьыфӀ къеджэну."
+    ],
+    "meaning": "gereken",
+    "rootId": "R-SHY",
+    "dialect": "COMMON",
+    "legacyIds": [
+      "L-CORPUS-00244"
+    ],
+    "concept": "NEED",
+    "conceptId": "NEED",
+    "pos": "verb",
+    "senses": [
+      {
+        "tr": "kendini asmak, asılmak",
+        "en": "to hang oneself",
+        "ru": "повеситься"
+      }
+    ]
+  },
+  {
+    "id": "L-APAZHEV-G4-02",
+    "form": "зыщӀжэфын",
+    "literalMeaning": "хуейр / фаер İSTEYEN",
+    "partOfSpeech": "verb",
+    "corpusFrequency": 169,
+    "dialectVariants": {
+      "adyghe": "хуейр",
+      "kabardian": "хуейр"
+    },
+    "notes": "Corpus v1.0 (freq: 169, lang: kbd, source: 8.Ady-Tur_Huvaj)",
+    "isLemma": true,
+    "translations": {
+      "tr": "emmek, içine çekmek, emerek almak",
+      "en": "to absorb, to soak up",
+      "ru": "впитывать в себя"
+    },
+    "rootIds": [
+      "R-SHY"
+    ],
+    "wordFamilyId": "WF-SHY",
+    "derivation": {
+      "rootIds": [
+        "R-SHY"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "ipa": "/xʷe:j/",
+    "root": "шы",
+    "etymologyType": "native",
+    "examples": [
+      "НахуапӀэ хъумэ ар, итӀанэ ЩӀэн хуейр мыращ: постамент пӀий Мо Дизыкъуажэ Мыст къигъанэу НэщӀ хъуам тырет мы Нурхьэлий.\n\n153 КЪЭРМОКЪУЭ  МУХЬЭМЭД ЦӀыхубэр нобэми мэхъуапсэ ИритхъунщӀэхыу гущхьэлъапсэр ФӀылъагъуныгъэм теухуауэ Зы тхыгъэжьыфӀ къеджэну."
+    ],
+    "meaning": "gereken",
+    "rootId": "R-SHY",
+    "dialect": "COMMON",
+    "legacyIds": [
+      "L-CORPUS-00244"
+    ],
+    "concept": "NEED",
+    "conceptId": "NEED",
+    "pos": "verb",
+    "senses": [
+      {
+        "tr": "emmek, içine çekmek, emerek almak",
+        "en": "to absorb, to soak up",
+        "ru": "впитывать в себя"
+      }
+    ]
+  },
+  {
+    "id": "L-APAZHEV-G4-03",
+    "form": "зэдгъэдэдзэн",
+    "literalMeaning": "хуейр / фаер İSTEYEN",
+    "partOfSpeech": "verb",
+    "corpusFrequency": 169,
+    "dialectVariants": {
+      "adyghe": "хуейр",
+      "kabardian": "хуейр"
+    },
+    "notes": "Corpus v1.0 (freq: 169, lang: kbd, source: 8.Ady-Tur_Huvaj)",
+    "isLemma": true,
+    "translations": {
+      "tr": "bir yere yığmak, üst üste atmak",
+      "en": "to pile up in one place, to throw together",
+      "ru": "набросать в одно место"
+    },
+    "rootIds": [
+      "R-SHY"
+    ],
+    "wordFamilyId": "WF-SHY",
+    "derivation": {
+      "rootIds": [
+        "R-SHY"
+      ],
+      "morphemeIds": [],
+      "rule": "compound"
+    },
+    "ipa": "/xʷe:j/",
+    "root": "шы",
+    "etymologyType": "native",
+    "examples": [
+      "НахуапӀэ хъумэ ар, итӀанэ ЩӀэн хуейр мыращ: постамент пӀий Мо Дизыкъуажэ Мыст къигъанэу НэщӀ хъуам тырет мы Нурхьэлий.\n\n153 КЪЭРМОКЪУЭ  МУХЬЭМЭД ЦӀыхубэр нобэми мэхъуапсэ ИритхъунщӀэхыу гущхьэлъапсэр ФӀылъагъуныгъэм теухуауэ Зы тхыгъэжьыфӀ къеджэну."
+    ],
+    "meaning": "gereken",
+    "rootId": "R-SHY",
+    "dialect": "COMMON",
+    "legacyIds": [
+      "L-CORPUS-00244"
+    ],
+    "concept": "NEED",
+    "conceptId": "NEED",
+    "pos": "verb",
+    "senses": [
+      {
+        "tr": "bir yere yığmak, üst üste atmak",
+        "en": "to pile up in one place, to throw together",
+        "ru": "набросать в одно место"
+      }
+    ]
   }
 ]
