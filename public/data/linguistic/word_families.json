@@ -55033,11 +55033,12 @@
     "lexemeIds": [
       "L-VERIFIED-02223",
       "L-WIKT-KBD-33293",
-      "L-WIKT-KBD-37288"
+      "L-WIKT-KBD-37288",
+      "L-APAZHEV-G5-01"
     ],
     "notes": "сверлить что-л ailesi (убруу).",
     "productivity": {
-      "totalLexemes": 1,
+      "totalLexemes": 4,
       "corpusFrequency": 5
     },
     "_source": "lexemes-sync-2026",
@@ -171305,10 +171306,11 @@
     "notes": "WF-1E Paket 1 ayrıştırması ile oluşturuldu.",
     "_source": "wf-1e-paket1",
     "lexemeIds": [
-      "L-SHCHY-EIN"
+      "L-SHCHY-EIN",
+      "L-APAZHEV-G5-02"
     ],
     "productivity": {
-      "totalLexemes": 1,
+      "totalLexemes": 2,
       "corpusFrequency": 0
     },
     "rootForm": "щыӀэ",
