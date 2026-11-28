@@ -2905,10 +2905,11 @@
       "L-BGHUE-RAM",
       "L-APAZHEV-G12-26",
       "L-APAZHEV-G12-27",
-      "L-APAZHEV-XAB-18"
+      "L-APAZHEV-XAB-18",
+      "L-HAKUNOV-PLANT-180"
     ],
     "productivity": {
-      "totalLexemes": 139,
+      "totalLexemes": 140,
       "corpusFrequency": 4172
     },
     "conceptIds": [
@@ -18069,10 +18070,11 @@
       "L-MYSHE",
       "L-WIKT-KBD-29599",
       "L-HAKUNOV-PLANT-177",
-      "L-HAKUNOV-PLANT-178"
+      "L-HAKUNOV-PLANT-178",
+      "L-HAKUNOV-PLANT-179"
     ],
     "productivity": {
-      "totalLexemes": 12,
+      "totalLexemes": 13,
       "corpusFrequency": 94
     },
     "conceptIds": [
@@ -21806,10 +21808,17 @@
       "L-HAKUNOV-PLANT-024",
       "L-HAKUNOV-PLANT-044",
       "L-HAKUNOV-PLANT-054",
-      "L-APAZHEV-G9-33"
+      "L-APAZHEV-G9-33",
+      "L-HAKUNOV-PLANT-184",
+      "L-HAKUNOV-PLANT-185",
+      "L-HAKUNOV-PLANT-186",
+      "L-HAKUNOV-PLANT-187",
+      "L-HAKUNOV-PLANT-188",
+      "L-HAKUNOV-PLANT-189",
+      "L-HAKUNOV-PLANT-190"
     ],
     "productivity": {
-      "totalLexemes": 147,
+      "totalLexemes": 154,
       "corpusFrequency": 1357
     },
     "conceptIds": [
@@ -21952,10 +21961,12 @@
       "L-BRATOV-BIRD-065",
       "L-BRATOV-BIRD-066",
       "L-BRATOV-BIRD-067",
-      "L-BRATOV-BIRD-068"
+      "L-BRATOV-BIRD-068",
+      "L-HAKUNOV-PLANT-183",
+      "L-HAKUNOV-PLANT-191"
     ],
     "productivity": {
-      "totalLexemes": 52,
+      "totalLexemes": 58,
       "corpusFrequency": 362
     },
     "conceptIds": [
@@ -23574,10 +23585,11 @@
       "L-ZEMYGUPSYSA",
       "L-ZETEGHEPSYHAN",
       "L-BRATOV-BIRD-071",
-      "L-APAZHEV-G9-32"
+      "L-APAZHEV-G9-32",
+      "L-HAKUNOV-PLANT-181"
     ],
     "productivity": {
-      "totalLexemes": 263,
+      "totalLexemes": 264,
       "corpusFrequency": 18364
     },
     "rootForm": "псы",
@@ -33584,10 +33596,11 @@
     "lexemeIds": [
       "L-UTS",
       "L-WIKT-KBD-30241",
-      "L-HAKUNOV-PLANT-167"
+      "L-HAKUNOV-PLANT-167",
+      "L-HAKUNOV-PLANT-182"
     ],
     "productivity": {
-      "totalLexemes": 3,
+      "totalLexemes": 4,
       "corpusFrequency": 101
     },
     "rootForm": "уц",
