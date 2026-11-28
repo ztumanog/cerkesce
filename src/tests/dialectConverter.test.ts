@@ -74,3 +74,30 @@ describe("Cumle Seviyesi - kelime kelime", () => {
     expect(cevrilmis).toBe("Дэ дыкӀуэнщ махуэм");
   });
 });
+
+describe("щ/ш Ayrimi, Palochka (Ӏ/ӏ/I) ve Latin Korumasi", () => {
+  it("щ vs ш birlesmez, dogru donusur", () => {
+    expect(convertAdyToKbd("гупшыс")).toBe("гупсысэ");
+    expect(convertAdyToKbd("шъхьацы")).toBe("щхьэц");
+    expect(convertKbdToAdy("щхьэ")).toBe("шъхьэ");
+    expect(convertKbdToAdy("шэ")).toBe("щэ");
+    expect(convertKbdToAdy("щэ")).toBe("шъэ");
+  });
+
+  it("Palochka varyantlari (Ӏ U+04C0, ӏ U+04CF, Latin I, Ukraynaca І) tutarli donusur", () => {
+    expect(convertAdyToKbd("пкӀэ")).toBe("пщӀэ");
+    expect(convertAdyToKbd("пк\u04CFэ")).toBe("пщӏэ");
+    expect(convertAdyToKbd("пкIэ")).toBe("пщӀэ");
+    expect(convertAdyToKbd("пк\u0406э")).toBe("пщӀэ");
+    expect(convertKbdToAdy("щӀэтхэщ")).toBe("кӀэтых");
+    expect(convertKbdToAdy("щIэтхэщ")).toBe("кӀэтых");
+    expect(convertKbdToAdy("щ\u04CFэтхэщ")).toBe("кӏэтых");
+    expect(convertAdyToKbd("кIуэщт")).toBe("кӀуэнщ");
+  });
+
+  it("Saf Latin girdi Kiril palochka/harf kuralina takilmaz", () => {
+    expect(convertAdyToKbd("shhe")).toBe("shhe");
+    expect(convertKbdToAdy("shhe")).toBe("shhe");
+    expect(convertAdyToKbd("Ighe")).toBe("Ighe");
+  });
+});
