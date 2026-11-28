@@ -11829,7 +11829,9 @@
         "ar": "خال (أخ الأم)"
       }
     ],
-    "dialectNote": "COMMON kayda bağlandı: L-ANESH-MATERNAL-KBD. Silinmedi, mükerrer. Dialect de COMMON yapıldı, denetimde tekrar çıkmasın diye."
+    "dialectNote": "COMMON kayda bağlandı: L-ANESH-MATERNAL-KBD. Silinmedi, mükerrer. Dialect de COMMON yapıldı, denetimde tekrar çıkmasın diye.",
+    "lemmaStatus": "non-lemma",
+    "mergedInto": "L-ANESH"
   },
   {
     "id": "L-KHUMEN",
@@ -1829806,5 +1829808,74 @@
     ],
     "dialectNote": "ду II: ünlem. 1 kök 2 aile, WF-DU-2. ду I ambar ile karıştırma.",
     "meaning": "ünlem, 'du, su' sesi"
+  },
+  {
+    "id": "L-ANESH",
+    "form": "анэш",
+    "ipa": "/ɐ'nɐʂ/",
+    "literalMeaning": "dayı",
+    "dialect": "COMMON",
+    "pos": "noun",
+    "partOfSpeech": "noun",
+    "meaning": "dayı (annenin erkek kardeşi); anne tarafı, annenin baba ocağı ve ailesi",
+    "translations": {
+      "tr": "dayı (annenin erkek kardeşi); anne tarafı, annenin evi, anne akrabaları",
+      "en": "maternal uncle; one's mother's family or home; one's mother's relatives",
+      "ru": "дядя (по матери); семья, дом матери; родственники матери",
+      "ar": "خال (أخ الأم)؛ عائلة الأم، بيت الأم؛ أقارب الأم"
+    },
+    "senses": [
+      {
+        "tr": "dayı (annenin erkek kardeşi)",
+        "en": "maternal uncle",
+        "ru": "дядя по матери",
+        "ar": "خال (أخ الأم)"
+      },
+      {
+        "tr": "anne tarafı, annenin baba ocağı ve ailesi",
+        "en": "mother's family and household, maternal relatives",
+        "ru": "семья, дом матери; родственники матери",
+        "ar": "عائلة الأم، بيت الأم؛ أقارب الأم"
+      }
+    ],
+    "conceptId": "FAMILY",
+    "concept": "FAMILY",
+    "rootId": "R-ANE",
+    "rootIds": [
+      "R-ANE"
+    ],
+    "root": "анэ",
+    "wordFamilyId": "WF-ANE",
+    "etymologyType": "native",
+    "isLemma": true,
+    "lemmaStatus": "lemma",
+    "source": "Apazhev-Kokov 2008 (KBD); Akademik metin (2018)",
+    "dialectVariants": {
+      "adyghe": "анэш",
+      "kabardian": "анэш"
+    },
+    "dialectNote": "COMMON: анэш = 1) dayı, 2) anne tarafı. Her iki lehçede de aynı form, aynı anlam, aynı IPA. KBD'de dayı için анэ къуэш de kullanılır, eşanlamlı. DİKKAT: анэшхуэ = büyükanne, ayrı madde.",
+    "examples": [
+      "Анэшым шы уегъэшэс, адэшыр шы хьэху лъэIуэрейщ",
+      "Анэшрэ шывейрэ",
+      "Анэш шы хъуркъым",
+      "Хъуэжэ и анэшым бэджынэ хуащӀри кърагъэшхат."
+    ],
+    "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1e/%D0%90208%D0%B0%D0%BD%D1%8D%D1%88.ogg",
+    "corpusFrequencyAdy": 0,
+    "corpusFrequencyKbd": 444,
+    "corpusFrequency": 4,
+    "dictionaryEvidence": {
+      "sourceCount": 2,
+      "sources": [
+        "Akademik metin (2018)",
+        "Apazhev-Kokov 2008 (KBD)"
+      ],
+      "meanings": {
+        "tr": "dayı (anne kardeşi); anne tarafı",
+        "ru": "дядя (по матери); семья, дом матери"
+      }
+    },
+    "notes": "Birleştirildi: L-ANEKUESHH (UNCLE/dayı) + L-ANESH-MATERNAL-KBD (FAMILY/anne tarafı) -> tek COMMON L-ANESH. Baş Mimar onayı 2026-11-28."
   }
 ]
