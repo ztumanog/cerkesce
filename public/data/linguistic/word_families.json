@@ -8054,10 +8054,11 @@
     "lexemeIds": [
       "L-FOSHYGHULHE",
       "L-FOSH",
-      "L-KHEKHYGUE-37716"
+      "L-KHEKHYGUE-37716",
+      "L-HAKUNOV-PLANT-221"
     ],
     "productivity": {
-      "totalLexemes": 2,
+      "totalLexemes": 4,
       "corpusFrequency": 0
     },
     "conceptIds": [
@@ -28894,10 +28895,11 @@
       "L-APAZHEV-G14-01",
       "L-APAZHEV-G14-02",
       "L-APAZHEV-G15-14",
-      "L-APAZHEV-XAB-12"
+      "L-APAZHEV-XAB-12",
+      "L-HAKUNOV-PLANT-222"
     ],
     "productivity": {
-      "totalLexemes": 761,
+      "totalLexemes": 762,
       "corpusFrequency": 13114
     },
     "conceptIds": [
@@ -55971,11 +55973,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-VERIFIED-02636"
+      "L-VERIFIED-02636",
+      "L-HAKUNOV-PLANT-220"
     ],
     "notes": "каштан Пхъэшъхьэ-мышъхь <div style ailesi (шхъомч).",
     "productivity": {
-      "totalLexemes": 1,
+      "totalLexemes": 2,
       "corpusFrequency": 5
     },
     "_source": "lexemes-sync-2026",
