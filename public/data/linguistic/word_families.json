@@ -20950,7 +20950,6 @@
       "L-APEREU",
       "L-APEU",
       "L-AUTO-00098",
-      "L-AUTO-00211",
       "L-AUTO-00969",
       "L-AUTO-00971",
       "L-AUTO-00975",
@@ -21304,16 +21303,7 @@
       "L-PERYXUEN",
       "L-PESERE",
       "L-PESH",
-      "L-PESHCH-EDZEN",
-      "L-PESHCH-EGHUVEN",
-      "L-PESHCH-EK-UETYN",
-      "L-PESHCH-ESE",
-      "L-PESHCH-ET",
-      "L-PESHCH-ETU",
       "L-PESHCH-ETYN",
-      "L-PESHCH-ETYNYGHE",
-      "L-PESHCH-EUVEN",
-      "L-PESHCH-EUVENYGHE",
       "L-PESHCHMEN",
       "L-PESHCHXQYN",
       "L-PESHE",
@@ -21553,10 +21543,12 @@
       "L-PEKHUESHCH1E",
       "L-WIKT-KBD-30774",
       "L-WIKT-KBD-29417",
-      "L-PESHCH1NAT1E"
+      "L-PESHCH1NAT1E",
+      "L-KHEKHYGUE-37669",
+      "L-PESHCH1RU"
     ],
     "productivity": {
-      "totalLexemes": 617,
+      "totalLexemes": 609,
       "corpusFrequency": 22250
     },
     "rootForm": "пэ",
@@ -46069,11 +46061,15 @@
       "L-APAZHEV-G11-04",
       "L-APAZHEV-G11-05",
       "L-AUTO-00973",
-      "L-PESHCHYTYN"
+      "L-PESHCHYTYN",
+      "L-PESHCH-ET",
+      "L-PESHCH-ETU",
+      "L-AUTO-00211",
+      "L-PESHCH-ETYNYGHE"
     ],
     "notes": "KAZIMAK ailesi (т).",
     "productivity": {
-      "totalLexemes": 116,
+      "totalLexemes": 120,
       "corpusFrequency": 62
     },
     "_source": "lexemes-sync-2026",
@@ -50004,11 +50000,14 @@
       "L-WIKT-KBD-33802",
       "L-KBD-04101",
       "L-PERYT-YSHEN",
-      "L-PESHCHYSYN"
+      "L-PESHCHYSYN",
+      "L-WIKT-KBD-33821",
+      "L-WIKT-KBD-33839",
+      "L-PESHCH-ESE"
     ],
     "notes": "Oturmak ailesi (с).",
     "productivity": {
-      "totalLexemes": 151,
+      "totalLexemes": 154,
       "corpusFrequency": 121
     },
     "_source": "lexemes-sync-2026",
@@ -54835,11 +54834,12 @@
       "L-ZYSHCHYDZYN",
       "L-ZYTEDZE",
       "L-ZYZHEDEDZEN",
-      "L-PERYDZYN"
+      "L-PERYDZYN",
+      "L-PESHCH-EDZEN"
     ],
     "notes": "ATMAK, ATMAK ailesi (дз).",
     "productivity": {
-      "totalLexemes": 230,
+      "totalLexemes": 231,
       "corpusFrequency": 38
     },
     "_source": "lexemes-sync-2026",
@@ -59232,11 +59232,15 @@
       "L-ZESHCH-EUVEN",
       "L-ZEXEUVEN",
       "L-PEUVEN",
-      "L-PEUVYP1E"
+      "L-PEUVYP1E",
+      "L-PESHCH1EUV",
+      "L-PESHCH-EGHUVEN",
+      "L-PESHCH-EUVEN",
+      "L-PESHCH-EUVENYGHE"
     ],
     "notes": "BARIKAT ailesi (ув).",
     "productivity": {
-      "totalLexemes": 91,
+      "totalLexemes": 95,
       "corpusFrequency": 54
     },
     "_source": "lexemes-sync-2026",
@@ -63338,11 +63342,12 @@
       "L-ZEPY-UGHEK-UETYN",
       "L-ZEPYK-UETYN",
       "L-ZETEK-UETYN",
-      "L-ZYTEGHEK-UETYN"
+      "L-ZYTEGHEK-UETYN",
+      "L-PESHCH-EK-UETYN"
     ],
     "notes": "ARALAŞMAK ailesi (кӀуэт).",
     "productivity": {
-      "totalLexemes": 21,
+      "totalLexemes": 128,
       "corpusFrequency": 0
     },
     "_source": "lexemes-sync-2026",
