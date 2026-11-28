@@ -20,15 +20,30 @@ export const VERIFIED_PAIRS: readonly DialectPair[] = [
 export const PAIR_SOURCES: readonly string[] = ["Kod ici saf kural motoru"];
 
 /**
- * Palochka varyantlarını tek biçime getirir:
- * Latin i/I, Ukraynaca І (U+0406), ӏ (U+04CF) -> Ӏ (U+04C0)
+ * Kiril bağlamında Palochka varyantlarını (ӏ U+04CF, Ukraynaca І U+0406,
+ * ve Kiril kelimelerdeki Latin I) standart Palochka (Ӏ U+04C0) biçimine getirir.
+ * Saf Latin metinlere dokunmaz (Latin arama/girdi bozulmaz).
+ */
+function normalizeCyrillicPalochka(input: string): string {
+  const nfc = input.normalize("NFC");
+  if (!/[\u0400-\u04FF]/.test(nfc)) {
+    return nfc;
+  }
+  return nfc.replace(/[\u04CF\u0406]/g, PALOCHKA).replace(/I/g, PALOCHKA);
+}
+
+/**
+ * Lookup haritaları için normalizasyon anahtarı.
  */
 function normalizeKey(input: string): string {
-  return input
-    .normalize("NFC")
-    .trim()
+  const nfc = input.normalize("NFC").trim();
+  if (!/[\u0400-\u04FF]/.test(nfc)) {
+    return nfc.toLowerCase();
+  }
+  return nfc
+    .replace(/[iI\u0406\u04CF]/g, PALOCHKA)
     .toLowerCase()
-    .replace(/[iI\u0406\u04CF]/g, PALOCHKA);
+    .replace(/\u04CF/g, PALOCHKA);
 }
 
 export class DialectConverter {
@@ -65,11 +80,12 @@ export class DialectConverter {
 // ---------------------------------------------------------
 
 const EXACT: Record<string, string> = {
+  "зэхэшъэн": "зэхэщэн",
   "шъэф": "щэху", "нафэ": "нахуэ",
   "пкӏэ": "пщӏэ", "хьакъ": "хьэкъ",
   "нахь": "нэхъ", "анахь": "я нэхъ",
   "шэн": "хьэл",
-  "зэхэщэн": "зэхэшэн",
+  
   "гоӏун": "гуӏу", "псынжъ": "псыжь",
   "хэлъхьагъэу": "хэлъхьауэ", "хэлъхьау": "хэлъхьауэ", "хэлъхьан": "хэлъхьэн",
   "хэгущыӏыхьан": "хэпсэлъыхьын",
@@ -92,7 +108,7 @@ const EXACT: Record<string, string> = {
   "хыгучӏ": "хыгущӏ", "лыпцэ": "лыпцӏэ", "цэ": "дзэ",
   "мэлэкӏэн": "мэжэлӏэн", "пчъагъ": "бжыгъэ", "пкъыцэ": "хьэдзэ",
   "пӏэлъэгъурыщэф": "пӏалъэгъурыщэху",
-  "адыгэ": "апс", "къоеплъыжь": "кхъуейплъыжь", "мэтэкъуай": "матэкхъуей",
+   "къоеплъыжь": "кхъуейплъыжь", "мэтэкъуай": "матэкхъуей",
   "цӏэпапкӏ": "цӏэпапщӏэ", "фэгъэгъу": "хуэгъэгъу", "зэтедыен": "зэтедиен",
   "афэгъэгъун": "яхуэгъэгъун",
   "къо": "кхъуэ", "къухьэ": "кхъухь", "къухьэлъатэ": "кхъухьлъатэ",
@@ -107,21 +123,51 @@ const EXACT: Record<string, string> = {
   "лӏыкӏо": "лӏыкӏуэ", "тӏэсхъэчӏэх": "тӏасхъэщӏэх",
   "теуфагъ": "теухуа", "теуфагъэу": "теухуауэ",
   "къысфэжъугъэгъу": "къысхуэвгъэгъу",
-  "нэпсы": "нэпс", "машӀу": "мафӀэ", "машӀокушъо": "мафӀэгу", "хыкъо": "хыкхъуэ", "къошыгъэ": "къуэшыгъэ", "анэш": "анэ къуэш", "атэшыпхъу": "адэшыпхъу", "ӀэпыӀэгъу": "дэӀэпыкъуныгъэ", "Ӏэзэгъу": "хущхъуэ", "лъэмыдж": "лъэмыж", "къопэзад": "къуапэзадэ", "цый": "цей", "пкъыгъу": "пкъыгъуэ", "гузэвакӀуэ": "гузэвэгъуэ", "унэкӀуэцӀ": "унэщӀэлъ", "чъыгай": "жыгей", "кӀэтыу": "джэду", "мэхъу": "хъун", "кӀэ": "щӀэ"
+  "гупшыс": "гупсысэ",
+  "шъхьэгъус": "щхьэгъусэ",
+  "къухьэзеф": "кхъухьзехуэ",
+  "чъыгае": "жыгей",
+  "шъхьацы": "щхьэц",
+  "къухьэлъат": "кхъухьлъатэ",
+  "нэпсы": "нэпс", "машӀу": "мафӀэ", "машӀокушъо": "мафӀэгу", "хыкъо": "хыкхъуэ", "къошыгъэ": "къуэшыгъэ",  "атэшыпхъу": "адэшыпхъу", "ӀэпыӀэгъу": "дэӀэпыкъуныгъэ", "Ӏэзэгъу": "хущхъуэ", "лъэмыдж": "лъэмыж", "къопэзад": "къуапэзадэ", "цый": "цей", "пкъыгъу": "пкъыгъуэ", "гузэвакӀуэ": "гузэвэгъуэ", "унэкӀуэцӀ": "унэщӀэлъ", "чъыгай": "жыгей", "кӀэтыу": "джэду", "мэхъу": "хъун", "кӀэ": "щӀэ"
 };
 
-export function convertAdyToKbd(word: string): string {
-  let w = word.trim();
-  if (EXACT[w]) return EXACT[w];
-  // HIBRIT: once Huvaj lexicon (4865 cift), bulamazsa kural motoru
-  if (HUVAJ_ADY_TO_KBD[w]) return HUVAJ_ADY_TO_KBD[w];
-  if (EXACT[w.toLowerCase()]) { 
-    const v = EXACT[w.toLowerCase()]; 
-    return w[0] === w[0].toUpperCase() ? v[0].toUpperCase() + v.slice(1) : v; 
+const EXACT_NORM = new Map<string, string>();
+for (const [k, v] of Object.entries(EXACT)) {
+  const nk = normalizeKey(k);
+  if (!EXACT_NORM.has(nk)) EXACT_NORM.set(nk, v);
+}
+
+function matchPalochkaAndCase(original: string, target: string): string {
+  if (!original || !target) return target;
+  let out = original.includes("\u04CF") ? target : target.replace(/\u04CF/g, PALOCHKA);
+  const first = original[0];
+  if (first !== PALOCHKA && first === first.toUpperCase() && first !== first.toLowerCase()) {
+    out = out[0].toUpperCase() + out.slice(1);
   }
-  
-  // Palochka birlestirme (U+04CF -> U+04C0)
-  let c = w.replace(/\u04CF/g, "\u04C0");
+  return out;
+}
+
+export function convertAdyToKbd(word: string): string {
+  const w = word.trim();
+  if (!w) return w;
+
+  // HIBRIT: once birebir Huvaj lexicon (4865 cift), sonra EXACT
+  if (HUVAJ_ADY_TO_KBD[w]) return HUVAJ_ADY_TO_KBD[w];
+  if (EXACT[w]) return EXACT[w];
+
+  // Saf Latin metinler Kiril donusum ve palochka kuralina girmez
+  if (!/[\u0400-\u04FF]/.test(w)) return w;
+
+  // Palochka / buyuk-kucuk harf duyarli EXACT fallback (Huvaj varsa golgelemez)
+  const key = normalizeKey(w);
+  const exactHit = EXACT_NORM.get(key);
+  if (exactHit) {
+    return matchPalochkaAndCase(w, exactHit);
+  }
+
+  // Palochka birlestirme (ӏ U+04CF / І U+0406 / Kiril ici Latin I -> Ӏ U+04C0)
+  let c = normalizeCyrillicPalochka(w);
   
   // 1. KORUMALI MASKELER (Spesifik olanlar önce çalışmalı)
   c = c.replace(/ч[Ӏӏ]/g, "щӀ"); // чӏ -> щӏ (genel kural, kelime basi + ortasi)
@@ -151,13 +197,10 @@ export function convertAdyToKbd(word: string): string {
   c = c.replace(/шӀы/g, "___MASK_S1Y___");
   c = c.replace(/шӀ/g, "___MASK_S1___");
 
-  // HUVAJ: 3 guvenli kural (2026-11-10)
-  // 1) Kelime basi кӏ -> щӏ (30 degisen / 5 kalan, %86). Ortadaki кӏ karisik, genel yapilmaz.
-  c = c.replace(/^кӏ/g, "щӏ");
-  // 2) чъ -> ж (9 cift, or: чъэхын -> жэхын). Ters yon genel yapilmaz (KBD ж cogunlukla ж kalir).
+  // HUVAJ: guvenli kurallar (2026-11-10)
+  // 1) чъ -> ж (9 cift, or: чъэхын -> жэхын). Ters yon genel yapilmaz (KBD ж cogunlukla ж kalir).
   c = c.replace(/чъ/g, "ж");
-  // 3) шы -> щы (16 cift, or: ӏушы -> ӏущ, пшын -> пщын).
-  c = c.replace(/шы$/g, "щ"); // HUVAJ: kelime sonu шы -> щ (or: ӏушы -> ӏущ)
+  // 2) шы -> щы (16 cift, or: ӏушы -> ӏущ, пшын -> пщын).
   c = c.replace(/шы$/g, "щ"); // HUVAJ: kelime sonu шы -> щ (or: ӏушы -> ӏущ)
   c = c.replace(/шы/g, "щы"); // HUVAJ: ortadaki шы -> щы (or: пшын -> пщын)
 
@@ -187,7 +230,6 @@ export function convertAdyToKbd(word: string): string {
   c = c.replace(/дз/g, "з"); 
   c = c.replace(/мд/g, "нд"); 
   c = c.replace(/ао/g, "эу"); 
-  c = c.replace(/чъ/g, "ж"); 
   c = c.replace(/жъ/g, "жь");
 
   // 4. MASKELERİ ÇÖZ
@@ -211,9 +253,8 @@ export function convertAdyToKbd(word: string): string {
   return c;
 }
 
-export function convertKbdToAdy(word: string): string {
-  let w = word.trim();
-  const REV: Record<string, string> = { "уэ": "о", "дэ": "тэ", "фэ": "шъо", "вы": "цу", "фӀы": "шӀуэ", "мафӀэ": "машӀо", "фы": "шы",
+const REV: Record<string, string> = {
+  "зэхэщэн": "зэхэшъэн", "уэ": "о", "дэ": "тэ", "фэ": "шъо", "вы": "цу", "фӀы": "шӀуэ", "мафӀэ": "машӀо", "фы": "шы",
   "андез": "амдэз", "абэдзэхэ": "абдзах",
   "хьэулей": "хьаолый", "тепщхьэн": "тецохъон", "егъэлей": "егъэлые",
   "егъэлеин": "егъэлыен", "къэуфэрэзыхь": "къэушъорэзыхь",
@@ -223,7 +264,7 @@ export function convertKbdToAdy(word: string): string {
   "мэжэлӏэн": "мэлэкӏэн", "бжыгъэ": "пчъагъ", "хьэдзэ": "пкъыцэ",
   "пӏалъэгъурыщэху": "пӏэлъэгъурыщэф", "жыг": "чъыгы", "гъуэ": "гъо", "куэ": "ко", "мэл": "мэлы",
   "гущӀэгъу": "гукӀэгъу",  "щхьэшэ": "шъхьащэ",
-  "нэф": "нэшъу", "гуфӀэ": "гушӀо", "хужь": "фыжьы", "апс": "адыгэ", "кхъуейплъыжь": "къоеплъыжь", "матэкхъуей": "мэтэкъуай",
+  "нэф": "нэшъу", "гуфӀэ": "гушӀо", "хужь": "фыжьы",  "кхъуейплъыжь": "къоеплъыжь", "матэкхъуей": "мэтэкъуай",
   "цӏэпапщӏэ": "цӏэпапкӏ", "хуэгъэгъу": "фэгъэгъу", "зэтедиен": "зэтедыен",
   "яхуэгъэгъун": "афэгъэгъун",
   "кхъуэ": "къо", "кхъухь": "къухьэ", 
@@ -239,14 +280,34 @@ export function convertKbdToAdy(word: string): string {
   "лӏыкӏуэ": "лӏыкӏо", "тӏасхъэщӏэх": "тӏэсхъэчӏэх",
   "теухуа": "теуфагъ", "теухуауэ": "теуфагъэу",
   "къысхуэвгъэгъу": "къысфэжъугъэгъу",
-  "нэпс": "нэпсы", "щхьэхуитыныгъэ": "шъхьэхуитыныгъэ", "щӀэфыкӀын": "щӀэшъукӀын", "ӀуфыкӀын": "ӀушъукӀын", "щӀэ": "кӀэ", "хыкхъуэ": "хыкъо", "мафӀэгу": "машӀокушъо", "къуэшыгъэ": "къошыгъэ", "адэ къуэш": "ятэш", "дэӀэпыкъуныгъэ": "ӀэпыӀэгъу", "лъэмыж": "лъэмыдж", "лъэныкъуэ": "лъэныкъо", "къуапэзадэ": "къопэзад", "анэ къуэш": "анэш", "цыгъуэ": "цыгъо", "унэщӀэлъ": "унэкӀуэцӀ"
-  };
-  if (REV[w]) return REV[w];
-  // HIBRIT: once Huvaj lexicon (ters yon)
+  "нэпс": "нэпсы", "щхьэхуитыныгъэ": "шъхьэхуитыныгъэ", "щӀэфыкӀын": "щӀэшъукӀын", "ӀуфыкӀын": "ӀушъукӀын", "щӀэ": "кӀэ", "хыкхъуэ": "хыкъо", "мафӀэгу": "машӀокушъо", "къуэшыгъэ": "къошыгъэ", "адэ къуэш": "ятэш", "дэӀэпыкъуныгъэ": "ӀэпыӀэгъу", "лъэмыж": "лъэмыдж", "лъэныкъуэ": "лъэныкъо", "къуапэзадэ": "къопэзад",  "цыгъуэ": "цыгъо", "унэщӀэлъ": "унэкӀуэцӀ"
+};
+
+const REV_NORM = new Map<string, string>();
+for (const [k, v] of Object.entries(REV)) {
+  const nk = normalizeKey(k);
+  if (!REV_NORM.has(nk)) REV_NORM.set(nk, v);
+}
+
+export function convertKbdToAdy(word: string): string {
+  const w = word.trim();
+  if (!w) return w;
+
+  // HIBRIT: once birebir Huvaj lexicon (ters yon), sonra REV
   if (HUVAJ_KBD_TO_ADY[w]) return HUVAJ_KBD_TO_ADY[w];
-  
-  // Palochka birlestirme (U+04CF -> U+04C0)
-  let c = w.replace(/\u04CF/g, "\u04C0");
+  if (REV[w]) return REV[w];
+
+  // Saf Latin metinler Kiril donusum ve palochka kuralina girmez
+  if (!/[\u0400-\u04FF]/.test(w)) return w;
+
+  const key = normalizeKey(w);
+  const revHit = REV_NORM.get(key);
+  if (revHit) {
+    return matchPalochkaAndCase(w, revHit);
+  }
+
+  // Palochka birlestirme (ӏ U+04CF / І U+0406 / Kiril ici Latin I -> Ӏ U+04C0)
+  let c = normalizeCyrillicPalochka(w);
   c = c.replace(/къэу/g, "___MASK_QEU___"); // къэу iki lehcede ayni, эу->ао bozmasin
   c = c.replace(/эу/g, "ао");
   c = c.replace(/нд/g, "мд");
@@ -280,8 +341,6 @@ export function convertKbdToAdy(word: string): string {
   c = c.replace(/^ды/g, "ты");
   c = c.replace(/___MASK_QEU___/g, "къэу"); // maskeyi ac
   c = c.replace(/^фэ/g, "шъо");
-  c = c.replace(/___MASK_HUI___/g, "хуи");
-  c = c.replace(/___MASK_HUI___/g, "хуи");
   
   return c;
 }
