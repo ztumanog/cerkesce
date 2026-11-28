@@ -14811,10 +14811,11 @@
       "L-APAZHEV-G8-06",
       "L-APAZHEV-G8-07",
       "L-APAZHEV-G8-08",
-      "L-APAZHEV-XAB-15"
+      "L-APAZHEV-XAB-15",
+      "L-PEK-UEN"
     ],
     "productivity": {
-      "totalLexemes": 184,
+      "totalLexemes": 185,
       "corpusFrequency": 950
     },
     "conceptIds": [
@@ -20946,7 +20947,6 @@
       "L-AUTO-00098",
       "L-AUTO-00211",
       "L-AUTO-00969",
-      "L-AUTO-00970",
       "L-AUTO-00971",
       "L-AUTO-00972",
       "L-AUTO-00973",
@@ -21263,9 +21263,7 @@
       "L-PEGUNYKUE",
       "L-PEIUE",
       "L-PEK-E",
-      "L-PEK-ETS-YN",
       "L-PEK-U",
-      "L-PEK-UEN",
       "L-PEK-YH",
       "L-PEKHU",
       "L-PEKUE",
@@ -21273,14 +21271,10 @@
       "L-PEKUKU",
       "L-PEKURSH",
       "L-PELHAUE",
-      "L-PELHESHCH",
       "L-PELHESHCHYN",
-      "L-PELHESHCHYP-ENSHE",
-      "L-PELHXUE",
       "L-PELHYTEU",
       "L-PELYD",
       "L-PEMADE",
-      "L-PEMENYGHE",
       "L-PEMYK",
       "L-PEMYZHYZHEU",
       "L-PENE",
@@ -21290,8 +21284,6 @@
       "L-PEPLEN",
       "L-PEPLH",
       "L-PEPLHEU",
-      "L-PEPS",
-      "L-PEPSELHENYGHE",
       "L-PEPSELHEZHYN",
       "L-PEPSHCHEN",
       "L-PERIY",
@@ -21572,10 +21564,14 @@
       "L-APAZHEV-G10-01",
       "L-APAZHEV-G10-07",
       "L-APAZHEV-G10-08",
-      "L-APAZHEV-XAB-36"
+      "L-APAZHEV-XAB-36",
+      "L-HAKUNOV-PLANT-081",
+      "L-HAKUNOV-PLANT-043",
+      "L-PEMPEKHUL",
+      "L-PEPTS1ABZE"
     ],
     "productivity": {
-      "totalLexemes": 642,
+      "totalLexemes": 637,
       "corpusFrequency": 22250
     },
     "rootForm": "пэ",
@@ -36873,10 +36869,11 @@
       "L-APAZHEV-P1-032",
       "L-KBDNEW-40932",
       "L-APAZHEV-P4-004",
-      "L-APAZHEV-P4-005"
+      "L-APAZHEV-P4-005",
+      "L-AUTO-00970"
     ],
     "productivity": {
-      "totalLexemes": 20,
+      "totalLexemes": 28,
       "corpusFrequency": 106
     },
     "conceptIds": [
@@ -59901,11 +59898,12 @@
       "L-WIKT-KBD-36314",
       "L-WIKT-KBD-36416",
       "L-WIKT-KBD-37156",
-      "L-ZERYLHXUZERYP"
+      "L-ZERYLHXUZERYP",
+      "L-PELHXUE"
     ],
     "notes": "doğmak ailesi (лъху).",
     "productivity": {
-      "totalLexemes": 18,
+      "totalLexemes": 38,
       "corpusFrequency": 0
     },
     "_source": "lexemes-sync-2026",
@@ -64305,11 +64303,12 @@
       "L-WIKT-KBD-36562",
       "L-WIKT-KBD-36795",
       "L-WIKT-KBD-37269",
-      "L-XEPSEN"
+      "L-XEPSEN",
+      "L-PEPS"
     ],
     "notes": "ışıldamak ailesi (пс).",
     "productivity": {
-      "totalLexemes": 14,
+      "totalLexemes": 52,
       "corpusFrequency": 0
     },
     "_source": "lexemes-sync-2026",
@@ -64668,11 +64667,12 @@
       "L-ZYLESHCH1",
       "L-ZYLHESHCH-YN",
       "L-ZYTELHESHCH-YHYN",
-      "L-ZYZEPYLHESHCH-YHYN"
+      "L-ZYZEPYLHESHCH-YHYN",
+      "L-PELHESHCH"
     ],
     "notes": "Silmek ailesi (лъэщӀ).",
     "productivity": {
-      "totalLexemes": 23,
+      "totalLexemes": 45,
       "corpusFrequency": 0
     },
     "_source": "lexemes-sync-2026",
@@ -67714,11 +67714,12 @@
     "lexemeIds": [
       "L-K-ETS-ALHE",
       "L-K-ETS-YN",
-      "L-WIKT-KBD-35845"
+      "L-WIKT-KBD-35845",
+      "L-PEK-ETS-YN"
     ],
     "notes": "Yuva ailesi (кӀэцӀ).",
     "productivity": {
-      "totalLexemes": 2,
+      "totalLexemes": 4,
       "corpusFrequency": 0
     },
     "_source": "lexemes-sync-2026",
@@ -84342,11 +84343,12 @@
       "L-WIKT-KBD-33493",
       "L-WIKT-KBD-35855",
       "L-WIKT-KBD-35995",
-      "L-ZEPEMYN"
+      "L-ZEPEMYN",
+      "L-PEMENYGHE"
     ],
     "notes": "KOKLAMAK ailesi (пэм).",
     "productivity": {
-      "totalLexemes": 3,
+      "totalLexemes": 10,
       "corpusFrequency": 0
     },
     "_source": "lexemes-sync-2026",
@@ -166197,7 +166199,8 @@
       "L-APAZHEV-G11-24",
       "L-APAZHEV-G12-01",
       "L-APAZHEV-G12-02",
-      "L-APAZHEV-G12-28"
+      "L-APAZHEV-G12-28",
+      "L-PEMYKHUN"
     ],
     "conceptIds": [
       "CONTENT",
@@ -168944,7 +168947,8 @@
       "L-WIKT-KBD-36461",
       "L-WIKT-KBD-37128",
       "L-YAKHEPSELYKHYN",
-      "L-YAKHUEPSELEN"
+      "L-YAKHUEPSELEN",
+      "L-PEPSELHENYGHE"
     ]
   },
   {
@@ -169567,7 +169571,8 @@
       "L-WIKT-KBD-32697",
       "L-WIKT-KBD-32798",
       "L-WIKT-KBD-33768",
-      "L-WIKT-KBD-36091"
+      "L-WIKT-KBD-36091",
+      "L-PELHESHCHYP-ENSHE"
     ]
   },
   {
