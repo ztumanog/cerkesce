@@ -36838,10 +36838,11 @@
       "L-BRATOV-BIRD-037",
       "L-BRATOV-BIRD-038",
       "L-HAKUNOV-PLANT-132",
-      "L-HAKUNOV-PLANT-198"
+      "L-HAKUNOV-PLANT-198",
+      "L-HAKUNOV-PLANT-216"
     ],
     "productivity": {
-      "totalLexemes": 51,
+      "totalLexemes": 52,
       "corpusFrequency": 563
     },
     "conceptIds": [
@@ -48318,11 +48319,12 @@
       "L-CHYGY",
       "L-HAKUNOV-PLANT-157",
       "L-HAKUNOV-PLANT-159",
-      "L-HAKUNOV-PLANT-160"
+      "L-HAKUNOV-PLANT-160",
+      "L-HAKUNOV-PLANT-218"
     ],
     "notes": "дерево <div style='ma ailesi (чъыгы).",
     "productivity": {
-      "totalLexemes": 4,
+      "totalLexemes": 5,
       "corpusFrequency": 10
     },
     "_source": "lexemes-sync-2026",
@@ -97135,11 +97137,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-AUTO-01193"
+      "L-AUTO-01193",
+      "L-HAKUNOV-PLANT-219"
     ],
     "notes": "Персик обыкновенный ailesi (шэфтал).",
     "productivity": {
-      "totalLexemes": 1,
+      "totalLexemes": 2,
       "corpusFrequency": 0
     },
     "_source": "lexemes-sync-2026",
@@ -169079,7 +169082,8 @@
       "L-HAKUNOV-PLANT-156",
       "L-HAKUNOV-PLANT-168",
       "L-HAKUNOV-PLANT-194",
-      "L-HAKUNOV-PLANT-207"
+      "L-HAKUNOV-PLANT-207",
+      "L-HAKUNOV-PLANT-217"
     ]
   },
   {
