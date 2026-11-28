@@ -2888,10 +2888,12 @@
       "L-KMOKSY-BIRD-011",
       "L-APAZHEV-P1-019",
       "L-WIKT-KBD-35546",
-      "L-BGHUE-RAM"
+      "L-BGHUE-RAM",
+      "L-APAZHEV-G12-26",
+      "L-APAZHEV-G12-27"
     ],
     "productivity": {
-      "totalLexemes": 136,
+      "totalLexemes": 138,
       "corpusFrequency": 4172
     },
     "conceptIds": [
@@ -9882,10 +9884,19 @@
       "L-HAKUNOV-PLANT-055",
       "L-HAKUNOV-PLANT-057",
       "L-HAKUNOV-PLANT-087",
-      "L-HAKUNOV-PLANT-088"
+      "L-HAKUNOV-PLANT-088",
+      "L-APAZHEV-G12-13",
+      "L-APAZHEV-G12-14",
+      "L-APAZHEV-G12-16",
+      "L-APAZHEV-G12-18",
+      "L-APAZHEV-G12-19",
+      "L-APAZHEV-G12-21",
+      "L-APAZHEV-G12-22",
+      "L-APAZHEV-G12-23",
+      "L-APAZHEV-G12-25"
     ],
     "productivity": {
-      "totalLexemes": 270,
+      "totalLexemes": 300,
       "corpusFrequency": 542
     },
     "conceptIds": [
@@ -12031,10 +12042,11 @@
       "L-VERIFIED-01005",
       "L-WIKT-KBD-29991",
       "L-WIKT-KBD-33313",
-      "L-WIKT-KBD-36182"
+      "L-WIKT-KBD-36182",
+      "L-APAZHEV-G12-20"
     ],
     "productivity": {
-      "totalLexemes": 15,
+      "totalLexemes": 18,
       "corpusFrequency": 86
     },
     "conceptIds": [
@@ -13650,10 +13662,11 @@
       "L-APAZHEV-P1-030",
       "L-APAZHEV-P1-058",
       "L-KBDNEW-40875",
-      "L-APAZHEV-P2-045"
+      "L-APAZHEV-P2-045",
+      "L-APAZHEV-G12-11"
     ],
     "productivity": {
-      "totalLexemes": 468,
+      "totalLexemes": 476,
       "corpusFrequency": 6595
     },
     "rootForm": "хы",
@@ -13696,10 +13709,11 @@
       "L-VERIFIED-00461",
       "L-WIKT-KBD-28430",
       "L-WIKT-KBD-31119",
-      "L-WIKT-KBD-33240"
+      "L-WIKT-KBD-33240",
+      "L-APAZHEV-G12-10"
     ],
     "productivity": {
-      "totalLexemes": 12,
+      "totalLexemes": 16,
       "corpusFrequency": 664
     },
     "conceptIds": [
@@ -14110,10 +14124,11 @@
       "L-VERIFIED-02135",
       "L-HAKUNOV-PLANT-001",
       "L-HAKUNOV-PLANT-002",
-      "L-HAKUNOV-PLANT-038"
+      "L-HAKUNOV-PLANT-038",
+      "L-APAZHEV-G12-03"
     ],
     "productivity": {
-      "totalLexemes": 31,
+      "totalLexemes": 36,
       "corpusFrequency": 98
     },
     "rootForm": "кхъуэ",
@@ -16659,10 +16674,12 @@
       "L-APAZHEV-G8-14",
       "L-APAZHEV-G8-16",
       "L-APAZHEV-G8-18",
-      "L-APAZHEV-G9-12"
+      "L-APAZHEV-G9-12",
+      "L-APAZHEV-G12-15",
+      "L-APAZHEV-G12-17"
     ],
     "productivity": {
-      "totalLexemes": 915,
+      "totalLexemes": 917,
       "corpusFrequency": 15255
     },
     "rootForm": "лъэ",
@@ -19204,10 +19221,11 @@
       "L-HAKUNOV-PLANT-058",
       "L-APAZHEV-P4-024",
       "L-APAZHEV-G9-19",
-      "L-APAZHEV-G10-05"
+      "L-APAZHEV-G10-05",
+      "L-APAZHEV-G12-09"
     ],
     "productivity": {
-      "totalLexemes": 474,
+      "totalLexemes": 475,
       "corpusFrequency": 8019
     },
     "conceptIds": [
@@ -20229,10 +20247,11 @@
       "L-WIKT-KBD-37303",
       "L-ZETEPTS-YHYN",
       "L-ZEXEPTS-EN",
-      "L-ZEXEPTS-YHYN"
+      "L-ZEXEPTS-YHYN",
+      "L-APAZHEV-G12-29"
     ],
     "productivity": {
-      "totalLexemes": 41,
+      "totalLexemes": 63,
       "corpusFrequency": 5135
     },
     "rootForm": "пцӀ",
@@ -26371,10 +26390,13 @@
       "L-APAZHEV-P1-059",
       "L-APAZHEV-P1-063",
       "L-APAZHEV-P3-005",
-      "L-APAZHEV-P4-003"
+      "L-APAZHEV-P4-003",
+      "L-APAZHEV-G12-05",
+      "L-APAZHEV-G12-06",
+      "L-APAZHEV-G12-07"
     ],
     "productivity": {
-      "totalLexemes": 466,
+      "totalLexemes": 475,
       "corpusFrequency": 13470
     },
     "conceptIds": [
@@ -27292,10 +27314,11 @@
       "L-ZYSHCHYXUEN",
       "L-ZYXEGHESHCH-EN",
       "L-ZYZEPYSHCH-EN",
-      "L-KBDNEW-40892"
+      "L-KBDNEW-40892",
+      "L-APAZHEV-G12-04"
     ],
     "productivity": {
-      "totalLexemes": 432,
+      "totalLexemes": 455,
       "corpusFrequency": 10630
     },
     "rootForm": "щы",
@@ -34374,10 +34397,11 @@
       "L-MYGHEUNEXUA",
       "L-WIKT-KBD-31727",
       "L-WIKT-KBD-28804",
-      "L-APAZHEV-P3-021"
+      "L-APAZHEV-P3-021",
+      "L-APAZHEV-G12-12"
     ],
     "productivity": {
-      "totalLexemes": 73,
+      "totalLexemes": 77,
       "corpusFrequency": 1515
     },
     "conceptIds": [
@@ -41405,12 +41429,13 @@
       "L-YAZYRER",
       "L-KBD-02081",
       "L-APAZHEV-G9-05",
-      "L-APAZHEV-G11-23"
+      "L-APAZHEV-G11-23",
+      "L-APAZHEV-G12-08"
     ],
     "notes": "Arapca odunc: ikrar (yemin/karar).",
     "_source": "kue99-1",
     "productivity": {
-      "totalLexemes": 5,
+      "totalLexemes": 6,
       "corpusFrequency": 23
     },
     "conceptIds": [
@@ -44553,11 +44578,12 @@
       "L-APAZHEV-G8-03",
       "L-APAZHEV-G9-07",
       "L-APAZHEV-G9-08",
-      "L-APAZHEV-G11-09"
+      "L-APAZHEV-G11-09",
+      "L-APAZHEV-G12-24"
     ],
     "notes": "null ailesi (гущӀ).",
     "productivity": {
-      "totalLexemes": 142,
+      "totalLexemes": 143,
       "corpusFrequency": 15522
     },
     "_source": "lexemes-sync-2026",
@@ -62460,11 +62486,12 @@
       "L-WIKT-KBD-31067",
       "L-WIKT-KBD-33280",
       "L-WIKT-KBD-33281",
-      "L-WIKT-KBD-33686"
+      "L-WIKT-KBD-33686",
+      "L-APAZHEV-G12-30"
     ],
     "notes": "pişirmek ailesi (пщэфӀ).",
     "productivity": {
-      "totalLexemes": 2,
+      "totalLexemes": 9,
       "corpusFrequency": 0
     },
     "_source": "lexemes-sync-2026",
@@ -166077,7 +166104,10 @@
       "L-WIKT-KBD-37257",
       "L-APAZHEV-G6-01",
       "L-APAZHEV-G8-02",
-      "L-APAZHEV-G11-24"
+      "L-APAZHEV-G11-24",
+      "L-APAZHEV-G12-01",
+      "L-APAZHEV-G12-02",
+      "L-APAZHEV-G12-28"
     ],
     "conceptIds": [
       "CONTENT",
