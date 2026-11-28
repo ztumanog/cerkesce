@@ -21227,8 +21227,6 @@
       "L-PE-EGHUEU",
       "L-PE-ESHCH-E",
       "L-PE-KBD",
-      "L-PE-UANT-E",
-      "L-PE-UDZYN",
       "L-PE-UKHO",
       "L-PE-USHE",
       "L-PEBGYRYLH",
@@ -21548,7 +21546,7 @@
       "L-PESHCH1RU"
     ],
     "productivity": {
-      "totalLexemes": 609,
+      "totalLexemes": 607,
       "corpusFrequency": 22250
     },
     "rootForm": "пэ",
@@ -44266,7 +44264,8 @@
       "L-ZEGURY1UE",
       "L-ZEGURYMY1UA",
       "L-ZEGURYMY1UEN",
-      "L-ZERYZEGURY1UAUE"
+      "L-ZERYZEGURY1UAUE",
+      "L-WIKT-KBD-33853"
     ],
     "conceptIds": [
       "ALET",
@@ -44283,7 +44282,7 @@
       "TOUCHY"
     ],
     "productivity": {
-      "totalLexemes": 14,
+      "totalLexemes": 61,
       "corpusFrequency": 53
     },
     "rootForm": "Ӏу",
@@ -54835,11 +54834,12 @@
       "L-ZYTEDZE",
       "L-ZYZHEDEDZEN",
       "L-PERYDZYN",
-      "L-PESHCH-EDZEN"
+      "L-PESHCH-EDZEN",
+      "L-PE-UDZYN"
     ],
     "notes": "ATMAK, ATMAK ailesi (дз).",
     "productivity": {
-      "totalLexemes": 231,
+      "totalLexemes": 232,
       "corpusFrequency": 38
     },
     "_source": "lexemes-sync-2026",
@@ -90522,11 +90522,12 @@
     "morphemeIds": [],
     "lexemeIds": [
       "L-F-E-UANT-E",
-      "L-WIKT-KBD-30776"
+      "L-WIKT-KBD-30776",
+      "L-PE-UANT-E"
     ],
     "notes": "SOMUN ailesi (ӀуантӀ).",
     "productivity": {
-      "totalLexemes": 1,
+      "totalLexemes": 3,
       "corpusFrequency": 0
     },
     "_source": "lexemes-sync-2026",
