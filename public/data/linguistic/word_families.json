@@ -32612,10 +32612,13 @@
       "L-HAKUNOV-PLANT-128",
       "L-HAKUNOV-PLANT-136",
       "L-HAKUNOV-PLANT-163",
-      "L-HAKUNOV-PLANT-165"
+      "L-HAKUNOV-PLANT-165",
+      "L-HAKUNOV-PLANT-196",
+      "L-HAKUNOV-PLANT-200",
+      "L-HAKUNOV-PLANT-201"
     ],
     "productivity": {
-      "totalLexemes": 28,
+      "totalLexemes": 31,
       "corpusFrequency": 237
     },
     "rootForm": "удз",
@@ -33597,10 +33600,11 @@
       "L-UTS",
       "L-WIKT-KBD-30241",
       "L-HAKUNOV-PLANT-167",
-      "L-HAKUNOV-PLANT-182"
+      "L-HAKUNOV-PLANT-182",
+      "L-HAKUNOV-PLANT-193"
     ],
     "productivity": {
-      "totalLexemes": 4,
+      "totalLexemes": 5,
       "corpusFrequency": 101
     },
     "rootForm": "уц",
@@ -36826,10 +36830,11 @@
       "L-BRATOV-BIRD-036",
       "L-BRATOV-BIRD-037",
       "L-BRATOV-BIRD-038",
-      "L-HAKUNOV-PLANT-132"
+      "L-HAKUNOV-PLANT-132",
+      "L-HAKUNOV-PLANT-198"
     ],
     "productivity": {
-      "totalLexemes": 50,
+      "totalLexemes": 51,
       "corpusFrequency": 563
     },
     "conceptIds": [
@@ -41751,11 +41756,12 @@
       "L-WIKT-KBD-29966",
       "L-HAKUNOV-PLANT-138",
       "L-HAKUNOV-PLANT-153",
-      "L-HAKUNOV-PLANT-154"
+      "L-HAKUNOV-PLANT-154",
+      "L-HAKUNOV-PLANT-199"
     ],
     "_source": "kue99-2a",
     "productivity": {
-      "totalLexemes": 15,
+      "totalLexemes": 16,
       "corpusFrequency": 23
     },
     "conceptIds": [
@@ -98017,12 +98023,13 @@
       "L-AUTO-01575",
       "L-VERIFIED-01973",
       "L-WIKT-KBD-30147",
-      "L-WIKT-KBD-35204"
+      "L-WIKT-KBD-35204",
+      "L-HAKUNOV-PLANT-195"
     ],
     "productivity": {
       "lexemeCount": 1,
       "conceptCount": 1,
-      "totalLexemes": 2,
+      "totalLexemes": 5,
       "corpusFrequency": 0
     },
     "rootForm": "тутын",
@@ -169057,7 +169064,8 @@
       "L-ZHYGYFE",
       "L-HAKUNOV-PLANT-137",
       "L-HAKUNOV-PLANT-156",
-      "L-HAKUNOV-PLANT-168"
+      "L-HAKUNOV-PLANT-168",
+      "L-HAKUNOV-PLANT-194"
     ]
   },
   {
@@ -170455,7 +170463,8 @@
     "lexemeIds": [
       "L-WIKT-KBD-37389",
       "L-WIKT-KBD-37390",
-      "L-WIKT-KBD-37391"
+      "L-WIKT-KBD-37391",
+      "L-HAKUNOV-PLANT-192"
     ]
   },
   {
@@ -171376,7 +171385,8 @@
       "L-WIKT-KBD-29736",
       "L-WIKT-KBD-30405",
       "L-TYGHE-SUN-ADY",
-      "L-HAKUNOV-PLANT-075"
+      "L-HAKUNOV-PLANT-075",
+      "L-HAKUNOV-PLANT-197"
     ],
     "notes": "WF-REBUILD-001 senkronizasyonu (güneş)",
     "_source": "wf_rebuild_001"
