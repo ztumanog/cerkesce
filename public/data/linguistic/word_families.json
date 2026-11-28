@@ -32586,10 +32586,11 @@
       "L-HAKUNOV-PLANT-083",
       "L-HAKUNOV-PLANT-086",
       "L-HAKUNOV-PLANT-127",
-      "L-HAKUNOV-PLANT-128"
+      "L-HAKUNOV-PLANT-128",
+      "L-HAKUNOV-PLANT-136"
     ],
     "productivity": {
-      "totalLexemes": 25,
+      "totalLexemes": 26,
       "corpusFrequency": 237
     },
     "rootForm": "удз",
@@ -41720,11 +41721,13 @@
       "L-WIKI-00004",
       "L-WIKT-KBD-28491",
       "L-WIKT-KBD-29519",
-      "L-WIKT-KBD-29966"
+      "L-WIKT-KBD-29966",
+      "L-HAKUNOV-PLANT-138",
+      "L-HAKUNOV-PLANT-153"
     ],
     "_source": "kue99-2a",
     "productivity": {
-      "totalLexemes": 8,
+      "totalLexemes": 14,
       "corpusFrequency": 23
     },
     "conceptIds": [
@@ -71024,11 +71027,12 @@
       "L-SHEYBZHE",
       "L-SHEYEFAP-E",
       "L-SHEYUDZ",
-      "L-WIKT-KBD-34533"
+      "L-WIKT-KBD-34533",
+      "L-HAKUNOV-PLANT-146"
     ],
     "notes": "бот. чай ( Fhea s ailesi (шей).",
     "productivity": {
-      "totalLexemes": 6,
+      "totalLexemes": 8,
       "corpusFrequency": 0
     },
     "_source": "lexemes-sync-2026",
@@ -86212,11 +86216,17 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-KEANTKHUSOLYKUE"
+      "L-KEANTKHUSOLYKUE",
+      "L-HAKUNOV-PLANT-142",
+      "L-HAKUNOV-PLANT-143",
+      "L-HAKUNOV-PLANT-144",
+      "L-HAKUNOV-PLANT-145",
+      "L-HAKUNOV-PLANT-151",
+      "L-HAKUNOV-PLANT-152"
     ],
     "notes": "KADINTUZLUĞU ailesi (къантхъусолыкъу).",
     "productivity": {
-      "totalLexemes": 1,
+      "totalLexemes": 7,
       "corpusFrequency": 0
     },
     "_source": "lexemes-sync-2026",
@@ -95859,11 +95869,17 @@
     "morphemeIds": [],
     "lexemeIds": [
       "L-AUTO-00810",
-      "L-AUTO-00811"
+      "L-AUTO-00811",
+      "L-HAKUNOV-PLANT-139",
+      "L-HAKUNOV-PLANT-140",
+      "L-HAKUNOV-PLANT-141",
+      "L-HAKUNOV-PLANT-147",
+      "L-HAKUNOV-PLANT-149",
+      "L-HAKUNOV-PLANT-150"
     ],
     "notes": "yabaniiğde ailesi (къэзмакъ).",
     "productivity": {
-      "totalLexemes": 2,
+      "totalLexemes": 8,
       "corpusFrequency": 0
     },
     "_source": "lexemes-sync-2026",
@@ -169002,7 +169018,8 @@
       "L-BOTANIK-KBD-27995",
       "L-KHEKHYGUE-37566",
       "L-WIKT-KBD-29766",
-      "L-ZHYGYFE"
+      "L-ZHYGYFE",
+      "L-HAKUNOV-PLANT-137"
     ]
   },
   {
@@ -170967,7 +170984,8 @@
     "headword": "къэлэр",
     "gloss": "",
     "lexemeIds": [
-      "L-KHEKHYGUE-37614"
+      "L-KHEKHYGUE-37614",
+      "L-HAKUNOV-PLANT-148"
     ]
   },
   {
