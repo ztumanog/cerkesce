@@ -5358,11 +5358,13 @@
       "L-KBD-01077",
       "L-ZEDESHX",
       "L-DESHXUE",
-      "L-ZEDESHXE"
+      "L-ZEDESHXE",
+      "L-HAKUNOV-PLANT-129",
+      "L-HAKUNOV-PLANT-130"
     ],
     "productivity": {
       "lemmaCount": 7,
-      "totalLexemes": 6,
+      "totalLexemes": 8,
       "corpusFrequency": 9
     },
     "conceptIds": [
@@ -5531,10 +5533,11 @@
       "L-HAKUNOV-PLANT-014",
       "L-HAKUNOV-PLANT-021",
       "L-HAKUNOV-PLANT-074",
-      "L-HAKUNOV-PLANT-089"
+      "L-HAKUNOV-PLANT-089",
+      "L-HAKUNOV-PLANT-133"
     ],
     "productivity": {
-      "totalLexemes": 29,
+      "totalLexemes": 39,
       "corpusFrequency": 154
     },
     "conceptIds": [
@@ -5774,10 +5777,11 @@
       "L-WIKT-KBD-36255",
       "L-WIKT-KBD-37105",
       "L-WIKT-KBD-37106",
-      "L-XEDYGHUK-YN"
+      "L-XEDYGHUK-YN",
+      "L-HAKUNOV-PLANT-131"
     ],
     "productivity": {
-      "totalLexemes": 44,
+      "totalLexemes": 63,
       "corpusFrequency": 291
     },
     "rootForm": "дыгъу",
@@ -6202,10 +6206,11 @@
       "L-APAZHEV-P1-053",
       "L-APAZHEV-P1-054",
       "L-APAZHEV-P2-051",
-      "L-APAZHEV-G8-01"
+      "L-APAZHEV-G8-01",
+      "L-HAKUNOV-PLANT-134"
     ],
     "productivity": {
-      "totalLexemes": 103,
+      "totalLexemes": 104,
       "corpusFrequency": 859
     },
     "rootForm": "дзэ",
@@ -32579,10 +32584,12 @@
       "L-HAKUNOV-PLANT-063",
       "L-HAKUNOV-PLANT-065",
       "L-HAKUNOV-PLANT-083",
-      "L-HAKUNOV-PLANT-086"
+      "L-HAKUNOV-PLANT-086",
+      "L-HAKUNOV-PLANT-127",
+      "L-HAKUNOV-PLANT-128"
     ],
     "productivity": {
-      "totalLexemes": 8,
+      "totalLexemes": 25,
       "corpusFrequency": 237
     },
     "rootForm": "удз",
@@ -36790,10 +36797,11 @@
       "L-BRATOV-BIRD-035",
       "L-BRATOV-BIRD-036",
       "L-BRATOV-BIRD-037",
-      "L-BRATOV-BIRD-038"
+      "L-BRATOV-BIRD-038",
+      "L-HAKUNOV-PLANT-132"
     ],
     "productivity": {
-      "totalLexemes": 43,
+      "totalLexemes": 50,
       "corpusFrequency": 563
     },
     "conceptIds": [
@@ -44715,11 +44723,15 @@
       "L-HAKUNOV-PLANT-010",
       "L-HAKUNOV-PLANT-012",
       "L-BRATOV-BIRD-028",
-      "L-BRATOV-BIRD-030"
+      "L-BRATOV-BIRD-030",
+      "L-HAKUNOV-PLANT-123",
+      "L-HAKUNOV-PLANT-124",
+      "L-HAKUNOV-PLANT-125",
+      "L-HAKUNOV-PLANT-126"
     ],
     "notes": "tarla, ova ailesi (гу).",
     "productivity": {
-      "totalLexemes": 32,
+      "totalLexemes": 42,
       "corpusFrequency": 218
     },
     "_source": "lexemes-sync-2026",
@@ -68553,11 +68565,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-EPERYPS"
+      "L-EPERYPS",
+      "L-HAKUNOV-PLANT-135"
     ],
     "notes": "KOLONYA ailesi (епэр).",
     "productivity": {
-      "totalLexemes": 1,
+      "totalLexemes": 2,
       "corpusFrequency": 0
     },
     "_source": "lexemes-sync-2026",
@@ -170888,7 +170901,8 @@
     "lexemeIds": [
       "L-GUEGUSHYR",
       "L-KHEKHYGUE-37540",
-      "L-WIKT-KBD-29693"
+      "L-WIKT-KBD-29693",
+      "L-HAKUNOV-PLANT-122"
     ]
   },
   {
