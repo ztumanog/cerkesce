@@ -762,10 +762,18 @@
       "L-APAZHEV-G14-13",
       "L-APAZHEV-G14-17",
       "L-APAZHEV-G14-18",
-      "L-APAZHEV-G14-19"
+      "L-APAZHEV-G14-19",
+      "L-APAZHEV-G15-01",
+      "L-APAZHEV-G15-02",
+      "L-APAZHEV-G15-03",
+      "L-APAZHEV-G15-05",
+      "L-APAZHEV-G15-06",
+      "L-APAZHEV-G15-07",
+      "L-APAZHEV-G15-12",
+      "L-APAZHEV-G15-13"
     ],
     "productivity": {
-      "totalLexemes": 551,
+      "totalLexemes": 559,
       "corpusFrequency": 8766
     },
     "rootForm": "Ӏэ",
@@ -16685,10 +16693,11 @@
       "L-APAZHEV-G8-18",
       "L-APAZHEV-G9-12",
       "L-APAZHEV-G12-15",
-      "L-APAZHEV-G12-17"
+      "L-APAZHEV-G12-17",
+      "L-APAZHEV-G15-10"
     ],
     "productivity": {
-      "totalLexemes": 917,
+      "totalLexemes": 918,
       "corpusFrequency": 15255
     },
     "rootForm": "лъэ",
@@ -28862,10 +28871,11 @@
       "L-BRATOV-BIRD-069",
       "L-APAZHEV-G2-10",
       "L-APAZHEV-G14-01",
-      "L-APAZHEV-G14-02"
+      "L-APAZHEV-G14-02",
+      "L-APAZHEV-G15-14"
     ],
     "productivity": {
-      "totalLexemes": 759,
+      "totalLexemes": 760,
       "corpusFrequency": 13114
     },
     "conceptIds": [
@@ -48057,11 +48067,13 @@
       "L-WIKT-KBD-36906",
       "L-WIKT-KBD-37069",
       "L-WIKT-KBD-37457",
-      "L-YAUBYDYN"
+      "L-YAUBYDYN",
+      "L-APAZHEV-G15-09",
+      "L-APAZHEV-G15-11"
     ],
     "notes": "яубыдын / аубытын YAKALAMAK, HAPSETMEK ailesi (убыдын).",
     "productivity": {
-      "totalLexemes": 1,
+      "totalLexemes": 27,
       "corpusFrequency": 10
     },
     "_source": "lexemes-sync-2026",
@@ -65295,11 +65307,12 @@
       "L-ZEGUEMYPKHA",
       "L-ZEGUEPXEN",
       "L-ZESHCH-EPXEN",
-      "L-ZHEDEPXEN"
+      "L-ZHEDEPXEN",
+      "L-APAZHEV-G15-08"
     ],
     "notes": "Önlük ailesi (пх).",
     "productivity": {
-      "totalLexemes": 10,
+      "totalLexemes": 37,
       "corpusFrequency": 0
     },
     "_source": "lexemes-sync-2026",
@@ -166260,7 +166273,8 @@
       "L-XUEDIPL",
       "L-XUEPL-IME",
       "L-YAPL-ENERE",
-      "L-ZYPL-YTXU"
+      "L-ZYPL-YTXU",
+      "L-APAZHEV-G15-04"
     ],
     "productivity": null,
     "rootForm": "плӀы",
