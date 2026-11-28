@@ -6180,10 +6180,11 @@
       "L-SHCH1EDZE",
       "L-APAZHEV-P1-053",
       "L-APAZHEV-P1-054",
-      "L-APAZHEV-P2-051"
+      "L-APAZHEV-P2-051",
+      "L-APAZHEV-G8-01"
     ],
     "productivity": {
-      "totalLexemes": 98,
+      "totalLexemes": 103,
       "corpusFrequency": 859
     },
     "rootForm": "дзэ",
@@ -13762,10 +13763,11 @@
       "L-WIKT-KBD-32340",
       "L-WIKT-KBD-35175",
       "L-WIKT-KBD-36703",
-      "L-WIKT-KBD-36711"
+      "L-WIKT-KBD-36711",
+      "L-APAZHEV-G8-12"
     ],
     "productivity": {
-      "totalLexemes": 50,
+      "totalLexemes": 63,
       "corpusFrequency": 738
     },
     "conceptIds": [
@@ -14751,10 +14753,13 @@
       "L-APAZHEV-G2-09",
       "L-APAZHEV-G6-02",
       "L-APAZHEV-G6-07",
-      "L-APAZHEV-G7-03"
+      "L-APAZHEV-G7-03",
+      "L-APAZHEV-G8-06",
+      "L-APAZHEV-G8-07",
+      "L-APAZHEV-G8-08"
     ],
     "productivity": {
-      "totalLexemes": 180,
+      "totalLexemes": 183,
       "corpusFrequency": 950
     },
     "conceptIds": [
@@ -14999,10 +15004,11 @@
       "L-APAZHEV-P2-018",
       "L-APAZHEV-P2-021",
       "L-APAZHEV-P2-037",
-      "L-APAZHEV-P2-042"
+      "L-APAZHEV-P2-042",
+      "L-APAZHEV-G8-13"
     ],
     "productivity": {
-      "totalLexemes": 69,
+      "totalLexemes": 82,
       "corpusFrequency": 937
     },
     "conceptIds": [
@@ -16636,10 +16642,13 @@
       "L-APAZHEV-P3-046",
       "L-APAZHEV-P4-022",
       "L-APAZHEV-P4-030",
-      "L-APAZHEV-G7-01"
+      "L-APAZHEV-G7-01",
+      "L-APAZHEV-G8-14",
+      "L-APAZHEV-G8-16",
+      "L-APAZHEV-G8-18"
     ],
     "productivity": {
-      "totalLexemes": 911,
+      "totalLexemes": 914,
       "corpusFrequency": 15255
     },
     "rootForm": "лъэ",
@@ -16937,10 +16946,11 @@
       "L-KBD-03449",
       "L-MYLYD",
       "L-LHYKUEEN",
-      "L-WIKT-KBD-35475"
+      "L-WIKT-KBD-35475",
+      "L-APAZHEV-G8-19"
     ],
     "productivity": {
-      "totalLexemes": 27,
+      "totalLexemes": 25,
       "corpusFrequency": 232
     },
     "conceptIds": [
@@ -21476,10 +21486,11 @@
       "L-APAZHEV-P2-052",
       "L-APAZHEV-P2-053",
       "L-APAZHEV-P3-047",
-      "L-APAZHEV-G6-03"
+      "L-APAZHEV-G6-03",
+      "L-APAZHEV-G8-04"
     ],
     "productivity": {
-      "totalLexemes": 643,
+      "totalLexemes": 644,
       "corpusFrequency": 22250
     },
     "rootForm": "пэ",
@@ -43107,7 +43118,10 @@
       "L-WIKT-KBD-32426",
       "L-WIKT-KBD-32788",
       "L-WIKT-KBD-33259",
-      "L-WIKT-KBD-37337"
+      "L-WIKT-KBD-37337",
+      "L-APAZHEV-G8-09",
+      "L-APAZHEV-G8-10",
+      "L-APAZHEV-G8-11"
     ],
     "conceptIds": [
       "ACTION",
@@ -43158,7 +43172,7 @@
       "WOMAN"
     ],
     "productivity": {
-      "totalLexemes": 91,
+      "totalLexemes": 99,
       "corpusFrequency": 0
     },
     "rootForm": "кӀэ"
@@ -44479,11 +44493,12 @@
       "L-ZYSHCH1EZHYN",
       "L-WIKT-KBD-28752",
       "L-APAZHEV-P1-007",
-      "L-APAZHEV-P3-003"
+      "L-APAZHEV-P3-003",
+      "L-APAZHEV-G8-03"
     ],
     "notes": "null ailesi (гущӀ).",
     "productivity": {
-      "totalLexemes": 132,
+      "totalLexemes": 139,
       "corpusFrequency": 15522
     },
     "_source": "lexemes-sync-2026",
@@ -65721,11 +65736,12 @@
       "L-WIKT-KBD-33424",
       "L-WIKT-KBD-34069",
       "L-WIKT-KBD-35984",
-      "L-WIKT-KBD-37016"
+      "L-WIKT-KBD-37016",
+      "L-APAZHEV-G8-15"
     ],
     "notes": "yalvarmak ailesi (лъэӀу).",
     "productivity": {
-      "totalLexemes": 2,
+      "totalLexemes": 17,
       "corpusFrequency": 0
     },
     "_source": "lexemes-sync-2026",
@@ -84607,11 +84623,12 @@
     "morphemeIds": [],
     "lexemeIds": [
       "L-K-USHCH",
-      "L-WIKT-KBD-29810"
+      "L-WIKT-KBD-29810",
+      "L-APAZHEV-G8-05"
     ],
     "notes": "PIST ailesi (кӀущ).",
     "productivity": {
-      "totalLexemes": 1,
+      "totalLexemes": 3,
       "corpusFrequency": 0
     },
     "_source": "lexemes-sync-2026",
@@ -165986,7 +166003,8 @@
       "L-WIKT-KBD-37192",
       "L-WIKT-KBD-37217",
       "L-WIKT-KBD-37257",
-      "L-APAZHEV-G6-01"
+      "L-APAZHEV-G6-01",
+      "L-APAZHEV-G8-02"
     ],
     "conceptIds": [
       "CONTENT",
@@ -170743,7 +170761,8 @@
       "L-KHEKHYGUE-37832",
       "L-LEPKMYKABZE",
       "L-LEPKYSHKHUE",
-      "L-WIKT-KBD-28136"
+      "L-WIKT-KBD-28136",
+      "L-APAZHEV-G8-17"
     ]
   },
   {
