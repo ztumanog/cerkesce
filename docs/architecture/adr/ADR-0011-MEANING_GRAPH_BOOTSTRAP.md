@@ -1,6 +1,6 @@
 # ADR-0011: Meaning Graph Bootstrap
 
-**Status:** ACCEPTED ✅\
+**Status:** ACCEPTED ✅
 **Date:** 2 Eylül 2026\
 **Phase:** Faz 3 (Concept Engine)\
 **Etkilenen Katmanlar:** Domain, Service, Repository\

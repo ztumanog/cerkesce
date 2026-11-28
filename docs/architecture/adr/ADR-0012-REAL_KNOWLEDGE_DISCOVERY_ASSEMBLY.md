@@ -1,6 +1,6 @@
 # ADR-0012: Real Knowledge Discovery Assembly
 
-**Status:** ACCEPTED ✅\
+**Status:** ACCEPTED ✅
 **Date:** 2 Eylül 2026\
 **Phase:** Faz 5 (Discovery Engine)\
 **Etkilenen Katmanlar:** Service, API, UI\

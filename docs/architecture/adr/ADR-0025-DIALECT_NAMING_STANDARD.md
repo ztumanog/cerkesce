@@ -1,4 +1,4 @@
-# ADR-0020: Dialect Naming Standard
+# ADR-0025: Dialect Naming Standard
 
 - Status: ACCEPTED
 - Date: 2026-09-17

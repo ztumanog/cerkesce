@@ -1,4 +1,4 @@
-# ADR-0024: Root + WordFamily Unification
+# ADR-ROOT-002: Root + WordFamily Unification
 
 **Durum:** DEFERRED / REJECTED (Ayrık roots.json + word_families.json şeması 0 kırık referansla canlıda)
 **Tarih:** 2026-10-04

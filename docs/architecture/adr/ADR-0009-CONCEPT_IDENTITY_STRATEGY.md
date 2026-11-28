@@ -1,4 +1,4 @@
-# ADR-0020: Concept Identity Strategy
+# ADR-0009: Concept Identity Strategy
 
 **Canonical ADR:** ADR-0020
 **Physical File:** `ADR-0009-CONCEPT_IDENTITY_STRATEGY.md`
