@@ -14750,10 +14750,11 @@
       "L-APAZHEV-P4-014",
       "L-APAZHEV-G2-09",
       "L-APAZHEV-G6-02",
-      "L-APAZHEV-G6-07"
+      "L-APAZHEV-G6-07",
+      "L-APAZHEV-G7-03"
     ],
     "productivity": {
-      "totalLexemes": 179,
+      "totalLexemes": 180,
       "corpusFrequency": 950
     },
     "conceptIds": [
@@ -16634,10 +16635,11 @@
       "L-APAZHEV-P3-010",
       "L-APAZHEV-P3-046",
       "L-APAZHEV-P4-022",
-      "L-APAZHEV-P4-030"
+      "L-APAZHEV-P4-030",
+      "L-APAZHEV-G7-01"
     ],
     "productivity": {
-      "totalLexemes": 741,
+      "totalLexemes": 911,
       "corpusFrequency": 15255
     },
     "rootForm": "лъэ",
@@ -17375,10 +17377,11 @@
       "L-BAME",
       "L-VERIFIED-00543",
       "L-MEGHUE",
-      "L-ME-KBD"
+      "L-ME-KBD",
+      "L-APAZHEV-G7-08"
     ],
     "productivity": {
-      "totalLexemes": 7,
+      "totalLexemes": 8,
       "corpusFrequency": 366
     },
     "rootForm": "me",
@@ -40852,12 +40855,13 @@
   {
     "id": "WF-QURT",
     "lexemeIds": [
-      "L-VERIFIED-01101"
+      "L-VERIFIED-01101",
+      "L-APAZHEV-G7-07"
     ],
     "notes": "Kulucka tavuk ailesi. kyurt.",
     "_source": "faz4-diger-3",
     "productivity": {
-      "totalLexemes": 1,
+      "totalLexemes": 2,
       "corpusFrequency": 6
     },
     "conceptIds": [
@@ -50615,11 +50619,12 @@
       "L-WIKT-KBD-30791",
       "L-WIKT-KBD-30792",
       "L-WIKT-KBD-30793",
-      "L-APAZHEV-P3-020"
+      "L-APAZHEV-P3-020",
+      "L-APAZHEV-G7-10"
     ],
     "notes": "buzağı ailesi (шкӀ).",
     "productivity": {
-      "totalLexemes": 8,
+      "totalLexemes": 14,
       "corpusFrequency": 23
     },
     "_source": "lexemes-sync-2026",
@@ -51321,11 +51326,12 @@
       "L-WIKT-KBD-37283",
       "L-WIKT-KBD-37463",
       "L-PK1E-ATTIC-KBD",
-      "L-APAZHEV-P4-040"
+      "L-APAZHEV-P4-040",
+      "L-APAZHEV-G7-04"
     ],
     "notes": "Keçe ailesi (пкӀэ).",
     "productivity": {
-      "totalLexemes": 15,
+      "totalLexemes": 84,
       "corpusFrequency": 25
     },
     "_source": "lexemes-sync-2026",
@@ -55429,11 +55435,12 @@
       "L-ZYGUEGHEHEN",
       "L-ZYKEY-ERYGHEHEN",
       "L-ZYXUSHCH-EGHEHEN",
-      "L-APAZHEV-P2-005"
+      "L-APAZHEV-P2-005",
+      "L-APAZHEV-G7-05"
     ],
     "notes": "yıkmak ailesi (хь).",
     "productivity": {
-      "totalLexemes": 51,
+      "totalLexemes": 182,
       "corpusFrequency": 29
     },
     "_source": "lexemes-sync-2026",
@@ -68725,11 +68732,12 @@
       "L-XESHCHESHCHEN",
       "L-ZEK-ERYSHCHESHCHYN",
       "L-ZHEDEGHESHCHESHCHEN",
-      "L-ZYK-ERYGHESHCHESHCHYN"
+      "L-ZYK-ERYGHESHCHESHCHYN",
+      "L-APAZHEV-G7-09"
     ],
     "notes": "DÖKMEK, DÖKÜLMEK ailesi (щэщ).",
     "productivity": {
-      "totalLexemes": 10,
+      "totalLexemes": 71,
       "corpusFrequency": 0
     },
     "_source": "lexemes-sync-2026",
@@ -95556,11 +95564,12 @@
       "L-WIKT-KBD-28520",
       "L-WIKT-KBD-33770",
       "L-WIKT-KBD-36138",
-      "L-WIKT-KBD-37071"
+      "L-WIKT-KBD-37071",
+      "L-APAZHEV-G7-02"
     ],
     "notes": "oynatmak ailesi (удж).",
     "productivity": {
-      "totalLexemes": 3,
+      "totalLexemes": 8,
       "corpusFrequency": 0
     },
     "_source": "lexemes-sync-2026",
@@ -169683,7 +169692,8 @@
       "L-WIKT-KBD-35689",
       "L-WIKT-KBD-35933",
       "L-WIKT-KBD-37025",
-      "L-WIKT-KBD-37026"
+      "L-WIKT-KBD-37026",
+      "L-APAZHEV-G7-06"
     ]
   },
   {
