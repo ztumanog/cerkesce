@@ -5534,10 +5534,11 @@
       "L-HAKUNOV-PLANT-021",
       "L-HAKUNOV-PLANT-074",
       "L-HAKUNOV-PLANT-089",
-      "L-HAKUNOV-PLANT-133"
+      "L-HAKUNOV-PLANT-133",
+      "L-HAKUNOV-PLANT-166"
     ],
     "productivity": {
-      "totalLexemes": 39,
+      "totalLexemes": 40,
       "corpusFrequency": 154
     },
     "conceptIds": [
@@ -14158,10 +14159,11 @@
       "L-HAKUNOV-PLANT-001",
       "L-HAKUNOV-PLANT-002",
       "L-HAKUNOV-PLANT-038",
-      "L-APAZHEV-G12-03"
+      "L-APAZHEV-G12-03",
+      "L-HAKUNOV-PLANT-162"
     ],
     "productivity": {
-      "totalLexemes": 36,
+      "totalLexemes": 37,
       "corpusFrequency": 98
     },
     "rootForm": "кхъуэ",
@@ -14466,10 +14468,12 @@
     "notes": "Bos aile - sonra doldurulacak",
     "_source": "roots.json",
     "lexemeIds": [
-      "L-KUEREDERE"
+      "L-KUEREDERE",
+      "L-HAKUNOV-PLANT-158",
+      "L-HAKUNOV-PLANT-161"
     ],
     "productivity": {
-      "totalLexemes": 1,
+      "totalLexemes": 3,
       "corpusFrequency": 2
     },
     "rootForm": "къуэрэдэрэ",
@@ -32587,10 +32591,12 @@
       "L-HAKUNOV-PLANT-086",
       "L-HAKUNOV-PLANT-127",
       "L-HAKUNOV-PLANT-128",
-      "L-HAKUNOV-PLANT-136"
+      "L-HAKUNOV-PLANT-136",
+      "L-HAKUNOV-PLANT-163",
+      "L-HAKUNOV-PLANT-165"
     ],
     "productivity": {
-      "totalLexemes": 26,
+      "totalLexemes": 28,
       "corpusFrequency": 237
     },
     "rootForm": "удз",
@@ -41723,11 +41729,12 @@
       "L-WIKT-KBD-29519",
       "L-WIKT-KBD-29966",
       "L-HAKUNOV-PLANT-138",
-      "L-HAKUNOV-PLANT-153"
+      "L-HAKUNOV-PLANT-153",
+      "L-HAKUNOV-PLANT-154"
     ],
     "_source": "kue99-2a",
     "productivity": {
-      "totalLexemes": 14,
+      "totalLexemes": 15,
       "corpusFrequency": 23
     },
     "conceptIds": [
@@ -48271,11 +48278,14 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-CHYGY"
+      "L-CHYGY",
+      "L-HAKUNOV-PLANT-157",
+      "L-HAKUNOV-PLANT-159",
+      "L-HAKUNOV-PLANT-160"
     ],
     "notes": "дерево <div style='ma ailesi (чъыгы).",
     "productivity": {
-      "totalLexemes": 1,
+      "totalLexemes": 4,
       "corpusFrequency": 10
     },
     "_source": "lexemes-sync-2026",
@@ -59808,11 +59818,12 @@
       "L-KHUEYSHCHABE",
       "L-KHUEYZHAPKHE",
       "L-WIKT-KBD-29553",
-      "L-WIKT-KBD-30447"
+      "L-WIKT-KBD-30447",
+      "L-HAKUNOV-PLANT-164"
     ],
     "notes": "kaymakta yumurtalı ailesi (кхъуей).",
     "productivity": {
-      "totalLexemes": 5,
+      "totalLexemes": 10,
       "corpusFrequency": 0
     },
     "_source": "lexemes-sync-2026",
@@ -86540,11 +86551,12 @@
       "L-KEEBYSHCHHE",
       "L-KEEBZHYLAFE",
       "L-KHEKHYGUE-38071",
-      "L-WIKT-KBD-29432"
+      "L-WIKT-KBD-29432",
+      "L-HAKUNOV-PLANT-155"
     ],
     "notes": "sarı ailesi (къэб).",
     "productivity": {
-      "totalLexemes": 4,
+      "totalLexemes": 7,
       "corpusFrequency": 0
     },
     "_source": "lexemes-sync-2026",
@@ -169019,7 +169031,8 @@
       "L-KHEKHYGUE-37566",
       "L-WIKT-KBD-29766",
       "L-ZHYGYFE",
-      "L-HAKUNOV-PLANT-137"
+      "L-HAKUNOV-PLANT-137",
+      "L-HAKUNOV-PLANT-156"
     ]
   },
   {
