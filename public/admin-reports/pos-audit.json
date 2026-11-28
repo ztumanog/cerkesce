@@ -1,31 +1,31 @@
 {
-  "generatedAt": "2026-11-27T14:15:05.988Z",
+  "generatedAt": "2026-11-28T17:25:31.621Z",
   "posDistribution": {
-    "noun": 19237,
-    "verb": 15959,
-    "adj": 2632,
+    "noun": 19358,
+    "verb": 15999,
+    "adj": 2651,
     "num": 120,
     "part": 91,
     "propn": 441,
     "pron": 71,
-    "adv": 1697,
-    "interj": 212,
+    "adv": 1741,
+    "interj": 232,
     "conj": 31,
-    "prefix": 40,
+    "prefix": 41,
     "adp": 39,
     "symbol": 32,
-    "phrase": 870
+    "phrase": 876
   },
   "posEmpty": 0,
   "invalidPos": 0,
   "posMismatch": 0,
-  "formDuplicateGroups": 14,
-  "formDuplicateRecords": 29,
+  "formDuplicateGroups": 15,
+  "formDuplicateRecords": 32,
   "duplicateGroups": [
     {
       "form": "нэф",
       "ids": [
-        "L-NE-LIGHT",
+        "L-NE-BLIND",
         "L-NE-BLIND-KBD"
       ]
     },
@@ -40,7 +40,8 @@
       "form": "анэш",
       "ids": [
         "L-ANEKUESHH",
-        "L-ANESH-MATERNAL-KBD"
+        "L-ANESH-MATERNAL-KBD",
+        "L-ANESH"
       ]
     },
     {
@@ -49,6 +50,13 @@
         "L-BGHUE",
         "L-BGHUE-ADV",
         "L-BGHUE-RAM"
+      ]
+    },
+    {
+      "form": "зэхэшэн",
+      "ids": [
+        "L-ZEKHHESHAN",
+        "L-ZEXESHCHEN"
       ]
     },
     {
@@ -73,13 +81,6 @@
       ]
     },
     {
-      "form": "зэхэщэн",
-      "ids": [
-        "L-ZEXESHCHEN",
-        "L-ZEXESHCHEN-WEAVE-KBD"
-      ]
-    },
-    {
       "form": "зэпыу",
       "ids": [
         "L-ZEPYU",
@@ -91,6 +92,13 @@
       "ids": [
         "L-NE-E",
         "L-KBDNEW-40976"
+      ]
+    },
+    {
+      "form": "ду",
+      "ids": [
+        "L-VERIFIED-00429",
+        "L-DU-INTERJ"
       ]
     },
     {

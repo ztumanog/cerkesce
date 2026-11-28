@@ -135,8 +135,12 @@ describe('computeTranslationsAudit', () => {
       id: 'L-CYR', translations: { tr: 'ağaç (дерево)', en: 'Ağaç (дерево)', ru: 'дерево', ar: '' },
     },
     {
-      // TR İngilizce şüpheli + RU'da Latin kelime + EN'de Arapça
+      // TR İngilizce A (tam) + RU'da Latin kelime + EN'de Arapça
       id: 'L-ENG', translations: { tr: 'indefinite someone', en: 'شخص', ru: 'бук восточный (Fadus orientalis)', ar: 'شخص' },
+    },
+    {
+      // TR İngilizce B (karma): İngilizce kelime + Türkçe karakter ("not" homografı)
+      id: 'L-MIX', translations: { tr: 'işareti not koymak', en: 'to put', ru: 'класть', ar: 'يضع' },
     },
     {
       // Tümü boş
@@ -144,10 +148,11 @@ describe('computeTranslationsAudit', () => {
     },
   ];
 
-  it('sızıntı, şüpheli ve doluluk metriklerini doğru hesaplar', () => {
+  it('sızıntı, A/B sınıflandırma ve doluluk metriklerini doğru hesaplar', () => {
     const t = computeTranslationsAudit(trLexemes);
     expect(t.trCyrillic).toBe(1);        // L-CYR
-    expect(t.trEnglishSuspect).toBe(1);  // L-ENG ("someone")
+    expect(t.trEnglishFull).toBe(1);     // L-ENG: A ("indefinite", "someone")
+    expect(t.trEnglishMixed).toBe(1);    // L-MIX: B ("not" + Türkçe karakter)
     expect(t.trEqualsEn).toBe(1);        // L-CYR: 'ağaç (дерево)' == 'Ağaç (дерево)' (harf duyarsız)
     expect(t.ruLatinWords).toBe(1);      // L-ENG: 'Fadus orientalis'
     expect(t.enArabic).toBe(1);          // L-ENG
@@ -156,13 +161,17 @@ describe('computeTranslationsAudit', () => {
     expect(t.arEmpty).toBe(2);           // L-CYR + L-EMPTY
     expect(t.samples.trCyrillic[0].id).toBe('L-CYR');
     expect(t.samples.trEqualsEn[0].id).toBe('L-CYR');
+    expect(t.samples.trEnglishFull[0].hits).toContain('^indefinite\\b');
+    expect(t.samples.trEnglishMixed[0].id).toBe('L-MIX');
   });
 
   it('meşru Türkçe içeriği şüpheli işaretlemez', () => {
     const t = computeTranslationsAudit([
-      { id: 'L-TR', translations: { tr: 'her ne olursa olsun', en: 'whatever', ru: 'что бы ни было', ar: 'أي' } },
+      // "her" Türkçedir (listede yok); 'ın' eki 'in' sanılmamalı (Unicode katlama farkı)
+      { id: 'L-TR', translations: { tr: "her ne olursa olsun, Ramazan'ın başlangıcı", en: 'whatever', ru: 'что бы ни было', ar: 'أي' } },
     ]);
-    expect(t.trEnglishSuspect).toBe(0); // "her" Türkçedir, listede yok
+    expect(t.trEnglishFull).toBe(0);
+    expect(t.trEnglishMixed).toBe(0);
     expect(t.trEqualsEn).toBe(0);
   });
 });

@@ -1,5 +1,6 @@
 import Link from 'next/link';
-import { loadGovReport, formatGeneratedAt, HealthReport } from '@/infra/governance/govReports';
+import { loadGovReport, formatGeneratedAt, isGovReportStale, HealthReport } from '@/infra/governance/govReports';
+import StaleReportBanner from '@/components/governance/StaleReportBanner';
 
 /**
  * ADR-GOV-016 — Veri Sağlığı (/admin/yonetim/veri-sagligi)
@@ -50,6 +51,8 @@ export default function VeriSagligiPage() {
           </div>
         ) : (
           <>
+            <StaleReportBanner stale={isGovReportStale(report)} />
+
             {/* Sayım + bütünlük kartları */}
             <section className="grid grid-cols-2 gap-3 lg:grid-cols-4">
               {[

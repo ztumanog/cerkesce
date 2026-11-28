@@ -2,6 +2,7 @@ import { NextResponse } from 'next/server';
 import fs from 'fs';
 import path from 'path';
 import { verifyCurationAccess } from '@/lib/security/curationGuard';
+import { scheduleReportRefresh } from '@/infra/governance/reportRefresh';
 
 export async function POST(req: Request) {
   const denied = verifyCurationAccess(req);
@@ -51,6 +52,9 @@ export async function POST(req: Request) {
 
     const finalData = isArray ? newList : { ...lexemes, lexemes: newList };
     fs.writeFileSync(filePath, JSON.stringify(finalData, null, 2), 'utf-8');
+
+    // ADR-GOV-016 Seçenek C: veri değişti — governance raporları arka planda yenilenir
+    scheduleReportRefresh();
 
     return NextResponse.json({
       success: true,

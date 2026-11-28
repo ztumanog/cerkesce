@@ -248,10 +248,49 @@ export function computeConceptsAudit(lexemes, wordFamilies) {
 const CYRILLIC_RE = /[Ѐ-ӿ]/;
 const ARABIC_RE = /[؀-ۿ]/;
 const LATIN_WORD_RE = /[a-zA-Z]{3,}/;
-// TR alanında İngilizce şüpheli: sabit fonksiyon kelimesi listesi (Türkçe
-// homografları — "her" gibi — bilinçli olarak hariçtir).
-export const TR_ENGLISH_WORDS_RE =
-  /\b(the|and|of|to|with|for|from|not|someone|something|who|what|when|where|which|make|makes|have|has|him|them|they|you|your|that|this|these|those|there|here|person|people|thing|place|time|very|also|into|onto|upon|back|again|still|just|only|even|because|while|during|between|through|against|without|within|about|after|before|under|over|near|next|same|other|another|such|own)\b/i;
+const TURKISH_CHAR_RE = /[çÇğĞıİöÖşŞüÜ]/;
+
+// TR-İngilizce dedektörü — PAYLAŞILAN SÖZLÜK (2026-11-28 düzeltmesi).
+// _inceleme/tr_ing_kategorize.py ile AYNI listeyi kullanır; ikisi farklı sayı vermemelidir.
+//
+// CIKAR (Türkçe-İngilizce homograflar — bunlar İngilizce değil, Türkçe kelimedir):
+//   at, on, can, or, no, so, as, is, it, be, do, if, he, we, me,
+//   even, that, has, about, time, place, person
+//
+// Sınıflandırma kuralı:
+//   A (trEnglishFull)  : EN kelimesi var, TR'de Türkçe karakter/Kiril YOK
+//   B (trEnglishMixed) : EN kelimesi var, TR'de Türkçe karakter VEYA Kiril VAR
+//   C                  : EN kelimesi yok
+const TR_ENGLISH_TOKENS = [
+  'agric', 'after', 'all', 'an', 'and', 'been', 'before', 'both', 'but', 'by',
+  'collect', 'does', 'for', 'from', 'have', 'in', 'its', 'much', 'must', 'not',
+  'of', 'one', 'over', 'own', 'same', 'she', 'some', 'their', 'this', 'those',
+  'through', 'to', 'two', 'very', 'was', 'when', 'where', 'which', 'who',
+  'with', 'without',
+];
+const TR_ENGLISH_PATTERNS = ['^causative\\b', '^indefinite\\b'];
+
+/** TR metninde eşleşen İngilizce belirteçlerini döndürür (boşsa hiçbiri).
+ *
+ * Not: JavaScript \b sınırları ASCII-only'dir ("için" içindeki "in"i yakalar);
+ * Python'un Unicode-aware davranışıyla aynı sonucu vermek için \p{L} tabanlı
+ * sınırlar kullanılır (2026-11-28 düzeltmesi — önceki sayımlar bu yüzden şişkindi).
+ */
+const U_WORD = '(?<![\\p{L}\\p{N}_])';
+const U_NOT_WORD = '(?![\\p{L}\\p{N}_])';
+
+export function detectTrEnglish(tr) {
+  const hits = [];
+  for (const token of TR_ENGLISH_TOKENS) {
+    if (new RegExp(`${U_WORD}${token}${U_NOT_WORD}`, 'iu').test(tr)) hits.push(token);
+  }
+  for (const pattern of TR_ENGLISH_PATTERNS) {
+    // Desenler "^causative\b" biçimindedir; \b sonunu Unicode-aware yap
+    const unicodePattern = pattern.replace(/\\b$/, U_NOT_WORD);
+    if (new RegExp(unicodePattern, 'iu').test(tr)) hits.push(pattern);
+  }
+  return hits;
+}
 
 export function computeTranslationsAudit(lexemes) {
   let trCyrillic = 0;
@@ -259,7 +298,8 @@ export function computeTranslationsAudit(lexemes) {
   let enCyrillic = 0;
   let enArabic = 0;
   let ruLatinWords = 0;
-  let trEnglishSuspect = 0;
+  let trEnglishFull = 0;   // A: EN kelimesi var, Türkçe karakter/Kiril yok
+  let trEnglishMixed = 0;  // B: EN kelimesi var, Türkçe karakter veya Kiril var
   let trEqualsEn = 0;
   let trEmpty = 0;
   let enEmpty = 0;
@@ -272,13 +312,14 @@ export function computeTranslationsAudit(lexemes) {
     enCyrillic: [],
     enArabic: [],
     ruLatinWords: [],
-    trEnglishSuspect: [],
+    trEnglishFull: [],
+    trEnglishMixed: [],
     trEqualsEn: [],
   };
 
-  const push = (key, x, value) => {
+  const push = (key, x, value, hits) => {
     if (samples[key].length < SAMPLE_LIMIT) {
-      samples[key].push({ id: x.id, value: String(value).slice(0, 120) });
+      samples[key].push({ id: x.id, value: String(value).slice(0, 120), hits });
     }
   };
 
@@ -299,7 +340,18 @@ export function computeTranslationsAudit(lexemes) {
     if (en && CYRILLIC_RE.test(en)) { enCyrillic += 1; push('enCyrillic', x, en); }
     if (en && ARABIC_RE.test(en)) { enArabic += 1; push('enArabic', x, en); }
     if (ru && LATIN_WORD_RE.test(ru)) { ruLatinWords += 1; push('ruLatinWords', x, ru); }
-    if (tr && TR_ENGLISH_WORDS_RE.test(tr)) { trEnglishSuspect += 1; push('trEnglishSuspect', x, tr); }
+    if (tr) {
+      const hits = detectTrEnglish(tr);
+      if (hits.length > 0) {
+        if (TURKISH_CHAR_RE.test(tr) || CYRILLIC_RE.test(tr)) {
+          trEnglishMixed += 1;
+          push('trEnglishMixed', x, tr, hits);
+        } else {
+          trEnglishFull += 1;
+          push('trEnglishFull', x, tr, hits);
+        }
+      }
+    }
     if (tr && en && tr.toLowerCase() === en.toLowerCase()) {
       trEqualsEn += 1;
       push('trEqualsEn', x, tr);
@@ -312,7 +364,8 @@ export function computeTranslationsAudit(lexemes) {
     enCyrillic,
     enArabic,
     ruLatinWords,
-    trEnglishSuspect,
+    trEnglishFull,
+    trEnglishMixed,
     trEqualsEn,
     trEmpty,
     enEmpty,
@@ -502,7 +555,7 @@ function main() {
   console.log(`  conceptId != conceptIds[0]: ${conceptsData.conceptIdMismatch} | concept != conceptId: ${conceptsData.conceptFieldMismatch}`);
   console.log(`  WF asılı concept referansı: ${conceptsData.wfDanglingConceptRefs} aile / ${conceptsData.wfDanglingConceptValues} benzersiz değer`);
   console.log('=== CEVIRI DENETIMI (translations-audit.json) ===');
-  console.log(`  TR'de Kiril: ${tr(translationsData.trCyrillic)} | TR'de Arapça: ${tr(translationsData.trArabic)} | TR İngilizce şüpheli: ${tr(translationsData.trEnglishSuspect)}`);
+  console.log(`  TR'de Kiril: ${tr(translationsData.trCyrillic)} | TR'de Arapça: ${tr(translationsData.trArabic)} | TR İngilizce A (tam): ${tr(translationsData.trEnglishFull)} / B (karma): ${tr(translationsData.trEnglishMixed)}`);
   console.log(`  EN'de Kiril: ${tr(translationsData.enCyrillic)} | EN'de Arapça: ${translationsData.enArabic} | RU'da Latin kelime: ${tr(translationsData.ruLatinWords)}`);
   console.log(`  TR == EN: ${tr(translationsData.trEqualsEn)} | TR boş: ${translationsData.trEmpty} | EN boş: ${translationsData.enEmpty} | AR boş: ${tr(translationsData.arEmpty)} | RU boş: ${translationsData.ruEmpty}`);
   console.log('=== POS DENETIMI (pos-audit.json) ===');

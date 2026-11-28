@@ -4,6 +4,7 @@
 
 import fs from "fs";
 import path from "path";
+import { scheduleReportRefresh } from "../../infra/governance/reportRefresh";
 import {
   ConceptId,
   RootValue,
@@ -362,6 +363,9 @@ export function updateLexeme(
   rawCache = null;
   cacheMtime = 0;
 
+  // ADR-GOV-016 Seçenek C: veri değişti — governance raporları arka planda yenilenir
+  scheduleReportRefresh();
+
   const auditEntry = {
     timestamp: new Date().toISOString(),
     lexemeId: id,
@@ -454,6 +458,9 @@ export function upsertLexeme(
   cache = null;
   rawCache = null;
   cacheMtime = 0;
+
+  // ADR-GOV-016 Seçenek C: veri değişti — governance raporları arka planda yenilenir
+  scheduleReportRefresh();
 
   fs.appendFileSync(
     AUDIT_LOG_PATH,

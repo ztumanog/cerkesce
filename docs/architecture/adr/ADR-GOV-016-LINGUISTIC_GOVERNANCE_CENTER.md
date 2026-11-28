@@ -121,7 +121,8 @@ dialect-audit.json   → { dialectDistribution, invalidDialect, apazhevMarked,
 | `trArabic` | TR karşılığında Arapça karakter geçen kayıt (şüpheli) |
 | `enCyrillic` / `enArabic` | EN karşılığında Kiril / Arapça karakter geçen kayıt (şüpheli) |
 | `ruLatinWords` | RU karşılığında en az 3 harfli Latin kelime geçen kayıt (şüpheli — bilimsel ad olabilir) |
-| `trEnglishSuspect` | TR karşılığında sabit İngilizce fonksiyon kelimesi listesinden biri geçen kayıt (şüpheli; liste script'te sürümlüdür, Türkçe homograflar — "her" gibi — hariçtir) |
+| `trEnglishFull` (A) | TR karşılığında paylaşılan İngilizce kelime listesinden biri geçen ve Türkçe karakter/Kiril İÇERMEYEN kayıt (çevrilmemiş aday). Sözlük `scripts/report-governance.mjs` ile `_inceleme/tr_ing_kategorize.py`'de ortaktır; iki dedektör aynı sayıyı verir. Türkçe-İngilizce homograflar (at, on, can, so, as, is, it, be, do, if, he, we, me, even, that, has, about, time, place, person) listede yoktur (2026-11-28 düzeltmesi) |
+| `trEnglishMixed` (B) | TR karşılığında İngilizce kelime geçen ve Türkçe karakter VEYA Kiril de içeren kayıt (karma; "not", "an" gibi homograflar yanlış pozitif olabilir — insan incelemesi) |
 | `trEqualsEn` | TR ve EN karşılıkları büyük/küçük harf duyarsız birebir aynı olan kayıt (özel adlarda meşru olabilir) |
 | `trEmpty` / `enEmpty` / `arEmpty` / `ruEmpty` | İlgili dil karşılığı boş kayıt |
 | `formDuplicateGroups` | Aynı `form` değerini taşıyan birden fazla kaydın oluşturduğu grup sayısı (POS fark etmeksizin) — 2026-11-27&apos;de Baş Mimar oturumundaki historik &quot;14 form&quot; değeriyle birebir doğrulandı |

@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import fs from "fs";
 import path from "path";
 import crypto from "crypto";
+import { scheduleReportRefresh } from "@/infra/governance/reportRefresh";
 
 const LEX_PATH = path.join(process.cwd(), "public/data/linguistic/lexemes.json");
 
@@ -159,6 +160,9 @@ export async function POST(req: Request) {
     const outStr = JSON.stringify(out, null, 2);
     const outBuf = Buffer.from(outStr, "utf-8");
     fs.writeFileSync(LEX_PATH, outBuf);
+
+    // ADR-GOV-016 Seçenek C: veri değişti — governance raporları arka planda yenilenir
+    scheduleReportRefresh();
 
     const newHash = sha256Hex(outBuf);
 

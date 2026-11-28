@@ -1,15 +1,16 @@
 {
-  "generatedAt": "2026-11-27T14:15:05.987Z",
-  "trCyrillic": 79,
+  "generatedAt": "2026-11-28T17:25:31.621Z",
+  "trCyrillic": 203,
   "trArabic": 23,
-  "enCyrillic": 45,
+  "enCyrillic": 112,
   "enArabic": 0,
-  "ruLatinWords": 220,
-  "trEnglishSuspect": 305,
+  "ruLatinWords": 101,
+  "trEnglishFull": 232,
+  "trEnglishMixed": 13,
   "trEqualsEn": 382,
   "trEmpty": 0,
   "enEmpty": 0,
-  "arEmpty": 9049,
+  "arEmpty": 9121,
   "ruEmpty": 0,
   "samples": {
     "trCyrillic": [
@@ -488,6 +489,26 @@
       {
         "id": "L-APAZHEV-P4-039",
         "value": "exceedingly, bursting (зэщыпкӀыу пшэр: very fat)"
+      },
+      {
+        "id": "L-APAZHEV-G10-07",
+        "value": "handkerchief (in phrase: пэрылъэщӀ бэлътоку)"
+      },
+      {
+        "id": "L-APAZHEV-G10-17",
+        "value": "folding the fingers to whistle (тӀаркъуэ щӀын)"
+      },
+      {
+        "id": "L-APAZHEV-G11-02",
+        "value": "carefreeness, merry living (и тӀроцэщ — he is carefree, lives merrily; lit. Troitsa)"
+      },
+      {
+        "id": "L-APAZHEV-G11-03",
+        "value": "crushing, squashing (тӀумпӀ щӀын — to crush someone/something)"
+      },
+      {
+        "id": "L-APAZHEV-G11-08",
+        "value": "family door (унагъуэбжэр хуэщӀыжын — to meet one's doom/ruin)"
       }
     ],
     "enArabic": [],
@@ -509,36 +530,8 @@
         "value": "жизнь, жизнь, период существования кого-л., образ, способ существования (людей); hayat; yasam; omur"
       },
       {
-        "id": "L-DUNEY",
-        "value": "world, universe, Earth, life, weather, ever, for goodness’ sake, on earth, in the world (as a particle reinforcing a sta"
-      },
-      {
-        "id": "L-ZYGUERYM",
-        "value": "зыгуэрым Type: pronoun Definitions:"
-      },
-      {
-        "id": "L-MAXUEM",
-        "value": "махуэм Type: adverb Definitions:"
-      },
-      {
-        "id": "L-XUEYUE",
-        "value": "хуейуэ Type: adjective Definitions: 1. сознательный это был сознательный выбор."
-      },
-      {
         "id": "L-YUSYF",
         "value": "ЮСЫФ YUSUF"
-      },
-      {
-        "id": "L-TEUXUA",
-        "value": "теухуа Type: preposition Definitions:"
-      },
-      {
-        "id": "L-NER",
-        "value": "нэр Type: noun Definitions:"
-      },
-      {
-        "id": "L-KHUNYGHE",
-        "value": "хъуныгъэ Type: noun Definitions:"
       },
       {
         "id": "L-SHEY",
@@ -557,32 +550,8 @@
         "value": "~ апхуэдэу: all right, very well"
       },
       {
-        "id": "L-PSHCHEDDZHYZHYM",
-        "value": "пщэдджыжьым Type: phrase Definitions:"
-      },
-      {
-        "id": "L-MAXUEXER",
-        "value": "махуэхэр Type: noun Definitions:"
-      },
-      {
-        "id": "L-KUM",
-        "value": "кум Type: adverb Definitions:"
-      },
-      {
-        "id": "L-GHEUNEXUNYGHE",
-        "value": "гъэунэхуныгъэ Type: noun Definitions:"
-      },
-      {
-        "id": "L-UTYKUM",
-        "value": "утыкум Type: adverb Definitions:"
-      },
-      {
         "id": "L-XEMYTU",
         "value": "хэмытэу / хэмыту AYRICA"
-      },
-      {
-        "id": "L-NEGHESA",
-        "value": "нэгъэса Type: adjective Definitions:"
       },
       {
         "id": "L-GHUNAPKEE",
@@ -597,302 +566,624 @@
         "value": "куэдыщэ / бащэ FAZLA 3"
       },
       {
-        "id": "L-XUEPEZHU",
-        "value": "хуэпэжу Type: adverb Definitions: 1. верно"
-      },
-      {
-        "id": "L-SHCHYPSEUXER",
-        "value": "щыпсэухэр Type: adjective Definitions: 1. коренной"
-      },
-      {
         "id": "L-YUNYS",
         "value": "ЮНЫС YUNUS"
-      },
-      {
-        "id": "L-ZYXUEFASHCHE",
-        "value": "зыхуэфащэ Type: adjective Definitions:"
       },
       {
         "id": "L-FAEME",
         "value": "хуеймэ / фаемэ GEREK"
       },
       {
-        "id": "L-KEEMYKHUA",
-        "value": "къэмыхъуа Type: adjective Definitions:"
-      },
-      {
         "id": "L-XUEYME",
         "value": "хуеймэ / фаемэ GEREK"
-      },
-      {
-        "id": "L-KHYM",
-        "value": "хъым Type: interjection Definitions: 1. хм"
-      },
-      {
-        "id": "L-SHCHYGUGH",
-        "value": "щыгугъ Type: adjective Definitions:"
-      },
-      {
-        "id": "L-SHCHHEMYGHAZEU",
-        "value": "щхьэмыгъазэу Type: adverb Definitions: 1. смело"
-      },
-      {
-        "id": "L-GUZAVEU",
-        "value": "гузавэу Type: adverb Definitions: 1. тревожно"
-      },
-      {
-        "id": "L-APXUEDESHCH",
-        "value": "апхуэдэщ Type: pronoun Definitions:"
       },
       {
         "id": "L-KEEGHEGUBZHYN",
         "value": "c.f. къэгубжьын; 2. to make angry, enrage, anger, infuriate"
       },
       {
-        "id": "L-IZU-2",
-        "value": "изу Type: adverb Definitions:"
-      },
-      {
         "id": "L-FEDER",
         "value": "фэдэр / хуэдэр ехьщырыр / ещхьыр BEN"
-      },
-      {
-        "id": "L-EGUGHU",
-        "value": "егугъу Type: adjective Definitions:"
       },
       {
         "id": "L-KHARBYZ",
         "value": "бот. арбуз обыкновенный ( Citrulus vulgaris Schrad"
       },
       {
-        "id": "L-ZEGHEPESHCHYZHYNYGHE",
-        "value": "зэгъэпэщыжыныгъэ Type: adjective Definitions:"
-      },
-      {
-        "id": "L-LINE",
-        "value": "линэ Type: noun Definitions:"
-      },
-      {
         "id": "L-EUENYGHE",
         "value": "act. of еуэн"
       },
       {
-        "id": "L-GUPEM",
-        "value": "гупэм Type: preposition Definitions: 1. впереди"
+        "id": "L-ISHCHHEM",
+        "value": "above; upstairs; ар ~ щопэу: he lives upstairs"
       },
       {
-        "id": "L-SHCHYLH",
-        "value": "щылъ Type: noun Definitions:"
+        "id": "L-TOXUE",
+        "value": "тохуэ / тефэ LAYIK"
       },
       {
-        "id": "L-ZEMYGUPSYSA",
-        "value": "зэмыгупсыса Type: adjective Definitions:"
+        "id": "L-SOVETSKE",
+        "value": "hist. Soviet; Советскэ : the Soviet Union"
       },
       {
-        "id": "L-ZEXEZEXUEN",
-        "value": "зэхэзехуэн Type: noun Definitions:"
+        "id": "L-GUP-GUPU",
+        "value": "куп-купэу / гуп-гупу GRUP-GRUP"
+      },
+      {
+        "id": "L-KEINY",
+        "value": "one, one (as a substantive); Один"
+      },
+      {
+        "id": "L-XEMYTEU",
+        "value": "хэмытэу / хэмыту AYRICA"
+      },
+      {
+        "id": "L-ZYXUENYKUEER",
+        "value": "зыхуэныкъуэр / зыфэныкъор GEREKEN"
+      },
+      {
+        "id": "L-DYADE",
+        "value": "тят / дядэ ты / адэ PEDER, BABA-MIZ"
+      },
+      {
+        "id": "L-XEGHETYN",
+        "value": "c.f хэтын; 2. to give the opportunity to become member in smth. ; to…"
+      },
+      {
+        "id": "L-TXYGHEU",
+        "value": "тхыгъэу / тхауэ YAZILI"
+      },
+      {
+        "id": "L-YAUBYDYN",
+        "value": "яубыдын / аубытын YAKALAMAK, HAPSETMEK"
+      },
+      {
+        "id": "L-ZESA",
+        "value": "habit; * ~ сэгъейщ: prov. habit is second nature"
+      },
+      {
+        "id": "L-E-O-OY",
+        "value": "е-о-ой / е-у-уей е-уей YAZIK"
+      },
+      {
+        "id": "L-KEINYGHO",
+        "value": "one, one (as a substantive); Один"
+      },
+      {
+        "id": "L-XETYNYGHE",
+        "value": "act. of хэтын"
+      },
+      {
+        "id": "L-GUBZHYNYGHE",
+        "value": "act of губжьын"
+      },
+      {
+        "id": "L-EPER",
+        "value": "бот. 1. фиалка ( Vio"
+      },
+      {
+        "id": "L-SHAPKHEXER",
+        "value": "щапхъэхэр / шапхъэхэр EBAT"
+      },
+      {
+        "id": "L-UVYP-E",
+        "value": "место для кого-чего-л., место, положение (напр. в общественной жизни, науке и т. п.), место (в соревновании, конкурсе и "
+      },
+      {
+        "id": "L-IDIN",
+        "value": "one, one (as a substantive); Один"
+      },
+      {
+        "id": "L-ZEK-O",
+        "value": "зекӀуэ: raid, campaign"
+      },
+      {
+        "id": "L-VERIFIED-00011",
+        "value": "къэбэстхъэ / къэбэскъэ / къэбыстэ ГЪА­ГЪЭ КАПУСТА ЦВЕТНАЯ KARNIBAHAR"
+      },
+      {
+        "id": "L-VERIFIED-00077",
+        "value": "mil. explosive, bursting; шэ ~: explosive bullet"
+      },
+      {
+        "id": "L-VERIFIED-00105",
+        "value": "act. of техын"
+      },
+      {
+        "id": "L-VERIFIED-00115",
+        "value": "тхыгъэу / тхауэ YAZILI"
+      },
+      {
+        "id": "L-VERIFIED-00412",
+        "value": "зэхэхьэ / зэхыхьэ KATILIM"
+      },
+      {
+        "id": "L-VERIFIED-00836",
+        "value": "УЭСМЭН / ОСМЭН OSMAN-LI"
+      },
+      {
+        "id": "L-VERIFIED-01013",
+        "value": "щапхъэхэр / шапхъэхэр EBAT"
+      },
+      {
+        "id": "L-VERIFIED-01044",
+        "value": "хъункъэ / хъунба дэгъуба / дэгъуэкъэ PEK ALA"
+      },
+      {
+        "id": "L-VERIFIED-01163",
+        "value": "хышхуэ / хышхо OKYANUS"
       }
     ],
-    "trEnglishSuspect": [
+    "trEnglishFull": [
       {
-        "id": "L-GHEUVYN",
-        "value": "inşa etmek, kurmak; sağlam dikmek, dikey koymak; noktalama işareti / not koymak; oyun sahnelemek; deney yapmak, düzenlem"
+        "id": "L-ZEK-EMK-I",
+        "value": "cem'an",
+        "hits": [
+          "an"
+        ]
       },
       {
-        "id": "L-LHESH",
-        "value": "has"
-      },
-      {
-        "id": "L-PET",
-        "value": "even"
-      },
-      {
-        "id": "L-TELHHE",
-        "value": "like-minded person"
-      },
-      {
-        "id": "L-IGUGHU",
-        "value": "about"
-      },
-      {
-        "id": "L-ZYKEOMRE",
-        "value": "a long time."
-      },
-      {
-        "id": "L-PSYHE",
-        "value": "1. water-carrier; 2. on water, over water."
-      },
-      {
-        "id": "L-GOR-ADY",
-        "value": "indefinite someone"
-      },
-      {
-        "id": "L-MOBY",
-        "value": "that"
-      },
-      {
-        "id": "L-ZEGHELHEN",
-        "value": "to pleat"
-      },
-      {
-        "id": "L-ZERYSHCHYTAUE",
-        "value": "as before"
-      },
-      {
-        "id": "L-KEEUDYXYN",
-        "value": "to bring/knock down"
-      },
-      {
-        "id": "L-INYKUEEM",
-        "value": "indefinite someone"
-      },
-      {
-        "id": "L-MYBYDE",
-        "value": "not strong/solid/durable"
-      },
-      {
-        "id": "L-MOXER",
-        "value": "those"
-      },
-      {
-        "id": "L-BELDZHYLYUE",
-        "value": "clearly, lucidly; definitely; certainly, with certainty"
-      },
-      {
-        "id": "L-SHOFER",
-        "value": "şoför"
-      },
-      {
-        "id": "L-GHEUZH",
-        "value": "agric. after-grass, aftermath"
-      },
-      {
-        "id": "L-LEYMYGHEGHU",
-        "value": "vengeful (person)- person who does not forgive injustices"
-      },
-      {
-        "id": "L-KEYTEPKHUEN",
-        "value": "to spread"
-      },
-      {
-        "id": "L-PERYUENSHEU",
-        "value": "without hindrance, freely, without impediment."
-      },
-      {
-        "id": "L-ICHEZUUE",
-        "value": "in time"
-      },
-      {
-        "id": "L-I-EN",
-        "value": "have"
-      },
-      {
-        "id": "L-ISHCHHEK-E",
-        "value": "over"
-      },
-      {
-        "id": "L-GUVA-SHCH-EXAMI",
-        "value": "sooner or later, early or late, some time or other"
-      },
-      {
-        "id": "L-VERIFIED-00075",
-        "value": "collect. feed for bird"
-      },
-      {
-        "id": "L-VERIFIED-00378",
-        "value": "Hasır"
-      },
-      {
-        "id": "L-VERIFIED-00429",
-        "value": "large wattled depository for corn-cobs; grain storehouse"
-      },
-      {
-        "id": "L-VERIFIED-00453",
-        "value": "like-minded person"
-      },
-      {
-        "id": "L-VERIFIED-01038",
-        "value": "Hasır"
-      },
-      {
-        "id": "L-VERIFIED-01237",
-        "value": "to live together"
-      },
-      {
-        "id": "L-VERIFIED-01376",
-        "value": "hasırotu"
+        "id": "L-KUER-AN",
+        "value": "Kur'an",
+        "hits": [
+          "an"
+        ]
       },
       {
         "id": "L-VERIFIED-01598",
-        "value": "building materials, timber for construction."
-      },
-      {
-        "id": "L-VERIFIED-01797",
-        "value": "to smoke"
+        "value": "building materials, timber for construction.",
+        "hits": [
+          "for"
+        ]
       },
       {
         "id": "L-KBD-00112",
-        "value": "yemin, and"
+        "value": "yemin, and",
+        "hits": [
+          "and"
+        ]
       },
       {
         "id": "L-KBD-00148",
-        "value": "round stone for throwing"
+        "value": "round stone for throwing",
+        "hits": [
+          "for"
+        ]
+      },
+      {
+        "id": "L-KBD-00174",
+        "value": "collect leavings, leftovers",
+        "hits": [
+          "collect"
+        ]
       },
       {
         "id": "L-KBD-00208",
-        "value": "name of an ancient weapon"
+        "value": "name of an ancient weapon",
+        "hits": [
+          "an",
+          "of"
+        ]
       },
       {
-        "id": "L-KBD-00289",
-        "value": "hasır çit ustası"
-      },
-      {
-        "id": "L-KBD-00290",
-        "value": "chastitse even"
+        "id": "L-KBD-00313",
+        "value": "an adult look.",
+        "hits": [
+          "an"
+        ]
       },
       {
         "id": "L-KBD-00387",
-        "value": "dressing for bees"
+        "value": "dressing for bees",
+        "hits": [
+          "for"
+        ]
       },
       {
         "id": "L-KBD-00455",
-        "value": "dreams of children"
+        "value": "dreams of children",
+        "hits": [
+          "of"
+        ]
       },
       {
         "id": "L-KBD-00458",
-        "value": "mother of many children"
+        "value": "mother of many children",
+        "hits": [
+          "of"
+        ]
       },
       {
         "id": "L-KBD-00462",
-        "value": "fuss was about."
+        "value": "fuss was about.",
+        "hits": [
+          "was"
+        ]
       },
       {
         "id": "L-KBD-00491",
-        "value": "access to plowing"
+        "value": "access to plowing",
+        "hits": [
+          "to"
+        ]
       },
       {
         "id": "L-KBD-00606",
-        "value": "a bed for a cradle"
-      },
-      {
-        "id": "L-KBD-00637",
-        "value": "to be jealous."
-      },
-      {
-        "id": "L-KBD-00665",
-        "value": "dry place"
-      },
-      {
-        "id": "L-KBD-00786",
-        "value": "confinement place"
-      },
-      {
-        "id": "L-KBD-00800",
-        "value": "causative to"
+        "value": "a bed for a cradle",
+        "hits": [
+          "for"
+        ]
       },
       {
         "id": "L-KBD-00804",
-        "value": "causative to"
+        "value": "causative to",
+        "hits": [
+          "to",
+          "^causative\\b"
+        ]
+      },
+      {
+        "id": "L-KBD-00812",
+        "value": "causative to",
+        "hits": [
+          "to",
+          "^causative\\b"
+        ]
+      },
+      {
+        "id": "L-KBD-00828",
+        "value": "causative to",
+        "hits": [
+          "to",
+          "^causative\\b"
+        ]
+      },
+      {
+        "id": "L-KBD-00836",
+        "value": "causative to",
+        "hits": [
+          "to",
+          "^causative\\b"
+        ]
+      },
+      {
+        "id": "L-KBD-00839",
+        "value": "causative to",
+        "hits": [
+          "to",
+          "^causative\\b"
+        ]
+      },
+      {
+        "id": "L-KBD-00865",
+        "value": "not spun silk thread",
+        "hits": [
+          "not"
+        ]
+      },
+      {
+        "id": "L-KBD-00955",
+        "value": "zhy kind of fabric",
+        "hits": [
+          "of"
+        ]
+      },
+      {
+        "id": "L-KBD-00964",
+        "value": "zhy felt case for guns",
+        "hits": [
+          "for"
+        ]
+      },
+      {
+        "id": "L-KBD-00994",
+        "value": "articles of gold",
+        "hits": [
+          "of"
+        ]
+      },
+      {
+        "id": "L-KBD-01007",
+        "value": "causative to",
+        "hits": [
+          "to",
+          "^causative\\b"
+        ]
+      },
+      {
+        "id": "L-KBD-01009",
+        "value": "i causative to i",
+        "hits": [
+          "to"
+        ]
+      },
+      {
+        "id": "L-KBD-01014",
+        "value": "causative to",
+        "hits": [
+          "to",
+          "^causative\\b"
+        ]
+      },
+      {
+        "id": "L-KBD-01015",
+        "value": "causative to",
+        "hits": [
+          "to",
+          "^causative\\b"
+        ]
+      },
+      {
+        "id": "L-KBD-01018",
+        "value": "to causative ii",
+        "hits": [
+          "to"
+        ]
+      },
+      {
+        "id": "L-KBD-01020",
+        "value": "two-year-goat",
+        "hits": [
+          "two"
+        ]
+      },
+      {
+        "id": "L-KBD-01114",
+        "value": "causative to",
+        "hits": [
+          "to",
+          "^causative\\b"
+        ]
+      },
+      {
+        "id": "L-KBD-01115",
+        "value": "causative to",
+        "hits": [
+          "to",
+          "^causative\\b"
+        ]
+      },
+      {
+        "id": "L-KBD-01116",
+        "value": "causative to",
+        "hits": [
+          "to",
+          "^causative\\b"
+        ]
+      },
+      {
+        "id": "L-KBD-01122",
+        "value": "causative to",
+        "hits": [
+          "to",
+          "^causative\\b"
+        ]
+      },
+      {
+        "id": "L-KBD-01123",
+        "value": "causative to",
+        "hits": [
+          "to",
+          "^causative\\b"
+        ]
+      },
+      {
+        "id": "L-KBD-01124",
+        "value": "causative to",
+        "hits": [
+          "to",
+          "^causative\\b"
+        ]
+      },
+      {
+        "id": "L-KBD-01126",
+        "value": "causative to",
+        "hits": [
+          "to",
+          "^causative\\b"
+        ]
+      },
+      {
+        "id": "L-KBD-01127",
+        "value": "causative to",
+        "hits": [
+          "to",
+          "^causative\\b"
+        ]
+      },
+      {
+        "id": "L-KBD-01130",
+        "value": "causative to",
+        "hits": [
+          "to",
+          "^causative\\b"
+        ]
+      },
+      {
+        "id": "L-KBD-01132",
+        "value": "causative to",
+        "hits": [
+          "to",
+          "^causative\\b"
+        ]
+      },
+      {
+        "id": "L-KBD-01135",
+        "value": "causative to",
+        "hits": [
+          "to",
+          "^causative\\b"
+        ]
+      },
+      {
+        "id": "L-KBD-01139",
+        "value": "causative to",
+        "hits": [
+          "to",
+          "^causative\\b"
+        ]
+      },
+      {
+        "id": "L-KBD-01140",
+        "value": "causative to",
+        "hits": [
+          "to",
+          "^causative\\b"
+        ]
+      },
+      {
+        "id": "L-KBD-01141",
+        "value": "causative to",
+        "hits": [
+          "to",
+          "^causative\\b"
+        ]
+      },
+      {
+        "id": "L-KBD-01142",
+        "value": "causative to",
+        "hits": [
+          "to",
+          "^causative\\b"
+        ]
+      },
+      {
+        "id": "L-KBD-01262",
+        "value": "{all} gray",
+        "hits": [
+          "all"
+        ]
+      },
+      {
+        "id": "L-KBD-01385",
+        "value": "wet and windy",
+        "hits": [
+          "and"
+        ]
+      },
+      {
+        "id": "L-KBD-01420",
+        "value": "some time",
+        "hits": [
+          "some"
+        ]
+      },
+      {
+        "id": "L-KBD-01542",
+        "value": "causative to",
+        "hits": [
+          "to",
+          "^causative\\b"
+        ]
+      },
+      {
+        "id": "L-KBD-01545",
+        "value": "i causative to",
+        "hits": [
+          "to"
+        ]
+      },
+      {
+        "id": "L-KBD-01576",
+        "value": "causative to i",
+        "hits": [
+          "to",
+          "^causative\\b"
+        ]
+      }
+    ],
+    "trEnglishMixed": [
+      {
+        "id": "L-GHEUVYN",
+        "value": "inşa etmek, kurmak; sağlam dikmek, dikey koymak; noktalama işareti / not koymak; oyun sahnelemek; deney yapmak, düzenlem",
+        "hits": [
+          "not"
+        ]
+      },
+      {
+        "id": "L-IDZHYK-E",
+        "value": "şimdilik, şu an için",
+        "hits": [
+          "an"
+        ]
+      },
+      {
+        "id": "L-ZESHEZEP-E",
+        "value": "anlık, bir an, ani",
+        "hits": [
+          "an"
+        ]
+      },
+      {
+        "id": "L-PYTXENYGHE",
+        "value": "not, ek yazı, dipnot",
+        "hits": [
+          "not"
+        ]
+      },
+      {
+        "id": "L-WIKT-KBD-28344",
+        "value": "maç, oyun, an",
+        "hits": [
+          "an"
+        ]
+      },
+      {
+        "id": "L-WIKT-KBD-29056",
+        "value": "geçer not",
+        "hits": [
+          "not"
+        ]
+      },
+      {
+        "id": "L-WIKT-KBD-29264",
+        "value": "şimdilik, şu an için",
+        "hits": [
+          "an"
+        ]
+      },
+      {
+        "id": "L-WIKT-KBD-29405",
+        "value": "bir an önce, olabildiğince çabuk",
+        "hits": [
+          "an"
+        ]
+      },
+      {
+        "id": "L-WIKT-KBD-30285",
+        "value": "Kur'an-ı Kerim'in belirli surelerini içeren dinî kitap, en'am",
+        "hits": [
+          "an",
+          "in"
+        ]
+      },
+      {
+        "id": "L-WIKT-KBD-30449",
+        "value": "Kur'an-ı Kerim okunarak yapılan cenaze anma ve hatim meclisi",
+        "hits": [
+          "an"
+        ]
+      },
+      {
+        "id": "L-WIKT-KBD-30988",
+        "value": "kenarına yazmak, not düşmek",
+        "hits": [
+          "not"
+        ]
+      },
+      {
+        "id": "L-DZHYP1E-2",
+        "value": "şimdiki zaman, şu an",
+        "hits": [
+          "an"
+        ]
+      },
+      {
+        "id": "L-KHEKHYGUE-37778",
+        "value": "an (bir göz kırpma süresi)",
+        "hits": [
+          "an"
+        ]
       }
     ],
     "trEqualsEn": [

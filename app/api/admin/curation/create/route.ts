@@ -1,5 +1,6 @@
 import { verifyCurationAccess } from '@/lib/security/curationGuard';
 import { syncWordFamiliesFromLexemes } from "../../../../../src/lib/curation/syncWordFamilies";
+import { scheduleReportRefresh } from "@/infra/governance/reportRefresh";
 import { NextResponse } from 'next/server';
 import fs from 'fs';
 import path from 'path';
@@ -43,6 +44,9 @@ export async function POST(req: Request) {
     const finalData = isArray ? list : { ...lexemesData, lexemes: list };
     fs.writeFileSync(filePath, JSON.stringify(finalData, null, 2), 'utf-8');
     syncWordFamiliesFromLexemes(list, [newLexeme.wordFamilyId]);
+
+    // ADR-GOV-016 Seçenek C: veri değişti — governance raporları arka planda yenilenir
+    scheduleReportRefresh();
 
     return NextResponse.json({
       success: true,

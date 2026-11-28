@@ -1,5 +1,6 @@
 import Link from 'next/link';
-import { loadGovReport, formatGeneratedAt, RootsAuditReport } from '@/infra/governance/govReports';
+import { loadGovReport, formatGeneratedAt, isGovReportStale, RootsAuditReport } from '@/infra/governance/govReports';
+import StaleReportBanner from '@/components/governance/StaleReportBanner';
 
 /**
  * ADR-GOV-016 — Kök Denetimi (/admin/yonetim/kok-denetimi)
@@ -56,6 +57,8 @@ export default function KokDenetimiPage() {
           </div>
         ) : (
           <>
+            <StaleReportBanner stale={isGovReportStale(report)} />
+
             {/* Metrik kartları — RULE-06: her etiket veri sözlüğü tanımıdır */}
             <section className="grid grid-cols-2 gap-3 lg:grid-cols-4">
               {[

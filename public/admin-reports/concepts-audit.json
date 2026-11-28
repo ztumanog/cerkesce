@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-11-27T14:15:05.986Z",
-  "emptyConceptIds": 15,
-  "legacyConceptIdRecords": 29,
-  "legacyConceptIdValues": 80,
+  "generatedAt": "2026-11-28T17:25:31.620Z",
+  "emptyConceptIds": 16,
+  "legacyConceptIdRecords": 37,
+  "legacyConceptIdValues": 88,
   "conceptIdMismatch": 0,
-  "conceptFieldMismatch": 550,
+  "conceptFieldMismatch": 572,
   "wfDanglingConceptRefs": 341,
-  "wfDanglingConceptValues": 365,
+  "wfDanglingConceptValues": 364,
   "emptyConceptSamples": [
     "L-KBDNEW-40975",
     "L-KBDNEW-41042",
@@ -22,7 +22,8 @@
     "L-APAZHEV-YON-003",
     "L-APAZHEV-YON-004",
     "L-APAZHEV-YON-005",
-    "L-APAZHEV-YON-006"
+    "L-APAZHEV-YON-006",
+    "L-DU-INTERJ"
   ],
   "legacyRecordSamples": [
     {
@@ -277,6 +278,62 @@
       "conceptIds": [
         "SILK",
         "JANUARY"
+      ]
+    },
+    {
+      "id": "L-APAZHEV-G2-01",
+      "conceptId": "WALK",
+      "conceptIds": [
+        "WALK"
+      ]
+    },
+    {
+      "id": "L-APAZHEV-G2-02",
+      "conceptId": "SUPPORT",
+      "conceptIds": [
+        "SUPPORT"
+      ]
+    },
+    {
+      "id": "L-APAZHEV-G2-03",
+      "conceptId": "PULL",
+      "conceptIds": [
+        "PULL"
+      ]
+    },
+    {
+      "id": "L-APAZHEV-G2-11",
+      "conceptId": "HEART",
+      "conceptIds": [
+        "HEART"
+      ]
+    },
+    {
+      "id": "L-APAZHEV-G3-01",
+      "conceptId": "SHAME",
+      "conceptIds": [
+        "SHAME"
+      ]
+    },
+    {
+      "id": "L-APAZHEV-G3-03",
+      "conceptId": "HORSE",
+      "conceptIds": [
+        "HORSE"
+      ]
+    },
+    {
+      "id": "L-APAZHEV-G3-04",
+      "conceptId": "MOVE",
+      "conceptIds": [
+        "MOVE"
+      ]
+    },
+    {
+      "id": "L-APAZHEV-G3-05",
+      "conceptId": "DECAY",
+      "conceptIds": [
+        "DECAY"
       ]
     }
   ],

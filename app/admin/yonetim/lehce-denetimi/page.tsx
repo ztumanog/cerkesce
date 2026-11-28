@@ -1,5 +1,6 @@
 import Link from 'next/link';
-import { loadGovReport, formatGeneratedAt, DialectAuditReport } from '@/infra/governance/govReports';
+import { loadGovReport, formatGeneratedAt, isGovReportStale, DialectAuditReport } from '@/infra/governance/govReports';
+import StaleReportBanner from '@/components/governance/StaleReportBanner';
 
 /**
  * ADR-GOV-016 — Lehçe Denetimi v3 (/admin/yonetim/lehce-denetimi)
@@ -52,6 +53,8 @@ export default function LehceDenetimiPage() {
           </div>
         ) : (
           <>
+            <StaleReportBanner stale={isGovReportStale(report)} />
+
             {/* Metrik kartları */}
             <section className="grid grid-cols-2 gap-3 lg:grid-cols-4">
               {[

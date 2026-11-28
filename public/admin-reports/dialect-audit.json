@@ -1,17 +1,18 @@
 {
-  "generatedAt": "2026-11-27T14:15:05.988Z",
+  "generatedAt": "2026-11-28T17:25:31.622Z",
   "dialectDistribution": {
-    "KBD": 30597,
-    "COMMON": 7430,
+    "KBD": 30843,
+    "COMMON": 7435,
     "ADY": 3445
   },
   "invalidDialect": 0,
-  "apazhevMarked": 279,
+  "apazhevMarked": 518,
   "apazhevAdy": 0,
   "apazhevSamples": [],
   "multiDialectForms": 6,
   "crossDialectPairs": {
-    "ADY+KBD": 4,
+    "ADY+KBD": 3,
+    "ADY+COMMON": 1,
     "COMMON+KBD": 2
   },
   "multiDialectSamples": [
@@ -23,14 +24,14 @@
       ]
     },
     {
-      "form": "тыгъэ",
+      "form": "зэхэшэн",
       "dialects": [
         "ADY",
-        "KBD"
+        "COMMON"
       ]
     },
     {
-      "form": "зэхэщэн",
+      "form": "тыгъэ",
       "dialects": [
         "ADY",
         "KBD"

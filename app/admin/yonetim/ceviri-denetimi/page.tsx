@@ -1,5 +1,6 @@
 import Link from 'next/link';
-import { loadGovReport, formatGeneratedAt, TranslationsAuditReport, TranslationSample } from '@/infra/governance/govReports';
+import { loadGovReport, formatGeneratedAt, isGovReportStale, TranslationsAuditReport, TranslationSample } from '@/infra/governance/govReports';
+import StaleReportBanner from '@/components/governance/StaleReportBanner';
 
 /**
  * ADR-GOV-016 — Çeviri Denetimi v2 (/admin/yonetim/ceviri-denetimi)
@@ -14,6 +15,7 @@ export const dynamic = 'force-dynamic';
 
 function SampleTable({ title, note, items }: { title: string; note: string; items: TranslationSample[] }) {
   if (items.length === 0) return null;
+  const hasHits = items.some((s) => s.hits && s.hits.length > 0);
   return (
     <section className="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white p-6 shadow-sm dark:bg-slate-900">
       <h2 className="text-lg font-bold text-slate-900 dark:text-slate-100">{title}</h2>
@@ -27,6 +29,7 @@ function SampleTable({ title, note, items }: { title: string; note: string; item
             <thead>
               <tr className="border-b border-slate-200 text-xs uppercase tracking-wide text-slate-400 dark:border-slate-700">
                 <th className="py-2 pr-4 font-semibold">Lexeme</th>
+                {hasHits && <th className="py-2 pr-4 font-semibold">Eşleşme</th>}
                 <th className="py-2 font-semibold">Alan içeriği (ilk 120 karakter)</th>
               </tr>
             </thead>
@@ -36,6 +39,11 @@ function SampleTable({ title, note, items }: { title: string; note: string; item
                   <td className="py-2 pr-4 font-mono text-xs whitespace-nowrap">
                     <Link href={`/admin/curation/${encodeURIComponent(s.id)}`} className="text-blue-600 hover:underline">{s.id}</Link>
                   </td>
+                  {hasHits && (
+                    <td className="py-2 pr-4 font-mono text-xs text-amber-700 dark:text-amber-400 whitespace-nowrap">
+                      {s.hits ? s.hits.join(', ') : ''}
+                    </td>
+                  )}
                   <td className="py-2 text-slate-600 dark:text-slate-300" dir="auto">{s.value}</td>
                 </tr>
               ))}
@@ -87,12 +95,15 @@ export default function CeviriDenetimiPage() {
           </div>
         ) : (
           <>
+            <StaleReportBanner stale={isGovReportStale(report)} />
+
             {/* Metrik kartları — RULE-06: sözlük etiketleri */}
             <section className="grid grid-cols-2 gap-3 lg:grid-cols-4">
               {[
                 { label: 'TR alanında Kiril', value: report.trCyrillic, desc: 'TR karşılığında Kiril karakter' },
                 { label: 'TR alanında Arapça', value: report.trArabic, desc: 'TR karşılığında Arapça karakter' },
-                { label: 'TR İngilizce şüpheli', value: report.trEnglishSuspect, desc: 'Sabit fonksiyon kelimesi listesi (sözlükte tanımlı)' },
+                { label: 'TR İngilizce — A (tam)', value: report.trEnglishFull, desc: 'İngilizce kelime var, Türkçe karakter/Kiril yok' },
+                { label: 'TR İngilizce — B (karma)', value: report.trEnglishMixed, desc: 'İngilizce kelime + Türkçe karakter veya Kiril bir arada' },
                 { label: 'TR == EN', value: report.trEqualsEn, desc: 'Büyük/küçük harf duyarsız birebir aynı' },
                 { label: 'RU alanında Latin kelime', value: report.ruLatinWords, desc: 'RU karşılığında ≥3 harfli Latin kelime' },
                 { label: 'EN alanında Kiril', value: report.enCyrillic, desc: 'EN karşılığında Kiril karakter' },
@@ -125,9 +136,14 @@ export default function CeviriDenetimiPage() {
               items={report.samples.trCyrillic}
             />
             <SampleTable
-              title={`TR İngilizce Şüpheli (${report.trEnglishSuspect.toLocaleString('tr-TR')})`}
-              note="TR karşılığında İngilizce fonksiyon kelimesi geçen kayıtlar — listenin tam tanımı ADR-GOV-016 metrik sözlüğündedir."
-              items={report.samples.trEnglishSuspect}
+              title={`TR İngilizce — A: Tamamen İngilizce (${report.trEnglishFull.toLocaleString('tr-TR')})`}
+              note="TR karşılığı İngilizce kelime içeriyor ve Türkçe karakter/Kiril yok — çevrilmemiş kayıt adayları. Dedektör sözlüğü scripts/report-governance.mjs ve _inceleme/tr_ing_kategorize.py ile ortaktır (aynı sayıyı verir)."
+              items={report.samples.trEnglishFull}
+            />
+            <SampleTable
+              title={`TR İngilizce — B: Karma (${report.trEnglishMixed.toLocaleString('tr-TR')})`}
+              note="İngilizce kelime + Türkçe karakter/Kiril bir arada — yanlış pozitif olabilir (Türkçe 'not', 'an' gibi homograflar), insan incelemesi gerekir."
+              items={report.samples.trEnglishMixed}
             />
             <SampleTable
               title={`TR == EN (${report.trEqualsEn.toLocaleString('tr-TR')})`}

@@ -1,5 +1,6 @@
 import Link from 'next/link';
-import { loadGovReport, formatGeneratedAt, ConceptsAuditReport } from '@/infra/governance/govReports';
+import { loadGovReport, formatGeneratedAt, isGovReportStale, ConceptsAuditReport } from '@/infra/governance/govReports';
+import StaleReportBanner from '@/components/governance/StaleReportBanner';
 
 /**
  * ADR-GOV-016 — Kavram Denetimi (/admin/yonetim/kavram-denetimi)
@@ -53,6 +54,8 @@ export default function KavramDenetimiPage() {
           </div>
         ) : (
           <>
+            <StaleReportBanner stale={isGovReportStale(report)} />
+
             {/* Metrik kartları */}
             <section className="grid grid-cols-2 gap-3 lg:grid-cols-4">
               {[

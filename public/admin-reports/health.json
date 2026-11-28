@@ -1,23 +1,23 @@
 {
-  "generatedAt": "2026-11-27T14:15:05.985Z",
-  "lexemes": 41472,
-  "roots": 3670,
-  "wordFamilies": 7187,
+  "generatedAt": "2026-11-28T17:25:31.618Z",
+  "lexemes": 41723,
+  "roots": 3673,
+  "wordFamilies": 7192,
   "duplicateIds": 0,
   "brokenRootRefs": 0,
   "brokenWordFamilyRefs": 0,
   "posEmpty": 0,
   "fill": {
-    "wordFamilyEmpty": 3240,
-    "wordFamilyFillPct": 92.19,
-    "rootEmpty": 7063,
-    "rootFillPct": 82.97,
-    "arabicEmpty": 9049,
-    "arabicFillPct": 78.18,
-    "ipaEmpty": 829,
-    "conceptEmpty": 15,
+    "wordFamilyEmpty": 3224,
+    "wordFamilyFillPct": 92.27,
+    "rootEmpty": 7047,
+    "rootFillPct": 83.11,
+    "arabicEmpty": 9121,
+    "arabicFillPct": 78.14,
+    "ipaEmpty": 1075,
+    "conceptEmpty": 16,
     "conceptFillPct": 99.96,
-    "withExamples": 30947,
-    "exampleCoveragePct": 74.62
+    "withExamples": 30952,
+    "exampleCoveragePct": 74.18
   }
 }

@@ -3,6 +3,7 @@ import fs from "fs";
 import path from "path";
 import { validateCuration } from "../../../../src/lib/curationValidate";
 import { appendAudit, type AuditDiffEntry, type AuditEntry } from "../../../../src/lib/curation/auditLog";
+import { scheduleReportRefresh } from "@/infra/governance/reportRefresh";
 const LEX_PATH = path.join(process.cwd(), "public/data/linguistic/lexemes.json");
 const ROOTS_PATH = path.join(process.cwd(), "public/data/linguistic/roots.json");
 const FAM_PATH = path.join(process.cwd(), "public/data/linguistic/word_families.json");
@@ -225,6 +226,10 @@ export async function POST(req: Request) {
     } catch {
       warnings.push({ id: "AUDIT", warning: "Audit log yazilamadi, ana veri yazildi." });
     }
+
+    // ADR-GOV-016 Seçenek C: veri değişti — governance raporları arka planda yenilenir
+    scheduleReportRefresh();
+
     return NextResponse.json({ ok: true, applied: ok.length, failed: errors.length, errors, warnings, backup: bak, backupRoots: bakRoot, createdRoots, createdFams, note: "commit terminalden" });
   } catch (e: any) {
     return NextResponse.json({ ok: false, error: e?.message ?? "hata" }, { status: 500 });
