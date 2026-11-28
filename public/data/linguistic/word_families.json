@@ -17545,10 +17545,11 @@
       "L-WIKT-KBD-30119",
       "L-WIKT-KBD-30530",
       "L-WIKT-KBD-30532",
-      "L-MELYR"
+      "L-MELYR",
+      "L-HAKUNOV-PLANT-174"
     ],
     "productivity": {
-      "totalLexemes": 26,
+      "totalLexemes": 36,
       "corpusFrequency": 399
     },
     "conceptIds": [
@@ -17720,10 +17721,14 @@
       "L-WIKT-KBD-28153",
       "L-WIKT-KBD-29166",
       "L-WIKT-KBD-29868",
-      "L-WIKT-KBD-30528"
+      "L-WIKT-KBD-30528",
+      "L-HAKUNOV-PLANT-169",
+      "L-HAKUNOV-PLANT-170",
+      "L-HAKUNOV-PLANT-171",
+      "L-HAKUNOV-PLANT-172"
     ],
     "productivity": {
-      "totalLexemes": 46,
+      "totalLexemes": 56,
       "corpusFrequency": 778
     },
     "rootForm": "мэз",
@@ -18062,10 +18067,12 @@
       "L-MYSHCHEXUPSHCH",
       "L-MYSHCHEXUZH",
       "L-MYSHE",
-      "L-WIKT-KBD-29599"
+      "L-WIKT-KBD-29599",
+      "L-HAKUNOV-PLANT-177",
+      "L-HAKUNOV-PLANT-178"
     ],
     "productivity": {
-      "totalLexemes": 9,
+      "totalLexemes": 12,
       "corpusFrequency": 94
     },
     "conceptIds": [
@@ -33576,10 +33583,11 @@
     "_source": "word_families.json",
     "lexemeIds": [
       "L-UTS",
-      "L-WIKT-KBD-30241"
+      "L-WIKT-KBD-30241",
+      "L-HAKUNOV-PLANT-167"
     ],
     "productivity": {
-      "totalLexemes": 1,
+      "totalLexemes": 3,
       "corpusFrequency": 101
     },
     "rootForm": "уц",
@@ -71039,11 +71047,12 @@
       "L-SHEYEFAP-E",
       "L-SHEYUDZ",
       "L-WIKT-KBD-34533",
-      "L-HAKUNOV-PLANT-146"
+      "L-HAKUNOV-PLANT-146",
+      "L-HAKUNOV-PLANT-173"
     ],
     "notes": "бот. чай ( Fhea s ailesi (шей).",
     "productivity": {
-      "totalLexemes": 8,
+      "totalLexemes": 9,
       "corpusFrequency": 0
     },
     "_source": "lexemes-sync-2026",
@@ -78429,11 +78438,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-MEKHYCHPKHAFE"
+      "L-MEKHYCHPKHAFE",
+      "L-HAKUNOV-PLANT-176"
     ],
     "notes": "Bahar, baharat ailesi (мэхъыч).",
     "productivity": {
-      "totalLexemes": 1,
+      "totalLexemes": 2,
       "corpusFrequency": 0
     },
     "_source": "lexemes-sync-2026",
@@ -96128,11 +96138,12 @@
     ],
     "morphemeIds": [],
     "lexemeIds": [
-      "L-AUTO-00871"
+      "L-AUTO-00871",
+      "L-HAKUNOV-PLANT-175"
     ],
     "notes": "бот. коричник китайский (cinnamomum aromaticum ) (bot. cinnamomum chinese (cinnamomum aromaticum)) ailesi (мэрчэн).",
     "productivity": {
-      "totalLexemes": 1,
+      "totalLexemes": 2,
       "corpusFrequency": 0
     },
     "_source": "lexemes-sync-2026",
@@ -169032,7 +169043,8 @@
       "L-WIKT-KBD-29766",
       "L-ZHYGYFE",
       "L-HAKUNOV-PLANT-137",
-      "L-HAKUNOV-PLANT-156"
+      "L-HAKUNOV-PLANT-156",
+      "L-HAKUNOV-PLANT-168"
     ]
   },
   {
