@@ -14748,10 +14748,12 @@
       "L-APAZHEV-P2-035",
       "L-APAZHEV-P3-002",
       "L-APAZHEV-P4-014",
-      "L-APAZHEV-G2-09"
+      "L-APAZHEV-G2-09",
+      "L-APAZHEV-G6-02",
+      "L-APAZHEV-G6-07"
     ],
     "productivity": {
-      "totalLexemes": 177,
+      "totalLexemes": 179,
       "corpusFrequency": 950
     },
     "conceptIds": [
@@ -21470,10 +21472,11 @@
       "L-APAZHEV-P2-034",
       "L-APAZHEV-P2-052",
       "L-APAZHEV-P2-053",
-      "L-APAZHEV-P3-047"
+      "L-APAZHEV-P3-047",
+      "L-APAZHEV-G6-03"
     ],
     "productivity": {
-      "totalLexemes": 649,
+      "totalLexemes": 643,
       "corpusFrequency": 22250
     },
     "rootForm": "пэ",
@@ -22028,10 +22031,11 @@
       "L-ZEPLHEK-UEN",
       "L-ZEXEPLHENYGHE",
       "L-KEAPLHENYBZ",
-      "L-KHEPLE"
+      "L-KHEPLE",
+      "L-APAZHEV-G6-05"
     ],
     "productivity": {
-      "totalLexemes": 31,
+      "totalLexemes": 32,
       "corpusFrequency": 0
     },
     "rootForm": "плъэ",
@@ -53974,11 +53978,12 @@
       "L-WIKT-KBD-35010",
       "L-WIKT-KBD-35911",
       "L-ZEGHEBEZHYN",
-      "L-ZEGHEBYN"
+      "L-ZEGHEBYN",
+      "L-APAZHEV-G6-06"
     ],
     "notes": "Eğilmek, bükülmek ailesi (б).",
     "productivity": {
-      "totalLexemes": 9,
+      "totalLexemes": 24,
       "corpusFrequency": 5
     },
     "_source": "lexemes-sync-2026",
@@ -72984,11 +72989,12 @@
     "lexemeIds": [
       "L-KEAMYSHYK",
       "L-KEAMYSHYKUE",
-      "L-WIKT-KBD-29612"
+      "L-WIKT-KBD-29612",
+      "L-APAZHEV-G6-04"
     ],
     "notes": "el bilegi ailesi (къамышы).",
     "productivity": {
-      "totalLexemes": 2,
+      "totalLexemes": 4,
       "corpusFrequency": 0
     },
     "_source": "lexemes-sync-2026",
@@ -165970,7 +165976,8 @@
       "L-WIKT-KBD-37021",
       "L-WIKT-KBD-37192",
       "L-WIKT-KBD-37217",
-      "L-WIKT-KBD-37257"
+      "L-WIKT-KBD-37257",
+      "L-APAZHEV-G6-01"
     ],
     "conceptIds": [
       "CONTENT",
