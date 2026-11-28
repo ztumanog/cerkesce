@@ -758,10 +758,14 @@
       "L-APAZHEV-P3-036",
       "L-APAZHEV-P3-039",
       "L-APAZHEV-P4-002",
-      "L-APAZHEV-G13-03"
+      "L-APAZHEV-G13-03",
+      "L-APAZHEV-G14-13",
+      "L-APAZHEV-G14-17",
+      "L-APAZHEV-G14-18",
+      "L-APAZHEV-G14-19"
     ],
     "productivity": {
-      "totalLexemes": 547,
+      "totalLexemes": 551,
       "corpusFrequency": 8766
     },
     "rootForm": "Ӏэ",
@@ -13665,10 +13669,13 @@
       "L-KBDNEW-40875",
       "L-APAZHEV-P2-045",
       "L-APAZHEV-G12-11",
-      "L-APAZHEV-G13-13"
+      "L-APAZHEV-G13-13",
+      "L-APAZHEV-G14-12",
+      "L-APAZHEV-G14-15",
+      "L-APAZHEV-G14-16"
     ],
     "productivity": {
-      "totalLexemes": 477,
+      "totalLexemes": 480,
       "corpusFrequency": 6595
     },
     "rootForm": "хы",
@@ -24887,10 +24894,13 @@
       "L-APAZHEV-P2-048",
       "L-APAZHEV-P2-049",
       "L-APAZHEV-P2-050",
-      "L-APAZHEV-P4-017"
+      "L-APAZHEV-P4-017",
+      "L-APAZHEV-G14-03",
+      "L-APAZHEV-G14-05",
+      "L-APAZHEV-G14-06"
     ],
     "productivity": {
-      "totalLexemes": 208,
+      "totalLexemes": 296,
       "corpusFrequency": 11450
     },
     "conceptIds": [
@@ -25705,10 +25715,11 @@
       "L-ZYSHCH1E",
       "L-ZYSHCH1EREY",
       "L-ZYXESHCH-E",
-      "L-APAZHEV-P2-016"
+      "L-APAZHEV-P2-016",
+      "L-APAZHEV-G14-09"
     ],
     "productivity": {
-      "totalLexemes": 392,
+      "totalLexemes": 406,
       "corpusFrequency": 679
     },
     "rootForm": "щӀэ",
@@ -28849,10 +28860,12 @@
       "L-BRATOV-BIRD-045",
       "L-BRATOV-BIRD-046",
       "L-BRATOV-BIRD-069",
-      "L-APAZHEV-G2-10"
+      "L-APAZHEV-G2-10",
+      "L-APAZHEV-G14-01",
+      "L-APAZHEV-G14-02"
     ],
     "productivity": {
-      "totalLexemes": 757,
+      "totalLexemes": 759,
       "corpusFrequency": 13114
     },
     "conceptIds": [
@@ -41443,12 +41456,13 @@
       "L-KBD-02081",
       "L-APAZHEV-G9-05",
       "L-APAZHEV-G11-23",
-      "L-APAZHEV-G12-08"
+      "L-APAZHEV-G12-08",
+      "L-APAZHEV-G14-11"
     ],
     "notes": "Arapca odunc: ikrar (yemin/karar).",
     "_source": "kue99-1",
     "productivity": {
-      "totalLexemes": 6,
+      "totalLexemes": 7,
       "corpusFrequency": 23
     },
     "conceptIds": [
@@ -44593,11 +44607,12 @@
       "L-APAZHEV-G9-07",
       "L-APAZHEV-G9-08",
       "L-APAZHEV-G11-09",
-      "L-APAZHEV-G12-24"
+      "L-APAZHEV-G12-24",
+      "L-APAZHEV-G14-08"
     ],
     "notes": "null ailesi (гущӀ).",
     "productivity": {
-      "totalLexemes": 143,
+      "totalLexemes": 144,
       "corpusFrequency": 15522
     },
     "_source": "lexemes-sync-2026",
@@ -51073,11 +51088,12 @@
       "L-XETK-UEBZEN",
       "L-XETK-UEN",
       "L-XETK-UHYN",
-      "L-ZHEDEGHETK-UEN"
+      "L-ZHEDEGHETK-UEN",
+      "L-APAZHEV-G14-10"
     ],
     "notes": "DAMLAMAK ailesi (ткӀу).",
     "productivity": {
-      "totalLexemes": 15,
+      "totalLexemes": 48,
       "corpusFrequency": 15
     },
     "_source": "lexemes-sync-2026",
@@ -62732,11 +62748,12 @@
       "L-ZE-YHLY",
       "L-WIKT-KBD-29371",
       "L-WIKT-KBD-30078",
-      "L-WIKT-KBD-34522"
+      "L-WIKT-KBD-34522",
+      "L-APAZHEV-G14-14"
     ],
     "notes": "blood relations ailesi (Ӏыхьлы).",
     "productivity": {
-      "totalLexemes": 3,
+      "totalLexemes": 6,
       "corpusFrequency": 0
     },
     "_source": "lexemes-sync-2026",
@@ -72214,11 +72231,12 @@
       "L-WIKT-KBD-28255",
       "L-WIKT-KBD-28459",
       "L-WIKT-KBD-30820",
-      "L-WIKT-KBD-32454"
+      "L-WIKT-KBD-32454",
+      "L-APAZHEV-G14-04"
     ],
     "notes": "ÜSTÜNE ailesi (щӀыӀу).",
     "productivity": {
-      "totalLexemes": 5,
+      "totalLexemes": 10,
       "corpusFrequency": 0
     },
     "_source": "lexemes-sync-2026",
@@ -76451,11 +76469,12 @@
       "L-XEK-IIK-YN",
       "L-ZESHCH-EK-IEN",
       "L-ZETEK-IEN",
-      "L-APAZHEV-P4-029"
+      "L-APAZHEV-P4-029",
+      "L-APAZHEV-G14-07"
     ],
     "notes": "null ailesi (кӀыхьагъэ).",
     "productivity": {
-      "totalLexemes": 8,
+      "totalLexemes": 27,
       "corpusFrequency": 0
     },
     "_source": "lexemes-sync-2026",
