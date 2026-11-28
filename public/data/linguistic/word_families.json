@@ -822,10 +822,11 @@
       "L-WIKT-KBD-28826",
       "L-WIKT-KBD-33120",
       "L-WIKT-KBD-33121",
-      "L-ZIMY-UEXU"
+      "L-ZIMY-UEXU",
+      "L-APAZHEV-G11-19"
     ],
     "productivity": {
-      "totalLexemes": 26,
+      "totalLexemes": 31,
       "corpusFrequency": 1499
     },
     "rootForm": "Ӏуэху",
@@ -3813,10 +3814,11 @@
       "L-WIKT-KBD-35232",
       "L-WIKT-KBD-35919",
       "L-WIKT-KBD-35923",
-      "L-WIKT-KBD-36459"
+      "L-WIKT-KBD-36459",
+      "L-APAZHEV-G11-15"
     ],
     "productivity": {
-      "totalLexemes": 9,
+      "totalLexemes": 47,
       "corpusFrequency": 153
     },
     "rootForm": "бзэ",
@@ -7361,10 +7363,13 @@
       "L-APAZHEV-P1-051",
       "L-EFAK1UENYGE",
       "L-ZYKHEFYKHYN",
-      "L-APAZHEV-P2-004"
+      "L-APAZHEV-P2-004",
+      "L-APAZHEV-G11-10",
+      "L-APAZHEV-G11-11",
+      "L-APAZHEV-G11-14"
     ],
     "productivity": {
-      "totalLexemes": 193,
+      "totalLexemes": 238,
       "corpusFrequency": 4058
     },
     "rootForm": "ф",
@@ -7894,10 +7899,12 @@
       "L-ZEPEFIIN",
       "L-APAZHEV-P2-067",
       "L-APAZHEV-P4-036",
-      "L-APAZHEV-P4-037"
+      "L-APAZHEV-P4-037",
+      "L-APAZHEV-G11-13",
+      "L-APAZHEV-G11-22"
     ],
     "productivity": {
-      "totalLexemes": 59,
+      "totalLexemes": 105,
       "corpusFrequency": 2085
     },
     "conceptIds": [
@@ -12197,10 +12204,11 @@
       "L-KHUABEPSHCH",
       "L-SHCHKHEKHUABE",
       "L-APAZHEV-P2-010",
-      "L-APAZHEV-P3-029"
+      "L-APAZHEV-P3-029",
+      "L-APAZHEV-G11-18"
     ],
     "productivity": {
-      "totalLexemes": 13,
+      "totalLexemes": 16,
       "corpusFrequency": 158
     },
     "conceptIds": [
@@ -12229,10 +12237,11 @@
       "L-XUABZH",
       "L-XUABZHE",
       "L-XUABZHYRYZEK-UE",
-      "L-ZYGHEXUABZHYN"
+      "L-ZYGHEXUABZHYN",
+      "L-APAZHEV-G11-17"
     ],
     "productivity": {
-      "totalLexemes": 8,
+      "totalLexemes": 10,
       "corpusFrequency": 512
     },
     "rootForm": "хуабжь",
@@ -32795,10 +32804,11 @@
       "L-WIKT-KBD-31549",
       "L-WIKT-KBD-34687",
       "L-WIKT-KBD-36019",
-      "L-WIKT-KBD-36126"
+      "L-WIKT-KBD-36126",
+      "L-APAZHEV-G11-07"
     ],
     "productivity": {
-      "totalLexemes": 42,
+      "totalLexemes": 47,
       "corpusFrequency": 294
     },
     "rootForm": "уэс",
@@ -33198,10 +33208,11 @@
       "L-WIKT-KBD-35244",
       "L-WIKT-KBD-35274",
       "L-WIKT-KBD-35832",
-      "L-KHEKHYGUE-37736"
+      "L-KHEKHYGUE-37736",
+      "L-APAZHEV-G11-08"
     ],
     "productivity": {
-      "totalLexemes": 13,
+      "totalLexemes": 21,
       "corpusFrequency": 63
     },
     "rootForm": "Ӏун",
@@ -39120,10 +39131,13 @@
       "L-KBD-03491",
       "L-SHPILKE",
       "L-PARIK",
-      "L-SHTOPOR"
+      "L-SHTOPOR",
+      "L-APAZHEV-G11-02",
+      "L-APAZHEV-G11-20",
+      "L-APAZHEV-G11-21"
     ],
     "productivity": {
-      "totalLexemes": 12,
+      "totalLexemes": 15,
       "corpusFrequency": 69
     },
     "rootForm": "loan-russian",
@@ -41390,12 +41404,13 @@
       "L-ELBETEU",
       "L-YAZYRER",
       "L-KBD-02081",
-      "L-APAZHEV-G9-05"
+      "L-APAZHEV-G9-05",
+      "L-APAZHEV-G11-23"
     ],
     "notes": "Arapca odunc: ikrar (yemin/karar).",
     "_source": "kue99-1",
     "productivity": {
-      "totalLexemes": 4,
+      "totalLexemes": 5,
       "corpusFrequency": 23
     },
     "conceptIds": [
@@ -44537,11 +44552,12 @@
       "L-APAZHEV-P3-003",
       "L-APAZHEV-G8-03",
       "L-APAZHEV-G9-07",
-      "L-APAZHEV-G9-08"
+      "L-APAZHEV-G9-08",
+      "L-APAZHEV-G11-09"
     ],
     "notes": "null ailesi (гущӀ).",
     "productivity": {
-      "totalLexemes": 141,
+      "totalLexemes": 142,
       "corpusFrequency": 15522
     },
     "_source": "lexemes-sync-2026",
@@ -45227,11 +45243,12 @@
       "L-KBDNEW-40901",
       "L-APAZHEV-P2-024",
       "L-APAZHEV-P4-041",
-      "L-APAZHEV-G10-13"
+      "L-APAZHEV-G10-13",
+      "L-APAZHEV-G11-06"
     ],
     "notes": "içeri su vurmak ailesi (у).",
     "productivity": {
-      "totalLexemes": 141,
+      "totalLexemes": 142,
       "corpusFrequency": 124
     },
     "_source": "lexemes-sync-2026",
@@ -45966,11 +45983,15 @@
       "L-ZHEDEGHETYN",
       "L-ZIET-ANE",
       "L-ZIT-EN",
-      "L-ZYKEIT-EN"
+      "L-ZYKEIT-EN",
+      "L-APAZHEV-G11-01",
+      "L-APAZHEV-G11-03",
+      "L-APAZHEV-G11-04",
+      "L-APAZHEV-G11-05"
     ],
     "notes": "KAZIMAK ailesi (т).",
     "productivity": {
-      "totalLexemes": 55,
+      "totalLexemes": 114,
       "corpusFrequency": 62
     },
     "_source": "lexemes-sync-2026",
@@ -72216,11 +72237,12 @@
       "L-WIKT-KBD-35741",
       "L-WIKT-KBD-36087",
       "L-WIKT-KBD-36457",
-      "L-WIKT-KBD-37282"
+      "L-WIKT-KBD-37282",
+      "L-APAZHEV-G11-16"
     ],
     "notes": "yikamak (лъэс) ailesi (лъэс).",
     "productivity": {
-      "totalLexemes": 8,
+      "totalLexemes": 28,
       "corpusFrequency": 1102
     },
     "_source": "lexemes-sync-2026",
@@ -74644,11 +74666,12 @@
       "L-ZILHEFYHYN",
       "L-ZY-URYLHEFEN",
       "L-ZYLHEFYN",
-      "L-WIKT-KBD-35420"
+      "L-WIKT-KBD-35420",
+      "L-APAZHEV-G11-12"
     ],
     "notes": "suruklemek (лъэф) ailesi (лъэф).",
     "productivity": {
-      "totalLexemes": 41,
+      "totalLexemes": 131,
       "corpusFrequency": 162
     },
     "_source": "lexemes-sync-2026",
@@ -166053,7 +166076,8 @@
       "L-WIKT-KBD-37217",
       "L-WIKT-KBD-37257",
       "L-APAZHEV-G6-01",
-      "L-APAZHEV-G8-02"
+      "L-APAZHEV-G8-02",
+      "L-APAZHEV-G11-24"
     ],
     "conceptIds": [
       "CONTENT",
