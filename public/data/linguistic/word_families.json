@@ -757,10 +757,11 @@
       "L-APAZHEV-P3-035",
       "L-APAZHEV-P3-036",
       "L-APAZHEV-P3-039",
-      "L-APAZHEV-P4-002"
+      "L-APAZHEV-P4-002",
+      "L-APAZHEV-G13-03"
     ],
     "productivity": {
-      "totalLexemes": 540,
+      "totalLexemes": 547,
       "corpusFrequency": 8766
     },
     "rootForm": "Ӏэ",
@@ -13663,10 +13664,11 @@
       "L-APAZHEV-P1-058",
       "L-KBDNEW-40875",
       "L-APAZHEV-P2-045",
-      "L-APAZHEV-G12-11"
+      "L-APAZHEV-G12-11",
+      "L-APAZHEV-G13-13"
     ],
     "productivity": {
-      "totalLexemes": 476,
+      "totalLexemes": 477,
       "corpusFrequency": 6595
     },
     "rootForm": "хы",
@@ -26393,10 +26395,11 @@
       "L-APAZHEV-P4-003",
       "L-APAZHEV-G12-05",
       "L-APAZHEV-G12-06",
-      "L-APAZHEV-G12-07"
+      "L-APAZHEV-G12-07",
+      "L-APAZHEV-G13-02"
     ],
     "productivity": {
-      "totalLexemes": 475,
+      "totalLexemes": 476,
       "corpusFrequency": 13470
     },
     "conceptIds": [
@@ -28008,10 +28011,12 @@
       "L-HAKUNOV-PLANT-061",
       "L-HAKUNOV-PLANT-062",
       "L-WIKT-KBD-35234",
-      "L-KBDNEW-41032"
+      "L-KBDNEW-41032",
+      "L-APAZHEV-G13-15",
+      "L-APAZHEV-G13-16"
     ],
     "productivity": {
-      "totalLexemes": 314,
+      "totalLexemes": 312,
       "corpusFrequency": 8497
     },
     "rootForm": "щэ",
@@ -29429,10 +29434,11 @@
       "L-SHXUZHKUEAPE",
       "L-VERIFIED-00582",
       "L-VERIFIED-02520",
-      "L-WIKT-KBD-29800"
+      "L-WIKT-KBD-29800",
+      "L-APAZHEV-G13-12"
     ],
     "productivity": {
-      "totalLexemes": 11,
+      "totalLexemes": 13,
       "corpusFrequency": 23
     },
     "rootForm": "шху",
@@ -29930,10 +29936,12 @@
       "L-APAZHEV-P3-019",
       "L-APAZHEV-P3-022",
       "L-APAZHEV-P4-001",
-      "L-APAZHEV-P4-011"
+      "L-APAZHEV-P4-011",
+      "L-APAZHEV-G13-11",
+      "L-APAZHEV-G13-14"
     ],
     "productivity": {
-      "totalLexemes": 303,
+      "totalLexemes": 314,
       "corpusFrequency": 6513
     },
     "conceptIds": [
@@ -31859,10 +31867,14 @@
       "L-VERIFIED-00766",
       "L-VERIFIED-01179",
       "L-WIKT-KBD-32881",
-      "L-WIKT-KBD-37481"
+      "L-WIKT-KBD-37481",
+      "L-APAZHEV-G13-04",
+      "L-APAZHEV-G13-05",
+      "L-APAZHEV-G13-06",
+      "L-APAZHEV-G13-08"
     ],
     "productivity": {
-      "totalLexemes": 21,
+      "totalLexemes": 28,
       "corpusFrequency": 491
     },
     "conceptIds": [
@@ -31930,10 +31942,11 @@
       "L-WIKT-KBD-32048",
       "L-WIKT-KBD-34091",
       "L-WIKT-KBD-36037",
-      "L-ZERYTS1YKHU"
+      "L-ZERYTS1YKHU",
+      "L-APAZHEV-G13-07"
     ],
     "productivity": {
-      "totalLexemes": 44,
+      "totalLexemes": 50,
       "corpusFrequency": 10011
     },
     "conceptIds": [
@@ -42297,11 +42310,12 @@
       "L-WIKT-KBD-28395",
       "L-WIKT-KBD-30671",
       "L-WIKT-KBD-30672",
-      "L-MYTS1ERY1UE"
+      "L-MYTS1ERY1UE",
+      "L-APAZHEV-G13-09"
     ],
     "morphemeIds": [],
     "productivity": {
-      "totalLexemes": 51,
+      "totalLexemes": 58,
       "corpusFrequency": 7616
     },
     "notes": "Faz 5 / Adım 5.3: WF-1E temizliği",
@@ -50727,11 +50741,12 @@
       "L-WIKT-KBD-30792",
       "L-WIKT-KBD-30793",
       "L-APAZHEV-P3-020",
-      "L-APAZHEV-G7-10"
+      "L-APAZHEV-G7-10",
+      "L-APAZHEV-G13-10"
     ],
     "notes": "buzağı ailesi (шкӀ).",
     "productivity": {
-      "totalLexemes": 14,
+      "totalLexemes": 15,
       "corpusFrequency": 23
     },
     "_source": "lexemes-sync-2026",
@@ -60032,11 +60047,12 @@
       "L-ZEPSHCHEFY-EN",
       "L-ZERYGHEPSHCHYN",
       "L-ZYGHEPSHCHYN",
-      "L-ZYPSHCH"
+      "L-ZYPSHCH",
+      "L-APAZHEV-G13-01"
     ],
     "notes": "ÇAKMAK ailesi (пщ).",
     "productivity": {
-      "totalLexemes": 57,
+      "totalLexemes": 105,
       "corpusFrequency": 0
     },
     "_source": "lexemes-sync-2026",
