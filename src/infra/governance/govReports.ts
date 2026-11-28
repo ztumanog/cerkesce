@@ -88,6 +88,7 @@ export interface ConceptsAuditReport {
 export interface TranslationSample {
   id: string;
   value: string;
+  hits?: string[];
 }
 
 export interface TranslationsAuditReport {
@@ -97,7 +98,10 @@ export interface TranslationsAuditReport {
   enCyrillic: number;
   enArabic: number;
   ruLatinWords: number;
-  trEnglishSuspect: number;
+  /** A: TR alanında İngilizce kelime var, Türkçe karakter/Kiril yok */
+  trEnglishFull: number;
+  /** B: TR alanında İngilizce kelime var, Türkçe karakter veya Kiril de var (karma) */
+  trEnglishMixed: number;
   trEqualsEn: number;
   trEmpty: number;
   enEmpty: number;
@@ -109,7 +113,8 @@ export interface TranslationsAuditReport {
     enCyrillic: TranslationSample[];
     enArabic: TranslationSample[];
     ruLatinWords: TranslationSample[];
-    trEnglishSuspect: TranslationSample[];
+    trEnglishFull: TranslationSample[];
+    trEnglishMixed: TranslationSample[];
     trEqualsEn: TranslationSample[];
   };
 }
@@ -172,5 +177,27 @@ export function formatGeneratedAt(iso: string): string {
     });
   } catch {
     return iso;
+  }
+}
+
+/**
+ * ADR-GOV-016 — Seçenek D: Bayatlık göstergesi.
+ *
+ * lexemes.json dosyasının değiştirilme zamanı raporun generatedAt'inden
+ * yeniyse rapor bayattır. Bu yalnızca bir UYARI üretir; hesap yapılmaz
+ * (RULE-05) ve ekran yine salt okunurdur.
+ */
+export function isGovReportStale(report: { generatedAt: string }): boolean {
+  try {
+    const lexemesFile = path.join(
+      process.cwd(), 'public', 'data', 'linguistic', 'lexemes.json',
+    );
+    const lexMtime = fs.statSync(lexemesFile).mtimeMs;
+    const generated = Date.parse(report.generatedAt);
+    if (!Number.isFinite(generated)) return false;
+    // 1 sn tolerans: aynı anda üretilen rapor ile yazım çakışması
+    return lexMtime > generated + 1000;
+  } catch {
+    return false;
   }
 }
