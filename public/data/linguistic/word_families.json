@@ -9917,10 +9917,11 @@
       "L-APAZHEV-G12-21",
       "L-APAZHEV-G12-22",
       "L-APAZHEV-G12-23",
-      "L-APAZHEV-G12-25"
+      "L-APAZHEV-G12-25",
+      "L-HAKUNOV-PLANT-213"
     ],
     "productivity": {
-      "totalLexemes": 300,
+      "totalLexemes": 301,
       "corpusFrequency": 542
     },
     "conceptIds": [
@@ -12926,10 +12927,12 @@
       "L-ZYSHCHYUKHUMEN",
       "L-HAKUNOV-PLANT-033",
       "L-HAKUNOV-PLANT-035",
-      "L-WIKT-KBD-35397"
+      "L-WIKT-KBD-35397",
+      "L-HAKUNOV-PLANT-211",
+      "L-HAKUNOV-PLANT-212"
     ],
     "productivity": {
-      "totalLexemes": 403,
+      "totalLexemes": 320,
       "corpusFrequency": 6171
     },
     "rootForm": "хъум",
@@ -32615,10 +32618,11 @@
       "L-HAKUNOV-PLANT-165",
       "L-HAKUNOV-PLANT-196",
       "L-HAKUNOV-PLANT-200",
-      "L-HAKUNOV-PLANT-201"
+      "L-HAKUNOV-PLANT-201",
+      "L-HAKUNOV-PLANT-202"
     ],
     "productivity": {
-      "totalLexemes": 31,
+      "totalLexemes": 32,
       "corpusFrequency": 237
     },
     "rootForm": "удз",
@@ -33355,10 +33359,11 @@
       "L-WIKT-KBD-33459",
       "L-WIKT-KBD-33713",
       "L-WIKT-KBD-33955",
-      "L-WIKT-KBD-34656"
+      "L-WIKT-KBD-34656",
+      "L-HAKUNOV-PLANT-203"
     ],
     "productivity": {
-      "totalLexemes": 19,
+      "totalLexemes": 29,
       "corpusFrequency": 27
     },
     "rootForm": "унэ",
@@ -33601,10 +33606,12 @@
       "L-WIKT-KBD-30241",
       "L-HAKUNOV-PLANT-167",
       "L-HAKUNOV-PLANT-182",
-      "L-HAKUNOV-PLANT-193"
+      "L-HAKUNOV-PLANT-193",
+      "L-HAKUNOV-PLANT-205",
+      "L-HAKUNOV-PLANT-206"
     ],
     "productivity": {
-      "totalLexemes": 5,
+      "totalLexemes": 7,
       "corpusFrequency": 101
     },
     "rootForm": "уц",
@@ -41673,11 +41680,12 @@
     "id": "WF-FROG",
     "notes": "handyrqua - kurbaga ailesi",
     "lexemeIds": [
-      "L-HENDYRKUEAKUEE"
+      "L-HENDYRKUEAKUEE",
+      "L-HAKUNOV-PLANT-215"
     ],
     "_source": "kue99-2a",
     "productivity": {
-      "totalLexemes": 1,
+      "totalLexemes": 2,
       "corpusFrequency": 15
     },
     "conceptIds": [
@@ -41757,11 +41765,12 @@
       "L-HAKUNOV-PLANT-138",
       "L-HAKUNOV-PLANT-153",
       "L-HAKUNOV-PLANT-154",
-      "L-HAKUNOV-PLANT-199"
+      "L-HAKUNOV-PLANT-199",
+      "L-HAKUNOV-PLANT-209"
     ],
     "_source": "kue99-2a",
     "productivity": {
-      "totalLexemes": 16,
+      "totalLexemes": 17,
       "corpusFrequency": 23
     },
     "conceptIds": [
@@ -44102,7 +44111,8 @@
       "L-THEMPE",
       "L-THEMPEXER",
       "L-TKHEMPENSHE",
-      "L-HAKUNOV-PLANT-052"
+      "L-HAKUNOV-PLANT-052",
+      "L-HAKUNOV-PLANT-214"
     ],
     "primaryMeaning": "yaprak, sayfa",
     "notes": "Faz 13: yaprak ailesi. тхьэмпэ = yaprak, тхьапэ = sayfa",
@@ -44112,7 +44122,7 @@
       "LEAF"
     ],
     "productivity": {
-      "totalLexemes": 6,
+      "totalLexemes": 10,
       "corpusFrequency": 211
     },
     "rootForm": "тхьэмпэ",
@@ -80709,11 +80719,12 @@
       "L-BZHYNYSHCHKHUE",
       "L-BZHYNYXUKHU",
       "L-KHEKHYGUE-37521",
-      "L-WIKT-KBD-29602"
+      "L-WIKT-KBD-29602",
+      "L-HAKUNOV-PLANT-208"
     ],
     "notes": "SOĞAN ailesi (бжьын).",
     "productivity": {
-      "totalLexemes": 4,
+      "totalLexemes": 8,
       "corpusFrequency": 0
     },
     "_source": "lexemes-sync-2026",
@@ -86581,11 +86592,13 @@
       "L-KEEBZHYLAFE",
       "L-KHEKHYGUE-38071",
       "L-WIKT-KBD-29432",
-      "L-HAKUNOV-PLANT-155"
+      "L-HAKUNOV-PLANT-155",
+      "L-HAKUNOV-PLANT-204",
+      "L-HAKUNOV-PLANT-210"
     ],
     "notes": "sarı ailesi (къэб).",
     "productivity": {
-      "totalLexemes": 7,
+      "totalLexemes": 9,
       "corpusFrequency": 0
     },
     "_source": "lexemes-sync-2026",
@@ -169065,7 +169078,8 @@
       "L-HAKUNOV-PLANT-137",
       "L-HAKUNOV-PLANT-156",
       "L-HAKUNOV-PLANT-168",
-      "L-HAKUNOV-PLANT-194"
+      "L-HAKUNOV-PLANT-194",
+      "L-HAKUNOV-PLANT-207"
     ]
   },
   {
