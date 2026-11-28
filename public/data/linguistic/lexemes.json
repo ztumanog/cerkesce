@@ -4467,7 +4467,7 @@
     "id": "L-SHE",
     "form": "шэ",
     "ipa": "/ʂɐ/",
-    "literalMeaning": "sut, lateks",
+    "literalMeaning": "süt, lateks",
     "conceptIds": [
       "MILK",
       "BULLET",
@@ -4492,7 +4492,7 @@
         "tr": "1. yağ 2. üç kere 3. yüz 4. partikel"
       }
     },
-    "notes": "C-11.3: sut/lateks. Homonim: L-SHE2 (mermi). Korpus: 16748. [Çok anlamlı: 1. süt 2. kurşun/mermi 3. yağ (iç yağı)] [Diyalekt: Adigece щэ ↔ Kabardeyce шэ]",
+    "notes": "C-11.3: sut/lateks. Korpus: 16748. KBD: süt. ADY yağ/kurşun anlamları ayrı kayıtlarda: yağ -> L-SHHE (щэ), kurşun -> R-SHE2 ikincil anlam.",
     "corpusFrequencyAdy": 7,
     "corpusFrequencyKbd": 159,
     "partOfSpeech": "noun",
@@ -4500,10 +4500,10 @@
       {
         "senseId": 1,
         "gloss": "milk",
-        "tr": "KBD: süt | YENİ ADY: yağ, iç yağı; kurşun",
-        "ru": "KBD: молоко | ADY: жир, сало; пуля",
-        "ar": "دهن (الدواجن والحيوانات)/ دَسَم",
-        "en": "KBD: milk | ADY: fat, tallow; bullet"
+        "tr": "süt",
+        "ru": "молоко",
+        "ar": "حليب",
+        "en": "milk"
       },
       {
         "senseId": 2,
@@ -4516,8 +4516,7 @@
     "lemmaId": "LEMMA-SHE",
     "corpusFrequency": 213,
     "rootIds": [
-      "R-SHE",
-      "R-SH"
+      "R-SHE2"
     ],
     "wordFamilyId": "WF-SHE",
     "derivation": {
@@ -4543,7 +4542,7 @@
     "etymologyType": "native",
     "dialect": "KBD",
     "meaning": "süt",
-    "rootId": "R-SHE",
+    "rootId": "R-SHE2",
     "concept": "MILK",
     "conceptId": "MILK",
     "pos": "noun",
@@ -15974,15 +15973,16 @@
     "id": "L-SHHE",
     "form": "щэ",
     "ipa": "/ɕɐ/",
-    "literalMeaning": "yag, ic yagi",
+    "literalMeaning": "yağ, iç yağı",
     "partOfSpeech": "noun",
     "senses": [
       {
         "senseId": 1,
         "gloss": "fat, grease",
-        "tr": "yağ",
+        "tr": "yağ, iç yağı",
         "ru": "жир, сало",
-        "ar": "الحليب/ الطلقة، السهم، القذيفة/ القنبلة/ ثلاث مرات"
+        "ar": "شحم، دهن",
+        "en": "fat, grease"
       }
     ],
     "notes": "C-11.3: yag. Korpus: 19752. [Çok anlamlı: 1. yağ, iç yağı 2. yüz (100) 3. üç kez] [Diyalekt: Kabardeyce шэ ↔ Adigece щэ]",
@@ -16010,8 +16010,7 @@
       "THREE_TIMES"
     ],
     "rootIds": [
-      "R-SHE",
-      "R-SHCH"
+      "R-SHE"
     ],
     "dictionaryEvidence": [
       "sukunov-1998"
@@ -1814565,7 +1814564,9 @@
     "isLemma": false,
     "source": "Adyghe core lexicon (Batı Çerkesçesi)",
     "note": "KBD шэ (süt) ile sesteş; ayrı ADY kaydı.",
-    "dialectNote": "ADY lehçe kaydı, ana madde değil. Yağ anlamı -> L-SHHE (щэ), Kurşun/mermi anlamı -> L-SHE (шэ). KBD esas kuralı."
+    "dialectNote": "ADY lehçe kaydı, ana madde değil. Form шэ (KBD formu) + dialect ADY çelişkisi not edildi; yağ anlamı -> L-SHHE (щэ), kurşun/mermi anlamı -> L-SHE (шэ, R-SHE2 ikincil). KBD esas kuralı. Baş Mimar onayı 2026-11-28.",
+    "mergedInto": "L-SHE",
+    "lemmaStatus": "non-lemma"
   },
   {
     "id": "L-KMOKSY-BIRD-001",
