@@ -16706,10 +16706,11 @@
       "L-APAZHEV-G12-17",
       "L-APAZHEV-G15-10",
       "L-APAZHEV-XAB-23",
-      "L-APAZHEV-XAB-30"
+      "L-APAZHEV-XAB-30",
+      "L-PEDELEZH"
     ],
     "productivity": {
-      "totalLexemes": 920,
+      "totalLexemes": 921,
       "corpusFrequency": 15255
     },
     "rootForm": "лъэ",
@@ -20955,10 +20956,6 @@
       "L-AUTO-00977",
       "L-AUTO-00978",
       "L-AUTO-01405",
-      "L-AUTO-01544",
-      "L-AUTO-01545",
-      "L-AUTO-01546",
-      "L-AUTO-01547",
       "L-BATE",
       "L-BATYR",
       "L-BYGIY",
@@ -21481,7 +21478,6 @@
       "L-WIKT-KBD-28405",
       "L-WIKT-KBD-28500",
       "L-WIKT-KBD-30161",
-      "L-WIKT-KBD-30772",
       "L-WIKT-KBD-31203",
       "L-WIKT-KBD-33812",
       "L-WIKT-KBD-33849",
@@ -21569,7 +21565,6 @@
       "L-PERMENYGE",
       "L-KBDNEW-40947",
       "L-APAZHEV-P2-034",
-      "L-APAZHEV-P2-052",
       "L-APAZHEV-P2-053",
       "L-APAZHEV-P3-047",
       "L-APAZHEV-G6-03",
@@ -21580,7 +21575,7 @@
       "L-APAZHEV-XAB-36"
     ],
     "productivity": {
-      "totalLexemes": 648,
+      "totalLexemes": 642,
       "corpusFrequency": 22250
     },
     "rootForm": "пэ",
@@ -59692,11 +59687,13 @@
       "L-WIKT-KBD-35955",
       "L-WIKT-KBD-36258",
       "L-WIKT-KBD-37012",
-      "L-ZEDEDZHEN"
+      "L-ZEDEDZHEN",
+      "L-PEDZHEZH",
+      "L-PEDZHEZHYNSHE"
     ],
     "notes": "изучить что-л ailesi (дж).",
     "productivity": {
-      "totalLexemes": 15,
+      "totalLexemes": 63,
       "corpusFrequency": 12
     },
     "_source": "lexemes-sync-2026",
@@ -170149,7 +170146,14 @@
       "L-WIKT-KBD-33222",
       "L-WIKT-KBD-34864",
       "L-WIKT-KBD-37160",
-      "L-ZYGEPEZH"
+      "L-ZYGEPEZH",
+      "L-PEZHY1UE",
+      "L-AUTO-01544",
+      "L-AUTO-01545",
+      "L-AUTO-01546",
+      "L-APAZHEV-P2-052",
+      "L-AUTO-01547",
+      "L-WIKT-KBD-30772"
     ]
   },
   {
